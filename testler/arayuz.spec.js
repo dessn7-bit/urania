@@ -10,6 +10,8 @@ test.beforeEach(async ({ page }) => {
   page.on('pageerror', e => page.hatalar.push(e.message));
   page.on('console', m => { if (m.type() === 'error') page.hatalar.push(m.text()); });
   await page.clock.install({ time: SABIT_AN });
+  /* Bulut tahmini ağa çıkmasın: bu dosyadaki testler gök hesaplarını sınar */
+  await page.route('**/api.open-meteo.com/**', r => r.fulfill({ json: { hourly: { time: [], cloud_cover: [], cloud_cover_low: [], cloud_cover_mid: [], cloud_cover_high: [], relative_humidity_2m: [], wind_speed_10m: [] } } }));
 });
 test.afterEach(async ({ page }) => {
   expect(page.hatalar, 'konsol/sayfa hatası olmamalı').toEqual([]);

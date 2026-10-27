@@ -47,6 +47,7 @@
         <input type="range" id="gkKadir" min="1.5" max="6" step="0.5">
       </div>
       <div class="ozet" id="gkOzet"></div>
+      <div class="hava" id="gkHava" aria-live="polite"></div>
 
       <h2>Gezegenler</h2>
       <p class="alt-baslik">Saatler seçili gece için; "en iyi" o gece en yüksekte olduğu an.</p>
@@ -117,6 +118,7 @@
     durum.gezegenGece = G.gezegenlerBuGece(temsil, durum.gzl, durum.gece);
     durum.olaylar = G.olaylar(bazAn(), durum.gzl, 120);
     listeleriYaz();
+    havaYaz();
   }
 
   /* ---- Levha (her zaman değişiminde) ---- */
@@ -164,7 +166,7 @@
     } else if (g.batis) {
       s.push(`Güneş ${U.saat(g.batis)}'de batıyor ama bu gece tam karanlık olmuyor; Güneş ufkun yeterince altına inmiyor.`);
     }
-    let ayCumle = `Ay ${ay.ad.toLocaleLowerCase('tr-TR')}, %${Math.round(ay.oran * 100)} aydınlık`;
+    let ayCumle = `Ay: ${ay.ad}, %${Math.round(ay.oran * 100)} aydınlık`;
     const olaylar = [];
     if (ay.dogus) olaylar.push(`${U.saat(ay.dogus)}'de doğuyor`);
     if (ay.batis) olaylar.push(`${U.saat(ay.batis)}'de batıyor`);
@@ -201,7 +203,7 @@
       }
       const t = p.tepe;
       return `<li><span class="ad">${p.ad}${arac}</span><span class="sag">en iyi ${U.saat(t.zaman)} · ${U.derece(t.alt)} ${G.yon(t.az)}</span>
-        <span class="alt">${U.kadir(p.kadir)} kadir · ${td} takımyıldızında · ${dogBat}</span></li>`;
+        <span class="alt">${U.kadir(p.kadir)} kadir · ${td} takımyıldızında · ${dogBat}${defterBag('cisim:' + p.cisim)}</span></li>`;
     }).join('');
   }
 
@@ -212,7 +214,15 @@
     if (h.ayAcisi < 30 && durum.ayGece.oran > 0.35) uyari = ` <span class="rozet uyari">Ay'a ${U.derece(h.ayAcisi)}</span>`;
     else if (h.kadir > 5.5 && (h.tur === 'galaksi' || h.tur === 'bulutsu')) uyari = ' <span class="rozet">şehirde zor</span>';
     const sag = h.tepe ? `en iyi ${U.saat(h.tepe.zaman)} · ${U.derece(h.tepe.alt)} ${G.yon(h.tepe.az)}` : '—';
-    return `<li><span class="ad">${U.kacis(h.ad)}${uyari}</span><span class="sag">${sag}</span><span class="alt">${notlar.map(U.kacis).join(' · ')}</span></li>`;
+    return `<li><span class="ad">${U.kacis(h.ad)}${uyari}</span><span class="sag">${sag}</span><span class="alt">${notlar.map(U.kacis).join(' · ')}${defterBag('hedef:' + h.id)}</span></li>`;
+  }
+
+  /* Gözlem defteri bağlantısı: daha önce görüldüyse tarihi, her durumda "Gördüm" */
+  function defterBag(anahtar) {
+    if (!window.Defter) return '';
+    const son = Defter.sonGorulme(anahtar);
+    const rozet = son ? `<span class="rozet iyi">görüldü · ${U.gun(new Date(son.zaman))}</span> ` : '';
+    return `<span class="defter-bag">${rozet}<a href="#defter/yeni/${encodeURIComponent(anahtar)}">Gördüm, deftere yaz</a></span>`;
   }
 
   function hedefYaz() {
@@ -245,6 +255,50 @@
   function olayYaz() {
     const ls = durum.olaylar.slice(0, 12);
     el.querySelector('#gkOlay').innerHTML = ls.map(o => `<li${o.gorunur === false ? ' class="sonuk"' : ''}><span class="ad">${U.kacis(o.baslik)}</span><span class="sag">${U.gun(o.zaman)}</span>${o.not ? `<span class="alt">${U.kacis(o.not)}</span>` : `<span class="alt">${U.gunHafta(o.zaman)}, ${U.saat(o.zaman)}</span>`}</li>`).join('');
+  }
+
+  /* ---- Bulut tahmini ---- */
+  let havaSira = 0;
+  async function havaYaz() {
+    const kap = el.querySelector('#gkHava');
+    const g = durum.gece;
+    const bas = g.sivilSon || g.batis, son = g.sivilBas || g.dogus;
+    if (!bas || !son) { kap.innerHTML = ''; return; }
+    const sira = ++havaSira;
+    const k = U.konum();
+    kap.innerHTML = '<p class="soluk kucuk">Bulut tahmini alınıyor…</p>';
+    let h;
+    try { h = await Hava.getir(k.enlem, k.boylam); } catch (e) {
+      if (sira !== havaSira) return;
+      kap.innerHTML = '<p class="soluk kucuk">Bulut tahmini alınamadı (internet yok ya da servis yanıt vermedi). Gök hesapları bundan etkilenmez.</p>';
+      return;
+    }
+    if (sira !== havaSira) return;
+    if (!kap._bagli) {
+      kap._bagli = true;
+      kap.addEventListener('click', e => {
+        const b = e.target.closest('.hava-saat'); if (!b) return;
+        kap.querySelectorAll('.hava-saat').forEach(x => x.classList.toggle('secili', x === b));
+        kap.querySelector('#gkHavaDetay').textContent = b.dataset.detay;
+      });
+    }
+    const oz = Hava.geceOzeti(h.saatler, bas, son, 30);
+    const kaynak = '<a href="https://open-meteo.com/" target="_blank" rel="noopener">Hava verisi: Open-Meteo.com</a>';
+    if (!oz) { kap.innerHTML = '<p class="soluk kucuk">Bu gece için bulut tahmini yok; tahmin yalnız önümüzdeki 3 gün için yapılıyor. ' + kaynak + '</p>'; return; }
+    let cumle;
+    const n = oz.ls.length;
+    if (oz.acik && oz.acik.n >= n - 1) cumle = 'Bulut tahmini: gece boyunca büyük ölçüde açık.';
+    else if (oz.acik && oz.acik.n >= 2) cumle = `Bulut tahmini: en açık dönem ${U.saat(oz.acik.bas)}–${U.saat(new Date(oz.acik.son.getTime() + 3600e3))} (bulut %30'un altında).`;
+    else if (oz.ort >= 70) cumle = `Bulut tahmini: gece boyunca çoğunlukla kapalı (ortalama %${Math.round(oz.ort)}).`;
+    else cumle = `Bulut tahmini: parçalı bulutlu (ortalama %${Math.round(oz.ort)}); uzun bir açık dönem görünmüyor.`;
+    const detay = s => `${U.saat(s.t)}: bulut %${s.bulut} (alçak %${s.alcak}, orta %${s.orta}, yüksek %${s.yuksek}) · nem %${s.nem} · rüzgâr ${Math.round(s.ruzgar)} km/sa`;
+    const cubuk = oz.ls.map((s, i) => `<button type="button" class="hava-saat" data-detay="${U.kacis(detay(s))}" aria-label="${U.kacis(detay(s))}">
+        <span class="hava-iz"><span class="hava-dolu" style="height:${Math.max(2, s.bulut)}%"></span></span>
+        <span class="hava-etiket">${i % 2 === 0 ? U.saat(s.t).slice(0, 2) : ''}</span></button>`).join('');
+    kap.innerHTML = `<p class="hava-cumle">${cumle}</p>
+      <div class="hava-cubuklar" aria-label="Saatlik bulut oranı">${cubuk}</div>
+      <p class="kucuk" id="gkHavaDetay" aria-live="polite"></p>
+      <p class="kaynak">Çubuk yüksekliği = saatlik bulut oranı; bir saate dokununca ayrıntısı çıkar. ${h.eski ? 'Çevrimdışı: son güncelleme ' + U.saat(h.alindi) + ', ' + U.gun(h.alindi) + '. ' : ''}${kaynak}</p>`;
   }
 
   function listeleriYaz() {
@@ -397,6 +451,7 @@
 
   function goster() {
     if (durum.harita && durum.gzl) {
+      gezegenYaz(); hedefYaz(); // defterden dönünce "görüldü" işaretleri yenilensin
       if (durum.canli && !durum.gun) { simdiyeKur(); if (geceAnahtariDegisti()) geceHesapla(); }
       requestAnimationFrame(levhaCiz);
     }

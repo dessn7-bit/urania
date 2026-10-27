@@ -3,6 +3,9 @@
 Kişisel astrofizik defteri: telefona kurulan, çevrimdışı çalışan bir PWA.
 
 - **Gökyüzü** — seçili konum ve an için tüm gök levhası (yıldızlar, takımyıldızlar, gezegenler, Ay evresi, dürbün hedefleri, etkin meteor radyantları), bu gecenin özeti, gezegenlerin en iyi saatleri, 7×50 dürbün hedefleri, IMO meteor takvimi ve yaklaşan olaylar (Ay evreleri, tutulmalar, karşı konumlar, gündönümleri). Kırmızı ışık modu gece görüşünü korur.
+- **Gökyüzüne bak** — telefonu gökyüzüne tut: yön algılayıcılarıyla o yöndeki yıldızlar, gezegenler ve hedefler; Bul (yön tarifiyle), Hizala, kamera arka planı. Manyetik sapma WMM-2025 ile düzeltilir.
+- **Bulut tahmini** — gecenin saatlik bulut oranı ve en açık dönem ([Open-Meteo](https://open-meteo.com/), CC BY 4.0).
+- **Defter** — gözlem defteri: ne, ne zaman, neyle, nasıl bir gökte; Ay evresi, yükseklik ve bulut otomatik eklenir; JSON yedek.
 - **Deneyler** — kara deliğe yaklaşmak (olay ufku, zaman genişlemesi, gelgit), yörünge atışı (Newton'un topu), yıldızın hayatı (H-R diyagramı), ışığa yakın yolculuk (özel görelilik).
 - **Dersler** — gökyüzünü okumaktan evrenin tarihine sekiz kaynaklı ders; deftere notlar ve kendini sınama soruları.
 - **Hesap** — uzaklık çevirici, kurtulma hızı, Schwarzschild yarıçapı, Kepler III, kadir, ıraklık, Wien, Stefan-Boltzmann.

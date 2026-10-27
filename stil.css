@@ -99,7 +99,7 @@ button, input, select { font: inherit; color: inherit; }
 
 .alt-sekmeler {
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 20;
-  display: grid; grid-template-columns: repeat(4, 1fr);
+  display: grid; grid-template-columns: repeat(5, 1fr);
   background: var(--levha);
   border-top: 1px solid var(--cizgi);
   padding-bottom: env(safe-area-inset-bottom);
@@ -297,3 +297,25 @@ html.kirmizi .ar-durum, html.kirmizi .ar-bilgi, html.kirmizi .ar-hizala, html.ki
 .ar-sonuc .ar-grup { font-size: 13px; color: var(--soluk); padding: 12px 0 4px; }
 .ar-sonuc button { width: 100%; display: flex; justify-content: space-between; gap: 10px; text-align: left; background: none; border: 0; border-top: 1px solid var(--cizgi); padding: 10px 2px; color: var(--parsomen); cursor: pointer; font-size: 15px; }
 .ar-sonuc button .soluk { font-size: 13px; }
+
+/* ---- Bulut tahmini ---- */
+.hava { margin-top: 8px; }
+.hava-cumle { font: 400 17px/1.5 var(--serif); margin-bottom: 8px; }
+.hava-cubuklar { display: flex; gap: 3px; align-items: flex-end; height: 74px; }
+.hava-saat { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px; min-width: 0; background: none; border: 0; padding: 0; cursor: pointer; color: inherit; }
+.hava-saat.secili .hava-dolu { background: var(--pirinc); opacity: 1; }
+.hava-iz { width: 100%; height: 54px; background: var(--levha); border-radius: 3px; display: flex; align-items: flex-end; overflow: hidden; }
+.hava-dolu { width: 100%; background: var(--soluk); opacity: .75; }
+.hava-etiket { font-size: 11px; color: var(--soluk); height: 14px; }
+.hava-iz, .hava-dolu { display: block; }
+
+/* ---- Gözlem defteri ---- */
+.defter-form { margin-top: 4px; }
+.defter-form textarea { background: var(--gece); border: 1px solid var(--cizgi); border-radius: 8px; padding: 9px 10px; color: var(--parsomen); font: 400 16px/1.5 var(--sans); width: 100%; resize: vertical; }
+.defter-form textarea:focus { border-color: var(--pirinc); outline: none; }
+.defter-not { display: block; color: var(--parsomen); font: 400 16px/1.55 var(--serif); margin-top: 6px; white-space: pre-wrap; }
+.defter-bag { display: block; margin-top: 4px; font-size: 14px; }
+.liste .bag, .cip-grup .bag { background: none; border: 0; padding: 0; color: var(--pirinc); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; font-size: 14px; }
+label.dugme { cursor: pointer; }
+.defter-iki { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.alan input[type="datetime-local"] { min-width: 0; }

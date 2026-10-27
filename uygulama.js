@@ -142,7 +142,7 @@
       }
       m.goster && m.goster(el, param);
     } catch (e) { hataGoster(e); }
-    document.title = 'Urania — ' + ({ gok: 'Gökyüzü', deney: 'Deneyler', ders: 'Dersler', hesap: 'Hesap', ar: 'Gökyüzüne bak' }[bolum]);
+    document.title = 'Urania — ' + ({ gok: 'Gökyüzü', deney: 'Deneyler', ders: 'Dersler', hesap: 'Hesap', defter: 'Defter', ar: 'Gökyüzüne bak' }[bolum]);
   }
 
   function basla() {
