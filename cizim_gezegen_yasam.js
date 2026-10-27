@@ -69,7 +69,7 @@
       const R = S.R, yx = 200, yy = 64, yr = 50;
       const oran = 69911 / 695700, pr = yr * oran, derin = 100 * oran * oran;   // ≈ 1,01 %
       let s = '';
-      s += S.daire(yx, yy, yr, { dolgu: R.yildiz, renk: R.yildiz, saydam: 0.85 });
+      s += S.daire(yx, yy, yr, { dolgu: R.yildiz, renk: R.yildiz, saydam: 'var(--disk-saydam)' });   // kırmızı modda opak: üstündeki siyah "2" 4,5:1'i geçsin
       s += S.cizgi(70, yy, 330, yy, { renk: R.soluk, kalin: 1, kesik: '3 4' });
       s += S.ok(318, yy, 336, yy, { renk: R.soluk, kalin: 1, boy: 7 });
       [[100, '1'], [200, '2'], [300, '3']].forEach(([x, no]) => {

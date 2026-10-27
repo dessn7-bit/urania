@@ -34,6 +34,8 @@
   --serif: 'Spectral', Georgia, 'Times New Roman', serif;
   --sans: 'Plex', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   --olcek: 1.25;
+  --isik-saydam: .28;     /* ders çizimi d10-tutulma: ışık bandı */
+  --disk-saydam: .85;     /* ders çizimi d13-gecis-egrisi: yıldız diski */
   --r: 10px;
   color-scheme: dark;
 }
@@ -43,7 +45,8 @@ html.kirmizi {
   --levha-2: #1A0202;
   /* Vurgu, bağlantı ve dolu düğme zemini: #000'da 5,43, #0E0000'da 5,33, #1A0202'de 5,15:1 (siyah yazı bu zeminde 5,43:1) */
   --pirinc: #F03E2C;
-  --pirinc-soluk: rgba(240, 62, 44, .35);
+  /* Yarı saydam vurgu zemini (okunan paragraf, çizimlerde bant): üstündeki ana metin #000'da 5,16, #0E0000'da 4,90:1 */
+  --pirinc-soluk: rgba(240, 62, 44, .22);
   /* Metinler siyah zeminde WCAG AA (≥4,5:1), yalnız kırmızı tonlar (G ve B, R'nin en çok %30'u):
      ana metin #FF4A3A 6,29:1 (#1A0202 yüzeyde 5,97:1), ikincil #E63A28 5,00:1 (#1A0202'de 4,75:1).
      Çizimlerde ve rozetlerde metin olarak da kullanılan renkler #1A0202'de en az 4,69:1. */
@@ -57,6 +60,8 @@ html.kirmizi {
   --ay: #E4402E;
   --yildiz: #E44430;
   --hedef: #E04030;
+  --isik-saydam: .18;     /* bant üstündeki ana metin 5,09, --gezegen 4,62:1 */
+  --disk-saydam: 1;       /* diskin üstündeki siyah yazı 5,16:1 */
 }
 
 * { box-sizing: border-box; }

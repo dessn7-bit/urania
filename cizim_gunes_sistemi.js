@@ -425,7 +425,8 @@
         return { s, tepe, yay };
       }
       /* Işık, yarı gölge ve tam gölge renkten başka desenle de ayrılsın (kırmızı modda renkler yakınlaşır): yarı gölge taralı */
-      const ISIK = 0.28;
+      /* Işık bandının saydamlığı temadan: normalde 0,28; kırmızı modda 0,18 (bant üstündeki etiketler 4,5:1'i geçsin) */
+      const ISIK = 'var(--isik-saydam)';
       const isik = (y, h) => S.kutu(0, y, 400, h, { dolgu: R.gunes, renk: 'none', saydam: ISIK });
       const kirp = (id, y, h, ic) => `<clipPath id="${id}"><rect x="0" y="${y}" width="400" height="${h}"/></clipPath><g clip-path="url(#${id})">${ic}</g>`;
       let s = `<defs><pattern id="cz-yari-golge" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="7" stroke="${R.soluk}" stroke-width="1.4" opacity="0.7"/></pattern></defs>`;
