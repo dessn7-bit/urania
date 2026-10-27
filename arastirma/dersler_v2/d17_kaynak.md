@@ -169,3 +169,7 @@ Kısaltmalar: WP:X = https://en.wikipedia.org/wiki/X ; PLANCK = https://arxiv.or
 6. Leavitt'in "bilgisayar" diye anılan Harvard çalışanlarından olduğu kaynakta var; bu çalışanların cinsiyetiyle ilgili genelleme kaynakta görülmediği için yazılmadı.
 7. Merceğin "çoklu görüntü" etkisi ve karanlık maddenin "ışığı soğurmaz/yansıtmaz" özellikleri kaynakta açıkça görülmediği için derse konmadı.
 8. Bölüm 10'daki "ışıktan hızlı uzaklaşma, uzayda ışıktan hızlı koşma değildir" cümlesi, Hubble yasası sayfasındaki "redshift velocity" tanımına dayanan bir açıklamadır; doğrudan alıntı değildir.
+
+
+Düzeltme (ana oturum, 27.10.2026): Hubble gerilimi paragrafında 74,03 ± 1,42 (Wikipedia, eski ölçüm) yerine SH0ES 2022 birincil değeri kondu.
+| SH0ES 2022: 73,04 ± 1,04; 5σ fark | https://arxiv.org/abs/2112.04510v3 | "H0=73.04+-1.04 km/s/Mpc" … "We find a 5-sigma difference with H0 predicted by Planck+LCDM" |

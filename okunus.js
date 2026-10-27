@@ -53,7 +53,8 @@
     /* İşaretler */
     t = t.replace(/√\s?/g, ' karekök ');
     t = t.replace(/\s?≈\s?/g, ' yaklaşık ');
-    t = t.replace(/~\s?(?=[\d+−%-])/g, 'yaklaşık ');
+    t = t.replace(/~\s?/g, 'yaklaşık ');
+    t = t.replace(/\s?←\s?/g, ', kaynağı ').replace(/\s?↔\s?/g, ' ile ');
     t = t.replace(/\s?×\s?/g, ' çarpı ');
     t = t.replace(/\s?±\s?/g, ' artı eksi ');
     t = t.replace(/\s?∝\s?/g, ' orantılıdır ');
@@ -61,10 +62,13 @@
     t = t.replace(/\s?≥\s?/g, ' büyük ya da eşittir ');
     t = t.replace(/\s?→\s?/g, ', yani ');
     t = t.replace(/\s=\s|=/g, ' eşittir ');
+    /* Kuyruklu yıldız adı "109P/Swift-Tuttle": eğik çizgi okunmaz */
+    t = t.replace(/(\d+[PC])\/(?=[A-ZÇĞİÖŞÜ])/g, '$1 ');
     t = t.replace(/\s÷\s|\s\/\s/g, ' bölü ');
     /* Bitişik eğik çizgi: iki küçük harfli kelime arasında "ya da" (banliyö/kent), yoksa "bölü" (M/L, 2GM/r) */
     t = t.replace(/(\S)\s?\/\s?(?=\S)/g, (m, a, i, s) => /[a-zçğıöşü]/.test(a) && /[a-zçğıöşü]/.test(s[i + m.length]) ? a + ' ya da ' : a + ' bölü ');
     t = t.replace(/ · /g, ', ').replace(/·/g, ' ');
+    t = t.replace(/\s>\s/g, ' büyüktür ').replace(/\s<\s/g, ' küçüktür ');
     t = t.replace(/>\s?(\d[\d.,]*)/g, '$1 üstü');
     t = t.replace(/<\s?(\d[\d.,]*)/g, '$1 altı');
     /* Sayı aralığı "2–55" → "2 ile 55" */
@@ -74,6 +78,7 @@
     t = t.replace(/(^|[\s(])\+(?=\d)/g, '$1artı ');
     t = t.replace(/\s[+−]\s/g, m => m.includes('+') ? ' artı ' : ' eksi ');
     t = t.replace(/(\S)\+(?=[\s,.;])/g, '$1 üstü');
+    t = t.replace(/(\d)\+(?=\d)/g, '$1 artı ');
     /* Yüzde */
     t = t.replace(/%\s?(?=\d)/g, 'yüzde ');
     return t.replace(/\s+/g, ' ').replace(/\s([,.;:!?)])/g, '$1').replace(/\(\s/g, '(').trim();

@@ -169,3 +169,8 @@ Kaynak türü: [Ö] = önceki doğrulama oturumunda (aynı gün) indirilip alın
 6. İstanbul'a özgü gelgit bilgisi (Marmara, Boğaz) aranmadı; kaynaksız olduğu için derse konmadı. ISS'nin yüksekliği önceki oturumda NASA sayfasında bulunamamıştı, yine verilmedi.
 7. Bu oturumda WebSearch kotası (bütün ajanlarla paylaşılan 200 arama) d3 araştırmasının sonunda doldu. Bu yüzden planlanan yerdurgun (jeostatik) yörünge örneği (35.786 km) kaynakla doğrulanamadı ve derse konmadı. Sonraki WebFetch'ler yalnız daha önce arama sonucunda görülen adreslere yapıldı.
 8. Sözlükteki "büyük gelgit / küçük gelgit" Türkçe karşılıkları resmî terim olarak doğrulanmadı; bu yüzden İngilizce adları (spring tide, neap tide) parantezde verildi.
+
+
+Ek (ana oturum, 27.10.2026): yerdurgun yörünge paragrafı eklendi.
+| Yerdurgun yörünge 35.786 km, merkezden 42.164 km, 1436 dk (bir yıldız günü), 3,07 km/s | https://en.wikipedia.org/wiki/Geostationary_orbit | "35,786 km (22,236 mi) in altitude above Earth's equator", "42,164 km (26,199 mi) in radius from Earth's center", "Period: 1436 minutes (one sidereal day)", "an orbital speed of 3.07 kilometres per second" |
+| Çanak antenlerin sabit yöne bakması | ÇIKARIM | Uydu gökte sabit durduğu için anten yeniden yöneltilmez; doğrulama ajanı kontrol etsin |

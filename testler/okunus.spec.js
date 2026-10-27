@@ -20,7 +20,13 @@ test('Ders cümleleri doğru okunuşa çevrilir', () => {
    ['v_k = √(2GM/r)', 'v k eşittir karekök (2GM bölü r)'],
    ['banliyö/kent geçişi', 'banliyö ya da kent geçişi'],
    ['Sgr A* ve z* ≈ 1090', 'Sgr A yıldız ve z yıldız yaklaşık 1090'],
-   ['AB: 0,39 · 0,72 · 1', 'AB: 0,39, 0,72, 1']
+   ['AB: 0,39 · 0,72 · 1', 'AB: 0,39, 0,72, 1'],
+   ['φ + δ > 90°', 'fi artı delta büyüktür 90 derece'],
+   ['Perseid ← 109P/Swift-Tuttle', 'Perseid, kaynağı 109P Swift-Tuttle'],
+   ['kütlenin ~yarısı', 'kütlenin yaklaşık yarısı'],
+   ['basınç < kütleçekimi', 'basınç küçüktür kütleçekimi'],
+   ['PSR B1257+12', 'PSR B1257 artı 12'],
+   ['dönem ↔ parlaklık', 'dönem ile parlaklık']
   ].forEach(([g, c]) => expect(okunus(g), g).toBe(c));
 });
 

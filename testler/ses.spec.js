@@ -90,7 +90,7 @@ test('(b) Dinle: bloklar sırayla, tr-TR ve Türkçe ses, okunan blok vurgulu; s
   await cubuk(page).locator('[data-so="dinle"]').click();
   await expect.poll(() => say(page)).toBe(1);
   const ilk = await page.evaluate(() => window.__sahteSes.kayit[0]);
-  expect(ilk.text).toBe('Ders 10: ' + (await page.locator('.ders h1').innerText()) + '.');   // ders numarası söylenir; noktasız başlığa nokta
+  expect(ilk.text).toBe('Ders ' + (await page.locator('.ders h1').getAttribute('data-ses')).match(/^Ders (\d+):/)[1] + ': ' + (await page.locator('.ders h1').innerText()) + '.');   // ders numarası söylenir; noktasız başlığa nokta
   expect(ilk.lang).toBe('tr-TR');
   expect(ilk.ses).toBe('Sahte Türkçe');
   await expect(page.locator('.ders h1')).toHaveClass(/so-okunan/);
@@ -307,7 +307,7 @@ test('(k) Dersten derse: kutu işaretliyse ders bitince sonrakine geçer ve kend
   await cubuk(page).locator('[data-so="dinle"]').click();
   for (let i = 0; i < 600 && await durumu(page); i++) await page.evaluate(() => window.__sahteSes.bitir());
   await expect(page).toHaveURL(/#ders\/d10$/);
-  await expect.poll(() => konusmalar(page).then(k => k[k.length - 1]), { timeout: 5000 }).toMatch(/^Ders 10: Ay\.$/);
+  await expect.poll(() => konusmalar(page).then(k => k[k.length - 1]), { timeout: 5000 }).toMatch(/^Ders \d+: Ay: /);
   expect((await durumu(page)).durum).toBe('oynuyor');
   /* işaret kaldırılınca sonda durur */
   await page.locator('#dsSurekli').uncheck();

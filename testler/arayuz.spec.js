@@ -118,7 +118,9 @@ test('Hesap: bilinen sonuçlar', async ({ page }) => {
 
 test('Dersler: liste, ders okuma ve ilerleme', async ({ page }) => {
   await page.goto('/index.html#ders');
-  await expect(page.locator('.ders-liste li')).toHaveCount(11); // count() beklemez; liste veri yüklenince çizilir
+  const sayi = await page.evaluate(() => fetch('veri/dersler.json').then(r => r.json()).then(d => d.dersler.length));
+  expect(sayi).toBeGreaterThanOrEqual(17);
+  await expect(page.locator('.ders-liste li')).toHaveCount(sayi); // count() beklemez; liste veri yüklenince çizilir
   await page.locator('.ders-liste li a').first().click();
   await expect(page.locator('article.ders h1')).toBeVisible();
   await expect(page.locator('.defter li').first()).toBeVisible();

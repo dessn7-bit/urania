@@ -450,7 +450,7 @@
   ]
  },
  "gecis": {
-  "giris": "Bir gezegen yıldızının önünden geçerken yıldızın küçük bir parçasını örter ve yıldızın ışığı biraz azalır. Kepler ve TESS gibi teleskoplar binlerce ötegezegeni bu küçük düşüşleri yakalayarak buldu.",
+  "giris": "Bir gezegen yıldızının önünden geçerken yıldızın küçük bir parçasını örter ve yıldızın ışığı biraz azalır. Kepler uzay teleskopu yalnız başına 2.600'den fazla ötegezegeni bu küçük düşüşleri yakalayarak buldu.",
   "ders": "d13",
   "adimlar": [
    {
@@ -469,7 +469,7 @@
     "yap": "\"HD 209458 b\" düğmesine bas.",
     "tikla": "#gcOn button[data-i=\"2\"]",
     "gozle": "Düşüş yaklaşık %1,3, geçiş yaklaşık 3,2 saat, her 3,5 günde bir.",
-    "neden": "Geçişi gözlenen ilk ötegezegen budur: yıldızına çok yakın bir \"sıcak Jüpiter\". Modelde yıldız düzgün parlak bir disk; gerçek yıldızların kenarı merkezden sönük olduğu (kenar kararması) için gerçek eğri dibe doğru yuvarlaktır."
+    "neden": "Geçişi gözlenen ilk ötegezegen budur (1999): yıldızına çok yakın bir \"sıcak Jüpiter\". Modelde yıldız düzgün parlak bir disk; gerçek yıldızların kenarı merkezden sönük olduğu (kenar kararması) için gerçek eğri dibe doğru yuvarlaktır."
    },
    {
     "yap": "\"TRAPPIST-1 e\" düğmesine bas.",
@@ -498,11 +498,15 @@
    {
     "ad": "Wikipedia: HD 209458 b",
     "url": "https://en.wikipedia.org/wiki/HD_209458_b"
+   },
+   {
+    "ad": "Science Friday: Kepler (2.600'den fazla gezegen)",
+    "url": "https://www.sciencefriday.com/segments/after-finding-thousands-of-exoplanets-kepler-rides-into-the-sunset/"
    }
   ]
  },
  "hubble": {
-  "giris": "1920'lerde galaksilerin tayflarındaki çizgilerin kırmızıya kaydığı ve uzak galaksilerin daha hızlı uzaklaştığı bulundu. Bu ilişki evrenin genişlediğini gösterir. Burada temsilî bir galaksi alanında bu ilişkiyi kendin ölç.",
+  "giris": "Lemaître 1927'de, Hubble 1929'da uzak galaksilerin daha hızlı uzaklaştığını gösteren hız–uzaklık ilişkisini yayımladı. Bu ilişki evrenin genişlediğini gösterir. Burada temsilî bir galaksi alanında bu ilişkiyi kendin ölç.",
   "ders": "d17",
   "adimlar": [
    {
@@ -553,6 +557,10 @@
    {
     "ad": "Riess ve ark. 2022 (H₀ = 73,04 ± 1,04)",
     "url": "https://arxiv.org/abs/2112.04510v3"
+   },
+   {
+    "ad": "Armagh Planetarium: Hubble–Lemaître yasası",
+    "url": "https://armaghplanet.com/the-hubble-lemaitre-law-recognising-where-credit-is-due-in-science.html"
    }
   ]
  }
