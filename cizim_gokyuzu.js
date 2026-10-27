@@ -62,7 +62,8 @@
       const bz = P(0, 90);
       s += S.cizgi(cx, cy, bz[0], bz[1], { renk: R.soluk, kalin: 1, kesik: '3 4' });
       s += S.daire(bz[0], bz[1], 3, { dolgu: R.soluk, renk: R.soluk });
-      s += S.yazi(bz[0] + 8, bz[1] + 5, 'Başucu (90°)', { boy: 13, renk: R.soluk });
+      s += S.cizgi(bz[0], bz[1] - 4, bz[0], cy - r - 4, { renk: R.soluk, kalin: 1 });          // yazı kubbenin dışında: kubbe çizgisi yazıyı kesmesin
+      s += S.yazi(bz[0], cy - r - 8, 'Başucu (90°)', { boy: 13, renk: R.soluk, hiza: 'middle' });
       /* ana yönler */
       const yon = [[0, 'K 0°', 0, -8, 'middle'], [90, 'D 90°', 8, 5, 'start'], [180, 'G 180°', 0, 20, 'middle'], [270, 'B 270°', -8, 5, 'end']];
       yon.forEach(([a, ad, dx, dy, hz]) => { const p = P(a, 0); s += S.daire(p[0], p[1], 3, { dolgu: R.metin, renk: R.metin }); s += S.yazi(p[0] + dx, p[1] + dy, ad, { boy: 14, renk: R.metin, hiza: hz, kalin: true }); });

@@ -221,7 +221,7 @@
       const px = 180, pw = 205, kmMax = 160, X = v => px + v / kmMax * pw;
       const satirlar = [
         ['b', 'Europa'],
-        ['n', 'Buz, Juno 2025', 29, null, 'buz'],
+        ['n', 'Buz (bölgesel), Juno 2025', 29, null, 'buz'],
         ['r', 'Okyanus, NASA afişi', 50, 100, 'su'],
         ['r', 'Okyanus, JPL', 60, 150, 'su'],
         ['b', 'Enceladus'],
