@@ -453,3 +453,4 @@ figure.cizim figcaption a { color: var(--pirinc); }
 .gorev-liste li.bitti .ad { color: var(--soluk); }
 .gorev-ic { padding: 8px 0 4px; }
 .gorev-ic p { margin: 6px 0; }
+.sinav-soru .bag { background: none; border: 0; padding: 0; color: var(--pirinc); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; font-size: 14px; font-family: var(--sans); }
