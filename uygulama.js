@@ -99,6 +99,40 @@
     if (g === -1) return 'dün';
     return g > 0 ? g + ' gün sonra' : (-g) + ' gün önce';
   }
+  /* Takvim dosyası (.ics, RFC 5545): telefonda açılınca takvim uygulamasına eklenir.
+     Olaydan bir saat önce hatırlatma içerir. */
+  function icsKacis(t) { return String(t).replace(/\\/g, '\\\\').replace(/;/g, '\\;').replace(/,/g, '\\,').replace(/\r?\n/g, '\\n'); }
+  function icsZaman(d) { return d.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, ''); }
+  /* RFC 5545: satır 75 bayttan (UTF-8) uzunsa katlanır; çok baytlı harfler bölünmez */
+  function icsKatla(satir) {
+    const p = []; let cur = '', bayt = 0;
+    for (const ch of satir) {
+      const b = new TextEncoder().encode(ch).length;
+      if (bayt + b > 74) { p.push(cur); cur = ' '; bayt = 1; }
+      cur += ch; bayt += b;
+    }
+    p.push(cur);
+    return p.join('\r\n');
+  }
+  function icsMetni(o) {
+    const son = o.son || new Date(o.bas.getTime() + 3600e3);
+    const satirlar = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Urania//Gokyuzu//TR', 'CALSCALE:GREGORIAN', 'BEGIN:VEVENT',
+      'UID:' + icsZaman(o.bas) + '-' + o.baslik.replace(/[^A-Za-z0-9]/g, '').slice(0, 20) + '@urania',
+      'DTSTAMP:' + icsZaman(new Date()), 'DTSTART:' + icsZaman(o.bas), 'DTEND:' + icsZaman(son),
+      'SUMMARY:' + icsKacis(o.baslik), 'DESCRIPTION:' + icsKacis(o.aciklama || ''),
+      'BEGIN:VALARM', 'TRIGGER:-PT1H', 'ACTION:DISPLAY', 'DESCRIPTION:' + icsKacis(o.baslik), 'END:VALARM',
+      'END:VEVENT', 'END:VCALENDAR'];
+    return satirlar.map(icsKatla).join('\r\n') + '\r\n';
+  }
+  function icsIndir(o) {
+    const blob = new Blob([icsMetni(o)], { type: 'text/calendar;charset=utf-8' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'urania-' + o.baslik.toLocaleLowerCase('tr-TR').replace(/[^a-z0-9çğıöşü]+/g, '-').replace(/^-|-$/g, '') + '.ics';
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+  }
+
   /* Yalnız http(s) bağlantılar; aksi hâlde zararsız "#" */
   function guvenliUrl(u) { return /^https?:\/\//i.test(String(u || '')) ? kacis(u) : '#'; }
   function kacis(s) {
@@ -161,7 +195,7 @@
 
   window.Urania = {
     modul(ad, tanim) { moduller[ad] = tanim; },
-    basla, oku, yaz, konum, konumYaz, VARSAYILAN_KONUM, dilimTahmin, dilimAdi, veri, guvenliUrl,
+    basla, oku, yaz, konum, konumYaz, VARSAYILAN_KONUM, dilimTahmin, dilimAdi, veri, guvenliUrl, icsMetni, icsIndir,
     sayi, bilimsel, saat, gun, gunHafta, tamTarih, kadir, derece, kacGun, kacis
   };
 })();

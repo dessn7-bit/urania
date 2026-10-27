@@ -48,12 +48,8 @@
         const p = G.sabitAltAz(cisim.ra, cisim.dec, zaman, gzl); o.alt = Math.round(p.alt); o.az = Math.round(p.az);
       }
     } catch (e) { /* konum hesaplanamadıysa kayıt yine yapılır */ }
-    const hk = U.oku('hava_' + k.enlem.toFixed(2) + '_' + k.boylam.toFixed(2), null);
-    if (hk && hk.j && hk.j.hourly) {
-      const t = Math.round(zaman.getTime() / 3600e3) * 3600;
-      const i = hk.j.hourly.time.indexOf(t);
-      if (i >= 0) o.bulut = hk.j.hourly.cloud_cover[i];
-    }
+    const hd = window.Hava && Hava.saatDegeri(k.enlem, k.boylam, zaman);
+    if (hd) { o.bulut = hd.bulut; if (hd.yagisOl != null) o.yagisOl = hd.yagisOl; }
     return o;
   }
 
@@ -202,6 +198,7 @@
         if (o.alt != null) parca.push(o.alt + '° yükseklik');
         if (o.ayOran != null) parca.push('Ay %' + o.ayOran + (o.ayAlt != null && o.ayAlt < 0 ? ' (batmıştı)' : ''));
         if (o.bulut != null) parca.push('tahmini bulut %' + o.bulut);
+        if (o.yagisOl != null && o.yagisOl > 0) parca.push('yağış olasılığı %' + o.yagisOl);
         return `<li><span class="ad">${U.kacis(k.cisim.ad)}</span><span class="sag kucuk soluk">${U.kacis(k.konum.ad)}</span>
           <span class="alt">${parca.map(U.kacis).join(' · ')}${k.not ? `<span class="defter-not">${U.kacis(k.not)}</span>` : ''}
           <span class="cip-grup" style="margin-top:6px"><button type="button" class="bag" data-is="duzenle" data-id="${k.id}">Düzenle</button><button type="button" class="bag" data-is="sil" data-id="${k.id}">Sil</button></span></span></li>`;

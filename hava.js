@@ -5,16 +5,20 @@
   'use strict';
   const U = window.Urania;
   const TAZE = 3600e3, EN_ESKI = 48 * 3600e3;
-  const DEGISKEN = 'cloud_cover,cloud_cover_low,cloud_cover_mid,cloud_cover_high,relative_humidity_2m,wind_speed_10m';
+  const DEGISKEN = 'cloud_cover,cloud_cover_low,cloud_cover_mid,cloud_cover_high,relative_humidity_2m,wind_speed_10m,precipitation_probability,precipitation';
 
-  function anahtar(enlem, boylam) { return 'hava_' + enlem.toFixed(2) + '_' + boylam.toFixed(2); }
+  /* hava2_: yağış alanları eklendi; eski (yağışsız) önbellek kullanılmaz */
+  function anahtar(enlem, boylam) { return 'hava2_' + enlem.toFixed(2) + '_' + boylam.toFixed(2); }
 
   function coz(j) {
     const h = j.hourly;
     return h.time.map((t, i) => ({
       t: new Date(t * 1000),
       bulut: h.cloud_cover[i], alcak: h.cloud_cover_low[i], orta: h.cloud_cover_mid[i], yuksek: h.cloud_cover_high[i],
-      nem: h.relative_humidity_2m[i], ruzgar: h.wind_speed_10m[i]
+      nem: h.relative_humidity_2m[i], ruzgar: h.wind_speed_10m[i],
+      /* Open-Meteo: ikisi de bu saate kadarki (önceki) bir saat için — olasılık eşiği 0,1 mm */
+      yagisOl: h.precipitation_probability ? h.precipitation_probability[i] : null,
+      yagis: h.precipitation ? h.precipitation[i] : null
     }));
   }
 
@@ -53,8 +57,25 @@
       } else cur = null;
     });
     const ort = ls.reduce((a, s) => a + s.bulut, 0) / ls.length;
-    return { ls, acik: enIyi, ort };
+    /* Yağış: en yüksek olasılık, toplam miktar ve olasılığın %40'ı aştığı saatler */
+    const olas = ls.filter(s => s.yagisOl != null);
+    const yagis = olas.length ? {
+      enCok: Math.max(...olas.map(s => s.yagisOl)),
+      toplam: olas.reduce((a, s) => a + (s.yagis || 0), 0),
+      riskli: olas.filter(s => s.yagisOl >= 40)
+    } : null;
+    return { ls, acik: enIyi, ort, yagis };
   }
 
-  window.Hava = { getir, geceOzeti };
+  /* Belirli bir saatin önbellekteki tahmini (defter kaydı için) */
+  function saatDegeri(enlem, boylam, zaman) {
+    const k = U.oku(anahtar(enlem, boylam), null);
+    if (!k || !k.j || !k.j.hourly) return null;
+    const t = Math.round(zaman.getTime() / 3600e3) * 3600;
+    const i = k.j.hourly.time.indexOf(t);
+    if (i < 0) return null;
+    const h = k.j.hourly;
+    return { bulut: h.cloud_cover[i], yagisOl: h.precipitation_probability ? h.precipitation_probability[i] : null };
+  }
+  window.Hava = { getir, geceOzeti, saatDegeri, anahtar };
 })();

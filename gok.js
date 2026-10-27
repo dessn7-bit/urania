@@ -305,11 +305,39 @@
     return ls.filter(o => o.zaman && o.zaman >= zaman && o.zaman <= son).sort((a, b) => a.zaman - b.zaman);
   }
 
+  /* ---- Jüpiter'in Galileo uyduları: gökyüzündeki konumları (yay saniyesi) ----
+     Astronomy Engine JupiterMoons (EQJ, Jüpiter merkezli, AU). Işık süresi düzeltmesi:
+     uydular Jüpiter'den ışığın çıktığı anda hesaplanır. doğu > 0: gökte Jüpiter'in doğusu
+     (kuzey yukarıdayken SOLDA). derinlik > 0: Jüpiter'in arkasında (Dünya'dan uzakta). */
+  const UYDU_AD = { io: 'Io', europa: 'Europa', ganymede: 'Ganymede', callisto: 'Callisto' };
+  function jupiterUydulari(zaman) {
+    const J = A.GeoVector('Jupiter', zaman, true);
+    const d = Math.hypot(J.x, J.y, J.z);
+    const lt = d * 149597870.7 / 299792.458 / 86400; // gün
+    const t = new Date(zaman.getTime() - lt * 86400e3);
+    const ay = A.JupiterMoons(t);
+    const u = [J.x / d, J.y / d, J.z / d];
+    const ra = Math.atan2(u[1], u[0]), dec = Math.asin(u[2]);
+    const dogu = [-Math.sin(ra), Math.cos(ra), 0];
+    const kuzey = [-Math.sin(dec) * Math.cos(ra), -Math.sin(dec) * Math.sin(ra), Math.cos(dec)];
+    const nokta = (a, b) => a[0] * b[0] + a[1] * b[1] + a[2] * b[2];
+    const yaySn = 180 / Math.PI * 3600 / d;
+    return Object.keys(UYDU_AD).map(k => {
+      const m = [ay[k].x, ay[k].y, ay[k].z];
+      return { ad: UYDU_AD[k], dogu: nokta(m, dogu) * yaySn, kuzey: nokta(m, kuzey) * yaySn, derinlik: nokta(m, u) };
+    });
+  }
+  /* Jüpiter'in görünen ekvator yarıçapı (yay saniyesi); yarıçap IAU 2015 B3 nominal 71 492 km */
+  function jupiterYaricap(zaman) {
+    const J = A.GeoVector('Jupiter', zaman, true);
+    return Math.atan(71492 / (Math.hypot(J.x, J.y, J.z) * 149597870.7)) * 180 / Math.PI * 3600;
+  }
+
   const Gok = {
     A, DER, GEZEGENLER, TR_AD, YON_UZUN,
     gozlemci, yon, ufukMatrisi, birimVektor, ufkaCevir, sabitAltAz, cisimAltAz, takimyildiz,
     yerelOgle, geceAraligi, ayDurumu, ayCeyrekleri, evreAdi, enYuksek, ornekler, enYuksekSabit, gezegenlerBuGece, hedeflerBuGece,
-    meteorDurumu, aktifMi, olaylar
+    meteorDurumu, aktifMi, olaylar, jupiterUydulari, jupiterYaricap
   };
   if (typeof module !== 'undefined' && module.exports) module.exports = Gok;
   else kok.Gok = Gok;

@@ -63,6 +63,11 @@
       <ul class="liste" id="gkMeteor"></ul>
       <details class="aciklama"><summary>Takvimin tamamı</summary><ul class="liste" id="gkMeteorTum"></ul></details>
 
+      <h2>Uzay İstasyonu geçişleri</h2>
+      <p class="alt-baslik">Önümüzdeki 5 günde buradan görülebilecek ISS geçişleri: istasyon Güneş ışığı alırken, gök karanlıkken ve ufkun en az 10° üstündeyken.</p>
+      <ul class="liste" id="gkIss"><li><span class="bos">Hesaplanıyor…</span></li></ul>
+      <p class="kaynak" id="gkIssKaynak"></p>
+
       <h2>Yaklaşan olaylar</h2>
       <ul class="liste" id="gkOlay"></ul>
 
@@ -119,6 +124,7 @@
     durum.olaylar = G.olaylar(bazAn(), durum.gzl, 120);
     listeleriYaz();
     havaYaz();
+    issYaz(true);
   }
 
   /* ---- Levha (her zaman değişiminde) ---- */
@@ -203,7 +209,7 @@
       }
       const t = p.tepe;
       return `<li><span class="ad">${p.ad}${arac}</span><span class="sag">en iyi ${U.saat(t.zaman)} · ${U.derece(t.alt)} ${G.yon(t.az)}</span>
-        <span class="alt">${U.kadir(p.kadir)} kadir · ${td} takımyıldızında · ${dogBat}${defterBag('cisim:' + p.cisim)}</span></li>`;
+        <span class="alt">${U.kadir(p.kadir)} kadir · ${td} takımyıldızında · ${dogBat}${p.cisim === 'Jupiter' ? jupiterSema(t.zaman) : ''}${defterBag('cisim:' + p.cisim)}</span></li>`;
     }).join('');
   }
 
@@ -215,6 +221,34 @@
     else if (h.kadir > 5.5 && (h.tur === 'galaksi' || h.tur === 'bulutsu')) uyari = ' <span class="rozet">şehirde zor</span>';
     const sag = h.tepe ? `en iyi ${U.saat(h.tepe.zaman)} · ${U.derece(h.tepe.alt)} ${G.yon(h.tepe.az)}` : '—';
     return `<li><span class="ad">${U.kacis(h.ad)}${uyari}</span><span class="sag">${sag}</span><span class="alt">${notlar.map(U.kacis).join(' · ')}${defterBag('hedef:' + h.id)}</span></li>`;
+  }
+
+  /* Jüpiter'in dört büyük uydusu: dürbünde görüneceği gibi (kuzey yukarı, doğu solda) */
+  function jupiterSema(zaman) {
+    const ls = G.jupiterUydulari(zaman), R = G.jupiterYaricap(zaman);
+    const enUzak = Math.max(60, ...ls.map(m => Math.abs(m.dogu))) * 1.12;
+    const W = 320, H = 54, cx = W / 2, cy = 24, olc = (W / 2 - 8) / enUzak;
+    const r = Math.max(4, R * olc);
+    const durum = m => {
+      const ic = Math.hypot(m.dogu, m.kuzey) < R;
+      if (ic && m.derinlik > 0) return 'arkada';
+      if (ic && m.derinlik < 0) return 'onde';
+      return '';
+    };
+    const nok = ls.map(m => {
+      const x = cx - m.dogu * olc, y = cy - m.kuzey * olc, d = durum(m);
+      return `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="2.6" class="${d === 'arkada' ? 'uydu-gizli' : 'uydu'}"/>
+        <text x="${x.toFixed(1)}" y="${(cy + 22).toFixed(1)}" text-anchor="middle" class="uydu-ad">${m.ad[0]}</text>`;
+    }).join('');
+    const bati = ls.filter(m => m.dogu < 0).map(m => m.ad), dogu = ls.filter(m => m.dogu >= 0).map(m => m.ad);
+    const notlar = ls.filter(m => durum(m)).map(m => m.ad + (durum(m) === 'onde' ? ' Jüpiter\'in önünden geçiyor' : ' Jüpiter\'in arkasında, görünmez'));
+    return `<span class="jupiter-sema">
+      <svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Jüpiter ve uyduları, ${U.saat(zaman)}">
+        <text x="4" y="10" class="uydu-yon">D</text><text x="${W - 4}" y="10" text-anchor="end" class="uydu-yon">B</text>
+        <circle cx="${cx}" cy="${cy}" r="${r.toFixed(1)}" class="jupiter-disk"/>${nok}
+      </svg>
+      <span class="kucuk">Uydular ${U.saat(zaman)}'de: doğuda (solda) ${dogu.join(', ') || 'yok'}; batıda (sağda) ${bati.join(', ') || 'yok'}.${notlar.length ? ' ' + notlar.join('; ') + '.' : ''} 7×50 dürbünde Jüpiter'in yanında küçük noktalar olarak görünürler.</span>
+    </span>`;
   }
 
   /* Gözlem defteri bağlantısı: daha önce görüldüyse tarihi, her durumda "Gördüm" */
@@ -242,6 +276,7 @@
     const rozet = m.aktif ? '<span class="rozet iyi">etkin</span>' : '';
     const parca = [`zirve ${U.gun(zirve)} (${U.kacGun(m.gunFark)})`, aralik, /\(.*\)/.test(String(m.zhr)) ? 'ZHR ' + U.kacis(String(m.zhr).replace(/^\S+\s*/, '')) : null, m.hiz ? m.hiz + ' km/s' : null, `zirvede Ay %${Math.round(ayOran * 100)}`];
     if (m.radyantTepe && !tam) parca.push(`radyant gece en çok ${U.derece(m.radyantTepe.alt)}`);
+    if (!tam && m.gunFark > 0) parca.push(takvimBag({ baslik: m.ad + ' meteor yağmuru zirvesi', bas: zirve, aciklama: 'IMO takvimine göre zirve. ZHR ' + m.zhr + '; zirvede Ay %' + Math.round(ayOran * 100) + ' aydınlık. (Urania)' }));
     return `<li${!m.aktif && tam ? ' class="sonuk"' : ''}><span class="ad">${U.kacis(m.ad)}${rozet}</span><span class="sag">${m.zhr != null ? 'ZHR ' + U.kacis(String(m.zhr).split(' ')[0]) : ''}</span><span class="alt">${parca.filter(Boolean).join(' · ')}${m.not ? '<br>' + U.kacis(m.not) : ''}</span></li>`;
   }
 
@@ -252,9 +287,43 @@
     el.querySelector('#gkMeteorTum').innerHTML = ds.slice().sort((a, b) => new Date(a.zirve_utc) - new Date(b.zirve_utc)).map(m => meteorSatir(m, true)).join('');
   }
 
+  /* "Takvime ekle": olay listesinden ve meteor zirvelerinden .ics */
+  const takvimOlaylari = [];
+  function takvimBag(o) {
+    takvimOlaylari.push(o);
+    return `<button type="button" class="bag takvim-bag" data-takvim="${takvimOlaylari.length - 1}">Takvime ekle</button>`;
+  }
   function olayYaz() {
     const ls = durum.olaylar.slice(0, 12);
-    el.querySelector('#gkOlay').innerHTML = ls.map(o => `<li${o.gorunur === false ? ' class="sonuk"' : ''}><span class="ad">${U.kacis(o.baslik)}</span><span class="sag">${U.gun(o.zaman)}</span>${o.not ? `<span class="alt">${U.kacis(o.not)}</span>` : `<span class="alt">${U.gunHafta(o.zaman)}, ${U.saat(o.zaman)}</span>`}</li>`).join('');
+    el.querySelector('#gkOlay').innerHTML = ls.map(o => `<li${o.gorunur === false ? ' class="sonuk"' : ''}><span class="ad">${U.kacis(o.baslik)}</span><span class="sag">${U.gun(o.zaman)}</span><span class="alt">${o.not ? U.kacis(o.not) + '<br>' : ''}${U.gunHafta(o.zaman)}, ${U.saat(o.zaman)} · ${takvimBag({ baslik: o.baslik, bas: o.zaman, aciklama: (o.not || '') + ' (Urania, ' + U.konum().ad + ')' })}</span></li>`).join('');
+  }
+
+  /* ---- ISS geçişleri (gecelere değil "şimdi"ye bağlı; konum değişince yeniden) ---- */
+  let issAnahtar = '';
+  async function issYaz(zorla) {
+    const k = U.konum();
+    const anahtar = k.enlem + '|' + k.boylam + '|' + new Date().toISOString().slice(0, 13);
+    if (!zorla && anahtar === issAnahtar) return;
+    issAnahtar = anahtar;
+    const ul = el.querySelector('#gkIss'), kay = el.querySelector('#gkIssKaynak');
+    let tle;
+    try { tle = await Uydu.tleGetir(); } catch (e) {
+      ul.innerHTML = '<li><span class="bos">Yörünge verisi alınamadı (internet yok ya da CelesTrak yanıt vermedi). İnternete bağlanınca kendiliğinden hesaplanır.</span></li>';
+      kay.textContent = ''; issAnahtar = ''; return;
+    }
+    await new Promise(r => setTimeout(r, 30)); // önce sayfa çizilsin
+    const ls = Uydu.gecisler(tle, k, new Date(), 5).filter(g => g.gorunur && g.gBit.t > new Date());
+    const donem = Uydu.tleDonemi(tle.s1);
+    const yas = (Date.now() - donem) / 86400e3;
+    ul.innerHTML = ls.length ? ls.map(g => {
+      const b = g.gBas, s = g.gBit, t = g.gTepe;
+      const yon = d => G.YON_UZUN[G.yon(d.az)];
+      const basM = b === g.bas ? `${yon(b)} yönünde ${U.derece(b.alt)} yükseklikte belirir` : `${yon(b)} yönünde ${U.derece(b.alt)} yükseklikte Dünya'nın gölgesinden çıkıp belirir`;
+      const sonM = s === g.bitis ? `${yon(s)} yönünde ${U.derece(s.alt)}'nin altına alçalır` : `${yon(s)} yönünde ${U.derece(s.alt)} yükseklikte Dünya'nın gölgesine girip kaybolur`;
+      const metin = `${U.saat(b.t)}–${U.saat(s.t)} · ${basM}, en çok ${U.derece(t.alt)} (${yon(t)}), ${sonM}`;
+      return `<li><span class="ad">${U.kacis(U.gunHafta(b.t))}</span><span class="sag">en çok ${U.derece(t.alt)}</span><span class="alt">${metin}<br>${takvimBag({ baslik: 'ISS geçişi', bas: new Date(b.t.getTime() - 60e3), son: new Date(s.t.getTime() + 60e3), aciklama: metin + '. (Urania, ' + k.ad + ')' })}</span></li>`;
+    }).join('') : '<li><span class="bos">Önümüzdeki 5 günde buradan görünür bir geçiş yok.</span></li>';
+    kay.innerHTML = `Yörünge öğeleri: <a href="https://celestrak.org/" target="_blank" rel="noopener">CelesTrak</a>, ${U.sayi(yas, 1)} günlük${yas > 7 ? ' — eski; saatler birkaç dakika kayabilir' : ''}${tle.eski ? ' (çevrimdışı, önbellekten)' : ''}. Hesap: SGP4 (satellite.js).`;
   }
 
   /* ---- Bulut tahmini ---- */
@@ -291,17 +360,31 @@
     else if (oz.acik && oz.acik.n >= 2) cumle = `Bulut tahmini: en açık dönem ${U.saat(oz.acik.bas)}–${U.saat(new Date(oz.acik.son.getTime() + 3600e3))} (bulut %30'un altında).`;
     else if (oz.ort >= 70) cumle = `Bulut tahmini: gece boyunca çoğunlukla kapalı (ortalama %${Math.round(oz.ort)}).`;
     else cumle = `Bulut tahmini: parçalı bulutlu (ortalama %${Math.round(oz.ort)}); uzun bir açık dönem görünmüyor.`;
-    const detay = s => `${U.saat(s.t)}: bulut %${s.bulut} (alçak %${s.alcak}, orta %${s.orta}, yüksek %${s.yuksek}) · nem %${s.nem} · rüzgâr ${Math.round(s.ruzgar)} km/sa`;
+    const detay = s => `${U.saat(s.t)}: bulut %${s.bulut} (alçak %${s.alcak}, orta %${s.orta}, yüksek %${s.yuksek})` +
+      (s.yagisOl != null ? ` · önceki saatte yağış olasılığı %${s.yagisOl}, ${U.sayi(s.yagis || 0, 1)} mm` : '') +
+      ` · nem %${s.nem} · rüzgâr ${Math.round(s.ruzgar)} km/sa`;
     const cubuk = oz.ls.map((s, i) => `<button type="button" class="hava-saat" data-detay="${U.kacis(detay(s))}" aria-label="${U.kacis(detay(s))}">
         <span class="hava-iz"><span class="hava-dolu" style="height:${Math.max(2, s.bulut)}%"></span></span>
+        <span class="yagis-iz"><span class="yagis-dolu" style="height:${s.yagisOl != null ? Math.max(0, s.yagisOl) : 0}%"></span></span>
         <span class="hava-etiket">${i % 2 === 0 ? U.saat(s.t).slice(0, 2) : ''}</span></button>`).join('');
-    kap.innerHTML = `<p class="hava-cumle">${cumle}</p>
+    let yCumle = '';
+    const y = oz.yagis;
+    if (y) {
+      if (y.riskli.length) {
+        const ilk = y.riskli[0].t, son = y.riskli[y.riskli.length - 1].t;
+        /* değerler önceki saati kapsar: aralık ilk riskli saatin bir saat öncesinden başlar */
+        yCumle = `Yağış riski: ${U.saat(new Date(ilk.getTime() - 3600e3))}–${U.saat(son)} arası olasılık %${y.enCok}'e çıkıyor` + (y.toplam >= 0.1 ? `, gece toplamı yaklaşık ${U.sayi(y.toplam, 1)} mm.` : '.');
+      } else if (y.enCok >= 15) yCumle = `Hafif yağış olasılığı var (en çok %${y.enCok}).`;
+      else yCumle = `Yağış beklenmiyor (olasılık en çok %${y.enCok}).`;
+    }
+    kap.innerHTML = `<p class="hava-cumle">${cumle}${yCumle ? '<br>' + yCumle : ''}</p>
       <div class="hava-cubuklar" aria-label="Saatlik bulut oranı">${cubuk}</div>
       <p class="kucuk" id="gkHavaDetay" aria-live="polite"></p>
-      <p class="kaynak">Çubuk yüksekliği = saatlik bulut oranı; bir saate dokununca ayrıntısı çıkar. ${h.eski ? 'Çevrimdışı: son güncelleme ' + U.saat(h.alindi) + ', ' + U.gun(h.alindi) + '. ' : ''}${kaynak}</p>`;
+      <p class="kaynak">Gri çubuk bulut oranı, altındaki mavi çubuk yağış olasılığı; bir saate dokununca ayrıntısı çıkar. ${h.eski ? 'Çevrimdışı: son güncelleme ' + U.saat(h.alindi) + ', ' + U.gun(h.alindi) + '. ' : ''}${kaynak}</p>`;
   }
 
   function listeleriYaz() {
+    takvimOlaylari.length = 0;
     ozetYaz(); gezegenYaz(); hedefYaz(); meteorYaz(); olayYaz();
     const k = U.konum();
     el.querySelector('#gkKonum').textContent = k.ad + ' (' + U.sayi(k.enlem, 2) + '°, ' + U.sayi(k.boylam, 2) + '°) · saatler: ' + U.dilimAdi(k.saatDilimi);
@@ -409,6 +492,10 @@
       bilgiSayac = setTimeout(() => { bilgi.hidden = true; }, 6000);
     });
     konumBagla();
+    el.addEventListener('click', e => {
+      const b = e.target.closest('[data-takvim]'); if (!b) return;
+      const o = takvimOlaylari[Number(b.dataset.takvim)]; if (o) U.icsIndir(o);
+    });
   }
 
   function geceAnahtariDegisti() {

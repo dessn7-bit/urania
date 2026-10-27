@@ -78,3 +78,22 @@ test('Meteor: tam tarihli takvim kaydı yalnız kendi yılında etkin', () => {
   expect(G.aktifMi(qua, new Date('2026-01-03T22:00:00+03:00'))).toBe(false);
   expect(G.aktifMi(qua, new Date('2027-01-13T01:00:00+03:00'))).toBe(false);
 });
+
+test('Jüpiter uyduları JPL Horizons ile 2 yay saniyesi içinde', () => {
+  /* JPL Horizons, yer merkezli görünen RA/Dec (QUANTITIES=2), 2026-10-28 03:00 UT; 2026-10-27'de çekildi:
+     https://ssd.jpl.nasa.gov/api/horizons.api (599 Jüpiter, 501-504 Io/Europa/Ganymede/Callisto) */
+  const J = [146.383303078, 14.214145886];
+  const H = { Io: [146.405725399, 14.205548748], Europa: [146.351930966, 14.225719423], Ganymede: [146.386255909, 14.213074313], Callisto: [146.275042418, 14.254651655] };
+  const ls = G.jupiterUydulari(new Date('2026-10-28T03:00:00Z'));
+  expect(ls).toHaveLength(4);
+  ls.forEach(m => {
+    const h = H[m.ad];
+    const dogu = (h[0] - J[0]) * Math.cos(J[1] * Math.PI / 180) * 3600, kuzey = (h[1] - J[1]) * 3600;
+    expect(Math.abs(m.dogu - dogu), m.ad).toBeLessThan(2);
+    expect(Math.abs(m.kuzey - kuzey), m.ad).toBeLessThan(2);
+  });
+  /* Ganymede o an diskin önünde (Horizons ofseti 10,3″ < yarıçap ≈17,7″) */
+  const g = ls.find(m => m.ad === 'Ganymede');
+  expect(Math.hypot(g.dogu, g.kuzey)).toBeLessThan(G.jupiterYaricap(new Date('2026-10-28T03:00:00Z')));
+  expect(g.derinlik).toBeLessThan(0);
+});

@@ -301,7 +301,7 @@ html.kirmizi .ar-durum, html.kirmizi .ar-bilgi, html.kirmizi .ar-hizala, html.ki
 /* ---- Bulut tahmini ---- */
 .hava { margin-top: 8px; }
 .hava-cumle { font: 400 17px/1.5 var(--serif); margin-bottom: 8px; }
-.hava-cubuklar { display: flex; gap: 3px; align-items: flex-end; height: 74px; }
+.hava-cubuklar { display: flex; gap: 3px; align-items: flex-end; height: 96px; }
 .hava-saat { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px; min-width: 0; background: none; border: 0; padding: 0; cursor: pointer; color: inherit; }
 .hava-saat.secili .hava-dolu { background: var(--pirinc); opacity: 1; }
 .hava-iz { width: 100%; height: 54px; background: var(--levha); border-radius: 3px; display: flex; align-items: flex-end; overflow: hidden; }
@@ -319,3 +319,11 @@ html.kirmizi .ar-durum, html.kirmizi .ar-bilgi, html.kirmizi .ar-hizala, html.ki
 label.dugme { cursor: pointer; }
 .defter-iki { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .alan input[type="datetime-local"] { min-width: 0; }
+.yagis-iz { display: block; width: 100%; height: 18px; background: var(--levha); border-radius: 3px; position: relative; overflow: hidden; }
+.yagis-dolu { position: absolute; left: 0; right: 0; bottom: 0; background: var(--hedef); }
+.jupiter-sema { display: block; margin: 8px 0 2px; }
+.jupiter-sema svg { display: block; width: 100%; max-width: 420px; height: auto; background: var(--levha); border-radius: 6px; }
+.jupiter-disk { fill: var(--gezegen); }
+.uydu { fill: var(--parsomen); }
+.uydu-gizli { fill: none; stroke: var(--soluk); stroke-dasharray: 2 2; }
+.uydu-ad, .uydu-yon { fill: var(--soluk); font: 500 10px var(--sans); }

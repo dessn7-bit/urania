@@ -12,6 +12,7 @@ test.beforeEach(async ({ page }) => {
   await page.clock.install({ time: SABIT_AN });
   /* Bulut tahmini ağa çıkmasın: bu dosyadaki testler gök hesaplarını sınar */
   await page.route('**/api.open-meteo.com/**', r => r.fulfill({ json: { hourly: { time: [], cloud_cover: [], cloud_cover_low: [], cloud_cover_mid: [], cloud_cover_high: [], relative_humidity_2m: [], wind_speed_10m: [] } } }));
+  await page.route('**/celestrak.org/**', r => r.fulfill({ contentType: 'text/plain', body: 'ISS (ZARYA)\n1 25544U 98067A   26300.17675415  .00005704  00000+0  11132-3 0  9993\n2 25544  51.6336   6.9404 0006948 314.9066  45.1358 15.49073103592213\n' }));
 });
 test.afterEach(async ({ page }) => {
   expect(page.hatalar, 'konsol/sayfa hatası olmamalı').toEqual([]);
@@ -162,4 +163,35 @@ test('İnceleme düzeltmeleri: canlı mod sabah 10:00\'da gerçek saati çizer',
   await page.goto('/index.html#gok');
   await expect(page.locator('#gkSaat')).toContainText('10:00 (şimdi)');
   await expect(page.locator('#gkGunesDurum')).toHaveText('Gündüz');
+});
+
+test('Jüpiter satırında uydu şeması', async ({ page }) => {
+  await page.goto('/index.html#gok');
+  const j = page.locator('#gkGezegen li', { hasText: 'Jüpiter' });
+  await expect(j.locator('.jupiter-sema svg circle.uydu, .jupiter-sema svg circle.uydu-gizli')).toHaveCount(4);
+  await expect(j.locator('.jupiter-sema')).toContainText('Uydular');
+});
+
+test('Takvime ekle: geçerli .ics dosyası iner', async ({ page }) => {
+  await page.goto('/index.html#gok');
+  const [indirme] = await Promise.all([page.waitForEvent('download'), page.locator('#gkOlay .takvim-bag').first().click()]);
+  const yol = await indirme.path();
+  const metin = require('fs').readFileSync(yol, 'utf8');
+  expect(indirme.suggestedFilename()).toMatch(/\.ics$/);
+  expect(metin).toContain('BEGIN:VCALENDAR');
+  expect(metin).toContain('SUMMARY:Yeni Ay');
+  /* İlk olay Yeni Ay, 9 Kasım 2026 07:02 UT (USNO) */
+  expect(metin).toMatch(/DTSTART:20261109T070[12]\d\dZ/);
+  expect(metin).toContain('TRIGGER:-PT1H');
+  /* Her satır en çok 75 bayt, satır sonları CRLF */
+  metin.split('\r\n').forEach(s => expect(Buffer.byteLength(s, 'utf8')).toBeLessThanOrEqual(75));
+  expect(metin.replace(/\r\n/g, '')).not.toContain('\n');
+});
+
+test('ISS: görünür geçişler listelenir (ilk: 28 Ekim 05:20–05:21 TSİ)', async ({ page }) => {
+  await page.goto('/index.html#gok');
+  const ilk = page.locator('#gkIss li').first();
+  await expect(ilk).toContainText('05:20–05:21');
+  await expect(ilk).toContainText('28 Ekim');
+  await expect(page.locator('#gkIssKaynak')).toContainText('CelesTrak');
 });
