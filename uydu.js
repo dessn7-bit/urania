@@ -39,10 +39,14 @@
     /* Depodaki kayıt beklenen biçimde değilse yok sayılır (bozuk kayıt 12 saat "taze" sayılmasın) */
     let depodaki = U.oku(anahtar, null);
     if (!depodaki || typeof depodaki !== 'object' || !Number.isFinite(depodaki.alindi) || (depodaki.ls !== undefined && !Array.isArray(depodaki.ls)) || (depodaki.diziler !== undefined && !Array.isArray(depodaki.diziler)) || (depodaki.ls === undefined && depodaki.diziler === undefined)) depodaki = null;
-    const kayit = [depodaki, bellek[anahtar]].filter(Boolean).sort((a, b) => b.alindi - a.alindi)[0] || null;
-    const hata = Math.max(U.oku(anahtar + '_hata', 0) || 0, hataBellek[anahtar] || 0);
-    const kullanilir = kayit && Date.now() - kayit.alindi < EN_ESKI;
-    if (kayit && Date.now() - kayit.alindi < TAZE) return kayit;
+    /* Cihaz saati bir ara ileri gidip düzeltildiyse "gelecekte alınmış" kayıt ve hata damgası yok sayılır
+       (yoksa yıllarca taze sayılıp hiç yenilenmez) */
+    const yas = x => Date.now() - x.alindi;
+    const kayit = [depodaki, bellek[anahtar]].filter(x => x && yas(x) >= -60e3).sort((a, b) => b.alindi - a.alindi)[0] || null;
+    let hata = Math.max(U.oku(anahtar + '_hata', 0) || 0, hataBellek[anahtar] || 0);
+    if (!(Date.now() - hata >= 0)) hata = 0;
+    const kullanilir = kayit && yas(kayit) < EN_ESKI;
+    if (kayit && yas(kayit) < TAZE) return kayit;
     if (Date.now() - hata < HATA_BEKLE) {
       if (kullanilir) return Object.assign({ eski: true }, kayit);
       throw new Error('CelesTrak bir süre önce yanıt vermedi; 2 saat sonra yeniden denenecek');

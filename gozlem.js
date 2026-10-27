@@ -43,8 +43,8 @@
         <button type="button" class="dugme" id="gkSimdi">Şimdi</button>
       </div>
       <div class="kadir-kontrol">
-        <label for="gkKadir">Görünen en sönük yıldız: <b id="gkKadirDeger"></b></label>
-        <input type="range" id="gkKadir" min="1.5" max="6" step="0.5">
+        <label for="gkKadir"><span id="gkKadirAd">Görünen en sönük yıldız</span>: <b id="gkKadirDeger"></b></label>
+        <input type="range" id="gkKadir" aria-labelledby="gkKadirAd" min="1.5" max="6" step="0.5">
       </div>
       <div class="dinle" id="gkSes" role="group" aria-label="Bu geceyi dinle"></div>
       <div class="ozet" id="gkOzet"></div>
@@ -87,9 +87,9 @@
 
       <p class="kaynak" id="gkKaynak"></p>
 
-      <dialog id="gkKonumPanel">
+      <dialog id="gkKonumPanel" aria-labelledby="gkKBaslik">
         <form method="dialog" id="gkKonumForm">
-          <h3 style="margin-bottom:12px">Gözlem yeri</h3>
+          <h3 id="gkKBaslik" style="margin-bottom:12px">Gözlem yeri</h3>
           <label class="secim-satir"><input type="checkbox" id="gkKOto"> <span><b>Her zaman bulunduğum yeri kullan</b><br><span class="soluk kucuk">Uygulama her açıldığında ve 10 dakikada bir telefonun konumunu alır.</span></span></label>
           <div id="gkKElle">
           <button type="button" class="dugme" id="gkGps" style="width:100%;margin:12px 0 14px">Şu anki konumu bir kez al</button>
@@ -99,7 +99,7 @@
             <div class="alan"><label for="gkKBoylam">Boylam (°D)</label><input id="gkKBoylam" inputmode="decimal"></div>
           </div>
           </div>
-          <p class="soluk kucuk" id="gkKDurum"></p>
+          <p class="soluk kucuk" id="gkKDurum" role="status"></p>
           <div class="cip-grup" style="justify-content:space-between">
             <button type="button" class="dugme" id="gkKSifirla">Varsayılana dön (Fetih Mah.)</button>
             <span class="cip-grup"><button value="iptal" class="dugme">Vazgeç</button><button value="kaydet" class="dugme dolu" id="gkKKaydet">Kaydet</button></span>
@@ -152,7 +152,8 @@
     setTimeout(() => {
       if (sira !== geceSira) return;
       /* Algol: bu gece (planda) ve önümüzdeki 30 gün (listede) */
-      const ab = new Date(Math.min(G.yerelOgle(baz, gzl.longitude).getTime(), Date.now()));
+      /* Liste başlığı "önümüzdeki 30 gün" diyor: seçili geceden bağımsız olarak şimdiden */
+      const ab = new Date(Date.now() - 12 * 3600e3);
       durum.algol = Ortme.algolGozlenebilir(durum.veri.algol, gzl, ab, new Date(ab.getTime() + 31 * 86400e3));
       /* Plan için seçili gecenin minimumları ayrıca: 30 günlük listenin dışındaki bir gece seçilmiş olabilir */
       const og = G.yerelOgle(baz, gzl.longitude);
@@ -365,7 +366,7 @@
     const one = ds.filter(m => m.aktif || (m.gunFark > 0 && m.gunFark < 75)).sort((a, b) => (b.aktif - a.aktif) || (a.gunFark - b.gunFark));
     el.querySelector('#gkMeteor').innerHTML = one.length ? one.map(m => meteorSatir(m, false)).join('') : '<li><span class="bos">Önümüzdeki 75 günde büyük bir yağmur yok.</span></li>';
     /* Takvimin tamamı: son bir ay ile önümüzdeki bir yıl (veri ve hesaplanan yıllar birlikte uzun olmasın) */
-    const simdi = Date.now();
+    const simdi = durum.gun ? new Date(durum.gun).getTime() : Date.now();   // seçili gece
     el.querySelector('#gkMeteorTum').innerHTML = ds.filter(m => { const z = new Date(m.zirve_utc).getTime(); return z > simdi - 31 * 86400e3 && z < simdi + 366 * 86400e3; }).sort((a, b) => new Date(a.zirve_utc) - new Date(b.zirve_utc)).map(m => meteorSatir(m, true)).join('');
   }
 
@@ -411,6 +412,17 @@
     }
     await new Promise(r => setTimeout(r, 30)); // önce sayfa çizilsin
     if (!guncelMi()) return;
+    /* Öğelerin dönemi şimdiden 14 günden uzaksa (cihaz saati yanlış ya da veri çok eski) SGP4 tahmini anlamsız:
+       geçiş gösterilmez */
+    const yasGun = u => (Date.now() - Uydu.donem(u)) / 86400e3;
+    if (uydular.every(u => Math.abs(yasGun(u)) > 14)) {
+      durum.uydular = null; durum.uyduGecisleri = null; planYaz(); levhaCiz();
+      ul.innerHTML = '<li><span class="bos">Cihazın saati ya da yörünge verisi güncel değil (öğeler ' + U.sayi(Math.abs(yasGun(uydular[0])), 0) + ' gün ' + (yasGun(uydular[0]) < 0 ? 'ileride' : 'eski') + '); geçiş saatleri hesaplanamaz. Telefonun tarih ve saatini kontrol et.</span></li>';
+      kay.textContent = ''; return;
+    }
+    const eksik = uydular.eksik;
+    uydular = uydular.filter(u => Math.abs(yasGun(u)) <= 14); uydular.eksik = eksik;
+    durum.uydular = uydular; durum.uyduDilim = null;
     levhaCiz();
     let ls = [];
     for (const u of uydular) {
@@ -676,7 +688,7 @@
     const bas = g.sivilSon || g.batis, son = g.sivilBas || g.dogus;
     /* Sıra numarası ve eski veri her çağrıda sıfırlanır: önceki gecenin isteği geç gelirse yazılmasın */
     const sira = ++havaSira;
-    durum.havaSaatler = null;
+    durum.havaSaatler = null; durum.havaZaman = Date.now();
     if (!bas || !son) { kap.innerHTML = ''; return; }
     const k = U.konum();
     kap.innerHTML = '<p class="soluk kucuk">Bulut tahmini alınıyor…</p>';
@@ -726,7 +738,7 @@
       else yCumle = `Yağış beklenmiyor (olasılık en çok %${y.enCok}).`;
     }
     kap.innerHTML = `<p class="hava-cumle okunur">${cumle}${yCumle ? '<br>' + yCumle : ''}</p>
-      <div class="hava-cubuklar" aria-label="Saatlik bulut oranı">${cubuk}</div>
+      <div class="hava-cubuklar" role="group" aria-label="Saatlik bulut oranı">${cubuk}</div>
       <p class="kucuk" id="gkHavaDetay" aria-live="polite"></p>
       <p class="kaynak">Gri çubuk bulut oranı, altındaki mavi çubuk yağış olasılığı; bir saate dokununca ayrıntısı çıkar. ${h.eski ? 'Çevrimdışı: son güncelleme ' + U.saat(h.alindi) + ', ' + U.gun(h.alindi) + '. ' : ''}${kaynak}</p>`;
   }
@@ -762,7 +774,7 @@
     el.querySelector('#gkKEnlem').value = String(k.enlem).replace('.', ',');
     el.querySelector('#gkKBoylam').value = String(k.boylam).replace('.', ',');
     el.querySelector('#gkKDurum').textContent = '';
-    el.querySelectorAll('#gkKEnlem, #gkKBoylam').forEach(i => i.removeAttribute('aria-invalid'));
+    el.querySelectorAll('#gkKEnlem, #gkKBoylam').forEach(i => { i.removeAttribute('aria-invalid'); i.removeAttribute('aria-describedby'); });
     const oto = el.querySelector('#gkKOto');
     oto.checked = U.otoAcik();
     el.querySelector('#gkKElle').hidden = oto.checked;
@@ -776,8 +788,12 @@
   function konumGecerli() {
     const enlem = sayiOku(el.querySelector('#gkKEnlem').value), boylam = sayiOku(el.querySelector('#gkKBoylam').value);
     const e = enlem >= -90 && enlem <= 90, b = boylam >= -180 && boylam <= 180;
-    el.querySelector('#gkKEnlem').setAttribute('aria-invalid', String(!e));
-    el.querySelector('#gkKBoylam').setAttribute('aria-invalid', String(!b));
+    /* Hatalı girdi, hata metnini taşıyan durum satırına bağlanır */
+    [['#gkKEnlem', e], ['#gkKBoylam', b]].forEach(([sec, iyi]) => {
+      const g = el.querySelector(sec);
+      g.setAttribute('aria-invalid', String(!iyi));
+      if (iyi) g.removeAttribute('aria-describedby'); else g.setAttribute('aria-describedby', 'gkKDurum');
+    });
     return e && b ? { enlem, boylam } : null;
   }
   function konumBagla() {
@@ -862,7 +878,10 @@
     });
     const kadir = el.querySelector('#gkKadir');
     kadir.value = durum.limitKadir;
-    const kadirEtiket = () => { el.querySelector('#gkKadirDeger').textContent = U.sayi(durum.limitKadir, 1) + ' kadir (' + kadirAciklama(durum.limitKadir) + ')'; };
+    const kadirEtiket = () => {
+      el.querySelector('#gkKadirDeger').textContent = U.sayi(durum.limitKadir, 1) + ' kadir (' + kadirAciklama(durum.limitKadir) + ')';
+      kadir.setAttribute('aria-valuetext', U.sayi(durum.limitKadir, 1) + ' kadir, ' + kadirAciklama(durum.limitKadir));
+    };
     kadirEtiket();
     kadir.addEventListener('input', () => {
       durum.limitKadir = Number(kadir.value);
@@ -950,6 +969,8 @@
     levhaCiz();
     canliSayac = setInterval(() => {
       if (!el.hidden) issYaz(false); // 10 dakikada bir: geçmiş geçişler düşer, alınamamış veri yeniden denenir (uydu.js 2 saat bekletir)
+      /* Bulut tahmini saatte bir yenilenir (önbellek 1 saat taze; tazeyse ağa gidilmez) */
+      if (!el.hidden && durum.gece && Date.now() - (durum.havaZaman || 0) > 3600e3) havaYaz();
       if (!durum.canli || durum.gun || el.hidden) return;
       simdiyeKur();
       if (geceAnahtariDegisti()) geceHesapla();

@@ -207,7 +207,7 @@ test('Gezegen kadirleri Horizons ile 0,02, Skyfield ile 0,08 içinde', () => {
 test('Meteor takvimi veri bitince Güneş boylamından sürer: 2026 verisinden hesaplanan 2027 zirveleri IMO 2027 ile 2 dk içinde', () => {
   const v = require('../veri/meteor.json');
   const v26 = { yagmurlar: v.yagmurlar.filter(m => m.zirve_utc < '2027') };
-  const t = G.meteorTakvimi(v26, new Date('2026-06-01T00:00Z')).filter(m => m.tahmini);
+  const t = G.meteorTakvimi(v26, new Date('2026-06-01T00:00Z')).filter(m => m.tahmini && m.zirve_utc >= '2027');
   expect(t.length).toBe(13);
   t.filter(m => m.kod !== 'PER').forEach(m => {   // PER: IMO λ☉ 140,0–140,1 aralığı, orta değer kullanılır
     const g = v.yagmurlar.find(x => x.kod === m.kod && x.zirve_utc.startsWith('2027'));

@@ -31,9 +31,13 @@
   /* Bir kartın kaydı: kutu 1–5 ve zaman sayısı değilse yok sayılır (kart yeni gibi davranır) */
   function giris(r, id) {
     const e = r[id];
-    return e && typeof e === 'object' && Number.isInteger(e.k) && e.k >= 1 && e.k <= ARALIK_GUN.length && isFinite(e.z) ? e : null;
+    /* Zamanı en uzun aralıktan (30 gün) çok ilerideyse cihaz saati yanlışken yazılmıştır: kart yeni sayılır */
+    return e && typeof e === 'object' && Number.isInteger(e.k) && e.k >= 1 && e.k <= ARALIK_GUN.length && isFinite(e.z) &&
+      e.z <= Date.now() + (ARALIK_GUN[ARALIK_GUN.length - 1] + 2) * 86400e3 ? e : null;
   }
   function gunBasi(t) { const d = new Date(t); d.setHours(0, 0, 0, 0); return d.getTime(); }
+  /* N gün sonrasının başı, takvimle (yaz saati geçişinde 23/25 saatlik gün bir gün erken soru doğurmasın) */
+  function gunSonra(t, n) { const d = new Date(t); d.setHours(0, 0, 0, 0); d.setDate(d.getDate() + n); return d.getTime(); }
 
   /* Destedeki kartlar: okunmuş derslerinkiler (ya da hepsi) */
   function deste(D, hepsi) {
@@ -52,7 +56,7 @@
     /* Yeni kart 1. kutudan başlar: bilinirse 2. kutuya (3 gün sonra), bilinemezse 1. kutuda kalır (yarın) */
     const eski = giris(r, id) || { k: 1 };
     const kutu = bildi ? Math.min(ARALIK_GUN.length, eski.k + 1) : 1;
-    r[id] = { k: kutu, z: gunBasi(t) + ARALIK_GUN[kutu - 1] * 86400e3, s: t };
+    r[id] = { k: kutu, z: gunSonra(t, ARALIK_GUN[kutu - 1]), s: t };
     return U.yaz(ANAHTAR, r) ? r[id] : null;
   }
   function ozet(D, hepsi) {

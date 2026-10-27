@@ -330,7 +330,8 @@
   function aktifMi(m, zaman) {
     if (m.baslangic.length === 10) {
       /* Tam tarih (YYYY-AA-GG): o yılın takvimi, bitiş günü dahil */
-      const b = new Date(m.baslangic + 'T00:00:00'), s = new Date(m.bitis + 'T23:59:59');
+      /* IMO tarihleri UT: sınır cihazın saat diliminden bağımsız olsun */
+      const b = new Date(m.baslangic + 'T00:00:00Z'), s = new Date(m.bitis + 'T23:59:59Z');
       return zaman >= b && zaman <= s;
     }
     const [ba, bg] = m.baslangic.split('-').map(Number);
@@ -358,23 +359,27 @@
   const meteorOnbellek = new Map();
   function meteorTakvimi(veri, zaman) {
     const ls = veri.yagmurlar;
-    const sonYil = Math.max(...ls.map(m => new Date(m.zirve_utc).getUTCFullYear()));
-    const hedefYil = new Date(zaman).getUTCFullYear() + 1;
-    if (hedefYil <= sonYil) return ls;
-    const an = sonYil + '|' + hedefYil;
+    const yil = m => new Date(m.zirve_utc).getUTCFullYear();
+    const sonYil = Math.max(...ls.map(yil)), ilkYil = Math.min(...ls.map(yil));
+    const y0 = new Date(zaman).getUTCFullYear() - 1, y1 = y0 + 2;   // seçili yılın bir öncesi ve sonrası
+    if (y1 <= sonYil && y0 >= ilkYil) return ls;
+    const an = ilkYil + '|' + sonYil + '|' + y0;
     if (meteorOnbellek.has(an)) return meteorOnbellek.get(an);
-    const sonlar = ls.filter(m => new Date(m.zirve_utc).getUTCFullYear() === sonYil && m.gunes_boylami != null);
     const kaydir = (s, k) => { const d = new Date(s + 'T00:00:00Z'); d.setUTCFullYear(d.getUTCFullYear() + k); return d.toISOString().slice(0, 10); };
     const ek = [];
-    for (let y = sonYil + 1; y <= hedefYil; y++) {
-      sonlar.forEach(m => {
-        const k = y - sonYil, z0 = new Date(m.zirve_utc);
+    /* İleriye son veri yılından, geriye (geçmiş bir tarih seçilince) ilk veri yılından */
+    const yillar = [];
+    for (let y = Math.max(y0, sonYil + 1); y <= y1; y++) yillar.push([y, sonYil]);
+    for (let y = y0; y <= Math.min(y1, ilkYil - 1); y++) yillar.push([y, ilkYil]);
+    yillar.forEach(([y, kaynakYil]) => {
+      ls.filter(m => yil(m) === kaynakYil && m.gunes_boylami != null).forEach(m => {
+        const k = y - kaynakYil, z0 = new Date(m.zirve_utc);
         const yak = new Date(z0); yak.setUTCFullYear(z0.getUTCFullYear() + k);
         const zirve = boylamAni(m.gunes_boylami, yak);
         if (!zirve) return;
-        ek.push(Object.assign({}, m, { zirve_utc: zirve.toISOString().replace('.000Z', 'Z'), baslangic: kaydir(m.baslangic, k), bitis: kaydir(m.bitis, k), tahmini: sonYil }));
+        ek.push(Object.assign({}, m, { zirve_utc: zirve.toISOString().replace('.000Z', 'Z'), baslangic: kaydir(m.baslangic, k), bitis: kaydir(m.bitis, k), tahmini: kaynakYil }));
       });
-    }
+    });
     const sonuc = ls.concat(ek);
     meteorOnbellek.set(an, sonuc);
     return sonuc;

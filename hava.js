@@ -37,7 +37,9 @@
   /* Döndürür: { saatler, alindi: Date, eski: bool } ya da hata fırlatır */
   async function getir(enlem, boylam) {
     const k = anahtar(enlem, boylam);
-    let kayit = [U.oku(k, null), bellek[k]].filter(x => x && x.j && yanitGecerli(x.j)).sort((a, b) => b.alindi - a.alindi)[0] || null;
+    /* Gelecekte alınmış görünen kayıt (cihaz saati geri alındı) bayat sayılır */
+    let kayit = [U.oku(k, null), bellek[k]].filter(x => x && x.j && yanitGecerli(x.j) && Date.now() - x.alindi >= -60e3).sort((a, b) => b.alindi - a.alindi)[0] || null;
+    if (!(Date.now() - sonHata >= 0)) sonHata = 0;
     if (kayit && Date.now() - kayit.alindi < TAZE) return { saatler: coz(kayit.j), alindi: new Date(kayit.alindi), eski: false };
     if (Date.now() - sonHata < HATA_BEKLE) {
       if (kayit && Date.now() - kayit.alindi < EN_ESKI) return { saatler: coz(kayit.j), alindi: new Date(kayit.alindi), eski: true };

@@ -76,7 +76,7 @@ test('Meteor: tam tarihli takvim kaydı yalnız kendi yılında etkin', () => {
   const qua = { baslangic: '2026-12-28', bitis: '2027-01-12' };
   expect(G.aktifMi(qua, new Date('2027-01-12T22:00:00+03:00'))).toBe(true);
   expect(G.aktifMi(qua, new Date('2026-01-03T22:00:00+03:00'))).toBe(false);
-  expect(G.aktifMi(qua, new Date('2027-01-13T01:00:00+03:00'))).toBe(false);
+  expect(G.aktifMi(qua, new Date('2027-01-13T03:30:00+03:00'))).toBe(false);   // IMO tarihleri UT: 13 Ocak 00:30 UT
 });
 
 test('Jüpiter uyduları JPL Horizons ile 2 yay saniyesi içinde', () => {
