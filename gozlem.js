@@ -46,10 +46,11 @@
         <label for="gkKadir">Görünen en sönük yıldız: <b id="gkKadirDeger"></b></label>
         <input type="range" id="gkKadir" min="1.5" max="6" step="0.5">
       </div>
+      <div class="dinle" id="gkSes" role="group" aria-label="Bu geceyi dinle"></div>
       <div class="ozet" id="gkOzet"></div>
       <div class="hava" id="gkHava" aria-live="polite"></div>
 
-      <h2>Bu gecenin planı</h2>
+      <h2 class="okunur" data-ses="Bu gecenin planı.">Bu gecenin planı</h2>
       <p class="alt-baslik">Gecenin görülecekleri, en iyi görünecekleri saate göre: yükseklik, bulut tahmini ve Ay ışığı hesaba katıldı. Saati belli olaylar (uydu geçişi, Algol, örtme) kendi saatinde.</p>
       <ol class="plan" id="gkPlan"><li><span class="bos">Hazırlanıyor…</span></li></ol>
       <div class="cip-grup" id="gkPlanDugme" hidden><button type="button" class="dugme" id="gkPlanTakvim">Planı takvime ekle</button></div>
@@ -238,7 +239,8 @@
     if (aktif.length) {
       s.push('Etkin meteor yağmuru: ' + aktif.map(m => `${U.kacis(m.ad)} (zirve ${U.kacGun(m.gunFark).replace('bugün', 'bu gece')})`).join(', ') + '.');
     }
-    el.querySelector('#gkOzet').innerHTML = s.map(x => '<p>' + x + '</p>').join('');
+    el.querySelector('#gkOzet').innerHTML = s.map(x => '<p class="okunur">' + x + '</p>').join('');
+    sesYenile();
   }
 
   function gezegenYaz() {
@@ -579,12 +581,33 @@
       }
       const bulut = m.bulut != null ? `<span class="rozet${m.bulut >= 70 ? ' uyari' : (m.bulut < 30 ? ' iyi' : '')}">bulut %${Math.round(m.bulut)}</span>` : '';
       const bilgi = [m.tur === 'uydu' ? '' : yon, ne].filter(Boolean).join(' · ');
-      return `<li class="plan-${m.tur}"><span class="saat">${U.saat(m.zaman)}</span><span class="ad">${U.kacis(m.ad)}${bulut}</span><span class="alt">${bilgi}${ek}</span></li>`;
+      /* Sesli okuma metni (ham veriden; ekrandaki kaçışlı metinden değil) */
+      const neDuz = m.tur === 'hedef' ? `${m.hedef.turAd}, ${tdAd(m.hedef.takimyildiz)} takımyıldızında.` : ne;
+      const yer = m.tur === 'uydu' ? '' : `${Math.round(m.alt)} derece yükseklikte, ${YON_DE[G.yon(m.az)]}.`;
+      const ses = cumleBirlestir([`Saat ${U.saat(m.zaman)}`, m.ad, yer, neDuz, m.bulut != null ? `Bulut yüzde ${Math.round(m.bulut)}` : '']);
+      return `<li class="plan-${m.tur} okunur" data-ses="${U.kacis(ses)}"><span class="saat">${U.saat(m.zaman)}</span><span class="ad">${U.kacis(m.ad)}${bulut}</span><span class="alt">${bilgi}${ek}</span></li>`;
     });
     let ust = '';
     if (p.bulutNot && p.bulutNot.kapali) ust = `<li class="plan-not"><span class="alt">Bulut tahmini bu gece çoğunlukla kapalı (ortalama %${Math.round(p.bulutNot.ort)}). Plan yine de hazır; gök açılırsa saatler geçerli.</span></li>`;
     ol.innerHTML = ust + satirlar.join('');
     dugme.hidden = false;
+    ol.querySelectorAll('li.plan-not').forEach(li => li.classList.add('okunur'));
+    sesYenile();
+  }
+
+  /* Yön adının bulunma hâli (kuzeyde, güneybatıda): sesli okumada "68 derece güneybatı" yerine */
+  const YON_DE = { K: 'kuzeyde', KD: 'kuzeydoğuda', D: 'doğuda', GD: 'güneydoğuda', G: 'güneyde', GB: 'güneybatıda', B: 'batıda', KB: 'kuzeybatıda' };
+  /* Cümleleri tek noktayla birleştir: sonu noktalı olana ikinci nokta eklenmesin */
+  function cumleBirlestir(ls) {
+    return ls.map(x => String(x || '').trim()).filter(Boolean).map(x => /[.!?…]$/.test(x) ? x : x + '.').join(' ');
+  }
+
+  /* "Bu geceyi dinle": özet, bulut tahmini ve plan sesli. Gökyüzü sekmesi açıkken bağlanır;
+     liste yeniden çizilince süren okuma, metin aynıysa bozulmaz (ses.js koru). */
+  function sesYenile() {
+    if (!el || el.hidden || !window.Ses) return;
+    const c = el.querySelector('#gkSes'); if (!c) return;
+    Ses.bagla(el, c, 'gece', { koru: true, dugme: 'Bu geceyi dinle' });
   }
   function planTakvim() {
     const p = durum.plan; if (!p || !p.maddeler.length) return;
@@ -614,6 +637,7 @@
     if (sira !== havaSira) return;
     durum.havaSaatler = h.saatler;
     planYaz();
+    setTimeout(sesYenile, 0);   // bulut cümlesi aşağıda yazılınca
     if (!kap._bagli) {
       kap._bagli = true;
       kap.addEventListener('click', e => {
@@ -648,7 +672,7 @@
       } else if (y.enCok >= 15) yCumle = `Hafif yağış olasılığı var (en çok %${y.enCok}).`;
       else yCumle = `Yağış beklenmiyor (olasılık en çok %${y.enCok}).`;
     }
-    kap.innerHTML = `<p class="hava-cumle">${cumle}${yCumle ? '<br>' + yCumle : ''}</p>
+    kap.innerHTML = `<p class="hava-cumle okunur">${cumle}${yCumle ? '<br>' + yCumle : ''}</p>
       <div class="hava-cubuklar" aria-label="Saatlik bulut oranı">${cubuk}</div>
       <p class="kucuk" id="gkHavaDetay" aria-live="polite"></p>
       <p class="kaynak">Gri çubuk bulut oranı, altındaki mavi çubuk yağış olasılığı; bir saate dokununca ayrıntısı çıkar. ${h.eski ? 'Çevrimdışı: son güncelleme ' + U.saat(h.alindi) + ', ' + U.gun(h.alindi) + '. ' : ''}${kaynak}</p>`;
@@ -837,6 +861,7 @@
   }
 
   function goster() {
+    setTimeout(sesYenile, 0);
     if (durum.harita && durum.gzl) {
       gezegenYaz(); hedefYaz(); // defterden dönünce "görüldü" işaretleri yenilensin
       if (durum.canli && !durum.gun) { simdiyeKur(); if (geceAnahtariDegisti()) geceHesapla(); }

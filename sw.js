@@ -1,10 +1,10 @@
 /* sw.js — çevrimdışı çalışma. Ağ önce (güncel sürüm gelsin), ağ yoksa önbellek.
    Dosya eklenince ASSETS'e eklenmeli ve SURUM artırılmalı. */
-const SURUM = 'urania-v14';
+const SURUM = 'urania-v16';
 const ASSETS = [
   './', './index.html', './stil.css', './manifest.json',
   './icon-192.png', './icon-512.png', './icon-maskable-512.png',
-  './lib/astronomy.browser.min.js', './lib/geomag.min.js', './ar.js', './hava.js', './defter.js', './uydu.js', './lib/satellite.min.js', './tani.js', './ortme.js', './ortme_isci.js', './plan.js', './ses.js', './kartlar.js',
+  './lib/astronomy.browser.min.js', './lib/geomag.min.js', './ar.js', './hava.js', './defter.js', './uydu.js', './lib/satellite.min.js', './tani.js', './ortme.js', './ortme_isci.js', './plan.js', './okunus.js', './ses.js', './kartlar.js',
   './gok.js', './uygulama.js', './harita.js', './gozlem.js', './simulasyon.js', './dersler.js', './hesap.js',
   './veri/yildizlar.json', './veri/takimyildiz.json', './veri/hedefler.json', './veri/meteor.json',
   './veri/fizik.json', './veri/dersler.json', './veri/ortme_yildiz.json', './veri/algol.json',

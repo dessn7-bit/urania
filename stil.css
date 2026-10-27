@@ -373,3 +373,7 @@ label.dugme { cursor: pointer; }
 .kutu-sira b { display: block; font: 600 22px/1.2 var(--serif); color: var(--pirinc); }
 .kutu-sira span { font-size: 12px; color: var(--soluk); }
 .kart-dugme .dugme, .kart-ozet .dugme { font-family: var(--sans); }
+.ds-surekli { margin: -8px 0 18px; }
+.kart-ust { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.kart-ust .alt-baslik { margin: 0; }
+.kart-sesli { min-height: 36px; padding: 6px 12px; font: 500 14px var(--sans); }

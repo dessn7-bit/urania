@@ -30,6 +30,7 @@
   const GUNLUK_TAVAN = 200;
   const SES_BEKLE_MS = 1500;
 
+  const okunus = m => (window.Okunus ? window.Okunus.okunus(m) : String(m || ''));
   const motor = () => (typeof window.speechSynthesis === 'object' && window.speechSynthesis) || null;
 
   /* ---------- metin ---------- */
@@ -104,7 +105,7 @@
   }
 
   /* ---------- bağlam: hangi sayfa, hangi bloklar ---------- */
-  let baglam = null;    // { kap, cubuk, bloklar: [{el, metin}], ad }
+  let baglam = null;    // { kap, cubuk, bloklar: [{el, metin}], ad, bitince }
   let ot = null;        // { birimler: [{el, parcalar}], i, j, durum, sonOlay, hataSay, kaydirilan }
   let jetonSayac = 0, aktifJeton = 0;
 
@@ -238,6 +239,7 @@
     ot = null;
     aktifJeton = ++jetonSayac;
     vurgula(); ciz();
+    if (sebep === 'bitti' && baglam && typeof baglam.bitince === 'function') { try { baglam.bitince(); } catch (h) { /* çağıranın hatası okumayı bozmasın */ } }
   }
   function durdur(sebep) {
     if (!ot) return;
@@ -269,7 +271,7 @@
     if (d === 'bekleniyor') return '';
     if (d === 'yok-api') return '<span class="so-mesaj">Bu tarayıcı sesli okumayı desteklemiyor.</span>';
     if (d === 'yok-tr') return '<span class="so-mesaj">Bu cihazda Türkçe ses bulunamadı. Chrome yalnız telefonun varsayılan metin okuma motorunun seslerini kullanır; ayarlardaki "Metin okuma" bölümünden Türkçe destekleyen bir motor seçip Türkçe ses verisini yükleyebilirsin.</span>';
-    if (!ot) return '<button type="button" class="dugme dolu so-btn" data-so="dinle">Dinle</button>' + hizSecHtml();
+    if (!ot) return '<button type="button" class="dugme dolu so-btn" data-so="dinle">' + U.kacis(baglam.dugme || 'Dinle') + '</button>' + hizSecHtml();
     return (ot.durum === 'oynuyor'
       ? '<button type="button" class="dugme so-btn" data-so="duraklat">Duraklat</button>'
       : '<button type="button" class="dugme dolu so-btn" data-so="devam">Devam</button>') +
@@ -291,11 +293,39 @@
     if (acik) { const d = c.querySelector('details.so-tani'); if (d) d.open = true; }
   }
 
-  /* kap içindeki .okunur blokları sesli okunur; cubuk kontrollerin konacağı öğe */
-  function bagla(kap, cubuk, ad) {
-    durdur('yeni sayfa');
-    baglam = { kap, cubuk, ad: ad || 'sayfa', bloklar: [...kap.querySelectorAll('.okunur')].map(el => ({ el, metin: noktala(el.textContent) })).filter(b => b.metin) };
+  /* kap içindeki .okunur blokları sesli okunur (data-ses varsa o metin); cubuk kontrollerin konacağı öğe.
+     secenek.koru: aynı sayfa yeniden çizildiyse ve okunacak metin aynıysa süren okuma bozulmaz
+     (yalnız vurgulanan öğeler yenilenir); metin değiştiyse okuma durur.
+     secenek.bitince: okuma sona erince çağrılır (dersten derse geçiş). secenek.dugme: düğme yazısı. */
+  const bagli = new WeakSet();
+  function bloklariTopla(kap) {
+    /* innerText: <br> satır sonu olarak gelir ("açık.Yağış" bitişmesin); görünmeyen öğede textContent */
+    const metinAl = el => el.dataset.ses || (el.innerText && el.innerText.trim()) || el.textContent;
+    return [...kap.querySelectorAll('.okunur')].map(el => ({ el, metin: noktala(okunus(metinAl(el))) })).filter(b => b.metin);
+  }
+  function bagla(kap, cubuk, ad, secenek) {
+    const sec = secenek || {};
+    const bloklar = bloklariTopla(kap);
+    if (sec.koru && ot && baglam && baglam.ad === (ad || 'sayfa')) {
+      const ayni = bloklar.length === baglam.bloklar.length && bloklar.every((b, i) => b.metin === baglam.bloklar[i].metin);
+      if (ayni) {
+        Object.assign(baglam, { kap, cubuk, bloklar, bitince: sec.bitince, dugme: sec.dugme });
+        ot.birimler.forEach((b, i) => { b.el = bloklar[i].el; });
+        ot.kaydirilan = ot.i;   // yeniden çizim yüzünden kaydırma yapma
+        dinleyiciKur(kap, cubuk); vurgula(); ciz();
+        return;
+      }
+      durdur('metin değişti');
+    } else durdur('yeni sayfa');
+    baglam = { kap, cubuk, ad: ad || 'sayfa', bloklar, bitince: sec.bitince, dugme: sec.dugme };
+    cubuk.dataset.soHtml = '';
+    dinleyiciKur(kap, cubuk);
+    ciz();
+  }
+  function dinleyiciKur(kap, cubuk) {
     cubuk.classList.add('so-cubuk');
+    if (bagli.has(cubuk)) return;
+    bagli.add(cubuk);
     cubuk.addEventListener('click', e => {
       const b = e.target.closest('[data-so]'); if (!b) return;
       const a = b.dataset.so;
@@ -313,15 +343,46 @@
       if (ot && ot.durum === 'oynuyor') konus();   // yeni hız çalan parçadan itibaren
       ciz();
     });
+    if (bagli.has(kap)) return;
+    bagli.add(kap);
     /* oturum açıkken bloğa dokunma → oradan (boşta dokunmak ses başlatmaz) */
     kap.addEventListener('click', e => {
-      if (!ot || e.target.closest('a,button,input,select,textarea,summary')) return;
+      if (!ot || !baglam || baglam.kap !== kap || e.target.closest('a,button,input,select,textarea,summary')) return;
       const el = e.target.closest('.okunur');
       const i = baglam.bloklar.findIndex(b => b.el === el);
       if (i >= 0) atla(i);
     });
-    ciz();
   }
+
+  /* ---------- tek seferlik konuşma (yön tarifi, kartlar) ----------
+     Okuma oturumundan bağımsız; çalışan okumayı durdurur. Aynı jeton kuralı: yeni söz eskisini keser,
+     iptal edilenin geç olayı bitince'yi çağırmaz. Gizliyken konuşmaz (Android arka planda reddediyor). */
+  let tekJeton = 0;
+  function soyle(metin, secenek) {
+    const sec = secenek || {};
+    const s = motor();
+    if (!s || sesDurumu() !== 'var') return false;
+    if (document.visibilityState === 'hidden') return false;
+    if (ot) durdur('kısa konuşma');
+    const parcalar = parcala(noktala(okunus(metin)));
+    const jeton = ++tekJeton;
+    let k = 0;
+    try { s.cancel(); } catch (e) { /* yok */ }
+    const sonraki = () => {
+      if (jeton !== tekJeton) return;
+      if (k >= parcalar.length) { if (sec.bitince) sec.bitince(); return; }
+      const u = new window.SpeechSynthesisUtterance(parcalar[k++]);
+      u.lang = 'tr-TR'; const v = trSes(); if (v) u.voice = v; u.rate = hizOku();
+      tekUtt = u;
+      u.onend = sonraki;
+      u.onerror = e => { if (jeton !== tekJeton) return; kaydet('kısa konuşma hatası', e && e.error); };
+      try { s.speak(u); } catch (e) { /* yok */ }
+    };
+    sonraki();
+    return true;
+  }
+  let tekUtt = null;
+  function sus() { tekJeton++; tekUtt = null; if (!ot) { try { motor() && motor().cancel(); } catch (e) { /* yok */ } } }
 
   /* ---------- kurulum ---------- */
   (function kur() {
@@ -332,7 +393,7 @@
       try { if (s.addEventListener) s.addEventListener('voiceschanged', yenile); else s.onvoiceschanged = yenile; } catch (e) { /* yok */ }
       setTimeout(() => { if (!seslerBilinir) { sesleriOku(); seslerBilinir = true; ciz(); } }, SES_BEKLE_MS);
     }
-    window.addEventListener('hashchange', () => durdur('sayfa değişti'));
+    window.addEventListener('hashchange', () => { durdur('sayfa değişti'); sus(); });
     const yasam = olay => () => {
       if (!ot) return;
       kaydet(olay, ot.durum);
@@ -348,7 +409,7 @@
   })();
 
   window.Ses = {
-    destek: !!motor(), parcala, HIZLAR, PARCA_TAVAN, sesDurumu, bagla, baslat, duraklat, devam, durdur, atla, bekci,
+    destek: !!motor(), parcala, HIZLAR, PARCA_TAVAN, sesDurumu, bagla, baslat, duraklat, devam, durdur, atla, bekci, soyle, sus,
     durum: () => ot ? { i: ot.i, j: ot.j, durum: ot.durum, blok: ot.birimler.length } : null,
     kilitVar: () => !!kilit, gunluk: () => gunluk.slice(), gunlukMetni,
     sesleriYenile: () => { sesleriOku(); seslerBilinir = true; ciz(); }

@@ -442,6 +442,28 @@
     }
     if (hAlt < 0) m += ' · ufkun altında';
     if (m !== sonTarif) { el.querySelector('#arTarif').textContent = m; sonTarif = m; }
+    sesliYon(m, dAz, dAlt, Math.abs(dAz) < 3 && Math.abs(dAlt) < 3);
+  }
+
+  /* Sesli yön tarifi: ekrana bakmadan hedef bulmak için. Hedef seçilince adı ve tarifi söyler;
+     sonra en az 4 sn arayla ve tarif 8°'den fazla değiştiyse yeniler; hedef ortalanınca bir kez
+     "tam karşında" der (6°'lik payla, titremede tekrar etmesin). */
+  let sesSon = { hedef: null, zaman: 0, dAz: 0, dAlt: 0, merkez: false };
+  function sesliAcik() { return !!U.oku('arSesli', false) && window.Ses && Ses.sesDurumu() === 'var'; }
+  function sesliYon(m, dAz, dAlt, merkez) {
+    if (!sesliAcik() || !st.hedef) return;
+    const simdi = Date.now(), yeni = sesSon.hedef !== st.hedef;
+    const ad = st.hedef.ad;
+    if (merkez) {
+      if (!sesSon.merkez || yeni) { Ses.soyle(ad + ' tam karşında.'); sesSon = { hedef: st.hedef, zaman: simdi, dAz, dAlt, merkez: true }; }
+      return;
+    }
+    if (sesSon.merkez && !yeni && Math.max(Math.abs(dAz), Math.abs(dAlt)) < 6) return;
+    const fark = Math.max(Math.abs(dAz - sesSon.dAz), Math.abs(dAlt - sesSon.dAlt));
+    if (yeni || sesSon.merkez || (simdi - sesSon.zaman > 4000 && fark >= 8)) {
+      Ses.soyle((yeni ? ad + ': ' : '') + m);
+      sesSon = { hedef: st.hedef, zaman: simdi, dAz, dAlt, merkez: false };
+    }
   }
 
   /* Merkezdeki en yakın cisim + bakılan yön */
@@ -590,6 +612,7 @@
         <span class="cip-grup">
           <button type="button" class="dugme dolu" id="arPusula" hidden>Pusulayı aç</button>
           <button type="button" class="dugme" id="arBul">Bul</button>
+          <button type="button" class="dugme" id="arSesli" aria-pressed="false" hidden>Sesli</button>
           <button type="button" class="dugme" id="arHizalaDugme">Hizala</button>
           <button type="button" class="dugme" id="arKamera" aria-pressed="false">Kamera</button>
         </span>
@@ -620,7 +643,20 @@
     el.querySelector('#arHizalaIptal').addEventListener('click', () => { el.querySelector('#arHizala').hidden = true; });
     el.querySelector('#arHizalaSifirla').addEventListener('click', () => { st.kal = 0; U.yaz('arKalibrasyon', 0); st.R = null; el.querySelector('#arHizala').hidden = true; durumYaz('Hizalama sıfırlandı.'); });
     el.querySelector('#arKamera').addEventListener('click', () => kameraAc(!st.kamera));
-    el.querySelector('#arHedefKapat').addEventListener('click', () => { st.hedef = null; el.querySelector('#arHedefSerit').hidden = true; });
+    el.querySelector('#arHedefKapat').addEventListener('click', () => { st.hedef = null; el.querySelector('#arHedefSerit').hidden = true; if (window.Ses) Ses.sus(); });
+    const sesli = el.querySelector('#arSesli');
+    const sesliCiz = () => {
+      const d = window.Ses ? Ses.sesDurumu() : 'yok-api';
+      sesli.hidden = d === 'yok-api' || d === 'yok-tr';
+      sesli.setAttribute('aria-pressed', String(!!U.oku('arSesli', false)));
+    };
+    sesliCiz(); setTimeout(sesliCiz, 1800);   // sesler geç yüklenebilir
+    sesli.addEventListener('click', () => {
+      U.yaz('arSesli', !U.oku('arSesli', false)); sesliCiz();
+      sesSon = { hedef: null, zaman: 0, dAz: 0, dAlt: 0, merkez: false };   // açılınca hemen söylesin
+      if (!U.oku('arSesli', false) && window.Ses) Ses.sus();
+      else if (!st.hedef) durumYaz('Sesli yön açık: "Bul" ile bir cisim seç; nereye döneceğini söyleyeceğim.');
+    });
   }
 
   async function ilk(kok) {

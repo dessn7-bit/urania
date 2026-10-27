@@ -46,9 +46,10 @@
     const bag = BAG[x.id];
     el.innerHTML = `<article class="ders">
       <a class="geri" href="#ders">Tüm dersler</a>
-      <h1 class="okunur">${U.kacis(x.baslik)}</h1>
+      <h1 class="okunur" data-ses="Ders ${i + 1}: ${U.kacis(x.baslik)}">${U.kacis(x.baslik)}</h1>
       <p class="alt-baslik" style="font-family:var(--sans)">Ders ${i + 1} / ${D.dersler.length}</p>
       <div class="dinle" id="dsSes" role="group" aria-label="Dersi dinle"></div>
+      ${sonraki ? `<label class="secim-satir kucuk ds-surekli"><input type="checkbox" id="dsSurekli"${U.oku('sesSurekli', false) ? ' checked' : ''}> <span>Bitince sonraki derse geç ve okumayı sürdür</span></label>` : ''}
       ${x.bolumler.map(bl => `<h2 class="okunur">${U.kacis(bl.baslik)}</h2>${bl.paragraflar.map(p => `<p class="okunur">${U.kacis(p)}</p>`).join('')}`).join('')}
       ${x.formuller && x.formuller.length ? `<h2>Formüller</h2>${x.formuller.map(f => `<div class="formul"><div class="soluk kucuk">${U.kacis(f.ad)}</div><div class="ifade">${U.kacis(f.ifade)}</div>${f.aciklama ? `<div class="acik">${U.kacis(f.aciklama)}</div>` : ''}</div>`).join('')}` : ''}
       ${x.anahtar_sayilar && x.anahtar_sayilar.length ? `<h2>Akılda tutulacak sayılar</h2><ul class="liste sayilar">${x.anahtar_sayilar.map(s => `<li><span class="deger">${U.kacis(s.deger)}</span><span>${U.kacis(s.aciklama)} ${s.kaynak_url ? `<a href="${U.guvenliUrl(s.kaynak_url)}" target="_blank" rel="noopener" class="kucuk">kaynak</a>` : ''}</span></li>`).join('')}</ul>` : ''}
@@ -72,7 +73,20 @@
       e.currentTarget.classList.toggle('dolu', !acik);
       e.currentTarget.textContent = acik ? 'Okundu olarak işaretli' : 'Okudum';
     });
-    Ses.bagla(el.querySelector('article.ders'), el.querySelector('#dsSes'), 'ders ' + x.id);
+    /* Dersten derse kesintisiz dinleme: okuma bitince (ve kutu işaretliyse) sonraki derse geç, orada
+       kendiliğinden başlat. Bayrak yalnız bu oturumda (sessionStorage); elle gezinmede tetiklenmez. */
+    Ses.bagla(el.querySelector('article.ders'), el.querySelector('#dsSes'), 'ders ' + x.id, {
+      bitince: () => {
+        if (!sonraki || !U.oku('sesSurekli', false)) return;
+        try { sessionStorage.setItem('urania_sesDevam', sonraki.id); } catch (h) { /* yok */ }
+        location.hash = '#ders/' + sonraki.id;
+      }
+    });
+    const sk = el.querySelector('#dsSurekli');
+    if (sk) sk.addEventListener('change', () => U.yaz('sesSurekli', sk.checked));
+    let devamEt = null;
+    try { devamEt = sessionStorage.getItem('urania_sesDevam'); sessionStorage.removeItem('urania_sesDevam'); } catch (h) { /* yok */ }
+    if (devamEt === x.id) setTimeout(() => Ses.baslat(0), 400);
     window.scrollTo(0, 0);
   }
 
@@ -80,7 +94,8 @@
      Motor ses.js'te (Pinakes'ten uyarlandı). */
 
   /* ---- Tekrar kartları ---- */
-  let oturum = null;
+  let oturum = null, kartSayac = 0;
+  const DUSUNME_SN = 8;
   function kartlar(hepsi) {
     if (!oturum || oturum.hepsi !== !!hepsi) oturum = { hepsi: !!hepsi, sira: Kartlar.bugunku(D, hepsi), bildi: 0, bilemedi: 0, i: 0 };
     kartCiz();
@@ -100,7 +115,10 @@
       oturum = null;
       return;
     }
-    el.innerHTML = `${ust}<p class="alt-baslik" style="font-family:var(--sans)">${o.i + 1} / ${o.sira.length} · ${U.kacis(k.dersAd)}</p>
+    const sesOlabilir = ['yok-api', 'yok-tr'].indexOf(Ses.sesDurumu()) < 0;   // 'bekleniyor': sesler birazdan yüklenir
+    const sesli = !!U.oku('kartSesli', false) && sesOlabilir;
+    el.innerHTML = `${ust}<div class="kart-ust"><p class="alt-baslik" style="font-family:var(--sans)">${o.i + 1} / ${o.sira.length} · ${U.kacis(k.dersAd)}</p>
+      ${sesOlabilir ? `<button type="button" class="dugme kart-sesli" id="kaSesli" aria-pressed="${sesli}">Sesli tekrar</button>` : ''}</div>
       <div class="kart" aria-live="polite">
         <p class="kart-on" tabindex="-1">${U.kacis(k.on)}${k.tur === 'sayi' ? '<span class="kucuk soluk"> — değeri ne?</span>' : ''}</p>
         <div class="kart-arka" id="kaArka" hidden><p>${U.kacis(k.arka)}</p>${k.kaynak ? `<a class="kucuk" href="${U.guvenliUrl(k.kaynak)}" target="_blank" rel="noopener">kaynak</a>` : ''}</div>
@@ -110,14 +128,46 @@
       <p class="kaynak"><a href="#ders/${k.ders}">Bu kartın dersine git</a></p>`;
     /* Yeni kart çizilince odak kartın sorusuna: ekran okuyucu okur, klavyede sıra kaybolmaz */
     if (o.i > 0) el.querySelector('.kart-on').focus();
-    el.querySelector('#kaCevir').addEventListener('click', () => {
+    /* Sesli tekrar: soruyu okur, düşünmen için 8 sn bekler (sayaç düğmede), cevabı açıp okur;
+       Bildim/Bilemedim senin dokunuşunla. Eller serbest çalışma için. */
+    const kartNo = ++kartSayac;
+    let sayac = null;
+    const cevir = el.querySelector('#kaCevir');
+    const goster = () => {
+      clearInterval(sayac);
+      if (kartNo !== kartSayac || !cevir.isConnected) return;
       el.querySelector('#kaArka').hidden = false; el.querySelector('#kaGoster').hidden = true; el.querySelector('#kaYanit').hidden = false;
       el.querySelector('#kaEvet').focus();
+      if (U.oku('kartSesli', false)) Ses.soyle(k.arka);
+    };
+    const sorOku = (deneme) => {
+      const oldu = Ses.soyle(k.on + (k.tur === 'sayi' ? '. Değeri ne?' : ''), { bitince: () => {
+        if (kartNo !== kartSayac || !cevir.isConnected || el.querySelector('#kaGoster').hidden) return;
+        let kalan = DUSUNME_SN;
+        cevir.textContent = 'Cevabı göster (' + kalan + ')';
+        sayac = setInterval(() => {
+          if (kartNo !== kartSayac || !cevir.isConnected) { clearInterval(sayac); return; }
+          kalan--;
+          if (kalan <= 0) goster(); else cevir.textContent = 'Cevabı göster (' + kalan + ')';
+        }, 1000);
+      } });
+      /* sesler henüz yüklenmediyse bir kez daha dene */
+      if (!oldu && !deneme) setTimeout(() => { if (kartNo === kartSayac && cevir.isConnected) sorOku(true); }, 1700);
+    };
+    cevir.addEventListener('click', goster);
+    const sesliD = el.querySelector('#kaSesli');
+    if (sesliD) sesliD.addEventListener('click', () => {
+      const acik = !U.oku('kartSesli', false);
+      U.yaz('kartSesli', acik);
+      sesliD.setAttribute('aria-pressed', String(acik));
+      if (acik && !el.querySelector('#kaGoster').hidden) sorOku();
+      if (!acik) { clearInterval(sayac); Ses.sus(); cevir.textContent = 'Cevabı göster'; }
     });
+    if (sesli) sorOku();
     const yanit = bildi => {
       if (!Kartlar.cevapla(k.id, bildi)) { el.querySelector('.kart').insertAdjacentHTML('afterend', '<div class="hata-kutu" role="alert">Cihazın depolama alanı dolu; ilerleme kaydedilemedi.</div>'); return; }
       if (bildi) o.bildi++; else o.bilemedi++;
-      o.i++; kartCiz();
+      Ses.sus(); o.i++; kartCiz();
     };
     el.querySelector('#kaEvet').addEventListener('click', () => yanit(true));
     el.querySelector('#kaHayir').addEventListener('click', () => yanit(false));

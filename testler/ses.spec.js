@@ -90,7 +90,7 @@ test('(b) Dinle: bloklar sırayla, tr-TR ve Türkçe ses, okunan blok vurgulu; s
   await cubuk(page).locator('[data-so="dinle"]').click();
   await expect.poll(() => say(page)).toBe(1);
   const ilk = await page.evaluate(() => window.__sahteSes.kayit[0]);
-  expect(ilk.text).toBe((await page.locator('.ders h1').innerText()) + '.');   // noktasız başlığa nokta: sonrakiyle tek nefeste okunmasın
+  expect(ilk.text).toBe('Ders 10: ' + (await page.locator('.ders h1').innerText()) + '.');   // ders numarası söylenir; noktasız başlığa nokta
   expect(ilk.lang).toBe('tr-TR');
   expect(ilk.ses).toBe('Sahte Türkçe');
   await expect(page.locator('.ders h1')).toHaveClass(/so-okunan/);
@@ -141,7 +141,7 @@ test('(d) Bloğa dokunma: açık oturumda oradan sürer; boşta dokunmak ses ba�
   await p.nth(2).click();
   await expect.poll(() => say(page)).toBe(2);
   await expect(p.nth(2)).toHaveClass(/so-okunan/);
-  expect((await konusmalar(page))[1]).toBe(await page.evaluate(() => window.Ses.parcala(document.querySelectorAll('.ders p.okunur')[2].textContent)[0]));
+  expect((await konusmalar(page))[1]).toBe(await page.evaluate(() => window.Ses.parcala(window.Okunus.okunus(document.querySelectorAll('.ders p.okunur')[2].textContent))[0]));
 });
 
 test('(e) Hız 0,8–1,5: çalan parçaya uygulanır ve hatırlanır', async ({ page }) => {
@@ -288,4 +288,96 @@ test('(t) Okuma tanısı: çubukta ve Tanı ekranının raporunda', async ({ pag
   await page.locator('#tnYenile').click();
   await expect(page.locator('#tnRapor')).toContainText('SESLİ OKUMA: var · sesler Sahte Türkçe (tr-TR, yerel, varsayılan)');
   await expect(page.locator('#tnRapor')).toContainText('oturum (ders d10');
+});
+
+async function yonVer(page, alpha, beta, gamma) {
+  await page.evaluate(([a, b, g]) => {
+    for (let i = 0; i < 60; i++) {
+      const tur = ('ondeviceorientationabsolute' in window) ? 'deviceorientationabsolute' : 'deviceorientation';
+      window.dispatchEvent(new DeviceOrientationEvent(tur, { alpha: a, beta: b, gamma: g, absolute: true }));
+    }
+  }, [alpha, beta, gamma]);
+  await page.waitForTimeout(150);
+}
+
+test('(k) Dersten derse: kutu işaretliyse ders bitince sonrakine geçer ve kendiliğinden okur; işaretsizse durur', async ({ page }) => {
+  await sahteOrtam(page);
+  await dersAc(page, 'd9');
+  await page.locator('#dsSurekli').check();
+  await cubuk(page).locator('[data-so="dinle"]').click();
+  for (let i = 0; i < 600 && await durumu(page); i++) await page.evaluate(() => window.__sahteSes.bitir());
+  await expect(page).toHaveURL(/#ders\/d10$/);
+  await expect.poll(() => konusmalar(page).then(k => k[k.length - 1]), { timeout: 5000 }).toMatch(/^Ders 10: Ay\.$/);
+  expect((await durumu(page)).durum).toBe('oynuyor');
+  /* işaret kaldırılınca sonda durur */
+  await page.locator('#dsSurekli').uncheck();
+  for (let i = 0; i < 600 && await durumu(page); i++) await page.evaluate(() => window.__sahteSes.bitir());
+  await page.waitForTimeout(600);
+  await expect(page).toHaveURL(/#ders\/d10$/);
+});
+
+test('(g) Gökyüzü: "Bu geceyi dinle" özeti, bulut cümlesini ve planı okur; "Gördüm, deftere yaz" okunmaz', async ({ page }) => {
+  await page.clock.install({ time: new Date('2026-10-27T19:00:00+03:00') });
+  await sahteOrtam(page);
+  const t0 = Date.UTC(2026, 9, 27) / 1000, n = 72, dolu = v => Array(n).fill(v);
+  await page.route('**/api.open-meteo.com/**', r => r.fulfill({ json: { hourly: { time: [...Array(n).keys()].map(i => t0 + i * 3600), cloud_cover: dolu(20), cloud_cover_low: dolu(20), cloud_cover_mid: dolu(0), cloud_cover_high: dolu(0), relative_humidity_2m: dolu(60), wind_speed_10m: dolu(5), precipitation_probability: dolu(0), precipitation: dolu(0) } } }));
+  await page.goto('/index.html#gok');
+  const c = page.locator('#gkSes');
+  await expect(page.locator('#gkHava .hava-cumle')).toBeVisible();
+  await expect(c.locator('[data-so="dinle"]')).toHaveText('Bu geceyi dinle');
+  await expect(page.locator('#gkPlan li.plan-gezegen').first()).toBeVisible();
+  await page.waitForTimeout(500);
+  await c.locator('[data-so="dinle"]').click();
+  for (let i = 0; i < 300 && await durumu(page); i++) await page.evaluate(() => window.__sahteSes.bitir());
+  const k = (await konusmalar(page)).join(' ');
+  expect(k).toMatch(/^Güneş 18:06'da batıyor/);
+  expect(k).toContain('Bulut tahmini: gece boyunca büyük ölçüde açık.');
+  expect(k).toContain('Bu gecenin planı.');
+  expect(k).toContain('Bulut yüzde 20.');
+  expect(k).toMatch(/\d+ derece yükseklikte, (kuzey|güney|doğu|batı)\S*(de|da)\./);
+  expect(k).not.toContain('..');
+  expect(k).toMatch(/Saat \d\d:\d\d\. Jüpiter\. \d+ derece/);
+  expect(k).not.toContain('Gördüm');
+  expect(k).not.toMatch(/[°%]/);
+});
+
+test('(r) Kartları sesli tekrar: soruyu okur, 8 sn sonra cevabı açıp okur; Bildim ile sonraki kart okunur', async ({ page }) => {
+  await page.clock.install({ time: new Date('2026-10-27T19:00:00+03:00') });
+  await sahteOrtam(page);
+  await page.goto('/index.html#ders/d10');
+  await page.locator('#dsBitir').click();
+  await page.goto('/index.html#ders/kartlar');
+  await page.locator('#kaSesli').click();
+  await expect(page.locator('#kaSesli')).toHaveAttribute('aria-pressed', 'true');
+  const soru = await page.locator('.kart-on').innerText();
+  await expect.poll(() => konusmalar(page).then(k => k.join(' '))).toContain(soru.replace(/ — değeri ne\?$/, '').slice(0, 30));
+  for (let i = 0; i < 20 && await page.evaluate(() => window.__sahteSes.aktif()); i++) await page.evaluate(() => window.__sahteSes.bitir());
+  await expect(page.locator('#kaCevir')).toHaveText('Cevabı göster (8)');
+  await page.clock.runFor(8500);
+  await expect(page.locator('#kaArka')).toBeVisible();
+  const cevap = await page.locator('#kaArka p').innerText();
+  await expect.poll(() => konusmalar(page).then(k => k.join(' '))).toContain(cevap.slice(0, 20));
+  const once = await say(page);
+  await page.locator('#kaEvet').click();
+  await expect.poll(() => say(page)).toBeGreaterThan(once);
+  /* tercih hatırlanır */
+  expect(await page.evaluate(() => localStorage.getItem('urania_kartSesli'))).toBe('true');
+});
+
+test('(y) Gökyüzüne bak: sesli yön tarifi hedefi söyler, ortalanınca "tam karşında" der', async ({ page }) => {
+  await page.clock.install({ time: new Date('2026-10-27T21:00:00+03:00') });
+  await sahteOrtam(page);
+  await page.goto('/index.html#ar');
+  await page.waitForTimeout(300);
+  await expect(page.locator('#arSesli')).toBeVisible();
+  await page.locator('#arSesli').click();
+  await yonVer(page, ((6.08 - 90) % 360 + 360) % 360, 90, 0);   // doğu ufku
+  await page.locator('#arBul').click();
+  await page.locator('#arAra').fill('satürn');
+  await page.locator('#arSonuc button', { hasText: 'Satürn' }).click();
+  await yonVer(page, ((6.08 - 90) % 360 + 360) % 360, 90, 0);
+  await expect.poll(() => konusmalar(page).then(k => k.join(' | '))).toMatch(/Satürn: sağa 4[23] derece, yukarı (39|40) derece/);
+  /* Satürn 132,5° / 39,5° yönüne çevir */
+  await yonVer(page, ((6.08 - 132.5) % 360 + 360) % 360, 90 + 39.5, 0);
+  await expect.poll(() => konusmalar(page).then(k => k[k.length - 1])).toBe('Satürn tam karşında.');
 });
