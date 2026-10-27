@@ -3,7 +3,11 @@
   "unite": "yildizlar",
   "baslik": "Yıldızların Hayatı",
   "ozet": "Bir yıldızın rengi, parlaklığı, büyüklüğü ve ne kadar yaşayacağı büyük ölçüde tek bir sayıya bağlıdır: doğduğu kütleye. Bu derste yıldızları tayflarına göre sınıflamayı, H-R diyagramını okumayı, yıldızı ayakta tutan iç dengeyi ve büyük yıldızların neden kısa yaşadığını öğreneceksin.",
-  "on_bilgi": ["d2", "d4", "d14"],
+  "on_bilgi": [
+    "d2",
+    "d4",
+    "d14"
+  ],
   "bolumler": [
     {
       "baslik": "Yıldızları tayflarına göre sınıflamak",
@@ -56,7 +60,7 @@
       "baslik": "Kütle–ışıma gücü ilişkisi",
       "paragraflar": [
         "Kütlesi büyük olan yıldızda üstteki katmanların ağırlığı da büyüktür; onu taşıyan hidrostatik denge daha sıcak bir çekirdekte kurulur ve füzyon çok daha hızlı yürür. Bir önceki bölümdeki sayılar bunu gösteriyor: Güneş'in çekirdeği yaklaşık 15,7 milyon kelvin, 1,5 Güneş kütleli bir yıldızınki yaklaşık 18 milyon kelvindir. Sonuç: kütle biraz artınca ışıma gücü çok artar. Bu ilişki ilk önce gözlemden çıkarıldı: Wikipedia'ya göre çift yıldız sistemlerindeki yıldızların kütleleri ölçülüp ışıma güçleriyle karşılaştırıldı (çift yıldızlarla kütle ölçmek d15'te). Arthur Eddington 1924'te yıldız içi modellerinin aynı ilişkiyi verdiğini gösterdi.",
-        "Anakol yıldızları için sık kullanılan kural L ∝ M^3,5'tir; Wikipedia bu değerin 2 ile 55 Güneş kütlesi arasında geçerli olduğunu, beyaz cücelere ve kırmızı devlere uygulanmadığını belirtir. Aynı kaynak kütle aralığına göre değişen bir ilişki de verir: 0,43 ile 2 Güneş kütlesi arasında L = M^4, daha hafif yıldızlarda L ≈ 0,23 M^2,3, 2–55 Güneş kütlesinde L ≈ 1,4 M^3,5 (hepsi Güneş birimleriyle). Örneğin Güneş'ten iki kat kütleli bir yıldız, 0,43–2 aralığındaki kurala göre yaklaşık 2^4 = 16 kat parlaktır.",
+        "Anakol yıldızları için sık kullanılan kural L ∝ M^3,5'tir; Wikipedia bu değerin 2 ile 55 Güneş kütlesi arasında geçerli olduğunu, beyaz cücelere ve kırmızı devlere uygulanmadığını belirtir. Aynı kaynak kütle aralığına göre değişen bir ilişki de verir: 0,43 ile 2 Güneş kütlesi arasında L = M^4, daha hafif yıldızlarda L ≈ 0,23 M^2,3, 2–55 Güneş kütlesinde L ≈ 1,4 M^3,5 (hepsi Güneş birimleriyle). Bu parçalı katsayılar yaklaşıktır ve kaynağa göre değişir: Duric'in ders kitabı yalnız ilk iki parçayı verir, başka kitaplar farklı üsler kullanır. Örneğin Güneş'ten iki kat kütleli bir yıldız, 0,43–2 aralığındaki kurala göre yaklaşık 2^4 = 16 kat parlaktır.",
         "Bu kurallar kabadır. Eric Mamajek'in anakol yıldızları tablosu A0 tipi bir yıldız için 2,18 Güneş kütlesi ve yaklaşık 38 Güneş ışıma gücü verir; aynı kütleye M^4 uygulansa yaklaşık 23 çıkar. Kural ile tablo arasında yaklaşık 1,7 kat fark var. Hesap yaparken gerçek ölçümlere dayanan tablo değerleri daha güvenilirdir; kural ise büyüklük mertebesini akılda tutmak içindir."
       ],
       "akilda": "Anakolda kütle biraz artınca ışıma gücü çok artar: kabaca L ∝ M^3,5 ile M^4 arası. İlişki çift yıldızlardan ölçülen kütlelerle kuruldu; kural kabadır, tablo değerleri daha güvenilirdir."
@@ -190,17 +194,50 @@
     }
   ],
   "sozluk": [
-    { "terim": "Tayf sınıfı", "tanim": "Yıldızın tayfındaki çizgilere göre verilen, yüzey sıcaklığını gösteren harf ve rakam (O, B, A, F, G, K, M; 0–9)." },
-    { "terim": "Işıma sınıfı", "tanim": "MK sisteminde yıldızın boyunu ve parlaklığını gösteren Romen rakamı (I süperdev, III dev, V anakol)." },
-    { "terim": "Işıma gücü", "tanim": "Bir yıldızın saniyede bütün yüzeyinden yaydığı toplam enerji; Güneş birimiyle (L☉) verilir." },
-    { "terim": "H-R diyagramı", "tanim": "Yıldızların ışıma gücünü (yukarı parlak) yüzey sıcaklığına (sola sıcak) karşı gösteren grafik." },
-    { "terim": "Anakol", "tanim": "Çekirdeğinde hidrojen yakan yıldızların H-R diyagramında oluşturduğu, kütleye göre dizilen köşegen şerit." },
-    { "terim": "Hidrostatik denge", "tanim": "Yıldızın her katmanında içe çeken kütleçekimiyle dışa iten gaz basıncının dengelenmesi." },
-    { "terim": "Kahverengi cüce", "tanim": "Kütlesi Jüpiter'in yaklaşık 13 ile 80 katı arasında olan, hidrojeni sürekli kaynaştıramayan cisim." },
-    { "terim": "Kırmızı dev", "tanim": "Çekirdeğindeki hidrojeni bitirip kabukta yakan, şişmiş, soğuk yüzeyli ama çok parlak yıldız." },
-    { "terim": "Helyum parlaması", "tanim": "0,8–2,0 Güneş kütleli yıldızlarda helyum füzyonunun çekirdekte ani bir kaçak tepkimeyle başlaması." },
-    { "terim": "Renk-kadir diyagramı", "tanim": "H-R diyagramının gözlemsel biçimi: yatayda renk indeksi (örneğin B eksi V), dikeyde kadir." },
-    { "terim": "Hertzsprung boşluğu", "tanim": "H-R diyagramında kırmızı devleri anakoldan ayıran, yıldızın az bulunduğu bölge." }
+    {
+      "terim": "Tayf sınıfı",
+      "tanim": "Yıldızın tayfındaki çizgilere göre verilen, yüzey sıcaklığını gösteren harf ve rakam (O, B, A, F, G, K, M; 0–9)."
+    },
+    {
+      "terim": "Işıma sınıfı",
+      "tanim": "MK sisteminde yıldızın boyunu ve parlaklığını gösteren Romen rakamı (I süperdev, III dev, V anakol)."
+    },
+    {
+      "terim": "Işıma gücü",
+      "tanim": "Bir yıldızın saniyede bütün yüzeyinden yaydığı toplam enerji; Güneş birimiyle (L☉) verilir."
+    },
+    {
+      "terim": "H-R diyagramı",
+      "tanim": "Yıldızların ışıma gücünü (yukarı parlak) yüzey sıcaklığına (sola sıcak) karşı gösteren grafik."
+    },
+    {
+      "terim": "Anakol",
+      "tanim": "Çekirdeğinde hidrojen yakan yıldızların H-R diyagramında oluşturduğu, kütleye göre dizilen köşegen şerit."
+    },
+    {
+      "terim": "Hidrostatik denge",
+      "tanim": "Yıldızın her katmanında içe çeken kütleçekimiyle dışa iten gaz basıncının dengelenmesi."
+    },
+    {
+      "terim": "Kahverengi cüce",
+      "tanim": "Kütlesi Jüpiter'in yaklaşık 13 ile 80 katı arasında olan, hidrojeni sürekli kaynaştıramayan cisim."
+    },
+    {
+      "terim": "Kırmızı dev",
+      "tanim": "Çekirdeğindeki hidrojeni bitirip kabukta yakan, şişmiş, soğuk yüzeyli ama çok parlak yıldız."
+    },
+    {
+      "terim": "Helyum parlaması",
+      "tanim": "0,8–2,0 Güneş kütleli yıldızlarda helyum füzyonunun çekirdekte ani bir kaçak tepkimeyle başlaması."
+    },
+    {
+      "terim": "Renk-kadir diyagramı",
+      "tanim": "H-R diyagramının gözlemsel biçimi: yatayda renk indeksi (örneğin B eksi V), dikeyde kadir."
+    },
+    {
+      "terim": "Hertzsprung boşluğu",
+      "tanim": "H-R diyagramında kırmızı devleri anakoldan ayıran, yıldızın az bulunduğu bölge."
+    }
   ],
   "defter_notu": [
     "Tayf sınıfları sıcaktan soğuğa: O B A F G K M. Güneş = G2V (G2 renk, V anakol).",
@@ -248,31 +285,113 @@
     }
   ],
   "kaynaklar": [
-    { "ad": "Wikipedia, Stellar classification", "url": "https://en.wikipedia.org/wiki/Stellar_classification" },
-    { "ad": "Wikipedia, Hertzsprung–Russell diagram", "url": "https://en.wikipedia.org/wiki/Hertzsprung%E2%80%93Russell_diagram" },
-    { "ad": "Wikipedia, Mass–luminosity relation", "url": "https://en.wikipedia.org/wiki/Mass%E2%80%93luminosity_relation" },
-    { "ad": "Wikipedia, Main sequence", "url": "https://en.wikipedia.org/wiki/Main_sequence" },
-    { "ad": "E. Mamajek, A Modern Mean Dwarf Stellar Color and Effective Temperature Sequence (sürüm 2022.04.16)", "url": "https://www.pas.rochester.edu/~emamajek/EEM_dwarf_UBVIJHK_colors_Teff.txt" },
-    { "ad": "Wikipedia, Sun", "url": "https://en.wikipedia.org/wiki/Sun" },
-    { "ad": "Wikipedia, Stellar evolution", "url": "https://en.wikipedia.org/wiki/Stellar_evolution" },
-    { "ad": "Wikipedia, Protostar", "url": "https://en.wikipedia.org/wiki/Protostar" },
-    { "ad": "Wikipedia, Star formation", "url": "https://en.wikipedia.org/wiki/Star_formation" },
-    { "ad": "Wikipedia, Brown dwarf", "url": "https://en.wikipedia.org/wiki/Brown_dwarf" },
-    { "ad": "Wikipedia, Red giant", "url": "https://en.wikipedia.org/wiki/Red_giant" },
-    { "ad": "Wikipedia, Helium flash", "url": "https://en.wikipedia.org/wiki/Helium_flash" },
-    { "ad": "Wikipedia, Triple-alpha process", "url": "https://en.wikipedia.org/wiki/Triple-alpha_process" },
-    { "ad": "Wikipedia, Annie Jump Cannon", "url": "https://en.wikipedia.org/wiki/Annie_Jump_Cannon" },
-    { "ad": "NASA Science, Stars", "url": "https://science.nasa.gov/universe/stars/" },
-    { "ad": "NASA Science, Sun: Facts", "url": "https://science.nasa.gov/sun/facts/" },
-    { "ad": "EarthSky, What is a red dwarf star?", "url": "https://earthsky.org/astronomy-essentials/what-is-a-red-dwarf-star-most-common/" },
-    { "ad": "IAU 2015 Karar B3, nominal Güneş değerleri (T☉ = 5772 K)", "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf" },
-    { "ad": "Planck 2018 sonuçları VI (evrenin yaşı, Tablo 2)", "url": "https://arxiv.org/pdf/1807.06209v4" },
-    { "ad": "Wikipedia, Wien's displacement law (Betelgeuse ve Rigel sıcaklıkları)", "url": "https://en.wikipedia.org/wiki/Wien%27s_displacement_law" },
-    { "ad": "NIST CODATA, Wien sabiti", "url": "https://physics.nist.gov/cgi-bin/cuu/Value?bwien" },
-    { "ad": "NASA Science, Visible Light (380–700 nm)", "url": "https://science.nasa.gov/ems/09_visiblelight/" },
-    { "ad": "d3-celestial yıldız kataloğu (uygulamanın veri/yildizlar.json kaynağı)", "url": "https://github.com/ofrohn/d3-celestial/blob/master/data/stars.6.json" },
-    { "ad": "NASA Hubble, Messier 42 (Avcı için en iyi ay)", "url": "https://science.nasa.gov/?p=29958" },
-    { "ad": "University of Iowa, The Classification of Stellar Spectra", "url": "https://homepage.physics.uiowa.edu/~kgg/teaching/general62/spectral_classification.html" },
-    { "ad": "Britannica, Star: Classification of spectral types", "url": "https://britannica.com/science/star-astronomy/Classification-of-spectral-types" }
+    {
+      "ad": "Wikipedia, Stellar classification",
+      "url": "https://en.wikipedia.org/wiki/Stellar_classification"
+    },
+    {
+      "ad": "Wikipedia, Hertzsprung–Russell diagram",
+      "url": "https://en.wikipedia.org/wiki/Hertzsprung%E2%80%93Russell_diagram"
+    },
+    {
+      "ad": "Wikipedia, Mass–luminosity relation",
+      "url": "https://en.wikipedia.org/wiki/Mass%E2%80%93luminosity_relation"
+    },
+    {
+      "ad": "Wikipedia, Main sequence",
+      "url": "https://en.wikipedia.org/wiki/Main_sequence"
+    },
+    {
+      "ad": "E. Mamajek, A Modern Mean Dwarf Stellar Color and Effective Temperature Sequence (sürüm 2022.04.16)",
+      "url": "https://www.pas.rochester.edu/~emamajek/EEM_dwarf_UBVIJHK_colors_Teff.txt"
+    },
+    {
+      "ad": "Wikipedia, Sun",
+      "url": "https://en.wikipedia.org/wiki/Sun"
+    },
+    {
+      "ad": "Wikipedia, Stellar evolution",
+      "url": "https://en.wikipedia.org/wiki/Stellar_evolution"
+    },
+    {
+      "ad": "Wikipedia, Protostar",
+      "url": "https://en.wikipedia.org/wiki/Protostar"
+    },
+    {
+      "ad": "Wikipedia, Star formation",
+      "url": "https://en.wikipedia.org/wiki/Star_formation"
+    },
+    {
+      "ad": "Wikipedia, Brown dwarf",
+      "url": "https://en.wikipedia.org/wiki/Brown_dwarf"
+    },
+    {
+      "ad": "Wikipedia, Red giant",
+      "url": "https://en.wikipedia.org/wiki/Red_giant"
+    },
+    {
+      "ad": "Wikipedia, Helium flash",
+      "url": "https://en.wikipedia.org/wiki/Helium_flash"
+    },
+    {
+      "ad": "Wikipedia, Triple-alpha process",
+      "url": "https://en.wikipedia.org/wiki/Triple-alpha_process"
+    },
+    {
+      "ad": "Wikipedia, Annie Jump Cannon",
+      "url": "https://en.wikipedia.org/wiki/Annie_Jump_Cannon"
+    },
+    {
+      "ad": "NASA Science, Stars",
+      "url": "https://science.nasa.gov/universe/stars/"
+    },
+    {
+      "ad": "NASA Science, Sun: Facts",
+      "url": "https://science.nasa.gov/sun/facts/"
+    },
+    {
+      "ad": "EarthSky, What is a red dwarf star?",
+      "url": "https://earthsky.org/astronomy-essentials/what-is-a-red-dwarf-star-most-common/"
+    },
+    {
+      "ad": "IAU 2015 Karar B3, nominal Güneş değerleri (T☉ = 5772 K)",
+      "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf"
+    },
+    {
+      "ad": "Planck 2018 sonuçları VI (evrenin yaşı, Tablo 2)",
+      "url": "https://arxiv.org/pdf/1807.06209v4"
+    },
+    {
+      "ad": "Wikipedia, Wien's displacement law (Betelgeuse ve Rigel sıcaklıkları)",
+      "url": "https://en.wikipedia.org/wiki/Wien%27s_displacement_law"
+    },
+    {
+      "ad": "NIST CODATA, Wien sabiti",
+      "url": "https://physics.nist.gov/cgi-bin/cuu/Value?bwien"
+    },
+    {
+      "ad": "NASA Science, Visible Light (380–700 nm)",
+      "url": "https://science.nasa.gov/ems/09_visiblelight/"
+    },
+    {
+      "ad": "d3-celestial yıldız kataloğu (uygulamanın veri/yildizlar.json kaynağı)",
+      "url": "https://github.com/ofrohn/d3-celestial/blob/master/data/stars.6.json"
+    },
+    {
+      "ad": "NASA Hubble, Messier 42 (Avcı için en iyi ay)",
+      "url": "https://science.nasa.gov/?p=29958"
+    },
+    {
+      "ad": "University of Iowa, The Classification of Stellar Spectra",
+      "url": "https://homepage.physics.uiowa.edu/~kgg/teaching/general62/spectral_classification.html"
+    },
+    {
+      "ad": "Britannica, Star: Classification of spectral types",
+      "url": "https://britannica.com/science/star-astronomy/Classification-of-spectral-types"
+    },
+    {
+      "ad": "Duric 2004, Advanced Astrophysics §1.3.8 (iki parçalı kütle–ışıma ilişkisi)",
+      "url": "https://www.tevza.org/home/course/PCO2012/Duric%20N.%20Advanced%20astrophysics%20(CUP,%202004).pdf"
+    }
   ]
 }

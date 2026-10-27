@@ -50,9 +50,9 @@
       ],
       "ornek": {
         "baslik": "Örnek: 100 mm'lik teleskop ve Hubble ne kadar ince ayrıntı seçer?",
-        "metin": "100 mm'lik teleskop: θ ≈ 138 / 100 = 1,38 yay saniyesi; Dawes sınırıyla 116 / 100 = 1,16 yay saniyesi. Çıplak gözün 1′, yani 60 yay saniyesiyle kıyaslarsan 60 / 1,38 ≈ 43 kat daha ince ayrıntı. Hubble için formülün tam hâlini kullanalım: λ = 500 nm = 5 × 10⁻⁷ m, D = 2,4 m. θ = 1,22 × 5 × 10⁻⁷ / 2,4 ≈ 2,54 × 10⁻⁷ radyan. Radyanı yay saniyesine çevirmek için 206.265 ile çarp: 2,54 × 10⁻⁷ × 206.265 ≈ 0,052 yay saniyesi. Kaynağın verdiği 0,04 değerine yakın ama aynı değil. Kaynak hangi ölçütü kullandığını yazmıyor; 1,22 çarpanı olmadan λ / D ile hesaplarsan 0,043 yay saniyesi çıkar, yani fark büyük olasılıkla ayırma ölçütünün tanımından gelir. Sonuç: 100 mm'lik teleskop yaklaşık 1,4 yay saniyesi, Hubble yaklaşık 0,05 yay saniyesi."
+        "metin": "100 mm'lik teleskop: θ ≈ 138 / 100 = 1,38 yay saniyesi; Dawes sınırıyla 116 / 100 = 1,16 yay saniyesi. Çıplak gözün 1′, yani 60 yay saniyesiyle kıyaslarsan 60 / 1,38 ≈ 43 kat daha ince ayrıntı. Hubble için formülün tam hâlini kullanalım: λ = 500 nm = 5 × 10⁻⁷ m, D = 2,4 m. θ = 1,22 × 5 × 10⁻⁷ / 2,4 ≈ 2,54 × 10⁻⁷ radyan. Radyanı yay saniyesine çevirmek için 206.265 ile çarp: 2,54 × 10⁻⁷ × 206.265 ≈ 0,052 yay saniyesi. NASA, Hubble'ın görünür ışıkta yaklaşık 0,05 yay saniyesini ayırdığını söyler; bu, Rayleigh hesabıyla uyumludur. Bazı kaynaklarda geçen 0,04 ise 1,22 çarpanı olmadan λ / D ile hesaplanan 0,043'e karşılık gelir. İki sayı çelişmez, farklı ölçütlerden gelir. Sonuç: 100 mm'lik teleskop yaklaşık 1,4 yay saniyesi, Hubble yaklaşık 0,05 yay saniyesi."
       },
-      "akilda": "Ayırma gücü θ = 1,22 × λ / D; pratikte θ (yay saniyesi) ≈ 138 / D (mm). Açıklık büyüdükçe, dalga boyu kısaldıkça ayrıntı incelir. Göz yaklaşık 1′, 100 mm'lik teleskop yaklaşık 1,4″, Hubble yaklaşık 0,04″."
+      "akilda": "Ayırma gücü θ = 1,22 × λ / D; pratikte θ (yay saniyesi) ≈ 138 / D (mm). Açıklık büyüdükçe, dalga boyu kısaldıkça ayrıntı incelir. Göz yaklaşık 1′, 100 mm'lik teleskop yaklaşık 1,4″, Hubble yaklaşık 0,05″."
     },
     {
       "baslik": "Büyütme ve göz merceği",
@@ -81,7 +81,7 @@
       "paragraflar": [
         "Yıldızlar neden göz kırpar? Başımızın üstündeki hava sürekli hareket eder. Işığın yolundaki havanın kırma özelliği, yani ışığı ne kadar büktüğü, çok hızlı değişir. Bu yüzden yıldızın parlaklığı titreşir; buna parıldama denir. Teleskopta aynı olay görüntünün titremesine ve bulanıklaşmasına yol açar. Gökbilimciler atmosferin yarattığı bu bulanıklığa görüş (İngilizcede seeing) der ve yay saniyesiyle ölçer.",
         "Görüş, büyük bir teleskobun kırınım sınırından genellikle çok daha kötüdür. En iyi yüksek dağ gözlemevlerinde görüş bazen 0,4 yay saniyesine kadar iner; ortalama bir gözlem yeri için 1 yay saniyesi iyi bir değerdir; kent ortamında görüş genellikle çok daha kötüdür. Bir eşik de vardır: görüş parametresi denen bir uzunluk, en iyi yerlerde yaklaşık 20 cm, deniz seviyesindeki tipik yerlerde yaklaşık 5 cm'dir. Çapı bundan küçük teleskopların uzun pozlamalı görüntüsünün keskinliğini kırınım, büyüklerinkini atmosfer belirler. İstanbul'u deniz seviyesindeki tipik bir yer sayarsan, birkaç santimetreden büyük bir teleskobun uzun pozlamalı keskinliğini aynası değil havası belirler.",
-        "Profesyonellerin ilk çaresi yer seçimidir. Gözlemevi ne kadar yüksekteyse üstündeki atmosfer o kadar incedir; iyi görüşlü bir yer seçmek en önemli ölçütlerden biridir ve en büyük teleskoplar ışık kirliliği az bölgelere kurulur. Türkiye'deki örnek Erzurum yakınındaki Doğu Anadolu Gözlemevi'dir (DAG). Karakaya Tepesi'nde deniz seviyesinden 3.170 metre yükseklikteki 4 metre çaplı teleskobu, Türkiye'nin en büyük teleskobu ve ilk kızılötesi teleskobu olarak tasarlandı. Teleskop teknik ilk ışığını 2024'te aldı ve bilimsel gözlemlere hazırlanıyor.",
+        "Profesyonellerin ilk çaresi yer seçimidir. Gözlemevi ne kadar yüksekteyse üstündeki atmosfer o kadar incedir; iyi görüşlü bir yer seçmek en önemli ölçütlerden biridir ve en büyük teleskoplar ışık kirliliği az bölgelere kurulur. Türkiye'deki örnek Erzurum yakınındaki Doğu Anadolu Gözlemevi'dir (DAG). Karakaya Tepesi'nde deniz seviyesinden 3.170 metre yükseklikteki 4 metre çaplı teleskobu, Türkiye'nin en büyük teleskobu ve ilk kızılötesi teleskobu olarak tasarlandı. Teleskop teknik ilk ışığını 2024'te aldı, ön kabulü Mayıs 2025 sonunda tamamlandı. Bilimsel gözlemlerin 2026 sonu ile 2027 başı arasında başlaması bekleniyor.",
         "İkinci çare uyarlamalı optiktir: atmosferin bozduğu ışığı anında düzeltmek. Teleskop, bir kılavuz yıldızın ışığındaki bozulmayı ölçer; ışık yolundaki biçimi değiştirilebilen esnek bir ayna, bozulmayı telafi edecek şekilde ayarlanır. ESO'ya göre bu ölçüm saniyede yaklaşık 1000 kez yapılır. Hedefin yakınında yeterince parlak bir yıldız yoksa yapay bir yıldız yaratılır: güçlü bir lazer, yaklaşık 90 km yükseklikteki sodyum atomlarını parlatır. Bugün birçok büyük yer teleskobu uyarlamalı optik kullanır; DAG'ın da bu teknolojiyle donatılacağı belirtiliyor. Şili'deki ELT'nin 39,3 metrelik ana aynası 798 altıgen parçadan oluşacak. ESO'nun Mart 2025 duyurusuna göre teleskobun ilk ışığı Mart 2029'da, bilimsel aletlerle ilk gözlemler Aralık 2030'da bekleniyor."
       ],
       "akilda": "Atmosferin titreşimi (görüş) yerdeki teleskopları en iyi yerlerde 0,4–1 yay saniyesiyle, kentte daha kötüsüyle sınırlar. Çare: yüksek ve karanlık yerler, bir de bozulmayı saniyede yaklaşık 1000 kez ölçüp esnek aynayla düzelten uyarlamalı optik."
@@ -102,7 +102,7 @@
     {
       "baslik": "İnterferometri: teleskopları birleştirmek",
       "paragraflar": [
-        "Bir çanağı kilometrelerce büyütemezsin, ama birçok çanağı birlikte çalıştırabilirsin. İnterferometride birden çok antenin sinyalleri birleştirilir ve daha büyük tek bir anteni taklit eder. Böyle bir dizinin ayırma gücünü çanakların tek tek boyu değil, dizideki en uzak iki teleskop arasındaki uzaklık belirler; bu uzaklığa taban çizgisi denir. Yaklaşık formül θ ≈ λ / B'dir: B taban çizgisi, θ radyan cinsinden. Cambridge'de Martin Ryle'ın grubunun interferometri ve açıklık sentezi çalışmaları Nobel Ödülü getirdi.",
+        "Bir çanağı kilometrelerce büyütemezsin, ama birçok çanağı birlikte çalıştırabilirsin. İnterferometride birden çok antenin sinyalleri birleştirilir ve daha büyük tek bir anteni taklit eder. Böyle bir dizinin ayırma gücünü çanakların tek tek boyu değil, dizideki en uzak iki teleskop arasındaki uzaklık belirler; bu uzaklığa taban çizgisi denir. Yaklaşık formül θ ≈ λ / B'dir: B taban çizgisi, θ radyan cinsinden. Cambridge'de Martin Ryle, gözlemleri ve özellikle açıklık sentezi tekniği için 1974 Nobel Fizik Ödülü'nü Antony Hewish ile paylaştı.",
         "İki ünlü örnek: ABD'nin New Mexico eyaletinde Socorro yakınındaki Çok Büyük Dizi (VLA) 27 teleskoptan oluşur ve aynı anda 351 bağımsız taban çizgisi kurar. Şili'nin Atacama Çölü'ndeki Chajnantor Platosu'na kurulan ALMA ise 54 tane 12 metrelik ve 12 tane 7 metrelik, toplam 66 antenle milimetre ve milimetre altı dalgalarda gözlem yapar; antenleri 16 kilometreye kadar yayılabilir. ALMA'nın dizi işletme alanı 5.100 metre yüksekliktedir. 2. dersten hatırla: su buharının etkisini azaltmak için gözlemevleri yüksek dağlara kurulur.",
         "Taban çizgisi Dünya boyuna kadar uzatılabilir: binlerce kilometre uzaktaki antenlerin kayıtları gözlemden sonra birleştirilir. Buna çok uzun taban çizgili interferometri (VLBI) denir. Olay Ufku Teleskobu (EHT) bu yöntemle sekiz yer konuşlu radyo gözlemevini birleştirip Dünya büyüklüğünde sanal bir teleskop kurdu ve 1,3 mm dalga boyunda gözlem yaptı. Dünya çapı uzunluğundaki taban çizgileri yaklaşık 20 mikro yay saniyesi ayırma gücüne ulaşır. Sonuç, 10 Nisan 2019'da yayımlanan, M87 galaksisinin merkezindeki kara deliğin gölge görüntüsüydü (16. ders). ALMA da EHT dizisinin merkezinde yer alan önemli bir parçasıdır."
       ],
@@ -124,7 +124,7 @@
         "baslik": "Örnek: Hubble mı Webb mi daha keskin?",
         "metin": "Rayleigh formülü: θ = 1,22 × λ / D. Hubble, λ = 0,5 μm, D = 2,4 m: θ = 1,22 × 0,5 × 10⁻⁶ / 2,4 ≈ 2,54 × 10⁻⁷ radyan ≈ 0,052 yay saniyesi. Webb, λ = 2 μm (örnek bir kızılötesi dalga boyu), D = 6,5 m: θ = 1,22 × 2 × 10⁻⁶ / 6,5 ≈ 3,75 × 10⁻⁷ radyan ≈ 0,077 yay saniyesi. Webb'in aynası 2,7 kat geniş ama bu örnekte dalga boyu 4 kat uzun; bu yüzden ayırma gücü Hubble'ınkine yakın, hatta biraz kötü çıkar. Işık toplamada ise Webb açık ara önde: alan oranı 25,4 / 4,0 ≈ 6,4. Sonuç: Hubble yaklaşık 0,05 yay saniyesi, Webb (2 μm'de) yaklaşık 0,08 yay saniyesi; Webb yaklaşık 6 kat fazla ışık toplar."
       },
-      "akilda": "Hubble (1990, 2,4 m) görünür ışıkta yaklaşık 0,04–0,05″ keskinlik sunar. Webb (2021, 6,5 m, 18 altın kaplı parça) kızılötesinde gözler, yaklaşık 6 kat fazla ışık toplar, beş katlı güneşlikle 50 K altında tutulur ve L2 çevresinde dolanır."
+      "akilda": "Hubble (1990, 2,4 m) görünür ışıkta yaklaşık 0,05″ keskinlik sunar (NASA). Webb (2021, 6,5 m, 18 altın kaplı parça) kızılötesinde gözler, yaklaşık 6 kat fazla ışık toplar, beş katlı güneşlikle 50 K altında tutulur ve L2 çevresinde dolanır."
     }
   ],
   "formuller": [
@@ -206,9 +206,9 @@
       "kaynak_url": "https://supernova.eso.org/exhibition/0818/"
     },
     {
-      "deger": "4 m · 3.170 m · teknik ilk ışık 2024",
+      "deger": "4 m · 3.170 m · teknik ilk ışık 2024 · ön kabul Mayıs 2025",
       "aciklama": "Doğu Anadolu Gözlemevi (DAG) teleskobunun ayna çapı, yüksekliği ve ilk ışığı",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Eastern_Anatolia_Observatory"
+      "kaynak_url": "https://arxiv.org/pdf/2510.23339"
     },
     {
       "deger": "500 m (her an 300 m kullanılır)",
@@ -304,11 +304,11 @@
     "Teleskobun 2 işi: ışık toplamak + ayrıntı ayırmak. İkisi de AÇIKLIĞA bağlı; büyütme en az önemli.",
     "Mercek: renk sapması + sarkma → en büyük mercekli Yerkes 1,02 m (1897). Ayna: renk sapması yok, arkadan desteklenir. Newton 1668.",
     "Işık ∝ D². 200 mm / 7 mm → ~816 kat ≈ 7,3 kadir. Güneş'e filtresiz ASLA bakma.",
-    "Ayırma: θ = 1,22 λ / D (radyan); pratik θ″ ≈ 138 / D(mm), Dawes 116 / D. Göz ~1′, 100 mm ~1,4″, Hubble ~0,04″.",
+    "Ayırma: θ = 1,22 λ / D (radyan); pratik θ″ ≈ 138 / D(mm), Dawes 116 / D. Göz ~1′, 100 mm ~1,4″, Hubble ~0,05″.",
     "Büyütme M = F / f. En yüksek yararlı ≈ 2 × D(mm). Çıkış göz bebeği = D / M ≤ 7 mm.",
     "Kundak: alt-az (basit, Dobson), ekvatoral (ekseni Kutup Yıldızı'na, İstanbul'da 41°; fotoğraf için).",
     "Görüş: en iyi 0,4″, ortalama yerde 1″ iyi, kent daha kötü. Uyarlamalı optik: esnek ayna ~1000/s, lazer yıldız ~90 km.",
-    "DAG (Erzurum): 4 m, 3.170 m, teknik ilk ışık 2024. ELT: 39,3 m, 798 parça, ilk ışık planı Mart 2029.",
+    "DAG (Erzurum): 4 m, 3.170 m, teknik ilk ışık 2024, ön kabul Mayıs 2025; bilimsel gözlem 2026 sonu–2027 başı bekleniyor. ELT: 39,3 m, 798 parça, ilk ışık planı Mart 2029.",
     "Radyo: Jansky 1932, Reber 1937; FAST 500 m. İnterferometri θ ≈ λ / B: VLA 27, ALMA 66, EHT ~20 mikro yay saniyesi.",
     "Hubble 1990, 2,4 m (ayna kusuru 1993'te düzeltildi). Webb 2021, 6,5 m, 18 parça, 50 K altı, L2, kızılötesi."
   ],
@@ -478,6 +478,22 @@
     {
       "ad": "Astronomics – Limiting magnitude (sınır kadir kuralı)",
       "url": "https://astronomics.com/limiting-magnitude_t.aspx"
+    },
+    {
+      "ad": "NASA Science: Hubble Optics (görünür ışıkta 0,05″)",
+      "url": "https://science.nasa.gov/mission/hubble/observatory/design/optics/"
+    },
+    {
+      "ad": "arXiv 2510.23339: DAG ön kabul (Mayıs 2025)",
+      "url": "https://arxiv.org/pdf/2510.23339"
+    },
+    {
+      "ad": "arXiv 2608.28226: DAG PLACID, bilimsel gözlem beklentisi",
+      "url": "https://arxiv.org/pdf/2608.28226"
+    },
+    {
+      "ad": "Nobel Fizik Ödülü 1974 (nobelprize.org)",
+      "url": "https://www.nobelprize.org/prizes/physics/1974/summary/"
     }
   ]
 }

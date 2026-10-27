@@ -3,7 +3,10 @@
   "unite": "yildizlar",
   "baslik": "Yıldızların Ölümü: Beyaz Cüceler, Süpernovalar ve Nötron Yıldızları",
   "ozet": "Bir yıldızın nasıl öleceğini başlangıç kütlesi belirler: hafif yıldızlar gezegenimsi bulutsu ve beyaz cüce bırakarak sessizce söner, kütleli yıldızlar çekirdekleri çöküp süpernova olarak patlar. Bu derste beyaz cüceyi, Chandrasekhar sınırını, demir çekirdeğin çöküşünü, Tip Ia süpernovaları, nötron yıldızlarını ve atarcaları öğrenecek, vücudundaki ağır elementlerin nereden geldiğini göreceksin.",
-  "on_bilgi": ["d4", "d5"],
+  "on_bilgi": [
+    "d4",
+    "d5"
+  ],
   "bolumler": [
     {
       "baslik": "Ölümü kütle belirler",
@@ -77,7 +80,7 @@
       "baslik": "Nötron yıldızları, atarcalar ve Yengeç Bulutsusu",
       "paragraflar": [
         "Çöküş süpernovasından geriye çoğu zaman bir nötron yıldızı kalır: bir Güneş'ten fazla kütlenin bir şehir büyüklüğüne sıkışmış hali. NASA'ya göre bu artıklar yaklaşık 20 km çapındadır ve çöken çekirdek kabaca 1 ile 3 M☉ arasındaysa oluşurlar. Bir şeker küpü kadar nötron yıldızı maddesi Dünya'da yaklaşık 1 trilyon kilogram gelirdi. Manyetik alanları Dünya'nınkinin trilyonlarca katıdır; magnetar denen türde ise bunun da yaklaşık 1000 katı.",
-        "1967'de Jocelyn Bell, yaklaşık 2.000 tahta direğe gerilmiş bakır tellerden oluşan bir radyo teleskobunun kayıtlarında tuhaf bir sinyal fark etti: her 1,337 saniyede bir tekrarlanan, son derece düzenli atımlar. Kaynağa şakayla küçük yeşil adamların kısaltması olan LGM-1 adı verildi; ama ne Bell ne de ekipteki Antony Hewish bunun uzaylılardan geldiğine ciddi olarak inandı. Açıklama: dönen, güçlü manyetik alanlı bir nötron yıldızı ışınım demetleri yayar. Demet her dönüşte Dünya'yı süpürdüğünde, deniz fenerinin ışığı gibi bir atım görürüz. Bu cisimlere atarca (pulsar) denir; atım aralıkları milisaniyelerden saniyelere uzanır. 1974 Nobel Fizik Ödülü'nü alanlar arasında Hewish vardı, Bell yoktu. Bell 2018'de 3 milyon dolarlık Özel Breakthrough Ödülü'nü aldı ve tamamını Fizik Enstitüsü'ne (Institute of Physics) bağışladı.",
+        "1967'de Jocelyn Bell, yaklaşık 2.000 tahta direğe gerilmiş bakır tellerden oluşan bir radyo teleskobunun kayıtlarında tuhaf bir sinyal fark etti: her 1,337 saniyede bir tekrarlanan, son derece düzenli atımlar. Kaynağa şakayla küçük yeşil adamların kısaltması olan LGM-1 adı verildi; ama ne Bell ne de ekipteki Antony Hewish bunun uzaylılardan geldiğine ciddi olarak inandı. Açıklama: dönen, güçlü manyetik alanlı bir nötron yıldızı ışınım demetleri yayar. Demet her dönüşte Dünya'yı süpürdüğünde, deniz fenerinin ışığı gibi bir atım görürüz. Bu cisimlere atarca (pulsar) denir; atım aralıkları milisaniyelerden saniyelere uzanır. 1974 Nobel Fizik Ödülü'nü Hewish, atarcaların keşfindeki belirleyici rolü için, Martin Ryle ile paylaştı (Ryle açıklık sentezi tekniği için ödüllendirildi); Bell ödülü alanlar arasında yoktu. Bell 2018'de 3 milyon dolarlık Özel Breakthrough Ödülü'nü aldı ve tamamını Fizik Enstitüsü'ne (Institute of Physics) bağışladı.",
         "En ünlü atarca Yengeç Bulutsusu'nun içindedir. Çinli gökbilimciler 4 Temmuz 1054'te gökte bir konuk yıldız kaydetti; NASA'ya göre yıldız yaklaşık bir ay gündüz gökyüzünde görüldü, Çin kaydı 23 gün der. Bulutsuyu 1731'de John Bevis buldu, 1758'de Charles Messier yeniden buldu ve kataloğuna M1 olarak girdi. Boğa takımyıldızında, yaklaşık 6.500 ışık yılı uzaklıktadır ve saniyede yaklaşık 1.500 km hızla genişler. Merkezdeki atarca 1968'de keşfedildi; NASA'ya göre saniyede 30 kez atım verir. Parlaklığı 8,4 kadir olan M1, NASA'ya göre küçük bir teleskopla görülebilir ve en iyi ocak ayında gözlenir."
       ],
       "ornek": {
@@ -195,18 +198,54 @@
     }
   ],
   "sozluk": [
-    { "terim": "Gezegenimsi bulutsu", "tanim": "Ölen orta kütleli bir yıldızın savurduğu ve sıcak çekirdeğin ışığıyla parlayan, birkaç on bin yılda dağılan gaz kabuğu." },
-    { "terim": "Beyaz cüce", "tanim": "Füzyon yapmayan, Dünya boyutunda, elektron yozlaşma basıncıyla ayakta duran yıldız artığı." },
-    { "terim": "Elektron yozlaşma basıncı", "tanim": "Pauli dışlama ilkesi yüzünden çok sıkışmış elektronların daha fazla sıkıştırılmaya karşı koyması." },
-    { "terim": "Chandrasekhar sınırı", "tanim": "Bir beyaz cücenin alabileceği en büyük kütle, yaklaşık 1,4 M☉." },
-    { "terim": "Çekirdek çöküşü süpernovası", "tanim": "Kütleli bir yıldızın demir çekirdeği çöküp geri sektiğinde dış katmanların uzaya fırlatıldığı patlama; tayfında hidrojen varsa Tip II denir." },
-    { "terim": "Tip Ia süpernova", "tanim": "Çift sistemde Chandrasekhar sınırına ulaşan bir beyaz cücenin tamamen dağıldığı, tayfında hidrojen olmayan patlama." },
-    { "terim": "Nötrino", "tanim": "Maddeyle neredeyse hiç etkileşmeyen, yüksüz, çok hafif temel parçacık." },
-    { "terim": "Nötron yıldızı", "tanim": "Çöküş süpernovasından kalan, yaklaşık 20 km çaplı, çoğunlukla nötronlardan oluşan aşırı yoğun artık." },
-    { "terim": "Atarca (pulsar)", "tanim": "Manyetik kutuplarından yaydığı ışınım demeti Dünya'yı düzenli aralıklarla süpüren dönen nötron yıldızı." },
-    { "terim": "Magnetar", "tanim": "Manyetik alanı sıradan nötron yıldızlarından yaklaşık 1000 kat güçlü olan nötron yıldızı türü." },
-    { "terim": "Kilonova", "tanim": "İki nötron yıldızının birleşmesinden sonra ağır elementlerin ışımasıyla oluşan, tipik novadan yaklaşık 1000 kat parlak patlama." },
-    { "terim": "s-süreci ve r-süreci", "tanim": "Demirden ağır elementleri yavaş (s) ya da çok hızlı (r) nötron yakalamayla üreten iki süreç." }
+    {
+      "terim": "Gezegenimsi bulutsu",
+      "tanim": "Ölen orta kütleli bir yıldızın savurduğu ve sıcak çekirdeğin ışığıyla parlayan, birkaç on bin yılda dağılan gaz kabuğu."
+    },
+    {
+      "terim": "Beyaz cüce",
+      "tanim": "Füzyon yapmayan, Dünya boyutunda, elektron yozlaşma basıncıyla ayakta duran yıldız artığı."
+    },
+    {
+      "terim": "Elektron yozlaşma basıncı",
+      "tanim": "Pauli dışlama ilkesi yüzünden çok sıkışmış elektronların daha fazla sıkıştırılmaya karşı koyması."
+    },
+    {
+      "terim": "Chandrasekhar sınırı",
+      "tanim": "Bir beyaz cücenin alabileceği en büyük kütle, yaklaşık 1,4 M☉."
+    },
+    {
+      "terim": "Çekirdek çöküşü süpernovası",
+      "tanim": "Kütleli bir yıldızın demir çekirdeği çöküp geri sektiğinde dış katmanların uzaya fırlatıldığı patlama; tayfında hidrojen varsa Tip II denir."
+    },
+    {
+      "terim": "Tip Ia süpernova",
+      "tanim": "Çift sistemde Chandrasekhar sınırına ulaşan bir beyaz cücenin tamamen dağıldığı, tayfında hidrojen olmayan patlama."
+    },
+    {
+      "terim": "Nötrino",
+      "tanim": "Maddeyle neredeyse hiç etkileşmeyen, yüksüz, çok hafif temel parçacık."
+    },
+    {
+      "terim": "Nötron yıldızı",
+      "tanim": "Çöküş süpernovasından kalan, yaklaşık 20 km çaplı, çoğunlukla nötronlardan oluşan aşırı yoğun artık."
+    },
+    {
+      "terim": "Atarca (pulsar)",
+      "tanim": "Manyetik kutuplarından yaydığı ışınım demeti Dünya'yı düzenli aralıklarla süpüren dönen nötron yıldızı."
+    },
+    {
+      "terim": "Magnetar",
+      "tanim": "Manyetik alanı sıradan nötron yıldızlarından yaklaşık 1000 kat güçlü olan nötron yıldızı türü."
+    },
+    {
+      "terim": "Kilonova",
+      "tanim": "İki nötron yıldızının birleşmesinden sonra ağır elementlerin ışımasıyla oluşan, tipik novadan yaklaşık 1000 kat parlak patlama."
+    },
+    {
+      "terim": "s-süreci ve r-süreci",
+      "tanim": "Demirden ağır elementleri yavaş (s) ya da çok hızlı (r) nötron yakalamayla üreten iki süreç."
+    }
   ],
   "defter_notu": [
     "Kütle kaderi belirler: ~8 M☉ altı → gezegenimsi bulutsu + beyaz cüce; üstü → süpernova.",
@@ -254,37 +293,137 @@
     }
   ],
   "kaynaklar": [
-    { "ad": "NASA Imagine the Universe, White Dwarfs", "url": "https://imagine.gsfc.nasa.gov/science/objects/dwarfs2.html" },
-    { "ad": "NASA Imagine the Universe, Neutron Stars and Pulsars", "url": "https://imagine.gsfc.nasa.gov/science/objects/pulsars1.html" },
-    { "ad": "NASA Science, Types of Black Holes", "url": "https://science.nasa.gov/universe/black-holes/types" },
-    { "ad": "NASA Science, What Is Betelgeuse?", "url": "https://science.nasa.gov/universe/what-is-betelgeuse-inside-the-strange-volatile-star" },
-    { "ad": "NASA Hubble Messier Catalog, Messier 1", "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-1/" },
-    { "ad": "NASA Hubble Messier Catalog, Messier 57", "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-57/" },
-    { "ad": "SEDS Messier Database, M27", "url": "http://messier.lamost.org/seds/seds.org/messier/en/m/m027.html" },
-    { "ad": "ESO eso1733, Merging neutron stars scatter gold and platinum into space", "url": "https://www.eso.org/public/news/eso1733/" },
-    { "ad": "Nobel Prize in Physics 1983, Summary", "url": "https://www.nobelprize.org/prizes/physics/1983/summary" },
-    { "ad": "Ohio State University, Ast162: Evolution of High-Mass Stars", "url": "https://www.astronomy.ohio-state.edu/pogge.1/Ast162/Unit2/himass.html" },
-    { "ad": "University of Colorado JILA, Core Collapse Supernovae", "url": "https://jila.colorado.edu/~ajsh/courses/astr1120_03/text/chapter6/l6S5.htm" },
-    { "ad": "Swinburne University COSMOS, Type Ia Supernova", "url": "https://astronomy.swinburne.edu.au/cosmos/T/Type+Ia+Supernova" },
-    { "ad": "Ohio State News, The stuff of the universe keeps changing", "url": "https://news.osu.edu/the-stuff-of-the-universe-keeps-changing/" },
-    { "ad": "Sky & Telescope, Jocelyn Bell Burnell: Pulsar Pioneer", "url": "https://skyandtelescope.org/astronomy-resources/famous-astronomers/jocelyn-bell-burnell-pulsar-pioneer/" },
-    { "ad": "Space.com, Red giant stars", "url": "https://www.space.com/22471-red-giant-stars.html" },
-    { "ad": "Universe Today, Few supernovae in the Milky Way every century", "url": "https://www.universetoday.com/articles/there-should-be-a-few-supernovae-in-the-milky-way-every-century-but-weve-only-seen-5-in-the-last-1000-years-why" },
-    { "ad": "Universe Today, How heavy can a neutron star get?", "url": "https://www.universetoday.com/articles/how-heavy-can-a-neutron-star-get" },
-    { "ad": "Wikipedia, Planetary nebula", "url": "https://en.wikipedia.org/wiki/Planetary_nebula" },
-    { "ad": "Wikipedia, Sirius B", "url": "https://en.wikipedia.org/wiki/Sirius_B" },
-    { "ad": "Wikipedia, Chandrasekhar limit", "url": "https://en.wikipedia.org/wiki/Chandrasekhar_limit" },
-    { "ad": "Wikipedia, Stellar evolution", "url": "https://en.wikipedia.org/wiki/Stellar_evolution" },
-    { "ad": "Wikipedia, Type II supernova", "url": "https://en.wikipedia.org/wiki/Type_II_supernova" },
-    { "ad": "Wikipedia, Type Ia supernova", "url": "https://en.wikipedia.org/wiki/Type_Ia_supernova" },
-    { "ad": "Wikipedia, SN 1987A", "url": "https://en.wikipedia.org/wiki/SN_1987A" },
-    { "ad": "Wikipedia, Kepler's Supernova", "url": "https://en.wikipedia.org/wiki/Kepler%27s_Supernova" },
-    { "ad": "Wikipedia, Crab Nebula", "url": "https://en.wikipedia.org/wiki/Crab_Nebula" },
-    { "ad": "Wikipedia, Crab Pulsar", "url": "https://en.wikipedia.org/wiki/Crab_Pulsar" },
-    { "ad": "Wikipedia, S-process", "url": "https://en.wikipedia.org/wiki/S-process" },
-    { "ad": "Wikipedia, Escape velocity", "url": "https://en.wikipedia.org/wiki/Escape_velocity" },
-    { "ad": "Wikipedia, Cassiopeia A", "url": "https://en.wikipedia.org/wiki/Cassiopeia_A" },
-    { "ad": "Wikipedia, Nickel-62", "url": "https://en.wikipedia.org/wiki/Nickel-62" },
-    { "ad": "Virgo/EGO, GW190814 basın bülteni (23 Haziran 2020)", "url": "https://www.ego-gw.it/wp-content/uploads/2020/06/GW190814_release_Virgo_FINAL_23_6.pdf" }
+    {
+      "ad": "NASA Imagine the Universe, White Dwarfs",
+      "url": "https://imagine.gsfc.nasa.gov/science/objects/dwarfs2.html"
+    },
+    {
+      "ad": "NASA Imagine the Universe, Neutron Stars and Pulsars",
+      "url": "https://imagine.gsfc.nasa.gov/science/objects/pulsars1.html"
+    },
+    {
+      "ad": "NASA Science, Types of Black Holes",
+      "url": "https://science.nasa.gov/universe/black-holes/types"
+    },
+    {
+      "ad": "NASA Science, What Is Betelgeuse?",
+      "url": "https://science.nasa.gov/universe/what-is-betelgeuse-inside-the-strange-volatile-star"
+    },
+    {
+      "ad": "NASA Hubble Messier Catalog, Messier 1",
+      "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-1/"
+    },
+    {
+      "ad": "NASA Hubble Messier Catalog, Messier 57",
+      "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-57/"
+    },
+    {
+      "ad": "SEDS Messier Database, M27",
+      "url": "http://messier.lamost.org/seds/seds.org/messier/en/m/m027.html"
+    },
+    {
+      "ad": "ESO eso1733, Merging neutron stars scatter gold and platinum into space",
+      "url": "https://www.eso.org/public/news/eso1733/"
+    },
+    {
+      "ad": "Nobel Prize in Physics 1983, Summary",
+      "url": "https://www.nobelprize.org/prizes/physics/1983/summary"
+    },
+    {
+      "ad": "Ohio State University, Ast162: Evolution of High-Mass Stars",
+      "url": "https://www.astronomy.ohio-state.edu/pogge.1/Ast162/Unit2/himass.html"
+    },
+    {
+      "ad": "University of Colorado JILA, Core Collapse Supernovae",
+      "url": "https://jila.colorado.edu/~ajsh/courses/astr1120_03/text/chapter6/l6S5.htm"
+    },
+    {
+      "ad": "Swinburne University COSMOS, Type Ia Supernova",
+      "url": "https://astronomy.swinburne.edu.au/cosmos/T/Type+Ia+Supernova"
+    },
+    {
+      "ad": "Ohio State News, The stuff of the universe keeps changing",
+      "url": "https://news.osu.edu/the-stuff-of-the-universe-keeps-changing/"
+    },
+    {
+      "ad": "Sky & Telescope, Jocelyn Bell Burnell: Pulsar Pioneer",
+      "url": "https://skyandtelescope.org/astronomy-resources/famous-astronomers/jocelyn-bell-burnell-pulsar-pioneer/"
+    },
+    {
+      "ad": "Space.com, Red giant stars",
+      "url": "https://www.space.com/22471-red-giant-stars.html"
+    },
+    {
+      "ad": "Universe Today, Few supernovae in the Milky Way every century",
+      "url": "https://www.universetoday.com/articles/there-should-be-a-few-supernovae-in-the-milky-way-every-century-but-weve-only-seen-5-in-the-last-1000-years-why"
+    },
+    {
+      "ad": "Universe Today, How heavy can a neutron star get?",
+      "url": "https://www.universetoday.com/articles/how-heavy-can-a-neutron-star-get"
+    },
+    {
+      "ad": "Wikipedia, Planetary nebula",
+      "url": "https://en.wikipedia.org/wiki/Planetary_nebula"
+    },
+    {
+      "ad": "Wikipedia, Sirius B",
+      "url": "https://en.wikipedia.org/wiki/Sirius_B"
+    },
+    {
+      "ad": "Wikipedia, Chandrasekhar limit",
+      "url": "https://en.wikipedia.org/wiki/Chandrasekhar_limit"
+    },
+    {
+      "ad": "Wikipedia, Stellar evolution",
+      "url": "https://en.wikipedia.org/wiki/Stellar_evolution"
+    },
+    {
+      "ad": "Wikipedia, Type II supernova",
+      "url": "https://en.wikipedia.org/wiki/Type_II_supernova"
+    },
+    {
+      "ad": "Wikipedia, Type Ia supernova",
+      "url": "https://en.wikipedia.org/wiki/Type_Ia_supernova"
+    },
+    {
+      "ad": "Wikipedia, SN 1987A",
+      "url": "https://en.wikipedia.org/wiki/SN_1987A"
+    },
+    {
+      "ad": "Wikipedia, Kepler's Supernova",
+      "url": "https://en.wikipedia.org/wiki/Kepler%27s_Supernova"
+    },
+    {
+      "ad": "Wikipedia, Crab Nebula",
+      "url": "https://en.wikipedia.org/wiki/Crab_Nebula"
+    },
+    {
+      "ad": "Wikipedia, Crab Pulsar",
+      "url": "https://en.wikipedia.org/wiki/Crab_Pulsar"
+    },
+    {
+      "ad": "Wikipedia, S-process",
+      "url": "https://en.wikipedia.org/wiki/S-process"
+    },
+    {
+      "ad": "Wikipedia, Escape velocity",
+      "url": "https://en.wikipedia.org/wiki/Escape_velocity"
+    },
+    {
+      "ad": "Wikipedia, Cassiopeia A",
+      "url": "https://en.wikipedia.org/wiki/Cassiopeia_A"
+    },
+    {
+      "ad": "Wikipedia, Nickel-62",
+      "url": "https://en.wikipedia.org/wiki/Nickel-62"
+    },
+    {
+      "ad": "Virgo/EGO, GW190814 basın bülteni (23 Haziran 2020)",
+      "url": "https://www.ego-gw.it/wp-content/uploads/2020/06/GW190814_release_Virgo_FINAL_23_6.pdf"
+    },
+    {
+      "ad": "Nobel Fizik Ödülü 1974 (nobelprize.org)",
+      "url": "https://www.nobelprize.org/prizes/physics/1974/summary/"
+    }
   ]
 }

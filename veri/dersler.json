@@ -995,9 +995,9 @@
      ],
      "ornek": {
       "baslik": "Örnek: 100 mm'lik teleskop ve Hubble ne kadar ince ayrıntı seçer?",
-      "metin": "100 mm'lik teleskop: θ ≈ 138 / 100 = 1,38 yay saniyesi; Dawes sınırıyla 116 / 100 = 1,16 yay saniyesi. Çıplak gözün 1′, yani 60 yay saniyesiyle kıyaslarsan 60 / 1,38 ≈ 43 kat daha ince ayrıntı. Hubble için formülün tam hâlini kullanalım: λ = 500 nm = 5 × 10⁻⁷ m, D = 2,4 m. θ = 1,22 × 5 × 10⁻⁷ / 2,4 ≈ 2,54 × 10⁻⁷ radyan. Radyanı yay saniyesine çevirmek için 206.265 ile çarp: 2,54 × 10⁻⁷ × 206.265 ≈ 0,052 yay saniyesi. Kaynağın verdiği 0,04 değerine yakın ama aynı değil. Kaynak hangi ölçütü kullandığını yazmıyor; 1,22 çarpanı olmadan λ / D ile hesaplarsan 0,043 yay saniyesi çıkar, yani fark büyük olasılıkla ayırma ölçütünün tanımından gelir. Sonuç: 100 mm'lik teleskop yaklaşık 1,4 yay saniyesi, Hubble yaklaşık 0,05 yay saniyesi."
+      "metin": "100 mm'lik teleskop: θ ≈ 138 / 100 = 1,38 yay saniyesi; Dawes sınırıyla 116 / 100 = 1,16 yay saniyesi. Çıplak gözün 1′, yani 60 yay saniyesiyle kıyaslarsan 60 / 1,38 ≈ 43 kat daha ince ayrıntı. Hubble için formülün tam hâlini kullanalım: λ = 500 nm = 5 × 10⁻⁷ m, D = 2,4 m. θ = 1,22 × 5 × 10⁻⁷ / 2,4 ≈ 2,54 × 10⁻⁷ radyan. Radyanı yay saniyesine çevirmek için 206.265 ile çarp: 2,54 × 10⁻⁷ × 206.265 ≈ 0,052 yay saniyesi. NASA, Hubble'ın görünür ışıkta yaklaşık 0,05 yay saniyesini ayırdığını söyler; bu, Rayleigh hesabıyla uyumludur. Bazı kaynaklarda geçen 0,04 ise 1,22 çarpanı olmadan λ / D ile hesaplanan 0,043'e karşılık gelir. İki sayı çelişmez, farklı ölçütlerden gelir. Sonuç: 100 mm'lik teleskop yaklaşık 1,4 yay saniyesi, Hubble yaklaşık 0,05 yay saniyesi."
      },
-     "akilda": "Ayırma gücü θ = 1,22 × λ / D; pratikte θ (yay saniyesi) ≈ 138 / D (mm). Açıklık büyüdükçe, dalga boyu kısaldıkça ayrıntı incelir. Göz yaklaşık 1′, 100 mm'lik teleskop yaklaşık 1,4″, Hubble yaklaşık 0,04″."
+     "akilda": "Ayırma gücü θ = 1,22 × λ / D; pratikte θ (yay saniyesi) ≈ 138 / D (mm). Açıklık büyüdükçe, dalga boyu kısaldıkça ayrıntı incelir. Göz yaklaşık 1′, 100 mm'lik teleskop yaklaşık 1,4″, Hubble yaklaşık 0,05″."
     },
     {
      "baslik": "Büyütme ve göz merceği",
@@ -1026,7 +1026,7 @@
      "paragraflar": [
       "Yıldızlar neden göz kırpar? Başımızın üstündeki hava sürekli hareket eder. Işığın yolundaki havanın kırma özelliği, yani ışığı ne kadar büktüğü, çok hızlı değişir. Bu yüzden yıldızın parlaklığı titreşir; buna parıldama denir. Teleskopta aynı olay görüntünün titremesine ve bulanıklaşmasına yol açar. Gökbilimciler atmosferin yarattığı bu bulanıklığa görüş (İngilizcede seeing) der ve yay saniyesiyle ölçer.",
       "Görüş, büyük bir teleskobun kırınım sınırından genellikle çok daha kötüdür. En iyi yüksek dağ gözlemevlerinde görüş bazen 0,4 yay saniyesine kadar iner; ortalama bir gözlem yeri için 1 yay saniyesi iyi bir değerdir; kent ortamında görüş genellikle çok daha kötüdür. Bir eşik de vardır: görüş parametresi denen bir uzunluk, en iyi yerlerde yaklaşık 20 cm, deniz seviyesindeki tipik yerlerde yaklaşık 5 cm'dir. Çapı bundan küçük teleskopların uzun pozlamalı görüntüsünün keskinliğini kırınım, büyüklerinkini atmosfer belirler. İstanbul'u deniz seviyesindeki tipik bir yer sayarsan, birkaç santimetreden büyük bir teleskobun uzun pozlamalı keskinliğini aynası değil havası belirler.",
-      "Profesyonellerin ilk çaresi yer seçimidir. Gözlemevi ne kadar yüksekteyse üstündeki atmosfer o kadar incedir; iyi görüşlü bir yer seçmek en önemli ölçütlerden biridir ve en büyük teleskoplar ışık kirliliği az bölgelere kurulur. Türkiye'deki örnek Erzurum yakınındaki Doğu Anadolu Gözlemevi'dir (DAG). Karakaya Tepesi'nde deniz seviyesinden 3.170 metre yükseklikteki 4 metre çaplı teleskobu, Türkiye'nin en büyük teleskobu ve ilk kızılötesi teleskobu olarak tasarlandı. Teleskop teknik ilk ışığını 2024'te aldı ve bilimsel gözlemlere hazırlanıyor.",
+      "Profesyonellerin ilk çaresi yer seçimidir. Gözlemevi ne kadar yüksekteyse üstündeki atmosfer o kadar incedir; iyi görüşlü bir yer seçmek en önemli ölçütlerden biridir ve en büyük teleskoplar ışık kirliliği az bölgelere kurulur. Türkiye'deki örnek Erzurum yakınındaki Doğu Anadolu Gözlemevi'dir (DAG). Karakaya Tepesi'nde deniz seviyesinden 3.170 metre yükseklikteki 4 metre çaplı teleskobu, Türkiye'nin en büyük teleskobu ve ilk kızılötesi teleskobu olarak tasarlandı. Teleskop teknik ilk ışığını 2024'te aldı, ön kabulü Mayıs 2025 sonunda tamamlandı. Bilimsel gözlemlerin 2026 sonu ile 2027 başı arasında başlaması bekleniyor.",
       "İkinci çare uyarlamalı optiktir: atmosferin bozduğu ışığı anında düzeltmek. Teleskop, bir kılavuz yıldızın ışığındaki bozulmayı ölçer; ışık yolundaki biçimi değiştirilebilen esnek bir ayna, bozulmayı telafi edecek şekilde ayarlanır. ESO'ya göre bu ölçüm saniyede yaklaşık 1000 kez yapılır. Hedefin yakınında yeterince parlak bir yıldız yoksa yapay bir yıldız yaratılır: güçlü bir lazer, yaklaşık 90 km yükseklikteki sodyum atomlarını parlatır. Bugün birçok büyük yer teleskobu uyarlamalı optik kullanır; DAG'ın da bu teknolojiyle donatılacağı belirtiliyor. Şili'deki ELT'nin 39,3 metrelik ana aynası 798 altıgen parçadan oluşacak. ESO'nun Mart 2025 duyurusuna göre teleskobun ilk ışığı Mart 2029'da, bilimsel aletlerle ilk gözlemler Aralık 2030'da bekleniyor."
      ],
      "akilda": "Atmosferin titreşimi (görüş) yerdeki teleskopları en iyi yerlerde 0,4–1 yay saniyesiyle, kentte daha kötüsüyle sınırlar. Çare: yüksek ve karanlık yerler, bir de bozulmayı saniyede yaklaşık 1000 kez ölçüp esnek aynayla düzelten uyarlamalı optik."
@@ -1047,7 +1047,7 @@
     {
      "baslik": "İnterferometri: teleskopları birleştirmek",
      "paragraflar": [
-      "Bir çanağı kilometrelerce büyütemezsin, ama birçok çanağı birlikte çalıştırabilirsin. İnterferometride birden çok antenin sinyalleri birleştirilir ve daha büyük tek bir anteni taklit eder. Böyle bir dizinin ayırma gücünü çanakların tek tek boyu değil, dizideki en uzak iki teleskop arasındaki uzaklık belirler; bu uzaklığa taban çizgisi denir. Yaklaşık formül θ ≈ λ / B'dir: B taban çizgisi, θ radyan cinsinden. Cambridge'de Martin Ryle'ın grubunun interferometri ve açıklık sentezi çalışmaları Nobel Ödülü getirdi.",
+      "Bir çanağı kilometrelerce büyütemezsin, ama birçok çanağı birlikte çalıştırabilirsin. İnterferometride birden çok antenin sinyalleri birleştirilir ve daha büyük tek bir anteni taklit eder. Böyle bir dizinin ayırma gücünü çanakların tek tek boyu değil, dizideki en uzak iki teleskop arasındaki uzaklık belirler; bu uzaklığa taban çizgisi denir. Yaklaşık formül θ ≈ λ / B'dir: B taban çizgisi, θ radyan cinsinden. Cambridge'de Martin Ryle, gözlemleri ve özellikle açıklık sentezi tekniği için 1974 Nobel Fizik Ödülü'nü Antony Hewish ile paylaştı.",
       "İki ünlü örnek: ABD'nin New Mexico eyaletinde Socorro yakınındaki Çok Büyük Dizi (VLA) 27 teleskoptan oluşur ve aynı anda 351 bağımsız taban çizgisi kurar. Şili'nin Atacama Çölü'ndeki Chajnantor Platosu'na kurulan ALMA ise 54 tane 12 metrelik ve 12 tane 7 metrelik, toplam 66 antenle milimetre ve milimetre altı dalgalarda gözlem yapar; antenleri 16 kilometreye kadar yayılabilir. ALMA'nın dizi işletme alanı 5.100 metre yüksekliktedir. 2. dersten hatırla: su buharının etkisini azaltmak için gözlemevleri yüksek dağlara kurulur.",
       "Taban çizgisi Dünya boyuna kadar uzatılabilir: binlerce kilometre uzaktaki antenlerin kayıtları gözlemden sonra birleştirilir. Buna çok uzun taban çizgili interferometri (VLBI) denir. Olay Ufku Teleskobu (EHT) bu yöntemle sekiz yer konuşlu radyo gözlemevini birleştirip Dünya büyüklüğünde sanal bir teleskop kurdu ve 1,3 mm dalga boyunda gözlem yaptı. Dünya çapı uzunluğundaki taban çizgileri yaklaşık 20 mikro yay saniyesi ayırma gücüne ulaşır. Sonuç, 10 Nisan 2019'da yayımlanan, M87 galaksisinin merkezindeki kara deliğin gölge görüntüsüydü (16. ders). ALMA da EHT dizisinin merkezinde yer alan önemli bir parçasıdır."
      ],
@@ -1069,7 +1069,7 @@
       "baslik": "Örnek: Hubble mı Webb mi daha keskin?",
       "metin": "Rayleigh formülü: θ = 1,22 × λ / D. Hubble, λ = 0,5 μm, D = 2,4 m: θ = 1,22 × 0,5 × 10⁻⁶ / 2,4 ≈ 2,54 × 10⁻⁷ radyan ≈ 0,052 yay saniyesi. Webb, λ = 2 μm (örnek bir kızılötesi dalga boyu), D = 6,5 m: θ = 1,22 × 2 × 10⁻⁶ / 6,5 ≈ 3,75 × 10⁻⁷ radyan ≈ 0,077 yay saniyesi. Webb'in aynası 2,7 kat geniş ama bu örnekte dalga boyu 4 kat uzun; bu yüzden ayırma gücü Hubble'ınkine yakın, hatta biraz kötü çıkar. Işık toplamada ise Webb açık ara önde: alan oranı 25,4 / 4,0 ≈ 6,4. Sonuç: Hubble yaklaşık 0,05 yay saniyesi, Webb (2 μm'de) yaklaşık 0,08 yay saniyesi; Webb yaklaşık 6 kat fazla ışık toplar."
      },
-     "akilda": "Hubble (1990, 2,4 m) görünür ışıkta yaklaşık 0,04–0,05″ keskinlik sunar. Webb (2021, 6,5 m, 18 altın kaplı parça) kızılötesinde gözler, yaklaşık 6 kat fazla ışık toplar, beş katlı güneşlikle 50 K altında tutulur ve L2 çevresinde dolanır."
+     "akilda": "Hubble (1990, 2,4 m) görünür ışıkta yaklaşık 0,05″ keskinlik sunar (NASA). Webb (2021, 6,5 m, 18 altın kaplı parça) kızılötesinde gözler, yaklaşık 6 kat fazla ışık toplar, beş katlı güneşlikle 50 K altında tutulur ve L2 çevresinde dolanır."
     }
    ],
    "formuller": [
@@ -1151,9 +1151,9 @@
      "kaynak_url": "https://supernova.eso.org/exhibition/0818/"
     },
     {
-     "deger": "4 m · 3.170 m · teknik ilk ışık 2024",
+     "deger": "4 m · 3.170 m · teknik ilk ışık 2024 · ön kabul Mayıs 2025",
      "aciklama": "Doğu Anadolu Gözlemevi (DAG) teleskobunun ayna çapı, yüksekliği ve ilk ışığı",
-     "kaynak_url": "https://en.wikipedia.org/wiki/Eastern_Anatolia_Observatory"
+     "kaynak_url": "https://arxiv.org/pdf/2510.23339"
     },
     {
      "deger": "500 m (her an 300 m kullanılır)",
@@ -1249,11 +1249,11 @@
     "Teleskobun 2 işi: ışık toplamak + ayrıntı ayırmak. İkisi de AÇIKLIĞA bağlı; büyütme en az önemli.",
     "Mercek: renk sapması + sarkma → en büyük mercekli Yerkes 1,02 m (1897). Ayna: renk sapması yok, arkadan desteklenir. Newton 1668.",
     "Işık ∝ D². 200 mm / 7 mm → ~816 kat ≈ 7,3 kadir. Güneş'e filtresiz ASLA bakma.",
-    "Ayırma: θ = 1,22 λ / D (radyan); pratik θ″ ≈ 138 / D(mm), Dawes 116 / D. Göz ~1′, 100 mm ~1,4″, Hubble ~0,04″.",
+    "Ayırma: θ = 1,22 λ / D (radyan); pratik θ″ ≈ 138 / D(mm), Dawes 116 / D. Göz ~1′, 100 mm ~1,4″, Hubble ~0,05″.",
     "Büyütme M = F / f. En yüksek yararlı ≈ 2 × D(mm). Çıkış göz bebeği = D / M ≤ 7 mm.",
     "Kundak: alt-az (basit, Dobson), ekvatoral (ekseni Kutup Yıldızı'na, İstanbul'da 41°; fotoğraf için).",
     "Görüş: en iyi 0,4″, ortalama yerde 1″ iyi, kent daha kötü. Uyarlamalı optik: esnek ayna ~1000/s, lazer yıldız ~90 km.",
-    "DAG (Erzurum): 4 m, 3.170 m, teknik ilk ışık 2024. ELT: 39,3 m, 798 parça, ilk ışık planı Mart 2029.",
+    "DAG (Erzurum): 4 m, 3.170 m, teknik ilk ışık 2024, ön kabul Mayıs 2025; bilimsel gözlem 2026 sonu–2027 başı bekleniyor. ELT: 39,3 m, 798 parça, ilk ışık planı Mart 2029.",
     "Radyo: Jansky 1932, Reber 1937; FAST 500 m. İnterferometri θ ≈ λ / B: VLA 27, ALMA 66, EHT ~20 mikro yay saniyesi.",
     "Hubble 1990, 2,4 m (ayna kusuru 1993'te düzeltildi). Webb 2021, 6,5 m, 18 parça, 50 K altı, L2, kızılötesi."
    ],
@@ -1423,6 +1423,22 @@
     {
      "ad": "Astronomics – Limiting magnitude (sınır kadir kuralı)",
      "url": "https://astronomics.com/limiting-magnitude_t.aspx"
+    },
+    {
+     "ad": "NASA Science: Hubble Optics (görünür ışıkta 0,05″)",
+     "url": "https://science.nasa.gov/mission/hubble/observatory/design/optics/"
+    },
+    {
+     "ad": "arXiv 2510.23339: DAG ön kabul (Mayıs 2025)",
+     "url": "https://arxiv.org/pdf/2510.23339"
+    },
+    {
+     "ad": "arXiv 2608.28226: DAG PLACID, bilimsel gözlem beklentisi",
+     "url": "https://arxiv.org/pdf/2608.28226"
+    },
+    {
+     "ad": "Nobel Fizik Ödülü 1974 (nobelprize.org)",
+     "url": "https://www.nobelprize.org/prizes/physics/1974/summary/"
     }
    ]
   },
@@ -4532,7 +4548,7 @@
      "baslik": "Kütle–ışıma gücü ilişkisi",
      "paragraflar": [
       "Kütlesi büyük olan yıldızda üstteki katmanların ağırlığı da büyüktür; onu taşıyan hidrostatik denge daha sıcak bir çekirdekte kurulur ve füzyon çok daha hızlı yürür. Bir önceki bölümdeki sayılar bunu gösteriyor: Güneş'in çekirdeği yaklaşık 15,7 milyon kelvin, 1,5 Güneş kütleli bir yıldızınki yaklaşık 18 milyon kelvindir. Sonuç: kütle biraz artınca ışıma gücü çok artar. Bu ilişki ilk önce gözlemden çıkarıldı: Wikipedia'ya göre çift yıldız sistemlerindeki yıldızların kütleleri ölçülüp ışıma güçleriyle karşılaştırıldı (çift yıldızlarla kütle ölçmek d15'te). Arthur Eddington 1924'te yıldız içi modellerinin aynı ilişkiyi verdiğini gösterdi.",
-      "Anakol yıldızları için sık kullanılan kural L ∝ M^3,5'tir; Wikipedia bu değerin 2 ile 55 Güneş kütlesi arasında geçerli olduğunu, beyaz cücelere ve kırmızı devlere uygulanmadığını belirtir. Aynı kaynak kütle aralığına göre değişen bir ilişki de verir: 0,43 ile 2 Güneş kütlesi arasında L = M^4, daha hafif yıldızlarda L ≈ 0,23 M^2,3, 2–55 Güneş kütlesinde L ≈ 1,4 M^3,5 (hepsi Güneş birimleriyle). Örneğin Güneş'ten iki kat kütleli bir yıldız, 0,43–2 aralığındaki kurala göre yaklaşık 2^4 = 16 kat parlaktır.",
+      "Anakol yıldızları için sık kullanılan kural L ∝ M^3,5'tir; Wikipedia bu değerin 2 ile 55 Güneş kütlesi arasında geçerli olduğunu, beyaz cücelere ve kırmızı devlere uygulanmadığını belirtir. Aynı kaynak kütle aralığına göre değişen bir ilişki de verir: 0,43 ile 2 Güneş kütlesi arasında L = M^4, daha hafif yıldızlarda L ≈ 0,23 M^2,3, 2–55 Güneş kütlesinde L ≈ 1,4 M^3,5 (hepsi Güneş birimleriyle). Bu parçalı katsayılar yaklaşıktır ve kaynağa göre değişir: Duric'in ders kitabı yalnız ilk iki parçayı verir, başka kitaplar farklı üsler kullanır. Örneğin Güneş'ten iki kat kütleli bir yıldız, 0,43–2 aralığındaki kurala göre yaklaşık 2^4 = 16 kat parlaktır.",
       "Bu kurallar kabadır. Eric Mamajek'in anakol yıldızları tablosu A0 tipi bir yıldız için 2,18 Güneş kütlesi ve yaklaşık 38 Güneş ışıma gücü verir; aynı kütleye M^4 uygulansa yaklaşık 23 çıkar. Kural ile tablo arasında yaklaşık 1,7 kat fark var. Hesap yaparken gerçek ölçümlere dayanan tablo değerleri daha güvenilirdir; kural ise büyüklük mertebesini akılda tutmak içindir."
      ],
      "akilda": "Anakolda kütle biraz artınca ışıma gücü çok artar: kabaca L ∝ M^3,5 ile M^4 arası. İlişki çift yıldızlardan ölçülen kütlelerle kuruldu; kural kabadır, tablo değerleri daha güvenilirdir."
@@ -4860,6 +4876,10 @@
     {
      "ad": "Britannica, Star: Classification of spectral types",
      "url": "https://britannica.com/science/star-astronomy/Classification-of-spectral-types"
+    },
+    {
+     "ad": "Duric 2004, Advanced Astrophysics §1.3.8 (iki parçalı kütle–ışıma ilişkisi)",
+     "url": "https://www.tevza.org/home/course/PCO2012/Duric%20N.%20Advanced%20astrophysics%20(CUP,%202004).pdf"
     }
    ]
   },
@@ -4948,7 +4968,7 @@
       "Algol normalde yaklaşık 2,1 kadirdir. Her 2 gün 21 saatte bir (AAVSO'nun VSX kataloğuna göre 2,867343 gün) sönük Algol B, parlak Algol A'nın önünden geçer ve ışık yaklaşık 3,4 kadire düşer. Tutulma kısmidir ve Wikipedia'ya göre yaklaşık 10 saat sürer; VSX süreyi dönemin %14'ü, yani 9,63 saat olarak verir. Sky & Telescope'a göre Algol bir iki saat boyunca en sönük haline yakın kalır. Yarım dönem sonra A da B'nin önünden geçer, ama B zaten sönük olduğu için bu ikinci kararma gözle zor fark edilir: VSX'e göre ışık yalnızca 2,15 kadire iner.",
       "Algol'ün tarihi bilimin nasıl işlediğini gösterir. İtalyan gökbilimci Geminiano Montanari 1667'de parlaklığının değiştiğini kaydetti. John Goodricke 1783'te Kraliyet Derneği'ne, değişimin yıldızın önünden geçen karanlık bir cisimden kaynaklandığını öneren bir açıklama sundu. Bu fikir ancak 1889'da, Vogel'in tayfta dönemli Doppler kaymalarını bulmasıyla doğrulandı.",
       "Algol'ün bir de bilmecesi var: Algol paradoksu. Yıldızlar birlikte doğduğuna göre, kütleli olanın daha hızlı evrimleşip önce dev olması gerekirdi (d5). Oysa burada kütleli A hâlâ anakolda, hafif B ise altdev. Wikipedia'ya göre çözüm kütle aktarımıdır: B bir zamanlar daha kütleli olan yıldızdı, önce şişti, kendi kütleçekim bölgesini doldurdu ve kütlesinin çoğunu A'ya aktardı. Yani çift yıldızlar birbirinin hayatını değiştirebilir.",
-      "Algol'ün saati de kusursuz değildir. Değişen yıldız kataloğu GCVS'nin notuna göre dönem 1784–1915 arasında 2,8672506 ile 2,8673442 gün arasında oynadı. Jetsu'nun 2020'deki çözümlemesine göre Algol C'nin dolanması, ışığın bize ulaşma süresini değiştirerek kararma zamanlarını yaklaşık ±4,6 dakika kaydırır. Bu yüzden kararma zamanları bugün de ölçülüyor ve bu işin büyük kısmını amatörler yapıyor: AAVSO'nun dergisinde 2020–2025 arasında CCD kameralarla ölçülmüş Algol minimumları yayımlandı; Alman değişen yıldız derneği BAV'ın listelerinde Wolfgang Spiess'in 2023'te gözle zamanladığı dört minimum var. Bir dürbün ya da yalnızca gözlerin, gerçek bir bilimsel ölçüme katkı vermeye yeter."
+      "Algol'ün saati de kusursuz değildir. Dönemi yüzyıllar içinde çok küçük miktarlarda değişir. Jetsu'nun çözümlemesine göre Algol C'nin yaklaşık 680 günlük dolanması, ışığın bize ulaşma süresini değiştirerek kararma zamanlarını yaklaşık ±4,6 dakika kaydırır; yani en erken ile en geç kararma arasında yaklaşık 9 dakika fark olur. Bu yüzden kararma zamanları bugün de ölçülüyor ve bu işin büyük kısmını amatörler yapıyor: AAVSO'nun dergisinde 2020–2025 arasında CCD kameralarla ölçülmüş Algol minimumları yayımlandı; Alman değişen yıldız derneği BAV'ın listelerinde Wolfgang Spiess'in 2023'te gözle zamanladığı dört minimum var. Bir dürbün ya da yalnızca gözlerin, gerçek bir bilimsel ölçüme katkı vermeye yeter."
      ],
      "ornek": {
       "baslik": "Örnek: Algol en sönükken ne kadar ışık kaybeder?",
@@ -4960,7 +4980,7 @@
      "baslik": "Değişen yıldızlar: kendi ışığı oynayanlar",
      "paragraflar": [
       "Algol'ün ışığı geometri yüzünden değişir: yıldızlar aslında hep aynı parlaklıktadır, değişen yalnızca bizim bakış açımızdan kimin kimi örttüğüdür. Bir de ışığı gerçekten değişen yıldızlar vardır: şişip büzülen, ya da yüzeyinde ve çevresinde fırtınalar kopan yıldızlar. Bunların en önemlileri zonklayan yıldızlardır.",
-      "d5'teki H-R diyagramını hatırla. Wikipedia'ya göre diyagramda kararsızlık şeridi denen bir bölge vardır; buraya düşen yıldızlar düzenli olarak şişip büzülür ve parlaklıkları buna göre değişir. Yatay koldaki yıldızların bir kısmı bu şeride düşer ve RR Lyrae değişenleri olur. Aynı şeridin daha parlak kesiminde Sefeidler bulunur. Sınıf adını Kral takımyıldızındaki Delta Cephei'den alır. Wikipedia'ya göre bu yıldızın değiştiğini John Goodricke 1784'te buldu. Dönemi 5,366249 gün, yani 5 gün 9 saate yakın; parlaklığı 3,48 ile 4,37 kadir arasında oynar; uzaklığı yaklaşık 890 ışık yılıdır. Ken Croswell'in anlattığına göre bundan yaklaşık bir ay önce, Eylül 1784'te, Goodricke'nin York'taki çalışma arkadaşı Edward Pigott, Kartal'daki Eta Aquilae'nin değiştiğini fark etmişti. Goodricke'yi Algol bölümünden hatırlıyorsun: Algol'ün örtme açıklamasını öneren gözlemcinin ta kendisi.",
+      "d5'teki H-R diyagramını hatırla. Wikipedia'ya göre diyagramda kararsızlık şeridi denen bir bölge vardır; buraya düşen yıldızlar düzenli olarak şişip büzülür ve parlaklıkları buna göre değişir. Yatay koldaki yıldızların bir kısmı bu şeride düşer ve RR Lyrae değişenleri olur. Aynı şeridin daha parlak kesiminde Sefeidler bulunur. Sınıf adını Kral takımyıldızındaki Delta Cephei'den alır. Wikipedia'ya göre bu yıldızın değiştiğini John Goodricke 1784'te buldu. Dönemi yaklaşık 5,366 gün, yani 5 gün 9 saate yakın (dönem yıllar içinde ölçülebilir ölçüde değişir); parlaklığı 3,48 ile 4,37 kadir arasında oynar; uzaklığı yaklaşık 890 ışık yılıdır. Ken Croswell'in anlattığına göre bundan yaklaşık bir ay önce, Eylül 1784'te, Goodricke'nin York'taki çalışma arkadaşı Edward Pigott, Kartal'daki Eta Aquilae'nin değiştiğini fark etmişti. Goodricke'yi Algol bölümünden hatırlıyorsun: Algol'ün örtme açıklamasını öneren gözlemcinin ta kendisi.",
       "Sefeidleri bir uzaklık cetveline çeviren Henrietta Swan Leavitt'tir. Wikipedia'ya göre Pickering onu 1902'de Harvard Gözlemevi'nde işe aldı; işi, fotoğraf plakalarındaki yıldızların parlaklığını ölçüp kataloglamaktı. 1908'de Macellan Bulutları'nda 1777 değişen yıldız yayımladı ve parlak olanların dönemlerinin daha uzun olduğunu not etti. 1912'de Küçük Macellan Bulutu'ndaki 25 Sefeidin dönemleriyle parlaklıklarını karşılaştırdı ve noktaların düz bir çizgiye dizildiğini gösterdi. Anahtar fikir kümelerdeki mantıkla aynı: Leavitt bulutun bütün Sefeidlerini bize kabaca aynı uzaklıkta kabul etti, bu yüzden görünür parlaklık farkı gerçek parlaklık farkı demekti. Demek ki dönemi uzun olan Sefeid gerçekten daha güçlüdür. Hubble bu ilişkiyle sarmal bulutsuların uzaklıklarını hesapladı; Walter Baade daha sonra parlaklıkları farklı iki tür Sefeid olduğunu buldu. Yöntemin ayrıntısı d17'de.",
       "Kırmızı devler de zonklar. Wikipedia'ya göre Mira değişenleri, onlarca ile yüzlerce gün arasında düzenli dönemlerle zonklayan ve parlaklığı 10 kadire kadar değişebilen yıldızlardır. Sınıfa adını veren Mira, yani Omikron Ceti, Balina takımyıldızındadır. Wikipedia'ya göre David Fabricius 3 Ağustos 1596'dan başlayarak parlaklığındaki değişimi kaydetti; Johannes Holwarda 1638'de yıldızın yaklaşık on bir ayda bir yeniden belirdiğini saptadı; Johannes Hevelius ona Latincede “harika” anlamına gelen Mira adını verdi. Bugünkü dönemi 332 gündür.",
       "Wikipedia ve EarthSky'a göre Mira en parlak hâlinde ortalama 3,5 kadirdir; bazı döngülerde 2,0'a kadar çıkmış, bazılarında 4,9'da kalmıştır. En sönük hâli tarihte 8,6 ile 10,1 kadir arasında ölçülmüştür, yani o sırada çıplak gözle görülmez. Mira yaklaşık 300 ışık yılı uzakta, asimptotik dev kolunda bir kırmızı devdir ve bir beyaz cüce yoldaşı vardır. Avcı'daki Betelgeuse de değişen bir yıldızdır; Wikipedia onu yarı düzenli değişen yıldızlar arasında sınıflar.",
@@ -5079,7 +5099,7 @@
      "kaynak_url": "https://en.wikipedia.org/wiki/Mira"
     },
     {
-     "deger": "1784; 5,366249 gün; 3,48–4,37 kadir",
+     "deger": "1784; ≈5,366 gün; 3,48–4,37 kadir",
      "aciklama": "Delta Cephei (Kral): Goodricke'nin keşfi, dönem, parlaklık aralığı",
      "kaynak_url": "https://en.wikipedia.org/wiki/Delta_Cephei"
     },
@@ -5414,6 +5434,14 @@
     {
      "ad": "Astronomy Now, Don't miss Albireo (2022)",
      "url": "https://astronomynow.com/2022/08/02/dont-miss-albireo-a-glorious-colour-contrast-double-star/"
+    },
+    {
+     "ad": "Jetsu 2021, ApJ 920 (arXiv 2005.13360): Algol 680,4 günlük sinyal, A = 0,0064 gün tepe-tepe",
+     "url": "https://arxiv.org/pdf/2005.13360"
+    },
+    {
+     "ad": "AAVSO: Delta Cephei (5,366 gün; 3,5–4,4)",
+     "url": "https://archive.aavso.org/vsots_delcep"
     }
    ]
   },
@@ -5499,7 +5527,7 @@
      "baslik": "Nötron yıldızları, atarcalar ve Yengeç Bulutsusu",
      "paragraflar": [
       "Çöküş süpernovasından geriye çoğu zaman bir nötron yıldızı kalır: bir Güneş'ten fazla kütlenin bir şehir büyüklüğüne sıkışmış hali. NASA'ya göre bu artıklar yaklaşık 20 km çapındadır ve çöken çekirdek kabaca 1 ile 3 M☉ arasındaysa oluşurlar. Bir şeker küpü kadar nötron yıldızı maddesi Dünya'da yaklaşık 1 trilyon kilogram gelirdi. Manyetik alanları Dünya'nınkinin trilyonlarca katıdır; magnetar denen türde ise bunun da yaklaşık 1000 katı.",
-      "1967'de Jocelyn Bell, yaklaşık 2.000 tahta direğe gerilmiş bakır tellerden oluşan bir radyo teleskobunun kayıtlarında tuhaf bir sinyal fark etti: her 1,337 saniyede bir tekrarlanan, son derece düzenli atımlar. Kaynağa şakayla küçük yeşil adamların kısaltması olan LGM-1 adı verildi; ama ne Bell ne de ekipteki Antony Hewish bunun uzaylılardan geldiğine ciddi olarak inandı. Açıklama: dönen, güçlü manyetik alanlı bir nötron yıldızı ışınım demetleri yayar. Demet her dönüşte Dünya'yı süpürdüğünde, deniz fenerinin ışığı gibi bir atım görürüz. Bu cisimlere atarca (pulsar) denir; atım aralıkları milisaniyelerden saniyelere uzanır. 1974 Nobel Fizik Ödülü'nü alanlar arasında Hewish vardı, Bell yoktu. Bell 2018'de 3 milyon dolarlık Özel Breakthrough Ödülü'nü aldı ve tamamını Fizik Enstitüsü'ne (Institute of Physics) bağışladı.",
+      "1967'de Jocelyn Bell, yaklaşık 2.000 tahta direğe gerilmiş bakır tellerden oluşan bir radyo teleskobunun kayıtlarında tuhaf bir sinyal fark etti: her 1,337 saniyede bir tekrarlanan, son derece düzenli atımlar. Kaynağa şakayla küçük yeşil adamların kısaltması olan LGM-1 adı verildi; ama ne Bell ne de ekipteki Antony Hewish bunun uzaylılardan geldiğine ciddi olarak inandı. Açıklama: dönen, güçlü manyetik alanlı bir nötron yıldızı ışınım demetleri yayar. Demet her dönüşte Dünya'yı süpürdüğünde, deniz fenerinin ışığı gibi bir atım görürüz. Bu cisimlere atarca (pulsar) denir; atım aralıkları milisaniyelerden saniyelere uzanır. 1974 Nobel Fizik Ödülü'nü Hewish, atarcaların keşfindeki belirleyici rolü için, Martin Ryle ile paylaştı (Ryle açıklık sentezi tekniği için ödüllendirildi); Bell ödülü alanlar arasında yoktu. Bell 2018'de 3 milyon dolarlık Özel Breakthrough Ödülü'nü aldı ve tamamını Fizik Enstitüsü'ne (Institute of Physics) bağışladı.",
       "En ünlü atarca Yengeç Bulutsusu'nun içindedir. Çinli gökbilimciler 4 Temmuz 1054'te gökte bir konuk yıldız kaydetti; NASA'ya göre yıldız yaklaşık bir ay gündüz gökyüzünde görüldü, Çin kaydı 23 gün der. Bulutsuyu 1731'de John Bevis buldu, 1758'de Charles Messier yeniden buldu ve kataloğuna M1 olarak girdi. Boğa takımyıldızında, yaklaşık 6.500 ışık yılı uzaklıktadır ve saniyede yaklaşık 1.500 km hızla genişler. Merkezdeki atarca 1968'de keşfedildi; NASA'ya göre saniyede 30 kez atım verir. Parlaklığı 8,4 kadir olan M1, NASA'ya göre küçük bir teleskopla görülebilir ve en iyi ocak ayında gözlenir."
      ],
      "ornek": {
@@ -5839,6 +5867,10 @@
     {
      "ad": "Virgo/EGO, GW190814 basın bülteni (23 Haziran 2020)",
      "url": "https://www.ego-gw.it/wp-content/uploads/2020/06/GW190814_release_Virgo_FINAL_23_6.pdf"
+    },
+    {
+     "ad": "Nobel Fizik Ödülü 1974 (nobelprize.org)",
+     "url": "https://www.nobelprize.org/prizes/physics/1974/summary/"
     }
    ]
   },
@@ -6652,9 +6684,9 @@
     {
      "baslik": "Cheyava Falls: leopar benekli kaya",
      "paragraflar": [
-      "Temmuz 2024'te Perseverance, Jezero'daki Neretva Vallis adlı, yaklaşık 400 m genişliğindeki eski nehir vadisinin kenarında ok ucu biçiminde, yaklaşık 1 m'ye 0,6 m boyutunda Cheyava Falls adı verilen bir kayaya rastladı. Kaya, Bright Angel formasyonu denen, kil ve silt gibi ince tanelerden oluşmuş tortul kayalardandı ve organik karbon, kükürt, paslanmış demir ve fosfor bakımından zengindi. Yüzeyinde küçük lekeler vardı; ekip bunlara leopar benekleri dedi. Gezgin kayadan bir karot örneği aldı: Sapphire Canyon adlı bu örnek, gezginin topladığı 25. örnekti.",
+      "Temmuz 2024'te Perseverance, Jezero'daki Neretva Vallis adlı, yaklaşık 400 m genişliğindeki eski nehir vadisinin kenarında ok ucu biçiminde, yaklaşık 1 m'ye 0,6 m boyutunda Cheyava Falls adı verilen bir kayaya rastladı. Kaya, Bright Angel formasyonu denen, kil ve silt gibi ince tanelerden oluşmuş tortul kayalardandı ve organik karbon, kükürt, paslanmış demir ve fosfor bakımından zengindi. Yüzeyinde küçük lekeler vardı; ekip bunlara leopar benekleri dedi. Gezgin kayadan bir karot örneği aldı: Sapphire Canyon adlı bu örnek, gezginin topladığı 25. örnek, kaya karotları arasında 22.'siydi.",
       "Benekler, iki demirli mineralin oluşturduğu tepkime cepheleriydi: sulu bir demir fosfat olan viviyanit ve bir demir sülfür olan greigit. Joel Hurowitz'in öncülük ettiği çalışma 10 Eylül 2025'te Nature dergisinde yayımlandı ve NASA bulguyu olası biyoimza olarak duyurdu. Olası biyoimza, biyolojik kökenli olabilecek ama karara varmak için daha fazla veri ve inceleme gerektiren bir madde ya da yapı demektir. Bu mineraller yaşam olmadan da oluşabilir: yüksek sıcaklıkta, asitli ortamda ya da organik bileşiklerin kendi başına yürüttüğü tepkimelerle. Kayalarda yüksek sıcaklık ya da asit izi yok; ama organik bileşiklerin bu tepkimeyi düşük sıcaklıkta yürütüp yürütemeyeceği bilinmiyor. NASA'ya göre yaşamsız açıklamalar daha az olası, ama dışlanamıyor.",
-      "Ayrıca NASA'ya göre bu kayalar, görevin incelediği en genç tortul kayalar arasında; bu da Mars'ın sanılandan daha uzun süre ya da daha geç bir dönemde yaşanabilir kalmış olabileceğini düşündürüyor. Kesin cevap için örneklerin Dünya'daki laboratuvarlarda incelenmesi gerekir. NASA bunun için bir Mars Örnek Getirme görevi planlıyordu; görevin 2040 civarında tamamlanacağı ve toplam 11 milyar dolara mal olacağı tahmin ediliyordu. Ocak 2026'da ABD Kongresi'nin kabul ettiği ve sonra yasalaşan bütçe bu programı desteklemedi; böylece görev fiilen iptal edildi. Bütçe yalnızca gelecekteki Mars görevlerine yönelik 110 milyon dolarlık bir teknoloji kalemi ayırdı. Perseverance 2021'den beri 30'dan fazla örnek topladı, ama bunların Dünya'ya ne zaman ve nasıl getirileceği şimdilik belirsiz."
+      "Ayrıca NASA'ya göre bu kayalar, görevin incelediği en genç tortul kayalar arasında; bu da Mars'ın sanılandan daha uzun süre ya da daha geç bir dönemde yaşanabilir kalmış olabileceğini düşündürüyor. Kesin cevap için örneklerin Dünya'daki laboratuvarlarda incelenmesi gerekir. NASA bunun için bir Mars Örnek Getirme görevi planlıyordu; görevin 2040 civarında tamamlanacağı ve toplam 11 milyar dolara mal olacağı tahmin ediliyordu. 23 Ocak 2026'da yasalaşan ABD bütçesi (P.L. 119-74) bu programı desteklemedi; böylece görev fiilen iptal edildi. Bütçe yalnızca gelecekteki Mars görevlerine yönelik 110 milyon dolarlık bir teknoloji kalemi ayırdı. Perseverance Temmuz 2025'e kadar 33 örnek tüpü doldurdu (27'si kaya karotu), ama bunların Dünya'ya ne zaman ve nasıl getirileceği şimdilik belirsiz."
      ],
      "akilda": "Cheyava Falls kayasındaki viviyanit ve greigit benekleri NASA'nın Mars'ta duyurduğu olası bir biyoimza; ama yaşamsız açıklamalar dışlanamadı ve örnekleri Dünya'ya getirme görevi 2026 bütçesiyle fiilen iptal edildi."
     },
@@ -6714,7 +6746,7 @@
      "paragraflar": [
       "1950 yazının sonunda Los Alamos'ta fizikçiler Enrico Fermi, Edward Teller, Emil Konopinski ve Herbert York, Fuller Lodge'a öğle yemeğine yürürken uzaylılardan ve ışıktan hızlı yolculuktan söz ediyordu. Yemekte Fermi birden \"Herkes nerede?\" diye sordu. Sorunun arkasındaki düşünce şu: Samanyolu'nda Güneş benzeri pek çok yıldızın yaşanabilir gezegeni olabilir ve bu yıldızların birçoğu Güneş'ten çok daha yaşlıdır. Yavaş yıldızlararası yolculukla bile galaksi birkaç milyon yılda baştan başa geçilebilir. Öyleyse yayılmış bir uygarlığın izini çoktan görmeliydik; ama ikna edici hiçbir kanıt yok. Bu çelişkiye Fermi paradoksu denir.",
       "Önerilen açıklamalar birkaç gruba ayrılır. Robin Hanson'ın 1996'da öne sürdüğü Büyük Süzgeç fikrine göre, örneğin cansız maddeden yaşamın doğması gibi bir adım o kadar olasılıksızdır ki gelişmiş uygarlıklar çok seyrektir. Ender Dünya görüşü, karmaşık yaşam için gereken koşulların olağan dışı, belki de yalnızca Dünya'ya özgü olduğunu savunur. Başka açıklamalar da var: uygarlıklar karşılıklı iletişim için birbirinden çok uzak olabilir, ya da yaydıkları sinyaller zayıf, alışılmadık ya da hiç yok olabilir ve aramalarımız onları kaçırmış olabilir. Hangisinin doğru olduğunu bilmiyoruz.",
-      "Dünya dışı zekâ arayışına İngilizce baş harfleriyle SETI denir. İlk modern deneme, Nisan 1960'ta Frank Drake'in başlattığı Project Ozma'dır. Drake, Green Bank'teki 26 m'lik radyo teleskobunu yaklaşık 11–12 ışık yılı uzaklıktaki iki yakın yıldıza, Tau Ceti ve Epsilon Eridani'ye çevirdi. Dinlediği frekans 1.420 MHz'ti, yani yıldızlararası hidrojen gazının doğal olarak yaydığı 21 cm'lik çizgi; Drake bunun yıldızlar arasında mantıklı bir çağrı frekansı olacağını düşündü. Yaklaşık 150 saatlik gözlemde tanınabilir bir sinyal çıkmadı.",
+      "Dünya dışı zekâ arayışına İngilizce baş harfleriyle SETI denir. İlk modern deneme, 8 Nisan 1960'ta Frank Drake'in başlattığı Project Ozma'dır. Drake, Green Bank'teki 26 m'lik radyo teleskobunu yaklaşık 11–12 ışık yılı uzaklıktaki iki yakın yıldıza, Tau Ceti ve Epsilon Eridani'ye çevirdi. Dinlediği frekans 1.420 MHz'ti, yani yıldızlararası hidrojen gazının doğal olarak yaydığı 21 cm'lik çizgi; Drake bunun yıldızlar arasında mantıklı bir çağrı frekansı olacağını düşündü. Yaklaşık 150 saatlik gözlemde tanınabilir bir sinyal çıkmadı.",
       "En ünlü aday 15 Ağustos 1977'de geldi. Ohio Devlet Üniversitesi'nin Big Ear radyo teleskobunun kayıtlarını inceleyen Jerry Ehman, Yay takımyıldızı yönünden gelen, 1.420 MHz'e çok yakın, dar bantlı ve 72 saniye süren güçlü bir sinyali kâğıt çıktıda daire içine aldı ve yanına \"Wow!\" yazdı. Sinyal bir daha hiç görülmedi. 2024'te Abel Méndez'in yönettiği bir çalışma, bir magnetar patlamasının uyardığı yıldızlararası hidrojen bulutlarının bu sinyali üretmiş olabileceğini öne sürdü; ama kaynak kesin olarak belirlenemedi.",
       "Breakthrough Listen, 20 Temmuz 2015'te Londra'da başlatıldı ve Yuri Milner'in 100 milyon dolarlık desteğiyle on yıllık bir program olarak planlandı. Green Bank ve Avustralya'daki Parkes radyo teleskoplarıyla Dünya'ya en yakın bir milyon yıldızı, Samanyolu'nun merkezini ve galaksi düzlemini, en yakın 100 galaksideki yıldızları taramayı hedefledi; Lick Gözlemevi'nin bir teleskobu da lazer sinyallerini aradı. Onlarca yıllık SETI aramaları şimdiye dek olağan dışı parlak ya da tekrarlanan bir radyo yayını bulmadı."
      ],
@@ -7095,6 +7127,22 @@
     {
      "ad": "NIST – Speed of light in vacuum",
      "url": "https://physics.nist.gov/cgi-bin/cuu/Value?c"
+    },
+    {
+     "ad": "Drake, Cosmic Search 1(1): Project Ozma, 8 Nisan 1960",
+     "url": "https://www.bigear.org/vol1no1/ozma.htm"
+    },
+    {
+     "ad": "Congress.gov CRS R48643: P.L. 119-74, 23 Ocak 2026",
+     "url": "https://www.congress.gov/crs-product/R48643"
+    },
+    {
+     "ad": "NASA: Perseverance'ın 33 örnek tüpü",
+     "url": "https://science.nasa.gov/photojournal/the-33-sample-tubes-collected-by-perseverance/"
+    },
+    {
+     "ad": "NASA: Sapphire Canyon, 25. örnek",
+     "url": "https://science.nasa.gov/resource/meet-the-mars-samples-sapphire-canyon-sample-25/"
     }
    ]
   },

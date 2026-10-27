@@ -4,7 +4,11 @@
   "yeni": true,
   "baslik": "Kümeler, Çift Yıldızlar ve Değişen Yıldızlar",
   "ozet": "Yıldızlar çoğunlukla yalnız değildir: kümeler halinde doğar, çoğu zaman bir yoldaşla dolanır, bazılarının ışığı gözünün önünde değişir. Bu derste bir kümenin yaşını H-R diyagramından okumayı, çift yıldızlarla yıldız tartmayı ve İstanbul'dan çıplak gözle izleyebileceğin Algol'ün kararmasını öğreneceksin.",
-  "on_bilgi": ["d3", "d5", "d14"],
+  "on_bilgi": [
+    "d3",
+    "d5",
+    "d14"
+  ],
   "bolumler": [
     {
       "baslik": "Yıldızlar kalabalık doğar",
@@ -79,7 +83,7 @@
         "Algol normalde yaklaşık 2,1 kadirdir. Her 2 gün 21 saatte bir (AAVSO'nun VSX kataloğuna göre 2,867343 gün) sönük Algol B, parlak Algol A'nın önünden geçer ve ışık yaklaşık 3,4 kadire düşer. Tutulma kısmidir ve Wikipedia'ya göre yaklaşık 10 saat sürer; VSX süreyi dönemin %14'ü, yani 9,63 saat olarak verir. Sky & Telescope'a göre Algol bir iki saat boyunca en sönük haline yakın kalır. Yarım dönem sonra A da B'nin önünden geçer, ama B zaten sönük olduğu için bu ikinci kararma gözle zor fark edilir: VSX'e göre ışık yalnızca 2,15 kadire iner.",
         "Algol'ün tarihi bilimin nasıl işlediğini gösterir. İtalyan gökbilimci Geminiano Montanari 1667'de parlaklığının değiştiğini kaydetti. John Goodricke 1783'te Kraliyet Derneği'ne, değişimin yıldızın önünden geçen karanlık bir cisimden kaynaklandığını öneren bir açıklama sundu. Bu fikir ancak 1889'da, Vogel'in tayfta dönemli Doppler kaymalarını bulmasıyla doğrulandı.",
         "Algol'ün bir de bilmecesi var: Algol paradoksu. Yıldızlar birlikte doğduğuna göre, kütleli olanın daha hızlı evrimleşip önce dev olması gerekirdi (d5). Oysa burada kütleli A hâlâ anakolda, hafif B ise altdev. Wikipedia'ya göre çözüm kütle aktarımıdır: B bir zamanlar daha kütleli olan yıldızdı, önce şişti, kendi kütleçekim bölgesini doldurdu ve kütlesinin çoğunu A'ya aktardı. Yani çift yıldızlar birbirinin hayatını değiştirebilir.",
-        "Algol'ün saati de kusursuz değildir. Değişen yıldız kataloğu GCVS'nin notuna göre dönem 1784–1915 arasında 2,8672506 ile 2,8673442 gün arasında oynadı. Jetsu'nun 2020'deki çözümlemesine göre Algol C'nin dolanması, ışığın bize ulaşma süresini değiştirerek kararma zamanlarını yaklaşık ±4,6 dakika kaydırır. Bu yüzden kararma zamanları bugün de ölçülüyor ve bu işin büyük kısmını amatörler yapıyor: AAVSO'nun dergisinde 2020–2025 arasında CCD kameralarla ölçülmüş Algol minimumları yayımlandı; Alman değişen yıldız derneği BAV'ın listelerinde Wolfgang Spiess'in 2023'te gözle zamanladığı dört minimum var. Bir dürbün ya da yalnızca gözlerin, gerçek bir bilimsel ölçüme katkı vermeye yeter."
+        "Algol'ün saati de kusursuz değildir. Dönemi yüzyıllar içinde çok küçük miktarlarda değişir. Jetsu'nun çözümlemesine göre Algol C'nin yaklaşık 680 günlük dolanması, ışığın bize ulaşma süresini değiştirerek kararma zamanlarını yaklaşık ±4,6 dakika kaydırır; yani en erken ile en geç kararma arasında yaklaşık 9 dakika fark olur. Bu yüzden kararma zamanları bugün de ölçülüyor ve bu işin büyük kısmını amatörler yapıyor: AAVSO'nun dergisinde 2020–2025 arasında CCD kameralarla ölçülmüş Algol minimumları yayımlandı; Alman değişen yıldız derneği BAV'ın listelerinde Wolfgang Spiess'in 2023'te gözle zamanladığı dört minimum var. Bir dürbün ya da yalnızca gözlerin, gerçek bir bilimsel ölçüme katkı vermeye yeter."
       ],
       "ornek": {
         "baslik": "Örnek: Algol en sönükken ne kadar ışık kaybeder?",
@@ -91,7 +95,7 @@
       "baslik": "Değişen yıldızlar: kendi ışığı oynayanlar",
       "paragraflar": [
         "Algol'ün ışığı geometri yüzünden değişir: yıldızlar aslında hep aynı parlaklıktadır, değişen yalnızca bizim bakış açımızdan kimin kimi örttüğüdür. Bir de ışığı gerçekten değişen yıldızlar vardır: şişip büzülen, ya da yüzeyinde ve çevresinde fırtınalar kopan yıldızlar. Bunların en önemlileri zonklayan yıldızlardır.",
-        "d5'teki H-R diyagramını hatırla. Wikipedia'ya göre diyagramda kararsızlık şeridi denen bir bölge vardır; buraya düşen yıldızlar düzenli olarak şişip büzülür ve parlaklıkları buna göre değişir. Yatay koldaki yıldızların bir kısmı bu şeride düşer ve RR Lyrae değişenleri olur. Aynı şeridin daha parlak kesiminde Sefeidler bulunur. Sınıf adını Kral takımyıldızındaki Delta Cephei'den alır. Wikipedia'ya göre bu yıldızın değiştiğini John Goodricke 1784'te buldu. Dönemi 5,366249 gün, yani 5 gün 9 saate yakın; parlaklığı 3,48 ile 4,37 kadir arasında oynar; uzaklığı yaklaşık 890 ışık yılıdır. Ken Croswell'in anlattığına göre bundan yaklaşık bir ay önce, Eylül 1784'te, Goodricke'nin York'taki çalışma arkadaşı Edward Pigott, Kartal'daki Eta Aquilae'nin değiştiğini fark etmişti. Goodricke'yi Algol bölümünden hatırlıyorsun: Algol'ün örtme açıklamasını öneren gözlemcinin ta kendisi.",
+        "d5'teki H-R diyagramını hatırla. Wikipedia'ya göre diyagramda kararsızlık şeridi denen bir bölge vardır; buraya düşen yıldızlar düzenli olarak şişip büzülür ve parlaklıkları buna göre değişir. Yatay koldaki yıldızların bir kısmı bu şeride düşer ve RR Lyrae değişenleri olur. Aynı şeridin daha parlak kesiminde Sefeidler bulunur. Sınıf adını Kral takımyıldızındaki Delta Cephei'den alır. Wikipedia'ya göre bu yıldızın değiştiğini John Goodricke 1784'te buldu. Dönemi yaklaşık 5,366 gün, yani 5 gün 9 saate yakın (dönem yıllar içinde ölçülebilir ölçüde değişir); parlaklığı 3,48 ile 4,37 kadir arasında oynar; uzaklığı yaklaşık 890 ışık yılıdır. Ken Croswell'in anlattığına göre bundan yaklaşık bir ay önce, Eylül 1784'te, Goodricke'nin York'taki çalışma arkadaşı Edward Pigott, Kartal'daki Eta Aquilae'nin değiştiğini fark etmişti. Goodricke'yi Algol bölümünden hatırlıyorsun: Algol'ün örtme açıklamasını öneren gözlemcinin ta kendisi.",
         "Sefeidleri bir uzaklık cetveline çeviren Henrietta Swan Leavitt'tir. Wikipedia'ya göre Pickering onu 1902'de Harvard Gözlemevi'nde işe aldı; işi, fotoğraf plakalarındaki yıldızların parlaklığını ölçüp kataloglamaktı. 1908'de Macellan Bulutları'nda 1777 değişen yıldız yayımladı ve parlak olanların dönemlerinin daha uzun olduğunu not etti. 1912'de Küçük Macellan Bulutu'ndaki 25 Sefeidin dönemleriyle parlaklıklarını karşılaştırdı ve noktaların düz bir çizgiye dizildiğini gösterdi. Anahtar fikir kümelerdeki mantıkla aynı: Leavitt bulutun bütün Sefeidlerini bize kabaca aynı uzaklıkta kabul etti, bu yüzden görünür parlaklık farkı gerçek parlaklık farkı demekti. Demek ki dönemi uzun olan Sefeid gerçekten daha güçlüdür. Hubble bu ilişkiyle sarmal bulutsuların uzaklıklarını hesapladı; Walter Baade daha sonra parlaklıkları farklı iki tür Sefeid olduğunu buldu. Yöntemin ayrıntısı d17'de.",
         "Kırmızı devler de zonklar. Wikipedia'ya göre Mira değişenleri, onlarca ile yüzlerce gün arasında düzenli dönemlerle zonklayan ve parlaklığı 10 kadire kadar değişebilen yıldızlardır. Sınıfa adını veren Mira, yani Omikron Ceti, Balina takımyıldızındadır. Wikipedia'ya göre David Fabricius 3 Ağustos 1596'dan başlayarak parlaklığındaki değişimi kaydetti; Johannes Holwarda 1638'de yıldızın yaklaşık on bir ayda bir yeniden belirdiğini saptadı; Johannes Hevelius ona Latincede “harika” anlamına gelen Mira adını verdi. Bugünkü dönemi 332 gündür.",
         "Wikipedia ve EarthSky'a göre Mira en parlak hâlinde ortalama 3,5 kadirdir; bazı döngülerde 2,0'a kadar çıkmış, bazılarında 4,9'da kalmıştır. En sönük hâli tarihte 8,6 ile 10,1 kadir arasında ölçülmüştür, yani o sırada çıplak gözle görülmez. Mira yaklaşık 300 ışık yılı uzakta, asimptotik dev kolunda bir kırmızı devdir ve bir beyaz cüce yoldaşı vardır. Avcı'daki Betelgeuse de değişen bir yıldızdır; Wikipedia onu yarı düzenli değişen yıldızlar arasında sınıflar.",
@@ -210,7 +214,7 @@
       "kaynak_url": "https://en.wikipedia.org/wiki/Mira"
     },
     {
-      "deger": "1784; 5,366249 gün; 3,48–4,37 kadir",
+      "deger": "1784; ≈5,366 gün; 3,48–4,37 kadir",
       "aciklama": "Delta Cephei (Kral): Goodricke'nin keşfi, dönem, parlaklık aralığı",
       "kaynak_url": "https://en.wikipedia.org/wiki/Delta_Cephei"
     },
@@ -226,19 +230,58 @@
     }
   ],
   "sozluk": [
-    { "terim": "Açık küme", "tanim": "Aynı buluttan aynı anda doğmuş, galaksinin diskinde bulunan, gevşek bağlı genç yıldız topluluğu." },
-    { "terim": "Küresel küme", "tanim": "Galaksinin halesinde dolanan, çok sayıda yaşlı yıldızın küre biçiminde sıkıca toplandığı küme." },
-    { "terim": "Dönüm noktası", "tanim": "Bir kümenin H-R diyagramında yıldızların anakoldan ayrılmaya başladığı nokta; kümenin yaşını gösterir." },
-    { "terim": "Görsel çift", "tanim": "İki bileşeni teleskopla ayrı ayrı görülebilen ve birbirinin çevresinde dolanan yıldız çifti." },
-    { "terim": "Tayfsal çift", "tanim": "Tek nokta gibi görünen ama tayf çizgileri dönemli olarak kayan, böylece çift olduğu anlaşılan yıldız." },
-    { "terim": "Örten çift", "tanim": "Yörünge düzlemini neredeyse yanından gördüğümüz için bileşenleri sırayla birbirinin önünden geçen ve ışığı düzenli azalan çift." },
-    { "terim": "Kütle aktarımı", "tanim": "Yakın bir çiftte şişen yıldızın kütlesinin bir kısmını yoldaşına vermesi; Algol paradoksunun çözümü." },
-    { "terim": "Değişen yıldız", "tanim": "Parlaklığı zamanla değişen yıldız; değişim örtmeden (geometri) ya da yıldızın kendisinden gelebilir." },
-    { "terim": "Kararsızlık şeridi", "tanim": "H-R diyagramında, buraya düşen yıldızların düzenli olarak şişip büzüldüğü bölge; Sefeidler ve RR Lyrae buradadır." },
-    { "terim": "Mira değişeni", "tanim": "Onlarca ile yüzlerce günlük dönemlerle zonklayan, parlaklığı 10 kadire kadar değişebilen kırmızı dev." },
-    { "terim": "Sefeid", "tanim": "Kararsızlık şeridinde düzenli zonklayan, dönemi uzun olanı daha parlak olan değişen yıldız; adını Delta Cephei'den alır." },
-    { "terim": "Dönem-ışıma ilişkisi", "tanim": "Leavitt'in 1912'de gösterdiği, Sefeidlerin zonklama dönemi ile gerçek parlaklığı arasındaki bağ." },
-    { "terim": "Kaçamak bakış", "tanim": "Sönük bir cisme doğrudan değil biraz yanına bakarak onu daha iyi seçme yöntemi." }
+    {
+      "terim": "Açık küme",
+      "tanim": "Aynı buluttan aynı anda doğmuş, galaksinin diskinde bulunan, gevşek bağlı genç yıldız topluluğu."
+    },
+    {
+      "terim": "Küresel küme",
+      "tanim": "Galaksinin halesinde dolanan, çok sayıda yaşlı yıldızın küre biçiminde sıkıca toplandığı küme."
+    },
+    {
+      "terim": "Dönüm noktası",
+      "tanim": "Bir kümenin H-R diyagramında yıldızların anakoldan ayrılmaya başladığı nokta; kümenin yaşını gösterir."
+    },
+    {
+      "terim": "Görsel çift",
+      "tanim": "İki bileşeni teleskopla ayrı ayrı görülebilen ve birbirinin çevresinde dolanan yıldız çifti."
+    },
+    {
+      "terim": "Tayfsal çift",
+      "tanim": "Tek nokta gibi görünen ama tayf çizgileri dönemli olarak kayan, böylece çift olduğu anlaşılan yıldız."
+    },
+    {
+      "terim": "Örten çift",
+      "tanim": "Yörünge düzlemini neredeyse yanından gördüğümüz için bileşenleri sırayla birbirinin önünden geçen ve ışığı düzenli azalan çift."
+    },
+    {
+      "terim": "Kütle aktarımı",
+      "tanim": "Yakın bir çiftte şişen yıldızın kütlesinin bir kısmını yoldaşına vermesi; Algol paradoksunun çözümü."
+    },
+    {
+      "terim": "Değişen yıldız",
+      "tanim": "Parlaklığı zamanla değişen yıldız; değişim örtmeden (geometri) ya da yıldızın kendisinden gelebilir."
+    },
+    {
+      "terim": "Kararsızlık şeridi",
+      "tanim": "H-R diyagramında, buraya düşen yıldızların düzenli olarak şişip büzüldüğü bölge; Sefeidler ve RR Lyrae buradadır."
+    },
+    {
+      "terim": "Mira değişeni",
+      "tanim": "Onlarca ile yüzlerce günlük dönemlerle zonklayan, parlaklığı 10 kadire kadar değişebilen kırmızı dev."
+    },
+    {
+      "terim": "Sefeid",
+      "tanim": "Kararsızlık şeridinde düzenli zonklayan, dönemi uzun olanı daha parlak olan değişen yıldız; adını Delta Cephei'den alır."
+    },
+    {
+      "terim": "Dönem-ışıma ilişkisi",
+      "tanim": "Leavitt'in 1912'de gösterdiği, Sefeidlerin zonklama dönemi ile gerçek parlaklığı arasındaki bağ."
+    },
+    {
+      "terim": "Kaçamak bakış",
+      "tanim": "Sönük bir cisme doğrudan değil biraz yanına bakarak onu daha iyi seçme yöntemi."
+    }
   ],
   "defter_notu": [
     "Yıldızlar kümeler halinde doğar; küme üyeleri aynı yaş, aynı bileşim, aynı uzaklık. Fark = kütle.",
@@ -299,57 +342,221 @@
     }
   ],
   "kaynaklar": [
-    { "ad": "Wikipedia, Star formation", "url": "https://en.wikipedia.org/wiki/Star_formation" },
-    { "ad": "Wikipedia, Molecular cloud", "url": "https://en.wikipedia.org/wiki/Molecular_cloud" },
-    { "ad": "Wikipedia, Milky Way", "url": "https://en.wikipedia.org/wiki/Milky_Way" },
-    { "ad": "Wikipedia, Galactic Center", "url": "https://en.wikipedia.org/wiki/Galactic_Center" },
-    { "ad": "Wikipedia, Hertzsprung–Russell diagram", "url": "https://en.wikipedia.org/wiki/Hertzsprung%E2%80%93Russell_diagram" },
-    { "ad": "Wikipedia, Main sequence", "url": "https://en.wikipedia.org/wiki/Main_sequence" },
-    { "ad": "Wikipedia, Reflection nebula", "url": "https://en.wikipedia.org/wiki/Reflection_nebula" },
-    { "ad": "Sky & Telescope, Surprise: Most Star Systems Are Single", "url": "https://skyandtelescope.org/astronomy-news/surprise-most-star-systems-are-single/" },
-    { "ad": "Wikipedia, White dwarf", "url": "https://en.wikipedia.org/wiki/White_dwarf" },
-    { "ad": "Wikipedia, Kepler's laws of planetary motion", "url": "https://en.wikipedia.org/wiki/Kepler%27s_laws_of_planetary_motion" },
-    { "ad": "Wikipedia, Mass–luminosity relation", "url": "https://en.wikipedia.org/wiki/Mass%E2%80%93luminosity_relation" },
-    { "ad": "Wikipedia, Algol", "url": "https://en.wikipedia.org/wiki/Algol" },
-    { "ad": "AAVSO VSX, bet Per (Algol)", "url": "https://vsx.aavso.org/index.php?view=detail.top&oid=26202" },
-    { "ad": "Sky & Telescope, This Week's Sky at a Glance, October 16–25 (2026)", "url": "https://skyandtelescope.org/astronomy-news/observing-news/this-weeks-sky-at-a-glance-october-16-25/" },
-    { "ad": "Wikipedia, Stellar evolution", "url": "https://en.wikipedia.org/wiki/Stellar_evolution" },
-    { "ad": "Wikipedia, Red giant", "url": "https://en.wikipedia.org/wiki/Red_giant" },
-    { "ad": "Wikipedia, Hubble's law", "url": "https://en.wikipedia.org/wiki/Hubble%27s_law" },
-    { "ad": "Wikipedia, Betelgeuse (değişen türü SRc)", "url": "https://en.wikipedia.org/wiki/Betelgeuse" },
-    { "ad": "Wikipedia, Apparent magnitude", "url": "https://en.wikipedia.org/wiki/Apparent_magnitude" },
-    { "ad": "AAVSO, Variable Star of the Season: T Tauri", "url": "https://www.aavso.org/vsots_ttau" },
-    { "ad": "SIMBAD (CDS), Mizar A (zet01 UMa)", "url": "https://simbad.cds.unistra.fr/simbad/sim-id?output.format=ASCII&Ident=zet01%20UMa" },
-    { "ad": "SIMBAD (CDS), M13", "url": "https://simbad.cds.unistra.fr/simbad/sim-id?output.format=ASCII&Ident=M13" },
-    { "ad": "OpenNGC kataloğu (küme kadirleri)", "url": "https://github.com/mattiaverga/OpenNGC" },
-    { "ad": "Wikipedia, Circumpolar star", "url": "https://en.wikipedia.org/wiki/Circumpolar_star" },
-    { "ad": "GCVS (Samus ve ark.), bet Per kaydı ve notu", "url": "http://www.sai.msu.su/gcvs/cgi-bin/search.cgi?search=bet+Per" },
-    { "ad": "Jetsu 2020, Algol'ün 236 yıllık O−C verisi (arXiv)", "url": "https://arxiv.org/abs/2005.13360" },
-    { "ad": "Samolyk, JAAVSO 53 (2025), Recent Minima of 312 Eclipsing Binary Stars", "url": "https://apps.aavso.org/jaavso/article/3989/" },
-    { "ad": "BAV Mitteilungen 262 (2024), görsel minimumlar", "url": "https://www.bav-astro.de/images/Up_Journal/BAVJ093_BAVM262_V2.pdf" },
-    { "ad": "Wikipedia, Pleiades", "url": "https://en.wikipedia.org/wiki/Pleiades" },
-    { "ad": "Harvard-Smithsonian CfA, How Far Are the Pleiades, Really? (2014)", "url": "https://www.cfa.harvard.edu/news/how-far-are-pleiades-really" },
-    { "ad": "Stauffer, Schultz ve Kirkpatrick 1998, Ülker'de lityum sınırı (arXiv)", "url": "https://arxiv.org/abs/astro-ph/9804005" },
-    { "ad": "NASA Hubble Messier kataloğu, Messier 45", "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-45" },
-    { "ad": "Wikipedia, Hyades (star cluster)", "url": "https://en.wikipedia.org/wiki/Hyades_(star_cluster)" },
-    { "ad": "Astronomy Now, Home in on the Hyades (2022)", "url": "https://astronomynow.com/2022/12/12/home-in-on-the-hyades/" },
-    { "ad": "NASA Night Sky Network, Spot the Young Stars of the Hyades and Pleiades", "url": "https://science.nasa.gov/solar-system/skywatching/night-sky-network/spot-the-young-stars-of-the-hyades-and-pleiades" },
-    { "ad": "Wikipedia, Beehive Cluster", "url": "https://en.wikipedia.org/wiki/Beehive_Cluster" },
-    { "ad": "NASA Hubble Messier kataloğu, Messier 44", "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-44" },
-    { "ad": "Wikipedia, Globular cluster", "url": "https://en.wikipedia.org/wiki/Globular_cluster" },
-    { "ad": "EarthSky, What is a globular cluster?", "url": "https://earthsky.org/astronomy-essentials/definition-what-is-a-globular-cluster/" },
-    { "ad": "NASA Hubble Messier kataloğu, Messier 13", "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-13/" },
-    { "ad": "Wikipedia, Messier 13", "url": "https://en.wikipedia.org/wiki/Messier_13" },
-    { "ad": "Wikipedia, Double Cluster", "url": "https://en.wikipedia.org/wiki/Double_Cluster" },
-    { "ad": "Wikipedia, Mira", "url": "https://en.wikipedia.org/wiki/Mira" },
-    { "ad": "EarthSky, Mira the Wonderful", "url": "https://earthsky.org/brightest-stars/mira-quite-wonderful/" },
-    { "ad": "Wikipedia, Delta Cephei", "url": "https://en.wikipedia.org/wiki/Delta_Cephei" },
-    { "ad": "Ken Croswell, The First Cepheid", "url": "https://kencroswell.com/thefirstcepheid.html" },
-    { "ad": "Wikipedia, Henrietta Swan Leavitt", "url": "https://en.wikipedia.org/wiki/Henrietta_Swan_Leavitt" },
-    { "ad": "The Legacy of Henrietta Leavitt: ilk Sefeid dönem-ışıma ilişkisinin yeniden çözümlemesi (arXiv 2502.17438)", "url": "https://arxiv.org/html/2502.17438v2" },
-    { "ad": "Wikipedia, Mizar and Alcor", "url": "https://en.wikipedia.org/wiki/Mizar_and_Alcor" },
-    { "ad": "Astronomy Now, Mizar and Alcor: the Great Bear's famous naked-eye double", "url": "https://astronomynow.com/?p=36497" },
-    { "ad": "EarthSky, Albireo", "url": "https://earthsky.org/brightest-stars/albireo-finest-double-star/" },
-    { "ad": "Astronomy Now, Don't miss Albireo (2022)", "url": "https://astronomynow.com/2022/08/02/dont-miss-albireo-a-glorious-colour-contrast-double-star/" }
+    {
+      "ad": "Wikipedia, Star formation",
+      "url": "https://en.wikipedia.org/wiki/Star_formation"
+    },
+    {
+      "ad": "Wikipedia, Molecular cloud",
+      "url": "https://en.wikipedia.org/wiki/Molecular_cloud"
+    },
+    {
+      "ad": "Wikipedia, Milky Way",
+      "url": "https://en.wikipedia.org/wiki/Milky_Way"
+    },
+    {
+      "ad": "Wikipedia, Galactic Center",
+      "url": "https://en.wikipedia.org/wiki/Galactic_Center"
+    },
+    {
+      "ad": "Wikipedia, Hertzsprung–Russell diagram",
+      "url": "https://en.wikipedia.org/wiki/Hertzsprung%E2%80%93Russell_diagram"
+    },
+    {
+      "ad": "Wikipedia, Main sequence",
+      "url": "https://en.wikipedia.org/wiki/Main_sequence"
+    },
+    {
+      "ad": "Wikipedia, Reflection nebula",
+      "url": "https://en.wikipedia.org/wiki/Reflection_nebula"
+    },
+    {
+      "ad": "Sky & Telescope, Surprise: Most Star Systems Are Single",
+      "url": "https://skyandtelescope.org/astronomy-news/surprise-most-star-systems-are-single/"
+    },
+    {
+      "ad": "Wikipedia, White dwarf",
+      "url": "https://en.wikipedia.org/wiki/White_dwarf"
+    },
+    {
+      "ad": "Wikipedia, Kepler's laws of planetary motion",
+      "url": "https://en.wikipedia.org/wiki/Kepler%27s_laws_of_planetary_motion"
+    },
+    {
+      "ad": "Wikipedia, Mass–luminosity relation",
+      "url": "https://en.wikipedia.org/wiki/Mass%E2%80%93luminosity_relation"
+    },
+    {
+      "ad": "Wikipedia, Algol",
+      "url": "https://en.wikipedia.org/wiki/Algol"
+    },
+    {
+      "ad": "AAVSO VSX, bet Per (Algol)",
+      "url": "https://vsx.aavso.org/index.php?view=detail.top&oid=26202"
+    },
+    {
+      "ad": "Sky & Telescope, This Week's Sky at a Glance, October 16–25 (2026)",
+      "url": "https://skyandtelescope.org/astronomy-news/observing-news/this-weeks-sky-at-a-glance-october-16-25/"
+    },
+    {
+      "ad": "Wikipedia, Stellar evolution",
+      "url": "https://en.wikipedia.org/wiki/Stellar_evolution"
+    },
+    {
+      "ad": "Wikipedia, Red giant",
+      "url": "https://en.wikipedia.org/wiki/Red_giant"
+    },
+    {
+      "ad": "Wikipedia, Hubble's law",
+      "url": "https://en.wikipedia.org/wiki/Hubble%27s_law"
+    },
+    {
+      "ad": "Wikipedia, Betelgeuse (değişen türü SRc)",
+      "url": "https://en.wikipedia.org/wiki/Betelgeuse"
+    },
+    {
+      "ad": "Wikipedia, Apparent magnitude",
+      "url": "https://en.wikipedia.org/wiki/Apparent_magnitude"
+    },
+    {
+      "ad": "AAVSO, Variable Star of the Season: T Tauri",
+      "url": "https://www.aavso.org/vsots_ttau"
+    },
+    {
+      "ad": "SIMBAD (CDS), Mizar A (zet01 UMa)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?output.format=ASCII&Ident=zet01%20UMa"
+    },
+    {
+      "ad": "SIMBAD (CDS), M13",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?output.format=ASCII&Ident=M13"
+    },
+    {
+      "ad": "OpenNGC kataloğu (küme kadirleri)",
+      "url": "https://github.com/mattiaverga/OpenNGC"
+    },
+    {
+      "ad": "Wikipedia, Circumpolar star",
+      "url": "https://en.wikipedia.org/wiki/Circumpolar_star"
+    },
+    {
+      "ad": "GCVS (Samus ve ark.), bet Per kaydı ve notu",
+      "url": "http://www.sai.msu.su/gcvs/cgi-bin/search.cgi?search=bet+Per"
+    },
+    {
+      "ad": "Jetsu 2020, Algol'ün 236 yıllık O−C verisi (arXiv)",
+      "url": "https://arxiv.org/abs/2005.13360"
+    },
+    {
+      "ad": "Samolyk, JAAVSO 53 (2025), Recent Minima of 312 Eclipsing Binary Stars",
+      "url": "https://apps.aavso.org/jaavso/article/3989/"
+    },
+    {
+      "ad": "BAV Mitteilungen 262 (2024), görsel minimumlar",
+      "url": "https://www.bav-astro.de/images/Up_Journal/BAVJ093_BAVM262_V2.pdf"
+    },
+    {
+      "ad": "Wikipedia, Pleiades",
+      "url": "https://en.wikipedia.org/wiki/Pleiades"
+    },
+    {
+      "ad": "Harvard-Smithsonian CfA, How Far Are the Pleiades, Really? (2014)",
+      "url": "https://www.cfa.harvard.edu/news/how-far-are-pleiades-really"
+    },
+    {
+      "ad": "Stauffer, Schultz ve Kirkpatrick 1998, Ülker'de lityum sınırı (arXiv)",
+      "url": "https://arxiv.org/abs/astro-ph/9804005"
+    },
+    {
+      "ad": "NASA Hubble Messier kataloğu, Messier 45",
+      "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-45"
+    },
+    {
+      "ad": "Wikipedia, Hyades (star cluster)",
+      "url": "https://en.wikipedia.org/wiki/Hyades_(star_cluster)"
+    },
+    {
+      "ad": "Astronomy Now, Home in on the Hyades (2022)",
+      "url": "https://astronomynow.com/2022/12/12/home-in-on-the-hyades/"
+    },
+    {
+      "ad": "NASA Night Sky Network, Spot the Young Stars of the Hyades and Pleiades",
+      "url": "https://science.nasa.gov/solar-system/skywatching/night-sky-network/spot-the-young-stars-of-the-hyades-and-pleiades"
+    },
+    {
+      "ad": "Wikipedia, Beehive Cluster",
+      "url": "https://en.wikipedia.org/wiki/Beehive_Cluster"
+    },
+    {
+      "ad": "NASA Hubble Messier kataloğu, Messier 44",
+      "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-44"
+    },
+    {
+      "ad": "Wikipedia, Globular cluster",
+      "url": "https://en.wikipedia.org/wiki/Globular_cluster"
+    },
+    {
+      "ad": "EarthSky, What is a globular cluster?",
+      "url": "https://earthsky.org/astronomy-essentials/definition-what-is-a-globular-cluster/"
+    },
+    {
+      "ad": "NASA Hubble Messier kataloğu, Messier 13",
+      "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-13/"
+    },
+    {
+      "ad": "Wikipedia, Messier 13",
+      "url": "https://en.wikipedia.org/wiki/Messier_13"
+    },
+    {
+      "ad": "Wikipedia, Double Cluster",
+      "url": "https://en.wikipedia.org/wiki/Double_Cluster"
+    },
+    {
+      "ad": "Wikipedia, Mira",
+      "url": "https://en.wikipedia.org/wiki/Mira"
+    },
+    {
+      "ad": "EarthSky, Mira the Wonderful",
+      "url": "https://earthsky.org/brightest-stars/mira-quite-wonderful/"
+    },
+    {
+      "ad": "Wikipedia, Delta Cephei",
+      "url": "https://en.wikipedia.org/wiki/Delta_Cephei"
+    },
+    {
+      "ad": "Ken Croswell, The First Cepheid",
+      "url": "https://kencroswell.com/thefirstcepheid.html"
+    },
+    {
+      "ad": "Wikipedia, Henrietta Swan Leavitt",
+      "url": "https://en.wikipedia.org/wiki/Henrietta_Swan_Leavitt"
+    },
+    {
+      "ad": "The Legacy of Henrietta Leavitt: ilk Sefeid dönem-ışıma ilişkisinin yeniden çözümlemesi (arXiv 2502.17438)",
+      "url": "https://arxiv.org/html/2502.17438v2"
+    },
+    {
+      "ad": "Wikipedia, Mizar and Alcor",
+      "url": "https://en.wikipedia.org/wiki/Mizar_and_Alcor"
+    },
+    {
+      "ad": "Astronomy Now, Mizar and Alcor: the Great Bear's famous naked-eye double",
+      "url": "https://astronomynow.com/?p=36497"
+    },
+    {
+      "ad": "EarthSky, Albireo",
+      "url": "https://earthsky.org/brightest-stars/albireo-finest-double-star/"
+    },
+    {
+      "ad": "Astronomy Now, Don't miss Albireo (2022)",
+      "url": "https://astronomynow.com/2022/08/02/dont-miss-albireo-a-glorious-colour-contrast-double-star/"
+    },
+    {
+      "ad": "Jetsu 2021, ApJ 920 (arXiv 2005.13360): Algol 680,4 günlük sinyal, A = 0,0064 gün tepe-tepe",
+      "url": "https://arxiv.org/pdf/2005.13360"
+    },
+    {
+      "ad": "AAVSO: Delta Cephei (5,366 gün; 3,5–4,4)",
+      "url": "https://archive.aavso.org/vsots_delcep"
+    }
   ]
 }

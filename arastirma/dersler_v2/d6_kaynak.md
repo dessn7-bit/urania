@@ -135,3 +135,19 @@ Bağımsız doğrulayıcı, 2026-10-27. Açılan kaynaklar (WebFetch): NASA Blac
 | DOĞRULANDI: Sirius B 1,018 M☉, 5.635 km, 0,88 Dünya yarıçapı, 25.000 K, 8,6 ışık yılı, 50,13 yıl, Bessel 1844, Clark 31 Ocak 1862 | https://en.wikipedia.org/wiki/Sirius_B | "equivalent to 5,635 km (3,501 mi) or 0.88 times Earth's radius" (bilgi kutusu 5.634 km) |
 | DOĞRULANDI: NASA, Wikipedia (Type II, Type Ia, Chandrasekhar, S-process, Planetary nebula, Crab Nebula), ESO, S&T, OSU News, Space.com, Swinburne, M1, M57 değerleri dersle birebir | (yukarıdaki URL'ler) | ör. "at least 8 times, but no more than 40 to 50 times" ; "Mv = −19.3" ; "For 100 million years after the Big Bang, there was nothing but hydrogen, helium and lithium." |
 | KAVRAM NOTU (değişiklik yok): Yengeç uzaklığı Wikipedia'da 6.500 ± 1.600 ışık yılı; ders NASA'nın "yaklaşık 6.500" değerini veriyor, uyumlu. | https://en.wikipedia.org/wiki/Crab_Nebula | "2.0 ± 0.5 kpc (6,500 ± 1,600 ly)" |
+
+## Derin araştırma düzeltmeleri (27.10.2026, ana oturum)
+Kaynak: araştırma raporu "Urania: askıdaki 13 olgusal iddianın birincil kaynaklarla denetimi". Rapordaki alıntılar:
+| Hubble görünür ışıkta 0,05″ | https://science.nasa.gov/mission/hubble/observatory/design/optics/ | "Hubble can distinguish astronomical objects in visible light with an angular diameter of a mere 0.05 arcsecond" |
+| DAG ön kabul Mayıs 2025 sonu | https://arxiv.org/pdf/2510.23339 | "The PA milestone… was officially passed between… ATASAM and… AMOS at the end of May 2025" |
+| DAG bilimsel gözlem beklentisi | https://arxiv.org/pdf/2608.28226 | "science observations to start in late 2026/early 2027" |
+| 1974 Nobel: Ryle ve Hewish | https://www.nobelprize.org/prizes/physics/1974/summary/ | "Ryle for his observations and inventions, in particular of the aperture synthesis technique, and Hewish for his decisive role in the discovery of pulsars" |
+| Algol C: A = 0,0064 gün tepe-tepe, K = A/2 | https://arxiv.org/pdf/2005.13360 | "A₁ = 0.ᵈ0064 ± 0.ᵈ0007"; A "peak to peak amplitude", "K = A/2" → ±4,6 dk |
+| Delta Cephei ≈5,366 gün, 3,5–4,4 | https://archive.aavso.org/vsots_delcep | "visual magnitude of 3.5 to 4.4… period of 5.366 days" |
+| GCVS "1784–1915" dönem aralığı | — | bulunamadı; dersten çıkarıldı |
+| Ozma 8 Nisan 1960 | https://www.bigear.org/vol1no1/ozma.htm | "on April 8, 1960, he turned the 85-foot Howard Tatel telescope… toward the star Tau Ceti" |
+| P.L. 119-74, 23 Ocak 2026 | https://www.congress.gov/crs-product/R48643 | "On January 23, 2026, the … Appropriations Act, 2026 (P.L. 119-74) was signed into law" |
+| MSR desteklenmedi, 110 milyon $ | https://www.science.org/content/article/nasa-s-mars-sample-return-mission-dead | "The agreement does not support the existing Mars Sample Return program" |
+| 33 tüp, 27 kaya karotu | https://science.nasa.gov/photojournal/the-33-sample-tubes-collected-by-perseverance/ | "33 tubes… 27 rock cores" |
+| Sapphire Canyon 25. örnek, 22. kaya örneği | https://science.nasa.gov/resource/meet-the-mars-samples-sapphire-canyon-sample-25/ ; https://science.nasa.gov/mars/the-mars-report/2025-september-special-edition/ | "Meet the 25th Martian sample"; "the rover's 22nd rock sample" |
+| Kütle–ışıma: Duric yalnız iki parça | https://www.tevza.org/home/course/PCO2012/Duric%20N.%20Advanced%20astrophysics%20(CUP,%202004).pdf | L = M^4 (M > 0,43), 0,23 M^2,3 (M < 0,43); 1,4 M^3,5 ve 32.000 M yalnız Wikipedia türevlerinde |

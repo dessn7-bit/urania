@@ -191,3 +191,19 @@ Doğrulayıcı: bağımsız ajan, 2026-10-27. Derste geçen her sayı/tarih/ad s
 | V27 | Mizar/Alcor/Albireo | Mizar–Alcor ayrımı HDOG konumlarından yeniden: 11,81′ (AN 706″ ile uyumlu); 708,6/14,4 = 49,2 ("~50"). AN: Castelli Ocak 1617, Mizar A 1889 ilk tayfsal çift (20 gün), A–B 14″. WP: göz sınavı, Riccioli 1650. Albireo: EarthSky ve AN alıntıları doğru; AN ayrımı 34,3″ (uygulama 34,6″) | WebFetch ; HESAP |
 | V28 | T Tauri / NGC 1555 | 9,3–14 (1864–1916); 1852–1861, 1868, 1890; bulutsu yıldızla aydınlanır; Joy düzensizlik: doğru | AAVSO VSOTS T Tauri |
 | V29 | Tek/çift yıldız oranları | S&T: >%50 eski görüş, Lada üçte iki, kırmızı cüce >%70, RECONS 43/171 alt sınır: doğru | S&T (WebFetch) |
+
+## Derin araştırma düzeltmeleri (27.10.2026, ana oturum)
+Kaynak: araştırma raporu "Urania: askıdaki 13 olgusal iddianın birincil kaynaklarla denetimi". Rapordaki alıntılar:
+| Hubble görünür ışıkta 0,05″ | https://science.nasa.gov/mission/hubble/observatory/design/optics/ | "Hubble can distinguish astronomical objects in visible light with an angular diameter of a mere 0.05 arcsecond" |
+| DAG ön kabul Mayıs 2025 sonu | https://arxiv.org/pdf/2510.23339 | "The PA milestone… was officially passed between… ATASAM and… AMOS at the end of May 2025" |
+| DAG bilimsel gözlem beklentisi | https://arxiv.org/pdf/2608.28226 | "science observations to start in late 2026/early 2027" |
+| 1974 Nobel: Ryle ve Hewish | https://www.nobelprize.org/prizes/physics/1974/summary/ | "Ryle for his observations and inventions, in particular of the aperture synthesis technique, and Hewish for his decisive role in the discovery of pulsars" |
+| Algol C: A = 0,0064 gün tepe-tepe, K = A/2 | https://arxiv.org/pdf/2005.13360 | "A₁ = 0.ᵈ0064 ± 0.ᵈ0007"; A "peak to peak amplitude", "K = A/2" → ±4,6 dk |
+| Delta Cephei ≈5,366 gün, 3,5–4,4 | https://archive.aavso.org/vsots_delcep | "visual magnitude of 3.5 to 4.4… period of 5.366 days" |
+| GCVS "1784–1915" dönem aralığı | — | bulunamadı; dersten çıkarıldı |
+| Ozma 8 Nisan 1960 | https://www.bigear.org/vol1no1/ozma.htm | "on April 8, 1960, he turned the 85-foot Howard Tatel telescope… toward the star Tau Ceti" |
+| P.L. 119-74, 23 Ocak 2026 | https://www.congress.gov/crs-product/R48643 | "On January 23, 2026, the … Appropriations Act, 2026 (P.L. 119-74) was signed into law" |
+| MSR desteklenmedi, 110 milyon $ | https://www.science.org/content/article/nasa-s-mars-sample-return-mission-dead | "The agreement does not support the existing Mars Sample Return program" |
+| 33 tüp, 27 kaya karotu | https://science.nasa.gov/photojournal/the-33-sample-tubes-collected-by-perseverance/ | "33 tubes… 27 rock cores" |
+| Sapphire Canyon 25. örnek, 22. kaya örneği | https://science.nasa.gov/resource/meet-the-mars-samples-sapphire-canyon-sample-25/ ; https://science.nasa.gov/mars/the-mars-report/2025-september-special-edition/ | "Meet the 25th Martian sample"; "the rover's 22nd rock sample" |
+| Kütle–ışıma: Duric yalnız iki parça | https://www.tevza.org/home/course/PCO2012/Duric%20N.%20Advanced%20astrophysics%20(CUP,%202004).pdf | L = M^4 (M > 0,43), 0,23 M^2,3 (M < 0,43); 1,4 M^3,5 ve 32.000 M yalnız Wikipedia türevlerinde |
