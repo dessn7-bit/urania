@@ -5,7 +5,7 @@ const ASSETS = [
   './', './index.html', './stil.css', './manifest.json',
   './icon-192.png', './icon-512.png', './icon-maskable-512.png',
   './lib/astronomy.browser.min.js', './lib/geomag.min.js', './ar.js', './hava.js', './defter.js', './gorevler.js', './uydu.js', './lib/satellite.min.js', './tani.js', './ortme.js', './ortme_isci.js', './plan.js', './okunus.js', './ses.js', './kartlar.js',
-  './gok.js', './uygulama.js', './harita.js', './gozlem.js', './deneyler2.js', './simulasyon.js', './cizim.js', './cizim_gokyuzu.js', './cizim_gunes_sistemi.js', './cizim_yildizlar.js', './cizim_gezegen_yasam.js', './cizim_evren.js', './dersler.js', './hesap.js',
+  './gok.js', './uygulama.js', './harita.js', './gozlem.js', './deneyler2.js', './simulasyon.js', './cizim.js', './cizim_gokyuzu.js', './cizim_gunes_sistemi.js', './cizim_yildizlar.js', './cizim_gezegen_yasam.js', './cizim_evren.js', './dersler.js', './hesap.js', './baslat.js',
   './veri/yildizlar.json', './veri/takimyildiz.json', './veri/hedefler.json', './veri/meteor.json',
   './veri/fizik.json', './veri/dersler.json', './veri/ortme_yildiz.json', './veri/algol.json', './veri/deney_rehber.json', './veri/deney_veri.json', './veri/sinavlar.json', './veri/gorevler.json',
   './font/spectral-latin-400-normal.woff2', './font/spectral-latin-ext-400-normal.woff2',

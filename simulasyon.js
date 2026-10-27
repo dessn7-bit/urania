@@ -480,15 +480,16 @@
   /* Yeni deneyler (deneyler2.js) ortak yardımcılarla kurulur */
   function ortak(kok) { return { F, U, R, kanvas, kaydirici, olcumler, kaynakSatiri, dongu: ciz => dongu(ciz, kok), renk, deger, azHareket, el: () => el }; }
   function kurucu(id) {
-    if (KURUCU[id]) return KURUCU[id];
-    const ek = window.UraniaDeneyEk && window.UraniaDeneyEk[id];
+    const kendi = (o, k) => !!o && Object.prototype.hasOwnProperty.call(o, k);   // "#deney/constructor" gibi adlar prototipe takılmasın
+    if (kendi(KURUCU, id)) return KURUCU[id];
+    const ek = kendi(window.UraniaDeneyEk, id) && window.UraniaDeneyEk[id];
     return ek ? kap => ek(kap, ortak(kap)) : null;
   }
 
   /* ---- Rehber: "Yap / Gözle / Neden" adımları. "Uygula" düğmesi deneyin kontrollerini ayarlar. ---- */
   function rehberHtml(id) {
-    const r = R[id]; if (!r) return '';
-    const bitti = U.oku('rehber_' + id, []) || [];
+    const r = Object.prototype.hasOwnProperty.call(R, id) ? R[id] : null; if (!r || !Array.isArray(r.adimlar)) return '';
+    const bitti = U.diziOku('rehber_' + id);
     return `<section class="rehber" aria-label="Rehber">
       <h2>Adım adım</h2>
       <ol class="rehber-adim">${r.adimlar.map((a, i) => `<li data-i="${i}"${bitti.indexOf(i) >= 0 ? ' class="yapildi"' : ''}>
@@ -511,7 +512,7 @@
     });
     const li = el.querySelector(`.rehber-adim li[data-i="${i}"]`);
     if (li) { li.classList.add('yapildi'); const d = li.querySelector('details'); if (d) d.open = true; }
-    const bitti = U.oku('rehber_' + id, []) || [];
+    const bitti = U.diziOku('rehber_' + id);
     if (bitti.indexOf(i) < 0) { bitti.push(i); U.yaz('rehber_' + id, bitti); }
     const sahne = kap.querySelector('.sahne'); if (sahne && sahne.scrollIntoView) sahne.scrollIntoView({ block: 'nearest', behavior: azHareket ? 'auto' : 'smooth' });
   }
@@ -557,7 +558,7 @@
     DENEYLER.forEach(d => { if (!kurucu(d.id)) return; let g = gruplar.find(x => x.ad === d.grup); if (!g) { g = { ad: d.grup, ls: [] }; gruplar.push(g); } g.ls.push(d); });
     el.innerHTML = `<h1>Deneyler</h1>
       <p class="alt-baslik">Kaydırıcılarla oyna, adım adım rehberi izle: ne görmen gerektiğini ve nedenini söyler.</p>
-      ${gruplar.map(g => `<h2 class="unite-bas">${U.kacis(g.ad)}</h2><ul class="deney-liste">${g.ls.map(d => `<li><a href="#deney/${d.id}"><b>${U.kacis(d.ad)}</b><span>${U.kacis(d.oz)}</span>${(U.oku('rehber_' + d.id, []) || []).length ? `<span class="rozet iyi">${(U.oku('rehber_' + d.id, []) || []).length}/${(R[d.id] && R[d.id].adimlar.length) || 0} adım</span>` : ''}</a></li>`).join('')}</ul>`).join('')}`;
+      ${gruplar.map(g => `<h2 class="unite-bas">${U.kacis(g.ad)}</h2><ul class="deney-liste">${g.ls.map(d => `<li><a href="#deney/${d.id}"><b>${U.kacis(d.ad)}</b><span>${U.kacis(d.oz)}</span>${U.diziOku('rehber_' + d.id).length ? `<span class="rozet iyi">${U.diziOku('rehber_' + d.id).length}/${(R[d.id] && R[d.id].adimlar.length) || 0} adım</span>` : ''}</a></li>`).join('')}</ul>`).join('')}`;
   }
 
   async function ilk(kok) {

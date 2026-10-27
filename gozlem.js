@@ -9,7 +9,7 @@
     gun: null,          // seçili gece için başvuru anı (null = şimdi)
     dakika: 0,          // kaydırıcı: gecenin öğlesinden itibaren dakika
     canli: true,        // kullanıcı kaydırıcıya dokunmadıysa her dakika "şimdi"ye güncellenir
-    limitKadir: U.oku('limitKadir', 4),
+    limitKadir: (v => (Number.isFinite(v) && v >= 1.5 && v <= 6 ? v : 4))(Number(U.oku('limitKadir', 4))),   // bozuk değer haritayı boşaltmasın
     veri: null, harita: null, gece: null, gzl: null, hedefDurum: null, meteorDurum: null
   };
   let el = null;
@@ -93,7 +93,7 @@
           <label class="secim-satir"><input type="checkbox" id="gkKOto"> <span><b>Her zaman bulunduğum yeri kullan</b><br><span class="soluk kucuk">Uygulama her açıldığında ve 10 dakikada bir telefonun konumunu alır.</span></span></label>
           <div id="gkKElle">
           <button type="button" class="dugme" id="gkGps" style="width:100%;margin:12px 0 14px">Şu anki konumu bir kez al</button>
-          <div class="alan"><label for="gkKAd">Ad</label><input id="gkKAd" autocomplete="off"></div>
+          <div class="alan"><label for="gkKAd">Ad</label><input id="gkKAd" autocomplete="off" maxlength="80"></div>
           <div class="hesap-ızgara">
             <div class="alan"><label for="gkKEnlem">Enlem (°K)</label><input id="gkKEnlem" inputmode="decimal"></div>
             <div class="alan"><label for="gkKBoylam">Boylam (°D)</label><input id="gkKBoylam" inputmode="decimal"></div>
@@ -428,7 +428,7 @@
       const basM = `${yon(b)} yönünde ${U.derece(b.alt)} yükseklikte ` + ({ ufuk: 'belirir', golge: 'Dünya\'nın gölgesinden çıkıp belirir', karanlik: 'gökyüzü yeterince kararınca seçilir' }[g.basNeden] || 'belirir');
       const sonM = `${yon(s)} yönünde ${U.derece(s.alt)} ` + ({ ufuk: 'yüksekliğin altına alçalır', golge: 'yükseklikte Dünya\'nın gölgesine girip kaybolur', aydinlik: 'yükseklikte gökyüzü aydınlandığı için seçilmez olur' }[g.sonNeden] || 'yükseklikte kaybolur');
       const metin = `${aralik(b.t, s.t)} · ${basM}, en çok ${U.derece(t.alt)} (${yon(t)}), ${sonM}`;
-      const diziNot = u.dizi ? `<br><span class="kucuk">Yeni fırlatılmış ${u.dizi.adet} uydu art arda dizili noktalar hâlinde geçer; dizinin başı ile sonu arasında birkaç dakika olabilir${u.dizi.aralikDk >= 2 ? ' (bu dizide yaklaşık ' + u.dizi.aralikDk + ' dk)' : ''}. Saatler dizinin ortası içindir ve kabadır. Alçak yörüngedeyken ortalama 2,7 kadir civarındadır; yükseldikçe 6,5 kadire sönükleşir (Mallama ve ark. 2024) ve dizi genellikle ilk birkaç günde dağılır.</span>` : '';
+      const diziNot = u.dizi ? `<br><span class="kucuk">Yeni fırlatılmış ${Math.round(Number(u.dizi.adet)) || 'birçok'} uydu art arda dizili noktalar hâlinde geçer; dizinin başı ile sonu arasında birkaç dakika olabilir${Number(u.dizi.aralikDk) >= 2 ? ' (bu dizide yaklaşık ' + Math.round(Number(u.dizi.aralikDk)) + ' dk)' : ''}. Saatler dizinin ortası içindir ve kabadır. Alçak yörüngedeyken ortalama 2,7 kadir civarındadır; yükseldikçe 6,5 kadire sönükleşir (Mallama ve ark. 2024) ve dizi genellikle ilk birkaç günde dağılır.</span>` : '';
       const parlak = g.enParlak ? `En parlak ${U.kadir(g.enParlak.kadir)} kadir. ` : '';
       return `<li><span class="ad">${U.kacis(u.kisa)} · ${U.kacis(U.gunHafta(b.t))}</span><span class="sag">en çok ${U.derece(t.alt)}</span><span class="alt">${parlak}${metin}${diziNot}<br>${takvimBag({ baslik: u.kisa + ' geçişi', bas: new Date(b.t.getTime() - 60e3), son: new Date(s.t.getTime() + 60e3), aciklama: u.ad + ': ' + metin + '. (Urania, ' + k.ad + ')' })}</span></li>`;
     }).join('') : '<li><span class="bos">Önümüzdeki 5 günde buradan görünür bir geçiş yok.</span></li>';
@@ -829,7 +829,14 @@
       /* Dilim GPS'ten ya da varsayılandan gelmiyorsa boylamdan tahmin (cihazın dilimi ödünç alınmış olabilir) */
       const dilimYaklasik = !gpsDilim && !varsayilan;
       gpsDilim = null;
-      U.konumYaz({ ad: el.querySelector('#gkKAd').value.trim() || 'Özel konum', enlem, boylam, yukseklik: 0, saatDilimi, dilimYaklasik, oto: false });
+      if (!U.konumYaz({ ad: el.querySelector('#gkKAd').value.trim() || 'Özel konum', enlem, boylam, yukseklik: 0, saatDilimi, dilimYaklasik, oto: false })) {
+        /* Depo dolu: konum bu oturumda geçerli olmaz, kullanıcıya söylenir */
+        const o = el.querySelector('#gkOzet');
+        el.querySelectorAll('.konum-hata').forEach(x => x.remove());
+        o.insertAdjacentHTML('beforebegin', '<div class="hata-kutu konum-hata" role="alert">Konum kaydedilemedi: tarayıcının depolama alanı dolu ya da kapalı.</div>');
+        return;
+      }
+      el.querySelectorAll('.konum-hata').forEach(x => x.remove());
       geceHesapla(); levhaCiz();
     });
   }

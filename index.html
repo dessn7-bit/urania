@@ -3,6 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- İçerik güvenlik politikası: yalnız kendi dosyalarımız çalışır; dış bağlantı yalnız konum adı, hava ve yörünge servislerine.
+     Bir XSS açığı olsa bile satır içi betik ve olay öznitelikleri çalışmaz. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self' https://nominatim.openstreetmap.org https://api.open-meteo.com https://celestrak.org; worker-src 'self'; media-src 'self' blob:; manifest-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <title>Urania</title>
 <meta name="description" content="Gökyüzü, deneyler, dersler ve hesaplar: kişisel astrofizik defteri">
 <meta name="theme-color" content="#0F1B2D">
@@ -69,6 +72,6 @@
 <script src="./defter.js"></script>
 <script src="./gorevler.js"></script>
 <script src="./ar.js"></script>
-<script>Urania.basla();</script>
+<script src="./baslat.js"></script>
 </body>
 </html>

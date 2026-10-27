@@ -7,6 +7,15 @@
   const TAZE = 3600e3, EN_ESKI = 48 * 3600e3;
   const DEGISKEN = 'cloud_cover,cloud_cover_low,cloud_cover_mid,cloud_cover_high,relative_humidity_2m,wind_speed_10m,precipitation_probability,precipitation';
 
+  /* Yanıtın biçimi: hourly.time sayı dizisi; her değişken aynı uzunlukta, sayı ya da null dizisi */
+  function yanitGecerli(j) {
+    const h = j && j.hourly;
+    if (!h || !Array.isArray(h.time) || !h.time.length || !h.time.every(Number.isFinite)) return false;
+    return ['cloud_cover', 'cloud_cover_low', 'cloud_cover_mid', 'cloud_cover_high', 'relative_humidity_2m', 'wind_speed_10m']
+      .every(a => Array.isArray(h[a]) && h[a].length === h.time.length && h[a].every(x => x === null || Number.isFinite(x)));
+  }
+  /* Bellekte de tutulur: depo doluyken her gece değişiminde yeniden istek gitmesin */
+  const bellek = {};
   /* hava2_: yağış alanları eklendi; eski (yağışsız) önbellek kullanılmaz */
   function anahtar(enlem, boylam) { return 'hava2_' + enlem.toFixed(2) + '_' + boylam.toFixed(2); }
 
@@ -28,13 +37,14 @@
   /* Döndürür: { saatler, alindi: Date, eski: bool } ya da hata fırlatır */
   async function getir(enlem, boylam) {
     const k = anahtar(enlem, boylam);
-    const kayit = U.oku(k, null);
+    let kayit = [U.oku(k, null), bellek[k]].filter(x => x && x.j && yanitGecerli(x.j)).sort((a, b) => b.alindi - a.alindi)[0] || null;
     if (kayit && Date.now() - kayit.alindi < TAZE) return { saatler: coz(kayit.j), alindi: new Date(kayit.alindi), eski: false };
     if (Date.now() - sonHata < HATA_BEKLE) {
       if (kayit && Date.now() - kayit.alindi < EN_ESKI) return { saatler: coz(kayit.j), alindi: new Date(kayit.alindi), eski: true };
       throw new Error('servis az önce yanıt vermedi; birkaç dakika sonra yeniden denenecek');
     }
-    const url = 'https://api.open-meteo.com/v1/forecast?latitude=' + enlem.toFixed(3) + '&longitude=' + boylam.toFixed(3) +
+    /* Konum 2 basamakla (~1 km) gönderilir: önbellek hücresiyle aynı, gereğinden hassas değil */
+    const url = 'https://api.open-meteo.com/v1/forecast?latitude=' + enlem.toFixed(2) + '&longitude=' + boylam.toFixed(2) +
       '&hourly=' + DEGISKEN + '&timezone=GMT&timeformat=unixtime&forecast_days=3';
     try {
       const ctl = new AbortController();
@@ -47,10 +57,13 @@
         j = await r.json();
       } finally { clearTimeout(zs); }
       if (!j || j.error || !j.hourly) throw new Error((j && j.reason) || 'beklenmeyen yanıt');
+      /* Yapı doğrulanmadan önbelleğe yazılmaz: bozuk yanıt defter kaydını ve gece özetini bozmasın */
+      if (!yanitGecerli(j)) throw new Error('beklenmeyen yanıt biçimi');
       /* 48 saatten eski hava önbelleklerini sil (her ~1 km hücre ~3,5 KB) */
       U.anahtarlar('hava2_').forEach(a => { const x = U.oku(a, null); if (!x || Date.now() - x.alindi > EN_ESKI) U.sil(a); });
       U.anahtarlar('hava_').forEach(a => U.sil(a)); // eski biçim
-      U.yaz(k, { alindi: Date.now(), j });
+      bellek[k] = { alindi: Date.now(), j };
+      U.yaz(k, bellek[k]);
       if (window.Tani) Tani.servis('Open-Meteo (hava)', 'tamam');
       return { saatler: coz(j), alindi: new Date(), eski: false };
     } catch (e) {
@@ -86,8 +99,8 @@
 
   /* Belirli bir saatin önbellekteki tahmini (defter kaydı için) */
   function saatDegeri(enlem, boylam, zaman) {
-    const k = U.oku(anahtar(enlem, boylam), null);
-    if (!k || !k.j || !k.j.hourly) return null;
+    const k = [U.oku(anahtar(enlem, boylam), null), bellek[anahtar(enlem, boylam)]].find(x => x && x.j && yanitGecerli(x.j));
+    if (!k) return null;
     const h = k.j.hourly;
     /* Bulut anlık değer: en yakın saat. Yağış "önceki bir saat" için: o anı kapsayan saat = yukarı yuvarla */
     const ib = h.time.indexOf(Math.round(zaman.getTime() / 3600e3) * 3600);

@@ -63,7 +63,8 @@
         const p = G.sabitAltAz(cisim.ra, cisim.dec, zaman, gzl); o.alt = Math.round(p.alt); o.az = Math.round(p.az);
       }
     } catch (e) { /* konum hesaplanamadıysa kayıt yine yapılır */ }
-    const hd = window.Hava && Hava.saatDegeri(k.enlem, k.boylam, zaman);
+    let hd = null;
+    try { hd = window.Hava && Hava.saatDegeri(k.enlem, k.boylam, zaman); } catch (e) { /* bulut bilgisi olmadan da kaydedilir */ }
     if (hd) { o.bulut = hd.bulut; if (hd.yagisOl != null) o.yagisOl = hd.yagisOl; }
     return o;
   }
@@ -325,7 +326,7 @@
     return !!(k && typeof k === 'object' && KIMLIK.test(k.id) && metinMi(k.zaman, 40) && !isNaN(new Date(k.zaman)) &&
       k.cisim && metinMi(k.cisim.anahtar, 120) && metinMi(k.cisim.ad, 120) &&
       metinMi(k.alet, 40) && metinMi(k.kosul, 40) && (k.not == null || metinMi(k.not, 2000)) &&
-      k.konum && metinMi(k.konum.ad, 120) && sayiMi(k.konum.enlem) && sayiMi(k.konum.boylam) &&
+      k.konum && typeof k.konum.ad === 'string' && sayiMi(k.konum.enlem) && sayiMi(k.konum.boylam) &&
       Math.abs(k.konum.enlem) <= 90 && Math.abs(k.konum.boylam) <= 180 &&
       (k.otomatik == null || typeof k.otomatik === 'object'));
   }
@@ -334,7 +335,8 @@
     const o = k.otomatik || {}, oo = {};
     ['ayOran', 'ayAlt', 'alt', 'az', 'bulut', 'yagisOl'].forEach(a => { if (sayiMi(o[a])) oo[a] = o[a]; });
     if (metinMi(o.ayEvre, 40)) oo.ayEvre = o.ayEvre;
-    const konum = { ad: k.konum.ad, enlem: k.konum.enlem, boylam: k.konum.boylam, yukseklik: sayiMi(k.konum.yukseklik) ? k.konum.yukseklik : 0 };
+    /* Uzun konum adı reddedilmez, kırpılır (uygulamanın kendi yedeği her zaman geri yüklenebilsin) */
+    const konum = { ad: k.konum.ad.slice(0, 120), enlem: k.konum.enlem, boylam: k.konum.boylam, yukseklik: sayiMi(k.konum.yukseklik) ? k.konum.yukseklik : 0 };
     if (metinMi(k.konum.saatDilimi, 64) && gecerliDilim(k.konum.saatDilimi)) konum.saatDilimi = k.konum.saatDilimi;
     /* Zaman UTC ISO biçimine çevrilir ("+03:00" ofsetli dize sıralamayı ve "son görülme"yi bozmasın) */
     return { id: k.id, zaman: new Date(k.zaman).toISOString(), cisim: { anahtar: k.cisim.anahtar, ad: k.cisim.ad }, alet: k.alet, kosul: k.kosul, not: k.not || '',

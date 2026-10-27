@@ -36,7 +36,9 @@
     return sozler[grup];
   }
   async function grupGetirAsil(grup, anahtar, isle) {
-    const depodaki = U.oku(anahtar, null);
+    /* Depodaki kayıt beklenen biçimde değilse yok sayılır (bozuk kayıt 12 saat "taze" sayılmasın) */
+    let depodaki = U.oku(anahtar, null);
+    if (!depodaki || typeof depodaki !== 'object' || !Number.isFinite(depodaki.alindi) || (depodaki.ls !== undefined && !Array.isArray(depodaki.ls)) || (depodaki.diziler !== undefined && !Array.isArray(depodaki.diziler)) || (depodaki.ls === undefined && depodaki.diziler === undefined)) depodaki = null;
     const kayit = [depodaki, bellek[anahtar]].filter(Boolean).sort((a, b) => b.alindi - a.alindi)[0] || null;
     const hata = Math.max(U.oku(anahtar + '_hata', 0) || 0, hataBellek[anahtar] || 0);
     const kullanilir = kayit && Date.now() - kayit.alindi < EN_ESKI;
@@ -126,7 +128,7 @@
     if (yeni.status === 'fulfilled') {
       /* Diziler birkaç günde dağılır: önbellekteki veri bir günden eskiyse dizi ölçütü bugünkü konumlarla yeniden sınanır */
       const yv = yeni.value;
-      const diziler = Date.now() - yv.alindi > 86400e3 && yv.ham ? dizileriAyikla(yv.ham) : yv.diziler;
+      const diziler = Date.now() - yv.alindi > 86400e3 && Array.isArray(yv.ham) ? dizileriAyikla(yv.ham) : yv.diziler;
       diziler.forEach(d => ls.push({ id: 'dizi-' + d.kod, ad: 'Starlink dizisi (' + d.kod + ' fırlatması)', kisa: 'Starlink', omm: d.omm,
         dizi: { adet: d.adet, yukseklik: d.yukseklik, aralikDk: d.aralikDk }, alindi: yeni.value.alindi, eski: !!yeni.value.eski }));
     }

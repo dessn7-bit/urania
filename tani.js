@@ -45,7 +45,9 @@
     try { const ks = await caches.keys(); sw = ks.filter(x => x.indexOf('urania-') === 0).join(', ') || 'önbellek yok'; } catch (e) { /* yok */ }
     const ar = window.UraniaAR ? window.UraniaAR.st : null;
     const defter = (U.oku('defter', []) || []).length;
-    const gpI = U.oku('gp_istasyon', null), gpD = U.oku('gp_dizi', null);
+    let gpI = U.oku('gp_istasyon', null), gpD = U.oku('gp_dizi', null);
+    if (!gpI || !Array.isArray(gpI.ls)) gpI = null;
+    if (!gpD || !Array.isArray(gpD.diziler)) gpD = null;
     const satir = [
       'URANIA TANI — ' + new Date().toISOString(),
       'Sürüm (önbellek): ' + sw,

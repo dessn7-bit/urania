@@ -8,6 +8,8 @@
 (function () {
   'use strict';
   const G = window.Gok, U = window.Urania;
+  /* Kayıtlı hizalama sayı değilse ya da aşırıysa 0 (bozuk değer yönleri kaydırmasın) */
+  const kalOku = () => { const v = Number(U.oku('arKalibrasyon', 0)); return Number.isFinite(v) && Math.abs(v) <= 180 ? v : 0; };
   const DER = Math.PI / 180;
 
   let el = null, cv = null, ctx = null, video = null;
@@ -20,7 +22,7 @@
     sonOlay: 0,
     manyetik: true,           // α manyetik kuzeye göre mi (sapma düzeltmesi uygulanır)
     sapma: 0,                 // manyetik sapma (°, doğu +) — WMM-2025
-    kal: U.oku('arKalibrasyon', 0), // kullanıcı hizalaması (°)
+    kal: kalOku(), // kullanıcı hizalaması (°)
     az0: 180, alt0: 30,       // dokunma modunda bakış yönü
     gorus: 62,                // dikey görüş açısı (°), iki parmakla değişir
     kamera: false,
@@ -101,7 +103,7 @@
       st.R = null;
       st.manyetik = manyetik;
       /* Göreli oturumda yapılan hizalama yalnız o çerçeve içindi; kuzeye dönünce kayıtlı hizalamaya dön */
-      if (manyetik) st.kal = U.oku('arKalibrasyon', 0);
+      if (manyetik) st.kal = kalOku();
       if (st.mod === 'algilayici') durumYaz();
     }
     /* Manyetik kuzeyden gerçek kuzeye (sapma) + kullanıcı hizalaması: başlık = 360 − α */
@@ -338,7 +340,7 @@
     });
 
     /* Yıldızlar */
-    const limit = U.oku('limitKadir', 4) + (st.gorus < 40 ? 1 : 0);
+    const limit = (v => (Number.isFinite(v) && v >= 1.5 && v <= 6 ? v : 4))(Number(U.oku('limitKadir', 4))) + (st.gorus < 40 ? 1 : 0);
     const ys = veri.yildizlar.y, Y = st.nesneler.yildiz;
     const olc = Math.min(1.6, Math.max(0.8, 62 / st.gorus));
     ctx.textAlign = 'left';
@@ -822,7 +824,7 @@
     document.body.classList.add('ar-acik');
     if (window.Uydu && !st.uydular) Uydu.uydular().then(t => { st.uydular = t; st.issZaman = null; if (calisiyor) nesneleriYenile(); }).catch(() => { /* uydu verisi yoksa da çalışır */ });
     st.mod = 'bekliyor'; st.R = null; st.sapmaHesaplandi = false; st.goreliVar = false; st.goreliKabul = false; st.izinYok = false;
-    st.izinVerildi = false; st.sonMutlak = 0; st.iosOfset = null; st.manyetik = true; st.kal = U.oku('arKalibrasyon', 0);
+    st.izinVerildi = false; st.sonMutlak = 0; st.iosOfset = null; st.manyetik = true; st.kal = kalOku();
     tarifIsaret = { hedef: null, s: 0 };
     nesneleriYenile();
     sayac = setInterval(() => { nesneleriYenile(); sesliCiz(); }, 1000);

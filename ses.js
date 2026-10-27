@@ -101,6 +101,7 @@
   /* ---------- tanı günlüğü ---------- */
   let gunluk = U.oku('sesGunluk', []) || [];
   if (!Array.isArray(gunluk)) gunluk = [];
+  gunluk = gunluk.filter(g => g && typeof g === 'object' && Number.isFinite(g.t));
   function kaydet(olay, ek) {
     const g = { t: Date.now(), olay };
     if (ek !== undefined && ek !== null && ek !== '') g.ek = String(ek).slice(0, 80);

@@ -8,6 +8,9 @@
 
   /* ---- Güvenli yerel depo: gizli pencere / kapalı depo uygulamayı düşürmez ---- */
   const DEPO_ONEK = 'urania_';
+  /* Türü bilinen okuma: düz nesne ya da dizi değilse boş olanı döner (bozuk ya da başka uygulamanın yazdığı değer çökertmesin) */
+  function nesneOku(anahtar) { const v = oku(anahtar, null); return v && typeof v === 'object' && !Array.isArray(v) ? v : {}; }
+  function diziOku(anahtar) { const v = oku(anahtar, null); return Array.isArray(v) ? v : []; }
   function oku(anahtar, varsayilan) {
     try {
       const v = localStorage.getItem(DEPO_ONEK + anahtar);
@@ -15,8 +18,16 @@
     } catch (e) { return varsayilan; }
   }
   /* true: yazıldı; false: depo dolu/kapalı — çağıran kullanıcıya söylemeli (defter gibi) */
+  /* Depo dolunca (köken aynı adresteki başka uygulamalarla paylaşılıyor) yeniden indirilebilen önbellekler
+     silinip bir kez daha denenir; kullanıcı verisi (defter, kartlar, ayarlar) silinmez. */
+  const ONBELLEK_ONEK = ['gp_', 'hava2_', 'hava_', 'yerAdlari', 'sesGunluk'];
   function yaz(anahtar, deger) {
-    try { localStorage.setItem(DEPO_ONEK + anahtar, JSON.stringify(deger)); return true; } catch (e) { return false; }
+    const m = JSON.stringify(deger);
+    try { localStorage.setItem(DEPO_ONEK + anahtar, m); return true; } catch (e) { /* aşağıda */ }
+    try {
+      ONBELLEK_ONEK.forEach(o => { if (anahtar.indexOf(o) !== 0) anahtarlar(o).forEach(a => localStorage.removeItem(DEPO_ONEK + a)); });
+      localStorage.setItem(DEPO_ONEK + anahtar, m); return true;
+    } catch (e) { return false; }
   }
   /* Ön ekli anahtarları süz (önbellek temizliği için) */
   function anahtarlar(onek) {
@@ -29,10 +40,13 @@
   /* Varsayılan konum: Fetih Mahallesi, Ataşehir — OpenStreetMap (Nominatim) mahalle merkezi
      41.0046423, 29.0762052. Kullanıcı GPS ya da elle değiştirebilir. */
   const VARSAYILAN_KONUM = { ad: 'Fetih Mahallesi, Ataşehir', enlem: 41.0046, boylam: 29.0762, yukseklik: 20, saatDilimi: 'Europe/Istanbul' };
-  const dilimSonuc = {};
+  const dilimSonuc = new Map();   // Map: "constructor" gibi adlar nesne prototipine takılmasın
   function gecerliDilim(z) {
-    if (z in dilimSonuc) return dilimSonuc[z];   // konum() sık çağrılır; biçimleyici kurmak pahalı
-    try { new Intl.DateTimeFormat('tr-TR', { timeZone: z }); return (dilimSonuc[z] = true); } catch (e) { return (dilimSonuc[z] = false); }
+    if (typeof z !== 'string') return false;
+    if (dilimSonuc.has(z)) return dilimSonuc.get(z);   // konum() sık çağrılır; biçimleyici kurmak pahalı
+    let ok = false;
+    try { new Intl.DateTimeFormat('tr-TR', { timeZone: z }); ok = true; } catch (e) { ok = false; }
+    dilimSonuc.set(z, ok); return ok;
   }
   /* Bozuk/eksik kayıt uygulamayı düşürmesin: enlem/boylam sayı değilse varsayılana dön. */
   function konum() {
@@ -41,7 +55,11 @@
     if (!k.saatDilimi || !gecerliDilim(k.saatDilimi)) k.saatDilimi = VARSAYILAN_KONUM.saatDilimi;
     return k;
   }
-  function konumYaz(k) { yaz('konum', k); bicimleyicileriKur(k.saatDilimi); }
+  /* Konum adı 80 karaktere kırpılır (yedekte ve ekranda sorun çıkmasın). Yazılamazsa false döner. */
+  function konumYaz(k) {
+    const kk = Object.assign({}, k, { ad: String(k.ad || 'Özel konum').slice(0, 80) });
+    const ok = yaz('konum', kk); bicimleyicileriKur(kk.saatDilimi); return ok;
+  }
   /* Elle girilen konum için saat dilimi: cihazın dilimi boylamla uyumluysa o, değilse boylamdan (Etc/GMT±n). */
   function dilimTahmin(boylam) {
     const cihaz = Intl.DateTimeFormat().resolvedOptions().timeZone;
@@ -106,7 +124,7 @@
   }
   let saatB, gunB, gunHaftaB, tamB;
   function bicimleyicileriKur(z) {
-    const tz = z && gecerliDilim(z) ? { timeZone: z } : {};
+    const tz = z && gecerliDilim(z) ? { timeZone: z } : { timeZone: 'Europe/Istanbul' };
     saatB = new Intl.DateTimeFormat('tr-TR', Object.assign({ hour: '2-digit', minute: '2-digit' }, tz));
     gunB = new Intl.DateTimeFormat('tr-TR', Object.assign({ day: 'numeric', month: 'long' }, tz));
     gunHaftaB = new Intl.DateTimeFormat('tr-TR', Object.assign({ day: 'numeric', month: 'long', weekday: 'long' }, tz));
@@ -160,7 +178,8 @@
 
   /* Takvim dosyası (.ics, RFC 5545): telefonda açılınca takvim uygulamasına eklenir.
      Olaydan bir saat önce hatırlatma içerir. */
-  function icsKacis(t) { return String(t).replace(/\\/g, '\\\\').replace(/;/g, '\\;').replace(/,/g, '\\,').replace(/\r?\n/g, '\\n'); }
+  /* RFC 5545: tek başına CR de satır sonu sayılır; diğer denetim karakterleri silinir (başka VEVENT eklenemesin) */
+  function icsKacis(t) { return String(t).replace(/\\/g, '\\\\').replace(/;/g, '\\;').replace(/,/g, '\\,').replace(/\r\n|\r|\n/g, '\\n').replace(/[\x00-\x08\x0b-\x1f\x7f]/g, ''); }
   function icsZaman(d) { return d.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, ''); }
   /* RFC 5545: satır 75 bayttan (UTF-8) uzunsa katlanır; çok baytlı harfler bölünmez */
   function icsKatla(satir) {
@@ -211,7 +230,7 @@
   /* ---- Yönlendirme: #gok, #deney/karadelik, #ders/d3, #hesap ---- */
   function rota() {
     const h = (location.hash || '#gok').slice(1).split('/');
-    return { bolum: moduller[h[0]] ? h[0] : 'gok', param: h.slice(1).join('/') };
+    return { bolum: Object.prototype.hasOwnProperty.call(moduller, h[0]) ? h[0] : 'gok', param: h.slice(1).join('/') };
   }
   function goster() {
     const { bolum, param } = rota();
@@ -263,7 +282,7 @@
   function konumBildir() { document.dispatchEvent(new CustomEvent('urania:konum')); }
   function hucre(enlem, boylam) { return enlem.toFixed(2) + ',' + boylam.toFixed(2); }
   async function yerAdi(enlem, boylam) {
-    const adlar = oku('yerAdlari', {});
+    const adlar = nesneOku('yerAdlari');
     const h = hucre(enlem, boylam);
     if (adlar[h]) return adlar[h];
     try {
@@ -271,7 +290,8 @@
       const ctl = new AbortController(), zs = setTimeout(() => ctl.abort(), 8000);
       let r, j;
       try {
-        r = await fetch('https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=16&accept-language=tr&lat=' + enlem.toFixed(4) + '&lon=' + boylam.toFixed(4), { signal: ctl.signal });
+        /* 3 basamak (~110 m): mahalle adı için yeterli, gereğinden hassas değil */
+        r = await fetch('https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=16&accept-language=tr&lat=' + enlem.toFixed(3) + '&lon=' + boylam.toFixed(3), { signal: ctl.signal });
         if (!r.ok) { T('Nominatim (yer adı)', 'hata', 'HTTP ' + r.status); return null; }
         j = await r.json();
       } finally { clearTimeout(zs); }
@@ -281,7 +301,7 @@
       const ilce = a.town || a.city_district || a.county || a.city || a.province;
       const ad = [mahalle, ilce].filter(Boolean).join(', ');
       if (!ad) return null;
-      const yeni = oku('yerAdlari', {}); yeni[h] = ad;
+      const yeni = nesneOku('yerAdlari'); yeni[h] = ad;
       const anahtarlar = Object.keys(yeni); if (anahtarlar.length > 200) delete yeni[anahtarlar[0]];
       yaz('yerAdlari', yeni);
       return ad;
@@ -304,7 +324,7 @@
         const yeni = { enlem: +c.latitude.toFixed(4), boylam: +c.longitude.toFixed(4) };
         konumDurum.hata = null; konumDurum.kaynak = 'gps'; konumDurum.hassasiyet = c.accuracy; konumDurum.zaman = new Date();
         T('GPS konumu', 'tamam', '±' + Math.round(c.accuracy) + ' m');
-        const adOnbellek = oku('yerAdlari', {})[hucre(yeni.enlem, yeni.boylam)];
+        const adOnbellek = nesneOku('yerAdlari')[hucre(yeni.enlem, yeni.boylam)];
         if (!once.oto || mesafeKm(once, yeni) > 0.3) {
           konumYaz({ ad: adOnbellek || 'Bulunduğun yer', enlem: yeni.enlem, boylam: yeni.boylam, yukseklik: c.altitude ? Math.round(c.altitude) : 0, saatDilimi: Intl.DateTimeFormat().resolvedOptions().timeZone, oto: true });
         }
@@ -368,7 +388,7 @@
 
   window.Urania = {
     modul(ad, tanim) { moduller[ad] = tanim; },
-    basla, oku, yaz, sil, anahtarlar, konum, konumYaz, VARSAYILAN_KONUM, konumuBul, konumDurum, otoAcik, otoAyarla, dilimTahmin, dilimAdi, veri, betikler, guvenliUrl, icsMetni, icsIndir, ek,
+    basla, oku, nesneOku, diziOku, yaz, sil, anahtarlar, konum, konumYaz, VARSAYILAN_KONUM, konumuBul, konumDurum, otoAcik, otoAyarla, dilimTahmin, dilimAdi, veri, betikler, guvenliUrl, icsMetni, icsIndir, ek,
     sayi, bilimsel, saat, gun, gunHafta, tamTarih, kadir, derece, kacGun, kacis
   };
 })();
