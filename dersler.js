@@ -12,7 +12,10 @@
     d3: { href: '#deney/yorunge', ad: 'Yörünge atışı deneyi' },
     d5: { href: '#deney/yildiz', ad: 'Yıldızın hayatı deneyi' },
     d6: { href: '#deney/karadelik', ad: 'Kara deliğe yaklaşmak deneyi' },
-    d8: { href: '#deney/gorelilik', ad: 'Işığa yakın yolculuk deneyi' }
+    d8: { href: '#deney/gorelilik', ad: 'Işığa yakın yolculuk deneyi' },
+    d9: { href: '#gok', ad: 'Bu gece hangi gezegenler görünüyor?' },
+    d10: { href: '#gok', ad: 'Ay\'ın bu geceki evresi ve doğuş-batış saatleri' },
+    d11: { href: '#ar', ad: 'Telefonu gökyüzüne tut ve bir dürbün hedefi bul' }
   };
 
   function biten() { return U.oku('dersBitti', {}); }

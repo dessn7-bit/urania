@@ -21,7 +21,8 @@ def cevir(x):
     if isinstance(x, dict): return {k: (cevir(v) if k not in ('kaynak_url', 'url') else v) for k, v in x.items()}
     return x
 dersler = []
-for f in ('dersler_1_4.json', 'dersler_5_8.json'):
+for f in ('dersler_1_4.json', 'dersler_5_8.json', 'dersler_9_11.json'):
+    if not os.path.exists(os.path.join(K, 'arastirma', f)): continue
     dersler += json.load(open(os.path.join(K, 'arastirma', f), encoding='utf-8'))
 dersler = cevir(dersler)
 kalan = set(re.findall(r'\b\w+(?:ınız|iniz|unuz|ünüz|sanız|seniz|sınız|siniz)\b', json.dumps(dersler, ensure_ascii=False)))

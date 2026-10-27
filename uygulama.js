@@ -244,7 +244,17 @@
     return konumAraniyor;
   }
 
+  /* Kaydırıcıların dolu kısmı (Chrome'da yerleşik değil): --dolu yüzdesi */
+  function kaydiriciDoldur(r) {
+    const min = Number(r.min || 0), max = Number(r.max || 100);
+    r.style.setProperty('--dolu', ((Number(r.value) - min) / (max - min) * 100).toFixed(2) + '%');
+  }
+  function kaydiricilariDoldur() { document.querySelectorAll('input[type="range"]').forEach(kaydiriciDoldur); }
+
   function basla() {
+    document.addEventListener('input', e => { if (e.target.matches && e.target.matches('input[type="range"]')) kaydiriciDoldur(e.target); });
+    new MutationObserver(() => kaydiricilariDoldur()).observe(document.body, { childList: true, subtree: true });
+    setInterval(kaydiricilariDoldur, 1000); // değer koddan değiştiğinde (ör. saat ilerleyince)
     kirmiziUygula(!!oku('kirmizi', false));
     document.getElementById('kirmiziDugme').addEventListener('click', () => {
       const yeni = !document.documentElement.classList.contains('kirmizi');

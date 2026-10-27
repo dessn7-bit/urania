@@ -163,7 +163,7 @@ a.dugme { text-decoration: none; }
 .zaman-kontrol .etiket b { color: var(--parsomen); font-weight: 600; font-size: 16px; }
 /* Kaydırıcılar: tarayıcının açık renkli izi kırmızı modda göz alırdı; iz ve tutamaç değişkenlerden. */
 input[type="range"] { -webkit-appearance: none; appearance: none; width: 100%; height: 32px; background: transparent; cursor: pointer; }
-input[type="range"]::-webkit-slider-runnable-track { height: 4px; border-radius: 2px; background: var(--levha-2); }
+input[type="range"]::-webkit-slider-runnable-track { height: 4px; border-radius: 2px; background: linear-gradient(to right, var(--pirinc) var(--dolu, 0%), var(--levha-2) var(--dolu, 0%)); }
 input[type="range"]::-moz-range-track { height: 4px; border-radius: 2px; background: var(--levha-2); }
 input[type="range"]::-moz-range-progress { height: 4px; border-radius: 2px; background: var(--pirinc); }
 input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; width: 22px; height: 22px; margin-top: -9px; border-radius: 50%; background: var(--pirinc); border: 3px solid var(--gece); }
