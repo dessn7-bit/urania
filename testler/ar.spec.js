@@ -1,7 +1,7 @@
 'use strict';
 /* "Gökyüzüne bak" (AR) testleri. Yön olayları W3C DeviceOrientation anlamıyla üretilir:
    β=90° telefon dik (arka kamera ufka bakar), α saat yönünün TERSİNE artar (α=90° → batı).
-   Pusula manyetik kuzeye göre kabul edilir; Kadıköy için WMM-2025 sapması +6,08° (NOAA
+   Pusula manyetik kuzeye göre kabul edilir; Fetih Mah. (Ataşehir) için WMM-2025 sapması +6,09° (Kadıköy +6,08°) (NOAA
    hesaplayıcısıyla aynı: ngdc.noaa.gov/geomag-web, 2026-10-27) eklenir. */
 const { test, expect } = require('@playwright/test');
 

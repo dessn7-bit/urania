@@ -84,7 +84,7 @@
           </div>
           <p class="soluk kucuk" id="gkKDurum"></p>
           <div class="cip-grup" style="justify-content:space-between">
-            <button type="button" class="dugme" id="gkKSifirla">Kadıköy'e dön</button>
+            <button type="button" class="dugme" id="gkKSifirla">Varsayılana dön (Fetih Mah.)</button>
             <span class="cip-grup"><button value="iptal" class="dugme">Vazgeç</button><button value="kaydet" class="dugme dolu" id="gkKKaydet">Kaydet</button></span>
           </div>
         </form>

@@ -18,8 +18,9 @@
     try { localStorage.setItem(DEPO_ONEK + anahtar, JSON.stringify(deger)); } catch (e) { /* depo yoksa ayar bu oturumla sınırlı kalır */ }
   }
 
-  /* Varsayılan konum: Kadıköy merkez (yaklaşık). Kullanıcı GPS ya da elle değiştirebilir. */
-  const VARSAYILAN_KONUM = { ad: 'Kadıköy, İstanbul', enlem: 40.990, boylam: 29.029, yukseklik: 20, saatDilimi: 'Europe/Istanbul' };
+  /* Varsayılan konum: Fetih Mahallesi, Ataşehir — OpenStreetMap (Nominatim) mahalle merkezi
+     41.0046423, 29.0762052. Kullanıcı GPS ya da elle değiştirebilir. */
+  const VARSAYILAN_KONUM = { ad: 'Fetih Mahallesi, Ataşehir', enlem: 41.0046, boylam: 29.0762, yukseklik: 20, saatDilimi: 'Europe/Istanbul' };
   function gecerliDilim(z) {
     try { new Intl.DateTimeFormat('tr-TR', { timeZone: z }); return true; } catch (e) { return false; }
   }
