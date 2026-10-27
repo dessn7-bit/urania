@@ -49,6 +49,14 @@
       o = o || {};
       return `<text x="${n(x)}" y="${n(y)}" font-family="var(--sans)" font-size="${o.boy || 15}" text-anchor="${o.hiza || 'start'}" fill="${o.renk || R.metin}"${o.kalin ? ' font-weight="600"' : ''}${o.yan ? ` transform="rotate(${o.yan} ${n(x)} ${n(y)})"` : ''}${o.italik ? ' font-style="italic"' : ''}>${kac(metin)}</text>`;
     },
+    /* Zeminli yazı: renkli/yarı saydam alanın üstündeki etiket okunaklı olsun (WCAG 1.4.3) diye arkasına yüzey renginde
+       küçük bir levha. o.zemin: levha rengi (varsayılan yüzey). Genişlik yazı boyundan kestirilir (Plex ~0,52 em). */
+    zeminliYazi: (x, y, metin, o) => {
+      o = o || {};
+      const boy = o.boy || 15, w = String(metin).length * boy * (o.kalin ? 0.56 : 0.52) + 10, h = boy + 6;
+      const x0 = o.hiza === 'middle' ? x - w / 2 : o.hiza === 'end' ? x - w + 5 : x - 5;
+      return S.kutu(x0, y - boy - 1, w, h, { dolgu: o.zemin || R.yuzey, renk: 'none' }, 3) + S.yazi(x, y, metin, o);
+    },
     /* ok: (x1,y1) → (x2,y2), uçta üçgen */
     ok: (x1, y1, x2, y2, o) => {
       o = Object.assign({ renk: R.vurgu, kalin: 2, boy: 10 }, o || {});

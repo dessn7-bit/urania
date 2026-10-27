@@ -39,12 +39,15 @@
     return { ctx, w, h };
   }
 
+  /* Kaydırıcının adı yalnız etiket metni (aria-labelledby); değer çıktı kutusundan aria-valuetext'e yazılır */
   function kaydirici(id, etiket, min, max, adim, deger) {
-    return `<div class="kontrol"><label for="${id}"><span>${etiket}</span><output id="${id}Cikti"></output></label>
-      <input type="range" id="${id}" min="${min}" max="${max}" step="${adim}" value="${deger}"></div>`;
+    return `<div class="kontrol"><label for="${id}"><span id="${id}Ad">${etiket}</span><output id="${id}Cikti"></output></label>
+      <input type="range" id="${id}" aria-labelledby="${id}Ad" min="${min}" max="${max}" step="${adim}" value="${deger}"></div>`;
   }
+  /* ls: [kimlik, ad, canli]. canli: animasyonla her karede değişen ölçüm; canlı bölgeye girmez
+     (ekran okuyucu saniyede onlarca kez konuşmasın) */
   function olcumler(ls) {
-    return '<dl class="olcumler">' + ls.map(([id, ad]) => `<div><dt>${ad}</dt><dd id="${id}">—</dd></div>`).join('') + '</dl>';
+    return '<dl class="olcumler">' + ls.map(([id, ad, canli]) => `<div${canli ? ' data-canli' : ''}><dt>${ad}</dt><dd id="${id}">—</dd></div>`).join('') + '</dl>';
   }
   function kaynakSatiri(anahtarlar, ek) {
     const gor = new Set();
@@ -541,7 +544,13 @@
     const guncelle = () => {
       bekliyor = false;
       kap.querySelectorAll('input[type=range]').forEach(g => { const o = kap.querySelector('#' + g.id + 'Cikti'); if (o && o.textContent) g.setAttribute('aria-valuetext', o.textContent); });
-      kap.querySelectorAll('dl.olcumler:not([aria-live])').forEach(d => d.setAttribute('aria-live', 'polite'));
+      /* Her ölçüm kendi canlı bölgesi: değişen ölçüm adıyla birlikte duyurulur. Her karede değişen (data-canli)
+         ölçümler yalnız azaltılmış harekette (değer yalnız kullanıcı kaydırınca değişir) duyurulur. */
+      kap.querySelectorAll('dl.olcumler > div:not([aria-live])').forEach(d => {
+        const canli = d.hasAttribute('data-canli') && !azHareket;
+        d.setAttribute('aria-live', canli ? 'off' : 'polite');
+        if (!canli) d.setAttribute('aria-atomic', 'true');
+      });
       kap.querySelectorAll('canvas:not([role])').forEach(c => { c.setAttribute('role', 'img'); c.setAttribute('aria-label', ad + ': canlı çizim; değerler aşağıdaki ölçüm kutularında'); });
     };
     const iste = () => { if (!bekliyor) { bekliyor = true; requestAnimationFrame(guncelle); } };

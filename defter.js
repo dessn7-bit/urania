@@ -144,7 +144,7 @@
         <h2 id="dfFormBaslik" style="margin-top:20px">Yeni kayıt</h2>
         <div class="alan"><label for="dfCisim">Ne gördün?</label>
           <select id="dfCisim">${Object.keys(gruplar).map(g => `<optgroup label="${U.kacis(g)}">${gruplar[g].map(x => `<option value="${U.kacis(x.anahtar)}">${U.kacis(x.ad)}</option>`).join('')}</optgroup>`).join('')}<optgroup label="Başka"><option value="diger">Listede yok (kendim yazacağım)</option></optgroup></select></div>
-        <div class="alan" id="dfDigerAlan" hidden><label for="dfDiger">Cismin adı</label><input id="dfDiger" maxlength="80" autocomplete="off"></div>
+        <div class="alan" id="dfDigerAlan" hidden><label for="dfDiger">Cismin adı</label><input id="dfDiger" maxlength="80" autocomplete="off"><p class="alan-hata" id="dfDigerHata" hidden>Listede olmayan cismin adını yaz.</p></div>
         <div class="alan"><label for="dfZaman">Ne zaman?</label><input id="dfZaman" type="datetime-local"></div>
         <div class="defter-iki">
           <div class="alan"><label for="dfAlet">Neyle?</label><select id="dfAlet">${ALETLER.map(a => `<option>${a}</option>`).join('')}</select></div>
@@ -169,7 +169,7 @@
     el.querySelector('#dfIndir').addEventListener('click', yedekIndir);
     el.querySelector('#dfYukle').addEventListener('change', yedekYukle);
     el.querySelector('#dfYukleDugme').addEventListener('click', () => el.querySelector('#dfYukle').click());
-    el.querySelector('#dfDiger').addEventListener('input', e => { if (e.target.value.trim()) e.target.removeAttribute('aria-invalid'); });
+    el.querySelector('#dfDiger').addEventListener('input', e => { if (e.target.value.trim()) adHatasi(false); });
   }
 
   function formAc(kayit, onAnahtar) {
@@ -182,7 +182,7 @@
       sec.value = 'diger'; el.querySelector('#dfDiger').value = kayit ? kayit.cisim.ad : '';
     } else { sec.value = anahtar; el.querySelector('#dfDiger').value = ''; }
     el.querySelector('#dfDigerAlan').hidden = sec.value !== 'diger';
-    el.querySelector('#dfDiger').removeAttribute('aria-invalid');
+    adHatasi(false);
     formDilim = kayit ? kayitDilimi(kayit) : U.konum().saatDilimi;
     el.querySelector('#dfZaman').value = yerelGirdi(kayit ? new Date(kayit.zaman) : new Date(), formDilim);
     secDeger(el.querySelector('#dfAlet'), kayit ? kayit.alet : U.oku('defterSonAlet', '7×50 dürbün'));
@@ -195,6 +195,13 @@
     f.hidden = false;
     el.querySelector('#dfYeni').hidden = true;
     sec.focus();
+  }
+  /* "Listede yok" seçili ve ad boşken: görünür hata metni, girdiye aria-invalid ve aria-describedby */
+  function adHatasi(goster) {
+    const g = el.querySelector('#dfDiger'), h = el.querySelector('#dfDigerHata');
+    h.hidden = !goster;
+    if (goster) { g.setAttribute('aria-invalid', 'true'); g.setAttribute('aria-describedby', 'dfDigerHata'); }
+    else { g.removeAttribute('aria-invalid'); g.removeAttribute('aria-describedby'); }
   }
   function formKapat() {
     el.querySelector('#dfForm').hidden = true;
@@ -216,13 +223,13 @@
     let cisim;
     if (secim === 'diger') {
       const ad = el.querySelector('#dfDiger').value.trim();
-      if (!ad) { el.querySelector('#dfDiger').focus(); el.querySelector('#dfDiger').setAttribute('aria-invalid', 'true'); return; }
+      if (!ad) { adHatasi(true); el.querySelector('#dfDiger').focus(); return; }
       cisim = { anahtar: 'diger:' + ad.toLocaleLowerCase('tr-TR'), ad };
     } else {
       const c = katalogBul(secim);
       cisim = { anahtar: c.anahtar, ad: c.ad, ra: c.ra, dec: c.dec, cisimAd: c.cisimAd };
     }
-    el.querySelector('#dfDiger').removeAttribute('aria-invalid');
+    adHatasi(false);
     const zStr = el.querySelector('#dfZaman').value;
     const zaman = zStr ? girdiOku(zStr, formDilim || U.konum().saatDilimi) : new Date();
     if (isNaN(zaman)) { el.querySelector('#dfZaman').focus(); return; }
@@ -263,7 +270,11 @@
     const k = ls.find(x => x.id === b.dataset.id); if (!k) return;
     if (b.dataset.is === 'duzenle') { formAc(k); window.scrollTo({ top: 0 }); }
     if (b.dataset.is === 'sil') {
-      if (b.dataset.onay !== '1') { b.dataset.onay = '1'; b.textContent = 'Silmek için tekrar bas'; setTimeout(() => { if (b.isConnected) { b.dataset.onay = ''; b.textContent = 'Sil'; } }, 4000); return; }
+      if (b.dataset.onay !== '1') {
+        b.dataset.onay = '1'; b.textContent = 'Silmek için tekrar bas'; b.setAttribute('aria-label', k.cisim.ad + ' kaydını silmek için tekrar bas');
+        setTimeout(() => { if (b.isConnected) { b.dataset.onay = ''; b.textContent = 'Sil'; b.setAttribute('aria-label', k.cisim.ad + ' kaydını sil'); } }, 4000);
+        return;
+      }
       if (!kaydet(ls.filter(x => x.id !== k.id))) {
         uyari(el.querySelector('#dfListe'), 'beforebegin', 'Silinemedi: telefonun bu site için ayrılan depolama alanı dolu ya da kapalı.');
         return;
@@ -306,7 +317,7 @@
         if (o.yagisOl != null && o.yagisOl > 0) parca.push('yağış olasılığı %' + o.yagisOl);
         return `<li data-id="${U.kacis(k.id)}" tabindex="-1"><span class="ad">${U.kacis(k.cisim.ad)}</span><span class="sag kucuk soluk">${U.kacis(k.konum.ad || '')}</span>
           <span class="alt">${parca.map(U.kacis).join(' · ')}${k.not ? `<span class="defter-not">${U.kacis(k.not)}</span>` : ''}
-          <span class="cip-grup" style="margin-top:6px"><button type="button" class="bag" data-is="duzenle" data-id="${U.kacis(k.id)}">Düzenle</button><button type="button" class="bag" data-is="sil" data-id="${U.kacis(k.id)}">Sil</button></span></span></li>`;
+          <span class="cip-grup" style="margin-top:6px"><button type="button" class="bag" data-is="duzenle" data-id="${U.kacis(k.id)}" aria-label="${U.kacis(k.cisim.ad)} kaydını düzenle">Düzenle</button><button type="button" class="bag" data-is="sil" data-id="${U.kacis(k.id)}" aria-label="${U.kacis(k.cisim.ad)} kaydını sil">Sil</button></span></span></li>`;
       }).join('')}</ul>`).join('');
   }
 

@@ -444,7 +444,7 @@
       s += S.yazi(mx, cy - 16, 'Ay', { boy: 13, hiza: 'middle' });
       s += S.yazi(dX + 8, cy + 5, 'Dünya', { boy: 13, hiza: 'middle' });
       s += S.daire(g1.tepe, cy, 3, { dolgu: R.uyari, renk: R.uyari });
-      s += S.cizgi(g1.tepe, cy + 4, 282, cy + 56, { renk: R.uyari, kalin: 1 }) + S.yazi(286, cy + 62, 'tam tutulma', { boy: 13, renk: R.uyari, kalin: true });
+      s += S.cizgi(g1.tepe, cy + 4, 282, cy + 56, { renk: R.uyari, kalin: 1 }) + S.zeminliYazi(286, cy + 62, 'tam tutulma', { boy: 13, renk: R.uyari, kalin: true });   // ışık bandı üstünde 3,87:1 idi
       const yu = g1.yay[3];
       s += S.cizgi(yu[0] - 2, yu[1] - 2, 238, cy - 50, { renk: R.metin, kalin: 1 }) + S.yazi(234, cy - 54, 'parçalı tutulma', { boy: 13, hiza: 'end' });
       s += S.yazi(12, cy + 64, 'Güneş', { boy: 13, renk: R.gunes });

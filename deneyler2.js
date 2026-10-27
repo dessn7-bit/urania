@@ -65,7 +65,9 @@
   function onAyarDugme(U, ls, id) { return `<div class="cip-grup" id="${id}">${ls.map((x, i) => `<button type="button" class="dugme" data-i="${i}">${U.kacis(x.ad)}</button>`).join('')}</div>`; }
   /* Azaltılmış hareket tercihinde animasyon yerine elle zaman kaydırıcısı */
   function zamanHtml(o, id, etiket) { return o.azHareket ? o.kaydirici(id, etiket, 0, 1, 'any', 0) : ''; }
-  function zamanOku(kap, id) { const g = kap.querySelector('#' + id); if (!g) return null; const o = kap.querySelector('#' + id + 'Cikti'); if (o) o.textContent = '%' + Math.round(Number(g.value) * 100); return Number(g.value); }
+  /* Her karede çağrılan yazımlar: metin aynıysa düğüme dokunma (ekran okuyucu aynı değeri yeniden okumasın) */
+  function yazDegisirse(e, metin) { if (e && e.textContent !== metin) e.textContent = metin; }
+  function zamanOku(kap, id) { const g = kap.querySelector('#' + id); if (!g) return null; yazDegisirse(kap.querySelector('#' + id + 'Cikti'), '%' + Math.round(Number(g.value) * 100)); return Number(g.value); }
   function yukleniyor(kap) { kap.innerHTML = '<p class="bos">Deney hazırlanıyor…</p>'; }
   function veriHata(kap, U, e) { kap.innerHTML = '<div class="hata-kutu">Deney verisi yüklenemedi: ' + U.kacis(e.message) + '</div>'; }
   /* Kurucular eşzamansız veriye bağlı: durdur() kurulum bitmeden çağrılırsa döngü hiç başlamasın */
@@ -91,7 +93,7 @@
           ${zamanHtml(o, 'kpZaman', 'Yörüngede zaman (bir turun yüzdesi)')}
           <label class="secim-satir kucuk"><input type="checkbox" id="kpAlan" checked> <span>Eşit sürede taranan alanları göster (dolanım süresinin 12'de biri)</span></label>
         </div>
-        ${o.olcumler([['kpP', 'Dolanım süresi (P² = a³)'], ['kpQ', 'Güneş\'e en yakın / en uzak'], ['kpVq', 'Hız: en yakında / en uzakta'], ['kpV', 'Şu anki hız'], ['kpR', 'Şu anki uzaklık']])}
+        ${o.olcumler([['kpP', 'Dolanım süresi (P² = a³)'], ['kpQ', 'Güneş\'e en yakın / en uzak'], ['kpVq', 'Hız: en yakında / en uzakta'], ['kpV', 'Şu anki hız', true], ['kpR', 'Şu anki uzaklık', true]])}
         <p class="kaynak">Hız vis-viva bağıntısıyla: v² = GM☉(2/r − 1/a). ${o.kaynakSatiri(['GM_gunes', 'au']).replace(/^<p class="kaynak">|<\/p>$/g, '')} · Örnek yörüngeler: ${kaynakLink(U, cis.map(c => ({ ad: c.kaynak, url: c.url })).filter((x, i, a) => a.findIndex(y => y.url === x.url) === i))}</p>`;
       const cv = kap.querySelector('#kpKanvas'), aS = kap.querySelector('#kpA'), eS = kap.querySelector('#kpE'), alanK = kap.querySelector('#kpAlan');
       let st = {}, faz = 0;
@@ -137,8 +139,9 @@
         ctx.fillStyle = o.renk('--soluk'); ctx.font = '500 11px Plex, sans-serif'; ctx.textAlign = 'center';
         ctx.fillText('enberi', X(a * (1 - e)) + 0, cy + 16);
         ctx.fillText('enöte', X(-a * (1 + e)), cy + 16);
-        kap.querySelector('#kpV').textContent = U.sayi(H.visViva(GM, p.r * AU, a * AU) / 1e3, 1) + ' km/s';
-        kap.querySelector('#kpR').textContent = U.sayi(p.r, 3) + ' AB';
+        /* her karede değişir: yalnız metin değiştiyse yazılır (azaltılmış harekette aynı değer yeniden duyurulmasın) */
+        yazDegisirse(kap.querySelector('#kpV'), U.sayi(H.visViva(GM, p.r * AU, a * AU) / 1e3, 1) + ' km/s');
+        yazDegisirse(kap.querySelector('#kpR'), U.sayi(p.r, 3) + ' AB');
       }
       aS.addEventListener('input', hesapla); eS.addEventListener('input', hesapla);
       kap.querySelector('#kpOn').addEventListener('click', ev => {

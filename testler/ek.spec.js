@@ -157,7 +157,7 @@ test('Gözlem görevleri: ay aralığı yazımı (Aralık→Ocak sarması dahil)
 
 test('İnceleme bulguları: sınav adresi doğrudan açılır; ders bağlantısından geri dönünce sınav sürer; sonuç bir kez kaydedilir', async ({ page }) => {
   await page.goto('/index.html#ders/sinav/evren');
-  await expect(page.locator('h1')).toHaveText('Ünite sınavı');
+  await expect(page.locator('h1')).toHaveText(/^Ünite sınavı: \S/);   // h1 ünite adını da içerir (erişilebilirlik bulgusu 13)
   await page.locator('.sinav-secenek button').first().click();
   await page.locator('#snSonraki').click();
   await expect(page.locator('.kucuk.soluk').first()).toContainText('Soru 2 / 12');

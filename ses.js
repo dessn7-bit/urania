@@ -304,8 +304,16 @@
     const html = cubukHtml() + taniHtml();
     if (c.dataset.soHtml === html) return;
     const acik = !!c.querySelector('details.so-tani[open]');
+    /* Basılan düğme (Dinle → Duraklat → Devam) yeniden çizimde silinir: odak body'ye düşmesin, eşdeğerine geçsin */
+    const odak = document.activeElement && c.contains(document.activeElement) ? document.activeElement : null;
+    const odakSo = odak && odak.dataset.so, odakSinif = odak && (odak.matches('.so-hiz') ? '.so-hiz' : odak.matches('details.so-tani > summary') ? 'details.so-tani > summary' : null);
     c.innerHTML = html; c.dataset.soHtml = html;
     if (acik) { const d = c.querySelector('details.so-tani'); if (d) d.open = true; }
+    if (odak) {
+      const yeni = (odakSo && c.querySelector('[data-so="' + odakSo + '"]')) || (odakSinif && c.querySelector(odakSinif)) ||
+        c.querySelector('.so-btn') || c.querySelector('.so-hiz');
+      if (yeni) yeni.focus({ preventScroll: true });
+    }
   }
 
   /* kap içindeki .okunur blokları sesli okunur (data-ses varsa o metin); cubuk kontrollerin konacağı öğe.

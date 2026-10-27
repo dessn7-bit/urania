@@ -219,7 +219,8 @@
   const HARF = ['A', 'B', 'C', 'D', 'E'];
   function sinavCiz(u) {
     const o = sinavOturum, q = o.sira[o.i];
-    const ust = `<a class="geri" href="#ders">Tüm dersler</a><h1>Ünite sınavı</h1><p class="alt-baslik">${U.kacis(u.ad)}</p>`;
+    /* h1 ünite adını da söyler (sayfa başlığı ve ekran okuyucu hangi sınavda olduğunu bilsin) */
+    const ust = `<a class="geri" href="#ders">Tüm dersler</a><h1>Ünite sınavı: ${U.kacis(u.ad)}</h1>`;
     if (!q) {
       const yanlis = o.sira.filter(x => o.cevap[x.id] !== x.dogru);
       const sonuc = sinavSonuclari();

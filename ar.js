@@ -727,7 +727,8 @@
   function iskelet() {
     el.innerHTML = `
       <video id="arVideo" class="ar-video" playsinline muted hidden></video>
-      <canvas id="arKanvas" class="ar-kanvas" aria-label="Telefonun baktığı yöndeki gökyüzü"></canvas>
+      <h1 class="gorsel-gizli">Gökyüzüne bak</h1>
+      <canvas id="arKanvas" class="ar-kanvas" role="img" aria-label="Telefonun baktığı yöndeki gökyüzü"></canvas>
       <div class="ar-ust">
         <a class="ar-kapat" href="#gok" aria-label="Kapat">×</a>
         <span class="cip-grup">

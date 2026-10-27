@@ -240,6 +240,9 @@
     });
     const el = document.getElementById('b-' + bolum);
     const yeniBolum = rota.son !== bolum, ilkAcilis = rota.son === undefined;
+    /* Bölüm içi gezinme (#deney → #deney/kepler, #defter/gorevler, geri tuşu): görünüm değişir, odak kaybolabilir */
+    const yeniGorunum = !yeniBolum && rota.sonParam !== param;
+    rota.sonParam = param;
     if (yeniBolum) { window.scrollTo(0, 0); rota.son = bolum; }
     el.querySelectorAll(':scope > .hata-kutu.bolum-hata').forEach(x => x.remove());
     const m = moduller[bolum];
@@ -260,12 +263,41 @@
       m.goster && m.goster(el, param);
     } catch (e) { hataGoster(e); }
     /* Sekme değişince odak yeni bölümün başlığına (ekran okuyucu yeni sayfayı duyurur); bölüm kendi odağını kurduysa dokunma */
-    if (yeniBolum && !ilkAcilis && bolum !== 'ar' && !el.contains(document.activeElement)) {
-      const h = el.querySelector('h1');
-      if (h) { if (!h.hasAttribute('tabindex')) h.setAttribute('tabindex', '-1'); h.focus({ preventScroll: true }); }
+    if (yeniBolum && !ilkAcilis && bolum !== 'ar' && !el.contains(document.activeElement)) baslikOdak(el);
+    /* Bölüm içinde görünüm değiştiyse ve görünüm kendi odağını kurmadıysa (ders ve sınav kurar) odak yeni başlığa.
+       Görünüm eşzamansız çizilirse (ilk açılış) ilk çizimden sonra bir kez daha bakılır. */
+    if (yeniGorunum && bolum !== 'ar') {
+      const bak = () => { if (rota.sonParam === param && (!el.contains(document.activeElement) || document.activeElement === el)) baslikOdak(el); };
+      bak();
+      setTimeout(bak, 0);
     }
-    document.title = 'Urania — ' + ({ gok: 'Gökyüzü', deney: 'Deneyler', ders: 'Dersler', hesap: 'Hesap', defter: 'Defter', ar: 'Gökyüzüne bak', tani: 'Tanı' }[bolum]);
+    baslikYaz();
   }
+  function baslikOdak(el) {
+    const h = el.querySelector('h1');
+    if (h) { if (!h.hasAttribute('tabindex')) h.setAttribute('tabindex', '-1'); h.focus({ preventScroll: true }); }
+  }
+  /* Sayfa başlığı alt görünümü de söyler: "Urania — Deneyler — Kepler yasaları" (h1 metninden).
+     Görünümler eşzamansız çizildiği için bölümlerdeki değişiklikte de güncellenir. */
+  const BOLUM_AD = { gok: 'Gökyüzü', deney: 'Deneyler', ders: 'Dersler', hesap: 'Hesap', defter: 'Defter', ar: 'Gökyüzüne bak', tani: 'Tanı' };
+  function baslikYaz() {
+    const { bolum, param } = rota();
+    let t = 'Urania — ' + BOLUM_AD[bolum];
+    if (param) {
+      const h = document.querySelector('#b-' + bolum + ' h1');
+      const ad = h && h.textContent.replace(/\s+/g, ' ').trim();
+      if (ad && ad !== BOLUM_AD[bolum]) t += ' — ' + ad;
+    }
+    if (document.title !== t) document.title = t;
+  }
+  let baslikBekliyor = false;
+  const baslikGozcu = new MutationObserver(() => {
+    if (baslikBekliyor) return;
+    baslikBekliyor = true;
+    setTimeout(() => { baslikBekliyor = false; baslikYaz(); }, 0);
+  });
+  /* Yalnız bölümlerin doğrudan çocukları (görünümler innerHTML ile yeniden çizilir); kare kare değişen ölçümler tetiklemez */
+  document.querySelectorAll('.bolum').forEach(s => baslikGozcu.observe(s, { childList: true }));
 
   /* ---- Otomatik konum: telefon nerdeyse orası (varsayılan açık) ----
      Başarısız olursa son bilinen konum, o da yoksa varsayılan kullanılır.

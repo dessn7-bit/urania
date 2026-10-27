@@ -27,7 +27,9 @@
     return `<div class="alan"><label for="${id}">${etiket}</label><select id="${id}">${secenekler.map(([v, a]) => `<option value="${v}"${v === secili ? ' selected' : ''}>${a}</option>`).join('')}</select></div>`;
   }
   function sonuc(id) { return `<div class="sonuc" id="${id}" aria-live="polite"></div>`; }
-  function hata(m) { return `<span class="ek" style="color:var(--uyari)">${m}</span>`; }
+  /* gecersizler: hataya yol açan girdi kimlikleri; bu girdiler aria-invalid olur ve sonuç kutusuna (hata metni) bağlanır */
+  let gecersiz = [];
+  function hata(m, gecersizler) { if (gecersizler) gecersiz = gecersiz.concat(gecersizler); return `<span class="ek" style="color:var(--uyari)">${m}</span>`; }
 
   /* Uzunluk birimleri (metre) */
   function birimler() {
@@ -49,7 +51,7 @@
       html: () => `<div class="hesap-ızgara">${giris('uzD', 'Değer', '1')}${secim('uzB', 'Birim', [['km', 'km'], ['au', 'AB'], ['ly', 'ışık yılı'], ['pc', 'parsek']], 'pc')}</div>${sonuc('uzS')}`,
       hesap() {
         const v = oku('uzD'), B = birimler(), b = el.querySelector('#uzB').value;
-        if (!(v > 0)) return hata('Pozitif bir sayı yaz.');
+        if (!(v > 0)) return hata('Pozitif bir sayı yaz.', ['uzD']);
         const m = v * B[b].m;
         const isik = m / d('c');
         return `<b>${U.bilimsel(m / 1e3, 4)} km</b><span class="ek">= ${U.bilimsel(m / B.au.m, 4)} AB = ${U.bilimsel(m / B.ly.m, 4)} ışık yılı = ${U.bilimsel(m / B.pc.m, 4)} parsek</span><span class="ek">Işık bu yolu ${sure(isik)} alır.</span>`;
@@ -67,7 +69,7 @@
         let M, R, ref = null;
         if (sec === 'ozel') {
           M = oku('kuM') * d('M_dunya'); R = oku('kuR') * 1e3;
-          if (!(M > 0 && R > 0)) return hata('Kütle ve yarıçap pozitif olmalı.');
+          if (!(M > 0 && R > 0)) return hata('Kütle ve yarıçap pozitif olmalı.', [!(M > 0) && 'kuM', !(R > 0) && 'kuR']);
         } else {
           const g = F.gezegenler.find(x => x.ad === sec);
           M = g.kutle_kg; R = g.yaricap_km * 1e3; ref = g;
@@ -86,7 +88,7 @@
       html: () => `<div class="hesap-ızgara">${giris('swM', 'Kütle', '1')}${secim('swB', 'Birim', [['kg', 'kg'], ['dunya', 'Dünya kütlesi'], ['gunes', 'Güneş kütlesi']], 'dunya')}</div>${sonuc('swS')}`,
       hesap() {
         const M = oku('swM') * kutleBirim()[el.querySelector('#swB').value];
-        if (!(M > 0)) return hata('Pozitif bir kütle yaz.');
+        if (!(M > 0)) return hata('Pozitif bir kütle yaz.', ['swM']);
         const rs = 2 * d('G') * M / (d('c') * d('c'));
         let s;
         if (rs < 1e-3) s = U.bilimsel(rs * 1e3, 3) + ' mm';
@@ -103,7 +105,7 @@
       html: () => `<div class="hesap-ızgara">${giris('hkA', 'Yarı büyük eksen (AB)', '5')}${giris('hkM', 'Merkez kütle (Güneş = 1)', '1')}</div>${sonuc('hkS')}`,
       hesap() {
         const a = oku('hkA') * d('au'), M = oku('hkM') * d('M_gunes');
-        if (!(a > 0 && M > 0)) return hata('İki değer de pozitif olmalı.');
+        if (!(a > 0 && M > 0)) return hata('İki değer de pozitif olmalı.', [!(a > 0) && 'hkA', !(M > 0) && 'hkM']);
         const T = 2 * Math.PI * Math.sqrt(a * a * a / (d('G') * M));
         const v = 2 * Math.PI * a / T;
         const gunEk = T >= 365.25 * 86400 && T < 1000 * 365.25 * 86400 ? ` (${U.sayi(T / 86400, 1)} gün)` : '';
@@ -117,7 +119,7 @@
       html: () => `<div class="hesap-ızgara">${giris('mgM', 'Görünür kadir m', '1', true)}${giris('mgD', 'Uzaklık (parsek)', '25')}</div>${sonuc('mgS')}`,
       hesap() {
         const m = oku('mgM'), dp = oku('mgD');
-        if (isNaN(m) || !(dp > 0)) return hata('Kadir bir sayı, uzaklık pozitif olmalı.');
+        if (isNaN(m) || !(dp > 0)) return hata('Kadir bir sayı, uzaklık pozitif olmalı.', [isNaN(m) && 'mgM', !(dp > 0) && 'mgD']);
         const M = m - 5 * Math.log10(dp / 10);
         const L = Math.pow(10, 0.4 * (d('MV_gunes') - M));
         return `<b>M = ${U.kadir(M)}</b><span class="ek">Uzaklık modülü m − M = ${eksi(m - M)}.</span><span class="ek">Görsel (V) bantta Güneş'in yaklaşık ${U.bilimsel(L, 2)} katı parlak (Güneş'in mutlak V kadiri ${U.sayi(d('MV_gunes'), 2)} alınarak).</span>`;
@@ -130,7 +132,7 @@
       html: () => `<div class="hesap-ızgara">${giris('poA', 'Parlak cismin kadiri', '-4', true)}${giris('poB', 'Sönük cismin kadiri', '6', true)}</div>${sonuc('poS')}`,
       hesap() {
         const a = oku('poA'), b = oku('poB');
-        if (isNaN(a) || isNaN(b)) return hata('İki kadir de sayı olmalı.');
+        if (isNaN(a) || isNaN(b)) return hata('İki kadir de sayı olmalı.', [isNaN(a) && 'poA', isNaN(b) && 'poB']);
         const oran = Math.pow(10, 0.4 * Math.abs(b - a));
         if (!isFinite(oran)) return hata('Fark çok büyük: hesaplanamıyor.');
         return `<b>${U.bilimsel(oran, 3)} kat</b><span class="ek">${U.sayi(Math.abs(b - a), 2)} kadir fark.</span>`;
@@ -143,7 +145,7 @@
       html: () => `<div class="hesap-ızgara">${giris('paP', 'Iraklık açısı', '100')}${secim('paB', 'Birim', [['mas', 'miliyay saniyesi (mas)'], ['as', 'yay saniyesi (″)']], 'mas')}</div>${sonuc('paS')}`,
       hesap() {
         let p = oku('paP');
-        if (!(p > 0)) return hata('Pozitif bir açı yaz.');
+        if (!(p > 0)) return hata('Pozitif bir açı yaz.', ['paP']);
         if (el.querySelector('#paB').value === 'mas') p /= 1000;
         const dp = 1 / p;
         return `<b>${U.sayi(dp, dp < 10 ? 3 : 1)} parsek</b><span class="ek">= ${U.sayi(dp * d('pc') / d('ly'), 2)} ışık yılı</span>`;
@@ -156,7 +158,7 @@
       html: () => `<div class="hesap-ızgara">${giris('wiT', 'Sıcaklık (K)', '5772')}</div>${sonuc('wiS')}`,
       hesap() {
         const T = oku('wiT');
-        if (!(T > 0)) return hata('Pozitif bir sıcaklık yaz.');
+        if (!(T > 0)) return hata('Pozitif bir sıcaklık yaz.', ['wiT']);
         const l = d('b_wien') / T * 1e9;
         let bolge = 'kızılötesi';                 // sınırlar yuvarlanmamış değerle karşılaştırılır
         if (l < 10) bolge = 'X ışını';
@@ -174,7 +176,7 @@
       html: () => `<div class="hesap-ızgara">${giris('sbR', 'Yarıçap (Güneş = 1)', '2')}${giris('sbT', 'Sıcaklık (K)', '9000')}</div>${sonuc('sbS')}`,
       hesap() {
         const R = oku('sbR') * d('R_gunes'), T = oku('sbT');
-        if (!(R > 0 && T > 0)) return hata('İki değer de pozitif olmalı.');
+        if (!(R > 0 && T > 0)) return hata('İki değer de pozitif olmalı.', [!(R > 0) && 'sbR', !(T > 0) && 'sbT']);
         const L = 4 * Math.PI * R * R * d('sigma') * Math.pow(T, 4);
         return `<b>${U.bilimsel(L / d('L_gunes'), 3)} L☉</b><span class="ek">${U.bilimsel(L, 3)} W</span>`;
       },
@@ -211,13 +213,18 @@
       el.innerHTML = '<div class="hata-kutu" role="alert">Fizik verisi yüklenemedi: ' + U.kacis(e.message) + '. Başka bir sekmeye geçip dönünce yeniden denenir.</div>'; return false;
     }
     el.innerHTML = '<h1>Hesap</h1><p class="alt-baslik">Ondalık için virgül ya da nokta kullanabilirsin; çok büyük sayılar için 2e30 gibi yaz.</p>' +
-      KARTLAR.map(k => `<section class="hesap-kart" id="hk-${k.id}"><h3>${k.baslik}</h3><p class="aciklama-k">${k.aciklama}</p>${k.html()}<p class="formul-k">${k.formul}</p>${kaynakHtml(k)}</section>`).join('');
+      KARTLAR.map(k => `<section class="hesap-kart" id="hk-${k.id}"><h2>${k.baslik}</h2><p class="aciklama-k">${k.aciklama}</p>${k.html()}<p class="formul-k">${k.formul}</p>${kaynakHtml(k)}</section>`).join('');
     KARTLAR.forEach(k => {
       const kart = el.querySelector('#hk-' + k.id);
       const cikti = kart.querySelector('.sonuc');
       const yenile = () => {
-        belirsiz = new Set();
+        belirsiz = new Set(); gecersiz = [];
         try { cikti.innerHTML = k.hesap(); } catch (e) { cikti.innerHTML = hata('Hesaplanamadı: ' + U.kacis(e.message)); }
+        kart.querySelectorAll('input').forEach(g => {
+          const kotu = gecersiz.indexOf(g.id) >= 0;
+          if (kotu) { g.setAttribute('aria-invalid', 'true'); g.setAttribute('aria-describedby', cikti.id); }
+          else { g.removeAttribute('aria-invalid'); g.removeAttribute('aria-describedby'); }
+        });
         if (belirsiz.size) cikti.insertAdjacentHTML('beforeend', hata([...belirsiz].map(U.kacis).join(', ') + ' sayısını ondalık okudum (nokta ondalık ayırıcı). Bin demek istiyorsan noktasız yaz: 1000.'));
       };
       kart.addEventListener('input', yenile);

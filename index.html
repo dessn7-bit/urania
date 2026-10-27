@@ -15,8 +15,11 @@
 <link rel="stylesheet" href="./stil.css">
 </head>
 <body>
-<!-- Kırmızı gece modu: deney kanvaslarını parlaklığı koruyarak yalnız kırmızıya çevirir (yeşil ve mavi kanal sıfır) -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><filter id="kirmiziSuz" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="0.40 0.45 0.15 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0"/></filter></svg>
+<!-- Kırmızı gece modu: deney kanvaslarındaki sabit renkli öğeleri (tayf, yıldız renkleri) yalnız kırmızıya çevirir
+     (yeşil ve mavi kanal sıfır). Kanvaslar zaten kırmızı paletle çizildiği için kırmızı kanal olduğu gibi kalır,
+     yeşil ve mavi ona eklenir (255'te kırpılır): palet rengi #E63A28 → #FF0000, siyahta 5,25:1. Eski matris
+     (0,40 0,45 0,15) kırmızıyı ikinci kez karartıyordu (#E63A28 → #7C0000, etiketler 1,86:1). -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><filter id="kirmiziSuz" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="1 0.5 0.2 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0"/></filter></svg>
 <header class="ust">
   <a class="marka" href="#gok" aria-label="Urania, ana sayfa">Urania</a>
   <nav class="sekmeler" aria-label="Bölümler">

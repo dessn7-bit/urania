@@ -123,7 +123,7 @@
       let s = ustAd(S, al, 'Leke sayısı (aylık, düzeltilmiş)');   // 161: SIDC'nin 13 aylık düzeltilmiş değeri, ham aylık değil
       /* panel öngörüsü: tepe 2023–2026 arasında, 95–130 leke */
       s += S.kutu(ek.X(2023), ek.Y(130), ek.X(2026) - ek.X(2023), ek.Y(95) - ek.Y(130), { dolgu: R.vurguSoluk, renk: R.vurgu, kalin: 1, kesik: '4 3' });
-      s += S.yazi((ek.X(2023) + ek.X(2026)) / 2, ek.Y(112.5) + 5, 'Öngörü: 95–130', { boy: 13, hiza: 'middle', renk: R.vurgu });
+      s += S.zeminliYazi((ek.X(2023) + ek.X(2026)) / 2, ek.Y(112.5) + 5, 'Öngörü: 95–130', { boy: 13, hiza: 'middle', renk: R.vurgu });   // yarı saydam bant üstünde 3,54:1 idi
       s += ek.svg;
       /* şematik eğri: başlangıç Aralık 2019, tepe Ekim 2024'te 161 */
       const t0 = 2019 + 11.5 / 12, tp = 2024 + 9.5 / 12, tep = 161, xp = tp - t0;
@@ -429,7 +429,8 @@
       let s = '';
       const kutu = (x, y, w, h, ust, alt, renk) => S.kutu(x, y, w, h, { dolgu: R.yuzey2, renk: renk || R.cizgi, kalin: 1.2 }, 8) +
         S.yazi(x + w / 2, y + (alt ? 20 : h / 2 + 5), ust, { boy: 14, kalin: true, hiza: 'middle' }) + (alt ? S.yazi(x + w / 2, y + 38, alt, { boy: 13, renk: R.soluk, hiza: 'middle' }) : '');
-      s += S.kutu(80, 6, 240, 44, { dolgu: R.vurguSoluk, renk: R.vurgu, kalin: 1.2 }, 8);
+      /* dolgu yüzey-2 (yarı saydam pirinç zeminde soluk yazı 3,16:1 idi; artık normalde 5,0, kırmızı modda 4,75:1) */
+      s += S.kutu(80, 6, 240, 44, { dolgu: R.yuzey2, renk: R.vurgu, kalin: 1.2 }, 8);
       s += S.yazi(200, 25, 'Başlangıç kütlesi', { boy: 15, kalin: true, hiza: 'middle' });
       s += S.yazi(200, 42, '(Güneş kütlesi cinsinden)', { boy: 13, hiza: 'middle', renk: R.soluk });
       s += S.ok(150, 50, 100, 84, { renk: R.vurgu }) + S.ok(250, 50, 300, 84, { renk: R.vurgu });
