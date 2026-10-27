@@ -7,7 +7,7 @@ Kişisel astrofizik defteri: telefona kurulan, çevrimdışı çalışan bir PWA
 - **Bulut tahmini** — gecenin saatlik bulut oranı ve en açık dönem ([Open-Meteo](https://open-meteo.com/), CC BY 4.0).
 - **Defter** — gözlem defteri: ne, ne zaman, neyle, nasıl bir gökte; Ay evresi, yükseklik ve bulut otomatik eklenir; JSON yedek.
 - **Deneyler** — kara deliğe yaklaşmak (olay ufku, zaman genişlemesi, gelgit), yörünge atışı (Newton'un topu), yıldızın hayatı (H-R diyagramı), ışığa yakın yolculuk (özel görelilik).
-- **Dersler** — gökyüzünü okumaktan evrenin tarihine sekiz kaynaklı ders; deftere notlar ve kendini sınama soruları.
+- **Dersler** — gökyüzünü okumaktan evrenin tarihine on bir kaynaklı ders; deftere notlar ve kendini sınama soruları.
 - **Hesap** — uzaklık çevirici, kurtulma hızı, Schwarzschild yarıçapı, Kepler III, kadir, ıraklık, Wien, Stefan-Boltzmann.
 
 ## Veri ve kaynaklar

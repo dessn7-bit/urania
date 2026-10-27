@@ -1,6 +1,6 @@
 /* sw.js — çevrimdışı çalışma. Ağ önce (güncel sürüm gelsin), ağ yoksa önbellek.
    Dosya eklenince ASSETS'e eklenmeli ve SURUM artırılmalı. */
-const SURUM = 'urania-v8';
+const SURUM = 'urania-v9';
 const ASSETS = [
   './', './index.html', './stil.css', './manifest.json',
   './icon-192.png', './icon-512.png', './icon-maskable-512.png',
