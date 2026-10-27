@@ -97,3 +97,17 @@ test('Jüpiter uyduları JPL Horizons ile 2 yay saniyesi içinde', () => {
   expect(Math.hypot(g.dogu, g.kuzey)).toBeLessThan(G.jupiterYaricap(new Date('2026-10-28T03:00:00Z')));
   expect(g.derinlik).toBeLessThan(0);
 });
+
+test('Evre ve Satürn halka açıklığı JPL Horizons ile tutarlı', () => {
+  /* Horizons QUANTITIES=10,14 (2026-10-28 03:00 UT): aydınlık oran Venüs %1,05436, Merkür %16,84661,
+     Mars %89,56293, Satürn %99,94926; Satürn gözlemci-altı enlemi −8,19° (gezegen-yüzeyi/planetodetik).
+     Halka eğimi gezegen-merkezli enlemdir: tan(φc) = (1−f)²·tan(φd); Satürn basıklığı f = 0,09796
+     (NASA Saturn Fact Sheet: "Ellipticity 0.09796") → |φc| ≈ 6,70°. */
+  const t = new Date('2026-10-28T03:00:00Z');
+  [['Venus', 1.05436], ['Mercury', 16.84661], ['Mars', 89.56293], ['Saturn', 99.94926]].forEach(([c, y]) => {
+    expect(Math.abs(G.A.Illumination(c, t).phase_fraction * 100 - y), c).toBeLessThan(0.1);
+  });
+  const f = 0.09796;
+  const phiC = Math.atan(Math.pow(1 - f, 2) * Math.tan(8.192524 * Math.PI / 180)) * 180 / Math.PI;
+  expect(Math.abs(Math.abs(G.A.Illumination('Saturn', t).ring_tilt) - phiC)).toBeLessThan(0.1);
+});

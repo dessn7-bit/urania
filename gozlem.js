@@ -141,7 +141,20 @@
       return { ad: G.TR_AD[c], alt: k.alt, az: k.az, kadir: A.Illumination(c, an).mag };
     }).filter(g => g.kadir <= 6.5);
     const radyantlar = durum.meteorDurum.filter(m => m.aktif && m.radyant_ra != null).map(m => ({ ad: m.ad, ra: m.radyant_ra, dec: m.radyant_dec }));
-    durum.harita.ciz({ zaman: an, gzl, gunes, ay, gezegenler, hedefler: durum.veri.hedefler, radyantlar, limitKadir: durum.limitKadir });
+    /* ISS: TLE yüklüyse seçili an için konum, 60 dk içinde başlayan geçişin yolu */
+    let iss = null, issYol = null;
+    if (durum.tle) {
+      try {
+        const k = U.konum();
+        iss = Uydu.anlik(durum.tle, k, an);
+        /* yol hesabı ~40 ms: kaydırıcı akıcı kalsın diye 5 dakikalık dilimlerde önbellekle */
+        const dilim = Math.floor(an / 300e3) + '|' + k.enlem + '|' + k.boylam;
+        if (durum.issDilim !== dilim) { durum.issDilim = dilim; durum.issGecis = Uydu.yakinGecis(durum.tle, k, an); }
+        const g = durum.issGecis;
+        if (g && g.gorunur && g.bitis.t > an) issYol = g.yol;
+      } catch (h) { /* ISS çizilmezse levha yine çizilir */ }
+    }
+    durum.harita.ciz({ zaman: an, gzl, gunes, ay, gezegenler, hedefler: durum.veri.hedefler, radyantlar, limitKadir: durum.limitKadir, iss, issYol });
     el.querySelector('#gkSaat').textContent = U.saat(an) + (durum.canli && !durum.gun ? ' (şimdi)' : '') + ' · ' + U.gun(an);
     let gd;
     if (gunes.alt > 0) gd = 'Gündüz';
@@ -208,11 +221,17 @@
       const arac = p.kadir <= 5.5 ? '<span class="rozet iyi">çıplak göz</span>' : (p.kadir <= 9 ? '<span class="rozet">dürbün</span>' : '<span class="rozet">teleskop</span>');
       if (!p.gorunur) {
         const neden = p.gunesAcisi < 18 ? `Güneş'e çok yakın (${U.derece(p.gunesAcisi)})` : 'karanlıkta ufka yakın kalıyor';
-        return `<li class="sonuk"><span class="ad">${p.ad}</span><span class="sag">${U.kadir(p.kadir)} kadir</span><span class="alt">Bu gece uygun değil: ${neden}. ${td} takımyıldızında.</span></li>`;
+        const ev = (p.cisim === 'Mercury' || p.cisim === 'Venus') ? ` %${Math.round(A.Illumination(p.cisim, durum.gece.ogle).phase_fraction * 100)} aydınlık.` : '';
+        return `<li class="sonuk"><span class="ad">${p.ad}</span><span class="sag">${U.kadir(p.kadir)} kadir</span><span class="alt">Bu gece uygun değil: ${neden}. ${td} takımyıldızında.${ev}</span></li>`;
       }
       const t = p.tepe;
+      /* Evre (Merkür, Venüs: dürbünde hilal görülebilir) ve Satürn'ün halka açıklığı — JPL Horizons ile karşılaştırıldı */
+      const isik = A.Illumination(p.cisim, t.zaman);
+      let ek = '';
+      if (p.cisim === 'Mercury' || p.cisim === 'Venus') ek = ` · %${Math.round(isik.phase_fraction * 100)} aydınlık`;
+      if (p.cisim === 'Saturn' && isik.ring_tilt != null) ek = ` · halkalar ${U.sayi(Math.abs(isik.ring_tilt), 1)}° açık (en fazla ≈27°; 0'a yakınken kenardan görünür)`;
       return `<li><span class="ad">${p.ad}${arac}</span><span class="sag">en iyi ${U.saat(t.zaman)} · ${U.derece(t.alt)} ${G.yon(t.az)}</span>
-        <span class="alt">${U.kadir(p.kadir)} kadir · ${td} takımyıldızında · ${dogBat}${p.cisim === 'Jupiter' ? jupiterSema(t.zaman) : ''}${defterBag('cisim:' + p.cisim)}</span></li>`;
+        <span class="alt">${U.kadir(p.kadir)} kadir · ${td} takımyıldızında · ${dogBat}${ek}${p.cisim === 'Jupiter' ? jupiterSema(t.zaman) : ''}${defterBag('cisim:' + p.cisim)}</span></li>`;
     }).join('');
   }
 
@@ -310,11 +329,12 @@
     issAnahtar = anahtar;
     const ul = el.querySelector('#gkIss'), kay = el.querySelector('#gkIssKaynak');
     let tle;
-    try { tle = await Uydu.tleGetir(); } catch (e) {
+    try { tle = await Uydu.tleGetir(); durum.tle = tle; } catch (e) {
       ul.innerHTML = '<li><span class="bos">Yörünge verisi alınamadı (internet yok ya da CelesTrak yanıt vermedi). İnternete bağlanınca kendiliğinden hesaplanır.</span></li>';
       kay.textContent = ''; issAnahtar = ''; return;
     }
     await new Promise(r => setTimeout(r, 30)); // önce sayfa çizilsin
+    levhaCiz();
     const ls = Uydu.gecisler(tle, k, new Date(), 5).filter(g => g.gorunur && g.gBit.t > new Date());
     const donem = Uydu.tleDonemi(tle.s1);
     const yas = (Date.now() - donem) / 86400e3;

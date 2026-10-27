@@ -181,6 +181,23 @@
         isabet.push({ x: p.x, y: p.y, oncelik: 4, bilgi: '<b>' + g.ad + '</b> · ' + Urania.kadir(g.kadir) + ' kadir · ' + Urania.derece(g.alt) + ' yükseklik, ' + G.YON_UZUN[G.yon(g.az)] });
       });
 
+      /* Uzay İstasyonu: yaklaşan geçişin yolu ve anlık konumu */
+      if (d.issYol && d.issYol.length > 1) {
+        ctx.save(); ctx.setLineDash([4, 5]); ctx.strokeStyle = kir ? c.pirinc : '#9FE3C7'; ctx.lineWidth = 1.3;
+        ctx.beginPath(); let ilk = true;
+        d.issYol.forEach(n => { if (n.alt < 0) { ilk = true; return; } const p = ekran(n.alt, n.az); if (ilk) { ctx.moveTo(p.x, p.y); ilk = false; } else ctx.lineTo(p.x, p.y); });
+        ctx.stroke(); ctx.restore();
+        const bas = d.issYol.find(n => n.alt >= 10);
+        if (bas) { const p = ekran(bas.alt, bas.az); etiket('ISS ' + Urania.saat(bas.t), p.x, p.y, '600 ' + Math.max(11, W / 44) + 'px Plex, system-ui, sans-serif', kir ? c.pirinc : '#9FE3C7', 8, 6); }
+      }
+      if (d.iss && d.iss.alt > 0) {
+        const p = ekran(d.iss.alt, d.iss.az);
+        ctx.beginPath(); ctx.arc(p.x, p.y, 4.5, 0, Math.PI * 2);
+        ctx.strokeStyle = kir ? c.pirinc : '#9FE3C7'; ctx.lineWidth = 1.6; ctx.stroke();
+        if (d.iss.isikli) { ctx.fillStyle = kir ? c.pirinc : '#9FE3C7'; ctx.fill(); }
+        isabet.push({ x: p.x, y: p.y, oncelik: 6, bilgi: '<b>Uzay İstasyonu</b> · ' + (d.iss.isikli ? 'Güneş ışığı alıyor' : 'gölgede, görünmez') + ' · ' + Urania.derece(d.iss.alt) + ' yükseklik' });
+      }
+
       /* Güneş (gündüzse) */
       if (d.gunes.alt > -1) {
         const p = ekran(d.gunes.alt, d.gunes.az);

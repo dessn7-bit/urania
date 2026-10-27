@@ -95,5 +95,24 @@
     }).filter(Boolean);
   }
 
-  window.Uydu = { tleGetir, tleDonemi, gecisler, durumHesapla };
+  /* Şu anki konum ve (60 dk içinde başlayan ya da süren) geçişin yolu */
+  const satrecOnbellek = {};
+  function satrec(tle) { return satrecOnbellek[tle.s1] || (satrecOnbellek[tle.s1] = satellite.twoline2satrec(tle.s1, tle.s2)); }
+  function anlik(tle, konum, t) {
+    const gd = { latitude: konum.enlem * DER, longitude: konum.boylam * DER, height: (konum.yukseklik || 0) / 1000 };
+    return durumHesapla(satrec(tle), gd, t);
+  }
+  function yakinGecis(tle, konum, simdi) {
+    const ls = gecisler(tle, konum, new Date(simdi.getTime() - 15 * 60e3), 75 / 1440);
+    const g = ls.find(x => x.bitis.t > simdi && x.bas.t < new Date(simdi.getTime() + 60 * 60e3));
+    if (!g) return null;
+    const gd = { latitude: konum.enlem * DER, longitude: konum.boylam * DER, height: (konum.yukseklik || 0) / 1000 };
+    const yol = [];
+    /* 10 sn'lik adımlar tam dakikaya hizalı: dakika işaretleri yolda doğru yere düşsün */
+    for (let ms = Math.floor((g.bas.t.getTime() - 60e3) / 10e3) * 10e3; ms <= g.bitis.t.getTime() + 60e3; ms += 10e3) {
+      const d = durumHesapla(satrec(tle), gd, new Date(ms)); if (d) yol.push(d);
+    }
+    return Object.assign({ yol }, g);
+  }
+  window.Uydu = { tleGetir, tleDonemi, gecisler, durumHesapla, anlik, yakinGecis };
 })();

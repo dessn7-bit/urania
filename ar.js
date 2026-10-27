@@ -178,6 +178,12 @@
     });
     const ay = G.ayDurumu(an, gzl);
     st.nesneler = { yildiz, ty, hedefler, cisimler, ay };
+    st.konum = k;
+    /* ISS: yaklaşan/süren geçişin yolu dakikada bir yenilenir */
+    if (st.tle && window.Uydu && (!st.issZaman || an - st.issZaman > 60e3)) {
+      try { st.issGecis = Uydu.yakinGecis(st.tle, k, an); } catch (h) { st.issGecis = null; }
+      st.issZaman = an;
+    }
     if (!st.sapmaHesaplandi && window.Geomag) {
       try { st.sapma = window.Geomag.sapma(k.enlem, k.boylam, an); } catch (h) { st.sapma = 0; }
       st.sapmaHesaplandi = true;
@@ -314,6 +320,9 @@
       isabet.push({ x: p.x, y: p.y, o: 4, ad: c.ad, alt: not + (altta ? ' · ufkun altında' : '') });
     });
 
+    /* Uzay İstasyonu: anlık konum (ışıkta dolu, gölgede boş halka) ve yaklaşan geçişin yolu */
+    issCiz(yansit, W, H, kir);
+
     /* Aranan cisim: görünüyorsa halka, değilse kenarda ok */
     if (st.hedef) hedefGoster(yansit, W, H, cx, cy);
 
@@ -322,6 +331,38 @@
     ctx.beginPath(); ctx.arc(cx, cy, 18, 0, Math.PI * 2); ctx.moveTo(cx - 28, cy); ctx.lineTo(cx - 20, cy); ctx.moveTo(cx + 20, cy); ctx.lineTo(cx + 28, cy); ctx.moveTo(cx, cy - 28); ctx.lineTo(cx, cy - 20); ctx.moveTo(cx, cy + 20); ctx.lineTo(cx, cy + 28); ctx.stroke();
     ctx.globalAlpha = 1;
     merkezYaz(bakis, cx, cy);
+  }
+
+  function issAnlik() {
+    if (!st.tle || !st.konum || !window.Uydu) return null;
+    try { return Uydu.anlik(st.tle, st.konum, new Date()); } catch (h) { return null; }
+  }
+  function issCiz(yansit, W, H, kir) {
+    if (!st.tle) return;
+    const renkI = kir ? renk('--pirinc') : '#9FE3C7';
+    const g = st.issGecis;
+    if (g && g.yol.length > 1) {
+      ctx.save(); ctx.setLineDash([5, 6]); ctx.strokeStyle = renkI; ctx.globalAlpha = 0.75; ctx.lineWidth = 1.5;
+      ctx.beginPath(); let o = null;
+      g.yol.forEach(d => { const p = yansit(enu(d.alt, d.az)); if (o && p) ctx.lineTo(p.x, p.y); else if (p) ctx.moveTo(p.x, p.y); o = p; });
+      ctx.stroke(); ctx.restore();
+      ctx.font = '500 12px Plex, system-ui, sans-serif'; ctx.fillStyle = renkI; ctx.textAlign = 'left';
+      g.yol.forEach(d => {
+        if (d.t.getSeconds() !== 0 || d.alt < 0) return;
+        const p = yansit(enu(d.alt, d.az)); if (!p) return;
+        ctx.beginPath(); ctx.arc(p.x, p.y, 2.5, 0, Math.PI * 2); ctx.fill();
+        ctx.fillText(U.saat(d.t), p.x + 6, p.y - 8);
+      });
+    }
+    const d = issAnlik();
+    if (!d || d.alt < -2) return;
+    const p = yansit(enu(d.alt, d.az)); if (!p) return;
+    ctx.beginPath(); ctx.arc(p.x, p.y, 6, 0, Math.PI * 2);
+    ctx.strokeStyle = renkI; ctx.lineWidth = 2; ctx.stroke();
+    if (d.isikli) { ctx.fillStyle = renkI; ctx.fill(); }
+    ctx.font = '600 14px Plex, system-ui, sans-serif'; ctx.fillStyle = renkI; ctx.textAlign = 'left';
+    ctx.fillText('ISS', p.x + 10, p.y);
+    isabet.push({ x: p.x, y: p.y, o: 5, ad: 'Uzay İstasyonu (ISS)', alt: (d.isikli ? 'Güneş ışığı alıyor' : 'Dünya\'nın gölgesinde, görünmez') + ' · ' + U.sayi(d.uzaklik, 0) + ' km uzakta' });
   }
 
   function ayCiz(p, gs, r, kir) {
@@ -366,6 +407,7 @@
     if (h.tur === 'hedef') { const c = n.hedefler.find(x => x.ad === h.id); return c && c.v; }
     if (h.tur === 'yildiz') { const i = h.id; return [n.yildiz[i * 3], n.yildiz[i * 3 + 1], n.yildiz[i * 3 + 2]]; }
     if (h.tur === 'ty') { const t = n.ty.find(x => x.ad === h.id); return t && t.m; }
+    if (h.tur === 'iss') { const d = issAnlik(); return d && enu(d.alt, d.az); }
     return null;
   }
 
@@ -416,6 +458,8 @@
     const n = st.nesneler; if (!n) return [];
     const ls = [];
     n.cisimler.forEach(c => { if (c.id === 'Sun' || c.kadir <= 8) ls.push({ tur: 'cisim', id: c.id, ad: c.ad, alt: c.alt, grup: 'Güneş Sistemi' }); });
+    const iss = issAnlik();
+    if (iss) ls.push({ tur: 'iss', id: 'iss', ad: 'Uzay İstasyonu (ISS)', alt: iss.alt, grup: 'Güneş Sistemi' });
     n.hedefler.forEach(h => ls.push({ tur: 'hedef', id: h.ad, ad: h.ad, alt: Math.asin(h.v[2]) / DER, grup: 'Dürbün hedefleri' }));
     Object.keys(veri.yildizlar.adlar).forEach(i => {
       if (veri.yildizlar.y[i][2] > 3) return;
@@ -571,6 +615,7 @@
     if (calisiyor || !veri) return;
     calisiyor = true;
     document.body.classList.add('ar-acik');
+    if (window.Uydu && !st.tle) Uydu.tleGetir().then(t => { st.tle = t; st.issZaman = null; if (calisiyor) nesneleriYenile(); }).catch(() => { /* ISS yoksa da çalışır */ });
     st.mod = 'bekliyor'; st.R = null; st.sapmaHesaplandi = false; st.goreliVar = false; st.goreliKabul = false; st.izinYok = false;
     nesneleriYenile();
     sayac = setInterval(nesneleriYenile, 1000);
