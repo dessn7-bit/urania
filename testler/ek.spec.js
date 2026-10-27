@@ -107,3 +107,50 @@ test('Sınav soruları: dört farklı şık, geçerli ders ve bölüm, okunuşta
   expect(r.sorun).toEqual([]);
   expect(r.kalan).toEqual([]);
 });
+
+test('Gözlem görevleri: defterden açılır, bu gece görünenler önde; "Gördüm" defter formunu doğru cisimle açar ve görev tamamlanır', async ({ page }) => {
+  await page.addInitScript(() => {
+    localStorage.setItem('urania_konumOto', 'false');
+    localStorage.setItem('urania_konum', JSON.stringify({ ad: 'Kadıköy', enlem: 40.99, boylam: 29.03, yukseklik: 0, oto: false, saatDilimi: 'Europe/Istanbul' }));
+  });
+  await page.clock.install({ time: new Date('2026-10-27T20:00:00+03:00') });
+  await page.goto('/index.html#defter');
+  await expect(page.locator('#dfGorev')).toBeVisible();
+  const G = await page.evaluate(() => fetch('veri/gorevler.json').then(r => r.json()).then(j => j.gorevler));
+  expect(G.length).toBeGreaterThanOrEqual(30);
+  await expect(page.locator('#dfGorevSayi')).toHaveText(`${G.length} görevden 0 tanesi tamam`);
+  await page.locator('#dfGorev').click();
+  await expect(page.locator('.gorev-liste li')).toHaveCount(G.length);
+  await expect(page.locator('h2').first()).toHaveText('Bu gece yapılabilir');
+  /* Ülker Ekim sonu gecesinde yüksek: ilk listede */
+  const ulker = page.locator('.gorev-liste li', { hasText: 'Ülker' }).first();
+  await expect(ulker).toContainText('bu gece en çok 7');
+  await ulker.locator('summary').click();
+  await ulker.locator('a', { hasText: 'Gördüm' }).click();
+  await expect(page.locator('#dfCisim')).toHaveValue('hedef:M45');
+  await page.locator('#dfKaydet').click();
+  await page.goto('/index.html#defter/gorevler');
+  await expect(page.locator('.alt-baslik').first()).toContainText('1 tanesini yaptın');
+  await expect(page.locator('.rozetler')).toContainText('İlk adım');
+  await expect(page.locator('h2', { hasText: 'Tamamlananlar' })).toBeVisible();
+  /* Görevlerin anahtarları defter kataloğunda var */
+  const yok = await page.evaluate(async () => {
+    const [g, h, y, m] = await Promise.all(['gorevler', 'hedefler', 'yildizlar', 'meteor'].map(a => fetch('veri/' + a + '.json').then(r => r.json())));
+    const adlar = new Set(Object.values(y.adlar));
+    return g.gorevler.filter(x => {
+      const [t, a] = x.anahtar.split(':');
+      if (t === 'hedef') return !h.hedefler.some(z => z.id === a);
+      if (t === 'yildiz') return !adlar.has(a);
+      if (t === 'meteor') return !m.yagmurlar.some(z => z.kod === a);
+      if (t === 'cisim') return !['Moon', 'Mercury', 'Venus', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'].includes(a);
+      return t !== 'gorev';
+    }).map(x => x.id);
+  });
+  expect(yok).toEqual([]);
+});
+
+test('Gözlem görevleri: ay aralığı yazımı (Aralık→Ocak sarması dahil)', async ({ page }) => {
+  await page.goto('/index.html#defter');
+  const r = await page.evaluate(() => [Gorevler.ayAraligi([9, 10, 11, 0, 1]), Gorevler.ayAraligi([3, 4, 8]), Gorevler.ayAraligi([...Array(12).keys()]), Gorevler.ayAraligi([])]);
+  expect(r).toEqual(['Ekim–Şubat', 'Nisan–Mayıs, Eylül', 'yıl boyu', '']);
+});

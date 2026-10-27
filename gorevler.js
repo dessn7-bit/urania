@@ -105,7 +105,7 @@
     const kaynak = (g.kaynak || []).filter(k => k && k.url);
     return `<li class="gorev${x.bitti ? ' bitti' : ''}">
       <details><summary><span class="ad">${x.bitti ? '<span class="rozet iyi">tamam</span> ' : ''}${U.kacis(g.ad)}</span>
-        <span class="alt">${'●'.repeat(g.zorluk || 1)}<span class="soluk">${'●'.repeat(3 - (g.zorluk || 1))}</span> · ${U.kacis(ARAC[g.arac] || g.arac || '')}${gor ? ' · ' + U.kacis(gor) : ''}${ay ? ' · ' + U.kacis(ay) : ''}</span></summary>
+        <span class="alt"><span role="img" aria-label="zorluk ${g.zorluk || 1} / 3">${'●'.repeat(g.zorluk || 1)}<span class="soluk">${'●'.repeat(3 - (g.zorluk || 1))}</span></span> · ${U.kacis(ARAC[g.arac] || g.arac || '')}${gor ? ' · ' + U.kacis(gor) : ''}${ay ? ' · ' + U.kacis(ay) : ''}</span></summary>
         <div class="gorev-ic">
           ${g.nasil ? `<p><b>Nasıl bulunur:</b> ${U.kacis(g.nasil)}</p>` : ''}
           ${g.ne_gorursun ? `<p><b>Ne görürsün:</b> ${U.kacis(g.ne_gorursun)}</p>` : ''}
