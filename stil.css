@@ -42,8 +42,10 @@ html.kirmizi {
   --levha-2: #1A0202;
   --pirinc: #D33A2C;
   --pirinc-soluk: rgba(211, 58, 44, .35);
-  --parsomen: #C23A2E;
-  --soluk: #8A2A22;
+  /* Metinler siyah zeminde WCAG AA (≥4,5:1), yalnız kırmızı tonlar (G, B düşük):
+     ana metin #FF4A3A 6,29:1 (#1A0202 yüzeyde 5,97:1), ikincil #E63A28 5,00:1 (#1A0202'de 4,75:1) */
+  --parsomen: #FF4A3A;
+  --soluk: #E63A28;
   --cizgi: rgba(194, 58, 46, .22);
   --iyi: #C23A2E;
   --uyari: #E0503F;
@@ -68,6 +70,8 @@ a { color: var(--pirinc); }
 :focus-visible { outline: 2px solid var(--pirinc); outline-offset: 2px; border-radius: 4px; }
 button, input, select { font: inherit; color: inherit; }
 [hidden] { display: none !important; }
+/* Görünmez ama ekran okuyucuda (ve programla) kullanılabilir */
+.gorsel-gizli { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; border: 0; }
 
 /* ---- Üst bar ---- */
 .ust {
@@ -181,9 +185,9 @@ html.kirmizi input[type="date"]::-webkit-calendar-picker-indicator { filter: bri
 .liste { list-style: none; margin: 8px 0 0; padding: 0; }
 .liste > li { border-top: 1px solid var(--cizgi); padding: 12px 0; display: grid; grid-template-columns: 1fr auto; gap: 2px 12px; }
 .liste > li:last-child { border-bottom: 1px solid var(--cizgi); }
-.liste .ad { font-weight: 600; font-size: 16px; }
+.liste .ad { font-weight: 600; font-size: 16px; overflow-wrap: anywhere; }
 .liste .sag { text-align: right; font-size: 15px; white-space: nowrap; }
-.liste .alt { grid-column: 1 / -1; color: var(--soluk); font-size: 14px; }
+.liste .alt { grid-column: 1 / -1; color: var(--soluk); font-size: 14px; overflow-wrap: anywhere; }
 .liste li.sonuk .ad, .liste li.sonuk .sag { color: var(--soluk); font-weight: 500; }
 .rozet { display: inline-block; font-size: 12px; font-weight: 500; padding: 1px 7px; border-radius: 999px; border: 1px solid var(--cizgi); color: var(--soluk); margin-left: 6px; vertical-align: 2px; }
 .rozet.iyi { color: var(--iyi); border-color: currentColor; }
@@ -313,7 +317,7 @@ html.kirmizi .ar-durum, html.kirmizi .ar-bilgi, html.kirmizi .ar-hizala, html.ki
 .defter-form { margin-top: 4px; }
 .defter-form textarea { background: var(--gece); border: 1px solid var(--cizgi); border-radius: 8px; padding: 9px 10px; color: var(--parsomen); font: 400 16px/1.5 var(--sans); width: 100%; resize: vertical; }
 .defter-form textarea:focus { border-color: var(--pirinc); outline: none; }
-.defter-not { display: block; color: var(--parsomen); font: 400 16px/1.55 var(--serif); margin-top: 6px; white-space: pre-wrap; }
+.defter-not { display: block; color: var(--parsomen); font: 400 16px/1.55 var(--serif); margin-top: 6px; white-space: pre-wrap; overflow-wrap: anywhere; }
 .defter-bag { display: block; margin-top: 4px; font-size: 14px; }
 .liste .bag, .cip-grup .bag { background: none; border: 0; padding: 0; color: var(--pirinc); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; font-size: 14px; }
 label.dugme { cursor: pointer; }
@@ -458,3 +462,8 @@ figure.cizim figcaption a { color: var(--pirinc); }
 .kart-sec { margin: 8px 0 0 1.4em; font-family: var(--sans); font-size: 15px; }
 .kart-sec li { margin: 2px 0; }
 html.kirmizi .sahne canvas { filter: url(#kirmiziSuz); }
+
+/* Yeni sürüm şeridi (sw.js güncellenince) */
+.surum-serit { position: fixed; left: 12px; right: 12px; bottom: calc(76px + env(safe-area-inset-bottom)); z-index: 60; display: flex; gap: 12px; align-items: center; justify-content: space-between;
+  background: var(--levha-2); color: var(--parsomen); border: 1px solid var(--pirinc); border-radius: var(--r); padding: 10px 12px; font-size: 14px; }
+@media (min-width: 760px) { .surum-serit { left: auto; bottom: 16px; max-width: 420px; } }

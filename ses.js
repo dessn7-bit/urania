@@ -35,12 +35,21 @@
 
   /* ---------- metin ---------- */
   /* Cümle sınırından ≤ PARCA_TAVAN parçalar; tek cümle tavanı aşarsa virgül, o da yoksa
-     boşluk sınırından bölünür. Hiçbir karakter kaybolmaz. */
+     boşluk sınırından bölünür. Hiçbir karakter kaybolmaz (tek başına "..." da).
+     Noktadan sonra küçük harf ya da boşluksuz devam gelirse cümle bitmemiştir: sıra sayısı
+     ("11. dersten"), kısaltma ("ör. balkon"), saat ve sayı ("03.21", "14.500"; binlik ayracı
+     okunus.js zaten kaldırır); orada bölünmez. */
   function parcala(metin) {
     const t = String(metin || '').replace(/\s+/g, ' ').trim();
     if (!t) return [];
     if (t.length <= PARCA_TAVAN) return [t];
-    const cumleler = t.match(/[^.!?…]+(?:[.!?…]+["'”’»)]*)?\s*/g) || [t];
+    const cumleler = [];
+    (t.match(/[^.!?…]*(?:[.!?…]+["'”’»)]*)?\s*/g) || [t]).forEach(s => {
+      if (!s) return;
+      const onceki = cumleler[cumleler.length - 1];
+      if (onceki !== undefined && (!/\s$/.test(onceki) || /\.\s*$/.test(onceki) && /^[a-zçğıöşü]/.test(s) || !/[^.!?…"'”’»)\s]/.test(s))) cumleler[cumleler.length - 1] += s;
+      else cumleler.push(s);
+    });
     const parcalar = [];
     let tampon = '';
     cumleler.forEach(s => {
@@ -52,7 +61,11 @@
       let kalan = s;
       while (kalan.length > PARCA_TAVAN) {
         let kes = kalan.lastIndexOf(', ', PARCA_TAVAN);
-        if (kes < PARCA_TAVAN / 3) kes = kalan.lastIndexOf(' ', PARCA_TAVAN);
+        if (kes < PARCA_TAVAN / 3) {
+          kes = kalan.lastIndexOf(' ', PARCA_TAVAN);
+          /* "11. ders" gibi sıra sayısının noktasından sonra bölme: parça "on bir." diye biter */
+          while (kes > PARCA_TAVAN / 3 && /\d\.$/.test(kalan.slice(0, kes))) kes = kalan.lastIndexOf(' ', kes - 1);
+        }
         if (kes < 1) kes = PARCA_TAVAN; else kes += 1;
         parcalar.push(kalan.slice(0, kes).trim());
         kalan = kalan.slice(kes);
@@ -158,6 +171,7 @@
     const parca = b.parcalar[ot.j];
     if (parca === undefined) { bitir('bitti'); return; }
     const jeton = aktifJeton = ++jetonSayac;
+    tekJeton++; tekUtt = null;   // süren kısa konuşma zinciri (kart, yön) bu iptalle ilerlemesin
     try { s.cancel(); } catch (e) { /* yok */ }
     const u = new window.SpeechSynthesisUtterance(parca);
     u.lang = 'tr-TR';
@@ -356,7 +370,10 @@
 
   /* ---------- tek seferlik konuşma (yön tarifi, kartlar) ----------
      Okuma oturumundan bağımsız; çalışan okumayı durdurur. Aynı jeton kuralı: yeni söz eskisini keser,
-     iptal edilenin geç olayı bitince'yi çağırmaz. Gizliyken konuşmaz (Android arka planda reddediyor). */
+     iptal edilenin geç olayı bitince'yi çağırmaz. Gizliyken konuşmaz (Android arka planda reddediyor).
+     Bir parça hata verirse (jeton geçerli): sayfa görünürse sonraki parçaya geçilir, gizliyse zincir
+     kalıcı olarak biter. Her iki durumda da zincir sonunda bitince bir kez çağrılır (kart akışının
+     düşünme sayacı hataya takılmasın); secenek.hata(hataAdı) varsa her hatada ayrıca çağrılır. */
   let tekJeton = 0;
   function soyle(metin, secenek) {
     const sec = secenek || {};
@@ -366,17 +383,31 @@
     if (ot) durdur('kısa konuşma');
     const parcalar = parcala(noktala(okunus(metin)));
     const jeton = ++tekJeton;
-    let k = 0;
+    let k = 0, bitti = false;
     try { s.cancel(); } catch (e) { /* yok */ }
+    const son = () => {
+      if (bitti || jeton !== tekJeton) return;
+      bitti = true; tekUtt = null;
+      if (sec.bitince) { try { sec.bitince(); } catch (h) { /* çağıranın hatası */ } }
+    };
+    const hatali = hata => {
+      if (bitti || jeton !== tekJeton) return;
+      kaydet('kısa konuşma hatası', hata);
+      if (sec.hata) { try { sec.hata(hata); } catch (h) { /* çağıranın hatası */ } }
+      if (jeton !== tekJeton) return;   // hata geri çağrısı yeni söz başlatmış olabilir
+      if (document.visibilityState === 'hidden') { son(); return; }
+      sonraki();
+    };
     const sonraki = () => {
-      if (jeton !== tekJeton) return;
-      if (k >= parcalar.length) { if (sec.bitince) sec.bitince(); return; }
+      if (bitti || jeton !== tekJeton) return;
+      if (k >= parcalar.length) { son(); return; }
       const u = new window.SpeechSynthesisUtterance(parcalar[k++]);
       u.lang = 'tr-TR'; const v = trSes(); if (v) u.voice = v; u.rate = hizOku();
       tekUtt = u;
-      u.onend = sonraki;
-      u.onerror = e => { if (jeton !== tekJeton) return; kaydet('kısa konuşma hatası', e && e.error); };
-      try { s.speak(u); } catch (e) { /* yok */ }
+      let olay = false;   // aynı parçanın hem onend hem onerror'ı zinciri iki kez ilerletmesin
+      u.onend = () => { if (olay) return; olay = true; sonraki(); };
+      u.onerror = e => { if (olay) return; olay = true; hatali((e && e.error) || 'hata'); };
+      try { s.speak(u); } catch (e) { olay = true; setTimeout(() => hatali('speak: ' + (e && e.message)), 0); }
     };
     sonraki();
     return true;

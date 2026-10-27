@@ -17,10 +17,16 @@
   }
 
   /* ---- Ekran ---- */
-  let el = null, canli = null, olay = { sayi: 0, mutlak: 0, son: null, tur: '' };
+  let el = null, canli = null, olay = { sayi: 0, mutlak: 0, son: null, tur: '', sonMutlak: 0 };
+  /* Android Chrome hem mutlak (kuzeye göre) hem göreli olay yollar: ikisi dönüşümlü gösterilirse yön zıplar.
+     Son 1 sn içinde mutlak olay (ya da iOS pusula başlığı) geldiyse göreli olay sayılır ama gösterilmez. */
   const yonDinle = (e, tur) => {
     if (e.alpha == null && e.beta == null && e.webkitCompassHeading == null) return; // algılayıcısız tarayıcının boş olayı
+    const mutlak = tur === 'mutlak' || !!e.absolute || typeof e.webkitCompassHeading === 'number';
+    const simdi = performance.now();
     olay.sayi++; if (tur === 'mutlak' || e.absolute) olay.mutlak++;
+    if (mutlak) olay.sonMutlak = simdi;
+    else if (olay.sonMutlak && simdi - olay.sonMutlak < 1000) return;
     olay.son = { alpha: e.alpha, beta: e.beta, gamma: e.gamma, absolute: e.absolute, pusula: e.webkitCompassHeading };
     olay.tur = tur;
   };

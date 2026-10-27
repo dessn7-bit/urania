@@ -13,6 +13,7 @@
   let el = null, cv = null, ctx = null, video = null;
   let veri = null;
   let calisiyor = false, kare = null, sayac = null, kilit = null;
+  let sesliCiz = () => {};   // iskelet() kurar
   const st = {
     mod: 'bekliyor',          // 'algilayici' | 'dokunma' | 'bekliyor'
     R: null,                  // süzülmüş dönüş matrisi (3x3, satır dizileri)
@@ -63,17 +64,45 @@
     const a = (screen.orientation && typeof screen.orientation.angle === 'number') ? screen.orientation.angle : (window.orientation || 0);
     return ((a % 360) + 360) % 360;
   }
+  /* Yansıtmada kullanılacak açı. Dokunma (sürükleme) modunda R dik tutulmuş sanal bir telefondur ve
+     ekranın "yukarı"sı zaten ekranın üstüdür: ekran açısı uygulanırsa yatay ekranda ufuk dikey çizilir. */
+  function yansitmaAcisi() { return st.mod === 'dokunma' ? 0 : ekranAcisi(); }
 
   /* ---------- Algılayıcılar ---------- */
+  /* iOS başlığı. webkitCompassHeading, telefon dikeyi geçip arkaya yatınca (β > 90°, yani kamera ufkun
+     üstüne bakarken) ~180° dönebilir — cihazda DOĞRULANMADI; matematiksel gerekçe: üst kenarın yatay
+     izdüşümü cos β < 0 olunca ters yönü gösterir. Güvenli yol: başlığı telefon görece düzken (|β| < 60°,
+     izdüşüm sağlam) okuyup jiroskopun sürekli α'sına göre bir ofset olarak sakla; arkaya yatıkken α + ofset
+     kullan. Ofset yoksa (oturum telefon yukarı bakarken başladıysa) eski davranış: 360 − başlık.
+     Geri almak için IOS_OFSET = false. */
+  const IOS_OFSET = true;
+  function iosAlfa(e) {
+    const baslik = e.webkitCompassHeading;
+    const dogrudan = 360 - baslik;
+    if (!IOS_OFSET || typeof e.alpha !== 'number' || !isFinite(e.alpha) || (typeof e.webkitCompassAccuracy === 'number' && e.webkitCompassAccuracy < 0)) return dogrudan;
+    if (typeof e.beta === 'number' && Math.abs(e.beta) < 60) {
+      st.iosOfset = ((dogrudan - e.alpha) % 360 + 360) % 360;
+      return dogrudan;
+    }
+    return st.iosOfset == null ? dogrudan : e.alpha + st.iosOfset;
+  }
   function yonOlayi(e, mutlak) {
     if (e.alpha == null && e.webkitCompassHeading == null) return;
-    let alfa;
+    let alfa, manyetik;
     if (typeof e.webkitCompassHeading === 'number') {
-      alfa = 360 - e.webkitCompassHeading;   // iOS: manyetik pusula başlığı
-      st.manyetik = true;
+      alfa = iosAlfa(e);                      // iOS: manyetik pusula başlığı
+      manyetik = true;
     } else {
       alfa = e.alpha;
-      st.manyetik = mutlak;
+      manyetik = mutlak;
+    }
+    /* Çerçeve değişti (göreli ↔ kuzeye göre): eski süzülmüş matris yeni çerçeveyle harmanlanmasın */
+    if (st.manyetik !== manyetik) {
+      st.R = null;
+      st.manyetik = manyetik;
+      /* Göreli oturumda yapılan hizalama yalnız o çerçeve içindi; kuzeye dönünce kayıtlı hizalamaya dön */
+      if (manyetik) st.kal = U.oku('arKalibrasyon', 0);
+      if (st.mod === 'algilayici') durumYaz();
     }
     /* Manyetik kuzeyden gerçek kuzeye (sapma) + kullanıcı hizalaması: başlık = 360 − α */
     const a = alfa - (st.manyetik ? st.sapma : 0) - st.kal;
@@ -85,40 +114,72 @@
       const pd = el && el.querySelector('#arPusula'); if (pd) pd.hidden = true; // veri geliyorsa izin düğmesine gerek yok
     }
   }
-  const mutlakDinle = e => yonOlayi(e, true);
+  /* Android Chrome hem 'deviceorientationabsolute' (kuzeye göre) hem 'deviceorientation' (göreli) yollar.
+     Mutlak veri gelir gelmez göreli akış bırakılır; son 1 sn içinde mutlak geldiyse göreli olay atılır. */
+  const MUTLAK_TAZE_MS = 1000;
+  function mutlakGeldi() {
+    st.sonMutlak = performance.now();
+    if (st.goreliKabul) st.goreliKabul = false;
+  }
+  const mutlakDinle = e => {
+    if (e.alpha == null && e.webkitCompassHeading == null) return;
+    mutlakGeldi();
+    yonOlayi(e, true);
+  };
   /* Göreli olay: mutlak olay hiç gelmiyorsa (pusulasız cihaz) kullanılır; kuzey için "Hizala" gerekir */
   const goreliDinle = e => {
-    if (e.absolute || typeof e.webkitCompassHeading === 'number') { yonOlayi(e, true); return; }
+    if (e.absolute || typeof e.webkitCompassHeading === 'number') { mutlakGeldi(); yonOlayi(e, true); return; }
+    if (st.sonMutlak && performance.now() - st.sonMutlak < MUTLAK_TAZE_MS) return;
     if (e.alpha != null) st.goreliVar = true;
     if (!('ondeviceorientationabsolute' in window) || st.goreliKabul) yonOlayi(e, false);
   };
 
   /* iOS: izin isteği doğrudan bir dokunuşla tetiklenmeli; bu yüzden "Pusulayı aç" düğmesi gösterilir */
   function izinGerekli() { return typeof DeviceOrientationEvent !== 'undefined' && typeof DeviceOrientationEvent.requestPermission === 'function'; }
+  const IZIN_RED = 'Yön algılayıcı izni verilmedi; parmağınla sürükleyerek gezebilirsin.';
   async function izinIste() {
+    const pd = el.querySelector('#arPusula');
     try {
       const r = await DeviceOrientationEvent.requestPermission();
+      if (!calisiyor) return;
       st.izinYok = r !== 'granted';
-      el.querySelector('#arPusula').hidden = r === 'granted';
-      if (r === 'granted') { st.mod = 'bekliyor'; durumYaz('Telefonu gökyüzüne tut.'); }
-      else durumYaz('Yön algılayıcı izni verilmedi; parmağınla sürükleyerek gezebilirsin.');
-    } catch (h) { durumYaz('Pusula izni istenemedi; parmağınla sürükleyerek gezebilirsin.'); }
+      pd.hidden = true;   // red de verilse düğme gizlenir: iOS aynı oturumda yeniden sormaz
+      if (r === 'granted') {
+        st.izinVerildi = true;
+        /* Sürükleme modundaysak olay gelene kadar sürükleme çalışmaya devam eder; ilk olay algılayıcı moduna geçirir */
+        if (st.mod !== 'algilayici') durumYaz('Telefonu gökyüzüne tut.');
+        /* İzin verildi ama olay gelmiyorsa (hareket erişimi kapalı, algılayıcı yanıt vermiyor) bekleme modunda kalma */
+        clearTimeout(st.izinZamanlayici);
+        st.izinZamanlayici = setTimeout(() => {
+          if (!calisiyor || st.mod === 'algilayici') return;
+          dokunmaModu('Pusula izni verildi ama yön verisi gelmiyor; parmağınla sürükleyerek gezebilirsin.');
+        }, 1800);
+      } else dokunmaModu(IZIN_RED);
+    } catch (h) {
+      if (calisiyor) dokunmaModu('Pusula izni istenemedi; parmağınla sürükleyerek gezebilirsin.');
+    }
   }
   function algilayicilariBaslat() {
     if (izinGerekli()) el.querySelector('#arPusula').hidden = false;
     if ('ondeviceorientationabsolute' in window) window.addEventListener('deviceorientationabsolute', mutlakDinle);
     window.addEventListener('deviceorientation', goreliDinle);
-    /* 1,5 sn içinde veri gelmezse (masaüstü, algılayıcısız cihaz) dokunma moduna geç */
-    setTimeout(() => {
-      if (st.mod === 'algilayici') return;
+    /* 1,5 sn içinde veri gelmezse (masaüstü, algılayıcısız cihaz) dokunma moduna geç.
+       Zamanlayıcı saklanır: hızlı kapat-aç'ta eski oturumunki yeni oturumu bozmasın. */
+    clearTimeout(st.zamanlayici);
+    st.zamanlayici = setTimeout(() => {
+      st.zamanlayici = null;
+      if (!calisiyor || st.mod !== 'bekliyor') return;   // algılayıcı geldi ya da izin akışı modu zaten belirledi
       if (st.goreliVar) { st.goreliKabul = true; durumYaz('Bu cihazın pusulası kuzeyi bildirmiyor. Telefonu gökyüzüne tut ve bir kez "Hizala"ya bas.'); return; }
+      if (st.izinVerildi) return;   // izin sonrası kendi zamanlayıcısı karar verir
       if (izinGerekli() && !el.querySelector('#arPusula').hidden) { dokunmaModu('Pusulayı kullanmak için üstteki "Pusulayı aç"a dokun; o zamana kadar parmağınla sürükleyebilirsin.'); return; }
-      dokunmaModu(st.izinYok ? 'Yön algılayıcı izni verilmedi; parmağınla sürükleyerek gezebilirsin.' : 'Bu cihazda yön algılayıcısı yanıt vermedi; parmağınla sürükleyerek gezebilirsin.');
+      dokunmaModu(st.izinYok ? IZIN_RED : 'Bu cihazda yön algılayıcısı yanıt vermedi; parmağınla sürükleyerek gezebilirsin.');
     }, 1500);
   }
   function algilayicilariDurdur() {
     window.removeEventListener('deviceorientationabsolute', mutlakDinle);
     window.removeEventListener('deviceorientation', goreliDinle);
+    clearTimeout(st.zamanlayici); st.zamanlayici = null;
+    clearTimeout(st.izinZamanlayici); st.izinZamanlayici = null;
   }
   function dokunmaModu(mesaj) {
     if (st.mod === 'algilayici') return;
@@ -213,7 +274,7 @@
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     const kir = document.documentElement.classList.contains('kirmizi');
     const f = (H / 2) / Math.tan(st.gorus / 2 * DER);
-    const R = st.R, ang = ekranAcisi() * DER, cA = Math.cos(ang), sA = Math.sin(ang);
+    const R = st.R, ang = yansitmaAcisi() * DER, cA = Math.cos(ang), sA = Math.sin(ang);
     const cx = W / 2, cy = H / 2;
     olcu = { W, H, f };
     isabet = [];
@@ -401,7 +462,7 @@
       return;
     }
     /* Ok: ekran düzlemindeki yön (arkadaysa ters çevrilmiş izdüşümü kullan) */
-    const R = st.R, ang = ekranAcisi() * DER;
+    const R = st.R, ang = yansitmaAcisi() * DER;
     const dx = R[0][0] * v[0] + R[1][0] * v[1] + R[2][0] * v[2];
     const dy = R[0][1] * v[0] + R[1][1] * v[1] + R[2][1] * v[2];
     let x = dx * Math.cos(ang) - dy * Math.sin(ang), y = dx * Math.sin(ang) + dy * Math.cos(ang);
@@ -427,42 +488,76 @@
 
   /* Aranan cisme yön tarifi: sağa/sola ve yukarı/aşağı kaç derece */
   let sonTarif = '';
+  const TAM_KARSI = 3, YAKIN = 30, BASUCU = 75, ARKA_PAY = 10;
+  let tarifIsaret = { hedef: null, s: 0 };   // ±180° çevresinde sağ/sol titremesini önleyen son yön
+  /* Yön tarifini hesapla (saf; test için de dışa açık).
+     - "tam karşında": bakış ile hedef arasındaki büyük daire uzaklığı < 3° (azimut farkı başucu yakınında
+       yanıltır: 72° yükseklikte 20° azimut farkı gerçekte ≈ 6°'dir).
+     - Hedef yakınsa (< 30°): bakışa teğet düzlemde sağ/sol ve yukarı/aşağı açı (cos(yükseklik) ölçeği kendiliğinden gelir).
+     - Hedef uzak ve başucuna yakınsa: "yukarı bak" (azimut orada anlamsız).
+     - Aksi halde: gövdeyi döndürmek için azimut farkı + yükseklik farkı; hedef tam arkadayken (±180°)
+       son söylenen yön ±10° payla korunur. */
+  function tarifHesapla(v, bakis, onceki) {
+    const hAz = (Math.atan2(v[0], v[1]) / DER + 360) % 360, hAlt = Math.asin(Math.max(-1, Math.min(1, v[2]))) / DER;
+    const b = enu(bakis.alt, bakis.az);
+    const z = v[0] * b[0] + v[1] * b[1] + v[2] * b[2];
+    const uzak = Math.acos(Math.max(-1, Math.min(1, z))) / DER;
+    let m, yatay = 0, dikey = 0, isaret = 0;
+    const yon = (x, art, eks) => (x > 0 ? art : eks) + U.derece(Math.abs(x));
+    if (uzak < TAM_KARSI) m = 'tam karşında';
+    else if (uzak < YAKIN) {
+      const sA = Math.sin(bakis.az * DER), cA = Math.cos(bakis.az * DER), sH = Math.sin(bakis.alt * DER), cH = Math.cos(bakis.alt * DER);
+      const x = v[0] * cA - v[1] * sA;                                   // bakışın sağı (yatay)
+      const y = -v[0] * sH * sA - v[1] * sH * cA + v[2] * cH;          // bakışın üstü (başucuna doğru)
+      yatay = Math.atan2(x, z) / DER; dikey = Math.atan2(y, z) / DER;
+      const p = [];
+      if (Math.abs(yatay) >= 1.5) p.push(yon(yatay, 'sağa ', 'sola '));
+      if (Math.abs(dikey) >= 1.5) p.push(yon(dikey, 'yukarı ', 'aşağı '));
+      m = p.join(', ');
+    } else if (hAlt > BASUCU) {
+      dikey = hAlt - bakis.alt;
+      m = 'başucuna yakın: yukarı bak' + (dikey >= TAM_KARSI ? ' (' + U.derece(dikey) + ')' : '');
+    } else {
+      let dAz = ((hAz - bakis.az + 540) % 360) - 180;
+      if (onceki && onceki.s && Math.abs(dAz) > 180 - ARKA_PAY && Math.sign(dAz) !== onceki.s) dAz = onceki.s * (360 - Math.abs(dAz));
+      isaret = Math.abs(dAz) >= TAM_KARSI ? Math.sign(dAz) : 0;
+      yatay = dAz; dikey = hAlt - bakis.alt;
+      const p = [];
+      if (Math.abs(yatay) >= TAM_KARSI) p.push(yon(yatay, 'sağa ', 'sola '));
+      if (Math.abs(dikey) >= TAM_KARSI) p.push(yon(dikey, 'yukarı ', 'aşağı '));
+      m = p.join(', ');
+    }
+    return { m, yatay, dikey, uzak, merkez: uzak < TAM_KARSI, altta: hAlt < 0, isaret };
+  }
   function tarifYaz(bakis) {
     if (!st.hedef) return;
     const v = hedefVektor(st.hedef); if (!v) return;
-    const hAz = (Math.atan2(v[0], v[1]) / DER + 360) % 360, hAlt = Math.asin(v[2]) / DER;
-    const dAz = ((hAz - bakis.az + 540) % 360) - 180, dAlt = hAlt - bakis.alt;
-    let m;
-    if (Math.abs(dAz) < 3 && Math.abs(dAlt) < 3) m = 'tam karşında';
-    else {
-      const p = [];
-      if (Math.abs(dAz) >= 3) p.push((dAz > 0 ? 'sağa ' : 'sola ') + U.derece(Math.abs(dAz)));
-      if (Math.abs(dAlt) >= 3) p.push((dAlt > 0 ? 'yukarı ' : 'aşağı ') + U.derece(Math.abs(dAlt)));
-      m = p.join(', ');
-    }
-    if (hAlt < 0) m += ' · ufkun altında';
+    const t = tarifHesapla(v, bakis, tarifIsaret.hedef === st.hedef ? tarifIsaret : null);
+    tarifIsaret = { hedef: st.hedef, s: t.isaret };
+    const m = t.m + (t.altta ? ' · ufkun altında' : '');
     if (m !== sonTarif) { el.querySelector('#arTarif').textContent = m; sonTarif = m; }
-    sesliYon(m, dAz, dAlt, Math.abs(dAz) < 3 && Math.abs(dAlt) < 3);
+    sesliYon(t);
   }
 
   /* Sesli yön tarifi: ekrana bakmadan hedef bulmak için. Hedef seçilince adı ve tarifi söyler;
      sonra en az 4 sn arayla ve tarif 8°'den fazla değiştiyse yeniler; hedef ortalanınca bir kez
-     "tam karşında" der (6°'lik payla, titremede tekrar etmesin). */
-  let sesSon = { hedef: null, zaman: 0, dAz: 0, dAlt: 0, merkez: false };
+     "tam karşında" der (6°'lik payla, titremede tekrar etmesin). Ufkun altındaki hedefte bunu da söyler. */
+  let sesSon = { hedef: null, zaman: 0, yatay: 0, dikey: 0, merkez: false };
   function sesliAcik() { return !!U.oku('arSesli', false) && window.Ses && Ses.sesDurumu() === 'var'; }
-  function sesliYon(m, dAz, dAlt, merkez) {
+  const aciFarki = (a, b) => { const d = Math.abs(a - b) % 360; return Math.min(d, 360 - d); };
+  function sesliYon(t) {
     if (!sesliAcik() || !st.hedef) return;
     const simdi = Date.now(), yeni = sesSon.hedef !== st.hedef;
-    const ad = st.hedef.ad;
-    if (merkez) {
-      if (!sesSon.merkez || yeni) { Ses.soyle(ad + ' tam karşında.'); sesSon = { hedef: st.hedef, zaman: simdi, dAz, dAlt, merkez: true }; }
+    const ad = st.hedef.ad, alt = t.altta ? ', ufkun altında' : '';
+    if (t.merkez) {
+      if (!sesSon.merkez || yeni) { Ses.soyle(ad + ' tam karşında' + alt + '.'); sesSon = { hedef: st.hedef, zaman: simdi, yatay: t.yatay, dikey: t.dikey, merkez: true }; }
       return;
     }
-    if (sesSon.merkez && !yeni && Math.max(Math.abs(dAz), Math.abs(dAlt)) < 6) return;
-    const fark = Math.max(Math.abs(dAz - sesSon.dAz), Math.abs(dAlt - sesSon.dAlt));
+    if (sesSon.merkez && !yeni && t.uzak < 6) return;
+    const fark = Math.max(aciFarki(t.yatay, sesSon.yatay), Math.abs(t.dikey - sesSon.dikey));
     if (yeni || sesSon.merkez || (simdi - sesSon.zaman > 4000 && fark >= 8)) {
-      Ses.soyle((yeni ? ad + ': ' : '') + m);
-      sesSon = { hedef: st.hedef, zaman: simdi, dAz, dAlt, merkez: false };
+      Ses.soyle((yeni ? ad + ': ' : '') + t.m + alt);
+      sesSon = { hedef: st.hedef, zaman: simdi, yatay: t.yatay, dikey: t.dikey, merkez: false };
     }
   }
 
@@ -571,21 +666,45 @@
   }
 
   /* ---------- Kamera ---------- */
+  /* Sıra jetonu: her açma/kapama isteği jetonu artırır. getUserMedia (izin penceresi) beklenirken AR
+     kapatılır, sayfa gizlenir ya da düğmeye yeniden basılırsa, geç gelen akış hemen durdurulur. */
+  let kameraNo = 0;
+  function akisDurdur(akis) {
+    if (!akis) return;
+    try { akis.getTracks().forEach(t => t.stop()); } catch (h) { /* zaten kapalı */ }
+    if (video && video.srcObject === akis) { video.srcObject = null; video.hidden = true; }
+  }
+  function kameraDugme(b, bekliyor) {
+    b.disabled = bekliyor;
+    if (bekliyor) b.setAttribute('aria-busy', 'true'); else b.removeAttribute('aria-busy');
+  }
   async function kameraAc(ac) {
     const b = el.querySelector('#arKamera');
+    const no = ++kameraNo;
     if (!ac) {
-      st.kamera = false; b.setAttribute('aria-pressed', 'false');
-      if (video.srcObject) { video.srcObject.getTracks().forEach(t => t.stop()); video.srcObject = null; }
-      video.hidden = true; return;
+      st.kamera = false; b.setAttribute('aria-pressed', 'false'); kameraDugme(b, false);
+      if (video.srcObject) akisDurdur(video.srcObject);
+      video.srcObject = null; video.hidden = true; return;
     }
+    if (!calisiyor) return;
+    kameraDugme(b, true);   // istek sürerken ikinci dokunuş yeni akış açmasın
+    let akis = null;
+    const gecersiz = () => no !== kameraNo || !calisiyor || document.hidden;
     try {
-      const akis = await navigator.mediaDevices.getUserMedia({ video: { facingMode: { ideal: 'environment' } }, audio: false });
-      video.srcObject = akis; video.hidden = false; await video.play();
+      akis = await navigator.mediaDevices.getUserMedia({ video: { facingMode: { ideal: 'environment' } }, audio: false });
+      if (gecersiz()) { akisDurdur(akis); return; }
+      video.srcObject = akis; video.hidden = false;
+      await video.play();
+      if (gecersiz()) { akisDurdur(akis); return; }
       st.kamera = true; b.setAttribute('aria-pressed', 'true');
       durumYaz('Kamera açık. Yıldızlar kameranın görüntüsüyle tam örtüşmüyorsa iki parmakla yakınlaştırıp uzaklaştır.');
     } catch (h) {
+      akisDurdur(akis);   // play() hatasında da açılmış akış kapanır
+      if (no !== kameraNo) return;
       st.kamera = false; b.setAttribute('aria-pressed', 'false');
-      durumYaz(h && h.name === 'NotAllowedError' ? 'Kamera izni verilmedi.' : 'Kamera açılamadı.');
+      if (calisiyor) durumYaz(h && h.name === 'NotAllowedError' ? 'Kamera izni verilmedi.' : 'Kamera açılamadı.');
+    } finally {
+      if (no === kameraNo) kameraDugme(b, false);
     }
   }
 
@@ -645,15 +764,23 @@
     el.querySelector('#arKamera').addEventListener('click', () => kameraAc(!st.kamera));
     el.querySelector('#arHedefKapat').addEventListener('click', () => { st.hedef = null; el.querySelector('#arHedefSerit').hidden = true; if (window.Ses) Ses.sus(); });
     const sesli = el.querySelector('#arSesli');
-    const sesliCiz = () => {
+    sesliCiz = () => {
       const d = window.Ses ? Ses.sesDurumu() : 'yok-api';
-      sesli.hidden = d === 'yok-api' || d === 'yok-tr';
-      sesli.setAttribute('aria-pressed', String(!!U.oku('arSesli', false)));
+      const gizli = d === 'yok-api' || d === 'yok-tr';
+      if (sesli.hidden !== gizli) sesli.hidden = gizli;
+      const basili = String(!!U.oku('arSesli', false));
+      if (sesli.getAttribute('aria-pressed') !== basili) sesli.setAttribute('aria-pressed', basili);
     };
-    sesliCiz(); setTimeout(sesliCiz, 1800);   // sesler geç yüklenebilir
+    /* Sesler geç yüklenebilir: 'voiceschanged' gelince (ses.js kendi listesini önce yenilesin diye bir tık
+       sonra) ve AR açıkken saniyede bir (nesneleriYenile) Ses.sesDurumu() yeniden okunur. */
+    sesliCiz(); setTimeout(sesliCiz, 1800);
+    try {
+      const s = window.speechSynthesis;
+      if (s && s.addEventListener) s.addEventListener('voiceschanged', () => setTimeout(sesliCiz, 0));
+    } catch (h) { /* ses API'si yok */ }
     sesli.addEventListener('click', () => {
       U.yaz('arSesli', !U.oku('arSesli', false)); sesliCiz();
-      sesSon = { hedef: null, zaman: 0, dAz: 0, dAlt: 0, merkez: false };   // açılınca hemen söylesin
+      sesSon = { hedef: null, zaman: 0, yatay: 0, dikey: 0, merkez: false };   // açılınca hemen söylesin
       if (!U.oku('arSesli', false) && window.Ses) Ses.sus();
       else if (!st.hedef) durumYaz('Sesli yön açık: "Bul" ile bir cisim seç; nereye döneceğini söyleyeceğim.');
     });
@@ -665,7 +792,28 @@
     const [yildizlar, takimyildizlar, hedefler] = await Promise.all([U.veri('yildizlar'), U.veri('takimyildiz'), U.veri('hedefler')]);
     veri = { yildizlar, takimyildizlar, hedefler: hedefler.hedefler };
     iskelet();
-    baslat();
+    /* Veri beklenirken kullanıcı başka sekmeye geçtiyse AR'ı başlatma (yoksa body.ar-acik üst/alt menüyü gizler,
+       döngü, algılayıcılar ve ekran kilidi arka planda çalışır). Geri dönünce goster() başlatır. */
+    if (arSekmesinde()) baslat();
+  }
+  function arSekmesinde() { return (location.hash || '').slice(1).split('/')[0] === 'ar'; }
+
+  /* Ekran kilidi: istek durdur()'dan (ya da sayfa gizlendikten) sonra sonuçlanırsa kilit hemen bırakılır */
+  function kilitIste() {
+    if (!navigator.wakeLock) return;
+    let istek;
+    try { istek = navigator.wakeLock.request('screen'); } catch (h) { return; }
+    Promise.resolve(istek).then(k => {
+      if (!k) return;
+      if (!calisiyor || document.hidden) { try { Promise.resolve(k.release()).catch(() => {}); } catch (h) { /* yok */ } return; }
+      if (kilit && kilit !== k) { try { Promise.resolve(kilit.release()).catch(() => {}); } catch (h) { /* yok */ } }
+      kilit = k;
+    }).catch(() => { /* ekran kilidi engeli yoksa sorun değil */ });
+  }
+  function kilitBirak() {
+    if (!kilit) return;
+    const k = kilit; kilit = null;
+    try { Promise.resolve(k.release()).catch(() => {}); } catch (h) { /* yok */ }
   }
 
   function baslat() {
@@ -674,11 +822,13 @@
     document.body.classList.add('ar-acik');
     if (window.Uydu && !st.uydular) Uydu.uydular().then(t => { st.uydular = t; st.issZaman = null; if (calisiyor) nesneleriYenile(); }).catch(() => { /* uydu verisi yoksa da çalışır */ });
     st.mod = 'bekliyor'; st.R = null; st.sapmaHesaplandi = false; st.goreliVar = false; st.goreliKabul = false; st.izinYok = false;
+    st.izinVerildi = false; st.sonMutlak = 0; st.iosOfset = null; st.manyetik = true; st.kal = U.oku('arKalibrasyon', 0);
+    tarifIsaret = { hedef: null, s: 0 };
     nesneleriYenile();
-    sayac = setInterval(nesneleriYenile, 1000);
+    sayac = setInterval(() => { nesneleriYenile(); sesliCiz(); }, 1000);
     algilayicilariBaslat();
     durumYaz();
-    if (navigator.wakeLock) navigator.wakeLock.request('screen').then(k => { kilit = k; }).catch(() => { /* ekran kilidi engeli yoksa sorun değil */ });
+    kilitIste();
     kare = requestAnimationFrame(ciz);
   }
   function durdur() {
@@ -688,14 +838,14 @@
     cancelAnimationFrame(kare); clearInterval(sayac);
     algilayicilariDurdur();
     kameraAc(false);
-    if (kilit) { kilit.release().catch(() => {}); kilit = null; }
+    kilitBirak();
   }
 
   function goster() { if (veri) baslat(); }
-  window.addEventListener('hashchange', () => { if (!location.hash.startsWith('#ar')) durdur(); });
+  window.addEventListener('hashchange', () => { if (!arSekmesinde()) durdur(); });
   document.addEventListener('visibilitychange', () => {
-    if (document.hidden) { if (st.kamera) kameraAc(false); }
-    else if (calisiyor && navigator.wakeLock) navigator.wakeLock.request('screen').then(k => { kilit = k; }).catch(() => {});
+    if (document.hidden) { if (video && el) kameraAc(false); kilitBirak(); }   // bekleyen kamera isteği de geçersizleşir
+    else if (calisiyor) kilitIste();
   });
 
   U.modul('ar', { ilk, goster });
@@ -703,10 +853,10 @@
   /* Testler için: geçerli dönüşümle bir yükseklik/azimutu ekrana yansıt */
   function yansitTest(alt, az) {
     const R = st.R; if (!R) return null;
-    const v = enu(alt, az), ang = ekranAcisi() * DER, cA = Math.cos(ang), sA = Math.sin(ang);
+    const v = enu(alt, az), ang = yansitmaAcisi() * DER, cA = Math.cos(ang), sA = Math.sin(ang);
     const dx = R[0][0] * v[0] + R[1][0] * v[1] + R[2][0] * v[2], dy = R[0][1] * v[0] + R[1][1] * v[1] + R[2][1] * v[2], dz = R[0][2] * v[0] + R[1][2] * v[1] + R[2][2] * v[2];
     if (dz > -0.02) return null;
     return { x: (dx * cA - dy * sA) / -dz, y: (dx * sA + dy * cA) / -dz }; // merkeze göre, y yukarı pozitif
   }
-  window.UraniaAR = { st, eulerdenMatris, bakisYonu, enu, yansitTest };
+  window.UraniaAR = { st, eulerdenMatris, bakisYonu, enu, yansitTest, tarifHesapla };
 })();

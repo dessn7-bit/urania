@@ -6,13 +6,26 @@
   'use strict';
   const G = window.Gok, U = window.Urania;
   const DEPO = 'defter';
-  let el = null, veri = null, duzenlenen = null, gorevAcik = false;
+  let el = null, veri = null, duzenlenen = null, gorevAcik = false, formDilim = null;
 
   /* ---------- Depo ---------- */
-  function kayitlar() { const k = U.oku(DEPO, []); return Array.isArray(k) ? k : []; }
-  function kaydet(ls) { return U.yaz(DEPO, ls); }
+  /* Depodaki bozuk öğeler (null, eksik alanlı nesne) listeyi, Gökyüzü'nü ve görevleri düşürmesin:
+     okurken ayıklanır. Nesne olan bozuk öğeler yazarken korunur (elle onarılabilsin, sessizce silinmesin). */
+  function okunabilir(k) {
+    return !!(k && typeof k === 'object' && typeof k.id === 'string' && typeof k.zaman === 'string' && !isNaN(new Date(k.zaman)) &&
+      k.cisim && typeof k.cisim === 'object' && typeof k.cisim.anahtar === 'string' && k.cisim.ad != null &&
+      k.konum && typeof k.konum === 'object' && sayiMi(k.konum.enlem) && sayiMi(k.konum.boylam));
+  }
+  function hamListe() { const k = U.oku(DEPO, []); return Array.isArray(k) ? k : []; }
+  function kayitlar() { return hamListe().filter(okunabilir); }
+  function kaydet(ls) {
+    const bozuk = hamListe().filter(k => k && typeof k === 'object' && !Array.isArray(k) && !okunabilir(k));
+    return U.yaz(DEPO, ls.concat(bozuk));
+  }
   function yeniKimlik() { return Date.now().toString(36) + Math.random().toString(36).slice(2, 7); }
   const KIMLIK = /^[a-z0-9]{1,24}$/;
+  const sayiMi = x => typeof x === 'number' && isFinite(x);
+  const metinMi = (x, en) => typeof x === 'string' && x.length <= en;
   /* Bir cisim için son kayıt (Gökyüzü listelerindeki "görüldü" işareti için) */
   function sonGorulme(anahtar) {
     let son = null;
@@ -56,12 +69,65 @@
   }
 
   /* ---------- Biçim yardımcıları ---------- */
-  function yerelGirdi(d) {
-    const p = n => String(n).padStart(2, '0');
-    return d.getFullYear() + '-' + p(d.getMonth() + 1) + '-' + p(d.getDate()) + 'T' + p(d.getHours()) + ':' + p(d.getMinutes());
+  /* Saat dilimi: formdaki saat ve listedeki saat aynı dilimde olmalı. Her kayıt kendi konumunun
+     diliminde gösterilir (kayıtta yoksa şu anki konumun dilimi); cihazın dilimi kullanılmaz. */
+  function gecerliDilim(z) { try { new Intl.DateTimeFormat('tr-TR', { timeZone: z }); return true; } catch (e) { return false; } }
+  function kayitDilimi(k) {
+    const z = k && k.konum && k.konum.saatDilimi;
+    return typeof z === 'string' && gecerliDilim(z) ? z : U.konum().saatDilimi;
+  }
+  const bicimler = {};
+  function bicim(z, tur) {
+    const a = z + '|' + tur;
+    if (!bicimler[a]) bicimler[a] = new Intl.DateTimeFormat(tur === 'parca' ? 'en-US' : 'tr-TR', Object.assign({ timeZone: z },
+      tur === 'saat' ? { hour: '2-digit', minute: '2-digit' } : tur === 'gun' ? { day: 'numeric', month: 'long', weekday: 'long' }
+        : { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit', hourCycle: 'h23' }));
+    return bicimler[a];
+  }
+  const dkYuvarla = d => new Date(Math.round(d.getTime() / 60e3) * 60e3);
+  /* z diliminde duvar saati parçaları */
+  function parcalar(d, z) {
+    const o = {};
+    bicim(z, 'parca').formatToParts(d).forEach(p => { if (p.type !== 'literal') o[p.type] = Number(p.value); });
+    if (o.hour === 24) o.hour = 0;
+    return o;
+  }
+  /* z diliminin d anındaki UTC farkı (ms) */
+  function ofset(d, z) {
+    const p = parcalar(d, z);
+    return Date.UTC(p.year, p.month - 1, p.day, p.hour, p.minute, p.second) - Math.floor(d.getTime() / 1000) * 1000;
+  }
+  function yerelGirdi(d, z) {
+    const p = parcalar(dkYuvarla(d), z), s = n => String(n).padStart(2, '0');
+    return String(p.year).padStart(4, '0') + '-' + s(p.month) + '-' + s(p.day) + 'T' + s(p.hour) + ':' + s(p.minute);
+  }
+  /* "2026-10-27T22:00" → z dilimindeki o duvar saatinin anı */
+  function girdiOku(str, z) {
+    const m = /^(\d{4,})-(\d{2})-(\d{2})T(\d{2}):(\d{2})/.exec(str || '');
+    if (!m) return new Date(NaN);
+    const duvar = Date.UTC(+m[1], +m[2] - 1, +m[3], +m[4], +m[5]);
+    let t = duvar - ofset(new Date(duvar), z);
+    t = duvar - ofset(new Date(t), z);       // yaz saati geçişinde ikinci tahmin
+    return new Date(t);
   }
   const ALETLER = ['Çıplak göz', '7×50 dürbün', 'Teleskop', 'Diğer'];
   const KOSULLAR = ['Berrak', 'Hafif puslu', 'Puslu', 'Parçalı bulutlu', 'Çok bulutlu'];
+  /* Seçim kutusuna değer: listede olmayan değer (eski sürüm, yedekten gelen) için geçici seçenek
+     eklenir; yoksa kutu boşalır ve düzenleyip kaydedince değer kaybolur. */
+  function secDeger(sec, deger) {
+    sec.querySelectorAll('option[data-gecici]').forEach(o => o.remove());
+    const d = typeof deger === 'string' ? deger : '';
+    if (d && ![...sec.options].some(o => o.value === d)) {
+      const o = document.createElement('option'); o.value = d; o.textContent = d; o.dataset.gecici = '1'; sec.appendChild(o);
+    }
+    sec.value = d || sec.options[0].value;
+  }
+  /* Uyarı kutuları birikmesin: aynı yerdeki eskisi silinir */
+  function uyariSil(kap) { (kap || el).querySelectorAll('.df-uyari').forEach(u => u.remove()); }
+  function uyari(oge, yer, metin) {
+    uyariSil();
+    oge.insertAdjacentHTML(yer, '<span class="hata-kutu df-uyari" role="alert" style="display:block">' + U.kacis(metin) + '</span>');
+  }
 
   /* ---------- Görünüm ---------- */
   function iskelet() {
@@ -70,7 +136,7 @@
     kat.forEach(x => { (gruplar[x.grup] = gruplar[x.grup] || []).push(x); });
     el.innerHTML = `
       <h1>Gözlem defteri</h1>
-      <p class="alt-baslik" id="dfOzet"></p>
+      <p class="alt-baslik" id="dfOzet" tabindex="-1"></p>
       <a class="sinav-giris" id="dfGorev" href="#defter/gorevler" hidden><b>Gözlem görevleri</b><span id="dfGorevSayi"></span></a>
       <button type="button" class="dugme dolu" id="dfYeni">Yeni kayıt</button>
       <form class="defter-form" id="dfForm" hidden>
@@ -91,16 +157,18 @@
       <details class="aciklama" style="margin-top:28px">
         <summary>Yedekle ve geri yükle</summary>
         <p class="soluk kucuk" style="margin-top:8px">Kayıtlar yalnız bu telefonda. Tarayıcı verisi silinirse kaybolurlar; ara sıra yedeğini indir.</p>
-        <div class="cip-grup"><button type="button" class="dugme" id="dfIndir">Yedeği indir</button><label class="dugme" for="dfYukle">Yedekten yükle</label><input type="file" id="dfYukle" accept="application/json,.json" hidden></div>
+        <div class="cip-grup"><button type="button" class="dugme" id="dfIndir">Yedeği indir</button><button type="button" class="dugme" id="dfYukleDugme">Yedekten yükle</button><input type="file" id="dfYukle" class="gorsel-gizli" accept="application/json,.json" tabindex="-1" aria-hidden="true"></div>
         <p class="kucuk" id="dfYedekDurum" role="status"></p>
       </details>`;
     el.querySelector('#dfYeni').addEventListener('click', () => formAc(null));
-    el.querySelector('#dfVazgec').addEventListener('click', formKapat);
+    el.querySelector('#dfVazgec').addEventListener('click', vazgec);
     el.querySelector('#dfCisim').addEventListener('change', () => { el.querySelector('#dfDigerAlan').hidden = el.querySelector('#dfCisim').value !== 'diger'; });
     el.querySelector('#dfForm').addEventListener('submit', e => { e.preventDefault(); formKaydet(); });
     el.querySelector('#dfListe').addEventListener('click', listeTikla);
     el.querySelector('#dfIndir').addEventListener('click', yedekIndir);
     el.querySelector('#dfYukle').addEventListener('change', yedekYukle);
+    el.querySelector('#dfYukleDugme').addEventListener('click', () => el.querySelector('#dfYukle').click());
+    el.querySelector('#dfDiger').addEventListener('input', e => { if (e.target.value.trim()) e.target.removeAttribute('aria-invalid'); });
   }
 
   function formAc(kayit, onAnahtar) {
@@ -113,12 +181,16 @@
       sec.value = 'diger'; el.querySelector('#dfDiger').value = kayit ? kayit.cisim.ad : '';
     } else { sec.value = anahtar; el.querySelector('#dfDiger').value = ''; }
     el.querySelector('#dfDigerAlan').hidden = sec.value !== 'diger';
-    el.querySelector('#dfZaman').value = yerelGirdi(kayit ? new Date(kayit.zaman) : new Date());
-    el.querySelector('#dfAlet').value = kayit ? kayit.alet : U.oku('defterSonAlet', '7×50 dürbün');
-    el.querySelector('#dfKosul').value = kayit ? kayit.kosul : 'Berrak';
+    el.querySelector('#dfDiger').removeAttribute('aria-invalid');
+    formDilim = kayit ? kayitDilimi(kayit) : U.konum().saatDilimi;
+    el.querySelector('#dfZaman').value = yerelGirdi(kayit ? new Date(kayit.zaman) : new Date(), formDilim);
+    secDeger(el.querySelector('#dfAlet'), kayit ? kayit.alet : U.oku('defterSonAlet', '7×50 dürbün'));
+    secDeger(el.querySelector('#dfKosul'), kayit ? kayit.kosul : 'Berrak');
     el.querySelector('#dfNot').value = kayit ? (kayit.not || '') : '';
     const k = kayit ? kayit.konum : U.konum();
-    el.querySelector('#dfKonum').textContent = k.ad;
+    /* Cihazın saati başka dilimdeyse formdaki saatin hangi dilimde olduğu yazılır */
+    el.querySelector('#dfKonum').textContent = (k.ad || '') + (formDilim !== Intl.DateTimeFormat().resolvedOptions().timeZone ? ' (saat: ' + U.dilimAdi(formDilim) + ')' : '');
+    uyariSil(f);
     f.hidden = false;
     el.querySelector('#dfYeni').hidden = true;
     sec.focus();
@@ -126,8 +198,16 @@
   function formKapat() {
     el.querySelector('#dfForm').hidden = true;
     el.querySelector('#dfYeni').hidden = false;
+    uyariSil(el.querySelector('#dfForm'));
     duzenlenen = null;
     if (location.hash.startsWith('#defter/')) history.replaceState(null, '', '#defter');
+  }
+  /* Vazgeç: odak, formu açan öğeye (düzenlenen kaydın "Düzenle"si ya da "Yeni kayıt") döner */
+  function vazgec() {
+    const id = duzenlenen;
+    formKapat();
+    const d = id && [...el.querySelectorAll('#dfListe button[data-is="duzenle"]')].find(b => b.dataset.id === id);
+    (d || el.querySelector('#dfYeni')).focus();
   }
 
   function formKaydet() {
@@ -139,14 +219,15 @@
       cisim = { anahtar: 'diger:' + ad.toLocaleLowerCase('tr-TR'), ad };
     } else {
       const c = katalogBul(secim);
-      cisim = { anahtar: c.anahtar, ad: c.ad, ra: c.ra, dec: c.dec };
+      cisim = { anahtar: c.anahtar, ad: c.ad, ra: c.ra, dec: c.dec, cisimAd: c.cisimAd };
     }
+    el.querySelector('#dfDiger').removeAttribute('aria-invalid');
     const zStr = el.querySelector('#dfZaman').value;
-    const zaman = zStr ? new Date(zStr) : new Date();
+    const zaman = zStr ? girdiOku(zStr, formDilim || U.konum().saatDilimi) : new Date();
     if (isNaN(zaman)) { el.querySelector('#dfZaman').focus(); return; }
     const ls = kayitlar();
     const eski = duzenlenen ? ls.find(x => x.id === duzenlenen) : null;
-    const konum = eski ? eski.konum : (({ ad, enlem, boylam, yukseklik }) => ({ ad, enlem, boylam, yukseklik }))(U.konum());
+    const konum = eski ? eski.konum : (({ ad, enlem, boylam, yukseklik, saatDilimi }) => ({ ad, enlem, boylam, yukseklik, saatDilimi }))(U.konum());
     const kayit = {
       id: eski ? eski.id : yeniKimlik(),
       zaman: zaman.toISOString(),
@@ -164,11 +245,15 @@
     U.yaz('defterSonAlet', kayit.alet);
     if (eski) ls[ls.indexOf(eski)] = kayit; else ls.push(kayit);
     if (!kaydet(ls)) {
-      el.querySelector('#dfKaydet').insertAdjacentHTML('afterend', '<span class="hata-kutu" role="alert" style="display:block">Kaydedilemedi: telefonun bu site için ayrılan depolama alanı dolu ya da kapalı. Önce "Yedeği indir" ile yedek al.</span>');
+      uyari(el.querySelector('#dfKaydet'), 'afterend', 'Kaydedilemedi: telefonun bu site için ayrılan depolama alanı dolu ya da kapalı. Önce "Yedeği indir" ile yedek al.');
       return;
     }
     formKapat();
+    uyariSil();
     listeYaz();
+    /* Odak kaydedilen kayda: klavye ve ekran okuyucu yerini kaybetmesin */
+    const li = el.querySelector(`#dfListe li[data-id="${CSS.escape(kayit.id)}"]`);
+    if (li) li.focus();
   }
 
   function listeTikla(e) {
@@ -178,8 +263,13 @@
     if (b.dataset.is === 'duzenle') { formAc(k); window.scrollTo({ top: 0 }); }
     if (b.dataset.is === 'sil') {
       if (b.dataset.onay !== '1') { b.dataset.onay = '1'; b.textContent = 'Silmek için tekrar bas'; setTimeout(() => { if (b.isConnected) { b.dataset.onay = ''; b.textContent = 'Sil'; } }, 4000); return; }
-      kaydet(ls.filter(x => x.id !== k.id));
+      if (!kaydet(ls.filter(x => x.id !== k.id))) {
+        uyari(el.querySelector('#dfListe'), 'beforebegin', 'Silinemedi: telefonun bu site için ayrılan depolama alanı dolu ya da kapalı.');
+        return;
+      }
+      uyariSil();
       listeYaz();
+      el.querySelector('#dfOzet').focus();
     }
   }
 
@@ -194,24 +284,26 @@
       ? `${ls.length} kayıt, ${farkli.size} farklı cisim. Dürbün hedeflerinden ${hedefSayisi}/${veri.hedefler.length}, gezegenlerden ${gezegen}/${G.GEZEGENLER.length} görüldü.`
       : 'Henüz kayıt yok. Bir cisim gördüğünde "Yeni kayıt"a bas; Gökyüzü sekmesindeki listelerden "Gördüm" ile de ekleyebilirsin.';
     /* Gecelere göre grupla (gözlemcinin öğlesinden ertesi öğleye) */
-    const gruplar = [];
+    /* Başlık ve saat kaydın kendi konumunun diliminde (kayıtta yoksa şu anki konumun); şu ankinden farklıysa dilim yazılır */
+    const gruplar = [], simdiDilim = U.konum().saatDilimi;
     ls.forEach(k => {
       const ogle = G.yerelOgle(new Date(k.zaman), k.konum.boylam);
-      const anahtar = ogle.toISOString();
+      const z = kayitDilimi(k);
+      const anahtar = ogle.toISOString() + '|' + z;
       let g = gruplar.find(x => x.anahtar === anahtar);
-      if (!g) { g = { anahtar, ogle, ls: [] }; gruplar.push(g); }
+      if (!g) { g = { anahtar, ogle, z, ls: [] }; gruplar.push(g); }
       g.ls.push(k);
     });
     el.querySelector('#dfListe').innerHTML = gruplar.map(g => `
-      <h2>${U.kacis(U.gunHafta(g.ogle))} gecesi</h2>
+      <h2>${U.kacis(bicim(g.z, 'gun').format(dkYuvarla(g.ogle)))} gecesi${g.z !== simdiDilim ? ` <span class="kucuk soluk">(${U.kacis(U.dilimAdi(g.z))})</span>` : ''}</h2>
       <ul class="liste">${g.ls.map(k => {
         const o = k.otomatik || {};
-        const parca = [U.saat(new Date(k.zaman)), k.alet, k.kosul];
+        const parca = [bicim(g.z, 'saat').format(dkYuvarla(new Date(k.zaman))), k.alet, k.kosul].filter(x => typeof x === 'string' && x);
         if (o.alt != null) parca.push(o.alt + '° yükseklik');
         if (o.ayOran != null) parca.push('Ay %' + o.ayOran + (o.ayAlt != null && o.ayAlt < 0 ? ' (batmıştı)' : ''));
         if (o.bulut != null) parca.push('tahmini bulut %' + o.bulut);
         if (o.yagisOl != null && o.yagisOl > 0) parca.push('yağış olasılığı %' + o.yagisOl);
-        return `<li><span class="ad">${U.kacis(k.cisim.ad)}</span><span class="sag kucuk soluk">${U.kacis(k.konum.ad)}</span>
+        return `<li data-id="${U.kacis(k.id)}" tabindex="-1"><span class="ad">${U.kacis(k.cisim.ad)}</span><span class="sag kucuk soluk">${U.kacis(k.konum.ad || '')}</span>
           <span class="alt">${parca.map(U.kacis).join(' · ')}${k.not ? `<span class="defter-not">${U.kacis(k.not)}</span>` : ''}
           <span class="cip-grup" style="margin-top:6px"><button type="button" class="bag" data-is="duzenle" data-id="${U.kacis(k.id)}">Düzenle</button><button type="button" class="bag" data-is="sil" data-id="${U.kacis(k.id)}">Sil</button></span></span></li>`;
       }).join('')}</ul>`).join('');
@@ -229,8 +321,6 @@
     el.querySelector('#dfYedekDurum').textContent = ls.length + ' kayıt indirildi.';
   }
   /* Yedekten gelen kayıt sıkı denetlenir; metinler zaten her yerde kaçışlanır */
-  const sayiMi = x => typeof x === 'number' && isFinite(x);
-  const metinMi = (x, en) => typeof x === 'string' && x.length <= en;
   function gecerliKayit(k) {
     return !!(k && typeof k === 'object' && KIMLIK.test(k.id) && metinMi(k.zaman, 40) && !isNaN(new Date(k.zaman)) &&
       k.cisim && metinMi(k.cisim.anahtar, 120) && metinMi(k.cisim.ad, 120) &&
@@ -244,14 +334,20 @@
     const o = k.otomatik || {}, oo = {};
     ['ayOran', 'ayAlt', 'alt', 'az', 'bulut', 'yagisOl'].forEach(a => { if (sayiMi(o[a])) oo[a] = o[a]; });
     if (metinMi(o.ayEvre, 40)) oo.ayEvre = o.ayEvre;
-    return { id: k.id, zaman: k.zaman, cisim: { anahtar: k.cisim.anahtar, ad: k.cisim.ad }, alet: k.alet, kosul: k.kosul, not: k.not || '',
-      konum: { ad: k.konum.ad, enlem: k.konum.enlem, boylam: k.konum.boylam, yukseklik: sayiMi(k.konum.yukseklik) ? k.konum.yukseklik : 0 }, otomatik: oo };
+    const konum = { ad: k.konum.ad, enlem: k.konum.enlem, boylam: k.konum.boylam, yukseklik: sayiMi(k.konum.yukseklik) ? k.konum.yukseklik : 0 };
+    if (metinMi(k.konum.saatDilimi, 64) && gecerliDilim(k.konum.saatDilimi)) konum.saatDilimi = k.konum.saatDilimi;
+    /* Zaman UTC ISO biçimine çevrilir ("+03:00" ofsetli dize sıralamayı ve "son görülme"yi bozmasın) */
+    return { id: k.id, zaman: new Date(k.zaman).toISOString(), cisim: { anahtar: k.cisim.anahtar, ad: k.cisim.ad }, alet: k.alet, kosul: k.kosul, not: k.not || '',
+      konum, otomatik: oo };
   }
   function yedekYukle(e) {
     const dosya = e.target.files && e.target.files[0];
     const durumEl = el.querySelector('#dfYedekDurum');
+    /* Seçim hemen temizlenir (File nesnesi elde kalır): hata da olsa aynı dosya yeniden seçilebilsin */
+    e.target.value = '';
     if (!dosya) return;
     const r = new FileReader();
+    r.onerror = () => { durumEl.textContent = 'Bu dosya okunamadı.'; };
     r.onload = () => {
       let j;
       try { j = JSON.parse(r.result); } catch (h) { durumEl.textContent = 'Bu dosya okunamadı: geçerli bir JSON değil.'; return; }
@@ -268,7 +364,6 @@
       if (eklenen && !kaydet(ls)) { durumEl.textContent = 'Yüklenemedi: depolama alanı dolu ya da kapalı. Hiçbir kayıt eklenmedi.'; return; }
       listeYaz();
       durumEl.textContent = `${eklenen} kayıt eklendi` + (atlanan ? `, ${atlanan} kayıt zaten vardı` : '') + (gecersiz ? `, ${gecersiz} kayıt bozuk olduğu için atlandı` : '') + '.';
-      e.target.value = '';
     };
     r.readAsText(dosya);
   }
@@ -289,7 +384,11 @@
     if (gorevAcik || !el.querySelector('#dfListe')) { gorevAcik = false; iskelet(); }
     listeYaz();
     const p = (param || '').split('/');
-    if (p[0] === 'yeni') formAc(null, p[1] ? decodeURIComponent(p[1]) : null);
+    if (p[0] === 'yeni') {
+      let anahtar = null;
+      try { anahtar = p[1] ? decodeURIComponent(p[1]) : null; } catch (e) { anahtar = null; }   // bozuk % dizisi: boş form
+      formAc(null, anahtar);
+    }
   }
 
   U.modul('defter', { ilk, goster });

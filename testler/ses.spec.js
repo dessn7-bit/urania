@@ -84,6 +84,44 @@ test('(a) parçalama: ≤180 karakter, cümle/virgül/boşluk sınırından, hi�
   expect(r.p.length).toBeGreaterThan(2);
 });
 
+test('(a2) parçalama: binlik ayraçlı sayı, sıra sayısı, saat ve tek başına "..." cümle sınırı sayılmaz, kaybolmaz', async ({ page }) => {
+  await sahteOrtam(page);
+  await dersAc(page);
+  const r = await page.evaluate(() => {
+    const dolgu = 'Bu cümle parçalamanın devreye girmesi için yeterince uzun tutulmuş bir dolgu cümlesidir. ';
+    const ham = dolgu + 'Yaklaşık 14.500 yılında Vega kutup yıldızı olur ve 400.000 kat parlak görünür. ' + dolgu +
+      'Bunu 11. dersten hatırla, gece 03.21 civarında bak. ... Sonra ' + dolgu;
+    const t = window.Okunus.okunus(ham);
+    const p = window.Ses.parcala(t);
+    const ust = window.Ses.parcala('x'.repeat(150) + ' ve 11. ' + 'dersten '.repeat(10) + 'sonra.');
+    return { t, p, ust };
+  });
+  expect(r.t).toContain('14500 yılında');
+  expect(r.t).toContain('400000 kat');
+  expect(r.p.join(' ').replace(/\s+/g, '')).toBe(r.t.replace(/\s+/g, ''));   // "..." dahil hiçbir karakter kaybolmaz
+  expect(r.p.join(' ')).toContain('...');
+  expect(r.p.every(x => x.length <= 180)).toBe(true);
+  for (let i = 0; i < r.p.length - 1; i++) {
+    expect(r.p[i], 'parça sayıyla bitip sonraki sayı ya da küçük harfle başlamamalı').not.toMatch(/\d\.$/);
+    expect(r.p[i + 1]).not.toMatch(/^[a-zçğıöşü\d]/);
+  }
+  expect(r.p.some(x => x.includes('11. dersten'))).toBe(true);
+  expect(r.p.some(x => x.includes('03.21'))).toBe(true);
+  /* tavanı aşan tek cümlede boşluktan bölünürken de "11." parçanın sonunda kalmaz */
+  r.ust.slice(0, -1).forEach(x => expect(x).not.toMatch(/\d\.$/));
+});
+
+test('(a3) Dinle: gerçek derste binlik ayraçlı sayı iki konuşmaya bölünmez', async ({ page }) => {
+  await sahteOrtam(page);
+  await dersAc(page, 'd1');
+  await cubuk(page).locator('[data-so="dinle"]').click();
+  await expect.poll(() => say(page)).toBe(1);
+  for (let i = 0; i < 600 && await durumu(page); i++) await page.evaluate(() => window.__sahteSes.bitir());
+  const k = await konusmalar(page);
+  expect(k.join(' ')).toContain('14500 yılında');
+  for (let i = 0; i < k.length - 1; i++) expect(/\d\.$/.test(k[i]) && /^\d/.test(k[i + 1]), k[i].slice(-40) + ' ‖ ' + k[i + 1].slice(0, 40)).toBe(false);
+});
+
 test('(b) Dinle: bloklar sırayla, tr-TR ve Türkçe ses, okunan blok vurgulu; sona gelince çubuk Dinle\'ye döner', async ({ page }) => {
   await sahteOrtam(page);
   await dersAc(page);
@@ -362,6 +400,60 @@ test('(r) Kartları sesli tekrar: soruyu okur, 8 sn sonra cevabı açıp okur; B
   await expect.poll(() => say(page)).toBeGreaterThan(once);
   /* tercih hatırlanır */
   expect(await page.evaluate(() => localStorage.getItem('urania_kartSesli'))).toBe('true');
+});
+
+test('(r2) Kısa konuşma: bir parça hata verirse sonrakine geçer, zincir sonunda bitince bir kez çağrılır; gizliyken hata zinciri bitirir', async ({ page }) => {
+  await sahteOrtam(page);
+  await dersAc(page);
+  await page.evaluate(() => {
+    window.__bitti = 0; window.__hatalar = [];
+    const uzun = 'Birinci cümle oldukça uzun ve ayrıntılı bir açıklama içeriyor, böylece parça sınırına yaklaşıyoruz ve devam ediyoruz. '.repeat(3);
+    window.__parca = window.Ses.parcala(window.Okunus.okunus(uzun)).length;
+    window.Ses.soyle(uzun, { bitince: () => { window.__bitti++; }, hata: h => window.__hatalar.push(h) });
+  });
+  expect(await page.evaluate(() => window.__parca)).toBe(3);
+  await expect.poll(() => say(page)).toBe(1);
+  await page.evaluate(() => window.__sahteSes.hata('synthesis-failed'));
+  await expect.poll(() => say(page)).toBe(2);
+  await page.evaluate(() => window.__sahteSes.hata('interrupted'));
+  await expect.poll(() => say(page)).toBe(3);
+  expect(await page.evaluate(() => window.__bitti)).toBe(0);
+  await page.evaluate(() => window.__sahteSes.bitir());
+  await expect.poll(() => page.evaluate(() => window.__bitti)).toBe(1);
+  expect(await page.evaluate(() => window.__hatalar)).toEqual(['synthesis-failed', 'interrupted']);
+  expect(await olaylar(page)).toContain('kısa konuşma hatası (synthesis-failed)');
+  /* gizliyken hata: kalan parçalar söylenmez, bitince yine çağrılır */
+  await page.evaluate(() => { window.__bitti = 0; window.Ses.soyle('Birinci cümle oldukça uzun ve ayrıntılı bir açıklama içeriyor, böylece parça sınırına yaklaşıyoruz ve devam ediyoruz. '.repeat(3), { bitince: () => { window.__bitti++; } }); });
+  await expect.poll(() => say(page)).toBe(4);
+  await gorunurluk(page, 'hidden');
+  await page.evaluate(() => window.__sahteSes.hata('interrupted'));
+  await expect.poll(() => page.evaluate(() => window.__bitti)).toBe(1);
+  await page.waitForTimeout(100);
+  expect(await say(page)).toBe(4);
+  /* sus() sonrası geç gelen olay bitince'yi çağırmaz */
+  await gorunurluk(page, 'visible');
+  await page.evaluate(() => { window.__bitti = 0; window.Ses.soyle('Kısa bir cümle.', { bitince: () => { window.__bitti++; } }); window.Ses.sus(); });
+  await page.evaluate(() => window.__sahteSes.hata('synthesis-failed'));
+  await page.waitForTimeout(100);
+  expect(await page.evaluate(() => window.__bitti)).toBe(0);
+});
+
+test('(r3) Kartları sesli tekrar: soru konuşması motor hatası verse de 8 sn sayaç başlar ve cevap açılır', async ({ page }) => {
+  await page.clock.install({ time: new Date('2026-10-27T19:00:00+03:00') });
+  await sahteOrtam(page);
+  await page.goto('/index.html#ders/d10');
+  await page.locator('#dsBitir').click();
+  await page.goto('/index.html#ders/kartlar');
+  await page.locator('#kaSesli').click();
+  await expect.poll(() => page.evaluate(() => !!window.__sahteSes.aktif())).toBe(true);
+  /* soru tek ya da çok parçalı olabilir: her parça hata verir */
+  for (let i = 0; i < 20 && await page.evaluate(() => window.__sahteSes.aktif()); i++) {
+    await page.evaluate(() => window.__sahteSes.hata('synthesis-failed'));
+    await page.waitForTimeout(20);
+  }
+  await expect(page.locator('#kaCevir')).toHaveText('Cevabı göster (8)');
+  await page.clock.runFor(8500);
+  await expect(page.locator('#kaArka')).toBeVisible();
 });
 
 test('(y) Gökyüzüne bak: sesli yön tarifi hedefi söyler, ortalanınca "tam karşında" der', async ({ page }) => {
