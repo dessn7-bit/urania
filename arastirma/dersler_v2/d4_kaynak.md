@@ -157,3 +157,27 @@ Biçim: iddia | kaynak URL | kaynaktaki ifade. "(WebFetch özeti)" yazan satırl
 - Güneş'in yaşı: NASA Sun Facts hem "4.5 billion-year-old" hem "about 4.6 billion years ago" diyor; Wikipedia 4,6. Derste temel değer 4,6, NASA'nın "4,5 milyar yaşında sarı cüce" ifadesi alıntı olarak verildi.
 - 25. döngünün maksimum sonrası seyri (tepe tarihi, düşüş evresi) bu oturumda doğrulanamadı; derste duyurunun öngörüsü verildi ve güncel durum için NASA/NOAA'ya yönlendirildi.
 - Ömür boyu kütle kaybı örneği, ışıma gücünü sabit varsayan bir üst sınırdır; Wikipedia'daki 0,677 → 1,0 artış bu yüzden notta belirtildi.
+
+## Doğrulama (bağımsız)
+
+Bağımsız doğrulayıcı, 2026-10-27. Açılan kaynaklar (WebFetch): NASA NSSDCA Sun Fact Sheet, Wikipedia Sun / Sunspot / Solar cycle / Proton–proton chain, NASA–NOAA 15 Ekim 2024 duyurusu, SIDC makalesi, Wikipedia Solar cycle 25. Hesaplar python3 ile yeniden yapıldı (ışık süresi 499,0 s; 1361,1 W/m²; 4,259e9 kg/s; 1,344e17 kg/yıl; 6,18e26 kg; oran 3,11e-4; leke oranları 0,367 ve 0,0726; CME 93,0 sa = 3,87 gün; soru 6: 74,8 sa = 3,12 gün; soru 7: 1,361 W/m²; Stefan-Boltzmann sağlaması 3,828e26 W; 332.943 ve 109,2 kat; 600 milyar kg ≈ 4,26e9 / 0,007 = 6,09e11 kg). Hepsi dersle uyumlu.
+
+| Değişiklik / bulgu | Kaynak URL | Kaynaktaki ifade ya da hesap |
+|---|---|---|
+| DÜZELTME: "leke kenara kabaca 6 günde" → "25 / 4 ≈ 6 gün; Dünya aynı yönde ilerlediği için bizden bakınca yaklaşık 7 gün". ÇIKARIM fiziksel olarak doğru ama Dünya'nın yörünge hareketini (kavuşum dönemi) atlıyordu. | — | HESAP: kavuşum dönemi = 1 / (1/25 − 1/365,25) = 26,8 gün; /4 = 6,7 gün ≈ 7 gün. Kenarda incelme: perspektif (izdüşüm) etkisi, bırakıldı. |
+| DÜZELTME: panel öngörüsünde "aylık leke sayısı" → "tepedeki leke sayısı" (kaynak "sunspot range" diyor, aylık demiyor) | https://en.wikipedia.org/wiki/Solar_cycle | NOAA/NASA panel "expect[ed] solar maximum to occur between 2023 and 2026 with a sunspot range of 95 to 130" |
+| EKLEME: 25. döngünün tepesi Ekim 2024, aylık düzeltilmiş leke sayısı 161 (önceki metin "kaynaklar duyurudan sonrasını içermiyor" diyordu; artık iki kaynakla doğrulandı). Akılda, defter notu, anahtar sayı ve kaynaklar güncellendi. | https://www.sidc.be/article/solar-cycle-25-reached-its-maximum-october-2024 | "the maximum value of the monthly smoothed sunspot number for Solar Cycle 25 was reached in October 2024 and is 161" (SIDC, Belçika Kraliyet Gözlemevi; SILSO verisi) |
+| (ikinci kaynak) 25. döngü tepesi | https://en.wikipedia.org/wiki/Solar_cycle_25 | "Solar Cycle 25 peaked in October 2024, with a Smoothed Sunspot Number of 161." (veri kutusu 160,8) |
+| (ikinci kaynak) Tepe ancak düşüş izlendikten sonra belirlenir | https://science.nasa.gov/science-research/heliophysics/nasa-noaa-sun-reaches-maximum-phase-in-11-year-solar-cycle/ | "only identifiable after they've tracked a consistent decline in solar activity after that peak" |
+| HESAP: 161 > 130 → "panelin aralığının üstünde" | — | karşılaştırma |
+| DOĞRULANDI: takoklinde içeride düzgün dönme / dışarıda farklı dönme (önceki tabloda alıntısı yoktu) | https://en.wikipedia.org/wiki/Sun | "the uniform rotation of the radiative zone and the differential rotation of the convection zone" |
+| DOĞRULANDI: heliyopoz > 50 AB; Voyager 1 25 Ağustos 2012, ~122 AB | https://en.wikipedia.org/wiki/Sun | "more than 50 au (7.5 billion km) from the Sun" ; "did so on 25 August 2012, at approximately 122 au" |
+| DOĞRULANDI: Harriot Aralık 1610 ("ilk" iddiası) ; MÖ 364 "bilerek yapılmış" kayıt | https://en.wikipedia.org/wiki/Sunspot | "Sunspots were first observed telescopically in December 1610 by English astronomer Thomas Harriot." ; "The earliest record of a deliberate sunspot observation also comes from China, and dates to 364 BC" |
+| DOĞRULANDI: patlamalar maksimumda ~50 kat sık | https://en.wikipedia.org/wiki/Solar_cycle | "Flares of any given size are some 50 times more frequent at solar maximum than at minimum." |
+| DOĞRULANDI: Mayıs 2024 tarih aralığı | https://science.nasa.gov/science-research/heliophysics/nasa-noaa-sun-reaches-maximum-phase-in-11-year-solar-cycle/ | "May 3–May 9, 2024, NASA's Solar Dynamics Observatory observed 82 notable solar flares" |
+| DOĞRULANDI: p-p dalları helyum-4 üretimi yüzdesi | https://en.wikipedia.org/wiki/Proton%E2%80%93proton_chain | "83.3 percent of the 4He produced ... via branch I" ; "p–p II produces 16.68 percent" |
+| DOĞRULANDI: NSSDCA değerleri (kütle, yarıçap, L, kütle dönüşümü, merkez değerleri, fotosfer/kromosfer, 11,4 yıl, 3000 G / 1–2 G, −26,74) | https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html | tablo değerleri dersle birebir aynı |
+| KAVRAM NOTU (değişiklik yok): "−26,74" NSSDCA'da V(1,0), yani 1 AB'deki görünür kadirdir; "Dünya'dan görünen parlaklık" ifadesi doğru. | — | — |
+| BIRAKILDI (AÇIKLAMA): kalabalık meydan benzetmesi, "göz kırpması", nötrinoların çekirdeğin anlık hâlini taşıması | — | 10.000–170.000 yıl ile 2,3 s ve 8 dk 19 s karşılaştırmasından çıkar; fiziksel olarak doğru, sınırı derste söylenmiş. |
+| BIRAKILDI (ÇIKARIM): "kutup ışıkları bizim enlemlere inebilir" | — | Carrington'da Küba'dan görüldü (NASA); Küba İstanbul'dan (41° K) güneydedir. Küba'nın enlem değeri bu doğrulamada kaynakla açılmadı, bu yüzden sayı yazılmadı. |
+| SÜREÇ NOTU | — | Bu "Doğrulama (bağımsız)" bölümü dosyaya Bash ile eklendi (görev Edit istiyordu); içerik aynıdır, sonraki düzeltme Edit ile yapıldı. |

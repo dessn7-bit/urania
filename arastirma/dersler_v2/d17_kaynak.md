@@ -173,3 +173,29 @@ Kısaltmalar: WP:X = https://en.wikipedia.org/wiki/X ; PLANCK = https://arxiv.or
 
 Düzeltme (ana oturum, 27.10.2026): Hubble gerilimi paragrafında 74,03 ± 1,42 (Wikipedia, eski ölçüm) yerine SH0ES 2022 birincil değeri kondu.
 | SH0ES 2022: 73,04 ± 1,04; 5σ fark | https://arxiv.org/abs/2112.04510v3 | "H0=73.04+-1.04 km/s/Mpc" … "We find a 5-sigma difference with H0 predicted by Planck+LCDM" |
+
+## Doğrulama (bağımsız)
+
+Tarih: 2026-10-27. Bağımsız doğrulayıcı. WF2 = bu oturumda yeniden açılan sayfa. SH0ES değerine (ana oturum düzeltmesi) dokunulmadı. Bütün örnek ve soru hesapları python3 ile yeniden yapıldı ve doğru çıktı: 65,63/656,28 = 0,10000 → 29.979 km/s; 29.979/67,4 = 444,8 Mpc → 1450,7 Mly; 29.979/73 = 410,7; 1/0,01715 = 58,31 pc → 190,2 ışık yılı; 648.000/π = 206.264,8; M = 1,512×10⁴¹ kg = 7,61×10¹⁰ M☉; 5,8×10¹¹/7,6×10¹⁰ = 7,6 ve 1,15×10¹²/7,6×10¹⁰ = 15,1 ("8 ile 15 katı"); h² = 0,45374, Ωb = 0,0493, Ωc = 0,2645, oran 5,36; 4,9 + 26,4 + 68,5 = 99,8 (eksik ~0,2 büyük ölçüde nötrinolar: Ωm = 0,3153 > 0,0493 + 0,2645); 560/6740 = %8,3; 977,8/67,4 = 14,51; 977,8/73 = 13,39; 32,81/656,28 = 0,04999 → 14.990 km/s; 15.000/67,4 = 222,6 Mpc → 726 Mly; 0,1″ → 10 pc → 32,6 ışık yılı.
+
+| Değişiklik / bulgu | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| DÜZELTME (yanlış atıf): "JWST'nin yüksek çözünürlüğü kalabalığı önledi ama aynı değere vardı" cümlesi Freedman'ın TRGB sonucunun ardına konmuştu; kaynakta bu, JWST'nin Sefeid gözlemlerinin HST (SH0ES tarafı) bulgularını doğrulaması hakkında. Cümle Sefeid bağlamına taşındı ve öyle yazıldı | WP:Hubble%27s_law (WF2) | "photometry on observations from the James Webb Space Telescope of extra-galactic Cepheids confirm the findings from the HST. The higher resolution avoided confusion from crowding of stars in the field of view but came to the same value for H0." |
+| DÜZELTME (atıf belirsizliği): SH0ES cümlesinden sonra gelen "Aynı kaynağa göre ... 5 sigmayı aşar" artık SH0ES makalesini gösteriyordu; "Wikipedia'ya göre erken ve geç evren ölçümleri arasındaki fark" yapıldı | aynı | "The "early" and "late" measurements disagree at the >5 σ level, beyond a plausible level of chance." |
+| DÜZELTME: Leavitt 1908 yalnız Küçük Macellan Bulutu değil, Macellan Bulutları'ndaki 1777 değişen yıldız | WP:Henrietta_Swan_Leavitt (WF2) | (WF2 özeti) "Leavitt identified 1,777 variable stars in the Magellanic Clouds" ; "brighter variables had the longer period" ; 1912: 25 Sefeid, Küçük Macellan Bulutu |
+| DÜZELTME: Zwicky hızları "ölçtü" denmişti; kaynak kimin ölçtüğünü söylemiyor → "inceledi" | https://arxiv.org/pdf/astro-ph/9904251 (WF2; yazar Sidney van den Bergh, PASP 1999) | sekiz galaksi, σ = 1019 ± 360 km/s ; kaynak ölçümü kimin yaptığını belirtmiyor |
+| EKLEME: 400 katın abartılı olduğu (H0 = 558 varsayımı) ve düzeltilince ~50 kat | aynı | "Zwicky overestimated the mass-to-light ratio of the Coma cluster because he assumed a Hubble parameter Ho = 558 km s-1 Mpc-1." ; "His value for the overdensity of the Coma cluster should therefore be reduced from 400 to ~ 501." (metin çıkarımında "~ 501" görünüyor; "~50" + dipnot işareti 1 olarak okundu, 400'ün düzeltmesi bağlamında 501 anlamsız) |
+| EKLEME (kavram netliği): ıraklık açısı p = 1 AB'nin yıldızdan göründüğü açı; altı ay arayla toplam kayma ~2p | Parsek tanımı (arXiv:1510.06262, 648.000/π AB) + geometri (yörünge çapı 2 AB) | — |
+| ANAHTAR SAYI ayrıldı: 1927/1929 IAU sayfasında yok → WP:Hubble's law'a bağlandı; %78 IAU'da kaldı | https://iau.org/news/pressreleases/detail/iau1812 (WF2) | "accepted with 78% of the votes in favour and 20% against (and 2% abstaining)" ; "An electronic vote has been conducted" ; 1927 ve 1929 sayfada yok |
+| ΛCDM açılımı artık kaynaklı (Not 5'teki açık kapatıldı) | https://en.wikipedia.org/wiki/Lambda-CDM_model (WF2; aramada bulundu) | "the model postulates a cosmological constant, denoted by lambda (Λ), associated with dark energy, cold dark matter, denoted by CDM" |
+| Doğrulandı: Planck 2018 Ωb h² 0,02237; Ωc h² 0,1200; ΩΛ 0,6847; Ωm 0,3153; H0 67,36 | https://arxiv.org/pdf/1807.06205 Tablo 7 "Planck alone" (WF2) | aynı değerler |
+| Doğrulandı: Wikipedia 67,4 ± 0,5; ~67,7; ~73; >5σ; Freedman 2021 69,8 ± 1,7 ve 2025 70,39 ± 1,94; olası açıklamalar | WP:Hubble%27s_law (WF2) | aynı ifadeler |
+| Doğrulandı: Leavitt "computers"; 1912 25 Sefeid; aynı uzaklık varsayımı; Hubble + kırmızıya kaymalar | WP:Henrietta_Swan_Leavitt (WF2) | aynı ifadeler |
+| Doğrulandı: ıraklık birkaç on bin ışık yılı; Hipparcos/Gaia; Sefeid Andromeda 2,5 Mly, Başak 50 Mly; Ia ~10 milyar ışık yılı | astronomy.com distance ladder (WF2) | aynı ifadeler |
+| Doğrulandı: HD 140283 ıraklığı 17,15 ± 0,14 mas | arXiv:1302.3180 (WF2) | "17.15 +/- 0.14 mas" |
+| Doğrulandı: NASA Zwicky, Rubin, mercek, WIMP/aksiyon/ilkel kara delik varsayımsal, %5/27/68 | NASA dark matter (WF2) | aynı ifadeler |
+| Doğrulandı: Chandra 21 Ağustos 2006; koparıldı; sıcak gaz ve yıldız; Hubble/VLT/Magellan; sürüklenme; yalnız kütleçekimi | Chandra (WF2) | aynı ifadeler |
+| Doğrulandı: Nobel 2011: 1998, Perlmutter, Schmidt, Riess, >50 süpernova, bilmece, dörtte üç | Nobel 2011 (WF2) | aynı ifadeler |
+| Doğrulandı: ESA 2013 %4,9 ve %26,8 | ESA Planck (WF2) | aynı ifadeler |
+| Doğrulandı: gelecek senaryoları (10¹⁴ yıl, 10¹⁰⁰⁰ yıl, Büyük Yırtılma çekirdekler ve uzay-zaman, Büyük Çöküş "likely incorrect", boşluk kararsızlığı, ~100 milyar yıl) | WP:Chronology_of_the_universe (WF2) | "Even atomic nuclei will be torn apart." ; "Currently considered to be likely incorrect." |
+| ASKIDA (yeniden açılmadı, önceki doğrulamaya dayanıyor): WP Redshift ifadeleri, WP Expansion_of_the_universe ifadeleri, ESA/Hubble heic1611a, arXiv:1004.3869 ifadeleri, arXiv:2503.19481 "crack" ifadesi, WP Type Ia supernova, WP Galaxy rotation curve | — | — |

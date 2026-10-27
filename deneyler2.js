@@ -63,6 +63,9 @@
   function rastgele(tohum) { let s = tohum >>> 0; return () => { s = (s * 1664525 + 1013904223) >>> 0; return s / 4294967296; }; }
   function kaynakLink(U, ls) { return ls.filter(k => k && k.url).map(k => `<a href="${U.guvenliUrl(k.url)}" target="_blank" rel="noopener">${U.kacis(k.ad)}</a>`).join(' · '); }
   function onAyarDugme(U, ls, id) { return `<div class="cip-grup" id="${id}">${ls.map((x, i) => `<button type="button" class="dugme" data-i="${i}">${U.kacis(x.ad)}</button>`).join('')}</div>`; }
+  /* Azaltılmış hareket tercihinde animasyon yerine elle zaman kaydırıcısı */
+  function zamanHtml(o, id, etiket) { return o.azHareket ? o.kaydirici(id, etiket, 0, 1, 'any', 0) : ''; }
+  function zamanOku(kap, id) { const g = kap.querySelector('#' + id); if (!g) return null; const o = kap.querySelector('#' + id + 'Cikti'); if (o) o.textContent = '%' + Math.round(Number(g.value) * 100); return Number(g.value); }
   function yukleniyor(kap) { kap.innerHTML = '<p class="bos">Deney hazırlanıyor…</p>'; }
   function veriHata(kap, U, e) { kap.innerHTML = '<div class="hata-kutu">Deney verisi yüklenemedi: ' + U.kacis(e.message) + '</div>'; }
   /* Kurucular eşzamansız veriye bağlı: durdur() kurulum bitmeden çağrılırsa döngü hiç başlamasın */
@@ -83,8 +86,9 @@
         ${onAyarDugme(U, cis, 'kpOn')}
         <div class="sahne"><canvas id="kpKanvas"></canvas></div>
         <div class="kontroller">
-          ${o.kaydirici('kpA', 'Yarı büyük eksen a', Math.log10(0.3), Math.log10(40), 0.0001, 0)}
+          ${o.kaydirici('kpA', 'Yarı büyük eksen a', Math.log10(0.3), Math.log10(40), 'any', 0)}
           ${o.kaydirici('kpE', 'Dışmerkezlik e', 0, 0.97, 0.001, 0.0167)}
+          ${zamanHtml(o, 'kpZaman', 'Yörüngede zaman (bir turun yüzdesi)')}
           <label class="secim-satir kucuk"><input type="checkbox" id="kpAlan" checked> <span>Eşit sürede taranan alanları göster (yılın 12'de biri)</span></label>
         </div>
         ${o.olcumler([['kpP', 'Dolanım süresi (P² = a³)'], ['kpQ', 'Güneş\'e en yakın / en uzak'], ['kpVq', 'Hız: en yakında / en uzakta'], ['kpV', 'Şu anki hız'], ['kpR', 'Şu anki uzaklık']])}
@@ -105,6 +109,7 @@
       }
       function ciz(dt) {
         if (!o.azHareket) faz = (faz + dt / 10) % 1;          // bir tur 10 saniye
+        else faz = zamanOku(kap, 'kpZaman') % 1;
         const { ctx, w, h } = o.kanvas(cv, 0.62);
         ctx.clearRect(0, 0, w, h);
         const { a, e } = st, b = a * Math.sqrt(1 - e * e);
@@ -159,6 +164,7 @@
           ${o.kaydirici('ggGun', 'Yeni Ay\'dan bu yana gün', 0, d.kavusum_gun, 0.05, 0)}
           <div class="cip-grup" id="ggUzak"><button type="button" class="dugme" data-u="yakin">Ay en yakında</button><button type="button" class="dugme" data-u="ort" aria-pressed="true">Ortalama</button><button type="button" class="dugme" data-u="uzak">Ay en uzakta</button></div>
           <label class="secim-satir kucuk"><input type="checkbox" id="ggGunes" checked> <span>Güneş'in gelgit etkisini ekle</span></label>
+          ${zamanHtml(o, 'ggZaman', 'Dünya\'nın dönüşü (bir turun yüzdesi)')}
         </div>
         ${o.olcumler([['ggAy', 'Ay\'ın gelgit ivmesi'], ['ggGn', 'Güneş\'in gelgit ivmesi'], ['ggOran', 'Güneş / Ay'], ['ggDurum', 'Bu gün']])}
         <div class="deney-metin" id="ggMetin"></div>
@@ -177,17 +183,19 @@
         const c = Math.cos(2 * aci * DER);                    // +1: aynı doğrultu (kabarma), −1: dik (ölü)
         const durum = c > 0.85 ? (Math.cos(aci * DER) > 0 ? 'Yeni Ay: kabarma gelgiti' : 'Dolunay: kabarma gelgiti') : (c < -0.85 ? 'Dördün: ölü gelgit' : 'Arada');
         kap.querySelector('#ggDurum').textContent = durum;
-        const top = st.gunes ? aAy + aGn * Math.cos(2 * aci * DER) : aAy;
-        kap.querySelector('#ggMetin').innerHTML = `<p>Ay ile Güneş aynı çizgideyken (yeni Ay ve dolunay) iki etki toplanır, dik açıdayken (dördünler) Güneş'in çekişi Ay'ınkini kısmen bozar. Ay–Güneş doğrultusundaki toplam şişme şu an Ay'ın tek başına yaptığının ${U.sayi(top / aAy * 100, 0)}%'i kadar.</p>`;
+        /* Gelgit genliği (kabarma ile çekilme arası fark): iki P2 dalgasının toplamı, faz farkı 2θ */
+        const genlik = st.gunes ? Math.sqrt(aAy * aAy + aGn * aGn + 2 * aAy * aGn * Math.cos(2 * aci * DER)) : aAy;
+        kap.querySelector('#ggMetin').innerHTML = `<p>Ay ile Güneş aynı çizgideyken (yeni Ay ve dolunay) iki etki toplanır, dik açıdayken (dördünler) Güneş'in etkisi Ay'ınkini kısmen götürür. Kabarma ile çekilme arasındaki fark (gelgit genliği), Ay'ın tek başına yaptığına göre şu an: %${U.sayi(genlik / aAy * 100, 0)}.</p>`;
       }
       /* P2(cosφ) = (3cos²φ − 1)/2 biçimli şişme; görsel abartı */
       function sekil(phi) {
         let t = st.aAy * (3 * Math.pow(Math.cos(phi), 2) - 1) / 2;
-        if (st.gunes) t += st.aGn * (3 * Math.pow(Math.cos(phi - st.aci * DER), 2) - 1) / 2;
+        if (st.gunes) t += st.aGn * (3 * Math.pow(Math.cos(phi + st.aci * DER), 2) - 1) / 2;   // Güneş −uzanım yönünde çizilir
         return t / st.aAy;
       }
       function ciz(dt) {
         if (!o.azHareket) don = (don + dt / 6) % 1;            // Dünya'nın dönüşü: 6 sn'de bir tur (temsilî)
+        else don = zamanOku(kap, 'ggZaman') % 1;
         const { ctx, w, h } = o.kanvas(cv, 0.62);
         ctx.clearRect(0, 0, w, h);
         const cx = w * 0.42, cy = h * 0.5, R0 = h * 0.26, ab = R0 * 0.16;
@@ -206,7 +214,7 @@
           const ga = -st.aci * DER, gx = cx + Math.cos(ga) * h * 0.44, gy = cy - Math.sin(ga) * h * 0.44;
           ctx.save(); ctx.setLineDash([4, 5]); ctx.strokeStyle = 'rgba(255,210,122,.6)'; ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(gx, gy); ctx.stroke(); ctx.restore();
           ctx.beginPath(); ctx.arc(gx, gy, 9, 0, IKI_PI); ctx.fillStyle = '#FFD27A'; ctx.fill();
-          ctx.fillStyle = o.renk('--soluk'); ctx.fillText('Güneş yönü', gx, gy + (gy > cy ? 24 : -14));
+          ctx.fillStyle = o.renk('--soluk'); ctx.fillText('Güneş yönü', Math.min(w - 36, Math.max(36, gx)), Math.min(h - 4, Math.max(12, gy + (gy > cy ? 24 : -14))));
         }
         /* noktadaki deniz seviyesi: bir gün boyunca grafik (iki kabarma) */
         const gx0 = w * 0.06, gy0 = h * 0.9, gw = w * 0.32, gh = h * 0.12;
@@ -242,8 +250,8 @@
         <div class="sahne"><canvas id="tyKanvas"></canvas></div>
         <div class="sahne tayf-serit"><canvas id="tySerit"></canvas></div>
         <div class="kontroller">
-          ${o.kaydirici('tyT', 'Yüzey sıcaklığı', Math.log10(2500), Math.log10(40000), 0.0001, Math.log10(5772))}
-          ${o.kaydirici('tyV', 'Bize göre hız (+ uzaklaşıyor, − yaklaşıyor)', -1, 1, 0.0001, 0)}
+          ${o.kaydirici('tyT', 'Yüzey sıcaklığı', Math.log10(2500), Math.log10(40000), 'any', Math.log10(5772))}
+          ${o.kaydirici('tyV', 'Bize göre hız (+ uzaklaşıyor, − yaklaşıyor)', -1, 1, 'any', 0)}
         </div>
         ${o.olcumler([['tyTepe', 'En parlak dalga boyu (Wien)'], ['tyBolge', 'Tepe nerede'], ['tyHa', 'Hα çizgisi gözlenen'], ['tyKayma', 'Kayma']])}
         <div class="deney-metin" id="tyMetin"></div>
@@ -265,7 +273,7 @@
         kap.querySelector('#tyTepe').textContent = U.sayi(tepe, 0) + ' nm';
         kap.querySelector('#tyBolge').textContent = bolge(tepe);
         kap.querySelector('#tyHa').textContent = U.sayi(haG, 2) + ' nm (durgunda ' + U.sayi(ha.nm, 2) + ')';
-        kap.querySelector('#tyKayma').textContent = Math.abs(beta) < 1e-7 ? 'yok' : (beta > 0 ? 'kırmızıya ' : 'maviye ') + U.sayi(Math.abs(haG - ha.nm), 2) + ' nm (z = ' + U.sayi((haG - ha.nm) / ha.nm, 5) + ')';
+        kap.querySelector('#tyKayma').textContent = Math.abs(beta) < 1e-7 ? 'yok' : (beta > 0 ? 'kırmızıya ' : 'maviye ') + U.sayi(Math.abs(haG - ha.nm), 2) + ' nm (z = ' + (haG < ha.nm ? '−' : '') + U.sayi(Math.abs(haG - ha.nm) / ha.nm, 5) + ')';
         kap.querySelector('#tyMetin').innerHTML = `<p>${U.sayi(T, 0)} K sıcaklıktaki bir yıldız en çok ${U.sayi(tepe, 0)} nm dalga boyunda (${bolge(tepe)}) ışır: sıcaklık arttıkça tepe kısa dalga boylarına kayar (Wien yasası) ve toplam ışınım çok hızlı artar.${Math.abs(vk) > 0.5 ? ` Yıldız bize göre saniyede ${U.sayi(Math.abs(vk), 0)} km ${vk > 0 ? 'uzaklaştığı için çizgiler kırmızıya (uzun dalga boyuna)' : 'yaklaştığı için çizgiler maviye (kısa dalga boyuna)'} kayıyor. Bütün çizgiler aynı oranda kaydığı için hangi elementin çizgisi olduğunu tanıyıp hızı ölçebilirsin.` : ''}</p>`;
         ciz();
       }
@@ -280,13 +288,14 @@
         for (let nm = l0; nm <= l1; nm += 5) { const B = H.planck(nm * 1e-9, st.T, h, c, k); ls.push([nm, B]); if (B > enB) enB = B; }
         ctx.beginPath(); ls.forEach(([nm, B], i) => { const x = X(nm), y = hh - alt - B / enB * (hh - ust - alt) * 0.95; if (i) ctx.lineTo(x, y); else ctx.moveTo(x, y); });
         ctx.strokeStyle = o.renk('--parsomen'); ctx.lineWidth = 2; ctx.stroke();
-        ctx.save(); ctx.setLineDash([3, 4]); ctx.strokeStyle = o.renk('--pirinc'); ctx.beginPath(); ctx.moveTo(X(st.tepe), ust); ctx.lineTo(X(st.tepe), hh - alt); ctx.stroke(); ctx.restore();
+        if (st.tepe >= l0) { ctx.save(); ctx.setLineDash([3, 4]); ctx.strokeStyle = o.renk('--pirinc'); ctx.beginPath(); ctx.moveTo(X(st.tepe), ust); ctx.lineTo(X(st.tepe), hh - alt); ctx.stroke(); ctx.restore(); }
         ctx.fillStyle = o.renk('--soluk'); ctx.font = '500 11px Plex, sans-serif'; ctx.textAlign = 'center';
         [500, 1000, 1500, 2000, 2500].forEach(nm => ctx.fillText(nm + ' nm', X(nm), hh - 10));
         /* yıldız rengi kutusu */
         ctx.beginPath(); ctx.arc(w - 30, ust + 22, 14, 0, IKI_PI); ctx.fillStyle = yildizRengi(st.T); ctx.fill();
         /* tayf şeridi: 380–750 nm, soğurma çizgileri */
         const s = o.kanvas(sv, 0.14);
+        s.ctx.clearRect(0, 0, s.w, s.h);
         const sx = nm => (nm - 380) / (750 - 380) * s.w;
         for (let nm = 380; nm < 750; nm += 1) { s.ctx.fillStyle = gorunurRenk(nm, 1); s.ctx.fillRect(sx(nm), 0, sx(nm + 1) - sx(nm) + 0.5, s.h * 0.75); }
         cizgiler.forEach(cz => {
@@ -380,7 +389,7 @@
         /* alt şerit: yan görünüş — Ay'ın tutuluma göre yüksekliği (abartılı) */
         const by = h * 0.84, bw = w * 0.9, bx = w * 0.05;
         ctx.strokeStyle = 'rgba(255,210,122,.6)'; ctx.beginPath(); ctx.moveTo(bx, by); ctx.lineTo(bx + bw, by); ctx.stroke();
-        ctx.fillStyle = o.renk('--soluk'); ctx.textAlign = 'left'; ctx.fillText('yandan: tutulum düzlemi ve Ay (eğim abartılı)', bx, by + 32);
+        ctx.fillStyle = o.renk('--soluk'); ctx.textAlign = 'left'; ctx.fillText('yandan: tutulum düzlemi ve Ay (eğim abartılı)', bx, Math.min(h - 4, by + 32));
         const yAy = by - st.beta * 3.2;
         ctx.beginPath(); ctx.arc(bx + bw * (st.uzanim / 360), yAy, 5, 0, IKI_PI); ctx.fillStyle = st.tutulma ? o.renk('--pirinc') : '#DDD'; ctx.fill();
       }
@@ -402,15 +411,16 @@
         ${onAyarDugme(U, orn, 'gcOn')}
         <div class="sahne"><canvas id="gcKanvas"></canvas></div>
         <div class="kontroller">
-          ${o.kaydirici('gcRp', 'Gezegen yarıçapı (Dünya = 1)', Math.log10(0.5), Math.log10(25), 0.0001, 0)}
-          ${o.kaydirici('gcRs', 'Yıldız yarıçapı (Güneş = 1)', Math.log10(0.1), Math.log10(3), 0.0001, 0)}
-          ${o.kaydirici('gcMs', 'Yıldız kütlesi (Güneş = 1)', Math.log10(0.08), Math.log10(2), 0.0001, 0)}
-          ${o.kaydirici('gcP', 'Dolanım süresi (gün)', Math.log10(0.5), Math.log10(5000), 0.0001, Math.log10(365.256))}
+          ${o.kaydirici('gcRp', 'Gezegen yarıçapı (Dünya = 1)', Math.log10(0.5), Math.log10(25), 'any', 0)}
+          ${o.kaydirici('gcRs', 'Yıldız yarıçapı (Güneş = 1)', Math.log10(0.1), Math.log10(3), 'any', 0)}
+          ${o.kaydirici('gcMs', 'Yıldız kütlesi (Güneş = 1)', Math.log10(0.08), Math.log10(2), 'any', 0)}
+          ${o.kaydirici('gcP', 'Dolanım süresi (gün)', Math.log10(0.5), Math.log10(5000), 'any', Math.log10(365.256))}
           ${o.kaydirici('gcB', 'Geçiş yolunun merkeze uzaklığı b (0 = tam ortadan)', 0, 1.2, 0.01, 0)}
+          ${zamanHtml(o, 'gcZaman', 'Geçişte zaman (pencerenin yüzdesi)')}
         </div>
         ${o.olcumler([['gcDer', 'Işıktaki düşüş (derinlik)'], ['gcSure', 'Geçiş süresi'], ['gcA', 'Yörünge yarıçapı a'], ['gcSayi', 'Bir yılda geçiş sayısı']])}
         <div class="deney-metin" id="gcMetin"></div>
-        <p class="kaynak">Yıldız düzgün parlak bir disk varsayıldı (kenar kararması yok); yörünge dairesel. Derinlik (Rp/R*)², süre Winn (2010) formülü, a Kepler III ile. Kaynaklar: ${kaynakLink(U, d.kaynaklar)}</p>`;
+        <p class="kaynak">Yıldız düzgün parlak bir disk varsayıldı (kenar kararması yok); yörünge dairesel. Derinlik en çok örtülen alanın yıldız diskine oranı (tam içerideyken (Rp/R*)²), süre Winn (2010) formülü, a Kepler III ile. Kaynaklar: ${kaynakLink(U, d.kaynaklar)}</p>`;
       const cv = kap.querySelector('#gcKanvas');
       const S = id => kap.querySelector('#' + id);
       let st = {}, faz = 0;
@@ -419,26 +429,29 @@
         const ms = Math.pow(10, Number(S('gcMs').value)), P = Math.pow(10, Number(S('gcP').value)) * 86400;
         const a = Math.cbrt(GMg * ms * P * P / (4 * Math.PI * Math.PI));
         const b = Number(S('gcB').value), k = rp / rs;
-        const derin = H.derinlik(rp, rs);
-        const gecer = b < 1 + k && rs < a;
+        const derin = H.ortusme(1, k, b) / Math.PI;           // en derin an: merkezler arası uzaklık b; sıyırmada ve k > 1'de de doğru
+        const icinde = a <= rs * (1 + k);                    // yörünge yıldızın (ya da gezegen yıldıza değecek kadar) içinde
+        const gecer = !icinde && b < 1 + k;
         const T = gecer ? H.gecisSure(P, a, rs, k, b) : 0;
-        st = { rp, rs, a, b, k, derin, T, P, gecer };
+        st = { rp, rs, a, b, k, derin, T, P, gecer, icinde };
         S('gcRpCikti').textContent = U.sayi(rp / RD, 2) + ' R⊕ (' + U.sayi(rp / 1e3, 0) + ' km)';
         S('gcRsCikti').textContent = U.sayi(rs / RG, 2) + ' R☉';
         S('gcMsCikti').textContent = U.sayi(ms, 2) + ' M☉';
         S('gcPCikti').textContent = U.sayi(P / 86400, P / 86400 < 10 ? 2 : 1) + ' gün';
         S('gcBCikti').textContent = U.sayi(b, 2);
-        S('gcDer').textContent = gecer ? (derin >= 0.001 ? '%' + U.sayi(derin * 100, 2) : U.sayi(derin * 1e6, 0) + ' ppm (milyonda)') : 'geçiş yok';
+        S('gcDer').textContent = icinde ? 'fiziksel değil' : gecer ? (derin >= 0.001 ? '%' + U.sayi(derin * 100, 2) : U.sayi(derin * 1e6, 0) + ' ppm (milyonda)') : 'geçiş yok';
         S('gcSure').textContent = gecer ? U.sayi(T / 3600, 2) + ' saat' : '—';
         S('gcA').textContent = U.sayi(a / AU, 4) + ' AB';
-        S('gcSayi').textContent = U.sayi(365.25 * 86400 / P, 1);
+        S('gcSayi').textContent = gecer ? U.sayi(365.25 * 86400 / P, 1) : '—';
         S('gcMetin').innerHTML = gecer
-          ? `<p>Gezegen yıldızın ${U.sayi(k * 100, 1)}%'i genişliğinde; önünden geçerken yıldızın yüzeyinin ${derin >= 0.001 ? '%' + U.sayi(derin * 100, 2) : 'milyonda ' + U.sayi(derin * 1e6, 0)}'ini örter, ışık o kadar azalır. Derinlik gezegenin büyüklüğünü, süre ve tekrar aralığı yörüngesini verir.${b > 0.8 ? ' Yol yıldızın kenarına yakın: geçiş kısa ve sığ başlayıp biter.' : ''}</p>`
+          ? `<p>Gezegenin çapının yıldızın çapına oranı: %${U.sayi(k * 100, 1)}. Önünden geçerken örttüğü en büyük pay, yani ışıktaki düşüş: ${derin >= 0.001 ? '%' + U.sayi(derin * 100, 2) : 'milyonda ' + U.sayi(derin * 1e6, 0)}. Derinlik gezegenin büyüklüğünü, süre ve tekrar aralığı yörüngesini verir.${b > 1 - k ? ' Yol yıldızın kenarından geçiyor: gezegen diske hiç tam girmiyor, geçiş kısa ve sığ.' : b > 0.8 ? ' Yol yıldızın kenarına yakın: geçiş kısa.' : ''}</p>`
+          : icinde ? '<p>Bu kütle ve dolanım süresiyle yörünge yıldızın içinde ya da yüzeyine değecek kadar yakın kalıyor: böyle bir gezegen olamaz. Dolanım süresini uzat ya da yıldızı küçült.</p>'
           : '<p>Bu açıyla gezegen yıldızın önünden geçmiyor: geçiş yöntemi yalnız yörüngesini yandan gördüğümüz gezegenleri yakalar.</p>';
         ciz(0);
       }
       function ciz(dt) {
         if (!o.azHareket) faz = (faz + (dt || 0) / 8) % 1;
+        else faz = zamanOku(kap, 'gcZaman') % 1;
         const { ctx, w, h } = o.kanvas(cv, 0.72);
         ctx.clearRect(0, 0, w, h);
         /* üst: yıldız diski ve gezegen (gezegen boyu ölçekli; en az 2 piksel) */
@@ -550,7 +563,10 @@
         ctx.strokeStyle = o.renk('--pirinc'); ctx.lineWidth = 1.5; ctx.beginPath(); ctx.moveTo(gx, gy + gh); ctx.lineTo(gx + gw, gy + gh - k * dMax / vMax * gh); ctx.stroke(); ctx.lineWidth = 1;
         ctx.fillStyle = o.renk('--soluk'); ctx.textAlign = 'center';
         ctx.fillText('uzaklık (Mpc) →', gx + gw / 2, h - 8);
-        ctx.save(); ctx.translate(12, gy + gh / 2); ctx.rotate(-Math.PI / 2); ctx.fillText('uzaklaşma hızı (km/s)', 0, 0); ctx.restore();
+        /* eksen uçları: en uzak noktanın uzaklığı ve hız ekseninin üst değeri */
+        ctx.textAlign = 'right'; ctx.fillText(U.sayi(dMax, 0), gx + gw, gy + gh + 13);
+        ctx.textAlign = 'left'; ctx.fillText('0', gx - 4, gy + gh + 13); ctx.fillText(U.sayi(vMax, 0) + ' km/s', gx + 4, gy + 10);
+        ctx.save(); ctx.translate(12, gy + gh / 2); ctx.rotate(-Math.PI / 2); ctx.textAlign = 'center'; ctx.fillText('uzaklaşma hızı', 0, 0); ctx.restore();
       }
       hS.addEventListener('input', hesapla); oK.addEventListener('change', hesapla);
       kap.querySelector('#hbYeni').addEventListener('click', () => { merkez = (merkez + 7) % gal.length; ev = 0; hesapla(); });

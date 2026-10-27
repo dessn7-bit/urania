@@ -38,6 +38,7 @@
       t = t.replace(new RegExp("(^|[^" + H + "])" + kacisRe(b) + "(?![" + H + "'’²³/])", 'g'), '$1' + o);
     });
     /* Derece, yay dakikası/saniyesi: ek varsa bitiştir ("90°'dir" → "90 derecedir") */
+    t = t.replace(/\s?°\s?C(?![A-Za-zÇĞİÖŞÜçğıöşü])/g, ' santigrat derece').replace(/°(?=\d)/g, ' derece ').replace(/′(?=\d)/g, ' yay dakikası ');
     t = t.replace(/°['’]?/g, ' derece').replace(/′['’]?/g, ' yay dakikası').replace(/″['’]?/g, ' yay saniyesi');
     /* Üsler: harften sonra ² ³ → kare / küp; sayıdan ya da harften sonra diğerleri → "üzeri" */
     t = t.replace(/([A-Za-zÇĞİÖŞÜçğıöşü)])²/g, '$1 kare').replace(/([A-Za-zÇĞİÖŞÜçğıöşü)])³/g, '$1 küp');
@@ -73,6 +74,8 @@
     t = t.replace(/<\s?(\d[\d.,]*)/g, '$1 altı');
     /* Sayı aralığı "2–55" → "2 ile 55" */
     t = t.replace(/(\d)\s?–\s?(\d)/g, '$1 ile $2');
+    /* Birimli ya da kelimeli aralık: "300 nm–2 μm", "200 milyon – 1 milyar" */
+    t = t.replace(/(\d\s?[A-Za-zμçğıöşü]+)\s?–\s?(?=\d)/g, '$1 ile ');
     /* İşaretli sayılar: −1,46 ve +6,5 (kelime başında) */
     t = t.replace(/(^|[\s(])[−-](?=\d)/g, '$1eksi ');
     t = t.replace(/(^|[\s(])\+(?=\d)/g, '$1artı ');

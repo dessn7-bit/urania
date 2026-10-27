@@ -23,6 +23,7 @@
   ];
   let R = {};            // veri/deney_rehber.json
 
+  const SABIT_AD = { G: 'kütleçekim sabiti', c: 'ışık hızı', h: 'Planck sabiti', k_B: 'Boltzmann sabiti', sigma: 'Stefan-Boltzmann sabiti', b_wien: 'Wien sabiti' };
   function renk(ad) { return getComputedStyle(document.documentElement).getPropertyValue(ad).trim(); }
   function deger(k) { return F.sabitler[k].deger; }
 
@@ -53,7 +54,7 @@
       if (!s || gor.has(s.url)) return;
       gor.add(s.url);
       const ayni = anahtarlar.filter(x => F.sabitler[x] && F.sabitler[x].kaynak === s.kaynak).length > 1;
-      ls.push(`<a href="${U.guvenliUrl(s.url)}" target="_blank" rel="noopener">${U.kacis(s.kaynak + (ayni ? ' (' + k + ')' : ''))}</a>`);
+      ls.push(`<a href="${U.guvenliUrl(s.url)}" target="_blank" rel="noopener">${U.kacis(s.kaynak + (ayni ? ': ' + (SABIT_AD[k] || k) : ''))}</a>`);
     });
     (ek || []).forEach(e => { if (e && e.url && !gor.has(e.url)) { gor.add(e.url); ls.push(`<a href="${U.guvenliUrl(e.url)}" target="_blank" rel="noopener">${U.kacis(e.ad)}</a>`); } });
     return '<p class="kaynak">Kaynaklar: ' + ls.join(' · ') + '</p>';
@@ -77,7 +78,6 @@
     const G = deger('G'), c = deger('c'), Mg = deger('M_gunes'), g0 = deger('g0');
     const onAyar = F.karadelikler;
     kap.innerHTML = `
-      <p class="alt-baslik">Kütleyi ve uzaklığı değiştir: olay ufkunun boyunu, zamanın ne kadar yavaşladığını ve vücudunun ne kadar gerildiğini gör.</p>
       <div class="cip-grup" id="kdOn">${onAyar.map((k, i) => `<button type="button" class="dugme" data-i="${i}">${U.kacis(k.ad)}</button>`).join('')}</div>
       <div class="sahne"><canvas id="kdKanvas"></canvas></div>
       <div class="kontroller">
@@ -183,10 +183,9 @@
   function yorunge(kap) {
     const GM = deger('GM_dunya'), RE = deger('R_dunya');
     kap.innerHTML = `
-      <p class="alt-baslik">Newton'un topu: Dünya'nın üstünden yatay bir atış yap. Yavaşsan düşersin, yeterince hızlıysan sürekli düşüp hiç çarpmazsın, daha hızlıysan kurtulursun.</p>
       <div class="sahne"><canvas id="yoKanvas"></canvas></div>
       <div class="kontroller">
-        ${kaydirici('yoYuk', 'Atış yüksekliği', 2.2, 4.6, 0.01, 2.6)}
+        ${kaydirici('yoYuk', 'Atış yüksekliği', 2.2, 4.6, 'any', 2.6)}
         ${kaydirici('yoHiz', 'Atış hızı', 0.3, 1.6, 0.005, 1)}
         <div class="cip-grup"><button type="button" class="dugme" id="yoDaire">Dairesel hız</button><button type="button" class="dugme" id="yoKac">Kurtulma hızı</button><button type="button" class="dugme" id="yoTekrar">Yeniden at</button></div>
       </div>
@@ -307,9 +306,8 @@
     const T = F.anakol.tablo.slice().sort((a, b) => a.kutle - b.kutle);
     const mMin = T[0].kutle, mMax = T[T.length - 1].kutle;
     kap.innerHTML = `
-      <p class="alt-baslik">Bir yıldızın kaderini doğduğu kütle belirler. Kütleyi seç; Hertzsprung-Russell diyagramındaki yerini, parlaklığını, ömrünü ve nasıl öleceğini gör.</p>
       <div class="sahne"><canvas id="hrKanvas"></canvas></div>
-      <div class="kontroller">${kaydirici('hrKutle', 'Başlangıç kütlesi', Math.log10(mMin), Math.log10(mMax), 0.005, 0)}</div>
+      <div class="kontroller">${kaydirici('hrKutle', 'Başlangıç kütlesi', Math.log10(mMin), Math.log10(mMax), 'any', 0)}</div>
       ${olcumler([['hrTip', 'Tayf sınıfı (yaklaşık)'], ['hrL', 'Işıma gücü'], ['hrT', 'Yüzey sıcaklığı'], ['hrR', 'Yarıçap'], ['hrOmur', 'Anakolda kalma süresi'], ['hrSon', 'Sonu']])}
       <div class="deney-metin" id="hrMetin"></div>
       <p class="kaynak">Noktalar tablodaki değerler; aradaki kütleler için logaritmik ara değer kullanılır, yani ara sonuçlar yaklaşıktır. ${U.kacis(F.anakol.not || '')} Kaynaklar: <a href="${U.guvenliUrl(F.anakol.url)}" target="_blank" rel="noopener">${U.kacis(F.anakol.kaynak)}</a> · <a href="${U.guvenliUrl(F.anakol.omur.url)}" target="_blank" rel="noopener">${U.kacis(F.anakol.omur.kaynak)}</a> · <a href="${U.guvenliUrl(F.sonlar.url)}" target="_blank" rel="noopener">${U.kacis(F.sonlar.kaynak)}</a></p>`;
@@ -417,7 +415,6 @@
     const c = deger('c');
     const hedef = F.uzakliklar;
     kap.innerHTML = `
-      <p class="alt-baslik">Bir yıldıza ışık hızına yakın bir hızla git. Dünya'da geçen süre ile gemide geçen süre birbirinden ayrılır: özel göreliliğin zaman genişlemesi.</p>
       <div class="cip-grup" id="grHedef">${hedef.map((u, i) => `<button type="button" class="dugme" data-i="${i}" aria-pressed="${i === 0}">${U.kacis(u.ad)}</button>`).join('')}</div>
       <div class="kontroller">${kaydirici('grHiz', 'Hız (ışık hızının yüzdesi)', 0, 6, 0.01, 2)}</div>
       ${olcumler([['grV', 'Hız'], ['grGama', 'Lorentz çarpanı γ'], ['grDunya', 'Dünya\'da geçen süre'], ['grGemi', 'Gemide geçen süre']])}
@@ -481,7 +478,7 @@
     return `<section class="rehber" aria-label="Rehber">
       <h2>Adım adım</h2>
       <ol class="rehber-adim">${r.adimlar.map((a, i) => `<li data-i="${i}"${bitti.indexOf(i) >= 0 ? ' class="yapildi"' : ''}>
-        <p class="rh-yap"><b>Yap:</b> ${U.kacis(a.yap)}${a.ayar || a.tikla ? ` <button type="button" class="bag rh-uygula" data-i="${i}">Uygula</button>` : ''}</p>
+        <p class="rh-yap"><b>Yap:</b> ${U.kacis(a.yap)}${a.ayar || a.tikla ? ` <button type="button" class="bag rh-uygula" data-i="${i}" aria-label="${i + 1}. adımı uygula">Uygula</button>` : ''}</p>
         <details class="rh-ac"${bitti.indexOf(i) >= 0 ? ' open' : ''}><summary>Ne görmelisin, neden?</summary>
           <p><b>Gözle:</b> ${U.kacis(a.gozle)}</p><p><b>Neden:</b> ${U.kacis(a.neden)}</p></details></li>`).join('')}</ol>
       ${r.kaynaklar && r.kaynaklar.length ? `<p class="kaynak">Rehberdeki bilgilerin kaynakları: ${r.kaynaklar.map(k => `<a href="${U.guvenliUrl(k.url)}" target="_blank" rel="noopener">${U.kacis(k.ad)}</a>`).join(' · ')}</p>` : ''}
@@ -489,7 +486,9 @@
   }
   function rehberUygula(kap, id, i) {
     const a = R[id] && R[id].adimlar[i]; if (!a) return;
-    if (a.tikla) { const b = kap.querySelector(a.tikla); if (b) b.click(); }
+    const hedefler = [a.tikla].concat(Object.keys(a.ayar || {})).filter(Boolean);
+    if (hedefler.some(sec => !kap.querySelector(sec))) return;      // deney henüz kurulmadı
+    if (a.tikla) kap.querySelector(a.tikla).click();
     Object.keys(a.ayar || {}).forEach(sec => {
       const g = kap.querySelector(sec); if (!g) return;
       if (g.type === 'checkbox') g.checked = Boolean(a.ayar[sec]); else g.value = a.ayar[sec];
@@ -500,7 +499,7 @@
     if (li) { li.classList.add('yapildi'); const d = li.querySelector('details'); if (d) d.open = true; }
     const bitti = U.oku('rehber_' + id, []) || [];
     if (bitti.indexOf(i) < 0) { bitti.push(i); U.yaz('rehber_' + id, bitti); }
-    const sahne = kap.querySelector('.sahne'); if (sahne && sahne.scrollIntoView) sahne.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+    const sahne = kap.querySelector('.sahne'); if (sahne && sahne.scrollIntoView) sahne.scrollIntoView({ block: 'nearest', behavior: azHareket ? 'auto' : 'smooth' });
   }
 
   function deneyAc(id) {
@@ -516,8 +515,23 @@
       ${r.ders ? `<p class="deney-ders">İlgili ders: <a href="#ders/${r.ders}">${U.kacis(dersAdi(r.ders))}</a></p>` : ''}`;
     const kap = el.querySelector('#deneyKap');
     aktif = k(kap) || null;
+    erisilebilir(kap, d.ad);
     el.querySelectorAll('.rh-uygula').forEach(b => b.addEventListener('click', () => rehberUygula(kap, id, Number(b.dataset.i))));
     window.scrollTo(0, 0);
+  }
+  /* Ekran okuyucu: kaydırıcı değeri çıktı kutusundaki metinle okunsun, ölçümler duyurulsun, kanvasın adı olsun */
+  function erisilebilir(kap, ad) {
+    let bekliyor = false;
+    const guncelle = () => {
+      bekliyor = false;
+      kap.querySelectorAll('input[type=range]').forEach(g => { const o = kap.querySelector('#' + g.id + 'Cikti'); if (o && o.textContent) g.setAttribute('aria-valuetext', o.textContent); });
+      kap.querySelectorAll('dl.olcumler:not([aria-live])').forEach(d => d.setAttribute('aria-live', 'polite'));
+      kap.querySelectorAll('canvas:not([role])').forEach(c => { c.setAttribute('role', 'img'); c.setAttribute('aria-label', ad + ': canlı çizim; değerler aşağıdaki ölçüm kutularında'); });
+    };
+    const iste = () => { if (!bekliyor) { bekliyor = true; requestAnimationFrame(guncelle); } };
+    ['input', 'change', 'click'].forEach(t => kap.addEventListener(t, iste));
+    new MutationObserver(iste).observe(kap, { childList: true });
+    iste();
   }
   let dersAdlari = {};
   function dersAdi(id) { return dersAdlari[id] || 'Ders'; }

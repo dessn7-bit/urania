@@ -125,3 +125,32 @@ Kaynaklar bu turda WebSearch sonuçlarında görülüp WebFetch ile okundu (WebF
 - Arcturus'un tayf türü aynı Wikipedia maddesinde K0 ve K1,5 olarak geçiyor; derste "K yıldızı" denip fark belirtildi. Arcturus'un takımyıldızı için kaynak bulunmadığından derste takımyıldız adı verilmedi.
 - WebSearch kotası bu oturumda d15 sırasında doldu; d5 için gereken yeni bilgiler mevcut d5 kaynak URL'lerinden (Wikipedia) WebFetch ile okundu.
 - Ek tur (satır 83–102): tayf sınıfları bölümüne bir, H-R diyagramı bölümüne iki paragraf eklendi. Wikipedia'nın H-R maddesi Hipparcos ve Gaia diyagramlarındaki yıldız sayısını vermiyor; bu yüzden derste sayı yazılmadı. Soğuk yıldızlarda hidrojen çizgilerinin neden zayıfladığı Britannica'da açıklanmıyor; derste yalnız sıcak taraf (iyonlaşma) açıklandı.
+
+
+## Doğrulama (bağımsız)
+
+Doğrulayıcı: bağımsız ajan, 2026-10-27. Derste geçen her sayı/tarih/ad satır 1–102 ile eşleştirildi. Kaynağı yeniden açılanlar (WebFetch): Mamajek tablosu (sürüm 2022.04.16), WP Stellar_classification, WP Main_sequence, WP Hertzsprung–Russell_diagram, WP Mass–luminosity_relation, WP Sun, WP Red_giant, WP Stellar_evolution, WP Protostar, WP Wien's_displacement_law, WP Betelgeuse, Britannica, Iowa, NASA Sun Facts, EarthSky kırmızı cüce. Bütün hesaplar python3 ile yeniden yapıldı.
+
+| # | Konu | Bulgu / değişiklik | Dayanak |
+|---|---|---|---|
+| V1 | Mamajek girdileri | Doğru: O5V 41400 K, logL 5.54, 43 M☉; B0V logL 4.65, 17.7; A0V 9700 K, logL 1.58, R 2.193, 2.18; G2V logL 0.01, 1.00; K0V logL −0.34, 0.88; M0V 3850 K, logL −1.16, 0.57 | MAM (WebFetch) |
+| V2 | Ömür hesapları | Yeniden hesap: O5 1,24 milyon; B0 3,96 milyon; A0 573 milyon; G2 9,77 milyar; K0 19,3 milyar; M0 82,4 milyar yıl. Dersteki yuvarlamalar doğru | HESAP |
+| V3 | Yarıçap örneği | 10^1,58 = 38,02; √ = 6,166; (9700/5772)² = 2,824; R = 2,183 R☉. 4000 K/100 L☉ → 20,8 R☉. Doğru | HESAP |
+| V4 | "Kütle biraz artınca … hidrostatik denge daha yüksek bir basınçta" | DÜZELTİLDİ: kavram hatası. Üst anakolda kütle arttıkça merkez sıcaklığı artar ama merkez yoğunluğu ve basıncı artmaz; "daha yüksek basınç" ifadesi çıkarıldı. Yerine kaynaklı sıcaklık karşılaştırması kondu: Güneş çekirdeği ~15,7 milyon K (satır 38), 1,5 M☉ çekirdeği ~18 milyon K (satır 41) | WP:Sun ; WP:Main_sequence |
+| V5 | "Kural ile tablo arasında neredeyse iki kat fark" | DÜZELTİLDİ → "yaklaşık 1,7 kat": 38,02 / 2,18⁴ (22,59) = 1,68 | HESAP |
+| V6 | "Harcama kabaca 10–16 katına" | DÜZELTİLDİ → "11–16": 2^3,5 = 11,3 ; 2^4 = 16 | HESAP |
+| V7 | 2 M☉ ömrü, "iki formül %40 farklı" | Hesap doğru (1,25 ve 1,768 milyar yıl; oran 1,414). İfade netleştirildi: "ikinci sonuç birinciden yaklaşık %40 büyük" (küçükten büyüğe göre; büyüğe göre fark %29). Farkın nedeni eklendi: M^-2,5 biçimi L ∝ M^3,5 varsayar (10^10 × M × M^-3,5), örneğin 1. adımı ise M^4. 5–8 kat kısa ömür: 10/1,768 = 5,66 ; 10/1,25 = 8. Doğru | HESAP ; WP:Main_sequence formülü (DOG5 #16; bu turda WebFetch formülü aktaramadı, satır 49 önceki doğrulamaya dayanıyor) |
+| V8 | Önyıldız 500.000 yıl | DÜZELTİLDİ: metin bu süreyi 120–200 M☉ yıldızlara bağlıyor gibi okunuyordu ("Bu yıldızların …"). Kaynak süreyi yalnız Güneş kütlesi ve altı için veriyor; cümle buna göre yeniden yazıldı | WP:Protostar "For a low-mass star (i.e. that of the Sun or lower), it lasts about 500,000 years." |
+| V9 | M0V %7, 2,9 kadir; Wien 743 nm | 10^-1,16 = 0,069 ; 2,5 × 1,16 = 2,90 ; 2,8978×10⁻³/3900 = 743 nm. Doğru | HESAP |
+| V10 | Arcturus en yüksek 68° | 90 − 41,014 + 19,182 = 68,17°. Doğru | HESAP + veri/yildizlar.json y[2] |
+| V11 | Güneş 256 kat çap ↔ 1,19 AB | 256 × 695.700 km = 1,19 AB; iki sayı tutarlı | WP:Sun ; HESAP |
+| V12 | %48 artış | 1/0,677 = 1,477. Doğru | HESAP |
+| V13 | Kırmızı dev rengi "sarımsı beyazdan kırmızımsı turuncuya" | Satır 68'de alıntı yoktu; eklendi | WP:Red_giant "The appearance of the red giant is from yellow-white to reddish-orange." |
+| V14 | Betelgeuse B−V 1,50 | Uygulama kataloğu değeri (y[9]) doğru aktarılmış; WP:Betelgeuse 1,85 veriyor ("has a B–V color index of 1.85"). Betelgeuse değişen yıldız olduğundan katalog farkı normal; derste "uygulamanın kataloğundaki" diye belirtildiği için bırakıldı | veri/yildizlar.json ; WP:Betelgeuse |
+| V15 | Betelgeuse ~3800 K, Rigel 12.100 K | Doğru | WP:Wien's_displacement_law "blue-white Rigel (T = 12100 K) and the red Betelgeuse (T ≈ 3800 K)" |
+| V16 | Hertzsprung 1906 Potsdam; %90; 18 MK; 1,3–1,5 M☉; 120–200 M☉; 0,08 M☉ = 80 Jüpiter; Güneş 4,5 milyar yıl; erken Güneş %70 | Hepsi kaynakta birebir | WP:Main_sequence (WebFetch) |
+| V17 | Tayf tablosu, paylar, Fleming/Maury/Cannon/Saha/Payne, MK 1943, G2V ~5800 K, L/T/Y | Hepsi kaynakta birebir. Not: MK listesinde Iab de var; derste anılmaması hata değil | WP:Stellar_classification (WebFetch) |
+| V18 | Kütle–ışıma: 3,5 üssü, 2–55 M☉, ampirik, Eddington 1924 | Doğru. Parçalı katsayılar (0,23; 1,4) bu turda WebFetch ile aktarılamadı; DOG5 #13 alıntısına dayanıyor. Süreklilik denetimi: 1,4 × 2^3,5 = 15,8 ≈ 2^4 = 16 (tutarlı) | WP:Mass–luminosity_relation ; HESAP |
+| V19 | Güneş toplam anakol ömrü | WP:Sun "approximately 10 to 11 billion years" diyor; dersteki "~10 milyar" WP:Main_sequence ile uyumlu, bırakıldı | WP:Sun |
+| V20 | NASA: yarısından biraz azı, ~5 milyar yıl; Merkür, Venüs, belki Dünya | Doğru | NASA Sun Facts (WebFetch) |
+| V21 | EarthSky kırmızı cüce | Kaynak cümlesi: "you can't see it with your eye alone – or any other red dwarf – because these stars are too dim" (it = Proxima). Destekliyor | EarthSky (WebFetch) |

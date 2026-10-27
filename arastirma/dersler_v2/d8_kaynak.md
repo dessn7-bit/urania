@@ -138,4 +138,27 @@ Kısaltmalar: WP:X = https://en.wikipedia.org/wiki/X ; PLANCK = https://arxiv.or
 4. Yeniden iyonlaşmanın zamanlaması da kaynaklar arasında farklı (Wikipedia aralığı vs Cambridge 2015'teki 550 milyon yıl); ikisi de verildi.
 5. "İlk kuşak yıldız henüz doğrudan gözlenmedi" ve "iyonlaştıran adaylar (yıldızlar, galaksiler, AGN)" gibi bilgileri kaynakta açıkça görmediğim için çıkardım.
 6. MoM-z14 makalesinin yazar adlarını WebFetch çıktısında görmediğim için kaynak listesinde yazar yazılmadı, başlıkla verildi.
+
+## Doğrulama (bağımsız)
+
+Tarih: 2026-10-27. Bağımsız doğrulayıcı. WF2 = bu oturumda yeniden açılan sayfa. Bütün örnek ve soru hesapları python3 ile yeniden yapıldı ve doğru çıktı: (1 − 0,245)/(0,245/4) = 12,33 (755/61 = 12,38 → "12,4"); 2,725 × 1091 = 2973 K; 3000/1091 = 2,750 K; Wien 2,8978×10⁻³/3000 = 966 nm; 10⁻⁵/2,725 = 3,67×10⁻⁶, 100 m'de 0,37 mm; 1/15,44 = 0,0648; 2,725 × 15,44 = 42,07 K; 656,28 × 15,44 = 10.133 nm; 3,0857×10¹⁹/67,4 = 4,578×10¹⁷ s → 14,51 milyar yıl; 977,8 sabiti = 3,0857×10¹⁹/3,15576×10¹⁶ = 977,80; 13,8 − 0,28 = 13,52; z = 9 → 27,25 K; 977,8/73 = 13,39; 10⁵ × 10²⁷ = 10³².
+
+| Değişiklik / bulgu | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| DÜZELTME (kaynak uyumu): "bu sonuç Planck'ın modele dayalı değeriyle uyumludur" 2026 makalesinin özetinde yok (uyum ifadesi önceki III. makalede). Ders: belirsizlikler eklendi, "kozmoloji modelinden büyük ölçüde bağımsız" (özetten) ve "Planck'ın 13,797'sine çok yakın" (karşılaştırma) diye yazıldı | https://arxiv.org/abs/2603.04872v1 (WF2) | "t_GC = 13.61 ± 0.25 (stat) ± 0.23 (sys) Gyr" ; "t_U = 13.81 ± 0.25 (stat) ± 0.23 (sys) Gyr" ; "a precise and largely cosmological model--independent probe of the age of the Universe" ; yazarlar Valcin, Jimenez, Lardo, Seljak, Verde; 5 Mart 2026 |
+| EKLEME: MoM-z14 parlak kaynak sayısı JWST öncesi modellerin 100 katından fazla | https://arxiv.org/abs/2505.11263v2 (WF2) | "is >100× larger (182^{+329}_{-105}×) than pre-JWST consensus models" |
+| Doğrulandı: MoM-z14 z = 14,44, NIRSpec/PRISM, 280 milyon yıl; ilk yazar Rohan P. Naidu, 16 Mayıs 2025 | aynı | "z_spec = 14.44" ; "confirmed with NIRSpec/PRISM spectroscopy" ; "a mere 280 million years after the Big Bang" |
+| Doğrulandı: Planck 2018 temel ΛCDM yaş 13,797 ± 0,023; +BAO 13,787 ± 0,020; Ωb h² 0,02237; Ωc h² 0,1200; ΩΛ 0,6847; H0 67,36 (Tablo 7, Planck alone ve Planck+BAO sütunları) | https://arxiv.org/pdf/1807.06205 (Planck 2018 I, WF2; aramada bulundu) | "Age[Gyr] 13.797 ± 0.023" ; "13.787 ± 0.020" (Planck + BAO) |
+| Doğrulandı: H0 = 67,4 ± 0,5 (özet); YP ≈ 0,2454 | https://arxiv.org/pdf/1807.06209v4 (WF2) | "H0 = (67.4 ± 0.5)" ; "Y_P ≈ 0.2454" (PArthenope BBN öngörüsü) |
+| Doğrulandı: HD 140283 14,46 ± 0,31; ~± 0,8; çelişmez (2013) | https://arxiv.org/abs/1302.3180 (WF2) | "an age of 14.46 +/- 0.31 Gyr" ; "about +/-0.8 Gyr" ; "does not conflict with the age of the Universe" |
+| Doğrulandı: 2,72548 ± 0,00057 K | https://arxiv.org/abs/0911.1955 (WF2) | "2.72548 +/- 0.00057 K" |
+| Doğrulandı: COBE 18 Kasım 1989; kara cisim; yüz binde bir derece; galaksi ipucu; Mather ve Smoot rolleri | Nobel 2006 basın bülteni (WF2) | aynı ifadeler |
+| Doğrulandı: Big Bang yanlış anlama; sıcak-yoğun hâl; köken açık soru; Hoyle Mart 1949; Lemaître 1931; üç en erken/doğrudan kanıt; 1960'ların sonu Kararlı Durum | WP:Big_Bang (WF2) | aynı ifadeler |
+| Doğrulandı: şişme 10²⁶, "10⁻³³ ile 10⁻³² s arası"; kuark çağı 10⁻¹²–10⁻⁵ s; 10¹² K hadron; 1 s nötrino; 3–20 dakika; 47.000 yıl z = 3600; 370.000 yıl ~4000 K; karanlık çağ ~1 milyar yılda tam biter; birkaç yüz milyon yıl, 2016 Planck 300 milyon; z = 16, 9–10, 5–6 | WP:Chronology_of_the_universe (WF2) | aynı ifadeler |
+| Doğrulandı: 378.000 yıl, z = 1100, ~3000 K, saydam | WP:Recombination_(cosmology) (WF2) | aynı ifadeler |
+| Doğrulandı: ESA 13,82 milyar yıl; 380.000 yıl; yoğunluk farkları; şişme | ESA Planck 2013 (WF2) | aynı ifadeler |
+| Doğrulandı: Cambridge 2015: 100 milyon yıl geç; 550 milyon yıl; karanlık çağ ilk yıldızlara kadar | cam.ac.uk (WF2) | aynı ifadeler (5 Şubat 2015) |
+| Doğrulandı: 46,5 milyar ışık yılı; sonsuz olabilir | WP:Observable_universe (WF2) | aynı ifadeler |
+| ASKIDA: z* = 1089,92 ± 0,25 Planck 2018 VI Tablo 2'den (önceki doğrulama); PDF bu oturumda Tablo 2'yi göstermedi, Planck 2018 I Tablo 7'de z* yok. Derste "z ≈ 1090" yuvarlak kullanıldığı ve Wikipedia z = 1100 verdiği için risk düşük | — | — |
+| ASKIDA (yeniden açılmadı, önceki doğrulamaya dayanıyor): WP Redshift rekor listesi (GN-z11 11,1; JADES-GS-z14-0 14,32), Nobel 1978, IAU 1812 dışındaki WP Hubble's law ifadeleri, WP Big_Bang_nucleosynthesis | — | — |
 7. Bisiklet pompası benzetmesi öğreticidir; sıcaklık–ölçek bağı T = 2,725 × (1 + z) formülüne dayanır.

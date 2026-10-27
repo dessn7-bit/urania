@@ -190,3 +190,37 @@ Kısaltmalar: WP:X = https://en.wikipedia.org/wiki/X
 6. Yerel Grup üye sayısı NASA'da ">50", Wikipedia'da "134 (1 Mpc içinde)"; ikisi de verildi.
 7. "Sgr A* yoğun radyo kaynağı" ifadesi önceki sürümden korundu; önceki doğrulama dosyasında bu ifade için ayrı satır yok. Doğrulama ajanı WP:Galactic_Center'da kontrol etmeli.
 8. Andromeda'nın İstanbul'dan görünürlüğü için doğrudan İstanbul kaynağı yok; derste yalnız kaynaklı iki bilgi birleştirildi (orta ışık kirliliğinde çıplak gözle görülür; kentte çıplak göz sınırı ~3 kadir) ve "ışıklı semtte zor" denildi.
+
+## Doğrulama (bağımsız)
+
+Tarih: 2026-10-27. Bağımsız doğrulayıcı. Kaynaklar bu oturumda WebFetch ile yeniden açıldı (WF2). Bütün örnek ve soru hesapları python3 ile yeniden yapıldı; hepsi doğru çıktı (930.000/2,5 milyon = 0,37; 87.400/1500 = 58,3; 87.400/700 = 124,9; 8178 pc = 26.673 ışık yılı; galaktik yıl 2,543×10⁸ yıl; Rs = 2953 m/M☉ → 1,270×10⁷ km, 1 AB'nin 0,085'i; 765 kpc = 2.495.122 ışık yılı; 6,81×10⁹ yıl; 10^(0,4×6,4) = 363; 656,28×1,158 = 759,97 nm; 47.367 km/s; 1043 ve 2069; M = 7,61×10¹⁰ M☉; 160 Mpc = 522 Mly).
+
+| Değişiklik / bulgu | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| DÜZELTME (kavram): 1,6×10¹¹ km genel "yıldızlar arası ortalama uzaklık" olarak verilmişti. Kaynak cümlesi galaksi merkezlerindeki sıklıkla birlikte geçiyor ve aynı sayfa en yakın yıldızı 30 milyon Güneş çapı uzakta veriyor (4,2 ışık yılı = 3,97×10¹³ km, 1,6×10¹¹ km'nin ~250 katı). Ders: en yakın yıldız ~30 milyon Güneş çapı; sık bölgelerde bile ~1,6×10¹¹ km. Örnek, soru 5 ve defter notu buna göre düzeltildi | WP:Andromeda%E2%80%93Milky_Way_collision (WF2) | "Although stars are more common near the centers of each galaxy, the average distance between stars is still 160 billion (1.6×10^11) km." ; "the nearest star to the Earth after the Sun is Proxima Centauri, about 4.2 light-years" ; "or 30 million (3×10^7) solar diameters away." |
+| Örnek hesabı (yeni) | HESAP | 4,2 × 9,4607×10¹² = 3,973×10¹³ km ; / 1,3914×10⁶ = 2,856×10⁷ ; 1 cm → 285,6 km |
+| DÜZELTME (mantık): "Güneş 5 milyar yıl yaşayacak, dolayısıyla çarpışmayı izleyen olmaz" çıkarımı 2012'nin 4 milyar yıllık tahminiyle çelişiyordu ve 2025 çalışmasında birleşme zamanı verilmiyor. Yerine: 10 milyar yıllık pencerenin yaklaşık yarısı Güneş'in ömründen sonra; Dünya tehlikede değil (2012) ve felaket olası değil (2025) | https://www.uwa.edu.au/news/article/2025/june/astronomers-thought-the-milky-way-was-doomed-to-crash-into-andromeda (WF2) ; STScI 2012 (önceki satır) | "it's unlikely to be catastrophic for Earth" ; (makale birleşme olursa ne zaman olacağını vermiyor) |
+| DÜZELTME (kavram): 3C 273'ün 749 Mpc'si bir parlaklık uzaklığıdır; "2,4 milyar yıl önce yola çıkmış ışık" yanlıştı. Ders: parlaklık uzaklığı 749 Mpc; ışığın yolculuk süresi ~2 milyar yıl. Akılda, anahtar sayı ve defter notu güncellendi | WP:3C_273 (WF2) | "a luminosity distance of DL = 749 megaparsecs (2.4 billion light-years) may be calculated from z" ; sayfada yolculuk süresi yok |
+| 3C 273 ışık yolculuk süresi ≈ 2,05 milyar yıl | HESAP: düz ΛCDM, H0 = 67,4, Ωm = 0,315 (Planck 2018 özeti, https://arxiv.org/abs/1807.06209) ; z = 0,158 için geri bakış zamanı integrali | 2,049 milyar yıl ; aynı modelde parlaklık uzaklığı 783 Mpc (Wikipedia'nın 749'una yakın; fark H0 seçiminden) |
+| "Sgr A* yoğun radyo kaynağı" → "çok küçük ama güçlü (kompakt) radyo kaynağı"; artık kaynaklı | WP:Galactic_Center (WF2) | "contains an intense compact radio source, Sagittarius A*, which coincides with a supermassive black hole" |
+| Shapley modeli: 300.000 ışık yılı çaplı Samanyolu (eklendi, kaynaklı) | https://www.astronomy.com/science/how-edwin-hubble-won-the-great-debate/ (WF2) | Shapley concluded that "the Milky Way was 300,000 light-years in diameter." |
+| "Galaksi" tanımı artık kaynaklı; kaynak listesine WP:Galaxy eklendi | https://en.wikipedia.org/wiki/Galaxy (WF2; aramada bulundu) | "A galaxy is a physical system of stars, stellar remnants, interstellar gas, dust, and dark matter bound together by gravity." |
+| Rs/1 AB "onda biri" → "kabaca onda biri (yaklaşık 0,085'i)" | HESAP | 1,27×10⁷ / 1,5×10⁸ = 0,085 |
+| Macellan Bulutları görünürlük sınırı eklendi (~20° K ve ~15° K) | https://www.skyatnightmagazine.com/news/large-small-magellanic-clouds (WF2) | (WF2 özeti) the limit is about 20°N for the LMC and 15°N for the SMC |
+| Doğrulandı (değişiklik yok): 26 Nisan 1920 Smithsonian; 5/6 Ekim 1923; "Var!"; 930.000 ışık yılı; Russell 1 Ocak 1925 | astronomy.com Great Debate (WF2) | "April 26 at the Smithsonian Institution" ; "October 5/6, 1923" ; "930,000 light-years" ; "January 1, 1925" |
+| Doğrulandı: Samanyolu 87.400 ışık yılı; 718–1470 ışık yılı; 100–400 milyar; 1,15×10¹² ve 5,8×10¹¹; karanlık madde 1–1,5×10¹²; 212 Myr; 30°; 20,2; üçte bir; Herschel 1785; 10.000 ışık yılı şişkinlik | WP:Milky_Way (WF2) | aynı değerler sayfada |
+| Doğrulandı: NASA >100.000 ışık yılı; yarı yolda; 240 milyon yıl; >50 galaksi | https://science.nasa.gov/universe/galaxies/ (WF2) | aynı ifadeler |
+| Doğrulandı: Orion Spur; 720.000 km/saat; 230 milyon yıl; 150 milyon km; 5 milyar yıl, beyaz cüce | https://science.nasa.gov/sun/facts/ (WF2) | aynı ifadeler |
+| Doğrulandı: ESO 4,30 milyon M☉, 27.000 ışık yılı (14 Aralık 2021) | https://www.eso.org/public/news/eso2119/ (WF2) | "4.30 million times that of the Sun" ; "27 000 light-years away" (±%0,25 kesinliği ESO sayfasında yok; arXiv:2112.07478 önceki doğrulamadan) |
+| Doğrulandı: Yerel Grup 134 üye, 5,11 Mpc, 2×10¹², 10¹² her biri, Hubble 1936, M33 3., LMC 4., SMC 5. | WP:Local_Group (WF2) | aynı ifadeler |
+| Doğrulandı: Andromeda 964 es-Sufi; 765 kpc; 152.000 ışık yılı; ~1 trilyon; 3,44; Aysız gece orta ışık kirliliği; 3,167° × 1° | WP:Andromeda_Galaxy (WF2) | aynı ifadeler |
+| Doğrulandı: M33 2,878 Mly; 61.100; 40 milyar; 5,72 / 6,6; en uzak kalıcı çıplak göz cismi | WP:Triangulum_Galaxy (WF2) | aynı ifadeler |
+| Doğrulandı: 110 km/s | WP çarpışma sayfası (WF2) | "approaching the Milky Way at about 110 kilometres per second" |
+| Doğrulandı: Sawala, Nature Astronomy, Hubble+Gaia, binlerce yörünge, LMC/M33 etkisi, ~%50 | UWA (WF2) | aynı ifadeler |
+| Doğrulandı: Başak Kümesi 1300 (2000'e kadar), 53,8 Mly, Başak & Berenis'in Saçı, Messier notu 1784 Connoissance des Temps, Méchain, 1,2×10¹⁵ (8°), 30 milyon K | WP:Virgo_Cluster (WF2) | "Nos. 49, 58, 59, 60, 61, 84, 85, 86, 87, 88, 89, 90, & 91." ; "Most of these nebulae have been pointed to me by Mr. Méchain." ; 1784 Connoissance des Temps |
+| Doğrulandı: Laniakea yazarları, 160 Mpc, ~10¹⁷ M☉, lani/akea, tuhaf hızlar | https://arxiv.org/pdf/1409.0880 (WF2) | aynı ifadeler |
+| Doğrulandı: AGN tanımı, yığılma diski, jet, onda bir, açı farkı, "looking down the jet" | NASA active_galaxies1 (WF2) | aynı ifadeler |
+| Doğrulandı: 3C 273 ilk kuasar; 4 trilyon; 16 kat; 900 milyon M☉; 200.000 ışık yılı jet; 12,9 kadir; 150 mm; Başak'ta dev eliptik | WP:3C_273 (WF2) | aynı ifadeler |
+| Doğrulandı: Mermi Kümesi (d17 ile ortak) | Chandra 2006 (WF2) | "a drag force, similar to air resistance" |
+| Doğrulandı: Gözlenebilir evren 2 trilyon / yüzlerce milyar | WP:Observable_universe (WF2) | aynı ifadeler |
+| ASKIDA (bu oturumda yeniden açılmadı, önceki doğrulamaya dayanıyor): ESA/Hubble heic9902o ve opo9734a, WP Hubble sequence ve Lenticular galaxy ifadeleri, Macmillan Universe 10e (Schmidt 1963, z = 0,158), arXiv:1904.05721 (8178 pc), arXiv:2112.07478 (±%0,25), EHT 2022, NASA galaxy types (2/3 çubuklu) | — | — |

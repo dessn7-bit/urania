@@ -271,7 +271,7 @@
    },
    {
     "ad": "IAU 2015 Resolution B3 (GM☉)",
-    "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion-constants.pdf"
+    "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf"
    }
   ]
  },
@@ -286,7 +286,7 @@
      "#ggGunes": 1
     },
     "tikla": "#ggUzak button[data-u=\"ort\"]",
-    "gozle": "Ay'ın gelgit ivmesi yaklaşık 1,12 × 10⁻⁷ g, Güneş'inki 0,52 × 10⁻⁷ g; oran yaklaşık 0,46. Durum: kabarma gelgiti.",
+    "gozle": "Ay'ın gelgit ivmesi yaklaşık 1,12 × 10⁻⁷ g, Güneş'inki 0,52 × 10⁻⁷ g; oran yaklaşık 0,46. Durum: kabarma gelgiti; gelgit genliği Ay'ın tek başına yaptığına göre yaklaşık %146.",
     "neden": "Güneş Ay'dan yaklaşık 27 milyon kat ağır ama yaklaşık 390 kat uzak. Gelgit uzaklığın küpüyle zayıflar (1/d³), çekim ise karesiyle. Bu yüzden çekimde Güneş baskın, gelgitte Ay."
    },
    {
@@ -294,15 +294,15 @@
     "ayar": {
      "#ggGun": 7.4
     },
-    "gozle": "Güneş yönü Ay'a dik. Durum: ölü gelgit. Ay doğrultusundaki toplam şişme Ay'ın tek başına yaptığının yaklaşık %54'ü.",
-    "neden": "Dik açıda Güneş'in şişirdiği yer Ay'ın çukur bıraktığı yerdir; etkiler kısmen birbirini götürür. Kabarma ile ölü gelgit arasındaki fark bu modelde (1 + 0,46)/(1 − 0,46) ≈ 2,7 kat."
+    "gozle": "Güneş yönü Ay'a dik. Durum: ölü gelgit. Gelgit genliği (kabarma ile çekilme arasındaki fark) Ay'ın tek başına yaptığına göre yaklaşık %54.",
+    "neden": "Dik açıda Güneş'in şişirdiği yer Ay'ın çukur bıraktığı yerdir; etkiler kısmen birbirini götürür. Bu modelde kabarma gelgitinin genliği ölü gelgitinkinin (1 + 0,46)/(1 − 0,46) ≈ 2,7 katı."
    },
    {
     "yap": "Günü 14,75'e getir (dolunay).",
     "ayar": {
      "#ggGun": 14.75
     },
-    "gozle": "Güneş Ay'ın tam karşısında, yine kabarma gelgiti (yaklaşık %146).",
+    "gozle": "Güneş Ay'ın tam karşısında; yine kabarma gelgiti, genlik yaklaşık %146.",
     "neden": "Gelgit şişkinliği iki yanlıdır: Güneş ister Ay'la aynı tarafta ister karşısında olsun, şişkinlikler aynı doğrultuda toplanır. Bu yüzden kabarma gelgiti ayda iki kez, yeni Ay ve dolunayda olur."
    },
    {
@@ -358,7 +358,7 @@
     "ayar": {
      "#tyV": 0.4642
     },
-    "gozle": "Hα çizgisi 656,28'den yaklaşık 662,9 nm'ye kaydı (yaklaşık 6,6 nm kırmızıya); şeritteki bütün siyah çizgiler sağa kaydı. z ≈ 0,01.",
+    "gozle": "Hα çizgisi durgunda yaklaşık 656,3 nm; şimdi yaklaşık 662,9 nm'de (yaklaşık 6,6 nm kırmızıya). Şeritteki bütün siyah çizgiler sağa kaydı. z ≈ 0,01.",
     "neden": "Doppler etkisi: uzaklaşan kaynağın ışığı uzar. Küçük hızlarda kayma oranı ≈ v/c: 3000 / 299.792 ≈ 0,01. Çizgilerin deseni değişmediği için hangi element olduğunu tanıyıp hızı ölçebilirsin."
    },
    {
