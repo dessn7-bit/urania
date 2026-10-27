@@ -3,7 +3,9 @@
   "unite": "yildizlar",
   "baslik": "Güneş: Yakınımızdaki Yıldız",
   "ozet": "Güneş'i merkezden dışarıya katman katman geziyor, enerjisini hidrojeni helyuma çeviren proton-proton zincirinden ve E = mc²'den nasıl aldığını görüyoruz. Güneş lekelerini, 11 yıllık döngüyü, patlamaları, Güneş rüzgârını ve kutup ışıklarını tanıyor; son olarak Güneş'e gözünü riske atmadan nasıl bakacağını öğreniyorsun.",
-  "on_bilgi": ["d2"],
+  "on_bilgi": [
+    "d2"
+  ],
   "bolumler": [
     {
       "baslik": "Temel sayılar",
@@ -145,86 +147,144 @@
     {
       "deger": "1.988.400 × 10²⁴ kg (≈ 1,988 × 10³⁰ kg); Dünya'nın 332.900 katı",
       "aciklama": "Güneş'in kütlesi",
-      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html"
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html",
+      "kid": "d4n0"
     },
     {
       "deger": "695.700 km; Dünya'nın 109,2 katı",
       "aciklama": "Hacimsel ortalama yarıçap",
-      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html"
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html",
+      "kid": "d4n1"
     },
     {
       "deger": "3,828 × 10²⁶ W; 5772 K",
       "aciklama": "Işıma gücü; etkin sıcaklık",
-      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html"
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html",
+      "kid": "d4n2"
     },
     {
       "deger": "1,571 × 10⁷ K; 1,622 × 10⁵ kg/m³; 2,477 × 10¹¹ bar",
       "aciklama": "Merkez sıcaklığı, yoğunluğu ve basıncı (model değerleri)",
-      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html"
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html",
+      "kid": "d4n3"
     },
     {
       "deger": "4260 × 10⁶ kg/s",
       "aciklama": "Kütle dönüşüm hızı",
-      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html"
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html",
+      "kid": "d4n4"
     },
     {
       "deger": "%99 p-p, %1 CNO; 26,73 MeV; 9 milyar yıl bekleme",
       "aciklama": "Proton-proton zinciri",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Proton%E2%80%93proton_chain"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Proton%E2%80%93proton_chain",
+      "kid": "d4n5"
     },
     {
       "deger": "10.000–170.000 yıl; nötrino 2,3 s",
       "aciklama": "Enerjinin çekirdekten yüzeye ulaşma süresi",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Sun"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Sun",
+      "kid": "d4n6"
     },
     {
       "deger": "korona 1–2 milyon K (en sıcak 8–20 milyon K)",
       "aciklama": "Koronanın sıcaklığı",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Sun"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Sun",
+      "kid": "d4n7"
     },
     {
       "deger": "umbra 3000–4500 K, çevre ~5780 K; çap 16–160.000 km",
       "aciklama": "Güneş lekesi sıcaklığı ve boyutu",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Sunspot"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Sunspot",
+      "kid": "d4n8"
     },
     {
       "deger": "~11 yıl (9–14); 1843 Schwabe; Maunder 1645–1715",
       "aciklama": "Leke döngüsü",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Solar_cycle"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Solar_cycle",
+      "kid": "d4n9"
     },
     {
       "deger": "15 Ekim 2024",
       "aciklama": "NASA/NOAA'nın 25. döngünün maksimum evresini duyurusu",
-      "kaynak_url": "https://science.nasa.gov/science-research/heliophysics/nasa-noaa-sun-reaches-maximum-phase-in-11-year-solar-cycle/"
+      "kaynak_url": "https://science.nasa.gov/science-research/heliophysics/nasa-noaa-sun-reaches-maximum-phase-in-11-year-solar-cycle/",
+      "kid": "d4n10"
     },
     {
       "deger": "Ekim 2024; 161",
       "aciklama": "25. döngünün tepesi: aylık düzeltilmiş leke sayısının en yüksek değeri (SIDC/SILSO)",
-      "kaynak_url": "https://www.sidc.be/article/solar-cycle-25-reached-its-maximum-october-2024"
+      "kaynak_url": "https://www.sidc.be/article/solar-cycle-25-reached-its-maximum-october-2024",
+      "kid": "d4n11"
     },
     {
       "deger": "Mayıs 2024: 82 önemli patlama, 9'u X sınıfı",
       "aciklama": "Son yirmi yılın en güçlü jeomanyetik fırtınasına yol açan etkinlik",
-      "kaynak_url": "https://science.nasa.gov/science-research/heliophysics/nasa-noaa-sun-reaches-maximum-phase-in-11-year-solar-cycle/"
+      "kaynak_url": "https://science.nasa.gov/science-research/heliophysics/nasa-noaa-sun-reaches-maximum-phase-in-11-year-solar-cycle/",
+      "kid": "d4n12"
     },
     {
       "deger": "ISO 12312-2",
       "aciklama": "Güvenli güneş gözlüğü (tutulma gözlüğü) standardı",
-      "kaynak_url": "https://science.nasa.gov/eclipses/safety/"
+      "kaynak_url": "https://science.nasa.gov/eclipses/safety/",
+      "kid": "d4n13"
     }
   ],
   "sozluk": [
-    { "terim": "Plazma", "tanim": "Atomların elektron kaybettiği, elektrik yüklü parçacıklardan oluşan sıcak gaz." },
-    { "terim": "Füzyon", "tanim": "Hafif atom çekirdeklerinin birleşip daha ağır bir çekirdek oluşturması ve bu sırada enerji açığa çıkması." },
-    { "terim": "Proton-proton zinciri", "tanim": "Dört protonun bir dizi tepkimeyle bir helyum-4 çekirdeğine dönüştüğü, Güneş enerjisinin %99'unu üreten tepkime zinciri." },
-    { "terim": "Nötrino", "tanim": "Füzyonda doğan, maddeyle neredeyse hiç etkileşmeyen çok hafif parçacık." },
-    { "terim": "Fotosfer", "tanim": "Güneş'in görünür yüzeyi; altında Güneş görünür ışığa karşı opaktır." },
-    { "terim": "Korona", "tanim": "Güneş'in milyonlarca kelvin sıcaklıktaki, uzaya yayılan dış atmosferi." },
-    { "terim": "Güneş lekesi", "tanim": "Yoğun manyetik alanın ısı akışını kestiği, çevresinden soğuk ve bu yüzden karanlık görünen fotosfer bölgesi." },
-    { "terim": "Koronal kütle atımı", "tanim": "Koronadan uzaya fırlatılan dev plazma ve manyetik alan bulutu." },
-    { "terim": "Güneş rüzgârı", "tanim": "Koronadan ses üstü hızla sürekli kaçan ve gezegenler arasına yayılan yüklü parçacık akışı." },
-    { "terim": "Heliosfer", "tanim": "Güneş rüzgârının yıldızlararası ortama baskın geldiği, Güneş'i saran dev bölge." },
-    { "terim": "Uzay havası", "tanim": "Güneş etkinliğinin Dünya çevresindeki uzayda ve teknolojide yarattığı değişiklikler." }
+    {
+      "terim": "Plazma",
+      "tanim": "Atomların elektron kaybettiği, elektrik yüklü parçacıklardan oluşan sıcak gaz.",
+      "kid": "d4t0"
+    },
+    {
+      "terim": "Füzyon",
+      "tanim": "Hafif atom çekirdeklerinin birleşip daha ağır bir çekirdek oluşturması ve bu sırada enerji açığa çıkması.",
+      "kid": "d4t1"
+    },
+    {
+      "terim": "Proton-proton zinciri",
+      "tanim": "Dört protonun bir dizi tepkimeyle bir helyum-4 çekirdeğine dönüştüğü, Güneş enerjisinin %99'unu üreten tepkime zinciri.",
+      "kid": "d4t2"
+    },
+    {
+      "terim": "Nötrino",
+      "tanim": "Füzyonda doğan, maddeyle neredeyse hiç etkileşmeyen çok hafif parçacık.",
+      "kid": "d4t3"
+    },
+    {
+      "terim": "Fotosfer",
+      "tanim": "Güneş'in görünür yüzeyi; altında Güneş görünür ışığa karşı opaktır.",
+      "kid": "d4t4"
+    },
+    {
+      "terim": "Korona",
+      "tanim": "Güneş'in milyonlarca kelvin sıcaklıktaki, uzaya yayılan dış atmosferi.",
+      "kid": "d4t5"
+    },
+    {
+      "terim": "Güneş lekesi",
+      "tanim": "Yoğun manyetik alanın ısı akışını kestiği, çevresinden soğuk ve bu yüzden karanlık görünen fotosfer bölgesi.",
+      "kid": "d4t6"
+    },
+    {
+      "terim": "Koronal kütle atımı",
+      "tanim": "Koronadan uzaya fırlatılan dev plazma ve manyetik alan bulutu.",
+      "kid": "d4t7"
+    },
+    {
+      "terim": "Güneş rüzgârı",
+      "tanim": "Koronadan ses üstü hızla sürekli kaçan ve gezegenler arasına yayılan yüklü parçacık akışı.",
+      "kid": "d4t8"
+    },
+    {
+      "terim": "Heliosfer",
+      "tanim": "Güneş rüzgârının yıldızlararası ortama baskın geldiği, Güneş'i saran dev bölge.",
+      "kid": "d4t9"
+    },
+    {
+      "terim": "Uzay havası",
+      "tanim": "Güneş etkinliğinin Dünya çevresindeki uzayda ve teknolojide yarattığı değişiklikler.",
+      "kid": "d4t10"
+    }
   ],
   "defter_notu": [
     "Güneş: G2 V, kütle ≈ 1,988 × 10³⁰ kg (Dünya × 332.900), yarıçap 695.700 km (Dünya × 109), L = 3,828 × 10²⁶ W, T_etkin = 5772 K, yaş ≈ 4,6 milyar yıl. Işık 8 dk 19 s'de gelir.",
@@ -240,46 +300,92 @@
   "sorular": [
     {
       "soru": "Güneş'in merkezinde üretilen bir fotonun enerjisi yüzeye neden binlerce yılda ulaşıyor da bir nötrino birkaç saniyede çıkıyor?",
-      "cevap": "Foton ışınım bölgesinde birkaç milimetrede bir soğurulup rastgele yönlere yeniden salınır; bu dolambaçlı yol 10.000–170.000 yıl sürer. Nötrino maddeyle neredeyse hiç etkileşmediği için doğrudan çıkar (yüzeye 2,3 saniye)."
+      "cevap": "Foton ışınım bölgesinde birkaç milimetrede bir soğurulup rastgele yönlere yeniden salınır; bu dolambaçlı yol 10.000–170.000 yıl sürer. Nötrino maddeyle neredeyse hiç etkileşmediği için doğrudan çıkar (yüzeye 2,3 saniye).",
+      "kid": "d4s0"
     },
     {
       "soru": "Güneş saniyede kaç kg kütleyi enerjiye çevirir? Hesabı nasıl yaparsın?",
-      "cevap": "Δm/Δt = L / c² = 3,828 × 10²⁶ / (2,998 × 10⁸)² ≈ 4,26 × 10⁹ kg/s, yani saniyede yaklaşık 4,26 milyon ton."
+      "cevap": "Δm/Δt = L / c² = 3,828 × 10²⁶ / (2,998 × 10⁸)² ≈ 4,26 × 10⁹ kg/s, yani saniyede yaklaşık 4,26 milyon ton.",
+      "kid": "d4s1"
     },
     {
       "soru": "Güneş lekeleri neden karanlık görünür? Gerçekten soğuk mudurlar?",
-      "cevap": "Yoğun manyetik alan alttan gelen ısı akışını engellediği için çevrelerinden soğuktur (umbra yaklaşık 3000–4500 K, fotosfer yaklaşık 5780 K). Saldıkları ışık sıcaklığın dördüncü kuvvetiyle değiştiği için çevrelerine göre karanlık görünürler; tek başına bir leke yine de dolunaydan parlak olurdu."
+      "cevap": "Yoğun manyetik alan alttan gelen ısı akışını engellediği için çevrelerinden soğuktur (umbra yaklaşık 3000–4500 K, fotosfer yaklaşık 5780 K). Saldıkları ışık sıcaklığın dördüncü kuvvetiyle değiştiği için çevrelerine göre karanlık görünürler; tek başına bir leke yine de dolunaydan parlak olurdu.",
+      "kid": "d4s2"
     },
     {
       "soru": "Korona fotosferden yüzlerce kat sıcak. Bu neden şaşırtıcı?",
-      "cevap": "Enerji merkezden dışarı akar ve sıcaklık içeriden dışarı doğru düşer: çekirdek milyonlarca kelvin, fotosfer birkaç bin kelvin. Dışarıdaki koronanın yeniden 1–2 milyon K'e çıkması, ısıyı ışınım dışında bir yolla (konveksiyon bölgesindeki çalkantılı hareketlerden gelen enerjiyle) aldığını düşündürür; mekanizma hâlâ çözülemedi."
+      "cevap": "Enerji merkezden dışarı akar ve sıcaklık içeriden dışarı doğru düşer: çekirdek milyonlarca kelvin, fotosfer birkaç bin kelvin. Dışarıdaki koronanın yeniden 1–2 milyon K'e çıkması, ısıyı ışınım dışında bir yolla (konveksiyon bölgesindeki çalkantılı hareketlerden gelen enerjiyle) aldığını düşündürür; mekanizma hâlâ çözülemedi.",
+      "kid": "d4s3"
     },
     {
       "soru": "Bir arkadaşın tutulma gözlüğünü takıp dürbünle Güneş lekelerine bakmak istiyor. Ne dersin?",
-      "cevap": "Kesinlikle yapmamalı. Dürbün ışığı yoğunlaştırır ve bu ışık gözlüğün filtresini yakıp delebilir; NASA tutulma gözlüğüyle optik aletten bakmayı açıkça yasaklar. Dürbünle bakılacaksa özel güneş filtresi dürbünün önüne sağlam takılmalı; en basit güvenli yol iğne deliğiyle izdüşümdür."
+      "cevap": "Kesinlikle yapmamalı. Dürbün ışığı yoğunlaştırır ve bu ışık gözlüğün filtresini yakıp delebilir; NASA tutulma gözlüğüyle optik aletten bakmayı açıkça yasaklar. Dürbünle bakılacaksa özel güneş filtresi dürbünün önüne sağlam takılmalı; en basit güvenli yol iğne deliğiyle izdüşümdür.",
+      "kid": "d4s4"
     },
     {
       "soru": "Bir koronal kütle atımı Güneş'ten saatte 2 milyon km hızla çıkıyor. Dünya'ya yaklaşık ne zaman ulaşır?",
-      "cevap": "Süre = 149.600.000 km / 2.000.000 km/sa ≈ 75 saat, yani yaklaşık 3,1 gün. Patlamanın ışığı ise 8 dakika 19 saniyede gelir; bu fark uzay havası tahmincilerine hazırlık zamanı verir."
+      "cevap": "Süre = 149.600.000 km / 2.000.000 km/sa ≈ 75 saat, yani yaklaşık 3,1 gün. Patlamanın ışığı ise 8 dakika 19 saniyede gelir; bu fark uzay havası tahmincilerine hazırlık zamanı verir.",
+      "kid": "d4s5"
     },
     {
       "soru": "Güneş'in toplam ışınımı döngü boyunca yaklaşık %0,1 değişiyor. 1361 W/m² için bu kaç W/m² eder?",
-      "cevap": "1361 × 0,001 ≈ 1,4 W/m². Yani maksimumda ve minimumda Dünya'ya düşen Güneş enerjisi neredeyse aynıdır; döngüde asıl değişen manyetik etkinliktir (lekeler, patlamalar, fırtınalar)."
+      "cevap": "1361 × 0,001 ≈ 1,4 W/m². Yani maksimumda ve minimumda Dünya'ya düşen Güneş enerjisi neredeyse aynıdır; döngüde asıl değişen manyetik etkinliktir (lekeler, patlamalar, fırtınalar).",
+      "kid": "d4s6"
     }
   ],
   "kaynaklar": [
-    { "ad": "NASA NSSDCA – Sun Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html" },
-    { "ad": "NASA Science – Sun: Facts", "url": "https://science.nasa.gov/sun/facts/" },
-    { "ad": "NASA Science – Sunspots", "url": "https://science.nasa.gov/sun/sunspots/" },
-    { "ad": "NASA – NASA, NOAA: Sun Reaches Maximum Phase in 11-Year Solar Cycle (15 Ekim 2024)", "url": "https://science.nasa.gov/science-research/heliophysics/nasa-noaa-sun-reaches-maximum-phase-in-11-year-solar-cycle/" },
-    { "ad": "NASA Science – Eclipse Safety", "url": "https://science.nasa.gov/eclipses/safety/" },
-    { "ad": "SIDC (Belçika Kraliyet Gözlemevi) – Solar Cycle 25 reached its maximum in October 2024", "url": "https://www.sidc.be/article/solar-cycle-25-reached-its-maximum-october-2024" },
-    { "ad": "Wikipedia – Solar cycle 25", "url": "https://en.wikipedia.org/wiki/Solar_cycle_25" },
-    { "ad": "Wikipedia – Sun", "url": "https://en.wikipedia.org/wiki/Sun" },
-    { "ad": "Wikipedia – Proton–proton chain", "url": "https://en.wikipedia.org/wiki/Proton%E2%80%93proton_chain" },
-    { "ad": "Wikipedia – Sunspot", "url": "https://en.wikipedia.org/wiki/Sunspot" },
-    { "ad": "Wikipedia – Solar cycle", "url": "https://en.wikipedia.org/wiki/Solar_cycle" },
-    { "ad": "Wikipedia – Solar eclipse", "url": "https://en.wikipedia.org/wiki/Solar_eclipse" },
-    { "ad": "NIST CODATA – speed of light in vacuum", "url": "https://physics.nist.gov/cgi-bin/cuu/Value?c" }
+    {
+      "ad": "NASA NSSDCA – Sun Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html"
+    },
+    {
+      "ad": "NASA Science – Sun: Facts",
+      "url": "https://science.nasa.gov/sun/facts/"
+    },
+    {
+      "ad": "NASA Science – Sunspots",
+      "url": "https://science.nasa.gov/sun/sunspots/"
+    },
+    {
+      "ad": "NASA – NASA, NOAA: Sun Reaches Maximum Phase in 11-Year Solar Cycle (15 Ekim 2024)",
+      "url": "https://science.nasa.gov/science-research/heliophysics/nasa-noaa-sun-reaches-maximum-phase-in-11-year-solar-cycle/"
+    },
+    {
+      "ad": "NASA Science – Eclipse Safety",
+      "url": "https://science.nasa.gov/eclipses/safety/"
+    },
+    {
+      "ad": "SIDC (Belçika Kraliyet Gözlemevi) – Solar Cycle 25 reached its maximum in October 2024",
+      "url": "https://www.sidc.be/article/solar-cycle-25-reached-its-maximum-october-2024"
+    },
+    {
+      "ad": "Wikipedia – Solar cycle 25",
+      "url": "https://en.wikipedia.org/wiki/Solar_cycle_25"
+    },
+    {
+      "ad": "Wikipedia – Sun",
+      "url": "https://en.wikipedia.org/wiki/Sun"
+    },
+    {
+      "ad": "Wikipedia – Proton–proton chain",
+      "url": "https://en.wikipedia.org/wiki/Proton%E2%80%93proton_chain"
+    },
+    {
+      "ad": "Wikipedia – Sunspot",
+      "url": "https://en.wikipedia.org/wiki/Sunspot"
+    },
+    {
+      "ad": "Wikipedia – Solar cycle",
+      "url": "https://en.wikipedia.org/wiki/Solar_cycle"
+    },
+    {
+      "ad": "Wikipedia – Solar eclipse",
+      "url": "https://en.wikipedia.org/wiki/Solar_eclipse"
+    },
+    {
+      "ad": "NIST CODATA – speed of light in vacuum",
+      "url": "https://physics.nist.gov/cgi-bin/cuu/Value?c"
+    }
   ]
 }

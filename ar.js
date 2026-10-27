@@ -243,7 +243,7 @@
     const hedefler = veri.hedefler.map(h => ({ ad: h.ad, kisa: h.kisa, tur: h.turAd, kadir: h.kadir, v: hor2enu(G.birimVektor(h.ra, h.dec)) }));
     const cisimler = ['Sun', 'Moon'].concat(G.GEZEGENLER).map(c => {
       const p = G.cisimAltAz(c, an, gzl);
-      const kadir = G.A.Illumination(c, an).mag;
+      const kadir = G.gezegenKadir(c, an);
       return { id: c, ad: G.TR_AD[c], alt: p.alt, az: p.az, kadir, v: enu(p.alt, p.az) };
     });
     const ay = G.ayDurumu(an, gzl);

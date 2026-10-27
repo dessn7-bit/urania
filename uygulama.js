@@ -58,6 +58,22 @@
     return z;
   }
 
+  /* ---- Gerektiğinde yüklenen betikler (sıra korunur; hata olursa söz reddedilir, sonra yeniden denenebilir) ---- */
+  const betikOnbellek = {};
+  function betikler(ls) {
+    const an = ls.join('|');
+    if (!betikOnbellek[an]) {
+      betikOnbellek[an] = Promise.all(ls.map(src => new Promise((coz, red) => {
+        if (document.querySelector('script[data-betik="' + src + '"]')) return coz();
+        const s = document.createElement('script');
+        s.src = src; s.async = false; s.dataset.betik = src;   // async=false: eklenme sırasıyla çalışır
+        s.onload = () => coz(); s.onerror = () => { s.remove(); red(new Error(src + ' yüklenemedi')); };
+        document.head.appendChild(s);
+      }))).catch(e => { delete betikOnbellek[an]; throw e; });
+    }
+    return betikOnbellek[an];
+  }
+
   /* ---- Veri ---- */
   function veri(ad) {
     if (!veriOnbellek[ad]) {
@@ -352,7 +368,7 @@
 
   window.Urania = {
     modul(ad, tanim) { moduller[ad] = tanim; },
-    basla, oku, yaz, sil, anahtarlar, konum, konumYaz, VARSAYILAN_KONUM, konumuBul, konumDurum, otoAcik, otoAyarla, dilimTahmin, dilimAdi, veri, guvenliUrl, icsMetni, icsIndir, ek,
+    basla, oku, yaz, sil, anahtarlar, konum, konumYaz, VARSAYILAN_KONUM, konumuBul, konumDurum, otoAcik, otoAyarla, dilimTahmin, dilimAdi, veri, betikler, guvenliUrl, icsMetni, icsIndir, ek,
     sayi, bilimsel, saat, gun, gunHafta, tamTarih, kadir, derece, kacGun, kacis
   };
 })();

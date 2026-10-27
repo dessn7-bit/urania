@@ -69,7 +69,7 @@
         if (kn) { tepe = buGece(kn, gzl, gece); aylar = iyiAylar(kn, gzl, yil); }
         if (g.anahtar.startsWith('meteor:')) {
           const kod = g.anahtar.slice(7);
-          meteor = veri.meteor.yagmurlar.filter(m => m.kod === kod).map(m => new Date(m.zirve_utc)).filter(d => d > Date.now() - 3 * 86400e3).sort((a, b) => a - b)[0] || null;
+          meteor = G.meteorTakvimi(veri.meteor, new Date()).filter(m => m.kod === kod).map(m => new Date(m.zirve_utc)).filter(d => d > Date.now() - 3 * 86400e3).sort((a, b) => a - b)[0] || null;
         }
       } catch (e) { /* hesap yapılamazsa görev yine listelenir */ }
       /* meteor görevi yalnız zirveye ±3 gün kala "bu gece" sayılır */

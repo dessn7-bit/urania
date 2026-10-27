@@ -4,7 +4,11 @@
   "yeni": true,
   "baslik": "Kozmoloji: Evreni Tartmak ve Ölçmek",
   "ozet": "Uzak galaksilerin uzaklığını ve hızını nasıl ölçtüğümüzü, kırmızıya kaymadan uzaklık merdivenine kadar adım adım öğreneceksin. Sonra karanlık madde ve karanlık enerjinin kanıtlarına, Planck'ın evren tarifine, çözülmemiş Hubble gerilimine ve evrenin olası geleceğine bakacağız.",
-  "on_bilgi": ["d2", "d7", "d8"],
+  "on_bilgi": [
+    "d2",
+    "d7",
+    "d8"
+  ],
   "bolumler": [
     {
       "baslik": "Kırmızıya kayma: ışığın uzaması",
@@ -122,45 +126,201 @@
     }
   ],
   "formuller": [
-    {"ad": "Kırmızıya kayma", "ifade": "z = (λgözlenen − λyayılan) / λyayılan", "aciklama": "λ dalga boyu (nm), z birimsiz. Kozmolojik kaymada 1 + z, ışık yola çıktığından bu yana evrenin ölçeğinin kaç kat büyüdüğünü verir."},
-    {"ad": "Küçük z için hız", "ifade": "v ≈ c × z", "aciklama": "v uzaklaşma hızı (km/s), c ışık hızı (299.792 km/s). Yalnızca z birden çok küçükken geçerli; büyük z'de bir kozmoloji modeli gerekir."},
-    {"ad": "Hubble-Lemaître yasası", "ifade": "v = H0 × d", "aciklama": "v uzaklaşma hızı (km/s), d uzaklık (Mpc), H0 Hubble sabiti (km/s/Mpc). Planck 2018: 67,4 ± 0,5; uzaklık merdiveni: ≈ 73. Çekimle bağlı yakın galaksilere uygulanmaz."},
-    {"ad": "Iraklık uzaklığı", "ifade": "d = 1 / p", "aciklama": "d uzaklık (parsek), p ıraklık açısı (yay saniyesi). 1 pc = 648.000/π AB ≈ 3,2616 ışık yılı."},
-    {"ad": "Dairesel yörüngenin içindeki kütle", "ifade": "M = v² × r / G", "aciklama": "v yörünge hızı (m/s), r yarıçap (m), G = 6,674×10⁻¹¹ m³/(kg·s²). Kütle küresel dağılmış ve yörünge dairesel sayılırsa geçerli kaba hesap."},
-    {"ad": "Yoğunluk oranları", "ifade": "Ω = (Ω h²) / h²,  h = H0 / 100", "aciklama": "Planck'ın verdiği Ωb h² ve Ωc h² değerlerinden sıradan ve karanlık madde oranlarını bulmak için. Ω birimsiz; toplam ≈ 1."},
-    {"ad": "Hubble zamanı", "ifade": "tH ≈ 977,8 / H0 milyar yıl", "aciklama": "H0 km/s/Mpc cinsinden. 67,4 için ≈ 14,5; 73 için ≈ 13,4 milyar yıl."}
+    {
+      "ad": "Kırmızıya kayma",
+      "ifade": "z = (λgözlenen − λyayılan) / λyayılan",
+      "aciklama": "λ dalga boyu (nm), z birimsiz. Kozmolojik kaymada 1 + z, ışık yola çıktığından bu yana evrenin ölçeğinin kaç kat büyüdüğünü verir."
+    },
+    {
+      "ad": "Küçük z için hız",
+      "ifade": "v ≈ c × z",
+      "aciklama": "v uzaklaşma hızı (km/s), c ışık hızı (299.792 km/s). Yalnızca z birden çok küçükken geçerli; büyük z'de bir kozmoloji modeli gerekir."
+    },
+    {
+      "ad": "Hubble-Lemaître yasası",
+      "ifade": "v = H0 × d",
+      "aciklama": "v uzaklaşma hızı (km/s), d uzaklık (Mpc), H0 Hubble sabiti (km/s/Mpc). Planck 2018: 67,4 ± 0,5; uzaklık merdiveni: ≈ 73. Çekimle bağlı yakın galaksilere uygulanmaz."
+    },
+    {
+      "ad": "Iraklık uzaklığı",
+      "ifade": "d = 1 / p",
+      "aciklama": "d uzaklık (parsek), p ıraklık açısı (yay saniyesi). 1 pc = 648.000/π AB ≈ 3,2616 ışık yılı."
+    },
+    {
+      "ad": "Dairesel yörüngenin içindeki kütle",
+      "ifade": "M = v² × r / G",
+      "aciklama": "v yörünge hızı (m/s), r yarıçap (m), G = 6,674×10⁻¹¹ m³/(kg·s²). Kütle küresel dağılmış ve yörünge dairesel sayılırsa geçerli kaba hesap."
+    },
+    {
+      "ad": "Yoğunluk oranları",
+      "ifade": "Ω = (Ω h²) / h²,  h = H0 / 100",
+      "aciklama": "Planck'ın verdiği Ωb h² ve Ωc h² değerlerinden sıradan ve karanlık madde oranlarını bulmak için. Ω birimsiz; toplam ≈ 1."
+    },
+    {
+      "ad": "Hubble zamanı",
+      "ifade": "tH ≈ 977,8 / H0 milyar yıl",
+      "aciklama": "H0 km/s/Mpc cinsinden. 67,4 için ≈ 14,5; 73 için ≈ 13,4 milyar yıl."
+    }
   ],
   "anahtar_sayilar": [
-    {"deger": "H0 = 67,4 ± 0,5 km/s/Mpc", "aciklama": "Hubble sabiti (Planck 2018)", "kaynak_url": "https://arxiv.org/abs/1807.06209"},
-    {"deger": "73,04 ± 1,04 km/s/Mpc; 5σ fark", "aciklama": "SH0ES 2022: Sefeid + Ia süpernovası ile H₀ ve Planck+ΛCDM ile farkın anlamlılığı", "kaynak_url": "https://arxiv.org/abs/2112.04510v3"},
-    {"deger": "69,8 ± 1,7 (2021); 70,39 ± 1,94 (2025)", "aciklama": "Freedman ve ekibinin kırmızı dev kolu ucu yöntemiyle H0 değerleri", "kaynak_url": "https://en.wikipedia.org/wiki/Hubble%27s_law"},
-    {"deger": "1927; 1929", "aciklama": "Lemaître'nin ve Hubble'ın genişleme ilişkisini yayımladığı yıllar", "kaynak_url": "https://en.wikipedia.org/wiki/Hubble%27s_law"},
-    {"deger": "%78 (2018)", "aciklama": "IAU elektronik oylaması: Hubble–Lemaître yasası adı önerisi", "kaynak_url": "https://iau.org/news/pressreleases/detail/iau1812"},
-    {"deger": "1908; 1912; 25 Sefeid", "aciklama": "Leavitt'in ilk gözlemi ve dönem-parlaklık ilişkisi", "kaynak_url": "https://en.wikipedia.org/wiki/Henrietta_Swan_Leavitt"},
-    {"deger": "1 pc = 648.000/π AB", "aciklama": "Parsek tanımı (IAU 2015 B2, dipnot)", "kaynak_url": "https://arxiv.org/pdf/1510.06262"},
-    {"deger": "17,15 ± 0,14 miliyay saniyesi", "aciklama": "HD 140283'ün ıraklığı (örnekteki yıldız)", "kaynak_url": "https://arxiv.org/abs/1302.3180"},
-    {"deger": "~50 milyon ışık yılı; ~10 milyar ışık yılı", "aciklama": "Sefeidlerin ve Ia süpernovalarının kabaca ulaştığı uzaklıklar", "kaynak_url": "https://www.astronomy.com/science/the-cosmic-distance-ladder-how-we-measure-an-infinite-universe/"},
-    {"deger": "1933; 1019 ± 360 km/s; 400 kat", "aciklama": "Zwicky'nin Coma Kümesi ölçümü ve gereken yoğunluk", "kaynak_url": "https://arxiv.org/pdf/astro-ph/9904251"},
-    {"deger": "1975", "aciklama": "Rubin ve Ford'un düz dönme eğrilerini duyurduğu yıl", "kaynak_url": "https://en.wikipedia.org/wiki/Galaxy_rotation_curve"},
-    {"deger": "21 Ağustos 2006", "aciklama": "Mermi Kümesi duyurusu (Chandra)", "kaynak_url": "https://chandra.si.edu/press/06_releases/press_082106.html"},
-    {"deger": "1998; 2011; >50 süpernova", "aciklama": "Hızlanan genişlemenin keşfi ve Nobel ödülü", "kaynak_url": "https://www.nobelprize.org/prizes/physics/2011/press-release/"},
-    {"deger": "Ωb h² = 0,02237; Ωc h² = 0,1200; ΩΛ = 0,6847; H0 = 67,36", "aciklama": "Planck 2018 temel analiz (Tablo 2); yüzdeler: ~4,9 / ~26,4 / ~68,5", "kaynak_url": "https://arxiv.org/pdf/1807.06209v4"},
-    {"deger": "%5 / %27 / %68", "aciklama": "Evrenin bileşimi (NASA, yuvarlak)", "kaynak_url": "https://science.nasa.gov/universe/dark-matter-dark-energy/"},
-    {"deger": "~10¹⁴ yıl; ~10¹⁰⁰⁰ yıl", "aciklama": "Yıldız oluşumunun durması; ısıl dengeye ulaşma (ısıl ölüm senaryosu)", "kaynak_url": "https://en.wikipedia.org/wiki/Chronology_of_the_universe"}
+    {
+      "deger": "H0 = 67,4 ± 0,5 km/s/Mpc",
+      "aciklama": "Hubble sabiti (Planck 2018)",
+      "kaynak_url": "https://arxiv.org/abs/1807.06209",
+      "kid": "d17n0"
+    },
+    {
+      "deger": "73,04 ± 1,04 km/s/Mpc; 5σ fark",
+      "aciklama": "SH0ES 2022: Sefeid + Ia süpernovası ile H₀ ve Planck+ΛCDM ile farkın anlamlılığı",
+      "kaynak_url": "https://arxiv.org/abs/2112.04510v3",
+      "kid": "d17n1"
+    },
+    {
+      "deger": "69,8 ± 1,7 (2021); 70,39 ± 1,94 (2025)",
+      "aciklama": "Freedman ve ekibinin kırmızı dev kolu ucu yöntemiyle H0 değerleri",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Hubble%27s_law",
+      "kid": "d17n2"
+    },
+    {
+      "deger": "1927; 1929",
+      "aciklama": "Lemaître'nin ve Hubble'ın genişleme ilişkisini yayımladığı yıllar",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Hubble%27s_law",
+      "kid": "d17n3"
+    },
+    {
+      "deger": "%78 (2018)",
+      "aciklama": "IAU elektronik oylaması: Hubble–Lemaître yasası adı önerisi",
+      "kaynak_url": "https://iau.org/news/pressreleases/detail/iau1812",
+      "kid": "d17n4"
+    },
+    {
+      "deger": "1908; 1912; 25 Sefeid",
+      "aciklama": "Leavitt'in ilk gözlemi ve dönem-parlaklık ilişkisi",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Henrietta_Swan_Leavitt",
+      "kid": "d17n5"
+    },
+    {
+      "deger": "1 pc = 648.000/π AB",
+      "aciklama": "Parsek tanımı (IAU 2015 B2, dipnot)",
+      "kaynak_url": "https://arxiv.org/pdf/1510.06262",
+      "kid": "d17n6"
+    },
+    {
+      "deger": "17,15 ± 0,14 miliyay saniyesi",
+      "aciklama": "HD 140283'ün ıraklığı (örnekteki yıldız)",
+      "kaynak_url": "https://arxiv.org/abs/1302.3180",
+      "kid": "d17n7"
+    },
+    {
+      "deger": "~50 milyon ışık yılı; ~10 milyar ışık yılı",
+      "aciklama": "Sefeidlerin ve Ia süpernovalarının kabaca ulaştığı uzaklıklar",
+      "kaynak_url": "https://www.astronomy.com/science/the-cosmic-distance-ladder-how-we-measure-an-infinite-universe/",
+      "kid": "d17n8"
+    },
+    {
+      "deger": "1933; 1019 ± 360 km/s; 400 kat",
+      "aciklama": "Zwicky'nin Coma Kümesi ölçümü ve gereken yoğunluk",
+      "kaynak_url": "https://arxiv.org/pdf/astro-ph/9904251",
+      "kid": "d17n9"
+    },
+    {
+      "deger": "1975",
+      "aciklama": "Rubin ve Ford'un düz dönme eğrilerini duyurduğu yıl",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Galaxy_rotation_curve",
+      "kid": "d17n10"
+    },
+    {
+      "deger": "21 Ağustos 2006",
+      "aciklama": "Mermi Kümesi duyurusu (Chandra)",
+      "kaynak_url": "https://chandra.si.edu/press/06_releases/press_082106.html",
+      "kid": "d17n11"
+    },
+    {
+      "deger": "1998; 2011; >50 süpernova",
+      "aciklama": "Hızlanan genişlemenin keşfi ve Nobel ödülü",
+      "kaynak_url": "https://www.nobelprize.org/prizes/physics/2011/press-release/",
+      "kid": "d17n12"
+    },
+    {
+      "deger": "Ωb h² = 0,02237; Ωc h² = 0,1200; ΩΛ = 0,6847; H0 = 67,36",
+      "aciklama": "Planck 2018 temel analiz (Tablo 2); yüzdeler: ~4,9 / ~26,4 / ~68,5",
+      "kaynak_url": "https://arxiv.org/pdf/1807.06209v4",
+      "kid": "d17n13"
+    },
+    {
+      "deger": "%5 / %27 / %68",
+      "aciklama": "Evrenin bileşimi (NASA, yuvarlak)",
+      "kaynak_url": "https://science.nasa.gov/universe/dark-matter-dark-energy/",
+      "kid": "d17n14"
+    },
+    {
+      "deger": "~10¹⁴ yıl; ~10¹⁰⁰⁰ yıl",
+      "aciklama": "Yıldız oluşumunun durması; ısıl dengeye ulaşma (ısıl ölüm senaryosu)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Chronology_of_the_universe",
+      "kid": "d17n15"
+    }
   ],
   "sozluk": [
-    {"terim": "Kozmoloji", "tanim": "Evrenin bütününün yapısını, içeriğini, geçmişini ve geleceğini inceleyen bilim dalı."},
-    {"terim": "Kırmızıya kayma (z)", "tanim": "Bir ışığın dalga boyunun yayıldığı andaki değerine göre kesirli olarak ne kadar uzadığı."},
-    {"terim": "Hubble sabiti (H0)", "tanim": "Galaksilerin uzaklaşma hızının uzaklığa oranı; birimi km/s/Mpc."},
-    {"terim": "Iraklık", "tanim": "Dünya'nın Güneş çevresindeki hareketi yüzünden yakın bir yıldızın uzak yıldızlara göre gökte yaptığı küçük açısal kayma."},
-    {"terim": "Standart mum", "tanim": "Gerçek parlaklığı bilinen, bu yüzden görünen parlaklığından uzaklığı hesaplanabilen cisim; Sefeidler ve Tip Ia süpernovaları gibi."},
-    {"terim": "Kozmik uzaklık merdiveni", "tanim": "Her basamağı bir öncekiyle ayarlanan uzaklık ölçme yöntemleri dizisi: ıraklık, Sefeidler, Ia süpernovaları."},
-    {"terim": "Dönme eğrisi", "tanim": "Bir galaksideki yıldız ve gazın dönüş hızının merkeze uzaklığa göre grafiği."},
-    {"terim": "Kütleçekimsel mercek", "tanim": "Büyük bir kütlenin arkasındaki uzak cisimlerin ışığını bükerek görüntülerini çarpıtması."},
-    {"terim": "Karanlık madde", "tanim": "Işık yaymayan, yalnızca kütleçekimi etkisinden tanınan ve evrenin yaklaşık dörtte birini oluşturan bilinmeyen madde."},
-    {"terim": "Karanlık enerji", "tanim": "Evrenin genişlemesini hızlandıran, evrenin yaklaşık üçte ikisinden fazlasını oluşturan ve doğası bilinmeyen bileşen."},
-    {"terim": "Kozmolojik sabit (Λ)", "tanim": "Uzayın kendisine ait sabit bir enerji gibi davranan ve genişlemeyi hızlandıran terim; karanlık enerjinin en basit açıklaması."},
-    {"terim": "Hubble gerilimi", "tanim": "Erken evrenden (yaklaşık 67) ve uzaklık merdiveninden (yaklaşık 73) ölçülen Hubble sabiti değerleri arasındaki açıklanamamış fark."}
+    {
+      "terim": "Kozmoloji",
+      "tanim": "Evrenin bütününün yapısını, içeriğini, geçmişini ve geleceğini inceleyen bilim dalı.",
+      "kid": "d17t0"
+    },
+    {
+      "terim": "Kırmızıya kayma (z)",
+      "tanim": "Bir ışığın dalga boyunun yayıldığı andaki değerine göre kesirli olarak ne kadar uzadığı.",
+      "kid": "d17t1"
+    },
+    {
+      "terim": "Hubble sabiti (H0)",
+      "tanim": "Galaksilerin uzaklaşma hızının uzaklığa oranı; birimi km/s/Mpc.",
+      "kid": "d17t2"
+    },
+    {
+      "terim": "Iraklık",
+      "tanim": "Dünya'nın Güneş çevresindeki hareketi yüzünden yakın bir yıldızın uzak yıldızlara göre gökte yaptığı küçük açısal kayma.",
+      "kid": "d17t3"
+    },
+    {
+      "terim": "Standart mum",
+      "tanim": "Gerçek parlaklığı bilinen, bu yüzden görünen parlaklığından uzaklığı hesaplanabilen cisim; Sefeidler ve Tip Ia süpernovaları gibi.",
+      "kid": "d17t4"
+    },
+    {
+      "terim": "Kozmik uzaklık merdiveni",
+      "tanim": "Her basamağı bir öncekiyle ayarlanan uzaklık ölçme yöntemleri dizisi: ıraklık, Sefeidler, Ia süpernovaları.",
+      "kid": "d17t5"
+    },
+    {
+      "terim": "Dönme eğrisi",
+      "tanim": "Bir galaksideki yıldız ve gazın dönüş hızının merkeze uzaklığa göre grafiği.",
+      "kid": "d17t6"
+    },
+    {
+      "terim": "Kütleçekimsel mercek",
+      "tanim": "Büyük bir kütlenin arkasındaki uzak cisimlerin ışığını bükerek görüntülerini çarpıtması.",
+      "kid": "d17t7"
+    },
+    {
+      "terim": "Karanlık madde",
+      "tanim": "Işık yaymayan, yalnızca kütleçekimi etkisinden tanınan ve evrenin yaklaşık dörtte birini oluşturan bilinmeyen madde.",
+      "kid": "d17t8"
+    },
+    {
+      "terim": "Karanlık enerji",
+      "tanim": "Evrenin genişlemesini hızlandıran, evrenin yaklaşık üçte ikisinden fazlasını oluşturan ve doğası bilinmeyen bileşen.",
+      "kid": "d17t9"
+    },
+    {
+      "terim": "Kozmolojik sabit (Λ)",
+      "tanim": "Uzayın kendisine ait sabit bir enerji gibi davranan ve genişlemeyi hızlandıran terim; karanlık enerjinin en basit açıklaması.",
+      "kid": "d17t10"
+    },
+    {
+      "terim": "Hubble gerilimi",
+      "tanim": "Erken evrenden (yaklaşık 67) ve uzaklık merdiveninden (yaklaşık 73) ölçülen Hubble sabiti değerleri arasındaki açıklanamamış fark.",
+      "kid": "d17t11"
+    }
   ],
   "defter_notu": [
     "z = (λgöz − λyay) / λyay; küçük z: v ≈ c × z; büyük z: 1 + z = evrenin büyüme katı.",
@@ -175,38 +335,141 @@
     "Gelecek: büyük olasılıkla ısıl ölüm (yıldız oluşumu ~10¹⁴ yılda biter); Büyük Çöküş olası görülmüyor."
   ],
   "sorular": [
-    {"soru": "Bir galaksinin tayfında 656,28 nm'lik H-alfa çizgisi 689,09 nm'de görülüyor. z ve yaklaşık uzaklaşma hızı nedir?", "cevap": "z = (689,09 − 656,28) / 656,28 = 32,81 / 656,28 ≈ 0,050. v ≈ 299.792 × 0,050 ≈ 15.000 km/s."},
-    {"soru": "Aynı galaksinin uzaklığı H0 = 67,4 km/s/Mpc ile kaç megaparsektir?", "cevap": "d = v / H0 ≈ 15.000 / 67,4 ≈ 222 Mpc, yani yaklaşık 725 milyon ışık yılı (222 × 3,2616)."},
-    {"soru": "Iraklık açısı 0,1 yay saniyesi olan bir yıldız kaç parsek ve kaç ışık yılı uzaktadır?", "cevap": "d = 1 / 0,1 = 10 parsek; 10 × 3,2616 ≈ 32,6 ışık yılı."},
-    {"soru": "Leavitt neden Küçük Macellan Bulutu'ndaki Sefeidleri kullandı?", "cevap": "Buluttaki yıldızların hepsi bizden kabaca aynı uzaklıkta olduğu için görünen parlaklık farkları gerçek parlaklık farklarını yansıtır. Böylece dönem ile gerçek parlaklık arasındaki ilişkiyi uzaklığı bilmeden görebildi."},
-    {"soru": "Uzaklık merdiveninde ıraklık ölçümündeki küçük bir hata neden en uzak galaksilerin uzaklığını da etkiler?", "cevap": "Çünkü Sefeidlerin parlaklık ölçeği ıraklıkla, Ia süpernovalarının ölçeği de Sefeidlerle ayarlanır. Alttaki hata zincir boyunca bütün üst basamaklara ve oradan Hubble sabitine taşınır."},
-    {"soru": "Düz bir dönme eğrisi neden görünmeyen kütleye işaret eder?", "cevap": "Kütle görünen yıldızlar gibi merkezde toplansaydı dış kısımlar daha yavaş dönmeliydi. Hızın uzaklıkla düşmemesi, yörüngelerin içindeki kütlenin yıldızların bittiği yerden öteye de arttığını, yani ışık vermeyen bir kütle olduğunu gösterir."},
-    {"soru": "Mermi Kümesi karanlık madde için neden güçlü bir kanıt sayılır?", "cevap": "Çarpışmada sıradan maddenin çoğunu taşıyan sıcak gaz sürüklenmeyle yavaşladı, mercek etkisiyle ölçülen kütlenin büyük kısmı ise yoluna devam etti. Kütlenin görünen maddeden ayrı bir yerde durması, kütleçekiminin kaynağının büyük ölçüde görünmeyen bir madde olduğunu gösterir."},
-    {"soru": "1998'de uzak Ia süpernovalarının beklenenden sönük görünmesi neden hızlanan genişleme anlamına geliyordu?", "cevap": "Ia'ların tepe parlaklıkları birbirine çok yakındır. Beklenenden sönük görünmeleri, yavaşlayan bir evrende olacağından daha uzakta olduklarını gösterdi; bu da genişlemenin hızlandığı anlamına gelir."},
-    {"soru": "Hubble gerilimini yalnızca ölçüm hatasıyla açıklamak neden kolay değil?", "cevap": "Her iki taraf da onlarca yıl boyunca giderek hassaslaşan ölçümlerle kendi değerinde kaldı ve fark 5 sigmanın üstüne çıktı. JWST'nin daha keskin görüntüleri de sonucu değiştirmedi. Yine de bir sistematik hata dışlanmış değil; yeni fizik de bir olasılık."},
-    {"soru": "Büyük Çöküş senaryosu bugün neden olası görülmüyor?", "cevap": "Çünkü gözlemler genişlemenin yavaşlamadığını, karanlık enerji yüzünden hızlandığını gösteriyor. Karanlık enerji kozmolojik sabit gibi davranmaya devam ederse genişleme durup tersine dönmez."}
+    {
+      "soru": "Bir galaksinin tayfında 656,28 nm'lik H-alfa çizgisi 689,09 nm'de görülüyor. z ve yaklaşık uzaklaşma hızı nedir?",
+      "cevap": "z = (689,09 − 656,28) / 656,28 = 32,81 / 656,28 ≈ 0,050. v ≈ 299.792 × 0,050 ≈ 15.000 km/s.",
+      "kid": "d17s0"
+    },
+    {
+      "soru": "Aynı galaksinin uzaklığı H0 = 67,4 km/s/Mpc ile kaç megaparsektir?",
+      "cevap": "d = v / H0 ≈ 15.000 / 67,4 ≈ 222 Mpc, yani yaklaşık 725 milyon ışık yılı (222 × 3,2616).",
+      "kid": "d17s1"
+    },
+    {
+      "soru": "Iraklık açısı 0,1 yay saniyesi olan bir yıldız kaç parsek ve kaç ışık yılı uzaktadır?",
+      "cevap": "d = 1 / 0,1 = 10 parsek; 10 × 3,2616 ≈ 32,6 ışık yılı.",
+      "kid": "d17s2"
+    },
+    {
+      "soru": "Leavitt neden Küçük Macellan Bulutu'ndaki Sefeidleri kullandı?",
+      "cevap": "Buluttaki yıldızların hepsi bizden kabaca aynı uzaklıkta olduğu için görünen parlaklık farkları gerçek parlaklık farklarını yansıtır. Böylece dönem ile gerçek parlaklık arasındaki ilişkiyi uzaklığı bilmeden görebildi.",
+      "kid": "d17s3"
+    },
+    {
+      "soru": "Uzaklık merdiveninde ıraklık ölçümündeki küçük bir hata neden en uzak galaksilerin uzaklığını da etkiler?",
+      "cevap": "Çünkü Sefeidlerin parlaklık ölçeği ıraklıkla, Ia süpernovalarının ölçeği de Sefeidlerle ayarlanır. Alttaki hata zincir boyunca bütün üst basamaklara ve oradan Hubble sabitine taşınır.",
+      "kid": "d17s4"
+    },
+    {
+      "soru": "Düz bir dönme eğrisi neden görünmeyen kütleye işaret eder?",
+      "cevap": "Kütle görünen yıldızlar gibi merkezde toplansaydı dış kısımlar daha yavaş dönmeliydi. Hızın uzaklıkla düşmemesi, yörüngelerin içindeki kütlenin yıldızların bittiği yerden öteye de arttığını, yani ışık vermeyen bir kütle olduğunu gösterir.",
+      "kid": "d17s5"
+    },
+    {
+      "soru": "Mermi Kümesi karanlık madde için neden güçlü bir kanıt sayılır?",
+      "cevap": "Çarpışmada sıradan maddenin çoğunu taşıyan sıcak gaz sürüklenmeyle yavaşladı, mercek etkisiyle ölçülen kütlenin büyük kısmı ise yoluna devam etti. Kütlenin görünen maddeden ayrı bir yerde durması, kütleçekiminin kaynağının büyük ölçüde görünmeyen bir madde olduğunu gösterir.",
+      "kid": "d17s6"
+    },
+    {
+      "soru": "1998'de uzak Ia süpernovalarının beklenenden sönük görünmesi neden hızlanan genişleme anlamına geliyordu?",
+      "cevap": "Ia'ların tepe parlaklıkları birbirine çok yakındır. Beklenenden sönük görünmeleri, yavaşlayan bir evrende olacağından daha uzakta olduklarını gösterdi; bu da genişlemenin hızlandığı anlamına gelir.",
+      "kid": "d17s7"
+    },
+    {
+      "soru": "Hubble gerilimini yalnızca ölçüm hatasıyla açıklamak neden kolay değil?",
+      "cevap": "Her iki taraf da onlarca yıl boyunca giderek hassaslaşan ölçümlerle kendi değerinde kaldı ve fark 5 sigmanın üstüne çıktı. JWST'nin daha keskin görüntüleri de sonucu değiştirmedi. Yine de bir sistematik hata dışlanmış değil; yeni fizik de bir olasılık.",
+      "kid": "d17s8"
+    },
+    {
+      "soru": "Büyük Çöküş senaryosu bugün neden olası görülmüyor?",
+      "cevap": "Çünkü gözlemler genişlemenin yavaşlamadığını, karanlık enerji yüzünden hızlandığını gösteriyor. Karanlık enerji kozmolojik sabit gibi davranmaya devam ederse genişleme durup tersine dönmez.",
+      "kid": "d17s9"
+    }
   ],
   "kaynaklar": [
-    {"ad": "Planck Collaboration 2018, Planck 2018 results VI. Cosmological parameters, arXiv:1807.06209", "url": "https://arxiv.org/abs/1807.06209"},
-    {"ad": "Planck 2018 VI tam metin (Tablo 2)", "url": "https://arxiv.org/pdf/1807.06209v4"},
-    {"ad": "Wikipedia, Hubble's law (Hubble tension bölümü)", "url": "https://en.wikipedia.org/wiki/Hubble%27s_law"},
-    {"ad": "Wikipedia, Redshift", "url": "https://en.wikipedia.org/wiki/Redshift"},
-    {"ad": "IAU iau1812 basın bülteni (2018)", "url": "https://iau.org/news/pressreleases/detail/iau1812"},
-    {"ad": "Wikipedia, Henrietta Swan Leavitt", "url": "https://en.wikipedia.org/wiki/Henrietta_Swan_Leavitt"},
-    {"ad": "IAU 2015 Resolution B2 metni, arXiv:1510.06262", "url": "https://arxiv.org/pdf/1510.06262"},
-    {"ad": "Astronomy.com, The cosmic distance ladder", "url": "https://www.astronomy.com/science/the-cosmic-distance-ladder-how-we-measure-an-infinite-universe/"},
-    {"ad": "ESA/Hubble heic1611a, Cosmic distance ladder (2016)", "url": "https://esahubble.org/images/heic1611a/"},
-    {"ad": "Bond ve ark. 2013, HD 140283, arXiv:1302.3180", "url": "https://arxiv.org/abs/1302.3180"},
-    {"ad": "The Early History of Dark Matter, arXiv:astro-ph/9904251", "url": "https://arxiv.org/pdf/astro-ph/9904251"},
-    {"ad": "Wikipedia, Galaxy rotation curve", "url": "https://en.wikipedia.org/wiki/Galaxy_rotation_curve"},
-    {"ad": "Wikipedia, Milky Way", "url": "https://en.wikipedia.org/wiki/Milky_Way"},
-    {"ad": "NASA Science, Dark Matter & Dark Energy", "url": "https://science.nasa.gov/universe/dark-matter-dark-energy/"},
-    {"ad": "Chandra basın bülteni (2006), NASA Finds Direct Proof of Dark Matter", "url": "https://chandra.si.edu/press/06_releases/press_082106.html"},
-    {"ad": "Colafrancesco, Dark Matter in Modern Cosmology, arXiv:1004.3869", "url": "https://arxiv.org/pdf/1004.3869"},
-    {"ad": "Nobel Fizik Ödülü 2011 basın bülteni", "url": "https://www.nobelprize.org/prizes/physics/2011/press-release/"},
-    {"ad": "ESA, Planck reveals an almost perfect Universe (2013)", "url": "https://www.esa.int/Science_Exploration/Space_Science/Planck/Planck_reveals_an_almost_perfect_Universe"},
-    {"ad": "Valcin ve ark. 2025, The Age of the Universe with Globular Clusters III, arXiv:2503.19481", "url": "https://arxiv.org/html/2503.19481v1"},
-    {"ad": "Wikipedia, Chronology of the universe", "url": "https://en.wikipedia.org/wiki/Chronology_of_the_universe"},
-    {"ad": "Wikipedia, Expansion of the universe", "url": "https://en.wikipedia.org/wiki/Expansion_of_the_universe"}
+    {
+      "ad": "Planck Collaboration 2018, Planck 2018 results VI. Cosmological parameters, arXiv:1807.06209",
+      "url": "https://arxiv.org/abs/1807.06209"
+    },
+    {
+      "ad": "Planck 2018 VI tam metin (Tablo 2)",
+      "url": "https://arxiv.org/pdf/1807.06209v4"
+    },
+    {
+      "ad": "Wikipedia, Hubble's law (Hubble tension bölümü)",
+      "url": "https://en.wikipedia.org/wiki/Hubble%27s_law"
+    },
+    {
+      "ad": "Wikipedia, Redshift",
+      "url": "https://en.wikipedia.org/wiki/Redshift"
+    },
+    {
+      "ad": "IAU iau1812 basın bülteni (2018)",
+      "url": "https://iau.org/news/pressreleases/detail/iau1812"
+    },
+    {
+      "ad": "Wikipedia, Henrietta Swan Leavitt",
+      "url": "https://en.wikipedia.org/wiki/Henrietta_Swan_Leavitt"
+    },
+    {
+      "ad": "IAU 2015 Resolution B2 metni, arXiv:1510.06262",
+      "url": "https://arxiv.org/pdf/1510.06262"
+    },
+    {
+      "ad": "Astronomy.com, The cosmic distance ladder",
+      "url": "https://www.astronomy.com/science/the-cosmic-distance-ladder-how-we-measure-an-infinite-universe/"
+    },
+    {
+      "ad": "ESA/Hubble heic1611a, Cosmic distance ladder (2016)",
+      "url": "https://esahubble.org/images/heic1611a/"
+    },
+    {
+      "ad": "Bond ve ark. 2013, HD 140283, arXiv:1302.3180",
+      "url": "https://arxiv.org/abs/1302.3180"
+    },
+    {
+      "ad": "The Early History of Dark Matter, arXiv:astro-ph/9904251",
+      "url": "https://arxiv.org/pdf/astro-ph/9904251"
+    },
+    {
+      "ad": "Wikipedia, Galaxy rotation curve",
+      "url": "https://en.wikipedia.org/wiki/Galaxy_rotation_curve"
+    },
+    {
+      "ad": "Wikipedia, Milky Way",
+      "url": "https://en.wikipedia.org/wiki/Milky_Way"
+    },
+    {
+      "ad": "NASA Science, Dark Matter & Dark Energy",
+      "url": "https://science.nasa.gov/universe/dark-matter-dark-energy/"
+    },
+    {
+      "ad": "Chandra basın bülteni (2006), NASA Finds Direct Proof of Dark Matter",
+      "url": "https://chandra.si.edu/press/06_releases/press_082106.html"
+    },
+    {
+      "ad": "Colafrancesco, Dark Matter in Modern Cosmology, arXiv:1004.3869",
+      "url": "https://arxiv.org/pdf/1004.3869"
+    },
+    {
+      "ad": "Nobel Fizik Ödülü 2011 basın bülteni",
+      "url": "https://www.nobelprize.org/prizes/physics/2011/press-release/"
+    },
+    {
+      "ad": "ESA, Planck reveals an almost perfect Universe (2013)",
+      "url": "https://www.esa.int/Science_Exploration/Space_Science/Planck/Planck_reveals_an_almost_perfect_Universe"
+    },
+    {
+      "ad": "Valcin ve ark. 2025, The Age of the Universe with Globular Clusters III, arXiv:2503.19481",
+      "url": "https://arxiv.org/html/2503.19481v1"
+    },
+    {
+      "ad": "Wikipedia, Chronology of the universe",
+      "url": "https://en.wikipedia.org/wiki/Chronology_of_the_universe"
+    },
+    {
+      "ad": "Wikipedia, Expansion of the universe",
+      "url": "https://en.wikipedia.org/wiki/Expansion_of_the_universe"
+    }
   ]
 }

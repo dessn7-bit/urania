@@ -4,7 +4,10 @@
   "yeni": true,
   "baslik": "Kara Delikler ve Kütleçekim Dalgaları: Uzay-Zamanın Uç Noktaları",
   "ozet": "Kara delik, ışığın bile kaçamadığı kadar sıkışmış kütledir; sınırı olay ufkudur ve boyutu yalnızca kütleye bağlıdır. Bu derste Schwarzschild yarıçapını hesaplayacak, galaksimizin merkezindeki dev kara deliğin yıldız yörüngeleriyle nasıl tartıldığını, ilk kara delik fotoğraflarının nasıl çekildiğini ve iki kara deliğin çarpışmasından gelen kütleçekim dalgalarının nasıl duyulduğunu öğreneceksin.",
-  "on_bilgi": ["d3", "d6"],
+  "on_bilgi": [
+    "d3",
+    "d6"
+  ],
   "bolumler": [
     {
       "baslik": "Işığın bile kaçamadığı yer",
@@ -138,70 +141,121 @@
     {
       "deger": "~3,0 km (Güneş), ~9 mm (Dünya)",
       "aciklama": "Schwarzschild yarıçapları",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Schwarzschild_radius"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Schwarzschild_radius",
+      "kid": "d16n0"
     },
     {
       "deger": "net +38,6 mikrosaniye/gün; ~11,4 km/gün",
       "aciklama": "GPS uydu saatlerinde göreli zaman farkı ve düzeltilmezse oluşacak konum hatası",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Error_analysis_for_the_Global_Positioning_System"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Error_analysis_for_the_Global_Positioning_System",
+      "kid": "d16n1"
     },
     {
       "deger": "≥3,5 M☉; 5,6 gün",
       "aciklama": "Cyg X-1'deki görünmeyen eşin en küçük kütlesi ve yörünge süresi",
-      "kaynak_url": "https://arxiv.org/pdf/1911.04305"
+      "kaynak_url": "https://arxiv.org/pdf/1911.04305",
+      "kid": "d16n2"
     },
     {
       "deger": "~4 milyon M☉; ~27.000 ışık yılı",
       "aciklama": "Sgr A*'ın kütlesi ve uzaklığı",
-      "kaynak_url": "https://www.eso.org/public/news/eso2208/"
+      "kaynak_url": "https://www.eso.org/public/news/eso2208/",
+      "kid": "d16n3"
     },
     {
       "deger": "16 yıl; 120 AB; ~7.650 km/s",
       "aciklama": "S2 yıldızının yörünge süresi, Mayıs 2018'deki en yakın geçiş uzaklığı ve hızı",
-      "kaynak_url": "https://arxiv.org/abs/1807.09409v1"
+      "kaynak_url": "https://arxiv.org/abs/1807.09409v1",
+      "kid": "d16n4"
     },
     {
       "deger": "6,5 milyar M☉; 55 milyon ışık yılı",
       "aciklama": "M87 galaksisinin merkezindeki kara deliğin kütlesi ve uzaklığı",
-      "kaynak_url": "https://www.eso.org/public/news/eso1907/"
+      "kaynak_url": "https://www.eso.org/public/news/eso1907/",
+      "kid": "d16n5"
     },
     {
       "deger": "8 gözlemevi; 1,3 mm",
       "aciklama": "EHT'nin 2017 gözlemlerinde birleştirilen radyo gözlemevi sayısı ve dalga boyu",
-      "kaynak_url": "https://www.eso.org/public/news/eso1907/"
+      "kaynak_url": "https://www.eso.org/public/news/eso1907/",
+      "kid": "d16n6"
     },
     {
       "deger": "4 km; ~10⁻¹⁹ m",
       "aciklama": "LIGO kol uzunluğu ve ölçülebilen en küçük boy değişimi",
-      "kaynak_url": "https://hyperphysics.gsu.edu/hbase/Forces/ligo.html"
+      "kaynak_url": "https://hyperphysics.gsu.edu/hbase/Forces/ligo.html",
+      "kid": "d16n7"
     },
     {
       "deger": "36 + 29 → 62 M☉; ~410 Mpc",
       "aciklama": "GW150914'teki kara delik kütleleri ve uzaklık",
-      "kaynak_url": "https://dcc.ligo.org/P1500218/public"
+      "kaynak_url": "https://dcc.ligo.org/P1500218/public",
+      "kid": "d16n8"
     },
     {
       "deger": "~10⁻²¹",
       "aciklama": "GW150914 sinyalinin en büyük genliği",
-      "kaynak_url": "https://www.gw.iucaa.in/news/gw150914/"
+      "kaynak_url": "https://www.gw.iucaa.in/news/gw150914/",
+      "kid": "d16n9"
     },
     {
       "deger": "~130 milyon ışık yılı; ~2 s",
       "aciklama": "GW170817'nin uzaklığı ve gama ışını patlamasının gecikmesi",
-      "kaynak_url": "https://www.eso.org/public/news/eso1733/"
+      "kaynak_url": "https://www.eso.org/public/news/eso1733/",
+      "kid": "d16n10"
     }
   ],
   "sozluk": [
-    { "terim": "Kaçış hızı", "tanim": "Bir cismin yüzeyinden, geri düşmeden sonsuza uzaklaşmak için gereken en küçük hız." },
-    { "terim": "Olay ufku", "tanim": "Kara deliğin çevresinde, içinden hiçbir şeyin, ışığın bile dışarı çıkamadığı sınır." },
-    { "terim": "Schwarzschild yarıçapı", "tanim": "Dönmeyen bir kara deliğin olay ufkunun yarıçapı, Rs = 2GM/c²." },
-    { "terim": "Spagettileşme", "tanim": "Kara deliğe yaklaşan bir cismin gelgit kuvvetleriyle boyuna uzayıp yanlardan sıkışması." },
-    { "terim": "X ışını çifti", "tanim": "Bir kara delik ya da nötron yıldızının eş yıldızından gaz çektiği ve gazın ısınıp X ışını yaydığı çift sistem." },
-    { "terim": "Süper kütleli kara delik", "tanim": "Galaksi merkezlerinde bulunan, yüz binlerce ile milyarlarca Güneş kütlesi arasındaki kara delik." },
-    { "terim": "Kütleçekimsel kızıla kayma", "tanim": "Güçlü kütleçekiminden çıkan ışığın dalga boyunun uzaması." },
-    { "terim": "Kütleçekim dalgası", "tanim": "Hızlanan kütlelerin uzay-zamanda yarattığı ve ışık hızında yayılan esneme ve sıkışma dalgası." },
-    { "terim": "İnterferometri", "tanim": "Birden çok teleskobun ya da ışık demetinin sinyallerini birleştirerek tek araçla mümkün olmayan ayrıntıyı ölçme tekniği." },
-    { "terim": "Çok habercili gökbilim", "tanim": "Aynı olayı kütleçekim dalgası, ışık ya da parçacık gibi farklı habercilerle birlikte inceleme." }
+    {
+      "terim": "Kaçış hızı",
+      "tanim": "Bir cismin yüzeyinden, geri düşmeden sonsuza uzaklaşmak için gereken en küçük hız.",
+      "kid": "d16t0"
+    },
+    {
+      "terim": "Olay ufku",
+      "tanim": "Kara deliğin çevresinde, içinden hiçbir şeyin, ışığın bile dışarı çıkamadığı sınır.",
+      "kid": "d16t1"
+    },
+    {
+      "terim": "Schwarzschild yarıçapı",
+      "tanim": "Dönmeyen bir kara deliğin olay ufkunun yarıçapı, Rs = 2GM/c².",
+      "kid": "d16t2"
+    },
+    {
+      "terim": "Spagettileşme",
+      "tanim": "Kara deliğe yaklaşan bir cismin gelgit kuvvetleriyle boyuna uzayıp yanlardan sıkışması.",
+      "kid": "d16t3"
+    },
+    {
+      "terim": "X ışını çifti",
+      "tanim": "Bir kara delik ya da nötron yıldızının eş yıldızından gaz çektiği ve gazın ısınıp X ışını yaydığı çift sistem.",
+      "kid": "d16t4"
+    },
+    {
+      "terim": "Süper kütleli kara delik",
+      "tanim": "Galaksi merkezlerinde bulunan, yüz binlerce ile milyarlarca Güneş kütlesi arasındaki kara delik.",
+      "kid": "d16t5"
+    },
+    {
+      "terim": "Kütleçekimsel kızıla kayma",
+      "tanim": "Güçlü kütleçekiminden çıkan ışığın dalga boyunun uzaması.",
+      "kid": "d16t6"
+    },
+    {
+      "terim": "Kütleçekim dalgası",
+      "tanim": "Hızlanan kütlelerin uzay-zamanda yarattığı ve ışık hızında yayılan esneme ve sıkışma dalgası.",
+      "kid": "d16t7"
+    },
+    {
+      "terim": "İnterferometri",
+      "tanim": "Birden çok teleskobun ya da ışık demetinin sinyallerini birleştirerek tek araçla mümkün olmayan ayrıntıyı ölçme tekniği.",
+      "kid": "d16t8"
+    },
+    {
+      "terim": "Çok habercili gökbilim",
+      "tanim": "Aynı olayı kütleçekim dalgası, ışık ya da parçacık gibi farklı habercilerle birlikte inceleme.",
+      "kid": "d16t9"
+    }
   ],
   "defter_notu": [
     "Kaçış hızı ≥ ışık hızı → kara delik. Michell 1783, Schwarzschild 1916, Penrose 1965 (Nobel 2020).",
@@ -218,56 +272,121 @@
   "sorular": [
     {
       "soru": "Olay ufku nedir ve Schwarzschild yarıçapı neye bağlıdır?",
-      "cevap": "Olay ufku, içinden ışığın bile çıkamadığı sınırdır. Schwarzschild yarıçapı (Rs = 2GM/c²) yalnızca kütleye bağlıdır ve kütleyle doğru orantılıdır."
+      "cevap": "Olay ufku, içinden ışığın bile çıkamadığı sınırdır. Schwarzschild yarıçapı (Rs = 2GM/c²) yalnızca kütleye bağlıdır ve kütleyle doğru orantılıdır.",
+      "kid": "d16s0"
     },
     {
       "soru": "20 Güneş kütleli bir kara deliğin olay ufku yarıçapı yaklaşık kaç km'dir?",
-      "cevap": "Rs ≈ 2,95 km × 20 = 59 km, yani yaklaşık 60 km."
+      "cevap": "Rs ≈ 2,95 km × 20 = 59 km, yani yaklaşık 60 km.",
+      "kid": "d16s1"
     },
     {
       "soru": "Güneş bir anda aynı kütlede bir kara deliğe dönüşseydi Dünya'nın yörüngesi değişir miydi?",
-      "cevap": "Hayır. Yörünge yalnızca merkezdeki kütleye ve uzaklığa bağlıdır; kütle aynı kaldığı için Dünya aynı yörüngede dönmeye devam ederdi. Yalnızca ışık ve ısı kesilirdi."
+      "cevap": "Hayır. Yörünge yalnızca merkezdeki kütleye ve uzaklığa bağlıdır; kütle aynı kaldığı için Dünya aynı yörüngede dönmeye devam ederdi. Yalnızca ışık ve ısı kesilirdi.",
+      "kid": "d16s2"
     },
     {
       "soru": "Bir astronot için hangi kara delik ufkunda daha tehlikelidir: yıldız kütleli olan mı, süper kütleli olan mı? Neden?",
-      "cevap": "Yıldız kütleli olan. Küçük kara delikte ufuk merkeze çok yakındır ve gelgit farkı ufuktan önce öldürücü olur (spagettileşme). Dev kara delikte öldürücü nokta ufkun içindedir; astronot ufku belirgin gelgit hissetmeden geçebilir."
+      "cevap": "Yıldız kütleli olan. Küçük kara delikte ufuk merkeze çok yakındır ve gelgit farkı ufuktan önce öldürücü olur (spagettileşme). Dev kara delikte öldürücü nokta ufkun içindedir; astronot ufku belirgin gelgit hissetmeden geçebilir.",
+      "kid": "d16s3"
     },
     {
       "soru": "Sgr A*'ın kütlesi nasıl ölçüldü? Bu yöntem neden güçlüdür?",
-      "cevap": "Merkeze yakın yıldızların (örneğin 16 yılda bir tur atan S2) yörüngeleri yıllarca izlendi ve Kepler yasalarıyla merkezdeki kütle hesaplandı: yaklaşık 4 milyon M☉. Güçlüdür, çünkü görünmeyen kütleyi doğrudan kütleçekim etkisinden ölçer ve bu kütlenin güneş sistemi büyüklüğünde bir bölgeye sığdığını gösterir."
+      "cevap": "Merkeze yakın yıldızların (örneğin 16 yılda bir tur atan S2) yörüngeleri yıllarca izlendi ve Kepler yasalarıyla merkezdeki kütle hesaplandı: yaklaşık 4 milyon M☉. Güçlüdür, çünkü görünmeyen kütleyi doğrudan kütleçekim etkisinden ölçer ve bu kütlenin güneş sistemi büyüklüğünde bir bölgeye sığdığını gösterir.",
+      "kid": "d16s4"
     },
     {
       "soru": "Sgr A* bize M87'nin kara deliğinden çok daha yakın olduğu halde görüntüsünü çıkarmak neden daha zordu?",
-      "cevap": "Sgr A* çok daha küçük olduğu için çevresindeki gaz bir turu dakikalar içinde tamamlar; gözlem sırasında görüntü sürekli değişir. M87'de bu tur günler ile haftalar sürer, görüntü daha durağandır."
+      "cevap": "Sgr A* çok daha küçük olduğu için çevresindeki gaz bir turu dakikalar içinde tamamlar; gözlem sırasında görüntü sürekli değişir. M87'de bu tur günler ile haftalar sürer, görüntü daha durağandır.",
+      "kid": "d16s5"
     },
     {
       "soru": "GW150914'te başlangıç kütleleri 36 ve 29 M☉, son kara delik 62 M☉ idi. Kayıp kütle nereye gitti ve toplam kütlenin yüzde kaçıdır?",
-      "cevap": "65 − 62 = 3 M☉ kütleçekim dalgası enerjisi olarak yayıldı. 3 ÷ 65 ≈ 0,046, yani yaklaşık yüzde 4,6."
+      "cevap": "65 − 62 = 3 M☉ kütleçekim dalgası enerjisi olarak yayıldı. 3 ÷ 65 ≈ 0,046, yani yaklaşık yüzde 4,6.",
+      "kid": "d16s6"
     },
     {
       "soru": "GW170817 neden kara delik birleşmelerinden farklı ve önemlidir?",
-      "cevap": "İki nötron yıldızının birleşmesiydi ve dalganın yanında ışık da yaydı. Gama ışını patlaması ve kilonova görüldü; bu, aynı olayın hem kütleçekim dalgasıyla hem ışıkla gözlendiği ilk olaydı ve ağır elementlerin kökeni ile kütleçekim dalgalarının hızı hakkında bilgi verdi."
+      "cevap": "İki nötron yıldızının birleşmesiydi ve dalganın yanında ışık da yaydı. Gama ışını patlaması ve kilonova görüldü; bu, aynı olayın hem kütleçekim dalgasıyla hem ışıkla gözlendiği ilk olaydı ve ağır elementlerin kökeni ile kütleçekim dalgalarının hızı hakkında bilgi verdi.",
+      "kid": "d16s7"
     }
   ],
   "kaynaklar": [
-    { "ad": "Nobel Prize in Physics 2020, Press release", "url": "https://www.nobelprize.org/prizes/physics/2020/press-release/" },
-    { "ad": "Nobel Prize in Physics 2017, Press release", "url": "https://www.nobelprize.org/prizes/physics/2017/press-release/" },
-    { "ad": "ESO eso1907, Astronomers Capture First Image of a Black Hole", "url": "https://www.eso.org/public/news/eso1907/" },
-    { "ad": "ESO eso2208, First image of the black hole at the heart of the Milky Way", "url": "https://www.eso.org/public/news/eso2208/" },
-    { "ad": "ESO eso1733, Merging neutron stars", "url": "https://www.eso.org/public/news/eso1733/" },
-    { "ad": "LIGO, Virgo, Fermi GBM, INTEGRAL 2017, Gravitational Waves and Gamma-rays from a Binary Neutron Star Merger: GW170817 and GRB 170817A (arXiv:1710.05834)", "url": "https://arxiv.org/abs/1710.05834v2" },
-    { "ad": "GRAVITY Collaboration 2018, Detection of the gravitational redshift in the orbit of the star S2 (arXiv:1807.09409)", "url": "https://arxiv.org/abs/1807.09409v1" },
-    { "ad": "LIGO/Virgo, Observation of Gravitational Waves from a Binary Black Hole Merger (LIGO-P1500218)", "url": "https://dcc.ligo.org/P1500218/public" },
-    { "ad": "LIGO Caltech, 2017 Nobel Prize press release", "url": "https://www.ligo.caltech.edu/page/press-release-2017-nobel-prize" },
-    { "ad": "IUCAA, GW150914: The First Detected Gravitational Wave Event", "url": "https://www.gw.iucaa.in/news/gw150914/" },
-    { "ad": "HyperPhysics (Georgia State University), LIGO", "url": "https://hyperphysics.gsu.edu/hbase/Forces/ligo.html" },
-    { "ad": "A Brief History of Gravitational Waves (arXiv:1609.09400)", "url": "https://arxiv.org/pdf/1609.09400" },
-    { "ad": "Astrophysical Black Holes (arXiv:1911.04305)", "url": "https://arxiv.org/pdf/1911.04305" },
-    { "ad": "NASA Science, Types of Black Holes", "url": "https://science.nasa.gov/universe/black-holes/types" },
-    { "ad": "NASA Science, What Happens When Something Gets Too Close to a Black Hole?", "url": "https://science.nasa.gov/universe/black-holes/what-happens-when-something-gets-too-close-to-a-black-hole/" },
-    { "ad": "Wikipedia, Schwarzschild radius", "url": "https://en.wikipedia.org/wiki/Schwarzschild_radius" },
-    { "ad": "Wikipedia, Escape velocity", "url": "https://en.wikipedia.org/wiki/Escape_velocity" },
-    { "ad": "Wikipedia, Error analysis for the Global Positioning System", "url": "https://en.wikipedia.org/wiki/Error_analysis_for_the_Global_Positioning_System" },
-    { "ad": "Wikipedia, Spaghettification", "url": "https://en.wikipedia.org/wiki/Spaghettification" }
+    {
+      "ad": "Nobel Prize in Physics 2020, Press release",
+      "url": "https://www.nobelprize.org/prizes/physics/2020/press-release/"
+    },
+    {
+      "ad": "Nobel Prize in Physics 2017, Press release",
+      "url": "https://www.nobelprize.org/prizes/physics/2017/press-release/"
+    },
+    {
+      "ad": "ESO eso1907, Astronomers Capture First Image of a Black Hole",
+      "url": "https://www.eso.org/public/news/eso1907/"
+    },
+    {
+      "ad": "ESO eso2208, First image of the black hole at the heart of the Milky Way",
+      "url": "https://www.eso.org/public/news/eso2208/"
+    },
+    {
+      "ad": "ESO eso1733, Merging neutron stars",
+      "url": "https://www.eso.org/public/news/eso1733/"
+    },
+    {
+      "ad": "LIGO, Virgo, Fermi GBM, INTEGRAL 2017, Gravitational Waves and Gamma-rays from a Binary Neutron Star Merger: GW170817 and GRB 170817A (arXiv:1710.05834)",
+      "url": "https://arxiv.org/abs/1710.05834v2"
+    },
+    {
+      "ad": "GRAVITY Collaboration 2018, Detection of the gravitational redshift in the orbit of the star S2 (arXiv:1807.09409)",
+      "url": "https://arxiv.org/abs/1807.09409v1"
+    },
+    {
+      "ad": "LIGO/Virgo, Observation of Gravitational Waves from a Binary Black Hole Merger (LIGO-P1500218)",
+      "url": "https://dcc.ligo.org/P1500218/public"
+    },
+    {
+      "ad": "LIGO Caltech, 2017 Nobel Prize press release",
+      "url": "https://www.ligo.caltech.edu/page/press-release-2017-nobel-prize"
+    },
+    {
+      "ad": "IUCAA, GW150914: The First Detected Gravitational Wave Event",
+      "url": "https://www.gw.iucaa.in/news/gw150914/"
+    },
+    {
+      "ad": "HyperPhysics (Georgia State University), LIGO",
+      "url": "https://hyperphysics.gsu.edu/hbase/Forces/ligo.html"
+    },
+    {
+      "ad": "A Brief History of Gravitational Waves (arXiv:1609.09400)",
+      "url": "https://arxiv.org/pdf/1609.09400"
+    },
+    {
+      "ad": "Astrophysical Black Holes (arXiv:1911.04305)",
+      "url": "https://arxiv.org/pdf/1911.04305"
+    },
+    {
+      "ad": "NASA Science, Types of Black Holes",
+      "url": "https://science.nasa.gov/universe/black-holes/types"
+    },
+    {
+      "ad": "NASA Science, What Happens When Something Gets Too Close to a Black Hole?",
+      "url": "https://science.nasa.gov/universe/black-holes/what-happens-when-something-gets-too-close-to-a-black-hole/"
+    },
+    {
+      "ad": "Wikipedia, Schwarzschild radius",
+      "url": "https://en.wikipedia.org/wiki/Schwarzschild_radius"
+    },
+    {
+      "ad": "Wikipedia, Escape velocity",
+      "url": "https://en.wikipedia.org/wiki/Escape_velocity"
+    },
+    {
+      "ad": "Wikipedia, Error analysis for the Global Positioning System",
+      "url": "https://en.wikipedia.org/wiki/Error_analysis_for_the_Global_Positioning_System"
+    },
+    {
+      "ad": "Wikipedia, Spaghettification",
+      "url": "https://en.wikipedia.org/wiki/Spaghettification"
+    }
   ]
 }

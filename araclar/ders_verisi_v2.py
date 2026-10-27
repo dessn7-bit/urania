@@ -15,6 +15,24 @@ UNITELER = [
 ]
 eski = {d['id']: d for d in json.load(open(os.path.join(K, 'veri/dersler.json'), encoding='utf-8'))['dersler']}
 dersler, kaynak = [], {}
+# Tekrar kartlarının kalıcı kimliği (kid): kartın ilerlemesi bu kimliğe yazılır. İlk atamada eski sıra
+# kimliğiyle aynıdır (d1s0, d1n0, d1t0: mevcut ilerleme korunur); sonradan eklenen öğe en büyük numaranın
+# bir fazlasını alır. Böylece araya soru eklemek ya da sırayı değiştirmek ilerlemeyi başka karta kaydırmaz.
+def kimlik_ver(d):
+    degisti = False
+    for alan, ek in (('sorular', 's'), ('anahtar_sayilar', 'n'), ('sozluk', 't')):
+        ls = d.get(alan) or []
+        on = d['id'] + ek
+        var = [int(x['kid'][len(on):]) for x in ls if str(x.get('kid', '')).startswith(on) and x['kid'][len(on):].isdigit()]
+        sonraki = (max(var) + 1) if var else 0
+        for i, x in enumerate(ls):
+            if 'kid' in x: continue
+            if var: x['kid'] = on + str(sonraki); sonraki += 1
+            else: x['kid'] = on + str(i)
+            degisti = True
+        kids = [x['kid'] for x in ls]
+        assert len(kids) == len(set(kids)), (d['id'], alan, 'kid tekrarı')
+    return degisti
 for u in UNITELER:
     for i in u['dersler']:
         yol = os.path.join(V2, i + '.json')
@@ -25,6 +43,7 @@ for u in UNITELER:
                 if i in eski: dersler.append(eski[i]); kaynak[i] = 'eski'
                 continue
             d = json.load(open(yol, encoding='utf-8'))
+            if kimlik_ver(d): json.dump(d, open(yol, 'w', encoding='utf-8'), ensure_ascii=False, indent=2)
             d['unite'] = u['id']
             dersler.append(d); kaynak[i] = 'v2'
         elif i in eski:

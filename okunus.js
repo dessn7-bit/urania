@@ -112,8 +112,21 @@
     /* Tarih ve katalog adındaki tire (2026-12-15, K2-18 b, ISO 12312-2, P.L. 119-74) "eksi" okunmasın:
        bir yanda en az 3 basamak ya da rakamlardan önce harf varsa boşluk olur; "3-5" gibisi kalır */
     t = t.replace(/([A-Za-z]?)(\d+)((?:-\d+)+)/g, (m, h, a, k) => (h || a.length >= 3 || /\d{3}/.test(k) ? h + a + k.replace(/-/g, ' ') : m));
-    /* Basit kesir: 1/4 → dörtte bir */
-    t = t.replace(/(^|[\s(≈~])([1-9])\/([2-9]|10)(?![\d²³'’/]|[,.]\d)/g, (m, o, p, q) => (+p < +q ? o + ekle(SAYI[q], 'de') + ' ' + SAYI[p] : m));
+    /* Basit kesir: 1/4 → dörtte bir; ekli kesirde ek "bir"e geçer: 1/9'una → dokuzda birine */
+    const PAYDA = SAYI.concat(['on bir', 'on iki']);
+    t = t.replace(/(^|[\s(≈~])([1-9])\/([2-9]|1[0-2])(?:['’]([a-zçğıöşü]+))?(?![\d²³'’/]|[,.]\d)/g, (m, o, p, q, ek) => {
+      if (+p >= +q) return m;
+      const pay = ek ? ekle(SAYI[p], ek, true) : SAYI[p];
+      return pay ? o + ekle(PAYDA[q], 'de') + ' ' + pay : m;
+    });
+    /* İzotop: üst simgeli kütle numarası + element (¹H → hidrojen 1, ⁴He → helyum 4); pozitron, nötrino */
+    const ELEMENT = { H: 'hidrojen', He: 'helyum', Li: 'lityum', Be: 'berilyum', B: 'bor', C: 'karbon', N: 'azot', O: 'oksijen', Ne: 'neon', Mg: 'magnezyum', Si: 'silisyum', Fe: 'demir', Ni: 'nikel', U: 'uranyum' };
+    t = t.replace(/(^|[\s(;,])([⁰¹²³⁴⁵⁶⁷⁸⁹]+)([A-Z][a-z]?)(?![A-Za-z])/g, (m, o, u, e) => (ELEMENT[e] ? o + ELEMENT[e] + ' ' + [...u].map(c => UST[c]).join('') : m));
+    t = t.replace(/(^|[\s(;,])e⁺(?![A-Za-z])/g, '$1pozitron').replace(/(^|[\s(;,])e⁻(?![A-Za-z])/g, '$1elektron');
+    /* "(+BAO)": ek veriyle birlikte */
+    t = t.replace(/\(\+([A-ZÇĞİÖŞÜ][A-Za-zÇĞİÖŞÜçğıöşü]+)\)/g, '($1 ile)');
+    /* Tablolarda "y": sayıdan sonra iki noktayla yaş ("20 y: 7,3 mm"), aksi hâlde yıl ("11,86 y") */
+    t = t.replace(/(\d) y(?=\s?:)/g, '$1 yaş').replace(/(\d) y(?=\s*(?:[·,;)]|$))/g, '$1 yıl');
     /* Güneş ve Dünya birimleri (tamlama: "M☉'in" → Güneş kütlesinin, "M☉'lik" → Güneş kütlelik) */
     const gd = { 'M☉': 'Güneş kütlesi', 'L☉': 'Güneş ışınımı', 'R☉': 'Güneş yarıçapı', 'M⊕': 'Dünya kütlesi', 'R⊕': 'Dünya yarıçapı' };
     t = t.replace(new RegExp('([MLR][☉⊕])' + EK, 'g'), (m, s, ek) => {
@@ -161,7 +174,10 @@
     const yay = { '°': ['derece', false], '′': ['yay dakikası', true], '″': ['yay saniyesi', true] };
     t = t.replace(/([°′″])(?:['’]([a-zçğıöşü]+))?/g, (m, s, ek) => { const [k, iy] = yay[s]; const o = ekli(k, ek, iy); return ' ' + (o || k + (ek || '')); });
     /* Üsler: harften sonra ² ³ → kare / küp (ek uyar: "c²'ye" → c kareye); sayıdan ya da harften sonra diğerleri → "üzeri" */
-    t = t.replace(/([A-Za-zÇĞİÖŞÜçğıöşüα-ωΑ-Ω)])([²³])(?:['’]([a-zçğıöşü]+))?/g, (m, a, u, ek) => { const k = u === '²' ? 'kare' : 'küp'; return a + ' ' + (ekli(k, ek) || k + (ek ? "'" + ek : '')); });
+    t = t.replace(/([A-Za-zÇĞİÖŞÜçğıöşüα-ωΑ-Ω)])([²³])(?:['’]([a-zçğıöşü]+))?/g, (m, a, u, ek) => { const k = u === '²' ? 'kare' : 'küp'; return a + ' ' + (ekli(k, ek) || k + (ek ? "'" + ek : '')) + ' '; });
+    /* Sayıdan sonra tek ² / ³: "3²" → 3 kare (10²⁶ gibi çok basamaklı üs "üzeri" kalır) */
+    /* 10'un kuvveti bilimsel gösterimde "10 üzeri 3" okunur */
+    t = t.replace(/(\d+(?:,\d+)?)([²³])(?![⁻⁰¹²³⁴⁵⁶⁷⁸⁹])(?:['’]([a-zçğıöşü]+))?/g, (m, a, u, ek) => { if (a === '10') return m; const k = u === '²' ? 'kare' : 'küp'; return a + ' ' + (ekli(k, ek) || k + (ek ? "'" + ek : '')) + ' '; });
     t = t.replace(/([0-9A-Za-z)])([⁻⁰¹²³⁴⁵⁶⁷⁸⁹]+)/g, (m, a, u) => {
       const s = u.split('').map(c => UST[c]).join('');
       return a + ' üzeri ' + (s[0] === '-' ? 'eksi ' + s.slice(1) : s);

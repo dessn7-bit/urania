@@ -138,13 +138,14 @@
     durum.geceAnahtar = ogle().getTime() + '|' + k.enlem + '|' + k.boylam;
     const temsil = durum.gece.karanlikBas || secilenAn();
     durum.hedefDurum = G.hedeflerBuGece(durum.veri.hedefler, durum.gzl, durum.gece, temsil);
-    durum.meteorDurum = G.meteorDurumu(durum.veri.meteor.yagmurlar, temsil, durum.gzl, durum.gece);
+    /* Etkin olmayan yağmurların zirve gecesi hesabı ağır: önce onsuz, aşağıda arka arkaya */
+    durum.meteorDurum = G.meteorDurumu(G.meteorTakvimi(durum.veri.meteor, temsil), temsil, durum.gzl, durum.gece, { zirveGecesi: false });
     durum.ayGece = G.ayDurumu(temsil, durum.gzl);
     durum.gezegenGece = G.gezegenlerBuGece(temsil, durum.gzl, durum.gece);
     /* Olaylar (120 gün) ve Algol (30 gün) ağır: önce sayfa çizilsin, sonra arka arkaya hesaplansın */
     const sira = ++geceSira, gzl = durum.gzl, baz = bazAn();
     durum.olaylar = null; durum.algol = null; durum.algolGece = null;
-    listeleriYaz();
+    listeleriYaz(true);
     ortmeYaz();
     havaYaz();
     issYaz(true);
@@ -157,6 +158,11 @@
       const og = G.yerelOgle(baz, gzl.longitude);
       durum.algolGece = Ortme.algolGozlenebilir(durum.veri.algol, gzl, og, new Date(og.getTime() + 86400e3));
       algolYaz(); planYaz();
+      setTimeout(() => {
+        if (sira !== geceSira) return;
+        durum.meteorDurum = G.meteorDurumu(G.meteorTakvimi(durum.veri.meteor, temsil), temsil, gzl, durum.gece);
+        meteorYaz();
+      }, 0);
       setTimeout(() => {
         if (sira !== geceSira) return;
         durum.olaylar = G.olaylar(baz, gzl, 120);
@@ -174,7 +180,7 @@
     const ay = G.ayDurumu(an, gzl);
     const gezegenler = G.GEZEGENLER.map(c => {
       const k = G.cisimAltAz(c, an, gzl);
-      return { ad: G.TR_AD[c], alt: k.alt, az: k.az, kadir: A.Illumination(c, an).mag };
+      return { ad: G.TR_AD[c], alt: k.alt, az: k.az, kadir: G.gezegenKadir(c, an) };
     }).filter(g => g.kadir <= 6.5);
     const radyantlar = durum.meteorDurum.filter(m => m.aktif && m.radyant_ra != null).map(m => ({ ad: m.ad, ra: m.radyant_ra, dec: m.radyant_dec }));
     /* Uydular: veri yüklüyse seçili an için konumlar, 60 dk içinde başlayan görünür geçişlerin yolu */
@@ -346,14 +352,17 @@
     const parca = [`zirve ${U.gun(zirve)} (${U.kacGun(m.gunFark)})`, aralik, /\(.*\)/.test(String(m.zhr)) ? 'ZHR ' + U.kacis(String(m.zhr).replace(/^\S+\s*/, '')) : null, m.hiz ? m.hiz + ' km/s' : null, `zirvede Ay %${Math.round(ayOran * 100)}`];
     if (m.radyantTepe && !tam) parca.push(`radyant ${m.radyantGece === 'bu gece' ? 'bu gece' : 'zirve gecesi'} en çok ${U.derece(m.radyantTepe.alt)}`);
     if (!tam && m.gunFark > 0) parca.push(takvimBag({ baslik: m.ad + ' meteor yağmuru zirvesi', bas: zirve, aciklama: 'IMO takvimine göre zirve. ZHR ' + m.zhr + '; zirvede Ay %' + Math.round(ayOran * 100) + ' aydınlık. (Urania)' }));
-    return `<li${!m.aktif && tam ? ' class="sonuk"' : ''}><span class="ad">${U.kacis(m.ad)}${rozet}</span><span class="sag">${m.zhr != null ? 'ZHR ' + U.kacis(String(m.zhr).split(' ')[0]) : ''}</span><span class="alt">${parca.filter(Boolean).join(' · ')}${m.not ? '<br>' + U.kacis(m.not) : ''}</span></li>`;
+    const tahminNot = m.tahmini ? `<br><span class="kucuk">Zirve, IMO ${m.tahmini} takvimindeki Güneş boylamından (λ☉ ${U.sayi(m.gunes_boylami, 2)}°) hesaplandı; IMO bu yılın takvimini yayımlayınca birkaç saat değişebilir.</span>` : '';
+    return `<li${!m.aktif && tam ? ' class="sonuk"' : ''}><span class="ad">${U.kacis(m.ad)}${rozet}</span><span class="sag">${m.zhr != null ? 'ZHR ' + U.kacis(String(m.zhr).split(' ')[0]) : ''}</span><span class="alt">${parca.filter(Boolean).join(' · ')}${m.not ? '<br>' + U.kacis(m.not) : ''}${tahminNot}</span></li>`;
   }
 
   function meteorYaz() {
     const ds = durum.meteorDurum;
     const one = ds.filter(m => m.aktif || (m.gunFark > 0 && m.gunFark < 75)).sort((a, b) => (b.aktif - a.aktif) || (a.gunFark - b.gunFark));
     el.querySelector('#gkMeteor').innerHTML = one.length ? one.map(m => meteorSatir(m, false)).join('') : '<li><span class="bos">Önümüzdeki 75 günde büyük bir yağmur yok.</span></li>';
-    el.querySelector('#gkMeteorTum').innerHTML = ds.slice().sort((a, b) => new Date(a.zirve_utc) - new Date(b.zirve_utc)).map(m => meteorSatir(m, true)).join('');
+    /* Takvimin tamamı: son bir ay ile önümüzdeki bir yıl (veri ve hesaplanan yıllar birlikte uzun olmasın) */
+    const simdi = Date.now();
+    el.querySelector('#gkMeteorTum').innerHTML = ds.filter(m => { const z = new Date(m.zirve_utc).getTime(); return z > simdi - 31 * 86400e3 && z < simdi + 366 * 86400e3; }).sort((a, b) => new Date(a.zirve_utc) - new Date(b.zirve_utc)).map(m => meteorSatir(m, true)).join('');
   }
 
   /* "Takvime ekle": olay listesinden ve meteor zirvelerinden .ics */
@@ -638,10 +647,15 @@
 
   /* "Bu geceyi dinle": özet, bulut tahmini ve plan sesli. Gökyüzü sekmesi açıkken bağlanır;
      liste yeniden çizilince süren okuma, metin aynıysa bozulmaz (ses.js koru). */
+  /* Okunacak metni toplamak sayfa düzenini ölçer (innerText): art arda gelen çağrılar tek seferde, çizimden sonra */
+  let sesSayac = null;
   function sesYenile() {
-    if (!el || el.hidden || !window.Ses) return;
-    const c = el.querySelector('#gkSes'); if (!c) return;
-    Ses.bagla(el, c, 'gece', { koru: true, dugme: 'Bu geceyi dinle' });
+    clearTimeout(sesSayac);
+    sesSayac = setTimeout(() => {
+      if (!el || el.hidden || !window.Ses) return;
+      const c = el.querySelector('#gkSes'); if (!c) return;
+      Ses.bagla(el, c, 'gece', { koru: true, dugme: 'Bu geceyi dinle' });
+    }, 120);
   }
   function planTakvim() {
     const p = durum.plan; if (!p || !p.maddeler.length) return;
@@ -713,8 +727,11 @@
       <p class="kaynak">Gri çubuk bulut oranı, altındaki mavi çubuk yağış olasılığı; bir saate dokununca ayrıntısı çıkar. ${h.eski ? 'Çevrimdışı: son güncelleme ' + U.saat(h.alindi) + ', ' + U.gun(h.alindi) + '. ' : ''}${kaynak}</p>`;
   }
 
-  function listeleriYaz() {
-    ozetYaz(); gezegenYaz(); hedefYaz(); meteorYaz(); olayYaz(); algolYaz(); planYaz();
+  /* planBekle: plan, Algol hesabından sonra ayrıca yazılır (ilk açılışta uzun görev bölünsün) */
+  function listeleriYaz(planBekle) {
+    ozetYaz(); gezegenYaz(); hedefYaz(); meteorYaz(); olayYaz(); algolYaz();
+    if (planBekle) { const ol = el.querySelector('#gkPlan'); if (ol) ol.innerHTML = '<li><span class="bos">Hazırlanıyor…</span></li>'; el.querySelector('#gkPlanDugme').hidden = true; }
+    else planYaz();
     konumYazi();
   }
 

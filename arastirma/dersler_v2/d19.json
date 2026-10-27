@@ -4,7 +4,11 @@
   "yeni": true,
   "baslik": "Küçük Cisimler: Asteroitler, Kuyruklu Yıldızlar ve Kayan Yıldızlar",
   "ozet": "Gezegenlerin arasında ve çok ötesinde milyonlarca küçük cisim dolaşır: asteroitler, kuyruklu yıldızlar, Neptün'ün ötesindeki buzlu dünyalar. Bu derste kayan yıldızın ne olduğunu, meteor yağmurlarının kuyruklu yıldızlarla bağını, Plüton'un neden cüce gezegen sayıldığını ve bir asteroidin yörüngesinin nasıl değiştirildiğini öğreneceksin.",
-  "on_bilgi": ["d1", "d3", "d9"],
+  "on_bilgi": [
+    "d1",
+    "d3",
+    "d9"
+  ],
   "bolumler": [
     {
       "baslik": "Gezegen olmayanlar: küçük cisimler ailesi",
@@ -147,78 +151,142 @@
     {
       "deger": "1,1–1,9 milyon",
       "aciklama": "Ana kuşakta çapı 1 km'den büyük asteroit sayısı (tahmin)",
-      "kaynak_url": "https://solarsystem.nasa.gov/asteroids-comets-and-meteors/asteroids/in-depth.amp"
+      "kaynak_url": "https://solarsystem.nasa.gov/asteroids-comets-and-meteors/asteroids/in-depth.amp",
+      "kid": "d19n0"
     },
     {
       "deger": "2,39 × 10²¹ kg ≈ Ay'ın %3'ü (NASA: ≈2,3 × 10²¹ kg)",
       "aciklama": "Asteroit kuşağının toplam kütlesi; %39'u Ceres'te",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Asteroid_belt"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Asteroid_belt",
+      "kid": "d19n1"
     },
     {
       "deger": "39.123 / 873 / 11.343 (3 Aralık 2025)",
       "aciklama": "Bulunan Dünya'ya yakın asteroitler: toplam / 1 km'den büyük / 140 m'den büyük",
-      "kaynak_url": "https://science.nasa.gov/science-research/planetary-science/planetary-defense/near-Earth-asteroids/"
+      "kaynak_url": "https://science.nasa.gov/science-research/planetary-science/planetary-defense/near-Earth-asteroids/",
+      "kid": "d19n2"
     },
     {
       "deger": "11 sa 55 dk → 11 sa 23 dk (32 ± 2 dk)",
       "aciklama": "DART çarpmasının (26 Eylül 2022) Dimorphos'un dolanma süresine etkisi",
-      "kaynak_url": "https://www.nasa.gov/news-release/nasa-confirms-dart-mission-impact-changed-asteroids-motion-in-space"
+      "kaynak_url": "https://www.nasa.gov/news-release/nasa-confirms-dart-mission-impact-changed-asteroids-motion-in-space",
+      "kid": "d19n3"
     },
     {
       "deger": "yaklaşık 44.000 kg/gün",
       "aciklama": "Dünya'ya her gün düşen meteor malzemesi",
-      "kaynak_url": "https://science.nasa.gov/solar-system/meteors-meteorites/facts/"
+      "kaynak_url": "https://science.nasa.gov/solar-system/meteors-meteorites/facts/",
+      "kid": "d19n4"
     },
     {
       "deger": "50.000'den fazla; %99,8'i asteroit kökenli",
       "aciklama": "Bulunmuş göktaşı sayısı ve kökeni",
-      "kaynak_url": "https://science.nasa.gov/solar-system/meteors-meteorites/facts/"
+      "kaynak_url": "https://science.nasa.gov/solar-system/meteors-meteorites/facts/",
+      "kid": "d19n5"
     },
     {
       "deger": "133 yıl; 26 km; 59 km/s",
       "aciklama": "109P/Swift-Tuttle'ın dolanma süresi ve çekirdeği; Perseid meteorlarının hızı",
-      "kaynak_url": "https://science.nasa.gov/solar-system/meteors-meteorites/perseids/"
+      "kaynak_url": "https://science.nasa.gov/solar-system/meteors-meteorites/perseids/",
+      "kid": "d19n6"
     },
     {
       "deger": "ZHR: Perseidler 100, Geminidler 150, Quadrantidler 80",
       "aciklama": "IMO meteor yağmuru takvimi değerleri",
-      "kaynak_url": "https://www.imo.net/resources/calendar/"
+      "kaynak_url": "https://www.imo.net/resources/calendar/",
+      "kid": "d19n7"
     },
     {
       "deger": "24 Ağustos 2006, Prag",
       "aciklama": "IAU'nun gezegen ve cüce gezegen tanımını kabul ettiği genel kurulun kapanışı",
-      "kaynak_url": "https://iauarchive.eso.org/news/pressreleases/detail/iau0603/"
+      "kaynak_url": "https://iauarchive.eso.org/news/pressreleases/detail/iau0603/",
+      "kid": "d19n8"
     },
     {
       "deger": "%27 (Wikipedia: %28)",
       "aciklama": "Eris'in kütlesinin Plüton'unkinden fazlalığı",
-      "kaynak_url": "https://thisis.caltech.edu/news/dwarf-planet-known-eris-more-massive-pluto-new-data-shows-1293"
+      "kaynak_url": "https://thisis.caltech.edu/news/dwarf-planet-known-eris-more-massive-pluto-new-data-shows-1293",
+      "kid": "d19n9"
     },
     {
       "deger": "yaklaşık 30–50 AB",
       "aciklama": "Kuiper kuşağının ana bölümü",
-      "kaynak_url": "https://science.nasa.gov/solar-system/kuiper-belt/10-things-to-know-about-the-kuiper-belt"
+      "kaynak_url": "https://science.nasa.gov/solar-system/kuiper-belt/10-things-to-know-about-the-kuiper-belt",
+      "kid": "d19n10"
     },
     {
       "deger": "iç kenar 2000–5000 AB, dış kenar 10.000–100.000 AB",
       "aciklama": "Oort bulutunun tahmini sınırları",
-      "kaynak_url": "https://science.nasa.gov/solar-system/oort-cloud/facts"
+      "kaynak_url": "https://science.nasa.gov/solar-system/oort-cloud/facts",
+      "kid": "d19n11"
     }
   ],
   "sozluk": [
-    { "terim": "Asteroit", "tanim": "Güneş Sistemi'nin erken döneminden kalmış, Güneş'in çevresinde dolanan kayalık ve havasız küçük cisim; küçük gezegen de denir." },
-    { "terim": "Kuyruklu yıldız", "tanim": "Donmuş gaz, kaya ve tozdan oluşan, Güneş'e yaklaşınca koma ve kuyruk geliştiren küçük cisim." },
-    { "terim": "Koma", "tanim": "Isınan kuyruklu yıldız çekirdeğinin saldığı gaz ve tozun oluşturduğu, çekirdeği saran bulanık bulut." },
-    { "terim": "Meteoroit", "tanim": "Uzayda dolanan, toz tanesinden küçük asteroide kadar her boydaki taş ya da toz parçası." },
-    { "terim": "Meteor", "tanim": "Bir meteoroidin atmosfere yüksek hızla girip yanarken oluşturduğu ışık izi; kayan yıldız." },
-    { "terim": "Göktaşı (meteorit)", "tanim": "Atmosferi aşıp yere ulaşan meteoroit." },
-    { "terim": "Ateş topu", "tanim": "Venüs'ten daha parlak görünen meteor." },
-    { "terim": "Radyant", "tanim": "Bir meteor yağmurunun meteorlarının çıkıyormuş gibi göründüğü gök bölgesi." },
-    { "terim": "ZHR (saatlik zenit oranı)", "tanim": "İdeal koşullarda (sınır kadir 6,5, radyant başucunda) tek bir gözlemcinin saatte görebileceği meteor sayısı." },
-    { "terim": "Cüce gezegen", "tanim": "Güneş'i dolanan, neredeyse yuvarlak ama yörüngesinin çevresini temizlememiş, uydu olmayan cisim." },
-    { "terim": "Dünya'ya yakın cisim", "tanim": "Güneş'e en yakın noktası 1,3 AB'den az olan asteroit ya da kuyruklu yıldız." },
-    { "terim": "Kuiper kuşağı", "tanim": "Neptün'ün ötesinde, yaklaşık 30–50 AB arasında uzanan buzlu cisimler bölgesi." },
-    { "terim": "Oort bulutu", "tanim": "Güneş Sistemi'ni binlerce AB uzaktan saran, uzun dönemli kuyruklu yıldızların kaynağı olduğu düşünülen ve doğrudan gözlenmemiş buzlu cisimler bulutu." }
+    {
+      "terim": "Asteroit",
+      "tanim": "Güneş Sistemi'nin erken döneminden kalmış, Güneş'in çevresinde dolanan kayalık ve havasız küçük cisim; küçük gezegen de denir.",
+      "kid": "d19t0"
+    },
+    {
+      "terim": "Kuyruklu yıldız",
+      "tanim": "Donmuş gaz, kaya ve tozdan oluşan, Güneş'e yaklaşınca koma ve kuyruk geliştiren küçük cisim.",
+      "kid": "d19t1"
+    },
+    {
+      "terim": "Koma",
+      "tanim": "Isınan kuyruklu yıldız çekirdeğinin saldığı gaz ve tozun oluşturduğu, çekirdeği saran bulanık bulut.",
+      "kid": "d19t2"
+    },
+    {
+      "terim": "Meteoroit",
+      "tanim": "Uzayda dolanan, toz tanesinden küçük asteroide kadar her boydaki taş ya da toz parçası.",
+      "kid": "d19t3"
+    },
+    {
+      "terim": "Meteor",
+      "tanim": "Bir meteoroidin atmosfere yüksek hızla girip yanarken oluşturduğu ışık izi; kayan yıldız.",
+      "kid": "d19t4"
+    },
+    {
+      "terim": "Göktaşı (meteorit)",
+      "tanim": "Atmosferi aşıp yere ulaşan meteoroit.",
+      "kid": "d19t5"
+    },
+    {
+      "terim": "Ateş topu",
+      "tanim": "Venüs'ten daha parlak görünen meteor.",
+      "kid": "d19t6"
+    },
+    {
+      "terim": "Radyant",
+      "tanim": "Bir meteor yağmurunun meteorlarının çıkıyormuş gibi göründüğü gök bölgesi.",
+      "kid": "d19t7"
+    },
+    {
+      "terim": "ZHR (saatlik zenit oranı)",
+      "tanim": "İdeal koşullarda (sınır kadir 6,5, radyant başucunda) tek bir gözlemcinin saatte görebileceği meteor sayısı.",
+      "kid": "d19t8"
+    },
+    {
+      "terim": "Cüce gezegen",
+      "tanim": "Güneş'i dolanan, neredeyse yuvarlak ama yörüngesinin çevresini temizlememiş, uydu olmayan cisim.",
+      "kid": "d19t9"
+    },
+    {
+      "terim": "Dünya'ya yakın cisim",
+      "tanim": "Güneş'e en yakın noktası 1,3 AB'den az olan asteroit ya da kuyruklu yıldız.",
+      "kid": "d19t10"
+    },
+    {
+      "terim": "Kuiper kuşağı",
+      "tanim": "Neptün'ün ötesinde, yaklaşık 30–50 AB arasında uzanan buzlu cisimler bölgesi.",
+      "kid": "d19t11"
+    },
+    {
+      "terim": "Oort bulutu",
+      "tanim": "Güneş Sistemi'ni binlerce AB uzaktan saran, uzun dönemli kuyruklu yıldızların kaynağı olduğu düşünülen ve doğrudan gözlenmemiş buzlu cisimler bulutu.",
+      "kid": "d19t12"
+    }
   ],
   "defter_notu": [
     "IAU 2006: gezegen / cüce gezegen / küçük Güneş Sistemi cismi. Gezegen = Güneş'i dolanır + yuvarlak + yörüngesini temizlemiş.",
@@ -234,74 +302,193 @@
   "sorular": [
     {
       "soru": "Meteoroit, meteor ve göktaşı arasındaki fark nedir?",
-      "cevap": "Hepsi aynı türden cisim olabilir; fark bulunduğu yerdedir. Uzayda dolanırken meteoroit, atmosferde yanarken oluşan ışık izi meteor, atmosferi aşıp yere düşerse göktaşıdır."
+      "cevap": "Hepsi aynı türden cisim olabilir; fark bulunduğu yerdedir. Uzayda dolanırken meteoroit, atmosferde yanarken oluşan ışık izi meteor, atmosferi aşıp yere düşerse göktaşıdır.",
+      "kid": "d19s0"
     },
     {
       "soru": "Bir kuyruklu yıldız Güneş'ten uzaklaşırken kuyruğu hangi yöne bakar? Neden?",
-      "cevap": "Yine Güneş'in tersine bakar, yani bu durumda kuyruk önden gider. Kuyruk, kuyruklu yıldızın hareket yönüne göre değil, Güneş'ten gelen ışık ve Güneş rüzgârının itişine göre yönlenir."
+      "cevap": "Yine Güneş'in tersine bakar, yani bu durumda kuyruk önden gider. Kuyruk, kuyruklu yıldızın hareket yönüne göre değil, Güneş'ten gelen ışık ve Güneş rüzgârının itişine göre yönlenir.",
+      "kid": "d19s1"
     },
     {
       "soru": "Plüton 2006'da neden gezegen olmaktan çıkarıldı? Hangi koşulu sağlamıyor?",
-      "cevap": "IAU'nun 2006 tanımına göre gezegen Güneş'i dolanmalı, kendi kütleçekimiyle yuvarlaklaşmış olmalı ve yörüngesinin çevresini temizlemiş olmalıdır. Plüton ilk iki koşulu sağlar ama yörüngesinin çevresini temizlememiştir (Kuiper kuşağının içinde, pek çok buzlu cisimle birlikte dolanır); bu yüzden cüce gezegendir."
+      "cevap": "IAU'nun 2006 tanımına göre gezegen Güneş'i dolanmalı, kendi kütleçekimiyle yuvarlaklaşmış olmalı ve yörüngesinin çevresini temizlemiş olmalıdır. Plüton ilk iki koşulu sağlar ama yörüngesinin çevresini temizlememiştir (Kuiper kuşağının içinde, pek çok buzlu cisimle birlikte dolanır); bu yüzden cüce gezegendir.",
+      "kid": "d19s2"
     },
     {
       "soru": "Bir kuyruklu yıldız 27 yılda bir Güneş'i dolanıyor. Yörüngesinin yarı büyük ekseni kaç AB'dir?",
-      "cevap": "Kepler'in üçüncü yasası: P² = a³ → a³ = 27² = 729 → a = 9 AB. Dolanma süresi 200 yıldan kısa olduğu için kısa dönemlidir; 20–200 yıl aralığında olduğu için bazı kaynaklara göre Halley türüdür."
+      "cevap": "Kepler'in üçüncü yasası: P² = a³ → a³ = 27² = 729 → a = 9 AB. Dolanma süresi 200 yıldan kısa olduğu için kısa dönemlidir; 20–200 yıl aralığında olduğu için bazı kaynaklara göre Halley türüdür.",
+      "kid": "d19s3"
     },
     {
       "soru": "IMO Quadrantidler için ZHR 80 veriyor. Karanlık bir gökte saatte 80 meteor görmeyi bekler misin?",
-      "cevap": "Hayır. ZHR, sınır kadirin 6,5 olduğu ve radyantın başucunda durduğu ideal bir gök için hesaplanmış sayıdır. IMO aynı yağmur için karanlık gökte saatte ortalama 25 meteor bekler. Kentte, Ay ışığında ya da radyant alçaktayken sayı daha da düşer."
+      "cevap": "Hayır. ZHR, sınır kadirin 6,5 olduğu ve radyantın başucunda durduğu ideal bir gök için hesaplanmış sayıdır. IMO aynı yağmur için karanlık gökte saatte ortalama 25 meteor bekler. Kentte, Ay ışığında ya da radyant alçaktayken sayı daha da düşer.",
+      "kid": "d19s4"
     },
     {
       "soru": "Asteroit kuşağı filmlerdeki gibi sık mıdır? Bir uzay aracı oradan geçerken çarpışma tehlikesi büyük müdür?",
-      "cevap": "Hayır. Asteroitler arası ortalama uzaklık yaklaşık 965.600 km'dir ve birçok uzay aracı kuşağı sorunsuz geçmiştir; çarpma olasılığı milyarda birden küçük tahmin edilir."
+      "cevap": "Hayır. Asteroitler arası ortalama uzaklık yaklaşık 965.600 km'dir ve birçok uzay aracı kuşağı sorunsuz geçmiştir; çarpma olasılığı milyarda birden küçük tahmin edilir.",
+      "kid": "d19s5"
     },
     {
       "soru": "DART deneyi neden zararsız bir hedefte yapıldı ve ne kanıtladı?",
-      "cevap": "Ne Didymos ne Dimorphos Dünya için tehlike oluşturuyordu; bu sayede çarpma bir risk yaratmadan denenebildi. Deney, bir aracı çarptırarak küçük bir asteroidin yörüngesinin ölçülebilir biçimde (32 dakika, yaklaşık %4,5) değiştirilebileceğini gösterdi."
+      "cevap": "Ne Didymos ne Dimorphos Dünya için tehlike oluşturuyordu; bu sayede çarpma bir risk yaratmadan denenebildi. Deney, bir aracı çarptırarak küçük bir asteroidin yörüngesinin ölçülebilir biçimde (32 dakika, yaklaşık %4,5) değiştirilebileceğini gösterdi.",
+      "kid": "d19s6"
     },
     {
       "soru": "Oort bulutunun varlığından neden emin olamıyoruz, ama yine de neden var olduğu düşünülüyor?",
-      "cevap": "Bulut doğrudan gözlenmedi; içindeki cisimler çok uzak ve sönük. Ama uzun dönemli kuyruklu yıldızlar gezegenlerin düzleminden değil her yönden gelir; Jan Oort 1950'de bunu Güneş Sistemi'ni saran küresel bir buzlu cisimler bulutuyla açıkladı."
+      "cevap": "Bulut doğrudan gözlenmedi; içindeki cisimler çok uzak ve sönük. Ama uzun dönemli kuyruklu yıldızlar gezegenlerin düzleminden değil her yönden gelir; Jan Oort 1950'de bunu Güneş Sistemi'ni saran küresel bir buzlu cisimler bulutuyla açıkladı.",
+      "kid": "d19s7"
     }
   ],
   "kaynaklar": [
-    { "ad": "IAU – Basın bülteni iau0603: IAU 2006 General Assembly, Result of the IAU Resolution votes", "url": "https://iauarchive.eso.org/news/pressreleases/detail/iau0603/" },
-    { "ad": "NASA Science – What Is a Planet?", "url": "https://science.nasa.gov/solar-system/planets/what-is-a-planet" },
-    { "ad": "NASA NSSDCA – Asteroid Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/asteroidfact.html" },
-    { "ad": "NASA – Asteroids: In Depth", "url": "https://solarsystem.nasa.gov/asteroids-comets-and-meteors/asteroids/in-depth.amp" },
-    { "ad": "NASA Science – Asteroids", "url": "https://science.nasa.gov/solar-system/asteroids" },
-    { "ad": "NASA Science – Ceres", "url": "https://science.nasa.gov/ceres" },
-    { "ad": "Wikipedia – Asteroid belt", "url": "https://en.wikipedia.org/wiki/Asteroid_belt" },
-    { "ad": "NASA CNEOS – NEO Groups", "url": "https://cneos.jpl.nasa.gov/about/neo_groups.html" },
-    { "ad": "NASA Science – Near-Earth Asteroids (Planetary Defense, 3 Aralık 2025)", "url": "https://science.nasa.gov/science-research/planetary-science/planetary-defense/near-Earth-asteroids/" },
-    { "ad": "NASA – NASA Confirms DART Mission Impact Changed Asteroid's Motion in Space", "url": "https://www.nasa.gov/news-release/nasa-confirms-dart-mission-impact-changed-asteroids-motion-in-space" },
-    { "ad": "ESA – DART approaching Dimorphos", "url": "https://www.esa.int/ESA_Multimedia/Images/2024/02/DART_approaching_Dimorphos" },
-    { "ad": "Physics (APS) – DART sonuçları haberi", "url": "https://physics.aps.org/articles/v15/156" },
-    { "ad": "ESA – ESA's Hera targets early arrival at Didymos asteroids", "url": "https://www.esa.int/Space_Safety/Hera/ESA_s_Hera_targets_early_arrival_at_Didymos_asteroids" },
-    { "ad": "NASA Science – Comets", "url": "https://science.nasa.gov/solar-system/comets" },
-    { "ad": "ESA – Structure of a comet", "url": "https://esa.int/ESA_Multimedia/Images/2023/11/Structure_of_a_comet" },
-    { "ad": "NASA – Comets Lithograph (eğitim belgesi)", "url": "https://exploration.jsc.nasa.gov/interaction/lmdp/documents/Comets_Lithograph_h.pdf" },
-    { "ad": "Deep Impact (Univ. of Maryland / NASA) – 10 Comet Facts", "url": "https://deepimpact.astro.umd.edu/educ/mod_ExploringComets/10_CometFacts.pdf" },
-    { "ad": "NASA Science – Meteors and Meteorites: Facts", "url": "https://science.nasa.gov/solar-system/meteors-meteorites/facts/" },
-    { "ad": "NASA Science – Perseids", "url": "https://science.nasa.gov/solar-system/meteors-meteorites/perseids/" },
-    { "ad": "NASA Science – Geminids", "url": "https://science.nasa.gov/solar-system/meteors-meteorites/geminids" },
-    { "ad": "IMO – Meteor Shower Calendar", "url": "https://www.imo.net/resources/calendar/" },
-    { "ad": "IMO – 2026 Meteor Shower Calendar (PDF)", "url": "https://www.imo.net/files/meteor-shower/cal2026.pdf" },
-    { "ad": "Wikipedia – Pluto", "url": "https://en.wikipedia.org/wiki/Pluto" },
-    { "ad": "Caltech – Dwarf Planet Known as Eris Is More Massive Than Pluto", "url": "https://thisis.caltech.edu/news/dwarf-planet-known-eris-more-massive-pluto-new-data-shows-1293" },
-    { "ad": "NASA Science – Dwarf Planets", "url": "https://science.nasa.gov/dwarf-planets/" },
-    { "ad": "NASA Science – 10 Things to Know About the Kuiper Belt", "url": "https://science.nasa.gov/solar-system/kuiper-belt/10-things-to-know-about-the-kuiper-belt" },
-    { "ad": "NASA Science – Kuiper Belt: Facts", "url": "https://science.nasa.gov/solar-system/kuiper-belt/facts/" },
-    { "ad": "Kavli Prize – 2012 Astrophysics (Brown, Jewitt, Luu)", "url": "https://kavliprize.org/prizes/astrophysics/2012" },
-    { "ad": "NASA Science – Oort Cloud: Facts", "url": "https://science.nasa.gov/solar-system/oort-cloud/facts" },
-    { "ad": "Wikipedia – Binoculars", "url": "https://en.wikipedia.org/wiki/Binoculars" },
-    { "ad": "Wikipedia – Astronomical unit", "url": "https://en.wikipedia.org/wiki/Astronomical_unit" },
-    { "ad": "NASA NSSDCA – Moon Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html" },
-    { "ad": "Wikipedia – 2060 Chiron", "url": "https://en.wikipedia.org/wiki/2060_Chiron" },
-    { "ad": "Wikipedia – Martian meteorite", "url": "https://en.wikipedia.org/wiki/Martian_meteorite" },
-    { "ad": "Wikipedia – Lunar meteorite", "url": "https://en.wikipedia.org/wiki/Lunar_meteorite" },
-    { "ad": "Wikipedia – Zenithal hourly rate", "url": "https://en.wikipedia.org/wiki/Zenithal_hourly_rate" },
-    { "ad": "Wikipedia – Radiant (meteor shower)", "url": "https://en.wikipedia.org/wiki/Radiant_(meteor_shower)" }
+    {
+      "ad": "IAU – Basın bülteni iau0603: IAU 2006 General Assembly, Result of the IAU Resolution votes",
+      "url": "https://iauarchive.eso.org/news/pressreleases/detail/iau0603/"
+    },
+    {
+      "ad": "NASA Science – What Is a Planet?",
+      "url": "https://science.nasa.gov/solar-system/planets/what-is-a-planet"
+    },
+    {
+      "ad": "NASA NSSDCA – Asteroid Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/asteroidfact.html"
+    },
+    {
+      "ad": "NASA – Asteroids: In Depth",
+      "url": "https://solarsystem.nasa.gov/asteroids-comets-and-meteors/asteroids/in-depth.amp"
+    },
+    {
+      "ad": "NASA Science – Asteroids",
+      "url": "https://science.nasa.gov/solar-system/asteroids"
+    },
+    {
+      "ad": "NASA Science – Ceres",
+      "url": "https://science.nasa.gov/ceres"
+    },
+    {
+      "ad": "Wikipedia – Asteroid belt",
+      "url": "https://en.wikipedia.org/wiki/Asteroid_belt"
+    },
+    {
+      "ad": "NASA CNEOS – NEO Groups",
+      "url": "https://cneos.jpl.nasa.gov/about/neo_groups.html"
+    },
+    {
+      "ad": "NASA Science – Near-Earth Asteroids (Planetary Defense, 3 Aralık 2025)",
+      "url": "https://science.nasa.gov/science-research/planetary-science/planetary-defense/near-Earth-asteroids/"
+    },
+    {
+      "ad": "NASA – NASA Confirms DART Mission Impact Changed Asteroid's Motion in Space",
+      "url": "https://www.nasa.gov/news-release/nasa-confirms-dart-mission-impact-changed-asteroids-motion-in-space"
+    },
+    {
+      "ad": "ESA – DART approaching Dimorphos",
+      "url": "https://www.esa.int/ESA_Multimedia/Images/2024/02/DART_approaching_Dimorphos"
+    },
+    {
+      "ad": "Physics (APS) – DART sonuçları haberi",
+      "url": "https://physics.aps.org/articles/v15/156"
+    },
+    {
+      "ad": "ESA – ESA's Hera targets early arrival at Didymos asteroids",
+      "url": "https://www.esa.int/Space_Safety/Hera/ESA_s_Hera_targets_early_arrival_at_Didymos_asteroids"
+    },
+    {
+      "ad": "NASA Science – Comets",
+      "url": "https://science.nasa.gov/solar-system/comets"
+    },
+    {
+      "ad": "ESA – Structure of a comet",
+      "url": "https://esa.int/ESA_Multimedia/Images/2023/11/Structure_of_a_comet"
+    },
+    {
+      "ad": "NASA – Comets Lithograph (eğitim belgesi)",
+      "url": "https://exploration.jsc.nasa.gov/interaction/lmdp/documents/Comets_Lithograph_h.pdf"
+    },
+    {
+      "ad": "Deep Impact (Univ. of Maryland / NASA) – 10 Comet Facts",
+      "url": "https://deepimpact.astro.umd.edu/educ/mod_ExploringComets/10_CometFacts.pdf"
+    },
+    {
+      "ad": "NASA Science – Meteors and Meteorites: Facts",
+      "url": "https://science.nasa.gov/solar-system/meteors-meteorites/facts/"
+    },
+    {
+      "ad": "NASA Science – Perseids",
+      "url": "https://science.nasa.gov/solar-system/meteors-meteorites/perseids/"
+    },
+    {
+      "ad": "NASA Science – Geminids",
+      "url": "https://science.nasa.gov/solar-system/meteors-meteorites/geminids"
+    },
+    {
+      "ad": "IMO – Meteor Shower Calendar",
+      "url": "https://www.imo.net/resources/calendar/"
+    },
+    {
+      "ad": "IMO – 2026 Meteor Shower Calendar (PDF)",
+      "url": "https://www.imo.net/files/meteor-shower/cal2026.pdf"
+    },
+    {
+      "ad": "Wikipedia – Pluto",
+      "url": "https://en.wikipedia.org/wiki/Pluto"
+    },
+    {
+      "ad": "Caltech – Dwarf Planet Known as Eris Is More Massive Than Pluto",
+      "url": "https://thisis.caltech.edu/news/dwarf-planet-known-eris-more-massive-pluto-new-data-shows-1293"
+    },
+    {
+      "ad": "NASA Science – Dwarf Planets",
+      "url": "https://science.nasa.gov/dwarf-planets/"
+    },
+    {
+      "ad": "NASA Science – 10 Things to Know About the Kuiper Belt",
+      "url": "https://science.nasa.gov/solar-system/kuiper-belt/10-things-to-know-about-the-kuiper-belt"
+    },
+    {
+      "ad": "NASA Science – Kuiper Belt: Facts",
+      "url": "https://science.nasa.gov/solar-system/kuiper-belt/facts/"
+    },
+    {
+      "ad": "Kavli Prize – 2012 Astrophysics (Brown, Jewitt, Luu)",
+      "url": "https://kavliprize.org/prizes/astrophysics/2012"
+    },
+    {
+      "ad": "NASA Science – Oort Cloud: Facts",
+      "url": "https://science.nasa.gov/solar-system/oort-cloud/facts"
+    },
+    {
+      "ad": "Wikipedia – Binoculars",
+      "url": "https://en.wikipedia.org/wiki/Binoculars"
+    },
+    {
+      "ad": "Wikipedia – Astronomical unit",
+      "url": "https://en.wikipedia.org/wiki/Astronomical_unit"
+    },
+    {
+      "ad": "NASA NSSDCA – Moon Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html"
+    },
+    {
+      "ad": "Wikipedia – 2060 Chiron",
+      "url": "https://en.wikipedia.org/wiki/2060_Chiron"
+    },
+    {
+      "ad": "Wikipedia – Martian meteorite",
+      "url": "https://en.wikipedia.org/wiki/Martian_meteorite"
+    },
+    {
+      "ad": "Wikipedia – Lunar meteorite",
+      "url": "https://en.wikipedia.org/wiki/Lunar_meteorite"
+    },
+    {
+      "ad": "Wikipedia – Zenithal hourly rate",
+      "url": "https://en.wikipedia.org/wiki/Zenithal_hourly_rate"
+    },
+    {
+      "ad": "Wikipedia – Radiant (meteor shower)",
+      "url": "https://en.wikipedia.org/wiki/Radiant_(meteor_shower)"
+    }
   ]
 }

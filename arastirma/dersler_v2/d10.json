@@ -3,7 +3,10 @@
   "unite": "gunes_sistemi",
   "baslik": "Ay: Evreler, Tutulmalar ve Dev Bir Çarpışmanın Çocuğu",
   "ozet": "Ay'ın yarısı her zaman Güneş ışığı alır; evreler, bu aydınlık yarının ne kadarını gördüğümüze göre değişir. Bu derste Ay'ın neden hep aynı yüzünü gösterdiğini, tutulmaların neden her ay olmadığını, Ay'ın dev bir çarpışmadan nasıl doğmuş olabileceğini ve Apollo'dan Artemis'e insanlığın Ay yolculuğunu öğreneceksin.",
-  "on_bilgi": ["d1", "d3"],
+  "on_bilgi": [
+    "d1",
+    "d3"
+  ],
   "bolumler": [
     {
       "baslik": "Evreler: aydınlık yarının ne kadarını görüyoruz?",
@@ -152,72 +155,131 @@
     {
       "deger": "29,53 gün / 27,3217 gün",
       "aciklama": "Kavuşum ayı (evre döngüsü) / yıldızıl ay",
-      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html"
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html",
+      "kid": "d10n0"
     },
     {
       "deger": "~%59; boylamda 7°54′, enlemde 6°50′",
       "aciklama": "Librasyonla görülebilen yüzey ve librasyonun en büyük genliği",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Libration"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Libration",
+      "kid": "d10n1"
     },
     {
       "deger": "384.400 km (yaklaşık 357.000–407.000 km)",
       "aciklama": "Ortalama uzaklık ve değişim aralığı",
-      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html"
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html",
+      "kid": "d10n2"
     },
     {
       "deger": "3,8 cm/yıl",
       "aciklama": "Ay'ın uzaklaşma hızı (lazer ölçümleri)",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Lunar_Laser_Ranging_experiments"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Lunar_Laser_Ranging_experiments",
+      "kid": "d10n3"
     },
     {
       "deger": "7,346 × 10²² kg (Dünya'nın 0,0123'ü); 1,62 m/s² (Dünya'nın 0,165'i)",
       "aciklama": "Ay'ın kütlesi ve yüzey çekim ivmesi",
-      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html"
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html",
+      "kid": "d10n4"
     },
     {
       "deger": "5,145°",
       "aciklama": "Ay yörüngesinin tutulum düzlemine eğikliği",
-      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html"
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html",
+      "kid": "d10n5"
     },
     {
       "deger": "~%16 (yakın yüz %31, uzak yüz %2)",
       "aciklama": "Denizlerin kapladığı yüzey",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Lunar_mare"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Lunar_mare",
+      "kid": "d10n6"
     },
     {
       "deger": "4,51 milyar yıl önce; Mars büyüklüğünde çarpan (Theia)",
       "aciklama": "Dev çarpışma varsayımına göre Ay'ın oluşumu",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Moon"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Moon",
+      "kid": "d10n7"
     },
     {
       "deger": "20 Temmuz 1969; 6 iniş, 12 insan; 382 kg örnek",
       "aciklama": "Apollo 11'in inişi; Apollo programının toplamı",
-      "kaynak_url": "https://science.nasa.gov/moon/facts/"
+      "kaynak_url": "https://science.nasa.gov/moon/facts/",
+      "kid": "d10n8"
     },
     {
       "deger": "≤267 km (genellikle 100–160 km); tam evre ≤7 dk 32 s",
       "aciklama": "Tam Güneş tutulması şeridinin genişliği ve tam evrenin en uzun süresi",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Solar_eclipse"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Solar_eclipse",
+      "kid": "d10n9"
     },
     {
       "deger": "173,3 gün; saros 6585,3 gün",
       "aciklama": "Tutulma mevsimleri arası; saros döngüsü",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Solar_eclipse"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Solar_eclipse",
+      "kid": "d10n10"
     }
   ],
   "sozluk": [
-    { "terim": "Uzanım", "tanim": "Dünya'dan bakınca bir gök cismi ile Güneş arasındaki açı." },
-    { "terim": "Yıldızıl ay", "tanim": "Ay'ın yıldızlara göre Dünya çevresinde bir tur atma süresi (27,32 gün)." },
-    { "terim": "Kavuşum ayı", "tanim": "Ay'ın aynı evreye dönme süresi, yani yeni aydan yeni aya geçen zaman (29,53 gün)." },
-    { "terim": "Eş zamanlı dönme", "tanim": "Bir uydunun kendi çevresindeki dönüşünün, gezegeni çevresindeki dolanımıyla aynı sürmesi." },
-    { "terim": "Gelgit kilitlenmesi", "tanim": "Kütleçekimin yarattığı şişkinliğin dönüşü yavaşlatarak eş zamanlı dönmeye yol açması." },
-    { "terim": "Librasyon", "tanim": "Ay'ın Dünya'dan bakınca küçük salınımlar yapıyormuş gibi görünmesi; yüzeyin yarısından fazlasını görmemizi sağlar." },
-    { "terim": "Terminatör", "tanim": "Ay'ın aydınlık ve karanlık kısımlarını ayıran sınır çizgisi." },
-    { "terim": "Deniz (mare)", "tanim": "Ay'da lavla dolmuş eski çarpışma havzalarının oluşturduğu koyu bazalt ovası." },
-    { "terim": "Dünya ışığı", "tanim": "Dünya'dan yansıyan Güneş ışığının ince hilaldeki Ay'ın karanlık kısmını soluk aydınlatması." },
-    { "terim": "Düğüm", "tanim": "Ay yörüngesinin Dünya'nın yörünge düzlemini kestiği iki nokta; tutulmalar ancak buralarda olur." },
-    { "terim": "Saros", "tanim": "Yaklaşık 18 yıl 11 günlük, sonunda neredeyse aynı tutulmanın tekrarlandığı döngü." },
-    { "terim": "Dev çarpışma varsayımı", "tanim": "Ay'ın, Mars büyüklüğünde bir cismin genç Dünya'ya çarpmasıyla saçılan malzemeden oluştuğu görüşü." }
+    {
+      "terim": "Uzanım",
+      "tanim": "Dünya'dan bakınca bir gök cismi ile Güneş arasındaki açı.",
+      "kid": "d10t0"
+    },
+    {
+      "terim": "Yıldızıl ay",
+      "tanim": "Ay'ın yıldızlara göre Dünya çevresinde bir tur atma süresi (27,32 gün).",
+      "kid": "d10t1"
+    },
+    {
+      "terim": "Kavuşum ayı",
+      "tanim": "Ay'ın aynı evreye dönme süresi, yani yeni aydan yeni aya geçen zaman (29,53 gün).",
+      "kid": "d10t2"
+    },
+    {
+      "terim": "Eş zamanlı dönme",
+      "tanim": "Bir uydunun kendi çevresindeki dönüşünün, gezegeni çevresindeki dolanımıyla aynı sürmesi.",
+      "kid": "d10t3"
+    },
+    {
+      "terim": "Gelgit kilitlenmesi",
+      "tanim": "Kütleçekimin yarattığı şişkinliğin dönüşü yavaşlatarak eş zamanlı dönmeye yol açması.",
+      "kid": "d10t4"
+    },
+    {
+      "terim": "Librasyon",
+      "tanim": "Ay'ın Dünya'dan bakınca küçük salınımlar yapıyormuş gibi görünmesi; yüzeyin yarısından fazlasını görmemizi sağlar.",
+      "kid": "d10t5"
+    },
+    {
+      "terim": "Terminatör",
+      "tanim": "Ay'ın aydınlık ve karanlık kısımlarını ayıran sınır çizgisi.",
+      "kid": "d10t6"
+    },
+    {
+      "terim": "Deniz (mare)",
+      "tanim": "Ay'da lavla dolmuş eski çarpışma havzalarının oluşturduğu koyu bazalt ovası.",
+      "kid": "d10t7"
+    },
+    {
+      "terim": "Dünya ışığı",
+      "tanim": "Dünya'dan yansıyan Güneş ışığının ince hilaldeki Ay'ın karanlık kısmını soluk aydınlatması.",
+      "kid": "d10t8"
+    },
+    {
+      "terim": "Düğüm",
+      "tanim": "Ay yörüngesinin Dünya'nın yörünge düzlemini kestiği iki nokta; tutulmalar ancak buralarda olur.",
+      "kid": "d10t9"
+    },
+    {
+      "terim": "Saros",
+      "tanim": "Yaklaşık 18 yıl 11 günlük, sonunda neredeyse aynı tutulmanın tekrarlandığı döngü.",
+      "kid": "d10t10"
+    },
+    {
+      "terim": "Dev çarpışma varsayımı",
+      "tanim": "Ay'ın, Mars büyüklüğünde bir cismin genç Dünya'ya çarpmasıyla saçılan malzemeden oluştuğu görüşü.",
+      "kid": "d10t11"
+    }
   ],
   "defter_notu": [
     "Ay hep yarı aydınlık; evre = aydınlık yarının bize dönük kısmı. k = (1 − cos θ)/2.",
@@ -234,50 +296,108 @@
   "sorular": [
     {
       "soru": "İlkdördün Ay'a yarım ay denir. Gerçekte Ay'ın tüm yüzeyinin ne kadarı aydınlık, ne kadarını aydınlık görüyoruz?",
-      "cevap": "Ay'ın yüzeyinin her zaman yarısı aydınlıktır. İlkdördünde o aydınlık yarının yarısını görürüz; gördüğümüz diskin yarısı parlak, ama bu Ay'ın toplam yüzeyinin dörtte biridir. Formülle θ = 90° için k = (1 − 0)/2 = 0,5."
+      "cevap": "Ay'ın yüzeyinin her zaman yarısı aydınlıktır. İlkdördünde o aydınlık yarının yarısını görürüz; gördüğümüz diskin yarısı parlak, ama bu Ay'ın toplam yüzeyinin dörtte biridir. Formülle θ = 90° için k = (1 − 0)/2 = 0,5.",
+      "kid": "d10s0"
     },
     {
       "soru": "Ay kendi ekseni çevresinde dönmüyor olsaydı Dünya'dan ne görürdük?",
-      "cevap": "Dolanırken yönünü uzaya göre sabit tutacağı için bir ay boyunca bütün yüzlerini sırayla bize gösterirdi. Uzak yüzü görmememizin nedeni, dönüşünün dolanımıyla eşit sürmesidir."
+      "cevap": "Dolanırken yönünü uzaya göre sabit tutacağı için bir ay boyunca bütün yüzlerini sırayla bize gösterirdi. Uzak yüzü görmememizin nedeni, dönüşünün dolanımıyla eşit sürmesidir.",
+      "kid": "d10s1"
     },
     {
       "soru": "Neden her dolunayda Ay tutulması olmuyor?",
-      "cevap": "Ay'ın yörüngesi Dünya'nın yörünge düzlemine 5,145° eğiktir. Dolunayların çoğunda Ay, Dünya'nın gölgesinin biraz üstünden ya da altından geçer. Tutulma için dolunayın düğümlerden birine yakın denk gelmesi gerekir; bu da yaklaşık 173,3 günde bir gelen tutulma mevsimlerinde olur."
+      "cevap": "Ay'ın yörüngesi Dünya'nın yörünge düzlemine 5,145° eğiktir. Dolunayların çoğunda Ay, Dünya'nın gölgesinin biraz üstünden ya da altından geçer. Tutulma için dolunayın düğümlerden birine yakın denk gelmesi gerekir; bu da yaklaşık 173,3 günde bir gelen tutulma mevsimlerinde olur.",
+      "kid": "d10s2"
     },
     {
       "soru": "Ay tutulmasını İstanbul'dan izleyen birine 'gözlük taksın mı?' diye sorulsa ne dersin? Güneş tutulması için cevap ne olur?",
-      "cevap": "Ay tutulmasını korumasız gözle izlemek güvenlidir. Güneş tutulmasında ise tam evre dışında her an ISO 12312-2 uyumlu tutulma gözlüğü gerekir; güneş gözlüğü yetmez. Dürbünle Güneş'e ancak önüne özel güneş filtresi sağlam takılmışsa bakılabilir."
+      "cevap": "Ay tutulmasını korumasız gözle izlemek güvenlidir. Güneş tutulmasında ise tam evre dışında her an ISO 12312-2 uyumlu tutulma gözlüğü gerekir; güneş gözlüğü yetmez. Dürbünle Güneş'e ancak önüne özel güneş filtresi sağlam takılmışsa bakılabilir.",
+      "kid": "d10s3"
     },
     {
       "soru": "Apollo 11'in yansıtıcısına gönderilen bir lazer atımı 2,6 saniyede geri dönüyor. Ay o an ne kadar uzaktadır?",
-      "cevap": "d = c × t / 2 = 299.792 km/s × 2,6 s / 2 ≈ 389.700 km. Bu değer 357.000–407.000 km aralığında, ortalamanın biraz üstündedir."
+      "cevap": "d = c × t / 2 = 299.792 km/s × 2,6 s / 2 ≈ 389.700 km. Bu değer 357.000–407.000 km aralığında, ortalamanın biraz üstündedir.",
+      "kid": "d10s4"
     },
     {
       "soru": "Dev çarpışma varsayımını destekleyen bir kanıt söyle. Ay başka bir yerde oluşup Dünya tarafından yakalanmış olsaydı ne beklerdik?",
-      "cevap": "Dünya ile Ay'ın izotop bileşimleri neredeyse aynıdır. Ay başka bir bölgede oluşup yakalanmış olsaydı, farklı bir malzemeden yapılmış olacağı için izotop parmak izinin de farklı olması beklenirdi."
+      "cevap": "Dünya ile Ay'ın izotop bileşimleri neredeyse aynıdır. Ay başka bir bölgede oluşup yakalanmış olsaydı, farklı bir malzemeden yapılmış olacağı için izotop parmak izinin de farklı olması beklenirdi.",
+      "kid": "d10s5"
     },
     {
       "soru": "Dolunay neden dürbünle krater gözlemi için en kötü zamandır?",
-      "cevap": "Dolunayda Güneş ışığı yüzeye neredeyse dik gelir, gölgeler kaybolur ve kabartı görünmez. Öteki evrelerde terminatör boyunca ışık yatık gelir; kraterler ve dağlar uzun gölge düşürür, bu yüzden NASA dolunay dışındaki evreleri önerir."
+      "cevap": "Dolunayda Güneş ışığı yüzeye neredeyse dik gelir, gölgeler kaybolur ve kabartı görünmez. Öteki evrelerde terminatör boyunca ışık yatık gelir; kraterler ve dağlar uzun gölge düşürür, bu yüzden NASA dolunay dışındaki evreleri önerir.",
+      "kid": "d10s6"
     }
   ],
   "kaynaklar": [
-    { "ad": "NASA NSSDCA – Moon Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html" },
-    { "ad": "NASA Science – Moon Phases", "url": "https://science.nasa.gov/moon/moon-phases/" },
-    { "ad": "NASA Science – Moon Facts", "url": "https://science.nasa.gov/moon/facts/" },
-    { "ad": "NASA Science – Tidal Locking", "url": "https://science.nasa.gov/moon/tidal-locking/" },
-    { "ad": "NASA Science – Moon Viewing Tips", "url": "https://science.nasa.gov/moon/viewing-tips/" },
-    { "ad": "NASA Science – Types of Eclipses", "url": "https://science.nasa.gov/eclipses/types/" },
-    { "ad": "NASA Science – Eclipse Safety", "url": "https://science.nasa.gov/eclipses/safety/" },
-    { "ad": "Wikipedia – Moon", "url": "https://en.wikipedia.org/wiki/Moon" },
-    { "ad": "Wikipedia – Lunar phase", "url": "https://en.wikipedia.org/wiki/Lunar_phase" },
-    { "ad": "Wikipedia – Libration", "url": "https://en.wikipedia.org/wiki/Libration" },
-    { "ad": "Wikipedia – Lunar mare", "url": "https://en.wikipedia.org/wiki/Lunar_mare" },
-    { "ad": "Wikipedia – Lunar Laser Ranging experiments", "url": "https://en.wikipedia.org/wiki/Lunar_Laser_Ranging_experiments" },
-    { "ad": "Wikipedia – Lunar distance", "url": "https://en.wikipedia.org/wiki/Lunar_distance" },
-    { "ad": "Wikipedia – Solar eclipse", "url": "https://en.wikipedia.org/wiki/Solar_eclipse" },
-    { "ad": "Wikipedia – Lunar eclipse", "url": "https://en.wikipedia.org/wiki/Lunar_eclipse" },
-    { "ad": "Wikipedia – Orbital period", "url": "https://en.wikipedia.org/wiki/Orbital_period" },
-    { "ad": "NIST CODATA – speed of light in vacuum", "url": "https://physics.nist.gov/cgi-bin/cuu/Value?c" }
+    {
+      "ad": "NASA NSSDCA – Moon Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html"
+    },
+    {
+      "ad": "NASA Science – Moon Phases",
+      "url": "https://science.nasa.gov/moon/moon-phases/"
+    },
+    {
+      "ad": "NASA Science – Moon Facts",
+      "url": "https://science.nasa.gov/moon/facts/"
+    },
+    {
+      "ad": "NASA Science – Tidal Locking",
+      "url": "https://science.nasa.gov/moon/tidal-locking/"
+    },
+    {
+      "ad": "NASA Science – Moon Viewing Tips",
+      "url": "https://science.nasa.gov/moon/viewing-tips/"
+    },
+    {
+      "ad": "NASA Science – Types of Eclipses",
+      "url": "https://science.nasa.gov/eclipses/types/"
+    },
+    {
+      "ad": "NASA Science – Eclipse Safety",
+      "url": "https://science.nasa.gov/eclipses/safety/"
+    },
+    {
+      "ad": "Wikipedia – Moon",
+      "url": "https://en.wikipedia.org/wiki/Moon"
+    },
+    {
+      "ad": "Wikipedia – Lunar phase",
+      "url": "https://en.wikipedia.org/wiki/Lunar_phase"
+    },
+    {
+      "ad": "Wikipedia – Libration",
+      "url": "https://en.wikipedia.org/wiki/Libration"
+    },
+    {
+      "ad": "Wikipedia – Lunar mare",
+      "url": "https://en.wikipedia.org/wiki/Lunar_mare"
+    },
+    {
+      "ad": "Wikipedia – Lunar Laser Ranging experiments",
+      "url": "https://en.wikipedia.org/wiki/Lunar_Laser_Ranging_experiments"
+    },
+    {
+      "ad": "Wikipedia – Lunar distance",
+      "url": "https://en.wikipedia.org/wiki/Lunar_distance"
+    },
+    {
+      "ad": "Wikipedia – Solar eclipse",
+      "url": "https://en.wikipedia.org/wiki/Solar_eclipse"
+    },
+    {
+      "ad": "Wikipedia – Lunar eclipse",
+      "url": "https://en.wikipedia.org/wiki/Lunar_eclipse"
+    },
+    {
+      "ad": "Wikipedia – Orbital period",
+      "url": "https://en.wikipedia.org/wiki/Orbital_period"
+    },
+    {
+      "ad": "NIST CODATA – speed of light in vacuum",
+      "url": "https://physics.nist.gov/cgi-bin/cuu/Value?c"
+    }
   ]
 }

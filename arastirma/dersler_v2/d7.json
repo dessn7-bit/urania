@@ -3,7 +3,11 @@
   "unite": "evren",
   "baslik": "Galaksiler: Yıldız Adaları ve Mahallemiz",
   "ozet": "Andromeda'daki soluk lekenin aslında ayrı bir galaksi olduğunun nasıl anlaşıldığını, Samanyolu'nun şeklini ve içindeki yerimizi öğreneceksin. Sonra galaksi türlerine, Yerel Grup'a, Andromeda'yla olası buluşmaya, çarpışan galaksilere, kuasarlara ve galaksi kümelerine geçeceğiz.",
-  "on_bilgi": ["d1", "d2", "d3"],
+  "on_bilgi": [
+    "d1",
+    "d2",
+    "d3"
+  ],
   "bolumler": [
     {
       "baslik": "Bulutsu mu, ayrı bir evren mi?",
@@ -153,36 +157,164 @@
     }
   ],
   "anahtar_sayilar": [
-    {"deger": "26 Nisan 1920; 5–6 Ekim 1923; 930.000 ışık yılı; 1 Ocak 1925", "aciklama": "Büyük Tartışma, Hubble'ın M31'de Sefeid bulduğu gece, bulduğu uzaklık ve sonucun okunduğu gün", "kaynak_url": "https://www.astronomy.com/science/how-edwin-hubble-won-the-great-debate/"},
-    {"deger": ">100.000 ışık yılı", "aciklama": "Samanyolu disk genişliği (NASA)", "kaynak_url": "https://science.nasa.gov/universe/galaxies/"},
-    {"deger": "87.400 ± 3600 ışık yılı; ince disk 718–1470 ışık yılı; 100–400 milyar yıldız", "aciklama": "Samanyolu'nun çapı, ince disk kalınlığı ve yıldız sayısı (Wikipedia)", "kaynak_url": "https://en.wikipedia.org/wiki/Milky_Way"},
-    {"deger": "R0 = 8178 ± 13 (istat.) ± 22 (sist.) parsek", "aciklama": "Güneş'in galaktik merkeze uzaklığı (GRAVITY 2019)", "kaynak_url": "https://arxiv.org/abs/1904.05721"},
-    {"deger": "720.000 km/saat; ~230 milyon yıl", "aciklama": "Güneş Sistemi'nin galaktik yörünge hızı ve bir tur süresi (NASA)", "kaynak_url": "https://science.nasa.gov/sun/facts/"},
-    {"deger": "4,30 milyon M☉; 27.000 ışık yılı", "aciklama": "Sgr A*'nın kütlesi ve uzaklığı (ESO/GRAVITY 2021)", "kaynak_url": "https://www.eso.org/public/news/eso2119/"},
-    {"deger": "134 üye (1 Mpc içinde); çap 5,11 Mpc (17 milyon ışık yılı); ~2×10¹² M☉", "aciklama": "Yerel Grup (Wikipedia)", "kaynak_url": "https://en.wikipedia.org/wiki/Local_Group"},
-    {"deger": "765 kpc (2,5 milyon ışık yılı); 3,44 kadir; ~1 trilyon yıldız", "aciklama": "Andromeda Galaksisi (M31)", "kaynak_url": "https://en.wikipedia.org/wiki/Andromeda_Galaxy"},
-    {"deger": "2,88 milyon ışık yılı; 5,72 kadir (etkin ~6,6)", "aciklama": "Üçgen Galaksisi (M33)", "kaynak_url": "https://en.wikipedia.org/wiki/Triangulum_Galaxy"},
-    {"deger": "160.000–163.000 ve ~200.000 ışık yılı", "aciklama": "Büyük ve Küçük Macellan Bulutları'nın uzaklığı", "kaynak_url": "https://www.skyatnightmagazine.com/news/large-small-magellanic-clouds"},
-    {"deger": "~110 km/s", "aciklama": "Andromeda'nın Samanyolu'na yaklaşma hızı", "kaynak_url": "https://en.wikipedia.org/wiki/Andromeda%E2%80%93Milky_Way_collision"},
-    {"deger": "4 milyar yıl + 2 milyar yıl; 400.000 km/saat", "aciklama": "2012 Hubble tahmini: karşılaşma ve tam birleşme süresi, yaklaşma hızı", "kaynak_url": "https://www.astronomy.com/science/hubble-shows-milky-way-is-destined-for-head-on-collision-with-andromeda-galaxy/"},
-    {"deger": "~%50 (10 milyar yıl içinde)", "aciklama": "Samanyolu–Andromeda birleşme olasılığı (Sawala ve ark. 2025)", "kaynak_url": "https://www.uwa.edu.au/news/article/2025/june/astronomers-thought-the-milky-way-was-doomed-to-crash-into-andromeda"},
-    {"deger": "z = 0,158; 749 Mpc (2,4 milyar ışık yılı, parlaklık uzaklığı); 12,9 kadir; ~900 milyon M☉", "aciklama": "İlk kuasar 3C 273", "kaynak_url": "https://en.wikipedia.org/wiki/3C_273"},
-    {"deger": "~1300–2000 galaksi; 53,8 milyon ışık yılı; 1,2×10¹⁵ M☉; 30 milyon K", "aciklama": "Başak Kümesi", "kaynak_url": "https://en.wikipedia.org/wiki/Virgo_Cluster"},
-    {"deger": "160 Mpc; ~10¹⁷ M☉", "aciklama": "Laniakea üstkümesi (Tully ve ark. 2014)", "kaynak_url": "https://arxiv.org/pdf/1409.0880"}
+    {
+      "deger": "26 Nisan 1920; 5–6 Ekim 1923; 930.000 ışık yılı; 1 Ocak 1925",
+      "aciklama": "Büyük Tartışma, Hubble'ın M31'de Sefeid bulduğu gece, bulduğu uzaklık ve sonucun okunduğu gün",
+      "kaynak_url": "https://www.astronomy.com/science/how-edwin-hubble-won-the-great-debate/",
+      "kid": "d7n0"
+    },
+    {
+      "deger": ">100.000 ışık yılı",
+      "aciklama": "Samanyolu disk genişliği (NASA)",
+      "kaynak_url": "https://science.nasa.gov/universe/galaxies/",
+      "kid": "d7n1"
+    },
+    {
+      "deger": "87.400 ± 3600 ışık yılı; ince disk 718–1470 ışık yılı; 100–400 milyar yıldız",
+      "aciklama": "Samanyolu'nun çapı, ince disk kalınlığı ve yıldız sayısı (Wikipedia)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Milky_Way",
+      "kid": "d7n2"
+    },
+    {
+      "deger": "R0 = 8178 ± 13 (istat.) ± 22 (sist.) parsek",
+      "aciklama": "Güneş'in galaktik merkeze uzaklığı (GRAVITY 2019)",
+      "kaynak_url": "https://arxiv.org/abs/1904.05721",
+      "kid": "d7n3"
+    },
+    {
+      "deger": "720.000 km/saat; ~230 milyon yıl",
+      "aciklama": "Güneş Sistemi'nin galaktik yörünge hızı ve bir tur süresi (NASA)",
+      "kaynak_url": "https://science.nasa.gov/sun/facts/",
+      "kid": "d7n4"
+    },
+    {
+      "deger": "4,30 milyon M☉; 27.000 ışık yılı",
+      "aciklama": "Sgr A*'nın kütlesi ve uzaklığı (ESO/GRAVITY 2021)",
+      "kaynak_url": "https://www.eso.org/public/news/eso2119/",
+      "kid": "d7n5"
+    },
+    {
+      "deger": "134 üye (1 Mpc içinde); çap 5,11 Mpc (17 milyon ışık yılı); ~2×10¹² M☉",
+      "aciklama": "Yerel Grup (Wikipedia)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Local_Group",
+      "kid": "d7n6"
+    },
+    {
+      "deger": "765 kpc (2,5 milyon ışık yılı); 3,44 kadir; ~1 trilyon yıldız",
+      "aciklama": "Andromeda Galaksisi (M31)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Andromeda_Galaxy",
+      "kid": "d7n7"
+    },
+    {
+      "deger": "2,88 milyon ışık yılı; 5,72 kadir (etkin ~6,6)",
+      "aciklama": "Üçgen Galaksisi (M33)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Triangulum_Galaxy",
+      "kid": "d7n8"
+    },
+    {
+      "deger": "160.000–163.000 ve ~200.000 ışık yılı",
+      "aciklama": "Büyük ve Küçük Macellan Bulutları'nın uzaklığı",
+      "kaynak_url": "https://www.skyatnightmagazine.com/news/large-small-magellanic-clouds",
+      "kid": "d7n9"
+    },
+    {
+      "deger": "~110 km/s",
+      "aciklama": "Andromeda'nın Samanyolu'na yaklaşma hızı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Andromeda%E2%80%93Milky_Way_collision",
+      "kid": "d7n10"
+    },
+    {
+      "deger": "4 milyar yıl + 2 milyar yıl; 400.000 km/saat",
+      "aciklama": "2012 Hubble tahmini: karşılaşma ve tam birleşme süresi, yaklaşma hızı",
+      "kaynak_url": "https://www.astronomy.com/science/hubble-shows-milky-way-is-destined-for-head-on-collision-with-andromeda-galaxy/",
+      "kid": "d7n11"
+    },
+    {
+      "deger": "~%50 (10 milyar yıl içinde)",
+      "aciklama": "Samanyolu–Andromeda birleşme olasılığı (Sawala ve ark. 2025)",
+      "kaynak_url": "https://www.uwa.edu.au/news/article/2025/june/astronomers-thought-the-milky-way-was-doomed-to-crash-into-andromeda",
+      "kid": "d7n12"
+    },
+    {
+      "deger": "z = 0,158; 749 Mpc (2,4 milyar ışık yılı, parlaklık uzaklığı); 12,9 kadir; ~900 milyon M☉",
+      "aciklama": "İlk kuasar 3C 273",
+      "kaynak_url": "https://en.wikipedia.org/wiki/3C_273",
+      "kid": "d7n13"
+    },
+    {
+      "deger": "~1300–2000 galaksi; 53,8 milyon ışık yılı; 1,2×10¹⁵ M☉; 30 milyon K",
+      "aciklama": "Başak Kümesi",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Virgo_Cluster",
+      "kid": "d7n14"
+    },
+    {
+      "deger": "160 Mpc; ~10¹⁷ M☉",
+      "aciklama": "Laniakea üstkümesi (Tully ve ark. 2014)",
+      "kaynak_url": "https://arxiv.org/pdf/1409.0880",
+      "kid": "d7n15"
+    }
   ],
   "sozluk": [
-    {"terim": "Galaksi", "tanim": "Çok sayıda yıldızın, gazın, tozun ve karanlık maddenin kütleçekimiyle bir arada durduğu dev sistem."},
-    {"terim": "Sefeid değişeni", "tanim": "Parlaklığı düzenli bir ritimle değişen ve ritminin süresinden gerçek ışıma gücü bulunabilen yıldız türü."},
-    {"terim": "Hale", "tanim": "Galaksi diskini saran, yaşlı yıldızlar, küresel kümeler ve karanlık madde içeren kabaca küre biçimli bölge."},
-    {"terim": "Çubuklu sarmal", "tanim": "Merkezinden bir yıldız çubuğu geçen ve kolları bu çubuğun uçlarından başlayan sarmal galaksi (SBa–SBc)."},
-    {"terim": "Lentiküler galaksi", "tanim": "Diski ve şişkinliği olan ama sarmal kolu olmayan, gazının çoğunu tüketmiş galaksi türü (S0)."},
-    {"terim": "Cüce galaksi", "tanim": "Büyük galaksilere göre çok daha az yıldız içeren küçük galaksi; Macellan Bulutları örnektir."},
-    {"terim": "Yerel Grup", "tanim": "Samanyolu, Andromeda ve Üçgen Galaksisi başta olmak üzere onlarca galaksiden oluşan galaksi topluluğumuz."},
-    {"terim": "Aktif galaksi çekirdeği", "tanim": "Merkezindeki dev kara deliğe madde düştüğü için galaksinin geri kalanından çok daha parlak ışıyan küçük merkez bölge."},
-    {"terim": "Yığılma diski", "tanim": "Bir kara deliğe ya da yıldıza düşen gazın onun çevresinde dönerek ısındığı disk."},
-    {"terim": "Kuasar", "tanim": "Çok uzak ve çok parlak bir aktif galaksi çekirdeği; ilk tanınanı 3C 273'tür."},
-    {"terim": "Galaksi kümesi", "tanim": "Yüzlerce ya da binlerce galaksinin kütleçekimiyle bağlı olduğu, araları sıcak gazla dolu topluluk."},
-    {"terim": "Üstküme", "tanim": "Galaksi gruplarını ve kümelerini içine alan, yüz milyonlarca ışık yılı boyutunda daha büyük yapı."}
+    {
+      "terim": "Galaksi",
+      "tanim": "Çok sayıda yıldızın, gazın, tozun ve karanlık maddenin kütleçekimiyle bir arada durduğu dev sistem.",
+      "kid": "d7t0"
+    },
+    {
+      "terim": "Sefeid değişeni",
+      "tanim": "Parlaklığı düzenli bir ritimle değişen ve ritminin süresinden gerçek ışıma gücü bulunabilen yıldız türü.",
+      "kid": "d7t1"
+    },
+    {
+      "terim": "Hale",
+      "tanim": "Galaksi diskini saran, yaşlı yıldızlar, küresel kümeler ve karanlık madde içeren kabaca küre biçimli bölge.",
+      "kid": "d7t2"
+    },
+    {
+      "terim": "Çubuklu sarmal",
+      "tanim": "Merkezinden bir yıldız çubuğu geçen ve kolları bu çubuğun uçlarından başlayan sarmal galaksi (SBa–SBc).",
+      "kid": "d7t3"
+    },
+    {
+      "terim": "Lentiküler galaksi",
+      "tanim": "Diski ve şişkinliği olan ama sarmal kolu olmayan, gazının çoğunu tüketmiş galaksi türü (S0).",
+      "kid": "d7t4"
+    },
+    {
+      "terim": "Cüce galaksi",
+      "tanim": "Büyük galaksilere göre çok daha az yıldız içeren küçük galaksi; Macellan Bulutları örnektir.",
+      "kid": "d7t5"
+    },
+    {
+      "terim": "Yerel Grup",
+      "tanim": "Samanyolu, Andromeda ve Üçgen Galaksisi başta olmak üzere onlarca galaksiden oluşan galaksi topluluğumuz.",
+      "kid": "d7t6"
+    },
+    {
+      "terim": "Aktif galaksi çekirdeği",
+      "tanim": "Merkezindeki dev kara deliğe madde düştüğü için galaksinin geri kalanından çok daha parlak ışıyan küçük merkez bölge.",
+      "kid": "d7t7"
+    },
+    {
+      "terim": "Yığılma diski",
+      "tanim": "Bir kara deliğe ya da yıldıza düşen gazın onun çevresinde dönerek ısındığı disk.",
+      "kid": "d7t8"
+    },
+    {
+      "terim": "Kuasar",
+      "tanim": "Çok uzak ve çok parlak bir aktif galaksi çekirdeği; ilk tanınanı 3C 273'tür.",
+      "kid": "d7t9"
+    },
+    {
+      "terim": "Galaksi kümesi",
+      "tanim": "Yüzlerce ya da binlerce galaksinin kütleçekimiyle bağlı olduğu, araları sıcak gazla dolu topluluk.",
+      "kid": "d7t10"
+    },
+    {
+      "terim": "Üstküme",
+      "tanim": "Galaksi gruplarını ve kümelerini içine alan, yüz milyonlarca ışık yılı boyutunda daha büyük yapı.",
+      "kid": "d7t11"
+    }
   ],
   "defter_notu": [
     "1923: Hubble M31'de Sefeid buldu → Andromeda ayrı bir galaksi (Büyük Tartışma 1920).",
@@ -197,52 +329,196 @@
     "Başak Kümesi ~1300–2000 galaksi, 53,8 milyon ışık yılı; Laniakea üstkümesi ~160 Mpc (2014)."
   ],
   "sorular": [
-    {"soru": "Hubble, Andromeda'nın ayrı bir galaksi olduğunu nasıl gösterdi?", "cevap": "M31'in fotoğraf plakasında bir Sefeid değişeni buldu. Sefeidin parlaklık ritminden gerçek ışıma gücünü, ne kadar sönük göründüğünden de uzaklığını hesapladı. Bulduğu uzaklık (930.000 ışık yılı) Samanyolu'nun boyutunun çok ötesindeydi."},
-    {"soru": "Samanyolu'nu gökte neden şerit olarak görürüz?", "cevap": "Galaksi yassı bir disk ve biz bu diskin içindeyiz. Disk düzlemi boyunca baktığımızda görüş hattında çok sayıda yıldız üst üste biner ve gökyüzünü saran yaklaşık 30° genişliğinde bir ışık şeridi görürüz."},
-    {"soru": "İstanbul'dan Macellan Bulutları'nı neden göremezsin?", "cevap": "Macellan Bulutları güney gökyüzündedir ve Yengeç Dönencesi'nin kuzeyinden görülmez. İstanbul yaklaşık 41° kuzeyde olduğu için bu sınırın çok kuzeyindedir."},
-    {"soru": "Güneş merkezden 27.000 ışık yılı uzakta, saniyede 200 km hızla dönüyorsa bir galaktik yıl kabaca kaç yıldır?", "cevap": "Çevre = 2 × π × 27.000 × 9,4607×10¹² km ≈ 1,6×10¹⁸ km. Süre ≈ 1,6×10¹⁸ / 200 ≈ 8×10¹⁵ s ≈ 2,5×10⁸ yıl, yani yaklaşık 250 milyon yıl; NASA'nın 230 milyon yılına yakın."},
-    {"soru": "Samanyolu ve Andromeda çarpışırsa yıldızlar neden birbirine çarpmaz?", "cevap": "Güneş'e en yakın yıldız yaklaşık 30 milyon Güneş çapı uzaktadır; yıldızların sık olduğu bölgelerde bile ortalama aralık yaklaşık 1,6×10¹¹ km, yani Güneş çapının yaklaşık 115.000 katıdır. Bu kadar seyrek dağılmış cisimlerin doğrudan isabet etmesi çok olasılık dışıdır; yalnızca yörüngeleri değişir."},
-    {"soru": "2025 çalışması Andromeda çarpışması tahminini neden değiştirdi?", "cevap": "Hubble ve Gaia verileriyle binlerce olası yörünge hesaplandı ve Büyük Macellan Bulutu ile Üçgen Galaksisi'nin çekimi de katıldı. Büyük Macellan Bulutu Samanyolu'nu Andromeda'dan uzaklaştırdığı için 10 milyar yıl içinde birleşme olasılığı yaklaşık yüzde 50'ye indi."},
-    {"soru": "Bir aktif galaksi çekirdeğinin parlaklığının kısa sürede değişmesi ne anlatır?", "cevap": "Işığı yayan bölgenin çok küçük olduğunu. Dev bir bölge bir bütün olarak bu kadar kısa sürede parlayıp sönemez; bu da enerjinin kara deliğin çevresindeki küçük bir yığılma diskinden geldiği fikrini destekler."},
-    {"soru": "3C 273'ün z = 0,158 olduğunu biliyorsun. Laboratuvarda 656,28 nm olan H-alfa çizgisini hangi dalga boyunda görürsün?", "cevap": "656,28 × (1 + 0,158) = 656,28 × 1,158 ≈ 760 nm. Çizgi yaklaşık yüzde 15,8 uzamıştır."},
-    {"soru": "Başak Kümesi'ndeki sıcak gazı neden sıradan bir teleskopla göremezsin?", "cevap": "Gaz yaklaşık 30 milyon kelvin sıcaklıktadır ve ışımasını ağırlıkla X-ışınlarında yapar. X-ışınları atmosferden geçmez ve görmek için X-ışını teleskopları gerekir (atmosfer pencereleri d2'de)."}
+    {
+      "soru": "Hubble, Andromeda'nın ayrı bir galaksi olduğunu nasıl gösterdi?",
+      "cevap": "M31'in fotoğraf plakasında bir Sefeid değişeni buldu. Sefeidin parlaklık ritminden gerçek ışıma gücünü, ne kadar sönük göründüğünden de uzaklığını hesapladı. Bulduğu uzaklık (930.000 ışık yılı) Samanyolu'nun boyutunun çok ötesindeydi.",
+      "kid": "d7s0"
+    },
+    {
+      "soru": "Samanyolu'nu gökte neden şerit olarak görürüz?",
+      "cevap": "Galaksi yassı bir disk ve biz bu diskin içindeyiz. Disk düzlemi boyunca baktığımızda görüş hattında çok sayıda yıldız üst üste biner ve gökyüzünü saran yaklaşık 30° genişliğinde bir ışık şeridi görürüz.",
+      "kid": "d7s1"
+    },
+    {
+      "soru": "İstanbul'dan Macellan Bulutları'nı neden göremezsin?",
+      "cevap": "Macellan Bulutları güney gökyüzündedir ve Yengeç Dönencesi'nin kuzeyinden görülmez. İstanbul yaklaşık 41° kuzeyde olduğu için bu sınırın çok kuzeyindedir.",
+      "kid": "d7s2"
+    },
+    {
+      "soru": "Güneş merkezden 27.000 ışık yılı uzakta, saniyede 200 km hızla dönüyorsa bir galaktik yıl kabaca kaç yıldır?",
+      "cevap": "Çevre = 2 × π × 27.000 × 9,4607×10¹² km ≈ 1,6×10¹⁸ km. Süre ≈ 1,6×10¹⁸ / 200 ≈ 8×10¹⁵ s ≈ 2,5×10⁸ yıl, yani yaklaşık 250 milyon yıl; NASA'nın 230 milyon yılına yakın.",
+      "kid": "d7s3"
+    },
+    {
+      "soru": "Samanyolu ve Andromeda çarpışırsa yıldızlar neden birbirine çarpmaz?",
+      "cevap": "Güneş'e en yakın yıldız yaklaşık 30 milyon Güneş çapı uzaktadır; yıldızların sık olduğu bölgelerde bile ortalama aralık yaklaşık 1,6×10¹¹ km, yani Güneş çapının yaklaşık 115.000 katıdır. Bu kadar seyrek dağılmış cisimlerin doğrudan isabet etmesi çok olasılık dışıdır; yalnızca yörüngeleri değişir.",
+      "kid": "d7s4"
+    },
+    {
+      "soru": "2025 çalışması Andromeda çarpışması tahminini neden değiştirdi?",
+      "cevap": "Hubble ve Gaia verileriyle binlerce olası yörünge hesaplandı ve Büyük Macellan Bulutu ile Üçgen Galaksisi'nin çekimi de katıldı. Büyük Macellan Bulutu Samanyolu'nu Andromeda'dan uzaklaştırdığı için 10 milyar yıl içinde birleşme olasılığı yaklaşık yüzde 50'ye indi.",
+      "kid": "d7s5"
+    },
+    {
+      "soru": "Bir aktif galaksi çekirdeğinin parlaklığının kısa sürede değişmesi ne anlatır?",
+      "cevap": "Işığı yayan bölgenin çok küçük olduğunu. Dev bir bölge bir bütün olarak bu kadar kısa sürede parlayıp sönemez; bu da enerjinin kara deliğin çevresindeki küçük bir yığılma diskinden geldiği fikrini destekler.",
+      "kid": "d7s6"
+    },
+    {
+      "soru": "3C 273'ün z = 0,158 olduğunu biliyorsun. Laboratuvarda 656,28 nm olan H-alfa çizgisini hangi dalga boyunda görürsün?",
+      "cevap": "656,28 × (1 + 0,158) = 656,28 × 1,158 ≈ 760 nm. Çizgi yaklaşık yüzde 15,8 uzamıştır.",
+      "kid": "d7s7"
+    },
+    {
+      "soru": "Başak Kümesi'ndeki sıcak gazı neden sıradan bir teleskopla göremezsin?",
+      "cevap": "Gaz yaklaşık 30 milyon kelvin sıcaklıktadır ve ışımasını ağırlıkla X-ışınlarında yapar. X-ışınları atmosferden geçmez ve görmek için X-ışını teleskopları gerekir (atmosfer pencereleri d2'de).",
+      "kid": "d7s8"
+    }
   ],
   "kaynaklar": [
-    {"ad": "Astronomy.com, How Edwin Hubble won the Great Debate", "url": "https://www.astronomy.com/science/how-edwin-hubble-won-the-great-debate/"},
-    {"ad": "Wikipedia, Milky Way", "url": "https://en.wikipedia.org/wiki/Milky_Way"},
-    {"ad": "Wikipedia, Galactic Center", "url": "https://en.wikipedia.org/wiki/Galactic_Center"},
-    {"ad": "Wikipedia, Galaxy rotation curve", "url": "https://en.wikipedia.org/wiki/Galaxy_rotation_curve"},
-    {"ad": "Wikipedia, Hubble sequence", "url": "https://en.wikipedia.org/wiki/Hubble_sequence"},
-    {"ad": "Wikipedia, Lenticular galaxy", "url": "https://en.wikipedia.org/wiki/Lenticular_galaxy"},
-    {"ad": "Wikipedia, Local Group", "url": "https://en.wikipedia.org/wiki/Local_Group"},
-    {"ad": "Wikipedia, Andromeda Galaxy", "url": "https://en.wikipedia.org/wiki/Andromeda_Galaxy"},
-    {"ad": "Wikipedia, Triangulum Galaxy", "url": "https://en.wikipedia.org/wiki/Triangulum_Galaxy"},
-    {"ad": "Wikipedia, Andromeda–Milky Way collision", "url": "https://en.wikipedia.org/wiki/Andromeda%E2%80%93Milky_Way_collision"},
-    {"ad": "Wikipedia, 3C 273", "url": "https://en.wikipedia.org/wiki/3C_273"},
-    {"ad": "Wikipedia, Virgo Cluster", "url": "https://en.wikipedia.org/wiki/Virgo_Cluster"},
-    {"ad": "Wikipedia, Laniakea Supercluster", "url": "https://en.wikipedia.org/wiki/Laniakea_Supercluster"},
-    {"ad": "Wikipedia, Galaxy", "url": "https://en.wikipedia.org/wiki/Galaxy"},
-    {"ad": "Wikipedia, Observable universe", "url": "https://en.wikipedia.org/wiki/Observable_universe"},
-    {"ad": "Wikipedia, Expansion of the universe", "url": "https://en.wikipedia.org/wiki/Expansion_of_the_universe"},
-    {"ad": "NASA Science, Galaxies", "url": "https://science.nasa.gov/universe/galaxies/"},
-    {"ad": "NASA Science, Types of Galaxies", "url": "https://science.nasa.gov/universe/galaxies/types/"},
-    {"ad": "NASA Science, Our Neighbor Andromeda", "url": "https://science.nasa.gov/photojournal/our-neighbor-andromeda/"},
-    {"ad": "NASA Science, Sun: Facts", "url": "https://science.nasa.gov/sun/facts/"},
-    {"ad": "NASA Imagine the Universe, Active Galaxies", "url": "https://imagine.gsfc.nasa.gov/science/objects/active_galaxies1.html"},
-    {"ad": "Astronomy.com, Hubble shows Milky Way is destined for head-on collision with Andromeda galaxy (2012)", "url": "https://www.astronomy.com/science/hubble-shows-milky-way-is-destined-for-head-on-collision-with-andromeda-galaxy/"},
-    {"ad": "STScI 2012-20 basın bülteni", "url": "https://www.stsci.edu/contents/news-releases/2012/news-2012-20"},
-    {"ad": "UWA / The Conversation (2025), Sawala ve ark. Nature Astronomy çalışması", "url": "https://www.uwa.edu.au/news/article/2025/june/astronomers-thought-the-milky-way-was-doomed-to-crash-into-andromeda"},
-    {"ad": "ESA/Hubble opo9734a, Colliding Galaxies NGC 4038 and NGC 4039", "url": "https://esahubble.org/images/opo9734a/"},
-    {"ad": "ESA/Hubble heic9902o, The Hubble tuning fork", "url": "https://esahubble.org/images/heic9902o/"},
-    {"ad": "Sky at Night Magazine, Large and Small Magellanic Clouds", "url": "https://www.skyatnightmagazine.com/news/large-small-magellanic-clouds"},
-    {"ad": "Freedman ve Kaufmann, Universe 10. baskı, 24-1 Quasars", "url": "https://digfir-published.macmillanusa.com/universe10e/universe10e_ch24_2.html"},
-    {"ad": "Tully ve ark. 2014, The Laniakea supercluster of galaxies, arXiv:1409.0880", "url": "https://arxiv.org/pdf/1409.0880"},
-    {"ad": "Physics Today (2014), Laniakea haberi", "url": "https://physicstoday.aip.org/news/milky-ways-neighborhood-may-be-100-times-larger-than-previously-believed"},
-    {"ad": "ESO eso2119 (2021), GRAVITY: Sgr A* kütlesi ve uzaklığı", "url": "https://www.eso.org/public/news/eso2119/"},
-    {"ad": "GRAVITY Collaboration 2019, arXiv:1904.05721", "url": "https://arxiv.org/abs/1904.05721"},
-    {"ad": "GRAVITY Collaboration 2022, arXiv:2112.07478", "url": "https://arxiv.org/abs/2112.07478"},
-    {"ad": "ESO eso2208-eht-mw (2022), EHT Sgr A* görüntüsü", "url": "https://www.eso.org/public/news/eso2208-eht-mw/"},
-    {"ad": "Chandra basın bülteni (2006), Bullet Cluster", "url": "https://chandra.si.edu/press/06_releases/press_082106.html"},
-    {"ad": "Wikipedia, Apparent magnitude", "url": "https://en.wikipedia.org/wiki/Apparent_magnitude"}
+    {
+      "ad": "Astronomy.com, How Edwin Hubble won the Great Debate",
+      "url": "https://www.astronomy.com/science/how-edwin-hubble-won-the-great-debate/"
+    },
+    {
+      "ad": "Wikipedia, Milky Way",
+      "url": "https://en.wikipedia.org/wiki/Milky_Way"
+    },
+    {
+      "ad": "Wikipedia, Galactic Center",
+      "url": "https://en.wikipedia.org/wiki/Galactic_Center"
+    },
+    {
+      "ad": "Wikipedia, Galaxy rotation curve",
+      "url": "https://en.wikipedia.org/wiki/Galaxy_rotation_curve"
+    },
+    {
+      "ad": "Wikipedia, Hubble sequence",
+      "url": "https://en.wikipedia.org/wiki/Hubble_sequence"
+    },
+    {
+      "ad": "Wikipedia, Lenticular galaxy",
+      "url": "https://en.wikipedia.org/wiki/Lenticular_galaxy"
+    },
+    {
+      "ad": "Wikipedia, Local Group",
+      "url": "https://en.wikipedia.org/wiki/Local_Group"
+    },
+    {
+      "ad": "Wikipedia, Andromeda Galaxy",
+      "url": "https://en.wikipedia.org/wiki/Andromeda_Galaxy"
+    },
+    {
+      "ad": "Wikipedia, Triangulum Galaxy",
+      "url": "https://en.wikipedia.org/wiki/Triangulum_Galaxy"
+    },
+    {
+      "ad": "Wikipedia, Andromeda–Milky Way collision",
+      "url": "https://en.wikipedia.org/wiki/Andromeda%E2%80%93Milky_Way_collision"
+    },
+    {
+      "ad": "Wikipedia, 3C 273",
+      "url": "https://en.wikipedia.org/wiki/3C_273"
+    },
+    {
+      "ad": "Wikipedia, Virgo Cluster",
+      "url": "https://en.wikipedia.org/wiki/Virgo_Cluster"
+    },
+    {
+      "ad": "Wikipedia, Laniakea Supercluster",
+      "url": "https://en.wikipedia.org/wiki/Laniakea_Supercluster"
+    },
+    {
+      "ad": "Wikipedia, Galaxy",
+      "url": "https://en.wikipedia.org/wiki/Galaxy"
+    },
+    {
+      "ad": "Wikipedia, Observable universe",
+      "url": "https://en.wikipedia.org/wiki/Observable_universe"
+    },
+    {
+      "ad": "Wikipedia, Expansion of the universe",
+      "url": "https://en.wikipedia.org/wiki/Expansion_of_the_universe"
+    },
+    {
+      "ad": "NASA Science, Galaxies",
+      "url": "https://science.nasa.gov/universe/galaxies/"
+    },
+    {
+      "ad": "NASA Science, Types of Galaxies",
+      "url": "https://science.nasa.gov/universe/galaxies/types/"
+    },
+    {
+      "ad": "NASA Science, Our Neighbor Andromeda",
+      "url": "https://science.nasa.gov/photojournal/our-neighbor-andromeda/"
+    },
+    {
+      "ad": "NASA Science, Sun: Facts",
+      "url": "https://science.nasa.gov/sun/facts/"
+    },
+    {
+      "ad": "NASA Imagine the Universe, Active Galaxies",
+      "url": "https://imagine.gsfc.nasa.gov/science/objects/active_galaxies1.html"
+    },
+    {
+      "ad": "Astronomy.com, Hubble shows Milky Way is destined for head-on collision with Andromeda galaxy (2012)",
+      "url": "https://www.astronomy.com/science/hubble-shows-milky-way-is-destined-for-head-on-collision-with-andromeda-galaxy/"
+    },
+    {
+      "ad": "STScI 2012-20 basın bülteni",
+      "url": "https://www.stsci.edu/contents/news-releases/2012/news-2012-20"
+    },
+    {
+      "ad": "UWA / The Conversation (2025), Sawala ve ark. Nature Astronomy çalışması",
+      "url": "https://www.uwa.edu.au/news/article/2025/june/astronomers-thought-the-milky-way-was-doomed-to-crash-into-andromeda"
+    },
+    {
+      "ad": "ESA/Hubble opo9734a, Colliding Galaxies NGC 4038 and NGC 4039",
+      "url": "https://esahubble.org/images/opo9734a/"
+    },
+    {
+      "ad": "ESA/Hubble heic9902o, The Hubble tuning fork",
+      "url": "https://esahubble.org/images/heic9902o/"
+    },
+    {
+      "ad": "Sky at Night Magazine, Large and Small Magellanic Clouds",
+      "url": "https://www.skyatnightmagazine.com/news/large-small-magellanic-clouds"
+    },
+    {
+      "ad": "Freedman ve Kaufmann, Universe 10. baskı, 24-1 Quasars",
+      "url": "https://digfir-published.macmillanusa.com/universe10e/universe10e_ch24_2.html"
+    },
+    {
+      "ad": "Tully ve ark. 2014, The Laniakea supercluster of galaxies, arXiv:1409.0880",
+      "url": "https://arxiv.org/pdf/1409.0880"
+    },
+    {
+      "ad": "Physics Today (2014), Laniakea haberi",
+      "url": "https://physicstoday.aip.org/news/milky-ways-neighborhood-may-be-100-times-larger-than-previously-believed"
+    },
+    {
+      "ad": "ESO eso2119 (2021), GRAVITY: Sgr A* kütlesi ve uzaklığı",
+      "url": "https://www.eso.org/public/news/eso2119/"
+    },
+    {
+      "ad": "GRAVITY Collaboration 2019, arXiv:1904.05721",
+      "url": "https://arxiv.org/abs/1904.05721"
+    },
+    {
+      "ad": "GRAVITY Collaboration 2022, arXiv:2112.07478",
+      "url": "https://arxiv.org/abs/2112.07478"
+    },
+    {
+      "ad": "ESO eso2208-eht-mw (2022), EHT Sgr A* görüntüsü",
+      "url": "https://www.eso.org/public/news/eso2208-eht-mw/"
+    },
+    {
+      "ad": "Chandra basın bülteni (2006), Bullet Cluster",
+      "url": "https://chandra.si.edu/press/06_releases/press_082106.html"
+    },
+    {
+      "ad": "Wikipedia, Apparent magnitude",
+      "url": "https://en.wikipedia.org/wiki/Apparent_magnitude"
+    }
   ]
 }

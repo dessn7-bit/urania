@@ -3,7 +3,9 @@
   "unite": "gokyuzu",
   "baslik": "Işık ve Tayf: Yıldızlardan Gelen Mesajı Okumak",
   "ozet": "Yıldızlara gidemeyiz ama ışıkları bize gelir. Bu derste ışığın dalga boyu, frekans ve foton enerjisiyle nasıl tarif edildiğini, sıcak cisimlerin sıcaklıklarını renkleriyle nasıl ele verdiğini öğreneceksin. Tayf çizgilerinin kimyasal bileşimi nasıl açığa çıkardığını, Doppler kaymasıyla hızın nasıl ölçüldüğünü ve atmosferin hangi ışığı geçirip hangisini durdurduğunu göreceksin.",
-  "on_bilgi": ["d1"],
+  "on_bilgi": [
+    "d1"
+  ],
   "bolumler": [
     {
       "baslik": "Işık: hem dalga hem parçacık",
@@ -150,98 +152,166 @@
     {
       "deger": "299.792.458 m/s",
       "aciklama": "Boşlukta ışık hızı",
-      "kaynak_url": "https://en.wikipedia.org/wiki/List_of_physical_constants"
+      "kaynak_url": "https://en.wikipedia.org/wiki/List_of_physical_constants",
+      "kid": "d2n0"
     },
     {
       "deger": "6,62607015 × 10⁻³⁴ J/Hz",
       "aciklama": "Planck sabiti h (tanım gereği kesin)",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Planck_constant"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Planck_constant",
+      "kid": "d2n1"
     },
     {
       "deger": "380–700 nm",
       "aciklama": "İnsan gözünün tipik olarak algıladığı aralık",
-      "kaynak_url": "https://science.nasa.gov/ems/09_visiblelight/"
+      "kaynak_url": "https://science.nasa.gov/ems/09_visiblelight/",
+      "kid": "d2n2"
     },
     {
       "deger": "2,897771955 × 10⁻³ m·K",
       "aciklama": "Wien kayma yasası sabiti b",
-      "kaynak_url": "https://en.wikipedia.org/wiki/List_of_physical_constants"
+      "kaynak_url": "https://en.wikipedia.org/wiki/List_of_physical_constants",
+      "kid": "d2n3"
     },
     {
       "deger": "5,670374419 × 10⁻⁸ W m⁻² K⁻⁴",
       "aciklama": "Stefan-Boltzmann sabiti σ",
-      "kaynak_url": "https://en.wikipedia.org/wiki/List_of_physical_constants"
+      "kaynak_url": "https://en.wikipedia.org/wiki/List_of_physical_constants",
+      "kid": "d2n4"
     },
     {
       "deger": "5772 K; 695.700 km; 382,8 × 10²⁴ W",
       "aciklama": "Güneş'in etkin sıcaklığı, yarıçapı ve ışıma gücü (NASA)",
-      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html"
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html",
+      "kid": "d2n5"
     },
     {
       "deger": "Rigel 12.100 K, Betelgeuse ≈ 3800 K; %60 morötesi, %85 kızılötesi",
       "aciklama": "Avcı takımyıldızındaki iki yıldızın sıcaklığı ve ışınım dağılımı",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Wien%27s_displacement_law"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Wien%27s_displacement_law",
+      "kid": "d2n6"
     },
     {
       "deger": "1877 (Stefan), 1884 (Boltzmann)",
       "aciklama": "T⁴ yasasının deneysel ve kuramsal kökeni",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Stefan%E2%80%93Boltzmann_law"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Stefan%E2%80%93Boltzmann_law",
+      "kid": "d2n7"
     },
     {
       "deger": "255 K ve 288 K",
       "aciklama": "Dünya'nın atmosfersiz etkin sıcaklığı (yansıtma 0,3) ve gerçek ortalama yüzey sıcaklığı",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Stefan%E2%80%93Boltzmann_law"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Stefan%E2%80%93Boltzmann_law",
+      "kid": "d2n8"
     },
     {
       "deger": "1802, 1814, 570+ çizgi",
       "aciklama": "Wollaston ve Fraunhofer; Fraunhofer'in haritaladığı çizgi sayısı",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Fraunhofer_lines"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Fraunhofer_lines",
+      "kid": "d2n9"
     },
     {
       "deger": "656,28 nm (hava)",
       "aciklama": "Hidrojen H-alfa çizgisi (3 → 2 geçişi)",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Hydrogen-alpha"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Hydrogen-alpha",
+      "kid": "d2n10"
     },
     {
       "deger": "588,995 nm ve 589,592 nm",
       "aciklama": "Sodyum D2 ve D1 çizgileri",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Fraunhofer_lines"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Fraunhofer_lines",
+      "kid": "d2n11"
     },
     {
       "deger": "18 Ağustos 1868; 587,49 nm; 1895",
       "aciklama": "Helyumun Güneş tayfında görülmesi ve Dünya'da elde edilmesi",
-      "kaynak_url": "https://www.universetoday.com/53563/who-discovered-helium/"
+      "kaynak_url": "https://www.universetoday.com/53563/who-discovered-helium/",
+      "kid": "d2n12"
     },
     {
       "deger": "1842, 1845, 1848",
       "aciklama": "Doppler'in önerisi, Buys Ballot'un ses deneyi, Fizeau'nun ışık için bulgusu",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Doppler_effect"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Doppler_effect",
+      "kid": "d2n13"
     },
     {
       "deger": "yaklaşık 300 nm – 2 μm; 8–14 μm",
       "aciklama": "Optik pencere ve kızılötesi pencere",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Optical_window"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Optical_window",
+      "kid": "d2n14"
     },
     {
       "deger": "yaklaşık 10 MHz (30 m) – 1 THz (0,3 mm)",
       "aciklama": "Radyo penceresinin sınırları",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Radio_window"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Radio_window",
+      "kid": "d2n15"
     }
   ],
   "sozluk": [
-    { "terim": "Dalga boyu (λ)", "tanim": "Bir dalganın art arda iki tepesi arasındaki uzaklık." },
-    { "terim": "Frekans (f)", "tanim": "Bir noktadan saniyede geçen dalga tepesi sayısı; hertz ile ölçülür." },
-    { "terim": "Foton", "tanim": "Kütlesiz, ışık hızında giden ve enerjisi h × f olan ışık paketi." },
-    { "terim": "Elektromanyetik tayf", "tanim": "Radyodan gamaya kadar bütün dalga boylarındaki ışınımın sıralı bütünü." },
-    { "terim": "Kara cisim", "tanim": "Üzerine düşen her ışınımı soğuran, yaydığı tayf yalnızca sıcaklığına bağlı olan ideal cisim." },
-    { "terim": "Etkin sıcaklık", "tanim": "Bir yıldızla aynı yüzeyden aynı toplam gücü yayacak kara cismin sıcaklığı." },
-    { "terim": "Sürekli tayf", "tanim": "Bütün dalga boylarını kesintisiz içeren tayf; sıcak katı ya da yoğun gaz üretir." },
-    { "terim": "Salma çizgisi", "tanim": "Sıcak, seyrek bir gazın yalnızca belirli dalga boylarında yaydığı parlak çizgi." },
-    { "terim": "Soğurma çizgisi", "tanim": "Sürekli tayfın önündeki daha soğuk gazın belirli dalga boylarını yutmasıyla oluşan karanlık çizgi." },
-    { "terim": "Fraunhofer çizgileri", "tanim": "Güneş tayfında görülen karanlık soğurma çizgileri." },
-    { "terim": "Dikine hız", "tanim": "Bir cismin bakış doğrultusu boyunca bize yaklaşma ya da bizden uzaklaşma hızı." },
-    { "terim": "Kırmızıya kayma", "tanim": "Uzaklaşan bir kaynağın tayf çizgilerinin daha uzun dalga boylarına kayması." },
-    { "terim": "Atmosfer penceresi", "tanim": "Atmosferin büyük ölçüde geçirdiği dalga boyu aralığı." }
+    {
+      "terim": "Dalga boyu (λ)",
+      "tanim": "Bir dalganın art arda iki tepesi arasındaki uzaklık.",
+      "kid": "d2t0"
+    },
+    {
+      "terim": "Frekans (f)",
+      "tanim": "Bir noktadan saniyede geçen dalga tepesi sayısı; hertz ile ölçülür.",
+      "kid": "d2t1"
+    },
+    {
+      "terim": "Foton",
+      "tanim": "Kütlesiz, ışık hızında giden ve enerjisi h × f olan ışık paketi.",
+      "kid": "d2t2"
+    },
+    {
+      "terim": "Elektromanyetik tayf",
+      "tanim": "Radyodan gamaya kadar bütün dalga boylarındaki ışınımın sıralı bütünü.",
+      "kid": "d2t3"
+    },
+    {
+      "terim": "Kara cisim",
+      "tanim": "Üzerine düşen her ışınımı soğuran, yaydığı tayf yalnızca sıcaklığına bağlı olan ideal cisim.",
+      "kid": "d2t4"
+    },
+    {
+      "terim": "Etkin sıcaklık",
+      "tanim": "Bir yıldızla aynı yüzeyden aynı toplam gücü yayacak kara cismin sıcaklığı.",
+      "kid": "d2t5"
+    },
+    {
+      "terim": "Sürekli tayf",
+      "tanim": "Bütün dalga boylarını kesintisiz içeren tayf; sıcak katı ya da yoğun gaz üretir.",
+      "kid": "d2t6"
+    },
+    {
+      "terim": "Salma çizgisi",
+      "tanim": "Sıcak, seyrek bir gazın yalnızca belirli dalga boylarında yaydığı parlak çizgi.",
+      "kid": "d2t7"
+    },
+    {
+      "terim": "Soğurma çizgisi",
+      "tanim": "Sürekli tayfın önündeki daha soğuk gazın belirli dalga boylarını yutmasıyla oluşan karanlık çizgi.",
+      "kid": "d2t8"
+    },
+    {
+      "terim": "Fraunhofer çizgileri",
+      "tanim": "Güneş tayfında görülen karanlık soğurma çizgileri.",
+      "kid": "d2t9"
+    },
+    {
+      "terim": "Dikine hız",
+      "tanim": "Bir cismin bakış doğrultusu boyunca bize yaklaşma ya da bizden uzaklaşma hızı.",
+      "kid": "d2t10"
+    },
+    {
+      "terim": "Kırmızıya kayma",
+      "tanim": "Uzaklaşan bir kaynağın tayf çizgilerinin daha uzun dalga boylarına kayması.",
+      "kid": "d2t11"
+    },
+    {
+      "terim": "Atmosfer penceresi",
+      "tanim": "Atmosferin büyük ölçüde geçirdiği dalga boyu aralığı.",
+      "kid": "d2t12"
+    }
   ],
   "defter_notu": [
     "Işık = elektromanyetik dalga + foton. Boşlukta c = 299.792.458 m/s.",
@@ -258,63 +328,149 @@
   "sorular": [
     {
       "soru": "Elektromanyetik tayfın bantlarını düşük frekanstan yükseğe doğru sırala. Gözün gördüğü aralık nedir?",
-      "cevap": "Radyo, mikrodalga, kızılötesi, görünür ışık, morötesi, X ışınları, gama ışınları. Göz tipik olarak yaklaşık 380 nm (mor) ile 700 nm (kırmızı) arasını görür."
+      "cevap": "Radyo, mikrodalga, kızılötesi, görünür ışık, morötesi, X ışınları, gama ışınları. Göz tipik olarak yaklaşık 380 nm (mor) ile 700 nm (kırmızı) arasını görür.",
+      "kid": "d2s0"
     },
     {
       "soru": "Dalga boyu 250 nm olan bir morötesi fotonun enerjisi, 500 nm'lik yeşil bir fotonunkinin kaç katıdır?",
-      "cevap": "E = h c / λ olduğundan enerji dalga boyuyla ters orantılıdır. Dalga boyu yarıya indiği için enerji 2 katına çıkar."
+      "cevap": "E = h c / λ olduğundan enerji dalga boyuyla ters orantılıdır. Dalga boyu yarıya indiği için enerji 2 katına çıkar.",
+      "kid": "d2s1"
     },
     {
       "soru": "Yüzey sıcaklığı 10.000 K olan bir yıldızın tayfı hangi dalga boyunda tepe yapar? Hangi bölgededir?",
-      "cevap": "λ_tepe = 2,898 × 10⁻³ / 10.000 ≈ 2,9 × 10⁻⁷ m ≈ 290 nm. Bu, 380 nm'nin altında olduğu için morötesindedir."
+      "cevap": "λ_tepe = 2,898 × 10⁻³ / 10.000 ≈ 2,9 × 10⁻⁷ m ≈ 290 nm. Bu, 380 nm'nin altında olduğu için morötesindedir.",
+      "kid": "d2s2"
     },
     {
       "soru": "İki yıldızın yarıçapı aynı, ama birinin sıcaklığı diğerinin iki katı. Işıma güçleri arasındaki oran nedir? Sıcaklıkları aynı, ama birinin yarıçapı iki katıysa oran ne olur?",
-      "cevap": "L ∝ R²T⁴. R eşitken oran 2⁴ = 16; sıcak yıldız 16 kat güçlüdür. T eşitken oran 2² = 4; büyük yıldız 4 kat güçlüdür."
+      "cevap": "L ∝ R²T⁴. R eşitken oran 2⁴ = 16; sıcak yıldız 16 kat güçlüdür. T eşitken oran 2² = 4; büyük yıldız 4 kat güçlüdür.",
+      "kid": "d2s3"
     },
     {
       "soru": "Güneş tayfındaki karanlık Fraunhofer çizgileri neden oluşur? Kirchhoff'un hangi yasasıyla açıklanır?",
-      "cevap": "Güneş'in derin katmanlarından gelen sürekli tayf, üstteki daha soğuk ve seyrek gazdan geçerken o gazdaki elementler kendilerine özgü dalga boylarını soğurur. Bu, Kirchhoff'un üçüncü yasasıdır: sürekli kaynak önünde soğuk seyrek gaz soğurma çizgileri üretir."
+      "cevap": "Güneş'in derin katmanlarından gelen sürekli tayf, üstteki daha soğuk ve seyrek gazdan geçerken o gazdaki elementler kendilerine özgü dalga boylarını soğurur. Bu, Kirchhoff'un üçüncü yasasıdır: sürekli kaynak önünde soğuk seyrek gaz soğurma çizgileri üretir.",
+      "kid": "d2s4"
     },
     {
       "soru": "Bir yıldızın tayfında tüm çizgiler maviye kaymışsa ne anlarız? Bu ölçüm yıldızın gökte yana doğru hareketini de verir mi?",
-      "cevap": "Yıldız bize yaklaşıyordur; kayma miktarı Δλ/λ ≈ v/c ile hızı verir. Hayır, Doppler kayması yalnızca bakış doğrultusundaki dikine hızı ölçer."
+      "cevap": "Yıldız bize yaklaşıyordur; kayma miktarı Δλ/λ ≈ v/c ile hızı verir. Hayır, Doppler kayması yalnızca bakış doğrultusundaki dikine hızı ölçer.",
+      "kid": "d2s5"
     },
     {
       "soru": "Bir galaksinin tayfında 656,28 nm'deki H-alfa çizgisi 659,56 nm'de görülüyor. Galaksinin dikine hızı yaklaşık kaçtır?",
-      "cevap": "Δλ = 3,28 nm; Δλ/λ = 3,28 / 656,28 ≈ 0,005. v ≈ 0,005 × 299.792 km/s ≈ 1500 km/s; kayma kırmızıya olduğu için galaksi uzaklaşıyordur. Hız ışık hızının yaklaşık %0,5'i olduğundan basit formül yeterlidir."
+      "cevap": "Δλ = 3,28 nm; Δλ/λ = 3,28 / 656,28 ≈ 0,005. v ≈ 0,005 × 299.792 km/s ≈ 1500 km/s; kayma kırmızıya olduğu için galaksi uzaklaşıyordur. Hız ışık hızının yaklaşık %0,5'i olduğundan basit formül yeterlidir.",
+      "kid": "d2s6"
     },
     {
       "soru": "X ışını teleskopları neden uzaya gönderilir de radyo teleskopları yere kurulabilir?",
-      "cevap": "Atmosfer X ışınlarını ve gama ışınlarını yere ulaştırmaz; bu dalga boylarında gözlem için aletin atmosferin dışında olması gerekir. Radyo dalgaları ise yaklaşık 10 megahertz ile 1 terahertz arasındaki radyo penceresinden geçer, bu yüzden yerden gözlenebilir."
+      "cevap": "Atmosfer X ışınlarını ve gama ışınlarını yere ulaştırmaz; bu dalga boylarında gözlem için aletin atmosferin dışında olması gerekir. Radyo dalgaları ise yaklaşık 10 megahertz ile 1 terahertz arasındaki radyo penceresinden geçer, bu yüzden yerden gözlenebilir.",
+      "kid": "d2s7"
     }
   ],
   "kaynaklar": [
-    { "ad": "NASA Science – Anatomy of an Electromagnetic Wave", "url": "https://science.nasa.gov/ems/02_anatomy/" },
-    { "ad": "NASA Science – Visible Light", "url": "https://science.nasa.gov/ems/09_visiblelight/" },
-    { "ad": "NASA Science – Introduction to the Electromagnetic Spectrum", "url": "https://science.nasa.gov/ems/01_intro/" },
-    { "ad": "NASA NSSDCA – Sun Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html" },
-    { "ad": "NIST CODATA – speed of light in vacuum", "url": "https://physics.nist.gov/cgi-bin/cuu/Value?c" },
-    { "ad": "NIST CODATA – Wien wavelength displacement law constant", "url": "https://physics.nist.gov/cgi-bin/cuu/Value?bwien" },
-    { "ad": "NIST CODATA – Stefan-Boltzmann constant", "url": "https://physics.nist.gov/cgi-bin/cuu/Value?sigma" },
-    { "ad": "Wikipedia – List of physical constants", "url": "https://en.wikipedia.org/wiki/List_of_physical_constants" },
-    { "ad": "Wikipedia – Planck constant", "url": "https://en.wikipedia.org/wiki/Planck_constant" },
-    { "ad": "Wikipedia – Electromagnetic spectrum", "url": "https://en.wikipedia.org/wiki/Electromagnetic_spectrum" },
-    { "ad": "Wikipedia – Black-body radiation", "url": "https://en.wikipedia.org/wiki/Black-body_radiation" },
-    { "ad": "Wikipedia – Wien's displacement law", "url": "https://en.wikipedia.org/wiki/Wien%27s_displacement_law" },
-    { "ad": "Wikipedia – Stefan–Boltzmann law", "url": "https://en.wikipedia.org/wiki/Stefan%E2%80%93Boltzmann_law" },
-    { "ad": "Ohio State University, Astronomy 161 – Kirchhoff's laws and spectra", "url": "https://www.astronomy.ohio-state.edu/pogge.1/Ast161/Unit4/spectra.html" },
-    { "ad": "Wikipedia – Spectral line", "url": "https://en.wikipedia.org/wiki/Spectral_line" },
-    { "ad": "Wikipedia – Emission spectrum", "url": "https://en.wikipedia.org/wiki/Emission_spectrum" },
-    { "ad": "Wikipedia – Fraunhofer lines", "url": "https://en.wikipedia.org/wiki/Fraunhofer_lines" },
-    { "ad": "Wikipedia – Hydrogen-alpha", "url": "https://en.wikipedia.org/wiki/Hydrogen-alpha" },
-    { "ad": "Wikipedia – Helium", "url": "https://en.wikipedia.org/wiki/Helium" },
-    { "ad": "Universe Today – Who Discovered Helium?", "url": "https://www.universetoday.com/53563/who-discovered-helium/" },
-    { "ad": "Wikipedia – Doppler effect", "url": "https://en.wikipedia.org/wiki/Doppler_effect" },
-    { "ad": "Wikipedia – Redshift", "url": "https://en.wikipedia.org/wiki/Redshift" },
-    { "ad": "British Astronomical Association – The Doppler effect in astronomy", "url": "https://britastro.org/2022/the-doppler-effect-in-astronomy" },
-    { "ad": "Wikipedia – Optical window", "url": "https://en.wikipedia.org/wiki/Optical_window" },
-    { "ad": "Wikipedia – Radio window", "url": "https://en.wikipedia.org/wiki/Radio_window" },
-    { "ad": "ESA Eduspace – Atmospheric interference", "url": "https://www.esa.int/SPECIALS/Eduspace_EN/SEMUYP3Z2OF_2.html" }
+    {
+      "ad": "NASA Science – Anatomy of an Electromagnetic Wave",
+      "url": "https://science.nasa.gov/ems/02_anatomy/"
+    },
+    {
+      "ad": "NASA Science – Visible Light",
+      "url": "https://science.nasa.gov/ems/09_visiblelight/"
+    },
+    {
+      "ad": "NASA Science – Introduction to the Electromagnetic Spectrum",
+      "url": "https://science.nasa.gov/ems/01_intro/"
+    },
+    {
+      "ad": "NASA NSSDCA – Sun Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html"
+    },
+    {
+      "ad": "NIST CODATA – speed of light in vacuum",
+      "url": "https://physics.nist.gov/cgi-bin/cuu/Value?c"
+    },
+    {
+      "ad": "NIST CODATA – Wien wavelength displacement law constant",
+      "url": "https://physics.nist.gov/cgi-bin/cuu/Value?bwien"
+    },
+    {
+      "ad": "NIST CODATA – Stefan-Boltzmann constant",
+      "url": "https://physics.nist.gov/cgi-bin/cuu/Value?sigma"
+    },
+    {
+      "ad": "Wikipedia – List of physical constants",
+      "url": "https://en.wikipedia.org/wiki/List_of_physical_constants"
+    },
+    {
+      "ad": "Wikipedia – Planck constant",
+      "url": "https://en.wikipedia.org/wiki/Planck_constant"
+    },
+    {
+      "ad": "Wikipedia – Electromagnetic spectrum",
+      "url": "https://en.wikipedia.org/wiki/Electromagnetic_spectrum"
+    },
+    {
+      "ad": "Wikipedia – Black-body radiation",
+      "url": "https://en.wikipedia.org/wiki/Black-body_radiation"
+    },
+    {
+      "ad": "Wikipedia – Wien's displacement law",
+      "url": "https://en.wikipedia.org/wiki/Wien%27s_displacement_law"
+    },
+    {
+      "ad": "Wikipedia – Stefan–Boltzmann law",
+      "url": "https://en.wikipedia.org/wiki/Stefan%E2%80%93Boltzmann_law"
+    },
+    {
+      "ad": "Ohio State University, Astronomy 161 – Kirchhoff's laws and spectra",
+      "url": "https://www.astronomy.ohio-state.edu/pogge.1/Ast161/Unit4/spectra.html"
+    },
+    {
+      "ad": "Wikipedia – Spectral line",
+      "url": "https://en.wikipedia.org/wiki/Spectral_line"
+    },
+    {
+      "ad": "Wikipedia – Emission spectrum",
+      "url": "https://en.wikipedia.org/wiki/Emission_spectrum"
+    },
+    {
+      "ad": "Wikipedia – Fraunhofer lines",
+      "url": "https://en.wikipedia.org/wiki/Fraunhofer_lines"
+    },
+    {
+      "ad": "Wikipedia – Hydrogen-alpha",
+      "url": "https://en.wikipedia.org/wiki/Hydrogen-alpha"
+    },
+    {
+      "ad": "Wikipedia – Helium",
+      "url": "https://en.wikipedia.org/wiki/Helium"
+    },
+    {
+      "ad": "Universe Today – Who Discovered Helium?",
+      "url": "https://www.universetoday.com/53563/who-discovered-helium/"
+    },
+    {
+      "ad": "Wikipedia – Doppler effect",
+      "url": "https://en.wikipedia.org/wiki/Doppler_effect"
+    },
+    {
+      "ad": "Wikipedia – Redshift",
+      "url": "https://en.wikipedia.org/wiki/Redshift"
+    },
+    {
+      "ad": "British Astronomical Association – The Doppler effect in astronomy",
+      "url": "https://britastro.org/2022/the-doppler-effect-in-astronomy"
+    },
+    {
+      "ad": "Wikipedia – Optical window",
+      "url": "https://en.wikipedia.org/wiki/Optical_window"
+    },
+    {
+      "ad": "Wikipedia – Radio window",
+      "url": "https://en.wikipedia.org/wiki/Radio_window"
+    },
+    {
+      "ad": "ESA Eduspace – Atmospheric interference",
+      "url": "https://www.esa.int/SPECIALS/Eduspace_EN/SEMUYP3Z2OF_2.html"
+    }
   ]
 }

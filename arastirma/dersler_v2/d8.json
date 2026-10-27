@@ -3,7 +3,10 @@
   "unite": "evren",
   "baslik": "Evrenin Tarihi: İlk Saniyelerden İlk Galaksilere",
   "ozet": "Büyük Patlama'nın ne olduğunu ve ne olmadığını, hangi kanıtlara dayandığını öğreneceksin. Sonra evrenin zaman çizelgesini adım adım izleyeceğiz: ilk saniyeler, ilk çekirdekler, ışığın serbest kaldığı an, karanlık çağ, ilk yıldızlar ve galaksiler, yeniden iyonlaşma ve evrenin 13,8 milyar yıllık yaşının nasıl ölçüldüğü.",
-  "on_bilgi": ["d2", "d7"],
+  "on_bilgi": [
+    "d2",
+    "d7"
+  ],
   "bolumler": [
     {
       "baslik": "Büyük Patlama ne değildir?",
@@ -129,36 +132,166 @@
     }
   ],
   "anahtar_sayilar": [
-    {"deger": "13,797 ± 0,023 milyar yıl (temel); 13,787 ± 0,020 (+BAO)", "aciklama": "Evrenin yaşı (Planck 2018, Tablo 2)", "kaynak_url": "https://arxiv.org/pdf/1807.06209v4"},
-    {"deger": "H0 = 67,4 ± 0,5 km/s/Mpc", "aciklama": "Hubble sabiti (Planck 2018)", "kaynak_url": "https://arxiv.org/abs/1807.06209"},
-    {"deger": "≥10²⁶ kat; 10⁻³³–10⁻³² s", "aciklama": "Şişme sırasındaki büyüme ve sürenin tahmini", "kaynak_url": "https://en.wikipedia.org/wiki/Chronology_of_the_universe"},
-    {"deger": "10⁻⁵ s, ~10¹² K; ~1 s, ~10¹⁰ K", "aciklama": "Proton ve nötronların oluşumu; nötrinoların serbest kalması", "kaynak_url": "https://en.wikipedia.org/wiki/Chronology_of_the_universe"},
-    {"deger": "~20 dakika", "aciklama": "Büyük Patlama çekirdek sentezinin süresi", "kaynak_url": "https://en.wikipedia.org/wiki/Big_Bang_nucleosynthesis"},
-    {"deger": "YP ≈ 0,2454", "aciklama": "Büyük Patlama'da oluşan helyumun kütle oranı (Planck 2018)", "kaynak_url": "https://arxiv.org/pdf/1807.06209v4"},
-    {"deger": "~47.000 yıl (z = 3600)", "aciklama": "Maddenin ışımaya baskın hale geldiği an", "kaynak_url": "https://en.wikipedia.org/wiki/Chronology_of_the_universe"},
-    {"deger": "~378.000 yıl; z = 1100; ~3000 K", "aciklama": "Yeniden birleşme (Wikipedia)", "kaynak_url": "https://en.wikipedia.org/wiki/Recombination_(cosmology)"},
-    {"deger": "380.000 yıl; 13,82 milyar yıl", "aciklama": "Arka plan ışımasının salındığı yaş ve ESA 2013 yaş değeri", "kaynak_url": "https://www.esa.int/Science_Exploration/Space_Science/Planck/Planck_reveals_an_almost_perfect_Universe"},
-    {"deger": "z* ≈ 1090 (1089,92 ± 0,25)", "aciklama": "Son saçılma yüzeyinin kırmızıya kayması (Planck 2018)", "kaynak_url": "https://arxiv.org/pdf/1807.06209v4"},
-    {"deger": "2,72548 ± 0,00057 K", "aciklama": "Kozmik mikrodalga arka plan ışımasının sıcaklığı", "kaynak_url": "https://arxiv.org/abs/0911.1955"},
-    {"deger": "1964–65; 1978", "aciklama": "Penzias ve Wilson'ın keşfi; Nobel ödülü", "kaynak_url": "https://www.nobelprize.org/prizes/physics/1978/summary/"},
-    {"deger": "18 Kasım 1989; 2006", "aciklama": "COBE'nin fırlatılışı; Mather ve Smoot'a Nobel", "kaynak_url": "https://www.nobelprize.org/prizes/physics/2006/press-release/"},
-    {"deger": "z = 14,44; ~280 milyon yıl", "aciklama": "JWST ile doğrulanan MoM-z14 galaksisi (2025)", "kaynak_url": "https://arxiv.org/abs/2505.11263v2"},
-    {"deger": "200 milyon – 1 milyar yıl (z 20 → 6)", "aciklama": "Yeniden iyonlaşma dönemi", "kaynak_url": "https://en.wikipedia.org/wiki/Chronology_of_the_universe"},
-    {"deger": "14,46 ± 0,31 (± ~0,8) milyar yıl", "aciklama": "HD 140283 yıldızının yaşı (Bond ve ark. 2013)", "kaynak_url": "https://arxiv.org/abs/1302.3180"},
-    {"deger": "13,61 ve 13,81 milyar yıl", "aciklama": "En yaşlı küresel kümelerin ortalama yaşı ve buradan evrenin yaşı (Valcin ve ark. 2026)", "kaynak_url": "https://arxiv.org/abs/2603.04872v1"},
-    {"deger": "~46,5 milyar ışık yılı", "aciklama": "Gözlenebilir evrenin yarıçapı", "kaynak_url": "https://en.wikipedia.org/wiki/Observable_universe"}
+    {
+      "deger": "13,797 ± 0,023 milyar yıl (temel); 13,787 ± 0,020 (+BAO)",
+      "aciklama": "Evrenin yaşı (Planck 2018, Tablo 2)",
+      "kaynak_url": "https://arxiv.org/pdf/1807.06209v4",
+      "kid": "d8n0"
+    },
+    {
+      "deger": "H0 = 67,4 ± 0,5 km/s/Mpc",
+      "aciklama": "Hubble sabiti (Planck 2018)",
+      "kaynak_url": "https://arxiv.org/abs/1807.06209",
+      "kid": "d8n1"
+    },
+    {
+      "deger": "≥10²⁶ kat; 10⁻³³–10⁻³² s",
+      "aciklama": "Şişme sırasındaki büyüme ve sürenin tahmini",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Chronology_of_the_universe",
+      "kid": "d8n2"
+    },
+    {
+      "deger": "10⁻⁵ s, ~10¹² K; ~1 s, ~10¹⁰ K",
+      "aciklama": "Proton ve nötronların oluşumu; nötrinoların serbest kalması",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Chronology_of_the_universe",
+      "kid": "d8n3"
+    },
+    {
+      "deger": "~20 dakika",
+      "aciklama": "Büyük Patlama çekirdek sentezinin süresi",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Big_Bang_nucleosynthesis",
+      "kid": "d8n4"
+    },
+    {
+      "deger": "YP ≈ 0,2454",
+      "aciklama": "Büyük Patlama'da oluşan helyumun kütle oranı (Planck 2018)",
+      "kaynak_url": "https://arxiv.org/pdf/1807.06209v4",
+      "kid": "d8n5"
+    },
+    {
+      "deger": "~47.000 yıl (z = 3600)",
+      "aciklama": "Maddenin ışımaya baskın hale geldiği an",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Chronology_of_the_universe",
+      "kid": "d8n6"
+    },
+    {
+      "deger": "~378.000 yıl; z = 1100; ~3000 K",
+      "aciklama": "Yeniden birleşme (Wikipedia)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Recombination_(cosmology)",
+      "kid": "d8n7"
+    },
+    {
+      "deger": "380.000 yıl; 13,82 milyar yıl",
+      "aciklama": "Arka plan ışımasının salındığı yaş ve ESA 2013 yaş değeri",
+      "kaynak_url": "https://www.esa.int/Science_Exploration/Space_Science/Planck/Planck_reveals_an_almost_perfect_Universe",
+      "kid": "d8n8"
+    },
+    {
+      "deger": "z* ≈ 1090 (1089,92 ± 0,25)",
+      "aciklama": "Son saçılma yüzeyinin kırmızıya kayması (Planck 2018)",
+      "kaynak_url": "https://arxiv.org/pdf/1807.06209v4",
+      "kid": "d8n9"
+    },
+    {
+      "deger": "2,72548 ± 0,00057 K",
+      "aciklama": "Kozmik mikrodalga arka plan ışımasının sıcaklığı",
+      "kaynak_url": "https://arxiv.org/abs/0911.1955",
+      "kid": "d8n10"
+    },
+    {
+      "deger": "1964–65; 1978",
+      "aciklama": "Penzias ve Wilson'ın keşfi; Nobel ödülü",
+      "kaynak_url": "https://www.nobelprize.org/prizes/physics/1978/summary/",
+      "kid": "d8n11"
+    },
+    {
+      "deger": "18 Kasım 1989; 2006",
+      "aciklama": "COBE'nin fırlatılışı; Mather ve Smoot'a Nobel",
+      "kaynak_url": "https://www.nobelprize.org/prizes/physics/2006/press-release/",
+      "kid": "d8n12"
+    },
+    {
+      "deger": "z = 14,44; ~280 milyon yıl",
+      "aciklama": "JWST ile doğrulanan MoM-z14 galaksisi (2025)",
+      "kaynak_url": "https://arxiv.org/abs/2505.11263v2",
+      "kid": "d8n13"
+    },
+    {
+      "deger": "200 milyon – 1 milyar yıl (z 20 → 6)",
+      "aciklama": "Yeniden iyonlaşma dönemi",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Chronology_of_the_universe",
+      "kid": "d8n14"
+    },
+    {
+      "deger": "14,46 ± 0,31 (± ~0,8) milyar yıl",
+      "aciklama": "HD 140283 yıldızının yaşı (Bond ve ark. 2013)",
+      "kaynak_url": "https://arxiv.org/abs/1302.3180",
+      "kid": "d8n15"
+    },
+    {
+      "deger": "13,61 ve 13,81 milyar yıl",
+      "aciklama": "En yaşlı küresel kümelerin ortalama yaşı ve buradan evrenin yaşı (Valcin ve ark. 2026)",
+      "kaynak_url": "https://arxiv.org/abs/2603.04872v1",
+      "kid": "d8n16"
+    },
+    {
+      "deger": "~46,5 milyar ışık yılı",
+      "aciklama": "Gözlenebilir evrenin yarıçapı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Observable_universe",
+      "kid": "d8n17"
+    }
   ],
   "sozluk": [
-    {"terim": "Büyük Patlama", "tanim": "Evrenin sıcak ve yoğun bir başlangıç hâlinden genişleyip soğuyarak bugüne evrildiğini anlatan kuram."},
-    {"terim": "Şişme", "tanim": "Evrenin ilk anlarında çok kısa sürede en az 10²⁶ kat büyüdüğü varsayılan, hızlanmış genişleme dönemi."},
-    {"terim": "Büyük Patlama çekirdek sentezi", "tanim": "İlk yaklaşık 20 dakikada hafif çekirdeklerin (helyum, döteryum, lityum) oluştuğu süreç."},
-    {"terim": "Yeniden birleşme", "tanim": "Elektronların protonlarla birleşip nötr atom oluşturduğu ve evrenin ışığa saydam olduğu, yaklaşık 380.000. yıldaki dönem."},
-    {"terim": "Kozmik mikrodalga arka plan ışıması", "tanim": "Evrenin saydamlaştığı anda salınan ve bugün 2,725 kelvinlik mikrodalga ışıma olarak her yönden gelen eski ışık."},
-    {"terim": "Karanlık çağ", "tanim": "Evrenin saydamlaşmasından ilk yıldızların oluşmasına kadar, ışık veren hiçbir kaynağın olmadığı dönem."},
-    {"terim": "Yeniden iyonlaşma", "tanim": "İlk yıldız ve galaksilerin ışığının nötr hidrojeni yeniden iyonlaştırdığı, yaklaşık 200 milyon ile 1 milyar yıl arasındaki dönem."},
-    {"terim": "Hubble zamanı", "tanim": "Hubble sabitinin tersi; genişleme hiç değişmeseydi evrenin yaşı ne olurdu sorusunun cevabı."},
-    {"terim": "Gözlenebilir evren", "tanim": "Işığının bize ulaşmaya zaman bulduğu, yarıçapı yaklaşık 46,5 milyar ışık yılı olan evren bölümü."},
-    {"terim": "Kırmızıya kayma (z)", "tanim": "Bir ışığın dalga boyunun yayıldığı andaki değerine göre kesirli olarak ne kadar uzadığını gösteren sayı."}
+    {
+      "terim": "Büyük Patlama",
+      "tanim": "Evrenin sıcak ve yoğun bir başlangıç hâlinden genişleyip soğuyarak bugüne evrildiğini anlatan kuram.",
+      "kid": "d8t0"
+    },
+    {
+      "terim": "Şişme",
+      "tanim": "Evrenin ilk anlarında çok kısa sürede en az 10²⁶ kat büyüdüğü varsayılan, hızlanmış genişleme dönemi.",
+      "kid": "d8t1"
+    },
+    {
+      "terim": "Büyük Patlama çekirdek sentezi",
+      "tanim": "İlk yaklaşık 20 dakikada hafif çekirdeklerin (helyum, döteryum, lityum) oluştuğu süreç.",
+      "kid": "d8t2"
+    },
+    {
+      "terim": "Yeniden birleşme",
+      "tanim": "Elektronların protonlarla birleşip nötr atom oluşturduğu ve evrenin ışığa saydam olduğu, yaklaşık 380.000. yıldaki dönem.",
+      "kid": "d8t3"
+    },
+    {
+      "terim": "Kozmik mikrodalga arka plan ışıması",
+      "tanim": "Evrenin saydamlaştığı anda salınan ve bugün 2,725 kelvinlik mikrodalga ışıma olarak her yönden gelen eski ışık.",
+      "kid": "d8t4"
+    },
+    {
+      "terim": "Karanlık çağ",
+      "tanim": "Evrenin saydamlaşmasından ilk yıldızların oluşmasına kadar, ışık veren hiçbir kaynağın olmadığı dönem.",
+      "kid": "d8t5"
+    },
+    {
+      "terim": "Yeniden iyonlaşma",
+      "tanim": "İlk yıldız ve galaksilerin ışığının nötr hidrojeni yeniden iyonlaştırdığı, yaklaşık 200 milyon ile 1 milyar yıl arasındaki dönem.",
+      "kid": "d8t6"
+    },
+    {
+      "terim": "Hubble zamanı",
+      "tanim": "Hubble sabitinin tersi; genişleme hiç değişmeseydi evrenin yaşı ne olurdu sorusunun cevabı.",
+      "kid": "d8t7"
+    },
+    {
+      "terim": "Gözlenebilir evren",
+      "tanim": "Işığının bize ulaşmaya zaman bulduğu, yarıçapı yaklaşık 46,5 milyar ışık yılı olan evren bölümü.",
+      "kid": "d8t8"
+    },
+    {
+      "terim": "Kırmızıya kayma (z)",
+      "tanim": "Bir ışığın dalga boyunun yayıldığı andaki değerine göre kesirli olarak ne kadar uzadığını gösteren sayı.",
+      "kid": "d8t9"
+    }
   ],
   "defter_notu": [
     "Büyük Patlama = boşlukta patlama değil, her yerde genişleme; kökeni değil, sıcak-yoğun hâlden evrimi anlatır.",
@@ -173,38 +306,140 @@
     "Gözlenebilir evrenin yarıçapı ~46,5 milyar ışık yılı; evrenin tamamı sonsuz olabilir."
   ],
   "sorular": [
-    {"soru": "Büyük Patlama'yı uzayın bir noktasında patlayan bomba gibi düşünmek neden yanlıştır?", "cevap": "Çünkü genişleme tek bir noktadan dışarı doğru değil, her yerde aynı anda olur ve evren bir şeyin içine doğru büyümez. Evrenin bir merkezi ya da kenarı yoktur; her gözlemci galaksilerin kendisinden uzaklaştığını görür."},
-    {"soru": "Büyük Patlama kuramının üç ana kanıtı nedir?", "cevap": "Evrenin Hubble-Lemaître yasasına uyan genişlemesi, kozmik mikrodalga arka plan ışıması ve Büyük Patlama çekirdek sentezinde oluşan hafif elementlerin (özellikle helyumun) bolluğu."},
-    {"soru": "Evrendeki ağır elementler (karbon, demir) neden Büyük Patlama'da oluşmadı?", "cevap": "Çekirdek sentezi yalnızca ilk yaklaşık 20 dakika sürdü; sonra sıcaklık ve yoğunluk füzyon için fazla düştü. Bu kısa sürede yalnızca hafif çekirdekler oluşabildi; ağır elementler çok sonra yıldızlarda üretildi."},
-    {"soru": "Arka plan ışıması yaklaşık 3000 K'lik gazdan salındığı halde bugün neden 2,7 K ölçülüyor?", "cevap": "Evren o zamandan beri yaklaşık 1090 kat genişledi; ışığın dalga boyu aynı oranda uzadı ve sıcaklığı aynı oranda düştü: 3000 / 1091 ≈ 2,75 K."},
-    {"soru": "Kırmızıya kayması z = 9 olan bir galaksinin ışığı yola çıktığında galaksiler arası uzaklıklar bugünkünün kaçta biriydi ve arka plan ışımasının sıcaklığı kaç kelvindi?", "cevap": "1 + z = 10, yani uzaklıklar bugünkünün onda biriydi. Sıcaklık T = 2,725 × 10 ≈ 27 K."},
-    {"soru": "Karanlık çağ neden karanlıktı ve nasıl sona erdi?", "cevap": "Evren saydamlaştıktan sonra uzun süre hiç yıldız yoktu; arka plan ışıması da soğuyarak görünür ışıktan uzaklaşmıştı. İlk yıldızlar ve galaksiler yanınca ışık geri geldi ve onların morötesi ışığı gazı yeniden iyonlaştırdı."},
-    {"soru": "H0 = 73 km/s/Mpc olsaydı Hubble zamanı kaç milyar yıl olurdu?", "cevap": "977,8 / 73 ≈ 13,4 milyar yıl. Hubble sabiti büyüdükçe Hubble zamanı kısalır."},
-    {"soru": "HD 140283'ün yaşı 14,46 milyar yıl bulunmuşsa bu evrenin 13,8 milyar yaşında olmasıyla çelişir mi?", "cevap": "Hayır. Ölçümün toplam belirsizliği yaklaşık ± 0,8 milyar yıldır; 13,8 bu aralığın içinde kalır. Yazarlar da hata payları içinde bir çelişki olmadığını belirtir."},
-    {"soru": "Evren 13,8 milyar yaşındayken gözlenebilir evrenin yarıçapı neden 46,5 milyar ışık yılı?", "cevap": "Çünkü ışık yoldayken evren genişlemeye devam etti. En eski ışığı salan bölgeler bugün, ışığın yol aldığı süreye karşılık gelen uzaklıktan çok daha uzaktadır."}
+    {
+      "soru": "Büyük Patlama'yı uzayın bir noktasında patlayan bomba gibi düşünmek neden yanlıştır?",
+      "cevap": "Çünkü genişleme tek bir noktadan dışarı doğru değil, her yerde aynı anda olur ve evren bir şeyin içine doğru büyümez. Evrenin bir merkezi ya da kenarı yoktur; her gözlemci galaksilerin kendisinden uzaklaştığını görür.",
+      "kid": "d8s0"
+    },
+    {
+      "soru": "Büyük Patlama kuramının üç ana kanıtı nedir?",
+      "cevap": "Evrenin Hubble-Lemaître yasasına uyan genişlemesi, kozmik mikrodalga arka plan ışıması ve Büyük Patlama çekirdek sentezinde oluşan hafif elementlerin (özellikle helyumun) bolluğu.",
+      "kid": "d8s1"
+    },
+    {
+      "soru": "Evrendeki ağır elementler (karbon, demir) neden Büyük Patlama'da oluşmadı?",
+      "cevap": "Çekirdek sentezi yalnızca ilk yaklaşık 20 dakika sürdü; sonra sıcaklık ve yoğunluk füzyon için fazla düştü. Bu kısa sürede yalnızca hafif çekirdekler oluşabildi; ağır elementler çok sonra yıldızlarda üretildi.",
+      "kid": "d8s2"
+    },
+    {
+      "soru": "Arka plan ışıması yaklaşık 3000 K'lik gazdan salındığı halde bugün neden 2,7 K ölçülüyor?",
+      "cevap": "Evren o zamandan beri yaklaşık 1090 kat genişledi; ışığın dalga boyu aynı oranda uzadı ve sıcaklığı aynı oranda düştü: 3000 / 1091 ≈ 2,75 K.",
+      "kid": "d8s3"
+    },
+    {
+      "soru": "Kırmızıya kayması z = 9 olan bir galaksinin ışığı yola çıktığında galaksiler arası uzaklıklar bugünkünün kaçta biriydi ve arka plan ışımasının sıcaklığı kaç kelvindi?",
+      "cevap": "1 + z = 10, yani uzaklıklar bugünkünün onda biriydi. Sıcaklık T = 2,725 × 10 ≈ 27 K.",
+      "kid": "d8s4"
+    },
+    {
+      "soru": "Karanlık çağ neden karanlıktı ve nasıl sona erdi?",
+      "cevap": "Evren saydamlaştıktan sonra uzun süre hiç yıldız yoktu; arka plan ışıması da soğuyarak görünür ışıktan uzaklaşmıştı. İlk yıldızlar ve galaksiler yanınca ışık geri geldi ve onların morötesi ışığı gazı yeniden iyonlaştırdı.",
+      "kid": "d8s5"
+    },
+    {
+      "soru": "H0 = 73 km/s/Mpc olsaydı Hubble zamanı kaç milyar yıl olurdu?",
+      "cevap": "977,8 / 73 ≈ 13,4 milyar yıl. Hubble sabiti büyüdükçe Hubble zamanı kısalır.",
+      "kid": "d8s6"
+    },
+    {
+      "soru": "HD 140283'ün yaşı 14,46 milyar yıl bulunmuşsa bu evrenin 13,8 milyar yaşında olmasıyla çelişir mi?",
+      "cevap": "Hayır. Ölçümün toplam belirsizliği yaklaşık ± 0,8 milyar yıldır; 13,8 bu aralığın içinde kalır. Yazarlar da hata payları içinde bir çelişki olmadığını belirtir.",
+      "kid": "d8s7"
+    },
+    {
+      "soru": "Evren 13,8 milyar yaşındayken gözlenebilir evrenin yarıçapı neden 46,5 milyar ışık yılı?",
+      "cevap": "Çünkü ışık yoldayken evren genişlemeye devam etti. En eski ışığı salan bölgeler bugün, ışığın yol aldığı süreye karşılık gelen uzaklıktan çok daha uzaktadır.",
+      "kid": "d8s8"
+    }
   ],
   "kaynaklar": [
-    {"ad": "Planck Collaboration 2018, Planck 2018 results VI. Cosmological parameters, arXiv:1807.06209", "url": "https://arxiv.org/abs/1807.06209"},
-    {"ad": "Planck 2018 VI tam metin (Tablo 2)", "url": "https://arxiv.org/pdf/1807.06209v4"},
-    {"ad": "Fixsen 2009, The Temperature of the Cosmic Microwave Background, arXiv:0911.1955", "url": "https://arxiv.org/abs/0911.1955"},
-    {"ad": "ESA, Planck reveals an almost perfect Universe (2013)", "url": "https://www.esa.int/Science_Exploration/Space_Science/Planck/Planck_reveals_an_almost_perfect_Universe"},
-    {"ad": "ESA basın bülteni, Planck reveals an almost perfect Universe", "url": "https://www.esa.int/Newsroom/Press_Releases/Planck_reveals_an_almost_perfect_Universe"},
-    {"ad": "Nobel Fizik Ödülü 1978 özeti", "url": "https://www.nobelprize.org/prizes/physics/1978/summary/"},
-    {"ad": "Nobel Fizik Ödülü 2006 basın bülteni", "url": "https://www.nobelprize.org/prizes/physics/2006/press-release/"},
-    {"ad": "IAU iau1812 basın bülteni (2018)", "url": "https://iau.org/news/pressreleases/detail/iau1812"},
-    {"ad": "Cambridge Üniversitesi, Planck reveals first stars were born late (2015)", "url": "https://www.cam.ac.uk/research/news/planck-reveals-first-stars-were-born-late"},
-    {"ad": "A Cosmic Miracle: A Remarkably Luminous Galaxy at z = 14.44 Confirmed with JWST (2025), arXiv:2505.11263", "url": "https://arxiv.org/abs/2505.11263v2"},
-    {"ad": "Bond ve ark. 2013, HD 140283, arXiv:1302.3180", "url": "https://arxiv.org/abs/1302.3180"},
-    {"ad": "Valcin ve ark. 2026, The Age of the Universe with Globular Clusters IV, arXiv:2603.04872", "url": "https://arxiv.org/abs/2603.04872v1"},
-    {"ad": "Wikipedia, Big Bang", "url": "https://en.wikipedia.org/wiki/Big_Bang"},
-    {"ad": "Wikipedia, Chronology of the universe", "url": "https://en.wikipedia.org/wiki/Chronology_of_the_universe"},
-    {"ad": "Wikipedia, Big Bang nucleosynthesis", "url": "https://en.wikipedia.org/wiki/Big_Bang_nucleosynthesis"},
-    {"ad": "Wikipedia, Recombination (cosmology)", "url": "https://en.wikipedia.org/wiki/Recombination_(cosmology)"},
-    {"ad": "Wikipedia, Cosmic microwave background", "url": "https://en.wikipedia.org/wiki/Cosmic_microwave_background"},
-    {"ad": "Wikipedia, Cosmic Background Explorer", "url": "https://en.wikipedia.org/wiki/Cosmic_Background_Explorer"},
-    {"ad": "Wikipedia, Hubble's law", "url": "https://en.wikipedia.org/wiki/Hubble%27s_law"},
-    {"ad": "Wikipedia, Expansion of the universe", "url": "https://en.wikipedia.org/wiki/Expansion_of_the_universe"},
-    {"ad": "Wikipedia, Redshift", "url": "https://en.wikipedia.org/wiki/Redshift"},
-    {"ad": "Wikipedia, Observable universe", "url": "https://en.wikipedia.org/wiki/Observable_universe"}
+    {
+      "ad": "Planck Collaboration 2018, Planck 2018 results VI. Cosmological parameters, arXiv:1807.06209",
+      "url": "https://arxiv.org/abs/1807.06209"
+    },
+    {
+      "ad": "Planck 2018 VI tam metin (Tablo 2)",
+      "url": "https://arxiv.org/pdf/1807.06209v4"
+    },
+    {
+      "ad": "Fixsen 2009, The Temperature of the Cosmic Microwave Background, arXiv:0911.1955",
+      "url": "https://arxiv.org/abs/0911.1955"
+    },
+    {
+      "ad": "ESA, Planck reveals an almost perfect Universe (2013)",
+      "url": "https://www.esa.int/Science_Exploration/Space_Science/Planck/Planck_reveals_an_almost_perfect_Universe"
+    },
+    {
+      "ad": "ESA basın bülteni, Planck reveals an almost perfect Universe",
+      "url": "https://www.esa.int/Newsroom/Press_Releases/Planck_reveals_an_almost_perfect_Universe"
+    },
+    {
+      "ad": "Nobel Fizik Ödülü 1978 özeti",
+      "url": "https://www.nobelprize.org/prizes/physics/1978/summary/"
+    },
+    {
+      "ad": "Nobel Fizik Ödülü 2006 basın bülteni",
+      "url": "https://www.nobelprize.org/prizes/physics/2006/press-release/"
+    },
+    {
+      "ad": "IAU iau1812 basın bülteni (2018)",
+      "url": "https://iau.org/news/pressreleases/detail/iau1812"
+    },
+    {
+      "ad": "Cambridge Üniversitesi, Planck reveals first stars were born late (2015)",
+      "url": "https://www.cam.ac.uk/research/news/planck-reveals-first-stars-were-born-late"
+    },
+    {
+      "ad": "A Cosmic Miracle: A Remarkably Luminous Galaxy at z = 14.44 Confirmed with JWST (2025), arXiv:2505.11263",
+      "url": "https://arxiv.org/abs/2505.11263v2"
+    },
+    {
+      "ad": "Bond ve ark. 2013, HD 140283, arXiv:1302.3180",
+      "url": "https://arxiv.org/abs/1302.3180"
+    },
+    {
+      "ad": "Valcin ve ark. 2026, The Age of the Universe with Globular Clusters IV, arXiv:2603.04872",
+      "url": "https://arxiv.org/abs/2603.04872v1"
+    },
+    {
+      "ad": "Wikipedia, Big Bang",
+      "url": "https://en.wikipedia.org/wiki/Big_Bang"
+    },
+    {
+      "ad": "Wikipedia, Chronology of the universe",
+      "url": "https://en.wikipedia.org/wiki/Chronology_of_the_universe"
+    },
+    {
+      "ad": "Wikipedia, Big Bang nucleosynthesis",
+      "url": "https://en.wikipedia.org/wiki/Big_Bang_nucleosynthesis"
+    },
+    {
+      "ad": "Wikipedia, Recombination (cosmology)",
+      "url": "https://en.wikipedia.org/wiki/Recombination_(cosmology)"
+    },
+    {
+      "ad": "Wikipedia, Cosmic microwave background",
+      "url": "https://en.wikipedia.org/wiki/Cosmic_microwave_background"
+    },
+    {
+      "ad": "Wikipedia, Cosmic Background Explorer",
+      "url": "https://en.wikipedia.org/wiki/Cosmic_Background_Explorer"
+    },
+    {
+      "ad": "Wikipedia, Hubble's law",
+      "url": "https://en.wikipedia.org/wiki/Hubble%27s_law"
+    },
+    {
+      "ad": "Wikipedia, Expansion of the universe",
+      "url": "https://en.wikipedia.org/wiki/Expansion_of_the_universe"
+    },
+    {
+      "ad": "Wikipedia, Redshift",
+      "url": "https://en.wikipedia.org/wiki/Redshift"
+    },
+    {
+      "ad": "Wikipedia, Observable universe",
+      "url": "https://en.wikipedia.org/wiki/Observable_universe"
+    }
   ]
 }

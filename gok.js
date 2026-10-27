@@ -194,6 +194,56 @@
     return enIyi;
   }
 
+  /* ---- Gezegen parlaklığı (kadir) ----
+     Mallama ve Hilton 2018, "Computing apparent planetary magnitudes for The Astronomical Almanac",
+     Astronomy and Computing 25, 10–24 (arXiv:1808.01973), denklem 2–17; JPL Horizons ve Astronomical Almanac
+     bu modeli kullanır. Katsayılar makaleden ve Skyfield 1.55 magnitudelib uygulamasından karşılaştırıldı.
+     Mars'ın dönme/mevsim düzeltmesi (±0,06 kadir) Skyfield'deki gibi dahil değil. Satürn halkalı model α ≤ 6,5°
+     için geçerli (Dünya'dan bakınca hep öyle); geçerlilik dışında Astronomy Engine'in değeri kullanılır. */
+  const SATURN_KUTUP = [0.08547883, 0.07323576, 0.99364475];   // IAU kutbu α0 = 40,589°, δ0 = 83,537° (J2000)
+  const URANUS_KUTUP = [-0.21199958, -0.94155916, -0.26176809]; // IAU kutbu α0 = 257,311°, δ0 = −15,175°
+  const uzun = v => Math.hypot(v[0], v[1], v[2]);
+  const aciArasi = (a, b) => Math.acos(Math.max(-1, Math.min(1, (a[0] * b[0] + a[1] * b[1] + a[2] * b[2]) / uzun(a) / uzun(b)))) / DER;
+  function gezegenKadir(c, t) {
+    const yedek = () => A.Illumination(c, t).mag;
+    try {
+      const g = A.GeoVector(c, t, true), gv = [g.x, g.y, g.z];
+      /* Işık süresi kadar önceki güneş merkezli konum (gözlenen an) */
+      const h = A.HelioVector(c, new Date(t.getTime() - uzun(gv) * 499.004784e3)), hv = [h.x, h.y, h.z];
+      const r = uzun(hv), d = uzun(gv), a = aciArasi(hv, gv);
+      const L = 5 * Math.log10(r * d);
+      switch (c) {
+        case 'Mercury': return L - 0.613 + 6.3280e-02 * a - 1.6336e-03 * a ** 2 + 3.3644e-05 * a ** 3 - 3.4265e-07 * a ** 4 + 1.6893e-09 * a ** 5 - 3.0334e-12 * a ** 6;
+        case 'Venus': return a <= 163.7 ? L - 4.384 - 1.044e-03 * a + 3.687e-04 * a ** 2 - 2.814e-06 * a ** 3 + 8.938e-09 * a ** 4
+          : L + 236.05828 - 2.81914 * a + 8.39034e-03 * a ** 2;
+        case 'Mars': return a <= 50 ? L - 1.601 + 0.02267 * a - 0.0001302 * a ** 2 : L - 0.367 - 0.02573 * a + 0.0003445 * a ** 2;
+        case 'Jupiter': {
+          if (a <= 12) return L - 9.395 - 3.7e-04 * a + 6.16e-04 * a ** 2;
+          const x = a / 180;
+          return L - 9.428 - 2.5 * Math.log10(1 - 1.507 * x - 0.363 * x ** 2 - 0.062 * x ** 3 + 2.809 * x ** 4 - 1.876 * x ** 5);
+        }
+        case 'Saturn': {
+          /* β: Güneş'in ve Dünya'nın Satürn merkezli enlemlerinin geometrik ortalaması; işaretleri zıtsa 0 */
+          const bS = aciArasi(SATURN_KUTUP, hv) - 90, bE = aciArasi(SATURN_KUTUP, gv) - 90;
+          const b = bS * bE >= 0 ? Math.sqrt(bS * bE) : 0;
+          if (a > 6.5 || b > 27) return yedek();
+          const sb = Math.sin(b * DER);
+          return L - 8.914 - 1.825 * sb + 0.026 * a - 0.378 * sb * Math.exp(-2.25 * a);
+        }
+        case 'Uranus': {
+          const f = (Math.abs(aciArasi(URANUS_KUTUP, hv) - 90) + Math.abs(aciArasi(URANUS_KUTUP, gv) - 90)) / 2;
+          return L - 7.110 - 8.4e-04 * f + (a > 3.1 ? 6.587e-3 * a + 1.045e-4 * a ** 2 : 0);
+        }
+        case 'Neptune': {
+          const yil = 2000 + (t.getTime() - Date.UTC(2000, 0, 1, 12)) / (365.25 * 86400e3);
+          const m0 = Math.max(-7.00, Math.min(-6.89, -6.89 - 0.0054 * (yil - 1980)));
+          return L + m0 + (a > 1.9 ? 7.944e-3 * a + 9.617e-5 * a ** 2 : 0);
+        }
+      }
+    } catch (h) { /* aşağıda yedek */ }
+    return yedek();
+  }
+
   /* ---- Gezegenler: bu gece ---- */
   function gezegenlerBuGece(gun, gzl, gece) {
     const simdi = new Date(gun);
@@ -203,7 +253,6 @@
     /* Kutup gecesi (Güneş hiç doğmuyor): bütün gün */
     if (!gece.batis && !gece.dogus && cisimAltAz('Sun', gece.ogle, gzl).alt < 0) { bas = gece.ogle; son = new Date(gece.ogle.getTime() + 86400e3); }
     return GEZEGENLER.map(c => {
-      const isik = A.Illumination(c, simdi);
       const k = cisimAltAz(c, simdi, gzl);
       const tepe = enYuksek(d => cisimAltAz(c, d, gzl), bas, son, 10);
       const ogle = gece.ogle;
@@ -214,14 +263,14 @@
       return {
         cisim: c,
         ad: TR_AD[c],
-        kadir: isik.mag,
+        kadir: gezegenKadir(c, simdi),
         alt: k.alt, az: k.az, ra: k.ra, dec: k.dec,
         takimyildiz: takimyildiz(c, simdi, gzl),
         tepe,
         gorunur: !!(tepe && tepe.alt >= 10),
         dogus, batis,
         gunesAcisi: uzanim,
-        ciplakGoz: isik.mag <= 6
+        ciplakGoz: gezegenKadir(c, simdi) <= 6
       };
     });
   }
@@ -290,9 +339,51 @@
     const b = gunNo(ba, bg), s = gunNo(sa, sg);
     return b <= s ? (bugun >= b && bugun <= s) : (bugun >= b || bugun <= s);
   }
+  /* ---- Meteor takvimi: verideki son yıldan sonrası ----
+     IMO zirveyi Güneş boylamıyla (λ☉, J2000 ekinoksu) verir; yağmurun zirvesi her yıl aşağı yukarı aynı λ☉'dadır.
+     Verinin bittiği yıldan sonraki yıllar için zirve, son yılın λ☉ değerinden hesaplanır (Draconid gibi düzensiz
+     yağmurların gücü değişebilir; IMO o yılın takvimini yayımlayınca veri yenilenmeli). Etkinlik aralığı aynı
+     ay-güne kaydırılır. */
+  function gunesBoylamJ2000(t) {
+    const v = A.GeoVector('Sun', t, true), e = 23.4392911 * DER;   // J2000 ekliptiğinin eğikliği
+    return ((Math.atan2(v.y * Math.cos(e) + v.z * Math.sin(e), v.x) / DER) % 360 + 360) % 360;
+  }
+  function boylamAni(lam, yaklasik) {
+    const f = t => ((gunesBoylamJ2000(new Date(t)) - lam + 540) % 360) - 180;
+    let a = yaklasik.getTime() - 6 * 86400e3, b = yaklasik.getTime() + 6 * 86400e3;
+    if (f(a) * f(b) > 0) return null;
+    for (let i = 0; i < 40; i++) { const m = (a + b) / 2; if (f(a) * f(m) <= 0) b = m; else a = m; }
+    return new Date(Math.round((a + b) / 2 / 60e3) * 60e3);
+  }
+  const meteorOnbellek = new Map();
+  function meteorTakvimi(veri, zaman) {
+    const ls = veri.yagmurlar;
+    const sonYil = Math.max(...ls.map(m => new Date(m.zirve_utc).getUTCFullYear()));
+    const hedefYil = new Date(zaman).getUTCFullYear() + 1;
+    if (hedefYil <= sonYil) return ls;
+    const an = sonYil + '|' + hedefYil;
+    if (meteorOnbellek.has(an)) return meteorOnbellek.get(an);
+    const sonlar = ls.filter(m => new Date(m.zirve_utc).getUTCFullYear() === sonYil && m.gunes_boylami != null);
+    const kaydir = (s, k) => { const d = new Date(s + 'T00:00:00Z'); d.setUTCFullYear(d.getUTCFullYear() + k); return d.toISOString().slice(0, 10); };
+    const ek = [];
+    for (let y = sonYil + 1; y <= hedefYil; y++) {
+      sonlar.forEach(m => {
+        const k = y - sonYil, z0 = new Date(m.zirve_utc);
+        const yak = new Date(z0); yak.setUTCFullYear(z0.getUTCFullYear() + k);
+        const zirve = boylamAni(m.gunes_boylami, yak);
+        if (!zirve) return;
+        ek.push(Object.assign({}, m, { zirve_utc: zirve.toISOString().replace('.000Z', 'Z'), baslangic: kaydir(m.baslangic, k), bitis: kaydir(m.bitis, k), tahmini: sonYil }));
+      });
+    }
+    const sonuc = ls.concat(ek);
+    meteorOnbellek.set(an, sonuc);
+    return sonuc;
+  }
+
   /* Radyantın en yüksek konumu: etkin yağmurda bu gecenin, değilse zirve gecesinin karanlık saatlerinde */
   const zirveGecesi = {};
-  function meteorDurumu(liste, zaman, gzl, gece) {
+  function meteorDurumu(liste, zaman, gzl, gece, secenek) {
+    const zirveHesapla = !secenek || secenek.zirveGecesi !== false;
     const orn = gece && !gece.karanlikYok ? ornekler(gece.karanlikBas, gece.karanlikSon, 20, gzl) : [];
     return liste.map(m => {
       const zirve = new Date(m.zirve_utc);
@@ -301,7 +392,8 @@
       let radyantTepe = null, radyantGece = aktif ? 'bu gece' : 'zirve gecesi';
       if (m.radyant_ra != null) {
         let o = orn;
-        if (!aktif) {
+        if (!aktif && !zirveHesapla) o = [];
+        else if (!aktif) {
           const an = m.zirve_utc + '|' + gzl.latitude.toFixed(2) + '|' + gzl.longitude.toFixed(2);
           if (!zirveGecesi[an]) { const g = geceAraligi(new Date(zirve.getTime() - 12 * 3600e3), gzl); zirveGecesi[an] = g.karanlikYok ? [] : ornekler(g.karanlikBas, g.karanlikSon, 20, gzl); }
           o = zirveGecesi[an];
@@ -408,7 +500,7 @@
     A, DER, GEZEGENLER, TR_AD, YON_UZUN,
     gozlemci, yon, ufukMatrisi, birimVektor, ufkaCevir, sabitAltAz, cisimAltAz, takimyildiz,
     yerelOgle, geceAraligi, ayDurumu, ayCeyrekleri, evreAdi, enYuksek, ornekler, enYuksekSabit, gezegenlerBuGece, hedeflerBuGece,
-    meteorDurumu, aktifMi, olaylar, jupiterUydulari, jupiterYaricap
+    meteorDurumu, meteorTakvimi, gunesBoylamJ2000, aktifMi, olaylar, gezegenKadir, jupiterUydulari, jupiterYaricap
   };
   if (typeof module !== 'undefined' && module.exports) module.exports = Gok;
   else kok.Gok = Gok;

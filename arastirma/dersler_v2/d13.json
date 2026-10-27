@@ -4,7 +4,10 @@
   "yeni": true,
   "baslik": "Ötegezegenler: Başka Güneşlerin Dünyaları",
   "ozet": "Güneş dışındaki yıldızların çevresinde dolanan gezegenlerin nasıl bulunduğunu öğreniyorsun: yıldızın yalpalaması, önünden geçen gezegenin gölgesi, ışığı büken kütleçekim ve doğrudan fotoğraf. Ardından bugünkü sayımı, gezegen türlerini, yaşanabilir bölgeyi, TRAPPIST-1 sistemini ve Webb'in uzak gezegenlerin havasını nasıl okuduğunu görüyorsun.",
-  "on_bilgi": ["d2", "d3"],
+  "on_bilgi": [
+    "d2",
+    "d3"
+  ],
   "bolumler": [
     {
       "baslik": "Başka güneşlerin gezegenleri: neden bu kadar geç bulduk?",
@@ -130,67 +133,125 @@
     {
       "deger": "6.147 (12 Mart 2026)",
       "aciklama": "NASA Exoplanet Archive'daki doğrulanmış ötegezegen sayısı; arşiv her hafta güncelleniyor",
-      "kaynak_url": "https://vmexoweb2.ipac.caltech.edu/docs/exonews_archive.html"
+      "kaynak_url": "https://vmexoweb2.ipac.caltech.edu/docs/exonews_archive.html",
+      "kid": "d13n0"
     },
     {
       "deger": "6.000 (Eylül 2025); 8.000'den fazla aday",
       "aciklama": "Doğrulanmış ötegezegen eşiği ve doğrulama bekleyen adaylar",
-      "kaynak_url": "https://www.ipac.caltech.edu/news/the-nasa-exoplanet-archive-hits-6-000-planets"
+      "kaynak_url": "https://www.ipac.caltech.edu/news/the-nasa-exoplanet-archive-hits-6-000-planets",
+      "kid": "d13n1"
     },
     {
       "deger": "4,23 gün; 0,052 AB; en az 0,61 Jüpiter kütlesi",
       "aciklama": "51 Pegasi b'nin dolanma süresi, yörünge yarı büyük ekseni ve en az kütlesi",
-      "kaynak_url": "https://en.wikipedia.org/wiki/51_Pegasi"
+      "kaynak_url": "https://en.wikipedia.org/wiki/51_Pegasi",
+      "kid": "d13n2"
     },
     {
       "deger": "12,4 m/s (Jüpiter) · 0,1 m/s (Dünya) · 0,3 m/s (HARPS sınırı)",
       "aciklama": "Gezegenlerin Güneş'e kazandırdığı dikine hız salınımı ve HARPS'ın ölçebildiği en küçük kayma",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Doppler_spectroscopy"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Doppler_spectroscopy",
+      "kid": "d13n3"
     },
     {
       "deger": "≈ %1 (Jüpiter) · ≈ %0,0084 (Dünya)",
       "aciklama": "Güneş'in önünden geçişte ışığın kesilen kesri; 695.700, 69.911 ve 6.371 km'lik NASA yarıçaplarından hesap",
-      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html?level=1"
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html?level=1",
+      "kid": "d13n4"
     },
     {
       "deger": "≈ %75 (dörtte üç)",
       "aciklama": "Geçiş yöntemiyle bulunan ötegezegenlerin payı (2024 başı: 5.557 gezegenin 4.146'sı)",
-      "kaynak_url": "https://www.schoolsobservatory.org/learn/space/exoplanets/detection-methods"
+      "kaynak_url": "https://www.schoolsobservatory.org/learn/space/exoplanets/detection-methods",
+      "kid": "d13n5"
     },
     {
       "deger": "0,99–1,67 AB",
       "aciklama": "Güneş'in yaşanabilir bölgesi için Kopparapu ve arkadaşlarının (2013) tahmini",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Habitable_zone"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Habitable_zone",
+      "kid": "d13n6"
     },
     {
       "deger": "7 gezegen; 39–40 ışık yılı; e, f, g yaşanabilir bölgede",
       "aciklama": "TRAPPIST-1 sistemi (Gillon ve ark., Nature, Şubat 2017)",
-      "kaynak_url": "https://www.cam.ac.uk/research/news/newly-discovered-planets-could-have-water-on-their-surfaces"
+      "kaynak_url": "https://www.cam.ac.uk/research/news/newly-discovered-planets-could-have-water-on-their-surfaces",
+      "kid": "d13n7"
     },
     {
       "deger": "≈ 500 K (≈ 230 °C)",
       "aciklama": "Webb/MIRI ile ölçülen TRAPPIST-1 b gündüz sıcaklığı; atmosfersiz kayayla uyumlu",
-      "kaynak_url": "https://esawebb.org/news/weic2309/"
+      "kaynak_url": "https://esawebb.org/news/weic2309/",
+      "kid": "d13n8"
     },
     {
       "deger": "4,1–4,6 mikrometre",
       "aciklama": "WASP-39 b'nin geçiş tayfında karbondioksit tümseğinin dalga boyu aralığı (Webb/NIRSpec, 2022)",
-      "kaynak_url": "https://www.jpl.nasa.gov/news/nasas-webb-detects-carbon-dioxide-in-exoplanet-atmosphere/"
+      "kaynak_url": "https://www.jpl.nasa.gov/news/nasas-webb-detects-carbon-dioxide-in-exoplanet-atmosphere/",
+      "kid": "d13n9"
     }
   ],
   "sozluk": [
-    { "terim": "Ötegezegen", "tanim": "Güneş'ten başka bir yıldızın ya da yıldız kalıntısının çevresinde dolanan gezegen." },
-    { "terim": "Dikine hız yöntemi", "tanim": "Gezegenin çekimiyle yalpalayan yıldızın tayf çizgilerindeki ritmik Doppler kaymasını ölçerek gezegen bulma yöntemi." },
-    { "terim": "Geçiş yöntemi", "tanim": "Gezegen yıldızının önünden geçerken yıldız ışığında oluşan düzenli, küçük düşüşleri ölçerek gezegen bulma yöntemi." },
-    { "terim": "Doğrudan görüntüleme", "tanim": "Yıldızın ışığını koronagrafla bastırıp yanındaki gezegenin kendisini fotoğraflama yöntemi." },
-    { "terim": "Kütleçekimsel mikromercek", "tanim": "Öndeki yıldızın ve gezegeninin kütleçekiminin, arkadaki bir yıldızın ışığını büküp kısa süreliğine parlatmasıyla gezegen bulma yöntemi." },
-    { "terim": "Astrometri", "tanim": "Yıldızların gökteki konumlarını çok hassas ölçme; ötegezegen aramada yıldızın yana doğru küçük salınımını arar." },
-    { "terim": "Sıcak Jüpiter", "tanim": "Yıldızına çok yakın dolanan, birkaç günlük yörüngesi ve binlerce derecelik sıcaklığı olan gaz devi." },
-    { "terim": "Süper Dünya", "tanim": "Kütlesi Dünya'nınkinin yaklaşık 2–10 katı olup Neptün'den küçük kalan gezegen." },
-    { "terim": "Mini Neptün", "tanim": "Dünya'dan büyük, Neptün'den küçük, kalın gaz zarflı olduğu düşünülen gezegen." },
-    { "terim": "Yaşanabilir bölge", "tanim": "Bir yıldızın çevresinde, gezegen yüzeyinde sıvı suyun bulunabileceği kadar ılık uzaklık kuşağı." },
-    { "terim": "Gelgit kilidi", "tanim": "Bir cismin dönme ve dolanma sürelerinin eşitlenip eşine hep aynı yüzünü göstermesi." },
-    { "terim": "Geçiş tayfı", "tanim": "Geçiş sırasında gezegen atmosferinden süzülen yıldız ışığının dalga boyuna göre ölçülmesiyle elde edilen, atmosferdeki gazları gösteren tayf." }
+    {
+      "terim": "Ötegezegen",
+      "tanim": "Güneş'ten başka bir yıldızın ya da yıldız kalıntısının çevresinde dolanan gezegen.",
+      "kid": "d13t0"
+    },
+    {
+      "terim": "Dikine hız yöntemi",
+      "tanim": "Gezegenin çekimiyle yalpalayan yıldızın tayf çizgilerindeki ritmik Doppler kaymasını ölçerek gezegen bulma yöntemi.",
+      "kid": "d13t1"
+    },
+    {
+      "terim": "Geçiş yöntemi",
+      "tanim": "Gezegen yıldızının önünden geçerken yıldız ışığında oluşan düzenli, küçük düşüşleri ölçerek gezegen bulma yöntemi.",
+      "kid": "d13t2"
+    },
+    {
+      "terim": "Doğrudan görüntüleme",
+      "tanim": "Yıldızın ışığını koronagrafla bastırıp yanındaki gezegenin kendisini fotoğraflama yöntemi.",
+      "kid": "d13t3"
+    },
+    {
+      "terim": "Kütleçekimsel mikromercek",
+      "tanim": "Öndeki yıldızın ve gezegeninin kütleçekiminin, arkadaki bir yıldızın ışığını büküp kısa süreliğine parlatmasıyla gezegen bulma yöntemi.",
+      "kid": "d13t4"
+    },
+    {
+      "terim": "Astrometri",
+      "tanim": "Yıldızların gökteki konumlarını çok hassas ölçme; ötegezegen aramada yıldızın yana doğru küçük salınımını arar.",
+      "kid": "d13t5"
+    },
+    {
+      "terim": "Sıcak Jüpiter",
+      "tanim": "Yıldızına çok yakın dolanan, birkaç günlük yörüngesi ve binlerce derecelik sıcaklığı olan gaz devi.",
+      "kid": "d13t6"
+    },
+    {
+      "terim": "Süper Dünya",
+      "tanim": "Kütlesi Dünya'nınkinin yaklaşık 2–10 katı olup Neptün'den küçük kalan gezegen.",
+      "kid": "d13t7"
+    },
+    {
+      "terim": "Mini Neptün",
+      "tanim": "Dünya'dan büyük, Neptün'den küçük, kalın gaz zarflı olduğu düşünülen gezegen.",
+      "kid": "d13t8"
+    },
+    {
+      "terim": "Yaşanabilir bölge",
+      "tanim": "Bir yıldızın çevresinde, gezegen yüzeyinde sıvı suyun bulunabileceği kadar ılık uzaklık kuşağı.",
+      "kid": "d13t9"
+    },
+    {
+      "terim": "Gelgit kilidi",
+      "tanim": "Bir cismin dönme ve dolanma sürelerinin eşitlenip eşine hep aynı yüzünü göstermesi.",
+      "kid": "d13t10"
+    },
+    {
+      "terim": "Geçiş tayfı",
+      "tanim": "Geçiş sırasında gezegen atmosferinden süzülen yıldız ışığının dalga boyuna göre ölçülmesiyle elde edilen, atmosferdeki gazları gösteren tayf.",
+      "kid": "d13t11"
+    }
   ],
   "defter_notu": [
     "Ötegezegen: Güneş dışındaki yıldızın çevresindeki gezegen. İlk: 1992, PSR B1257+12 pulsarı (Wolszczan ve Frail, Arecibo).",
@@ -207,63 +268,149 @@
   "sorular": [
     {
       "soru": "İlk doğrulanmış ötegezegenler hangi tür bir cismin çevresinde bulundu ve hangi ölçümle?",
-      "cevap": "1992'de PSR B1257+12 adlı bir pulsarın, yani dönen bir nötron yıldızının çevresinde bulundu. Wolszczan ve Frail, Arecibo'da pulsar atımlarının varış zamanlarındaki düzenli kaymaları ölçtü; bu kaymaları ancak pulsarı çekiştiren gezegenler açıklayabiliyordu."
+      "cevap": "1992'de PSR B1257+12 adlı bir pulsarın, yani dönen bir nötron yıldızının çevresinde bulundu. Wolszczan ve Frail, Arecibo'da pulsar atımlarının varış zamanlarındaki düzenli kaymaları ölçtü; bu kaymaları ancak pulsarı çekiştiren gezegenler açıklayabiliyordu.",
+      "kid": "d13s0"
     },
     {
       "soru": "Dikine hız yöntemi neden gezegenin gerçek kütlesini değil en az kütlesini verir?",
-      "cevap": "Çünkü yalnızca yıldızın görüş doğrultumuz boyunca olan hareketini ölçer. Yörünge düzlemi bize eğik duruyorsa gerçek hareketin bir kısmını göremeyiz; bu yüzden gerçek kütle ölçülenden büyük olabilir. Gezegen geçiş de yapıyorsa yörüngeyi neredeyse yandan gördüğümüz anlaşılır ve en az kütle gerçek kütleye çok yaklaşır."
+      "cevap": "Çünkü yalnızca yıldızın görüş doğrultumuz boyunca olan hareketini ölçer. Yörünge düzlemi bize eğik duruyorsa gerçek hareketin bir kısmını göremeyiz; bu yüzden gerçek kütle ölçülenden büyük olabilir. Gezegen geçiş de yapıyorsa yörüngeyi neredeyse yandan gördüğümüz anlaşılır ve en az kütle gerçek kütleye çok yaklaşır.",
+      "kid": "d13s1"
     },
     {
       "soru": "Yarıçapı Güneş'inkinin onda biri olan bir yıldızın önünden Dünya boyunda bir gezegen geçiyor. Geçiş derinliği, aynı gezegenin Güneş'in önünden geçişine göre kaç kat büyük olur?",
-      "cevap": "Derinlik (R_g / R_y)² ile orantılıdır. Yıldız yarıçapı 10 kat küçülünce oran 10 kat büyür, karesi 10 × 10 = 100 kat büyür. Güneş için yaklaşık %0,0084 olan derinlik yaklaşık %0,84 olur. Küçük yıldızların çevresindeki küçük gezegenlerin daha kolay bulunmasının bir nedeni budur."
+      "cevap": "Derinlik (R_g / R_y)² ile orantılıdır. Yıldız yarıçapı 10 kat küçülünce oran 10 kat büyür, karesi 10 × 10 = 100 kat büyür. Güneş için yaklaşık %0,0084 olan derinlik yaklaşık %0,84 olur. Küçük yıldızların çevresindeki küçük gezegenlerin daha kolay bulunmasının bir nedeni budur.",
+      "kid": "d13s2"
     },
     {
       "soru": "Saptanan ötegezegenlerin yaklaşık %10'u sıcak Jüpiter olduğu halde, tüm gezegenlerin yalnızca yaklaşık %1'inin sıcak Jüpiter olduğu düşünülüyor. Bu fark nereden gelir?",
-      "cevap": "Seçim etkisinden. Sıcak Jüpiterler büyük oldukları için geçişte derin gölge yapar, yıldıza yakın oldukları için sık geçer ve yıldızlarını güçlü salındırır. Bulunmaları kolay olduğu için listelerde gerçekteki paylarından fazla görünürler."
+      "cevap": "Seçim etkisinden. Sıcak Jüpiterler büyük oldukları için geçişte derin gölge yapar, yıldıza yakın oldukları için sık geçer ve yıldızlarını güçlü salındırır. Bulunmaları kolay olduğu için listelerde gerçekteki paylarından fazla görünürler.",
+      "kid": "d13s3"
     },
     {
       "soru": "Işınımı Güneş'inkinin 4 katı olan bir yıldızın yaşanabilir bölgesi kabaca nerededir? (Güneş için 0,99–1,67 AB al.)",
-      "cevap": "Uzaklık ışınımın kareköküyle ölçeklenir: √4 = 2. 0,99 × 2 ≈ 2,0 AB ve 1,67 × 2 ≈ 3,3 AB. Yani kabaca 2,0 ile 3,3 AB arası. Bu kaba bir ölçeklemedir; ayrıntılı modeller farklı sınırlar verebilir."
+      "cevap": "Uzaklık ışınımın kareköküyle ölçeklenir: √4 = 2. 0,99 × 2 ≈ 2,0 AB ve 1,67 × 2 ≈ 3,3 AB. Yani kabaca 2,0 ile 3,3 AB arası. Bu kaba bir ölçeklemedir; ayrıntılı modeller farklı sınırlar verebilir.",
+      "kid": "d13s4"
     },
     {
       "soru": "TRAPPIST-1'in üç gezegeninin yaşanabilir bölgede olması, orada yaşam olabileceği anlamına gelir mi?",
-      "cevap": "Hayır, tek başına gelmez. Yaşanabilir bölge yalnızca uygun bir atmosferle yüzeyde sıvı su olabileceğini söyler. TRAPPIST-1 etkin bir kırmızı cücedir; patlamaları atmosferleri söküp alabilir. Webb en içteki gezegen b'de atmosfer izine rastlamadı. Dış gezegenlerin atmosferi olup olmadığı henüz bilinmiyor."
+      "cevap": "Hayır, tek başına gelmez. Yaşanabilir bölge yalnızca uygun bir atmosferle yüzeyde sıvı su olabileceğini söyler. TRAPPIST-1 etkin bir kırmızı cücedir; patlamaları atmosferleri söküp alabilir. Webb en içteki gezegen b'de atmosfer izine rastlamadı. Dış gezegenlerin atmosferi olup olmadığı henüz bilinmiyor.",
+      "kid": "d13s5"
     },
     {
       "soru": "Webb, WASP-39 b'de karbondioksiti nasıl saptadı?",
-      "cevap": "Gezegen yıldızının önünden geçerken yıldız ışığının bir kısmı gezegenin atmosferinden süzüldü. NIRSpec bu ışığı dalga boylarına ayırdı; 4,1 ile 4,6 mikrometre arasında gezegen biraz daha büyük göründü, yani ışık daha çok soğuruldu. Bu aralık karbondioksitin soğurma parmak iziydi."
+      "cevap": "Gezegen yıldızının önünden geçerken yıldız ışığının bir kısmı gezegenin atmosferinden süzüldü. NIRSpec bu ışığı dalga boylarına ayırdı; 4,1 ile 4,6 mikrometre arasında gezegen biraz daha büyük göründü, yani ışık daha çok soğuruldu. Bu aralık karbondioksitin soğurma parmak iziydi.",
+      "kid": "d13s6"
     },
     {
       "soru": "İstanbul'dan (φ ≈ 41°) bakınca dik açıklığı −10° olan bir yıldız meridyende ne kadar yükselir?",
-      "cevap": "h = 90° − φ + δ = 90° − 41° + (−10°) = 39°. Yıldız güney ufkunun yaklaşık 39° üzerine çıkar."
+      "cevap": "h = 90° − φ + δ = 90° − 41° + (−10°) = 39°. Yıldız güney ufkunun yaklaşık 39° üzerine çıkar.",
+      "kid": "d13s7"
     }
   ],
   "kaynaklar": [
-    { "ad": "NASA Exoplanet Archive – haber arşivi (2026)", "url": "https://vmexoweb2.ipac.caltech.edu/docs/exonews_archive.html" },
-    { "ad": "IPAC – The NASA Exoplanet Archive hits 6,000 planets (Eylül 2025)", "url": "https://www.ipac.caltech.edu/news/the-nasa-exoplanet-archive-hits-6-000-planets" },
-    { "ad": "Astrobites – The first exoplanet discovery (pulsar gezegenleri)", "url": "https://astrobites.org/2023/01/02/pulsar-planets/" },
-    { "ad": "Nobel Prize – Physics 2019 press release", "url": "https://www.nobelprize.org/prizes/physics/2019/press-release/" },
-    { "ad": "NASA APOD – 50 light-years to 51 Pegasi", "url": "https://science.nasa.gov/image-article/apod-2021-october-9-50-light-years-to-51-pegasi/" },
-    { "ad": "Wikipedia – 51 Pegasi", "url": "https://en.wikipedia.org/wiki/51_Pegasi" },
-    { "ad": "Jodrell Bank – Pegasus (gözlem rehberi)", "url": "https://www.jb.man.ac.uk/astronomy/nightsky/AList/Pegasus.html" },
-    { "ad": "Wikipedia – Doppler spectroscopy", "url": "https://en.wikipedia.org/wiki/Doppler_spectroscopy" },
-    { "ad": "Physics World – Proxima b keşfi (2016)", "url": "https://physicsworld.com/a/rocky-planet-found-in-habitable-zone-around-suns-nearest-neighbour/" },
-    { "ad": "The Schools' Observatory – Exoplanet detection methods", "url": "https://www.schoolsobservatory.org/learn/space/exoplanets/detection-methods" },
-    { "ad": "arXiv 2404.09143 – Exoplanet Detection: A Detailed Analysis", "url": "https://arxiv.org/pdf/2404.09143" },
-    { "ad": "NASA NSSDC – Sun Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html?level=1" },
-    { "ad": "NASA NSSDC – Jupiter Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/jupiterfact.html" },
-    { "ad": "Astronomy.com – Kepler emekliye ayrıldı (2018)", "url": "https://www.astronomy.com/science/kepler-space-telescope-retires-after-almost-a-decade-of-hunting-planets/" },
-    { "ad": "NASA – HR 8799 dört gezegenli sistem", "url": "https://science.nasa.gov/universe/exoplanets/a-four-planet-system-in-orbit-directly-imaged-and-remarkable/" },
-    { "ad": "NASA – Roman ve mikromercek", "url": "https://www.nasa.gov/missions/roman-space-telescope/new-study-reveals-nasas-roman-could-find-400-earth-mass-rogue-planets" },
-    { "ad": "Heidelberg Üniversitesi – Cassan ve ark. 2012 basın bülteni", "url": "https://uni-heidelberg.de/presse/news2012/pm20120111_planeten_en.html" },
-    { "ad": "NASA – Exoplanet planet types", "url": "https://science.nasa.gov/exoplanets/planet-types/" },
-    { "ad": "Smithsonian – Hot Jupiters", "url": "https://www.smithsonianmag.com/science-nature/what-astronomers-can-learn-hot-jupiters-scorching-giant-planets-galaxy-180973320/" },
-    { "ad": "NASA – What is the habitable zone?", "url": "https://science.nasa.gov/exoplanets/what-is-the-habitable-zone-or-goldilocks-zone" },
-    { "ad": "Wikipedia – Habitable zone", "url": "https://en.wikipedia.org/wiki/Habitable_zone" },
-    { "ad": "NASA – TRAPPIST-1'de üç gezegen (2016)", "url": "https://science.nasa.gov/universe/exoplanets/promising-worlds-found-around-nearby-ultra-cool-dwarf-star" },
-    { "ad": "Cambridge Üniversitesi – TRAPPIST-1'de yedi gezegen (2017)", "url": "https://www.cam.ac.uk/research/news/newly-discovered-planets-could-have-water-on-their-surfaces" },
-    { "ad": "NASA Photojournal – TRAPPIST-1 statistics table", "url": "https://science.nasa.gov/photojournal/trappist-1-statistics-table/" },
-    { "ad": "ESA/Webb weic2309 – TRAPPIST-1 b sıcaklığı", "url": "https://esawebb.org/news/weic2309/" },
-    { "ad": "NASA JPL – Webb detects carbon dioxide in exoplanet atmosphere", "url": "https://www.jpl.nasa.gov/news/nasas-webb-detects-carbon-dioxide-in-exoplanet-atmosphere/" }
+    {
+      "ad": "NASA Exoplanet Archive – haber arşivi (2026)",
+      "url": "https://vmexoweb2.ipac.caltech.edu/docs/exonews_archive.html"
+    },
+    {
+      "ad": "IPAC – The NASA Exoplanet Archive hits 6,000 planets (Eylül 2025)",
+      "url": "https://www.ipac.caltech.edu/news/the-nasa-exoplanet-archive-hits-6-000-planets"
+    },
+    {
+      "ad": "Astrobites – The first exoplanet discovery (pulsar gezegenleri)",
+      "url": "https://astrobites.org/2023/01/02/pulsar-planets/"
+    },
+    {
+      "ad": "Nobel Prize – Physics 2019 press release",
+      "url": "https://www.nobelprize.org/prizes/physics/2019/press-release/"
+    },
+    {
+      "ad": "NASA APOD – 50 light-years to 51 Pegasi",
+      "url": "https://science.nasa.gov/image-article/apod-2021-october-9-50-light-years-to-51-pegasi/"
+    },
+    {
+      "ad": "Wikipedia – 51 Pegasi",
+      "url": "https://en.wikipedia.org/wiki/51_Pegasi"
+    },
+    {
+      "ad": "Jodrell Bank – Pegasus (gözlem rehberi)",
+      "url": "https://www.jb.man.ac.uk/astronomy/nightsky/AList/Pegasus.html"
+    },
+    {
+      "ad": "Wikipedia – Doppler spectroscopy",
+      "url": "https://en.wikipedia.org/wiki/Doppler_spectroscopy"
+    },
+    {
+      "ad": "Physics World – Proxima b keşfi (2016)",
+      "url": "https://physicsworld.com/a/rocky-planet-found-in-habitable-zone-around-suns-nearest-neighbour/"
+    },
+    {
+      "ad": "The Schools' Observatory – Exoplanet detection methods",
+      "url": "https://www.schoolsobservatory.org/learn/space/exoplanets/detection-methods"
+    },
+    {
+      "ad": "arXiv 2404.09143 – Exoplanet Detection: A Detailed Analysis",
+      "url": "https://arxiv.org/pdf/2404.09143"
+    },
+    {
+      "ad": "NASA NSSDC – Sun Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html?level=1"
+    },
+    {
+      "ad": "NASA NSSDC – Jupiter Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/jupiterfact.html"
+    },
+    {
+      "ad": "Astronomy.com – Kepler emekliye ayrıldı (2018)",
+      "url": "https://www.astronomy.com/science/kepler-space-telescope-retires-after-almost-a-decade-of-hunting-planets/"
+    },
+    {
+      "ad": "NASA – HR 8799 dört gezegenli sistem",
+      "url": "https://science.nasa.gov/universe/exoplanets/a-four-planet-system-in-orbit-directly-imaged-and-remarkable/"
+    },
+    {
+      "ad": "NASA – Roman ve mikromercek",
+      "url": "https://www.nasa.gov/missions/roman-space-telescope/new-study-reveals-nasas-roman-could-find-400-earth-mass-rogue-planets"
+    },
+    {
+      "ad": "Heidelberg Üniversitesi – Cassan ve ark. 2012 basın bülteni",
+      "url": "https://uni-heidelberg.de/presse/news2012/pm20120111_planeten_en.html"
+    },
+    {
+      "ad": "NASA – Exoplanet planet types",
+      "url": "https://science.nasa.gov/exoplanets/planet-types/"
+    },
+    {
+      "ad": "Smithsonian – Hot Jupiters",
+      "url": "https://www.smithsonianmag.com/science-nature/what-astronomers-can-learn-hot-jupiters-scorching-giant-planets-galaxy-180973320/"
+    },
+    {
+      "ad": "NASA – What is the habitable zone?",
+      "url": "https://science.nasa.gov/exoplanets/what-is-the-habitable-zone-or-goldilocks-zone"
+    },
+    {
+      "ad": "Wikipedia – Habitable zone",
+      "url": "https://en.wikipedia.org/wiki/Habitable_zone"
+    },
+    {
+      "ad": "NASA – TRAPPIST-1'de üç gezegen (2016)",
+      "url": "https://science.nasa.gov/universe/exoplanets/promising-worlds-found-around-nearby-ultra-cool-dwarf-star"
+    },
+    {
+      "ad": "Cambridge Üniversitesi – TRAPPIST-1'de yedi gezegen (2017)",
+      "url": "https://www.cam.ac.uk/research/news/newly-discovered-planets-could-have-water-on-their-surfaces"
+    },
+    {
+      "ad": "NASA Photojournal – TRAPPIST-1 statistics table",
+      "url": "https://science.nasa.gov/photojournal/trappist-1-statistics-table/"
+    },
+    {
+      "ad": "ESA/Webb weic2309 – TRAPPIST-1 b sıcaklığı",
+      "url": "https://esawebb.org/news/weic2309/"
+    },
+    {
+      "ad": "NASA JPL – Webb detects carbon dioxide in exoplanet atmosphere",
+      "url": "https://www.jpl.nasa.gov/news/nasas-webb-detects-carbon-dioxide-in-exoplanet-atmosphere/"
+    }
   ]
 }

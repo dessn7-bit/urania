@@ -4,7 +4,10 @@
   "yeni": true,
   "baslik": "Yıldızlararası Ortam ve Yıldızların Doğumu",
   "ozet": "Yıldızların arası boş değil: son derece seyrek bir gaz ve toz var. Bu derste o malzemenin türlerini, bulutsuların neden kızıl, mavi ya da kara göründüğünü ve soğuk bir bulutun nasıl çöküp önyıldıza, T Tauri yıldızına ve gezegen diskine dönüştüğünü öğreneceksin. Orion Bulutsusu'nu da dürbünle nerede bulacağını göreceksin.",
-  "on_bilgi": ["d2", "d4"],
+  "on_bilgi": [
+    "d2",
+    "d4"
+  ],
   "bolumler": [
     {
       "baslik": "Yıldızların arası boş mu?",
@@ -133,66 +136,120 @@
     {
       "deger": "%99 gaz, %1 toz (kütlece); %70 H, %28 He, %1,5 ağır element (kütlece)",
       "aciklama": "Yıldızlararası ortamın bileşimi",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Interstellar_medium"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Interstellar_medium",
+      "kid": "d14n0"
     },
     {
       "deger": "Moleküler bulut 10–20 K, 10²–10⁶ parçacık/cm³; koronal gaz 10⁶–10⁷ K, hacmin %30–70'i",
       "aciklama": "Yıldızlararası gazın evreleri (Samanyolu)",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Interstellar_medium"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Interstellar_medium",
+      "kid": "d14n1"
     },
     {
       "deger": "10⁴–10⁷ M☉; 15–600 ışık yılı",
       "aciklama": "Dev moleküler bulutların kütlesi ve çapı",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Molecular_cloud"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Molecular_cloud",
+      "kid": "d14n2"
     },
     {
       "deger": "656,28 nm",
       "aciklama": "Salma bulutsularını kızıl yapan H-alfa çizgisi (havada)",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Hydrogen-alpha"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Hydrogen-alpha",
+      "kid": "d14n3"
     },
     {
       "deger": "~500.000 yıl",
       "aciklama": "Güneş ve daha hafif yıldızlarda önyıldız evresinin süresi",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Protostar"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Protostar",
+      "kid": "d14n4"
     },
     {
       "deger": "10 milyon yıldan kısa",
       "aciklama": "T Tauri yıldızlarının yaşı",
-      "kaynak_url": "https://en.wikipedia.org/wiki/T_Tauri_star"
+      "kaynak_url": "https://en.wikipedia.org/wiki/T_Tauri_star",
+      "kid": "d14n5"
     },
     {
       "deger": "388 ± 5 parsek (≈ 1270 ışık yılı)",
       "aciklama": "Orion Bulutsusu kümesinin VLBA ıraklık uzaklığı (Kounkel ve ark. 2017)",
-      "kaynak_url": "https://arxiv.org/abs/1609.04041"
+      "kaynak_url": "https://arxiv.org/abs/1609.04041",
+      "kid": "d14n6"
     },
     {
       "deger": "450 ışık yılı; 6 Kasım 2014",
       "aciklama": "HL Tauri'nin uzaklığı ve ALMA disk görüntüsünün yayım tarihi",
-      "kaynak_url": "https://messenger.eso.org/public/images/eso1436a"
+      "kaynak_url": "https://messenger.eso.org/public/images/eso1436a",
+      "kid": "d14n7"
     },
     {
       "deger": "1,65 ± 0,19 M☉ yılda; 6,08 ± 1,14 × 10¹⁰ M☉",
       "aciklama": "Samanyolu'nun yıldız oluşum hızı ve yıldız kütlesi",
-      "kaynak_url": "https://arxiv.org/abs/1407.1078v2"
+      "kaynak_url": "https://arxiv.org/abs/1407.1078v2",
+      "kid": "d14n8"
     },
     {
       "deger": "1–3,5 milyon yıl (eski kısa tahmin); ortanca 6,5 milyon yıl (Pfalzner ve ark. 2022)",
       "aciklama": "Öngezegen disklerinin ömrü",
-      "kaynak_url": "https://aasnova.org/?p=10172"
+      "kaynak_url": "https://aasnova.org/?p=10172",
+      "kid": "d14n9"
     }
   ],
   "sozluk": [
-    { "terim": "Yıldızlararası ortam", "tanim": "Yıldızların arasındaki son derece seyrek gaz (kütlece %99) ve tozdan (kütlece %1) oluşan madde." },
-    { "terim": "Salma bulutsusu (H II bölgesi)", "tanim": "Yakındaki sıcak bir yıldızın morötesi ışığıyla iyonlaşan ve kendi ışığını salan, fotoğraflarda kızıl görünen gaz bulutu." },
-    { "terim": "Yansıma bulutsusu", "tanim": "Yakındaki yıldızın ışığını tozla saçarak görünen, bu yüzden genellikle mavi olan bulutsu." },
-    { "terim": "Karanlık bulutsu", "tanim": "Arkasındaki yıldızların ya da bulutsuların ışığını örten yoğun toz ve gaz bulutu." },
-    { "terim": "Moleküler bulut", "tanim": "Gazının çoğu hidrojen molekülü olan, yaklaşık 10–20 kelvinlik soğuk ve yoğun bulut; yıldızlar burada doğar." },
-    { "terim": "Jeans kütlesi", "tanim": "Bir gaz bulutunun iç basıncının kütleçekimini artık durduramadığı, aşıldığında bulutun çöktüğü kritik kütle." },
-    { "terim": "Önyıldız", "tanim": "Çevresindeki buluttan hâlâ kütle toplayan, tozun içinde gizli çok genç yıldız." },
-    { "terim": "T Tauri yıldızı", "tanim": "10 milyon yıldan genç, düzensiz parlaklık değişimi gösteren, enerjisini büzülmeden alan, kütlesi 2 Güneş kütlesinden az genç yıldız." },
-    { "terim": "Öngezegen diski", "tanim": "Genç yıldızın çevresinde dönen, tozu topaklanarak gezegenlere dönüşebilen gaz ve toz diski." },
-    { "terim": "Herbig–Haro cismi", "tanim": "Genç bir yıldızın jetinin çevredeki gaza çarptığı yerde parlayan şok düğümü." },
-    { "terim": "Sönükleştirme ve kızarma", "tanim": "Tozun yıldız ışığını soğurup saçarak sönükleştirmesi; maviyi daha çok tuttuğu için ışığın kızarması." }
+    {
+      "terim": "Yıldızlararası ortam",
+      "tanim": "Yıldızların arasındaki son derece seyrek gaz (kütlece %99) ve tozdan (kütlece %1) oluşan madde.",
+      "kid": "d14t0"
+    },
+    {
+      "terim": "Salma bulutsusu (H II bölgesi)",
+      "tanim": "Yakındaki sıcak bir yıldızın morötesi ışığıyla iyonlaşan ve kendi ışığını salan, fotoğraflarda kızıl görünen gaz bulutu.",
+      "kid": "d14t1"
+    },
+    {
+      "terim": "Yansıma bulutsusu",
+      "tanim": "Yakındaki yıldızın ışığını tozla saçarak görünen, bu yüzden genellikle mavi olan bulutsu.",
+      "kid": "d14t2"
+    },
+    {
+      "terim": "Karanlık bulutsu",
+      "tanim": "Arkasındaki yıldızların ya da bulutsuların ışığını örten yoğun toz ve gaz bulutu.",
+      "kid": "d14t3"
+    },
+    {
+      "terim": "Moleküler bulut",
+      "tanim": "Gazının çoğu hidrojen molekülü olan, yaklaşık 10–20 kelvinlik soğuk ve yoğun bulut; yıldızlar burada doğar.",
+      "kid": "d14t4"
+    },
+    {
+      "terim": "Jeans kütlesi",
+      "tanim": "Bir gaz bulutunun iç basıncının kütleçekimini artık durduramadığı, aşıldığında bulutun çöktüğü kritik kütle.",
+      "kid": "d14t5"
+    },
+    {
+      "terim": "Önyıldız",
+      "tanim": "Çevresindeki buluttan hâlâ kütle toplayan, tozun içinde gizli çok genç yıldız.",
+      "kid": "d14t6"
+    },
+    {
+      "terim": "T Tauri yıldızı",
+      "tanim": "10 milyon yıldan genç, düzensiz parlaklık değişimi gösteren, enerjisini büzülmeden alan, kütlesi 2 Güneş kütlesinden az genç yıldız.",
+      "kid": "d14t7"
+    },
+    {
+      "terim": "Öngezegen diski",
+      "tanim": "Genç yıldızın çevresinde dönen, tozu topaklanarak gezegenlere dönüşebilen gaz ve toz diski.",
+      "kid": "d14t8"
+    },
+    {
+      "terim": "Herbig–Haro cismi",
+      "tanim": "Genç bir yıldızın jetinin çevredeki gaza çarptığı yerde parlayan şok düğümü.",
+      "kid": "d14t9"
+    },
+    {
+      "terim": "Sönükleştirme ve kızarma",
+      "tanim": "Tozun yıldız ışığını soğurup saçarak sönükleştirmesi; maviyi daha çok tuttuğu için ışığın kızarması.",
+      "kid": "d14t10"
+    }
   ],
   "defter_notu": [
     "Yıldızlararası ortam: kütlece %99 gaz, %1 toz; gaz kütlece ~%70 H, %28 He.",
@@ -209,69 +266,162 @@
   "sorular": [
     {
       "soru": "Yıldızlararası ortamda gaz ve tozun kütle oranı nedir, hidrojen kütlenin ne kadarını oluşturur?",
-      "cevap": "Kütlece %99 gaz, %1 toz. Gazın kütlece yaklaşık %70'i hidrojen, %28'i helyum, %1,5'i ağır elementlerdir."
+      "cevap": "Kütlece %99 gaz, %1 toz. Gazın kütlece yaklaşık %70'i hidrojen, %28'i helyum, %1,5'i ağır elementlerdir.",
+      "kid": "d14s0"
     },
     {
       "soru": "Aynı bölgede neden hem kızıl bir salma bulutsusu hem de mavi bir yansıma bulutsusu görülebilir?",
-      "cevap": "Fark gazda değil, aydınlatan yıldızda ve geometridedir. Çok sıcak yıldızın morötesi ışığı hidrojeni iyonlaştırır ve gaz H-alfa ile kızıl parlar; enerjisi yetmeyen yıldızların ışığını ise toz saçar, mavi daha çok saçıldığı için bulutsu mavi görünür."
+      "cevap": "Fark gazda değil, aydınlatan yıldızda ve geometridedir. Çok sıcak yıldızın morötesi ışığı hidrojeni iyonlaştırır ve gaz H-alfa ile kızıl parlar; enerjisi yetmeyen yıldızların ışığını ise toz saçar, mavi daha çok saçıldığı için bulutsu mavi görünür.",
+      "kid": "d14s1"
     },
     {
       "soru": "Hidrojen molekülü en bol molekül olduğu halde moleküler bulutları neden karbon monoksitle haritalıyoruz?",
-      "cevap": "Hidrojen molekülü bulutların soğukluğunda neredeyse hiç ışık yaymaz, doğrudan saptanması çok zordur. En bol ikinci molekül olan karbon monoksit radyo dalgalarında parlar ve hidrojenin nerede olduğunu gösterir."
+      "cevap": "Hidrojen molekülü bulutların soğukluğunda neredeyse hiç ışık yaymaz, doğrudan saptanması çok zordur. En bol ikinci molekül olan karbon monoksit radyo dalgalarında parlar ve hidrojenin nerede olduğunu gösterir.",
+      "kid": "d14s2"
     },
     {
       "soru": "Yoğunluğu santimetreküpte 100 parçacık olan bir bulutun 8 küp ışık yılı hacimli bir parçasının kütlesi yaklaşık kaç Güneş kütlesidir?",
-      "cevap": "Bir küp ışık yılı yaklaşık 0,17 M☉ içerir (dersteki örnek). 8 × 0,17 ≈ 1,3 M☉. Yani kenarı 2 ışık yılı olan bir küp ancak Güneş'ten biraz ağır bir yıldız yapacak kadar gaz içerir."
+      "cevap": "Bir küp ışık yılı yaklaşık 0,17 M☉ içerir (dersteki örnek). 8 × 0,17 ≈ 1,3 M☉. Yani kenarı 2 ışık yılı olan bir küp ancak Güneş'ten biraz ağır bir yıldız yapacak kadar gaz içerir.",
+      "kid": "d14s3"
     },
     {
       "soru": "Bir bulut neden soğudukça çökmeye daha yatkın hale gelir?",
-      "cevap": "Gazın dışa doğru basıncı parçacıklarının hızından, yani sıcaklığından gelir. Soğuyan gazın basıncı düşer ve kütleçekimine karşı koyamaz; Jeans kütlesi küçülür, daha küçük parçalar bile çökebilir."
+      "cevap": "Gazın dışa doğru basıncı parçacıklarının hızından, yani sıcaklığından gelir. Soğuyan gazın basıncı düşer ve kütleçekimine karşı koyamaz; Jeans kütlesi küçülür, daha küçük parçalar bile çökebilir.",
+      "kid": "d14s4"
     },
     {
       "soru": "Yıldızlar neden çoğunlukla tek tek değil kümeler halinde doğar?",
-      "cevap": "Çöken bulut basamak basamak parçalanır, çünkü çöküş ilerledikçe Jeans kütlesi küçülür ve her parça kendi başına çökebilir. Böylece bir buluttan düzinelerce ile on binlerce yıldız aşağı yukarı aynı anda doğar ve açık bir küme oluşur."
+      "cevap": "Çöken bulut basamak basamak parçalanır, çünkü çöküş ilerledikçe Jeans kütlesi küçülür ve her parça kendi başına çökebilir. Böylece bir buluttan düzinelerce ile on binlerce yıldız aşağı yukarı aynı anda doğar ve açık bir küme oluşur.",
+      "kid": "d14s5"
     },
     {
       "soru": "Önyıldızları neden görünür ışıkla değil kızılötesi ve milimetre altı dalgalarla gözleriz?",
-      "cevap": "Önyıldızı saran toz görünür ışığın hepsini soğurur ve ısınarak daha uzun dalga boylarında yeniden yayar. Toz kızılötesinde ve daha uzun dalgalarda hem saydamlaşır hem de kendisi parlar."
+      "cevap": "Önyıldızı saran toz görünür ışığın hepsini soğurur ve ısınarak daha uzun dalga boylarında yeniden yayar. Toz kızılötesinde ve daha uzun dalgalarda hem saydamlaşır hem de kendisi parlar.",
+      "kid": "d14s6"
     },
     {
       "soru": "Orion Bulutsusu için 1270 ve 1500 ışık yılı gibi farklı uzaklıklar görüyorsun. Hangisine güvenirsin, neden?",
-      "cevap": "2017'deki VLBA ıraklık ölçümüne (388 ± 5 parsek ≈ 1270 ışık yılı) daha çok güvenirim: ıraklık geometrik, doğrudan bir yöntemdir ve hata payı yayımlanmıştır. 1500 ışık yılı NASA ve Sky & Telescope'un yuvarlak, daha eski değeridir."
+      "cevap": "2017'deki VLBA ıraklık ölçümüne (388 ± 5 parsek ≈ 1270 ışık yılı) daha çok güvenirim: ıraklık geometrik, doğrudan bir yöntemdir ve hata payı yayımlanmıştır. 1500 ışık yılı NASA ve Sky & Telescope'un yuvarlak, daha eski değeridir.",
+      "kid": "d14s7"
     },
     {
       "soru": "İstanbul'dan (enlem yaklaşık 41°) dik açıklığı −5,4° olan M42 en fazla kaç derece yükselir?",
-      "cevap": "h = 90° − 41° + (−5,4°) ≈ 43,6°. Yani meridyenden geçerken ufkun yaklaşık 44° yukarısındadır; güney ufku açık bir yerden rahat gözlenir."
+      "cevap": "h = 90° − 41° + (−5,4°) ≈ 43,6°. Yani meridyenden geçerken ufkun yaklaşık 44° yukarısındadır; güney ufku açık bir yerden rahat gözlenir.",
+      "kid": "d14s8"
     }
   ],
   "kaynaklar": [
-    { "ad": "Wikipedia, Interstellar medium", "url": "https://en.wikipedia.org/wiki/Interstellar_medium" },
-    { "ad": "Wikipedia, Molecular cloud", "url": "https://en.wikipedia.org/wiki/Molecular_cloud" },
-    { "ad": "Wikipedia, Star formation", "url": "https://en.wikipedia.org/wiki/Star_formation" },
-    { "ad": "Wikipedia, Jeans instability", "url": "https://en.wikipedia.org/wiki/Jeans_instability" },
-    { "ad": "Wikipedia, Nebula", "url": "https://en.wikipedia.org/wiki/Nebula" },
-    { "ad": "Wikipedia, Reflection nebula", "url": "https://en.wikipedia.org/wiki/Reflection_nebula" },
-    { "ad": "Wikipedia, Hydrogen-alpha", "url": "https://en.wikipedia.org/wiki/Hydrogen-alpha" },
-    { "ad": "Wikipedia, Great Rift (astronomy)", "url": "https://en.wikipedia.org/wiki/Great_Rift_(astronomy)" },
-    { "ad": "Wikipedia, Protostar", "url": "https://en.wikipedia.org/wiki/Protostar" },
-    { "ad": "Wikipedia, T Tauri star", "url": "https://en.wikipedia.org/wiki/T_Tauri_star" },
-    { "ad": "AAVSO, Variable Star of the Season: T Tauri", "url": "https://www.aavso.org/vsots_ttau" },
-    { "ad": "Rochester Üniversitesi ders notu, Herbig–Haro objects", "url": "https://www.pas.rochester.edu/~kdouglass/Classes/Astr244/project/HH_objects.pdf" },
-    { "ad": "Wikipedia, Sun", "url": "https://en.wikipedia.org/wiki/Sun" },
-    { "ad": "Wikipedia, Adaptation (eye)", "url": "https://en.wikipedia.org/wiki/Adaptation_(eye)" },
-    { "ad": "Wikipedia, Orion Nebula", "url": "https://en.wikipedia.org/wiki/Orion_Nebula" },
-    { "ad": "Kounkel ve ark. 2017, GOBELINS II: Orion moleküler bulutlarının uzaklıkları (arXiv)", "url": "https://arxiv.org/abs/1609.04041" },
-    { "ad": "NASA Hubble, Messier 42", "url": "https://science.nasa.gov/?p=29958" },
-    { "ad": "Sky & Telescope, Observing the Great Orion Nebula", "url": "https://skyandtelescope.org/observing/celestial-objects-to-watch/observing-the-great-orion-nebula/" },
-    { "ad": "ESA, Born in beauty: proplyds in the Orion Nebula (2009)", "url": "https://www.esa.int/Science_Exploration/Space_Science/Born_in_beauty_proplyds_in_the_Orion_Nebula" },
-    { "ad": "ESA, Webb captures iconic Horsehead Nebula (2024)", "url": "https://www.esa.int/ESA_Multimedia/Images/2024/04/Webb_captures_iconic_Horsehead_Nebula_in_unprecedented_detail" },
-    { "ad": "ESO, ALMA image of the protoplanetary disc around HL Tauri (eso1436a)", "url": "https://messenger.eso.org/public/images/eso1436a" },
-    { "ad": "AAS Nova, Planets May Have More Time to Form Than Previously Thought", "url": "https://aasnova.org/?p=10172" },
-    { "ad": "Licquia ve Newman 2015, Samanyolu'nun yıldız kütlesi ve yıldız oluşum hızı (arXiv)", "url": "https://arxiv.org/abs/1407.1078v2" },
-    { "ad": "Wikipedia, Stellar classification", "url": "https://en.wikipedia.org/wiki/Stellar_classification" },
-    { "ad": "Wikipedia, Milky Way", "url": "https://en.wikipedia.org/wiki/Milky_Way" },
-    { "ad": "Wikipedia, Light-year", "url": "https://en.wikipedia.org/wiki/Light-year" },
-    { "ad": "NASA, Sun Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html" },
-    { "ad": "NASA Science, Stars", "url": "https://science.nasa.gov/universe/stars/" }
+    {
+      "ad": "Wikipedia, Interstellar medium",
+      "url": "https://en.wikipedia.org/wiki/Interstellar_medium"
+    },
+    {
+      "ad": "Wikipedia, Molecular cloud",
+      "url": "https://en.wikipedia.org/wiki/Molecular_cloud"
+    },
+    {
+      "ad": "Wikipedia, Star formation",
+      "url": "https://en.wikipedia.org/wiki/Star_formation"
+    },
+    {
+      "ad": "Wikipedia, Jeans instability",
+      "url": "https://en.wikipedia.org/wiki/Jeans_instability"
+    },
+    {
+      "ad": "Wikipedia, Nebula",
+      "url": "https://en.wikipedia.org/wiki/Nebula"
+    },
+    {
+      "ad": "Wikipedia, Reflection nebula",
+      "url": "https://en.wikipedia.org/wiki/Reflection_nebula"
+    },
+    {
+      "ad": "Wikipedia, Hydrogen-alpha",
+      "url": "https://en.wikipedia.org/wiki/Hydrogen-alpha"
+    },
+    {
+      "ad": "Wikipedia, Great Rift (astronomy)",
+      "url": "https://en.wikipedia.org/wiki/Great_Rift_(astronomy)"
+    },
+    {
+      "ad": "Wikipedia, Protostar",
+      "url": "https://en.wikipedia.org/wiki/Protostar"
+    },
+    {
+      "ad": "Wikipedia, T Tauri star",
+      "url": "https://en.wikipedia.org/wiki/T_Tauri_star"
+    },
+    {
+      "ad": "AAVSO, Variable Star of the Season: T Tauri",
+      "url": "https://www.aavso.org/vsots_ttau"
+    },
+    {
+      "ad": "Rochester Üniversitesi ders notu, Herbig–Haro objects",
+      "url": "https://www.pas.rochester.edu/~kdouglass/Classes/Astr244/project/HH_objects.pdf"
+    },
+    {
+      "ad": "Wikipedia, Sun",
+      "url": "https://en.wikipedia.org/wiki/Sun"
+    },
+    {
+      "ad": "Wikipedia, Adaptation (eye)",
+      "url": "https://en.wikipedia.org/wiki/Adaptation_(eye)"
+    },
+    {
+      "ad": "Wikipedia, Orion Nebula",
+      "url": "https://en.wikipedia.org/wiki/Orion_Nebula"
+    },
+    {
+      "ad": "Kounkel ve ark. 2017, GOBELINS II: Orion moleküler bulutlarının uzaklıkları (arXiv)",
+      "url": "https://arxiv.org/abs/1609.04041"
+    },
+    {
+      "ad": "NASA Hubble, Messier 42",
+      "url": "https://science.nasa.gov/?p=29958"
+    },
+    {
+      "ad": "Sky & Telescope, Observing the Great Orion Nebula",
+      "url": "https://skyandtelescope.org/observing/celestial-objects-to-watch/observing-the-great-orion-nebula/"
+    },
+    {
+      "ad": "ESA, Born in beauty: proplyds in the Orion Nebula (2009)",
+      "url": "https://www.esa.int/Science_Exploration/Space_Science/Born_in_beauty_proplyds_in_the_Orion_Nebula"
+    },
+    {
+      "ad": "ESA, Webb captures iconic Horsehead Nebula (2024)",
+      "url": "https://www.esa.int/ESA_Multimedia/Images/2024/04/Webb_captures_iconic_Horsehead_Nebula_in_unprecedented_detail"
+    },
+    {
+      "ad": "ESO, ALMA image of the protoplanetary disc around HL Tauri (eso1436a)",
+      "url": "https://messenger.eso.org/public/images/eso1436a"
+    },
+    {
+      "ad": "AAS Nova, Planets May Have More Time to Form Than Previously Thought",
+      "url": "https://aasnova.org/?p=10172"
+    },
+    {
+      "ad": "Licquia ve Newman 2015, Samanyolu'nun yıldız kütlesi ve yıldız oluşum hızı (arXiv)",
+      "url": "https://arxiv.org/abs/1407.1078v2"
+    },
+    {
+      "ad": "Wikipedia, Stellar classification",
+      "url": "https://en.wikipedia.org/wiki/Stellar_classification"
+    },
+    {
+      "ad": "Wikipedia, Milky Way",
+      "url": "https://en.wikipedia.org/wiki/Milky_Way"
+    },
+    {
+      "ad": "Wikipedia, Light-year",
+      "url": "https://en.wikipedia.org/wiki/Light-year"
+    },
+    {
+      "ad": "NASA, Sun Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html"
+    },
+    {
+      "ad": "NASA Science, Stars",
+      "url": "https://science.nasa.gov/universe/stars/"
+    }
   ]
 }

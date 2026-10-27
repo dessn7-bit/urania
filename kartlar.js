@@ -11,9 +11,10 @@
   function tumKartlar(D) {
     const ls = [];
     D.dersler.forEach(x => {
-      (x.sorular || []).forEach((s, i) => ls.push({ id: x.id + 's' + i, ders: x.id, dersAd: x.baslik, tur: 'soru', on: s.soru, arka: s.cevap }));
-      (x.anahtar_sayilar || []).forEach((s, i) => ls.push({ id: x.id + 'n' + i, ders: x.id, dersAd: x.baslik, tur: 'sayi', on: s.aciklama, arka: s.deger, kaynak: s.kaynak_url }));
-      (x.sozluk || []).forEach((s, i) => ls.push({ id: x.id + 't' + i, ders: x.id, dersAd: x.baslik, tur: 'terim', on: s.terim, arka: s.tanim }));
+      /* Kalıcı kimlik (kid, araclar/ders_verisi_v2.py atar); yoksa eski sıra kimliği */
+      (x.sorular || []).forEach((s, i) => ls.push({ id: s.kid || x.id + 's' + i, ders: x.id, dersAd: x.baslik, tur: 'soru', on: s.soru, arka: s.cevap }));
+      (x.anahtar_sayilar || []).forEach((s, i) => ls.push({ id: s.kid || x.id + 'n' + i, ders: x.id, dersAd: x.baslik, tur: 'sayi', on: s.aciklama, arka: s.deger, kaynak: s.kaynak_url }));
+      (x.sozluk || []).forEach((s, i) => ls.push({ id: s.kid || x.id + 't' + i, ders: x.id, dersAd: x.baslik, tur: 'terim', on: s.terim, arka: s.tanim }));
     });
     /* Ünite sınavında yanlış yapılan sorular (D.sinavlar yüklüyse) */
     const yan = nesne(U.oku('sinavYanlis', {}));

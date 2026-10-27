@@ -161,6 +161,15 @@ test.describe('arayüz', () => {
     await expect(page.locator('#b-gok .hata-kutu')).toHaveCount(0);
   });
 
+  test('Ders çizimleri yalnız Dersler açılınca yüklenir; derste çizimler çıkar', async ({ page }) => {
+    await celestrak(page, { hata: 503 });
+    await page.goto('/index.html#gok');
+    await expect(page.locator('#gkOzet p').first()).toBeVisible();
+    expect(await page.evaluate(() => typeof window.UraniaCizim)).toBe('undefined');
+    await page.goto('/index.html#ders/d1');
+    await expect(page.locator('figure.cizim').first()).toBeVisible();
+  });
+
   test('Ağır listeler sonradan dolar: olaylar ve Algol "Hesaplanıyor"da kalmaz', async ({ page }) => {
     await celestrak(page, { hata: 503 });
     await page.goto('/index.html#gok');
@@ -180,4 +189,50 @@ test('Derslerdeki "N. ders" atıfları uygulamadaki sıra numarasıdır (kaynak 
   D.forEach(d => (JSON.stringify(d).match(/(?<![\d%,.])\d{1,2}\. ders/g) || []).forEach(m => {
     const n = parseInt(m, 10); expect(n >= 1 && n <= D.length, d.id + ' ' + m).toBe(true);
   }));
+});
+
+/* Gezegen parlaklığı: Mallama ve Hilton 2018 modeli (JPL Horizons'un kullandığı). Başvuru değerleri:
+   JPL Horizons, 2026-10-27: Satürn 0,44, Neptün 7,69 (denetim turunda alındı);
+   Skyfield 1.55 magnitudelib + DE421 (aynı model; Güneş'i Güneş Sistemi kütle merkezinde sayar). */
+test('Gezegen kadirleri Horizons ile 0,02, Skyfield ile 0,08 içinde', () => {
+  const t = new Date('2026-10-27T12:00:00Z');
+  expect(Math.abs(G.gezegenKadir('Saturn', t) - 0.44)).toBeLessThan(0.02);
+  expect(Math.abs(G.gezegenKadir('Neptune', t) - 7.69)).toBeLessThan(0.02);
+  const SF = [["2026-11-15T00:00:00Z", "Mercury", 0.016], ["2026-11-15T00:00:00Z", "Venus", -4.817], ["2026-11-15T00:00:00Z", "Mars", 0.693], ["2026-11-15T00:00:00Z", "Jupiter", -2.086], ["2026-11-15T00:00:00Z", "Saturn", 0.529], ["2026-11-15T00:00:00Z", "Uranus", 5.602], ["2026-11-15T00:00:00Z", "Neptune", 7.707],
+    ["2027-05-15T00:00:00Z", "Mercury", -0.718], ["2027-05-15T00:00:00Z", "Venus", -3.858], ["2027-05-15T00:00:00Z", "Mars", 0.525], ["2027-05-15T00:00:00Z", "Jupiter", -2.025], ["2027-05-15T00:00:00Z", "Saturn", 0.705], ["2027-05-15T00:00:00Z", "Uranus", 5.813], ["2027-05-15T00:00:00Z", "Neptune", 7.801],
+    ["2028-09-15T00:00:00Z", "Mercury", 0.487], ["2028-09-15T00:00:00Z", "Venus", -4.142], ["2028-09-15T00:00:00Z", "Mars", 1.548], ["2028-09-15T00:00:00Z", "Jupiter", -1.669], ["2028-09-15T00:00:00Z", "Saturn", 0.118], ["2028-09-15T00:00:00Z", "Uranus", 5.66], ["2028-09-15T00:00:00Z", "Neptune", 7.68]];
+  SF.forEach(([t, c, m]) => expect(Math.abs(G.gezegenKadir(c, new Date(t)) - m), t + ' ' + c).toBeLessThan(0.08));
+});
+
+test('Meteor takvimi veri bitince Güneş boylamından sürer: 2026 verisinden hesaplanan 2027 zirveleri IMO 2027 ile 2 dk içinde', () => {
+  const v = require('../veri/meteor.json');
+  const v26 = { yagmurlar: v.yagmurlar.filter(m => m.zirve_utc < '2027') };
+  const t = G.meteorTakvimi(v26, new Date('2026-06-01T00:00Z')).filter(m => m.tahmini);
+  expect(t.length).toBe(13);
+  t.filter(m => m.kod !== 'PER').forEach(m => {   // PER: IMO λ☉ 140,0–140,1 aralığı, orta değer kullanılır
+    const g = v.yagmurlar.find(x => x.kod === m.kod && x.zirve_utc.startsWith('2027'));
+    expect(dk(m.zirve_utc, g.zirve_utc), m.kod).toBeLessThanOrEqual(2);
+    expect(m.baslangic).toBe(g.baslangic); expect(m.bitis).toBe(g.bitis);
+  });
+  /* 2030'da da etkin yağmur ve gelecek zirveler var */
+  const ls = G.meteorDurumu(G.meteorTakvimi(v, new Date('2030-08-12T20:00Z')), new Date('2030-08-12T20:00Z'), IST, G.geceAraligi(new Date('2030-08-12T12:00Z'), IST));
+  expect(ls.some(m => m.kod === 'PER' && m.aktif)).toBe(true);
+});
+
+test('Sesli okuma: izotop, ekli kesir, tablo kısaltması "y", (+BAO), sayı kare/küp', () => {
+  const o = require('../okunus.js').okunus;
+  expect(o('4 ¹H → ⁴He + enerji')).toBe('4 hidrojen 1, yani helyum 4 artı enerji');
+  expect(o('p + p → ²H + e⁺ + ν')).toBe('p artı p, yani hidrojen 2 artı pozitron artı nü');
+  expect(o("1/3² = 1/9'una düşer")).toBe('1 bölü 3 kare eşittir dokuzda birine düşer');
+  expect(o('20 y: 7,3 · 11,86 y')).toBe('20 yaş: 7,3, 11,86 yıl');
+  expect(o('13,787 (+BAO)')).toBe('13,787 (BAO ile)');
+  expect(o('L ∝ R²T⁴')).toBe('L orantılıdır R kare T üzeri 4');
+  expect(o('4 × 10³ m')).toBe('4 çarpı 10 üzeri 3 metre');   // 10'un kuvveti "üzeri" kalır
+});
+
+test('Tekrar kartlarının kimliği kalıcı (kid): benzersiz, ilk atamada eski sıra kimliğiyle aynı', () => {
+  const D = require('../veri/dersler.json').dersler, gor = new Set();
+  D.forEach(d => [['sorular', 's'], ['anahtar_sayilar', 'n'], ['sozluk', 't']].forEach(([a, p]) => (d[a] || []).forEach((x, i) => {
+    expect(x.kid).toBeTruthy(); expect(gor.has(x.kid)).toBe(false); gor.add(x.kid);
+  })));
 });

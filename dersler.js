@@ -364,8 +364,10 @@
   async function ilk(kok) {
     el = kok;
     el.innerHTML = '<p class="bos">Dersler yükleniyor…</p>';
+    /* Çizimler ayrı yüklenir; yüklenemezse dersler çizimsiz açılır */
+    const cizim = U.betikler(['./cizim.js', './cizim_gokyuzu.js', './cizim_gunes_sistemi.js', './cizim_yildizlar.js', './cizim_gezegen_yasam.js', './cizim_evren.js']).catch(e => console.warn(e.message));
     try {
-      D = await U.veri('dersler');
+      [D] = await Promise.all([U.veri('dersler'), cizim]);
       try { D.sinavlar = await U.veri('sinavlar'); } catch (e) { D.sinavlar = null; }   // sınavlar yoksa dersler yine açılır
     } catch (e) {
       el.innerHTML = '<div class="hata-kutu" role="alert">Dersler yüklenemedi: ' + U.kacis(e.message) + '. Başka bir sekmeye geçip dönünce yeniden denenir.</div>'; return false;
