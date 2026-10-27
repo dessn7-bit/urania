@@ -1,0 +1,466 @@
+{
+  "id": "d12",
+  "unite": "gokyuzu",
+  "yeni": true,
+  "baslik": "Teleskoplar: Işık Kovasından Uzay Gözlemevine",
+  "ozet": "Teleskobun asıl işi büyütmek değil, ışık toplamak ve ayrıntı ayırmaktır; ikisini de açıklık, yani objektifin çapı belirler. Bu derste mercekli ve aynalı teleskobu, ayırma gücünün kırınım sınırını, büyütmeyi ve kundakları, atmosferin titreşimine karşı uyarlamalı optiği, radyo ve kızılötesi teleskopları, teleskopları birleştiren interferometriyi ve Hubble ile James Webb uzay teleskoplarını öğreneceksin.",
+  "on_bilgi": [
+    "d2",
+    "d11"
+  ],
+  "bolumler": [
+    {
+      "baslik": "Teleskobun asıl işi: ışık toplamak",
+      "paragraflar": [
+        "Teleskop denince çoğu insanın aklına önce büyütme gelir: 'Kaç kere büyütüyor?' Oysa gökbilim ders kitaplarına göre büyütme teleskobun en az önemli özelliğidir. Teleskobun iki asıl işi vardır. Birincisi ışık toplamak: karanlıkta yaklaşık 7 mm açılan göz bebeğinden çok daha geniş bir yüzeyle ışık yakalayıp sönük cisimleri görünür kılmak. İkincisi ayrıntı ayırmak: birbirine çok yakın iki yıldızı ya da bir gezegenin üstündeki ince bir kuşağı ayrı ayrı göstermek. Bu iki iş de teleskobun ışığı toplayan ana parçasına, yani objektifine bağlıdır. Objektifin çapına açıklık denir. Büyütme ise toplanmış görüntüyü gözünün rahat seçebileceği boyuta getirir; görüntüde olmayan bir ayrıntıyı yaratamaz.",
+        "Teleskobun bilinen ilk kaydı 1608'de Hollanda'dan gelir: Hans Lippershey 2 Ekim 1608'de aleti için patent başvurusu yaptı. Galileo Galilei 1609'un Ekim ya da Kasım ayında bir dizi gökbilim gözlemine başladı. Kullandığı aletlerden biri yaklaşık bir metre uzunluğunda, 37 mm objektifli ve 23 kat büyüten bir teleskoptu; Galileo bu objektifi çoğu zaman 16 ya da 12 mm'ye kısarak kullanıyordu. Yani gökbilim tarihinin ilk teleskop gözlemleri, 7×50 bir dürbünün 50 mm'lik objektifinden bile küçük bir açıklıkla yapıldı.",
+        "Bu derste önce teleskobun iki temel tasarımını, sonra açıklığın neden bu kadar önemli olduğunu, ayırma gücünü, büyütmeyi ve teleskobu taşıyan kundakları göreceksin. Ardından yerdeki teleskopların en büyük düşmanı olan atmosferle nasıl başa çıkıldığını, gözün göremediği radyo ve kızılötesi ışık için yapılan teleskopları, birçok teleskobu tek bir dev teleskop gibi çalıştıran interferometriyi ve atmosferin tamamen dışına çıkan Hubble ile James Webb uzay teleskoplarını öğreneceksin."
+      ],
+      "akilda": "Teleskobun iki asıl işi ışık toplamak ve ayrıntı ayırmaktır; ikisi de açıklığa (objektif çapına) bağlıdır. Büyütme en az önemli özelliktir."
+    },
+    {
+      "baslik": "Mercekli ve aynalı teleskop",
+      "paragraflar": [
+        "Işığı bir noktada toplamanın iki yolu vardır: bir mercekle kırmak ya da çukur bir aynayla yansıtmak. Mercekli teleskopta ışık öndeki büyük bir mercekten geçerek odakta toplanır. Sorun şu: cam, renkleri farklı miktarda kırar. Uzun dalga boylu kırmızı ışık, kısa dalga boylu maviden daha az bükülür; renkler aynı noktada odaklanmaz ve görüntünün çevresinde gökkuşağı gibi bir renk saçağı oluşur. Buna renk sapması denir ve astronomik teleskopları etkileyen en büyük sapmadır. İki farklı camdan yapılan akromatik mercekler bunu yalnızca iki dalga boyu için düzeltir; daha pahalı apokromatlarda bile biraz sapma kalır. Eski gökbilimcilerin çaresi, odak uzaklığı çok uzun teleskoplar yapmaktı.",
+        "Merceğin bir sınırı daha var: yalnızca kenarından tutulabilir. Mercek büyüdükçe ortası kendi ağırlığıyla sarkar ve görüntüyü bozar; kalınlaşan cam ayrıca ışığın bir kısmını soğurur. Bu yüzden mercekli teleskop 1897'de pratik sınırına ulaştı: Yerkes Gözlemevi'nin objektifi 1,02 metre (40 inç), tüpü 19,2 metre olan teleskobu bugün de yapılmış en büyük mercekli teleskoptur. Sheffield Üniversitesi'nin ders notlarına göre daha büyüğünün yapılması pek olası değildir.",
+        "Aynalı teleskop bu sorunları kökünden çözer. Bütün dalga boyları aynadan aynı biçimde yansır, bu yüzden renk sapması olmaz. Işık camın içinden geçmez, yüzeyden yansır; yalnızca bir yüzeyin kusursuz olması yeterlidir ve ayna arkasının tamamından desteklenebilir. İlk aynalı teleskobu 1668'de Isaac Newton yaptı; amacı kuramlarını kanıtlamaktı. Newton tipi teleskopta çukur ana aynanın topladığı ışığı, küçük düz bir ikincil ayna 90° saptırarak tüpün yanındaki göz merceğine yollar. Cassegrain tipinde ise tümsek bir ikincil ayna ışığı geri gönderir; ışık ana aynanın ortasındaki bir delikten geçip arkada odaklanır.",
+        "Sonuç açık: 1900'den bu yana bütün büyük araştırma teleskopları aynalıdır. 1990'larda yeni bir dev teleskop kuşağı doğdu. İnce aynaların kullanılmasını sağlayan etkin optik tekniği sayesinde iki adet 10 metrelik Keck teleskobunun ilki 1993'te inşa edildi. Bu teknikle tek parça aynalar yaklaşık 8 metreye kadar çıkabiliyor; daha büyük teleskoplar ise çok sayıda parçadan oluşan bölümlü aynalar kullanıyor."
+      ],
+      "akilda": "Mercek renkleri ayrı noktalarda odaklar ve kenarından tutulduğu için sarkar; en büyük mercekli teleskop 1,02 m'lik Yerkes'tir (1897). Ayna renk sapması yapmaz ve arkadan desteklenir; bütün büyük araştırma teleskopları aynalıdır."
+    },
+    {
+      "baslik": "Açıklık: ışık kovasının ağzı",
+      "paragraflar": [
+        "Yağmurda dışarıda bırakılmış bir kova düşün: ağzı genişse daha çok su toplar. Teleskop da ışık için bir kovadır; topladığı ışık objektifin alanıyla, yani çapın karesiyle orantılıdır. Çapı iki katına çıkarırsan alan, dolayısıyla toplanan ışık dört katına çıkar: 40 cm'lik bir ayna, 20 cm'lik bir aynanın dört katı ışık toplar. Benzetmenin sınırı şu: kova suyu zamanla biriktirir, teleskop ise ışığı biriktirmez; yalnızca daha geniş bir alandan toplayıp küçük bir noktaya yöneltir.",
+        "Bu, 11. dersteki dürbün hesabının aynısıdır. Orada 50 mm'lik objektifin gözüne yaklaşık 51 kat ışık getirdiğini görmüştün. Çap büyüdükçe oran hızla artar. Şili'de inşa edilen Aşırı Büyük Teleskop (ELT) 39,3 metrelik ana aynasıyla insan gözünden on milyonlarca kat fazla ışık toplayacak. Kıyas için çıplak göz, tipik bir karanlık gökte yaklaşık +6 kadire, ışık kirliliğinin hiç olmadığı kusursuz bir gökte +8 kadire kadar yıldız görebilir. Teleskobun topladığı fazla ışık bu sınırı çok daha sönük yıldızlara kaydırır.",
+        "Işık toplama gücü bir tehlikeyi de büyütür. NASA'ya göre parlak Güneş'in herhangi bir kısmına, önüne özel bir güneş filtresi sağlam biçimde takılmamış bir teleskopla bakmak gözde anında ağır hasar yapar. Teleskobu Güneş'e asla filtresiz çevirme; güvenli Güneş gözlemi 4. dersin konusudur. Gün batımından sonra alçaktaki bir gezegeni ararken de Güneş tamamen batana kadar bekle."
+      ],
+      "ornek": {
+        "baslik": "Örnek: 20 cm'lik bir teleskop gözünden kaç kat ışık toplar?",
+        "metin": "Karanlıkta göz bebeğin yaklaşık 7 mm, teleskobun açıklığı 200 mm olsun. Oran = (200 / 7)² = 28,6² ≈ 816. Bunu kadire çevirelim: Δm = 2,5 × log(816) ≈ 2,5 × 2,91 ≈ 7,3. Tipik karanlık gökte çıplak gözle +6 kadire kadar görüyorsan, kaba hesapla bu teleskop seni 6 + 7,3 ≈ 13 kadir civarına götürür. Bu yalnızca kaba bir tahmindir: cam ve ayna kayıpları, gök parıltısı ve deneyim sonucu değiştirir. Aynı hesabı ELT için yap: (39.300 / 7)² ≈ 3,2 × 10⁷, yani yaklaşık 31 milyon kat; kaynağın 'on milyonlarca kat' ifadesiyle uyumlu. Sonuç: 20 cm'lik teleskop gözden yaklaşık 816 kat ışık toplar, yaklaşık 7,3 kadir kazanç sağlar."
+      },
+      "akilda": "Toplanan ışık çapın karesiyle artar: çap iki kat, ışık dört kat. 20 cm'lik teleskop gözden yaklaşık 800 kat ışık toplar (yaklaşık 7 kadir kazanç). Filtresiz teleskopla Güneş'e asla bakılmaz."
+    },
+    {
+      "baslik": "Ayırma gücü: kırınımın koyduğu sınır",
+      "paragraflar": [
+        "Gece uzaktan gelen bir arabanın iki farı önce tek bir ışık gibi görünür, araba yaklaştıkça ikiye ayrılır. Gökyüzünde birbirine çok yakın iki yıldızı ayrı görmek de teleskobun ayırma gücüne bağlıdır. Ayırma gücü, yüksek büyütmede seçebileceğin en küçük ayrıntının açısal boyutudur. Bu açılar çok küçük olduğu için yay saniyesiyle ölçülür: 1 derece 60 yay dakikası, 1 yay dakikası 60 yay saniyesidir. Çıplak gözün ayırma gücü yaklaşık 1 yay dakikasıdır (1′); bazı insanların görüşü bundan da keskindir.",
+        "Kusursuz bir mercek ya da ayna bile sonsuz keskinlikte görüntü veremez, çünkü ışık bir dalgadır (2. ders) ve dairesel bir açıklıktan geçerken kırınıma uğrar, yani biraz yayılır. Rayleigh ölçütü bu sınırı verir: θ = 1,22 × λ / D. Burada θ radyan cinsinden ayrılabilen en küçük açı, λ ışığın dalga boyu, D açıklığın çapıdır. 1,22 sayısı dairesel açıklığın matematiğinden gelir. Formülün söylediği basit: açıklık büyüdükçe ve dalga boyu kısaldıkça daha ince ayrıntı ayrılır. Buna kırınım sınırı denir.",
+        "Amatörler için pratik biçimi şöyledir: görünür ışıkta θ ≈ 138 / D; burada D milimetre, θ yay saniyesidir. Hava çok sakin ve karanlıksa deneyimli gözlemciler Dawes sınırı denen 116 / D değerine ulaşabilir, ama Rayleigh sınırı daha güvenli bir tahmindir. Galileo'nun 37 mm'lik objektifi bu hesapla en iyi durumda yaklaşık 3,7 yay saniyesini ayırabilirdi. Bir başka kıyas: görünür ışıkta 0,1 yay saniyesi ayırmak için yaklaşık 1,2 metrelik bir açıklık gerekir. Hubble Uzay Teleskobu ise 2,4 metrelik aynasıyla yaklaşık 0,04 yay saniyesine iner."
+      ],
+      "ornek": {
+        "baslik": "Örnek: 100 mm'lik teleskop ve Hubble ne kadar ince ayrıntı seçer?",
+        "metin": "100 mm'lik teleskop: θ ≈ 138 / 100 = 1,38 yay saniyesi; Dawes sınırıyla 116 / 100 = 1,16 yay saniyesi. Çıplak gözün 1′, yani 60 yay saniyesiyle kıyaslarsan 60 / 1,38 ≈ 43 kat daha ince ayrıntı. Hubble için formülün tam hâlini kullanalım: λ = 500 nm = 5 × 10⁻⁷ m, D = 2,4 m. θ = 1,22 × 5 × 10⁻⁷ / 2,4 ≈ 2,54 × 10⁻⁷ radyan. Radyanı yay saniyesine çevirmek için 206.265 ile çarp: 2,54 × 10⁻⁷ × 206.265 ≈ 0,052 yay saniyesi. Kaynağın verdiği 0,04 değerine yakın; kaynak aradaki küçük farkın nedenini açıklamıyor. Sonuç: 100 mm'lik teleskop yaklaşık 1,4 yay saniyesi, Hubble yaklaşık 0,05 yay saniyesi."
+      },
+      "akilda": "Ayırma gücü θ = 1,22 × λ / D; pratikte θ (yay saniyesi) ≈ 138 / D (mm). Açıklık büyüdükçe, dalga boyu kısaldıkça ayrıntı incelir. Göz yaklaşık 1′, 100 mm'lik teleskop yaklaşık 1,4″, Hubble yaklaşık 0,04″."
+    },
+    {
+      "baslik": "Büyütme ve göz merceği",
+      "paragraflar": [
+        "Objektif, topladığı ışıkla odak noktasında küçük bir görüntü oluşturur; sen bu görüntüye göz merceğiyle bakarsın. Büyütme iki odak uzaklığının oranıdır: teleskobun odak uzaklığı bölü göz merceğinin odak uzaklığı. Odak uzaklığı, merceğin ya da aynanın ışığı topladığı noktaya olan uzaklığıdır. Aynı teleskopta göz merceğini değiştirerek büyütmeyi değiştirirsin; odak uzaklığı kısa olan göz merceği daha çok büyütür.",
+        "Peki büyütmeyi istediğin kadar artırabilir misin? Hayır. Sky & Telescope'un kaba kuralına göre bir teleskobun en yüksek yararlı büyütmesi, açıklığının milimetre cinsinden iki katıdır (inç başına 50 kat). Bunun üstüne çıkarsan görüntü büyür ama yeni ayrıntı çıkmaz, çünkü ayrıntının sınırını büyütme değil açıklık çizer. Bir alt sınır da var: göz merceğinden çıkan ışık demetinin çapı, yani 11. dersten tanıdığın çıkış göz bebeği, 7 mm'den büyükse gözün ışığın hepsini alamaz. Çıkış göz bebeği, açıklık bölü büyütmedir.",
+        "Küçük bir teleskoptan ne beklemelisin? Sky & Telescope yeni teleskop sahiplerine şunu söyler: en küçük teleskop bile Satürn'ün soluk sarı küresini ve onu tümüyle saran parlak beyaz halkalarını gösterir. Hava sakinse 100 kat ya da daha yüksek büyütmeyle halkalardaki dar, karanlık bir boşluğu seçebilirsin; Jüpiter'de de 100 katta gezegenin ortasını saran iki koyu kuşak görülür. Aynı kaynağa göre çoğu teleskop Ay'ı ve parlak gezegenleri güzel gösterir; ama arka bahçe teleskobundan Hubble görüntüleri bekleme ve sabırlı ol. 11. dersten hatırla: Ay ve gezegenlere bakmak için karanlık uyumu da gerekmez."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Göz merceği seçmek",
+        "metin": "Teleskobun açıklığı 100 mm, odak uzaklığı 1000 mm olsun (bu sayılar örnektir). 25 mm'lik göz merceğiyle büyütme 1000 / 25 = 40 kat; 10 mm'likle 1000 / 10 = 100 kat; 5 mm'likle 1000 / 5 = 200 kat. En yüksek yararlı büyütme 2 × 100 = 200 kattır; yani 5 mm'lik göz merceği sınırdadır, daha kısası ayrıntı getirmez. Çıkış göz bebeği açıklık bölü büyütmedir: 40 katta 100 / 40 = 2,5 mm, 100 katta 1 mm. 7 mm'yi aşmamak için en düşük büyütme 100 / 7 ≈ 14 kattır. Sonuç: bu teleskopla anlamlı büyütme aralığı yaklaşık 14 ile 200 kat arasıdır."
+      },
+      "akilda": "Büyütme = teleskobun odak uzaklığı / göz merceğinin odak uzaklığı. En yüksek yararlı büyütme yaklaşık 2 × açıklık (mm). Büyütme ayrıntı yaratmaz; ayrıntıyı açıklık belirler."
+    },
+    {
+      "baslik": "Kundaklar: teleskobu taşımak ve yıldızı izlemek",
+      "paragraflar": [
+        "Yüksek büyütmede bir yıldıza baktığında, yıldızın görüş alanından kaydığını fark edersin; nedeni Dünya'nın dönmesidir (1. ders). Teleskobu taşıyan ve yönlendiren düzeneğe kundak denir. En basiti yükseklik-azimut kundaktır (kısaca alt-az): teleskop yukarı ve aşağı (yükseklik), bir de düşey bir eksen çevresinde sağa ve sola (azimut) döner. Kullanımı sezgiseldir, ama bir yıldızı izlemek için iki ekseni birlikte oynatman gerekir. Amatörlerin çok sevdiği Dobson kundağını amatör gökbilimci John Dobson icat etti; ucuz olabilir, kolay taşınır ve kullanımı basittir.",
+        "Ekvatoral kundak ise Dünya'nın dönüşünü tek eksende telafi eder. Ana ekseni, yani sağ açıklık ekseni, Dünya'nın ekseni gibi Kutup Yıldızı'na doğru çevrilir. 1. dersten hatırla: Kutup Yıldızı'nın ufuktan yüksekliği bulunduğun enleme eşittir. İstanbul'da (41° K) bu eksen ufka göre 41° eğik durur. Sağ açıklık eksenine takılan küçük bir motor teleskobu Dünya ile aynı hızda döndürür ve yıldız görüş alanında kalır. Uzun pozlamalı fotoğraf için bu şarttır. Alt-az kundakta ise uzun pozlamada görüntü kendi çevresinde döner; bu alan dönmesi yüzünden alt-az kundaklar amatör gökyüzü fotoğrafçılığına uygun değildir.",
+        "GoTo kundakların içinde gök cisimlerinden oluşan bir veritabanı taşıyan bir bilgisayar vardır; listeden bir cisim seçtiğinde teleskop kendiliğinden ona döner. Profesyonel dünyada da bilgisayar her şeyi değiştirdi. Alt-az kundakta koordinat dönüşümlerinin saniyede birçok kez hesaplanması gerekir ve bilgisayarlar ancak 1970'lerde kolay bulunur hâle geldi. O zamana kadar yapılan bütün büyük teleskoplar ekvatoral kundaktaydı; sonra büyük teleskoplarda alt-az kundaklar baskın oldu. Profesyonel gözlemevleri alan dönmesini özel bir döndürücü düzenekle giderir."
+      ],
+      "akilda": "Alt-az kundak basittir ama iki eksende izleme ister; Dobson onun ucuz ve taşınabilir biçimidir. Ekvatoral kundağın ekseni Kutup Yıldızı'na bakar (İstanbul'da 41° eğik) ve tek motorla yıldızı izler; uzun pozlamalı fotoğraf için gereklidir."
+    },
+    {
+      "baslik": "Atmosferin titreşimi ve uyarlamalı optik",
+      "paragraflar": [
+        "Yıldızlar neden göz kırpar? Başımızın üstündeki hava sürekli hareket eder. Işığın yolundaki havanın kırma özelliği, yani ışığı ne kadar büktüğü, çok hızlı değişir. Bu yüzden yıldızın parlaklığı titreşir; buna parıldama denir. Teleskopta aynı olay görüntünün titremesine ve bulanıklaşmasına yol açar. Gökbilimciler atmosferin yarattığı bu bulanıklığa görüş (İngilizcede seeing) der ve yay saniyesiyle ölçer.",
+        "Görüş, büyük bir teleskobun kırınım sınırından genellikle çok daha kötüdür. En iyi yüksek dağ gözlemevlerinde görüş bazen 0,4 yay saniyesine kadar iner; ortalama bir gözlem yeri için 1 yay saniyesi iyi bir değerdir; kent ortamında görüş genellikle çok daha kötüdür. Bir eşik de vardır: görüş parametresi denen bir uzunluk, en iyi yerlerde yaklaşık 20 cm, deniz seviyesindeki tipik yerlerde yaklaşık 5 cm'dir. Çapı bundan küçük teleskopların uzun pozlamalı görüntüsünün keskinliğini kırınım, büyüklerinkini atmosfer belirler. İstanbul'u deniz seviyesindeki tipik bir yer sayarsan, birkaç santimetreden büyük bir teleskobun uzun pozlamalı keskinliğini aynası değil havası belirler.",
+        "Profesyonellerin ilk çaresi yer seçimidir. Gözlemevi ne kadar yüksekteyse üstündeki atmosfer o kadar incedir; iyi görüşlü bir yer seçmek en önemli ölçütlerden biridir ve en büyük teleskoplar ışık kirliliği az bölgelere kurulur. Türkiye'deki örnek Erzurum yakınındaki Doğu Anadolu Gözlemevi'dir (DAG). Karakaya Tepesi'nde deniz seviyesinden 3.170 metre yükseklikteki 4 metre çaplı teleskobu, Türkiye'nin en büyük teleskobu ve ilk kızılötesi teleskobu olarak tasarlandı. Teleskop teknik ilk ışığını 2024'te aldı, ilk testlerini Eylül 2025'te tamamladı ve bilimsel gözlemlere hazırlanıyor.",
+        "İkinci çare uyarlamalı optiktir: atmosferin bozduğu ışığı anında düzeltmek. Teleskop, bir kılavuz yıldızın ışığındaki bozulmayı ölçer; ışık yolundaki biçimi değiştirilebilen esnek bir ayna, bozulmayı telafi edecek şekilde ayarlanır. ESO'ya göre bu ölçüm saniyede yaklaşık 1000 kez yapılır. Hedefin yakınında yeterince parlak bir yıldız yoksa yapay bir yıldız yaratılır: güçlü bir lazer, yaklaşık 90 km yükseklikteki sodyum atomlarını parlatır. Bugün birçok büyük yer teleskobu uyarlamalı optik kullanır; DAG'ın da bu teknolojiyle donatılacağı belirtiliyor. Şili'deki ELT'nin 39,3 metrelik ana aynası 798 altıgen parçadan oluşacak; Aralık 2023 tarihli bir habere göre ilk teknik ışığı 2028'de planlanıyordu."
+      ],
+      "akilda": "Atmosferin titreşimi (görüş) yerdeki teleskopları en iyi yerlerde 0,4–1 yay saniyesiyle, kentte daha kötüsüyle sınırlar. Çare: yüksek ve karanlık yerler, bir de saniyede yaklaşık 1000 kez düzelten esnek aynalı uyarlamalı optik."
+    },
+    {
+      "baslik": "Radyo ve kızılötesi teleskoplar",
+      "paragraflar": [
+        "Gözümüz tayfın yalnızca küçük bir dilimini görür (2. ders). Görünmez pencerelerden ilki 1932'de açıldı: Bell Laboratuvarları'nda çalışan Karl Jansky'nin anteni bir gök cisminden gelen radyo dalgalarını yakaladı. Işınım Samanyolu'ndan geliyordu ve galaksinin merkezi yönünde, Yay takımyıldızında en güçlüydü. 1937'de Grote Reber, Illinois'in Wheaton kentindeki evinin arka bahçesinde 9 metre çaplı ilk parabol çanak radyo teleskobunu yaptı. Çanak, aynalı teleskop gibi gelen dalgaları bir odakta toplar.",
+        "Radyo teleskopları neden bu kadar büyük? Birincisi, gökten gelen radyo enerjisi çok zayıftır ve yeterince toplamak için dev antenler gerekir. İkincisi, çanağın ayırma gücü çapının dalga boyuna oranıyla belirlenir. 2. dersteki radyo penceresi yaklaşık 0,3 mm ile 30 metre arasındaydı; bu dalgalar 500 nm'lik görünür ışıktan yaklaşık 600 ile 60 milyon kat uzundur. Aynı keskinlik için çanağın da o oranda büyük olması gerekir. Bugün dünyanın en büyük tek çanaklı teleskobu Çin'in Guizhou bölgesindeki FAST'tır: çanağı 500 metre çaplıdır, ama her an yalnızca 300 metrelik bir dairesi kullanılır. FAST 2016'da ilk ışığını aldı.",
+        "Kızılötesi teleskopların sorunu başkadır: ısı. Oda sıcaklığındaki teleskobun kendisi kızılötesinde parlar; bu, gündüz gökyüzünde yıldız aramaya benzer. Bu parıltıdan kurtulmanın tek yolu aynaları ve dedektörleri çok düşük sıcaklıklara soğutmaktır. Atmosfer de kızılötesinin büyük kısmını soğurur, ama 10 km ya da daha yüksekte bu bandın çoğu görülebilir. Bu yüzden kızılötesi teleskoplar uçaklara, yüksek irtifa balonlarına ve uzay araçlarına konur. SOFIA gözlemevinde 2,5 metrelik bir teleskop bir Boeing 747 uçağına yerleştirildi. Sıvı helyumla soğutulan IRAS uydusu 1983'ün başında fırlatıldı ve 10 ayda bütün kızılötesi gökyüzünü haritaladı."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Dünyanın en büyük çanağı senin gözünden keskin mi?",
+        "metin": "FAST'ın 20 cm dalga boyunda gözlem yaptığını varsayalım (örnek değer); kullanılan çap 300 m. θ = 1,22 × 0,2 / 300 ≈ 8,13 × 10⁻⁴ radyan. Yay saniyesine çevir: 8,13 × 10⁻⁴ × 206.265 ≈ 168 yay saniyesi, yani yaklaşık 2,8 yay dakikası. Çıplak gözün ayırma gücü yaklaşık 1 yay dakikasıydı: dünyanın en büyük tek çanağı bu dalga boyunda senin gözünden yaklaşık üç kat bulanık görür. Tersinden bak: görünür ışıkta (500 nm) 1 yay dakikası, yani 2,91 × 10⁻⁴ radyan ayırmak için gereken çap D = 1,22 × 5 × 10⁻⁷ / 2,91 × 10⁻⁴ ≈ 0,0021 m, yalnızca yaklaşık 2 mm. Sonuç: FAST bu örnekte yaklaşık 2,8 yay dakikası ayırır; radyoda keskinlik için yüzlerce metre bile yetmez."
+      },
+      "akilda": "Radyo dalgaları çok uzun olduğu için radyo teleskopları dev olmalıdır; en büyük tek çanak FAST (500 m). Kızılötesi teleskoplar kendi ısılarıyla parlar; soğutulur ve atmosferin üstüne çıkarılır."
+    },
+    {
+      "baslik": "İnterferometri: teleskopları birleştirmek",
+      "paragraflar": [
+        "Bir çanağı kilometrelerce büyütemezsin, ama birçok çanağı birlikte çalıştırabilirsin. İnterferometride birden çok antenin sinyalleri birleştirilir ve daha büyük tek bir anteni taklit eder. Böyle bir dizinin ayırma gücünü çanakların tek tek boyu değil, dizideki en uzak iki teleskop arasındaki uzaklık belirler; bu uzaklığa taban çizgisi denir. Yaklaşık formül θ ≈ λ / B'dir: B taban çizgisi, θ radyan cinsinden. Cambridge'de Martin Ryle'ın grubu interferometri çalışmaları için Nobel Ödülü aldı.",
+        "İki ünlü örnek: ABD'nin New Mexico eyaletinde Socorro yakınındaki Çok Büyük Dizi (VLA) 27 teleskoptan oluşur ve aynı anda 351 bağımsız taban çizgisi kurar. Şili'nin Atacama Çölü'ndeki Chajnantor Platosu'na kurulan ALMA ise 54 tane 12 metrelik ve 12 tane 7 metrelik, toplam 66 antenle milimetre ve milimetre altı dalgalarda gözlem yapar; antenleri 16 kilometreye kadar yayılabilir. ALMA'nın dizi işletme alanı 5.100 metre yüksekliktedir. 2. dersten hatırla: su buharının etkisini azaltmak için gözlemevleri yüksek dağlara kurulur.",
+        "Taban çizgisi Dünya boyuna kadar uzatılabilir: binlerce kilometre uzaktaki antenlerin kayıtları gözlemden sonra birleştirilir. Buna çok uzun taban çizgili interferometri (VLBI) denir. Olay Ufku Teleskobu (EHT) bu yöntemle sekiz yer konuşlu radyo gözlemevini birleştirip Dünya büyüklüğünde sanal bir teleskop kurdu ve 1,3 mm dalga boyunda gözlem yaptı. Dünya çapı uzunluğundaki taban çizgileri yaklaşık 20 mikro yay saniyesi ayırma gücüne ulaşır. Sonuç, 10 Nisan 2019'da yayımlanan, M87 galaksisinin merkezindeki kara deliğin gölge görüntüsüydü (16. ders). ALMA da EHT dizisinin merkezinde yer alan önemli bir parçasıdır."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Dünya boyunda bir teleskop ne kadar keskin görür?",
+        "metin": "Formül θ ≈ λ / B. EHT'nin dalga boyu λ = 1,3 mm = 1,3 × 10⁻³ m. En uzun taban çizgisi en fazla Dünya'nın çapı kadar olabilir: ekvator yarıçapı yaklaşık 6.378 km, çap yaklaşık 12.756 km = 1,2756 × 10⁷ m. θ ≈ 1,3 × 10⁻³ / 1,2756 × 10⁷ ≈ 1,02 × 10⁻¹⁰ radyan. 206.265 ile çarp: yaklaşık 2,1 × 10⁻⁵ yay saniyesi, yani yaklaşık 21 mikro yay saniyesi. Kaynağın verdiği 20 mikro yay saniyesiyle uyumlu. Kıyas: çıplak göz 60 yay saniyesi; 60 / 0,000021 ≈ 2,9 milyon. Sonuç: EHT yaklaşık 20 mikro yay saniyesi ayırır, gözünden yaklaşık 3 milyon kat keskin."
+      },
+      "akilda": "İnterferometride ayırma gücünü teleskoplar arasındaki en büyük uzaklık belirler: θ ≈ λ / B. VLA 27, ALMA 66 anten; EHT Dünya boyundaki taban çizgileriyle yaklaşık 20 mikro yay saniyesine iner."
+    },
+    {
+      "baslik": "Uzay teleskopları: Hubble ve James Webb",
+      "paragraflar": [
+        "Atmosferin titreşiminden ve soğurmasından kurtulmanın kesin yolu onun dışına çıkmaktır. Hubble Uzay Teleskobu 24 Nisan 1990'da Discovery uzay mekiğiyle, STS-31 göreviyle fırlatıldı. Ana aynası 2,4 metredir ve NASA'ya göre Dünya'nın yaklaşık 560 km yukarısında dolanır. İlk görüntülerde yıldızlar bulanık çıktı: NASA'ya göre ana aynanın kenarları 0,003 mm kadar fazla düz yapılmıştı ve bu, küresel sapma denen, görüntüyü bulanıklaştıran bir optik kusura yol açtı. Aralık 1993'teki STS-61 bakım görevinde astronotlar COSTAR adlı düzeltici bir düzenek ve yenilenmiş WFPC2 kamerasını taktı. Hubble'a toplam beş bakım görevi yapıldı.",
+        "James Webb Uzay Teleskobu 25 Aralık 2021'de Ariane 5 roketiyle fırlatıldı. Ana aynası yaklaşık 6,5 metre çapındadır ve altın kaplı berilyumdan yapılmış 18 parçadan oluşur. Işık toplama alanı yaklaşık 25 metrekaredir, Hubble'ınkinin (yaklaşık 4 metrekare) altı katından fazla. Webb, Dünya'dan 1,5 milyon km uzakta, L2 noktasının çevresinde yaklaşık altı ayda bir tur atar (3. ders). 0,6 ile 28,5 mikrometre arasındaki dalga boylarında, büyük ölçüde kızılötesinde gözlem yapar.",
+        "Neden kızılötesi? Kızılötesi ışık, kozmik toz bölgelerinden görünür ışığa göre daha kolay geçer. Ayrıca evren genişlediği için çok uzaktaki cisimlerin ışığı kırmızıya kayar; bu yüzden en uzak cisimler kızılötesinde daha kolay görülür (17. ders). Ama kızılötesi teleskop kendi ısısıyla parlar. Webb'in çözümü beş katmanlı, yaklaşık 21 × 14 metrelik bir güneşliktir; bu kalkan Güneş, Dünya ve Ay'ın ısısını keser ve teleskobu 50 kelvinin, yani yaklaşık −223 °C'nin altında tutar. Webb'in ilk görüntüsü 11 Temmuz 2022'de kamuoyuna açıklandı.",
+        "Webb'in aynası Hubble'ınkinden 2,7 kat geniş olduğu hâlde görüntüleri benzer keskinliktedir. Nedeni Rayleigh formülünde saklı: Webb daha uzun dalga boylarında gözlem yapar ve θ dalga boyuyla birlikte büyür. Bu derste gördüğün sınırlar balkonundaki küçük teleskop için de geçerlidir: açıklık ışığı ve keskinliği belirler, hava titreşimi keskinliği bozar, büyütme ise ancak açıklığın izin verdiği kadar işe yarar. Uzaya çıkmak bu listeden yalnızca atmosferi siler."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Hubble mı Webb mi daha keskin?",
+        "metin": "Rayleigh formülü: θ = 1,22 × λ / D. Hubble, λ = 0,5 μm, D = 2,4 m: θ = 1,22 × 0,5 × 10⁻⁶ / 2,4 ≈ 2,54 × 10⁻⁷ radyan ≈ 0,052 yay saniyesi. Webb, λ = 2 μm (örnek bir kızılötesi dalga boyu), D = 6,5 m: θ = 1,22 × 2 × 10⁻⁶ / 6,5 ≈ 3,75 × 10⁻⁷ radyan ≈ 0,077 yay saniyesi. Webb'in aynası 2,7 kat geniş ama bu örnekte dalga boyu 4 kat uzun; bu yüzden ayırma gücü Hubble'ınkine yakın, hatta biraz kötü çıkar. Işık toplamada ise Webb açık ara önde: alan oranı 25,4 / 4,0 ≈ 6,4. Sonuç: Hubble yaklaşık 0,05 yay saniyesi, Webb (2 μm'de) yaklaşık 0,08 yay saniyesi; Webb yaklaşık 6 kat fazla ışık toplar."
+      },
+      "akilda": "Hubble (1990, 2,4 m) görünür ışıkta yaklaşık 0,04–0,05″ keskinlik sunar. Webb (2021, 6,5 m, 18 altın kaplı parça) kızılötesinde gözler, yaklaşık 6 kat fazla ışık toplar, beş katlı güneşlikle 50 K altında tutulur ve L2 çevresinde dolanır."
+    }
+  ],
+  "formuller": [
+    {
+      "ad": "Işık toplama oranı",
+      "ifade": "Oran = (D / d)²",
+      "aciklama": "D ve d karşılaştırılan iki açıklığın çapı (aynı birimle, örneğin mm). Göze göre: d ≈ 7 mm (karanlıktaki göz bebeği). 200 mm → (200/7)² ≈ 816 kat. Cam ve ayna kayıplarını hesaba katmaz."
+    },
+    {
+      "ad": "Kadir kazancı",
+      "ifade": "Δm = 2,5 × log(oran)",
+      "aciklama": "Δm: kadir farkı, oran: ışık oranı. 816 kat → yaklaşık 7,3 kadir. Kaba bir tahmindir; gök parıltısı ve deneyim sonucu değiştirir."
+    },
+    {
+      "ad": "Rayleigh ölçütü (kırınım sınırı)",
+      "ifade": "θ = 1,22 × λ / D",
+      "aciklama": "θ: ayrılabilen en küçük açı (radyan), λ: dalga boyu (m), D: açıklık çapı (m). Yay saniyesine çevirmek için 206.265 ile çarp. Atmosferin titreşimi hesaba katılmamıştır; yerde gerçek keskinlik çoğu zaman bundan kötüdür."
+    },
+    {
+      "ad": "Pratik ayırma gücü (görünür ışık)",
+      "ifade": "θ (yay saniyesi) ≈ 138 / D (mm); Dawes sınırı ≈ 116 / D (mm)",
+      "aciklama": "D milimetre cinsinden açıklık. 100 mm → 1,38″ (Rayleigh), 1,16″ (Dawes). Dawes sınırına ancak çok sakin havada ulaşılır."
+    },
+    {
+      "ad": "Büyütme",
+      "ifade": "M = F / f",
+      "aciklama": "F: teleskobun odak uzaklığı (mm), f: göz merceğinin odak uzaklığı (mm), M: büyütme (kat). 1000 mm / 25 mm = 40 kat."
+    },
+    {
+      "ad": "En yüksek yararlı büyütme (kaba kural)",
+      "ifade": "M_en yüksek ≈ 2 × D (mm)",
+      "aciklama": "D: açıklık (mm); inç başına 50 kata eşdeğer. Üstünde görüntü büyür ama yeni ayrıntı çıkmaz."
+    },
+    {
+      "ad": "Çıkış göz bebeği",
+      "ifade": "Çıkış göz bebeği (mm) = D (mm) / M",
+      "aciklama": "D: açıklık, M: büyütme. 7 mm'den büyükse ışığın bir kısmı göze giremez; 100 mm'lik teleskopta en düşük anlamlı büyütme 100 / 7 ≈ 14 kat."
+    },
+    {
+      "ad": "İnterferometrenin ayırma gücü",
+      "ifade": "θ ≈ λ / B",
+      "aciklama": "θ: radyan, λ: dalga boyu (m), B: dizideki en uzak iki teleskop arasındaki uzaklık, yani taban çizgisi (m). EHT: 1,3 mm / Dünya çapı ≈ 20 mikro yay saniyesi."
+    }
+  ],
+  "anahtar_sayilar": [
+    {
+      "deger": "1608 · 1609 · 1668",
+      "aciklama": "Lippershey'in patent başvurusu (Hollanda), Galileo'nun gökbilim gözlemleri, Newton'un ilk aynalı teleskobu",
+      "kaynak_url": "https://en.wikipedia.org/wiki/History_of_the_telescope"
+    },
+    {
+      "deger": "1,02 m (40 inç), 1897",
+      "aciklama": "Yerkes Gözlemevi'nin mercekli teleskobu; yapılmış en büyük mercekli teleskop",
+      "kaynak_url": "https://www.astronomynotes.com/telescop/s2.htm"
+    },
+    {
+      "deger": "θ ≈ 138 / D (Rayleigh) · 116 / D (Dawes)",
+      "aciklama": "Görünür ışıkta ayırma gücü; D milimetre, θ yay saniyesi",
+      "kaynak_url": "https://www.eckop.com/resources/optics/resolution/"
+    },
+    {
+      "deger": "≈ 1′",
+      "aciklama": "Çıplak gözün ayırma gücü",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Naked_eye"
+    },
+    {
+      "deger": "2 × D (mm)",
+      "aciklama": "En yüksek yararlı büyütme için kaba kural (inç başına 50 kat)",
+      "kaynak_url": "https://skyandtelescope.org/observing/telescope-calculator/"
+    },
+    {
+      "deger": "0,4″ (en iyi) · 1″ (ortalama yerde iyi)",
+      "aciklama": "Atmosfer kaynaklı görüş değerleri",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Astronomical_seeing"
+    },
+    {
+      "deger": "~90 km · ~1000 kez/saniye",
+      "aciklama": "Lazer kılavuz yıldızın sodyum katmanı yüksekliği ve uyarlamalı optiğin ölçüm sıklığı",
+      "kaynak_url": "https://supernova.eso.org/exhibition/0818/"
+    },
+    {
+      "deger": "4 m · 3.170 m · teknik ilk ışık 2024",
+      "aciklama": "Doğu Anadolu Gözlemevi (DAG) teleskobunun ayna çapı, yüksekliği ve ilk ışığı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Eastern_Anatolia_Observatory"
+    },
+    {
+      "deger": "500 m (her an 300 m kullanılır)",
+      "aciklama": "FAST, dünyanın en büyük tek çanaklı teleskobu",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Five-hundred-meter_Aperture_Spherical_Telescope"
+    },
+    {
+      "deger": "66 anten · 16 km · 5.100 m",
+      "aciklama": "ALMA'nın anten sayısı, en büyük yayılımı ve dizi işletme alanının yüksekliği",
+      "kaynak_url": "https://arxiv.org/pdf/1910.10193"
+    },
+    {
+      "deger": "~20 mikro yay saniyesi",
+      "aciklama": "Dünya çapı uzunluğunda taban çizgisiyle 1,3 mm'de ayırma gücü (EHT)",
+      "kaynak_url": "https://arxiv.org/pdf/1910.10193"
+    },
+    {
+      "deger": "24 Nisan 1990 · 2,4 m",
+      "aciklama": "Hubble'ın fırlatılışı ve ana ayna çapı",
+      "kaynak_url": "https://science.nasa.gov/missions/hubble/30-years-ago-hubble-launched-to-unlock-the-secrets-of-the-universe/"
+    },
+    {
+      "deger": "25 Aralık 2021 · 6,5 m · 18 parça · 25 m² · < 50 K",
+      "aciklama": "James Webb'in fırlatılışı, ayna çapı, parça sayısı, toplama alanı, çalışma sıcaklığı",
+      "kaynak_url": "https://science.nasa.gov/mission/webb/fact-sheet"
+    },
+    {
+      "deger": "39,3 m · 798 parça",
+      "aciklama": "Aşırı Büyük Teleskop'un (ELT) ana aynası",
+      "kaynak_url": "https://www.astronomy.com/science/mirrors-for-the-worlds-largest-optical-telescope-are-on-their-way-to-chile/"
+    }
+  ],
+  "sozluk": [
+    {
+      "terim": "Açıklık",
+      "tanim": "Teleskobun ışığı toplayan objektifinin (mercek ya da ayna) çapı; ışık toplama ve ayırma gücünü belirler."
+    },
+    {
+      "terim": "Mercekli teleskop",
+      "tanim": "Işığı öndeki bir mercekle kırarak odakta toplayan teleskop (refraktör)."
+    },
+    {
+      "terim": "Aynalı teleskop",
+      "tanim": "Işığı çukur bir ana aynayla yansıtarak odakta toplayan teleskop (reflektör)."
+    },
+    {
+      "terim": "Renk sapması",
+      "tanim": "Merceğin renkleri farklı miktarda kırması yüzünden renklerin aynı noktada odaklanmaması."
+    },
+    {
+      "terim": "Ayırma gücü",
+      "tanim": "Bir teleskobun ayrı ayrı gösterebildiği en küçük açısal ayrıntı; yay saniyesiyle ölçülür."
+    },
+    {
+      "terim": "Kırınım sınırı",
+      "tanim": "Işığın dalga doğası yüzünden kusursuz bir açıklığın bile aşamadığı ayırma gücü sınırı, θ = 1,22 λ / D."
+    },
+    {
+      "terim": "Odak uzaklığı",
+      "tanim": "Mercek ya da aynadan ışığın toplandığı noktaya olan uzaklık."
+    },
+    {
+      "terim": "Göz merceği",
+      "tanim": "Objektifin oluşturduğu görüntüye bakmak için kullanılan, değiştirilebilir küçük mercek grubu; büyütmeyi belirler."
+    },
+    {
+      "terim": "Kundak",
+      "tanim": "Teleskobu taşıyan ve gökte yönlendiren düzenek (alt-az, Dobson, ekvatoral)."
+    },
+    {
+      "terim": "Görüş (seeing)",
+      "tanim": "Atmosferdeki hava hareketlerinin görüntüde yarattığı bulanıklık; yay saniyesiyle ölçülür."
+    },
+    {
+      "terim": "Uyarlamalı optik",
+      "tanim": "Atmosferin bozduğu ışığı, biçimi saniyede yüzlerce kez değiştirilen esnek bir aynayla düzelten teknik."
+    },
+    {
+      "terim": "İnterferometri",
+      "tanim": "Birden çok teleskobun sinyallerini birleştirerek tek bir dev teleskobun ayırma gücünü elde etme yöntemi."
+    },
+    {
+      "terim": "Taban çizgisi",
+      "tanim": "Bir interferometre dizisinde iki teleskop arasındaki uzaklık; en büyüğü ayırma gücünü belirler."
+    }
+  ],
+  "defter_notu": [
+    "Teleskobun 2 işi: ışık toplamak + ayrıntı ayırmak. İkisi de AÇIKLIĞA bağlı; büyütme en az önemli.",
+    "Mercek: renk sapması + sarkma → en büyük mercekli Yerkes 1,02 m (1897). Ayna: renk sapması yok, arkadan desteklenir. Newton 1668.",
+    "Işık ∝ D². 200 mm / 7 mm → ~816 kat ≈ 7,3 kadir. Güneş'e filtresiz ASLA bakma.",
+    "Ayırma: θ = 1,22 λ / D (radyan); pratik θ″ ≈ 138 / D(mm), Dawes 116 / D. Göz ~1′, 100 mm ~1,4″, Hubble ~0,04″.",
+    "Büyütme M = F / f. En yüksek yararlı ≈ 2 × D(mm). Çıkış göz bebeği = D / M ≤ 7 mm.",
+    "Kundak: alt-az (basit, Dobson), ekvatoral (ekseni Kutup Yıldızı'na, İstanbul'da 41°; fotoğraf için).",
+    "Görüş: en iyi 0,4″, ortalama yerde 1″ iyi, kent daha kötü. Uyarlamalı optik: esnek ayna ~1000/s, lazer yıldız ~90 km.",
+    "DAG (Erzurum): 4 m, 3.170 m, teknik ilk ışık 2024. ELT: 39,3 m, 798 parça.",
+    "Radyo: Jansky 1932, Reber 1937; FAST 500 m. İnterferometri θ ≈ λ / B: VLA 27, ALMA 66, EHT ~20 mikro yay saniyesi.",
+    "Hubble 1990, 2,4 m (ayna kusuru 1993'te düzeltildi). Webb 2021, 6,5 m, 18 parça, < 50 K, L2, kızılötesi."
+  ],
+  "sorular": [
+    {
+      "soru": "Bir satıcı teleskobu '600 kat büyütür' diye övüyor. Teleskop seçerken neden asıl bakman gereken sayı açıklıktır?",
+      "cevap": "Teleskobun iki asıl işi, ışık toplamak ve ayrıntı ayırmak, açıklığa bağlıdır; büyütme en az önemli özelliktir. Kaba kurala göre en yüksek yararlı büyütme açıklığın milimetre cinsinden iki katıdır; 600 kat ancak 300 mm'lik bir açıklık için anlamlı olur. Daha küçük bir teleskopta 600 kat görüntüyü büyütür ama yeni ayrıntı getirmez."
+    },
+    {
+      "soru": "Bugün bütün büyük araştırma teleskopları neden aynalıdır?",
+      "cevap": "Mercek renkleri farklı kırdığı için renk sapması yapar ve yalnızca kenarından tutulabildiği için büyüdükçe kendi ağırlığıyla sarkar; kalın cam ışığı da soğurur. Bu yüzden mercekli teleskop 1897'de 1,02 m'lik Yerkes'le sınırına ulaştı. Ayna bütün dalga boylarını aynı biçimde yansıtır, ışık camın içinden geçmez ve ayna arkasının tamamından desteklenebilir."
+    },
+    {
+      "soru": "150 mm'lik bir teleskop, 7 mm'lik göz bebeğine göre kaç kat ışık toplar ve bu kaç kadirlik kazanç demektir?",
+      "cevap": "Oran = (150 / 7)² = 21,4² ≈ 459. Δm = 2,5 × log(459) ≈ 2,5 × 2,66 ≈ 6,7 kadir. Kaba hesapla, çıplak gözle +6 kadire kadar gördüğün bir gökte teleskopla yaklaşık 12,7 kadire inersin; kayıplar ve gök parıltısı bunu azaltır."
+    },
+    {
+      "soru": "150 mm'lik teleskobun kırınım sınırı kaç yay saniyesidir? Ortalama bir gözlem yerinde 1 yay saniyelik görüşle bu sınıra ulaşabilir misin?",
+      "cevap": "θ ≈ 138 / 150 ≈ 0,92 yay saniyesi (Dawes sınırıyla 116 / 150 ≈ 0,77). Görüş 1 yay saniyesiyse hava, teleskobun kırınım sınırından biraz daha kötüdür; yani bu gece keskinliği ayna değil atmosfer belirler. Kentte görüş genellikle daha kötü olduğundan durum daha da belirgindir."
+    },
+    {
+      "soru": "Odak uzaklığı 1200 mm olan teleskopta 6 mm'lik göz merceği kaç kat büyütür? Teleskobun açıklığı 150 mm ise bu büyütme yararlı mı, çıkış göz bebeği kaç mm olur?",
+      "cevap": "M = 1200 / 6 = 200 kat. En yüksek yararlı büyütme 2 × 150 = 300 kat olduğundan 200 kat sınırın altındadır, yararlıdır (hava sakinse). Çıkış göz bebeği 150 / 200 = 0,75 mm."
+    },
+    {
+      "soru": "Ekvatoral kundağını İstanbul'da kurarken ana eksenini ufka göre kaç derece eğersin? Ekvatorda olsaydın ne olurdu?",
+      "cevap": "Ana eksen Kutup Yıldızı'na bakmalı ve Kutup Yıldızı'nın yüksekliği enleme eşittir; İstanbul'da 41°. Ekvatorda enlem 0° olduğu için eksen ufka paralel, yani yatay olurdu; Kutup Yıldızı da ufukta görünürdü."
+    },
+    {
+      "soru": "Uyarlamalı optikte lazer kılavuz yıldıza neden ihtiyaç duyulur ve nasıl oluşturulur?",
+      "cevap": "Sistem bozulmayı ölçmek için hedefin yakınında parlak bir kılavuz yıldıza ihtiyaç duyar; her hedefin yakınında böyle bir yıldız yoktur. Güçlü bir lazer, yaklaşık 90 km yükseklikteki sodyum atomlarını parlatarak yapay bir yıldız yaratır. Bu ışıktaki bozulma saniyede yaklaşık 1000 kez ölçülür ve esnek ayna buna göre ayarlanır."
+    },
+    {
+      "soru": "300 m'lik bir radyo çanağı 20 cm dalga boyunda neden gözünden daha bulanık görür?",
+      "cevap": "θ = 1,22 × λ / D = 1,22 × 0,2 / 300 ≈ 8,1 × 10⁻⁴ radyan ≈ 168 yay saniyesi ≈ 2,8′. Göz yaklaşık 1′ ayırır. Ayırma gücü çapın dalga boyuna oranına bağlıdır; 20 cm, görünür ışıktan yaklaşık 400.000 kat uzun olduğu için dev çanak bile yetmez. Çözüm interferometridir: çanakları kilometrelerce aralıkla birleştirmek."
+    },
+    {
+      "soru": "Webb'in aynası Hubble'ınkinden 2,7 kat geniş. Görüntüleri neden 2,7 kat daha keskin değil?",
+      "cevap": "Kırınım sınırı θ = 1,22 × λ / D, dalga boyuyla birlikte büyür. Webb kızılötesinde, yani Hubble'ın çalıştığı görünür ışıktan daha uzun dalga boylarında gözlem yapar. Örneğin 2 μm'de Webb ≈ 0,077″, 0,5 μm'de Hubble ≈ 0,052″ ayırır. Webb'in üstünlüğü ışık toplamadadır: alanı yaklaşık 6 kat büyüktür."
+    }
+  ],
+  "kaynaklar": [
+    {
+      "ad": "Wikipedia – History of the telescope",
+      "url": "https://en.wikipedia.org/wiki/History_of_the_telescope"
+    },
+    {
+      "ad": "Sheffield Üniversitesi (V. Dhillon) – PHY217 Refracting telescopes",
+      "url": "https://vikdhillon.staff.shef.ac.uk/teaching/phy217/telescopes/phy217_tel_refractors.html"
+    },
+    {
+      "ad": "Sheffield Üniversitesi (S. Littlefair) – PHY241 L03: Reflector design, mounts and sites",
+      "url": "https://slittlefair.staff.shef.ac.uk/teaching/phy241/lectures/l03"
+    },
+    {
+      "ad": "Astronomy Notes (N. Strobel) – Refractor telescopes",
+      "url": "https://www.astronomynotes.com/telescop/s2.htm"
+    },
+    {
+      "ad": "Astronomy Notes (N. Strobel) – Reflector telescopes",
+      "url": "https://astronomynotes.com/telescop/s3.htm"
+    },
+    {
+      "ad": "Astronomy Notes (N. Strobel) – Powers of a telescope",
+      "url": "https://www.astronomynotes.com/telescop/s6.htm"
+    },
+    {
+      "ad": "Las Cumbres Observatory – Reflecting telescopes",
+      "url": "https://lco.global/spacebook/telescopes/reflecting-telescopes/"
+    },
+    {
+      "ad": "Sky & Telescope – Telescope calculator",
+      "url": "https://skyandtelescope.org/observing/telescope-calculator/"
+    },
+    {
+      "ad": "Sky & Telescope – First lights: what to see with your new telescope",
+      "url": "https://skyandtelescope.org/astronomy-press-releases/first-lights-what-to-see-with-your-new-telescope/"
+    },
+    {
+      "ad": "Eckop – Resolution (Rayleigh ve Dawes sınırı)",
+      "url": "https://www.eckop.com/resources/optics/resolution/"
+    },
+    {
+      "ad": "Wikipedia – Angular resolution",
+      "url": "https://en.wikipedia.org/wiki/Angular_resolution"
+    },
+    {
+      "ad": "Wikipedia – Naked eye",
+      "url": "https://en.wikipedia.org/wiki/Naked_eye"
+    },
+    {
+      "ad": "British Astronomical Association – Absolute Beginners No. 4: Mounting your telescope",
+      "url": "https://britastro.org/?p=213926"
+    },
+    {
+      "ad": "Wikipedia – Astronomical seeing",
+      "url": "https://en.wikipedia.org/wiki/Astronomical_seeing"
+    },
+    {
+      "ad": "ESO Supernova – How do astronomers untwinkle the stars?",
+      "url": "https://supernova.eso.org/exhibition/0818/"
+    },
+    {
+      "ad": "Wikipedia – Eastern Anatolia Observatory",
+      "url": "https://en.wikipedia.org/wiki/Eastern_Anatolia_Observatory"
+    },
+    {
+      "ad": "Küre Ansiklopedi – Doğu Anadolu Gözlemevi (DAG)",
+      "url": "https://kureansiklopedi.com/tr/detay/dogu-anadolu-gozlemevi-dag-5162d"
+    },
+    {
+      "ad": "Astronomy – Mirrors for the world's largest optical telescope are on their way to Chile (Aralık 2023)",
+      "url": "https://www.astronomy.com/science/mirrors-for-the-worlds-largest-optical-telescope-are-on-their-way-to-chile/"
+    },
+    {
+      "ad": "Wikipedia – Radio telescope",
+      "url": "https://en.wikipedia.org/wiki/Radio_telescope"
+    },
+    {
+      "ad": "Wikipedia – Five-hundred-meter Aperture Spherical Telescope",
+      "url": "https://en.wikipedia.org/wiki/Five-hundred-meter_Aperture_Spherical_Telescope"
+    },
+    {
+      "ad": "University of Colorado (A. Hamilton) – Infrared telescopes",
+      "url": "https://jila.colorado.edu/~ajsh/courses/astr1120_03/text/chapter2/L2S7.htm"
+    },
+    {
+      "ad": "ESO / ScienceDaily – Last ALMA antenna arrives (2013)",
+      "url": "https://www.sciencedaily.com/releases/2013/10/131001104820.htm"
+    },
+    {
+      "ad": "Goddi ve ark. – First M87 Event Horizon Telescope results and the role of ALMA (arXiv:1910.10193)",
+      "url": "https://arxiv.org/pdf/1910.10193"
+    },
+    {
+      "ad": "ESO – Astronomers capture first image of a black hole (eso1907)",
+      "url": "https://www.eso.org/public/news/eso1907/"
+    },
+    {
+      "ad": "NASA – 30 years ago: Hubble launched to unlock the secrets of the universe",
+      "url": "https://science.nasa.gov/missions/hubble/30-years-ago-hubble-launched-to-unlock-the-secrets-of-the-universe/"
+    },
+    {
+      "ad": "NASA – James Webb Space Telescope fact sheet",
+      "url": "https://science.nasa.gov/mission/webb/fact-sheet"
+    },
+    {
+      "ad": "Wikipedia – James Webb Space Telescope",
+      "url": "https://en.wikipedia.org/wiki/James_Webb_Space_Telescope"
+    },
+    {
+      "ad": "NASA – Webb orbit",
+      "url": "https://science.nasa.gov/mission/webb/orbit/"
+    },
+    {
+      "ad": "NASA – Eclipse viewing safety",
+      "url": "https://science.nasa.gov/eclipses/safety/"
+    }
+  ]
+}
