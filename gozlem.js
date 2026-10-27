@@ -352,6 +352,11 @@
     el.querySelector('#gkOlay').innerHTML = ls.map(o => `<li${o.gorunur === false ? ' class="sonuk"' : ''}><span class="ad">${U.kacis(o.baslik)}</span><span class="sag">${U.gun(o.zaman)}</span><span class="alt">${o.not ? U.kacis(o.not) + '<br>' : ''}${U.gunHafta(o.zaman)}, ${U.saat(o.zaman)} · ${takvimBag({ baslik: o.baslik, bas: o.zaman, aciklama: (o.not || '') + ' (Urania, ' + U.konum().ad + ')' })}</span></li>`).join('');
   }
 
+  /* "20:37–20:37" yerine: aynı dakikaya düşen kısa geçişte süre */
+  function aralik(a, b) {
+    return U.saat(a) === U.saat(b) ? `${U.saat(a)}, yalnız ${Math.round((b - a) / 1000)} sn` : `${U.saat(a)}–${U.saat(b)}`;
+  }
+
   /* ---- Uydu geçişleri (gecelere değil "şimdi"ye bağlı; konum değişince yeniden) ---- */
   let issAnahtar = '', issSira = 0;
   async function issYaz(zorla) {
@@ -389,7 +394,7 @@
       const yon = d => G.YON_UZUN[G.yon(d.az)];
       const basM = `${yon(b)} yönünde ${U.derece(b.alt)} yükseklikte ` + ({ ufuk: 'belirir', golge: 'Dünya\'nın gölgesinden çıkıp belirir', karanlik: 'gökyüzü yeterince kararınca seçilir' }[g.basNeden] || 'belirir');
       const sonM = `${yon(s)} yönünde ${U.derece(s.alt)} ` + ({ ufuk: 'yüksekliğin altına alçalır', golge: 'yükseklikte Dünya\'nın gölgesine girip kaybolur', aydinlik: 'yükseklikte gökyüzü aydınlandığı için seçilmez olur' }[g.sonNeden] || 'yükseklikte kaybolur');
-      const metin = `${U.saat(b.t)}–${U.saat(s.t)} · ${basM}, en çok ${U.derece(t.alt)} (${yon(t)}), ${sonM}`;
+      const metin = `${aralik(b.t, s.t)} · ${basM}, en çok ${U.derece(t.alt)} (${yon(t)}), ${sonM}`;
       const diziNot = u.dizi ? `<br><span class="kucuk">Yeni fırlatılmış ${u.dizi.adet} uydu art arda dizili noktalar hâlinde geçer; dizinin başı ile sonu arasında birkaç dakika olabilir${u.dizi.aralikDk >= 2 ? ' (bu dizide yaklaşık ' + u.dizi.aralikDk + ' dk)' : ''}. Saatler dizinin ortası içindir ve kabadır; uydular yükseldikçe sönükleşir.</span>` : '';
       return `<li><span class="ad">${U.kacis(u.kisa)} · ${U.kacis(U.gunHafta(b.t))}</span><span class="sag">en çok ${U.derece(t.alt)}</span><span class="alt">${metin}${diziNot}<br>${takvimBag({ baslik: u.kisa + ' geçişi', bas: new Date(b.t.getTime() - 60e3), son: new Date(s.t.getTime() + 60e3), aciklama: u.ad + ': ' + metin + '. (Urania, ' + k.ad + ')' })}</span></li>`;
     }).join('') : '<li><span class="bos">Önümüzdeki 5 günde buradan görünür bir geçiş yok.</span></li>';
@@ -547,7 +552,7 @@
         ek = defterBag(m.anahtar);
       } else if (m.tur === 'uydu') {
         const g = m.gecis;
-        ne = `${U.saat(g.gBas.t)}–${U.saat(g.gBit.t)}: ${G.YON_UZUN[G.yon(g.gBas.az)]} yönünde belirir, en çok ${U.derece(g.gTepe.alt)} yükselir.`;
+        ne = `${aralik(g.gBas.t, g.gBit.t)}: ${G.YON_UZUN[G.yon(g.gBas.az)]} yönünde belirir, en çok ${U.derece(g.gTepe.alt)} yükselir.`;
       } else if (m.tur === 'algol') {
         ne = `En sönük anı (±${durum.veri.algol.hata_dk} dk). Almach ve δ Persei ile karşılaştır.`;
         ek = defterBag(m.anahtar);
