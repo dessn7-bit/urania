@@ -198,8 +198,10 @@
   function gezegenlerBuGece(gun, gzl, gece) {
     const simdi = new Date(gun);
     /* Gezegenler parlak: sivil alacakaranlık sonundan başlangıcına kadar bakılır. */
-    const bas = gece.sivilSon || gece.batis;
-    const son = gece.sivilBas || gece.dogus;
+    let bas = gece.sivilSon || gece.batis;
+    let son = gece.sivilBas || gece.dogus;
+    /* Kutup gecesi (Güneş hiç doğmuyor): bütün gün */
+    if (!gece.batis && !gece.dogus && cisimAltAz('Sun', gece.ogle, gzl).alt < 0) { bas = gece.ogle; son = new Date(gece.ogle.getTime() + 86400e3); }
     return GEZEGENLER.map(c => {
       const isik = A.Illumination(c, simdi);
       const k = cisimAltAz(c, simdi, gzl);

@@ -229,7 +229,8 @@
     } else {
       /* Kutup günü / kutup gecesi: öğleden sonraki 36 saatte batış yok */
       const ogleAlt = G.cisimAltAz('Sun', g.ogle, durum.gzl).alt;
-      s.push(ogleAlt > 0 ? 'Güneş bugün batmıyor (kutup günü); gökyüzü hiç kararmayacak.' : 'Güneş bugün doğmuyor (kutup gecesi); karanlık gün boyu sürüyor.');
+      s.push(ogleAlt > 0 ? 'Güneş bugün batmıyor (kutup günü); gökyüzü hiç kararmayacak.' :
+        'Güneş bugün doğmuyor (kutup gecesi); ' + (ogleAlt > -6 ? 'öğle çevresinde gök alacakaranlıkla aydınlanır, günün geri kalanı karanlık.' : ogleAlt > -18 ? 'öğle çevresinde hafif bir alacakaranlık olur, günün geri kalanı karanlık.' : 'karanlık gün boyu sürüyor.'));
     }
     let ayCumle = `Ay: ${ay.ad}, %${Math.round(ay.oran * 100)} aydınlık`;
     const olaylar = [];
@@ -265,7 +266,8 @@
       const dogBat = [p.dogus ? 'doğuş ' + U.saat(p.dogus) : null, p.batis ? 'batış ' + U.saat(p.batis) : null].filter(Boolean).join(' · ');
       const arac = p.kadir <= durum.limitKadir ? '<span class="rozet iyi">çıplak göz</span>' : (p.kadir <= 9 ? '<span class="rozet">dürbün</span>' : '<span class="rozet">teleskop</span>');
       if (!p.gorunur) {
-        const neden = p.gunesAcisi < 18 ? `Güneş'e çok yakın (${U.derece(p.gunesAcisi)})` : 'karanlıkta ufka yakın kalıyor';
+        const g = durum.gece, kutupGunu = !g.batis && G.cisimAltAz('Sun', g.ogle, durum.gzl).alt > 0;
+        const neden = p.gunesAcisi < 18 ? `Güneş'e çok yakın (${U.derece(p.gunesAcisi)})` : kutupGunu ? 'Güneş bu gece batmıyor' : (g.sivilSon || !g.batis ? 'karanlıkta ufka yakın kalıyor' : 'gök kararmıyor ve alacakaranlıkta ufka yakın kalıyor');
         const ev = (p.cisim === 'Mercury' || p.cisim === 'Venus') ? ` %${Math.round(A.Illumination(p.cisim, durum.gece.ogle).phase_fraction * 100)} aydınlık.` : '';
         return `<li class="sonuk"><span class="ad">${p.ad}</span><span class="sag">${U.kadir(p.kadir)} kadir</span><span class="alt">Bu gece uygun değil: ${neden}. ${td} takımyıldızında.${ev}</span></li>`;
       }
@@ -848,10 +850,12 @@
       tarih.setCustomValidity('');
       /* Seçilen günün akşamı, gözlemcinin boylamına göre (yerel güneş saatiyle 21:00). Date.UTC 0–99 yıllarını
          1900'e kaydırdığı için yıl ayrıca kurulur. */
+      /* Seçilen günün saat 21:00'i, konumun saat diliminde */
       const d = new Date(Date.UTC(2000, a - 1, g, 21, 0, 0)); d.setUTCFullYear(y);
-      durum.gun = new Date(d.getTime() - U.konum().boylam / 15 * 3600e3);
+      const t21 = new Date(d.getTime() - dilimOfsDk(U.konum().saatDilimi, d) * 60e3);
+      durum.gun = t21;
       durum.canli = false;
-      durum.dakika = 9 * 60; // 21:00
+      durum.dakika = Math.max(0, Math.min(1440, Math.round((t21 - ogle()) / 60e3 / 5) * 5));
       el.querySelector('#gkBuGece').hidden = false;
       geceHesapla(); levhaCiz();
     });
@@ -877,6 +881,15 @@
     });
   }
 
+  /* Bir saat diliminin verilen andaki UTC farkı (dakika) */
+  function dilimOfsDk(z, t) {
+    try {
+      const p = new Intl.DateTimeFormat('en-US', { timeZone: z, hourCycle: 'h23', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' }).formatToParts(t);
+      const g = k => Number(p.find(x => x.type === k).value);
+      const yerel = new Date(Date.UTC(2000, g('month') - 1, g('day'), g('hour'), g('minute'))); yerel.setUTCFullYear(g('year'));
+      return Math.round((yerel - Math.floor(t.getTime() / 60e3) * 60e3) / 60e3);
+    } catch (h) { return Math.round(U.konum().boylam / 15) * 60; }
+  }
   function geceAnahtariDegisti() {
     const k = U.konum();
     return durum.geceAnahtar !== ogle().getTime() + '|' + k.enlem + '|' + k.boylam;

@@ -130,7 +130,7 @@ test.describe('arayüz', () => {
     await expect(page.locator('.hata-kutu')).toHaveCount(0);
   });
 
-  test('Tarih alanı 1900–2100 dışını yok sayar', async ({ page }) => {
+  test('Tarih alanı 1900–2100 dışını yok sayar; seçilen gün saat 21:00\'de açılır', async ({ page }) => {
     await celestrak(page, { hata: 503 });
     await page.goto('/index.html#gok');
     await expect(page.locator('#gkOlay li').first()).not.toContainText('Hesaplanıyor', { timeout: 15000 });
@@ -138,6 +138,7 @@ test.describe('arayüz', () => {
     await expect(page.locator('#gkBuGece')).toBeHidden();
     await page.locator('#gkTarih').evaluate(i => { i.value = '2027-01-15'; i.dispatchEvent(new Event('change')); });
     await expect(page.locator('#gkBuGece')).toBeVisible();
+    await expect(page.locator('#gkSaat')).toContainText('21:00');   // seçilen gün, konumun saatiyle 21:00
     await expect(page.locator('#gkSaat')).toContainText('15 Ocak');
   });
 
