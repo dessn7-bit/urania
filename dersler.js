@@ -40,6 +40,7 @@
   }
 
   function liste() {
+    gomuluDurdur();
     const b = biten();
     const sira = sirali();
     const sayi = sira.filter(x => b[x.id]).length;
@@ -56,12 +57,51 @@
         <ol class="ders-liste">${ls.map(x => { const i = sira.indexOf(x); return `<li><a href="#ders/${x.id}">
           <span class="no">${i + 1}</span><span class="bas">${U.kacis(x.baslik)}${x.yeni ? ' <span class="rozet">yeni</span>' : ''}</span>
           <span class="durum${b[x.id] ? ' bitti' : ''}">${b[x.id] ? 'okundu' : dakika(x) + ' dk'}</span>
-          <span class="oz">${U.kacis(x.ozet)}</span></a></li>`; }).join('')}</ol>`;
+          <span class="oz">${U.kacis(x.ozet)}</span></a></li>`; }).join('')}</ol>${u.id ? sinavGiris(u) : ''}`;
       }).join('')}
       <p class="kaynak">${U.kacis(D.not || '')}</p>`;
   }
 
+  /* Ders çizimleri (cizim.js ve ünite dosyaları): bölümün paragraflarından sonra, şekil numarası derste sırayla */
+  let sekilNo = 0;
+  function cizimler(ders, bolum) {
+    const C = window.UraniaCizim; if (!C) return '';
+    return C.bolumCizimleri(ders, bolum).map(t => C.html(t, ++sekilNo)).join('');
+  }
+  /* Ders içinde deney: bölümün sonunda, basınca açılır (açılmadan döngü çalışmaz) */
+  const MINI = {
+    d2: { 4: 'tayf' }, d3: { 1: 'kepler', 5: 'yorunge', 7: 'gelgit' }, d5: { 2: 'yildiz' }, d10: { 0: 'evreler' },
+    d13: { 2: 'gecis' }, d16: { 1: 'karadelik', 2: 'gorelilik' }, d17: { 1: 'hubble' }
+  };
+  const DENEY_AD = { tayf: 'Tayf ve Doppler', kepler: 'Kepler yasaları', yorunge: 'Yörünge atışı', gelgit: 'Gelgit', yildiz: 'Yıldızın hayatı',
+    evreler: 'Ay evreleri ve tutulmalar', gecis: 'Ötegezegen geçişi', karadelik: 'Kara deliğe yaklaşmak', gorelilik: 'Işığa yakın yolculuk', hubble: 'Genişleyen evren' };
+  function miniDeney(ders, bolum) {
+    const id = (MINI[ders] || {})[bolum];
+    if (!id) return '';
+    return `<div class="mini-deney" data-deney="${id}"><div class="mini-bas"><span><b>Dene: ${U.kacis(DENEY_AD[id] || id)}</b><span class="kucuk soluk">Okuduğunu burada kaydırıcılarla dene.</span></span>
+      <button type="button" class="dugme mini-ac" aria-expanded="false">Burada aç</button></div><div class="mini-kap" hidden></div>
+      <a class="kucuk mini-tam" href="#deney/${id}">Adım adım rehberle tam sayfada aç</a></div>`;
+  }
+  let gomulu = [];
+  function gomuluDurdur() { gomulu.forEach(g => { try { g.durdur(); } catch (e) { /* yok */ } }); gomulu = []; }
+  function miniBagla() {
+    el.querySelectorAll('.mini-deney').forEach(m => {
+      const b = m.querySelector('.mini-ac'), kap = m.querySelector('.mini-kap');
+      let d = null;
+      b.addEventListener('click', async () => {
+        const ac = kap.hidden;
+        if (!ac) { kap.hidden = true; b.textContent = 'Burada aç'; b.setAttribute('aria-expanded', 'false'); if (d) { d.durdur(); gomulu = gomulu.filter(x => x !== d); d = null; } kap.innerHTML = ''; return; }
+        kap.hidden = false; b.textContent = 'Kapat'; b.setAttribute('aria-expanded', 'true');
+        kap.innerHTML = '<p class="bos">Deney hazırlanıyor…</p>';
+        try { kap.innerHTML = ''; d = await window.UraniaDeney.gom(kap, m.dataset.deney); gomulu.push(d); }
+        catch (e) { kap.innerHTML = '<div class="hata-kutu">Deney açılamadı: ' + U.kacis(e.message) + '</div>'; }
+      });
+    });
+  }
+
   function ders(id) {
+    sekilNo = 0;
+    gomuluDurdur();
     const sira = sirali();
     const i = sira.findIndex(x => x.id === id);
     if (i < 0) { liste(); return; }
@@ -78,7 +118,8 @@
       ${x.ozet ? `<p class="ders-ozet okunur">${U.kacis(x.ozet)}</p>` : ''}
       <div class="dinle" id="dsSes" role="group" aria-label="Dersi dinle"></div>
       ${sonraki ? `<label class="secim-satir kucuk ds-surekli"><input type="checkbox" id="dsSurekli"${U.oku('sesSurekli', false) ? ' checked' : ''}> <span>Bitince sonraki derse geç ve okumayı sürdür</span></label>` : ''}
-      ${x.bolumler.map(bl => `<h2 class="okunur">${U.kacis(bl.baslik)}</h2>${bl.paragraflar.map(p => `<p class="okunur">${U.kacis(p)}</p>`).join('')}
+      ${x.bolumler.map((bl, bi) => `<h2 class="okunur">${U.kacis(bl.baslik)}</h2>${bl.paragraflar.map(p => `<p class="okunur">${U.kacis(p)}</p>`).join('')}
+        ${cizimler(x.id, bi)}${miniDeney(x.id, bi)}
         ${bl.ornek ? `<div class="ornek okunur" data-ses="${U.kacis(bl.ornek.baslik + '. ' + bl.ornek.metin)}"><div class="ornek-bas">${U.kacis(bl.ornek.baslik)}</div><p>${U.kacis(bl.ornek.metin)}</p></div>` : ''}
         ${bl.akilda ? `<p class="akilda okunur" data-ses="${U.kacis('Aklında kalsın: ' + bl.akilda)}"><span>Aklında kalsın</span>${U.kacis(bl.akilda)}</p>` : ''}`).join('')}
       ${x.formuller && x.formuller.length ? `<h2>Formüller</h2>${x.formuller.map(f => `<div class="formul"><div class="soluk kucuk">${U.kacis(f.ad)}</div><div class="ifade">${U.kacis(f.ifade)}</div>${f.aciklama ? `<div class="acik">${U.kacis(f.aciklama)}</div>` : ''}</div>`).join('')}` : ''}
@@ -92,6 +133,7 @@
       <p class="kaynak">Kaynaklar: ${x.kaynaklar.map(k => `<a href="${U.guvenliUrl(k.url)}" target="_blank" rel="noopener">${U.kacis(k.ad)}</a>`).join(' · ')}</p>
       <div class="ders-son">
         <button type="button" class="dugme${b[x.id] ? '' : ' dolu'}" id="dsBitir" aria-pressed="${!!b[x.id]}">${b[x.id] ? 'Okundu olarak işaretli' : 'Okudum'}</button>
+        ${uniteSonu(x.id)}
         <span class="cip-grup">${onceki ? `<a class="dugme" href="#ders/${onceki.id}">Önceki</a>` : ''}${sonraki ? `<a class="dugme" href="#ders/${sonraki.id}">Sonraki: ${U.kacis(sonraki.baslik)}</a>` : ''}</span>
       </div>
     </article>`;
@@ -113,6 +155,7 @@
         location.hash = '#ders/' + sonraki.id;
       }
     });
+    miniBagla();
     const sk = el.querySelector('#dsSurekli');
     if (sk) sk.addEventListener('change', () => U.yaz('sesSurekli', sk.checked));
     let devamEt = null;
@@ -123,6 +166,74 @@
 
   /* Sesli okuma: başlık, bölümler ve deftere notları (.okunur); formüller ve sorular okunmaz.
      Motor ses.js'te (Pinakes'ten uyarlandı). */
+
+  /* ---- Ünite sınavları (veri/sinavlar.json): çoktan seçmeli; yanlışlar tekrar kartlarına düşer ---- */
+  function sinavSorulari(uid) { return (D.sinavlar && D.sinavlar.uniteler && D.sinavlar.uniteler[uid]) || []; }
+  function sinavSonuclari() { return U.oku('sinavSonuc', {}) || {}; }
+  function sinavGiris(u) {
+    const ls = sinavSorulari(u.id); if (!ls.length) return '';
+    const g = (sinavSonuclari()[u.id] || []).slice(-1)[0];
+    return `<a class="sinav-giris" href="#ders/sinav/${u.id}"><b>Ünite sınavı</b><span>${ls.length} soru${g ? ` · son sonucun ${g.dogru}/${g.toplam}` : ''}</span></a>`;
+  }
+  function uniteSonu(dersId) {
+    const u = (D.uniteler || []).find(u => u.dersler[u.dersler.length - 1] === dersId);
+    return u && sinavSorulari(u.id).length ? `<a class="dugme" href="#ders/sinav/${u.id}">Ünite sınavı: ${U.kacis(u.ad)}</a>` : '';
+  }
+  let sinavOturum = null;
+  function karistir(ls) { const a = ls.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+  function sinav(uid) {
+    gomuluDurdur();
+    const u = (D.uniteler || []).find(x => x.id === uid), ls = sinavSorulari(uid);
+    if (!u || !ls.length) { liste(); return; }
+    if (!sinavOturum || sinavOturum.uid !== uid) sinavOturum = { uid, sira: karistir(ls), i: 0, cevap: {}, dogru: 0 };
+    sinavCiz(u);
+  }
+  const HARF = ['A', 'B', 'C', 'D', 'E'];
+  function sinavCiz(u) {
+    const o = sinavOturum, q = o.sira[o.i];
+    const ust = `<a class="geri" href="#ders">Tüm dersler</a><h1>Ünite sınavı</h1><p class="alt-baslik">${U.kacis(u.ad)}</p>`;
+    if (!q) {
+      const yanlis = o.sira.filter(x => o.cevap[x.id] !== x.dogru);
+      const sonuc = sinavSonuclari(); (sonuc[u.id] = sonuc[u.id] || []).push({ t: Date.now(), dogru: o.dogru, toplam: o.sira.length }); sonuc[u.id] = sonuc[u.id].slice(-20); U.yaz('sinavSonuc', sonuc);
+      const gecmis = sonuc[u.id].slice(-6).map(g => `${g.dogru}/${g.toplam}`).join(' · ');
+      el.innerHTML = `${ust}<p class="sinav-puan" tabindex="-1" id="snSon"><b>${o.dogru} / ${o.sira.length}</b> doğru.</p>
+        <p class="kucuk soluk">Son sonuçların: ${gecmis}</p>
+        ${yanlis.length ? `<p>Yanlış yaptığın ${yanlis.length} soru tekrar kartlarına eklendi; doğru bildikçe seyrekleşir.</p>
+          <ul class="liste">${yanlis.map(x => { const d = D.dersler.find(d => d.id === x.ders); return `<li><span>${U.kacis(x.soru)}<br><span class="kucuk soluk">Doğrusu: ${U.kacis(x.secenekler[x.dogru])}${d ? ` · <a href="#ders/${d.id}">${U.kacis(d.baslik)}</a>` : ''}</span></span></li>`; }).join('')}</ul>` : '<p>Hepsini bildin.</p>'}
+        <div class="cip-grup"><button type="button" class="dugme dolu" id="snTekrar">Yeniden çöz</button><a class="dugme" href="#ders">Derslere dön</a></div>`;
+      el.querySelector('#snTekrar').addEventListener('click', () => { sinavOturum = null; sinav(u.id); });
+      el.querySelector('#snSon').focus();
+      return;
+    }
+    const secildi = o.cevap[q.id];
+    const cevaplandi = secildi != null;
+    const d = D.dersler.find(x => x.id === q.ders);
+    el.innerHTML = `${ust}
+      <p class="kucuk soluk">Soru ${o.i + 1} / ${o.sira.length} · ${o.dogru} doğru</p>
+      <div class="sinav-soru"><p id="snSoru" tabindex="-1">${U.kacis(q.soru)}</p>
+        <div class="sinav-secenek" role="group" aria-label="Seçenekler">${q.secenekler.map((s, i) => {
+          const sinif = !cevaplandi ? '' : (i === q.dogru ? ' dogru' : (i === secildi ? ' yanlis' : ''));
+          return `<button type="button" class="dugme${sinif}" data-i="${i}"${cevaplandi ? ' disabled' : ''}><b>${HARF[i]}</b> ${U.kacis(s)}</button>`; }).join('')}</div>
+        ${cevaplandi ? `<p class="sinav-sonuc ${secildi === q.dogru ? 'iyi' : 'kotu'}" role="status"><b>${secildi === q.dogru ? 'Doğru.' : 'Doğrusu ' + HARF[q.dogru] + '.'}</b> ${U.kacis(q.aciklama)}${d ? ` <a href="#ders/${d.id}">${U.kacis(d.baslik)}</a>` : ''}</p>
+          <button type="button" class="dugme dolu" id="snSonraki">${o.i + 1 < o.sira.length ? 'Sonraki soru' : 'Sonucu gör'}</button>` : ''}
+        <button type="button" class="bag" id="snDinle">${cevaplandi ? 'Açıklamayı dinle' : 'Soruyu dinle'}</button>
+      </div>`;
+    el.querySelectorAll('.sinav-secenek button').forEach(b => b.addEventListener('click', () => {
+      const i = Number(b.dataset.i);
+      o.cevap[q.id] = i;
+      const yan = U.oku('sinavYanlis', {}) || {};
+      if (i === q.dogru) { o.dogru++; } else { yan[q.id] = Date.now(); U.yaz('sinavYanlis', yan); }
+      Ses.sus();
+      sinavCiz(u);
+      const s = el.querySelector('#snSonraki'); if (s) s.focus();
+    }));
+    const sn = el.querySelector('#snSonraki');
+    if (sn) sn.addEventListener('click', () => { Ses.sus(); o.i++; sinavCiz(u); const p = el.querySelector('#snSoru') || el.querySelector('#snSon'); if (p) p.focus(); window.scrollTo(0, 0); });
+    el.querySelector('#snDinle').addEventListener('click', () => {
+      if (!cevaplandi) Ses.soyle(q.soru + ' ' + q.secenekler.map((s, i) => HARF[i] + ': ' + s + '.').join(' '));
+      else Ses.soyle((o.cevap[q.id] === q.dogru ? 'Doğru. ' : 'Doğrusu ' + HARF[q.dogru] + ': ' + q.secenekler[q.dogru] + '. ') + q.aciklama);
+    });
+  }
 
   /* ---- Tekrar kartları ---- */
   let oturum = null, kartSayac = 0;
@@ -207,7 +318,10 @@
   async function ilk(kok) {
     el = kok;
     el.innerHTML = '<p class="bos">Dersler yükleniyor…</p>';
-    try { D = await U.veri('dersler'); } catch (e) {
+    try {
+      D = await U.veri('dersler');
+      try { D.sinavlar = await U.veri('sinavlar'); } catch (e) { D.sinavlar = null; }   // sınavlar yoksa dersler yine açılır
+    } catch (e) {
       el.innerHTML = '<div class="hata-kutu">Dersler yüklenemedi: ' + U.kacis(e.message) + '</div>'; return;
     }
     goster(kok, (location.hash.split('/')[1]) || '');
@@ -215,7 +329,8 @@
   function goster(kok, param) {
     if (!D) return;
     if (param === 'kartlar') kartlar(false);
-    else { oturum = null; if (param) ders(param); else liste(); }
+    else if (param.startsWith('sinav/')) { oturum = null; sinav(param.slice(6)); }
+    else { oturum = null; sinavOturum = null; if (param) ders(param); else liste(); }
   }
   U.modul('ders', { ilk, goster });
 })();

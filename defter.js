@@ -6,7 +6,7 @@
   'use strict';
   const G = window.Gok, U = window.Urania;
   const DEPO = 'defter';
-  let el = null, veri = null, duzenlenen = null;
+  let el = null, veri = null, duzenlenen = null, gorevAcik = false;
 
   /* ---------- Depo ---------- */
   function kayitlar() { const k = U.oku(DEPO, []); return Array.isArray(k) ? k : []; }
@@ -32,6 +32,7 @@
       const y = veri.yildizlar.y[i];
       if (y[2] <= 2.5) ls.push({ grup: 'Parlak yıldızlar', anahtar: 'yildiz:' + veri.yildizlar.adlar[i], ad: veri.yildizlar.adlar[i], ra: y[0], dec: y[1] });
     });
+    if (veri.gorevler) veri.gorevler.gorevler.filter(g => g.anahtar.startsWith('gorev:')).forEach(g => ls.push({ grup: 'Gözlem görevleri', anahtar: g.anahtar, ad: g.ad, ra: g.ra, dec: g.dec }));
     veri.takimyildizlar.slice().sort((a, b) => a.ad.localeCompare(b.ad, 'tr')).forEach(t => ls.push({ grup: 'Takımyıldızlar', anahtar: 'ty:' + t.k, ad: t.ad, ra: t.m[0], dec: t.m[1] }));
     return ls;
   }
@@ -70,6 +71,7 @@
     el.innerHTML = `
       <h1>Gözlem defteri</h1>
       <p class="alt-baslik" id="dfOzet"></p>
+      <a class="sinav-giris" id="dfGorev" href="#defter/gorevler" hidden><b>Gözlem görevleri</b><span id="dfGorevSayi"></span></a>
       <button type="button" class="dugme dolu" id="dfYeni">Yeni kayıt</button>
       <form class="defter-form" id="dfForm" hidden>
         <h2 id="dfFormBaslik" style="margin-top:20px">Yeni kayıt</h2>
@@ -182,6 +184,8 @@
   }
 
   function listeYaz() {
+    const gz = window.Gorevler && Gorevler.ozet(veri);
+    if (gz) { el.querySelector('#dfGorev').hidden = false; el.querySelector('#dfGorevSayi').textContent = `${gz.toplam} görevden ${gz.biten} tanesi tamam`; }
     const ls = kayitlar().slice().sort((a, b) => b.zaman.localeCompare(a.zaman));
     const farkli = new Set(ls.map(k => k.cisim.anahtar));
     const hedefSayisi = veri.hedefler.filter(h => farkli.has('hedef:' + h.id)).length;
@@ -273,14 +277,16 @@
   async function ilk(kok) {
     el = kok;
     el.innerHTML = '<p class="bos">Defter açılıyor…</p>';
-    const [yildizlar, takimyildizlar, hedefler, meteor] = await Promise.all([U.veri('yildizlar'), U.veri('takimyildiz'), U.veri('hedefler'), U.veri('meteor')]);
-    veri = { yildizlar, takimyildizlar, hedefler: hedefler.hedefler, meteor };
+    const [yildizlar, takimyildizlar, hedefler, meteor, gorevler] = await Promise.all([U.veri('yildizlar'), U.veri('takimyildiz'), U.veri('hedefler'), U.veri('meteor'), U.veri('gorevler').catch(() => null)]);
+    veri = { yildizlar, takimyildizlar, hedefler: hedefler.hedefler, meteor, gorevler };
     iskelet();
     goster(kok, location.hash.split('/').slice(1).join('/'));
   }
   /* #defter ya da #defter/yeni/<anahtar> */
   function goster(kok, param) {
     if (!veri) return;
+    if ((param || '').split('/')[0] === 'gorevler' && window.Gorevler) { gorevAcik = true; Gorevler.ciz(el, veri); return; }
+    if (gorevAcik || !el.querySelector('#dfListe')) { gorevAcik = false; iskelet(); }
     listeYaz();
     const p = (param || '').split('/');
     if (p[0] === 'yeni') formAc(null, p[1] ? decodeURIComponent(p[1]) : null);

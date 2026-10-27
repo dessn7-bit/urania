@@ -413,3 +413,43 @@ label.dugme { cursor: pointer; }
 .rh-ac p { margin: 6px 0; font-size: 15px; }
 .deney-ders { margin-top: 18px; font-family: var(--sans); }
 .rehber .bag { background: none; border: 0; padding: 0; color: var(--pirinc); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; font-size: 14px; }
+/* Ders çizimleri */
+figure.cizim { margin: 18px 0 20px; padding: 12px 12px 10px; background: var(--levha); border: 1px solid var(--cizgi); border-radius: var(--r); }
+figure.cizim svg { display: block; width: 100%; height: auto; max-height: 70vh; }
+figure.cizim figcaption { margin-top: 8px; font-family: var(--sans); font-size: 14px; line-height: 1.5; color: var(--soluk); }
+figure.cizim figcaption b { color: var(--parsomen); font-weight: 600; }
+figure.cizim figcaption a { color: var(--pirinc); }
+/* Ders içinde deney */
+.mini-deney { margin: 16px 0 20px; padding: 12px; border: 1px dashed var(--pirinc-soluk); border-radius: var(--r); background: var(--levha); }
+.mini-bas { display: flex; align-items: center; justify-content: space-between; gap: 12px; font-family: var(--sans); }
+.mini-bas > span { display: flex; flex-direction: column; gap: 2px; }
+.mini-kap { margin-top: 12px; }
+.mini-tam { display: inline-block; margin-top: 8px; color: var(--pirinc); font-family: var(--sans); }
+.mini-kap { font-family: var(--sans); }
+/* Ünite sınavları */
+.sinav-giris { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin: 4px 0 22px; padding: 12px 14px; border: 1px solid var(--pirinc-soluk); border-radius: var(--r); background: var(--levha); color: var(--parsomen); text-decoration: none; font-family: var(--sans); }
+.sinav-giris b { color: var(--pirinc); }
+.sinav-giris span { color: var(--soluk); font-size: 14px; }
+.sinav-soru > p:first-child { font-size: 1.1em; }
+.sinav-secenek { display: flex; flex-direction: column; gap: 8px; margin: 12px 0; }
+.sinav-secenek .dugme { text-align: left; justify-content: flex-start; white-space: normal; line-height: 1.4; padding: 10px 12px; }
+.sinav-secenek .dugme b { color: var(--pirinc); margin-right: 6px; }
+.sinav-secenek .dugme.dogru { border-color: var(--iyi); color: var(--iyi); }
+.sinav-secenek .dugme.yanlis { border-color: var(--uyari); color: var(--uyari); text-decoration: line-through; }
+.sinav-secenek .dugme:disabled { opacity: 1; cursor: default; }
+.sinav-sonuc { padding: 10px 12px; border-radius: var(--r); background: var(--levha); border-left: 3px solid var(--iyi); }
+.sinav-sonuc.kotu { border-left-color: var(--uyari); }
+.sinav-puan { font-size: 1.4em; }
+#snDinle { display: block; margin-top: 12px; }
+/* Gözlem görevleri */
+.ilerleme { height: 8px; border-radius: 4px; background: var(--levha-2); overflow: hidden; margin: 8px 0 12px; }
+.ilerleme span { display: block; height: 100%; background: var(--pirinc); }
+.rozetler { margin: 4px 0 12px; }
+.gorev-liste li { display: block; }
+.gorev-liste summary { cursor: pointer; list-style: none; display: flex; flex-direction: column; gap: 2px; }
+.gorev-liste summary::-webkit-details-marker { display: none; }
+.gorev-liste summary .alt { font-family: var(--sans); font-size: 13px; color: var(--soluk); }
+.gorev-liste summary .alt span.soluk { opacity: .35; }
+.gorev-liste li.bitti .ad { color: var(--soluk); }
+.gorev-ic { padding: 8px 0 4px; }
+.gorev-ic p { margin: 6px 0; }

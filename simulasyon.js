@@ -61,12 +61,17 @@
   }
 
   /* Çalışan animasyon döngüsü — bölüm gizlenince durur */
-  function dongu(ciz) {
+  /* Döngü hangi kökte kurulduysa (Deneyler bölümü ya da ders içindeki kutu) o görünürken çizer */
+  let kurulanKok = null;
+  function gorunur(kok) { return kok ? kok.isConnected && !kok.closest('[hidden]') : !el.hidden; }
+  function dongu(ciz, kok) {
     let id = null, son = performance.now(), calisiyor = true;
+    kok = kok || kurulanKok;
     function adim(t) {
       if (!calisiyor) return;
+      if (kok && !kok.isConnected) { calisiyor = false; return; }      // kutu sayfadan kalktı: döngü kendini bitirir
       const dt = Math.min(0.05, (t - son) / 1000); son = t;
-      if (!el.hidden) ciz(dt);
+      if (gorunur(kok)) ciz(dt);
       id = requestAnimationFrame(adim);
     }
     id = requestAnimationFrame(adim);
@@ -464,11 +469,11 @@
 
   const KURUCU = { karadelik, yorunge, yildiz, gorelilik };
   /* Yeni deneyler (deneyler2.js) ortak yardımcılarla kurulur */
-  function ortak() { return { F, U, R, kanvas, kaydirici, olcumler, kaynakSatiri, dongu, renk, deger, azHareket, el: () => el }; }
+  function ortak(kok) { return { F, U, R, kanvas, kaydirici, olcumler, kaynakSatiri, dongu: ciz => dongu(ciz, kok), renk, deger, azHareket, el: () => el }; }
   function kurucu(id) {
     if (KURUCU[id]) return KURUCU[id];
     const ek = window.UraniaDeneyEk && window.UraniaDeneyEk[id];
-    return ek ? kap => ek(kap, ortak()) : null;
+    return ek ? kap => ek(kap, ortak(kap)) : null;
   }
 
   /* ---- Rehber: "Yap / Gözle / Neden" adımları. "Uygula" düğmesi deneyin kontrollerini ayarlar. ---- */
@@ -514,7 +519,9 @@
       ${rehberHtml(id)}
       ${r.ders ? `<p class="deney-ders">İlgili ders: <a href="#ders/${r.ders}">${U.kacis(dersAdi(r.ders))}</a></p>` : ''}`;
     const kap = el.querySelector('#deneyKap');
+    kurulanKok = kap;
     aktif = k(kap) || null;
+    kurulanKok = null;
     erisilebilir(kap, d.ad);
     el.querySelectorAll('.rh-uygula').forEach(b => b.addEventListener('click', () => rehberUygula(kap, id, Number(b.dataset.i))));
     window.scrollTo(0, 0);
@@ -562,5 +569,17 @@
     if (param && kap && kap.dataset.deney === param && aktif) return;
     if (param) deneyAc(param); else listeAc();
   }
+  /* Ders içine gömülü deney: fizik verisini yükler, deneyi kutuya kurar; {durdur} döndürür */
+  async function gom(kap, id) {
+    if (!F) [F, R] = await Promise.all([U.veri('fizik'), U.veri('deney_rehber').catch(() => ({}))]);
+    const k = kurucu(id);
+    if (!k) throw new Error('deney yok: ' + id);
+    kurulanKok = kap;
+    let d = null;
+    try { d = k(kap) || null; } finally { kurulanKok = null; }
+    erisilebilir(kap, (DENEYLER.find(x => x.id === id) || { ad: id }).ad);
+    return { durdur() { if (d && d.durdur) d.durdur(); } };
+  }
+  window.UraniaDeney = { gom, liste: () => DENEYLER.slice() };
   U.modul('deney', { ilk, goster });
 })();

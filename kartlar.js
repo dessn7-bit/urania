@@ -15,6 +15,13 @@
       (x.anahtar_sayilar || []).forEach((s, i) => ls.push({ id: x.id + 'n' + i, ders: x.id, dersAd: x.baslik, tur: 'sayi', on: s.aciklama, arka: s.deger, kaynak: s.kaynak_url }));
       (x.sozluk || []).forEach((s, i) => ls.push({ id: x.id + 't' + i, ders: x.id, dersAd: x.baslik, tur: 'terim', on: s.terim, arka: s.tanim }));
     });
+    /* Ünite sınavında yanlış yapılan sorular (D.sinavlar yüklüyse) */
+    const yan = U.oku('sinavYanlis', {}) || {};
+    if (D.sinavlar && D.sinavlar.uniteler) Object.values(D.sinavlar.uniteler).forEach(ls2 => ls2.forEach(q => {
+      if (!yan[q.id]) return;
+      const d = D.dersler.find(x => x.id === q.ders);
+      ls.push({ id: 'sv-' + q.id, ders: q.ders, dersAd: d ? d.baslik : '', tur: 'sinav', on: q.soru, arka: q.secenekler[q.dogru] + '. ' + q.aciklama });
+    }));
     return ls;
   }
   function kayit() { return U.oku(ANAHTAR, {}) || {}; }
@@ -23,7 +30,7 @@
   /* Destedeki kartlar: okunmuş derslerinkiler (ya da hepsi) */
   function deste(D, hepsi) {
     const biten = U.oku('dersBitti', {}) || {};
-    return tumKartlar(D).filter(k => hepsi || biten[k.ders]);
+    return tumKartlar(D).filter(k => hepsi || biten[k.ders] || k.tur === 'sinav');
   }
   /* Bugün sorulacaklar: hiç görülmemiş ya da zamanı gelmiş; önce eski kutular */
   function bugunku(D, hepsi, simdi) {
