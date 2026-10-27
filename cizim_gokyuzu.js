@@ -151,18 +151,15 @@
       s += S.yazi(cx, cy - r - 8, 'Başucu', { boy: 13, hiza: 'middle', renk: R.soluk });
       /* Güneş'in öğle yüksekliğinin yıl içindeki aralığı */
       s += S.yay(cx, cy, r, hK, hY, { renk: R.gunes, kalin: 5, uc: 'round', saydam: 0.45 });
-      const gunesler = [[hY, 'Haziran ' + tr(hY, 1) + '°'], [hE, 'Ekinoks ' + tr(hE, 0) + '°'], [hK, 'Aralık ' + tr(hK, 1) + '°']];
+      /* etiketlerdeki değerler dersin örneğinden (72,4 · 49 · 25,6); konumlar formülden */
+      const gunesler = [[hY, 'Haziran 72,4°'], [hE, 'Ekinoks 49°'], [hK, 'Aralık 25,6°']];
       gunesler.forEach(([h, ad], i) => {
         const x = cx + r * Math.cos(h * rad), y = cy - r * Math.sin(h * rad);
         s += S.cizgi(cx, cy, x, y, { renk: R.gunes, kalin: 1.4, kesik: i === 1 ? '6 4' : null });
         s += S.daire(x, y, 8, { dolgu: R.gunes, renk: R.gunes });
         s += S.yazi(x + 14, y + 5, ad, { boy: 14, renk: R.metin, kalin: true });
       });
-      /* ± eğiklik yayları */
-      s += S.yay(cx, cy, 62, hE, hY, { renk: R.vurgu, kalin: 1.5 });
-      s += S.yay(cx, cy, 62, hK, hE, { renk: R.vurgu, kalin: 1.5 });
-      const ey = (h, t) => { const a = h * rad; return [cx + 50 * Math.cos(a), cy - 50 * Math.sin(a) + 5, t]; };
-      [[ (hE + hY) / 2, '+23,44°'], [(hK + hE) / 2, '−23,44°']].forEach(([h, t]) => { const p = ey(h, t); s += S.yazi(p[0], p[1], t, { boy: 13, renk: R.vurgu, hiza: 'end' }); });
+      s += S.yazi(cx + 92, cy - 30, 'gök ekvatoru', { boy: 13, renk: R.soluk, yan: -hE });
       s += S.daire(cx, cy, 4.5, { dolgu: R.metin, renk: R.metin });
       /* alt: aynı demet, iki geliş açısı */
       const zem = 318, w = 30;
@@ -178,8 +175,8 @@
       s += S.cizgi(214, zem, 392, zem, { renk: R.metin, kalin: 1.5 });
       const dY = demet(64, hY, 82), dK = demet(222, hK, 90);
       s += dY.svg + dK.svg;
-      s += S.yazi(100, 236, 'Haziran öğlesi', { boy: 14, renk: R.metin, hiza: 'middle', kalin: true });
-      s += S.yazi(300, 236, 'Aralık öğlesi', { boy: 14, renk: R.metin, hiza: 'middle', kalin: true });
+      s += S.yazi(100, 236, 'Haziran öğlesi, 72,4°', { boy: 14, renk: R.metin, hiza: 'middle', kalin: true });
+      s += S.yazi(300, 236, 'Aralık öğlesi, 25,6°', { boy: 14, renk: R.metin, hiza: 'middle', kalin: true });
       s += S.yazi(64 + dY.iz / 2, zem + 22, 'dar iz', { boy: 13, renk: R.soluk, hiza: 'middle' });
       s += S.yazi(222 + dK.iz / 2, zem + 22, tr(dK.iz / dY.iz, 1) + ' kat geniş iz', { boy: 13, renk: R.soluk, hiza: 'middle' });
       s += S.cizgi(200, 228, 200, 340, { renk: R.cizgi, kalin: 1 });
