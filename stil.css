@@ -327,3 +327,5 @@ label.dugme { cursor: pointer; }
 .uydu { fill: var(--parsomen); }
 .uydu-gizli { fill: none; stroke: var(--soluk); stroke-dasharray: 2 2; }
 .uydu-ad, .uydu-yon { fill: var(--soluk); font: 500 10px var(--sans); }
+.secim-satir { display: flex; gap: 10px; align-items: flex-start; font-size: 15px; cursor: pointer; }
+.secim-satir input { width: 20px; height: 20px; margin-top: 2px; accent-color: var(--pirinc); flex: none; }

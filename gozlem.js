@@ -76,11 +76,14 @@
       <dialog id="gkKonumPanel">
         <form method="dialog" id="gkKonumForm">
           <h3 style="margin-bottom:12px">Gözlem yeri</h3>
-          <button type="button" class="dugme dolu" id="gkGps" style="width:100%;margin-bottom:14px">Bulunduğum yeri kullan</button>
+          <label class="secim-satir"><input type="checkbox" id="gkKOto"> <span><b>Her zaman bulunduğum yeri kullan</b><br><span class="soluk kucuk">Uygulama her açıldığında ve 10 dakikada bir telefonun konumunu alır.</span></span></label>
+          <div id="gkKElle">
+          <button type="button" class="dugme" id="gkGps" style="width:100%;margin:12px 0 14px">Şu anki konumu bir kez al</button>
           <div class="alan"><label for="gkKAd">Ad</label><input id="gkKAd" autocomplete="off"></div>
           <div class="hesap-ızgara">
             <div class="alan"><label for="gkKEnlem">Enlem (°K)</label><input id="gkKEnlem" inputmode="decimal"></div>
             <div class="alan"><label for="gkKBoylam">Boylam (°D)</label><input id="gkKBoylam" inputmode="decimal"></div>
+          </div>
           </div>
           <p class="soluk kucuk" id="gkKDurum"></p>
           <div class="cip-grup" style="justify-content:space-between">
@@ -386,8 +389,20 @@
   function listeleriYaz() {
     takvimOlaylari.length = 0;
     ozetYaz(); gezegenYaz(); hedefYaz(); meteorYaz(); olayYaz();
-    const k = U.konum();
-    el.querySelector('#gkKonum').textContent = k.ad + ' (' + U.sayi(k.enlem, 2) + '°, ' + U.sayi(k.boylam, 2) + '°) · saatler: ' + U.dilimAdi(k.saatDilimi);
+    konumYazi();
+  }
+
+  /* Konum şeridi: ad, kaynak (GPS / son bilinen / elle) ve varsa sorun */
+  function konumYazi() {
+    const k = U.konum(), d = U.konumDurum;
+    let kaynak;
+    if (!U.otoAcik()) kaynak = 'elle seçildi';
+    else if (d.kaynak === 'gps' && k.oto) kaynak = 'GPS' + (d.hassasiyet ? ', ±' + (d.hassasiyet >= 1000 ? U.sayi(d.hassasiyet / 1000, 1) + ' km' : Math.round(d.hassasiyet) + ' m') : '');
+    else if (d.hata === 'izin') kaynak = 'konum izni yok, ' + (k.oto ? 'son bilinen yer' : 'varsayılan yer');
+    else if (d.hata) kaynak = 'konum alınamadı, ' + (k.oto ? 'son bilinen yer' : 'varsayılan yer');
+    else kaynak = k.oto ? 'son bilinen yer, güncelleniyor…' : 'konum aranıyor…';
+    const s = el.querySelector('#gkKonum');
+    if (s) s.textContent = k.ad + ' (' + U.sayi(k.enlem, 2) + '°, ' + U.sayi(k.boylam, 2) + '°) · ' + kaynak + (k.saatDilimi !== 'Europe/Istanbul' ? ' · saatler: ' + U.dilimAdi(k.saatDilimi) : '');
   }
 
   /* ---- Konum paneli ---- */
@@ -400,6 +415,9 @@
     el.querySelector('#gkKEnlem').value = String(k.enlem).replace('.', ',');
     el.querySelector('#gkKBoylam').value = String(k.boylam).replace('.', ',');
     el.querySelector('#gkKDurum').textContent = '';
+    const oto = el.querySelector('#gkKOto');
+    oto.checked = U.otoAcik();
+    el.querySelector('#gkKElle').hidden = oto.checked;
     if (p.showModal) p.showModal(); else p.setAttribute('open', '');
   }
   function sayiOku(s) { return parseFloat(String(s).replace(',', '.')); }
@@ -420,6 +438,7 @@
         d.textContent = err.code === 1 ? 'Konum izni verilmedi. Tarayıcı ayarlarından izin ver ya da elle yaz.' : 'Konum alınamadı; elle yaz.';
       }, { enableHighAccuracy: false, timeout: 15000, maximumAge: 600000 });
     });
+    el.querySelector('#gkKOto').addEventListener('change', e => { el.querySelector('#gkKElle').hidden = e.target.checked; });
     el.querySelector('#gkKSifirla').addEventListener('click', () => {
       const v = U.VARSAYILAN_KONUM;
       el.querySelector('#gkKAd').value = v.ad;
@@ -428,6 +447,13 @@
     });
     p.addEventListener('close', () => {
       if (p.returnValue !== 'kaydet') return;
+      if (el.querySelector('#gkKOto').checked) {
+        U.otoAyarla(true);
+        konumYazi();
+        U.konumuBul(true);
+        return;
+      }
+      U.otoAyarla(false);
       const enlem = sayiOku(el.querySelector('#gkKEnlem').value);
       const boylam = sayiOku(el.querySelector('#gkKBoylam').value);
       if (!(enlem >= -90 && enlem <= 90 && boylam >= -180 && boylam <= 180)) {
@@ -437,7 +463,7 @@
       const vars = U.VARSAYILAN_KONUM;
       const saatDilimi = gpsDilim || (Math.abs(enlem - vars.enlem) < 1e-6 && Math.abs(boylam - vars.boylam) < 1e-6 ? vars.saatDilimi : U.dilimTahmin(boylam));
       gpsDilim = null;
-      U.konumYaz({ ad: el.querySelector('#gkKAd').value.trim() || 'Özel konum', enlem, boylam, yukseklik: 0, saatDilimi });
+      U.konumYaz({ ad: el.querySelector('#gkKAd').value.trim() || 'Özel konum', enlem, boylam, yukseklik: 0, saatDilimi, oto: false });
       geceHesapla(); levhaCiz();
     });
   }
@@ -492,6 +518,11 @@
       bilgiSayac = setTimeout(() => { bilgi.hidden = true; }, 6000);
     });
     konumBagla();
+    document.addEventListener('urania:konum', () => {
+      if (!durum.gzl) return;
+      konumYazi();
+      if (geceAnahtariDegisti()) { geceHesapla(); levhaCiz(); }
+    });
     el.addEventListener('click', e => {
       const b = e.target.closest('[data-takvim]'); if (!b) return;
       const o = takvimOlaylari[Number(b.dataset.takvim)]; if (o) U.icsIndir(o);
@@ -509,7 +540,7 @@
       'Konum ve zaman hesapları <a href="https://github.com/cosinekitty/astronomy" target="_blank" rel="noopener">Astronomy Engine</a> ile cihazında yapılır. ' +
       'Yıldız ve takımyıldız verisi <a href="https://github.com/ofrohn/d3-celestial" target="_blank" rel="noopener">d3-celestial</a>. ' +
       'Meteor verisi: <a href="' + U.guvenliUrl(m.kaynak_url) + '" target="_blank" rel="noopener">' + U.kacis(m.kaynak) + '</a>. ' +
-      'Hedef koordinatları: ' + U.kacis(durum.veri.hedefKaynak) + '.';
+      'Hedef koordinatları: ' + U.kacis(durum.veri.hedefKaynak) + '. Yer adları © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> katkıcıları.';
   }
 
   async function ilk(kok) {

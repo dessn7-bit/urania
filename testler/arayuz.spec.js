@@ -188,10 +188,10 @@ test('Takvime ekle: geçerli .ics dosyası iner', async ({ page }) => {
   expect(metin.replace(/\r\n/g, '')).not.toContain('\n');
 });
 
-test('ISS: görünür geçişler listelenir (ilk: 28 Ekim 05:20–05:21 TSİ)', async ({ page }) => {
+test('ISS: görünür geçişler listelenir (ilk: 28 Ekim 05:20–05:22 TSİ)', async ({ page }) => {
   await page.goto('/index.html#gok');
   const ilk = page.locator('#gkIss li').first();
-  await expect(ilk).toContainText('05:20–05:21');
+  await expect(ilk).toContainText('05:20–05:22'); // 02:20:29–02:21:51 UT, en yakın dakikaya yuvarlı
   await expect(ilk).toContainText('28 Ekim');
   await expect(page.locator('#gkIssKaynak')).toContainText('CelesTrak');
 });

@@ -87,7 +87,8 @@
     tamB = new Intl.DateTimeFormat('tr-TR', Object.assign({ day: 'numeric', month: 'long', year: 'numeric' }, tz));
   }
   bicimleyicileriKur(konum().saatDilimi);
-  function saat(d) { return d ? saatB.format(d) : '—'; }
+  /* En yakın dakikaya yuvarlanır (USNO gibi); Intl kendiliğinden aşağı keser */
+  function saat(d) { return d ? saatB.format(new Date(Math.round(d.getTime() / 60e3) * 60e3)) : '—'; }
   function gun(d) { return d ? gunB.format(d) : '—'; }
   function gunHafta(d) { return d ? gunHaftaB.format(d) : '—'; }
   function tamTarih(d) { return d ? tamB.format(d) : '—'; }
@@ -180,6 +181,69 @@
     document.title = 'Urania — ' + ({ gok: 'Gökyüzü', deney: 'Deneyler', ders: 'Dersler', hesap: 'Hesap', defter: 'Defter', ar: 'Gökyüzüne bak' }[bolum]);
   }
 
+  /* ---- Otomatik konum: telefon nerdeyse orası (varsayılan açık) ----
+     Başarısız olursa son bilinen konum, o da yoksa varsayılan kullanılır.
+     Yer adı OpenStreetMap Nominatim ters kodlamasından; ~1 km'lik hücre başına bir kez sorulur. */
+  const konumDurum = { kaynak: null, hata: null, hassasiyet: null, zaman: null };
+  function otoAcik() { return oku('konumOto', true) !== false; }
+  function otoAyarla(acik) { yaz('konumOto', !!acik); }
+  function mesafeKm(a, b) {
+    const R = 6371, r = Math.PI / 180;
+    const dLa = (b.enlem - a.enlem) * r, dLo = (b.boylam - a.boylam) * r;
+    const h = Math.sin(dLa / 2) ** 2 + Math.cos(a.enlem * r) * Math.cos(b.enlem * r) * Math.sin(dLo / 2) ** 2;
+    return 2 * R * Math.asin(Math.sqrt(h));
+  }
+  function konumBildir() { document.dispatchEvent(new CustomEvent('urania:konum')); }
+  function hucre(enlem, boylam) { return enlem.toFixed(2) + ',' + boylam.toFixed(2); }
+  async function yerAdi(enlem, boylam) {
+    const adlar = oku('yerAdlari', {});
+    const h = hucre(enlem, boylam);
+    if (adlar[h]) return adlar[h];
+    try {
+      const r = await fetch('https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=16&accept-language=tr&lat=' + enlem.toFixed(4) + '&lon=' + boylam.toFixed(4));
+      if (!r.ok) return null;
+      const j = await r.json(), a = j.address || {};
+      const mahalle = a.suburb || a.quarter || a.neighbourhood || a.village || a.hamlet;
+      const ilce = a.town || a.city_district || a.county || a.city || a.province;
+      const ad = [mahalle, ilce].filter(Boolean).join(', ');
+      if (!ad) return null;
+      const yeni = oku('yerAdlari', {}); yeni[h] = ad;
+      const anahtarlar = Object.keys(yeni); if (anahtarlar.length > 200) delete yeni[anahtarlar[0]];
+      yaz('yerAdlari', yeni);
+      return ad;
+    } catch (e) { return null; }
+  }
+  let konumAraniyor = null;
+  function konumuBul(zorla) {
+    if (!zorla && !otoAcik()) return Promise.resolve(null);
+    if (!('geolocation' in navigator)) { konumDurum.hata = 'desteklenmiyor'; konumBildir(); return Promise.resolve(null); }
+    if (konumAraniyor) return konumAraniyor;
+    konumAraniyor = new Promise(coz => {
+      navigator.geolocation.getCurrentPosition(async pos => {
+        const c = pos.coords;
+        const once = konum();
+        const yeni = { enlem: +c.latitude.toFixed(4), boylam: +c.longitude.toFixed(4) };
+        konumDurum.hata = null; konumDurum.kaynak = 'gps'; konumDurum.hassasiyet = c.accuracy; konumDurum.zaman = new Date();
+        const adOnbellek = oku('yerAdlari', {})[hucre(yeni.enlem, yeni.boylam)];
+        if (!once.oto || mesafeKm(once, yeni) > 0.3) {
+          konumYaz({ ad: adOnbellek || 'Bulunduğun yer', enlem: yeni.enlem, boylam: yeni.boylam, yukseklik: c.altitude ? Math.round(c.altitude) : 0, saatDilimi: Intl.DateTimeFormat().resolvedOptions().timeZone, oto: true });
+        }
+        konumBildir();
+        if (!adOnbellek) {
+          const ad = await yerAdi(yeni.enlem, yeni.boylam);
+          const simdi = konum();
+          if (ad && simdi.oto && mesafeKm(simdi, yeni) < 0.5) { konumYaz(Object.assign({}, simdi, { ad })); konumBildir(); }
+        }
+        konumAraniyor = null; coz(konum());
+      }, err => {
+        konumDurum.hata = err.code === 1 ? 'izin' : 'alinamadi';
+        konumDurum.kaynak = konum().oto ? 'son' : null;
+        konumAraniyor = null; konumBildir(); coz(null);
+      }, { enableHighAccuracy: false, timeout: 15000, maximumAge: 5 * 60e3 });
+    });
+    return konumAraniyor;
+  }
+
   function basla() {
     kirmiziUygula(!!oku('kirmizi', false));
     document.getElementById('kirmiziDugme').addEventListener('click', () => {
@@ -189,6 +253,9 @@
     });
     window.addEventListener('hashchange', goster);
     goster();
+    konumuBul();
+    document.addEventListener('visibilitychange', () => { if (!document.hidden) konumuBul(); });
+    setInterval(() => { if (!document.hidden) konumuBul(); }, 10 * 60e3);
     if ('serviceWorker' in navigator && location.protocol === 'https:') {
       navigator.serviceWorker.register('./sw.js').catch(() => { /* çevrimdışı önbellek olmadan da çalışır */ });
     }
@@ -196,7 +263,7 @@
 
   window.Urania = {
     modul(ad, tanim) { moduller[ad] = tanim; },
-    basla, oku, yaz, konum, konumYaz, VARSAYILAN_KONUM, dilimTahmin, dilimAdi, veri, guvenliUrl, icsMetni, icsIndir,
+    basla, oku, yaz, konum, konumYaz, VARSAYILAN_KONUM, konumuBul, konumDurum, otoAcik, otoAyarla, dilimTahmin, dilimAdi, veri, guvenliUrl, icsMetni, icsIndir,
     sayi, bilimsel, saat, gun, gunHafta, tamTarih, kadir, derece, kacGun, kacis
   };
 })();
