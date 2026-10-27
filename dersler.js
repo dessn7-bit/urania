@@ -93,12 +93,15 @@
         if (!ac) { kap.hidden = true; b.textContent = 'Burada aç'; b.setAttribute('aria-expanded', 'false'); if (d) { d.durdur(); gomulu = gomulu.filter(x => x !== d); d = null; } kap.innerHTML = ''; return; }
         kap.hidden = false; b.textContent = 'Kapat'; b.setAttribute('aria-expanded', 'true');
         /* her açışta yeni iç kap: eski dinleyiciler eski kapla birlikte gider */
+        /* iç kap önce sayfaya eklenir: kanvaslar gerçek genişliklerini ölçebilsin */
         kap.innerHTML = '<p class="bos">Deney hazırlanıyor…</p>';
         const ic = document.createElement('div');
+        kap.appendChild(ic);
         try {
           const yeni = await window.UraniaDeney.gom(ic, m.dataset.deney);
           if (benim !== sayac) { yeni.durdur(); return; }          // bu arada kapatıldı ya da yeniden açıldı
-          kap.innerHTML = ''; kap.appendChild(ic); d = yeni; gomulu.push(d);
+          const bos = kap.querySelector(':scope > .bos'); if (bos) bos.remove();
+          d = yeni; gomulu.push(d);
         } catch (e) { if (benim === sayac) kap.innerHTML = '<div class="hata-kutu">Deney açılamadı: ' + U.kacis(e.message) + '</div>'; }
       });
     });

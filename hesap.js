@@ -5,14 +5,23 @@
   let F = null, el = null;
 
   function d(k) { return F.sabitler[k].deger; }
+  /* Sayı okuma: ondalık için virgül ya da nokta; 1e9 gibi bilimsel yazım. "1.000" gibi binlik ayırıcı belirsizdir:
+     sayı 1 okunur ama sonuçta uyarı çıkar. Sonsuz ve onaltılık (0x10) yazımlar reddedilir. */
+  let belirsiz = new Set();
+  const SAYI = /^[+-]?(\d+(\.\d*)?|\.\d+)(e[+-]?\d+)?$/i;
   function oku(id) {
-    const v = el.querySelector('#' + id).value.trim().replace(/\s/g, '').replace(',', '.').replace('−', '-');
-    if (v === '') return NaN;
-    /* 1e9, 1,5e-3 gibi yazımlara izin ver */
-    return Number(v);
+    const ham = el.querySelector('#' + id).value.trim().replace(/\s/g, '').replace(/−/g, '-');
+    if (ham === '') return NaN;
+    if (/^[+-]?\d{1,3}(\.\d{3})+$/.test(ham)) belirsiz.add(ham);
+    const v = ham.replace(',', '.');
+    if (!SAYI.test(v)) return NaN;
+    const x = Number(v);
+    return isFinite(x) ? x : NaN;
   }
-  function giris(id, etiket, deger, ek) {
-    return `<div class="alan"><label for="${id}">${etiket}</label><input id="${id}" inputmode="decimal" value="${deger}" autocomplete="off"${ek || ''}></div>`;
+  const eksi = x => (x < 0 && Math.abs(x) >= 0.005 ? '−' : '') + U.sayi(Math.abs(x), 2);
+  /* eksiOlur: iOS'ta "decimal" klavyesinde eksi tuşu yok; eksi değer alabilen alanlar düz metin klavyesi açar */
+  function giris(id, etiket, deger, eksiOlur) {
+    return `<div class="alan"><label for="${id}">${etiket}</label><input id="${id}" inputmode="${eksiOlur ? 'text' : 'decimal'}" value="${deger}" autocomplete="off"></div>`;
   }
   function secim(id, etiket, secenekler, secili) {
     return `<div class="alan"><label for="${id}">${etiket}</label><select id="${id}">${secenekler.map(([v, a]) => `<option value="${v}"${v === secili ? ' selected' : ''}>${a}</option>`).join('')}</select></div>`;
@@ -65,7 +74,9 @@
         }
         const v = Math.sqrt(2 * d('G') * M / R), gy = d('G') * M / (R * R);
         const kilo = gy / d('g0');
-        return `<b>${U.sayi(v / 1e3, 2)} km/s</b> kurtulma hızı<span class="ek">Yüzey çekimi ${U.sayi(gy, 2)} m/s² — Dünya'da 70 kg gelen biri burada ${U.sayi(70 * kilo, 1)} kg gelir.</span>${ref && ref.kurtulma_kms ? `<span class="ek">Karşılaştırma: NASA tablosundaki kurtulma hızı ${U.sayi(ref.kurtulma_kms, 2)} km/s.</span>` : ''}`;
+        const rs = 2 * d('G') * M / (d('c') * d('c'));
+        if (R <= rs) return `<b>Kara delik</b><span class="ek">Bu kütle bu yarıçapın içinde kalıyor (Schwarzschild yarıçapı ${U.bilimsel(rs / 1e3, 3)} km): yüzeyden kurtulmak için ışıktan hızlı gitmek gerekirdi, yani kurtulma yok.</span>`;
+        return `<b>${U.bilimsel(v / 1e3, 4)} km/s</b> kurtulma hızı<span class="ek">Yüzey çekimi ${U.bilimsel(gy, 3)} m/s² — Dünya'da 70 kg gelen biri burada ${U.bilimsel(70 * kilo, 3)} kg gelir.</span>${ref && ref.kurtulma_kms ? `<span class="ek">Karşılaştırma: NASA tablosundaki kurtulma hızı ${U.sayi(ref.kurtulma_kms, 2)} km/s. NASA ekvator yarıçapını kullanır, burada ortalama yarıçap kullanıldı; basık dev gezegenlerde küçük fark bundandır.</span>` : ''}`;
       },
       formul: 'v = √(2GM/R), g = GM/R²', kaynak: ['G', 'M_dunya', 'g0'], ekKaynak: () => F.gezegenKaynak
     },
@@ -89,9 +100,9 @@
     {
       id: 'kepler', baslik: 'Yörünge süresi (Kepler III)',
       aciklama: 'Bir cismin, merkezdeki kütlenin çevresinde verilen büyüklükteki yörüngeyi kaç günde/yılda tamamladığı.',
-      html: () => `<div class="hesap-ızgara">${giris('kpA', 'Yarı büyük eksen (AB)', '5')}${giris('kpM', 'Merkez kütle (Güneş = 1)', '1')}</div>${sonuc('kpS')}`,
+      html: () => `<div class="hesap-ızgara">${giris('hkA', 'Yarı büyük eksen (AB)', '5')}${giris('hkM', 'Merkez kütle (Güneş = 1)', '1')}</div>${sonuc('hkS')}`,
       hesap() {
-        const a = oku('kpA') * d('au'), M = oku('kpM') * d('M_gunes');
+        const a = oku('hkA') * d('au'), M = oku('hkM') * d('M_gunes');
         if (!(a > 0 && M > 0)) return hata('İki değer de pozitif olmalı.');
         const T = 2 * Math.PI * Math.sqrt(a * a * a / (d('G') * M));
         const v = 2 * Math.PI * a / T;
@@ -103,24 +114,25 @@
     {
       id: 'kadir', baslik: 'Görünür ve mutlak kadir',
       aciklama: 'Görünür kadir (m) ile uzaklıktan mutlak kadiri (M) bul: yıldız 10 parsek uzakta olsaydı ne kadar parlak görünürdü?',
-      html: () => `<div class="hesap-ızgara">${giris('mgM', 'Görünür kadir m', '1')}${giris('mgD', 'Uzaklık (parsek)', '25')}</div>${sonuc('mgS')}`,
+      html: () => `<div class="hesap-ızgara">${giris('mgM', 'Görünür kadir m', '1', true)}${giris('mgD', 'Uzaklık (parsek)', '25')}</div>${sonuc('mgS')}`,
       hesap() {
         const m = oku('mgM'), dp = oku('mgD');
         if (isNaN(m) || !(dp > 0)) return hata('Kadir bir sayı, uzaklık pozitif olmalı.');
         const M = m - 5 * Math.log10(dp / 10);
         const L = Math.pow(10, 0.4 * (d('MV_gunes') - M));
-        return `<b>M = ${U.kadir(M)}</b><span class="ek">Uzaklık modülü m − M = ${U.sayi(m - M, 2)}.</span><span class="ek">Görsel (V) bantta Güneş'in yaklaşık ${U.bilimsel(L, 2)} katı parlak (Güneş'in mutlak V kadiri ${U.sayi(d('MV_gunes'), 2)} alınarak).</span>`;
+        return `<b>M = ${U.kadir(M)}</b><span class="ek">Uzaklık modülü m − M = ${eksi(m - M)}.</span><span class="ek">Görsel (V) bantta Güneş'in yaklaşık ${U.bilimsel(L, 2)} katı parlak (Güneş'in mutlak V kadiri ${U.sayi(d('MV_gunes'), 2)} alınarak).</span>`;
       },
       formul: 'M = m − 5 log₁₀(d / 10 pc)', kaynak: ['MV_gunes']
     },
     {
       id: 'parlaklik', baslik: 'İki kadir arası parlaklık oranı',
       aciklama: 'Kadir ölçeği tersine ve logaritmik: 5 kadir fark tam 100 kat parlaklık demek.',
-      html: () => `<div class="hesap-ızgara">${giris('poA', 'Parlak cismin kadiri', '-4')}${giris('poB', 'Sönük cismin kadiri', '6')}</div>${sonuc('poS')}`,
+      html: () => `<div class="hesap-ızgara">${giris('poA', 'Parlak cismin kadiri', '-4', true)}${giris('poB', 'Sönük cismin kadiri', '6', true)}</div>${sonuc('poS')}`,
       hesap() {
         const a = oku('poA'), b = oku('poB');
         if (isNaN(a) || isNaN(b)) return hata('İki kadir de sayı olmalı.');
         const oran = Math.pow(10, 0.4 * Math.abs(b - a));
+        if (!isFinite(oran)) return hata('Fark çok büyük: hesaplanamıyor.');
         return `<b>${U.bilimsel(oran, 3)} kat</b><span class="ek">${U.sayi(Math.abs(b - a), 2)} kadir fark.</span>`;
       },
       formul: 'oran = 10^(0,4 × Δm) = 100^(Δm/5)', kaynak: []
@@ -146,12 +158,13 @@
         const T = oku('wiT');
         if (!(T > 0)) return hata('Pozitif bir sıcaklık yaz.');
         const l = d('b_wien') / T * 1e9;
-        let bolge = 'kızılötesi';
+        let bolge = 'kızılötesi';                 // sınırlar yuvarlanmamış değerle karşılaştırılır
         if (l < 10) bolge = 'X ışını';
         else if (l < 380) bolge = 'morötesi';
         else if (l <= 750) bolge = 'görünür ışık';
         else if (l > 1e6) bolge = 'mikrodalga / radyo';
-        return `<b>${l >= 1e4 ? U.bilimsel(l / 1e3, 3) + ' µm' : U.sayi(l, 0) + ' nm'}</b><span class="ek">Tepe ${bolge} bölgesinde.</span>`;
+        const yaz = l >= 1e4 ? U.bilimsel(l / 1e3, 3) + ' µm' : (l < 1 ? U.bilimsel(l * 1e3, 3) + ' pm' : U.sayi(l, l < 100 ? 2 : 0) + ' nm');
+        return `<b>${yaz}</b><span class="ek">Tepe ${bolge} bölgesinde.</span>`;
       },
       formul: 'λmaks = b / T', kaynak: ['b_wien']
     },
@@ -171,6 +184,7 @@
 
   function sure(s) {
     const yil = 365.25 * 86400;
+    if (s < 1e-3) return U.bilimsel(s * 1e6, 3) + ' mikrosaniye';
     if (s < 1) return U.sayi(s * 1000, 1) + ' milisaniye';
     if (s < 120) return U.sayi(s, 1) + ' saniye';
     if (s < 7200) return U.sayi(s / 60, 1) + ' dakika';
@@ -201,7 +215,11 @@
     KARTLAR.forEach(k => {
       const kart = el.querySelector('#hk-' + k.id);
       const cikti = kart.querySelector('.sonuc');
-      const yenile = () => { try { cikti.innerHTML = k.hesap(); } catch (e) { cikti.innerHTML = hata('Hesaplanamadı: ' + U.kacis(e.message)); } };
+      const yenile = () => {
+        belirsiz = new Set();
+        try { cikti.innerHTML = k.hesap(); } catch (e) { cikti.innerHTML = hata('Hesaplanamadı: ' + U.kacis(e.message)); }
+        if (belirsiz.size) cikti.insertAdjacentHTML('beforeend', hata([...belirsiz].map(U.kacis).join(', ') + ' sayısını ondalık okudum (nokta ondalık ayırıcı). Bin demek istiyorsan noktasız yaz: 1000.'));
+      };
       kart.addEventListener('input', yenile);
       kart.addEventListener('change', yenile);
       yenile();

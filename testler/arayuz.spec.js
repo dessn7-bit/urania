@@ -101,9 +101,9 @@ test('Hesap: bilinen sonuçlar', async ({ page }) => {
   await page.locator('#swB').selectOption('dunya');
   await expect(page.locator('#swS b')).toContainText('8,8');
   /* 1 AB, 1 Güneş kütlesi → ≈ 365,2 gün */
-  await page.locator('#kpA').fill('1');
-  await page.locator('#kpM').fill('1');
-  await expect(page.locator('#kpS b')).toContainText('365,');
+  await page.locator('#hkA').fill('1');
+  await page.locator('#hkM').fill('1');
+  await expect(page.locator('#hkS b')).toContainText('365,');
   /* 5 kadir fark = 100 kat */
   await page.locator('#poA').fill('1');
   await page.locator('#poB').fill('6');

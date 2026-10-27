@@ -67,15 +67,24 @@
   function dongu(ciz, kok) {
     let id = null, son = performance.now(), calisiyor = true;
     kok = kok || kurulanKok;
+    let zaman = null;
+    /* Görünmezken ya da azaltılmış harekette kare kare çizmez: yarım saniyede (gizli) ya da çeyrek saniyede (azaltılmış hareket,
+       kaydırıcı değişikliklerini yakalamak için) bir bakar; görünür olunca akıcı döngüye döner. */
+    function sonraki() {
+      if (!calisiyor) return;
+      const gor = gorunur(kok);
+      if (gor && !azHareket) id = requestAnimationFrame(adim);
+      else zaman = setTimeout(() => adim(performance.now()), gor ? 250 : 500);
+    }
     function adim(t) {
       if (!calisiyor) return;
       if (kok && !kok.isConnected) { calisiyor = false; return; }      // kutu sayfadan kalktı: döngü kendini bitirir
       const dt = Math.min(0.05, (t - son) / 1000); son = t;
       if (gorunur(kok)) ciz(dt);
-      id = requestAnimationFrame(adim);
+      sonraki();
     }
     id = requestAnimationFrame(adim);
-    return { durdur() { calisiyor = false; cancelAnimationFrame(id); } };
+    return { durdur() { calisiyor = false; cancelAnimationFrame(id); clearTimeout(zaman); } };
   }
 
   /* =================== 1. Kara delik =================== */
@@ -86,7 +95,7 @@
       <div class="cip-grup" id="kdOn">${onAyar.map((k, i) => `<button type="button" class="dugme" data-i="${i}">${U.kacis(k.ad)}</button>`).join('')}</div>
       <div class="sahne"><canvas id="kdKanvas"></canvas></div>
       <div class="kontroller">
-        ${kaydirici('kdKutle', 'Kütle', 0, 10.5, 0.01, 1)}
+        ${kaydirici('kdKutle', 'Kütle', 0, 10.5, 'any', 1)}
         ${kaydirici('kdUzak', 'Uzaklık (olay ufku yarıçapı = 1)', 0, 3, 0.005, 1)}
       </div>
       ${olcumler([['kdRs', 'Olay ufku yarıçapı'], ['kdR', 'Senin uzaklığın'], ['kdZaman', 'Uzakta 1 saat geçerken sende'], ['kdGelgit', 'Baştan ayağa gerilme (2 m boy)']])}
@@ -353,7 +362,7 @@
       kap.querySelector('#hrR').textContent = U.sayi(R, R < 10 ? 2 : 1) + ' R☉';
       kap.querySelector('#hrOmur').textContent = omur >= 1e9 ? U.sayi(omur / 1e9, omur < 1e10 ? 2 : 0) + ' milyar yıl' : U.sayi(omur / 1e6, omur < 1e7 ? 1 : 0) + ' milyon yıl';
       kap.querySelector('#hrSon').textContent = son ? son.son : '—';
-      kap.querySelector('#hrMetin').innerHTML = `<p>${U.sayi(m, 2)} Güneş kütleli bir yıldız ${L > 0.9 && L < 1.1 ? "Güneş'le neredeyse aynı parlaklıkta" : "Güneş'ten " + (L >= 1 ? U.bilimsel(L, 2) + ' kat parlak' : U.bilimsel(1 / L, 2) + ' kat sönük')}. Yakıtı kütlesiyle, harcama hızı ışıma gücüyle orantılı: bu yüzden ${m > 1 ? 'büyük yıldızlar fazla yakıtlarını çok daha hızlı yakar ve kısa yaşar.' : 'küçük yıldızlar yakıtını çok yavaş harcar ve Güneş\'ten çok uzun yaşar.'}</p>${son && son.aciklama ? '<p>' + U.kacis(son.aciklama) + '</p>' : ''}`;
+      kap.querySelector('#hrMetin').innerHTML = `<p>${U.sayi(m, m < 1 ? 2 : (m < 10 ? 1 : 0))} Güneş kütleli bir yıldız ${L > 0.9 && L < 1.1 ? "Güneş'le neredeyse aynı parlaklıkta" : "Güneş'ten " + (L >= 1 ? U.bilimsel(L, 2) + ' kat parlak' : U.bilimsel(1 / L, 2) + ' kat sönük')}. Yakıtı kütlesiyle, harcama hızı ışıma gücüyle orantılı: bu yüzden ${m > 1.05 ? 'büyük yıldızlar fazla yakıtlarını çok daha hızlı yakar ve kısa yaşar.' : (m < 0.95 ? 'küçük yıldızlar yakıtını çok yavaş harcar ve Güneş\'ten çok uzun yaşar.' : 'Güneş kütlesindeki bir yıldız anakolda yaklaşık 10 milyar yıl kalır; daha ağırlar daha kısa, daha hafifler daha uzun yaşar.')}</p>${son && son.aciklama ? '<p>' + U.kacis(son.aciklama) + '</p>' : ''}`;
       ciz();
     }
     function ciz() {
@@ -421,7 +430,7 @@
     const hedef = F.uzakliklar;
     kap.innerHTML = `
       <div class="cip-grup" id="grHedef">${hedef.map((u, i) => `<button type="button" class="dugme" data-i="${i}" aria-pressed="${i === 0}">${U.kacis(u.ad)}</button>`).join('')}</div>
-      <div class="kontroller">${kaydirici('grHiz', 'Hız (ışık hızının yüzdesi)', 0, 6, 0.01, 2)}</div>
+      <div class="kontroller">${kaydirici('grHiz', 'Hız (ışık hızının yüzdesi)', 0, 6, 'any', 2)}</div>
       ${olcumler([['grV', 'Hız'], ['grGama', 'Lorentz çarpanı γ'], ['grDunya', 'Dünya\'da geçen süre'], ['grGemi', 'Gemide geçen süre']])}
       <div class="sahne" style="padding:16px"><canvas id="grKanvas"></canvas></div>
       <div class="deney-metin"><p>γ = 1/√(1 − v²/c²). Dünya'dan bakınca yolculuk uzaklık/hız kadar sürer; gemideki saat ise bunun 1/γ'sı kadar ilerler. Işık hızına yaklaştıkça γ sınırsız büyür ama hız hiçbir zaman c'ye ulaşmaz. Hızlanma ve yavaşlama evreleri burada yok sayılır.</p></div>
@@ -436,7 +445,7 @@
       const g = 1 / Math.sqrt(1 - b * b);
       const d = hedef[secili].isik_yili;
       const tD = d / b, tG = tD / g;
-      kap.querySelector('#grHizCikti').textContent = '%' + U.sayi(b * 100, b > 0.99 ? 4 : 1);
+      kap.querySelector('#grHizCikti').textContent = '%' + U.sayi(b * 100, b > 0.99 ? 4 : (b < 0.01 ? 2 : 1));
       kap.querySelector('#grV').textContent = U.bilimsel(b * c / 1e3, 4) + ' km/s';
       kap.querySelector('#grGama').textContent = U.sayi(g, g < 10 ? 3 : 1);
       kap.querySelector('#grDunya').textContent = yil(tD);

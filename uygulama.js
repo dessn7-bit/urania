@@ -102,7 +102,7 @@
   function gun(d) { return d ? gunB.format(dkYuvarla(d)) : '—'; }
   function gunHafta(d) { return d ? gunHaftaB.format(dkYuvarla(d)) : '—'; }
   function tamTarih(d) { return d ? tamB.format(d) : '—'; }
-  function kadir(m) { return (m < 0 ? '−' : '') + sayi(Math.abs(m), 1); }
+  function kadir(m) { return (m <= -0.05 ? '−' : '') + sayi(Math.abs(m), 1); }
   function derece(x) { return sayi(Math.round(x) || 0, 0) + '°'; }
   function kacGun(fark) {
     const g = Math.round(fark);

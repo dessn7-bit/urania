@@ -89,7 +89,7 @@
           ${o.kaydirici('kpA', 'Yarı büyük eksen a', Math.log10(0.3), Math.log10(40), 'any', 0)}
           ${o.kaydirici('kpE', 'Dışmerkezlik e', 0, 0.97, 0.001, 0.0167)}
           ${zamanHtml(o, 'kpZaman', 'Yörüngede zaman (bir turun yüzdesi)')}
-          <label class="secim-satir kucuk"><input type="checkbox" id="kpAlan" checked> <span>Eşit sürede taranan alanları göster (yılın 12'de biri)</span></label>
+          <label class="secim-satir kucuk"><input type="checkbox" id="kpAlan" checked> <span>Eşit sürede taranan alanları göster (dolanım süresinin 12'de biri)</span></label>
         </div>
         ${o.olcumler([['kpP', 'Dolanım süresi (P² = a³)'], ['kpQ', 'Güneş\'e en yakın / en uzak'], ['kpVq', 'Hız: en yakında / en uzakta'], ['kpV', 'Şu anki hız'], ['kpR', 'Şu anki uzaklık']])}
         <p class="kaynak">Hız vis-viva bağıntısıyla: v² = GM☉(2/r − 1/a). ${o.kaynakSatiri(['GM_gunes', 'au']).replace(/^<p class="kaynak">|<\/p>$/g, '')} · Örnek yörüngeler: ${kaynakLink(U, cis.map(c => ({ ad: c.kaynak, url: c.url })).filter((x, i, a) => a.findIndex(y => y.url === x.url) === i))}</p>`;
@@ -176,7 +176,7 @@
         const aAy = H.gelgitIvme(G, d.ay_kutle_kg, R, dAy), aGn = H.gelgitIvme(G, d.gunes_kutle_kg, R, d.gunes_ort_km * 1e3);
         const aci = 360 * Number(gS.value) / d.kavusum_gun;     // Ay ile Güneş arasındaki açı (uzanım)
         st = { aAy, aGn, aci, gunes: gnK.checked };
-        kap.querySelector('#ggGunCikti').textContent = U.sayi(Number(gS.value), 1) + ' gün';
+        kap.querySelector('#ggGunCikti').textContent = U.sayi(Number(gS.value), 2) + ' gün';
         kap.querySelector('#ggAy').textContent = U.sayi(aAy / g0 * 1e7, 2) + ' × 10⁻⁷ g';
         kap.querySelector('#ggGn').textContent = U.sayi(aGn / g0 * 1e7, 2) + ' × 10⁻⁷ g';
         kap.querySelector('#ggOran').textContent = U.sayi(aGn / aAy, 2);
@@ -353,7 +353,7 @@
         const yeni = Math.abs(((uzanim + 180) % 360) - 180) < 8, dolun = Math.abs(uzanim - 180) < 8;
         const tutulma = (yeni || dolun) && Math.abs(beta) < d.tutulma_enlem_derece;
         st = { uzanim, k, beta, dugumAci, yeni, dolun, tutulma };
-        kap.querySelector('#evGunCikti').textContent = U.sayi(gun, 1) + ' gün';
+        kap.querySelector('#evGunCikti').textContent = U.sayi(gun, 2) + ' gün';
         kap.querySelector('#evMevsimCikti').textContent = U.sayi(dugumAci, 0) + '°';
         kap.querySelector('#evAd').textContent = window.Gok ? window.Gok.evreAdi(uzanim) : '';
         kap.querySelector('#evOran').textContent = '%' + U.sayi(k * 100, 0);
@@ -369,7 +369,7 @@
         const cx = w * 0.27, cy = h * 0.4, ro = Math.min(w * 0.2, h * 0.3);
         ctx.strokeStyle = o.renk('--cizgi'); ctx.beginPath(); ctx.arc(cx, cy, ro, 0, IKI_PI); ctx.stroke();
         for (let y = -2; y <= 2; y++) { ctx.strokeStyle = 'rgba(255,210,122,.35)'; ctx.beginPath(); ctx.moveTo(w * 0.5, cy + y * 18); ctx.lineTo(w * 0.47, cy + y * 18); ctx.stroke(); }
-        ctx.fillStyle = o.renk('--soluk'); ctx.font = '500 11px Plex, sans-serif'; ctx.textAlign = 'center'; ctx.fillText('Güneş ışığı →', w * 0.4, 14);
+        ctx.fillStyle = o.renk('--soluk'); ctx.font = '500 11px Plex, sans-serif'; ctx.textAlign = 'center'; ctx.fillText('← Güneş ışığı', w * 0.4, 14);
         ctx.beginPath(); ctx.arc(cx, cy, 11, 0, IKI_PI); ctx.fillStyle = '#2C5A7A'; ctx.fill();
         const a = st.uzanim * DER;                              // Ay, Güneş yönünden (sağ) saat tersine
         const mx = cx + Math.cos(a) * ro, my = cy - Math.sin(a) * ro;
@@ -444,7 +444,7 @@
         S('gcA').textContent = U.sayi(a / AU, 4) + ' AB';
         S('gcSayi').textContent = gecer ? U.sayi(365.25 * 86400 / P, 1) : '—';
         S('gcMetin').innerHTML = gecer
-          ? `<p>Gezegenin çapının yıldızın çapına oranı: %${U.sayi(k * 100, 1)}. Önünden geçerken örttüğü en büyük pay, yani ışıktaki düşüş: ${derin >= 0.001 ? '%' + U.sayi(derin * 100, 2) : 'milyonda ' + U.sayi(derin * 1e6, 0)}. Derinlik gezegenin büyüklüğünü, süre ve tekrar aralığı yörüngesini verir.${b > 1 - k ? ' Yol yıldızın kenarından geçiyor: gezegen diske hiç tam girmiyor, geçiş kısa ve sığ.' : b > 0.8 ? ' Yol yıldızın kenarına yakın: geçiş kısa.' : ''}</p>`
+          ? `<p>Gezegenin çapının yıldızın çapına oranı: %${U.sayi(k * 100, 1)}. Önünden geçerken örttüğü en büyük pay, yani ışıktaki düşüş: ${derin >= 0.001 ? '%' + U.sayi(derin * 100, 2) : 'milyonda ' + U.sayi(derin * 1e6, 0)}. Derinlik gezegenin büyüklüğünü, süre ve tekrar aralığı yörüngesini verir.${k >= 1 ? ' Gezegen yıldızdan büyük: geçerken yıldızı tamamen örtebilir (bu artık bir örten çift yıldıza benzer).' : b > 1 - k ? ' Yol yıldızın kenarından geçiyor: gezegen diske hiç tam girmiyor, geçiş kısa ve sığ.' : b > 0.8 ? ' Yol yıldızın kenarına yakın: geçiş kısa.' : ''}</p>`
           : icinde ? '<p>Bu kütle ve dolanım süresiyle yörünge yıldızın içinde ya da yüzeyine değecek kadar yakın kalıyor: böyle bir gezegen olamaz. Dolanım süresini uzat ya da yıldızı küçült.</p>'
           : '<p>Bu açıyla gezegen yıldızın önünden geçmiyor: geçiş yöntemi yalnız yörüngesini yandan gördüğümüz gezegenleri yakalar.</p>';
         ciz(0);
