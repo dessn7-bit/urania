@@ -1,0 +1,587 @@
+{
+ "aciklama": "Urania – Güneş Sistemi cisimleri, NASA NSSDCA Planetary Fact Sheets (D. R. Williams). Çapraz kontrol: JPL SSD.",
+ "olusturma": "2026-10-27",
+ "notlar": [
+  "Kütle, ortalama (hacimsel) yarıçap, kaçış hızı, yarı büyük eksen ve yörünge dönemi her cismin kendi NASA bilgi sayfasından alındı (özet tablodan değil; özet tablo yuvarlatılmış).",
+  "DİKKAT: NASA özet tablosundaki (factsheet/) \"Orbital Period\" dış gezegenlerde TROPİKAL dönemdir (Jüpiter 4331, Satürn 10,747, Uranüs 30,589, Neptün 59,800 gün); tekil sayfalardaki yıldızıl dönemler 4,332.589 / 10,755.699 / 30,685.400 / 60,189.018 gün. Bu dosyada yıldızıl dönem kullanıldı, tropikal ayrıca verildi.",
+  "NASA Ay sayfasındaki karşılaştırma sütununda Dünya kütlesi 5.9724e24 yazıyor; Dünya sayfası 5.9722e24. Dünya için Dünya sayfası esas alındı.",
+  "NASA Plüton yarı büyük ekseni (5869.656e6 km) ile J2000 ortalama eleman tablosundaki 39.48168677 AU (=5906.4e6 km) farklıdır; NASA iki farklı değer veriyor (özet tablo 5906.4). İkisi de saklandı.",
+  "Kaçış hızı: NASA ile JPL arasında Jüpiter (59.5 / 60.20) ve Satürn (35.5 / 36.09) için ~%1–2 fark var. Bu oturumda yapılan hesap: v=sqrt(2GM/R) Jüpiter için R=71,492 km (ekvator) ile 59.53, R=69,911 km (ortalama) ile 60.20 km/s veriyor; yani NASA ekvator yarıçapını, JPL ortalama yarıçapı kullanıyor. Bu dosyadaki değer NASA (ekvator) değeridir.",
+  "yari_buyuk_eksen_AU_J2000: NASA sayfalarındaki \"Mean Orbital Elements (J2000)\" bölümünden."
+ ],
+ "cisimler": [
+  {
+   "anahtar": "Gunes",
+   "ad_tr": "Güneş",
+   "ad_en": "Sun",
+   "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html",
+   "kaynak_guncelleme": "9 May 2024, DRW",
+   "erisim": "2026-10-27",
+   "kutle_kg": 1.9884e+30,
+   "ortalama_yaricap_km": 695700.0,
+   "kacis_hizi_km_s": 617.6,
+   "GM_km3_s2": 132712000000.0,
+   "yorunge": null,
+   "mutlak_kadir_V": 4.83,
+   "alintilar": {
+    "kutle": "Mass (10^24 kg) 1,988,400.",
+    "ortalama_yaricap": "Volumetric mean radius (km) 695,700.",
+    "kacis_hizi": "Escape velocity (km/s) 617.6",
+    "GM": "GM (x 10^6 km^3/s^2) 132,712.",
+    "mutlak_kadir": "Absolute magnitude +4.83"
+   },
+   "capraz_kontrol": {
+    "jpl_astro_par": {
+     "url": "https://ssd.jpl.nasa.gov/astro_par.html",
+     "GMsun_m3_s2": "1.32712440041279419 x 10^20"
+    },
+    "iau_2015_B3": {
+     "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf",
+     "R_sun_N_km": 695700,
+     "T_eff_N_K": 5772
+    }
+   }
+  },
+  {
+   "anahtar": "Merkur",
+   "ad_tr": "Merkür",
+   "ad_en": "Mercury",
+   "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/mercuryfact.html",
+   "kaynak_guncelleme": "11 January 2024, DRW",
+   "erisim": "2026-10-27",
+   "kutle_kg": 3.301e+23,
+   "ortalama_yaricap_km": 2439.7,
+   "ekvator_yaricap_km": 2440.5,
+   "kacis_hizi_km_s": 4.3,
+   "GM_km3_s2": 22032.0,
+   "yari_buyuk_eksen_1e6_km": 57.909,
+   "yari_buyuk_eksen_AU_J2000": 0.38709893,
+   "yorunge_donemi_gun": 87.969,
+   "yorunge_donemi_turu": "yıldızıl (sidereal)",
+   "tropikal_donem_gun": 87.968,
+   "alintilar": {
+    "kutle": "Mass (10^24 kg) 0.33010",
+    "ortalama_yaricap": "Volumetric mean radius (km) 2439.7",
+    "ekvator_yaricap": "Equatorial radius (km) 2440.5",
+    "kacis_hizi": "Escape velocity (km/s) 4.3",
+    "GM": "GM (x 10^6 km^3/s^2) 0.022032",
+    "yari_buyuk_eksen_km": "Semimajor axis (10^6 km) 57.909",
+    "yari_buyuk_eksen_AU": "Semimajor axis (AU) 0.38709893",
+    "donem": "Sidereal orbit period (days) 87.969"
+   },
+   "capraz_kontrol": {
+    "nasa_ozet_tablo": {
+     "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+     "kutle_1e24_kg": "0.330",
+     "kacis_hizi": "4.3",
+     "gunes_uzakligi_1e6_km": "57.9",
+     "yorunge_donemi_gun": "88.0",
+     "cap_km": "4879"
+    },
+    "jpl_fiziksel": {
+     "url": "https://ssd.jpl.nasa.gov/planets/phys_par.html",
+     "satir": "Mercury | 2440.53 [D] ±0.04 | 2439.4 [D] ±0.1 | 0.330103 [F] ±0.000021 | 5.4289 [*] ±0.0007 | 58.6462 [C] | 0.2408467 [B] | -0.60 [E] ±0.10 | 0.106 [B] | 3.70 [*] | 4.25 [*]",
+     "kutle_kg": 3.3010299999999994e+23,
+     "ortalama_yaricap_km": 2439.4,
+     "kacis_hizi_km_s": 4.25,
+     "yorunge_donemi_gun": 87.969,
+     "fark_kutle_%": -0.001,
+     "fark_yaricap_%": 0.012,
+     "fark_kacis_hizi_%": 1.18,
+     "fark_donem_%": 0.0
+    },
+    "jpl_kepler_tablo1": {
+     "url": "https://ssd.jpl.nasa.gov/planets/approx_pos.html",
+     "a_AU": 0.38709927,
+     "not": "Table 1, 1800–2050 geçerli",
+     "fark_AU": -0.0
+    }
+   }
+  },
+  {
+   "anahtar": "Venus",
+   "ad_tr": "Venüs",
+   "ad_en": "Venus",
+   "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/venusfact.html",
+   "kaynak_guncelleme": "11 January 2024, DRW",
+   "erisim": "2026-10-27",
+   "kutle_kg": 4.8673e+24,
+   "ortalama_yaricap_km": 6051.8,
+   "ekvator_yaricap_km": 6051.8,
+   "kacis_hizi_km_s": 10.36,
+   "GM_km3_s2": 324860.0,
+   "yari_buyuk_eksen_1e6_km": 108.21,
+   "yari_buyuk_eksen_AU_J2000": 0.72333199,
+   "yorunge_donemi_gun": 224.701,
+   "yorunge_donemi_turu": "yıldızıl (sidereal)",
+   "tropikal_donem_gun": 224.695,
+   "alintilar": {
+    "kutle": "Mass (10^24 kg) 4.8673",
+    "ortalama_yaricap": "Volumetric mean radius (km) 6051.8",
+    "ekvator_yaricap": "Equatorial radius (km) 6051.8",
+    "kacis_hizi": "Escape velocity (km/s) 10.36",
+    "GM": "GM (x 10^6 km^3/s^2) 0.32486",
+    "yari_buyuk_eksen_km": "Semimajor axis (10^6 km) 108.210",
+    "yari_buyuk_eksen_AU": "Semimajor axis (AU) 0.72333199",
+    "donem": "Sidereal orbit period (days) 224.701"
+   },
+   "capraz_kontrol": {
+    "nasa_ozet_tablo": {
+     "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+     "kutle_1e24_kg": "4.87",
+     "kacis_hizi": "10.4",
+     "gunes_uzakligi_1e6_km": "108.2",
+     "yorunge_donemi_gun": "224.7",
+     "cap_km": "12,104"
+    },
+    "jpl_fiziksel": {
+     "url": "https://ssd.jpl.nasa.gov/planets/phys_par.html",
+     "satir": "Venus | 6051.8 [D] ±1.0 | 6051.8 [D] ±1.0 | 4.86731 [G] ±0.00023 | 5.243 [*] ±0.003 | -243.018 [C] | 0.61519726 [B] | -4.47 [E] ±0.07 | 0.65 [B] | 8.87 [*] | 10.36 [*]",
+     "kutle_kg": 4.867309999999999e+24,
+     "ortalama_yaricap_km": 6051.8,
+     "kacis_hizi_km_s": 10.36,
+     "yorunge_donemi_gun": 224.701,
+     "fark_kutle_%": -0.0,
+     "fark_yaricap_%": 0.0,
+     "fark_kacis_hizi_%": 0.0,
+     "fark_donem_%": 0.0
+    },
+    "jpl_kepler_tablo1": {
+     "url": "https://ssd.jpl.nasa.gov/planets/approx_pos.html",
+     "a_AU": 0.72333566,
+     "not": "Table 1, 1800–2050 geçerli",
+     "fark_AU": -4e-06
+    }
+   }
+  },
+  {
+   "anahtar": "Dunya",
+   "ad_tr": "Dünya",
+   "ad_en": "Earth",
+   "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html",
+   "kaynak_guncelleme": "15 November 2024, DRW",
+   "erisim": "2026-10-27",
+   "kutle_kg": 5.9722e+24,
+   "ortalama_yaricap_km": 6371.0,
+   "ekvator_yaricap_km": 6378.137,
+   "kacis_hizi_km_s": 11.186,
+   "GM_km3_s2": 398600.0,
+   "yari_buyuk_eksen_1e6_km": 149.598,
+   "yari_buyuk_eksen_AU_J2000": 1.00000011,
+   "yorunge_donemi_gun": 365.256,
+   "yorunge_donemi_turu": "yıldızıl (sidereal)",
+   "tropikal_donem_gun": 365.242,
+   "alintilar": {
+    "kutle": "Mass (10^24 kg) 5.9722",
+    "ortalama_yaricap": "Volumetric mean radius (km) 6371.000",
+    "ekvator_yaricap": "Equatorial radius (km) 6378.137",
+    "kacis_hizi": "Escape velocity (km/s) 11.186",
+    "GM": "GM (x 10^6 km^3/s^2) 0.39860",
+    "yari_buyuk_eksen_km": "Semimajor axis (10^6 km) 149.598",
+    "yari_buyuk_eksen_AU": "Semimajor axis (AU) 1.00000011",
+    "donem": "Sidereal orbit period (days) 365.256"
+   },
+   "capraz_kontrol": {
+    "nasa_ozet_tablo": {
+     "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+     "kutle_1e24_kg": "5.97",
+     "kacis_hizi": "11.2",
+     "gunes_uzakligi_1e6_km": "149.6",
+     "yorunge_donemi_gun": "365.2",
+     "cap_km": "12,756"
+    },
+    "jpl_fiziksel": {
+     "url": "https://ssd.jpl.nasa.gov/planets/phys_par.html",
+     "satir": "Earth | 6378.1366 [D] ±0.0001 | 6371.0084 [D] ±0.0001 | 5.97217 [H] ±0.00028 | 5.5134 [*] ±0.0003 | 0.99726968 [B] | 1.0000174 [B] | -3.86 [B] | 0.367 [B] | 9.80 [*] | 11.19 [*]",
+     "kutle_kg": 5.97217e+24,
+     "ortalama_yaricap_km": 6371.0084,
+     "kacis_hizi_km_s": 11.19,
+     "yorunge_donemi_gun": 365.256,
+     "fark_kutle_%": 0.001,
+     "fark_yaricap_%": -0.0,
+     "fark_kacis_hizi_%": -0.04,
+     "fark_donem_%": 0.0
+    },
+    "jpl_kepler_tablo1": {
+     "url": "https://ssd.jpl.nasa.gov/planets/approx_pos.html",
+     "a_AU": 1.00000261,
+     "not": "Table 1, 1800–2050 geçerli; Dünya için Dünya-Ay ağırlık merkezi",
+     "fark_AU": -2e-06
+    }
+   }
+  },
+  {
+   "anahtar": "Ay",
+   "ad_tr": "Ay",
+   "ad_en": "Moon",
+   "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html",
+   "kaynak_guncelleme": "11 January 2024, DRW",
+   "erisim": "2026-10-27",
+   "kutle_kg": 7.346e+22,
+   "ortalama_yaricap_km": 1737.4,
+   "ekvator_yaricap_km": 1738.1,
+   "kacis_hizi_km_s": 2.38,
+   "GM_km3_s2": 4900.0,
+   "yari_buyuk_eksen_1e6_km": 0.3844,
+   "yari_buyuk_eksen_merkez": "Dünya",
+   "yorunge_donemi_gun": 27.3217,
+   "yorunge_donemi_turu": "yıldızıl (sidereal) dolanım, Dünya çevresinde",
+   "sinodik_donem_gun": 29.53,
+   "alintilar": {
+    "kutle": "Mass (10^24 kg) 0.07346",
+    "ortalama_yaricap": "Volumetric mean radius (km) 1737.4",
+    "ekvator_yaricap": "Equatorial radius (km) 1738.1",
+    "kacis_hizi": "Escape velocity (km/s) 2.38",
+    "GM": "GM (x 10^6 km^3/s^2) 0.00490",
+    "yari_buyuk_eksen": "Semimajor axis (10^6 km) 0.3844",
+    "donem": "Revolution period (days) 27.3217",
+    "sinodik": "Synodic period (days) 29.53"
+   },
+   "capraz_kontrol": {
+    "nasa_ozet_tablo": {
+     "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+     "kutle_1e24_kg": "0.073",
+     "kacis_hizi": "2.4",
+     "gunes_uzakligi_1e6_km": "0.384*",
+     "yorunge_donemi_gun": "27.3*",
+     "cap_km": "3475"
+    },
+    "jpl_uydu": {
+     "url": "https://ssd.jpl.nasa.gov/sats/phys_par/",
+     "satir": "Earth | Moon | 301 | 4902.800 0.001 DE440 | 1737.4 0.1 1 | 3.344 0.001 *",
+     "ortalama_yaricap_km": 1737.4,
+     "GM_km3_s2": 4902.8
+    }
+   }
+  },
+  {
+   "anahtar": "Mars",
+   "ad_tr": "Mars",
+   "ad_en": "Mars",
+   "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html",
+   "kaynak_guncelleme": "19 May 2025, DRW",
+   "erisim": "2026-10-27",
+   "kutle_kg": 6.4169e+23,
+   "ortalama_yaricap_km": 3389.5,
+   "ekvator_yaricap_km": 3396.2,
+   "kacis_hizi_km_s": 5.03,
+   "GM_km3_s2": 42828.0,
+   "yari_buyuk_eksen_1e6_km": 227.956,
+   "yari_buyuk_eksen_AU_J2000": 1.52366231,
+   "yorunge_donemi_gun": 686.98,
+   "yorunge_donemi_turu": "yıldızıl (sidereal)",
+   "tropikal_donem_gun": 686.972,
+   "alintilar": {
+    "kutle": "Mass (10^24 kg) 0.64169",
+    "ortalama_yaricap": "Volumetric mean radius (km) 3389.5",
+    "ekvator_yaricap": "Equatorial radius (km) 3396.2",
+    "kacis_hizi": "Escape velocity (km/s) 5.03",
+    "GM": "GM (x 10^6 km^3/s^2) 0.042828",
+    "yari_buyuk_eksen_km": "Semimajor axis (10^6 km) 227.956",
+    "yari_buyuk_eksen_AU": "Semimajor axis (AU) 1.52366231",
+    "donem": "Sidereal orbit period (days) 686.980"
+   },
+   "capraz_kontrol": {
+    "nasa_ozet_tablo": {
+     "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+     "kutle_1e24_kg": "0.642",
+     "kacis_hizi": "5.0",
+     "gunes_uzakligi_1e6_km": "228.0",
+     "yorunge_donemi_gun": "687.0",
+     "cap_km": "6792"
+    },
+    "jpl_fiziksel": {
+     "url": "https://ssd.jpl.nasa.gov/planets/phys_par.html",
+     "satir": "Mars | 3396.19 [D] ±0.1 | 3389.50 [D] ±0.2 | 0.641691 [I] ±0.000030 | 3.9340 [*] ±0.0007 | 1.02595676 [C] | 1.8808476 [B] | -1.52 [B] | 0.150 [B] | 3.71 [*] | 5.03 [*]",
+     "kutle_kg": 6.41691e+23,
+     "ortalama_yaricap_km": 3389.5,
+     "kacis_hizi_km_s": 5.03,
+     "yorunge_donemi_gun": 686.98,
+     "fark_kutle_%": -0.0,
+     "fark_yaricap_%": 0.0,
+     "fark_kacis_hizi_%": 0.0,
+     "fark_donem_%": 0.0
+    },
+    "jpl_kepler_tablo1": {
+     "url": "https://ssd.jpl.nasa.gov/planets/approx_pos.html",
+     "a_AU": 1.52371034,
+     "not": "Table 1, 1800–2050 geçerli",
+     "fark_AU": -4.8e-05
+    }
+   }
+  },
+  {
+   "anahtar": "Jupiter",
+   "ad_tr": "Jüpiter",
+   "ad_en": "Jupiter",
+   "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/jupiterfact.html",
+   "kaynak_guncelleme": "2 October 2024, DRW",
+   "erisim": "2026-10-27",
+   "kutle_kg": 1.89813e+27,
+   "ortalama_yaricap_km": 69911.0,
+   "ekvator_yaricap_km": 71492.0,
+   "kacis_hizi_km_s": 59.5,
+   "GM_km3_s2": 126687000.0,
+   "yari_buyuk_eksen_1e6_km": 778.479,
+   "yari_buyuk_eksen_AU_J2000": 5.20336301,
+   "yorunge_donemi_gun": 4332.589,
+   "yorunge_donemi_turu": "yıldızıl (sidereal)",
+   "tropikal_donem_gun": 4330.595,
+   "alintilar": {
+    "kutle": "Mass (10^24 kg) 1,898.13",
+    "ortalama_yaricap": "Volumetric mean radius (km) 69,911",
+    "ekvator_yaricap": "Equatorial radius (1 bar level) (km) 71,492",
+    "kacis_hizi": "Escape velocity (km/s) 59.5",
+    "GM": "GM (x 10^6 km^3/s^2) 126.687",
+    "yari_buyuk_eksen_km": "Semimajor axis (10^6 km) 778.479",
+    "yari_buyuk_eksen_AU": "Semimajor axis (AU) 5.20336301",
+    "donem": "Sidereal orbit period (days) 4,332.589"
+   },
+   "capraz_kontrol": {
+    "nasa_ozet_tablo": {
+     "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+     "kutle_1e24_kg": "1898",
+     "kacis_hizi": "59.5",
+     "gunes_uzakligi_1e6_km": "778.5",
+     "yorunge_donemi_gun": "4331",
+     "cap_km": "142,984"
+    },
+    "jpl_fiziksel": {
+     "url": "https://ssd.jpl.nasa.gov/planets/phys_par.html",
+     "satir": "Jupiter | 71492 [D] ±4 | 69911 [D] ±6 | 1898.125 [J] ±0.088 | 1.3262 [*] ±0.0003 | 0.41354 [C] | 11.862615 [B] | -9.40 [B] | 0.52 [B] | 24.79 [*] | 60.20 [*]",
+     "kutle_kg": 1.898125e+27,
+     "ortalama_yaricap_km": 69911.0,
+     "kacis_hizi_km_s": 60.2,
+     "yorunge_donemi_gun": 4332.82,
+     "fark_kutle_%": 0.0,
+     "fark_yaricap_%": 0.0,
+     "fark_kacis_hizi_%": -1.16,
+     "fark_donem_%": -0.005
+    },
+    "jpl_kepler_tablo1": {
+     "url": "https://ssd.jpl.nasa.gov/planets/approx_pos.html",
+     "a_AU": 5.202887,
+     "not": "Table 1, 1800–2050 geçerli",
+     "fark_AU": 0.000476
+    }
+   }
+  },
+  {
+   "anahtar": "Saturn",
+   "ad_tr": "Satürn",
+   "ad_en": "Saturn",
+   "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturnfact.html",
+   "kaynak_guncelleme": "18 March 2025, DRW",
+   "erisim": "2026-10-27",
+   "kutle_kg": 5.6832e+26,
+   "ortalama_yaricap_km": 58232.0,
+   "ekvator_yaricap_km": 60268.0,
+   "kacis_hizi_km_s": 35.5,
+   "GM_km3_s2": 37931000.0,
+   "yari_buyuk_eksen_1e6_km": 1432.041,
+   "yari_buyuk_eksen_AU_J2000": 9.53707032,
+   "yorunge_donemi_gun": 10755.699,
+   "yorunge_donemi_turu": "yıldızıl (sidereal)",
+   "tropikal_donem_gun": 10746.94,
+   "alintilar": {
+    "kutle": "Mass (10^24 kg) 568.32",
+    "ortalama_yaricap": "Volumetric mean radius (km) 58,232",
+    "ekvator_yaricap": "Equatorial radius (1 bar level) (km) 60,268",
+    "kacis_hizi": "Escape velocity (km/s) 35.5",
+    "GM": "GM (x 10^6 km^3/s^2) 37.931",
+    "yari_buyuk_eksen_km": "Semimajor axis (10^6 km) 1,432.041",
+    "yari_buyuk_eksen_AU": "Semimajor axis (AU) 9.53707032",
+    "donem": "Sidereal orbit period (days) 10,755.699"
+   },
+   "capraz_kontrol": {
+    "nasa_ozet_tablo": {
+     "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+     "kutle_1e24_kg": "568",
+     "kacis_hizi": "35.5",
+     "gunes_uzakligi_1e6_km": "1432.0",
+     "yorunge_donemi_gun": "10,747",
+     "cap_km": "120,536"
+    },
+    "jpl_fiziksel": {
+     "url": "https://ssd.jpl.nasa.gov/planets/phys_par.html",
+     "satir": "Saturn | 60268 [D] ±4 | 58232 [D] ±6 | 568.317 [K] ±0.026 | 0.6871 [*] ±0.0002 | 0.44401 [C] | 29.447498 [B] | -8.88 [B] | 0.47 [B] | 10.44 [*] | 36.09 [*]",
+     "kutle_kg": 5.68317e+26,
+     "ortalama_yaricap_km": 58232.0,
+     "kacis_hizi_km_s": 36.09,
+     "yorunge_donemi_gun": 10755.699,
+     "fark_kutle_%": 0.001,
+     "fark_yaricap_%": 0.0,
+     "fark_kacis_hizi_%": -1.63,
+     "fark_donem_%": 0.0
+    },
+    "jpl_kepler_tablo1": {
+     "url": "https://ssd.jpl.nasa.gov/planets/approx_pos.html",
+     "a_AU": 9.53667594,
+     "not": "Table 1, 1800–2050 geçerli",
+     "fark_AU": 0.000394
+    }
+   }
+  },
+  {
+   "anahtar": "Uranus",
+   "ad_tr": "Uranüs",
+   "ad_en": "Uranus",
+   "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/uranusfact.html",
+   "kaynak_guncelleme": "2 October 2024, DRW",
+   "erisim": "2026-10-27",
+   "kutle_kg": 8.6811e+25,
+   "ortalama_yaricap_km": 25362.0,
+   "ekvator_yaricap_km": 25559.0,
+   "kacis_hizi_km_s": 21.3,
+   "GM_km3_s2": 5794000.0,
+   "yari_buyuk_eksen_1e6_km": 2867.043,
+   "yari_buyuk_eksen_AU_J2000": 19.19126393,
+   "yorunge_donemi_gun": 30685.4,
+   "yorunge_donemi_turu": "yıldızıl (sidereal)",
+   "tropikal_donem_gun": 30588.74,
+   "alintilar": {
+    "kutle": "Mass (10^24 kg) 86.811",
+    "ortalama_yaricap": "Volumetric mean radius (km) 25,362",
+    "ekvator_yaricap": "Equatorial radius (1 bar level) (km) 25,559",
+    "kacis_hizi": "Escape velocity (km/s) 21.3",
+    "GM": "GM (x 10^6 km^3/s^2) 5.7940",
+    "yari_buyuk_eksen_km": "Semimajor axis (10^6 km) 2,867.043",
+    "yari_buyuk_eksen_AU": "Semimajor axis (AU) 19.19126393",
+    "donem": "Sidereal orbit period (days) 30,685.400"
+   },
+   "capraz_kontrol": {
+    "nasa_ozet_tablo": {
+     "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+     "kutle_1e24_kg": "86.8",
+     "kacis_hizi": "21.3",
+     "gunes_uzakligi_1e6_km": "2867.0",
+     "yorunge_donemi_gun": "30,589",
+     "cap_km": "51,118"
+    },
+    "jpl_fiziksel": {
+     "url": "https://ssd.jpl.nasa.gov/planets/phys_par.html",
+     "satir": "Uranus | 25559 [D] ±4 | 25362 [D] ±7 | 86.8099 [L] ±0.0040 | 1.270 [*] ±0.001 | -0.71833 [C] | 84.016846 [B] | -7.19 [B] | 0.51 [B] | 8.87 [*] | 21.38 [*]",
+     "kutle_kg": 8.68099e+25,
+     "ortalama_yaricap_km": 25362.0,
+     "kacis_hizi_km_s": 21.38,
+     "yorunge_donemi_gun": 30687.153,
+     "fark_kutle_%": 0.001,
+     "fark_yaricap_%": 0.0,
+     "fark_kacis_hizi_%": -0.37,
+     "fark_donem_%": -0.006
+    },
+    "jpl_kepler_tablo1": {
+     "url": "https://ssd.jpl.nasa.gov/planets/approx_pos.html",
+     "a_AU": 19.18916464,
+     "not": "Table 1, 1800–2050 geçerli",
+     "fark_AU": 0.002099
+    }
+   }
+  },
+  {
+   "anahtar": "Neptun",
+   "ad_tr": "Neptün",
+   "ad_en": "Neptune",
+   "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/neptunefact.html",
+   "kaynak_guncelleme": "3 October 2024, DRW",
+   "erisim": "2026-10-27",
+   "kutle_kg": 1.02409e+26,
+   "ortalama_yaricap_km": 24622.0,
+   "ekvator_yaricap_km": 24764.0,
+   "kacis_hizi_km_s": 23.5,
+   "GM_km3_s2": 6835100.0,
+   "yari_buyuk_eksen_1e6_km": 4514.953,
+   "yari_buyuk_eksen_AU_J2000": 30.06896348,
+   "yorunge_donemi_gun": 60189.018,
+   "yorunge_donemi_turu": "yıldızıl (sidereal)",
+   "tropikal_donem_gun": 59799.9,
+   "alintilar": {
+    "kutle": "Mass (10^24 kg) 102.409",
+    "ortalama_yaricap": "Volumetric mean radius (km) 24,622",
+    "ekvator_yaricap": "Equatorial radius (1 bar level) (km) 24,764",
+    "kacis_hizi": "Escape velocity (km/s) 23.5",
+    "GM": "GM (x 10^6 km^3/s^2) 6.8351",
+    "yari_buyuk_eksen_km": "Semimajor axis (10^6 km) 4,514.953",
+    "yari_buyuk_eksen_AU": "Semimajor axis (AU) 30.06896348",
+    "donem": "Sidereal orbit period (days) 60,189.018"
+   },
+   "capraz_kontrol": {
+    "nasa_ozet_tablo": {
+     "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+     "kutle_1e24_kg": "102",
+     "kacis_hizi": "23.5",
+     "gunes_uzakligi_1e6_km": "4515.0",
+     "yorunge_donemi_gun": "59,800",
+     "cap_km": "49,528"
+    },
+    "jpl_fiziksel": {
+     "url": "https://ssd.jpl.nasa.gov/planets/phys_par.html",
+     "satir": "Neptune | 24764 [D] ±15 | 24622 [D] ±19 | 102.4092 [M] ±0.0048 | 1.638 [*] ±0.004 | 0.67125 [C] | 164.79132 [B] | -6.87 [B] | 0.41 [B] | 11.15 [*] | 23.56 [*]",
+     "kutle_kg": 1.024092e+26,
+     "ortalama_yaricap_km": 24622.0,
+     "kacis_hizi_km_s": 23.56,
+     "yorunge_donemi_gun": 60190.03,
+     "fark_kutle_%": -0.0,
+     "fark_yaricap_%": 0.0,
+     "fark_kacis_hizi_%": -0.25,
+     "fark_donem_%": -0.002
+    },
+    "jpl_kepler_tablo1": {
+     "url": "https://ssd.jpl.nasa.gov/planets/approx_pos.html",
+     "a_AU": 30.06992276,
+     "not": "Table 1, 1800–2050 geçerli",
+     "fark_AU": -0.000959
+    }
+   }
+  },
+  {
+   "anahtar": "Pluton",
+   "ad_tr": "Plüton",
+   "ad_en": "Pluto",
+   "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/plutofact.html",
+   "kaynak_guncelleme": "11 January 2024, DRW",
+   "erisim": "2026-10-27",
+   "kutle_kg": 1.303e+22,
+   "ortalama_yaricap_km": 1188.0,
+   "ekvator_yaricap_km": 1188.0,
+   "kacis_hizi_km_s": 1.21,
+   "GM_km3_s2": 870.0,
+   "yari_buyuk_eksen_1e6_km": 5869.656,
+   "yari_buyuk_eksen_AU_J2000": 39.48168677,
+   "yorunge_donemi_gun": 90560.0,
+   "yorunge_donemi_turu": "yıldızıl (sidereal)",
+   "alintilar": {
+    "kutle": "Mass (10^24 kg) 0.01303",
+    "ortalama_yaricap": "Volumetric mean radius (km) 1188",
+    "ekvator_yaricap": "Equatorial radius (km) 1188",
+    "kacis_hizi": "Escape velocity (km/s) 1.21",
+    "GM": "GM (x 10^6 km^3/s^2) 0.000870",
+    "yari_buyuk_eksen_km": "Semimajor axis (10^6 km) 5869.656",
+    "yari_buyuk_eksen_AU": "Semimajor axis (AU) 39.48168677",
+    "donem": "Sidereal orbit period (days) 90,560"
+   },
+   "capraz_kontrol": {
+    "nasa_ozet_tablo": {
+     "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+     "kutle_1e24_kg": "0.0130",
+     "kacis_hizi": "1.3",
+     "gunes_uzakligi_1e6_km": "5906.4",
+     "yorunge_donemi_gun": "90,560",
+     "cap_km": "2376"
+    },
+    "jpl_fiziksel": {
+     "url": "https://ssd.jpl.nasa.gov/planets/phys_par.html",
+     "satir": "Pluto | 1188.3 [D] ±1.6 | 1188.3 [D] ±1.6 | 13024.6 [N] ±6.0 | 1.853 [N] ±0.004 | -6.3872 [C] | 247.92065 [B] | -1.0 [Q] | 0.3 [B] | 0.62 [*] | 1.21 [*]",
+     "kutle_kg": 1.30246e+22,
+     "ortalama_yaricap_km": 1188.3,
+     "kacis_hizi_km_s": 1.21,
+     "yorunge_donemi_gun": 90553.017,
+     "fark_kutle_%": 0.041,
+     "fark_yaricap_%": -0.025,
+     "fark_kacis_hizi_%": 0.0,
+     "fark_donem_%": 0.008
+    }
+   }
+  }
+ ]
+}

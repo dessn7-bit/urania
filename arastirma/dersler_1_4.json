@@ -1,0 +1,439 @@
+[
+  {
+    "id": "d1",
+    "baslik": "Gökyüzünü Okumak: Koordinatlar, Dönüş ve Parlaklık",
+    "ozet": "Gökyüzünü dev bir küre gibi düşünüp yıldızların yerini iki koordinat sistemiyle tarif etmeyi, Dünya'nın dönüşünün ve Güneş çevresindeki yolculuğunun gökyüzüne nasıl yansıdığını öğreniyoruz. Ardından parlaklığın kadir ölçeğiyle nasıl ölçüldüğünü ve ışık kirliliğinin bu tabloyu nasıl sildiğini görüyoruz.",
+    "bolumler": [
+      {
+        "baslik": "Gök küresi: işe yarayan bir yanılsama",
+        "paragraflar": [
+          "Açık bir gecede gökyüzüne baktığınızda yıldızlar sanki hepsi aynı uzaklıkta, başınızın üstünü örten dev bir kubbeye yapıştırılmış gibi görünür. Gökbilimciler bu yanılsamayı bilerek kullanır. Gök küresi, merkezinde Dünya'nın (ya da gözlemcinin) durduğu, yarıçapı istediğimiz kadar büyük, hayali bir küredir. Gökteki her cismi bu kürenin iç yüzüne izdüşürürüz. Böylece cismin ne kadar uzak olduğunu bir kenara bırakır, yalnızca hangi yönde olduğuyla ilgileniriz.",
+          "Kürenin üzerinde birkaç sabit işaret vardır. Dünya'nın dönme ekseni uzatıldığında gök küresini iki noktada deler: kuzey ve güney gök kutupları. Dünya'nın ekvatoru gökyüzüne izdüşürüldüğünde gök ekvatoru oluşur. Dünya'nın yörünge düzlemi ise gökte tutulumu (ekliptik) verir: Güneş'in bir yıl boyunca yıldızların önünde izlediği yol."
+        ]
+      },
+      {
+        "baslik": "Ufuk koordinatları: yükseklik ve azimut",
+        "paragraflar": [
+          "En sezgisel sistem, durduğunuz yere göre kurulan ufuk koordinat sistemidir ve iki açı kullanır. Yükseklik, cismin ufuktan ne kadar yukarıda olduğunu söyler: ufuktaki bir cisim 0°, tam tepenizdeki nokta (başucu) 90°'dir. Azimut ise ufuk boyunca yönü verir; genellikle kuzeyden başlayıp doğuya doğru ölçülür: kuzey 0°, doğu 90°, güney 180°, batı 270°.",
+          "Bu sistemin kolaylığı da zayıflığı da aynı yerden gelir: tamamen size bağlıdır. Dünya döndükçe bir yıldızın yüksekliği ve azimutu sürekli değişir; aynı anda başka bir şehirden bakan biri aynı yıldız için başka değerler ölçer. ‘Şu yıldız 40° yükseklikte’ gibi bir cümle yalnızca belli bir yer ve belli bir an için doğrudur."
+        ]
+      },
+      {
+        "baslik": "Ekvatoral koordinatlar: sağ açıklık ve dik açıklık",
+        "paragraflar": [
+          "Herkesin aynı numarayı kullanabileceği bir ‘gök adresi’ için koordinatları Dünya'ya değil, gök küresine bağlamak gerekir. Ekvatoral sistem, coğrafi enlem ve boylamın gökteki karşılığıdır. Dik açıklık (δ) enleme karşılık gelir: gök ekvatorundan kuzeye doğru artı, güneye doğru eksi derece olarak ölçülür. Kuzey gök kutbunun dik açıklığı +90°'dir.",
+          "Sağ açıklık (α) boylama karşılık gelir. Başlangıç çizgisi olarak Greenwich yerine ilkbahar noktası (Mart ekinoksu) seçilmiştir; burası tutulumun gök ekvatorunu kestiği iki noktadan biridir. Sağ açıklık bu noktadan doğuya doğru ölçülür ve genellikle derece yerine saat, dakika ve saniyeyle verilir: tam bir tur 24 saattir, dolayısıyla 1 saat 15°'ye eşittir. Neden saat? Çünkü gökbilimciler bir yıldızın konumunu, Dünya döndükçe yıldızın gökteki en yüksek noktadan, yani meridyenden geçiş anını zamanlayarak ölçer.",
+          "Uzak bir yıldızın sağ açıklığı ve dik açıklığı, Dünya'nın neresinden bakılırsa bakılsın aynıdır. Yıldız katalogları ve gök haritaları bu yüzden ufuk sistemini değil, ekvatoral sistemi kullanır."
+        ]
+      },
+      {
+        "baslik": "Dünya'nın dönüşü: gece boyunca gökyüzü",
+        "paragraflar": [
+          "Gök küresinin bütün halinde batıya doğru döner gibi görünmesinin sebebi Dünya'nın kendi ekseni etrafında dönmesidir. Bu günlük harekette yıldızlar gök kutbunun çevresinde daireler çizer; gök ekvatorundaki bir yıldız saatte 15° yol alır. Yıldızlara göre bir tam dönüş 23 saat 56 dakika 4 saniye sürer; buna yıldız günü denir.",
+          "Kuzey gök kutbunun ufuktan yüksekliği, gözlemcinin enlemine eşittir. İstanbul yaklaşık 41° kuzey enlemindedir; bu yüzden İstanbul'dan bakınca kuzey gök kutbu kuzey ufkunun yaklaşık 41° üzerindedir. Kutup Yıldızı (Polaris) bu noktaya 1°'den daha yakın olduğu için gece boyunca neredeyse kımıldamaz; hem kuzey yönünü hem de enleminizi bulmanıza yarar.",
+          "Kutba yeterince yakın yıldızlar hiç batmaz; bunlara kutup çevresi yıldızları denir. Kural basittir: kuzey yarımkürede enleminiz ile yıldızın dik açıklığının toplamı 90°'yi aşıyorsa yıldız hiç batmaz. İstanbul için bu, dik açıklığı yaklaşık +49°'den büyük yıldızlar demektir."
+        ]
+      },
+      {
+        "baslik": "Yıllık hareket: Güneş'in yıldızlar arasındaki yolu",
+        "paragraflar": [
+          "Dünya bir yandan da Güneş'in çevresinde dolanır. Bir yıldız günü boyunca yörüngesinde yaklaşık 1° ilerlediği için, Güneş'i yeniden öğle konumuna getirmek için biraz daha dönmesi gerekir. Bu yüzden ortalama Güneş günü yıldız gününden yaklaşık 4 dakika uzundur. Bir yılda Güneş'e göre yaklaşık 365,24 gün, yıldızlara göre ise 366,24 yıldız günü geçer: aradaki bir tur, Dünya'nın Güneş çevresindeki tek dolanımıdır.",
+          "Sonuç olarak Güneş, yıldızların önünde her gün yaklaşık 1° doğuya kayar ve bir yılda tutulum boyunca tam bir tur atar. Aynı saatte bakıldığında gece gökyüzünün mevsimden mevsime değişmesinin nedeni budur. Dünya'nın dönme ekseni yörünge düzlemine dik olmadığı için tutulum, gök ekvatoruna yaklaşık 23,4° eğiktir; NASA bu eğikliği 23,44° olarak verir."
+        ]
+      },
+      {
+        "baslik": "Kadir ölçeği: parlaklığı sayıya dökmek",
+        "paragraflar": [
+          "Yıldız parlaklığını sınıflama geleneği Antik Yunan'a uzanır. Çıplak gözle görülen yıldızlar altı sınıfa ayrılırdı: en parlaklar 1. kadir, en sönükler 6. kadir. Bu sistem Batlamyus'un Almagest'i ile yaygınlaştı ve genellikle Hipparkos'a dayandırılır. Dikkat: ölçek terstir, sayı küçüldükçe cisim parlaklaşır.",
+          "1856'da Norman Pogson ölçeği matematiksel olarak tanımladı: 1. kadirden bir yıldız, 6. kadirden bir yıldızdan tam 100 kat parlaktır. Yani 5 kadirlik fark 100 kat parlaklık demektir. Bir kadirlik fark da 100'ün beşinci kökü, yani yaklaşık 2,512 kattır. Ölçek logaritmiktir: farklar toplanırken oranlar çarpılır. 2 kadir fark yaklaşık 6,31 kat, 10 kadir fark 100 × 100 = 10.000 kat eder.",
+          "Modern ölçekte çok parlak cisimler eksi değer alır: gece gökyüzünün en parlak yıldızı Sirius −1,46, Venüs yaklaşık −4,2, dolunay −12,74, Güneş ise yaklaşık −26,8 kadirdir. Çok karanlık bir gecede çıplak gözün görebildiği en sönük yıldızlar yaklaşık +6,5 kadirdir; bu sınıra kadar yaklaşık 9.500 yıldız vardır."
+        ]
+      },
+      {
+        "baslik": "Işık kirliliği: kaybolan yıldızlar",
+        "paragraflar": [
+          "Görebildiğiniz en sönük yıldız yalnızca gözünüze değil, gökyüzünün ne kadar karanlık olduğuna da bağlıdır. Kentsel bir mahallede çıplak gözle ancak +3 kadire, banliyöde +4 kadire kadar yıldız seçilebilir. +6,5 ile +3 arasındaki 3,5 kadirlik fark, kentte görebileceğiniz en sönük yıldızın karanlık gökteki sınırdan yaklaşık 25 kat parlak olması gerektiği anlamına gelir; sönük yıldızların büyük çoğunluğu kaybolur.",
+          "Yapay ışıkların gece gökyüzünü aydınlatmasına gök parıltısı denir. 2016'da yayımlanan yapay gece gökyüzü parlaklığı dünya atlasına göre dünya nüfusunun %80'inden fazlası, ABD ve Avrupa nüfusunun %99'undan fazlası ışık kirliliğine uğramış bir gökyüzünün altında yaşıyor. Samanyolu insanlığın üçte birinden fazlasına, Avrupalıların %60'ına ve Kuzey Amerikalıların yaklaşık %80'ine görünmüyor.",
+          "Durum kötüleşiyor. Gönüllülerin NOIRLab'in Globe at Night programına 2011–2022 arasında gönderdiği 50.000'den fazla gözlemin analizi, gökyüzü parlaklığının her yıl %9,6 arttığını gösterdi; uydular yüzey parlaklığındaki küresel artışı yılda yalnızca yaklaşık %2 olarak ölçüyordu. Çalışmanın baş yazarı Christopher Kyba'ya göre bu hızla, 250 yıldız görülebilen bir yerde doğan bir çocuk 18 yaşına geldiğinde yaklaşık 100 yıldız görebilecek."
+        ]
+      }
+    ],
+    "formuller": [
+      {"ad": "Kadir farkı ve parlaklık oranı", "ifade": "F_B / F_A = 100^((m_A − m_B) / 5) = 10^(0,4 × (m_A − m_B)) ≈ 2,512^(m_A − m_B)", "aciklama": "B daha parlak (kadiri küçük), A daha sönük cisim. 5 kadir fark tam 100 kat eder."},
+      {"ad": "Kadirin tanımı", "ifade": "m = −2,5 × log₁₀(F / F₀)", "aciklama": "F gözlenen ışınım akısı, F₀ sıfır noktası olarak seçilen referans akı. Akı arttıkça m küçülür."},
+      {"ad": "Kutup yüksekliği", "ifade": "Gök kutbunun yüksekliği = gözlemcinin enlemi (φ)", "aciklama": "İstanbul için φ ≈ 41°, Kutup Yıldızı ufkun yaklaşık 41° üzerinde."},
+      {"ad": "Kutup çevresi yıldızı koşulu", "ifade": "φ + δ > 90° (kuzey yarımküre)", "aciklama": "Bu koşulu sağlayan yıldız hiç batmaz. δ − φ < −90° ise yıldız hiç doğmaz."},
+      {"ad": "Sağ açıklık dönüşümü", "ifade": "24 saat = 360°  →  1 saat = 15°, 1 dakika = 15′, 1 saniye = 15″", "aciklama": "Gök ekvatorundaki bir yıldızın günlük hareket hızı da saatte 15°'dir."}
+    ],
+    "anahtar_sayilar": [
+      {"deger": "Azimut: K 0°, D 90°, G 180°, B 270°", "aciklama": "Ana yönlerin azimut değerleri (kuzeyden doğuya ölçüm)", "kaynak_url": "https://en.wikipedia.org/wiki/Horizontal_coordinate_system"},
+      {"deger": "24 saat = 360°, 1 saat = 15°", "aciklama": "Sağ açıklık birimleri", "kaynak_url": "https://en.wikipedia.org/wiki/Right_ascension"},
+      {"deger": "23 sa 56 dk 4,09 sn", "aciklama": "Yıldız günü (yıldızlara göre bir dönüş)", "kaynak_url": "https://en.wikipedia.org/wiki/Diurnal_motion"},
+      {"deger": "23,9345 saat", "aciklama": "Dünya'nın yıldızlara göre dönme süresi (NASA)", "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html"},
+      {"deger": "yaklaşık 4 dakika, yaklaşık 1°", "aciklama": "Güneş günü ile yıldız günü farkı; Dünya'nın bir yıldız gününde yörüngede aldığı yol", "kaynak_url": "https://en.wikipedia.org/wiki/Sidereal_time"},
+      {"deger": "41°00′49″ K", "aciklama": "İstanbul'un enlemi", "kaynak_url": "https://en.wikipedia.org/wiki/Istanbul"},
+      {"deger": "< 1°", "aciklama": "Kutup Yıldızı'nın kuzey gök kutbuna uzaklığı", "kaynak_url": "https://en.wikipedia.org/wiki/Celestial_pole"},
+      {"deger": "23,44°", "aciklama": "Dünya ekseninin yörüngeye göre eğikliği (tutulumun gök ekvatoruna eğikliği)", "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html"},
+      {"deger": "5 kadir = 100 kat; 1 kadir ≈ 2,512 kat", "aciklama": "Pogson oranı (1856)", "kaynak_url": "https://en.wikipedia.org/wiki/Apparent_magnitude"},
+      {"deger": "Sirius −1,46; Venüs −4,2; Güneş −26,832", "aciklama": "Örnek görünür kadirler", "kaynak_url": "https://en.wikipedia.org/wiki/Apparent_magnitude"},
+      {"deger": "Dolunay −12,74", "aciklama": "Ay'ın karşı konumdaki ortalama görünür kadiri", "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html"},
+      {"deger": "+6,5; yaklaşık 9.500 yıldız", "aciklama": "Çok iyi koşullarda çıplak göz sınırı ve bu sınıra kadarki yıldız sayısı", "kaynak_url": "https://en.wikipedia.org/wiki/Apparent_magnitude"},
+      {"deger": "Kent +3, banliyö +4", "aciklama": "Çıplak gözle görülebilen en sönük kadir", "kaynak_url": "https://en.wikipedia.org/wiki/Apparent_magnitude"},
+      {"deger": "%80+ dünya, %99+ ABD/Avrupa; Samanyolu insanlığın 1/3'ünden fazlasına görünmüyor", "aciklama": "Falchi ve ark. 2016, Science Advances", "kaynak_url": "https://arxiv.org/abs/1609.01041"},
+      {"deger": "yılda %9,6", "aciklama": "Globe at Night verisine göre gökyüzü parlaklığı artışı (2011–2022)", "kaynak_url": "https://kpno.noirlab.edu/news/noirlab2302"},
+      {"deger": "250 yıldız → yaklaşık 100 yıldız (18 yılda)", "aciklama": "Kyba'nın örneği", "kaynak_url": "https://kpno.noirlab.edu/news/noirlab2302"}
+    ],
+    "defter_notu": [
+      "Gök küresi: uzaklığı yok sayıp yalnızca yönü gösteren hayali küre.",
+      "Ufuk sistemi: yükseklik (0° ufuk – 90° başucu) + azimut (K 0°, D 90°, G 180°, B 270°). Yere ve zamana bağlı.",
+      "Ekvatoral sistem: dik açıklık δ (enlem gibi, ±90°) + sağ açıklık α (boylam gibi, ilkbahar noktasından doğuya, 24 sa = 360°, 1 sa = 15°). Herkes için aynı.",
+      "Gök kutbunun yüksekliği = enlem. İstanbul ≈ 41° → Kutup Yıldızı ≈ 41° yükseklikte.",
+      "Yıldız günü 23 sa 56 dk 4 sn; Güneş günü ~4 dk daha uzun çünkü Dünya günde ~1° yörüngede ilerler.",
+      "Tutulum gök ekvatoruna ~23,4° eğik (NASA: 23,44°).",
+      "Kadir: ters ve logaritmik. 5 kadir = 100 kat, 1 kadir ≈ 2,512 kat. Göz sınırı ~+6,5; kentte ~+3.",
+      "Işık kirliliği: dünya nüfusunun %80'i+ kirli gök altında; gök parlaklığı yılda %9,6 artıyor (Globe at Night)."
+    ],
+    "sorular": [
+      {"soru": "Enlemi 41° olan İstanbul'dan bakan biri için dik açıklığı +60° olan bir yıldız batar mı? Dik açıklığı −55° olan bir yıldızı görebilir mi?", "cevap": "+60° için 41 + 60 = 101° > 90° olduğundan yıldız kutup çevresidir, hiç batmaz. −55° için δ − φ = −55 − 41 = −96° < −90° olduğundan yıldız İstanbul'dan hiç doğmaz, görülemez."},
+      {"soru": "Sağ açıklığı 6 saat olan bir yıldızın sağ açıklığı derece cinsinden kaçtır?", "cevap": "1 saat = 15° olduğundan 6 × 15° = 90°."},
+      {"soru": "+1 kadirlik bir yıldız +6 kadirlik bir yıldızdan kaç kat parlaktır? +1 ile +3 arasındaki oran nedir?", "cevap": "5 kadir fark = tam 100 kat. 2 kadir fark ≈ 2,512² ≈ 6,31 kat."}
+    ],
+    "kaynaklar": [
+      {"ad": "Wikipedia – Celestial sphere", "url": "https://en.wikipedia.org/wiki/Celestial_sphere"},
+      {"ad": "Wikipedia – Horizontal coordinate system", "url": "https://en.wikipedia.org/wiki/Horizontal_coordinate_system"},
+      {"ad": "Wikipedia – Equatorial coordinate system", "url": "https://en.wikipedia.org/wiki/Equatorial_coordinate_system"},
+      {"ad": "Wikipedia – Right ascension", "url": "https://en.wikipedia.org/wiki/Right_ascension"},
+      {"ad": "Wikipedia – Celestial pole", "url": "https://en.wikipedia.org/wiki/Celestial_pole"},
+      {"ad": "Wikipedia – Circumpolar star", "url": "https://en.wikipedia.org/wiki/Circumpolar_star"},
+      {"ad": "Wikipedia – Diurnal motion", "url": "https://en.wikipedia.org/wiki/Diurnal_motion"},
+      {"ad": "Wikipedia – Sidereal time", "url": "https://en.wikipedia.org/wiki/Sidereal_time"},
+      {"ad": "Wikipedia – Ecliptic", "url": "https://en.wikipedia.org/wiki/Ecliptic"},
+      {"ad": "Wikipedia – Apparent magnitude", "url": "https://en.wikipedia.org/wiki/Apparent_magnitude"},
+      {"ad": "Wikipedia – Istanbul (koordinat)", "url": "https://en.wikipedia.org/wiki/Istanbul"},
+      {"ad": "NASA NSSDCA – Earth Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html"},
+      {"ad": "NASA NSSDCA – Moon Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html"},
+      {"ad": "Falchi ve ark. (2016), The new world atlas of artificial night sky brightness, Science Advances – arXiv özeti", "url": "https://arxiv.org/abs/1609.01041"},
+      {"ad": "NSF NOIRLab basın bülteni noirlab2302 – Stars Disappear Before Our Eyes, Citizen Scientists Report", "url": "https://kpno.noirlab.edu/news/noirlab2302"}
+    ]
+  },
+  {
+    "id": "d2",
+    "baslik": "Işık ve Tayf: Yıldızlardan Gelen Mesajı Okumak",
+    "ozet": "Yıldızlara gidemeyiz ama ışıkları bize gelir. Bu derste ışığın dalga boyu ve frekansla nasıl tarif edildiğini, sıcak cisimlerin sıcaklıklarını renkleriyle nasıl ele verdiğini, tayf çizgilerinin kimyasal bileşimi nasıl açığa çıkardığını ve Doppler kaymasıyla hızın nasıl ölçüldüğünü öğreniyoruz.",
+    "bolumler": [
+      {
+        "baslik": "Işık: hem dalga hem parçacık",
+        "paragraflar": [
+          "Gökbilimin elindeki bilginin neredeyse tamamı ışıktan gelir. Işık, birbirini doğuran elektrik ve manyetik alanlardan oluşan bir dalgadır: değişen bir manyetik alan değişen bir elektrik alanı doğurur, o da yeniden manyetik alanı. Ses dalgalarından farkı, ilerlemek için bir ortama ihtiyaç duymamasıdır; boşlukta da yol alır. Yıldız ışığının uzayın boşluğunu aşıp bize ulaşabilmesi bu sayededir. James Clerk Maxwell bu kuramı 1860'lı ve 1870'li yıllarda geliştirdi; Heinrich Hertz radyo dalgalarını üretip algılayarak onların da ışık hızıyla gittiğini, yani bir tür ışık olduğunu gösterdi.",
+          "Işık aynı zamanda foton denen enerji paketlerinden oluşur. Fotonların kütlesi yoktur ve ışık hızında hareket ederler. Hangi yüzünü göreceğiniz ölçme yönteminize bağlıdır: ışığı tayfına ayıran bir alet dalga yüzünü, dijital kameradaki dedektör ise tek tek fotonları, yani parçacık yüzünü görür."
+        ]
+      },
+      {
+        "baslik": "Dalga boyu, frekans ve elektromanyetik tayf",
+        "paragraflar": [
+          "Bir dalgayı iki büyüklükle tarif ederiz. Dalga boyu (λ) iki tepe arasındaki uzaklıktır. Frekans (f) bir noktadan saniyede geçen tepe sayısıdır ve hertz (Hz) ile ölçülür. Boşlukta bütün elektromanyetik dalgalar aynı hızla, ışık hızıyla gider: c = 299.792.458 m/s. Bu yüzden dalga boyu ile frekans ters orantılıdır: f = c / λ. Dalga boyu kısaldıkça frekans da, her bir fotonun taşıdığı enerji de artar.",
+          "Elektromanyetik tayf, düşük frekanstan yükseğe şu bantlardan oluşur: radyo dalgaları, mikrodalgalar, kızılötesi, görünür ışık, morötesi, X ışınları ve gama ışınları. Gözümüzün gördüğü bölüm bu geniş yelpazenin ince bir dilimidir: insan gözü genellikle yaklaşık 380 nm (mor) ile 700 nm (kırmızı) arasındaki dalga boylarını algılar.",
+          "Atmosferimiz bu tayfın büyük kısmını süzer. Gama ışınları, X ışınları ve morötesinin bir bölümü yere ulaşmaz; görünür ışık ise büyük ölçüde geçer. Atmosferin geçirdiği bu bölgelere atmosfer pencereleri denir. Yüksek enerjili ışınımı incelemek için aletleri atmosferin dışına, uzaya çıkarmak gerekir."
+        ]
+      },
+      {
+        "baslik": "Kara cisim ışıması: sıcaklığın rengi",
+        "paragraflar": [
+          "Kara cisim, üzerine düşen her dalga boyundaki ışınımı soğuran, hiç yansıtmayan ideal bir cisimdir. Böyle bir cisim belli bir sıcaklıktayken yaydığı ışınım kesintisiz, sürekli bir tayf oluşturur ve bu tayfın biçimi yalnızca sıcaklığa bağlıdır. Yıldızlar kusursuz kara cisim değildir ama yaklaşık olarak öyle davranır; bu da sıcaklıklarını uzaktan ölçmemizi sağlar.",
+          "Gündelik deneyim bunu doğrular: ateşte ısıtılan bir demirin ilk görünür ışıltısı (yaklaşık 900 K'de) koyu kırmızıdır; bir kaynak şalomasının alevi ayarlanıp ısındıkça kırmızımsıdan mavimsiye döner. Kural şudur: cisim ne kadar sıcaksa ışınımı o kadar kısa dalga boylarına, yani maviye doğru kayar."
+        ]
+      },
+      {
+        "baslik": "Wien yasası: tepe noktası nerede?",
+        "paragraflar": [
+          "Kara cisim eğrisinin en yüksek olduğu dalga boyu sıcaklıkla ters orantılıdır: λ_tepe = b / T. Buradaki b, Wien sabitidir: yaklaşık 2,898 × 10⁻³ m·K. Sıcaklık iki katına çıkarsa tepe dalga boyu yarıya iner.",
+          "Güneş'in etkin sıcaklığı 5772 K'dir. Wien yasasıyla tepe dalga boyu 2,898 × 10⁻³ / 5772 ≈ 5,02 × 10⁻⁷ m, yani yaklaşık 500 nm çıkar: görünür bölgenin yeşil kısmı. Orion takımyıldızının iki parlak yıldızı karşıtlığı güzel gösterir: mavi-beyaz Rigel yaklaşık 12.100 K, kırmızı Betelgeuse yaklaşık 3800 K sıcaklıktadır. Rigel'in tepe noktası yaklaşık 240 nm ile morötesine, Betelgeuse'unki yaklaşık 760 nm ile görünür bölgenin hemen dışına, yakın kızılötesine düşer. Nitekim Rigel ışığının %60'ını morötesinde, Betelgeuse ise %85'ini kızılötesinde yayar."
+        ]
+      },
+      {
+        "baslik": "Stefan-Boltzmann yasası: ne kadar enerji?",
+        "paragraflar": [
+          "Bir kara cismin her metrekaresinden saniyede yayılan toplam enerji, sıcaklığın dördüncü kuvvetiyle orantılıdır: F = σT⁴. σ, Stefan-Boltzmann sabitidir: 5,670 × 10⁻⁸ W m⁻² K⁻⁴. Dördüncü kuvvet çok güçlü bir etkidir: sıcaklığı iki katına çıkarırsanız her metrekare 2⁴ = 16 kat fazla enerji yayar. Bu ilişkiyi Josef Stefan 1877'de deney verilerinden çıkardı, Ludwig Boltzmann 1884'te kuramsal olarak türetti.",
+          "Bir yıldızın toplam ışıma gücünü (L) bulmak için bu değeri yıldızın yüzey alanıyla (4πR²) çarparız: L = 4πR²σT⁴. Güneş için yarıçapı 695.700 km ve sıcaklığı 5772 K alırsak L ≈ 3,828 × 10²⁶ W çıkar; bu, NASA'nın Güneş için verdiği ışıma gücüyle (382,8 × 10²⁴ W) örtüşür. Yani ışıma gücü, yarıçap ve sıcaklıktan ikisini biliyorsak üçüncüsünü hesaplayabiliriz."
+        ]
+      },
+      {
+        "baslik": "Tayf çizgileri: elementlerin parmak izi",
+        "paragraflar": [
+          "Güneş ışığı tayfına ayrılıp dikkatle incelendiğinde renklerin üzerinde ince karanlık çizgiler görülür. Bunları ilk kez 1802'de William Hyde Wollaston fark etti; 1814'te Joseph von Fraunhofer bağımsız olarak yeniden keşfetti ve 570'ten fazla çizginin haritasını çıkardı. Bugün bunlara Fraunhofer çizgileri diyoruz.",
+          "Yaklaşık 45 yıl sonra Gustav Kirchhoff ve Robert Bunsen, bu karanlık çizgilerin bir kısmının laboratuvarda ısıtılan elementlerin parlak salma çizgileriyle aynı yerde durduğunu fark etti. Vardıkları sonuç: karanlık çizgiler, Güneş atmosferindeki elementlerin belirli dalga boylarını soğurmasından doğar. Genel kural şudur: sıcak, geniş tayflı bir kaynağın ışığı daha soğuk bir maddeden geçerse soğurma çizgileri oluşur; ısıtılmış bir gaz ise kendi başına parlak salma çizgileri yayar.",
+          "Her element yalnızca kendine özgü dalga boylarında soğurur ve salar. Çünkü atomdaki elektron yalnızca belirli enerji düzeyleri arasında geçiş yapabilir ve yayılan fotonun enerjisi iki düzey arasındaki farka eşittir. Örneğin hidrojende elektronun üçüncü düzeyden ikinciye inmesiyle oluşan H-alfa çizgisi 656,28 nm'de (havada ölçülen) koyu kırmızıdır. Bu parmak izleriyle elementler yıldızlarda tanınabilir. Helyum ilk kez Dünya'da değil Güneş'te bulundu: 18 Ağustos 1868'deki tam Güneş tutulmasında, kromosferin tayfında 587,49 nm'de parlak sarı bir çizgi görüldü. Element adını Yunanca ‘güneş’ anlamına gelen helios'tan aldı ve Dünya'da ancak 1895'te William Ramsay tarafından elde edildi."
+        ]
+      },
+      {
+        "baslik": "Doppler kayması: yıldızın hızını ölçmek",
+        "paragraflar": [
+          "Yaklaşan bir aracın sireni daha tiz, uzaklaşanınki daha pes duyulur. Işıkta da aynısı olur: kaynak bizden uzaklaşıyorsa dalgalar uzar ve tayf çizgileri kırmızıya kayar; yaklaşıyorsa dalgalar kısalır ve çizgiler maviye kayar. Hız ışık hızının yanında küçükse kayma basit bir orantıyla verilir: Δλ / λ ≈ v / c.",
+          "Önemli bir ayrıntı: Doppler kayması yalnızca bakış doğrultusundaki hızı, yani dikine hızı ölçer; gökte yana doğru hareket tayfta görünmez. Örnek: 656,28 nm'deki H-alfa çizgisi bir yıldızda 656,35 nm'de görülürse Δλ = 0,07 nm olur ve v ≈ (0,07 / 656,28) × 299.792 km/s ≈ 32 km/s çıkar: yıldız bizden bu hızla uzaklaşıyordur. Bu yöntemle tek görünen bir yıldızın aslında yakın bir çift yıldız olduğu anlaşılabilir, yıldızların ve gökadaların dönüş hızları ölçülebilir."
+        ]
+      }
+    ],
+    "formuller": [
+      {"ad": "Dalga boyu – frekans ilişkisi", "ifade": "f = c / λ", "aciklama": "c = 299.792.458 m/s. Dalga boyu kısaldıkça frekans artar."},
+      {"ad": "Foton enerjisi", "ifade": "E = h × f = h × c / λ", "aciklama": "h Planck sabiti. Kısa dalga boyu = yüksek enerjili foton."},
+      {"ad": "Wien kayma yasası", "ifade": "λ_tepe = b / T,  b ≈ 2,898 × 10⁻³ m·K", "aciklama": "T kelvin cinsinden. Sıcaklık arttıkça tepe dalga boyu kısalır."},
+      {"ad": "Stefan-Boltzmann yasası", "ifade": "F = σ × T⁴,  σ ≈ 5,670 × 10⁻⁸ W m⁻² K⁻⁴", "aciklama": "Birim yüzeyden saniyede yayılan enerji."},
+      {"ad": "Yıldızın ışıma gücü", "ifade": "L = 4πR²σT⁴", "aciklama": "R yıldız yarıçapı, T etkin sıcaklık."},
+      {"ad": "Doppler kayması (v ≪ c)", "ifade": "Δλ / λ ≈ v / c", "aciklama": "Δλ > 0 kırmızıya kayma (uzaklaşma), Δλ < 0 maviye kayma (yaklaşma). Yalnızca dikine hızı verir."}
+    ],
+    "anahtar_sayilar": [
+      {"deger": "299 792 458 m/s", "aciklama": "Boşlukta ışık hızı (CODATA)", "kaynak_url": "https://physics.nist.gov/cgi-bin/cuu/Value?c"},
+      {"deger": "380–700 nm", "aciklama": "İnsan gözünün tipik olarak algıladığı aralık", "kaynak_url": "https://science.nasa.gov/ems/09_visiblelight/"},
+      {"deger": "2,897 771 955 × 10⁻³ m·K", "aciklama": "Wien kayma yasası sabiti b", "kaynak_url": "https://physics.nist.gov/cgi-bin/cuu/Value?bwien"},
+      {"deger": "5,670 374 419 × 10⁻⁸ W m⁻² K⁻⁴", "aciklama": "Stefan-Boltzmann sabiti σ", "kaynak_url": "https://physics.nist.gov/cgi-bin/cuu/Value?sigma"},
+      {"deger": "5772 K", "aciklama": "Güneş'in etkin sıcaklığı", "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html"},
+      {"deger": "yaklaşık 500 nm", "aciklama": "Güneş tayfının (dalga boyu başına) tepe noktası; 5772 K ile hesap 502 nm", "kaynak_url": "https://en.wikipedia.org/wiki/Wien%27s_displacement_law"},
+      {"deger": "Rigel 12.100 K, Betelgeuse ≈ 3800 K; %60 morötesi, %85 kızılötesi", "aciklama": "Orion'daki iki yıldızın sıcaklığı ve ışınım dağılımı", "kaynak_url": "https://en.wikipedia.org/wiki/Wien%27s_displacement_law"},
+      {"deger": "1877 (Stefan), 1884 (Boltzmann)", "aciklama": "T⁴ yasasının deneysel ve kuramsal kökeni", "kaynak_url": "https://en.wikipedia.org/wiki/Stefan%E2%80%93Boltzmann_law"},
+      {"deger": "382,8 × 10²⁴ W", "aciklama": "Güneş'in ışıma gücü (NASA)", "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html"},
+      {"deger": "1802, 1814, 570+ çizgi", "aciklama": "Wollaston ve Fraunhofer; Fraunhofer'in haritaladığı çizgi sayısı", "kaynak_url": "https://en.wikipedia.org/wiki/Fraunhofer_lines"},
+      {"deger": "656,28 nm (hava)", "aciklama": "Hidrojen H-alfa çizgisi", "kaynak_url": "https://en.wikipedia.org/wiki/H-alpha"},
+      {"deger": "18 Ağustos 1868; 587,49 nm; 1895", "aciklama": "Helyumun Güneş tayfında görülmesi ve Dünya'da elde edilmesi", "kaynak_url": "https://en.wikipedia.org/wiki/Helium"}
+    ],
+    "defter_notu": [
+      "Işık = elektromanyetik dalga + foton. Boşlukta hızı c = 299.792.458 m/s.",
+      "f = c / λ. Tayf (düşük → yüksek frekans): radyo, mikrodalga, kızılötesi, görünür, morötesi, X, gama.",
+      "Göz: ~380 nm (mor) – ~700 nm (kırmızı). Atmosfer gama, X ve morötesinin bir kısmını keser.",
+      "Kara cisim: tayf biçimi yalnızca sıcaklığa bağlı.",
+      "Wien: λ_tepe = 2,898 × 10⁻³ m·K / T. Güneş (5772 K) → ~500 nm.",
+      "Stefan-Boltzmann: L = 4πR²σT⁴. T iki katı → birim alandan 16 kat enerji.",
+      "Soğurma çizgisi: sıcak kaynak önünde soğuk gaz. Salma çizgisi: ısıtılmış gaz. Her elementin çizgileri kendine özgü.",
+      "Doppler: Δλ/λ ≈ v/c. Kırmızıya kayma = uzaklaşma, maviye kayma = yaklaşma; yalnızca dikine hız."
+    ],
+    "sorular": [
+      {"soru": "Yüzey sıcaklığı 10.000 K olan bir yıldızın tayfı hangi dalga boyunda tepe yapar?", "cevap": "λ_tepe = 2,898 × 10⁻³ / 10.000 ≈ 2,9 × 10⁻⁷ m ≈ 290 nm; yani morötesinde."},
+      {"soru": "İki yıldızın yarıçapı aynı, ama birinin sıcaklığı diğerinin iki katı. Işıma güçleri arasındaki oran nedir?", "cevap": "L ∝ R²T⁴ olduğundan, R eşitken oran 2⁴ = 16'dır; sıcak yıldız 16 kat güçlüdür."},
+      {"soru": "Bir yıldızın tayfında tüm çizgiler maviye kaymışsa ne anlarız? Bu ölçüm bize yıldızın gökte yana doğru hareketini de verir mi?", "cevap": "Yıldız bize yaklaşıyordur; kayma miktarı Δλ/λ ≈ v/c ile hızı verir. Hayır, Doppler kayması yalnızca bakış doğrultusundaki (dikine) hızı ölçer."}
+    ],
+    "kaynaklar": [
+      {"ad": "NASA Science – Introduction to the Electromagnetic Spectrum", "url": "https://science.nasa.gov/ems/01_intro/"},
+      {"ad": "NASA Science – Anatomy of an Electromagnetic Wave", "url": "https://science.nasa.gov/ems/02_anatomy/"},
+      {"ad": "NASA Science – Visible Light", "url": "https://science.nasa.gov/ems/09_visiblelight/"},
+      {"ad": "NIST CODATA – speed of light in vacuum", "url": "https://physics.nist.gov/cgi-bin/cuu/Value?c"},
+      {"ad": "NIST CODATA – Wien wavelength displacement law constant", "url": "https://physics.nist.gov/cgi-bin/cuu/Value?bwien"},
+      {"ad": "NIST CODATA – Stefan-Boltzmann constant", "url": "https://physics.nist.gov/cgi-bin/cuu/Value?sigma"},
+      {"ad": "NASA NSSDCA – Sun Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html"},
+      {"ad": "Wikipedia – Electromagnetic spectrum", "url": "https://en.wikipedia.org/wiki/Electromagnetic_spectrum"},
+      {"ad": "Wikipedia – Black-body radiation", "url": "https://en.wikipedia.org/wiki/Black-body_radiation"},
+      {"ad": "Wikipedia – Wien's displacement law", "url": "https://en.wikipedia.org/wiki/Wien%27s_displacement_law"},
+      {"ad": "Wikipedia – Stefan–Boltzmann law", "url": "https://en.wikipedia.org/wiki/Stefan%E2%80%93Boltzmann_law"},
+      {"ad": "Wikipedia – Spectral line", "url": "https://en.wikipedia.org/wiki/Spectral_line"},
+      {"ad": "Wikipedia – Emission spectrum", "url": "https://en.wikipedia.org/wiki/Emission_spectrum"},
+      {"ad": "Wikipedia – Fraunhofer lines", "url": "https://en.wikipedia.org/wiki/Fraunhofer_lines"},
+      {"ad": "Wikipedia – Balmer series / H-alpha", "url": "https://en.wikipedia.org/wiki/H-alpha"},
+      {"ad": "Wikipedia – Helium", "url": "https://en.wikipedia.org/wiki/Helium"},
+      {"ad": "Wikipedia – Doppler effect", "url": "https://en.wikipedia.org/wiki/Doppler_effect"},
+      {"ad": "Wikipedia – Redshift", "url": "https://en.wikipedia.org/wiki/Redshift"}
+    ]
+  },
+  {
+    "id": "d3",
+    "baslik": "Kütleçekim ve Yörüngeler: Gezegenleri Ne Yönetir?",
+    "ozet": "Kepler'in gözlemlerden çıkardığı üç yasayı, Newton'un bu yasaları tek bir çekim kuvvetiyle nasıl açıkladığını ve aynı fiziğin yörünge hızını, kurtulma hızını ve uzaktaki cisimlerin kütlesini nasıl hesaplattığını öğreniyoruz.",
+    "bolumler": [
+      {
+        "baslik": "Tycho'nun verisi, Kepler'in sabrı",
+        "paragraflar": [
+          "1600'de Graz'dan sürülen Johannes Kepler, Prag'da döneminin en hassas gözlemlerini yapan Tycho Brahe'nin asistanı oldu. Brahe ona Mars'ın yörüngesini çözme görevini verdi. Kopernik'in Güneş merkezli modeli yörüngelerin daire olduğunu varsayıyordu; ama Brahe'nin hassas gözlemleri hiçbir daireye oturmuyordu. Kepler uzun uğraşlardan sonra yörüngelerin daire değil elips olduğunu kabul etmek zorunda kaldı. Mars'ın yörüngesinin, Brahe'nin ayrıntılı verisi olan gezegenler arasında en basık olanı olması, işin hem zorluğu hem de çözümün anahtarı oldu.",
+          "Kepler birinci yasasını 1609'da Astronomia nova'da yayımladı; ikinci yasa da bu kitapta vardı ama bugünkü biçimini 1621'deki Epitome Astronomiae Copernicanae'de aldı. Üçüncü yasa 1619'da Harmonice Mundi'de yayımlandı."
+        ]
+      },
+      {
+        "baslik": "Kepler'in üç yasası",
+        "paragraflar": [
+          "Birinci yasa (elips yasası): Her gezegenin yörüngesi, Güneş'in odaklarından birinde bulunduğu bir elipstir. Elipsin iki odağı vardır ve elips üzerindeki her noktanın iki odağa uzaklıkları toplamı sabittir. Elipsin ne kadar basık olduğunu dış merkezlik söyler: 0 tam bir dairedir, değer büyüdükçe elips uzar. En uzun eksenin yarısına yarı büyük eksen (a) denir. Güneş odakta durduğu için gezegen ile Güneş arasındaki uzaklık sürekli değişir: Dünya'nın dış merkezliği 0,0167'dir ve Güneş'e uzaklığı 147,1 milyon km ile 152,1 milyon km arasında gidip gelir.",
+          "İkinci yasa (eşit alanlar yasası): Gezegeni Güneş'e bağlayan hayali doğru, eşit zamanlarda eşit alanlar tarar. Bunun anlamı, gezegenin Güneş'e en yakın noktada (günberi) en hızlı, en uzak noktada (günöte) en yavaş hareket etmesidir. Dünya'nın yörünge hızı 29,29 km/s ile 30,29 km/s arasında değişir.",
+          "Üçüncü yasa (harmonik yasa): Yörünge dönemlerinin kareleri, yarı büyük eksenlerin küpleriyle orantılıdır. Dönemi yıl, uzaklığı astronomi birimi (AU, Dünya-Güneş ortalama uzaklığı) cinsinden alırsak Güneş çevresindeki cisimler için basitçe P² = a³ olur. Satürn'ün yarı büyük ekseni 9,537 AU'dur; 9,537³ ≈ 867 ve bunun karekökü ≈ 29,4 yıl eder. NASA'nın verdiği dönem 10.755,7 gün, yani 29,45 yıldır. Uzak bir gezegenin yılı yalnızca uzun değil, orantısız biçimde uzundur: Merkür Güneş'in çevresini 88 günde dolanırken Satürn'ün bir turu otuz yıla yaklaşır."
+        ]
+      },
+      {
+        "baslik": "Newton: gezegenler neden böyle hareket eder?",
+        "paragraflar": [
+          "Kepler gezegenlerin nasıl hareket ettiğini söyledi ama nedenini bilmiyordu. Isaac Newton, ilk kez 5 Temmuz 1687'de yayımlanan Principia'da hareket yasalarını yeni bir matematikle birleştirerek Kepler'in sonuçlarını açıkladı. Evrensel çekim yasasına göre her kütle diğer her kütleyi, kütlelerin çarpımıyla doğru, merkezleri arasındaki uzaklığın karesiyle ters orantılı bir kuvvetle çeker: F = G × m₁ × m₂ / r².",
+          "Ters kare ilişkisi şunu söyler: uzaklığı iki katına çıkarırsanız kuvvet dörtte bire düşer. G evrensel çekim sabitidir: 6,674 × 10⁻¹¹ m³ kg⁻¹ s⁻². İlginçtir, Newton bu sabiti ve bugünkü formülü kullanmadı, yalnızca orantılarla çalıştı. Kütleçekimi laboratuvarda iki kütle arasında ilk kez Henry Cavendish 1798'deki deneyinde ölçtü. Küresel simetrik cisimler, bütün kütleleri merkezlerinde toplanmış gibi çeker; bu yüzden formüldeki r, merkezler arasındaki uzaklıktır."
+        ]
+      },
+      {
+        "baslik": "Kepler'in üçüncü yasasının Newton biçimi",
+        "paragraflar": [
+          "Newton'un yasası, Kepler'in üçüncü yasasını türetmeye yeter. Dairesel bir yörüngede kütleçekim kuvveti, cismi daire üzerinde tutan merkezcil kuvveti sağlar. İkisini eşitleyince T² = (4π² / GM) × r³ çıkar: dönemin karesi uzaklığın küpüyle orantılı. Elips yörüngeler ve iki cismin de kütlesi hesaba katılınca tam biçim şudur: a³ / T² = G(M + m) / 4π².",
+          "Bu formülün asıl gücü şuradadır: bir uydunun ya da gezegenin dönemini (T) ve yarı büyük eksenini (a) ölçerseniz, merkezdeki cismin kütlesini hesaplayabilirsiniz. Güneş sisteminde gezegenlerin kütlesi Güneş'inkinin yanında çok küçük olduğundan M + m ≈ M alınır. Sabiti Güneş'in kütlesiyle hesaplayıp birimleri yıl ve AU'ya çevirdiğinizde değer 1'e çok yakın çıkar; Kepler'in yalın P² = a³ biçimi buradan gelir."
+        ]
+      },
+      {
+        "baslik": "Dairesel yörünge hızı",
+        "paragraflar": [
+          "Bir taşı yatay olarak fırlattığınızı düşünün. Ne kadar hızlı atarsanız o kadar uzağa düşer. Yeterince yüksek bir hızda taşın yere doğru düşüşü, yeryüzünün eğriliğiyle denkleşir: taş sürekli düşer ama yere hiç varamaz. Yörünge budur. M kütleli bir cismin merkezinden r uzaklıktaki dairesel yörünge hızı v = √(GM / r) ile verilir; uzaklık arttıkça gereken hız azalır.",
+          "Dünya için GM = 398.600 km³/s² ve ortalama yarıçap 6371 km alırsak, yeryüzü hizasında (hava direncini yok sayarak) dairesel yörünge hızı yaklaşık 7,9 km/s çıkar. Gerçek bir örnek: Uluslararası Uzay İstasyonu saniyede yaklaşık beş mil (≈ 8 km/s) hızla gider, Dünya'yı yaklaşık 90 dakikada bir dolanır ve 24 saatte 16 tur atar."
+        ]
+      },
+      {
+        "baslik": "Kurtulma hızı",
+        "paragraflar": [
+          "Bir cisim yeterince hızlı fırlatılırsa artık geri dönmez. Bir gök cisminin çekiminden tamamen kurtulmak için gereken en düşük hıza kurtulma hızı denir: v_k = √(2GM / r). Bu, aynı uzaklıktaki dairesel yörünge hızının √2 katıdır (yaklaşık 1,41 kat). Kaçan cismin kütlesi küçükse sonuca katkısı ihmal edilebilir; bir toz tanesi de bir uzay aracı da aynı hıza ihtiyaç duyar. Dönmeyen bir cisim için yöne de bağlı değildir; bu yüzden aslında bir hız büyüklüğüdür.",
+          "Dünya yüzeyinden kurtulma hızı 11,186 km/s'dir (saatte yaklaşık 40.270 km). Güneş'in yüzeyinden kurtulmak için ise 617,6 km/s gerekir. Formüle bakın: kurtulma hızı kütle arttıkça artar, yarıçap küçüldükçe de artar. Aynı kütleyi daha küçük bir hacme sıkıştırırsanız yüzeyden kaçmak zorlaşır. Bu fikri ileride kara delikleri konuşurken yeniden kullanacağız."
+        ]
+      }
+    ],
+    "formuller": [
+      {"ad": "Kepler III (Güneş sistemi, pratik biçim)", "ifade": "P² = a³", "aciklama": "P yıl, a astronomi birimi (AU) cinsinden."},
+      {"ad": "Newton'un evrensel çekim yasası", "ifade": "F = G × m₁ × m₂ / r²", "aciklama": "G = 6,674 × 10⁻¹¹ m³ kg⁻¹ s⁻²; r merkezler arası uzaklık."},
+      {"ad": "Kepler III – Newton biçimi", "ifade": "a³ / T² = G(M + m) / 4π²", "aciklama": "T ve a ölçülürse toplam kütle (M + m) bulunur."},
+      {"ad": "Dairesel yörünge hızı", "ifade": "v = √(GM / r)", "aciklama": "r merkezden uzaklık; yükseldikçe hız azalır."},
+      {"ad": "Kurtulma hızı", "ifade": "v_k = √(2GM / r) = √2 × v_dairesel", "aciklama": "Kaçan cismin (küçük) kütlesinden ve yönünden bağımsız."}
+    ],
+    "anahtar_sayilar": [
+      {"deger": "1609, 1619, 1621", "aciklama": "Astronomia nova (I. yasa), Harmonice Mundi (III. yasa), Epitome (II. yasanın modern biçimi)", "kaynak_url": "https://en.wikipedia.org/wiki/Kepler%27s_laws_of_planetary_motion"},
+      {"deger": "Merkür 88 gün, Dünya 365 gün, Satürn 10.759 gün", "aciklama": "NASA'nın Kepler III örneği", "kaynak_url": "https://science.nasa.gov/resource/orbits-and-keplers-laws/"},
+      {"deger": "9,53707032 AU; 10.755,699 gün (29,447 Dünya yılı)", "aciklama": "Satürn'ün yarı büyük ekseni ve yıldız dönemi", "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturnfact.html"},
+      {"deger": "e = 0,0167; günberi 147,095, günöte 152,100 milyon km; hız 29,29–30,29 km/s", "aciklama": "Dünya'nın yörüngesi", "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html"},
+      {"deger": "5 Temmuz 1687", "aciklama": "Principia'nın ilk yayımı", "kaynak_url": "https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation"},
+      {"deger": "1798", "aciklama": "Cavendish deneyi", "kaynak_url": "https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation"},
+      {"deger": "6,674 30 × 10⁻¹¹ m³ kg⁻¹ s⁻²", "aciklama": "Evrensel çekim sabiti G (CODATA)", "kaynak_url": "https://physics.nist.gov/cgi-bin/cuu/Value?bg"},
+      {"deger": "7,496 × 10⁻⁶ AU³/gün²", "aciklama": "Güneş için a³/T² sabiti; yıl birimine çevrilince ≈ 1,000", "kaynak_url": "https://en.wikipedia.org/wiki/Kepler%27s_laws_of_planetary_motion"},
+      {"deger": "GM = 0,39860 × 10⁶ km³/s²; R = 6371 km", "aciklama": "Dünya'nın kütleçekim parametresi ve ortalama yarıçapı", "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html"},
+      {"deger": "11,186 km/s", "aciklama": "Dünya'dan kurtulma hızı", "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html"},
+      {"deger": "617,6 km/s", "aciklama": "Güneş'ten kurtulma hızı", "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html"},
+      {"deger": "saniyede 5 mil; ~90 dakika; günde 16 tur", "aciklama": "Uluslararası Uzay İstasyonu", "kaynak_url": "https://www.nasa.gov/international-space-station/space-station-facts-and-figures/"}
+    ],
+    "defter_notu": [
+      "Kepler I: yörünge elips, Güneş bir odakta. Dünya: e = 0,0167.",
+      "Kepler II: eşit zamanda eşit alan → günberide hızlı, günötede yavaş.",
+      "Kepler III: P² = a³ (yıl, AU). Satürn: a = 9,54 AU → P ≈ 29,4 yıl.",
+      "Newton (1687): F = G m₁ m₂ / r², G = 6,674 × 10⁻¹¹. Uzaklık 2 kat → kuvvet 1/4.",
+      "Newton biçimi: a³ / T² = G(M + m) / 4π² → dönem + uzaklık = kütle.",
+      "Dairesel hız: v = √(GM/r). Yeryüzü hizasında ≈ 7,9 km/s; ISS ≈ 8 km/s, ~90 dk'da bir tur.",
+      "Kurtulma hızı: v_k = √(2GM/r) = √2 × dairesel hız. Dünya 11,19 km/s, Güneş 617,6 km/s."
+    ],
+    "sorular": [
+      {"soru": "Yarı büyük ekseni 4 AU olan bir asteroit Güneş'in çevresini kaç yılda dolanır?", "cevap": "P² = a³ = 4³ = 64, P = √64 = 8 yıl."},
+      {"soru": "İki cisim arasındaki uzaklık üç katına çıkarsa aralarındaki çekim kuvveti nasıl değişir?", "cevap": "Kuvvet uzaklığın karesiyle ters orantılı olduğundan 1/3² = 1/9'una düşer."},
+      {"soru": "Bir gezegenin kütlesi aynı kalıp yarıçapı dörtte birine inseydi yüzeyden kurtulma hızı ne olurdu?", "cevap": "v_k ∝ √(1/r) olduğundan √4 = 2 katına çıkardı."}
+    ],
+    "kaynaklar": [
+      {"ad": "NASA Science – Orbits and Kepler's Laws", "url": "https://science.nasa.gov/resource/orbits-and-keplers-laws/"},
+      {"ad": "Wikipedia – Kepler's laws of planetary motion", "url": "https://en.wikipedia.org/wiki/Kepler%27s_laws_of_planetary_motion"},
+      {"ad": "Wikipedia – Newton's law of universal gravitation", "url": "https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation"},
+      {"ad": "NIST CODATA – Newtonian constant of gravitation", "url": "https://physics.nist.gov/cgi-bin/cuu/Value?bg"},
+      {"ad": "Wikipedia – Circular orbit", "url": "https://en.wikipedia.org/wiki/Circular_orbit"},
+      {"ad": "Wikipedia – Escape velocity", "url": "https://en.wikipedia.org/wiki/Escape_velocity"},
+      {"ad": "Wikipedia – Orbital period", "url": "https://en.wikipedia.org/wiki/Orbital_period"},
+      {"ad": "NASA NSSDCA – Earth Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html"},
+      {"ad": "NASA NSSDCA – Saturn Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturnfact.html"},
+      {"ad": "NASA NSSDCA – Sun Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html"},
+      {"ad": "NASA – Space Station Facts and Figures", "url": "https://www.nasa.gov/international-space-station/space-station-facts-and-figures/"}
+    ]
+  },
+  {
+    "id": "d4",
+    "baslik": "Güneş: Yakınımızdaki Yıldız",
+    "ozet": "Güneş'i merkezden dışarıya katman katman geziyor, enerjisini hidrojeni helyuma çeviren proton-proton zincirinden ve E = mc²'den nasıl aldığını görüyor, temel sayılarını ve güneş lekelerinin 11 yıllık döngüsünü öğreniyoruz.",
+    "bolumler": [
+      {
+        "baslik": "Temel sayılar",
+        "paragraflar": [
+          "Güneş, Dünya'dan ortalama 149,6 milyon km uzaklıkta, G2 V tayf türünden bir yıldızdır. Kütlesi yaklaşık 1,988 × 10³⁰ kg, yani Dünya'nınkinin yaklaşık 332.900 katıdır; Güneş sisteminin kütlesinin %99,8'i ondadır. Ortalama yarıçapı 695.700 km, Dünya'nınkinin yaklaşık 109 katıdır. Işıma gücü 3,828 × 10²⁶ W, etkin yüzey sıcaklığı 5772 K'dir.",
+          "Güneş katı bir cisim değildir; elektrik yüklü sıcak gazdan, yani plazmadan oluşur. Bu yüzden her yeri aynı hızda dönmez: ekvatorda bir dönüş yaklaşık 25 gün, kutuplarda yaklaşık 36 gün sürer. Fotosferin kütlece %74,9'u hidrojen, %23,8'i helyumdur; geri kalan bütün ağır elementler toplam %2'nin altındadır. Güneş yaklaşık 4,6 milyar yıl önce dev bir moleküler bulutun bir parçasının çökmesiyle oluştu; bu yaş, Güneş sistemindeki en yaşlı malzemenin radyometrik yaşıyla (4,567 milyar yıl) uyumludur."
+        ]
+      },
+      {
+        "baslik": "Çekirdek: enerjinin üretildiği yer",
+        "paragraflar": [
+          "Güneş'in enerjisi merkezdeki çekirdekte üretilir. Çekirdek merkezden yarıçapın yaklaşık %20–25'ine kadar uzanır. Model hesaplarına göre merkezde sıcaklık yaklaşık 15,7 milyon K (NASA'nın model değeri 1,571 × 10⁷ K), yoğunluk ise suyun yaklaşık 150 katı kadardır. Güneş'in gücünün %99'u yarıçapın en içteki %24'ünde üretilir; yarıçapın %30'unun dışında neredeyse hiç füzyon olmaz."
+        ]
+      },
+      {
+        "baslik": "Işınım bölgesi ve konveksiyon bölgesi",
+        "paragraflar": [
+          "Çekirdeğin üstünde, yarıçapın yaklaşık 0,25'inden 0,7'sine kadar ışınım bölgesi uzanır; Güneş'in en kalın katmanıdır. Burada enerji ışınımla taşınır ama yol son derece dolambaçlıdır. Çekirdekte doğan yüksek enerjili gama fotonları genellikle birkaç milimetre gittikten sonra plazma tarafından soğurulur ve rastgele bir yöne, biraz daha düşük enerjiyle yeniden salınır. Bu yüzden enerjinin yüzeye ulaşma süresine ilişkin tahminler 10.000 ile 170.000 yıl arasında değişir. Bölge boyunca sıcaklık dışarı doğru yaklaşık 7 milyon K'den 2 milyon K'e düşer. Buna karşılık füzyonda doğan ve Güneş'in enerji üretiminin yaklaşık %2'sini taşıyan nötrinolar maddeyle neredeyse hiç etkileşmez ve yüzeye 2,3 saniyede ulaşır.",
+          "Işınım bölgesi ile konveksiyon bölgesi arasında takoklin denen bir geçiş katmanı vardır. İçeride Güneş katı bir cisim gibi düzgün döner, dışarıda ise farklı enlemler farklı hızlarda döner; aradaki katmanda büyük bir kesme oluşur. Güneş'in manyetik alanını üreten dinamonun bu katmanda olduğu düşünülüyor.",
+          "Yarıçapın yaklaşık 0,7'sinden (yaklaşık 500.000 km) yüzeye kadar konveksiyon bölgesi uzanır. Burada plazma, enerjiyi ışınımla taşıyacak kadar yoğun ve sıcak değildir; bunun yerine ocaktaki çorba gibi sıcak gaz yükselir, soğuyunca geri çöker. Bu ısı kolonlarının yüzeydeki izine granülasyon denir; Güneş yüzeyine tanecikli bir görünüm verir."
+        ]
+      },
+      {
+        "baslik": "Atmosfer: fotosfer, kromosfer, korona",
+        "paragraflar": [
+          "Fotosfer (‘ışık küre’), Güneş'in yüzeyi dediğimiz katmandır: altında Güneş görünür ışığa karşı opaktır, burada üretilen fotonlar ise saydam atmosferden geçip uzaya kaçar ve güneş ışığı olur. Birkaç yüz km kalınlığındadır (NASA veri sayfası yaklaşık 500 km verir); sıcaklığı tabanda yaklaşık 6600 K'den üst sınırda yaklaşık 4400 K'e düşer.",
+          "Üstündeki kromosfer (‘renk küre’) yaklaşık 2500 km kalınlığındadır ve üst kısmında sıcaklık yeniden on binlerce kelvine çıkar (kaynağa göre 20.000–30.000 K). Fotosferin parlaklığı yüzünden normalde görünmez; tam Güneş tutulmasında Ay fotosferi örttüğünde Güneş'in çevresinde ince, kırmızı bir halka olarak görülür. Kromosfer ile korona arasında yaklaşık 200 km kalınlığında bir geçiş bölgesi vardır; burada sıcaklık yaklaşık 20.000 K'den 1.000.000 K'e fırlar.",
+          "Korona (Latince ‘taç’), Güneş'in uzaya doğru çok geniş yayılan dış atmosferidir. Ortalama sıcaklığı 1–2 milyon K'dir; yani fotosferden yüzlerce kat sıcak. Koronanın neden bu kadar sıcak olduğu Güneş fiziğinin hâlâ çözülmemiş büyük sorularından biridir; enerjinin konveksiyon bölgesindeki çalkantılı hareketlerden geldiği düşünülüyor. Koronadan ses üstü hızlarla kaçan madde Güneş rüzgârını oluşturur."
+        ]
+      },
+      {
+        "baslik": "Enerji kaynağı: proton-proton zinciri ve E = mc²",
+        "paragraflar": [
+          "Güneş'i ısıtan şey çekirdek füzyonudur: dört hidrojen çekirdeği (proton) bir dizi tepkimeyle tek bir helyum çekirdeğine dönüşür. Güneş'in enerjisinin yaklaşık %99'u proton-proton zincirlerinden, kalan %1'i CNO döngüsünden gelir. Ana kol şöyle ilerler: iki proton birleşip bir döteryum çekirdeği, bir pozitron ve bir nötrino oluşturur; döteryum bir protonla birleşip helyum-3 olur; iki helyum-3 çekirdeği birleşip bir helyum-4 ve iki serbest proton verir. Bu fikri 1920'lerde Arthur Eddington savundu; ilk adımı 1938'de Hans Bethe ve C. L. Critchfield önerdi.",
+          "İlk adım son derece yavaştır, çünkü zayıf çekirdek kuvvetiyle gerçekleşir: çekirdekteki ortalama bir proton, başka bir protonla kaynaşabilmek için yaklaşık 9 milyar yıl bekler. Yine de çekirdekte o kadar çok proton vardır ki zincir saniyede yaklaşık 9,2 × 10³⁷ kez işler.",
+          "Enerji nereden gelir? Helyum çekirdeğinin kütlesi, onu oluşturan dört protonun toplam kütlesinden biraz azdır; kaynaşan kütlenin yaklaşık %0,7'si enerjiye dönüşür. Einstein'ın E = mc² bağıntısı bu dönüşümün oranını verir: c² çok büyük olduğu için küçücük bir kütle muazzam bir enerjiye karşılık gelir. Güneş'in ışıma gücünü c²'ye bölersek saniyede kaybettiği kütleyi buluruz: 3,828 × 10²⁶ W / (2,998 × 10⁸ m/s)² ≈ 4,26 × 10⁹ kg/s. Yani Güneş her saniye yaklaşık 4,26 milyon ton kütleyi enerjiye çeviriyor ve bunun için saniyede yaklaşık 600 milyar kg hidrojen kaynaştırıyor. NASA'nın veri sayfasındaki ‘kütle dönüşüm hızı’ da 4260 × 10⁶ kg/s'dir."
+        ]
+      },
+      {
+        "baslik": "Güneş lekeleri ve 11 yıllık döngü",
+        "paragraflar": [
+          "Güneş lekeleri, fotosferde karanlık görünen, çevresinden daha soğuk bölgelerdir. Manyetik alan çizgilerinin yoğunlaştığı yerlerde bu manyetik düğümler alttan gelen ısı akışını engeller. Lekenin en karanlık merkezine umbra (gölge), çevresindeki daha açık bölgeye penumbra (yarı gölge) denir. Umbranın sıcaklığı yaklaşık 3000–4500 K, çevredeki fotosferinki yaklaşık 5780 K'dir. Leke aslında karanlık değildir, yalnızca çevresine göre sönüktür: tek başına kalsaydı dolunaydan parlak, kızıl-turuncu renkte parlardı. Lekelerde manyetik alan tipik olarak 3000 gauss'tur; Güneş'in kutup bölgelerinde ise yalnızca 1–2 gauss. Bazı büyük lekeler uygun güneş gözlüğüyle büyütmeden görülebilir; Güneş'e asla korumasız gözle bakmayın.",
+          "Lekeler teleskopla ilk kez Aralık 1610'da Thomas Harriot tarafından gözlendi. Leke sayısının düzenli olarak artıp azaldığını 1843'te Samuel Heinrich Schwabe, 17 yıllık gözlemin ardından fark etti. Döngünün ortalama süresi yaklaşık 11 yıldır (NASA'nın Güneş veri sayfası 11,4 yıl verir). Döngünün başında lekeler yüksek enlemlerde çıkar, döngü ilerledikçe ekvatora yaklaşır (Spörer yasası). Her döngünün tepesinde Güneş'in manyetik kutupları yer değiştirir; bu yüzden manyetik açıdan tam döngü yaklaşık 22 yıldır.",
+          "Döngü her zaman düzenli değildir: 1645–1715 arasında çok az leke gözlendi; bu döneme Maunder minimumu denir. 25. Güneş döngüsü Aralık 2019'daki minimumla başladı ve NASA ile NOAA, 15 Ekim 2024'te Güneş'in döngünün maksimum evresine ulaştığını duyurdu. Maksimum döneminde güneş patlamaları ve koronal kütle atımları sıklaşır; Mayıs 2024'teki patlama dizisi Dünya'da son yirmi yılın en güçlü jeomanyetik fırtınasına yol açtı."
+        ]
+      }
+    ],
+    "formuller": [
+      {"ad": "Kütle-enerji eşdeğerliği", "ifade": "E = m × c²", "aciklama": "c = 299.792.458 m/s. Küçük bir kütle kaybı çok büyük enerjiye karşılık gelir."},
+      {"ad": "Güneş'in saniyede enerjiye çevirdiği kütle", "ifade": "Δm / Δt = L / c² ≈ 3,828 × 10²⁶ / (2,998 × 10⁸)² ≈ 4,26 × 10⁹ kg/s", "aciklama": "NASA'nın verdiği kütle dönüşüm hızıyla (4260 × 10⁶ kg/s) aynı."},
+      {"ad": "Proton-proton zinciri (net)", "ifade": "4 ¹H → ⁴He + enerji (kütlenin ~%0,7'si)", "aciklama": "Ara adımlar: p + p → ²H + e⁺ + ν; ²H + p → ³He + γ; ³He + ³He → ⁴He + 2p."},
+      {"ad": "Işıma gücü (sağlama)", "ifade": "L = 4πR²σT⁴", "aciklama": "R = 695.700 km, T = 5772 K ile L ≈ 3,828 × 10²⁶ W."}
+    ],
+    "anahtar_sayilar": [
+      {"deger": "1.988.400 × 10²⁴ kg (≈ 1,988 × 10³⁰ kg); Dünya'nın 332.900 katı", "aciklama": "Güneş'in kütlesi", "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html"},
+      {"deger": "695.700 km; Dünya'nın 109,2 katı", "aciklama": "Güneş'in hacimsel ortalama yarıçapı", "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html"},
+      {"deger": "382,8 × 10²⁴ J/s (= 3,828 × 10²⁶ W)", "aciklama": "Işıma gücü", "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html"},
+      {"deger": "5772 K", "aciklama": "Etkin sıcaklık", "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html"},
+      {"deger": "1,571 × 10⁷ K", "aciklama": "Merkez sıcaklığı (model değeri)", "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html"},
+      {"deger": "4,6 milyar yıl (en yaşlı malzeme 4,567 milyar yıl)", "aciklama": "Güneş'in yaşı", "kaynak_url": "https://en.wikipedia.org/wiki/Sun"},
+      {"deger": "149,6 milyon km; G2 V", "aciklama": "Dünya'ya ortalama uzaklık ve tayf türü", "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html"},
+      {"deger": "%99,8; ekvatorda 25 gün, kutuplarda 36 gün", "aciklama": "Güneş sistemi kütlesindeki payı; dönme süresi", "kaynak_url": "https://science.nasa.gov/sun/facts/"},
+      {"deger": "%74,9 H, %23,8 He, ağır elementler < %2 (kütlece)", "aciklama": "Fotosfer bileşimi", "kaynak_url": "https://en.wikipedia.org/wiki/Sun"},
+      {"deger": "çekirdek 0–0,20/0,25 R; ışınım 0,25–0,7 R; konveksiyon 0,7 R (500.000 km)–yüzey", "aciklama": "İç katmanlar", "kaynak_url": "https://en.wikipedia.org/wiki/Sun"},
+      {"deger": "10.000–170.000 yıl; nötrino 2,3 s, enerjinin ~%2'si", "aciklama": "Enerjinin yüzeye ulaşma süresi", "kaynak_url": "https://en.wikipedia.org/wiki/Sun"},
+      {"deger": "fotosfer ~500 km, 6600→4400 K; kromosfer ~2500 km, üstte ~30.000 K", "aciklama": "Atmosfer katmanları (NASA)", "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html"},
+      {"deger": "geçiş bölgesi ~200 km, ~20.000 K → ~1.000.000 K; korona 1–2 milyon K", "aciklama": "Geçiş bölgesi ve korona", "kaynak_url": "https://en.wikipedia.org/wiki/Sun"},
+      {"deger": "%0,7; 9,2 × 10³⁷ /s; 600 milyar kg/s hidrojen; 4,26 milyar kg/s", "aciklama": "Füzyon verimi ve hızları", "kaynak_url": "https://en.wikipedia.org/wiki/Sun"},
+      {"deger": "%99 p-p, %1 CNO; ortalama 9 milyar yıl bekleme", "aciklama": "Proton-proton zinciri", "kaynak_url": "https://en.wikipedia.org/wiki/Proton%E2%80%93proton_chain"},
+      {"deger": "4260 × 10⁶ kg/s", "aciklama": "Kütle dönüşüm hızı (NASA)", "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html"},
+      {"deger": "umbra 3000–4500 K, çevre ~5780 K", "aciklama": "Güneş lekesi sıcaklığı", "kaynak_url": "https://en.wikipedia.org/wiki/Sunspot"},
+      {"deger": "lekelerde 3000 gauss, kutuplarda 1–2 gauss; döngü 11,4 yıl", "aciklama": "Manyetik alan ve leke döngüsü (NASA)", "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html"},
+      {"deger": "Aralık 1610 (Harriot)", "aciklama": "İlk teleskopik leke gözlemi", "kaynak_url": "https://en.wikipedia.org/wiki/Sunspot"},
+      {"deger": "1843 (Schwabe, 17 yıl gözlem); Maunder minimumu 1645–1715", "aciklama": "Döngünün keşfi ve sessiz dönem", "kaynak_url": "https://en.wikipedia.org/wiki/Solar_cycle"},
+      {"deger": "Aralık 2019; 15 Ekim 2024", "aciklama": "25. döngünün başlangıcı; NASA/NOAA'nın maksimum evresi duyurusu", "kaynak_url": "https://science.nasa.gov/science-research/heliophysics/nasa-noaa-sun-reaches-maximum-phase-in-11-year-solar-cycle/"}
+    ],
+    "defter_notu": [
+      "Güneş: G2 V, kütle ≈ 1,988 × 10³⁰ kg (Dünya × 332.900), yarıçap 695.700 km (Dünya × 109), L = 3,828 × 10²⁶ W, T_etkin = 5772 K, yaş ≈ 4,6 milyar yıl.",
+      "İçten dışa: çekirdek (0–0,25 R, ~15,7 milyon K) → ışınım bölgesi (0,25–0,7 R) → takoklin → konveksiyon bölgesi (0,7 R–yüzey).",
+      "Foton çekirdekten yüzeye 10.000–170.000 yılda; nötrino 2,3 saniyede.",
+      "Atmosfer: fotosfer (görünen yüzey, T_etkin = 5772 K) → kromosfer (kırmızı halka) → geçiş bölgesi → korona (1–2 milyon K, neden sıcak? çözülmedi).",
+      "Enerji: 4 ¹H → ⁴He, kütlenin %0,7'si enerji. p-p zinciri %99, CNO %1.",
+      "E = mc² → Güneş saniyede ~4,26 milyon ton kütle kaybediyor (L / c²).",
+      "Leke: manyetik alanın ısıyı kestiği soğuk bölge (umbra 3000–4500 K). Döngü ~11 yıl (Schwabe 1843), manyetik döngü 22 yıl.",
+      "25. döngü Aralık 2019'da başladı; NASA/NOAA 15 Ekim 2024'te maksimum evresini duyurdu."
+    ],
+    "sorular": [
+      {"soru": "Güneş'in merkezinde üretilen bir fotonun enerjisi yüzeye neden binlerce yılda ulaşıyor da bir nötrino birkaç saniyede çıkıyor?", "cevap": "Foton ışınım bölgesinde birkaç milimetrede bir soğurulup rastgele yönlere yeniden salınır; bu dolambaçlı yol 10.000–170.000 yıl sürer. Nötrino maddeyle neredeyse hiç etkileşmediği için doğrudan çıkar (yüzeye 2,3 saniye)."},
+      {"soru": "Güneş saniyede kaç kg kütleyi enerjiye çevirir? Hesabı nasıl yaparsınız?", "cevap": "Δm/Δt = L / c² = 3,828 × 10²⁶ / (2,998 × 10⁸)² ≈ 4,26 × 10⁹ kg/s, yani saniyede yaklaşık 4,26 milyon ton."},
+      {"soru": "Güneş lekeleri neden karanlık görünür? Gerçekten soğuk mudurlar?", "cevap": "Yoğun manyetik alan alttan gelen ısı akışını engellediği için çevrelerinden soğuktur (umbra ~3000–4500 K, fotosfer ~5780 K). Işınım sıcaklıkla çok hızlı değiştiğinden çevrelerine göre karanlık görünürler; tek başına bir leke yine de dolunaydan parlak olurdu."}
+    ],
+    "kaynaklar": [
+      {"ad": "NASA NSSDCA – Sun Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html"},
+      {"ad": "NASA Science – Sun: Facts", "url": "https://science.nasa.gov/sun/facts/"},
+      {"ad": "NASA Science – Sunspots", "url": "https://science.nasa.gov/sun/sunspots/"},
+      {"ad": "NASA – NASA, NOAA: Sun Reaches Maximum Phase in 11-Year Solar Cycle (15 Ekim 2024)", "url": "https://science.nasa.gov/science-research/heliophysics/nasa-noaa-sun-reaches-maximum-phase-in-11-year-solar-cycle/"},
+      {"ad": "Wikipedia – Sun", "url": "https://en.wikipedia.org/wiki/Sun"},
+      {"ad": "Wikipedia – Proton–proton chain", "url": "https://en.wikipedia.org/wiki/Proton%E2%80%93proton_chain"},
+      {"ad": "Wikipedia – Sunspot", "url": "https://en.wikipedia.org/wiki/Sunspot"},
+      {"ad": "Wikipedia – Solar cycle", "url": "https://en.wikipedia.org/wiki/Solar_cycle"},
+      {"ad": "NIST CODATA – speed of light in vacuum", "url": "https://physics.nist.gov/cgi-bin/cuu/Value?c"}
+    ]
+  }
+]

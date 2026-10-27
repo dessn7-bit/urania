@@ -1,0 +1,537 @@
+{
+ "aciklama": "IMO 2027 Meteor Shower Calendar (ed. Jürgen Rendtel, IMO INFO(3-26)) – Tablo 5 \"Working List of Visual Meteor Showers\" ve ilgili bölümler. meteor_2026.json ile aynı şema.",
+ "olusturma": "2026-10-27",
+ "kaynaklar": [
+  {
+   "ad": "IMO 2027 Meteor Shower Calendar (PDF, 28 s., PDF oluşturma 2026-07-03; Tablo 5 \"best information available in June 2026\")",
+   "url": "https://www.imo.net/files/data/calendar/cal2027.pdf"
+  },
+  {
+   "ad": "IMO web takvimi (2027 PDF bağlantısı buradan)",
+   "url": "https://www.imo.net/calendar/"
+  }
+ ],
+ "birimler": {
+  "gunes_boylami": "derece, ekinoks J2000.0",
+  "radyant": "derece, maksimum anı",
+  "hiz": "km/s",
+  "ZHR": "saatlik zenit oranı"
+ },
+ "ay_evreleri_2027_imo_tablo4": {
+  "yeni_ay": [
+   "01-07",
+   "02-06",
+   "03-08",
+   "04-06",
+   "05-06",
+   "06-04",
+   "07-04",
+   "08-02",
+   "08-31",
+   "09-30",
+   "10-29",
+   "11-28",
+   "12-27"
+  ],
+  "ilk_dordun": [
+   "01-14",
+   "02-14",
+   "03-15",
+   "04-13",
+   "05-13",
+   "06-11",
+   "07-10",
+   "08-09",
+   "09-07",
+   "10-07",
+   "11-06",
+   "12-06"
+  ],
+  "dolunay": [
+   "01-22",
+   "02-20",
+   "03-22",
+   "04-20",
+   "05-20",
+   "06-19",
+   "07-18",
+   "08-17",
+   "09-15",
+   "10-15",
+   "11-14",
+   "12-13"
+  ],
+  "son_dordun": [
+   "01-29",
+   "02-28",
+   "03-30",
+   "04-28",
+   "05-28",
+   "06-27",
+   "07-26",
+   "08-25",
+   "09-23",
+   "10-22",
+   "11-21",
+   "12-20"
+  ],
+  "kontrol": "astronomy-engine ile 2027 ana evreleri tablo ile aynı, TEK FARK: Ocak ilk dördünü — tablo 14 Ocak, hesap 2027-01-15 20:35 UT. Tablodaki 14 Ocak muhtemelen hatalı (askıda; ikinci bir kaynakla teyit edilmedi)."
+ },
+ "notlar": [
+  "Tüm saatler UT. Değerler Tablo 5'ten; bölüm metni farklıysa ayrıca belirtildi. Tablo 5 satırları ve alıntılar PDF metninde programla arandı ve bulundu.",
+  "astronomy-engine kontrolü: QUA 03:34 vs 03:25; LYR 01:49 vs 01:40; PER 08:19 vs 08–10h; DRA 07:31 vs 07h; LEO 06:07 vs 06h; GEM 20:02 vs ~20h; URS 04:29 vs 04h — uyumlu. ETA: 15:19 vs IMO 09h — UYUMSUZ (bkz. tutarsizlik).",
+  "Quadrantidler 2027: 2026-12-28 başlayıp 2027-01-12'de biter; aynı kayıt meteor_2026.json içinde de var.",
+  "2028 Quadrantidleri (Aralık 2027 sonunda başlar) için IMO 2028 takvimi bu oturumda yok; eklenmedi.",
+  "Türkçe yağmur adları IMO'da yok; uydurulmadı."
+ ],
+ "yagmurlar": [
+  {
+   "yil": 2027,
+   "ad_en": "Quadrantids",
+   "imo_kod": "010 QUA",
+   "iau_no": 10,
+   "kod": "QUA",
+   "aktivite": "2026-12-28 / 2027-01-12",
+   "maksimum_tarih": "2027-01-04",
+   "gunes_boylami_J2000_deg": 283.15,
+   "maksimum_saat_UT": "03:25",
+   "ZHR": "80 (≈60–200 arası değişebilir)",
+   "radyant_maksimumda": {
+    "ra_deg": 230,
+    "dec_deg": 49
+   },
+   "hiz_km_s": 41,
+   "nufus_indeksi_r": "2.1 (maksimumda), 2.5 (diğer)",
+   "ay_kosulu_imo": [
+    "Conditions are perfect concerning the moonlight.",
+    "we find the Quadrantid peak shortly before New Moon"
+   ],
+   "kaynak": {
+    "url": "https://www.imo.net/files/data/calendar/cal2027.pdf",
+    "sayfa": "1, 4, 25",
+    "tablo5_satiri": "Quadrantids (010 QUA) Dec 28–Jan 12 Jan 04 283 ◦. 15 230◦ +49◦ 41 2.1 80+",
+    "maksimum_alinti": "Maximum: January 4, 03h 25m UT (λ⊙ = 283 ◦. 15), ZHR = 80 (can vary ≈ 60 − 200)"
+   },
+   "bagimsiz_kontrol_astronomy_engine": {
+    "aciklama": "λ⊙ (J2000 ortalama ekliptik) değerinden hesaplanan an ve o andaki Ay aydınlanma oranı; astronomy-engine 2.1.19",
+    "hesaplanan_an_UT": "2027-01-04T03:34Z",
+    "ay_aydinlanma_orani": 0.12,
+    "ay_buyuyor_mu": false
+   },
+   "ek_bilgi": "Vaubaillon: 2027'de akıntı Güneş'e doğru hafif kaymış, artmış aktivite olabilir. Tepe zamanı belirsizliği ~0.1° (~2.5 saat)."
+  },
+  {
+   "yil": 2027,
+   "ad_en": "April Lyrids",
+   "imo_kod": "006 LYR",
+   "iau_no": 6,
+   "kod": "LYR",
+   "aktivite": "2027-04-14 / 2027-04-30",
+   "maksimum_tarih": "2027-04-23",
+   "gunes_boylami_J2000_deg": 32.32,
+   "maksimum_saat_UT": "01:40",
+   "ZHR": 18,
+   "radyant_maksimumda": {
+    "ra_deg": 271,
+    "dec_deg": 34
+   },
+   "hiz_km_s": 49,
+   "nufus_indeksi_r": 2.1,
+   "ay_kosulu_imo": [
+    "just three days after the Full Moon. During the peak night, the moon is located in Libra/Scorpius and causes bright skies just when the radiant is gaining height.",
+    "The April Lyrid maximum shortly after Full Moon has the worst conditions."
+   ],
+   "kaynak": {
+    "url": "https://www.imo.net/files/data/calendar/cal2027.pdf",
+    "sayfa": "1, 6, 25",
+    "tablo5_satiri": "April Lyrids (006 LYR) Apr 14–Apr 30 Apr 23 32 ◦. 32 271◦ +34◦ 49 2.1 18",
+    "maksimum_alinti": "The maximum of the April Lyrids (006 LYR) at 32 ◦. 32 is expected on April 23, 01h 40m UT"
+   },
+   "bagimsiz_kontrol_astronomy_engine": {
+    "aciklama": "λ⊙ (J2000 ortalama ekliptik) değerinden hesaplanan an ve o andaki Ay aydınlanma oranı; astronomy-engine 2.1.19",
+    "hesaplanan_an_UT": "2027-04-23T01:49Z",
+    "ay_aydinlanma_orani": 0.949,
+    "ay_buyuyor_mu": false
+   }
+  },
+  {
+   "yil": 2027,
+   "ad_en": "eta-Aquariids",
+   "imo_kod": "031 ETA",
+   "iau_no": 31,
+   "kod": "ETA",
+   "aktivite": "2027-04-19 / 2027-05-28",
+   "maksimum_tarih": "2027-05-06",
+   "gunes_boylami_J2000_deg": 45.5,
+   "maksimum_saat_UT": "09:00",
+   "ZHR": "50 (değişken, 40–80+)",
+   "radyant_maksimumda": {
+    "ra_deg": 338,
+    "dec_deg": -1
+   },
+   "hiz_km_s": 66,
+   "nufus_indeksi_r": 2.4,
+   "ay_kosulu_imo": [
+    "This year, the maximum period and its subsequent activity decline can be well observed without moonlight interference."
+   ],
+   "kaynak": {
+    "url": "https://www.imo.net/files/data/calendar/cal2027.pdf",
+    "sayfa": "7, 25",
+    "tablo5_satiri": "η-Aquariids (031 ETA) Apr 19–May 28 May 06 45 ◦. 5 338◦ −01◦ 66 2.4 50",
+    "maksimum_alinti": "Maximum: May 6, 09h UT (λ⊙ = 45 ◦. 5); ZHR = 50 (var., 40–80+)"
+   },
+   "bagimsiz_kontrol_astronomy_engine": {
+    "aciklama": "λ⊙ (J2000 ortalama ekliptik) değerinden hesaplanan an ve o andaki Ay aydınlanma oranı; astronomy-engine 2.1.19",
+    "hesaplanan_an_UT": "2027-05-06T15:19Z",
+    "ay_aydinlanma_orani": 0.002,
+    "ay_buyuyor_mu": true
+   },
+   "ek_bilgi": "Son altı yılda ZHR ~40; 2026 ön değeri 35.",
+   "tutarsizlik": "IMO 2027 metni maksimumu \"May 6, 09h UT (λ⊙ = 45.5)\" veriyor; aynı λ⊙ için astronomy-engine hesabı 2027-05-06 15:19 UT. 2026 takvimindeki λ⊙ 45.5 anı 09:22 UT idi; 2027 saatinin 2026'dan taşınmış olması muhtemel (bu bir çıkarım, IMO teyidi yok → askıda). Tarih (6 Mayıs) her iki durumda da aynı."
+  },
+  {
+   "yil": 2027,
+   "ad_en": "Southern delta-Aquariids",
+   "imo_kod": "005 SDA",
+   "iau_no": 5,
+   "kod": "SDA",
+   "aktivite": "2027-07-12 / 2027-08-23",
+   "maksimum_tarih": "2027-07-31",
+   "gunes_boylami_J2000_deg": 128,
+   "maksimum_saat_UT": null,
+   "ZHR": 25,
+   "radyant_maksimumda": {
+    "ra_deg": 340,
+    "dec_deg": -16
+   },
+   "hiz_km_s": 41,
+   "nufus_indeksi_r": "2.5 (maksimumda), ~3.1 (uzakta)",
+   "ay_kosulu_imo": [
+    "The highest CAP and SDA rates are expected end-July with no moonlight interference."
+   ],
+   "kaynak": {
+    "url": "https://www.imo.net/files/data/calendar/cal2027.pdf",
+    "sayfa": "9, 10, 25",
+    "tablo5_satiri": "S. δ-Aquariids (005 SDA) Jul 12–Aug 23 Jul 31 128◦ 340◦ −16◦ 41 2.5 25",
+    "maksimum_alinti": "Maximum: July 31 (λ⊙ = 128◦ ); ZHR = 25;"
+   },
+   "bagimsiz_kontrol_astronomy_engine": {
+    "aciklama": "λ⊙ (J2000 ortalama ekliptik) değerinden hesaplanan an ve o andaki Ay aydınlanma oranı; astronomy-engine 2.1.19",
+    "hesaplanan_an_UT": "2027-07-31T19:45Z",
+    "ay_aydinlanma_orani": 0.039,
+    "ay_buyuyor_mu": false
+   },
+   "ek_bilgi": "ZHR λ⊙ 124°–129° arasında 20'nin üzerinde."
+  },
+  {
+   "yil": 2027,
+   "ad_en": "alpha-Capricornids",
+   "imo_kod": "001 CAP",
+   "iau_no": 1,
+   "kod": "CAP",
+   "aktivite": "2027-07-03 / 2027-08-15",
+   "maksimum_tarih": "2027-07-31",
+   "gunes_boylami_J2000_deg": 128,
+   "maksimum_saat_UT": null,
+   "ZHR": 5,
+   "radyant_maksimumda": {
+    "ra_deg": 307,
+    "dec_deg": -10
+   },
+   "hiz_km_s": 23,
+   "nufus_indeksi_r": 2.5,
+   "ay_kosulu_imo": [
+    "The highest CAP and SDA rates are expected end-July with no moonlight interference."
+   ],
+   "kaynak": {
+    "url": "https://www.imo.net/files/data/calendar/cal2027.pdf",
+    "sayfa": "9, 10, 25",
+    "tablo5_satiri": "α-Capricornids (001 CAP) Jul 03–Aug 15 Jul 31 128◦ 307◦ −10◦ 23 2.5 5",
+    "maksimum_alinti": "Maximum: July 31 (λ⊙ = 128◦ ); ZHR = 5;"
+   },
+   "bagimsiz_kontrol_astronomy_engine": {
+    "aciklama": "λ⊙ (J2000 ortalama ekliptik) değerinden hesaplanan an ve o andaki Ay aydınlanma oranı; astronomy-engine 2.1.19",
+    "hesaplanan_an_UT": "2027-07-31T19:45Z",
+    "ay_aydinlanma_orani": 0.039,
+    "ay_buyuyor_mu": false
+   },
+   "ek_bilgi": "Bazı yeni sonuçlar maksimumu 30/31 Temmuz gösteriyor."
+  },
+  {
+   "yil": 2027,
+   "ad_en": "Perseids",
+   "imo_kod": "007 PER",
+   "iau_no": 7,
+   "kod": "PER",
+   "aktivite": "2027-07-17 / 2027-08-24",
+   "maksimum_tarih": "2027-08-13",
+   "gunes_boylami_J2000_deg": "140.0–140.1 (düğüm)",
+   "maksimum_saat_UT": "08:00–10:00",
+   "ZHR": "110+",
+   "radyant_maksimumda": {
+    "ra_deg": 48,
+    "dec_deg": 58
+   },
+   "hiz_km_s": 59,
+   "nufus_indeksi_r": 2.2,
+   "ay_kosulu_imo": [
+    "The Moon lies midway between first quarter and full on August 12 and 13, so the moon-free period will be quite short for the expected maxima, depending on the observers’ latitude.",
+    "a waxing Moon for the Perseid peak"
+   ],
+   "kaynak": {
+    "url": "https://www.imo.net/files/data/calendar/cal2027.pdf",
+    "sayfa": "1, 11, 12, 25",
+    "tablo5_satiri": "Perseids (007 PER) Jul 17–Aug 24 Aug 13 140 ◦. 0 48◦ +58◦ 59 2.2 110+",
+    "maksimum_alinti": "Maximum: August 13, 08h to 10h UT (node at λ⊙ = 140 ◦. 0 − 140 ◦. 1); ZHR = 110+"
+   },
+   "bagimsiz_kontrol_astronomy_engine": {
+    "aciklama": "λ⊙ (J2000 ortalama ekliptik) değerinden hesaplanan an ve o andaki Ay aydınlanma oranı; astronomy-engine 2.1.19",
+    "hesaplanan_an_UT": "2027-08-13T08:19Z",
+    "ay_aydinlanma_orani": 0.865,
+    "ay_buyuyor_mu": true
+   },
+   "ek_bilgi": "Maslov: Jüpiter pertürbasyonu ile ZHR 110–120 olabilir. Olası ek anlar: 13 Ağu 02h UT (1479 izi, Maslov), 13 Ağu 02:16 UT (Vaubaillon), 12 Ağu 19:18 UT (ZHR ≈ 20) ve 12 Ağu 23:46 UT (ZHR 280 listelenmiş) – Jenniskens Tablo 5c; 13 Ağu 07h UT filament (ZHR 50)."
+  },
+  {
+   "yil": 2027,
+   "ad_en": "October Draconids",
+   "imo_kod": "009 DRA",
+   "iau_no": 9,
+   "kod": "DRA",
+   "aktivite": "2027-10-06 / 2027-10-10",
+   "maksimum_tarih": "2027-10-09",
+   "gunes_boylami_J2000_deg": 195.4,
+   "maksimum_saat_UT": "07:00",
+   "ZHR": "5 (?)",
+   "radyant_maksimumda": {
+    "ra_deg": 263,
+    "dec_deg": 56
+   },
+   "hiz_km_s": 20,
+   "nufus_indeksi_r": 2.6,
+   "ay_kosulu_imo": [
+    "The waxing moon (first quarter on October 7) affects evening observations when the radiant is highest in the sky.",
+    "The latter is badly affected by the waxing Moon, which is most problematic before local midnight, when the DRA radiant is higher in the sky."
+   ],
+   "kaynak": {
+    "url": "https://www.imo.net/files/data/calendar/cal2027.pdf",
+    "sayfa": "14, 15, 25",
+    "tablo5_satiri": "Draconids (009 DRA) Oct 06–Oct 10 Oct 09 195 ◦. 4 263◦ +56◦ 20 2.6 5",
+    "maksimum_alinti": "Maximum: October 9, 07h UT (λ⊙ = 195 ◦. 4); ZHR = 5 (?);"
+   },
+   "bagimsiz_kontrol_astronomy_engine": {
+    "aciklama": "λ⊙ (J2000 ortalama ekliptik) değerinden hesaplanan an ve o andaki Ay aydınlanma oranı; astronomy-engine 2.1.19",
+    "hesaplanan_an_UT": "2027-10-09T07:31Z",
+    "ay_aydinlanma_orani": 0.67,
+    "ay_buyuyor_mu": true
+   },
+   "ek_bilgi": "2027 Tablo 5 radyantı 263°/+56° (2026 tablosunda 262°/+54° idi; 2027'de tablo ve metin aynı)."
+  },
+  {
+   "yil": 2027,
+   "ad_en": "Orionids",
+   "imo_kod": "008 ORI",
+   "iau_no": 8,
+   "kod": "ORI",
+   "aktivite": "2027-10-02 / 2027-11-07",
+   "maksimum_tarih": "2027-10-22",
+   "gunes_boylami_J2000_deg": 208,
+   "maksimum_saat_UT": null,
+   "ZHR": 20,
+   "radyant_maksimumda": {
+    "ra_deg": 95,
+    "dec_deg": 16
+   },
+   "hiz_km_s": 66,
+   "nufus_indeksi_r": 2.5,
+   "ay_kosulu_imo": [
+    "At the maximum time, the bright waning Moon is located in Gemini and thus illuminates the sky when the radiant is above the horizon.",
+    "the Orionids and Leonids are troubled by the waning gibbous to last quarter Moon"
+   ],
+   "kaynak": {
+    "url": "https://www.imo.net/files/data/calendar/cal2027.pdf",
+    "sayfa": "1, 14, 25",
+    "tablo5_satiri": "Orionids (008 ORI) Oct 02–Nov 07 Oct 22 208◦ 95◦ +16◦ 66 2.5 20",
+    "maksimum_alinti": "The maximum of the Orionids (008 ORI) is due on October 22."
+   },
+   "bagimsiz_kontrol_astronomy_engine": {
+    "aciklama": "λ⊙ (J2000 ortalama ekliptik) değerinden hesaplanan an ve o andaki Ay aydınlanma oranı; astronomy-engine 2.1.19",
+    "hesaplanan_an_UT": "2027-10-22T00:45Z",
+    "ay_aydinlanma_orani": 0.58,
+    "ay_buyuyor_mu": false
+   },
+   "ek_bilgi": "2027 takviminde Orionidler için ayrı bölüm yok; değerler Tablo 5'ten. 23/24 Ekim'de 15P/Finlay izleri (güney yarıküre, radyant α 256° δ −38°) olası."
+  },
+  {
+   "yil": 2027,
+   "ad_en": "Southern Taurids",
+   "imo_kod": "002 STA",
+   "iau_no": 2,
+   "kod": "STA",
+   "aktivite": "2027-09-20 / 2027-11-20",
+   "maksimum_tarih": "2027-11-06",
+   "gunes_boylami_J2000_deg": 223,
+   "maksimum_saat_UT": null,
+   "ZHR": "5–10 (Tablo 5: 7)",
+   "radyant_maksimumda": {
+    "ra_deg": 52,
+    "dec_deg": 15
+   },
+   "hiz_km_s": 27,
+   "nufus_indeksi_r": 2.3,
+   "ay_kosulu_imo": [
+    "The two Taurid branches reach their highest rates around November 6 (Southern Taurids, 002 STA) and November 13 (Northern Taurids, 017 NTA) respectively, roughly between first quarter and full moon."
+   ],
+   "kaynak": {
+    "url": "https://www.imo.net/files/data/calendar/cal2027.pdf",
+    "sayfa": "14, 16, 25",
+    "tablo5_satiri": "S. Taurids (002 STA) Sep 20–Nov 20 Nov 06 223◦ 52◦ +15◦ 27 2.3 7",
+    "maksimum_alinti": "Maximum: November 06 (λ⊙ = 223◦ ); ZHR = 5–10;"
+   },
+   "bagimsiz_kontrol_astronomy_engine": {
+    "aciklama": "λ⊙ (J2000 ortalama ekliptik) değerinden hesaplanan an ve o andaki Ay aydınlanma oranı; astronomy-engine 2.1.19",
+    "hesaplanan_an_UT": "2027-11-06T01:10Z",
+    "ay_aydinlanma_orani": 0.475,
+    "ay_buyuyor_mu": true
+   },
+   "ek_bilgi": "Erken maksimum ~13 Ekim (ZHR ~5)."
+  },
+  {
+   "yil": 2027,
+   "ad_en": "Northern Taurids",
+   "imo_kod": "017 NTA",
+   "iau_no": 17,
+   "kod": "NTA",
+   "aktivite": "2027-10-20 / 2027-12-10",
+   "maksimum_tarih": "2027-11-13",
+   "gunes_boylami_J2000_deg": 230,
+   "maksimum_saat_UT": null,
+   "ZHR": 5,
+   "radyant_maksimumda": {
+    "ra_deg": 58,
+    "dec_deg": 22
+   },
+   "hiz_km_s": 29,
+   "nufus_indeksi_r": 2.3,
+   "ay_kosulu_imo": [
+    "The two Taurid branches reach their highest rates around November 6 (Southern Taurids, 002 STA) and November 13 (Northern Taurids, 017 NTA) respectively, roughly between first quarter and full moon."
+   ],
+   "kaynak": {
+    "url": "https://www.imo.net/files/data/calendar/cal2027.pdf",
+    "sayfa": "14, 16, 25",
+    "tablo5_satiri": "N. Taurids (017 NTA) Oct 20–Dec 10 Nov 13 230◦ 58◦ +22◦ 29 2.3 5",
+    "maksimum_alinti": "Maximum: November 13 (λ⊙ = 230◦ ); ZHR = 5;"
+   },
+   "bagimsiz_kontrol_astronomy_engine": {
+    "aciklama": "λ⊙ (J2000 ortalama ekliptik) değerinden hesaplanan an ve o andaki Ay aydınlanma oranı; astronomy-engine 2.1.19",
+    "hesaplanan_an_UT": "2027-11-13T00:29Z",
+    "ay_aydinlanma_orani": 0.983,
+    "ay_buyuyor_mu": true
+   },
+   "tutarsizlik": "IMO \"ilk dördün ile dolunay arası\" diyor; NTA maksimumu (λ⊙ 230° = 13 Kas 00:29 UT hesap) dolunaydan (14 Kas) ~1 gün önce, Ay %98 aydınlık (hesap). Pratikte dolunay koşulu."
+  },
+  {
+   "yil": 2027,
+   "ad_en": "Leonids",
+   "imo_kod": "013 LEO",
+   "iau_no": 13,
+   "kod": "LEO",
+   "aktivite": "2027-11-06 / 2027-11-30",
+   "maksimum_tarih": "2027-11-18",
+   "gunes_boylami_J2000_deg": 235.27,
+   "maksimum_saat_UT": "06:00",
+   "ZHR": "≈15 (Tablo 5: 15+)",
+   "radyant_maksimumda": {
+    "ra_deg": 152,
+    "dec_deg": 22
+   },
+   "hiz_km_s": 71,
+   "nufus_indeksi_r": 2.5,
+   "ay_kosulu_imo": [
+    "the Leonid (013 LEO) nodal maximum is expected on November 18 again with the gibbous moon in Gemini.",
+    "By November 20 the moon has moved into Cancer but is only a bit less disturbing than on November 18."
+   ],
+   "kaynak": {
+    "url": "https://www.imo.net/files/data/calendar/cal2027.pdf",
+    "sayfa": "14, 17, 25",
+    "tablo5_satiri": "Leonids (013 LEO) Nov 06–Nov 30 Nov 18 235 ◦. 27 152◦ +22◦ 71 2.5 15+",
+    "maksimum_alinti": "Maximum: November 18, 06h UT (nodal crossing at λ⊙ = 235 ◦. 27),"
+   },
+   "bagimsiz_kontrol_astronomy_engine": {
+    "aciklama": "λ⊙ (J2000 ortalama ekliptik) değerinden hesaplanan an ve o andaki Ay aydınlanma oranı; astronomy-engine 2.1.19",
+    "hesaplanan_an_UT": "2027-11-18T06:07Z",
+    "ay_aydinlanma_orani": 0.798,
+    "ay_buyuyor_mu": false
+   },
+   "ek_bilgi": "Olası aktif dönemler (IMO): 17 Kas 22h UT ZHR 40–50 (Maslov 2007); 18 Kas 06h düğüm; 18 Kas 20h ZHR 20+(?) (1533 izi, Sato); 19 Kas 12h ZHR 20+(?) (1567); 20 Kas 04h ZHR 40–50 (1167 izi, Maslov/Vaubaillon 04:18/04:25); 20 Kas 10h ZHR 20+(?) (1600)."
+  },
+  {
+   "yil": 2027,
+   "ad_en": "Geminids",
+   "imo_kod": "004 GEM",
+   "iau_no": 4,
+   "kod": "GEM",
+   "aktivite": "2027-12-04 / 2027-12-20",
+   "maksimum_tarih": "2027-12-14",
+   "gunes_boylami_J2000_deg": 262.2,
+   "maksimum_saat_UT": "~20:00",
+   "ZHR": 150,
+   "radyant_maksimumda": {
+    "ra_deg": 112,
+    "dec_deg": 33
+   },
+   "hiz_km_s": 35,
+   "nufus_indeksi_r": 2.6,
+   "ay_kosulu_imo": [
+    "the full moon is close to its northernmost position on the ecliptic and thus severely disturbs visual observations."
+   ],
+   "kaynak": {
+    "url": "https://www.imo.net/files/data/calendar/cal2027.pdf",
+    "sayfa": "14, 25",
+    "tablo5_satiri": "Geminids (004 GEM) Dec 04–Dec 20 Dec 14 262 ◦. 2 112◦ +33◦ 35 2.6 150",
+    "maksimum_alinti": "In the night of the Geminid (004 GEM) maximum on December 14 (centred around 20h UT),"
+   },
+   "bagimsiz_kontrol_astronomy_engine": {
+    "aciklama": "λ⊙ (J2000 ortalama ekliptik) değerinden hesaplanan an ve o andaki Ay aydınlanma oranı; astronomy-engine 2.1.19",
+    "hesaplanan_an_UT": "2027-12-14T20:02Z",
+    "ay_aydinlanma_orani": 0.981,
+    "ay_buyuyor_mu": false
+   },
+   "ek_bilgi": "2027 takviminde Geminidler için ayrı bölüm yok; değerler Tablo 5 ve bölüm 6 girişinden."
+  },
+  {
+   "yil": 2027,
+   "ad_en": "Ursids",
+   "imo_kod": "015 URS",
+   "iau_no": 15,
+   "kod": "URS",
+   "aktivite": "2027-12-17 / 2027-12-26",
+   "maksimum_tarih": "2027-12-23",
+   "gunes_boylami_J2000_deg": 270.7,
+   "maksimum_saat_UT": "04:00",
+   "ZHR": "10 (bazen 50'ye kadar)",
+   "radyant_maksimumda": {
+    "ra_deg": 217,
+    "dec_deg": 76
+   },
+   "hiz_km_s": 33,
+   "nufus_indeksi_r": 2.8,
+   "ay_kosulu_imo": [
+    "The radiant is highest in the sky towards the morning and is moon-free in 2027."
+   ],
+   "kaynak": {
+    "url": "https://www.imo.net/files/data/calendar/cal2027.pdf",
+    "sayfa": "20, 25",
+    "tablo5_satiri": "Ursids (015 URS) Dec 17–Dec 26 Dec 23 270 ◦. 7 217◦ +76◦ 33 2.8 10",
+    "maksimum_alinti": "Maximum: December 23, 04h UT (λ⊙ = 270 ◦. 7);"
+   },
+   "bagimsiz_kontrol_astronomy_engine": {
+    "aciklama": "λ⊙ (J2000 ortalama ekliptik) değerinden hesaplanan an ve o andaki Ay aydınlanma oranı; astronomy-engine 2.1.19",
+    "hesaplanan_an_UT": "2027-12-23T04:29Z",
+    "ay_aydinlanma_orani": 0.213,
+    "ay_buyuyor_mu": false
+   },
+   "ek_bilgi": "2027 için iz/filament geçişi öngörülmüyor."
+  }
+ ]
+}

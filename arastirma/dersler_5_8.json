@@ -1,0 +1,891 @@
+[
+ {
+  "id": "d5",
+  "baslik": "Yıldızların hayatı",
+  "ozet": "Bir yıldızın rengi, parlaklığı ve ne kadar yaşayacağı büyük ölçüde tek bir sayıya bağlıdır: doğduğu kütleye. H-R diyagramı bu bağı tek bakışta gösteren haritadır.",
+  "bolumler": [
+   {
+    "baslik": "Yıldızları tayflarına göre sınıflamak",
+    "paragraflar": [
+     "Bir yıldızın ışığını prizmadan geçirirsen gökkuşağı şeridinin üstünde koyu çizgiler görürsün. Her çizgi belli bir elemente ya da moleküle aittir. Çizgilerin gücü yıldızdan yıldıza değişir, ama bu farkın asıl nedeni bileşim değildir: çizgilerin gücü esas olarak yıldızın yüzey katmanının sıcaklığına göre değişir; gerçek bileşim farkı ancak bazı durumlarda devreye girer. Bu yüzden bir yıldızın tayf sınıfı, aslında yüzey sıcaklığının bir ölçüsüdür.",
+     "Yıldızlar sıcaktan soğuğa yedi harfle sınıflanır: O, B, A, F, G, K, M. Sıranın alfabetik olmamasının nedeni tarihseldir: önceki harf sistemini 1901'de Annie Jump Cannon sadeleştirip bugünkü sıraya dizdi. Her harf 0'dan 9'a bölünür; 0 o sınıfın en sıcağı, 9 en soğuğudur (A9'dan sonra F0 gelir). Güneş G2 sınıfındadır.",
+     "Anakol yıldızları için yaklaşık yüzey sıcaklıkları şöyledir (Wikipedia): O 33.000 K ve üstü, B 10.000–33.000 K, A 7300–10.000 K, F 6000–7300 K, G 5300–6000 K, K 3900–5300 K, M 2300–3900 K. Başka kaynaklar sınırları biraz farklı çizer; bunlar keskin duvarlar değil, yaklaşık eşiklerdir."
+    ]
+   },
+   {
+    "baslik": "H-R diyagramı ve anakol",
+    "paragraflar": [
+     "Ejnar Hertzsprung 1911'de, Henry Norris Russell 1913'te birbirinden bağımsız olarak yıldızların parlaklığını tayf sınıflarına karşı çizdi. Bugün Hertzsprung-Russell (H-R) diyagramı dediğimiz grafiğin her biçiminde ortak bir düzen vardır: ışıma gücü yüksek yıldızlar yukarıda, yüzey sıcaklığı yüksek yıldızlar soldadır. Dikkat: sıcaklık sola doğru artar.",
+     "Yıldızlar diyagrama rastgele dağılmaz. En belirgin yapı, sol üstten (sıcak ve parlak) sağ alta (soğuk ve sönük) inen köşegendir: anakol. Sol altta beyaz cüceler, anakolun üstünde ise devler ve süperdevler bulunur. Soğuk bir yüzey metrekare başına az ışık verir; buna rağmen çok parlak olan bir yıldızın yüzeyi devasa olmalıdır. Sıcak ama sönük bir yıldızın yüzeyi de çok küçük olmalıdır.",
+     "Yıldızlar ömürlerinin büyük kısmını anakolda, çekirdeklerinde hidrojeni helyuma kaynaştırarak geçirir; bu yüzden bir H-R diyagramındaki yıldızların çoğu anakoldadır. Anakol boyunca dizilişi belirleyen kütledir: düşük kütleli yıldızlar soğuk ve sönük uçta, kütleli yıldızlar sıcak ve parlak uçta yer alır."
+    ]
+   },
+   {
+    "baslik": "Kütle–ışıma gücü ilişkisi",
+    "paragraflar": [
+     "Kütlesi büyük olan yıldızın kütleçekimi çekirdeğini daha çok sıkıştırır, çekirdek daha çok ısınır ve füzyon çok daha hızlı yürür. Sonuç: kütle biraz artınca ışıma gücü çok artar.",
+     "Anakol yıldızları için sık kullanılan kural L ∝ M^3,5'tir; Wikipedia bu değerin 2 ile 55 Güneş kütlesi arasında geçerli olduğunu, beyaz cücelere ve devlere uygulanmadığını belirtir. Aynı kaynak kütle aralığına göre değişen bir ilişki de verir: 0,43 ile 2 Güneş kütlesi arasında L = M^4, daha hafif yıldızlarda L ≈ 0,23 M^2,3, 2–55 Güneş kütlesinde L ≈ 1,4 M^3,5 (hepsi Güneş birimleriyle). Örneğin Güneş'ten iki kat kütleli bir yıldız, 0,43–2 aralığındaki kurala göre yaklaşık 2^4 = 16 kat parlaktır.",
+     "Bu kurallar kabadır. Eric Mamajek'in anakol yıldızları tablosu A0 tipi bir yıldız için 2,18 Güneş kütlesi ve yaklaşık 38 Güneş ışıma gücü verir; aynı kütleye M^4 uygulansa yaklaşık 23 çıkar (bu derste yapılan karşılaştırma). Simülasyonlarda gerçek ölçümlere dayanan tablo değerleri daha güvenilirdir."
+    ]
+   },
+   {
+    "baslik": "Anakol ömrü: çok yakıt, kısa ömür",
+    "paragraflar": [
+     "Daha çok yakıtı olan daha uzun yaşar diye düşünürüz; yıldızlarda tersi olur. Yakıt miktarı kütleyle orantılıdır, harcama hızı ise ışıma gücüdür. Kütle iki katına çıkınca yakıt iki katına çıkar ama harcama kabaca 10–16 katına çıkar. Wikipedia'daki yaklaşık formül bunu özetler: ömür ≈ 10 milyar yıl × (M/M☉) × (L☉/L).",
+     "Bu formülü Mamajek'in tablosundaki kütle ve ışıma gücü değerlerine uygulayınca (bu derste yapılan hesap) şu tablo çıkar: 43 Güneş kütleli bir O5 yıldızı anakolda yalnızca yaklaşık 1,2 milyon yıl, 17,7 Güneş kütleli bir B0 yıldızı yaklaşık 4 milyon yıl, 2,18 Güneş kütleli bir A0 yıldızı yaklaşık 570 milyon yıl kalır. Güneş (G2) yaklaşık 10 milyar yıl, 0,88 Güneş kütleli bir K0 yıldızı yaklaşık 19 milyar yıl, 0,57 Güneş kütleli bir M0 yıldızı yaklaşık 82 milyar yıl yaşar. Son ikisi, 13,8 milyar yıllık evrenin bugünkü yaşından uzundur.",
+     "Wikipedia'ya göre Güneş yaklaşık 4,5 milyar yıldır anakoldadır ve toplam anakol ömrü yaklaşık 10 milyar yıldır. NASA'ya göre Güneş ömrünün yarısından biraz azını tamamlamıştır ve beyaz cüceye dönüşmeden önce yaklaşık 5 milyar yıl daha yaşayacaktır."
+    ]
+   },
+   {
+    "baslik": "Bir yıldız nasıl doğar",
+    "paragraflar": [
+     "Yıldızlar moleküler bulut denen soğuk gaz ve toz bulutlarında doğar. NASA'ya göre bu bulutların kütlesi Güneş'in 1000 ile 10 milyon katı arasındadır ve yüzlerce ışık yılına yayılabilir. Bulut soğuk olduğu için gaz topaklanır; bazı topaklar madde toplayıp kütleçekimini güçlendirir ve sonunda çöker.",
+     "Çöken yoğun çekirdekte bir süre kütleçekimi ile gaz basıncı dengededir. Çekirdek çevresinden madde topladıkça kütleçekimi basıncı yener ve çöküş başlar. Merkezde düşük kütleli bir önyıldız, çevresinde dönen bir disk oluşur. Neden disk? Açısal momentum korunduğu için: kollarını kapatan buz patencisi gibi, dönen bulut küçüldükçe hızlanır ve düşen gazın giderek daha büyük kısmı yıldıza değil diske çarpar. Güneş ve daha hafif yıldızlar için önyıldız evresi yaklaşık 500.000 yıl sürer.",
+     "Önyıldız enerjisini henüz hidrojen füzyonundan almaz: önce döteryum füzyonu başlar, ardından yıldız kütleçekimsel büzülmeyle ısınmayı sürdürür. Merkezinde hidrojen kaynaşmaya başladığında anakola yerleşir. Alt sınır yaklaşık 0,08 Güneş kütlesi, yani Jüpiter'in 80 katıdır. Bundan hafif cisimler hidrojen kaynaştıramaz; Jüpiter'in yaklaşık 13 ile 80 katı arasındakilere kahverengi cüce denir."
+    ]
+   },
+   {
+    "baslik": "Kırmızı dev evresi",
+    "paragraflar": [
+     "Çekirdekteki hidrojen bitince geriye helyum çekirdek kalır ve füzyon, çekirdeği saran bir hidrojen kabuğuna taşınır. Yıldızın dış katmanları şişer ve seyrelir; yarıçap Güneş'inkinin onlarca, yüzlerce katına çıkar, yüzey sıcaklığı yaklaşık 5000 K'e ya da altına düşer. Rengi sarımsı beyazdan kırmızımsı turuncuya uzanır ama devasa yüzeyi sayesinde Güneş'ten kat kat parlaktır. Bu kırmızı devdir; Wikipedia yaklaşık 0,3–8 Güneş kütleli yıldızların bu evreden geçtiğini yazar.",
+     "Helyum çekirdek büzülüp ısınır. Sıcaklık yaklaşık 100 milyon K'e ulaşınca helyum karbona kaynaşmaya başlar: üç helyum çekirdeği birleşip bir karbon çekirdeği oluşturur (üçlü alfa süreci). Yaklaşık 0,8 ile 2,0 Güneş kütleli yıldızlarda bu tutuşma ani bir kaçak tepkimeyle olur: helyum parlaması. NASA'ya göre Güneş kırmızı dev olduğunda Merkür'ü ve Venüs'ü, belki Dünya'yı da yutacak kadar büyüyecektir."
+    ]
+   }
+  ],
+  "formuller": [
+   {
+    "ad": "Kütle–ışıma gücü ilişkisi",
+    "ifade": "L/L☉ ≈ (M/M☉)^3,5  (2 M☉ < M < 55 M☉)",
+    "aciklama": "Wikipedia 'Mass–luminosity relation'. 0,43–2 M☉ için L/L☉ = (M/M☉)^4; 0,43 M☉ altında L/L☉ ≈ 0,23 (M/M☉)^2,3. Beyaz cüce ve devlere uygulanmaz."
+   },
+   {
+    "ad": "Anakol ömrü (yaklaşık)",
+    "ifade": "τ ≈ 10^10 yıl × (M/M☉) × (L☉/L)",
+    "aciklama": "Wikipedia 'Main sequence'. Yakıt kütleyle, harcama ışıma gücüyle orantılı. Aynı kaynak bunu τ ≈ 10^10 yıl × (M/M☉)^-2,5 olarak da yazar."
+   }
+  ],
+  "anahtar_sayilar": [
+   {
+    "deger": "O ≥33.000 K; B 10.000–33.000 K; A 7300–10.000 K; F 6000–7300 K; G 5300–6000 K; K 3900–5300 K; M 2300–3900 K",
+    "aciklama": "Tayf sınıflarının yaklaşık yüzey sıcaklıkları",
+    "kaynak_url": "https://en.wikipedia.org/wiki/Stellar_classification"
+   },
+   {
+    "deger": "G2",
+    "aciklama": "Güneş'in tayf sınıfı",
+    "kaynak_url": "https://en.wikipedia.org/wiki/Stellar_classification"
+   },
+   {
+    "deger": "1911 / 1913",
+    "aciklama": "Hertzsprung ve Russell'ın diyagramı bağımsız olarak çizdiği yıllar",
+    "kaynak_url": "https://en.wikipedia.org/wiki/Hertzsprung%E2%80%93Russell_diagram"
+   },
+   {
+    "deger": "L ∝ M^3,5 (2–55 M☉); L = M^4 (0,43–2 M☉)",
+    "aciklama": "Kütle–ışıma gücü ilişkisi",
+    "kaynak_url": "https://en.wikipedia.org/wiki/Mass%E2%80%93luminosity_relation"
+   },
+   {
+    "deger": "~10^10 yıl",
+    "aciklama": "Güneş'in toplam anakol ömrü",
+    "kaynak_url": "https://en.wikipedia.org/wiki/Main_sequence"
+   },
+   {
+    "deger": "~5 milyar yıl",
+    "aciklama": "Güneş'in beyaz cüceye dönüşmeden önce kalan ömrü",
+    "kaynak_url": "https://science.nasa.gov/sun/facts/"
+   },
+   {
+    "deger": "O5V: 43 M☉, log L = 5,54; G2V: 1,00 M☉, log L = 0,01; M0V: 0,57 M☉, log L = −1,16",
+    "aciklama": "Anakol yıldızlarının ortalama kütle ve ışıma güçleri (ömür hesabının girdisi)",
+    "kaynak_url": "https://www.pas.rochester.edu/~emamajek/EEM_dwarf_UBVIJHK_colors_Teff.txt"
+   },
+   {
+    "deger": "1000–10 milyon M☉",
+    "aciklama": "Moleküler bulutların kütle aralığı",
+    "kaynak_url": "https://science.nasa.gov/universe/stars/"
+   },
+   {
+    "deger": "~500.000 yıl",
+    "aciklama": "Düşük kütleli yıldızlarda önyıldız evresinin süresi",
+    "kaynak_url": "https://en.wikipedia.org/wiki/Protostar"
+   },
+   {
+    "deger": "~0,08 M☉ (80 Jüpiter kütlesi)",
+    "aciklama": "Hidrojen kaynaştırabilen en küçük yıldız kütlesi",
+    "kaynak_url": "https://en.wikipedia.org/wiki/Main_sequence"
+   },
+   {
+    "deger": "~100 milyon K",
+    "aciklama": "Helyum füzyonunun başladığı çekirdek sıcaklığı",
+    "kaynak_url": "https://en.wikipedia.org/wiki/Helium_flash"
+   },
+   {
+    "deger": "0,8–2,0 M☉",
+    "aciklama": "Helyum parlaması yaşayan yıldızların kütle aralığı",
+    "kaynak_url": "https://en.wikipedia.org/wiki/Helium_flash"
+   }
+  ],
+  "defter_notu": [
+   "Tayf sınıfları sıcaktan soğuğa: O B A F G K M. Güneş = G2.",
+   "Tayf çizgilerinin farkı esas olarak bileşimden değil, yüzey sıcaklığından gelir.",
+   "H-R diyagramı: yukarı = parlak, sol = sıcak. Köşegen şerit = anakol.",
+   "Anakol bir kütle dizisidir; yıldızlar ömürlerinin çoğunu burada geçirir.",
+   "L ∝ M^3,5 (2–55 M☉); 0,43–2 M☉ için L = M^4. 2 kat kütle ≈ 16 kat parlaklık.",
+   "Ömür ≈ 10^10 yıl × M/L. O5 ≈ 1 milyon yıl, Güneş ≈ 10 milyar yıl, M0 ≈ 80 milyar yıl.",
+   "Doğum: soğuk moleküler bulut → çöken çekirdek → disk + önyıldız → hidrojen füzyonu.",
+   "Hidrojen bitince: kabukta füzyon, dış katmanlar şişer → kırmızı dev; ~100 milyon K'de helyum → karbon."
+  ],
+  "sorular": [
+   {
+    "soru": "Kütlesi Güneş'in iki katı olan bir anakol yıldızı neden Güneş'ten daha kısa yaşar, oysa yakıtı daha fazladır?",
+    "cevap": "Yakıtı yaklaşık 2 kat fazladır ama ışıma gücü (harcama hızı) kabaca 2^4 = 16 kat fazladır. Ömür ∝ M/L olduğu için ömrü yaklaşık 8 kat kısalır."
+   },
+   {
+    "soru": "H-R diyagramının sağ üst köşesindeki bir yıldız soğuk olduğu halde neden çok parlaktır?",
+    "cevap": "Soğuk yüzey metrekare başına az enerji yayar; toplam ışıma gücünün yüksek olması için yüzeyin çok büyük olması gerekir. Bu yıldızlar dev ya da süperdevdir."
+   },
+   {
+    "soru": "Önyıldızın çevresinde neden bir disk oluşur?",
+    "cevap": "Açısal momentum korunur: dönen bulut küçüldükçe hızlanır ve düşen gazın giderek büyük kısmı doğrudan yıldıza değil, ekvator çevresindeki diske düşer."
+   }
+  ],
+  "kaynaklar": [
+   {
+    "ad": "Wikipedia, Stellar classification",
+    "url": "https://en.wikipedia.org/wiki/Stellar_classification"
+   },
+   {
+    "ad": "Wikipedia, Hertzsprung–Russell diagram",
+    "url": "https://en.wikipedia.org/wiki/Hertzsprung%E2%80%93Russell_diagram"
+   },
+   {
+    "ad": "Wikipedia, Mass–luminosity relation",
+    "url": "https://en.wikipedia.org/wiki/Mass%E2%80%93luminosity_relation"
+   },
+   {
+    "ad": "Wikipedia, Main sequence",
+    "url": "https://en.wikipedia.org/wiki/Main_sequence"
+   },
+   {
+    "ad": "E. Mamajek, A Modern Mean Dwarf Stellar Color and Effective Temperature Sequence (sürüm 2022.04.16)",
+    "url": "https://www.pas.rochester.edu/~emamajek/EEM_dwarf_UBVIJHK_colors_Teff.txt"
+   },
+   {
+    "ad": "Wikipedia, Protostar",
+    "url": "https://en.wikipedia.org/wiki/Protostar"
+   },
+   {
+    "ad": "Wikipedia, Star formation",
+    "url": "https://en.wikipedia.org/wiki/Star_formation"
+   },
+   {
+    "ad": "Wikipedia, Brown dwarf",
+    "url": "https://en.wikipedia.org/wiki/Brown_dwarf"
+   },
+   {
+    "ad": "Wikipedia, Red giant",
+    "url": "https://en.wikipedia.org/wiki/Red_giant"
+   },
+   {
+    "ad": "Wikipedia, Helium flash",
+    "url": "https://en.wikipedia.org/wiki/Helium_flash"
+   },
+   {
+    "ad": "Wikipedia, Triple-alpha process",
+    "url": "https://en.wikipedia.org/wiki/Triple-alpha_process"
+   },
+   {
+    "ad": "Wikipedia, Annie Jump Cannon",
+    "url": "https://en.wikipedia.org/wiki/Annie_Jump_Cannon"
+   },
+   {
+    "ad": "NASA Science, Stars",
+    "url": "https://science.nasa.gov/universe/stars/"
+   },
+   {
+    "ad": "NASA Science, Sun: Facts",
+    "url": "https://science.nasa.gov/sun/facts/"
+   }
+  ]
+ },
+ {
+  "id": "d6",
+  "baslik": "Yıldızların ölümü",
+  "ozet": "Bir yıldızın nasıl öleceğini de kütlesi belirler: hafif yıldızlar sessizce beyaz cüceye dönüşür, kütleli yıldızlar süpernova olarak patlar ve geride nötron yıldızı ya da kara delik bırakır. Vücudumuzdaki ağır elementler bu ölümlerin ürünüdür.",
+  "bolumler": [
+   {
+    "baslik": "Hafif yıldızların sonu: beyaz cüce",
+    "paragraflar": [
+     "Güneş gibi bir yıldız helyumunu da tüketince merkezinde karbon ve oksijenden bir çekirdek kalır; bu kütledeki yıldızlar bir sonraki füzyon basamağına geçecek kadar ısınamaz. Dış katmanlar uzaya savrulur ve gezegenimsi bulutsu denen parlayan bir kabuk oluşturur (adı yanıltıcıdır, gezegenlerle ilgisi yoktur). Geride kalan çekirdek beyaz cücedir. 1 Güneş kütleli bir yıldızdan yaklaşık 0,6 Güneş kütleli, Dünya hacminde bir beyaz cüce kalır.",
+     "Beyaz cüceyi çökmekten ısı değil, elektronların direnci korur. Pauli dışlama ilkesine göre elektronlar aynı durumda bulunamaz; madde yeterince sıkışınca elektronlar daha fazla sıkışmaya karşı koyar. Buna elektron yozlaşma basıncı denir. Beyaz cüce füzyon yapmaz, kalan ısısını milyarlarca yıl boyunca uzaya yayarak soğur. NASA'ya göre tipik bir beyaz cüce Güneş'in yarısı kadar kütlelidir ama Dünya'dan ancak biraz büyüktür; yoğunluğu metreküpte yaklaşık 10^9 kilogramdır.",
+     "Daha kütleli beyaz cüce daha küçüktür ve elektron basıncının taşıyabileceği bir üst sınır vardır: Chandrasekhar sınırı, yaklaşık 1,4 Güneş kütlesi (daha hassas değer bileşime bağlıdır, yaklaşık 1,44). Wikipedia'ya göre başlangıç kütlesi yaklaşık 8 Güneş kütlesinin altındaki yıldızlar yeterince kütle kaybederek bu sınırın altında bir beyaz cüce bırakır."
+    ]
+   },
+   {
+    "baslik": "Kütleli yıldızlar: demir çekirdek ve çöküş",
+    "paragraflar": [
+     "Kütleli bir yıldız karbondan sonra neon, oksijen ve silisyum gibi giderek ağırlaşan elementleri kaynaştırır; içi soğan gibi katmanlanır, merkezde demir grubu elementler birikir. Her yeni füzyon basamağı bir öncekinden daha az enerji verir. Yıldız demiri kaynaştırma aşamasına geldiğinde füzyon, kütleçekimine karşı koyacak enerjiyi artık üretemez.",
+     "Çekirdeğin kütlesi Chandrasekhar sınırını (yaklaşık 1,4 Güneş kütlesi) aşınca elektron basıncı yetmez ve çekirdek saniyeler içinde içe çöker. Dış çekirdek ışık hızının yüzde 23'üne (saniyede 70.000 km) varan hızlarla içe düşer, iç çekirdeğin sıcaklığı 100 milyar K'e çıkar. Elektronlar protonlarla birleşip nötron ve nötrino oluşturur. Çöküşü nükleer kuvvet ve nötron yozlaşma basıncı durdurur; geri sekme bir şok dalgası doğurur ve bu dalga yıldızın dış katmanlarını uzaya fırlatır: çekirdek çöküşü süpernovası (Tip II).",
+     "Wikipedia'ya göre bu tür patlama için yıldızın kütlesi en az 8, en fazla 40–50 Güneş kütlesi olmalıdır. NASA'ya göre geride ne kalacağını patlamadan önceki kütle belirler: eşiğe yakın kütleler şehir büyüklüğünde bir nötron yıldızı, yaklaşık 20 Güneş kütlesi ve üstü ise kara delik bırakır. Wikipedia başlangıç kütlesi ile kalıntı arasındaki ilişkinin henüz tam kesin olmadığını vurgular."
+    ]
+   },
+   {
+    "baslik": "Tip Ia süpernova: patlayan beyaz cüce",
+    "paragraflar": [
+     "Yalnız bir beyaz cüce sakin kalır. Ama bir çift yıldız sisteminde eşinden madde çekerek Chandrasekhar sınırına yaklaşırsa, birkaç saniye içinde karbon ve oksijeninin büyük kısmı daha ağır elementlere kaynaşır. Açığa çıkan enerji yıldızı bir arada tutan bağdan fazladır; beyaz cüce dağılır, madde saniyede 5000–20.000 km hızla saçılır. İki beyaz cücenin birleşmesi de aynı sonuca götürebilir.",
+     "Süpernovalar tayflarına göre ayrılır: tayfta hidrojen çizgileri varsa Tip II, yoksa Tip I. Tip Ia, Tip I'in güçlü iyonlaşmış silisyum çizgisi gösteren alt türüdür. Bu patlamalar hep aynı kritik kütlede olduğu için tepe parlaklıkları birbirine çok yakındır; bu yüzden uzak galaksilerin uzaklığını ölçmekte standart mum olarak kullanılırlar."
+    ]
+   },
+   {
+    "baslik": "Nötron yıldızları ve atarcalar",
+    "paragraflar": [
+     "Nötron yıldızı, bir Güneş kütlesinin bir şehir boyutuna sıkıştırılmış halidir. NASA'ya göre yaklaşık 20 km çapındadır; çöken çekirdek yaklaşık 1 ile 3 Güneş kütlesi arasındaysa oluşur ve bir şeker küpü kadar maddesi yaklaşık 1 trilyon kilogram gelir. Bir nötron yıldızının alabileceği en büyük kütle henüz kesin bilinmiyor; tahminler kabaca 2 ile 3 Güneş kütlesi arasındadır.",
+     "1967'de Jocelyn Bell, yaklaşık her 1,337 saniyede bir gelen son derece düzenli radyo atımları keşfetti. Açıklama: dönen ve güçlü manyetik alanlı bir nötron yıldızı, manyetik kutuplarından ışın demetleri yayar; demet her dönüşte Dünya'yı süpürdüğünde, deniz fenerinin ışığı gibi bir atım görürüz. Bu cisimlere atarca (pulsar) denir; atım aralıkları milisaniyelerden saniyelere uzanır. Yengeç Bulutsusu'nun ortasındaki atarca, 1054'te Dünya'dan görülen süpernovanın kalıntısıdır; saniyede yaklaşık 30 tur atar."
+    ]
+   },
+   {
+    "baslik": "Kara delikler: olay ufku ve zamanın yavaşlaması",
+    "paragraflar": [
+     "Kalıntının kütlesi nötronların taşıyabileceğinden fazlaysa (bugünkü tahmin 2 ile 3 Güneş kütlesi arası) hiçbir şey çöküşü durduramaz. Sezgisel bakalım: Dünya'nın yüzeyinden kaçmak için saniyede yaklaşık 11,2 km, Güneş'in yüzeyinden kaçmak için yaklaşık 618 km hız gerekir. Kütleyi aynı tutup cismi küçültürsen yüzeydeki çekim artar. Kaçış hızı ışık hızını aştığı sınır olay ufkudur: içinden hiçbir şey, ışık bile çıkamaz. Yarıçapına Schwarzschild yarıçapı denir: Rs = 2GM/c². Yalnızca kütleye bağlıdır; Güneş kara delik olsaydı yaklaşık 3 km, Dünya yaklaşık 9 mm olurdu.",
+     "Genel göreliliğe göre çekim güçlendikçe zaman yavaşlar. Bu günlük hayatta bile ölçülür: GPS uydularının saatleri yeryüzünden uzakta, daha zayıf çekimde oldukları için günde yaklaşık 45,8 mikrosaniye hızlı, yörünge hızları nedeniyle yaklaşık 7,2 mikrosaniye yavaş işler. Net fark günde yaklaşık 38,6 mikrosaniyedir; düzeltilmeseydi konum hatası günde yaklaşık 11,4 km birikirdi. NASA'ya göre bir kara deliğe düşen cisim, uzaktan izleyen birine olay ufkuna yaklaştıkça giderek yavaşlıyor ve sonunda donmuş gibi görünür.",
+     "Gelgit etkisi: kara deliğe yakın bir cismin yakın tarafı uzak tarafından çok daha güçlü çekilir. Cisim boyuna uzar, yanlardan sıkışır; buna spagettileşme denir. Wikipedia'ya göre bir insanı öldüren nokta kara deliğin kütlesine bağlıdır: yıldız kütleli kara deliklerde spagettileşme olay ufkundan önce başlar, galaksi merkezlerindeki dev kara deliklerde ise bu nokta ufkun içindedir; astronot ufku belirgin bir gelgit hissetmeden geçebilir."
+    ]
+   },
+   {
+    "baslik": "Ağır elementlerin kökeni",
+    "paragraflar": [
+     "Hidrojen ve helyum dışındaki elementlerin büyük kısmı yıldızlarda pişer: karbon kırmızı devlerde, daha ağır elementler kütleli yıldızların katmanlarında. NASA'ya göre süpernovaların ve diğer yıldız olaylarının uzaya saçtığı madde, sonraki moleküler bulutları zenginleştirir ve yeni nesil yıldızlara katılır.",
+     "Demirden ağır elementlerin önemli bir üretim yeri nötron yıldızı birleşmeleridir. 17 Ağustos 2017'de LIGO ve Virgo, yaklaşık 130 milyon ışık yılı uzaklıktaki NGC 4993 galaksisinde iki nötron yıldızının birleşmesini kütleçekim dalgasıyla yakaladı ve olay ışıkla da gözlendi. Ardından gelen parlamaya kilonova denir. ESO'nun tayfları sezyum ve tellür izleri gösterdi; sonraki modellemeler stronsiyum ve itriyum buldu. Bu gözlemler, demirden ağır elementlerin bu tür birleşmelerde hızlı nötron yakalama (r-süreci) ile üretildiğini doğruladı. ESO bu olayı 'birleşen nötron yıldızları uzaya altın ve platin saçıyor' başlığıyla duyurdu."
+    ]
+   }
+  ],
+  "formuller": [
+   {
+    "ad": "Schwarzschild yarıçapı",
+    "ifade": "Rs = 2GM/c²",
+    "aciklama": "G kütleçekim sabiti, M kütle, c ışık hızı. Olay ufkunun yarıçapı yalnızca kütleye bağlıdır (Wikipedia 'Schwarzschild radius')."
+   },
+   {
+    "ad": "Pratik kısayol",
+    "ifade": "Rs ≈ 2,95 km × (M/M☉)",
+    "aciklama": "G = 6,674×10^-11, M☉ = 1,989×10^30 kg, c = 2,998×10^8 m/s ile bu derste hesaplandı. Wikipedia Güneş için yaklaşık 3,0 km, 10 M☉ için 30 km verir."
+   }
+  ],
+  "anahtar_sayilar": [
+   {
+    "deger": "~1,4 M☉ (daha hassas: ~1,44 M☉)",
+    "aciklama": "Chandrasekhar sınırı: beyaz cücenin alabileceği en büyük kütle",
+    "kaynak_url": "https://en.wikipedia.org/wiki/Chandrasekhar_limit"
+   },
+   {
+    "deger": "1,4 M☉",
+    "aciklama": "Chandrasekhar sınırı (NASA)",
+    "kaynak_url": "https://imagine.gsfc.nasa.gov/science/objects/dwarfs2.html"
+   },
+   {
+    "deger": "~0,6 M☉, Dünya hacmi",
+    "aciklama": "1 M☉'lik bir yıldızdan kalan beyaz cüce",
+    "kaynak_url": "https://en.wikipedia.org/wiki/Stellar_evolution"
+   },
+   {
+    "deger": "10^9 kg/m³",
+    "aciklama": "Dünya büyüklüğünde bir beyaz cücenin yoğunluğu (NASA)",
+    "kaynak_url": "https://imagine.gsfc.nasa.gov/science/objects/dwarfs2.html"
+   },
+   {
+    "deger": "en az 8, en fazla 40–50 M☉",
+    "aciklama": "Tip II (çekirdek çöküşü) süpernova için yıldız kütlesi",
+    "kaynak_url": "https://en.wikipedia.org/wiki/Type_II_supernova"
+   },
+   {
+    "deger": "%23 ışık hızı (70.000 km/s); 100 milyar K",
+    "aciklama": "Çöken çekirdeğin hızı ve iç çekirdeğin sıcaklığı",
+    "kaynak_url": "https://en.wikipedia.org/wiki/Type_II_supernova"
+   },
+   {
+    "deger": ">8 M☉ süpernova; ~20 M☉ ve üstü kara delik",
+    "aciklama": "Patlamadan önceki kütleye göre kalıntı (NASA)",
+    "kaynak_url": "https://science.nasa.gov/universe/black-holes/types/"
+   },
+   {
+    "deger": "5000–20.000 km/s",
+    "aciklama": "Tip Ia süpernovada saçılan maddenin hızı",
+    "kaynak_url": "https://en.wikipedia.org/wiki/Type_Ia_supernova"
+   },
+   {
+    "deger": "~20 km; 1–3 M☉; şeker küpü ≈ 1 trilyon kg",
+    "aciklama": "Nötron yıldızının çapı, oluştuğu çekirdek kütlesi aralığı ve yoğunluğu (NASA)",
+    "kaynak_url": "https://imagine.gsfc.nasa.gov/science/objects/neutron_stars1.html"
+   },
+   {
+    "deger": "~1,337 s (1967)",
+    "aciklama": "İlk atarcanın atım aralığı",
+    "kaynak_url": "https://en.wikipedia.org/wiki/Pulsar"
+   },
+   {
+    "deger": "33,39 ms; ~29,9 tur/s",
+    "aciklama": "Yengeç atarcasının dönme periyodu",
+    "kaynak_url": "https://en.wikipedia.org/wiki/Crab_Pulsar"
+   },
+   {
+    "deger": "11,186 km/s (Dünya), 617,7 km/s (Güneş)",
+    "aciklama": "Yüzeyden kaçış hızı",
+    "kaynak_url": "https://en.wikipedia.org/wiki/Escape_velocity"
+   },
+   {
+    "deger": "~3,0 km (Güneş), ~9 mm (Dünya)",
+    "aciklama": "Schwarzschild yarıçapları",
+    "kaynak_url": "https://en.wikipedia.org/wiki/Schwarzschild_radius"
+   },
+   {
+    "deger": "+45,8 µs, −7,2 µs, net +38,6 µs/gün; ~11,4 km/gün",
+    "aciklama": "GPS uydu saatlerinde genel ve özel görelilik etkileri ve düzeltilmezse konum hatası",
+    "kaynak_url": "https://en.wikipedia.org/wiki/Error_analysis_for_the_Global_Positioning_System"
+   },
+   {
+    "deger": "~130 milyon ışık yılı",
+    "aciklama": "GW170817 nötron yıldızı birleşmesinin uzaklığı",
+    "kaynak_url": "https://www.eso.org/public/news/eso1733/"
+   }
+  ],
+  "defter_notu": [
+   "Hafif yıldız → gezegenimsi bulutsu + beyaz cüce (elektron yozlaşma basıncı tutar).",
+   "Chandrasekhar sınırı ≈ 1,4 M☉: beyaz cüce bundan ağır olamaz.",
+   "8–50 M☉ yıldız → demir çekirdek çöker (saniyeler) → Tip II süpernova → nötron yıldızı ya da kara delik.",
+   "Tip Ia = sınıra ulaşan beyaz cüce patlar; hidrojen yok, silisyum var; standart mum.",
+   "Nötron yıldızı ≈ 20 km çap; atarca = dönen nötron yıldızı (deniz feneri).",
+   "Rs = 2GM/c²; Güneş ≈ 3 km, Dünya ≈ 9 mm.",
+   "Güçlü çekim → zaman yavaşlar (GPS: net +38,6 µs/gün). Gelgit → spagettileşme.",
+   "Demirden ağır elementler: nötron yıldızı birleşmeleri (2017, kilonova, r-süreci)."
+  ],
+  "sorular": [
+   {
+    "soru": "Beyaz cüceyi çökmekten ne korur ve bu korumanın neden bir üst sınırı vardır?",
+    "cevap": "Elektron yozlaşma basıncı (Pauli dışlama ilkesi). Kütle arttıkça beyaz cüce küçülür ve yaklaşık 1,4 Güneş kütlesinin üstünde elektron basıncı kütleçekimini dengeleyemez (Chandrasekhar sınırı)."
+   },
+   {
+    "soru": "Tip Ia ve Tip II süpernovaları tayflarından nasıl ayırırsın?",
+    "cevap": "Tip II tayfında hidrojen çizgileri vardır, Tip I'de yoktur. Tip Ia ayrıca güçlü iyonlaşmış silisyum çizgisi gösterir."
+   },
+   {
+    "soru": "Kütlesi 10 Güneş kütlesi olan bir kara deliğin Schwarzschild yarıçapı yaklaşık kaç km'dir?",
+    "cevap": "Rs ≈ 2,95 km × 10 ≈ 30 km (Wikipedia'nın tablosu da 10 M☉ için 30 km verir)."
+   }
+  ],
+  "kaynaklar": [
+   {
+    "ad": "Wikipedia, Stellar evolution",
+    "url": "https://en.wikipedia.org/wiki/Stellar_evolution"
+   },
+   {
+    "ad": "Wikipedia, White dwarf",
+    "url": "https://en.wikipedia.org/wiki/White_dwarf"
+   },
+   {
+    "ad": "Wikipedia, Chandrasekhar limit",
+    "url": "https://en.wikipedia.org/wiki/Chandrasekhar_limit"
+   },
+   {
+    "ad": "Wikipedia, Supernova",
+    "url": "https://en.wikipedia.org/wiki/Supernova"
+   },
+   {
+    "ad": "Wikipedia, Type II supernova",
+    "url": "https://en.wikipedia.org/wiki/Type_II_supernova"
+   },
+   {
+    "ad": "Wikipedia, Type Ia supernova",
+    "url": "https://en.wikipedia.org/wiki/Type_Ia_supernova"
+   },
+   {
+    "ad": "Wikipedia, Neutron star",
+    "url": "https://en.wikipedia.org/wiki/Neutron_star"
+   },
+   {
+    "ad": "Wikipedia, Tolman–Oppenheimer–Volkoff limit",
+    "url": "https://en.wikipedia.org/wiki/Tolman%E2%80%93Oppenheimer%E2%80%93Volkoff_limit"
+   },
+   {
+    "ad": "Wikipedia, Pulsar",
+    "url": "https://en.wikipedia.org/wiki/Pulsar"
+   },
+   {
+    "ad": "Wikipedia, Crab Pulsar",
+    "url": "https://en.wikipedia.org/wiki/Crab_Pulsar"
+   },
+   {
+    "ad": "Wikipedia, Escape velocity",
+    "url": "https://en.wikipedia.org/wiki/Escape_velocity"
+   },
+   {
+    "ad": "Wikipedia, Schwarzschild radius",
+    "url": "https://en.wikipedia.org/wiki/Schwarzschild_radius"
+   },
+   {
+    "ad": "Wikipedia, Spaghettification",
+    "url": "https://en.wikipedia.org/wiki/Spaghettification"
+   },
+   {
+    "ad": "Wikipedia, Error analysis for the Global Positioning System",
+    "url": "https://en.wikipedia.org/wiki/Error_analysis_for_the_Global_Positioning_System"
+   },
+   {
+    "ad": "Wikipedia, GW170817",
+    "url": "https://en.wikipedia.org/wiki/GW170817"
+   },
+   {
+    "ad": "Wikipedia, Kilonova",
+    "url": "https://en.wikipedia.org/wiki/Kilonova"
+   },
+   {
+    "ad": "NASA Imagine the Universe, White Dwarfs",
+    "url": "https://imagine.gsfc.nasa.gov/science/objects/dwarfs2.html"
+   },
+   {
+    "ad": "NASA Imagine the Universe, Neutron Stars",
+    "url": "https://imagine.gsfc.nasa.gov/science/objects/neutron_stars1.html"
+   },
+   {
+    "ad": "NASA Science, Black Hole Anatomy",
+    "url": "https://science.nasa.gov/universe/black-holes/anatomy/"
+   },
+   {
+    "ad": "NASA Science, Types of Black Holes",
+    "url": "https://science.nasa.gov/universe/black-holes/types/"
+   },
+   {
+    "ad": "NASA Science, What Happens When Something Gets Too Close to a Black Hole?",
+    "url": "https://science.nasa.gov/universe/black-holes/what-happens-when-something-gets-too-close-to-a-black-hole/"
+   },
+   {
+    "ad": "NASA Science, Stars",
+    "url": "https://science.nasa.gov/universe/stars/"
+   },
+   {
+    "ad": "ESO eso1733, Merging neutron stars scatter gold and platinum into space",
+    "url": "https://www.eso.org/public/news/eso1733/"
+   }
+  ]
+ },
+ {
+  "id": "d7",
+  "baslik": "Galaksiler",
+  "ozet": "Samanyolu, 100.000 ışık yılından geniş, çubuklu sarmal bir yıldız diskidir; Güneş merkezden yaklaşık 27.000 ışık yılı uzakta, merkezde ise 4,3 milyon Güneş kütleli bir kara delik vardır. Galaksilerin dönüş hızları, gördüğümüzden çok daha fazla, görünmeyen bir madde olduğunu söyler.",
+  "bolumler": [
+   {
+    "baslik": "Samanyolu'nun şekli ve boyutu",
+    "paragraflar": [
+     "Kendi galaksimizi haritalamak, bir şehrin haritasını meydanın ortasında durarak çıkarmaya benzer. 1785'te William Herschel gökyüzünün farklı bölgelerindeki yıldızları sayarak Samanyolu'nun biçimini çizdi ve Güneş Sistemi'ni merkezin yakınına koydu. 1918'de Harlow Shapley, küresel yıldız kümelerinden oluşan halenin Yay takımyıldızı yönündeki bir merkez çevresinde toplandığını gösterdi: Güneş merkezde değildi.",
+     "NASA'ya göre Samanyolu, yıldız diski 100.000 ışık yılından geniş bir sarmal galaksidir. Wikipedia'ya göre çubuklu sarmaldır; standart ölçüte (D25) göre çapı yaklaşık 87.400 ışık yılı, ince diskinin kalınlığı yaklaşık 700–1500 ışık yılı (220–450 parsek), yıldız sayısı 100 ile 400 milyar arasıdır. Merkezin çevresindeki yaklaşık 10.000 ışık yılında yıldızlar bir şişkinlik oluşturur ve çubuk buradan uzanır. Disk; yaşlı yıldızlardan, küresel kümelerden ve karanlık maddenin çoğundan oluşan küremsi bir hale ile sarılıdır."
+    ]
+   },
+   {
+    "baslik": "Güneş'in yeri ve galaktik yıl",
+    "paragraflar": [
+     "NASA'ya göre Dünya bir sarmal kol boyunca, merkezle kenar arasında yaklaşık yarı yoldadır; Güneş, Yay kolundan dışa doğru uzanan Orion Kolu'nda (Orion Spur) yer alır. Merkeze uzaklığın en hassas ölçümü GRAVITY ekibinden gelir: 2019'da R0 = 8178 parsek (yaklaşık 26.700 ışık yılı), ESO'nun 2021 duyurusunda 27.000 ışık yılı.",
+     "NASA'ya göre Güneş Sistemi saatte yaklaşık 720.000 km hızla (saniyede yaklaşık 200 km) galaksinin merkezi çevresinde döner. Bir tur, yani bir galaktik yıl, NASA'nın iki ayrı sayfasına göre yaklaşık 230 ve 240 milyon yıl sürer; Wikipedia 212 milyon yıl verir. Kaynaklar farklı yöntemler kullandığı için bunu 'yaklaşık 200–250 milyon yıl' diye akılda tutmak yeterli."
+    ]
+   },
+   {
+    "baslik": "Merkezdeki dev: Sgr A*",
+    "paragraflar": [
+     "Galaksinin merkezinde Yay A* (Sgr A*) adlı yoğun bir radyo kaynağı bulunur. Reinhard Genzel ve Andrea Ghez'in ekipleri, merkeze çok yakın yıldızların yörüngelerini 30 yıl boyunca ölçerek bu kütle ve yoğunluktaki bir cisim için en olası açıklamanın dev bir kara delik olduğu sonucuna vardı; bu çalışma 2020 Nobel Fizik Ödülü'nü paylaştı.",
+     "ESO'nun GRAVITY aygıtıyla yapılan en hassas ölçüm (2021): Sgr A*'nın kütlesi 4,30 milyon Güneş kütlesi, kesinlik yaklaşık yüzde 0,25; uzaklığı 27.000 ışık yılı. 2022'de Olay Ufku Teleskobu (EHT) bu kara deliğin ilk görüntüsünü yayımladı: parlak bir halkanın ortasında karanlık bir gölge. ESO'nun duyurusu kara deliği Güneş'ten dört milyon kat kütleli olarak tanımlar ve gökyüzündeki boyutunu Ay'ın üzerindeki bir simit kadar olarak betimler.",
+     "Rs = 2GM/c² formülüyle 4,30 milyon Güneş kütlesinin Schwarzschild yarıçapı yaklaşık 12,7 milyon km çıkar. Bu, Dünya ile Güneş arasındaki yaklaşık 150 milyon km'lik uzaklığın onda biri kadardır (bu derste yapılan hesap). Bu kadar küçük bir hacme 4 milyon Güneş kütlesi sığması, cismin kara delik olduğunun en güçlü işaretidir."
+    ]
+   },
+   {
+    "baslik": "Galaksi türleri: Hubble'ın ayar çatalı",
+    "paragraflar": [
+     "Edwin Hubble 1926'da galaksiler için bir sınıflama önerdi; diyagramın biçimi yüzünden buna ayar çatalı (diyapazon) diyagramı denir. Eliptik galaksiler E0'dan (neredeyse yuvarlak) E7'ye (çok basık) numaralanır. Sarmal galaksiler, kollarının ne kadar sıkı sarıldığına göre Sa (sıkı) ile Sc (gevşek) arasında harflendirilir; kollar sıkılaştıkça merkezdeki şişkinlik büyür. Merkezinden bir yıldız çubuğu geçen sarmallar adlarında B harfi taşır: SBa, SBb, SBc. Düzensiz ve cüce galaksiler bu çatala tam oturmaz. ESA/Hubble'a göre şema bugün biraz fazla basit sayılır ama temel fikirleri hâlâ geçerlidir.",
+     "NASA'ya göre Samanyolu da Andromeda da çubuklu sarmaldır ve çubuklu sarmallar sarmal galaksilerin üçte ikisini oluşturur. Andromeda en yakın büyük komşumuzdur ve 2,5 milyon ışık yılı uzaktadır; onu gördüğümüzde 2,5 milyon yıl önce yola çıkmış ışığa bakarız. İkisi de 50'den fazla galaksiden oluşan Yerel Grup'un üyesidir."
+    ]
+   },
+   {
+    "baslik": "Karanlık maddenin izi: dönme eğrileri",
+    "paragraflar": [
+     "Güneş Sistemi'nde dış gezegenler iç gezegenlerden yavaş döner, çünkü kütlenin neredeyse tamamı merkezdeki Güneş'tedir. Bir galakside de kütle görünen yıldızlar gibi merkezde toplanmış olsaydı, diskteki yıldızlar ve gaz merkezden uzaklaştıkça daha yavaş dönmeliydi.",
+     "Gözlemler bunu doğrulamaz. Sarmal galaksilerin dönme eğrileri düşmez, düzdür: merkezdeki şişkinliğin dışında dönüş hızı neredeyse sabit kalır. Vera Rubin ve Kent Ford 1970'lerde sarmal galaksilerdeki yıldızların çoğunun kabaca aynı hızla döndüğünü gösterdi; bu, kütlenin yıldızların bittiği yerden çok öteye kadar uzaklıkla birlikte arttığı anlamına gelir. Işık vermeyen bu ek kütleye karanlık madde denir. NASA'ya göre Rubin, bu yıldızların galaksiden kaçmadan bu kadar hızlı dönebilmesi için onları tutan büyük miktarda görünmeyen madde olması gerektiği sonucuna vardı.",
+     "Samanyolu'nun toplam kütlesine ilişkin tahminler yönteme göre değişir: Wikipedia, 0,58 trilyondan 1,15 trilyon Güneş kütlesine uzanan değerler aktarır. Aynı kaynağa göre kütlenin büyük kısmı karanlık maddedir ve modeller karanlık maddenin kütlesini 1–1,5 trilyon Güneş kütlesi olarak verir. Yani galaksinin kütlesinin büyük kısmı görmediğimiz bir şeydir."
+    ]
+   }
+  ],
+  "formuller": [
+   {
+    "ad": "Dairesel yörüngeden içerideki kütle",
+    "ifade": "M = v² × r / G",
+    "aciklama": "Newton'un kütleçekim yasasından, dairesel yörünge için. v = 200 km/s (NASA) ve r = 8178 pc (GRAVITY) ile Güneş'in yörüngesinin içinde yaklaşık 7,6×10^10 Güneş kütlesi çıkar (bu derste yapılan kaba hesap; galaksi küre gibi varsayılır)."
+   },
+   {
+    "ad": "Sgr A*'nın Schwarzschild yarıçapı",
+    "ifade": "Rs = 2GM/c² ≈ 2,95 km × 4,30×10^6 ≈ 1,27×10^7 km",
+    "aciklama": "Kütle ESO/GRAVITY 2021'den alınmıştır; hesap bu derste yapılmıştır."
+   }
+  ],
+  "anahtar_sayilar": [
+   {
+    "deger": ">100.000 ışık yılı",
+    "aciklama": "Samanyolu disk genişliği (NASA)",
+    "kaynak_url": "https://science.nasa.gov/universe/galaxies/"
+   },
+   {
+    "deger": "87.400 ± 3600 ışık yılı (D25); ince disk 718–1470 ışık yılı; 100–400 milyar yıldız",
+    "aciklama": "Samanyolu'nun çapı, ince disk kalınlığı ve yıldız sayısı (Wikipedia)",
+    "kaynak_url": "https://en.wikipedia.org/wiki/Milky_Way"
+   },
+   {
+    "deger": "1785; 1918",
+    "aciklama": "Herschel'in yıldız sayımı ve Shapley'in küresel küme çalışması",
+    "kaynak_url": "https://en.wikipedia.org/wiki/Galactic_Center"
+   },
+   {
+    "deger": "R0 = 8178 ± 13 (istat.) ± 22 (sist.) parsek",
+    "aciklama": "Güneş'in galaktik merkeze uzaklığı (GRAVITY 2019)",
+    "kaynak_url": "https://arxiv.org/abs/1904.05721"
+   },
+   {
+    "deger": "4,30 milyon M☉; 27.000 ışık yılı",
+    "aciklama": "Sgr A*'nın kütlesi ve uzaklığı (ESO/GRAVITY 2021)",
+    "kaynak_url": "https://www.eso.org/public/news/eso2119/"
+   },
+   {
+    "deger": "4,30×10^6 M☉, ±%0,25",
+    "aciklama": "Sgr A* kütlesi, hakemli makalenin özeti",
+    "kaynak_url": "https://arxiv.org/abs/2112.07478"
+   },
+   {
+    "deger": "720.000 km/saat; ~230 milyon yıl",
+    "aciklama": "Güneş Sistemi'nin galaktik yörünge hızı ve bir tur süresi (NASA)",
+    "kaynak_url": "https://science.nasa.gov/sun/facts/"
+   },
+   {
+    "deger": "2,5 milyon ışık yılı",
+    "aciklama": "Andromeda Galaksisi'nin uzaklığı (NASA)",
+    "kaynak_url": "https://science.nasa.gov/photojournal/our-neighbor-andromeda/"
+   },
+   {
+    "deger": "1926; E0–E7; Sa–Sc; SBa–SBc",
+    "aciklama": "Hubble sınıflaması",
+    "kaynak_url": "https://esahubble.org/images/heic9902o/"
+   },
+   {
+    "deger": "1975 (AAS toplantısı)",
+    "aciklama": "Rubin ve Ford'un düz dönme eğrilerini duyurduğu yıl",
+    "kaynak_url": "https://en.wikipedia.org/wiki/Galaxy_rotation_curve"
+   },
+   {
+    "deger": "5,8×10^11 – 1,15×10^12 M☉ (toplam); 1–1,5×10^12 M☉ (karanlık madde modelleri)",
+    "aciklama": "Samanyolu kütlesi tahminleri (Wikipedia)",
+    "kaynak_url": "https://en.wikipedia.org/wiki/Milky_Way"
+   }
+  ],
+  "defter_notu": [
+   "Samanyolu: çubuklu sarmal; disk >100.000 ışık yılı (NASA); 100–400 milyar yıldız.",
+   "Güneş: merkeze ~27.000 ışık yılı (GRAVITY: 8178 pc), Orion Kolu'nda, ~200 km/s, bir tur ~230 milyon yıl.",
+   "Sgr A*: 4,30 milyon M☉ (ESO/GRAVITY 2021); EHT ilk görüntü 2022; 2020 Nobel.",
+   "Hubble ayar çatalı (1926): E0–E7 eliptik, Sa–Sc sarmal, SBa–SBc çubuklu sarmal, düzensiz.",
+   "Andromeda: en yakın büyük komşu, 2,5 milyon ışık yılı; Yerel Grup >50 galaksi.",
+   "Düz dönme eğrisi → görünmeyen kütle = karanlık madde (Rubin ve Ford, 1970'ler).",
+   "Samanyolu'nun kütlesinin büyük kısmı karanlık madde (modellere göre 1–1,5 trilyon M☉)."
+  ],
+  "sorular": [
+   {
+    "soru": "Shapley, Güneş'in galaksinin merkezinde olmadığını nasıl anladı?",
+    "cevap": "Küresel yıldız kümelerinin dağılımını inceledi ve kümelerin Güneş'in değil, Yay takımyıldızı yönündeki uzak bir noktanın çevresinde toplandığını gördü."
+   },
+   {
+    "soru": "Galaksinin dış kısmındaki yıldızlar ve gaz beklenenden hızlı dönüyorsa bu neden karanlık maddeye işaret eder?",
+    "cevap": "Kütle görünen yıldızlarla birlikte bitseydi uzaktaki madde daha yavaş dönmeliydi. Hızın sabit kalması, yörüngelerin içinde uzaklıkla artan görünmeyen bir kütle olduğunu gösterir."
+   },
+   {
+    "soru": "SBc sınıfı bir galaksi nasıl görünür?",
+    "cevap": "Merkezinden bir yıldız çubuğu geçen, kolları gevşek sarılmış ve şişkinliği görece küçük bir sarmal galaksidir."
+   }
+  ],
+  "kaynaklar": [
+   {
+    "ad": "Wikipedia, Milky Way",
+    "url": "https://en.wikipedia.org/wiki/Milky_Way"
+   },
+   {
+    "ad": "Wikipedia, Galactic Center",
+    "url": "https://en.wikipedia.org/wiki/Galactic_Center"
+   },
+   {
+    "ad": "Wikipedia, Galaxy rotation curve",
+    "url": "https://en.wikipedia.org/wiki/Galaxy_rotation_curve"
+   },
+   {
+    "ad": "Wikipedia, Hubble sequence",
+    "url": "https://en.wikipedia.org/wiki/Hubble_sequence"
+   },
+   {
+    "ad": "ESO eso2119 (2021), GRAVITY: Sgr A* kütlesi ve uzaklığı",
+    "url": "https://www.eso.org/public/news/eso2119/"
+   },
+   {
+    "ad": "GRAVITY Collaboration 2022, A&A, arXiv:2112.07478",
+    "url": "https://arxiv.org/abs/2112.07478"
+   },
+   {
+    "ad": "GRAVITY Collaboration 2019, A&A, arXiv:1904.05721",
+    "url": "https://arxiv.org/abs/1904.05721"
+   },
+   {
+    "ad": "ESO eso2208-eht-mw (2022), EHT Sgr A* görüntüsü",
+    "url": "https://www.eso.org/public/news/eso2208-eht-mw/"
+   },
+   {
+    "ad": "Nobel Fizik Ödülü 2020 basın bülteni",
+    "url": "https://www.nobelprize.org/prizes/physics/2020/press-release/"
+   },
+   {
+    "ad": "ESA/Hubble, The Hubble tuning fork",
+    "url": "https://esahubble.org/images/heic9902o/"
+   },
+   {
+    "ad": "NASA Science, Galaxies",
+    "url": "https://science.nasa.gov/universe/galaxies/"
+   },
+   {
+    "ad": "NASA Science, Types of Galaxies",
+    "url": "https://science.nasa.gov/universe/galaxies/types/"
+   },
+   {
+    "ad": "NASA Science, Our Neighbor Andromeda",
+    "url": "https://science.nasa.gov/photojournal/our-neighbor-andromeda/"
+   },
+   {
+    "ad": "NASA Science, Dark Matter & Dark Energy",
+    "url": "https://science.nasa.gov/universe/dark-matter-dark-energy/"
+   },
+   {
+    "ad": "NASA Science, Sun: Facts",
+    "url": "https://science.nasa.gov/sun/facts/"
+   }
+  ]
+ },
+ {
+  "id": "d8",
+  "baslik": "Evrenin tarihi",
+  "ozet": "Galaksiler uzaklıklarıyla orantılı hızla bizden uzaklaşıyor; bu genişlemeyi geri sarınca 13,8 milyar yıl önceki sıcak ve yoğun bir başlangıca varırız. O başlangıcın ışığı bugün 2,7 K'lik mikrodalga ışıması olarak her yönden gelir; evrenin yalnızca yaklaşık yüzde 5'i bildiğimiz maddedir.",
+  "bolumler": [
+   {
+    "baslik": "Hubble-Lemaître yasası",
+    "paragraflar": [
+     "Uzak galaksilerin ışığı kırmızıya kaymıştır, yani bizden uzaklaşıyorlar. Asıl şaşırtıcı olan düzendir: bir galaksi ne kadar uzaksa o kadar hızlı uzaklaşır ve hız uzaklıkla doğru orantılıdır: v = H0 × d. Orantı sabiti H0'a Hubble sabiti denir.",
+     "Bu ilişkiyi ilk yayımlayan, Hubble'dan iki yıl önce, 1927'de Belçikalı Georges Lemaître oldu; makalesi Fransızca ve az okunan bir dergideydi. Edwin Hubble'ın 1929 tarihli çalışması ilişkinin gözlemsel temeli olarak tanındı. Uluslararası Astronomi Birliği (IAU) 2018'de üyelerine elektronik oylama yaptırdı; yasanın Hubble-Lemaître yasası olarak anılması önerisi yüzde 78 oyla kabul edildi.",
+     "Planck uydusunun 2018 sonuçlarına göre H0 = 67,4 ± 0,5 km/s/Mpc. Anlamı: bir galaksi bizden her megaparsek (yaklaşık 3,26 milyon ışık yılı) daha uzakta olduğunda saniyede yaklaşık 67 km daha hızlı uzaklaşır."
+    ]
+   },
+   {
+    "baslik": "Genişleme ne demek?",
+    "paragraflar": [
+     "Mayası fazla kaçmış üzümlü bir kek düşün. Kek kabarırken her üzüm diğerlerinden uzaklaşır; uzaktaki üzümler daha hızlı uzaklaşıyor gibi görünür ve hangi üzümden bakarsan bak aynı manzarayı görürsün. Üzümler hamurun içinde koşmaz; aralarındaki hamur genişler. Benzetmenin sınırı şu: kekin bir dışı vardır, evrenin yoktur. Wikipedia'nın ifadesiyle genişleme evrenin bir şeyin içine doğru büyümesi değildir; Büyük Patlama da tek bir noktanın çevresine doğru patlaması değildir, genişleme her yerde olur.",
+     "Genişleyen, kütleçekimiyle birbirine bağlı olmayan yapılar arasındaki uzaklıklardır. Birbirine çekimle bağlı en yakın galaksiler bu genel uzaklaşmaya katılmaz. Işık genişleyen uzayda yol alırken dalga boyu da esner; uzak galaksilerin ışığındaki kırmızıya kayma budur.",
+     "Genişleme hep aynı hızda sürmüş olsaydı evrenin yaşı 1/H0 olurdu; buna Hubble zamanı denir. H0 = 67,4 km/s/Mpc için bu yaklaşık 14,5 milyar yıl eder (bu derste yapılan birim dönüşümü). Wikipedia'ya göre gerçek yaş (13,8 milyar yıl) bundan biraz farklıdır, çünkü genişleme hızı zaman içinde evrenin içeriğine bağlı olarak değişmiştir."
+    ]
+   },
+   {
+    "baslik": "Büyük Patlama: sıcak ve yoğun bir başlangıç",
+    "paragraflar": [
+     "Filmi geriye sarınca her şey birbirine daha yakın, daha sıcak ve daha yoğun olur. Evrenin ilk yaklaşık 20 dakikasında hafif çekirdekler oluştu (Büyük Patlama çekirdek sentezi): döteryum, helyum-3, helyum-4 ve biraz lityum-7. Sonra sıcaklık ve yoğunluk füzyona yetmeyecek kadar düştü; bu yüzden evrenin maddesi ağırlıkça çoğunlukla hidrojen ve helyumdur. Planck analizinde kullanılan helyum kütle oranı yaklaşık 0,245, yani sıradan maddenin dörtte biri kadardır.",
+     "Planck 2018 sonuçlarına göre evrenin yaşı 13,797 ± 0,023 milyar yıldır (temel analiz); baryon akustik salınım ölçümleri eklendiğinde 13,787 ± 0,020 milyar yıl çıkar. Yuvarlak sayı: 13,8 milyar yıl."
+    ]
+   },
+   {
+    "baslik": "Kozmik mikrodalga arka plan ışıması",
+    "paragraflar": [
+     "Erken evren sıcak bir plazmaydı; serbest elektronlar ışığı sürekli saçtığı için evren bir sis gibi saydam değildi. Sıcaklık yaklaşık 3000 K'e düşünce elektronlar ve protonlar birleşip nötr hidrojen atomları oluşturdu ve evren ışığa saydam hale geldi. Wikipedia bu anı (rekombinasyon) Büyük Patlama'dan yaklaşık 378.000 yıl sonraya ve 1100 kırmızıya kaymaya koyar; ESA yaklaşık 380.000 yıl der. O anda salınan ışık hâlâ her yönden bize ulaşıyor.",
+     "Evren o zamandan beri yaklaşık 1090 kat genişledi (Planck: z* ≈ 1090) ve bu ışığın dalga boyu da aynı oranda esneyerek mikrodalgaya kaydı. Sıcaklık genişlemeyle ters orantılı düştüğü için 3000 K / 1090 ≈ 2,75 K beklenir. Ölçülen değer: 2,72548 ± 0,00057 K (Fixsen 2009).",
+     "Bu ışımayı 1964–65'te Arno Penzias ile Robert Wilson, New Jersey'deki bir radyo anteninde açıklayamadıkları bir fazlalık olarak buldu; yaklaşık 3 K ölçtüler. Robert Dicke ve Princeton'daki ekibi bunu Büyük Patlama'nın izi olarak yorumladı. Penzias ve Wilson 1978 Nobel Fizik Ödülü'nün yarısını paylaştı. NASA'nın 1989'da fırlattığı COBE uydusu ışımanın tayfını ayrıntılı ölçtü."
+    ]
+   },
+   {
+    "baslik": "Hızlanan genişleme ve karanlık enerji",
+    "paragraflar": [
+     "Beklenti açıktı: galaksiler birbirini çektiği için genişleme zamanla yavaşlamalıydı. 1998'de Saul Perlmutter'ın ve Brian Schmidt ile Adam Riess'in ekipleri uzak Tip Ia süpernovaları ölçtü. 50'den fazla uzak süpernovanın ışığı beklenenden sönüktü; bu, genişlemenin hızlandığının işaretiydi. Keşif 2011 Nobel Fizik Ödülü'nü aldı.",
+     "Hızlanmayı süren şeye karanlık enerji adı verildi. Nobel Komitesi'nin basın bülteni, karanlık enerjinin ne olduğunun bir bilmece olarak kaldığını ve evrenin yaklaşık dörtte üçünü oluşturduğunu yazar."
+    ]
+   },
+   {
+    "baslik": "Evren neden yapılmış?",
+    "paragraflar": [
+     "Planck 2018 temel analizinin değerleri (Ωb h² = 0,02237, Ωc h² = 0,1200, ΩΛ = 0,6847, H0 = 67,36) kullanılarak hesaplanınca bileşim şöyle çıkar: sıradan madde (atomlar) yaklaşık yüzde 4,9, karanlık madde yaklaşık yüzde 26,4, karanlık enerji yaklaşık yüzde 68,5. NASA yuvarlak olarak yüzde 5, 27 ve 68 kullanır; ESA'nın 2013 Planck duyurusu sıradan madde için yüzde 4,9, karanlık madde için yüzde 26,8 vermişti.",
+     "Yani yıldızlar, gezegenler, gaz bulutları ve biz, evrenin içeriğinin yaklaşık yirmide biriyiz. Geri kalanın yaklaşık dörtte birini yalnızca kütleçekiminden tanıdığımız karanlık madde, kalanını ise genişlemeyi hızlandıran karanlık enerji oluşturur."
+    ]
+   }
+  ],
+  "formuller": [
+   {
+    "ad": "Hubble-Lemaître yasası",
+    "ifade": "v = H0 × d",
+    "aciklama": "v uzaklaşma hızı (km/s), d uzaklık (Mpc), H0 Hubble sabiti. Planck 2018: H0 = 67,4 ± 0,5 km/s/Mpc."
+   },
+   {
+    "ad": "Hubble zamanı",
+    "ifade": "tH = 1/H0 ≈ 977,8 / H0 milyar yıl (H0 km/s/Mpc cinsinden)",
+    "aciklama": "Genişleme sabit hızlı olsaydı evrenin yaşı. H0 = 67,4 için ≈ 14,5 milyar yıl (birim dönüşümü bu derste yapılmıştır). Gerçek yaş 13,8 milyar yıl."
+   },
+   {
+    "ad": "Arka plan ışımasının sıcaklığı ile kırmızıya kayma",
+    "ifade": "T(z) = T0 × (1 + z)",
+    "aciklama": "Wikipedia: Tr = 2,725 K × (1 + z). Ters yönde: T0 = T(z)/(1 + z); 3000 K / 1090 ≈ 2,75 K."
+   }
+  ],
+  "anahtar_sayilar": [
+   {
+    "deger": "H0 = 67,4 ± 0,5 km/s/Mpc",
+    "aciklama": "Hubble sabiti (Planck 2018, özet)",
+    "kaynak_url": "https://arxiv.org/abs/1807.06209"
+   },
+   {
+    "deger": "13,797 ± 0,023 milyar yıl (temel); 13,787 ± 0,020 (+BAO)",
+    "aciklama": "Evrenin yaşı (Planck 2018, Tablo 2)",
+    "kaynak_url": "https://arxiv.org/pdf/1807.06209v4"
+   },
+   {
+    "deger": "2,72548 ± 0,00057 K",
+    "aciklama": "Kozmik mikrodalga arka plan ışımasının sıcaklığı",
+    "kaynak_url": "https://arxiv.org/abs/0911.1955"
+   },
+   {
+    "deger": "380.000 yıl",
+    "aciklama": "Arka plan ışımasının salındığı andaki evren yaşı (ESA)",
+    "kaynak_url": "https://www.esa.int/Science_Exploration/Space_Science/Planck/Planck_reveals_an_almost_perfect_Universe"
+   },
+   {
+    "deger": "~378.000 yıl; z = 1100; ~3000 K",
+    "aciklama": "Rekombinasyon anı ve sıcaklığı (Wikipedia)",
+    "kaynak_url": "https://en.wikipedia.org/wiki/Recombination_(cosmology)"
+   },
+   {
+    "deger": "z* ≈ 1090 (1089,92 ± 0,25)",
+    "aciklama": "Son saçılma yüzeyinin kırmızıya kayması (Planck 2018, Tablo 2)",
+    "kaynak_url": "https://arxiv.org/pdf/1807.06209v4"
+   },
+   {
+    "deger": "~20 dakika",
+    "aciklama": "Büyük Patlama çekirdek sentezinin süresi",
+    "kaynak_url": "https://en.wikipedia.org/wiki/Big_Bang_nucleosynthesis"
+   },
+   {
+    "deger": "%78",
+    "aciklama": "IAU 2018 oylamasında Hubble-Lemaître adına evet oyu oranı",
+    "kaynak_url": "https://iau.org/news/pressreleases/detail/iau1812"
+   },
+   {
+    "deger": "1964–65; 1978",
+    "aciklama": "Penzias ve Wilson'ın ölçümü; Nobel ödülü",
+    "kaynak_url": "https://www.nobelprize.org/prizes/physics/1978/summary/"
+   },
+   {
+    "deger": "Ωb h² = 0,02237; Ωc h² = 0,1200; ΩΛ = 0,6847",
+    "aciklama": "Planck 2018 temel analiz değerleri (Tablo 2); bileşim yüzdeleri bunlardan hesaplandı: ~%4,9 / ~%26,4 / ~%68,5",
+    "kaynak_url": "https://arxiv.org/pdf/1807.06209v4"
+   },
+   {
+    "deger": "%5 / %27 / %68",
+    "aciklama": "Evrenin bileşimi (NASA, yuvarlak)",
+    "kaynak_url": "https://science.nasa.gov/universe/dark-matter-dark-energy/"
+   },
+   {
+    "deger": "1998; 2011",
+    "aciklama": "Hızlanan genişlemenin keşfi ve Nobel ödülü",
+    "kaynak_url": "https://www.nobelprize.org/prizes/physics/2011/press-release/"
+   },
+   {
+    "deger": "YP ≈ 0,2454",
+    "aciklama": "Büyük Patlama'da oluşan helyumun kütle oranı (Planck 2018 Tablo 2 açıklaması)",
+    "kaynak_url": "https://arxiv.org/pdf/1807.06209v4"
+   }
+  ],
+  "defter_notu": [
+   "Hubble-Lemaître yasası: v = H0 × d. Lemaître 1927, Hubble 1929, IAU adı 2018 (%78).",
+   "H0 = 67,4 ± 0,5 km/s/Mpc (Planck 2018).",
+   "Genişleme = çekimle bağlı olmayan yapılar arasındaki uzaklığın artması; merkezi yok, her yerde.",
+   "Evrenin yaşı ≈ 13,8 milyar yıl (Planck 2018: 13,797 ± 0,023).",
+   "İlk ~20 dakika: hafif çekirdekler (helyum ≈ kütlece %25).",
+   "~380.000 yaşında, ~3000 K'de evren saydamlaştı → bugün 2,725 K'lik mikrodalga ışıması.",
+   "1998: genişleme hızlanıyor (uzak Tip Ia süpernovalar), 2011 Nobel → karanlık enerji.",
+   "Bileşim: ~%5 sıradan madde, ~%26–27 karanlık madde, ~%68–69 karanlık enerji."
+  ],
+  "sorular": [
+   {
+    "soru": "Uzak bir galaksi 100 Mpc uzaklıktaysa Hubble-Lemaître yasasına göre yaklaşık ne hızla uzaklaşır?",
+    "cevap": "v = 67,4 × 100 ≈ 6740 km/s."
+   },
+   {
+    "soru": "Arka plan ışıması yaklaşık 3000 K'lik bir gazdan salındığı halde bugün neden 2,7 K ölçülüyor?",
+    "cevap": "Evren o zamandan beri yaklaşık 1090 kat genişledi; ışığın dalga boyu aynı oranda esnedi ve sıcaklığı aynı oranda düştü: 3000/1090 ≈ 2,75 K."
+   },
+   {
+    "soru": "1998'deki gözlemlerde uzak Tip Ia süpernovaların beklenenden sönük olması neden hızlanan genişleme anlamına geliyordu?",
+    "cevap": "Tip Ia'ların tepe parlaklıkları birbirine çok yakındır (standart mum). Beklenenden sönük görünmeleri, yavaşlayan bir evrende olacağından daha uzakta olduklarını gösterdi; bu da genişlemenin hızlandığı anlamına gelir."
+   }
+  ],
+  "kaynaklar": [
+   {
+    "ad": "Planck Collaboration 2018, Planck 2018 results VI. Cosmological parameters, arXiv:1807.06209",
+    "url": "https://arxiv.org/abs/1807.06209"
+   },
+   {
+    "ad": "Planck 2018 VI tam metin (Tablo 2)",
+    "url": "https://arxiv.org/pdf/1807.06209v4"
+   },
+   {
+    "ad": "Fixsen 2009, The Temperature of the Cosmic Microwave Background, arXiv:0911.1955",
+    "url": "https://arxiv.org/abs/0911.1955"
+   },
+   {
+    "ad": "IAU iau1812 basın bülteni (2018)",
+    "url": "https://iau.org/news/pressreleases/detail/iau1812"
+   },
+   {
+    "ad": "Nobel Fizik Ödülü 2011 basın bülteni",
+    "url": "https://www.nobelprize.org/prizes/physics/2011/press-release/"
+   },
+   {
+    "ad": "Nobel Fizik Ödülü 1978 özeti",
+    "url": "https://www.nobelprize.org/prizes/physics/1978/summary/"
+   },
+   {
+    "ad": "ESA, Planck reveals an almost perfect Universe",
+    "url": "https://www.esa.int/Science_Exploration/Space_Science/Planck/Planck_reveals_an_almost_perfect_Universe"
+   },
+   {
+    "ad": "NASA Science, Dark Matter & Dark Energy",
+    "url": "https://science.nasa.gov/universe/dark-matter-dark-energy/"
+   },
+   {
+    "ad": "Wikipedia, Hubble's law",
+    "url": "https://en.wikipedia.org/wiki/Hubble%27s_law"
+   },
+   {
+    "ad": "Wikipedia, Expansion of the universe",
+    "url": "https://en.wikipedia.org/wiki/Expansion_of_the_universe"
+   },
+   {
+    "ad": "Wikipedia, Big Bang",
+    "url": "https://en.wikipedia.org/wiki/Big_Bang"
+   },
+   {
+    "ad": "Wikipedia, Big Bang nucleosynthesis",
+    "url": "https://en.wikipedia.org/wiki/Big_Bang_nucleosynthesis"
+   },
+   {
+    "ad": "Wikipedia, Recombination (cosmology)",
+    "url": "https://en.wikipedia.org/wiki/Recombination_(cosmology)"
+   },
+   {
+    "ad": "Wikipedia, Cosmic microwave background",
+    "url": "https://en.wikipedia.org/wiki/Cosmic_microwave_background"
+   },
+   {
+    "ad": "Wikipedia, Cosmic Background Explorer",
+    "url": "https://en.wikipedia.org/wiki/Cosmic_Background_Explorer"
+   }
+  ]
+ }
+]

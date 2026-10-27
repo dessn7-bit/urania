@@ -1,0 +1,1264 @@
+{
+ "meta": {
+  "aciklama": "88 IAU takımyıldızı: IAU 3 harfli kısaltma -> Türkçe ad. Birincil kaynak Türkçe Vikipedi \"Modern takımyıldızlar listesi\" (revizyon 38320247, 2026-10-27 indirildi). Çapraz kontrol: Stellarium tr.po (IAU skyculture çevirileri) ve d3-celestial constellations.json \"tr\" alanı (README'ye göre Vikipedi'den, eski bir kopya — bağımsız sayılmaz).",
+  "kaynaklar": [
+   {
+    "ad": "Türkçe Vikipedi – Modern takımyıldızlar listesi",
+    "url": "https://tr.wikipedia.org/wiki/Modern_tak%C4%B1my%C4%B1ld%C4%B1zlar_listesi",
+    "revizyon": 38320247
+   },
+   {
+    "ad": "Stellarium po/stellarium-skycultures/tr.po (master)",
+    "url": "https://raw.githubusercontent.com/Stellarium/stellarium/master/po/stellarium-skycultures/tr.po"
+   },
+   {
+    "ad": "d3-celestial data/constellations.json",
+    "url": "https://github.com/ofrohn/d3-celestial/blob/master/data/constellations.json"
+   }
+  ],
+  "not": "Resmî (TÜBİTAK, Türk Astronomi Derneği) tam 88'lik Türkçe liste bulamadım; aranan TÜBİTAK TUG PDF bağlantısı PDF yerine HTML döndü, Ankara Üniv. ders notunda tam liste yok. Bu yüzden ad standardı Vikipedi'ye dayanıyor.",
+  "farkli_adlar": [
+   {
+    "kisaltma": "Ara",
+    "wikipedia": "Sunak",
+    "stellarium": "Ara",
+    "d3_celestial": "Sunak"
+   },
+   {
+    "kisaltma": "Boo",
+    "wikipedia": "Çoban",
+    "stellarium": null,
+    "d3_celestial": "Çoban"
+   },
+   {
+    "kisaltma": "Cas",
+    "wikipedia": "Kraliçe",
+    "stellarium": "Kraliçe",
+    "d3_celestial": "Koltuk"
+   },
+   {
+    "kisaltma": "Cet",
+    "wikipedia": "Balina",
+    "stellarium": null,
+    "d3_celestial": "Balina"
+   },
+   {
+    "kisaltma": "Cru",
+    "wikipedia": "Güneyhaçı",
+    "stellarium": "Güney Haçı",
+    "d3_celestial": "Haç"
+   },
+   {
+    "kisaltma": "Hya",
+    "wikipedia": "Suyılanı",
+    "stellarium": null,
+    "d3_celestial": "Suyılanı"
+   },
+   {
+    "kisaltma": "Hyi",
+    "wikipedia": "Küçüksuyılanı",
+    "stellarium": null,
+    "d3_celestial": "Küçük suyılanı"
+   },
+   {
+    "kisaltma": "Ind",
+    "wikipedia": "Indus",
+    "stellarium": "Kızılderili",
+    "d3_celestial": "Hintli"
+   },
+   {
+    "kisaltma": "Oct",
+    "wikipedia": "Sekizlik",
+    "stellarium": "Oktant",
+    "d3_celestial": "Sekizlik"
+   },
+   {
+    "kisaltma": "Ori",
+    "wikipedia": "Avcı",
+    "stellarium": null,
+    "d3_celestial": "Avcı"
+   },
+   {
+    "kisaltma": "Pav",
+    "wikipedia": "Tavus",
+    "stellarium": "Tavus Kuşu",
+    "d3_celestial": "Tavus"
+   },
+   {
+    "kisaltma": "Peg",
+    "wikipedia": "Kanatlıat",
+    "stellarium": null,
+    "d3_celestial": "Kanatlıat"
+   },
+   {
+    "kisaltma": "Per",
+    "wikipedia": "Kahraman",
+    "stellarium": null,
+    "d3_celestial": "Kahraman"
+   },
+   {
+    "kisaltma": "Phe",
+    "wikipedia": "Anka",
+    "stellarium": "Anka Kuşu",
+    "d3_celestial": "Anka"
+   },
+   {
+    "kisaltma": "Psc",
+    "wikipedia": "Balıklar",
+    "stellarium": "Balık",
+    "d3_celestial": "Balık"
+   },
+   {
+    "kisaltma": "Pyx",
+    "wikipedia": "Kumpas",
+    "stellarium": "Pusula",
+    "d3_celestial": "Kumpas"
+   },
+   {
+    "kisaltma": "Ret",
+    "wikipedia": "Ağcık",
+    "stellarium": "Ağ",
+    "d3_celestial": "Ağcık"
+   },
+   {
+    "kisaltma": "Sge",
+    "wikipedia": "Okçuk",
+    "stellarium": "Ok",
+    "d3_celestial": "Okçuk"
+   },
+   {
+    "kisaltma": "Scl",
+    "wikipedia": "Heykeltıraş",
+    "stellarium": "Heykeltraş",
+    "d3_celestial": "Heykeltraş"
+   },
+   {
+    "kisaltma": "Sex",
+    "wikipedia": "Altılık",
+    "stellarium": "Sekstant",
+    "d3_celestial": "Altılık"
+   },
+   {
+    "kisaltma": "Tel",
+    "wikipedia": "Dürbün",
+    "stellarium": "Teleskop",
+    "d3_celestial": "Dürbün"
+   },
+   {
+    "kisaltma": "Vul",
+    "wikipedia": "Tilkicik",
+    "stellarium": "Tilki",
+    "d3_celestial": "Tilkicik"
+   }
+  ]
+ },
+ "takimyildizlar": {
+  "And": {
+   "tr": "Andromeda",
+   "latince": "Andromeda",
+   "genitif": "Andromedae",
+   "stellarium_tr": "Andromeda",
+   "d3_celestial_tr": "Andromeda",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Ant": {
+   "tr": "Pompa",
+   "latince": "Antlia",
+   "genitif": "Antliae",
+   "stellarium_tr": "Pompa",
+   "d3_celestial_tr": "Pompa",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Aps": {
+   "tr": "Cennetkuşu",
+   "latince": "Apus",
+   "genitif": "Apodis",
+   "stellarium_tr": "Cennet Kuşu",
+   "d3_celestial_tr": "Cennetkuşu",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Aqr": {
+   "tr": "Kova",
+   "latince": "Aquarius",
+   "genitif": "Aquarii",
+   "stellarium_tr": "Kova",
+   "d3_celestial_tr": "Kova",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Aql": {
+   "tr": "Kartal",
+   "latince": "Aquila",
+   "genitif": "Aquilae",
+   "stellarium_tr": "Kartal",
+   "d3_celestial_tr": "Kartal",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Ara": {
+   "tr": "Sunak",
+   "latince": "Ara",
+   "genitif": "Arae",
+   "stellarium_tr": "Ara",
+   "d3_celestial_tr": "Sunak",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "d3_celestial"
+   ]
+  },
+  "Ari": {
+   "tr": "Koç",
+   "latince": "Aries",
+   "genitif": "Arietis",
+   "stellarium_tr": "Koç",
+   "d3_celestial_tr": "Koç",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Aur": {
+   "tr": "Arabacı",
+   "latince": "Auriga",
+   "genitif": "Aurigae",
+   "stellarium_tr": "Arabacı",
+   "d3_celestial_tr": "Arabacı",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Boo": {
+   "tr": "Çoban",
+   "latince": "Boötes",
+   "genitif": "Boötis",
+   "stellarium_tr": null,
+   "d3_celestial_tr": "Çoban",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "d3_celestial"
+   ]
+  },
+  "Cae": {
+   "tr": "Çelikkalem",
+   "latince": "Caelum",
+   "genitif": "Caeli",
+   "stellarium_tr": "Çelikkalem",
+   "d3_celestial_tr": "Çelikkalem",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Cam": {
+   "tr": "Zürafa",
+   "latince": "Camelopardalis",
+   "genitif": "Camelopardalis",
+   "stellarium_tr": "Zürafa",
+   "d3_celestial_tr": "Zürafa",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Cnc": {
+   "tr": "Yengeç",
+   "latince": "Cancer",
+   "genitif": "Cancri",
+   "stellarium_tr": "Yengeç",
+   "d3_celestial_tr": "Yengeç",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "CVn": {
+   "tr": "Av Köpekleri",
+   "latince": "Canes Venatici",
+   "genitif": "Canum Venaticorum",
+   "stellarium_tr": "Av Köpekleri",
+   "d3_celestial_tr": "Av Köpekleri",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "CMa": {
+   "tr": "Büyük Köpek",
+   "latince": "Canis Major",
+   "genitif": "Canis Majoris",
+   "stellarium_tr": "Büyük Köpek",
+   "d3_celestial_tr": "Büyük Köpek",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "CMi": {
+   "tr": "Küçük Köpek",
+   "latince": "Canis Minor",
+   "genitif": "Canis Minoris",
+   "stellarium_tr": "Küçük Köpek",
+   "d3_celestial_tr": "Küçük Köpek",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Cap": {
+   "tr": "Oğlak",
+   "latince": "Capricornus",
+   "genitif": "Capricorni",
+   "stellarium_tr": "Oğlak",
+   "d3_celestial_tr": "Oğlak",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Car": {
+   "tr": "Karina",
+   "latince": "Carina",
+   "genitif": "Carinae",
+   "stellarium_tr": "Karina",
+   "d3_celestial_tr": "Karina",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Cas": {
+   "tr": "Kraliçe",
+   "latince": "Cassiopeia",
+   "genitif": "Cassiopeiae",
+   "stellarium_tr": "Kraliçe",
+   "d3_celestial_tr": "Koltuk",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium"
+   ]
+  },
+  "Cen": {
+   "tr": "Erboğa",
+   "latince": "Centaurus",
+   "genitif": "Centauri",
+   "stellarium_tr": "Erboğa",
+   "d3_celestial_tr": "Erboğa",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Cep": {
+   "tr": "Kral",
+   "latince": "Cepheus",
+   "genitif": "Cephei",
+   "stellarium_tr": "Kral",
+   "d3_celestial_tr": "Kral",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Cet": {
+   "tr": "Balina",
+   "latince": "Cetus",
+   "genitif": "Ceti",
+   "stellarium_tr": null,
+   "d3_celestial_tr": "Balina",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "d3_celestial"
+   ]
+  },
+  "Cha": {
+   "tr": "Bukalemun",
+   "latince": "Chamaeleon",
+   "genitif": "Chamaeleontis",
+   "stellarium_tr": "Bukalemun",
+   "d3_celestial_tr": "Bukalemun",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Cir": {
+   "tr": "Pergel",
+   "latince": "Circinus",
+   "genitif": "Circini",
+   "stellarium_tr": "Pergel",
+   "d3_celestial_tr": "Pergel",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Col": {
+   "tr": "Güvercin",
+   "latince": "Columba",
+   "genitif": "Columbae",
+   "stellarium_tr": "Güvercin",
+   "d3_celestial_tr": "Güvercin",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Com": {
+   "tr": "Berenis'in Saçı",
+   "latince": "Coma Berenices",
+   "genitif": "Comae Berenices",
+   "stellarium_tr": "Berenis'in Saçı",
+   "d3_celestial_tr": "Berenis'in Saçı",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "CrA": {
+   "tr": "Güneytacı",
+   "latince": "Corona Australis",
+   "genitif": "Coronae Australis",
+   "stellarium_tr": "Güney Tacı",
+   "d3_celestial_tr": "Güneytacı",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "CrB": {
+   "tr": "Kuzeytacı",
+   "latince": "Corona Borealis",
+   "genitif": "Coronae Borealis",
+   "stellarium_tr": "Kuzey Tacı",
+   "d3_celestial_tr": "Kuzeytacı",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Crv": {
+   "tr": "Karga",
+   "latince": "Corvus",
+   "genitif": "Corvi",
+   "stellarium_tr": "Karga",
+   "d3_celestial_tr": "Karga",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Crt": {
+   "tr": "Kupa",
+   "latince": "Crater",
+   "genitif": "Crateris",
+   "stellarium_tr": "Kupa",
+   "d3_celestial_tr": "Kupa",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Cru": {
+   "tr": "Güneyhaçı",
+   "latince": "Crux",
+   "genitif": "Crucis",
+   "stellarium_tr": "Güney Haçı",
+   "d3_celestial_tr": "Haç",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium"
+   ]
+  },
+  "Cyg": {
+   "tr": "Kuğu",
+   "latince": "Cygnus",
+   "genitif": "Cygni",
+   "stellarium_tr": "Kuğu",
+   "d3_celestial_tr": "Kuğu",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Del": {
+   "tr": "Yunus",
+   "latince": "Delphinus",
+   "genitif": "Delphini",
+   "stellarium_tr": "Yunus",
+   "d3_celestial_tr": "Yunus",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Dor": {
+   "tr": "Kılıçbalığı",
+   "latince": "Dorado",
+   "genitif": "Doradus",
+   "stellarium_tr": "Kılıç Balığı",
+   "d3_celestial_tr": "Kılıçbalığı",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Dra": {
+   "tr": "Ejderha",
+   "latince": "Draco",
+   "genitif": "Draconis",
+   "stellarium_tr": "Ejderha",
+   "d3_celestial_tr": "Ejderha",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Equ": {
+   "tr": "Tay",
+   "latince": "Equuleus",
+   "genitif": "Equulei",
+   "stellarium_tr": "Tay",
+   "d3_celestial_tr": "Tay",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Eri": {
+   "tr": "Irmak",
+   "latince": "Eridanus",
+   "genitif": "Eridani",
+   "stellarium_tr": "Irmak",
+   "d3_celestial_tr": "Irmak",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "For": {
+   "tr": "Ocak",
+   "latince": "Fornax",
+   "genitif": "Fornacis",
+   "stellarium_tr": "Ocak",
+   "d3_celestial_tr": "Ocak",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Gem": {
+   "tr": "İkizler",
+   "latince": "Gemini",
+   "genitif": "Geminorum",
+   "stellarium_tr": "İkizler",
+   "d3_celestial_tr": "İkizler",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Gru": {
+   "tr": "Turna",
+   "latince": "Grus",
+   "genitif": "Gruis",
+   "stellarium_tr": "Turna",
+   "d3_celestial_tr": "Turna",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Her": {
+   "tr": "Herkül",
+   "latince": "Hercules",
+   "genitif": "Herculis",
+   "stellarium_tr": "Herkül",
+   "d3_celestial_tr": "Herkül",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Hor": {
+   "tr": "Saat",
+   "latince": "Horologium",
+   "genitif": "Horologii",
+   "stellarium_tr": "Saat",
+   "d3_celestial_tr": "Saat",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Hya": {
+   "tr": "Suyılanı",
+   "latince": "Hydra",
+   "genitif": "Hydrae",
+   "stellarium_tr": null,
+   "d3_celestial_tr": "Suyılanı",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "d3_celestial"
+   ]
+  },
+  "Hyi": {
+   "tr": "Küçüksuyılanı",
+   "latince": "Hydrus",
+   "genitif": "Hydri",
+   "stellarium_tr": null,
+   "d3_celestial_tr": "Küçük suyılanı",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "d3_celestial"
+   ]
+  },
+  "Ind": {
+   "tr": "Indus",
+   "latince": "Indus",
+   "genitif": "Indi",
+   "stellarium_tr": "Kızılderili",
+   "d3_celestial_tr": "Hintli",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia"
+   ]
+  },
+  "Lac": {
+   "tr": "Kertenkele",
+   "latince": "Lacerta",
+   "genitif": "Lacertae",
+   "stellarium_tr": "Kertenkele",
+   "d3_celestial_tr": "Kertenkele",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Leo": {
+   "tr": "Aslan",
+   "latince": "Leo",
+   "genitif": "Leonis",
+   "stellarium_tr": "Aslan",
+   "d3_celestial_tr": "Aslan",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "LMi": {
+   "tr": "Küçük Aslan",
+   "latince": "Leo Minor",
+   "genitif": "Leonis Minoris",
+   "stellarium_tr": "Küçük Aslan",
+   "d3_celestial_tr": "Küçük Aslan",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Lep": {
+   "tr": "Tavşan",
+   "latince": "Lepus",
+   "genitif": "Leporis",
+   "stellarium_tr": "Tavşan",
+   "d3_celestial_tr": "Tavşan",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Lib": {
+   "tr": "Terazi",
+   "latince": "Libra",
+   "genitif": "Librae",
+   "stellarium_tr": "Terazi",
+   "d3_celestial_tr": "Terazi",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Lup": {
+   "tr": "Kurt",
+   "latince": "Lupus",
+   "genitif": "Lupi",
+   "stellarium_tr": "Kurt",
+   "d3_celestial_tr": "Kurt",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Lyn": {
+   "tr": "Vaşak",
+   "latince": "Lynx",
+   "genitif": "Lyncis",
+   "stellarium_tr": "Vaşak",
+   "d3_celestial_tr": "Vaşak",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Lyr": {
+   "tr": "Çalgı",
+   "latince": "Lyra",
+   "genitif": "Lyrae",
+   "stellarium_tr": "Çalgı",
+   "d3_celestial_tr": "Çalgı",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Men": {
+   "tr": "Masa",
+   "latince": "Mensa",
+   "genitif": "Mensae",
+   "stellarium_tr": "Masa",
+   "d3_celestial_tr": "Masa",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Mic": {
+   "tr": "Mikroskop",
+   "latince": "Microscopium",
+   "genitif": "Microscopii",
+   "stellarium_tr": "Mikroskop",
+   "d3_celestial_tr": "Mikroskop",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Mon": {
+   "tr": "Tekboynuz",
+   "latince": "Monoceros",
+   "genitif": "Monocerotis",
+   "stellarium_tr": "Tekboynuz",
+   "d3_celestial_tr": "Tekboynuz",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Mus": {
+   "tr": "Sinek",
+   "latince": "Musca",
+   "genitif": "Muscae",
+   "stellarium_tr": "Sinek",
+   "d3_celestial_tr": "Sinek",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Nor": {
+   "tr": "Cetvel",
+   "latince": "Norma",
+   "genitif": "Normae",
+   "stellarium_tr": "Cetvel",
+   "d3_celestial_tr": "Cetvel",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Oct": {
+   "tr": "Sekizlik",
+   "latince": "Octans",
+   "genitif": "Octantis",
+   "stellarium_tr": "Oktant",
+   "d3_celestial_tr": "Sekizlik",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "d3_celestial"
+   ]
+  },
+  "Oph": {
+   "tr": "Yılancı",
+   "latince": "Ophiuchus",
+   "genitif": "Ophiuchi",
+   "stellarium_tr": "Yılancı",
+   "d3_celestial_tr": "Yılancı",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Ori": {
+   "tr": "Avcı",
+   "latince": "Orion",
+   "genitif": "Orionis",
+   "stellarium_tr": null,
+   "d3_celestial_tr": "Avcı",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "d3_celestial"
+   ]
+  },
+  "Pav": {
+   "tr": "Tavus",
+   "latince": "Pavo",
+   "genitif": "Pavonis",
+   "stellarium_tr": "Tavus Kuşu",
+   "d3_celestial_tr": "Tavus",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "d3_celestial"
+   ]
+  },
+  "Peg": {
+   "tr": "Kanatlıat",
+   "latince": "Pegasus",
+   "genitif": "Pegasi",
+   "stellarium_tr": null,
+   "d3_celestial_tr": "Kanatlıat",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "d3_celestial"
+   ]
+  },
+  "Per": {
+   "tr": "Kahraman",
+   "latince": "Perseus",
+   "genitif": "Persei",
+   "stellarium_tr": null,
+   "d3_celestial_tr": "Kahraman",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "d3_celestial"
+   ]
+  },
+  "Phe": {
+   "tr": "Anka",
+   "latince": "Phoenix",
+   "genitif": "Phoenicis",
+   "stellarium_tr": "Anka Kuşu",
+   "d3_celestial_tr": "Anka",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "d3_celestial"
+   ]
+  },
+  "Pic": {
+   "tr": "Ressam",
+   "latince": "Pictor",
+   "genitif": "Pictoris",
+   "stellarium_tr": "Ressam",
+   "d3_celestial_tr": "Ressam",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Psc": {
+   "tr": "Balıklar",
+   "latince": "Pisces",
+   "genitif": "Piscium",
+   "stellarium_tr": "Balık",
+   "d3_celestial_tr": "Balık",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia"
+   ]
+  },
+  "PsA": {
+   "tr": "Güneybalığı",
+   "latince": "Piscis Austrinus",
+   "genitif": "Piscis Austrini",
+   "stellarium_tr": "Güney Balığı",
+   "d3_celestial_tr": "Güneybalığı",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Pup": {
+   "tr": "Pupa",
+   "latince": "Puppis",
+   "genitif": "Puppis",
+   "stellarium_tr": "Pupa",
+   "d3_celestial_tr": "Pupa",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Pyx": {
+   "tr": "Kumpas",
+   "latince": "Pyxis",
+   "genitif": "Pyxidis",
+   "stellarium_tr": "Pusula",
+   "d3_celestial_tr": "Kumpas",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "d3_celestial"
+   ]
+  },
+  "Ret": {
+   "tr": "Ağcık",
+   "latince": "Reticulum",
+   "genitif": "Reticuli",
+   "stellarium_tr": "Ağ",
+   "d3_celestial_tr": "Ağcık",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "d3_celestial"
+   ]
+  },
+  "Sge": {
+   "tr": "Okçuk",
+   "latince": "Sagitta",
+   "genitif": "Sagittae",
+   "stellarium_tr": "Ok",
+   "d3_celestial_tr": "Okçuk",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "d3_celestial"
+   ]
+  },
+  "Sgr": {
+   "tr": "Yay",
+   "latince": "Sagittarius",
+   "genitif": "Sagittarii",
+   "stellarium_tr": "Yay",
+   "d3_celestial_tr": "Yay",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Sco": {
+   "tr": "Akrep",
+   "latince": "Scorpius",
+   "genitif": "Scorpii",
+   "stellarium_tr": "Akrep",
+   "d3_celestial_tr": "Akrep",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Scl": {
+   "tr": "Heykeltıraş",
+   "latince": "Sculptor",
+   "genitif": "Sculptoris",
+   "stellarium_tr": "Heykeltraş",
+   "d3_celestial_tr": "Heykeltraş",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia"
+   ]
+  },
+  "Sct": {
+   "tr": "Kalkan",
+   "latince": "Scutum",
+   "genitif": "Scuti",
+   "stellarium_tr": "Kalkan",
+   "d3_celestial_tr": "Kalkan",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Ser": {
+   "tr": "Yılan",
+   "latince": "Serpens",
+   "genitif": "Serpentis",
+   "stellarium_tr": "Yılan",
+   "d3_celestial_tr": "Yılan",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Sex": {
+   "tr": "Altılık",
+   "latince": "Sextans",
+   "genitif": "Sextantis",
+   "stellarium_tr": "Sekstant",
+   "d3_celestial_tr": "Altılık",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "d3_celestial"
+   ]
+  },
+  "Tau": {
+   "tr": "Boğa",
+   "latince": "Taurus",
+   "genitif": "Tauri",
+   "stellarium_tr": "Boğa",
+   "d3_celestial_tr": "Boğa",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Tel": {
+   "tr": "Dürbün",
+   "latince": "Telescopium",
+   "genitif": "Telescopii",
+   "stellarium_tr": "Teleskop",
+   "d3_celestial_tr": "Dürbün",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "d3_celestial"
+   ]
+  },
+  "Tri": {
+   "tr": "Üçgen",
+   "latince": "Triangulum",
+   "genitif": "Trianguli",
+   "stellarium_tr": "Üçgen",
+   "d3_celestial_tr": "Üçgen",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "TrA": {
+   "tr": "Güney Üçgeni",
+   "latince": "Triangulum Australe",
+   "genitif": "Trianguli Australis",
+   "stellarium_tr": "Güney Üçgeni",
+   "d3_celestial_tr": "Güney Üçgeni",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Tuc": {
+   "tr": "Tukan",
+   "latince": "Tucana",
+   "genitif": "Tucanae",
+   "stellarium_tr": "Tukan",
+   "d3_celestial_tr": "Tukan",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "UMa": {
+   "tr": "Büyük Ayı",
+   "latince": "Ursa Major",
+   "genitif": "Ursae Majoris",
+   "stellarium_tr": "Büyük Ayı",
+   "d3_celestial_tr": "Büyük Ayı",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "UMi": {
+   "tr": "Küçük Ayı",
+   "latince": "Ursa Minor",
+   "genitif": "Ursae Minoris",
+   "stellarium_tr": "Küçük Ayı",
+   "d3_celestial_tr": "Küçük Ayı",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Vel": {
+   "tr": "Yelken",
+   "latince": "Vela",
+   "genitif": "Velorum",
+   "stellarium_tr": "Yelken",
+   "d3_celestial_tr": "Yelken",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Vir": {
+   "tr": "Başak",
+   "latince": "Virgo",
+   "genitif": "Virginis",
+   "stellarium_tr": "Başak",
+   "d3_celestial_tr": "Başak",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Vol": {
+   "tr": "Uçanbalık",
+   "latince": "Volans",
+   "genitif": "Volantis",
+   "stellarium_tr": "Uçan Balık",
+   "d3_celestial_tr": "Uçanbalık",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "stellarium",
+    "d3_celestial"
+   ]
+  },
+  "Vul": {
+   "tr": "Tilkicik",
+   "latince": "Vulpecula",
+   "genitif": "Vulpeculae",
+   "stellarium_tr": "Tilki",
+   "d3_celestial_tr": "Tilkicik",
+   "uyusan_kaynaklar": [
+    "tr.wikipedia",
+    "d3_celestial"
+   ]
+  }
+ },
+ "gezegenler": [
+  {
+   "tr": "Merkür",
+   "en": "Mercury",
+   "tdk_gts_tanim": "Güneş sisteminin Güneş'e en yakın olan gezegeni; Utarit",
+   "tdk_url": "https://sozluk.gov.tr/gts?ara=Merkür",
+   "stellarium_tr": "Merkür",
+   "durum": "doğrulandı (TDK + Stellarium tr.po aynı yazım)"
+  },
+  {
+   "tr": "Venüs",
+   "en": "Venus",
+   "tdk_gts_tanim": "► Çoban Yıldızı",
+   "tdk_url": "https://sozluk.gov.tr/gts?ara=Venüs",
+   "stellarium_tr": "Venüs",
+   "durum": "doğrulandı (TDK + Stellarium tr.po aynı yazım)"
+  },
+  {
+   "tr": "Dünya",
+   "en": "Earth",
+   "tdk_gts_tanim": "Güneş'e yakınlık bakımından üçüncü gezegen",
+   "tdk_url": "https://sozluk.gov.tr/gts?ara=Dünya",
+   "stellarium_tr": "Dünya",
+   "durum": "doğrulandı (TDK + Stellarium tr.po aynı yazım)"
+  },
+  {
+   "tr": "Mars",
+   "en": "Mars",
+   "tdk_gts_tanim": "Güneş’e uzaklığı, yerin Güneş’e uzaklığından daha çok olan dış gezegenlerin ilki; Merih",
+   "tdk_url": "https://sozluk.gov.tr/gts?ara=Mars",
+   "stellarium_tr": "Mars",
+   "durum": "doğrulandı (TDK + Stellarium tr.po aynı yazım)"
+  },
+  {
+   "tr": "Jüpiter",
+   "en": "Jupiter",
+   "tdk_gts_tanim": "Gezegenlerin en büyüğü ve Güneş'e yakınlık bakımından beşincisi; Erendiz, Müşteri",
+   "tdk_url": "https://sozluk.gov.tr/gts?ara=Jüpiter",
+   "stellarium_tr": "Jüpiter",
+   "durum": "doğrulandı (TDK + Stellarium tr.po aynı yazım)"
+  },
+  {
+   "tr": "Satürn",
+   "en": "Saturn",
+   "tdk_gts_tanim": "Güneş'e yakınlık bakımından altıncı sırada olan gezegen; Sekendiz, Zühal",
+   "tdk_url": "https://sozluk.gov.tr/gts?ara=Satürn",
+   "stellarium_tr": "Satürn",
+   "durum": "doğrulandı (TDK + Stellarium tr.po aynı yazım)"
+  },
+  {
+   "tr": "Uranüs",
+   "en": "Uranus",
+   "tdk_gts_tanim": "Güneş'e uzaklık sırasında yedinci olan ve Güneş çevresindeki dolanımını seksen dört yılda tamamlayan gezegen",
+   "tdk_url": "https://sozluk.gov.tr/gts?ara=Uranüs",
+   "stellarium_tr": "Uranüs",
+   "durum": "doğrulandı (TDK + Stellarium tr.po aynı yazım)"
+  },
+  {
+   "tr": "Neptün",
+   "en": "Neptune",
+   "tdk_gts_tanim": "Güneş'e yakınlık bakımından sekizinci olan gezegen",
+   "tdk_url": "https://sozluk.gov.tr/gts?ara=Neptün",
+   "stellarium_tr": "Neptün",
+   "durum": "doğrulandı (TDK + Stellarium tr.po aynı yazım)"
+  }
+ ],
+ "gezegen_kaynaklari": [
+  {
+   "ad": "TDK Güncel Türkçe Sözlük (GTS) – WebFetch ile her ad ayrı sorgulandı",
+   "url": "https://sozluk.gov.tr/"
+  },
+  {
+   "ad": "Stellarium po/stellarium/tr.po",
+   "url": "https://raw.githubusercontent.com/Stellarium/stellarium/master/po/stellarium/tr.po"
+  }
+ ]
+}

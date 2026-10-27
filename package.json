@@ -1,0 +1,14 @@
+{
+  "name": "urania-testler",
+  "private": true,
+  "description": "Urania PWA test paketi (Playwright) ve veri hazırlama",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "astronomy-engine": "2.1.19",
+    "@fontsource/spectral": "^5",
+    "@fontsource/ibm-plex-sans": "^5"
+  }
+}

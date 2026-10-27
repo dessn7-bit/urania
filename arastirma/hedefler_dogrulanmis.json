@@ -1,0 +1,800 @@
+[
+ {
+  "id": "M45",
+  "kisa": "M45",
+  "ad_tr": "Ülker",
+  "ad_en": "Pleiades, Seven Sisters",
+  "tur": "acik_kume",
+  "ra_deg": 56.6008,
+  "dec_deg": 24.1139,
+  "kadir": 1.2,
+  "boyut": "110′",
+  "takimyildiz": "Tau",
+  "kaynaklar": [
+   {
+    "ad": "SIMBAD (konum, tür)",
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?output.format=ASCII&Ident=M45"
+   },
+   {
+    "ad": "OpenNGC Mel022",
+    "url": "https://github.com/mattiaverga/OpenNGC (database_files, commit be3cd6c)"
+   },
+   {
+    "ad": "SEDS",
+    "url": "http://messier.seds.org/m/m045.html"
+   },
+   {
+    "ad": "Türkçe Vikipedi (ad)",
+    "url": "https://tr.wikipedia.org/wiki/%C3%9Clker_%28y%C4%B1ld%C4%B1z_k%C3%BCmesi%29"
+   }
+  ],
+  "uyusma": "Konum SIMBAD (ICRS J2000). SIMBAD'dan ayrım: d3_messier 0.136°, d3_bright 0.132°, seds 0.136°, openngc 0.245°. >0.1° fark: d3_messier 0.136°, d3_bright 0.132°, seds 0.136°, openngc 0.245°. Kadir kaynağı: OpenNGC (V-Mag kaynak kodu 10); diğer değerler: d3_messier 1.2, d3_bright 1.2, seds 1.6, openngc 1.20. Boyut kaynağı: SEDS. Takımyıldız: OpenNGC Const, SEDS sayfa başlığı ile aynı. Küme merkezi kaynağa göre değişiyor (SIMBAD Gaia üyeleri; SEDS/d3 03:47.0). Türkçe ad alıntısı: '''Ülker''' veya '''Süreyya''' ('''Pleiades''', '''M45''', ..."
+ },
+ {
+  "id": "M42",
+  "kisa": "M42",
+  "ad_tr": "Orion Bulutsusu (Avcı Bulutsusu)",
+  "ad_en": "Great Orion Nebula, Ori Nebula, Orion Nebula",
+  "tur": "bulutsu",
+  "ra_deg": 83.82,
+  "dec_deg": -5.3875,
+  "kadir": 4.0,
+  "boyut": "85x60′",
+  "takimyildiz": "Ori",
+  "kaynaklar": [
+   {
+    "ad": "SIMBAD (konum, tür)",
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?output.format=ASCII&Ident=M42"
+   },
+   {
+    "ad": "OpenNGC NGC1976",
+    "url": "https://github.com/mattiaverga/OpenNGC (database_files, commit be3cd6c)"
+   },
+   {
+    "ad": "SEDS",
+    "url": "http://messier.seds.org/m/m042.html"
+   },
+   {
+    "ad": "Türkçe Vikipedi (ad)",
+    "url": "https://tr.wikipedia.org/wiki/Orion_Bulutsusu"
+   }
+  ],
+  "uyusma": "Konum SIMBAD (ICRS J2000). SIMBAD'dan ayrım: d3_messier 0.069°, d3_bright 0.004°, seds 0.069°, openngc 0.003°. Tüm kaynaklar ≤0.1°. Kadir kaynağı: OpenNGC (V-Mag kaynak kodu 10); diğer değerler: d3_messier 4, d3_bright 4, seds 4.0, openngc 4.00. Boyut kaynağı: SEDS. Takımyıldız: OpenNGC Const, SEDS sayfa başlığı ile aynı. Türkçe ad alıntısı: '''Orion Bulutsusu''' (ayrıca '''Avcı Bulutsusu''', '''Messier 42''', ..."
+ },
+ {
+  "id": "M31",
+  "kisa": "M31",
+  "ad_tr": "Andromeda Galaksisi",
+  "ad_en": "Andromeda, Andromeda Galaxy, And Nebula, Andromeda Nebula",
+  "tur": "galaksi",
+  "ra_deg": 10.6847,
+  "dec_deg": 41.2687,
+  "kadir": 3.44,
+  "boyut": "178x63′",
+  "takimyildiz": "And",
+  "kaynaklar": [
+   {
+    "ad": "SIMBAD (konum, tür)",
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?output.format=ASCII&Ident=M31"
+   },
+   {
+    "ad": "OpenNGC NGC0224",
+    "url": "https://github.com/mattiaverga/OpenNGC (database_files, commit be3cd6c)"
+   },
+   {
+    "ad": "SEDS",
+    "url": "http://messier.seds.org/m/m031.html"
+   },
+   {
+    "ad": "Türkçe Vikipedi (ad)",
+    "url": "https://tr.wikipedia.org/wiki/Andromeda_Galaksisi"
+   }
+  ],
+  "uyusma": "Konum SIMBAD (ICRS J2000). SIMBAD'dan ayrım: d3_messier 0.007°, d3_bright 0.004°, seds 0.008°, openngc 0.0°. Tüm kaynaklar ≤0.1°. Kadir kaynağı: SIMBAD; diğer değerler: d3_messier 3.4, d3_bright 3.4, seds 3.4, openngc 3.44; SIMBAD V 3.44. Boyut kaynağı: SEDS. Takımyıldız: OpenNGC Const, SEDS sayfa başlığı ile aynı. Türkçe ad alıntısı: '''Andromeda Galaksisi''', ... Ayrıca '''Messier 31''', '''M31''' ve '''NGC 224''' olarak da bilinir."
+ },
+ {
+  "id": "M44",
+  "kisa": "M44",
+  "ad_tr": "Arıkovanı yıldız kümesi (Praesepe)",
+  "ad_en": "Beehive, Praesepe, Praesepe Cluster",
+  "tur": "acik_kume",
+  "ra_deg": 130.0542,
+  "dec_deg": 19.6211,
+  "kadir": 3.1,
+  "boyut": "95′",
+  "takimyildiz": "Cnc",
+  "kaynaklar": [
+   {
+    "ad": "SIMBAD (konum, tür)",
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?output.format=ASCII&Ident=M44"
+   },
+   {
+    "ad": "OpenNGC NGC2632",
+    "url": "https://github.com/mattiaverga/OpenNGC (database_files, commit be3cd6c)"
+   },
+   {
+    "ad": "SEDS",
+    "url": "http://messier.seds.org/m/m044.html"
+   },
+   {
+    "ad": "Türkçe Vikipedi (ad)",
+    "url": "https://tr.wikipedia.org/wiki/Messier_44"
+   }
+  ],
+  "uyusma": "Konum SIMBAD (ICRS J2000). SIMBAD'dan ayrım: d3_messier 0.363°, d3_bright 0.065°, seds 0.363°, openngc 0.062°. >0.1° fark: d3_messier 0.363°, seds 0.363°. Kadir kaynağı: OpenNGC (V-Mag kaynak kodu 2); diğer değerler: d3_messier 3.1, d3_bright 3.1, seds 3.7, openngc 3.10. Boyut kaynağı: SEDS. Takımyıldız: OpenNGC Const, SEDS sayfa başlığı ile aynı. SEDS/d3 messier.json Dec +19°59′ (0.36° kuzey) hatalı görünüyor; SIMBAD, OpenNGC, dsos.bright +19.62…+19.67. Türkçe ad alıntısı: '''Messier 44''' (ayrıca '''Arıkovanı yıldız kümesi''', '''Praesepe''' ..."
+ },
+ {
+  "id": "M13",
+  "kisa": "M13",
+  "ad_tr": "Herkül'deki Büyük Yıldız Kümesi",
+  "ad_en": "Hercules Globular Cluster",
+  "tur": "kuresel_kume",
+  "ra_deg": 250.4235,
+  "dec_deg": 36.4613,
+  "kadir": 5.8,
+  "boyut": "20′",
+  "takimyildiz": "Her",
+  "kaynaklar": [
+   {
+    "ad": "SIMBAD (konum, tür)",
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?output.format=ASCII&Ident=M13"
+   },
+   {
+    "ad": "OpenNGC NGC6205",
+    "url": "https://github.com/mattiaverga/OpenNGC (database_files, commit be3cd6c)"
+   },
+   {
+    "ad": "SEDS",
+    "url": "http://messier.seds.org/m/m013.html"
+   },
+   {
+    "ad": "Türkçe Vikipedi (ad)",
+    "url": "https://tr.wikipedia.org/wiki/Messier_13"
+   }
+  ],
+  "uyusma": "Konum SIMBAD (ICRS J2000). SIMBAD'dan ayrım: d3_messier 0.006°, seds 0.006°, openngc 0.0°. Tüm kaynaklar ≤0.1°. Kadir kaynağı: SIMBAD; diğer değerler: d3_messier 5.9, seds 5.8, openngc 5.80; SIMBAD V 5.8. Boyut kaynağı: SEDS. Takımyıldız: OpenNGC Const, SEDS sayfa başlığı ile aynı. Türkçe ad alıntısı: bilinen diğer adıyla '''Herkül'deki Büyük Yıldız Kümesi'''"
+ },
+ {
+  "id": "M8",
+  "kisa": "M8",
+  "ad_tr": "Deniz Kulağı Bulutsusu",
+  "ad_en": "Lagoon, Lagoon Nebula",
+  "tur": "bulutsu",
+  "ra_deg": 270.9042,
+  "dec_deg": -24.3867,
+  "kadir": 5.8,
+  "boyut": "90x40′",
+  "takimyildiz": "Sgr",
+  "kaynaklar": [
+   {
+    "ad": "SIMBAD (konum, tür)",
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?output.format=ASCII&Ident=M8"
+   },
+   {
+    "ad": "OpenNGC NGC6523",
+    "url": "https://github.com/mattiaverga/OpenNGC (database_files, commit be3cd6c)"
+   },
+   {
+    "ad": "SEDS",
+    "url": "http://messier.seds.org/m/m008.html"
+   },
+   {
+    "ad": "Türkçe Vikipedi (ad)",
+    "url": "https://tr.wikipedia.org/wiki/Deniz_Kula%C4%9F%C4%B1_Bulutsusu"
+   }
+  ],
+  "uyusma": "Konum SIMBAD (ICRS J2000). SIMBAD'dan ayrım: d3_messier 0.042°, d3_bright 0.024°, seds 0.042°, openngc 0.017°. Tüm kaynaklar ≤0.1°. Kadir kaynağı: OpenNGC (V-Mag kaynak kodu 10); diğer değerler: d3_messier 5.8, d3_bright 5, seds 4.6, openngc 5.80. Boyut kaynağı: SEDS. Takımyıldız: OpenNGC Const, SEDS sayfa başlığı ile aynı. Kadir kaynaklar arasında 4.6–5.8; SIMBAD türü OpC, burada bulutsu (OpenNGC \"Neb\", d3 \"sfr\"). Türkçe ad alıntısı: '''Deniz Kulağı Bulutsusu''' (ayrıca '''Messier 8''', '''M8''' veya '''NGC 6523''' ..."
+ },
+ {
+  "id": "M7",
+  "kisa": "M7",
+  "ad_tr": "Ptolemy (Batlamyus) yıldız kümesi",
+  "ad_en": "Ptolemy's Cluster",
+  "tur": "acik_kume",
+  "ra_deg": 268.4471,
+  "dec_deg": -34.8411,
+  "kadir": 3.3,
+  "boyut": "80′",
+  "takimyildiz": "Sco",
+  "kaynaklar": [
+   {
+    "ad": "SIMBAD (konum, tür)",
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?output.format=ASCII&Ident=M7"
+   },
+   {
+    "ad": "OpenNGC NGC6475",
+    "url": "https://github.com/mattiaverga/OpenNGC (database_files, commit be3cd6c)"
+   },
+   {
+    "ad": "SEDS",
+    "url": "http://messier.seds.org/m/m007.html"
+   },
+   {
+    "ad": "Türkçe Vikipedi (ad)",
+    "url": "https://tr.wikipedia.org/wiki/Messier_7"
+   }
+  ],
+  "uyusma": "Konum SIMBAD (ICRS J2000). SIMBAD'dan ayrım: d3_messier 0.033°, d3_bright 0.045°, seds 0.033°, openngc 0.05°. Tüm kaynaklar ≤0.1°. Kadir kaynağı: OpenNGC (V-Mag kaynak kodu 2); diğer değerler: d3_messier 3.3, d3_bright 3.3, seds 3.3, openngc 3.30. Boyut kaynağı: SEDS. Takımyıldız: OpenNGC Const, SEDS sayfa başlığı ile aynı. tr.wikipedia \"Ptolemy (Batlamyus) yıldız kümesi\" diyor; ad_tr kaynaktaki yazımla verildi. Türkçe ad alıntısı: '''Ptolemy (Batlamyus) yıldız kümesi''' olarak da bilinir"
+ },
+ {
+  "id": "M6",
+  "kisa": "M6",
+  "ad_tr": "Kelebek Yıldız Kümesi",
+  "ad_en": "Butterfly Cluster",
+  "tur": "acik_kume",
+  "ra_deg": 265.0692,
+  "dec_deg": -32.2419,
+  "kadir": 4.2,
+  "boyut": "25′",
+  "takimyildiz": "Sco",
+  "kaynaklar": [
+   {
+    "ad": "SIMBAD (konum, tür)",
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?output.format=ASCII&Ident=M6"
+   },
+   {
+    "ad": "OpenNGC NGC6405",
+    "url": "https://github.com/mattiaverga/OpenNGC (database_files, commit be3cd6c)"
+   },
+   {
+    "ad": "SEDS",
+    "url": "http://messier.seds.org/m/m006.html"
+   },
+   {
+    "ad": "Türkçe Vikipedi (ad)",
+    "url": "https://tr.wikipedia.org/wiki/Kelebek_%28y%C4%B1ld%C4%B1zk%C3%BCmesi%29"
+   }
+  ],
+  "uyusma": "Konum SIMBAD (ICRS J2000). SIMBAD'dan ayrım: d3_messier 0.045°, d3_bright 0.012°, seds 0.045°, openngc 0.019°. Tüm kaynaklar ≤0.1°. Kadir kaynağı: OpenNGC (V-Mag kaynak kodu 2); diğer değerler: d3_messier 4.2, d3_bright 4.2, seds 4.2, openngc 4.20. Boyut kaynağı: SEDS. Takımyıldız: OpenNGC Const, SEDS sayfa başlığı ile aynı. Türkçe ad alıntısı: '''Kelebek Yıldız kümesi''' (diğer adları '''Messier 6''', ..."
+ },
+ {
+  "id": "M22",
+  "kisa": "M22",
+  "ad_tr": null,
+  "ad_en": null,
+  "tur": "kuresel_kume",
+  "ra_deg": 279.0998,
+  "dec_deg": -23.9047,
+  "kadir": 5.1,
+  "boyut": "32′",
+  "takimyildiz": "Sgr",
+  "kaynaklar": [
+   {
+    "ad": "SIMBAD (konum, tür)",
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?output.format=ASCII&Ident=M22"
+   },
+   {
+    "ad": "OpenNGC NGC6656",
+    "url": "https://github.com/mattiaverga/OpenNGC (database_files, commit be3cd6c)"
+   },
+   {
+    "ad": "SEDS",
+    "url": "http://messier.seds.org/m/m022.html"
+   },
+   {
+    "ad": "Türkçe Vikipedi (ad)",
+    "url": "https://tr.wikipedia.org/wiki/Messier_22"
+   }
+  ],
+  "uyusma": "Konum SIMBAD (ICRS J2000). SIMBAD'dan ayrım: d3_messier 0.005°, seds 0.005°, openngc 0.002°. Tüm kaynaklar ≤0.1°. Kadir kaynağı: SEDS; diğer değerler: d3_messier 5.1, seds 5.1. Boyut kaynağı: SEDS. Takımyıldız: OpenNGC Const, SEDS sayfa başlığı ile aynı. Türkçe Vikipedi maddesi yalnız \"Messier N\" adını veriyor; yaygın Türkçe ad bulamadım."
+ },
+ {
+  "id": "M35",
+  "kisa": "M35",
+  "ad_tr": null,
+  "ad_en": null,
+  "tur": "acik_kume",
+  "ra_deg": 92.2721,
+  "dec_deg": 24.3361,
+  "kadir": 5.3,
+  "boyut": "28′",
+  "takimyildiz": "Gem",
+  "kaynaklar": [
+   {
+    "ad": "SIMBAD (konum, tür)",
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?output.format=ASCII&Ident=M35"
+   },
+   {
+    "ad": "OpenNGC NGC2168",
+    "url": "https://github.com/mattiaverga/OpenNGC (database_files, commit be3cd6c)"
+   },
+   {
+    "ad": "SEDS",
+    "url": "http://messier.seds.org/m/m035.html"
+   },
+   {
+    "ad": "Türkçe Vikipedi (ad)",
+    "url": "https://tr.wikipedia.org/wiki/Messier_35"
+   }
+  ],
+  "uyusma": "Konum SIMBAD (ICRS J2000). SIMBAD'dan ayrım: d3_messier 0.043°, seds 0.043°, openngc 0.003°. Tüm kaynaklar ≤0.1°. Kadir kaynağı: SEDS; diğer değerler: d3_messier 5.1, seds 5.3. Boyut kaynağı: SEDS. Takımyıldız: OpenNGC Const, SEDS sayfa başlığı ile aynı. Türkçe Vikipedi maddesi yalnız \"Messier N\" adını veriyor; yaygın Türkçe ad bulamadım."
+ },
+ {
+  "id": "M36",
+  "kisa": "M36",
+  "ad_tr": null,
+  "ad_en": null,
+  "tur": "acik_kume",
+  "ra_deg": 84.0842,
+  "dec_deg": 34.135,
+  "kadir": 6.0,
+  "boyut": "12′",
+  "takimyildiz": "Aur",
+  "kaynaklar": [
+   {
+    "ad": "SIMBAD (konum, tür)",
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?output.format=ASCII&Ident=M36"
+   },
+   {
+    "ad": "OpenNGC NGC1960",
+    "url": "https://github.com/mattiaverga/OpenNGC (database_files, commit be3cd6c)"
+   },
+   {
+    "ad": "SEDS",
+    "url": "http://messier.seds.org/m/m036.html"
+   },
+   {
+    "ad": "Türkçe Vikipedi (ad)",
+    "url": "https://tr.wikipedia.org/wiki/Messier_36"
+   }
+  ],
+  "uyusma": "Konum SIMBAD (ICRS J2000). SIMBAD'dan ayrım: d3_messier 0.049°, seds 0.049°, openngc 0.01°. Tüm kaynaklar ≤0.1°. Kadir kaynağı: SIMBAD; diğer değerler: d3_messier 6, seds 6.3, openngc 6.00; SIMBAD V 6.0. Boyut kaynağı: SEDS. Takımyıldız: OpenNGC Const, SEDS sayfa başlığı ile aynı. Türkçe Vikipedi maddesi yalnız \"Messier N\" adını veriyor; yaygın Türkçe ad bulamadım."
+ },
+ {
+  "id": "M37",
+  "kisa": "M37",
+  "ad_tr": null,
+  "ad_en": null,
+  "tur": "acik_kume",
+  "ra_deg": 88.0742,
+  "dec_deg": 32.545,
+  "kadir": 5.6,
+  "boyut": "24′",
+  "takimyildiz": "Aur",
+  "kaynaklar": [
+   {
+    "ad": "SIMBAD (konum, tür)",
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?output.format=ASCII&Ident=M37"
+   },
+   {
+    "ad": "OpenNGC NGC2099",
+    "url": "https://github.com/mattiaverga/OpenNGC (database_files, commit be3cd6c)"
+   },
+   {
+    "ad": "SEDS",
+    "url": "http://messier.seds.org/m/m037.html"
+   },
+   {
+    "ad": "Türkçe Vikipedi (ad)",
+    "url": "https://tr.wikipedia.org/wiki/Messier_37"
+   }
+  ],
+  "uyusma": "Konum SIMBAD (ICRS J2000). SIMBAD'dan ayrım: d3_messier 0.022°, seds 0.022°, openngc 0.008°. Tüm kaynaklar ≤0.1°. Kadir kaynağı: OpenNGC (V-Mag kaynak kodu 2); diğer değerler: d3_messier 5.6, seds 6.2, openngc 5.60. Boyut kaynağı: SEDS. Takımyıldız: OpenNGC Const, SEDS sayfa başlığı ile aynı. Türkçe Vikipedi maddesi yalnız \"Messier N\" adını veriyor; yaygın Türkçe ad bulamadım."
+ },
+ {
+  "id": "M38",
+  "kisa": "M38",
+  "ad_tr": null,
+  "ad_en": null,
+  "tur": "acik_kume",
+  "ra_deg": 82.1671,
+  "dec_deg": 35.8239,
+  "kadir": 6.4,
+  "boyut": "21′",
+  "takimyildiz": "Aur",
+  "kaynaklar": [
+   {
+    "ad": "SIMBAD (konum, tür)",
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?output.format=ASCII&Ident=M38"
+   },
+   {
+    "ad": "OpenNGC NGC1912",
+    "url": "https://github.com/mattiaverga/OpenNGC (database_files, commit be3cd6c)"
+   },
+   {
+    "ad": "SEDS",
+    "url": "http://messier.seds.org/m/m038.html"
+   },
+   {
+    "ad": "Türkçe Vikipedi (ad)",
+    "url": "https://tr.wikipedia.org/wiki/Messier_38"
+   }
+  ],
+  "uyusma": "Konum SIMBAD (ICRS J2000). SIMBAD'dan ayrım: d3_messier 0.011°, seds 0.055°, openngc 0.032°. Tüm kaynaklar ≤0.1°. Kadir kaynağı: SIMBAD; diğer değerler: d3_messier 6.4, seds 7.4, openngc 6.40; SIMBAD V 6.4. Boyut kaynağı: SEDS. Takımyıldız: OpenNGC Const, SEDS sayfa başlığı ile aynı. Türkçe Vikipedi maddesi yalnız \"Messier N\" adını veriyor; yaygın Türkçe ad bulamadım."
+ },
+ {
+  "id": "M39",
+  "kisa": "M39",
+  "ad_tr": null,
+  "ad_en": null,
+  "tur": "acik_kume",
+  "ra_deg": 322.8892,
+  "dec_deg": 48.2469,
+  "kadir": 4.6,
+  "boyut": "32′",
+  "takimyildiz": "Cyg",
+  "kaynaklar": [
+   {
+    "ad": "SIMBAD (konum, tür)",
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?output.format=ASCII&Ident=M39"
+   },
+   {
+    "ad": "OpenNGC NGC7092",
+    "url": "https://github.com/mattiaverga/OpenNGC (database_files, commit be3cd6c)"
+   },
+   {
+    "ad": "SEDS",
+    "url": "http://messier.seds.org/m/m039.html"
+   },
+   {
+    "ad": "Türkçe Vikipedi (ad)",
+    "url": "https://tr.wikipedia.org/wiki/Messier_39"
+   }
+  ],
+  "uyusma": "Konum SIMBAD (ICRS J2000). SIMBAD'dan ayrım: d3_messier 0.215°, seds 0.215°, openngc 0.196°. >0.1° fark: d3_messier 0.215°, seds 0.215°, openngc 0.196°. Kadir kaynağı: OpenNGC (V-Mag kaynak kodu 2); diğer değerler: d3_messier 4.6, seds 4.6, openngc 4.60. Boyut kaynağı: SEDS. Takımyıldız: OpenNGC Const, SEDS sayfa başlığı ile aynı. SIMBAD (Gaia üye merkezi) ile SEDS/OpenNGC arasında ~0.2°. Türkçe Vikipedi maddesi yalnız \"Messier N\" adını veriyor; yaygın Türkçe ad bulamadım."
+ },
+ {
+  "id": "M11",
+  "kisa": "M11",
+  "ad_tr": "Yaban Ördeği Yıldız Kümesi",
+  "ad_en": "Amas de l'Ecu de Sobieski, Wild Duck Cluster",
+  "tur": "acik_kume",
+  "ra_deg": 282.7658,
+  "dec_deg": -6.2719,
+  "kadir": 5.8,
+  "boyut": "14′",
+  "takimyildiz": "Sct",
+  "kaynaklar": [
+   {
+    "ad": "SIMBAD (konum, tür)",
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?output.format=ASCII&Ident=M11"
+   },
+   {
+    "ad": "OpenNGC NGC6705",
+    "url": "https://github.com/mattiaverga/OpenNGC (database_files, commit be3cd6c)"
+   },
+   {
+    "ad": "SEDS",
+    "url": "http://messier.seds.org/m/m011.html"
+   },
+   {
+    "ad": "Türkçe Vikipedi (ad)",
+    "url": "https://tr.wikipedia.org/wiki/Yaban_%C3%96rde%C4%9Fi_%28y%C4%B1ld%C4%B1zk%C3%BCmesi%29"
+   }
+  ],
+  "uyusma": "Konum SIMBAD (ICRS J2000). SIMBAD'dan ayrım: d3_messier 0.011°, seds 0.011°, openngc 0.009°. Tüm kaynaklar ≤0.1°. Kadir kaynağı: SIMBAD; diğer değerler: d3_messier 5.8, seds 5.8, openngc 5.80; SIMBAD V 5.8. Boyut kaynağı: SEDS. Takımyıldız: OpenNGC Const, SEDS sayfa başlığı ile aynı. Türkçe ad alıntısı: '''Yaban Ördeği Yıldız Kümesi''' (diğer adları '''Messier 11''' ..."
+ },
+ {
+  "id": "M27",
+  "kisa": "M27",
+  "ad_tr": "Halter Bulutsusu",
+  "ad_en": "Diabolo Nebula, Dumbbell Nebula",
+  "tur": "gezegenimsi",
+  "ra_deg": 299.9015,
+  "dec_deg": 22.7212,
+  "kadir": 7.4,
+  "boyut": "8x5.7′",
+  "takimyildiz": "Vul",
+  "kaynaklar": [
+   {
+    "ad": "SIMBAD (konum, tür)",
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?output.format=ASCII&Ident=M27"
+   },
+   {
+    "ad": "OpenNGC NGC6853",
+    "url": "https://github.com/mattiaverga/OpenNGC (database_files, commit be3cd6c)"
+   },
+   {
+    "ad": "SEDS",
+    "url": "http://messier.seds.org/m/m027.html"
+   },
+   {
+    "ad": "Türkçe Vikipedi (ad)",
+    "url": "https://tr.wikipedia.org/wiki/Halter_Bulutsusu"
+   }
+  ],
+  "uyusma": "Konum SIMBAD (ICRS J2000). SIMBAD'dan ayrım: d3_messier 0.005°, seds 0.005°, openngc 0.0°. Tüm kaynaklar ≤0.1°. Kadir kaynağı: OpenNGC (V-Mag kaynak kodu 3); diğer değerler: d3_messier 8.1, seds 7.4, openngc 7.40; SIMBAD V 14.089. Boyut kaynağı: SEDS. Takımyıldız: OpenNGC Const, SEDS sayfa başlığı ile aynı. SIMBAD V 14.089 merkez yıldıza ait, bulutsu değil; d3 8.1 aykırı. Türkçe ad alıntısı: '''Halter Bulutsusu''' (diğer adlarıyla '''Messier 27''', ..."
+ },
+ {
+  "id": "M92",
+  "kisa": "M92",
+  "ad_tr": null,
+  "ad_en": null,
+  "tur": "kuresel_kume",
+  "ra_deg": 259.2808,
+  "dec_deg": 43.1359,
+  "kadir": 6.52,
+  "boyut": "14′",
+  "takimyildiz": "Her",
+  "kaynaklar": [
+   {
+    "ad": "SIMBAD (konum, tür)",
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?output.format=ASCII&Ident=M92"
+   },
+   {
+    "ad": "OpenNGC NGC6341",
+    "url": "https://github.com/mattiaverga/OpenNGC (database_files, commit be3cd6c)"
+   },
+   {
+    "ad": "SEDS",
+    "url": "http://messier.seds.org/m/m092.html"
+   },
+   {
+    "ad": "Türkçe Vikipedi (ad)",
+    "url": "https://tr.wikipedia.org/wiki/Messier_92"
+   }
+  ],
+  "uyusma": "Konum SIMBAD (ICRS J2000). SIMBAD'dan ayrım: d3_messier 0.005°, seds 0.005°, openngc 0.001°. Tüm kaynaklar ≤0.1°. Kadir kaynağı: SIMBAD; diğer değerler: d3_messier 6.5, seds 6.4, openngc 6.52; SIMBAD V 6.52. Boyut kaynağı: SEDS. Takımyıldız: OpenNGC Const, SEDS sayfa başlığı ile aynı. Türkçe Vikipedi maddesi yalnız \"Messier N\" adını veriyor; yaygın Türkçe ad bulamadım."
+ },
+ {
+  "id": "M3",
+  "kisa": "M3",
+  "ad_tr": null,
+  "ad_en": null,
+  "tur": "kuresel_kume",
+  "ra_deg": 205.5484,
+  "dec_deg": 28.3773,
+  "kadir": 6.39,
+  "boyut": "18′",
+  "takimyildiz": "CVn",
+  "kaynaklar": [
+   {
+    "ad": "SIMBAD (konum, tür)",
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?output.format=ASCII&Ident=M3"
+   },
+   {
+    "ad": "OpenNGC NGC5272",
+    "url": "https://github.com/mattiaverga/OpenNGC (database_files, commit be3cd6c)"
+   },
+   {
+    "ad": "SEDS",
+    "url": "http://messier.seds.org/m/m003.html"
+   },
+   {
+    "ad": "Türkçe Vikipedi (ad)",
+    "url": "https://tr.wikipedia.org/wiki/Messier_3"
+   }
+  ],
+  "uyusma": "Konum SIMBAD (ICRS J2000). SIMBAD'dan ayrım: d3_messier 0.006°, seds 0.006°, openngc 0.002°. Tüm kaynaklar ≤0.1°. Kadir kaynağı: SIMBAD; diğer değerler: d3_messier 6.4, seds 6.2, openngc 6.39; SIMBAD V 6.39. Boyut kaynağı: SEDS. Takımyıldız: OpenNGC Const, SEDS sayfa başlığı ile aynı. Türkçe Vikipedi maddesi yalnız \"Messier N\" adını veriyor; yaygın Türkçe ad bulamadım."
+ },
+ {
+  "id": "M5",
+  "kisa": "M5",
+  "ad_tr": null,
+  "ad_en": null,
+  "tur": "kuresel_kume",
+  "ra_deg": 229.6384,
+  "dec_deg": 2.081,
+  "kadir": 5.95,
+  "boyut": "23′",
+  "takimyildiz": "Ser",
+  "kaynaklar": [
+   {
+    "ad": "SIMBAD (konum, tür)",
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?output.format=ASCII&Ident=M5"
+   },
+   {
+    "ad": "OpenNGC NGC5904",
+    "url": "https://github.com/mattiaverga/OpenNGC (database_files, commit be3cd6c)"
+   },
+   {
+    "ad": "SEDS",
+    "url": "http://messier.seds.org/m/m005.html"
+   },
+   {
+    "ad": "Türkçe Vikipedi (ad)",
+    "url": "https://tr.wikipedia.org/wiki/Messier_5"
+   }
+  ],
+  "uyusma": "Konum SIMBAD (ICRS J2000). SIMBAD'dan ayrım: d3_messier 0.012°, seds 0.012°, openngc 0.003°. Tüm kaynaklar ≤0.1°. Kadir kaynağı: SIMBAD; diğer değerler: d3_messier 5.8, seds 5.6, openngc 5.95; SIMBAD V 5.95. Boyut kaynağı: SEDS. Takımyıldız: OpenNGC Const, SEDS sayfa başlığı ile aynı. Türkçe Vikipedi maddesi yalnız \"Messier N\" adını veriyor; yaygın Türkçe ad bulamadım."
+ },
+ {
+  "id": "NGC 869",
+  "kisa": "NGC869",
+  "ad_tr": "Perseus Çift Kümesi – h Persei (batı)",
+  "ad_en": "h Per Cluster, h Persei Cluster",
+  "tur": "acik_kume",
+  "ra_deg": 34.7408,
+  "dec_deg": 57.1339,
+  "kadir": 3.7,
+  "boyut": "30′",
+  "takimyildiz": "Per",
+  "kaynaklar": [
+   {
+    "ad": "SIMBAD (konum, tür)",
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?output.format=ASCII&Ident=NGC%20869"
+   },
+   {
+    "ad": "OpenNGC NGC0869",
+    "url": "https://github.com/mattiaverga/OpenNGC (database_files, commit be3cd6c)"
+   },
+   {
+    "ad": "SEDS",
+    "url": "http://messier.seds.org/xtra/ngc/n0869.html"
+   },
+   {
+    "ad": "Türkçe Vikipedi (ad)",
+    "url": "https://tr.wikipedia.org/wiki/Perseus_%C3%87ift_K%C3%BCmesi"
+   }
+  ],
+  "uyusma": "Konum SIMBAD (ICRS J2000). SIMBAD'dan ayrım: d3_bright 0.008°, seds 0.017°, openngc 0.017°. Tüm kaynaklar ≤0.1°. Kadir kaynağı: OpenNGC (V-Mag kaynak kodu 2); diğer değerler: d3_bright 3.8, seds 4.3, openngc 3.70. Boyut kaynağı: SEDS. Takımyıldız: OpenNGC Const, SEDS sayfa başlığı ile aynı. Türkçe ad alıntısı: '''Perseus Çift Kümesi''' ... [[NGC 869]] ve [[NGC 884]] (genellikle sırasıyla h Persei ve χ (chi) Persei olarak adlandırılır)"
+ },
+ {
+  "id": "NGC 884",
+  "kisa": "NGC884",
+  "ad_tr": "Perseus Çift Kümesi – χ Persei (doğu)",
+  "ad_en": "chi Per Cluster, chi Persei Cluster, khi Per Cluster",
+  "tur": "acik_kume",
+  "ra_deg": 35.5842,
+  "dec_deg": 57.1489,
+  "kadir": 3.8,
+  "boyut": "30′",
+  "takimyildiz": "Per",
+  "kaynaklar": [
+   {
+    "ad": "SIMBAD (konum, tür)",
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?output.format=ASCII&Ident=NGC%20884"
+   },
+   {
+    "ad": "OpenNGC NGC0884",
+    "url": "https://github.com/mattiaverga/OpenNGC (database_files, commit be3cd6c)"
+   },
+   {
+    "ad": "SEDS",
+    "url": "http://messier.seds.org/xtra/ngc/n0869.html"
+   },
+   {
+    "ad": "Türkçe Vikipedi (ad)",
+    "url": "https://tr.wikipedia.org/wiki/Perseus_%C3%87ift_K%C3%BCmesi"
+   }
+  ],
+  "uyusma": "Konum SIMBAD (ICRS J2000). SIMBAD'dan ayrım: d3_bright 0.247°, seds 0.033°, openngc 0.027°. >0.1° fark: d3_bright 0.247°. Kadir kaynağı: OpenNGC (V-Mag kaynak kodu 2); diğer değerler: d3_bright 3.8, openngc 3.80. Boyut kaynağı: SEDS. Takımyıldız: OpenNGC Const, SEDS sayfa başlığı ile aynı. d3 dsos.bright RA 35.13° hatalı (0.25° batı). Türkçe ad alıntısı: aynı alıntı; NGC_884 maddesi: 'NGC 869 ile birlikte oluşturduğu çift kümenin doğusunda yer alır'"
+ },
+ {
+  "id": "Mel 111",
+  "kisa": "Mel111",
+  "ad_tr": "Saç Yıldız Kümesi",
+  "ad_en": "Coma Berenices Cluster, Coma Ber Cluster, Coma Star Cluster",
+  "tur": "acik_kume",
+  "ra_deg": 186.0142,
+  "dec_deg": 25.6519,
+  "kadir": 1.8,
+  "boyut": "275′",
+  "takimyildiz": "Com",
+  "kaynaklar": [
+   {
+    "ad": "SIMBAD (konum, tür)",
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?output.format=ASCII&Ident=Mel%20111"
+   },
+   {
+    "ad": "OpenNGC Mel111",
+    "url": "https://github.com/mattiaverga/OpenNGC (database_files, commit be3cd6c)"
+   },
+   {
+    "ad": "SEDS",
+    "url": "http://messier.seds.org/xtra/ngc/mel111.html"
+   },
+   {
+    "ad": "Türkçe Vikipedi (ad)",
+    "url": "https://tr.wikipedia.org/wiki/Melotte_111"
+   }
+  ],
+  "uyusma": "Konum SIMBAD (ICRS J2000). SIMBAD'dan ayrım: d3_bright 0.519°, seds 0.408°, openngc 0.506°. >0.1° fark: d3_bright 0.519°, seds 0.408°, openngc 0.506°. Kadir kaynağı: SEDS; diğer değerler: d3_bright 1.8, seds 1.8. Boyut kaynağı: SEDS. Takımyıldız: OpenNGC Const, SEDS sayfa başlığı ile aynı. SIMBAD merkezi Gaia üyeliğinden; SEDS/OpenNGC/d3b merkezi ~0.5° kuzeyde (186.27, +26.1). Geniş (~4.5°) küme. Türkçe ad alıntısı: '''Melotte 111''', (ayrıca '''Saç Yıldız Kümesi''' olarak da bilinir)"
+ },
+ {
+  "id": "Cr 399",
+  "kisa": "Cr399",
+  "ad_tr": null,
+  "ad_en": "Coathanger, Brocchi's Cluster, AL SUFI's Cluster",
+  "tur": "yildiz_kumesi_asterizm",
+  "ra_deg": 291.35,
+  "dec_deg": 20.1833,
+  "kadir": 3.6,
+  "boyut": "70′",
+  "takimyildiz": "Vul",
+  "kaynaklar": [
+   {
+    "ad": "SIMBAD (konum, tür)",
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?output.format=ASCII&Ident=Cl%20Collinder%20399"
+   },
+   {
+    "ad": "OpenNGC Cl399",
+    "url": "https://github.com/mattiaverga/OpenNGC (database_files, commit be3cd6c)"
+   }
+  ],
+  "uyusma": "Konum SIMBAD (ICRS J2000). SIMBAD'dan ayrım: d3_bright 0.21°, openngc 0.0°. >0.1° fark: d3_bright 0.21°. Kadir kaynağı: SIMBAD; diğer değerler: d3_bright 3.6, openngc 3.60; SIMBAD V 3.6. Boyut kaynağı: OpenNGC. Takımyıldız: OpenNGC Const, SEDS sayfa başlığı ile aynı. Bağımsız ikinci kaynak bulamadım (OpenNGC ve Deep Sky Corner SIMBAD kaynaklı). d3b 0.21° farklı. Türkçe ad bulamadım (tr.wikipedia \"Collinder_399\" ve \"Brocchi_Kümesi\" yok)."
+ },
+ {
+  "id": "Albireo",
+  "kisa": "Albireo",
+  "ad_tr": "Albireo",
+  "ad_en": "Albireo",
+  "tur": "cift_yildiz",
+  "ra_deg": 292.68032,
+  "dec_deg": 27.95967,
+  "kadir": 3.08,
+  "boyut": null,
+  "takimyildiz": "Cyg",
+  "kaynaklar": [
+   {
+    "ad": "SIMBAD",
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?output.format=ASCII&Ident=bet01%20Cyg"
+   },
+   {
+    "ad": "Yale BSC (VizieR V/50)",
+    "url": "https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=V/50"
+   },
+   {
+    "ad": "d3-celestial stars.6.json",
+    "url": "https://github.com/ofrohn/d3-celestial/blob/master/data/stars.6.json"
+   },
+   {
+    "ad": "Türkçe Vikipedi (ad)",
+    "url": "https://tr.wikipedia.org/wiki/Albireo"
+   }
+  ],
+  "uyusma": "Konum ve V: SIMBAD; d3 stars.6 (HIP 95947, V 3.05) ve BSC (HR 7417, V 3.08) ile ≤0.001° uyumlu. Yoldaş * bet02 Cyg: RA 292.68915, Dec 27.96527, V 5.11 (SIMBAD); A–B ayrımı 34.6″ (SIMBAD konumlarından hesap). Türkçe ad alıntısı: '''Albireo''' (β Cyg, β Cygni, ...) Kuğu takımyıldızı içinde ... ikili yıldızdır. Takımyıldız: Bayer/Flamsteed tanımından (* bet01 Cyg) ve tr.wikipedia maddesinden."
+ },
+ {
+  "id": "Mizar",
+  "kisa": "Mizar",
+  "ad_tr": "Mizar",
+  "ad_en": "Mizar",
+  "tur": "cift_yildiz",
+  "ra_deg": 200.98143,
+  "dec_deg": 54.92536,
+  "kadir": 2.22,
+  "boyut": null,
+  "takimyildiz": "UMa",
+  "kaynaklar": [
+   {
+    "ad": "SIMBAD",
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?output.format=ASCII&Ident=zet01%20UMa"
+   },
+   {
+    "ad": "Yale BSC (VizieR V/50)",
+    "url": "https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=V/50"
+   },
+   {
+    "ad": "d3-celestial stars.6.json",
+    "url": "https://github.com/ofrohn/d3-celestial/blob/master/data/stars.6.json"
+   },
+   {
+    "ad": "Türkçe Vikipedi (ad)",
+    "url": "https://tr.wikipedia.org/wiki/Mizar"
+   }
+  ],
+  "uyusma": "Konum ve V: SIMBAD; d3 stars.6 (HIP 65378, V 2.23) ve BSC (HR 5054, V 2.27) ile ≤0.001° uyumlu. Yoldaş * zet02 UMa: RA 200.98467, Dec 54.92181, V 3.88 (SIMBAD); A–B ayrımı 14.4″ (SIMBAD konumlarından hesap). Türkçe ad alıntısı: '''Mizar''' yıldızı [[Ursa Major]] (Büyük Ayı) takımyıldızında bulunan bir yıldızdır.. Takımyıldız: Bayer/Flamsteed tanımından (* zet01 UMa) ve tr.wikipedia maddesinden."
+ },
+ {
+  "id": "Alcor",
+  "kisa": "Alcor",
+  "ad_tr": "Alcor",
+  "ad_en": "Alcor",
+  "tur": "cift_yildiz",
+  "ra_deg": 201.30641,
+  "dec_deg": 54.98796,
+  "kadir": 4.01,
+  "boyut": null,
+  "takimyildiz": "UMa",
+  "kaynaklar": [
+   {
+    "ad": "SIMBAD",
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?output.format=ASCII&Ident=g%20UMa"
+   },
+   {
+    "ad": "Yale BSC (VizieR V/50)",
+    "url": "https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=V/50"
+   },
+   {
+    "ad": "d3-celestial stars.6.json",
+    "url": "https://github.com/ofrohn/d3-celestial/blob/master/data/stars.6.json"
+   },
+   {
+    "ad": "Türkçe Vikipedi (ad)",
+    "url": "https://tr.wikipedia.org/wiki/Alcor_%28y%C4%B1ld%C4%B1z%29"
+   }
+  ],
+  "uyusma": "Konum ve V: SIMBAD; d3 stars.6 (HIP 65477, V 3.99) ve BSC (HR 5062, V 4.01) ile ≤0.001° uyumlu. Mizar A–Alcor ayrımı 11.81′ (hesap). Türkçe ad alıntısı: '''Alcor''', Büyük Ayı'da bulunan bir çift yıldız sistemidir. ... Mizar'ın daha sönük yoldaşıdır.. Takımyıldız: Bayer/Flamsteed tanımından (* g UMa) ve tr.wikipedia maddesinden."
+ }
+]

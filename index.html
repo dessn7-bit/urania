@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Urania</title>
+<meta name="description" content="Gökyüzü, deneyler, dersler ve hesaplar: kişisel astrofizik defteri">
+<meta name="theme-color" content="#0F1B2D">
+<link rel="manifest" href="./manifest.json">
+<link rel="icon" href="./icon-192.png">
+<link rel="apple-touch-icon" href="./icon-192.png">
+<link rel="stylesheet" href="./stil.css">
+</head>
+<body>
+<header class="ust">
+  <a class="marka" href="#gok" aria-label="Urania, ana sayfa">Urania</a>
+  <nav class="sekmeler" aria-label="Bölümler">
+    <a href="#gok" data-sekme="gok">Gökyüzü</a>
+    <a href="#deney" data-sekme="deney">Deneyler</a>
+    <a href="#ders" data-sekme="ders">Dersler</a>
+    <a href="#hesap" data-sekme="hesap">Hesap</a>
+  </nav>
+  <button class="kirmizi-dugme" id="kirmiziDugme" type="button" aria-pressed="false" title="Gece görüşünü koruyan kırmızı ekran">
+    <span class="nokta" aria-hidden="true"></span><span class="etiket">Kırmızı ışık</span>
+  </button>
+</header>
+
+<main id="ana">
+  <section id="b-gok" class="bolum" data-bolum="gok" hidden></section>
+  <section id="b-deney" class="bolum" data-bolum="deney" hidden></section>
+  <section id="b-ders" class="bolum" data-bolum="ders" hidden></section>
+  <section id="b-hesap" class="bolum" data-bolum="hesap" hidden></section>
+</main>
+
+<nav class="alt-sekmeler" aria-label="Bölümler">
+  <a href="#gok" data-sekme="gok"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M7 9l3 2 4-3 3 5M9 16l3-2"/></svg><span>Gökyüzü</span></a>
+  <a href="#deney" data-sekme="deney"><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="12" rx="10" ry="4.5"/><circle cx="12" cy="12" r="2.4"/><circle cx="21" cy="11" r="1.2"/></svg><span>Deneyler</span></a>
+  <a href="#ders" data-sekme="ders"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h6a2 2 0 012 2v12a2 2 0 00-2-2H4zM20 5h-6a2 2 0 00-2 2v12a2 2 0 012-2h6z"/></svg><span>Dersler</span></a>
+  <a href="#hesap" data-sekme="hesap"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 12h2M12 12h2M8 16h2M12 16h2M16 12v4"/></svg><span>Hesap</span></a>
+</nav>
+
+<script src="./lib/astronomy.browser.min.js"></script>
+<script src="./gok.js"></script>
+<script src="./uygulama.js"></script>
+<script src="./harita.js"></script>
+<script src="./gozlem.js"></script>
+<script src="./simulasyon.js"></script>
+<script src="./dersler.js"></script>
+<script src="./hesap.js"></script>
+<script>Urania.basla();</script>
+</body>
+</html>

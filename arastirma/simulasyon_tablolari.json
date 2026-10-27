@@ -1,0 +1,391 @@
+{
+ "_not": "Sürüm 2 (2026-10-27): OpenStax kullanılmadı. Tüm değerler bu oturumda kaynağından çekilip okundu; hesaplanan sütunlar ayrıca belirtildi.",
+ "anakol_ozellikleri": {
+  "kaynak": "E. Mamajek, 'A Modern Mean Dwarf Stellar Color and Effective Temperature Sequence', sürüm 2022.04.16 (içeriğin çoğu Pecaut & Mamajek 2013, ApJS 208, 9, Tablo 5'te yayımlandı)",
+  "kaynak_url": "https://www.pas.rochester.edu/~emamajek/EEM_dwarf_UBVIJHK_colors_Teff.txt",
+  "sutunlar": [
+   "tayf_tipi",
+   "kutle_Msun",
+   "isima_gucu_Lsun",
+   "sicaklik_K",
+   "yaricap_Rsun"
+  ],
+  "satirlar": [
+   [
+    "O5V",
+    43,
+    347000.0,
+    41400,
+    11.45
+   ],
+   [
+    "B0V",
+    17.7,
+    44700.0,
+    31400,
+    7.16
+   ],
+   [
+    "B5V",
+    4.7,
+    589.0,
+    15700,
+    3.36
+   ],
+   [
+    "A0V",
+    2.18,
+    38.0,
+    9700,
+    2.193
+   ],
+   [
+    "A5V",
+    1.88,
+    12.3,
+    8100,
+    1.785
+   ],
+   [
+    "F0V",
+    1.61,
+    7.24,
+    7220,
+    1.728
+   ],
+   [
+    "F5V",
+    1.33,
+    3.63,
+    6550,
+    1.473
+   ],
+   [
+    "G0V",
+    1.06,
+    1.35,
+    5930,
+    1.1
+   ],
+   [
+    "G2V",
+    1.0,
+    1.02,
+    5770,
+    1.012
+   ],
+   [
+    "G5V",
+    0.98,
+    0.891,
+    5660,
+    0.977
+   ],
+   [
+    "K0V",
+    0.88,
+    0.457,
+    5270,
+    0.813
+   ],
+   [
+    "K5V",
+    0.7,
+    0.174,
+    4440,
+    0.701
+   ],
+   [
+    "M0V",
+    0.57,
+    0.0692,
+    3850,
+    0.588
+   ],
+   [
+    "M3V",
+    0.37,
+    0.0162,
+    3430,
+    0.361
+   ]
+  ],
+  "not": "tayf_tipi, kutle_Msun (tablodaki 'Msun'), sicaklik_K ('Teff') ve yaricap_Rsun ('R_Rsun') tablodan aynen alındı. isima_gucu_Lsun = 10^logL olarak bu oturumda hesaplandı (3 anlamlı basamak). Tablonun notu: 'The adopted mean masses a for a given dwarf subtype are tentative.' Aynı tablonun ham logL değerleri: O5V 5.54, B0V 4.65, B5V 2.77, A0V 1.58, A5V 1.09, F0V 0.86, F5V 0.56, G0V 0.13, G2V 0.01, G5V -0.05, K0V -0.34, K5V -0.76, M0V -1.16, M3V -1.79."
+ },
+ "anakol_omurleri": {
+  "kaynak": "Ömür ilişkisi: Wikipedia 'Main sequence'; kütle ve ışıma gücü: Mamajek tablosu (yukarıda)",
+  "kaynak_url": "https://en.wikipedia.org/wiki/Main_sequence",
+  "ikinci_kaynak_url": "https://www.pas.rochester.edu/~emamajek/EEM_dwarf_UBVIJHK_colors_Teff.txt",
+  "iliski_alinti": "τ_MS ≈ 10^10 years [M/M☉][L☉/L] = 10^10 years [M/M☉]^-2.5",
+  "iliski_baglam_alinti": "The Sun has been a main-sequence star for about 4.5 billion years and it will start to expand rapidly towards a red giant in 6.5 billion years, for a total main-sequence lifetime of roughly 10^10 years.",
+  "sutunlar": [
+   "tayf_tipi",
+   "yuzey_sicakligi_K",
+   "kutle_Msun",
+   "anakol_omru_yil"
+  ],
+  "satirlar": [
+   [
+    "O5V",
+    41400,
+    43,
+    1240000.0
+   ],
+   [
+    "B0V",
+    31400,
+    17.7,
+    3960000.0
+   ],
+   [
+    "B5V",
+    15700,
+    4.7,
+    79800000.0
+   ],
+   [
+    "A0V",
+    9700,
+    2.18,
+    573000000.0
+   ],
+   [
+    "A5V",
+    8100,
+    1.88,
+    1530000000.0
+   ],
+   [
+    "F0V",
+    7220,
+    1.61,
+    2220000000.0
+   ],
+   [
+    "F5V",
+    6550,
+    1.33,
+    3660000000.0
+   ],
+   [
+    "G0V",
+    5930,
+    1.06,
+    7860000000.0
+   ],
+   [
+    "G2V",
+    5770,
+    1.0,
+    9770000000.0
+   ],
+   [
+    "G5V",
+    5660,
+    0.98,
+    11000000000.0
+   ],
+   [
+    "K0V",
+    5270,
+    0.88,
+    19300000000.0
+   ],
+   [
+    "K5V",
+    4440,
+    0.7,
+    40300000000.0
+   ],
+   [
+    "M0V",
+    3850,
+    0.57,
+    82400000000.0
+   ],
+   [
+    "M3V",
+    3430,
+    0.37,
+    228000000000.0
+   ]
+  ],
+  "not": "anakol_omru_yil bu oturumda τ = 10^10 yıl × (M/M☉) / (L/L☉) ile hesaplandı (3 anlamlı basamak). Bu bir yaklaşımdır: yıldızın tüm kütlesinin yakıt olduğu ve ışıma gücünün sabit kaldığı varsayılır; gerçek evrim modelleri farklı değerler verebilir. G2V için 9,77×10^9 yıl çıkar (Wikipedia: 'roughly 10^10 years')."
+ },
+ "tayf_sinifi_sicakliklari": {
+  "kaynak": "Wikipedia, 'Stellar classification' (Harvard sınıflaması tablosu)",
+  "kaynak_url": "https://en.wikipedia.org/wiki/Stellar_classification",
+  "sutunlar": [
+   "sinif",
+   "sicaklik_min_K",
+   "sicaklik_max_K"
+  ],
+  "satirlar": [
+   [
+    "O",
+    33000,
+    null
+   ],
+   [
+    "B",
+    10000,
+    33000
+   ],
+   [
+    "A",
+    7300,
+    10000
+   ],
+   [
+    "F",
+    6000,
+    7300
+   ],
+   [
+    "G",
+    5300,
+    6000
+   ],
+   [
+    "K",
+    3900,
+    5300
+   ],
+   [
+    "M",
+    2300,
+    3900
+   ]
+  ],
+  "not": "Tabloda O için '≥ 33,000 K' yazar (üst sınır yok). Mamajek tablosu ayrıntılı alt sınıf sıcaklıkları verir (anakol_ozellikleri)."
+ },
+ "nihai_son": {
+  "kaynak": "Wikipedia 'Stellar evolution', 'White dwarf', 'Type II supernova', 'Tolman–Oppenheimer–Volkoff limit'; NASA 'Types of Black Holes'",
+  "kaynak_url": "https://en.wikipedia.org/wiki/Stellar_evolution",
+  "sutunlar": [
+   "baslangic_kutlesi_Msun_aynen",
+   "min",
+   "max",
+   "nihai_durum_aynen",
+   "nihai_durum_tr"
+  ],
+  "satirlar": [
+   [
+    "Objects smaller than 13 MJ",
+    null,
+    0.0125,
+    "classified as sub-brown dwarfs (but if they orbit around another stellar object they are classified as planets)",
+    "Kahverengi cüce altı cisim ya da (bir yıldızın çevresinde dönüyorsa) gezegen"
+   ],
+   [
+    "less than roughly 0.08 M☉ ... (13 Jupiter masses (MJ), 2.5 × 1028 kg, or 0.0125 M☉)",
+    0.0125,
+    0.08,
+    "These are known as brown dwarfs.",
+    "Kahverengi cüce"
+   ],
+   [
+    "Stars with very low mass",
+    0.08,
+    0.5,
+    "end its evolution as a helium white dwarf composed chiefly of helium-4 nuclei",
+    "Helyum beyaz cüce (kuramsal: süreç evrenin yaşından uzun sürer)"
+   ],
+   [
+    "between 0.5 and 8 M☉",
+    0.5,
+    8,
+    "It will then expel most of its outer material to form a planetary nebula, leaving only the carbon–oxygen core.",
+    "Gezegenimsi bulutsu + karbon–oksijen beyaz cüce"
+   ],
+   [
+    "perhaps 8 to 10 M☉",
+    8,
+    10,
+    "may leave a remnant white dwarf composed chiefly of oxygen, neon, and magnesium, provided that its core does not collapse",
+    "Oksijen–neon–magnezyum beyaz cüce (çekirdek çökmezse; çökerse süpernova)"
+   ],
+   [
+    "more than eight times the Sun's mass ... near the threshold",
+    10,
+    20,
+    "it creates a city-sized, superdense neutron star",
+    "Çekirdek çöküşü süpernovası + nötron yıldızı"
+   ],
+   [
+    "around 20 times the Sun's mass or more",
+    20,
+    null,
+    "the star's core collapses into a stellar-mass black hole",
+    "Çekirdek çöküşü (süpernova) + yıldız kütleli kara delik"
+   ]
+  ],
+  "satir_kaynaklari": [
+   "https://en.wikipedia.org/wiki/Stellar_evolution",
+   "https://en.wikipedia.org/wiki/Stellar_evolution",
+   "https://en.wikipedia.org/wiki/White_dwarf",
+   "https://en.wikipedia.org/wiki/White_dwarf",
+   "https://en.wikipedia.org/wiki/White_dwarf",
+   "https://science.nasa.gov/universe/black-holes/types/",
+   "https://science.nasa.gov/universe/black-holes/types/"
+  ],
+  "not": "Kaynaklar sınırlarda tam anlaşmıyor; yaygın değerler seçildi. (1) Helyum beyaz cüce üst sınırı: White dwarf maddesi C–O beyaz cüce için 'between 0.5 and 8 M☉' der; Helium flash maddesi 'less than about 0.5 M☉' yıldızlarda helyumun hiç tutuşmadığını, Main sequence maddesi ise '<0.23 M☉' yıldızların doğrudan beyaz cüce olacağını yazar. 0,5 seçildi. (2) O–Ne–Mg beyaz cüce: White dwarf 'perhaps 8 to 10 M☉', Stellar evolution 'about 8-12 solar masses' der; 8–10 seçildi. (3) Nötron yıldızı / kara delik geçişi: NASA 'around 20 times the Sun's mass or more' der; TOV limiti maddesi limiti 'an original stellar mass of 15 to 20 M☉' ile ilişkilendirir; Type II supernova maddesi çekirdek çöküşü süpernovası için yıldız kütlesinin 'at least 8 times, but no more than 40 to 50 times' olması gerektiğini yazar; Stellar evolution maddesi 'the exact relation between the initial mass of the star and the final remnant is also not completely certain' der. 20 seçildi. Nötron yıldızı satırının alt sınırı 10, O–Ne–Mg satırıyla çakışmayı önlemek için seçildi (NASA süpernova eşiğini 'more than eight times' olarak verir). (4) Kalıntı olarak nötron yıldızının üst kütlesi 'currently estimated at between 2 and 3 M☉' (Stellar evolution)."
+ },
+ "referans_degerler": [
+  {
+   "ad": "M87* kütlesi",
+   "deger": 6500000000.0,
+   "hata": 700000000.0,
+   "birim": "Msun",
+   "alinti": "derive a central mass of M = (6.5+/-0.7) x 10^9 Msun",
+   "kaynak_url": "https://arxiv.org/abs/1906.11238",
+   "ikinci_kaynak_alinti": "This black hole resides 55 million light-years from Earth and has a mass 6.5 billion times that of the Sun",
+   "ikinci_kaynak_url": "https://www.eso.org/public/news/eso1907/"
+  },
+  {
+   "ad": "M87* uzaklığı",
+   "deger": 55000000.0,
+   "birim": "ışık yılı",
+   "alinti": "This black hole resides 55 million light-years from Earth",
+   "kaynak_url": "https://www.eso.org/public/news/eso1907/"
+  },
+  {
+   "ad": "Proxima Centauri uzaklığı",
+   "deger": 4.24,
+   "birim": "ışık yılı",
+   "alinti": "red dwarf star Proxima Centauri is 4.24 light-years away",
+   "kaynak_url": "https://science.nasa.gov/sun/facts/",
+   "ikinci_kaynak_alinti": "Just over four light-years from the Solar System lies a red dwarf star that has been named Proxima Centauri",
+   "ikinci_kaynak_url": "https://www.eso.org/public/news/eso1629/"
+  },
+  {
+   "ad": "Galaksi merkezine uzaklık (R0)",
+   "deger": 8178,
+   "hata_istatistik": 13,
+   "hata_sistematik": 22,
+   "birim": "parsek",
+   "isik_yili_karsiligi_hesap": 26673,
+   "alinti": "R0 = 8178 +- 13(stat.) +- 22(sys.) pc",
+   "kaynak_url": "https://arxiv.org/abs/1904.05721",
+   "ikinci_kaynak_alinti": "The researchers also managed to fine-tune the distance to Sagittarius A*, finding it to be 27 000 light-years away.",
+   "ikinci_kaynak_url": "https://www.eso.org/public/news/eso2119/",
+   "not": "Işık yılı karşılığı 1 pc = 3,2616 ışık yılı ile bu oturumda hesaplandı."
+  },
+  {
+   "ad": "Sgr A* kütlesi",
+   "deger": 4300000.0,
+   "birim": "Msun",
+   "alinti": "M = 4.30 x 10^6 M_sun with a precision of about +-0.25%",
+   "kaynak_url": "https://arxiv.org/abs/2112.07478",
+   "ikinci_kaynak_alinti": "a black hole of mass 4.30 million times that of the Sun",
+   "ikinci_kaynak_url": "https://www.eso.org/public/news/eso2119/"
+  },
+  {
+   "ad": "Andromeda uzaklığı",
+   "deger": 2500000.0,
+   "birim": "ışık yılı",
+   "alinti": "Andromeda is the closest large galaxy to our Milky Way galaxy, and is located 2.5 million light-years from our sun.",
+   "kaynak_url": "https://science.nasa.gov/photojournal/our-neighbor-andromeda/"
+  }
+ ]
+}

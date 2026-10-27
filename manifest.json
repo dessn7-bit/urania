@@ -1,0 +1,21 @@
+{
+  "name": "Urania",
+  "short_name": "Urania",
+  "description": "Gökyüzü, deneyler, dersler ve hesaplar: kişisel astrofizik defteri",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0F1B2D",
+  "theme_color": "#0F1B2D",
+  "lang": "tr",
+  "shortcuts": [
+    { "name": "Bu gece", "url": "./index.html#gok", "icons": [{ "src": "./icon-192.png", "sizes": "192x192" }] },
+    { "name": "Dersler", "url": "./index.html#ders", "icons": [{ "src": "./icon-192.png", "sizes": "192x192" }] }
+  ],
+  "icons": [
+    { "src": "./icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "./icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "./icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

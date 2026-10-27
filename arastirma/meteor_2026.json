@@ -1,0 +1,632 @@
+{
+ "aciklama": "IMO 2026 Meteor Shower Calendar (ed. Jürgen Rendtel, IMO INFO(3-25), DOI 10.13140/RG.2.2.36179.08480) – Tablo 5 \"Working List of Visual Meteor Showers\" ve ilgili bölümler. 2027 Quadrantidleri IMO 2027 takviminden (IMO INFO(3-26)).",
+ "olusturma": "2026-10-27",
+ "kaynaklar": [
+  {
+   "ad": "IMO 2026 Meteor Shower Calendar (PDF, 28 s., oluşturma 2025-06-27)",
+   "url": "https://www.imo.net/files/meteor-shower/cal2026.pdf"
+  },
+  {
+   "ad": "IMO 2027 Meteor Shower Calendar (PDF, 28 s., oluşturma 2026-07-03)",
+   "url": "https://www.imo.net/files/data/calendar/cal2027.pdf"
+  },
+  {
+   "ad": "IMO duyurusu: The 2026 Meteor Shower Calendar Is Here (30 Haziran 2025)",
+   "url": "https://www.imo.net/the-2026-meteor-shower-calendar-is-here/"
+  },
+  {
+   "ad": "IMO web takvimi (yalnız şu an ve sonrası için; 2026-10-27 itibarıyla)",
+   "url": "https://www.imo.net/calendar/"
+  }
+ ],
+ "birimler": {
+  "gunes_boylami": "derece, ekinoks J2000.0",
+  "radyant": "derece (α sağ açıklık, δ dik açıklık), maksimum anı",
+  "hiz": "km/s (atmosfer öncesi)",
+  "ZHR": "saatlik zenit oranı, sınır kadir +6.5"
+ },
+ "ay_evreleri_2026_imo_tablo4": {
+  "yeni_ay": [
+   "01-18",
+   "02-17",
+   "03-19",
+   "04-17",
+   "05-16",
+   "06-15",
+   "07-14",
+   "08-12",
+   "09-11",
+   "10-10",
+   "11-09",
+   "12-09"
+  ],
+  "ilk_dordun": [
+   "01-26",
+   "02-24",
+   "03-25",
+   "04-24",
+   "05-23",
+   "06-21",
+   "07-21",
+   "08-20",
+   "09-18",
+   "10-18",
+   "11-17",
+   "12-17"
+  ],
+  "dolunay": [
+   "01-03",
+   "02-01",
+   "03-03",
+   "04-02",
+   "05-01",
+   "05-31",
+   "06-30",
+   "07-29",
+   "08-28",
+   "09-26",
+   "10-26",
+   "11-24",
+   "12-24"
+  ],
+  "son_dordun": [
+   "01-10",
+   "02-09",
+   "03-11",
+   "04-10",
+   "05-09",
+   "06-08",
+   "07-07",
+   "08-06",
+   "09-04",
+   "10-03",
+   "11-01",
+   "12-01",
+   "12-30"
+  ],
+  "kontrol": "astronomy-engine ile hesaplanan 2026 ana evre tarihleri (UT) tablo ile aynı; tek fark Haziran dolunayı: hesap 2026-06-29 23:57 UT, tablo 30 Haziran (gece yarısına 3 dk)."
+ },
+ "notlar": [
+  "Tüm tarih/saatler UT. ZHR ve radyant değerleri Tablo 5'ten; bölüm metninde farklı yazılmışsa \"tutarsizlik\" alanında belirtildi.",
+  "astronomy-engine kontrolü: Tablo 5'teki λ⊙ değerinden hesaplanan anlar IMO'nun verdiği saatlerle uyumlu (QUA 21:24 vs ~21h; LYR 19:46 vs 19:40; PER 02:09 vs 02–04h; DRA 01:21 vs 01h; LEO 23:52 vs 23:45; GEM 13:49 vs 14h; URS 22:17 vs 22h; QUA 2027 03:34 vs 03:25).",
+  "Türkçe yağmur adları IMO'da yok; bu dosyada uydurulmadı."
+ ],
+ "yagmurlar": [
+  {
+   "ad_en": "Quadrantids",
+   "imo_kod": "010 QUA",
+   "iau_no": 10,
+   "kod": "QUA",
+   "aktivite": "2025-12-28 / 2026-01-12",
+   "maksimum_tarih": "2026-01-03",
+   "gunes_boylami_J2000_deg": 283.15,
+   "maksimum_saat_UT": "~21:00",
+   "ZHR": 80,
+   "radyant_maksimumda": {
+    "ra_deg": 230,
+    "dec_deg": 49
+   },
+   "hiz_km_s": 41,
+   "nufus_indeksi_r": 2.1,
+   "ay_kosulu_imo": [
+    "At this time we find the Full Moon near β Geminorum thus illuminating the sky during the entire night. Even if the sky is very transparent and moonlight is shielded, the number of visual shower meteors will be reduced a lot."
+   ],
+   "kaynak": {
+    "url": "https://www.imo.net/files/meteor-shower/cal2026.pdf",
+    "sayfa": "3, 25",
+    "tablo5_satiri": "Quadrantids (010 QUA) Dec 28–Jan 12 Jan 03 283°.15 230° +49° 41 2.1 80",
+    "maksimum_alinti": "the Quadrantids (010 QUA), peak on January 3 close to 21h UT."
+   },
+   "bagimsiz_kontrol_astronomy_engine": {
+    "aciklama": "λ⊙ (J2000 ortalama ekliptik) değerinden hesaplanan an ve o andaki Ay aydınlanma oranı; astronomy-engine 2.1.19 (projede kurulu)",
+    "hesaplanan_an_UT": "2026-01-03T21:24Z",
+    "ay_aydinlanma_orani": 0.996,
+    "ay_buyuyor_mu": false
+   },
+   "yil": 2026
+  },
+  {
+   "ad_en": "April Lyrids",
+   "imo_kod": "006 LYR",
+   "iau_no": 6,
+   "kod": "LYR",
+   "aktivite": "2026-04-14 / 2026-04-30",
+   "maksimum_tarih": "2026-04-22",
+   "gunes_boylami_J2000_deg": 32.32,
+   "maksimum_saat_UT": "19:40",
+   "ZHR": 18,
+   "radyant_maksimumda": {
+    "ra_deg": 271,
+    "dec_deg": 34
+   },
+   "hiz_km_s": 49,
+   "nufus_indeksi_r": 2.1,
+   "ay_kosulu_imo": [
+    "The Moon reaches its first quarter on April 24, so will cause no observing problems."
+   ],
+   "kaynak": {
+    "url": "https://www.imo.net/files/meteor-shower/cal2026.pdf",
+    "sayfa": "7, 25",
+    "tablo5_satiri": "April Lyrids (006 LYR) Apr 14–Apr 30 Apr 22 32°.32 271° +34° 49 2.1 18",
+    "maksimum_alinti": "Maximum: April 22, 19h 40m UT (λ⊙ = 32°.32, but may vary – see text); ZHR = 18 (can be variable, up to 90)"
+   },
+   "bagimsiz_kontrol_astronomy_engine": {
+    "aciklama": "λ⊙ (J2000 ortalama ekliptik) değerinden hesaplanan an ve o andaki Ay aydınlanma oranı; astronomy-engine 2.1.19 (projede kurulu)",
+    "hesaplanan_an_UT": "2026-04-22T19:46Z",
+    "ay_aydinlanma_orani": 0.358,
+    "ay_buyuyor_mu": true
+   },
+   "ek_bilgi": "Son yıllarda maksimum λ⊙ = 32.2–32.5 arasında (2026 Nisan 22 16:40 – 23 Nisan 00:00 UT).",
+   "yil": 2026
+  },
+  {
+   "ad_en": "eta-Aquariids",
+   "imo_kod": "031 ETA",
+   "iau_no": 31,
+   "kod": "ETA",
+   "aktivite": "2026-04-19 / 2026-05-28",
+   "maksimum_tarih": "2026-05-06",
+   "gunes_boylami_J2000_deg": 45.5,
+   "maksimum_saat_UT": null,
+   "ZHR": 50,
+   "radyant_maksimumda": {
+    "ra_deg": 338,
+    "dec_deg": -1
+   },
+   "hiz_km_s": 66,
+   "nufus_indeksi_r": 2.4,
+   "ay_kosulu_imo": [
+    "Observations of the maximum of the η-Aquariids (031 ETA) will be disturbed by the gibbous waning Moon.",
+    "The η-Aquariid maximum occurs about four days after the Full Moon"
+   ],
+   "kaynak": {
+    "url": "https://www.imo.net/files/meteor-shower/cal2026.pdf",
+    "sayfa": "1, 5, 25",
+    "tablo5_satiri": "η-Aquariids (031 ETA) Apr 19–May 28 May 06 45°.5 338° −01° 66 2.4 50",
+    "maksimum_alinti": null
+   },
+   "bagimsiz_kontrol_astronomy_engine": {
+    "aciklama": "λ⊙ (J2000 ortalama ekliptik) değerinden hesaplanan an ve o andaki Ay aydınlanma oranı; astronomy-engine 2.1.19 (projede kurulu)",
+    "hesaplanan_an_UT": "2026-05-06T09:22Z",
+    "ay_aydinlanma_orani": 0.813,
+    "ay_buyuyor_mu": false
+   },
+   "ek_bilgi": "2026 takviminde ETA için ayrı bölüm yok; saat verilmemiş.",
+   "yil": 2026
+  },
+  {
+   "ad_en": "Southern delta-Aquariids",
+   "imo_kod": "005 SDA",
+   "iau_no": 5,
+   "kod": "SDA",
+   "aktivite": "2026-07-12 / 2026-08-23",
+   "maksimum_tarih": "2026-07-31",
+   "gunes_boylami_J2000_deg": 128,
+   "maksimum_saat_UT": null,
+   "ZHR": 25,
+   "radyant_maksimumda": {
+    "ra_deg": 340,
+    "dec_deg": -16
+   },
+   "hiz_km_s": 41,
+   "nufus_indeksi_r": 2.5,
+   "ay_kosulu_imo": [
+    "The end-July period when the highest CAP and SDA rates are due, is close to Full Moon."
+   ],
+   "kaynak": {
+    "url": "https://www.imo.net/files/meteor-shower/cal2026.pdf",
+    "sayfa": "9, 25",
+    "tablo5_satiri": "S. δ-Aquariids (005 SDA) Jul 12–Aug 23 Jul 31 128° 340° −16° 41 2.5 25",
+    "maksimum_alinti": null
+   },
+   "bagimsiz_kontrol_astronomy_engine": {
+    "aciklama": "λ⊙ (J2000 ortalama ekliptik) değerinden hesaplanan an ve o andaki Ay aydınlanma oranı; astronomy-engine 2.1.19 (projede kurulu)",
+    "hesaplanan_an_UT": "2026-07-31T13:35Z",
+    "ay_aydinlanma_orani": 0.963,
+    "ay_buyuyor_mu": false
+   },
+   "yil": 2026
+  },
+  {
+   "ad_en": "alpha-Capricornids",
+   "imo_kod": "001 CAP",
+   "iau_no": 1,
+   "kod": "CAP",
+   "aktivite": "2026-07-03 / 2026-08-15",
+   "maksimum_tarih": "2026-07-31",
+   "gunes_boylami_J2000_deg": 128,
+   "maksimum_saat_UT": null,
+   "ZHR": 5,
+   "radyant_maksimumda": {
+    "ra_deg": 307,
+    "dec_deg": -10
+   },
+   "hiz_km_s": 23,
+   "nufus_indeksi_r": 2.5,
+   "ay_kosulu_imo": [
+    "The end-July period when the highest CAP and SDA rates are due, is close to Full Moon."
+   ],
+   "kaynak": {
+    "url": "https://www.imo.net/files/meteor-shower/cal2026.pdf",
+    "sayfa": "9, 25",
+    "tablo5_satiri": "α-Capricornids (001 CAP) Jul 03–Aug 15 Jul 31 128° 307° −10° 23 2.5 5",
+    "maksimum_alinti": null
+   },
+   "bagimsiz_kontrol_astronomy_engine": {
+    "aciklama": "λ⊙ (J2000 ortalama ekliptik) değerinden hesaplanan an ve o andaki Ay aydınlanma oranı; astronomy-engine 2.1.19 (projede kurulu)",
+    "hesaplanan_an_UT": "2026-07-31T13:35Z",
+    "ay_aydinlanma_orani": 0.963,
+    "ay_buyuyor_mu": false
+   },
+   "yil": 2026
+  },
+  {
+   "ad_en": "Perseids",
+   "imo_kod": "007 PER",
+   "iau_no": 7,
+   "kod": "PER",
+   "aktivite": "2026-07-17 / 2026-08-24",
+   "maksimum_tarih": "2026-08-13",
+   "gunes_boylami_J2000_deg": "140.0–140.1 (düğüm)",
+   "maksimum_saat_UT": "02:00–04:00",
+   "ZHR": 100,
+   "radyant_maksimumda": {
+    "ra_deg": 48,
+    "dec_deg": 58
+   },
+   "hiz_km_s": 59,
+   "nufus_indeksi_r": 2.2,
+   "ay_kosulu_imo": [
+    "New Moon on August 12 provides excellent conditions for all optical observations."
+   ],
+   "kaynak": {
+    "url": "https://www.imo.net/files/meteor-shower/cal2026.pdf",
+    "sayfa": "11, 25",
+    "tablo5_satiri": "Perseids (007 PER) Jul 17–Aug 24 Aug 13 140°.0 48° +58° 59 2.2 100",
+    "maksimum_alinti": "Maximum: August 13, 02h to 04h UT (node at λ⊙ = 140°.0 − 140°.1), but see text; ZHR = 100"
+   },
+   "bagimsiz_kontrol_astronomy_engine": {
+    "aciklama": "λ⊙ (J2000 ortalama ekliptik) değerinden hesaplanan an ve o andaki Ay aydınlanma oranı; astronomy-engine 2.1.19 (projede kurulu)",
+    "hesaplanan_an_UT": "2026-08-13T02:09Z",
+    "ay_aydinlanma_orani": 0.002,
+    "ay_buyuyor_mu": true
+   },
+   "ek_bilgi": "1079 toz izi: 12 Ağu 16:53 UT (λ⊙ 139.859), aktivite tahmini yok. Jenniskens filamenti: λ⊙ 139.97 ± 0.2 = 13 Ağu ~01 UT (±5 sa), ZHR ≤ 43. Maslov: arka plan aktivitesi 2026'ya kadar ZHR 100'ün belirgin altında beklenir.",
+   "yil": 2026
+  },
+  {
+   "ad_en": "October Draconids",
+   "imo_kod": "009 DRA",
+   "iau_no": 9,
+   "kod": "DRA",
+   "aktivite": "2026-10-06 / 2026-10-10",
+   "maksimum_tarih": "2026-10-09",
+   "gunes_boylami_J2000_deg": 195.4,
+   "maksimum_saat_UT": "01:00",
+   "ZHR": 5,
+   "radyant_maksimumda": {
+    "ra_deg": 262,
+    "dec_deg": 54
+   },
+   "hiz_km_s": 20,
+   "nufus_indeksi_r": 2.6,
+   "ay_kosulu_imo": [
+    "Perfectly moonless observing conditions for the October Draconids allow the recording of data during their entire activity period this year."
+   ],
+   "kaynak": {
+    "url": "https://www.imo.net/files/meteor-shower/cal2026.pdf",
+    "sayfa": "15–16, 25",
+    "tablo5_satiri": "Draconids (009 DRA) Oct 06–Oct 10 Oct 09 195°.4 262° +54° 20 2.6 5",
+    "maksimum_alinti": "Maximum: October 9, 01h UT (λ⊙ = 195°.4); ZHR = 5 (?); Radiant: α = 263°, δ = +56°"
+   },
+   "bagimsiz_kontrol_astronomy_engine": {
+    "aciklama": "λ⊙ (J2000 ortalama ekliptik) değerinden hesaplanan an ve o andaki Ay aydınlanma oranı; astronomy-engine 2.1.19 (projede kurulu)",
+    "hesaplanan_an_UT": "2026-10-09T01:21Z",
+    "ay_aydinlanma_orani": 0.029,
+    "ay_buyuyor_mu": false
+   },
+   "tutarsizlik": "Radyant: Tablo 5 = 262°/+54°, bölüm metni = 263°/+56°. Bu dosyada Tablo 5 değeri (çalışma listesi) kullanıldı.",
+   "yil": 2026
+  },
+  {
+   "ad_en": "Orionids",
+   "imo_kod": "008 ORI",
+   "iau_no": 8,
+   "kod": "ORI",
+   "aktivite": "2026-10-02 / 2026-11-07",
+   "maksimum_tarih": "2026-10-21",
+   "gunes_boylami_J2000_deg": 208,
+   "maksimum_saat_UT": null,
+   "ZHR": 20,
+   "radyant_maksimumda": {
+    "ra_deg": 95,
+    "dec_deg": 16
+   },
+   "hiz_km_s": 66,
+   "nufus_indeksi_r": 2.5,
+   "ay_kosulu_imo": [
+    "The maxima of the Orionids (008 ORI) and Leonids (013 LEO) occur when the Moon is near its first quarter.",
+    "The waxing moon leaves some moon-free hours at least until the maximum of the shower.",
+    "No moonlight disturbance will affect near-maximum observations of the April Lyrids, the September ε-Perseids, the October Draconids, the Orionids and the Leonids."
+   ],
+   "kaynak": {
+    "url": "https://www.imo.net/files/meteor-shower/cal2026.pdf",
+    "sayfa": "1, 14, 16–17, 25",
+    "tablo5_satiri": "Orionids (008 ORI) Oct 02–Nov 07 Oct 21 208° 95° +16° 66 2.5 20",
+    "maksimum_alinti": "Maximum: October 21 (λ⊙ = 208°); ZHR = 20+"
+   },
+   "bagimsiz_kontrol_astronomy_engine": {
+    "aciklama": "λ⊙ (J2000 ortalama ekliptik) değerinden hesaplanan an ve o andaki Ay aydınlanma oranı; astronomy-engine 2.1.19 (projede kurulu)",
+    "hesaplanan_an_UT": "2026-10-21T18:28Z",
+    "ay_aydinlanma_orani": 0.786,
+    "ay_buyuyor_mu": true
+   },
+   "imo_web_takvimi": {
+    "aktivite": "2 October – 7 November 2026",
+    "tepe_gecesi": "21–22 Oct",
+    "ay": "74% illuminated · Waxing gibbous ... Expect significant interference while the Moon is above the horizon",
+    "url": "https://www.imo.net/calendar/",
+    "erisim": "2026-10-27",
+    "not": "IMO web takviminin metni AMS sitesindekiyle aynı platformdan geliyor; bağımsız ikinci kaynak sayılmaz."
+   },
+   "tutarsizlik": "PDF girişi \"no moonlight disturbance\" diyor; IMO web takvimi %74 şişkin Ay ve \"significant interference\" diyor; hesap λ⊙=208° anında %79. Ay ilk dördünde (18 Ekim), radyant gece yarısından sonra yükseldiğinden PDF ayın batışından sonraki saatleri kastediyor olabilir — bu yorum, kaynakta açıkça yazmıyor.",
+   "yil": 2026
+  },
+  {
+   "ad_en": "Southern Taurids",
+   "imo_kod": "002 STA",
+   "iau_no": 2,
+   "kod": "STA",
+   "aktivite": "2026-09-20 / 2026-11-20",
+   "maksimum_tarih": "2026-11-05",
+   "gunes_boylami_J2000_deg": 223,
+   "maksimum_saat_UT": null,
+   "ZHR": 7,
+   "radyant_maksimumda": {
+    "ra_deg": 52,
+    "dec_deg": 15
+   },
+   "hiz_km_s": 27,
+   "nufus_indeksi_r": 2.3,
+   "ay_kosulu_imo": [
+    "The two Taurid branches reach their highest rates around November 05 (Southern Taurids, 002 STA) and November 12 (Northern Taurids, 017 NTA), respectively, in a moon-free period."
+   ],
+   "kaynak": {
+    "url": "https://www.imo.net/files/meteor-shower/cal2026.pdf",
+    "sayfa": "14, 17, 25",
+    "tablo5_satiri": "S. Taurids (002 STA) Sep 20–Nov 20 Nov 05 223° 52° +15° 27 2.3 7",
+    "maksimum_alinti": "Maximum: November 05 (λ⊙ = 223°); ZHR = 5–10"
+   },
+   "bagimsiz_kontrol_astronomy_engine": {
+    "aciklama": "λ⊙ (J2000 ortalama ekliptik) değerinden hesaplanan an ve o andaki Ay aydınlanma oranı; astronomy-engine 2.1.19 (projede kurulu)",
+    "hesaplanan_an_UT": "2026-11-05T19:03Z",
+    "ay_aydinlanma_orani": 0.124,
+    "ay_buyuyor_mu": false
+   },
+   "imo_web_takvimi": {
+    "aktivite": "20 September – 20 November 2026",
+    "tepe_gecesi": "4–5 Nov",
+    "ay": "25% illuminated · Waning crescent",
+    "url": "https://www.imo.net/calendar/",
+    "erisim": "2026-10-27",
+    "not": "IMO web takviminin metni AMS sitesindekiyle aynı platformdan geliyor; bağımsız ikinci kaynak sayılmaz."
+   },
+   "ek_bilgi": "Erken maksimum: ~13 Ekim, ZHR ~5 (Koseki: 2026'da ortalamadan biraz yüksek olabilir).",
+   "yil": 2026
+  },
+  {
+   "ad_en": "Northern Taurids",
+   "imo_kod": "017 NTA",
+   "iau_no": 17,
+   "kod": "NTA",
+   "aktivite": "2026-10-20 / 2026-12-10",
+   "maksimum_tarih": "2026-11-12",
+   "gunes_boylami_J2000_deg": 230,
+   "maksimum_saat_UT": null,
+   "ZHR": 5,
+   "radyant_maksimumda": {
+    "ra_deg": 58,
+    "dec_deg": 22
+   },
+   "hiz_km_s": 29,
+   "nufus_indeksi_r": 2.3,
+   "ay_kosulu_imo": [
+    "New Moon on November 9 allows undisturbed optical observations especially in the period between the dates given as maxima of the two Taurid branches."
+   ],
+   "kaynak": {
+    "url": "https://www.imo.net/files/meteor-shower/cal2026.pdf",
+    "sayfa": "14, 18, 25",
+    "tablo5_satiri": "N. Taurids (017 NTA) Oct 20–Dec 10 Nov 12 230° 58° +22° 29 2.3 5",
+    "maksimum_alinti": "Maximum: November 12 (λ⊙ = 230°); ZHR = 5"
+   },
+   "bagimsiz_kontrol_astronomy_engine": {
+    "aciklama": "λ⊙ (J2000 ortalama ekliptik) değerinden hesaplanan an ve o andaki Ay aydınlanma oranı; astronomy-engine 2.1.19 (projede kurulu)",
+    "hesaplanan_an_UT": "2026-11-12T18:17Z",
+    "ay_aydinlanma_orani": 0.111,
+    "ay_buyuyor_mu": true
+   },
+   "imo_web_takvimi": {
+    "aktivite": "20 October – 10 December 2026",
+    "tepe_gecesi": "11–12 Nov",
+    "ay": "4% illuminated · Waxing crescent",
+    "url": "https://www.imo.net/calendar/",
+    "erisim": "2026-10-27",
+    "not": "IMO web takviminin metni AMS sitesindekiyle aynı platformdan geliyor; bağımsız ikinci kaynak sayılmaz."
+   },
+   "yil": 2026
+  },
+  {
+   "ad_en": "Leonids",
+   "imo_kod": "013 LEO",
+   "iau_no": 13,
+   "kod": "LEO",
+   "aktivite": "2026-11-06 / 2026-11-30",
+   "maksimum_tarih": "2026-11-17",
+   "gunes_boylami_J2000_deg": 235.27,
+   "maksimum_saat_UT": "23:45",
+   "ZHR": 15,
+   "radyant_maksimumda": {
+    "ra_deg": 152,
+    "dec_deg": 22
+   },
+   "hiz_km_s": 71,
+   "nufus_indeksi_r": 2.5,
+   "ay_kosulu_imo": [
+    "The maxima of the Orionids (008 ORI) and Leonids (013 LEO) occur when the Moon is near its first quarter."
+   ],
+   "kaynak": {
+    "url": "https://www.imo.net/files/meteor-shower/cal2026.pdf",
+    "sayfa": "14, 18, 25",
+    "tablo5_satiri": "Leonids (013 LEO) Nov 06–Nov 30 Nov 17 235°.27 152° +22° 71 2.5 15",
+    "maksimum_alinti": "Maximum: November 17, 23h 45m UT (nodal crossing at λ⊙ = 235°.27), but see text; ZHR ≈ 15"
+   },
+   "bagimsiz_kontrol_astronomy_engine": {
+    "aciklama": "λ⊙ (J2000 ortalama ekliptik) değerinden hesaplanan an ve o andaki Ay aydınlanma oranı; astronomy-engine 2.1.19 (projede kurulu)",
+    "hesaplanan_an_UT": "2026-11-17T23:52Z",
+    "ay_aydinlanma_orani": 0.551,
+    "ay_buyuyor_mu": true
+   },
+   "imo_web_takvimi": {
+    "aktivite": "6–30 November 2026",
+    "tepe_gecesi": "16–17 Nov",
+    "ay": "39% illuminated · Waxing crescent",
+    "url": "https://www.imo.net/calendar/",
+    "erisim": "2026-10-27",
+    "not": "IMO web takviminin metni AMS sitesindekiyle aynı platformdan geliyor; bağımsız ikinci kaynak sayılmaz."
+   },
+   "ek_bilgi": "Maslov (2007): 17 Kas 16:00 UT (λ⊙ 234.95), ZHR ~15. Düşük yoğunluklu iz geçişleri: 17 Kas 10:33, 18 Kas 21:55, 19 Kas 03:31, 03:52, 16:26, 16:42 UT (Sato/Vaubaillon).",
+   "tutarsizlik": "PDF maksimumu 17 Kas 23:45 UT (yani 17→18 Kasım gecesi); IMO web takvimi \"peak night 16–17 Nov\" yazıyor — bir gece önce. Uygulamada PDF saati esas alınmalı.",
+   "yil": 2026
+  },
+  {
+   "ad_en": "Geminids",
+   "imo_kod": "004 GEM",
+   "iau_no": 4,
+   "kod": "GEM",
+   "aktivite": "2026-12-04 / 2026-12-20",
+   "maksimum_tarih": "2026-12-14",
+   "gunes_boylami_J2000_deg": 262.2,
+   "maksimum_saat_UT": "14:00",
+   "ZHR": 150,
+   "radyant_maksimumda": {
+    "ra_deg": 112,
+    "dec_deg": 33
+   },
+   "hiz_km_s": 35,
+   "nufus_indeksi_r": 2.6,
+   "ay_kosulu_imo": [
+    "There is only a waxing crescent at the Geminid (004 GEM) maximum",
+    "The best and most reliable of the major annual showers presently observable reaches its broad moon-free maximum on December 14 centred at 14h UT."
+   ],
+   "kaynak": {
+    "url": "https://www.imo.net/files/meteor-shower/cal2026.pdf",
+    "sayfa": "14, 20–21, 25",
+    "tablo5_satiri": "Geminids (004 GEM) Dec 04–Dec 20 Dec 14 262°.2 112° +33° 35 2.6 150",
+    "maksimum_alinti": "Maximum: December 14, 14h UT (λ⊙ = 262°.2); ZHR = 150"
+   },
+   "bagimsiz_kontrol_astronomy_engine": {
+    "aciklama": "λ⊙ (J2000 ortalama ekliptik) değerinden hesaplanan an ve o andaki Ay aydınlanma oranı; astronomy-engine 2.1.19 (projede kurulu)",
+    "hesaplanan_an_UT": "2026-12-14T13:49Z",
+    "ay_aydinlanma_orani": 0.251,
+    "ay_buyuyor_mu": true
+   },
+   "imo_web_takvimi": {
+    "aktivite": "4–17 December 2026",
+    "tepe_gecesi": "13–14 Dec",
+    "ay": "15% illuminated · Waxing crescent",
+    "url": "https://www.imo.net/calendar/",
+    "erisim": "2026-10-27",
+    "not": "IMO web takviminin metni AMS sitesindekiyle aynı platformdan geliyor; bağımsız ikinci kaynak sayılmaz."
+   },
+   "ek_bilgi": "Son 20 yılın maksimumları λ⊙ 261.5–262.4 = 13 Ara 21:00 – 14 Ara 18:00 UT (2026).",
+   "tutarsizlik": "Aktivite sonu: PDF (Tablo 5 ve bölüm) 20 Aralık; IMO web takvimi 17 Aralık. PDF esas alındı.",
+   "yil": 2026
+  },
+  {
+   "ad_en": "Ursids",
+   "imo_kod": "015 URS",
+   "iau_no": 15,
+   "kod": "URS",
+   "aktivite": "2026-12-17 / 2026-12-26",
+   "maksimum_tarih": "2026-12-22",
+   "gunes_boylami_J2000_deg": 270.7,
+   "maksimum_saat_UT": "22:00",
+   "ZHR": 10,
+   "radyant_maksimumda": {
+    "ra_deg": 217,
+    "dec_deg": 76
+   },
+   "hiz_km_s": 33,
+   "nufus_indeksi_r": 2.8,
+   "ay_kosulu_imo": [
+    "Jenniskens' (2006) Table 5b mentions a weak Ursid filament encounter on December 22 close to 14h UT with a ZHR of less than 20. ... The 96% illuminated Moon is in Taurus so that the chances for reliable optical data are small."
+   ],
+   "kaynak": {
+    "url": "https://www.imo.net/files/meteor-shower/cal2026.pdf",
+    "sayfa": "14, 25",
+    "tablo5_satiri": "Ursids (015 URS) Dec 17–Dec 26 Dec 22 270°.7 217° +76° 33 2.8 10",
+    "maksimum_alinti": "the Ursids (015 URS) reach their maximum on December 22, 22h UT, two days before Full Moon."
+   },
+   "bagimsiz_kontrol_astronomy_engine": {
+    "aciklama": "λ⊙ (J2000 ortalama ekliptik) değerinden hesaplanan an ve o andaki Ay aydınlanma oranı; astronomy-engine 2.1.19 (projede kurulu)",
+    "hesaplanan_an_UT": "2026-12-22T22:17Z",
+    "ay_aydinlanma_orani": 0.979,
+    "ay_buyuyor_mu": true
+   },
+   "imo_web_takvimi": {
+    "aktivite": "17–26 December 2026",
+    "tepe_gecesi": "21–22 Dec",
+    "ay": "89% illuminated · Waxing gibbous",
+    "url": "https://www.imo.net/calendar/",
+    "erisim": "2026-10-27",
+    "not": "IMO web takviminin metni AMS sitesindekiyle aynı platformdan geliyor; bağımsız ikinci kaynak sayılmaz."
+   },
+   "tutarsizlik": "PDF %96 (filament anı 14 UT, hesap %96.5 ile uyumlu); maksimum anında (22 UT) hesap %97.9; web %89 ve \"peak night 21–22 Dec\" (PDF maksimumu 22 Aralık akşamı). Ursidler için ayrı bölüm yok, değerler Tablo 5 + bölüm 6 girişinden.",
+   "yil": 2026
+  },
+  {
+   "ad_en": "Quadrantids",
+   "imo_kod": "010 QUA",
+   "iau_no": 10,
+   "kod": "QUA",
+   "aktivite": "2026-12-28 / 2027-01-12",
+   "maksimum_tarih": "2027-01-04",
+   "gunes_boylami_J2000_deg": 283.15,
+   "maksimum_saat_UT": "03:25",
+   "ZHR": "80 (≈60–200 arası değişebilir)",
+   "radyant_maksimumda": {
+    "ra_deg": 230,
+    "dec_deg": 49
+   },
+   "hiz_km_s": 41,
+   "nufus_indeksi_r": "2.1 (maksimumda), 2.5 (diğer)",
+   "ay_kosulu_imo": [
+    "Conditions are perfect concerning the moonlight.",
+    "For the three strongest annual shower peaks in 2027, we find the Quadrantid peak shortly before New Moon"
+   ],
+   "kaynak": {
+    "url": "https://www.imo.net/files/data/calendar/cal2027.pdf",
+    "sayfa": "1, 3–4, 25",
+    "tablo5_satiri": "Quadrantids (010 QUA) Dec 28–Jan 12 Jan 04 283°.15 230° +49° 41 2.1 80+",
+    "maksimum_alinti": "Maximum: January 4, 03h 25m UT (λ⊙ = 283°.15), ZHR = 80 (can vary ≈ 60 − 200)"
+   },
+   "bagimsiz_kontrol_astronomy_engine": {
+    "aciklama": "λ⊙ (J2000 ortalama ekliptik) değerinden hesaplanan an ve o andaki Ay aydınlanma oranı; astronomy-engine 2.1.19 (projede kurulu)",
+    "hesaplanan_an_UT": "2027-01-04T03:34Z",
+    "ay_aydinlanma_orani": 0.12,
+    "ay_buyuyor_mu": false
+   },
+   "imo_web_takvimi": {
+    "aktivite": "28 December 2026 to 12 January 2027",
+    "tepe_gecesi": "3–4 Jan",
+    "ay": "18% illuminated · Waning crescent",
+    "alinti": "Predictions for 2027 show a peak near 3:30 UT on January 4th.",
+    "url": "https://www.imo.net/calendar/",
+    "erisim": "2026-10-27",
+    "not": "IMO web takviminin metni AMS sitesindekiyle aynı platformdan geliyor; bağımsız ikinci kaynak sayılmaz."
+   },
+   "ek_bilgi": "Vaubaillon: 2027'de akıntı Güneş'e doğru hafif kaymış; artmış aktivite olabilir. Tepe zamanı belirsizliği ~0.1° (~2.5 saat).",
+   "yil": 2027
+  }
+ ]
+}

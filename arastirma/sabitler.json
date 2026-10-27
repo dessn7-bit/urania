@@ -1,0 +1,761 @@
+{
+ "aciklama": "Urania – fiziksel ve astronomik sabitler. Her değer bu oturumda indirilen birincil kaynaktan alındı. Alıntılardaki üs/üst simgeler PDF/HTML metninden düz yazıya çevrildi (ör. 10^8).",
+ "olusturma": "2026-10-27",
+ "sabitler": [
+  {
+   "anahtar": "G",
+   "ad_tr": "Newton kütleçekim sabiti",
+   "ad_en": "Newtonian constant of gravitation",
+   "deger": 6.6743e-11,
+   "belirsizlik": 1.5e-15,
+   "birim": "m^3 kg^-1 s^-2",
+   "kesin": false,
+   "kaynaklar": [
+    {
+     "kaynak": "NIST CODATA 2022 (Value?bg)",
+     "url": "https://physics.nist.gov/cgi-bin/cuu/Value?bg",
+     "alinti": "Newtonian constant of gravitation Numerical value 6.674 30 x 10-11 m3 kg-1 s-2 Standard uncertainty 0.000 15 x 10-11 m3 kg-1 s-2 ... Source: 2022 CODATA recommended values",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "NIST allascii.txt (2022 CODATA adjustment)",
+     "url": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt",
+     "alinti": "Newtonian constant of gravitation 6.674 30 e-11 0.000 15 e-11 m^3 kg^-1 s^-2",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "SciPy _codata.py, txt2022 blogu (NIST tablosunun kopyası; bağımsız değil)",
+     "url": "https://raw.githubusercontent.com/scipy/scipy/main/scipy/constants/_codata.py",
+     "alinti": "Newtonian constant of gravitation 6.674 30 e-11 0.000 15 e-11 m^3 kg^-1 s^-2",
+     "erisim": "2026-10-27"
+    }
+   ],
+   "dogrulama": "3 kaynak aynı değer (NIST sayfası + NIST ASCII tablosu + SciPy kopyası)"
+  },
+  {
+   "anahtar": "c",
+   "ad_tr": "Işığın boşluktaki hızı",
+   "ad_en": "speed of light in vacuum",
+   "deger": 299792458,
+   "birim": "m s^-1",
+   "kesin": true,
+   "kaynaklar": [
+    {
+     "kaynak": "NIST CODATA 2022 (Value?c)",
+     "url": "https://physics.nist.gov/cgi-bin/cuu/Value?c",
+     "alinti": "speed of light in vacuum Numerical value 299 792 458 m s-1 Standard uncertainty (exact) ... Source: 2022 CODATA recommended values",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "NIST allascii.txt",
+     "url": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt",
+     "alinti": "speed of light in vacuum 299 792 458 (exact) m s^-1",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "JPL SSD Astrodynamic Parameters",
+     "url": "https://ssd.jpl.nasa.gov/astro_par.html",
+     "alinti": "speed of light in vacuum | c | 299792458 m/s | 2018 CODATA recommended values",
+     "erisim": "2026-10-27"
+    }
+   ],
+   "dogrulama": "3 kaynak aynı"
+  },
+  {
+   "anahtar": "h",
+   "ad_tr": "Planck sabiti",
+   "ad_en": "Planck constant",
+   "deger": 6.62607015e-34,
+   "birim": "J Hz^-1 (= J s)",
+   "kesin": true,
+   "kaynaklar": [
+    {
+     "kaynak": "NIST CODATA 2022 (Value?h)",
+     "url": "https://physics.nist.gov/cgi-bin/cuu/Value?h",
+     "alinti": "Planck constant Numerical value 6.626 070 15 x 10-34 J Hz-1 Standard uncertainty (exact)",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "NIST allascii.txt",
+     "url": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt",
+     "alinti": "Planck constant 6.626 070 15 e-34 (exact) J Hz^-1",
+     "erisim": "2026-10-27"
+    }
+   ],
+   "dogrulama": "2 kaynak aynı (ikisi de NIST)"
+  },
+  {
+   "anahtar": "k_B",
+   "ad_tr": "Boltzmann sabiti",
+   "ad_en": "Boltzmann constant",
+   "deger": 1.380649e-23,
+   "birim": "J K^-1",
+   "kesin": true,
+   "kaynaklar": [
+    {
+     "kaynak": "NIST CODATA 2022 (Value?k)",
+     "url": "https://physics.nist.gov/cgi-bin/cuu/Value?k",
+     "alinti": "Boltzmann constant Numerical value 1.380 649 x 10-23 J K-1 Standard uncertainty (exact)",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "NIST allascii.txt",
+     "url": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt",
+     "alinti": "Boltzmann constant 1.380 649 e-23 (exact) J K^-1",
+     "erisim": "2026-10-27"
+    }
+   ],
+   "dogrulama": "2 kaynak aynı (ikisi de NIST)"
+  },
+  {
+   "anahtar": "sigma_SB",
+   "ad_tr": "Stefan–Boltzmann sabiti",
+   "ad_en": "Stefan-Boltzmann constant",
+   "deger": 5.670374419e-08,
+   "birim": "W m^-2 K^-4",
+   "kesin": true,
+   "kaynaklar": [
+    {
+     "kaynak": "NIST CODATA 2022 (Value?sigma)",
+     "url": "https://physics.nist.gov/cgi-bin/cuu/Value?sigma",
+     "alinti": "Stefan-Boltzmann constant Numerical value 5.670 374 419... x 10-8 W m-2 K-4 Standard uncertainty (exact)",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "NIST allascii.txt",
+     "url": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt",
+     "alinti": "Stefan-Boltzmann constant 5.670 374 419... e-8 (exact) W m^-2 K^-4",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "SciPy _codata.py txt2022 (NIST kopyası)",
+     "url": "https://raw.githubusercontent.com/scipy/scipy/main/scipy/constants/_codata.py",
+     "alinti": "Stefan-Boltzmann constant 5.670 374 419... e-8 (exact) W m^-2 K^-4",
+     "erisim": "2026-10-27"
+    }
+   ],
+   "dogrulama": "3 kaynak aynı",
+   "not": "NIST değeri \"5.670 374 419...\" diye kesilmiş yazar; h, k, c kesin olduğundan σ da kesindir, burada 10 anlamlı basamak verildi."
+  },
+  {
+   "anahtar": "b_Wien",
+   "ad_tr": "Wien yer değiştirme sabiti (dalgaboyu)",
+   "ad_en": "Wien wavelength displacement law constant",
+   "deger": 0.002897771955,
+   "birim": "m K",
+   "kesin": true,
+   "kaynaklar": [
+    {
+     "kaynak": "NIST CODATA 2022 (Value?bwien)",
+     "url": "https://physics.nist.gov/cgi-bin/cuu/Value?bwien",
+     "alinti": "Wien wavelength displacement law constant Numerical value 2.897 771 955... x 10-3 m K Standard uncertainty (exact)",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "NIST allascii.txt",
+     "url": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt",
+     "alinti": "Wien wavelength displacement law constant 2.897 771 955... e-3 (exact) m K",
+     "erisim": "2026-10-27"
+    }
+   ],
+   "dogrulama": "2 kaynak aynı (ikisi de NIST)"
+  },
+  {
+   "anahtar": "au",
+   "ad_tr": "Astronomik birim",
+   "ad_en": "astronomical unit",
+   "deger": 149597870700,
+   "birim": "m",
+   "kesin": true,
+   "kaynaklar": [
+    {
+     "kaynak": "IAU 2012 Resolution B2 (IAU2012_English.pdf, IAU arşivi; WebFetch ile okundu)",
+     "url": "https://iauarchive.eso.org/static/resolutions/IAU2012_English.pdf",
+     "alinti": "that the astronomical unit be re-defined to be a conventional unit of length equal to 149 597 870 700 m exactly",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "SYRTE / Paris Gözlemevi – New IAU definition of the astronomical unit of length",
+     "url": "https://syrte.obspm.fr/IAU_resolutions/IAUResol_2012_0.html",
+     "alinti": "The new definition of the astronomical unit A conventional unit of length equal to 149 597 870 700 m exactly.",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "IAU 2015 Resolution B3, not 4 (iau.org PDF)",
+     "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf",
+     "alinti": "Resolution B2 of the XXVIII General Assembly of the IAU in 2012 defined the astronomical unit to be a conventional unit of length equal to 149 597 870 700 m exactly.",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "JPL SSD Astrodynamic Parameters",
+     "url": "https://ssd.jpl.nasa.gov/astro_par.html",
+     "alinti": "astronomical unit | au | 149597870700 m | IAU 2012 Resolution B1",
+     "erisim": "2026-10-27",
+     "not": "JPL sayfası çözünürlük numarasını \"B1\" yazıyor; IAU metninde B2. Değer aynı."
+    }
+   ],
+   "dogrulama": "4 kaynak aynı değer"
+  },
+  {
+   "anahtar": "parsec",
+   "ad_tr": "Parsek",
+   "ad_en": "parsec",
+   "tanim": "1 pc = (648 000/π) au (kesin)",
+   "deger": 3.085677581491367e+16,
+   "deger_metin": "3.0856775815e16",
+   "birim": "m",
+   "kesin": true,
+   "kaynaklar": [
+    {
+     "kaynak": "IAU 2015 Resolution B2 metni (arXiv:1510.06262, dipnot 4)",
+     "url": "https://arxiv.org/pdf/1510.06262",
+     "alinti": "The parsec is defined as exactly (648 000/π) au (e.g. Cox 2000, Binney & Tremaine 2008). Using the IAU 2012 Resolution B2 definition of the astronomical unit, the parsec corresponds to 3.085 677 581 ... × 10^16 m.",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "IAU 2015 Resolution B2 kopyası (E. Mamajek, pas.rochester.edu; aynı metin)",
+     "url": "https://www.pas.rochester.edu/~emamajek/IAU/IAUres_B2.pdf",
+     "alinti": "The parsec is defined as exactly (648 000/π) au ... 3.085 677 581 ... × 10^16 m.",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "IAU Style Manual – units (iauarchive.eso.org, WebFetch)",
+     "url": "https://iauarchive.eso.org/publications/proceedings_rules/units/",
+     "alinti": "length | parsec | pc | 30.857 Pm ... defined in terms of the astronomical unit of length (au)",
+     "erisim": "2026-10-27"
+    }
+   ],
+   "dogrulama": "3 kaynak; hesap ile uyumlu",
+   "hesap": "149597870700 × 648000 / π",
+   "not": "Tanım IAU 2015 Resolution B2 metninin dipnot 4'ünde geçer (numaralı tavsiye maddesi değil). Sayısal değer bu dosyada au tanımından hesaplandı ve dipnottaki 3.085 677 581... × 10^16 m ile 10 basamak uyumlu."
+  },
+  {
+   "anahtar": "light_year",
+   "ad_tr": "Işık yılı",
+   "ad_en": "light-year",
+   "tanim": "c × 1 Jülyen yılı (365.25 gün × 86400 s)",
+   "deger": 9460730472580800.0,
+   "deger_metin": "9460730472580800.00",
+   "birim": "m",
+   "kesin": true,
+   "hesap": "299792458 × 365.25 × 86400 = 9 460 730 472 580 800 m",
+   "kaynaklar": [
+    {
+     "kaynak": "IAU – Measuring the Universe (iauarchive.eso.org/public/themes/measuring/, WebFetch)",
+     "url": "https://iauarchive.eso.org/public/themes/measuring/",
+     "alinti": "is equal to the distance traveled by light in one Julian year in a vacuum ... the light-year is 9,460,730,472,580.8 km or 63,241 au ... the IAU regards a year as a Julian year of 365.25 days (31.5576 million seconds)",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "IAU Style Manual – units (WebFetch)",
+     "url": "https://iauarchive.eso.org/publications/proceedings_rules/units/",
+     "alinti": "time | year (Julian) | a | 31.5576 Ms = 365.25 d",
+     "erisim": "2026-10-27",
+     "not": "Bu sayfa ışık yılına sayısal değer vermiyor; yalnızca Jülyen yılını tanımlıyor."
+    },
+    {
+     "kaynak": "JPL SSD Astrodynamic Parameters",
+     "url": "https://ssd.jpl.nasa.gov/astro_par.html",
+     "alinti": "Julian year | y | 365.25 d",
+     "erisim": "2026-10-27"
+    }
+   ],
+   "dogrulama": "IAU sayfasındaki 9,460,730,472,580.8 km değeri ile c × Jülyen yılı hesabı birebir aynı"
+  },
+  {
+   "anahtar": "R_sun_N",
+   "ad_tr": "Nominal Güneş yarıçapı",
+   "ad_en": "nominal solar radius",
+   "deger": 695700000.0,
+   "birim": "m",
+   "kesin": true,
+   "kaynaklar": [
+    {
+     "kaynak": "IAU 2015 Resolution B3 (iau.org resmi PDF)",
+     "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf",
+     "alinti": "1R⊙N = 6.957 × 10^8 m",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "IAU 2015 Resolution B3 metni (arXiv:1510.07674)",
+     "url": "https://arxiv.org/pdf/1510.07674",
+     "alinti": "1R⊙N = 6.957 × 10^8 m",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "Prša et al. 2016, AJ 152, 41 (arXiv:1605.09788)",
+     "url": "https://arxiv.org/pdf/1605.09788",
+     "alinti": "1R⊙N = 6.957 × 10^8 m",
+     "erisim": "2026-10-27"
+    }
+   ],
+   "dogrulama": "3 kaynak aynı (PDF metinlerinden üst simgeler düz yazıya çevrildi)",
+   "not": "IAU 2015 B3: tanım gereği kesin \"dönüşüm katsayısı\"dır; gerçek Güneş/gezegen değeri değildir."
+  },
+  {
+   "anahtar": "S_sun_N",
+   "ad_tr": "Nominal toplam Güneş ışınımı",
+   "ad_en": "nominal total solar irradiance",
+   "deger": 1361,
+   "birim": "W m^-2",
+   "kesin": true,
+   "kaynaklar": [
+    {
+     "kaynak": "IAU 2015 Resolution B3 (iau.org resmi PDF)",
+     "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf",
+     "alinti": "1SN⊙ = 1361 W m−2",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "IAU 2015 Resolution B3 metni (arXiv:1510.07674)",
+     "url": "https://arxiv.org/pdf/1510.07674",
+     "alinti": "1SN⊙ = 1361 W m−2",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "Prša et al. 2016, AJ 152, 41 (arXiv:1605.09788)",
+     "url": "https://arxiv.org/pdf/1605.09788",
+     "alinti": "1SN⊙ = 1361 W m−2",
+     "erisim": "2026-10-27"
+    }
+   ],
+   "dogrulama": "3 kaynak aynı (PDF metinlerinden üst simgeler düz yazıya çevrildi)",
+   "not": "IAU 2015 B3: tanım gereği kesin \"dönüşüm katsayısı\"dır; gerçek Güneş/gezegen değeri değildir."
+  },
+  {
+   "anahtar": "L_sun_N",
+   "ad_tr": "Nominal Güneş ışınımgücü",
+   "ad_en": "nominal solar luminosity",
+   "deger": 3.828e+26,
+   "birim": "W",
+   "kesin": true,
+   "kaynaklar": [
+    {
+     "kaynak": "IAU 2015 Resolution B3 (iau.org resmi PDF)",
+     "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf",
+     "alinti": "1LN⊙ = 3.828 × 10^26 W",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "IAU 2015 Resolution B3 metni (arXiv:1510.07674)",
+     "url": "https://arxiv.org/pdf/1510.07674",
+     "alinti": "1LN⊙ = 3.828 × 10^26 W",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "Prša et al. 2016, AJ 152, 41 (arXiv:1605.09788)",
+     "url": "https://arxiv.org/pdf/1605.09788",
+     "alinti": "1LN⊙ = 3.828 × 10^26 W",
+     "erisim": "2026-10-27"
+    }
+   ],
+   "dogrulama": "3 kaynak aynı (PDF metinlerinden üst simgeler düz yazıya çevrildi)",
+   "not": "IAU 2015 B3: tanım gereği kesin \"dönüşüm katsayısı\"dır; gerçek Güneş/gezegen değeri değildir."
+  },
+  {
+   "anahtar": "Teff_sun_N",
+   "ad_tr": "Nominal Güneş etkin sıcaklığı",
+   "ad_en": "nominal solar effective temperature",
+   "deger": 5772,
+   "birim": "K",
+   "kesin": true,
+   "kaynaklar": [
+    {
+     "kaynak": "IAU 2015 Resolution B3 (iau.org resmi PDF)",
+     "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf",
+     "alinti": "1T N eff⊙ = 5772 K",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "IAU 2015 Resolution B3 metni (arXiv:1510.07674)",
+     "url": "https://arxiv.org/pdf/1510.07674",
+     "alinti": "1T N eff⊙ = 5772 K",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "Prša et al. 2016, AJ 152, 41 (arXiv:1605.09788)",
+     "url": "https://arxiv.org/pdf/1605.09788",
+     "alinti": "1T N eff⊙ = 5772 K",
+     "erisim": "2026-10-27"
+    }
+   ],
+   "dogrulama": "3 kaynak aynı (PDF metinlerinden üst simgeler düz yazıya çevrildi)",
+   "not": "IAU 2015 B3: tanım gereği kesin \"dönüşüm katsayısı\"dır; gerçek Güneş/gezegen değeri değildir."
+  },
+  {
+   "anahtar": "GM_sun_N",
+   "ad_tr": "Nominal Güneş kütle parametresi",
+   "ad_en": "nominal solar mass parameter",
+   "deger": 1.3271244e+20,
+   "birim": "m^3 s^-2",
+   "kesin": true,
+   "kaynaklar": [
+    {
+     "kaynak": "IAU 2015 Resolution B3 (iau.org resmi PDF)",
+     "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf",
+     "alinti": "1(GM)N⊙ = 1.327 124 4 × 10^20 m3 s−2",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "IAU 2015 Resolution B3 metni (arXiv:1510.07674)",
+     "url": "https://arxiv.org/pdf/1510.07674",
+     "alinti": "1(GM)N⊙ = 1.327 124 4 × 10^20 m3 s−2",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "Prša et al. 2016, AJ 152, 41 (arXiv:1605.09788)",
+     "url": "https://arxiv.org/pdf/1605.09788",
+     "alinti": "1(GM)N⊙ = 1.327 124 4 × 10^20 m3 s−2",
+     "erisim": "2026-10-27"
+    }
+   ],
+   "dogrulama": "3 kaynak aynı (PDF metinlerinden üst simgeler düz yazıya çevrildi)",
+   "not": "IAU 2015 B3: tanım gereği kesin \"dönüşüm katsayısı\"dır; gerçek Güneş/gezegen değeri değildir."
+  },
+  {
+   "anahtar": "R_E_eq_N",
+   "ad_tr": "Nominal Dünya ekvator yarıçapı",
+   "ad_en": "nominal terrestrial equatorial radius",
+   "deger": 6378100.0,
+   "birim": "m",
+   "kesin": true,
+   "kaynaklar": [
+    {
+     "kaynak": "IAU 2015 Resolution B3 (iau.org resmi PDF)",
+     "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf",
+     "alinti": "1 R N eE = 6.3781 × 10^6 m",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "IAU 2015 Resolution B3 metni (arXiv:1510.07674)",
+     "url": "https://arxiv.org/pdf/1510.07674",
+     "alinti": "1 R N eE = 6.3781 × 10^6 m",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "Prša et al. 2016, AJ 152, 41 (arXiv:1605.09788)",
+     "url": "https://arxiv.org/pdf/1605.09788",
+     "alinti": "1 R N eE = 6.3781 × 10^6 m",
+     "erisim": "2026-10-27"
+    }
+   ],
+   "dogrulama": "3 kaynak aynı (PDF metinlerinden üst simgeler düz yazıya çevrildi)",
+   "not": "IAU 2015 B3: tanım gereği kesin \"dönüşüm katsayısı\"dır; gerçek Güneş/gezegen değeri değildir."
+  },
+  {
+   "anahtar": "R_E_pol_N",
+   "ad_tr": "Nominal Dünya kutup yarıçapı",
+   "ad_en": "nominal terrestrial polar radius",
+   "deger": 6356800.0,
+   "birim": "m",
+   "kesin": true,
+   "kaynaklar": [
+    {
+     "kaynak": "IAU 2015 Resolution B3 (iau.org resmi PDF)",
+     "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf",
+     "alinti": "1 R N pE = 6.3568 × 10^6 m",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "IAU 2015 Resolution B3 metni (arXiv:1510.07674)",
+     "url": "https://arxiv.org/pdf/1510.07674",
+     "alinti": "1 R N pE = 6.3568 × 10^6 m",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "Prša et al. 2016, AJ 152, 41 (arXiv:1605.09788)",
+     "url": "https://arxiv.org/pdf/1605.09788",
+     "alinti": "1 R N pE = 6.3568 × 10^6 m",
+     "erisim": "2026-10-27"
+    }
+   ],
+   "dogrulama": "3 kaynak aynı (PDF metinlerinden üst simgeler düz yazıya çevrildi)",
+   "not": "IAU 2015 B3: tanım gereği kesin \"dönüşüm katsayısı\"dır; gerçek Güneş/gezegen değeri değildir."
+  },
+  {
+   "anahtar": "R_J_eq_N",
+   "ad_tr": "Nominal Jüpiter ekvator yarıçapı",
+   "ad_en": "nominal jovian equatorial radius",
+   "deger": 71492000.0,
+   "birim": "m",
+   "kesin": true,
+   "kaynaklar": [
+    {
+     "kaynak": "IAU 2015 Resolution B3 (iau.org resmi PDF)",
+     "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf",
+     "alinti": "1 R N eJ = 7.1492 × 10^7 m",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "IAU 2015 Resolution B3 metni (arXiv:1510.07674)",
+     "url": "https://arxiv.org/pdf/1510.07674",
+     "alinti": "1 R N eJ = 7.1492 × 10^7 m",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "Prša et al. 2016, AJ 152, 41 (arXiv:1605.09788)",
+     "url": "https://arxiv.org/pdf/1605.09788",
+     "alinti": "1 R N eJ = 7.1492 × 10^7 m",
+     "erisim": "2026-10-27"
+    }
+   ],
+   "dogrulama": "3 kaynak aynı (PDF metinlerinden üst simgeler düz yazıya çevrildi)",
+   "not": "IAU 2015 B3: tanım gereği kesin \"dönüşüm katsayısı\"dır; gerçek Güneş/gezegen değeri değildir."
+  },
+  {
+   "anahtar": "R_J_pol_N",
+   "ad_tr": "Nominal Jüpiter kutup yarıçapı",
+   "ad_en": "nominal jovian polar radius",
+   "deger": 66854000.0,
+   "birim": "m",
+   "kesin": true,
+   "kaynaklar": [
+    {
+     "kaynak": "IAU 2015 Resolution B3 (iau.org resmi PDF)",
+     "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf",
+     "alinti": "1 R N pJ = 6.6854 × 10^7 m",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "IAU 2015 Resolution B3 metni (arXiv:1510.07674)",
+     "url": "https://arxiv.org/pdf/1510.07674",
+     "alinti": "1 R N pJ = 6.6854 × 10^7 m",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "Prša et al. 2016, AJ 152, 41 (arXiv:1605.09788)",
+     "url": "https://arxiv.org/pdf/1605.09788",
+     "alinti": "1 R N pJ = 6.6854 × 10^7 m",
+     "erisim": "2026-10-27"
+    }
+   ],
+   "dogrulama": "3 kaynak aynı (PDF metinlerinden üst simgeler düz yazıya çevrildi)",
+   "not": "IAU 2015 B3: tanım gereği kesin \"dönüşüm katsayısı\"dır; gerçek Güneş/gezegen değeri değildir."
+  },
+  {
+   "anahtar": "GM_E_N",
+   "ad_tr": "Nominal Dünya kütle parametresi",
+   "ad_en": "nominal terrestrial mass parameter",
+   "deger": 398600400000000.0,
+   "birim": "m^3 s^-2",
+   "kesin": true,
+   "kaynaklar": [
+    {
+     "kaynak": "IAU 2015 Resolution B3 (iau.org resmi PDF)",
+     "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf",
+     "alinti": "1 (GM)N E = 3.986 004 × 10^14 m3 s−2",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "IAU 2015 Resolution B3 metni (arXiv:1510.07674)",
+     "url": "https://arxiv.org/pdf/1510.07674",
+     "alinti": "1 (GM)N E = 3.986 004 × 10^14 m3 s−2",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "Prša et al. 2016, AJ 152, 41 (arXiv:1605.09788)",
+     "url": "https://arxiv.org/pdf/1605.09788",
+     "alinti": "1 (GM)N E = 3.986 004 × 10^14 m3 s−2",
+     "erisim": "2026-10-27"
+    }
+   ],
+   "dogrulama": "3 kaynak aynı (PDF metinlerinden üst simgeler düz yazıya çevrildi)",
+   "not": "IAU 2015 B3: tanım gereği kesin \"dönüşüm katsayısı\"dır; gerçek Güneş/gezegen değeri değildir."
+  },
+  {
+   "anahtar": "GM_J_N",
+   "ad_tr": "Nominal Jüpiter kütle parametresi",
+   "ad_en": "nominal jovian mass parameter",
+   "deger": 1.2668653e+17,
+   "birim": "m^3 s^-2",
+   "kesin": true,
+   "kaynaklar": [
+    {
+     "kaynak": "IAU 2015 Resolution B3 (iau.org resmi PDF)",
+     "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf",
+     "alinti": "1 (GM)N J = 1.266 865 3 × 10^17 m3 s−2",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "IAU 2015 Resolution B3 metni (arXiv:1510.07674)",
+     "url": "https://arxiv.org/pdf/1510.07674",
+     "alinti": "1 (GM)N J = 1.266 865 3 × 10^17 m3 s−2",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "Prša et al. 2016, AJ 152, 41 (arXiv:1605.09788)",
+     "url": "https://arxiv.org/pdf/1605.09788",
+     "alinti": "1 (GM)N J = 1.266 865 3 × 10^17 m3 s−2",
+     "erisim": "2026-10-27"
+    }
+   ],
+   "dogrulama": "3 kaynak aynı (PDF metinlerinden üst simgeler düz yazıya çevrildi)",
+   "not": "IAU 2015 B3: tanım gereği kesin \"dönüşüm katsayısı\"dır; gerçek Güneş/gezegen değeri değildir."
+  },
+  {
+   "anahtar": "M_sun",
+   "ad_tr": "Güneş kütlesi",
+   "ad_en": "solar mass",
+   "deger": 1.98841e+30,
+   "birim": "kg",
+   "kesin": false,
+   "hesap": "(GM)N⊙ / G = 1.3271244e20 / 6.67430e-11 = 1.9884099e+30 kg (G: CODATA 2022). Belirsizlik G'den gelir: bağıl 2.2e-5 → ±4.4e+25 kg",
+   "kaynaklar": [
+    {
+     "kaynak": "IAU 2015 Resolution B3, madde 5",
+     "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf",
+     "alinti": "that if SI masses are explicitly needed, they should be expressed in terms of (GM)object /G, where the estimate of the Newtonian constant G should be specified in the publication",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "NASA Sun Fact Sheet",
+     "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html",
+     "alinti": "Mass (10^24 kg) 1,988,400.",
+     "erisim": "2026-10-27",
+     "not": "= 1.9884e30 kg; hesapla uyumlu (fark < 0.001 %)"
+    },
+    {
+     "kaynak": "Prša et al. 2016 (arXiv:1605.09788)",
+     "url": "https://arxiv.org/pdf/1605.09788",
+     "alinti": "M⊙ = (1.988475 ± 0.000092) × 10^30 kg",
+     "erisim": "2026-10-27",
+     "not": "CODATA 2014 G ile; ayrıca CODATA 2006 G ile 1.988416 × 10^30 kg verir. G değeri değiştikçe M⊙ değişir."
+    }
+   ],
+   "dogrulama": "3 kaynak, 4. basamağa kadar uyumlu (1.988 × 10^30 kg)",
+   "not": "IAU B3 madde 5: SI kütle gerekiyorsa (GM)/G ile hesaplanmalı ve kullanılan G belirtilmeli. Bu dosyada G = CODATA 2022."
+  },
+  {
+   "anahtar": "M_earth",
+   "ad_tr": "Dünya kütlesi",
+   "ad_en": "Earth mass",
+   "deger": 5.9722e+24,
+   "birim": "kg",
+   "kesin": false,
+   "hesap": "Kontrol: (GM)N E / G = 3.986004e14 / 6.67430e-11 = 5.972168e+24 kg",
+   "kaynaklar": [
+    {
+     "kaynak": "NASA Earth Fact Sheet",
+     "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html",
+     "alinti": "Mass (10^24 kg) 5.9722",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "JPL SSD Planetary Physical Parameters",
+     "url": "https://ssd.jpl.nasa.gov/planets/phys_par.html",
+     "alinti": "Earth | 6378.1366 [D] ±0.0001 | 6371.0084 [D] ±0.0001 | 5.97217 [H] ±0.00028",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "IAU 2015 B3 + CODATA 2022 G (hesap)",
+     "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf",
+     "alinti": "1 (GM)N E = 3.986 004 × 10^14 m3 s−2",
+     "erisim": "2026-10-27"
+    }
+   ],
+   "dogrulama": "3 kaynak 5.9722e24 kg ile uyumlu"
+  },
+  {
+   "anahtar": "M_jupiter",
+   "ad_tr": "Jüpiter kütlesi",
+   "ad_en": "Jupiter mass",
+   "deger": 1.89813e+27,
+   "birim": "kg",
+   "kesin": false,
+   "hesap": "Kontrol: (GM)N J / G = 1.2668653e17 / 6.67430e-11 = 1.898125e+27 kg",
+   "kaynaklar": [
+    {
+     "kaynak": "NASA Jupiter Fact Sheet",
+     "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/jupiterfact.html",
+     "alinti": "Mass (10^24 kg) 1,898.13",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "JPL SSD Planetary Physical Parameters",
+     "url": "https://ssd.jpl.nasa.gov/planets/phys_par.html",
+     "alinti": "Jupiter | 71492 [D] ±4 | 69911 [D] ±6 | 1898.125 [J] ±0.088",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "IAU 2015 B3 + CODATA 2022 G (hesap)",
+     "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf",
+     "alinti": "1 (GM)N J = 1.266 865 3 × 10^17 m3 s−2",
+     "erisim": "2026-10-27"
+    }
+   ],
+   "dogrulama": "3 kaynak 1.8981e27 kg ile uyumlu"
+  },
+  {
+   "anahtar": "Mbol_sun",
+   "ad_tr": "Güneş'in mutlak bolometrik kadiri",
+   "ad_en": "solar absolute bolometric magnitude",
+   "deger": 4.74,
+   "birim": "mag",
+   "kesin": false,
+   "kaynaklar": [
+    {
+     "kaynak": "IAU 2015 Resolution B2 (arXiv:1510.06262)",
+     "url": "https://arxiv.org/pdf/1510.06262",
+     "alinti": "The zero point was selected so that the nominal solar luminosity (LN⊙ = 3.828 × 10^26 W) corresponds closely to absolute bolometric magnitude MBol⊙ = 4.74 mag",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "IAU 2015 Resolution B2 kopyası (Mamajek)",
+     "url": "https://www.pas.rochester.edu/~emamajek/IAU/IAUres_B2.pdf",
+     "alinti": "MBol = 4.74 mag ... MBol ≃ 4.739 996 ... mag",
+     "erisim": "2026-10-27"
+    }
+   ],
+   "dogrulama": "2 kopya aynı (aynı yazarlar; iau.org resmi B2 PDF'i bu oturumda alınamadı)",
+   "not": "IAU 2015 B2 sıfır noktası L0 = 3.0128e28 W (kesin); nominal L⊙ ile MBol⊙ ≃ 4.739996 mag."
+  },
+  {
+   "anahtar": "L0_bol",
+   "ad_tr": "Bolometrik kadir sıfır noktası ışınımgücü",
+   "ad_en": "zero point luminosity L0 (MBol = 0)",
+   "deger": 3.0128e+28,
+   "birim": "W",
+   "kesin": true,
+   "kaynaklar": [
+    {
+     "kaynak": "IAU 2015 Resolution B2 (arXiv:1510.06262)",
+     "url": "https://arxiv.org/pdf/1510.06262",
+     "alinti": "MBol = 0 mag has a radiative luminosity of exactly L◦ = 3.0128 × 10^28 W",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "IAU 2015 Resolution B2 kopyası (Mamajek)",
+     "url": "https://www.pas.rochester.edu/~emamajek/IAU/IAUres_B2.pdf",
+     "alinti": "L◦ = 3.0128 × 10^28 W",
+     "erisim": "2026-10-27"
+    }
+   ],
+   "dogrulama": "2 kopya aynı"
+  },
+  {
+   "anahtar": "MV_sun",
+   "ad_tr": "Güneş'in mutlak görsel (V) kadiri",
+   "ad_en": "solar absolute visual magnitude",
+   "deger": 4.83,
+   "birim": "mag",
+   "kesin": false,
+   "kaynaklar": [
+    {
+     "kaynak": "NASA Sun Fact Sheet",
+     "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html",
+     "alinti": "Visual magnitude V(1,0) -26.74 ... Absolute magnitude +4.83",
+     "erisim": "2026-10-27"
+    },
+    {
+     "kaynak": "Mamajek, A Modern Mean Dwarf Stellar Color and Effective Temperature Sequence, v2022.04.16",
+     "url": "https://www.pas.rochester.edu/~emamajek/EEM_dwarf_UBVIJHK_colors_Teff.txt",
+     "alinti": "G2V 5770 3.761 -0.085 0.01 4.72 1.012 4.80 ... (sütunlar: SpT Teff logT BCv logL Mbol R_Rsun Mv)",
+     "erisim": "2026-10-27",
+     "not": "Bu satır G2V tayf türü ortalamasıdır, doğrudan Güneş değildir. Aynı dosyada: \"we adopt Vmag = -26.71+-0.02 mag and BCv(Sun,G2V) = -0.11\"."
+    }
+   ],
+   "dogrulama": "2 kaynak; 4.80–4.86 aralığında, tam uyum yok (bkz. not)",
+   "not": "Kaynaklar arasında ±0.03 mag fark var: NASA +4.83; Mamajek G2V satırı 4.80; Mamajek'in benimsediği V⊙ = −26.71 mag 1 au uzaklıktan hesaplanırsa M_V = V + 5·log10(10 × 206264.806) = −26.71 + 31.572 ≈ 4.86 (aynı formülle NASA V(1,0) = −26.74 → 4.83, NASA ile tutarlı). Uygulama için 4.83 (NASA) önerilir; kesin bir IAU tanımı yok (IAU yalnız bolometrik sıfır noktasını tanımladı)."
+  }
+ ]
+}

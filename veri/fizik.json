@@ -1,0 +1,413 @@
+{
+ "aciklama": "Urania fizik verisi; araclar/fizik_verisi.py ile arastirma/ dosyalarından üretilir.",
+ "sabitler": {
+  "G": {
+   "deger": 6.6743e-11,
+   "birim": "m^3 kg^-1 s^-2",
+   "kaynak": "NIST CODATA 2022",
+   "url": "https://physics.nist.gov/cgi-bin/cuu/Value?bg"
+  },
+  "c": {
+   "deger": 299792458.0,
+   "birim": "m s^-1",
+   "kaynak": "NIST CODATA 2022",
+   "url": "https://physics.nist.gov/cgi-bin/cuu/Value?c"
+  },
+  "h": {
+   "deger": 6.62607015e-34,
+   "birim": "J Hz^-1 (= J s)",
+   "kaynak": "NIST CODATA 2022",
+   "url": "https://physics.nist.gov/cgi-bin/cuu/Value?h"
+  },
+  "k_B": {
+   "deger": 1.380649e-23,
+   "birim": "J K^-1",
+   "kaynak": "NIST CODATA 2022",
+   "url": "https://physics.nist.gov/cgi-bin/cuu/Value?k"
+  },
+  "sigma": {
+   "deger": 5.670374419e-08,
+   "birim": "W m^-2 K^-4",
+   "kaynak": "NIST CODATA 2022",
+   "url": "https://physics.nist.gov/cgi-bin/cuu/Value?sigma"
+  },
+  "b_wien": {
+   "deger": 0.002897771955,
+   "birim": "m K",
+   "kaynak": "NIST CODATA 2022",
+   "url": "https://physics.nist.gov/cgi-bin/cuu/Value?bwien"
+  },
+  "au": {
+   "deger": 149597870700.0,
+   "birim": "m",
+   "kaynak": "IAU 2012 Resolution B2",
+   "url": "https://iauarchive.eso.org/static/resolutions/IAU2012_English.pdf"
+  },
+  "pc": {
+   "deger": 3.085677581491367e+16,
+   "birim": "m",
+   "kaynak": "IAU 2015 Resolution B2 metni",
+   "url": "https://arxiv.org/pdf/1510.06262"
+  },
+  "ly": {
+   "deger": 9460730472580800.0,
+   "birim": "m",
+   "kaynak": "IAU – Measuring the Universe",
+   "url": "https://iauarchive.eso.org/public/themes/measuring/"
+  },
+  "R_gunes": {
+   "deger": 695700000.0,
+   "birim": "m",
+   "kaynak": "IAU 2015 Resolution B3",
+   "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf"
+  },
+  "L_gunes": {
+   "deger": 3.828e+26,
+   "birim": "W",
+   "kaynak": "IAU 2015 Resolution B3",
+   "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf"
+  },
+  "T_gunes": {
+   "deger": 5772.0,
+   "birim": "K",
+   "kaynak": "IAU 2015 Resolution B3",
+   "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf"
+  },
+  "GM_gunes": {
+   "deger": 1.3271244e+20,
+   "birim": "m^3 s^-2",
+   "kaynak": "IAU 2015 Resolution B3",
+   "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf"
+  },
+  "M_gunes": {
+   "deger": 1.98841e+30,
+   "birim": "kg",
+   "kaynak": "IAU 2015 Resolution B3, madde 5",
+   "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf"
+  },
+  "M_dunya": {
+   "deger": 5.9722e+24,
+   "birim": "kg",
+   "kaynak": "NASA Earth Fact Sheet",
+   "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html"
+  },
+  "GM_dunya": {
+   "deger": 398600400000000.0,
+   "birim": "m^3 s^-2",
+   "kaynak": "IAU 2015 Resolution B3",
+   "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf"
+  },
+  "MV_gunes": {
+   "deger": 4.83,
+   "birim": "mag",
+   "kaynak": "NASA Sun Fact Sheet",
+   "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html"
+  },
+  "Mbol_gunes": {
+   "deger": 4.74,
+   "birim": "mag",
+   "kaynak": "IAU 2015 Resolution B2",
+   "url": "https://arxiv.org/pdf/1510.06262"
+  },
+  "R_dunya": {
+   "deger": 6371000.0,
+   "birim": "m",
+   "kaynak": "NASA Earth Fact Sheet",
+   "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html"
+  },
+  "g0": {
+   "deger": 9.80665,
+   "birim": "m s^-2",
+   "kaynak": "Standart yerçekimi ivmesi (3. CGPM, 1901; tanım)",
+   "url": "https://en.wikipedia.org/wiki/Standard_gravity"
+  }
+ },
+ "gezegenler": [
+  {
+   "ad": "Merkür",
+   "kutle_kg": 3.301e+23,
+   "yaricap_km": 2439.7,
+   "kurtulma_kms": 4.3,
+   "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/mercuryfact.html"
+  },
+  {
+   "ad": "Venüs",
+   "kutle_kg": 4.8673e+24,
+   "yaricap_km": 6051.8,
+   "kurtulma_kms": 10.36,
+   "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/venusfact.html"
+  },
+  {
+   "ad": "Dünya",
+   "kutle_kg": 5.9722e+24,
+   "yaricap_km": 6371.0,
+   "kurtulma_kms": 11.186,
+   "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html"
+  },
+  {
+   "ad": "Ay",
+   "kutle_kg": 7.346e+22,
+   "yaricap_km": 1737.4,
+   "kurtulma_kms": 2.38,
+   "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html"
+  },
+  {
+   "ad": "Mars",
+   "kutle_kg": 6.4169e+23,
+   "yaricap_km": 3389.5,
+   "kurtulma_kms": 5.03,
+   "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html"
+  },
+  {
+   "ad": "Jüpiter",
+   "kutle_kg": 1.89813e+27,
+   "yaricap_km": 69911.0,
+   "kurtulma_kms": 59.5,
+   "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/jupiterfact.html"
+  },
+  {
+   "ad": "Satürn",
+   "kutle_kg": 5.6832e+26,
+   "yaricap_km": 58232.0,
+   "kurtulma_kms": 35.5,
+   "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturnfact.html"
+  },
+  {
+   "ad": "Uranüs",
+   "kutle_kg": 8.6811e+25,
+   "yaricap_km": 25362.0,
+   "kurtulma_kms": 21.3,
+   "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/uranusfact.html"
+  },
+  {
+   "ad": "Neptün",
+   "kutle_kg": 1.02409e+26,
+   "yaricap_km": 24622.0,
+   "kurtulma_kms": 23.5,
+   "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/neptunefact.html"
+  },
+  {
+   "ad": "Plüton",
+   "kutle_kg": 1.303e+22,
+   "yaricap_km": 1188.0,
+   "kurtulma_kms": 1.21,
+   "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/plutofact.html"
+  },
+  {
+   "ad": "Güneş",
+   "kutle_kg": 1.9884e+30,
+   "yaricap_km": 695700.0,
+   "kurtulma_kms": 617.6,
+   "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html"
+  }
+ ],
+ "gezegenKaynak": {
+  "ad": "NASA Planetary Fact Sheets",
+  "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/"
+ },
+ "anakol": {
+  "kaynak": "Mamajek, Mean Dwarf Stellar Color and Teff Sequence",
+  "url": "https://www.pas.rochester.edu/~emamajek/EEM_dwarf_UBVIJHK_colors_Teff.txt",
+  "not": "Ömürler τ ≈ 10¹⁰ yıl × (M/M☉)(L☉/L) yaklaşımıyla hesaplandı; tablodaki kütleler kaynağın kendi notuna göre kesin değil.",
+  "omur": {
+   "kaynak": "Wikipedia: Main sequence (ömür ilişkisi)",
+   "url": "https://en.wikipedia.org/wiki/Main_sequence"
+  },
+  "tablo": [
+   {
+    "tip": "O5V",
+    "kutle": 43,
+    "isima": 347000.0,
+    "sicaklik": 41400,
+    "yaricap": 11.45,
+    "omur_yil": 1240000.0
+   },
+   {
+    "tip": "B0V",
+    "kutle": 17.7,
+    "isima": 44700.0,
+    "sicaklik": 31400,
+    "yaricap": 7.16,
+    "omur_yil": 3960000.0
+   },
+   {
+    "tip": "B5V",
+    "kutle": 4.7,
+    "isima": 589.0,
+    "sicaklik": 15700,
+    "yaricap": 3.36,
+    "omur_yil": 79800000.0
+   },
+   {
+    "tip": "A0V",
+    "kutle": 2.18,
+    "isima": 38.0,
+    "sicaklik": 9700,
+    "yaricap": 2.193,
+    "omur_yil": 573000000.0
+   },
+   {
+    "tip": "A5V",
+    "kutle": 1.88,
+    "isima": 12.3,
+    "sicaklik": 8100,
+    "yaricap": 1.785,
+    "omur_yil": 1530000000.0
+   },
+   {
+    "tip": "F0V",
+    "kutle": 1.61,
+    "isima": 7.24,
+    "sicaklik": 7220,
+    "yaricap": 1.728,
+    "omur_yil": 2220000000.0
+   },
+   {
+    "tip": "F5V",
+    "kutle": 1.33,
+    "isima": 3.63,
+    "sicaklik": 6550,
+    "yaricap": 1.473,
+    "omur_yil": 3660000000.0
+   },
+   {
+    "tip": "G0V",
+    "kutle": 1.06,
+    "isima": 1.35,
+    "sicaklik": 5930,
+    "yaricap": 1.1,
+    "omur_yil": 7860000000.0
+   },
+   {
+    "tip": "G2V",
+    "kutle": 1.0,
+    "isima": 1.02,
+    "sicaklik": 5770,
+    "yaricap": 1.012,
+    "omur_yil": 9770000000.0
+   },
+   {
+    "tip": "G5V",
+    "kutle": 0.98,
+    "isima": 0.891,
+    "sicaklik": 5660,
+    "yaricap": 0.977,
+    "omur_yil": 11000000000.0
+   },
+   {
+    "tip": "K0V",
+    "kutle": 0.88,
+    "isima": 0.457,
+    "sicaklik": 5270,
+    "yaricap": 0.813,
+    "omur_yil": 19300000000.0
+   },
+   {
+    "tip": "K5V",
+    "kutle": 0.7,
+    "isima": 0.174,
+    "sicaklik": 4440,
+    "yaricap": 0.701,
+    "omur_yil": 40300000000.0
+   },
+   {
+    "tip": "M0V",
+    "kutle": 0.57,
+    "isima": 0.0692,
+    "sicaklik": 3850,
+    "yaricap": 0.588,
+    "omur_yil": 82400000000.0
+   },
+   {
+    "tip": "M3V",
+    "kutle": 0.37,
+    "isima": 0.0162,
+    "sicaklik": 3430,
+    "yaricap": 0.361,
+    "omur_yil": 228000000000.0
+   }
+  ]
+ },
+ "sonlar": {
+  "kaynak": "Wikipedia: Stellar evolution, White dwarf; NASA",
+  "url": "https://en.wikipedia.org/wiki/Stellar_evolution",
+  "not": "Kaynaklar sınırlarda tam anlaşmıyor; yaygın değerler seçildi. (1) Helyum beyaz cüce üst sınırı: White dwarf maddesi C–O beyaz cüce için 'between 0.5 and 8 M☉' der; Helium flash maddesi 'less than about 0.5 M☉' yıldızlarda helyumun hiç tutuşmadığını, Main sequence maddesi ise '<0.23 M☉' yıldızların doğrudan beyaz cüce olacağını yazar. 0,5 seçildi. (2) O–Ne–Mg beyaz cüce: White dwarf 'perhaps 8 to 10 M☉', Stellar evolution 'about 8-12 solar masses' der; 8–10 seçildi. (3) Nötron yıldızı / kara delik geçişi: NASA 'around 20 times the Sun's mass or more' der; TOV limiti maddesi limiti 'an original stellar mass of 15 to 20 M☉' ile ilişkilendirir; Type II supernova maddesi çekirdek çöküşü süpernovası için yıldız kütlesinin 'at least 8 times, but no more than 40 to 50 times' olması gerektiğini yazar; Stellar evolution maddesi 'the exact relation between the initial mass of the star and the final remnant is also not completely certain' der. 20 seçildi. Nötron yıldızı satırının alt sınırı 10, O–Ne–Mg satırıyla çakışmayı önlemek için seçildi (NASA süpernova eşiğini 'more than eight times' olarak verir). (4) Kalıntı olarak nötron yıldızının üst kütlesi 'currently estimated at between 2 and 3 M☉' (Stellar evolution).",
+  "tablo": [
+   {
+    "min": 0,
+    "max": 0.0125,
+    "son": "Kahverengi cüce altı cisim ya da (bir yıldızın çevresinde dönüyorsa) gezegen"
+   },
+   {
+    "min": 0.0125,
+    "max": 0.08,
+    "son": "Kahverengi cüce"
+   },
+   {
+    "min": 0.08,
+    "max": 0.5,
+    "son": "Helyum beyaz cüce (kuramsal: süreç evrenin yaşından uzun sürer)"
+   },
+   {
+    "min": 0.5,
+    "max": 8,
+    "son": "Gezegenimsi bulutsu + karbon–oksijen beyaz cüce"
+   },
+   {
+    "min": 8,
+    "max": 10,
+    "son": "Oksijen–neon–magnezyum beyaz cüce (çekirdek çökmezse; çökerse süpernova)"
+   },
+   {
+    "min": 10,
+    "max": 20,
+    "son": "Çekirdek çöküşü süpernovası + nötron yıldızı"
+   },
+   {
+    "min": 20,
+    "max": null,
+    "son": "Çekirdek çöküşü (süpernova) + yıldız kütleli kara delik"
+   }
+  ]
+ },
+ "karadelikler": [
+  {
+   "ad": "Örnek: 10 Güneş kütlesi",
+   "kutle_gunes": 10,
+   "kaynak": null,
+   "url": null
+  },
+  {
+   "ad": "Sgr A* (Samanyolu merkezi)",
+   "kutle_gunes": 4300000.0,
+   "kaynak": "ESO eso2119 (Sgr A*)",
+   "url": "https://www.eso.org/public/news/eso2119/"
+  },
+  {
+   "ad": "M87*",
+   "kutle_gunes": 6500000000.0,
+   "kaynak": "ESO eso1907 (M87*)",
+   "url": "https://www.eso.org/public/news/eso1907/"
+  }
+ ],
+ "uzakliklar": [
+  {
+   "ad": "Proxima Centauri",
+   "isik_yili": 4.24,
+   "kaynak": "NASA Sun facts (Proxima)",
+   "url": "https://science.nasa.gov/sun/facts/"
+  },
+  {
+   "ad": "Samanyolu merkezi",
+   "isik_yili": 27000,
+   "kaynak": "ESO eso2119 (Sgr A* uzaklığı)",
+   "url": "https://www.eso.org/public/news/eso2119/"
+  },
+  {
+   "ad": "Andromeda Galaksisi",
+   "isik_yili": 2500000.0,
+   "kaynak": "NASA (Andromeda)",
+   "url": "https://science.nasa.gov/photojournal/our-neighbor-andromeda/"
+  }
+ ]
+}
