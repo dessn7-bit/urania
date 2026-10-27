@@ -20,7 +20,7 @@
     if (D.sinavlar && D.sinavlar.uniteler) Object.values(D.sinavlar.uniteler).forEach(ls2 => ls2.forEach(q => {
       if (!yan[q.id]) return;
       const d = D.dersler.find(x => x.id === q.ders);
-      ls.push({ id: 'sv-' + q.id, ders: q.ders, dersAd: d ? d.baslik : '', tur: 'sinav', on: q.soru, arka: q.secenekler[q.dogru] + '. ' + q.aciklama });
+      ls.push({ id: 'sv-' + q.id, ders: q.ders, dersAd: d ? d.baslik : '', tur: 'sinav', on: q.soru, secenekler: q.secenekler, arka: 'ABCD'[q.dogru] + ') ' + q.secenekler[q.dogru] + '. ' + q.aciklama });
     }));
     return ls;
   }

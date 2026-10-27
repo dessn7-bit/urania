@@ -25,8 +25,10 @@
 
   /* Bu gece karanlıkta (gezegen ve Ay için alacakaranlıktan itibaren) en yüksek konum */
   function buGece(k, gzl, gece) {
-    const bas = k.cisim ? (gece.sivilSon || gece.batis) : gece.karanlikBas, son = k.cisim ? (gece.sivilBas || gece.dogus) : gece.karanlikSon;
+    let bas = k.cisim ? (gece.sivilSon || gece.batis) : gece.karanlikBas;
+    const son = k.cisim ? (gece.sivilBas || gece.dogus) : gece.karanlikSon;
     if (!bas || !son) return null;
+    if (Date.now() > bas.getTime() && Date.now() < son.getTime()) bas = new Date();   // gece yarısından sonra bakana geçmiş saat gösterme
     let en = null;
     for (let t = bas.getTime(); t <= son.getTime(); t += 20 * 60e3) {
       const d = new Date(t);
@@ -35,12 +37,12 @@
     }
     return en;
   }
-  /* Sabit cisim: her ayın 15'inde yerel saatle 22.00'de 35°'nin üstündeyse o ay "iyi" */
+  /* Sabit cisim: her ayın 15'inde yerel güneş saatiyle 21.00'de (İstanbul'da yaklaşık 22.00 TSİ) 35°'nin üstündeyse o ay "iyi" */
   function iyiAylar(k, gzl, yil) {
     if (k.cisim) return null;
     const ls = [];
     for (let a = 0; a < 12; a++) {
-      const d = new Date(Date.UTC(yil, a, 15, 22, 0) - (gzl.longitude / 15) * 3600e3);   // yerel güneş saatiyle ~22.00
+      const d = new Date(Date.UTC(yil, a, 15, 21, 0) - (gzl.longitude / 15) * 3600e3);   // yerel güneş saatiyle 21.00
       if (G.sabitAltAz(k.ra, k.dec, d, gzl).alt >= 35) ls.push(a);
     }
     return ls;
@@ -67,13 +69,17 @@
         if (kn) { tepe = buGece(kn, gzl, gece); aylar = iyiAylar(kn, gzl, yil); }
         if (g.anahtar.startsWith('meteor:')) {
           const kod = g.anahtar.slice(7);
-          meteor = veri.meteor.yagmurlar.filter(m => m.kod === kod).map(m => new Date(m.zirve_utc)).filter(d => d > Date.now() - 2 * 86400e3).sort((a, b) => a - b)[0] || null;
+          meteor = veri.meteor.yagmurlar.filter(m => m.kod === kod).map(m => new Date(m.zirve_utc)).filter(d => d > Date.now() - 3 * 86400e3).sort((a, b) => a - b)[0] || null;
         }
       } catch (e) { /* hesap yapılamazsa görev yine listelenir */ }
-      return { g, tepe, aylar, meteor, bitti: tamam(g) };
+      /* meteor görevi yalnız zirveye ±3 gün kala "bu gece" sayılır */
+      const meteorYakin = !!(meteor && Math.abs(meteor - Date.now()) <= 3 * 86400e3);
+      return { g, tepe, aylar, meteor, meteorYakin, bitti: tamam(g) };
     });
   }
 
+  const TUR_AD = { kume: 'kümeler', ay: 'Ay görevleri', gezegen: 'gezegenler', bulutsu: 'bulutsular', cift_yildiz: 'çift yıldızlar', uydu: 'uydu görevleri',
+    meteor: 'meteor yağmurları', galaksi: 'galaksiler', yildiz: 'yıldızlar', asterizm: 'yıldız desenleri', ortme: 'örtmeler', yapay_uydu: 'yapay uydular', degisen_yildiz: 'değişen yıldızlar' };
   const ROZETLER = [
     { n: 1, ad: 'İlk adım' }, { n: 5, ad: 'Beş görev' }, { n: 10, ad: 'On görev' }, { n: 20, ad: 'Yirmi görev' }
   ];
@@ -83,8 +89,8 @@
     if (sayi === ls.length && ls.length) r.push('Hepsi');
     /* türe göre: bir türün bütün görevleri bittiyse */
     const turler = {};
-    ls.forEach(x => { (turler[x.g.turAd || x.g.tur] = turler[x.g.turAd || x.g.tur] || []).push(x); });
-    Object.keys(turler).forEach(t => { if (turler[t].length >= 3 && turler[t].every(x => x.bitti)) r.push('Bütün ' + t.toLocaleLowerCase('tr')); });
+    ls.forEach(x => { (turler[x.g.tur] = turler[x.g.tur] || []).push(x); });
+    Object.keys(turler).forEach(t => { if (turler[t].length >= 3 && turler[t].every(x => x.bitti)) r.push('Bütün ' + (TUR_AD[t] || t)); });
     return r;
   }
 
@@ -97,15 +103,16 @@
   function satir(x, D) {
     const g = x.g;
     const t = x.tepe;
+    const zor = Math.min(3, Math.max(1, Math.round(g.zorluk) || 1));
     let gor = '';
-    if (x.meteor) gor = `zirve ${U.gun(x.meteor)}`;
+    if (x.meteor) gor = `zirve ${x.meteor.getFullYear() === new Date().getFullYear() ? U.gun(x.meteor) : U.tamTarih(x.meteor)}`;
     else if (t) gor = t.alt >= 20 ? `bu gece en çok ${U.derece(t.alt)}, ${U.saat(t.zaman)} civarı` : (t.alt > 0 ? `bu gece alçak (en çok ${U.derece(t.alt)})` : 'bu gece ufkun altında');
     const ay = x.aylar && x.aylar.length ? `akşam en iyi: ${ayAraligi(x.aylar)}` : (x.aylar ? 'akşamları hep alçak' : '');
     const d = g.ders && D ? D.find(z => z.id === g.ders) : null;
     const kaynak = (g.kaynak || []).filter(k => k && k.url);
     return `<li class="gorev${x.bitti ? ' bitti' : ''}">
       <details><summary><span class="ad">${x.bitti ? '<span class="rozet iyi">tamam</span> ' : ''}${U.kacis(g.ad)}</span>
-        <span class="alt"><span role="img" aria-label="zorluk ${g.zorluk || 1} / 3">${'●'.repeat(g.zorluk || 1)}<span class="soluk">${'●'.repeat(3 - (g.zorluk || 1))}</span></span> · ${U.kacis(ARAC[g.arac] || g.arac || '')}${gor ? ' · ' + U.kacis(gor) : ''}${ay ? ' · ' + U.kacis(ay) : ''}</span></summary>
+        <span class="alt"><span role="img" aria-label="zorluk ${zor} / 3">${'●'.repeat(zor)}<span class="soluk">${'●'.repeat(3 - zor)}</span></span> · ${U.kacis(ARAC[g.arac] || g.arac || '')}${gor ? ' · ' + U.kacis(gor) : ''}${ay ? ' · ' + U.kacis(ay) : ''}</span></summary>
         <div class="gorev-ic">
           ${g.nasil ? `<p><b>Nasıl bulunur:</b> ${U.kacis(g.nasil)}</p>` : ''}
           ${g.ne_gorursun ? `<p><b>Ne görürsün:</b> ${U.kacis(g.ne_gorursun)}</p>` : ''}
@@ -119,12 +126,14 @@
     el.innerHTML = '<p class="bos">Görevler hazırlanıyor…</p>';
     let D = null;
     try { D = (await U.veri('dersler')).dersler; } catch (e) { /* ders adları olmadan da çalışır */ }
+    if (!/^#defter\/gorevler/.test(location.hash)) return;     // beklerken başka yere gidildi: defteri ezme
     if (!veri.gorevler) { el.innerHTML = '<a class="geri" href="#defter">Defter</a><div class="hata-kutu">Görev listesi yüklenemedi.</div>'; return; }
     const k = U.konum();
     const ls = durumHesapla(veri, k);
     const sayi = ls.filter(x => x.bitti).length;
-    const sira = ls.slice().sort((a, b) => (!!a.bitti - !!b.bitti) || ((b.tepe && b.tepe.alt >= 20 || b.meteor ? 1 : 0) - (a.tepe && a.tepe.alt >= 20 || a.meteor ? 1 : 0)) || ((a.g.zorluk || 1) - (b.g.zorluk || 1)));
-    const bugece = sira.filter(x => !x.bitti && ((x.tepe && x.tepe.alt >= 20) || x.meteor));
+    const buGeceMi = x => (x.tepe && x.tepe.alt >= 20 && !x.g.anahtar.startsWith('meteor:')) || x.meteorYakin;
+    const sira = ls.slice().sort((a, b) => (!!a.bitti - !!b.bitti) || (buGeceMi(b) - buGeceMi(a)) || ((a.g.zorluk || 1) - (b.g.zorluk || 1)));
+    const bugece = sira.filter(x => !x.bitti && buGeceMi(x));
     const diger = sira.filter(x => !x.bitti && !bugece.includes(x));
     const biten = sira.filter(x => x.bitti);
     const rz = rozetler(ls);

@@ -3,14 +3,14 @@
    ciz(S) SVG içeriğini (dize) döndürür; tuval 400 birim genişlik, yükseklik 400 × oran.
    Yazı boyu en az 13 birim (telefonda ~11 px); başlık niteliğindeki etiketler 15–16.
    Renkler yalnız tema değişkenleriyle verilir (var(--...)); böylece kırmızı gece modunda kendiliğinden kızarır.
-   "aciklama" şeklin sözlü anlatımıdır: ekranda alt yazıdır, sesli okumada okunur, ekran okuyucuda etikettir.
+   "aciklama" şeklin sözlü anlatımıdır: ekranda alt yazıdır, sesli okumada ve ekran okuyucuda okunur (SVG gizlidir).
    Çizimdeki her sayı dersin kendi (kaynaklı) metninden ya da kaynak listesindeki sayfadan gelir; çizim ölçeksizse
    alt yazıda söylenir. Dosyalar: cizim.js (altyapı), cizim_gokyuzu.js, cizim_gunes_sistemi.js, cizim_yildizlar.js,
    cizim_gezegen_yasam.js, cizim_evren.js (üniteler). */
 (function () {
   'use strict';
   const kayit = {};
-  const G = 400;                                   // tuval genişliği (SVG birimi); telefonda ~340 px → 1 birim ≈ 0,85 px
+  const G = 400;                                   // tuval genişliği (SVG birimi); 390 px telefonda ~350 px → 1 birim ≈ 0,87 px (320 px'te ≈ 0,72)
 
   /* ---- Renk adları (tema değişkenleri) ---- */
   const R = {
@@ -95,7 +95,8 @@
     const h = Math.round(G * (t.oran || 0.6));
     let ic = '';
     try { ic = t.ciz(S); } catch (e) { ic = S.yazi(G / 2, h / 2, 'Çizim hazırlanamadı', { hiza: 'middle', renk: R.soluk }); console.error('cizim ' + t.id, e); }
-    return `<svg viewBox="0 0 ${G} ${h}" role="img" aria-label="${kac(t.baslik)}" preserveAspectRatio="xMidYMid meet">${ic}</svg>`;
+    /* SVG ekran okuyucudan gizli: aynı bilgi alt yazıda (başlık + sözlü anlatım) tek kez okunur */
+    return `<svg viewBox="0 0 ${G} ${h}" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid meet">${ic}</svg>`;
   }
   /* Ders sayfası için HTML: sekil numarası derste sırayla */
   function html(t, no) {

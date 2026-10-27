@@ -1,657 +1,949 @@
 {
-  "aciklama": "Gözlem görevleri: İstanbul'dan (41° K), kent göğünde çıplak gözle ve 7×50 dürbünle yapılabilecek gözlemler. Zorluk 1 kolay, 2 orta, 3 zor (çoğu karanlık bir yer ister). Her 'nasıl' ve 'ne görürsün' bilgisi kaynaklıdır; kaynak satırları arastirma/gorevler_kaynak.md dosyasında. Zorluk derecesi, kaynaklardaki parlaklık ve ışık kirliliği ifadelerine dayanan editör yargısıdır. Mevsim ve saat bilgisini uygulama kendisi hesaplar.",
-  "olusturma": "2026-10-27",
-  "gorevler": [
+ "aciklama": "Gözlem görevleri: İstanbul'dan (41° K), kent göğünde çıplak gözle ve 7×50 dürbünle yapılabilecek gözlemler. Zorluk 1 kolay, 2 orta, 3 zor (çoğu karanlık bir yer ister). Her 'nasıl' ve 'ne görürsün' bilgisi kaynaklıdır; kaynak satırları arastirma/gorevler_kaynak.md dosyasında. Zorluk derecesi, kaynaklardaki parlaklık ve ışık kirliliği ifadelerine dayanan editör yargısıdır. Mevsim ve saat bilgisini uygulama kendisi hesaplar.",
+ "olusturma": "2026-10-27",
+ "gorevler": [
+  {
+   "id": "ulker",
+   "ad": "Ülker'i dürbünle gör",
+   "anahtar": "hedef:M45",
+   "tur": "kume",
+   "arac": "dürbün",
+   "zorluk": 1,
+   "nasil": "Önce Avcı'nın kemerindeki üç parlak yıldızı bul. Oradan batıya, biraz da kuzeye (kuzeybatıya) bak: önce V biçimli Hyades kümesini, daha ötede küçük, kepçeye benzeyen Ülker'i bulursun. Kemerin ortasından, Hyades'in V'sinin ucunda duran Aldebaran yaklaşık 23°, Ülker yaklaşık 37° uzaktadır. Dürbünü doğrudan bu küçük yıldız öbeğine çevir.",
+   "ne_gorursun": "Çıplak gözle küçük, kepçe biçimli bir yıldız öbeği; kümenin binden fazla yıldızı var ama birkaç parlak üyesi göze hâkimdir. Dürbün çok daha fazla yıldız ortaya çıkarır. NASA'ya göre çıplak gözle kolay görülmesi görece karanlık bir yer için söylenmiş; kentte dürbün işini kolaylaştırır.",
+   "ipucu": "Gökyüzü sekmesindeki Ay örtmeleri listesinde 'Ülker örtmesi' görürsen kaçırma: Ay kümenin önünden geçerken yıldızlar birer birer kaybolur.",
+   "ders": "d15",
+   "kaynak": [
     {
-      "id": "ulker",
-      "ad": "Ülker'i dürbünle gör",
-      "anahtar": "hedef:M45",
-      "tur": "kume",
-      "arac": "dürbün",
-      "zorluk": 1,
-      "nasil": "Önce Avcı'nın kemerindeki üç parlak yıldızı bul. Oradan batıya, biraz da kuzeye (kuzeybatıya) bak: önce V biçimli Hyades kümesini, daha ötede küçük, kepçeye benzeyen Ülker'i bulursun. Kemerin ortasından, Hyades'in V'sinin ucunda duran Aldebaran yaklaşık 23°, Ülker yaklaşık 37° uzaktadır. Dürbünü doğrudan bu küçük yıldız öbeğine çevir.",
-      "ne_gorursun": "Çıplak gözle küçük, kepçe biçimli bir yıldız öbeği; kümenin binden fazla yıldızı var ama birkaç parlak üyesi göze hâkimdir. Dürbün çok daha fazla yıldız ortaya çıkarır. NASA'ya göre çıplak gözle kolay görülmesi görece karanlık bir yer için söylenmiş; kentte dürbün işini kolaylaştırır.",
-      "ipucu": "Gökyüzü sekmesindeki Ay örtmeleri listesinde 'Ülker örtmesi' görürsen kaçırma: Ay kümenin önünden geçerken yıldızlar birer birer kaybolur.",
-      "ders": "d15",
-      "kaynak": [
-        {"ad": "NASA Night Sky Network: Hyades ve Ülker", "url": "https://science.nasa.gov/solar-system/skywatching/night-sky-network/spot-the-young-stars-of-the-hyades-and-pleiades"},
-        {"ad": "NASA Hubble Messier 45", "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-45"}
-      ]
+     "ad": "NASA Night Sky Network: Hyades ve Ülker",
+     "url": "https://science.nasa.gov/solar-system/skywatching/night-sky-network/spot-the-young-stars-of-the-hyades-and-pleiades"
     },
     {
-      "id": "hiyadlar",
-      "ad": "Hyades'in V harfini ve Aldebaran'ı bul",
-      "anahtar": "gorev:hiyadlar",
-      "tur": "kume",
-      "arac": "çıplak göz ve dürbün",
-      "zorluk": 1,
-      "nasil": "Avcı'nın kemerinden batıya, biraz da kuzeye (kuzeybatıya), Boğa takımyıldızına bak; Aldebaran kemerden yaklaşık 23° uzaktadır. Parlak turuncu Aldebaran sana V biçimli Hyades kümesinin yerini gösterir. Önce V'yi çıplak gözle bul, sonra dürbünle tara.",
-      "ne_gorursun": "Çıplak gözle belirgin bir V harfi. Dürbün V'nin içinde çok sayıda ek yıldız gösterir. Aldebaran kümeye ait değildir: yaklaşık 65 ışık yılı uzakta, aynı bakış doğrultusunda durur; küme ise yaklaşık 153 ışık yılı uzaktadır ve bize en yakın açık kümedir.",
-      "ipucu": "Kümenin dürbünde tek bir alana sığıp sığmadığına bak; V'yi parça parça taraman gerekebilir.",
-      "ders": "d15",
-      "kaynak": [
-        {"ad": "NASA Night Sky Network: Hyades ve Ülker", "url": "https://science.nasa.gov/solar-system/skywatching/night-sky-network/spot-the-young-stars-of-the-hyades-and-pleiades"},
-        {"ad": "Wikipedia: Hyades (star cluster)", "url": "https://en.wikipedia.org/wiki/Hyades_(star_cluster)"}
-      ]
-    },
-    {
-      "id": "orion-bulutsusu",
-      "ad": "Orion Bulutsusu'nu dürbünle gör",
-      "anahtar": "hedef:M42",
-      "tur": "bulutsu",
-      "arac": "dürbün",
-      "zorluk": 1,
-      "nasil": "Avcı'nın kemerindeki üç yıldızı bul. Kemerin hemen güneyinde, aşağı doğru sarkan kısa bir yıldız dizisi vardır: Avcı'nın kılıcı. Bulutsu, kılıcın ortadaki yıldızlarını sarar. Dürbünü kılıcın ortasına çevir.",
-      "ne_gorursun": "Kılıcın orta yıldızının çevresinde soluk, biçimsiz bir parıltı. BinoSky'ın yazarı kentteki evinden bulutsuyu orta yıldızın çevresinde yaklaşık 15′ genişlikte görüyor. Uyarı: ışık kirliliğinde bulutsu dürbünden çok çıplak gözle daha belirgin görünebilir. Ortadaki dörtlü yıldızın (Trapez) dört yıldızını sıradan dürbünde seçmek zordur; Harrington'a göre sehpaya bağlı 16× ve üstü dev dürbünle mümkündür. BinoSky'a göre en parlak üyesi 5,4 kadir, öbür üçü çok daha sönük ve düşük büyütmede kolay ayrılmaz.",
-      "ipucu": "İlk bakışta bulanık bir leke gibi görünürse dürbünü bir yere daya; görüntü sabitlenince biçim belirginleşir.",
-      "ders": "d14",
-      "kaynak": [
-        {"ad": "NASA Hubble Messier 42", "url": "https://science.nasa.gov/?p=29958"},
-        {"ad": "BinoSky (B. Crowell): M42", "url": "https://www.lightandmatter.com/binosky/m42.html"},
-        {"ad": "Astronomy, Phil Harrington: Meet the Hunter", "url": "https://astronomy.com/science/phil-harringtons-binocular-universe-meet-the-hunter"}
-      ]
-    },
-    {
-      "id": "andromeda",
-      "ad": "Andromeda Galaksisi'ni bul",
-      "anahtar": "hedef:M31",
-      "tur": "galaksi",
-      "arac": "dürbün",
-      "zorluk": 2,
-      "nasil": "Birinci yol: Kanatlıat'ın Büyük Karesi'ni Andromeda'ya bağlayan yıldız Alpheratz'tır; Andromeda'nın yıldız dizileri karenin bir kenarından uzanır. Bu dizide Mirach'ı, sonra μ (mü) Andromedae'yi bul; Mirach'tan μ'ye çizilen çizgiyi uzatırsan galaksiye varırsın: Mirach ile μ arası yaklaşık 4°; μ'nün ötesine aynı uzaklık kadar daha git. İkinci yol: kuzeyde W ya da M biçimli Kraliçe takımyıldızını bul; en parlak yıldızı Shedar galaksiyi gösterir.",
-      "ne_gorursun": "Bulanık, uzunca bir ışık lekesi; dürbünde çıplak göze göre daha parlak. NASA'ya göre orta düzey ışık kirliliğinde bile çıplak gözle görülebilir, ama kent ışıkları ya da parlak Ay bu sönük parıltıyı bastırabilir.",
-      "ipucu": "Ay'sız bir gece seç ve kaçamak bakış kullan: gözünü lekenin biraz yanına çevir.",
-      "ders": "d7",
-      "kaynak": [
-        {"ad": "EarthSky: 2 ways to find the Andromeda galaxy", "url": "https://earthsky.org/astronomy-essentials/2-ways-to-find-the-andromeda-galaxy"},
-        {"ad": "NASA Hubble Messier 31", "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-31/"}
-      ]
-    },
-    {
-      "id": "arikovani",
-      "ad": "Arıkovanı kümesini dürbünle yıldızlara ayır",
-      "anahtar": "hedef:M44",
-      "tur": "kume",
-      "arac": "dürbün",
-      "zorluk": 2,
-      "nasil": "İkizler'in parlak yıldızı Castor ile Aslan'ın parlak yıldızı Regulus'u bul. Bu ikisini birleştiren çizginin ortasının biraz altında, sönük Yengeç takımyıldızının içinde küme durur; katalog konumlarına göre orta noktadan yaklaşık 5° güneybatıdadır. Dürbünle bu orta noktanın çevresini tara.",
-      "ne_gorursun": "Çıplak gözle ancak iyi koşullarda soluk bir ışık bulutu olarak görülür. Dürbünle düzinelerce yıldıza ayrılır; NASA dürbünün yaklaşık 20 yıldızını ayırdığını söylüyor.",
-      "ipucu": "Ay ile kümenin yakınlaşmaları sevilen bir manzaradır; ama sönük üyeleri görmek istiyorsan Ay'sız bir gece seç.",
-      "ders": "d15",
-      "kaynak": [
-        {"ad": "BBC Sky at Night: Beehive Cluster", "url": "https://www.skyatnightmagazine.com/news/beehive-cluster"},
-        {"ad": "NASA Hubble Messier 44", "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-44"},
-        {"ad": "Astronomy: 10 top spring binocular treats", "url": "https://www.astronomy.com/astronomy-for-beginners/10-top-spring-binocular-treats/"}
-      ]
-    },
-    {
-      "id": "cift-kume",
-      "ad": "Kahraman'daki Çift Küme'yi gör",
-      "anahtar": "hedef:NGC 869",
-      "tur": "kume",
-      "arac": "dürbün",
-      "zorluk": 2,
-      "nasil": "Kuzeyde W ya da M biçimli Kraliçe takımyıldızını bul. Kraliçe ile Kahraman takımyıldızı arasındaki boşluğu dürbünle yavaşça tara; iki ışıltılı yıldız öbeği aynı alanda belirir.",
-      "ne_gorursun": "Dürbünde yan yana iki güzel yıldız kümesi. Çıplak gözle ancak karanlık bir kır göğünde görülür; kentte dürbün şart.",
-      "ipucu": "İstanbul'dan Çift Küme hiç batmaz (en alçakta yaklaşık 8°); yıl boyu bir gün aranabilir, en iyisi yüksekteyken.",
-      "ders": "d15",
-      "kaynak": [
-        {"ad": "EarthSky: Double Cluster in Perseus", "url": "https://earthsky.org/tonight/double-cluster-in-perseus/"},
-        {"ad": "Wikipedia: Double Cluster", "url": "https://en.wikipedia.org/wiki/Double_Cluster"}
-      ]
-    },
-    {
-      "id": "mizar-alcor",
-      "ad": "Mizar ile Alcor'u ayır",
-      "anahtar": "hedef:Mizar",
-      "tur": "cift_yildiz",
-      "arac": "çıplak göz ve dürbün",
-      "zorluk": 1,
-      "nasil": "Büyük Ayı'nın kepçesini bul. Kepçenin sapı kıvrılır; kıvrımın tam yerindeki yıldız Mizar'dır. Önce çıplak gözle Mizar'ın hemen yanında sönük Alcor'u ara, sonra dürbünü çevir.",
-      "ne_gorursun": "İkisi arasında 11,8′ (yaklaşık 12 yay dakikası) var. Eski Arap ve İranlılar bu ikiliyi ayırmayı göz sınavı olarak kullanırdı. Alcor 4,0 kadirdir; parlak bir kent göğünde çıplak gözle görülen en sönük yıldızlar en iyi durumda 4,5 kadir dolayında olduğundan Alcor zorlaşabilir. Dürbünde ikisi rahatça ayrı görünür. Mizar'ın kendisi de çifttir (14″); bunu ayırmak için kaynak görüntü sabitleyicili bir dürbünü ya da en küçük teleskopu gösteriyor.",
-      "ipucu": "Çıplak gözle Alcor'u göremezsen dürbünle bak, yerini öğren, sonra yeniden çıplak gözle dene.",
-      "ders": "d15",
-      "kaynak": [
-        {"ad": "Wikipedia: Mizar and Alcor", "url": "https://en.wikipedia.org/wiki/Mizar_and_Alcor"},
-        {"ad": "Astronomy: 10 top spring binocular treats", "url": "https://www.astronomy.com/astronomy-for-beginners/10-top-spring-binocular-treats/"},
-        {"ad": "Astronomy Now: Mizar", "url": "https://astronomynow.com/?p=36497"}
-      ]
-    },
-    {
-      "id": "kutup-yildizi",
-      "ad": "Kutup Yıldızı'nı bul",
-      "anahtar": "yildiz:Polaris",
-      "tur": "yildiz",
-      "arac": "çıplak göz",
-      "zorluk": 1,
-      "nasil": "Büyük Ayı'nın kepçesinde, sapın ters ucundaki iki yıldızı bul: Merak ve Dubhe. Bu ikisi arası yaklaşık 5°. Merak'tan Dubhe'ye bir çizgi çiz ve kepçenin açık ağzının ötesine uzat; bu çizgi üzerinde karşına çıkan ilk belirgin yıldız Kutup Yıldızı'dır. Dubhe'den yaklaşık 29° uzaktadır, yani Merak–Dubhe aralığının beş katından biraz fazla.",
-      "ne_gorursun": "Orta parlaklıkta, ikinci kadirden bir yıldız; sanıldığı gibi gökteki en parlak yıldız değildir. Küçük Ayı'nın sapının ucundadır, ama Küçük Ayı'nın öteki yıldızları kent göğünde zor seçilir. Kutup Yıldızı'nın ufuktan yüksekliği yaklaşık enlemine eşittir; İstanbul'da yaklaşık 41°.",
-      "ipucu": "Yumruğunu kolunu uzatarak tut: bir yumruk yaklaşık 10°. Ufuktan Kutup Yıldızı'na kaç yumruk olduğunu say.",
-      "ders": "d1",
-      "kaynak": [
-        {"ad": "EarthSky: Use Big Dipper to locate Polaris", "url": "https://earthsky.org/tonight/use-big-dipper-to-locate-polaris-the-north-star"},
-        {"ad": "Sky & Telescope: Big Dipper spring sky sights", "url": "https://skyandtelescope.org/stargazing-and-observing/big-dipper-spring-sky-sights/"},
-        {"ad": "EarthSky: Sky measurements", "url": "https://earthsky.org/astronomy-essentials/sky-measurements-degrees-arc-minutes-arc-seconds/"},
-        {"ad": "Wikipedia: Celestial pole", "url": "https://en.wikipedia.org/wiki/Celestial_pole"}
-      ]
-    },
-    {
-      "id": "albireo",
-      "ad": "Albireo'yu iki yıldıza ayırmayı dene",
-      "anahtar": "hedef:Albireo",
-      "tur": "cift_yildiz",
-      "arac": "dürbün",
-      "zorluk": 3,
-      "nasil": "Kuğu takımyıldızında Kuzey Haçı denen haç biçimini bul. Haçın tepesinde parlak Deneb, öbür ucunda, yani haçın dibinde ve kuğunun başında Albireo vardır. Dürbünü Albireo'ya çevir ve mutlaka bir yere daya ya da sehpaya bağla.",
-      "ne_gorursun": "İki yıldız arası yalnızca 34,6″. Kaynaklar burada ayrışıyor: EarthSky dürbünün Albireo'yu iki yıldız olarak göstermediğini söylüyor; Astronomy Now ise sağlam sabitlenmiş 10×50 dürbünle kolayca ayrıldığını yazıyor. 7×50 elde tutulunca ayıramazsan bu normaldir. Küçük bir teleskopta yaklaşık 30× büyütmeyle biri altın sarısı, öbürü daha sönük mavi iki yıldız görülür.",
-      "ipucu": "Ayıramadıysan defterine 'ayrılmadı, elde' diye yaz; sonra dürbünü bir korkuluğa dayayıp yeniden dene.",
-      "ders": "d15",
-      "kaynak": [
-        {"ad": "EarthSky: Albireo", "url": "https://earthsky.org/brightest-stars/albireo-finest-double-star/"},
-        {"ad": "Astronomy Now: Albireo", "url": "https://astronomynow.com/2022/08/02/dont-miss-albireo-a-glorious-colour-contrast-double-star/"}
-      ]
-    },
-    {
-      "id": "m13",
-      "ad": "Herkül'deki Büyük Küme'yi (M13) bul",
-      "anahtar": "hedef:M13",
-      "tur": "kume",
-      "arac": "dürbün",
-      "zorluk": 2,
-      "nasil": "Herkül takımyıldızında ζ (zeta) ve η (eta) Herculis yıldızlarını bul. Dürbünü ζ'ya çevir, sonra η'ya doğru yavaşça kaydır; yolun yaklaşık üçte ikisinde dur. M13 orada, iki yıldızı birleştiren çizginin üzerindedir.",
-      "ne_gorursun": "Küçük, bulanık bir ışık topu; ortası daha parlak. Çıplak gözle ancak karanlık gecelerde kaçamak bakışla görülebilir; kentte dürbün şart.",
-      "ipucu": "İstanbul'dan M13 en yüksekteyken neredeyse başucuna çıkar (yaklaşık 85°); boynunu korumak için sırt üstü yatarak bak.",
-      "ders": "d15",
-      "kaynak": [
-        {"ad": "Wikipedia: Star hopping", "url": "https://en.wikipedia.org/wiki/Star_hopping"},
-        {"ad": "NASA Hubble Messier 13", "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-13/"},
-        {"ad": "Wikipedia: Messier 13", "url": "https://en.wikipedia.org/wiki/Messier_13"},
-        {"ad": "Astronomy: 13 great summer binocular sights", "url": "https://www.astronomy.com/observing/web-extra-13-great-summer-binocular-sights/"}
-      ]
-    },
-    {
-      "id": "m92",
-      "ad": "M13'ün gölgedeki komşusu M92'yi bul",
-      "anahtar": "hedef:M92",
-      "tur": "kume",
-      "arac": "dürbün",
-      "zorluk": 3,
-      "nasil": "Herkül'ün kilit taşı denen dörtgeninin kuzey kenarındaki η (eta) ve π (pi) Herculis yıldızlarına nişan al. M92 bu iki yıldızın kuzeyinde, onlarla aşağı yukarı eşkenar bir üçgen oluşturan noktadadır.",
-      "ne_gorursun": "M13 gibi küçük, bulanık bir parıltı; ortası daha parlak, ama M13'ten sönük (katalogda 6,5 kadir). Zor: kentte seçemeyebilirsin, karanlık bir yere git.",
-      "ipucu": "Önce M13'ü bul; aynı geceye M92'yi eklemek görüntüyü karşılaştırmanı sağlar.",
-      "ders": "d15",
-      "kaynak": [
-        {"ad": "Astronomy: 13 great summer binocular sights", "url": "https://www.astronomy.com/observing/web-extra-13-great-summer-binocular-sights/"}
-      ]
-    },
-    {
-      "id": "m3",
-      "ad": "Küresel küme M3'ü bul",
-      "anahtar": "hedef:M3",
-      "tur": "kume",
-      "arac": "dürbün",
-      "zorluk": 3,
-      "nasil": "Çoban takımyıldızının parlak turuncu yıldızı Arcturus ile Av Köpekleri'nin yıldızı Cor Caroli'yi bul. Dürbünle bu iki yıldızın tam ortasındaki bölgeyi yavaşça ileri geri tara.",
-      "ne_gorursun": "Küçük, sönük bir ışık lekesi. Dürbün kümenin yüz binlerce yıldızından hiçbirini ayırmaz. Zor: katalogda 6,4 kadir; kentte seçemeyebilirsin, karanlık bir yere git.",
-      "ipucu": "Kepçenin sapının kavisini izlersen Arcturus'a varırsın.",
-      "ders": "d15",
-      "kaynak": [
-        {"ad": "Astronomy: 10 top spring binocular treats", "url": "https://www.astronomy.com/astronomy-for-beginners/10-top-spring-binocular-treats/"},
-        {"ad": "Sky & Telescope: Big Dipper spring sky sights", "url": "https://skyandtelescope.org/stargazing-and-observing/big-dipper-spring-sky-sights/"}
-      ]
-    },
-    {
-      "id": "aski",
-      "ad": "Askı'yı (Coathanger) bul",
-      "anahtar": "hedef:Cr 399",
-      "tur": "asterizm",
-      "arac": "dürbün",
-      "zorluk": 2,
-      "nasil": "Yaz Üçgeni'nin en alttaki yıldızı Altair'e dürbünü kilitle. Hemen üstünde Tarazed vardır; Altair, Tarazed ve Vega neredeyse bir çizgi oluşturur. Bu çizgi boyunca Vega'ya doğru ilerle; yolun yaklaşık üçte birinde Askı'ya varırsın.",
-      "ne_gorursun": "On yıldızlık bir askı: altı yıldızlık düz bir çizgi ve bir ucundan sarkan dört yıldızlık bir çengel. En yüksekteyken ters görünür. Karanlık gökte çıplak gözle ayrılmamış bir ışık lekesidir; görmek için genellikle dürbün gerekir.",
-      "ipucu": "Askının ters durması seni şaşırtmasın; gece ilerledikçe dönüşünü izle.",
-      "ders": "d11",
-      "kaynak": [
-        {"ad": "BBC Sky at Night: Coathanger asterism", "url": "https://www.skyatnightmagazine.com/advice/skills/coathanger-asterism/"},
-        {"ad": "Wikipedia: Brocchi's Cluster", "url": "https://en.wikipedia.org/wiki/Brocchi%27s_Cluster"}
-      ]
-    },
-    {
-      "id": "halter",
-      "ad": "Halter Bulutsusu'nu (M27) yakala",
-      "anahtar": "hedef:M27",
-      "tur": "bulutsu",
-      "arac": "dürbün",
-      "zorluk": 3,
-      "nasil": "Altair'in yaklaşık bir yumruk üstünde küçük Okçuk takımyıldızını bul; ok biçimindedir. Okun ucundaki γ (gama) Sagittae'den yaklaşık 3° kuzeye kaydır; M27 sınırı geçip komşu Tilkicik takımyıldızında durur.",
-      "ne_gorursun": "Büyük ama silik, gri bir parıltı, yaklaşık 0,1° genişliğinde. Sky and Telescope dürbünde kolay olduğunu iyi, karanlık bir kır göğü için söylüyor. Zor: kentte seçemeyebilirsin, karanlık bir yere git.",
-      "ipucu": "M27 bir gezegenimsi bulutsudur; ne olduğunu Yıldızların Ölümü dersinde okuyabilirsin.",
-      "ders": "d6",
-      "kaynak": [
-        {"ad": "Astronomy Now: Dumbbell Nebula", "url": "https://astronomynow.com/2022/07/25/observe-the-dramatic-dumbbell-nebula/"},
-        {"ad": "Sky & Telescope: This week's sky, 4–13 Eylül", "url": "https://skyandtelescope.org/astronomy-news/observing-news/this-weeks-sky-at-a-glance-september-4-13/"}
-      ]
-    },
-    {
-      "id": "yaban-ordegi",
-      "ad": "Yaban Ördeği Kümesi'ni (M11) bul",
-      "anahtar": "hedef:M11",
-      "tur": "kume",
-      "arac": "dürbün",
-      "zorluk": 3,
-      "nasil": "Kartal'ın parlak yıldızı Altair'den başla. Altair'den yaklaşık 8° uzaktaki δ (delta) Aquilae'ye atla. Aynı yönde, aşağı doğru ilerlemeyi sürdür: katalog konumlarına göre M11, δ'nın yaklaşık 13° ötesindedir, yani Altair–δ uzaklığının bir buçuk katı kadar daha (Altair'den toplam iki buçuk katı). Orada dürbün alanını dolduran yarım daire biçimli bir yıldız dizisine varırsın. M11 bu yarım dairenin hemen altındadır; Kalkan takımyıldızındadır.",
-      "ne_gorursun": "Yarım dairenin altında yıldız gibi duran bulanık bir leke. Görmek için dürbün ya da teleskop gerekir. İstanbul'dan en fazla yaklaşık 43° yükselir.",
-      "ipucu": "Dört parmağın kolunu uzatınca yaklaşık 8° tutar; ilk atlamayı bununla ölç.",
-      "ders": "d15",
-      "kaynak": [
-        {"ad": "EarthSky: Wild Duck Cluster", "url": "https://earthsky.org/clusters-nebulae-galaxies/wild-duck-cluster-deep-sky-gem-by-eagles-tail/"}
-      ]
-    },
-    {
-      "id": "sac-kumesi",
-      "ad": "Berenis'in Saçı kümesini dürbünle tara",
-      "anahtar": "hedef:Mel 111",
-      "tur": "kume",
-      "arac": "dürbün",
-      "zorluk": 2,
-      "nasil": "Aslan takımyıldızında, ters soru işaretinin dibindeki Regulus'u bul. Regulus'tan Aslan'ın arka üçgeninin tepe yıldızı Zosma'ya bir çizgi çiz (yaklaşık 18°) ve çizgiyi Zosma'nın ötesine aynı uzunlukta bir kez daha uzat; küme, Regulus'tan bu uzaklığın yaklaşık iki katı ötededir. Büyük Ayı'nın kuzeyde, Aslan'ın batıda, Çoban'ın doğuda sınırladığı boş görünen bölge de aynı yerdir.",
-      "ne_gorursun": "Gökte yaklaşık 5° kaplayan, çok seyrek bir küme: 5. ve 6. kadirden onlarca yıldız. Dürbün kümeyi hemen birkaç düzine yıldıza ayırır. Kentte çıplak gözle görünmeyebilir; dürbün şart.",
-      "ipucu": "Regulus'u bulmak için Aslan'ın ters soru işaretine, Orak denen yıldız dizisine bak; Regulus bu soru işaretinin dibindedir.",
-      "ders": "d15",
-      "kaynak": [
-        {"ad": "EarthSky: Star-hop from Leo to the Coma star cluster", "url": "https://earthsky.org/tonight/star-hop-from-leo-to-the-coma-star-cluster"},
-        {"ad": "BAA: A binocular star cluster for spring skies", "url": "https://britastro.org/?p=209415"},
-        {"ad": "Astronomy: 10 top spring binocular treats", "url": "https://www.astronomy.com/astronomy-for-beginners/10-top-spring-binocular-treats/"}
-      ]
-    },
-    {
-      "id": "m7",
-      "ad": "Akrep'in kuyruğundaki M7'yi gör",
-      "anahtar": "hedef:M7",
-      "tur": "kume",
-      "arac": "dürbün",
-      "zorluk": 2,
-      "nasil": "Akrep'in kıvrık kuyruğunun ucundaki iki iğne yıldızını bul: Lesath ve Shaula. Lesath'tan Shaula'ya çizilen çizgiyi uzatırsan M7'ye varırsın. Güney ufkun açık olmalı: İstanbul'dan M7 en yüksekteyken bile yalnızca yaklaşık 14° yükselir.",
-      "ne_gorursun": "Dürbünde parlak, zengin bir küme: ortada belirgin bir haç biçimi, çevresinde daha seyrek yıldızlar. Kentten bile kolay görüldüğü söyleniyor; asıl engel ufka yakınlığı.",
-      "ipucu": "Kelebek Kümesi M6, M7'nin kuzeybatısında: EarthSky 3° diyor, katalog konumlarından merkezler arası yaklaşık 4°; güney ufkun çok açıksa onu da ara (en fazla yaklaşık 17° yükselir).",
-      "ders": "d15",
-      "kaynak": [
-        {"ad": "EarthSky: M6 and M7", "url": "https://earthsky.org/clusters-nebulae-galaxies/m6-and-m7-deep-sky-gems-by-scorpius-tail/"},
-        {"ad": "BinoSky (B. Crowell): M7", "url": "https://www.lightandmatter.com/binosky/m7.html"}
-      ]
-    },
-    {
-      "id": "deniz-kulagi",
-      "ad": "Deniz Kulağı Bulutsusu'nu (M8) bul",
-      "anahtar": "hedef:M8",
-      "tur": "bulutsu",
-      "arac": "dürbün",
-      "zorluk": 3,
-      "nasil": "Yay takımyıldızında çaydanlık biçimini bul. Çaydanlığın emziğini oluşturan en sağdaki üç yıldızı seç; dürbünle emziğin uzunluğunun yaklaşık iki katı yukarı çık, parlak ve bulanık bir cisim belirir. Katalog konumlarına göre M8, emziğin ucundaki Alnasl'ın (γ Sagittarii) yaklaşık 6° kuzeyindedir.",
-      "ne_gorursun": "Dürbünde uzunca bir parıltı. EarthSky bir yanda daha parlak bir çekirdekten, karanlık bir yarıkla ayrılmış öbür yanda bir açık kümeden söz ediyor ve manzaranın karanlık gökte biraz optik yardımla görkemli olduğunu söylüyor; kent göğünde ve alçakta bu ayrıntılar silinebilir. Dolunayın yaklaşık üç katı genişliktedir. Çıplak gözle iyi koşullarda bile ancak seçilir. Zor: İstanbul'dan en fazla yaklaşık 25° yükselir; güney ufku açık, karanlık bir yere git.",
-      "ipucu": "Ay'ın yeni aya yakın olduğu bir gece seç.",
-      "ders": "d14",
-      "kaynak": [
-        {"ad": "EarthSky: Lagoon Nebula", "url": "https://earthsky.org/clusters-galaxies-nebulae/the-lagoon-nebula-messier-8"},
-        {"ad": "NASA Hubble Messier 8", "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-8"}
-      ]
-    },
-    {
-      "id": "m22",
-      "ad": "Küresel küme M22'yi gör",
-      "anahtar": "hedef:M22",
-      "tur": "kume",
-      "arac": "dürbün",
-      "zorluk": 2,
-      "nasil": "Yay'daki çaydanlığın kapağının tepesindeki yıldız Kaus Borealis'i bul. M22 bu yıldızın yaklaşık 2,5° kuzeydoğusundadır.",
-      "ne_gorursun": "Kaynaklar dürbün görüntüsünü ayrıntılı anlatmıyor; küme yaklaşık 20′ genişliğinde ve hafifçe uzunca. BinoSky'ın yazarına göre ışık kirliliği olan yerlerdeki kuzey yarımküre gözlemcisi için dürbünle gerçekten kolay denebilecek tek küresel küme budur. Engel alçaklığı: İstanbul'dan en fazla yaklaşık 25° yükselir; güney ufkun açık olmalı.",
-      "ipucu": "Aynı gece M8'i de ara; ikisi de çaydanlığın çevresinde.",
-      "ders": "d15",
-      "kaynak": [
-        {"ad": "BBC Sky at Night: Teapot asterism", "url": "https://www.skyatnightmagazine.com/advice/teapot-asterism"},
-        {"ad": "BinoSky (B. Crowell): M22", "url": "https://www.lightandmatter.com/binosky/m22.html"}
-      ]
-    },
-    {
-      "id": "m35",
-      "ad": "İkizler'in ayağındaki M35'i ara",
-      "anahtar": "hedef:M35",
-      "tur": "kume",
-      "arac": "dürbün",
-      "zorluk": 3,
-      "nasil": "İkizler'de Castor'un ayağını oluşturan üç yıldızı bul. Bu üçlünün son iki yıldızından kuzeye git; küme orada, 6. kadirden bir yıldızın batısındadır.",
-      "ne_gorursun": "En belirgin dört üyesi, küçültülmüş bir Büyük Köpek biçimi çizer; üçü 8. kadirden yıldızlardır. BinoSky'ın yazarı kümeyi dürbün için etkileyici bulmuyor ve ışık kirliliği olan bir yerden, Ay'sız, açık ve küme meridyene yakın değilse denemeyi önermiyor. Zor: karanlık bir yere git.",
-      "ders": "d15",
-      "kaynak": [
-        {"ad": "BinoSky (B. Crowell): M35", "url": "https://www.lightandmatter.com/binosky/m35.html"}
-      ]
-    },
-    {
-      "id": "m38",
-      "ad": "Arabacı'da M38'in gülen yüzünü bul",
-      "anahtar": "hedef:M38",
-      "tur": "kume",
-      "arac": "dürbün",
-      "zorluk": 3,
-      "nasil": "Boğa'daki Elnath'tan (β Tauri) yaklaşık 6° kuzeye nişan al. Orada gülen bir yüze benzeyen yıldız yayını bulursun. M38, gülümsemenin en kuzeydeki yıldızının hemen yanındaki bulanık gamzedir; katalog konumlarına göre Elnath'ın yaklaşık 7° kuzeyindedir.",
-      "ne_gorursun": "Yıldızlı bir alanda, Ay çapının yaklaşık üçte ikisi büyüklüğünde bulanık bir leke; en parlak üyeleri yalnızca 7. kadirde. Kaynak kent göğünden söz etmiyor; katalogda 6,4 kadir olduğundan kentte zor say, karanlık bir yerde dene.",
-      "ipucu": "M38'i bulunca aynı yoldan M36'ya ve M37'ye geçebilirsin.",
-      "ders": "d15",
-      "kaynak": [
-        {"ad": "Astronomy, Phil Harrington: Winter's first act", "url": "https://www.astronomy.com/observing/binocular-universe-winters-first-act/"}
-      ]
-    },
-    {
-      "id": "m36",
-      "ad": "Arabacı'da M36'yı bul",
-      "anahtar": "hedef:M36",
-      "tur": "kume",
-      "arac": "dürbün",
-      "zorluk": 3,
-      "nasil": "Önce M38'i bul. M36, M38'in yaklaşık 2,3° güneydoğusundadır; dürbünü o yöne biraz kaydır.",
-      "ne_gorursun": "M38'den küçük, ama yıldızları daha parlak ve ayırması daha kolay. Yuvarlak, puslu bir parıltının içinde yarım düzineden fazla sönük yıldız seçebilirsin; ne kadarını göreceğin gökyüzü koşullarına bağlı. Katalogda 6,0 kadir; kentte zor say.",
-      "ders": "d15",
-      "kaynak": [
-        {"ad": "Astronomy, Phil Harrington: Winter's first act", "url": "https://www.astronomy.com/observing/binocular-universe-winters-first-act/"}
-      ]
-    },
-    {
-      "id": "m37",
-      "ad": "Arabacı'nın en parlak kümesi M37'yi bul",
-      "anahtar": "hedef:M37",
-      "tur": "kume",
-      "arac": "dürbün",
-      "zorluk": 3,
-      "nasil": "Boğa'daki Elnath ile θ (teta) Aurigae arasındaki çizgiyi düşün. M37, bu çizginin orta noktasının hemen doğusunda, Arabacı'nın beşgeninin güneydoğu kenarının biraz dışındadır.",
-      "ne_gorursun": "Üç Messier kümesinin en parlağı ama bulması daha zor. Çoğu dürbünde büyük, yuvarlak bir parıltı. Katalogda 5,6 kadir; kentte zor say, karanlık bir yerde dene.",
-      "ders": "d15",
-      "kaynak": [
-        {"ad": "Astronomy, Phil Harrington: Winter's first act", "url": "https://www.astronomy.com/observing/binocular-universe-winters-first-act/"}
-      ]
-    },
-    {
-      "id": "ay-terminator",
-      "ad": "Ay'da gece ile gündüzün sınırını dürbünle izle",
-      "anahtar": "cisim:Moon",
-      "tur": "ay",
-      "arac": "dürbün",
-      "zorluk": 1,
-      "nasil": "Ay'ın aydınlık ve karanlık yanlarını ayıran çizgiye, terminatöre bak. En iyi dönem yeni aydan kısa süre sonrasından ilk dördünden yaklaşık iki gün sonrasına kadardır; dolunay en kötü zamandır. Yeni aydan hemen sonraki ince hilal Güneş'e yakındır: dürbünü ancak Güneş tamamen battıktan sonra Ay'a çevir. Ay için gözünü karanlığa alıştırmana gerek yok; Ay'ı gecenin sonuna bırakırsan öteki hedefler için karanlık uyumun bozulmaz.",
-      "ne_gorursun": "Terminatör boyunca uzun gölgeli kraterler ve dağlar. Karanlık yanda, tepeleri Güneş ışığını yakalayan dağ doruklarını ışık noktaları gibi ara. NASA en az 7× büyütmeli dürbün öneriyor; 7×50 tam bu sınırda.",
-      "ipucu": "Aynı bölgeye ertesi gece yeniden bak: terminatör kaydıkça başka kraterler ortaya çıkar.",
-      "ders": "d10",
-      "kaynak": [
-        {"ad": "NASA: Moon viewing tips", "url": "https://science.nasa.gov/moon/viewing-tips/"},
-        {"ad": "Astronomy: Observe the Moon through binoculars", "url": "https://www.astronomy.com/observing/observe-the-moon-through-binoculars/"},
-        {"ad": "NASA: Eclipse safety", "url": "https://science.nasa.gov/eclipses/safety/"}
-      ]
-    },
-    {
-      "id": "ay-denizleri",
-      "ad": "Ay'ın denizlerini çıplak gözle tanı",
-      "anahtar": "gorev:ay-denizleri",
-      "tur": "ay",
-      "arac": "çıplak göz",
-      "zorluk": 1,
-      "nasil": "Ay'ın büyük kısmı aydınlıkken ona çıplak gözle bak. Karanlık lekeler denizlerdir (maria). Sol üst çeyrekteki büyük karanlık alan Mare Imbrium'dur, Ay'ın ikinci büyük denizi. Öteki büyük denizleri de ara: Mare Serenitatis, Mare Tranquillitatis, Mare Crisium ve Oceanus Procellarum. Ay haritasıyla karşılaştırarak adlandır.",
-      "ne_gorursun": "Açık renkli yaylalar arasında koyu lekeler. Bu koyu lekeler eski çarpışma havzalarını dolduran bazalt lav ovalarıdır; demirce zengin oldukları için daha az ışık yansıtırlar. Pek çok kültür bu lekelerde bir yüz ya da bir tavşan görmüştür.",
-      "ipucu": "Gördüğün lekeleri bir daire içine çiz ve Ay haritasıyla karşılaştır.",
-      "ders": "d10",
-      "kaynak": [
-        {"ad": "Wikipedia: Lunar mare", "url": "https://en.wikipedia.org/wiki/Lunar_mare"},
-        {"ad": "NASA: Moon viewing tips", "url": "https://science.nasa.gov/moon/viewing-tips/"},
-        {"ad": "Astronomy: Observe the Moon through binoculars", "url": "https://www.astronomy.com/observing/observe-the-moon-through-binoculars/"}
-      ]
-    },
-    {
-      "id": "kopernik",
-      "ad": "Kopernik kraterini bul",
-      "anahtar": "gorev:kopernik",
-      "tur": "ay",
-      "arac": "dürbün",
-      "zorluk": 2,
-      "nasil": "Yeni aydan yaklaşık 10 gün sonra, terminatör Kopernik'in üstünden geçerken bak. Önce Ay'ın sol üst çeyreğindeki büyük Mare Imbrium'u bul; dürbünü bu denizin hemen altına çevir.",
-      "ne_gorursun": "Terminatör yakınında gölgeler uzun olduğundan krater belirgin görünür. Kopernik, Oceanus Procellarum'un neredeyse ortasındadır. Dolunayda gölgesi kaybolur ama çevresine örümcek ağı gibi yayılan parlak ışınları görünür.",
-      "ipucu": "Kopernik'i hem 10. gün hem dolunayda gör; aynı kraterin iki farklı yüzünü deftere yaz.",
-      "ders": "d10",
-      "kaynak": [
-        {"ad": "Astronomy: Observe the Moon through binoculars", "url": "https://www.astronomy.com/observing/observe-the-moon-through-binoculars/"},
-        {"ad": "BBC Sky at Night: Lunar rays at full Moon", "url": "https://www.skyatnightmagazine.com/advice/worst-time-to-observe-moon-when-full"}
-      ]
-    },
-    {
-      "id": "tycho-isinlari",
-      "ad": "Dolunayda Tycho'nun ışınlarını izle",
-      "anahtar": "gorev:tycho-isinlari",
-      "tur": "ay",
-      "arac": "dürbün",
-      "zorluk": 1,
-      "nasil": "Dolunay gecesi dürbünü Ay'ın alt kenarına yakın bölgeye, güney yaylalarına çevir. Tycho kraterinden her yöne yayılan parlak çizgileri bul ve en uzun olanı yukarı doğru izle.",
-      "ne_gorursun": "Tycho'nun ışınları Ay'daki en uzun ışınlardır, 2600 km'ye kadar uzanır. Dürbünde açıkça seçilir; diskin neredeyse tepesine kadar izlenebilir. Keskin gözle çıplak gözle bile bazı ışınlar seçilebilir. Tycho'nun kendisi 85 km'den geniştir.",
-      "ipucu": "Dolunay kraterlerin gölgesini yok eder ama ışınlar için en iyi zamandır; Ay alçaktayken parlaklık azaldığı için çıplak gözle denemek daha kolaydır.",
-      "ders": "d10",
-      "kaynak": [
-        {"ad": "BBC Sky at Night: Lunar rays at full Moon", "url": "https://www.skyatnightmagazine.com/advice/worst-time-to-observe-moon-when-full"},
-        {"ad": "Astronomy: Observe the Moon through binoculars", "url": "https://www.astronomy.com/observing/observe-the-moon-through-binoculars/"},
-        {"ad": "NASA: Moon viewing tips", "url": "https://science.nasa.gov/moon/viewing-tips/"},
-        {"ad": "NASA: Moon facts", "url": "https://science.nasa.gov/moon/facts/"}
-      ]
-    },
-    {
-      "id": "dunya-isigi",
-      "ad": "Hilaldeki Dünya ışığını gör",
-      "anahtar": "gorev:dunya-isigi",
-      "tur": "ay",
-      "arac": "çıplak göz ve dürbün",
-      "zorluk": 1,
-      "nasil": "Yeni aydan kısa süre sonra, akşam alacakaranlığında ince hilale bak; ya da sabah alacakaranlığında son günlerin hilaline. Önce çıplak gözle, sonra dürbünle Ay'ın karanlık kısmına bak. GÜVENLİK: ince hilal gökte Güneş'e yakındır; dürbünü akşam yalnızca Güneş tamamen battıktan sonra kullan, sabah Güneş doğmadan bırak. Filtresiz dürbünle Güneş'e bakmak gözde anında ağır hasar yapar.",
-      "ne_gorursun": "Hilalin karanlık kalan kısmı soluk bir ışıkla parlar. Bu, Dünya'dan Ay'a yansıyan Güneş ışığıdır.",
-      "ipucu": "Ay'dan bakan biri için o sırada Dünya neredeyse 'dolu'dur.",
-      "ders": "d10",
-      "kaynak": [
-        {"ad": "NASA: Moon phases", "url": "https://science.nasa.gov/moon/moon-phases/"},
-        {"ad": "NASA: Moon viewing tips", "url": "https://science.nasa.gov/moon/viewing-tips/"},
-        {"ad": "Astronomy: Observe the Moon through binoculars", "url": "https://www.astronomy.com/observing/observe-the-moon-through-binoculars/"},
-        {"ad": "NASA: Eclipse safety", "url": "https://science.nasa.gov/eclipses/safety/"}
-      ]
-    },
-    {
-      "id": "ay-ortmesi",
-      "ad": "Ay'ın bir yıldızı örttüğü anı yakala",
-      "anahtar": "gorev:ay-ortmesi",
-      "tur": "ortme",
-      "arac": "dürbün",
-      "zorluk": 3,
-      "nasil": "Gökyüzü sekmesindeki Ay örtmeleri listesine bak; saati ve hangi kenarda olacağını oradan al. Olaydan birkaç dakika önce dürbünü Ay'ın kenarına, yıldızın durduğu yere çevir ve dürbünü sehpaya bağla ya da sağlam bir yere daya.",
-      "ne_gorursun": "Yıldız Ay'ın kenarında bir anda kaybolur, sonra öbür kenarda bir anda belirir. IOTA el kitabına göre iyi koşullarda, hilal evrelerinde sabitlenmiş dürbünle 4. kadirden yıldızların örtmesi izlenebilir; ama örtmelerin neredeyse hepsi için teleskop gerekir. Parlak kenarda yalnızca yaklaşık 3,5 kadirden parlak yıldızların yeniden belirişi görülür; karanlık kenardaki olaylar çok daha kolaydır. Zor.",
-      "ipucu": "Kaybolma ya da beliriş saatini olabildiğince tam deftere yaz.",
-      "ders": "d10",
-      "kaynak": [
-        {"ad": "IOTA Occultation Observer's Manual", "url": "http://www.poyntsource.com/IOTAmanual/IOTA_Observers_Manual_all_pages.pdf"}
-      ]
-    },
-    {
-      "id": "jupiter-uydulari",
-      "ad": "Jüpiter'in dört büyük uydusunu say",
-      "anahtar": "gorev:jupiter-uydulari",
-      "tur": "uydu",
-      "arac": "dürbün",
-      "zorluk": 1,
-      "nasil": "Gökyüzü sekmesindeki Gezegenler listesine bak; Jüpiter'in o gece ne zaman en yüksekte olduğunu öğren. Jüpiter en parlak zamanında −2,94 kadire çıkar, Sirius'tan bile parlaktır; çıplak gözle kolayca bulursun. Dürbünü Jüpiter'e çevir ve bir yere daya.",
-      "ne_gorursun": "Jüpiter'in hemen yanında küçük ışık noktaları: Io, Europa, Ganymede ve Callisto. En geniş açıldıklarında gezegenden yalnızca 2 ile 10 yay dakikası uzaktadırlar. Yoğun ışık kirliliğinde bile sıradan dürbünle kolayca görülürler. Ertesi gece yerleri değişmiş olur.",
-      "ipucu": "Üç gece üst üste Jüpiter'i ve noktaları çiz; Galileo da 1610'da uyduların bir geceden ötekine yer değiştirdiğini böyle fark etti.",
-      "ders": "d9",
-      "kaynak": [
-        {"ad": "Wikipedia: Galilean moons", "url": "https://en.wikipedia.org/wiki/Galilean_moons"},
-        {"ad": "Wikipedia: Apparent magnitude", "url": "https://en.wikipedia.org/wiki/Apparent_magnitude"},
-        {"ad": "NASA: Moons of Jupiter lithograph", "url": "https://www.nasa.gov/wp-content/uploads/2009/12/moons_of_jupiter_lithograph.pdf"}
-      ]
-    },
-    {
-      "id": "saturn",
-      "ad": "Satürn'ü bul ve halkasının neden seçilmediğini gör",
-      "anahtar": "cisim:Saturn",
-      "tur": "gezegen",
-      "arac": "çıplak göz ve dürbün",
-      "zorluk": 1,
-      "nasil": "Gökyüzü sekmesindeki Gezegenler listesinden Satürn'ün saatini ve yönünü öğren. Karşı konum sırasında halkalarıyla birlikte ortalama 0,05 kadir parlaklıktadır; kentte bile çıplak gözle kolay görülür. Sonra dürbünü çevir.",
-      "ne_gorursun": "Çıplak gözle parlak bir ışık. 7×50 dürbünle halkayı ayıramazsın: Satürn'ün halkasını seçmek için 20× ya da daha yüksek büyütme gerekir. Bu bir başarısızlık değil, dürbünün sınırını gösteren bir gözlem.",
-      "ipucu": "Halkayı görmek istersen küçük bir teleskop gerekir; Titan'ı aramak için bir sonraki görevi dene.",
-      "ders": "d9",
-      "kaynak": [
-        {"ad": "NASA NSSDCA: Saturn fact sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturnfact.html"},
-        {"ad": "Wikipedia: Binoculars", "url": "https://en.wikipedia.org/wiki/Binoculars"}
-      ]
-    },
-    {
-      "id": "titan",
-      "ad": "Satürn'ün uydusu Titan'ı yakala",
-      "anahtar": "gorev:titan",
-      "tur": "uydu",
-      "arac": "dürbün",
-      "zorluk": 3,
-      "nasil": "Gezegenler listesinden Satürn'ü bul, dürbünü sehpaya bağla ya da sağlam bir yere daya. Satürn'ün hemen çevresinde, yakınında duran sönük bir yıldızımsı nokta ara. Birkaç gece arayla bak: Titan Satürn'ün çevresinde yer değiştirir.",
-      "ne_gorursun": "8. kadirin ortası parlaklığında küçük bir nokta. Wikipedia'ya göre Galileo uydularıyla birlikte orta boy dürbünle seçilebilen birkaç uydudan biridir. Zor: hem sönük hem Satürn'e çok yakın; kent göğünde seçemeyebilirsin, karanlık bir yere git.",
-      "ipucu": "Titan, kalın atmosferi olan tek uydudur.",
-      "ders": "d9",
-      "kaynak": [
-        {"ad": "Wikipedia: Binoculars", "url": "https://en.wikipedia.org/wiki/Binoculars"},
-        {"ad": "Astronomy: The Sky Today, 2 Haziran 2026", "url": "https://www.astronomy.com/observing/the-sky-today-tuesday-june-2-2026/"},
-        {"ad": "NASA: Titan facts", "url": "https://science.nasa.gov/saturn/moons/titan/facts/"}
-      ]
-    },
-    {
-      "id": "venus-evresi",
-      "ad": "Venüs'ün hilal evresini gör",
-      "anahtar": "gorev:venus-evresi",
-      "tur": "gezegen",
-      "arac": "dürbün",
-      "zorluk": 3,
-      "nasil": "Gezegenler listesinden Venüs'ün saatini öğren. Turn Left at Orion'a göre Venüs Güneş'ten yalnızca 20° kadar uzaktayken bile gözlenebilir ve o sırada yaklaşık %6'lık ince bir hilaldir; bu, Güneş'e tehlikeli ölçüde yakın bir bölgedir. Yalnızca Güneş tamamen battıktan sonra ya da doğmadan önce bak; dürbünü sehpaya bağla ya da sağlam bir yere daya.",
-      "ne_gorursun": "Venüs'ün evreleri dürbün için zor bir hedeftir. Turn Left at Orion'a göre hilal biçimi iyi sabitlenmiş bir dürbünle görülebilir. Venüs hilal evresinde en parlak hâline, −4,92 kadire çıkar.",
-      "ipucu": "GÜVENLİK: Güneş ufkun üstündeyken dürbünü asla Güneş'e yakın bir yere çevirme. Filtresiz dürbünle Güneş'e bakmak gözde anında ağır hasar yapar.",
-      "ders": "d9",
-      "kaynak": [
-        {"ad": "Cambridge, Turn Left at Orion: Mercury and Venus", "url": "https://www.cambridge.org/turnleft/pages/the_planets/mercury_and_venus"},
-        {"ad": "Wikipedia: Binoculars", "url": "https://en.wikipedia.org/wiki/Binoculars"},
-        {"ad": "Wikipedia: Apparent magnitude", "url": "https://en.wikipedia.org/wiki/Apparent_magnitude"},
-        {"ad": "NASA: Eclipse safety", "url": "https://science.nasa.gov/eclipses/safety/"}
-      ]
-    },
-    {
-      "id": "merkur",
-      "ad": "Kaçak gezegen Merkür'ü yakala",
-      "anahtar": "cisim:Mercury",
-      "tur": "gezegen",
-      "arac": "çıplak göz ve dürbün",
-      "zorluk": 2,
-      "nasil": "Gökyüzü sekmesindeki Yaklaşan olaylar listesinde 'Merkür en büyük uzanımda' satırını bekle; bu tarihin bir hafta kadar çevresinde bak. Akşam uzanımında gün batımından sonra batı ufkuna, sabah uzanımında gün doğumundan önce doğu ufkuna bak. Önemli olan Merkür'ün alacakaranlıkta ufuktan ne kadar yüksek olduğudur; ufku açık bir yer seç. Önce dürbünle tara, bulunca çıplak gözle dene.",
-      "ne_gorursun": "Alacakaranlığın parıltısı içinde tek bir ışık noktası; yalnızca birkaç on dakika boyunca görülür. Çıplak göz ile dürbünü birlikte kullanmak en iyi yoldur.",
-      "ipucu": "GÜVENLİK: Güneş ufkun üstündeyken dürbünü asla Güneş'e yakın bir yere çevirme; akşam için Güneş tamamen battıktan sonra başla, sabah için Güneş doğmadan bırak.",
-      "ders": "d9",
-      "kaynak": [
-        {"ad": "Cambridge, Turn Left at Orion: Mercury and Venus", "url": "https://www.cambridge.org/turnleft/pages/the_planets/mercury_and_venus"},
-        {"ad": "NASA: Eclipse safety", "url": "https://science.nasa.gov/eclipses/safety/"}
-      ]
-    },
-    {
-      "id": "uranus",
-      "ad": "Uranüs'ü dürbünle bul",
-      "anahtar": "cisim:Uranus",
-      "tur": "gezegen",
-      "arac": "dürbün",
-      "zorluk": 3,
-      "nasil": "Gezegenler listesinden Uranüs'ün o gece hangi takımyıldızda olduğunu öğren. Önce bir yıldız haritasında yerini çalış, sonra o bölgeyi dürbünle tara ve haritayla karşılaştır.",
-      "ne_gorursun": "Karşı konumda ortalama 5,6, en parlak hâlinde 5,4 kadir. Kirliliksiz gökte çıplak gözle görülebilir ama rahat bulmak için dürbün gerekir. Dürbünde yıldız gibi bir nokta görürsün: mavi yeşil küçük diskini görmek için en az üç inçlik (yaklaşık 7,5 cm) bir teleskop ve 150× büyütme gerekir. Zor: kentte karanlık bir yere git.",
-      "ipucu": "Haritadaki yıldızlarla eşleşmeyen nokta aradığın gezegendir; çizip deftere yaz.",
-      "ders": "d9",
-      "kaynak": [
-        {"ad": "NASA NSSDCA: Uranus fact sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/uranusfact.html"},
-        {"ad": "Wikipedia: Binoculars", "url": "https://en.wikipedia.org/wiki/Binoculars"},
-        {"ad": "Space.com: Uranus and Neptune skywatching", "url": "https://www.space.com/amp/uranus-neptune-skywatching-september-2020.html"}
-      ]
-    },
-    {
-      "id": "neptun",
-      "ad": "Neptün'ü dürbünle ara",
-      "anahtar": "cisim:Neptune",
-      "tur": "gezegen",
-      "arac": "dürbün",
-      "zorluk": 3,
-      "nasil": "Gezegenler listesinden Neptün'ün yerini öğren, bir yıldız haritasında çevresini çalış ve dürbünle o bölgeyi haritayla karşılaştırarak tara. Dürbünü sehpaya bağla.",
-      "ne_gorursun": "En parlak hâlinde bile 7,7 kadir: çıplak gözle görülemeyecek kadar sönük. İyi bir dürbünle bulunabilir, yıldız gibi bir nokta olarak; küçük mavi noktasını görmek için en az 10 cm'lik teleskop ve 200× büyütme gerekir. Zor: kent göğünde seçemeyebilirsin, karanlık bir yerde dene.",
-      "ipucu": "Önce Uranüs'ü bul; Neptün ondan yaklaşık yedi kat sönüktür.",
-      "ders": "d9",
-      "kaynak": [
-        {"ad": "NASA NSSDCA: Neptune fact sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/neptunefact.html"},
-        {"ad": "Wikipedia: Binoculars", "url": "https://en.wikipedia.org/wiki/Binoculars"},
-        {"ad": "Space.com: Uranus and Neptune skywatching", "url": "https://www.space.com/amp/uranus-neptune-skywatching-september-2020.html"}
-      ]
-    },
-    {
-      "id": "iss-gecisi",
-      "ad": "Uluslararası Uzay İstasyonu'nun geçişini izle",
-      "anahtar": "gorev:iss-gecisi",
-      "tur": "yapay_uydu",
-      "arac": "çıplak göz",
-      "zorluk": 1,
-      "nasil": "Gökyüzü sekmesindeki Uzay istasyonları ve uydular listesine bak: önümüzdeki günlerdeki geçişlerin saatini, yönünü ve en yüksek açısını orada bulursun. Geçişler gün doğumundan önceki ya da gün batımından sonraki birkaç saat içinde olur. Birkaç dakika önce dışarıda ol ve listede yazan yöne bak.",
-      "ne_gorursun": "Yıldızlar arasında hızla ilerleyen, çok parlak bir yıldız gibi bir ışık. Uçaktan farkı: yanıp sönen ışıkları yoktur, yön değiştirmez ve tipik bir uçaktan hızlıdır. Dürbüne gerek yok.",
-      "ipucu": "Aynı listede Çin uzay istasyonu Tiangong da var; daha sönük ama o da çıplak gözle görülür.",
-      "ders": "d3",
-      "kaynak": [
-        {"ad": "NASA: Spot the Station", "url": "https://www.nasa.gov/spot-the-station/"}
-      ]
-    },
-    {
-      "id": "algol",
-      "ad": "Algol'ün kararmasını çıplak gözle izle",
-      "anahtar": "yildiz:Algol",
-      "tur": "degisen_yildiz",
-      "arac": "çıplak göz",
-      "zorluk": 2,
-      "nasil": "Gökyüzü sekmesindeki Algol'ün kararması listesinden en sönük anın saatini al. Algol Kahraman takımyıldızındadır. En sönük andan birkaç saat önce başla ve yarım saatte bir Algol'ü parlaklığı bilinen komşu yıldızlarla karşılaştır: Alpheratz (2,07), ε (epsilon) Persei (2,89) ve δ (delta) Persei (3,03).",
-      "ne_gorursun": "Algol normalde yaklaşık 2,1 kadirdir, tutulmada 3,4'e düşer. Kararma da geri parlama da birkaç saat sürer. En parlakken Alpheratz kadar, en sönükken δ Persei'den bile sönük görünür.",
-      "ipucu": "Her karşılaştırmada saati ve 'Algol şu yıldızdan parlak, şundan sönük' notunu deftere yaz; sonunda kendi ışık eğrini çizebilirsin.",
-      "ders": "d15",
-      "kaynak": [
-        {"ad": "Skymania: How to observe Algol", "url": "https://www.skymania.com/how-to-observe-algol-the-demon-star/"},
-        {"ad": "Wikipedia: Algol", "url": "https://en.wikipedia.org/wiki/Algol"}
-      ]
-    },
-    {
-      "id": "perseid",
-      "ad": "Perseid meteor yağmurunda kayan yıldız say",
-      "anahtar": "meteor:PER",
-      "tur": "meteor",
-      "arac": "çıplak göz",
-      "zorluk": 2,
-      "nasil": "Gökyüzü sekmesindeki Meteor yağmurları listesinden zirve gecesini ve o geceki Ay ışığını öğren. Kent ışıklarından olabildiğince uzaklaş, sırt üstü uzan ya da arkaya yaslanan bir sandalye kullan. Belli bir noktaya değil, gökyüzünün en karanlık geniş parçasına bak; meteorlar her yerde görünebilir. Telefona bakma, dürbünü kaldır. En iyi saatler gece yarısından sonradır.",
-      "ne_gorursun": "Kahraman takımyıldızındaki bir noktadan, radyanttan çıkıyormuş gibi görünen hızlı ışık çizgileri. NASA zirvede saatte 50–100 meteor diyor, ama bu sayı kusursuz karanlık gök içindir; kentte ve Ay ışığında bunun küçük bir kısmını görürsün. Perseid radyantı İstanbul'dan hiç batmaz.",
-      "ipucu": "Bir saat boyunca saydığın meteor sayısını ve gökteki en sönük yıldızın kadirini deftere yaz.",
-      "ders": "d19",
-      "kaynak": [
-        {"ad": "NASA JPL: How to see the best meteor showers", "url": "https://www.jpl.nasa.gov/news/how-to-see-the-best-meteor-showers-of-the-year-tools-tips-and-save-the-dates/"},
-        {"ad": "NASA: Perseids", "url": "https://science.nasa.gov/solar-system/meteors-meteorites/perseids/"},
-        {"ad": "IMO Meteor Shower Calendar 2026", "url": "https://www.imo.net/files/meteor-shower/cal2026.pdf"}
-      ]
-    },
-    {
-      "id": "geminid",
-      "ad": "Geminid meteor yağmurunu izle",
-      "anahtar": "meteor:GEM",
-      "tur": "meteor",
-      "arac": "çıplak göz",
-      "zorluk": 2,
-      "nasil": "Meteor yağmurları listesinden zirve gecesini ve Ay ışığını öğren. NASA'ya göre Geminidler akşam saat 21–22 dolaylarında başlar. Kent ışıklarından uzaklaş, gözünü karanlığa alıştır, sırt üstü uzanıp gökyüzünün geniş, karanlık bir parçasına bak.",
-      "ne_gorursun": "İkizler takımyıldızındaki radyanttan çıkıyormuş gibi görünen meteorlar. NASA saatte 40–50 meteor bekleniyor diyor; IMO'nun zirve sayısı (ZHR) 150, ama bu radyant başucundayken kusursuz karanlıkta tek bir gözlemcinin göreceği sayıdır. Kent göğünde çok daha azını görürsün.",
-      "ipucu": "Geminidlerin kaynağı bir kuyruklu yıldız değil, 3200 Phaethon adlı bir asteroit ya da olası bir 'kaya kuyruklu yıldız'.",
-      "ders": "d19",
-      "kaynak": [
-        {"ad": "NASA: Geminids", "url": "https://science.nasa.gov/solar-system/meteors-meteorites/geminids"},
-        {"ad": "NASA JPL: How to see the best meteor showers", "url": "https://www.jpl.nasa.gov/news/how-to-see-the-best-meteor-showers-of-the-year-tools-tips-and-save-the-dates/"},
-        {"ad": "Wikipedia: Zenithal hourly rate", "url": "https://en.wikipedia.org/wiki/Zenithal_hourly_rate"}
-      ]
+     "ad": "NASA Hubble Messier 45",
+     "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-45"
     }
-  ]
+   ]
+  },
+  {
+   "id": "hiyadlar",
+   "ad": "Hyades'in V harfini ve Aldebaran'ı bul",
+   "anahtar": "gorev:hiyadlar",
+   "tur": "kume",
+   "arac": "çıplak göz ve dürbün",
+   "zorluk": 1,
+   "nasil": "Avcı'nın kemerinden batıya, biraz da kuzeye (kuzeybatıya), Boğa takımyıldızına bak; Aldebaran kemerden yaklaşık 23° uzaktadır. Parlak turuncu Aldebaran sana V biçimli Hyades kümesinin yerini gösterir. Önce V'yi çıplak gözle bul, sonra dürbünle tara.",
+   "ne_gorursun": "Çıplak gözle belirgin bir V harfi. Dürbün V'nin içinde çok sayıda ek yıldız gösterir. Aldebaran kümeye ait değildir: yaklaşık 65 ışık yılı uzakta, aynı bakış doğrultusunda durur; küme ise yaklaşık 153 ışık yılı uzaktadır ve bize en yakın açık kümedir.",
+   "ipucu": "Kümenin dürbünde tek bir alana sığıp sığmadığına bak; V'yi parça parça taraman gerekebilir.",
+   "ders": "d15",
+   "kaynak": [
+    {
+     "ad": "NASA Night Sky Network: Hyades ve Ülker",
+     "url": "https://science.nasa.gov/solar-system/skywatching/night-sky-network/spot-the-young-stars-of-the-hyades-and-pleiades"
+    },
+    {
+     "ad": "Wikipedia: Hyades (star cluster)",
+     "url": "https://en.wikipedia.org/wiki/Hyades_(star_cluster)"
+    }
+   ],
+   "ra": 66.75,
+   "dec": 15.867
+  },
+  {
+   "id": "orion-bulutsusu",
+   "ad": "Orion Bulutsusu'nu dürbünle gör",
+   "anahtar": "hedef:M42",
+   "tur": "bulutsu",
+   "arac": "dürbün",
+   "zorluk": 1,
+   "nasil": "Avcı'nın kemerindeki üç yıldızı bul. Kemerin hemen güneyinde, aşağı doğru sarkan kısa bir yıldız dizisi vardır: Avcı'nın kılıcı. Bulutsu, kılıcın ortadaki yıldızlarını sarar. Dürbünü kılıcın ortasına çevir.",
+   "ne_gorursun": "Kılıcın orta yıldızının çevresinde soluk, biçimsiz bir parıltı. BinoSky'ın yazarı kentteki evinden bulutsuyu orta yıldızın çevresinde yaklaşık 15′ genişlikte görüyor. Uyarı: ışık kirliliğinde bulutsu dürbünden çok çıplak gözle daha belirgin görünebilir. Ortadaki dörtlü yıldızın (Trapez) dört yıldızını sıradan dürbünde seçmek zordur; Harrington'a göre sehpaya bağlı 16× ve üstü dev dürbünle mümkündür. BinoSky'a göre en parlak üyesi 5,4 kadir, öbür üçü çok daha sönük ve düşük büyütmede kolay ayrılmaz.",
+   "ipucu": "İlk bakışta bulanık bir leke gibi görünürse dürbünü bir yere daya; görüntü sabitlenince biçim belirginleşir.",
+   "ders": "d14",
+   "kaynak": [
+    {
+     "ad": "NASA Hubble Messier 42",
+     "url": "https://science.nasa.gov/?p=29958"
+    },
+    {
+     "ad": "BinoSky (B. Crowell): M42",
+     "url": "https://www.lightandmatter.com/binosky/m42.html"
+    },
+    {
+     "ad": "Astronomy, Phil Harrington: Meet the Hunter",
+     "url": "https://astronomy.com/science/phil-harringtons-binocular-universe-meet-the-hunter"
+    }
+   ]
+  },
+  {
+   "id": "andromeda",
+   "ad": "Andromeda Galaksisi'ni bul",
+   "anahtar": "hedef:M31",
+   "tur": "galaksi",
+   "arac": "dürbün",
+   "zorluk": 2,
+   "nasil": "Birinci yol: Kanatlıat'ın Büyük Karesi'ni Andromeda'ya bağlayan yıldız Alpheratz'tır; Andromeda'nın yıldız dizileri karenin bir kenarından uzanır. Bu dizide Mirach'ı, sonra μ (mü) Andromedae'yi bul; Mirach'tan μ'ye çizilen çizgiyi uzatırsan galaksiye varırsın: Mirach ile μ arası yaklaşık 4°; μ'nün ötesine aynı uzaklık kadar daha git. İkinci yol: kuzeyde W ya da M biçimli Kraliçe takımyıldızını bul; en parlak yıldızı Shedar galaksiyi gösterir.",
+   "ne_gorursun": "Bulanık, uzunca bir ışık lekesi; dürbünde çıplak göze göre daha parlak. NASA'ya göre orta düzey ışık kirliliğinde bile çıplak gözle görülebilir, ama kent ışıkları ya da parlak Ay bu sönük parıltıyı bastırabilir.",
+   "ipucu": "Ay'sız bir gece seç ve kaçamak bakış kullan: gözünü lekenin biraz yanına çevir.",
+   "ders": "d7",
+   "kaynak": [
+    {
+     "ad": "EarthSky: 2 ways to find the Andromeda galaxy",
+     "url": "https://earthsky.org/astronomy-essentials/2-ways-to-find-the-andromeda-galaxy"
+    },
+    {
+     "ad": "NASA Hubble Messier 31",
+     "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-31/"
+    }
+   ]
+  },
+  {
+   "id": "arikovani",
+   "ad": "Arıkovanı kümesini dürbünle yıldızlara ayır",
+   "anahtar": "hedef:M44",
+   "tur": "kume",
+   "arac": "dürbün",
+   "zorluk": 2,
+   "nasil": "İkizler'in parlak yıldızı Castor ile Aslan'ın parlak yıldızı Regulus'u bul. Bu ikisini birleştiren çizginin ortasının biraz altında, sönük Yengeç takımyıldızının içinde küme durur; katalog konumlarına göre orta noktadan yaklaşık 5° güneybatıdadır. Dürbünle bu orta noktanın çevresini tara.",
+   "ne_gorursun": "Çıplak gözle ancak iyi koşullarda soluk bir ışık bulutu olarak görülür. Dürbünle düzinelerce yıldıza ayrılır; NASA dürbünün yaklaşık 20 yıldızını ayırdığını söylüyor.",
+   "ipucu": "Ay ile kümenin yakınlaşmaları sevilen bir manzaradır; ama sönük üyeleri görmek istiyorsan Ay'sız bir gece seç.",
+   "ders": "d15",
+   "kaynak": [
+    {
+     "ad": "BBC Sky at Night: Beehive Cluster",
+     "url": "https://www.skyatnightmagazine.com/news/beehive-cluster"
+    },
+    {
+     "ad": "NASA Hubble Messier 44",
+     "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-44"
+    },
+    {
+     "ad": "Astronomy: 10 top spring binocular treats",
+     "url": "https://www.astronomy.com/astronomy-for-beginners/10-top-spring-binocular-treats/"
+    }
+   ]
+  },
+  {
+   "id": "cift-kume",
+   "ad": "Kahraman'daki Çift Küme'yi gör",
+   "anahtar": "hedef:NGC 869",
+   "tur": "kume",
+   "arac": "dürbün",
+   "zorluk": 2,
+   "nasil": "Kuzeyde W ya da M biçimli Kraliçe takımyıldızını bul. Kraliçe ile Kahraman takımyıldızı arasındaki boşluğu dürbünle yavaşça tara; iki ışıltılı yıldız öbeği aynı alanda belirir.",
+   "ne_gorursun": "Dürbünde yan yana iki güzel yıldız kümesi. Çıplak gözle ancak karanlık bir kır göğünde görülür; kentte dürbün şart.",
+   "ipucu": "İstanbul'dan Çift Küme hiç batmaz (en alçakta yaklaşık 8°); yıl boyu bir gün aranabilir, en iyisi yüksekteyken.",
+   "ders": "d15",
+   "kaynak": [
+    {
+     "ad": "EarthSky: Double Cluster in Perseus",
+     "url": "https://earthsky.org/tonight/double-cluster-in-perseus/"
+    },
+    {
+     "ad": "Wikipedia: Double Cluster",
+     "url": "https://en.wikipedia.org/wiki/Double_Cluster"
+    }
+   ]
+  },
+  {
+   "id": "mizar-alcor",
+   "ad": "Mizar ile Alcor'u ayır",
+   "anahtar": "hedef:Mizar",
+   "tur": "cift_yildiz",
+   "arac": "çıplak göz ve dürbün",
+   "zorluk": 1,
+   "nasil": "Büyük Ayı'nın kepçesini bul. Kepçenin sapı kıvrılır; kıvrımın tam yerindeki yıldız Mizar'dır. Önce çıplak gözle Mizar'ın hemen yanında sönük Alcor'u ara, sonra dürbünü çevir.",
+   "ne_gorursun": "İkisi arasında 11,8′ (yaklaşık 12 yay dakikası) var. Eski Arap ve İranlılar bu ikiliyi ayırmayı göz sınavı olarak kullanırdı. Alcor 4,0 kadirdir; parlak bir kent göğünde çıplak gözle görülen en sönük yıldızlar en iyi durumda 4,5 kadir dolayında olduğundan Alcor zorlaşabilir. Dürbünde ikisi rahatça ayrı görünür. Mizar'ın kendisi de çifttir (14″); bunu ayırmak için kaynak görüntü sabitleyicili bir dürbünü ya da en küçük teleskopu gösteriyor.",
+   "ipucu": "Çıplak gözle Alcor'u göremezsen dürbünle bak, yerini öğren, sonra yeniden çıplak gözle dene.",
+   "ders": "d15",
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Mizar and Alcor",
+     "url": "https://en.wikipedia.org/wiki/Mizar_and_Alcor"
+    },
+    {
+     "ad": "Astronomy: 10 top spring binocular treats",
+     "url": "https://www.astronomy.com/astronomy-for-beginners/10-top-spring-binocular-treats/"
+    },
+    {
+     "ad": "Astronomy Now: Mizar",
+     "url": "https://astronomynow.com/?p=36497"
+    }
+   ]
+  },
+  {
+   "id": "kutup-yildizi",
+   "ad": "Kutup Yıldızı'nı bul",
+   "anahtar": "yildiz:Polaris",
+   "tur": "yildiz",
+   "arac": "çıplak göz",
+   "zorluk": 1,
+   "nasil": "Büyük Ayı'nın kepçesinde, sapın ters ucundaki iki yıldızı bul: Merak ve Dubhe. Bu ikisi arası yaklaşık 5°. Merak'tan Dubhe'ye bir çizgi çiz ve kepçenin açık ağzının ötesine uzat; bu çizgi üzerinde karşına çıkan ilk belirgin yıldız Kutup Yıldızı'dır. Dubhe'den yaklaşık 29° uzaktadır, yani Merak–Dubhe aralığının beş katından biraz fazla.",
+   "ne_gorursun": "Orta parlaklıkta, ikinci kadirden bir yıldız; sanıldığı gibi gökteki en parlak yıldız değildir. Küçük Ayı'nın sapının ucundadır, ama Küçük Ayı'nın öteki yıldızları kent göğünde zor seçilir. Kutup Yıldızı'nın ufuktan yüksekliği yaklaşık enlemine eşittir; İstanbul'da yaklaşık 41°.",
+   "ipucu": "Yumruğunu kolunu uzatarak tut: bir yumruk yaklaşık 10°. Ufuktan Kutup Yıldızı'na kaç yumruk olduğunu say.",
+   "ders": "d1",
+   "kaynak": [
+    {
+     "ad": "EarthSky: Use Big Dipper to locate Polaris",
+     "url": "https://earthsky.org/tonight/use-big-dipper-to-locate-polaris-the-north-star"
+    },
+    {
+     "ad": "Sky & Telescope: Big Dipper spring sky sights",
+     "url": "https://skyandtelescope.org/stargazing-and-observing/big-dipper-spring-sky-sights/"
+    },
+    {
+     "ad": "EarthSky: Sky measurements",
+     "url": "https://earthsky.org/astronomy-essentials/sky-measurements-degrees-arc-minutes-arc-seconds/"
+    },
+    {
+     "ad": "Wikipedia: Celestial pole",
+     "url": "https://en.wikipedia.org/wiki/Celestial_pole"
+    }
+   ]
+  },
+  {
+   "id": "albireo",
+   "ad": "Albireo'yu iki yıldıza ayırmayı dene",
+   "anahtar": "hedef:Albireo",
+   "tur": "cift_yildiz",
+   "arac": "dürbün",
+   "zorluk": 3,
+   "nasil": "Kuğu takımyıldızında Kuzey Haçı denen haç biçimini bul. Haçın tepesinde parlak Deneb, öbür ucunda, yani haçın dibinde ve kuğunun başında Albireo vardır. Dürbünü Albireo'ya çevir ve mutlaka bir yere daya ya da sehpaya bağla.",
+   "ne_gorursun": "İki yıldız arası yalnızca 34,6″. Kaynaklar burada ayrışıyor: EarthSky dürbünün Albireo'yu iki yıldız olarak göstermediğini söylüyor; Astronomy Now ise sağlam sabitlenmiş 10×50 dürbünle kolayca ayrıldığını yazıyor. 7×50 elde tutulunca ayıramazsan bu normaldir. Küçük bir teleskopta yaklaşık 30× büyütmeyle biri altın sarısı, öbürü daha sönük mavi iki yıldız görülür.",
+   "ipucu": "Ayıramadıysan defterine 'ayrılmadı, elde' diye yaz; sonra dürbünü bir korkuluğa dayayıp yeniden dene.",
+   "ders": "d15",
+   "kaynak": [
+    {
+     "ad": "EarthSky: Albireo",
+     "url": "https://earthsky.org/brightest-stars/albireo-finest-double-star/"
+    },
+    {
+     "ad": "Astronomy Now: Albireo",
+     "url": "https://astronomynow.com/2022/08/02/dont-miss-albireo-a-glorious-colour-contrast-double-star/"
+    }
+   ]
+  },
+  {
+   "id": "m13",
+   "ad": "Herkül'deki Büyük Küme'yi (M13) bul",
+   "anahtar": "hedef:M13",
+   "tur": "kume",
+   "arac": "dürbün",
+   "zorluk": 2,
+   "nasil": "Herkül takımyıldızında ζ (zeta) ve η (eta) Herculis yıldızlarını bul. Dürbünü ζ'ya çevir, sonra η'ya doğru yavaşça kaydır; yolun yaklaşık üçte ikisinde dur. M13 orada, iki yıldızı birleştiren çizginin üzerindedir.",
+   "ne_gorursun": "Küçük, bulanık bir ışık topu; ortası daha parlak. Çıplak gözle ancak karanlık gecelerde kaçamak bakışla görülebilir; kentte dürbün şart.",
+   "ipucu": "İstanbul'dan M13 en yüksekteyken neredeyse başucuna çıkar (yaklaşık 85°); boynunu korumak için sırt üstü yatarak bak.",
+   "ders": "d15",
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Star hopping",
+     "url": "https://en.wikipedia.org/wiki/Star_hopping"
+    },
+    {
+     "ad": "NASA Hubble Messier 13",
+     "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-13/"
+    },
+    {
+     "ad": "Wikipedia: Messier 13",
+     "url": "https://en.wikipedia.org/wiki/Messier_13"
+    },
+    {
+     "ad": "Astronomy: 13 great summer binocular sights",
+     "url": "https://www.astronomy.com/observing/web-extra-13-great-summer-binocular-sights/"
+    }
+   ]
+  },
+  {
+   "id": "m92",
+   "ad": "M13'ün gölgedeki komşusu M92'yi bul",
+   "anahtar": "hedef:M92",
+   "tur": "kume",
+   "arac": "dürbün",
+   "zorluk": 3,
+   "nasil": "Herkül'ün kilit taşı denen dörtgeninin kuzey kenarındaki η (eta) ve π (pi) Herculis yıldızlarına nişan al. M92 bu iki yıldızın kuzeyinde, onlarla aşağı yukarı eşkenar bir üçgen oluşturan noktadadır.",
+   "ne_gorursun": "M13 gibi küçük, bulanık bir parıltı; ortası daha parlak, ama M13'ten sönük (katalogda 6,5 kadir). Zor: kentte seçemeyebilirsin, karanlık bir yere git.",
+   "ipucu": "Önce M13'ü bul; aynı geceye M92'yi eklemek görüntüyü karşılaştırmanı sağlar.",
+   "ders": "d15",
+   "kaynak": [
+    {
+     "ad": "Astronomy: 13 great summer binocular sights",
+     "url": "https://www.astronomy.com/observing/web-extra-13-great-summer-binocular-sights/"
+    }
+   ]
+  },
+  {
+   "id": "m3",
+   "ad": "Küresel küme M3'ü bul",
+   "anahtar": "hedef:M3",
+   "tur": "kume",
+   "arac": "dürbün",
+   "zorluk": 3,
+   "nasil": "Çoban takımyıldızının parlak turuncu yıldızı Arcturus ile Av Köpekleri'nin yıldızı Cor Caroli'yi bul. Dürbünle bu iki yıldızın tam ortasındaki bölgeyi yavaşça ileri geri tara.",
+   "ne_gorursun": "Küçük, sönük bir ışık lekesi. Dürbün kümenin yüz binlerce yıldızından hiçbirini ayırmaz. Zor: katalogda 6,4 kadir; kentte seçemeyebilirsin, karanlık bir yere git.",
+   "ipucu": "Kepçenin sapının kavisini izlersen Arcturus'a varırsın.",
+   "ders": "d15",
+   "kaynak": [
+    {
+     "ad": "Astronomy: 10 top spring binocular treats",
+     "url": "https://www.astronomy.com/astronomy-for-beginners/10-top-spring-binocular-treats/"
+    },
+    {
+     "ad": "Sky & Telescope: Big Dipper spring sky sights",
+     "url": "https://skyandtelescope.org/stargazing-and-observing/big-dipper-spring-sky-sights/"
+    }
+   ]
+  },
+  {
+   "id": "aski",
+   "ad": "Askı'yı (Coathanger) bul",
+   "anahtar": "hedef:Cr 399",
+   "tur": "asterizm",
+   "arac": "dürbün",
+   "zorluk": 2,
+   "nasil": "Yaz Üçgeni'nin en alttaki yıldızı Altair'e dürbünü kilitle. Hemen üstünde Tarazed vardır; Altair, Tarazed ve Vega neredeyse bir çizgi oluşturur. Bu çizgi boyunca Vega'ya doğru ilerle; yolun yaklaşık üçte birinde Askı'ya varırsın.",
+   "ne_gorursun": "On yıldızlık bir askı: altı yıldızlık düz bir çizgi ve bir ucundan sarkan dört yıldızlık bir çengel. En yüksekteyken ters görünür. Karanlık gökte çıplak gözle ayrılmamış bir ışık lekesidir; görmek için genellikle dürbün gerekir.",
+   "ipucu": "Askının ters durması seni şaşırtmasın; gece ilerledikçe dönüşünü izle.",
+   "ders": "d11",
+   "kaynak": [
+    {
+     "ad": "BBC Sky at Night: Coathanger asterism",
+     "url": "https://www.skyatnightmagazine.com/advice/skills/coathanger-asterism/"
+    },
+    {
+     "ad": "Wikipedia: Brocchi's Cluster",
+     "url": "https://en.wikipedia.org/wiki/Brocchi%27s_Cluster"
+    }
+   ]
+  },
+  {
+   "id": "halter",
+   "ad": "Halter Bulutsusu'nu (M27) yakala",
+   "anahtar": "hedef:M27",
+   "tur": "bulutsu",
+   "arac": "dürbün",
+   "zorluk": 3,
+   "nasil": "Altair'in yaklaşık bir yumruk üstünde küçük Okçuk takımyıldızını bul; ok biçimindedir. Okun ucundaki γ (gama) Sagittae'den yaklaşık 3° kuzeye kaydır; M27 sınırı geçip komşu Tilkicik takımyıldızında durur.",
+   "ne_gorursun": "Büyük ama silik, gri bir parıltı, yaklaşık 0,1° genişliğinde. Sky and Telescope dürbünde kolay olduğunu iyi, karanlık bir kır göğü için söylüyor. Zor: kentte seçemeyebilirsin, karanlık bir yere git.",
+   "ipucu": "M27 bir gezegenimsi bulutsudur; ne olduğunu Yıldızların Ölümü dersinde okuyabilirsin.",
+   "ders": "d6",
+   "kaynak": [
+    {
+     "ad": "Astronomy Now: Dumbbell Nebula",
+     "url": "https://astronomynow.com/2022/07/25/observe-the-dramatic-dumbbell-nebula/"
+    },
+    {
+     "ad": "Sky & Telescope: This week's sky, 4–13 Eylül",
+     "url": "https://skyandtelescope.org/astronomy-news/observing-news/this-weeks-sky-at-a-glance-september-4-13/"
+    }
+   ]
+  },
+  {
+   "id": "yaban-ordegi",
+   "ad": "Yaban Ördeği Kümesi'ni (M11) bul",
+   "anahtar": "hedef:M11",
+   "tur": "kume",
+   "arac": "dürbün",
+   "zorluk": 3,
+   "nasil": "Kartal'ın parlak yıldızı Altair'den başla. Altair'den yaklaşık 8° uzaktaki δ (delta) Aquilae'ye atla. Aynı yönde, aşağı doğru ilerlemeyi sürdür: katalog konumlarına göre M11, δ'nın yaklaşık 13° ötesindedir, yani Altair–δ uzaklığının bir buçuk katı kadar daha (Altair'den toplam iki buçuk katı). Orada dürbün alanını dolduran yarım daire biçimli bir yıldız dizisine varırsın. M11 bu yarım dairenin hemen altındadır; Kalkan takımyıldızındadır.",
+   "ne_gorursun": "Yarım dairenin altında yıldız gibi duran bulanık bir leke. Görmek için dürbün ya da teleskop gerekir. İstanbul'dan en fazla yaklaşık 43° yükselir.",
+   "ipucu": "Dört parmağın kolunu uzatınca yaklaşık 8° tutar; ilk atlamayı bununla ölç.",
+   "ders": "d15",
+   "kaynak": [
+    {
+     "ad": "EarthSky: Wild Duck Cluster",
+     "url": "https://earthsky.org/clusters-nebulae-galaxies/wild-duck-cluster-deep-sky-gem-by-eagles-tail/"
+    }
+   ]
+  },
+  {
+   "id": "sac-kumesi",
+   "ad": "Berenis'in Saçı kümesini dürbünle tara",
+   "anahtar": "hedef:Mel 111",
+   "tur": "kume",
+   "arac": "dürbün",
+   "zorluk": 2,
+   "nasil": "Aslan takımyıldızında, ters soru işaretinin dibindeki Regulus'u bul. Regulus'tan Aslan'ın arka üçgeninin tepe yıldızı Zosma'ya bir çizgi çiz (yaklaşık 18°) ve çizgiyi Zosma'nın ötesine aynı uzunlukta bir kez daha uzat; küme, Regulus'tan bu uzaklığın yaklaşık iki katı ötededir. Büyük Ayı'nın kuzeyde, Aslan'ın batıda, Çoban'ın doğuda sınırladığı boş görünen bölge de aynı yerdir.",
+   "ne_gorursun": "Gökte yaklaşık 5° kaplayan, çok seyrek bir küme: 5. ve 6. kadirden onlarca yıldız. Dürbün kümeyi hemen birkaç düzine yıldıza ayırır. Kentte çıplak gözle görünmeyebilir; dürbün şart.",
+   "ipucu": "Regulus'u bulmak için Aslan'ın ters soru işaretine, Orak denen yıldız dizisine bak; Regulus bu soru işaretinin dibindedir.",
+   "ders": "d15",
+   "kaynak": [
+    {
+     "ad": "EarthSky: Star-hop from Leo to the Coma star cluster",
+     "url": "https://earthsky.org/tonight/star-hop-from-leo-to-the-coma-star-cluster"
+    },
+    {
+     "ad": "BAA: A binocular star cluster for spring skies",
+     "url": "https://britastro.org/?p=209415"
+    },
+    {
+     "ad": "Astronomy: 10 top spring binocular treats",
+     "url": "https://www.astronomy.com/astronomy-for-beginners/10-top-spring-binocular-treats/"
+    }
+   ]
+  },
+  {
+   "id": "m7",
+   "ad": "Akrep'in kuyruğundaki M7'yi gör",
+   "anahtar": "hedef:M7",
+   "tur": "kume",
+   "arac": "dürbün",
+   "zorluk": 2,
+   "nasil": "Akrep'in kıvrık kuyruğunun ucundaki iki iğne yıldızını bul: Lesath ve Shaula. Lesath'tan Shaula'ya çizilen çizgiyi uzatırsan M7'ye varırsın. Güney ufkun açık olmalı: İstanbul'dan M7 en yüksekteyken bile yalnızca yaklaşık 14° yükselir.",
+   "ne_gorursun": "Dürbünde parlak, zengin bir küme: ortada belirgin bir haç biçimi, çevresinde daha seyrek yıldızlar. Kentten bile kolay görüldüğü söyleniyor; asıl engel ufka yakınlığı.",
+   "ipucu": "Kelebek Kümesi M6, M7'nin kuzeybatısında: EarthSky 3° diyor, katalog konumlarından merkezler arası yaklaşık 4°; güney ufkun çok açıksa onu da ara (en fazla yaklaşık 17° yükselir).",
+   "ders": "d15",
+   "kaynak": [
+    {
+     "ad": "EarthSky: M6 and M7",
+     "url": "https://earthsky.org/clusters-nebulae-galaxies/m6-and-m7-deep-sky-gems-by-scorpius-tail/"
+    },
+    {
+     "ad": "BinoSky (B. Crowell): M7",
+     "url": "https://www.lightandmatter.com/binosky/m7.html"
+    }
+   ]
+  },
+  {
+   "id": "deniz-kulagi",
+   "ad": "Deniz Kulağı Bulutsusu'nu (M8) bul",
+   "anahtar": "hedef:M8",
+   "tur": "bulutsu",
+   "arac": "dürbün",
+   "zorluk": 3,
+   "nasil": "Yay takımyıldızında çaydanlık biçimini bul. Çaydanlığın emziğini oluşturan en sağdaki üç yıldızı seç; dürbünle emziğin uzunluğunun yaklaşık iki katı yukarı çık, parlak ve bulanık bir cisim belirir. Katalog konumlarına göre M8, emziğin ucundaki Alnasl'ın (γ Sagittarii) yaklaşık 6° kuzeyindedir.",
+   "ne_gorursun": "Dürbünde uzunca bir parıltı. EarthSky bir yanda daha parlak bir çekirdekten, karanlık bir yarıkla ayrılmış öbür yanda bir açık kümeden söz ediyor ve manzaranın karanlık gökte biraz optik yardımla görkemli olduğunu söylüyor; kent göğünde ve alçakta bu ayrıntılar silinebilir. Dolunayın yaklaşık üç katı genişliktedir. Çıplak gözle iyi koşullarda bile ancak seçilir. Zor: İstanbul'dan en fazla yaklaşık 25° yükselir; güney ufku açık, karanlık bir yere git.",
+   "ipucu": "Ay'ın yeni aya yakın olduğu bir gece seç.",
+   "ders": "d14",
+   "kaynak": [
+    {
+     "ad": "EarthSky: Lagoon Nebula",
+     "url": "https://earthsky.org/clusters-galaxies-nebulae/the-lagoon-nebula-messier-8"
+    },
+    {
+     "ad": "NASA Hubble Messier 8",
+     "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-8"
+    }
+   ]
+  },
+  {
+   "id": "m22",
+   "ad": "Küresel küme M22'yi gör",
+   "anahtar": "hedef:M22",
+   "tur": "kume",
+   "arac": "dürbün",
+   "zorluk": 2,
+   "nasil": "Yay'daki çaydanlığın kapağının tepesindeki yıldız Kaus Borealis'i bul. M22 bu yıldızın yaklaşık 2,5° kuzeydoğusundadır.",
+   "ne_gorursun": "Kaynaklar dürbün görüntüsünü ayrıntılı anlatmıyor; küme yaklaşık 20′ genişliğinde ve hafifçe uzunca. BinoSky'ın yazarına göre ışık kirliliği olan yerlerdeki kuzey yarımküre gözlemcisi için dürbünle gerçekten kolay denebilecek tek küresel küme budur. Engel alçaklığı: İstanbul'dan en fazla yaklaşık 25° yükselir; güney ufkun açık olmalı.",
+   "ipucu": "Aynı gece M8'i de ara; ikisi de çaydanlığın çevresinde.",
+   "ders": "d15",
+   "kaynak": [
+    {
+     "ad": "BBC Sky at Night: Teapot asterism",
+     "url": "https://www.skyatnightmagazine.com/advice/teapot-asterism"
+    },
+    {
+     "ad": "BinoSky (B. Crowell): M22",
+     "url": "https://www.lightandmatter.com/binosky/m22.html"
+    }
+   ]
+  },
+  {
+   "id": "m35",
+   "ad": "İkizler'in ayağındaki M35'i ara",
+   "anahtar": "hedef:M35",
+   "tur": "kume",
+   "arac": "dürbün",
+   "zorluk": 3,
+   "nasil": "İkizler'de Castor'un ayağını oluşturan üç yıldızı bul. Bu üçlünün son iki yıldızından kuzeye git; küme orada, 6. kadirden bir yıldızın batısındadır.",
+   "ne_gorursun": "En belirgin dört üyesi, küçültülmüş bir Büyük Köpek biçimi çizer; üçü 8. kadirden yıldızlardır. BinoSky'ın yazarı kümeyi dürbün için etkileyici bulmuyor ve ışık kirliliği olan bir yerden, Ay'sız, açık ve küme meridyene yakın değilse denemeyi önermiyor. Zor: karanlık bir yere git.",
+   "ders": "d15",
+   "kaynak": [
+    {
+     "ad": "BinoSky (B. Crowell): M35",
+     "url": "https://www.lightandmatter.com/binosky/m35.html"
+    }
+   ]
+  },
+  {
+   "id": "m38",
+   "ad": "Arabacı'da M38'in gülen yüzünü bul",
+   "anahtar": "hedef:M38",
+   "tur": "kume",
+   "arac": "dürbün",
+   "zorluk": 3,
+   "nasil": "Boğa'daki Elnath'tan (β Tauri) yaklaşık 6° kuzeye nişan al. Orada gülen bir yüze benzeyen yıldız yayını bulursun. M38, gülümsemenin en kuzeydeki yıldızının hemen yanındaki bulanık gamzedir; katalog konumlarına göre Elnath'ın yaklaşık 7° kuzeyindedir.",
+   "ne_gorursun": "Yıldızlı bir alanda, Ay çapının yaklaşık üçte ikisi büyüklüğünde bulanık bir leke; en parlak üyeleri yalnızca 7. kadirde. Kaynak kent göğünden söz etmiyor; katalogda 6,4 kadir olduğundan kentte zor say, karanlık bir yerde dene.",
+   "ipucu": "M38'i bulunca aynı yoldan M36'ya ve M37'ye geçebilirsin.",
+   "ders": "d15",
+   "kaynak": [
+    {
+     "ad": "Astronomy, Phil Harrington: Winter's first act",
+     "url": "https://www.astronomy.com/observing/binocular-universe-winters-first-act/"
+    }
+   ]
+  },
+  {
+   "id": "m36",
+   "ad": "Arabacı'da M36'yı bul",
+   "anahtar": "hedef:M36",
+   "tur": "kume",
+   "arac": "dürbün",
+   "zorluk": 3,
+   "nasil": "Önce M38'i bul. M36, M38'in yaklaşık 2,3° güneydoğusundadır; dürbünü o yöne biraz kaydır.",
+   "ne_gorursun": "M38'den küçük, ama yıldızları daha parlak ve ayırması daha kolay. Yuvarlak, puslu bir parıltının içinde yarım düzineden fazla sönük yıldız seçebilirsin; ne kadarını göreceğin gökyüzü koşullarına bağlı. Katalogda 6,0 kadir; kentte zor say.",
+   "ders": "d15",
+   "kaynak": [
+    {
+     "ad": "Astronomy, Phil Harrington: Winter's first act",
+     "url": "https://www.astronomy.com/observing/binocular-universe-winters-first-act/"
+    }
+   ]
+  },
+  {
+   "id": "m37",
+   "ad": "Arabacı'nın en parlak kümesi M37'yi bul",
+   "anahtar": "hedef:M37",
+   "tur": "kume",
+   "arac": "dürbün",
+   "zorluk": 3,
+   "nasil": "Boğa'daki Elnath ile θ (teta) Aurigae arasındaki çizgiyi düşün. M37, bu çizginin orta noktasının hemen doğusunda, Arabacı'nın beşgeninin güneydoğu kenarının biraz dışındadır.",
+   "ne_gorursun": "Üç Messier kümesinin en parlağı ama bulması daha zor. Çoğu dürbünde büyük, yuvarlak bir parıltı. Katalogda 5,6 kadir; kentte zor say, karanlık bir yerde dene.",
+   "ders": "d15",
+   "kaynak": [
+    {
+     "ad": "Astronomy, Phil Harrington: Winter's first act",
+     "url": "https://www.astronomy.com/observing/binocular-universe-winters-first-act/"
+    }
+   ]
+  },
+  {
+   "id": "ay-terminator",
+   "ad": "Ay'da gece ile gündüzün sınırını dürbünle izle",
+   "anahtar": "cisim:Moon",
+   "tur": "ay",
+   "arac": "dürbün",
+   "zorluk": 1,
+   "nasil": "Ay'ın aydınlık ve karanlık yanlarını ayıran çizgiye, terminatöre bak. En iyi dönem yeni aydan kısa süre sonrasından ilk dördünden yaklaşık iki gün sonrasına kadardır; dolunay en kötü zamandır. Yeni aydan hemen sonraki ince hilal Güneş'e yakındır: dürbünü ancak Güneş tamamen battıktan sonra Ay'a çevir. Ay için gözünü karanlığa alıştırmana gerek yok; Ay'ı gecenin sonuna bırakırsan öteki hedefler için karanlık uyumun bozulmaz.",
+   "ne_gorursun": "Terminatör boyunca uzun gölgeli kraterler ve dağlar. Karanlık yanda, tepeleri Güneş ışığını yakalayan dağ doruklarını ışık noktaları gibi ara. NASA en az 7× büyütmeli dürbün öneriyor; 7×50 tam bu sınırda.",
+   "ipucu": "Aynı bölgeye ertesi gece yeniden bak: terminatör kaydıkça başka kraterler ortaya çıkar.",
+   "ders": "d10",
+   "kaynak": [
+    {
+     "ad": "NASA: Moon viewing tips",
+     "url": "https://science.nasa.gov/moon/viewing-tips/"
+    },
+    {
+     "ad": "Astronomy: Observe the Moon through binoculars",
+     "url": "https://www.astronomy.com/observing/observe-the-moon-through-binoculars/"
+    },
+    {
+     "ad": "NASA: Eclipse safety",
+     "url": "https://science.nasa.gov/eclipses/safety/"
+    }
+   ]
+  },
+  {
+   "id": "ay-denizleri",
+   "ad": "Ay'ın denizlerini çıplak gözle tanı",
+   "anahtar": "gorev:ay-denizleri",
+   "tur": "ay",
+   "arac": "çıplak göz",
+   "zorluk": 1,
+   "nasil": "Ay'ın büyük kısmı aydınlıkken ona çıplak gözle bak. Karanlık lekeler denizlerdir (maria). Sol üst çeyrekteki büyük karanlık alan Mare Imbrium'dur, Ay'ın ikinci büyük denizi. Öteki büyük denizleri de ara: Mare Serenitatis, Mare Tranquillitatis, Mare Crisium ve Oceanus Procellarum. Ay haritasıyla karşılaştırarak adlandır.",
+   "ne_gorursun": "Açık renkli yaylalar arasında koyu lekeler. Bu koyu lekeler eski çarpışma havzalarını dolduran bazalt lav ovalarıdır; demirce zengin oldukları için daha az ışık yansıtırlar. Pek çok kültür bu lekelerde bir yüz ya da bir tavşan görmüştür.",
+   "ipucu": "Gördüğün lekeleri bir daire içine çiz ve Ay haritasıyla karşılaştır.",
+   "ders": "d10",
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Lunar mare",
+     "url": "https://en.wikipedia.org/wiki/Lunar_mare"
+    },
+    {
+     "ad": "NASA: Moon viewing tips",
+     "url": "https://science.nasa.gov/moon/viewing-tips/"
+    },
+    {
+     "ad": "Astronomy: Observe the Moon through binoculars",
+     "url": "https://www.astronomy.com/observing/observe-the-moon-through-binoculars/"
+    }
+   ],
+   "cisim": "Moon"
+  },
+  {
+   "id": "kopernik",
+   "ad": "Kopernik kraterini bul",
+   "anahtar": "gorev:kopernik",
+   "tur": "ay",
+   "arac": "dürbün",
+   "zorluk": 2,
+   "nasil": "Yeni aydan yaklaşık 10 gün sonra, terminatör Kopernik'in üstünden geçerken bak. Önce Ay'ın sol üst çeyreğindeki büyük Mare Imbrium'u bul; dürbünü bu denizin hemen altına çevir.",
+   "ne_gorursun": "Terminatör yakınında gölgeler uzun olduğundan krater belirgin görünür. Kopernik, Oceanus Procellarum'un neredeyse ortasındadır. Dolunayda gölgesi kaybolur ama çevresine örümcek ağı gibi yayılan parlak ışınları görünür.",
+   "ipucu": "Kopernik'i hem 10. gün hem dolunayda gör; aynı kraterin iki farklı yüzünü deftere yaz.",
+   "ders": "d10",
+   "kaynak": [
+    {
+     "ad": "Astronomy: Observe the Moon through binoculars",
+     "url": "https://www.astronomy.com/observing/observe-the-moon-through-binoculars/"
+    },
+    {
+     "ad": "BBC Sky at Night: Lunar rays at full Moon",
+     "url": "https://www.skyatnightmagazine.com/advice/worst-time-to-observe-moon-when-full"
+    }
+   ],
+   "cisim": "Moon"
+  },
+  {
+   "id": "tycho-isinlari",
+   "ad": "Dolunayda Tycho'nun ışınlarını izle",
+   "anahtar": "gorev:tycho-isinlari",
+   "tur": "ay",
+   "arac": "dürbün",
+   "zorluk": 1,
+   "nasil": "Dolunay gecesi dürbünü Ay'ın alt kenarına yakın bölgeye, güney yaylalarına çevir. Tycho kraterinden her yöne yayılan parlak çizgileri bul ve en uzun olanı yukarı doğru izle.",
+   "ne_gorursun": "Tycho'nun ışınları Ay'daki en uzun ışınlardır, 2600 km'ye kadar uzanır. Dürbünde açıkça seçilir; diskin neredeyse tepesine kadar izlenebilir. Keskin gözle çıplak gözle bile bazı ışınlar seçilebilir. Tycho'nun kendisi 85 km'den geniştir.",
+   "ipucu": "Dolunay kraterlerin gölgesini yok eder ama ışınlar için en iyi zamandır; Ay alçaktayken parlaklık azaldığı için çıplak gözle denemek daha kolaydır.",
+   "ders": "d10",
+   "kaynak": [
+    {
+     "ad": "BBC Sky at Night: Lunar rays at full Moon",
+     "url": "https://www.skyatnightmagazine.com/advice/worst-time-to-observe-moon-when-full"
+    },
+    {
+     "ad": "Astronomy: Observe the Moon through binoculars",
+     "url": "https://www.astronomy.com/observing/observe-the-moon-through-binoculars/"
+    },
+    {
+     "ad": "NASA: Moon viewing tips",
+     "url": "https://science.nasa.gov/moon/viewing-tips/"
+    },
+    {
+     "ad": "NASA: Moon facts",
+     "url": "https://science.nasa.gov/moon/facts/"
+    }
+   ],
+   "cisim": "Moon"
+  },
+  {
+   "id": "dunya-isigi",
+   "ad": "Hilaldeki Dünya ışığını gör",
+   "anahtar": "gorev:dunya-isigi",
+   "tur": "ay",
+   "arac": "çıplak göz ve dürbün",
+   "zorluk": 1,
+   "nasil": "Yeni aydan kısa süre sonra, akşam alacakaranlığında ince hilale bak; ya da sabah alacakaranlığında son günlerin hilaline. Önce çıplak gözle, sonra dürbünle Ay'ın karanlık kısmına bak. GÜVENLİK: ince hilal gökte Güneş'e yakındır; dürbünü akşam yalnızca Güneş tamamen battıktan sonra kullan, sabah Güneş doğmadan bırak. Filtresiz dürbünle Güneş'e bakmak gözde anında ağır hasar yapar.",
+   "ne_gorursun": "Hilalin karanlık kalan kısmı soluk bir ışıkla parlar. Bu, Dünya'dan Ay'a yansıyan Güneş ışığıdır.",
+   "ipucu": "Ay'dan bakan biri için o sırada Dünya neredeyse 'dolu'dur.",
+   "ders": "d10",
+   "kaynak": [
+    {
+     "ad": "NASA: Moon phases",
+     "url": "https://science.nasa.gov/moon/moon-phases/"
+    },
+    {
+     "ad": "NASA: Moon viewing tips",
+     "url": "https://science.nasa.gov/moon/viewing-tips/"
+    },
+    {
+     "ad": "Astronomy: Observe the Moon through binoculars",
+     "url": "https://www.astronomy.com/observing/observe-the-moon-through-binoculars/"
+    },
+    {
+     "ad": "NASA: Eclipse safety",
+     "url": "https://science.nasa.gov/eclipses/safety/"
+    }
+   ],
+   "cisim": "Moon"
+  },
+  {
+   "id": "ay-ortmesi",
+   "ad": "Ay'ın bir yıldızı örttüğü anı yakala",
+   "anahtar": "gorev:ay-ortmesi",
+   "tur": "ortme",
+   "arac": "dürbün",
+   "zorluk": 3,
+   "nasil": "Gökyüzü sekmesindeki Ay örtmeleri listesine bak; saati ve hangi kenarda olacağını oradan al. Olaydan birkaç dakika önce dürbünü Ay'ın kenarına, yıldızın durduğu yere çevir ve dürbünü sehpaya bağla ya da sağlam bir yere daya.",
+   "ne_gorursun": "Yıldız Ay'ın kenarında bir anda kaybolur, sonra öbür kenarda bir anda belirir. IOTA el kitabına göre iyi koşullarda, hilal evrelerinde sabitlenmiş dürbünle 4. kadirden yıldızların örtmesi izlenebilir; ama örtmelerin neredeyse hepsi için teleskop gerekir. Parlak kenarda yalnızca yaklaşık 3,5 kadirden parlak yıldızların yeniden belirişi görülür; karanlık kenardaki olaylar çok daha kolaydır. Zor.",
+   "ipucu": "Kaybolma ya da beliriş saatini olabildiğince tam deftere yaz.",
+   "ders": "d10",
+   "kaynak": [
+    {
+     "ad": "IOTA Occultation Observer's Manual",
+     "url": "http://www.poyntsource.com/IOTAmanual/IOTA_Observers_Manual_all_pages.pdf"
+    }
+   ],
+   "cisim": "Moon"
+  },
+  {
+   "id": "jupiter-uydulari",
+   "ad": "Jüpiter'in dört büyük uydusunu say",
+   "anahtar": "gorev:jupiter-uydulari",
+   "tur": "uydu",
+   "arac": "dürbün",
+   "zorluk": 1,
+   "nasil": "Gökyüzü sekmesindeki Gezegenler listesine bak; Jüpiter'in o gece ne zaman en yüksekte olduğunu öğren. Jüpiter en parlak zamanında −2,94 kadire çıkar, Sirius'tan bile parlaktır; çıplak gözle kolayca bulursun. Dürbünü Jüpiter'e çevir ve bir yere daya.",
+   "ne_gorursun": "Jüpiter'in hemen yanında küçük ışık noktaları: Io, Europa, Ganymede ve Callisto. En geniş açıldıklarında gezegenden yalnızca 2 ile 10 yay dakikası uzaktadırlar. Yoğun ışık kirliliğinde bile sıradan dürbünle kolayca görülürler. Ertesi gece yerleri değişmiş olur.",
+   "ipucu": "Üç gece üst üste Jüpiter'i ve noktaları çiz; Galileo da 1610'da uyduların bir geceden ötekine yer değiştirdiğini böyle fark etti.",
+   "ders": "d9",
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Galilean moons",
+     "url": "https://en.wikipedia.org/wiki/Galilean_moons"
+    },
+    {
+     "ad": "Wikipedia: Apparent magnitude",
+     "url": "https://en.wikipedia.org/wiki/Apparent_magnitude"
+    },
+    {
+     "ad": "NASA: Moons of Jupiter lithograph",
+     "url": "https://www.nasa.gov/wp-content/uploads/2009/12/moons_of_jupiter_lithograph.pdf"
+    }
+   ],
+   "cisim": "Jupiter"
+  },
+  {
+   "id": "saturn",
+   "ad": "Satürn'ü bul ve halkasının neden seçilmediğini gör",
+   "anahtar": "cisim:Saturn",
+   "tur": "gezegen",
+   "arac": "çıplak göz ve dürbün",
+   "zorluk": 1,
+   "nasil": "Gökyüzü sekmesindeki Gezegenler listesinden Satürn'ün saatini ve yönünü öğren. Karşı konum sırasında halkalarıyla birlikte ortalama 0,05 kadir parlaklıktadır; kentte bile çıplak gözle kolay görülür. Sonra dürbünü çevir.",
+   "ne_gorursun": "Çıplak gözle parlak bir ışık. 7×50 dürbünle halkayı ayıramazsın: Satürn'ün halkasını seçmek için 20× ya da daha yüksek büyütme gerekir. Bu bir başarısızlık değil, dürbünün sınırını gösteren bir gözlem.",
+   "ipucu": "Halkayı görmek istersen küçük bir teleskop gerekir; Titan'ı aramak için bir sonraki görevi dene.",
+   "ders": "d9",
+   "kaynak": [
+    {
+     "ad": "NASA NSSDCA: Saturn fact sheet",
+     "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturnfact.html"
+    },
+    {
+     "ad": "Wikipedia: Binoculars",
+     "url": "https://en.wikipedia.org/wiki/Binoculars"
+    }
+   ]
+  },
+  {
+   "id": "titan",
+   "ad": "Satürn'ün uydusu Titan'ı yakala",
+   "anahtar": "gorev:titan",
+   "tur": "uydu",
+   "arac": "dürbün",
+   "zorluk": 3,
+   "nasil": "Gezegenler listesinden Satürn'ü bul, dürbünü sehpaya bağla ya da sağlam bir yere daya. Satürn'ün hemen çevresinde, yakınında duran sönük bir yıldızımsı nokta ara. Birkaç gece arayla bak: Titan Satürn'ün çevresinde yer değiştirir.",
+   "ne_gorursun": "8. kadirin ortası parlaklığında küçük bir nokta. Wikipedia'ya göre Galileo uydularıyla birlikte orta boy dürbünle seçilebilen birkaç uydudan biridir. Zor: hem sönük hem Satürn'e çok yakın; kent göğünde seçemeyebilirsin, karanlık bir yere git.",
+   "ipucu": "Titan, kalın atmosferi olan tek uydudur.",
+   "ders": "d9",
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Binoculars",
+     "url": "https://en.wikipedia.org/wiki/Binoculars"
+    },
+    {
+     "ad": "Astronomy: The Sky Today, 2 Haziran 2026",
+     "url": "https://www.astronomy.com/observing/the-sky-today-tuesday-june-2-2026/"
+    },
+    {
+     "ad": "NASA: Titan facts",
+     "url": "https://science.nasa.gov/saturn/moons/titan/facts/"
+    }
+   ],
+   "cisim": "Saturn"
+  },
+  {
+   "id": "venus-evresi",
+   "ad": "Venüs'ün hilal evresini gör",
+   "anahtar": "gorev:venus-evresi",
+   "tur": "gezegen",
+   "arac": "dürbün",
+   "zorluk": 3,
+   "nasil": "Gezegenler listesinden Venüs'ün saatini öğren. Turn Left at Orion'a göre Venüs Güneş'ten yalnızca 20° kadar uzaktayken bile gözlenebilir ve o sırada yaklaşık %6'lık ince bir hilaldir; bu, Güneş'e tehlikeli ölçüde yakın bir bölgedir. Yalnızca Güneş tamamen battıktan sonra ya da doğmadan önce bak; dürbünü sehpaya bağla ya da sağlam bir yere daya.",
+   "ne_gorursun": "Venüs'ün evreleri dürbün için zor bir hedeftir. Turn Left at Orion'a göre hilal biçimi iyi sabitlenmiş bir dürbünle görülebilir. Venüs hilal evresinde en parlak hâline, −4,92 kadire çıkar.",
+   "ipucu": "GÜVENLİK: Güneş ufkun üstündeyken dürbünü asla Güneş'e yakın bir yere çevirme. Filtresiz dürbünle Güneş'e bakmak gözde anında ağır hasar yapar.",
+   "ders": "d9",
+   "kaynak": [
+    {
+     "ad": "Cambridge, Turn Left at Orion: Mercury and Venus",
+     "url": "https://www.cambridge.org/turnleft/pages/the_planets/mercury_and_venus"
+    },
+    {
+     "ad": "Wikipedia: Binoculars",
+     "url": "https://en.wikipedia.org/wiki/Binoculars"
+    },
+    {
+     "ad": "Wikipedia: Apparent magnitude",
+     "url": "https://en.wikipedia.org/wiki/Apparent_magnitude"
+    },
+    {
+     "ad": "NASA: Eclipse safety",
+     "url": "https://science.nasa.gov/eclipses/safety/"
+    }
+   ],
+   "cisim": "Venus"
+  },
+  {
+   "id": "merkur",
+   "ad": "Kaçak gezegen Merkür'ü yakala",
+   "anahtar": "cisim:Mercury",
+   "tur": "gezegen",
+   "arac": "çıplak göz ve dürbün",
+   "zorluk": 2,
+   "nasil": "Gökyüzü sekmesindeki Yaklaşan olaylar listesinde 'Merkür en büyük uzanımda' satırını bekle; bu tarihin bir hafta kadar çevresinde bak. Akşam uzanımında gün batımından sonra batı ufkuna, sabah uzanımında gün doğumundan önce doğu ufkuna bak. Önemli olan Merkür'ün alacakaranlıkta ufuktan ne kadar yüksek olduğudur; ufku açık bir yer seç. Önce dürbünle tara, bulunca çıplak gözle dene.",
+   "ne_gorursun": "Alacakaranlığın parıltısı içinde tek bir ışık noktası; yalnızca birkaç on dakika boyunca görülür. Çıplak göz ile dürbünü birlikte kullanmak en iyi yoldur.",
+   "ipucu": "GÜVENLİK: Güneş ufkun üstündeyken dürbünü asla Güneş'e yakın bir yere çevirme; akşam için Güneş tamamen battıktan sonra başla, sabah için Güneş doğmadan bırak.",
+   "ders": "d9",
+   "kaynak": [
+    {
+     "ad": "Cambridge, Turn Left at Orion: Mercury and Venus",
+     "url": "https://www.cambridge.org/turnleft/pages/the_planets/mercury_and_venus"
+    },
+    {
+     "ad": "NASA: Eclipse safety",
+     "url": "https://science.nasa.gov/eclipses/safety/"
+    }
+   ]
+  },
+  {
+   "id": "uranus",
+   "ad": "Uranüs'ü dürbünle bul",
+   "anahtar": "cisim:Uranus",
+   "tur": "gezegen",
+   "arac": "dürbün",
+   "zorluk": 3,
+   "nasil": "Gezegenler listesinden Uranüs'ün o gece hangi takımyıldızda olduğunu öğren. Önce bir yıldız haritasında yerini çalış, sonra o bölgeyi dürbünle tara ve haritayla karşılaştır.",
+   "ne_gorursun": "Karşı konumda ortalama 5,6, en parlak hâlinde 5,4 kadir. Kirliliksiz gökte çıplak gözle görülebilir ama rahat bulmak için dürbün gerekir. Dürbünde yıldız gibi bir nokta görürsün: mavi yeşil küçük diskini görmek için en az üç inçlik (yaklaşık 7,5 cm) bir teleskop ve 150× büyütme gerekir. Zor: kentte karanlık bir yere git.",
+   "ipucu": "Haritadaki yıldızlarla eşleşmeyen nokta aradığın gezegendir; çizip deftere yaz.",
+   "ders": "d9",
+   "kaynak": [
+    {
+     "ad": "NASA NSSDCA: Uranus fact sheet",
+     "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/uranusfact.html"
+    },
+    {
+     "ad": "Wikipedia: Binoculars",
+     "url": "https://en.wikipedia.org/wiki/Binoculars"
+    },
+    {
+     "ad": "Space.com: Uranus and Neptune skywatching",
+     "url": "https://www.space.com/amp/uranus-neptune-skywatching-september-2020.html"
+    }
+   ]
+  },
+  {
+   "id": "neptun",
+   "ad": "Neptün'ü dürbünle ara",
+   "anahtar": "cisim:Neptune",
+   "tur": "gezegen",
+   "arac": "dürbün",
+   "zorluk": 3,
+   "nasil": "Gezegenler listesinden Neptün'ün yerini öğren, bir yıldız haritasında çevresini çalış ve dürbünle o bölgeyi haritayla karşılaştırarak tara. Dürbünü sehpaya bağla.",
+   "ne_gorursun": "En parlak hâlinde bile 7,7 kadir: çıplak gözle görülemeyecek kadar sönük. İyi bir dürbünle bulunabilir, yıldız gibi bir nokta olarak; küçük mavi noktasını görmek için en az 10 cm'lik teleskop ve 200× büyütme gerekir. Zor: kent göğünde seçemeyebilirsin, karanlık bir yerde dene.",
+   "ipucu": "Önce Uranüs'ü bul; Neptün ondan yaklaşık yedi kat sönüktür.",
+   "ders": "d9",
+   "kaynak": [
+    {
+     "ad": "NASA NSSDCA: Neptune fact sheet",
+     "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/neptunefact.html"
+    },
+    {
+     "ad": "Wikipedia: Binoculars",
+     "url": "https://en.wikipedia.org/wiki/Binoculars"
+    },
+    {
+     "ad": "Space.com: Uranus and Neptune skywatching",
+     "url": "https://www.space.com/amp/uranus-neptune-skywatching-september-2020.html"
+    }
+   ]
+  },
+  {
+   "id": "iss-gecisi",
+   "ad": "Uluslararası Uzay İstasyonu'nun geçişini izle",
+   "anahtar": "gorev:iss-gecisi",
+   "tur": "yapay_uydu",
+   "arac": "çıplak göz",
+   "zorluk": 1,
+   "nasil": "Gökyüzü sekmesindeki Uzay istasyonları ve uydular listesine bak: önümüzdeki günlerdeki geçişlerin saatini, yönünü ve en yüksek açısını orada bulursun. Geçişler gün doğumundan önceki ya da gün batımından sonraki birkaç saat içinde olur. Birkaç dakika önce dışarıda ol ve listede yazan yöne bak.",
+   "ne_gorursun": "Yıldızlar arasında hızla ilerleyen, çok parlak bir yıldız gibi bir ışık. Uçaktan farkı: yanıp sönen ışıkları yoktur, yön değiştirmez ve tipik bir uçaktan hızlıdır. Dürbüne gerek yok.",
+   "ipucu": "Aynı listede Çin uzay istasyonu Tiangong da var; daha sönük ama o da çıplak gözle görülür.",
+   "ders": "d3",
+   "kaynak": [
+    {
+     "ad": "NASA: Spot the Station",
+     "url": "https://www.nasa.gov/spot-the-station/"
+    }
+   ]
+  },
+  {
+   "id": "algol",
+   "ad": "Algol'ün kararmasını çıplak gözle izle",
+   "anahtar": "yildiz:Algol",
+   "tur": "degisen_yildiz",
+   "arac": "çıplak göz",
+   "zorluk": 2,
+   "nasil": "Gökyüzü sekmesindeki Algol'ün kararması listesinden en sönük anın saatini al. Algol Kahraman takımyıldızındadır. En sönük andan birkaç saat önce başla ve yarım saatte bir Algol'ü parlaklığı bilinen komşu yıldızlarla karşılaştır: Alpheratz (2,07), ε (epsilon) Persei (2,89) ve δ (delta) Persei (3,03).",
+   "ne_gorursun": "Algol normalde yaklaşık 2,1 kadirdir, tutulmada 3,4'e düşer. Kararma da geri parlama da birkaç saat sürer. En parlakken Alpheratz kadar, en sönükken δ Persei'den bile sönük görünür.",
+   "ipucu": "Her karşılaştırmada saati ve 'Algol şu yıldızdan parlak, şundan sönük' notunu deftere yaz; sonunda kendi ışık eğrini çizebilirsin.",
+   "ders": "d15",
+   "kaynak": [
+    {
+     "ad": "Skymania: How to observe Algol",
+     "url": "https://www.skymania.com/how-to-observe-algol-the-demon-star/"
+    },
+    {
+     "ad": "Wikipedia: Algol",
+     "url": "https://en.wikipedia.org/wiki/Algol"
+    }
+   ]
+  },
+  {
+   "id": "perseid",
+   "ad": "Perseid meteor yağmurunda kayan yıldız say",
+   "anahtar": "meteor:PER",
+   "tur": "meteor",
+   "arac": "çıplak göz",
+   "zorluk": 2,
+   "nasil": "Gökyüzü sekmesindeki Meteor yağmurları listesinden zirve gecesini ve o geceki Ay ışığını öğren. Kent ışıklarından olabildiğince uzaklaş, sırt üstü uzan ya da arkaya yaslanan bir sandalye kullan. Belli bir noktaya değil, gökyüzünün en karanlık geniş parçasına bak; meteorlar her yerde görünebilir. Telefona bakma, dürbünü kaldır. En iyi saatler gece yarısından sonradır.",
+   "ne_gorursun": "Kahraman takımyıldızındaki bir noktadan, radyanttan çıkıyormuş gibi görünen hızlı ışık çizgileri. NASA zirvede saatte 50–100 meteor diyor, ama bu sayı kusursuz karanlık gök içindir; kentte ve Ay ışığında bunun küçük bir kısmını görürsün. Perseid radyantı İstanbul'dan hiç batmaz.",
+   "ipucu": "Bir saat boyunca saydığın meteor sayısını ve gökteki en sönük yıldızın kadirini deftere yaz.",
+   "ders": "d19",
+   "kaynak": [
+    {
+     "ad": "NASA JPL: How to see the best meteor showers",
+     "url": "https://www.jpl.nasa.gov/news/how-to-see-the-best-meteor-showers-of-the-year-tools-tips-and-save-the-dates/"
+    },
+    {
+     "ad": "NASA: Perseids",
+     "url": "https://science.nasa.gov/solar-system/meteors-meteorites/perseids/"
+    },
+    {
+     "ad": "IMO Meteor Shower Calendar 2026",
+     "url": "https://www.imo.net/files/meteor-shower/cal2026.pdf"
+    }
+   ]
+  },
+  {
+   "id": "geminid",
+   "ad": "Geminid meteor yağmurunu izle",
+   "anahtar": "meteor:GEM",
+   "tur": "meteor",
+   "arac": "çıplak göz",
+   "zorluk": 2,
+   "nasil": "Meteor yağmurları listesinden zirve gecesini ve Ay ışığını öğren. NASA'ya göre Geminidler akşam saat 21–22 dolaylarında başlar. Kent ışıklarından uzaklaş, gözünü karanlığa alıştır, sırt üstü uzanıp gökyüzünün geniş, karanlık bir parçasına bak.",
+   "ne_gorursun": "İkizler takımyıldızındaki radyanttan çıkıyormuş gibi görünen meteorlar. NASA saatte 40–50 meteor bekleniyor diyor; IMO'nun zirve sayısı (ZHR) 150, ama bu radyant başucundayken kusursuz karanlıkta tek bir gözlemcinin göreceği sayıdır. Kent göğünde çok daha azını görürsün.",
+   "ipucu": "Geminidlerin kaynağı bir kuyruklu yıldız değil, 3200 Phaethon adlı bir asteroit ya da olası bir 'kaya kuyruklu yıldız'.",
+   "ders": "d19",
+   "kaynak": [
+    {
+     "ad": "NASA: Geminids",
+     "url": "https://science.nasa.gov/solar-system/meteors-meteorites/geminids"
+    },
+    {
+     "ad": "NASA JPL: How to see the best meteor showers",
+     "url": "https://www.jpl.nasa.gov/news/how-to-see-the-best-meteor-showers-of-the-year-tools-tips-and-save-the-dates/"
+    },
+    {
+     "ad": "Wikipedia: Zenithal hourly rate",
+     "url": "https://en.wikipedia.org/wiki/Zenithal_hourly_rate"
+    }
+   ]
+  }
+ ]
 }

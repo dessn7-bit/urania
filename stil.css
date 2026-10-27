@@ -454,3 +454,6 @@ figure.cizim figcaption a { color: var(--pirinc); }
 .gorev-ic { padding: 8px 0 4px; }
 .gorev-ic p { margin: 6px 0; }
 .sinav-soru .bag { background: none; border: 0; padding: 0; color: var(--pirinc); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; font-size: 14px; font-family: var(--sans); }
+@media (max-width: 380px) { figure.cizim { padding: 8px 4px 8px; margin-left: -4px; margin-right: -4px; } }
+.kart-sec { margin: 8px 0 0 1.4em; font-family: var(--sans); font-size: 15px; }
+.kart-sec li { margin: 2px 0; }

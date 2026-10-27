@@ -29,7 +29,7 @@ test('Çizimler: her dersin en az iki çizimi var; bölüm dizinleri geçerli; d
   expect(await fig.count()).toBeGreaterThanOrEqual(2);
   await expect(fig.first().locator('figcaption b')).toHaveText('Şekil 1.');
   await expect(fig.first().locator('figcaption')).toHaveAttribute('data-ses', /^Şekil 1: /);
-  await expect(fig.first().locator('svg')).toHaveAttribute('role', 'img');
+  await expect(fig.first().locator('svg')).toHaveAttribute('aria-hidden', 'true');
 });
 
 test('Çizimlerdeki yazılar sesli okumada çevrilmemiş sembol bırakmaz', async ({ page }) => {
@@ -153,4 +153,38 @@ test('Gözlem görevleri: ay aralığı yazımı (Aralık→Ocak sarması dahil)
   await page.goto('/index.html#defter');
   const r = await page.evaluate(() => [Gorevler.ayAraligi([9, 10, 11, 0, 1]), Gorevler.ayAraligi([3, 4, 8]), Gorevler.ayAraligi([...Array(12).keys()]), Gorevler.ayAraligi([])]);
   expect(r).toEqual(['Ekim–Şubat', 'Nisan–Mayıs, Eylül', 'yıl boyu', '']);
+});
+
+test('İnceleme bulguları: sınav adresi doğrudan açılır; ders bağlantısından geri dönünce sınav sürer; sonuç bir kez kaydedilir', async ({ page }) => {
+  await page.goto('/index.html#ders/sinav/evren');
+  await expect(page.locator('h1')).toHaveText('Ünite sınavı');
+  await page.locator('.sinav-secenek button').first().click();
+  await page.locator('#snSonraki').click();
+  await expect(page.locator('.kucuk.soluk').first()).toContainText('Soru 2 / 12');
+  const soru2 = await page.locator('#snSoru').innerText();
+  await page.goto('/index.html#ders/d7');
+  await page.goBack();
+  await expect(page.locator('#snSoru')).toHaveText(soru2);
+  for (let i = 1; i < 12; i++) { await page.locator('.sinav-secenek button').first().click(); await page.locator('#snSonraki').click(); }
+  await expect(page.locator('.sinav-puan')).toBeVisible();
+  await page.goto('/index.html#gok');
+  await page.goBack();
+  await expect(page.locator('.sinav-puan')).toBeVisible();
+  const n = await page.evaluate(() => JSON.parse(localStorage.getItem('urania_sinavSonuc')).evren.length);
+  expect(n).toBe(1);
+});
+
+test('İnceleme bulguları: ders içi deneyde hızlı aç-kapa açık deney bırakmaz; meteor görevi zirveden uzakken "bu gece" sayılmaz', async ({ page }) => {
+  await page.goto('/index.html#ders/d3');
+  const m = page.locator('.mini-deney[data-deney="kepler"]');
+  await m.locator('.mini-ac').dblclick();
+  await page.waitForTimeout(600);
+  await expect(m.locator('.mini-kap')).toBeHidden();
+  await expect(m.locator('canvas')).toHaveCount(0);
+  await page.clock.install({ time: new Date('2026-10-27T20:00:00+03:00') });
+  await page.goto('/index.html#defter/gorevler');
+  await expect(page.locator('.gorev-liste li').first()).toBeVisible();
+  const bugece = page.locator('h2', { hasText: 'Bu gece yapılabilir' }).locator('xpath=following-sibling::ul[1]');
+  await expect(bugece.locator('li', { hasText: 'Perseid' })).toHaveCount(0);
+  await expect(page.locator('.gorev-liste li', { hasText: 'Jüpiter' }).first()).toContainText('bu gece');
 });

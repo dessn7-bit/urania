@@ -520,8 +520,7 @@
       ${r.ders ? `<p class="deney-ders">İlgili ders: <a href="#ders/${r.ders}">${U.kacis(dersAdi(r.ders))}</a></p>` : ''}`;
     const kap = el.querySelector('#deneyKap');
     kurulanKok = kap;
-    aktif = k(kap) || null;
-    kurulanKok = null;
+    try { aktif = k(kap) || null; } finally { kurulanKok = null; }
     erisilebilir(kap, d.ad);
     el.querySelectorAll('.rh-uygula').forEach(b => b.addEventListener('click', () => rehberUygula(kap, id, Number(b.dataset.i))));
     window.scrollTo(0, 0);
@@ -574,6 +573,10 @@
     if (!F) [F, R] = await Promise.all([U.veri('fizik'), U.veri('deney_rehber').catch(() => ({}))]);
     const k = kurucu(id);
     if (!k) throw new Error('deney yok: ' + id);
+    /* Deneyler bölümünde aynı deney kuruluysa (gizli de olsa) kaldır: aynı kimlikli öğeler iki kez olmasın.
+       Deneyler bölümüne dönülünce goster() deneyi yeniden kurar. */
+    const dk = el && el.querySelector('#deneyKap');
+    if (dk && dk.dataset.deney === id) { if (aktif) { aktif.durdur(); aktif = null; } el.innerHTML = ''; }
     kurulanKok = kap;
     let d = null;
     try { d = k(kap) || null; } finally { kurulanKok = null; }

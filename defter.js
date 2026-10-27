@@ -32,7 +32,7 @@
       const y = veri.yildizlar.y[i];
       if (y[2] <= 2.5) ls.push({ grup: 'Parlak yıldızlar', anahtar: 'yildiz:' + veri.yildizlar.adlar[i], ad: veri.yildizlar.adlar[i], ra: y[0], dec: y[1] });
     });
-    if (veri.gorevler) veri.gorevler.gorevler.filter(g => g.anahtar.startsWith('gorev:')).forEach(g => ls.push({ grup: 'Gözlem görevleri', anahtar: g.anahtar, ad: g.ad, ra: g.ra, dec: g.dec }));
+    if (veri.gorevler) veri.gorevler.gorevler.filter(g => g.anahtar.startsWith('gorev:')).forEach(g => ls.push({ grup: 'Gözlem görevleri', anahtar: g.anahtar, ad: g.ad, ra: g.ra, dec: g.dec, cisimAd: g.cisim }));
     veri.takimyildizlar.slice().sort((a, b) => a.ad.localeCompare(b.ad, 'tr')).forEach(t => ls.push({ grup: 'Takımyıldızlar', anahtar: 'ty:' + t.k, ad: t.ad, ra: t.m[0], dec: t.m[1] }));
     return ls;
   }
@@ -44,8 +44,8 @@
     const ay = G.ayDurumu(zaman, gzl);
     const o = { ayOran: Math.round(ay.oran * 100), ayEvre: ay.ad, ayAlt: Math.round(ay.alt) };
     try {
-      if (cisim && cisim.anahtar.startsWith('cisim:')) {
-        const p = G.cisimAltAz(cisim.anahtar.slice(6), zaman, gzl); o.alt = Math.round(p.alt); o.az = Math.round(p.az);
+      if (cisim && (cisim.anahtar.startsWith('cisim:') || cisim.cisimAd)) {
+        const p = G.cisimAltAz(cisim.cisimAd || cisim.anahtar.slice(6), zaman, gzl); o.alt = Math.round(p.alt); o.az = Math.round(p.az);
       } else if (cisim && cisim.ra != null) {
         const p = G.sabitAltAz(cisim.ra, cisim.dec, zaman, gzl); o.alt = Math.round(p.alt); o.az = Math.round(p.az);
       }

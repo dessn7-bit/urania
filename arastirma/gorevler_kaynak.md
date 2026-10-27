@@ -371,3 +371,5 @@ Diğer denetimler:
 - Görev çıkarılmadı. m35, m36, m37'de "ipucu" alanı yok; gorevler.js satır 112 bunu koşullu gösteriyor, sorun değil.
 - Yan bulgu (görev dışı, düzeltilmedi): veri/yildizlar.json "adlar" içinde "Tarazed" iki yıldıza verilmiş (296,56°, +10,61°, 2,72 = γ Aql; 298,12°, +1,01°, 3,87 de aynı adı taşıyor); "Propus" da iki yıldızda (91,03° 4,16 ve 93,72° 3,31). Haritada yanlış etiket çıkabilir.
 - Askıda: 7×50 ile kent göğünde sınır kadir (Neptün, Titan, M3, M92, M36–M38 yargıları) için yayımlanmış kaynak yine bulunamadı. M44'te "düzinelerce" (Astronomy) ile "~20" (NASA) birlikte duruyor; kentte gerçek sayı kaynaklı değil.
+
+| Hiyadlar merkezi RA 4h27m, Dec +15°52′ (J2000) → 66,75°, +15,87° | https://en.wikipedia.org/wiki/Hyades_(star_cluster) | infobox "4h 27m", "+15° 52′" (görünürlük hesabı için; ana oturum) |

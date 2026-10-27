@@ -9,7 +9,7 @@ const fs = require('fs');
   const arg = process.argv.slice(2);
   const ci = arg.indexOf('--cikti');
   const cikti = ci >= 0 ? arg[ci + 1] : path.join(__dirname, '..', 'test-results', 'cizim');
-  const dersler = arg.filter((a, i) => /^d\d+$/.test(a) && i !== ci + 1);
+  const dersler = arg.filter((a, i) => /^d\d+$/.test(a) && (ci < 0 || i !== ci + 1));
   fs.mkdirSync(cikti, { recursive: true });
   const kok = path.join(__dirname, '..');
   const s = spawn('node', ['testler/sunucu.js'], { cwd: kok, stdio: 'ignore' });
@@ -44,10 +44,12 @@ const fs = require('fs');
           if (tasan.length) { sorun++; console.log('TAŞMA', id, JSON.stringify(tasan)); }
           if (!kirmizi) console.log('ok', id);
         }
-        const kayitli = ids.filter(i => p.evaluate && true);
       }
       /* kayıtlı ama derste görünmeyen çizimler (bölüm numarası yanlış) */
-      const eksik = await p.evaluate(ids => ids.filter(i => { const t = window.UraniaCizim.kayit[i]; return !t || t.bolum == null; }), ids);
+      const eksik = await p.evaluate(async ids => {
+        const D = await fetch('veri/dersler.json').then(r => r.json());
+        return ids.filter(i => { const t = window.UraniaCizim.kayit[i], d = t && D.dersler.find(x => x.id === t.ders); return !d || !d.bolumler[t.bolum]; });
+      }, ids);
       if (eksik.length) { sorun++; console.log('BÖLÜMSÜZ', eksik.join(', ')); }
       if (hatalar.length) { sorun++; console.log('HATA', hatalar.join(' | ')); }
       await p.close();

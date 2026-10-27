@@ -46,7 +46,7 @@
     const sayi = sira.filter(x => b[x.id]).length;
     const oz = Kartlar.ozet(D, false);
     const kartKutu = oz.toplam
-      ? `<div class="kart-ozet"><div><b>Tekrar kartları</b><span>${oz.bugun ? 'Bugün ' + oz.bugun + ' kart seni bekliyor' : 'Bugünlük tekrar bitti'} · okuduğun derslerden ${oz.toplam} kart</span></div>${oz.bugun ? '<a class="dugme dolu" href="#ders/kartlar">Başla</a>' : ''}</div>`
+      ? `<div class="kart-ozet"><div><b>Tekrar kartları</b><span>${oz.bugun ? 'Bugün ' + oz.bugun + ' kart seni bekliyor' : 'Bugünlük tekrar bitti'} · okuduğun derslerden ve sınav yanlışlarından ${oz.toplam} kart</span></div>${oz.bugun ? '<a class="dugme dolu" href="#ders/kartlar">Başla</a>' : ''}</div>`
       : `<div class="kart-ozet"><div><b>Tekrar kartları</b><span>Bir dersi "Okudum" diye işaretleyince soruları ve sayıları tekrar kartı olur.</span></div></div>`;
     el.innerHTML = `<h1>Dersler</h1>
       <p class="alt-baslik">Gökyüzünü okumaktan evrenin tarihine, sırayla. ${sayi ? `${sira.length} dersin ${sayi} tanesini bitirdin.` : 'Her dersin sonunda çözülmüş örnekler, sözlük, deftere notlar ve kendini sınama soruları var.'}</p>
@@ -87,14 +87,19 @@
   function miniBagla() {
     el.querySelectorAll('.mini-deney').forEach(m => {
       const b = m.querySelector('.mini-ac'), kap = m.querySelector('.mini-kap');
-      let d = null;
+      let d = null, sayac = 0;
       b.addEventListener('click', async () => {
-        const ac = kap.hidden;
+        const ac = kap.hidden, benim = ++sayac;
         if (!ac) { kap.hidden = true; b.textContent = 'Burada aç'; b.setAttribute('aria-expanded', 'false'); if (d) { d.durdur(); gomulu = gomulu.filter(x => x !== d); d = null; } kap.innerHTML = ''; return; }
         kap.hidden = false; b.textContent = 'Kapat'; b.setAttribute('aria-expanded', 'true');
+        /* her açışta yeni iç kap: eski dinleyiciler eski kapla birlikte gider */
         kap.innerHTML = '<p class="bos">Deney hazırlanıyor…</p>';
-        try { kap.innerHTML = ''; d = await window.UraniaDeney.gom(kap, m.dataset.deney); gomulu.push(d); }
-        catch (e) { kap.innerHTML = '<div class="hata-kutu">Deney açılamadı: ' + U.kacis(e.message) + '</div>'; }
+        const ic = document.createElement('div');
+        try {
+          const yeni = await window.UraniaDeney.gom(ic, m.dataset.deney);
+          if (benim !== sayac) { yeni.durdur(); return; }          // bu arada kapatıldı ya da yeniden açıldı
+          kap.innerHTML = ''; kap.appendChild(ic); d = yeni; gomulu.push(d);
+        } catch (e) { if (benim === sayac) kap.innerHTML = '<div class="hata-kutu">Deney açılamadı: ' + U.kacis(e.message) + '</div>'; }
       });
     });
   }
@@ -185,8 +190,10 @@
     gomuluDurdur();
     const u = (D.uniteler || []).find(x => x.id === uid), ls = sinavSorulari(uid);
     if (!u || !ls.length) { liste(); return; }
-    if (!sinavOturum || sinavOturum.uid !== uid) sinavOturum = { uid, sira: karistir(ls), i: 0, cevap: {}, dogru: 0 };
+    const yeni = !sinavOturum || sinavOturum.uid !== uid;
+    if (yeni) sinavOturum = { uid, sira: karistir(ls), i: 0, cevap: {}, dogru: 0 };
     sinavCiz(u);
+    if (yeni) { window.scrollTo(0, 0); const p = el.querySelector('#snSoru'); if (p) p.focus(); }
   }
   const HARF = ['A', 'B', 'C', 'D', 'E'];
   function sinavCiz(u) {
@@ -194,14 +201,16 @@
     const ust = `<a class="geri" href="#ders">Tüm dersler</a><h1>Ünite sınavı</h1><p class="alt-baslik">${U.kacis(u.ad)}</p>`;
     if (!q) {
       const yanlis = o.sira.filter(x => o.cevap[x.id] !== x.dogru);
-      const sonuc = sinavSonuclari(); (sonuc[u.id] = sonuc[u.id] || []).push({ t: Date.now(), dogru: o.dogru, toplam: o.sira.length }); sonuc[u.id] = sonuc[u.id].slice(-20); U.yaz('sinavSonuc', sonuc);
+      const sonuc = sinavSonuclari();
+      if (!o.kaydedildi) { (sonuc[u.id] = sonuc[u.id] || []).push({ t: Date.now(), dogru: o.dogru, toplam: o.sira.length }); sonuc[u.id] = sonuc[u.id].slice(-20); U.yaz('sinavSonuc', sonuc); o.kaydedildi = true; }
+      sonuc[u.id] = sonuc[u.id] || [];
       const gecmis = sonuc[u.id].slice(-6).map(g => `${g.dogru}/${g.toplam}`).join(' · ');
       el.innerHTML = `${ust}<p class="sinav-puan" tabindex="-1" id="snSon"><b>${o.dogru} / ${o.sira.length}</b> doğru.</p>
         <p class="kucuk soluk">Son sonuçların: ${gecmis}</p>
         ${yanlis.length ? `<p>Yanlış yaptığın ${yanlis.length} soru tekrar kartlarına eklendi; doğru bildikçe seyrekleşir.</p>
           <ul class="liste">${yanlis.map(x => { const d = D.dersler.find(d => d.id === x.ders); return `<li><span>${U.kacis(x.soru)}<br><span class="kucuk soluk">Doğrusu: ${U.kacis(x.secenekler[x.dogru])}${d ? ` · <a href="#ders/${d.id}">${U.kacis(d.baslik)}</a>` : ''}</span></span></li>`; }).join('')}</ul>` : '<p>Hepsini bildin.</p>'}
         <div class="cip-grup"><button type="button" class="dugme dolu" id="snTekrar">Yeniden çöz</button><a class="dugme" href="#ders">Derslere dön</a></div>`;
-      el.querySelector('#snTekrar').addEventListener('click', () => { sinavOturum = null; sinav(u.id); });
+      el.querySelector('#snTekrar').addEventListener('click', () => { sinavOturum = null; sinav(u.id); window.scrollTo(0, 0); const p = el.querySelector('#snSoru'); if (p) p.focus(); });
       el.querySelector('#snSon').focus();
       return;
     }
@@ -214,9 +223,9 @@
         <div class="sinav-secenek" role="group" aria-label="Seçenekler">${q.secenekler.map((s, i) => {
           const sinif = !cevaplandi ? '' : (i === q.dogru ? ' dogru' : (i === secildi ? ' yanlis' : ''));
           return `<button type="button" class="dugme${sinif}" data-i="${i}"${cevaplandi ? ' disabled' : ''}><b>${HARF[i]}</b> ${U.kacis(s)}</button>`; }).join('')}</div>
-        ${cevaplandi ? `<p class="sinav-sonuc ${secildi === q.dogru ? 'iyi' : 'kotu'}" role="status"><b>${secildi === q.dogru ? 'Doğru.' : 'Doğrusu ' + HARF[q.dogru] + '.'}</b> ${U.kacis(q.aciklama)}${d ? ` <a href="#ders/${d.id}">${U.kacis(d.baslik)}</a>` : ''}</p>
+        ${cevaplandi ? `<p class="sinav-sonuc ${secildi === q.dogru ? 'iyi' : 'kotu'}" id="snSonuc" tabindex="-1"><b>${secildi === q.dogru ? 'Doğru.' : 'Doğrusu ' + HARF[q.dogru] + '.'}</b> ${U.kacis(q.aciklama)}${d ? ` <a href="#ders/${d.id}">${U.kacis(d.baslik)}</a>` : ''}</p>
           <button type="button" class="dugme dolu" id="snSonraki">${o.i + 1 < o.sira.length ? 'Sonraki soru' : 'Sonucu gör'}</button>` : ''}
-        <button type="button" class="bag" id="snDinle">${cevaplandi ? 'Açıklamayı dinle' : 'Soruyu dinle'}</button>
+        ${['yok-api', 'yok-tr'].indexOf(Ses.sesDurumu()) < 0 ? `<button type="button" class="bag" id="snDinle">${cevaplandi ? 'Açıklamayı dinle' : 'Soruyu dinle'}</button>` : ''}
       </div>`;
     el.querySelectorAll('.sinav-secenek button').forEach(b => b.addEventListener('click', () => {
       const i = Number(b.dataset.i);
@@ -225,11 +234,12 @@
       if (i === q.dogru) { o.dogru++; } else { yan[q.id] = Date.now(); U.yaz('sinavYanlis', yan); }
       Ses.sus();
       sinavCiz(u);
-      const s = el.querySelector('#snSonraki'); if (s) s.focus();
+      const s = el.querySelector('#snSonuc'); if (s) s.focus();
     }));
     const sn = el.querySelector('#snSonraki');
     if (sn) sn.addEventListener('click', () => { Ses.sus(); o.i++; sinavCiz(u); const p = el.querySelector('#snSoru') || el.querySelector('#snSon'); if (p) p.focus(); window.scrollTo(0, 0); });
-    el.querySelector('#snDinle').addEventListener('click', () => {
+    const dn = el.querySelector('#snDinle');
+    if (dn) dn.addEventListener('click', () => {
       if (!cevaplandi) Ses.soyle(q.soru + ' ' + q.secenekler.map((s, i) => HARF[i] + ': ' + s + '.').join(' '));
       else Ses.soyle((o.cevap[q.id] === q.dogru ? 'Doğru. ' : 'Doğrusu ' + HARF[q.dogru] + ': ' + q.secenekler[q.dogru] + '. ') + q.aciklama);
     });
@@ -263,6 +273,7 @@
       ${sesOlabilir ? `<button type="button" class="dugme kart-sesli" id="kaSesli" aria-pressed="${sesli}">Sesli tekrar</button>` : ''}</div>
       <div class="kart" aria-live="polite">
         <p class="kart-on" tabindex="-1">${U.kacis(k.on)}${k.tur === 'sayi' ? '<span class="kucuk soluk"> — değeri ne?</span>' : (k.tur === 'terim' ? '<span class="kucuk soluk"> — ne demek?</span>' : '')}</p>
+        ${k.secenekler ? `<ol class="kart-sec" type="A">${k.secenekler.map(x => `<li>${U.kacis(x)}</li>`).join('')}</ol>` : ''}
         <div class="kart-arka" id="kaArka" hidden><p>${U.kacis(k.arka)}</p>${k.kaynak ? `<a class="kucuk" href="${U.guvenliUrl(k.kaynak)}" target="_blank" rel="noopener">kaynak</a>` : ''}</div>
       </div>
       <div class="cip-grup kart-dugme" id="kaGoster"><button type="button" class="dugme dolu" id="kaCevir">Cevabı göster</button></div>
@@ -283,7 +294,7 @@
       if (U.oku('kartSesli', false)) Ses.soyle(k.arka);
     };
     const sorOku = (deneme) => {
-      const oldu = Ses.soyle(k.on + (k.tur === 'sayi' ? '. Değeri ne?' : (k.tur === 'terim' ? '. Ne demek?' : '')), { bitince: () => {
+      const oldu = Ses.soyle(k.on + (k.tur === 'sayi' ? '. Değeri ne?' : (k.tur === 'terim' ? '. Ne demek?' : '')) + (k.secenekler ? ' ' + k.secenekler.map((x, i) => HARF[i] + ': ' + x + '.').join(' ') : ''), { bitince: () => {
         if (kartNo !== kartSayac || !cevir.isConnected || el.querySelector('#kaGoster').hidden) return;
         let kalan = DUSUNME_SN;
         cevir.textContent = 'Cevabı göster (' + kalan + ')';
@@ -324,13 +335,13 @@
     } catch (e) {
       el.innerHTML = '<div class="hata-kutu">Dersler yüklenemedi: ' + U.kacis(e.message) + '</div>'; return;
     }
-    goster(kok, (location.hash.split('/')[1]) || '');
+    goster(kok, location.hash.split('/').slice(1).join('/'));
   }
   function goster(kok, param) {
     if (!D) return;
     if (param === 'kartlar') kartlar(false);
     else if (param.startsWith('sinav/')) { oturum = null; sinav(param.slice(6)); }
-    else { oturum = null; sinavOturum = null; if (param) ders(param); else liste(); }
+    else { oturum = null; if (param) ders(param); else liste(); }
   }
   U.modul('ders', { ilk, goster });
 })();
