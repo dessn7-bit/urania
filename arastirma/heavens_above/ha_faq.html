@@ -1,0 +1,305 @@
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><title>
+	Frequently asked questions (FAQ)
+</title><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="description" content="Satellite predictions and other astronomical data customised for your location." /><link href="css/ha.css" rel="stylesheet" type="text/css" /><link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon" /><link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon" />
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="/scripts/standard.min.js"></script>
+	<script type="text/javascript">
+		function updateLocalTime(utc) {
+			var localdiff = parseInt($('#utcOffset').val());
+			var local_now = new Date(utc.getTime() + localdiff);
+			$('#spanTime').text(formatTime(local_now));
+		}
+
+		$(function () {
+			onClockTick = updateLocalTime;
+			startClock();
+		});
+	</script>
+	
+	<script type="text/javascript">
+	    $(document).ready(function () {
+	        $('#faqs h3').each(function () {
+	            var tis = $(this), state = false, answer = tis.next('div').slideUp();
+	            tis.click(function () {
+	                state = !state;
+	                answer.slideToggle(state);
+	                tis.toggleClass('active', state);
+	            });
+	        });
+	    });
+	</script>
+</head>
+<body>
+	<form name="aspnetForm" method="post" action="./faq.aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="0F4F4B68" />
+</div>
+	<input type="hidden" name="utcOffset" id="utcOffset" value="0" />
+	<table border="0" style="margin-left: auto; margin-right: auto; border-style: none">
+		<tr>
+			<td>
+				<a id="ctl00_hyperlinkLogo" href="./?lat=0&amp;lng=0&amp;loc=Unspecified&amp;alt=0&amp;tz=UCT&amp;cul=en" style="display:inline-block;border-style:None;"><img src="//heavens-above.com/images/LogoNew.png" alt="" style="border-width:0px;" /></a>
+			</td>
+			<td>
+				
+					<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5668297076217155" crossorigin="anonymous"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-5668297076217155" data-ad-slot="5479771053"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+				
+			</td>
+			<td>
+				<table class="userTable">
+					<tr>
+						<td>
+							User:
+						</td>
+						<td>
+							anonymous&nbsp;&nbsp;&nbsp;<a href="/login.aspx">Login</a>
+						</td>
+					</tr>
+					<tr class="lightrow">
+						<td>
+							Location:
+						</td>
+						<td>
+							<a id="ctl00_linkObservationSite" href="SelectLocation.aspx?lat=0&amp;lng=0&amp;loc=Unspecified&amp;alt=0&amp;tz=UCT&amp;cul=en">Unspecified</a>
+							
+						</td>
+					</tr>
+					<tr class="lightrow">
+						<td colspan="2" align="center">
+							(<a id="ctl00_linkLatLong" href="SelectLocation.aspx?lat=0&amp;lng=0&amp;loc=Unspecified&amp;alt=0&amp;tz=UCT&amp;cul=en">0.0000°N, 0.0000°E</a>)
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Time:
+						</td>
+						<td>
+							<span id="spanTime">
+								15:34:30</span>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" align="center">
+							(UTC<span id="ctl00_lblTZ">+00:00</span>)
+						</td>
+					</tr>
+					<tr class="lightrow">
+						<td>
+							Language:
+						</td>
+						<td>
+							<select name="ctl00$ddlCulture" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ddlCulture\&#39;,\&#39;\&#39;)&#39;, 0)" id="ctl00_ddlCulture">
+	<option value="ar">العربية</option>
+	<option value="ca">Catal&#224;</option>
+	<option value="cs">Čeština</option>
+	<option value="da">Dansk</option>
+	<option value="de">Deutsch</option>
+	<option value="el">Ελληνικά</option>
+	<option selected="selected" value="en">English</option>
+	<option value="eo">Esperanto</option>
+	<option value="es">Espa&#241;ol</option>
+	<option value="eu">Euskara</option>
+	<option value="fi">Suomi</option>
+	<option value="fr">Fran&#231;ais</option>
+	<option value="gl">Galego</option>
+	<option value="he">עברית</option>
+	<option value="hr">Hrvatski</option>
+	<option value="hu">Magyar</option>
+	<option value="it">Italiano</option>
+	<option value="ja">日本語</option>
+	<option value="lt">Lietuvių</option>
+	<option value="nl">Nederlands</option>
+	<option value="pl">Polski</option>
+	<option value="pt">Portugu&#234;s brasileiro</option>
+	<option value="pt-PT">Portugu&#234;s de Portugal</option>
+	<option value="ro">Rom&#226;nă</option>
+	<option value="ru">Русский</option>
+	<option value="sk">Slovenčina</option>
+	<option value="sl">Slovenščina</option>
+	<option value="sv">Svenska</option>
+	<option value="ta">தமிழ்</option>
+	<option value="th">ไทย</option>
+	<option value="tr">T&#252;rk&#231;e</option>
+	<option value="uk">Українська</option>
+	<option value="zh">简体中文</option>
+	<option value="zh-CHT">繁體中文</option>
+
+</select>
+						</td>
+					</tr>
+					
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<hr />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" valign="top">
+				<table width="100%">
+					<tr>
+						<td align="left">
+							<span id="ctl00_lblTitle" class="pagehead">Frequently asked questions (FAQ)</span>
+						</td>
+						<td align="right" class="navbar">
+							
+							<span id="ctl00_lblNavBar"><a href="/?lat=0&lng=0&loc=Unspecified&alt=0&tz=UCT&cul=en" title="Go to home page">Home</a></span>
+						</td>
+					</tr>
+				</table>
+				<p />
+				
+<p />
+<div id="faqs" style="width:700px">
+<p /><h2>General</h2><h3>What types of e-mail are acceptable?</h3><div><p>The following types of messages are welcomed, but we would prefer not to have to write a reply to each one. 
+To help us do this with a clear conscience, please add a note at the end saying "No response required". Although Heavens-Above is now multilingual, we can only understand mail written in English.<p />
+<ul>
+<b>Suggestions</b><br/>
+If you have a suggestion as to how the site can be improved, please let us know. If we agree with the
+suggestion, we'll try to implement it as soon as time and resources permit.
+<p/>
+<b>Corrections</b><br/>
+If you notice errors in the information about the satellites for example, 
+please let us know. We will make the corrections at the earliest opportunity.
+<p/>
+<b>Bugs</b><br/>
+If you think you've found a bug in our prediction software, we want to know about it. Please try to provide
+us with information which will help us to locate and fix the bug, especially useful is a copy of the URL (address) 
+of the page concerned.
+<p/>
+<b>Praise or thanks</b><br/>
+It's always nice to know we are appreciated, and we welcome this kind of message, but please don't always expect a reply.
+</ul></p></div><h3>What types of e-mail are unacceptable?</h3><div><p>The following message categories will NOT receive a reply.
+<br/><br/>
+<b>Requests for identification of satellite sightings</b><br/>
+These types of question are very time consuming, and we simply don't have time
+to answer them. You can use the buttons at the top of a predictions pages to generate
+predictions for dates in the past, and try to identify the object yourself. 
+Alternatively, you can post a question to the <a href="http://www.satobs.org/seesat/seesatindex.html">Seesat mailing list</a>, which will be
+read by over 600 experienced and enthusiastic satellite observers around the
+world.</p></div><p /><h2>Setting up your observing location</h2><h3>How accurately do I need to enter my coordinates?</h3><div><p>For normal satellite observation, an accuracy of 10 km is perfectly adequate. This 
+corresponds to approximately one tenth of a degree in the latitude and longitude coordinates.
+Iridium flare predictions need more accurate coordinates because they are more sensitive to the
+observer's location. You should try to enter your position to an accuracy of 1 km (about 0.01&#176;)
+if you can.</p></div><h3>How do I convert angles from degrees, minutes and seconds to decimal degrees?</h3><div><p>Many sources of geographical coordinates give them in degrees, minutes and seconds. At the
+moment, you must manually convert them to decimal degrees. There are 60 minutes in a degree, 
+and 60 seconds in a minute, so divide the number of minutes by 60 and add the result to the number
+of degrees, then divide the number of seconds by 3600 (60 times 60) and add this also. As an example,
+to convert the latitude 48&#176; 15' 23" to decimal degrees, perform the calculation;
+<pre>
+Decimal degrees = 48 + 15/60 + 23/3600 
+                = 48.25639 (rounded to 5 decimal places)
+</pre>
+Don't forget you need a minus sign also for latitudes south of the equator and longitudes
+west of Greenwich.</p></div><h3>Will I have to do anything when we change to/from daylight saving time to winter time?</h3><div><p>No, the prediction software calculates when the changes are due to occur and all times are given
+in the correct local time.</p></div><p /><h2>Satellite predictions</h2><h3>Why are satellites not visible in the middle of the night?</h3><div><p>Satellites are only visible when they are lit by the sun, but the observer on the ground is already in darkness. These conditions are met only when the sun is below the observer's horizon, but not so far down that the satellites themselves are in the earth's shadow. So satellites are normally only visible a few hours after sunset, or before sunrise. In the middle of the night the sun is simply too far below the horizon to light them. In summer however, especially at far northern or southern latitudes, even in the middle of the night the sun is never too far down, and satellites can be seen the whole night through.</p></div><h3>Are the times given in local time or UTC?</h3><div><p>All the times in the prediction tables are given in local time.</p></div><h3>Why do some satellites tumble?</h3><div><p>Quite a number of satellites that can be observed are tumbling, and this causes their brightness to vary with time. This variation can often be seen with the naked eye, and the frequency of the brightness peaks can range between several per second, to once every minute or so. The tumbling can be started by several mechanisms, but the most common is probably out-gasing. This often happens to spent rockets which have some fuel left over in their tanks once the engine shuts down. Sometimes this fuel is vented deliberately by ground controllers to reduce the danger of an explosion which would create many pieces of orbital debris, and pose a hazard to other satellites. Other times the fuels leaks out gradually.
+<P>
+Occasionally, objects will explode in orbit, and the force of the explosion will start the resulting pieces spinning.</p></div><h3>Can I get predictions for times other than those which first appear in the prediction tables?</h3><div><p>Yes. You will see buttons at the top of the prediction tables which you can use to change the search period either forwards or backwards in time. Remember though, that the predictions become increasingly inaccurate the further you move away from the current time.</p></div><h3>I think I saw a bright satellite which could be the ISS but the prediction wasn't in the Heavens-Above list. What could it be?</h3><div><p>This almost certainly was ISS or another very bright satellite. We have a cut-off of -6° sun altitude for our predictions, so that satellite passes are only predicted when the sky is reasonably dark. However, these bright satellites can sometimes be seen when the sun is higher, but this explains why they aren't in the list. On the ISS predictions page, you can also select the "all" radio button to show the times of all passes, even those during daylight, and then compare these times with your observation.</p></div><h3>How do you estimate the brightness of a satellite?</h3><div><p>The brightness of a spacecraft is influenced by
+several factors, including its size, orientation, reflectivity of its
+surfaces, distance from the observer, and the angle between the sun,
+spacecraft and observer. The size and reflectivity determine the "intrinsic"
+brightness, and this is either estimated from observations or from a
+knowledge of the size and type of coverings used in the construction. The
+distance, and sun-satellite-observer angle can all be calculated from the
+orbit. This leaves just the orientation or attitude, which is usually
+unknown, and often varying rapidly (e.g. a tumbling rocket body). For this
+reason, our magnitude estimates should only be treated as a rough guide, and
+the actual brightness you see could be considerably more or less than this.</p></div><p /><h2>Iridium flares</h2><h3>What is an Iridium flare?</h3><div><p>An Iridium flare is caused by the sun being reflected from one of the three main mission antennae (MMA) of an Iridium satellite. The MMAs are flat, highly polished aluminium surfaces, and when the angles are just right, they can reflect the sun just like a mirror. There are over 70 of these communications satellites in orbit, and they are operated by the <a href="http://www.iridium.com">Iridium LLC Consortium</a>. For more information, please see our <a href="iridiumhelp.aspx">Iridium flare help page</a>.</p></div><h3>I saw a predicted flare, but it wasn't as bright as I was expecting. Why not?</h3><div><p>The predictions we make assume that the Iridium satellites have exactly the nominal attitude (orientation). However, the onboard control system maintains the attitude only to within about 0.1° of the nominal, and this unpredictable difference can lead to the actual intensity of a flare being significantly lower (or sometimes higher) than predicted.
+<P>
+Also, please make sure you've entered your coordinates as accurately as possible.</p></div><h3>The flare I went out to see didn't appear. What was the reason?</h3><div><p>Sometimes, but not often, flares fail to appear completely. There are several possible reasons;<p />
+<UL>
+<LI>The satellite could have recently failed, and its attitude is no longer tightly controlled. Several Iridium satellites have
+failed since they were put into orbit and are no longer in either the nominal attitude or orbit. As soon as we know that a satellite has failed we remove it from our predictions, but one that has only recently failed may still be flagged as operational and erroneous predictions will be in our list.
+<LI>The satellite could be temporarily in a non-nominal attitude. This can happen, especially shortly after launch, when a satellite is being checked out, or maneuvering. If it isn't in the expected attitude, the chances are the flare will not appear since the geometry between sun, satellite and observer is so critical to a flare appearing as predicted.
+<LI>You could have been looking in the wrong direction! Please make sure you understand what the azimuth and elevation angles mean in the predictions table, and don't confuse the direction to the flare centre which is shown on the small map of the flare details page with the azimuth of the flare which is the direction you should be looking.
+<LI>You could have been looking at the wrong time. An Iridium flare only lasts for a few seconds, and if your watch is not set accurately, or you look away even for a few seconds, you could miss it. You can use our "What time is it?" page to get an accurate time.
+<LI>Your coordinates or time zone could be entered incorrectly. Please make sure that you have entered the correct coordinates for your location. Iridium flares are especially sensitive to position errors, and you should try to enter your coordinates to 1km (about 0.01&#176;) accuracy if you can. Also check that your time zone is correct. You can do this by comparing the local time given on our "What time is it?" page with the current time at you location.
+</UL></p></div><h3>While I was out waiting for a flare or other satellite to appear, I saw another flare which wasn't in the predictions. What could it have been?</h3><div><p>This was probably a flare from a failed Iridium satellite. Several satellites have failed in orbit, and are not in the nominal orbit and/or attitude. However, they can still produce flares just like the operational ones. The difference is that we can't predict when they will happen.</p></div><h3>While observing one of the predicted flares, I saw another one just a few seconds before or after the predicted one in almost the same place. Why?</h3><div><p>Several "double" flares have been reported by observers. They seem to come from the same satellite, but no-one is completely sure what's causing them. The most likely reason is a reflection of sunlight off another part of the satellite structure.</p></div><h3>Why is the direction of an Iridium flare sometimes opposite to the direction to the flare centre? Which way should I look?</h3><div><p>The direction of an Iridium flare (i.e. its azimuth and elevation angles) is the direction
+to look in the sky to see the flare. This has nothing to do with the direction to the flare centre, 
+which is the direction to the point on the earth's surface where the flare would appear at its brightest.
+So if, for example, a flare is scheduled to appear with an azimuth of 92&#176; (i.e. in the east), and the 
+flare centre is 20 km to the west, this means you would have to travel west for 20km to see the flare at its brightest, but 
+then still look east in the sky to see it. Another way to think about this would be the flare beam coming 
+from the satellite in the east, passing over your head and striking the ground 20km to the west of you.</p></div><h3>Why did the Iridium flare I saw appear much higher in the sky than was predicted?</h3><div><p>Several people have reported that flares appeared higher than predicted. We believe our
+predictions to be accurate, and we have had many confirmations that the position and time
+of the flares is normally very accurate compared to actual observations. One possibility is that 
+the observer sees a different satellite producing a flare at the same time as a predicted one.
+The most likely explanation, however, is that most people tend to overestimate elevations. An elevation
+of 60&#176; is really very high up in the sky, and you have to tilt your head a long way back to see it,
+and it can sometimes seem like it's right overhead.</p></div><p /><h2>Whole sky chart</h2><h3>I am having problems printing the sky chart, what can I do?</h3><div><p>First of all, select the "Black on white option at the bottom of the page and then click the Submit button. This will generate a new chart with black stars on a white background which looks much better when printed and saves ink. You can also adjust the size of the chart so that it fits onto a single page. The default size is 600 pixels, but you can enter any size between 400 and 1600 pixels.</p></div><h3>Can I get black stars on a white background to save printer ink?</h3><div><p>Yes, just click on the "Black on white option" at the bottom of the page and then the update button.</p></div><h3>Why does the sky chart have east on the left and west on the right?</h3><div><p>The reason the chart seems to have east and west flipped, is because it is meant to correspond to the sky over your head, and not the ground under your feet like a map of the earth. You have to imagine holding the chart above your head to use it, and then the directions are correct.</p></div>
+</div>
+
+				&nbsp;
+				<p />
+				<table style="border-top: 1px solid black;">
+					<tr>
+						<td valign="top" style="width: 100px">
+							<a href="https://twitter.com/heavensabovecom?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-screen-name="false" data-show-count="false">Follow @heavensabovecom</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+							<!--<a id="ctl00_linkDonate" title="Make a donation to help with the running costs of Heavens-Above" href="Donate2.aspx"><img title="Make a donation to help with the running costs of Heavens-Above" src="//heavens-above.com/images/btn_donate_SM.gif" alt="" style="border-width:0px;" /></a>-->
+						</td>
+						<td valign="top">
+							<div class="footer">
+								Developed and maintained by <a href="mailto:Chris.Peat@heavens-above.com">Chris Peat</a>, <a href="https://heavens-above.de">Heavens-Above GmbH</a>. Please read the <a href="faq.aspx">FAQ</a> before sending e-mail. <a href="Imprint.aspx">Imprint</a>.
+								</div>
+						</td>
+						<td>
+							<a href="http://www.dlr.de/rb/en/" target="_blank">
+								<img src="//heavens-above.com/images/dlrhost.gif" align="left" border="0" alt="DLR" /></a>
+						</td>
+					</tr>
+				</table>
+			</td>
+			<td rowspan="1" valign="top">
+				<p />
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5668297076217155" crossorigin="anonymous"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-5668297076217155" data-ad-slot="7480853211"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+					<p />
+					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display: inline-block; width: 336px; height: 280px" data-ad-client="ca-pub-5668297076217155" data-ad-slot="7480853211"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+			</td>
+		</tr>
+	</table>
+	</form>
+    <script src="//tags.onscroll.com/608ff96c-526d-43c0-92d3-5faa546bc80e/tag.min.js" async defer></script>
+</body>
+</html>

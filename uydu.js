@@ -141,7 +141,23 @@
     return satrecler[k] || (satrecler[k] = satellite.json2satrec(uydu.omm));
   }
 
-  function durumHesapla(sat, gd, t, yalnizYon) {
+  /* Anlık parlaklık (kadir): m = içsel + 5·log10(d / 1000 km) − 2,5·log10(2·(1 − φ/π)), φ faz açısı
+     (Güneş–uydu–gözlemci). Uzaklık terimi ve "%50 aydınlık = φ 90°" tanımı birçok kaynakta ortak
+     (Matson/SeeSat-L, Karpov & Peloton 2022, Mallama 2021). Faz terimi için yayımlanmış modeller
+     (Lambert küre, (1+cos φ)/2) Heavens-Above'ın verdiği değerlerden 0,7–1,5 kadir sapıyor; bu doğrusal
+     terim ise 40 Heavens-Above noktasında 0,04 kadir ortalama sapmayla aynı sonucu veriyor
+     (arastirma/uydu_parlaklik.md). Yani bu bir fizik yasası değil, Heavens-Above ile uyumlu bir tahmin;
+     uydunun duruşu bilinmediği için HA da değerlerini "kaba yol gösterici" sayıyor. */
+  function parlaklik(icsel, r, s, gd, gmst, uzaklik) {
+    const o = satellite.ecfToEci(satellite.geodeticToEcf(gd), gmst);
+    const ob = [o.x - r.x, o.y - r.y, o.z - r.z], n = Math.hypot(ob[0], ob[1], ob[2]);
+    const cosf = (ob[0] * s[0] + ob[1] * s[1] + ob[2] * s[2]) / n;
+    const fi = Math.acos(Math.max(-1, Math.min(1, cosf)));
+    const k = 2 * (1 - fi / Math.PI);
+    return k > 1e-6 ? icsel + 5 * Math.log10(uzaklik / 1000) - 2.5 * Math.log10(k) : null;
+  }
+
+  function durumHesapla(sat, gd, t, yalnizYon, icsel) {
     const pv = satellite.propagate(sat, t);
     if (!pv || !pv.position) return null;
     const gmst = satellite.gstime(t);
@@ -156,7 +172,9 @@
     const izd = r.x * s[0] + r.y * s[1] + r.z * s[2];
     const dik = Math.hypot(r.x - izd * s[0], r.y - izd * s[1], r.z - izd * s[2]);
     const isikli = izd > 0 || dik > YER_R;
-    return { t, alt: la.elevation / DER, az: la.azimuth / DER, isikli, uzaklik: la.rangeSat };
+    const d = { t, alt: la.elevation / DER, az: la.azimuth / DER, isikli, uzaklik: la.rangeSat };
+    if (icsel != null && isikli) d.kadir = parlaklik(icsel, r, s, gd, gmst, la.rangeSat);
+    return d;
   }
   function yerKonum(konum) { return { latitude: konum.enlem * DER, longitude: konum.boylam * DER, height: (konum.yukseklik || 0) / 1000 }; }
 
@@ -183,7 +201,7 @@
     /* Her geçiş: 1 sn çözünürlükle başlangıç, tepe, bitiş; görünür bölüm */
     return ls.map(g => {
       const n = g.noktalar;
-      const ince = (a, b) => { const out = []; for (let ms = a; ms <= b; ms += 1000) { const d = durumHesapla(sat, gd, new Date(ms)); if (d) out.push(d); } return out; };
+      const ince = (a, b) => { const out = []; for (let ms = a; ms <= b; ms += 1000) { const d = durumHesapla(sat, gd, new Date(ms), false, uydu.icsel); if (d) out.push(d); } return out; };
       const tumu = ince(n[0].t.getTime() - ADIM, n[n.length - 1].t.getTime() + ADIM).filter(d => d.alt >= ESIK);
       if (!tumu.length) return null;
       const tepe = tumu.reduce((a, d) => d.alt > a.alt ? d : a);
@@ -201,12 +219,14 @@
         bas: tumu[0], tepe, bitis: tumu[tumu.length - 1],
         gorunur: gercekGorunen.length > 0,
         gBas: gercekGorunen[0] || null, gBit: gercekGorunen[gercekGorunen.length - 1] || null,
-        gTepe: gercekGorunen.length ? gercekGorunen.reduce((a, d) => d.alt > a.alt ? d : a) : null
+        gTepe: gercekGorunen.length ? gercekGorunen.reduce((a, d) => d.alt > a.alt ? d : a) : null,
+        /* görünür bölümdeki en parlak an (çoğu zaman tepeye yakın ama her zaman değil) */
+        enParlak: gercekGorunen.filter(d => d.kadir != null).reduce((a, d) => (!a || d.kadir < a.kadir) ? d : a, null)
       };
     }).filter(Boolean);
   }
 
-  function anlik(uydu, konum, t) { return durumHesapla(satrec(uydu), yerKonum(konum), t); }
+  function anlik(uydu, konum, t) { return durumHesapla(satrec(uydu), yerKonum(konum), t, false, uydu.icsel); }
 
   /* 60 dk içinde başlayan ya da süren geçiş ve yolu (10 sn adım, tam dakikaya hizalı) */
   function yakinGecis(uydu, konum, simdi) {

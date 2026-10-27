@@ -1,0 +1,490 @@
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><title>
+	Starlink - dynamic 3D orbit display
+</title><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="description" content="Satellite predictions and other astronomical data customised for your location." /><link href="css/ha.css" rel="stylesheet" type="text/css" /><link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon" /><link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon" />
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="/scripts/standard.min.js"></script>
+	<script type="text/javascript">
+		function updateLocalTime(utc) {
+			var localdiff = parseInt($('#utcOffset').val());
+			var local_now = new Date(utc.getTime() + localdiff);
+			$('#spanTime').text(formatTime(local_now));
+		}
+
+		$(function () {
+			onClockTick = updateLocalTime;
+			startClock();
+		});
+	</script>
+	
+    <meta charset="UTF-8" />
+    <script src="scripts/moment.min.js"></script>
+    <script src="scripts/moment-duration-format.js"></script>
+    <script src="scripts/numeral.min.js"></script>
+    
+    <script src="scripts/orbit3ddisplay.js?v=3"></script>
+    <script>
+        let ssd;
+        let startTime;
+        let selectedSat;
+        let animationSpeed = 0;
+        let lastOffset = 0;
+        let lastFrameTime;
+        let realTimeMode = false;
+        let initialAnimationMode = true;
+        let loading = false;
+        let loadedAll = false;
+        let allSats = [];
+		let displayedSats = [];
+        let satsForLaunch = new Map();
+
+        var userLoc = {
+            latitude: 41.0046,
+            longitude: 29.0762,
+            name: 'Fetih',
+            zoneColor: '#ff0000',
+            zoneBorderColor: '#f00',
+            textColor: '#fff',
+            showIcon: true,
+            iconColor: 'white'
+        };
+
+        jQuery(function () {
+            ssd = new Orbit3dDisplay.Orbit3dDisplay({
+                time: new Date().getTime(),
+                container: document.getElementById('mydiv'),
+                earthTextureUrl: 'images/land_ocean_ice_2048.jpg',
+                satSize: 3,
+                primarySatColor: 0xffff00,
+                primarySatEclipseColor: 0x808000,
+                secondarySatColor: 0xff0000,
+                secondarySatEclipseColor: 0x800000,
+                showGrid: true,
+                showDayShading: true,
+                showOrbitEclipses: true,
+                groundStations: [userLoc],
+                initialObserverLat: userLoc.latitude,
+                initialObserverLong: userLoc.longitude
+            });
+
+            setTimeout(updateSatInfo, 200);
+
+            const launchesPerRequest = 10;
+            loading = true;
+            startLoading(0, launchesPerRequest);
+
+            startTime = new Date().getTime();
+            doAnimation();
+        });
+
+        function pause() {
+            animationSpeed = 0;
+            initialAnimationMode = false;
+            realTimeMode = false;
+            setActiveButton('btnPause');
+        }
+
+        function setAnimationSpeed(newSpeed) {
+            if (animationSpeed == 0)
+                lastFrameTime = new Date().getTime();
+            realTimeMode = false;
+            animationSpeed = newSpeed;
+            initialAnimationMode = false;
+            if (newSpeed < 50)
+                setActiveButton('btnFast1');
+            else if (newSpeed == 50)
+                setActiveButton('btnFast2');
+            else
+                setActiveButton('btnFast3');
+        }
+
+        function doAnimation() {
+            var now = new Date().getTime();
+            if (initialAnimationMode) {
+                var newTime = now - 36000000 + (now - startTime) * 150;
+                if (newTime > now) {
+                    newTime = now;
+                    initialAnimationMode = false;
+                    realTimeMode = true;
+                    setActiveButton('btnRT');
+                }
+                ssd.time = newTime;
+            }
+            else {
+                lastOffset += (now - lastFrameTime) * animationSpeed;
+                if (realTimeMode)
+                    ssd.time = now
+                else if (animationSpeed > 0)
+                    ssd.time = now + lastOffset;
+            }
+            lastFrameTime = now;
+            setTimeout(doAnimation, 20);
+        }
+
+        function setRealTimeMode() {
+            animationSpeed = 0;
+            realTimeMode = true;
+            ssd.time = new Date().getTime();
+            lastOffset = 0;
+            initialAnimationMode = false;
+            setActiveButton('btnRT');
+        }
+
+        function setActiveButton(id) {
+            $('#btnRT').removeClass('selectedButton');
+            $('#btnPause').removeClass('selectedButton');
+            $('#btnFast1').removeClass('selectedButton');
+            $('#btnFast2').removeClass('selectedButton');
+            $('#btnFast3').removeClass('selectedButton');
+            $('#' + id).addClass('selectedButton');
+        }
+
+        function updateSatInfo() {
+            if (loading)
+                $('#loadedSats').text(displayedSats.length + ' (...loading)');
+            else
+                $('#loadedSats').text(displayedSats.length);
+            if (selectedSat !== ssd.primarySat) {
+                selectedSat = ssd.primarySat;
+
+                if (selectedSat) {
+                    $('#satid').text(selectedSat.userData.name + ' (' + selectedSat.userData.id + ')');
+                    $('#cospar').text(selectedSat.userData.cospar);
+                    var txtOrbit = Math.round(selectedSat.userData.perigee) + ' x ' + Math.round(selectedSat.userData.apogee) + ', '
+                        + numeral(selectedSat.userData.inc).format('0.0') + '°';
+                    $('#orbit').text(txtOrbit);
+                }
+                else {
+                    $('#satid').text('');
+                    $('#cospar').text('');
+                    $('#orbit').text('');
+                }
+            }
+            $('#time').text(moment(ssd.time).format('HH:mm:ss'));
+            setTimeout(updateSatInfo, 200);
+        }
+
+        function onLaunchChanged(launchId) {
+            if (!launchId || launchId == "0") {
+                ssd.setSatellites(allSats);
+				displayedSats = allSats;
+            }
+            else {
+                const launchSats = satsForLaunch.get(parseInt(launchId));
+				displayedSats = launchSats;
+                ssd.setSatellites(launchSats);
+            }
+        }
+
+        function startLoading(skip, take) {
+            const query = `
+            query ($input: LaunchSelectionInput!) {
+                launches {
+                    findMany(input: $input) {
+                        total
+                        launches {
+                            id
+                            satellites {
+                                id
+                                name
+                                launchPiece
+                                cospar
+                                orbitalStatusId
+                                currentTle {
+                                    epoch
+                                    tle
+                                    inclination
+                                    perigeeHeight
+                                    apogeeHeight
+                                }
+                            }
+                        }
+                    }
+                }
+            }`;
+
+            let variables = {
+                input: {
+                    groupId: 'Starlink',
+                    paging: {
+                        skip: skip,
+                        take: take
+                    }
+                }
+            };
+      
+            let graphQLParams = { "query": query, variables: variables };
+
+            $.ajax({
+                url: 'https://heavens-above.com/api',
+                method: 'POST',
+                contentType: 'application/json',
+                dataType: 'json',
+                headers: {
+                    'Accept': 'application/json'
+                },
+                data: JSON.stringify(graphQLParams),
+                success: function (data) {
+                    let launches = data.data.launches.findMany.launches;
+                    for (var iLaunch = 0; iLaunch < launches.length; ++iLaunch) {
+                        var satData = launches[iLaunch].satellites;
+                        //console.log(data);
+                        let launchSats = [];
+                        for (var ix = 0; ix < satData.length; ++ix) {
+                            if (satData[ix].orbitalStatusId == 1 && satData[ix].currentTle) {
+                                var sat = {};
+                                sat.id = satData[ix].id;
+                                sat.name = satData[ix].name;
+                                sat.cospar = satData[ix].cospar;
+                                sat.tle = satData[ix].currentTle.tle;
+                                sat.perigee = satData[ix].currentTle.perigeeHeight;
+                                sat.apogee = satData[ix].currentTle.apogeeHeight;
+                                sat.inc = satData[ix].currentTle.inclination;
+                                allSats.push(sat);
+                                launchSats.push(sat);
+                            }
+                        }
+                        satsForLaunch.set(launches[iLaunch].id, launchSats);
+                    }
+                    ssd.setSatellites(allSats);
+					displayedSats = allSats;
+                    if (data.data.launches.findMany.total > skip + take) {
+                        startLoading(skip + take, take * 2);
+                    }
+                    else {
+                        loading = false;
+                        loadedAll = true;
+                    }
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    console.log("Error fetching sat data: " + textStatus + " error thrown: " + errorThrown);
+                }
+            });
+        }
+
+        var starlinkLaunches;
+
+    </script>
+    <style>
+        .selectedButton {
+            background-color: lime;
+        }
+    </style>
+</head>
+<body>
+	<form name="aspnetForm" method="post" action="./StarLink.aspx?lat=41.0046&amp;lng=29.0762&amp;loc=Fetih&amp;alt=0&amp;tz=UCTm3&amp;cul=en" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="B3789BE2" />
+</div>
+	<input type="hidden" name="utcOffset" id="utcOffset" value="10800000" />
+	<table border="0" style="margin-left: auto; margin-right: auto; border-style: none">
+		<tr>
+			<td>
+				<a id="ctl00_hyperlinkLogo" href="./?lat=41.0046&amp;lng=29.0762&amp;loc=Fetih&amp;alt=0&amp;tz=UCTm3&amp;cul=en" style="display:inline-block;border-style:None;"><img src="//heavens-above.com/images/LogoNew.png" alt="" style="border-width:0px;" /></a>
+			</td>
+			<td>
+				
+					<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5668297076217155" crossorigin="anonymous"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-5668297076217155" data-ad-slot="5479771053"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+				
+			</td>
+			<td>
+				<table class="userTable">
+					<tr>
+						<td>
+							User:
+						</td>
+						<td>
+							anonymous&nbsp;&nbsp;&nbsp;<a href="/login.aspx">Login</a>
+						</td>
+					</tr>
+					<tr class="lightrow">
+						<td>
+							Location:
+						</td>
+						<td>
+							<a id="ctl00_linkObservationSite" href="SelectLocation.aspx?lat=41.0046&amp;lng=29.0762&amp;loc=Fetih&amp;alt=0&amp;tz=UCTm3&amp;cul=en">Fetih</a>
+							
+						</td>
+					</tr>
+					<tr class="lightrow">
+						<td colspan="2" align="center">
+							(<a id="ctl00_linkLatLong" href="SelectLocation.aspx?lat=41.0046&amp;lng=29.0762&amp;loc=Fetih&amp;alt=0&amp;tz=UCTm3&amp;cul=en">41.0046°N, 29.0762°E</a>)
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Time:
+						</td>
+						<td>
+							<span id="spanTime">
+								18:38:57</span>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" align="center">
+							(UTC<span id="ctl00_lblTZ">+03:00</span>)
+						</td>
+					</tr>
+					<tr class="lightrow">
+						<td>
+							Language:
+						</td>
+						<td>
+							<select name="ctl00$ddlCulture" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ddlCulture\&#39;,\&#39;\&#39;)&#39;, 0)" id="ctl00_ddlCulture">
+	<option value="ar">العربية</option>
+	<option value="ca">Catal&#224;</option>
+	<option value="cs">Čeština</option>
+	<option value="da">Dansk</option>
+	<option value="de">Deutsch</option>
+	<option value="el">Ελληνικά</option>
+	<option selected="selected" value="en">English</option>
+	<option value="eo">Esperanto</option>
+	<option value="es">Espa&#241;ol</option>
+	<option value="eu">Euskara</option>
+	<option value="fi">Suomi</option>
+	<option value="fr">Fran&#231;ais</option>
+	<option value="gl">Galego</option>
+	<option value="he">עברית</option>
+	<option value="hr">Hrvatski</option>
+	<option value="hu">Magyar</option>
+	<option value="it">Italiano</option>
+	<option value="ja">日本語</option>
+	<option value="lt">Lietuvių</option>
+	<option value="nl">Nederlands</option>
+	<option value="pl">Polski</option>
+	<option value="pt">Portugu&#234;s brasileiro</option>
+	<option value="pt-PT">Portugu&#234;s de Portugal</option>
+	<option value="ro">Rom&#226;nă</option>
+	<option value="ru">Русский</option>
+	<option value="sk">Slovenčina</option>
+	<option value="sl">Slovenščina</option>
+	<option value="sv">Svenska</option>
+	<option value="ta">தமிழ்</option>
+	<option value="th">ไทย</option>
+	<option value="tr">T&#252;rk&#231;e</option>
+	<option value="uk">Українська</option>
+	<option value="zh">简体中文</option>
+	<option value="zh-CHT">繁體中文</option>
+
+</select>
+						</td>
+					</tr>
+					
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<hr />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" valign="top">
+				<table width="100%">
+					<tr>
+						<td align="left">
+							<span id="ctl00_lblTitle" class="pagehead">Starlink - dynamic 3D orbit display</span>
+						</td>
+						<td align="right" class="navbar">
+							
+							<span id="ctl00_lblNavBar"><a href="/?lat=41.0046&lng=29.0762&loc=Fetih&alt=0&tz=UCTm3&cul=en" title="Go to home page">Home</a></span>
+						</td>
+					</tr>
+				</table>
+				<p />
+				
+    <label for="launches">Launch:</label>
+    <select id="launches" onchange="onLaunchChanged(this.value)">
+        <option selected value="0">all</option><option value="2026242">Starlink G15-15, 23 October 2026 22:48 UTC</option><option value="2026232">Starlink G15-25, 13 October 2026 00:28 UTC</option><option value="2026225">Starlink G31-1, 28 September 2026 12:49 UTC</option><option value="2026219">Starlink G15-27, 20 September 2026 01:47 UTC</option><option value="2026204">Starlink G15-24, 06 September 2026 14:26 UTC</option><option value="2026200">Starlink G15-23, 02 September 2026 08:42 UTC</option><option value="2026197">Starlink G15-22, 26 August 2026 09:27 UTC</option><option value="2026196">Starlink G10-49, 25 August 2026 09:33 UTC</option><option value="2026193">Starlink G15-20, 22 August 2026 07:25 UTC</option><option value="2026192">Starlink G10-39, 21 August 2026 15:14 UTC</option><option value="2026190">Starlink G17-50, 19 August 2026 04:01 UTC</option><option value="2026184">Starlink G17-49, 12 August 2026 04:46 UTC</option><option value="2026183">Starlink G10-19, 11 August 2026 15:58 UTC</option><option value="2026181">Starlink G17-38, 08 August 2026 16:35 UTC</option><option value="2026177">Starlink G17-53, 04 August 2026 17:05 UTC</option><option value="2026175">Starlink G17-52, 01 August 2026 03:08 UTC</option><option value="2026171">Starlink G17-51, 25 July 2026 15:51 UTC</option><option value="2026165">Starlink G17-39, 21 July 2026 14:49 UTC</option><option value="2026161">Starlink G10-45, 14 July 2026 09:10 UTC</option><option value="2026160">Starlink G15-14, 14 July 2026 01:28 UTC</option><option value="2026159">Starlink G17-48, 11 July 2026 03:01 UTC</option><option value="2026157">Starlink G10-42, 09 July 2026 09:25 UTC</option><option value="2026154">Starlink G10-50, 05 July 2026 10:50 UTC</option><option value="2026146">Starlink G17-45, 25 June 2026 03:30 UTC</option><option value="2026143">Starlink G17-28, 21 June 2026 16:39 UTC</option><option value="2026135">Starlink G17-54, 15 June 2026 15:34 UTC</option><option value="2026133">Starlink G10-54, 12 June 2026 12:37 UTC</option><option value="2026131">Starlink G17-44, 11 June 2026 15:05 UTC</option><option value="2026127">Starlink G10-35, 08 June 2026 10:13 UTC</option><option value="2026123">Starlink G10-43, 04 June 2026 10:26 UTC</option><option value="2026122">Starlink G17-47, 03 June 2026 15:40 UTC</option><option value="2026119">Starlink G17-41, 30 May 2026 15:25 UTC</option><option value="2026117">Starlink G10-53, 29 May 2026 12:57 UTC</option><option value="2026115">Starlink G17-37, 26 May 2026 14:50 UTC</option><option value="2026114">Starlink G10-47, 25 May 2026 11:48 UTC</option><option value="2026111">Starlink G10-31, 21 May 2026 10:04 UTC</option><option value="2026110">Starlink G17-42, 20 May 2026 02:46 UTC</option><option value="2026101">Starlink G17-29, 06 May 2026 03:59 UTC</option><option value="2026099">Starlink G10-38, 01 May 2026 18:06 UTC</option><option value="2026097">Starlink G17-36, 30 April 2026 02:42 UTC</option><option value="2026094">Starlink G17-16, 26 April 2026 14:37 UTC</option><option value="2026089">Starlink G17-14, 23 April 2026 03:23 UTC</option><option value="2026086">Starlink G17-22, 19 April 2026 16:03 UTC</option><option value="2026082">Starlink G17-27, 15 April 2026 04:29 UTC</option><option value="2026081">Starlink G10-24, 14 April 2026 09:33 UTC</option><option value="2026077">Starlink G17-21, 11 April 2026 05:04 UTC</option><option value="2026073">Starlink G17-35, 07 April 2026 02:50 UTC</option><option value="2026070">Starlink G10-58, 02 April 2026 11:55 UTC</option><option value="2026068">Starlink G10-44, 30 March 2026 21:15 UTC</option><option value="2026063">Starlink G17-17, 26 March 2026 23:03 UTC</option><option value="2026059">Starlink G10-62, 22 March 2026 14:47 UTC</option><option value="2026057">Starlink G17-15, 20 March 2026 21:51 UTC</option><option value="2026055">Starlink G10-33, 19 March 2026 14:20 UTC</option><option value="2026054">Starlink G10-46, 17 March 2026 13:27 UTC</option><option value="2026053">Starlink G17-24, 17 March 2026 05:19 UTC</option><option value="2026050">Starlink G10-48, 14 March 2026 12:37 UTC</option><option value="2026049">Starlink G17-31, 13 March 2026 14:57 UTC</option><option value="2026043">Starlink G17-18, 07 March 2026 11:00 UTC</option><option value="2026042">Starlink G10-40, 04 March 2026 10:52 UTC</option><option value="2026041">Starlink G10-41, 02 March 2026 02:56 UTC</option><option value="2026039">Starlink G6-108, 27 February 2026 12:16 UTC</option><option value="2026038">Starlink G17-26, 25 February 2026 14:17 UTC</option><option value="2026037">Starlink G6-110, 24 February 2026 23:04 UTC</option><option value="2026036">Starlink G6-104, 22 February 2026 03:47 UTC</option><option value="2026035">Starlink G17-25, 21 February 2026 09:04 UTC</option><option value="2026034">Starlink G10-36, 20 February 2026 01:41 UTC</option><option value="2026033">Starlink G6-103, 16 February 2026 07:59 UTC</option><option value="2026032">Starlink G17-13, 15 February 2026 01:59 UTC</option><option value="2026026">Starlink G11-34, 11 February 2026 17:11 UTC</option><option value="2026025">Starlink G17-33, 07 February 2026 20:58 UTC</option><option value="2026022">Starlink G17-32, 02 February 2026 15:47 UTC</option><option value="2026020">Starlink G6-101, 30 January 2026 07:22 UTC</option><option value="2026018">Starlink G17-19, 29 January 2026 17:53 UTC</option><option value="2026016">Starlink G17-20, 25 January 2026 17:30 UTC</option><option value="2026014">Starlink G17-30, 22 January 2026 05:47 UTC</option><option value="2026012">Starlink G6-100, 18 January 2026 23:31 UTC</option><option value="2026008">Starlink G6-98, 14 January 2026 18:08 UTC</option><option value="2026005">Starlink G6-97, 12 January 2026 21:08 UTC</option><option value="2026003">Starlink G6-96, 09 January 2026 21:41 UTC</option><option value="2026002">Starlink G6-88, 04 January 2026 06:48 UTC</option><option value="2025304">Starlink G15-13, 17 December 2025 15:27 UTC</option><option value="2025303">Starlink G6-99, 17 December 2025 13:42 UTC</option><option value="2025299">Starlink G6-82, 15 December 2025 05:25 UTC</option><option value="2025298">Starlink G15-12, 14 December 2025 05:49 UTC</option><option value="2025294">Starlink G6-90, 11 December 2025 22:01 UTC</option><option value="2025293">Starlink G15-11, 10 December 2025 11:40 UTC</option><option value="2025288">Starlink G6-92, 08 December 2025 22:26 UTC</option><option value="2025286">Starlink G11-15, 07 December 2025 17:58 UTC</option><option value="2025283">Starlink G11-25, 04 December 2025 20:42 UTC</option><option value="2025281">Starlink G6-95, 02 December 2025 22:18 UTC</option><option value="2025280">Starlink G15-10, 02 December 2025 05:28 UTC</option><option value="2025278">Starlink G6-86, 01 December 2025 07:44 UTC</option><option value="2025271">Starlink G11-30, 23 November 2025 08:48 UTC</option><option value="2025270">Starlink G6-79, 22 November 2025 07:53 UTC</option><option value="2025268">Starlink G6-78, 21 November 2025 03:39 UTC</option><option value="2025265">Starlink G6-94, 19 November 2025 00:12 UTC</option><option value="2025263">Starlink G6-85, 15 November 2025 06:44 UTC</option><option value="2025262">Starlink G6-89, 15 November 2025 03:08 UTC</option><option value="2025259">Starlink G6-87, 11 November 2025 03:21 UTC</option><option value="2025257">Starlink G10-51, 09 November 2025 08:10 UTC</option><option value="2025254">Starlink G11-14, 06 November 2025 21:13 UTC</option><option value="2025253">Starlink G6-81, 06 November 2025 01:31 UTC</option><option value="2025247">Starlink G11-23, 31 October 2025 20:41 UTC</option><option value="2025245">Starlink G10-37, 29 October 2025 16:35 UTC</option><option value="2025244">Starlink G11-21, 28 October 2025 00:43 UTC</option><option value="2025243">Starlink G10-21, 26 October 2025 15:00 UTC</option><option value="2025240">Starlink G11-12, 25 October 2025 14:40 UTC</option><option value="2025237">Starlink G11-5, 22 October 2025 14:16 UTC</option><option value="2025236">Starlink G11-19, 19 October 2025 17:24 UTC</option><option value="2025235">Starlink G10-17, 19 October 2025 17:39 UTC</option><option value="2025232">Starlink G10-52, 16 October 2025 09:27 UTC</option><option value="2025225">Starlink G11-17, 08 October 2025 03:54 UTC</option><option value="2025224">Starlink G10-59, 07 October 2025 06:46 UTC</option><option value="2025223">Starlink G11-39, 03 October 2025 14:06 UTC</option><option value="2025221">Starlink G11-20, 29 September 2025 02:04 UTC</option><option value="2025218">Starlink G17-11, 26 September 2025 04:26 UTC</option><option value="2025216">Starlink G10-15, 25 September 2025 08:39 UTC</option><option value="2025212">Starlink G10-27, 21 September 2025 10:53 UTC</option><option value="2025211">Starlink G17-12, 19 September 2025 16:31 UTC</option><option value="2025210">Starlink G10-61, 18 September 2025 09:30 UTC</option><option value="2025207">Starlink G17-10, 13 September 2025 17:55 UTC</option><option value="2025200">Starlink G17-9, 06 September 2025 18:06 UTC</option><option value="2025198">Starlink G10-57, 05 September 2025 12:32 UTC</option><option value="2025195">Starlink G10-22, 03 September 2025 11:56 UTC</option><option value="2025194">Starlink G17-8, 03 September 2025 03:51 UTC</option><option value="2025192">Starlink G10-14, 31 August 2025 11:49 UTC</option><option value="2025191">Starlink G17-7, 30 August 2025 04:59 UTC</option><option value="2025190">Starlink G10-11, 28 August 2025 08:12 UTC</option><option value="2025189">Starlink G10-56, 27 August 2025 11:10 UTC</option><option value="2025184">Starlink G17-6, 22 August 2025 17:04 UTC</option><option value="2025179">Starlink G17-5, 18 August 2025 16:26 UTC</option><option value="2025176">Starlink G10-20, 14 August 2025 12:29 UTC</option><option value="2025175">Starlink G17-4, 14 August 2025 05:05 UTC</option><option value="2025167">Starlink G10-30, 04 August 2025 07:57 UTC</option><option value="2025165">Starlink G13-4, 31 July 2025 18:35 UTC</option><option value="2025161">Starlink G10-29, 30 July 2025 03:37 UTC</option><option value="2025158">Starlink G17-2, 27 July 2025 04:31 UTC</option><option value="2025157">Starlink G10-26, 26 July 2025 09:01 UTC</option><option value="2025152">Starlink G17-3, 19 July 2025 03:52 UTC</option><option value="2025150">Starlink G15-2, 16 July 2025 02:05 UTC</option><option value="2025147">Starlink G10-28, 08 July 2025 08:21 UTC</option><option value="2025144">Starlink G10-25, 02 July 2025 06:28 UTC</option><option value="2025142">Starlink G15-7, 28 June 2025 17:13 UTC</option><option value="2025139">Starlink G10-34, 28 June 2025 04:26 UTC</option><option value="2025137">Starlink G10-16, 25 June 2025 19:54 UTC</option><option value="2025133">Starlink G10-23, 23 June 2025 05:58 UTC</option><option value="2025130">Starlink G10-18, 18 June 2025 05:55 UTC</option><option value="2025129">Starlink G15-9, 17 June 2025 03:36 UTC</option><option value="2025127">Starlink G12-26, 13 June 2025 15:29 UTC</option><option value="2025126">Starlink G15-6, 13 June 2025 01:54 UTC</option><option value="2025124">Starlink G12-24, 10 June 2025 13:05 UTC</option><option value="2025123">Starlink G15-8, 08 June 2025 14:20 UTC</option><option value="2025120">Starlink G11-22, 04 June 2025 23:40 UTC</option><option value="2025119">Starlink G12-19, 03 June 2025 04:43 UTC</option><option value="2025117">Starlink G11-18, 31 May 2025 20:10 UTC</option><option value="2025113">Starlink G10-32, 28 May 2025 13:30 UTC</option><option value="2025112">Starlink G17-1, 27 May 2025 16:57 UTC</option><option value="2025111">Starlink G12-22, 24 May 2025 17:19 UTC</option><option value="2025110">Starlink G11-16, 23 May 2025 22:32 UTC</option><option value="2025107">Starlink G12-15, 21 May 2025 03:19 UTC</option><option value="2025102">Starlink G15-5, 16 May 2025 13:43 UTC</option><option value="2025101">Starlink G6-67, 14 May 2025 16:38 UTC</option><option value="2025099">Starlink G6-83, 13 May 2025 03:36 UTC</option><option value="2025098">Starlink G15-4, 13 May 2025 01:15 UTC</option><option value="2025095">Starlink G6-91, 10 May 2025 06:28 UTC</option><option value="2025094">Starlink G15-3, 10 May 2025 00:19 UTC</option><option value="2025093">Starlink G6-93, 07 May 2025 01:17 UTC</option><option value="2025092">Starlink G6-84, 04 May 2025 08:54 UTC</option><option value="2025091">Starlink G6-75, 02 May 2025 01:51 UTC</option><option value="2025089">Starlink G12-10, 29 April 2025 02:34 UTC</option><option value="2025087">Starlink G11-9, 28 April 2025 20:42 UTC</option><option value="2025085">Starlink G12-23, 28 April 2025 02:09 UTC</option><option value="2025083">Starlink G6-74, 25 April 2025 01:52 UTC</option><option value="2025076">Starlink G6-73, 14 April 2025 04:00 UTC</option><option value="2025075">Starlink G12-17, 13 April 2025 00:53 UTC</option><option value="2025071">Starlink G11-11, 07 April 2025 23:06 UTC</option><option value="2025070">Starlink G6-72, 06 April 2025 03:07 UTC</option><option value="2025069">Starlink G11-13, 04 April 2025 01:02 UTC</option><option value="2025065">Starlink G6-80, 31 March 2025 19:52 UTC</option><option value="2025063">Starlink G11-7, 26 March 2025 22:11 UTC</option><option value="2025057">Starlink G12-25, 18 March 2025 19:57 UTC</option><option value="2025053">Starlink G12-16, 15 March 2025 11:35 UTC</option><option value="2025048">Starlink G12-21, 13 March 2025 02:35 UTC</option><option value="2025043">Starlink G12-20, 03 March 2025 02:24 UTC</option><option value="2025039">Starlink G12-13, 27 February 2025 03:34 UTC</option><option value="2025037">Starlink G15-1, 23 February 2025 01:38 UTC</option><option value="2025035">Starlink G12-14, 21 February 2025 15:19 UTC</option><option value="2025034">Starlink G10-12, 18 February 2025 23:21 UTC</option><option value="2025032">Starlink G12-8, 15 February 2025 06:14 UTC</option><option value="2025031">Starlink G12-18, 11 February 2025 18:53 UTC</option><option value="2025029">Starlink G11-10, 11 February 2025 02:09 UTC</option><option value="2025027">Starlink G12-9, 08 February 2025 19:18 UTC</option><option value="2025024">Starlink G12-3, 04 February 2025 10:15 UTC</option><option value="2025022">Starlink G11-4, 01 February 2025 23:02 UTC</option><option value="2025019">Starlink G12-7, 27 January 2025 22:05 UTC</option><option value="2025018">Starlink G11-6, 24 January 2025 14:07 UTC</option><option value="2025015">Starlink G11-8, 21 January 2025 15:45 UTC</option><option value="2025014">Starlink G13-1, 21 January 2025 05:24 UTC</option><option value="2025008">Starlink G12-4, 13 January 2025 16:47 UTC</option><option value="2025006">Starlink G12-12, 10 January 2025 19:11 UTC</option><option value="2025004">Starlink G12-11, 08 January 2025 15:27 UTC</option><option value="2025003">Starlink G6-71, 06 January 2025 20:43 UTC</option><option value="2024254">Starlink G12-6, 31 December 2024 05:39 UTC</option><option value="2024251">Starlink G11-3, 29 December 2024 01:58 UTC</option><option value="2024249">Starlink G12-2, 23 December 2024 05:35 UTC</option><option value="2024239">Starlink G11-2, 13 December 2024 21:55 UTC</option><option value="2024237">Starlink G12-5, 08 December 2024 05:12 UTC</option><option value="2024231">Starling G9-14, 05 December 2024 03:05 UTC</option><option value="2024229">Starlink G6-70, 04 December 2024 10:13 UTC</option><option value="2024224">Starlink G6-65, 30 November 2024 05:00 UTC</option><option value="2024222">Starlink G6-76, 27 November 2024 04:41 UTC</option><option value="2024220">Starlink G12-1, 25 November 2024 10:02 UTC</option><option value="2024217">Starlink G9-13, 24 November 2024 05:25 UTC</option><option value="2024216">Starlink G6-66, 21 November 2024 16:07 UTC</option><option value="2024213">Starlink G9-12, 18 November 2024 05:53 UTC</option><option value="2024210">Starlink G6-68, 14 November 2024 13:21 UTC</option><option value="2024209">Starlink G9-11, 14 November 2024 05:23 UTC</option><option value="2024207">Starlink G6-69, 11 November 2024 21:28 UTC</option><option value="2024204">Starlink G9-10, 09 November 2024 06:14 UTC</option><option value="2024202">Starlink G6-77, 07 November 2024 20:19 UTC</option><option value="2024196">Starlink G10-13, 30 October 2024 21:10 UTC</option><option value="2024195">Starlink G9-9, 30 October 2024 12:07 UTC</option><option value="2024193">Starlink G10-8, 26 October 2024 21:47 UTC</option><option value="2024189">Starlink G6-61, 21 October 2024 22:58 UTC</option><option value="2024187">Starlink G8-19, 18 October 2024 23:31 UTC</option><option value="2024184">Starlink G9-7, 15 October 2024 08:21 UTC</option><option value="2024183">Starlink G10-10, 15 October 2024 06:10 UTC</option><option value="2024175">Starlink G9-8, 25 September 2024 04:01 UTC</option><option value="2024171">Starlink G9-17, 20 September 2024 13:50 UTC</option><option value="2024164">Starlink G9-6, 13 September 2024 01:45 UTC</option><option value="2024158">Starlink G8-11, 05 September 2024 15:33 UTC</option><option value="2024155">Starlink G9-5, 31 August 2024 08:48 UTC</option><option value="2024154">Starlink G8-10, 31 August 2024 07:43 UTC</option><option value="2024152">Starlink G8-6, 28 August 2024 07:48 UTC</option><option value="2024150">Starlink G10-5, 20 August 2024 13:20 UTC</option><option value="2024144">Starlink G10-7, 12 August 2024 10:37 UTC</option><option value="2024141">Starlink G8-3, 10 August 2024 12:50 UTC</option><option value="2024138">Starlink G11-1, 04 August 2024 07:28 UTC</option><option value="2024136">Starlink G10-6, 02 August 2024 05:01 UTC</option><option value="2024133">Starlink G9-4, 28 July 2024 09:22 UTC</option><option value="2024132">Starlink G10-4, 28 July 2024 05:09 UTC</option><option value="2024131">Starlink G10-9, 27 July 2024 05:45 UTC</option><option value="2024129">Starlink G9-3, 12 July 2024 02:35 UTC</option><option value="2024124">Starlink G8-9, 03 July 2024 08:55 UTC</option><option value="2024120">Starlink G10-3, 27 June 2024 11:14 UTC</option><option value="2024118">Starlink G9-2, 24 June 2024 03:47 UTC</option><option value="2024117">Starlink G10-2, 23 June 2024 17:15 UTC</option><option value="2024113">Starlink G9-1, 19 June 2024 03:40 UTC</option><option value="2024112">Starlink G8-8, 08 June 2024 12:58 UTC</option><option value="2024111">Starlink G10-1, 08 June 2024 01:56 UTC</option><option value="2024107">Starlink G8-5, 05 June 2024 02:16 UTC</option><option value="2024106">Starlink G6-64, 01 June 2024 02:37 UTC</option><option value="2024100">Starlink G6-60, 28 May 2024 14:24 UTC</option><option value="2024098">Starlink G6-63, 24 May 2024 02:45 UTC</option><option value="2024097">Starlink G6-62, 23 May 2024 02:35 UTC</option><option value="2024093">Starlink G6-59, 18 May 2024 00:32 UTC</option><option value="2024091">Starlink G8-7, 14 May 2024 18:39 UTC</option><option value="2024090">Starlink G6-58, 13 May 2024 00:53 UTC</option><option value="2024088">Starlink G8-2, 10 May 2024 04:30 UTC</option><option value="2024086">Starlink G6-56, 08 May 2024 17:34 UTC</option><option value="2024084">Starlink G6-57, 06 May 2024 18:14 UTC</option><option value="2024082">Starlink G6-55, 03 May 2024 02:37 UTC</option><option value="2024080">Starlink G6-54, 28 April 2024 22:08 UTC</option><option value="2024076">Starlink G6-53, 23 April 2024 22:17 UTC</option><option value="2024074">Starlink G6-52, 18 April 2024 22:40 UTC</option><option value="2024073">Starlink G6-51, 17 April 2024 21:26 UTC</option><option value="2024071">Starlink G6-49, 13 April 2024 01:40 UTC</option><option value="2024068">Starlink G6-48, 10 April 2024 05:40 UTC</option><option value="2024065">Starlink G8-1, 07 April 2024 02:25 UTC</option><option value="2024064">Starlink G6-47, 05 April 2024 09:12 UTC</option><option value="2024062">Starlink G7-18, 02 April 2024 02:30 UTC</option><option value="2024060">Starlink G6-45, 31 March 2024 01:30 UTC</option><option value="2024057">Starlink G6-46, 25 March 2024 23:42 UTC</option><option value="2024056">Starlink G6-42, 24 March 2024 03:09 UTC</option><option value="2024050">Starlink G7-16, 19 March 2024 02:28 UTC</option><option value="2024049">Starlink G6-44, 16 March 2024 00:21 UTC</option><option value="2024046">Starlink G7-17, 11 March 2024 04:09 UTC</option><option value="2024045">Starlink G6-43, 10 March 2024 23:05 UTC</option><option value="2024044">Starlink G6-41, 04 March 2024 23:56 UTC</option><option value="2024041">Starlink G6-40, 29 February 2024 15:30 UTC</option><option value="2024038">Starlink G6-39, 25 February 2024 22:06 UTC</option><option value="2024036">Starlink G7-15, 23 February 2024 04:11 UTC</option><option value="2024031">Starlink G7-14, 15 February 2024 21:34 UTC</option><option value="2024027">Starlink G7-13, 10 February 2024 00:34 UTC</option><option value="2024020">Starlink G7-12, 29 January 2024 05:57 UTC</option><option value="2024019">Starlink G6-38, 29 January 2024 01:10 UTC</option><option value="2024017">Starlink G7-11, 24 January 2024 00:35 UTC</option><option value="2024012">Starlink G6-37, 15 January 2024 01:52 UTC</option><option value="2024011">Starlink G7-10, 14 January 2024 08:59 UTC</option><option value="2024005">Starlink G6-35, 07 January 2024 22:35 UTC</option><option value="2024002">Starlink G7-9, 03 January 2024 03:44 UTC</option><option value="2023211">Starlink G6-36, 29 December 2023 04:01 UTC</option><option value="2023203">Starlink G6-32, 23 December 2023 05:33 UTC</option><option value="2023200">Starlink G6-34, 19 December 2023 04:00 UTC</option><option value="2023192">Starlink G7-8, 08 December 2023 08:03 UTC</option><option value="2023191">Starlink G6-33, 07 December 2023 05:07 UTC</option><option value="2023186">Starlink G6-31, 03 December 2023 04:00 UTC</option><option value="2023183">Starlink G6-30, 28 November 2023 04:20 UTC</option><option value="2023180">Starlink G6-29, 22 November 2023 07:47 UTC</option><option value="2023178">Starlink G7-7, 20 November 2023 06:33 UTC</option><option value="2023177">Starlink G6-28, 18 November 2023 05:05 UTC</option><option value="2023171">Starlink G6-27, 08 November 2023 05:05 UTC</option><option value="2023170">Starlink G6-26, 04 November 2023 00:37 UTC</option><option value="2023167">Starlink G6-25, 30 October 2023 23:20 UTC</option><option value="2023166">Starlink G7-6, 29 October 2023 09:00 UTC</option><option value="2023162">Starlink G6-24, 22 October 2023 04:17 UTC</option><option value="2023161">Starlink G7-5, 21 October 2023 08:23 UTC</option><option value="2023160">Starlink G6-23, 18 October 2023 00:39 UTC</option><option value="2023158">Starlink G6-22, 13 October 2023 23:01 UTC</option><option value="2023156">Starlink G7-4, 09 October 2023 07:23 UTC</option><option value="2023153">Starlink G6-21, 05 October 2023 05:36 UTC</option><option value="2023151">Starlink G6-19, 30 September 2023 02:00 UTC</option><option value="2023148">Starlink G7-3, 25 September 2023 08:48 UTC</option><option value="2023147">Starlink G6-18, 24 September 2023 03:38 UTC</option><option value="2023146">Starlink G6-17, 20 September 2023 03:38 UTC</option><option value="2023144">Starlink G6-16, 16 September 2023 03:38 UTC</option><option value="2023141">Starlink G7-2, 12 September 2023 06:57 UTC</option><option value="2023138">Starlink G6-14, 09 September 2023 03:12 UTC</option><option value="2023134">Starlink G6-12, 04 September 2023 02:47 UTC</option><option value="2023131">Starlink G6-13, 01 September 2023 02:21 UTC</option><option value="2023129">Starlink G6-11, 27 August 2023 01:05 UTC</option><option value="2023124">Starlink G7-1, 22 August 2023 09:37 UTC</option><option value="2023122">Starlink G6-10, 17 August 2023 03:56 UTC</option><option value="2023119">Starlink G6-9, 11 August 2023 05:17 UTC</option><option value="2023115">Starlink G6-20, 08 August 2023 03:57 UTC</option><option value="2023113">Starlink G6-8, 07 August 2023 02:41 UTC</option><option value="2023107">Starlink G6-7, 28 July 2023 04:01 UTC</option><option value="2023105">Starlink G6-6, 24 July 2023 00:50 UTC</option><option value="2023102">Starlink G6-15, 20 July 2023 04:09 UTC</option><option value="2023099">Starlink G5-15, 16 July 2023 03:50 UTC</option><option value="2023096">Starlink G6-5, 10 July 2023 03:58 UTC</option><option value="2023094">Starlink G5-13, 07 July 2023 19:30 UTC</option><option value="2023090">Starlink G5-12, 23 June 2023 15:35 UTC</option><option value="2023088">Starlink G5-7, 22 June 2023 07:19 UTC</option><option value="2023083">Starlink G5-11, 12 June 2023 07:10 UTC</option><option value="2023079">Starlink G6-4, 04 June 2023 12:20 UTC</option><option value="2023078">Starlink G2-10, 31 May 2023 06:02 UTC</option><option value="2023067">Starlink G6-3, 19 May 2023 06:19 UTC</option><option value="2023065">Starlink G5-9, 14 May 2023 05:03 UTC</option><option value="2023064">Starlink G2-9, 10 May 2023 20:09 UTC</option><option value="2023061">Starlink G5-6, 04 May 2023 07:31 UTC</option><option value="2023058">Starlink G3-5, 27 April 2023 13:40 UTC</option><option value="2023056">Starlink G6-2, 19 April 2023 14:31 UTC</option><option value="2023046">Starlink G5-10, 29 March 2023 20:11 UTC</option><option value="2023042">Starlink G5-5, 24 March 2023 15:43 UTC</option><option value="2023037">Starlink G2-8, 17 March 2023 19:26 UTC</option><option value="2023028">Starlink G2-7, 03 March 2023 18:38 UTC</option><option value="2023026">Starlink G6-1, 27 February 2023 23:13 UTC</option><option value="2023021">Starlink G2-5, 17 February 2023 19:12 UTC</option><option value="2023020">Starlink G5-4, 12 February 2023 05:10 UTC</option><option value="2023015">Starlink G5-3, 02 February 2023 07:58 UTC</option><option value="2023014">Starlink G2-6, 31 January 2023 16:15 UTC</option><option value="2023013">Starlink G5-2, 26 January 2023 09:32 UTC</option><option value="2023010">Starlink G2-4, 19 January 2023 15:43 UTC</option><option value="2022177">Starlink G5-1, 28 December 2022 09:34 UTC</option><option value="2022175">Starlink G4-37, 17 December 2022 21:32 UTC</option><option value="2022141">Starlink G4-31, 28 October 2022 01:14 UTC</option><option value="2022136">Starlink G4-36, 20 October 2022 14:50 UTC</option><option value="2022125">Starlink G4-29, 05 October 2022 23:10 UTC</option><option value="2022119">Starlink G4-35, 24 September 2022 23:32 UTC</option><option value="2022114">Starlink G4-34, 19 September 2022 00:18 UTC</option><option value="2022111">Starlink G4-2, 11 September 2022 01:20 UTC</option><option value="2022107">Starlink G4-20, 05 September 2022 02:09 UTC</option><option value="2022105">Starlink G3-4, 31 August 2022 05:40 UTC</option><option value="2022104">Starlink G4-23, 28 August 2022 03:41 UTC</option><option value="2022101">Starlink G4-27, 19 August 2022 19:21 UTC</option><option value="2022099">Starlink G3-3, 12 August 2022 21:40 UTC</option><option value="2022097">Starlink G4-26, 10 August 2022 02:14 UTC</option><option value="2022086">Starlink G4-25, 24 July 2022 13:39 UTC</option><option value="2022084">Starlink G3-2, 22 July 2022 17:39 UTC</option><option value="2022083">Starlink G4-22, 17 July 2022 14:20 UTC</option><option value="2022077">Starlink G3-1, 11 July 2022 01:39 UTC</option><option value="2022076">Starlink G4-21, 07 July 2022 13:11 UTC</option><option value="2022062">Starlink G4-19, 17 June 2022 16:09 UTC</option><option value="2022053">Starlink G4-18, 18 May 2022 10:59 UTC</option><option value="2022052">Starlink G4-15, 14 May 2022 20:40 UTC</option><option value="2022051">Starlink G4-13, 13 May 2022 22:07 UTC</option><option value="2022049">Starlink G4-17, 06 May 2022 09:42 UTC</option><option value="2022045">Starlink G4-16, 29 April 2022 21:33 UTC</option><option value="2022041">Starlink G4-14, 21 April 2022 17:51 UTC</option><option value="2022029">Starlink G4-12, 19 March 2022 04:42 UTC</option><option value="2022025">Starlink G4-10, 09 March 2022 13:45 UTC</option><option value="2022022">Starlink G4-9, 03 March 2022 14:25 UTC</option><option value="2022017">Starlink G4-11, 25 February 2022 17:12 UTC</option><option value="2022016">Starlink G4-8, 21 February 2022 14:44 UTC</option><option value="2022010">Starlink G4-7, 03 February 2022 18:13 UTC</option><option value="2022005">Starlink G4-6, 19 January 2022 02:02 UTC</option><option value="2022001">Starlink G4-5, 06 January 2022 21:49 UTC</option><option value="2021125">Starlink G4-4, 18 December 2021 12:42 UTC</option><option value="2021115">Starlink G4-3, 02 December 2021 23:12 UTC</option><option value="2021104">Starlink G4-1, 13 November 2021 12:19 UTC</option><option value="2021082">Starlink v1.5 L1, 14 September 2021 03:55 UTC</option><option value="2021044">Starlink L28, 26 May 2021 18:59 UTC</option><option value="2021041">Starlink L26, 15 May 2021 22:56 UTC</option><option value="2021040">Starlink L27, 09 May 2021 06:42 UTC</option><option value="2021038">Starlink L25, 04 May 2021 19:01 UTC</option><option value="2021036">Starlink L24, 29 April 2021 03:44 UTC</option><option value="2021027">Starlink L23, 07 April 2021 16:34 UTC</option><option value="2021024">Starlink L22, 24 March 2021 08:28 UTC</option><option value="2021021">Starlink L21, 14 March 2021 10:01 UTC</option><option value="2021018">Starlink L20, 11 March 2021 08:13 UTC</option><option value="2021017">Starlink L17, 04 March 2021 08:24 UTC</option><option value="2021012">Starlink L19, 16 February 2021 03:59 UTC</option><option value="2021009">Starlink L18, 04 February 2021 06:19 UTC</option><option value="2021006">Starlink Tr-1, 24 January 2021 15:00 UTC</option><option value="2021005">Starlink L16, 20 January 2021 13:02 UTC</option><option value="2020088">Starlink L15, 25 November 2020 02:13 UTC</option><option value="2020074">Starlink L14, 24 October 2020 15:31 UTC</option><option value="2020073">Starlink L13, 18 October 2020 12:26 UTC</option><option value="2020070">Starlink L12, 06 October 2020 11:30 UTC</option><option value="2020062">Starlink L11, 03 September 2020 12:46 UTC</option><option value="2020057">Starlink L10, 18 August 2020 14:31 UTC</option><option value="2020055">Starlink L9, 07 August 2020 05:12 UTC</option><option value="2020038">Starlink L8, 13 June 2020 09:21 UTC</option><option value="2020035">Starlink L7, 04 June 2020 01:25 UTC</option><option value="2020025">Starlink L6, 22 April 2020 19:30 UTC</option><option value="2020019">Starlink L5, 18 March 2020 12:16 UTC</option><option value="2020012">Starlink L4, 17 February 2020 15:06 UTC</option><option value="2020006">Starlink L3, 29 January 2020 14:07 UTC</option><option value="2020001">Starlink L2, 07 January 2020 02:19 UTC</option><option value="2019074">Starlink L1, 11 November 2019 14:56 UTC</option><option value="2019029">Starlink 0, 24 May 2019 02:30 UTC</option>
+    </select>
+    &nbsp;&nbsp;&nbsp;&nbsp;Time controls
+    <button onclick="setRealTimeMode()" id="btnRT" type="button" title="use current time">&gt;|&lt;</button>
+    <button onclick="pause()" id="btnPause" type="button" title="pause">||</button>
+    <button onclick="setAnimationSpeed(20)" id="btnFast1" type="button" title="fast forward 1">&gt;</button>
+    <button onclick="setAnimationSpeed(50)" id="btnFast2" type="button" title="fast forward 2">&gt;&gt;</button>
+    <button onclick="setAnimationSpeed(150)" id="btnFast3" type="button" title="fast forward 3">&gt;&gt;&gt;</button>
+    &nbsp;&nbsp;&nbsp;&nbsp;Time: <span id="time"></span>
+
+    <div style="width: 850px; height: 850px; padding: 0; margin: 0; position: relative;" id="mydiv">
+        <div id="info" style="position: absolute; top: 0px; left: 5px; width: 300px; color: yellow; font-family: Arial; font-size: small">
+            Selected Satellite: <span id="satid"></span>
+            <br />
+            COSPAR ID: <span id="cospar"></span>
+            <br />
+            Orbit: <span id="orbit"></span>
+            <br />
+            No. of Satellites: <span id="loadedSats"></span>
+        </div>
+    </div>
+
+				&nbsp;
+				<p />
+				<table style="border-top: 1px solid black;">
+					<tr>
+						<td valign="top" style="width: 100px">
+							<a href="https://twitter.com/heavensabovecom?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-screen-name="false" data-show-count="false">Follow @heavensabovecom</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+							<!--<a id="ctl00_linkDonate" title="Make a donation to help with the running costs of Heavens-Above" href="Donate2.aspx"><img title="Make a donation to help with the running costs of Heavens-Above" src="//heavens-above.com/images/btn_donate_SM.gif" alt="" style="border-width:0px;" /></a>-->
+						</td>
+						<td valign="top">
+							<div class="footer">
+								Developed and maintained by <a href="mailto:Chris.Peat@heavens-above.com">Chris Peat</a>, <a href="https://heavens-above.de">Heavens-Above GmbH</a>. Please read the <a href="faq.aspx">FAQ</a> before sending e-mail. <a href="Imprint.aspx">Imprint</a>.
+								</div>
+						</td>
+						<td>
+							<a href="http://www.dlr.de/rb/en/" target="_blank">
+								<img src="//heavens-above.com/images/dlrhost.gif" align="left" border="0" alt="DLR" /></a>
+						</td>
+					</tr>
+				</table>
+			</td>
+			<td rowspan="1" valign="top">
+				<p />
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5668297076217155" crossorigin="anonymous"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-5668297076217155" data-ad-slot="7480853211"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+					<p />
+					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display: inline-block; width: 336px; height: 280px" data-ad-client="ca-pub-5668297076217155" data-ad-slot="7480853211"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+			</td>
+		</tr>
+	</table>
+	</form>
+    <script src="//tags.onscroll.com/608ff96c-526d-43c0-92d3-5faa546bc80e/tag.min.js" async defer></script>
+</body>
+</html>

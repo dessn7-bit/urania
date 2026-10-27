@@ -395,13 +395,14 @@
       const basM = `${yon(b)} yönünde ${U.derece(b.alt)} yükseklikte ` + ({ ufuk: 'belirir', golge: 'Dünya\'nın gölgesinden çıkıp belirir', karanlik: 'gökyüzü yeterince kararınca seçilir' }[g.basNeden] || 'belirir');
       const sonM = `${yon(s)} yönünde ${U.derece(s.alt)} ` + ({ ufuk: 'yüksekliğin altına alçalır', golge: 'yükseklikte Dünya\'nın gölgesine girip kaybolur', aydinlik: 'yükseklikte gökyüzü aydınlandığı için seçilmez olur' }[g.sonNeden] || 'yükseklikte kaybolur');
       const metin = `${aralik(b.t, s.t)} · ${basM}, en çok ${U.derece(t.alt)} (${yon(t)}), ${sonM}`;
-      const diziNot = u.dizi ? `<br><span class="kucuk">Yeni fırlatılmış ${u.dizi.adet} uydu art arda dizili noktalar hâlinde geçer; dizinin başı ile sonu arasında birkaç dakika olabilir${u.dizi.aralikDk >= 2 ? ' (bu dizide yaklaşık ' + u.dizi.aralikDk + ' dk)' : ''}. Saatler dizinin ortası içindir ve kabadır; uydular yükseldikçe sönükleşir.</span>` : '';
-      return `<li><span class="ad">${U.kacis(u.kisa)} · ${U.kacis(U.gunHafta(b.t))}</span><span class="sag">en çok ${U.derece(t.alt)}</span><span class="alt">${metin}${diziNot}<br>${takvimBag({ baslik: u.kisa + ' geçişi', bas: new Date(b.t.getTime() - 60e3), son: new Date(s.t.getTime() + 60e3), aciklama: u.ad + ': ' + metin + '. (Urania, ' + k.ad + ')' })}</span></li>`;
+      const diziNot = u.dizi ? `<br><span class="kucuk">Yeni fırlatılmış ${u.dizi.adet} uydu art arda dizili noktalar hâlinde geçer; dizinin başı ile sonu arasında birkaç dakika olabilir${u.dizi.aralikDk >= 2 ? ' (bu dizide yaklaşık ' + u.dizi.aralikDk + ' dk)' : ''}. Saatler dizinin ortası içindir ve kabadır. Alçak yörüngedeyken ortalama 2,7 kadir civarındadır; yükseldikçe 6,5 kadire sönükleşir (Mallama ve ark. 2024) ve dizi genellikle ilk birkaç günde dağılır.</span>` : '';
+      const parlak = g.enParlak ? `En parlak ${U.kadir(g.enParlak.kadir)} kadir. ` : '';
+      return `<li><span class="ad">${U.kacis(u.kisa)} · ${U.kacis(U.gunHafta(b.t))}</span><span class="sag">en çok ${U.derece(t.alt)}</span><span class="alt">${parlak}${metin}${diziNot}<br>${takvimBag({ baslik: u.kisa + ' geçişi', bas: new Date(b.t.getTime() - 60e3), son: new Date(s.t.getTime() + 60e3), aciklama: u.ad + ': ' + metin + '. (Urania, ' + k.ad + ')' })}</span></li>`;
     }).join('') : '<li><span class="bos">Önümüzdeki 5 günde buradan görünür bir geçiş yok.</span></li>';
     const yaslar = uydular.filter(u => !u.dizi).map(u => (Date.now() - Uydu.donem(u)) / 86400e3);
     const yas = yaslar.length ? Math.max(...yaslar) : 0;
     const eski = uydular.some(u => u.eski);
-    kay.innerHTML = `Yörünge öğeleri: <a href="https://celestrak.org/" target="_blank" rel="noopener">CelesTrak</a>, ${U.sayi(yas, 1)} günlük${yas > 7 ? ' — eski; saatler birkaç dakika kayabilir' : ''}${eski ? ' (çevrimdışı ya da CelesTrak yanıt vermedi; önbellekten)' : ''}. Hesap: SGP4 (satellite.js). Parlaklık karşılaştırması: Heavens-Above.`;
+    kay.innerHTML = `Yörünge öğeleri: <a href="https://celestrak.org/" target="_blank" rel="noopener">CelesTrak</a>, ${U.sayi(yas, 1)} günlük${yas > 7 ? ' — eski; saatler birkaç dakika kayabilir' : ''}${eski ? ' (çevrimdışı ya da CelesTrak yanıt vermedi; önbellekten)' : ''}. Hesap: SGP4 (satellite.js). Parlaklık tahmini Heavens-Above'ın yöntemiyle uyumlu (onların değerlerinden en çok 0,1 kadir farklı); uydunun duruşu bilinmediği için kabadır. Küçük sayı daha parlak; karşılaştırma için Sirius −1,4.`;
   }
 
   /* ---- Algol ---- */
@@ -412,7 +413,7 @@
       const metin = `En sönük anı ${U.saat(m.zaman)} (±${ef.hata_dk} dk); Algol o sırada ${U.derece(m.alt)} yükseklikte, ${G.YON_UZUN[G.yon(m.az)]}. Bundan önceki yaklaşık 5 saatte yavaş yavaş sönükleşir, sonraki 5 saatte eski parlaklığına döner; en iyisi en sönük andan 1–2 saat önce başlayıp yanındaki yıldızlarla karşılaştırarak izlemek.`;
       return `<li><span class="ad">${U.kacis(U.gunHafta(m.zaman))}</span><span class="sag">en sönük ${U.saat(m.zaman)}</span><span class="alt">${metin}<br>${takvimBag({ baslik: 'Algol en sönük', bas: new Date(m.zaman.getTime() - 90 * 60e3), son: new Date(m.zaman.getTime() + 60 * 60e3), aciklama: metin + ' (Urania, ' + U.konum().ad + ')' })} ${defterBag('yildiz:Algol')}</span></li>`;
     }).join('') : '<li><span class="bos">Önümüzdeki 30 günde en sönük anı buradan karanlıkta görülen bir minimum yok.</span></li>') +
-      `<li class="kaynak-satir"><span class="kaynak">Efemeris: <a href="${U.guvenliUrl(ef.kaynak_url)}" target="_blank" rel="noopener">AAVSO VSX</a> (HJD ${ef.donem_hjd} + ${U.sayi(ef.periyot, 6)}·E), Dünya–Güneş ışık süresi düzeltmesiyle. Karşılaştırma yıldızlarının parlaklığı Hipparcos.</span></li>`;
+      `<li class="kaynak-satir"><span class="kaynak">Efemeris: <a href="${U.guvenliUrl(ef.kaynak_url)}" target="_blank" rel="noopener">AAVSO VSX</a> (HJD ${ef.donem_hjd} + ${U.sayi(ef.periyot, 6)}·E), Dünya–Güneş ışık süresi düzeltmesiyle; 2020–2025'te gözlenmiş CCD minimumlarıyla 6 dakika içinde uyumlu (JAAVSO). Karşılaştırma yıldızlarının parlaklığı Hipparcos.</span></li>`;
   }
 
   /* ---- Ay örtmeleri: konum değişince arka planda, 10 günlük dilimlerle ---- */
@@ -424,14 +425,28 @@
     if (h.ad && (UNLU.has(h.ad) || h.u)) return h.ad;
     return (h.d ? h.d + ' ' + h.c : h.ad) + (h.ad ? ' (' + h.ad + ')' : '') + (td && td !== h.c ? ', ' + td : '');
   }
-  /* Dürbünle izlenebilir mi: Ay'ın parıltısı sönük yıldızı boğar, aydınlık kenarda çok daha fazla.
-     Eşikler 7×50 için temkinli bir tasarım kararıdır (ölçülmüş bir sınır değil). */
+  /* Dürbünle izlenebilir mi: Ay'ın parıltısı sönük yıldızı boğar.
+     Karanlık kenar: Occult'un (D. Herald; Schaefer, Bulder ve Bourgeois 1992 görünürlük modeli) 5 cm
+     açıklık sütunu — ince hilalde (%8) 6,6, dolunaya yakın (%99) 4,4 kadir; aradaki değerler doğrusal
+     ara değer (bizim çıkarımımız). Boynuza 2,7°'den yakınsa 2,8, 4,7°'den yakınsa 4,5 kadir (aynı kaynak).
+     Aydınlık kenar: IOTA Gözlemci El Kitabı'ndaki kaba sınır ≈3,5 kadir.
+     Model en uygun büyütmeyi (≈10×/cm) varsayar; 7× dürbünde sınırdaki olaylar daha zor olabilir.
+     Kaynaklar: arastirma/ortme_esik_tahmin.md */
+  function sinirKadir(o, b) {
+    if (b.aydinlik) return 3.5;
+    const f = Math.min(1, Math.max(0, (o.ayOran - 0.08) / 0.91));
+    let s = 6.6 + (4.4 - 6.6) * f;
+    if (b.ucAcisi < 2.7) s = Math.min(s, 2.8);
+    else if (b.ucAcisi < 4.7) s = Math.min(s, 4.5);
+    return s;
+  }
   function kenarIyi(o, b) {
     if (!b || !b.gorunur) return false;
     if (o.hedef.gezegen) return true;
-    const v = o.hedef.v, parlakAy = o.ayOran > 0.5;
-    return b.aydinlik ? v <= (parlakAy ? 2.0 : 3.5) : v <= (parlakAy ? 4.5 : 5.5);
+    return o.hedef.v <= sinirKadir(o, b);
   }
+  /* Occult'taki gibi: yıldız sınırdan 1 kadirden az parlaksa "sınırda" */
+  function sinirda(o, b) { return !o.hedef.gezegen && o.hedef.v > sinirKadir(o, b) - 1; }
   function ortmeGorunurMu(o) { return kenarIyi(o, o.girisBilgi) || kenarIyi(o, o.cikisBilgi); }
   /* Arama Web Worker'da (ortme_isci.js); Worker yoksa ana iş parçacığında günlük dilimlerle.
      Hep "şimdi"den 90 gün: seçili geceden bağımsız, konum ve UTC günü değişince yeniden. */
@@ -501,7 +516,7 @@
         const b = o[k + 'Bilgi']; if (!o[k] || !b) return;
         const ken = b.aydinlik ? 'aydınlık' : 'karanlık';
         const fiil = k === 'giris' ? 'kaybolur' : 'belirir';
-        p.push(kenarIyi(o, b) ? `${U.saat(o[k])} Ay'ın ${ken} kenarında ${fiil}` + (kisa ? '' : ` (Ay ${U.derece(b.alt)}, ${G.YON_UZUN[G.yon(b.az)]})`) : (b.gorunur ? `${k === 'giris' ? 'kayboluşu' : 'belirişi'} ${U.saat(o[k])}, ${ken} kenarda: Ay'ın parıltısında dürbünle seçilmez` : `${k === 'giris' ? 'kayboluşu' : 'belirişi'} buradan görülmez`));
+        p.push(kenarIyi(o, b) ? `${U.saat(o[k])} Ay'ın ${ken} kenarında ${fiil}` + (sinirda(o, b) ? ' (dürbünle sınırda)' : '') + (kisa ? '' : ` (Ay ${U.derece(b.alt)}, ${G.YON_UZUN[G.yon(b.az)]})`) : (b.gorunur ? `${k === 'giris' ? 'kayboluşu' : 'belirişi'} ${U.saat(o[k])}, ${ken} kenarda: Ay'ın parıltısında dürbünle seçilmez` : `${k === 'giris' ? 'kayboluşu' : 'belirişi'} buradan görülmez`));
       });
       return p.join('; ');
     };
@@ -518,7 +533,7 @@
       return `<li><span class="ad">${U.kacis(o.ad)} · ${U.kacis(U.gunHafta(t))}</span><span class="sag">${U.saat(t)}${o.cikis && o.giris ? '–' + U.saat(o.cikis) : ''}</span><span class="alt">${metin}<br>${takvimBag({ baslik: o.ad + ' örtmesi', bas: new Date(t.getTime() - 15 * 60e3), son: new Date((o.cikis || t).getTime() + 10 * 60e3), aciklama: o.ad + ': ' + metin + ' (Urania, ' + U.konum().ad + ')' })}</span></li>`;
     }).join('');
     ul.innerHTML = (html || '<li><span class="bos">Önümüzdeki 90 günde buradan görülebilecek bir örtme yok.</span></li>') +
-      '<li class="kaynak-satir"><span class="kaynak">Saatler ±1 dk: Ay\'ın kenarındaki dağlar ve vadiler anı birkaç saniye kaydırır. Hesap cihazında; yıldız konumları Hipparcos, Ay Astronomy Engine. Skyfield (JPL DE421) ile karşılaştırıldı: fark çoğunlukla 10 sn\'nin altında.</span></li>';
+      '<li class="kaynak-satir"><span class="kaynak">Saatler dakikaya yuvarlı: Ay\'ın kenarındaki dağlar ve vadiler anı birkaç saniye kaydırır. Hesap cihazında; yıldızlar Hipparcos, Ay Astronomy Engine, ΔT IERS Bulletin A. Karşılaştırma: yıldızlarda Skyfield (JPL DE421) ile çoğunlukla 4 sn içinde; gezegenlerde Occult tahminleriyle (IOTA) 6 sn, Venüs Dünya\'ya yakınken 25 sn. Görünürlük sınırı: Occult\'un 5 cm açıklık tablosu.</span></li>';
   }
 
   /* ---- Bu gecenin planı ---- */
@@ -552,7 +567,7 @@
         ek = defterBag(m.anahtar);
       } else if (m.tur === 'uydu') {
         const g = m.gecis;
-        ne = `${aralik(g.gBas.t, g.gBit.t)}: ${G.YON_UZUN[G.yon(g.gBas.az)]} yönünde belirir, en çok ${U.derece(g.gTepe.alt)} yükselir.`;
+        ne = `${aralik(g.gBas.t, g.gBit.t)}: ${G.YON_UZUN[G.yon(g.gBas.az)]} yönünde belirir, en çok ${U.derece(g.gTepe.alt)} yükselir` + (g.enParlak ? `, en parlak ${U.kadir(g.enParlak.kadir)} kadir.` : '.');
       } else if (m.tur === 'algol') {
         ne = `En sönük anı (±${durum.veri.algol.hata_dk} dk). Almach ve δ Persei ile karşılaştır.`;
         ek = defterBag(m.anahtar);

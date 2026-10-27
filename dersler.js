@@ -93,7 +93,7 @@
     oynat.addEventListener('click', async () => {
       if (Ses.durum().calisiyor) { Ses.durdur(); return; }
       await Ses.sesleriBekle();
-      if (!Ses.turkceSes()) { d.dataset.uyari = '1'; d.textContent = 'Bu cihazda Türkçe ses bulunamadı; telefonun metin okuma ayarlarından Türkçe ses verisi yüklenebilir. Şimdilik varsayılan sesle okunuyor.'; }
+      if (!Ses.turkceSes()) { d.dataset.uyari = '1'; d.textContent = 'Telefonun varsayılan metin okuma motoru Türkçe ses bildirmiyor; Chrome yalnız bu motorun seslerini kullanır. Ayarlar\'daki "Metin okuma" (TTS) bölümünden Türkçe destekleyen bir motor (ör. Google\'ın konuşma motoru) seçip Türkçe ses verisini yükleyebilirsin. Şimdilik varsayılan sesle okunuyor.'; }
       Ses.baslat();
     });
     el.querySelector('#dsHiz').addEventListener('click', e => {

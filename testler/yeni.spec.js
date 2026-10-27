@@ -60,13 +60,13 @@ test('Algol: 7 Kasım 06:34 minimumu listede, VSX kaynağıyla', async ({ page }
   await expect(ul).toContainText('AAVSO VSX');
 });
 
-test('Ay örtmeleri: 22 Aralık Ülker örtmesi (Taygeta 02:21, karanlık kenar); sönük Asterope "seçilmez" notuyla, 28 Ekim hiç yok', async ({ page }) => {
+test('Ay örtmeleri: 22 Aralık Ülker örtmesi (Taygeta 02:22, karanlık kenar); sönük Asterope "seçilmez" notuyla, 28 Ekim hiç yok', async ({ page }) => {
   await page.route('**/api.open-meteo.com/**', r => r.fulfill({ json: hava(0) }));
   await page.goto('/index.html#gok');
   const ul = page.locator('#gkOrtme');
   const ulker = ul.locator('li', { hasText: 'Ülker örtmesi · 22 Aralık' });
   await expect(ulker).toBeVisible({ timeout: 15000 });
-  await expect(ulker).toContainText('Taygeta (4,3): 02:21 Ay\'ın karanlık kenarında kaybolur');
+  await expect(ulker).toContainText('Taygeta (4,3): 02:22 Ay\'ın karanlık kenarında kaybolur (dürbünle sınırda)');
   /* Asterope (5,8) aynı gece karanlık kenarda ama %93 Ay'ın parıltısında 7×50 ile seçilmez */
   await expect(ulker).toContainText('Asterope (5,8): kayboluşu 02:30, karanlık kenarda: Ay\'ın parıltısında dürbünle seçilmez');
   /* 28 Ekim: Asterope 5,8 kadir, Ay %95 — dürbünle seçilmez, listede yok */
@@ -186,7 +186,7 @@ test('Sesli ders: cümle cümle okur, okunan paragraf vurgulanır, duraklatılı
   await page.route('**/api.open-meteo.com/**', r => r.fulfill({ json: hava(0) }));
   await page.goto('/index.html#ders/d10');
   await page.locator('#dsOynat').click();
-  await expect(page.locator('#dsSesDurum')).toContainText('Türkçe ses bulunamadı');
+  await expect(page.locator('#dsSesDurum')).toContainText('Türkçe ses bildirmiyor');
   await expect(page.locator('#dsOynat')).toHaveText('Duraklat');
   await expect(page.locator('.okunuyor')).toHaveCount(1);
   await page.clock.runFor(200);

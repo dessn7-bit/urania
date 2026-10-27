@@ -20,7 +20,8 @@ Her sabit ve tablo değeri bir kaynaktan gelir; ham araştırma dosyaları (alı
 - Gök hesapları: [Astronomy Engine](https://github.com/cosinekitty/astronomy) (MIT), testlerde ABD Deniz Rasathanesi (USNO) değerleriyle karşılaştırılır.
 - Yıldız ve takımyıldız verisi: [d3-celestial](https://github.com/ofrohn/d3-celestial) (BSD-3).
 - Meteor yağmurları: IMO Meteor Shower Calendar.
-- Örtme yıldızları: Hipparcos ana kataloğu (ESA 1997, CDS I/239); Algol: AAVSO VSX.
+- Örtme yıldızları: Hipparcos ana kataloğu (ESA 1997, CDS I/239); görünürlük sınırı Occult'un 5 cm tablosu (Schaefer, Bulder ve Bourgeois 1992 modeli); ΔT: IERS Bulletin A. Algol: AAVSO VSX (JAAVSO CCD minimumlarıyla doğrulandı).
+- Uydu parlaklığı: Heavens-Above'ın içsel parlaklıkları; tahmin Heavens-Above değerleriyle 0,1 kadir içinde.
 - Uydu yörüngeleri: [CelesTrak](https://celestrak.org/) (2 saatte bir güncellenir; uygulama 12 saat önbellekler, hata alınca 2 saat bekler); SGP4: [satellite.js](https://github.com/shashwatak/satellite-js) 6.0.2 (MIT).
 - Sabitler: NIST CODATA 2022, IAU 2012 B2 / 2015 B2–B3; gezegen verisi: NASA Planetary Fact Sheets.
 - Yazı tipleri: Spectral ve IBM Plex Sans (SIL OFL).

@@ -1,0 +1,311 @@
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><title>
+	ISS - Visible Passes
+</title><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="description" content="Satellite predictions and other astronomical data customised for your location." /><link href="css/ha.css" rel="stylesheet" type="text/css" /><link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon" /><link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon" />
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="/scripts/standard.min.js"></script>
+	<script type="text/javascript">
+		function updateLocalTime(utc) {
+			var localdiff = parseInt($('#utcOffset').val());
+			var local_now = new Date(utc.getTime() + localdiff);
+			$('#spanTime').text(formatTime(local_now));
+		}
+
+		$(function () {
+			onClockTick = updateLocalTime;
+			startClock();
+		});
+	</script>
+	
+	</head>
+<body>
+	<form name="aspnetForm" method="post" action="/PassSummary.aspx?satid=25544&amp;lat=41.0046&amp;lng=29.0762&amp;loc=Fetih&amp;alt=0&amp;tz=UCTm3" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="lFfdHC+jM/RERrauS0JFrn6PBAqxHlWKhg8tok2ljyhB3D10ZXTU5ZzcXsynGl3ig2J4FV6KXs8NipAxNtWg7NPISKBbKxdx9O9zj5304PKV86dUd4R+fGNbfM3ktNk3c/WXDMwuV4CVmrSvCKCdrUVKiAY6ign07cG9GQgo+DOSFAv6umKJPlg48gVj6jgIA5Pb/oqf7k+u0MjGYrBC1WUgqA3EMYTpJzU8OhtgYoL8y6Rb+gEbxENvXUD9VREkcWjssHwWCtr2BEX7QUPqyQiYeueWIGDvFX8kO/iy3yGdGaDFrGpmM915DTEkSgcuEd9ng84hlb85SomQWRB4jsJ1fhTxRkipDpp7tqTKuheFpkPZhsL+YK/oNVO1VFAnStpvruEHsPgO8+S3c79toVbXEXJH//ksxhQkFUIccqH0S6krsOMf6l0C+0dK1Zk1/6v6geLjHdho+BBNdMDzC2lgOtbZizJ5UzgHjVfKXi7PDObotuBh0a/w0RaIiVeZkCl9s59Rkr9/jAdFVgbgLiC7k8hHj7yy3TOiNt1QwzJT98jNptZfR68RTe6qIOdVUkLiqCwQbB9Ylcgk8eY5+fQLvgxsaJgaiuuOGxS8ddCyT5H94n5Kpg34nPwjkc3T232yAnppS1Zw75lyXWRlNTxOQi8ILNrAYXFbWabQSFItDGRFtUOWSIPqCfrrqDvPP4dgCOf5KvcLqKGI14TA/HNYE73IeFiXpfYpondvcVDgzz8w8FoIaiHvaar94tUjx04SZwHSRY0CyGEfGjsXS+DBxcSRqT/hj72K/g7k6PzzVJsLa5F7Nd6fkJ83S9RNILG1SKXLg3bLFPSNBEgAmZqcuFAwvaeuDKsh7kcE3JEp7mPHqJ2F3UN5fcDGeHpgCMTflus3eQL/5Og/JNqLbE9wY0ThT7L+UcXeuDD4cd0NbFqFbwFyugdKIdL73XEhMnbgRF9YykyaeBkRx8Fg2r7l9aiOT8jVK5uaMoz038rHPiy7HawbwabtA8rk0LdggCYPpqAxB48+5KyFmhTCe2vGEJmI0llGKDdnU7Nk3JEu6VRY23u8/b6JMUquszFmSFuSXWweh052L7xBkBspZjzZrXQ67IapKLkXKP7TTr1jsubzOAztzfvhLT6Gmki//rvf5DjREsnv5GYW9G6D2bqP4tlq9dbI16F6RSb1JQlxwSyX99W1MAWjF/XMwsBsQZWVmwYlL8IhtDcD5c+AoQpADgqmniH3g0gB6IuwL34U1Rwrcrtz0uBhNm2IcORRZj4Nv7tCvJ3YgNqnJe1Nv9MxVepQcWSJX+psH81kw1s8I5+DEAu3SkEV1Rah0P1dQTXOQX6SXjxLK+CoemXLC7zQMhawf+j5CUjVxsyNV+9swtx4lczWazjhNZwobSzeO7ZEcKSKSmsbR6v9ocQ/ljlXF3/IqWAsqwC9ynM/1iJD3v0Dj7D344BHQZr3d45O3IqrLQ059kpy6MWZh59aUxNw2IdIoOmq/ovh9M3Iu10WvAg9bXgPw+FAYe+6rAt+swKSIZ4zDD02KHFHXxqjlBntGXKsIKRp3XCykHOLZlLBowBj5KEmnS+0UlJpdK6yN2xcVd+esdawu2ENB8Q1s9BOdt4ElgQUAGvrDaJL0TNM37N8ODSJAXzRoLouI9w5YinwHxC7vyFNLdYpp3ZO8Sbb8QlW003dCzz/R2UBvDog/rdHxOyHbgVYZ9g36mvkFSxKBPNyFJbgLinVUEgz4wWKmvsLfrBCxOnKn1/ecbX+T+ITBBVv4PsDAQi6fdOvNStl2qNhqY0qMtbYE1xYYeWdH5ki6qJ0jVSI4TjSySkFl4OPOC9lCwKcz2J45tEJiodmNeiKflgLCwDGbz56akdVmKAwIZLYkkto8n3MZDd1VSRlU1N64oFHa+WonI876yhPwG9RFX7dbC40lo7tOC17O0ZgqByEOyegmuA5hJvz7I6ZHL8KC2ottgQ43SXRvkLmvqbqHB0HcjEHSSmr27woMaDyYyicWhDnMcdBh85+1mH84BkSy/ORJ1zkysDOwBiRxqNGgEbhIQBQpRvhTirOJneNYwHy2rCJZNR+DH4LDBXcTyyC7gES2PYVc/lL5FHZLIbkk++2yAu+15Vf0IhLktAXtsrITCAbF0sCmAvit1MWhT6ol0fg3aYZ0tZbE7JCelzc24cXq431DZIbJNx+wwN5CxlUPN2Wwd0kKZYe43nOGZ2WONKfOz6W+WYKigLB993lWFBMcgALepPcOgaQ4vQlAyyhb42d/LWPtp8EklgAjrFJ7xkaiqpHXvQMn8c7eoeKM3CE2c1f0yjExHU+2dob2vKWBzBakKkOufQWPt+SnsuIzpQZJJwboJhbKHkshU0L1uqwSIcoyQlNuVw/dIbJtdAFTZ9rJgglPNf0E8TtICXVd8eXHgCRfXZl8uyXTBLXSYq9tJwcBRSy/SN/saGmvhUfAWMRuBFL/7QkGxZjGvcqpMSRMiacSjO5yuvjzyhtmKAelX3ZcXFbJ1+7sMpgyg+gdrfZKAFYFU+UXm/7cYRVA8np7071GLGw3Kjt2orw5eMMVM8kncfLf2pyhnGc0R9g7IYVoBKcRDM6p7bdpCtBoiQqQAPW5y8gJTz2pLSG3Y+C1S3z19gj66YkBtgtkTwWrpp3mVnh7Kxx5uDn33WOaRcaHMX/g8HghtnL5QGk0sb+Oy97TijrTjInrfurDFZY3JW5xu2W6/21TraY9hToLTN5D39HW+yqO3Rh/NWfM5K97KIwgog5ZXn3DhD0WGyX8s+OHHARDD1C3jDGVh8BGel6P9ZQDjmJLGgQGRg3kFoJPNuCaoHOYmZrLOcYE5EAFWRgLuqdhKxGShicw1zQbX84M+CV4aYe2EYH3my3Zva/tSEbHT0y194XLnxT33tlu+l4k/PbM6XEH55Sem/jwkBD144pi+S29213qK3OXXbBrCnsKhyEU64sAZBa9PuUo5XORI0HcdURDsKuzXwE9/CN9frqyX9tvVwiCQKnTTTzOtYIb4/kzQMCGTRK4PllQKe+pxq+uuvenJkNGQnN1z7Fv8xkhvQPkDN33kihuSRE3f45MfpAY5gEKai3IFgqjTPXgn4WJ6WWAmAR6T541lp1GJEQhNtbnbnqiwMHqocXhTfYtoEP6Zh1gJ+3zsX1GzRdDV7YDstBm3tefILkTQ4wPjDETohLYeIKKsDn2lm/PqLfeTcGHZsoBFVR0TE7TD46rCEvzV8t1I4pfOjzZKC0gywcpDQounLwOeRFV+zDjfVTtvSEX9WSNA//Z37VUYeftguENzXxY5MH61opEoL5R+3jrlyHUhYLxXvGdl7jRLP7zYiujlE6yAARUGkzDcSjsVbI5Yv0eKqLAq1vouVOqKu0TVEVosNResFJoPLtJKKMlmCELmcDHI3f7wEItCsKf9AwMhso4ANHOO/+tJZMaBLiYHZibPapBk9CWweV0PyhnMQTULxPqJQxpLFjf++CS0MWav820DLqVDd0EI3jaegB3wH2c804pZnlu9EOFCjTYWBFzmQNvNz/pg+mZvKy5vKwbuEoimxQSVM3P1Uq1zaXPytC9mRHpeOlYsG5OfT4MkO+DltHAnrDIwzamrfs5WyGuv3QaMSbanroKHrzMd0h8wp/q8Woa6q00l/VLOkQWwTnN6/rD5icrZXI/pQIAdCG7WWfSdWrg7w9lyVwAdmsUv/pCANygzrp6Ng3eAlDYeG/+SNPt1PuBnTGQP92EsFsVpi6bh6MhCD/SeE5OvcFtbUJRyXScKsYXK5ouwkBNPX3A3yMKZsNALLbiSJE56IT0QjfumY5TuBEucFMnwZzco/cN8y7hBso+1WU9HI68XLefBvNtswFaPS+Veloq+CbIc3UP0lEYsU5PUJcRESRrB8PaVKa4q27F9739DhAEewsx2anl4hgotrtA+sJ/kAQRBQdBNL1BgL2SGiAAjvCuh5qs6W1ry/wg2qikEeqM1Jj6W5DVa60MWZDy+cZ4PAjcxItRzu5hNs0hcKATaddNzaX66ySeHXquYnVQvYm9P0rJ9rIXtUr8eYbEPWj1Fr40nAK5cv0RKhMdcCLeJZRvygkWxnaYA==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A11B5251" />
+</div>
+	<input type="hidden" name="utcOffset" id="utcOffset" value="10800000" />
+	<table border="0" style="margin-left: auto; margin-right: auto; border-style: none">
+		<tr>
+			<td>
+				<a id="ctl00_hyperlinkLogo" href="./?lat=41.0046&amp;lng=29.0762&amp;loc=Fetih&amp;alt=0&amp;tz=UCTm3&amp;cul=en" style="display:inline-block;border-style:None;"><img src="//heavens-above.com/images/LogoNew.png" alt="" style="border-width:0px;" /></a>
+			</td>
+			<td>
+				
+					<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5668297076217155" crossorigin="anonymous"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-5668297076217155" data-ad-slot="5479771053"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+				
+			</td>
+			<td>
+				<table class="userTable">
+					<tr>
+						<td>
+							User:
+						</td>
+						<td>
+							anonymous&nbsp;&nbsp;&nbsp;<a href="/login.aspx">Login</a>
+						</td>
+					</tr>
+					<tr class="lightrow">
+						<td>
+							Location:
+						</td>
+						<td>
+							<a id="ctl00_linkObservationSite" href="SelectLocation.aspx?lat=41.0046&amp;lng=29.0762&amp;loc=Fetih&amp;alt=0&amp;tz=UCTm3&amp;cul=en">Fetih</a>
+							
+						</td>
+					</tr>
+					<tr class="lightrow">
+						<td colspan="2" align="center">
+							(<a id="ctl00_linkLatLong" href="SelectLocation.aspx?lat=41.0046&amp;lng=29.0762&amp;loc=Fetih&amp;alt=0&amp;tz=UCTm3&amp;cul=en">41.0046°N, 29.0762°E</a>)
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Time:
+						</td>
+						<td>
+							<span id="spanTime">
+								18:33:51</span>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" align="center">
+							(UTC<span id="ctl00_lblTZ">+03:00</span>)
+						</td>
+					</tr>
+					<tr class="lightrow">
+						<td>
+							Language:
+						</td>
+						<td>
+							<select name="ctl00$ddlCulture" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ddlCulture\&#39;,\&#39;\&#39;)&#39;, 0)" id="ctl00_ddlCulture">
+	<option value="ar">العربية</option>
+	<option value="ca">Catal&#224;</option>
+	<option value="cs">Čeština</option>
+	<option value="da">Dansk</option>
+	<option value="de">Deutsch</option>
+	<option value="el">Ελληνικά</option>
+	<option selected="selected" value="en">English</option>
+	<option value="eo">Esperanto</option>
+	<option value="es">Espa&#241;ol</option>
+	<option value="eu">Euskara</option>
+	<option value="fi">Suomi</option>
+	<option value="fr">Fran&#231;ais</option>
+	<option value="gl">Galego</option>
+	<option value="he">עברית</option>
+	<option value="hr">Hrvatski</option>
+	<option value="hu">Magyar</option>
+	<option value="it">Italiano</option>
+	<option value="ja">日本語</option>
+	<option value="lt">Lietuvių</option>
+	<option value="nl">Nederlands</option>
+	<option value="pl">Polski</option>
+	<option value="pt">Portugu&#234;s brasileiro</option>
+	<option value="pt-PT">Portugu&#234;s de Portugal</option>
+	<option value="ro">Rom&#226;nă</option>
+	<option value="ru">Русский</option>
+	<option value="sk">Slovenčina</option>
+	<option value="sl">Slovenščina</option>
+	<option value="sv">Svenska</option>
+	<option value="ta">தமிழ்</option>
+	<option value="th">ไทย</option>
+	<option value="tr">T&#252;rk&#231;e</option>
+	<option value="uk">Українська</option>
+	<option value="zh">简体中文</option>
+	<option value="zh-CHT">繁體中文</option>
+
+</select>
+						</td>
+					</tr>
+					
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<hr />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" valign="top">
+				<table width="100%">
+					<tr>
+						<td align="left">
+							<span id="ctl00_lblTitle" class="pagehead">ISS - Visible Passes</span>
+						</td>
+						<td align="right" class="navbar">
+							
+							<span id="ctl00_lblNavBar"><a href="/?lat=41.0046&lng=29.0762&loc=Fetih&alt=0&tz=UCTm3&cul=en" title="Go to home page">Home</a> | <a href="/satinfo.aspx?satid=25544&lat=41.0046&lng=29.0762&loc=Fetih&alt=0&tz=UCTm3&cul=en" title="Show information about this satellite">Info.</a> | <a href="/orbit.aspx?satid=25544&lat=41.0046&lng=29.0762&loc=Fetih&alt=0&tz=UCTm3&cul=en" title="Show orbit of this satellite">Orbit</a> | <a href="/CloseEncounters.aspx?satid=25544&lat=41.0046&lng=29.0762&loc=Fetih&alt=0&tz=UCTm3&cul=en" title="Show upcoming close encounters with other orbiting objects">Close encounters</a></span>
+						</td>
+					</tr>
+				</table>
+				<p />
+				
+	<input type="hidden" name="ctl00$cph1$hidStartUtc" id="ctl00_cph1_hidStartUtc" value="639287120310993087" />
+	<table>
+		<tr>
+			<td class="userinfo">
+				Search period start:
+			</td>
+			<td class="userinfo">
+				<span id="ctl00_cph1_lblSearchStart">27 October 2026 00:00</span>
+			</td>
+			<td class="userinfo" rowspan="2">
+				<input type="submit" name="ctl00$cph1$btnPrev" value="&lt;" id="ctl00_cph1_btnPrev" title="show previous search period" />
+				<input type="submit" name="ctl00$cph1$btnNext" value=">" id="ctl00_cph1_btnNext" title="show next search period" />
+			</td>
+		</tr>
+		<tr>
+			<td class="userinfo">
+				Search period end:
+			</td>
+			<td class="userinfo">
+				<span id="ctl00_cph1_lblSearchEnd">06 November 2026 00:00</span>
+			</td>
+		</tr>
+		<tr>
+			<td class="userinfo">
+				<a id="ctl00_cph1_hlOrbit" title="Show orbit of this satellite" href="orbit.aspx?satid=25544&amp;lat=41.0046&amp;lng=29.0762&amp;loc=Fetih&amp;alt=0&amp;tz=UCTm3&amp;cul=en">Orbit:</a>
+			</td>
+			<td class="userinfo" colspan="2">
+				<span id="ctl00_cph1_lblOrbit">415 x 424 km, 51.6° (Epoch: 27 October)</span>
+			</td>
+		</tr>
+	</table>
+	<p>
+		Passes to include:
+		<input id="ctl00_cph1_radioVisible" type="radio" name="ctl00$cph1$visible" value="radioVisible" checked="checked" /><label for="ctl00_cph1_radioVisible">visible only</label>
+		<input id="ctl00_cph1_radioAll" type="radio" name="ctl00$cph1$visible" value="radioAll" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$cph1$radioAll\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ctl00_cph1_radioAll">all</label>
+	</p>
+	<p><span id="ctl00_cph1_lblMessage" class="userinfo">Click on the date to get a star chart and other pass details.</span></p>
+	<p />
+	
+	<table class="standardTable">
+	<thead>
+		<tr>
+			<td align="center" rowspan="2" valign="middle">
+				Date
+			</td>
+			<td align="center">
+				Brightness
+			</td>
+			<td align="center" valign="top" colspan="3">
+				Start
+			</td>
+			<td align="center" colspan="3">
+				Highest point
+			</td>
+			<td align="center" colspan="3">
+				End
+			</td>
+			<td align="center" rowspan="2" valign="middle">
+				Pass type
+			</td>
+		</tr>
+		<tr>
+			<td align="center">
+				(mag)
+			</td>
+			<td align="center">
+				Time
+			</td>
+			<td>
+				Alt.
+			</td>
+			<td>
+				Az.
+			</td>
+			<td align="center">
+				Time
+			</td>
+			<td>
+				Alt.
+			</td>
+			<td>
+				Az.
+			</td>
+			<td align="center">
+				Time
+			</td>
+			<td>
+				Alt.
+			</td>
+			<td>
+				Az.
+			</td>
+		</tr>
+		</thead>
+		<tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=41.0046&lng=29.0762&loc=Fetih&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61340.1303325747&type=V'"><td><a href="passdetails.aspx?lat=41.0046&lng=29.0762&loc=Fetih&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61340.1303325747&type=V" title="show pass details">27 Oct</a></td><td align="center">-1.4</td><td>06:06:05</td><td align="center">13°</td><td>NNW</td><td>06:07:40</td><td align="center">16°</td><td>NNE</td><td>06:09:53</td><td align="center">10°</td><td>NE</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=41.0046&lng=29.0762&loc=Fetih&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61341.097615727&type=V'"><td><a href="passdetails.aspx?lat=41.0046&lng=29.0762&loc=Fetih&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61341.097615727&type=V" title="show pass details">28 Oct</a></td><td align="center">-1.0</td><td>05:20:33</td><td align="center">14°</td><td>NNE</td><td>05:20:33</td><td align="center">14°</td><td>NNE</td><td>05:21:53</td><td align="center">10°</td><td>NE</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=41.0046&lng=29.0762&loc=Fetih&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61341.1649327718&type=V'"><td><a href="passdetails.aspx?lat=41.0046&lng=29.0762&loc=Fetih&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61341.1649327718&type=V" title="show pass details">28 Oct</a></td><td align="center">-2.3</td><td>06:54:22</td><td align="center">10°</td><td>NW</td><td>06:57:30</td><td align="center">33°</td><td>NNE</td><td>07:00:36</td><td align="center">10°</td><td>E</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=41.0046&lng=29.0762&loc=Fetih&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61342.1318232982&type=V'"><td><a href="passdetails.aspx?lat=41.0046&lng=29.0762&loc=Fetih&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61342.1318232982&type=V" title="show pass details">29 Oct</a></td><td align="center">-1.9</td><td>06:08:01</td><td align="center">16°</td><td>NNW</td><td>06:09:49</td><td align="center">24°</td><td>NNE</td><td>06:12:40</td><td align="center">10°</td><td>ENE</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=41.0046&lng=29.0762&loc=Fetih&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61343.0990004639&type=V'"><td><a href="passdetails.aspx?lat=41.0046&lng=29.0762&loc=Fetih&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61343.0990004639&type=V" title="show pass details">30 Oct</a></td><td align="center">-1.4</td><td>05:22:33</td><td align="center">19°</td><td>NNE</td><td>05:22:33</td><td align="center">19°</td><td>NNE</td><td>05:24:38</td><td align="center">10°</td><td>ENE</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=41.0046&lng=29.0762&loc=Fetih&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61343.1662066465&type=V'"><td><a href="passdetails.aspx?lat=41.0046&lng=29.0762&loc=Fetih&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61343.1662066465&type=V" title="show pass details">30 Oct</a></td><td align="center">-3.6</td><td>06:55:56</td><td align="center">10°</td><td>NW</td><td>06:59:20</td><td align="center">80°</td><td>NNE</td><td>07:02:44</td><td align="center">10°</td><td>ESE</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=41.0046&lng=29.0762&loc=Fetih&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61344.1331708114&type=V'"><td><a href="passdetails.aspx?lat=41.0046&lng=29.0762&loc=Fetih&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61344.1331708114&type=V" title="show pass details">31 Oct</a></td><td align="center">-3.0</td><td>06:10:07</td><td align="center">25°</td><td>NNW</td><td>06:11:45</td><td align="center">49°</td><td>NNE</td><td>06:15:03</td><td align="center">10°</td><td>ESE</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=41.0046&lng=29.0762&loc=Fetih&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61345.1005282812&type=V'"><td><a href="passdetails.aspx?lat=41.0046&lng=29.0762&loc=Fetih&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61345.1005282812&type=V" title="show pass details">1 Nov</a></td><td align="center">-2.0</td><td>05:24:45</td><td align="center">30°</td><td>NE</td><td>05:24:45</td><td align="center">30°</td><td>NE</td><td>05:27:13</td><td align="center">10°</td><td>E</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=41.0046&lng=29.0762&loc=Fetih&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61345.1673014968&type=V'"><td><a href="passdetails.aspx?lat=41.0046&lng=29.0762&loc=Fetih&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61345.1673014968&type=V" title="show pass details">1 Nov</a></td><td align="center">-2.8</td><td>06:57:47</td><td align="center">10°</td><td>WNW</td><td>07:00:54</td><td align="center">34°</td><td>SW</td><td>07:04:00</td><td align="center">10°</td><td>SSE</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=41.0046&lng=29.0762&loc=Fetih&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61346.1343190984&type=V'"><td><a href="passdetails.aspx?lat=41.0046&lng=29.0762&loc=Fetih&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61346.1343190984&type=V" title="show pass details">2 Nov</a></td><td align="center">-3.7</td><td>06:12:27</td><td align="center">40°</td><td>W</td><td>06:13:25</td><td align="center">60°</td><td>SW</td><td>06:16:45</td><td align="center">10°</td><td>SE</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=41.0046&lng=29.0762&loc=Fetih&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61347.1022672177&type=V'"><td><a href="passdetails.aspx?lat=41.0046&lng=29.0762&loc=Fetih&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61347.1022672177&type=V" title="show pass details">3 Nov</a></td><td align="center">-2.1</td><td>05:27:15</td><td align="center">32°</td><td>ESE</td><td>05:27:15</td><td align="center">32°</td><td>ESE</td><td>05:29:14</td><td align="center">10°</td><td>ESE</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=41.0046&lng=29.0762&loc=Fetih&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61347.1682020682&type=V'"><td><a href="passdetails.aspx?lat=41.0046&lng=29.0762&loc=Fetih&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61347.1682020682&type=V" title="show pass details">3 Nov</a></td><td align="center">-1.5</td><td>07:00:52</td><td align="center">10°</td><td>WSW</td><td>07:02:12</td><td align="center">12°</td><td>SW</td><td>07:03:33</td><td align="center">10°</td><td>SSW</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=41.0046&lng=29.0762&loc=Fetih&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61348.1355160316&type=V'"><td><a href="passdetails.aspx?lat=41.0046&lng=29.0762&loc=Fetih&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61348.1355160316&type=V" title="show pass details">4 Nov</a></td><td align="center">-2.1</td><td>06:15:08</td><td align="center">20°</td><td>SW</td><td>06:15:08</td><td align="center">20°</td><td>SW</td><td>06:17:22</td><td align="center">10°</td><td>S</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=41.0046&lng=29.0762&loc=Fetih&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61349.1042447102&type=V'"><td><a href="passdetails.aspx?lat=41.0046&lng=29.0762&loc=Fetih&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61349.1042447102&type=V" title="show pass details">5 Nov</a></td><td align="center">-0.9</td><td>05:30:06</td><td align="center">12°</td><td>SSE</td><td>05:30:06</td><td align="center">12°</td><td>SSE</td><td>05:30:25</td><td align="center">10°</td><td>SSE</td><td>visible</td></tr>
+	</table>
+	
+
+				&nbsp;
+				<p />
+				<table style="border-top: 1px solid black;">
+					<tr>
+						<td valign="top" style="width: 100px">
+							<a href="https://twitter.com/heavensabovecom?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-screen-name="false" data-show-count="false">Follow @heavensabovecom</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+							<!--<a id="ctl00_linkDonate" title="Make a donation to help with the running costs of Heavens-Above" href="Donate2.aspx"><img title="Make a donation to help with the running costs of Heavens-Above" src="//heavens-above.com/images/btn_donate_SM.gif" alt="" style="border-width:0px;" /></a>-->
+						</td>
+						<td valign="top">
+							<div class="footer">
+								Developed and maintained by <a href="mailto:Chris.Peat@heavens-above.com">Chris Peat</a>, <a href="https://heavens-above.de">Heavens-Above GmbH</a>. Please read the <a href="faq.aspx">FAQ</a> before sending e-mail. <a href="Imprint.aspx">Imprint</a>.
+								</div>
+						</td>
+						<td>
+							<a href="http://www.dlr.de/rb/en/" target="_blank">
+								<img src="//heavens-above.com/images/dlrhost.gif" align="left" border="0" alt="DLR" /></a>
+						</td>
+					</tr>
+				</table>
+			</td>
+			<td rowspan="1" valign="top">
+				<p />
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5668297076217155" crossorigin="anonymous"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-5668297076217155" data-ad-slot="7480853211"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+					<p />
+					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display: inline-block; width: 336px; height: 280px" data-ad-client="ca-pub-5668297076217155" data-ad-slot="7480853211"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+			</td>
+		</tr>
+	</table>
+	</form>
+    <script src="//tags.onscroll.com/608ff96c-526d-43c0-92d3-5faa546bc80e/tag.min.js" async defer></script>
+</body>
+</html>

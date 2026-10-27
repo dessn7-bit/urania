@@ -8,6 +8,20 @@
     ? require('./lib/astronomy.browser.min.js')
     : kok.Astronomy;
 
+  /* ΔT = TT − UT1 (saniye). Astronomy Engine'in varsayılanı (Espenak–Meeus 2006 polinomu) 2026 için
+     ≈75,6 sn veriyor; gerçek değer ≈69,2 sn. Fark Ay'ı ≈3″ kaydırır, örtme saatlerini ≈6 sn.
+     IERS Bulletin A (Vol. XXXIX No. 043, 22 Ekim 2026; datacenter.iers.org, maia.usno.navy.mil):
+     TT = TAI + 32,184 sn; TAI − UTC = 37 sn (1 Ocak 2017'den beri; Aralık 2026'da artık saniye yok);
+     UT1 − UTC = −0,1106 − 0,00040·(MJD − 61342) sn (bültenin uzatma formülü; ±0,03 sn'lik
+     mevsimsel UT2−UT1 terimi ihmal). Formül yalnız MJD 61000–62200 (Kas 2025 – Şub 2029) aralığında;
+     dışında kütüphanenin varsayılanı. ut: J2000'den bu yana UT gün. */
+  const DT_VARSAYILAN = A.DeltaT_EspenakMeeus;
+  A.SetDeltaTFunction(ut => {
+    const mjd = ut + 51544.5;
+    if (mjd >= 61000 && mjd <= 62200) return 32.184 + 37 - (-0.1106 - 0.00040 * (mjd - 61342));
+    return DT_VARSAYILAN(ut);
+  });
+
   const DER = Math.PI / 180;
   const GEZEGENLER = ['Mercury', 'Venus', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'];
   const TR_AD = {

@@ -109,7 +109,10 @@
     const yy = izd(y), gg = izd([g[0], g[1], g[2]]);
     const dogu = izd([-ay[1], ay[0], 0]), kuzey = izd([-ay[2] * ay[0], -ay[2] * ay[1], ay[0] * ay[0] + ay[1] * ay[1]]);
     let kA = Math.atan2(nokta(yy, dogu), nokta(yy, kuzey)) / DER; if (kA < 0) kA += 360;
-    return { aydinlik: nokta(yy, gg) > 0, konumAcisi: kA };
+    /* Uç açısı (Occult'taki "cusp angle"): olay noktasının Ay'ın en yakın boynuzuna (aydınlık ile karanlığın
+       kenarda buluştuğu nokta) açısal uzaklığı. Güneş'e bakan noktadan açı 90°'de boynuzdur. */
+    const gunesten = Math.acos(Math.max(-1, Math.min(1, nokta(yy, gg)))) / DER;
+    return { aydinlik: nokta(yy, gg) > 0, konumAcisi: kA, ucAcisi: Math.abs(gunesten - 90) };
   }
 
   /* Ufuk yüksekliği (kırılmalı) — J2000 yönünden */
@@ -172,7 +175,7 @@
           const yuk = yukseklik(ay.yon, t, gzl);
           const gunes = Gok.cisimAltAz('Sun', t, gzl).alt;
           const ken = kenar(h, t, gzl);
-          olay[k + 'Bilgi'] = { alt: yuk.alt, az: yuk.az, gunes, aydinlik: ken.aydinlik, konumAcisi: ken.konumAcisi,
+          olay[k + 'Bilgi'] = { alt: yuk.alt, az: yuk.az, gunes, aydinlik: ken.aydinlik, konumAcisi: ken.konumAcisi, ucAcisi: ken.ucAcisi,
             gorunur: yuk.alt >= sec.minYuk && gunes <= sec.gunesSinir };
         });
         olay.gorunur = !!((olay.girisBilgi && olay.girisBilgi.gorunur) || (olay.cikisBilgi && olay.cikisBilgi.gorunur));
