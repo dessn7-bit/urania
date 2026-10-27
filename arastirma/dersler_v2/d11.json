@@ -3,18 +3,21 @@
   "unite": "gokyuzu",
   "baslik": "Dürbünle Gözlem: 7×50 ile Gökyüzünde Avlanmak",
   "ozet": "7×50'lik bir dürbün gözünden yaklaşık 50 kat fazla ışık toplar; ama bundan yararlanmak için gözünü karanlığa alıştırman, doğru bakman, dürbünü sabit tutman ve hedefe yıldızdan yıldıza atlayarak varman gerekir. Bu derste Messier kataloğundan mevsim mevsim dürbün hedeflerini, gözlem defteri tutmayı ve tek değişmez kuralı öğreneceksin: dürbünle asla Güneş'e bakılmaz.",
-  "on_bilgi": ["d1"],
+  "on_bilgi": [
+    "d1"
+  ],
   "bolumler": [
     {
       "baslik": "7×50 ne demek?",
       "paragraflar": [
         "Dürbünün üstünde 7×50 ya da 10×50 gibi iki sayı yazar. İlk sayı büyütmedir, ikincisi milimetre cinsinden objektif (ön mercek) çapıdır. 7×50 dürbün cisimleri 7 kat büyük gösterir ve 50 mm'lik objektiflerle ışık toplar. Toplanan ışık objektifin alanıyla, yani çapın karesiyle orantılıdır. Karanlıkta yaklaşık 7 mm açılan göz bebeğinle kıyaslarsan (50/7)² ≈ 51 eder: dürbün gözüne yaklaşık 50 kat daha fazla ışık getirir.",
-        "Gökyüzünde sönük yıldızları görmeni sağlayan büyütme değil, bu ışık toplama gücüdür. Objektif çapı hem görüntünün keskinliğini hem de seçebileceğin en sönük yıldızı belirler. Wikipedia'ya göre 10×50 bir dürbünle, gökyüzünün durumuna ve gözlemcinin deneyimine bağlı olarak +9,5 ile +11 kadire kadar yıldız görülebilir. Çıplak gözün karanlık bir yerdeki sınırı ise 1. dersteki kadir ölçeğine göre 6 civarındadır.",
-        "Büyütme neden daha yüksek değil? Wikipedia'ya göre elde tutulan dürbünler için pratik büyütme sınırı genellikle 10× kabul edilir; daha fazlasında elinin titremesi görüntüyü bozar. 15×70'ten güçlü dürbünler rahat bir gözlem için bir tür destek ister. Ayrıca görüş alanı büyütmeyle ters orantılıdır: düşük büyütme daha geniş bir gökyüzü parçası gösterir, bu da Samanyolu'nu ve büyük bulutsuları izlemek için avantajdır. NASA Ay gözlemi için en az 7× önerir; 10–15× daha fazla ayrıntı verir ama sabit tutmak için sehpa gerekebilir."
+        "Gökyüzünde sönük yıldızları görmeni sağlayan büyütme değil, bu ışık toplama gücüdür. Objektif çapı hem görüntünün keskinliğini hem de seçebileceğin en sönük yıldızı belirler. Wikipedia'ya göre 10×50 bir dürbünle, gökyüzünün durumuna ve gözlemcinin deneyimine bağlı olarak +9,5 ile +11 kadire kadar yıldız görülebilir. Kıyas için: Bortle ölçeğine göre çıplak göz, banliyö gökyüzünde 5,6–6,0, kırsal bir gökte 6,6–7,0 kadire kadar görür.",
+        "Büyütme neden daha yüksek değil? Wikipedia'ya göre elde tutulan dürbünler için pratik büyütme sınırı genellikle 10× kabul edilir; daha fazlasında elinin titremesi görüntüyü bozar. 15×70'ten güçlü dürbünler rahat bir gözlem için bir tür destek ister. Ayrıca görüş alanı büyütmeyle ters orantılıdır: düşük büyütme daha geniş bir gökyüzü parçası gösterir, bu da Samanyolu'nu ve büyük bulutsuları izlemek için avantajdır. NASA Ay gözlemi için en az 7× önerir; 10–15× daha fazla ayrıntı verir ama sabit tutmak için sehpa gerekebilir.",
+        "Dürbünün gövdesi de iki ana tasarımdan birine göre yapılır. Porro prizmalı dürbünlerde iki prizma ışığın yolunu Z biçiminde katlar ve görüntüyü düz çevirir; objektifler göz merceklerinden yana kaymıştır, dürbün geniş görünür. Çatı prizmalı dürbünlerde objektifler göz mercekleriyle aşağı yukarı aynı hizadadır; dürbün daha dar, daha derli toplu ve daha hafiftir. İkisiyle de gökyüzü gözlenir; gökyüzü için seçimi asıl belirleyen, gövde tipinden çok üstte yazan iki sayıdır."
       ],
       "ornek": {
         "baslik": "Örnek: 51 kat ışık kaç kadir eder?",
-        "metin": "1. dersten: 1 kadirlik fark yaklaşık 2,512 kat parlaklık, 5 kadir tam 100 kat demektir. 2,512⁴ ≈ 39,8 ve 2,512⁵ = 100; 51 bu ikisinin arasında, 4. kuvvete daha yakın. Daha ince hesap: 2,5 × log(51) ≈ 2,5 × 1,71 ≈ 4,3. Yani dürbün, çıplak göze göre yaklaşık 4,3 kadir daha sönük yıldızları gösterebilir. Çıplak gözle karanlık yerde 6 kadire kadar görüyorsan, kaba hesapla dürbünle 10 kadir civarına inersin; bu, Wikipedia'nın 10×50 için verdiği +9,5 ile +11 aralığına düşer. Sonuç: yaklaşık 4,3 kadir kazanç."
+        "metin": "1. dersten: 1 kadirlik fark yaklaşık 2,512 kat parlaklık, 5 kadir tam 100 kat demektir. 2,512⁴ ≈ 39,8 ve 2,512⁵ = 100; 51 bu ikisinin arasında, 4. kuvvete daha yakın. Daha ince hesap: 2,5 × log(51) ≈ 2,5 × 1,71 ≈ 4,3. Yani dürbün, çıplak göze göre yaklaşık 4,3 kadir daha sönük yıldızları gösterebilir. Banliyö gökyüzünde çıplak gözle 6 kadire kadar görüyorsan (Bortle 5. sınıfın üst ucu), kaba hesapla dürbünle 10 kadir civarına inersin; bu, Wikipedia'nın 10×50 için verdiği +9,5 ile +11 aralığına düşer. Sonuç: yaklaşık 4,3 kadir kazanç."
       },
       "akilda": "İlk sayı büyütme, ikinci sayı objektif çapı (mm). Sönük cisimleri büyütme değil, objektifin topladığı ışık gösterir: 7×50 göze göre ~51 kat ışık, ~4,3 kadir kazanç."
     },
@@ -23,7 +26,7 @@
       "paragraflar": [
         "Dürbün, topladığı ışığı göz merceğinden ince bir demet olarak çıkarır. Bu demetin çapına çıkış göz bebeği denir ve hesabı kolaydır: objektif çapı ÷ büyütme. 7×50 için 50 / 7 = 7,14 mm. Gece en parlak görüntü için çıkış göz bebeği en az senin göz bebeğin kadar olmalıdır. Daha büyükse fazla ışık göz bebeğinin çevresindeki irise çarpar ve boşa gider; dürbünün objektifinin bir kısmını hiç kullanmamış olursun.",
         "Göz bebeği yaşla küçülür. Wikipedia'daki yaklaşık tabloya göre gece en büyük ortalama çap 20 yaşında 7,3 mm, 30'da 6,6, 40'ta 6,2, 50'de 5,8, 60'ta 5,6, 70'te 5,2 mm'dir. Aynı yaştakiler arasında bile büyük farklar vardır: 15 yaşında karanlığa uyum sağlamış göz bebeği kişiden kişiye 4 ile 9 mm arasında değişebilir. 2024'te yayımlanan bir saha çalışması karanlıkta göz bebeğinin her on yılda yaklaşık 0,4 mm küçüldüğünü ölçtü. Kaynaklar burada tam örtüşmüyor: Wikipedia'nın dürbün maddesi 50 yaş üstündekilerin göz bebeğinin nadiren 5 mm'yi aştığını söylüyor, tablo ise 50 yaş için 5,8 mm veriyor.",
-        "Pratik sonuç: göz bebeğin 5,8 mm açılıyorsa 7×50 dürbününün yalnızca 7 × 5,8 ≈ 41 mm'lik orta bölümünün ışığı gözüne girer. Dürbün yine iyi çalışır, ama ışık kirliliği olan bir gökte büyük çıkış göz bebeği arka plandaki gök parıltısını da topladığı için kontrastı düşürebilir. Bu yüzden kent gözlemcisi için 10×50 gibi daha küçük çıkış göz bebekli bir dürbün de mantıklı bir seçenektir. Kendi göz bebeğini bilmiyorsan yaşına göre tablodan kaba bir tahmin yapabilirsin, ama tablonun ortalama olduğunu unutma."
+        "Pratik sonuç: göz bebeğin 5,8 mm açılıyorsa 7×50 dürbününün yalnızca 7 × 5,8 ≈ 41 mm'lik orta bölümünün ışığı gözüne girer. Dürbün yine iyi çalışır, ama ışık kirliliği olan bir gökte büyük çıkış göz bebeği arka plandaki gök parıltısını da topladığı için kontrastı düşürebilir. Bu bilgiden çıkan bir sonuç: ışık kirli bir kentte 10×50 gibi daha küçük çıkış göz bebekli bir dürbün de mantıklı bir seçenek olabilir. Kendi göz bebeğini bilmiyorsan yaşına göre tablodan kaba bir tahmin yapabilirsin, ama tablonun ortalama olduğunu unutma."
       ],
       "ornek": {
         "baslik": "Örnek: 6 mm göz bebeği için 7×50 mi, 10×50 mi?",
@@ -43,7 +46,7 @@
       "baslik": "Kaçamak bakış",
       "paragraflar": [
         "Sönük bir kümeye ya da bulutsuya doğrudan baktığında kaybolduğunu, gözünü biraz kaydırınca yeniden belirdiğini fark edebilirsin. Bu bir göz kusuru değil. Retinanın tam merkezindeki sarı noktada (fovea) neredeyse hiç çubuk hücre yoktur; orada parlak ışıkta ve renkleri görmek için çalışan koni hücreler bulunur. Çubuk hücrelerin yoğunluğu, bakış merkezinden yaklaşık 20° uzakta en yüksektir.",
-        "Kaçamak bakışta cisme değil, biraz yanına bakar ama dikkatini cisimde tutarsın. Görme sistemi duran cisimlerden çok harekete duyarlıdır; teleskopçuların kullandığı bir yöntemle aleti çok hafif oynatmak, sönük bir lekeyi fark etmeyi kolaylaştırabilir. Bu konuda tartışma da var: bazı araştırmacılar, yıldızlara en yüksek duyarlılık 20°'de olmadığı için kaçamak bakışın yalnızca çubuk yoğunluğuyla açıklanamayacağını belirtiyor. Yöntemin işe yaradığı ise gözlemcilerin ortak deneyimi."
+        "Kaçamak bakışta cisme değil, biraz yanına bakar ama dikkatini cisimde tutarsın. Görme sistemi duran cisimlerden çok harekete duyarlıdır; teleskopçuların kullandığı bir yöntemle aleti çok hafif oynatmak, sönük bir lekeyi fark etmeyi kolaylaştırabilir. Bu konuda tartışma da var: bazı araştırmacılar, yıldızlara en yüksek duyarlılık 20°'de olmadığı için kaçamak bakışın yalnızca çubuk yoğunluğuyla açıklanamayacağını belirtiyor."
       ],
       "akilda": "Sönük cisme doğrudan değil biraz yanına bak; merkezde çubuk hücre yok. Dürbünü hafifçe oynatmak da yardımcı olabilir."
     },
@@ -51,16 +54,16 @@
       "baslik": "Dürbünü sabit tutmak",
       "paragraflar": [
         "Büyütme arttıkça el titremesi daha çok fark edilir; bu yüzden bazı dürbünlerde görüntü sabitleme bile vardır. Nikon'un önerileri: dürbünü iki elinle tut, dirseklerini gövdene daya, sıkı sıkı kavrama, çünkü fazla sıkmak da titretir. Yakında bir duvar ya da ağaç varsa ona yaslan; dürbünü bir kütüğün, çitin ya da kayanın üstüne dayayabilirsin. Uzun gözlemler ve yüksek büyütme için sehpa (tripod) kullan; dürbünler için sehpa bağlantı parçaları satılır.",
-        "BBC Sky at Night'ta Stephen Tonkin ev yapımı çözümler önerir: sert siperlikli bir şapka takıp siperliği dürbünle parmakların arasında sıkıştırmak, ucu yere dayanan bir sopayı destek yapmak, oturarak gözlemde katlanır bir sandalyenin kollarını dirsek desteği olarak kullanmak. Balkonda gözlem yapıyorsan korkuluk da iyi bir dayanaktır; yalnız dürbünü düşürmemek için askısını boynuna geçir. Başucuna yakın hedeflere uzun süre elde bakmak boyunu yorar; şezlongda uzanmak ya da sırtını duvara verip oturmak bu hedefleri çok daha rahat izletir."
+        "BBC Sky at Night'ta Stephen Tonkin ev yapımı çözümler önerir: sert siperlikli bir şapka takıp siperliği dürbünle parmakların arasında sıkıştırmak, ucu yere dayanan bir sopayı destek yapmak, oturarak gözlemde katlanır bir sandalyenin kollarını dirsek desteği olarak kullanmak. Balkonda gözlem yapıyorsan korkuluk, Nikon'un saydığı çite benzer bir dayanaktır."
       ],
       "akilda": "İki el, dirsekler gövdede, bir yere yaslan; uzun gözlemde sehpa. Titreme azaldıkça daha sönük yıldız görürsün."
     },
     {
       "baslik": "Gökte açı ölçmek ve yıldızdan yıldıza atlamak",
       "paragraflar": [
-        "Gökyüzündeki uzaklıklar kilometreyle değil, açıyla ölçülür. En kullanışlı cetvel kendi elindir. Kolunu tam uzattığında yumruğunun genişliği yaklaşık 10°, serçe parmağın yaklaşık 1°, orta üç parmağın yaklaşık 5° kadardır. İşaret parmağınla serçe parmağını açarsan yaklaşık 15°, başparmakla serçe parmağı açarsan yaklaşık 25° ölçersin. Ölçü için iki tanıdık örnek: Büyük Ayı'nın kepçesinde Kutup Yıldızı'nı gösteren iki yıldız arası yaklaşık 5°, dolunay ise yalnızca yarım derecedir. Elin ve kolun uzunluğu kişiden kişiye değiştiği için bunlar yaklaşık değerlerdir.",
+        "Gökyüzündeki uzaklıklar kilometreyle değil, açıyla ölçülür. En kullanışlı cetvel kendi elindir. Kolunu tam uzattığında yumruğunun genişliği yaklaşık 10°, serçe parmağın yaklaşık 1°, orta üç parmağın yaklaşık 5° kadardır. İşaret parmağınla serçe parmağını açarsan yaklaşık 15°, başparmakla serçe parmağı açarsan yaklaşık 25° ölçersin. Ölçü için iki tanıdık örnek: Büyük Ayı'nın kepçesinde Kutup Yıldızı'nı gösteren iki yıldız arası yaklaşık 5°, dolunay ise yalnızca yarım derecedir. Bunların hepsi yaklaşık değerlerdir.",
         "Dürbünün görüş alanı nadiren 8°'den geniştir; yani gökyüzünün küçük bir parçasını görürsün. Çıplak gözle görünmeyen bir hedefi bulmak için yıldızdan yıldıza atlarsın: önce harita üstünde bir yol planlar, çıplak gözle tanıdığın parlak bir yıldızdan başlar, sonra yıldız desenlerini izleyerek dürbünü adım adım hedefe kaydırırsın. Stephen Tonkin'in önerisi: dürbününün görüş alanının kaç derece olduğunu bil, çünkü her adımı bu birimle ölçersin. Haritadaki bir uzaklığı önce elinle gökte bul, sonra dürbünle o yolu kaç görüş alanında aldığını say.",
-        "Klasik örnek Herkül'deki M13 küresel kümesidir. Herkül takımyıldızının gövdesini oluşturan dörtgenin bir kenarında ζ (zeta) ve η (eta) Herculis yıldızları vardır. M13 bu iki yıldızı birleştiren çizginin üzerindedir: ζ'dan η'ya doğru yolun yaklaşık üçte ikisinde. Dürbünü ζ'ya çevir, sonra η'ya doğru kaydır; yolun üçte ikisinde yıldızlardan farklı, yuvarlak ve bulanık bir leke göreceksin."
+        "Klasik örnek Herkül'deki M13 küresel kümesidir. Herkül takımyıldızında ζ (zeta) ve η (eta) Herculis adlı iki yıldız vardır. M13 bu iki yıldızı birleştiren çizginin üzerindedir: ζ'dan η'ya doğru yolun yaklaşık üçte ikisinde, η'dan bakınca üçte birinde. Önce iki yıldızı haritada ve gökte bul, dürbünü ζ'ya çevir, sonra η'ya doğru yavaşça kaydır ve yolun üçte ikisinde dur. NASA'ya göre M13 dürbünle bulunabilir ve Kuzey Yarımküre'den görülen en parlak yıldız kümelerinden biridir."
       ],
       "ornek": {
         "baslik": "Örnek: Görüş alanına kaç dolunay sığar?",
@@ -71,9 +74,9 @@
     {
       "baslik": "Messier kataloğu: kuyrukluyıldız avcısının listesi",
       "paragraflar": [
-        "Dürbün hedeflerinin çoğu M harfi ve bir numarayla anılır: M13, M31, M45. Bu M, Fransız astronom Charles Messier'den (1730–1817) gelir. Messier'nin asıl tutkusu kuyrukluyıldız avlamaktı. Gökyüzünde kuyrukluyıldıza benzeyen ama yer değiştirmeyen bulanık lekelere rastladıkça bunları bir listeye yazdı. Amacı, kendisinin ve diğer kuyrukluyıldız avcılarının bu lekelerle zaman kaybetmesini önlemekti. Yani bugün astronomların en sevdiği hedefler, aslında bir kenara koyulmuş yanlış alarmların listesidir.",
-        "Kataloğun ilk sürümü 1774'te çıktı ve numarasız 45 cisim içeriyordu. Başka astronomlar sonradan Messier'nin notlarındaki eklemelerden yararlanarak listeyi 110 cisme genişletti. Messier, Paris'teki Hôtel de Cluny'de çalıştı ve yaklaşık 100 mm açıklıklı, görece küçük bir mercekli teleskop kullandı. Bu yüzden listesindeki cisimler küçük aletlerle görülebilecek kadar parlaktır. NASA da Messier cisimlerini dürbün ya da küçük bir teleskopu olan amatörler için güzel hedefler olarak tanımlar; Hubble Uzay Teleskobu bu 110 cismin 89'unu görüntüledi.",
-        "Listede tuhaflıklar da var. M102'yi Pierre Méchain gözlemleyip notlarını Messier'ye iletti; Méchain sonradan bunun M101'in yeniden gözlemlenmesinden ibaret olduğu sonucuna vardı. M40 ise bir bulutsu değil, yan yana görünen iki yıldızdır. Messier'nin listesi Kuzey Yarımküre'den yapılan gözlemlere dayanır; tüm cisimlerin tek bir gecede görülebildiği bir dönem de vardır ve amatörler o gece Messier maratonu düzenler."
+        "Dürbün hedeflerinin çoğu M harfi ve bir numarayla anılır: M13, M31, M45. Bu M, Fransız astronom Charles Messier'den (1730–1817) gelir. Messier'nin asıl ilgisi kuyrukluyıldız bulmaktı. NASA'ya göre kataloğunu, diğer kuyrukluyıldız meraklıları kuyrukluyıldız olmayan bu gök cisimleriyle zaman kaybetmesin diye hazırladı. Yani bugün amatörlerin peşine düştüğü bu hedefler, aslında bir kenara ayrılmış bir 'kuyrukluyıldız değil' listesidir.",
+        "Kataloğun ilk sürümü 1774'te çıktı ve numarasız 45 cisim içeriyordu. Başka astronomlar sonradan Messier'nin notlarındaki eklemelerden yararlanarak listeyi 110 cisme genişletti. Messier, Hôtel de Cluny'de çalıştı ve yaklaşık 100 mm açıklıklı, görece küçük bir mercekli teleskop kullandı. NASA'ya göre bu cisimlerin çoğu küçük bir teleskopla görülebilecek kadar parlaktır. NASA ayrıca Messier cisimlerini dürbün ya da küçük bir teleskopu olan amatörler için güzel hedefler olarak tanımlar; Hubble Uzay Teleskobu bu 110 cismin 89'unu görüntüledi.",
+        "Listede tuhaflıklar da var. M102'yi Pierre Méchain gözlemleyip notlarını Messier'ye iletti; Méchain sonradan bunun M101'in yeniden gözlemlenmesinden ibaret olduğu sonucuna vardı. M40 ise bir bulutsu değil, yan yana görünen iki yıldızdır. Yılda bir dönem tüm cisimlerin tek bir gecede görülebildiği bir dönem de vardır ve amatörler o gece Messier maratonu düzenler."
       ],
       "akilda": "Messier kataloğu, bir kuyrukluyıldız avcısının 'karıştırma' listesidir: ilk sürüm 1774'te 45 cisim, bugün 110 cisim. Çoğu dürbün ya da küçük teleskopla görülür."
     },
@@ -83,7 +86,8 @@
         "Messier cisimleri yıl boyunca aynı saatte gökte değildir; Dünya Güneş'in çevresinde dolandıkça gece gökyüzü değişir. NASA'nın Hubble Messier kataloğu her cisim için en iyi gözlem ayını verir. Kış için iki parlak hedef: Boğa'daki Ülker (M45) için en iyi ay Aralık'tır. NASA'ya göre yaklaşık 445 ışık yılı uzaktadır, kütleçekimiyle gevşekçe bağlı binden fazla yıldız içerir ve görece karanlık bir yerden çıplak gözle kolayca görülür. Avcı'daki Orion Bulutsusu (M42) için en iyi ay Ocak'tır; yaklaşık 1500 ışık yılı uzaktaki bu yıldız doğum bölgesi karanlık bir yerden çıplak gözle seçilebilir.",
         "İlkbaharda Yengeç'teki Arıkovanı kümesi (M44, Praesepe) gökte en yükseğe Mart'ta çıkar. NASA'ya göre yaklaşık 600 ışık yılıyla bize en yakın kümelerden biridir; çıplak gözle bulanık bir ışık lekesi gibi görünür, dürbün ise yaklaşık 20 yıldızını ayırır. Yazın Herkül'deki M13 küresel kümesi dürbünle en kolay Temmuz'da bulunur; 25.000 ışık yılı uzaktadır ve 100.000'den fazla yıldız içerir. Ağustos'ta Yay'daki Deniz Kulağı Bulutsusu (M8) sırası gelir; 5200 ışık yılı uzaktadır, karanlık gökte çıplak gözle soluk görülür, dürbünle kolayca bulunur.",
         "Sonbaharın yıldızı Andromeda Galaksisi'dir (M31). NASA'ya göre en iyi Kasım'da gözlenir, Samanyolu'na en yakın büyük galaksidir ve 2,5 milyon ışık yılı uzaktadır. Orta düzey ışık kirliliği olan yerlerden bile çıplak gözle görülebilir. Gezegenleri de unutma: Wikipedia'ya göre orta boy bir dürbünle Jüpiter'in Galileo uyduları ve Satürn'ün en büyük uydusu Titan seçilebilir; Venüs'ün evreleri zor bir hedeftir, Satürn'ün halkasını ayırmak için ise 20× ya da daha yüksek büyütme gerekir.",
-        "Parlaklıklar konusunda dürüst olmak gerek: kaynaklar aynı cisim için farklı kadirler veriyor. NASA M45 için 1,6, M44 için 3,7, M31 için 3,1, M42 için 4, M8 için 6 kadir verirken bu projede doğrulanan katalog değerleri M45 için 1,2, M44 için 3,1, M31 için 3,44, M8 için 5,8'dir. Yayılmış cisimlerin parlaklığını tek bir sayıyla vermek zordur; ölçümün nasıl yapıldığına göre sonuç değişir. Bir de şunu bil: yayılmış bir cismin ışığı geniş bir alana dağıldığı için aynı kadirdeki bir yıldızdan daha zor görülür."
+        "Parlaklıklar konusunda dürüst olmak gerek: kaynaklar aynı cisim için farklı kadirler veriyor. NASA M45 için 1,6, M44 için 3,7, M31 için 3,1, M42 için 4, M8 için 6 kadir verirken bu projede doğrulanan katalog değerleri M45 için 1,2, M44 için 3,1, M31 için 3,44, M8 için 5,8'dir. Bu derste kullanılan kaynaklar farkın nedenini açıklamıyor; bu yüzden bir parlaklık değerini her zaman kaynağıyla birlikte yaz. Kesin olan, hepsinin dürbünle ulaşılabilecek parlaklıkta olduğudur: Wikipedia'nın 10×50 için verdiği +9,5 ile +11 sınırının çok üstündedirler.",
+        "Bu bilgileri bir kent balkonundan yapılacak bir gecenin planına dönüştürelim. Kasım akşamında ilk hedef Andromeda olabilir, çünkü NASA'ya göre orta düzey ışık kirliliğinde bile çıplak gözle görülebilir; dürbünle onu bulmak bu yüzden kolaylaşır. Ülker için NASA'nın 'çıplak gözle kolayca' ifadesinin görece karanlık bir yer için söylendiğini unutma; kentte dürbün yardımına daha çok ihtiyaç duyabilirsin. Deniz Kulağı Bulutsusu ise NASA'ya göre çıplak gözle ancak karanlık gökte, o da soluk görülür; üstelik aşağıdaki örnekte göreceğin gibi İstanbul'dan en fazla 25° kadar yükselir. Bu yüzden onu güney ufku açık ve mümkünse kentten uzak bir yere sakla. Planı yaparken önceki bölümlerdeki kuralları birleştir: önce gözünü karanlığa alıştır, sönük hedeflere kaçamak bakışla bak, parlak gezegenleri ve Ay'ı sona bırak, her hedefi deftere yaz."
       ],
       "ornek": {
         "baslik": "Örnek: Bu hedefler İstanbul'dan ne kadar yükselir?",
@@ -94,13 +98,13 @@
     {
       "baslik": "Gözlem defteri tutmak",
       "paragraflar": [
-        "Bir yıl sonra 'Andromeda'yı ilk ne zaman görmüştüm, o gece gök nasıldı?' diye merak edeceksin. BBC Sky at Night'a göre gözlem defteri, gördüklerinin bilimsel bir kaydıdır; düzenli kayıt ilerlemeni görmeni ve çizimlerini yıllar içinde karşılaştırmanı sağlar. Doğru bir kaydın yoksa önemli bir şey görüp görmediğini hiç bilemeyebilirsin. Bir değişen yıldızda ya da beklenmedik bir kuyrukluyıldızda tarih ve saat her şeydir.",
+        "Bir yıl sonra 'Andromeda'yı ilk ne zaman görmüştüm, o gece gök nasıldı?' diye merak edeceksin. BBC Sky at Night'a göre gözlem defteri, gördüklerinin bilimsel bir kaydıdır; düzenli kayıt ilerlemeni görmeni ve çizimlerini yıllar içinde karşılaştırmanı sağlar. Doğru bir kaydın yoksa önemli bir şey görüp görmediğini hiç bilemeyebilirsin.",
         "Her gözlem için şunları yaz: tam tarih (yıl-ay-gün biçiminde), her gözlemin saati UT (evrensel zaman) olarak, kullandığın alet (dürbün için örneğin 7×50) ve büyütme, kullandıysan filtre, gökyüzünün durumu (bulut, pus, Ay ışığı). Atmosferin ne kadar sakin olduğunu not etmek için Antoniadi ölçeği kullanılır: I kusursuz keskin bir görüntü, V ise odaklanmayan bir lekedir. Bulutsu ya da küme çizerken kuzey yönünü işaretle ve takımyıldızın adını yaz. Çizimi önce ayrı bir kâğıda yapıp sonra deftere yapıştırmak işini kolaylaştırır. Değişen yıldız gözlüyorsan kadir tahminini mutlaka kaydet.",
-        "Gökyüzünün karanlığını da kaydet. John E. Bortle, Şubat 2001'de Sky & Telescope'ta gökyüzünü 1'den 9'a sınıflayan bir ölçek yayımladı; ayrıntısı 1. derste. Ölçeğe göre çıplak gözle görülebilen en sönük yıldız 1. sınıfta 7,6–8,0, 3. sınıfta 6,6–7,0, 5. sınıfta 5,6–6,0 kadirdir; 7. sınıfta en fazla 5,0, 8. sınıfta en iyi ihtimalle 4,5, 9. sınıfta ise 4,0 ya da daha parlaktır. Wikipedia'daki tablo bazı sınırları biraz farklı çizer. Her gece başucuna yakın bir bölgede seçebildiğin en sönük yıldızın kadirini deftere yazarsan, aynı balkondan bile gökyüzünün geceden geceye ne kadar değiştiğini görürsün."
+        "Gökyüzünün karanlığını da kaydet. John E. Bortle, Şubat 2001'de Sky & Telescope'ta gökyüzünü 1'den 9'a sınıflayan bir ölçek yayımladı; ayrıntısı 1. derste. Ölçeğe göre çıplak gözle görülebilen en sönük yıldız 1. sınıfta 7,6–8,0, 3. sınıfta 6,6–7,0, 5. sınıfta 5,6–6,0 kadirdir; 7. sınıfta en fazla 5,0, 8. sınıfta en iyi ihtimalle 4,5, 9. sınıfta ise 4,0 ya da daha parlaktır. Wikipedia'daki tablo bazı sınırları biraz farklı çizer. Her gece başucuna yakın bir bölgede seçebildiğin en sönük yıldızın kadirini deftere yazarsan, aynı balkondan bakarken bile gökyüzünün geceden geceye değişip değişmediğini sayıyla görürsün."
       ],
       "ornek": {
         "baslik": "Örnek: Örnek bir defter kaydı",
-        "metin": "2026-12-15 | saat (UT): kendi yerel saatini UT'ye çevirip yaz | Yer: balkon, güney açık | Alet: 7×50 dürbün, elde, korkuluğa dayalı | Gök: bulutsuz, Ay yok | Başucu yakınında görülen en sönük yıldız: 4,5 kadir → Bortle'a göre 8. sınıf civarı | Hedef: M45 Ülker | Not: çıplak gözle 6 yıldız sayıldı; dürbünle görüş alanı yıldızlarla doldu; kuzey yukarıda olacak şekilde kaba çizim yapıldı. Bu satırdaki gözlem ayrıntıları uydurma bir örnektir, yalnız biçimi gösterir. Sonuç: tarih, UT saat, yer, alet, gök durumu, sınır kadir, hedef ve not."
+        "metin": "Bir satırlık kalıp, sırayla: tarih (ör. 2026-12-15); saat, UT olarak; yer (ör. balkon, güney açık); alet (7×50 dürbün, elde, korkuluğa dayalı); gök durumu (bulut, pus, Ay); sınır kadir; hedef (ör. M45 Ülker); not ve çizim. Sınır kadir adımını sayıyla yap: başucu yakınında seçebildiğin en sönük yıldızın kadirini haritadan bul. Diyelim ki 4,5 çıktı. Bortle'a göre 8. sınıfın sınırı en iyi ihtimalle 4,5, 7. sınıfınki en fazla 5,0'dır; demek ki gökyüzün 8. sınıf civarındadır. Bir başka gece 5,0'ı görebiliyorsan gök bir sınıf iyileşmiş demektir. Sonuç: her satırda sekiz alan; sınır kadir 4,5 ise Bortle 8 civarı."
       },
       "akilda": "Defterde tarih (yyyy-aa-gg), UT saat, alet ve büyütme, gök durumu, sınır kadir ve çizim olsun. Kayıt yoksa ne gördüğünü kanıtlayamazsın."
     },
@@ -108,45 +112,151 @@
       "baslik": "Güvenlik: Güneş ve Ay",
       "paragraflar": [
         "Tek kesin kural: dürbünü asla Güneş'e çevirme. NASA'ya göre parlak Güneş'in herhangi bir kısmına, önüne özel güneş filtresi sağlam biçimde takılmamış bir dürbünle bakmak gözde anında ağır hasar yapar. Tutulma gözlüğüyle dürbünden bakmak da tehlikelidir: dürbünün topladığı ışık filtreyi yakıp delebilir. Retina acı hissetmez ve hasarın etkileri saatler sonra ortaya çıkabilir; yani uyarı alamazsın. Dürbünle güneş gözlemi yalnızca bir astronomdan bilgi alarak, ön taraftan takılan özel filtrelerle yapılır. Gün batımından sonra alçaktaki bir gezegeni ararken de Güneş tamamen batana kadar bekle.",
-        "Ay ise dürbünün en güzel hedeflerinden biridir; NASA dürbünle Ay gözlemini açıkça önerir ve özellikle aydınlık ile karanlığın sınırına, yani gölgelerin uzun düştüğü bölgeye bakmanı söyler. Ölçek için: NASA'nın verdiği parlaklıklarla (Güneş −26,74, dolunay −12,74 kadir) Güneş dolunaydan yaklaşık 400.000 kat parlaktır. Dolunay gözünü kamaştırsa da zarar vermez; ama karanlık uyumunu bozar, bu yüzden Ay'ı gecenin sonuna bırak."
+        "Ay ise dürbünün en güzel hedeflerinden biridir; NASA dürbünle Ay gözlemini açıkça önerir ve özellikle aydınlık ile karanlığın sınırına, yani gölgelerin uzun düştüğü bölgeye bakmanı söyler. Ölçek için: NASA'nın verdiği parlaklıklarla (Güneş −26,74, dolunay −12,74 kadir) Güneş dolunaydan yaklaşık 400.000 kat parlaktır. Ay parlak bir hedef olduğu için karanlık uyumunu bozar; bu yüzden sönük hedeflere bakacaksan Ay'ı gecenin sonuna bırak."
       ],
-      "akilda": "Filtresiz dürbünle Güneş'e bakmak anında kalıcı hasar yapar ve acı hissettirmez. Ay güvenli ve harika bir hedeftir; sadece karanlık uyumunu bozar."
+      "akilda": "Filtresiz dürbünle Güneş'e bakmak anında ağır hasar yapar ve acı hissettirmez. Ay ise NASA'nın dürbün için önerdiği bir hedeftir; yalnız karanlık uyumunu bozar."
     }
   ],
   "formuller": [
-    { "ad": "Çıkış göz bebeği", "ifade": "Çıkış göz bebeği (mm) = objektif çapı (mm) / büyütme", "aciklama": "7×50 → 50 / 7 = 7,14 mm; 10×50 → 5 mm. Göz bebeğinden büyükse fazlası boşa gider." },
-    { "ad": "Işık toplama oranı (göze göre)", "ifade": "Oran = (D / d_göz)²", "aciklama": "D: objektif çapı (mm), d_göz: karanlıktaki göz bebeği çapı (mm). D = 50, d_göz = 7 → ≈ 51 kat. Kayıpları (cam, yansıma) hesaba katmaz." },
-    { "ad": "Kadir kazancı", "ifade": "Δm = 2,5 × log(oran)", "aciklama": "Δm: kadir farkı, oran: ışık oranı. 51 kat → ≈ 4,3 kadir. Kaba bir tahmindir; gök parıltısı ve deneyim sonucu değiştirir." },
-    { "ad": "Kullanılan objektif çapı", "ifade": "D_etkin = büyütme × göz bebeği", "aciklama": "Göz bebeği çıkış göz bebeğinden küçükse geçerlidir. 7 × 5,8 mm ≈ 41 mm." },
-    { "ad": "En yüksek konumdaki yükseklik (Kuzey Yarımküre, cisim başucunun güneyinde)", "ifade": "A = 90° − enlem + dik açıklık", "aciklama": "A: cismin meridyenden geçerken ufuktan yüksekliği (derece). İstanbul için enlem 41°. Sonuç 90°'yi aşarsa cisim başucunun kuzeyinden geçer." }
+    {
+      "ad": "Çıkış göz bebeği",
+      "ifade": "Çıkış göz bebeği (mm) = objektif çapı (mm) / büyütme",
+      "aciklama": "7×50 → 50 / 7 = 7,14 mm; 10×50 → 5 mm. Göz bebeğinden büyükse fazlası boşa gider."
+    },
+    {
+      "ad": "Işık toplama oranı (göze göre)",
+      "ifade": "Oran = (D / d_göz)²",
+      "aciklama": "D: objektif çapı (mm), d_göz: karanlıktaki göz bebeği çapı (mm). D = 50, d_göz = 7 → ≈ 51 kat. Kayıpları (cam, yansıma) hesaba katmaz."
+    },
+    {
+      "ad": "Kadir kazancı",
+      "ifade": "Δm = 2,5 × log(oran)",
+      "aciklama": "Δm: kadir farkı, oran: ışık oranı. 51 kat → ≈ 4,3 kadir. Kaba bir tahmindir; gök parıltısı ve deneyim sonucu değiştirir."
+    },
+    {
+      "ad": "Kullanılan objektif çapı",
+      "ifade": "D_etkin = büyütme × göz bebeği",
+      "aciklama": "Göz bebeği çıkış göz bebeğinden küçükse geçerlidir. 7 × 5,8 mm ≈ 41 mm."
+    },
+    {
+      "ad": "En yüksek konumdaki yükseklik (Kuzey Yarımküre, cisim başucunun güneyinde)",
+      "ifade": "A = 90° − enlem + dik açıklık",
+      "aciklama": "A: cismin meridyenden geçerken ufuktan yüksekliği (derece). İstanbul için enlem 41°. Sonuç 90°'yi aşarsa cisim başucunun kuzeyinden geçer."
+    }
   ],
   "anahtar_sayilar": [
-    { "deger": "7,14 mm", "aciklama": "7×50 dürbünün çıkış göz bebeği", "kaynak_url": "https://en.wikipedia.org/wiki/Exit_pupil" },
-    { "deger": "20 y: 7,3 · 30 y: 6,6 · 40 y: 6,2 · 50 y: 5,8 · 60 y: 5,6 · 70 y: 5,2 mm", "aciklama": "Karanlıkta ortalama en büyük göz bebeği çapı (yaklaşık tablo)", "kaynak_url": "https://en.wikipedia.org/wiki/Exit_pupil" },
-    { "deger": "~0,4 mm / 10 yıl", "aciklama": "Karanlığa uyum sağlamış göz bebeğinin yaşla küçülmesi (2024 saha çalışması)", "kaynak_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11295891/" },
-    { "deger": "+9,5 ile +11 kadir", "aciklama": "10×50 dürbünün sınır kadiri (gök ve deneyime bağlı)", "kaynak_url": "https://en.wikipedia.org/wiki/Binoculars" },
-    { "deger": "20–30 dk (çubuklar 30–45 dk; BAA: 15–20+ dk)", "aciklama": "Karanlık uyumu süresi; kaynaklar farklı aralık veriyor", "kaynak_url": "https://en.wikipedia.org/wiki/Adaptation_(eye)" },
-    { "deger": "500 nm", "aciklama": "Çubuk hücrelerin en duyarlı olduğu dalga boyu (kırmızıya duyarsız)", "kaynak_url": "https://en.wikipedia.org/wiki/Adaptation_(eye)" },
-    { "deger": "~20°", "aciklama": "Çubuk hücre yoğunluğunun en yüksek olduğu, bakış merkezinden uzaklık", "kaynak_url": "https://en.wikipedia.org/wiki/Averted_vision" },
-    { "deger": "~10×", "aciklama": "Elde tutulan dürbün için genel kabul gören pratik büyütme sınırı", "kaynak_url": "https://en.wikipedia.org/wiki/Binoculars" },
-    { "deger": "≤8°", "aciklama": "Dürbün görüş alanı nadiren bundan geniştir", "kaynak_url": "https://en.wikipedia.org/wiki/Star_hopping" },
-    { "deger": "Yumruk ~10°, üç parmak ~5°, serçe parmak ~1°, işaret–serçe ~15°, başparmak–serçe ~25°", "aciklama": "Kol uzunluğunda elle açı ölçümü", "kaynak_url": "https://www.timeanddate.com/astronomy/measuring-the-sky-by-hand.html" },
-    { "deger": "1774: 45 cisim → 110 cisim", "aciklama": "Messier kataloğunun ilk sürümü ve bugünkü hâli", "kaynak_url": "https://en.wikipedia.org/wiki/Messier_object" },
-    { "deger": "M45 Aralık · M42 Ocak · M44 Mart · M13 Temmuz · M8 Ağustos · M31 Kasım", "aciklama": "NASA Hubble Messier kataloğuna göre en iyi gözlem ayları", "kaynak_url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/" },
-    { "deger": "Sınıf 1: 7,6–8,0 … Sınıf 8: ≤4,5 · Sınıf 9: ≤4,0", "aciklama": "Bortle ölçeğinde çıplak göz sınır kadiri", "kaynak_url": "https://skyandtelescope.org/astronomy-resources/light-pollution-and-astronomy-the-bortle-dark-sky-scale/" },
-    { "deger": "≈ 400.000 kat", "aciklama": "Güneş'in dolunaya göre parlaklığı (−26,74 ve −12,74 kadirden hesap)", "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html" }
+    {
+      "deger": "7,14 mm",
+      "aciklama": "7×50 dürbünün çıkış göz bebeği",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Exit_pupil"
+    },
+    {
+      "deger": "20 y: 7,3 · 30 y: 6,6 · 40 y: 6,2 · 50 y: 5,8 · 60 y: 5,6 · 70 y: 5,2 mm",
+      "aciklama": "Karanlıkta ortalama en büyük göz bebeği çapı (yaklaşık tablo)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Exit_pupil"
+    },
+    {
+      "deger": "~0,4 mm / 10 yıl",
+      "aciklama": "Karanlığa uyum sağlamış göz bebeğinin yaşla küçülmesi (2024 saha çalışması)",
+      "kaynak_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11295891/"
+    },
+    {
+      "deger": "+9,5 ile +11 kadir",
+      "aciklama": "10×50 dürbünün sınır kadiri (gök ve deneyime bağlı)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Binoculars"
+    },
+    {
+      "deger": "20–30 dk (çubuklar 30–45 dk; BAA: 15–20+ dk)",
+      "aciklama": "Karanlık uyumu süresi; kaynaklar farklı aralık veriyor",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Adaptation_(eye)"
+    },
+    {
+      "deger": "500 nm",
+      "aciklama": "Çubuk hücrelerin en duyarlı olduğu dalga boyu (kırmızıya duyarsız)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Adaptation_(eye)"
+    },
+    {
+      "deger": "~20°",
+      "aciklama": "Çubuk hücre yoğunluğunun en yüksek olduğu, bakış merkezinden uzaklık",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Averted_vision"
+    },
+    {
+      "deger": "~10×",
+      "aciklama": "Elde tutulan dürbün için genel kabul gören pratik büyütme sınırı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Binoculars"
+    },
+    {
+      "deger": "≤8°",
+      "aciklama": "Dürbün görüş alanı nadiren bundan geniştir",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Star_hopping"
+    },
+    {
+      "deger": "Yumruk ~10°, üç parmak ~5°, serçe parmak ~1°, işaret–serçe ~15°, başparmak–serçe ~25°",
+      "aciklama": "Kol uzunluğunda elle açı ölçümü",
+      "kaynak_url": "https://www.timeanddate.com/astronomy/measuring-the-sky-by-hand.html"
+    },
+    {
+      "deger": "1774: 45 cisim → 110 cisim",
+      "aciklama": "Messier kataloğunun ilk sürümü ve bugünkü hâli",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Messier_object"
+    },
+    {
+      "deger": "M45 Aralık · M42 Ocak · M44 Mart · M13 Temmuz · M8 Ağustos · M31 Kasım",
+      "aciklama": "NASA Hubble Messier kataloğuna göre en iyi gözlem ayları",
+      "kaynak_url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/"
+    },
+    {
+      "deger": "Sınıf 1: 7,6–8,0 … Sınıf 8: ≤4,5 · Sınıf 9: ≤4,0",
+      "aciklama": "Bortle ölçeğinde çıplak göz sınır kadiri",
+      "kaynak_url": "https://skyandtelescope.org/astronomy-resources/light-pollution-and-astronomy-the-bortle-dark-sky-scale/"
+    },
+    {
+      "deger": "≈ 400.000 kat",
+      "aciklama": "Güneş'in dolunaya göre parlaklığı (−26,74 ve −12,74 kadirden hesap)",
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html"
+    }
   ],
   "sozluk": [
-    { "terim": "Objektif", "tanim": "Dürbünün ya da teleskobun ışığı toplayan ön merceği; çapı milimetreyle verilir." },
-    { "terim": "Çıkış göz bebeği", "tanim": "Dürbünün göz merceğinden çıkan ışık demetinin çapı; objektif çapı bölü büyütme." },
-    { "terim": "Karanlık uyumu", "tanim": "Gözün karanlıkta dakikalar içinde ışığa çok daha duyarlı hâle gelmesi." },
-    { "terim": "Çubuk hücre", "tanim": "Retinada loş ışıkta gören, renk ayırmayan ve kırmızıya duyarsız ışık algılayıcı hücre." },
-    { "terim": "Kaçamak bakış", "tanim": "Sönük bir cismi görmek için ona doğrudan değil, biraz yanına bakma yöntemi." },
-    { "terim": "Yıldızdan yıldıza atlama", "tanim": "Parlak, tanıdık yıldızlardan başlayıp yıldız desenlerini izleyerek sönük bir hedefe ulaşma yöntemi." },
-    { "terim": "Görüş alanı", "tanim": "Dürbünle bir bakışta görülen gökyüzü parçasının açısal genişliği (derece)." },
-    { "terim": "Messier kataloğu", "tanim": "Charles Messier'nin kuyrukluyıldızlarla karıştırılmasın diye listelediği, bugün 110 cisimlik bulutsu, küme ve galaksi listesi." },
-    { "terim": "Sınır kadir", "tanim": "Belirli bir gökyüzü ve aletle görülebilen en sönük yıldızın kadiri." },
-    { "terim": "UT (evrensel zaman)", "tanim": "Gözlem kayıtlarında kullanılan, yerel saat diliminden bağımsız ortak zaman." }
+    {
+      "terim": "Objektif",
+      "tanim": "Dürbünün ya da teleskobun ışığı toplayan ön merceği; çapı milimetreyle verilir."
+    },
+    {
+      "terim": "Çıkış göz bebeği",
+      "tanim": "Dürbünün göz merceğinden çıkan ışık demetinin çapı; objektif çapı bölü büyütme."
+    },
+    {
+      "terim": "Karanlık uyumu",
+      "tanim": "Gözün karanlıkta dakikalar içinde ışığa çok daha duyarlı hâle gelmesi."
+    },
+    {
+      "terim": "Çubuk hücre",
+      "tanim": "Retinada loş ışıkta gören, renk ayırmayan ve kırmızıya duyarsız ışık algılayıcı hücre."
+    },
+    {
+      "terim": "Kaçamak bakış",
+      "tanim": "Sönük bir cismi görmek için ona doğrudan değil, biraz yanına bakma yöntemi."
+    },
+    {
+      "terim": "Yıldızdan yıldıza atlama",
+      "tanim": "Parlak, tanıdık yıldızlardan başlayıp yıldız desenlerini izleyerek sönük bir hedefe ulaşma yöntemi."
+    },
+    {
+      "terim": "Görüş alanı",
+      "tanim": "Dürbünle bir bakışta görülen gökyüzü parçasının açısal genişliği (derece)."
+    },
+    {
+      "terim": "Messier kataloğu",
+      "tanim": "Charles Messier'nin kuyrukluyıldızlarla karıştırılmasın diye listelediği, bugün 110 cisimlik bulutsu, küme ve galaksi listesi."
+    },
+    {
+      "terim": "Sınır kadir",
+      "tanim": "Belirli bir gökyüzü ve aletle görülebilen en sönük yıldızın kadiri."
+    },
+    {
+      "terim": "UT (evrensel zaman)",
+      "tanim": "Gözlem kayıtlarında kullanılan, yerel saat diliminden bağımsız ortak zaman."
+    }
   ],
   "defter_notu": [
     "7×50 = 7 kat büyütme, 50 mm objektif. Göze göre ~51 kat ışık (50/7)² ≈ 4,3 kadir kazanç.",
@@ -161,45 +271,159 @@
     "Güneş'e dürbünle ASLA bakma. Ay güvenli ama karanlık uyumunu bozar → sona bırak."
   ],
   "sorular": [
-    { "soru": "10×50 bir dürbünün çıkış göz bebeği kaçtır? Göz bebeği 6 mm açılan biri için 7×50 mi 10×50 mi ışığı daha az boşa harcar?", "cevap": "10×50 → 50/10 = 5 mm; 7×50 → 7,14 mm. 6 mm'lik göz bebeği 5 mm'lik demetin tamamını alır, 7,14 mm'lik demetin ise bir kısmını kaçırır. Yani 10×50'de ışık boşa gitmez; 7×50'nin yalnızca 7 × 6 = 42 mm'lik kısmı kullanılır. Yine de 7×'in daha geniş görüş alanı ve daha az titreyen görüntüsü ayrı bir avantajdır." },
-    { "soru": "Gözlem sırasında haritana telefonun beyaz ışığıyla baktın. Ne olur, ne yapmalıydın?", "cevap": "Çubuk hücrelerdeki ışığa duyarlı pigment ağarır ve karanlık uyumu bir anda kaybolur; yeniden 15–30 dakika beklemen gerekir. Loş kırmızı bir fener (ya da kırmızı filtreli ekran) kullanmalıydın, çünkü çubuk hücreler uzun dalga boylu kırmızı ışığa duyarsızdır." },
-    { "soru": "Gün batımından sonra alçaktaki Venüs'ü dürbünle ararken Güneş henüz tam batmamışsa ne yapmalısın, neden?", "cevap": "Beklemelisin, dürbünü Güneş'in yakınına hiç çevirmemelisin. NASA'ya göre parlak Güneş'in herhangi bir kısmına filtresiz dürbünle bakmak gözde anında ağır hasar yapar; retina acı hissetmediği için hasarı fark etmeyebilirsin." },
-    { "soru": "Charles Messier kataloğunu neden hazırladı?", "cevap": "Kuyrukluyıldız avcısıydı. Kuyrukluyıldıza benzeyen ama yer değiştirmeyen bulanık cisimleri, kendisi ve diğer avcılar bunlarla zaman kaybetmesin diye listeledi. Liste 1774'te 45 cisimle başladı, sonradan 110'a genişletildi." },
-    { "soru": "İstanbul'dan (41° K) dik açıklığı −24,4° olan Deniz Kulağı Bulutsusu en fazla kaç derece yükselir? Bunu elinle nasıl kontrol edersin?", "cevap": "A = 90 − 41 + (−24,4) = 24,6°. Kolunu uzatıp yumruklarını üst üste koyarsan (her biri ~10°) ufkun yaklaşık iki buçuk yumruk üstündedir. Bu yüzden güney ufku açık, ışıksız bir yer gerekir." },
-    { "soru": "Sönük bir küresel kümeye doğrudan bakınca kayboluyor, gözünü biraz kaydırınca beliriyor. Neden?", "cevap": "Retinanın merkezindeki sarı noktada (fovea) neredeyse hiç çubuk hücre yok; loş ışığı gören çubuklar merkezden yaklaşık 20° uzakta en yoğun. Kaçamak bakışta cismin ışığı çubukların bol olduğu bölgeye düşer. Bazı araştırmacılar bunun tek açıklama olmadığını da belirtiyor." },
-    { "soru": "Bir arkadaşın 'Ülker 1,6 kadir' diyor, bir katalog 1,2 diyor. Hangisi yanlış?", "cevap": "Büyük olasılıkla ikisi de kendi ölçüm yöntemine göre doğru. Ülker gibi geniş yayılmış cisimlerin toplam parlaklığı ölçümün nasıl yapıldığına bağlıdır; NASA 1,6, bu projede doğrulanan katalog değeri 1,2 veriyor. Böyle durumlarda değeri kaynağıyla birlikte yaz." },
-    { "soru": "Gözlem defterine saati neden yerel saat yerine UT olarak yazmak önerilir?", "cevap": "UT herkes için aynı zamandır; kaydın başka gözlemcilerin kayıtlarıyla, kataloglarla ve yıllar sonra kendi kayıtlarınla saat dilimi ya da yaz saati karışıklığı olmadan karşılaştırılabilmesini sağlar. BBC Sky at Night da her gözlemin saatini UT olarak yazmayı önerir." }
+    {
+      "soru": "10×50 bir dürbünün çıkış göz bebeği kaçtır? Göz bebeği 6 mm açılan biri için 7×50 mi 10×50 mi ışığı daha az boşa harcar?",
+      "cevap": "10×50 → 50/10 = 5 mm; 7×50 → 7,14 mm. 6 mm'lik göz bebeği 5 mm'lik demetin tamamını alır, 7,14 mm'lik demetin ise bir kısmını kaçırır. Yani 10×50'de ışık boşa gitmez; 7×50'nin yalnızca 7 × 6 = 42 mm'lik kısmı kullanılır. Yine de 7×'in daha geniş görüş alanı ve daha az titreyen görüntüsü ayrı bir avantajdır."
+    },
+    {
+      "soru": "Gözlem sırasında haritana telefonun beyaz ışığıyla baktın. Ne olur, ne yapmalıydın?",
+      "cevap": "Çubuk hücrelerdeki ışığa duyarlı pigment ağarır ve karanlık uyumu bir anda kaybolur; yeniden 15–30 dakika beklemen gerekir. Loş kırmızı bir fener (ya da kırmızı filtreli ekran) kullanmalıydın, çünkü çubuk hücreler uzun dalga boylu kırmızı ışığa duyarsızdır."
+    },
+    {
+      "soru": "Gün batımından sonra alçaktaki Venüs'ü dürbünle ararken Güneş henüz tam batmamışsa ne yapmalısın, neden?",
+      "cevap": "Beklemelisin, dürbünü Güneş'in yakınına hiç çevirmemelisin. NASA'ya göre parlak Güneş'in herhangi bir kısmına filtresiz dürbünle bakmak gözde anında ağır hasar yapar; retina acı hissetmediği için hasarı fark etmeyebilirsin."
+    },
+    {
+      "soru": "Charles Messier kataloğunu neden hazırladı?",
+      "cevap": "Kuyrukluyıldız avcısıydı. Kuyrukluyıldıza benzeyen ama yer değiştirmeyen bulanık cisimleri, kendisi ve diğer avcılar bunlarla zaman kaybetmesin diye listeledi. Liste 1774'te 45 cisimle başladı, sonradan 110'a genişletildi."
+    },
+    {
+      "soru": "İstanbul'dan (41° K) dik açıklığı −24,4° olan Deniz Kulağı Bulutsusu en fazla kaç derece yükselir? Bunu elinle nasıl kontrol edersin?",
+      "cevap": "A = 90 − 41 + (−24,4) = 24,6°. Kolunu uzatıp yumruklarını üst üste koyarsan (her biri ~10°) ufkun yaklaşık iki buçuk yumruk üstündedir. Bu yüzden güney ufku açık, ışıksız bir yer gerekir."
+    },
+    {
+      "soru": "Sönük bir küresel kümeye doğrudan bakınca kayboluyor, gözünü biraz kaydırınca beliriyor. Neden?",
+      "cevap": "Retinanın merkezindeki sarı noktada (fovea) neredeyse hiç çubuk hücre yok; loş ışığı gören çubuklar merkezden yaklaşık 20° uzakta en yoğun. Kaçamak bakışta cismin ışığı çubukların bol olduğu bölgeye düşer. Bazı araştırmacılar bunun tek açıklama olmadığını da belirtiyor."
+    },
+    {
+      "soru": "Bir arkadaşın 'Ülker 1,6 kadir' diyor, bir katalog 1,2 diyor. Hangisi yanlış?",
+      "cevap": "Bu derste ikisinin de kaynağı var: NASA 1,6, bu projede doğrulanan katalog değeri (OpenNGC) 1,2 veriyor; SEDS de 1,6 diyor. Kaynaklar farkın nedenini açıklamadığı için hangisinin yanlış olduğunu söyleyemeyiz. Doğru tutum, değeri kaynağıyla birlikte yazmak ve 'yaklaşık 1–2 kadir' gibi bir aralık akılda tutmaktır."
+    },
+    {
+      "soru": "Gözlem defterine saati neden yerel saat yerine UT olarak yazmak önerilir?",
+      "cevap": "UT herkes için aynı zamandır; kaydın başka gözlemcilerin kayıtlarıyla, kataloglarla ve yıllar sonra kendi kayıtlarınla saat dilimi ya da yaz saati karışıklığı olmadan karşılaştırılabilmesini sağlar. BBC Sky at Night da her gözlemin saatini UT olarak yazmayı önerir."
+    }
   ],
   "kaynaklar": [
-    { "ad": "Wikipedia – Binoculars", "url": "https://en.wikipedia.org/wiki/Binoculars" },
-    { "ad": "Wikipedia – Exit pupil", "url": "https://en.wikipedia.org/wiki/Exit_pupil" },
-    { "ad": "Wikipedia – Pupil", "url": "https://en.wikipedia.org/wiki/Pupil" },
-    { "ad": "Royal Society Open Science (2024), Regulation of pupil size in natural vision across the human lifespan (PMC)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11295891/" },
-    { "ad": "Wikipedia – Adaptation (eye)", "url": "https://en.wikipedia.org/wiki/Adaptation_(eye)" },
-    { "ad": "British Astronomical Association – Hints and tips for visual observing", "url": "https://britastro.org/section_information_/hints-and-tips-for-visual-observing" },
-    { "ad": "Wikipedia – Averted vision", "url": "https://en.wikipedia.org/wiki/Averted_vision" },
-    { "ad": "Nikon – How to hold and tripod use", "url": "https://imaging.nikon.com/sport-optics/guide/binoculars/using/using_03/" },
-    { "ad": "BBC Sky at Night – How to hold your binoculars steady (Stephen Tonkin)", "url": "https://www.skyatnightmagazine.com/advice/skills/how-to-hold-your-binoculars-steady" },
-    { "ad": "Wikipedia – Star hopping", "url": "https://en.wikipedia.org/wiki/Star_hopping" },
-    { "ad": "BBC Sky at Night – How to star-hop the night sky (Stephen Tonkin)", "url": "https://www.skyatnightmagazine.com/advice/star-hopping-guide-find-your-way-around-the-skies/" },
-    { "ad": "EarthSky – Sky measurements: degrees, arc minutes, arc seconds", "url": "https://earthsky.org/astronomy-essentials/sky-measurements-degrees-arc-minutes-arc-seconds/" },
-    { "ad": "timeanddate.com – Measuring the sky by hand", "url": "https://www.timeanddate.com/astronomy/measuring-the-sky-by-hand.html" },
-    { "ad": "Wikipedia – Messier object", "url": "https://en.wikipedia.org/wiki/Messier_object" },
-    { "ad": "NASA Science – Hubble's Messier Catalog", "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/" },
-    { "ad": "NASA Science – Messier 45 (Ülker)", "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-45" },
-    { "ad": "NASA Science – Messier 42 (Orion Bulutsusu)", "url": "https://science.nasa.gov/?p=29958" },
-    { "ad": "NASA Science – Messier 44 (Arıkovanı)", "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-44" },
-    { "ad": "NASA Science – Messier 13", "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-13/" },
-    { "ad": "NASA Science – Messier 8 (Deniz Kulağı)", "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-8" },
-    { "ad": "NASA Science – Messier 31 (Andromeda)", "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-31/" },
-    { "ad": "CDS SIMBAD – M8, M42, M45, M13, M31 konumları (dik açıklık)", "url": "https://simbad.cds.unistra.fr/simbad/sim-id?output.format=ASCII&Ident=M8" },
-    { "ad": "Wikipedia – Culmination", "url": "https://en.wikipedia.org/wiki/Culmination" },
-    { "ad": "BBC Sky at Night – How to keep an astronomy log book", "url": "https://skyatnightmagazine.com/advice/skills/how-keep-astronomy-log-book" },
-    { "ad": "Sky & Telescope – The Bortle Dark-Sky Scale", "url": "https://skyandtelescope.org/astronomy-resources/light-pollution-and-astronomy-the-bortle-dark-sky-scale/" },
-    { "ad": "Wikipedia – Bortle scale", "url": "https://en.wikipedia.org/wiki/Bortle_scale" },
-    { "ad": "NASA Science – Eclipse Viewing Safety", "url": "https://science.nasa.gov/eclipses/safety/" },
-    { "ad": "Wikipedia – Solar eclipse (Viewing)", "url": "https://en.wikipedia.org/wiki/Solar_eclipse" },
-    { "ad": "NASA Science – Moon Viewing Tips", "url": "https://science.nasa.gov/moon/viewing-tips/" },
-    { "ad": "NASA NSSDCA – Moon Fact Sheet / Sun Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html" }
+    {
+      "ad": "Wikipedia – Binoculars",
+      "url": "https://en.wikipedia.org/wiki/Binoculars"
+    },
+    {
+      "ad": "Wikipedia – Exit pupil",
+      "url": "https://en.wikipedia.org/wiki/Exit_pupil"
+    },
+    {
+      "ad": "Wikipedia – Pupil",
+      "url": "https://en.wikipedia.org/wiki/Pupil"
+    },
+    {
+      "ad": "Royal Society Open Science (2024), Regulation of pupil size in natural vision across the human lifespan (PMC)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11295891/"
+    },
+    {
+      "ad": "Wikipedia – Adaptation (eye)",
+      "url": "https://en.wikipedia.org/wiki/Adaptation_(eye)"
+    },
+    {
+      "ad": "British Astronomical Association – Hints and tips for visual observing",
+      "url": "https://britastro.org/section_information_/hints-and-tips-for-visual-observing"
+    },
+    {
+      "ad": "Wikipedia – Averted vision",
+      "url": "https://en.wikipedia.org/wiki/Averted_vision"
+    },
+    {
+      "ad": "Nikon – How to hold and tripod use",
+      "url": "https://imaging.nikon.com/sport-optics/guide/binoculars/using/using_03/"
+    },
+    {
+      "ad": "BBC Sky at Night – How to hold your binoculars steady (Stephen Tonkin)",
+      "url": "https://www.skyatnightmagazine.com/advice/skills/how-to-hold-your-binoculars-steady"
+    },
+    {
+      "ad": "Wikipedia – Star hopping",
+      "url": "https://en.wikipedia.org/wiki/Star_hopping"
+    },
+    {
+      "ad": "BBC Sky at Night – How to star-hop the night sky (Stephen Tonkin)",
+      "url": "https://www.skyatnightmagazine.com/advice/star-hopping-guide-find-your-way-around-the-skies/"
+    },
+    {
+      "ad": "EarthSky – Sky measurements: degrees, arc minutes, arc seconds",
+      "url": "https://earthsky.org/astronomy-essentials/sky-measurements-degrees-arc-minutes-arc-seconds/"
+    },
+    {
+      "ad": "timeanddate.com – Measuring the sky by hand",
+      "url": "https://www.timeanddate.com/astronomy/measuring-the-sky-by-hand.html"
+    },
+    {
+      "ad": "Wikipedia – Messier object",
+      "url": "https://en.wikipedia.org/wiki/Messier_object"
+    },
+    {
+      "ad": "NASA Science – Hubble's Messier Catalog",
+      "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/"
+    },
+    {
+      "ad": "NASA Science – Messier 45 (Ülker)",
+      "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-45"
+    },
+    {
+      "ad": "NASA Science – Messier 42 (Orion Bulutsusu)",
+      "url": "https://science.nasa.gov/?p=29958"
+    },
+    {
+      "ad": "NASA Science – Messier 44 (Arıkovanı)",
+      "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-44"
+    },
+    {
+      "ad": "NASA Science – Messier 13",
+      "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-13/"
+    },
+    {
+      "ad": "NASA Science – Messier 8 (Deniz Kulağı)",
+      "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-8"
+    },
+    {
+      "ad": "NASA Science – Messier 31 (Andromeda)",
+      "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-31/"
+    },
+    {
+      "ad": "CDS SIMBAD – M8, M42, M45, M13, M31 konumları (dik açıklık)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?output.format=ASCII&Ident=M8"
+    },
+    {
+      "ad": "Wikipedia – Culmination",
+      "url": "https://en.wikipedia.org/wiki/Culmination"
+    },
+    {
+      "ad": "BBC Sky at Night – How to keep an astronomy log book",
+      "url": "https://skyatnightmagazine.com/advice/skills/how-keep-astronomy-log-book"
+    },
+    {
+      "ad": "Sky & Telescope – The Bortle Dark-Sky Scale",
+      "url": "https://skyandtelescope.org/astronomy-resources/light-pollution-and-astronomy-the-bortle-dark-sky-scale/"
+    },
+    {
+      "ad": "Wikipedia – Bortle scale",
+      "url": "https://en.wikipedia.org/wiki/Bortle_scale"
+    },
+    {
+      "ad": "NASA Science – Eclipse Viewing Safety",
+      "url": "https://science.nasa.gov/eclipses/safety/"
+    },
+    {
+      "ad": "Wikipedia – Solar eclipse (Viewing)",
+      "url": "https://en.wikipedia.org/wiki/Solar_eclipse"
+    },
+    {
+      "ad": "NASA Science – Moon Viewing Tips",
+      "url": "https://science.nasa.gov/moon/viewing-tips/"
+    },
+    {
+      "ad": "NASA NSSDCA – Moon Fact Sheet / Sun Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html"
+    }
   ]
 }

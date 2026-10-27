@@ -1,0 +1,204 @@
+{
+  "id": "d9",
+  "unite": "gunes_sistemi",
+  "baslik": "Güneş Sistemi'nin Gezegenleri: Sekiz Dünya, İki Aile",
+  "ozet": "Sekiz gezegen iki aileye ayrılır: küçük, yoğun, kayalık karasal gezegenler ve katı yüzeyi olmayan dev gezegenler. Bu derste gezegenleri tek tek kütle, yoğunluk, dönme süresi ve uydularıyla tanıyacak, aralarındaki boşluğu astronomik birimle kavrayacak ve Güneş Sistemi'nin bir gaz ve toz bulutundan nasıl doğduğunu göreceksin.",
+  "on_bilgi": ["d3"],
+  "bolumler": [
+    {
+      "baslik": "Sekiz gezegen, iki aile",
+      "paragraflar": [
+        "Güneş'ten dışa doğru sıra şöyledir: Merkür, Venüs, Dünya, Mars, Jüpiter, Satürn, Uranüs, Neptün. NASA ilk dördünü karasal gezegenler diye adlandırır, çünkü katı yüzeyleri vardır. Yoğun ve kayalıktırlar: kabuk ve mantoları silikat denen kaya minerallerinden, çekirdekleri demir ve nikelden oluşur. Uyduları ya hiç yoktur ya da çok azdır, halkaları da yoktur.",
+        "Dış dört gezegen dev gezegenlerdir ve sert bir yüzeyleri yoktur; bir çekirdeğin üstünde dönüp duran gaz katmanlarından oluşurlar. Jüpiter ile Satürn çoğunlukla hidrojen ve helyum gibi erime noktası çok düşük gazlardan yapılmış gaz devleridir. Uranüs ile Neptün buz devleridir: içerikleri büyük ölçüde su, metan ve amonyak gibi, erime noktası birkaç yüz kelvine kadar çıkan ve astronomide 'buz' diye anılan maddelerdir. Dördünün de çok sayıda uydusu ve bir halka sistemi vardır, ama Dünya'dan kolayca görülen tek halka Satürn'ünkidir.",
+        "Kütle dağılımı çarpıcıdır: Güneş, Güneş Sistemi'nin bilinen kütlesinin %99,86'sını tek başına taşır. Geriye kalanın %99'u dört dev gezegendedir ve bunun %90'ından fazlası yalnızca Jüpiter ile Satürn'e aittir. Yoğunluk da iki aileyi ayırır. Yoğunluk, bir cismin kütlesinin hacmine bölümüdür; su için 1 g/cm³'tür. NASA JPL'nin tablosuna göre karasal gezegenlerin yoğunluğu 3,9 ile 5,5 g/cm³ arasındadır ve en yoğun gezegen 5,51 g/cm³ ile Dünya'dır. Dev gezegenlerin yoğunluğu ise 0,7 ile 1,6 g/cm³ arasında kalır.",
+        "Bu sayıları kimse bir teraziyle ölçmedi. 3. dersteki yöntemi hatırla: bir uydunun dönemini ve yörünge yarıçapını ölçersen, Kepler'in yasasının Newton biçimi merkezdeki gezegenin kütlesini verir. Kütle ile çapı bilince yoğunluğu hesaplarsın; yoğunluk da gezegenin neyden yapıldığına dair bir ipucudur. Karasal gezegenlerin yüksek yoğunluğu kaya ve metalden oluşan yapılarıyla, dev gezegenlerin düşük yoğunluğu hidrojen, helyum ve buzlardan oluşan yapılarıyla uyumludur. Bu derste gezegenleri tanırken hep bu üç sayıya bakacağız: kütle, çap ve yoğunluk; yanına da kendi ekseni çevresinde dönme süresini ve uydularını ekleyeceğiz."
+      ],
+      "akilda": "İçteki dört gezegen küçük, yoğun ve kayalık (karasal); dıştaki dördü büyük, az yoğun ve katı yüzeysiz (gaz ve buz devleri). Güneş sistemin kütlesinin %99,86'sı."
+    },
+    {
+      "baslik": "Astronomik birim ve gerçek ölçek",
+      "paragraflar": [
+        "Gezegenler arası uzaklıklar için kilometre hantal kalır; astronomlar astronomik birimi (AB) kullanır. AB eskiden Dünya ile Güneş arasındaki ortalama uzaklık olarak düşünülürdü; 2012'de tam 149.597.870.700 metre olarak tanımlandı. Işık bu yolu yaklaşık 499 saniyede, yani 8 dakika 19 saniyede alır. Yani Güneş'e baktığında onun 8 dakika önceki hâlini görürsün.",
+        "NASA'nın bilgi sayfalarındaki yarı büyük eksenleri AB'ye çevirince sıra şöyle çıkar: Merkür 0,39; Venüs 0,72; Dünya 1; Mars 1,52; Jüpiter 5,20; Satürn 9,57; Uranüs 19,2; Neptün 30,2 AB. Karasal gezegenlerin dördü de 1,5 AB'nin içine sığar; Mars'tan Jüpiter'e geçerken uzaklık birden üç katından fazla artar. Neptün, Güneş'e Dünya'dan 30 kat daha uzaktır.",
+        "Boyutlar da çok farklıdır. Ekvator çapları Dünya'nınkiyle (12.756 km) kıyaslanınca Jüpiter 11,2; Satürn 9,4; Uranüs 4,0; Neptün 3,9; Venüs 0,95; Mars 0,53; Merkür 0,38 kat gelir. Wikipedia'daki bir ölçek örneği boşluğu iyi anlatır: Güneş ile Neptün arasını 100 metreye küçültürsen Güneş yaklaşık 3 cm, dev gezegenlerin hepsi 3 mm'den küçük, Dünya ise bir pireden (0,3 mm) bile küçük olur. Güneş Sistemi her şeyden önce boşluktur.",
+        "Bir ölçü daha: NASA'ya göre Güneş'in ortalama yarıçapı 695.700 km, yani çapı yaklaşık 1,39 milyon km'dir. 1 AB'yi bu çapa bölersen yaklaşık 107,5 çıkar: Güneş'ten 107 tane yan yana dizilseydi ancak Dünya'ya uzanırdı. Aynı hesap Neptün için yaklaşık 3245 Güneş çapı verir. Bu sayılarla bir sayfaya hem gezegenlerin boyunu hem de aralarındaki uzaklığı aynı ölçekte sığdırmanın ne kadar zor olduğunu kendin görebilirsin: Neptün'e kadar olan yolu 1 metreye çizersen Güneş'in çapı 1 milimetreden bile küçük kalır."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Neptün'e ve Jüpiter'e ışık kaç dakikada gider?",
+        "metin": "Süre = uzaklık / ışık hızı. Işık hızı 299.792.458 m/s. Neptün'ün yarı büyük ekseni 4514,953 milyon km = 4,515 × 10¹² m. Böl: 4,515 × 10¹² / 2,998 × 10⁸ ≈ 15.060 s ≈ 251 dakika ≈ 4 saat 11 dakika. Jüpiter için 778,479 milyon km: 7,785 × 10¹¹ / 2,998 × 10⁸ ≈ 2597 s ≈ 43 dakika. Sonuç: Güneş ışığı Jüpiter'e yaklaşık 43 dakikada, Neptün'e yaklaşık 4 saat 11 dakikada ulaşır (ortalama uzaklıklarla)."
+      },
+      "akilda": "1 AB = 149.597.870.700 m ≈ 8 dk 19 sn ışık yolu. Karasal gezegenler 1,5 AB içinde, Neptün 30 AB'de. Ölçekli modelde Dünya bir pireden küçük."
+    },
+    {
+      "baslik": "Yörünge süreleri ve hızları",
+      "paragraflar": [
+        "Bir gezegenin Güneş çevresini yıldızlara göre bir kez dolanma süresine yıldızıl dönem denir. NASA'nın gezegen bilgi sayfalarına göre: Merkür 88 gün, Venüs 224,7 gün, Dünya 365,26 gün, Mars 687 gün (1,88 yıl), Jüpiter 11,86 yıl, Satürn 29,4 yıl, Uranüs 84,0 yıl, Neptün 164,8 yıl. Neptün'ün tek bir yılı, yani 164,8 Dünya yılı, bir insan ömrünün iki katından uzundur.",
+        "Bu sayılar 3. dersteki Kepler'in üçüncü yasasına (P² = a³) uyar. Uzaktaki gezegen hem daha uzun bir yol gider hem de daha yavaş ilerler; bu yüzden süre uzaklıktan hızlı büyür. NASA'nın tablosundaki ortalama yörünge hızları bunu açıkça gösterir: Merkür saniyede 47,4 km, Venüs 35,0, Dünya 29,8, Mars 24,1, Jüpiter 13,1, Satürn 9,7, Uranüs 6,8, Neptün 5,4 km. Merkür, Neptün'den yaklaşık 9 kat hızlı koşar."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Jüpiter Kepler'in yasasına uyuyor mu?",
+        "metin": "Jüpiter için a = 5,204 AB. Küpü: 5,204 × 5,204 × 5,204 ≈ 140,9. NASA'nın dönemi 4332,589 gün; yıla çevir: 4332,589 / 365,25 ≈ 11,862 yıl. Karesi: 11,862 × 11,862 ≈ 140,7. İki sayı neredeyse eşit (140,9 ve 140,7); fark %0,2'nin altında. Sonuç: P² ≈ a³ ≈ 141, yani Jüpiter Kepler'in üçüncü yasasına uyar."
+      },
+      "akilda": "Dönem uzaklıktan hızlı büyür (P² = a³). Yörünge hızı Merkür'de 47,4 km/s'den Neptün'de 5,4 km/s'ye düşer."
+    },
+    {
+      "baslik": "Merkür ve Venüs: Güneş'e en yakın iki dünya",
+      "paragraflar": [
+        "Merkür en küçük gezegendir: çapı 4879 km, Dünya'nınkinin 0,38'i; kütlesi Dünya'nın yalnızca yaklaşık %5,5'i kadardır. Buna karşın yoğunluğu 5,43 g/cm³ ile Dünya'nınkine çok yakındır; yani küçük ama ağır bir kaya ve metal topudur. Yüzeyindeki çekim ivmesi 3,70 m/s²'dir. İlginç bir rastlantı: Merkür'den çok daha büyük olan Mars'ın yüzey çekimi de 3,71 m/s². Daha küçük Merkür, daha yoğun olduğu için aynı çekimi sağlar. Merkür'ün kendi ekseni çevresindeki bir dönüşü 58,6 gün, Güneş çevresindeki turu 88 gün sürer; aşağıdaki örnekte bu iki sayının arasındaki düzenli ilişkiyi göreceksin.",
+        "Venüs, boyutça Dünya'nın neredeyse ikizidir: çapı 12.104 km, yani Dünya'nınkinin 0,95'i; kütlesi Dünya'nın %81,5'i, yüzey çekimi 8,87 m/s². Ama dönmesi çok tuhaftır. NASA JPL'nin tablosuna göre Venüs'ün kendi ekseni çevresindeki bir dönüşü 243,0 gün sürer, Güneş çevresindeki turu ise 224,7 gün. Yani Venüs'te bir dönüş, bir yıldan yaklaşık %8 daha uzundur. JPL bu değeri eksi işaretiyle verir; bu işaretin anlamı tablonun açıklamasında yer alır, ama bu derste o açıklamayı kaynaktan okuyamadığımız için yorumlamıyoruz.",
+        "Gökyüzünde Venüs en parlak gezegendir: Wikipedia'ya göre hilal evresindeyken −4,92 kadire kadar parlar. Kıyas için Jüpiter'in en yüksek parlaklığı −2,94, gece göğünün en parlak yıldızı Sirius'unki −1,46 kadirdir. Dürbünle Venüs'ün evrelerini görmek mümkündür ama zor bir hedeftir; ve Venüs hep Güneş'e yakın göründüğü için dürbünü ancak Güneş tamamen battıktan sonra ona çevirmelisin (11. ders)."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Merkür'ün dönüşü ile yılı arasındaki oran",
+        "metin": "Merkür'ün yıldızıl dönemi 87,969 gün, kendi ekseni çevresindeki dönüşü 58,6462 gün (JPL). Böl: 87,969 / 58,6462 ≈ 1,500. Yani bir Merkür yılında tam bir buçuk dönüş vardır. Sağlama: 2 yıl = 2 × 87,969 = 175,94 gün; 3 dönüş = 3 × 58,6462 = 175,94 gün. Sonuç: Merkür Güneş'in çevresini 2 kez dolanırken kendi ekseni çevresinde tam 3 kez döner (3:2 oranı)."
+      },
+      "akilda": "Merkür küçük ama yoğun; 2 yılda 3 kez döner. Venüs boyutça Dünya'nın ikizi, ama bir dönüşü (243 gün) yılından (224,7 gün) uzun; gökte −4,92 kadire kadar parlar."
+    },
+    {
+      "baslik": "Dünya ve Mars: tanıdık komşular",
+      "paragraflar": [
+        "Dünya'yı da bir gezegen olarak dışarıdan tanımlayalım. NASA'ya göre ortalama sıcaklığı 288 K (15 °C), yüzeydeki hava basıncı 1014 milibardır. Havasının %78,08'i azot, %20,95'i oksijendir. Ekseni yörüngesine 23,44° eğiktir; mevsimlerin nedeni bu eğikliktir (1. ders). Kendi ekseni çevresinde yıldızlara göre bir dönüşü 23,9345 saat sürer ve tek bir doğal uydusu vardır. Dünya, sekiz gezegen içinde en yüksek yoğunluğa (5,51 g/cm³) ve karasal gezegenler içinde en büyük yüzey çekimine (9,80 m/s²) sahiptir.",
+        "Mars, Dünya'nın yarısı kadardır: çapı 6792 km, kütlesi ise Dünya'nın yalnızca %10,7'si. Yoğunluğu 3,93 g/cm³ ile karasal gezegenlerin en düşüğüdür. Bir Mars günü Dünya'nınkine çok benzer: JPL'ye göre kendi ekseni çevresindeki dönüşü yaklaşık 24 saat 37 dakika sürer. Yılı ise 1,88 Dünya yılıdır. Mars'ın iki küçük uydusu vardır: Phobos ve Deimos. Mars'ta geçmişte su olup olmadığı ve yaşam arayışı 18. dersin konusu.",
+        "Dünya'dan kurtulmak için 11,19 km/s gerekirken Mars'tan kurtulma hızı 5,03 km/s'dir (3. ders). Bu fark, bir aracın Mars yüzeyinden kalkmasının Dünya'dan kalkmaktan çok daha az hız istediği anlamına gelir. Ayrıca kütle ile yarıçapın birlikte yüzey çekimini nasıl belirlediğinin iyi bir örneğidir: Mars, Merkür'den büyük olduğu hâlde yüzey çekimleri neredeyse aynıdır."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Mars'ta tartılsan kaç gelirdin?",
+        "metin": "Tartı aslında üzerindeki kuvveti ölçer; kuvvet kütle × çekim ivmesidir. Dünya'da 70 kg gösteren bir tartı, Mars'ta 70 × (3,71 / 9,80) gösterir. Önce oran: 3,71 / 9,80 ≈ 0,379. Sonra çarp: 70 × 0,379 ≈ 26,5. Kütlen değişmez, hâlâ 70 kg'sın; değişen, gezegenin seni çekme kuvvetidir. Merkür'de de sonuç neredeyse aynıdır: 70 × 3,70 / 9,80 ≈ 26,4. Sonuç: tartı Mars'ta yaklaşık 26,5 kg gösterirdi."
+      },
+      "akilda": "Dünya: 15 °C ortalama, %78 azot, %21 oksijen, en yoğun gezegen. Mars: Dünya'nın yarısı çapında, kütlesi ~%11, günü ~24 sa 37 dk, iki uydu (Phobos, Deimos)."
+    },
+    {
+      "baslik": "Jüpiter ve Satürn: gaz devleri",
+      "paragraflar": [
+        "Jüpiter gezegenlerin devidir: kütlesi Dünya'nın yaklaşık 318 katıdır ve öbür yedi gezegenin toplam kütlesinin yaklaşık 2,5 katıdır. Çapı Dünya'nın 11,2 katı olsa da yoğunluğu yalnızca 1,33 g/cm³'tür. En hızlı dönen gezegendir: JPL'ye göre kendi ekseni çevresindeki bir dönüşü yaklaşık 9 saat 56 dakika sürer. NASA'ya göre Uluslararası Astronomi Birliği'nin resmen tanıdığı 115 uydusu vardır.",
+        "Jüpiter, gökyüzünde en parlak gezegenlerden biridir; Wikipedia'ya göre −2,94 kadire kadar parlar. Dürbün için de en güzel gezegen hedefidir: Wikipedia'ya göre orta boy bir dürbünle Jüpiter'in Galileo uyduları seçilebilir. Uydular gezegenin çevresinde dolandığı için konumları geceden geceye değişir; birkaç gece üst üste konumlarını deftere çizmek güzel bir gözlem projesidir. Dürbünü sabitlemeyi unutma (11. ders).",
+        "Dev gezegenlerin çekimi de devdir. NASA'ya göre Jüpiter'den kurtulma hızı 59,5 km/s, Satürn'den 35,5, Neptün'den 23,5, Uranüs'ten 21,3 km/s'dir; Dünya'nınki 11,19 km/s. JPL ise Jüpiter için 60,20, Satürn için 36,09 km/s verir. Fark ölçüm hatası değil: bu projede yapılan hesapla NASA'nın değeri ekvator yarıçapından, JPL'ninki ortalama yarıçaptan çıkıyor. Dev gezegenlerde bu iki yarıçap arasında belirgin bir fark vardır; Jüpiter'de ekvator yarıçapı 71.492 km, ortalama yarıçap 69.911 km'dir. Bu küçük ayrıntı, bir sayının tanımını bilmeden iki kaynağı karşılaştırmanın neden yanıltıcı olabileceğini gösterir.",
+        "Satürn kütlece Dünya'nın yaklaşık 95 katıdır, çapı Dünya'nın 9,4 katıdır. JPL tablosuna göre ortalama yoğunluğu 0,69 g/cm³'tür; bu, sudan daha düşük yoğunluğa sahip tek gezegen demektir. Bir dönüşü yaklaşık 10 saat 39 dakika sürer. Satürn, NASA'ya göre Ağustos 2026 itibarıyla 293 doğrulanmış uyduyla en çok uydusu olan gezegendir. Halkası Dünya'dan kolayca görülen tek halkadır, ama dürbünle ayırmak için Wikipedia'ya göre 20× ya da daha yüksek büyütme gerekir. En büyük uydusu Titan ise orta boy bir dürbünle seçilebilir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Jüpiter öbür gezegenlerin toplamından ne kadar ağır?",
+        "metin": "NASA'nın kütleleri (10²⁴ kg): Merkür 0,330; Venüs 4,867; Dünya 5,972; Mars 0,642; Satürn 568,3; Uranüs 86,8; Neptün 102,4. Topla: 0,330 + 4,867 + 5,972 + 0,642 + 568,3 + 86,8 + 102,4 ≈ 769,3. Jüpiter 1898,1. Böl: 1898,1 / 769,3 ≈ 2,47. Dünya'ya göre: 1898,1 / 5,972 ≈ 318. Sonuç: Jüpiter öbür yedi gezegenin toplamından yaklaşık 2,5 kat, Dünya'dan yaklaşık 318 kat ağırdır."
+      },
+      "akilda": "Jüpiter: 318 Dünya kütlesi, öbür gezegenlerin toplamının ~2,5 katı, günü ~9 sa 56 dk, 115 uydu. Satürn: 95 Dünya kütlesi, sudan az yoğun tek gezegen (0,69 g/cm³), 293 uydu."
+    },
+    {
+      "baslik": "Uranüs ve Neptün: buz devleri",
+      "paragraflar": [
+        "Uranüs ile Neptün birbirine çok benzer iki buz devidir. Uranüs'ün çapı Dünya'nınkinin 4,0, Neptün'ün 3,9 katıdır. Kütleleri ise ters sıradadır: Uranüs Dünya'nın yaklaşık 14,5, Neptün yaklaşık 17,1 katıdır. Daha küçük olan Neptün daha kütlelidir; bu yüzden yoğunluğu da daha yüksektir (1,64'e karşı 1,27 g/cm³). Dönmeleri hızlıdır: JPL'ye göre Uranüs'ün bir dönüşü yaklaşık 17 saat 14 dakika, Neptün'ünkü yaklaşık 16 saat 7 dakikadır. Uranüs, Venüs gibi, JPL tablosunda eksi işaretli bir dönme süresiyle verilir.",
+        "NASA'ya göre Uranüs'ün Ağustos 2026 itibarıyla resmen tanınmış 29, Neptün'ün 16 uydusu vardır. Yılları çok uzundur: Uranüs Güneş'in çevresini 84,0, Neptün 164,8 yılda dolanır. Gökte bulmaları kolay değildir. Wikipedia'ya göre Uranüs, ışık kirliliği olmayan bir gökte çıplak gözle görülebilir, ama rahatça bulmak için dürbün gerekir; Neptün de orta boy bir dürbünle seçilebilir. Bir yıldızdan farkını anlamak için onu birkaç gece aynı bölgede gözleyip yer değiştirdiğini fark etmen gerekir; bunun için bir yıldız haritası ve gözlem defteri en iyi yardımcıdır."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Neptün, Uranüs'ten neden daha yoğun?",
+        "metin": "Kütleler (10²⁴ kg): Uranüs 86,81, Neptün 102,41; oran 102,41 / 86,81 ≈ 1,18, yani Neptün %18 daha kütleli. Ortalama yarıçaplar: Uranüs 25.362 km, Neptün 24.622 km; hacim yarıçapın küpüyle orantılı olduğundan hacim oranı (24.622 / 25.362)³ ≈ 0,971³ ≈ 0,915. Yoğunluk = kütle / hacim, oran ≈ 1,18 / 0,915 ≈ 1,29. JPL değerleriyle sağlama: 1,638 / 1,270 ≈ 1,29. Sonuç: Neptün, Uranüs'ten yaklaşık %29 daha yoğundur, çünkü daha küçük bir hacme daha fazla kütle sığdırmıştır."
+      },
+      "akilda": "Uranüs ve Neptün buz devi; boyları neredeyse aynı, ama Neptün daha küçük ve daha kütleli, yani daha yoğun. Uranüs 29, Neptün 16 uydu; ikisi de dürbünle seçilebilir."
+    },
+    {
+      "baslik": "Uydular: değişen bir sayı",
+      "paragraflar": [
+        "NASA'ya göre Ekim 2026 itibarıyla gezegenlerin çevresinde, cüce gezegen Plüton dahil, resmî olarak tanınmış 461 uydu vardı. NASA'nın gezegen sayfalarındaki dağılım: Merkür ve Venüs 0, Dünya 1, Mars 2, Jüpiter 115, Satürn 293 (Ağustos 2026 itibarıyla), Uranüs 29 (Ağustos 2026 itibarıyla), Neptün 16, Plüton 5. Wikipedia da 2026 için aynı sayıları veriyor.",
+        "Bu sayıyı ezber bilgisi gibi deftere geçirme. NASA'nın Mart 2025'te güncellenen gezegen bilgi tablosunda Jüpiter için 95, Satürn için 274, Uranüs için 28 yazıyor. İki NASA kaynağı arasında Jüpiter'in sayısı 20, Satürn'ünki 19 artmış görünüyor. Sayı yeni keşiflerle yine değişebilir; bu yüzden uydu sayısını hep tarihiyle yaz. Bu, bilimin canlı olduğunu gösteren küçük ama güzel bir örnektir: ders kitabındaki sayı, kitap basıldığı gün eskimeye başlar.",
+        "Sayının içinde ne olduğunu da bil. NASA'nın Jüpiter sayfası 115 uyduyu Uluslararası Astronomi Birliği'nin resmen tanıdığı uydular diye verir; Satürn sayfası ise 'doğrulanmış' uydulardan söz eder. Yani sayılan uydular, resmî tanıma ya da doğrulamadan geçmiş olanlardır; aday cisimler bu sayıya girmez. Toplamı kendin sağlayabilirsin: 0 + 0 + 1 + 2 + 115 + 293 + 29 + 16 + 5 = 461; NASA'nın Ekim 2026 toplamıyla aynı. Bu sayıların büyük kısmını Satürn ile Jüpiter oluşturur: ikisi birlikte 408 uydu, yani toplamın yaklaşık %88,5'i."
+      ],
+      "akilda": "Ekim 2026'da 461 resmî uydu (Jüpiter 115, Satürn 293, Uranüs 29, Neptün 16). Sayılar artıyor; hep tarihiyle yaz."
+    },
+    {
+      "baslik": "Plüton ve cüce gezegenler",
+      "paragraflar": [
+        "Plüton'u Clyde Tombaugh 1930'da buldu ve uzun yıllar dokuzuncu gezegen sayıldı. Sonra Neptün'ün ötesinde benzer cisimler bulundu. Bunların en önemlisi Eris'ti; 5 Ocak 2005'te keşfedilen ve Plüton'la neredeyse aynı büyüklükteki bu cisim, 'gezegen nedir?' tartışmasını başlattı. Uluslararası Astronomi Birliği (IAU) 24 Ağustos 2006'da gezegeni tanımladı: gezegen Güneş'in çevresinde dolanır, kendi kütleçekimi onu neredeyse küresel biçime sokacak kadar kütlelidir ve yörüngesinin çevresini temizlemiştir. Plüton üçüncü koşulu sağlamadığı için cüce gezegen oldu.",
+        "IAU şimdiye kadar beş cüce gezegen tanıdı: Ceres, Plüton, Haumea, Makemake ve Eris. Plüton yaklaşık 2377 km çapla en büyüğüdür; yani Merkür'ün yarısından da küçüktür. NASA'nın New Horizons aracı 14 Temmuz 2015'te Plüton'un yanından geçerek ilk yakın görüntüleri çekti. Ceres, iç Güneş Sistemi'ndeki tek cüce gezegendir ve Mars ile Jüpiter arasındaki asteroit kuşağındadır. Plüton'un yörüngesi ise Neptün'le ilginç bir bağ içindedir: Neptün Güneş'in çevresini üç kez dolanırken Plüton iki kez dolanır. Ayrıca, yörüngesi Neptün'ünkini kesse de Plüton Neptün'e hiçbir zaman Uranüs'e yaklaştığı kadar yaklaşmaz. Cüce gezegenler, asteroit kuşağı, Kuiper kuşağı ve kuyruklu yıldızlar 19. dersin konusudur."
+      ],
+      "akilda": "IAU 2006: gezegen = Güneş'i dolanır + neredeyse küresel + yörüngesini temizlemiş. Plüton üçüncüsünü sağlamaz, cüce gezegendir. Beş cüce gezegen: Ceres, Plüton, Haumea, Makemake, Eris."
+    },
+    {
+      "baslik": "Güneş Sistemi nasıl oluştu?",
+      "paragraflar": [
+        "Gezegenlerin bu düzeni, doğumlarının izini taşır. Wikipedia'ya göre Güneş yaklaşık 4,6 milyar yıl önce dev bir moleküler bulutun bir parçasının çökmesiyle oluştu. Güneş Sistemi'ndeki en yaşlı malzemenin radyometrik yaşı 4,567 milyar yıldır. NASA'ya göre moleküler bulutlar Güneş'in 1000 ile 10 milyon katı kütleye ulaşabilen, yüzlerce ışık yılı boyunda olabilen soğuk gaz bulutlarıdır; soğukluk gazın topaklanmasına yol açar ve bu topakların bazıları sonunda kendi çekimiyle çöker. Çöken bir bulut parçası önce düşük kütleli bir önyıldız, sonra onun çevresinde dönen bir öngezegen diski oluşturur. Çöküş sürdükçe gazın giderek artan kısmı yıldıza değil diske düşer; bunun nedeni açısal momentumun korunmasıdır. Açısal momentumu, kollarını kapattığında daha hızlı dönen bir buz patencisinden tanırsın.",
+        "Gezegenler bu diskin malzemesinden doğdu. Bugünkü dağılım bu doğumun izini taşır: içteki gezegenler erime noktası yüksek silikatlar ve metallerden, dıştakiler erime noktası düşük gazlardan ve 'buzlardan' yapılmıştır. Bu düzenin nasıl ortaya çıktığının ayrıntıları bu derste kaynakla ele alınmadı; disklerin yapısını ve ömrünü 14. derste göreceksin. Burada aklında tutman gereken şu: gezegenler, Güneş'le aynı bulutun aynı çöküşünden çıktı. Bu yüzden Güneş Sistemi'nin yaşı ile Güneş'in yaşı aşağı yukarı aynıdır.",
+        "Oluşumun yarım kalmış bir yeri de var: Mars ile Jüpiter arasındaki asteroit kuşağı, Güneş'ten yaklaşık 2,3–3,3 AB uzaktadır. NASA'ya göre Güneş Sistemi'nin ilk dönemlerinde yeni oluşan Jüpiter'in çekimi bu bölgede gezegen oluşumunu durdurdu. Kuşaktaki bütün asteroitlerin toplam kütlesi Ay'ınkinden azdır. Neptün'ün ötesinde, yaklaşık 30 AB'den başlayıp ana bölümüyle 50 AB civarına uzanan Kuiper kuşağı vardır; NASA'ya göre milyonlarca küçük buzlu cisim içerir ama toplam kütlesi Dünya'nınkinin yaklaşık %10'unu geçmez. Ayrıntılar 19. derste."
+      ],
+      "akilda": "Güneş Sistemi ~4,6 milyar yıl önce çöken bir moleküler bulut parçasından doğdu; önyıldızın çevresinde oluşan diskten gezegenler çıktı. İçte kaya ve metal, dışta gaz ve buz; Jüpiter asteroit kuşağında gezegen oluşumunu durdurdu."
+    }
+  ],
+  "formuller": [
+    { "ad": "Kepler III (Güneş Sistemi biçimi)", "ifade": "P² = a³", "aciklama": "P: yıldızıl dönem (yıl), a: yarı büyük eksen (AB). 3. dersten. Jüpiter: 5,204³ ≈ 141 ve 11,862² ≈ 141." },
+    { "ad": "Işığın yolculuk süresi", "ifade": "t = d / c", "aciklama": "t: süre (s), d: uzaklık (m), c = 299.792.458 m/s. 1 AB için t ≈ 499 s ≈ 8 dk 19 sn; Neptün (30,2 AB) için ≈ 4 sa 11 dk." },
+    { "ad": "Kilometreden AB'ye", "ifade": "a (AB) = a (km) / 149.597.870,7", "aciklama": "2012 tanımı: 1 AB = 149.597.870.700 m. Kilometreyi 149.597.870,7'ye böl." },
+    { "ad": "Yoğunluk", "ifade": "ρ = M / V,  V = (4/3) × π × R³", "aciklama": "ρ: ortalama yoğunluk (g/cm³ ya da kg/m³), M: kütle, V: hacim, R: ortalama yarıçap. Küre varsayar. Su ≈ 1 g/cm³." },
+    { "ad": "Başka bir gezegende tartı", "ifade": "Tartı_gezegen = Tartı_Dünya × g_gezegen / g_Dünya", "aciklama": "g: yüzey (ekvator) çekim ivmesi, m/s². Dünya 9,80; Mars 3,71; Merkür 3,70. Kütle değişmez, yalnız çekim kuvveti değişir." }
+  ],
+  "anahtar_sayilar": [
+    { "deger": "1 AB = 149.597.870.700 m (≈ 499 ışık saniyesi)", "aciklama": "Astronomik birimin 2012 tanımı", "kaynak_url": "https://en.wikipedia.org/wiki/Astronomical_unit" },
+    { "deger": "Merkür 0,39 · Venüs 0,72 · Dünya 1 · Mars 1,52 · Jüpiter 5,20 · Satürn 9,57 · Uranüs 19,2 · Neptün 30,2 AB", "aciklama": "Yarı büyük eksenler (NASA km değerlerinden AB'ye çevrildi)", "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/jupiterfact.html" },
+    { "deger": "88 g · 224,7 g · 365,26 g · 687 g · 11,86 y · 29,4 y · 84,0 y · 164,8 y", "aciklama": "Merkür'den Neptün'e yıldızıl yörünge dönemleri", "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/neptunefact.html" },
+    { "deger": "47,4 · 35,0 · 29,8 · 24,1 · 13,1 · 9,7 · 6,8 · 5,4 km/s", "aciklama": "Merkür'den Neptün'e ortalama yörünge hızları", "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/" },
+    { "deger": "%99,86", "aciklama": "Güneş'in Güneş Sistemi kütlesindeki payı", "kaynak_url": "https://en.wikipedia.org/wiki/Solar_System" },
+    { "deger": "Merkür 5,43 · Venüs 5,24 · Dünya 5,51 · Mars 3,93 · Jüpiter 1,33 · Satürn 0,69 · Uranüs 1,27 · Neptün 1,64 g/cm³", "aciklama": "Ortalama yoğunluklar (NASA JPL)", "kaynak_url": "https://ssd.jpl.nasa.gov/planets/phys_par.html" },
+    { "deger": "Merkür 58,6 g · Venüs 243,0 g · Dünya 23,93 sa · Mars 24,62 sa · Jüpiter 9,93 sa · Satürn 10,66 sa · Uranüs 17,24 sa · Neptün 16,11 sa", "aciklama": "Yıldızlara göre kendi ekseni çevresinde dönme süreleri (JPL; Venüs ve Uranüs tabloda eksi işaretli)", "kaynak_url": "https://ssd.jpl.nasa.gov/planets/phys_par.html" },
+    { "deger": "Merkür 3,70 · Venüs 8,87 · Dünya 9,80 · Mars 3,71 · Jüpiter 24,79 · Satürn 10,44 · Uranüs 8,87 · Neptün 11,15 m/s²", "aciklama": "Ekvatorda çekim ivmesi (JPL)", "kaynak_url": "https://ssd.jpl.nasa.gov/planets/phys_par.html" },
+    { "deger": "Jüpiter 1898 · Satürn 568 · Neptün 102 · Uranüs 86,8 · Dünya 5,97 · Venüs 4,87 · Mars 0,642 · Merkür 0,330 (×10²⁴ kg)", "aciklama": "Gezegen kütleleri (NASA NSSDCA)", "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/" },
+    { "deger": "461 (Ekim 2026)", "aciklama": "Gezegenlerin (Plüton dahil) resmî tanınmış uydu sayısı; değişebilir", "kaynak_url": "https://science.nasa.gov/solar-system/moons/facts/" },
+    { "deger": "Jüpiter 115 · Satürn 293 · Uranüs 29 · Neptün 16 · Mars 2 · Dünya 1", "aciklama": "Gezegen başına uydu sayıları (NASA, Ağustos–Eylül 2026 sayfaları)", "kaynak_url": "https://science.nasa.gov/saturn/moons/" },
+    { "deger": "24 Ağustos 2006", "aciklama": "IAU 5A kararı: gezegen tanımı, Plüton cüce gezegen oldu", "kaynak_url": "https://en.wikipedia.org/wiki/IAU_definition_of_planet" },
+    { "deger": "~4,6 milyar yıl; en yaşlı malzeme 4,567 milyar yıl", "aciklama": "Güneş'in ve Güneş Sistemi'nin yaşı", "kaynak_url": "https://en.wikipedia.org/wiki/Sun" },
+    { "deger": "2,3–3,3 AB", "aciklama": "Asteroit kuşağının uzaklık aralığı", "kaynak_url": "https://en.wikipedia.org/wiki/Solar_System" }
+  ],
+  "sozluk": [
+    { "terim": "Karasal gezegen", "tanim": "Katı yüzeyli, yoğun, kaya ve metalden yapılmış iç gezegen (Merkür, Venüs, Dünya, Mars)." },
+    { "terim": "Gaz devi", "tanim": "Çoğunlukla hidrojen ve helyumdan oluşan, katı yüzeyi olmayan dev gezegen (Jüpiter, Satürn)." },
+    { "terim": "Buz devi", "tanim": "Büyük ölçüde su, metan ve amonyak gibi astronomik anlamda 'buz' sayılan maddelerden oluşan dev gezegen (Uranüs, Neptün)." },
+    { "terim": "Astronomik birim (AB)", "tanim": "Tam 149.597.870.700 metrelik uzunluk birimi; yaklaşık Dünya–Güneş ortalama uzaklığı." },
+    { "terim": "Yıldızıl dönem", "tanim": "Bir gezegenin Güneş çevresini yıldızlara göre bir kez dolanma süresi." },
+    { "terim": "Ortalama yoğunluk", "tanim": "Bir cismin toplam kütlesinin toplam hacmine bölümü; suyunki yaklaşık 1 g/cm³." },
+    { "terim": "Cüce gezegen", "tanim": "Güneş'i dolanan, neredeyse küresel, ama yörüngesinin çevresini temizlememiş ve uydu olmayan cisim." },
+    { "terim": "Moleküler bulut", "tanim": "Soğuk, dev bir yıldızlararası gaz bulutu; içindeki topaklar çökerek yıldızları doğurur." },
+    { "terim": "Öngezegen diski", "tanim": "Genç bir yıldızın çevresinde dönen, gezegenlerin malzemesini taşıyan gaz ve toz diski." },
+    { "terim": "Açısal momentum", "tanim": "Dönen bir cismin dönme 'miktarı'; dış etki yoksa korunur, bu yüzden büzülen cisim hızlanır." }
+  ],
+  "defter_notu": [
+    "Karasal: Merkür, Venüs, Dünya, Mars — katı yüzey, yoğun (3,9–5,5 g/cm³), az/hiç uydu, halka yok.",
+    "Gaz devi: Jüpiter, Satürn (H, He). Buz devi: Uranüs, Neptün. Hepsinde halka + çok uydu.",
+    "1 AB = 149.597.870.700 m ≈ 8 dk 19 sn ışık. AB: 0,39 · 0,72 · 1 · 1,52 · 5,20 · 9,57 · 19,2 · 30,2.",
+    "Hız: Merkür 47,4 → Neptün 5,4 km/s. Kepler III: P² = a³ (Jüpiter 141 ≈ 141).",
+    "Merkür 2 yılda 3 dönüş. Venüs'te dönüş (243 g) yıldan (224,7 g) uzun.",
+    "Mars: kütle ~%11 Dünya, gün ~24 sa 37 dk, g = 3,71 → 70 kg tartı 26,5 kg gösterir.",
+    "Jüpiter 318 Dünya kütlesi, günü ~9 sa 56 dk. Satürn 0,69 g/cm³ → sudan az yoğun tek gezegen.",
+    "Neptün Uranüs'ten küçük ama ağır → daha yoğun. Uydular tarihli: Ekim 2026'da 461.",
+    "IAU 2006: Plüton cüce gezegen. 5 cüce gezegen: Ceres, Plüton, Haumea, Makemake, Eris.",
+    "Oluşum: ~4,6 milyar yıl önce moleküler bulut çöktü → önyıldız + disk → gezegenler."
+  ],
+  "sorular": [
+    { "soru": "Bir kuyrukluyıldızın yarı büyük ekseni 9 AB ise Güneş'i kaç yılda dolanır? Bu sürenin hangi gezegene yakın olduğunu söyle.", "cevap": "P² = a³ = 9³ = 729, P = √729 = 27 yıl. Satürn'ün dönemine (29,4 yıl) yakındır; Satürn de yaklaşık 9,6 AB'dedir." },
+    { "soru": "Plüton neden 2006'dan sonra gezegen sayılmıyor? Hangi koşulu sağlıyor, hangisini sağlamıyor?", "cevap": "Güneş'in çevresinde dolanıyor ve neredeyse küresel; bu iki koşulu sağlıyor. Ama yörüngesinin çevresini temizlemedi; Neptün'ün ötesinde benzer pek çok cisimle aynı bölgeyi paylaşıyor. Bu yüzden IAU'nun 5A kararına göre cüce gezegendir." },
+    { "soru": "Bir kitapta 'Jüpiter'in 95 uydusu var' yazıyor, NASA ise 115 diyor. Hangisi yanlış?", "cevap": "Büyük olasılıkla ikisi de kendi tarihinde doğru. NASA'nın Mart 2025 tablosu 95 diyordu, 2026 sayfası 115 diyor. Uydu sayıları yeni keşiflerle artar; bu yüzden sayı her zaman tarihiyle birlikte verilmeli." },
+    { "soru": "Satürn'ün kütlesi Dünya'nın 95 katı olduğu hâlde ortalama yoğunluğu neden Dünya'nınkinden çok düşük?", "cevap": "Yoğunluk kütlenin hacme bölümüdür. Satürn'ün çapı Dünya'nın 9,4 katıdır, yani hacmi yaklaşık 9,4³ ≈ 830 katıdır. Kütle 95 kat artarken hacim yaklaşık 830 kat arttığı için yoğunluk yaklaşık 95 / 830 ≈ 0,11 katına düşer: 5,51 × 0,11 ≈ 0,63 g/cm³. Bu kaba hesap (ekvator çapıyla) JPL'nin 0,69 değerine yakındır. Ayrıca Satürn çoğunlukla hafif hidrojen ve helyumdan yapılmıştır." },
+    { "soru": "Merkür ile Mars'ın yüzey çekimi neredeyse aynı (3,70 ve 3,71 m/s²). Mars çok daha büyük olduğuna göre bu nasıl olur?", "cevap": "Yüzey çekimi hem kütleye hem yarıçapa bağlıdır. Merkür daha küçüktür ama çok daha yoğundur (5,43'e karşı 3,93 g/cm³); yüzeyi merkezine daha yakın olduğu için çekim büyür. İki etki birbirini dengeler ve sonuç neredeyse aynı çıkar." },
+    { "soru": "Gün batımından sonra gökte çok parlak bir 'yıldız' görüyorsun ve parlaklığı yaklaşık −4 kadir. Bu ne olabilir, nasıl emin olursun?", "cevap": "Venüs olabilir; Wikipedia'ya göre −4,92 kadire kadar parlar. Jüpiter en fazla −2,94, en parlak yıldız Sirius −1,46 kadire ulaştığı için −4 civarındaki bir nokta büyük olasılıkla Venüs'tür. Emin olmak için uygulamanın gökyüzü haritasında o yönde bir gezegen olup olmadığına bakabilir, birkaç gece izleyip yıldızlara göre yer değiştirip değiştirmediğini görebilirsin. Dürbünle bakacaksan Güneş'in tamamen battığından emin ol." },
+    { "soru": "Bir aracın Mars'tan kalkması mı yoksa Dünya'dan kalkması mı daha kolaydır? Sayıyla gerekçelendir.", "cevap": "Mars'tan. Kurtulma hızı Mars'ta 5,03 km/s, Dünya'da 11,19 km/s; yani Mars'tan kurtulmak yaklaşık 2,2 kat daha düşük hız ister." },
+    { "soru": "Güneş Sistemi'ndeki en yaşlı malzemenin yaşı nedir ve bu sayı Güneş'in yaşıyla nasıl ilişkilidir?", "cevap": "Radyometrik yaş 4,567 milyar yıldır. Güneş yaklaşık 4,6 milyar yıl önce bir moleküler bulut parçasının çökmesiyle oluştu; en yaşlı malzemenin yaşı bu tarihle uyumludur, çünkü gezegenler ve küçük cisimler Güneş'le aynı çöküşten doğan diskten oluştu." }
+  ],
+  "kaynaklar": [
+    { "ad": "NASA NSSDCA – Planetary Fact Sheet (Metric)", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/" },
+    { "ad": "NASA NSSDCA – Jupiter, Saturn, Uranus, Neptune Fact Sheets", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/jupiterfact.html" },
+    { "ad": "NASA NSSDCA – Earth Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html" },
+    { "ad": "NASA JPL SSD – Planetary Physical Parameters", "url": "https://ssd.jpl.nasa.gov/planets/phys_par.html" },
+    { "ad": "NASA Science – Planets", "url": "https://science.nasa.gov/solar-system/planets/" },
+    { "ad": "NASA Science – Planet Sizes and Locations in Our Solar System", "url": "https://science.nasa.gov/solar-system/planets/planet-sizes-and-locations-in-our-solar-system/" },
+    { "ad": "NASA Science – Moons: Facts", "url": "https://science.nasa.gov/solar-system/moons/facts/" },
+    { "ad": "NASA Science – Jupiter Moons", "url": "https://science.nasa.gov/jupiter/jupiter-moons/" },
+    { "ad": "NASA Science – Saturn Moons", "url": "https://science.nasa.gov/saturn/moons/" },
+    { "ad": "NASA Science – Uranus Moons", "url": "https://science.nasa.gov/uranus/moons/" },
+    { "ad": "NASA Science – Neptune Moons", "url": "https://science.nasa.gov/neptune/moons/" },
+    { "ad": "NASA Science – Mars Moons", "url": "https://science.nasa.gov/mars/moons/" },
+    { "ad": "NASA Science – Dwarf Planets", "url": "https://science.nasa.gov/dwarf-planets/" },
+    { "ad": "NASA Science – Asteroids: Facts", "url": "https://science.nasa.gov/solar-system/asteroids/facts/" },
+    { "ad": "NASA Science – Kuiper Belt: Facts", "url": "https://science.nasa.gov/solar-system/kuiper-belt/facts/" },
+    { "ad": "Wikipedia – Solar System", "url": "https://en.wikipedia.org/wiki/Solar_System" },
+    { "ad": "Wikipedia – Astronomical unit", "url": "https://en.wikipedia.org/wiki/Astronomical_unit" },
+    { "ad": "Wikipedia – IAU definition of planet", "url": "https://en.wikipedia.org/wiki/IAU_definition_of_planet" },
+    { "ad": "Wikipedia – Sun (oluşum ve yaş)", "url": "https://en.wikipedia.org/wiki/Sun" },
+    { "ad": "Wikipedia – Protostar", "url": "https://en.wikipedia.org/wiki/Protostar" },
+    { "ad": "Wikipedia – Apparent magnitude", "url": "https://en.wikipedia.org/wiki/Apparent_magnitude" },
+    { "ad": "Wikipedia – Binoculars (Astronomical)", "url": "https://en.wikipedia.org/wiki/Binoculars" }
+  ]
+}

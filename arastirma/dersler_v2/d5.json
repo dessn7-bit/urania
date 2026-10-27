@@ -1,0 +1,271 @@
+{
+  "id": "d5",
+  "unite": "yildizlar",
+  "baslik": "Yıldızların hayatı",
+  "ozet": "Bir yıldızın rengi, parlaklığı, büyüklüğü ve ne kadar yaşayacağı büyük ölçüde tek bir sayıya bağlıdır: doğduğu kütleye. Bu derste yıldızları tayflarına göre sınıflamayı, H-R diyagramını okumayı, yıldızı ayakta tutan iç dengeyi ve büyük yıldızların neden kısa yaşadığını öğreneceksin.",
+  "on_bilgi": ["d2", "d4", "d14"],
+  "bolumler": [
+    {
+      "baslik": "Yıldızları tayflarına göre sınıflamak",
+      "paragraflar": [
+        "Bir yıldızın ışığını prizmadan geçirirsen gökkuşağı şeridinin üstünde koyu çizgiler görürsün (tayf d2'de). Her çizgi belli bir elemente ya da moleküle aittir. Çizgilerin gücü yıldızdan yıldıza değişir, ama bu farkın asıl nedeni bileşim değildir. Wikipedia'ya göre çizgilerin gücü esas olarak yıldızın yüzey katmanının sıcaklığına göre değişir; gerçek bileşim farkı ancak bazı durumlarda devreye girer. Bu yüzden bir yıldızın tayf sınıfı, yüzeyindeki atomların iyonlaşma durumunun kısa bir özeti, dolayısıyla yüzey sıcaklığının bir ölçüsüdür.",
+        "Sınıflamanın hikâyesi Harvard Gözlemevi'nde geçer. Edward Pickering kadın gökbilimcileri işe aldı; Williamina Fleming kataloğun ilk baskısındaki tayfların çoğunu sınıfladı. Antonia Maury 1897'de B türünü A'nın önüne aldı. Annie Jump Cannon 1901'de harfli sisteme döndü ve O, B, A, F, G, K, M ile N dışındaki harfleri attı; 1912'de alt sınıfları B0, A0, B5 gibi bugünkü biçime soktu. Sıranın alfabetik olmamasının nedeni bu tarihtir. İngilizce konuşan öğrenciler sırayı “Oh Be A Fine Girl/Guy, Kiss Me” cümlesiyle ezberler.",
+        "Bugün yıldızlar sıcaktan soğuğa yedi harfle sınıflanır: O, B, A, F, G, K, M. Her harf 0'dan 9'a bölünür; 0 o sınıfın en sıcağı, 9 en soğuğudur (A9'dan sonra F0 gelir). Güneş G2 sınıfındadır. Meghnad Saha atomların iyonlaşmasını açıklayan bir kuram geliştirdi; Cecilia Payne 1925'teki tezinde bu dizinin gerçekten bir sıcaklık dizisi olduğunu gösterdi. Hidrojen çizgileri en güçlü hâline A0 yıldızlarında ulaşır; daha sıcak ve daha soğuk yıldızlarda zayıflar.",
+        "Wikipedia'nın anakol yıldızları için verdiği yaklaşık değerler şöyle: O 33.000 K ve üstü, mavi, en az 16 Güneş kütlesi; B 10.000–33.000 K, mavimsi beyaz, 2,1–16 Güneş kütlesi; A 7300–10.000 K, beyaz, 1,4–2,1; F 6000–7300 K, sarımsı beyaz, 1,04–1,4; G 5300–6000 K, sarı, 0,8–1,04; K 3900–5300 K, açık turuncu, 0,45–0,8; M 2300–3900 K, turuncumsu kırmızı, 0,08–0,45 Güneş kütlesi. Başka kaynaklar sınırları biraz farklı çizer; bunlar keskin duvarlar değil, yaklaşık eşiklerdir. Aynı kaynak bir uyarı da ekler: tipik gözlem koşullarında yeşil ya da mor yıldız yoktur.",
+        "Renk farkını İstanbul'dan kendin görebilirsin. Ocak ve Şubat akşamlarında iyi görülen Avcı takımyıldızında iki parlak yıldız var: Betelgeuse ve Rigel. d2'de geçen Wikipedia değerlerine göre Betelgeuse'ün yüzeyi yaklaşık 3800 kelvin, Rigel'inki yaklaşık 12.100 kelvindir. Gözün bunu turuncu-kırmızı ile mavimsi beyaz arasındaki fark olarak algılar. Uygulamanın yıldız kataloğundaki renk ölçüsü (B eksi V renk indeksi; büyük değer daha kırmızı demektir) aynı farkı sayıyla gösterir: Betelgeuse için 1,50, Rigel için −0,03. Bir yıldızın rengine bakmak, onun yüzey sıcaklığını kabaca okumaktır."
+      ],
+      "akilda": "Tayf sınıfı (O B A F G K M) yüzey sıcaklığının ölçüsüdür; çizgilerin farkı esas olarak sıcaklıktan gelir, bileşimden değil. Güneş G2'dir."
+    },
+    {
+      "baslik": "Işıma sınıfları: aynı renk, farklı boy",
+      "paragraflar": [
+        "Aynı tayf sınıfındaki, yani aynı sıcaklıktaki iki yıldız çok farklı parlaklıkta olabilir. Bunu ilk fark edenlerden biri Ejnar Hertzsprung'du: 1906'da Potsdam'da en kırmızı yıldızları ikiye ayırdı ve onlara “dev” ve “cüce” adını verdi. Aynı renkte, aynı sıcaklıkta oldukları halde devler cücelerden kat kat parlaktı. Bunun tek açıklaması boydur.",
+        "Neden boy? Bir yıldızın ışıma gücü, yani saniyede yaydığı toplam enerji, yüzey alanıyla ve sıcaklığın dördüncü kuvvetiyle orantılıdır: L = 4πR²σT⁴ (Stefan-Boltzmann yasası d2'de). Sıcaklık aynıysa her metrekare aynı miktarda ışık verir; o halde 100 kat parlak bir yıldızın yüzeyi 100 kat, yarıçapı ise 10 kat büyük olmalıdır. Sıcaklık ve parlaklık ölçülebildiği için bu formül, hiçbir teleskobun diskini çözemediği yıldızların yarıçapını hesaplamamızı sağlar.",
+        "Bu boy farkını sınıflamaya katan sistem 1943'te William Morgan, Philip Keenan ve Edith Kellman tarafından Yerkes Gözlemevi'nde kuruldu (MK sistemi). Harfin yanına bir Romen rakamı eklenir: Ia ve Ib süperdevler, II parlak devler, III normal devler, IV altdevler, V anakol yıldızları (cüceler), VI altcüceler, VII beyaz cücelerdir; en uçta 0 ya da Ia+ ile gösterilen hiperdevler vardır. Güneş'in tam sınıfı G2V'dir: yüzey sıcaklığı yaklaşık 5800 kelvin olan bir anakol yıldızı. Yani G2 rengini, V ise boyunu söyler."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Sıcaklık ve parlaklıktan yarıçap",
+        "metin": "Formülü Güneş birimleriyle yazarsak σ ve 4π sadeleşir: R ÷ R☉ = √(L ÷ L☉) ÷ (T ÷ 5772 K)². Burada 5772 K, IAU'nun Güneş için kabul ettiği etkin sıcaklıktır. 1. adım: Mamajek'in anakol tablosunda bir A0V yıldızı için sıcaklık 9700 K, ışıma gücünün logaritması 1,58 verilir. L = 10^1,58 ≈ 38 L☉. 2. adım: √38 ≈ 6,17. 3. adım: Sıcaklık oranı 9700 ÷ 5772 ≈ 1,681; karesi ≈ 2,824. 4. adım: R ≈ 6,17 ÷ 2,824 ≈ 2,18 R☉. Aynı tablo bu yıldız için 2,19 R☉ verir; hesap tutuyor. İkinci deneme, uydurma bir yıldızla: yüzeyi 4000 K, ışıma gücü 100 L☉ olsun. √100 = 10; (4000 ÷ 5772)² ≈ 0,480; R ≈ 10 ÷ 0,480 ≈ 21 R☉. Soğuk ama parlak bir yıldız ancak devasa olabilir. Sonuç: A0V için yaklaşık 2,2 Güneş yarıçapı; soğuk parlak yıldız için yaklaşık 21 Güneş yarıçapı."
+      },
+      "akilda": "Aynı sıcaklıkta daha parlak olan yıldız daha büyüktür, çünkü L = 4πR²σT⁴. MK sistemi bu farkı Romen rakamıyla yazar: Güneş G2V, yani G2 renginde bir anakol yıldızıdır."
+    },
+    {
+      "baslik": "H-R diyagramı ve anakol",
+      "paragraflar": [
+        "Ejnar Hertzsprung 1911'de, Henry Norris Russell 1913'te birbirinden bağımsız olarak yıldızların parlaklığını tayf sınıflarına karşı çizdi. Özgün diyagramın yatay ekseninde tayf sınıfı, dikey ekseninde mutlak görsel kadir vardı. Bugün Hertzsprung-Russell (H-R) diyagramı dediğimiz grafiğin her biçiminde ortak bir düzen vardır: ışıma gücü yüksek yıldızlar yukarıda, yüzey sıcaklığı yüksek yıldızlar soldadır. Dikkat: sıcaklık sola doğru artar, alışık olduğumuz grafiklerin tersine.",
+        "Yıldızlar diyagrama rastgele dağılmaz. En belirgin yapı, sol üstten (sıcak ve parlak) sağ alta (soğuk ve sönük) inen köşegendir: anakol. Sol altta beyaz cüceler, anakolun üstünde ise devler ve süperdevler bulunur. Wikipedia beyaz cüceler için ilginç bir not düşer: çok yaygındırlar ama ışıma güçleri çok düşüktür, bu yüzden gökte göze çarpmazlar. Bir önceki bölümün mantığıyla okursan: sağ üstteki soğuk ama parlak yıldızlar dev olmalı, sol alttaki sıcak ama sönük yıldızlar çok küçük olmalı. Diyagram böylece bir boy haritası da olur.",
+        "Yıldızlar ömürlerinin büyük kısmını anakolda, çekirdeklerinde hidrojeni helyuma kaynaştırarak geçirir. Wikipedia'ya göre bu yüzden 0,5 Güneş kütlesinden ağır gözlenen yıldızların yaklaşık %90'ı anakoldadır. Anakol boyunca dizilişi belirleyen kütledir: düşük kütleli yıldızlar soğuk ve sönük uçta, kütleli yıldızlar sıcak ve parlak uçta yer alır. Anakol ince bir çizgi değil bir şerittir: yıldızlar anakolda yaşlandıkça biraz kayar, başlangıçtaki bileşim farkları da şeridi genişletir. Bir yıldızın anakola ilk yerleştiği ana sıfır yaş anakolu denir. Diyagramın asıl gücü yıldız kümelerinde ortaya çıkar; kümelerin H-R diyagramıyla yaş ölçmeyi d15'te göreceksin.",
+        "Diyagram fiziği anlamanın da anahtarı oldu. Russell 1912'de diyagramı Kraliyet Astronomi Derneği'nin bir toplantısında sunduğunda Arthur Eddington bundan esinlendi ve 1926'da yayımladığı Yıldızların İç Yapısı adlı kitabında yıldızların diyagramdaki yerlerini fizikle açıkladı. Bugün Gaia uydusunun ölçtüğü milyonlarca yıldızla çizilen H-R diyagramı o kadar ayrıntılı ki, anakolda M cücelerinin bulunduğu yerde ince bir boşluk görüldü; Wikipedia'ya göre bu boşluk, yıldızın içinin tamamen konvektif hale geçtiği kütle sınırıyla açıklanıyor. Yüz yıllık bir grafik hâlâ yeni şeyler söylüyor."
+      ],
+      "akilda": "H-R diyagramında yukarı parlak, sol sıcak demektir. Köşegen şerit anakoldur ve bir kütle dizisidir; devler üstte, beyaz cüceler sol alttadır."
+    },
+    {
+      "baslik": "Yıldızın içindeki denge",
+      "paragraflar": [
+        "Güneş neden kendi ağırlığı altında çökmüyor? Kütleçekimi her parçayı merkeze doğru çeker. Ona karşı koyan, içeriden dışarıya doğru azalan gaz basıncıdır. Wikipedia'ya göre çekirdekte açığa çıkan enerjinin oluşturduğu bu basınç farkı, yıldızın kütleçekimi altında çökmesine karşı koyar. İki etkinin her katmanda dengelendiği bu duruma hidrostatik denge denir. Füzyon başladıktan kısa süre sonra yıldız bu dengeye oturur ve anakol evresi başlar.",
+        "Bu basıncın büyüklüğü hakkında bir fikir: Wikipedia'ya göre Güneş'in çekirdeğinde yoğunluk santimetreküpte 150 grama kadar çıkar, yani suyun yaklaşık 150 katıdır; sıcaklık yaklaşık 15,7 milyon kelvindir. Üstteki katmanların muazzam ağırlığını taşıyan, bu sıcak ve yoğun gazdır.",
+        "Denge kendi kendini düzeltir. Wikipedia'ya göre çekirdekte enerji üretimi azalırsa üstteki kütle çekirdeği sıkıştırır; sıkışan çekirdek ısınır, füzyon hızlanır ve basınç geri gelir. Enerji üretimi fazla artarsa yıldız genişler, çekirdek soğur ve füzyon yavaşlar. Bir termostat benzetmesi işe yarar: ev çok soğursa kombi çalışır, ısınınca durur. Sınırı şu: termostatı biri ayarlamıştır, yıldızda ise ayarı kütle belirler. Kütle büyüdükçe denge daha sıcak bir çekirdekte kurulur.",
+        "Çekirdeğin sıcaklığı füzyonun yolunu da seçer. Wikipedia'ya göre yaklaşık 18 milyon kelvinde proton-proton zinciri ile CNO döngüsü eşit verimlidir; bu, yaklaşık 1,5 Güneş kütleli bir yıldızın çekirdek sıcaklığıdır. Daha kütleli yıldızlarda CNO döngüsü baskındır ve enerji çekirdekte öyle yoğunlaşır ki çekirdek kaynayan bir tencere gibi karışır: 1,3–1,5 Güneş kütlesinden ağır yıldızların çekirdeğinde konveksiyon vardır. Güneş'te ise proton-proton zinciri baskındır (d4)."
+      ],
+      "akilda": "Yıldızı kütleçekimi içe, sıcak gazın basıncı dışa iter; bu hidrostatik dengedir. Denge kendini düzeltir: çekirdek sıkışırsa ısınır ve füzyon hızlanır."
+    },
+    {
+      "baslik": "Kütle–ışıma gücü ilişkisi",
+      "paragraflar": [
+        "Kütlesi büyük olan yıldızın kütleçekimi çekirdeğini daha çok sıkıştırır; hidrostatik denge daha yüksek bir basınçta, yani daha sıcak bir çekirdekte kurulur ve füzyon çok daha hızlı yürür. Sonuç: kütle biraz artınca ışıma gücü çok artar. Bu ilişki ilk önce gözlemden çıkarıldı: Wikipedia'ya göre çift yıldız sistemlerindeki yıldızların kütleleri ölçülüp ışıma güçleriyle karşılaştırıldı (çift yıldızlarla kütle ölçmek d15'te). Arthur Eddington 1924'te yıldız içi modellerinin aynı ilişkiyi verdiğini gösterdi.",
+        "Anakol yıldızları için sık kullanılan kural L ∝ M^3,5'tir; Wikipedia bu değerin 2 ile 55 Güneş kütlesi arasında geçerli olduğunu, beyaz cücelere ve kırmızı devlere uygulanmadığını belirtir. Aynı kaynak kütle aralığına göre değişen bir ilişki de verir: 0,43 ile 2 Güneş kütlesi arasında L = M^4, daha hafif yıldızlarda L ≈ 0,23 M^2,3, 2–55 Güneş kütlesinde L ≈ 1,4 M^3,5 (hepsi Güneş birimleriyle). Örneğin Güneş'ten iki kat kütleli bir yıldız, 0,43–2 aralığındaki kurala göre yaklaşık 2^4 = 16 kat parlaktır.",
+        "Bu kurallar kabadır. Eric Mamajek'in anakol yıldızları tablosu A0 tipi bir yıldız için 2,18 Güneş kütlesi ve yaklaşık 38 Güneş ışıma gücü verir; aynı kütleye M^4 uygulansa yaklaşık 23 çıkar. Kural ile tablo arasında neredeyse iki kat fark var. Hesap yaparken gerçek ölçümlere dayanan tablo değerleri daha güvenilirdir; kural ise büyüklük mertebesini akılda tutmak içindir."
+      ],
+      "akilda": "Anakolda kütle biraz artınca ışıma gücü çok artar: kabaca L ∝ M^3,5 ile M^4 arası. İlişki çift yıldızlardan ölçülen kütlelerle kuruldu; kural kabadır, tablo değerleri daha güvenilirdir."
+    },
+    {
+      "baslik": "Anakol ömrü: çok yakıt, kısa ömür",
+      "paragraflar": [
+        "Daha çok yakıtı olan daha uzun yaşar diye düşünürüz; yıldızlarda tersi olur. Yakıt miktarı kütleyle orantılıdır, harcama hızı ise ışıma gücüdür. Kütle iki katına çıkınca yakıt iki katına çıkar ama harcama kabaca 10–16 katına çıkar. Wikipedia'daki yaklaşık formül bunu özetler: ömür ≈ 10 milyar yıl × (M ÷ M☉) × (L☉ ÷ L).",
+        "Bu formülü Mamajek'in tablosundaki kütle ve ışıma gücü değerlerine uygulayınca şu tablo çıkar: 43 Güneş kütleli bir O5 yıldızı anakolda yalnızca yaklaşık 1,2 milyon yıl, 17,7 Güneş kütleli bir B0 yıldızı yaklaşık 4 milyon yıl, 2,18 Güneş kütleli bir A0 yıldızı yaklaşık 570 milyon yıl kalır. Güneş (G2) yaklaşık 10 milyar yıl, 0,88 Güneş kütleli bir K0 yıldızı yaklaşık 19 milyar yıl, 0,57 Güneş kütleli bir M0 yıldızı yaklaşık 82 milyar yıl yaşar. Son ikisi, 13,8 milyar yıllık evrenin bugünkü yaşından uzundur: tek başına yaşayan hiçbir M cücesinin anakolu terk etmiş olması beklenmez.",
+        "Wikipedia'ya göre Güneş yaklaşık 4,5 milyar yıldır anakoldadır ve toplam anakol ömrü yaklaşık 10 milyar yıldır. NASA'ya göre Güneş ömrünün yarısından biraz azını tamamlamıştır ve beyaz cüceye dönüşmeden önce yaklaşık 5 milyar yıl daha yaşayacaktır.",
+        "Anakolda geçen süre durgun değildir. Çekirdekte hidrojen helyuma dönüştükçe çekirdek yavaşça büzülür ve ısınır; yıldız giderek parlaklaşır. Wikipedia'ya göre genç Güneş bugünkü parlaklığının yalnızca yaklaşık %70'i kadar parlaktı; Güneş maddesi bu artışı anakola girişten bu yana 0,677'den 1,0 Güneş ışıma gücüne, yani %48 olarak verir. Güneş bugün her 100 milyon yılda yaklaşık %1 parlaklaşıyor."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Güneş'ten iki kat kütleli bir yıldız ne kadar yaşar?",
+        "metin": "1. adım: Işıma gücünü bul. 0,43–2 Güneş kütlesi aralığında L = M^4 kuralı geçerli: L = 2^4 = 16 L☉. 2. adım: Ömür formülü: τ ≈ 10 milyar yıl × (M ÷ M☉) × (L☉ ÷ L) = 10 milyar × 2 ÷ 16 = 1,25 milyar yıl. 3. adım: Aynı kaynağın kısa biçimiyle karşılaştır: τ ≈ 10 milyar yıl × (M ÷ M☉)^-2,5 = 10 milyar × 2^-2,5 ≈ 10 milyar ÷ 5,66 ≈ 1,77 milyar yıl. İki kaba formül yaklaşık %40 farklı sonuç veriyor; kesin cevap için yıldız modelleri gerekir. Sonuç: yaklaşık 1,2–1,8 milyar yıl. Kütlesi iki kat olan yıldız Güneş'ten 5–8 kat kısa yaşar."
+      },
+      "akilda": "Ömür ≈ 10 milyar yıl × M ÷ L. Kütleli yıldız yakıtını çok daha hızlı yakar: O yıldızı birkaç milyon, Güneş 10 milyar, M cücesi yüz milyarlarca yıl yaşar. Yıldız anakolda yavaşça parlaklaşır."
+    },
+    {
+      "baslik": "Anakolun sınırları ve yanıltıcı gökyüzü",
+      "paragraflar": [
+        "Anakolun bir alt ucu ve bir üst ucu vardır. Alt sınır yaklaşık 0,08 Güneş kütlesi, yani Jüpiter'in 80 katıdır; bundan hafif cisimler çekirdeklerinde hidrojeni sürekli kaynaştıracak sıcaklığa ulaşamaz. Jüpiter'in yaklaşık 13 ile 80 katı arasındaki cisimlere kahverengi cüce denir. Bunlar için harf dizisi M'de bitmez: Wikipedia'ya göre soğuk cisimlerin kızılötesi tayflarını sınıflamak için L, T ve Y türleri eklendi. Bir kahverengi cüce M türü olarak başlar, içinde füzyon sürmediği için soğudukça L, T ve Y türlerinden geçer; yani bir yıldızın aksine tayf sınıfı zamanla değişir. Üst uçta ise Wikipedia'ya göre gözlenen en kütleli anakol yıldızları 120–200 Güneş kütlesi civarındadır. Bu yıldızların nasıl doğduğunu d14'te gördün: soğuk bir moleküler bulut parçası çöker, yaklaşık 500.000 yıl süren önyıldız evresinden sonra merkezde hidrojen yanınca yıldız anakola yerleşir.",
+        "Gökyüzüne bakınca yıldızların çoğunun parlak, beyaz ve mavi olduğunu sanabilirsin. Bu bir seçim yanılgısıdır. Wikipedia'ya göre anakol yıldızlarının yaklaşık %76'sı M, %12'si K, %7,6'sı G sınıfındadır; O yıldızlarının payı on milyonda üç kadardır. Oysa EarthSky'a göre en yakın yıldız Proxima Centauri dahil hiçbir kırmızı cüce çıplak gözle görülmez. Gözle gördüklerimiz, uzaktan bile parlayabilen az sayıdaki güçlü yıldızdır.",
+        "Bu seçim yanılgısını bir kadir hesabıyla hissedebilirsin. Mamajek'in tablosunda bir M0V yıldızının ışıma gücünün logaritması −1,16'dır, yani Güneş'in yaklaşık %7'si kadar ışık verir. Işık akısı uzaklığın karesiyle azaldığı için, aynı uzaklıktaki bir M0 cücesi Güneş'ten yaklaşık 2,9 kadir daha sönük görünür (tüm dalga boylarında). Gözle bakınca fark daha da büyür: d2'deki Wien yasasına göre yaklaşık 3900 kelvinden soğuk bir yüzeyin ışıması 740 nanometrenin ötesinde, yani gözün göremediği kızılötesinde tepe yapar."
+      ],
+      "akilda": "Anakol yaklaşık 0,08 ile 120–200 Güneş kütlesi arasındadır. Yıldızların çoğu küçük ve sönük M cüceleridir ama hiçbiri çıplak gözle görülmez; gökyüzü bize parlak azınlığı gösterir."
+    },
+    {
+      "baslik": "Kırmızı dev evresi",
+      "paragraflar": [
+        "Çekirdekteki hidrojen bitince yıldız anakolu terk eder: geriye helyum bir çekirdek kalır ve füzyon, çekirdeği saran bir hidrojen kabuğuna taşınır. Yıldızın dış katmanları şişer ve seyrelir; yarıçap Güneş'inkinin onlarca, yüzlerce katına çıkar, yüzey sıcaklığı yaklaşık 5000 kelvine ya da altına düşer. Rengi sarımsı beyazdan kırmızımsı turuncuya uzanır ama devasa yüzeyi sayesinde Güneş'ten kat kat parlaktır. Bu kırmızı devdir. Wikipedia'nın kırmızı dev maddesi yaklaşık 0,3–8 Güneş kütleli yıldızların bu evreden geçtiğini yazar; yıldız evrimi maddesi ise 0,6–10 Güneş kütlesi der. Kaynaklar sınırları farklı çiziyor. Kabukta yanma, yıldızın kütlesine göre birkaç milyon ile bir iki milyar yıl sürer.",
+        "Helyum çekirdek büzülüp ısınır. Sıcaklık yaklaşık 100 milyon kelvine ulaşınca helyum karbona kaynaşmaya başlar: üç helyum çekirdeği birleşip bir karbon çekirdeği oluşturur (üçlü alfa süreci). Yaklaşık 0,8 ile 2,0 Güneş kütleli yıldızlarda bu tutuşma ani bir kaçak tepkimeyle olur: helyum parlaması. Ardından yıldız bir süre çekirdeğinde helyum yakarak yatay kol denen evrede kalır. Wikipedia'ya göre bu evredeki yıldızların bir kısmı H-R diyagramındaki sarı kararsızlık şeridine düşer ve düzenli olarak şişip büzülen, parlaklığı değişen yıldızlara dönüşür (değişen yıldızlar d15'te). Sonra yıldız yeniden şişer ve asimptotik dev koluna çıkar. Bu evrenin sonunda yıldız dış katmanlarını uzaya atar.",
+        "Güneş'i neler bekliyor? NASA'ya göre Güneş kırmızı dev olduğunda Merkür'ü ve Venüs'ü, belki Dünya'yı da yutacak kadar büyüyecektir. Wikipedia'nın Güneş maddesine göre kırmızı dev kolunun tepesinde çapı bugünkünün yaklaşık 256 katına, yarıçapı yaklaşık 1,19 astronomik birime ulaşacak; Dünya'nın yörüngesi 1 astronomik birimdir. Wikipedia'nın kırmızı dev maddesine göre bu süreçte kütlesinin %38'ini kaybedecek, ardından büzülüp beyaz cüceye dönüşecek. Yıldızların nasıl öldüğü d6'nın konusu.",
+        "Bir kırmızı devi bugün kendi gözünle görebilirsin. Wikipedia'nın kırmızı dev maddesi, parlak Arcturus'u 36 ışık yılı uzaklıkta, kırmızı dev kolunda bir K yıldızı olarak anar (madde içinde sınıfı bir yerde K0, bir yerde K1,5 diye geçiyor). Uygulamanın kataloğuna göre görünür kadiri −0,05, renk indeksi 1,24'tür: turuncu ve çok parlak. Dik açıklığı yaklaşık +19,2° olduğu için İstanbul'da meridyenden geçerken ufkun yaklaşık 68° yukarısına çıkar. Turuncu rengine bakarken şunu düşün: Güneş'ten soğuk bir yüzeyle bu kadar parlak görünebilmesinin tek yolu, Güneş'ten çok daha büyük olmasıdır."
+      ],
+      "akilda": "Çekirdekte hidrojen bitince füzyon kabuğa taşınır, yıldız şişip kırmızı dev olur. Yaklaşık 100 milyon kelvinde helyum karbona dönüşmeye başlar. Güneş kırmızı dev olunca yarıçapı Dünya'nın yörüngesini aşabilir."
+    }
+  ],
+  "formuller": [
+    {
+      "ad": "Işıma gücü, yarıçap ve sıcaklık",
+      "ifade": "L = 4πR²σT⁴;  Güneş birimleriyle R/R☉ = √(L/L☉) ÷ (T/T☉)²",
+      "aciklama": "L ışıma gücü (W), R yarıçap (m), T etkin sıcaklık (K), σ = 5,670 × 10⁻⁸ W m⁻² K⁻⁴. Güneş birimli biçimde T☉ = 5772 K. Yıldızı kara cisim gibi kabul eder; yaklaşıktır (d2)."
+    },
+    {
+      "ad": "Kütle–ışıma gücü ilişkisi",
+      "ifade": "L/L☉ ≈ (M/M☉)^3,5  (2 M☉ < M < 55 M☉)",
+      "aciklama": "Wikipedia 'Mass–luminosity relation'. 0,43–2 M☉ için L/L☉ = (M/M☉)^4; 0,43 M☉ altında L/L☉ ≈ 0,23 (M/M☉)^2,3. Yalnız anakol yıldızları için; beyaz cüce ve devlere uygulanmaz."
+    },
+    {
+      "ad": "Anakol ömrü (yaklaşık)",
+      "ifade": "τ ≈ 10^10 yıl × (M/M☉) × (L☉/L)",
+      "aciklama": "Wikipedia 'Main sequence'. Yakıt kütleyle, harcama ışıma gücüyle orantılı. Aynı kaynak bunu τ ≈ 10^10 yıl × (M/M☉)^-2,5 olarak da yazar. İki biçim farklı sonuç verebilir; yalnız büyüklük mertebesi için kullan."
+    }
+  ],
+  "anahtar_sayilar": [
+    {
+      "deger": "O ≥33.000 K; B 10.000–33.000 K; A 7300–10.000 K; F 6000–7300 K; G 5300–6000 K; K 3900–5300 K; M 2300–3900 K",
+      "aciklama": "Tayf sınıflarının yaklaşık yüzey sıcaklıkları",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Stellar_classification"
+    },
+    {
+      "deger": "M %76, K %12, G %7,6, F %3,0, A %0,61, B %0,12, O %0,00003",
+      "aciklama": "Anakol yıldızlarının tayf sınıflarına dağılımı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Stellar_classification"
+    },
+    {
+      "deger": "G2V",
+      "aciklama": "Güneş'in tam tayf ve ışıma sınıfı (MK sistemi, 1943)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Stellar_classification"
+    },
+    {
+      "deger": "1911 / 1913",
+      "aciklama": "Hertzsprung ve Russell'ın diyagramı bağımsız olarak çizdiği yıllar",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Hertzsprung%E2%80%93Russell_diagram"
+    },
+    {
+      "deger": "~150 g/cm³; ~15,7 milyon K",
+      "aciklama": "Güneş çekirdeğinin en yüksek yoğunluğu ve sıcaklığı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Sun"
+    },
+    {
+      "deger": "18 milyon K (~1,5 M☉)",
+      "aciklama": "Proton-proton zinciri ile CNO döngüsünün eşit verimli olduğu çekirdek sıcaklığı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Main_sequence"
+    },
+    {
+      "deger": "L ∝ M^3,5 (2–55 M☉); L = M^4 (0,43–2 M☉)",
+      "aciklama": "Kütle–ışıma gücü ilişkisi",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Mass%E2%80%93luminosity_relation"
+    },
+    {
+      "deger": "O5V: 43 M☉, log L = 5,54; A0V: 2,18 M☉, log L = 1,58, 9700 K, 2,193 R☉; G2V: 1,00 M☉, log L = 0,01; M0V: 0,57 M☉, log L = −1,16",
+      "aciklama": "Anakol yıldızlarının ortalama kütle, ışıma gücü, sıcaklık ve yarıçapları (ömür ve yarıçap hesaplarının girdisi)",
+      "kaynak_url": "https://www.pas.rochester.edu/~emamajek/EEM_dwarf_UBVIJHK_colors_Teff.txt"
+    },
+    {
+      "deger": "~10^10 yıl",
+      "aciklama": "Güneş'in toplam anakol ömrü",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Main_sequence"
+    },
+    {
+      "deger": "~5 milyar yıl",
+      "aciklama": "Güneş'in beyaz cüceye dönüşmeden önce kalan ömrü",
+      "kaynak_url": "https://science.nasa.gov/sun/facts/"
+    },
+    {
+      "deger": "0,677 → 1,0 L☉ (%48); her 100 milyon yılda ~%1",
+      "aciklama": "Güneş'in anakoldaki parlaklaşması",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Sun"
+    },
+    {
+      "deger": "~0,08 M☉ (80 Jüpiter kütlesi); 120–200 M☉",
+      "aciklama": "Anakolun alt ve gözlenen üst kütle sınırı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Main_sequence"
+    },
+    {
+      "deger": "~100 milyon K",
+      "aciklama": "Helyum füzyonunun başladığı çekirdek sıcaklığı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Helium_flash"
+    },
+    {
+      "deger": "0,8–2,0 M☉",
+      "aciklama": "Helyum parlaması yaşayan yıldızların kütle aralığı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Helium_flash"
+    },
+    {
+      "deger": "~256 kat çap; 1,19 AB yarıçap",
+      "aciklama": "Kırmızı dev kolunun tepesinde Güneş",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Sun"
+    }
+  ],
+  "sozluk": [
+    { "terim": "Tayf sınıfı", "tanim": "Yıldızın tayfındaki çizgilere göre verilen, yüzey sıcaklığını gösteren harf ve rakam (O, B, A, F, G, K, M; 0–9)." },
+    { "terim": "Işıma sınıfı", "tanim": "MK sisteminde yıldızın boyunu ve parlaklığını gösteren Romen rakamı (I süperdev, III dev, V anakol)." },
+    { "terim": "Işıma gücü", "tanim": "Bir yıldızın saniyede bütün yüzeyinden yaydığı toplam enerji; Güneş birimiyle (L☉) verilir." },
+    { "terim": "H-R diyagramı", "tanim": "Yıldızların ışıma gücünü (yukarı parlak) yüzey sıcaklığına (sola sıcak) karşı gösteren grafik." },
+    { "terim": "Anakol", "tanim": "Çekirdeğinde hidrojen yakan yıldızların H-R diyagramında oluşturduğu, kütleye göre dizilen köşegen şerit." },
+    { "terim": "Hidrostatik denge", "tanim": "Yıldızın her katmanında içe çeken kütleçekimiyle dışa iten gaz basıncının dengelenmesi." },
+    { "terim": "Kahverengi cüce", "tanim": "Kütlesi Jüpiter'in yaklaşık 13 ile 80 katı arasında olan, hidrojeni sürekli kaynaştıramayan cisim." },
+    { "terim": "Kırmızı dev", "tanim": "Çekirdeğindeki hidrojeni bitirip kabukta yakan, şişmiş, soğuk yüzeyli ama çok parlak yıldız." },
+    { "terim": "Helyum parlaması", "tanim": "0,8–2,0 Güneş kütleli yıldızlarda helyum füzyonunun çekirdekte ani bir kaçak tepkimeyle başlaması." }
+  ],
+  "defter_notu": [
+    "Tayf sınıfları sıcaktan soğuğa: O B A F G K M. Güneş = G2V (G2 renk, V anakol).",
+    "Tayf çizgilerinin farkı esas olarak bileşimden değil, yüzey sıcaklığından gelir (Payne 1925).",
+    "L = 4πR²σT⁴ → aynı sıcaklıkta 100 kat parlak = 10 kat büyük.",
+    "H-R diyagramı: yukarı = parlak, sol = sıcak. Köşegen şerit = anakol; anakol bir kütle dizisidir.",
+    "Hidrostatik denge: kütleçekimi içe, basınç dışa. Çekirdek sıkışırsa ısınır, füzyon hızlanır.",
+    "L ∝ M^3,5 (2–55 M☉); 0,43–2 M☉ için L = M^4. 2 kat kütle ≈ 16 kat parlaklık.",
+    "Ömür ≈ 10^10 yıl × M/L. O5 ≈ 1 milyon yıl, Güneş ≈ 10 milyar yıl, M0 ≈ 80 milyar yıl.",
+    "Anakol yıldızlarının %76'sı M cücesi; hiçbiri çıplak gözle görülmez.",
+    "Hidrojen bitince: kabukta füzyon, dış katmanlar şişer → kırmızı dev; ~100 milyon K'de helyum → karbon."
+  ],
+  "sorular": [
+    {
+      "soru": "Tayf sınıflarını sıcaktan soğuğa sırala. Güneş hangi sınıftadır?",
+      "cevap": "O, B, A, F, G, K, M. Güneş G2V'dir: G2 sınıfında bir anakol (V) yıldızı."
+    },
+    {
+      "soru": "İki yıldızın tayf çizgileri çok farklı. Bu, bileşimlerinin farklı olduğunu mu gösterir?",
+      "cevap": "Genellikle hayır. Çizgilerin gücü esas olarak yüzey sıcaklığına bağlıdır; aynı elementler farklı sıcaklıkta farklı iyonlaşma durumunda olduğu için farklı çizgiler verir. Gerçek bileşim farkı ancak bazı durumlarda belirleyicidir."
+    },
+    {
+      "soru": "H-R diyagramının sağ üst köşesindeki bir yıldız soğuk olduğu halde neden çok parlaktır?",
+      "cevap": "Soğuk yüzey metrekare başına az enerji yayar; toplam ışıma gücünün yüksek olması için yüzeyin çok büyük olması gerekir (L = 4πR²σT⁴). Bu yıldızlar dev ya da süperdevdir."
+    },
+    {
+      "soru": "Yüzey sıcaklığı Güneş'inkiyle aynı, ışıma gücü 400 L☉ olan bir yıldızın yarıçapı kaç Güneş yarıçapıdır?",
+      "cevap": "Sıcaklık oranı 1 olduğu için R = √400 = 20 R☉. Aynı sıcaklıkta 400 kat parlak olmak için yüzey 400 kat, yarıçap 20 kat büyük olmalıdır."
+    },
+    {
+      "soru": "Güneş'in çekirdeğinde füzyon bir an için yavaşlasa ne olur?",
+      "cevap": "Basınç düşer, üstteki katmanların ağırlığı çekirdeği sıkıştırır. Sıkışan çekirdek ısınır, füzyon yeniden hızlanır ve basınç geri gelir. Hidrostatik denge kendini düzeltir."
+    },
+    {
+      "soru": "Kütlesi Güneş'in iki katı olan bir anakol yıldızı neden Güneş'ten daha kısa yaşar, oysa yakıtı daha fazladır?",
+      "cevap": "Yakıtı yaklaşık 2 kat fazladır ama ışıma gücü (harcama hızı) kabaca 2^4 = 16 kat fazladır. Ömür M ÷ L ile orantılı olduğu için ömrü yaklaşık 8 kat kısalır: 10 milyar yerine yaklaşık 1,25 milyar yıl."
+    },
+    {
+      "soru": "Evrende anakolu terk etmiş bir M0 cücesi bulmayı bekler misin? Neden?",
+      "cevap": "Hayır. M0 cücesinin anakol ömrü yaklaşık 82 milyar yıl, evrenin yaşı ise yaklaşık 13,8 milyar yıl. Evrenin başında doğan bir M0 cücesi bile hâlâ anakoldadır."
+    },
+    {
+      "soru": "Anakol yıldızlarının çoğu M cücesiyse neden çıplak gözle gördüğümüz yıldızların neredeyse hiçbiri M cücesi değil?",
+      "cevap": "M cüceleri çok sönüktür: bir M0 cücesi Güneş'in yalnızca yaklaşık %7'si kadar ışık verir ve ışığının çoğu kızılötesindedir. En yakını bile çıplak gözle görülmez. Gözle gördüklerimiz uzaktan bile parlayan az sayıdaki güçlü yıldızlardır; bu bir seçim yanılgısıdır."
+    }
+  ],
+  "kaynaklar": [
+    { "ad": "Wikipedia, Stellar classification", "url": "https://en.wikipedia.org/wiki/Stellar_classification" },
+    { "ad": "Wikipedia, Hertzsprung–Russell diagram", "url": "https://en.wikipedia.org/wiki/Hertzsprung%E2%80%93Russell_diagram" },
+    { "ad": "Wikipedia, Mass–luminosity relation", "url": "https://en.wikipedia.org/wiki/Mass%E2%80%93luminosity_relation" },
+    { "ad": "Wikipedia, Main sequence", "url": "https://en.wikipedia.org/wiki/Main_sequence" },
+    { "ad": "E. Mamajek, A Modern Mean Dwarf Stellar Color and Effective Temperature Sequence (sürüm 2022.04.16)", "url": "https://www.pas.rochester.edu/~emamajek/EEM_dwarf_UBVIJHK_colors_Teff.txt" },
+    { "ad": "Wikipedia, Sun", "url": "https://en.wikipedia.org/wiki/Sun" },
+    { "ad": "Wikipedia, Stellar evolution", "url": "https://en.wikipedia.org/wiki/Stellar_evolution" },
+    { "ad": "Wikipedia, Protostar", "url": "https://en.wikipedia.org/wiki/Protostar" },
+    { "ad": "Wikipedia, Star formation", "url": "https://en.wikipedia.org/wiki/Star_formation" },
+    { "ad": "Wikipedia, Brown dwarf", "url": "https://en.wikipedia.org/wiki/Brown_dwarf" },
+    { "ad": "Wikipedia, Red giant", "url": "https://en.wikipedia.org/wiki/Red_giant" },
+    { "ad": "Wikipedia, Helium flash", "url": "https://en.wikipedia.org/wiki/Helium_flash" },
+    { "ad": "Wikipedia, Triple-alpha process", "url": "https://en.wikipedia.org/wiki/Triple-alpha_process" },
+    { "ad": "Wikipedia, Annie Jump Cannon", "url": "https://en.wikipedia.org/wiki/Annie_Jump_Cannon" },
+    { "ad": "NASA Science, Stars", "url": "https://science.nasa.gov/universe/stars/" },
+    { "ad": "NASA Science, Sun: Facts", "url": "https://science.nasa.gov/sun/facts/" },
+    { "ad": "EarthSky, What is a red dwarf star?", "url": "https://earthsky.org/astronomy-essentials/what-is-a-red-dwarf-star-most-common/" },
+    { "ad": "IAU 2015 Karar B3, nominal Güneş değerleri (T☉ = 5772 K)", "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf" },
+    { "ad": "Planck 2018 sonuçları VI (evrenin yaşı, Tablo 2)", "url": "https://arxiv.org/pdf/1807.06209v4" },
+    { "ad": "Wikipedia, Wien's displacement law (Betelgeuse ve Rigel sıcaklıkları)", "url": "https://en.wikipedia.org/wiki/Wien%27s_displacement_law" },
+    { "ad": "NIST CODATA, Wien sabiti", "url": "https://physics.nist.gov/cgi-bin/cuu/Value?bwien" },
+    { "ad": "NASA Science, Visible Light (380–700 nm)", "url": "https://science.nasa.gov/ems/09_visiblelight/" },
+    { "ad": "d3-celestial yıldız kataloğu (uygulamanın veri/yildizlar.json kaynağı)", "url": "https://github.com/ofrohn/d3-celestial/blob/master/data/stars.6.json" },
+    { "ad": "NASA Hubble, Messier 42 (Avcı için en iyi ay)", "url": "https://science.nasa.gov/?p=29958" }
+  ]
+}

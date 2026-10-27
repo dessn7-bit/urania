@@ -1,0 +1,283 @@
+{
+  "id": "d10",
+  "unite": "gunes_sistemi",
+  "baslik": "Ay: Evreler, Tutulmalar ve Dev Bir Çarpışmanın Çocuğu",
+  "ozet": "Ay'ın yarısı her zaman Güneş ışığı alır; evreler, bu aydınlık yarının ne kadarını gördüğümüze göre değişir. Bu derste Ay'ın neden hep aynı yüzünü gösterdiğini, tutulmaların neden her ay olmadığını, Ay'ın dev bir çarpışmadan nasıl doğmuş olabileceğini ve Apollo'dan Artemis'e insanlığın Ay yolculuğunu öğreneceksin.",
+  "on_bilgi": ["d1", "d3"],
+  "bolumler": [
+    {
+      "baslik": "Evreler: aydınlık yarının ne kadarını görüyoruz?",
+      "paragraflar": [
+        "Bir akşam batıda ince bir hilal görürsün, bir hafta sonra yarım bir Ay, iki hafta sonra dolunay. Ay'ın biçimi mi değişiyor? Hayır. Ay kendi ışığını üretmez, Güneş ışığını yansıtır. NASA'nın vurguladığı gibi Güneş her zaman Ay'ın yarısını aydınlatır: Dünya gibi onun da bir gündüz, bir gece yüzü vardır. Değişen, o aydınlık yarının ne kadarının bize dönük olduğudur.",
+        "Sekiz evre sırayla şöyledir: yeni ay, büyüyen hilal, ilkdördün, büyüyen şişkin ay, dolunay, küçülen şişkin ay, sondördün, küçülen hilal. Döngü yaklaşık 29,5 günde bir tekrarlanır. Yeni ayda Ay gökte Güneş'le aynı bölgededir ve gece yüzü bize dönüktür; bu yüzden görünmez. İlkdördünde diskin yarısını aydınlık görürsün, ama bu Ay'ın tamamının yalnızca dörtte biridir: aydınlık yarının yarısı. Dolunayda Ay, Dünya'dan bakınca Güneş'in tam karşısındadır ve gündüz yüzünü görürüz.",
+        "Diskin aydınlık kesri basit bir formülle hesaplanır: k = (1 − cos θ) / 2. Burada θ, Dünya'daki gözlemciden bakınca Ay ile Güneş arasındaki açıdır; buna uzanım denir. θ = 0° yeni ay (k = 0), 90° dördün (k = 0,5), 180° dolunaydır (k = 1).",
+        "İstanbul gibi kuzey yarımkürede bir yerden bakarken Ay'ın sağ yanı aydınlıksa Ay büyüyordur; sol yanı karanlıksa aydınlık kısım kalınlaşıyor demektir. Doğuş saatleri evreye bağlıdır: dolunay gün batımı civarında doğar, gün doğumu civarında batar; ilkdördün öğle civarında doğar ve akşam gökte yüksektedir; sondördün gece yarısı civarında doğar. İnce hilalde diskin karanlık kısmı da soluk görünür. Buna Dünya ışığı denir: Dünya yüzeyinden yansıyan Güneş ışığı Ay'ın gece yüzünü hafifçe aydınlatır. O sırada Ay'dan bakan biri gökte neredeyse dolun bir Dünya görürdü.",
+        "Ay yalnızca gece görünen bir cisim değildir. NASA'ya göre büyüyen hilal sabah, gün doğumundan sonra doğar; büyüyen şişkin ay öğleden sonra, gün batımından önce doğar. Küçülen şişkin ay gün batımından sonra, küçülen hilal ise sabaha karşı, gün doğumundan önce doğar. Wikipedia'nın evre tablosuna göre büyüyen hilal geç sabahtan akşam karanlığının biraz sonrasına kadar, küçülen hilal ise şafaktan öğleden sonraya kadar gökte olabilir. Yani öğleden sonra mavi gökte soluk bir yarım Ay görmen olağandır. Yeni ay ise Güneş'e çok yakın olduğu için pratikte görünmez. Kesin doğuş ve batış saatleri için NASA yerel tablolara bakmayı önerir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Uzanım 60° iken diskin ne kadarı aydınlık?",
+        "metin": "Formül: k = (1 − cos θ) / 2. θ = 60° için cos 60° = 0,5. k = (1 − 0,5) / 2 = 0,25. Diskin dörtte biri aydınlıktır: kalınca bir hilal. θ = 120° için cos 120° = −0,5; k = (1 + 0,5) / 2 = 0,75, yani şişkin ay. Dikkat: uzanım 60° iken aydınlık kesir %50 değil %25'tir; evre ile açı arasındaki ilişki doğrusal değildir."
+      },
+      "akilda": "Ay hep yarı aydınlıktır; evre, aydınlık yarının bize dönük kısmıdır ve k = (1 − cos θ) / 2 ile hesaplanır. Kuzey yarımkürede sağ yanı aydınlık Ay büyüyordur."
+    },
+    {
+      "baslik": "Neden 27,3 değil de 29,5 gün?",
+      "paragraflar": [
+        "Ay, Dünya'nın çevresini yıldızlara göre 27,3217 günde dolanır; buna yıldızıl ay denir. Ama evreler 29,53 günde bir tekrarlanır; buna da kavuşum ayı denir. Aradaki iki günün nedeni Dünya'nın da yerinde durmamasıdır: Ay bir turu tamamlarken Dünya Güneş'in çevresinde bir miktar ilerler. Ay'ın Güneş'e göre aynı konuma, yani aynı evreye dönebilmesi için biraz daha yol alması gerekir.",
+        "Bir benzetme: saatin yelkovanı akrebi her 60 dakikada değil, biraz daha uzun aralıklarla yakalar, çünkü akrep de ilerlemektedir. Ay yelkovan, Güneş'in gökteki görünür konumu akrep gibidir. Benzetmenin sınırı: saatte iki ibre aynı merkezin çevresinde döner; gerçekte Ay Dünya'nın, Dünya Güneş'in çevresinde dolanır. İki süre arasındaki ilişki 1/S = 1/P − 1/Y formülüyle verilir; P yıldızıl ay, Y yıldızıl yıl, S kavuşum dönemidir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Kavuşum ayını hesapla",
+        "metin": "P = 27,3217 gün, Y = 365,256 gün. 1/P = 1/27,3217 ≈ 0,036601. 1/Y = 1/365,256 ≈ 0,002738. Fark: 0,036601 − 0,002738 = 0,033863 (1/gün). S = 1 / 0,033863 ≈ 29,53 gün. NASA'nın Ay veri sayfasındaki kavuşum dönemiyle (29,53 gün) aynı sonucu bulduk."
+      },
+      "akilda": "Yıldızıl ay 27,32 gün, kavuşum ayı (evre döngüsü) 29,53 gün. Fark, Dünya'nın Güneş çevresinde ilerlemesinden gelir."
+    },
+    {
+      "baslik": "Hep aynı yüz: eş zamanlı dönme",
+      "paragraflar": [
+        "Ay kendi ekseni çevresinde döner, ama bir dönüşü Dünya çevresindeki bir dolanımıyla tam olarak aynı sürer. Bu yüzden bize hep aynı yarıküresini gösterir. Buna eş zamanlı dönme denir; nedeni gelgit kilitlenmesidir. NASA'nın açıklamasına göre Dünya'nın kütleçekimi genç Ay'ı hafifçe uzatıp bir şişkinlik oluşturdu. Ay dönerken bu çekiştirme Ay'ın içinde ısı olarak enerji harcadı; dönüş yavaşladı ve sonunda bir tur, bir dolanım kadar sürer hâle geldi.",
+        "Ay hiç dönmüyor olsaydı ne görürdük? Dolanırken yönünü uzaya göre sabit tutacağı için bir ay boyunca bütün yüzlerini sırayla bize gösterirdi. Uzak yüzü görmememizin nedeni dönmemesi değil, dönüşünün dolanımıyla eşit sürmesidir.",
+        "Uzak yüze karanlık yüz demek yanıltıcıdır; NASA da bu adın yanlış izlenim verdiğini belirtir. O yüz de Güneş ışığı alır, yalnızca bize dönük değildir. Yeni ay evresinde uzak yüz tam gündüzdedir. İnsanlık uzak yüzü ilk kez, Sovyet aracı Luna 3'ün 7 Ekim 1959'da Ay'a ulaşmasıyla görebildi."
+      ],
+      "akilda": "Ay'ın kendi çevresindeki dönüşü bir dolanımıyla eşit sürer (eş zamanlı dönme, gelgit kilitlenmesi). Uzak yüz karanlık değildir, yalnızca bize dönük değildir."
+    },
+    {
+      "baslik": "Librasyon: yüzeyin yaklaşık %59'u",
+      "paragraflar": [
+        "Hep aynı yüzü görüyorsak tam olarak yarısını görmemiz gerekirdi. Oysa zamanla yüzeyin yaklaşık %59'unu görürüz. Bunu sağlayan küçük salınımlara librasyon denir. Boylamda librasyon yörüngenin elips oluşundan doğar: Ay yakın noktasında hızlı, uzak noktasında yavaş ilerler ama kendi dönüşü sabit hızdadır. Dönüş bazen yörüngedeki konumunun önüne geçer, bazen geride kalır; böylece bazen doğu kenarının, bazen batı kenarının biraz arkasını görürüz. Bu salınım en çok 7°54′'ye ulaşır.",
+        "Enlemde librasyon, Ay'ın dönme ekseninin yörünge eksenine göre yaklaşık 6,7° eğik olmasından gelir; bu sayede bazen kuzey, bazen güney kutup bölgesine biraz daha bakarız. En çok 6°50′'ye ulaşır. NASA, Ay yörüngesinin 5°'lik eğikliğinin de Ay'a evet der gibi başını sallıyor görüntüsü verdiğini söyler. Bir de günlük librasyon vardır: gece boyunca Dünya'nın dönüşü seni bir yandan öbür yana taşır, bakış doğrultun biraz kayar; bunun etkisi 1°'den küçüktür. Pratik sonuç: diskin kenarına yakın bölgeler bazı geceler görünür, bazı geceler görünmez.",
+        "Bunu kendin de görebilirsin. NASA, Ay'ı farklı günlerde ve farklı evrelerde izlemeyi önerir, çünkü librasyon diskin kenarının farklı kısımlarını farklı zamanlarda gösterir. Kenara yakın büyük bir koyu lekeyi birkaç ay boyunca not edersen, bazen kenara iyice sıkıştığını, bazen biraz içeri kaydığını fark edersin. Yerden yapılan bu tür gözlemlerle yüzeyin yaklaşık %59'u görüntülenebilmiştir; geri kalan %41'i ise ancak uzay araçları gösterebildi."
+      ],
+      "akilda": "Librasyon (boylamda en çok 7°54′, enlemde en çok 6°50′) sayesinde zamanla Ay yüzeyinin yaklaşık %59'u görülür."
+    },
+    {
+      "baslik": "Ay'ı tanı: boyut, kütle, çekim ve sıcaklık",
+      "paragraflar": [
+        "Ay'ın çapı 3474 km'dir; NASA'ya göre Dünya'nın genişliğinin üçte birinden azdır. NASA'nın benzetmesiyle Dünya bir madeni para kadar olsaydı, Ay bir kahve çekirdeği kadar olurdu. Kütlesi 7,346 × 10²² kg, yani Dünya'nınkinin yaklaşık %1,2'si (yaklaşık 1/81). Ortalama yoğunluğu 3344 kg/m³'tür, Dünya'nınkinin (5514 kg/m³) yaklaşık %61'i. Yüzeydeki çekim ivmesi 1,62 m/s²'dir; bu Dünya'nınkinin yaklaşık 0,165'i, yani kabaca altıda biridir.",
+        "Ay'ın atmosferi yok denecek kadar seyrektir; NASA ona ekzosfer der ve solunabilir değildir. Isıyı tutacak bir hava örtüsü olmadığı için sıcaklık uç değerler arasında gidip gelir: NASA'ya göre tam güneş ışığında yaklaşık 127 °C, karanlıkta yaklaşık −173 °C. NASA'nın veri sayfası ekvator için 95 K ile 390 K arasında bir günlük değişim verir.",
+        "Dolunay gökte çok parlak görünür, ama Ay'ın yüzeyi aslında koyudur. NASA'nın veri sayfasındaki geometrik albedo (yansıtma oranı) 0,12'dir; Wikipedia Ay'ın yansıtıcılığını asfaltınkine benzetir. Dolunay parlak görünür, çünkü karanlık bir gökte, Güneş'in doğrudan aydınlattığı geniş bir yüzeydir. NASA'ya göre dolunayın ortalama parlaklığı −12,74 kadirdir; gece gökyüzünün açık ara en parlak cismidir, ama Güneş yine de ondan yaklaşık 400.000 kat parlaktır (11. ders).",
+        "Ay'ın da bir iç yapısı vardır. NASA'ya göre katı, demirce zengin bir iç çekirdeği (yarıçapı yaklaşık 240 km), onu saran yaklaşık 90 km kalınlığında sıvı demir bir kabuk ve kısmen erimiş bir katman bulunur. Kabuğun kalınlığı yakın yüzde yaklaşık 40 km, uzak yüzde 60 km'ye kadardır. Wikipedia çekirdek yarıçapı için yaklaşık 350 km ya da daha azını verir; ölçümler arasında fark vardır."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Ay'da kaç kilo gelirsin?",
+        "metin": "Kütlen her yerde aynıdır, ağırlığın (seni yere çeken kuvvet) değişir. Kuvvet = kütle × çekim ivmesi. 70 kg'lık biri için Dünya'da: 70 × 9,80 = 686 newton. Ay'da: 70 × 1,62 = 113 newton. Oran: 113 / 686 ≈ 0,165. Banyo baskülü kuvveti kilograma çevirdiği için Ay'da yaklaşık 70 × 0,165 ≈ 11,6 kg gösterirdi. Aynı kuvvetle zıpladığında da yaklaşık altı kat yükseğe çıkardın."
+      },
+      "akilda": "Ay: çap 3474 km, kütle Dünya'nın %1,2'si, çekim yaklaşık 1/6. Havası olmadığı için gündüz yaklaşık 127 °C, gece yaklaşık −173 °C. Yüzeyi asfalt kadar koyudur."
+    },
+    {
+      "baslik": "Denizler, kraterler ve buz",
+      "paragraflar": [
+        "Çıplak gözle gördüğün koyu lekeler denizlerdir (Latince maria). İçlerinde su yoktur; ad, 17. yüzyılın başında gökbilimcilerin bu lekeleri suyla kaplı sanmasından kalmadır. Denizler, büyük çarpışma havzalarının lavla dolmasıyla oluşmuş koyu bazalt ovalarıdır. Demirce zengin oldukları için açık renkli yaylalardan daha az ışık yansıtırlar. Yaşları için kaynaklar farklı aralık verir: NASA 4,2 ile 1,2 milyar yıl önce dolduklarını söyler; Wikipedia radyometrik yaşları 3,16–4,2 milyar yıl olarak verir ve deniz bazaltlarının çoğunun 3 ile 3,5 milyar yıl önce püskürdüğünü belirtir.",
+        "Denizler Ay yüzeyinin yaklaşık %16'sını kaplar ve neredeyse hepsi yakın yüzdedir: yakın yüzün %31'i, uzak yüzün yalnızca %2'si denizdir. Bu yüzden bize bakan yüz koyu lekelidir, uzak yüzde ise koyu leke neredeyse yoktur; oradaki denizler çok daha küçüktür ve çoğunlukla büyük kraterlerin içindedir.",
+        "Seyrek atmosfer çarpmaları durduramaz; asteroitler, göktaşları ve kuyruklu yıldızlar yüzeyi milyarlarca yıl boyunca kraterle doldurdu. Tycho krateri 85 km'den geniştir. NASA'ya göre keskin gözle Copernicus, Kepler, Aristarchus ve Tycho gibi büyük kraterler ve Copernicus ile Tycho'dan yayılan parlak ışınlar çıplak gözle bile seçilebilir. NASA'nın dürbün önerisi: en az 7 kat büyütme; dolunayı değil öteki evreleri seç ve aydınlıkla karanlığın sınırına, yani terminatöre bak. Orada güneş ışığı yüzeye yatık gelir, kraterler ve dağlar uzun gölge düşürür.",
+        "Ay kupkuru sanılırdı, ama kutuplarda buz bulundu. NASA'ya göre kutupların hiç güneş görmeyen bölgelerinde yüksek yoğunlukta su buzu vardır. Wikipedia, 2018'de her iki kutbun 20° yakınında su buzu bulunduğunu ve buzun güneyde daha bol olduğunu aktarır. NASA'ya göre Ekim 2020'de SOFIA gözlemevi, güneş alan yüzeyde, Clavius kraterinde de su bulunduğunu doğruladı."
+      ],
+      "akilda": "Denizler lavla dolmuş havzalardır (bazalt), yüzeyin yaklaşık %16'sı ve neredeyse hepsi yakın yüzde. Kraterler için terminatöre bak. Kutupların gölgeli kraterlerinde su buzu var."
+    },
+    {
+      "baslik": "Ay nereden geldi? Dev çarpışma",
+      "paragraflar": [
+        "Dünya'nın neden bu kadar büyük bir uydusu var? Bugünkü açıklama dev çarpışma varsayımıdır. NASA, Ay'ın büyük olasılıkla Mars büyüklüğünde bir cismin Dünya'ya çarpmasından sonra oluştuğunu söyler. Wikipedia bu cisme verilen adı Theia olarak aktarır ve çarpışmayı 4,51 milyar yıl önceye koyar; izotop tarihlemesine göre Ay, Güneş Sistemi'nin başlangıcından yaklaşık 50 milyon yıl sonra oluştu. Çarpışmadan saçılan malzeme Dünya'nın çevresinde toplanarak Ay'ı oluşturdu.",
+        "Bu fikri destekleyen en güçlü ipuçlarından biri bileşimdir: Wikipedia'ya göre Dünya ile Ay'ın izotop bileşimleri neredeyse aynıdır. İzotop, bir elementin farklı sayıda nötron taşıyan türüdür ve bir tür kimyasal parmak izi gibi çalışır. Ay başka bir yerde oluşup sonradan yakalanmış olsaydı parmak izinin farklı olması beklenirdi.",
+        "Genç Ay sıcaktı. NASA'ya göre yüzeyini kaplayan küresel magma okyanusunun büyük kısmı yaklaşık 100 milyon yıl içinde katılaştı. Sonraki çarpışmaların izleri bugün de okunabilir: Apollo görevlerinin topladığı çarpma sonucu erimiş kayaçların yaşları 3,8 ile 4,1 milyar yıl arasında toplanır. Unutma ki dev çarpışma bir varsayımdır: NASA da büyük olasılıkla diyerek konuşur. Kimse o çarpışmayı görmedi; varsayım, bugün ölçebildiğimiz ipuçlarını en iyi açıklayan senaryodur."
+      ],
+      "akilda": "Ay büyük olasılıkla Mars büyüklüğünde bir cismin (Theia) yaklaşık 4,5 milyar yıl önce Dünya'ya çarpmasıyla oluştu. En güçlü ipucu: Dünya ile Ay'ın izotop bileşimi neredeyse aynı."
+    },
+    {
+      "baslik": "Uzaklık ve yavaş yavaş uzaklaşma",
+      "paragraflar": [
+        "Ay'ın Dünya'ya ortalama uzaklığı 384.400 km'dir; NASA'ya göre arasına Dünya büyüklüğünde 30 gezegen sığar. Yörünge elips olduğu için uzaklık yıl boyunca kabaca 357.000 ile 407.000 km arasında değişir. Işık bu yolu yaklaşık 1,3 saniyede alır.",
+        "Apollo 11 ekibi 21 Temmuz 1969'da Ay yüzeyine bir lazer yansıtıcı dizisi bıraktı; Apollo 14 ve 15 iki dizi daha bıraktı, Sovyet Lunokhod 1 ve 2 araçları da daha küçük yansıtıcılar taşıdı. Dünya'dan gönderilen lazer atımının gidiş-dönüş süresi ölçülerek uzaklık bulunur. Wikipedia'ya göre bir atımdaki yaklaşık 3 × 10¹⁷ fotondan iyi koşullarda bile ancak 1 ile 5 tanesi geri döner; yine de 2009 itibarıyla uzaklık milimetre hassasiyetiyle ölçülebiliyordu.",
+        "Bu ölçümlere göre Ay yılda yaklaşık 3,8 cm uzaklaşıyor. NASA'nın Ay veri sayfası da 3,8 cm/yıl verir; NASA'nın gelgit kilitlenmesi sayfası ise yuvarlayarak yaklaşık 4 cm der. Enerji büyük ölçüde okyanuslardan gelir: Ay'ın çektiği okyanus kabarıklığı Ay'ın tam altında durmaz, biraz kaymış olur. NASA'ya göre bu etkileşim hem Dünya'nın dönüşünü yavaşlatan bir sürtünme yaratır hem de Ay'ı daha geniş bir yörüngeye iter. Gelgitlerin kendisini 3. derste gördün."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Lazer kaç saniyede döner, Ay ne kadar uzaklaştı?",
+        "metin": "Gidiş-dönüş yolu 2 × 384.400 km = 768.800 km = 7,688 × 10⁸ m. Işık hızı 299.792.458 m/s. Süre: 7,688 × 10⁸ / 2,998 × 10⁸ ≈ 2,56 s. Wikipedia da yaklaşık 2,5 saniye der. Uzaklaşma: Apollo 11'in yansıtıcıyı bıraktığı 1969'dan 2026'ya 57 yıl geçti. 57 × 3,8 cm ≈ 217 cm, yani Ay o günden beri yaklaşık 2,2 metre uzaklaştı. Bir milyon yılda ise 3,8 cm × 1.000.000 = 38 km eder."
+      },
+      "akilda": "Ortalama uzaklık 384.400 km (yaklaşık 357.000–407.000 km). Apollo'nun bıraktığı yansıtıcılarla yapılan lazer ölçümleri Ay'ın yılda yaklaşık 3,8 cm uzaklaştığını gösterir."
+    },
+    {
+      "baslik": "Ay tutulması ile Güneş tutulması",
+      "paragraflar": [
+        "Güneş tutulmasında Ay, Güneş ile Dünya'nın arasına girer; bu yalnızca yeni ay evresinde olabilir. Ay'ın tam gölgesi Dünya'da dar bir şerit çizer: genellikle 100–160 km genişliğindedir, en geniş durumda 267 km'yi bulur. Tam tutulmayı yalnızca bu şeritteki insanlar görür; dışındakiler parçalı tutulma görür. Ay uzak noktasına yakınken Güneş'i tamamen örtemez ve çevresinde parlak bir halka kalır: halkalı tutulma. Dünya yüzeyi eğri olduğu için bazı tutulmalar şerit boyunca halkalıdan tama dönüşür; bunlara karma tutulma denir.",
+        "Bu oyun bir rastlantıya dayanır: Güneş'in Dünya'ya uzaklığı Ay'ınkinin yaklaşık 400 katı, çapı da Ay'ınkinin yaklaşık 400 katıdır. Bu yüzden ikisi gökte aşağı yukarı aynı büyüklükte, yaklaşık yarım derece görünür. Tam evre bugün hiçbir yerde 7 dakika 32 saniyeden uzun süremez ve belirli bir yer ortalama 360–410 yılda bir tam tutulma görür.",
+        "Ay tutulmasında Dünya, Güneş ile Ay'ın arasına girer; bu yalnızca dolunayda olur. Ay Dünya'nın yarı gölgesine girerse fark edilmesi zor bir kararma (yarı gölge tutulması), kısmen tam gölgeye girerse parçalı, tamamen girerse tam Ay tutulması olur. Gecesi yaşanan her yerden görülebilir ve çoğu zaman bir saatten uzun sürer. Wikipedia'ya göre tam evre 107 dakikaya, tutulmanın tamamı 236 dakikaya kadar sürebilir.",
+        "Ay tamamen kararmaz, turuncu ya da bakır kırmızısına döner: Ay'a ulaşan ışık önce Dünya atmosferinden geçer, mor ve mavi ışık saçılarak ayrılır, kalan kırmızı ışık atmosferde kırılarak gölgeye girer. Kararmanın derecesi André Danjon'un ölçeğiyle L = 0 (çok karanlık) ile L = 4 (çok parlak bakır kırmızısı) arasında derecelendirilir. Ay tutulmasını korumasız gözle izlemek güvenlidir. Güneş tutulmasında ise tam evre dışında her an özel koruma gerekir: NASA'ya göre güvenli gözlükler ISO 12312-2 standardına uymalıdır ve ne kadar koyu olursa olsun güneş gözlükleri güvenli değildir. Yırtık ya da çizik bir gözlük atılmalıdır. Tutulma gözlüğüyle dürbüne ya da teleskoba bakılmaz; toplanan ışık filtreyi yakabilir. Dolaylı bir yol da vardır: iğne deliğinden geçen ışığı bir kâğıda düşürerek Güneş'in görüntüsünü izlemek. Bu uyarılar abartı değildir: retina acı hissetmez ve hasar saatler sonra ortaya çıkabilir.",
+        "Her ay tutulma olmaz, çünkü Ay'ın yörüngesi Dünya'nın yörünge düzlemine 5,145° eğiktir. Tutulmalar yalnızca yeni ay ya da dolunay bu iki düzlemin kesiştiği noktalara (düğümlere) yakın denk geldiğinde, yaklaşık 173,3 günde bir gelen tutulma mevsimlerinde olur. Bir yılda en az iki, en çok beş Güneş tutulması görülür; bunların en fazla ikisi tam olabilir. Tutulmalar yaklaşık 6585,3 günlük saros döngüsüyle de tekrar eder: bir saros sonra neredeyse aynı tutulma yeniden gerçekleşir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Ay ve Güneş neden aynı büyüklükte görünür?",
+        "metin": "Küçük açılar için açısal çap (radyan) ≈ çap / uzaklık. Ay: 3474 km / 384.400 km ≈ 0,00904 radyan. Dereceye çevirmek için 57,3 ile çarp: 0,00904 × 57,3 ≈ 0,52°. NASA veri sayfasındaki karşı konumdaki görünür çap 1896 yay saniyesidir: 1896 / 3600 ≈ 0,53°. Güneş'in çapı ve uzaklığı Ay'ınkinin yaklaşık 400'er katı olduğu için oran değişmez; Güneş de yaklaşık yarım derece görünür. Saros: 6585,3 / 365,25 ≈ 18,03 yıl; yani 18 yıl ve yaklaşık 11 gün."
+      },
+      "akilda": "Güneş tutulması yeni ayda, dar bir şeritte olur ve koruma ister. Ay tutulması dolunayda olur, gece tarafından her yerden görülür, güvenlidir ve Ay kızarır. Yörünge 5,145° eğik olduğu için her ay tutulma olmaz."
+    },
+    {
+      "baslik": "Apollo'dan Artemis'e: Ay'a yolculuk",
+      "paragraflar": [
+        "İnsanlar Ay'a ilk kez 20 Temmuz 1969'da Apollo 11 ile ayak bastı. Wikipedia'ya göre 1972'ye kadar altı Apollo görevi Ay'a toplam on iki insan indirdi. NASA'ya göre Apollo astronotları Dünya'ya toplam 382 kg Ay kayacı ve toprağı getirdi. Apollo 17'nin 1972'de topladığı ünlü turuncu cam toprak, volkanik kökenli ve titanyumca zengin bir örnek olarak hâlâ incelenir.",
+        "Bu örnekler bugün de bilim üretiyor. Önceki bölümde gördüğün 3,8–4,1 milyar yıllık çarpma kayaçlarının yaşları, Apollo'nun getirdiği örneklerden ölçüldü. Apollo 11, 14 ve 15'in bıraktığı yansıtıcılar da Ay'ın her yıl biraz uzaklaştığını gösteren lazer ölçümlerini mümkün kıldı. Yani Apollo yalnızca bir yarış değil, bir ölçüm altyapısı da bıraktı.",
+        "Yeni dönem NASA'nın Artemis programıdır. Wikipedia'ya göre 2020'lerin bu programı, 2026'da mürettebatlı bir Ay çevresi uçuşu olan Artemis II'yi içerir; NASA'nın Ay sayfasında Artemis II'den gelen Ay bilim verilerinin ve görüntülerinin yayımlandığı duyuruluyor. Programın sonraki adımlarının tarihleri değişebildiği için güncel takvimi NASA'dan izlemek en doğrusu. Artemis adı da Ay'la bağlantılıdır: Yunan mitolojisinde av tanrıçası Artemis, Ay tanrıçası Selene ile özdeşleştirilmiştir."
+      ],
+      "akilda": "Apollo (1969–1972) altı inişle on iki insanı Ay'a indirdi ve 382 kg örnek getirdi. Artemis programı insanları yeniden Ay'a götürmeyi amaçlıyor; Artemis II 2026'nın mürettebatlı Ay çevresi uçuşu."
+    }
+  ],
+  "formuller": [
+    {
+      "ad": "Aydınlık kesir",
+      "ifade": "k = (1 − cos θ) / 2",
+      "aciklama": "k: diskin aydınlık kesri (0 ile 1 arası), θ: gözlemciden bakınca Ay–Güneş açısı (uzanım). θ = 0° yeni ay, 90° dördün (k = 0,5), 180° dolunay (k = 1)."
+    },
+    {
+      "ad": "Kavuşum dönemi",
+      "ifade": "1/S = 1/P − 1/Y",
+      "aciklama": "P: yıldızıl ay (27,3217 gün), Y: yıldızıl yıl (365,256 gün), S: kavuşum ayı (gün). Sonuç S ≈ 29,53 gün."
+    },
+    {
+      "ad": "Lazerle uzaklık",
+      "ifade": "d = c × t / 2",
+      "aciklama": "c: ışık hızı (299.792.458 m/s), t: gidiş-dönüş süresi (s), d: uzaklık (m). 384.400 km için t ≈ 2,56 s."
+    },
+    {
+      "ad": "Açısal çap (küçük açı)",
+      "ifade": "açı (°) ≈ (çap / uzaklık) × 57,3",
+      "aciklama": "Çap ve uzaklık aynı birimde olmalı. 57,3, bir radyanın derece karşılığıdır. Ay için ≈ 0,52°."
+    },
+    {
+      "ad": "Ağırlık",
+      "ifade": "F = m × g",
+      "aciklama": "m: kütle (kg), g: yüzey çekim ivmesi (Dünya 9,80; Ay 1,62 m/s²), F: ağırlık (newton)."
+    }
+  ],
+  "anahtar_sayilar": [
+    {
+      "deger": "29,53 gün / 27,3217 gün",
+      "aciklama": "Kavuşum ayı (evre döngüsü) / yıldızıl ay",
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html"
+    },
+    {
+      "deger": "~%59; boylamda 7°54′, enlemde 6°50′",
+      "aciklama": "Librasyonla görülebilen yüzey ve librasyonun en büyük genliği",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Libration"
+    },
+    {
+      "deger": "384.400 km (yaklaşık 357.000–407.000 km)",
+      "aciklama": "Ortalama uzaklık ve değişim aralığı",
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html"
+    },
+    {
+      "deger": "3,8 cm/yıl",
+      "aciklama": "Ay'ın uzaklaşma hızı (lazer ölçümleri)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Lunar_Laser_Ranging_experiments"
+    },
+    {
+      "deger": "7,346 × 10²² kg (Dünya'nın 0,0123'ü); 1,62 m/s² (Dünya'nın 0,165'i)",
+      "aciklama": "Ay'ın kütlesi ve yüzey çekim ivmesi",
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html"
+    },
+    {
+      "deger": "5,145°",
+      "aciklama": "Ay yörüngesinin tutulum düzlemine eğikliği",
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html"
+    },
+    {
+      "deger": "~%16 (yakın yüz %31, uzak yüz %2)",
+      "aciklama": "Denizlerin kapladığı yüzey",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Lunar_mare"
+    },
+    {
+      "deger": "4,51 milyar yıl önce; Mars büyüklüğünde çarpan (Theia)",
+      "aciklama": "Dev çarpışma varsayımına göre Ay'ın oluşumu",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Moon"
+    },
+    {
+      "deger": "20 Temmuz 1969; 6 iniş, 12 insan; 382 kg örnek",
+      "aciklama": "Apollo 11'in inişi; Apollo programının toplamı",
+      "kaynak_url": "https://science.nasa.gov/moon/facts/"
+    },
+    {
+      "deger": "≤267 km (genellikle 100–160 km); tam evre ≤7 dk 32 s",
+      "aciklama": "Tam Güneş tutulması şeridinin genişliği ve tam evrenin en uzun süresi",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Solar_eclipse"
+    },
+    {
+      "deger": "173,3 gün; saros 6585,3 gün",
+      "aciklama": "Tutulma mevsimleri arası; saros döngüsü",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Solar_eclipse"
+    }
+  ],
+  "sozluk": [
+    { "terim": "Uzanım", "tanim": "Dünya'dan bakınca bir gök cismi ile Güneş arasındaki açı." },
+    { "terim": "Yıldızıl ay", "tanim": "Ay'ın yıldızlara göre Dünya çevresinde bir tur atma süresi (27,32 gün)." },
+    { "terim": "Kavuşum ayı", "tanim": "Ay'ın aynı evreye dönme süresi, yani yeni aydan yeni aya geçen zaman (29,53 gün)." },
+    { "terim": "Eş zamanlı dönme", "tanim": "Bir uydunun kendi çevresindeki dönüşünün, gezegeni çevresindeki dolanımıyla aynı sürmesi." },
+    { "terim": "Gelgit kilitlenmesi", "tanim": "Kütleçekimin yarattığı şişkinliğin dönüşü yavaşlatarak eş zamanlı dönmeye yol açması." },
+    { "terim": "Librasyon", "tanim": "Ay'ın Dünya'dan bakınca küçük salınımlar yapıyormuş gibi görünmesi; yüzeyin yarısından fazlasını görmemizi sağlar." },
+    { "terim": "Terminatör", "tanim": "Ay'ın aydınlık ve karanlık kısımlarını ayıran sınır çizgisi." },
+    { "terim": "Deniz (mare)", "tanim": "Ay'da lavla dolmuş eski çarpışma havzalarının oluşturduğu koyu bazalt ovası." },
+    { "terim": "Dünya ışığı", "tanim": "Dünya'dan yansıyan Güneş ışığının ince hilaldeki Ay'ın karanlık kısmını soluk aydınlatması." },
+    { "terim": "Düğüm", "tanim": "Ay yörüngesinin Dünya'nın yörünge düzlemini kestiği iki nokta; tutulmalar ancak buralarda olur." },
+    { "terim": "Saros", "tanim": "Yaklaşık 18 yıl 11 günlük, sonunda neredeyse aynı tutulmanın tekrarlandığı döngü." },
+    { "terim": "Dev çarpışma varsayımı", "tanim": "Ay'ın, Mars büyüklüğünde bir cismin genç Dünya'ya çarpmasıyla saçılan malzemeden oluştuğu görüşü." }
+  ],
+  "defter_notu": [
+    "Ay hep yarı aydınlık; evre = aydınlık yarının bize dönük kısmı. k = (1 − cos θ)/2.",
+    "Kuzey yarımküre: sağ yan aydınlık → büyüyor. Dolunay gün batımında doğar, ilkdördün öğlen.",
+    "Yıldızıl ay 27,32 g; kavuşum ayı 29,53 g (1/S = 1/P − 1/Y).",
+    "Eş zamanlı dönme: 1 dönüş = 1 dolanım → hep aynı yüz. Librasyonla yüzeyin ~%59'u görülür.",
+    "Ay: çap 3474 km, kütle Dünya × 0,0123, g = 1,62 m/s² (≈ 1/6). Gündüz ~127 °C, gece ~−173 °C.",
+    "Denizler = lavla dolmuş havzalar (bazalt), yüzeyin ~%16'sı. Kraterler için terminatöre bak.",
+    "Köken: Mars büyüklüğünde Theia, ~4,51 milyar yıl önce. İpucu: izotoplar neredeyse aynı.",
+    "Uzaklık ort. 384.400 km; Apollo yansıtıcıları → yılda ~3,8 cm uzaklaşma.",
+    "Güneş tutulması: yeni ay, dar şerit, ISO 12312-2 gözlük. Ay tutulması: dolunay, güvenli, kızıl. Yörünge 5,145° eğik.",
+    "Apollo 11: 20 Temmuz 1969. 6 iniş, 12 insan, 382 kg örnek. Artemis II: 2026, mürettebatlı Ay çevresi uçuşu."
+  ],
+  "sorular": [
+    {
+      "soru": "İlkdördün Ay'a yarım ay denir. Gerçekte Ay'ın tüm yüzeyinin ne kadarı aydınlık, ne kadarını aydınlık görüyoruz?",
+      "cevap": "Ay'ın yüzeyinin her zaman yarısı aydınlıktır. İlkdördünde o aydınlık yarının yarısını görürüz; gördüğümüz diskin yarısı parlak, ama bu Ay'ın toplam yüzeyinin dörtte biridir. Formülle θ = 90° için k = (1 − 0)/2 = 0,5."
+    },
+    {
+      "soru": "Ay kendi ekseni çevresinde dönmüyor olsaydı Dünya'dan ne görürdük?",
+      "cevap": "Dolanırken yönünü uzaya göre sabit tutacağı için bir ay boyunca bütün yüzlerini sırayla bize gösterirdi. Uzak yüzü görmememizin nedeni, dönüşünün dolanımıyla eşit sürmesidir."
+    },
+    {
+      "soru": "Neden her dolunayda Ay tutulması olmuyor?",
+      "cevap": "Ay'ın yörüngesi Dünya'nın yörünge düzlemine 5,145° eğiktir. Dolunayların çoğunda Ay, Dünya'nın gölgesinin biraz üstünden ya da altından geçer. Tutulma için dolunayın düğümlerden birine yakın denk gelmesi gerekir; bu da yaklaşık 173,3 günde bir gelen tutulma mevsimlerinde olur."
+    },
+    {
+      "soru": "Ay tutulmasını İstanbul'dan izleyen birine 'gözlük taksın mı?' diye sorulsa ne dersin? Güneş tutulması için cevap ne olur?",
+      "cevap": "Ay tutulmasını korumasız gözle izlemek güvenlidir. Güneş tutulmasında ise tam evre dışında her an ISO 12312-2 uyumlu tutulma gözlüğü gerekir; güneş gözlüğü yetmez. Dürbünle Güneş'e ancak önüne özel güneş filtresi sağlam takılmışsa bakılabilir."
+    },
+    {
+      "soru": "Apollo 11'in yansıtıcısına gönderilen bir lazer atımı 2,6 saniyede geri dönüyor. Ay o an ne kadar uzaktadır?",
+      "cevap": "d = c × t / 2 = 299.792 km/s × 2,6 s / 2 ≈ 389.700 km. Bu değer 357.000–407.000 km aralığında, ortalamanın biraz üstündedir."
+    },
+    {
+      "soru": "Dev çarpışma varsayımını destekleyen bir kanıt söyle. Ay başka bir yerde oluşup Dünya tarafından yakalanmış olsaydı ne beklerdik?",
+      "cevap": "Dünya ile Ay'ın izotop bileşimleri neredeyse aynıdır. Ay başka bir bölgede oluşup yakalanmış olsaydı, farklı bir malzemeden yapılmış olacağı için izotop parmak izinin de farklı olması beklenirdi."
+    },
+    {
+      "soru": "Dolunay neden dürbünle krater gözlemi için en kötü zamandır?",
+      "cevap": "Dolunayda Güneş ışığı yüzeye neredeyse dik gelir, gölgeler kaybolur ve kabartı görünmez. Öteki evrelerde terminatör boyunca ışık yatık gelir; kraterler ve dağlar uzun gölge düşürür, bu yüzden NASA dolunay dışındaki evreleri önerir."
+    }
+  ],
+  "kaynaklar": [
+    { "ad": "NASA NSSDCA – Moon Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html" },
+    { "ad": "NASA Science – Moon Phases", "url": "https://science.nasa.gov/moon/moon-phases/" },
+    { "ad": "NASA Science – Moon Facts", "url": "https://science.nasa.gov/moon/facts/" },
+    { "ad": "NASA Science – Tidal Locking", "url": "https://science.nasa.gov/moon/tidal-locking/" },
+    { "ad": "NASA Science – Moon Viewing Tips", "url": "https://science.nasa.gov/moon/viewing-tips/" },
+    { "ad": "NASA Science – Types of Eclipses", "url": "https://science.nasa.gov/eclipses/types/" },
+    { "ad": "NASA Science – Eclipse Safety", "url": "https://science.nasa.gov/eclipses/safety/" },
+    { "ad": "Wikipedia – Moon", "url": "https://en.wikipedia.org/wiki/Moon" },
+    { "ad": "Wikipedia – Lunar phase", "url": "https://en.wikipedia.org/wiki/Lunar_phase" },
+    { "ad": "Wikipedia – Libration", "url": "https://en.wikipedia.org/wiki/Libration" },
+    { "ad": "Wikipedia – Lunar mare", "url": "https://en.wikipedia.org/wiki/Lunar_mare" },
+    { "ad": "Wikipedia – Lunar Laser Ranging experiments", "url": "https://en.wikipedia.org/wiki/Lunar_Laser_Ranging_experiments" },
+    { "ad": "Wikipedia – Lunar distance", "url": "https://en.wikipedia.org/wiki/Lunar_distance" },
+    { "ad": "Wikipedia – Solar eclipse", "url": "https://en.wikipedia.org/wiki/Solar_eclipse" },
+    { "ad": "Wikipedia – Lunar eclipse", "url": "https://en.wikipedia.org/wiki/Lunar_eclipse" },
+    { "ad": "Wikipedia – Orbital period", "url": "https://en.wikipedia.org/wiki/Orbital_period" },
+    { "ad": "NIST CODATA – speed of light in vacuum", "url": "https://physics.nist.gov/cgi-bin/cuu/Value?c" }
+  ]
+}
