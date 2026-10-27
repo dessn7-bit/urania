@@ -94,7 +94,9 @@ test('(a2) parçalama: binlik ayraçlı sayı, sıra sayısı, saat ve tek baş�
     const t = window.Okunus.okunus(ham);
     const p = window.Ses.parcala(t);
     const ust = window.Ses.parcala('x'.repeat(150) + ' ve 11. ' + 'dersten '.repeat(10) + 'sonra.');
-    return { t, p, ust };
+    /* sınır tam "11." ve "03." üstüne düşecek biçimde (eski kural burada bölüyordu) */
+    const sinir = window.Ses.parcala('x '.repeat(70) + 'son. Bunu 11. dersten hatırla ve gece 03.21 saatinde yeniden bak lütfen. Bitti.');
+    return { t, p, ust, sinir };
   });
   expect(r.t).toContain('14500 yılında');
   expect(r.t).toContain('400000 kat');
@@ -109,6 +111,8 @@ test('(a2) parçalama: binlik ayraçlı sayı, sıra sayısı, saat ve tek baş�
   expect(r.p.some(x => x.includes('03.21'))).toBe(true);
   /* tavanı aşan tek cümlede boşluktan bölünürken de "11." parçanın sonunda kalmaz */
   r.ust.slice(0, -1).forEach(x => expect(x).not.toMatch(/\d\.$/));
+  r.sinir.slice(0, -1).forEach(x => expect(x).not.toMatch(/\d\.$/));
+  expect(r.sinir.some(x => x.includes('11. dersten') && x.includes('03.21'))).toBe(true);
 });
 
 test('(a3) Dinle: gerçek derste binlik ayraçlı sayı iki konuşmaya bölünmez', async ({ page }) => {

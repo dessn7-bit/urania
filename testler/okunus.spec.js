@@ -80,6 +80,7 @@ const TABLO = [
   /* B3: kesir ve rakamlar arası tire */
   ['kuvvet 1/4. Çekim ≈ 1/6; 1/81', 'kuvvet dörtte bir. Çekim yaklaşık altıda bir; 1 bölü 81'],
   ['tarih (2026-12-15); K2-18 b; ISO 12312-2; P.L. 119-74', 'tarih (2026 12 15); K2 18 b; ISO 12312 2; P.L. 119 74'],
+  ['JADES-GS-z14-0; 3-5 dakika', 'JADES-GS-z14 0; 3-5 dakika'],
   ['−1,46 ile +6,5; 7×50 dürbün', 'eksi 1,46 ile artı 6,5; 7 çarpı 50 dürbün'],
   /* değişmeyenler: harf adı, kısaltma sayısız, AB tek başına */
   ["A'dan K'ye harflerle; AB ülkeleri", "A'dan K'ye harflerle; AB ülkeleri"]

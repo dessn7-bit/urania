@@ -7,7 +7,7 @@ sys.path.insert(0, os.path.join(K, 'araclar'))
 from ders_denetim import denetle
 
 UNITELER = [
-    {'id': 'gokyuzu', 'ad': 'Gökyüzünü okumak', 'aciklama': 'Gökte yön bulmak, ışığın dili, teleskop ve dürbün.', 'dersler': ['d1', 'd2', 'd12', 'd11']},
+    {'id': 'gokyuzu', 'ad': 'Gökyüzünü okumak', 'aciklama': 'Gökte yön bulmak, ışığın dili, teleskop ve dürbün.', 'dersler': ['d1', 'd2', 'd11', 'd12']},
     {'id': 'gunes_sistemi', 'ad': 'Güneş Sistemi', 'aciklama': 'Kütleçekim, gezegenler, Ay ve küçük cisimler.', 'dersler': ['d3', 'd9', 'd10', 'd19']},
     {'id': 'yildizlar', 'ad': 'Yıldızlar', 'aciklama': 'Güneş\'ten başlayıp yıldızların doğumu, hayatı ve ölümü.', 'dersler': ['d4', 'd14', 'd5', 'd15', 'd6', 'd16']},
     {'id': 'gezegen_yasam', 'ad': 'Ötegezegenler ve yaşam', 'aciklama': 'Başka yıldızların gezegenleri ve yaşam arayışı.', 'dersler': ['d13', 'd18']},
@@ -29,6 +29,16 @@ for u in UNITELER:
             dersler.append(d); kaynak[i] = 'v2'
         elif i in eski:
             dersler.append(eski[i]); kaynak[i] = 'eski'
+# Kaynak metinler başka dersleri dosya kimliğiyle anar ("11. ders" = d11). Uygulama dersleri ünite sırasıyla
+# numaralar ("Ders 4 / 19"), bu yüzden atıflar burada uygulamadaki sıra numarasına çevrilir.
+SIRA = {d['id']: i + 1 for i, d in enumerate(dersler)}
+def numarala(x):
+    if isinstance(x, str):
+        return re.sub(r'(?<![\d%,.])(\d{1,2})\. ders', lambda m: (str(SIRA['d' + m.group(1)]) if 'd' + m.group(1) in SIRA else m.group(1)) + '. ders', x)
+    if isinstance(x, list): return [numarala(v) for v in x]
+    if isinstance(x, dict): return {k: (v if k in ('id', 'kaynak_url', 'url') else numarala(v)) for k, v in x.items()}
+    return x
+dersler = [numarala(d) if kaynak[d['id']] == 'v2' else d for d in dersler]   # eski kayıtlar zaten çevrilmiş
 for d in dersler:
     for s in d.get('anahtar_sayilar', []): assert s.get('kaynak_url', '').startswith('http'), (d['id'], s)
 out = {'not': 'Ders metinleri Urania için yazıldı; her sayı ve olgu derste bağlantısı verilen kaynaklarla, ayrıca bağımsız bir doğrulama turunda kontrol edildi. '

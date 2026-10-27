@@ -149,14 +149,14 @@ test('Yatay tutuş (ekran 90°): gökyüzü ters dönmez — yukarıdaki yıldı
 /* Sahte kamera (izin penceresi 400 ms sürer) ve geç yanıtlayan ekran kilidi (300 ms) */
 async function sahteKamera(page, secenek) {
   await page.addInitScript(s => {
-    const K = window.__k = { akislar: [], kilitIstek: 0, kilitAktif: 0 };
+    const K = window.__k = { akislar: [], kilitIstek: 0, kilitGelen: 0, kilitAktif: 0 };
     navigator.mediaDevices.getUserMedia = () => new Promise(res => setTimeout(() => {
       const c = document.createElement('canvas'); c.width = 4; c.height = 4; c.getContext('2d').fillRect(0, 0, 4, 4);
       const a = c.captureStream(5); K.akislar.push(a); res(a);
     }, 400));
     if (s.playHata) HTMLMediaElement.prototype.play = () => Promise.reject(Object.assign(new Error('oynatılamadı'), { name: 'NotSupportedError' }));
     Object.defineProperty(navigator, 'wakeLock', { configurable: true, value: { request() { K.kilitIstek++;
-      return new Promise(res => setTimeout(() => { K.kilitAktif++; let b = false; res({ release() { if (!b) { b = true; K.kilitAktif--; } return Promise.resolve(); }, addEventListener() {} }); }, 300)); } } });
+      return new Promise(res => setTimeout(() => { K.kilitGelen++; K.kilitAktif++; let b = false; res({ release() { if (!b) { b = true; K.kilitAktif--; } return Promise.resolve(); }, addEventListener() {} }); }, 300)); } } });
     K.canli = () => K.akislar.reduce((n, a) => n + a.getTracks().filter(t => t.readyState === 'live').length, 0);
   }, secenek || {});
 }
@@ -221,8 +221,8 @@ test.describe('Kamera ve ekran kilidi yarışları (A1, A4)', () => {
     await page.waitForTimeout(500);
     await page.locator('#arKamera').click();
     await page.locator('.ar-kapat').click();
-    await page.waitForTimeout(800);
-    expect(await page.evaluate(() => window.__k.akislar.length)).toBe(1);   // istek gerçekten yapıldı
+    await expect.poll(() => page.evaluate(() => window.__k.akislar.length)).toBe(1);   // istek gerçekten sonuçlandı
+    await page.waitForTimeout(100);
     expect(await page.evaluate(() => window.__k.canli())).toBe(0);
     expect(await page.evaluate(() => window.UraniaAR.st.kamera)).toBe(false);
   });
@@ -231,10 +231,11 @@ test.describe('Kamera ve ekran kilidi yarışları (A1, A4)', () => {
     await sahteKamera(page);
     await page.goto('/index.html#ar');
     await page.waitForTimeout(500);
-    await page.evaluate(() => { const b = document.querySelector('#arKamera'); b.click(); b.click(); });
-    await expect(page.locator('#arKamera')).toBeDisabled();
-    await page.waitForTimeout(800);
+    const devreDisi = await page.evaluate(() => { const b = document.querySelector('#arKamera'); b.click(); const d = b.disabled; b.click(); return d; });
+    expect(devreDisi).toBe(true);
     await expect(page.locator('#arKamera')).toBeEnabled();
+    await page.waitForTimeout(300);
+    expect(await page.evaluate(() => window.__k.akislar.length)).toBe(1);
     expect(await page.evaluate(() => window.__k.canli())).toBe(1);
     await expect(page.locator('#arKamera')).toHaveAttribute('aria-pressed', 'true');
     await page.locator('.ar-kapat').click();
@@ -245,13 +246,14 @@ test.describe('Kamera ve ekran kilidi yarışları (A1, A4)', () => {
   test('A1: video.play() hata verirse açılan akış durdurulur', async ({ page }) => {
     await sahteKamera(page, { playHata: true });
     await page.goto('/index.html#ar');
-    await page.waitForTimeout(500);
+    /* Algılayıcı zamanlayıcısı (1,5 sn) durum mesajını ezmesin diye önce sürükleme moduna geçilsin */
+    await expect.poll(() => page.evaluate(() => window.UraniaAR && window.UraniaAR.st.mod)).toBe('dokunma');
     await page.locator('#arKamera').click();
-    await page.waitForTimeout(700);
+    await expect(page.locator('#arDurum')).toHaveText('Kamera açılamadı.');
     expect(await page.evaluate(() => window.__k.akislar.length)).toBe(1);
     expect(await page.evaluate(() => window.__k.canli())).toBe(0);
     await expect(page.locator('#arKamera')).toHaveAttribute('aria-pressed', 'false');
-    await expect(page.locator('#arDurum')).toHaveText('Kamera açılamadı.');
+    await expect(page.locator('#arKamera')).toBeEnabled();
   });
 
   test('A4: ekran kilidi AR kapandıktan sonra gelirse hemen bırakılır', async ({ page }) => {
@@ -261,8 +263,8 @@ test.describe('Kamera ve ekran kilidi yarışları (A1, A4)', () => {
     await page.evaluate(() => { location.hash = '#ar'; });
     await page.waitForTimeout(100);
     await page.evaluate(() => { location.hash = '#gok'; });
-    await page.waitForTimeout(700);
-    expect(await page.evaluate(() => window.__k.kilitIstek)).toBeGreaterThan(0);
+    await expect.poll(() => page.evaluate(() => window.__k.kilitGelen)).toBeGreaterThan(0);   // istek AR kapandıktan sonra sonuçlandı
+    await page.waitForTimeout(100);
     expect(await page.evaluate(() => window.__k.kilitAktif)).toBe(0);
   });
 });
@@ -272,11 +274,11 @@ test('A5: göreli akıştan sonra mutlak gelince çerçeveler karışmaz (bakı�
   await page.waitForTimeout(300);
   /* Android: önce yalnız göreli olay (mutlak algılayıcı ısınıyor) → 1,5 sn sonra göreli kabul edilir */
   await page.evaluate(() => { window.__g = setInterval(() => window.dispatchEvent(new DeviceOrientationEvent('deviceorientation', { alpha: 200, beta: 90, gamma: 0, absolute: false })), 30); });
-  await page.waitForTimeout(1700);
-  expect(await page.evaluate(() => window.UraniaAR.st.manyetik)).toBe(false);
+  await expect.poll(() => page.evaluate(() => window.UraniaAR.st.manyetik)).toBe(false);
   /* Mutlak olaylar başlar (gerçek: α=0 → manyetik kuzey); göreli akış sürer */
   await page.evaluate(() => { window.__m = setInterval(() => window.dispatchEvent(new DeviceOrientationEvent('deviceorientationabsolute', { alpha: 0, beta: 90, gamma: 0, absolute: true })), 30); });
-  await page.waitForTimeout(300);
+  await expect.poll(() => page.evaluate(() => window.UraniaAR.st.manyetik)).toBe(true);
+  await page.waitForTimeout(200);
   const ornek = [];
   for (let i = 0; i < 10; i++) {
     await page.waitForTimeout(100);
@@ -292,11 +294,16 @@ test('A10: hızlı kapat-aç: eski oturumun zamanlayıcısı yeni oturumu erken 
   await page.waitForTimeout(1000);
   await page.evaluate(() => { location.hash = '#gok'; });
   await page.waitForTimeout(100);
-  await page.evaluate(() => { location.hash = '#ar'; });
-  await page.waitForTimeout(800);   // eski zamanlayıcı (≈ 1,5 sn) bu arada dolmuş olurdu
-  expect(await page.evaluate(() => window.UraniaAR.st.mod)).toBe('bekliyor');
-  await page.waitForTimeout(1000);
-  expect(await page.evaluate(() => window.UraniaAR.st.mod)).toBe('dokunma');
+  /* Yeniden girişten dokunma moduna geçişe kadar geçen süre sayfanın içinde ölçülür (yük altında da
+     zamanlayıcılar yalnız gecikebilir, erken dolamaz): eski zamanlayıcı ≈ 0,4 sn'de geçirirdi. */
+  await page.evaluate(() => {
+    location.hash = '#ar';
+    const t0 = Date.now();
+    window.__gecis = null;
+    const iz = setInterval(() => { if (window.UraniaAR.st.mod === 'dokunma') { window.__gecis = Date.now() - t0; clearInterval(iz); } }, 20);
+  });
+  await expect.poll(() => page.evaluate(() => window.__gecis), { timeout: 8000 }).not.toBeNull();
+  expect(await page.evaluate(() => window.__gecis)).toBeGreaterThanOrEqual(1400);
 });
 
 test.describe('iOS izin akışı (A6, A11)', () => {
@@ -320,7 +327,7 @@ test.describe('iOS izin akışı (A6, A11)', () => {
     await page.goto('/index.html#ar');
     await page.waitForTimeout(1800);
     await page.locator('#arPusula').click();
-    await page.waitForTimeout(2300);
+    await expect(page.locator('#arDurum')).toContainText('yön verisi gelmiyor', { timeout: 8000 });
     const d = await arDurum(page);
     expect(d.mod).toBe('dokunma');
     expect(d.dugme).toBe(false);
@@ -447,6 +454,7 @@ test('B4: arayüzde hedef arkadayken tarif yönü ±1° kıpırtıda değişmez'
   const yonler = new Set();
   for (const az of [312.0, 313.2, 311.8, 313.4, 312.1, 313.0]) {
     await yonVer(page, ((6.09 - az) % 360 + 360) % 360, 90 + 39.47, 0);
+    await expect(page.locator('#arTarif')).toHaveText(/^(sağa|sola) /);
     yonler.add((await page.locator('#arTarif').innerText()).split(' ')[0]);
   }
   expect(yonler.size).toBe(1);

@@ -109,8 +109,9 @@
     t = t.replace(/(\d)\.(?=\d{3}(?!\d))/g, '$1');
     /* Alt simge: H₂ → H 2 */
     t = t.replace(/[₀-₉]+/g, s => ' ' + [...s].map(c => ALT[c]).join('') + ' ');
-    /* Rakamlar arasındaki tire (tarih, katalog adı: 2026-12-15, K2-18 b, ISO 12312-2) "eksi" okunmasın */
-    t = t.replace(/(\d)-(?=\d)/g, '$1 ');
+    /* Tarih ve katalog adındaki tire (2026-12-15, K2-18 b, ISO 12312-2, P.L. 119-74) "eksi" okunmasın:
+       bir yanda en az 3 basamak ya da rakamlardan önce harf varsa boşluk olur; "3-5" gibisi kalır */
+    t = t.replace(/([A-Za-z]?)(\d+)((?:-\d+)+)/g, (m, h, a, k) => (h || a.length >= 3 || /\d{3}/.test(k) ? h + a + k.replace(/-/g, ' ') : m));
     /* Basit kesir: 1/4 → dörtte bir */
     t = t.replace(/(^|[\s(≈~])([1-9])\/([2-9]|10)(?![\d²³'’/]|[,.]\d)/g, (m, o, p, q) => (+p < +q ? o + ekle(SAYI[q], 'de') + ' ' + SAYI[p] : m));
     /* Güneş ve Dünya birimleri (tamlama: "M☉'in" → Güneş kütlesinin, "M☉'lik" → Güneş kütlelik) */

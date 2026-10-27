@@ -198,7 +198,7 @@
         ['Çöküş ve parçalanma', 'kütleçekimi gaz basıncını yener', 'parçalar ayrı ayrı çöker → küme'],
         ['Önyıldız ve disk', 'Sınıf 0 ~10⁴ yıl → Sınıf I ~10⁵ yıl', 'Güneş benzeri: toplam ~500.000 yıl'],
         ['T Tauri yıldızı', 'jetler ve disk; büzülerek ısınır', '10 milyon yıldan genç'],
-        ['Anakol yıldızı', 'merkezde hidrojen füzyonu başlar', 'anakolun ayrıntısı 5. derste']
+        ['Anakol yıldızı', 'merkezde hidrojen füzyonu başlar', 'anakolun ayrıntısı Yıldızların Hayatı dersinde']
       ];
       adim.forEach((a, i) => {
         const y = 6 + 86 * i, cy = y + 34;

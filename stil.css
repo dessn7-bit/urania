@@ -317,6 +317,7 @@ html.kirmizi .ar-durum, html.kirmizi .ar-bilgi, html.kirmizi .ar-hizala, html.ki
 .defter-form { margin-top: 4px; }
 .defter-form textarea { background: var(--gece); border: 1px solid var(--cizgi); border-radius: 8px; padding: 9px 10px; color: var(--parsomen); font: 400 16px/1.5 var(--sans); width: 100%; resize: vertical; }
 .defter-form textarea:focus { border-color: var(--pirinc); outline: none; }
+#dfListe .sag { white-space: normal; overflow-wrap: anywhere; max-width: 14em; }   /* uzun yer adı dar ekranda taşmasın */
 .defter-not { display: block; color: var(--parsomen); font: 400 16px/1.55 var(--serif); margin-top: 6px; white-space: pre-wrap; overflow-wrap: anywhere; }
 .defter-bag { display: block; margin-top: 4px; font-size: 14px; }
 .liste .bag, .cip-grup .bag { background: none; border: 0; padding: 0; color: var(--pirinc); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; font-size: 14px; }

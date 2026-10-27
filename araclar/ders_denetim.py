@@ -59,6 +59,15 @@ def denetle(yol):
         r = subprocess.run(['node', '-e', js], capture_output=True, text=True, timeout=30)
         kalan = json.loads(r.stdout.strip() or '[]')
         if kalan: uyarilar.append(f'sesli okumada karşılığı olmayan semboller: {kalan} (kelimeyle yaz ya da Claude\'a bildir)')
+        # okunuş: sayıdan sonra açılmadan kalan ekli birim ("5 km'de") ve "ya da" okunan birimli eğik çizgi
+        js2 = ("const {okunus}=require('%s');const d=require('%s');const m=d.bolumler.flatMap(b=>[b.baslik,...b.paragraflar,b.akilda||'',...(b.ornek?[b.ornek.baslik,b.ornek.metin]:[])]).concat(d.defter_notu||[]);"
+               "const ek=new Set(),yd=new Set();m.forEach(x=>{const o=okunus(x);(o.match(/\\d\\s?(?:km|cm|mm|nm|μm|kg|AB|K|dk|sa|sn|Mpc|kpc|pc|W|J|Hz|MHz|THz|MeV|s|m|g|°C?)[²³]?['’][a-zçğıöşü]+/g)||[]).forEach(e=>ek.add(e));"
+               "(x.match(/\\S+\\/\\S+/g)||[]).forEach(e=>{if(/ ya da /.test(okunus(e))&&!/^[a-zçğıöşü]{2,}\\/[a-zçğıöşü]{2,}[.,;:)]*$/.test(e))yd.add(e);});});"
+               "console.log(JSON.stringify({ek:[...ek],yd:[...yd]}));") % (os.path.join(K, 'okunus.js'), os.path.abspath(yol))
+        r2 = subprocess.run(['node', '-e', js2], capture_output=True, text=True, timeout=30)
+        o2 = json.loads(r2.stdout.strip() or '{}')
+        if o2.get('ek'): uyarilar.append(f'sesli okumada açılmayan ekli birim: {o2["ek"][:8]} (okunus.js birim listesine ekle)')
+        if o2.get('yd'): uyarilar.append(f'birimli eğik çizgi "ya da" okunuyor: {o2["yd"][:8]} (okunus.js birim listesine ekle)')
     except Exception as e:
         uyarilar.append(f'okunuş denetimi çalışmadı: {e}')
     return hatalar, uyarilar

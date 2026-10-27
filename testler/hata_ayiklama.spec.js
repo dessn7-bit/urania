@@ -169,3 +169,15 @@ test.describe('arayüz', () => {
     expect(await page.locator('#gkOlay li').count()).toBeGreaterThan(5);
   });
 });
+
+test('Derslerdeki "N. ders" atıfları uygulamadaki sıra numarasıdır (kaynak metinler dosya kimliğiyle yazıldı)', () => {
+  const D = require('../veri/dersler.json').dersler, no = id => D.findIndex(d => d.id === id) + 1;
+  const metin = id => JSON.stringify(D.find(d => d.id === id));
+  expect(no('d11')).toBeLessThan(no('d12'));                                  // dürbün teleskoptan önce
+  expect(metin('d9')).toContain(`Dürbünü sabitlemeyi unutma (${no('d11')}. ders)`);
+  expect(metin('d12')).toContain(`güvenli Güneş gözlemi ${no('d4')}. dersin konusudur`);
+  expect(metin('d4')).toContain(`ayrıntısını ${no('d5')}. derste göreceksin`);
+  D.forEach(d => (JSON.stringify(d).match(/(?<![\d%,.])\d{1,2}\. ders/g) || []).forEach(m => {
+    const n = parseInt(m, 10); expect(n >= 1 && n <= D.length, d.id + ' ' + m).toBe(true);
+  }));
+});

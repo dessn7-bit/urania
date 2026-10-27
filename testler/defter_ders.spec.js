@@ -213,7 +213,7 @@ test('13: 320 px\'te uzun boşluksuz ad ve not taşmaz', async ({ page }) => {
   await page.setViewportSize({ width: 320, height: 640 });
   await page.goto('/index.html#defter');
   const uzun = 'Ç'.repeat(70);
-  await depo(page, { defter: JSON.stringify([kayit('uzun1', { cisim: { anahtar: 'diger:x', ad: uzun }, not: 'N'.repeat(300), alet: 'A'.repeat(38) })]) });
+  await depo(page, { defter: JSON.stringify([kayit('uzun1', { cisim: { anahtar: 'diger:x', ad: uzun }, not: 'N'.repeat(300), alet: 'A'.repeat(38), konum: { ad: 'Uzunyeradımahallesi'.repeat(4), enlem: 40.99, boylam: 29.03 } })]) });
   await page.reload();
   await expect(page.locator('#dfListe li')).toHaveCount(1);
   const tasma = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);

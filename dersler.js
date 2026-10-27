@@ -368,7 +368,7 @@
       D = await U.veri('dersler');
       try { D.sinavlar = await U.veri('sinavlar'); } catch (e) { D.sinavlar = null; }   // sınavlar yoksa dersler yine açılır
     } catch (e) {
-      el.innerHTML = '<div class="hata-kutu">Dersler yüklenemedi: ' + U.kacis(e.message) + '</div>'; return;
+      el.innerHTML = '<div class="hata-kutu" role="alert">Dersler yüklenemedi: ' + U.kacis(e.message) + '. Başka bir sekmeye geçip dönünce yeniden denenir.</div>'; return false;
     }
     goster(kok, location.hash.split('/').slice(1).join('/'));
   }
