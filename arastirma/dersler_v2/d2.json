@@ -1,0 +1,320 @@
+{
+  "id": "d2",
+  "unite": "gokyuzu",
+  "baslik": "Işık ve Tayf: Yıldızlardan Gelen Mesajı Okumak",
+  "ozet": "Yıldızlara gidemeyiz ama ışıkları bize gelir. Bu derste ışığın dalga boyu, frekans ve foton enerjisiyle nasıl tarif edildiğini, sıcak cisimlerin sıcaklıklarını renkleriyle nasıl ele verdiğini öğreneceksin. Tayf çizgilerinin kimyasal bileşimi nasıl açığa çıkardığını, Doppler kaymasıyla hızın nasıl ölçüldüğünü ve atmosferin hangi ışığı geçirip hangisini durdurduğunu göreceksin.",
+  "on_bilgi": ["d1"],
+  "bolumler": [
+    {
+      "baslik": "Işık: hem dalga hem parçacık",
+      "paragraflar": [
+        "Gökbilimin elindeki bilginin neredeyse tamamı ışıktan gelir. Bir yıldıza dokunamaz, ondan örnek alamayız; elimizde yalnızca bize ulaşan ışınım vardır. Bu derste göreceğin gibi o ışık, kaynağının sıcaklığını, bileşimini ve bize göre hareketini taşır. Işığı okumayı öğrenmek, gökyüzünün dilini öğrenmek demektir.",
+        "Işık, birbirini doğuran elektrik ve manyetik alanlardan oluşan bir dalgadır: değişen bir manyetik alan değişen bir elektrik alanı doğurur, o da yeniden manyetik alanı. Ses dalgalarından farkı, ilerlemek için bir ortama ihtiyaç duymamasıdır; boşlukta da yol alır. Yıldız ışığının uzayın boşluğunu aşıp bize ulaşabilmesi bu sayededir. İskoç bilim insanı James Clerk Maxwell bu kuramı 1860'lı ve 1870'li yıllarda geliştirdi. Alman fizikçi Heinrich Hertz ise radyo dalgalarını üretip algılayarak onların da ışık hızıyla gittiğini, yani bir tür ışık olduğunu gösterdi.",
+        "Işık aynı zamanda foton denen enerji paketlerinden oluşur. Fotonların kütlesi yoktur, ışık hızında hareket ederler ve momentum taşırlar. Hangi yüzünü göreceğin ölçme yöntemine bağlıdır: ışığı tayfına ayıran bir alet dalga yüzünü, dijital kameradaki dedektör ise tek tek fotonları, yani parçacık yüzünü görür. Işığın ikisi birden olduğunu kabul etmek, bu dersteki bütün yasaları anlamanın anahtarıdır."
+      ],
+      "akilda": "Işık hem boşlukta yol alan bir elektromanyetik dalga hem de foton denen enerji paketlerinin akışıdır. Gökbilimdeki bilginin neredeyse tamamı bu ışıktan çıkarılır."
+    },
+    {
+      "baslik": "Dalga boyu, frekans ve elektromanyetik tayf",
+      "paragraflar": [
+        "Bir dalgayı iki büyüklükle tarif ederiz. Dalga boyu (λ) iki tepe arasındaki uzaklıktır. Frekans (f) bir noktadan saniyede geçen tepe sayısıdır ve hertz ile ölçülür; saniyede bir dalga bir hertzdir. Boşlukta bütün elektromanyetik dalgalar aynı hızla, ışık hızıyla gider: c = 299.792.458 m/s. Bu yüzden dalga boyu ile frekans ters orantılıdır: f = c / λ. Dalga boyu kısaldıkça frekans da, her bir fotonun taşıdığı enerji de artar.",
+        "Elektromanyetik tayf, düşük frekanstan yükseğe şu bantlardan oluşur: radyo dalgaları, mikrodalgalar, kızılötesi, görünür ışık, morötesi, X ışınları ve gama ışınları. Bunlar farklı şeyler değil, aynı olgunun farklı dalga boylarıdır. Gözümüzün gördüğü bölüm bu geniş yelpazenin ince bir dilimidir: insan gözü genellikle yaklaşık 380 nm (mor) ile 700 nm (kırmızı) arasındaki dalga boylarını algılar. Bir nanometre metrenin milyarda biridir.",
+        "Bunu bir piyano klavyesine benzetebilirsin: tayf uzun bir klavyedir, gözümüz ise ortadaki birkaç tuşu duyabilen bir kulak gibidir. Gökbilimciler geri kalan tuşları duymak için radyo antenlerinden X ışını dedektörlerine kadar farklı aletler kullanır. Benzetmenin sınırı şu: piyanodaki notalar sayılıdır, tayf ise kesintisizdir; iki dalga boyu arasında her zaman bir başkası vardır.",
+        "Tayf o kadar geniştir ki tek bir birim hepsine yetmez. Bu derste görünür ışık ve morötesi için nanometre, kızılötesi için mikrometre, yani metrenin milyonda biri, radyo için milimetre ve metre kullanacağız. Radyoda çoğu zaman dalga boyu yerine frekans söylenir: megahertz saniyede bir milyon, terahertz saniyede bir trilyon titreşimdir. Hangi birimi duyarsan duy, f = c / λ bağıntısı ikisini birbirine çevirir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Yeşil ışığın frekansı",
+        "metin": "Dalga boyu 500 nm olan yeşil ışığın frekansı nedir? Adım 1: Dalga boyunu metreye çevir: 500 nm = 5 × 10⁻⁷ m. Adım 2: f = c / λ = 299.792.458 m/s ÷ 5 × 10⁻⁷ m. Adım 3: Sonuç yaklaşık 6,0 × 10¹⁴ hertz, yani saniyede yaklaşık 600 trilyon titreşim. Karşılaştırma: atmosferden geçebilen en uzun radyo dalgalarının frekansı yaklaşık 10 megahertz, dalga boyu yaklaşık 30 metredir; yeşil ışıktan yaklaşık 60 milyon kat uzun."
+      },
+      "akilda": "f = c / λ: dalga boyu kısaldıkça frekans artar. Tayf radyodan gamaya uzanır; göz yalnızca yaklaşık 380 ile 700 nm arasını görür."
+    },
+    {
+      "baslik": "Foton enerjisi: mavi neden kırmızıdan güçlü?",
+      "paragraflar": [
+        "Bir fotonun taşıdığı enerji frekansıyla doğru orantılıdır: E = h × f. Buradaki h Planck sabitidir ve değeri 6,62607015 × 10⁻³⁴ joule bölü hertzdir. SI birim sistemi bu değeri tam olarak sabitleyecek biçimde tanımlanmıştır; yani ölçülmüş bir sayı değil, tanım gereği kesin bir sayıdır. Max Planck bu sabiti, kara cisim ışımasının deneysel tayfını açıklayabilmek için ortaya attı.",
+        "f = c / λ olduğundan aynı bağıntı E = h × c / λ biçiminde de yazılabilir. Yani dalga boyu yarıya inerse foton enerjisi iki katına çıkar. Tek bir fotonun enerjisi gündelik ölçekte çok küçüktür, ama atomlar düzeyinde belirleyicidir. Gama ışınları, X ışınları ve morötesinin bir kısmı iyonlaştırıcıdır: fotonları atomdan elektron koparacak kadar enerji taşır. Uzun dalga boylu radyo fotonlarının enerjisi ise bunun için çok küçüktür; bu yüzden radyo dalgaları iyonlaştırıcı sayılmaz.",
+        "Bu fark gökbilimde iki biçimde karşına çıkar. Birincisi, çok sıcak ve şiddetli olaylar yüksek enerjili fotonlar üretir; X ışını ve gama ışını gözlemleri bu yüzden evrenin en sert ortamlarına açılan penceredir. İkincisi, foton enerjisi atomun içindeki enerji düzeyleriyle eşleşir; birazdan göreceğin tayf çizgileri tam olarak bu eşleşmeden doğar.",
+        "Sayıların büyüklüğü hakkında bir fikir vermek için: Planck sabiti üzerine yazılan kaynaklar, yeşil ışığın tek bir fotonu için yaklaşık 3,58 × 10⁻¹⁹ joule örneğini verir. Aşağıdaki örnekte 500 nm için biraz daha büyük bir değer bulacaksın; fark, yeşilin hangi dalga boyunu seçtiğinden gelir. İkisi de aynı mertebededir: bir joule'ün milyar kere milyarda birinden de küçük. Bir lambanın neden saniyede çok sayıda foton yaydığını bu küçüklük açıklar."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Bir yeşil foton ve bir H-alfa fotonu",
+        "metin": "Adım 1: h × c ≈ 6,626 × 10⁻³⁴ × 2,998 × 10⁸ ≈ 1,986 × 10⁻²⁵ joule metre. Adım 2: 500 nm'lik yeşil foton için E = 1,986 × 10⁻²⁵ ÷ 5,0 × 10⁻⁷ ≈ 3,97 × 10⁻¹⁹ joule. Adım 3: Hidrojenin 656,28 nm'lik kırmızı H-alfa fotonu için E = 1,986 × 10⁻²⁵ ÷ 6,5628 × 10⁻⁷ ≈ 3,03 × 10⁻¹⁹ joule. Sonuç: yeşil foton kırmızı fotondan yaklaşık 1,3 kat fazla enerji taşır. Görünür tayfın iki ucu arasında, 380 nm mor ile 700 nm kırmızı arasında oran 700 ÷ 380 ≈ 1,84'tür."
+      },
+      "akilda": "E = h × f = h × c / λ: kısa dalga boyu yüksek enerjili foton demektir. Planck sabiti h = 6,62607015 × 10⁻³⁴ joule bölü hertzdir ve tanım gereği kesindir."
+    },
+    {
+      "baslik": "Kara cisim ışıması: sıcaklığın rengi",
+      "paragraflar": [
+        "Kara cisim, üzerine düşen her dalga boyundaki ışınımı soğuran, hiç yansıtmayan ideal bir cisimdir. Böyle bir cisim belli bir sıcaklıktayken yaydığı ışınım kesintisiz, sürekli bir tayf oluşturur ve bu tayfın biçimi yalnızca sıcaklığa bağlıdır. Yıldızlar kusursuz kara cisim değildir ama yaklaşık olarak öyle davranır; bu da sıcaklıklarını uzaktan ölçmemizi sağlar.",
+        "Gündelik deneyim bunu doğrular. Ateşte ısıtılan bir demirin ilk görünür ışıltısı, yaklaşık 900 K'de, koyu kırmızıdır. Isıtılan bir metal önce kızıl akkor olur, sıcaklık arttıkça turuncumsu kırmızıya döner, çok yüksek sıcaklıkta ise beyaz akkor diye tarif edilir. Bir kaynak şalomasının alevi ayarlanıp ısındıkça kırmızımsıdan mavimsiye döner. Kural şudur: cisim ne kadar sıcaksa ışınımı o kadar kısa dalga boylarına, yani maviye doğru kayar.",
+        "Gustav Kirchhoff'un 19. yüzyılın ortasında deneylerden çıkardığı tayf yasalarının ilki bu durumu anlatır: sıcak bir katı ya da sıcak ve yoğun bir gaz sürekli tayf üretir. Bir yıldızın derin, yoğun katmanları da böyle bir sürekli tayf yayar. Yıldızların renkleri, yani bazılarının mavimsi, bazılarının kızıl görünmesi, bu sürekli tayfın tepesinin nerede olduğunu gösterir. Bunu sayıya döken yasa bir sonraki bölümün konusu.",
+        "Yıldızlar neden yalnızca yaklaşık kara cisimdir? Çünkü sürekli tayf, yıldızın dış katmanlarından geçerken değişir: o katmanlardaki gazlar bazı dalga boylarını soğurur ve tayfın üzerine çizgiler işler. Bu yüzden gökbilimciler bir yıldız için tek bir etkin sıcaklık tanımlar: aynı yüzeyden aynı toplam enerjiyi yayacak kara cismin sıcaklığı. Güneş'in etkin sıcaklığı NASA'ya göre 5772 K'dir."
+      ],
+      "akilda": "Kara cismin tayfı yalnızca sıcaklığına bağlıdır. Sıcaklık arttıkça renk kırmızıdan beyaza ve maviye kayar; yıldızlar yaklaşık kara cisim gibi davranır."
+    },
+    {
+      "baslik": "Wien yasası: tepe noktası nerede?",
+      "paragraflar": [
+        "Kara cisim eğrisinin en yüksek olduğu dalga boyu sıcaklıkla ters orantılıdır: λ_tepe = b / T. Buradaki b Wien sabitidir: yaklaşık 2,898 × 10⁻³ m·K. T kelvin cinsinden sıcaklıktır. Sıcaklık iki katına çıkarsa tepe dalga boyu yarıya iner. Yasa, Wilhelm Wien'in 1893'te termodinamik bir akıl yürütmeyle türettiği bağıntıdır.",
+        "Güneş'in etkin sıcaklığı 5772 K'dir. Wien yasasıyla tepe dalga boyu yaklaşık 500 nm çıkar: görünür bölgenin yeşil kısmı. Avcı takımyıldızının iki parlak yıldızı karşıtlığı güzel gösterir: mavi-beyaz Rigel yaklaşık 12.100 K, kırmızı Betelgeuse yaklaşık 3800 K sıcaklıktadır. Rigel'in tepe noktası yaklaşık 240 nm ile morötesine, Betelgeuse'unki yaklaşık 760 nm ile görünür bölgenin hemen dışına, yakın kızılötesine düşer. Nitekim Rigel ışığının %60'ını morötesinde, Betelgeuse ise %85'ini kızılötesinde yayar. İki yıldız da Avcı'da belirgin olduğu için aradaki renk farkını çıplak gözle kolayca görebilirsin: biri mavimsi beyaz, öteki turuncu kırmızı.",
+        "Bir ayrıntı: tepe noktası, tayfı nasıl çizdiğine bağlıdır. Tayfı dalga boyu başına değil de frekans başına çizersen tepe, yaklaşık %76 daha uzun bir dalga boyuna düşer. Bu yüzden Güneş'in tayfı yeşilde tepe yapar demek, dalga boyu başına çizim için doğrudur. Tepe noktası tek başına bir yıldızın gözümüze hangi renkte göründüğünü belirlemez; o, tayfın bütününe bağlıdır."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Güneş ve Dünya nerede parlar?",
+        "metin": "Adım 1: Güneş için λ_tepe = 2,898 × 10⁻³ m·K ÷ 5772 K ≈ 5,02 × 10⁻⁷ m, yani yaklaşık 502 nm; yeşil ışık. Adım 2: Atmosferi olmayan ve Güneş ışığının %30'unu yansıtan bir Dünya'nın etkin sıcaklığı yaklaşık 255 K olurdu. λ_tepe = 2,898 × 10⁻³ ÷ 255 ≈ 1,14 × 10⁻⁵ m, yani yaklaşık 11,4 μm. Adım 3: Yorum: Dünya kendi ışığını gözle görülmeyen orta kızılötesinde yayar. Bu dalga boyu, atmosferin kızılötesindeki 8 ile 14 μm arasındaki penceresine düşer."
+      },
+      "akilda": "λ_tepe = 2,898 × 10⁻³ m·K ÷ T. Güneş yeşilde (yaklaşık 500 nm), sıcak Rigel morötesinde, soğuk Betelgeuse kızılötesinde tepe yapar."
+    },
+    {
+      "baslik": "Stefan-Boltzmann yasası: ne kadar enerji?",
+      "paragraflar": [
+        "Bir kara cismin her metrekaresinden saniyede yayılan toplam enerji, sıcaklığın dördüncü kuvvetiyle orantılıdır: F = σT⁴. σ Stefan-Boltzmann sabitidir: 5,670 × 10⁻⁸ vat bölü metrekare bölü kelvinin dördüncü kuvveti. Dördüncü kuvvet çok güçlü bir etkidir: sıcaklığı iki katına çıkarırsan her metrekare 2⁴ = 16 kat fazla enerji yayar. Bu ilişkiyi Josef Stefan 1877'de deney verilerinden çıkardı, Ludwig Boltzmann 1884'te kuramsal olarak türetti. 2019'daki SI birim sistemi düzenlemesinden beri σ, değerleri tanım gereği sabitlenmiş Boltzmann sabiti, Planck sabiti ve ışık hızından tam olarak hesaplanır.",
+        "Stefan, yasasını Güneş'e uygulayarak Güneş yüzeyinin sıcaklığı için yaklaşık 5700 K buldu. Bu, Güneş'in sıcaklığı için elde edilen ilk makul değer sayılır ve bugünkü 5772 K'ye çok yakındır. Bir yıldızın toplam ışıma gücünü (L) bulmak için yüzeyden yayılan değeri yıldızın yüzey alanıyla (4πR²) çarparız: L = 4πR²σT⁴. Yani ışıma gücü, yarıçap ve sıcaklıktan ikisini biliyorsak üçüncüsünü hesaplayabiliriz. Bu, yıldızların yarıçaplarını ölçmenin en güçlü yollarından biridir.",
+        "Aynı yasa gezegenimize de uygulanır. Atmosferi olmayan, Güneş ışığının %30'unu yansıtan bir Dünya'nın etkin sıcaklığı yaklaşık 255 K, yani −18 °C olurdu. Gerçek ortalama yüzey sıcaklığı ise yaklaşık 288 K'dir. Aradaki yaklaşık 33 derecelik fark sera etkisinden gelir: atmosfer, yüzeyin kızılötesinde yaydığı ışınımın bir kısmını tutar."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Güneş'in ışıma gücünü hesaplamak",
+        "metin": "Güneş için R = 695.700 km = 6,957 × 10⁸ m, T = 5772 K. Adım 1: Yüzey alanı 4πR² = 4 × 3,1416 × (6,957 × 10⁸)² ≈ 6,08 × 10¹⁸ metrekare. Adım 2: T⁴ = 5772⁴ ≈ 1,110 × 10¹⁵. Her metrekareden yayılan güç σT⁴ = 5,670 × 10⁻⁸ × 1,110 × 10¹⁵ ≈ 6,29 × 10⁷ vat. Adım 3: L = 6,08 × 10¹⁸ × 6,29 × 10⁷ ≈ 3,83 × 10²⁶ vat. Sonuç, NASA'nın Güneş için verdiği 382,8 × 10²⁴ vat ile örtüşür."
+      },
+      "akilda": "F = σT⁴ ve L = 4πR²σT⁴: sıcaklık iki katına çıkınca birim alandan yayılan enerji 16 katına çıkar. Işıma gücü, yarıçap ve sıcaklıktan ikisi üçüncüsünü verir."
+    },
+    {
+      "baslik": "Tayf çizgileri: elementlerin parmak izi",
+      "paragraflar": [
+        "Güneş ışığı tayfına ayrılıp dikkatle incelendiğinde renklerin üzerinde ince karanlık çizgiler görülür. Bunları ilk kez 1802'de William Hyde Wollaston fark etti. 1814'te Joseph von Fraunhofer bağımsız olarak yeniden keşfetti ve 570'ten fazla çizginin haritasını çıkardı; en belirginlerini A'dan K'ye harflerle adlandırdı. Bugün bunlara Fraunhofer çizgileri diyoruz ve modern gözlemlerle binlercesi ölçülebiliyor.",
+        "Yaklaşık 45 yıl sonra Gustav Kirchhoff ve Robert Bunsen, bu karanlık çizgilerin bir kısmının laboratuvarda ısıtılan elementlerin parlak salma çizgileriyle aynı yerde durduğunu fark etti. Vardıkları sonuç: karanlık çizgiler, Güneş atmosferindeki elementlerin belirli dalga boylarını soğurmasından doğar. Kirchhoff'un ikinci ve üçüncü yasaları bunu özetler: sıcak ve seyrek bir gaz yalnızca belirli dalga boylarında parlak salma çizgileri yayar; sürekli tayf veren bir kaynağa daha soğuk ve seyrek bir gazın ardından bakarsan aynı dalga boylarında karanlık soğurma çizgileri görürsün.",
+        "Her element yalnızca kendine özgü dalga boylarında soğurur ve salar. Çünkü atomdaki elektron yalnızca belirli enerji düzeyleri arasında geçiş yapabilir ve yayılan ya da soğurulan fotonun enerjisi iki düzey arasındaki farka eşittir. Örneğin hidrojende elektronun üçüncü düzeyden ikinciye inmesiyle oluşan H-alfa çizgisi, havada ölçüldüğünde 656,28 nm'de koyu kırmızıdır. Sodyumun D çizgileri ise 588,995 ve 589,592 nm'de yan yana duran sarı bir çifttir.",
+        "Bu parmak izleriyle elementler yıldızlarda tanınabilir. Helyum ilk kez Dünya'da değil Güneş'te bulundu. 18 Ağustos 1868'deki tam Güneş tutulmasında Fransız gökbilimci Jules Janssen, kromosferin tayfında 587,49 nm'de parlak sarı bir çizgi gördü. İngiliz gökbilimci Norman Lockyer çizginin bilinmeyen bir elementten geldiği sonucuna vardı. Element adını Yunanca güneş anlamına gelen helios'tan aldı ve Dünya'da ancak 1895'te William Ramsay tarafından elde edildi.",
+        "H-alfa çizgisi gözlemcinin de yakından tanıdığı bir çizgidir. Salma bulutsularında ve Güneş'in kromosferinde, öndüzlerinde güçlü biçimde görülür; gaz bulutlarındaki iyonlaşmış hidrojeni izlemenin en kolay yolu budur. Gökyüzü fotoğrafçılarının kullandığı H-alfa filtreleri bu çizginin çevresindeki dar bir bandı geçirir ve ışık kirliliğini azaltmaya yardım eder. Güneş'in atmosferini görmek için ise çok daha dar, 0,1 nm'den ince bandı geçiren özel Güneş filtreleri gerekir; amatörlere yönelik ticari modellerin bant genişliği tipik olarak yaklaşık 0,07 nm'dir. Güneş'e asla uygun bir Güneş filtresi olmadan bakma."
+      ],
+      "akilda": "Soğurma çizgisi: sürekli tayfın önünde soğuk seyrek gaz. Salma çizgisi: sıcak seyrek gaz. Her elementin çizgileri kendine özgüdür; helyum bu yolla önce Güneş'te keşfedildi."
+    },
+    {
+      "baslik": "Doppler kayması: yıldızın hızını ölçmek",
+      "paragraflar": [
+        "Yaklaşan bir ambulansın sireni daha tiz, uzaklaşanınki daha pes duyulur. Işıkta da aynısı olur: kaynak bizden uzaklaşıyorsa dalgalar uzar ve tayf çizgileri kırmızıya kayar; yaklaşıyorsa dalgalar kısalır ve çizgiler maviye kayar. Hız ışık hızının yanında küçükse kayma basit bir orantıyla verilir: Δλ / λ ≈ v / c.",
+        "Etkinin tarihi gökbilimle iç içedir. Christian Doppler 1842'de fikrini, çift yıldızların ve başka bazı yıldızların renkli ışığı üzerine yazdığı bir incelemede ortaya attı. Buys Ballot 1845'te ses dalgalarıyla sınadı: kaynak yaklaşırken ses incelir, uzaklaşırken kalınlaşır. Hippolyte Fizeau 1848'de aynı etkiyi elektromanyetik dalgalar için bağımsız olarak buldu.",
+        "Önemli bir ayrıntı: Doppler kayması yalnızca bakış doğrultusundaki hızı, yani dikine hızı ölçer; gökte yana doğru hareket tayfta görünmez. Yine de bu yöntemle çok şey öğreniriz. Tek görünen bir yıldızın aslında yakın bir çift yıldız olduğu anlaşılabilir, yıldızların ve galaksilerin dönüş hızları ölçülebilir. Bir yıldızın çizgilerinin hafifçe ileri geri salınması, onu çeken görünmeyen bir gezegene işaret edebilir; çıplak gözle görülebilen 51 Pegasi'nin gezegeni bu yöntemle bulundu.",
+        "Kaymalar her zaman küçük değildir. Uzak galaksilerin çoğunun çizgileri kırmızıya kaymıştır, yani bizden uzaklaşırlar. Örneğin 656,3 nm'deki hidrojen çizgisi bir galakside 660,0 nm'de görülürse kayma yaklaşık 0,006, hız da yaklaşık 1800 km/s olur. Hız ışık hızına yaklaştıkça basit Δλ / λ ≈ v / c bağıntısı yetersiz kalır ve daha ayrıntılı formüller gerekir; uzak evrendeki kırmızıya kaymanın anlamı ise kozmoloji dersinde ayrıca ele alınıyor."
+      ],
+      "ornek": {
+        "baslik": "Örnek: H-alfa çizgisinden hız",
+        "metin": "Laboratuvarda 656,28 nm'de duran H-alfa çizgisi bir yıldızın tayfında 656,35 nm'de görülüyor. Adım 1: Kayma Δλ = 656,35 − 656,28 = 0,07 nm. Kayma artı yönde, yani kırmızıya doğru. Adım 2: Δλ / λ = 0,07 ÷ 656,28 ≈ 1,07 × 10⁻⁴. Adım 3: v ≈ 1,07 × 10⁻⁴ × 299.792 km/s ≈ 32 km/s. Sonuç: yıldız bizden yaklaşık 32 km/s hızla uzaklaşıyor. Gökteki yana hareketi hakkında bu ölçüm hiçbir şey söylemez."
+      },
+      "akilda": "Δλ / λ ≈ v / c. Kırmızıya kayma uzaklaşma, maviye kayma yaklaşma demektir; yöntem yalnızca bakış doğrultusundaki hızı verir."
+    },
+    {
+      "baslik": "Atmosfer pencereleri: hangi ışık yere ulaşır?",
+      "paragraflar": [
+        "Atmosferimiz tayfın büyük kısmını süzer. Gama ışınları, X ışınları ve morötesinin bir bölümü yere ulaşmaz; ozon, morötesine karşı neredeyse tam bir engel oluşturur. Su buharı ve karbondioksit ise kızılötesinin pek çok dalga boyunu soğurur. Atmosferin büyük ölçüde geçirdiği bölgelere atmosfer pencereleri denir.",
+        "Optik pencere yaklaşık 300 nm'den başlar ve kızılötesinde yaklaşık 2 μm'ye kadar uzanır; gözümüzün gördüğü bölüm bunun içindedir. Ayrıca 8 ile 14 μm arasında ayrı bir kızılötesi pencere vardır. Radyo penceresi çok daha geniştir: alt sınırı yaklaşık 10 megahertz, yani yaklaşık 30 metre dalga boyudur; bundan uzun dalgalar iyonküre tarafından uzaya geri yansıtılır. Üst sınırı en iyi yerlerde yaklaşık 1 terahertz, yani yaklaşık 0,3 mm dalga boyudur; burada sınırı troposferdeki su buharı ve oksijenin soğurması çizer.",
+        "Pencerelerin sınırları sabit değildir. Radyo penceresinin alt sınırı iyonküredeki serbest elektron yoğunluğuna bağlıdır; bu yüzden gündüz ve gece arasında, Güneş etkinliğine ve coğrafi konuma göre değişir. Kızılötesi pencere ise yalnızca gökbilimcilerin işine yaramaz: 10 ile 12 μm arasındaki ısıl kızılötesi, uydulardan kara, deniz ve bulut yüzeylerinin sıcaklığını ölçmekte kullanılır. Wien örneğinde gördüğün gibi Dünya'nın kendi ışıması da tam bu bölgededir.",
+        "Bu pencereler gökbilimin tarihini de şekillendirdi. 1940'lara kadar gökbilimciler yalnızca görünür ve yakın kızılötesi ışıkta gözlem yapabiliyordu; radyo teleskopları radyo penceresini açarak radyo gökbilimini doğurdu. Su buharının etkisini azaltmak için gözlemevleri sık sık yüksek dağlara kurulur. Atmosferin hiç geçirmediği gama ışınları, X ışınları ve morötesinin çoğu için ise aletleri atmosferin dışına, uzaya çıkarmak gerekir. İstanbul'dan gece gökyüzüne baktığında gördüğün her şey, bu dar optik pencereden geçmiş ışıktır."
+      ],
+      "akilda": "Atmosfer yaklaşık 300 nm ile 2 μm arasındaki optik pencereyi ve 10 megahertz ile 1 terahertz arasındaki radyo penceresini geçirir. Gama, X ve morötesinin çoğu için uzaya çıkmak gerekir."
+    }
+  ],
+  "formuller": [
+    {
+      "ad": "Dalga boyu – frekans ilişkisi",
+      "ifade": "f = c / λ",
+      "aciklama": "f frekans (Hz), λ dalga boyu (m), c boşlukta ışık hızı = 299.792.458 m/s. Boşlukta bütün elektromanyetik dalgalar için geçerlidir."
+    },
+    {
+      "ad": "Foton enerjisi",
+      "ifade": "E = h × f = h × c / λ",
+      "aciklama": "E foton enerjisi (J), h Planck sabiti = 6,62607015 × 10⁻³⁴ J/Hz (tanım gereği kesin). Kısa dalga boyu yüksek enerjili foton demektir."
+    },
+    {
+      "ad": "Wien kayma yasası",
+      "ifade": "λ_tepe = b / T,  b ≈ 2,898 × 10⁻³ m·K",
+      "aciklama": "λ_tepe dalga boyu başına çizilen kara cisim tayfının tepe dalga boyu (m), T sıcaklık (K). Yıldızlar için yaklaşık olarak geçerlidir."
+    },
+    {
+      "ad": "Stefan-Boltzmann yasası",
+      "ifade": "F = σ × T⁴,  σ ≈ 5,670 × 10⁻⁸ W m⁻² K⁻⁴",
+      "aciklama": "F bir kara cismin birim yüzeyinden saniyede yayılan enerji (W/m²), T sıcaklık (K)."
+    },
+    {
+      "ad": "Yıldızın ışıma gücü",
+      "ifade": "L = 4πR²σT⁴",
+      "aciklama": "L toplam ışıma gücü (W), R yıldız yarıçapı (m), T etkin sıcaklık (K). Yıldızın yaklaşık kara cisim gibi ışıdığı varsayılır."
+    },
+    {
+      "ad": "Doppler kayması (v ≪ c)",
+      "ifade": "Δλ / λ ≈ v / c",
+      "aciklama": "Δλ gözlenen ile laboratuvar dalga boyunun farkı, λ laboratuvar dalga boyu, v dikine hız, c ışık hızı. Δλ > 0 kırmızıya kayma (uzaklaşma), Δλ < 0 maviye kayma (yaklaşma). Yalnızca ışık hızından çok küçük hızlar için geçerlidir."
+    }
+  ],
+  "anahtar_sayilar": [
+    {
+      "deger": "299.792.458 m/s",
+      "aciklama": "Boşlukta ışık hızı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/List_of_physical_constants"
+    },
+    {
+      "deger": "6,62607015 × 10⁻³⁴ J/Hz",
+      "aciklama": "Planck sabiti h (tanım gereği kesin)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Planck_constant"
+    },
+    {
+      "deger": "380–700 nm",
+      "aciklama": "İnsan gözünün tipik olarak algıladığı aralık",
+      "kaynak_url": "https://science.nasa.gov/ems/09_visiblelight/"
+    },
+    {
+      "deger": "2,897771955 × 10⁻³ m·K",
+      "aciklama": "Wien kayma yasası sabiti b",
+      "kaynak_url": "https://en.wikipedia.org/wiki/List_of_physical_constants"
+    },
+    {
+      "deger": "5,670374419 × 10⁻⁸ W m⁻² K⁻⁴",
+      "aciklama": "Stefan-Boltzmann sabiti σ",
+      "kaynak_url": "https://en.wikipedia.org/wiki/List_of_physical_constants"
+    },
+    {
+      "deger": "5772 K; 695.700 km; 382,8 × 10²⁴ W",
+      "aciklama": "Güneş'in etkin sıcaklığı, yarıçapı ve ışıma gücü (NASA)",
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html"
+    },
+    {
+      "deger": "Rigel 12.100 K, Betelgeuse ≈ 3800 K; %60 morötesi, %85 kızılötesi",
+      "aciklama": "Avcı takımyıldızındaki iki yıldızın sıcaklığı ve ışınım dağılımı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Wien%27s_displacement_law"
+    },
+    {
+      "deger": "1877 (Stefan), 1884 (Boltzmann)",
+      "aciklama": "T⁴ yasasının deneysel ve kuramsal kökeni",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Stefan%E2%80%93Boltzmann_law"
+    },
+    {
+      "deger": "255 K ve 288 K",
+      "aciklama": "Dünya'nın atmosfersiz etkin sıcaklığı (yansıtma 0,3) ve gerçek ortalama yüzey sıcaklığı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Stefan%E2%80%93Boltzmann_law"
+    },
+    {
+      "deger": "1802, 1814, 570+ çizgi",
+      "aciklama": "Wollaston ve Fraunhofer; Fraunhofer'in haritaladığı çizgi sayısı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Fraunhofer_lines"
+    },
+    {
+      "deger": "656,28 nm (hava)",
+      "aciklama": "Hidrojen H-alfa çizgisi (3 → 2 geçişi)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Hydrogen-alpha"
+    },
+    {
+      "deger": "588,995 nm ve 589,592 nm",
+      "aciklama": "Sodyum D2 ve D1 çizgileri",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Fraunhofer_lines"
+    },
+    {
+      "deger": "18 Ağustos 1868; 587,49 nm; 1895",
+      "aciklama": "Helyumun Güneş tayfında görülmesi ve Dünya'da elde edilmesi",
+      "kaynak_url": "https://www.universetoday.com/53563/who-discovered-helium/"
+    },
+    {
+      "deger": "1842, 1845, 1848",
+      "aciklama": "Doppler'in önerisi, Buys Ballot'un ses deneyi, Fizeau'nun ışık için bulgusu",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Doppler_effect"
+    },
+    {
+      "deger": "yaklaşık 300 nm – 2 μm; 8–14 μm",
+      "aciklama": "Optik pencere ve kızılötesi pencere",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Optical_window"
+    },
+    {
+      "deger": "yaklaşık 10 MHz (30 m) – 1 THz (0,3 mm)",
+      "aciklama": "Radyo penceresinin sınırları",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Radio_window"
+    }
+  ],
+  "sozluk": [
+    { "terim": "Dalga boyu (λ)", "tanim": "Bir dalganın art arda iki tepesi arasındaki uzaklık." },
+    { "terim": "Frekans (f)", "tanim": "Bir noktadan saniyede geçen dalga tepesi sayısı; hertz ile ölçülür." },
+    { "terim": "Foton", "tanim": "Kütlesiz, ışık hızında giden ve enerjisi h × f olan ışık paketi." },
+    { "terim": "Elektromanyetik tayf", "tanim": "Radyodan gamaya kadar bütün dalga boylarındaki ışınımın sıralı bütünü." },
+    { "terim": "Kara cisim", "tanim": "Üzerine düşen her ışınımı soğuran, yaydığı tayf yalnızca sıcaklığına bağlı olan ideal cisim." },
+    { "terim": "Etkin sıcaklık", "tanim": "Bir yıldızla aynı yüzeyden aynı toplam gücü yayacak kara cismin sıcaklığı." },
+    { "terim": "Sürekli tayf", "tanim": "Bütün dalga boylarını kesintisiz içeren tayf; sıcak katı ya da yoğun gaz üretir." },
+    { "terim": "Salma çizgisi", "tanim": "Sıcak, seyrek bir gazın yalnızca belirli dalga boylarında yaydığı parlak çizgi." },
+    { "terim": "Soğurma çizgisi", "tanim": "Sürekli tayfın önündeki daha soğuk gazın belirli dalga boylarını yutmasıyla oluşan karanlık çizgi." },
+    { "terim": "Fraunhofer çizgileri", "tanim": "Güneş tayfında görülen karanlık soğurma çizgileri." },
+    { "terim": "Dikine hız", "tanim": "Bir cismin bakış doğrultusu boyunca bize yaklaşma ya da bizden uzaklaşma hızı." },
+    { "terim": "Kırmızıya kayma", "tanim": "Uzaklaşan bir kaynağın tayf çizgilerinin daha uzun dalga boylarına kayması." },
+    { "terim": "Atmosfer penceresi", "tanim": "Atmosferin büyük ölçüde geçirdiği dalga boyu aralığı." }
+  ],
+  "defter_notu": [
+    "Işık = elektromanyetik dalga + foton. Boşlukta c = 299.792.458 m/s.",
+    "f = c / λ. Tayf (düşük → yüksek frekans): radyo, mikrodalga, kızılötesi, görünür, morötesi, X, gama. Göz: ~380–700 nm.",
+    "Foton enerjisi E = h f = h c / λ; h = 6,626 × 10⁻³⁴ J/Hz. 500 nm foton ≈ 4 × 10⁻¹⁹ J.",
+    "Kara cisim: tayf biçimi yalnızca sıcaklığa bağlı. Isınan metal: kızıl → turuncu → beyaz akkor.",
+    "Wien: λ_tepe = 2,898 × 10⁻³ m·K / T. Güneş (5772 K) ≈ 500 nm; Rigel morötesi, Betelgeuse kızılötesi; Dünya ≈ 11 μm.",
+    "Stefan-Boltzmann: L = 4πR²σT⁴. T iki katı → birim alandan 16 kat. Güneş L ≈ 3,83 × 10²⁶ W.",
+    "Kirchhoff: sıcak yoğun → sürekli; sıcak seyrek gaz → salma; sürekli kaynak önünde soğuk gaz → soğurma.",
+    "Parmak izleri: H-alfa 656,28 nm; Na D 589,0 ve 589,6 nm; helyum 587,49 nm (1868, Güneş'te bulundu).",
+    "Doppler: Δλ/λ ≈ v/c. Kırmızıya kayma = uzaklaşma; yalnızca dikine hız.",
+    "Pencereler: optik ~300 nm–2 μm; kızılötesi 8–14 μm; radyo ~10 MHz–1 THz. Gama, X, çoğu morötesi için uzay."
+  ],
+  "sorular": [
+    {
+      "soru": "Elektromanyetik tayfın bantlarını düşük frekanstan yükseğe doğru sırala. Gözün gördüğü aralık nedir?",
+      "cevap": "Radyo, mikrodalga, kızılötesi, görünür ışık, morötesi, X ışınları, gama ışınları. Göz tipik olarak yaklaşık 380 nm (mor) ile 700 nm (kırmızı) arasını görür."
+    },
+    {
+      "soru": "Dalga boyu 250 nm olan bir morötesi fotonun enerjisi, 500 nm'lik yeşil bir fotonunkinin kaç katıdır?",
+      "cevap": "E = h c / λ olduğundan enerji dalga boyuyla ters orantılıdır. Dalga boyu yarıya indiği için enerji 2 katına çıkar."
+    },
+    {
+      "soru": "Yüzey sıcaklığı 10.000 K olan bir yıldızın tayfı hangi dalga boyunda tepe yapar? Hangi bölgededir?",
+      "cevap": "λ_tepe = 2,898 × 10⁻³ / 10.000 ≈ 2,9 × 10⁻⁷ m ≈ 290 nm. Bu, 380 nm'nin altında olduğu için morötesindedir."
+    },
+    {
+      "soru": "İki yıldızın yarıçapı aynı, ama birinin sıcaklığı diğerinin iki katı. Işıma güçleri arasındaki oran nedir? Sıcaklıkları aynı, ama birinin yarıçapı iki katıysa oran ne olur?",
+      "cevap": "L ∝ R²T⁴. R eşitken oran 2⁴ = 16; sıcak yıldız 16 kat güçlüdür. T eşitken oran 2² = 4; büyük yıldız 4 kat güçlüdür."
+    },
+    {
+      "soru": "Güneş tayfındaki karanlık Fraunhofer çizgileri neden oluşur? Kirchhoff'un hangi yasasıyla açıklanır?",
+      "cevap": "Güneş'in derin katmanlarından gelen sürekli tayf, üstteki daha soğuk ve seyrek gazdan geçerken o gazdaki elementler kendilerine özgü dalga boylarını soğurur. Bu, Kirchhoff'un üçüncü yasasıdır: sürekli kaynak önünde soğuk seyrek gaz soğurma çizgileri üretir."
+    },
+    {
+      "soru": "Bir yıldızın tayfında tüm çizgiler maviye kaymışsa ne anlarız? Bu ölçüm yıldızın gökte yana doğru hareketini de verir mi?",
+      "cevap": "Yıldız bize yaklaşıyordur; kayma miktarı Δλ/λ ≈ v/c ile hızı verir. Hayır, Doppler kayması yalnızca bakış doğrultusundaki dikine hızı ölçer."
+    },
+    {
+      "soru": "Bir galaksinin tayfında 656,28 nm'deki H-alfa çizgisi 659,56 nm'de görülüyor. Galaksinin dikine hızı yaklaşık kaçtır?",
+      "cevap": "Δλ = 3,28 nm; Δλ/λ = 3,28 / 656,28 ≈ 0,005. v ≈ 0,005 × 299.792 km/s ≈ 1500 km/s; kayma kırmızıya olduğu için galaksi uzaklaşıyordur. Hız ışık hızının yaklaşık %0,5'i olduğundan basit formül yeterlidir."
+    },
+    {
+      "soru": "X ışını teleskopları neden uzaya gönderilir de radyo teleskopları yere kurulabilir?",
+      "cevap": "Atmosfer X ışınlarını ve gama ışınlarını yere ulaştırmaz; bu dalga boylarında gözlem için aletin atmosferin dışında olması gerekir. Radyo dalgaları ise yaklaşık 10 megahertz ile 1 terahertz arasındaki radyo penceresinden geçer, bu yüzden yerden gözlenebilir."
+    }
+  ],
+  "kaynaklar": [
+    { "ad": "NASA Science – Anatomy of an Electromagnetic Wave", "url": "https://science.nasa.gov/ems/02_anatomy/" },
+    { "ad": "NASA Science – Visible Light", "url": "https://science.nasa.gov/ems/09_visiblelight/" },
+    { "ad": "NASA Science – Introduction to the Electromagnetic Spectrum", "url": "https://science.nasa.gov/ems/01_intro/" },
+    { "ad": "NASA NSSDCA – Sun Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html" },
+    { "ad": "NIST CODATA – speed of light in vacuum", "url": "https://physics.nist.gov/cgi-bin/cuu/Value?c" },
+    { "ad": "NIST CODATA – Wien wavelength displacement law constant", "url": "https://physics.nist.gov/cgi-bin/cuu/Value?bwien" },
+    { "ad": "NIST CODATA – Stefan-Boltzmann constant", "url": "https://physics.nist.gov/cgi-bin/cuu/Value?sigma" },
+    { "ad": "Wikipedia – List of physical constants", "url": "https://en.wikipedia.org/wiki/List_of_physical_constants" },
+    { "ad": "Wikipedia – Planck constant", "url": "https://en.wikipedia.org/wiki/Planck_constant" },
+    { "ad": "Wikipedia – Electromagnetic spectrum", "url": "https://en.wikipedia.org/wiki/Electromagnetic_spectrum" },
+    { "ad": "Wikipedia – Black-body radiation", "url": "https://en.wikipedia.org/wiki/Black-body_radiation" },
+    { "ad": "Wikipedia – Wien's displacement law", "url": "https://en.wikipedia.org/wiki/Wien%27s_displacement_law" },
+    { "ad": "Wikipedia – Stefan–Boltzmann law", "url": "https://en.wikipedia.org/wiki/Stefan%E2%80%93Boltzmann_law" },
+    { "ad": "Ohio State University, Astronomy 161 – Kirchhoff's laws and spectra", "url": "https://www.astronomy.ohio-state.edu/pogge.1/Ast161/Unit4/spectra.html" },
+    { "ad": "Wikipedia – Spectral line", "url": "https://en.wikipedia.org/wiki/Spectral_line" },
+    { "ad": "Wikipedia – Emission spectrum", "url": "https://en.wikipedia.org/wiki/Emission_spectrum" },
+    { "ad": "Wikipedia – Fraunhofer lines", "url": "https://en.wikipedia.org/wiki/Fraunhofer_lines" },
+    { "ad": "Wikipedia – Hydrogen-alpha", "url": "https://en.wikipedia.org/wiki/Hydrogen-alpha" },
+    { "ad": "Wikipedia – Helium", "url": "https://en.wikipedia.org/wiki/Helium" },
+    { "ad": "Universe Today – Who Discovered Helium?", "url": "https://www.universetoday.com/53563/who-discovered-helium/" },
+    { "ad": "Wikipedia – Doppler effect", "url": "https://en.wikipedia.org/wiki/Doppler_effect" },
+    { "ad": "Wikipedia – Redshift", "url": "https://en.wikipedia.org/wiki/Redshift" },
+    { "ad": "British Astronomical Association – The Doppler effect in astronomy", "url": "https://britastro.org/2022/the-doppler-effect-in-astronomy" },
+    { "ad": "Wikipedia – Optical window", "url": "https://en.wikipedia.org/wiki/Optical_window" },
+    { "ad": "Wikipedia – Radio window", "url": "https://en.wikipedia.org/wiki/Radio_window" },
+    { "ad": "ESA Eduspace – Atmospheric interference", "url": "https://www.esa.int/SPECIALS/Eduspace_EN/SEMUYP3Z2OF_2.html" }
+  ]
+}

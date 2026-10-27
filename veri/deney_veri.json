@@ -1,0 +1,278 @@
+{
+ "aciklama": "Deneylerdeki örnek cisimlerin değerleri. Her değerin kaynağı yanında. Sabitler veri/fizik.json'da.",
+ "kepler": {
+  "cisimler": [
+   {
+    "ad": "Merkür",
+    "a": 0.387,
+    "e": 0.206,
+    "kaynak": "NASA Planetary Fact Sheet",
+    "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/index.html",
+    "ham": "57.9 ×10⁶ km, e=0.206"
+   },
+   {
+    "ad": "Venüs",
+    "a": 0.7233,
+    "e": 0.007,
+    "kaynak": "NASA Planetary Fact Sheet",
+    "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/index.html",
+    "ham": "108.2 ×10⁶ km, e=0.007"
+   },
+   {
+    "ad": "Dünya",
+    "a": 1.0,
+    "e": 0.017,
+    "kaynak": "NASA Planetary Fact Sheet",
+    "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/index.html",
+    "ham": "149.6 ×10⁶ km, e=0.017"
+   },
+   {
+    "ad": "Mars",
+    "a": 1.5241,
+    "e": 0.094,
+    "kaynak": "NASA Planetary Fact Sheet",
+    "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/index.html",
+    "ham": "228.0 ×10⁶ km, e=0.094"
+   },
+   {
+    "ad": "Jüpiter",
+    "a": 5.2039,
+    "e": 0.049,
+    "kaynak": "NASA Planetary Fact Sheet",
+    "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/index.html",
+    "ham": "778.5 ×10⁶ km, e=0.049"
+   },
+   {
+    "ad": "Satürn",
+    "a": 9.5723,
+    "e": 0.052,
+    "kaynak": "NASA Planetary Fact Sheet",
+    "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/index.html",
+    "ham": "1432.0 ×10⁶ km, e=0.052"
+   },
+   {
+    "ad": "Plüton",
+    "a": 39.4818,
+    "e": 0.244,
+    "kaynak": "NASA Planetary Fact Sheet",
+    "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/index.html",
+    "ham": "5906.4 ×10⁶ km, e=0.244"
+   }
+  ]
+ },
+ "gelgit": {
+  "dunya_yaricap_km": 6371.0,
+  "ay_kutle_kg": 7.346e+22,
+  "gunes_kutle_kg": 1.98841e+30,
+  "ay_ort_km": 384400,
+  "ay_yakin_km": 363300,
+  "ay_uzak_km": 405500,
+  "gunes_ort_km": 149600000.0,
+  "kavusum_gun": 29.53,
+  "kaynaklar": [
+   {
+    "ad": "NASA Moon Fact Sheet",
+    "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html"
+   },
+   {
+    "ad": "NASA Planetary Fact Sheet",
+    "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/index.html"
+   },
+   {
+    "ad": "IAU 2015 Resolution B3 (Güneş kütlesi)",
+    "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion-constants.pdf"
+   }
+  ]
+ },
+ "tayf": {
+  "cizgiler": [
+   {
+    "ad": "Hα (hidrojen)",
+    "nm": 656.285,
+    "kaynak": "https://physics.nist.gov/PhysRefData/Handbook/Tables/hydrogentable2.htm"
+   },
+   {
+    "ad": "Hβ (hidrojen)",
+    "nm": 486.136,
+    "kaynak": "https://physics.nist.gov/PhysRefData/Handbook/Tables/hydrogentable2.htm"
+   },
+   {
+    "ad": "Hγ (hidrojen)",
+    "nm": 434.046,
+    "kaynak": "https://physics.nist.gov/PhysRefData/Handbook/Tables/hydrogentable2.htm"
+   },
+   {
+    "ad": "Hδ (hidrojen)",
+    "nm": 410.174,
+    "kaynak": "https://physics.nist.gov/PhysRefData/Handbook/Tables/hydrogentable2.htm"
+   },
+   {
+    "ad": "Na D2 (sodyum)",
+    "nm": 588.995,
+    "kaynak": "https://physics.nist.gov/PhysRefData/Handbook/Tables/sodiumtable2.htm"
+   },
+   {
+    "ad": "Na D1 (sodyum)",
+    "nm": 589.592,
+    "kaynak": "https://physics.nist.gov/PhysRefData/Handbook/Tables/sodiumtable2.htm"
+   },
+   {
+    "ad": "Mg b1 (magnezyum)",
+    "nm": 518.362,
+    "kaynak": "https://en.wikipedia.org/wiki/Fraunhofer_lines"
+   },
+   {
+    "ad": "Ca II K (kalsiyum)",
+    "nm": 393.366,
+    "kaynak": "https://en.wikipedia.org/wiki/Fraunhofer_lines"
+   },
+   {
+    "ad": "Ca II H (kalsiyum)",
+    "nm": 396.847,
+    "kaynak": "https://en.wikipedia.org/wiki/Fraunhofer_lines"
+   }
+  ],
+  "yildizlar": [
+   {
+    "ad": "Proxima Centauri",
+    "T": 3000,
+    "kaynak": "Wikipedia: Proxima Centauri (Ségransan ve ark. 2003; ~3000 K)",
+    "url": "https://en.wikipedia.org/wiki/Proxima_Centauri"
+   },
+   {
+    "ad": "Betelgeuse",
+    "T": 3600,
+    "kaynak": "Levesque & Massey 2020 (3600 ± 25 K)",
+    "url": "https://arxiv.org/abs/2002.10463v1"
+   },
+   {
+    "ad": "Güneş",
+    "T": 5772,
+    "kaynak": "IAU 2015 Resolution B3",
+    "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion-constants.pdf"
+   },
+   {
+    "ad": "Sirius A",
+    "T": 9845,
+    "kaynak": "Davis ve ark. 2011 (9845 ± 64 K)",
+    "url": "https://arxiv.org/pdf/1010.3790"
+   },
+   {
+    "ad": "Rigel",
+    "T": 12100,
+    "kaynak": "Przybilla ve ark. 2010 (12100 ± 150 K)",
+    "url": "https://ar5iv.arxiv.org/html/1005.2278"
+   }
+  ],
+  "kaynaklar": [
+   {
+    "ad": "NIST Atomic Spectroscopic Data Handbook: hidrojen",
+    "url": "https://physics.nist.gov/PhysRefData/Handbook/Tables/hydrogentable2.htm"
+   },
+   {
+    "ad": "NIST Atomic Spectroscopic Data Handbook: sodyum",
+    "url": "https://physics.nist.gov/PhysRefData/Handbook/Tables/sodiumtable2.htm"
+   },
+   {
+    "ad": "Wikipedia: Fraunhofer lines",
+    "url": "https://en.wikipedia.org/wiki/Fraunhofer_lines"
+   }
+  ]
+ },
+ "evreler": {
+  "kavusum_gun": 29.53,
+  "egim_derece": 5.145,
+  "tutulma_enlem_derece": 1.5,
+  "kaynaklar": [
+   {
+    "ad": "NASA Moon Fact Sheet",
+    "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html"
+   },
+   {
+    "ad": "Wikipedia: Eclipse season",
+    "url": "https://en.wikipedia.org/wiki/Eclipse_season"
+   }
+  ]
+ },
+ "gecis": {
+  "dunya_yaricap_km": 6371.0,
+  "ornekler": [
+   {
+    "ad": "Dünya–Güneş",
+    "rp_rdunya": 1.0,
+    "rs_rgunes": 1.0,
+    "ms_mgunes": 1.0,
+    "p_gun": 365.256,
+    "b": 0,
+    "kaynak": "NASA Jupiter Fact Sheet (Dünya sütunu: 6371 km; 365,256 gün)",
+    "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/jupiterfact.html"
+   },
+   {
+    "ad": "Jüpiter–Güneş",
+    "rp_rdunya": 10.973,
+    "rs_rgunes": 1.0,
+    "ms_mgunes": 1.0,
+    "p_gun": 4332.589,
+    "b": 0,
+    "kaynak": "NASA Jupiter Fact Sheet (69.911 km; 4332,589 gün)",
+    "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/jupiterfact.html"
+   },
+   {
+    "ad": "HD 209458 b",
+    "rp_rdunya": 14.91,
+    "rs_rgunes": 1.203,
+    "ms_mgunes": 1.148,
+    "p_gun": 3.52474859,
+    "b": 0.48,
+    "kaynak": "Wikipedia: HD 209458 b ve HD 209458 (Rp 1,359 RJ; a 0,04707 AB; i 86,71°; M* 1,148; R* 1,203)",
+    "url": "https://en.wikipedia.org/wiki/HD_209458_b"
+   },
+   {
+    "ad": "TRAPPIST-1 e",
+    "rp_rdunya": 0.92,
+    "rs_rgunes": 0.1192,
+    "ms_mgunes": 0.0898,
+    "p_gun": 6.101013,
+    "b": 0.19,
+    "kaynak": "TEPCat: TRAPPIST-1e (Agol ve ark. 2021); i 89,793° Wikipedia",
+    "url": "https://astro.keele.ac.uk/jkt/tepcat/planets/TRAPPIST-1e.html"
+   }
+  ],
+  "kaynaklar": [
+   {
+    "ad": "Winn 2010, Transits and Occultations (süre formülü)",
+    "url": "https://arxiv.org/abs/1001.2010"
+   },
+   {
+    "ad": "NASA Jupiter/Earth Fact Sheet",
+    "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/jupiterfact.html"
+   },
+   {
+    "ad": "TEPCat: TRAPPIST-1e",
+    "url": "https://astro.keele.ac.uk/jkt/tepcat/planets/TRAPPIST-1e.html"
+   },
+   {
+    "ad": "Wikipedia: HD 209458 b",
+    "url": "https://en.wikipedia.org/wiki/HD_209458_b"
+   }
+  ]
+ },
+ "hubble": {
+  "ozel_hiz_kms": 300,
+  "olcumler": [
+   {
+    "ad": "Planck 2018 (kozmik arka plan)",
+    "deger": 67.4,
+    "hata": 0.5,
+    "url": "https://ui.adsabs.harvard.edu/abs/2020A%26A...641A...6P/abstract"
+   },
+   {
+    "ad": "SH0ES 2022 (Sefeidler + Ia)",
+    "deger": 73.04,
+    "hata": 1.04,
+    "url": "https://arxiv.org/abs/2112.04510v3"
+   }
+  ],
+  "kaynaklar": []
+ }
+}

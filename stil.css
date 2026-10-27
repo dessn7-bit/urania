@@ -377,3 +377,38 @@ label.dugme { cursor: pointer; }
 .kart-ust { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
 .kart-ust .alt-baslik { margin: 0; }
 .kart-sesli { min-height: 36px; padding: 6px 12px; font: 500 14px var(--sans); }
+
+/* ---- Dersler v2: üniteler, örnek, ara özet, sözlük ---- */
+.unite-bas { margin-top: 28px; }
+.unite-acik { margin: -4px 0 6px; }
+.ders-ozet { font: italic 400 18px/1.55 var(--serif); color: var(--parsomen); border-left: 3px solid var(--pirinc); padding-left: 14px; margin: 6px 0 18px; }
+.on-bilgi { margin: -6px 0 10px; }
+.ders .ornek { margin: 14px 0 16px; padding: 14px 16px; border: 1px solid var(--pirinc-soluk); border-radius: 10px; background: var(--levha); }
+.ders .ornek .ornek-bas { font: 600 15px/1.3 var(--sans); color: var(--pirinc); margin-bottom: 6px; }
+.ders .ornek p { margin: 0; font-size: 16px; }
+.ders .akilda { margin: 10px 0 18px; padding: 10px 14px; border-radius: 8px; background: var(--levha-2); font: 400 16px/1.5 var(--serif); }
+.ders .akilda span { display: block; font: 600 12px/1.2 var(--sans); letter-spacing: .04em; text-transform: uppercase; color: var(--pirinc); margin-bottom: 4px; }
+.sozluk { margin: 8px 0 0; }
+.sozluk > div { padding: 8px 0; border-top: 1px solid var(--cizgi); }
+.sozluk dt { font: 600 15px var(--sans); }
+.sozluk dd { margin: 2px 0 0; color: var(--soluk); font-size: 15px; }
+.ders-bag ul { margin: 6px 0 0; padding-left: 18px; font-family: var(--sans); }
+.ders-bag li { margin: 6px 0; }
+
+/* ---- Deneyler v2: liste, rehber ---- */
+.deney-liste { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 8px; }
+.deney-liste a { display: block; padding: 12px 14px; border: 1px solid var(--cizgi); border-radius: 10px; text-decoration: none; color: var(--parsomen); background: var(--levha); }
+.deney-liste a:hover { border-color: var(--pirinc); }
+.deney-liste b { display: block; font: 600 16px var(--sans); }
+.deney-liste span { display: block; font-size: 14px; color: var(--soluk); margin-top: 2px; }
+.deney-liste .rozet { display: inline-block; margin: 6px 0 0; }
+.deney-giris { font: 400 17px/1.55 var(--serif); margin: 4px 0 14px; }
+.rehber { margin-top: 22px; }
+.rehber-adim { margin: 8px 0 0; padding-left: 22px; }
+.rehber-adim li { margin: 0 0 12px; padding-left: 4px; }
+.rehber-adim li.yapildi::marker { color: var(--iyi); }
+.rh-yap { margin: 0 0 4px; }
+.rh-uygula { margin-left: 6px; }
+.rh-ac summary { cursor: pointer; color: var(--soluk); font: 500 14px var(--sans); padding: 2px 0; }
+.rh-ac p { margin: 6px 0; font-size: 15px; }
+.deney-ders { margin-top: 18px; font-family: var(--sans); }

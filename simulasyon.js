@@ -8,12 +8,20 @@
   let aktif = null;      // çalışan deney (durdur() için)
   const azHareket = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  /* Deney listesi: gruplu; yeni deneyler deneyler2.js'ten (window.UraniaDeneyEk) gelir */
   const DENEYLER = [
-    { id: 'karadelik', ad: 'Kara deliğe yaklaşmak' },
-    { id: 'yorunge', ad: 'Yörünge atışı' },
-    { id: 'yildiz', ad: 'Yıldızın hayatı' },
-    { id: 'gorelilik', ad: 'Işığa yakın yolculuk' }
+    { id: 'kepler', grup: 'Kütleçekim ve yörüngeler', ad: 'Kepler yasaları', oz: 'Elips yörüngeler, eşit sürede eşit alan, uzaklık ile dolanım süresi.' },
+    { id: 'yorunge', grup: 'Kütleçekim ve yörüngeler', ad: 'Yörünge atışı', oz: 'Newton\'un topu: düşmek, dolanmak, kurtulmak.' },
+    { id: 'gelgit', grup: 'Kütleçekim ve yörüngeler', ad: 'Gelgit', oz: 'Ay ve Güneş denizleri nasıl şişirir; kabarma ve ölü gelgit.' },
+    { id: 'tayf', grup: 'Işık', ad: 'Tayf ve Doppler', oz: 'Sıcaklık yıldızın rengini nasıl belirler; hareket çizgileri nasıl kaydırır.' },
+    { id: 'evreler', grup: 'Ay ve gezegenler', ad: 'Ay evreleri ve tutulmalar', oz: 'Evreler neden olur, tutulma neden her ay olmaz.' },
+    { id: 'gecis', grup: 'Ay ve gezegenler', ad: 'Ötegezegen geçişi', oz: 'Bir gezegen yıldızının önünden geçerken ışık nasıl azalır.' },
+    { id: 'yildiz', grup: 'Yıldızlar ve kara delikler', ad: 'Yıldızın hayatı', oz: 'Kütle yıldızın rengini, ömrünü ve sonunu belirler.' },
+    { id: 'karadelik', grup: 'Yıldızlar ve kara delikler', ad: 'Kara deliğe yaklaşmak', oz: 'Olay ufku, yavaşlayan zaman ve gelgit gerilmesi.' },
+    { id: 'gorelilik', grup: 'Görelilik ve evren', ad: 'Işığa yakın yolculuk', oz: 'Işık hızına yaklaşınca zaman nasıl yavaşlar.' },
+    { id: 'hubble', grup: 'Görelilik ve evren', ad: 'Genişleyen evren', oz: 'Galaksiler neden uzaklaşır; Hubble sabitini kendin ölç.' }
   ];
+  let R = {};            // veri/deney_rehber.json
 
   function renk(ad) { return getComputedStyle(document.documentElement).getPropertyValue(ad).trim(); }
   function deger(k) { return F.sabitler[k].deger; }
@@ -44,7 +52,8 @@
       const s = F.sabitler[k];
       if (!s || gor.has(s.url)) return;
       gor.add(s.url);
-      ls.push(`<a href="${U.guvenliUrl(s.url)}" target="_blank" rel="noopener">${U.kacis(s.kaynak)}</a>`);
+      const ayni = anahtarlar.filter(x => F.sabitler[x] && F.sabitler[x].kaynak === s.kaynak).length > 1;
+      ls.push(`<a href="${U.guvenliUrl(s.url)}" target="_blank" rel="noopener">${U.kacis(s.kaynak + (ayni ? ' (' + k + ')' : ''))}</a>`);
     });
     (ek || []).forEach(e => { if (e && e.url && !gor.has(e.url)) { gor.add(e.url); ls.push(`<a href="${U.guvenliUrl(e.url)}" target="_blank" rel="noopener">${U.kacis(e.ad)}</a>`); } });
     return '<p class="kaynak">Kaynaklar: ' + ls.join(' · ') + '</p>';
@@ -457,33 +466,87 @@
   }
 
   const KURUCU = { karadelik, yorunge, yildiz, gorelilik };
+  /* Yeni deneyler (deneyler2.js) ortak yardımcılarla kurulur */
+  function ortak() { return { F, U, R, kanvas, kaydirici, olcumler, kaynakSatiri, dongu, renk, deger, azHareket, el: () => el }; }
+  function kurucu(id) {
+    if (KURUCU[id]) return KURUCU[id];
+    const ek = window.UraniaDeneyEk && window.UraniaDeneyEk[id];
+    return ek ? kap => ek(kap, ortak()) : null;
+  }
+
+  /* ---- Rehber: "Yap / Gözle / Neden" adımları. "Uygula" düğmesi deneyin kontrollerini ayarlar. ---- */
+  function rehberHtml(id) {
+    const r = R[id]; if (!r) return '';
+    const bitti = U.oku('rehber_' + id, []) || [];
+    return `<section class="rehber" aria-label="Rehber">
+      <h2>Adım adım</h2>
+      <ol class="rehber-adim">${r.adimlar.map((a, i) => `<li data-i="${i}"${bitti.indexOf(i) >= 0 ? ' class="yapildi"' : ''}>
+        <p class="rh-yap"><b>Yap:</b> ${U.kacis(a.yap)}${a.ayar || a.tikla ? ` <button type="button" class="bag rh-uygula" data-i="${i}">Uygula</button>` : ''}</p>
+        <details class="rh-ac"${bitti.indexOf(i) >= 0 ? ' open' : ''}><summary>Ne görmelisin, neden?</summary>
+          <p><b>Gözle:</b> ${U.kacis(a.gozle)}</p><p><b>Neden:</b> ${U.kacis(a.neden)}</p></details></li>`).join('')}</ol>
+      ${r.kaynaklar && r.kaynaklar.length ? `<p class="kaynak">Rehberdeki bilgilerin kaynakları: ${r.kaynaklar.map(k => `<a href="${U.guvenliUrl(k.url)}" target="_blank" rel="noopener">${U.kacis(k.ad)}</a>`).join(' · ')}</p>` : ''}
+    </section>`;
+  }
+  function rehberUygula(kap, id, i) {
+    const a = R[id] && R[id].adimlar[i]; if (!a) return;
+    if (a.tikla) { const b = kap.querySelector(a.tikla); if (b) b.click(); }
+    Object.keys(a.ayar || {}).forEach(sec => {
+      const g = kap.querySelector(sec); if (!g) return;
+      if (g.type === 'checkbox') g.checked = Boolean(a.ayar[sec]); else g.value = a.ayar[sec];
+      g.dispatchEvent(new Event('input', { bubbles: true }));
+      g.dispatchEvent(new Event('change', { bubbles: true }));
+    });
+    const li = el.querySelector(`.rehber-adim li[data-i="${i}"]`);
+    if (li) { li.classList.add('yapildi'); const d = li.querySelector('details'); if (d) d.open = true; }
+    const bitti = U.oku('rehber_' + id, []) || [];
+    if (bitti.indexOf(i) < 0) { bitti.push(i); U.yaz('rehber_' + id, bitti); }
+    const sahne = kap.querySelector('.sahne'); if (sahne && sahne.scrollIntoView) sahne.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+  }
 
   function deneyAc(id) {
-    if (!KURUCU[id]) id = 'karadelik';
+    const k = kurucu(id);
+    if (!k) { listeAc(); return; }
     if (aktif) { aktif.durdur(); aktif = null; }
-    el.querySelectorAll('.deney-secim .dugme').forEach(b => { if (b.dataset.id === id) b.setAttribute('aria-current', 'page'); else b.removeAttribute('aria-current'); });
+    const d = DENEYLER.find(x => x.id === id) || { ad: id };
+    const r = R[id] || {};
+    el.innerHTML = `<a class="geri" href="#deney">Tüm deneyler</a><h1>${U.kacis(d.ad)}</h1>
+      ${r.giris ? `<p class="deney-giris">${U.kacis(r.giris)}</p>` : ''}
+      <div id="deneyKap" data-deney="${id}"></div>
+      ${rehberHtml(id)}
+      ${r.ders ? `<p class="deney-ders">İlgili ders: <a href="#ders/${r.ders}">${U.kacis(dersAdi(r.ders))}</a></p>` : ''}`;
     const kap = el.querySelector('#deneyKap');
-    kap.dataset.deney = id;
-    aktif = KURUCU[id](kap);
+    aktif = k(kap) || null;
+    el.querySelectorAll('.rh-uygula').forEach(b => b.addEventListener('click', () => rehberUygula(kap, id, Number(b.dataset.i))));
+    window.scrollTo(0, 0);
+  }
+  let dersAdlari = {};
+  function dersAdi(id) { return dersAdlari[id] || 'Ders'; }
+
+  function listeAc() {
+    if (aktif) { aktif.durdur(); aktif = null; }
+    const gruplar = [];
+    DENEYLER.forEach(d => { if (!kurucu(d.id)) return; let g = gruplar.find(x => x.ad === d.grup); if (!g) { g = { ad: d.grup, ls: [] }; gruplar.push(g); } g.ls.push(d); });
+    el.innerHTML = `<h1>Deneyler</h1>
+      <p class="alt-baslik">Kaydırıcılarla oyna, adım adım rehberi izle: ne görmen gerektiğini ve nedenini söyler.</p>
+      ${gruplar.map(g => `<h2 class="unite-bas">${U.kacis(g.ad)}</h2><ul class="deney-liste">${g.ls.map(d => `<li><a href="#deney/${d.id}"><b>${U.kacis(d.ad)}</b><span>${U.kacis(d.oz)}</span>${(U.oku('rehber_' + d.id, []) || []).length ? `<span class="rozet iyi">${(U.oku('rehber_' + d.id, []) || []).length}/${(R[d.id] && R[d.id].adimlar.length) || 0} adım</span>` : ''}</a></li>`).join('')}</ul>`).join('')}`;
   }
 
   async function ilk(kok) {
     el = kok;
     el.innerHTML = '<p class="bos">Deneyler hazırlanıyor…</p>';
-    try { F = await U.veri('fizik'); } catch (e) {
+    try {
+      [F, R] = await Promise.all([U.veri('fizik'), U.veri('deney_rehber').catch(() => ({}))]);
+      U.veri('dersler').then(D => { (D.dersler || []).forEach(x => { dersAdlari[x.id] = x.baslik; }); const a = el.querySelector('.deney-ders a'); if (a) a.textContent = dersAdi(a.getAttribute('href').split('/')[1]); }).catch(() => {});
+    } catch (e) {
       el.innerHTML = '<div class="hata-kutu">Fizik verisi yüklenemedi: ' + U.kacis(e.message) + '</div>'; return;
     }
-    el.innerHTML = `<h1>Deneyler</h1>
-      <nav class="deney-secim" aria-label="Deneyler">${DENEYLER.map(d => `<a class="dugme" href="#deney/${d.id}" data-id="${d.id}">${d.ad}</a>`).join('')}</nav>
-      <div id="deneyKap"></div>`;
-    goster(el, location.hash.split('/')[1] || 'karadelik');
+    goster(el, location.hash.split('/')[1] || '');
   }
   function goster(kok, param) {
     if (!F) return;
-    const id = param || 'karadelik';
     const kap = el.querySelector('#deneyKap');
-    if (kap && kap.dataset.deney === id && aktif) return;
-    deneyAc(id);
+    if (param && kap && kap.dataset.deney === param && aktif) return;
+    if (param) deneyAc(param); else listeAc();
   }
   U.modul('deney', { ilk, goster });
 })();

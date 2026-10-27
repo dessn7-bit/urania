@@ -1,0 +1,559 @@
+{
+ "karadelik": {
+  "giris": "Kara delik, kütlesi o kadar küçük bir hacme sıkışmış bir cisim ki belli bir sınırın (olay ufku) içinden ışık bile kaçamıyor. Bu deneyde kütleyi ve ona uzaklığını değiştirip üç şeyi ölçüyorsun: olay ufkunun büyüklüğü, saatinin ne kadar yavaşladığı ve vücudunun ne kadar gerildiği.",
+  "ders": "d16",
+  "adimlar": [
+   {
+    "yap": "Kütleyi 1 Güneş kütlesine getir.",
+    "ayar": {
+     "#kdKutle": 0
+    },
+    "gozle": "Olay ufku yarıçapı yaklaşık 2,95 km.",
+    "neden": "Olay ufku yarıçapı Rs = 2GM/c². Güneş'i kara deliğe çevirmek için bütün kütlesini yarıçapı 3 km'yi bulmayan bir küreye sıkıştırman gerekirdi; Güneş'in gerçek yarıçapı ise yaklaşık 695.700 km (IAU nominal değeri)."
+   },
+   {
+    "yap": "Uzaklığı olay ufkunun 3 katına getir.",
+    "ayar": {
+     "#kdKutle": 0,
+     "#kdUzak": 0.6989
+    },
+    "gozle": "Uzakta 1 saat geçerken sende yaklaşık 49 dakika geçiyor; iki saatin farklı hızda döndüğünü canlandırmada görebilirsin.",
+    "neden": "Kütleçekim zamanı yavaşlatır: yerinde duran birinin saati uzaktakine göre √(1 − Rs/r) hızında işler. r = 3 Rs için bu √(2/3) ≈ 0,82."
+   },
+   {
+    "yap": "Şimdi olay ufkunun hemen dışına in (kaydırıcıyı en sola çek).",
+    "ayar": {
+     "#kdKutle": 0,
+     "#kdUzak": 0
+    },
+    "gozle": "Uzaktaki 1 saate karşılık sende yalnızca 1,3 dakika geçiyor. Gelgit gerilmesi milyarlarca g.",
+    "neden": "r olay ufkuna yaklaştıkça √(1 − Rs/r) sıfıra iner. Küçük bir kara delikte uzaklık farkı boyunun yanında büyük olduğu için ayakların başından çok daha güçlü çekilir: buna spagettileşme denir."
+   },
+   {
+    "yap": "Aynı yerde dururken M87* ön ayarına bas.",
+    "tikla": "#kdOn [data-i=\"2\"]",
+    "gozle": "Olay ufku Güneş Sistemi'nden büyük, ama ufukta gelgit gerilmesi neredeyse sıfır (milyarda bir g'nin de altında).",
+    "neden": "Gelgit ivmesi kütleyle artar ama uzaklığın küpüyle azalır. Ufkun kendisi kütleyle büyüdüğü için ufuktaki gelgit 1/M² ile düşer: dev bir kara deliğin ufkunu fark etmeden geçebilirsin, küçük bir kara delik seni ufka varmadan parçalar."
+   },
+   {
+    "yap": "Sgr A* ön ayarına bas ve uzaklığı 10 Rs yap.",
+    "tikla": "#kdOn [data-i=\"1\"]",
+    "ayar": {
+     "#kdUzak": 1.2787
+    },
+    "gozle": "Samanyolu'nun merkezindeki kara deliğin ufku yaklaşık 12,7 milyon km; 10 Rs uzakta saatin uzaktakinin yaklaşık 0,95'i hızında.",
+    "neden": "Sgr A*'nın kütlesi yaklaşık 4,3 milyon Güneş kütlesi (ESO). Ufuk yarıçapı kütleyle doğru orantılı olduğu için Güneş'inkinin 4,3 milyon katı."
+   }
+  ],
+  "kaynaklar": [
+   {
+    "ad": "IAU 2015 B3 (Güneş nominal yarıçapı)",
+    "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf"
+   },
+   {
+    "ad": "ESO eso2119 (Sgr A*)",
+    "url": "https://www.eso.org/public/news/eso2119/"
+   },
+   {
+    "ad": "ESO eso1907 (M87*)",
+    "url": "https://www.eso.org/public/news/eso1907/"
+   },
+   {
+    "ad": "Wikipedia – Gravitational time dilation",
+    "url": "https://en.wikipedia.org/wiki/Gravitational_time_dilation"
+   }
+  ]
+ },
+ "yorunge": {
+  "giris": "Newton'un düşünce deneyi: yüksek bir dağın tepesinden yatay bir top atıyorsun. Ne kadar hızlı atarsan o kadar uzağa düşer; yeterince hızlıysa yer kavisinden dolayı hiç yere değmeden düşmeye devam eder. Yörünge, bitmeyen bir düşüştür.",
+  "ders": "d3",
+  "adimlar": [
+   {
+    "yap": "Yüksekliği 400 km yap ve \"Dairesel hız\"a bas.",
+    "ayar": {
+     "#yoYuk": 2.6021,
+     "#yoHiz": 1
+    },
+    "gozle": "Dairesel hız yaklaşık 7,67 km/s, bir tur yaklaşık 92 dakika.",
+    "neden": "Uzay İstasyonu da yaklaşık bu yükseklikte; gerçek dolanım süresi günde yaklaşık 15,5 tur, yani yaklaşık 93 dakika (CelesTrak yörünge öğeleri). Dairesel hız v = √(GM/r)."
+   },
+   {
+    "yap": "Hızı dairesel hızın %97'sine düşür.",
+    "ayar": {
+     "#yoYuk": 2.6021,
+     "#yoHiz": 0.97
+    },
+    "gozle": "Top yere çarpıyor.",
+    "neden": "Hız azalınca yörünge elipse döner; atış noktası en uzak nokta olur ve en yakın nokta yerin içine düşer. Yüzde 3'lük bir eksik bile yetiyor: alçak yörüngede pay çok azdır."
+   },
+   {
+    "yap": "Hızı dairesel hızın 1,2 katına çıkar.",
+    "ayar": {
+     "#yoYuk": 2.6021,
+     "#yoHiz": 1.2
+    },
+    "gozle": "Uzun bir elips: en uzak nokta 11.000 km'nin üstüne çıkıyor, tur süresi 3,5 saati buluyor.",
+    "neden": "Fazladan hız enerjiyi artırır; yörünge büyür. Atış noktası artık en yakın nokta (enberi). Kepler'in üçüncü yasası: yörünge büyüdükçe dolanım süresi uzar."
+   },
+   {
+    "yap": "\"Kurtulma hızı\"na bas.",
+    "ayar": {
+     "#yoYuk": 2.6021
+    },
+    "tikla": "#yoKac",
+    "gozle": "Top geri dönmüyor; kurtulma hızı dairesel hızın √2 ≈ 1,41 katı (bu yükseklikte yaklaşık 10,85 km/s).",
+    "neden": "Kurtulma hızında hareket enerjisi kütleçekim enerjisini tam karşılar: v = √(2GM/r). Bunun altındaki her hız kapalı bir yörünge (elips) verir."
+   },
+   {
+    "yap": "Yüksekliği 35.786 km yap ve \"Dairesel hız\"a bas.",
+    "ayar": {
+     "#yoYuk": 4.5537,
+     "#yoHiz": 1
+    },
+    "gozle": "Bir tur yaklaşık 23,9 saat sürüyor.",
+    "neden": "Bu yükseklikte dolanım süresi Dünya'nın kendi dönüşüne (bir yıldız günü, 23 saat 56 dakika) eşittir: uydu yerden bakınca gökte duruyormuş gibi görünür. Haberleşme ve hava durumu uyduları buradadır."
+   }
+  ],
+  "kaynaklar": [
+   {
+    "ad": "CelesTrak – ISS yörünge öğeleri",
+    "url": "https://celestrak.org/NORAD/elements/gp.php?CATNR=25544&FORMAT=tle"
+   },
+   {
+    "ad": "Wikipedia – Geostationary orbit",
+    "url": "https://en.wikipedia.org/wiki/Geostationary_orbit"
+   },
+   {
+    "ad": "Wikipedia – Escape velocity",
+    "url": "https://en.wikipedia.org/wiki/Escape_velocity"
+   }
+  ]
+ },
+ "yildiz": {
+  "giris": "Bir yıldızın nasıl yaşayıp nasıl öleceğini neredeyse tek bir sayı belirler: doğduğu andaki kütlesi. Bu deneyde kütleyi değiştirip yıldızı Hertzsprung-Russell diyagramında (sıcaklığa karşı ışıma gücü) izliyorsun.",
+  "ders": "d5",
+  "adimlar": [
+   {
+    "yap": "Kütleyi 1 Güneş kütlesine getir.",
+    "ayar": {
+     "#hrKutle": 0
+    },
+    "gozle": "Nokta Güneş'in üstüne oturuyor: G2V, yaklaşık 5770 K, anakolda yaklaşık 10 milyar yıl.",
+    "neden": "Güneş bir anakol yıldızı: çekirdeğinde hidrojeni helyuma çeviriyor. Yaklaşık 4,6 milyar yıl önce oluştu (NASA), yani ömrünün yarısına yakınında."
+   },
+   {
+    "yap": "Kütleyi 2 Güneş kütlesine çıkar.",
+    "ayar": {
+     "#hrKutle": 0.301
+    },
+    "gozle": "Kütle iki katına çıktı ama ışıma gücü yaklaşık 20 kat arttı; ömür yaklaşık 1 milyar yıla indi.",
+    "neden": "Anakolda ışıma gücü kütleyle çok hızlı artar (kabaca kütlenin dördüncü kuvveti civarında). Yakıt kütleyle orantılı arttığı hâlde harcama çok daha hızlı arttığı için ağır yıldız kısa yaşar."
+   },
+   {
+    "yap": "Kütleyi 10 Güneş kütlesine çıkar.",
+    "ayar": {
+     "#hrKutle": 1
+    },
+    "gozle": "Mavi-beyaz, yaklaşık 23.000 K; anakolda yalnızca yaklaşık 14 milyon yıl; sonu çekirdek çöküşü süpernovası ve nötron yıldızı.",
+    "neden": "Bu kadar ağır bir yıldızın çekirdeği sonunda demire kadar yanar; demirden enerji çıkmadığı için çekirdek çöker ve dış katmanlar patlayarak savrulur."
+   },
+   {
+    "yap": "Kütleyi en aza (yaklaşık 0,4 Güneş kütlesi) indir.",
+    "ayar": {
+     "#hrKutle": -0.4318
+    },
+    "gozle": "Kızıl, soğuk (yaklaşık 3400 K) ve sönük; anakol ömrü yüz milyarlarca yıl.",
+    "neden": "Bu ömür evrenin bugünkü yaşından (yaklaşık 13,8 milyar yıl) çok uzun: şimdiye kadar doğmuş kırmızı cücelerin hiçbiri henüz anakoldan ayrılmadı."
+   }
+  ],
+  "kaynaklar": [
+   {
+    "ad": "NASA – Sun facts (Güneş'in yaşı)",
+    "url": "https://science.nasa.gov/sun/facts/"
+   },
+   {
+    "ad": "Wikipedia – Mass–luminosity relation",
+    "url": "https://en.wikipedia.org/wiki/Mass%E2%80%93luminosity_relation"
+   },
+   {
+    "ad": "Planck 2018 VI (evrenin yaşı)",
+    "url": "https://arxiv.org/abs/1807.06209"
+   }
+  ]
+ },
+ "gorelilik": {
+  "giris": "Özel göreliliğe göre hızla hareket eden bir saat, durana göre yavaş işler. Işık hızına yaklaştıkça bu etki büyür. Bu deneyde bir hedef seçip hızı değiştiriyorsun; Dünya'da ve gemide geçen süreyi karşılaştırıyorsun.",
+  "ders": "d8",
+  "adimlar": [
+   {
+    "yap": "Hızı ışık hızının yarısına getir.",
+    "ayar": {
+     "#grHiz": 0.4515
+    },
+    "gozle": "γ ≈ 1,15: gemide geçen süre Dünya'dakinin yaklaşık %87'si.",
+    "neden": "Lorentz çarpanı γ = 1/√(1 − v²/c²). Gündelik hızlarda γ 1'e o kadar yakın ki fark ölçülemeyecek kadar küçük."
+   },
+   {
+    "yap": "Hızı ışık hızının %90'ına çıkar.",
+    "ayar": {
+     "#grHiz": 1.5
+    },
+    "gozle": "γ ≈ 2,29: Proxima'ya yolculuk Dünya'ya göre yaklaşık 4,7 yıl, gemide yaklaşık 2,1 yıl.",
+    "neden": "Dünya'dan bakınca yolculuk uzaklık ÷ hız kadar sürer; gemideki saat bunun 1/γ'sı kadar ilerler."
+   },
+   {
+    "yap": "Hızı %99'a çıkar.",
+    "ayar": {
+     "#grHiz": 3
+    },
+    "gozle": "γ ≈ 7,1.",
+    "neden": "Yüzde 90'dan 99'a çıkmak hızı biraz artırır ama γ'yı üç kattan fazla büyütür: c'ye yaklaştıkça γ sınırsız artar."
+   },
+   {
+    "yap": "Andromeda'yı seç ve hızı %99,99 yap.",
+    "tikla": "#grHedef [data-i=\"2\"]",
+    "ayar": {
+     "#grHiz": 6
+    },
+    "gozle": "Dünya'da 2,5 milyon yıl geçerken gemide yalnızca yaklaşık 35 bin yıl geçiyor (γ ≈ 71).",
+    "neden": "Yolcular için zaman yavaşlar ama Dünya'ya dönüş yine milyonlarca yıl sonraya denk gelir. Burada hızlanma ve yavaşlama evreleri yok sayılıyor."
+   }
+  ],
+  "kaynaklar": [
+   {
+    "ad": "Wikipedia – Time dilation",
+    "url": "https://en.wikipedia.org/wiki/Time_dilation"
+   }
+  ]
+ },
+ "kepler": {
+  "giris": "Johannes Kepler, Tycho Brahe'nin gözlemlerinden gezegen hareketinin üç kuralını çıkardı: yörüngeler elipstir ve Güneş bir odaktadır; gezegen eşit sürelerde eşit alan tarar; dolanım süresinin karesi yarı büyük eksenin küpüyle orantılıdır. Burada bir gezegenin yörüngesini kendin değiştir.",
+  "ders": "d3",
+  "adimlar": [
+   {
+    "yap": "\"Dünya\" düğmesine bas.",
+    "tikla": "#kpOn button[data-i=\"2\"]",
+    "gozle": "Yörünge neredeyse çember (e = 0,017). Hız en yakında yaklaşık 30,3, en uzakta 29,3 km/s; dolanım yaklaşık 365 gün.",
+    "neden": "Dünya'nın Güneş'e uzaklığı yıl boyunca yalnız yaklaşık %3 değişir (147,1 ile 152,1 milyon km). Mevsimleri bu uzaklık farkı değil, eksen eğikliği yapar."
+   },
+   {
+    "yap": "\"Merkür\" düğmesine bas ve gezegeni bir tur izle.",
+    "tikla": "#kpOn button[data-i=\"0\"]",
+    "gozle": "Elips belirgin (e = 0,206). Gezegen Güneş'e yakınken hızlanıyor (yaklaşık 59 km/s), uzaktayken yavaşlıyor (yaklaşık 39 km/s). Taralı dilimlerin hepsi aynı alanda.",
+    "neden": "Kepler'in ikinci yasası: Güneş'ten gezegene uzanan çizgi eşit sürede eşit alan tarar. Yakınken dilim kısa ama geniş, uzaktayken uzun ama dar. Bu, açısal momentumun korunmasıdır."
+   },
+   {
+    "yap": "Dışmerkezliği 0,9'a çıkar (Yarı büyük eksen 1 AB'de kalsın).",
+    "ayar": {
+     "#kpA": 0,
+     "#kpE": 0.9
+    },
+    "gozle": "Çok basık bir elips. En yakında hız yaklaşık 130 km/s, en uzakta yaklaşık 7 km/s: oran 19.",
+    "neden": "Hızların oranı (1 + e)/(1 − e)'dir. Kuyruklu yıldızların yörüngeleri böyle basıktır: Güneş'e yaklaşınca çok hızlı geçer, uzakta yıllarca ağır ağır dolaşırlar. Dolanım süresi ise değişmedi (1 yıl): süre yalnız yarı büyük eksene bağlıdır."
+   },
+   {
+    "yap": "\"Jüpiter\" düğmesine bas.",
+    "tikla": "#kpOn button[data-i=\"4\"]",
+    "gozle": "a = 5,20 AB, dolanım yaklaşık 11,9 yıl.",
+    "neden": "Üçüncü yasa: P² = a³ (P yıl, a AB). 5,2³ ≈ 141, karekökü ≈ 11,9. NASA'nın verdiği dolanım süresi 4331 gün, yani 11,86 yıl."
+   },
+   {
+    "yap": "\"Plüton\" düğmesine bas.",
+    "tikla": "#kpOn button[data-i=\"6\"]",
+    "gozle": "Dolanım yaklaşık 248 yıl. En yakın noktası yaklaşık 29,8 AB.",
+    "neden": "Neptün'ün Güneş'e ortalama uzaklığı yaklaşık 30,2 AB (4515 milyon km). Plüton'un en yakın noktası bundan içeride: yörüngesinin bir kısmında Plüton Güneş'e Neptün'den daha yakındır."
+   }
+  ],
+  "kaynaklar": [
+   {
+    "ad": "NASA Planetary Fact Sheet",
+    "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/index.html"
+   },
+   {
+    "ad": "IAU 2015 Resolution B3 (GM☉)",
+    "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion-constants.pdf"
+   }
+  ]
+ },
+ "gelgit": {
+  "giris": "Ay, Dünya'nın kendine bakan yüzünü merkezinden biraz daha güçlü, arka yüzünü biraz daha zayıf çeker. Bu farka gelgit kuvveti denir: Dünya'yı Ay doğrultusunda iki yandan uzatır. Güneş de aynı şeyi yapar, ama daha zayıf.",
+  "ders": "d3",
+  "adimlar": [
+   {
+    "yap": "Günü 0'a getir (yeni Ay), uzaklık ortalama, Güneş açık.",
+    "ayar": {
+     "#ggGun": 0,
+     "#ggGunes": 1
+    },
+    "tikla": "#ggUzak button[data-u=\"ort\"]",
+    "gozle": "Ay'ın gelgit ivmesi yaklaşık 1,12 × 10⁻⁷ g, Güneş'inki 0,52 × 10⁻⁷ g; oran yaklaşık 0,46. Durum: kabarma gelgiti.",
+    "neden": "Güneş Ay'dan yaklaşık 27 milyon kat ağır ama yaklaşık 390 kat uzak. Gelgit uzaklığın küpüyle zayıflar (1/d³), çekim ise karesiyle. Bu yüzden çekimde Güneş baskın, gelgitte Ay."
+   },
+   {
+    "yap": "Günü 7,4'e getir (ilk dördün).",
+    "ayar": {
+     "#ggGun": 7.4
+    },
+    "gozle": "Güneş yönü Ay'a dik. Durum: ölü gelgit. Ay doğrultusundaki toplam şişme Ay'ın tek başına yaptığının yaklaşık %54'ü.",
+    "neden": "Dik açıda Güneş'in şişirdiği yer Ay'ın çukur bıraktığı yerdir; etkiler kısmen birbirini götürür. Kabarma ile ölü gelgit arasındaki fark bu modelde (1 + 0,46)/(1 − 0,46) ≈ 2,7 kat."
+   },
+   {
+    "yap": "Günü 14,75'e getir (dolunay).",
+    "ayar": {
+     "#ggGun": 14.75
+    },
+    "gozle": "Güneş Ay'ın tam karşısında, yine kabarma gelgiti (yaklaşık %146).",
+    "neden": "Gelgit şişkinliği iki yanlıdır: Güneş ister Ay'la aynı tarafta ister karşısında olsun, şişkinlikler aynı doğrultuda toplanır. Bu yüzden kabarma gelgiti ayda iki kez, yeni Ay ve dolunayda olur."
+   },
+   {
+    "yap": "\"Ay en yakında\" ile \"Ay en uzakta\" düğmelerini karşılaştır.",
+    "tikla": "#ggUzak button[data-u=\"yakin\"]",
+    "gozle": "En yakında Ay'ın gelgiti yaklaşık 1,33, en uzakta 0,95 (× 10⁻⁷ g): yaklaşık %39 fark.",
+    "neden": "Ay'ın uzaklığı 363.300 ile 405.500 km arasında değişir; küp yasası yüzünden küçük uzaklık farkı gelgitte büyük fark yapar: (405.500 / 363.300)³ ≈ 1,39."
+   },
+   {
+    "yap": "\"Güneş'in gelgit etkisini ekle\" kutusunu kapat ve beyaz noktayı izle.",
+    "ayar": {
+     "#ggGunes": 0
+    },
+    "gozle": "Okyanus kabuğu Ay doğrultusunda iki yandan şişkin. Dönen nokta bir turda iki şişkinlikten ve iki çukurdan geçiyor.",
+    "neden": "Dünya bu iki şişkinliğin altında döndüğü için kıyıda günde iki yükselme ve iki alçalma görülür. Gerçek kıyılardaki gelgit yüksekliği kıyı şekline ve deniz tabanına göre çok değişir; şekil abartılıdır."
+   }
+  ],
+  "kaynaklar": [
+   {
+    "ad": "NASA Moon Fact Sheet",
+    "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html"
+   },
+   {
+    "ad": "NASA Planetary Fact Sheet",
+    "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/index.html"
+   }
+  ]
+ },
+ "tayf": {
+  "giris": "Sıcak bir cisim her dalga boyunda ışır ama en çok bir dalga boyunda; bu tepe noktası sıcaklıkla kayar. Yıldızın atmosferindeki atomlar ise belirli dalga boylarını soğurur ve tayfta karanlık çizgiler bırakır. Yıldız hareket ediyorsa bütün çizgiler birlikte kayar.",
+  "ders": "d2",
+  "adimlar": [
+   {
+    "yap": "\"Güneş\" düğmesine bas.",
+    "tikla": "#tyOn button[data-i=\"2\"]",
+    "gozle": "5772 K; eğrinin tepesi yaklaşık 502 nm'de (yeşil). Renk kutusu ise beyaza yakın.",
+    "neden": "Wien yasası: tepe dalga boyu = 2,898 mm·K / T. Güneş bütün görünür renklerde bol ışık saldığı için göz onu yeşil değil beyaz görür."
+   },
+   {
+    "yap": "\"Betelgeuse\" düğmesine bas.",
+    "tikla": "#tyOn button[data-i=\"1\"]",
+    "gozle": "3600 K; tepe yaklaşık 805 nm'de, kızılötesinde. Eğri kırmızı tarafa yaslanmış.",
+    "neden": "Soğuk yıldızın ışığının çoğu gözün göremediği kızılötesindedir; görünür kısmında kırmızı baskın olduğu için turuncu-kırmızı görünür. Orion'daki Betelgeuse ile Rigel'i çıplak gözle karşılaştırabilirsin."
+   },
+   {
+    "yap": "\"Rigel\" düğmesine bas.",
+    "tikla": "#tyOn button[data-i=\"4\"]",
+    "gozle": "12.100 K; tepe yaklaşık 239 nm'de, morötesinde. Renk mavimsi beyaz.",
+    "neden": "Sıcaklık iki katına çıkınca tepe dalga boyu yarıya iner. Ayrıca yüzeyin her metrekaresinden çıkan toplam ışınım sıcaklığın dördüncü kuvvetiyle artar (Stefan-Boltzmann)."
+   },
+   {
+    "yap": "Hızı yaklaşık +3000 km/s yap (uzaklaşma).",
+    "ayar": {
+     "#tyV": 0.4642
+    },
+    "gozle": "Hα çizgisi 656,28'den yaklaşık 662,9 nm'ye kaydı (yaklaşık 6,6 nm kırmızıya); şeritteki bütün siyah çizgiler sağa kaydı. z ≈ 0,01.",
+    "neden": "Doppler etkisi: uzaklaşan kaynağın ışığı uzar. Küçük hızlarda kayma oranı ≈ v/c: 3000 / 299.792 ≈ 0,01. Çizgilerin deseni değişmediği için hangi element olduğunu tanıyıp hızı ölçebilirsin."
+   },
+   {
+    "yap": "Hızı yaklaşık −3000 km/s yap (yaklaşma).",
+    "ayar": {
+     "#tyV": -0.4642
+    },
+    "gozle": "Çizgiler maviye kaydı: Hα yaklaşık 649,8 nm.",
+    "neden": "Yaklaşan kaynağın dalgaları sıkışır. Gökbilimciler çift yıldızların birbirinin çevresinde dolanmasını, ötegezegenlerin yıldızlarını sallamasını ve galaksilerin uzaklaşmasını bu kaymayla ölçer."
+   }
+  ],
+  "kaynaklar": [
+   {
+    "ad": "NIST Atomic Spectroscopic Data Handbook: hidrojen",
+    "url": "https://physics.nist.gov/PhysRefData/Handbook/Tables/hydrogentable2.htm"
+   },
+   {
+    "ad": "NIST CODATA: Wien sabiti",
+    "url": "https://physics.nist.gov/cgi-bin/cuu/Value?bwien"
+   },
+   {
+    "ad": "Levesque & Massey 2020 (Betelgeuse)",
+    "url": "https://arxiv.org/abs/2002.10463v1"
+   },
+   {
+    "ad": "Przybilla ve ark. 2010 (Rigel)",
+    "url": "https://ar5iv.arxiv.org/html/1005.2278"
+   }
+  ]
+ },
+ "evreler": {
+  "giris": "Ay kendi ışığı olmayan bir küredir ve her zaman yarısı Güneş'le aydınlanır. Evre, o aydınlık yarının Dünya'dan ne kadarını gördüğümüzdür. Ay'ın yörüngesi Dünya'nın yörünge düzlemine (tutuluma) yaklaşık 5° eğik olduğu için tutulmalar her ay olmaz.",
+  "ders": "d10",
+  "adimlar": [
+   {
+    "yap": "Günü 7,4'e getir.",
+    "ayar": {
+     "#evGun": 7.4
+    },
+    "gozle": "İlk dördün: Ay'ın yarısı aydınlık (%50). Üstten görünüşte Ay, Güneş doğrultusuna dik.",
+    "neden": "\"Dördün\" adı yörüngenin dörtte birine gelinmesindendir; diskin yarısı aydınlık görünür. Kuzey yarım küreden bakınca büyüyen Ay'ın sağ yanı aydınlıktır."
+   },
+   {
+    "yap": "Günü 14,75'e getir, düğüm açısı 40° olsun.",
+    "ayar": {
+     "#evGun": 14.75,
+     "#evMevsim": 40
+    },
+    "gozle": "Dolunay (%100), ama Ay tutulumun yaklaşık 3,3° altında: tutulma yok.",
+    "neden": "Dünya'nın gölgesi tutulum düzleminde uzanır. Ay dolunayda o düzlemin biraz üstünden ya da altından geçerse gölgeye girmez. Yan görünüşteki nokta bunu abartılı gösterir."
+   },
+   {
+    "yap": "Düğüm açısını 0° yap (Güneş Ay yörüngesinin düğümünde).",
+    "ayar": {
+     "#evGun": 14.75,
+     "#evMevsim": 0
+    },
+    "gozle": "Ay tam tutulum üzerinde (0°): Ay tutulması olabilir.",
+    "neden": "Ay'ın eğik yörüngesinin tutulumu kestiği iki noktaya düğüm denir. Dolunay bir düğüme yakın düşerse Ay, Dünya'nın gölgesine girer."
+   },
+   {
+    "yap": "Düğüm açısı 0°'de günü 0'a getir.",
+    "ayar": {
+     "#evGun": 0,
+     "#evMevsim": 0
+    },
+    "gozle": "Yeni Ay ve Ay düğümde: Güneş tutulması olabilir.",
+    "neden": "Aynı hizalanma yaklaşık iki hafta arayla hem yeni Ay'da hem dolunayda olabildiği için Güneş ve Ay tutulmaları sık sık çift gelir."
+   },
+   {
+    "yap": "Düğüm açısını 90° yap; günü 0 ile 14,75 arasında değiştir.",
+    "ayar": {
+     "#evGun": 14.75,
+     "#evMevsim": 90
+    },
+    "gozle": "Ay yaklaşık 5,1° yukarıda ya da aşağıda: ne yeni Ay'da ne dolunayda tutulma var.",
+    "neden": "Ay'ın tutuluma yaklaşık 1,5°'den yakın olması gerekir; bu da Güneş düğümün yaklaşık 17° yakınındayken olur. Güneş bir düğümden yaklaşık 173 günde bir geçer: tutulmalar yılda iki \"tutulma mevsimi\"ne toplanır, her biri 31–37 gün sürer."
+   }
+  ],
+  "kaynaklar": [
+   {
+    "ad": "NASA Moon Fact Sheet",
+    "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html"
+   },
+   {
+    "ad": "Wikipedia: Eclipse season",
+    "url": "https://en.wikipedia.org/wiki/Eclipse_season"
+   }
+  ]
+ },
+ "gecis": {
+  "giris": "Bir gezegen yıldızının önünden geçerken yıldızın küçük bir parçasını örter ve yıldızın ışığı biraz azalır. Kepler ve TESS gibi teleskoplar binlerce ötegezegeni bu küçük düşüşleri yakalayarak buldu.",
+  "ders": "d13",
+  "adimlar": [
+   {
+    "yap": "\"Dünya–Güneş\" düğmesine bas.",
+    "tikla": "#gcOn button[data-i=\"0\"]",
+    "gozle": "Işık yalnız yaklaşık 84 ppm (milyonda 84) azalıyor; geçiş yaklaşık 13 saat sürüyor, yılda bir kez.",
+    "neden": "Derinlik (Rp/R*)²: Güneş'in yarıçapı Dünya'nınkinin yaklaşık 109 katı, 109² ≈ 11.900. Uzaktaki bir gözlemcinin Dünya'yı bu yöntemle bulması için çok hassas ölçüm ve yıllarca bekleme gerekir."
+   },
+   {
+    "yap": "\"Jüpiter–Güneş\" düğmesine bas.",
+    "tikla": "#gcOn button[data-i=\"1\"]",
+    "gozle": "Düşüş yaklaşık %1; geçiş yaklaşık 32 saat ama 12 yılda bir.",
+    "neden": "Jüpiter Güneş'in yaklaşık onda biri genişliğinde: (1/10)² = 1/100. Derinlik kolay ölçülür ama uzak gezegenler seyrek geçer; ilk bulunan geçişli gezegenlerin çoğu bu yüzden yakın yörüngeli dev gezegenlerdir."
+   },
+   {
+    "yap": "\"HD 209458 b\" düğmesine bas.",
+    "tikla": "#gcOn button[data-i=\"2\"]",
+    "gozle": "Düşüş yaklaşık %1,3, geçiş yaklaşık 3,2 saat, her 3,5 günde bir.",
+    "neden": "Geçişi gözlenen ilk ötegezegen budur: yıldızına çok yakın bir \"sıcak Jüpiter\". Modelde yıldız düzgün parlak bir disk; gerçek yıldızların kenarı merkezden sönük olduğu (kenar kararması) için gerçek eğri dibe doğru yuvarlaktır."
+   },
+   {
+    "yap": "\"TRAPPIST-1 e\" düğmesine bas.",
+    "tikla": "#gcOn button[data-i=\"3\"]",
+    "gozle": "Dünya'dan biraz küçük bir gezegen ama düşüş yaklaşık %0,5; geçiş 1 saatten kısa.",
+    "neden": "Yıldız çok küçük (Güneş'in yaklaşık %12'si): aynı gezegen küçük yıldızın daha büyük bir kısmını örter. Küçük kırmızı cüceler bu yüzden Dünya boyutlu gezegen aramak için iyi hedeflerdir."
+   },
+   {
+    "yap": "Geçiş yolunun merkeze uzaklığını (b) 1,2'ye çıkar.",
+    "ayar": {
+     "#gcB": 1.2
+    },
+    "gozle": "Geçiş yok: gezegen yıldızın üstünden geçiyor.",
+    "neden": "Geçiş yöntemi yalnız yörüngesini neredeyse tam yandan gördüğümüz gezegenleri yakalar. b, 1'e yaklaştıkça geçiş kısalır ve kenardan sıyırarak geçer."
+   }
+  ],
+  "kaynaklar": [
+   {
+    "ad": "NASA Jupiter Fact Sheet (Dünya ve Jüpiter)",
+    "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/jupiterfact.html"
+   },
+   {
+    "ad": "TEPCat: TRAPPIST-1e",
+    "url": "https://astro.keele.ac.uk/jkt/tepcat/planets/TRAPPIST-1e.html"
+   },
+   {
+    "ad": "Wikipedia: HD 209458 b",
+    "url": "https://en.wikipedia.org/wiki/HD_209458_b"
+   }
+  ]
+ },
+ "hubble": {
+  "giris": "1920'lerde galaksilerin tayflarındaki çizgilerin kırmızıya kaydığı ve uzak galaksilerin daha hızlı uzaklaştığı bulundu. Bu ilişki evrenin genişlediğini gösterir. Burada temsilî bir galaksi alanında bu ilişkiyi kendin ölç.",
+  "ders": "d17",
+  "adimlar": [
+   {
+    "yap": "H₀'ı 70'te bırak ve üstteki galaksileri izle.",
+    "ayar": {
+     "#hbH": 70
+    },
+    "gozle": "Bütün galaksiler senin galaksinden (sarı) uzaklaşıyor; uzaktakilerin okları daha uzun.",
+    "neden": "Uzay her yerde aynı oranda genişlerse iki kat uzaktaki galaksi iki kat hızlı uzaklaşır: v = H₀·d."
+   },
+   {
+    "yap": "\"Başka galaksiden bak\" düğmesine bas.",
+    "tikla": "#hbYeni",
+    "gozle": "Artık başka bir galaksi merkezde; yine bütün galaksiler ondan uzaklaşıyor ve grafik yine düz bir çizgi.",
+    "neden": "Genişlemenin merkezi yok: her gözlemci kendini merkezde sanar. Üzümlü kek benzetmesi: kek kabarırken her üzüm ötekilerden uzaklaşır."
+   },
+   {
+    "yap": "\"Kendi hareketleri\" kutusunu kapat, sonra aç.",
+    "ayar": {
+     "#hbOzel": 0
+    },
+    "gozle": "Kapalıyken noktalar tam bir doğru üstünde; açınca yakın galaksilerde saçılma büyüyor, uzakta oranca küçülüyor.",
+    "neden": "Galaksiler komşularının çekimiyle de hareket eder. Bu ek hız yakın galaksilerde genişleme hızına göre büyüktür; bu yüzden H₀ ölçümünde uzak galaksiler daha güvenilirdir."
+   },
+   {
+    "yap": "H₀'ı 67,4'e getir.",
+    "ayar": {
+     "#hbH": 67.4,
+     "#hbOzel": 1
+    },
+    "gozle": "Hubble zamanı yaklaşık 14,5 milyar yıl.",
+    "neden": "1/H₀, genişleme hep aynı hızla sürseydi her şeyin bir arada olduğu ana kadar geçen süredir. 67,4, Planck uydusunun kozmik mikrodalga arka plandan çıkardığı değerdir."
+   },
+   {
+    "yap": "H₀'ı 73'e getir.",
+    "ayar": {
+     "#hbH": 73
+    },
+    "gozle": "Hubble zamanı yaklaşık 13,4 milyar yıl.",
+    "neden": "SH0ES ekibi Sefeidler ve Ia süpernovalarıyla 73,04 ± 1,04 ölçtü; Planck'ın öngörüsüyle arada 5 sigmalık fark var. Bu \"Hubble gerilimi\"nin nedeni henüz bilinmiyor."
+   }
+  ],
+  "kaynaklar": [
+   {
+    "ad": "Planck 2018 VI (H₀ = 67,4 ± 0,5)",
+    "url": "https://ui.adsabs.harvard.edu/abs/2020A%26A...641A...6P/abstract"
+   },
+   {
+    "ad": "Riess ve ark. 2022 (H₀ = 73,04 ± 1,04)",
+    "url": "https://arxiv.org/abs/2112.04510v3"
+   }
+  ]
+ }
+}

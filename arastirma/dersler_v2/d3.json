@@ -1,0 +1,209 @@
+{
+  "id": "d3",
+  "unite": "gunes_sistemi",
+  "baslik": "Kütleçekim ve Yörüngeler: Gezegenleri Ne Yönetir?",
+  "ozet": "Kepler'in gözlemlerden çıkardığı üç yasayı, Newton'un bunları tek bir çekim kuvvetiyle nasıl açıkladığını ve aynı fiziğin yörünge hızını, kurtulma hızını ve uzaktaki cisimlerin kütlesini nasıl hesaplattığını öğreneceksin. Sonra aynı kuvvetin denizleri nasıl kabarttığını (gelgitler) ve uzay araçlarının neden Lagrange noktalarına park edildiğini göreceksin.",
+  "on_bilgi": ["d1"],
+  "bolumler": [
+    {
+      "baslik": "Tycho'nun verisi, Kepler'in sabrı",
+      "paragraflar": [
+        "Gece gökyüzüne bir ay boyunca bakarsan Mars'ın yıldızların arasında yavaş yavaş yer değiştirdiğini görürsün. Peki bu hareketi hangi kural yönetiyor? Bu sorunun cevabı, iki kişinin çok farklı yeteneklerinin birleşmesinden çıktı. 1600'de Graz'dan sürülen Johannes Kepler, Prag'da döneminin en hassas gözlemlerini yapan Tycho Brahe'nin yanında çalışmaya başladı. Brahe ona Mars'ın yörüngesini çözme görevini verdi.",
+        "Kopernik'in Güneş merkezli modeli yörüngelerin daire olduğunu varsayıyordu. Ama Brahe'nin hassas ölçümleri hiçbir daireye oturmuyordu. Kepler uzun uğraşlardan sonra yörüngelerin daire değil elips olduğunu kabul etmek zorunda kaldı. Elips, basık bir daire gibi düşünebileceğin kapalı bir eğridir. Mars'ın yörüngesi, Brahe'nin ayrıntılı verisi olan gezegenler arasında en basık olanıydı. Bu yüzden Mars hem işin zorluğu hem de çözümün anahtarı oldu: daha yuvarlak bir yörünge seçilseydi, daire ile elips arasındaki fark ölçüm hatalarının içinde kaybolabilirdi.",
+        "Kepler birinci yasasını 1609'da Astronomia nova adlı kitabında yayımladı. İkinci yasa da bu kitapta vardı, ama bugünkü biçimini 1621'deki Epitome Astronomiae Copernicanae'de aldı. Üçüncü yasa 1619'da Harmonice Mundi'de yayımlandı. Bu sıralama önemli bir dersi gösterir: yasalar önce gözlemden çıktı, nedenleri ise ancak yarım yüzyıldan uzun bir süre sonra Newton'la anlaşıldı."
+      ],
+      "akilda": "Kepler'in yasaları kuramdan değil, Brahe'nin çok hassas Mars gözlemlerinden çıktı. Mars'ın basık yörüngesi daire fikrini çürüttü."
+    },
+    {
+      "baslik": "Birinci ve ikinci yasa: elips ve değişen hız",
+      "paragraflar": [
+        "Birinci yasa (elips yasası): Her gezegenin yörüngesi bir elipstir ve Güneş'in merkezi bu elipsin odaklarından birindedir. Elipsin iki odağı vardır; elips üzerindeki her noktanın bu iki odağa uzaklıklarının toplamı sabittir. İpe bağlı bir kalemi iki raptiyenin çevresinde dolaştırarak çizdiğin şekli düşün; raptiyeler odaklardır. Elipsin ne kadar basık olduğunu dış merkezlik söyler: 0 tam bir dairedir, değer büyüdükçe elips uzar. En uzun eksenin yarısına yarı büyük eksen denir ve genellikle a harfiyle gösterilir.",
+        "Güneş merkezde değil bir odakta durduğu için gezegen ile Güneş arasındaki uzaklık sürekli değişir. Gezegenin Güneş'e en yakın olduğu noktaya günberi, en uzak olduğu noktaya günöte denir. Dünya'nın dış merkezliği 0,0167'dir; yani yörüngesi daireye çok yakındır. Yine de Güneş'e uzaklığı 147,1 milyon km ile 152,1 milyon km arasında gidip gelir.",
+        "İkinci yasa (eşit alanlar yasası): Gezegeni Güneş'e bağlayan hayali doğru, eşit zamanlarda eşit alanlar tarar. Günberide bu doğru kısadır; aynı alanı taramak için gezegenin daha uzun bir yay boyunca, yani daha hızlı gitmesi gerekir. Günötede doğru uzundur ve gezegen yavaşlar. Sonuç: gezegen Güneş'e yaklaşırken hızlanır, uzaklaşırken yavaşlar. Dünya'nın yörünge hızı 29,29 km/s ile 30,29 km/s arasında değişir. Bu yasa neden önemli? Çünkü bir kuyrukluyıldızın Güneş'in yanından neden bir anda geçip uzaklarda yıllarca oyalandığını da aynı ilke açıklar.",
+        "Kepler bu iki yasayı gezegenler için buldu, ama sonradan anlaşıldı ki yasalar bir cismin başka bir cismin çevresinde serbestçe dolandığı her durumda geçerlidir: Ay'ın Dünya çevresinde, yapay uyduların yörüngelerinde, bir kuyrukluyıldızın Güneş çevresinde. Bu evrensellik, birazdan göreceğin Newton yasasının ilk ipucuydu. Kepler için sonuç kolay kabul edilir değildi: daire varsayımını ancak Brahe'nin verisi başka seçenek bırakmayınca bıraktı."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Dünya'nın uzaklık ve hız oranları",
+        "metin": "Günöte uzaklığını günberi uzaklığına böl: 152,100 ÷ 147,095 ≈ 1,034. Yani günötede Güneş'e yaklaşık %3,4 daha uzağız. Şimdi en büyük hızı en küçük hıza böl: 30,29 ÷ 29,29 ≈ 1,034. İki oran aynı çıktı. Bu rastlantı değil: ikinci yasaya göre bu iki uç noktada hız ile uzaklığın çarpımı aynı kalır; uzaklık %3,4 artınca hız %3,4 azalır. Sonuç: oranların ikisi de ≈ 1,034 (birimsiz)."
+      },
+      "akilda": "Yörünge elipstir ve Güneş bir odaktadır. Gezegen Güneş'e yakınken hızlı, uzakken yavaş gider (eşit zamanda eşit alan)."
+    },
+    {
+      "baslik": "Üçüncü yasa: uzak gezegenin yılı neden orantısız uzun?",
+      "paragraflar": [
+        "Üçüncü yasa (harmonik yasa): Yörünge dönemlerinin kareleri, yarı büyük eksenlerin küpleriyle orantılıdır. Dönem, gezegenin Güneş'in çevresini bir kez dolanma süresidir. Dönemi yıl, uzaklığı astronomik birim (AB, Dünya ile Güneş arasındaki ortalama uzaklık) cinsinden alırsan Güneş'in çevresindeki cisimler için yasa çok sade bir biçim alır: P² = a³. Burada P yıl cinsinden dönem, a da AB cinsinden yarı büyük eksendir.",
+        "Satürn'ün yarı büyük ekseni 9,537 AB'dir. 9,537³ ≈ 867 eder ve bunun karekökü ≈ 29,4 yıldır. NASA'nın verdiği dönem 10.755,7 gün, yani 29,45 yıldır; formül neredeyse tam tutar. Uzak bir gezegenin yılı yalnızca uzun değil, orantısız biçimde uzundur: Merkür Güneş'in çevresini 88 günde dolanırken Satürn'ün bir turu otuz yıla yaklaşır. Uzaklık yaklaşık 25 kat artarken dönem 120 kattan fazla artar. Neden? Çünkü dıştaki gezegen hem daha uzun bir yol gider hem de daha yavaş ilerler."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Mars'ın yılını hesapla",
+        "metin": "Mars'ın yarı büyük ekseni 1,524 AB'dir. Önce küpünü al: 1,524 × 1,524 × 1,524 ≈ 3,540. Bu P² demektir. Karekökünü al: P = √3,540 ≈ 1,881 yıl. Günlere çevir: 1,881 × 365,25 ≈ 687 gün. NASA'nın Mars için verdiği yıldızıl dönem 686,98 gündür. Sonuç: Mars'ın bir yılı yaklaşık 1,88 Dünya yılı, yani yaklaşık 687 gündür."
+      },
+      "akilda": "P² = a³ (P yıl, a AB). Uzaklık artınca dönem uzaklıktan daha hızlı büyür."
+    },
+    {
+      "baslik": "Newton: gezegenleri tek bir kuvvet yönetir",
+      "paragraflar": [
+        "Kepler gezegenlerin nasıl hareket ettiğini söyledi ama nedenini bilmiyordu. Isaac Newton, ilk kez 5 Temmuz 1687'de yayımlanan Principia'da hareket yasalarını yeni bir matematikle birleştirerek Kepler'in sonuçlarını açıkladı. Evrensel çekim yasasına göre her kütle diğer her kütleyi çeker. Bu kuvvet kütlelerin çarpımıyla doğru, merkezleri arasındaki uzaklığın karesiyle ters orantılıdır: F = G × M × m / r². Elmayı yere düşüren kuvvet ile Ay'ı Dünya'nın çevresinde tutan kuvvet aynı kuvvettir.",
+        "Ters kare ilişkisi şunu söyler: uzaklığı iki katına çıkarırsan kuvvet dörtte bire, üç katına çıkarırsan dokuzda bire düşer. G evrensel çekim sabitidir ve değeri 6,674 × 10⁻¹¹ m³ kg⁻¹ s⁻² kadardır. Bu çok küçük bir sayıdır; günlük hayatta iki insan arasındaki çekimi hiç hissetmemenin nedeni budur. İlginçtir, Newton bu sabiti ve bugünkü formülü kullanmadı, yalnızca orantılarla çalıştı. Kütleçekimi laboratuvarda iki kütle arasında ilk kez Henry Cavendish 1798'deki deneyinde ölçtü.",
+        "Bir ayrıntı daha: küresel simetrik cisimler, bütün kütleleri merkezlerinde toplanmış gibi çeker. Bu yüzden formüldeki r, merkezler arasındaki uzaklıktır, yüzeyler arasındaki değil. Bu kural neden önemli? Çünkü Dünya'nın, Ay'ın ya da Güneş'in çekimini hesaplarken onları tek bir nokta gibi düşünmene izin verir; gezegen hesaplarının çoğu bu kolaylık sayesinde lise matematiğiyle yapılabilir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Dünya'yı Güneş mi daha çok çeker, Ay mı?",
+        "metin": "Çekim kütleyle doğru, uzaklığın karesiyle ters orantılı. Güneş'in kütlesi 1,9884 × 10³⁰ kg, Ay'ınki 7,346 × 10²² kg; oran ≈ 2,707 × 10⁷. Uzaklıklar: Ay 384.400 km, Güneş 149.598.000 km; Ay uzaklığının Güneş uzaklığına oranı ≈ 0,002570, karesi ≈ 6,60 × 10⁻⁶. Çarp: 2,707 × 10⁷ × 6,60 × 10⁻⁶ ≈ 179. Sonuç: Güneş Dünya'yı Ay'dan yaklaşık 179 kat daha güçlü çeker (birimsiz oran). Bunu aklında tut; gelgitlerde şaşırtıcı bir sonuçla geri döneceğiz."
+      },
+      "akilda": "F = G × M × m / r². Uzaklık 2 kat → kuvvet 1/4. Küresel cisimler, kütleleri merkezde toplanmış gibi çeker."
+    },
+    {
+      "baslik": "Kepler'in yasası Newton'un elinde: kütle ölçmek",
+      "paragraflar": [
+        "Newton'un yasası, Kepler'in üçüncü yasasını türetmeye yeter. Dairesel bir yörüngede kütleçekim kuvveti, cismi daire üzerinde tutan merkezcil kuvveti sağlar. Merkezcil kuvvet, bir cismi düz gitmek yerine dönmeye zorlayan, merkeze doğru yönelmiş kuvvettir. İkisini eşitleyince T² = (4π² / GM) × r³ çıkar: dönemin karesi uzaklığın küpüyle orantılıdır. Elips yörüngeler ve iki cismin de kütlesi hesaba katılınca tam biçim şudur: a³ / T² = G(M + m) / 4π².",
+        "Bu formülün asıl gücü şuradadır: bir uydunun ya da gezegenin dönemini (T) ve yarı büyük eksenini (a) ölçersen, merkezdeki cismin kütlesini hesaplayabilirsin. Kimse Dünya'yı ya da Jüpiter'i teraziye koyamaz; kütleleri böyle ölçülür. Güneş Sistemi'nde gezegenlerin kütlesi Güneş'inkinin yanında çok küçük olduğundan M + m ≈ M alınır. Sabiti Güneş'in kütlesiyle hesaplayıp birimleri yıl ve AB'ye çevirdiğinde değer 1'e çok yakın çıkar; Kepler'in yalın P² = a³ biçimi buradan gelir.",
+        "Aynı yolu Güneş'i tartmak için de kullanabilirsin. Dünya'nın yarı büyük ekseni 149,598 milyon km, yıldızıl dönemi 365,256 gündür. Bu iki sayıyı metreye ve saniyeye çevirip formüle koyarsan Güneş'in kütlesi için yaklaşık 1,988 × 10³⁰ kg bulursun; NASA'nın Güneş bilgi sayfasındaki değer de 1,9884 × 10³⁰ kg'dır. Bir ayrıntıya dikkat et: NIST, G'yi 6,674 30 × 10⁻¹¹ olarak verir ve son iki hanesinde ±15'lik bir belirsizlik bildirir. NASA JPL ise Güneş için G ile kütlenin çarpımını, yani GM'yi, 1,327 124 400 41 × 10²⁰ m³/s² biçiminde çok daha fazla haneyle verir. Yani yörüngeler GM çarpımını çok hassas söyler; kütleyi kilogram olarak bulmak için G'ye bölmek gerekir ve sonuç G'nin belirsizliğinden daha hassas olamaz."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Ay'ın yörüngesinden Dünya'yı tartmak",
+        "metin": "Ay'ın yarı büyük ekseni a = 384.400 km = 3,844 × 10⁸ m, dönemi T = 27,3217 gün. Saniyeye çevir: 27,3217 × 86.400 ≈ 2,3606 × 10⁶ s. Formül: M + m = 4π² × a³ / (G × T²). a³ ≈ 5,680 × 10²⁵ m³; 4π² ≈ 39,48; pay ≈ 2,242 × 10²⁷. T² ≈ 5,572 × 10¹² s²; G × T² ≈ 6,674 × 10⁻¹¹ × 5,572 × 10¹² ≈ 371,9. Böl: 2,242 × 10²⁷ / 371,9 ≈ 6,03 × 10²⁴ kg. NASA'ya göre Dünya 5,9722 × 10²⁴ kg, Ay 0,07346 × 10²⁴ kg; toplam ≈ 6,05 × 10²⁴ kg. Fark yaklaşık %0,3. Sonuç: Dünya ile Ay'ın toplam kütlesi ≈ 6,0 × 10²⁴ kilogram."
+      },
+      "akilda": "Dönem ve uzaklığı ölç, kütleyi bul: a³ / T² = G(M + m) / 4π². Gezegenlerin kütleleri böyle bilinir."
+    },
+    {
+      "baslik": "Yörünge: hep düşüp hiç yere varamamak",
+      "paragraflar": [
+        "Newton bunu bir düşünce deneyiyle anlattı: çok yüksek bir dağın tepesinden yatay olarak bir taş fırlattığını düşün. Hız düşükse taş biraz ötede yere düşer. Hızı artırdıkça daha uzağa düşer. Yeterince yüksek bir hızda taşın yere doğru düşüşü yeryüzünün eğriliğiyle denkleşir: taş sürekli düşer ama yere hiç varamaz. Bu hız o yükseklikteki yörünge hızıdır ve taş Dünya'nın çevresinde daire çizer. Bu düşünce deneyi, 1728'de İngilizce olarak A Treatise of the System of the World adıyla yayımlanan metinde yer alır. Benzetmenin sınırı: bu düşünce deneyi hava direncini yok sayar; gerçek bir taş havada yavaşlardı.",
+        "M kütleli bir cismin merkezinden r uzaklıktaki dairesel yörünge hızı v = √(GM / r) ile verilir. Formüle bak: r büyüdükçe gereken hız azalır. Yani alçak yörüngedeki uydu hızlı, yüksekteki yavaş gider; aynı durum gezegenler için de geçerlidir. Gerçek bir örnek: Uluslararası Uzay İstasyonu saniyede yaklaşık beş mil (≈ 8 km/s) hızla gider, Dünya'yı yaklaşık 90 dakikada bir dolanır ve 24 saatte 16 tur atar. Yani günde 16 kez Newton'un taşı gibi Dünya'nın çevresine düşer.",
+        "Aynı formül Ay için de çalışır ve güzel bir sağlama verir. Ay'ın yörünge hızını iki yoldan bulabilirsin. Birinci yol: yörüngenin çevresini (2π × 384.400 km ≈ 2,415 milyon km) dönem süresine (2,3606 milyon saniye) böl; yaklaşık 1,02 km/s çıkar. İkinci yol: √(GM / r) = √(398.600 / 384.400) ≈ 1,02 km/s. İki sonuç uyuşur. Yani İstasyon saniyede yaklaşık 8 km giderken çok daha uzaktaki Ay saniyede yalnızca 1 km kadar yol alır. Uzaklık arttıkça yörünge hızının düşmesi, Güneş'in çevresindeki gezegenlerde de aynen görülür: NASA'nın tablosuna göre içteki Merkür saniyede ortalama 47,4 km ile en hızlı, dıştaki Neptün 5,4 km ile en yavaş dolanır."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Yeryüzü hizasında yörünge hızı",
+        "metin": "Dünya için GM = 398.600 km³/s², ortalama yarıçap r = 6371 km. Böl: 398.600 / 6371 ≈ 62,57 km²/s². Karekökünü al: v = √62,57 ≈ 7,91 km/s. Hava direncini yok sayarsak yeryüzünün hemen üstünde dolanmak için gereken hız budur. İstasyon daha yüksekte olduğu için biraz daha yavaş gitmesi gerekir; NASA'nın verdiği ≈ 8 km/s bununla uyumludur. Sonuç: ≈ 7,9 km/s."
+      },
+      "akilda": "Yörüngedeki cisim sürekli düşer ama yere varamaz. v = √(GM/r): yükseldikçe gereken hız azalır."
+    },
+    {
+      "baslik": "Kurtulma hızı: bir daha dönmemek",
+      "paragraflar": [
+        "Bir taşı yukarı atarsan geri düşer. Daha hızlı atarsan daha yükseğe çıkar ama yine döner. Bir gök cisminin çekiminden tamamen kurtulmak için gereken en düşük hıza kurtulma hızı denir: v_k = √(2GM / r). Bu, aynı uzaklıktaki dairesel yörünge hızının √2 katıdır, yani yaklaşık 1,41 katı. Kaçan cismin kütlesi küçükse sonuca katkısı ihmal edilebilir; bir toz tanesi de bir uzay aracı da aynı hıza ihtiyaç duyar. Dönmeyen bir cisim için sonuç yöne de bağlı değildir; bu yüzden aslında bir hız büyüklüğüdür.",
+        "Dünya yüzeyinden kurtulma hızı 11,186 km/s'dir, yani saatte yaklaşık 40.270 km. Güneş'in yüzeyinden kurtulmak için ise 617,6 km/s gerekir. Formüle bak: kurtulma hızı kütle arttıkça artar, yarıçap küçüldükçe de artar. Aynı kütleyi daha küçük bir hacme sıkıştırırsan yüzeyden kaçmak zorlaşır. Bu fikri kara delikleri konuşurken yeniden kullanacağız. Neden önemli? Bir gök cisminden kalkmanın ne kadar zor olduğunu tek bir sayıyla özetler: aşağıdaki örnekte göreceğin gibi Ay'dan kalkmak Dünya'dan kalkmaktan çok daha düşük hız ister."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Ay'dan kurtulma hızı",
+        "metin": "NASA'ya göre Ay için GM = 4900 km³/s², ortalama yarıçap 1737,4 km. Önce 2GM / r: 2 × 4900 / 1737,4 ≈ 5,641 km²/s². Karekökünü al: √5,641 ≈ 2,38 km/s. NASA'nın Ay bilgi sayfası da 2,38 km/s verir. Dünya'nın 11,19 km/s'siyle kıyasla: Ay'dan kalkmak yaklaşık 4,7 kat daha düşük hız ister. Sonuç: ≈ 2,38 km/s."
+      },
+      "akilda": "v_k = √(2GM/r) = √2 × dairesel hız. Dünya 11,19 km/s, Ay 2,38 km/s, Güneş 617,6 km/s."
+    },
+    {
+      "baslik": "Gelgitler: Ay ve Güneş birlikte çeker",
+      "paragraflar": [
+        "Kıyıda deniz günde iki kez yükselir, iki kez alçalır. Nedeni kütleçekimidir, ama tek başına çekim değil, çekimin farkı. Ay, Dünya'nın kendisine bakan yüzünü merkezinden biraz daha güçlü, karşı yüzünü ise biraz daha zayıf çeker. Bu farka gelgit kuvveti denir. Fark, Dünya'yı Ay doğrultusunda hafifçe uzatmaya çalışır: okyanuslarda biri Ay'a bakan yüzde, biri tam karşı yüzde olmak üzere iki kabarıklık oluşur. Karşı yüzdeki kabarıklık şaşırtıcı gelebilir; orada su, Dünya'nın merkezinden daha az çekildiği için geride kalır.",
+        "Dünya döndükçe bir kıyı bu iki kabarıklığın altından geçer. Ama Ay da yörüngesinde ilerlediği için aynı kıyının Ay'ın altına yeniden gelmesi 24 saat değil, 24 saat 50 dakika sürer; buna Ay günü denir. Bu yüzden çoğu kıyıda bir Ay gününde iki yükselme ve iki alçalma olur ve yükselmeler arasında yaklaşık 12 saat 25 dakika bulunur. Gelgitin saati her gün biraz kaymasının nedeni budur.",
+        "Şimdi önceki örneği hatırla: Güneş Dünya'yı Ay'dan yaklaşık 179 kat güçlü çeker. Buna rağmen gelgitte Ay baskındır. Çünkü gelgit kuvveti uzaklığın karesiyle değil, yaklaşık küpüyle ters orantılıdır; çok uzaktaki Güneş'in Dünya'nın iki yüzüne uyguladığı çekim neredeyse aynıdır. Güneş'in gelgit etkisi Ay'ınkinin yaklaşık %46'sı kadardır; NOAA bunu yaklaşık yarısı diye özetler.",
+        "Ay ile Güneş aynı doğrultuya geldiğinde, yani yeni ay ve dolunayda, iki etki toplanır: yüksek sular daha yüksek, alçak sular daha alçak olur. Buna büyük gelgit (İngilizce spring tide) denir. Yaklaşık bir hafta sonra Güneş ile Ay arasında dik açı olduğunda etkiler kısmen birbirini götürür ve fark en az olur; buna küçük gelgit (neap tide) denir. Her kameri ayda ikişer kez yaşanırlar. Ay Dünya'ya en yakın noktasındayken gelgit farkı ortalamanın üstüne çıkar. Etkinin büyüklüğü kıyının biçimine çok bağlıdır: Fundy Körfezi'ndeki Burntcoat Head'de 16,3 metrelik fark ölçülmüştür, büyük göllerde ise yalnızca 1–4 cm kadardır.",
+        "Gelgitlerin uzun vadeli bir bedeli de var. Kabarıklıklarla Dünya arasındaki sürtünme Dünya'nın dönüşünü yavaşlatır: son 600 milyon yılda günün uzunluğu yaklaşık 2 saat arttı. Aynı etkileşim Ay'ı yılda yaklaşık 3,8 cm uzaklaştırır. Ay'ın hep aynı yüzünü bize göstermesi de gelgit etkisinin sonucudur; ayrıntılar Ay dersinde."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Güneş'in gelgit etkisi Ay'ınkinin ne kadarı?",
+        "metin": "Gelgit etkisi ∝ M / d³. Kütle oranı (Güneş / Ay) ≈ 2,707 × 10⁷. Uzaklık oranı (Ay / Güneş) ≈ 0,002570; bu kez küpünü al: 0,002570³ ≈ 1,697 × 10⁻⁸. Çarp: 2,707 × 10⁷ × 1,697 × 10⁻⁸ ≈ 0,46. Sonuç: Güneş'in gelgit etkisi Ay'ınkinin yaklaşık %46'sıdır. Çekimde 179 kat önde olan Güneş, gelgitte yarı yarıya geride kalır; fark uzaklığın kare yerine küple girmesinden gelir."
+      },
+      "akilda": "Gelgiti çekimin kendisi değil, Dünya'nın iki yüzü arasındaki çekim farkı yapar ve bu fark uzaklığın küpüyle azalır. Güneş'in etkisi Ay'ınkinin ~%46'sıdır; yeni ay ve dolunayda gelgit en büyüktür."
+    },
+    {
+      "baslik": "Lagrange noktaları: uzayda park yerleri",
+      "paragraflar": [
+        "İki büyük cisim, örneğin Güneş ve Dünya, birbirinin çevresinde dolanırken uzayda beş özel nokta oluşur. Bu noktalarda iki cismin çekimi, küçük bir cismi onlarla birlikte aynı düzende dolandırmak için gereken merkezcil kuvveti tam olarak sağlar. Küçük cisim, örneğin bir uzay aracı, Güneş'e ve Dünya'ya göre aynı konumda kalır. Bunlara Lagrange noktaları denir ve L1'den L5'e kadar numaralanır. Doğrultu üzerindeki ilk üçünü İsviçreli matematikçi Leonhard Euler 1750 civarında buldu; kalan ikisini (L4 ve L5) Joseph-Louis Lagrange ekledi ve 1772 tarihli çalışmasında bu çözümleri gösterdi.",
+        "Güneş–Dünya sisteminde L1 ve L2, Dünya'dan yaklaşık 1,5 milyon km uzaktadır. L1, Dünya ile Güneş arasındadır; ESA bunu Güneş'e olan yolun yaklaşık yüzde biri diye anlatır. Güneş'i kesintisiz izlemek için idealdir: ESA ile NASA'nın Güneş gözlemevi SOHO oradadır, DSCOVR da Haziran 2015'ten beri L1 çevresinde dolanır. L2 ise Güneş'ten bakınca Dünya'nın tam arkasındadır. Herschel, Planck, Gaia ve James Webb Uzay Teleskobu L2 bölgesini kullandı ya da kullanıyor.",
+        "L1 neden Güneş'i izlemek için iyidir? ESA'ya göre Güneş rüzgârı, yani Güneş'ten akan yüklü parçacıklar, L1'e Dünya'ya varmadan yaklaşık bir saat önce ulaşır; oradaki araç bize erken haber verir. L2'nin avantajı başkadır. Orada dolanan bir araç Dünya'nın çevresinde dönmediği için Dünya'nın gölgesine girip çıkmaz; sıcaklığı bir sarsılıp bir düzelmez. NASA, Webb için asıl nedeni şöyle anlatır: Güneş, Dünya ve Ay'ın hepsi aynı yönde kalır, böylece teleskobun güneşliği üçünün ışığını ve ısısını birden engelleyebilir. Webb'in aletleri çok soğukta çalışmak zorundadır. Webb tam L2'nin üstünde durmaz, onun çevresinde yaklaşık 6 ayda bir tur atar; başlangıç yörüngesine varması yaklaşık 30 gün sürdü. Üçüncü nokta L3 ise Güneş'in arkasında, Dünya'nın tam karşısındadır; oradaki bir cisim Dünya'dan görülemez.",
+        "Bu noktaların hepsi aynı derecede kararlı değildir. L1, L2 ve L3'teki bir araç tepenin üstündeki bir top gibidir: biraz itilirse uzaklaşır; bu yüzden araçlar konumlarını korumak için düzenli olarak küçük motor ateşlemeleri yapar. L4 ve L5 ise büyük bir kâsenin dibindeki top gibidir: oradaki cisimler kendiliğinden kalır. Bunun için büyük cismin kütlesi küçüğünkinin en az yaklaşık 25 katı olmalıdır. Bu yüzden toz ve asteroitler L4 ve L5 çevresinde birikir. Güneş–Jüpiter sisteminin bu noktalarında bir milyondan fazla Truva asteroiti olduğu tahmin edilir; Güneş–Dünya sisteminde de en az iki tane bilinir: 2010 TK7 ve 2020 XL5."
+      ],
+      "ornek": {
+        "baslik": "Örnek: L2'deki Webb'e sinyal ne kadar sürede gider?",
+        "metin": "L2 Dünya'dan yaklaşık 1,5 milyon km = 1,5 × 10⁹ m uzakta. Işık hızı 299.792.458 m/s ≈ 3,0 × 10⁸ m/s. Süre = uzaklık / hız = 1,5 × 10⁹ / 3,0 × 10⁸ ≈ 5 s. Gidiş-dönüş yaklaşık 10 saniye eder. Kıyas için Güneş'e uzaklığın yüzde biri: 149,6 milyon km / 100 ≈ 1,5 milyon km; ESA'nın L1 tarifi NASA'nın 1,5 milyon km değeriyle uyumlu. Sonuç: tek yön yaklaşık 5 saniye."
+      },
+      "akilda": "Beş Lagrange noktasında küçük bir cisim iki büyük cisimle birlikte aynı düzende dolanır. L1 ve L2 Dünya'dan ~1,5 milyon km uzakta, gözlemevleri için ideal; L4 ve L5 kararlıdır, Truva asteroitleri orada birikir."
+    }
+  ],
+  "formuller": [
+    { "ad": "Kepler III (Güneş Sistemi, pratik biçim)", "ifade": "P² = a³", "aciklama": "P: yörünge dönemi (yıl), a: yarı büyük eksen (AB). Yalnız Güneş'in çevresinde dolanan cisimler için ve bu birimlerle geçerlidir." },
+    { "ad": "Newton'un evrensel çekim yasası", "ifade": "F = G × M × m / r²", "aciklama": "F: kuvvet (newton), M ve m: kütleler (kg), r: merkezler arası uzaklık (m), G = 6,674 × 10⁻¹¹ m³ kg⁻¹ s⁻². Küresel cisimler için merkezler arası uzaklık kullanılır." },
+    { "ad": "Kepler III – Newton biçimi", "ifade": "a³ / T² = G(M + m) / 4π²", "aciklama": "a: yarı büyük eksen (m), T: dönem (s), M + m: iki cismin toplam kütlesi (kg). T ve a ölçülürse toplam kütle bulunur; her yörüngeye uygulanır." },
+    { "ad": "Dairesel yörünge hızı", "ifade": "v = √(GM / r)", "aciklama": "v: hız (m/s ya da km/s), M: merkezdeki cismin kütlesi, r: merkezden uzaklık. GM'yi km³/s², r'yi km alırsan v km/s çıkar. Dairesel yörünge için geçerlidir." },
+    { "ad": "Kurtulma hızı", "ifade": "v_k = √(2GM / r) = √2 × v", "aciklama": "v_k: kurtulma hızı, r: merkezden uzaklık (yüzeyden kalkış için yarıçap). Kaçan cismin küçük kütlesinden ve yönden bağımsızdır; hava direnci yok sayılır." },
+    { "ad": "Gelgit etkisinin ölçeklenmesi", "ifade": "Gelgit etkisi ∝ M / d³", "aciklama": "M: gelgiti yaratan cismin kütlesi, d: ona uzaklık. Mutlak değer değil, iki cismi kıyaslamak için kullanılır (ör. Güneş / Ay ≈ 0,46)." }
+  ],
+  "anahtar_sayilar": [
+    { "deger": "1609, 1619, 1621", "aciklama": "Astronomia nova (I. yasa), Harmonice Mundi (III. yasa), Epitome (II. yasanın bugünkü biçimi)", "kaynak_url": "https://en.wikipedia.org/wiki/Kepler%27s_laws_of_planetary_motion" },
+    { "deger": "Merkür 88 gün, Dünya 365 gün, Satürn 10.759 gün", "aciklama": "NASA'nın Kepler III örneği", "kaynak_url": "https://science.nasa.gov/resource/orbits-and-keplers-laws/" },
+    { "deger": "9,53707032 AB; 10.755,699 gün (29,447 Dünya yılı)", "aciklama": "Satürn'ün yarı büyük ekseni ve yıldızıl dönemi", "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturnfact.html" },
+    { "deger": "e = 0,0167; günberi 147,095, günöte 152,100 milyon km; hız 29,29–30,29 km/s", "aciklama": "Dünya'nın yörüngesi", "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html" },
+    { "deger": "5 Temmuz 1687", "aciklama": "Principia'nın ilk yayımı", "kaynak_url": "https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation" },
+    { "deger": "1798", "aciklama": "Cavendish deneyi: kütleçekiminin laboratuvarda ilk ölçümü", "kaynak_url": "https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation" },
+    { "deger": "6,674 30 × 10⁻¹¹ m³ kg⁻¹ s⁻²", "aciklama": "Evrensel çekim sabiti G (CODATA 2022)", "kaynak_url": "https://physics.nist.gov/cgi-bin/cuu/Value?bg" },
+    { "deger": "GM = 0,39860 × 10⁶ km³/s²; R = 6371 km; M = 5,9722 × 10²⁴ kg", "aciklama": "Dünya'nın kütleçekim parametresi, ortalama yarıçapı ve kütlesi", "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html" },
+    { "deger": "a = 384.400 km; 27,3217 gün; M = 0,07346 × 10²⁴ kg; kurtulma 2,38 km/s", "aciklama": "Ay'ın yörüngesi, kütlesi ve kurtulma hızı", "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html" },
+    { "deger": "11,186 km/s", "aciklama": "Dünya'dan kurtulma hızı", "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html" },
+    { "deger": "617,6 km/s; M = 1,9884 × 10³⁰ kg", "aciklama": "Güneş'ten kurtulma hızı ve Güneş'in kütlesi", "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html" },
+    { "deger": "saniyede 5 mil; ~90 dakika; günde 16 tur", "aciklama": "Uluslararası Uzay İstasyonu", "kaynak_url": "https://www.nasa.gov/international-space-station/space-station-facts-and-figures/" },
+    { "deger": "%46 (Wikipedia Tidal force: ~%45; NOAA: yaklaşık yarısı)", "aciklama": "Güneş'in gelgit etkisinin Ay'ınkine oranı", "kaynak_url": "https://en.wikipedia.org/wiki/Tide" },
+    { "deger": "24 sa 50 dk; yükselmeler arası 12 sa 25 dk", "aciklama": "Ay günü ve yarım günlük gelgit aralığı", "kaynak_url": "https://oceanservice.noaa.gov/education/tutorial_tides/tides05_lunarday.html" },
+    { "deger": "~1,5 milyon km", "aciklama": "Güneş–Dünya L1 ve L2 noktalarının Dünya'ya uzaklığı", "kaynak_url": "https://en.wikipedia.org/wiki/Lagrange_point" },
+    { "deger": "~1750 (Euler, L1–L3); 1772 (Lagrange)", "aciklama": "Lagrange noktalarının bulunuşu", "kaynak_url": "https://en.wikipedia.org/wiki/Lagrange_point" }
+  ],
+  "sozluk": [
+    { "terim": "Elips", "tanim": "İki sabit noktaya (odak) uzaklıkları toplamı sabit olan noktaların oluşturduğu kapalı, basık daire biçimli eğri." },
+    { "terim": "Dış merkezlik", "tanim": "Bir elipsin ne kadar basık olduğunu gösteren sayı; 0 daire demektir, 1'e yaklaştıkça elips uzar." },
+    { "terim": "Yarı büyük eksen (a)", "tanim": "Elipsin en uzun çapının yarısı; yörüngenin ortalama büyüklüğünü verir." },
+    { "terim": "Günberi / günöte", "tanim": "Güneş'in çevresinde dolanan bir cismin yörüngesinde Güneş'e en yakın ve en uzak olduğu noktalar." },
+    { "terim": "Evrensel çekim sabiti (G)", "tanim": "Newton'un çekim yasasındaki, kütle ve uzaklıktan kuvvete geçişi sağlayan sabit; 6,674 × 10⁻¹¹ m³ kg⁻¹ s⁻²." },
+    { "terim": "Merkezcil kuvvet", "tanim": "Bir cismi düz gitmek yerine bir merkezin çevresinde dönmeye zorlayan, merkeze yönelik kuvvet." },
+    { "terim": "Kurtulma hızı", "tanim": "Bir cismin bir gök cisminin çekiminden, ek itiş olmadan, tamamen kurtulması için gereken en düşük hız." },
+    { "terim": "Gelgit kuvveti", "tanim": "Bir cismin farklı noktalarına uygulanan çekim kuvvetleri arasındaki fark; uzaklığın küpüyle azalır." },
+    { "terim": "Büyük gelgit / küçük gelgit", "tanim": "Yeni ay ve dolunayda Güneş ile Ay'ın etkileri toplanınca oluşan en geniş gelgit (spring tide) ve ikisi dik açıdayken oluşan en dar gelgit (neap tide)." },
+    { "terim": "Lagrange noktası", "tanim": "İki büyük cismin çevresinde, küçük bir cismin onlarla aynı düzende dolanabildiği beş özel noktadan biri." },
+    { "terim": "Truva asteroiti", "tanim": "Bir gezegenin yörüngesinde, L4 ya da L5 noktası çevresinde dolanan asteroit." }
+  ],
+  "defter_notu": [
+    "Kepler I: yörünge elips, Güneş bir odakta. Dünya: e = 0,0167 (147,1–152,1 milyon km).",
+    "Kepler II: eşit zamanda eşit alan → günberide hızlı, günötede yavaş (Dünya 30,29 / 29,29 km/s).",
+    "Kepler III: P² = a³ (yıl, AB). Mars 1,524 AB → 1,88 yıl; Satürn 9,54 AB → 29,4 yıl.",
+    "Newton (1687): F = G M m / r², G = 6,674 × 10⁻¹¹. Uzaklık 2 kat → kuvvet 1/4.",
+    "Newton biçimi: a³ / T² = G(M + m) / 4π² → dönem + uzaklık = kütle. Ay'dan Dünya ≈ 6,0 × 10²⁴ kg.",
+    "Dairesel hız v = √(GM/r): yeryüzü hizasında ≈ 7,9 km/s; ISS ≈ 8 km/s, ~90 dk'da bir tur.",
+    "Kurtulma hızı = √2 × dairesel hız. Dünya 11,19; Ay 2,38; Güneş 617,6 km/s.",
+    "Gelgit ∝ M / d³. Güneş çekimde Ay'ın ~179 katı, gelgitte ~%46'sı. Yeni ay + dolunay = büyük gelgit.",
+    "Ay günü 24 sa 50 dk → gelgit her gün ~50 dk kayar; yükselmeler ~12 sa 25 dk arayla.",
+    "Lagrange: 5 nokta. L1, L2 Dünya'dan ~1,5 milyon km (SOHO L1, Webb L2). L4, L5 kararlı → Truva asteroitleri."
+  ],
+  "sorular": [
+    { "soru": "Yarı büyük ekseni 4 AB olan bir asteroit Güneş'in çevresini kaç yılda dolanır?", "cevap": "P² = a³ = 4³ = 64, P = √64 = 8 yıl." },
+    { "soru": "İki cisim arasındaki uzaklık üç katına çıkarsa aralarındaki çekim kuvveti nasıl değişir?", "cevap": "Kuvvet uzaklığın karesiyle ters orantılı olduğundan 1/3² = 1/9'una düşer." },
+    { "soru": "Bir gezegenin kütlesi aynı kalıp yarıçapı dörtte birine inseydi yüzeyden kurtulma hızı ne olurdu?", "cevap": "v_k ∝ √(1/r) olduğundan √4 = 2 katına çıkardı." },
+    { "soru": "Dünya günötedeyken neden günberidekinden daha yavaş hareket eder? Hangi yasa bunu söyler?", "cevap": "Kepler'in ikinci yasası (eşit alanlar). Günötede Güneş'e bağlayan doğru daha uzundur; eşit zamanda eşit alan taramak için gezegenin daha kısa bir yay alması, yani daha yavaş gitmesi gerekir. Dünya'nın hızı 30,29 km/s'den 29,29 km/s'ye iner." },
+    { "soru": "Güneş Dünya'yı Ay'dan çok daha güçlü çektiği hâlde gelgitleri neden çoğunlukla Ay belirler?", "cevap": "Gelgiti çekimin kendisi değil, Dünya'nın iki yüzü arasındaki çekim farkı yapar ve bu fark uzaklığın küpüyle azalır. Güneş çok uzakta olduğu için Dünya'nın iki yüzüne neredeyse aynı kuvveti uygular; gelgit etkisi Ay'ınkinin yalnızca ~%46'sıdır." },
+    { "soru": "Bir sabah gelgit saat 08.00'de en yüksekse, ertesi sabahki en yüksek su yaklaşık ne zaman olur?", "cevap": "Ay günü 24 saat 50 dakika olduğu için yaklaşık 50 dakika sonra, yani 08.50 civarında. (Arada, 12 saat 25 dakika sonra, akşam 20.25 civarında bir yüksek su daha olur.)" },
+    { "soru": "Bir aydaki dönem ve yörünge yarıçapını ölçüyorsun. Bu iki ölçümle neyi bulabilirsin, neyi bulamazsın?", "cevap": "Newton biçimiyle a³ / T² = G(M + m) / 4π² kullanarak gezegen ile ayın toplam kütlesini bulursun; ay küçükse bu neredeyse gezegenin kütlesidir. Ama ayın kendi kütlesini ayrı olarak bulamazsın, çünkü formül yalnız toplamı verir." },
+    { "soru": "James Webb Uzay Teleskobu neden L2 noktasına yerleştirildi, neden L4 değil? Kısa yorumla.", "cevap": "L2'de Güneş, Dünya ve Ay hep aynı yönde kalır; bu ısıya duyarlı bir gözlemevi için kolaylık sağlar ve Dünya'ya ~1,5 milyon km ile görece yakındır. L2 kararsız olduğu için düzenli küçük motor ateşlemeleri gerekir. L4 kararlıdır ama Dünya'dan çok daha uzaktadır (Güneş–Dünya uzaklığı kadar); bu dersteki kaynaklar Webb için L4'ün neden seçilmediğini ayrıca tartışmıyor, bu cevap yalnız yukarıdaki özelliklerden çıkarılmış bir yorumdur." }
+  ],
+  "kaynaklar": [
+    { "ad": "NASA Science – Orbits and Kepler's Laws", "url": "https://science.nasa.gov/resource/orbits-and-keplers-laws/" },
+    { "ad": "Wikipedia – Kepler's laws of planetary motion", "url": "https://en.wikipedia.org/wiki/Kepler%27s_laws_of_planetary_motion" },
+    { "ad": "Wikipedia – Newton's law of universal gravitation", "url": "https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation" },
+    { "ad": "Wikipedia – Newton's cannonball", "url": "https://en.wikipedia.org/wiki/Newton%27s_cannonball" },
+    { "ad": "NIST CODATA – Newtonian constant of gravitation", "url": "https://physics.nist.gov/cgi-bin/cuu/Value?bg" },
+    { "ad": "Wikipedia – Circular orbit", "url": "https://en.wikipedia.org/wiki/Circular_orbit" },
+    { "ad": "Wikipedia – Escape velocity", "url": "https://en.wikipedia.org/wiki/Escape_velocity" },
+    { "ad": "NASA NSSDCA – Earth Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html" },
+    { "ad": "NASA NSSDCA – Moon Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html" },
+    { "ad": "NASA NSSDCA – Saturn Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturnfact.html" },
+    { "ad": "NASA NSSDCA – Sun Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html" },
+    { "ad": "NASA – Space Station Facts and Figures", "url": "https://www.nasa.gov/international-space-station/space-station-facts-and-figures/" },
+    { "ad": "NOAA Ocean Service – Tides tutorial: Variations (spring/neap)", "url": "https://oceanservice.noaa.gov/education/tutorial_tides/tides06_variations.html" },
+    { "ad": "NOAA Ocean Service – Tides tutorial: The lunar day", "url": "https://oceanservice.noaa.gov/education/tutorial_tides/tides05_lunarday.html" },
+    { "ad": "NOAA Ocean Service – Tides tutorial: Gravity, inertia and the two bulges", "url": "https://oceanservice.noaa.gov/education/tutorial_tides/tides03_gravity.html" },
+    { "ad": "Wikipedia – Tide", "url": "https://en.wikipedia.org/wiki/Tide" },
+    { "ad": "Wikipedia – Tidal force", "url": "https://en.wikipedia.org/wiki/Tidal_force" },
+    { "ad": "ESA – What are Lagrange points?", "url": "https://www.esa.int/Science_Exploration/Space_Science/What_are_Lagrange_points" },
+    { "ad": "NASA Science – Webb Orbit (Lagrange noktaları)", "url": "https://science.nasa.gov/mission/webb/orbit/" },
+    { "ad": "Wikipedia – Lagrange point", "url": "https://en.wikipedia.org/wiki/Lagrange_point" },
+    { "ad": "NASA JPL SSD – Astrodynamic Parameters (Güneş GM)", "url": "https://ssd.jpl.nasa.gov/astro_par.html" },
+    { "ad": "NASA NSSDCA – Planetary Fact Sheet (yörünge hızları)", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/" }
+  ]
+}

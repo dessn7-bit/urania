@@ -1,0 +1,272 @@
+{
+  "id": "d16",
+  "unite": "yildizlar",
+  "yeni": true,
+  "baslik": "Kara delikler ve kütleçekim dalgaları: uzay-zamanın uç noktaları",
+  "ozet": "Kara delik, ışığın bile kaçamadığı kadar sıkışmış kütledir; sınırı olay ufkudur ve boyutu yalnızca kütleye bağlıdır. Bu derste Schwarzschild yarıçapını hesaplayacak, galaksimizin merkezindeki dev kara deliğin yıldız yörüngeleriyle nasıl tartıldığını, ilk kara delik fotoğraflarının nasıl çekildiğini ve iki kara deliğin çarpışmasından gelen kütleçekim dalgalarının nasıl duyulduğunu öğreneceksin.",
+  "on_bilgi": ["d3", "d6"],
+  "bolumler": [
+    {
+      "baslik": "Işığın bile kaçamadığı yer",
+      "paragraflar": [
+        "Bir taşı yukarı fırlattığında geri düşer. Daha hızlı atarsan daha yükseğe çıkar. Yeterince hızlı atarsan hiç geri dönmez; bu hıza kaçış hızı denir. Dünya yüzeyinden kaçış hızı saniyede yaklaşık 11,2 km, Güneş'in yüzeyinden ise yaklaşık 618 km'dir. Kaçış hızı iki şeye bağlıdır: cismin kütlesine ve merkezine ne kadar uzakta durduğuna. Kütleyi aynı tutup cismi küçültürsen yüzeyde dururken merkeze yaklaşırsın, çekim güçlenir ve kaçış hızı artar.",
+        "Bu düşünce çok eskidir. 1783'te John Michell, Güneş'le aynı yoğunlukta ama 500 kat büyük bir yıldızın kendi ışığını tutacağını hesapladı. Böyle bir yıldız görünmez olurdu, ama yanındaki görünür bir yıldızın hareketinden varlığı anlaşılabilirdi. Bugün kara delikleri tam da böyle buluyoruz. Michell'in fikri Newton fiziğine dayanıyordu. Kütleçekimi uzay ve zamanın eğriliği olarak anlatan genel görelilikte ilk tam çözümü 1916'da Karl Schwarzschild buldu.",
+        "Uzun süre kara delikler, matematiğin bir garipliği sayıldı. Roger Penrose, Einstein'ın ölümünden on yıl sonra, Ocak 1965'te kara deliklerin gerçekten oluşabileceğini gösterdi. Nobel Komitesi'nin ifadesiyle kara delik oluşumu genel göreliliğin sağlam bir öngörüsüdür. Penrose bu çalışmasıyla 2020 Nobel Fizik Ödülü'nün yarısını aldı. Yani bir kara delik, yeterince kütle yeterince küçük bir bölgeye sıkıştığında doğanın kaçınılmaz sonucudur; d6'da gördüğün gibi, nötronların bile taşıyamadığı bir yıldız çekirdeği bu sonuca gider."
+      ],
+      "akilda": "Kara delik, kaçış hızının ışık hızını aştığı kadar sıkışmış kütledir. Fikri 1783'te Michell ortaya attı, genel görelilikteki çözümü 1916'da Schwarzschild buldu, gerçekten oluşabileceğini 1965'te Penrose gösterdi."
+    },
+    {
+      "baslik": "Olay ufku ve Schwarzschild yarıçapı",
+      "paragraflar": [
+        "Kara deliğin çevresinde, içinden hiçbir şeyin, ışığın bile geri çıkamadığı bir sınır vardır: olay ufku. Adı yerindedir; ufkun ötesinde olan hiçbir olay dışarıdaki birine ulaşamaz. Dönmeyen bir kara delik için olay ufkunun yarıçapına Schwarzschild yarıçapı denir ve formülü kısadır: Rs = 2GM/c². Burada G kütleçekim sabiti, M kara deliğin kütlesi, c ışık hızıdır. Sözle: yarıçap kütleyle doğru orantılıdır. Kütle iki katına çıkarsa olay ufkunun yarıçapı da iki katına çıkar.",
+        "Pratik bir kısayol var. Wikipedia'nın tablosuna göre Güneş'in Schwarzschild yarıçapı yaklaşık 2,95 km. O halde herhangi bir kara delik için Rs ≈ 2,95 km × (kaç Güneş kütlesi olduğu). Güneş'i olduğu gibi bir kara deliğe sıkıştırabilseydin yaklaşık 3 km yarıçaplı bir küre elde ederdin; Dünya'yı sıkıştırsaydın yaklaşık 9 mm, yani bir misket boyutu. Elbette Güneş de Dünya da kara delik olamaz; yeterince kütleleri yok ki kendiliklerinden bu kadar sıkışsınlar. Bu yalnızca ölçeği hissetmek için bir düşünce deneyi.",
+        "Bir yanılgıyı da düzeltelim. Kara delik, her şeyi uzaktan emen bir elektrik süpürgesi değildir. Ufkun çok dışında, kütleçekimi aynı kütledeki bir yıldızınkiyle aynıdır. Güneş bir anda aynı kütlede bir kara deliğe dönüşse, Dünya karanlıkta kalırdı ama yörüngesi değişmezdi; çünkü d3'te gördüğün yörünge yasaları yalnızca merkezdeki kütleye ve uzaklığa bakar. Tehlike ancak çok yaklaşınca başlar."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Kütleli bir kara deliğin olay ufku ne büyüklükte?",
+        "metin": "Kısayol: Rs ≈ 2,95 km × (M/M☉). 10 Güneş kütleli bir kara delik için Rs ≈ 2,95 × 10 = 29,5 km, yani yaklaşık 30 km (Wikipedia'nın değeriyle uyumlu). Bu, olay ufkunun çapının yaklaşık 60 km olması demek; içine on Güneş kütlesi sığmış, bir şehir ölçeğinde bir küre. Şimdi 3,5 Güneş kütleli bir cisim alalım: Rs ≈ 2,95 × 3,5 ≈ 10,3 km. Sonuç: 10 M☉'lik kara deliğin olay ufku yarıçapı yaklaşık 30 km, 3,5 M☉'lik olanınki yaklaşık 10 km."
+      },
+      "akilda": "Olay ufku, içinden hiçbir şeyin çıkamadığı sınırdır. Yarıçapı Rs = 2GM/c², pratikte her Güneş kütlesi için yaklaşık 3 km."
+    },
+    {
+      "baslik": "Zaman yavaşlar, cisim uzar",
+      "paragraflar": [
+        "Genel göreliliğin en şaşırtıcı sonucu şudur: kütleçekimi güçlendikçe zaman yavaş akar. Bu bilim kurgu değil, cebindeki telefonun her gün kullandığı bir düzeltme. GPS uydularındaki saatler yerden uzakta, daha zayıf çekimde oldukları için günde yaklaşık 45,8 mikrosaniye hızlı işler. Öte yandan yörüngedeki hızları yüzünden, özel göreliliğe göre günde yaklaşık 7,2 mikrosaniye yavaş işlerler. Net fark günde yaklaşık 38,6 mikrosaniye ileri. Mühendisler bunu düzeltmeseydi konum hatası günde yaklaşık 11,4 km birikirdi.",
+        "Dünya'nın çekimi bu kadar küçük bir fark yaratıyorsa kara deliğin yanında ne olur? NASA'ya göre bir kara deliğe düşen bir cisim, uzaktan izleyen birine olay ufkuna yaklaştıkça giderek yavaşlıyor ve sonunda ufkun üstünde donmuş gibi görünür. Düşen kişi ise kendi açısından ufku geçip gider. İki gözlemcinin anlattıkları farklıdır ama ikisi de kendi açısından doğrudur; zaman, kütleçekimine göre farklı akar.",
+        "İkinci etki gelgittir. d3'te Ay'ın Dünya'nın yakın tarafını uzak tarafından biraz daha güçlü çektiğini ve okyanusları kabarttığını görmüştün. Kara deliğin yanında bu fark devleşir. Ayakları önde düşen bir astronotun ayakları başından çok daha güçlü çekilir; beden boyuna uzar, yanlardan sıkışır. Buna spagettileşme denir. İşin ilginç yanı, Wikipedia'ya göre bu etkinin nerede öldürücü olduğu kara deliğin kütlesine bağlıdır. Yıldız kütleli kara deliklerde spagettileşme olay ufkundan önce başlar. Galaksi merkezlerindeki dev kara deliklerde ise öldürücü nokta ufkun içindedir; astronot ufku belirgin bir gelgit hissetmeden geçebilir. Dev kara delik, ufkunda daha nazik bir kara deliktir."
+      ],
+      "akilda": "Güçlü çekimde zaman yavaş akar (GPS bunu her gün düzeltir). Kara deliğe yaklaşan cisim gelgitle boyuna uzar; küçük kara deliklerde bu ufuktan önce, dev kara deliklerde ufuktan sonra öldürücü olur."
+    },
+    {
+      "baslik": "Yıldız kütleli kara delikler: görünmeyeni tartmak",
+      "paragraflar": [
+        "Işık yaymayan bir şeyi nasıl bulursun? Michell'in 1783'te önerdiği gibi: yanındaki görünür cisme bakarak. Bir kara delik bir yıldızla çift sistem oluşturuyorsa, yıldızdan çektiği gaz kara deliğe doğru dönerek düşerken çok ısınır ve X ışını yayar. Bu sistemlere X ışını çiftleri denir. Yıldızın yörünge hareketini ölçersen, d3'teki Kepler yasalarıyla görünmeyen eşin kütlesini hesaplayabilirsin. Kütle, bir nötron yıldızının taşıyabileceğinden fazlaysa geriye tek aday kalır.",
+        "İlk ikna edici örnek Kuğu takımyıldızındaki Cyg X-1 oldu. Giacconi ve ekibinin Uhuru X ışını uydusuyla yaptığı gözlemler, X ışını astronomisi ile kara delikler arasındaki ilk açık bağı kurdu. Optik gözlemciler sonra bir B türü yıldızın görünmeyen bir eşle 5,6 günde bir dolandığını buldu. Hesaplanan kütle en az 3,5 M☉ çıktı; bu, nötron yıldızları için olası üst sınır olan yaklaşık 3 M☉'in üstündeydi. Hızlı parlaklık değişimleriyle birlikte bu, Cyg X-1'de bir kara deliğe işaret etti.",
+        "Bugün ne biliyoruz? Bir derleme makalesine göre kütlesi yaklaşık yüzde 10 doğrulukla ölçülmüş birkaç düzine kara delik var; bunların kütleleri yaklaşık 4 ile 20 M☉ arasında, ortalaması yaklaşık 7 M☉. NASA'ya göre Samanyolu'nda yaklaşık 50 şüpheli ya da doğrulanmış yıldız kütleli kara delik biliniyor, ama galaksimizde 100 milyon kadar olabileceği tahmin ediliyor. Aradaki büyük fark, kara deliklerin çoğunu bulmanın ne kadar zor olduğunu gösterir. NASA iki tür daha anar: kütlesi yaklaşık yüz ile yüz binlerce M☉ arasında olması beklenen ara kütleli kara delikler (adaylar var ama doğrulamak zor) ve evrenin ilk saniyesinde oluşmuş olabilecek ilkel kara delikler (bugüne dek kesin kanıt bulunamadı)."
+      ],
+      "akilda": "Yıldız kütleli kara delikler, çift sistemdeki eş yıldızın hareketinden tartılır; nötron yıldızı sınırını aşan görünmez kütle kara delik demektir. İlk güçlü örnek Cyg X-1'dir."
+    },
+    {
+      "baslik": "Galaksimizin kalbi: Sgr A*",
+      "paragraflar": [
+        "Gökbilimciler 1970'lerden beri Yay takımyıldızı yönünde, galaksimizin merkezinde bir radyo kaynağı olduğunu biliyordu: Sagittarius A*, kısaca Sgr A*. ESO'ya göre yaklaşık 27.000 ışık yılı uzaklıktadır. Yay takımyıldızına baktığında aslında galaksimizin merkezi yönüne bakıyorsun; ama merkezdeki kara deliği hiçbir dürbün ya da amatör teleskop gösteremez, çünkü kara deliğin kendisi ışık yaymaz. Onu tanımanın yolu, çevresindeki yıldızların hareketidir.",
+        "1990'ların başından itibaren Reinhard Genzel ile Andrea Ghez'in yönettiği iki ekip, merkeze en yakın yıldızların hareketini yıllarca izledi. Yıldızlar, görünmeyen tek bir noktanın çevresinde, Kepler yasalarına uyan elips yörüngelerde dönüyordu. Bu yörüngelerden çıkan sonuç: güneş sistemimizden büyük olmayan bir bölgeye yaklaşık dört milyon Güneş kütlesi sığmış. Bunu açıklayabilecek tek makul cisim süper kütleli bir kara deliktir. Genzel ve Ghez, galaksimizin merkezindeki süper kütleli tıkız cismi keşfettikleri için 2020 Nobel Fizik Ödülü'nün diğer yarısını paylaştı.",
+        "Yıldızların en ünlüsü S2'dir. GRAVITY ekibinin 2018 makalesine göre S2 çok basık bir elips üzerinde 16 yılda bir tur atar. Mayıs 2018'de merkeze en yakın noktasından geçti: yaklaşık 120 astronomik birim (AB) uzaklıktan, yani yaklaşık 1400 Schwarzschild yarıçapı ötesinden, saniyede yaklaşık 7.650 km hızla. Ekip bu geçişte, yıldızın ışığının kütleçekimi yüzünden kırmızıya kaydığını, yani genel göreliliğin öngördüğü kütleçekimsel kızıla kaymayı ölçtü. Bir kara deliğin çevresinde Einstein'ın kuramı bir kez daha sınavı geçti."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Sgr A*'ın olay ufku ne büyüklükte?",
+        "metin": "Kütle yaklaşık 4 milyon M☉ = 4×10⁶ M☉. Kısayolla Rs ≈ 2,95 km × 4×10⁶ = 11,8×10⁶ km, yani yaklaşık 11,8 milyon km. Wikipedia'nın verdiği değer yaklaşık 12 milyon km; uyumlu. Karşılaştırma: S2'nin en yakın geçişi yaklaşık 1400 Rs idi. 1400 × 11,8 milyon km ≈ 16.500 milyon km, yani yaklaşık 1,65×10¹⁰ km. Sonuç: Sgr A*'ın olay ufku yarıçapı yaklaşık 12 milyon km; S2 ondan bin kattan fazla uzaktan, ama yine de saniyede 7.650 km hızla geçti."
+      },
+      "akilda": "Galaksimizin merkezinde yaklaşık 4 milyon M☉'lik bir kara delik, Sgr A*, vardır. Kütlesi, çevresinde dönen S2 gibi yıldızların yörüngelerinden ölçüldü; bu çalışma 2020 Nobel'ini getirdi."
+    },
+    {
+      "baslik": "Kara deliğin gölgesini fotoğraflamak",
+      "paragraflar": [
+        "Kara deliğin kendisi karanlıktır, fotoğrafı çekilemez. Ama çevresinde dönen sıcak gaz parlar ve kara deliğin kütleçekimi bu ışığı büker. Sonuçta parlak bir halkanın ortasında karanlık bir bölge, bir gölge görülür. Sorun boyuttur: en büyük kara delikler bile çok uzaktadır ve gökte çok küçük görünür. ESO'nun benzetmesiyle Sgr A*'ın gökteki boyutu, Ay'ın üstüne konmuş bir simit kadardır. d12'de bir teleskobun ayırma gücünün açıklığıyla arttığını görmüştün. Bu kadar küçük bir şeyi seçmek için Dünya büyüklüğünde bir teleskop gerekir.",
+        "Olay Ufku Teleskobu (EHT) tam olarak bunu yaptı. Dünya'nın farklı yerlerindeki sekiz radyo gözlemevi aynı anda aynı hedefe bakıp verilerini birleştirerek Dünya büyüklüğünde sanal bir teleskop oluşturdu. Bu tekniğe interferometri denir. Gözlemler 2017'de, 1,3 mm dalga boyunda yapıldı. 10 Nisan 2019'da 200'den fazla araştırmacıdan oluşan ekip ilk kara delik görüntüsünü yayımladı. Hedef, Başak galaksi kümesindeki dev M87 galaksisinin merkeziydi: 55 milyon ışık yılı uzaklıkta, kütlesi Güneş'in 6,5 milyar katı olan bir kara delik. Görüntüde karanlık merkezli bir halka vardı ve ESO'ya göre ayrıntılar kuramsal beklentiyle şaşırtıcı ölçüde uyuşuyordu.",
+        "Kendi kara deliğimizin görüntüsü 12 Mayıs 2022'de geldi; 80 kurumdan 300'ü aşkın araştırmacı çalıştı. Daha yakın olmasına rağmen daha zordu. ESO'nun açıklamasına göre M87'deki gaz kara deliğin çevresini günlerle haftalar arasında dolaşırken, çok daha küçük Sgr A*'ın çevresinde bir turu dakikalar içinde tamamlar; yani gözlem sırasında görüntü sürekli değişir. İki görüntü birbirine çok benzer, oysa Samanyolu'nun kara deliği M87'dekinden bin kattan fazla küçük ve hafiftir. Halkanın boyutu Einstein'ın genel göreliliğinin öngörüsüyle uyumludur."
+      ],
+      "ornek": {
+        "baslik": "Örnek: M87'nin kara deliği ne kadar büyük?",
+        "metin": "Kütle 6,5 milyar M☉ = 6,5×10⁹ M☉. Kısayolla Rs ≈ 2,95 km × 6,5×10⁹ ≈ 19,2×10⁹ km ≈ 1,9×10¹⁰ km. Wikipedia bunu yaklaşık 130 AB olarak verir; yani olay ufkunun yarıçapı Güneş–Dünya uzaklığının yaklaşık 130 katı. Kütle oranı: 6,5×10⁹ ÷ 4×10⁶ ≈ 1.600. Sonuç: M87'nin kara deliğinin olay ufku yarıçapı yaklaşık 1,9×10¹⁰ km (≈130 AB) ve Sgr A*'tan yaklaşık 1.600 kat büyük."
+      },
+      "akilda": "EHT, sekiz radyo gözlemevini birleştirip Dünya boyunda sanal bir teleskop kurdu; 2019'da M87'nin, 2022'de Sgr A*'ın gölge görüntüsünü yayımladı. İkisi de genel göreliliğin öngörüsüyle uyumlu."
+    },
+    {
+      "baslik": "Kütleçekim dalgaları: uzay-zamanın titreşimi",
+      "paragraflar": [
+        "Durgun bir göle taş atınca halkalar yayılır. Genel göreliliğe göre kütleli cisimler hızla hareket ettiğinde uzay-zamanın kendisinde de dalgalar yayılır; bunlara kütleçekim dalgaları denir. Albert Einstein bu dalgaların varlığını 1916'da öngördü. Bir dalga geçerken uzay bir yönde biraz uzar, ona dik yönde biraz kısalır, sonra tersi olur. Benzetmenin sınırı şu: göl dalgası suyun içinde ilerler, kütleçekim dalgası ise içinde her şeyin bulunduğu uzayın kendisini esnetir ve ışık hızında yol alır.",
+        "Etki inanılmaz küçüktür. İlk dolaylı kanıt 1974'te geldi: Hulse ve Taylor bir çift atarca buldu. Bu sistemin yörüngesindeki değişim, sistemin kütleçekim dalgalarıyla enerji yaydığını gösteriyordu. Hulse ve Taylor bu gözlem için 1993 Nobel Fizik Ödülü'nü aldı. Ama dalgayı doğrudan yakalamak için başka bir araç gerekiyordu.",
+        "O araç LIGO'dur. ABD'de biri Washington eyaletinin Hanford'unda, öbürü Louisiana'nın Livingston'ında iki gözlemevi vardır. Her biri L biçimli, kolları 4 km uzunluğunda bir lazer interferometresidir. Lazer ışığı ikiye bölünür, iki kolda gidip gelir ve yeniden birleşir. Bir kütleçekim dalgası geçince bir kol biraz uzar, öbürü biraz kısalır ve birleşen ışığın deseni değişir. Kollardaki değişim protonun çapının on binde birinden, yaklaşık 10⁻¹⁹ metreden küçük olsa bile ölçülebilir. İki gözlemevi birbirinden yaklaşık 1.865 mil, yani yaklaşık 3.000 km uzaktadır. Avrupa'nın Virgo dedektörü İtalya'da, Pisa yakınındaki Cascina ovasındadır."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Bir kütleçekim dalgası LIGO'nun kolunu ne kadar oynatır?",
+        "metin": "Dalganın gücü genlik (h) ile ölçülür: h = ΔL / L, yani boydaki değişimin boya oranı. GW150914'ün en güçlü anında h yaklaşık 10⁻²¹ idi. LIGO'nun kolu L = 4 km = 4.000 m = 4×10³ m. Değişim ΔL = h × L = 10⁻²¹ × 4×10³ = 4×10⁻¹⁸ m. Karşılaştırma: LIGO yaklaşık 10⁻¹⁹ m'lik değişimleri ölçebiliyor; 4×10⁻¹⁸ m bundan 40 kat büyük. Sonuç: 4 km'lik kol yaklaşık 4×10⁻¹⁸ metre uzayıp kısaldı; bu, bir protonun çapından yüzlerce kat küçük bir oynamadır."
+      },
+      "akilda": "Kütleçekim dalgaları, hızlanan kütlelerin uzay-zamanda yarattığı ve ışık hızında yayılan titreşimlerdir. Einstein 1916'da öngördü; LIGO, 4 km'lik kollarındaki atom çekirdeğinden binlerce kat küçük değişimleri ölçerek onları yakalar."
+    },
+    {
+      "baslik": "GW150914: iki kara deliğin son dansı",
+      "paragraflar": [
+        "14 Eylül 2015'te iki LIGO dedektörü aynı sinyali yaklaşık yedi milisaniye arayla kaydetti. Sinyal yaklaşık 0,2 saniye sürdü. Olaya tarihinin kısaltmasıyla GW150914 adı verildi ve 11 Şubat 2016'da duyuruldu. Nobel Komitesi'nin ifadesiyle evrenden gelen kütleçekim dalgaları o gün ilk kez gözlendi.",
+        "Sinyalin biçiminden kaynağın ne olduğu okunabildi: kütleleri yaklaşık 36 ve 29 M☉ olan iki kara delik birbirinin çevresinde dönmüş ve sonunda birleşip yaklaşık 62 M☉'lik tek bir kara delik oluşturmuştu. Kaynak yaklaşık 410 megaparsek, yani yaklaşık 1,3 milyar ışık yılı uzaktaydı. Nobel Komitesi'nin ifadesiyle dalgaların Dünya'ya ulaşması 1,3 milyar yıl sürdü. Bu kara delikler, X ışını çiftlerinde ölçülen yaklaşık 4 ile 20 M☉ aralığının üstündeydi; yani evrende X ışını çiftlerinden tanıdıklarımızdan daha ağır yıldız kütleli kara delikler de var.",
+        "Hesap tutmuyor gibi: 36 + 29 = 65, ama sonuç 62. Eksik 3 Güneş kütlesi kütleçekim dalgası enerjisine dönüştü. Caltech'in açıklamasına göre dalgalar üç Güneş'in yok edilmesiyle açığa çıkacak kadar enerji taşıdı. Bu buluş için 2017 Nobel Fizik Ödülü'nün yarısı Rainer Weiss'a, diğer yarısı Barry Barish ile Kip Thorne'a verildi. Nobel Komitesi, LIGO'nun 20'den fazla ülkeden binden fazla araştırmacının ortak işi olduğunu vurguladı."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Kütlenin ne kadarı dalgaya dönüştü?",
+        "metin": "Başlangıç toplamı: 36 + 29 = 65 M☉. Son kara delik: 62 M☉. Fark: 65 − 62 = 3 M☉. Oran: 3 ÷ 65 ≈ 0,046. Sonuç: sistemin toplam kütlesinin yaklaşık yüzde 4,6'sı, yani yaklaşık 3 Güneş kütlesi, yaklaşık 0,2 saniyelik sinyalin sonunda kütleçekim dalgası olarak yayılmıştı."
+      },
+      "akilda": "GW150914 (14 Eylül 2015), 36 ve 29 M☉'lik iki kara deliğin 1,3 milyar ışık yılı ötede birleşmesiydi; 3 M☉ kütle dalga enerjisine dönüştü ve buluş 2017 Nobel'ini getirdi."
+    },
+    {
+      "baslik": "GW170817: hem duyulan hem görülen çarpışma",
+      "paragraflar": [
+        "GW150914 yalnızca kütleçekim dalgasıyla duyulmuştu. 17 Ağustos 2017'de gökyüzü ilk kez hem duyuldu hem görüldü. LIGO ve Virgo, iki nötron yıldızının birleşmesinden gelen dalgaları yakaladı. Yaklaşık iki saniye sonra NASA'nın Fermi ve ESA'nın INTEGRAL uyduları aynı gökyüzü bölgesinden kısa bir gama ışını patlaması kaydetti. Kaynak, Suyılanı takımyıldızındaki NGC 4993 galaksisinde, yaklaşık 130 milyon ışık yılı uzaklıktaydı.",
+        "ESO'ya göre bu, bir kütleçekim dalgası kaynağının görünür ışıkta ilk kez görülmesiydi ve dünyada yaklaşık 70 gözlemevi olayı izledi. Birleşmenin ardından gelen kilonova birkaç gün içinde çok maviden çok kırmızıya döndü ve tayfında ağır elementlerin izleri görüldü. d6'da bunun ağır elementlerin kökeni için ne anlama geldiğini okumuştun. Böylece gökbilim yeni bir çağa girdi: aynı olayı hem kütleçekim dalgasıyla duymak hem de ışıkla görmek. Bu yaklaşıma çok habercili gökbilim denir.",
+        "Bu olayın bir dersi daha var. Dalgalar ve ışık 130 milyon yıllık yolculuğun sonunda yalnızca yaklaşık iki saniye arayla geldi. Aşağıdaki kaba hesap, kütleçekim dalgalarının ışıkla neredeyse tam olarak aynı hızda yol aldığını gösterir. Dürüst olalım: bu iki saniyenin bir kısmı, gama ışınlarının birleşmeden biraz sonra yayılmasından da kaynaklanıyor olabilir; bu yüzden hesap yalnızca bir üst sınır verir. Kütleçekim dalgası astronomisi daha çok genç; her yeni gözlem dönemi, kara deliklerin ve nötron yıldızlarının nasıl doğup birleştiği hakkında yeni sorular getiriyor."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Kütleçekim ışıktan ne kadar farklı hızda olabilir?",
+        "metin": "Yolculuk süresi: 130 milyon yıl = 1,3×10⁸ yıl. Bir yıl ≈ 365,25 gün × 86.400 saniye ≈ 3,16×10⁷ saniye. Toplam: 1,3×10⁸ × 3,16×10⁷ ≈ 4,1×10¹⁵ saniye. Gecikme: yaklaşık 2 saniye. Oran: 2 ÷ 4,1×10¹⁵ ≈ 5×10⁻¹⁶. Sonuç: iki sinyalin hızları arasındaki fark, en fazla kabaca on milyon milyarda beş mertebesindedir; yani kütleçekim dalgaları pratikte ışık hızında yol alır."
+      },
+      "akilda": "GW170817 (17 Ağustos 2017), iki nötron yıldızının birleşmesiydi ve hem kütleçekim dalgasıyla hem ışıkla gözlenen ilk olay oldu. İki sinyalin 130 milyon yıllık yolun sonunda iki saniye arayla gelmesi, kütleçekim dalgalarının ışık hızında yayıldığını gösterir."
+    }
+  ],
+  "formuller": [
+    {
+      "ad": "Schwarzschild yarıçapı",
+      "ifade": "Rs = 2GM/c²",
+      "aciklama": "Rs olay ufkunun yarıçapı (m), G kütleçekim sabiti, M kara deliğin kütlesi (kg), c ışık hızı (m/s). Dönmeyen kara delik için geçerlidir; yarıçap kütleyle doğru orantılıdır."
+    },
+    {
+      "ad": "Pratik kısayol",
+      "ifade": "Rs ≈ 2,95 km × (M/M☉)",
+      "aciklama": "M/M☉ kara deliğin kaç Güneş kütlesi olduğu. Güneş'in Schwarzschild yarıçapı 2,95 km'dir (Wikipedia tablosu); diğer kütleler için bununla çarpılır."
+    },
+    {
+      "ad": "Kütleçekim dalgasının genliği",
+      "ifade": "h = ΔL / L",
+      "aciklama": "h genlik (birimsiz), ΔL dedektör kolundaki uzama ya da kısalma (m), L kol uzunluğu (m). LIGO'da L = 4 km; GW150914'te h ≈ 10⁻²¹."
+    },
+    {
+      "ad": "Birleşmede kayıp kütle",
+      "ifade": "Δm = (m₁ + m₂) − m_son",
+      "aciklama": "m₁ ve m₂ birleşen iki kara deliğin kütlesi, m_son ortaya çıkan kara deliğin kütlesi (M☉). Δm kütleçekim dalgası olarak yayılan enerjinin kütle karşılığıdır."
+    }
+  ],
+  "anahtar_sayilar": [
+    {
+      "deger": "~3,0 km (Güneş), ~9 mm (Dünya)",
+      "aciklama": "Schwarzschild yarıçapları",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Schwarzschild_radius"
+    },
+    {
+      "deger": "net +38,6 mikrosaniye/gün; ~11,4 km/gün",
+      "aciklama": "GPS uydu saatlerinde göreli zaman farkı ve düzeltilmezse oluşacak konum hatası",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Error_analysis_for_the_Global_Positioning_System"
+    },
+    {
+      "deger": "≥3,5 M☉; 5,6 gün",
+      "aciklama": "Cyg X-1'deki görünmeyen eşin en küçük kütlesi ve yörünge süresi",
+      "kaynak_url": "https://arxiv.org/pdf/1911.04305"
+    },
+    {
+      "deger": "~4 milyon M☉; ~27.000 ışık yılı",
+      "aciklama": "Sgr A*'ın kütlesi ve uzaklığı",
+      "kaynak_url": "https://www.eso.org/public/news/eso2208/"
+    },
+    {
+      "deger": "16 yıl; 120 AB; ~7.650 km/s",
+      "aciklama": "S2 yıldızının yörünge süresi, Mayıs 2018'deki en yakın geçiş uzaklığı ve hızı",
+      "kaynak_url": "https://arxiv.org/abs/1807.09409v1"
+    },
+    {
+      "deger": "6,5 milyar M☉; 55 milyon ışık yılı",
+      "aciklama": "M87 galaksisinin merkezindeki kara deliğin kütlesi ve uzaklığı",
+      "kaynak_url": "https://www.eso.org/public/news/eso1907/"
+    },
+    {
+      "deger": "8 gözlemevi; 1,3 mm",
+      "aciklama": "EHT'nin 2017 gözlemlerinde birleştirilen radyo gözlemevi sayısı ve dalga boyu",
+      "kaynak_url": "https://www.eso.org/public/news/eso1907/"
+    },
+    {
+      "deger": "4 km; ~10⁻¹⁹ m",
+      "aciklama": "LIGO kol uzunluğu ve ölçülebilen en küçük boy değişimi",
+      "kaynak_url": "https://hyperphysics.gsu.edu/hbase/Forces/ligo.html"
+    },
+    {
+      "deger": "36 + 29 → 62 M☉; ~410 Mpc",
+      "aciklama": "GW150914'teki kara delik kütleleri ve uzaklık",
+      "kaynak_url": "https://dcc.ligo.org/P1500218/public"
+    },
+    {
+      "deger": "~10⁻²¹",
+      "aciklama": "GW150914 sinyalinin en büyük genliği",
+      "kaynak_url": "https://www.gw.iucaa.in/news/gw150914/"
+    },
+    {
+      "deger": "~130 milyon ışık yılı; ~2 s",
+      "aciklama": "GW170817'nin uzaklığı ve gama ışını patlamasının gecikmesi",
+      "kaynak_url": "https://www.eso.org/public/news/eso1733/"
+    }
+  ],
+  "sozluk": [
+    { "terim": "Kaçış hızı", "tanim": "Bir cismin yüzeyinden, geri düşmeden sonsuza uzaklaşmak için gereken en küçük hız." },
+    { "terim": "Olay ufku", "tanim": "Kara deliğin çevresinde, içinden hiçbir şeyin, ışığın bile dışarı çıkamadığı sınır." },
+    { "terim": "Schwarzschild yarıçapı", "tanim": "Dönmeyen bir kara deliğin olay ufkunun yarıçapı, Rs = 2GM/c²." },
+    { "terim": "Spagettileşme", "tanim": "Kara deliğe yaklaşan bir cismin gelgit kuvvetleriyle boyuna uzayıp yanlardan sıkışması." },
+    { "terim": "X ışını çifti", "tanim": "Bir kara delik ya da nötron yıldızının eş yıldızından gaz çektiği ve gazın ısınıp X ışını yaydığı çift sistem." },
+    { "terim": "Süper kütleli kara delik", "tanim": "Galaksi merkezlerinde bulunan, yüz binlerce ile milyarlarca Güneş kütlesi arasındaki kara delik." },
+    { "terim": "Kütleçekimsel kızıla kayma", "tanim": "Güçlü kütleçekiminden çıkan ışığın dalga boyunun uzaması." },
+    { "terim": "Kütleçekim dalgası", "tanim": "Hızlanan kütlelerin uzay-zamanda yarattığı ve ışık hızında yayılan esneme ve sıkışma dalgası." },
+    { "terim": "İnterferometri", "tanim": "Birden çok teleskobun ya da ışık demetinin sinyallerini birleştirerek tek araçla mümkün olmayan ayrıntıyı ölçme tekniği." },
+    { "terim": "Çok habercili gökbilim", "tanim": "Aynı olayı kütleçekim dalgası, ışık ya da parçacık gibi farklı habercilerle birlikte inceleme." }
+  ],
+  "defter_notu": [
+    "Kaçış hızı ≥ ışık hızı → kara delik. Michell 1783, Schwarzschild 1916, Penrose 1965 (Nobel 2020).",
+    "Rs = 2GM/c² ≈ 2,95 km × (M/M☉). Güneş ≈ 3 km, Dünya ≈ 9 mm.",
+    "Uzaktan kara delik sıradan bir kütle gibi çeker; süpürge değildir.",
+    "Güçlü çekim → zaman yavaş akar (GPS: net +38,6 mikrosaniye/gün). Gelgit → spagettileşme.",
+    "Yıldız kütleli kara delik: eş yıldızın hareketinden tartılır. Cyg X-1: ≥3,5 M☉, 5,6 gün.",
+    "Sgr A*: ~4 milyon M☉, ~27.000 ışık yılı; S2 16 yılda bir tur (Genzel, Ghez, Nobel 2020).",
+    "EHT: 8 radyo gözlemevi, 1,3 mm. M87 (2019): 6,5 milyar M☉; Sgr A* (2022).",
+    "LIGO: 4 km kol, ~10⁻¹⁹ m'yi ölçer. Einstein 1916 öngördü; Hulse-Taylor 1974 (Nobel 1993).",
+    "GW150914 (14.09.2015): 36 + 29 → 62 M☉, 3 M☉ dalgaya; 1,3 milyar ışık yılı (Nobel 2017).",
+    "GW170817 (17.08.2017): nötron yıldızı birleşmesi, ~2 s sonra gama ışını, kilonova; ilk çok habercili olay."
+  ],
+  "sorular": [
+    {
+      "soru": "Olay ufku nedir ve Schwarzschild yarıçapı neye bağlıdır?",
+      "cevap": "Olay ufku, içinden ışığın bile çıkamadığı sınırdır. Schwarzschild yarıçapı (Rs = 2GM/c²) yalnızca kütleye bağlıdır ve kütleyle doğru orantılıdır."
+    },
+    {
+      "soru": "20 Güneş kütleli bir kara deliğin olay ufku yarıçapı yaklaşık kaç km'dir?",
+      "cevap": "Rs ≈ 2,95 km × 20 = 59 km, yani yaklaşık 60 km."
+    },
+    {
+      "soru": "Güneş bir anda aynı kütlede bir kara deliğe dönüşseydi Dünya'nın yörüngesi değişir miydi?",
+      "cevap": "Hayır. Yörünge yalnızca merkezdeki kütleye ve uzaklığa bağlıdır; kütle aynı kaldığı için Dünya aynı yörüngede dönmeye devam ederdi. Yalnızca ışık ve ısı kesilirdi."
+    },
+    {
+      "soru": "Bir astronot için hangi kara delik ufkunda daha tehlikelidir: yıldız kütleli olan mı, süper kütleli olan mı? Neden?",
+      "cevap": "Yıldız kütleli olan. Küçük kara delikte ufuk merkeze çok yakındır ve gelgit farkı ufuktan önce öldürücü olur (spagettileşme). Dev kara delikte öldürücü nokta ufkun içindedir; astronot ufku belirgin gelgit hissetmeden geçebilir."
+    },
+    {
+      "soru": "Sgr A*'ın kütlesi nasıl ölçüldü? Bu yöntem neden güçlüdür?",
+      "cevap": "Merkeze yakın yıldızların (örneğin 16 yılda bir tur atan S2) yörüngeleri yıllarca izlendi ve Kepler yasalarıyla merkezdeki kütle hesaplandı: yaklaşık 4 milyon M☉. Güçlüdür, çünkü görünmeyen kütleyi doğrudan kütleçekim etkisinden ölçer ve bu kütlenin güneş sistemi büyüklüğünde bir bölgeye sığdığını gösterir."
+    },
+    {
+      "soru": "Sgr A* bize M87'nin kara deliğinden çok daha yakın olduğu halde görüntüsünü çıkarmak neden daha zordu?",
+      "cevap": "Sgr A* çok daha küçük olduğu için çevresindeki gaz bir turu dakikalar içinde tamamlar; gözlem sırasında görüntü sürekli değişir. M87'de bu tur günler ile haftalar sürer, görüntü daha durağandır."
+    },
+    {
+      "soru": "GW150914'te başlangıç kütleleri 36 ve 29 M☉, son kara delik 62 M☉ idi. Kayıp kütle nereye gitti ve toplam kütlenin yüzde kaçıdır?",
+      "cevap": "65 − 62 = 3 M☉ kütleçekim dalgası enerjisi olarak yayıldı. 3 ÷ 65 ≈ 0,046, yani yaklaşık yüzde 4,6."
+    },
+    {
+      "soru": "GW170817 neden kara delik birleşmelerinden farklı ve önemlidir?",
+      "cevap": "İki nötron yıldızının birleşmesiydi ve dalganın yanında ışık da yaydı. Gama ışını patlaması ve kilonova görüldü; bu, aynı olayın hem kütleçekim dalgasıyla hem ışıkla gözlendiği ilk olaydı ve ağır elementlerin kökeni ile kütleçekim dalgalarının hızı hakkında bilgi verdi."
+    }
+  ],
+  "kaynaklar": [
+    { "ad": "Nobel Prize in Physics 2020, Press release", "url": "https://www.nobelprize.org/prizes/physics/2020/press-release/" },
+    { "ad": "Nobel Prize in Physics 2017, Press release", "url": "https://www.nobelprize.org/prizes/physics/2017/press-release/" },
+    { "ad": "ESO eso1907, Astronomers Capture First Image of a Black Hole", "url": "https://www.eso.org/public/news/eso1907/" },
+    { "ad": "ESO eso2208, First image of the black hole at the heart of the Milky Way", "url": "https://www.eso.org/public/news/eso2208/" },
+    { "ad": "ESO eso1733, Merging neutron stars", "url": "https://www.eso.org/public/news/eso1733/" },
+    { "ad": "GRAVITY Collaboration 2018, Detection of the gravitational redshift in the orbit of the star S2 (arXiv:1807.09409)", "url": "https://arxiv.org/abs/1807.09409v1" },
+    { "ad": "LIGO/Virgo, Observation of Gravitational Waves from a Binary Black Hole Merger (LIGO-P1500218)", "url": "https://dcc.ligo.org/P1500218/public" },
+    { "ad": "LIGO Caltech, 2017 Nobel Prize press release", "url": "https://www.ligo.caltech.edu/page/press-release-2017-nobel-prize" },
+    { "ad": "IUCAA, GW150914: The First Detected Gravitational Wave Event", "url": "https://www.gw.iucaa.in/news/gw150914/" },
+    { "ad": "HyperPhysics (Georgia State University), LIGO", "url": "https://hyperphysics.gsu.edu/hbase/Forces/ligo.html" },
+    { "ad": "A Brief History of Gravitational Waves (arXiv:1609.09400)", "url": "https://arxiv.org/pdf/1609.09400" },
+    { "ad": "Astrophysical Black Holes (arXiv:1911.04305)", "url": "https://arxiv.org/pdf/1911.04305" },
+    { "ad": "NASA Science, Types of Black Holes", "url": "https://science.nasa.gov/universe/black-holes/types" },
+    { "ad": "NASA Science, What Happens When Something Gets Too Close to a Black Hole?", "url": "https://science.nasa.gov/universe/black-holes/what-happens-when-something-gets-too-close-to-a-black-hole/" },
+    { "ad": "Wikipedia, Schwarzschild radius", "url": "https://en.wikipedia.org/wiki/Schwarzschild_radius" },
+    { "ad": "Wikipedia, Escape velocity", "url": "https://en.wikipedia.org/wiki/Escape_velocity" },
+    { "ad": "Wikipedia, Error analysis for the Global Positioning System", "url": "https://en.wikipedia.org/wiki/Error_analysis_for_the_Global_Positioning_System" },
+    { "ad": "Wikipedia, Spaghettification", "url": "https://en.wikipedia.org/wiki/Spaghettification" }
+  ]
+}

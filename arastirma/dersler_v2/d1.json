@@ -1,0 +1,336 @@
+{
+  "id": "d1",
+  "unite": "gokyuzu",
+  "baslik": "Gökyüzünü Okumak: Koordinatlar, Dönüş ve Parlaklık",
+  "ozet": "Gökyüzünü dev bir küre gibi düşünüp yıldızların yerini iki koordinat sistemiyle tarif etmeyi öğreneceksin. Dünya'nın dönüşünün ve Güneş çevresindeki yolculuğunun gökyüzüne, günlere ve mevsimlere nasıl yansıdığını göreceksin. Son olarak parlaklığın kadir ölçeğiyle nasıl ölçüldüğünü ve ışık kirliliğinin bu tabloyu nasıl sildiğini anlayacaksın.",
+  "on_bilgi": [],
+  "bolumler": [
+    {
+      "baslik": "Gök küresi: işe yarayan bir yanılsama",
+      "paragraflar": [
+        "Açık bir gecede gökyüzüne baktığında yıldızlar sanki hepsi aynı uzaklıkta, başının üstünü örten dev bir kubbeye yapıştırılmış gibi görünür. Gökbilimciler bu yanılsamayı bilerek kullanır. Gök küresi, merkezinde Dünya'nın durduğu, yarıçapı istediğimiz kadar büyük seçilebilen hayali bir küredir. Gökteki her cismi bu kürenin iç yüzüne izdüşürürüz. Böylece cismin ne kadar uzak olduğunu bir kenara bırakır, yalnızca hangi yönde olduğuyla ilgileniriz. Bir gezegen, bir yıldız ve çok daha uzaktaki bir galaksi bu yüzeyde yan yana durabilir.",
+        "Kürenin üzerinde Dünya'dan taşınan birkaç sabit işaret vardır. Dünya'nın dönme ekseni uzatıldığında gök küresini iki noktada deler: kuzey ve güney gök kutupları. Dünya'nın ekvatoru gökyüzüne izdüşürüldüğünde gök ekvatoru oluşur. Dünya'nın Güneş çevresindeki yörüngesinin düzlemi ise gökte tutulumu verir: Güneş'in bir yıl boyunca yıldızların önünde izlediği yol. Tutulum adını tutulmalardan alır. Eski gözlemciler, tutulmaların yalnızca Ay bu çizgiyi kesip geçerken olduğunu fark etmişti.",
+        "Bir de yalnızca sana ait iki nokta vardır. Tam tependeki noktaya başucu, onun tam karşısındaki, ayağının altında kalan noktaya ayakucu denir. Ufuk, gök küresinin görebildiğin yarısını göremediğin yarısından ayıran büyük çemberdir. Başucu, ayakucu ve ufuk sen yer değiştirdikçe seninle birlikte kayar. Gök kutupları ve gök ekvatoru ise yıldızlara göre sabittir ve herkes için aynıdır.",
+        "Benzetmenin sınırını bilmek önemli. Yıldızlar gerçekte bir yüzeye yapışık değildir ve aralarındaki uzaklık farkları çok büyüktür. Bir takımyıldızda yan yana görünen iki yıldızdan biri ötekinden kat kat uzakta olabilir. Gök küresi uzaklık bilgisini bilerek atar ve bize yalnızca bir yön haritası verir. Ama gözlemin ilk sorusu da zaten yöndür: nereye bakmalıyım?"
+      ],
+      "akilda": "Gök küresi uzaklığı yok sayıp yalnızca yönü gösteren hayali bir küredir. Gök kutupları, gök ekvatoru ve tutulum; Dünya'nın ekseninin, ekvatorunun ve yörüngesinin göğe izdüşümüdür."
+    },
+    {
+      "baslik": "Ufuk koordinatları: yükseklik ve azimut",
+      "paragraflar": [
+        "En sezgisel sistem, durduğun yere göre kurulan ufuk koordinat sistemidir ve iki açı kullanır. Yükseklik, cismin ufuktan ne kadar yukarıda olduğunu söyler: ufuktaki bir cisim 0°, başucundaki cisim 90°'dir. Azimut ise ufuk boyunca yönü verir. Genellikle gerçek kuzeyden başlayıp doğuya doğru ölçülür: kuzey 0°, doğu 90°, güney 180°, batı 270°. Pusuladaki yönlerin derece karşılığı gibi düşünebilirsin.",
+        "Bu sistemin kolaylığı da zayıflığı da aynı yerden gelir: tamamen sana bağlıdır. Dünya döndükçe bir yıldızın yüksekliği ve azimutu sürekli değişir. Aynı anda başka bir şehirden bakan biri aynı yıldız için başka değerler ölçer. Şu yıldız 40° yükseklikte gibi bir cümle, yalnızca belli bir yer ve belli bir an için doğrudur.",
+        "Yine de gözlem sahasında en çok bu sistem işe yarar, çünkü doğrudan şu soruya cevap verir: şu an hangi yöne, ne kadar yukarı bakmalıyım? Ufuk sistemi Güneş'in yıllık davranışını da güzel gösterir. İstanbul'da Haziran gündönümünde Güneş sabah azimutu yaklaşık 58° olan bir noktadan, yani kuzeydoğudan doğar; akşam azimutu yaklaşık 303° olan kuzeybatıdan batar. Yazın Güneş tam doğudan doğmaz, epey kuzeyden doğar. Bunu bir sabah evinin penceresinden kendin de görebilirsin.",
+        "Yüksekliğin bir de ikizi vardır: başucu uzaklığı. Bu, cismin başucundan kaç derece aşağıda olduğunu söyler ve yüksekliği 90°'ye tamamlar. Yüksekliği 30° olan bir cismin başucu uzaklığı 60°'dir. İkisi aynı bilgiyi farklı yerden ölçer; hangisi hesabı kolaylaştırıyorsa o kullanılır. Bu derste ileride öğle Güneşi'nin yüksekliğini hesaplarken önce başucu uzaklığını bulup sonra 90°'den çıkaracaksın."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Kutup Yıldızı'nın İstanbul'daki adresi",
+        "metin": "İstanbul'dasın ve Kutup Yıldızı'nı ufuk koordinatlarıyla tarif etmek istiyorsun. Adım 1: Kutup Yıldızı kuzey gök kutbuna 1°'den yakın olduğu için tam kuzeyde durur; azimutu yaklaşık 0°'dir. Adım 2: Gök kutbunun ufuktan yüksekliği gözlemcinin enlemine eşittir; bunu dördüncü bölümde göreceksin. İstanbul'un enlemi yaklaşık 41°'dir. Adım 3: Sonuç olarak kuzeye dön ve ufuktan yaklaşık 41° yukarı bak. Kutup Yıldızı için bu iki değer gece boyunca neredeyse değişmez. Güneş ya da başka bir yıldız içinse saatten saate değişir."
+      },
+      "akilda": "Yükseklik ufuktan yukarı doğru açı, azimut kuzeyden doğuya doğru ölçülen yöndür. Bu adres yalnızca bir yer ve bir an için geçerlidir."
+    },
+    {
+      "baslik": "Ekvatoral koordinatlar: sağ açıklık ve dik açıklık",
+      "paragraflar": [
+        "Herkesin aynı numarayı kullanabileceği bir gök adresi için koordinatları Dünya'ya değil, gök küresine bağlamak gerekir. Ekvatoral sistem, coğrafi enlem ve boylamın gökteki karşılığıdır. Dik açıklık (δ) enleme karşılık gelir: gök ekvatorundan kuzeye doğru artı, güneye doğru eksi derece olarak ölçülür. Kuzey gök kutbunun dik açıklığı +90°, gök ekvatorundaki bir yıldızınki 0°'dir.",
+        "Benzetmeyi somutlaştırmak için kendi şehrini düşün. İstanbul'un coğrafi adresi yaklaşık 41°00′49″ kuzey enlemi ve 28°57′18″ doğu boylamıdır. Bu iki sayı, Dünya üzerindeki bir noktayı kimseye sormadan bulmana yeter. Ekvatoral sistem aynı işi gökte yapar: bir yıldızın dik açıklığını ve sağ açıklığını bilen biri, onu dünyanın her yerinden aynı haritada bulur. Fark yalnızca sıfır noktalarındadır: enlemin sıfırı Dünya ekvatoru, dik açıklığın sıfırı gök ekvatorudur.",
+        "Sağ açıklık (α) boylama karşılık gelir. Başlangıç çizgisi olarak Greenwich yerine ilkbahar noktası, yani Mart ekinoksu seçilmiştir; burası tutulumun gök ekvatorunu kestiği iki noktadan biridir. Sağ açıklık bu noktadan doğuya doğru ölçülür ve genellikle derece yerine saat, dakika ve saniyeyle verilir. Tam bir tur 24 saattir, dolayısıyla 1 saat 15°'ye eşittir. Neden saat? Çünkü gökbilimciler bir yıldızın konumunu, Dünya döndükçe yıldızın gökteki en yüksek noktadan, yani meridyenden geçiş anını zamanlayarak ölçer.",
+        "Yeterince uzak bir yıldızın sağ açıklığı ve dik açıklığı, Dünya'nın neresinden bakılırsa bakılsın aynıdır. Yıldız katalogları, gök haritaları ve bu uygulamadaki yıldız bilgileri bu yüzden ufuk sistemini değil, ekvatoral sistemi kullanır. Bir gözlem programı ekvatoral adresi senin yerine ve saatine göre ufuk adresine çevirir: önce katalogdan nerede olduğunu, sonra gökyüzünde nereye bakacağını öğrenirsin."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Saatten dereceye",
+        "metin": "Bir katalogda bir yıldızın sağ açıklığı 5 sa 30 dk olarak verilmiş. Adım 1: 1 saat 15°'ye, 1 dakika ise 15 yay dakikasına, yani 0,25°'ye eşittir. Adım 2: 5 saat × 15° = 75°. Adım 3: 30 dakika × 0,25° = 7,5°. Sonuç: 75° + 7,5° = 82,5°. Yıldız, ilkbahar noktasından gök ekvatoru boyunca doğuya doğru 82,5° ötededir."
+      },
+      "akilda": "Dik açıklık gökteki enlem (±90°), sağ açıklık gökteki boylamdır (ilkbahar noktasından doğuya, 24 saat = 360°). Bu adres her gözlemci için aynıdır."
+    },
+    {
+      "baslik": "Günlük dönüş, Kutup Yıldızı ve enlem",
+      "paragraflar": [
+        "Gök küresinin bütün halinde batıya doğru döner gibi görünmesinin sebebi Dünya'nın kendi ekseni etrafında dönmesidir. Bu günlük harekette yıldızlar gök kutbunun çevresinde daireler çizer. Gök ekvatorundaki bir yıldız saatte 15° yol alır. Yıldızlara göre bir tam dönüş 23 sa 56 dk 4 sn sürer; buna yıldız günü denir. NASA bu süreyi 23,9345 saat olarak verir.",
+        "Kuzey gök kutbunun ufuktan yüksekliği, gözlemcinin enlemine eşittir. İstanbul yaklaşık 41° kuzey enlemindedir; bu yüzden İstanbul'dan bakınca kuzey gök kutbu kuzey ufkunun yaklaşık 41° üzerindedir. Kutup Yıldızı'nın 2022'deki ortalama dik açıklığı 89,35°'ydi; yani kutba yalnızca yaklaşık 0,65° uzaklıktaydı. Bu yüzden gece boyunca neredeyse kımıldamaz ve sana hem kuzey yönünü hem de enlemini verir.",
+        "Kutba yeterince yakın yıldızlar hiç batmaz; bunlara kutup çevresi yıldızları denir. Kural basittir: kuzey yarımkürede enlemin ile yıldızın dik açıklığının toplamı 90°'yi aşıyorsa yıldız hiç batmaz. İstanbul için bu, dik açıklığı yaklaşık +49°'den büyük yıldızlar demektir. Tersine, dik açıklıktan enlemi çıkardığında −90°'den küçük bir sayı buluyorsan yıldız hiç doğmaz. 40° ile 50° kuzey enlemleri arasında Büyük Ayı, Küçük Ayı, Ejderha, Kral, Kraliçe, Zürafa, Vaşak ve Kertenkele kutup çevresi takımyıldızlarıdır.",
+        "Kutup Yıldızı'nın bu ayrıcalığı kalıcı değil. Dünya'nın ekseni dönen bir topacınki gibi çok yavaş yalpalar; bu harekete presesyon denir ve bir tam turu yaklaşık 26.000 yıl sürer. Gök kutbu Kutup Yıldızı'na 2100 yılı civarında en çok yaklaşacak ve aradaki açı yaklaşık 0,45°'ye inecek. Sonra uzaklaşacak. Yaklaşık 14.500 yılında parlak Vega, kutba yaklaşık 5° mesafeyle kuzey yıldızı olacak. Yaklaşık MÖ 3000'de ise Thuban adlı yıldız kutba 0,1°'den yakındı."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Bu yıldız İstanbul'dan batar mı?",
+        "metin": "İstanbul'un enlemi φ ≈ 41°. Dik açıklığı +60° olan bir yıldızı düşün. Adım 1: Kutup çevresi koşulu φ + δ > 90°. Adım 2: 41° + 60° = 101°; bu 90°'den büyük. Sonuç: yıldız İstanbul'dan hiç batmaz, yılın her gecesi kuzey göğünde döner. Şimdi dik açıklığı −55° olan bir yıldıza bak. Adım 1: Hiç doğmama koşulu, δ − φ farkının −90°'den küçük olmasıdır. Adım 2: −55° − 41° = −96°; bu −90°'den küçük. Sonuç: bu yıldız İstanbul ufkunun üstüne hiç çıkmaz; onu görmek için daha güneye gitmen gerekir."
+      },
+      "akilda": "Gök kutbunun yüksekliği enlemine eşittir; İstanbul'da yaklaşık 41°. Enlem ile dik açıklığın toplamı 90°'yi aşan yıldızlar hiç batmaz. Presesyon yüzünden kutup yıldızı binlerce yılda değişir."
+    },
+    {
+      "baslik": "Yıldız günü ve Güneş günü: dört dakikanın sırrı",
+      "paragraflar": [
+        "Dünya bir yandan kendi ekseni etrafında dönerken bir yandan da Güneş'in çevresinde dolanır. Bir yıldız günü boyunca yörüngesinde yaklaşık 1° ilerler. Bu yüzden Güneş'i yeniden öğle konumuna getirmek için biraz daha dönmesi gerekir. Sonuçta ortalama Güneş günü yıldız gününden yaklaşık 4 dakika uzundur. NASA'nın verilerinde Dünya'nın gün uzunluğu 24,0000 saat, yıldızlara göre dönme süresi 23,9345 saattir.",
+        "Bir yılda Güneş'e göre yaklaşık 365,24 gün, yıldızlara göre ise yaklaşık 366,24 yıldız günü geçer. Aradaki tek fazla tur, Dünya'nın Güneş çevresindeki bir dolanımından gelir. Bunu bir pistte koşan atlete benzetebilirsin: pistin ortasındaki bir direğe bakarak dönen atlet, pisti bir kez dolaştığında direğe göre bir tur fazladan dönmüş olur. Benzetmenin sınırı şu: atlet dönmeyi kendisi seçer, Dünya ise iki hareketi birbirinden bağımsız olarak sürdürür.",
+        "Bu küçük farkın gözlemde büyük bir sonucu vardır. Saatlerimiz Güneş gününe göre ayarlıdır, yıldızlar ise yıldız gününe uyar. Bu yüzden bir yıldız her gece bir önceki geceden yaklaşık 4 dakika erken doğar ve aynı yere 4 dakika erken gelir. Günlerce biriken bu fark, aynı saatte bakıldığında gökyüzünün mevsimden mevsime değişmesini sağlar. Bir yılın sonunda fark tam bir güne ulaşır ve gökyüzü aynı saatte yeniden aynı görünüme döner."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Bir ay sonra aynı yıldız",
+        "metin": "Bu gece saat 22'de tam güneyde gördüğün bir yıldız, 30 gün sonra aynı yere saat kaçta gelir? Adım 1: Günlük fark, 24 saat ile yıldız günü (23 sa 56 dk 4 sn) arasındaki farktır: yaklaşık 3 dk 56 sn. Adım 2: 30 günde 30 × 3 dk 56 sn ≈ 118 dakika birikir, yani yaklaşık 1 sa 58 dk. Adım 3: Sonuç olarak yıldız aynı yere saat 22'den yaklaşık 2 saat önce, saat 20 civarında gelir. Sağlama: 365 gün × yaklaşık 3,93 dakika ≈ 1435 dakika, bu da neredeyse tam 24 saattir."
+      },
+      "akilda": "Yıldız günü 23 sa 56 dk 4 sn, Güneş günü yaklaşık 4 dakika daha uzundur. Yıldızlar her gece yaklaşık 4 dakika erken doğar; bu yüzden gece gökyüzü mevsimle değişir."
+    },
+    {
+      "baslik": "Mevsimler: eğik eksenin sonucu",
+      "paragraflar": [
+        "Yaygın bir yanlış inanış, yazın Güneş'e daha yakın olduğumuz için sıcak olduğudur. NASA'ya göre durum tam tersi: Dünya'nın Güneş'e en yakın olduğu nokta, yani günberi, Ocak ayına denk gelir; kuzey yarımkürede o sırada kış yaşanır. NASA'nın verilerinde günberi uzaklığı 147,095 milyon km, günöte uzaklığı 152,100 milyon km'dir. Aradaki fark yalnızca yaklaşık %3,4'tür. Mevsimleri uzaklık değil, eksenin eğikliği belirler.",
+        "Dünya'nın dönme ekseni yörünge düzlemine dik değildir; NASA bu eğikliği 23,44° olarak verir. Aynı açı gökte de görünür: tutulum, gök ekvatoruna yaklaşık 23,4° eğiktir. Güneş tutulum boyunca ilerlerken bu yüzden yılın yarısında gök ekvatorunun kuzeyinde, yarısında güneyinde kalır. Haziran gündönümünde öğle Güneş'i Yengeç dönencesinde, yani 23,44° kuzey enleminde tam tepededir. Aralık gündönümünde aynı durum Oğlak dönencesinde, 23,44° güney enleminde yaşanır. Gündönümleri her yıl 20–22 Haziran ve 20–23 Aralık arasına düşer.",
+        "Tutulumun gök ekvatorunu kestiği iki nokta ekinokslardır. Mart ekinoksunda Güneş gök ekvatorunu güneyden kuzeye, Eylül ekinoksunda kuzeyden güneye geçer. Kuzey yarımküre Güneş'e doğru eğikken Güneş öğlende daha yükseğe çıkar, ışınlar daha doğrudan gelir ve gündüz daha uzun sürer. İstanbul'da Haziran gündönümünde gündüz yaklaşık 15 sa 8 dk sürer; bu, Aralık gündönümündeki gündüzden yaklaşık 5 sa 55 dk daha uzundur. Yüksek Güneş ve uzun gündüz birlikte yazı getirir.",
+        "Tutulumun gözlemciye bir armağanı daha var. Güneş, Ay ve gezegenler gökte hep tutulumu ortalayan, yaklaşık 20° genişliğindeki bir kuşak içinde dolaşır; bu kuşağa burç kuşağı denir ve geleneksel olarak 30°'lik on iki dilime ayrılır. Pratik sonucu şudur: parlak bir gezegen ararken tutulum boyunca, yani Güneş'in gündüz izlediği yay boyunca bakmalısın. Gece yarısı gökte yüksekte, tutulumdan çok uzakta parlayan bir nokta büyük olasılıkla gezegen değil yıldızdır.",
+        "Eğiklik de sonsuza kadar sabit değildir. Tutulumun gök ekvatoruna eğikliği bugün yaklaşık 23,4°'dir ve yüzyılda yaklaşık 0,013° azalmaktadır. Bu değişim bir insan ömründe hissedilmez, ama binlerce yıllık ölçekte dönencelerin yerini kaydırır. Bu bölümden aklında kalması gereken basit resim şu: Dünya'nın ekseni eğik ve yıl boyunca uzayda aynı yöne bakıyor; Güneş'e göre konumumuz değiştikçe önce bir yarımküre, sonra öteki Güneş'e doğru döner."
+      ],
+      "ornek": {
+        "baslik": "Örnek: İstanbul'da öğle Güneşi ne kadar yükselir?",
+        "metin": "Öğle vaktinde Güneş'in başucundan uzaklığı, enlem ile Güneş'in dik açıklığı arasındaki farkın mutlak değerine eşittir; yükseklik ise 90° eksi bu uzaklıktır. İstanbul için φ ≈ 41,01°. Haziran gündönümü: Güneş'in dik açıklığı +23,44°. Fark 41,01° − 23,44° = 17,57°. Yükseklik 90° − 17,57° ≈ 72,4°. Aralık gündönümü: dik açıklık −23,44°. Fark 41,01° + 23,44° = 64,45°. Yükseklik 90° − 64,45° ≈ 25,6°. Ekinokslarda dik açıklık 0°, yükseklik 90° − 41,01° ≈ 49°. Sonuç: öğle Güneşi yazın kıştakinin yaklaşık üç katı yüksekliğe çıkar."
+      },
+      "akilda": "Mevsimlerin nedeni uzaklık değil, 23,44°'lik eksen eğikliğidir. Eğiklik öğle Güneşi'nin yüksekliğini ve gündüzün süresini değiştirir; İstanbul'da öğle Güneşi yaklaşık 25,6° ile 72,4° arasında gezer."
+    },
+    {
+      "baslik": "Kadir ölçeği: parlaklığı sayıya dökmek",
+      "paragraflar": [
+        "Yıldızların parlaklığını sınıflama geleneği Antik Yunan'a uzanır. Çıplak gözle görülen yıldızlar altı sınıfa ayrılırdı: en parlaklar 1. kadir, en sönükler 6. kadir. Bu sistem Batlamyus'un Almagest adlı eseriyle yaygınlaştı ve genellikle Hipparkos'a dayandırılır. Dikkat: ölçek terstir, sayı küçüldükçe cisim parlaklaşır. Birinci sınıf yıldızı düşün; sıralamada birinci olan en iyisidir.",
+        "1856'da Norman Pogson ölçeği matematiksel olarak tanımladı: 1. kadirden bir yıldız, 6. kadirden bir yıldızdan tam 100 kat parlaktır. Yani 5 kadirlik fark 100 kat parlaklık demektir. Bir kadirlik fark da 100'ün beşinci kökü, yani yaklaşık 2,512 kattır; buna Pogson oranı denir. Ölçek logaritmiktir: kadir farkları toplanırken parlaklık oranları çarpılır. 2 kadir fark yaklaşık 6,31 kat, 10 kadir fark 100 × 100 = 10.000 kat eder.",
+        "Modern ölçekte çok parlak cisimler eksi değer alır. Gece gökyüzünün en parlak yıldızı Sirius −1,46, Kutup Yıldızı ortalama +1,98, Vega +0,03 kadirdir; Vega bir zamanlar ölçeğin sıfır noktası olarak seçilmişti. Jüpiter en parlak haliyle −2,94, Venüs ise hilal evresinde −4,92 kadire ulaşır. Dolunay ortalama −12,74, Güneş ise yaklaşık −26,8 kadirdir. Andromeda Galaksisi +3,44 kadirle çıplak gözle görülebilir.",
+        "Bu sayılar arasındaki uçurumu hissetmek için Güneş ile dolunayı karşılaştır. Aralarındaki yaklaşık 14 kadirlik fark, Güneş'in ortalama dolunaydan yaklaşık 400.000 kat parlak görünmesi demektir. Gece gökyüzünü aydınlatan dolunay bile Güneş'in yanında çok sönüktür. Kadir ölçeğinin logaritmik olması, bu kadar geniş bir aralığı tek bir sayı dizisinde, eksi 27'den artı 30'ların ötesine kadar yazabilmemizi sağlar. Bu yüzden ölçek tuhaf görünse de gökbilimciler onu bırakmaz.",
+        "Çok karanlık bir gecede ortalama bir gözün görebildiği en sönük yıldızlar yaklaşık +6,5 kadirdir ve bu sınıra kadar gökyüzünde yaklaşık 9.500 yıldız vardır. Bu sayı tüm gökyüzü içindir; herhangi bir anda ufkun üstünde bunun ancak bir kısmı bulunur. Küçük bir alet bile sınırı ciddi biçimde öteler: 10×50 bir dürbünle yaklaşık +9,5 kadire kadar yıldız görülebilir. Büyük teleskoplar sınırı çok daha aşağı çeker: Hubble'ın yaklaşık 23 günlük poz süresiyle elde edilen eXtreme Deep Field görüntüsü yaklaşık +31,5 kadire kadar iner."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Sirius, Kutup Yıldızı'ndan kaç kat parlak?",
+        "metin": "Sirius −1,46, Kutup Yıldızı +1,98 kadir. Adım 1: Kadir farkı 1,98 − (−1,46) = 3,44. Adım 2: Parlaklık oranı 10 üzeri (0,4 × 3,44) = 10 üzeri 1,376. Adım 3: 10 üzeri 1,376 ≈ 23,8. Sonuç: Sirius, Kutup Yıldızı'ndan yaklaşık 24 kat parlak görünür. Bu yalnızca bize ulaşan ışığı karşılaştırır; yıldızların gerçek ışıma güçleri hakkında tek başına bir şey söylemez, çünkü uzaklıkları farklıdır."
+      },
+      "akilda": "Kadir ölçeği ters ve logaritmiktir: 5 kadir fark 100 kat, 1 kadir fark yaklaşık 2,512 kat parlaklık demektir. Karanlık gökte göz sınırı yaklaşık +6,5 kadirdir."
+    },
+    {
+      "baslik": "Işık kirliliği ve Bortle ölçeği",
+      "paragraflar": [
+        "Görebildiğin en sönük yıldız yalnızca gözüne değil, gökyüzünün ne kadar karanlık olduğuna da bağlıdır. Kentsel bir mahallede çıplak gözle ancak +3 kadire, banliyöde +4 kadire kadar yıldız seçilebilir. +6,5 ile +3 arasındaki 3,5 kadirlik fark, kentte görebileceğin en sönük yıldızın karanlık gökteki sınırdan yaklaşık 25 kat parlak olması gerektiği anlamına gelir. Sönük yıldızların büyük çoğunluğu böylece kaybolur.",
+        "Yapay ışıkların gece gökyüzünü aydınlatmasına gök parıltısı denir. 2016'da yayımlanan yapay gece gökyüzü parlaklığı dünya atlasına göre dünya nüfusunun %80'inden fazlası, ABD ve Avrupa nüfusunun ise %99'undan fazlası ışık kirliliğine uğramış bir gökyüzünün altında yaşıyor. Samanyolu insanlığın üçte birinden fazlasına, Avrupalıların %60'ına ve Kuzey Amerikalıların yaklaşık %80'ine görünmüyor.",
+        "Durum kötüleşiyor. Gönüllülerin NOIRLab'in Globe at Night programına 2011–2022 arasında gönderdiği 50.000'den fazla gözlemin analizi, gökyüzü parlaklığının her yıl %9,6 arttığını gösterdi. Uydular yüzey parlaklığındaki küresel artışı yılda yalnızca yaklaşık %2 olarak ölçüyordu. Çalışmanın baş yazarı Christopher Kyba'ya göre bu hızla, 250 yıldız görülebilen bir yerde doğan bir çocuk 18 yaşına geldiğinde ancak yaklaşık 100 yıldız görebilecek.",
+        "Gökyüzünün karanlığını derecelendirmek için amatör gökbilimci John E. Bortle, Şubat 2001'de Sky and Telescope dergisinde dokuz sınıflı bir ölçek yayımladı. Sınıf 1 kusursuz karanlık bir yerdir: çıplak göz sınırı 7,6 ile 8,0 kadir arasıdır, Samanyolu belirgin gölge düşürür. Sınıf 8 kent göğüdür; sınır yaklaşık 4,1 ile 4,5 kadir arasıdır ve bilinen takımyıldızlar bile sönükleşir. Sınıf 9 kent merkezidir; sınır 4,0 kadir ya da daha azdır ve Ülker dışında hiçbir Messier cismi çıplak gözle görülmez. Ara sınıfların sınırları kaynaklar arasında biraz farklı verilir.",
+        "Aradaki sınıflar, karanlıktan aydınlığa doğru giden bir merdiven gibidir. Sınıf 3 kırsal göktür: sınır 6,6 ile 7,0 kadir arasıdır, ufukta biraz ışık kirliliği görülür. Sınıf 5 banliyö göğüdür: sınır 5,6 ile 6,0 kadir arasıdır, Samanyolu ufuk yakınında görünmez ve başucunda solgundur. Sınıf 6 parlak banliyödür: ufuktan 35° yükseğe kadar gök grimsi beyaz parlar, Samanyolu yalnızca başucu civarında seçilir. Sınıf 7'de bütün gök açık gridir ve Samanyolu neredeyse ya da tamamen kaybolur.",
+        "Kendi gökyüzünün hangi sınıfa girdiğini anlamanın en kolay yolu, çıplak gözle görebildiğin en sönük yıldızın kadirini bulmaktır. Bunun için bir yıldız haritasında kadirleri bilinen yıldızlara bakar, seçebildiğin en sönüğünü not edersin. Gözünün karanlığa alışması ve gözlemin nasıl yapılacağı dürbünle gözlem dersinde ayrıntılı anlatılıyor. Bulduğun sınır kadirini yukarıdaki sınıf aralıklarıyla karşılaştırdığında gökyüzün için kaba bir Bortle sınıfı elde edersin. Ölçümü Ay'sız ve açık birkaç farklı gecede tekrarlayıp sonuçları karşılaştırmak, tek bir gecenin sonucuna güvenmekten daha sağlıklıdır."
+      ],
+      "akilda": "Kentte göz sınırı +3 kadire kadar düşer ve sönük yıldızların çoğu kaybolur. Bortle ölçeği gökyüzünü 1'den (kusursuz karanlık) 9'a (kent merkezi) kadar sınıflar; gök parlaklığı her yıl artıyor."
+    }
+  ],
+  "formuller": [
+    {
+      "ad": "Kadir farkı ve parlaklık oranı",
+      "ifade": "F_B / F_A = 100^((m_A − m_B) / 5) = 10^(0,4 × (m_A − m_B)) ≈ 2,512^(m_A − m_B)",
+      "aciklama": "m_A ve m_B iki cismin görünür kadiri (birimsiz); F_A ve F_B bize ulaşan ışınım akısı. B daha parlak (kadiri küçük) cisimdir. 5 kadir fark tam 100 kat eder."
+    },
+    {
+      "ad": "Kadirin tanımı",
+      "ifade": "m = −2,5 × log₁₀(F / F₀)",
+      "aciklama": "F gözlenen ışınım akısı, F₀ sıfır noktası olarak seçilen referans akı (aynı birimde, örneğin W/m²). Akı arttıkça m küçülür."
+    },
+    {
+      "ad": "Kutup yüksekliği",
+      "ifade": "Gök kutbunun yüksekliği = φ",
+      "aciklama": "φ gözlemcinin coğrafi enlemi (derece). İstanbul için φ ≈ 41°, Kutup Yıldızı ufkun yaklaşık 41° üzerinde."
+    },
+    {
+      "ad": "Kutup çevresi ve hiç doğmama koşulu",
+      "ifade": "φ + δ > 90° → hiç batmaz;  δ − φ < −90° → hiç doğmaz (kuzey yarımküre)",
+      "aciklama": "φ enlem, δ yıldızın dik açıklığı (derece). Güney yarımkürede işaretler tersine döner."
+    },
+    {
+      "ad": "Sağ açıklık dönüşümü",
+      "ifade": "24 sa = 360°;  1 sa = 15°;  1 dk = 15′;  1 sn = 15″",
+      "aciklama": "Sağ açıklık zaman birimiyle verilir; derece karşılığı için saat 15 ile çarpılır. Gök ekvatorundaki bir yıldızın günlük hareketi de saatte 15°'dir."
+    },
+    {
+      "ad": "Öğle Güneşi'nin yüksekliği",
+      "ifade": "h = 90° − |φ − δ☉|",
+      "aciklama": "h Güneş'in öğledeki yüksekliği, φ enlem, δ☉ Güneş'in o günkü dik açıklığı (gündönümlerinde ±23,44°, ekinokslarda 0°). Yaklaşık bir bağıntıdır; tam öğle anında küçük sapmalar olabilir."
+    }
+  ],
+  "anahtar_sayilar": [
+    {
+      "deger": "Azimut: K 0°, D 90°, G 180°, B 270°",
+      "aciklama": "Ana yönlerin azimut değerleri (gerçek kuzeyden doğuya ölçüm)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Horizontal_coordinate_system"
+    },
+    {
+      "deger": "24 saat = 360°, 1 saat = 15°",
+      "aciklama": "Sağ açıklık birimleri",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Right_ascension"
+    },
+    {
+      "deger": "23 sa 56 dk 4,09 sn",
+      "aciklama": "Yıldız günü (yıldızlara göre bir dönüş)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Sidereal_time"
+    },
+    {
+      "deger": "23,9345 saat; gün 24,0000 saat",
+      "aciklama": "Dünya'nın yıldızlara göre dönme süresi ve gün uzunluğu (NASA)",
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html"
+    },
+    {
+      "deger": "365,24 Güneş günü, 366,24 yıldız günü",
+      "aciklama": "Bir yıldaki gün sayıları",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Sidereal_time"
+    },
+    {
+      "deger": "41°00′49″ K",
+      "aciklama": "İstanbul'un enlemi",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Istanbul"
+    },
+    {
+      "deger": "89,35° (2022), kutba yaklaşık 0,65°",
+      "aciklama": "Kutup Yıldızı'nın ortalama dik açıklığı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Pole_star"
+    },
+    {
+      "deger": "yaklaşık 26.000 yıl; 2100'de yaklaşık 0,45°",
+      "aciklama": "Presesyon dönemi; Kutup Yıldızı'nın kutba en çok yaklaşacağı zaman ve açı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Pole_star"
+    },
+    {
+      "deger": "23,44°",
+      "aciklama": "Dünya ekseninin yörüngeye göre eğikliği",
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html"
+    },
+    {
+      "deger": "147,095 ve 152,100 milyon km",
+      "aciklama": "Dünya'nın günberi ve günöte uzaklıkları",
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html"
+    },
+    {
+      "deger": "20–22 Haziran, 20–23 Aralık",
+      "aciklama": "Gündönümlerinin düşebildiği tarih aralıkları",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Solstice"
+    },
+    {
+      "deger": "15 sa 7 dk 50 sn",
+      "aciklama": "İstanbul'da Haziran gündönümünde gündüz süresi (Aralık gündönümünden 5 sa 55 dk uzun)",
+      "kaynak_url": "https://timeanddate.com/sun/@745042"
+    },
+    {
+      "deger": "5 kadir = 100 kat; 1 kadir ≈ 2,512 kat",
+      "aciklama": "Pogson oranı (1856)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Apparent_magnitude"
+    },
+    {
+      "deger": "Sirius −1,46; Kutup Yıldızı +1,98; Venüs en çok −4,92; Güneş −26,83",
+      "aciklama": "Örnek görünür kadirler",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Apparent_magnitude"
+    },
+    {
+      "deger": "Dolunay −12,74",
+      "aciklama": "Ay'ın karşı konumdaki ortalama görünür kadiri",
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html"
+    },
+    {
+      "deger": "+6,5; yaklaşık 9.500 yıldız",
+      "aciklama": "Çok iyi koşullarda çıplak göz sınırı ve bu sınıra kadarki yıldız sayısı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Apparent_magnitude"
+    },
+    {
+      "deger": "Kent +3, banliyö +4",
+      "aciklama": "Çıplak gözle görülebilen en sönük kadir",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Apparent_magnitude"
+    },
+    {
+      "deger": "%80+ dünya, %99+ ABD ve Avrupa",
+      "aciklama": "Işık kirliliği altındaki nüfus (Falchi ve ark. 2016)",
+      "kaynak_url": "https://arxiv.org/abs/1609.01041"
+    },
+    {
+      "deger": "yılda %9,6",
+      "aciklama": "Globe at Night verisine göre gökyüzü parlaklığı artışı (2011–2022)",
+      "kaynak_url": "https://kpno.noirlab.edu/news/noirlab2302"
+    },
+    {
+      "deger": "Bortle 1: 7,6–8,0; Bortle 9: ≤4,0",
+      "aciklama": "Bortle ölçeğinin uç sınıflarında çıplak göz sınır kadiri",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Bortle_scale"
+    }
+  ],
+  "sozluk": [
+    { "terim": "Gök küresi", "tanim": "Gökteki cisimlerin uzaklıkları yok sayılarak iç yüzüne izdüşürüldüğü, Dünya merkezli hayali küre." },
+    { "terim": "Başucu", "tanim": "Gözlemcinin tam tepesindeki, yüksekliği 90° olan nokta." },
+    { "terim": "Ayakucu", "tanim": "Başucunun tam karşısında, gözlemcinin ayağının altında kalan nokta." },
+    { "terim": "Yükseklik", "tanim": "Bir cismin ufuktan yukarı doğru ölçülen açısı; ufukta 0°, başucunda 90°." },
+    { "terim": "Azimut", "tanim": "Ufuk boyunca gerçek kuzeyden doğuya doğru ölçülen yön açısı." },
+    { "terim": "Dik açıklık", "tanim": "Bir cismin gök ekvatorundan kuzeye artı, güneye eksi olarak ölçülen açısal uzaklığı; gökteki enlem." },
+    { "terim": "Sağ açıklık", "tanim": "İlkbahar noktasından gök ekvatoru boyunca doğuya doğru ölçülen, genellikle saatle verilen açı; gökteki boylam." },
+    { "terim": "Tutulum", "tanim": "Güneş'in bir yıl boyunca yıldızların önünde izlediği görünür yol; Dünya'nın yörünge düzleminin göğe izdüşümü." },
+    { "terim": "Yıldız günü", "tanim": "Dünya'nın yıldızlara göre bir tam dönüşü; 23 sa 56 dk 4 sn." },
+    { "terim": "Kutup çevresi yıldızı", "tanim": "Gök kutbuna yeterince yakın olduğu için belli bir enlemden bakıldığında hiç batmayan yıldız." },
+    { "terim": "Presesyon", "tanim": "Dünya ekseninin yaklaşık 26.000 yılda bir tur atan yavaş yalpalaması; gök kutuplarının yıldızlar arasında kaymasına yol açar." },
+    { "terim": "Gündönümü", "tanim": "Güneş'in gök ekvatoruna göre en kuzeye ya da en güneye ulaştığı an." },
+    { "terim": "Ekinoks", "tanim": "Güneş'in tutulum boyunca ilerlerken gök ekvatorunu kestiği an ve nokta." },
+    { "terim": "Kadir", "tanim": "Gökcisimlerinin parlaklığını ölçen, ters ve logaritmik ölçek; 5 kadir fark 100 kat parlaklık demektir." },
+    { "terim": "Gök parıltısı", "tanim": "Yapay ışıkların atmosferde saçılarak gece gökyüzünü aydınlatması." },
+    { "terim": "Bortle ölçeği", "tanim": "Gece gökyüzünün karanlığını 1'den (kusursuz) 9'a (kent merkezi) kadar sınıflayan ölçek." }
+  ],
+  "defter_notu": [
+    "Gök küresi: uzaklığı yok sayıp yalnızca yönü gösteren hayali küre. Başucu tepede, ayakucu altta.",
+    "Ufuk sistemi: yükseklik (0° ufuk, 90° başucu) + azimut (K 0°, D 90°, G 180°, B 270°). Yere ve zamana bağlı.",
+    "Ekvatoral sistem: dik açıklık δ (±90°, gökteki enlem) + sağ açıklık α (ilkbahar noktasından doğuya; 24 sa = 360°, 1 sa = 15°). Herkes için aynı.",
+    "Gök kutbunun yüksekliği = enlem. İstanbul ≈ 41° → Kutup Yıldızı kuzeyde ≈ 41° yükseklikte (kutba ≈ 0,65°).",
+    "Kutup çevresi: φ + δ > 90°. İstanbul'da δ > +49° olan yıldızlar batmaz.",
+    "Yıldız günü 23 sa 56 dk 4 sn; Güneş günü ~4 dk uzun. Yıldızlar her gece ~4 dk erken doğar.",
+    "Mevsimler eğiklikten (23,44°), uzaklıktan değil. Günberi Ocak'ta. İstanbul öğle Güneşi: kış ≈ 25,6°, yaz ≈ 72,4°.",
+    "Kadir: ters ve logaritmik. 5 kadir = 100 kat, 1 kadir ≈ 2,512 kat. Göz sınırı ~+6,5 (≈ 9.500 yıldız); kentte ~+3.",
+    "Bortle 1 (kusursuz, sınır 7,6–8,0) → Bortle 9 (kent merkezi, ≤ 4,0). Gök parlaklığı yılda %9,6 artıyor (Globe at Night)."
+  ],
+  "sorular": [
+    {
+      "soru": "Ufuk koordinat sistemi ile ekvatoral koordinat sistemi arasındaki temel fark nedir? Yıldız katalogları neden ekvatoral sistemi kullanır?",
+      "cevap": "Ufuk sistemi (yükseklik, azimut) gözlemcinin yerine ve saatine bağlıdır; Dünya döndükçe değerler değişir. Ekvatoral sistem (sağ açıklık, dik açıklık) gök küresine bağlıdır ve yeterince uzak bir yıldız için bütün gözlemcilerde aynıdır. Katalogların herkes için geçerli bir adrese ihtiyacı olduğu için ekvatoral sistem kullanılır."
+    },
+    {
+      "soru": "İstanbul'dan (φ ≈ 41°) bakan biri için dik açıklığı +45° olan bir yıldız batar mı? Dik açıklığı −52° olan bir yıldızı görebilir mi?",
+      "cevap": "+45° için 41 + 45 = 86°; bu 90°'den küçük olduğundan yıldız kutup çevresi değildir, batar ama doğar da, yani görülebilir. −52° için δ − φ = −52 − 41 = −93°; bu −90°'den küçük olduğundan yıldız İstanbul'dan hiç doğmaz."
+    },
+    {
+      "soru": "Sağ açıklığı 6 sa 20 dk olan bir yıldızın sağ açıklığı derece cinsinden kaçtır?",
+      "cevap": "6 × 15° = 90°; 20 dakika × 0,25° = 5°. Toplam 95°."
+    },
+    {
+      "soru": "+1 kadirlik bir yıldız +6 kadirlik bir yıldızdan kaç kat parlaktır? +1 ile +3 arasındaki oran nedir?",
+      "cevap": "5 kadir fark tanım gereği tam 100 kattır. 2 kadir fark yaklaşık 2,512 × 2,512 ≈ 6,31 kat eder."
+    },
+    {
+      "soru": "Güneş günü neden yıldız gününden yaklaşık 4 dakika uzundur?",
+      "cevap": "Dünya bir yıldız günü boyunca yörüngesinde yaklaşık 1° ilerler. Güneş'i yeniden öğle konumuna getirmek için bu 1°'yi telafi edecek kadar fazladan dönmesi gerekir; saatte 15° dönen Dünya için 1° yaklaşık 4 dakikaya karşılık gelir."
+    },
+    {
+      "soru": "Dünya Güneş'e en çok Ocak ayında yaklaşıyor. O halde İstanbul'da Ocak neden kış?",
+      "cevap": "Çünkü mevsimleri uzaklık değil eksen eğikliği belirler. Ocak'ta kuzey yarımküre Güneş'ten öteye eğiktir: öğle Güneşi alçaktadır (Aralık gündönümünde İstanbul'da yaklaşık 25,6°) ve gündüz kısadır. Günberi ile günöte arasındaki uzaklık farkı yalnızca yaklaşık %3,4'tür."
+    },
+    {
+      "soru": "Ekvatorda (enlem 0°) duran bir gözlemci Kutup Yıldızı'nı nerede görür? Kuzey Kutbu'ndaki biri nerede görür?",
+      "cevap": "Gök kutbunun yüksekliği enleme eşit olduğu için ekvatorda Kutup Yıldızı kuzey ufkunun hemen üstünde, yaklaşık 0° yükseklikte görünür. Kuzey Kutbu'nda (enlem 90°) ise başucuna yakın, yaklaşık 90° yükseklikte olur."
+    },
+    {
+      "soru": "Bortle ölçeğinde 9. sınıf bir gökyüzünün altında ne görmeyi bekleyebilirsin? Bu durum neden kötüleşiyor?",
+      "cevap": "Çıplak göz sınırı 4,0 kadir ya da daha azdır; takımyıldızların pek çok yıldızı kaybolur, Ülker dışında hiçbir Messier cismi çıplak gözle görülmez. Globe at Night verisine göre gökyüzü parlaklığı 2011–2022 arasında yılda %9,6 arttı; yani karanlık gök giderek azalıyor."
+    }
+  ],
+  "kaynaklar": [
+    { "ad": "Wikipedia – Celestial sphere", "url": "https://en.wikipedia.org/wiki/Celestial_sphere" },
+    { "ad": "Wikipedia – Horizontal coordinate system", "url": "https://en.wikipedia.org/wiki/Horizontal_coordinate_system" },
+    { "ad": "Wikipedia – Equatorial coordinate system", "url": "https://en.wikipedia.org/wiki/Equatorial_coordinate_system" },
+    { "ad": "Wikipedia – Right ascension", "url": "https://en.wikipedia.org/wiki/Right_ascension" },
+    { "ad": "Wikipedia – Celestial pole", "url": "https://en.wikipedia.org/wiki/Celestial_pole" },
+    { "ad": "Wikipedia – Pole star", "url": "https://en.wikipedia.org/wiki/Pole_star" },
+    { "ad": "Wikipedia – Circumpolar star", "url": "https://en.wikipedia.org/wiki/Circumpolar_star" },
+    { "ad": "Wikipedia – Diurnal motion", "url": "https://en.wikipedia.org/wiki/Diurnal_motion" },
+    { "ad": "Wikipedia – Sidereal time", "url": "https://en.wikipedia.org/wiki/Sidereal_time" },
+    { "ad": "Wikipedia – Ecliptic", "url": "https://en.wikipedia.org/wiki/Ecliptic" },
+    { "ad": "Wikipedia – Solstice", "url": "https://en.wikipedia.org/wiki/Solstice" },
+    { "ad": "Wikipedia – Solar zenith angle", "url": "https://en.wikipedia.org/wiki/Solar_zenith_angle" },
+    { "ad": "Wikipedia – Apparent magnitude", "url": "https://en.wikipedia.org/wiki/Apparent_magnitude" },
+    { "ad": "Wikipedia – Bortle scale", "url": "https://en.wikipedia.org/wiki/Bortle_scale" },
+    { "ad": "Wikipedia – Istanbul (koordinat)", "url": "https://en.wikipedia.org/wiki/Istanbul" },
+    { "ad": "NASA NSSDCA – Earth Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html" },
+    { "ad": "NASA NSSDCA – Moon Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html" },
+    { "ad": "NASA Space Place – What Causes the Seasons?", "url": "https://spaceplace.nasa.gov/seasons/en" },
+    { "ad": "timeanddate.com – İstanbul gün doğumu, gün batımı ve gündüz süresi", "url": "https://timeanddate.com/sun/@745042" },
+    { "ad": "Falchi ve ark. (2016), The new world atlas of artificial night sky brightness, Science Advances – arXiv", "url": "https://arxiv.org/abs/1609.01041" },
+    { "ad": "NSF NOIRLab basın bülteni noirlab2302 – Stars Disappear Before Our Eyes, Citizen Scientists Report", "url": "https://kpno.noirlab.edu/news/noirlab2302" }
+  ]
+}

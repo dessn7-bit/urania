@@ -13,6 +13,7 @@
     D.dersler.forEach(x => {
       (x.sorular || []).forEach((s, i) => ls.push({ id: x.id + 's' + i, ders: x.id, dersAd: x.baslik, tur: 'soru', on: s.soru, arka: s.cevap }));
       (x.anahtar_sayilar || []).forEach((s, i) => ls.push({ id: x.id + 'n' + i, ders: x.id, dersAd: x.baslik, tur: 'sayi', on: s.aciklama, arka: s.deger, kaynak: s.kaynak_url }));
+      (x.sozluk || []).forEach((s, i) => ls.push({ id: x.id + 't' + i, ders: x.id, dersAd: x.baslik, tur: 'terim', on: s.terim, arka: s.tanim }));
     });
     return ls;
   }

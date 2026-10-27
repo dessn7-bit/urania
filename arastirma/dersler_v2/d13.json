@@ -1,0 +1,269 @@
+{
+  "id": "d13",
+  "unite": "gezegen_yasam",
+  "yeni": true,
+  "baslik": "Ötegezegenler: Başka Güneşlerin Dünyaları",
+  "ozet": "Güneş dışındaki yıldızların çevresinde dolanan gezegenlerin nasıl bulunduğunu öğreniyorsun: yıldızın yalpalaması, önünden geçen gezegenin gölgesi, ışığı büken kütleçekim ve doğrudan fotoğraf. Ardından bugünkü sayımı, gezegen türlerini, yaşanabilir bölgeyi, TRAPPIST-1 sistemini ve Webb'in uzak gezegenlerin havasını nasıl okuduğunu görüyorsun.",
+  "on_bilgi": ["d2", "d3"],
+  "bolumler": [
+    {
+      "baslik": "Başka güneşlerin gezegenleri: neden bu kadar geç bulduk?",
+      "paragraflar": [
+        "Gece gördüğün her yıldız bir güneştir. Peki onların da gezegenleri var mı? Bu soru yüzyıllardır sorulur, ama ilk sağlam cevaplar ancak 1990'larda geldi. Güneş'ten başka bir yıldızın ya da yıldız kalıntısının çevresinde dolanan gezegene ötegezegen denir. Bu kadar geç bulunmalarının nedeni basit: gezegenler kendi ışığını üretmez, yalnızca yıldızlarının ışığını yansıtır. NASA'nın ötegezegen arşivini yürüten IPAC'a göre Güneş, Dünya'dan yaklaşık 10 milyar kat parlaktır. Uzaktan bakan biri için Dünya'yı Güneş'in yanında seçmek, dev bir projektörün dibindeki bir kibrit alevini görmeye çalışmak gibidir. Benzetmenin sınırı şu: gerçek sorun yalnızca parlaklık farkı değil, ikisinin gökte birbirine çok yakın görünmesidir.",
+        "İlk doğrulanmış ötegezegenler beklenmedik bir yerden çıktı. 1992'de Aleksander Wolszczan ve Dale Frail, Arecibo radyo teleskobuyla, bugün Lich adıyla da anılan bir pulsarı inceliyordu. Pulsar, d6'da tanıdığın, hızla dönen bir nötron yıldızıdır; bu pulsar yaklaşık 6,2 milisaniyede bir döner ve deniz feneri gibi düzenli atımlar yollar. Araştırmacılar 4.040 atımın varış zamanını ölçtü ve zamanlamada küçük, düzenli kaymalar buldu. Tek makul açıklama, pulsarı çekiştiren iki küçük kütleli eşlikçiydi: kütleleri Dünya'nınkinin birkaç katı, dolanma süreleri 66,6 ve 98,2 gün olan iki gezegen. 1994'te üçüncü bir gezegen doğrulandı; kütlesi Ay'ınki kadar, dolanma süresi 25,3 gündür.",
+        "Güneş benzeri bir yıldızın çevresindeki ilk gezegen ise Ekim 1995'te duyuruldu. Michel Mayor ve Didier Queloz, Fransa'daki Haute-Provence Gözlemevi'nde 51 Pegasi yıldızını izlerken, Jüpiter'e benzeyen bir gaz devinin yıldızın çevresini yalnızca 4,2 günde dolandığını buldu. Gezegen yıldızına Merkür'ün Güneş'e olduğundan çok daha yakındı; kimse böyle bir dünya beklemiyordu. 51 Pegasi yaklaşık 50 ışık yılı uzaklıktadır. Bu keşif 2019 Nobel Fizik Ödülü'nün yarısını getirdi; ödül gerekçesi, Güneş türünden bir yıldızın çevresinde dolanan bir ötegezegenin keşfiydi. Bugün yıldızın resmî adı Helvetios, gezegeninki Dimidium'dur."
+      ],
+      "akilda": "Ötegezegen, Güneş dışındaki bir yıldızın çevresinde dolanan gezegendir; ilkleri 1992'de bir pulsarın çevresinde, Güneş benzeri bir yıldızın çevresindeki ilki ise 1995'te 51 Pegasi'de bulundu."
+    },
+    {
+      "baslik": "Yıldızın yalpalaması: dikine hız yöntemi",
+      "paragraflar": [
+        "Çekiç atan bir atleti düşün. Çekici kendi çevresinde döndürürken atlet de küçük bir daire çizerek hafifçe geri çekilir. Gezegen ile yıldız arasında da aynı şey olur: ikisi de ortak kütle merkezinin çevresinde dolanır. Yıldız çok daha ağır olduğu için çizdiği daire küçüktür, ama sıfır değildir. Bu hareketin bize doğru ya da bizden uzağa olan bileşenine dikine hız denir. d2'de gördüğün Doppler kayması burada devreye girer: yıldız bize yaklaşırken tayfındaki soğurma çizgileri biraz maviye, uzaklaşırken biraz kırmızıya kayar. Çizgiler düzenli bir ritimle ileri geri kayıyorsa, görünmeyen bir eşlikçi yıldızı çekiştiriyor demektir.",
+        "Kaymalar inanılmaz küçüktür. Jüpiter, Güneş'in hızını yaklaşık 12 yıllık bir döngüde yaklaşık 12,4 m/s değiştirir; Dünya'nın etkisi ise yılda yalnızca yaklaşık 0,1 m/s'dir. Şili'deki La Silla Gözlemevi'nde çalışan HARPS tayfölçeri 0,3 m/s kadar küçük kaymaları yakalayabilir; yeni kuşak aletlerde ölçüm hatasının 0,1 m/s'nin altına inmesi bekleniyor. 51 Pegasi b ise yıldızını yaklaşık 55,9 m/s salındırır. Ağır ve yıldızına çok yakın olduğu için sinyali büyüktü; ilk bulunan gezegen olması tesadüf değildi.",
+        "Yöntemin önemli bir sınırı var: yalnızca görüş doğrultumuz boyunca olan hareketi ölçer. Yörünge düzlemini yandan mı yoksa eğik mi gördüğümüzü bilmediğimiz için, ölçtüğümüz kütle gezegenin en az kütlesidir; gerçek kütle bundan büyük olabilir. Yine de bu yöntem bize en yakın ötegezegeni buldu. 2016'nın ocak ve mart ayları arasında HARPS ile yapılan gözlemler, 4,2 ışık yılı uzaklıktaki Proxima Centauri'nin çevresinde en az 1,3 Dünya kütlesinde bir gezegen ortaya çıkardı. Proxima b yıldızının çevresini yaklaşık 11,2 günde dolanır ve ondan yaklaşık 7 milyon km uzaktadır; bu, Dünya-Güneş uzaklığının yaklaşık %5'idir. Gezegenin etkisiyle yıldız bize yaklaşık 5 km/sa hızla yaklaşıp uzaklaşır: aşağı yukarı bir insanın yürüme hızı."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Proxima'nın yürüyüş hızı ölçülebilir mi?",
+        "metin": "Proxima Centauri'nin salınım hızı yaklaşık 5 km/sa. Bunu m/s'ye çevir: 5 km = 5.000 m, 1 saat = 3.600 s. 5.000 ÷ 3.600 ≈ 1,39 m/s. HARPS'ın yakalayabildiği en küçük kayma 0,3 m/s olduğuna göre sinyal bu sınırın 1,39 ÷ 0,3 ≈ 4,6 katı; yani ölçülebilir. Karşılaştırma için: 51 Pegasi b'nin sinyali 55,9 m/s, Jüpiter'in Güneş'e etkisi 12,4 m/s. 55,9 ÷ 12,4 ≈ 4,5; yani 51 Pegasi b, yıldızını Jüpiter'in Güneş'i salındırdığından yaklaşık 4,5 kat hızlı salındırıyor. Sonuç: Proxima'nın salınımı yaklaşık 1,4 m/s."
+      },
+      "akilda": "Gezegen yıldızını küçük bir daire üzerinde çekiştirir; tayf çizgilerinin ritmik Doppler kayması bu yalpalamayı ele verir ve gezegenin en az kütlesini verir."
+    },
+    {
+      "baslik": "Gölge oyunu: geçiş yöntemi",
+      "paragraflar": [
+        "Gece bir sokak lambasının önünden bir sinek geçtiğini düşün. Lambanın ışığı neredeyse hiç azalmaz, ama çok hassas bir ışıkölçer o küçük düşüşü yakalar. Geçiş yöntemi tam olarak budur: gezegen, bizim bakış doğrultumuzda yıldızının önünden geçerken yıldızın ışığının küçük bir kısmını keser. Bu düşüş her dolanımda tekrarlandığı için, düzenli aralıklarla gelen aynı derinlikte çukurlar bir gezegenin imzasıdır. Çukurun derinliği, gezegen diskinin alanının yıldız diskinin alanına oranıdır. Alan yarıçapın karesiyle büyüdüğü için derinlik, gezegen yarıçapının yıldız yarıçapına oranının karesidir.",
+        "Bu yöntem yalnızca yörüngesini bize göre kenarından gördüğümüz sistemlerde işler. Yıldızın önünden geçen büyük ve yakın bir gaz devi, yıldızın parlaklığını %2'ye kadar düşürebilir ve bunu birkaç günde bir tekrarlar. NASA'nın Kepler uzay teleskobu bu ilkeyle çalıştı: 2009'da fırlatıldı, yaklaşık 150.000 yıldızın parlaklığını sürekli izledi ve 2.600'den fazla ötegezegen keşfine imza attı. Yakıtı bitince Ekim 2018'de emekliye ayrıldı. Bugün bilinen ötegezegenlerin %75'ten fazlası geçiş yöntemiyle bulunmuştur; 2024 başına ait bir sayımda 5.557 gezegenin 4.146'sı bu yöntemle keşfedilmişti.",
+        "Geçiş sana gezegenin yarıçapını verir, dikine hız ise kütlesini. Geçiş gösteren bir gezegenin yörüngesini neredeyse tam yandan gördüğünü bildiğin için, dikine hızdan çıkan en az kütle gerçek kütleye çok yaklaşır. Kütleyi hacme bölünce ortalama yoğunluğu bulursun; yoğunluk da gezegenin kaya mı, su mu, yoksa kalın bir gaz zarfı mı olduğunu tahmin etmeye yarar. İki yöntemin birlikte kullanılması bu yüzden çok değerlidir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Jüpiter ve Dünya Güneş'in önünden geçseydi",
+        "metin": "NASA verilerine göre Güneş'in ortalama yarıçapı 695.700 km, Jüpiter'inki 69.911 km, Dünya'nınki 6.371 km. Jüpiter için oran: 69.911 ÷ 695.700 ≈ 0,1005. Karesi: 0,1005 × 0,1005 ≈ 0,0101, yani yaklaşık %1. Dünya için oran: 6.371 ÷ 695.700 ≈ 0,00916. Karesi: 0,00916 × 0,00916 ≈ 0,0000839, yani yaklaşık %0,0084; bu milyonda 84 parça demektir. Jüpiter'in gölgesi Dünya'nınkinden 0,0101 ÷ 0,0000839 ≈ 120 kat derin. Sonuç: Jüpiter Güneş'in ışığını yaklaşık %1, Dünya yalnızca yaklaşık %0,008 azaltır."
+      },
+      "akilda": "Geçiş derinliği (gezegen yarıçapı ÷ yıldız yarıçapı)² kadardır; Dünya boyunda bir gezegen Güneş benzeri bir yıldızın ışığını yalnızca yaklaşık on binde bir azaltır."
+    },
+    {
+      "baslik": "Fotoğraf, ışık bükme ve titreme: öteki yöntemler",
+      "paragraflar": [
+        "En sezgisel yol gezegenin fotoğrafını çekmektir; buna doğrudan görüntüleme denir. Teleskopta yıldızın ışığını örten bir düzenek kullanılır; bu düzeneğe koronagraf denir. Böylece yıldızın göz kamaştırıcı parıltısı bastırılır ve yanındaki sönük nokta seçilebilir. Bu yolla 100'den az gezegen bulunmuştur. En ünlü örnek, Kanatlıat takımyıldızında, 129 ışık yılı uzaklıktaki HR 8799'dur. Yıldızın her biri Jüpiter'den ağır dört gezegeni var; üçü 2008'de duyuruldu, dördüncüsü 2009–2010'da bulundu. Hawaii'deki Keck Gözlemevi'nin yedi yıla yayılan görüntülerinde gezegenlerin yörüngelerinde ilerleyişini izlemek bile mümkün. Yıldızın yaşı 60 milyon yıldan azdır.",
+        "İkinci yöntem kütleçekimin ışığı bükmesine dayanır; d16'da bu bükülmeyi ayrıntılı göreceksin. Önde bir yıldız, çok daha uzaktaki bir arka plan yıldızının önünden neredeyse tam hizada geçerse, öndeki yıldızın kütleçekimi bir mercek gibi davranır ve arkadaki yıldız birkaç gün boyunca parlaklaşır. Öndeki yıldızın gezegeni varsa, bu parlaklaşmanın üzerine birkaç saat süren küçük ek bir sıçrama biner. Buna kütleçekimsel mikromercek denir. Olay bir kez olur ve tekrarlanmaz; ama gezegenin ışığına ihtiyaç duymadığı için yıldızından uzaktaki, hatta hiçbir yıldıza bağlı olmadan dolaşan gezegenleri bulabilen tek yoldur. Bilinen gezegenlerin yaklaşık %3'ü bu yolla bulundu.",
+        "Mikromercek istatistik için de güçlüdür. 2002–2007 arasında milyonlarca yıldızın izlendiği ve 3.247 mercek olayının gözlendiği bir çalışma, 2012'de Nature dergisinde şu sonuca vardı: Samanyolu'nda ortalama her yıldızın çevresinde en az bir gezegen var. Aynı çalışmaya göre yıldızların yaklaşık altıda birinin Jüpiter benzeri, yaklaşık yarısının Neptün kütlesinde, yaklaşık üçte ikisinin süper Dünya türünde gezegeni olabilir.",
+        "Son yöntem astrometridir: yıldızın gökteki konumunun, gezegenin çekimiyle yana doğru kaymasını ölçmek. Kayma son derece küçüktür. Gaia uzay aracı 15. kadirden yıldızların konumunu yaklaşık 20–25 mikro yay saniyesi duyarlılıkla ölçebiliyor, yine de 2023 sonuna kadar astrometriyle yalnızca üç ötegezegen bulunmuştu. İlk keşifteki pulsar zamanlaması da hâlâ kullanılır ama çok az gezegen verir."
+      ],
+      "akilda": "Doğrudan görüntüleme yıldızından ayrı seçilebilen büyük gezegenleri; mikromercek yıldızından uzak ya da serbest gezegenleri; astrometri ise yıldızın gökteki küçük salınımını hedefler. Hepsi geçiş ve dikine hıza göre az gezegen verir."
+    },
+    {
+      "baslik": "Bugünkü sayım ve gezegen türleri",
+      "paragraflar": [
+        "NASA Exoplanet Archive, doğrulanmış ötegezegenlerin resmî listesini tutar. Eylül 2025'te sayı 6.000'e ulaştı; 5.000 eşiği bundan yalnızca üç yıl önce aşılmıştı. Doğrulanmayı bekleyen 8.000'den fazla aday daha var. Arşivin 12 Mart 2026 tarihli duyurusunda toplam 6.147'ydi ve sonraki haftalarda da yeni gezegenler eklendi; örneğin 23 Nisan 2026'da TESS uydusundan 114 gezegen birden geldi. Yani sen bu dersi okurken sayı daha yüksektir; güncel değeri arşivin kendisinden okumalısın.",
+        "NASA ötegezegenleri dört kaba gruba ayırır. Gaz devleri Satürn ya da Jüpiter boyunda veya daha büyüktür; yıldızlarına çok yakın dolanan ve sıcaklıkları binlerce dereceye çıkan türüne sıcak Jüpiter denir. Neptün benzerleri Neptün ya da Uranüs boyundadır; Dünya'dan büyük ama Neptün'den küçük olanlarına mini Neptün denir. Süper Dünyalar, kütlesi Dünya'nınkinin 2 ile 10 katı arasında olup Neptün'den küçük kalan gezegenlerdir. Karasal gezegenler ise Dünya boyunda ya da daha küçüktür ve kaya, silikat, su ya da karbondan oluşur. İlginç bir ayrıntı: çapı Dünya'nınkinin 1,5 ile 2 katı arasında olan gezegenler beklenenden çok daha seyrektir; bu boşluğa Fulton boşluğu denir.",
+        "Sayıları okurken bir tuzağa dikkat et: seçim etkisi. Sıcak Jüpiterler hem geçişte büyük gölge yapar, hem sık geçer, hem de yıldızlarını güçlü salındırır; yani bulmak kolaydır. Bu yüzden saptanan gezegenlerin yaklaşık %10'unu oluştururlar, ama tüm gezegenlerin ancak yaklaşık %1'i olduklarını düşünülür. Varlıkları da sürprizdi: kuramlar gaz devlerinin yıldıza bu kadar yakın oluşmasını beklemiyordu. Bugün üç açıklama tartışılıyor: yerinde oluşmaları, gaz ve toz diski daha dağılmadan içeri göç etmeleri, ya da uzak ve basık bir yörüngeden başlayıp yıldızın gelgit etkisiyle yörüngelerinin daralıp dairesele dönmesi. Hangisinin ne ölçüde geçerli olduğu kesin olarak bilinmiyor."
+      ],
+      "akilda": "Doğrulanmış ötegezegen sayısı 2025'te 6.000'i aştı ve artıyor; en kolay bulunan türler, örneğin sıcak Jüpiterler, listede gerçekte olduklarından daha kalabalık görünür."
+    },
+    {
+      "baslik": "Yaşanabilir bölge: ne çok sıcak, ne çok soğuk",
+      "paragraflar": [
+        "Kahvaltıda çayın ne çok sıcak ne çok soğuk olsun istersin. Gökbilimciler de bir yıldızın çevresinde benzer bir kuşak arar: gezegen yüzeyinde sıvı suyun bulunabileceği, ne çok sıcak ne çok soğuk bölge. Buna yaşanabilir bölge, halk arasında Goldilocks bölgesi denir. NASA'nın verdiği örnek iyi bir sezgi kazandırır: Dünya Plüton'un uzaklığında olsaydı havasının büyük kısmı donardı, Merkür'ün uzaklığında olsaydı suyu buhar olup giderdi. Ama dikkat: bir gezegenin bu bölgede olması yaşanabilir olduğu anlamına gelmez. Gezegenin büyüklüğü, sıcaklığı ve yıldızın türü de belirleyicidir; kalın bir atmosferi olmayan bir gezegen bölgenin ortasında bile kuru ve donuk kalabilir.",
+        "Güneş'in yaşanabilir bölgesinin sınırları hesaplama yöntemine göre değişir. Kopparapu ve arkadaşlarının 2013 tahmini yaklaşık 0,99 ile 1,67 AB arasıdır; bu hesapta Dünya bölgenin iç kenarına çok yakın düşer. Kasting ve arkadaşlarının 1993 tahmini ise 0,95 ile 1,37 AB'dir. Bazı modeller iç kenarı 0,38 AB'ye kadar çeker, bazıları dış kenarı 10 AB'ye kadar iter. Bu farklar, modellerin gezegen atmosferi ve iklimi için yaptığı farklı varsayımlardan gelir. Kısacası yaşanabilir bölge keskin çizgili bir kuşak değil, bulanık kenarlı bir tahmindir.",
+        "Sönük bir yıldızın bölgesi yıldıza daha yakındır. Bunun bir bedeli var: kırmızı cücelerin yaşanabilir bölgesindeki gezegenler, Ay'ın Dünya'ya hep aynı yüzünü göstermesi gibi, yıldızlarına hep aynı yüzlerini dönebilir; buna gelgit kilidi denir. Ayrıca kırmızı cücelerin patlamaları yıldızın parlaklığını dakikalar içinde ikiye katlayabilir ve bir gezegenin atmosferini ve suyunu söküp alabilir. Kepler verilerinden yapılan tahminlere göre Samanyolu'ndaki yıldızların %20 ile %50'sinin yaşanabilir bölgesinde Dünya boyunda, kayalık bir gezegen olabilir; aralığın genişliği belirsizliğin hâlâ büyük olduğunu gösterir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Güneş'in dörtte biri kadar parlak bir yıldız",
+        "metin": "Bir yıldızdan gelen ışık, uzaklığın karesiyle azalır. Gezegenin Dünya'nın aldığı kadar ışık alması için uzaklığın, yıldızın ışınımının karekökü oranında değişmesi gerekir. Işınımı Güneş'inkinin 0,25 katı olan bir yıldız al. Karekökü: √0,25 = 0,5. Güneş için 0,99–1,67 AB'lik bölgeyi 0,5 ile çarp: 0,99 × 0,5 ≈ 0,50 AB, 1,67 × 0,5 ≈ 0,84 AB. Sonuç: bu yıldızın yaşanabilir bölgesi kabaca 0,50 ile 0,84 AB arasındadır. Bu yalnızca kaba bir ölçekleme; ayrıntılı modeller daha fazla etkeni hesaba katar."
+      },
+      "akilda": "Yaşanabilir bölge, yüzeyde sıvı su olabilecek uzaklık kuşağıdır; Güneş için yaklaşık 1–1,7 AB, ama sınırlar modele göre değişir ve bölgede olmak yaşam garantisi değildir."
+    },
+    {
+      "baslik": "TRAPPIST-1: yedi kayalık dünya",
+      "paragraflar": [
+        "Mayıs 2016'da, Avrupa Güney Gözlemevi'nin La Silla'daki TRAPPIST teleskobu, yakın bir cüce yıldızın çevresinde Venüs ve Dünya'ya benzer boyut ve sıcaklıkta üç gezegen buldu. Yıldız Güneş'ten çok daha soğuk ve kırmızıdır, boyutu Jüpiter'den ancak biraz büyüktür; kütlesi Güneş'inkinin yaklaşık %8'i kadardır. Bu tür yıldızlara ultra soğuk cüce denir. Kova takımyıldızındadır ve bize yaklaşık 39–40 ışık yılı uzaklıktadır.",
+        "22 Şubat 2017'de Michaël Gillon ve arkadaşları Nature dergisinde sistemin aslında yedi gezegeni olduğunu açıkladı; NASA'nın Spitzer uzay teleskobu ve Şili'deki Çok Büyük Teleskop (VLT) dahil birçok teleskop kullanılmıştı. Gezegenler b'den h'ye harflerle anılır ve hepsi Dünya boyunda, karasal gezegenlerdir. Yörüngeleri o kadar sıkışıktır ki dolanma süreleri 1,5 günle yaklaşık 20 gün arasında değişir; Merkür'ün Güneş çevresindeki turu ise yaklaşık 88 gün sürer. Bütün sistem Jüpiter'in büyük uydularının yörüngeleri ölçüsünde bir alana sığar. Gezegenlerden e, f ve g yaşanabilir bölgede dolanır ve yüzeylerinde su okyanusları barındırabilir.",
+        "Peki bu gezegenlerin havası var mı? Mart 2023'te James Webb Uzay Teleskobu, orta kızılötesi aleti MIRI ile en içteki gezegen TRAPPIST-1 b'nin gündüz tarafının yaydığı ısıyı ölçtü. Sıcaklık yaklaşık 500 K, yani yaklaşık 230 °C çıktı. Veriler çıplak kayadan oluşan, atmosferi olmayan bir yüzeyle neredeyse tam uyumluydu. Ölçüm çok zordu: yıldız gezegenden 1.000 kattan fazla parlak olduğu için sinyal sistemin parlaklığının %0,1'inden azdı. TRAPPIST-1 gibi kırmızı cüceler etkindir, patlamalar ve X ışınları yayar. Dış gezegenlerin atmosfer tutup tutamadığı hâlâ açık bir soru."
+      ],
+      "akilda": "TRAPPIST-1, yaklaşık 40 ışık yılı ötede, yedi Dünya boyunda gezegeni olan küçük bir kırmızı cücedir; üç gezegeni yaşanabilir bölgede, ama en içteki gezegenin atmosferi yok gibi görünüyor."
+    },
+    {
+      "baslik": "Webb ile başka dünyaların havasını okumak",
+      "paragraflar": [
+        "Güneş batarken gökyüzünün kızıllaştığını görürsün; ışık havanın kalın bir katmanından geçerken bazı renkleri kaybeder. Ötegezegen atmosferleri de benzer bir yolla okunur. Gezegen yıldızının önünden geçerken yıldız ışığının küçük bir kısmı gezegenin atmosferinin ince halkasından süzülerek bize ulaşır. d2'de öğrendiğin gibi her gaz belirli dalga boylarını soğurur; bu onun parmak izidir. Gölgenin derinliği her dalga boyunda biraz farklı çıkar: atmosferdeki bir gazın soğurduğu renklerde gezegen biraz daha büyük görünür. Bu küçük farkları dalga boyuna göre dizdiğinde gezegenin geçiş tayfını elde edersin.",
+        "Webb'in bu alandaki ilk büyük başarısı WASP-39 b oldu. Bu gezegen yaklaşık 700 ışık yılı uzakta, Güneş benzeri bir yıldızın çevresinde dolanan sıcak bir gaz devidir: kütlesi Jüpiter'inkinin yaklaşık dörtte biri, yani Satürn'e yakındır; çapı ise Jüpiter'inkinin 1,3 katıdır. Yıldızına Güneş-Merkür uzaklığının sekizde biri kadar yakındır, bir turunu dört günden biraz uzun sürede atar ve sıcaklığı yaklaşık 900 °C'dir. Webb'in yakın kızılötesi tayfölçeri NIRSpec, 10 Temmuz 2022'deki bir geçişte gezegeni gözledi. Tayfta 4,1 ile 4,6 mikrometre arasında küçük bir tümsek göründü: bir ötegezegen atmosferinde karbondioksitin ilk açık kanıtı. NASA bu sonucu 25 Ağustos 2022'de duyurdu.",
+        "Eylül 2025 itibarıyla Webb, 100'den fazla ötegezegenin atmosferini incelemişti. Yine de küçük, kayalık gezegenlerin ince atmosferlerini okumak hâlâ sınırda bir iş; sinyaller çok küçük; TRAPPIST-1 b ölçümünde gördüğün gibi sistemin ışığının binde birinden bile az olabilir. Bir atmosferde yaşamla ilişkilendirilebilecek gazları aramak, yani biyoimza avı, d18'in konusu."
+      ],
+      "akilda": "Geçiş sırasında yıldız ışığı gezegenin atmosferinden süzülür; Webb bu ışığın tayfından gazların parmak izini okur ve 2022'de WASP-39 b'de karbondioksiti açıkça gördü."
+    },
+    {
+      "baslik": "Gökyüzünde bir ötegezegen yıldızı: 51 Pegasi",
+      "paragraflar": [
+        "Ötegezegenlerin hiçbirini dürbünle göremezsin, ama ilk keşfin yıldızını kendi gözünle bulabilirsin. 51 Pegasi, Kanatlıat takımyıldızındadır. Kanatlıat gökyüzünde en yüksek konumuna eylül, ekim ve kasım akşamlarında ulaşır. Takımyıldızın gövdesi dört yıldızlık büyük bir karedir. 51 Pegasi, karenin batı kenarındaki iki yıldızı birleştiren çizginin yaklaşık 2° batısındadır ve Alfa Pegasi'ye Beta Pegasi'den biraz daha yakındır. Yıldızın kadiri 5,49'dur; uygun koşullarda çıplak gözle görülebilir. Ama d11'de gördüğün gibi kent merkezinde (Bortle 8–9) çıplak gözün sınırı 4,0–4,5 kadir civarına iner. İstanbul'un ışıklı bir semtinde onu ancak dürbünle, yıldız atlayarak arayabilirsin.",
+        "Yıldızın dik açıklığı yaklaşık 20° 46′ kuzey, sağ açıklığı yaklaşık 22 saat 57 dakikadır. Tayf türü G2V olan, Güneş türünden bir yıldızdır. Ona baktığında gezegeni görmezsin; ama ışığı bir tayfölçerden geçirildiğinde, çizgilerinin 4,2 günlük bir ritimle ileri geri kaydığı yıldıza bakıyorsun. Ötegezegen çağı o ritimle başladı."
+      ],
+      "ornek": {
+        "baslik": "Örnek: 51 Pegasi İstanbul'dan ne kadar yükselir?",
+        "metin": "d1'de gök kutbunun yüksekliğinin enleme eşit olduğunu gördün; buna göre gök ekvatoru güney ufkunun 90° − φ kadar üstünden geçer. Bir yıldız meridyenden geçerken yüksekliği h = 90° − φ + δ olur (yıldız başucunun güneyinde kalıyorsa; kuzey dik açıklık artı, güney dik açıklık eksi sayılır). İstanbul için φ ≈ 41°, 51 Pegasi için δ ≈ 20,8° kuzey, yani artı 20,8°. h = 90° − 41° + 20,8° = 69,8°. Sonuç: 51 Pegasi meridyende güney ufkunun yaklaşık 70° üzerine çıkar; başucuna oldukça yakın, ufuk pusundan uzak bir yükseklik."
+      },
+      "akilda": "51 Pegasi, Kanatlıat'ın büyük karesinin batı kenarının yakınındaki 5,5 kadirlik bir yıldızdır; sonbahar akşamları İstanbul'dan yaklaşık 70° yüksekliğe çıkar."
+    }
+  ],
+  "formuller": [
+    {
+      "ad": "Geçiş derinliği",
+      "ifade": "ΔF / F ≈ (R_g / R_y)²",
+      "aciklama": "ΔF / F yıldız ışığındaki kesirli düşüş, R_g gezegenin yarıçapı, R_y yıldızın yarıçapı (aynı birimde, örneğin km). Gezegen diski tamamen yıldızın önündeyken geçerli; yıldız kenarının daha sönük olması gibi etkiler ihmal edilmiştir."
+    },
+    {
+      "ad": "Doppler kayması (dikine hız)",
+      "ifade": "v = c × Δλ / λ",
+      "aciklama": "v yıldızın bize doğru ya da bizden uzağa hızı (m/s), c ışık hızı, λ tayf çizgisinin durgun dalga boyu, Δλ ölçülen kayma (aynı birimde). Kırmızıya kayma uzaklaşma, maviye kayma yaklaşma demektir. v ışık hızından çok küçükken geçerli."
+    },
+    {
+      "ad": "Yaşanabilir bölgenin kaba ölçeklemesi",
+      "ifade": "d ≈ d_Güneş × √(L / L☉)",
+      "aciklama": "d başka bir yıldızın çevresinde aynı ışığı alan uzaklık (AB), d_Güneş Güneş için karşılık gelen uzaklık (AB), L yıldızın ışınımı, L☉ Güneş'in ışınımı. Işığın uzaklığın karesiyle azalmasından gelir; yıldızın rengi ve gezegen atmosferi gibi etkileri içermez."
+    },
+    {
+      "ad": "Meridyen yüksekliği",
+      "ifade": "h = 90° − φ + δ",
+      "aciklama": "h yıldızın meridyenden geçerken ufuktan yüksekliği, φ gözlemcinin enlemi, δ yıldızın dik açıklığı (hepsi derece). Kuzey yarımkürede, yıldız başucunun güneyinden geçtiğinde geçerli."
+    }
+  ],
+  "anahtar_sayilar": [
+    {
+      "deger": "6.147 (12 Mart 2026)",
+      "aciklama": "NASA Exoplanet Archive'daki doğrulanmış ötegezegen sayısı; arşiv her hafta güncelleniyor",
+      "kaynak_url": "https://vmexoweb2.ipac.caltech.edu/docs/exonews_archive.html"
+    },
+    {
+      "deger": "6.000 (Eylül 2025); 8.000'den fazla aday",
+      "aciklama": "Doğrulanmış ötegezegen eşiği ve doğrulama bekleyen adaylar",
+      "kaynak_url": "https://www.ipac.caltech.edu/news/the-nasa-exoplanet-archive-hits-6-000-planets"
+    },
+    {
+      "deger": "4,23 gün; 0,052 AB; en az 0,61 Jüpiter kütlesi",
+      "aciklama": "51 Pegasi b'nin dolanma süresi, yörünge yarı büyük ekseni ve en az kütlesi",
+      "kaynak_url": "https://en.wikipedia.org/wiki/51_Pegasi"
+    },
+    {
+      "deger": "12,4 m/s (Jüpiter) · 0,1 m/s (Dünya) · 0,3 m/s (HARPS sınırı)",
+      "aciklama": "Gezegenlerin Güneş'e kazandırdığı dikine hız salınımı ve HARPS'ın ölçebildiği en küçük kayma",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Doppler_spectroscopy"
+    },
+    {
+      "deger": "≈ %1 (Jüpiter) · ≈ %0,0084 (Dünya)",
+      "aciklama": "Güneş'in önünden geçişte ışığın kesilen kesri; 695.700, 69.911 ve 6.371 km'lik NASA yarıçaplarından hesap",
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html?level=1"
+    },
+    {
+      "deger": "%75'ten fazla",
+      "aciklama": "Geçiş yöntemiyle bulunan ötegezegenlerin payı",
+      "kaynak_url": "https://www.schoolsobservatory.org/learn/space/exoplanets/detection-methods"
+    },
+    {
+      "deger": "0,99–1,67 AB",
+      "aciklama": "Güneş'in yaşanabilir bölgesi için Kopparapu ve arkadaşlarının (2013) tahmini",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Habitable_zone"
+    },
+    {
+      "deger": "7 gezegen; 39–40 ışık yılı; e, f, g yaşanabilir bölgede",
+      "aciklama": "TRAPPIST-1 sistemi (Gillon ve ark., Nature, Şubat 2017)",
+      "kaynak_url": "https://www.cam.ac.uk/research/news/newly-discovered-planets-could-have-water-on-their-surfaces"
+    },
+    {
+      "deger": "≈ 500 K (≈ 230 °C)",
+      "aciklama": "Webb/MIRI ile ölçülen TRAPPIST-1 b gündüz sıcaklığı; atmosfersiz kayayla uyumlu",
+      "kaynak_url": "https://esawebb.org/news/weic2309/"
+    },
+    {
+      "deger": "4,1–4,6 mikrometre",
+      "aciklama": "WASP-39 b'nin geçiş tayfında karbondioksit tümseğinin dalga boyu aralığı (Webb/NIRSpec, 2022)",
+      "kaynak_url": "https://www.jpl.nasa.gov/news/nasas-webb-detects-carbon-dioxide-in-exoplanet-atmosphere/"
+    }
+  ],
+  "sozluk": [
+    { "terim": "Ötegezegen", "tanim": "Güneş'ten başka bir yıldızın ya da yıldız kalıntısının çevresinde dolanan gezegen." },
+    { "terim": "Dikine hız yöntemi", "tanim": "Gezegenin çekimiyle yalpalayan yıldızın tayf çizgilerindeki ritmik Doppler kaymasını ölçerek gezegen bulma yöntemi." },
+    { "terim": "Geçiş yöntemi", "tanim": "Gezegen yıldızının önünden geçerken yıldız ışığında oluşan düzenli, küçük düşüşleri ölçerek gezegen bulma yöntemi." },
+    { "terim": "Doğrudan görüntüleme", "tanim": "Yıldızın ışığını koronagrafla bastırıp yanındaki gezegenin kendisini fotoğraflama yöntemi." },
+    { "terim": "Kütleçekimsel mikromercek", "tanim": "Öndeki yıldızın ve gezegeninin kütleçekiminin, arkadaki bir yıldızın ışığını büküp kısa süreliğine parlatmasıyla gezegen bulma yöntemi." },
+    { "terim": "Astrometri", "tanim": "Yıldızların gökteki konumlarını çok hassas ölçme; ötegezegen aramada yıldızın yana doğru küçük salınımını arar." },
+    { "terim": "Sıcak Jüpiter", "tanim": "Yıldızına çok yakın dolanan, birkaç günlük yörüngesi ve binlerce derecelik sıcaklığı olan gaz devi." },
+    { "terim": "Süper Dünya", "tanim": "Kütlesi Dünya'nınkinin yaklaşık 2–10 katı olup Neptün'den küçük kalan gezegen." },
+    { "terim": "Mini Neptün", "tanim": "Dünya'dan büyük, Neptün'den küçük, kalın gaz zarflı olduğu düşünülen gezegen." },
+    { "terim": "Yaşanabilir bölge", "tanim": "Bir yıldızın çevresinde, gezegen yüzeyinde sıvı suyun bulunabileceği kadar ılık uzaklık kuşağı." },
+    { "terim": "Gelgit kilidi", "tanim": "Bir cismin dönme ve dolanma sürelerinin eşitlenip eşine hep aynı yüzünü göstermesi." },
+    { "terim": "Geçiş tayfı", "tanim": "Geçiş sırasında gezegen atmosferinden süzülen yıldız ışığının dalga boyuna göre ölçülmesiyle elde edilen, atmosferdeki gazları gösteren tayf." }
+  ],
+  "defter_notu": [
+    "Ötegezegen: Güneş dışındaki yıldızın çevresindeki gezegen. İlk: 1992, PSR B1257+12 pulsarı (Wolszczan ve Frail, Arecibo).",
+    "Güneş benzeri yıldızda ilk: Ekim 1995, 51 Pegasi b (Mayor ve Queloz), 4,2 günlük yörünge, ~50 ışık yılı. Nobel 2019.",
+    "Dikine hız: tayf çizgilerinin Doppler salınımı. Jüpiter → Güneş 12,4 m/s; Dünya → 0,1 m/s; HARPS 0,3 m/s. Verdiği: en az kütle.",
+    "Geçiş: derinlik = (R_g / R_y)². Jüpiter ~%1, Dünya ~%0,008 (84 ppm). Bulunanların %75'ten fazlası. Verdiği: yarıçap.",
+    "Öteki yöntemler: doğrudan görüntüleme (100'den az, örn. HR 8799), mikromercek (~%3, tek seferlik), astrometri (2023 sonu 3 gezegen).",
+    "Sayım: Eylül 2025'te 6.000; 12 Mart 2026'da 6.147; 8.000'den fazla aday. Her yıldıza ortalama en az bir gezegen (2012).",
+    "Türler: gaz devi (sıcak Jüpiter), Neptün benzeri (mini Neptün), süper Dünya (2–10 Dünya kütlesi), karasal. Seçim etkisine dikkat.",
+    "Yaşanabilir bölge: yüzeyde sıvı su. Güneş için 0,99–1,67 AB (2013); sınırlar modele bağlı. d ∝ √L.",
+    "TRAPPIST-1: Kova, ~40 ışık yılı, 7 Dünya boyu gezegen, e-f-g yaşanabilir bölgede. Webb: b ~500 K, atmosfersiz.",
+    "Webb geçiş tayfı: WASP-39 b'de CO₂ (4,1–4,6 mikrometre, 2022). 51 Pegasi: Kanatlıat, 5,49 kadir, İstanbul'dan ~70° yükseklik."
+  ],
+  "sorular": [
+    {
+      "soru": "İlk doğrulanmış ötegezegenler hangi tür bir cismin çevresinde bulundu ve hangi ölçümle?",
+      "cevap": "1992'de PSR B1257+12 adlı bir pulsarın, yani dönen bir nötron yıldızının çevresinde bulundu. Wolszczan ve Frail, Arecibo'da pulsar atımlarının varış zamanlarındaki düzenli kaymaları ölçtü; bu kaymaları ancak pulsarı çekiştiren gezegenler açıklayabiliyordu."
+    },
+    {
+      "soru": "Dikine hız yöntemi neden gezegenin gerçek kütlesini değil en az kütlesini verir?",
+      "cevap": "Çünkü yalnızca yıldızın görüş doğrultumuz boyunca olan hareketini ölçer. Yörünge düzlemi bize eğik duruyorsa gerçek hareketin bir kısmını göremeyiz; bu yüzden gerçek kütle ölçülenden büyük olabilir. Gezegen geçiş de yapıyorsa yörüngeyi neredeyse yandan gördüğümüz anlaşılır ve en az kütle gerçek kütleye çok yaklaşır."
+    },
+    {
+      "soru": "Yarıçapı Güneş'inkinin onda biri olan bir yıldızın önünden Dünya boyunda bir gezegen geçiyor. Geçiş derinliği, aynı gezegenin Güneş'in önünden geçişine göre kaç kat büyük olur?",
+      "cevap": "Derinlik (R_g / R_y)² ile orantılıdır. Yıldız yarıçapı 10 kat küçülünce oran 10 kat büyür, karesi 10 × 10 = 100 kat büyür. Güneş için yaklaşık %0,0084 olan derinlik yaklaşık %0,84 olur. Küçük yıldızların çevresindeki küçük gezegenlerin daha kolay bulunmasının bir nedeni budur."
+    },
+    {
+      "soru": "Saptanan ötegezegenlerin yaklaşık %10'u sıcak Jüpiter olduğu halde, tüm gezegenlerin yalnızca yaklaşık %1'inin sıcak Jüpiter olduğu düşünülüyor. Bu fark nereden gelir?",
+      "cevap": "Seçim etkisinden. Sıcak Jüpiterler büyük oldukları için geçişte derin gölge yapar, yıldıza yakın oldukları için sık geçer ve yıldızlarını güçlü salındırır. Bulunmaları kolay olduğu için listelerde gerçekteki paylarından fazla görünürler."
+    },
+    {
+      "soru": "Işınımı Güneş'inkinin 4 katı olan bir yıldızın yaşanabilir bölgesi kabaca nerededir? (Güneş için 0,99–1,67 AB al.)",
+      "cevap": "Uzaklık ışınımın kareköküyle ölçeklenir: √4 = 2. 0,99 × 2 ≈ 2,0 AB ve 1,67 × 2 ≈ 3,3 AB. Yani kabaca 2,0 ile 3,3 AB arası. Bu kaba bir ölçeklemedir; ayrıntılı modeller farklı sınırlar verebilir."
+    },
+    {
+      "soru": "TRAPPIST-1'in üç gezegeninin yaşanabilir bölgede olması, orada yaşam olabileceği anlamına gelir mi?",
+      "cevap": "Hayır, tek başına gelmez. Yaşanabilir bölge yalnızca uygun bir atmosferle yüzeyde sıvı su olabileceğini söyler. TRAPPIST-1 etkin bir kırmızı cücedir; patlamaları atmosferleri söküp alabilir. Webb en içteki gezegen b'de atmosfer izine rastlamadı. Dış gezegenlerin atmosferi olup olmadığı henüz bilinmiyor."
+    },
+    {
+      "soru": "Webb, WASP-39 b'de karbondioksiti nasıl saptadı?",
+      "cevap": "Gezegen yıldızının önünden geçerken yıldız ışığının bir kısmı gezegenin atmosferinden süzüldü. NIRSpec bu ışığı dalga boylarına ayırdı; 4,1 ile 4,6 mikrometre arasında gezegen biraz daha büyük göründü, yani ışık daha çok soğuruldu. Bu aralık karbondioksitin soğurma parmak iziydi."
+    },
+    {
+      "soru": "İstanbul'dan (φ ≈ 41°) bakınca dik açıklığı −10° olan bir yıldız meridyende ne kadar yükselir?",
+      "cevap": "h = 90° − φ + δ = 90° − 41° + (−10°) = 39°. Yıldız güney ufkunun yaklaşık 39° üzerine çıkar."
+    }
+  ],
+  "kaynaklar": [
+    { "ad": "NASA Exoplanet Archive – haber arşivi (2026)", "url": "https://vmexoweb2.ipac.caltech.edu/docs/exonews_archive.html" },
+    { "ad": "IPAC – The NASA Exoplanet Archive hits 6,000 planets (Eylül 2025)", "url": "https://www.ipac.caltech.edu/news/the-nasa-exoplanet-archive-hits-6-000-planets" },
+    { "ad": "Astrobites – The first exoplanet discovery (pulsar gezegenleri)", "url": "https://astrobites.org/2023/01/02/pulsar-planets/" },
+    { "ad": "Nobel Prize – Physics 2019 press release", "url": "https://www.nobelprize.org/prizes/physics/2019/press-release/" },
+    { "ad": "NASA APOD – 50 light-years to 51 Pegasi", "url": "https://science.nasa.gov/image-article/apod-2021-october-9-50-light-years-to-51-pegasi/" },
+    { "ad": "Wikipedia – 51 Pegasi", "url": "https://en.wikipedia.org/wiki/51_Pegasi" },
+    { "ad": "Jodrell Bank – Pegasus (gözlem rehberi)", "url": "https://www.jb.man.ac.uk/astronomy/nightsky/AList/Pegasus.html" },
+    { "ad": "Wikipedia – Doppler spectroscopy", "url": "https://en.wikipedia.org/wiki/Doppler_spectroscopy" },
+    { "ad": "Physics World – Proxima b keşfi (2016)", "url": "https://physicsworld.com/a/rocky-planet-found-in-habitable-zone-around-suns-nearest-neighbour/" },
+    { "ad": "The Schools' Observatory – Exoplanet detection methods", "url": "https://www.schoolsobservatory.org/learn/space/exoplanets/detection-methods" },
+    { "ad": "arXiv 2404.09143 – Exoplanet Detection: A Detailed Analysis", "url": "https://arxiv.org/pdf/2404.09143" },
+    { "ad": "NASA NSSDC – Sun Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html?level=1" },
+    { "ad": "NASA NSSDC – Jupiter Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/jupiterfact.html" },
+    { "ad": "Astronomy.com – Kepler emekliye ayrıldı (2018)", "url": "https://www.astronomy.com/science/kepler-space-telescope-retires-after-almost-a-decade-of-hunting-planets/" },
+    { "ad": "NASA – HR 8799 dört gezegenli sistem", "url": "https://science.nasa.gov/universe/exoplanets/a-four-planet-system-in-orbit-directly-imaged-and-remarkable/" },
+    { "ad": "NASA – Roman ve mikromercek", "url": "https://www.nasa.gov/missions/roman-space-telescope/new-study-reveals-nasas-roman-could-find-400-earth-mass-rogue-planets" },
+    { "ad": "Heidelberg Üniversitesi – Cassan ve ark. 2012 basın bülteni", "url": "https://uni-heidelberg.de/presse/news2012/pm20120111_planeten_en.html" },
+    { "ad": "NASA – Exoplanet planet types", "url": "https://science.nasa.gov/exoplanets/planet-types/" },
+    { "ad": "Smithsonian – Hot Jupiters", "url": "https://www.smithsonianmag.com/science-nature/what-astronomers-can-learn-hot-jupiters-scorching-giant-planets-galaxy-180973320/" },
+    { "ad": "NASA – What is the habitable zone?", "url": "https://science.nasa.gov/exoplanets/what-is-the-habitable-zone-or-goldilocks-zone" },
+    { "ad": "Wikipedia – Habitable zone", "url": "https://en.wikipedia.org/wiki/Habitable_zone" },
+    { "ad": "NASA – TRAPPIST-1'de üç gezegen (2016)", "url": "https://science.nasa.gov/universe/exoplanets/promising-worlds-found-around-nearby-ultra-cool-dwarf-star" },
+    { "ad": "Cambridge Üniversitesi – TRAPPIST-1'de yedi gezegen (2017)", "url": "https://www.cam.ac.uk/research/news/newly-discovered-planets-could-have-water-on-their-surfaces" },
+    { "ad": "NASA Photojournal – TRAPPIST-1 statistics table", "url": "https://science.nasa.gov/photojournal/trappist-1-statistics-table/" },
+    { "ad": "ESA/Webb weic2309 – TRAPPIST-1 b sıcaklığı", "url": "https://esawebb.org/news/weic2309/" },
+    { "ad": "NASA JPL – Webb detects carbon dioxide in exoplanet atmosphere", "url": "https://www.jpl.nasa.gov/news/nasas-webb-detects-carbon-dioxide-in-exoplanet-atmosphere/" }
+  ]
+}
