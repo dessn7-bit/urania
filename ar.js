@@ -80,7 +80,10 @@
     const yeni = eulerdenMatris(a, e.beta || 0, e.gamma || 0);
     st.R = suz(st.R, yeni, 0.25);
     st.sonOlay = performance.now();
-    if (st.mod !== 'algilayici') { st.mod = 'algilayici'; durumYaz(); }
+    if (st.mod !== 'algilayici') {
+      st.mod = 'algilayici'; durumYaz();
+      const pd = el && el.querySelector('#arPusula'); if (pd) pd.hidden = true; // veri geliyorsa izin düğmesine gerek yok
+    }
   }
   const mutlakDinle = e => yonOlayi(e, true);
   /* Göreli olay: mutlak olay hiç gelmiyorsa (pusulasız cihaz) kullanılır; kuzey için "Hizala" gerekir */
@@ -603,6 +606,7 @@
           <div class="alan"><label for="arAra">Ne arıyorsun?</label><input id="arAra" autocomplete="off" placeholder="Jüpiter, Vega, Ülker, Avcı…"></div>
           <ul class="ar-sonuc" id="arSonuc"></ul>
           <button value="kapat" class="dugme" style="width:100%;margin-top:10px">Kapat</button>
+          <p class="kucuk" style="margin-top:10px">Pusula ya da görüntü tutarsızsa: <a href="#tani">Tanı ekranı</a></p>
         </form>
       </dialog>`;
     cv = el.querySelector('#arKanvas'); ctx = cv.getContext('2d'); video = el.querySelector('#arVideo');

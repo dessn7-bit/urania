@@ -32,8 +32,10 @@
       if (!s1 || !s2) throw new Error('TLE çözülemedi');
       const yeni = { alindi: Date.now(), s1, s2 };
       U.yaz('tle_iss', yeni);
+      if (window.Tani) Tani.servis('CelesTrak (ISS)', 'tamam');
       return yeni;
     } catch (e) {
+      if (window.Tani) Tani.servis('CelesTrak (ISS)', 'hata', e.message);
       if (kayit && Date.now() - kayit.alindi < TLE_EN_ESKI) return Object.assign({ eski: true }, kayit);
       throw e;
     }

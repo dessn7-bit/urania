@@ -184,14 +184,18 @@
     const g = durum.gece, ay = durum.ayGece;
     const s = [];
     if (g.batis && g.astroSon) {
-      s.push(`Güneş <strong>${U.saat(g.batis)}</strong>'de batıyor; gökyüzü <strong>${U.saat(g.astroSon)}</strong>'de tam kararıyor ve ${U.saat(g.astroBas)}'e kadar karanlık kalıyor. Güneş ${U.saat(g.dogus)}'de doğuyor.`);
+      s.push(`Güneş <strong>${U.ek(U.saat(g.batis), 'de')}</strong> batıyor; gökyüzü <strong>${U.ek(U.saat(g.astroSon), 'de')}</strong> tam kararıyor ve ${U.ek(U.saat(g.astroBas), 'e')} kadar karanlık kalıyor.` + (g.dogus ? ` Güneş ${U.ek(U.saat(g.dogus), 'de')} doğuyor.` : ''));
     } else if (g.batis) {
-      s.push(`Güneş ${U.saat(g.batis)}'de batıyor ama bu gece tam karanlık olmuyor; Güneş ufkun yeterince altına inmiyor.`);
+      s.push(`Güneş ${U.ek(U.saat(g.batis), 'de')} batıyor ama bu gece tam karanlık olmuyor; Güneş ufkun yeterince altına inmiyor.`);
+    } else {
+      /* Kutup günü / kutup gecesi: öğleden sonraki 36 saatte batış yok */
+      const ogleAlt = G.cisimAltAz('Sun', g.ogle, durum.gzl).alt;
+      s.push(ogleAlt > 0 ? 'Güneş bugün batmıyor (kutup günü); gökyüzü hiç kararmayacak.' : 'Güneş bugün doğmuyor (kutup gecesi); karanlık gün boyu sürüyor.');
     }
     let ayCumle = `Ay: ${ay.ad}, %${Math.round(ay.oran * 100)} aydınlık`;
     const olaylar = [];
-    if (ay.dogus) olaylar.push(`${U.saat(ay.dogus)}'de doğuyor`);
-    if (ay.batis) olaylar.push(`${U.saat(ay.batis)}'de batıyor`);
+    if (ay.dogus) olaylar.push(`${U.ek(U.saat(ay.dogus), 'de')} doğuyor`);
+    if (ay.batis) olaylar.push(`${U.ek(U.saat(ay.batis), 'de')} batıyor`);
     if (olaylar.length) {
       const sirali = [[ay.dogus, olaylar.find(x => x.includes('doğuyor'))], [ay.batis, olaylar.find(x => x.includes('batıyor'))]]
         .filter(x => x[0]).sort((a, b) => a[0] - b[0]).map(x => x[1]);
@@ -200,7 +204,8 @@
     if (ayAydinlatirMi()) ayCumle += ' Işığı sönük bulutsu ve galaksileri bastıracak; kümeler, çift yıldızlar ve gezegenler için sorun değil.';
     else if (ay.oran < 0.25) ayCumle += ' Sönük cisimler için iyi bir gece.';
     s.push(ayCumle);
-    const gorunen = durum.gezegenGece.filter(p => p.gorunur && p.kadir <= 6);
+    /* "Çıplak gözle" eşiği, levhadaki gökyüzü ayarıyla aynı (şehirde Uranüs çıplak gözle görülmez) */
+    const gorunen = durum.gezegenGece.filter(p => p.gorunur && p.kadir <= durum.limitKadir);
     if (gorunen.length) {
       const adlar = gorunen.sort((a, b) => a.kadir - b.kadir).map(p => p.ad);
       const son = adlar.pop();
@@ -218,7 +223,7 @@
     ul.innerHTML = durum.gezegenGece.map(p => {
       const td = U.kacis(tdAd(p.takimyildiz));
       const dogBat = [p.dogus ? 'doğuş ' + U.saat(p.dogus) : null, p.batis ? 'batış ' + U.saat(p.batis) : null].filter(Boolean).join(' · ');
-      const arac = p.kadir <= 5.5 ? '<span class="rozet iyi">çıplak göz</span>' : (p.kadir <= 9 ? '<span class="rozet">dürbün</span>' : '<span class="rozet">teleskop</span>');
+      const arac = p.kadir <= durum.limitKadir ? '<span class="rozet iyi">çıplak göz</span>' : (p.kadir <= 9 ? '<span class="rozet">dürbün</span>' : '<span class="rozet">teleskop</span>');
       if (!p.gorunur) {
         const neden = p.gunesAcisi < 18 ? `Güneş'e çok yakın (${U.derece(p.gunesAcisi)})` : 'karanlıkta ufka yakın kalıyor';
         const ev = (p.cisim === 'Mercury' || p.cisim === 'Venus') ? ` %${Math.round(A.Illumination(p.cisim, durum.gece.ogle).phase_fraction * 100)} aydınlık.` : '';
@@ -269,7 +274,7 @@
         <text x="4" y="10" class="uydu-yon">D</text><text x="${W - 4}" y="10" text-anchor="end" class="uydu-yon">B</text>
         <circle cx="${cx}" cy="${cy}" r="${r.toFixed(1)}" class="jupiter-disk"/>${nok}
       </svg>
-      <span class="kucuk">Uydular ${U.saat(zaman)}'de: doğuda (solda) ${dogu.join(', ') || 'yok'}; batıda (sağda) ${bati.join(', ') || 'yok'}.${notlar.length ? ' ' + notlar.join('; ') + '.' : ''} 7×50 dürbünde Jüpiter'in yanında küçük noktalar olarak görünürler.</span>
+      <span class="kucuk">Uydular ${U.ek(U.saat(zaman), 'de')}: doğuda (solda) ${dogu.join(', ') || 'yok'}; batıda (sağda) ${bati.join(', ') || 'yok'}.${notlar.length ? ' ' + notlar.join('; ') + '.' : ''} 7×50 dürbünde Jüpiter'in yanında küçük noktalar olarak görünürler.</span>
     </span>`;
   }
 
@@ -402,7 +407,7 @@
       if (y.riskli.length) {
         const ilk = y.riskli[0].t, son = y.riskli[y.riskli.length - 1].t;
         /* değerler önceki saati kapsar: aralık ilk riskli saatin bir saat öncesinden başlar */
-        yCumle = `Yağış riski: ${U.saat(new Date(ilk.getTime() - 3600e3))}–${U.saat(son)} arası olasılık %${y.enCok}'e çıkıyor` + (y.toplam >= 0.1 ? `, gece toplamı yaklaşık ${U.sayi(y.toplam, 1)} mm.` : '.');
+        yCumle = `Yağış riski: ${U.saat(new Date(ilk.getTime() - 3600e3))}–${U.saat(son)} arası olasılık ${U.ek('%' + y.enCok, 'e')} çıkıyor` + (y.toplam >= 0.1 ? `, gece toplamı yaklaşık ${U.sayi(y.toplam, 1)} mm.` : '.');
       } else if (y.enCok >= 15) yCumle = `Hafif yağış olasılığı var (en çok %${y.enCok}).`;
       else yCumle = `Yağış beklenmiyor (olasılık en çok %${y.enCok}).`;
     }
@@ -521,7 +526,7 @@
     kadir.addEventListener('input', () => {
       durum.limitKadir = Number(kadir.value);
       U.yaz('limitKadir', durum.limitKadir);
-      kadirEtiket(); levhaCiz();
+      kadirEtiket(); levhaCiz(); ozetYaz(); gezegenYaz();
     });
     const tarih = el.querySelector('#gkTarih');
     tarih.addEventListener('change', () => {
@@ -566,7 +571,7 @@
       'Konum ve zaman hesapları <a href="https://github.com/cosinekitty/astronomy" target="_blank" rel="noopener">Astronomy Engine</a> ile cihazında yapılır. ' +
       'Yıldız ve takımyıldız verisi <a href="https://github.com/ofrohn/d3-celestial" target="_blank" rel="noopener">d3-celestial</a>. ' +
       'Meteor verisi: <a href="' + U.guvenliUrl(m.kaynak_url) + '" target="_blank" rel="noopener">' + U.kacis(m.kaynak) + '</a>. ' +
-      'Hedef koordinatları: ' + U.kacis(durum.veri.hedefKaynak) + '. Yer adları © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> katkıcıları.';
+      'Hedef koordinatları: ' + U.kacis(durum.veri.hedefKaynak) + '. Yer adları © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> katkıcıları.<br>Bir şey ters mi gidiyor? <a href="#tani">Tanı ekranı</a>';
   }
 
   async function ilk(kok) {

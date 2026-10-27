@@ -111,6 +111,35 @@
     if (g === -1) return 'dün';
     return g > 0 ? g + ' gün sonra' : (-g) + ' gün önce';
   }
+  /* Türkçe hâl eki: sayı/saat okunuşuna göre ünlü uyumu ve sertleşme.
+     "20:05" → "beş" → 'te; "17:06" → "altı" → 'da; "21:00" → "yirmi bir" → 'de.
+     tur: 'de' (bulunma), 'e' (yönelme), 'den' (ayrılma). */
+  const SON_KELIME = { 0: 'sıfır', 1: 'bir', 2: 'iki', 3: 'üç', 4: 'dört', 5: 'beş', 6: 'altı', 7: 'yedi', 8: 'sekiz', 9: 'dokuz',
+    10: 'on', 20: 'yirmi', 30: 'otuz', 40: 'kırk', 50: 'elli', 60: 'altmış', 70: 'yetmiş', 80: 'seksen', 90: 'doksan', 100: 'yüz', 1000: 'bin' };
+  function sonOkunus(metin) {
+    const m = String(metin).match(/(\d+)(?::(\d+))?\D*$/);
+    if (!m) return 'bir';
+    let n = m[2] != null ? (Number(m[2]) || Number(m[1])) : Number(m[1]);
+    if (n === 0) return 'sıfır';
+    if (n % 1000 === 0) return 'bin';
+    if (n % 100 === 0) return 'yüz';
+    if (n % 10 === 0) return SON_KELIME[n % 100];
+    return SON_KELIME[n % 10];
+  }
+  function ek(metin, tur) {
+    const k = sonOkunus(metin);
+    const unluler = k.match(/[aıoueiöü]/g);
+    const kalin = /[aıou]/.test(unluler[unluler.length - 1]);
+    const sonHarf = k[k.length - 1];
+    const unluyleBiter = /[aıoueiöü]/.test(sonHarf);
+    const sert = /[çfhkpsşt]/.test(sonHarf);
+    let e;
+    if (tur === 'de') e = (sert ? 't' : 'd') + (kalin ? 'a' : 'e');
+    else if (tur === 'den') e = (sert ? 't' : 'd') + (kalin ? 'an' : 'en');
+    else e = (unluyleBiter ? 'y' : '') + (kalin ? 'a' : 'e');
+    return metin + "'" + e;
+  }
+
   /* Takvim dosyası (.ics, RFC 5545): telefonda açılınca takvim uygulamasına eklenir.
      Olaydan bir saat önce hatırlatma içerir. */
   function icsKacis(t) { return String(t).replace(/\\/g, '\\\\').replace(/;/g, '\\;').replace(/,/g, '\\,').replace(/\r?\n/g, '\\n'); }
@@ -188,7 +217,7 @@
       }
       m.goster && m.goster(el, param);
     } catch (e) { hataGoster(e); }
-    document.title = 'Urania — ' + ({ gok: 'Gökyüzü', deney: 'Deneyler', ders: 'Dersler', hesap: 'Hesap', defter: 'Defter', ar: 'Gökyüzüne bak' }[bolum]);
+    document.title = 'Urania — ' + ({ gok: 'Gökyüzü', deney: 'Deneyler', ders: 'Dersler', hesap: 'Hesap', defter: 'Defter', ar: 'Gökyüzüne bak', tani: 'Tanı' }[bolum]);
   }
 
   /* ---- Otomatik konum: telefon nerdeyse orası (varsayılan açık) ----
@@ -211,8 +240,9 @@
     if (adlar[h]) return adlar[h];
     try {
       const r = await fetch('https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=16&accept-language=tr&lat=' + enlem.toFixed(4) + '&lon=' + boylam.toFixed(4));
-      if (!r.ok) return null;
+      if (!r.ok) { T('Nominatim (yer adı)', 'hata', 'HTTP ' + r.status); return null; }
       const j = await r.json(), a = j.address || {};
+      T('Nominatim (yer adı)', 'tamam');
       const mahalle = a.suburb || a.quarter || a.neighbourhood || a.village || a.hamlet;
       const ilce = a.town || a.city_district || a.county || a.city || a.province;
       const ad = [mahalle, ilce].filter(Boolean).join(', ');
@@ -221,7 +251,7 @@
       const anahtarlar = Object.keys(yeni); if (anahtarlar.length > 200) delete yeni[anahtarlar[0]];
       yaz('yerAdlari', yeni);
       return ad;
-    } catch (e) { return null; }
+    } catch (e) { T('Nominatim (yer adı)', 'hata', e.message); return null; }
   }
   let konumAraniyor = null;
   function konumuBul(zorla) {
@@ -239,6 +269,7 @@
         const once = konum();
         const yeni = { enlem: +c.latitude.toFixed(4), boylam: +c.longitude.toFixed(4) };
         konumDurum.hata = null; konumDurum.kaynak = 'gps'; konumDurum.hassasiyet = c.accuracy; konumDurum.zaman = new Date();
+        T('GPS konumu', 'tamam', '±' + Math.round(c.accuracy) + ' m');
         const adOnbellek = oku('yerAdlari', {})[hucre(yeni.enlem, yeni.boylam)];
         if (!once.oto || mesafeKm(once, yeni) > 0.3) {
           konumYaz({ ad: adOnbellek || 'Bulunduğun yer', enlem: yeni.enlem, boylam: yeni.boylam, yukseklik: c.altitude ? Math.round(c.altitude) : 0, saatDilimi: Intl.DateTimeFormat().resolvedOptions().timeZone, oto: true });
@@ -253,6 +284,7 @@
       }, err => {
         clearTimeout(bekci);
         konumDurum.hata = err.code === 1 ? 'izin' : 'alinamadi';
+        T('GPS konumu', 'hata', (err.code === 1 ? 'izin yok' : err.code === 2 ? 'konum yok' : 'zaman aşımı') + ' · ' + err.message);
         konumDurum.kaynak = konum().oto ? 'son' : null;
         konumAraniyor = null; konumBildir(); coz(null);
       }, { enableHighAccuracy: false, timeout: 15000, maximumAge: 5 * 60e3 });
@@ -287,9 +319,12 @@
     }
   }
 
+  if (window.Tani) moduller.tani = window.Tani._modul;
+  const T = (ad, d, a) => { if (window.Tani) window.Tani.servis(ad, d, a); };
+
   window.Urania = {
     modul(ad, tanim) { moduller[ad] = tanim; },
-    basla, oku, yaz, sil, anahtarlar, konum, konumYaz, VARSAYILAN_KONUM, konumuBul, konumDurum, otoAcik, otoAyarla, dilimTahmin, dilimAdi, veri, guvenliUrl, icsMetni, icsIndir,
+    basla, oku, yaz, sil, anahtarlar, konum, konumYaz, VARSAYILAN_KONUM, konumuBul, konumDurum, otoAcik, otoAyarla, dilimTahmin, dilimAdi, veri, guvenliUrl, icsMetni, icsIndir, ek,
     sayi, bilimsel, saat, gun, gunHafta, tamTarih, kadir, derece, kacGun, kacis
   };
 })();

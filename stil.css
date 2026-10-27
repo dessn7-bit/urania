@@ -330,3 +330,5 @@ label.dugme { cursor: pointer; }
 .secim-satir { display: flex; gap: 10px; align-items: flex-start; font-size: 15px; cursor: pointer; }
 .secim-satir input { width: 20px; height: 20px; margin-top: 2px; accent-color: var(--pirinc); flex: none; }
 .gorunmez { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.tani-pusula { font: 500 15px/1.5 var(--sans); background: var(--levha); padding: 10px 12px; border-radius: 8px; min-height: 48px; }
+.tani-rapor { white-space: pre-wrap; word-break: break-word; font: 400 12px/1.5 ui-monospace, Menlo, Consolas, monospace; background: var(--levha); padding: 12px; border-radius: 8px; margin-top: 12px; }

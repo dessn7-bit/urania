@@ -40,8 +40,10 @@
       U.anahtarlar('hava2_').forEach(a => { const x = U.oku(a, null); if (!x || Date.now() - x.alindi > EN_ESKI) U.sil(a); });
       U.anahtarlar('hava_').forEach(a => U.sil(a)); // eski biçim
       U.yaz(k, { alindi: Date.now(), j });
+      if (window.Tani) Tani.servis('Open-Meteo (hava)', 'tamam');
       return { saatler: coz(j), alindi: new Date(), eski: false };
     } catch (e) {
+      if (window.Tani) Tani.servis('Open-Meteo (hava)', 'hata', e.message);
       if (kayit && Date.now() - kayit.alindi < EN_ESKI) return { saatler: coz(kayit.j), alindi: new Date(kayit.alindi), eski: true };
       throw e;
     }

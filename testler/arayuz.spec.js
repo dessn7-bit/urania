@@ -195,3 +195,20 @@ test('ISS: görünür geçişler listelenir (ilk: 28 Ekim 05:21–05:22 TSİ)', 
   await expect(ilk).toContainText('28 Ekim');
   await expect(page.locator('#gkIssKaynak')).toContainText('CelesTrak');
 });
+
+test('Tanı ekranı: rapor oluşur, yön olayı sayılır, kopyalanır', async ({ page, context }) => {
+  await context.grantPermissions(['clipboard-read', 'clipboard-write']);
+  await page.goto('/index.html#gok');
+  await expect(page.locator('#gkKaynak a', { hasText: 'Tanı ekranı' })).toBeVisible();
+  await page.locator('#gkKaynak a', { hasText: 'Tanı ekranı' }).click();
+  await expect(page.locator('#tnRapor')).toContainText('URANIA TANI');
+  await page.evaluate(() => { for (let i = 0; i < 5; i++) window.dispatchEvent(new DeviceOrientationEvent('deviceorientation', { alpha: 30, beta: 10, gamma: 0, absolute: true })); });
+  await expect(page.locator('#tnPusula')).toContainText('330°');
+  await page.locator('#tnYenile').click();
+  await expect(page.locator('#tnRapor')).toContainText('olay 5');
+  await expect(page.locator('#tnRapor')).toContainText('KONUM: Fetih Mahallesi');
+  await page.locator('#tnKopyala').click();
+  await expect(page.locator('#tnDurum')).toContainText('Kopyalandı');
+  const pano = await page.evaluate(() => navigator.clipboard.readText());
+  expect(pano).toContain('SERVİSLER');
+});
