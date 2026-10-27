@@ -201,7 +201,11 @@ input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; width: 22p
 input[type="range"]::-moz-range-thumb { width: 18px; height: 18px; border-radius: 50%; background: var(--pirinc); border: 3px solid var(--gece); }
 input[type="range"]:focus-visible { outline: 2px solid var(--pirinc); outline-offset: 2px; }
 html.kirmizi input[type="date"]::-webkit-calendar-picker-indicator,
-html.kirmizi input[type="datetime-local"]::-webkit-calendar-picker-indicator { filter: brightness(.45) sepia(1) saturate(6) hue-rotate(-30deg); }
+html.kirmizi input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  /* Tarayıcının takvim simgesi yerine kırmızı (#E63A28, --soluk) çizim: renk süzgeci turuncu bırakıyordu (G/R 0,42) */
+  filter: none; opacity: 1; cursor: pointer;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23E63A28' stroke-width='1.4'%3E%3Crect x='2' y='3' width='12' height='11' rx='1.5'/%3E%3Cpath d='M2 6.5h12M5 1.5v3M11 1.5v3'/%3E%3C/svg%3E") center / 16px 16px no-repeat;
+}
 .kadir-kontrol { max-width: 560px; margin: 4px auto 0; font-size: 14px; color: var(--soluk); }
 
 /* ---- Bu gece özeti ---- */
@@ -359,6 +363,8 @@ html.kirmizi .ar-durum, html.kirmizi .ar-bilgi, html.kirmizi .ar-hizala, html.ki
 .defter-form { margin-top: 4px; }
 .defter-form textarea { background: var(--gece); border: 1px solid var(--girdi-kenar); border-radius: 8px; padding: 9px 10px; color: var(--parsomen); font: 400 16px/1.5 var(--sans); width: 100%; resize: vertical; }
 .defter-form textarea:focus { border-color: var(--pirinc); outline: 2px solid var(--pirinc); outline-offset: 1px; }
+/* kırmızı modda boyutlandırma tutamacı gri kalmasın */
+html.kirmizi textarea::-webkit-resizer { background: linear-gradient(135deg, transparent 55%, var(--soluk) 55%, var(--soluk) 63%, transparent 63%, transparent 75%, var(--soluk) 75%, var(--soluk) 83%, transparent 83%); }
 #dfListe .sag { white-space: normal; overflow-wrap: anywhere; max-width: 14em; }   /* uzun yer adı dar ekranda taşmasın */
 .defter-not { display: block; color: var(--parsomen); font: 400 16px/1.55 var(--serif); margin-top: 6px; white-space: pre-wrap; overflow-wrap: anywhere; }
 .defter-bag { display: block; margin-top: 4px; font-size: 14px; }
@@ -392,6 +398,8 @@ html.kirmizi input[type="checkbox"]:checked::before { transform: scale(1); }
 /* ---- Bu gecenin planı (saat çizelgesi) ---- */
 .plan { list-style: none; margin: 8px 0 10px; padding: 0; border-left: 2px solid var(--pirinc-soluk); }
 .plan > li { position: relative; display: grid; grid-template-columns: 52px 1fr; gap: 2px 12px; padding: 10px 0 10px 14px; }
+@media (max-width: 260px) { .plan > li { grid-template-columns: 46px minmax(0, 1fr); gap: 2px 8px; } .plan .ad, .plan .alt { overflow-wrap: anywhere; } .kart-ozet, .mini-bas { flex-wrap: wrap; }
+  .sayilar li { grid-template-columns: minmax(0, 1fr); } .sayilar li > * { overflow-wrap: anywhere; } }
 .plan > li::before { content: ''; position: absolute; left: -6px; top: 16px; width: 10px; height: 10px; border-radius: 50%; background: var(--gece); border: 2px solid var(--pirinc); }
 .plan > li.plan-uydu::before, .plan > li.plan-ortme::before, .plan > li.plan-algol::before, .plan > li.plan-meteor::before { background: var(--pirinc); }
 .plan > li.plan-not::before { display: none; }
