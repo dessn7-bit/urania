@@ -159,7 +159,8 @@
         s += S.daire(x, y, 8, { dolgu: R.gunes, renk: R.gunes });
         s += S.yazi(x + 14, y + 5, ad, { boy: 14, renk: R.metin, kalin: true });
       });
-      s += S.yazi(cx + 92, cy - 30, 'gök ekvatoru', { boy: 13, renk: R.soluk, yan: -hE });
+      { const t = 40, o = 13, a = hE * rad;   // ekinoks çizgisi gök ekvatorudur: yazı çizginin hemen altında, ona paralel
+        s += S.yazi(cx + t * Math.cos(a) + o * Math.sin(a), cy - t * Math.sin(a) + o * Math.cos(a), 'gök ekvatoru', { boy: 13, renk: R.soluk, yan: -hE }); }
       s += S.daire(cx, cy, 4.5, { dolgu: R.metin, renk: R.metin });
       /* alt: aynı demet, iki geliş açısı */
       const zem = 318, w = 30;
@@ -206,8 +207,7 @@
       }
       /* büyütülen bölge ve bağlantı */
       s += S.cizgi(UX(a0), uy, UX(a1), uy, { renk: R.vurgu, kalin: 5, saydam: 0.6 });
-      s += S.cizgi(UX(a0), uy + 4, ax0, ay - 6, { renk: R.cizgi, kalin: 1 });
-      s += S.cizgi(UX(a1), uy + 4, ax1, ay - 6, { renk: R.cizgi, kalin: 1 });
+      s += S.yazi(200, 108, 'kalın bölge yakından:', { boy: 13, renk: R.vurgu, hiza: 'middle', italik: true });
       const ust = [[-26.8, 'Güneş', R.gunes, 'start', 8], [-12.74, 'Dolunay', R.ay, 'middle', 0], [31.5, 'Hubble XDF', R.mavi, 'end', -4]];
       ust.forEach(([m, ad, renk, hz, dx]) => {
         const x = UX(m);
@@ -219,6 +219,8 @@
       /* alt doğru */
       s += S.cizgi(ax0, ay, ax1, ay, { renk: R.metin, kalin: 1.6 });
       for (let m = a0; m <= a1; m++) s += S.cizgi(AX(m), ay - 3, AX(m), ay + 3, { renk: R.soluk, kalin: 1 });
+      s += S.yazi(ax0, ay + 20, '−6', { boy: 13, renk: R.soluk, hiza: 'middle' });
+      s += S.yazi(ax1, ay + 20, '+11', { boy: 13, renk: R.soluk, hiza: 'end' });
       /* [kadir, ad, renk, katman: 0 üst-yüksek, 1 alt] */
       const ogeler = [
         [-4.92, 'Venüs', R.gezegen, 0], [-2.94, 'Jüpiter', R.gezegen, 1], [-1.46, 'Sirius', R.yildiz, 0], [0.03, 'Vega', R.yildiz, 1],
@@ -284,9 +286,11 @@
       });
       for (let k = L0; k <= L1; k += 3) { const x = X(Math.pow(10, k)); s += S.cizgi(x, y + hb, x, y + hb + 5, { renk: R.soluk, kalin: 1 }); }
       /* görünür ışık büyütmesi: 380–700 nm */
-      const g0 = 60, g1 = 340, gy = 150, gh = 20, G = nm => g0 + (nm - 380) / (700 - 380) * (g1 - g0);
-      s += S.cizgi(X(4e-7), y + hb, g0, gy, { renk: R.vurgu, kalin: 1, saydam: 0.7 });
-      s += S.cizgi(X(7e-7), y + hb, g1, gy, { renk: R.vurgu, kalin: 1, saydam: 0.7 });
+      const g0 = 60, g1 = 340, gy = 156, gh = 20, G = nm => g0 + (nm - 380) / (700 - 380) * (g1 - g0);
+      const yk = y + hb + 26;            // bağlantı, eksen yazılarının altından yelpazelenir
+      s += S.cizgi(X(4e-7), y + hb, X(4e-7), yk, { renk: R.vurgu, kalin: 1, saydam: 0.7 }) + S.cizgi(X(7e-7), y + hb, X(7e-7), yk, { renk: R.vurgu, kalin: 1, saydam: 0.7 });
+      s += S.cizgi(X(4e-7), yk, g0, gy, { renk: R.vurgu, kalin: 1, saydam: 0.7 });
+      s += S.cizgi(X(7e-7), yk, g1, gy, { renk: R.vurgu, kalin: 1, saydam: 0.7 });
       s += S.kutu(g0, gy, g1 - g0, gh, { renk: R.vurgu, kalin: 1.2, dolgu: R.vurguSoluk });
       [400, 500, 600, 700].forEach(nm => {
         s += S.cizgi(G(nm), gy + gh, G(nm), gy + gh + 5, { renk: R.soluk, kalin: 1 });
@@ -294,12 +298,12 @@
       });
       s += S.yazi(g0 - 6, gy + 15, 'mor', { boy: 13, renk: R.metin, hiza: 'end' });
       s += S.yazi(g1 + 6, gy + 15, 'kırmızı', { boy: 13, renk: R.metin });
-      s += S.yazi(200, gy - 8, 'Görünür ışık', { boy: 14, renk: R.vurgu, hiza: 'middle', kalin: true });
+      s += S.yazi(200, gy + 15, 'görünür ışık', { boy: 13, renk: R.metin, hiza: 'middle', kalin: true });
       /* yön */
-      s += S.ok(150, 230, 22, 230, { renk: R.soluk, kalin: 1.5, boy: 8 });
-      s += S.yazi(24, 222, 'yüksek enerji', { boy: 13, renk: R.soluk });
-      s += S.ok(250, 230, 378, 230, { renk: R.soluk, kalin: 1.5, boy: 8 });
-      s += S.yazi(376, 222, 'uzun dalga', { boy: 13, renk: R.soluk, hiza: 'end' });
+      s += S.ok(150, 234, 22, 234, { renk: R.soluk, kalin: 1.5, boy: 8 });
+      s += S.yazi(24, 226, 'kısa dalga, yüksek enerji', { boy: 13, renk: R.soluk });
+      s += S.ok(250, 234, 378, 234, { renk: R.soluk, kalin: 1.5, boy: 8 });
+      s += S.yazi(376, 226, 'uzun dalga, düşük enerji', { boy: 13, renk: R.soluk, hiza: 'end' });
       return s;
     }
   });
@@ -308,7 +312,7 @@
   C.ekle('d2-kara-cisim', {
     ders: 'd2', bolum: 4, oran: 0.8,
     baslik: 'Üç sıcaklıkta kara cisim eğrisi',
-    aciklama: 'Eğriler Planck yasasıyla hesaplandı: Rigel 12.100 K, Güneş 5772 K, Betelgeuse 3800 K. Sıcak cisim her dalga boyunda daha çok ışır ve tepesi kısa dalgaya kayar: Rigel yaklaşık 240 nm\'de, Güneş 502 nm\'de, Betelgeuse 763 nm\'de tepe yapar. Dikey eksen logaritmiktir, her çentik 10 kat demektir; renkli şerit görünür ışıktır.',
+    aciklama: 'Eğriler Planck yasasıyla hesaplandı: Rigel 12.100 K, Güneş 5772 K, Betelgeuse 3800 K. Sıcak cisim her dalga boyunda daha çok ışır ve tepesi kısa dalgaya kayar: Rigel 239 nm\'de, yani morötesinde, Güneş 502 nm\'de, Betelgeuse 763 nm\'de, yani kızılötesinin başında tepe yapar. Dikey eksen logaritmiktir, her çentik 10 kat demektir; renkli şerit görünür ışıktır.',
     kaynak: [KAYNAK.nist, KAYNAK.wien, KAYNAK.nasaGunes],
     ciz(S) {
       const R = S.R;
@@ -317,17 +321,19 @@
       const B = (lnm, T) => { const l = lnm * 1e-9; return 2 * h * c * c / Math.pow(l, 5) / (Math.exp(h * c / (l * k * T)) - 1); };
       const yildizlar = [[12100, 'Rigel', R.mavi, null], [5772, 'Güneş', R.gunes, null], [3800, 'Betelgeuse', R.uyari, '7 4']];
       const ref = B(b / 12100 * 1e9, 12100);
-      const alan = { x: 62, y: 16, w: 318, h: 214 }, ar = { x0: 100, x1: 2000, y0: 1e-4, y1: 2 };
+      const alan = { x: 70, y: 26, w: 312, h: 206 }, ar = { x0: 100, x1: 2000, y0: 1e-4, y1: 2 };
       const ek = S.eksen(alan, ar, {
         logY: true,
         xIsaret: [[500, '500'], [1000, '1000'], [1500, '1500'], [2000, '2000 nm']],
         yIsaret: [[1, '1'], [0.1, '0,1'], [0.01, '0,01'], [0.001, '0,001'], [1e-4, '0,0001']],
-        xAd: 'dalga boyu (nm)', yAd: 'ışınım (göreli)', yAdUzak: 56
+        xAd: 'dalga boyu (nm)', yAd: 'ışınım (göreli)', yAdUzak: 58
       });
       let s = '';
       s += S.kutu(ek.X(380), alan.y, ek.X(700) - ek.X(380), alan.h, { renk: 'none', dolgu: R.vurguSoluk, saydam: 0.55 });
       s += S.yazi((ek.X(380) + ek.X(700)) / 2, alan.y + alan.h - 8, 'görünür', { boy: 13, renk: R.vurgu, hiza: 'middle' });
       s += ek.svg.replace(/(<text[^>]*>2000 nm<\/text>)/, m => m.replace('text-anchor="middle"', 'text-anchor="end"'));
+      /* ad etiketleri eğrilerin kuyruğunda: Rigel ve Güneş eğrinin üstünde, Betelgeuse altında */
+      const adYer = { 12100: [1180, 'ust'], 5772: [1180, 'ust'], 3800: [1180, 'alt'] };
       yildizlar.forEach(([T, ad, renk, kes]) => {
         const ls = [];
         for (let i = 0; i <= 240; i++) {
@@ -338,11 +344,10 @@
         const lt = b / T * 1e9, xt = ek.X(lt), yt = ek.Y(B(lt, T) / ref);
         s += S.cizgi(xt, yt, xt, alan.y + alan.h, { renk, kalin: 1, kesik: '2 3', saydam: 0.8 });
         s += S.daire(xt, yt, 4, { dolgu: renk, renk });
-        const etiket = ad + ' ' + (T >= 10000 ? '12.100' : T) + ' K';
-        const nmT = Math.round(lt);
-        if (T === 12100) { s += S.yazi(xt + 8, yt + 4, etiket, { boy: 13, renk: R.metin, kalin: true }); s += S.yazi(xt + 8, yt + 20, 'tepe ≈ ' + (Math.round(lt / 10) * 10) + ' nm', { boy: 13, renk: R.soluk }); }
-        else if (T === 5772) { s += S.yazi(xt + 10, yt - 8, etiket, { boy: 13, renk: R.metin, kalin: true }); s += S.yazi(xt + 10, yt + 8, 'tepe ' + nmT + ' nm', { boy: 13, renk: R.soluk }); }
-        else { s += S.yazi(xt + 10, yt - 8, etiket, { boy: 13, renk: R.metin, kalin: true }); s += S.yazi(xt + 10, yt + 8, 'tepe ' + nmT + ' nm', { boy: 13, renk: R.soluk }); }
+        s += S.yazi(xt, yt - 10, Math.round(lt) + ' nm', { boy: 13, renk: R.metin, hiza: 'middle', kalin: true });
+        const [la, yer] = adYer[T], etiket = ad + ' ' + (T >= 10000 ? '12.100' : T) + ' K';
+        const ya = yer === 'ust' ? ek.Y(B(la, T) / ref) - 7 : ek.Y(B(2000, T) / ref) + 17;
+        s += S.yazi(ek.X(la), ya, etiket, { boy: 13, renk, kalin: true });
       });
       return s;
     }
@@ -364,7 +369,7 @@
       s += S.yazi(kx, ky + 58, 'kaynak', { boy: 13, renk: R.soluk, hiza: 'middle' });
       s += S.elips(gx, gy, 44, 22, { renk: R.mavi, kalin: 1.5, kesik: '4 3', dolgu: R.mavi, saydam: 0.25 });
       s += S.elips(gx, gy, 44, 22, { renk: R.mavi, kalin: 1.5, kesik: '4 3' });
-      s += S.yazi(gx, gy + 4, 'seyrek gaz', { boy: 13, renk: R.metin, hiza: 'middle' });
+      s += S.yazi(gx - 18, gy + 40, 'soğuk, seyrek gaz', { boy: 13, renk: R.mavi, hiza: 'middle' });
       /* üç bakış */
       const goz = (x, y, ad, hz) => S.daire(x, y, 4, { dolgu: R.metin, renk: R.metin }) + S.yazi(x + (hz === 'end' ? -10 : 10), y + 5, ad, { boy: 13, renk: R.metin, hiza: hz || 'start', kalin: true });
       s += S.ok(kx + 24, ky - 8, 298, 22, { renk: R.gunes, kalin: 1.5, boy: 8 }) + goz(304, 20, '1 sürekli');
@@ -374,7 +379,7 @@
       const x0 = 20, x1 = 380, X = nm => x0 + (nm - 380) / (700 - 380) * (x1 - x0), sh = 24;
       const balmer = [656.279, 486.135, 434.0472, 410.1734, 397.0075];
       const seritY = [182, 234, 286];
-      ['1 Sürekli tayf', '2 Soğurma çizgileri', '3 Salma çizgileri'].forEach((ad, i) => s += S.yazi(x0, seritY[i] - 7, ad, { boy: 13, renk: R.metin, kalin: true }));
+      ['1 Sürekli', '2 Soğurma', '3 Salma'].forEach((ad, i) => s += S.yazi(x0, seritY[i] - 7, ad, { boy: 13, renk: R.metin, kalin: true }));
       s += S.kutu(x0, seritY[0], x1 - x0, sh, { renk: R.soluk, kalin: 1, dolgu: R.metin, saydam: 0.85 });
       s += S.kutu(x0, seritY[1], x1 - x0, sh, { renk: R.soluk, kalin: 1, dolgu: R.metin, saydam: 0.85 });
       s += S.kutu(x0, seritY[2], x1 - x0, sh, { renk: R.soluk, kalin: 1, dolgu: R.zemin });
@@ -405,9 +410,8 @@
       const pencere = [[3e-7, 2e-6], [8e-6, 1.4e-5], [3e-4, 30]];
       const acik = l => pencere.some(([a, b]) => l >= a && l <= b);
       let s = '';
-      BANT.forEach(([ad, a, b]) => { if (ad && ad !== 'Morötesi' && ad !== 'Kızılötesi') s += S.yazi((X(a) + X(b)) / 2, 16, ad, { boy: 13, renk: R.soluk, hiza: 'middle' }); });
-      s += S.yazi((X(1e-8) + X(4e-7)) / 2 - 6, 16, 'Morötesi', { boy: 13, renk: R.soluk, hiza: 'middle' });
-      s += S.yazi((X(7e-7) + X(1e-3)) / 2 + 6, 16, 'Kızılötesi', { boy: 13, renk: R.soluk, hiza: 'middle' });
+      const kay = { 'Morötesi': -6, 'Kızılötesi': -2, 'Mikrodalga': 10 };      // komşu adlar birbirine değmesin
+      BANT.forEach(([ad, a, b]) => { if (ad) s += S.yazi((X(a) + X(b)) / 2 + (kay[ad] || 0), 16, ad, { boy: 13, renk: R.soluk, hiza: 'middle' }); });
       const ust = 82, alt = 112, zem = 152;
       /* atmosfer katmanı: pencerelerde boşluk */
       let bas = x0;

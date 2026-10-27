@@ -170,3 +170,5 @@ Kaynak: araştırma raporu "Urania: askıdaki 13 olgusal iddianın birincil kayn
 | 33 tüp, 27 kaya karotu | https://science.nasa.gov/photojournal/the-33-sample-tubes-collected-by-perseverance/ | "33 tubes… 27 rock cores" |
 | Sapphire Canyon 25. örnek, 22. kaya örneği | https://science.nasa.gov/resource/meet-the-mars-samples-sapphire-canyon-sample-25/ ; https://science.nasa.gov/mars/the-mars-report/2025-september-special-edition/ | "Meet the 25th Martian sample"; "the rover's 22nd rock sample" |
 | Kütle–ışıma: Duric yalnız iki parça | https://www.tevza.org/home/course/PCO2012/Duric%20N.%20Advanced%20astrophysics%20(CUP,%202004).pdf | L = M^4 (M > 0,43), 0,23 M^2,3 (M < 0,43); 1,4 M^3,5 ve 32.000 M yalnız Wikipedia türevlerinde |
+
+| Lacaille 8760 6,7 kadir; ancak olağanüstü karanlık gökte | https://en.wikipedia.org/wiki/Lacaille_8760 | "may only be visible to the unaided eye under exceptionally good viewing conditions" (ana oturum, sınav denetiminden sonra; "hiçbiri" mutlak ifadesi yumuşatıldı) |

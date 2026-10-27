@@ -5,7 +5,7 @@
   'use strict';
   const C = window.UraniaCizim; if (!C) return;
   const rad = Math.PI / 180;
-  const v = (x, b) => String(Math.round(x * Math.pow(10, b || 0)) / Math.pow(10, b || 0)).replace('.', ',');   // Türkçe ondalık
+  const v = (x, b) => x.toFixed(b || 0).replace('.', ',');                                                  // Türkçe ondalık (sabit hane)
   const nk = p => p.map(q => q[0].toFixed(2) + ',' + q[1].toFixed(2)).join(' ');                             // polygon noktaları
 
   /* Kepler denklemi: E − e·sin E = M (Newton yöntemi) */
@@ -88,16 +88,16 @@
       const R = S.R;
       /* a (AB) ve P (yıl): 9. ders 2. ve 3. bölüm (NASA); Plüton: 19. ders (39,48 AB, 247,94 yıl) */
       const g = [['Merkür', 0.39, 88 / 365.25, 1], ['Venüs', 0.72, 224.7 / 365.25, -1], ['Dünya', 1, 1, 1], ['Mars', 1.52, 1.88, -1],
-        ['Jüpiter', 5.20, 11.86, 1], ['Satürn', 9.57, 29.4, -1], ['Uranüs', 19.2, 84.0, 1], ['Neptün', 30.2, 164.8, -1], ['Plüton', 39.48, 247.94, 1]];
-      const ek = S.eksen({ x: 62, y: 12, w: 318, h: 238 }, { x0: 0.25, x1: 60, y0: 0.1, y1: 500 }, {
+        ['Jüpiter', 5.20, 11.86, 1], ['Satürn', 9.57, 29.4, -1], ['Uranüs', 19.2, 84.0, -1], ['Neptün', 30.2, 164.8, 1], ['Plüton', 39.48, 247.94, -1]];
+      const ek = S.eksen({ x: 50, y: 30, w: 330, h: 222 }, { x0: 0.25, x1: 60, y0: 0.1, y1: 500 }, {
         logX: true, logY: true,
         xIsaret: [[0.5, '0,5'], [1, '1'], [5, '5'], [10, '10'], [50, '50']],
         yIsaret: [[0.1, '0,1'], [1, '1'], [10, '10'], [100, '100']],
-        xAd: 'Yarı büyük eksen a (AB)', yAd: 'Dönem P (yıl)', yAdUzak: 48
+        xAd: 'Yarı büyük eksen a (AB)'
       });
-      let s = ek.svg;
+      let s = ek.svg + S.yazi(8, 16, 'Dönem P (yıl)', { boy: 14, renk: R.soluk });
       s += S.fonk(ek, a => Math.pow(a, 1.5), 0.25, 60, 60, { renk: R.vurgu, kalin: 1.6, kesik: '6 4' }, true);
-      s += S.yazi(ek.X(0.3), ek.Y(300), 'P² = a³', { boy: 16, renk: R.vurgu, kalin: true });
+      s += S.yazi(ek.X(0.32), ek.Y(150), 'P² = a³', { boy: 16, renk: R.vurgu, kalin: true });
       g.forEach(([ad, a, P, yan]) => {
         const x = ek.X(a), y = ek.Y(P);
         s += S.daire(x, y, 4.5, { dolgu: ad === 'Plüton' ? R.soluk : R.gezegen, renk: R.zemin, kalin: 1 });
@@ -109,7 +109,7 @@
   });
 
   C.ekle('d3-gelgit', {
-    ders: 'd3', bolum: 7, oran: 0.92,
+    ders: 'd3', bolum: 7, oran: 0.95,
     baslik: 'Büyük ve küçük gelgit',
     aciklama: 'Üstte Ay ile Güneş aynı doğrultuda: yeni ayda ya da dolunayda ikisinin şişirdiği su kabarıklıkları üst üste biner ve gelgit büyür. Altta Ay ile Güneş arasında dik açı var: ilkdördün ve sondördünde Güneş\'in etkisi Ay\'ınkini kısmen götürür ve kabarıklık küçülür. Güneş\'in etkisi Ay\'ınkinin yaklaşık %46\'sı alındı; şişkinlikler abartılmıştır, boylar ve uzaklıklar ölçeksizdir.',
     kaynak: [{ ad: 'NOAA – Tides tutorial: Variations', url: 'https://oceanservice.noaa.gov/education/tutorial_tides/tides06_variations.html' },
@@ -134,37 +134,37 @@
         if (!dik) {
           s += yariAydinlik(S, ex - 84, cy, 8, 180) + S.yazi(ex - 84, cy - 16, 'Yeni ay', { boy: 13, hiza: 'middle', renk: R.soluk });
           s += yariAydinlik(S, ex + 84, cy, 8, 180) + S.yazi(ex + 84, cy - 16, 'Dolunay', { boy: 13, hiza: 'middle', renk: R.soluk });
-          s += S.yazi(ex + 84, cy + 32, 'ya da', { boy: 13, hiza: 'middle', renk: R.soluk });
         } else {
           s += yariAydinlik(S, ex, cy - 66, 8, 180) + S.yazi(ex + 14, cy - 62, 'Sondördün', { boy: 13, renk: R.soluk });
           s += yariAydinlik(S, ex, cy + 66, 8, 180) + S.yazi(ex + 14, cy + 70, 'İlkdördün', { boy: 13, renk: R.soluk });
         }
         return s;
       };
-      let s = panel(0, 'Büyük gelgit: etkiler toplanır', false);
+      let s = panel(0, 'Büyük gelgit: yeni ay ya da dolunay', false);
+      s += S.yazi(388, 172, 'Kuzeyden bakış · ölçeksiz', { boy: 13, hiza: 'end', renk: R.soluk });
       s += S.cizgi(12, 186, 388, 186, { renk: R.cizgi, kalin: 1 });
-      s += panel(192, 'Küçük gelgit: etkiler kısmen götürür', true);
-      s += S.yazi(388, 364, 'Kuzeyden bakış · ölçeksiz', { boy: 13, hiza: 'end', renk: R.soluk });
+      s += panel(192, 'Küçük gelgit: ilkdördün ya da sondördün', true);
       return s;
     }
   });
 
   C.ekle('d3-lagrange', {
-    ders: 'd3', bolum: 8, oran: 0.86,
+    ders: 'd3', bolum: 8, oran: 0.88,
     baslik: 'Güneş–Dünya sisteminin beş Lagrange noktası',
     aciklama: 'L1 Dünya ile Güneş arasında, L2 Dünya\'nın tam arkasında, ikisi de Dünya\'dan yaklaşık 1,5 milyon km uzakta; L3 Güneş\'in öbür yanında. L4 ve L5, Güneş ve Dünya ile birer eşkenar üçgen kurar; biri Dünya\'nın önünde, biri arkasında dolanır. Turuncu noktalar kararsızdır, araçlar küçük ateşlemelerle yerinde durur; yeşil noktalar kararlıdır. L1 ile L2\'nin Dünya\'ya uzaklığı abartıldı, çizim ölçeksizdir.',
     kaynak: [{ ad: 'ESA – What are Lagrange points?', url: 'https://www.esa.int/Science_Exploration/Space_Science/What_are_Lagrange_points' },
       { ad: 'NASA Science – Webb Orbit', url: 'https://science.nasa.gov/mission/webb/orbit/' },
       { ad: 'Wikipedia – Lagrange point', url: 'https://en.wikipedia.org/wiki/Lagrange_point' }],
     ciz(S) {
-      const R = S.R, cx = 172, cy = 166, r = 124;
+      const R = S.R, cx = 172, cy = 150, r = 124;
       const yer = a => [cx + r * Math.cos(a * rad), cy - r * Math.sin(a * rad)];
       const [dx, dy] = yer(0), [l4x, l4y] = yer(60), [l5x, l5y] = yer(-60), [l3x, l3y] = yer(180);
       let s = S.daire(cx, cy, r, { renk: R.soluk, kalin: 1, kesik: '3 5' });
       s += S.ok(...yer(100), ...yer(112), { renk: R.soluk, kalin: 1.5, boy: 8 });
       /* eşkenar üçgenler */
-      [[l4x, l4y], [l5x, l5y]].forEach(([x, y]) => { s += S.cizgi(cx, cy, x, y, { renk: R.cizgi, kalin: 1.2, kesik: '4 4' }) + S.cizgi(dx, dy, x, y, { renk: R.cizgi, kalin: 1.2, kesik: '4 4' }); });
-      s += S.cizgi(cx, cy, dx, dy, { renk: R.cizgi, kalin: 1.2, kesik: '4 4' });
+      const ucg = { renk: R.soluk, kalin: 1, kesik: '4 4', saydam: 0.55 };
+      [[l4x, l4y], [l5x, l5y]].forEach(([x, y]) => { s += S.cizgi(cx, cy, x, y, ucg) + S.cizgi(dx, dy, x, y, ucg); });
+      s += S.cizgi(cx, cy, dx, dy, ucg);
       s += S.daire(cx, cy, 16, { dolgu: R.gunes, renk: R.gunes });
       s += S.yazi(cx, cy + 34, 'Güneş', { boy: 14, hiza: 'middle', kalin: true });
       s += S.daire(dx, dy, 7, { dolgu: R.mavi, renk: R.mavi });
@@ -178,11 +178,11 @@
       s += S.yazi(dx - 34, dy + 42, 'SOHO', { boy: 13, hiza: 'middle', renk: R.soluk });
       s += S.yazi(dx + 34, dy + 42, 'Webb', { boy: 13, hiza: 'middle', renk: R.soluk });
       s += S.yazi(l4x + 10, l4y + 12, 'Truva asteroitleri', { boy: 13, renk: R.soluk });
-      s += S.yazi(dx, dy + 66, '~1,5 milyon km', { boy: 13, hiza: 'middle', renk: R.soluk });
       /* gösterge */
-      s += S.daire(18, 330, 5, { dolgu: R.uyari, renk: R.uyari }) + S.yazi(30, 335, 'kararsız', { boy: 13 });
-      s += S.daire(110, 330, 5, { dolgu: R.iyi, renk: R.iyi }) + S.yazi(122, 335, 'kararlı', { boy: 13 });
-      s += S.yazi(388, 335, 'ölçeksiz', { boy: 13, hiza: 'end', renk: R.soluk });
+      s += S.yazi(12, 312, 'L1 ve L2: Dünya\'dan ~1,5 milyon km (abartıldı)', { boy: 13, renk: R.soluk });
+      s += S.daire(18, 333, 5, { dolgu: R.uyari, renk: R.uyari }) + S.yazi(30, 338, 'kararsız', { boy: 13 });
+      s += S.daire(110, 333, 5, { dolgu: R.iyi, renk: R.iyi }) + S.yazi(122, 338, 'kararlı', { boy: 13 });
+      s += S.yazi(388, 338, 'ölçeksiz', { boy: 13, hiza: 'end', renk: R.soluk });
       return s;
     }
   });
@@ -199,14 +199,14 @@
       /* JPL yoğunlukları (9. ders 0. bölüm; d9_kaynak.md) */
       const grup = [['Karasal gezegenler', R.vurgu, [['Merkür', 5.43], ['Venüs', 5.24], ['Dünya', 5.51], ['Mars', 3.93]]],
         ['Dev gezegenler', R.mavi, [['Jüpiter', 1.33], ['Satürn', 0.69], ['Uranüs', 1.27], ['Neptün', 1.64]]]];
-      let s = '', y = 30;
+      let s = S.yazi(x0 + olc - 6, 30, 'su: 1', { boy: 13, hiza: 'end' }), y = 30;
       grup.forEach(([ad, renk, ls]) => {
-        s += S.yazi(x0, y, ad, { boy: 14, kalin: true, renk });
+        s += S.yazi(x0 + olc + 8, y, ad, { boy: 14, kalin: true, renk });
         y += 10;
         ls.forEach(([g, d]) => {
           s += S.yazi(x0 - 8, y + 14, g, { boy: 13, hiza: 'end' });
           s += S.kutu(x0, y + 2, d * olc, 16, { dolgu: renk, renk: 'none', saydam: 0.85 }, 2);
-          s += S.yazi(x0 + d * olc + 6, y + 15, v(d, 2), { boy: 13, renk: R.soluk });
+          s += S.yazi(Math.max(x0 + d * olc, x0 + olc) + 6, y + 15, v(d, 2), { boy: 13, renk: R.soluk });
           y += 24;
         });
         y += 18;
@@ -217,8 +217,7 @@
       s += S.cizgi(x0, alt, x0 + 6 * olc, alt, { renk: R.soluk, kalin: 1 });
       [0, 1, 2, 3, 4, 5, 6].forEach(k => { s += S.cizgi(x0 + k * olc, alt, x0 + k * olc, alt + 5, { renk: R.soluk, kalin: 1 }) + S.yazi(x0 + k * olc, alt + 20, String(k), { boy: 13, hiza: 'middle', renk: R.soluk }); });
       s += S.yazi(x0 + 3 * olc, alt + 40, 'Yoğunluk (g/cm³)', { boy: 14, hiza: 'middle', renk: R.soluk });
-      s += S.cizgi(x0 + olc, 8, x0 + olc, alt, { renk: R.metin, kalin: 1.3, kesik: '4 3' });
-      s += S.yazi(x0 + olc + 6, 12, 'su: 1', { boy: 13 });
+      s += S.cizgi(x0 + olc, 18, x0 + olc, alt, { renk: R.metin, kalin: 1.3, kesik: '4 3' });
       return s;
     }
   });
@@ -231,24 +230,24 @@
     ciz(S) {
       const R = S.R, olc = 12;                    // Dünya çapı = 12 birim
       /* ekvator çapı / Dünya'nınki (9. ders 1. bölüm, NASA) */
-      const dev = [['Jüpiter', 11.2], ['Satürn', 9.4], ['Uranüs', 4.0], ['Neptün', 3.9]];
-      const kar = [['Merkür', 0.38], ['Venüs', 0.95], ['Dünya', 1], ['Mars', 0.53]];
+      const dev = [['Jüpiter', 11.2, '11,2'], ['Satürn', 9.4, '9,4'], ['Uranüs', 4.0, '4,0'], ['Neptün', 3.9, '3,9']];
+      const kar = [['Merkür', 0.38, '0,38'], ['Venüs', 0.95, '0,95'], ['Dünya', 1, '1'], ['Mars', 0.53, '0,53']];
       let s = S.yazi(392, 16, 'Dış dört: dev gezegenler', { boy: 14, kalin: true, hiza: 'end', renk: R.mavi });
       let x = 17; const cy = 94;
-      dev.forEach(([ad, d], i) => {
+      dev.forEach(([ad, d, t], i) => {
         const r = d * olc / 2; x += r;
         s += S.daire(x, cy, r, { dolgu: i < 2 ? R.gezegen : R.mavi, renk: 'none', saydam: i < 2 ? 0.8 : 0.85 });
         s += S.yazi(x, cy + 88, ad, { boy: 14, hiza: 'middle' });
-        s += S.yazi(x, cy + 106, v(d, 1) + ' ×', { boy: 13, hiza: 'middle', renk: R.soluk });
+        s += S.yazi(x, cy + 106, t + ' ×', { boy: 13, hiza: 'middle', renk: R.soluk });
         x += r + 8;
       });
       s += S.cizgi(12, 216, 388, 216, { renk: R.cizgi, kalin: 1 });
       s += S.yazi(12, 238, 'İç dört: karasal gezegenler', { boy: 14, kalin: true, renk: R.vurgu });
-      kar.forEach(([ad, d], i) => {
+      kar.forEach(([ad, d, t], i) => {
         const x = 18 + i * 96;
         s += S.daire(x, 262, d * olc / 2, { dolgu: R.vurgu, renk: 'none' });
         s += S.yazi(x + 12, 260, ad, { boy: 14 });
-        s += S.yazi(x + 12, 277, v(d, 2) + ' ×', { boy: 13, renk: R.soluk });
+        s += S.yazi(x + 12, 277, t + ' ×', { boy: 13, renk: R.soluk });
       });
       s += S.yazi(200, 306, 'Ölçek: Dünya\'nın çapı (12.756 km) = 1', { boy: 13, hiza: 'middle', renk: R.soluk });
       return s;
@@ -258,7 +257,7 @@
   C.ekle('d9-uzaklik', {
     ders: 'd9', bolum: 1, oran: 0.66,
     baslik: 'Güneş\'ten uzaklıklar: iki ölçek',
-    aciklama: 'Üst çizgi gerçek oranlarla çizildi: karasal dört gezegen Güneş\'in hemen yanına, 1,5 AB\'nin içine sıkışır, Neptün ise 30 AB\'dedir. Alt çizgi logaritmiktir, her çentik bir öncekinin katlarıdır; burada bütün gezegenler seçilir. Mars ile Jüpiter arasındaki asteroit kuşağı ve Neptün\'ün ötesindeki Kuiper kuşağı da işaretli.',
+    aciklama: 'Üst çizgi gerçek oranlarla çizildi: karasal dört gezegen Güneş\'in hemen yanına, 1,5 AB\'nin içine sıkışır, Neptün ise 30 AB\'dedir. Alt çizgi logaritmiktir: eşit boşluk eşit kat demektir, 1\'den 10\'a giden boşluk 5\'ten 50\'ye giden boşluğa eşittir; burada bütün gezegenler seçilir. Mars ile Jüpiter arasındaki asteroit kuşağı ve Neptün\'ün ötesindeki Kuiper kuşağı da işaretli.',
     kaynak: [{ ad: 'NASA NSSDCA – Planetary Fact Sheet', url: 'https://nssdc.gsfc.nasa.gov/planetary/factsheet/' },
       { ad: 'NASA Science – Kuiper Belt: Facts', url: 'https://science.nasa.gov/solar-system/kuiper-belt/facts/' }],
     ciz(S) {
@@ -274,7 +273,7 @@
       s += S.daire(24, ya, 6, { dolgu: R.gunes, renk: R.gunes });
       g.forEach(([ad, a], i) => {
         s += S.daire(L(a), ya, 3.5, { dolgu: renk(i), renk: 'none' });
-        if (i >= 4) { s += S.yazi(L(a), ya - 12, ad, { boy: 13, hiza: 'middle' }); s += S.yazi(L(a), ya + 22, v(a, a < 10 ? 2 : 1), { boy: 13, hiza: 'middle', renk: R.soluk }); }
+        if (i >= 4) { s += S.yazi(L(a), ya - 12, ad, { boy: 13, hiza: 'middle' }); s += S.yazi(L(a), ya + 22, a < 10 ? v(a, 2) : v(a, 1), { boy: 13, hiza: 'middle', renk: R.soluk }); }
       });
       s += S.cizgi(26, ya - 9, 26, ya - 20, { renk: R.vurgu, kalin: 1 }) + S.cizgi(26, ya - 20, 44, ya - 32, { renk: R.vurgu, kalin: 1 });
       s += S.yazi(47, ya - 30, 'iç dört', { boy: 13, renk: R.vurgu });

@@ -25,20 +25,22 @@
       s += S.cizgi(cx - 4, cy, cx + 4, cy, { renk: R.vurgu, kalin: 2 }) + S.cizgi(cx, cy - 4, cx, cy + 4, { renk: R.vurgu, kalin: 2 });
       s += S.yazi(cx - 7, cy - 22, 'yıldız', { boy: 13, hiza: 'middle', renk: R.metin });
       s += S.yazi(cx + 59, cy + 4, 'gezegen', { boy: 13, renk: R.metin });
-      s += S.yazi(cx, cy + 34, 'kütle merkezi', { boy: 13, hiza: 'middle', renk: R.vurgu });
+      s += S.cizgi(cx + 3, cy + 3, 126, 93, { renk: R.vurgu, kalin: 1 });
+      s += S.yazi(129, 99, 'kütle merkezi', { boy: 13, renk: R.vurgu });
       /* işaret anlamı */
-      s += S.yazi(200, 24, 'Artı: yıldız uzaklaşıyor', { boy: 13, renk: R.metin });
-      s += S.yazi(200, 40, '(çizgiler kırmızıya kayar)', { boy: 13, renk: R.soluk });
-      s += S.yazi(200, 66, 'Eksi: yıldız yaklaşıyor', { boy: 13, renk: R.metin });
-      s += S.yazi(200, 82, '(çizgiler maviye kayar)', { boy: 13, renk: R.soluk });
+      s += S.yazi(200, 20, 'Artı: yıldız uzaklaşıyor', { boy: 13, renk: R.metin });
+      s += S.yazi(200, 36, '(çizgiler kırmızıya kayar)', { boy: 13, renk: R.soluk });
+      s += S.yazi(200, 58, 'Eksi: yıldız yaklaşıyor', { boy: 13, renk: R.metin });
+      s += S.yazi(200, 74, '(çizgiler maviye kayar)', { boy: 13, renk: R.soluk });
       /* eğri */
       const K = 55.9, P = 4.2;
       const ek = S.eksen({ x: 72, y: 140, w: 308, h: 125 }, { x0: 0, x1: 2 * P, y0: -70, y1: 70 }, {
         xIsaret: [[0, '0'], [2.1, '2,1'], [4.2, '4,2'], [6.3, '6,3'], [8.4, '8,4']],
         yIsaret: [[50, '+50'], [0, '0'], [-50, '−50']],
-        xAd: 'zaman (gün)', yAd: 'dikine hız (m/s)', yAdUzak: 50
+        xAd: 'zaman (gün)'
       });
       s += ek.svg;
+      s += S.yazi(64, 134, 'm/s', { boy: 13, hiza: 'end', renk: R.soluk });
       s += S.cizgi(ek.X(0), ek.Y(0), ek.X(2 * P), ek.Y(0), { renk: R.cizgi, kalin: 1 });
       s += S.cizgi(ek.X(0), ek.Y(K), ek.X(2 * P), ek.Y(K), { renk: R.soluk, kalin: 1, kesik: '3 4' });
       s += S.cizgi(ek.X(0), ek.Y(-K), ek.X(2 * P), ek.Y(-K), { renk: R.soluk, kalin: 1, kesik: '3 4' });
@@ -81,9 +83,10 @@
       s += S.yazi(390, 40, '(burada görünmez)', { boy: 13, hiza: 'end', renk: R.soluk });
       /* ışık eğrisi: yatay eksen üstteki çizimle aynı x (gezegenin konumu) */
       const ek = S.eksen({ x: 60, y: 140, w: 320, h: 115 }, { x0: 60, x1: 380, y0: 98.8, y1: 100.2 }, {
-        yIsaret: [[100, '%100'], [99, '%99']], xAd: 'zaman →', yAd: 'parlaklık', yAdUzak: 50
+        yIsaret: [[100, '%100'], [99, '%99']], xAd: 'zaman →'
       });
       s += ek.svg;
+      s += S.yazi(10, 132, 'parlaklık', { boy: 13, renk: R.soluk });
       const dip = 100 - derin, g1 = yx - yr - pr, g2 = yx - yr + pr, c1 = yx + yr - pr, c2 = yx + yr + pr;
       s += S.egri([[60, 100], [g1, 100], [g2, dip], [c1, dip], [c2, 100], [380, 100]].map(p => [ek.X(p[0]), ek.Y(p[1])]), { renk: R.vurgu, kalin: 2.2 });
       [[100, 100, '1'], [200, dip, '2'], [300, 100, '3']].forEach(([x, v, no]) => {
@@ -91,10 +94,12 @@
         s += S.yazi(ek.X(x), ek.Y(v) + (no === '2' ? -10 : 18), no, { boy: 13, hiza: 'middle', renk: R.metin, kalin: true });
       });
       /* derinlik oku */
-      const dx = 228;
-      s += S.ok(dx, ek.Y(100) + 2, dx, ek.Y(dip) - 1, { renk: R.metin, kalin: 1.2, boy: 7 });
-      s += S.ok(dx, ek.Y(dip) - 1, dx, ek.Y(100) + 2, { renk: R.metin, kalin: 1.2, boy: 7 });
-      s += S.yazi(dx + 7, (ek.Y(100) + ek.Y(dip)) / 2 + 5, 'derinlik ≈ %1,01', { boy: 13, renk: R.metin });
+      const dx = 272;
+      s += S.cizgi(ek.X(c1) + 4, ek.Y(dip), dx + 6, ek.Y(dip), { renk: R.soluk, kalin: 1, kesik: '2 3' });
+      s += S.ok(dx, ek.Y(100) + 2, dx, ek.Y(dip), { renk: R.metin, kalin: 1.2, boy: 7 });
+      s += S.ok(dx, ek.Y(dip), dx, ek.Y(100) + 2, { renk: R.metin, kalin: 1.2, boy: 7 });
+      s += S.yazi(dx + 8, (ek.Y(100) + ek.Y(dip)) / 2 - 2, 'derinlik', { boy: 13, renk: R.metin });
+      s += S.yazi(dx + 8, (ek.Y(100) + ek.Y(dip)) / 2 + 14, '≈ %' + derin.toFixed(2).replace('.', ','), { boy: 13, renk: R.metin });
       return s;
     }
   });
@@ -122,7 +127,7 @@
       s += S.daire(x0, py, 10, { dolgu: R.gunes, renk: R.gunes });
       s += S.yazi(x0 + 16, py - 6, 'Güneş', { boy: 13, renk: R.soluk });
       [[0.72, 'Venüs'], [1, 'Dünya'], [1.52, 'Mars']].forEach(([a, ad]) => {
-        s += S.cizgi(X(a), 40, X(a), py, { renk: R.soluk, kalin: 1, kesik: '2 3' });
+        s += S.cizgi(X(a), 84, X(a), py, { renk: R.soluk, kalin: 1, kesik: '2 3' });
         s += S.daire(X(a), py, 5, { dolgu: a === 1 ? R.mavi : R.metin, renk: R.zemin, kalin: 1 });
         s += S.yazi(X(a), py + 20, ad, { boy: 13, hiza: 'middle', renk: R.metin });
       });
@@ -177,9 +182,9 @@
       s += olay(4.54, Y(4.54) + 4, R.metin, 'Dünya oluşur', '4,54 milyar yıl · saat 00.00');
       s += olay(3.7, Y(3.7) - 10, R.uyari, 'Isua yapıları (tartışmalı)', '3,7 milyar yıl');
       s += olay(3.48, Y(3.48) + 22, R.iyi, 'Pilbara stromatolitleri', '3,48 milyar yıl · saat ' + saat(3.48));
-      s += S.yazi(ax + 26, Y(3.48) + 64, 'yaklaşık 1,1 milyar yıl:', { boy: 13, renk: R.iyi });
-      s += S.yazi(ax + 26, Y(3.48) + 80, 'yaşam var, havada oksijen yok', { boy: 13, renk: R.iyi });
-      s += olay(2.4, Y(2.4) + 14, R.mavi, 'Havada oksijen birikir', '2,4 milyar yıl · saat ' + saat(2.4));
+      s += S.yazi(ax + 26, Y(3.48) + 59, 'yaklaşık 1,1 milyar yıl:', { boy: 13, renk: R.iyi });
+      s += S.yazi(ax + 26, Y(3.48) + 75, 'yaşam var, havada oksijen yok', { boy: 13, renk: R.iyi });
+      s += olay(2.4, Y(2.4) + 21, R.mavi, 'Havada oksijen birikir', '2,4 milyar yıl · saat ' + saat(2.4));
       s += olay(0, Y(0) - 4, R.metin, 'Bugün · saat 24.00', null);
       s += S.yazi(ax - 9, Y(0) + 4, 'bugün', { boy: 13, hiza: 'end', renk: R.soluk });
       return s;
@@ -190,7 +195,7 @@
      Europa buz ≈29 km (Juno, dış katman; SwRI 2026), okyanus 50–100 (NASA afişi) ve 60–150 km (JPL); Enceladus 2014 güney: buz 30–40,
      okyanus ≈10 km (bölgesel; Astronomy); Park ve ark. 2024 ortalama: buz 27–33, okyanus 21–26 km; Titan okyanusa ≈100 km (NASA afişi). */
   C.ekle('d18-okyanus-dunyalari', {
-    ders: 'd18', bolum: 5, oran: 1.05,
+    ders: 'd18', bolum: 5, oran: 1.06,
     baslik: 'Buzun altındaki okyanuslar: tahminler ve farkları',
     aciklama: 'Üstte üç uydu ölçekli: Titan en büyük, Enceladus Europa\'nın yanında küçük bir nokta. Altta kalınlık tahminleri: Europa\'nın okyanusu için kaynaklar 50 ile 100 ya da 60 ile 150 km diyor; Enceladus için 2014 ve 2024 çalışmaları farklı buz ve okyanus kalınlıkları buluyor; Titan\'da okyanusun yaklaşık 100 km aşağıda olduğu düşünülüyor. Çubuklar tahmin aralığını, noktalar tek değerleri gösterir.',
     kaynak: [
@@ -211,7 +216,7 @@
         s += S.daire(x, dy, cap * k / 2, { dolgu: ad === 'Titan' ? R.uyari : R.ay, renk: R.zemin, saydam: ad === 'Titan' ? 0.8 : 0.9 });
         s += S.yazi(x, 118, ad + ' · ' + yz, { boy: 13, hiza: 'middle', renk: R.metin });
       });
-      s += S.yazi(200, 136, 'çaplar ölçekli', { boy: 13, hiza: 'middle', renk: R.soluk });
+      s += S.yazi(200, 20, 'çaplar ölçekli', { boy: 13, hiza: 'middle', renk: R.soluk });
       /* kalınlık tahminleri */
       const px = 180, pw = 205, kmMax = 160, X = v => px + v / kmMax * pw;
       const satirlar = [
@@ -227,10 +232,10 @@
         ['b', 'Titan'],
         ['n', 'Okyanusa derinlik', 100, null, 'su']
       ];
-      let y = 162;
+      let y = 146;
       const ust = y - 12;
       satirlar.forEach(st => {
-        if (st[0] === 'b') { y += 6; s += S.yazi(10, y, st[1], { boy: 14, renk: R.metin, kalin: true }); y += 20; return; }
+        if (st[0] === 'b') { y += 6; s += S.yazi(10, y, st[1], { boy: 14, renk: R.metin, kalin: true }); y += 19; return; }
         const [tur, ad, a, b, cins] = st, renk = cins === 'buz' ? R.ay : R.mavi;
         s += S.yazi(18, y, ad, { boy: 13, renk: R.soluk });
         if (tur === 'r') {
@@ -242,7 +247,7 @@
           s += S.daire(X(a), y - 4.5, 5, { dolgu: renk, renk: R.zemin, kalin: 1 });
           s += S.yazi(X(a) + 9, y, '≈' + a, { boy: 13, renk: R.metin });
         }
-        y += 21;
+        y += 20;
       });
       /* eksen */
       const ay = y - 6;
@@ -258,7 +263,7 @@
 
   /* d18 · bölüm 8: Drake denkleminin yedi çarpanı; 1961 tahminleri ve bugün (ders metni). Tablo biçiminde, ölçeksiz. */
   C.ekle('d18-drake', {
-    ders: 'd18', bolum: 8, oran: 0.86,
+    ders: 'd18', bolum: 8, oran: 0.79,
     baslik: 'Drake denklemi: ölçülenler ve bilinmeyenler',
     aciklama: 'Yedi çarpan alt alta çarpılır. İlk üçü bugün ölçülebiliyor: yılda 1 ile 3 yıldız doğuyor, neredeyse her yıldızın gezegeni var, gezegen oranı ile uygun gezegen sayısının çarpımı yaklaşık 0,4. Yaşamın, zekânın, teknolojinin ve uygarlık ömrünün çarpanları ise hâlâ bilinmiyor; bu yüzden tahminler 1\'den milyonlara uzanır.',
     kaynak: [

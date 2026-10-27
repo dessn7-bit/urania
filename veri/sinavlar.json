@@ -1,855 +1,855 @@
 {
-  "aciklama": "Ünite sonu çoktan seçmeli sınav soruları. Her sorunun doğru cevabı derslerin kendi metnine dayanır. dogru: doğru şıkkın 0'dan başlayan dizini; ders: dayanak dersin kimliği; bolum: o dersteki bölümün 0'dan başlayan dizini.",
-  "uniteler": {
-    "gokyuzu": [
-      {
-        "id": "gokyuzu-01",
-        "soru": "Bir gece Kutup Yıldızı'nın ufuktan yüksekliğini ölçüyorsun ve yaklaşık 41° buluyorsun. Bu sayı sana doğrudan neyi söyler?",
-        "secenekler": [
-          "Bulunduğun yerin enlemini",
-          "Kutup Yıldızı'nın dik açıklığını",
-          "Dünya ekseninin yörünge düzlemine eğikliğini",
-          "O anki yerel saati"
-        ],
-        "dogru": 0,
-        "aciklama": "Derse göre kuzey gök kutbunun ufuktan yüksekliği gözlemcinin enlemine eşittir; Kutup Yıldızı kutba 1°'den yakın olduğu için sana enlemini verir. İstanbul yaklaşık 41° kuzeydedir.",
-        "ders": "d1",
-        "bolum": 3
-      },
-      {
-        "id": "gokyuzu-02",
-        "soru": "Kuzey yarımkürede yazların sıcak, kışların soğuk olmasının asıl nedeni nedir?",
-        "secenekler": [
-          "Yazın Dünya'nın Güneş'e daha yakın olması",
-          "Güneş'in yaz aylarında daha fazla enerji yayması",
-          "Dünya'nın ekseninin yörünge düzlemine yaklaşık 23,44° eğik olması",
-          "Yazın atmosferin daha ince olması"
-        ],
-        "dogru": 2,
-        "aciklama": "Derse göre mevsimleri uzaklık değil eksen eğikliği belirler; Dünya Güneş'e en yakın noktasına Ocak'ta gelir ve o sırada kuzey yarımkürede kış yaşanır. Eğiklik öğle Güneşi'nin yüksekliğini ve gündüzün süresini değiştirir.",
-        "ders": "d1",
-        "bolum": 5
-      },
-      {
-        "id": "gokyuzu-03",
-        "soru": "Bu gece saat 23'te tam güneyde gördüğün bir yıldız, 15 gün sonra aynı yere yaklaşık saat kaçta gelir?",
-        "secenekler": [
-          "Yine saat 23'te",
-          "Yaklaşık saat 22'de",
-          "Yaklaşık saat 21'de",
-          "Yaklaşık gece yarısı, saat 24'te"
-        ],
-        "dogru": 1,
-        "aciklama": "Yıldız günü 23 sa 56 dk 4 sn olduğundan bir yıldız her gece yaklaşık 3 dk 56 sn erken gelir. 15 × 3 dk 56 sn ≈ 59 dakika; yıldız yaklaşık bir saat erken, saat 22 civarında aynı yerdedir.",
-        "ders": "d1",
-        "bolum": 4
-      },
-      {
-        "id": "gokyuzu-04",
-        "soru": "Yüzey sıcaklığı yaklaşık 2900 K olan soğuk bir yıldızın tayfı, Wien yasasına göre yaklaşık hangi dalga boyunda tepe yapar?",
-        "secenekler": [
-          "Yaklaşık 250 nm, morötesinde",
-          "Yaklaşık 500 nm, Güneş gibi yeşilde",
-          "Yaklaşık 10 μm, Dünya'nın ışıması gibi orta kızılötesinde",
-          "Yaklaşık 1000 nm, yani 1 μm, kızılötesinde"
-        ],
-        "dogru": 3,
-        "aciklama": "λ_tepe = 2,898 × 10⁻³ m·K ÷ T bağıntısıyla 2,898 × 10⁻³ ÷ 2900 ≈ 1,0 × 10⁻⁶ metre, yani yaklaşık 1000 nm bulunur; bu görünür bölgenin dışında, kızılötesindedir. Derse göre sıcaklık düştükçe tepe uzun dalga boylarına kayar.",
-        "ders": "d2",
-        "bolum": 4
-      },
-      {
-        "id": "gokyuzu-05",
-        "soru": "Sürekli tayf veren sıcak bir kaynağa, önündeki daha soğuk ve seyrek bir gazın ardından bakıyorsun. Tayfta ne görürsün?",
-        "secenekler": [
-          "Karanlık arka plan üzerinde yalnızca parlak salma çizgileri",
-          "Sürekli tayfın üzerinde karanlık soğurma çizgileri",
-          "Hiç çizgi içermeyen düz bir sürekli tayf",
-          "Bütün çizgilerin maviye kaymış hâli"
-        ],
-        "dogru": 1,
-        "aciklama": "Kirchhoff'un yasalarına göre sürekli tayf veren bir kaynağa daha soğuk ve seyrek bir gazın ardından bakarsan, gazdaki elementlere özgü dalga boylarında karanlık soğurma çizgileri görürsün. Güneş tayfındaki Fraunhofer çizgileri böyle oluşur.",
-        "ders": "d2",
-        "bolum": 6
-      },
-      {
-        "id": "gokyuzu-06",
-        "soru": "Bir yıldızın tayfındaki bütün çizgiler laboratuvar değerlerine göre maviye kaymış. Buradan ne çıkarırsın?",
-        "secenekler": [
-          "Yıldız bize yaklaşıyor; bu ölçüm yalnızca bakış doğrultusundaki hızı verir",
-          "Yıldız bizden uzaklaşıyor; bu ölçüm yalnızca bakış doğrultusundaki hızı verir",
-          "Yıldız gökte yana doğru hızla hareket ediyor",
-          "Yıldız çok sıcak olduğu için çizgileri maviye kaymış"
-        ],
-        "dogru": 0,
-        "aciklama": "Derse göre kaynak yaklaşırken dalgalar kısalır ve çizgiler maviye kayar; uzaklaşırken kırmızıya kayar. Doppler kayması yalnızca dikine hızı ölçer, gökte yana doğru hareket tayfta görünmez.",
-        "ders": "d2",
-        "bolum": 7
-      },
-      {
-        "id": "gokyuzu-07",
-        "soru": "Teleskop alırken sönük cisimleri görebilmen ve ince ayrıntıları ayırabilmen en çok hangi özelliğe bağlıdır?",
-        "secenekler": [
-          "Teleskobun ulaşabildiği en yüksek büyütmeye",
-          "Tüpün uzunluğuna",
-          "Açıklığa, yani objektifin çapına",
-          "Göz merceğinin odak uzaklığına"
-        ],
-        "dogru": 2,
-        "aciklama": "Derse göre teleskobun iki asıl işi ışık toplamak ve ayrıntı ayırmaktır ve ikisi de açıklığa bağlıdır. Büyütme en az önemli özelliktir; görüntüde olmayan bir ayrıntıyı yaratamaz.",
-        "ders": "d12",
-        "bolum": 0
-      },
-      {
-        "id": "gokyuzu-08",
-        "soru": "Açıklığı 300 mm olan bir teleskop, açıklığı 100 mm olan bir teleskoptan kaç kat fazla ışık toplar?",
-        "secenekler": [
-          "3 kat",
-          "6 kat",
-          "27 kat",
-          "9 kat"
-        ],
-        "dogru": 3,
-        "aciklama": "Toplanan ışık objektifin alanıyla, yani çapın karesiyle orantılıdır. Çap oranı 300 ÷ 100 = 3, ışık oranı 3 × 3 = 9 kat olur; dersteki örnekte de çap iki katına çıkınca ışık dört katına çıkar.",
-        "ders": "d12",
-        "bolum": 2
-      },
-      {
-        "id": "gokyuzu-09",
-        "soru": "Uzun pozlamalı gökyüzü fotoğrafı için neden ekvatoral kundak tercih edilir?",
-        "secenekler": [
-          "Alt-az kundağa göre teleskoba daha fazla ışık topladığı için",
-          "Ana ekseni Kutup Yıldızı'na çevrildiği için tek bir motorla Dünya'nın dönüşünü telafi ettiği için; alt-az kundakta ise görüntü kendi çevresinde döner",
-          "Atmosferin titreşimini ortadan kaldırdığı için",
-          "Teleskobun en yüksek yararlı büyütmesini iki katına çıkardığı için"
-        ],
-        "dogru": 1,
-        "aciklama": "Derse göre ekvatoral kundağın sağ açıklık ekseni Kutup Yıldızı'na çevrilir ve bu eksene takılan motor yıldızı görüş alanında tutar. Alt-az kundakta uzun pozlamada alan dönmesi olur.",
-        "ders": "d12",
-        "bolum": 5
-      },
-      {
-        "id": "gokyuzu-10",
-        "soru": "8×40 bir dürbünün çıkış göz bebeği kaç milimetredir ve karanlıkta göz bebeği 6 mm açılan birinin gözüne bu demetin ne kadarı girer?",
-        "secenekler": [
-          "5 mm; demetin tamamı gözüne girer",
-          "5 mm; demetin bir kısmı irise çarpıp boşa gider",
-          "8 mm; demetin bir kısmı irise çarpıp boşa gider",
-          "320 mm; demetin çok azı gözüne girer"
-        ],
-        "dogru": 0,
-        "aciklama": "Çıkış göz bebeği objektif çapının büyütmeye bölümüdür: 40 ÷ 8 = 5 mm. Göz bebeğin 6 mm olduğu için demetin tamamı girer; derse göre ışık ancak çıkış göz bebeği senin göz bebeğinden büyükse boşa gider.",
-        "ders": "d11",
-        "bolum": 1
-      },
-      {
-        "id": "gokyuzu-11",
-        "soru": "Balkonda aynı gece hem sönük bir yıldız kümesini hem de Ay'ı dürbünle gözlemek istiyorsun. Dersteki önerilere en uygun plan hangisi?",
-        "secenekler": [
-          "Önce Ay'a bakmak, sonra hemen kümeye geçmek; parlak ışık karanlık uyumunu etkilemez",
-          "Haritayı telefonun beyaz ekranıyla okumak; uyum birkaç saniyede geri gelir",
-          "Gözünü bir iki dakika karanlıkta tutmak; tam uyum için bu yeterlidir",
-          "Gözünü en az 15–20 dakika karanlığa alıştırıp önce kümeye bakmak, Ay'ı sona bırakmak"
-        ],
-        "dogru": 3,
-        "aciklama": "Derse göre karanlık uyumu kaynağa göre 15–45 dakika sürer ve beyaz ışık onu anında sıfırlar. Bu yüzden önce sönük hedeflere bakılır, Ay ve parlak gezegenler sona bırakılır; haritaya loş kırmızı ışıkla bakılır.",
-        "ders": "d11",
-        "bolum": 2
-      },
-      {
-        "id": "gokyuzu-12",
-        "soru": "Sönük bir bulutsuya doğrudan baktığında kayboluyor, gözünü biraz yana kaydırınca beliriyor. Bunun nedeni nedir?",
-        "secenekler": [
-          "Dürbünün büyütmesi yetersizdir; daha yüksek büyütme gerekir",
-          "Bulutsunun parlaklığı gerçekten saniyeler içinde değişir",
-          "Retinanın tam merkezinde neredeyse hiç çubuk hücre yoktur; cismin biraz yanına bakmak sönük ışığı yakalar",
-          "Gözün yorulmuştur; bir süre beyaz ışığa bakıp dinlendirmelisin"
-        ],
-        "dogru": 2,
-        "aciklama": "Derse göre retinanın merkezindeki foveada neredeyse hiç çubuk hücre yoktur; çubuk hücrelerin yoğunluğu bakış merkezinden yaklaşık 20° uzakta en yüksektir. Kaçamak bakışta cismin biraz yanına bakılır.",
-        "ders": "d11",
-        "bolum": 3
-      }
+ "aciklama": "Ünite sonu çoktan seçmeli sınav soruları. Her sorunun doğru cevabı derslerin kendi metnine dayanır. dogru: doğru şıkkın 0'dan başlayan dizini; ders: dayanak dersin kimliği; bolum: o dersteki bölümün 0'dan başlayan dizini.",
+ "uniteler": {
+  "gokyuzu": [
+   {
+    "id": "gokyuzu-01",
+    "soru": "Bir gece Kutup Yıldızı'nın ufuktan yüksekliğini ölçüyorsun ve yaklaşık 41° buluyorsun. Bu sayı sana doğrudan neyi söyler?",
+    "secenekler": [
+     "Bulunduğun yerin enlemini",
+     "Kutup Yıldızı'nın dik açıklığını",
+     "Dünya ekseninin yörünge düzlemine eğikliğini",
+     "O anki yerel saati"
     ],
-    "gunes_sistemi": [
-      {
-        "id": "gunes_sistemi-01",
-        "soru": "Yarı büyük ekseni 16 AB olan bir cisim Güneş'in çevresini kaç yılda dolanır?",
-        "secenekler": [
-          "4 yıl",
-          "16 yıl",
-          "64 yıl",
-          "256 yıl"
-        ],
-        "dogru": 2,
-        "aciklama": "Kepler'in üçüncü yasası yıl ve astronomik birim ile P² = a³ biçimindedir. a³ = 16 × 16 × 16 = 4096, bunun karekökü 64; yani bir tur 64 yıl sürer. Derse göre dönem uzaklıktan daha hızlı büyür.",
-        "ders": "d3",
-        "bolum": 2
-      },
-      {
-        "id": "gunes_sistemi-02",
-        "soru": "Okyanuslarda gelgiti asıl oluşturan nedir?",
-        "secenekler": [
-          "Ay'ın Dünya'nın kendisine bakan yüzünü merkezinden biraz daha güçlü, karşı yüzünü biraz daha zayıf çekmesi; yani çekimin farkı",
-          "Rüzgârların suyu günde iki kez kıyıya doğru itmesi",
-          "Dünya'nın Güneş çevresindeki dolanımının suyu savurması",
-          "Ay'ın yalnızca kendisine bakan yüzdeki suyu çekmesi; karşı yüzde kabarma olmaz"
-        ],
-        "dogru": 0,
-        "aciklama": "Derse göre gelgiti çekimin kendisi değil, Dünya'nın iki yüzü arasındaki çekim farkı yapar. Bu yüzden biri Ay'a bakan yüzde, biri tam karşı yüzde olmak üzere iki kabarıklık oluşur.",
-        "ders": "d3",
-        "bolum": 7
-      },
-      {
-        "id": "gunes_sistemi-03",
-        "soru": "Aynı gezegenin çevresinde biri alçak, biri çok daha yüksek dairesel yörüngede dolanan iki uydudan hangisi daha hızlı gider?",
-        "secenekler": [
-          "Yüksekteki, çünkü daha uzun bir yol gitmesi gerekir",
-          "İkisi de aynı hızla gider, çünkü aynı gezegeni dolanırlar",
-          "Yüksekliği ne olursa olsun kütlesi büyük olan",
-          "Alçaktaki, çünkü dairesel yörünge hızı uzaklık arttıkça azalır"
-        ],
-        "dogru": 3,
-        "aciklama": "Dairesel yörünge hızı v = √(GM / r) ile verilir; r büyüdükçe gereken hız azalır. Derse göre Uzay İstasyonu saniyede yaklaşık 8 km giderken çok daha uzaktaki Ay saniyede yaklaşık 1 km yol alır.",
-        "ders": "d3",
-        "bolum": 5
-      },
-      {
-        "id": "gunes_sistemi-04",
-        "soru": "Satürn'ün ortalama yoğunluğu suyunkinin yaklaşık 0,69 katıdır. Bu bilgi Satürn hakkında ne söyler?",
-        "secenekler": [
-          "Kütlesi Dünya'nınkinden azdır",
-          "Sudan daha düşük yoğunluğa sahip tek gezegendir",
-          "Katı, kayalık bir yüzeyi vardır",
-          "Gezegenlerin en yoğunudur"
-        ],
-        "dogru": 1,
-        "aciklama": "Derse göre suyun yoğunluğu 1, Satürn'ünki 0,69 birimdir; bu onu sudan daha düşük yoğunluğa sahip tek gezegen yapar. Kütlesi Dünya'nın yaklaşık 95 katıdır, en yoğun gezegen ise Dünya'dır.",
-        "ders": "d9",
-        "bolum": 5
-      },
-      {
-        "id": "gunes_sistemi-05",
-        "soru": "Uluslararası Astronomi Birliği'nin 2006 tanımına göre Plüton hangi koşulu sağlamadığı için cüce gezegen sayılır?",
-        "secenekler": [
-          "Güneş'in çevresinde dolanma koşulunu",
-          "Kendi kütleçekimiyle neredeyse küresel biçim alma koşulunu",
-          "En az bir uydusu olma koşulunu",
-          "Yörüngesinin çevresini temizlemiş olma koşulunu"
-        ],
-        "dogru": 3,
-        "aciklama": "Derse göre gezegen Güneş'i dolanır, kendi kütleçekimiyle neredeyse küresel biçim alır ve yörüngesinin çevresini temizlemiştir. Plüton üçüncü koşulu sağlamadığı için cüce gezegen oldu; uydu sayısı tanımda yer almaz.",
-        "ders": "d9",
-        "bolum": 8
-      },
-      {
-        "id": "gunes_sistemi-06",
-        "soru": "İstanbul'un ışık kirli bir semtinden sıradan bir dürbünle Jüpiter'e bakıyorsun. Dersteki bilgiye göre ne bekleyebilirsin?",
-        "secenekler": [
-          "Galileo uydularını seçebilir, birkaç gece üst üste konumlarının değiştiğini izleyebilirsin",
-          "Işık kirliliği yüzünden uyduları ancak büyük bir teleskopla görebilirsin",
-          "Jüpiter'in halkasını Satürn'ünki kadar kolay ayırırsın",
-          "Uydular hep aynı yerde durur; konumlarını bir kez çizmen yeter"
-        ],
-        "dogru": 0,
-        "aciklama": "Derse göre Galileo uyduları ışık kirliliği yoğun bir gökte bile sıradan bir dürbünle kolayca görülür ve gezegenin çevresinde dolandıkları için konumları geceden geceye değişir. Dünya'dan kolayca görülen tek halka Satürn'ünkidir.",
-        "ders": "d9",
-        "bolum": 5
-      },
-      {
-        "id": "gunes_sistemi-07",
-        "soru": "Ay'ın evreleri neden oluşur?",
-        "secenekler": [
-          "Dünya'nın gölgesi her gece Ay'ın farklı bir kısmına düşer",
-          "Ay'ın kendi ürettiği ışık ay boyunca azalıp çoğalır",
-          "Güneş Ay'ın hep yarısını aydınlatır; değişen, bu aydınlık yarının ne kadarının bize dönük olduğudur",
-          "Ay'ın Dünya'ya uzaklığı değiştikçe aydınlık kısmı büyüyüp küçülür"
-        ],
-        "dogru": 2,
-        "aciklama": "Derse göre Ay kendi ışığını üretmez ve Güneş her zaman Ay'ın yarısını aydınlatır; evre, aydınlık yarının bize dönük kısmıdır. Dünya'nın gölgesi Ay'a yalnızca Ay tutulmasında düşer.",
-        "ders": "d10",
-        "bolum": 0
-      },
-      {
-        "id": "gunes_sistemi-08",
-        "soru": "Ay'ın Dünya'dan görülmeyen uzak yüzü için hangisi doğrudur?",
-        "secenekler": [
-          "Hiç Güneş ışığı almaz; bu yüzden ona karanlık yüz denir",
-          "Güneş ışığı alır; yeni ay evresinde tam gündüzdedir",
-          "Ay kendi ekseni çevresinde hiç dönmediği için onu göremeyiz",
-          "Librasyon sayesinde Dünya'dan zamanla tamamını görebiliriz"
-        ],
-        "dogru": 1,
-        "aciklama": "Derse göre uzak yüz de Güneş ışığı alır, yalnızca bize dönük değildir; yeni ayda tam gündüzdedir. Ay döner ama dönüşü dolanımıyla eşit sürer; librasyonla bile yüzeyin ancak yaklaşık %59'u görülür.",
-        "ders": "d10",
-        "bolum": 2
-      },
-      {
-        "id": "gunes_sistemi-09",
-        "soru": "Dünya'da 60 kg gösteren bir banyo baskülü Ay'da yaklaşık kaç kilogram gösterirdi? (Çekim ivmesi Dünya'da 9,80 m/s², Ay'da 1,62 m/s²)",
-        "secenekler": [
-          "Yaklaşık 36 kg",
-          "Yaklaşık 23 kg",
-          "60 kg; kütle değişmediği için baskül de aynı değeri gösterir",
-          "Yaklaşık 10 kg"
-        ],
-        "dogru": 3,
-        "aciklama": "Baskül kuvveti ölçüp kilograma çevirir; kuvvet kütle × çekim ivmesidir. 60 × 1,62 ÷ 9,80 ≈ 9,9, yani yaklaşık 10 kg gösterir. Kütlen yine 60 kilogramdır; derse göre Ay'ın çekimi Dünya'nınkinin kabaca altıda biridir.",
-        "ders": "d10",
-        "bolum": 4
-      },
-      {
-        "id": "gunes_sistemi-10",
-        "soru": "Güneş'ten uzaklaşmakta olan bir kuyruklu yıldızın kuyruğu hangi yöne bakar?",
-        "secenekler": [
-          "Güneş'in tersine; bu yüzden kuyruk bu sırada önden gider",
-          "Kuyruklu yıldızın geldiği yöne, yani hep arkasına doğru",
-          "Güneş'e doğru",
-          "Dünya'ya doğru"
-        ],
-        "dogru": 0,
-        "aciklama": "Derse göre iki kuyruk da Güneş'ten uzağa bakar; kuyruk gidiş yönünü değil Güneş'in tersini gösterir. Bu yüzden kuyruklu yıldız Güneş'ten uzaklaşırken kuyruk önden gider.",
-        "ders": "d19",
-        "bolum": 3
-      },
-      {
-        "id": "gunes_sistemi-11",
-        "soru": "Aynı taş uzaydayken, atmosferde yanarken ve yere düştükten sonra sırasıyla hangi adları alır?",
-        "secenekler": [
-          "Meteor, meteoroit, göktaşı",
-          "Meteoroit, meteor, göktaşı",
-          "Asteroit, göktaşı, meteor",
-          "Meteoroit, göktaşı, meteor"
-        ],
-        "dogru": 1,
-        "aciklama": "Derse göre uzaydaki taş meteoroittir; atmosferde yanarken meteor, yani kayan yıldız olur; atmosferi aşıp yere düşerse göktaşı (meteorit) adını alır.",
-        "ders": "d19",
-        "bolum": 4
-      },
-      {
-        "id": "gunes_sistemi-12",
-        "soru": "Bir kuyruklu yıldız Güneş'i 125 yılda bir dolanıyor. Yörüngesinin yarı büyük ekseni yaklaşık kaç astronomik birimdir?",
-        "secenekler": [
-          "Yaklaşık 5 AB",
-          "Yaklaşık 11 AB",
-          "Yaklaşık 25 AB",
-          "Yaklaşık 125 AB"
-        ],
-        "dogru": 2,
-        "aciklama": "P² = a³ ile a³ = 125 × 125 = 15.625 bulunur; bunun küp kökü 25'tir. Dersteki Halley örneğinde de aynı yolla 76 yıllık döneme yaklaşık 18 astronomik birimlik yarı büyük eksen karşılık gelir.",
-        "ders": "d19",
-        "bolum": 3
-      }
+    "dogru": 0,
+    "aciklama": "Derse göre kuzey gök kutbunun ufuktan yüksekliği gözlemcinin enlemine eşittir; Kutup Yıldızı kutba 1°'den yakın olduğu için sana enlemini verir. İstanbul yaklaşık 41° kuzeydedir.",
+    "ders": "d1",
+    "bolum": 3
+   },
+   {
+    "id": "gokyuzu-02",
+    "soru": "Kuzey yarımkürede yazların sıcak, kışların soğuk olmasının asıl nedeni nedir?",
+    "secenekler": [
+     "Yazın Dünya'nın Güneş'e daha yakın olması",
+     "Güneş'in yaz aylarında daha fazla enerji yayması",
+     "Dünya'nın ekseninin yörünge düzlemine yaklaşık 23,44° eğik olması",
+     "Yazın atmosferin daha ince olması"
     ],
-    "yildizlar": [
-      {
-        "id": "yildizlar-01",
-        "soru": "Bir güneş lekesinin umbrası yaklaşık 3600 K, çevresindeki fotosfer yaklaşık 5780 K. Umbranın her metrekaresi, çevresindeki fotosferin yaklaşık ne kadarı ışık saçar?",
-        "secenekler": [
-          "Yaklaşık %62'si",
-          "Yaklaşık %15'i",
-          "Yaklaşık %39'u",
-          "Yaklaşık %1'i"
-        ],
-        "dogru": 1,
-        "aciklama": "Stefan-Boltzmann yasasına göre birim alandan yayılan güç sıcaklığın dördüncü kuvvetiyle orantılıdır: 3600 ÷ 5780 ≈ 0,623 ve 0,623⁴ ≈ 0,15. Dersteki örnekte de umbra çevresinin %7 ile %37'si kadar ışık saçar; leke gerçekte parlaktır, yalnızca çevresine göre sönüktür.",
-        "ders": "d4",
-        "bolum": 5
-      },
-      {
-        "id": "yildizlar-02",
-        "soru": "Güneş'i ve lekelerini izlemek istiyorsun. Dersteki yöntemlerden hangisi güvenlidir?",
-        "secenekler": [
-          "Çok koyu bir güneş gözlüğüyle kısa süre doğrudan bakmak",
-          "Tutulma gözlüğünü takıp dürbünle bakmak",
-          "Güneş filtresini dürbünün göz merceği tarafına takıp bakmak",
-          "Bir kartona açılan iğne deliğinden geçen ışığı gölgedeki ikinci bir kartona düşürüp görüntüyü izlemek"
-        ],
-        "dogru": 3,
-        "aciklama": "Derse göre güneş gözlükleri ne kadar koyu olursa olsun güvenli değildir, tutulma gözlüğüyle optik aletten bakılmaz ve filtre her zaman aletin önüne, objektif tarafına takılır. NASA iğne deliği yöntemini güvenli seçenekler arasında sayar.",
-        "ders": "d4",
-        "bolum": 8
-      },
-      {
-        "id": "yildizlar-03",
-        "soru": "Bir toz bulutunun arkasındaki yıldızlar neden hem sönük hem de olduklarından daha kırmızı görünür?",
-        "secenekler": [
-          "Toz mavi ışığı kırmızıdan daha çok soğurup saçar; bu yüzden geçen ışık kızarır",
-          "Yıldızlar bizden uzaklaştığı için ışıkları kırmızıya kayar",
-          "Toz kendi kırmızı ışığını yayar ve yıldızın ışığına ekler",
-          "Toz yıldızın yüzeyini soğutur ve rengini değiştirir"
-        ],
-        "dogru": 0,
-        "aciklama": "Derse göre toz taneleri mavi ışığı kırmızıdan daha çok soğurur ve saçar; buna sönükleştirme ve kızarma denir. Etki dalga boyu uzadıkça azalır, bu yüzden kızılötesi ışık tozdan geçer.",
-        "ders": "d14",
-        "bolum": 2
-      },
-      {
-        "id": "yildizlar-04",
-        "soru": "Yıldızlar neden galaksinin en soğuk bölgelerinde, moleküler bulutların içinde doğar?",
-        "secenekler": [
-          "Soğuk bulutlar galaksinin hacminin çoğunu kapladığı için",
-          "Soğukta hidrojen çekirdekleri kendiliğinden kaynaştığı için",
-          "Soğuk gazın dışa iten basıncı düşük olduğu için gaz kendi kütleçekimine daha kolay yenilir",
-          "Sıcak gazın kütleçekimi olmadığı için"
-        ],
-        "dogru": 2,
-        "aciklama": "Derse göre gaz ne kadar sıcaksa parçacıkları o kadar hızlı hareket eder ve dışa o kadar güçlü basınç yaratır; soğuk gaz bu basınçtan yoksundur. Moleküler bulutlar hacmin yüzde birinden azını kaplar ama gaz kütlesinin yaklaşık yarısını taşır.",
-        "ders": "d14",
-        "bolum": 1
-      },
-      {
-        "id": "yildizlar-05",
-        "soru": "Kütlesi Güneş'in 1,5 katı olan bir anakol yıldızı yaklaşık ne kadar yaşar? (Güneş birimleriyle L = M⁴ kuralını ve ömür ≈ 10 milyar yıl × M ÷ L formülünü kullan.)",
-        "secenekler": [
-          "Yaklaşık 15 milyar yıl",
-          "Yaklaşık 3 milyar yıl",
-          "Yaklaşık 6,7 milyar yıl",
-          "Yaklaşık 10 milyar yıl"
-        ],
-        "dogru": 1,
-        "aciklama": "L = 1,5⁴ ≈ 5,1 Güneş ışıma gücü bulunur. Ömür ≈ 10 milyar × 1,5 ÷ 5,1 ≈ 3 milyar yıl. Derse göre kütleli yıldızın yakıtı fazladır ama onu çok daha hızlı harcadığı için daha kısa yaşar.",
-        "ders": "d5",
-        "bolum": 5
-      },
-      {
-        "id": "yildizlar-06",
-        "soru": "Gökyüzüne bakınca gördüğün yıldızların çoğu parlak, beyaz ya da mavimsi. Gerçekte anakol yıldızlarının çoğunluğu hangi türdendir?",
-        "secenekler": [
-          "Küçük ve sönük M cüceleri; ama hiçbiri çıplak gözle görülmez",
-          "Sıcak, mavi O ve B yıldızları",
-          "Güneş gibi G yıldızları",
-          "Beyaz renkli A yıldızları"
-        ],
-        "dogru": 0,
-        "aciklama": "Derse göre anakol yıldızlarının yaklaşık %76'sı M sınıfındadır, O yıldızlarının payı ise on milyonda üç kadardır. Hiçbir kırmızı cüce çıplak gözle görülmez; gökyüzü bize uzaktan bile parlayabilen az sayıdaki güçlü yıldızı gösterir.",
-        "ders": "d5",
-        "bolum": 6
-      },
-      {
-        "id": "yildizlar-07",
-        "soru": "İki açık kümenin H-R diyagramını karşılaştırıyorsun. Birinde dönüm noktası, yani yıldızların anakolu terk etmeye başladığı yer, ötekinden çok daha aşağıda, daha az kütleli yıldızlarda. Bu ne anlama gelir?",
-        "secenekler": [
-          "Bu küme daha gençtir",
-          "Bu küme bize daha uzaktır",
-          "Bu kümede hiç dev yıldız yoktur",
-          "Bu küme daha yaşlıdır; kütleli yıldızları çoktan anakolu terk etmiştir"
-        ],
-        "dogru": 3,
-        "aciklama": "Derse göre küme yaşlandıkça önce en kütleli yıldızlar anakoldan ayrılır ve anakolun üst ucu yukarıdan aşağı doğru kısalır. Dönüm noktası ne kadar aşağıdaysa küme o kadar yaşlıdır.",
-        "ders": "d15",
-        "bolum": 2
-      },
-      {
-        "id": "yildizlar-08",
-        "soru": "Bir çift yıldızın bileşenleri arasındaki uzaklık 8 AB, dolanma dönemi 16 yıl. İki yıldızın kütle toplamı kaç Güneş kütlesidir?",
-        "secenekler": [
-          "0,5",
-          "4",
-          "2",
-          "32"
-        ],
-        "dogru": 2,
-        "aciklama": "Derse göre kütle toplamı, Güneş kütlesi cinsinden a³ ÷ P² ile bulunur (a astronomik birim, P yıl). 8 × 8 × 8 = 512, 16 × 16 = 256; 512 ÷ 256 = 2. Bu, tek bir yıldızın değil, iki yıldızın toplam kütlesidir.",
-        "ders": "d15",
-        "bolum": 4
-      },
-      {
-        "id": "yildizlar-09",
-        "soru": "Bir beyaz cüceyi kendi ağırlığı altında çökmekten ne korur?",
-        "secenekler": [
-          "Elektron yozlaşma basıncı; bu basıncın taşıyabileceği kütlenin yaklaşık 1,4 Güneş kütlelik bir üst sınırı vardır",
-          "Çekirdeğinde süren hidrojen füzyonunun ısısı",
-          "Nötron yozlaşma basıncı",
-          "Hızlı dönüşünün yarattığı dışa doğru savrulma"
-        ],
-        "dogru": 0,
-        "aciklama": "Derse göre beyaz cüce füzyon yapmaz; onu Pauli dışlama ilkesinden doğan elektron yozlaşma basıncı tutar. Bu basıncın sınırı Chandrasekhar sınırıdır, yaklaşık 1,4 Güneş kütlesi. Nötron yozlaşma basıncı nötron yıldızlarında devreye girer.",
-        "ders": "d6",
-        "bolum": 2
-      },
-      {
-        "id": "yildizlar-10",
-        "soru": "Gezegenimsi bulutsu nedir?",
-        "secenekler": [
-          "Genç bir yıldızın çevresinde gezegenlerin oluştuğu toz diski",
-          "Ölen hafif bir yıldızın savurduğu ve sıcak çekirdeğinin aydınlattığı gaz kabuğu; gezegenlerle ilgisi yoktur",
-          "Parçalanan bir gezegenden geriye kalan gaz bulutu",
-          "Kütleli bir yıldızın süpernova patlamasından kalan kalıntı"
-        ],
-        "dogru": 1,
-        "aciklama": "Derse göre gezegenimsi bulutsu, ölen yaklaşık 1 ile 8 Güneş kütleli bir yıldızın uzaya savurduğu ve sıcak çekirdeğin morötesi ışığıyla parlayan gazdır. Adı küçük teleskopta yuvarlak bir disk gibi görünmesinden gelir; gezegenlerle ilgisi yoktur.",
-        "ders": "d6",
-        "bolum": 1
-      },
-      {
-        "id": "yildizlar-11",
-        "soru": "Kara delikler hakkında hangisi doğrudur?",
-        "secenekler": [
-          "Her şeyi uzaktan, bir elektrik süpürgesi gibi kendine çeker",
-          "Olay ufkunun yarıçapı kütlesinden bağımsızdır",
-          "Işık yaymadıkları için kütleleri hiçbir yolla ölçülemez",
-          "Olay ufkunun çok dışında, kütleçekimleri aynı kütledeki bir yıldızınkiyle aynıdır"
-        ],
-        "dogru": 3,
-        "aciklama": "Derse göre kara delik uzaktan emen bir süpürge değildir; Güneş aynı kütlede bir kara deliğe dönüşse Dünya'nın yörüngesi değişmezdi. Olay ufkunun yarıçapı kütleyle doğru orantılıdır; kara deliklerin kütlesi çevrelerindeki yıldızların hareketinden ölçülür.",
-        "ders": "d16",
-        "bolum": 1
-      },
-      {
-        "id": "yildizlar-12",
-        "soru": "17 Ağustos 2017'de gözlenen GW170817 olayını özel yapan nedir?",
-        "secenekler": [
-          "İki kara deliğin birleşmesinin ilk kez kütleçekim dalgasıyla duyulması",
-          "Bir kara deliğin gölgesinin ilk kez fotoğraflanması",
-          "Kütleçekim dalgasıyla duyulan bir kaynağın, iki nötron yıldızının birleşmesinin, ışıkla da ilk kez görülmesi",
-          "Kütleçekim dalgalarının ışıktan çok daha yavaş yol aldığının gösterilmesi"
-        ],
-        "dogru": 2,
-        "aciklama": "Derse göre GW170817 iki nötron yıldızının birleşmesiydi ve hem kütleçekim dalgasıyla hem ışıkla gözlenen ilk olay oldu. İlk kara delik birleşmesi GW150914'tü; iki sinyalin yaklaşık iki saniye arayla gelmesi dalgaların ışıkla aynı hızda yayıldığını gösterir.",
-        "ders": "d16",
-        "bolum": 8
-      }
+    "dogru": 2,
+    "aciklama": "Derse göre mevsimleri uzaklık değil eksen eğikliği belirler; Dünya Güneş'e en yakın noktasına Ocak'ta gelir ve o sırada kuzey yarımkürede kış yaşanır. Eğiklik öğle Güneşi'nin yüksekliğini ve gündüzün süresini değiştirir.",
+    "ders": "d1",
+    "bolum": 5
+   },
+   {
+    "id": "gokyuzu-03",
+    "soru": "Bu gece saat 23'te tam güneyde gördüğün bir yıldız, 15 gün sonra aynı yere yaklaşık saat kaçta gelir?",
+    "secenekler": [
+     "Yine saat 23'te",
+     "Yaklaşık saat 22'de",
+     "Yaklaşık saat 21'de",
+     "Yaklaşık gece yarısı, saat 24'te"
     ],
-    "gezegen_yasam": [
-      {
-        "id": "gezegen_yasam-01",
-        "soru": "Dikine hız yönteminde görünmeyen bir gezegenin varlığı neyden anlaşılır?",
-        "secenekler": [
-          "Yıldızın ışığının düzenli aralıklarla biraz azalmasından",
-          "Arka plandaki bir yıldızın birkaç gün boyunca parlaklaşmasından",
-          "Yıldızın tayf çizgilerinin düzenli bir ritimle bir maviye bir kırmızıya kaymasından",
-          "Yıldızın gökteki konumunun yana doğru salınmasından"
-        ],
-        "dogru": 2,
-        "aciklama": "Derse göre gezegen yıldızını ortak kütle merkezi çevresinde küçük bir daire üzerinde çekiştirir; yıldız yaklaşırken çizgiler maviye, uzaklaşırken kırmızıya kayar. Işık azalması geçiş, parlaklaşma mikromercek, konum salınımı astrometri yöntemidir.",
-        "ders": "d13",
-        "bolum": 1
-      },
-      {
-        "id": "gezegen_yasam-02",
-        "soru": "Bir gezegenin yarıçapı, yıldızının yarıçapının 0,05 katıdır. Gezegen yıldızın önünden geçerken yıldızın ışığı yaklaşık ne kadar azalır?",
-        "secenekler": [
-          "Yaklaşık %5",
-          "Yaklaşık %0,25",
-          "Yaklaşık %2,5",
-          "Yaklaşık %0,0025"
-        ],
-        "dogru": 1,
-        "aciklama": "Derse göre geçiş derinliği, gezegen yarıçapının yıldız yarıçapına oranının karesidir: 0,05 × 0,05 = 0,0025, yani yaklaşık %0,25. Oran doğrudan alınmaz, çünkü kesilen ışık disklerin alanlarıyla orantılıdır.",
-        "ders": "d13",
-        "bolum": 2
-      },
-      {
-        "id": "gezegen_yasam-03",
-        "soru": "Bir ötegezegenin, yıldızının yaşanabilir bölgesinde dolandığı bulundu. Bu ne anlama gelir?",
-        "secenekler": [
-          "Gezegende yaşam olduğu kesinleşmiştir",
-          "Gezegenin atmosferi solunabilir oksijen içerir",
-          "Gezegen Dünya ile aynı büyüklüktedir",
-          "Gezegen, yüzeyinde sıvı su bulunabilecek bir uzaklıktadır; ama bu yaşanabilir olduğunu garanti etmez"
-        ],
-        "dogru": 3,
-        "aciklama": "Derse göre yaşanabilir bölge yüzeyde sıvı su olabilecek uzaklık kuşağıdır; bölgede olmak yaşanabilir olmak anlamına gelmez. Gezegenin büyüklüğü, atmosferi ve yıldızın türü de belirleyicidir.",
-        "ders": "d13",
-        "bolum": 5
-      },
-      {
-        "id": "gezegen_yasam-04",
-        "soru": "Yıldızından çok uzakta, hatta hiçbir yıldıza bağlı olmadan dolaşan gezegenleri bulabilen tek yöntem hangisidir?",
-        "secenekler": [
-          "Kütleçekimsel mikromercek",
-          "Geçiş yöntemi",
-          "Dikine hız yöntemi",
-          "Doğrudan görüntüleme"
-        ],
-        "dogru": 0,
-        "aciklama": "Derse göre mikromercek gezegenin ışığına ihtiyaç duymaz: öndeki cismin kütleçekimi arkadaki yıldızın ışığını büküp onu kısa süre parlaklaştırır. Bu yüzden yıldızından uzak ya da serbest dolaşan gezegenleri bulabilen tek yoldur.",
-        "ders": "d13",
-        "bolum": 3
-      },
-      {
-        "id": "gezegen_yasam-05",
-        "soru": "Işınımı Güneş'inkinin 9 katı olan bir yıldızın yaşanabilir bölgesi kabaca nerededir? (Güneş için 0,99 ile 1,67 AB al.)",
-        "secenekler": [
-          "Yaklaşık 0,11 ile 0,19 AB arası",
-          "Yaklaşık 0,33 ile 0,56 AB arası",
-          "Yaklaşık 8,9 ile 15 AB arası",
-          "Yaklaşık 3,0 ile 5,0 AB arası"
-        ],
-        "dogru": 3,
-        "aciklama": "Derse göre uzaklık, ışınımın karekökü oranında ölçeklenir: √9 = 3. 0,99 × 3 ≈ 3,0 ve 1,67 × 3 ≈ 5,0 AB bulunur. Parlak yıldızın bölgesi daha uzaktadır; bu yalnızca kaba bir ölçeklemedir.",
-        "ders": "d13",
-        "bolum": 5
-      },
-      {
-        "id": "gezegen_yasam-06",
-        "soru": "İstanbul'un ışıklı bir semtindesin ve ilk ötegezegen keşfinin yıldızı 51 Pegasi'yi (5,49 kadir) görmek istiyorsun. En gerçekçi yol hangisi?",
-        "secenekler": [
-          "Çıplak gözle kolayca görürsün; 5,49 kadir parlak bir değerdir",
-          "Sonbahar akşamı dürbünle, Kanatlıat'ın büyük karesinden yıldız atlayarak aramak",
-          "Dürbünle yıldızın yanında gezegeni Dimidium'u da görmeyi beklemek",
-          "Kanatlıat'ı ilkbahar sabahlarında, gökte en yüksekteyken aramak"
-        ],
-        "dogru": 1,
-        "aciklama": "Derse göre kent merkezinde çıplak göz sınırı 4,0–4,5 kadir civarına iner; bu yüzden 51 Pegasi'yi dürbünle, yıldız atlayarak aramalısın. Kanatlıat en yüksek konumuna eylül, ekim ve kasım akşamlarında ulaşır; ötegezegenin kendisi dürbünle görülmez.",
-        "ders": "d13",
-        "bolum": 8
-      },
-      {
-        "id": "gezegen_yasam-07",
-        "soru": "NASA'ya göre bildiğimiz yaşamın üç temel gereksinimi nedir?",
-        "secenekler": [
-          "Enerji, organik moleküller ve sıvı su",
-          "Oksijen, güneş ışığı ve sıvı su",
-          "Kalın bir atmosfer, manyetik alan ve büyük bir uydu",
-          "Karbondioksit, azot ve oksijen"
-        ],
-        "dogru": 0,
-        "aciklama": "Derse göre NASA yaşamın gereksinimlerini enerji, organik moleküller ve sıvı su diye üç maddede toplar. Güneş ışığı şart değildir: okyanus tabanındaki hidrotermal bacaların çevresindeki topluluklar enerjiyi hidrojen sülfürden alır.",
-        "ders": "d18",
-        "bolum": 0
-      },
-      {
-        "id": "gezegen_yasam-08",
-        "soru": "Bir ötegezegenin atmosferinde biyoimza arıyorsun. Hangisi doğrudur?",
-        "secenekler": [
-          "Oksijen yalnızca canlılar tarafından üretilebilir; bulunması yaşamı kanıtlar",
-          "Oksijen yoksa o gezegende yaşam olamaz",
-          "Oksijen tek başına yetmez; gezegen suyunu kaybederken oksijen yaşam olmadan da birikebilir",
-          "Metan yalnızca canlılar tarafından üretilir; bulunması yaşamı kanıtlar"
-        ],
-        "dogru": 2,
-        "aciklama": "Derse göre ışığın su moleküllerini parçalamasıyla oksijen yaşamsız da birikebilir, serpantinleşme de yaşamsız metan üretir. Dünya ise yaşam olduğu hâlde havasında oksijen biriktirmeden yaklaşık bir milyar yıl geçirdi.",
-        "ders": "d18",
-        "bolum": 7
-      },
-      {
-        "id": "gezegen_yasam-09",
-        "soru": "Bir gezegenin kütlesi Dünya'nınkinin 2 katı, yarıçapı 2 katıdır. Ortalama yoğunluğu Dünya'nınkinin kaç katıdır?",
-        "secenekler": [
-          "1 katı, yani aynı",
-          "0,5 katı",
-          "4 katı",
-          "0,25 katı"
-        ],
-        "dogru": 3,
-        "aciklama": "Yoğunluk kütlenin hacme oranıdır ve hacim yarıçapın küpüyle büyür: 2 × 2 × 2 = 8. Yoğunluk oranı 2 ÷ 8 = 0,25 olur. Dersteki K2-18 b örneğinde de aynı yolla yoğunluk Dünya'nınkinin yaklaşık yarısı bulunur.",
-        "ders": "d18",
-        "bolum": 7
-      },
-      {
-        "id": "gezegen_yasam-10",
-        "soru": "Europa'nın buz kabuğunun altındaki okyanusu sıvı tutan ısı nereden gelir?",
-        "secenekler": [
-          "Buz kabuğundan geçen güneş ışığından",
-          "Jüpiter'in kütleçekiminin uyduyu sürekli esnetmesinden, yani gelgit ısınmasından",
-          "Kalın atmosferinin yarattığı sera etkisinden",
-          "Uydunun Güneş'e çok yakın dolanmasından"
-        ],
-        "dogru": 1,
-        "aciklama": "Derse göre Europa'nın yüzey sıcaklığı yaklaşık −133 ile −223 °C arasındadır; okyanusu sıvı tutan ısı Jüpiter'in kütleçekiminin uyduyu sürekli esnetmesinden, yani gelgit ısınmasından gelir.",
-        "ders": "d18",
-        "bolum": 5
-      },
-      {
-        "id": "gezegen_yasam-11",
-        "soru": "Drake denklemi bugün bile güvenilir bir uygarlık sayısı vermiyor. Bunun asıl nedeni nedir?",
-        "secenekler": [
-          "Galakside yılda kaç yıldız doğduğu hiç ölçülemiyor",
-          "Yıldızların gezegeni olup olmadığını hâlâ hiç bilmiyoruz",
-          "Yaşamın, zekânın ve teknolojinin ortaya çıkma oranları ile uygarlıkların ömrü hâlâ bilinmiyor",
-          "Denklem yalnızca Güneş Sistemi için yazılmıştır"
-        ],
-        "dogru": 2,
-        "aciklama": "Derse göre yıldız oluşum hızı ve gezegenli yıldız oranı gibi ilk çarpanlar artık ölçülebiliyor; ama yaşam, zekâ, teknoloji ve uygarlık ömrü çarpanları bilinmiyor. Bu yüzden denklem bir hesap değil, bir soru listesidir.",
-        "ders": "d18",
-        "bolum": 8
-      },
-      {
-        "id": "gezegen_yasam-12",
-        "soru": "Aşırı ortam canlıları, örneğin 122 °C sıcaklıkta büyüyebilen mikroplar ya da kısa süre açık uzaya dayanan su ayıları, bize asıl neyi söyler?",
-        "secenekler": [
-          "Yaşamın nerede olabileceğini; nerede olduğunu değil",
-          "Mars'ta ve Europa'da yaşam olduğunu",
-          "Yaşamın sıvı suya hiç ihtiyaç duymadığını",
-          "Bu canlıların uzayda yaşayıp çoğalabildiğini"
-        ],
-        "dogru": 0,
-        "aciklama": "Derse göre ekstremofiller olası yaşam yerlerinin listesini genişletir ama orada yaşam olduğunu kanıtlamaz. Bir canlının uzayda bir süre hayatta kalması, orada yaşayıp çoğalabileceği anlamına gelmez.",
-        "ders": "d18",
-        "bolum": 2
-      }
+    "dogru": 1,
+    "aciklama": "Yıldız günü 23 sa 56 dk 4 sn olduğundan bir yıldız her gece yaklaşık 3 dk 56 sn erken gelir. 15 × 3 dk 56 sn ≈ 59 dakika; yıldız yaklaşık bir saat erken, saat 22 civarında aynı yerdedir.",
+    "ders": "d1",
+    "bolum": 4
+   },
+   {
+    "id": "gokyuzu-04",
+    "soru": "Yüzey sıcaklığı yaklaşık 2900 K olan soğuk bir yıldızın tayfı, Wien yasasına göre yaklaşık hangi dalga boyunda tepe yapar?",
+    "secenekler": [
+     "Yaklaşık 250 nm, morötesinde",
+     "Yaklaşık 500 nm, Güneş gibi yeşilde",
+     "Yaklaşık 10 μm, Dünya'nın ışıması gibi orta kızılötesinde",
+     "Yaklaşık 1000 nm, yani 1 μm, kızılötesinde"
     ],
-    "evren": [
-      {
-        "id": "evren-01",
-        "soru": "Hubble'ın ayar çatalı diyagramı için hangisi doğrudur?",
-        "secenekler": [
-          "Eliptik galaksiler zamanla sarmal galaksilere dönüşür",
-          "Bir evrim sırası değildir; galaksiler çatal boyunca birinden ötekine sırayla dönüşmez",
-          "Sarmal galaksiler yaşlanınca eliptik olur; erken tür adı bu yüzden verilmiştir",
-          "Samanyolu çatalda çubuksuz bir sarmal olarak yer alır"
-        ],
-        "dogru": 1,
-        "aciklama": "Derse göre erken ve geç tür adları yanlış bir evrim inancına yol açmıştır; Hubble böyle bir yorum kastetmediğini açıkça belirtmişti. NASA'ya göre Samanyolu çubuklu sarmaldır.",
-        "ders": "d7",
-        "bolum": 3
-      },
-      {
-        "id": "evren-02",
-        "soru": "İstanbul'dan (41° kuzey) hangisini kendi gözünle ya da dürbünle görebilirsin?",
-        "secenekler": [
-          "Büyük Macellan Bulutu",
-          "Küçük Macellan Bulutu",
-          "Galaksimizin merkezindeki kara delik Sgr A*",
-          "Andromeda Galaksisi; ışıklı bir semtte dürbün işini kolaylaştırır"
-        ],
-        "dogru": 3,
-        "aciklama": "Derse göre Macellan Bulutları yaklaşık 20° ve 15° kuzey enleminin kuzeyinden görülmez; kara deliğin kendisi ise ışık yaymaz. Andromeda İstanbul'un göğündedir; ışığı geniş bir alana yayıldığı için ışıklı semtlerde dürbün işini kolaylaştırır.",
-        "ders": "d7",
-        "bolum": 4
-      },
-      {
-        "id": "evren-03",
-        "soru": "Aktif bir galaksinin parlak çekirdeğinin enerjisi nereden gelir?",
-        "secenekler": [
-          "Merkezdeki dev kara deliğe düşen gazın oluşturduğu, ısınıp parlayan yığılma diskinden",
-          "Çekirdekte aynı anda patlayan milyarlarca süpernovadan",
-          "Kara deliğin olay ufkunun içinden kaçan ışıktan",
-          "Galaksideki karanlık maddenin yanmasından"
-        ],
-        "dogru": 0,
-        "aciklama": "Derse göre enerjinin kaynağı merkezdeki dev kara deliktir: içeri düşen gaz kara deliğin çevresinde bir yığılma diski oluşturur, disk kütleçekimi ve sürtünmeyle çok ısınır ve parlak ışıma yapar.",
-        "ders": "d7",
-        "bolum": 7
-      },
-      {
-        "id": "evren-04",
-        "soru": "Samanyolu ile Andromeda bir gün birleşirse ne olması beklenir?",
-        "secenekler": [
-          "Yıldızların çoğu bilardo topları gibi birbirine çarpar",
-          "Gaz bulutları da yıldızlar gibi birbirinin içinden etkilenmeden geçer",
-          "Yıldızlar arası boşluklar devasa olduğu için tek tek yıldızlar neredeyse hiç çarpışmaz; gaz ise sıkışıp yıldız doğumunu tetikleyebilir",
-          "Güneş Sistemi kesin olarak yok olur"
-        ],
-        "dogru": 2,
-        "aciklama": "Derse göre yıldızların arası inanılmaz boştur; yıldızlar birbirinin yanından geçer ama kütleçekimleri yörüngelerini değiştirir. Gaz ise birbirine çarpıp yavaşlar ve yıldız doğumunu tetikleyebilir.",
-        "ders": "d7",
-        "bolum": 6
-      },
-      {
-        "id": "evren-05",
-        "soru": "Büyük Patlama için hangisi doğrudur?",
-        "secenekler": [
-          "Her yerde aynı anda olan bir genişlemedir; evrenin bir merkezi ya da kenarı yoktur",
-          "Boş uzayın ortasında tek bir noktada patlayan bir bombadır",
-          "Galaksiler uzayın içinde ortak bir merkezden dışarı doğru koşar",
-          "Kuram, evrenin ilk durumunun nereden geldiğini kesin olarak açıklar"
-        ],
-        "dogru": 0,
-        "aciklama": "Derse göre Büyük Patlama tek bir noktanın çevresine doğru bir patlama değildir; genişleme her yerde olur. Kuram, evrenin nasıl başladığını değil, sıcak ve yoğun bir hâlden nasıl evrildiğini anlatır.",
-        "ders": "d8",
-        "bolum": 0
-      },
-      {
-        "id": "evren-06",
-        "soru": "Evren yaklaşık 380.000 yaşındayken, yeniden birleşme denen anda ne oldu?",
-        "secenekler": [
-          "İlk yıldızlar yandı ve karanlık çağ sona erdi",
-          "Kuarklar birleşip proton ve nötronları oluşturdu",
-          "İlk helyum çekirdekleri oluştu",
-          "Sıcaklık yaklaşık 3000 kelvine düşünce elektronlar ve protonlar nötr hidrojen atomları oluşturdu ve evren ışığa saydam oldu"
-        ],
-        "dogru": 3,
-        "aciklama": "Derse göre serbest elektronlar ışığı sürekli saçtığı için evren saydam değildi; sıcaklık yaklaşık 3000 kelvine düşünce nötr atomlar oluştu ve ışık serbest kaldı. O anın ışığını bugün kozmik mikrodalga arka plan ışıması olarak görüyoruz.",
-        "ders": "d8",
-        "bolum": 4
-      },
-      {
-        "id": "evren-07",
-        "soru": "Kırmızıya kayması z = 4 olan bir galaksinin ışığı yola çıktığında kozmik mikrodalga arka plan ışımasının sıcaklığı yaklaşık kaç kelvindi? (Bugünkü değer 2,725 K)",
-        "secenekler": [
-          "Yaklaşık 10,9 K",
-          "Yaklaşık 13,6 K",
-          "Yaklaşık 0,55 K",
-          "Yaklaşık 2,7 K, yani bugünkü kadar"
-        ],
-        "dogru": 1,
-        "aciklama": "Derse göre T(z) = T0 × (1 + z) ilişkisi geçerlidir: 2,725 × (1 + 4) = 2,725 × 5 ≈ 13,6 K. Geçmişte evren daha küçük olduğu için ışıma daha sıcaktı.",
-        "ders": "d8",
-        "bolum": 4
-      },
-      {
-        "id": "evren-08",
-        "soru": "İlk yıldız kuşağı neden yalnızca hidrojen ve helyumdan yapılmış olmalıydı?",
-        "secenekler": [
-          "Ağır elementler o sırada vardı ama ilk yıldızların kütleçekiminden kaçtı",
-          "Karanlık madde ağır elementleri yuttu",
-          "Büyük Patlama çekirdek sentezi ilk yaklaşık 20 dakikada durdu ve yalnızca hafif çekirdekler üretti; ağır elementler sonra yıldızlarda oluştu",
-          "Ağır elementler yalnızca karanlık çağda, yıldızlardan önce oluştu"
-        ],
-        "dogru": 2,
-        "aciklama": "Derse göre ilk yaklaşık 20 dakikada yalnızca helyum, döteryum, trityum ve lityum gibi hafif çekirdekler oluştu, sonra sıcaklık ve yoğunluk füzyon için fazla düştü. Karbon, oksijen ve demirin neredeyse tamamı çok sonra yıldızlarda üretildi.",
-        "ders": "d8",
-        "bolum": 3
-      },
-      {
-        "id": "evren-09",
-        "soru": "Iraklık açısı 0,05 yay saniyesi olan bir yıldız ne kadar uzaktadır? (1 parsek ≈ 3,26 ışık yılı)",
-        "secenekler": [
-          "20 parsek, yaklaşık 65 ışık yılı",
-          "0,05 parsek",
-          "20 parsek, yaklaşık 6,1 ışık yılı",
-          "200 parsek, yaklaşık 650 ışık yılı"
-        ],
-        "dogru": 0,
-        "aciklama": "Derse göre uzaklık parsek cinsinden d = 1 / p ile bulunur: 1 ÷ 0,05 = 20 parsek. Işık yılına çevirmek için çarparsın: 20 × 3,26 ≈ 65 ışık yılı.",
-        "ders": "d17",
-        "bolum": 2
-      },
-      {
-        "id": "evren-10",
-        "soru": "Bir galaksi saniyede 13.480 km hızla bizden uzaklaşıyor. H0 = 67,4 km/s/Mpc alırsan uzaklığı yaklaşık kaç megaparsektir?",
-        "secenekler": [
-          "Yaklaşık 0,005 megaparsek",
-          "Yaklaşık 908.552 megaparsek",
-          "Yaklaşık 20 megaparsek",
-          "Yaklaşık 200 megaparsek"
-        ],
-        "dogru": 3,
-        "aciklama": "Hubble-Lemaître yasası v = H0 × d olduğundan d = v ÷ H0: 13.480 ÷ 67,4 = 200 megaparsek. Derse göre H0 bir kez bilinince yakın sayılabilecek galaksilerin uzaklığı kırmızıya kaymadan bulunabilir.",
-        "ders": "d17",
-        "bolum": 1
-      },
-      {
-        "id": "evren-11",
-        "soru": "Sarmal galaksilerde dönme eğrilerinin, şişkinliğin dışında düz olması neyi gösterir?",
-        "secenekler": [
-          "Galaksinin merkezinde hiç kütle bulunmadığını",
-          "Kütlenin görünen yıldızların bittiği yerin çok ötesine kadar uzandığını; görünmeyen bir kütle, yani karanlık madde olduğunu",
-          "Dış yıldızların iç yıldızlardan daha yavaş döndüğünü",
-          "Karanlık enerjinin yıldızları galaksinin dışına ittiğini"
-        ],
-        "dogru": 1,
-        "aciklama": "Derse göre kütle görünen yıldızlarla bitseydi dıştaki yıldızlar daha yavaş dönmeliydi; oysa Rubin ve Ford yıldızların çoğunun kabaca aynı hızla döndüğünü buldu. Bu, kütlenin uzaklıkla birlikte arttığını ve görünmeyen bir kütle olduğunu gösterir.",
-        "ders": "d17",
-        "bolum": 4
-      },
-      {
-        "id": "evren-12",
-        "soru": "Mermi Kümesi neden karanlık madde için güçlü bir kanıt sayılır?",
-        "secenekler": [
-          "Kümede karanlık madde parçacıkları ilk kez doğrudan yakalandı",
-          "Karanlık maddenin kendisi X-ışınlarıyla görüntülendi",
-          "Çarpışmada gaz yavaşladı; mercek etkisiyle ölçülen kütlenin büyük kısmı ise sıradan maddeyi taşıyan gazdan ayrı bir yerde duruyor",
-          "Kümedeki yıldızların hepsi çarpışıp söndü"
-        ],
-        "dogru": 2,
-        "aciklama": "Derse göre çarpışan iki kümede sıcak gaz X-ışınlarıyla görüldü ve sürüklenmeyle yavaşladı; toplam kütlenin yeri ise kütleçekimsel mercek etkisinden ölçüldü. Karanlık madde yavaşlamadığı için kütlenin çoğu gazdan ayrı duruyor.",
-        "ders": "d17",
-        "bolum": 5
-      }
-    ]
-  }
+    "dogru": 3,
+    "aciklama": "λ_tepe = 2,898 × 10⁻³ m·K ÷ T bağıntısıyla 2,898 × 10⁻³ ÷ 2900 ≈ 1,0 × 10⁻⁶ metre, yani yaklaşık 1000 nm bulunur; bu görünür bölgenin dışında, kızılötesindedir. Derse göre sıcaklık düştükçe tepe uzun dalga boylarına kayar.",
+    "ders": "d2",
+    "bolum": 4
+   },
+   {
+    "id": "gokyuzu-05",
+    "soru": "Sürekli tayf veren sıcak bir kaynağa, önündeki daha soğuk ve seyrek bir gazın ardından bakıyorsun. Tayfta ne görürsün?",
+    "secenekler": [
+     "Karanlık arka plan üzerinde yalnızca parlak salma çizgileri",
+     "Sürekli tayfın üzerinde karanlık soğurma çizgileri",
+     "Hiç çizgi içermeyen düz bir sürekli tayf",
+     "Bütün çizgilerin maviye kaymış hâli"
+    ],
+    "dogru": 1,
+    "aciklama": "Kirchhoff'un yasalarına göre sürekli tayf veren bir kaynağa daha soğuk ve seyrek bir gazın ardından bakarsan, gazdaki elementlere özgü dalga boylarında karanlık soğurma çizgileri görürsün. Güneş tayfındaki Fraunhofer çizgileri böyle oluşur.",
+    "ders": "d2",
+    "bolum": 6
+   },
+   {
+    "id": "gokyuzu-06",
+    "soru": "Bir yıldızın tayfındaki bütün çizgiler laboratuvar değerlerine göre maviye kaymış. Buradan ne çıkarırsın?",
+    "secenekler": [
+     "Yıldız bize yaklaşıyor; bu ölçüm yalnızca bakış doğrultusundaki hızı verir",
+     "Yıldız bizden uzaklaşıyor; bu ölçüm yalnızca bakış doğrultusundaki hızı verir",
+     "Yıldız gökte yana doğru hızla hareket ediyor",
+     "Yıldız çok sıcak olduğu için çizgileri maviye kaymış"
+    ],
+    "dogru": 0,
+    "aciklama": "Derse göre kaynak yaklaşırken dalgalar kısalır ve çizgiler maviye kayar; uzaklaşırken kırmızıya kayar. Doppler kayması yalnızca dikine hızı ölçer, gökte yana doğru hareket tayfta görünmez.",
+    "ders": "d2",
+    "bolum": 7
+   },
+   {
+    "id": "gokyuzu-07",
+    "soru": "Teleskop alırken sönük cisimleri görebilmen ve ince ayrıntıları ayırabilmen en çok hangi özelliğe bağlıdır?",
+    "secenekler": [
+     "Teleskobun ulaşabildiği en yüksek büyütmeye",
+     "Tüpün uzunluğuna",
+     "Açıklığa, yani objektifin çapına",
+     "Göz merceğinin odak uzaklığına"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre teleskobun iki asıl işi ışık toplamak ve ayrıntı ayırmaktır ve ikisi de açıklığa bağlıdır. Büyütme en az önemli özelliktir; görüntüde olmayan bir ayrıntıyı yaratamaz.",
+    "ders": "d12",
+    "bolum": 0
+   },
+   {
+    "id": "gokyuzu-08",
+    "soru": "Açıklığı 300 mm olan bir teleskop, açıklığı 100 mm olan bir teleskoptan kaç kat fazla ışık toplar?",
+    "secenekler": [
+     "3 kat",
+     "6 kat",
+     "27 kat",
+     "9 kat"
+    ],
+    "dogru": 3,
+    "aciklama": "Toplanan ışık objektifin alanıyla, yani çapın karesiyle orantılıdır. Çap oranı 300 ÷ 100 = 3, ışık oranı 3 × 3 = 9 kat olur; dersteki örnekte de çap iki katına çıkınca ışık dört katına çıkar.",
+    "ders": "d12",
+    "bolum": 2
+   },
+   {
+    "id": "gokyuzu-09",
+    "soru": "Uzun pozlamalı gökyüzü fotoğrafı için neden ekvatoral kundak tercih edilir?",
+    "secenekler": [
+     "Alt-az kundağa göre teleskoba daha fazla ışık topladığı için",
+     "Ana ekseni Kutup Yıldızı'na çevrilir ve tek bir motorla Dünya'nın dönüşünü telafi eder",
+     "Atmosferin titreşimini ortadan kaldırdığı için",
+     "Teleskobun en yüksek yararlı büyütmesini iki katına çıkardığı için"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre ekvatoral kundağın sağ açıklık ekseni Kutup Yıldızı'na çevrilir ve bu eksene takılan motor yıldızı görüş alanında tutar. Alt-az kundakta uzun pozlamada alan dönmesi olur.",
+    "ders": "d12",
+    "bolum": 5
+   },
+   {
+    "id": "gokyuzu-10",
+    "soru": "8×40 bir dürbünün çıkış göz bebeği kaç milimetredir ve karanlıkta göz bebeği 6 mm açılan birinin gözüne bu demetin ne kadarı girer?",
+    "secenekler": [
+     "5 mm; demetin tamamı gözüne girer",
+     "5 mm; demetin bir kısmı irise çarpıp boşa gider",
+     "8 mm; demetin bir kısmı irise çarpıp boşa gider",
+     "320 mm; demetin çok azı gözüne girer"
+    ],
+    "dogru": 0,
+    "aciklama": "Çıkış göz bebeği objektif çapının büyütmeye bölümüdür: 40 ÷ 8 = 5 mm. Göz bebeğin 6 mm olduğu için demetin tamamı girer; derse göre ışık ancak çıkış göz bebeği senin göz bebeğinden büyükse boşa gider.",
+    "ders": "d11",
+    "bolum": 1
+   },
+   {
+    "id": "gokyuzu-11",
+    "soru": "Balkonda aynı gece hem sönük bir yıldız kümesini hem de Ay'ı dürbünle gözlemek istiyorsun. Dersteki önerilere en uygun plan hangisi?",
+    "secenekler": [
+     "Önce Ay'a bakmak, sonra hemen kümeye geçmek; parlak ışık karanlık uyumunu etkilemez",
+     "Haritayı telefonun beyaz ekranıyla okumak; uyum birkaç saniyede geri gelir",
+     "Gözünü bir iki dakika karanlıkta tutmak; tam uyum için bu yeterlidir",
+     "Gözünü en az 15–20 dakika karanlığa alıştırıp önce kümeye bakmak, Ay'ı sona bırakmak"
+    ],
+    "dogru": 3,
+    "aciklama": "Derse göre karanlık uyumu kaynağa göre 15–45 dakika sürer ve beyaz ışık onu anında sıfırlar. Bu yüzden önce sönük hedeflere bakılır, Ay ve parlak gezegenler sona bırakılır; haritaya loş kırmızı ışıkla bakılır.",
+    "ders": "d11",
+    "bolum": 2
+   },
+   {
+    "id": "gokyuzu-12",
+    "soru": "Sönük bir bulutsuya doğrudan baktığında kayboluyor, gözünü biraz yana kaydırınca beliriyor. Bunun nedeni nedir?",
+    "secenekler": [
+     "Dürbünün büyütmesi yetersizdir; daha yüksek büyütme gerekir",
+     "Bulutsunun parlaklığı gerçekten saniyeler içinde değişir",
+     "Retinanın tam merkezinde neredeyse hiç çubuk hücre yoktur",
+     "Gözün yorulmuştur; bir süre beyaz ışığa bakıp dinlendirmelisin"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre retinanın merkezindeki foveada neredeyse hiç çubuk hücre yoktur; çubuk hücrelerin yoğunluğu bakış merkezinden yaklaşık 20° uzakta en yüksektir. Kaçamak bakışta cismin biraz yanına bakılır.",
+    "ders": "d11",
+    "bolum": 3
+   }
+  ],
+  "gunes_sistemi": [
+   {
+    "id": "gunes_sistemi-01",
+    "soru": "Yarı büyük ekseni 16 AB olan bir cisim Güneş'in çevresini kaç yılda dolanır?",
+    "secenekler": [
+     "4 yıl",
+     "16 yıl",
+     "64 yıl",
+     "256 yıl"
+    ],
+    "dogru": 2,
+    "aciklama": "Kepler'in üçüncü yasası yıl ve astronomik birim ile P² = a³ biçimindedir. a³ = 16 × 16 × 16 = 4096, bunun karekökü 64; yani bir tur 64 yıl sürer. Derse göre dönem uzaklıktan daha hızlı büyür.",
+    "ders": "d3",
+    "bolum": 2
+   },
+   {
+    "id": "gunes_sistemi-02",
+    "soru": "Okyanuslarda gelgiti asıl oluşturan nedir?",
+    "secenekler": [
+     "Ay'ın çekiminin Dünya'nın iki yüzü arasındaki farkı",
+     "Rüzgârların suyu günde iki kez kıyıya doğru itmesi",
+     "Dünya'nın Güneş çevresindeki dolanımının suyu savurması",
+     "Ay'ın yalnızca kendisine bakan yüzdeki suyu çekmesi; karşı yüzde kabarma olmaz"
+    ],
+    "dogru": 0,
+    "aciklama": "Derse göre gelgiti çekimin kendisi değil, Dünya'nın iki yüzü arasındaki çekim farkı yapar. Bu yüzden biri Ay'a bakan yüzde, biri tam karşı yüzde olmak üzere iki kabarıklık oluşur.",
+    "ders": "d3",
+    "bolum": 7
+   },
+   {
+    "id": "gunes_sistemi-03",
+    "soru": "Aynı gezegenin çevresinde biri alçak, biri çok daha yüksek dairesel yörüngede dolanan iki uydudan hangisi daha hızlı gider?",
+    "secenekler": [
+     "Yüksekteki, çünkü daha uzun bir yol gitmesi gerekir",
+     "İkisi de aynı hızla gider, çünkü aynı gezegeni dolanırlar",
+     "Yüksekliği ne olursa olsun kütlesi büyük olan",
+     "Alçaktaki, çünkü dairesel yörünge hızı uzaklık arttıkça azalır"
+    ],
+    "dogru": 3,
+    "aciklama": "Dairesel yörünge hızı v = √(GM / r) ile verilir; r büyüdükçe gereken hız azalır. Derse göre Uzay İstasyonu saniyede yaklaşık 8 km giderken çok daha uzaktaki Ay saniyede yaklaşık 1 km yol alır.",
+    "ders": "d3",
+    "bolum": 5
+   },
+   {
+    "id": "gunes_sistemi-04",
+    "soru": "Satürn'ün ortalama yoğunluğu suyunkinin yaklaşık 0,69 katıdır. Bu bilgi Satürn hakkında ne söyler?",
+    "secenekler": [
+     "Kütlesi Dünya'nınkinden azdır",
+     "Sudan daha düşük yoğunluğa sahip tek gezegendir",
+     "Katı, kayalık bir yüzeyi vardır",
+     "Gezegenlerin en yoğunudur"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre suyun yoğunluğu 1, Satürn'ünki 0,69 birimdir; bu onu sudan daha düşük yoğunluğa sahip tek gezegen yapar. Kütlesi Dünya'nın yaklaşık 95 katıdır, en yoğun gezegen ise Dünya'dır.",
+    "ders": "d9",
+    "bolum": 5
+   },
+   {
+    "id": "gunes_sistemi-05",
+    "soru": "Uluslararası Astronomi Birliği'nin 2006 tanımına göre Plüton hangi koşulu sağlamadığı için cüce gezegen sayılır?",
+    "secenekler": [
+     "Güneş'in çevresinde dolanma koşulunu",
+     "Kendi kütleçekimiyle neredeyse küresel biçim alma koşulunu",
+     "En az bir uydusu olma koşulunu",
+     "Yörüngesinin çevresini temizlemiş olma koşulunu"
+    ],
+    "dogru": 3,
+    "aciklama": "Derse göre gezegen Güneş'i dolanır, kendi kütleçekimiyle neredeyse küresel biçim alır ve yörüngesinin çevresini temizlemiştir. Plüton üçüncü koşulu sağlamadığı için cüce gezegen oldu; uydu sayısı tanımda yer almaz.",
+    "ders": "d9",
+    "bolum": 8
+   },
+   {
+    "id": "gunes_sistemi-06",
+    "soru": "İstanbul'un ışık kirli bir semtinden sıradan bir dürbünle Jüpiter'e bakıyorsun. Dersteki bilgiye göre ne bekleyebilirsin?",
+    "secenekler": [
+     "Galileo uydularını seçebilir, birkaç gece üst üste konumlarının değiştiğini izleyebilirsin",
+     "Işık kirliliği yüzünden uyduları ancak büyük bir teleskopla görebilirsin",
+     "Jüpiter'in halkasını Satürn'ünki kadar kolay ayırırsın",
+     "Uydular hep aynı yerde durur; konumlarını bir kez çizmen yeter"
+    ],
+    "dogru": 0,
+    "aciklama": "Derse göre Galileo uyduları ışık kirliliği yoğun bir gökte bile sıradan bir dürbünle kolayca görülür ve gezegenin çevresinde dolandıkları için konumları geceden geceye değişir. Dünya'dan kolayca görülen tek halka Satürn'ünkidir.",
+    "ders": "d9",
+    "bolum": 5
+   },
+   {
+    "id": "gunes_sistemi-07",
+    "soru": "Ay'ın evreleri neden oluşur?",
+    "secenekler": [
+     "Dünya'nın gölgesi her gece Ay'ın farklı bir kısmına düşer",
+     "Ay'ın kendi ürettiği ışık ay boyunca azalıp çoğalır",
+     "Güneş Ay'ın hep yarısını aydınlatır; değişen, bu aydınlık yarının ne kadarının bize dönük olduğudur",
+     "Ay'ın Dünya'ya uzaklığı değiştikçe aydınlık kısmı büyüyüp küçülür"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre Ay kendi ışığını üretmez ve Güneş her zaman Ay'ın yarısını aydınlatır; evre, aydınlık yarının bize dönük kısmıdır. Dünya'nın gölgesi Ay'a yalnızca Ay tutulmasında düşer.",
+    "ders": "d10",
+    "bolum": 0
+   },
+   {
+    "id": "gunes_sistemi-08",
+    "soru": "Ay'ın Dünya'dan görülmeyen uzak yüzü için hangisi doğrudur?",
+    "secenekler": [
+     "Hiç Güneş ışığı almaz; bu yüzden ona karanlık yüz denir",
+     "Güneş ışığı alır; yeni ay evresinde tam gündüzdedir",
+     "Ay kendi ekseni çevresinde hiç dönmediği için onu göremeyiz",
+     "Librasyon sayesinde Dünya'dan zamanla tamamını görebiliriz"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre uzak yüz de Güneş ışığı alır, yalnızca bize dönük değildir; yeni ayda tam gündüzdedir. Ay döner ama dönüşü dolanımıyla eşit sürer; librasyonla bile yüzeyin ancak yaklaşık %59'u görülür.",
+    "ders": "d10",
+    "bolum": 2
+   },
+   {
+    "id": "gunes_sistemi-09",
+    "soru": "Dünya'da 60 kg gösteren bir banyo baskülü Ay'da yaklaşık kaç kilogram gösterirdi? (Çekim ivmesi Dünya'da 9,80 m/s², Ay'da 1,62 m/s²)",
+    "secenekler": [
+     "Yaklaşık 36 kg",
+     "Yaklaşık 23 kg",
+     "60 kg; kütle değişmediği için baskül de aynı değeri gösterir",
+     "Yaklaşık 10 kg"
+    ],
+    "dogru": 3,
+    "aciklama": "Baskül kuvveti ölçüp kilograma çevirir; kuvvet kütle × çekim ivmesidir. 60 × 1,62 ÷ 9,80 ≈ 9,9, yani yaklaşık 10 kg gösterir. Kütlen yine 60 kilogramdır; derse göre Ay'ın çekimi Dünya'nınkinin kabaca altıda biridir.",
+    "ders": "d10",
+    "bolum": 4
+   },
+   {
+    "id": "gunes_sistemi-10",
+    "soru": "Güneş'ten uzaklaşmakta olan bir kuyruklu yıldızın kuyruğu hangi yöne bakar?",
+    "secenekler": [
+     "Güneş'in tersine; bu yüzden kuyruk bu sırada önden gider",
+     "Kuyruklu yıldızın geldiği yöne, yani hep arkasına doğru",
+     "Güneş'e doğru",
+     "Dünya'ya doğru"
+    ],
+    "dogru": 0,
+    "aciklama": "Derse göre iki kuyruk da Güneş'ten uzağa bakar; kuyruk gidiş yönünü değil Güneş'in tersini gösterir. Bu yüzden kuyruklu yıldız Güneş'ten uzaklaşırken kuyruk önden gider.",
+    "ders": "d19",
+    "bolum": 3
+   },
+   {
+    "id": "gunes_sistemi-11",
+    "soru": "Aynı taş uzaydayken, atmosferde yanarken ve yere düştükten sonra sırasıyla hangi adları alır?",
+    "secenekler": [
+     "Meteor, meteoroit, göktaşı",
+     "Meteoroit, meteor, göktaşı",
+     "Asteroit, göktaşı, meteor",
+     "Meteoroit, göktaşı, meteor"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre uzaydaki taş meteoroittir; atmosferde yanarken meteor, yani kayan yıldız olur; atmosferi aşıp yere düşerse göktaşı (meteorit) adını alır.",
+    "ders": "d19",
+    "bolum": 4
+   },
+   {
+    "id": "gunes_sistemi-12",
+    "soru": "Bir kuyruklu yıldız Güneş'i 125 yılda bir dolanıyor. Yörüngesinin yarı büyük ekseni yaklaşık kaç astronomik birimdir?",
+    "secenekler": [
+     "Yaklaşık 5 AB",
+     "Yaklaşık 11 AB",
+     "Yaklaşık 25 AB",
+     "Yaklaşık 125 AB"
+    ],
+    "dogru": 2,
+    "aciklama": "P² = a³ ile a³ = 125 × 125 = 15.625 bulunur; bunun küp kökü 25'tir. Dersteki Halley örneğinde de aynı yolla 76 yıllık döneme yaklaşık 18 astronomik birimlik yarı büyük eksen karşılık gelir.",
+    "ders": "d19",
+    "bolum": 3
+   }
+  ],
+  "yildizlar": [
+   {
+    "id": "yildizlar-01",
+    "soru": "Bir güneş lekesinin umbrası yaklaşık 3600 K, çevresindeki fotosfer yaklaşık 5780 K. Umbranın her metrekaresi, çevresindeki fotosferin yaklaşık yüzde kaçı kadar ışık saçar?",
+    "secenekler": [
+     "Yaklaşık %62'si",
+     "Yaklaşık %15'i",
+     "Yaklaşık %39'u",
+     "Yaklaşık %1'i"
+    ],
+    "dogru": 1,
+    "aciklama": "Stefan-Boltzmann yasasına göre birim alandan yayılan güç sıcaklığın dördüncü kuvvetiyle orantılıdır: 3600 ÷ 5780 ≈ 0,623 ve 0,623⁴ ≈ 0,15. Dersteki örnekte de umbra çevresinin %7 ile %37'si kadar ışık saçar; leke gerçekte parlaktır, yalnızca çevresine göre sönüktür.",
+    "ders": "d4",
+    "bolum": 5
+   },
+   {
+    "id": "yildizlar-02",
+    "soru": "Güneş'i ve lekelerini izlemek istiyorsun. Dersteki yöntemlerden hangisi güvenlidir?",
+    "secenekler": [
+     "Çok koyu bir güneş gözlüğüyle kısa süre doğrudan bakmak",
+     "Tutulma gözlüğünü takıp dürbünle bakmak",
+     "Güneş filtresini dürbünün göz merceği tarafına takıp bakmak",
+     "İğne deliğinden geçen ışığı gölgedeki bir kartona düşürüp izlemek"
+    ],
+    "dogru": 3,
+    "aciklama": "Derse göre güneş gözlükleri ne kadar koyu olursa olsun güvenli değildir, tutulma gözlüğüyle optik aletten bakılmaz ve filtre her zaman aletin önüne, objektif tarafına takılır. NASA iğne deliği yöntemini güvenli seçenekler arasında sayar.",
+    "ders": "d4",
+    "bolum": 8
+   },
+   {
+    "id": "yildizlar-03",
+    "soru": "Bir toz bulutunun arkasındaki yıldızlar neden hem sönük hem de olduklarından daha kırmızı görünür?",
+    "secenekler": [
+     "Toz mavi ışığı kırmızıdan daha çok soğurup saçar; bu yüzden geçen ışık kızarır",
+     "Yıldızlar bizden uzaklaştığı için ışıkları kırmızıya kayar",
+     "Toz kendi kırmızı ışığını yayar ve yıldızın ışığına ekler",
+     "Toz yıldızın yüzeyini soğutur ve rengini değiştirir"
+    ],
+    "dogru": 0,
+    "aciklama": "Derse göre toz taneleri mavi ışığı kırmızıdan daha çok soğurur ve saçar; buna sönükleştirme ve kızarma denir. Etki dalga boyu uzadıkça azalır, bu yüzden kızılötesi ışık tozdan geçer.",
+    "ders": "d14",
+    "bolum": 2
+   },
+   {
+    "id": "yildizlar-04",
+    "soru": "Yıldızlar neden galaksinin en soğuk bölgelerinde, moleküler bulutların içinde doğar?",
+    "secenekler": [
+     "Soğuk bulutlar galaksinin hacminin çoğunu kapladığı için",
+     "Soğukta hidrojen çekirdekleri kendiliğinden kaynaştığı için",
+     "Soğuk gazın dışa iten basıncı düşük olduğu için gaz kendi kütleçekimine daha kolay yenilir",
+     "Sıcak gazın kütleçekimi olmadığı için"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre gaz ne kadar sıcaksa parçacıkları o kadar hızlı hareket eder ve dışa o kadar güçlü basınç yaratır; soğuk gaz bu basınçtan yoksundur. Moleküler bulutlar hacmin yüzde birinden azını kaplar ama gaz kütlesinin yaklaşık yarısını taşır.",
+    "ders": "d14",
+    "bolum": 1
+   },
+   {
+    "id": "yildizlar-05",
+    "soru": "Kütlesi Güneş'in 1,5 katı olan bir anakol yıldızı yaklaşık ne kadar yaşar? (Güneş birimleriyle L = M⁴ kuralını ve ömür ≈ 10 milyar yıl × M ÷ L formülünü kullan.)",
+    "secenekler": [
+     "Yaklaşık 15 milyar yıl",
+     "Yaklaşık 3 milyar yıl",
+     "Yaklaşık 6,7 milyar yıl",
+     "Yaklaşık 10 milyar yıl"
+    ],
+    "dogru": 1,
+    "aciklama": "L = 1,5⁴ ≈ 5,1 Güneş ışıma gücü bulunur. Ömür ≈ 10 milyar × 1,5 ÷ 5,1 ≈ 3 milyar yıl. Derse göre kütleli yıldızın yakıtı fazladır ama onu çok daha hızlı harcadığı için daha kısa yaşar.",
+    "ders": "d5",
+    "bolum": 5
+   },
+   {
+    "id": "yildizlar-06",
+    "soru": "Gökyüzüne bakınca gördüğün yıldızların çoğu parlak, beyaz ya da mavimsi. Gerçekte anakol yıldızlarının çoğunluğu hangi türdendir?",
+    "secenekler": [
+     "Küçük ve sönük M cüceleri",
+     "Sıcak, mavi O ve B yıldızları",
+     "Güneş gibi G yıldızları",
+     "Beyaz renkli A yıldızları"
+    ],
+    "dogru": 0,
+    "aciklama": "Derse göre anakol yıldızlarının yaklaşık %76'sı M sınıfındadır, O yıldızlarının payı ise on milyonda üç kadardır. Kırmızı cücelerin neredeyse hiçbiri çıplak gözle görülmez; gökyüzü bize uzaktan bile parlayabilen az sayıdaki güçlü yıldızı gösterir.",
+    "ders": "d5",
+    "bolum": 6
+   },
+   {
+    "id": "yildizlar-07",
+    "soru": "İki açık kümenin H-R diyagramını karşılaştırıyorsun. Birinde dönüm noktası, yani yıldızların anakolu terk etmeye başladığı yer, ötekinden çok daha aşağıda, daha az kütleli yıldızlarda. Bu ne anlama gelir?",
+    "secenekler": [
+     "Bu küme daha gençtir",
+     "Bu küme bize daha uzaktır",
+     "Bu kümede hiç dev yıldız yoktur",
+     "Bu küme daha yaşlıdır"
+    ],
+    "dogru": 3,
+    "aciklama": "Derse göre küme yaşlandıkça önce en kütleli yıldızlar anakoldan ayrılır ve anakolun üst ucu yukarıdan aşağı doğru kısalır. Dönüm noktası ne kadar aşağıdaysa küme o kadar yaşlıdır.",
+    "ders": "d15",
+    "bolum": 2
+   },
+   {
+    "id": "yildizlar-08",
+    "soru": "Bir çift yıldızın bileşenleri arasındaki uzaklık 8 AB, dolanma dönemi 16 yıl. İki yıldızın kütle toplamı kaç Güneş kütlesidir?",
+    "secenekler": [
+     "0,5",
+     "4",
+     "2",
+     "32"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre kütle toplamı, Güneş kütlesi cinsinden a³ ÷ P² ile bulunur (a astronomik birim, P yıl). 8 × 8 × 8 = 512, 16 × 16 = 256; 512 ÷ 256 = 2. Bu, tek bir yıldızın değil, iki yıldızın toplam kütlesidir.",
+    "ders": "d15",
+    "bolum": 4
+   },
+   {
+    "id": "yildizlar-09",
+    "soru": "Bir beyaz cüceyi kendi ağırlığı altında çökmekten ne korur?",
+    "secenekler": [
+     "Elektron yozlaşma basıncı",
+     "Çekirdeğinde süren hidrojen füzyonunun ısısı",
+     "Nötron yozlaşma basıncı",
+     "Hızlı dönüşünün yarattığı dışa doğru savrulma"
+    ],
+    "dogru": 0,
+    "aciklama": "Derse göre beyaz cüce füzyon yapmaz; onu Pauli dışlama ilkesinden doğan elektron yozlaşma basıncı tutar. Bu basıncın sınırı Chandrasekhar sınırıdır, yaklaşık 1,4 Güneş kütlesi. Nötron yozlaşma basıncı nötron yıldızlarında devreye girer.",
+    "ders": "d6",
+    "bolum": 2
+   },
+   {
+    "id": "yildizlar-10",
+    "soru": "Gezegenimsi bulutsu nedir?",
+    "secenekler": [
+     "Genç bir yıldızın çevresinde gezegenlerin oluştuğu toz diski",
+     "Ölen hafif bir yıldızın savurduğu ve sıcak çekirdeğinin aydınlattığı gaz kabuğu",
+     "Parçalanan bir gezegenden geriye kalan gaz bulutu",
+     "Kütleli bir yıldızın süpernova patlamasından kalan kalıntı"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre gezegenimsi bulutsu, ölen yaklaşık 1 ile 8 Güneş kütleli bir yıldızın uzaya savurduğu ve sıcak çekirdeğin morötesi ışığıyla parlayan gazdır. Adı küçük teleskopta yuvarlak bir disk gibi görünmesinden gelir; gezegenlerle ilgisi yoktur.",
+    "ders": "d6",
+    "bolum": 1
+   },
+   {
+    "id": "yildizlar-11",
+    "soru": "Kara delikler hakkında hangisi doğrudur?",
+    "secenekler": [
+     "Her şeyi uzaktan, bir elektrik süpürgesi gibi kendine çeker",
+     "Olay ufkunun yarıçapı kütlesinden bağımsızdır",
+     "Işık yaymadıkları için kütleleri hiçbir yolla ölçülemez",
+     "Olay ufkunun çok dışında, kütleçekimleri aynı kütledeki bir yıldızınkiyle aynıdır"
+    ],
+    "dogru": 3,
+    "aciklama": "Derse göre kara delik uzaktan emen bir süpürge değildir; Güneş aynı kütlede bir kara deliğe dönüşse Dünya'nın yörüngesi değişmezdi. Olay ufkunun yarıçapı kütleyle doğru orantılıdır; kara deliklerin kütlesi çevrelerindeki yıldızların hareketinden ölçülür.",
+    "ders": "d16",
+    "bolum": 1
+   },
+   {
+    "id": "yildizlar-12",
+    "soru": "17 Ağustos 2017'de gözlenen GW170817 olayını özel yapan nedir?",
+    "secenekler": [
+     "İki kara deliğin birleşmesinin ilk kez kütleçekim dalgasıyla duyulması",
+     "Bir kara deliğin gölgesinin ilk kez fotoğraflanması",
+     "Kütleçekim dalgasıyla duyulan bir kaynağın, iki nötron yıldızının birleşmesinin, ışıkla da ilk kez görülmesi",
+     "Kütleçekim dalgalarının ışıktan çok daha yavaş yol aldığının gösterilmesi"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre GW170817 iki nötron yıldızının birleşmesiydi ve hem kütleçekim dalgasıyla hem ışıkla gözlenen ilk olay oldu. İlk kara delik birleşmesi GW150914'tü; iki sinyalin yaklaşık iki saniye arayla gelmesi dalgaların ışıkla aynı hızda yayıldığını gösterir.",
+    "ders": "d16",
+    "bolum": 8
+   }
+  ],
+  "gezegen_yasam": [
+   {
+    "id": "gezegen_yasam-01",
+    "soru": "Dikine hız yönteminde görünmeyen bir gezegenin varlığı neyden anlaşılır?",
+    "secenekler": [
+     "Yıldızın ışığının düzenli aralıklarla biraz azalmasından",
+     "Arka plandaki bir yıldızın birkaç gün boyunca parlaklaşmasından",
+     "Yıldızın tayf çizgilerinin düzenli bir ritimle bir maviye bir kırmızıya kaymasından",
+     "Yıldızın gökteki konumunun yana doğru salınmasından"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre gezegen yıldızını ortak kütle merkezi çevresinde küçük bir daire üzerinde çekiştirir; yıldız yaklaşırken çizgiler maviye, uzaklaşırken kırmızıya kayar. Işık azalması geçiş, parlaklaşma mikromercek, konum salınımı astrometri yöntemidir.",
+    "ders": "d13",
+    "bolum": 1
+   },
+   {
+    "id": "gezegen_yasam-02",
+    "soru": "Bir gezegenin yarıçapı, yıldızının yarıçapının 0,05 katıdır. Gezegen yıldızın önünden geçerken yıldızın ışığı yaklaşık ne kadar azalır?",
+    "secenekler": [
+     "Yaklaşık %5",
+     "Yaklaşık %0,25",
+     "Yaklaşık %2,5",
+     "Yaklaşık %0,0025"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre geçiş derinliği, gezegen yarıçapının yıldız yarıçapına oranının karesidir: 0,05 × 0,05 = 0,0025, yani yaklaşık %0,25. Oran doğrudan alınmaz, çünkü kesilen ışık disklerin alanlarıyla orantılıdır.",
+    "ders": "d13",
+    "bolum": 2
+   },
+   {
+    "id": "gezegen_yasam-03",
+    "soru": "Bir ötegezegenin, yıldızının yaşanabilir bölgesinde dolandığı bulundu. Bu ne anlama gelir?",
+    "secenekler": [
+     "Gezegende yaşam olduğu kesinleşmiştir",
+     "Gezegenin atmosferi solunabilir oksijen içerir",
+     "Gezegen Dünya ile aynı büyüklüktedir",
+     "Yüzeyinde sıvı su bulunabilecek bir uzaklıktadır"
+    ],
+    "dogru": 3,
+    "aciklama": "Derse göre yaşanabilir bölge yüzeyde sıvı su olabilecek uzaklık kuşağıdır; bölgede olmak yaşanabilir olmak anlamına gelmez. Gezegenin büyüklüğü, atmosferi ve yıldızın türü de belirleyicidir.",
+    "ders": "d13",
+    "bolum": 5
+   },
+   {
+    "id": "gezegen_yasam-04",
+    "soru": "Yıldızından çok uzakta, hatta hiçbir yıldıza bağlı olmadan dolaşan gezegenleri bulabilen tek yöntem hangisidir?",
+    "secenekler": [
+     "Kütleçekimsel mikromercek",
+     "Geçiş yöntemi",
+     "Dikine hız yöntemi",
+     "Doğrudan görüntüleme"
+    ],
+    "dogru": 0,
+    "aciklama": "Derse göre mikromercek gezegenin ışığına ihtiyaç duymaz: öndeki cismin kütleçekimi arkadaki yıldızın ışığını büküp onu kısa süre parlaklaştırır. Bu yüzden yıldızından uzak ya da serbest dolaşan gezegenleri bulabilen tek yoldur.",
+    "ders": "d13",
+    "bolum": 3
+   },
+   {
+    "id": "gezegen_yasam-05",
+    "soru": "Işınımı Güneş'inkinin 9 katı olan bir yıldızın yaşanabilir bölgesi kabaca nerededir? (Güneş için 0,99 ile 1,67 AB al.)",
+    "secenekler": [
+     "Yaklaşık 0,11 ile 0,19 AB arası",
+     "Yaklaşık 0,33 ile 0,56 AB arası",
+     "Yaklaşık 8,9 ile 15 AB arası",
+     "Yaklaşık 3,0 ile 5,0 AB arası"
+    ],
+    "dogru": 3,
+    "aciklama": "Derse göre uzaklık, ışınımın karekökü oranında ölçeklenir: √9 = 3. 0,99 × 3 ≈ 3,0 ve 1,67 × 3 ≈ 5,0 AB bulunur. Parlak yıldızın bölgesi daha uzaktadır; bu yalnızca kaba bir ölçeklemedir.",
+    "ders": "d13",
+    "bolum": 5
+   },
+   {
+    "id": "gezegen_yasam-06",
+    "soru": "İstanbul'un ışıklı bir semtindesin ve ilk ötegezegen keşfinin yıldızı 51 Pegasi'yi (5,49 kadir) görmek istiyorsun. En gerçekçi yol hangisi?",
+    "secenekler": [
+     "Çıplak gözle kolayca görürsün; 5,49 kadir parlak bir değerdir",
+     "Sonbahar akşamı dürbünle, Kanatlıat'ın büyük karesinden yıldız atlayarak aramak",
+     "Dürbünle yıldızın yanında gezegeni Dimidium'u da görmeyi beklemek",
+     "Kanatlıat'ı ilkbahar sabahlarında, gökte en yüksekteyken aramak"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre kent merkezinde çıplak göz sınırı 4,0–4,5 kadir civarına iner; bu yüzden 51 Pegasi'yi dürbünle, yıldız atlayarak aramalısın. Kanatlıat en yüksek konumuna eylül, ekim ve kasım akşamlarında ulaşır; ötegezegenin kendisi dürbünle görülmez.",
+    "ders": "d13",
+    "bolum": 8
+   },
+   {
+    "id": "gezegen_yasam-07",
+    "soru": "NASA'ya göre bildiğimiz yaşamın üç temel gereksinimi nedir?",
+    "secenekler": [
+     "Enerji, organik moleküller ve sıvı su",
+     "Oksijen, güneş ışığı ve sıvı su",
+     "Kalın bir atmosfer, manyetik alan ve büyük bir uydu",
+     "Karbondioksit, azot ve oksijen"
+    ],
+    "dogru": 0,
+    "aciklama": "Derse göre NASA yaşamın gereksinimlerini enerji, organik moleküller ve sıvı su diye üç maddede toplar. Güneş ışığı şart değildir: okyanus tabanındaki hidrotermal bacaların çevresindeki topluluklar enerjiyi hidrojen sülfürden alır.",
+    "ders": "d18",
+    "bolum": 0
+   },
+   {
+    "id": "gezegen_yasam-08",
+    "soru": "Bir ötegezegenin atmosferinde biyoimza arıyorsun. Hangisi doğrudur?",
+    "secenekler": [
+     "Oksijen yalnızca canlılar tarafından üretilebilir; bulunması yaşamı kanıtlar",
+     "Oksijen yoksa o gezegende yaşam olamaz",
+     "Oksijen tek başına yetmez; gezegen suyunu kaybederken oksijen yaşam olmadan da birikebilir",
+     "Metan yalnızca canlılar tarafından üretilir; bulunması yaşamı kanıtlar"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre ışığın su moleküllerini parçalamasıyla oksijen yaşamsız da birikebilir, serpantinleşme de yaşamsız metan üretir. Dünya ise yaşam olduğu hâlde havasında oksijen biriktirmeden yaklaşık bir milyar yıl geçirdi.",
+    "ders": "d18",
+    "bolum": 7
+   },
+   {
+    "id": "gezegen_yasam-09",
+    "soru": "Bir gezegenin kütlesi Dünya'nınkinin 2 katı, yarıçapı 2 katıdır. Ortalama yoğunluğu Dünya'nınkinin kaç katıdır?",
+    "secenekler": [
+     "1 katı, yani aynı",
+     "0,5 katı",
+     "4 katı",
+     "0,25 katı"
+    ],
+    "dogru": 3,
+    "aciklama": "Yoğunluk kütlenin hacme oranıdır ve hacim yarıçapın küpüyle büyür: 2 × 2 × 2 = 8. Yoğunluk oranı 2 ÷ 8 = 0,25 olur. Dersteki K2-18 b örneğinde de aynı yolla yoğunluk Dünya'nınkinin yaklaşık yarısı bulunur.",
+    "ders": "d18",
+    "bolum": 7
+   },
+   {
+    "id": "gezegen_yasam-10",
+    "soru": "Europa'nın buz kabuğunun altındaki okyanusu sıvı tutan ısı nereden gelir?",
+    "secenekler": [
+     "Buz kabuğundan geçen güneş ışığından",
+     "Jüpiter'in yol açtığı gelgit ısınmasından",
+     "Kalın atmosferinin yarattığı sera etkisinden",
+     "Uydunun Güneş'e çok yakın dolanmasından"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre Europa'nın yüzey sıcaklığı yaklaşık −133 ile −223 °C arasındadır; okyanusu sıvı tutan ısı Jüpiter'in kütleçekiminin uyduyu sürekli esnetmesinden, yani gelgit ısınmasından gelir.",
+    "ders": "d18",
+    "bolum": 5
+   },
+   {
+    "id": "gezegen_yasam-11",
+    "soru": "Drake denklemi bugün bile güvenilir bir uygarlık sayısı vermiyor. Bunun asıl nedeni nedir?",
+    "secenekler": [
+     "Galakside yılda kaç yıldız doğduğu hiç ölçülemiyor",
+     "Yıldızların gezegeni olup olmadığını hâlâ hiç bilmiyoruz",
+     "Yaşam, zekâ ve uygarlık ömrüyle ilgili çarpanlar bilinmiyor",
+     "Denklem yalnızca Güneş Sistemi için yazılmıştır"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre yıldız oluşum hızı ve gezegenli yıldız oranı gibi ilk çarpanlar artık ölçülebiliyor; ama yaşam, zekâ, teknoloji ve uygarlık ömrü çarpanları bilinmiyor. Bu yüzden denklem bir hesap değil, bir soru listesidir.",
+    "ders": "d18",
+    "bolum": 8
+   },
+   {
+    "id": "gezegen_yasam-12",
+    "soru": "Aşırı ortam canlıları, örneğin 122 °C sıcaklıkta büyüyebilen mikroplar ya da kısa süre açık uzaya dayanan su ayıları, bize asıl neyi söyler?",
+    "secenekler": [
+     "Yaşamın nerede olabileceğini; nerede olduğunu değil",
+     "Mars'ta ve Europa'da yaşam olduğunu",
+     "Yaşamın sıvı suya hiç ihtiyaç duymadığını",
+     "Bu canlıların uzayda yaşayıp çoğalabildiğini"
+    ],
+    "dogru": 0,
+    "aciklama": "Derse göre ekstremofiller olası yaşam yerlerinin listesini genişletir ama orada yaşam olduğunu kanıtlamaz. Bir canlının uzayda bir süre hayatta kalması, orada yaşayıp çoğalabileceği anlamına gelmez.",
+    "ders": "d18",
+    "bolum": 2
+   }
+  ],
+  "evren": [
+   {
+    "id": "evren-01",
+    "soru": "Hubble'ın ayar çatalı diyagramı için hangisi doğrudur?",
+    "secenekler": [
+     "Eliptik galaksiler zamanla sarmal galaksilere dönüşür",
+     "Bir evrim sırası değildir; galaksiler çatal boyunca birinden ötekine sırayla dönüşmez",
+     "Sarmal galaksiler yaşlanınca eliptik olur; erken tür adı bu yüzden verilmiştir",
+     "Samanyolu çatalda çubuksuz bir sarmal olarak yer alır"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre erken ve geç tür adları yanlış bir evrim inancına yol açmıştır; Hubble böyle bir yorum kastetmediğini açıkça belirtmişti. NASA'ya göre Samanyolu çubuklu sarmaldır.",
+    "ders": "d7",
+    "bolum": 3
+   },
+   {
+    "id": "evren-02",
+    "soru": "İstanbul'dan (41° kuzey) hangisini kendi gözünle ya da dürbünle görebilirsin?",
+    "secenekler": [
+     "Büyük Macellan Bulutu",
+     "Küçük Macellan Bulutu",
+     "Galaksimizin merkezindeki kara delik Sgr A*",
+     "Andromeda Galaksisi; ışıklı bir semtte dürbün işini kolaylaştırır"
+    ],
+    "dogru": 3,
+    "aciklama": "Derse göre Macellan Bulutları yaklaşık 20° ve 15° kuzey enleminin kuzeyinden görülmez; kara deliğin kendisi ise ışık yaymaz. Andromeda İstanbul'un göğündedir; ışığı geniş bir alana yayıldığı için ışıklı semtlerde dürbün işini kolaylaştırır.",
+    "ders": "d7",
+    "bolum": 4
+   },
+   {
+    "id": "evren-03",
+    "soru": "Aktif bir galaksinin parlak çekirdeğinin enerjisi nereden gelir?",
+    "secenekler": [
+     "Merkezdeki dev kara deliğe düşen gazın oluşturduğu, ısınıp parlayan yığılma diskinden",
+     "Çekirdekte aynı anda patlayan milyarlarca süpernovadan",
+     "Kara deliğin olay ufkunun içinden kaçan ışıktan",
+     "Galaksideki karanlık maddenin yanmasından"
+    ],
+    "dogru": 0,
+    "aciklama": "Derse göre enerjinin kaynağı merkezdeki dev kara deliktir: içeri düşen gaz kara deliğin çevresinde bir yığılma diski oluşturur, disk kütleçekimi ve sürtünmeyle çok ısınır ve parlak ışıma yapar.",
+    "ders": "d7",
+    "bolum": 7
+   },
+   {
+    "id": "evren-04",
+    "soru": "Samanyolu ile Andromeda bir gün birleşirse ne olması beklenir?",
+    "secenekler": [
+     "Yıldızların çoğu bilardo topları gibi birbirine çarpar",
+     "Gaz bulutları da yıldızlar gibi birbirinin içinden etkilenmeden geçer",
+     "Yıldızlar neredeyse hiç çarpışmaz; gaz ise sıkışıp yıldız doğumunu tetikleyebilir",
+     "Güneş Sistemi kesin olarak yok olur"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre yıldızların arası inanılmaz boştur; yıldızlar birbirinin yanından geçer ama kütleçekimleri yörüngelerini değiştirir. Gaz ise birbirine çarpıp yavaşlar ve yıldız doğumunu tetikleyebilir.",
+    "ders": "d7",
+    "bolum": 6
+   },
+   {
+    "id": "evren-05",
+    "soru": "Büyük Patlama için hangisi doğrudur?",
+    "secenekler": [
+     "Her yerde aynı anda olan bir genişlemedir; evrenin bir merkezi ya da kenarı yoktur",
+     "Boş uzayın ortasında tek bir noktada patlayan bir bombadır",
+     "Galaksiler uzayın içinde ortak bir merkezden dışarı doğru koşar",
+     "Kuram, evrenin ilk durumunun nereden geldiğini kesin olarak açıklar"
+    ],
+    "dogru": 0,
+    "aciklama": "Derse göre Büyük Patlama tek bir noktanın çevresine doğru bir patlama değildir; genişleme her yerde olur. Kuram, evrenin nasıl başladığını değil, sıcak ve yoğun bir hâlden nasıl evrildiğini anlatır.",
+    "ders": "d8",
+    "bolum": 0
+   },
+   {
+    "id": "evren-06",
+    "soru": "Evren yaklaşık 380.000 yaşındayken, yeniden birleşme denen anda ne oldu?",
+    "secenekler": [
+     "İlk yıldızlar yandı ve karanlık çağ sona erdi",
+     "Kuarklar birleşip proton ve nötronları oluşturdu",
+     "İlk helyum çekirdekleri oluştu",
+     "Elektronlar ve protonlar nötr atomlar oluşturdu; evren ışığa saydam oldu"
+    ],
+    "dogru": 3,
+    "aciklama": "Derse göre serbest elektronlar ışığı sürekli saçtığı için evren saydam değildi; sıcaklık yaklaşık 3000 kelvine düşünce nötr atomlar oluştu ve ışık serbest kaldı. O anın ışığını bugün kozmik mikrodalga arka plan ışıması olarak görüyoruz.",
+    "ders": "d8",
+    "bolum": 4
+   },
+   {
+    "id": "evren-07",
+    "soru": "Kırmızıya kayması z = 4 olan bir galaksinin ışığı yola çıktığında kozmik mikrodalga arka plan ışımasının sıcaklığı yaklaşık kaç kelvindi? (Bugünkü değer 2,725 K)",
+    "secenekler": [
+     "Yaklaşık 10,9 K",
+     "Yaklaşık 13,6 K",
+     "Yaklaşık 0,55 K",
+     "Yaklaşık 2,7 K, yani bugünkü kadar"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre T(z) = T0 × (1 + z) ilişkisi geçerlidir: 2,725 × (1 + 4) = 2,725 × 5 ≈ 13,6 K. Geçmişte evren daha küçük olduğu için ışıma daha sıcaktı.",
+    "ders": "d8",
+    "bolum": 4
+   },
+   {
+    "id": "evren-08",
+    "soru": "İlk yıldız kuşağı neden neredeyse yalnızca hidrojen ve helyumdan yapılmış olmalıydı?",
+    "secenekler": [
+     "Ağır elementler o sırada vardı ama ilk yıldızların kütleçekiminden kaçtı",
+     "Karanlık madde ağır elementleri yuttu",
+     "Büyük Patlama yalnızca hafif çekirdekler üretti; ağır elementler sonra yıldızlarda oluştu",
+     "Ağır elementler yalnızca karanlık çağda, yıldızlardan önce oluştu"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre ilk yaklaşık 20 dakikada yalnızca helyum, döteryum, trityum ve lityum gibi hafif çekirdekler oluştu, sonra sıcaklık ve yoğunluk füzyon için fazla düştü. Karbon, oksijen ve demirin neredeyse tamamı çok sonra yıldızlarda üretildi.",
+    "ders": "d8",
+    "bolum": 3
+   },
+   {
+    "id": "evren-09",
+    "soru": "Iraklık açısı 0,05 yay saniyesi olan bir yıldız ne kadar uzaktadır? (1 parsek ≈ 3,26 ışık yılı)",
+    "secenekler": [
+     "20 parsek, yaklaşık 65 ışık yılı",
+     "0,05 parsek",
+     "20 parsek, yaklaşık 6,1 ışık yılı",
+     "200 parsek, yaklaşık 650 ışık yılı"
+    ],
+    "dogru": 0,
+    "aciklama": "Derse göre uzaklık parsek cinsinden d = 1 / p ile bulunur: 1 ÷ 0,05 = 20 parsek. Işık yılına çevirmek için çarparsın: 20 × 3,26 ≈ 65 ışık yılı.",
+    "ders": "d17",
+    "bolum": 2
+   },
+   {
+    "id": "evren-10",
+    "soru": "Bir galaksi saniyede 13.480 km hızla bizden uzaklaşıyor. H0 = 67,4 km/s/Mpc alırsan uzaklığı yaklaşık kaç megaparsektir?",
+    "secenekler": [
+     "Yaklaşık 0,005 megaparsek",
+     "Yaklaşık 908.552 megaparsek",
+     "Yaklaşık 20 megaparsek",
+     "Yaklaşık 200 megaparsek"
+    ],
+    "dogru": 3,
+    "aciklama": "Hubble-Lemaître yasası v = H0 × d olduğundan d = v ÷ H0: 13.480 ÷ 67,4 = 200 megaparsek. Derse göre H0 bir kez bilinince yakın sayılabilecek galaksilerin uzaklığı kırmızıya kaymadan bulunabilir.",
+    "ders": "d17",
+    "bolum": 1
+   },
+   {
+    "id": "evren-11",
+    "soru": "Sarmal galaksilerde dönme eğrilerinin, şişkinliğin dışında düz olması neyi gösterir?",
+    "secenekler": [
+     "Galaksinin merkezinde hiç kütle bulunmadığını",
+     "Görünmeyen bir kütle, yani karanlık madde bulunduğunu",
+     "Dış yıldızların iç yıldızlardan daha yavaş döndüğünü",
+     "Karanlık enerjinin yıldızları galaksinin dışına ittiğini"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre kütle görünen yıldızlarla bitseydi dıştaki yıldızlar daha yavaş dönmeliydi; oysa Rubin ve Ford yıldızların çoğunun kabaca aynı hızla döndüğünü buldu. Bu, kütlenin uzaklıkla birlikte arttığını ve görünmeyen bir kütle olduğunu gösterir.",
+    "ders": "d17",
+    "bolum": 4
+   },
+   {
+    "id": "evren-12",
+    "soru": "Mermi Kümesi neden karanlık madde için güçlü bir kanıt sayılır?",
+    "secenekler": [
+     "Kümede karanlık madde parçacıkları ilk kez doğrudan yakalandı",
+     "Karanlık maddenin kendisi X-ışınlarıyla görüntülendi",
+     "Mercekle ölçülen kütlenin çoğu, X-ışınıyla görülen gazdan ayrı yerde duruyor",
+     "Kümedeki yıldızların hepsi çarpışıp söndü"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre çarpışan iki kümede sıcak gaz X-ışınlarıyla görüldü ve sürüklenmeyle yavaşladı; toplam kütlenin yeri ise kütleçekimsel mercek etkisinden ölçüldü. Karanlık madde yavaşlamadığı için kütlenin çoğu gazdan ayrı duruyor.",
+    "ders": "d17",
+    "bolum": 5
+   }
+  ]
+ }
 }
