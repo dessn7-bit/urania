@@ -99,7 +99,7 @@
       ],
       "ornek": {
         "baslik": "Örnek: Mira'nın ışığı kaç kat değişir?",
-        "metin": "Kadir farkından oran: oran = 10^(0,4 × Δm). 1. adım: En parlak hâl ortalama 3,5; en sönük hâl tarihte 8,6 ile 10,1 arası. Az değişen bir döngüde fark 8,6 − 3,5 = 5,1 kadir. 0,4 × 5,1 = 2,04; oran = 10^2,04 ≈ 110. 2. adım: Çok değişen bir döngüde fark 10,1 − 3,5 = 6,6 kadir. 0,4 × 6,6 = 2,64; oran = 10^2,64 ≈ 440. 3. adım: Görünürlük. 8,6 kadir, çok karanlık gökteki çıplak göz sınırının (+6,5) 2,1 kadir altındadır; en sönükken Mira'yı ancak dürbün ya da teleskopla bulursun. 4. adım: Karşılaştır. Algol'ün kararması ışığı yaklaşık 3,3 kat azaltıyordu. Sonuç: Mira'nın ışığı bir döngüde yaklaşık 110 ile 440 kat arasında değişir; bu, Algol'ün oranından 30–130 kat büyüktür."
+        "metin": "Kadir farkından oran: kadir farkını 0,4 ile çarp, 10'un o kuvvetini al (d1). 1. adım: En parlak hâl ortalama 3,5; en sönük hâl tarihte 8,6 ile 10,1 arası. Az değişen bir döngüde fark 8,6 − 3,5 = 5,1 kadir. 0,4 × 5,1 = 2,04; oran = 10^2,04 ≈ 110. 2. adım: Çok değişen bir döngüde fark 10,1 − 3,5 = 6,6 kadir. 0,4 × 6,6 = 2,64; oran = 10^2,64 ≈ 440. 3. adım: Görünürlük. 8,6 kadir, çok karanlık gökteki çıplak göz sınırının (+6,5) 2,1 kadir altındadır; en sönükken Mira'yı ancak dürbün ya da teleskopla bulursun. 4. adım: Karşılaştır. Algol'ün kararması ışığı yaklaşık 3,3 kat azaltıyordu. Sonuç: Mira'nın ışığı bir döngüde yaklaşık 110 ile 440 kat arasında değişir; bu, Algol'ün oranından 30–130 kat büyüktür."
       },
       "akilda": "Örten çiftlerde ışık geometri yüzünden, zonklayan yıldızlarda gerçekten değişir. Sefeidler (adını 1784'te Goodricke'nin bulduğu Delta Cephei'den alır) ve RR Lyrae kararsızlık şeridindedir; Leavitt 1912'de Sefeidlerin dönemi ile parlaklığı arasındaki ilişkiyi gösterdi. Mira 332 günde bir ortalama 3,5'ten 8,6–10,1 kadire iner; genç T Tauri yıldızları düzensiz değişir."
     },
@@ -107,10 +107,13 @@
       "baslik": "İstanbul'dan gözlem rehberi",
       "paragraflar": [
         "Algol'ü izlemek için en iyi araç kendi gözündür. Algol'ün dik açıklığı yaklaşık +41,0°, İstanbul'un enlemi de 41,0° olduğu için Algol meridyenden geçerken neredeyse tam tepende, yaklaşık 90° yükseklikte olur. Kutup çevresi yıldızı değildir: enlemle dik açıklığın toplamı 90°'yi aşmadığı için her gün kısa bir süre ufkun yaklaşık 8° altına iner. Urania'nın “Bu gece gökyüzü” sayfasındaki “Algol'ün kararması” listesi, önümüzdeki 30 gün içinde karanlıkta görülebilecek en sönük anları gösterir. En iyisi en sönük andan bir iki saat önce başlayıp Algol'ü yakınındaki parlaklığı bilinen yıldızlarla karşılaştırarak izlemek.",
-        "Çift yıldızlara bakmak için Büyük Ayı'daki Mizar ile Alcor iyi bir başlangıçtır. Uygulamanın doğrulanmış verisine göre Mizar 2,22, Alcor 4,01 kadirdir ve aralarında 11,8 yay dakikası vardır. Mizar'ın kendisi de bir çifttir: Mizar A ile Mizar B arasında yalnızca 14,4 yay saniyesi var, yani ilk aralıktan yaklaşık 50 kat dar. SIMBAD veritabanı hem Mizar A'yı hem Mizar B'yi tayfsal çift olarak sınıflar; yani o tek görünen noktaların her biri de ikidir. Kuğu'daki Albireo'nun iki bileşeni arasında 34,6 yay saniyesi vardır; parlak bileşen 3,08, sönük bileşen 5,11 kadirdir. Bu aralıkları gözünün ve aletinin ayırma gücüyle karşılaştır (dürbün d11'de, teleskop d12'de).",
-        "Kümeler için başlangıç listesi: Boğa'da Ülker, Kahraman'da Çift Küme, Yengeç'te Arıkovanı, Berenis'in Saçı kümesi (1,8 kadir, yaklaşık 275 yay dakikası) ve Herkül'de M13 ile M92. Hangisinin o gece yukarıda olduğunu aynı sayfadaki “Bu gecenin planı” gösterir; plan yüksekliği, bulut tahminini ve Ay ışığını hesaba katar. Bir açık kümeyle bir küresel kümeyi aynı gece görürsen aralarındaki yaş farkını hatırla: birinde galaksinin diskinde görece yakın zamanda doğmuş yıldızlar, ötekinde 12 milyar yılı aşkın yaşlı yıldızlar."
+        "Çift yıldızlara bakmak için Büyük Ayı'daki Mizar ile Alcor iyi bir başlangıçtır. Uygulamanın doğrulanmış verisine göre Mizar 2,22, Alcor 4,01 kadirdir ve aralarında 11,8 yay dakikası vardır. Wikipedia'ya göre bu ikili teleskopsuz kolayca görülür; Araplar ve eski İranlılar Mizar ile Alcor'u ayırt etmeyi bir göz sınavı olarak kullanırdı. Astronomy Now ikisinin dürbünde de güzel göründüğünü yazar. Mizar'ın dik açıklığı yaklaşık +54,9° olduğu için İstanbul'da hiç batmaz: enlemle dik açıklığın toplamı 90°'yi aşar ve yıldız en alçakta bile ufkun yaklaşık 6° üstünde kalır. Yani yılın her gecesi ufkun üstündedir.",
+        "Mizar'ın kendisi de bir çifttir: Mizar A ile Mizar B arasında yalnızca 14,4 yay saniyesi var, yani ilk aralıktan yaklaşık 50 kat dar. Bunu çıplak gözle ayıramazsın. Astronomy Now'a göre görüntü sabitleyicili bir dürbün yetebilir, en küçük teleskop ise ikisini rahatça gösterir. Aynı kaynağa göre Benedetto Castelli Ocak 1617'de Galileo'nun teleskoplarından biriyle Mizar'a bakıp çiftliği gördü; Wikipedia ise Giovanni Battista Riccioli'nin 1650'deki kaydını da anar. SIMBAD veritabanı hem Mizar A'yı hem Mizar B'yi tayfsal çift olarak sınıflar; Astronomy Now'a göre Mizar A 1889'da tanınan ilk tayfsal çifttir. Yani gözünle tek gördüğün Mizar noktası aslında en az dört yıldızdır.",
+        "Kuğu'daki Albireo'nun iki bileşeni arasında 34,6 yay saniyesi vardır; parlak bileşen 3,08, sönük bileşen 5,11 kadirdir. Çıplak gözle tek bir yıldız gibi görünür. Dürbün konusunda kaynaklar ayrışır: EarthSky sıradan dürbünlerin onu iki yıldız olarak göstermeyeceğini, ancak üç ayağa takılmış çok güçlü bir dürbünün yetebileceğini yazar; Astronomy Now ise sabit duran bir 10×50 dürbünle kolayca ayrıldığını söyler. Elde tutulan bir 7×50 ile ayrılıp ayrılmadığını kaynaklar söylemiyor; denemeye değer. İki kaynak küçük bir teleskopun yettiğinde birleşir; EarthSky yaklaşık 30 kat büyütme önerir. Renkleri altın sarısı ve mavi diye anlatılır. İki yıldızın birbirine kütleçekimiyle bağlı olup olmadığı hâlâ kesin değil. Bu aralıkları dürbünün ve teleskobun ayırma gücüyle karşılaştır (d11, d12).",
+        "Kümeler için başlangıç listesi: Boğa'da Ülker ve Hyades, Kahraman'da Çift Küme, Yengeç'te Arıkovanı, Berenis'in Saçı kümesi (1,8 kadir, yaklaşık 275 yay dakikası) ve Herkül'de M13 ile M92. Hangisinin o gece yukarıda olduğunu aynı sayfadaki “Bu gecenin planı” gösterir; plan yüksekliği, bulut tahminini ve Ay ışığını hesaba katar. Bir açık kümeyle bir küresel kümeyi aynı gece görürsen aralarındaki yaş farkını hatırla: birinde galaksinin diskinde görece yakın zamanda doğmuş yıldızlar, ötekinde 12 milyar yılı aşkın yaşlı yıldızlar.",
+        "Hangi küme hangi mevsimde? Kuzey yarımküre için kaynakların söylediği şu. NASA'ya göre Ülker'i gözlemenin en iyi ayı Aralık'tır; Wikipedia onu kuzeyin kış gökyüzünün göze çarpan bir parçası sayar. Hyades Astronomy Now'a göre sonbaharın sonundan kış boyunca görülür; NASA'nın Gece Gökyüzü Ağı, Hyades'in ve Ülker'in Ocak akşamlarında doğuda yükseldiğini yazar. Arıkovanı ilkbaharın kümesidir: NASA'ya göre gökte en yüksek noktasına Mart'ta ulaşır. M13'ü NASA'ya göre dürbünle en kolay Temmuz'da bulursun; Wikipedia en uzun görünürlüğü ilkbahar ve yaza verir. Albireo Astronomy Now'a göre yaz gecelerinin hedefidir. Kahraman'daki Çift Küme Wikipedia'ya göre kuzeyin ılıman enlemlerinin çoğundan kutup çevresidir: dik açıklığı +57,1° olduğu için İstanbul'da hiç batmaz, en alçakta ufkun yaklaşık 8° üstünde kalır. EarthSky 2026 için Mira'nın Ocak–Mart akşamlarında gökte olduğunu yazıyordu."
       ],
-      "akilda": "Algol İstanbul'da neredeyse başucundan geçer; kararmalarını uygulamanın Gözlem sekmesinden takip et. Mizar-Alcor ve Albireo çift yıldıza, Ülker ve M13 kümelere iyi başlangıçlardır."
+      "akilda": "Algol İstanbul'da neredeyse başucundan geçer; kararmalarını uygulamanın Gözlem sekmesinden takip et. Mizar ile Alcor çıplak gözle ayrılır; Mizar A ile B'yi en iyi küçük bir teleskop ayırır; Albireo'yu sabit duran bir dürbün ya da küçük bir teleskop ayırır. Kış Ülker ve Hyades'in, ilkbahar Arıkovanı'nın, yaz M13 ve Albireo'nun mevsimidir."
     }
   ],
   "formuller": [
@@ -182,6 +185,41 @@
       "kaynak_url": "https://en.wikipedia.org/wiki/Stellar_evolution"
     },
     {
+      "deger": "135,74 ± 0,10 parsek (≈ 443 ışık yılı); ~115 milyon yıl (75–150)",
+      "aciklama": "Ülker'in Gaia DR3 uzaklığı ve yaşı (VLBI 2014: 448 ışık yılı; Stauffer 1998: 125 milyon yıl)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Pleiades"
+    },
+    {
+      "deger": "153 ışık yılı (47 parsek); ~625 milyon yıl",
+      "aciklama": "Hyades'in uzaklığı ve yaşı; bilinen en yakın açık küme",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Hyades_(star_cluster)"
+    },
+    {
+      "deger": "520–610 ışık yılı (NASA ~600); ~600 milyon yıl (NASA 600–700)",
+      "aciklama": "Arıkovanı'nın (M44) uzaklığı ve yaşı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Beehive_Cluster"
+    },
+    {
+      "deger": "150'den fazla (VISTA ile 160); on binlerce – milyonlarca yıldız",
+      "aciklama": "Samanyolu'nda bilinen küresel küme sayısı ve bir kümedeki yıldız sayısı (M13: 100.000'den fazla)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Globular_cluster"
+    },
+    {
+      "deger": "332 gün; ortalama en parlak 3,5, en sönük 8,6–10,1; 1596",
+      "aciklama": "Mira (Balina): dönem, parlaklık aralığı, Fabricius'un kaydı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Mira"
+    },
+    {
+      "deger": "1784; 5,366249 gün; 3,48–4,37 kadir",
+      "aciklama": "Delta Cephei (Kral): Goodricke'nin keşfi, dönem, parlaklık aralığı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Delta_Cephei"
+    },
+    {
+      "deger": "1908: 1777 değişen; 1912: 25 Sefeid",
+      "aciklama": "Leavitt'in Macellan Bulutları kataloğu ve dönem-ışıma ilişkisini gösteren çalışması",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Henrietta_Swan_Leavitt"
+    },
+    {
       "deger": "Mizar–Alcor 11,8′; Mizar A–B 14,4″; Albireo A–B 34,6″",
       "aciklama": "SIMBAD konumlarından hesaplanan açısal ayrımlar (uygulamanın doğrulama dosyası)",
       "kaynak_url": "https://simbad.cds.unistra.fr/simbad/sim-id?output.format=ASCII&Ident=zet01%20UMa"
@@ -197,19 +235,22 @@
     { "terim": "Kütle aktarımı", "tanim": "Yakın bir çiftte şişen yıldızın kütlesinin bir kısmını yoldaşına vermesi; Algol paradoksunun çözümü." },
     { "terim": "Değişen yıldız", "tanim": "Parlaklığı zamanla değişen yıldız; değişim örtmeden (geometri) ya da yıldızın kendisinden gelebilir." },
     { "terim": "Kararsızlık şeridi", "tanim": "H-R diyagramında, buraya düşen yıldızların düzenli olarak şişip büzüldüğü bölge; Sefeidler ve RR Lyrae buradadır." },
-    { "terim": "Mira değişeni", "tanim": "Onlarca ile yüzlerce günlük dönemlerle zonklayan, parlaklığı 10 kadire kadar değişebilen kırmızı dev." }
+    { "terim": "Mira değişeni", "tanim": "Onlarca ile yüzlerce günlük dönemlerle zonklayan, parlaklığı 10 kadire kadar değişebilen kırmızı dev." },
+    { "terim": "Sefeid", "tanim": "Kararsızlık şeridinde düzenli zonklayan, dönemi uzun olanı daha parlak olan değişen yıldız; adını Delta Cephei'den alır." },
+    { "terim": "Dönem-ışıma ilişkisi", "tanim": "Leavitt'in 1912'de gösterdiği, Sefeidlerin zonklama dönemi ile gerçek parlaklığı arasındaki bağ." },
+    { "terim": "Kaçamak bakış", "tanim": "Sönük bir cisme doğrudan değil biraz yanına bakarak onu daha iyi seçme yöntemi." }
   ],
   "defter_notu": [
     "Yıldızlar kümeler halinde doğar; küme üyeleri aynı yaş, aynı bileşim, aynı uzaklık. Fark = kütle.",
-    "Açık küme: disk, genç (Ülker, Arıkovanı). Küresel küme: hale, ~12,6 milyar yıl (M13).",
+    "Açık küme: disk, genç. Ülker ~444 ışık yılı, ~115 milyon yıl; Hyades 153 ışık yılı, 625 milyon yıl; Arıkovanı ~600 ışık yılı, ~600 milyon yıl. Küresel küme: hale, 150'den fazla, on binlerce–milyonlarca yıldız, ~12,6 milyar yıl (M13).",
     "Shapley 1918: küresel kümeler Yay yönünde toplanıyor → Güneş merkezde değil.",
     "Dönüm noktası: anakolu terk eden en kütleli yıldız → küme yaşı. B0 ≈ 4 milyon yıl, A0 ≈ 570 milyon, G2 ≈ 10 milyar.",
     "Çift türleri: görsel, tayfsal (Doppler), örten (ışık azalır), yalpalamadan (Sirius B, Bessel 1844).",
     "Kütle toplamı = a³ ÷ P² (AB, yıl, M☉). Algol: 0,062³ ÷ 0,00785² ≈ 3,87 M☉.",
     "Algol: 2,87 günde bir 2,1 → 3,4 kadir, ~10 saat; Montanari 1667, Goodricke 1783, Vogel 1889.",
     "Algol paradoksu: hafif yıldız daha evrimli → kütle aktarımı.",
-    "Zonklayanlar: Sefeid ve RR Lyrae (kararsızlık şeridi), Mira (10 kadire kadar, onlarca–yüzlerce gün).",
-    "İstanbul: Algol neredeyse başucundan geçer; M13 ~85°, M22 ~25°."
+    "Zonklayanlar: Sefeid (Delta Cephei, Goodricke 1784; Leavitt 1912, 25 Sefeid) ve RR Lyrae; Mira (Balina, Fabricius 1596, 332 gün, 3,5 → 8,6–10,1).",
+    "İstanbul: Algol neredeyse başucundan geçer; M13 ~85°, M22 ~25°. Mizar ve Çift Küme hiç batmaz. Kış Ülker/Hyades, ilkbahar Arıkovanı, yaz M13/Albireo."
   ],
   "sorular": [
     {
@@ -239,6 +280,18 @@
     {
       "soru": "Bir Mira değişeni en parlak halinde 3 kadir, en sönük halinde 10 kadir. Işığı kaç kat değişiyor?",
       "cevap": "Fark 7 kadir. 0,4 × 7 = 2,8; oran = 10^2,8 ≈ 630 kat. En sönükken çıplak gözle görülmez (çok karanlık gökte sınır yaklaşık +6,5)."
+    },
+    {
+      "soru": "Hyades'in önündeki parlak Aldebaran kümenin en parlak üyesi midir?",
+      "cevap": "Hayır. Aldebaran yaklaşık 65 ışık yılı uzakta, Hyades ise yaklaşık 153 ışık yılı. Aldebaran yalnızca aynı bakış doğrultusunda durur; gökte yan yana görünmek fiziksel bir bağ olduğunu göstermez."
+    },
+    {
+      "soru": "Leavitt dönem-ışıma ilişkisini bulmak için neden Küçük Macellan Bulutu'ndaki Sefeidleri kullandı?",
+      "cevap": "Bulutun yıldızları bize kabaca aynı uzaklıkta kabul edilebilir. O zaman görünür parlaklık farkları gerçek parlaklık farklarını gösterir ve dönemle parlaklık arasındaki ilişki uzaklık bilinmeden ortaya çıkar. Kümelerin H-R diyagramındaki mantıkla aynıdır."
+    },
+    {
+      "soru": "Mizar ile Alcor arası 11,8 yay dakikası, Mizar A ile B arası 14,4 yay saniyesi. Hangisini çıplak gözle ayırabilirsin?",
+      "cevap": "Mizar ile Alcor'u. 11,8 yay dakikası yaklaşık 708 yay saniyesidir, Mizar A–B aralığının yaklaşık 50 katı. Mizar A ile B için en az görüntü sabitleyicili bir dürbün, rahat görmek için küçük bir teleskop gerekir."
     },
     {
       "soru": "Sirius B görülmeden önce varlığı nasıl biliniyordu?",
@@ -272,6 +325,30 @@
     { "ad": "GCVS (Samus ve ark.), bet Per kaydı ve notu", "url": "http://www.sai.msu.su/gcvs/cgi-bin/search.cgi?search=bet+Per" },
     { "ad": "Jetsu 2020, Algol'ün 236 yıllık O−C verisi (arXiv)", "url": "https://arxiv.org/abs/2005.13360" },
     { "ad": "Samolyk, JAAVSO 53 (2025), Recent Minima of 312 Eclipsing Binary Stars", "url": "https://apps.aavso.org/jaavso/article/3989/" },
-    { "ad": "BAV Mitteilungen 262 (2024), görsel minimumlar", "url": "https://www.bav-astro.de/images/Up_Journal/BAVJ093_BAVM262_V2.pdf" }
+    { "ad": "BAV Mitteilungen 262 (2024), görsel minimumlar", "url": "https://www.bav-astro.de/images/Up_Journal/BAVJ093_BAVM262_V2.pdf" },
+    { "ad": "Wikipedia, Pleiades", "url": "https://en.wikipedia.org/wiki/Pleiades" },
+    { "ad": "Harvard-Smithsonian CfA, How Far Are the Pleiades, Really? (2014)", "url": "https://www.cfa.harvard.edu/news/how-far-are-pleiades-really" },
+    { "ad": "Stauffer, Schultz ve Kirkpatrick 1998, Ülker'de lityum sınırı (arXiv)", "url": "https://arxiv.org/abs/astro-ph/9804005" },
+    { "ad": "NASA Hubble Messier kataloğu, Messier 45", "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-45" },
+    { "ad": "Wikipedia, Hyades (star cluster)", "url": "https://en.wikipedia.org/wiki/Hyades_(star_cluster)" },
+    { "ad": "Astronomy Now, Home in on the Hyades (2022)", "url": "https://astronomynow.com/2022/12/12/home-in-on-the-hyades/" },
+    { "ad": "NASA Night Sky Network, Spot the Young Stars of the Hyades and Pleiades", "url": "https://science.nasa.gov/solar-system/skywatching/night-sky-network/spot-the-young-stars-of-the-hyades-and-pleiades" },
+    { "ad": "Wikipedia, Beehive Cluster", "url": "https://en.wikipedia.org/wiki/Beehive_Cluster" },
+    { "ad": "NASA Hubble Messier kataloğu, Messier 44", "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-44" },
+    { "ad": "Wikipedia, Globular cluster", "url": "https://en.wikipedia.org/wiki/Globular_cluster" },
+    { "ad": "EarthSky, What is a globular cluster?", "url": "https://earthsky.org/astronomy-essentials/definition-what-is-a-globular-cluster/" },
+    { "ad": "NASA Hubble Messier kataloğu, Messier 13", "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-13/" },
+    { "ad": "Wikipedia, Messier 13", "url": "https://en.wikipedia.org/wiki/Messier_13" },
+    { "ad": "Wikipedia, Double Cluster", "url": "https://en.wikipedia.org/wiki/Double_Cluster" },
+    { "ad": "Wikipedia, Mira", "url": "https://en.wikipedia.org/wiki/Mira" },
+    { "ad": "EarthSky, Mira the Wonderful", "url": "https://earthsky.org/brightest-stars/mira-quite-wonderful/" },
+    { "ad": "Wikipedia, Delta Cephei", "url": "https://en.wikipedia.org/wiki/Delta_Cephei" },
+    { "ad": "Ken Croswell, The First Cepheid", "url": "https://kencroswell.com/thefirstcepheid.html" },
+    { "ad": "Wikipedia, Henrietta Swan Leavitt", "url": "https://en.wikipedia.org/wiki/Henrietta_Swan_Leavitt" },
+    { "ad": "The Legacy of Henrietta Leavitt: ilk Sefeid dönem-ışıma ilişkisinin yeniden çözümlemesi (arXiv 2502.17438)", "url": "https://arxiv.org/html/2502.17438v2" },
+    { "ad": "Wikipedia, Mizar and Alcor", "url": "https://en.wikipedia.org/wiki/Mizar_and_Alcor" },
+    { "ad": "Astronomy Now, Mizar and Alcor: the Great Bear's famous naked-eye double", "url": "https://astronomynow.com/?p=36497" },
+    { "ad": "EarthSky, Albireo", "url": "https://earthsky.org/brightest-stars/albireo-finest-double-star/" },
+    { "ad": "Astronomy Now, Don't miss Albireo (2022)", "url": "https://astronomynow.com/2022/08/02/dont-miss-albireo-a-glorious-colour-contrast-double-star/" }
   ]
 }
