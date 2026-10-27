@@ -112,7 +112,7 @@
     const kaynak = (g.kaynak || []).filter(k => k && k.url);
     return `<li class="gorev${x.bitti ? ' bitti' : ''}">
       <details><summary><span class="ad">${x.bitti ? '<span class="rozet iyi">tamam</span> ' : ''}${U.kacis(g.ad)}</span>
-        <span class="alt"><span role="img" aria-label="zorluk ${zor} / 3">${'●'.repeat(zor)}<span class="soluk">${'●'.repeat(3 - zor)}</span></span> · ${U.kacis(ARAC[g.arac] || g.arac || '')}${gor ? ' · ' + U.kacis(gor) : ''}${ay ? ' · ' + U.kacis(ay) : ''}</span></summary>
+        <span class="alt"><span role="img" aria-label="zorluk ${zor} / 3">${'●'.repeat(zor)}${'○'.repeat(3 - zor)}</span> · ${U.kacis(ARAC[g.arac] || g.arac || '')}${gor ? ' · ' + U.kacis(gor) : ''}${ay ? ' · ' + U.kacis(ay) : ''}</span></summary>
         <div class="gorev-ic">
           ${g.nasil ? `<p><b>Nasıl bulunur:</b> ${U.kacis(g.nasil)}</p>` : ''}
           ${g.ne_gorursun ? `<p><b>Ne görürsün:</b> ${U.kacis(g.ne_gorursun)}</p>` : ''}
@@ -141,7 +141,7 @@
       <p class="alt-baslik">${ls.length} görevden ${sayi} tanesini yaptın. Gördüğünü deftere yazınca görev kendiliğinden tamamlanır. Konum: ${U.kacis(k.ad || '')}.</p>
       <div class="ilerleme" role="progressbar" aria-valuemin="0" aria-valuemax="${ls.length}" aria-valuenow="${sayi}" aria-label="Tamamlanan görevler"><span style="width:${ls.length ? Math.round(sayi / ls.length * 100) : 0}%"></span></div>
       ${rz.length ? `<p class="cip-grup rozetler">${rz.map(r => `<span class="rozet iyi">${U.kacis(r)}</span>`).join('')}</p>` : ''}
-      <p class="kucuk soluk">● zorluk (bir nokta kolay, üç nokta zor). Yükseklikler bu geceki karanlık saatler içindir; şehir göğünde 20°'nin altı genelde puslu kalır.</p>
+      <p class="kucuk soluk">● zorluk (bir dolu nokta kolay, üç dolu nokta zor; ○ boş). Yükseklikler bu geceki karanlık saatler içindir; şehir göğünde 20°'nin altı genelde puslu kalır.</p>
       ${bugece.length ? `<h2>Bu gece yapılabilir</h2><ul class="liste gorev-liste">${bugece.map(x => satir(x, D)).join('')}</ul>` : ''}
       ${diger.length ? `<h2>${bugece.length ? 'Diğerleri' : 'Görevler'}</h2><ul class="liste gorev-liste">${diger.map(x => satir(x, D)).join('')}</ul>` : ''}
       ${biten.length ? `<h2>Tamamlananlar</h2><ul class="liste gorev-liste">${biten.map(x => satir(x, D)).join('')}</ul>` : ''}

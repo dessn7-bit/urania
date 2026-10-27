@@ -60,8 +60,12 @@
     const kk = Object.assign({}, k, { ad: String(k.ad || 'Özel konum').slice(0, 80) });
     const ok = yaz('konum', kk); bicimleyicileriKur(kk.saatDilimi); return ok;
   }
-  /* Elle girilen konum için saat dilimi: cihazın dilimi boylamla uyumluysa o, değilse boylamdan (Etc/GMT±n). */
-  function dilimTahmin(boylam) {
+  /* Elle girilen konum için saat dilimi tahmini: Türkiye'nin sınırları içindeyse Türkiye saati; değilse cihazın
+     dilimi boylamla uyumluysa o, değilse boylamdan (Etc/GMT±n). Konum panelinde listeden düzeltilebilir. */
+  function dilimTahmin(boylam, enlem) {
+    /* Kaba Türkiye kutusu; kuzeydoğuda Gürcistan ve Ermenistan dışarıda bırakılır */
+    if (enlem != null && enlem >= 35.8 && enlem <= 42.2 && boylam >= 25.6 && boylam <= 44.9 &&
+        !(enlem > 41.2 && boylam > 41.6) && !(enlem > 40.0 && boylam > 43.45)) return 'Europe/Istanbul';
     const cihaz = Intl.DateTimeFormat().resolvedOptions().timeZone;
     const cihazOfs = -new Date().getTimezoneOffset() / 60;
     const tahmin = Math.round(boylam / 15);

@@ -65,3 +65,41 @@ test('Cihaz saati yörünge verisinden çok uzaksa geçişler gösterilmez, nede
   await page.goto('/index.html#gok');
   await expect(page.locator('#gkIss')).toContainText('güncel değil');
 });
+
+test.describe('cihaz Tokyo', () => {
+  test.use({ timezoneId: 'Asia/Tokyo' });
+  test('Elle girilen Türkiye konumu Türkiye saatini alır; listeden dilim seçilebilir', async ({ page }) => {
+    await page.route(/^https?:\/\/(?!127\.0\.0\.1|localhost)/, r => r.abort());
+    await page.clock.install({ time: new Date('2026-10-28T15:00:00Z') });
+    await page.addInitScript(() => { localStorage.setItem('urania_konumOto', 'false'); });
+    await page.goto('/index.html#gok');
+    await page.click('#gkKonumDegis');
+    await page.fill('#gkKEnlem', '39,93'); await page.fill('#gkKBoylam', '32,86');
+    await page.locator('#gkKBoylam').dispatchEvent('change');
+    await expect(page.locator('#gkKDilim')).toHaveValue('Europe/Istanbul');
+    await page.click('#gkKKaydet');
+    await expect(page.locator('#gkOzet p').first()).toContainText('17:5');   // Ankara batışı ~17:53 TSİ (USNO)
+    await page.click('#gkKonumDegis');
+    await page.selectOption('#gkKDilim', 'Asia/Tokyo');
+    await page.click('#gkKKaydet');
+    await expect(page.locator('#gkKonum')).toContainText('Asia/Tokyo');
+  });
+});
+
+test.describe('Londra geri dönüş gecesi', () => {
+  test.use({ timezoneId: 'Europe/London' });
+  test('Defter: iki kez yaşanan 01:30\'daki kayıt değiştirmeden kaydedilince anı kaymaz', async ({ page }) => {
+    await page.route(/^https?:\/\/(?!127\.0\.0\.1|localhost)/, r => r.abort());
+    await page.clock.install({ time: new Date('2026-10-25T00:30:00Z') });
+    await page.addInitScript(() => {
+      if (sessionStorage.getItem('l_k')) return; sessionStorage.setItem('l_k', '1');
+      localStorage.setItem('urania_konumOto', 'false');
+      localStorage.setItem('urania_konum', JSON.stringify({ ad: 'Londra', enlem: 51.5, boylam: -0.12, yukseklik: 0, saatDilimi: 'Europe/London', oto: false }));
+    });
+    await page.goto('/index.html#defter');
+    await page.click('#dfYeni');
+    await page.click('#dfKaydet');
+    const z = await page.evaluate(() => JSON.parse(localStorage.getItem('urania_defter'))[0].zaman);
+    expect(Math.abs(new Date(z) - new Date('2026-10-25T00:30:00Z'))).toBeLessThan(60e3);   // eskiden 01:30Z'ye kayıyordu
+  });
+});

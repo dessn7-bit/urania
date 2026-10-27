@@ -550,13 +550,15 @@
           if (x < -10 || x > w + 10 || y < -10 || y > ust + 10) return;
           ctx.beginPath(); ctx.ellipse(x, y, i === merkez ? 6 : 4, i === merkez ? 4 : 2.5, (i * 0.7) % 3, 0, IKI_PI);
           ctx.fillStyle = i === merkez ? o.renk('--pirinc') : '#CBD7F0'; ctx.fill();
+          /* Senin galaksin renkten başka halkayla da ayrılır (kırmızı modda renkler birbirine yaklaşır) */
+          if (i === merkez) { ctx.beginPath(); ctx.arc(x, y, 10, 0, IKI_PI); ctx.strokeStyle = o.renk('--pirinc'); ctx.lineWidth = 1.5; ctx.stroke(); ctx.lineWidth = 1; }
           if (i !== merkez) {
             const vx = (g.x - m.x), vy = (g.y - m.y), L = 0.12;
             ctx.strokeStyle = 'rgba(203,215,240,.35)'; ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x + vx * s * L, y - vy * s * L); ctx.stroke();
           }
         });
         ctx.fillStyle = o.renk('--soluk'); ctx.font = '500 11px Plex, sans-serif'; ctx.textAlign = 'left';
-        ctx.fillText('sarı: senin galaksin · oklar: uzaklaşma hızı', 6, 14);
+        ctx.fillText('halkalı: senin galaksin · oklar: uzaklaşma hızı', 6, 14);
         /* alt: hız–uzaklık grafiği */
         const gx = 46, gy = ust + 14, gw = w - 60, gh = h - ust - 44;
         const ls = veriNoktalari(), dMax = Math.max(...ls.map(p => p[0])), vMax = Math.max(...ls.map(p => p[1])) * 1.1;

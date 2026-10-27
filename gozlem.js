@@ -98,6 +98,8 @@
             <div class="alan"><label for="gkKEnlem">Enlem (°K)</label><input id="gkKEnlem" inputmode="decimal"></div>
             <div class="alan"><label for="gkKBoylam">Boylam (°D)</label><input id="gkKBoylam" inputmode="decimal"></div>
           </div>
+          <div class="alan"><label for="gkKDilim">Saat dilimi</label><select id="gkKDilim"></select>
+            <p class="soluk kucuk" id="gkKDilimNot">Konumdan tahmin edildi; yanlışsa listeden seç (yaz saati ve ülke sınırları dilime göre hesaplanır).</p></div>
           </div>
           <p class="soluk kucuk" id="gkKDurum" role="status"></p>
           <div class="cip-grup" style="justify-content:space-between">
@@ -765,9 +767,31 @@
   }
 
   /* ---- Konum paneli ---- */
-  let gpsDilim = null;
+  let gpsDilim = null, dilimElle = false, dilimOnerildi = false;
+  /* Saat dilimi listesi: tarayıcının IANA listesi (yoksa birkaç yaygın dilim) */
+  function dilimListesi() {
+    let ls = [];
+    try { ls = Intl.supportedValuesOf('timeZone'); } catch (h) { /* eski tarayıcı */ }
+    if (!ls.length) ls = ['Europe/Istanbul', 'Europe/London', 'Europe/Berlin', 'Europe/Athens', 'America/New_York', 'America/Los_Angeles', 'Asia/Tokyo', 'Australia/Sydney', 'UTC'];
+    return ls;
+  }
+  function dilimDoldur(secili) {
+    const s = el.querySelector('#gkKDilim');
+    let ls = dilimListesi();
+    if (secili && !ls.includes(secili)) ls = [secili].concat(ls);
+    s.innerHTML = ls.map(z => `<option value="${U.kacis(z)}">${U.kacis(z === 'Europe/Istanbul' ? 'Türkiye saati (Europe/Istanbul)' : /^Etc\/GMT|^UTC$/.test(z) ? U.dilimAdi(z) : z)}</option>`).join('');
+    s.value = secili;
+  }
+  /* Enlem/boylam değişince öneri güncellenir (kullanıcı listeden seçmediyse) */
+  function dilimOner() {
+    if (dilimElle) return;
+    const enlem = sayiOku(el.querySelector('#gkKEnlem').value), boylam = sayiOku(el.querySelector('#gkKBoylam').value);
+    if (!(Math.abs(enlem) <= 90 && Math.abs(boylam) <= 180)) return;
+    dilimDoldur(gpsDilim || U.dilimTahmin(boylam, enlem)); dilimOnerildi = !gpsDilim;
+  }
   function konumPaneli() {
-    gpsDilim = null;
+    gpsDilim = null; dilimElle = false; dilimOnerildi = false;
+    dilimDoldur(U.konum().saatDilimi);
     const p = el.querySelector('#gkKonumPanel');
     const k = U.konum();
     el.querySelector('#gkKAd').value = k.ad;
@@ -808,17 +832,21 @@
         el.querySelector('#gkKBoylam').value = pos.coords.longitude.toFixed(3).replace('.', ',');
         el.querySelector('#gkKAd').value = 'Bulunduğum yer';
         gpsDilim = Intl.DateTimeFormat().resolvedOptions().timeZone;
+        if (!dilimElle) dilimDoldur(gpsDilim);
         d.textContent = 'Konum alındı (±' + Math.round(pos.coords.accuracy) + ' m). Kaydet\'e bas.';
       }, err => {
         d.textContent = err.code === 1 ? 'Konum izni verilmedi. Tarayıcı ayarlarından izin ver ya da elle yaz.' : 'Konum alınamadı; elle yaz.';
       }, { enableHighAccuracy: false, timeout: 15000, maximumAge: 600000 });
     });
     el.querySelector('#gkKOto').addEventListener('change', e => { el.querySelector('#gkKElle').hidden = e.target.checked; });
+    el.querySelector('#gkKDilim').addEventListener('change', () => { dilimElle = true; });
+    el.querySelectorAll('#gkKEnlem, #gkKBoylam').forEach(i => i.addEventListener('change', dilimOner));
     el.querySelector('#gkKSifirla').addEventListener('click', () => {
       const v = U.VARSAYILAN_KONUM;
       el.querySelector('#gkKAd').value = v.ad;
       el.querySelector('#gkKEnlem').value = String(v.enlem).replace('.', ',');
       el.querySelector('#gkKBoylam').value = String(v.boylam).replace('.', ',');
+      if (!dilimElle) dilimDoldur(v.saatDilimi);
     });
     /* Geçersiz girişte panel kapanmaz, otomatik konum ayarı da değişmez */
     el.querySelector('#gkKKaydet').addEventListener('click', e => {
@@ -841,9 +869,11 @@
       const { enlem, boylam } = gec;
       const vars = U.VARSAYILAN_KONUM;
       const varsayilan = Math.abs(enlem - vars.enlem) < 1e-6 && Math.abs(boylam - vars.boylam) < 1e-6;
-      const saatDilimi = gpsDilim || (varsayilan ? vars.saatDilimi : U.dilimTahmin(boylam));
-      /* Dilim GPS'ten ya da varsayılandan gelmiyorsa boylamdan tahmin (cihazın dilimi ödünç alınmış olabilir) */
-      const dilimYaklasik = !gpsDilim && !varsayilan;
+      /* Dilim: listeden seçilen; seçilmediyse GPS'in, varsayılanın ya da konumdan tahminin dilimi */
+      const secilen = el.querySelector('#gkKDilim').value;
+      const saatDilimi = dilimElle && secilen ? secilen : (gpsDilim || (varsayilan ? vars.saatDilimi : (secilen || U.dilimTahmin(boylam, enlem))));
+      /* Kullanıcı seçmediyse ve GPS ya da varsayılan değilse tahmindir: şeritte "yaklaşık" yazar */
+      const dilimYaklasik = !dilimElle && !gpsDilim && !varsayilan && (dilimOnerildi || !!U.konum().dilimYaklasik);
       gpsDilim = null;
       if (!U.konumYaz({ ad: el.querySelector('#gkKAd').value.trim() || 'Özel konum', enlem, boylam, yukseklik: 0, saatDilimi, dilimYaklasik, oto: false })) {
         /* Depo dolu: konum bu oturumda geçerli olmaz, kullanıcıya söylenir */

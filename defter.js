@@ -103,6 +103,7 @@
     return String(p.year).padStart(4, '0') + '-' + s(p.month) + '-' + s(p.day) + 'T' + s(p.hour) + ':' + s(p.minute);
   }
   /* "2026-10-27T22:00" → z dilimindeki o duvar saatinin anı */
+  let formAn = null;
   function girdiOku(str, z) {
     const m = /^(\d{4,})-(\d{2})-(\d{2})T(\d{2}):(\d{2})/.exec(str || '');
     if (!m) return new Date(NaN);
@@ -184,7 +185,10 @@
     el.querySelector('#dfDigerAlan').hidden = sec.value !== 'diger';
     adHatasi(false);
     formDilim = kayit ? kayitDilimi(kayit) : U.konum().saatDilimi;
-    el.querySelector('#dfZaman').value = yerelGirdi(kayit ? new Date(kayit.zaman) : new Date(), formDilim);
+    /* Formun açıldığı an saklanır: kullanıcı saati değiştirmezse bu an aynen kaydedilir (yaz saatinden
+       dönüş gecesinde 01:30 gibi iki kez yaşanan saat başka bir ana kaymasın) */
+    formAn = kayit ? new Date(kayit.zaman) : new Date();
+    el.querySelector('#dfZaman').value = yerelGirdi(formAn, formDilim);
     secDeger(el.querySelector('#dfAlet'), kayit ? kayit.alet : U.oku('defterSonAlet', '7×50 dürbün'));
     secDeger(el.querySelector('#dfKosul'), kayit ? kayit.kosul : 'Berrak');
     el.querySelector('#dfNot').value = kayit ? (kayit.not || '') : '';
@@ -231,7 +235,8 @@
     }
     adHatasi(false);
     const zStr = el.querySelector('#dfZaman').value;
-    const zaman = zStr ? girdiOku(zStr, formDilim || U.konum().saatDilimi) : new Date();
+    const dz = formDilim || U.konum().saatDilimi;
+    const zaman = zStr ? (formAn && zStr === yerelGirdi(formAn, dz) ? new Date(formAn) : girdiOku(zStr, dz)) : new Date();
     if (isNaN(zaman)) { el.querySelector('#dfZaman').focus(); return; }
     const ls = kayitlar();
     const eski = duzenlenen ? ls.find(x => x.id === duzenlenen) : null;
@@ -327,7 +332,8 @@
     const blob = new Blob([JSON.stringify({ uygulama: 'Urania', tur: 'gozlem-defteri', surum: 1, olusturma: new Date().toISOString(), kayitlar: ls }, null, 1)], { type: 'application/json' });
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
-    a.download = 'urania-defter-' + new Date().toISOString().slice(0, 10) + '.json';
+    const bg = new Date(), iki = n => String(n).padStart(2, '0');
+    a.download = 'urania-defter-' + bg.getFullYear() + '-' + iki(bg.getMonth() + 1) + '-' + iki(bg.getDate()) + '.json';   // yerel tarih
     document.body.appendChild(a); a.click(); a.remove();
     setTimeout(() => URL.revokeObjectURL(a.href), 2000);
     el.querySelector('#dfYedekDurum').textContent = ls.length + ' kayıt indirildi.';

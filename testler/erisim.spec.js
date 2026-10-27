@@ -81,6 +81,7 @@ test('1: AR "Pusulayı aç" (dolu düğme) yazısı zeminiyle en az 4,5:1, norma
   await page.goto('/index.html#ar');
   for (const kip of ['normal', 'kirmizi']) {
     if (kip === 'kirmizi') { await kirmizi(page); }
+    await page.waitForSelector('#arPusula', { state: 'attached' });   // AR ekranı veri yüklenince kurulur
     await page.evaluate(() => { document.getElementById('arPusula').hidden = false; });
     const r = await page.evaluate(() => { const s = getComputedStyle(document.getElementById('arPusula')); return { renk: s.color, zemin: s.backgroundColor, oran: window.__oran(s.color, s.backgroundColor) }; });
     expect(r.oran, kip + ' ' + JSON.stringify(r)).toBeGreaterThanOrEqual(4.5);
