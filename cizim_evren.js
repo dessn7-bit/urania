@@ -184,21 +184,22 @@
       });
       const bar = (a, b, renk) => S.cizgi(ax, Y(a), ax, Y(b), { renk, kalin: 7 });
       const nokta = (L, renk) => S.daire(ax, Y(L), 4.5, { dolgu: renk, renk: R.zemin, kalin: 1.5 });
-      const etiket = (L, ly, metin, renk, uz) => { const d = uz || 0; return S.yol(`M${ax + 6},${Y(L)} L${ax + 12 + d / 3},${Y(L)} L${ax + 18 + d},${ly - 4}`, { renk: R.soluk, kalin: 1 }) + S.yazi(ax + 22 + d, ly, metin, { boy: 13, renk: renk || R.metin }); };
+      /* Öncü çizgi etiketin renginde: alttaki sık noktalarda hangi çizginin hangi yazıya gittiği seçilsin */
+      const etiket = (L, ly, metin, renk, uz) => { const d = uz || 0; return S.yol(`M${ax + 6},${Y(L)} L${ax + 12 + d / 3},${Y(L)} L${ax + 18 + d},${ly - 4}`, { renk: renk || R.soluk, kalin: 1 }) + S.yazi(ax + 22 + d, ly, metin, { boy: 13, renk: renk || R.metin }); };
       s += bar(-33, -32, R.vurgu) + etiket(-32.5, 46, 'Şişme: 10⁻³³–10⁻³² s, en az 10²⁶ kat');
       s += bar(-12, -5, R.mavi) + etiket(-8.5, 228, 'Kuark çağı: 10⁻¹²–10⁻⁵ s');
       s += nokta(-5, R.metin) + etiket(-5, 257, 'Proton ve nötronlar: 10⁻⁵ s, 10¹² K');
       s += nokta(0, R.metin) + etiket(0, 288, 'Nötrinolar serbest: 1 s, 10 milyar K');
       s += bar(1, 3, R.iyi) + etiket(2, 312, 'İlk çekirdekler: 10–1000 s');
-      s += nokta(Ly(47000), R.metin) + etiket(Ly(47000), 338, 'Madde baskın: ≈47.000 yıl', null, 30);
+      s += nokta(Ly(47000), R.metin) + etiket(Ly(47000), 338, 'Madde baskın: ≈47.000 yıl', R.metin, 30);
       s += bar(Ly(380000), Ly(3e8), R.zemin);
       s += S.cizgi(ax, Y(Ly(380000)), ax, Y(Ly(3e8)), { renk: R.soluk, kalin: 1 });
       s += nokta(Ly(380000), R.vurgu) + etiket(Ly(380000), 356, 'Yeniden birleşme: ≈380.000 yıl, ≈3000 K', R.vurgu, 30);
       s += etiket((Ly(380000) + Ly(3e8)) / 2, 374, 'Karanlık çağ: henüz yıldız yok', R.soluk, 30);
-      s += nokta(Ly(2.8e8), R.mavi) + etiket(Ly(2.8e8), 392, 'MoM-z14 galaksisi: ≈280 milyon yıl', null, 30);
-      s += etiket(Ly(3e8), 410, 'İlk yıldızlar: birkaç yüz milyon yıl', null, 30);
-      s += bar(Ly(2e8), Ly(1e9), R.iyi) + etiket((Ly(2e8) + Ly(1e9)) / 2, 428, 'Yeniden iyonlaşma: 0,2–1 milyar yıl', null, 30);
-      s += nokta(Ly(13.8e9), R.metin) + etiket(Ly(13.8e9), 446, 'Bugün: 13,8 milyar yıl', null, 30);
+      s += nokta(Ly(2.8e8), R.mavi) + etiket(Ly(2.8e8), 392, 'MoM-z14 galaksisi: ≈280 milyon yıl', R.mavi, 30);
+      s += etiket(Ly(3e8), 410, 'İlk yıldızlar: birkaç yüz milyon yıl', R.uyari, 30);
+      s += bar(Ly(2e8), Ly(1e9), R.iyi) + etiket((Ly(2e8) + Ly(1e9)) / 2, 428, 'Yeniden iyonlaşma: 0,2–1 milyar yıl', R.iyi, 30);
+      s += nokta(Ly(13.8e9), R.metin) + etiket(Ly(13.8e9), 446, 'Bugün: 13,8 milyar yıl', R.metin, 30);
       return s;
     }
   });

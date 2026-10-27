@@ -236,7 +236,7 @@
       let x = 17; const cy = 94;
       dev.forEach(([ad, d, t], i) => {
         const r = d * olc / 2; x += r;
-        s += S.daire(x, cy, r, { dolgu: i < 2 ? R.gezegen : R.mavi, renk: 'none', saydam: i < 2 ? 0.8 : 0.85 });
+        s += S.daire(x, cy, r, { dolgu: R.mavi, renk: 'none', saydam: 0.85 });   // dev gezegenler bu dersin öteki çizimleriyle aynı renkte
         s += S.yazi(x, cy + 88, ad, { boy: 14, hiza: 'middle' });
         s += S.yazi(x, cy + 106, t + ' ×', { boy: 13, hiza: 'middle', renk: R.soluk });
         x += r + 8;
@@ -281,7 +281,7 @@
       /* logaritmik */
       const x0 = 30, x1 = 372, lo = Math.log10(0.3), hi = Math.log10(60), X = au => x0 + (Math.log10(au) - lo) / (hi - lo) * (x1 - x0), yb = 178;
       s += S.yazi(12, 112, 'Logaritmik ölçek', { boy: 14, kalin: true });
-      s += S.kutu(X(2.3), yb - 9, X(3.3) - X(2.3), 18, { dolgu: R.soluk, renk: 'none', saydam: 0.35 });
+      s += S.kutu(X(2.06), yb - 9, X(3.27) - X(2.06), 18, { dolgu: R.soluk, renk: 'none', saydam: 0.35 });   // 2,06–3,27 AB: d19 dersi ve d19-olcek ile aynı
       s += S.kutu(X(30), yb - 9, X(50) - X(30), 18, { dolgu: R.mavi, renk: 'none', saydam: 0.3 });
       s += S.cizgi(x0, yb, x1, yb, { renk: R.soluk, kalin: 1 });
       g.forEach(([ad, a], i) => {
@@ -291,7 +291,7 @@
         s += S.yazi(x, ust ? yb - 36 : yb - 18, ad, { boy: 13, hiza: 'middle' });
       });
       [[0.5, '0,5'], [1, '1'], [5, '5'], [10, '10'], [50, '50']].forEach(([a, t]) => { s += S.cizgi(X(a), yb + 9, X(a), yb + 14, { renk: R.soluk, kalin: 1 }) + S.yazi(X(a), yb + 28, t, { boy: 13, hiza: 'middle', renk: R.soluk }); });
-      s += S.yazi((X(2.3) + X(3.3)) / 2, yb + 48, 'asteroit kuşağı', { boy: 13, hiza: 'middle', renk: R.soluk });
+      s += S.yazi((X(2.06) + X(3.27)) / 2, yb + 48, 'asteroit kuşağı', { boy: 13, hiza: 'middle', renk: R.soluk });
       s += S.yazi(388, yb + 48, 'Kuiper kuşağı', { boy: 13, hiza: 'end', renk: R.mavi });
       s += S.yazi(200, yb + 74, 'Güneş\'e uzaklık (AB)', { boy: 14, hiza: 'middle', renk: R.soluk });
       return s;
@@ -418,15 +418,17 @@
         } else { pU = uzat(jU, iU, xSon); pA = uzat(jA, iA, xSon); yari = [iU, pU, pA, iA]; }
         const tx = Math.min(tepe, xSon), tU = uzat(gU, ust, tx), tA = uzat(gA, alt, tx);
         let s = '';
-        s += `<polygon points="${nk(yari)}" fill="${R.zemin}" opacity="0.5"/>`;
+        s += `<polygon points="${nk(yari)}" fill="${R.zemin}" opacity="0.5"/><polygon points="${nk(yari)}" fill="url(#cz-yari-golge)"/>`;
         s += `<polygon points="${nk([ust, tU, tA, alt])}" fill="${R.zemin}"/>`;
         s += S.cizgi(jU[0], jU[1], pU[0], pU[1], { renk: R.soluk, kalin: 0.8, saydam: 0.8 }) + S.cizgi(jA[0], jA[1], pA[0], pA[1], { renk: R.soluk, kalin: 0.8, saydam: 0.8 });
         s += S.cizgi(gU[0], gU[1], tU[0], tU[1], { renk: R.metin, kalin: 0.8, saydam: 0.5 }) + S.cizgi(gA[0], gA[1], tA[0], tA[1], { renk: R.metin, kalin: 0.8, saydam: 0.5 });
         return { s, tepe, yay };
       }
-      const isik = (y, h) => S.kutu(0, y, 400, h, { dolgu: R.gunes, renk: 'none', saydam: 0.09 });
+      /* Işık, yarı gölge ve tam gölge renkten başka desenle de ayrılsın (kırmızı modda renkler yakınlaşır): yarı gölge taralı */
+      const ISIK = 0.28;
+      const isik = (y, h) => S.kutu(0, y, 400, h, { dolgu: R.gunes, renk: 'none', saydam: ISIK });
       const kirp = (id, y, h, ic) => `<clipPath id="${id}"><rect x="0" y="${y}" width="400" height="${h}"/></clipPath><g clip-path="url(#${id})">${ic}</g>`;
-      let s = '';
+      let s = `<defs><pattern id="cz-yari-golge" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="7" stroke="${R.soluk}" stroke-width="1.4" opacity="0.7"/></pattern></defs>`;
       /* --- Güneş tutulması --- */
       let cy = 98;
       s += S.yazi(12, 18, 'Güneş tutulması (yeni ay)', { boy: 15, kalin: true });
@@ -462,11 +464,11 @@
       s += S.yazi(ayX, cy + 46, 'Ay: tam gölgede', { boy: 13, hiza: 'middle', renk: R.uyari });
       s += S.yazi(36, cy + 46, 'Güneş', { boy: 13, renk: R.gunes });
       /* gösterge */
-      s += S.kutu(40, 330, 16, 13, { dolgu: R.gunes, renk: 'none', saydam: 0.09 }) + S.kutu(40, 330, 16, 13, { renk: R.soluk });
+      s += S.kutu(40, 330, 16, 13, { dolgu: R.gunes, renk: 'none', saydam: ISIK }) + S.kutu(40, 330, 16, 13, { renk: R.soluk });
       s += S.yazi(62, 341, 'ışık', { boy: 13 });
       s += S.kutu(150, 330, 16, 13, { dolgu: R.zemin, renk: R.soluk });
       s += S.yazi(172, 341, 'tam gölge', { boy: 13 });
-      s += S.kutu(260, 330, 16, 13, { dolgu: R.gunes, renk: 'none', saydam: 0.09 }) + S.kutu(260, 330, 16, 13, { dolgu: R.zemin, renk: 'none', saydam: 0.5 }) + S.kutu(260, 330, 16, 13, { renk: R.soluk });
+      s += S.kutu(260, 330, 16, 13, { dolgu: R.gunes, renk: 'none', saydam: ISIK }) + S.kutu(260, 330, 16, 13, { dolgu: R.zemin, renk: 'none', saydam: 0.5 }) + '<rect x="260" y="330" width="16" height="13" fill="url(#cz-yari-golge)"/>' + S.kutu(260, 330, 16, 13, { renk: R.soluk });
       s += S.yazi(282, 341, 'yarı gölge', { boy: 13 });
       return s;
     }

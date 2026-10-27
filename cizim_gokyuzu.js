@@ -289,7 +289,7 @@
       const g0 = 60, g1 = 340, gy = 156, gh = 20, G = nm => g0 + (nm - 380) / (700 - 380) * (g1 - g0);
       const yk = y + hb + 26;            // bağlantı, eksen yazılarının altından yelpazelenir
       s += S.cizgi(X(4e-7), y + hb, X(4e-7), yk, { renk: R.vurgu, kalin: 1, saydam: 0.7 }) + S.cizgi(X(7e-7), y + hb, X(7e-7), yk, { renk: R.vurgu, kalin: 1, saydam: 0.7 });
-      s += S.cizgi(X(4e-7), yk, g0, gy, { renk: R.vurgu, kalin: 1, saydam: 0.7 });
+      s += S.cizgi(X(4e-7), yk, G(400), gy, { renk: R.vurgu, kalin: 1, saydam: 0.7 });   // şeritteki 400 nm (NASA bant sınırı) büyütmede de 400 nm'ye bağlanır
       s += S.cizgi(X(7e-7), yk, g1, gy, { renk: R.vurgu, kalin: 1, saydam: 0.7 });
       s += S.kutu(g0, gy, g1 - g0, gh, { renk: R.vurgu, kalin: 1.2, dolgu: R.vurguSoluk });
       [400, 500, 600, 700].forEach(nm => {
@@ -593,7 +593,9 @@
       s += S.yazi((X(0.4) + X(1)) / 2, 22, 'atmosfer 0,4–1″', { boy: 13, renk: R.mavi, hiza: 'middle', kalin: true });
       sat.forEach(([ad, v, t], i) => {
         const y = y0 + i * dy;
-        s += S.kutu(x0, y - 8, X(v) - x0, 14, { renk: 'none', dolgu: i === 3 ? R.iyi : R.vurgu, saydam: 0.85 });
+        /* DAG: kırınım sınırı kuramsaldır; yerden atmosfer şeridinin altına inemez: çubuk boş ve kesikli */
+        s += i === 4 ? S.kutu(x0, y - 8, X(v) - x0, 14, { renk: R.vurgu, kalin: 1.2, kesik: '4 3' }) + S.yazi(X(v) + 6, y + 3, 'kuramsal', { boy: 13, renk: R.soluk })
+          : S.kutu(x0, y - 8, X(v) - x0, 14, { renk: 'none', dolgu: i === 3 ? R.iyi : R.vurgu, saydam: 0.85 });
         s += S.yazi(x0 - 8, y - 2, ad, { boy: 13, renk: R.metin, hiza: 'end', kalin: true });
         s += S.yazi(x0 - 8, y + 14, t, { boy: 13, renk: R.soluk, hiza: 'end' });
       });

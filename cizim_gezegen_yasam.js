@@ -197,11 +197,12 @@
   C.ekle('d18-okyanus-dunyalari', {
     ders: 'd18', bolum: 5, oran: 1.06,
     baslik: 'Buzun altındaki okyanuslar: tahminler ve farkları',
-    aciklama: 'Üstte üç uydu ölçekli: Titan en büyük, Enceladus Europa\'nın yanında küçük bir nokta. Altta kalınlık tahminleri: Europa\'nın okyanusu için kaynaklar 50 ile 100 ya da 60 ile 150 km diyor; Enceladus için 2014 ve 2024 çalışmaları farklı buz ve okyanus kalınlıkları buluyor; Titan\'da okyanusun yaklaşık 100 km aşağıda olduğu düşünülüyor. Çubuklar tahmin aralığını, noktalar tek değerleri gösterir.',
+    aciklama: 'Üstte üç uydu ölçekli: Titan en büyük, Enceladus Europa\'nın yanında küçük bir nokta. Altta kalınlık tahminleri: Juno\'nun ölçtüğü yaklaşık 29 km, Europa\'nın buz kabuğunun yalnız soğuk ve katı dış katmanıdır; altında daha ılık bir buz katmanı varsa kabuğun tamamı daha kalındır. Europa\'nın okyanusu için kaynaklar 50 ile 100 ya da 60 ile 150 km diyor; Enceladus için 2014 ve 2024 çalışmaları farklı buz ve okyanus kalınlıkları buluyor; Titan\'da okyanusun yaklaşık 100 km aşağıda olduğu düşünülüyor. Çubuklar tahmin aralığını, noktalar tek değerleri gösterir.',
     kaynak: [
       { ad: 'JPL – Europa Clipper quick facts', url: 'https://jpl.nasa.gov/press-kits/europa-clipper/quick-facts' },
       { ad: 'NASA Astrobiology – Science background (afiş metni)', url: 'https://astrobiology.nasa.gov/uploads/filer_public/29/53/29537716-a2cd-45a7-a484-e99769b6b278/ab-poster-sciencebackgroundtext_2025.pdf' },
       { ad: 'SwRI – Juno measures thickness of Europa\'s ice shell (2026)', url: 'https://www.swri.org/newsroom/press-releases/nasa-s-juno-spacecraft-measures-thickness-of-europa-s-ice-shell' },
+      { ad: 'JPL – NASA\'s Juno measures thickness of Europa\'s ice shell (27 Ocak 2026)', url: 'https://www.jpl.nasa.gov/news/nasas-juno-measures-thickness-of-europas-ice-shell' },
       { ad: 'Astronomy – NASA space assets detect ocean inside Saturn moon (2014)', url: 'https://www.astronomy.com/science/nasa-space-assets-detect-ocean-inside-saturn-moon/' },
       { ad: 'Park ve ark. 2024, JGR Planets – Enceladus', url: 'https://authors.library.caltech.edu/records/nxz35-wch52' },
       { ad: 'Eos – Enceladus (504 km)', url: 'https://eos.org/articles/hydrogen-molecules-hint-at-habitability-of-enceladuss-ocean' },
@@ -221,7 +222,7 @@
       const px = 180, pw = 205, kmMax = 160, X = v => px + v / kmMax * pw;
       const satirlar = [
         ['b', 'Europa'],
-        ['n', 'Buz (bölgesel), Juno 2025', 29, null, 'buz'],
+        ['n', 'Buzun dış katmanı, Juno', 29, null, 'buz'],
         ['r', 'Okyanus, NASA afişi', 50, 100, 'su'],
         ['r', 'Okyanus, JPL', 60, 150, 'su'],
         ['b', 'Enceladus'],

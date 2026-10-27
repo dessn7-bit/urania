@@ -325,7 +325,7 @@
       const nk = t => { const r = ANAKOL.find(q => q[0] === t); return [ek.X(r[1]), ek.Y(r[4] / 1e9)]; };
       const [ox, oy] = nk('O5'), [ax, ay] = nk('A0'), [gx, gy] = nk('G2'), [mx, my] = nk('M0');
       s += S.yazi(ox - 4, oy + 22, 'O5: 1,2 milyon yıl', { boy: 13, hiza: 'end', kalin: true });
-      s += S.yazi(ax + 8, ay - 9, 'A0: 570 milyon yıl', { boy: 13, kalin: true });
+      s += S.yazi(ax + 9, ay + 5, 'A0: 570 milyon yıl', { boy: 13, kalin: true });   // noktanın hizasında
       s += S.cizgi(gx + 3, gy - 4, gx + 14, al.y + 38, { renk: R.soluk, kalin: 1 });
       s +=S.yazi(gx + 16, al.y + 34, 'Güneş: ~10 milyar yıl', { boy: 13, kalin: true });
       s += S.yazi(mx + 8, al.y + 14, 'M0: 82 milyar yıl', { boy: 13, kalin: true });
