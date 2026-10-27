@@ -3,6 +3,7 @@
    sayfa hatası, konsol hatası ya da ekranda "NaN", "undefined", "Invalid Date", "null"
    gibi bozuk metin olmamalı. Ağ servisleri sahte yanıtla (boş/hatalı) beslenir. */
 const { test, expect } = require('@playwright/test');
+const { celestrak } = require('./yardim');
 
 const KONUMLAR = [
   { ad: 'Sidney', enlem: -33.87, boylam: 151.21, saatDilimi: 'Australia/Sydney' },
@@ -19,7 +20,7 @@ async function hazirla(page, konum, an, secenek = {}) {
   page.on('pageerror', e => page.hatalar.push('sayfa: ' + e.message));
   page.on('console', m => { if (m.type() === 'error' && !/Failed to load resource/.test(m.text())) page.hatalar.push('konsol: ' + m.text()); });
   await page.route('**/api.open-meteo.com/**', r => secenek.havaHata ? r.fulfill({ status: 500, body: 'x' }) : r.fulfill({ json: { hourly: { time: [], cloud_cover: [], cloud_cover_low: [], cloud_cover_mid: [], cloud_cover_high: [], relative_humidity_2m: [], wind_speed_10m: [], precipitation_probability: [], precipitation: [] } } }));
-  await page.route('**/celestrak.org/**', r => r.fulfill({ contentType: 'text/plain', body: 'ISS (ZARYA)\n1 25544U 98067A   26300.17675415  .00005704  00000+0  11132-3 0  9993\n2 25544  51.6336   6.9404 0006948 314.9066  45.1358 15.49073103592213\n' }));
+  await celestrak(page);
   await page.route('**/nominatim.openstreetmap.org/**', r => r.fulfill({ json: {} }));
   await page.addInitScript(k => {
     localStorage.setItem('urania_konumOto', 'false');

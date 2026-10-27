@@ -188,9 +188,9 @@
     const ay = G.ayDurumu(an, gzl);
     st.nesneler = { yildiz, ty, hedefler, cisimler, ay };
     st.konum = k;
-    /* ISS: yaklaşan/süren geçişin yolu dakikada bir yenilenir */
-    if (st.tle && window.Uydu && (!st.issZaman || an - st.issZaman > 60e3)) {
-      try { st.issGecis = Uydu.yakinGecis(st.tle, k, an); } catch (h) { st.issGecis = null; }
+    /* Uydular: yaklaşan/süren geçişlerin yolu dakikada bir yenilenir */
+    if (st.uydular && window.Uydu && (!st.issZaman || an - st.issZaman > 60e3)) {
+      st.uyduGecis = st.uydular.map(u => { try { return Uydu.yakinGecis(u, k, an); } catch (h) { return null; } });
       st.issZaman = an;
     }
     if (!st.sapmaHesaplandi && window.Geomag) {
@@ -344,14 +344,17 @@
     merkezYaz(bakis, cx, cy);
   }
 
-  function issAnlik() {
-    if (!st.tle || !st.konum || !window.Uydu) return null;
-    try { return Uydu.anlik(st.tle, st.konum, new Date()); } catch (h) { return null; }
+  function uyduAnlik(id) {
+    if (!st.uydular || !st.konum || !window.Uydu) return null;
+    const u = st.uydular.find(x => x.id === id); if (!u) return null;
+    try { return Uydu.anlik(u, st.konum, new Date()); } catch (h) { return null; }
   }
   function issCiz(yansit, W, H, kir) {
-    if (!st.tle) return;
+    if (!st.uydular) return;
+    st.uydular.forEach((u, i) => uyduCiz(u, st.uyduGecis && st.uyduGecis[i], yansit, kir));
+  }
+  function uyduCiz(u, g, yansit, kir) {
     const renkI = kir ? renk('--pirinc') : '#9FE3C7';
-    const g = st.issGecis;
     if (g && g.gorunur && g.bitis.t > new Date() && g.yol.length > 1) {
       ctx.save(); ctx.setLineDash([5, 6]); ctx.strokeStyle = renkI; ctx.globalAlpha = 0.75; ctx.lineWidth = 1.5;
       ctx.beginPath(); let o = null;
@@ -365,15 +368,15 @@
         ctx.fillText(U.saat(d.t), p.x + 6, p.y - 8);
       });
     }
-    const d = issAnlik();
+    const d = uyduAnlik(u.id);
     if (!d || d.alt < -2) return;
     const p = yansit(enu(d.alt, d.az)); if (!p) return;
     ctx.beginPath(); ctx.arc(p.x, p.y, 6, 0, Math.PI * 2);
     ctx.strokeStyle = renkI; ctx.lineWidth = 2; ctx.stroke();
     if (d.isikli) { ctx.fillStyle = renkI; ctx.fill(); }
     ctx.font = '600 14px Plex, system-ui, sans-serif'; ctx.fillStyle = renkI; ctx.textAlign = 'left';
-    ctx.fillText('ISS', p.x + 10, p.y);
-    isabet.push({ x: p.x, y: p.y, o: 5, ad: 'Uzay İstasyonu (ISS)', alt: (d.isikli ? 'Güneş ışığı alıyor' : 'Dünya\'nın gölgesinde, görünmez') + ' · ' + U.sayi(d.uzaklik, 0) + ' km uzakta' });
+    ctx.fillText(u.kisa, p.x + 10, p.y);
+    isabet.push({ x: p.x, y: p.y, o: 5, ad: u.ad, alt: (d.isikli ? 'Güneş ışığı alıyor' : 'Dünya\'nın gölgesinde, görünmez') + ' · ' + U.sayi(d.uzaklik, 0) + ' km uzakta' });
   }
 
   function ayCiz(p, gs, r, kir) {
@@ -418,7 +421,7 @@
     if (h.tur === 'hedef') { const c = n.hedefler.find(x => x.ad === h.id); return c && c.v; }
     if (h.tur === 'yildiz') { const i = h.id; return [n.yildiz[i * 3], n.yildiz[i * 3 + 1], n.yildiz[i * 3 + 2]]; }
     if (h.tur === 'ty') { const t = n.ty.find(x => x.ad === h.id); return t && t.m; }
-    if (h.tur === 'iss') { const d = issAnlik(); return d && enu(d.alt, d.az); }
+    if (h.tur === 'iss') { const d = uyduAnlik(h.id); return d && enu(d.alt, d.az); }
     return null;
   }
 
@@ -472,8 +475,7 @@
     const n = st.nesneler; if (!n) return [];
     const ls = [];
     n.cisimler.forEach(c => { if (c.id === 'Sun' || c.kadir <= 8) ls.push({ tur: 'cisim', id: c.id, ad: c.ad, alt: c.alt, grup: 'Güneş Sistemi' }); });
-    const iss = issAnlik();
-    if (iss) ls.push({ tur: 'iss', id: 'iss', ad: 'Uzay İstasyonu (ISS)', alt: iss.alt, grup: 'Güneş Sistemi' });
+    (st.uydular || []).forEach(u => { const d = uyduAnlik(u.id); if (d) ls.push({ tur: 'iss', id: u.id, ad: u.ad, alt: d.alt, grup: 'Güneş Sistemi' }); });
     n.hedefler.forEach(h => ls.push({ tur: 'hedef', id: h.ad, ad: h.ad, alt: Math.asin(h.v[2]) / DER, grup: 'Dürbün hedefleri' }));
     Object.keys(veri.yildizlar.adlar).forEach(i => {
       if (veri.yildizlar.y[i][2] > 3) return;
@@ -634,7 +636,7 @@
     if (calisiyor || !veri) return;
     calisiyor = true;
     document.body.classList.add('ar-acik');
-    if (window.Uydu && !st.tle) Uydu.tleGetir().then(t => { st.tle = t; st.issZaman = null; if (calisiyor) nesneleriYenile(); }).catch(() => { /* ISS yoksa da çalışır */ });
+    if (window.Uydu && !st.uydular) Uydu.uydular().then(t => { st.uydular = t; st.issZaman = null; if (calisiyor) nesneleriYenile(); }).catch(() => { /* uydu verisi yoksa da çalışır */ });
     st.mod = 'bekliyor'; st.R = null; st.sapmaHesaplandi = false; st.goreliVar = false; st.goreliKabul = false; st.izinYok = false;
     nesneleriYenile();
     sayac = setInterval(nesneleriYenile, 1000);

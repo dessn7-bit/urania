@@ -15,9 +15,13 @@ global.Gok = require('../gok.js');
 global.Urania = { oku: () => null, yaz: () => {} };
 require('../uydu.js');
 
-const TLE = { s1: '1 25544U 98067A   26300.17675415  .00005704  00000+0  11132-3 0  9993', s2: '2 25544  51.6336   6.9404 0006948 314.9066  45.1358 15.49073103592213' };
+const { ISTASYON, SON30 } = require('./yardim');
+/* CelesTrak OMM/JSON, 2026-10-27; ISS öğeleri aşağıdaki TLE ile aynı takım (EPOCH 26300.17675415):
+   1 25544U 98067A   26300.17675415  .00005704  00000+0  11132-3 0  9993 */
+const ISS = { id: 'iss', omm: ISTASYON.find(o => o.NORAD_CAT_ID === 25544) };
+const CSS = { id: 'css', omm: ISTASYON.find(o => o.NORAD_CAT_ID === 48274) };
 const KONUM = { enlem: 40.99, boylam: 29.029, yukseklik: 20 };
-const ls = Uydu.gecisler(TLE, KONUM, new Date('2026-10-27T12:00:00Z'), 3);
+const ls = Uydu.gecisler(ISS, KONUM, new Date('2026-10-27T12:00:00Z'), 3);
 const bul = iso => ls.find(g => Math.abs(g.tepe.t - new Date(iso)) < 120e3);
 const sn = (a, b) => Math.abs(new Date(a) - new Date(b)) / 1000;
 
@@ -46,9 +50,44 @@ test('Gece yarısı tam gölgede geçen geçiş görünmez sayılır', () => {
   expect(bul('2026-10-28T22:17:10Z').gorunur).toBe(false);
 });
 
-test('TLE dönemi doğru çözülür', () => {
-  /* 26300.17675415 → 2026'nın 300. günü = 27 Ekim, 04:14:31,6 UT (CelesTrak JSON EPOCH ile aynı) */
-  expect(Uydu.tleDonemi(TLE.s1).toISOString().slice(0, 19)).toBe('2026-10-27T04:14:31');
+test('OMM dönemi UTC olarak çözülür', () => {
+  /* EPOCH "2026-10-27T04:14:31.558560" saat dilimi yazmaz; UTC'dir (TLE'deki 26300.17675415 ile aynı) */
+  expect(Uydu.donem(ISS).toISOString().slice(0, 19)).toBe('2026-10-27T04:14:31');
+});
+
+test('Tiangong geçişleri Skyfield ile ±3 sn / ±0,3° (aynı OMM, EarthSatellite.from_omm)', () => {
+  /* Skyfield 1.55 find_events(altitude=10°), 40,99 K 29,029 D 20 m */
+  const css = Uydu.gecisler(CSS, KONUM, new Date('2026-10-27T12:00:00Z'), 3);
+  [['2026-10-27T16:00:03Z', '2026-10-27T16:03:12Z', 68.0, '2026-10-27T16:06:22Z'],
+   ['2026-10-28T16:37:02Z', '2026-10-28T16:40:13Z', 80.7, '2026-10-28T16:43:24Z'],
+   ['2026-10-29T15:37:12Z', '2026-10-29T15:40:23Z', 88.4, '2026-10-29T15:43:34Z']].forEach(([d, t, el, b]) => {
+    const g = css.find(x => Math.abs(x.tepe.t - new Date(t)) < 120e3);
+    expect(g, t).toBeTruthy();
+    expect(sn(g.bas.t, d)).toBeLessThanOrEqual(3);
+    expect(sn(g.tepe.t, t)).toBeLessThanOrEqual(3);
+    expect(sn(g.bitis.t, b)).toBeLessThanOrEqual(3);
+    expect(Math.abs(g.tepe.alt - el)).toBeLessThanOrEqual(0.3);
+    expect(g.gorunur).toBe(true);
+  });
+  /* 27 Ekim 14:26 (Güneş +6°): gündüz, görünmez; 19:16 (Güneş −47°): gölgede, görünmez */
+  expect(css.find(x => Math.abs(x.tepe.t - new Date('2026-10-27T14:26:42Z')) < 120e3).gorunur).toBe(false);
+  expect(css.find(x => Math.abs(x.tepe.t - new Date('2026-10-27T19:16:50Z')) < 120e3).gorunur).toBe(false);
+});
+
+test('Gün dilimi kenarında kesilen geçiş ikinci kez listelenmez (inceleme bulgusu)', async () => {
+  /* 27 Ekim 04:20 UT'den başlayınca 28 Ekim 03:54–04:00 geçişi dilim sınırına (04:00) düşer */
+  const ls = await Uydu.gecislerParcali(ISS, KONUM, new Date('2026-10-27T04:20:00Z'), 5);
+  for (let i = 1; i < ls.length; i++) expect(ls[i].bas.t > ls[i - 1].bitis.t, ls[i].bas.t.toISOString()).toBe(true);
+  const g = ls.find(x => Math.abs(x.tepe.t - new Date('2026-10-28T03:57:30Z')) < 120e3);
+  expect(sn(g.bas.t, '2026-10-28T03:54:23Z')).toBeLessThanOrEqual(3);
+});
+
+test('Starlink dizisi: yalnız yeni, alçak ve toplu fırlatma seçilir', () => {
+  /* 2026-10-27 verisi: 2026-225 (ortanca 346 km, dağılmış), 2026-232 (350 km, dağılmış), 2026-242 (266 km, toplu) */
+  const d = Uydu.dizileriAyikla(SON30, new Date('2026-10-27T18:00:00Z'));
+  expect(d.map(x => x.kod)).toEqual(['2026-242']);
+  expect(d[0].adet).toBe(27);
+  expect(Math.abs(d[0].yukseklik - 266)).toBeLessThanOrEqual(2);
 });
 
 test('Gölgeden çıkış anı Skyfield (DE421) ile ±2 sn — Güneş yönü tarihin ekvatoruna döndürülmüş', () => {

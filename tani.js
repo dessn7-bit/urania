@@ -39,7 +39,7 @@
     try { const ks = await caches.keys(); sw = ks.filter(x => x.indexOf('urania-') === 0).join(', ') || 'önbellek yok'; } catch (e) { /* yok */ }
     const ar = window.UraniaAR ? window.UraniaAR.st : null;
     const defter = (U.oku('defter', []) || []).length;
-    const tle = U.oku('tle_iss', null);
+    const gpI = U.oku('gp_istasyon', null), gpD = U.oku('gp_dizi', null);
     const satir = [
       'URANIA TANI — ' + new Date().toISOString(),
       'Sürüm (önbellek): ' + sw,
@@ -57,7 +57,8 @@
       '',
       'SERVİSLER:',
       ...Object.keys(servisler).map(a => '  ' + a + ': ' + servisler[a].durum + ' · ' + servisler[a].zaman.slice(11, 19) + (servisler[a].ayrinti ? ' · ' + servisler[a].ayrinti : '')),
-      '  TLE dönemi: ' + (tle && window.Uydu ? Uydu.tleDonemi(tle.s1).toISOString().slice(0, 16) + ' · alındı ' + new Date(tle.alindi).toISOString().slice(0, 16) : '—'),
+      '  Uydu öğeleri: ' + (gpI ? gpI.ls.map(o => o.OBJECT_NAME + ' ' + String(o.EPOCH).slice(0, 16)).join(', ') + ' · alındı ' + new Date(gpI.alindi).toISOString().slice(0, 16) : '—') +
+        ' · Starlink dizisi: ' + (gpD ? (gpD.diziler.map(d => d.kod + ' (' + d.adet + ', ' + d.yukseklik + ' km)').join(', ') || 'yok') : '—'),
       '',
       'DEPO: ' + depo + ' · defter ' + defter + ' kayıt',
       '',

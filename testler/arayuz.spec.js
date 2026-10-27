@@ -2,6 +2,7 @@
 /* Arayüz testleri: her bölüm hatasız açılıyor, hesaplar beklenen sonucu veriyor,
    ayarlar kalıcı. Saat sabitlenir (2026-10-27 21:00 İstanbul) ki sonuçlar tekrarlanabilir olsun. */
 const { test, expect } = require('@playwright/test');
+const { celestrak } = require('./yardim');
 
 const SABIT_AN = new Date('2026-10-27T21:00:00+03:00');
 
@@ -12,7 +13,7 @@ test.beforeEach(async ({ page }) => {
   await page.clock.install({ time: SABIT_AN });
   /* Bulut tahmini ağa çıkmasın: bu dosyadaki testler gök hesaplarını sınar */
   await page.route('**/api.open-meteo.com/**', r => r.fulfill({ json: { hourly: { time: [], cloud_cover: [], cloud_cover_low: [], cloud_cover_mid: [], cloud_cover_high: [], relative_humidity_2m: [], wind_speed_10m: [] } } }));
-  await page.route('**/celestrak.org/**', r => r.fulfill({ contentType: 'text/plain', body: 'ISS (ZARYA)\n1 25544U 98067A   26300.17675415  .00005704  00000+0  11132-3 0  9993\n2 25544  51.6336   6.9404 0006948 314.9066  45.1358 15.49073103592213\n' }));
+  await celestrak(page);
 });
 test.afterEach(async ({ page }) => {
   expect(page.hatalar, 'konsol/sayfa hatası olmamalı').toEqual([]);
@@ -189,8 +190,8 @@ test('Takvime ekle: geçerli .ics dosyası iner', async ({ page }) => {
 
 test('ISS: görünür geçişler listelenir (ilk: 28 Ekim 05:21–05:22 TSİ)', async ({ page }) => {
   await page.goto('/index.html#gok');
-  const ilk = page.locator('#gkIss li').first();
-  await expect(ilk).toContainText('05:21–05:22'); // gölgeden çıkış 02:20:34 UT (Skyfield 02:20:35) – 02:21:52 UT
+  const ilk = page.locator('#gkIss li', { hasText: 'ISS ·' }).first();
+  await expect(ilk).toContainText('05:21–05:22', { timeout: 20000 }); // gölgeden çıkış 02:20:34 UT (Skyfield 02:20:35) – 02:21:52 UT
   await expect(ilk).toContainText("Dünya'nın gölgesinden çıkıp belirir");
   await expect(ilk).toContainText('28 Ekim');
   await expect(page.locator('#gkIssKaynak')).toContainText('CelesTrak');

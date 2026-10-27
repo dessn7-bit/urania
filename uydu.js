@@ -1,60 +1,154 @@
-/* uydu.js — Uluslararası Uzay İstasyonu (ISS) geçişleri.
-   Yörünge öğeleri (TLE) CelesTrak'tan; yörünge SGP4 ile (satellite.js, MIT) cihazda hesaplanır.
-   Görünür geçiş: istasyon ufkun ≥10° üstünde, Güneş ışığı alıyor ve gözlemcide Güneş −6°'nin
-   altında (gökyüzü yeterince karanlık). Gölge, silindir modeliyle hesaplanır. */
+/* uydu.js — Uzay istasyonları (ISS, Tiangong) ve yeni fırlatılmış Starlink dizileri.
+   Yörünge öğeleri CelesTrak'tan OMM/JSON olarak (TLE biçimi 99999'dan büyük katalog
+   numaralarını taşıyamıyor); yörünge SGP4 ile (satellite.js 6, MIT) cihazda hesaplanır.
+   Görünür geçiş: uydu ufkun ≥10° üstünde, Güneş ışığı alıyor ve gözlemcide Güneş −6°'nin
+   altında (gökyüzü yeterince karanlık; Heavens-Above da aynı eşiği kullanır). Gölge silindir modeliyle.
+   CelesTrak kuralları (gp-data-formats, 2026-06-23): veri 2 saatte bir güncellenir, aynı veri
+   ikinci kez indirilirse 403 döner, hatalar birikince IP engellenir. Bu yüzden: 12 saat önbellek,
+   200 dışı yanıtta 2 saat yeniden denememe. Kaynaklar: arastirma/uydu_kaynaklar.md */
 (function () {
   'use strict';
   const U = window.Urania, G = window.Gok;
   const DER = Math.PI / 180;
-  const TLE_URL = 'https://celestrak.org/NORAD/elements/gp.php?CATNR=25544&FORMAT=TLE';
-  const TLE_TAZE = 12 * 3600e3;          // CelesTrak'ı gereksiz yormamak için
-  const TLE_EN_ESKI = 14 * 86400e3;      // bundan eski öğelerle tahmin güvenilmez
+  const GP = 'https://celestrak.org/NORAD/elements/gp.php?';
+  const TAZE = 12 * 3600e3;              // önbellek bu kadar tazeyken yeniden indirme
+  const HATA_BEKLE = 2 * 3600e3;         // başarısız istekten sonra bu kadar deneme
+  const EN_ESKI = 14 * 86400e3;          // bundan eski öğelerle tahmin güvenilmez
   const YER_R = 6378.137;                // km, WGS-84 ekvator yarıçapı
-  const AB_KM = 149597870.7;
+  const MU = 398600.4418;                // km³/s², Dünya'nın kütleçekim parametresi (WGS-84)
 
-  /* Aynı anda birden çok istek CelesTrak'a tek istek olarak gider */
-  let tleSoz = null;
-  function tleGetir() {
-    if (!tleSoz) tleSoz = tleGetirAsil().finally(() => { tleSoz = null; });
-    return tleSoz;
+  /* İstasyonlar: CelesTrak "stations" grubu (20 nesne, ~8 KB). İçsel parlaklık Heavens-Above
+     (1000 km uzaklıkta, %50 aydınlık): ISS −1,8, Tiangong 0,0 kadir. */
+  try { U.sil('tle_iss'); } catch (e) { /* v10'un ISS TLE önbelleği: artık kullanılmıyor */ }
+
+  const ISTASYONLAR = [
+    { id: 'iss', norad: 25544, ad: 'Uzay İstasyonu (ISS)', kisa: 'ISS', icsel: -1.8 },
+    { id: 'css', norad: 48274, ad: 'Tiangong (Çin Uzay İstasyonu)', kisa: 'Tiangong', icsel: 0.0 }
+  ];
+
+  /* ---- İndirme (önbellekli, kurala uyan) ---- */
+  const sozler = {};
+  /* Depoya yazılamazsa (dolu, gizli sekme) önbellek ve hata zamanı bellekte de tutulur:
+     yoksa her çağrı CelesTrak'a yeniden gider ve IP engellenebilir. */
+  const bellek = {}, hataBellek = {};
+  function grupGetir(grup, anahtar, isle) {
+    if (!sozler[grup]) sozler[grup] = grupGetirAsil(grup, anahtar, isle).finally(() => { sozler[grup] = null; });
+    return sozler[grup];
   }
-  async function tleGetirAsil() {
-    const kayit = U.oku('tle_iss', null);
-    if (kayit && Date.now() - kayit.alindi < TLE_TAZE) return kayit;
+  async function grupGetirAsil(grup, anahtar, isle) {
+    const depodaki = U.oku(anahtar, null);
+    const kayit = [depodaki, bellek[anahtar]].filter(Boolean).sort((a, b) => b.alindi - a.alindi)[0] || null;
+    const hata = Math.max(U.oku(anahtar + '_hata', 0) || 0, hataBellek[anahtar] || 0);
+    const kullanilir = kayit && Date.now() - kayit.alindi < EN_ESKI;
+    if (kayit && Date.now() - kayit.alindi < TAZE) return kayit;
+    if (Date.now() - hata < HATA_BEKLE) {
+      if (kullanilir) return Object.assign({ eski: true }, kayit);
+      throw new Error('CelesTrak bir süre önce yanıt vermedi; 2 saat sonra yeniden denenecek');
+    }
+    const ad = 'CelesTrak (' + grup + ')';
     try {
       const ctl = new AbortController();
-      const zs = setTimeout(() => ctl.abort(), 8000);
-      const r = await fetch(TLE_URL, { signal: ctl.signal });
+      const zs = setTimeout(() => ctl.abort(), 10000);
+      const r = await fetch(GP + 'GROUP=' + grup + '&FORMAT=json', { signal: ctl.signal });
       clearTimeout(zs);
-      if (!r.ok) throw new Error('HTTP ' + r.status);
-      const satir = (await r.text()).split(/\r?\n/).map(s => s.trim()).filter(Boolean);
-      const s1 = satir.find(s => s.startsWith('1 25544')), s2 = satir.find(s => s.startsWith('2 25544'));
-      if (!s1 || !s2) throw new Error('TLE çözülemedi');
-      const yeni = { alindi: Date.now(), s1, s2 };
-      U.yaz('tle_iss', yeni);
-      if (window.Tani) Tani.servis('CelesTrak (ISS)', 'tamam');
+      if (r.status !== 200) throw new Error('HTTP ' + r.status);
+      const veri = await r.json();
+      if (!Array.isArray(veri)) throw new Error('beklenmeyen yanıt');
+      const yeni = Object.assign({ alindi: Date.now() }, isle(veri));
+      bellek[anahtar] = yeni;
+      U.yaz(anahtar, yeni);
+      if (window.Tani) Tani.servis(ad, 'tamam');
       return yeni;
     } catch (e) {
-      if (window.Tani) Tani.servis('CelesTrak (ISS)', 'hata', e.message);
-      if (kayit && Date.now() - kayit.alindi < TLE_EN_ESKI) return Object.assign({ eski: true }, kayit);
+      hataBellek[anahtar] = Date.now();
+      U.yaz(anahtar + '_hata', Date.now());
+      if (window.Tani) Tani.servis(ad, 'hata', e.message);
+      if (kullanilir) return Object.assign({ eski: true }, kayit);
       throw e;
     }
   }
 
-  /* TLE'nin kendi dönemi (epoch): ilk satır, 19–32. karakterler, YYDDD.DDDDDDDD */
-  function tleDonemi(s1) {
-    const yy = Number(s1.slice(18, 20)), gun = Number(s1.slice(20, 32));
-    const yil = yy < 57 ? 2000 + yy : 1900 + yy;
-    return new Date(Date.UTC(yil, 0, 1) + (gun - 1) * 86400e3);
+  /* OMM'den ortalama yükseklik (km): a = (μ/n²)^(1/3) − R */
+  function yukseklik(omm) {
+    const n = omm.MEAN_MOTION * 2 * Math.PI / 86400;
+    return Math.cbrt(MU / (n * n)) - YER_R;
   }
 
-  function durumHesapla(sat, gd, t) {
+  /* Yeni Starlink dizileri: "last-30-days" grubundan (~120 KB). Bir fırlatmanın uyduları
+     ≥10 tane, ortanca yükseklikleri 357 km'nin altında (Mallama ve ark. 2024: bu yükseklikte
+     ortalama 2,7 kadir; yükseldikten sonra 6,5) ve hâlâ birbirine yakınsa (yörüngede
+     ortanca açıklık ≤25°) "dizi" sayılır. Temsilci: yüksekliği ortanca olan uydu. */
+  const DIZI_YUKSEKLIK = 357, DIZI_ACIKLIK = 25;
+  function dizileriAyikla(veri, simdi) {
+    const gruplar = {};
+    veri.forEach(o => {
+      if (!/^STARLINK/.test(o.OBJECT_NAME || '') || !o.OBJECT_ID) return;
+      (gruplar[o.OBJECT_ID.slice(0, 8)] = gruplar[o.OBJECT_ID.slice(0, 8)] || []).push(o);
+    });
+    const t = simdi || new Date();
+    const diziler = [];
+    Object.keys(gruplar).forEach(kod => {
+      const ls = gruplar[kod];
+      if (ls.length < 10) return;
+      const yuk = ls.map(yukseklik).sort((a, b) => a - b);
+      const orta = yuk[Math.floor(yuk.length / 2)];
+      if (orta >= DIZI_YUKSEKLIK) return;
+      /* Aynı anda konumlar: ağırlık merkezinden ortanca açı */
+      const p = ls.map(o => { try { const r = satellite.propagate(satellite.json2satrec(o), t); return r && r.position; } catch (h) { return null; } }).filter(Boolean);
+      if (p.length < 10) return;
+      const m = p.reduce((a, v) => [a[0] + v.x, a[1] + v.y, a[2] + v.z], [0, 0, 0]);
+      const mn = Math.hypot(m[0], m[1], m[2]);
+      const acilar = p.map(v => Math.acos(Math.max(-1, Math.min(1, (v.x * m[0] + v.y * m[1] + v.z * m[2]) / mn / Math.hypot(v.x, v.y, v.z)))) / DER).sort((a, b) => a - b);
+      const acik = acilar[Math.floor(acilar.length / 2)];
+      if (acik > DIZI_ACIKLIK) return;
+      const temsil = ls.slice().sort((a, b) => Math.abs(yukseklik(a) - orta) - Math.abs(yukseklik(b) - orta))[0];
+      const periyotDk = 1440 / temsil.MEAN_MOTION;
+      diziler.push({ kod, adet: ls.length, yukseklik: Math.round(orta), aralikDk: Math.round(acilar[acilar.length - 1] / 360 * periyotDk * 2), omm: temsil });
+    });
+    return diziler;
+  }
+
+  /* Tüm uydular: [{id, ad, kisa, omm, alindi, eski, dizi?}] — biri alınamazsa ötekiler yine gelir */
+  async function uydular() {
+    const [ist, yeni] = await Promise.allSettled([
+      grupGetir('stations', 'gp_istasyon', v => ({ ls: v.filter(o => ISTASYONLAR.some(s => s.norad === o.NORAD_CAT_ID)) })),
+      grupGetir('last-30-days', 'gp_dizi', v => ({ diziler: dizileriAyikla(v) }))
+    ]);
+    const ls = [];
+    if (ist.status === 'fulfilled') {
+      ISTASYONLAR.forEach(s => {
+        const omm = ist.value.ls.find(o => o.NORAD_CAT_ID === s.norad);
+        if (omm) ls.push(Object.assign({ omm, alindi: ist.value.alindi, eski: !!ist.value.eski }, s));
+      });
+    }
+    if (yeni.status === 'fulfilled') {
+      yeni.value.diziler.forEach(d => ls.push({ id: 'dizi-' + d.kod, ad: 'Starlink dizisi (' + d.kod + ' fırlatması)', kisa: 'Starlink', omm: d.omm,
+        dizi: { adet: d.adet, yukseklik: d.yukseklik, aralikDk: d.aralikDk }, alindi: yeni.value.alindi, eski: !!yeni.value.eski }));
+    }
+    if (!ls.length) throw (ist.reason || new Error('yörünge verisi yok'));
+    return ls;
+  }
+
+  /* OMM EPOCH "2026-10-27T04:14:31.558560" (UTC, saat dilimi yazılmaz) */
+  function donem(uydu) {
+    const e = String(uydu.omm.EPOCH);
+    return new Date(/Z$/.test(e) ? e : e + 'Z');
+  }
+
+  const satrecler = {};
+  function satrec(uydu) {
+    const k = uydu.id + '|' + uydu.omm.EPOCH;
+    return satrecler[k] || (satrecler[k] = satellite.json2satrec(uydu.omm));
+  }
+
+  function durumHesapla(sat, gd, t, yalnizYon) {
     const pv = satellite.propagate(sat, t);
     if (!pv || !pv.position) return null;
     const gmst = satellite.gstime(t);
     const la = satellite.ecfToLookAngles(gd, satellite.eciToEcf(pv.position, gmst));
-    /* Güneş ışığı: Güneş yönüne izdüşüm ve gölge silindirine uzaklık */
-    /* Güneş yönü J2000'den tarihin ekvatoruna döndürülür (SGP4 konumu TEME: tarihin ekvatoru) */
+    if (yalnizYon) return { t, alt: la.elevation / DER, az: la.azimuth / DER };
+    /* Güneş ışığı: Güneş yönüne izdüşüm ve gölge silindirine uzaklık.
+       Güneş yönü J2000'den tarihin ekvatoruna döndürülür (SGP4 konumu TEME: tarihin ekvatoru) */
     const g = G.A.RotateVector(G.A.Rotation_EQJ_EQD(t), G.A.GeoVector('Sun', t, true));
     const gl = Math.hypot(g.x, g.y, g.z);
     const s = [g.x / gl, g.y / gl, g.z / gl];
@@ -64,18 +158,19 @@
     const isikli = izd > 0 || dik > YER_R;
     return { t, alt: la.elevation / DER, az: la.azimuth / DER, isikli, uzaklik: la.rangeSat };
   }
+  function yerKonum(konum) { return { latitude: konum.enlem * DER, longitude: konum.boylam * DER, height: (konum.yukseklik || 0) / 1000 }; }
 
   /* Gelecek `gun` gün içindeki geçişler (ufkun 10° üstü) */
-  function gecisler(tle, konum, bas, gun) {
-    const sat = satellite.twoline2satrec(tle.s1, tle.s2);
-    const gd = { latitude: konum.enlem * DER, longitude: konum.boylam * DER, height: (konum.yukseklik || 0) / 1000 };
+  function gecisler(uydu, konum, bas, gun) {
+    const sat = satrec(uydu);
+    const gd = yerKonum(konum);
     const gzl = G.gozlemci(konum.enlem, konum.boylam, konum.yukseklik || 0);
     const ESIK = 10, ADIM = 20e3;
     const son = bas.getTime() + gun * 86400e3;
     const ls = [];
     let gecis = null;
     for (let ms = bas.getTime(); ms <= son; ms += ADIM) {
-      const d = durumHesapla(sat, gd, new Date(ms));
+      const d = durumHesapla(sat, gd, new Date(ms), true); // kaba tarama: gölge hesabı gereksiz
       if (!d) continue;
       if (d.alt >= ESIK) {
         if (!gecis) gecis = { noktalar: [] };
@@ -95,7 +190,6 @@
       /* Alacakaranlık tanımı geometrik yüksekliğe göredir (kırılma eklenmez) */
       const karanlik = d => { const e = G.A.Equator('Sun', d.t, gzl, true, true); return G.A.Horizon(d.t, gzl, e.ra, e.dec).altitude < -6; };
       const gercekGorunen = tumu.filter(d => d.isikli && karanlik(d));
-      /* Görünür bölümün neden başladığı/bittiği: ufuk, Dünya'nın gölgesi ya da gök aydınlığı */
       let basNeden = null, sonNeden = null;
       if (gercekGorunen.length) {
         const i = tumu.indexOf(gercekGorunen[0]), j = tumu.indexOf(gercekGorunen[gercekGorunen.length - 1]);
@@ -103,7 +197,7 @@
         sonNeden = j === tumu.length - 1 ? 'ufuk' : (!tumu[j + 1].isikli ? 'golge' : 'aydinlik');
       }
       return {
-        basNeden, sonNeden,
+        uydu, basNeden, sonNeden,
         bas: tumu[0], tepe, bitis: tumu[tumu.length - 1],
         gorunur: gercekGorunen.length > 0,
         gBas: gercekGorunen[0] || null, gBit: gercekGorunen[gercekGorunen.length - 1] || null,
@@ -112,37 +206,36 @@
     }).filter(Boolean);
   }
 
-  /* Şu anki konum ve (60 dk içinde başlayan ya da süren) geçişin yolu */
-  const satrecOnbellek = {};
-  function satrec(tle) { return satrecOnbellek[tle.s1] || (satrecOnbellek[tle.s1] = satellite.twoline2satrec(tle.s1, tle.s2)); }
-  function anlik(tle, konum, t) {
-    const gd = { latitude: konum.enlem * DER, longitude: konum.boylam * DER, height: (konum.yukseklik || 0) / 1000 };
-    return durumHesapla(satrec(tle), gd, t);
-  }
-  function yakinGecis(tle, konum, simdi) {
-    const ls = gecisler(tle, konum, new Date(simdi.getTime() - 15 * 60e3), 75 / 1440);
+  function anlik(uydu, konum, t) { return durumHesapla(satrec(uydu), yerKonum(konum), t); }
+
+  /* 60 dk içinde başlayan ya da süren geçiş ve yolu (10 sn adım, tam dakikaya hizalı) */
+  function yakinGecis(uydu, konum, simdi) {
+    const ls = gecisler(uydu, konum, new Date(simdi.getTime() - 15 * 60e3), 75 / 1440);
     const g = ls.find(x => x.bitis.t > simdi && x.bas.t < new Date(simdi.getTime() + 60 * 60e3));
     if (!g) return null;
-    const gd = { latitude: konum.enlem * DER, longitude: konum.boylam * DER, height: (konum.yukseklik || 0) / 1000 };
-    const yol = [];
-    /* 10 sn'lik adımlar tam dakikaya hizalı: dakika işaretleri yolda doğru yere düşsün */
+    const gd = yerKonum(konum), yol = [];
     for (let ms = Math.floor((g.bas.t.getTime() - 60e3) / 10e3) * 10e3; ms <= g.bitis.t.getTime() + 60e3; ms += 10e3) {
-      const d = durumHesapla(satrec(tle), gd, new Date(ms)); if (d) yol.push(d);
+      const d = durumHesapla(satrec(uydu), gd, new Date(ms)); if (d) yol.push(d);
     }
     return Object.assign({ yol }, g);
   }
+
   /* Ana iş parçacığını kilitlememek için gün gün hesap; aralarda tarayıcıya nefes aldırır.
      Gün sınırına denk gelen geçişler için 20 dk örtüşme, tepe anına göre tekilleştirme. */
-  async function gecislerParcali(tle, konum, bas, gun) {
+  async function gecislerParcali(uydu, konum, bas, gun) {
     const ls = [];
     for (let d = 0; d < gun; d++) {
       const b = new Date(bas.getTime() + d * 86400e3 - (d ? 20 * 60e3 : 0));
-      gecisler(tle, konum, b, (d ? 20 / 1440 : 0) + 1).forEach(g => {
-        if (!ls.some(x => Math.abs(x.tepe.t - g.tepe.t) < 120e3)) ls.push(g);
+      /* Dilim kenarında kesilmiş geçiş, komşu dilimdeki tamamıyla örtüşür: uzun olan kalır */
+      gecisler(uydu, konum, b, (d ? 20 / 1440 : 0) + 1).forEach(g => {
+        const i = ls.findIndex(x => x.bas.t <= g.bitis.t && g.bas.t <= x.bitis.t);
+        if (i < 0) ls.push(g);
+        else if (g.bitis.t - g.bas.t > ls[i].bitis.t - ls[i].bas.t) ls[i] = g;
       });
       await new Promise(r => setTimeout(r, 0));
     }
     return ls.sort((a, b) => a.tepe.t - b.tepe.t);
   }
-  window.Uydu = { tleGetir, tleDonemi, gecisler, gecislerParcali, durumHesapla, anlik, yakinGecis };
+
+  window.Uydu = { ISTASYONLAR, uydular, dizileriAyikla, yukseklik, donem, gecisler, gecislerParcali, durumHesapla, anlik, yakinGecis };
 })();

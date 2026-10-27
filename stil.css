@@ -332,3 +332,39 @@ label.dugme { cursor: pointer; }
 .gorunmez { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .tani-pusula { font: 500 15px/1.5 var(--sans); background: var(--levha); padding: 10px 12px; border-radius: 8px; min-height: 48px; }
 .tani-rapor { white-space: pre-wrap; word-break: break-word; font: 400 12px/1.5 ui-monospace, Menlo, Consolas, monospace; background: var(--levha); padding: 12px; border-radius: 8px; margin-top: 12px; }
+
+/* ---- Bu gecenin planı (saat çizelgesi) ---- */
+.plan { list-style: none; margin: 8px 0 10px; padding: 0; border-left: 2px solid var(--pirinc-soluk); }
+.plan > li { position: relative; display: grid; grid-template-columns: 52px 1fr; gap: 2px 12px; padding: 10px 0 10px 14px; }
+.plan > li::before { content: ''; position: absolute; left: -6px; top: 16px; width: 10px; height: 10px; border-radius: 50%; background: var(--gece); border: 2px solid var(--pirinc); }
+.plan > li.plan-uydu::before, .plan > li.plan-ortme::before, .plan > li.plan-algol::before, .plan > li.plan-meteor::before { background: var(--pirinc); }
+.plan > li.plan-not::before { display: none; }
+.plan .saat { font: 600 16px/1.4 var(--sans); font-variant-numeric: tabular-nums; color: var(--pirinc); }
+.plan .ad { font-weight: 600; font-size: 16px; }
+.plan .alt { grid-column: 2; color: var(--soluk); font-size: 14px; }
+.plan > li.plan-not .alt { grid-column: 1 / -1; color: var(--parsomen); }
+.plan .bos { grid-column: 1 / -1; }
+.liste > li.kaynak-satir { display: block; border-top: 0; padding-top: 6px; }
+
+/* ---- Sesli ders ---- */
+.dinle { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin: 4px 0 18px; padding: 10px 0; border-top: 1px solid var(--cizgi); border-bottom: 1px solid var(--cizgi); }
+.dinle .dugme { min-height: 36px; padding: 6px 12px; font: 500 14px/1.2 var(--sans); }
+.dinle #dsOynat { min-width: 104px; }
+.dinle #dsSesDurum { flex-basis: 100%; }
+.dinle #dsSesDurum:empty { display: none; }
+.ders .okunuyor { background: var(--pirinc-soluk); border-radius: 4px; box-shadow: 0 0 0 4px var(--pirinc-soluk); transition: background .2s; }
+
+/* ---- Tekrar kartları ---- */
+.kart-ozet { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 12px 0 20px; padding: 14px 16px; border: 1px solid var(--pirinc-soluk); border-radius: 10px; background: var(--levha); }
+.kart-ozet b { display: block; font-size: 16px; }
+.kart-ozet span { font-size: 14px; color: var(--soluk); }
+.kart { margin: 14px 0 16px; padding: 22px 20px; border: 1px solid var(--pirinc); border-radius: 12px; background: var(--levha); min-height: 160px; }
+.kart-on { font: 500 20px/1.45 var(--serif); margin: 0; }
+.kart-arka { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--cizgi); font: 400 17px/1.55 var(--serif); }
+.kart-arka p { margin-bottom: 6px; }
+.kart-dugme .dugme { flex: 1; min-height: 46px; }
+.kutu-sira { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 12px 0; }
+.kutu-sira div { padding: 10px; border: 1px solid var(--cizgi); border-radius: 8px; text-align: center; }
+.kutu-sira b { display: block; font: 600 22px/1.2 var(--serif); color: var(--pirinc); }
+.kutu-sira span { font-size: 12px; color: var(--soluk); }
+.kart-dugme .dugme, .kart-ozet .dugme { font-family: var(--sans); }

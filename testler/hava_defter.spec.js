@@ -2,6 +2,7 @@
 /* Bulut tahmini ve gözlem defteri testleri. Open-Meteo ağdan çağrılmaz: istek yakalanır,
    API'nin gerçek biçiminde (timeformat=unixtime, timezone=GMT) sahte yanıt döner. */
 const { test, expect } = require('@playwright/test');
+const { celestrak } = require('./yardim');
 const path = require('path');
 const fs = require('fs');
 const os = require('os');
@@ -23,7 +24,7 @@ function sahteHava(bulutFn, yagisFn) {
 }
 
 test.beforeEach(async ({ page }) => {
-  await page.route('**/celestrak.org/**', r => r.fulfill({ status: 503, body: '' }));
+  await celestrak(page, { hata: 503 });
   page.hatalar = [];
   page.on('pageerror', e => page.hatalar.push(e.message));
   await page.clock.install({ time: SABIT_AN });

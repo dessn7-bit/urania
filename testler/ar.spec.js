@@ -4,6 +4,7 @@
    Pusula manyetik kuzeye göre kabul edilir; Fetih Mah. (Ataşehir) için WMM-2025 sapması +6,09° (Kadıköy +6,08°) (NOAA
    hesaplayıcısıyla aynı: ngdc.noaa.gov/geomag-web, 2026-10-27) eklenir. */
 const { test, expect } = require('@playwright/test');
+const { celestrak } = require('./yardim');
 
 const SABIT_AN = new Date('2026-10-27T21:00:00+03:00');
 
@@ -113,14 +114,14 @@ test.describe('ISS', () => {
   test('Geçiş sırasında telefonu ISS\'e tutunca nişangâhta görünür; yolu çizilir', async ({ page }) => {
     /* 2026-10-30 03:58:00 UT, Fetih Mah.: ISS yükseklik 33,92°, azimut 312,77°, ışıkta
        (uydu.js ile Skyfield aynı değeri verdi). */
-    await page.route('**/celestrak.org/**', r => r.fulfill({ contentType: 'text/plain', body: 'ISS (ZARYA)\n1 25544U 98067A   26300.17675415  .00005704  00000+0  11132-3 0  9993\n2 25544  51.6336   6.9404 0006948 314.9066  45.1358 15.49073103592213\n' }));
+    await celestrak(page);
     await page.clock.setFixedTime(new Date('2026-10-30T03:58:00Z'));
     await page.goto('/index.html#ar');
     await page.waitForTimeout(600);
     await yonVer(page, ((6.09 - 312.77) % 360 + 360) % 360, 90 + 33.92, 0);
     await expect(page.locator('#arMerkez b')).toHaveText('Uzay İstasyonu (ISS)');
     await expect(page.locator('#arMerkez')).toContainText('Güneş ışığı alıyor');
-    const yol = await page.evaluate(() => window.UraniaAR.st.issGecis && window.UraniaAR.st.issGecis.yol.length);
+    const yol = await page.evaluate(() => window.UraniaAR.st.uyduGecis && window.UraniaAR.st.uyduGecis[0] && window.UraniaAR.st.uyduGecis[0].yol.length);
     expect(yol).toBeGreaterThan(20);
   });
 });
