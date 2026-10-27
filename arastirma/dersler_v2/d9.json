@@ -2,7 +2,7 @@
   "id": "d9",
   "unite": "gunes_sistemi",
   "baslik": "Güneş Sistemi'nin Gezegenleri: Sekiz Dünya, İki Aile",
-  "ozet": "Sekiz gezegen iki aileye ayrılır: küçük, yoğun, kayalık karasal gezegenler ve katı yüzeyi olmayan dev gezegenler. Bu derste gezegenleri tek tek kütle, yoğunluk, dönme süresi ve uydularıyla tanıyacak, aralarındaki boşluğu astronomik birimle kavrayacak ve Güneş Sistemi'nin bir gaz ve toz bulutundan nasıl doğduğunu göreceksin.",
+  "ozet": "Sekiz gezegen iki aileye ayrılır: küçük, yoğun, kayalık karasal gezegenler ve katı yüzeyi olmayan dev gezegenler. Bu derste gezegenleri tek tek kütle, yoğunluk, dönme süresi, atmosfer, uydular ve onları ziyaret eden uzay araçlarıyla tanıyacak, aralarındaki boşluğu astronomik birimle kavrayacak ve Güneş Sistemi'nin bir gaz ve toz bulutundan nasıl doğduğunu göreceksin.",
   "on_bilgi": ["d3"],
   "bolumler": [
     {
@@ -193,6 +193,9 @@
     { "soru": "Merkür ile Mars'ın yüzey çekimi neredeyse aynı (3,70 ve 3,71 m/s²). Mars çok daha büyük olduğuna göre bu nasıl olur?", "cevap": "Yüzey çekimi hem kütleye hem yarıçapa bağlıdır. Merkür daha küçüktür ama çok daha yoğundur (5,43'e karşı 3,93 g/cm³); yüzeyi merkezine daha yakın olduğu için çekim büyür. İki etki birbirini dengeler ve sonuç neredeyse aynı çıkar." },
     { "soru": "Gün batımından sonra gökte çok parlak bir 'yıldız' görüyorsun ve parlaklığı yaklaşık −4 kadir. Bu ne olabilir, nasıl emin olursun?", "cevap": "Venüs olabilir; Wikipedia'ya göre −4,92 kadire kadar parlar. Jüpiter en fazla −2,94, en parlak yıldız Sirius −1,46 kadire ulaştığı için −4 civarındaki bir nokta büyük olasılıkla Venüs'tür. Emin olmak için uygulamanın gökyüzü haritasında o yönde bir gezegen olup olmadığına bakabilir, birkaç gece izleyip yıldızlara göre yer değiştirip değiştirmediğini görebilirsin. Dürbünle bakacaksan Güneş'in tamamen battığından emin ol." },
     { "soru": "Bir aracın Mars'tan kalkması mı yoksa Dünya'dan kalkması mı daha kolaydır? Sayıyla gerekçelendir.", "cevap": "Mars'tan. Kurtulma hızı Mars'ta 5,03 km/s, Dünya'da 11,19 km/s; yani Mars'tan kurtulmak yaklaşık 2,2 kat daha düşük hız ister." },
+    { "soru": "JPL'nin tablosunda Venüs'ün dönme süresi −243,018 gün, Uranüs'ünkü −0,71833 gün. Eksi işaret ne anlatıyor?", "cevap": "İki gezegenin çoğu gezegenin tersi yönde döndüğünü. NASA Venüs'ün doğudan batıya döndüğünü, Uranüs'ün de ters yönde dönen iki gezegenden biri olduğunu söyler; tabloda eksi işaretli gezegenler de tam bu ikisidir. Süre eksi olamaz; işaret yalnızca yönü gösterir." },
+    { "soru": "Neptün neden 'önce hesapla bulunan gezegen' diye anılabilir?", "cevap": "Uranüs'ün yörüngesindeki düzensizlikler Newton'un kütleçekim yasasıyla tam açıklanamıyordu. Le Verrier ve Adams bunlara yol açacak daha uzak bir gezegenin yerini birbirinden bağımsız hesapladı; Galle, Le Verrier'nin tahminini alıp 23–24 Eylül 1846 gecesi Neptün'ü teleskopla buldu." },
+    { "soru": "Venüs ile Mars'ın atmosferi aynı gazdan, karbondioksitten yapılmıştır. Yüzey basınçlarını karşılaştır.", "cevap": "Venüs 92 bar = 92.000 milibar, Mars ortalama 6,36 milibar. 92.000 / 6,36 ≈ 14.500. Venüs'ün yüzey basıncı Mars'ınkinin yaklaşık 14.500 katıdır; Dünya'nın 1014 milibarı ikisinin arasında kalır." },
     { "soru": "Güneş Sistemi'ndeki en yaşlı malzemenin yaşı nedir ve bu sayı Güneş'in yaşıyla nasıl ilişkilidir?", "cevap": "Radyometrik yaş 4,567 milyar yıldır. Güneş yaklaşık 4,6 milyar yıl önce bir moleküler bulut parçasının çökmesiyle oluştu; en yaşlı malzemenin yaşı bu tarihle uyumludur, çünkü gezegenler ve küçük cisimler Güneş'le aynı çöküşten doğan diskten oluştu." }
   ],
   "kaynaklar": [
@@ -217,6 +220,31 @@
     { "ad": "Wikipedia – Sun (oluşum ve yaş)", "url": "https://en.wikipedia.org/wiki/Sun" },
     { "ad": "Wikipedia – Protostar", "url": "https://en.wikipedia.org/wiki/Protostar" },
     { "ad": "Wikipedia – Apparent magnitude", "url": "https://en.wikipedia.org/wiki/Apparent_magnitude" },
-    { "ad": "Wikipedia – Binoculars (Astronomical)", "url": "https://en.wikipedia.org/wiki/Binoculars" }
+    { "ad": "Wikipedia – Binoculars (Astronomical)", "url": "https://en.wikipedia.org/wiki/Binoculars" },
+    { "ad": "NASA NSSDCA – Venus Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/venusfact.html" },
+    { "ad": "NASA NSSDCA – Mars Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html" },
+    { "ad": "NASA NSSDCA – Uranus Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/uranusfact.html" },
+    { "ad": "NASA – Venus Lithograph", "url": "https://www.nasa.gov/sites/default/files/files/Venus_Lithograph.pdf" },
+    { "ad": "NASA NSSDCA – Magellan", "url": "https://nssdc.gsfc.nasa.gov/planetary/magellan.html" },
+    { "ad": "NASA Science – From the First to the Last (MESSENGER)", "url": "https://science.nasa.gov/resource/from-the-first-to-the-last/" },
+    { "ad": "NASA Science – Uranus Facts", "url": "https://science.nasa.gov/Uranus/facts" },
+    { "ad": "NASA – 175 Years Ago: Astronomers Discover Neptune", "url": "https://www.nasa.gov/history/175-years-ago-astronomers-discover-neptune-the-eighth-planet" },
+    { "ad": "NASA – Neptune Lithograph", "url": "https://www.nasa.gov/sites/default/files/files/Neptune_Lithograph_h.pdf" },
+    { "ad": "NASA Science – Voyager 2", "url": "https://science.nasa.gov/mission/voyager/voyager-2" },
+    { "ad": "NASA Science – Jupiter", "url": "https://science.nasa.gov/jupiter" },
+    { "ad": "NASA – Moons of Jupiter Lithograph", "url": "https://www.nasa.gov/wp-content/uploads/2009/12/moons_of_jupiter_lithograph.pdf" },
+    { "ad": "NASA Photojournal – Jupiter's Great Red Spot Swallows Earth", "url": "https://science.nasa.gov/photojournal/jupiters-great-red-spot-swallows-earth" },
+    { "ad": "Mission Juno (SwRI) – Great Red Spot", "url": "https://www.missionjuno.swri.edu/key-terms/great-red-spot" },
+    { "ad": "NASA JPL – NASA's Juno Spacecraft in Orbit Around Mighty Jupiter", "url": "https://www.jpl.nasa.gov/news/nasas-juno-spacecraft-in-orbit-around-mighty-jupiter/" },
+    { "ad": "NASA Science – Titan: Facts", "url": "https://science.nasa.gov/saturn/moons/titan/facts/" },
+    { "ad": "ESA – Facts about Titan", "url": "https://esa.int/Our_Activities/Space_Science/Cassini-Huygens/Facts_about_Titan" },
+    { "ad": "ESA – Countdown to Cassini's Grand Finale", "url": "https://www.esa.int/Science_Exploration/Space_Science/Cassini-Huygens/Countdown_to_Cassini_s_Grand_Finale" },
+    { "ad": "ESA – Facts about Mars", "url": "https://www.esa.int/Science_Exploration/Space_Science/Mars_Express/Facts_about_Mars" },
+    { "ad": "Wikipedia – Atmosphere of Venus", "url": "https://en.wikipedia.org/wiki/Atmosphere_of_Venus" },
+    { "ad": "Wikipedia – Neptune", "url": "https://en.wikipedia.org/wiki/Neptune" },
+    { "ad": "Wikipedia – MESSENGER", "url": "https://en.wikipedia.org/wiki/MESSENGER" },
+    { "ad": "Wikipedia – Galileo (spacecraft)", "url": "https://en.wikipedia.org/wiki/Galileo_(spacecraft)" },
+    { "ad": "Wikipedia – Cassini–Huygens", "url": "https://en.wikipedia.org/wiki/Cassini%E2%80%93Huygens" },
+    { "ad": "Wikipedia – Galilean moons", "url": "https://en.wikipedia.org/wiki/Galilean_moons" }
   ]
 }
