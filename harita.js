@@ -128,7 +128,8 @@
         const h = G.ufkaCevir(m, yildizV[i]);
         if (h.alt < 0) return;
         const p = ekran(h.alt, h.az);
-        const r = Math.max(0.55, (limit + 1.2 - s[2]) * 0.62 * olc);
+        /* Nokta boyu yalnız yıldızın kadirine bağlı (sınır 1,5'e çekilince parlak yıldızlar küçülmesin) */
+        const r = Math.max(0.55, (7.2 - s[2]) * 0.62 * olc);
         ctx.beginPath(); ctx.arc(p.x, p.y, r, 0, Math.PI * 2);
         ctx.fillStyle = kir ? c.yildiz : (bvRenk(s[3]) || c.yildiz);
         ctx.fill();
@@ -136,7 +137,7 @@
         if (ad && s[2] < 1.6) {
           etiket(ad, p.x, p.y, '500 ' + Math.max(10, W / 50) + 'px Plex, system-ui, sans-serif', kir ? c.soluk : 'rgba(233,226,208,.7)', 2 - s[2] / 2, r + 3);
         }
-        if (s[2] < 3.5) isabet.push({ x: p.x, y: p.y, oncelik: 1, bilgi: '<b>' + Urania.kacis(ad || 'Yıldız') + '</b> · ' + Urania.kadir(s[2]) + ' kadir · ' + Urania.derece(h.alt) + ' yükseklik, ' + G.YON_UZUN[G.yon(h.az)] });
+        if (s[2] < 3.5 || ad) isabet.push({ x: p.x, y: p.y, oncelik: 1, bilgi: '<b>' + Urania.kacis(ad || 'Yıldız') + '</b> · ' + Urania.kadir(s[2]) + ' kadir · ' + Urania.derece(h.alt) + ' yükseklik, ' + G.YON_UZUN[G.yon(h.az)] });
       });
 
       /* Dürbün hedefleri */
@@ -199,7 +200,7 @@
         ctx.beginPath(); ctx.arc(p.x, p.y, 4.5, 0, Math.PI * 2);
         ctx.strokeStyle = uRenk; ctx.lineWidth = 1.6; ctx.stroke();
         if (u.isikli) { ctx.fillStyle = uRenk; ctx.fill(); }
-        isabet.push({ x: p.x, y: p.y, oncelik: 6, bilgi: '<b>' + Urania.kacis(u.ad) + '</b> · ' + (u.isikli ? 'Güneş ışığı alıyor' : 'gölgede, görünmez') + ' · ' + Urania.derece(u.alt) + ' yükseklik' });
+        isabet.push({ x: p.x, y: p.y, oncelik: u.isikli ? 6 : 0, bilgi: '<b>' + Urania.kacis(u.ad) + '</b> · ' + (u.isikli ? 'Güneş ışığı alıyor' : 'gölgede, görünmez') + ' · ' + Urania.derece(u.alt) + ' yükseklik' });
       });
 
       /* Güneş (gündüzse) */
@@ -213,8 +214,16 @@
       /* Ay: evresiyle, aydınlık yüzü Güneş'e dönük */
       if (d.ay.alt > -1) {
         const p = ekran(d.ay.alt, d.ay.az);
-        const gs = ekran(d.gunes.alt, d.gunes.az);
-        const yon = Math.atan2(gs.y - p.y, gs.x - p.x);
+        /* Aydınlık yüzün yönü: Ay'dan Güneş'e giden büyük çember boyunca 0,3° ötedeki noktanın ekrandaki yönü.
+           (Güneş'in kendi izdüşümüne çekilen düz çizgi, Güneş ufkun çok altındayken yanlış yön verir.) */
+        const v = (alt, az) => { const a = alt * Math.PI / 180, z = az * Math.PI / 180; return [Math.cos(a) * Math.sin(z), Math.cos(a) * Math.cos(z), Math.sin(a)]; };
+        const mv = v(d.ay.alt, d.ay.az), sv = v(d.gunes.alt, d.gunes.az);
+        const ic = mv[0] * sv[0] + mv[1] * sv[1] + mv[2] * sv[2];
+        let tv = [sv[0] - ic * mv[0], sv[1] - ic * mv[1], sv[2] - ic * mv[2]];
+        const tn = Math.hypot(tv[0], tv[1], tv[2]) || 1; tv = tv.map(x => x / tn);
+        const dl = 0.3 * Math.PI / 180, qv = [0, 1, 2].map(i => mv[i] * Math.cos(dl) + tv[i] * Math.sin(dl));
+        const q = ekran(Math.asin(Math.max(-1, Math.min(1, qv[2]))) * 180 / Math.PI, (Math.atan2(qv[0], qv[1]) * 180 / Math.PI + 360) % 360);
+        const yon = Math.atan2(q.y - p.y, q.x - p.x);
         const r = 8 * Math.max(olc, .9);
         ctx.save();
         ctx.translate(p.x, p.y); ctx.rotate(yon);
@@ -290,16 +299,18 @@
     }
 
     function tikla(ev) {
-      const b = canvas.getBoundingClientRect();
-      const x = ev.clientX - b.left, y = ev.clientY - b.top;
-      let enIyi = null;
-      isabet.forEach(h => {
-        const dd = Math.hypot(h.x - x, h.y - y);
-        if (dd > 22) return;
-        const puan = dd - h.oncelik * 4;
-        if (!enIyi || puan < enIyi.puan) enIyi = { puan, h };
-      });
-      tiklaninca(enIyi ? enIyi.h.bilgi : null);
+      /* Dokunulan nokta çizim birimine çevrilir: CSS dönüşümü (ölçek), kenarlık ve dolgu hesaba katılır */
+      const b = canvas.getBoundingClientRect(), st = getComputedStyle(canvas);
+      const f = canvas.offsetWidth ? b.width / canvas.offsetWidth : 1;
+      const pl = parseFloat(st.paddingLeft) || 0, pt = parseFloat(st.paddingTop) || 0;
+      const icG = canvas.clientWidth - pl - (parseFloat(st.paddingRight) || 0);
+      const k = icG > 0 ? olcu.W / icG : 1;
+      const x = ((ev.clientX - b.left) / f - canvas.clientLeft - pl) * k, y = ((ev.clientY - b.top) / f - canvas.clientTop - pt) * k;
+      /* En yakın cisim; öncelik (Ay, gezegen, uydu…) yalnız uzaklıklar 3 px'ten yakınsa belirleyici */
+      const aday = isabet.map(h => ({ h, dd: Math.hypot(h.x - x, h.y - y) })).filter(a => a.dd <= 22).sort((a, b2) => a.dd - b2.dd);
+      let en = aday[0] || null;
+      aday.forEach(a => { if (a.dd <= en.dd + 3 && a.h.oncelik > en.h.oncelik) en = a; });
+      tiklaninca(en ? en.h.bilgi : null);
     }
     canvas.addEventListener('click', tikla);
     let zamanlayici = null;

@@ -51,9 +51,18 @@ for u in UNITELER:
 # Kaynak metinler başka dersleri dosya kimliğiyle anar ("11. ders" = d11). Uygulama dersleri ünite sırasıyla
 # numaralar ("Ders 4 / 19"), bu yüzden atıflar burada uygulamadaki sıra numarasına çevrilir.
 SIRA = {d['id']: i + 1 for i, d in enumerate(dersler)}
+# Kaynak metinde "d2'de", "d15'teki" gibi dosya kimliği atıfları da var; okura "2. derste" diye gösterilir.
+EK_DERS = {'de': 'derste', 'da': 'derste', 'te': 'derste', 'ta': 'derste', 'deki': 'dersteki', 'daki': 'dersteki', 'teki': 'dersteki', 'taki': 'dersteki',
+           'den': 'dersten', 'dan': 'dersten', 'ten': 'dersten', 'tan': 'dersten',
+           'in': 'dersin', 'ın': 'dersin', 'un': 'dersin', 'ün': 'dersin', 'nin': 'dersin', 'nın': 'dersin', 'nun': 'dersin', 'nün': 'dersin'}
 def numarala(x):
     if isinstance(x, str):
-        return re.sub(r'(?<![\d%,.])(\d{1,2})\. ders', lambda m: (str(SIRA['d' + m.group(1)]) if 'd' + m.group(1) in SIRA else m.group(1)) + '. ders', x)
+        x = re.sub(r'(?<![\d%,.])(\d{1,2})\. ders', lambda m: (str(SIRA['d' + m.group(1)]) if 'd' + m.group(1) in SIRA else m.group(1)) + '. ders', x)
+        def kimlik(m):
+            k, ek = 'd' + m.group(1), m.group(2)
+            if k not in SIRA or ek not in EK_DERS: return m.group(0)
+            return str(SIRA[k]) + '. ' + EK_DERS[ek]
+        return re.sub(r"(?<![\w/.#-])d(\d{1,2})['’]([a-zçğıöşü]+)", kimlik, x)
     if isinstance(x, list): return [numarala(v) for v in x]
     if isinstance(x, dict): return {k: (v if k in ('id', 'kaynak_url', 'url') else numarala(v)) for k, v in x.items()}
     return x

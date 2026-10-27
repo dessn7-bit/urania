@@ -119,12 +119,12 @@
     "soru": "Uzun pozlamalı gökyüzü fotoğrafı için neden ekvatoral kundak tercih edilir?",
     "secenekler": [
      "Alt-az kundağa göre teleskoba daha fazla ışık topladığı için",
-     "Ana ekseni Kutup Yıldızı'na çevrilir ve tek bir motorla Dünya'nın dönüşünü telafi eder",
+     "Ana ekseni gök kutbuna, yani Kutup Yıldızı'nın hemen yanına çevrilir ve tek bir motorla Dünya'nın dönüşünü telafi eder",
      "Atmosferin titreşimini ortadan kaldırdığı için",
      "Teleskobun en yüksek yararlı büyütmesini iki katına çıkardığı için"
     ],
     "dogru": 1,
-    "aciklama": "Derse göre ekvatoral kundağın sağ açıklık ekseni Kutup Yıldızı'na çevrilir ve bu eksene takılan motor yıldızı görüş alanında tutar. Alt-az kundakta uzun pozlamada alan dönmesi olur.",
+    "aciklama": "Derse göre ekvatoral kundağın sağ açıklık ekseni Dünya'nın ekseni gibi gök kutbuna (Kutup Yıldızı yönüne) çevrilir ve bu eksene takılan motor yıldızı görüş alanında tutar. Alt-az kundakta uzun pozlamada alan dönmesi olur.",
     "ders": "d12",
     "bolum": 5
    },
@@ -556,7 +556,7 @@
    },
    {
     "id": "gezegen_yasam-04",
-    "soru": "Yıldızından çok uzakta, hatta hiçbir yıldıza bağlı olmadan dolaşan gezegenleri bulabilen tek yöntem hangisidir?",
+    "soru": "Gezegenin kendi ışığına hiç ihtiyaç duymadığı için, yıldızından uzakta ya da hiçbir yıldıza bağlı olmadan dolaşan sönük ve soğuk gezegenleri bile bulabilen yöntem hangisidir?",
     "secenekler": [
      "Kütleçekimsel mikromercek",
      "Geçiş yöntemi",
@@ -564,7 +564,7 @@
      "Doğrudan görüntüleme"
     ],
     "dogru": 0,
-    "aciklama": "Derse göre mikromercek gezegenin ışığına ihtiyaç duymaz: öndeki cismin kütleçekimi arkadaki yıldızın ışığını büküp onu kısa süre parlaklaştırır. Bu yüzden yıldızından uzak ya da serbest dolaşan gezegenleri bulabilen tek yoldur.",
+    "aciklama": "Derse göre mikromercek gezegenin ışığına ihtiyaç duymaz: öndeki cismin kütleçekimi arkadaki yıldızın ışığını büküp onu kısa süre parlaklaştırır. Bu yüzden yıldızından uzak ya da serbest dolaşan sönük gezegenleri de bulabilir. Doğrudan görüntüleme ise yalnız henüz sıcak ve parlayan genç gezegenleri yakalayabilir.",
     "ders": "d13",
     "bolum": 3
    },

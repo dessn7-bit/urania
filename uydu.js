@@ -238,6 +238,18 @@
 
   function anlik(uydu, konum, t) { return durumHesapla(satrec(uydu), yerKonum(konum), t, false, uydu.icsel); }
 
+  /* Bir penceredeki (saat) bütün geçişler ve yolları; gök levhası kaydırıcıda bunları süzer */
+  function yakinGecisler(uydu, konum, bas, saat) {
+    const gd = yerKonum(konum), sr = satrec(uydu);
+    return gecisler(uydu, konum, bas, saat / 24).map(g => {
+      const yol = [];
+      for (let ms = Math.floor((g.bas.t.getTime() - 60e3) / 10e3) * 10e3; ms <= g.bitis.t.getTime() + 60e3; ms += 10e3) {
+        const d = durumHesapla(sr, gd, new Date(ms)); if (d) yol.push(d);
+      }
+      return Object.assign({ yol }, g);
+    });
+  }
+
   /* 60 dk içinde başlayan ya da süren geçiş ve yolu (10 sn adım, tam dakikaya hizalı) */
   function yakinGecis(uydu, konum, simdi) {
     const ls = gecisler(uydu, konum, new Date(simdi.getTime() - 15 * 60e3), 75 / 1440);
@@ -268,5 +280,5 @@
     return ls.sort((a, b) => a.tepe.t - b.tepe.t);
   }
 
-  window.Uydu = { ISTASYONLAR, uydular, dizileriAyikla, yukseklik, donem, gecisler, gecislerParcali, durumHesapla, anlik, yakinGecis };
+  window.Uydu = { ISTASYONLAR, uydular, dizileriAyikla, yukseklik, donem, gecisler, gecislerParcali, durumHesapla, anlik, yakinGecis, yakinGecisler };
 })();

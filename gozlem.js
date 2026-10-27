@@ -181,18 +181,22 @@
     const gezegenler = G.GEZEGENLER.map(c => {
       const k = G.cisimAltAz(c, an, gzl);
       return { ad: G.TR_AD[c], alt: k.alt, az: k.az, kadir: G.gezegenKadir(c, an) };
-    }).filter(g => g.kadir <= 6.5);
+    }).filter(g => g.kadir <= durum.limitKadir);   // yıldızlarla aynı sınır
     const radyantlar = durum.meteorDurum.filter(m => m.aktif && m.radyant_ra != null).map(m => ({ ad: m.ad, ra: m.radyant_ra, dec: m.radyant_dec }));
     /* Uydular: veri yüklüyse seçili an için konumlar, 60 dk içinde başlayan görünür geçişlerin yolu */
     const uydular = [], uyduYollari = [];
     if (durum.uydular) {
       const k = U.konum();
-      /* yol hesabı uydu başına ~40 ms: kaydırıcı akıcı kalsın diye 5 dakikalık dilimlerde önbellekle */
-      const dilim = Math.floor(an / 300e3) + '|' + k.enlem + '|' + k.boylam;
-      if (durum.uyduDilim !== dilim) {
-        durum.uyduDilim = dilim;
-        durum.uyduGecis = durum.uydular.map(u => { try { return Uydu.yakinGecis(u, k, an); } catch (h) { return null; } });
+      /* Yol hesabı pahalı: 4 saatlik pencerenin geçişleri bir kez hesaplanır, kaydırıcı bu pencerede
+         gezindikçe yalnız süzülür (her 5 dakikalık adımda yeniden hesaplanmaz) */
+      const yer = k.enlem + '|' + k.boylam, t = an.getTime();
+      const p = durum.uyduPencere;
+      if (durum.uyduDilim !== 'pencere' || !p || p.yer !== yer || t < p.bas + 15 * 60e3 || t > p.son - 60 * 60e3) {
+        const bas = t - 15 * 60e3, son = bas + 4 * 3600e3;
+        durum.uyduDilim = 'pencere';
+        durum.uyduPencere = { yer, bas, son, ls: durum.uydular.map(u => { try { return Uydu.yakinGecisler(u, k, new Date(bas), 4); } catch (h) { return []; } }) };
       }
+      durum.uyduGecis = durum.uyduPencere.ls.map(ls => ls.find(g => g.bitis.t > an && g.bas.t < new Date(t + 60 * 60e3)) || null);
       durum.uydular.forEach((u, i) => {
         try { const d = Uydu.anlik(u, k, an); if (d) uydular.push(Object.assign({ ad: u.ad, kisa: u.kisa }, d)); } catch (h) { /* bu uydu çizilmez */ }
         const g = durum.uyduGecis[i];

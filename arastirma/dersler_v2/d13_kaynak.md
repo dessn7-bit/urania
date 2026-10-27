@@ -80,7 +80,9 @@ Biçim: iddia | kaynak URL | kaynaktaki ifade (kısa alıntı ya da değer)
 - Kanatlıat en yüksekte eylül–kasım | https://www.jb.man.ac.uk/astronomy/nightsky/AList/Pegasus.html | "at its highest in the sky during September, October and November"
 - Kare = atın gövdesi; 51 Peg batı kenarındaki iki yıldızı birleştiren çizginin ~2° batısında, Alfa'ya Beta'dan biraz yakın; 5,49 kadir | https://www.jb.man.ac.uk/astronomy/nightsky/AList/Pegasus.html | "just to the west (about 2 degrees) of the line joining the two stars at the western side of the square"; "a single 5.49 magnitude star"
 - Uygun koşullarda çıplak gözle görülür; G2V; sağ açıklık 22s 57d; dik açıklık +20° 46′ | https://en.wikipedia.org/wiki/51_Pegasi | "visible with the naked eye under suitable viewing conditions"; G2V; RA 22h 57m 27.98s; Dec +20° 46′ 07.8″
-- 51 Peg b 4,23 gün, 0,052 AB, en az 0,61 Jüpiter kütlesi (anahtar sayılar) | https://en.wikipedia.org/wiki/51_Pegasi | 4.2307966 d; 0.052344942 AU; 0.61 MJ
+- 51 Peg b 4,23 gün, 0,052 AB (anahtar sayılar) | https://en.wikipedia.org/wiki/51_Pegasi | 4.2307966 d; 0.052344942 AU
+- 51 Peg b en az kütle 0,46, gerçek kütle ≈ 0,61 Jüpiter kütlesi (anahtar sayılar) | https://exoplanetarchive.ipac.caltech.edu/overview/51%20Peg | Minimum mass (Mp sin i): Rosenthal et al. 2021 "0.464±0.014" MJup; Mass: Cont et al. 2026 "0.61+0.06-0.05" MJup, inclination "49.8+5.8-5.7" deg
+- 2021'de en az 70 serbest gezegen doğrudan görüntülemeyle (d13 bölüm 3) | https://phys.org/news/2021-12-eso-telescopes-uncover-largest-group.html | "at least 70 new rogue planets" "in the Upper Scorpius and Ophiuchus constellations" "still hot enough to glow, making them directly detectable by sensitive cameras on large telescopes"
 - Kent merkezi Bortle 8–9 sınır kadiri ≤4,5 / ≤4,0 | https://skyandtelescope.org/astronomy-resources/light-pollution-and-astronomy-the-bortle-dark-sky-scale/ | d11'in doğrulanmış anahtar sayısından alındı (bu oturumda yeniden açılmadı)
 - Meridyen yüksekliği h = 90° − φ + δ; 90 − 41 + 20,8 = 69,8° | d1'deki "kutup yüksekliği = enlem" bilgisinden geometrik çıkarım + hesap
 
