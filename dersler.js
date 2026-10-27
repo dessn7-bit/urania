@@ -48,10 +48,7 @@
       <a class="geri" href="#ders">Tüm dersler</a>
       <h1 class="okunur">${U.kacis(x.baslik)}</h1>
       <p class="alt-baslik" style="font-family:var(--sans)">Ders ${i + 1} / ${D.dersler.length}</p>
-      ${Ses.destek ? `<div class="dinle" role="group" aria-label="Dersi dinle">
-        <button type="button" class="dugme dolu" id="dsOynat" aria-pressed="false">Dinle</button>
-        <span class="cip-grup" id="dsHiz">${[[0.85, 'Yavaş'], [1, 'Normal'], [1.2, 'Hızlı']].map(([h, a]) => `<button type="button" class="dugme" data-hiz="${h}" aria-pressed="${Ses.hiz() === h}">${a}</button>`).join('')}</span>
-        <span class="kucuk soluk" id="dsSesDurum" aria-live="polite"></span></div>` : ''}
+      <div class="dinle" id="dsSes" role="group" aria-label="Dersi dinle"></div>
       ${x.bolumler.map(bl => `<h2 class="okunur">${U.kacis(bl.baslik)}</h2>${bl.paragraflar.map(p => `<p class="okunur">${U.kacis(p)}</p>`).join('')}`).join('')}
       ${x.formuller && x.formuller.length ? `<h2>Formüller</h2>${x.formuller.map(f => `<div class="formul"><div class="soluk kucuk">${U.kacis(f.ad)}</div><div class="ifade">${U.kacis(f.ifade)}</div>${f.aciklama ? `<div class="acik">${U.kacis(f.aciklama)}</div>` : ''}</div>`).join('')}` : ''}
       ${x.anahtar_sayilar && x.anahtar_sayilar.length ? `<h2>Akılda tutulacak sayılar</h2><ul class="liste sayilar">${x.anahtar_sayilar.map(s => `<li><span class="deger">${U.kacis(s.deger)}</span><span>${U.kacis(s.aciklama)} ${s.kaynak_url ? `<a href="${U.guvenliUrl(s.kaynak_url)}" target="_blank" rel="noopener" class="kucuk">kaynak</a>` : ''}</span></li>`).join('')}</ul>` : ''}
@@ -75,35 +72,12 @@
       e.currentTarget.classList.toggle('dolu', !acik);
       e.currentTarget.textContent = acik ? 'Okundu olarak işaretli' : 'Okudum';
     });
-    if (Ses.destek) sesBagla();
+    Ses.bagla(el.querySelector('article.ders'), el.querySelector('#dsSes'), 'ders ' + x.id);
     window.scrollTo(0, 0);
   }
 
-  /* ---- Sesli okuma: başlık, bölümler ve deftere notları; formüller ve sorular okunmaz ---- */
-  function sesBagla() {
-    const bloklar = [...el.querySelectorAll('.okunur')];
-    Ses.hazirla(bloklar.map(b => ({ metin: b.textContent, el: b })));
-    const oynat = el.querySelector('#dsOynat'), d = el.querySelector('#dsSesDurum');
-    Ses.dinle(s => {
-      if (!oynat.isConnected) return;
-      oynat.textContent = s.calisiyor ? 'Duraklat' : (s.sira > 0 ? 'Devam et' : 'Dinle');
-      oynat.setAttribute('aria-pressed', String(s.calisiyor));
-      if (!s.calisiyor && s.sira === 0 && s.toplam && d.dataset.uyari !== '1') d.textContent = '';
-    });
-    oynat.addEventListener('click', async () => {
-      if (Ses.durum().calisiyor) { Ses.durdur(); return; }
-      await Ses.sesleriBekle();
-      if (!Ses.turkceSes()) { d.dataset.uyari = '1'; d.textContent = 'Telefonun varsayılan metin okuma motoru Türkçe ses bildirmiyor; Chrome yalnız bu motorun seslerini kullanır. Ayarlar\'daki "Metin okuma" (TTS) bölümünden Türkçe destekleyen bir motor (ör. Google\'ın konuşma motoru) seçip Türkçe ses verisini yükleyebilirsin. Şimdilik varsayılan sesle okunuyor.'; }
-      Ses.baslat();
-    });
-    el.querySelector('#dsHiz').addEventListener('click', e => {
-      const b = e.target.closest('[data-hiz]'); if (!b) return;
-      el.querySelectorAll('#dsHiz [data-hiz]').forEach(x => { const s = x === b; x.setAttribute('aria-pressed', String(s)); });
-      Ses.hizAyarla(Number(b.dataset.hiz));
-    });
-    /* Okurken bir paragrafa dokununca oradan devam eder */
-    bloklar.forEach((b, i) => b.addEventListener('click', () => { if (Ses.durum().calisiyor) Ses.blogaGit(i); }));
-  }
+  /* Sesli okuma: başlık, bölümler ve deftere notları (.okunur); formüller ve sorular okunmaz.
+     Motor ses.js'te (Pinakes'ten uyarlandı). */
 
   /* ---- Tekrar kartları ---- */
   let oturum = null;

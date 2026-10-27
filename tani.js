@@ -62,6 +62,9 @@
       '',
       'DEPO: ' + depo + ' · defter ' + defter + ' kayıt',
       '',
+      'SESLİ OKUMA: ' + (window.Ses ? Ses.sesDurumu() + ' · sesler ' + (window.speechSynthesis && speechSynthesis.getVoices ? speechSynthesis.getVoices().filter(v => /^tr/i.test(v.lang)).map(v => v.name + ' (' + v.lang + (v.localService ? ', yerel' : ', uzak') + (v.default ? ', varsayılan' : '') + ')').join('; ') || 'Türkçe ses yok' : '—') : '—'),
+      ...(window.Ses && Ses.gunlukMetni() ? Ses.gunlukMetni().split('\n').map(x => '  ' + x) : []),
+      '',
       'SON HATALAR (' + hatalar.length + '):',
       ...(hatalar.length ? hatalar.map(h => '  ' + h.zaman.slice(11, 19) + ' ' + h.mesaj) : ['  yok'])
     ];

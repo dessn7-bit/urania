@@ -346,13 +346,18 @@ label.dugme { cursor: pointer; }
 .plan .bos { grid-column: 1 / -1; }
 .liste > li.kaynak-satir { display: block; border-top: 0; padding-top: 6px; }
 
-/* ---- Sesli ders ---- */
-.dinle { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin: 4px 0 18px; padding: 10px 0; border-top: 1px solid var(--cizgi); border-bottom: 1px solid var(--cizgi); }
-.dinle .dugme { min-height: 36px; padding: 6px 12px; font: 500 14px/1.2 var(--sans); }
-.dinle #dsOynat { min-width: 104px; }
-.dinle #dsSesDurum { flex-basis: 100%; }
-.dinle #dsSesDurum:empty { display: none; }
-.ders .okunuyor { background: var(--pirinc-soluk); border-radius: 4px; box-shadow: 0 0 0 4px var(--pirinc-soluk); transition: background .2s; }
+/* ---- Sesli ders (ses.js) ---- */
+.dinle { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; margin: 4px 0 18px; padding: 10px 0; border-top: 1px solid var(--cizgi); border-bottom: 1px solid var(--cizgi); }
+.dinle:empty { display: none; }
+.dinle .so-btn { min-height: 40px; padding: 6px 14px; font: 500 14px/1.2 var(--sans); }
+.dinle .so-hiz { min-height: 40px; padding: 6px 8px; background: transparent; color: var(--parsomen); border: 1px solid var(--pirinc-soluk); border-radius: 8px; font: 500 14px var(--sans); }
+.so-konum { font: 500 13px var(--sans); color: var(--soluk); font-variant-numeric: tabular-nums; }
+.so-mesaj { font: 400 14px/1.45 var(--sans); color: var(--soluk); }
+.so-tani { flex-basis: 100%; font: 400 13px var(--sans); color: var(--soluk); }
+.so-tani summary { cursor: pointer; padding: 4px 0; }
+.so-tani-metin { white-space: pre-wrap; word-break: break-word; max-height: 30vh; overflow: auto; font: 12px/1.45 ui-monospace, monospace; margin: 6px 0; }
+.ders .so-p { cursor: pointer; }
+.ders .so-okunan { background: var(--pirinc-soluk); border-radius: 4px; box-shadow: 0 0 0 4px var(--pirinc-soluk); transition: background .25s; }
 
 /* ---- Tekrar kartları ---- */
 .kart-ozet { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 12px 0 20px; padding: 14px 16px; border: 1px solid var(--pirinc-soluk); border-radius: 10px; background: var(--levha); }
