@@ -32,6 +32,7 @@
         <label>Gece <input type="date" id="gkTarih"></label>
         <button type="button" class="bag" id="gkBuGece" hidden>Bu geceye dön</button>
       </div>
+      <a class="dugme dolu ar-giris" href="#ar">Telefonu gökyüzüne tut</a>
       <div class="levha-kap">
         <canvas id="gkLevha" width="560" height="560" role="img" aria-label="Seçili an için gökyüzü haritası. Bir cisme dokunarak adını gör."></canvas>
         <div class="levha-bilgi" id="gkBilgi" aria-live="polite" hidden></div>

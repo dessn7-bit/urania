@@ -91,7 +91,7 @@
   function gunHafta(d) { return d ? gunHaftaB.format(d) : '—'; }
   function tamTarih(d) { return d ? tamB.format(d) : '—'; }
   function kadir(m) { return (m < 0 ? '−' : '') + sayi(Math.abs(m), 1); }
-  function derece(x) { return sayi(Math.round(x), 0) + '°'; }
+  function derece(x) { return sayi(Math.round(x) || 0, 0) + '°'; }
   function kacGun(fark) {
     const g = Math.round(fark);
     if (g === 0) return 'bugün';
@@ -142,7 +142,7 @@
       }
       m.goster && m.goster(el, param);
     } catch (e) { hataGoster(e); }
-    document.title = 'Urania — ' + ({ gok: 'Gökyüzü', deney: 'Deneyler', ders: 'Dersler', hesap: 'Hesap' }[bolum]);
+    document.title = 'Urania — ' + ({ gok: 'Gökyüzü', deney: 'Deneyler', ders: 'Dersler', hesap: 'Hesap', ar: 'Gökyüzüne bak' }[bolum]);
   }
 
   function basla() {
