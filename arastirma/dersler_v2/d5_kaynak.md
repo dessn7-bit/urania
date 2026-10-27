@@ -89,6 +89,33 @@ Kısaltmalar: WP:X = https://en.wikipedia.org/wiki/X ; MAM = https://www.pas.roc
 | 81 | Arcturus 36 ışık yılı, kırmızı dev kolunda K yıldızı (K0 / K1,5) | WP:Red_giant | "The K1.5 red-giant branch star Arcturus is 36 light-years away." ; başka yerde "The K0 RGB star Arcturus" |
 | 82 | Arcturus İstanbul'da en yüksek ~68° | HESAP | 90 − 41,01 + 19,18 = 68,2 (enlem d1: 41°00′49″) |
 
+### Ek tur (2026-10-27): tayf sınıfları ve H-R diyagramı bölümlerine eklenen paragraflar
+
+Kaynaklar bu turda WebSearch sonuçlarında görülüp WebFetch ile okundu (WebFetch aktarımı).
+
+| # | İddia (derste) | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|---|
+| 83 | O: iyonlaşmış helyum çizgileri | https://homepage.physics.uiowa.edu/~kgg/teaching/general62/spectral_classification.html ; https://britannica.com/science/star-astronomy/Classification-of-spectral-types | Iowa: "Singly ionized helium lines either in emission or absorption." ; Britannica: "In very hot O-type stars, lines of ionized helium appear." |
+| 84 | B: nötr helyum çizgileri | Iowa ; Britannica | Iowa: "Neutral helium lines in absorption." ; Britannica: B stars show "lines of helium and of singly ionized oxygen, nitrogen, and neon" |
+| 85 | A: hidrojen çizgileri en güçlü | Iowa ; Britannica ; WP:Stellar_classification (satır 11) | Iowa: "Hydrogen lines at maximum strength for A0 stars, decreasing thereafter." ; Britannica: "attaining their maximum intensities in A-type stars" |
+| 86 | F: metal çizgileri belirginleşir | Iowa | "Metallic lines become noticeable." |
+| 87 | G: nötr metaller ve bir kez iyonlaşmış kalsiyum güçlenir | Iowa ; Britannica | Iowa: "Absorption lines of neutral metallic atoms and ions (e.g. once-ionized calcium) grow in strength." ; Britannica: ionized calcium H and K lines "much stronger" |
+| 88 | K: metal çizgileri baskın | Iowa ; Britannica | Iowa: "Metallic lines dominate." ; Britannica: "the spectrum exhibits a wealth of metallic lines" |
+| 89 | M: titanyum oksit molekül bantları | Iowa ; Britannica | Iowa: "Molecular bands of titanium oxide noticeable." ; Britannica: M spectra show "titanium oxide molecules (TiO)" |
+| 90 | A'dan sıcak yıldızlarda hidrojen çizgileri hidrojen iyonlaştığı için zayıflar | Britannica | hydrogen lines fade after the A-type peak "as the hydrogen becomes ionized" |
+| 91 | "Elektronu kopmuş hidrojen bu çizgiyi veremez" ; "sıcaklık merdiveni" | Yorum (satır 90 ve WP:Stellar_classification satır 2 "summarizing the ionization state ... temperature") | Kaynak cümlesinin sade anlatımı; yeni olgu değil |
+| 92 | Gözlemsel sürümlerde tayf sınıfı yerine renk indeksi; 20. yy ortasında çoğunlukla B−V | https://en.wikipedia.org/wiki/Hertzsprung%E2%80%93Russell_diagram | "Modern observational versions of the chart replace spectral type by a color index." ; mid-20th-century charts used B-V color "most often" |
+| 93 | Gözlemciler bu biçimi kullanır (renk-kadir diyagramı) | WP:Hertzsprung–Russell_diagram ; d15 satır 7 | "is often used by observers" ; "the first CMDs" (color–magnitude diagram) |
+| 94 | Büyük B−V = daha kırmızı; sola sıcak, sağa soğuk | satır 16 ve 27 | d5 metni: "büyük değer daha kırmızı demektir" ; "stars with higher surface temperature are toward the left side" |
+| 95 | Küçük kadir = parlak, yukarıda | d1 (WP:Apparent_magnitude) ; satır 27 | kadir ölçeği: parlak cisim küçük kadir (d1) ; "stars of greater luminosity are toward the top" |
+| 96 | Kuramsal H-R: etkin sıcaklık ve ışıma gücü, log-log, sıcaklık yüksekten düşüğe | WP:Hertzsprung–Russell_diagram | "this form is called the theoretical Hertzsprung–Russell diagram" ; "plots the effective surface temperature of the star on one axis and the luminosity of the star on the other" ; "almost invariably in a log-log plot" ; "the temperatures are plotted from high temperature to low temperature" |
+| 97 | Yapı ve evrim hesapları gözlemle eşleşen çizimler üretir | WP:Hertzsprung–Russell_diagram | "Theoretical calculations of stellar structure and the evolution of stars produce plots that match those from observations." |
+| 98 | Uygulama kataloğunda görünür kadir ve B−V var | veri/yildizlar.json (satır 16) | [RA, Dec, kadir, B−V] |
+| 99 | Görünür kadir uzaklığa bağlı; bu yüzden mutlak kadir ya da küme kullanılır | d15 satır 2 (WP:Hertzsprung–Russell_diagram) ; satır 26 | "In cases where the stars are known to be at identical distances such as within a star cluster" ; özgün diyagram "absolute visual magnitude" kullanır |
+| 100 | Hertzsprung boşluğu kırmızı devleri anakoldan ayırır | WP:Hertzsprung–Russell_diagram | "The red giants are separated from the main sequence by the Hertzsprung gap." |
+| 101 | Süperdevler seyrek, evrimleşmiş kütleli, yüksek ışıma gücüyle göze çarpar | WP:Hertzsprung–Russell_diagram | "supergiants, rare evolved massive stars prominent because of their high luminosity" |
+| 102 | Diyagramın evrimi gösterdiği düşünüldü; erken fikir kırmızı devden cüceye büzülme; Eddington cücelerin anakolda neredeyse sabit kaldığını öngördü | WP:Hertzsprung–Russell_diagram | "Contemplation of the diagram led astronomers to speculate that it might demonstrate stellar evolution." ; "stars collapsed from red giants to dwarf stars" ; Eddington "predicted that dwarf stars remain in an essentially static position on the main sequence for most of their lives" |
+
 ## Notlar
 
 - Müfredat (YAZIM_KILAVUZU) yıldız doğumunu d14'e verdiği için mevcut d5'teki "Bir yıldız nasıl doğar" bölümü d5'ten çıkarıldı; doğrulanmış bilgileri (moleküler bulut kütlesi, önyıldız 500.000 yıl, disk ve açısal momentum, döteryum, 0,08 M☉ ve kahverengi cüce) d14'e taşındı. d5'te yalnız 7. bölümde kısa bir özet ve d14'e gönderme kaldı. Mevcut d5'in kaynak listesi (Protostar, Star_formation dahil) korundu.
@@ -97,3 +124,4 @@ Kısaltmalar: WP:X = https://en.wikipedia.org/wiki/X ; MAM = https://www.pas.roc
 - Kırmızı dev olan kütle aralığı iki Wikipedia maddesinde farklı (0,3–8 ve 0,6–10 M☉); ikisi de derste verildi.
 - Arcturus'un tayf türü aynı Wikipedia maddesinde K0 ve K1,5 olarak geçiyor; derste "K yıldızı" denip fark belirtildi. Arcturus'un takımyıldızı için kaynak bulunmadığından derste takımyıldız adı verilmedi.
 - WebSearch kotası bu oturumda d15 sırasında doldu; d5 için gereken yeni bilgiler mevcut d5 kaynak URL'lerinden (Wikipedia) WebFetch ile okundu.
+- Ek tur (satır 83–102): tayf sınıfları bölümüne bir, H-R diyagramı bölümüne iki paragraf eklendi. Wikipedia'nın H-R maddesi Hipparcos ve Gaia diyagramlarındaki yıldız sayısını vermiyor; bu yüzden derste sayı yazılmadı. Soğuk yıldızlarda hidrojen çizgilerinin neden zayıfladığı Britannica'da açıklanmıyor; derste yalnız sıcak taraf (iyonlaşma) açıklandı.
