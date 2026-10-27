@@ -36,6 +36,9 @@
       clearTimeout(zs);
       const j = await r.json();
       if (!r.ok || j.error) throw new Error(j.reason || ('HTTP ' + r.status));
+      /* 48 saatten eski hava önbelleklerini sil (her ~1 km hücre ~3,5 KB) */
+      U.anahtarlar('hava2_').forEach(a => { const x = U.oku(a, null); if (!x || Date.now() - x.alindi > EN_ESKI) U.sil(a); });
+      U.anahtarlar('hava_').forEach(a => U.sil(a)); // eski biçim
       U.yaz(k, { alindi: Date.now(), j });
       return { saatler: coz(j), alindi: new Date(), eski: false };
     } catch (e) {
@@ -71,11 +74,12 @@
   function saatDegeri(enlem, boylam, zaman) {
     const k = U.oku(anahtar(enlem, boylam), null);
     if (!k || !k.j || !k.j.hourly) return null;
-    const t = Math.round(zaman.getTime() / 3600e3) * 3600;
-    const i = k.j.hourly.time.indexOf(t);
-    if (i < 0) return null;
     const h = k.j.hourly;
-    return { bulut: h.cloud_cover[i], yagisOl: h.precipitation_probability ? h.precipitation_probability[i] : null };
+    /* Bulut anlık değer: en yakın saat. Yağış "önceki bir saat" için: o anı kapsayan saat = yukarı yuvarla */
+    const ib = h.time.indexOf(Math.round(zaman.getTime() / 3600e3) * 3600);
+    const iy = h.time.indexOf(Math.ceil(zaman.getTime() / 3600e3) * 3600);
+    if (ib < 0 && iy < 0) return null;
+    return { bulut: ib >= 0 ? h.cloud_cover[ib] : null, yagisOl: iy >= 0 && h.precipitation_probability ? h.precipitation_probability[iy] : null };
   }
   window.Hava = { getir, geceOzeti, saatDegeri, anahtar };
 })();

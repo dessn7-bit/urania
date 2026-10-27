@@ -321,28 +321,34 @@
   }
 
   /* ---- ISS geçişleri (gecelere değil "şimdi"ye bağlı; konum değişince yeniden) ---- */
-  let issAnahtar = '';
+  let issAnahtar = '', issSira = 0;
   async function issYaz(zorla) {
     const k = U.konum();
-    const anahtar = k.enlem + '|' + k.boylam + '|' + new Date().toISOString().slice(0, 13);
+    /* 10 dakikalık dilim: geçmiş geçişler listeden düşsün */
+    const anahtar = k.enlem + '|' + k.boylam + '|' + Math.floor(Date.now() / 600e3);
     if (!zorla && anahtar === issAnahtar) return;
     issAnahtar = anahtar;
+    const sira = ++issSira;
+    const guncelMi = () => { const kk = U.konum(); return sira === issSira && kk.enlem === k.enlem && kk.boylam === k.boylam; };
     const ul = el.querySelector('#gkIss'), kay = el.querySelector('#gkIssKaynak');
     let tle;
     try { tle = await Uydu.tleGetir(); durum.tle = tle; } catch (e) {
+      if (!guncelMi()) return;
       ul.innerHTML = '<li><span class="bos">Yörünge verisi alınamadı (internet yok ya da CelesTrak yanıt vermedi). İnternete bağlanınca kendiliğinden hesaplanır.</span></li>';
       kay.textContent = ''; issAnahtar = ''; return;
     }
     await new Promise(r => setTimeout(r, 30)); // önce sayfa çizilsin
+    if (!guncelMi()) return;
     levhaCiz();
-    const ls = Uydu.gecisler(tle, k, new Date(), 5).filter(g => g.gorunur && g.gBit.t > new Date());
+    const ls = (await Uydu.gecislerParcali(tle, k, new Date(), 5)).filter(g => g.gorunur && g.gBit.t > new Date());
+    if (!guncelMi()) return; // bu arada konum değiştiyse eski yerin geçişlerini yazma
     const donem = Uydu.tleDonemi(tle.s1);
     const yas = (Date.now() - donem) / 86400e3;
     ul.innerHTML = ls.length ? ls.map(g => {
       const b = g.gBas, s = g.gBit, t = g.gTepe;
       const yon = d => G.YON_UZUN[G.yon(d.az)];
-      const basM = b === g.bas ? `${yon(b)} yönünde ${U.derece(b.alt)} yükseklikte belirir` : `${yon(b)} yönünde ${U.derece(b.alt)} yükseklikte Dünya'nın gölgesinden çıkıp belirir`;
-      const sonM = s === g.bitis ? `${yon(s)} yönünde ${U.derece(s.alt)}'nin altına alçalır` : `${yon(s)} yönünde ${U.derece(s.alt)} yükseklikte Dünya'nın gölgesine girip kaybolur`;
+      const basM = `${yon(b)} yönünde ${U.derece(b.alt)} yükseklikte ` + ({ ufuk: 'belirir', golge: 'Dünya\'nın gölgesinden çıkıp belirir', karanlik: 'gökyüzü yeterince kararınca seçilir' }[g.basNeden] || 'belirir');
+      const sonM = `${yon(s)} yönünde ${U.derece(s.alt)} ` + ({ ufuk: 'yüksekliğin altına alçalır', golge: 'yükseklikte Dünya\'nın gölgesine girip kaybolur', aydinlik: 'yükseklikte gökyüzü aydınlandığı için seçilmez olur' }[g.sonNeden] || 'yükseklikte kaybolur');
       const metin = `${U.saat(b.t)}–${U.saat(s.t)} · ${basM}, en çok ${U.derece(t.alt)} (${yon(t)}), ${sonM}`;
       return `<li><span class="ad">${U.kacis(U.gunHafta(b.t))}</span><span class="sag">en çok ${U.derece(t.alt)}</span><span class="alt">${metin}<br>${takvimBag({ baslik: 'ISS geçişi', bas: new Date(b.t.getTime() - 60e3), son: new Date(s.t.getTime() + 60e3), aciklama: metin + '. (Urania, ' + k.ad + ')' })}</span></li>`;
     }).join('') : '<li><span class="bos">Önümüzdeki 5 günde buradan görünür bir geçiş yok.</span></li>';
@@ -580,6 +586,7 @@
     geceHesapla();
     levhaCiz();
     canliSayac = setInterval(() => {
+      if (!el.hidden && durum.tle) issYaz(false); // 10 dakikada bir geçmiş geçişleri düşür
       if (!durum.canli || durum.gun || el.hidden) return;
       simdiyeKur();
       if (geceAnahtariDegisti()) geceHesapla();

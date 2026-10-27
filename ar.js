@@ -90,20 +90,26 @@
     if (!('ondeviceorientationabsolute' in window) || st.goreliKabul) yonOlayi(e, false);
   };
 
-  async function algilayicilariBaslat() {
+  /* iOS: izin isteği doğrudan bir dokunuşla tetiklenmeli; bu yüzden "Pusulayı aç" düğmesi gösterilir */
+  function izinGerekli() { return typeof DeviceOrientationEvent !== 'undefined' && typeof DeviceOrientationEvent.requestPermission === 'function'; }
+  async function izinIste() {
     try {
-      if (typeof DeviceOrientationEvent !== 'undefined' && typeof DeviceOrientationEvent.requestPermission === 'function') {
-        const r = await DeviceOrientationEvent.requestPermission();
-        /* Reddedilse de dinleyiciler kurulur: bazı tarayıcılar izni sormadan veri verir; veri gelmezse 1,5 sn sonra sürükleme moduna geçilir */
-        if (r !== 'granted') st.izinYok = true;
-      }
-    } catch (h) { /* izin sorulamadı: yine de dinlemeyi dene */ }
+      const r = await DeviceOrientationEvent.requestPermission();
+      st.izinYok = r !== 'granted';
+      el.querySelector('#arPusula').hidden = r === 'granted';
+      if (r === 'granted') { st.mod = 'bekliyor'; durumYaz('Telefonu gökyüzüne tut.'); }
+      else durumYaz('Yön algılayıcı izni verilmedi; parmağınla sürükleyerek gezebilirsin.');
+    } catch (h) { durumYaz('Pusula izni istenemedi; parmağınla sürükleyerek gezebilirsin.'); }
+  }
+  function algilayicilariBaslat() {
+    if (izinGerekli()) el.querySelector('#arPusula').hidden = false;
     if ('ondeviceorientationabsolute' in window) window.addEventListener('deviceorientationabsolute', mutlakDinle);
     window.addEventListener('deviceorientation', goreliDinle);
     /* 1,5 sn içinde veri gelmezse (masaüstü, algılayıcısız cihaz) dokunma moduna geç */
     setTimeout(() => {
       if (st.mod === 'algilayici') return;
       if (st.goreliVar) { st.goreliKabul = true; durumYaz('Bu cihazın pusulası kuzeyi bildirmiyor. Telefonu gökyüzüne tut ve bir kez "Hizala"ya bas.'); return; }
+      if (izinGerekli() && !el.querySelector('#arPusula').hidden) { dokunmaModu('Pusulayı kullanmak için üstteki "Pusulayı aç"a dokun; o zamana kadar parmağınla sürükleyebilirsin.'); return; }
       dokunmaModu(st.izinYok ? 'Yön algılayıcı izni verilmedi; parmağınla sürükleyerek gezebilirsin.' : 'Bu cihazda yön algılayıcısı yanıt vermedi; parmağınla sürükleyerek gezebilirsin.');
     }, 1500);
   }
@@ -215,7 +221,9 @@
       const dy = R[0][1] * v[0] + R[1][1] * v[1] + R[2][1] * v[2];
       const dz = R[0][2] * v[0] + R[1][2] * v[1] + R[2][2] * v[2];
       if (dz > -0.02) return null;
-      const x = dx * cA + dy * sA, y = -dx * sA + dy * cA;
+      /* Ekran döndüyse (yatay tutuş) cihaz eksenleri −θ kadar döndürülür:
+         θ=90° (saat yönünün tersine yatırılmış) → kullanıcının "yukarı"sı cihazın +x'i */
+      const x = dx * cA - dy * sA, y = dx * sA + dy * cA;
       return { x: cx + f * x / -dz, y: cy - f * y / -dz };
     }
 
@@ -341,7 +349,7 @@
     if (!st.tle) return;
     const renkI = kir ? renk('--pirinc') : '#9FE3C7';
     const g = st.issGecis;
-    if (g && g.yol.length > 1) {
+    if (g && g.gorunur && g.bitis.t > new Date() && g.yol.length > 1) {
       ctx.save(); ctx.setLineDash([5, 6]); ctx.strokeStyle = renkI; ctx.globalAlpha = 0.75; ctx.lineWidth = 1.5;
       ctx.beginPath(); let o = null;
       g.yol.forEach(d => { const p = yansit(enu(d.alt, d.az)); if (o && p) ctx.lineTo(p.x, p.y); else if (p) ctx.moveTo(p.x, p.y); o = p; });
@@ -390,7 +398,7 @@
     const R = st.R, ang = ekranAcisi() * DER;
     const dx = R[0][0] * v[0] + R[1][0] * v[1] + R[2][0] * v[2];
     const dy = R[0][1] * v[0] + R[1][1] * v[1] + R[2][1] * v[2];
-    let x = dx * Math.cos(ang) + dy * Math.sin(ang), y = -dx * Math.sin(ang) + dy * Math.cos(ang);
+    let x = dx * Math.cos(ang) - dy * Math.sin(ang), y = dx * Math.sin(ang) + dy * Math.cos(ang);
     if (Math.hypot(x, y) < 1e-6) x = 1;
     const a = Math.atan2(-y, x);
     /* Ok, nişangâhın çevresindeki bir çemberde: üst menü ve alt bilgiyle çakışmaz */
@@ -431,7 +439,7 @@
   }
 
   /* Merkezdeki en yakın cisim + bakılan yön */
-  let sonMerkez = '';
+  let sonMerkez = '', sonDuyuru = '';
   function merkezYaz(bakis, cx, cy) {
     tarifYaz(bakis);
     let en = null;
@@ -439,6 +447,9 @@
     const yonMetin = Urania.derece(bakis.az) + ' ' + G.yon(bakis.az) + ' · yükseklik ' + Urania.derece(bakis.alt);
     const html = (en ? '<b>' + U.kacis(en.h.ad) + '</b> · ' + U.kacis(en.h.alt) : '<span class="soluk">Nişangâhı bir cisme getir</span>') + '<span class="ar-yon">' + yonMetin + '</span>';
     if (html !== sonMerkez) { el.querySelector('#arMerkez').innerHTML = html; sonMerkez = html; }
+    /* Ekran okuyucuya yalnız nişangâhtaki cisim değişince söyle (her derecede değil) */
+    const ad = en ? en.h.ad : '';
+    if (ad !== sonDuyuru) { sonDuyuru = ad; el.querySelector('#arDuyuru').textContent = ad ? 'Nişangâhta: ' + ad : ''; }
   }
 
   function dokunusTanimla(x, y) {
@@ -525,7 +536,8 @@
     let fark = hedefAz - bakis.az; fark = ((fark + 540) % 360) - 180;
     /* başlık = 360 − (α − sapma − kal): başlığı fark kadar artırmak için kal += fark */
     st.kal = ((st.kal + fark + 540) % 360) - 180;
-    U.yaz('arKalibrasyon', st.kal);
+    /* Pusulasız (göreli) modda referans yön her oturumda keyfi: hizalama yalnız bu oturum için */
+    if (st.manyetik) U.yaz('arKalibrasyon', st.kal);
     st.R = null; // yeni ayarla hemen yeniden kurulsun
     el.querySelector('#arHizala').hidden = true;
     durumYaz('Hizalandı (' + (fark >= 0 ? '+' : '−') + U.sayi(Math.abs(fark), 1) + '°). İstersen başka bir cisimle tekrarla.');
@@ -571,6 +583,7 @@
       <div class="ar-ust">
         <a class="ar-kapat" href="#gok" aria-label="Kapat">×</a>
         <span class="cip-grup">
+          <button type="button" class="dugme dolu" id="arPusula" hidden>Pusulayı aç</button>
           <button type="button" class="dugme" id="arBul">Bul</button>
           <button type="button" class="dugme" id="arHizalaDugme">Hizala</button>
           <button type="button" class="dugme" id="arKamera" aria-pressed="false">Kamera</button>
@@ -579,7 +592,8 @@
       <div class="ar-serit" id="arHedefSerit" hidden><span>Aranan: <b id="arHedefAd"></b> · <span id="arTarif"></span></span><button type="button" class="bag" id="arHedefKapat">bırak</button></div>
       <div class="ar-durum" id="arDurum" role="status" hidden></div>
       <div class="ar-bilgi" id="arBilgi" aria-live="polite" hidden></div>
-      <div class="ar-merkez" id="arMerkez" aria-live="polite"></div>
+      <div class="ar-merkez" id="arMerkez"></div>
+      <div class="gorunmez" id="arDuyuru" aria-live="polite"></div>
       <div class="ar-hizala" id="arHizala" hidden>
         <p id="arHizalaMetin"></p>
         <div class="cip-grup"><button type="button" class="dugme dolu" id="arOrtaladim">Ortaladım</button><button type="button" class="dugme" id="arHizalaIptal">Vazgeç</button><button type="button" class="dugme" id="arHizalaSifirla">Hizalamayı sıfırla</button></div>
@@ -594,6 +608,7 @@
     cv = el.querySelector('#arKanvas'); ctx = cv.getContext('2d'); video = el.querySelector('#arVideo');
     dokunmaBagla();
     el.querySelector('#arBul').addEventListener('click', aramaAc);
+    el.querySelector('#arPusula').addEventListener('click', izinIste);
     el.querySelector('#arHizalaDugme').addEventListener('click', hizalamaBaslat);
     el.querySelector('#arOrtaladim').addEventListener('click', hizalamaBitir);
     el.querySelector('#arHizalaIptal').addEventListener('click', () => { el.querySelector('#arHizala').hidden = true; });
@@ -643,5 +658,13 @@
 
   U.modul('ar', { ilk, goster });
   /* Testler için: iç durum ve saf matematik */
-  window.UraniaAR = { st, eulerdenMatris, bakisYonu, enu };
+  /* Testler için: geçerli dönüşümle bir yükseklik/azimutu ekrana yansıt */
+  function yansitTest(alt, az) {
+    const R = st.R; if (!R) return null;
+    const v = enu(alt, az), ang = ekranAcisi() * DER, cA = Math.cos(ang), sA = Math.sin(ang);
+    const dx = R[0][0] * v[0] + R[1][0] * v[1] + R[2][0] * v[2], dy = R[0][1] * v[0] + R[1][1] * v[1] + R[2][1] * v[2], dz = R[0][2] * v[0] + R[1][2] * v[1] + R[2][2] * v[2];
+    if (dz > -0.02) return null;
+    return { x: (dx * cA - dy * sA) / -dz, y: (dx * sA + dy * cA) / -dz }; // merkeze göre, y yukarı pozitif
+  }
+  window.UraniaAR = { st, eulerdenMatris, bakisYonu, enu, yansitTest };
 })();

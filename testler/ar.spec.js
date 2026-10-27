@@ -124,3 +124,21 @@ test.describe('ISS', () => {
     expect(yol).toBeGreaterThan(20);
   });
 });
+
+test('Yatay tutuş (ekran 90°): gökyüzü ters dönmez — yukarıdaki yıldız yukarıda, doğudaki sağda', async ({ page }) => {
+  /* Saat yönünün tersine yatırılmış telefon (screen.orientation.angle = 90), arka kamera kuzey ufkunda:
+     α=90, β=0, γ=−90 (W3C: cihazın +x'i yukarıyı gösterir). */
+  await page.addInitScript(() => {
+    try { Object.defineProperty(screen.orientation, 'angle', { get: () => 90, configurable: true }); } catch (e) { /* yoksa test anlamsız */ }
+  });
+  await page.goto('/index.html#ar');
+  await page.waitForTimeout(300);
+  await yonVer(page, 90, 0, -90);
+  const yon = await page.locator('#arMerkez .ar-yon').innerText();
+  expect(yon).toMatch(/^6° K · yükseklik -?0°$/);
+  const yukari = await page.evaluate(() => window.UraniaAR.yansitTest(20, 6.09));
+  const dogu = await page.evaluate(() => window.UraniaAR.yansitTest(0, 50));
+  expect(yukari.y).toBeGreaterThan(0.2);          // ufkun 20° üstü ekranda yukarıda
+  expect(Math.abs(yukari.x)).toBeLessThan(0.02);
+  expect(dogu.x).toBeGreaterThan(0.2);            // kuzeye bakarken doğu sağda
+});

@@ -177,3 +177,54 @@ test('Yağış: hafif olasılık', async ({ page }) => {
   await page.goto('/index.html#gok');
   await expect(page.locator('.hava-cumle')).toContainText('Hafif yağış olasılığı var (en çok %25).');
 });
+
+test.describe('İnceleme düzeltmeleri (defter)', () => {
+  test.beforeEach(async ({ page }) => {
+    await page.route('**/api.open-meteo.com/**', r => r.fulfill({ json: sahteHava(() => 12, () => [7, 0]) }));
+  });
+
+  test('Kötü niyetli yedek: betik çalışmaz, bozuk kayıt reddedilir', async ({ page }) => {
+    await page.goto('/index.html#defter');
+    const dosya = path.join(os.tmpdir(), 'urania-xss.json');
+    fs.writeFileSync(dosya, JSON.stringify({ kayitlar: [
+      { id: '"><img src=x onerror="window.__xss=1">', zaman: '2026-10-27T18:00:00Z', cisim: { anahtar: 'cisim:Moon', ad: 'Ay' }, alet: 'Çıplak göz', kosul: 'Berrak', konum: { ad: 'x', enlem: 41, boylam: 29 } },
+      { id: 'abc123', zaman: '2026-10-27T18:00:00Z', cisim: { anahtar: 'cisim:Moon', ad: '<img src=x onerror="window.__xss=2">' }, alet: 'Çıplak göz', kosul: 'Berrak', konum: { ad: 'x', enlem: 41, boylam: 29 } },
+      { id: 'abc124', zaman: '2026-10-27T18:00:00Z', cisim: { anahtar: 'cisim:Moon', ad: 'Ay' }, alet: 'Çıplak göz', kosul: 'Berrak', konum: { ad: 'x', enlem: null, boylam: 29 } }
+    ] }));
+    await page.locator('details summary', { hasText: 'Yedekle' }).click();
+    await page.locator('#dfYukle').setInputFiles(dosya);
+    await expect(page.locator('#dfYedekDurum')).toHaveText('1 kayıt eklendi, 2 kayıt bozuk olduğu için atlandı.');
+    await page.waitForTimeout(300);
+    expect(await page.evaluate(() => window.__xss)).toBeUndefined();
+    await expect(page.locator('#dfListe .ad').first()).toHaveText('<img src=x onerror="window.__xss=2">'); // düz metin olarak
+  });
+
+  test('Depolama doluysa kayıt "kaydedildi" gibi görünmez', async ({ page }) => {
+    await page.goto('/index.html#defter');
+    await page.evaluate(() => {
+      const asil = Storage.prototype.setItem;
+      Storage.prototype.setItem = function (k, v) { if (k === 'urania_defter') throw new DOMException('dolu', 'QuotaExceededError'); return asil.call(this, k, v); };
+    });
+    await page.locator('#dfYeni').click();
+    await page.locator('#dfKaydet').click();
+    await expect(page.locator('#dfForm .hata-kutu')).toContainText('Kaydedilemedi');
+    await expect(page.locator('#dfForm')).toBeVisible();
+  });
+
+  test('Düzenlerken eski bulut/yağış değerleri korunur', async ({ page }) => {
+    await page.goto('/index.html#defter');
+    await page.evaluate(() => localStorage.setItem('urania_defter', JSON.stringify([{ id: 'eski1', zaman: '2026-10-01T19:00:00.000Z', cisim: { anahtar: 'cisim:Moon', ad: 'Ay' }, alet: '7×50 dürbün', kosul: 'Berrak', not: '', konum: { ad: 'Fetih Mahallesi, Ataşehir', enlem: 41.0046, boylam: 29.0762, yukseklik: 20 }, otomatik: { ayOran: 50, bulut: 12, yagisOl: 5 } }])));
+    await page.reload();
+    await page.locator('#dfListe button[data-is="duzenle"]').click();
+    await page.locator('#dfNot').fill('Not eklendi');
+    await page.locator('#dfKaydet').click();
+    await expect(page.locator('#dfListe li')).toContainText('tahmini bulut %12');
+    await expect(page.locator('#dfListe li')).toContainText('yağış olasılığı %5');
+  });
+
+  test('Gece yarısına yakın saatte tarih de yuvarlanır', async ({ page }) => {
+    await page.goto('/index.html#defter');
+    const s = await page.evaluate(() => Urania.saat(new Date('2026-10-27T23:59:45+03:00')) + ' ' + Urania.gunHafta(new Date('2026-10-27T23:59:45+03:00')));
+    expect(s).toBe('00:00 28 Ekim Çarşamba');
+  });
+});

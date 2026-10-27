@@ -12,7 +12,13 @@
   const YER_R = 6378.137;                // km, WGS-84 ekvator yarıçapı
   const AB_KM = 149597870.7;
 
-  async function tleGetir() {
+  /* Aynı anda birden çok istek CelesTrak'a tek istek olarak gider */
+  let tleSoz = null;
+  function tleGetir() {
+    if (!tleSoz) tleSoz = tleGetirAsil().finally(() => { tleSoz = null; });
+    return tleSoz;
+  }
+  async function tleGetirAsil() {
     const kayit = U.oku('tle_iss', null);
     if (kayit && Date.now() - kayit.alindi < TLE_TAZE) return kayit;
     try {
@@ -46,7 +52,8 @@
     const gmst = satellite.gstime(t);
     const la = satellite.ecfToLookAngles(gd, satellite.eciToEcf(pv.position, gmst));
     /* Güneş ışığı: Güneş yönüne izdüşüm ve gölge silindirine uzaklık */
-    const g = G.A.GeoVector('Sun', t, true);
+    /* Güneş yönü J2000'den tarihin ekvatoruna döndürülür (SGP4 konumu TEME: tarihin ekvatoru) */
+    const g = G.A.RotateVector(G.A.Rotation_EQJ_EQD(t), G.A.GeoVector('Sun', t, true));
     const gl = Math.hypot(g.x, g.y, g.z);
     const s = [g.x / gl, g.y / gl, g.z / gl];
     const r = pv.position;
@@ -86,7 +93,15 @@
       /* Alacakaranlık tanımı geometrik yüksekliğe göredir (kırılma eklenmez) */
       const karanlik = d => { const e = G.A.Equator('Sun', d.t, gzl, true, true); return G.A.Horizon(d.t, gzl, e.ra, e.dec).altitude < -6; };
       const gercekGorunen = tumu.filter(d => d.isikli && karanlik(d));
+      /* Görünür bölümün neden başladığı/bittiği: ufuk, Dünya'nın gölgesi ya da gök aydınlığı */
+      let basNeden = null, sonNeden = null;
+      if (gercekGorunen.length) {
+        const i = tumu.indexOf(gercekGorunen[0]), j = tumu.indexOf(gercekGorunen[gercekGorunen.length - 1]);
+        basNeden = i === 0 ? 'ufuk' : (!tumu[i - 1].isikli ? 'golge' : 'karanlik');
+        sonNeden = j === tumu.length - 1 ? 'ufuk' : (!tumu[j + 1].isikli ? 'golge' : 'aydinlik');
+      }
       return {
+        basNeden, sonNeden,
         bas: tumu[0], tepe, bitis: tumu[tumu.length - 1],
         gorunur: gercekGorunen.length > 0,
         gBas: gercekGorunen[0] || null, gBit: gercekGorunen[gercekGorunen.length - 1] || null,
@@ -114,5 +129,18 @@
     }
     return Object.assign({ yol }, g);
   }
-  window.Uydu = { tleGetir, tleDonemi, gecisler, durumHesapla, anlik, yakinGecis };
+  /* Ana iş parçacığını kilitlememek için gün gün hesap; aralarda tarayıcıya nefes aldırır.
+     Gün sınırına denk gelen geçişler için 20 dk örtüşme, tepe anına göre tekilleştirme. */
+  async function gecislerParcali(tle, konum, bas, gun) {
+    const ls = [];
+    for (let d = 0; d < gun; d++) {
+      const b = new Date(bas.getTime() + d * 86400e3 - (d ? 20 * 60e3 : 0));
+      gecisler(tle, konum, b, (d ? 20 / 1440 : 0) + 1).forEach(g => {
+        if (!ls.some(x => Math.abs(x.tepe.t - g.tepe.t) < 120e3)) ls.push(g);
+      });
+      await new Promise(r => setTimeout(r, 0));
+    }
+    return ls.sort((a, b) => a.tepe.t - b.tepe.t);
+  }
+  window.Uydu = { tleGetir, tleDonemi, gecisler, gecislerParcali, durumHesapla, anlik, yakinGecis };
 })();

@@ -10,8 +10,9 @@
 
   /* ---------- Depo ---------- */
   function kayitlar() { const k = U.oku(DEPO, []); return Array.isArray(k) ? k : []; }
-  function kaydet(ls) { U.yaz(DEPO, ls); }
+  function kaydet(ls) { return U.yaz(DEPO, ls); }
   function yeniKimlik() { return Date.now().toString(36) + Math.random().toString(36).slice(2, 7); }
+  const KIMLIK = /^[a-z0-9]{1,24}$/;
   /* Bir cisim için son kayıt (Gökyüzü listelerindeki "görüldü" işareti için) */
   function sonGorulme(anahtar) {
     let son = null;
@@ -154,9 +155,16 @@
       konum,
       otomatik: otomatik(cisim, zaman, konum)
     };
+    /* Düzenlemede eski kaydın tahmini bulut/yağış değerleri korunur: o saatin tahmini artık önbellekte olmayabilir */
+    if (eski && eski.otomatik) {
+      ['bulut', 'yagisOl'].forEach(a => { if (kayit.otomatik[a] == null && eski.otomatik[a] != null && eski.zaman === kayit.zaman) kayit.otomatik[a] = eski.otomatik[a]; });
+    }
     U.yaz('defterSonAlet', kayit.alet);
     if (eski) ls[ls.indexOf(eski)] = kayit; else ls.push(kayit);
-    kaydet(ls);
+    if (!kaydet(ls)) {
+      el.querySelector('#dfKaydet').insertAdjacentHTML('afterend', '<span class="hata-kutu" role="alert" style="display:block">Kaydedilemedi: telefonun bu site için ayrılan depolama alanı dolu ya da kapalı. Önce "Yedeği indir" ile yedek al.</span>');
+      return;
+    }
     formKapat();
     listeYaz();
   }
@@ -201,7 +209,7 @@
         if (o.yagisOl != null && o.yagisOl > 0) parca.push('yağış olasılığı %' + o.yagisOl);
         return `<li><span class="ad">${U.kacis(k.cisim.ad)}</span><span class="sag kucuk soluk">${U.kacis(k.konum.ad)}</span>
           <span class="alt">${parca.map(U.kacis).join(' · ')}${k.not ? `<span class="defter-not">${U.kacis(k.not)}</span>` : ''}
-          <span class="cip-grup" style="margin-top:6px"><button type="button" class="bag" data-is="duzenle" data-id="${k.id}">Düzenle</button><button type="button" class="bag" data-is="sil" data-id="${k.id}">Sil</button></span></span></li>`;
+          <span class="cip-grup" style="margin-top:6px"><button type="button" class="bag" data-is="duzenle" data-id="${U.kacis(k.id)}">Düzenle</button><button type="button" class="bag" data-is="sil" data-id="${U.kacis(k.id)}">Sil</button></span></span></li>`;
       }).join('')}</ul>`).join('');
   }
 
@@ -216,10 +224,24 @@
     setTimeout(() => URL.revokeObjectURL(a.href), 2000);
     el.querySelector('#dfYedekDurum').textContent = ls.length + ' kayıt indirildi.';
   }
+  /* Yedekten gelen kayıt sıkı denetlenir; metinler zaten her yerde kaçışlanır */
+  const sayiMi = x => typeof x === 'number' && isFinite(x);
+  const metinMi = (x, en) => typeof x === 'string' && x.length <= en;
   function gecerliKayit(k) {
-    return k && typeof k.id === 'string' && typeof k.zaman === 'string' && !isNaN(new Date(k.zaman)) &&
-      k.cisim && typeof k.cisim.anahtar === 'string' && typeof k.cisim.ad === 'string' &&
-      k.konum && isFinite(k.konum.enlem) && isFinite(k.konum.boylam);
+    return !!(k && typeof k === 'object' && KIMLIK.test(k.id) && metinMi(k.zaman, 40) && !isNaN(new Date(k.zaman)) &&
+      k.cisim && metinMi(k.cisim.anahtar, 120) && metinMi(k.cisim.ad, 120) &&
+      metinMi(k.alet, 40) && metinMi(k.kosul, 40) && (k.not == null || metinMi(k.not, 2000)) &&
+      k.konum && metinMi(k.konum.ad, 120) && sayiMi(k.konum.enlem) && sayiMi(k.konum.boylam) &&
+      Math.abs(k.konum.enlem) <= 90 && Math.abs(k.konum.boylam) <= 180 &&
+      (k.otomatik == null || typeof k.otomatik === 'object'));
+  }
+  /* İçe alınan kaydın yalnız bilinen alanları saklanır */
+  function temizle(k) {
+    const o = k.otomatik || {}, oo = {};
+    ['ayOran', 'ayAlt', 'alt', 'az', 'bulut', 'yagisOl'].forEach(a => { if (sayiMi(o[a])) oo[a] = o[a]; });
+    if (metinMi(o.ayEvre, 40)) oo.ayEvre = o.ayEvre;
+    return { id: k.id, zaman: k.zaman, cisim: { anahtar: k.cisim.anahtar, ad: k.cisim.ad }, alet: k.alet, kosul: k.kosul, not: k.not || '',
+      konum: { ad: k.konum.ad, enlem: k.konum.enlem, boylam: k.konum.boylam, yukseklik: sayiMi(k.konum.yukseklik) ? k.konum.yukseklik : 0 }, otomatik: oo };
   }
   function yedekYukle(e) {
     const dosya = e.target.files && e.target.files[0];
@@ -237,9 +259,9 @@
       gelen.forEach(k => {
         if (!gecerliKayit(k)) { gecersiz++; return; }
         if (var_.has(k.id)) { atlanan++; return; }
-        ls.push(k); var_.add(k.id); eklenen++;
+        ls.push(temizle(k)); var_.add(k.id); eklenen++;
       });
-      kaydet(ls);
+      if (eklenen && !kaydet(ls)) { durumEl.textContent = 'Yüklenemedi: depolama alanı dolu ya da kapalı. Hiçbir kayıt eklenmedi.'; return; }
       listeYaz();
       durumEl.textContent = `${eklenen} kayıt eklendi` + (atlanan ? `, ${atlanan} kayıt zaten vardı` : '') + (gecersiz ? `, ${gecersiz} kayıt bozuk olduğu için atlandı` : '') + '.';
       e.target.value = '';

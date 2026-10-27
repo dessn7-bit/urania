@@ -14,9 +14,17 @@
       return v == null ? varsayilan : JSON.parse(v);
     } catch (e) { return varsayilan; }
   }
+  /* true: yazıldı; false: depo dolu/kapalı — çağıran kullanıcıya söylemeli (defter gibi) */
   function yaz(anahtar, deger) {
-    try { localStorage.setItem(DEPO_ONEK + anahtar, JSON.stringify(deger)); } catch (e) { /* depo yoksa ayar bu oturumla sınırlı kalır */ }
+    try { localStorage.setItem(DEPO_ONEK + anahtar, JSON.stringify(deger)); return true; } catch (e) { return false; }
   }
+  /* Ön ekli anahtarları süz (önbellek temizliği için) */
+  function anahtarlar(onek) {
+    const ls = [];
+    try { for (let i = 0; i < localStorage.length; i++) { const k = localStorage.key(i); if (k && k.indexOf(DEPO_ONEK + onek) === 0) ls.push(k.slice(DEPO_ONEK.length)); } } catch (e) { /* depo yok */ }
+    return ls;
+  }
+  function sil(anahtar) { try { localStorage.removeItem(DEPO_ONEK + anahtar); } catch (e) { /* depo yok */ } }
 
   /* Varsayılan konum: Fetih Mahallesi, Ataşehir — OpenStreetMap (Nominatim) mahalle merkezi
      41.0046423, 29.0762052. Kullanıcı GPS ya da elle değiştirebilir. */
@@ -89,8 +97,10 @@
   bicimleyicileriKur(konum().saatDilimi);
   /* En yakın dakikaya yuvarlanır (USNO gibi); Intl kendiliğinden aşağı keser */
   function saat(d) { return d ? saatB.format(new Date(Math.round(d.getTime() / 60e3) * 60e3)) : '—'; }
-  function gun(d) { return d ? gunB.format(d) : '—'; }
-  function gunHafta(d) { return d ? gunHaftaB.format(d) : '—'; }
+  /* Tarih de dakikaya yuvarlanır: 23:59:45 "00:00" yazılırken gün de ertesi gün olsun */
+  const dkYuvarla = d => new Date(Math.round(d.getTime() / 60e3) * 60e3);
+  function gun(d) { return d ? gunB.format(dkYuvarla(d)) : '—'; }
+  function gunHafta(d) { return d ? gunHaftaB.format(dkYuvarla(d)) : '—'; }
   function tamTarih(d) { return d ? tamB.format(d) : '—'; }
   function kadir(m) { return (m < 0 ? '−' : '') + sayi(Math.abs(m), 1); }
   function derece(x) { return sayi(Math.round(x) || 0, 0) + '°'; }
@@ -219,7 +229,12 @@
     if (!('geolocation' in navigator)) { konumDurum.hata = 'desteklenmiyor'; konumBildir(); return Promise.resolve(null); }
     if (konumAraniyor) return konumAraniyor;
     konumAraniyor = new Promise(coz => {
+      /* İzin sorusu hiç yanıtlanmazsa söz takılı kalmasın: 30 sn sonra serbest bırak */
+      const bekci = setTimeout(() => { konumAraniyor = null; coz(null); }, 30e3);
       navigator.geolocation.getCurrentPosition(async pos => {
+        clearTimeout(bekci);
+        /* Bu arada kullanıcı elle konum seçtiyse geç gelen GPS onu ezmesin */
+        if (!otoAcik() && !zorla) { konumAraniyor = null; coz(null); return; }
         const c = pos.coords;
         const once = konum();
         const yeni = { enlem: +c.latitude.toFixed(4), boylam: +c.longitude.toFixed(4) };
@@ -236,6 +251,7 @@
         }
         konumAraniyor = null; coz(konum());
       }, err => {
+        clearTimeout(bekci);
         konumDurum.hata = err.code === 1 ? 'izin' : 'alinamadi';
         konumDurum.kaynak = konum().oto ? 'son' : null;
         konumAraniyor = null; konumBildir(); coz(null);
@@ -273,7 +289,7 @@
 
   window.Urania = {
     modul(ad, tanim) { moduller[ad] = tanim; },
-    basla, oku, yaz, konum, konumYaz, VARSAYILAN_KONUM, konumuBul, konumDurum, otoAcik, otoAyarla, dilimTahmin, dilimAdi, veri, guvenliUrl, icsMetni, icsIndir,
+    basla, oku, yaz, sil, anahtarlar, konum, konumYaz, VARSAYILAN_KONUM, konumuBul, konumDurum, otoAcik, otoAyarla, dilimTahmin, dilimAdi, veri, guvenliUrl, icsMetni, icsIndir,
     sayi, bilimsel, saat, gun, gunHafta, tamTarih, kadir, derece, kacGun, kacis
   };
 })();

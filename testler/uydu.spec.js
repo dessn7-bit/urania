@@ -50,3 +50,12 @@ test('TLE dönemi doğru çözülür', () => {
   /* 26300.17675415 → 2026'nın 300. günü = 27 Ekim, 04:14:31,6 UT (CelesTrak JSON EPOCH ile aynı) */
   expect(Uydu.tleDonemi(TLE.s1).toISOString().slice(0, 19)).toBe('2026-10-27T04:14:31');
 });
+
+test('Gölgeden çıkış anı Skyfield (DE421) ile ±2 sn — Güneş yönü tarihin ekvatoruna döndürülmüş', () => {
+  /* Skyfield is_sunlit, saniye saniye tarama: 28 Ekim 02:20:35, 29 Ekim 03:08:02, 30 Ekim 02:22:34 (UT) */
+  [['2026-10-28T02:19:54Z', '2026-10-28T02:20:35Z'], ['2026-10-29T03:09:50Z', '2026-10-29T03:08:02Z'], ['2026-10-30T02:22:06Z', '2026-10-30T02:22:34Z']].forEach(([tepe, cikis]) => {
+    const g = bul(tepe);
+    expect(g.basNeden).toBe('golge');
+    expect(sn(g.gBas.t, cikis)).toBeLessThanOrEqual(2);
+  });
+});
