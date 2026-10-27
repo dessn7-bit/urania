@@ -334,3 +334,40 @@ Ortak notlar:
 ## Arama sayısı
 
 WebSearch: 22. WebFetch: yalnız bu aramaların sonuç URL'leri ve proje kaynak dosyalarında zaten bulunan URL'ler (Spot the Station için sunucunun verdiği yönlendirme adresi nasa.gov/spot-the-station).
+
+## Doğrulama (bağımsız)
+
+Tarih: 2026-10-27. Doğrulayıcı görevleri yazan ajan değildir. 40 görevin tamamı kaynak satırlarıyla eşleştirildi. Yüksek riskli 11 iddia kaynağı yeniden açılarak (WebFetch) kontrol edildi: EarthSky M11, EarthSky M8 (iki kez), Astronomy/Harrington Winter's first act, Turn Left at Orion (Merkür–Venüs), BinoSky M42, M35, M22, M7, BBC Teapot, EarthSky Albireo, BBC dolunay ışınları, EarthSky Coma. WebSearch kullanılmadı (0).
+
+Açı hesapları [H]: python3, küresel kosinüs formülü; koordinatlar veri/hedefler.json ve veri/yildizlar.json. Adı verilerde olmayan yıldızlar veri/takimyildiz.json çizgi noktalarından konumla seçildi: μ And (14,19°, +38,50°, 3,86); η Her (250,72°, +38,92°, 3,48); π Her (258,76°, +36,81°, 3,16); ζ Her = "Rutilicus"; γ Sge (299,69°, +19,49°, 3,51; okun doğu ucu); δ Aql (291,37°, +3,12°, 3,36; veride "Almizan" adıyla); γ Aql = Tarazed (296,56°, +10,61°, 2,72); θ Aur = "Mahasim".
+
+Tutarlı bulunan tarifler (değişiklik yok): Kemer→M42 4,2° güney; Shedar→M31 15° güney; Mizar–Alcor 11,81′; Merak–Dubhe 5,4°; M13 ζ→η çizgisinde 0,66 kesirde, çizgiden 0,13°; M92 η–π 6,7°, η–M92 7,7°, π–M92 6,3° (kabaca eşkenar, orta noktadan KKD); M3 Arcturus–Cor Caroli orta noktasına 0,9°; Askı Altair→Vega çizgisinin 0,38'inde, Tarazed Altair'den 2,1° KKB ve çizgiden 0,2°; γ Sge→M27 3,2° kuzey (PA 3°), Altair→γ Sge 10,8° (≈ bir yumruk); Lesath→Shaula uzantısı M7'ye 0,7° yakın, Shaula'dan 4,7°; Kaus Borealis→M22 2,4° KD (PA 52°); M35 "1 Gem" ile η Gem'in kuzeyinde, 5,8 kadirlik yıldızın (92,88°, +24,42°) 0,56° batısında; M38→M36 2,3° GD (PA 137°); Elnath–θ Aur orta noktası→M37 2,2° doğu; Kültürasyon yükseklikleri (M7 14,2°, M6 16,8°, M8 24,6°, M22 25,1°, M11 42,7°, M13 85,5°) ve Çift Küme en alçak 8,1° doğru; Perseid radyantı +58° > 49° (batmaz) doğru.
+
+Düzeltmeler (veri/gorevler.json):
+| id | Sorun | Düzeltme | Dayanak |
+|---|---|---|---|
+| ulker | "Kemerden batıya" yönü eksik; uzaklık yok | "batıya, biraz da kuzeye (kuzeybatıya)"; kemerden Aldebaran ~23°, Ülker ~37° | [H] Alnilam→Aldebaran 23,1° PA 321°; Alnilam→M45 36,8° PA 315° |
+| hiyadlar | aynı yön sorunu | "kuzeybatıya"; Aldebaran ~23° | [H] aynı |
+| orion-bulutsusu | "Trapez sıradan dürbünde seçilmez" kaynaktan sert | "dört yıldızını seçmek zordur; sehpalı 16×+ ile mümkün"; BinoSky: en parlak üye 5,4, öbürleri düşük büyütmede kolay ayrılmaz | Harrington "can be tough"; BinoSky "not easily resolved at low magnification" (yeniden okundu) |
+| andromeda | Mirach→μ uzantısında ne kadar gidileceği yok | "Mirach–μ ~4°; μ'nün ötesine aynı uzaklık" | [H] Mirach–μ 3,87°; M31 çizgide 2,00 kesirde, çizgiden 0,01° |
+| arikovani | "biraz altında" belirsiz | "orta noktadan ~5° güneybatı" eklendi | [H] orta nokta→M44 5,2° PA 229°; çizgiden 4,95° |
+| kutup-yildizi | uzaklık yok | "Dubhe'den ~29°, Merak–Dubhe aralığının beş katından biraz fazla" | [H] Dubhe–Polaris 28,7° (5,3×); uzantı Polaris'e 1,9° yakın |
+| halter | M27'nin takımyıldızı belirtilmemiş; okur Okçuk'ta sanabilir | "komşu Tilkicik takımyıldızında" | veri/hedefler.json M27 "Vul"; takimyildiz.json Vul = "Tilkicik" |
+| yaban-ordegi | "δ'dan aynı yönde bu uzaklığın iki katından biraz fazla" → ~17–18° ilerletir, M11'i ~5° aşar | "δ'nın ~13° ötesi = Altair–δ'nın 1,5 katı daha (Altair'den toplam 2,5 katı)"; Kalkan takımyıldızı eklendi | [H] Altair–δ 8,52°; δ–M11 12,73° (1,49×); Altair'den 2,49×; EarthSky "keep going downward a bit more than twice the Altair-Delta Aquilae distance" (belirsiz ifade, yeniden okundu); hedefler.json M11 "Sct" = Kalkan |
+| sac-kumesi | "iki katı kadar uzat" Zosma'dan 2× (toplam 3×) diye okunabilir | "Zosma'nın ötesine aynı uzunlukta bir kez daha; Regulus'tan ~2×"; Regulus–Zosma ~18° | [H] Regulus–Zosma 17,9°; Mel 111 çizgide 1,94 kesirde, çizgiden 1,4°; EarthSky "go about twice this distance" (yeniden okundu) |
+| m7 (ipucu) | M6 "3° kuzeybatı"; hesap 3,8° | "EarthSky 3° diyor, katalogdan merkezler arası ~4°" | [H] M7→M6 3,83° PA 312° |
+| deniz-kulagi | Başlangıç noktası belirsiz; dürbün görünümü (çekirdek, yarık, küme) kaynakta dürbüne bağlanmıyor ve kent göğü/alçaklık için abartılı | Alnasl'ın ~6° kuzeyi eklendi; çekirdek/yarık/küme EarthSky'a atfedildi, "karanlık gökte biraz optik yardımla görkemli; kentte ve alçakta silinebilir" | [H] Alnasl→M8 6,06° PA 355°; Kaus Australis→M8 10,95° (= emzik γ–ε 5,54°'nin 2 katı); EarthSky: "takes on an oblong shape in binoculars", "brighter nucleus ... visible on one side", rift/küme için araç belirtilmiyor, "glorious with a dark sky and a bit of optical aid" (yeniden okundu) |
+| m38 | "6° kuzey" gülen yüze; M38'in kendisi 7,2° | "katalog konumlarına göre Elnath'ın ~7° kuzeyi" eklendi | [H] Elnath→M38 7,23° PA 4°; Harrington "aim 6° due north of Elnath" yayı gösteriyor, M38 "just off the northernmost star in the smile" (yeniden okundu) |
+| venus-evresi | "Güneş'e ~20° yaklaştığında hilal görünür" kaynağı çarpıtıyor (kaynak: 20°'de bile gözlenebilir, o sırada %6 hilal) | Kaynak ifadesine çevrildi; "Güneş'e tehlikeli ölçüde yakın bölge" uyarısı eklendi | Turn Left at Orion: "still quite observable when it's just 20° from the Sun. At that time it's an awesome 6% crescent" (yeniden okundu) |
+| dunya-isigi | İnce hilal Güneş'e yakın, dürbün öneriliyor, güvenlik uyarısı yok | GÜVENLİK cümlesi + NASA Eclipse safety kaynağı | d11_kaynak.md satır 153 (NASA: "binoculars ... will instantly cause severe eye injury") |
+| ay-terminator | "Yeni aydan kısa süre sonra" dürbün önerisi, güvenlik uyarısı yok | "ince hilal Güneş'e yakın; dürbünü Güneş battıktan sonra çevir" + NASA kaynağı | aynı |
+| ay-ortmesi | IOTA'nın "Under good conditions" koşulu düşmüş | "iyi koşullarda" eklendi | ortme_esik_tahmin.md satır 109 |
+| neptun | "kentte büyük olasılıkla göremezsin" kaynaksız kesin yargı; Titan (daha sönük, ~8,5) için "seçemeyebilirsin" denirken tutarsız | "kent göğünde seçemeyebilirsin, karanlık bir yerde dene" | 7×50 kent sınır kadiri için kaynak yok (yukarıdaki "Bulamadıklarım") |
+
+Diğer denetimler:
+- Takımyıldız adları: görev metinlerinde geçen tüm takımyıldızlar takimyildiz.json "ad" ile aynı (Avcı, Boğa, Kanatlıat, Andromeda, Kraliçe, İkizler, Aslan, Yengeç, Kahraman, Büyük Ayı, Küçük Ayı, Kuğu, Herkül, Çoban, Av Köpekleri, Okçuk, Kartal, Akrep, Yay, Arabacı, Berenis'in Saçı; eklenenler Tilkicik, Kalkan). "Orion Bulutsusu" hedefler.json adıyla tutarlı. Bayer adları Latince iyelik biçiminde (μ Andromedae vb.) bırakıldı.
+- Güneş güvenliği: venus-evresi ve merkur ipuçlarında vardı; dunya-isigi ve ay-terminator'a eklendi.
+- Zorluk: kadir, yükseklik ve kaynak yargılarıyla tutarlı bulundu (M7 2 / M8 3: M7 3,3 kadir ve BinoSky "kentten bile kolay"; M8 5,8 kadir). Değiştirilmedi.
+- Görev çıkarılmadı. m35, m36, m37'de "ipucu" alanı yok; gorevler.js satır 112 bunu koşullu gösteriyor, sorun değil.
+- Yan bulgu (görev dışı, düzeltilmedi): veri/yildizlar.json "adlar" içinde "Tarazed" iki yıldıza verilmiş (296,56°, +10,61°, 2,72 = γ Aql; 298,12°, +1,01°, 3,87 de aynı adı taşıyor); "Propus" da iki yıldızda (91,03° 4,16 ve 93,72° 3,31). Haritada yanlış etiket çıkabilir.
+- Askıda: 7×50 ile kent göğünde sınır kadir (Neptün, Titan, M3, M92, M36–M38 yargıları) için yayımlanmış kaynak yine bulunamadı. M44'te "düzinelerce" (Astronomy) ile "~20" (NASA) birlikte duruyor; kentte gerçek sayı kaynaklı değil.

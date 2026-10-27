@@ -108,7 +108,7 @@
       s += S.yazi(cx - r - 20, cy + 20, 'Kuzey', { boy: 14, renk: R.soluk });
       s += S.yazi(cx + r + 20, cy + 20, 'Güney', { boy: 14, renk: R.soluk, hiza: 'end' });
       s += S.cizgi(cx, cy, cx, cy - r, { renk: R.soluk, kalin: 1, kesik: '3 4' });
-      s += S.yazi(cx, cy - r - 8, 'Başucu', { boy: 13, hiza: 'middle', renk: R.soluk });
+      s += S.yazi(cx + 5, cy - r - 8, 'Başucu', { boy: 13, renk: R.soluk });   // sola değil sağa: yeşil yay başucunun 8° solunda biter
       /* hiç batmayanlar: kutup çevresinde 41° yarıçaplı bölge; meridyen kesitinde kuzey ufkundan 82° yüksekliğe */
       s += S.yay(cx, cy, r + 9, 180 - 2 * enlem, 180, { renk: R.iyi, kalin: 4, uc: 'round' });
       s += S.yazi(cx - r - 4, cy - r + 4, 'Hiç batmayanlar', { boy: 13, renk: R.iyi, hiza: 'middle' });
@@ -122,7 +122,7 @@
       /* gök ekvatoru: kutba dik, güney ufkundan 49° yukarı */
       const ea = 90 - enlem, ex = cx + r * Math.cos(ea * rad), ey = cy - r * Math.sin(ea * rad);
       s += S.cizgi(cx, cy, ex, ey, { renk: R.mavi, kalin: 1.8, kesik: '6 4' });
-      s += S.yazi(ex - 4, ey - 10, 'Gök ekvatoru', { boy: 14, renk: R.mavi, hiza: 'middle' });
+      s += S.yazi(ex + 8, ey - 6, 'Gök ekvatoru', { boy: 14, renk: R.mavi });   // çemberin dışında, çizgiyle kesişmesin
       s += S.yay(cx, cy, 70, 0, ea, { renk: R.mavi, kalin: 1.2 });
       s += S.yazi(cx + 76, cy - 22, '49°', { boy: 15, renk: R.mavi });
       s += S.daire(cx, cy, 5, { dolgu: R.metin, renk: R.metin });

@@ -120,7 +120,7 @@
     ciz(S) {
       const R = S.R, al = { x: 52, y: 34, w: 330, h: 186 };
       const ek = S.eksen(al, { x0: 2019.5, x1: 2027, y0: 0, y1: 180 }, { xIsaret: [[2020, '2020'], [2022, '2022'], [2024, '2024'], [2026, '2026']], yIsaret: [0, 50, 100, 150] });
-      let s = ustAd(S, al, 'Leke sayısı (aylık)');
+      let s = ustAd(S, al, 'Leke sayısı (aylık, düzeltilmiş)');   // 161: SIDC'nin 13 aylık düzeltilmiş değeri, ham aylık değil
       /* panel öngörüsü: tepe 2023–2026 arasında, 95–130 leke */
       s += S.kutu(ek.X(2023), ek.Y(130), ek.X(2026) - ek.X(2023), ek.Y(95) - ek.Y(130), { dolgu: R.vurguSoluk, renk: R.vurgu, kalin: 1, kesik: '4 3' });
       s += S.yazi((ek.X(2023) + ek.X(2026)) / 2, ek.Y(112.5) + 5, 'Öngörü: 95–130', { boy: 13, hiza: 'middle', renk: R.vurgu });
@@ -484,27 +484,31 @@
   C.ekle('d6-atarca', {
     ders: 'd6', bolum: 6, oran: 1.02,
     baslik: 'Atarca: dönen bir deniz feneri',
-    aciklama: 'Nötron yıldızı dönme ekseni çevresinde döner; ışınım demetleri ise ondan eğik duran manyetik eksen boyunca çıkar. Demet her dönüşte Dünya\'yı süpürdüğünde bir atım görürüz. Alttaki şerit, Jocelyn Bell\'in 1967\'de bulduğu ilk atarcanın 1,337 saniye arayla gelen atımlarıdır. Çizim ölçeksizdir.',
+    aciklama: 'Nötron yıldızı dönme ekseni çevresinde döner; ışınım demetleri ise ondan eğik duran manyetik eksen boyunca çıkar. Demet her dönüşte bir koni tarar; Dünya bu koninin üstündeyse her dönüşte bir atım görürüz. Çizim, demetin tam Dünya\'ya döndüğü anı gösteriyor. Alttaki şerit, Jocelyn Bell\'in 1967\'de bulduğu ilk atarcanın 1,337 saniye arayla gelen atımlarıdır. Çizim ölçeksizdir.',
     kaynak: [{ ad: 'NASA, Neutron Stars and Pulsars', url: 'https://imagine.gsfc.nasa.gov/science/objects/pulsars1.html' }, { ad: 'Sky & Telescope, Jocelyn Bell Burnell', url: 'https://skyandtelescope.org/astronomy-resources/famous-astronomers/jocelyn-bell-burnell-pulsar-pioneer/' }],
     ciz(S) {
       const R = S.R, cx = 130, cy = 128;
       let s = '';
-      /* dönme ekseni ve dönüş oku */
-      s += S.cizgi(cx, 28, cx, 222, { renk: R.soluk, kalin: 1.2, kesik: '5 4' });
-      s += S.yol(`M${cx - 30},38 A30,8 0 1 0 ${cx + 30},38`, { renk: R.metin, kalin: 1.5 });
-      s += S.ok(cx + 26, 41, cx + 31, 37, { renk: R.metin, kalin: 1.5, boy: 7 });
-      s += S.yazi(cx - 38, 30, 'dönme ekseni', { boy: 13, renk: R.soluk, hiza: 'end' });
-      /* manyetik eksen 25° eğik, demetler */
-      const a = 25 * Math.PI / 180, ux = Math.sin(a), uy = -Math.cos(a), px = -uy, py = ux, L = 100, gen = 20;
+      /* Demetin Dünya'yı süpürebilmesi için Dünya yönü ile dönme ekseni arasındaki açı, manyetik eksenin eğikliğine
+         eşit olmalı. Çizim demetin tam Dünya'ya döndüğü anı gösterir: manyetik eksen yatay (Dünya'ya), dönme ekseni ondan
+         60° eğik (dikeyden 30° sağa yatık). */
+      const yat = 30;
+      /* dönme ekseni ve dönüş oku (dik çizilip 30° döndürülür) */
+      s += S.grup(S.cizgi(cx, 28, cx, 222, { renk: R.soluk, kalin: 1.2, kesik: '5 4' }) +
+        S.yol(`M${cx - 30},38 A30,8 0 1 0 ${cx + 30},38`, { renk: R.metin, kalin: 1.5 }) +
+        S.ok(cx + 26, 41, cx + 31, 37, { renk: R.metin, kalin: 1.5, boy: 7 }), `rotate(${yat} ${cx} ${cy})`);
+      s += S.yazi(cx + 60, 30, 'dönme ekseni', { boy: 13, renk: R.soluk });
+      /* manyetik eksen (dönme ekseninden 60° eğik), şu an Dünya'ya bakan demetler */
+      const ux = 1, uy = 0, px = 0, py = 1, L = 100, gen = 20;
       [1, -1].forEach(y => {
         const tx = cx + y * L * ux, ty = cy + y * L * uy;
         s += `<polygon points="${cx + y * 12 * ux},${cy + y * 12 * uy} ${tx + gen * px},${ty + gen * py} ${tx - gen * px},${ty - gen * py}" fill="${R.mavi}" opacity="0.35"/>`;
         s += S.cizgi(cx, cy, tx, ty, { renk: R.mavi, kalin: 1.8 });
       });
-      s += S.yazi(cx + L * ux + 14, cy + L * uy + 10, 'ışınım demeti', { boy: 13, renk: R.mavi });
-      s += S.yazi(cx + 0.55 * L * ux + 22, cy + 0.55 * L * uy + 8, 'manyetik eksen', { boy: 13, renk: R.mavi });
+      s += S.yazi(cx + 0.6 * L, cy + 40, 'ışınım demeti', { boy: 13, renk: R.mavi, hiza: 'middle' });
+      s += S.yazi(cx + 28, cy - 30, 'manyetik eksen', { boy: 13, renk: R.mavi });
       s += S.daire(cx, cy, 12, { dolgu: R.yildiz, renk: 'none' });
-      s += S.yazi(cx + 18, cy + 5, 'nötron yıldızı', { boy: 13, renk: R.metin });
+      s += S.yazi(cx - 16, cy - 20, 'nötron yıldızı', { boy: 13, renk: R.metin, hiza: 'end' });
       /* Dünya */
       s += S.daire(352, cy, 9, { dolgu: R.mavi, renk: 'none' }) + S.yazi(352, cy + 26, 'Dünya', { boy: 13, hiza: 'middle', renk: R.soluk });
       s += S.cizgi(234, cy, 340, cy, { renk: R.soluk, kalin: 1, kesik: '2 4' });

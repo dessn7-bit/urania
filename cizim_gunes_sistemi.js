@@ -175,9 +175,9 @@
       s += nokta(l3x, l3y, 'L3', false, -10, 5, 'end');
       s += nokta(l4x, l4y, 'L4', true, 10, -6, 'start');
       s += nokta(l5x, l5y, 'L5', true, 10, 16, 'start');
-      s += S.yazi(dx - 34, dy + 42, 'SOHO', { boy: 13, hiza: 'middle', renk: R.soluk });
+      s += S.yazi(dx - 30, dy + 42, 'SOHO', { boy: 13, hiza: 'end', renk: R.soluk });            // Dünya–L5 kesik çizgisinin solunda
       s += S.yazi(dx + 34, dy + 42, 'Webb', { boy: 13, hiza: 'middle', renk: R.soluk });
-      s += S.yazi(l4x + 10, l4y + 12, 'Truva asteroitleri', { boy: 13, renk: R.soluk });
+      s += S.yazi(l4x + 26, l4y + 12, 'Truva asteroitleri', { boy: 13, renk: R.soluk });         // yörünge çemberinin dışında
       /* gösterge */
       s += S.yazi(12, 312, 'L1 ve L2: Dünya\'dan ~1,5 milyon km (abartıldı)', { boy: 13, renk: R.soluk });
       s += S.daire(18, 333, 5, { dolgu: R.yuzey, renk: R.uyari, kalin: 2 }) + S.yazi(30, 338, 'kararsız', { boy: 13 });
