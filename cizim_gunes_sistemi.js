@@ -81,7 +81,7 @@
   C.ekle('d3-kepler3', {
     ders: 'd3', bolum: 2, oran: 0.82,
     baslik: 'P² = a³: gezegenler tek bir çizgide',
-    aciklama: 'Yatay eksende Güneş\'e ortalama uzaklık (AB), dikey eksende bir turun süresi (yıl) var; iki eksen de logaritmik, her büyük çentik 10 kat. Sekiz gezegen ve Plüton, P² = a³ kuralının çizdiği tek bir doğrunun üstüne düşer. Uzaklık 10 kat artınca süre yaklaşık 32 kat artar.',
+    aciklama: 'Yatay eksende Güneş\'e ortalama uzaklık (AB), dikey eksende bir turun süresi (yıl) var; iki eksen de logaritmiktir, yani eşit boşluk eşit kat demektir. Sekiz gezegen ve Plüton, P² = a³ kuralının çizdiği tek bir doğrunun üstüne düşer. Uzaklık 10 kat artınca süre yaklaşık 32 kat artar.',
     kaynak: [{ ad: 'NASA NSSDCA – Planetary Fact Sheet', url: 'https://nssdc.gsfc.nasa.gov/planetary/factsheet/' },
       { ad: 'Wikipedia – Kepler\'s laws of planetary motion', url: 'https://en.wikipedia.org/wiki/Kepler%27s_laws_of_planetary_motion' }],
     ciz(S) {
@@ -151,7 +151,7 @@
   C.ekle('d3-lagrange', {
     ders: 'd3', bolum: 8, oran: 0.88,
     baslik: 'Güneş–Dünya sisteminin beş Lagrange noktası',
-    aciklama: 'L1 Dünya ile Güneş arasında, L2 Dünya\'nın tam arkasında, ikisi de Dünya\'dan yaklaşık 1,5 milyon km uzakta; L3 Güneş\'in öbür yanında. L4 ve L5, Güneş ve Dünya ile birer eşkenar üçgen kurar; biri Dünya\'nın önünde, biri arkasında dolanır. Turuncu noktalar kararsızdır, araçlar küçük ateşlemelerle yerinde durur; yeşil noktalar kararlıdır. L1 ile L2\'nin Dünya\'ya uzaklığı abartıldı, çizim ölçeksizdir.',
+    aciklama: 'L1 Dünya ile Güneş arasında, L2 Dünya\'nın tam arkasında, ikisi de Dünya\'dan yaklaşık 1,5 milyon km uzakta; L3 Güneş\'in öbür yanında. L4 ve L5, Güneş ve Dünya ile birer eşkenar üçgen kurar; biri Dünya\'nın önünde, biri arkasında dolanır. İçi boş noktalar kararsızdır, araçlar orada küçük ateşlemelerle yerinde durur; dolu noktalar kararlıdır. L1 ile L2\'nin Dünya\'ya uzaklığı abartıldı, çizim ölçeksizdir.',
     kaynak: [{ ad: 'ESA – What are Lagrange points?', url: 'https://www.esa.int/Science_Exploration/Space_Science/What_are_Lagrange_points' },
       { ad: 'NASA Science – Webb Orbit', url: 'https://science.nasa.gov/mission/webb/orbit/' },
       { ad: 'Wikipedia – Lagrange point', url: 'https://en.wikipedia.org/wiki/Lagrange_point' }],
@@ -169,7 +169,7 @@
       s += S.yazi(cx, cy + 34, 'Güneş', { boy: 14, hiza: 'middle', kalin: true });
       s += S.daire(dx, dy, 7, { dolgu: R.mavi, renk: R.mavi });
       s += S.yazi(dx, dy - 15, 'Dünya', { boy: 14, hiza: 'middle', kalin: true });
-      const nokta = (x, y, ad, kararli, ax, ay, hiza) => S.daire(x, y, 5, { dolgu: kararli ? R.iyi : R.uyari, renk: kararli ? R.iyi : R.uyari }) + S.yazi(x + ax, y + ay, ad, { boy: 15, kalin: true, hiza: hiza || 'middle', renk: kararli ? R.iyi : R.uyari });
+      const nokta = (x, y, ad, kararli, ax, ay, hiza) => S.daire(x, y, 5, { dolgu: kararli ? R.iyi : R.yuzey, renk: kararli ? R.iyi : R.uyari, kalin: 2 }) + S.yazi(x + ax, y + ay, ad, { boy: 15, kalin: true, hiza: hiza || 'middle', renk: kararli ? R.iyi : R.uyari });
       s += nokta(dx - 34, dy, 'L1', false, 0, 24);
       s += nokta(dx + 34, dy, 'L2', false, 0, 24);
       s += nokta(l3x, l3y, 'L3', false, -10, 5, 'end');
@@ -180,8 +180,8 @@
       s += S.yazi(l4x + 10, l4y + 12, 'Truva asteroitleri', { boy: 13, renk: R.soluk });
       /* gösterge */
       s += S.yazi(12, 312, 'L1 ve L2: Dünya\'dan ~1,5 milyon km (abartıldı)', { boy: 13, renk: R.soluk });
-      s += S.daire(18, 333, 5, { dolgu: R.uyari, renk: R.uyari }) + S.yazi(30, 338, 'kararsız', { boy: 13 });
-      s += S.daire(110, 333, 5, { dolgu: R.iyi, renk: R.iyi }) + S.yazi(122, 338, 'kararlı', { boy: 13 });
+      s += S.daire(18, 333, 5, { dolgu: R.yuzey, renk: R.uyari, kalin: 2 }) + S.yazi(30, 338, 'kararsız', { boy: 13 });
+      s += S.daire(110, 333, 5, { dolgu: R.iyi, renk: R.iyi, kalin: 2 }) + S.yazi(122, 338, 'kararlı', { boy: 13 });
       s += S.yazi(388, 338, 'ölçeksiz', { boy: 13, hiza: 'end', renk: R.soluk });
       return s;
     }
@@ -338,165 +338,180 @@
   C.ekle('d10-yildizil-kavusum', {
     ders: 'd10', bolum: 1, oran: 0.8,
     baslik: 'Yıldızıl ay ile kavuşum ayı',
-    aciklama: 'Solda Güneş, sağda Dünya\'nın yörüngesinden bir parça var. Birinci konumda yeni ay: Ay, Dünya ile Güneş arasında. 27,3 gün sonra Ay yıldızlara göre bir tam tur atmış ve aynı yöne bakıyor, ama Dünya bu sürede yaklaşık 27° ilerlediği için Ay henüz Güneş\'in önüne gelmemiş. Yeni ayın tekrarlanması için yaklaşık 2,2 gün daha gerekir: kavuşum ayı 29,5 gündür. Çizim ölçeksizdir.',
+    aciklama: 'Solda Güneş, sağda Dünya\'nın yörüngesinden bir parça var. Birinci konumda yeni ay: Ay, Dünya ile Güneş arasında. 27,3 gün sonra Ay yıldızlara göre bir tam tur atmış ve yine aynı yöne bakıyor, ama Dünya bu sürede yaklaşık 27° ilerlediği için Ay henüz Güneş\'in önüne gelmemiş. Yeni ayın tekrarlanması için yaklaşık 2,2 gün daha gerekir: kavuşum ayı 29,5 gündür. Çizim ölçeksizdir.',
     kaynak: [{ ad: 'NASA NSSDCA – Moon Fact Sheet', url: 'https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html' },
       { ad: 'Wikipedia – Orbital period', url: 'https://en.wikipedia.org/wiki/Orbital_period' }],
     ciz(S) {
-      const R = S.R, gx = 34, gy = 168, Ry = 262, ra = 40;
-      const P = 27.3217, Y = 365.256, Sk = 29.53;
-      const ilerleme = 360 * P / Y;                       // Dünya'nın 27,32 günde Güneş çevresinde aldığı açı ≈ 26,9°
+      const R = S.R, gx = 40, gy = 166, Ry = 250, ra = 40;
+      const P = 27.3217, Y = 365.256, Sk = 29.53;                 // yıldızıl ay, yıldızıl yıl, kavuşum ayı (gün)
+      const ilerleme = 360 * P / Y;                               // Dünya'nın 27,32 günde aldığı açı ≈ 26,9°
       const a1 = -ilerleme / 2, a2 = ilerleme / 2;
-      const yer = a => [gx + Ry * Math.cos(a * rad), gy - Ry * Math.sin(a * rad)];
-      const [e1x, e1y] = yer(a1), [e2x, e2y] = yer(a2);
+      const yer = (a, r) => [gx + r * Math.cos(a * rad), gy - r * Math.sin(a * rad)];
+      const [e1x, e1y] = yer(a1, Ry), [e2x, e2y] = yer(a2, Ry);
+      const aci = (x, y) => Math.atan2(-(gy - y), gx - x) / rad;   // Dünya'dan Güneş'e yön (matematik açısı)
+      const b1 = aci(e1x, e1y), b2 = b1 + ((aci(e2x, e2y) - b1 + 360) % 360);
+      const uc = (x, y, b, r) => [x + r * Math.cos(b * rad), y - r * Math.sin(b * rad)];
       let s = '';
-      /* Dünya yörüngesi yayı */
       s += S.yay(gx, gy, Ry, -24, 24, { renk: R.soluk, kalin: 1, kesik: '3 4' });
-      s += S.yay(gx, gy, Ry + 16, a1 + 3, a2 - 3, { renk: R.mavi, kalin: 1.5 });
-      s += S.ok(...yer(a2 - 6).map((q, i) => i === 0 ? gx + (Ry + 16) * Math.cos((a2 - 6) * rad) : gy - (Ry + 16) * Math.sin((a2 - 6) * rad)), gx + (Ry + 16) * Math.cos((a2 - 3) * rad), gy - (Ry + 16) * Math.sin((a2 - 3) * rad), { renk: R.mavi, kalin: 1.5, boy: 8 });
-      s += S.yazi(gx + (Ry + 22) * Math.cos(0), gy + 5, '≈ ' + v(ilerleme, 0) + '°', { boy: 13, renk: R.mavi });
+      /* Dünya'nın ilerlemesi */
+      const rr = Ry + ra + 14;
+      s += S.yay(gx, gy, rr, a1 + 2, a2 - 2, { renk: R.mavi, kalin: 1.5 });
+      s += S.ok(...yer(a2 - 6, rr), ...yer(a2 - 2, rr), { renk: R.mavi, kalin: 1.5, boy: 8 });
+      s += S.yazi(gx + rr + 6, gy + 5, '≈ ' + v(ilerleme, 0) + '°', { boy: 13, renk: R.mavi });
       s += S.daire(gx, gy, 20, { dolgu: R.gunes, renk: R.gunes });
       s += S.yazi(gx, gy + 40, 'Güneş', { boy: 14, hiza: 'middle', kalin: true });
-      /* Güneş'e doğru birim yön */
-      const yon = (x, y) => { const d = Math.hypot(gx - x, gy - y); return [(gx - x) / d, (gy - y) / d]; };
-      const u1 = yon(e1x, e1y), u2 = yon(e2x, e2y);
       /* 1. konum: yeni ay */
       s += S.daire(e1x, e1y, ra, { renk: R.soluk, kalin: 1, kesik: '2 4' });
-      s += S.ok(e1x, e1y, e1x + u1[0] * (ra - 12), e1y + u1[1] * (ra - 12), { renk: R.vurgu, kalin: 1.6, boy: 7 });
-      s += yariAydinlik(S, e1x, e1y, 10, Math.atan2(-u1[1], u1[0]) / rad, R.mavi);
-      s += yariAydinlik(S, e1x + u1[0] * ra, e1y + u1[1] * ra, 6.5, Math.atan2(-u1[1], u1[0]) / rad);
-      s += S.yazi(e1x - 6, e1y + ra + 20, '1. Yeni ay', { boy: 14, kalin: true, hiza: 'middle' });
-      /* 2. konum: 27,32 gün sonra; Ay yıldızlara göre aynı yönde (paralel) */
+      s += S.ok(e1x, e1y, ...uc(e1x, e1y, b1, ra - 11), { renk: R.vurgu, kalin: 1.6, boy: 7 });
+      s += yariAydinlik(S, e1x, e1y, 10, b1, R.mavi);
+      s += yariAydinlik(S, ...uc(e1x, e1y, b1, ra), 6.5, b1);
+      s += S.yazi(e1x - ra - 14, e1y + 22, '1. Yeni ay', { boy: 14, kalin: true, hiza: 'end' });
+      /* 2. konum: 27,32 gün sonra; Ay yıldızlara göre aynı yönde (birinci oka paralel) */
       s += S.daire(e2x, e2y, ra, { renk: R.soluk, kalin: 1, kesik: '2 4' });
-      s += S.ok(e2x, e2y, e2x + u1[0] * (ra - 12), e2y + u1[1] * (ra - 12), { renk: R.vurgu, kalin: 1.6, boy: 7 });
-      s += S.cizgi(e2x, e2y, e2x + u2[0] * ra, e2y + u2[1] * ra, { renk: R.metin, kalin: 1.2, kesik: '3 3' });
-      s += yariAydinlik(S, e2x, e2y, 10, Math.atan2(-u2[1], u2[0]) / rad, R.mavi);
-      s += yariAydinlik(S, e2x + u1[0] * ra, e2y + u1[1] * ra, 6.5, Math.atan2(-u2[1], u2[0]) / rad);
-      const b1 = Math.atan2(-u1[1], u1[0]) / rad, b2 = Math.atan2(-u2[1], u2[0]) / rad;
+      s += S.cizgi(e2x, e2y, ...uc(e2x, e2y, b2, ra), { renk: R.metin, kalin: 1.2, kesik: '3 3' });
+      s += S.ok(e2x, e2y, ...uc(e2x, e2y, b1, ra - 11), { renk: R.vurgu, kalin: 1.6, boy: 7 });
+      s += yariAydinlik(S, e2x, e2y, 10, b2, R.mavi);
+      s += yariAydinlik(S, ...uc(e2x, e2y, b1, ra), 6.5, b2);
       s += S.yay(e2x, e2y, ra + 9, b1, b2, { renk: R.uyari, kalin: 2.2 });
-      const bm = (b1 + b2) / 2;
-      s += S.yazi(e2x + (ra + 16) * Math.cos(bm * rad), e2y - (ra + 16) * Math.sin(bm * rad) + 4, '+' + v(Sk - P, 1) + ' gün', { boy: 14, hiza: 'end', renk: R.uyari, kalin: true });
-      s += S.yazi(e2x - 6, e2y - ra - 26, '2. ' + v(P, 1) + ' gün sonra', { boy: 14, kalin: true, hiza: 'middle' });
-      s += S.yazi(e2x - 6, e2y - ra - 10, 'bir tur: aynı yön', { boy: 13, hiza: 'middle', renk: R.vurgu });
-      /* gösterge */
-      s += S.yazi(78, 300, 'Kavuşum ayı: ' + v(P, 1) + ' + ' + v(Sk - P, 1) + ' ≈ ' + v(Sk, 1) + ' gün', { boy: 14, renk: R.metin });
+      s += S.yazi(e2x - ra - 16, e2y + 18, '+' + v(Sk - P, 1) + ' gün', { boy: 14, hiza: 'end', renk: R.uyari, kalin: true });
+      s += S.yazi(e2x - ra - 14, e2y - 34, '2. ' + v(P, 1) + ' gün sonra', { boy: 14, kalin: true, hiza: 'end' });
+      s += S.yazi(e2x - ra - 14, e2y - 17, 'bir tur: aynı yön', { boy: 13, hiza: 'end', renk: R.vurgu });
+      s += S.yazi(12, 308, 'Kavuşum ayı: ' + v(P, 1) + ' + ' + v(Sk - P, 1) + ' ≈ ' + v(Sk, 1) + ' gün', { boy: 14 });
       return s;
     }
   });
 
   C.ekle('d10-tutulma', {
-    ders: 'd10', bolum: 8, oran: 0.86,
+    ders: 'd10', bolum: 8, oran: 0.88,
     baslik: 'Tutulmalarda tam gölge ve yarı gölge',
-    aciklama: 'Üstte Güneş tutulması: Ay, Güneş ile Dünya arasına girer. Ay\'ın koyu, sivrilen tam gölgesi Dünya\'da dar bir şeride değer; orada tam tutulma görülür, çevresindeki yarı gölgede parçalı tutulma görülür. Altta Ay tutulması: Dünya, Güneş ile Ay arasına girer ve Ay, Dünya\'nın tam gölgesine dalar. Boylar ve uzaklıklar ölçeksizdir.',
+    aciklama: 'Açık zemin Güneş ışığının ulaştığı yerdir. Üstte Güneş tutulması: Ay, Güneş ile Dünya arasına girer. Ay\'ın koyu, sivrilen tam gölgesi Dünya\'da dar bir şeride değer; orada tam tutulma görülür, çevresindeki yarı gölgede parçalı tutulma görülür. Altta Ay tutulması: Dünya, Güneş ile Ay arasına girer ve Ay, Dünya\'nın tam gölgesine dalıp kızarır. Boylar ve uzaklıklar ölçeksizdir.',
     kaynak: [{ ad: 'NASA Science – Types of Eclipses', url: 'https://science.nasa.gov/eclipses/types/' },
       { ad: 'Wikipedia – Solar eclipse', url: 'https://en.wikipedia.org/wiki/Solar_eclipse' },
       { ad: 'Wikipedia – Lunar eclipse', url: 'https://en.wikipedia.org/wiki/Lunar_eclipse' }],
     ciz(S) {
-      const R = S.R, sx = 4, sr = 46;
-      /* Büyük (Güneş) ve küçük cisim arasındaki gölge konileri; x2 = gölgeyi yapan cismin merkezi */
-      function golge(cy, x2, r2, xSon) {
-        let s = '';
-        const tepe = x2 + (x2 - sx) * r2 / (sr - r2);                       // tam gölgenin tepesi (dış teğetler)
-        const kes = sx + (x2 - sx) * sr / (sr + r2);                        // iç teğetlerin kesişimi
+      const R = S.R;
+      let sx = 4, sr = 46;
+      /* doğru (p → q) ile çemberin yakın kesişimi */
+      const kesis = (p, q, c, r) => {
+        const d = [q[0] - p[0], q[1] - p[1]], f = [p[0] - c[0], p[1] - c[1]];
+        const A = d[0] * d[0] + d[1] * d[1], B = 2 * (f[0] * d[0] + f[1] * d[1]), Cc = f[0] * f[0] + f[1] * f[1] - r * r;
+        const t = (-B - Math.sqrt(B * B - 4 * A * Cc)) / (2 * A); return [p[0] + t * d[0], p[1] + t * d[1]];
+      };
+      /* Güneş (sx, sr) ile gölgeyi yapan cisim (x2, r2) arasındaki gölge konileri.
+         Tam gölge: dış teğetler (cisimden sonra sivrilir). Yarı gölge: iç teğetler (cisimden sonra açılır).
+         hedef {x, r}: gölge bu çembere (Dünya yüzeyine) düşer; yoksa xSon'da biter. */
+      function golge(cy, x2, r2, xSon, hedef) {
+        const tepe = x2 + (x2 - sx) * r2 / (sr - r2);
+        const kes = sx + (x2 - sx) * sr / (sr + r2);
         const ust = teget(x2, cy, r2, tepe, cy, -1), alt = teget(x2, cy, r2, tepe, cy, 1);
         const gU = teget(sx, cy, sr, tepe, cy, -1), gA = teget(sx, cy, sr, tepe, cy, 1);
-        const iU = teget(x2, cy, r2, kes, cy, 1), iA = teget(x2, cy, r2, kes, cy, -1);   // iç teğetin küçük cisimdeki değme noktaları
-        const jU = teget(sx, cy, sr, kes, cy, 1), jA = teget(sx, cy, sr, kes, cy, -1);
+        const iU = teget(x2, cy, r2, kes, cy, 1), iA = teget(x2, cy, r2, kes, cy, -1);
+        const jU = teget(sx, cy, sr, kes, cy, 1), jA = teget(sx, cy, sr, kes, cy, -1);   // Güneş'in alt (jU) ve üst (jA) değme noktası: iç teğet çaprazlanır
         const uzat = (p, q, x) => [x, p[1] + (q[1] - p[1]) * (x - p[0]) / (q[0] - p[0])];
-        const pU = uzat(jA, iU, xSon), pA = uzat(jU, iA, xSon);
+        let yari, pU, pA, yay = null;
+        if (hedef) {
+          const c = [hedef.x, cy];
+          pU = kesis(jU, iU, c, hedef.r); pA = kesis(jA, iA, c, hedef.r);
+          const t1 = Math.atan2(pU[1] - cy, pU[0] - hedef.x), t2 = Math.atan2(pA[1] - cy, pA[0] - hedef.x) - 2 * Math.PI;
+          yay = []; for (let i = 0; i <= 16; i++) { const t = t1 + (t2 - t1) * i / 16; yay.push([hedef.x + hedef.r * Math.cos(t), cy + hedef.r * Math.sin(t)]); }
+          yari = [iU, ...yay, iA];
+        } else { pU = uzat(jU, iU, xSon); pA = uzat(jA, iA, xSon); yari = [iU, pU, pA, iA]; }
         const tx = Math.min(tepe, xSon), tU = uzat(gU, ust, tx), tA = uzat(gA, alt, tx);
-        s += `<polygon points="${nk([iU, pU, pA, iA])}" fill="${R.soluk}" opacity="0.2"/>`;
-        s += `<polygon points="${nk([ust, tU, tA, alt])}" fill="${R.zemin}" opacity="0.95"/>`;
-        s += S.cizgi(jA[0], jA[1], pU[0], pU[1], { renk: R.soluk, kalin: 1 }) + S.cizgi(jU[0], jU[1], pA[0], pA[1], { renk: R.soluk, kalin: 1 });
-        s += S.cizgi(gU[0], gU[1], tU[0], tU[1], { renk: R.metin, kalin: 1, saydam: 0.6 }) + S.cizgi(gA[0], gA[1], tA[0], tA[1], { renk: R.metin, kalin: 1, saydam: 0.6 });
-        return { s, tepe, pU, pA };
+        let s = '';
+        s += `<polygon points="${nk(yari)}" fill="${R.zemin}" opacity="0.5"/>`;
+        s += `<polygon points="${nk([ust, tU, tA, alt])}" fill="${R.zemin}"/>`;
+        s += S.cizgi(jU[0], jU[1], pU[0], pU[1], { renk: R.soluk, kalin: 0.8, saydam: 0.8 }) + S.cizgi(jA[0], jA[1], pA[0], pA[1], { renk: R.soluk, kalin: 0.8, saydam: 0.8 });
+        s += S.cizgi(gU[0], gU[1], tU[0], tU[1], { renk: R.metin, kalin: 0.8, saydam: 0.5 }) + S.cizgi(gA[0], gA[1], tA[0], tA[1], { renk: R.metin, kalin: 0.8, saydam: 0.5 });
+        return { s, tepe, yay };
       }
+      const isik = (y, h) => S.kutu(0, y, 400, h, { dolgu: R.gunes, renk: 'none', saydam: 0.09 });
+      const kirp = (id, y, h, ic) => `<clipPath id="${id}"><rect x="0" y="${y}" width="400" height="${h}"/></clipPath><g clip-path="url(#${id})">${ic}</g>`;
       let s = '';
       /* --- Güneş tutulması --- */
-      let cy = 92;
+      let cy = 98;
       s += S.yazi(12, 18, 'Güneş tutulması (yeni ay)', { boy: 15, kalin: true });
-      const mx = 196, mr = 9, ex1 = 0;
-      const g1 = golge(cy, mx, mr, 330);
-      const dR = 40, dX = g1.tepe + dR - 3;                                   // Dünya yüzeyi tam gölgenin tepesine değsin
+      s += isik(28, 140);
+      const mx = 212, mr = 8, dR = 42;
+      const tepe1 = mx + (mx - sx) * mr / (sr - mr), dX = tepe1 + dR - 1;          // Dünya yüzeyi tam gölgenin ucuna değsin
+      const g1 = golge(cy, mx, mr, tepe1, { x: dX, r: dR });
+      s += kirp('cz-gs-tutulma-1', 28, 140, g1.s);
       s += S.daire(dX, cy, dR, { dolgu: R.yuzey2, renk: R.mavi, kalin: 1.5 });
-      s += g1.s;
+      s += S.egri(g1.yay, { renk: R.soluk, kalin: 4, uc: 'round' });                 // yarı gölgenin düştüğü bölge
       s += S.daire(sx, cy, sr, { dolgu: R.gunes, renk: R.gunes });
       s += S.daire(mx, cy, mr, { dolgu: R.ay, renk: R.ay });
-      s += S.yazi(mx, cy - 18, 'Ay', { boy: 13, hiza: 'middle' });
-      s += S.yazi(dX + 6, cy + dR + 18, 'Dünya', { boy: 13, hiza: 'middle' });
+      s += S.yazi(mx, cy - 16, 'Ay', { boy: 13, hiza: 'middle' });
+      s += S.yazi(dX + 8, cy + 5, 'Dünya', { boy: 13, hiza: 'middle' });
       s += S.daire(g1.tepe, cy, 3, { dolgu: R.uyari, renk: R.uyari });
-      s += S.cizgi(g1.tepe + 2, cy - 3, 338, cy - 34, { renk: R.uyari, kalin: 1 }) + S.yazi(342, cy - 32, 'tam', { boy: 13, renk: R.uyari });
-      s += S.yazi(342, cy - 48, 'parçalı', { boy: 13, renk: R.soluk });
-      s += S.cizgi(296, cy - 22, 338, cy - 52, { renk: R.soluk, kalin: 1 });
-      s += S.yazi(12 + ex1, cy + 64, 'Güneş', { boy: 13, renk: R.gunes });
+      s += S.cizgi(g1.tepe, cy + 4, 282, cy + 56, { renk: R.uyari, kalin: 1 }) + S.yazi(286, cy + 62, 'tam tutulma', { boy: 13, renk: R.uyari, kalin: true });
+      const yu = g1.yay[3];
+      s += S.cizgi(yu[0] - 2, yu[1] - 2, 238, cy - 50, { renk: R.metin, kalin: 1 }) + S.yazi(234, cy - 54, 'parçalı tutulma', { boy: 13, hiza: 'end' });
+      s += S.yazi(12, cy + 64, 'Güneş', { boy: 13, renk: R.gunes });
       /* --- Ay tutulması --- */
-      cy = 252;
-      s += S.cizgi(12, 172, 388, 172, { renk: R.cizgi, kalin: 1 });
-      s += S.yazi(12, 196, 'Ay tutulması (dolunay)', { boy: 15, kalin: true });
-      const dx2 = 182, dr2 = 26;
-      const g2 = golge(cy, dx2, dr2, 396);
-      s += g2.s;
+      cy = 262;
+      s += S.yazi(12, 200, 'Ay tutulması (dolunay)', { boy: 15, kalin: true });
+      s += isik(210, 106);
+      sx = -10; sr = 40;                                                           // ikinci panelde Güneş biraz daha uzak
+      const dx2 = 200, dr2 = 22, ayX = 330;
+      const g2 = golge(cy, dx2, dr2, 400);
+      s += kirp('cz-gs-tutulma-2', 210, 106, g2.s);
+      s += S.daire(ayX, cy, 9, { dolgu: R.uyari, renk: R.uyari, saydam: 0.75 });
       s += S.daire(sx, cy, sr, { dolgu: R.gunes, renk: R.gunes });
       s += S.daire(dx2, cy, dr2, { dolgu: R.yuzey2, renk: R.mavi, kalin: 1.5 });
       s += S.yazi(dx2, cy + 5, 'Dünya', { boy: 13, hiza: 'middle' });
-      const ayX = 318;
-      s += S.daire(ayX, cy, 9, { dolgu: R.uyari, renk: R.uyari, saydam: 0.8 });
-      s += S.yazi(ayX, cy + 52, 'Ay: tam gölgede', { boy: 13, hiza: 'middle', renk: R.uyari });
-      s += S.cizgi(ayX, cy + 12, ayX, cy + 38, { renk: R.uyari, kalin: 1 });
-      s += S.yazi(12, cy + 64, 'Güneş', { boy: 13, renk: R.gunes });
+      s += S.cizgi(ayX, cy + 12, ayX, cy + 32, { renk: R.uyari, kalin: 1 });
+      s += S.yazi(ayX, cy + 46, 'Ay: tam gölgede', { boy: 13, hiza: 'middle', renk: R.uyari });
+      s += S.yazi(36, cy + 46, 'Güneş', { boy: 13, renk: R.gunes });
       /* gösterge */
-      s += S.kutu(150, 330, 14, 12, { dolgu: R.zemin, renk: R.soluk });
-      s += S.yazi(170, 341, 'tam gölge', { boy: 13 });
-      s += S.kutu(260, 330, 14, 12, { dolgu: R.soluk, renk: R.soluk, saydam: 0.35 });
-      s += S.yazi(280, 341, 'yarı gölge', { boy: 13 });
+      s += S.kutu(40, 330, 16, 13, { dolgu: R.gunes, renk: 'none', saydam: 0.09 }) + S.kutu(40, 330, 16, 13, { renk: R.soluk });
+      s += S.yazi(62, 341, 'ışık', { boy: 13 });
+      s += S.kutu(150, 330, 16, 13, { dolgu: R.zemin, renk: R.soluk });
+      s += S.yazi(172, 341, 'tam gölge', { boy: 13 });
+      s += S.kutu(260, 330, 16, 13, { dolgu: R.gunes, renk: 'none', saydam: 0.09 }) + S.kutu(260, 330, 16, 13, { dolgu: R.zemin, renk: 'none', saydam: 0.5 }) + S.kutu(260, 330, 16, 13, { renk: R.soluk });
+      s += S.yazi(282, 341, 'yarı gölge', { boy: 13 });
       return s;
     }
   });
 
   C.ekle('d10-dugum', {
-    ders: 'd10', bolum: 8, oran: 0.84,
-    baslik: 'Neden her ay tutulma olmaz?',
-    aciklama: 'Güneş\'in çevresinde Dünya\'yı dört konumda görüyorsun. Ay\'ın yörüngesi Dünya\'nınkine 5,145° eğik; çizimde bu eğiklik abartıldı. Düz çizgi Ay yörüngesinin üst yarısı, kesikli çizgi alt yarısıdır. Solda ve sağda düğüm çizgisi Güneş\'e bakar: yeni ay ve dolunay düzlemin üstüne denk gelir ve tutulma olur. Önde ve arkada yeni Ay Güneş\'in altından ya da üstünden geçer, gölge Dünya\'yı ıskalar. Tutulma mevsimleri yaklaşık 173,3 gün arayla gelir.',
+    ders: 'd10', bolum: 8, oran: 0.7,
+    baslik: 'Eğik yörünge ve tutulma mevsimleri',
+    aciklama: 'Güneş\'in çevresinde Dünya\'yı dört konumda görüyorsun. Ay\'ın yörüngesi Dünya\'nınkine 5,145° eğik; çizimde bu eğiklik abartıldı. Düz çizgi Ay yörüngesinin Dünya yörüngesi düzleminin üstünde kalan yarısı, kesikli çizgi altında kalan yarısıdır; iki yarının buluştuğu noktalar düğümlerdir. İki konumda düğüm çizgisi Güneş\'e bakar: yeni ay düğüme denk gelir ve tutulma olabilir. Öbür iki konumda yeni ay düzlemin altında ya da üstünde kalır ve gölge Dünya\'yı ıskalar. Tutulma mevsimleri yaklaşık 173,3 gün arayla gelir.',
     kaynak: [{ ad: 'NASA NSSDCA – Moon Fact Sheet', url: 'https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html' },
       { ad: 'Wikipedia – Solar eclipse', url: 'https://en.wikipedia.org/wiki/Solar_eclipse' }],
     ciz(S) {
-      const R = S.R, cx = 200, cy = 158, Ry = 148, el = 24 * rad, ro = 34, egik = 22 * rad;   // eğiklik abartıldı (gerçek 5,145°)
+      /* 3B: ekliptik z = 0 düzlemi; bakış 26° yukarıdan. Ay yörüngesinin düğüm çizgisi uzayda sabit (Ω = 35°). */
+      const R = S.R, cx = 200, cy = 120, Ry = 150, el = 26 * rad, ro = 32, egik = -20 * rad, Om = 35 * rad;
       const P = (x, y, z) => [cx + x, cy + y * Math.sin(el) - z * Math.cos(el)];
+      const n = [Math.cos(Om), Math.sin(Om), 0], m = [-Math.sin(Om) * Math.cos(egik), Math.cos(Om) * Math.cos(egik), Math.sin(egik)];
       let s = '';
-      /* ekliptik (Dünya yörüngesi) */
-      const ek = []; for (let i = 0; i <= 96; i++) { const a = 2 * Math.PI * i / 96; ek.push(P(Ry * Math.cos(a), Ry * Math.sin(a), 0)); }
+      const ek = []; for (let i = 0; i <= 120; i++) { const a = 2 * Math.PI * i / 120; ek.push(P(Ry * Math.cos(a), Ry * Math.sin(a), 0)); }
       s += S.egri(ek, { renk: R.soluk, kalin: 1 });
-      s += S.daire(cx, cy, 15, { dolgu: R.gunes, renk: R.gunes });
-      s += S.yazi(cx, cy + 5, 'Güneş', { boy: 13, hiza: 'middle', renk: R.zemin, kalin: true });
-      /* dört konum: sağ (0), ön (90), sol (180), arka (270) — Ay yörüngesinin düğüm çizgisi x yönünde (uzayda sabit) */
-      [[0, true], [90, false], [180, true], [270, false]].forEach(([l, tut]) => {
-        const Ex = Ry * Math.cos(l * rad), Ey = Ry * Math.sin(l * rad);
-        const ay = t => [Ex + ro * Math.cos(t), Ey + ro * Math.sin(t) * Math.cos(egik), ro * Math.sin(t) * Math.sin(egik)];
+      s += S.daire(cx, cy, 14, { dolgu: R.gunes, renk: R.gunes });
+      s += S.yazi(cx, cy + 32, 'Güneş', { boy: 13, hiza: 'middle', renk: R.gunes, kalin: true });
+      [35, 125, 215, 305].forEach(l => {
+        const E = [Ry * Math.cos(l * rad), Ry * Math.sin(l * rad), 0];
+        const ay = t => [0, 1, 2].map(k => E[k] + ro * (Math.cos(t) * n[k] + Math.sin(t) * m[k]));
         const ust = [], alt = [];
-        for (let i = 0; i <= 48; i++) { const t = Math.PI * i / 48; ust.push(P(...ay(t))); alt.push(P(...ay(Math.PI + t))); }
-        s += S.egri(alt, { renk: R.ay, kalin: 1.2, kesik: '3 3', saydam: 0.8 });
-        s += S.egri(ust, { renk: R.ay, kalin: 1.6 });
-        const [n1x, n1y] = P(Ex - ro - 6, Ey, 0), [n2x, n2y] = P(Ex + ro + 6, Ey, 0);
-        s += S.cizgi(n1x, n1y, n2x, n2y, { renk: R.vurgu, kalin: 1, kesik: '2 3' });
-        const [dx, dy] = P(Ex, Ey, 0);
+        for (let i = 0; i <= 48; i++) { const t = Math.PI * i / 48; alt.push(P(...ay(t))); ust.push(P(...ay(Math.PI + t))); }   // egik < 0: t ∈ (0, π) düzlemin altı
+        s += S.egri(alt, { renk: R.ay, kalin: 1.2, kesik: '3 3', saydam: 0.85 });
+        const [d1x, d1y] = P(E[0] - (ro + 8) * n[0], E[1] - (ro + 8) * n[1], 0), [d2x, d2y] = P(E[0] + (ro + 8) * n[0], E[1] + (ro + 8) * n[1], 0);
+        s += S.cizgi(d1x, d1y, d2x, d2y, { renk: R.vurgu, kalin: 1, kesik: '2 3' });
+        const [dx, dy] = P(...E);
         s += S.daire(dx, dy, 6, { dolgu: R.mavi, renk: R.mavi });
-        /* yeni ay konumu: Ay yörüngesinde Güneş'e en yakın nokta */
-        let en = 0, ed = 1e9; for (let i = 0; i < 360; i++) { const q = ay(i * rad); const d = Math.hypot(q[0], q[1]); if (d < ed) { ed = d; en = i; } }
-        const q = ay(en * rad), [ax, ay2] = P(...q);
-        s += S.daire(ax, ay2, 4, { dolgu: tut ? R.uyari : R.ay, renk: R.zemin, kalin: 1 });
-        if (!tut) {
-          const [px, py] = P(q[0], q[1], 0);
-          s += S.cizgi(px, py, ax, ay2, { renk: R.ay, kalin: 1 });
-        }
+        s += S.egri(ust, { renk: R.ay, kalin: 1.8 });
+        /* yeni ay: Ay yörüngesinin Güneş'e (yatayda) en yakın noktası */
+        let en = 0, ed = 1e9; for (let i = 0; i < 720; i++) { const q = ay(i * Math.PI / 360); const d = Math.hypot(q[0], q[1]); if (d < ed) { ed = d; en = i; } }
+        const q = ay(en * Math.PI / 360), [ax, ayy] = P(...q), tut = Math.abs(q[2]) < 1;
+        if (!tut) { const [px, py] = P(q[0], q[1], 0); s += S.cizgi(px, py, ax, ayy, { renk: R.ay, kalin: 1 }); }
+        s += S.daire(ax, ayy, 4, { dolgu: R.uyari, renk: R.zemin, kalin: 1 });
+        const on = Math.sin(l * rad) > 0, ly = on ? dy + 34 : dy - 24;
+        if (tut) s += S.yazi(dx, ly, 'tutulma mevsimi', { boy: 13, hiza: 'middle', renk: R.uyari, kalin: true });
+        else s += S.yazi(dx, ly, 'yeni ay düzlemin ' + (q[2] > 0 ? 'üstünde' : 'altında'), { boy: 13, hiza: 'middle', renk: R.soluk });
       });
-      const [sx, sy] = P(Ry, 0, 0), [lx, ly] = P(-Ry, 0, 0), [ox, oy] = P(0, Ry, 0), [bx, by] = P(0, -Ry, 0);
-      s += S.yazi(sx, sy + 34, 'tutulma', { boy: 13, hiza: 'middle', renk: R.uyari, kalin: true });
-      s += S.yazi(lx, ly + 34, 'tutulma', { boy: 13, hiza: 'middle', renk: R.uyari, kalin: true });
-      s += S.yazi(ox, oy + 30, 'tutulma yok: Ay düzlemin altında', { boy: 13, hiza: 'middle', renk: R.soluk });
-      s += S.yazi(bx, by - 22, 'tutulma yok: Ay düzlemin üstünde', { boy: 13, hiza: 'middle', renk: R.soluk });
-      /* gösterge */
-      s += S.cizgi(12, 316, 36, 316, { renk: R.vurgu, kalin: 1, kesik: '2 3' }) + S.yazi(42, 321, 'düğüm çizgisi', { boy: 13 });
-      s += S.cizgi(160, 316, 184, 316, { renk: R.ay, kalin: 1.6 }) + S.yazi(190, 321, 'üst yarı', { boy: 13 });
-      s += S.cizgi(258, 316, 282, 316, { renk: R.ay, kalin: 1.2, kesik: '3 3' }) + S.yazi(288, 321, 'alt yarı', { boy: 13 });
+      s += S.cizgi(12, 262, 36, 262, { renk: R.vurgu, kalin: 1, kesik: '2 3' }) + S.yazi(42, 267, 'düğüm çizgisi', { boy: 13 });
+      s += S.cizgi(146, 262, 170, 262, { renk: R.ay, kalin: 1.8 }) + S.yazi(176, 267, 'üstte', { boy: 13 });
+      s += S.cizgi(230, 262, 254, 262, { renk: R.ay, kalin: 1.2, kesik: '3 3' }) + S.yazi(260, 267, 'altta', { boy: 13 });
+      s += S.daire(318, 262, 4, { dolgu: R.uyari, renk: R.zemin, kalin: 1 }) + S.yazi(326, 267, 'yeni ay', { boy: 13 });
       return s;
     }
   });
@@ -506,20 +521,20 @@
   C.ekle('d19-kuyruk', {
     ders: 'd19', bolum: 3, oran: 0.8,
     baslik: 'Kuyruklu yıldızın iki kuyruğu Güneş\'ten uzağa bakar',
-    aciklama: 'Kuyruklu yıldız uzun bir elips üzerinde Güneş\'in çevresinden geçer. Mavi iyon kuyruğu her konumda Güneş\'in tam tersini gösterir ve düzdür; sarımsı toz kuyruğu kuyruklu yıldızın geldiği yola doğru kavislenir. Güneş\'e yaklaştıkça kuyruklar uzar; Güneş\'ten uzaklaşırken kuyruk önden gider. Çizim ölçeksizdir.',
+    aciklama: 'Kuyruklu yıldız uzun bir elips üzerinde Güneş\'in çevresinden geçer; küçük oklar gidiş yönünü gösterir. İnce, düz çizgi iyon kuyruğudur: her konumda Güneş\'in tam tersini gösterir. Kalın, kavisli çizgi toz kuyruğudur: kuyruklu yıldızın geldiği yola doğru kavislenir. Güneş\'e yaklaştıkça kuyruklar uzar, uzakta kuyruk yoktur. Güneş\'ten uzaklaşırken kuyruk önden gider. Çizim ölçeksizdir.',
     kaynak: [{ ad: 'ESA – Structure of a comet', url: 'https://esa.int/ESA_Multimedia/Images/2023/11/Structure_of_a_comet' },
       { ad: 'NASA Science – Comets', url: 'https://science.nasa.gov/solar-system/comets' }],
     ciz(S) {
-      const R = S.R, cx = 236, cy = 170, a = 160, e = 0.8, b = a * Math.sqrt(1 - e * e), gx = cx - a * e;
+      const R = S.R, cx = 236, cy = 166, a = 160, e = 0.8, b = a * Math.sqrt(1 - e * e), gx = cx - a * e;
       /* E = 0 günberi (solda); hareket: alttan gelir, solda döner, üstten gider */
       const yer = E => [cx - a * Math.cos(E), cy - b * Math.sin(E)];
       const hiz = E => { const d = [a * Math.sin(E), -b * Math.cos(E)], n = Math.hypot(...d); return [d[0] / n, d[1] / n]; };
       let s = S.elips(cx, cy, a, b, { renk: R.soluk, kalin: 1, kesik: '3 4' });
       s += S.daire(gx, cy, 13, { dolgu: R.gunes, renk: R.gunes });
-      s += S.yazi(gx + 2, cy + 32, 'Güneş', { boy: 14, hiza: 'middle', kalin: true });
+      s += S.yazi(gx + 20, cy + 5, 'Güneş', { boy: 14, kalin: true });
       [-2.3, -1.25, -0.35, 0.55, 1.35, 2.35].forEach(E => {
         const [x, y] = yer(E), r = Math.hypot(x - gx, y - cy), u = [(x - gx) / r, (y - cy) / r], h = hiz(E);
-        const L = Math.min(92, 3600 / r);
+        const L = Math.min(70, 3400 / r);
         if (r < 150) {
           /* toz kuyruğu: Güneş'in tersinden yörüngenin gerisine doğru kavisli */
           const w = [u[0] - 0.75 * h[0], u[1] - 0.75 * h[1]], wn = Math.hypot(...w);
@@ -529,54 +544,54 @@
           s += S.cizgi(x, y, x + L * u[0], y + L * u[1], { renk: R.mavi, kalin: 2, uc: 'round' });
         }
         s += S.daire(x, y, 4, { dolgu: R.metin, renk: R.metin });
-        s += S.ok(x + h[0] * 8, y + h[1] * 8, x + h[0] * 20, y + h[1] * 20, { renk: R.metin, kalin: 1.2, boy: 6 });
+        s += S.ok(x + h[0] * 8, y + h[1] * 8, x + h[0] * 21, y + h[1] * 21, { renk: R.metin, kalin: 1.2, boy: 6 });
       });
+      s += S.yazi(392, cy - b - 12, 'uzakta kuyruk yok', { boy: 13, hiza: 'end', renk: R.soluk });
       /* gösterge */
-      s += S.cizgi(12, 316, 36, 316, { renk: R.mavi, kalin: 2 }) + S.yazi(42, 321, 'iyon kuyruğu: düz', { boy: 13 });
-      s += S.yol('M190,320 Q200,316 214,310', { renk: R.gezegen, kalin: 5, saydam: 0.55, uc: 'round' }) + S.yazi(222, 321, 'toz kuyruğu: kavisli', { boy: 13 });
-      s += S.yazi(388, 24, 'Uzakta kuyruk yok', { boy: 13, hiza: 'end', renk: R.soluk });
+      s += S.cizgi(12, 300, 36, 300, { renk: R.mavi, kalin: 2 }) + S.yazi(42, 305, 'iyon kuyruğu: düz', { boy: 13 });
+      s += S.yol('M196,306 Q206,302 220,294', { renk: R.gezegen, kalin: 5, saydam: 0.55, uc: 'round' }) + S.yazi(228, 305, 'toz kuyruğu: kavisli', { boy: 13 });
       return s;
     }
   });
 
   C.ekle('d19-meteor', {
-    ders: 'd19', bolum: 5, oran: 0.76,
+    ders: 'd19', bolum: 5, oran: 0.84,
     baslik: 'Meteor yağmuru: Dünya enkazın içinden geçer',
-    aciklama: 'Kuyruklu yıldız yörüngesi boyunca toz ve küçük parçalar bırakır. Dünya\'nın yörüngesi bu enkaz akıntısını kestiği yerde Dünya her yıl aynı tarihte parçacıkların arasından geçer ve meteor yağmuru görürüz. Perseidler için kaynak 109P/Swift-Tuttle\'dır, tepe gecesi 12–13 Ağustos civarındadır. Çizim ölçeksizdir.',
+    aciklama: 'Kuyruklu yıldız yörüngesi boyunca toz ve küçük parçalar bırakır; noktalar bu enkazdır. Düz çember Dünya\'nın yörüngesidir. Dünya, yörüngesinin enkaz akıntısını kestiği yere her yıl aynı tarihte gelir ve parçacıkların arasından geçerken meteor yağmuru görürüz. Perseidlerin kaynağı 109P/Swift-Tuttle\'dır, tepe gecesi 12–13 Ağustos civarındadır. Çizim ölçeksizdir.',
     kaynak: [{ ad: 'NASA Science – Meteors and Meteorites: Facts', url: 'https://science.nasa.gov/solar-system/meteors-meteorites/facts/' },
       { ad: 'NASA Science – Perseids', url: 'https://science.nasa.gov/solar-system/meteors-meteorites/perseids/' }],
     ciz(S) {
-      const R = S.R, gx = 262, gy = 152, rd = 92, p = 64.8, e = 0.8;           // kuyruklu yıldız: r = p / (1 + e cos ν), günberi sağda
-      const kyr = nu => { const r = p / (1 + e * Math.cos(nu * rad)); return [gx + r * Math.cos(nu * rad), gy - r * Math.sin(nu * rad)]; };
+      /* kuyruklu yıldız yörüngesi: odak Güneş'te, günberi sağda; a = 180, e = 0,8 (ölçeksiz örnek) */
+      const R = S.R, gx = 250, gy = 150, rd = 90, a = 180, e = 0.8, b = a * Math.sqrt(1 - e * e);
+      const kyr = E => [gx + a * (Math.cos(E * rad) - e), gy - b * Math.sin(E * rad)];
       let s = '';
-      /* enkaz: yörünge boyunca serpilmiş parçacıklar (sabit sözde rastgele) */
       let tohum = 7; const rnd = () => { tohum = (tohum * 16807) % 2147483647; return tohum / 2147483647; };
-      for (let i = 0; i < 170; i++) {
-        const nu = -152 + 304 * rnd(), [x, y] = kyr(nu), sap = (rnd() - 0.5) * 9;
-        s += S.daire(x + sap * 0.6, y + (rnd() - 0.5) * 9, 1.1, { dolgu: R.soluk, renk: 'none' });
+      for (let i = 0; i < 190; i++) {
+        const [x, y] = kyr(-122 + 244 * rnd());
+        s += S.daire(x + (rnd() - 0.5) * 8, y + (rnd() - 0.5) * 8, 1.1, { dolgu: R.soluk, renk: 'none' });
       }
-      const yol = []; for (let nu = -152; nu <= 152; nu += 2) yol.push(kyr(nu));
+      const yol = []; for (let E = -124; E <= 124; E += 2) yol.push(kyr(E));
       s += S.egri(yol, { renk: R.soluk, kalin: 1, kesik: '4 4' });
-      /* Dünya yörüngesi */
       s += S.daire(gx, gy, rd, { renk: R.mavi, kalin: 1.5 });
+      s += S.ok(gx + (rd + 10) * Math.cos(30 * rad), gy - (rd + 10) * Math.sin(30 * rad), gx + (rd + 10) * Math.cos(44 * rad), gy - (rd + 10) * Math.sin(44 * rad), { renk: R.mavi, kalin: 1.5, boy: 7 });
       s += S.daire(gx, gy, 12, { dolgu: R.gunes, renk: R.gunes });
-      s += S.yazi(gx, gy + 30, 'Güneş', { boy: 13, hiza: 'middle', kalin: true });
-      /* kesişim: p/(1+e cos ν) = rd */
-      const nuK = Math.acos((p / rd - 1) / e) / rad;
-      const [kx, ky] = kyr(nuK);
+      s += S.yazi(gx - 18, gy + 5, 'Güneş', { boy: 13, hiza: 'end', kalin: true });
+      /* kesişim (üst): r = a(1 − e cos E) = rd */
+      const Ek = Math.acos((1 - rd / a) / e) / rad, [kx, ky] = kyr(Ek);
       s += S.daire(kx, ky, 15, { renk: R.uyari, kalin: 2 });
       s += S.daire(kx, ky, 6, { dolgu: R.mavi, renk: R.mavi });
-      s += S.yazi(kx - 22, ky - 22, 'Dünya enkazın içinde:', { boy: 13, hiza: 'end', renk: R.uyari, kalin: true });
-      s += S.yazi(kx - 22, ky - 6, 'meteor yağmuru', { boy: 13, hiza: 'end', renk: R.uyari, kalin: true });
-      s += S.ok(...[gx + (rd + 10) * Math.cos(30 * rad), gy - (rd + 10) * Math.sin(30 * rad)], gx + (rd + 10) * Math.cos(44 * rad), gy - (rd + 10) * Math.sin(44 * rad), { renk: R.mavi, kalin: 1.5, boy: 7 });
-      s += S.yazi(gx + rd * 0.72 + 14, gy + rd * 0.72 + 18, 'Dünya\'nın yörüngesi', { boy: 13, hiza: 'middle', renk: R.mavi });
-      /* kuyruklu yıldızın kendisi (günberiye yakın), kuyruğu Güneş'in tersine */
-      const nuC = -38, [cx2, cy2] = kyr(nuC), rr = Math.hypot(cx2 - gx, cy2 - gy), ux = (cx2 - gx) / rr, uy = (cy2 - gy) / rr;
-      s += S.cizgi(cx2, cy2, cx2 + 34 * ux, cy2 + 34 * uy, { renk: R.mavi, kalin: 2, uc: 'round' });
-      s += S.daire(cx2, cy2, 4, { dolgu: R.metin, renk: R.metin });
-      s += S.yazi(cx2 + 6, cy2 + 46, 'Kuyruklu yıldız', { boy: 13, hiza: 'middle' });
-      s += S.yazi(12, 290, 'Kesikli yol: kuyruklu yıldızın yörüngesi;', { boy: 13, renk: R.soluk });
-      s += S.yazi(12, 297 + 9, 'noktalar: geride bıraktığı toz.', { boy: 13, renk: R.soluk });
+      s += S.yazi(kx + 22, ky - 30, 'meteor yağmuru:', { boy: 14, renk: R.uyari, kalin: true });
+      s += S.yazi(kx + 22, ky - 13, 'Dünya enkazın içinde', { boy: 13, renk: R.uyari });
+      /* kuyruklu yıldızın kendisi, kuyruğu Güneş'in tersine */
+      const [ccx, ccy] = kyr(-24), rr = Math.hypot(ccx - gx, ccy - gy), ux = (ccx - gx) / rr, uy = (ccy - gy) / rr;
+      s += S.cizgi(ccx, ccy, ccx + 30 * ux, ccy + 30 * uy, { renk: R.mavi, kalin: 2, uc: 'round' });
+      s += S.daire(ccx, ccy, 4, { dolgu: R.metin, renk: R.metin });
+      /* gösterge */
+      s += S.daire(18, 286, 4, { dolgu: R.metin, renk: R.metin }) + S.cizgi(18, 286, 34, 278, { renk: R.mavi, kalin: 2, uc: 'round' }) + S.yazi(44, 291, 'kuyruklu yıldız', { boy: 13 });
+      s += S.cizgi(196, 286, 222, 286, { renk: R.soluk, kalin: 1, kesik: '4 4' }) + S.yazi(228, 291, 'onun yörüngesi', { boy: 13 });
+      [4, 11, 18, 25].forEach(d => { s += S.daire(14 + d, 314 + (d % 2 ? 2 : -2), 1.2, { dolgu: R.soluk, renk: 'none' }); });
+      s += S.yazi(44, 319, 'bıraktığı toz', { boy: 13 });
+      s += S.cizgi(196, 314, 222, 314, { renk: R.mavi, kalin: 1.5 }) + S.yazi(228, 319, 'Dünya\'nın yörüngesi', { boy: 13 });
       return s;
     }
   });
@@ -592,6 +607,7 @@
       const R = S.R, x0 = 34, x1 = 362, X = au => x0 + Math.log10(au) / 5 * (x1 - x0), ya = 214;
       const bant = (a1, a2, y, renk, sd) => S.kutu(X(a1), y - 9, X(a2) - X(a1), 18, { dolgu: renk, renk: 'none', saydam: sd }, 3);
       let s = '';
+      [1, 10, 100, 1000, 10000, 100000].forEach(au => { s += S.cizgi(X(au), 16, X(au), ya, { renk: R.cizgi, kalin: 1 }); });
       s += bant(2.06, 3.27, 30, R.soluk, 0.7) + S.yazi(X(3.27) + 8, 35, 'Asteroit kuşağı: 2,06–3,27 AB', { boy: 13 });
       s += bant(30, 50, 70, R.mavi, 0.75) + S.yazi(X(50) + 8, 75, 'Kuiper kuşağı: 30–50 AB', { boy: 13 });
       s += bant(50, 1000, 110, R.mavi, 0.3) + S.yazi(X(1000) + 8, 115, 'Dağınık disk', { boy: 13 });

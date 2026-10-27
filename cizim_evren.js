@@ -43,7 +43,7 @@
       s += S.yol(`M${gx - 30},${gy + 16} Q${gx - 4},${gy + 6} ${gx + 22},${gy - 14}`, { renk: R.vurgu, kalin: 4, saydam: 0.45, uc: 'round' });
       s += S.daire(gx, gy, 5, { dolgu: R.gunes, renk: R.zemin, kalin: 1.5 });
       const etk = (x, y, metin, o) => {
-        const w = metin.length * 7.3 + 8, x0 = o.hiza === 'end' ? x - w + 4 : x - 4;
+        const w = metin.length * 6.4 + 8, x0 = o.hiza === 'end' ? x - w + 4 : x - 4;
         return S.kutu(x0, y - 13, w, 18, { dolgu: R.zemin, renk: 'none', saydam: 0.78 }, 3) + S.yazi(x, y, metin, Object.assign({ boy: 13 }, o));
       };
       s += etk(gx + 12, gy - 3, 'Güneş', { renk: R.metin, kalin: true });
@@ -109,7 +109,7 @@
         s += S.yazi(x, ay + 37, 'SB' + h, { boy: 14, hiza: 'middle', renk: R.metin, kalin: true });
       });
       s += S.yazi(230, uy + 5, 'sarmal', { boy: 13, hiza: 'end', renk: R.soluk });
-      s += S.yazi(230, ay + 5, 'çubuklu', { boy: 13, hiza: 'end', renk: R.soluk });
+      s += S.yazi(232, ay + 30, 'çubuklu', { boy: 13, hiza: 'end', renk: R.soluk });
       s += S.yazi(382, 254, 'kollar gevşer →', { boy: 13, hiza: 'end', renk: R.soluk });
       /* düzensiz */
       s += S.yol('M30,236 Q40,222 52,230 Q64,226 60,240 Q66,252 50,250 Q38,258 32,248 Q22,244 30,236 Z', { dolgu: R.yildiz, renk: 'none', saydam: 0.55 });
@@ -123,7 +123,7 @@
   /* d7 · bölüm 4: Yerel Grup, Samanyolu'ndan uzaklıklar tek doğru üzerinde (gökteki yönler farklı). Uzaklık ve çaplar ölçekli:
      Andromeda 2,5 milyon (çap 152.000), Üçgen 2,88 milyon (çap 61.100), Samanyolu çapı ≈100.000; Macellan Bulutları 160–200 bin (boyları şematik). */
   C.ekle('d7-yerel-grup', {
-    ders: 'd7', bolum: 4, oran: 0.58,
+    ders: 'd7', bolum: 4, oran: 0.52,
     baslik: 'Yerel Grup: Samanyolu\'ndan uzaklıklar',
     aciklama: 'Galaksiler Samanyolu\'ndan uzaklıklarına göre tek bir çizgiye dizildi; gökte aslında farklı yönlerdedirler. Macellan Bulutları 160.000 ile 200.000 ışık yılında hemen yanımızda, Andromeda 2,5 milyon, Üçgen Galaksisi 2,88 milyon ışık yılı ötede. Uzaklıklar ve büyük galaksilerin çapları ölçekli; Macellan Bulutlarının boyu şematik. Grubun bütün çapı, yaklaşık 17 milyon ışık yılı, bu çizginin altı katına yakındır.',
     kaynak: [
@@ -134,7 +134,7 @@
       { ad: 'NASA Science, Galaxies', url: 'https://science.nasa.gov/universe/galaxies/' }
     ],
     ciz(S) {
-      const R = S.R, x0 = 30, k = 350 / 3e6, X = d => x0 + d * k, gy = 98;
+      const R = S.R, x0 = 30, k = 350 / 3e6, X = d => x0 + d * k, gy = 70;
       let s = '';
       s += S.cizgi(x0, gy, X(3e6), gy, { renk: R.cizgi, kalin: 1, kesik: '3 4' });
       const gal = (d, cap, renk) => S.elips(X(d), gy, cap * k / 2, cap * k / 2 * 0.45, { dolgu: renk, renk: 'none', saydam: 0.9 }, -20);
@@ -142,15 +142,17 @@
       s += S.daire(X(160000), gy + 3, 2.6, { dolgu: R.yildiz, renk: 'none' }) + S.daire(X(200000), gy - 3, 2, { dolgu: R.yildiz, renk: 'none' });
       s += gal(2.5e6, 152000, R.yildiz);
       s += gal(2.88e6, 61100, R.yildiz);
-      s += S.yazi(x0 - 4, 74, 'Samanyolu', { boy: 13, renk: R.metin, kalin: true });
-      s += S.yol(`M${X(180000)},${gy + 6} L${X(180000) + 8},${gy + 18}`, { renk: R.soluk, kalin: 1 });
-      s += S.yazi(X(180000) + 10, gy + 30, 'Macellan Bulutları: 160–200 bin', { boy: 13, renk: R.metin });
-      s += S.yazi(X(2.5e6), 66, 'Andromeda', { boy: 13, hiza: 'middle', renk: R.metin, kalin: true });
-      s += S.yazi(X(2.5e6), 82, '2,5 milyon', { boy: 13, hiza: 'middle', renk: R.soluk });
-      s += S.yazi(392, gy + 30, 'Üçgen (M33): 2,88 milyon', { boy: 13, hiza: 'end', renk: R.metin });
-      s += S.yol(`M${X(2.88e6)},${gy + 6} L${X(2.88e6) - 4},${gy + 17}`, { renk: R.soluk, kalin: 1 });
+      s += S.yazi(x0 - 4, 48, 'Samanyolu', { boy: 13, renk: R.metin, kalin: true });
+      s += S.yol(`M${X(180000)},${gy + 6} L${X(180000) + 8},${gy + 16}`, { renk: R.soluk, kalin: 1 });
+      s += S.yazi(X(180000) + 10, gy + 28, 'Macellan Bulutları', { boy: 13, renk: R.metin, kalin: true });
+      s += S.yazi(X(180000) + 10, gy + 44, '160–200 bin ışık yılı', { boy: 13, renk: R.soluk });
+      s += S.yazi(X(2.5e6), 38, 'Andromeda', { boy: 13, hiza: 'middle', renk: R.metin, kalin: true });
+      s += S.yazi(X(2.5e6), 54, '2,5 milyon', { boy: 13, hiza: 'middle', renk: R.soluk });
+      s += S.yol(`M${X(2.88e6)},${gy + 6} L${X(2.88e6) - 2},${gy + 15}`, { renk: R.soluk, kalin: 1 });
+      s += S.yazi(392, gy + 28, 'Üçgen (M33)', { boy: 13, hiza: 'end', renk: R.metin, kalin: true });
+      s += S.yazi(392, gy + 44, '2,88 milyon', { boy: 13, hiza: 'end', renk: R.soluk });
       /* eksen */
-      const ay = 150;
+      const ay = 134;
       s += S.cizgi(x0, ay, X(3e6), ay, { renk: R.soluk, kalin: 1 });
       [0, 1, 2, 3].forEach(m => { s += S.cizgi(X(m * 1e6), ay, X(m * 1e6), ay + 5, { renk: R.soluk, kalin: 1 }) + S.yazi(X(m * 1e6), ay + 20, String(m), { boy: 13, hiza: 'middle', renk: R.soluk }); });
       s += S.yazi(X(1.5e6), ay + 40, 'Samanyolu\'ndan uzaklık (milyon ışık yılı)', { boy: 13, hiza: 'middle', renk: R.soluk });
@@ -177,26 +179,26 @@
       let s = '';
       s += S.yazi(8, 16, 'Büyük Patlama\'dan sonra geçen zaman', { boy: 13, renk: R.soluk });
       s += S.cizgi(ax, Y(-34), ax, Y(Ly(13.8e9)), { renk: R.soluk, kalin: 2 });
-      [[-30, '10⁻³⁰ s'], [-20, '10⁻²⁰ s'], [-10, '10⁻¹⁰ s'], [0, '1 s'], [Ly(1), '1 yıl'], [Ly(1e9), '1 milyar yıl']].forEach(([L, t]) => {
+      [[-32, '10⁻³² s'], [-22, '10⁻²² s'], [-12, '10⁻¹² s'], [0, '1 s'], [Ly(1), '1 yıl'], [Ly(1e9), '1 milyar yıl']].forEach(([L, t]) => {
         s += S.cizgi(ax - 5, Y(L), ax, Y(L), { renk: R.soluk, kalin: 1 }) + S.yazi(ax - 9, Y(L) + 4, t, { boy: 13, hiza: 'end', renk: R.soluk });
       });
       const bar = (a, b, renk) => S.cizgi(ax, Y(a), ax, Y(b), { renk, kalin: 7 });
       const nokta = (L, renk) => S.daire(ax, Y(L), 4.5, { dolgu: renk, renk: R.zemin, kalin: 1.5 });
-      const etiket = (L, ly, metin, renk) => S.yol(`M${ax + 6},${Y(L)} L${ax + 12},${Y(L)} L${ax + 18},${ly - 4}`, { renk: R.soluk, kalin: 1 }) + S.yazi(ax + 22, ly, metin, { boy: 13, renk: renk || R.metin });
+      const etiket = (L, ly, metin, renk, uz) => { const d = uz || 0; return S.yol(`M${ax + 6},${Y(L)} L${ax + 12 + d / 3},${Y(L)} L${ax + 18 + d},${ly - 4}`, { renk: R.soluk, kalin: 1 }) + S.yazi(ax + 22 + d, ly, metin, { boy: 13, renk: renk || R.metin }); };
       s += bar(-33, -32, R.vurgu) + etiket(-32.5, 46, 'Şişme: 10⁻³³–10⁻³² s, en az 10²⁶ kat');
       s += bar(-12, -5, R.mavi) + etiket(-8.5, 228, 'Kuark çağı: 10⁻¹²–10⁻⁵ s');
       s += nokta(-5, R.metin) + etiket(-5, 257, 'Proton ve nötronlar: 10⁻⁵ s, 10¹² K');
-      s += nokta(0, R.metin) + etiket(0, 288, 'Nötrinolar serbest: 1 s, 10¹⁰ K');
+      s += nokta(0, R.metin) + etiket(0, 288, 'Nötrinolar serbest: 1 s, 10 milyar K');
       s += bar(1, 3, R.iyi) + etiket(2, 312, 'İlk çekirdekler: 10–1000 s');
-      s += nokta(Ly(47000), R.metin) + etiket(Ly(47000), 338, 'Madde baskın: ≈47.000 yıl');
+      s += nokta(Ly(47000), R.metin) + etiket(Ly(47000), 338, 'Madde baskın: ≈47.000 yıl', null, 30);
       s += bar(Ly(380000), Ly(3e8), R.zemin);
       s += S.cizgi(ax, Y(Ly(380000)), ax, Y(Ly(3e8)), { renk: R.soluk, kalin: 1 });
-      s += nokta(Ly(380000), R.vurgu) + etiket(Ly(380000), 356, 'Yeniden birleşme: ≈380.000 yıl, ≈3000 K', R.vurgu);
-      s += etiket((Ly(380000) + Ly(3e8)) / 2, 374, 'Karanlık çağ: henüz yıldız yok', R.soluk);
-      s += nokta(Ly(2.8e8), R.mavi) + etiket(Ly(2.8e8), 392, 'MoM-z14 galaksisi: ≈280 milyon yıl');
-      s += etiket(Ly(3e8), 410, 'İlk yıldızlar: birkaç yüz milyon yıl');
-      s += bar(Ly(2e8), Ly(1e9), R.iyi) + etiket((Ly(2e8) + Ly(1e9)) / 2, 428, 'Yeniden iyonlaşma: 0,2–1 milyar yıl');
-      s += nokta(Ly(13.8e9), R.metin) + etiket(Ly(13.8e9), 446, 'Bugün: 13,8 milyar yıl');
+      s += nokta(Ly(380000), R.vurgu) + etiket(Ly(380000), 356, 'Yeniden birleşme: ≈380.000 yıl, ≈3000 K', R.vurgu, 30);
+      s += etiket((Ly(380000) + Ly(3e8)) / 2, 374, 'Karanlık çağ: henüz yıldız yok', R.soluk, 30);
+      s += nokta(Ly(2.8e8), R.mavi) + etiket(Ly(2.8e8), 392, 'MoM-z14 galaksisi: ≈280 milyon yıl', null, 30);
+      s += etiket(Ly(3e8), 410, 'İlk yıldızlar: birkaç yüz milyon yıl', null, 30);
+      s += bar(Ly(2e8), Ly(1e9), R.iyi) + etiket((Ly(2e8) + Ly(1e9)) / 2, 428, 'Yeniden iyonlaşma: 0,2–1 milyar yıl', null, 30);
+      s += nokta(Ly(13.8e9), R.metin) + etiket(Ly(13.8e9), 446, 'Bugün: 13,8 milyar yıl', null, 30);
       return s;
     }
   });
@@ -222,10 +224,10 @@
       [10, 100, 1000].forEach(v => { s += S.cizgi(ek.X(v), 30, ek.X(v), 220, { renk: R.cizgi, kalin: 1 }) + S.cizgi(72, ek.Y(v), 372, ek.Y(v), { renk: R.cizgi, kalin: 1 }); });
       s += S.fonk(ek, x => T0 * x, 1, 2000, 40, { renk: R.vurgu, kalin: 2.2 }, true);
       const p = (x, renk) => S.daire(ek.X(x), ek.Y(T0 * x), 5, { dolgu: renk, renk: R.zemin, kalin: 1.5 });
-      s += p(1, R.mavi) + S.yazi(ek.X(1) + 9, ek.Y(T0) - 8, 'bugün: 2,725 K', { boy: 13, renk: R.metin });
+      s += p(1, R.mavi) + S.yazi(ek.X(1) + 12, ek.Y(T0) + 14, 'bugün: 2,725 K', { boy: 13, renk: R.metin });
       s += p(15.44, R.mavi) + S.yazi(ek.X(15.44) + 9, ek.Y(T0 * 15.44) + 18, 'MoM-z14: 15,44 kat, ≈42 K', { boy: 13, renk: R.metin });
-      s += p(1091, R.uyari) + S.yazi(ek.X(1091) - 10, ek.Y(T0 * 1091) - 4, 'yeniden birleşme:', { boy: 13, hiza: 'end', renk: R.metin });
-      s += S.yazi(ek.X(1091) - 10, ek.Y(T0 * 1091) + 12, '1091 kat, ≈2973 K', { boy: 13, hiza: 'end', renk: R.metin });
+      s += p(1091, R.uyari) + S.yazi(372, ek.Y(T0 * 1091) + 58, 'yeniden birleşme:', { boy: 13, hiza: 'end', renk: R.metin });
+      s += S.yazi(372, ek.Y(T0 * 1091) + 74, '1091 kat, ≈2973 K', { boy: 13, hiza: 'end', renk: R.metin });
       return s;
     }
   });
@@ -285,7 +287,7 @@
       { ad: 'NASA Science, Dark Matter & Dark Energy', url: 'https://science.nasa.gov/universe/dark-matter-dark-energy/' }
     ],
     ciz(S) {
-      const R = S.R, cx = 108, cy = 128, r1 = 56, r2 = 92;
+      const R = S.R, cx = 112, cy = 128, r1 = 48, r2 = 96;
       const p = (r, a) => [cx + r * Math.sin(a * Math.PI / 180), cy - r * Math.cos(a * Math.PI / 180)];
       const dilim = (a0, a1, renk) => {
         const b = a1 - a0 > 180 ? 1 : 0, [x1, y1] = p(r2, a0), [x2, y2] = p(r2, a1), [x3, y3] = p(r1, a1), [x4, y4] = p(r1, a0);
@@ -295,7 +297,7 @@
       let s = '', a = 0;
       const orta = [];
       dl.forEach(([y, renk]) => { const b = a + y * 3.6; s += dilim(a, b, renk); orta.push((a + b) / 2); a = b; });
-      const t = (ai, metin, r) => { const [x, y] = p(r, orta[ai]); return S.yazi(x, y + 5, metin, { boy: 14, hiza: 'middle', renk: R.zemin, kalin: true }); };
+      const t = (ai, metin, r) => { const [x, y] = p(r, orta[ai]); return S.yazi(x, y + 5, metin, { boy: 13, hiza: 'middle', renk: R.zemin, kalin: true }); };
       s += t(0, '%68,5', (r1 + r2) / 2) + t(1, '%26,4', (r1 + r2) / 2);
       const [ex, ey] = p(r2 + 4, orta[2]), [lx, ly] = p(r2 + 14, orta[2]);
       s += S.cizgi(ex, ey, lx, ly, { renk: R.soluk, kalin: 1 }) + S.yazi(lx - 2, ly - 2, '%4,9', { boy: 14, hiza: 'end', renk: R.metin, kalin: true });
@@ -333,8 +335,8 @@
       s += S.fonk(ek, d => hs * d, 0, 120, 2, { renk: R.vurgu, kalin: 2.4 });
       s += S.fonk(ek, d => hp * d, 0, 120, 2, { renk: R.mavi, kalin: 2.4, kesik: '7 5' });
       /* gösterge */
-      s += S.cizgi(92, 48, 118, 48, { renk: R.vurgu, kalin: 2.4 }) + S.yazi(124, 53, 'SH0ES 2022: 73,04 ± 1,04', { boy: 13, renk: R.metin });
-      s += S.cizgi(92, 70, 118, 70, { renk: R.mavi, kalin: 2.4, kesik: '7 5' }) + S.yazi(124, 75, 'Planck 2018: 67,4 ± 0,5', { boy: 13, renk: R.metin });
+      s += S.cizgi(92, 48, 118, 48, { renk: R.vurgu, kalin: 2.4 }) + S.yazi(124, 53, 'SH0ES: 73,04 ± 1,04', { boy: 13, renk: R.metin });
+      s += S.cizgi(92, 70, 118, 70, { renk: R.mavi, kalin: 2.4, kesik: '7 5' }) + S.yazi(124, 75, 'Planck: 67,4 ± 0,5', { boy: 13, renk: R.metin });
       /* 100 Mpc karşılaştırması */
       const x = ek.X(100);
       s += S.cizgi(x, ek.Y(0), x, ek.Y(hs * 100) - 4, { renk: R.soluk, kalin: 1, kesik: '2 3' });

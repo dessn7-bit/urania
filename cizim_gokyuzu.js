@@ -38,7 +38,7 @@
 
   /* d1 · bölüm 1: ufuk koordinatları. Gözlemcinin ufku eğik bakışla (dik izdüşüm); örnek yıldız azimut 135°, yükseklik 40°. Ölçeksiz. */
   C.ekle('d1-ufuk-koordinat', {
-    ders: 'd1', bolum: 1, oran: 0.62,
+    ders: 'd1', bolum: 1, oran: 0.64,
     baslik: 'Yükseklik ve azimut',
     aciklama: 'Ufuk çemberinin ortasında sen duruyorsun. Azimut ufuk boyunca kuzeyden doğuya doğru ölçülür: kuzey 0°, doğu 90°, güney 180°, batı 270°. Yükseklik ise ufuktan yıldıza doğru yukarı ölçülen açıdır; örnekteki yıldız güneydoğuda, azimutu 135°, yüksekliği 40°. Değerler örnektir, çizim ölçeksizdir.',
     kaynak: [KAYNAK.ufuk],
@@ -78,18 +78,17 @@
       /* yükseklik: yıldızın dikey çemberi boyunca ufuktan yıldıza */
       s += S.egri(yayH(A, H, 90), { renk: R.soluk, kalin: 1, kesik: '4 4' });
       s += S.egri(yayH(A, 0, H), { renk: R.mavi, kalin: 3.2 });
-      s += S.egri(yayH(A, 0, H, 0.42), { renk: R.mavi, kalin: 1.4 });
       s += S.daire(yil[0], yil[1], 5, { dolgu: R.yildiz, renk: R.yildiz });
       s += S.daire(ayak[0], ayak[1], 3, { dolgu: R.mavi, renk: R.mavi });
-      s += S.yazi(yil[0] - 10, yil[1] - 8, 'Yıldız', { boy: 15, renk: R.metin, kalin: true, hiza: 'end' });
+      s += S.yazi(yil[0] + 9, yil[1] - 9, 'Yıldız', { boy: 15, renk: R.metin, kalin: true });
       /* etiketler */
       const ym = P(A, H / 2);
       s += S.cizgi(ym[0] + 3, ym[1], 334, ym[1] - 26, { renk: R.mavi, kalin: 1 });
       s += S.yazi(338, ym[1] - 38, 'yükseklik', { boy: 14, renk: R.mavi, kalin: true });
       s += S.yazi(338, ym[1] - 22, '40°', { boy: 14, renk: R.mavi, kalin: true });
-      const am = az[30];
-      s += S.cizgi(am[0] - 3, am[1] + 2, 152, cy + 26, { renk: R.vurgu, kalin: 1 });
-      s += S.yazi(150, cy + 32, 'azimut 135°', { boy: 14, renk: R.vurgu, kalin: true, hiza: 'end' });
+      const am = az[34];
+      s += S.cizgi(am[0] + 2, am[1] + 3, 262, cy + 56, { renk: R.vurgu, kalin: 1 });
+      s += S.yazi(256, cy + 70, 'azimut 135°', { boy: 14, renk: R.vurgu, kalin: true });
       s += S.daire(cx, cy, 4.5, { dolgu: R.metin, renk: R.metin });
       s += S.yazi(cx - 10, cy - 6, 'Sen', { boy: 13, renk: R.soluk, hiza: 'end' });
       return s;
@@ -310,9 +309,9 @@
 
   /* d2 · bölüm 4: Planck yasasıyla hesaplanan kara cisim eğrileri; Rigel 12.100 K, Güneş 5772 K, Betelgeuse 3800 K. */
   C.ekle('d2-kara-cisim', {
-    ders: 'd2', bolum: 4, oran: 0.8,
+    ders: 'd2', bolum: 4, oran: 0.72,
     baslik: 'Üç sıcaklıkta kara cisim eğrisi',
-    aciklama: 'Eğriler Planck yasasıyla hesaplandı: Rigel 12.100 K, Güneş 5772 K, Betelgeuse 3800 K. Sıcak cisim her dalga boyunda daha çok ışır ve tepesi kısa dalgaya kayar: Rigel 239 nm\'de, yani morötesinde, Güneş 502 nm\'de, Betelgeuse 763 nm\'de, yani kızılötesinin başında tepe yapar. Dikey eksen logaritmiktir, her çentik 10 kat demektir; renkli şerit görünür ışıktır.',
+    aciklama: 'Eğriler Planck yasasıyla hesaplandı: Rigel 12.100 K, Güneş 5772 K, Betelgeuse 3800 K. Sıcak cisim her dalga boyunda daha çok ışır ve tepesi kısa dalgaya kayar: Rigel 239 nanometrede, yani morötesinde, Güneş 502 nanometrede, Betelgeuse 763 nanometrede, yani kızılötesinin başında tepe yapar. Dikey eksen logaritmiktir, her çentik 10 kat demektir; gölgeli şerit görünür ışıktır.',
     kaynak: [KAYNAK.nist, KAYNAK.wien, KAYNAK.nasaGunes],
     ciz(S) {
       const R = S.R;
@@ -321,19 +320,23 @@
       const B = (lnm, T) => { const l = lnm * 1e-9; return 2 * h * c * c / Math.pow(l, 5) / (Math.exp(h * c / (l * k * T)) - 1); };
       const yildizlar = [[12100, 'Rigel', R.mavi, null], [5772, 'Güneş', R.gunes, null], [3800, 'Betelgeuse', R.uyari, '7 4']];
       const ref = B(b / 12100 * 1e9, 12100);
-      const alan = { x: 70, y: 26, w: 312, h: 206 }, ar = { x0: 100, x1: 2000, y0: 1e-4, y1: 2 };
+      const alan = { x: 62, y: 32, w: 320, h: 200 }, ar = { x0: 100, x1: 2000, y0: 1e-4, y1: 2 };
       const ek = S.eksen(alan, ar, {
         logY: true,
         xIsaret: [[500, '500'], [1000, '1000'], [1500, '1500'], [2000, '2000 nm']],
         yIsaret: [[1, '1'], [0.1, '0,1'], [0.01, '0,01'], [0.001, '0,001'], [1e-4, '0,0001']],
-        xAd: 'dalga boyu (nm)', yAd: 'ışınım (göreli)', yAdUzak: 58
+        xAd: 'dalga boyu (nm)'
       });
-      let s = '';
+      let s = S.yazi(8, 14, 'ışınım (göreli, logaritmik)', { boy: 13, renk: R.soluk });
       s += S.kutu(ek.X(380), alan.y, ek.X(700) - ek.X(380), alan.h, { renk: 'none', dolgu: R.vurguSoluk, saydam: 0.55 });
       s += S.yazi((ek.X(380) + ek.X(700)) / 2, alan.y + alan.h - 8, 'görünür', { boy: 13, renk: R.vurgu, hiza: 'middle' });
       s += ek.svg.replace(/(<text[^>]*>2000 nm<\/text>)/, m => m.replace('text-anchor="middle"', 'text-anchor="end"'));
-      /* ad etiketleri eğrilerin kuyruğunda: Rigel ve Güneş eğrinin üstünde, Betelgeuse altında */
-      const adYer = { 12100: [1180, 'ust'], 5772: [1180, 'ust'], 3800: [1180, 'alt'] };
+      /* açıklama kutusu sağ üstte (eğrilerin üstünde boş bölge); kırmızı modda çizgi kalınlığı ve kesikle ayırt edilir */
+      yildizlar.forEach(([T, ad, renk, kes], i) => {
+        const y = 50 + i * 20;
+        s += S.cizgi(238, y - 4, 262, y - 4, { renk, kalin: T === 5772 ? 2.6 : 2, kesik: kes });
+        s += S.yazi(268, y, ad + ' ' + (T >= 10000 ? '12.100' : T) + ' K', { boy: 13, renk: R.metin, kalin: true });
+      });
       yildizlar.forEach(([T, ad, renk, kes]) => {
         const ls = [];
         for (let i = 0; i <= 240; i++) {
@@ -345,9 +348,6 @@
         s += S.cizgi(xt, yt, xt, alan.y + alan.h, { renk, kalin: 1, kesik: '2 3', saydam: 0.8 });
         s += S.daire(xt, yt, 4, { dolgu: renk, renk });
         s += S.yazi(xt, yt - 10, Math.round(lt) + ' nm', { boy: 13, renk: R.metin, hiza: 'middle', kalin: true });
-        const [la, yer] = adYer[T], etiket = ad + ' ' + (T >= 10000 ? '12.100' : T) + ' K';
-        const ya = yer === 'ust' ? ek.Y(B(la, T) / ref) - 7 : ek.Y(B(2000, T) / ref) + 17;
-        s += S.yazi(ek.X(la), ya, etiket, { boy: 13, renk, kalin: true });
       });
       return s;
     }
@@ -357,7 +357,7 @@
   C.ekle('d2-cizgiler', {
     ders: 'd2', bolum: 6, oran: 0.86,
     baslik: 'Sürekli tayf, soğurma ve salma',
-    aciklama: 'Sıcak, yoğun bir kaynağa doğrudan bakarsan kesintisiz bir tayf görürsün. Aynı kaynağa önündeki daha soğuk, seyrek hidrojen gazının ardından bakarsan belirli dalga boylarında karanlık soğurma çizgileri çıkar. Gaza yandan, kaynağı görmeden bakarsan tam aynı dalga boylarında parlak salma çizgileri görürsün; en kırmızısı 656,28 nm\'deki H-alfa çizgisidir. Yalnız hidrojen çizgileri gösterildi; üst düzen ölçeksizdir.',
+    aciklama: 'Sıcak, yoğun bir kaynağa doğrudan bakarsan kesintisiz bir tayf görürsün. Aynı kaynağa önündeki daha soğuk, seyrek hidrojen gazının ardından bakarsan belirli dalga boylarında karanlık soğurma çizgileri çıkar. Gaza yandan, kaynağı görmeden bakarsan tam aynı dalga boylarında parlak salma çizgileri görürsün; en kırmızısı 656,28 nanometredeki H-alfa çizgisidir. Yalnız hidrojen çizgileri gösterildi; üst düzen ölçeksizdir.',
     kaynak: [KAYNAK.balmer, KAYNAK.fraunhofer],
     ciz(S) {
       const R = S.R;
@@ -403,7 +403,7 @@
   C.ekle('d2-pencereler', {
     ders: 'd2', bolum: 8, oran: 0.56,
     baslik: 'Atmosfer pencereleri',
-    aciklama: 'Yukarıdan gelen oklar tayfın her bölgesinden ışığı temsil eder; çoğu atmosfer katmanında durur. Yere ulaşanlar üç pencereden geçer: yaklaşık 300 nm ile 2 μm arasındaki optik pencere, 8 ile 14 μm arasındaki kızılötesi pencere ve 0,3 mm ile 30 m arasındaki radyo penceresi. Yatay eksen logaritmiktir; aradaki kısmi geçirgenlikler gösterilmedi.',
+    aciklama: 'Yukarıdan gelen oklar tayfın her bölgesinden ışığı temsil eder; çoğu atmosfer katmanında durur. Yere ulaşanlar üç pencereden geçer: yaklaşık 300 nm ile 2 μm arasındaki optik pencere, 8 ile 14 μm arasındaki kızılötesi pencere ve 0,3 mm ile 30 metre arasındaki radyo penceresi. Yatay eksen logaritmiktir; aradaki kısmi geçirgenlikler gösterilmedi.',
     kaynak: [KAYNAK.optikPencere, KAYNAK.radyoPencere, KAYNAK.nasaTayf],
     ciz(S) {
       const R = S.R, x0 = 20, x1 = 380, X = l => lx(l, x0, x1);
@@ -464,22 +464,23 @@
       });
       s += S.daire(fMavi, c1, 3.5, { dolgu: R.mavi, renk: R.mavi });
       s += S.daire(fKirmizi, c1, 3.5, { dolgu: R.uyari, renk: R.uyari });
-      s += S.yazi(fMavi - 4, c1 - 12, 'mavi odak', { boy: 13, renk: R.mavi, hiza: 'end' });
+      s += S.yazi(fMavi, c1 + 30, 'mavi odak', { boy: 13, renk: R.mavi, hiza: 'middle' });
       s += S.yazi(fKirmizi + 8, c1 + 5, 'kırmızı', { boy: 13, renk: R.uyari });
       s += S.yazi(fKirmizi + 8, c1 + 21, 'odak', { boy: 13, renk: R.uyari });
       s += S.yazi(lx1, c1 + 62, 'mercek', { boy: 13, renk: R.soluk, hiza: 'middle' });
       s += S.cizgi(10, 140, 390, 140, { renk: R.cizgi, kalin: 1 });
       /* ---- 2. Newton ---- */
-      const c2 = 214, ax2 = 330, F2 = [200, c2], kx2 = 230;
+      const c2 = 214, ax2 = 330, F2 = [186, c2], kx2 = 230;
       s += S.yazi(10, 162, 'Newton tipi aynalı', { boy: 15, renk: R.metin, kalin: true });
       s += S.kutu(40, c2 - 40, ax2 - 34, 80, { renk: R.soluk, kalin: 1 });
       s += S.kutu(kx2 - 9, c2 - 58, 18, 18, { renk: R.metin, kalin: 1.5, dolgu: R.yuzey2 });
       s += S.yazi(kx2 + 16, c2 - 47, 'göz merceği', { boy: 13, renk: R.soluk });
       s += S.yol(`M${ax2 - 4},${c2 - 38} Q${ax2 + 14},${c2} ${ax2 - 4},${c2 + 38}`, { renk: R.vurgu, kalin: 3 });
       s += S.yazi(ax2 + 14, c2 + 5, 'ana ayna', { boy: 13, renk: R.vurgu });
-      s += S.cizgi(kx2 - 10, c2 - 10, kx2 + 10, c2 + 10, { renk: R.vurgu, kalin: 3 });
-      s += S.yazi(kx2 - 8, c2 + 32, 'düz ikincil ayna', { boy: 13, renk: R.soluk, hiza: 'middle' });
-      const odak2 = [kx2, c2 - 30];
+      s += S.cizgi(kx2 - 11, c2 - 11, kx2 + 11, c2 + 11, { renk: R.vurgu, kalin: 3.4 });
+      s += S.yazi(kx2, c2 + 58, 'düz ikincil ayna', { boy: 13, renk: R.soluk, hiza: 'middle' });
+      s += S.cizgi(kx2, c2 + 44, kx2 + 2, c2 + 13, { renk: R.soluk, kalin: 1 });
+      const odak2 = [kx2, c2 - (kx2 - F2[0])];     // F2'nin ikincil aynadaki yansıması
       [-28, 28].forEach(d => {
         const yA = c2 + d, ayn = [ax2, yA];
         /* ana aynadan F2'ye giden ışın ikincil aynayı (y − c2 = x − kx2 doğrusu) keser */
@@ -516,22 +517,23 @@
 
   /* d12 · bölüm 2: açıklıklar ölçekli daireler (göz 7 mm, dürbün 50 mm, teleskop 200 mm); oran (D/d)², Δm = 2,5 log(oran). */
   C.ekle('d12-isik-kovasi', {
-    ders: 'd12', bolum: 2, oran: 0.7,
+    ders: 'd12', bolum: 2, oran: 0.73,
     baslik: 'Açıklık büyüdükçe toplanan ışık',
-    aciklama: 'Üç daire aynı ölçekte çizildi: karanlıkta 7 mm açılan göz bebeği, 50 mm\'lik dürbün objektifi ve 200 mm\'lik teleskop aynası. Toplanan ışık alanla, yani çapın karesiyle artar: dürbün gözden yaklaşık 51 kat, teleskop yaklaşık 816 kat ışık toplar. Bu da sırasıyla yaklaşık 4,3 ve 7,3 kadir daha sönük yıldızlar demektir.',
+    aciklama: 'Üç daire aynı ölçekte çizildi: karanlıkta 7 mm açılan göz bebeği, 50 milimetrelik dürbün objektifi ve 200 milimetrelik teleskop aynası. Toplanan ışık alanla, yani çapın karesiyle artar: dürbün gözden yaklaşık 51 kat, teleskop yaklaşık 816 kat ışık toplar. Bu da sırasıyla yaklaşık 4,3 ve 7,3 kadir daha sönük yıldızlar demektir.',
     kaynak: [KAYNAK.teleskop],
     ciz(S) {
       const R = S.R, k = 0.9, cy = 112, goz = 7;
-      const ac = [[200, 112, 'Teleskop 200 mm'], [50, 268, 'Dürbün 50 mm'], [7, 346, 'Göz bebeği 7 mm']];
+      const ac = [[200, 112, 'Teleskop'], [50, 252, 'Dürbün'], [7, 346, 'Göz bebeği']];
       let s = '';
       ac.forEach(([D, x, ad]) => {
         const oran = (D / goz) * (D / goz), dm = 2.5 * Math.log10(oran);
         s += S.daire(x, cy, D * k / 2, { renk: D === goz ? R.metin : R.vurgu, kalin: 1.5, dolgu: R.vurguSoluk });
-        s += S.yazi(x, 230, ad, { boy: 13, renk: R.metin, hiza: 'middle', kalin: true });
-        s += S.yazi(x, 248, D === goz ? '1 kat' : tr(oran, 0) + ' kat ışık', { boy: 13, renk: R.vurgu, hiza: 'middle' });
-        if (D !== goz) s += S.yazi(x, 266, '+' + tr(dm, 1) + ' kadir', { boy: 13, renk: R.soluk, hiza: 'middle' });
+        s += S.yazi(x, 226, ad, { boy: 14, renk: R.metin, hiza: 'middle', kalin: true });
+        s += S.yazi(x, 243, D + ' mm', { boy: 13, renk: R.metin, hiza: 'middle' });
+        s += S.yazi(x, 262, D === goz ? '1 kat' : tr(oran, 0) + ' kat ışık', { boy: 13, renk: R.vurgu, hiza: 'middle', kalin: true });
+        if (D !== goz) s += S.yazi(x, 280, '+' + tr(dm, 1) + ' kadir', { boy: 13, renk: R.soluk, hiza: 'middle' });
       });
-      s += S.cizgi(346, cy + 10, 346, 214, { renk: R.soluk, kalin: 1, kesik: '2 3' });
+      s += S.cizgi(346, cy + 10, 346, 208, { renk: R.soluk, kalin: 1, kesik: '2 3' });
       return s;
     }
   });
@@ -539,7 +541,7 @@
   /* d12 · bölüm 3: iki noktasal yıldızın kırınım (Airy) profilleri; aralık 2θ, θ (Rayleigh), θ/2. I = [2 J1(x)/x]², ilk sıfır x = 3,8317. */
   C.ekle('d12-rayleigh', {
     ders: 'd12', bolum: 3, oran: 0.58,
-    baslik: 'Kırınım: iki yıldız ne zaman ayrılır?',
+    baslik: 'Kırınım ve iki yıldızın ayrılma sınırı',
     aciklama: 'Her yıldızın görüntüsü kırınım yüzünden bir tepe biçiminde yayılır; eğriler bunun kesitidir ve hesapla çizildi. İki yıldızın arası θ = 1,22 × λ / D açısının iki katıysa iki ayrı tepe görürsün; tam bu açıya eşitse ortada küçük bir çukur kalır ve yıldızlar zar zor ayrılır; yarısı kadarsa tek bir tepe görünür.',
     kaynak: [KAYNAK.ayirma],
     ciz(S) {
@@ -547,7 +549,7 @@
       const J1 = x => { let t = x / 2, top = t, m = 0; const x2 = -(x * x) / 4; while (Math.abs(t) > 1e-14 && m < 80) { m++; t *= x2 / (m * (m + 1)); top += t; } return top; };
       const I = u => { const x = 3.8317 * u; return Math.abs(x) < 1e-6 ? 1 : Math.pow(2 * J1(x) / x, 2); };
       const panel = [[2, 'aralık 2θ', 'ayrı görünür'], [1, 'aralık θ', 'zar zor ayrılır'], [0.5, 'aralık θ/2', 'tek leke']];
-      const pw = 116, pg = 26 / 2, taban = 170, yuk = 112;
+      const pw = 116, taban = 170, yuk = 112;
       let s = '';
       panel.forEach(([ar, ust, alt], i) => {
         const x0 = 8 + i * (pw + 18), xm = x0 + pw / 2, umax = 2.6;
@@ -567,7 +569,6 @@
         s += S.yazi(xm, taban + 26, alt, { boy: 13, renk: R.metin, hiza: 'middle' });
       });
       s += S.yazi(200, 224, 'θ = 1,22 × λ / D', { boy: 14, renk: R.soluk, hiza: 'middle' });
-      void pg;
       return s;
     }
   });
@@ -576,7 +577,7 @@
   C.ekle('d12-ayirma-gorus', {
     ders: 'd12', bolum: 6, oran: 0.68,
     baslik: 'Aletlerin keskinliği ve atmosfer',
-    aciklama: 'Çubuk ne kadar kısaysa alet o kadar ince ayrıntı seçer; eksen logaritmiktir. Göz yaklaşık 60 yay saniyesi, Galileo\'nun 37 mm\'lik objektifi 3,7, 100 mm\'lik teleskop 1,38, Hubble 0,05, Doğu Anadolu Gözlemevi\'nin 4 m\'lik teleskobu kırınım sınırında yaklaşık 0,03 yay saniyesi. Gölgeli şerit atmosferin en iyi yerlerdeki 0,4 ile 1 yay saniyelik titreşimidir: yerdeki büyük teleskobun keskinliğini aynası değil havası belirler, Hubble ise bunun altına iner.',
+    aciklama: 'Çubuk ne kadar kısaysa alet o kadar ince ayrıntı seçer; eksen logaritmiktir. Göz yaklaşık 60 yay saniyesi, Galileo\'nun 37 milimetrelik objektifi 3,7, 100 milimetrelik teleskop 1,38, Hubble 0,05, Doğu Anadolu Gözlemevi\'nin 4 metrelik teleskobu görünür ışıktaki kırınım sınırıyla yaklaşık 0,03 yay saniyesi. Gölgeli şerit atmosferin en iyi yerlerdeki 0,4 ile 1 yay saniyelik titreşimidir: yerdeki büyük teleskobun keskinliğini aynası değil havası belirler, Hubble ise bunun altına iner.',
     kaynak: [KAYNAK.ayirma, KAYNAK.gozPlak, KAYNAK.gorus, KAYNAK.dag, KAYNAK.hubble],
     ciz(S) {
       const R = S.R, x0 = 132, x1 = 384, l0 = -2, l1 = 2;
@@ -611,8 +612,8 @@
   /* d11 · bölüm 1: çıkış göz bebeği ile göz bebeği (ölçekli). 7×50 → 7,14 mm; 10×50 → 5 mm; göz bebeği 20 yaşta 7,3, 50 yaşta 5,8 mm. */
   C.ekle('d11-cikis-gozbebegi', {
     ders: 'd11', bolum: 1, oran: 0.58,
-    baslik: 'Çıkış göz bebeği gözüne sığıyor mu?',
-    aciklama: 'Dolu daire dürbünden çıkan ışık demeti, kesikli çember senin göz bebeğin; ikisi aynı ölçekte. 7×50\'nin 7,14 mm\'lik demeti 20 yaşındaki ortalama 7,3 mm\'lik göz bebeğine tümüyle girer. 50 yaşında göz bebeği ortalama 5,8 mm\'dir: demetin dış halkası irise çarpar ve ışığın yaklaşık üçte biri boşa gider. 10×50\'nin 5 mm\'lik demeti ise aynı göze tümüyle girer.',
+    baslik: 'Çıkış göz bebeği ve senin göz bebeğin',
+    aciklama: 'Dolu daire dürbünden çıkan ışık demeti, kesikli çember senin göz bebeğin; ikisi aynı ölçekte. 7×50\'nin 7,14 milimetrelik demeti 20 yaşındaki ortalama 7,3 milimetrelik göz bebeğine tümüyle girer. 50 yaşında göz bebeği ortalama 5,8 milimetredir: demetin dış halkası irise çarpar ve ışığın yaklaşık üçte biri boşa gider. 10×50\'nin 5 milimetrelik demeti ise aynı göze tümüyle girer.',
     kaynak: [KAYNAK.cikis],
     ciz(S) {
       const R = S.R, k = 12, cy = 92;
@@ -639,7 +640,7 @@
 
   /* d11 · bölüm 5: 6°'lik örnek görüş alanı, içine sığan 12 dolunay ve el ölçüleri (ölçekli çubuklar). */
   C.ekle('d11-gorus-alani', {
-    ders: 'd11', bolum: 5, oran: 0.8,
+    ders: 'd11', bolum: 5, oran: 0.85,
     baslik: 'Dürbün görüş alanı, dolunay ve el ölçüleri',
     aciklama: 'Daire 6°\'lik örnek bir dürbün görüş alanıdır; içinden yan yana yarımşar derecelik 12 dolunay geçer. Alttaki çubuklar aynı ölçekte: kol uzunluğunda yumruk yaklaşık 10°, üç parmak 5°, serçe parmak 1°, dolunay 0,5°. Görüş alanı bir yumruktan küçük, üç parmaktan biraz büyüktür.',
     kaynak: [KAYNAK.el, KAYNAK.atlama],
@@ -650,11 +651,11 @@
       s += S.daire(cx, cy, r, { renk: R.vurgu, kalin: 2, dolgu: R.yuzey2 });
       const n = Math.round(alan / ay), ra = ay * k / 2;
       for (let i = 0; i < n; i++) s += S.daire(cx - r + ra + i * 2 * ra, cy, ra - 0.4, { renk: R.ay, kalin: 1, dolgu: R.ay, saydam: 0.85 });
-      s += S.yazi(cx, cy - 30, 'görüş alanı 6°', { boy: 14, renk: R.vurgu, hiza: 'middle', kalin: true });
+      s += S.yazi(cx, cy + r + 20, 'örnek görüş alanı: 6°', { boy: 14, renk: R.vurgu, hiza: 'middle', kalin: true });
       s += S.yazi(cx, cy + 36, n + ' dolunay', { boy: 14, renk: R.metin, hiza: 'middle' });
       const x0 = 112, cub = [['Yumruk', 10, R.soluk], ['Dürbün alanı', 6, R.vurgu], ['Üç parmak', 5, R.soluk], ['Serçe parmak', 1, R.soluk], ['Dolunay', 0.5, R.ay]];
       cub.forEach(([ad, d, renk], i) => {
-        const y = 210 + i * 24;
+        const y = 224 + i * 24;
         s += S.yazi(x0 - 8, y + 5, ad, { boy: 13, renk: R.metin, hiza: 'end' });
         s += S.kutu(x0, y - 5, d * k, 10, { renk: 'none', dolgu: renk, saydam: 0.85 });
         s += S.yazi(x0 + d * k + 6, y + 5, tr(d, d < 1 ? 1 : 0) + '°', { boy: 13, renk: R.soluk });
@@ -666,7 +667,7 @@
   /* d11 · bölüm 7: İstanbul'dan (41°) hedeflerin meridyendeki yüksekliği A = 90° − 41° + δ. Açılar ölçekli. */
   C.ekle('d11-hedef-yukseklik', {
     ders: 'd11', bolum: 7, oran: 0.56,
-    baslik: 'İstanbul\'dan hedefler en çok ne kadar yükselir?',
+    baslik: 'Dürbün hedeflerinin İstanbul\'daki en yüksek konumu',
     aciklama: 'Güneye bakan yan kesitte her hedef gökte en yükseğe çıktığı anda gösterildi: Deniz Kulağı Bulutsusu (M8) yalnızca 24,6°, Orion Bulutsusu (M42) 43,6°, Ülker 73,1°, M13 85,5° yükselir; Andromeda (M31) başucunun 0,3° kuzeyinden geçer. Alçaktaki M8 için güney ufku açık bir yer gerekir.',
     kaynak: [KAYNAK.messier],
     ciz(S) {

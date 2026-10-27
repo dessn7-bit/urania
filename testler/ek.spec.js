@@ -1,0 +1,109 @@
+// Ders çizimleri, ders içi deney, ünite sınavları ve gözlem görevleri.
+const { test, expect } = require('@playwright/test');
+
+test.beforeEach(async ({ page }) => {
+  page.hatalar = [];
+  page.on('pageerror', e => page.hatalar.push(String(e)));
+});
+test.afterEach(async ({ page }) => { expect(page.hatalar).toEqual([]); });
+
+test('Çizimler: her dersin en az iki çizimi var; bölüm dizinleri geçerli; derste numaralı ve sesli okunur', async ({ page }) => {
+  await page.goto('/index.html#ders');
+  await expect(page.locator('.ders-liste li').first()).toBeVisible();
+  const r = await page.evaluate(async () => {
+    const D = await fetch('veri/dersler.json').then(x => x.json());
+    const C = window.UraniaCizim.kayit, sorun = [], sayi = {};
+    Object.values(C).forEach(t => {
+      const d = D.dersler.find(x => x.id === t.ders);
+      if (!d || !d.bolumler[t.bolum]) sorun.push(t.id);
+      if (!t.baslik || !t.aciklama || t.aciklama.length < 40) sorun.push(t.id + ' açıklama');
+      sayi[t.ders] = (sayi[t.ders] || 0) + 1;
+    });
+    return { sorun, eksik: D.dersler.filter(x => (sayi[x.id] || 0) < 2).map(x => x.id), toplam: Object.keys(C).length };
+  });
+  expect(r.sorun).toEqual([]);
+  expect(r.eksik).toEqual([]);
+  expect(r.toplam).toBeGreaterThanOrEqual(45);
+  await page.goto('/index.html#ders/d1');
+  const fig = page.locator('figure.cizim');
+  expect(await fig.count()).toBeGreaterThanOrEqual(2);
+  await expect(fig.first().locator('figcaption b')).toHaveText('Şekil 1.');
+  await expect(fig.first().locator('figcaption')).toHaveAttribute('data-ses', /^Şekil 1: /);
+  await expect(fig.first().locator('svg')).toHaveAttribute('role', 'img');
+});
+
+test('Çizimlerdeki yazılar sesli okumada çevrilmemiş sembol bırakmaz', async ({ page }) => {
+  await page.goto('/index.html#ders');
+  await expect(page.locator('.ders-liste li').first()).toBeVisible();
+  const kalan = await page.evaluate(() => {
+    const t = Object.values(window.UraniaCizim.kayit).map(c => window.Okunus.okunus(c.baslik + '. ' + c.aciklama)).join(' ');
+    return [...new Set([...t].filter(ch => !/[\p{L}\p{N}\s.,;:!?()'"’‘“”…%\-–—]/u.test(ch)))];
+  });
+  expect(kalan).toEqual([]);
+});
+
+test('Ders içi deney: d3\'te Kepler deneyi açılır, ölçer, kapanır; başka derse geçince döngü durur', async ({ page }) => {
+  await page.goto('/index.html#ders/d3');
+  const m = page.locator('.mini-deney[data-deney="kepler"]');
+  await expect(m.locator('.mini-kap')).toBeHidden();
+  await m.locator('.mini-ac').click();
+  await expect(m.locator('#kpP')).not.toHaveText('—');
+  await expect(m.locator('.mini-ac')).toHaveAttribute('aria-expanded', 'true');
+  await m.locator('#kpOn button', { hasText: 'Jüpiter' }).click();
+  await expect(m.locator('#kpP')).toHaveText('11,87 yıl');
+  await m.locator('.mini-ac').click();
+  await expect(m.locator('.mini-kap')).toBeHidden();
+  await m.locator('.mini-ac').click();
+  await expect(m.locator('#kpP')).not.toHaveText('—');
+  await page.goto('/index.html#ders/d13');
+  await page.locator('.mini-deney[data-deney="gecis"] .mini-ac').click();
+  await expect(page.locator('.mini-deney[data-deney="gecis"] #gcDer')).toContainText('84 ppm');
+});
+
+test('Ünite sınavı: 12 soru, yanlış cevap açıklama gösterir, sonuç kaydedilir, yanlışlar karta düşer', async ({ page }) => {
+  await page.goto('/index.html#ders');
+  await expect(page.locator('.sinav-giris')).toHaveCount(5);
+  await page.goto('/index.html#ders/sinav/gokyuzu');
+  const sorular = await page.evaluate(() => fetch('veri/sinavlar.json').then(r => r.json()).then(j => j.uniteler.gokyuzu));
+  expect(sorular.length).toBe(12);
+  let dogru = 0;
+  for (let i = 0; i < 12; i++) {
+    const metin = await page.locator('#snSoru').innerText();
+    const q = sorular.find(x => x.soru === metin);
+    const sec = i % 2 === 0 ? q.dogru : (q.dogru + 1) % 4;      // yarısı doğru, yarısı yanlış
+    if (sec === q.dogru) dogru++;
+    await page.locator(`.sinav-secenek button[data-i="${sec}"]`).click();
+    await expect(page.locator('.sinav-sonuc')).toContainText(sec === q.dogru ? 'Doğru.' : 'Doğrusu');
+    await expect(page.locator('.sinav-secenek .dugme.dogru')).toHaveCount(1);
+    await page.locator('#snSonraki').click();
+  }
+  await expect(page.locator('.sinav-puan')).toContainText(`${dogru} / 12`);
+  const kayit = await page.evaluate(() => [JSON.parse(localStorage.getItem('urania_sinavSonuc')), Object.keys(JSON.parse(localStorage.getItem('urania_sinavYanlis')))]);
+  expect(kayit[0].gokyuzu.slice(-1)[0]).toMatchObject({ dogru, toplam: 12 });
+  expect(kayit[1].length).toBe(12 - dogru);
+  await page.goto('/index.html#ders');
+  await expect(page.locator('.kart-ozet')).toContainText(`${12 - dogru} kart`);
+  await expect(page.locator('.sinav-giris').first()).toContainText(`son sonucun ${dogru}/12`);
+});
+
+test('Sınav soruları: dört farklı şık, geçerli ders ve bölüm, okunuşta sembol kalmaz', async ({ page }) => {
+  await page.goto('/index.html#ders');
+  await expect(page.locator('.ders-liste li').first()).toBeVisible();
+  const r = await page.evaluate(async () => {
+    const [S, D] = await Promise.all([fetch('veri/sinavlar.json').then(x => x.json()), fetch('veri/dersler.json').then(x => x.json())]);
+    const sorun = [], ids = new Set(); let metin = '';
+    Object.entries(S.uniteler).forEach(([u, ls]) => ls.forEach(q => {
+      if (ids.has(q.id)) sorun.push('tekrar ' + q.id); ids.add(q.id);
+      if (q.secenekler.length !== 4 || new Set(q.secenekler).size !== 4) sorun.push('şık ' + q.id);
+      if (!(q.dogru >= 0 && q.dogru < 4)) sorun.push('doğru ' + q.id);
+      const d = D.dersler.find(x => x.id === q.ders);
+      if (!d || !d.bolumler[q.bolum]) sorun.push('bölüm ' + q.id);
+      const un = D.uniteler.find(x => x.id === u);
+      if (!un || un.dersler.indexOf(q.ders) < 0) sorun.push('ünite ' + q.id);
+      metin += ' ' + [q.soru, ...q.secenekler, q.aciklama].map(window.Okunus.okunus).join(' ');
+    }));
+    return { sorun, kalan: [...new Set([...metin].filter(ch => !/[\p{L}\p{N}\s.,;:!?()'"’‘“”…%\-–—]/u.test(ch)))] };
+  });
+  expect(r.sorun).toEqual([]);
+  expect(r.kalan).toEqual([]);
+});

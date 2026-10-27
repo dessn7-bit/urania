@@ -36,8 +36,9 @@ const fs = require('fs');
           await f.screenshot({ path: path.join(cikti, id + (kirmizi ? '-kirmizi' : '') + '.png') });
           /* SVG dışına taşan yazılar */
           const tasan = await f.evaluate(fig => {
-            const svg = fig.querySelector('svg'), vb = svg.viewBox.baseVal, ls = [];
-            svg.querySelectorAll('text').forEach(t => { const bb = t.getBBox(); if (bb.x < -1 || bb.y < -1 || bb.x + bb.width > vb.width + 1 || bb.y + bb.height > vb.height + 1) ls.push(t.textContent); });
+            /* Ekrandaki gerçek kutu (döndürülmüş yazılar dahil) SVG kutusuyla karşılaştırılır */
+            const svg = fig.querySelector('svg'), sr = svg.getBoundingClientRect(), ls = [];
+            svg.querySelectorAll('text').forEach(t => { const r = t.getBoundingClientRect(); if (r.left < sr.left - 1 || r.top < sr.top - 1 || r.right > sr.right + 1 || r.bottom > sr.bottom + 1) ls.push(t.textContent); });
             return ls;
           });
           if (tasan.length) { sorun++; console.log('TAŞMA', id, JSON.stringify(tasan)); }
