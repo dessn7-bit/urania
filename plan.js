@@ -21,16 +21,22 @@
   function acikCarpan(b) { return b == null ? 1 : 1 - 0.85 * b / 100; }
   function irtifaCarpan(alt, min) { return alt < min ? 0 : Math.sin(alt * DER); }
 
-  /* g: { gzl, gece, hedefDurum, gezegenGece, ay, limitKadir, hava, uyduGecisleri, algol, ortmeler, meteorDurum } */
+  /* g: { gzl, gece, hedefDurum, gezegenGece, ay, limitKadir, hava, uyduGecisleri, algol, ortmeler, meteorDurum, simdi }
+     simdi verilirse (canlı mod) plan geçmiş saatlerden değil şimdiden başlar. */
   function olustur(g) {
     const gece = g.gece;
-    const S = gece.sivilSon || gece.batis, E = gece.sivilBas || gece.dogus;
+    let S = gece.sivilSon || gece.batis;
+    const E = gece.sivilBas || gece.dogus;
     if (!S || !E || E <= S) {
       /* Batış yoksa: öğlen Güneş ufkun üstündeyse kutup günü, altındaysa kutup gecesi */
       const neden = gece.batis ? 'karanlik-yok' : (Gok.cisimAltAz('Sun', gece.ogle, g.gzl).alt > 0 ? 'gunes-batmiyor' : 'gunes-dogmuyor');
       return { maddeler: [], neden };
     }
     const KB = gece.karanlikBas || S, KS = gece.karanlikSon || E;
+    if (g.simdi && g.simdi > S) {
+      if (g.simdi >= E) return { maddeler: [], neden: 'gece-bitti' };
+      S = g.simdi;
+    }
     const ornek = [];
     for (let ms = Math.ceil(S.getTime() / ADIM) * ADIM; ms <= E.getTime(); ms += ADIM) {
       const t = new Date(ms);
@@ -61,7 +67,7 @@
       if (sonuk && h.kadir > 5 && g.limitKadir <= 3.5) taban *= 0.5;   // şehir ışığında yaygın ve sönük
       const v = Gok.birimVektor(h.ra, h.dec);
       const puan = ornek.map(o => {
-        if (!o.karanlik) return { alt: 0, az: 0, p: 0 };
+        if (!o.karanlik || gece.karanlikYok) return { alt: 0, az: 0, p: 0 };
         const k = Gok.ufkaCevir(o.m, v);
         let c = taban * irtifaCarpan(k.alt, 25) * acikCarpan(o.bulut);
         if (o.ayAlt > 0 && ay && ay.oran > 0.4 && h.ayAcisi < 40) c *= sonuk ? 0.4 : 0.8;
@@ -107,7 +113,10 @@
       const esik = a.enPuan * 0.75;
       const sira = a.puan.map((x, i) => i).filter(i => a.puan[i].p >= esik)
         .sort((i, j) => Math.abs(i - a.enIyi) - Math.abs(j - a.enIyi));
-      const bos = sira.find(i => !maddeler.some(m => Math.abs(m.zaman - ornek[i].t) < ARALIK));
+      const dolu = i => maddeler.some(m => Math.abs(m.zaman - ornek[i].t) < ARALIK);
+      let bos = sira.find(i => !dolu(i));
+      /* İyi saatlerin hepsi doluysa: görünür olduğu (puanı > 0) en yakın boş saat */
+      if (bos == null) bos = a.puan.map((x, i) => i).filter(i => a.puan[i].p > 0 && !dolu(i)).sort((i, j) => Math.abs(i - a.enIyi) - Math.abs(j - a.enIyi))[0];
       const i = bos != null ? bos : a.enIyi;
       const x = a.puan[i];
       maddeler.push({ tur: a.tur, sabit: false, zaman: ornek[i].t, ad: a.ad, anahtar: a.anahtar, cisim: a.cisim, hedef: a.hedef, kadir: a.kadir,

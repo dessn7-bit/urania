@@ -189,8 +189,9 @@
         ctx.beginPath(); let ilk = true;
         y.yol.forEach(n => { if (n.alt < 0) { ilk = true; return; } const p = ekran(n.alt, n.az); if (ilk) { ctx.moveTo(p.x, p.y); ilk = false; } else ctx.lineTo(p.x, p.y); });
         ctx.stroke(); ctx.restore();
-        const bas = y.yol.find(n => n.alt >= 10);
-        if (bas) { const p = ekran(bas.alt, bas.az); etiket(y.kisa + ' ' + Urania.saat(bas.t), p.x, p.y, '600 ' + Math.max(11, W / 44) + 'px Plex, system-ui, sans-serif', uRenk, 8, 6); }
+        /* Etiket görünür bölümün başında (güneşli ve ufkun üstünde); gölgede başlayan yolda o an görünmez */
+        const bas = (y.gBas && y.yol.reduce((a, n) => (!a || Math.abs(n.t - y.gBas.t) < Math.abs(a.t - y.gBas.t) ? n : a), null)) || y.yol.find(n => n.alt >= 10 && n.isikli) || y.yol.find(n => n.alt >= 10);
+        if (bas) { const p = ekran(bas.alt, bas.az); etiket(y.kisa + ' ' + Urania.saat(y.gBas ? y.gBas.t : bas.t), p.x, p.y, '600 ' + Math.max(11, W / 44) + 'px Plex, system-ui, sans-serif', uRenk, 8, 6); }
       });
       (d.uydular || []).forEach(u => {
         if (!(u.alt > 0)) return;

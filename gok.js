@@ -101,9 +101,13 @@
   }
   function geceAraligi(gun, gzl) {
     const ogle = yerelOgle(gun, gzl.longitude);
-    const ara = (yon, alt) => tarih(A.SearchAltitude('Sun', gzl, yon, ogle, 1.5, alt));
-    const batis = tarih(A.SearchRiseSet('Sun', gzl, -1, ogle, 1.5));
-    const dogus = batis ? tarih(A.SearchRiseSet('Sun', gzl, +1, batis, 1.5)) : null;
+    /* Bütün geçişler bu gecenin içinde olmalı (öğleden ertesi öğleye): yüksek enlemde eşiğe o gece ulaşılmazsa
+       arama ertesi gecenin geçişini bulmasın. */
+    const sinir = ogle.getTime() + 86400e3;
+    const icinde = t => (t && t.getTime() < sinir ? t : null);
+    const ara = (yon, alt) => icinde(tarih(A.SearchAltitude('Sun', gzl, yon, ogle, 1, alt)));
+    const batis = icinde(tarih(A.SearchRiseSet('Sun', gzl, -1, ogle, 1)));
+    const dogus = batis ? icinde(tarih(A.SearchRiseSet('Sun', gzl, +1, batis, 1))) : null;
     const g = {
       ogle,
       batis,
@@ -112,12 +116,17 @@
       astroSon: ara(-1, -18),
       dogus
     };
-    g.astroBas = g.astroSon ? tarih(A.SearchAltitude('Sun', gzl, +1, g.astroSon, 1.5, -18)) : null;
-    g.sivilBas = g.sivilSon ? tarih(A.SearchAltitude('Sun', gzl, +1, g.sivilSon, 1.5, -6)) : null;
+    g.astroBas = g.astroSon ? icinde(tarih(A.SearchAltitude('Sun', gzl, +1, g.astroSon, 1, -18))) : null;
+    g.sivilBas = g.sivilSon ? icinde(tarih(A.SearchAltitude('Sun', gzl, +1, g.sivilSon, 1, -6))) : null;
+    if (g.astroSon && !g.astroBas) g.astroSon = null;      // eşiğin altına inip çıkışı bu gece değilse yok say
+    if (g.sivilSon && !g.sivilBas) g.sivilSon = null;
     /* Karanlık pencere: astronomik gece varsa o; yoksa (yaz ortası yüksek enlem)
        denizci, o da yoksa sivil alacakaranlık. */
     g.karanlikBas = g.astroSon || g.denizciSon || g.sivilSon || batis;
-    g.karanlikSon = g.astroBas || (g.denizciSon ? tarih(A.SearchAltitude('Sun', gzl, +1, g.denizciSon, 1.5, -12)) : null) || g.sivilBas || dogus;
+    g.karanlikSon = g.astroBas || (g.denizciSon ? icinde(tarih(A.SearchAltitude('Sun', gzl, +1, g.denizciSon, 1, -12))) : null) || g.sivilBas || dogus;
+    if (g.karanlikBas && g.karanlikSon && g.karanlikSon <= g.karanlikBas) { g.karanlikBas = null; g.karanlikSon = null; }
+    /* Gök sivil alacakaranlığın ötesine hiç geçmiyorsa derin gök hedefleri için karanlık yok */
+    g.karanlikYok = !g.sivilSon;
     return g;
   }
 
@@ -144,8 +153,9 @@
     const konum = cisimAltAz('Moon', zaman, gzl);
     /* Seçili günün öğlesinden sonraki ilk doğuş ve ilk batış: "bu gece" penceresi. */
     const bas = yerelOgle(zaman, gzl.longitude);
-    const dogus = tarih(A.SearchRiseSet('Moon', gzl, +1, bas, 1.5));
-    const batis = tarih(A.SearchRiseSet('Moon', gzl, -1, bas, 1.5));
+    const ic = t => (t && t.getTime() < bas.getTime() + 86400e3 ? t : null);
+    const dogus = ic(tarih(A.SearchRiseSet('Moon', gzl, +1, bas, 1)));
+    const batis = ic(tarih(A.SearchRiseSet('Moon', gzl, -1, bas, 1)));
     return {
       aci,
       oran: isik.phase_fraction,
@@ -226,12 +236,24 @@
     }
     return ls;
   }
-  function enYuksekSabit(v, orn) {
-    let enIyi = null;
-    orn.forEach(o => {
+  function enYuksekSabit(v, orn, gzl) {
+    let enIyi = null, i0 = -1;
+    orn.forEach((o, i) => {
       const h = ufkaCevir(o.m, v);
-      if (!enIyi || h.alt > enIyi.alt) enIyi = { zaman: o.zaman, alt: h.alt, az: h.az };
+      if (!enIyi || h.alt > enIyi.alt) { enIyi = { zaman: o.zaman, alt: h.alt, az: h.az }; i0 = i; }
     });
+    /* Örnek aralığında yerel iyileştirme: 15 dk örnekleme başucu yakınında birkaç derece eksik bulabilir,
+       20° eşiğinin hemen altında kalıp hedefi yanlış eleyebilir */
+    if (enIyi && gzl && orn.length > 1 && (Math.abs(enIyi.alt - 20) < 2 || enIyi.alt > 75)) {   // eşik yakınında ve başucunda
+      let a = orn[Math.max(0, i0 - 1)].zaman.getTime(), b = orn[Math.min(orn.length - 1, i0 + 1)].zaman.getTime();
+      const f = t => ufkaCevir(ufukMatrisi(new Date(t), gzl), v);
+      for (let k = 0; k < 12; k++) {
+        const m1 = a + (b - a) / 3, m2 = b - (b - a) / 3;
+        if (f(m1).alt < f(m2).alt) a = m1; else b = m2;
+      }
+      const t = (a + b) / 2, h = f(t);
+      if (h.alt > enIyi.alt) enIyi = { zaman: new Date(t), alt: h.alt, az: h.az };
+    }
     return enIyi;
   }
 
@@ -244,7 +266,7 @@
     return hedefler.map(h => {
       const hv = birimVektor(h.ra, h.dec);
       const simdi = ufkaCevir(mSimdi, hv);
-      const tepe = enYuksekSabit(hv, orn);
+      const tepe = gece.karanlikYok ? null : enYuksekSabit(hv, orn, gzl);
       const ayAcisi = Math.acos(Math.max(-1, Math.min(1, hv[0] * ayV[0] + hv[1] * ayV[1] + hv[2] * ayV[2]))) / DER;
       return Object.assign({}, h, { simdi, tepe, ayAcisi, gorunur: !!(tepe && tepe.alt >= 20) });
     });
@@ -266,25 +288,52 @@
     const b = gunNo(ba, bg), s = gunNo(sa, sg);
     return b <= s ? (bugun >= b && bugun <= s) : (bugun >= b || bugun <= s);
   }
+  /* Radyantın en yüksek konumu: etkin yağmurda bu gecenin, değilse zirve gecesinin karanlık saatlerinde */
+  const zirveGecesi = {};
   function meteorDurumu(liste, zaman, gzl, gece) {
-    const orn = gece ? ornekler(gece.karanlikBas, gece.karanlikSon, 20, gzl) : [];
+    const orn = gece && !gece.karanlikYok ? ornekler(gece.karanlikBas, gece.karanlikSon, 20, gzl) : [];
     return liste.map(m => {
       const zirve = new Date(m.zirve_utc);
       const gunFark = (zirve - zaman) / 86400e3;
-      let radyantTepe = null;
-      if (m.radyant_ra != null && orn.length) {
-        radyantTepe = enYuksekSabit(birimVektor(m.radyant_ra, m.radyant_dec), orn);
+      const aktif = aktifMi(m, zaman);
+      let radyantTepe = null, radyantGece = aktif ? 'bu gece' : 'zirve gecesi';
+      if (m.radyant_ra != null) {
+        let o = orn;
+        if (!aktif) {
+          const an = m.zirve_utc + '|' + gzl.latitude.toFixed(2) + '|' + gzl.longitude.toFixed(2);
+          if (!zirveGecesi[an]) { const g = geceAraligi(new Date(zirve.getTime() - 12 * 3600e3), gzl); zirveGecesi[an] = g.karanlikYok ? [] : ornekler(g.karanlikBas, g.karanlikSon, 20, gzl); }
+          o = zirveGecesi[an];
+        }
+        if (o.length) radyantTepe = enYuksekSabit(birimVektor(m.radyant_ra, m.radyant_dec), o);
       }
-      return Object.assign({}, m, { aktif: aktifMi(m, zaman), gunFark, radyantTepe });
+      return Object.assign({}, m, { aktif, gunFark, radyantTepe, radyantGece });
     });
+  }
+
+  /* Karşı konum: yer merkezli görünen ekliptik boylam farkı 180° (almanak tanımı). Güneş merkezli kavuşum
+     yakın bir başlangıç verir; ±3 gün içinde ikiye bölmeyle iyileştirilir. */
+  function karsiKonum(c, t0) {
+    if (!t0) return null;
+    const fark = t => {
+      const p = A.Ecliptic(A.GeoVector(c, t, true)).elon, g = A.Ecliptic(A.GeoVector('Sun', t, true)).elon;
+      return ((p - g - 180) % 360 + 540) % 360 - 180;
+    };
+    let a = new Date(t0.getTime() - 3 * 86400e3), b = new Date(t0.getTime() + 3 * 86400e3);
+    let fa = fark(a), fb = fark(b);
+    if (fa * fb > 0) return t0;
+    for (let i = 0; i < 40; i++) {
+      const m = new Date((a.getTime() + b.getTime()) / 2), fm = fark(m);
+      if (fa * fm <= 0) { b = m; fb = fm; } else { a = m; fa = fm; }
+    }
+    return new Date((a.getTime() + b.getTime()) / 2);
   }
 
   /* ---- Yaklaşan olaylar ---- */
   function olaylar(zaman, gzl, gunSayisi) {
     const son = new Date(zaman.getTime() + (gunSayisi || 120) * 86400e3);
     const ls = [];
-    ayCeyrekleri(zaman, 8).forEach(q => {
-      if (q.ceyrek === 0 || q.ceyrek === 2) ls.push({ tur: 'ay', zaman: q.zaman, baslik: q.ad });
+    ayCeyrekleri(zaman, Math.ceil((gunSayisi || 120) / 7.38) + 2).forEach(q => {
+      if ((q.ceyrek === 0 || q.ceyrek === 2) && q.zaman <= son) ls.push({ tur: 'ay', zaman: q.zaman, baslik: q.ad });
     });
     /* Ay tutulması: Türkiye'den görünürlüğü, tutulmanın ortasında Ay'ın ufkun üstünde olup olmadığıyla kontrol edilir. */
     let le = A.SearchLunarEclipse(zaman);
@@ -292,14 +341,20 @@
       const tepe = tarih(le.peak);
       const ayAlt = cisimAltAz('Moon', tepe, gzl).alt;
       const tur = { penumbral: 'Yarıgölge ay tutulması', partial: 'Parçalı ay tutulması', total: 'Tam ay tutulması' }[le.kind] || 'Ay tutulması';
-      ls.push({ tur: 'tutulma', zaman: tepe, baslik: tur, not: ayAlt > 0 ? 'Buradan görünür (tutulma ortasında Ay ufkun ' + Math.round(ayAlt) + '° üstünde).' : 'Tutulma ortasında Ay buradan ufkun altında.', gorunur: ayAlt > 0 });
+      /* Ortada ufkun altındaysa bile başında ya da sonunda Ay ufkun üstünde olabilir */
+      const yd = (le.sd_partial || le.sd_penum || 0) * 60e3;
+      const kenar = yd ? [cisimAltAz('Moon', new Date(tepe.getTime() - yd), gzl).alt, cisimAltAz('Moon', new Date(tepe.getTime() + yd), gzl).alt] : [];
+      const kismen = ayAlt <= 0 && kenar.some(a => a > 0);
+      ls.push({ tur: 'tutulma', zaman: tepe, baslik: tur, not: ayAlt > 0 ? 'Buradan görünür (tutulma ortasında Ay ufkun ' + Math.round(ayAlt) + '° üstünde).' : (kismen ? 'Kısmen görünür: tutulmanın ' + (kenar[0] > 0 ? 'başında Ay batmadan önce' : 'sonunda Ay doğduktan sonra') + ' izlenebilir.' : 'Tutulma boyunca Ay buradan ufkun altında.'), gorunur: ayAlt > 0 || kismen });
       le = A.NextLunarEclipse(le.peak);
     }
     let se = A.SearchLocalSolarEclipse(zaman, gzl);
     for (let i = 0; i < 2 && se && tarih(se.peak.time) < son; i++) {
       const tur = { partial: 'Parçalı güneş tutulması', annular: 'Halkalı güneş tutulması', total: 'Tam güneş tutulması' }[se.kind] || 'Güneş tutulması';
       const alt = se.peak.altitude;
-      ls.push({ tur: 'tutulma', zaman: tarih(se.peak.time), baslik: tur, not: alt > 0 ? 'Buradan görünür; en büyük anda Güneş ' + Math.round(alt) + '° yükseklikte. Güneşe asla filtresiz bakma.' : 'Buradan görünmez (Güneş ufkun altında).', gorunur: alt > 0, ortulme: se.obscuration });
+      const basAlt = se.partial_begin ? se.partial_begin.altitude : -90, sonAlt = se.partial_end ? se.partial_end.altitude : -90;
+      const kismen = alt <= 0 && (basAlt > 0 || sonAlt > 0);
+      ls.push({ tur: 'tutulma', zaman: tarih(se.peak.time), baslik: tur, not: alt > 0 ? 'Buradan görünür; en büyük anda Güneş ' + Math.round(alt) + '° yükseklikte. Güneşe asla filtresiz bakma.' : (kismen ? 'Kısmen görünür: ' + (basAlt > 0 ? 'Güneş batarken' : 'Güneş doğarken') + ' tutulmuş hâlde. Güneşe asla filtresiz bakma.' : 'Buradan görünmez (Güneş ufkun altında).'), gorunur: alt > 0 || kismen, ortulme: se.obscuration });
       se = A.NextLocalSolarEclipse(se.peak.time, gzl);
     }
     const yil = zaman.getFullYear();
@@ -309,11 +364,11 @@
         .forEach(([k, ad]) => ls.push({ tur: 'mevsim', zaman: tarih(s[k]), baslik: ad }));
     });
     ['Mercury', 'Venus'].forEach(c => {
-      const e = A.SearchMaxElongation(c, zaman);
-      if (e) ls.push({ tur: 'gezegen', zaman: tarih(e.time), baslik: TR_AD[c] + ' en büyük uzanımda', not: (e.visibility === 'morning' ? 'Sabah gökyüzünde' : 'Akşam gökyüzünde') + ', Güneş\'ten ' + e.elongation.toFixed(1).replace('.', ',') + '° uzakta.' });
+      for (let e = A.SearchMaxElongation(c, zaman), n = 0; e && tarih(e.time) <= son && n < 6; e = A.SearchMaxElongation(c, new Date(tarih(e.time).getTime() + 86400e3)), n++)
+        ls.push({ tur: 'gezegen', zaman: tarih(e.time), baslik: TR_AD[c] + ' en büyük uzanımda', not: (e.visibility === 'morning' ? 'Sabah gökyüzünde' : 'Akşam gökyüzünde') + ', Güneş\'ten ' + e.elongation.toFixed(1).replace('.', ',') + '° uzakta.' });
     });
     ['Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'].forEach(c => {
-      const t = tarih(A.SearchRelativeLongitude(c, 0, zaman));
+      const t = karsiKonum(c, tarih(A.SearchRelativeLongitude(c, 0, zaman)));
       if (t) ls.push({ tur: 'gezegen', zaman: t, baslik: TR_AD[c] + ' karşı konumda', not: 'Bütün gece görünür, yılın en parlak ve en yakın hâli.' });
     });
     return ls.filter(o => o.zaman && o.zaman >= zaman && o.zaman <= son).sort((a, b) => a.zaman - b.zaman);

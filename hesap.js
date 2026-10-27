@@ -208,7 +208,7 @@
     el = kok;
     el.innerHTML = '<p class="bos">Hesaplar hazırlanıyor…</p>';
     try { F = await U.veri('fizik'); } catch (e) {
-      el.innerHTML = '<div class="hata-kutu">Fizik verisi yüklenemedi: ' + U.kacis(e.message) + '</div>'; return;
+      el.innerHTML = '<div class="hata-kutu" role="alert">Fizik verisi yüklenemedi: ' + U.kacis(e.message) + '. Başka bir sekmeye geçip dönünce yeniden denenir.</div>'; return false;
     }
     el.innerHTML = '<h1>Hesap</h1><p class="alt-baslik">Ondalık için virgül ya da nokta kullanabilirsin; çok büyük sayılar için 2e30 gibi yaz.</p>' +
       KARTLAR.map(k => `<section class="hesap-kart" id="hk-${k.id}"><h3>${k.baslik}</h3><p class="aciklama-k">${k.aciklama}</p>${k.html()}<p class="formul-k">${k.formul}</p>${kaynakHtml(k)}</section>`).join('');

@@ -49,10 +49,12 @@
     try {
       const ctl = new AbortController();
       const zs = setTimeout(() => ctl.abort(), 10000);
-      const r = await fetch(GP + 'GROUP=' + grup + '&FORMAT=json', { signal: ctl.signal });
-      clearTimeout(zs);
-      if (r.status !== 200) throw new Error('HTTP ' + r.status);
-      const veri = await r.json();
+      let veri;
+      try {
+        const r = await fetch(GP + 'GROUP=' + grup + '&FORMAT=json', { signal: ctl.signal });
+        if (r.status !== 200) throw new Error('HTTP ' + r.status);
+        veri = await r.json();   // gövde inerken bağlantı takılırsa da zaman aşımı geçerli
+      } finally { clearTimeout(zs); }
       if (!Array.isArray(veri)) throw new Error('beklenmeyen yanıt');
       const yeni = Object.assign({ alindi: Date.now() }, isle(veri));
       bellek[anahtar] = yeni;
@@ -112,7 +114,7 @@
   async function uydular() {
     const [ist, yeni] = await Promise.allSettled([
       grupGetir('stations', 'gp_istasyon', v => ({ ls: v.filter(o => ISTASYONLAR.some(s => s.norad === o.NORAD_CAT_ID)) })),
-      grupGetir('last-30-days', 'gp_dizi', v => ({ diziler: dizileriAyikla(v) }))
+      grupGetir('last-30-days', 'gp_dizi', v => ({ diziler: dizileriAyikla(v), ham: v.filter(o => /^STARLINK/.test(o.OBJECT_NAME || '')) }))
     ]);
     const ls = [];
     if (ist.status === 'fulfilled') {
@@ -122,10 +124,18 @@
       });
     }
     if (yeni.status === 'fulfilled') {
-      yeni.value.diziler.forEach(d => ls.push({ id: 'dizi-' + d.kod, ad: 'Starlink dizisi (' + d.kod + ' fırlatması)', kisa: 'Starlink', omm: d.omm,
+      /* Diziler birkaç günde dağılır: önbellekteki veri bir günden eskiyse dizi ölçütü bugünkü konumlarla yeniden sınanır */
+      const yv = yeni.value;
+      const diziler = Date.now() - yv.alindi > 86400e3 && yv.ham ? dizileriAyikla(yv.ham) : yv.diziler;
+      diziler.forEach(d => ls.push({ id: 'dizi-' + d.kod, ad: 'Starlink dizisi (' + d.kod + ' fırlatması)', kisa: 'Starlink', omm: d.omm,
         dizi: { adet: d.adet, yukseklik: d.yukseklik, aralikDk: d.aralikDk }, alindi: yeni.value.alindi, eski: !!yeni.value.eski }));
     }
-    if (!ls.length) throw (ist.reason || new Error('yörünge verisi yok'));
+    if (!ls.length && ist.status !== 'fulfilled') throw (ist.reason || new Error('yörünge verisi yok'));
+    if (!ls.length && yeni.status !== 'fulfilled') throw (yeni.reason || new Error('yörünge verisi yok'));
+    /* Bir grup alınamadıysa liste bunu söylesin ("görünür geçiş yok" yanıltmasın) */
+    ls.eksik = [];
+    if (ist.status !== 'fulfilled') ls.eksik.push('ISS ve Tiangong');
+    if (yeni.status !== 'fulfilled') ls.eksik.push('Yeni Starlink dizileri');
     return ls;
   }
 
@@ -245,9 +255,10 @@
   async function gecislerParcali(uydu, konum, bas, gun) {
     const ls = [];
     for (let d = 0; d < gun; d++) {
-      const b = new Date(bas.getTime() + d * 86400e3 - (d ? 20 * 60e3 : 0));
+      /* Her dilim 20 dk önceden başlar, sonuncusu 20 dk taşar: pencerenin iki ucunda da geçiş kesik kalmaz */
+      const b = new Date(bas.getTime() + d * 86400e3 - 20 * 60e3);
       /* Dilim kenarında kesilmiş geçiş, komşu dilimdeki tamamıyla örtüşür: uzun olan kalır */
-      gecisler(uydu, konum, b, (d ? 20 / 1440 : 0) + 1).forEach(g => {
+      gecisler(uydu, konum, b, 20 / 1440 + 1 + (d === gun - 1 ? 20 / 1440 : 0)).forEach(g => {
         const i = ls.findIndex(x => x.bas.t <= g.bitis.t && g.bas.t <= x.bitis.t);
         if (i < 0) ls.push(g);
         else if (g.bitis.t - g.bas.t > ls[i].bitis.t - ls[i].bas.t) ls[i] = g;

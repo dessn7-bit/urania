@@ -567,7 +567,7 @@
       [F, R] = await Promise.all([U.veri('fizik'), U.veri('deney_rehber').catch(() => ({}))]);
       U.veri('dersler').then(D => { (D.dersler || []).forEach(x => { dersAdlari[x.id] = x.baslik; }); const a = el.querySelector('.deney-ders a'); if (a) a.textContent = dersAdi(a.getAttribute('href').split('/')[1]); }).catch(() => {});
     } catch (e) {
-      el.innerHTML = '<div class="hata-kutu">Fizik verisi yüklenemedi: ' + U.kacis(e.message) + '</div>'; return;
+      el.innerHTML = '<div class="hata-kutu" role="alert">Fizik verisi yüklenemedi: ' + U.kacis(e.message) + '. Başka bir sekmeye geçip dönünce yeniden denenir.</div>'; return false;
     }
     goster(el, location.hash.split('/')[1] || '');
   }

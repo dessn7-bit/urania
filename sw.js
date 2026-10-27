@@ -1,6 +1,6 @@
 /* sw.js — çevrimdışı çalışma. Ağ önce (güncel sürüm gelsin), ağ yoksa önbellek.
    Dosya eklenince ASSETS'e eklenmeli ve SURUM artırılmalı. */
-const SURUM = 'urania-v19';
+const SURUM = 'urania-v20';
 const ASSETS = [
   './', './index.html', './stil.css', './manifest.json',
   './icon-192.png', './icon-512.png', './icon-maskable-512.png',
@@ -17,7 +17,8 @@ const ASSETS = [
 ];
 
 self.addEventListener('install', e => {
-  e.waitUntil(caches.open(SURUM).then(c => c.addAll(ASSETS)).then(() => self.skipWaiting()));
+  /* cache:'reload': GitHub Pages 10 dk'lık HTTP önbelleği verir; yeni sürüm önbelleğine eski dosyalar girmesin */
+  e.waitUntil(caches.open(SURUM).then(c => c.addAll(ASSETS.map(u => new Request(u, { cache: 'reload' })))).then(() => self.skipWaiting()));
 });
 
 self.addEventListener('activate', e => {
@@ -33,19 +34,24 @@ self.addEventListener('fetch', e => {
   let ayni = false;
   try { ayni = new URL(e.request.url).origin === self.location.origin; } catch (h) { /* geçersiz URL: dokunma */ }
   if (!ayni) return;
-  /* Ağ önce, ama en çok 3 sn: karanlık bir yerde zayıf çekimde önbelleğe hızla düş. */
-  const ag = fetch(e.request).then(res => {
-    if (res.ok) {
-      const kopya = res.clone();
-      caches.open(SURUM).then(c => c.put(e.request, kopya)).catch(() => { /* kota dolu: yanıtı etkilemez */ });
-    }
-    return res;
-  });
   const onbellek = () => caches.match(e.request, { ignoreSearch: true }).then(r => {
     if (r) return r;
     /* index.html yedeği yalnız sayfa gezinmesi için; JSON isteğine HTML dönmesin */
     if (e.request.mode === 'navigate') return caches.match('./index.html');
     return Response.error();
+  });
+  /* Ağ önce, ama en çok 3 sn: karanlık bir yerde zayıf çekimde önbelleğe hızla düş.
+     no-cache: tarayıcının HTTP önbelleği yerine sunucuya sorulur (ETag ile değişmediyse 304, ucuz).
+     Sunucu hata dönerse (404/5xx) önbellekteki sağlam kopya kullanılır. */
+  let istek = e.request;
+  try { istek = e.request.mode === 'navigate' ? new Request(e.request.url, { cache: 'no-cache', credentials: 'same-origin' }) : new Request(e.request, { cache: 'no-cache' }); } catch (h) { /* kurulamazsa olduğu gibi */ }
+  const ag = fetch(istek).then(res => {
+    if (res.ok) {
+      const kopya = res.clone();
+      caches.open(SURUM).then(c => c.put(e.request, kopya)).catch(() => { /* kota dolu: yanıtı etkilemez */ });
+      return res;
+    }
+    return onbellek().then(r => (r && r.type !== 'error' ? r : res));
   });
   e.respondWith(new Promise(coz => {
     let bitti = false;

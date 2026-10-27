@@ -29,8 +29,10 @@
   /* Varsayılan konum: Fetih Mahallesi, Ataşehir — OpenStreetMap (Nominatim) mahalle merkezi
      41.0046423, 29.0762052. Kullanıcı GPS ya da elle değiştirebilir. */
   const VARSAYILAN_KONUM = { ad: 'Fetih Mahallesi, Ataşehir', enlem: 41.0046, boylam: 29.0762, yukseklik: 20, saatDilimi: 'Europe/Istanbul' };
+  const dilimSonuc = {};
   function gecerliDilim(z) {
-    try { new Intl.DateTimeFormat('tr-TR', { timeZone: z }); return true; } catch (e) { return false; }
+    if (z in dilimSonuc) return dilimSonuc[z];   // konum() sık çağrılır; biçimleyici kurmak pahalı
+    try { new Intl.DateTimeFormat('tr-TR', { timeZone: z }); return (dilimSonuc[z] = true); } catch (e) { return (dilimSonuc[z] = false); }
   }
   /* Bozuk/eksik kayıt uygulamayı düşürmesin: enlem/boylam sayı değilse varsayılana dön. */
   function konum() {
@@ -62,7 +64,7 @@
       veriOnbellek[ad] = fetch('./veri/' + ad + '.json').then(r => {
         if (!r.ok) throw new Error(ad + '.json yüklenemedi (' + r.status + ')');
         return r.json();
-      });
+      }).catch(e => { delete veriOnbellek[ad]; throw e; });   // geçici hata oturum boyunca kalmasın
     }
     return veriOnbellek[ad];
   }
@@ -202,21 +204,31 @@
       if (a.dataset.sekme === bolum) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
     });
     const el = document.getElementById('b-' + bolum);
-    if (rota.son !== bolum) { window.scrollTo(0, 0); rota.son = bolum; }
+    const yeniBolum = rota.son !== bolum, ilkAcilis = rota.son === undefined;
+    if (yeniBolum) { window.scrollTo(0, 0); rota.son = bolum; }
+    el.querySelectorAll(':scope > .hata-kutu.bolum-hata').forEach(x => x.remove());
     const m = moduller[bolum];
     const hataGoster = e => {
       console.error(e);
-      el.insertAdjacentHTML('beforeend', '<div class="hata-kutu" role="alert">Bu bölüm açılırken hata oluştu: ' + kacis(e && e.message || e) + '</div>');
+      ilkKurulan[bolum] = false;   // bölüme yeniden gelince baştan kurulmayı denesin
+      el.querySelectorAll(':scope > .hata-kutu.bolum-hata').forEach(x => x.remove());
+      el.insertAdjacentHTML('beforeend', '<div class="hata-kutu bolum-hata" role="alert">Bu bölüm açılırken hata oluştu: ' + kacis(e && e.message || e) + '. Başka bir sekmeye geçip geri dönünce yeniden denenir.</div>');
     };
     try {
       if (!ilkKurulan[bolum]) {
         ilkKurulan[bolum] = true;
         /* ilk() async: reddi try/catch'e düşmez, ayrıca yakalanır */
         const sonuc = m.ilk && m.ilk(el);
-        if (sonuc && sonuc.catch) sonuc.catch(hataGoster);
+        /* ilk() false dönerse (veri yüklenemedi) bölüm bir sonraki açılışta yeniden kurulur */
+        if (sonuc && sonuc.then) sonuc.then(v => { if (v === false) ilkKurulan[bolum] = false; }, hataGoster);
       }
       m.goster && m.goster(el, param);
     } catch (e) { hataGoster(e); }
+    /* Sekme değişince odak yeni bölümün başlığına (ekran okuyucu yeni sayfayı duyurur); bölüm kendi odağını kurduysa dokunma */
+    if (yeniBolum && !ilkAcilis && bolum !== 'ar' && !el.contains(document.activeElement)) {
+      const h = el.querySelector('h1');
+      if (h) { if (!h.hasAttribute('tabindex')) h.setAttribute('tabindex', '-1'); h.focus({ preventScroll: true }); }
+    }
     document.title = 'Urania — ' + ({ gok: 'Gökyüzü', deney: 'Deneyler', ders: 'Dersler', hesap: 'Hesap', defter: 'Defter', ar: 'Gökyüzüne bak', tani: 'Tanı' }[bolum]);
   }
 
@@ -239,9 +251,15 @@
     const h = hucre(enlem, boylam);
     if (adlar[h]) return adlar[h];
     try {
-      const r = await fetch('https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=16&accept-language=tr&lat=' + enlem.toFixed(4) + '&lon=' + boylam.toFixed(4));
-      if (!r.ok) { T('Nominatim (yer adı)', 'hata', 'HTTP ' + r.status); return null; }
-      const j = await r.json(), a = j.address || {};
+      /* Yanıt gelmezse konum güncellemeleri kilitlenmesin: 8 sn sınır (gövde dahil) */
+      const ctl = new AbortController(), zs = setTimeout(() => ctl.abort(), 8000);
+      let r, j;
+      try {
+        r = await fetch('https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=16&accept-language=tr&lat=' + enlem.toFixed(4) + '&lon=' + boylam.toFixed(4), { signal: ctl.signal });
+        if (!r.ok) { T('Nominatim (yer adı)', 'hata', 'HTTP ' + r.status); return null; }
+        j = await r.json();
+      } finally { clearTimeout(zs); }
+      const a = j.address || {};
       T('Nominatim (yer adı)', 'tamam');
       const mahalle = a.suburb || a.quarter || a.neighbourhood || a.village || a.hamlet;
       const ilce = a.town || a.city_district || a.county || a.city || a.province;
@@ -315,6 +333,16 @@
     document.addEventListener('visibilitychange', () => { if (!document.hidden) konumuBul(); });
     setInterval(() => { if (!document.hidden) konumuBul(); }, 10 * 60e3);
     if ('serviceWorker' in navigator && location.protocol === 'https:') {
+      /* Yeni sürüm etkinleşince açık sayfadaki eski kodla yeni dosyalar karışmasın: yenileme şeridi */
+      const vardi = !!navigator.serviceWorker.controller;
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        if (!vardi || document.getElementById('surumSerit')) return;
+        const d = document.createElement('div');
+        d.id = 'surumSerit'; d.className = 'surum-serit'; d.setAttribute('role', 'status');
+        d.innerHTML = 'Urania güncellendi. <button type="button" class="dugme dolu">Yenile</button>';
+        d.querySelector('button').addEventListener('click', () => location.reload());
+        document.body.appendChild(d);
+      });
       navigator.serviceWorker.register('./sw.js').catch(() => { /* çevrimdışı önbellek olmadan da çalışır */ });
     }
   }

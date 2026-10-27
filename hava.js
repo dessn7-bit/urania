@@ -22,20 +22,31 @@
     }));
   }
 
+  /* Hata sonrası 10 dk yeniden sorulmaz (sınır aşımı 429'da servisi yormamak için) */
+  const HATA_BEKLE = 10 * 60e3;
+  let sonHata = 0;
   /* Döndürür: { saatler, alindi: Date, eski: bool } ya da hata fırlatır */
   async function getir(enlem, boylam) {
     const k = anahtar(enlem, boylam);
     const kayit = U.oku(k, null);
     if (kayit && Date.now() - kayit.alindi < TAZE) return { saatler: coz(kayit.j), alindi: new Date(kayit.alindi), eski: false };
+    if (Date.now() - sonHata < HATA_BEKLE) {
+      if (kayit && Date.now() - kayit.alindi < EN_ESKI) return { saatler: coz(kayit.j), alindi: new Date(kayit.alindi), eski: true };
+      throw new Error('servis az önce yanıt vermedi; birkaç dakika sonra yeniden denenecek');
+    }
     const url = 'https://api.open-meteo.com/v1/forecast?latitude=' + enlem.toFixed(3) + '&longitude=' + boylam.toFixed(3) +
       '&hourly=' + DEGISKEN + '&timezone=GMT&timeformat=unixtime&forecast_days=3';
     try {
       const ctl = new AbortController();
       const zs = setTimeout(() => ctl.abort(), 8000);
-      const r = await fetch(url, { signal: ctl.signal });
-      clearTimeout(zs);
-      const j = await r.json();
-      if (!r.ok || j.error) throw new Error(j.reason || ('HTTP ' + r.status));
+      let r, j;
+      try {
+        r = await fetch(url, { signal: ctl.signal });
+        /* Hata gövdesi JSON olmayabilir: önce durum kodu */
+        if (!r.ok) { let neden = ''; try { neden = (await r.json()).reason || ''; } catch (h) { /* gövde JSON değil */ } throw new Error('HTTP ' + r.status + (neden ? ': ' + neden : '')); }
+        j = await r.json();
+      } finally { clearTimeout(zs); }
+      if (!j || j.error || !j.hourly) throw new Error((j && j.reason) || 'beklenmeyen yanıt');
       /* 48 saatten eski hava önbelleklerini sil (her ~1 km hücre ~3,5 KB) */
       U.anahtarlar('hava2_').forEach(a => { const x = U.oku(a, null); if (!x || Date.now() - x.alindi > EN_ESKI) U.sil(a); });
       U.anahtarlar('hava_').forEach(a => U.sil(a)); // eski biçim
@@ -43,6 +54,7 @@
       if (window.Tani) Tani.servis('Open-Meteo (hava)', 'tamam');
       return { saatler: coz(j), alindi: new Date(), eski: false };
     } catch (e) {
+      sonHata = Date.now();
       if (window.Tani) Tani.servis('Open-Meteo (hava)', 'hata', e.message);
       if (kayit && Date.now() - kayit.alindi < EN_ESKI) return { saatler: coz(kayit.j), alindi: new Date(kayit.alindi), eski: true };
       throw e;

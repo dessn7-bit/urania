@@ -29,7 +29,7 @@
       <div class="serit" style="margin-top:10px">
         <span class="konum" id="gkKonum"></span>
         <button type="button" class="bag" id="gkKonumDegis">Konumu değiştir</button>
-        <label>Gece <input type="date" id="gkTarih"></label>
+        <label>Gece <input type="date" id="gkTarih" min="1900-01-01" max="2100-12-31"></label>
         <button type="button" class="bag" id="gkBuGece" hidden>Bu geceye dön</button>
       </div>
       <a class="dugme dolu ar-giris" href="#ar">Telefonu gökyüzüne tut</a>
@@ -109,7 +109,7 @@
   }
 
   /* ---- Zaman ---- */
-  function bazAn() { return durum.gun ? new Date(durum.gun) : new Date(); }
+  function bazAn() { return durum.gun ? new Date(durum.gun) : (!durum.canli && durum.sabitOgle ? new Date(durum.sabitOgle + 9 * 3600e3) : new Date()); }
   function ogle() { return G.yerelOgle(bazAn(), U.konum().boylam); }
   /* Canlı modda levha her zaman gerçek "şimdi"yi çizer; kaydırıcı yalnız konum gösterir.
      Kaydırıcı gecenin öğlesinden ertesi öğleye (24 sa) uzanır: kış sabahları da ulaşılır. */
@@ -141,15 +141,30 @@
     durum.meteorDurum = G.meteorDurumu(durum.veri.meteor.yagmurlar, temsil, durum.gzl, durum.gece);
     durum.ayGece = G.ayDurumu(temsil, durum.gzl);
     durum.gezegenGece = G.gezegenlerBuGece(temsil, durum.gzl, durum.gece);
-    durum.olaylar = G.olaylar(bazAn(), durum.gzl, 120);
-    /* Algol: bu gece (planda) ve önümüzdeki 30 gün (listede) */
-    const ab = new Date(Math.min(ogle().getTime(), Date.now()));
-    durum.algol = Ortme.algolGozlenebilir(durum.veri.algol, durum.gzl, ab, new Date(ab.getTime() + 31 * 86400e3));
+    /* Olaylar (120 gün) ve Algol (30 gün) ağır: önce sayfa çizilsin, sonra arka arkaya hesaplansın */
+    const sira = ++geceSira, gzl = durum.gzl, baz = bazAn();
+    durum.olaylar = null; durum.algol = null; durum.algolGece = null;
     listeleriYaz();
     ortmeYaz();
     havaYaz();
     issYaz(true);
+    setTimeout(() => {
+      if (sira !== geceSira) return;
+      /* Algol: bu gece (planda) ve önümüzdeki 30 gün (listede) */
+      const ab = new Date(Math.min(G.yerelOgle(baz, gzl.longitude).getTime(), Date.now()));
+      durum.algol = Ortme.algolGozlenebilir(durum.veri.algol, gzl, ab, new Date(ab.getTime() + 31 * 86400e3));
+      /* Plan için seçili gecenin minimumları ayrıca: 30 günlük listenin dışındaki bir gece seçilmiş olabilir */
+      const og = G.yerelOgle(baz, gzl.longitude);
+      durum.algolGece = Ortme.algolGozlenebilir(durum.veri.algol, gzl, og, new Date(og.getTime() + 86400e3));
+      algolYaz(); planYaz();
+      setTimeout(() => {
+        if (sira !== geceSira) return;
+        durum.olaylar = G.olaylar(baz, gzl, 120);
+        olayYaz();
+      }, 0);
+    }, 0);
   }
+  let geceSira = 0;
 
   /* ---- Levha (her zaman değişiminde) ---- */
   function levhaCiz() {
@@ -175,7 +190,7 @@
       durum.uydular.forEach((u, i) => {
         try { const d = Uydu.anlik(u, k, an); if (d) uydular.push(Object.assign({ ad: u.ad, kisa: u.kisa }, d)); } catch (h) { /* bu uydu çizilmez */ }
         const g = durum.uyduGecis[i];
-        if (g && g.gorunur && g.bitis.t > an) uyduYollari.push({ kisa: u.kisa, yol: g.yol });
+        if (g && g.gorunur && g.bitis.t > an) uyduYollari.push({ kisa: u.kisa, yol: g.yol, gBas: g.gBas });
       });
     }
     durum.harita.ciz({ zaman: an, gzl, gunes, ay, gezegenler, hedefler: durum.veri.hedefler, radyantlar, limitKadir: durum.limitKadir, uydular, uyduYollari });
@@ -314,7 +329,7 @@
   function hedefYaz() {
     const iyi = durum.hedefDurum.filter(h => h.gorunur).sort((a, b) => b.tepe.alt - a.tepe.alt);
     const alcak = durum.hedefDurum.filter(h => !h.gorunur);
-    el.querySelector('#gkHedef').innerHTML = iyi.length ? iyi.map(hedefSatir).join('') : '<li><span class="bos">Bu gece karanlıkta 20°\'yi geçen hedef yok.</span></li>';
+    el.querySelector('#gkHedef').innerHTML = iyi.length ? iyi.map(hedefSatir).join('') : '<li><span class="bos">' + (durum.gece.karanlikYok ? 'Bu gece gök yeterince kararmıyor (Güneş ufkun 6°\'den fazla altına inmiyor); kümeler ve bulutsular aydınlık gökte kaybolur.' : 'Bu gece karanlıkta 20°\'yi geçen hedef yok.') + '</span></li>';
     el.querySelector('#gkHedefAlcak').innerHTML = alcak.map(h => `<li class="sonuk"><span class="ad">${U.kacis(h.ad)}</span><span class="sag">${h.tepe ? 'en çok ' + U.derece(h.tepe.alt) : '—'}</span><span class="alt">${U.kacis(h.turAd)} · ${U.kacis(tdAd(h.takimyildiz))}</span></li>`).join('');
     el.querySelector('#gkHedefDiger').hidden = !alcak.length;
   }
@@ -327,7 +342,7 @@
     const aralik = `${bas[1]} ${ayAd[bas[0] - 1]} – ${bit[1]} ${ayAd[bit[0] - 1]}`;
     const rozet = m.aktif ? '<span class="rozet iyi">etkin</span>' : '';
     const parca = [`zirve ${U.gun(zirve)} (${U.kacGun(m.gunFark)})`, aralik, /\(.*\)/.test(String(m.zhr)) ? 'ZHR ' + U.kacis(String(m.zhr).replace(/^\S+\s*/, '')) : null, m.hiz ? m.hiz + ' km/s' : null, `zirvede Ay %${Math.round(ayOran * 100)}`];
-    if (m.radyantTepe && !tam) parca.push(`radyant gece en çok ${U.derece(m.radyantTepe.alt)}`);
+    if (m.radyantTepe && !tam) parca.push(`radyant ${m.radyantGece === 'bu gece' ? 'bu gece' : 'zirve gecesi'} en çok ${U.derece(m.radyantTepe.alt)}`);
     if (!tam && m.gunFark > 0) parca.push(takvimBag({ baslik: m.ad + ' meteor yağmuru zirvesi', bas: zirve, aciklama: 'IMO takvimine göre zirve. ZHR ' + m.zhr + '; zirvede Ay %' + Math.round(ayOran * 100) + ' aydınlık. (Urania)' }));
     return `<li${!m.aktif && tam ? ' class="sonuk"' : ''}><span class="ad">${U.kacis(m.ad)}${rozet}</span><span class="sag">${m.zhr != null ? 'ZHR ' + U.kacis(String(m.zhr).split(' ')[0]) : ''}</span><span class="alt">${parca.filter(Boolean).join(' · ')}${m.not ? '<br>' + U.kacis(m.not) : ''}</span></li>`;
   }
@@ -350,6 +365,7 @@
     return `<button type="button" class="bag takvim-bag" data-takvim="${takvimNo}">Takvime ekle</button>`;
   }
   function olayYaz() {
+    if (!durum.olaylar) { el.querySelector('#gkOlay').innerHTML = '<li><span class="bos">Hesaplanıyor…</span></li>'; return; }
     const ls = durum.olaylar.slice(0, 12);
     el.querySelector('#gkOlay').innerHTML = ls.map(o => `<li${o.gorunur === false ? ' class="sonuk"' : ''}><span class="ad">${U.kacis(o.baslik)}</span><span class="sag">${U.gun(o.zaman)}</span><span class="alt">${o.not ? U.kacis(o.not) + '<br>' : ''}${U.gunHafta(o.zaman)}, ${U.saat(o.zaman)} · ${takvimBag({ baslik: o.baslik, bas: o.zaman, aciklama: (o.not || '') + ' (Urania, ' + U.konum().ad + ')' })}</span></li>`).join('');
   }
@@ -401,15 +417,17 @@
       const parlak = g.enParlak ? `En parlak ${U.kadir(g.enParlak.kadir)} kadir. ` : '';
       return `<li><span class="ad">${U.kacis(u.kisa)} · ${U.kacis(U.gunHafta(b.t))}</span><span class="sag">en çok ${U.derece(t.alt)}</span><span class="alt">${parlak}${metin}${diziNot}<br>${takvimBag({ baslik: u.kisa + ' geçişi', bas: new Date(b.t.getTime() - 60e3), son: new Date(s.t.getTime() + 60e3), aciklama: u.ad + ': ' + metin + '. (Urania, ' + k.ad + ')' })}</span></li>`;
     }).join('') : '<li><span class="bos">Önümüzdeki 5 günde buradan görünür bir geçiş yok.</span></li>';
-    const yaslar = uydular.filter(u => !u.dizi).map(u => (Date.now() - Uydu.donem(u)) / 86400e3);
-    const yas = yaslar.length ? Math.max(...yaslar) : 0;
+    if (uydular.eksik && uydular.eksik.length) ul.insertAdjacentHTML('afterbegin', '<li><span class="bos">' + U.kacis(uydular.eksik.join(' ve ')) + ' yörünge verisi alınamadı; bu liste eksik. Bir süre sonra kendiliğinden yeniden denenir.</span></li>');
+    const yaslar = uydular.map(u => (Date.now() - Uydu.donem(u)) / 86400e3);
+    const yas = yaslar.length ? Math.max(...yaslar) : null;
     const eski = uydular.some(u => u.eski);
-    kay.innerHTML = `Yörünge öğeleri: <a href="https://celestrak.org/" target="_blank" rel="noopener">CelesTrak</a>, ${U.sayi(yas, 1)} günlük${yas > 7 ? ' — eski; saatler birkaç dakika kayabilir' : ''}${eski ? ' (çevrimdışı ya da CelesTrak yanıt vermedi; önbellekten)' : ''}. Hesap: SGP4 (satellite.js). Parlaklık tahmini Heavens-Above'ın yöntemiyle uyumlu (onların değerlerinden en çok 0,1 kadir farklı); uydunun duruşu bilinmediği için kabadır. Küçük sayı daha parlak; karşılaştırma için Sirius −1,4.`;
+    kay.innerHTML = `Yörünge öğeleri: <a href="https://celestrak.org/" target="_blank" rel="noopener">CelesTrak</a>${yas != null ? ', ' + U.sayi(yas, 1) + ' günlük' : ''}${yas > 7 ? ' — eski; saatler birkaç dakika kayabilir' : ''}${eski ? ' (çevrimdışı ya da CelesTrak yanıt vermedi; önbellekten)' : ''}. Hesap: SGP4 (satellite.js). Parlaklık tahmini Heavens-Above'ın yöntemiyle uyumlu (onların değerlerinden en çok 0,1 kadir farklı); uydunun duruşu bilinmediği için kabadır. Küçük sayı daha parlak; karşılaştırma için Sirius −1,4.`;
   }
 
   /* ---- Algol ---- */
   function algolYaz() {
     const ef = durum.veri.algol;
+    if (!durum.algol) { el.querySelector('#gkAlgol').innerHTML = '<li><span class="bos">Hesaplanıyor…</span></li>'; return; }
     const ls = durum.algol.filter(m => m.gorunur && m.zaman > new Date(Date.now() - 2 * 3600e3)).slice(0, 8);
     el.querySelector('#gkAlgol').innerHTML = (ls.length ? ls.map(m => {
       const metin = `En sönük anı ${U.saat(m.zaman)} (±${ef.hata_dk} dk); Algol o sırada ${U.derece(m.alt)} yükseklikte, ${G.YON_UZUN[G.yon(m.az)]}. Bundan önceki yaklaşık 5 saatte yavaş yavaş sönükleşir, sonraki 5 saatte eski parlaklığına döner; en iyisi en sönük andan 1–2 saat önce başlayıp yanındaki yıldızlarla karşılaştırarak izlemek.`;
@@ -458,18 +476,26 @@
     if (typeof Worker !== 'undefined') {
       try {
         if (!isci) isci = new Worker('./ortme_isci.js');
+        const w = isci;
         return new Promise((coz, red) => {
+          /* İşçi yüklenemez ya da yanıt vermezse yedeğe (ana iş parçacığı) düş; liste "Hesaplanıyor…"da kalmasın */
+          const bitir = () => { clearTimeout(zs); w.removeEventListener('message', al); w.removeEventListener('error', hata); w.removeEventListener('messageerror', hata); };
+          const hata = () => { bitir(); if (isci === w) { w.terminate(); isci = null; } coz(yedek()); };
+          const zs = setTimeout(hata, 60000);
           const al = e => {
             if (e.data.kimlik !== sira) return;
-            isci.removeEventListener('message', al);
+            bitir();
             if (e.data.hata) red(new Error(e.data.hata)); else coz(e.data.ls);
           };
-          isci.addEventListener('message', al);
-          isci.postMessage({ kimlik: sira, yildizlar, enlem: k.enlem, boylam: k.boylam, yukseklik: k.yukseklik || 0, bas: bas.getTime(), gun });
+          w.addEventListener('message', al);
+          w.addEventListener('error', hata);
+          w.addEventListener('messageerror', hata);
+          w.postMessage({ kimlik: sira, yildizlar, enlem: k.enlem, boylam: k.boylam, yukseklik: k.yukseklik || 0, bas: bas.getTime(), gun });
         });
       } catch (h) { isci = null; /* aşağıdaki yedeğe düş */ }
     }
-    return (async () => {
+    return yedek();
+    function yedek() { return (async () => {
       const gzl = G.gozlemci(k.enlem, k.boylam, k.yukseklik || 0);
       let ls = [];
       for (let d = 0; d < gun; d++) {
@@ -478,7 +504,7 @@
         ls = ls.concat(Ortme.ortmeler(yildizlar, gzl, new Date(bas.getTime() + d * 86400e3), 1));
       }
       return ls;
-    })();
+    })(); }
   }
   async function ortmeYaz() {
     const k = U.konum();
@@ -501,7 +527,12 @@
     /* dilim sınırında iki kez bulunanları tekilleştir (aynı yıldız/gezegen, bir saatten yakın) */
     const kimlik = h => h.gezegen || h.hip;
     const tek = [];
-    ls.forEach(o => { const t = o.giris || o.cikis; if (!tek.some(x => kimlik(x.hedef) === kimlik(o.hedef) && Math.abs((x.giris || x.cikis) - t) < 3600e3)) tek.push(o); });
+    ls.forEach(o => {
+      const t = o.giris || o.cikis;
+      const i = tek.findIndex(x => kimlik(x.hedef) === kimlik(o.hedef) && Math.abs((x.giris || x.cikis) - t) < 3 * 3600e3);
+      if (i < 0) tek.push(o);
+      else if (o.giris && o.cikis && !(tek[i].giris && tek[i].cikis)) tek[i] = o;   // iki ucu da bulunan kayıt kalsın
+    });
     tek.forEach(o => { o.ad = yildizAdi(o.hedef); });
     /* Ülker üyeleri, seçilemeyecek kadar sönük olsalar da aynı gecenin listesinde dursun (grup içinde not düşülür) */
     durum.ortmeler = tek.filter(o => ortmeGorunurMu(o) || (o.hedef.u && ((o.girisBilgi && o.girisBilgi.gorunur) || (o.cikisBilgi && o.cikisBilgi.gorunur))));
@@ -542,11 +573,12 @@
   function planYaz() {
     const ol = el && el.querySelector('#gkPlan'); if (!ol || !durum.gece) return;
     const p = Plan.olustur({ gzl: durum.gzl, gece: durum.gece, hedefDurum: durum.hedefDurum, gezegenGece: durum.gezegenGece, ay: durum.ayGece,
-      limitKadir: durum.limitKadir, hava: durum.havaSaatler, uyduGecisleri: durum.uyduGecisleri, algol: durum.algol, ortmeler: durum.ortmeler, meteorDurum: durum.meteorDurum });
+      limitKadir: durum.limitKadir, hava: durum.havaSaatler, uyduGecisleri: durum.uyduGecisleri, algol: durum.algolGece, ortmeler: durum.ortmeler, meteorDurum: durum.meteorDurum,
+      simdi: durum.gun ? null : new Date(Math.floor(Date.now() / 300e3) * 300e3) });
     durum.plan = p;
     const dugme = el.querySelector('#gkPlanDugme');
     if (!p.maddeler.length) {
-      const neden = { 'gunes-batmiyor': 'Bu gece Güneş batmıyor (kutup günü); plan yok.', 'gunes-dogmuyor': 'Güneş bugün doğmuyor (kutup gecesi). Plan, gece ile gündüzün değiştiği yerler için hazırlanıyor; listelerdeki saatler yine geçerli.' }[p.neden] || 'Bu gece için önerilecek bir şey bulunamadı.';
+      const neden = { 'gunes-batmiyor': 'Bu gece Güneş batmıyor (kutup günü); plan yok.', 'gunes-dogmuyor': 'Güneş bugün doğmuyor (kutup gecesi). Plan, gece ile gündüzün değiştiği yerler için hazırlanıyor; listelerdeki saatler yine geçerli.', 'gece-bitti': 'Bu gecenin gözlem saatleri geçti; yeni plan öğleden sonra hazırlanır.', 'karanlik-yok': 'Bu gece gök yeterince kararmıyor; plan yok.' }[p.neden] || 'Bu gece için önerilecek bir şey bulunamadı.';
       ol.innerHTML = `<li><span class="bos">${neden}</span></li>`;
       dugme.hidden = true; return;
     }
@@ -622,12 +654,13 @@
     const kap = el.querySelector('#gkHava');
     const g = durum.gece;
     const bas = g.sivilSon || g.batis, son = g.sivilBas || g.dogus;
-    if (!bas || !son) { kap.innerHTML = ''; return; }
+    /* Sıra numarası ve eski veri her çağrıda sıfırlanır: önceki gecenin isteği geç gelirse yazılmasın */
     const sira = ++havaSira;
+    durum.havaSaatler = null;
+    if (!bas || !son) { kap.innerHTML = ''; return; }
     const k = U.konum();
     kap.innerHTML = '<p class="soluk kucuk">Bulut tahmini alınıyor…</p>';
     let h;
-    durum.havaSaatler = null;
     try { h = await Hava.getir(k.enlem, k.boylam); } catch (e) {
       if (sira !== havaSira) return;
       planYaz();
@@ -693,7 +726,7 @@
     else if (d.hata) kaynak = 'konum alınamadı, ' + (k.oto ? 'son bilinen yer' : 'varsayılan yer');
     else kaynak = k.oto ? 'son bilinen yer, güncelleniyor…' : 'konum aranıyor…';
     const s = el.querySelector('#gkKonum');
-    if (s) s.textContent = k.ad + ' (' + U.sayi(k.enlem, 2) + '°, ' + U.sayi(k.boylam, 2) + '°) · ' + kaynak + (k.saatDilimi !== 'Europe/Istanbul' ? ' · saatler: ' + U.dilimAdi(k.saatDilimi) : '');
+    if (s) s.textContent = k.ad + ' (' + U.sayi(k.enlem, 2) + '°, ' + U.sayi(k.boylam, 2) + '°) · ' + kaynak + (k.saatDilimi !== 'Europe/Istanbul' || k.dilimYaklasik ? ' · saatler: ' + U.dilimAdi(k.saatDilimi) + (k.dilimYaklasik && !/yaklaşık/.test(U.dilimAdi(k.saatDilimi)) ? ' (boylamdan yaklaşık; yaz saati ve sınırlar hesaba katılmadı)' : '') : '');
   }
 
   /* ---- Konum paneli ---- */
@@ -706,12 +739,24 @@
     el.querySelector('#gkKEnlem').value = String(k.enlem).replace('.', ',');
     el.querySelector('#gkKBoylam').value = String(k.boylam).replace('.', ',');
     el.querySelector('#gkKDurum').textContent = '';
+    el.querySelectorAll('#gkKEnlem, #gkKBoylam').forEach(i => i.removeAttribute('aria-invalid'));
     const oto = el.querySelector('#gkKOto');
     oto.checked = U.otoAcik();
     el.querySelector('#gkKElle').hidden = oto.checked;
     if (p.showModal) p.showModal(); else p.setAttribute('open', '');
   }
-  function sayiOku(s) { return parseFloat(String(s).replace(',', '.')); }
+  /* Sıkı okuma: "41,5abc", "41,0,5", "1e1" kabul edilmez; ekranda kullanılan "−" (U+2212) eksi sayılır */
+  function sayiOku(s) {
+    const t = String(s).trim().replace(/\u2212/g, '-');
+    return /^[-+]?\d+([.,]\d+)?$/.test(t) ? Number(t.replace(',', '.')) : NaN;
+  }
+  function konumGecerli() {
+    const enlem = sayiOku(el.querySelector('#gkKEnlem').value), boylam = sayiOku(el.querySelector('#gkKBoylam').value);
+    const e = enlem >= -90 && enlem <= 90, b = boylam >= -180 && boylam <= 180;
+    el.querySelector('#gkKEnlem').setAttribute('aria-invalid', String(!e));
+    el.querySelector('#gkKBoylam').setAttribute('aria-invalid', String(!b));
+    return e && b ? { enlem, boylam } : null;
+  }
   function konumBagla() {
     const p = el.querySelector('#gkKonumPanel');
     el.querySelector('#gkKonumDegis').addEventListener('click', konumPaneli);
@@ -736,6 +781,13 @@
       el.querySelector('#gkKEnlem').value = String(v.enlem).replace('.', ',');
       el.querySelector('#gkKBoylam').value = String(v.boylam).replace('.', ',');
     });
+    /* Geçersiz girişte panel kapanmaz, otomatik konum ayarı da değişmez */
+    el.querySelector('#gkKKaydet').addEventListener('click', e => {
+      if (el.querySelector('#gkKOto').checked || konumGecerli()) return;
+      e.preventDefault();
+      el.querySelector('#gkKDurum').textContent = 'Enlem −90 ile 90, boylam −180 ile 180 arasında bir sayı olmalı (ör. 41,02 ya da −33,87).';
+      (el.querySelector('#gkKEnlem[aria-invalid="true"]') || el.querySelector('#gkKBoylam')).focus();
+    });
     p.addEventListener('close', () => {
       if (p.returnValue !== 'kaydet') return;
       if (el.querySelector('#gkKOto').checked) {
@@ -744,35 +796,34 @@
         U.konumuBul(true);
         return;
       }
+      const gec = konumGecerli();
+      if (!gec) return;   // Kaydet düğmesi zaten engeller; Enter ile gönderimde de konum değişmesin
       U.otoAyarla(false);
-      const enlem = sayiOku(el.querySelector('#gkKEnlem').value);
-      const boylam = sayiOku(el.querySelector('#gkKBoylam').value);
-      if (!(enlem >= -90 && enlem <= 90 && boylam >= -180 && boylam <= 180)) {
-        alertYok('Enlem −90 ile 90, boylam −180 ile 180 arasında olmalı. Konum değişmedi.');
-        return;
-      }
+      const { enlem, boylam } = gec;
       const vars = U.VARSAYILAN_KONUM;
-      const saatDilimi = gpsDilim || (Math.abs(enlem - vars.enlem) < 1e-6 && Math.abs(boylam - vars.boylam) < 1e-6 ? vars.saatDilimi : U.dilimTahmin(boylam));
+      const varsayilan = Math.abs(enlem - vars.enlem) < 1e-6 && Math.abs(boylam - vars.boylam) < 1e-6;
+      const saatDilimi = gpsDilim || (varsayilan ? vars.saatDilimi : U.dilimTahmin(boylam));
+      /* Dilim GPS'ten ya da varsayılandan gelmiyorsa boylamdan tahmin (cihazın dilimi ödünç alınmış olabilir) */
+      const dilimYaklasik = !gpsDilim && !varsayilan;
       gpsDilim = null;
-      U.konumYaz({ ad: el.querySelector('#gkKAd').value.trim() || 'Özel konum', enlem, boylam, yukseklik: 0, saatDilimi, oto: false });
+      U.konumYaz({ ad: el.querySelector('#gkKAd').value.trim() || 'Özel konum', enlem, boylam, yukseklik: 0, saatDilimi, dilimYaklasik, oto: false });
       geceHesapla(); levhaCiz();
     });
-  }
-  function alertYok(mesaj) {
-    const o = el.querySelector('#gkOzet');
-    o.insertAdjacentHTML('beforebegin', '<div class="hata-kutu" role="alert">' + U.kacis(mesaj) + '</div>');
   }
 
   function bagla() {
     const kaydir = el.querySelector('#gkKaydir');
     kaydir.addEventListener('input', () => {
+      /* Canlı moddan çıkarken gece sabitlenir: kaydırıcıyla gezinirken saat yerel öğleyi geçerse
+         levha bir sonraki geceye atlamasın (kaydırıcı hep bu gecenin öğlesine göre). */
+      if (durum.canli && !durum.gun) durum.sabitOgle = ogle().getTime();
       durum.dakika = Number(kaydir.value);
       durum.canli = false;
       levhaCiz();
     });
     el.querySelector('#gkSimdi').addEventListener('click', () => {
       const geceDegisti = durum.gun !== null;
-      durum.gun = null; durum.canli = true;
+      durum.gun = null; durum.canli = true; durum.sabitOgle = null;
       el.querySelector('#gkTarih').value = '';
       el.querySelector('#gkBuGece').hidden = true;
       simdiyeKur();
@@ -792,8 +843,13 @@
     tarih.addEventListener('change', () => {
       if (!tarih.value) return;
       const [y, a, g] = tarih.value.split('-').map(Number);
-      /* Seçilen günün akşamı, gözlemcinin boylamına göre (yerel güneş saatiyle 21:00) */
-      durum.gun = new Date(Date.UTC(y, a - 1, g, 21, 0, 0) - U.konum().boylam / 15 * 3600e3);
+      /* Gök hesapları ve yıldız verisi 1900–2100 için; dışındaki yıl (ya da yarım yazılmış tarih) yok sayılır */
+      if (!(y >= 1900 && y <= 2100) || !a || !g) { tarih.setCustomValidity('1900 ile 2100 arasında bir tarih seç.'); tarih.reportValidity(); return; }
+      tarih.setCustomValidity('');
+      /* Seçilen günün akşamı, gözlemcinin boylamına göre (yerel güneş saatiyle 21:00). Date.UTC 0–99 yıllarını
+         1900'e kaydırdığı için yıl ayrıca kurulur. */
+      const d = new Date(Date.UTC(2000, a - 1, g, 21, 0, 0)); d.setUTCFullYear(y);
+      durum.gun = new Date(d.getTime() - U.konum().boylam / 15 * 3600e3);
       durum.canli = false;
       durum.dakika = 9 * 60; // 21:00
       el.querySelector('#gkBuGece').hidden = false;
@@ -842,8 +898,8 @@
       const [yildizlar, takimyildizlar, hedefler, meteor, ortmeY, algol] = await Promise.all([U.veri('yildizlar'), U.veri('takimyildiz'), U.veri('hedefler'), U.veri('meteor'), U.veri('ortme_yildiz'), U.veri('algol')]);
       durum.veri = { yildizlar, takimyildizlar, hedefler: hedefler.hedefler, hedefKaynak: hedefler.kaynak, meteor, ortmeYildiz: ortmeY.y, algol };
     } catch (e) {
-      el.innerHTML = '<div class="hata-kutu">Gök verisi yüklenemedi: ' + U.kacis(e.message) + '. Sayfayı yenile; sorun sürerse internet bağlantısını kontrol et.</div>';
-      return;
+      el.innerHTML = '<div class="hata-kutu" role="alert">Gök verisi yüklenemedi: ' + U.kacis(e.message) + '. Başka bir sekmeye geçip dönünce yeniden denenir; sorun sürerse internet bağlantısını kontrol et.</div>';
+      return false;   // uygulama.js: bölüm bir sonraki açılışta yeniden kurulur
     }
     iskelet();
     bagla();
@@ -852,7 +908,7 @@
     geceHesapla();
     levhaCiz();
     canliSayac = setInterval(() => {
-      if (!el.hidden && durum.uydular) issYaz(false); // 10 dakikada bir geçmiş geçişleri düşür
+      if (!el.hidden) issYaz(false); // 10 dakikada bir: geçmiş geçişler düşer, alınamamış veri yeniden denenir (uydu.js 2 saat bekletir)
       if (!durum.canli || durum.gun || el.hidden) return;
       simdiyeKur();
       if (geceAnahtariDegisti()) geceHesapla();

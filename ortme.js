@@ -134,7 +134,9 @@
     const adayPencere = new Map();       // hedef indeksi → [başlangıç saatleri]
     const yYon = hedefler.map(h => h.gezegen ? null : yildizYon(h, new Date((bas.getTime() + son) / 2)));
     let gezYon = null, gezZaman = 0;
-    for (let ms = bas.getTime(); ms <= son; ms += 3600e3) {
+    /* Dilim sınırında kesilmesin: aday saatler 3 saat önceden ve sonradan da taranır; bir pencere yalnız
+       başladığı dilime aittir (bas ≤ başlangıç < son). Böylece kayboluş bir dilimde, belirişi ötekinde kalmaz. */
+    for (let ms = bas.getTime() - 3 * 3600e3; ms <= son + 3 * 3600e3; ms += 3600e3) {
       const t = new Date(ms);
       const ay = birim(A.GeoMoon(t));
       if (!gezYon || ms - gezZaman >= 6 * 3600e3) {
@@ -160,6 +162,7 @@
         if (p && ms - p[1] <= 3600e3) p[1] = ms; else pencereler.push([ms, ms]);
       });
       pencereler.forEach(([a, b]) => {
+        if (a < bas.getTime() || a >= son) return;
         const sabit = h.gezegen ? null : yildizYon(h, new Date((a + b) / 2));
         const ls = kokler(ms => fark(h, new Date(ms), gzl, sabit), a - 90 * 60e3, b + 90 * 60e3);
         if (!ls.length) return;
