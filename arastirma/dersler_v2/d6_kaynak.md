@@ -151,3 +151,110 @@ Kaynak: araştırma raporu "Urania: askıdaki 13 olgusal iddianın birincil kayn
 | 33 tüp, 27 kaya karotu | https://science.nasa.gov/photojournal/the-33-sample-tubes-collected-by-perseverance/ | "33 tubes… 27 rock cores" |
 | Sapphire Canyon 25. örnek, 22. kaya örneği | https://science.nasa.gov/resource/meet-the-mars-samples-sapphire-canyon-sample-25/ ; https://science.nasa.gov/mars/the-mars-report/2025-september-special-edition/ | "Meet the 25th Martian sample"; "the rover's 22nd rock sample" |
 | Kütle–ışıma: Duric yalnız iki parça | https://www.tevza.org/home/course/PCO2012/Duric%20N.%20Advanced%20astrophysics%20(CUP,%202004).pdf | L = M^4 (M > 0,43), 0,23 M^2,3 (M < 0,43); 1,4 M^3,5 ve 32.000 M yalnız Wikipedia türevlerinde |
+
+## v3 genişletme (28.10.2026) — yeni iddialar
+Not: imagine.gsfc.nasa.gov ve eso.org bu oturumda izin hatası verdi (yeniden denenmedi); bu sayfalara dayanan eski satırlar aynen korundu, yeni iddia bu alan adlarına dayanmıyor.
+
+### Bölüm 1 — Ölümü kütle belirler (ek)
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Ağır yıldızda çekirdek karbon ve daha ağırını kaynaştıracak sıcaklık/yoğunluğa ulaşır; Güneş mertebesi karbonu tutuşturamaz | https://en.wikipedia.org/wiki/Stellar_evolution | "In sufficiently massive stars, the core reaches temperatures and densities high enough to fuse carbon and heavier elements" ; "A star of mass on the order of magnitude of the Sun will be unable to ignite carbon fusion" (WebFetch) |
+| Daha kütleli yıldızda denge daha sıcak çekirdekte kurulur | d5.json (mevcut, kaynaklı metin) | "Kütlesi büyük olan yıldızda üstteki katmanların ağırlığı da büyüktür; onu taşıyan hidrostatik denge daha sıcak bir çekirdekte kurulur" |
+| Sınır bandı: girişte ~10 M☉; 8–12 M☉ O-Ne-Mg beyaz cüce; karbon yanma sınırı metal oranına bağlı | https://en.wikipedia.org/wiki/Stellar_evolution | "with around ten or more times the mass of the Sun can explode in a supernova" ; "about 8-12 solar masses will ignite carbon fusion" (oksijen, neon, magnezyum beyaz cüce) ; "The exact mass limit for full carbon burning depends on several factors such as metallicity" (WebFetch) |
+| 0,1 M☉ kırmızı cüce ~10 trilyon yıl; hiçbir kırmızı cüce ileri evrede değil | https://en.wikipedia.org/wiki/Red_dwarf | "a 0.1 M☉ red dwarf may continue burning for 10 trillion years" ; "no red dwarfs yet exist at advanced stages of evolution" (WebFetch) |
+| Evrenin yaşı ~13,8 milyar yıl | https://en.wikipedia.org/wiki/White_dwarf | "c. 13.8 billion years" (WebFetch) |
+| Binde bir | HESAP | 13,8×10⁹ / 10×10¹² = 0,00138 ≈ binde 1 (10¹³/1,38×10¹⁰ = 725) |
+| Samanyolu yıldızlarının %97'den fazlası (0,07–10 M☉) beyaz cüce olacak | https://en.wikipedia.org/wiki/White_dwarf | "over 97%" ; 0,07–10 M☉ aralığı (WebFetch) |
+
+### Bölüm 2 — Gezegenimsi bulutsu (ek)
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Yalnız ~%20 küresel; çoğu küresel/eliptik/iki kutuplu; çift yıldız ve manyetik alan önerileri | https://en.wikipedia.org/wiki/Planetary_nebula | "Only about 20% of planetary nebulae are spherically symmetric" ; "Gravitational interactions with companion stars if the central stars are binary stars may be one cause" ; fields "might be partly or wholly responsible for their remarkable shapes" (WebFetch) |
+| ~1 ışık yılı çap; 100–10.000 parçacık/cm³ | aynı sayfa | "A typical planetary nebula is roughly one light year across" ; "a density generally from 100 to 10,000 particles per cm3" (WebFetch) |
+| Huggins 29 Ağustos 1864 ilk tayf; nebulyum; tanıdık element, alışılmadık koşul; azot ve oksijen iyonlarının yasak çizgileri | aynı sayfa | "On August 29, 1864, Huggins was the first to analyze the spectrum of a planetary nebula" ; "unknown element, which was named" nebulium ; "a familiar element in unfamiliar conditions" ; "Electron transitions from these levels in nitrogen and oxygen ions" (WebFetch) |
+| C, N, O zengin; rüzgârlarla yıldızlararası ortama döner; Güneş de gezegenimsi bulutsu oluşturacak | aynı sayfa | "usually contain larger proportions of elements such as carbon, nitrogen and oxygen" ; "recycled into the interstellar medium via these powerful winds" ; "It is expected that the Sun will form a planetary nebula" (WebFetch) |
+| Açısal genişleme + Doppler hızı → uzaklık | aynı sayfa | "Comparing the angular expansion with the derived velocity of expansion will reveal the distance to the nebula." (WebFetch) |
+| Örnek: 0,5 ışık yılı / 5 km/s ≈ 30.000 yıl | HESAP ; arastirma/sabitler.json (ışık yılı 9,4607×10¹² km) | 0,5 × 9,4607×10¹² = 4,73×10¹² km ; /5 = 9,46×10¹¹ s ; 365,25 × 86.400 = 3,156×10⁷ s ; → 29.979 yıl. 5 km/s örnek seçimdir ("a few kilometers per second") |
+
+### Bölüm 3 — Beyaz cüce (ek)
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Kütleçekimsel kırmızıya kaymadan 1,017 M☉ ve 0,00803 R☉ | https://en.wikipedia.org/wiki/Sirius_B | "The mass and radius of Sirius B can also be measured from its gravitational redshift, which results in values of 1.017 M☉ and 0.00803 R☉." (WebFetch) |
+
+### YENİ BÖLÜM — Soğuyan közler
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Başlangıç >100.000 K | (mevcut satır, Bölüm 3) NASA Imagine White Dwarfs | "temperature exceeding 100,000 Kelvin" |
+| WD J2147–4035 ~3.050 K | https://en.wikipedia.org/wiki/White_dwarf | "WD J2147–4035, has a surface temperature of approximately 3050 K" (WebFetch) |
+| Kara cüce trilyonlarca yıl; henüz yok | aynı sayfa | "many trillions of years" ; "No black dwarfs are thought to exist yet" ; "there has not been enough time for white dwarfs to cool below this temperature" (WebFetch) |
+| Soğuma saati; galaksi diski ~8 milyar yıl | aynı sayfa | luminosity function "can therefore be used to find the time when stars started to form in a region" ; "8 billion years" (WebFetch) |
+| Kristalleşme 1960'larda öngörüldü; 2019 Gaia, >15.000 beyaz cüce yığılması | aynı sayfa | 1960'larda öngörü ; "first confirmed in 2019" ; Gaia ">15,000 white dwarfs" pileup (WebFetch) |
+| En yakın 100 sistemin 8'inde beyaz cüce; en yakını Sirius B 8,6 ışık yılı | aynı sayfa | "eight white dwarfs among the one hundred star systems nearest to the Sun" ; "The nearest known white dwarf is Sirius B, at 8.6 light years" (WebFetch) |
+| 40 Eridani B, 1910, Russell, Pickering, Fleming; sönük ama A türü (beyaz) | aynı sayfa | "despite being a dim star, 40 Eridani B was of spectral type A, or white" (WebFetch) |
+| Sirius B 8,44 kadir; Sirius A'nın parlaklığı gözlemi zorlaştırır; çıplak gözle görülmez | https://en.wikipedia.org/wiki/Sirius_B | "Apparent magnitude (V): 8.44" ; "Due to the close presence of Sirius A, whose light outshine B, observations of Sirius B have been difficult" ; "cannot be seen to the naked eye" (WebFetch) |
+| Örnek: (100.000/3.050)⁴ ≈ 1,16 milyon | HESAP (Stefan–Boltzmann, d2) | 32,787⁴ = 1.155.582 |
+
+### Bölüm 5 — SN 1987A ve Betelgeuse (ek)
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Goldberg ve Bauer (UCSB) benzetimi: yarım Ay, dolunaydan ~9 kat sönük, >3 ay; gündüz ~1 yıl; geceleri birkaç yıl; nötrino/kütleçekim dalgası bir güne kadar önce; tehlike birkaç düzine ışık yılı; 724 ışık yılı | https://www.astronomy.com/science/when-betelgeuse-goes-supernova-what-will-it-look-like-from-earth/ | "it will shine as bright as the half-Moon — nine times fainter than the full Moon — for more than three months" ; "in the daytime sky for roughly a year" ; "visible at night with the naked eye for several years" ; "as much as a day in advance" ; "perhaps as little as several dozen light-years" ; ~724 ışık yılı ; yayın 14 Şubat 2020 (WebFetch) |
+| Betelgeuse çoğu zaman 10. en parlak; parlaklığı değişir; 2019 sonbaharı ~%60 sönme; Nisan 2020 normal; arka bahçeden görülür | https://science.nasa.gov/universe/what-is-betelgeuse-inside-the-strange-volatile-star | "it is often the tenth-brightest star in the sky" ; "In the fall of 2019, Betelgeuse started to drastically dip in brightness" ; "dimmed by about 60%" ; "By April of 2020, Betelgeuse had returned to its normal brightness" ; "Skywatchers can see Betelgeuse from their backyards" (WebFetch) |
+
+### YENİ BÖLÜM — Nötrino bekçileri
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| SNEWS dedektörleri birleştirir; birkaç saniyede eş zamanlılık → uyarı; fotonlar saatler sonra; 20 deney; IceCube, JUNO, KamLAND; Super-K tabloda | https://snews2.org/about/ | "sends an alert to astronomers if it finds a coincidence within a few seconds" ; "the burst of supernova photons does not become visible until hours later" ; tabloda 20 deney (WebFetch) |
+| %99 enerji ~10⁵⁸ nötrino; 10 kpc'de Super-K ~4.100–7.800, IceCube ~320.000–820.000; kütleye ve kütle sıralamasına bağlı | aynı sayfa | "dumps 99% of its energy into 10^58 neutrinos" ; tablo 10 kpc değerleri (WebFetch) |
+| Galakside yüzyılda bir-iki | aynı sayfa | "only happens once or twice a century" (WebFetch) |
+| 10 kpc ≈ 33.000 ışık yılı | HESAP ; arastirma/sabitler.json | 10 × 3,2616 = 32,6 bin ışık yılı |
+| Örnek: (51,4/10)² ≈ 26,4; 12 × 26,4 ≈ 317; 4.100/317 ≈ 13, 7.800/317 ≈ 25 | HESAP ; SN 1987A satırları (51,4 kpc, Kamiokande II 12) | 26,42 ; 317,0 ; 12,9 ; 24,6 |
+
+### YENİ BÖLÜM — Novalar
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Beyaz cüce + anakol yıldızı, periyot genellikle <12 saat; birikim diski; yüzey katmanı; ~10 milyon K tutuşma; kaçak tepkime; ≤1.500 km/s; 6–19 kadir; günlerden yıllara; beyaz cüce sağ kalır, Ia'da yok olur | https://astronomy.swinburne.edu.au/cosmos/C/Classical+Novae | "generally less than 12 hours" ; "about 10 million Kelvin" ; "up to 1,500 km/s" ; "6 to 19 magnitudes" ; "several days to years" ; beyaz cüce ve sistem sağlam kalır (WebFetch) |
+| Klasik novalar bir kez görüldü ama uzun aralıkla yinelenebilir; 1,3 M☉ ~30.000 yıl, 0,6 M☉ ~100.000 yıl; yinelenen nova 10–100 yıl | aynı sayfa | "30,000 years" ; "100,000 years" ; "10 to 100 years" (WebFetch) |
+| T CrB: ~3.000 ışık yılı; normalde ~10 kadir; 1866 (12 Mayıs, Birmingham) ve 9 Şubat 1946; 2 kadire kadar; Alphecca kadar; yarım çemberin altında; Çoban ve Herkül yakınında; çıplak gözle birkaç gün, dürbünle ~1 hafta | https://starwalk.space/ay/en/tcrb | "lies about 3,000 light-years from Earth" ; "a normally faint 10th-magnitude star" ; "Outburst magnitude: up to 2" ; "The nova will appear just below the bottom of this semicircle" ; sayfa 14 Nisan 2026 güncellemesi (WebFetch) |
+| Alev Yıldızı (Blaze Star); 2–3 kadir; çıplak gözle bir iki gece | https://skyandtelescope.org/astronomy-blogs/stargazing-why-we-look-up/waiting-for-the-blaze-star/ | "also known as the "Blaze Star"" ; "may brighten to magnitude 2 to 3" ; "visible to the unaided eye for a night or two" ; "February 9, 1946" (WebFetch) |
+| Beyaz cüce 1,32–1,38 M☉; kırmızı dev eş; ~227,6 gün; ortalama ~80 yıl; 11 Temmuz 2026'ya kadar patlama yok; 2026 Aralık olası; en erken 2029 Mayıs alt sınırı; tek tarih değil pencere | https://www.alphaxiv.org/abs/2607.15245.md | "published WD masses span 1.32–1.38" ; "Roche-lobe-filling M4 III red giant" ; 227,55–227,58 gün ; "mean ∼80 yr cycle" ; "Conditioning on no eruption by 2026 July 11" ; "an eruption around 2026 December remains plausible" ; "earliest lower limit near 2029 May" ; "conditional monitoring windows, not a unique date" (WebFetch; preprint 17 Temmuz 2026) |
+| Örnek: 8 kadir ≈ 1.580 kat, 7 kadir ≈ 630 kat | HESAP | 10^3,2 = 1584,9 ; 10^2,8 = 631,0 |
+| Soru: 7,5 kadir = 1.000 kat | HESAP | 10^(0,4×7,5) = 1000 |
+
+### YENİ BÖLÜM — Tarihteki süpernovalar ve ışık yankıları
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| SN 1006: büyük olasılıkla en parlak; 15 Nisan–1 Mayıs (Jülyen); Kurt (Lupus); −7,5 kadir; ~7.200 ışık yılı; muhtemelen Ia | https://en.wikipedia.org/wiki/SN_1006 | "is likely the brightest observed stellar event in recorded history" ; "some time between April 15 and May 1 (Julian calendar)" ; Lupus ; "−7.5 visual magnitude" ; "about 7,200 light-years" ; "Type Ia (presumably)" (WebFetch) |
+| Ali ibn Rıdvan: Mısırlı müneccim ve gökbilimci; Venüs'ün 2,5–3 katı; Ay ışığının dörtte birinden biraz fazla | aynı sayfa | "Egyptian astrologer and astronomer" ; "21⁄2 to 3 times as large as Venus" ; "a little more than a quarter that of Moon light" (WebFetch) |
+| Çin kaydı 1 Mayıs 1006; İbn Sina kuzeydoğu İran; gölge iddiası; gündüz görüldü | aynı sayfa | Songshi 1 Mayıs 1006 ; Ibn Sina "northeastern Iran" ; "Some sources state that the star was bright enough to cast shadows" ; "it was certainly seen during daylight hours for some time" (WebFetch) |
+| St. Gallen (47,5° K), güneyin en uç sınırında üç ay | aynı sayfa | "It was seen likewise for three months in the inmost limits of the south." (WebFetch) |
+| Kalıntı 1965 Parkes; dik açıklık −41° 57′ | aynı sayfa | 1965, Milne ve Gardner, Parkes ; "−41° 57′" (WebFetch) |
+| SN 1006'da eş kalıntısı yok; tek beyaz cüceli ≤%20; tek köken yolu yok | https://en.wikipedia.org/wiki/Type_Ia_supernova | "no companion star remnant has been found there" ; "no more than 20% of all Type Ia supernovae" ; "suggesting there is no single progenitor path to SN Ia" (WebFetch) |
+| Tycho 1572: Kasım 1572 başı; ışık yankısı; Subaru; silisyum var hidrojen yok → Ia; ~11.000 ışık yılı | https://sciencedaily.com/releases/2008/12/081203133809.htm | "A brilliant new star appeared on the sky in early November 1572" ; "some photons are reflected towards Earth, and they reach us years later" ; "Japanese Subaru telescope" ; "revealed silicon but no hydrogen" ; "around 11 000 light-years" (WebFetch) |
+| SN 1572 Kraliçe'de; Kraliçe İstanbul'dan kutup çevresi | d20_kaynak.md satırları ; d20.json | "after Tycho Brahe observed SN 1572 in Cassiopeia" ; d1'e dayanan d20 metni |
+| 436 yıl | HESAP | 2008 − 1572 = 436 |
+| Örnek: 90 − 41 − 41,95 ≈ 7°; 90 − 47,5 − 41,95 ≈ 0,5° | HESAP | 7,05 ; 0,55 |
+
+### Bölüm — Nötron yıldızları (ek)
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Milisaniye atarcası <~10 ms; eşten madde ile geri dönüşüm; PSR B1937+21 1982, ~641/s; 2025 itibarıyla en hızlı 716/s; ~1.500/s parçalanma; atom saati kadar kararlı; 2023 kütleçekim dalgası arka planı ilk kanıt | https://en.wikipedia.org/wiki/Millisecond_pulsar | "a rotational period less than about 10 milliseconds" ; "recycled" through accretion ; "PSR B1937+21, was discovered in 1982" ; "as of 2025, spinning 716 times per second" ; "c. 1500 rotations per second" ; "stability comparable to atomic-clock-based time standards" ; "first evidence for a stochastic gravitational wave background" (WebFetch) |
+
+### Bölüm — Kara deliğin doğuşu (ek)
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Başarısız süpernova: parlak patlama olmadan kara deliğe çöküş; N6946-BH1 ilk makul aday; 2009 patlaması sonrası sönme; JWST 14 yıl sonra; ≥3 kaynak karışımı; ışık %13–25; birleşmeyle uyumlu ama dışlanamıyor; belirsiz | https://ui.adsabs.harvard.edu/abs/2024ApJ...964..171B/abstract ; https://arxiv.org/abs/2309.16121v2 | "the first plausible candidate for a failed supernova" ; "Following a luminous outburst in 2009" ; "taken 14 yr after disappearance" ; "a blend of at least three sources" ; "between 13% and 25% that of the progenitor" ; "The observations match expectations for a stellar merger" ; "the interpretation of BH1 remains uncertain" ; arXiv: "a massive star disappears without the expected bright SN" (WebFetch) |
+
+### Bölüm — Ağır elementler (ek)
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| GW170817 10–100 Dünya kütlesi altın; Metzger (Columbia) beş kat belirsizlik; Kaplan'ın sorusu; tartışma | https://www.astronomy.com/science/astronomers-tally-all-the-gold-in-our-galaxy/ | "somewhere between 10 and 100 Earths worth of gold" ; "a factor of five uncertainty in either way" ; "Is it the really common thing that makes a little? Or was it the rare thing that makes a lot?" ; yayın 17 Ekim 2017 (WebFetch) |
+
+### Sorular (yeni)
+| Soru | Dayanak |
+|---|---|
+| Kırmızı cüceler | Red dwarf ve White dwarf satırları |
+| Beyaz cüce saati | Soğuyan közler satırları |
+| Nova / Ia farkı | Swinburne Classical Novae satırı |
+| T CrB 7,5 kadir | HESAP |
+| Nötrino bekçileri | SNEWS satırları |
+| Tycho ışık yankısı | ScienceDaily satırı |

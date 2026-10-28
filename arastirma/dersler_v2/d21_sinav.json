@@ -1,0 +1,58 @@
+[
+  {
+    "id": "d21-1",
+    "soru": "Büyük Kepçe neden IAU'nun 88 takımyıldızı arasında yer almaz?",
+    "secenekler": [
+      "Çünkü Büyük Kepçe bir asterizmdir: Büyük Ayı takımyıldızının en parlak yedi yıldızından oluşan, resmî sınırı olmayan bir desendir",
+      "Çünkü Büyük Kepçe yalnızca güney yarımküreden görülür",
+      "Çünkü Büyük Kepçe'nin yıldızları 1922'den sonra keşfedildi",
+      "Çünkü IAU Büyük Kepçe'yi Küçük Ayı ile birleştirdi"
+    ],
+    "dogru": 0,
+    "aciklama": "Derse göre asterizm resmî sınırı olmayan, kolay tanınan bir yıldız desenidir. Büyük Kepçe, Büyük Ayı takımyıldızının en parlak yedi yıldızından oluşur; resmî takımyıldız Büyük Ayı'dır.",
+    "ders": "d21",
+    "bolum": 2
+  },
+  {
+    "id": "d21-2",
+    "soru": "Astrolojide Koç burcu 20 Mart'ta başlar. Uygulamanın hesabına göre Güneş Koç takımyıldızının önüne ne zaman geçer ve farkın sebebi nedir?",
+    "secenekler": [
+      "Yine 20 Mart'ta; burçlar ile takımyıldızlar tam örtüşür",
+      "Yaklaşık 19 Nisan'da; ilkbahar noktası presesyon yüzünden yılda yaklaşık 50″ kayarak Koç'tan Balıklar'a geçmiştir",
+      "Yaklaşık 19 Şubat'ta; Dünya'nın yörüngesi her yıl kısalır",
+      "Hiçbir zaman; Güneş Koç takımyıldızından geçmez"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre burçlar ilkbahar noktasından ölçülen 30°'lik eşit dilimlerdir. Presesyon ilkbahar noktasını yılda yaklaşık 50″ kaydırdığından Güneş'in takımyıldızlara gerçek girişi burç tarihlerinden yaklaşık bir ay geç kalır; 2026 hesabında Güneş Koç'a 19 Nisan'da girer.",
+    "ders": "d21",
+    "bolum": 5
+  },
+  {
+    "id": "d21-3",
+    "soru": "İstanbul'da (41° K) dik açıklığı −52,7° olan Kanopus neden hiç görünmez?",
+    "secenekler": [
+      "Çünkü Kanopus çok sönük bir yıldızdır",
+      "Çünkü Kanopus yalnızca yazın gündüz göğündedir",
+      "Çünkü en büyük yüksekliği 90 − 41 − 52,7 = −3,7° çıkar; ufkun altında kalır ve kırılmanın kazandırdığı yarım derece bunu kapatamaz",
+      "Çünkü Kanopus kutup çevresi bir yıldızdır ve hep kuzeyde kalır"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre en büyük yükseklik 90° − enlem + dik açıklıktır. Dik açıklığı −49°'den küçük yıldızlar İstanbul'dan hiç doğmaz; Kanopus için sonuç −3,7°'dir ve ufuktaki kırılma yalnızca yaklaşık 34 yay dakikası kazandırır.",
+    "ders": "d21",
+    "bolum": 7
+  },
+  {
+    "id": "d21-4",
+    "soru": "Büyük Kepçe'nin göstergeç yıldızları Merak ve Dubhe'den Kutup Yıldızı'na nasıl gidersin?",
+    "secenekler": [
+      "Merak'tan Dubhe'ye çizgi çekip aralarındaki uzaklığı yaklaşık beş kez (yaklaşık üç yumruk) uzatarak",
+      "Dubhe'den Alkaid'e doğru sapın kavisini izleyerek",
+      "Merak'tan güneye doğru yaklaşık dört buçuk yumruk giderek",
+      "Avcı'nın Kuşağı'nın çizgisini kuzeye uzatarak"
+    ],
+    "dogru": 0,
+    "aciklama": "Derse göre Merak–Dubhe arası yaklaşık 5,4°, Dubhe–Kutup Yıldızı arası 28,7°'dir; oran yaklaşık 5,3. Yumruk yaklaşık 10° olduğundan bu yaklaşık üç yumruk eder. Sapın kavisi Arcturus'a, Merak'tan güneye uzanan çizgi Aslan'a, Kuşak ise kuzeyde Aldebaran'a götürür.",
+    "ders": "d21",
+    "bolum": 8
+  }
+]

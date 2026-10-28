@@ -1,0 +1,526 @@
+{
+ "id": "d21",
+ "unite": "gokyuzu",
+ "yeni": true,
+ "baslik": "Takımyıldızlar ve Mevsimlerin Gökyüzü",
+ "ozet": "Gökyüzü IAU'nun çizdiği sınırlarla 88 parçaya bölünmüş bir haritadır; takımyıldızlar bu haritanın ilçeleri, Büyük Kepçe gibi asterizmler ise tabelalarıdır. Bu derste takımyıldızların ve yıldız adlarının nereden geldiğini, Bayer harflerini, Güneş'in gerçekte hangi takımyıldızların önünden geçtiğini ve astrolojinin neden bilim olmadığını öğreneceksin. Sonra İstanbul'dan mevsim mevsim hangi takımyıldızların öne çıktığını ve onları yıldızdan yıldıza atlayarak nasıl bulacağını göreceksin.",
+ "on_bilgi": [
+  "d1",
+  "d11"
+ ],
+ "bolumler": [
+  {
+   "baslik": "Takımyıldız nedir: gökyüzünün ilçeleri",
+   "paragraflar": [
+    "Açık bir gecede gökyüzüne bakınca gözün kendiliğinden parlak yıldızları birleştirir: bir üçgen, bir kepçe, bir çapraz. İnsanlar binlerce yıldır böyle yapıyor ve bu şekillere avcılar, hayvanlar, krallar diye adlar verdi. Ama aynı yıldızlarda herkes aynı şekli görmedi. Eski Mısırlılar Avcı'nın yerinde tanrı Sah'ı gördü (d20); Araplar aynı bölgede el-Cevzâ adlı bir kadın figürü tanıdı. Bugün kullandığımız resmî liste, Ptolemaios'un aktardığı Yunan geleneğini temel alır. Astronomide ise takımyıldız kelimesinin anlamı daha tekniktir: takımyıldız, gök küresinin resmî sınırlarla ayrılmış bir bölgesidir. Türkiye haritasının illere bölünmesi gibi düşün. Haritada her nokta bir ile aittir; gökte de her nokta, ister parlak bir yıldız ister sönük bir galaksi olsun, 88 takımyıldızdan birine düşer. Benzetmenin bir sınırı var: illerin sınırları yeryüzünde gerçek yerleri ayırır, takımyıldız sınırları ise yalnız yönleri ayırır. Hiçbir uzaklık bilgisi taşımaz.",
+    "Bu son nokta önemli, çünkü aynı takımyıldızdaki yıldızlar çoğu zaman komşu değildir. Avcı takımyıldızındaki Betelgeuse için en iyi tahmin yaklaşık 548 ışık yılıdır ve ölçümler 400 ile 600 ışık yılı arasında dağılır. Aynı takımyıldızdaki Avcı Bulutsusu (M42) ise kaynağa göre yaklaşık 1.270 ile 1.500 ışık yılı uzakta. Hemen yanındaki Büyük Köpek'in en parlak yıldızı Sirius yalnızca 8,6 ışık yılı ötededir. Bu cisimler gökte yan yana görünür, çünkü bize göre aşağı yukarı aynı yöndedirler. Karanlık bir yolda yakındaki bir sokak lambası ile uzak bir köyün ışıklarının yan yana görünmesine benzer.",
+    "Yine de bazı yıldız grupları gerçekten akrabadır. Boğa'daki Ülker (M45) bir yıldız kümesidir: yıldızları gökte birlikte, aynı hızla kayar. John Michell 1767'de o kadar çok parlak yıldızın rastlantıyla bu kadar dar bir alana düşme olasılığını yaklaşık 500.000'de 1 olarak hesaplamıştı. Büyük Kepçe'nin yıldızlarının çoğu da Büyük Ayı hareketli grubu denen, ortak bir doğumdan gelen dağınık bir aileye üyedir. İki istisnası var: kepçenin ucundaki Dubhe (α) ve sapın ucundaki Alkaid (η) bu gruba üye değildir. Yani bir takımyıldız bir yön bölgesidir; içinde bazen gerçek bir aile, çoğu zaman rastlantıyla dizilmiş yabancılar bulunur.",
+    "Peki bu bölgeler neden hâlâ kullanılıyor? Çünkü gökbilimcinin adres defteridir. 'Andromeda'daki galaksi' ya da 'Yay yönündeki küme' demek, bir cismin gökte nerede aranacağını hemen söyler. Urania'nın gökyüzü haritasında gördüğün çizgiler takımyıldızların geleneksel çizimleridir; resmî tanım ise sınırlardır. Bu derste önce takımyıldızların ve sınırların tarihini, sonra asterizmleri, yıldız adlarını ve Bayer harflerini, ardından burç kuşağını ve astrolojinin neden bilim olmadığını göreceksin. Son bölümlerde İstanbul'dan, 41° kuzey enleminden, kış, ilkbahar, yaz ve sonbaharda hangi takımyıldızların öne çıktığını ve onları nasıl bulacağını adım adım işleyeceğiz."
+   ],
+   "ornek": {
+    "baslik": "Örnek: Aynı takımyıldız, farklı zamanlardan gelen ışık",
+    "metin": "Işık yılı, ışığın bir yılda aldığı yoldur; bu yüzden bir cismin ışık yılı cinsinden uzaklığı, ışığının kaç yıl önce yola çıktığını da söyler. Betelgeuse için 548 ışık yılı alırsak, bu gece gözüne giren ışık yaklaşık 2026 − 548 = 1478 yılında yola çıktı. Avcı Bulutsusu için 1.500 ışık yılı alırsak ışık yaklaşık 526 yılında çıktı; 1.270 alırsak 756 yılında. Sirius'un ışığı ise 2026 − 8,6 ≈ 2017 yılından geliyor. Betelgeuse ile bulutsunun uzaklık oranı 1.500 / 548 ≈ 2,7'dir; yani aynı 'şeklin' parçaları arasında bile uzaklık neredeyse üç kat değişiyor. Sonuç: bir takımyıldıza baktığında yüzlerce yıllık farklı anların ışığını aynı anda görürsün. Tek gerçek ortak noktaları, bizden bakınca aynı yönde olmalarıdır."
+   },
+   "akilda": "Takımyıldız, gökyüzünün resmî sınırlı bir bölgesidir; içindeki yıldızlar yalnız aynı yönde görünür, çoğu birbirinden çok farklı uzaklıktadır. Ülker gibi bazı gruplar ise gerçek yıldız aileleridir."
+  },
+  {
+   "baslik": "Ptolemaios'un 48'inden IAU'nun 88'ine",
+   "paragraflar": [
+    "Bugünkü takımyıldızların çekirdeği Antik Yunan'dan gelir. Ptolemaios, MS 2. yüzyılda yazdığı Almagest'te 48 takımyıldız sıraladı. Bu kitap Arapçaya çevrildi ve İslam dünyasında yeniden işlendi. Abdurrahman es-Sûfî, 964 dolaylarında yazdığı Sabit Yıldızlar Kitabı'nda (Kitâbü Ṣuveri'l-kevâkibi's-sâbite) bu 48 takımyıldızı tek tek ele aldı ve yıldızlara Arapça karşılıklarını verdi. Ama Ptolemaios'un listesinde büyük bir boşluk vardı: Akdeniz'den hiç görünmeyen güney göğü. Oradaki takımyıldızlar çok daha sonra, 16. ile 18. yüzyıllar arasında haritalara girdi.",
+    "Sonraki yüzyıllarda boşluklar dolduruldu. Wikipedia'daki IAU takımyıldız listesine göre Plancius tek başına 4 takımyıldız ekledi (Güneyhaçı, Güvercin, Zürafa, Tekboynuz); Plancius, Keyser ve de Houtman adlarıyla birlikte anılan 12 güney takımyıldızı da 1598'de haritalara girdi. Hevelius 1690'da 7, Lacaille 1756'da 14 yeni takımyıldız ekledi. Lacaille ayrıca Ptolemaios'un dev gemisi Argo'yu üç parçaya böldü: Karina, Pupa ve Yelken. Bu yüzden Argo bugün listede yok, ama üç parçası var.",
+    "Yüzyıllar boyunca her atlas kendi seçimini yaptı ve aynı bölge farklı kitaplarda farklı adlar taşıdı. Bu karmaşayı Uluslararası Astronomi Birliği (IAU) çözdü: modern takımyıldız listesi 1922'de kabul edildi. Aynı yıl takımyıldızlar için üç harfli kısaltmalar da benimsendi (Ori, UMa, CMa gibi). Sınırları Belçikalı gökbilimci Eugène Delporte çizdi; IAU bu sınırları 1928'de kabul etti ve 1930'da yayımladı. Sınırlar, sağ açıklık ve dik açıklık çizgileri boyunca giden yaylardan oluşur, köşe noktalarının koordinatları 1875 yılına göre verilmiştir. Presesyon (d1) koordinat ağını yavaşça kaydırdığı için bugünkü bir haritada bu sınırlar ağın çizgileriyle artık tam çakışmaz.",
+    "Bu sınırların bugün de iş gördüğünü uygulamada görebilirsin. Urania bir gezegenin ya da Ay'ın hangi takımyıldızda olduğunu söylerken hesap kütüphanesi Astronomy Engine'in Constellation işlevini kullanır. Bu işlev, cismin 2000 yılına göre verilmiş koordinatlarını önce 1875 yılının koordinat ağına geri çevirir, sonra Delporte'nin sınır tablosunda hangi kutuya düştüğüne bakar. Aradaki fark küçük değildir: kütüphanenin hesabına göre Sirius'un sağ açıklığı 2000'de 6,752 saat, 1875 ağında 6,659 saattir; Kutup Yıldızı'nın dik açıklığı 2000'de 89,26°, 1875 ağında 88,64°'dir. Yani 125 yılda koordinatlar bir dereceye yakın kayar ve bir cisim sınıra çok yakınsa bu kayma hangi takımyıldıza düştüğünü değiştirebilir. Sınırlar ise yerinde durur; çünkü yıldızlara göre çizilmişlerdir, değişen yalnız onları ölçtüğümüz ağdır.",
+    "Sonuçta gökyüzü boşluksuz ve örtüşmesiz 88 parçaya bölündü. Bunların 36'sı çoğunlukla kuzey gök yarımküresinde, 52'si güneyde yer alır. En büyüğü Suyılanı (1.303 derece kare), en küçüğü Güneyhaçı'dır (68 derece kare). İlginç bir ayrıntı: Yılan takımyıldızı birbirinden ayrı iki parçadan oluşur (Serpens Caput ve Serpens Cauda), ama IAU bu iki parçayı tek takımyıldız sayar. Derece kare, gökte bir alan ölçüsüdür: kenarları 1° olan küçük bir karenin alanı."
+   ],
+   "ornek": {
+    "baslik": "Örnek: Suyılanı göğün ne kadarını kaplar?",
+    "metin": "Bütün gök küresinin alanı derece kare cinsinden 4π × (180/π)² formülüyle bulunur. 180/π ≈ 57,296 olduğundan (180/π)² ≈ 3.282,8; bunu 4π ≈ 12,566 ile çarpınca yaklaşık 41.253 derece kare çıkar. Suyılanı 1.303 derece kare olduğuna göre payı 1.303 / 41.253 ≈ 0,0316, yani göğün yaklaşık yüzde 3,2'si. Güneyhaçı için 68 / 41.253 ≈ 0,0016, yani yaklaşık binde 1,6. İkisinin oranı 1.303 / 68 ≈ 19: en büyük takımyıldız en küçüğünün yaklaşık 19 katıdır. Ortalama bir takımyıldız ise 41.253 / 88 ≈ 469 derece karedir. Sonuç: takımyıldızlar eşit parçalar değildir; bu, burç kuşağında da önemli olacak."
+   },
+   "akilda": "Ptolemaios 48 takımyıldız tanımladı; güney göğü 16.–18. yüzyılda eklendi. IAU listeyi 1922'de, Delporte'nin sağ açıklık ve dik açıklık çizgilerinden oluşan sınırlarını 1928'de kabul etti: toplam 88 takımyıldız."
+  },
+  {
+   "baslik": "Takımyıldız ile asterizm: Büyük Kepçe resmî değil",
+   "paragraflar": [
+    "Herkesin bildiği Büyük Kepçe, IAU'nun 88'lik listesinde yok. Çünkü Büyük Kepçe bir takımyıldız değil, bir asterizmdir. Asterizm, gökte kolayca tanınan ama resmî sınırı olmayan bir yıldız desenidir. Bir takımyıldızın içinde kalabilir ya da birkaç takımyıldıza yayılabilir. Büyük Kepçe, Büyük Ayı takımyıldızının en parlak yedi yıldızından oluşur. Büyük Ayı ise kepçeden çok daha geniş bir bölgedir; ayının geri kalanı kepçenin dışındaki daha sönük yıldızlarla çizilir. Yani 'Büyük Kepçe'yi gördüm' demek, 'Büyük Ayı'nın en göze batan kısmını gördüm' demektir.",
+    "Bazı asterizmler takımyıldız sınırlarını hiç umursamaz. Yaz Üçgeni üç ayrı takımyıldızdan üç parlak yıldızı birleştirir: Çalgı'dan Vega, Kuğu'dan Deneb ve Kartal'dan Altair. Kış Üçgeni de benzer biçimde Betelgeuse (Avcı), Sirius (Büyük Köpek) ve Procyon'dan (Küçük Köpek) oluşur. Daha büyük Kış Altıgeni ise gökyüzündeki 22 birinci kadir yıldızın yedisini içine alır; Sirius ve Procyon onun da köşelerindendir. Kanatlıat'ın Büyük Karesi dört yıldızdan oluşur: Markab, Scheat, Algenib ve Alpheratz. Bunlardan Alpheratz eskiden hem Kanatlıat'a hem Andromeda'ya sayılırdı; bugün yalnız Andromeda'nın yıldızıdır. Yani karenin bir köşesi resmî olarak başka bir takımyıldızdadır.",
+    "Bir takımyıldızın içinde kalan asterizmler de var. Avcı'nın Kuşağı, Avcı'nın ortasındaki üç parlak yıldızdır: Alnitak, Alnilam ve Mintaka. Yay'ın parlak yıldızları bir çaydanlık biçimi çizer; buna Çaydanlık denir. Kuğu'nun içinde Kuzey Haçı vardır: haçın uzun kolu Deneb'den Albireo'ya, kısa kolu iki daha sönük yıldız arasında uzanır. Bu adlar resmî değildir ama gözlemcilerin ortak dilidir.",
+    "Asterizmler neden bu kadar kullanışlı? Çünkü kent gökyüzünde takımyıldızların çoğu kaybolur. Bortle ölçeğinin 8. sınıfında (kent göğü) tanıdık takımyıldızlar bile sönük ya da görünmez olur (d1). Böyle bir gökte geriye en parlak yıldızlar kalır ve asterizmler tam da bu parlak yıldızlardan oluşur. Uygulamanın kataloğuna göre Büyük Kepçe'nin yıldızları çoğunlukla 1,8 ile 2,4 kadir arasındadır; Büyük Ayı çiziminin geri kalanındaki yıldızların çoğu ise 3 ile 4,5 kadir arasında, yani kent göğünün sınırındadır. Bu yüzden İstanbul'da bir balkondan Büyük Ayı'nın tamamını seçmek zordur, ama Büyük Kepçe çoğu zaman görünür. Asterizmler bu yüzden gökyüzünün tabelalarıdır: önce onları bulur, sonra oradan sönük takımyıldızlara geçersin."
+   ],
+   "ornek": {
+    "baslik": "Örnek: Yaz Üçgeni'ni yumrukla ölçmek",
+    "metin": "Kolunu tam uzatıp yumruğunu göğe tuttuğunda yumruğunun genişliği yaklaşık 10°'dir (d11). Uygulamanın yıldız kataloğundaki koordinatlarla hesaplanan açısal uzaklıklar şöyle: Vega ile Deneb arası yaklaşık 23,9°, Vega ile Altair arası 34,2°, Deneb ile Altair arası 38,0°. Yumruğa çevirmek için 10'a böl: 23,9 / 10 ≈ 2,4 yumruk; 34,2 / 10 ≈ 3,4 yumruk; 38,0 / 10 ≈ 3,8 yumruk. Demek ki Yaz Üçgeni eşkenar değil, uzun ve sivri bir üçgendir ve kısa kenarı Vega ile Deneb arasındadır. Sonuç: üçgenin kenarları yaklaşık 2,4, 3,4 ve 3,8 yumruktur; bunu bilmek, gökte ilk kez ararken ölçeği doğru kurmanı sağlar."
+   },
+   "akilda": "Asterizm resmî olmayan, kolay tanınan bir yıldız desenidir: Büyük Kepçe bir takımyıldızın parçası, Yaz Üçgeni üç takımyıldızın birleşimidir. Kent gökyüzünde yol gösteren tabelalar asterizmlerdir."
+  },
+  {
+   "baslik": "Yıldız adları: Arapçadan Latinceye, oradan IAU'ya",
+   "paragraflar": [
+    "Aldebaran, Altair, Deneb, Fomalhaut, Algol... Gökyüzünün en bilinen yıldız adlarının çoğu kulağa Arapça gelir ve gerçekten de öyledir. Yıldızların geleneksel özel adları birkaç yüz tanedir ve bunların çoğu Arapçadan, bir kısmı Latinceden gelir. Yol şöyle işledi: Ptolemaios'un Almagest'i Arapçaya el-Mecistî adıyla çevrildi, es-Sûfî gibi gökbilimciler yıldızlara Arapça adlar ve açıklamalar yazdı. TDV İslam Ansiklopedisi'ne göre es-Sûfî'nin verdiği adlardan 94'ü modern astronomi literatürüne girdi. 10. ile 13. yüzyıllar arasında İslam dünyasının astronomi kitapları Latinceye çevrildikçe bu adlar Avrupa'ya taşındı.",
+    "Adların çoğu, yıldızın bir figürdeki yerini anlatır. Fomalhaut 'balığın ağzı' demektir; gerçekten de Güneybalığı'nın ağzındadır. Deneb 'tavuğun kuyruğu' anlamına gelir ve Kuğu'nun kuyruğunu işaretler. Altair 'uçan (kartal)' anlamındaki Arapça bir ifadeden gelir. Aldebaran 'izleyen, takip eden'dir: gökyüzü döndükçe Ülker'in arkasından gelir. Algol 'devin başı' diye çevrilir. Her ad Arapça da değildir: Sirius, Yunanca 'parlayan' ya da 'kavurucu' anlamına gelen Seirios'tan türemiştir.",
+    "Çeviri yolculuğu adları bazen bozdu. Betelgeuse, Arapça Yed el-Cevzâ yani 'el-Cevzâ'nın eli' ifadesinden gelir; el-Cevzâ, Avcı'nın yerinde görülen bir kadın figürüdür. 13. yüzyılda Arapça yazıdaki 'y' harfi 'b' diye okununca Avrupa'daki biçim ortaya çıktı. Eski Türk geleneğinde ise gök, ayrı ayrı yıldız adlarından önce bir bütün olarak düşünülürdü: TDV'ye göre eski Türkler evreni, altın ya da demirden bir kazığın, yani kutup yıldızının çevresinde dönen bir kubbe olarak tasavvur ediyordu. Uygulamada Pleiades kümesi için kullandığımız Ülker adı da Türkçedir.",
+    "Modern astronomide bir sorun vardı: aynı yıldızın farklı kitaplarda farklı yazılışları ya da tamamen farklı adları olabiliyordu. IAU 2016'da Yıldız Adları Çalışma Grubu'nu (WGSN) kurdu. Grubun görevi yıldızların özel adlarını kataloglamak ve standartlaştırmaktır; ilk ad listeleri 30 Haziran ve 20 Temmuz 2016'da onaylandı. Urania'nın haritasındaki yıldız adları bu katalogdan gelir; uygulamanın 28 Ekim 2026'da indirdiği listede 652 ad vardır. Katalog yaşayan bir listedir: bu adların 210'u 2016'da, 122'si 2026'da onaylanmış. Örneğin 15 Ekim 2026'da Balina'daki θ Cet yıldızı Tiancang, Andromeda'daki δ And yıldızı Kuda adını aldı. Bir uyarı: yıldızlara ad 'satan' şirketlerin verdiği adlar geçerli değildir. Ne IAU ne de başka bir bilimsel kurum yıldız adı satar ve ticari adlar astronomi topluluğunca tanınmaz."
+   ],
+   "akilda": "Geleneksel yıldız adlarının çoğu Arapçadır; Almagest'in Arapça çevirileri ve es-Sûfî'nin kitabı üzerinden Latinceye geçmiştir. 2016'dan beri IAU'nun WGSN grubu adları standartlaştırır; yıldız adı satılamaz."
+  },
+  {
+   "baslik": "Bayer harfleri: yıldızın soyadı takımyıldızdan",
+   "paragraflar": [
+    "Gökte çıplak gözle görülen binlerce yıldızın yalnız küçük bir kısmının özel adı vardır. Peki ötekiler nasıl anılır? 1603'te Johann Bayer, Uranometria adlı yıldız atlasında basit bir sistem kurdu. Bayer harfi, bir yıldızı Yunan alfabesinden bir harf ile takımyıldızın Latince adının iyelik biçimiyle anan etikettir. Aldebaran'ın Bayer adı α Tauri'dir: 'Boğa'nın alfası'. Takımyıldız adı çoğu zaman üç harfli IAU kısaltmasıyla yazılır: α Tau. Sirius da α Canis Majoris, kısaca α CMa'dır.",
+    "Bayer harfleri kabaca parlaklık sırasına göre verildi, ama kesin bir kural yoktur. Bayer yıldızları kadir sınıflarına ayırmış, aynı sınıftaki yıldızları kendi içinde sıralamamıştı. Bu yüzden şaşırtıcı istisnalar var. Avcı'da Betelgeuse α, Rigel β'dır; oysa Rigel çoğu zaman daha parlaktır. Betelgeuse değişen bir yıldızdır ve parlaklığı 0,0 ile 1,6 kadir arasında oynar. İkizler'de Castor α, Pollux β'dır; ama Pollux daha parlaktır. Yunan alfabesi yalnız 24 harf olduğu için Bayer harfler bitince Latin harflerine geçti.",
+    "İkinci yaygın sistem Flamsteed numaralarıdır. Bu sistemde bir takımyıldızın yıldızları parlaklığa göre değil, sağ açıklığın artışına göre, yani gökte batıdan doğuya sıralanıp numaralandırılır. İlginçtir, numaraları Flamsteed'in kendisi değil, 1783'teki Fransızca baskıda Lalande vermiştir. Bu yüzden bir yıldızın birden fazla etiketi olabilir. Büyük Kepçe'nin sapındaki Mizar'ın hemen yanındaki sönük Alcor, IAU kataloğunda 80 UMa, yani 80 Ursae Majoris olarak geçer.",
+    "Bu etiketler neden işine yarar? Çünkü bir gökyüzü rehberi 'β Per'i izle' dediğinde, Kahraman'ın ikinci harfli yıldızını, yani Algol'ü kastettiğini hemen anlarsın. Bayer harfi ayrıca yıldızın hangi takımyıldızda olduğunu adın içinde taşır; bir tür soyadı gibi. Urania'nın haritasında bir yıldıza dokunduğunda özel adını görürsün; özel adı olmayan yıldızlar için gözlem rehberleri hep bu harf ve numaraları kullanır. Bu derste de iki tür adı birlikte kullanacağız."
+   ],
+   "ornek": {
+    "baslik": "Örnek: Pollux, Castor'dan ne kadar parlak?",
+    "metin": "İki yıldızın kadir farkı Δm ise parlaklık oranı 10^(0,4 × Δm) olur (d1). Uygulamanın yıldız kataloğunda Pollux 1,16, Castor 1,58 kadirdir. Fark Δm = 1,58 − 1,16 = 0,42. Oran 10^(0,4 × 0,42) = 10^0,168 ≈ 1,47. Yani β harfli Pollux, α harfli Castor'dan yaklaşık 1,5 kat parlaktır. Aynı hesap Avcı için: katalogda Rigel 0,18, Betelgeuse 0,45 kadir. Fark 0,27, oran 10^(0,4 × 0,27) = 10^0,108 ≈ 1,28. Betelgeuse değişen bir yıldız olduğu için bu oran zamanla değişir. Sonuç: Bayer harfi bir parlaklık sıralaması değil, 1603'ün kaba bir sınıflamasıdır."
+   },
+   "akilda": "Bayer harfi (1603) bir Yunan harfi ile takımyıldız adını birleştirir: α Tau = Aldebaran. Harfler kabaca parlaklık sırasındadır ama istisnalar çoktur; Flamsteed numaraları ise sağ açıklık sırasına göredir."
+  },
+  {
+   "baslik": "Burç kuşağı ve tutulum: Güneş kimin önünden geçiyor?",
+   "paragraflar": [
+    "Birinci derste tutulumu görmüştün: Güneş'in bir yıl boyunca yıldızların önünde izlediği görünür yol. Güneş bu yolda her gün doğuya doğru 1°'den biraz az ilerler. Tutulumun iki yanında yaklaşık 20° genişliğinde bir kuşak vardır; Ay ve gezegenler hep bu kuşağın içinde görünür. Buna burç kuşağı denir. Babilliler bu kuşağı her biri 30° olan 12 eşit parçaya bölmüştü (d20). Astrolojinin 'burç' dediği şey bu eşit parçalardan biridir; takımyıldızla aynı şey değildir.",
+    "Belçika Kraliyet Gözlemevi'nin açıklamasına göre astrolojik burçlar, ilkbahar noktasından başlayarak tutulum boyunca ölçülen 30°'lik 12 dilimdir. İlkbahar noktası, Güneş'in Mart ekinoksunda gök ekvatorunu güneyden kuzeye geçtiği noktadır. Gözlemevi açıkça şunu da söyler: bu dilimler astronomik takımyıldızlarla örtüşmez ve tutulum bugün 13 takımyıldızdan geçer. On üçüncü takımyıldız Yılancı'dır. EarthSky de IAU sınırlarına göre tutulumun 13 takımyıldızı kestiğini ve Güneş'in yaklaşık 30 Kasım–18 Aralık arasında Yılancı'nın önünde durduğunu yazar.",
+    "Bunu uygulamanın kendi hesap çekirdeğiyle kontrol ettik: Güneş'in 2026'daki konumunu saat saat hesaplayıp IAU sınırlarına göre hangi takımyıldızda olduğuna baktık. Türkiye saatiyle sonuçlar şöyle: Güneş 20 Ocak'ta Oğlak'a, 16 Şubat'ta Kova'ya, 12 Mart'ta Balıklar'a, 19 Nisan'da Koç'a, 14 Mayıs'ta Boğa'ya, 22 Haziran'da İkizler'e, 21 Temmuz'da Yengeç'e, 11 Ağustos'ta Aslan'a, 17 Eylül'de Başak'a, 31 Ekim'de Terazi'ye, 23 Kasım'da Akrep'e, 30 Kasım'da Yılancı'ya ve 18 Aralık'ta Yay'a girer. Süreler çok eşitsiz: Güneş Başak'ta yaklaşık 44 gün, Akrep'te ise yalnızca 6,5 gün kadar kalır. Yılancı'da geçirdiği süre (yaklaşık 18 gün) Akrep'in neredeyse üç katıdır.",
+    "Burçlarla takımyıldızlar neden bu kadar kaymış? Sebep presesyon (d1): Dünya'nın ekseni yavaşça yalpaladığı için ilkbahar noktası yıldızlara göre yılda yaklaşık 50 yay saniyesi kayar. Antik çağda burçlar kabaca aynı adı taşıyan takımyıldızlarla örtüşüyordu; o zamandan bu yana ilkbahar noktası Koç'tan çıkıp Balıklar'a geçti. Belçika Kraliyet Gözlemevi'ne göre Güneş'in takımyıldızlardan gerçek geçişi, burç takvimindeki tarihlerden yaklaşık bir ay sonraya düşer. Yukarıdaki hesap da bunu gösteriyor: astrolojide Koç 20 Mart'ta başlar, Güneş ise Koç takımyıldızına ancak 19 Nisan'da girer.",
+    "Ay ve gezegenler de aynı kuşakta dolaşır, ama tutulumun tam üstünde değil, biraz kuzeyinde ya da güneyinde gezinirler. Bu yüzden zaman zaman 12 burç takımyıldızının dışına, örneğin Yılancı'ya ya da komşu takımyıldızlara taşarlar. Uygulamanın hesabına göre bu dersin yazıldığı 28 Ekim 2026 akşamı Ay Boğa'da, Jüpiter Aslan'da, Mars Yengeç'te, Satürn ise hiçbir burcun adını taşımayan Balina takımyıldızındaydı. Urania'nın 'bu gece' listesindeki takımyıldız adları bu hesaptan gelir; astrolojik burç değil, IAU sınırlarına göre gerçek konumdur."
+   ],
+   "ornek": {
+    "baslik": "Örnek: 28 Ekim 2026'da Güneş nerede?",
+    "metin": "Belçika Kraliyet Gözlemevi'nin 2026 tablosuna göre Güneş astrolojik Akrep burcuna 23 Ekim'de girdi. Uygulamanın hesabına göre ise Güneş gökte 17 Eylül'den 31 Ekim'e kadar Başak takımyıldızının önündedir. Yani 28 Ekim'de 'Akrep burcundayız' denir, ama Güneş'in arkasındaki yıldızlar Başak'ındır. Kaymanın büyüklüğünü presesyonla kabaca tahmin edebiliriz: yılda 50 yay saniyesi, 2.000 yılda 50 × 2.000 = 100.000 yay saniyesi eder. Bir derece 3.600 yay saniyesidir: 100.000 / 3.600 ≈ 27,8°. Güneş günde yaklaşık 1° ilerlediği için bu, yaklaşık 28 günlük, yani bir aya yakın bir gecikme demektir. Sonuç: iki bin yıllık presesyon, burç tarihleriyle gerçek gökyüzü arasında yaklaşık bir aylık fark açar."
+   },
+   "akilda": "Burç, tutulumun ilkbahar noktasından ölçülen 30°'lik eşit bir dilimidir; takımyıldız değildir. Tutulum 13 takımyıldızdan geçer (Yılancı dahil) ve presesyon yüzünden Güneş'in takımyıldızlara girişi burç tarihlerinden yaklaşık bir ay geç kalır."
+  },
+  {
+   "baslik": "Astroloji neden bilim değil?",
+   "paragraflar": [
+    "Astronomi ile astroloji uzun süre iç içe yürüdü; Babil'de gökyüzü kehanet için izleniyordu (d20). Bugün ikisi tamamen ayrı şeylerdir. Astronomi gök cisimlerini ölçer, açıklar ve öngörülerini sınar. Astroloji ise doğum anındaki gök konumlarının kişiliği ya da kaderi belirlediğini öne sürer. Burada dürüst olmak gerekiyor: bir önceki bölümdeki kayma tek başına astrolojiyi çürütmez. Burç takvimi zaten takımyıldızlara değil, ilkbahar noktasına bağlı eşit dilimlere göre tanımlanır. Asıl soru başka: astroloji söylediğini yapabiliyor mu, yani bir şeyi doğru öngörebiliyor mu?",
+    "Bu soru denendi. Shawn Carlson'ın 5 Aralık 1985'te Nature dergisinde yayımlanan çift kör deneyinde, Ulusal Jeokozmik Araştırma Konseyi'nin (NCGR) önerdiği Avrupa ve ABD'den 28 astrolog yer aldı. Astrologlar deneye katılmadan önce düzeneğin adil bir sınav olduğunu kabul ettiler. Görevleri, 100'ü aşkın doğum haritasını, kendi seçtikleri bir kişilik testinin (California Psikolojik Envanteri) sonuçlarıyla eşleştirmekti. Sonuç şans düzeyindeydi. Üstelik astrologlar bir eşleştirmeden çok emin olduklarında da daha başarılı değildi. Carlson sonucun astroloji hipotezini açıkça çürüttüğünü yazdı.",
+    "California Üniversitesi Berkeley'in 'Understanding Science' sayfası, astrolojinin neden bilim sayılmadığını yönteme bakarak açıklar. Astroloji, kendisiyle çelişen kanıtlar karşısında fikirlerini değiştirmemiştir ve çelişen kanıtları büyük ölçüde görmezden gelir. Bazı beklentileri öyle geniştir ki her sonuç onlara uyuyormuş gibi yorumlanabilir; böyle bir iddia sınanamaz. Sayfa başka bir örnek de verir: fizikçi John McGervey, bilim insanlarının burçlarına bakmış ve astrologların bilime yatkın saydığı burçlara doğru bir eğilim bulamamıştır.",
+    "Bilimi astrolojiden ayıran çizgi konu değil, yöntemdir. Bir bilim insanı 'Güneş 30 Kasım'da Yılancı'ya girer' dediğinde bunu herkes kendi hesabıyla ya da gözlemiyle sınayabilir; sınavdan geçemeyen fikir değişir. Astrolojide böyle bir düzeltme döngüsü işlemez. Bu dersin geri kalanında takımyıldızları bir harita olarak kullanacağız: hangi yıldız ne zaman, nerede görünür? Bunlar ölçülebilen ve uygulamanın hesabıyla kendi balkonundan kontrol edebileceğin sorulardır."
+   ],
+   "ornek": {
+    "baslik": "Örnek: Şans ne kadar tutturur?",
+    "metin": "Bu örnek Carlson'ın düzeneği değil, şans düzeyinin ne demek olduğunu gösteren basit bir hesap. Diyelim ki bir sınavda 100 soru var ve her soruda 3 seçenekten biri doğru. Hiçbir bilgi olmadan rastgele seçen biri ortalama 100 × 1/3 ≈ 33 doğru yapar. Bir yöntem gerçekten bilgi taşıyorsa bundan belirgin biçimde fazla doğru beklenir, örneğin 50 ya da 60. Sonuç '33 civarı' çıkıyorsa yöntem yazı turadan farksızdır. Bilimsel bir sınamanın mantığı budur: önce şansın ne vereceği hesaplanır, sonra gerçek sonuç onunla karşılaştırılır. Sonuç: astroloji sınamalarında sorulan soru 'tuttuğu oldu mu?' değil, 'şanstan fazla tuttu mu?' sorusudur."
+   },
+   "akilda": "Astroloji bilim değildir: 1985'teki çift kör Carlson deneyinde astrologlar doğum haritalarını kişilik profilleriyle şanstan iyi eşleştiremedi ve astroloji çelişen kanıtlar karşısında kendini düzeltmez. Burç kayması tek başına çürütme değildir; asıl ölçüt öngörünün tutmamasıdır."
+  },
+  {
+   "baslik": "Neden her mevsimin kendi yıldızları var?",
+   "paragraflar": [
+    "Yıldızlar gündüz de gökyüzündedir; onları göremeyiz, çünkü Güneş'in ışığı atmosferi aydınlatır ve sönük noktaları bastırır. Dünya Güneş'in çevresinde dolanırken Güneş tutulum boyunca günde yaklaşık 1° kayar. Böylece Güneş'in arkasında kalan, yani gündüz gökyüzüne düşen takımyıldızlar ay ay değişir. Gece tarafımız ise yılın her döneminde uzayın başka bir yönüne bakar. Aralıkta Güneş Yay'ın önündeyken gece yarısı karşı yöndeki İkizler ve Avcı yükselir; haziranda Güneş İkizler'in önündeyken gece Akrep ve Yay görünür.",
+    "Bir yıldızın gün ışığından sıyrılıp şafakta ilk kez yeniden göründüğü sabaha sabah doğuşu denir (d20). Eski Mısır'da Sirius'un sabah doğuşu Nil taşkınının habercisiydi; Wikipedia'ya göre bu doğuş Kahire'de 19 Temmuz'a, yıllık taşkının hemen öncesine düşüyordu. Yani mevsimlik gökyüzü, insanlar için takvimden önce gelen bir takvimdi. Aynı mantık bugün de işler: bir takımyıldızın akşam göğünden çekilip Güneş'in parıltısında kaybolduğu, birkaç hafta sonra da sabah göğünde yeniden belirdiği haftaları izleyerek Dünya'nın yörüngedeki ilerleyişini kendi gözünle görebilirsin.",
+    "Bu kaymanın gündelik ölçüsü yıldız günüdür (d1). Dünya yıldızlara göre bir dönüşünü 23 saat 56 dakika 4 saniyede tamamlar; bu, 24 saatlik güneş gününden yaklaşık 3 dakika 56 saniye kısadır. Bu yüzden her yıldız bir önceki geceden yaklaşık 4 dakika erken doğar, erken doruğa ulaşır ve erken batar. Doruğa ulaşma, bir yıldızın gökte en yükseğe çıktığı ve tam güneyden (ya da kutup çevresinde kuzeyden) geçtiği andır. 30 günde bu fark 30 × 3 dk 56 sn ≈ 118 dakika eder, yani yaklaşık 2 saat. Bugün saat 22.00'de doruğa ulaşan yıldız, bir ay sonra 20.00 dolaylarında aynı yerdedir.",
+    "Bir yıldızın İstanbul'dan görünüp görünmeyeceğini dik açıklığı belirler. Dik açıklık, gökte ekvatorun kaç derece kuzeyinde (artı) ya da güneyinde (eksi) olunduğunu söyler. 41° kuzey enleminde bir yıldızın çıkabileceği en büyük yükseklik 90° − 41° + dik açıklık formülüyle bulunur. Dik açıklığı +49°'den büyük olan yıldızlar hiç batmaz, yani kutup çevresi yıldızıdır; −49°'den küçük olanlar ise hiç doğmaz. Atmosferin ufuktaki kırılması bu sınırı yalnızca yaklaşık yarım derece (34 yay dakikası) değiştirir (d1).",
+    "Uygulamanın takımyıldız çizimlerindeki yıldızları bu ölçütle taradık. Sonuç: 88 takımyıldızın 61'inde çizimdeki bütün yıldızlar İstanbul ufkunun üstüne çıkar; 11'i yalnız kısmen görünür (Karina, Erboğa, Irmak, Turna, Saat, Indus, Kurt, Cetvel, Anka, Dürbün ve Yelken); 16'sı ise hiç doğmaz. Hiç doğmayanlar arasında Güneyhaçı, Tavus, Tukan ve Kılıçbalığı vardır. Bu geometrik bir hesaptır; ufka yakın pus, binalar ve ışık kirliliği yüzünden pratikte ufkun ilk 10 derecesi kaybolabilir. Yıldızların tamamı en az 10° yükselen takımyıldız sayısı 53'e iner."
+   ],
+   "ornek": {
+    "baslik": "Örnek: Sirius her ay ne kadar erken doğar?",
+    "metin": "Uygulamanın hesap çekirdeğine göre Sirius İstanbul'da 15 Aralık 2026'da saat 21.10'da, 15 Ocak 2027'de 19.08'de doğuyor. Fark 2 saat 2 dakika, yani 122 dakika. Aradaki gün sayısı 31. Günlük kayma 122 / 31 ≈ 3,9 dakikadır; bu, yıldız günü ile güneş günü arasındaki 3 dakika 56 saniyelik farkla uyumludur. İkinci bir hesap, Kanopus için: dik açıklığı yaklaşık −52,7°. En büyük yükseklik 90 − 41 + (−52,7) = −3,7°. Ufkun 3,7° altı, kırılmanın kazandırdığı yarım dereceyle kapanamaz. Sonuç: Sirius kışın her ay yaklaşık 2 saat erken doğar; gökyüzünün ikinci en parlak yıldızı Kanopus ise İstanbul'dan hiç görünmez."
+   },
+   "akilda": "Mevsim değiştikçe Güneş farklı takımyıldızların önüne geçer; yıldızlar her gece yaklaşık 4 dakika, her ay yaklaşık 2 saat erken doğar. İstanbul'dan dik açıklığı +49°'nin üstündeki yıldızlar hiç batmaz, −49°'nin altındakiler hiç doğmaz."
+  },
+  {
+   "baslik": "Yıl boyu batmayanlar: Büyük Ayı, Küçük Ayı ve Kraliçe",
+   "paragraflar": [
+    "İstanbul göğünde yılın her gecesi bulabileceğin bir sabit nokta var: Kutup Yıldızı (Polaris). Kuzey gök kutbuna 1°'den yakın olduğu için neredeyse hiç yer değiştirmez ve yüksekliği enlemine eşittir; İstanbul'da tam kuzeyde, ufkun yaklaşık 41° üstündedir (d1). Yaygın bir yanılgının aksine gökyüzünün en parlak yıldızı değildir; orta parlaklıkta, ikinci kadirden bir yıldızdır. Küçük Ayı takımyıldızındaki Küçük Kepçe asterizminin sapının ucundadır.",
+    "Kutup Yıldızı'nı bulmanın klasik yolu Büyük Kepçe'den geçer. Kepçenin ağzındaki iki yıldız, Merak ve Dubhe, göstergeç yıldızlar diye bilinir. Merak'tan Dubhe'ye bir çizgi çekip uzatırsan Kutup Yıldızı'na varırsın. Aynı çizgiyi Kutup Yıldızı'ndan öteye, hafifçe kıvırarak sürdürürsen, beş yıldızlı zikzak bir şekle ulaşırsın: Kraliçe takımyıldızı. Büyük Kepçe ile Kraliçe kutbun iki karşı yanındadır; biri alçaktayken öteki yüksektedir.",
+    "İstanbul gibi 40–50° kuzey enlemlerinden Büyük Ayı, Küçük Ayı, Ejderha, Kral, Kraliçe, Zürafa, Vaşak ve Kertenkele kutup çevresi takımyıldızları sayılabilir (d1). Uygulamanın hesabı ayrıntıyı veriyor: Dubhe ufkun en fazla 12,8° yakınına iner, hiç batmaz. Kepçe sapının ucundaki Alkaid'in en alçak noktası ise yalnızca 0,3°'dir; kâğıt üstünde batmaz, ama pratikte ufka sürtünür ve binaların arkasında kalır. Kraliçe'nin parlak yıldızlarından Schedar en fazla 7,5°'ye, Caph 10,1°'ye iner.",
+    "Kepçenin konumu mevsime göre çok değişir. Uygulamanın hesabına göre saat 22.00'de Dubhe 15 Ocak'ta kuzeydoğuda 32° yükseklikte, 15 Nisan'da kuzeyde 69° ile neredeyse tepededir; 15 Temmuz'da kuzeybatıda 39°'ye, 15 Ekim'de kuzeyde 13°'ye iner. Ekimde kepçe en alçaktayken Kraliçe'nin Schedar'ı 64° ile yükselir. Kepçe sapının ortasındaki Mizar'ın yanında sönük Alcor durur; ikisi arasındaki açı yaklaşık 12 yay dakikasıdır. Arap gökbilim geleneğinde bu çift, keskin görüşün sınavı sayılırdı.",
+    "Kutup Yıldızı'nın bu rolü de kalıcı değildir. Presesyon gök kutbunu yıldızlar arasında yaklaşık 26.000 yılda dolanan bir çember boyunca kaydırır (d1). Kutup, Kutup Yıldızı'na en çok 2100 yılında, yaklaşık 0,45° yaklaşacak; sonra uzaklaşacak. Yaklaşık MÖ 3000'de kutbun yanındaki yıldız Ejderha'daki Thuban'dı; yaklaşık 14.500 yılında ise Vega kutba 5° kadar yaklaşacak. Yani takımyıldızların şekilleri insan ömründe değişmese de hangi yıldızın 'kuzeyi gösterdiği' binlerce yılda değişir."
+   ],
+   "ornek": {
+    "baslik": "Örnek: Göstergeç yıldızlarla Kutup Yıldızı'na kaç yumruk?",
+    "metin": "Uygulamanın kataloğundaki koordinatlarla Merak ile Dubhe arası yaklaşık 5,4°, Dubhe ile Kutup Yıldızı arası 28,7°'dir. Oran 28,7 / 5,4 ≈ 5,3: göstergeç aralığını yaklaşık beş kez ileri taşırsan Kutup Yıldızı'na ulaşırsın. Elle ölçmek için: kol uzunluğunda üç orta parmak yaklaşık 5° (d11), yani Merak–Dubhe aralığına kabaca eşit. Yumruk yaklaşık 10° olduğuna göre 28,7 / 10 ≈ 2,9; yani Dubhe'den Kutup Yıldızı'na yaklaşık üç yumruk. Kraliçe'nin Schedar'ı Kutup Yıldızı'ndan 32,8°, yaklaşık 3,3 yumruk ötededir. Sonuç: Kutup Yıldızı'nı bulmak için göstergeç çiftinin aralığını beş kez, yaklaşık üç yumruk kadar uzat."
+   },
+   "akilda": "Kutup Yıldızı İstanbul'da tam kuzeyde, yaklaşık 41° yükseklikte durur; Büyük Kepçe'nin göstergeç yıldızları Merak ve Dubhe onu gösterir. Büyük Kepçe ve Kraliçe kutbun karşı yanlarında döner ve İstanbul'dan hiç batmaz."
+  },
+  {
+   "baslik": "Kış gökyüzü: Avcı ve parlak komşuları",
+   "paragraflar": [
+    "İstanbul'un kış akşamlarına Avcı takımyıldızı hâkimdir. Ortasında, yaklaşık 2,7° uzunluğunda düz bir sıra oluşturan üç yıldız vardır: Alnitak, Alnilam ve Mintaka, yani Avcı'nın Kuşağı. Kuşağın bir yanında Betelgeuse (α Ori), öbür yanında Rigel (β Ori) durur. Uygulamanın hesabına göre Betelgeuse 15 Kasım'da saat 20.52'de doğar, yani Avcı geç sonbahar akşamlarında sahneye çıkar. Betelgeuse saat 22.00'de doruğa yaklaşık 4 Şubat'ta ulaşır ve o an 56° yüksekliktedir; Rigel ise doruğunda 41° kadar çıkar.",
+    "Avcı, çevresindeki parlak yıldızları bulmak için mükemmel bir başlangıçtır. Kuşağın üç yıldızından geçen çizgiyi güneye uzatırsan gökyüzünün en parlak yıldızı Sirius'a ulaşırsın. Aynı çizgiyi ters yöne, kuzeye uzatırsan bakır renkli Aldebaran'a, oradan devam edersen Ülker'e varırsın. Uygulamanın kataloğuna göre Alnilam ile Sirius arası 23,0°, Alnilam ile Aldebaran arası 23,1°, Aldebaran ile Ülker'in en parlak yıldızı Alcyone arası 13,7°'dir. Betelgeuse, Sirius ve Procyon'un oluşturduğu Kış Üçgeni neredeyse eşkenardır: kenarları yaklaşık 27,1°, 25,7° ve 26,0°.",
+    "Sirius −1,46 kadirle gece göğünün en parlak yıldızıdır ve 8,6 ışık yılıyla bize en yakın yıldızlardan biridir. Ama İstanbul'dan alçakta kalır: dik açıklığı −16,7° olduğu için en fazla 32° yükselir. Kış göğünün tepesinde ise Arabacı'nın Capella'sı vardır; 15 Ocak saat 22.00'de 81° yükseklikle neredeyse başucundadır. İkizler'in iki parlak yıldızı Castor ile Pollux arası 4,5°'dir ve mart başında 22.00'de doruğa ulaşırlar. Betelgeuse'ün parlaklığı da izlemeye değer: Ekim 2019'da sönmeye başladı, Şubat 2020 ortasında 0,5'ten 1,7 kadire, yani yaklaşık üç kat sönükleşti, sonra toparlandı. Çalışmaların çoğu bu 'büyük sönüklüğü' yıldızın dışarı attığı maddeden oluşan toza bağlar; bir çalışma ise büyük yıldız lekelerini öne sürer.",
+    "Avcı'nın mitolojisi gökyüzündeki bir gerçekle bağlantılıdır. Theoi.com'un derlediği antik anlatımlarda dev avcı Orion yeryüzündeki her hayvanı öldürebileceğiyle övünür. Hesiodos, Pseudo-Hyginus ve Ovidius'a göre Gaia (Toprak) ona dev bir akrep gönderir; Aratos'un anlatımında akrebi Artemis yollar. Akrep Orion'u sokar ve Zeus ikisini de yıldızların arasına yerleştirir. Pseudo-Hyginus'un deyişiyle Akrep doğduğunda Orion batar; ikisi gökte hiç birlikte görülmez. Bunun gökteki karşılığını yaz bölümünde hesapla kontrol edeceğiz.",
+    "Kışın 7×50 dürbünle bakılacak iki ünlü hedef de bu bölgededir (ayrıntı d11'de). Avcı Bulutsusu (M42) NASA'ya göre en iyi ocakta gözlenir, 4 kadir civarındadır ve karanlık bir yerden çıplak gözle bile seçilir. Ülker (M45) en iyi aralıkta görülür, yaklaşık 445 ışık yılı uzaktadır ve binden fazla yıldız içerir; çıplak gözle en parlak altı yedi yıldızı kolayca görülür, koşullara ve göze bağlı olarak 14'e kadar yıldız sayılabilir. Dürbünde ise kümenin göz alıcı bir görüntüsü vardır. Dürbünün görüş alanı nadiren 8°'yi geçtiği için (d11) Aldebaran'dan Ülker'e uzanan 13,7°'lik sıçrama birden fazla görüş alanı eder; bu yüzden önce çıplak gözle hedefi bul, sonra dürbünü kaldır."
+   ],
+   "ornek": {
+    "baslik": "Örnek: Avcı'nın Kuşağından Sirius'a",
+    "metin": "Alnilam'ın dik açıklığı yaklaşık −1,2°, Sirius'unki −16,7°'dir. Kuşaktan Sirius'a açısal uzaklık kataloğa göre 23,0°, yani 23,0 / 10 ≈ 2,3 yumruk. Sirius'un İstanbul'daki en büyük yüksekliği: 90 − 41 + (−16,7) = 32,3°. Bu yükseklik 32,3 / 10 ≈ 3,2 yumruk eder; Sirius doruğundayken bile ufkun yalnızca üç yumruk üstündedir. Uygulamaya göre Sirius 22.00'de doruğa yaklaşık 17 Şubat'ta ulaşır. Aynı hesap Rigel için (dik açıklık −8,2°): 90 − 41 − 8,2 = 40,8°. Sonuç: kuşağın çizgisi boyunca güneye iki yumruktan biraz fazla gidersen Sirius'u bulursun ve onu kış boyunca güney ufkunun yaklaşık 32° üstünde, ağaçların ve binaların hemen üstünde ararsın."
+   },
+   "akilda": "Kış göğünün merkezi Avcı'dır: Kuşağı güneyde Sirius'u, kuzeyde Aldebaran ve Ülker'i gösterir. Betelgeuse, Sirius ve Procyon Kış Üçgeni'ni oluşturur; Sirius İstanbul'da en fazla 32° yükselir."
+  },
+  {
+   "baslik": "İlkbahar gökyüzü: Aslan, Çoban ve Başak",
+   "paragraflar": [
+    "İlkbaharda Avcı akşamları batıya kayarken Büyük Kepçe göğün tepesine yükselir. Uygulamanın hesabına göre 15 Nisan saat 22.00'de Dubhe kuzeyde 69° yüksekliktedir. Kepçe bu mevsimde Aslan'a da yol gösterir; yıldız atlama rehberleri Aslan'a Merak üzerinden gidilebileceğini yazar. Göstergeç çizgisini Kutup Yıldızı'nın ters yönüne uzatırsan Aslan'ın en parlak yıldızı Regulus'a kabaca yaklaşırsın; uygulamanın hesabına göre Regulus bu çizginin yaklaşık 11° yanında kalır. Sıçrama uzundur: Merak ile Regulus arası 45,6°, yaklaşık dört buçuk yumruk. Regulus (α Leo) 22.00'de doruğa yaklaşık 9 Nisan'da ulaşır ve 61° yükselir. Aslan'ın Denebola yıldızı Regulus'tan 24,6° uzaktadır.",
+    "İlkbaharın en ünlü yönergesi bir tekerlemedir: 'Kavisi izle Arcturus'a, kazık çak Spica'ya.' Büyük Kepçe'nin sapındaki kavisi aynı yönde sürdürürsen parlak, turuncu bir yıldıza ulaşırsın: Çoban takımyıldızının Arcturus'u. Aynı doğrultuda devam edersen Başak'ın en parlak yıldızı Spica'ya varırsın. Uygulamanın kataloğuna göre Alkaid ile Arcturus arası 30,7°, Arcturus ile Spica arası 32,8°'dir: her biri üç yumruktan biraz fazla. Arcturus yaklaşık 37 ışık yılı uzakta dev bir yıldızdır. Spica ise tek bir yıldız gibi görünse de birbirine çok yakın dolanan iki sıcak yıldızdan oluşan bir sistemdir ve yaklaşık 262 ışık yılı uzaktadır.",
+    "Bu yıldızların İstanbul'daki takvimi şöyle: Arcturus 15 Mart'ta saat 20.35'te doğar; 22.00'de doruğa yaklaşık 11 Haziran'da ulaşır ve 68° yükselir. Spica'nın doruk yüksekliği yalnızca 37,8°'dir ve 22.00'de doruğa yaklaşık 29 Mayıs'ta ulaşır. Yani Spica İstanbul'dan hep güney göğünün alt yarısında görünür. Aslan ile İkizler arasında, sönük Yengeç takımyıldızında Arıkovanı kümesi (M44) bulunur; NASA'ya göre en iyi ilkbaharda görülür, en yükseğe martta çıkar ve dürbünle yaklaşık 20 yıldızı seçilir (d11).",
+    "Arcturus'un ilginç bir hareketi var. Samanyolu'nun yıldızlarının çoğu galaksinin diski içinde birlikte dolanırken Arcturus diski saniyede yaklaşık 160 km hızla dik kesercesine geçiyor. EarthSky'a göre milyonlarca yıl sonra bu yüzden çıplak gözle görülemeyecek kadar uzaklaşmış olacak. Takımyıldızların 'sonsuz' olmadığının güzel bir örneği bu: insan ömründe değişmeyen şekiller, çok uzun zamanda yıldızların kendi hareketleriyle bozulur."
+   ],
+   "ornek": {
+    "baslik": "Örnek: Arcturus, Spica'dan ne kadar parlak?",
+    "metin": "Uygulamanın kataloğunda Arcturus −0,05, Spica 0,98 kadirdir. Kadir farkı Δm = 0,98 − (−0,05) = 1,03. Parlaklık oranı 10^(0,4 × 1,03) = 10^0,412 ≈ 2,58. Yani Arcturus, Spica'dan yaklaşık 2,6 kat parlak görünür. Yükseklikler de farklı: Arcturus'un dik açıklığı +19,2° olduğundan doruk yüksekliği 90 − 41 + 19,2 = 68,2°; Spica'nın dik açıklığı −11,2° olduğundan 90 − 41 − 11,2 = 37,8°. Sonuç: kepçenin sapından ilk vardığın yıldız hem daha parlak hem daha yüksektir; ikinci sıçrama seni güney göğünde daha sönük ve daha alçak Spica'ya indirir."
+   },
+   "akilda": "İlkbaharda Büyük Kepçe tepededir: göstergeç yıldızların tersi Aslan'a, sapın kavisi Arcturus'a (Çoban), oradan Spica'ya (Başak) götürür. Spica İstanbul'da en fazla yaklaşık 38° yükselir."
+  },
+  {
+   "baslik": "Yaz gökyüzü: Yaz Üçgeni ve ufka yakın Akrep",
+   "paragraflar": [
+    "Yaz akşamlarının en göze çarpan şekli Yaz Üçgeni'dir. Uygulamanın hesabına göre 15 Temmuz saat 22.00'de Vega doğuda 65°, Deneb kuzeydoğuda 45°, Altair doğuda 35° yüksekliktedir. Vega 22.00'de doruğa yaklaşık 16 Ağustos'ta ulaşır ve 87,8° ile neredeyse tam başucundan geçer. Deneb eylül ortasında başucunun biraz kuzeyinden, Altair eylül başında 58° yükseklikten geçer. Yaz gecelerinde gökyüzü geç kararır: 21 Haziran saat 22.00'de Güneş ufkun yalnızca 12,5° altındadır; 21 Aralık'ta aynı saatte 48° altında.",
+    "Kuğu'nun Kuzey Haçı asterizmi Deneb'den Albireo'ya uzanan uzun koluyla tanınır; Deneb hem üçgenin hem haçın köşesidir. Yaz Üçgeni'nin üç yıldızı da birinci kadirdendir, bu yüzden kent göğünde bile seçilir. Samanyolu'nu çıplak gözle görmek için ise gökyüzünün oldukça karanlık olması gerekir (d7); kent ışıkları içinde onu görmeyi bekleme. Üçgenin batısında Herkül takımyıldızı ve içindeki M13 küresel kümesi vardır; NASA'ya göre dürbünle en kolay temmuzda bulunur (d11).",
+    "Yazın güney ufkunda Akrep ve Yay yükselir, ama İstanbul'dan alçakta kalırlar. Akrep'in en parlak yıldızı Antares'in dik açıklığı −26,4° olduğundan en fazla 22,6° yükselir; 22.00'de doruğa temmuz ortasında ulaşır. Akrep'in Shaula yıldızı en fazla 11,9°'ye çıkar. Yay'ın Çaydanlık asterizmindeki Kaus Australis'in doruk yüksekliği 14,6°'dir. Bu bölge önemlidir, çünkü galaksimizin merkezi Yay yönündedir ve Samanyolu orada en parlaktır (d7). Yani İstanbul'dan Samanyolu'nun en parlak kısmını görmek için hem karanlık bir gök hem de açık bir güney ufku gerekir. Yay'daki Lagün Bulutsusu (M8) NASA'ya göre en iyi ağustosta gözlenir, 5.200 ışık yılı uzaktadır ve dürbünle kolayca görülür; dik açıklığı −24,4° olduğundan İstanbul'da en fazla 90 − 41 − 24,4 ≈ 24,6° yükselir (d11).",
+    "Kış bölümündeki mitin gökteki karşılığını kontrol edelim. Antares'in sağ açıklığı yaklaşık 16,5 saat, Betelgeuse'ünkü 5,9 saattir. Fark yaklaşık 10,6 saat, yani göğün neredeyse karşı yanları. Uygulamanın hesabına göre 15 Temmuz 22.00'de Antares güneyde 23° yükseklikteyken Betelgeuse ufkun 37° altındadır. Kışın, 15 Ocak 22.00'de ise Betelgeuse 52° yüksekte, Antares ufkun 75° altındadır. Antik anlatımdaki 'Akrep doğunca Avcı batar' gözlemi gerçekten doğrudur: ikisi aynı anda gökyüzünde yüksekte görünmez."
+   ],
+   "ornek": {
+    "baslik": "Örnek: Akrep İstanbul'da neden bu kadar alçak?",
+    "metin": "En büyük yükseklik formülü: 90° − enlem + dik açıklık. Antares için 90 − 41 + (−26,4) = 22,6°. Shaula için 90 − 41 + (−37,1) = 11,9°. Yumrukla: Antares doruğunda yaklaşık 2,3 yumruk, Shaula 1,2 yumruk yüksekliktedir. Karşılaştırma için Vega'nın dik açıklığı +38,8°'dir: 90 − 41 + 38,8 = 87,8°, neredeyse başucu. Kaba bir kural da çıkar: sen 1° güneye gidersen aynı yıldız doruğunda 1° daha yükseğe çıkar, çünkü formüldeki enlem 1° azalır. Sonuç: Shaula'yı görmek için güney ufkunun en alttaki 10–12 derecesinin açık olması gerekir; bu da İstanbul'da çoğu zaman deniz ya da geniş bir boşluk görmeyi gerektirir."
+   },
+   "akilda": "Yazın başucuna yakın Yaz Üçgeni (Vega, Deneb, Altair) parlar; güneyde Akrep ve Yay İstanbul'dan alçakta kalır (Antares en fazla yaklaşık 23°). Akrep ile Avcı göğün karşı yanlarındadır."
+  },
+  {
+   "baslik": "Sonbahar gökyüzü: Kanatlıat Karesi ve Andromeda ailesi",
+   "paragraflar": [
+    "Sonbahar akşamlarında göğün yüksek kısmında büyük bir dörtgen dikkat çeker: Kanatlıat'ın Büyük Karesi. Uygulamanın hesabına göre karenin batı kenarındaki Markab ve Scheat 22.00'de doruğa yaklaşık 23 Ekim'de, doğu kenarındaki Algenib ve Alpheratz kasım başında ulaşır. Kare oldukça büyüktür: kenarları yaklaşık 12,9° ile 16,5° arasındadır, yani her kenar bir buçuk yumruk kadar. Kare, mevsimin ana tabelasıdır; Andromeda'ya giden yol oradan başlar.",
+    "Karenin kuzeydoğu köşesindeki Alpheratz, Andromeda takımyıldızının başlangıcıdır. Uygulamanın kataloğuna göre Andromeda Galaksisi (M31) Alpheratz'tan yaklaşık 14° uzaktadır, yani bir buçuk yumruktan az. NASA'ya göre M31 3,1 kadirdir, 2,5 milyon ışık yılı uzaktadır, en iyi kasımda gözlenir ve orta düzeyde ışık kirliliği olan yerlerden bile çıplak gözle görülebilir. Gözüne giren ışığı yaklaşık 2,5 milyon yıl önce yola çıktı. Aynı aylarda Kraliçe'nin Schedar'ı da 22.00'de 74° yükseklikle doruğa çıkar.",
+    "Bu mevsimin takımyıldızları tek bir hikâyenin oyuncularıdır. Theoi.com'un derlediği anlatıma göre Kraliçe Kassiopeia, kızı Andromeda'nın deniz perileri Nereidlerden daha güzel olduğunu söyleyerek övünür. Poseidon cezalandırmak için Habeşistan'a (Aithiopia) bir deniz canavarı gönderir; Andromeda canavara kurban edilmek üzere bir kayaya zincirlenir. Medusa'yı öldürüp dönen Perseus onu görür, canavarı öldürür ve Andromeda ile evlenir. Sonra Perseus, Andromeda, Kral Kepheus, Kassiopeia ve canavar gökyüzüne yerleştirilir. Bugünkü adlarıyla Kahraman, Andromeda, Kral, Kraliçe ve Balina. Hikâye Apollodoros, Pseudo-Hyginus ve Ovidius gibi antik yazarlardan gelir ve ayrıntıları kaynaktan kaynağa değişir.",
+    "Bu ailenin yıldızları gerçekten sonbahar-kış akşamlarında birlikte görünür. Uygulamaya göre Kahraman'ın en parlak yıldızı Mirfak 22.00'de doruğa aralık sonunda 81° ile ulaşır; Balina'nın Diphda'sı ise kasım ortasında güneyde 31°'de doruktadır. Kahraman'daki Algol'ün adı 'devin başı' diye çevrilir; Algol bir örten çift yıldızdır (d15). Güney ufkunun üstünde ise tek başına parlayan Fomalhaut, 'balığın ağzı', görünür: İstanbul'da en fazla 19,4° yükselir ve 22.00'de doruğa ekim sonunda ulaşır."
+   ],
+   "ornek": {
+    "baslik": "Örnek: Alpheratz'tan Andromeda Galaksisi'ne",
+    "metin": "Alpheratz'ın dik açıklığı +29,1°, M31'in +41,3°'dir. Aradaki açısal uzaklık kataloğa göre 14,0°, yani 14 / 10 = 1,4 yumruk. M31'in İstanbul'daki doruk yüksekliği 90 − 41 + 41,3 = 90,3°: galaksi kasım akşamlarında başucunun yalnızca 0,3° kuzeyinden geçer. Bu, yükseklik bakımından en elverişli durumdur, çünkü ışık en az atmosferden geçer (d1, hava kütlesi). NASA, M31'in orta düzeyde ışık kirliliğinde bile çıplak gözle görülebildiğini söyler; ama en parlak kent merkezi göğünde (Bortle 9) Ülker dışında hiçbir Messier cismi çıplak gözle görünmez (d1). Yani M31 için kent ışıklarından biraz uzaklaşmak gerekir. Sonuç: kasımda Alpheratz'tan kuzeydoğuya bir buçuk yumruk git ve tam başına bak."
+   },
+   "akilda": "Sonbaharın tabelası Kanatlıat'ın Büyük Karesi'dir; köşesindeki Alpheratz'tan yaklaşık 14° ötede Andromeda Galaksisi bulunur. Kahraman, Andromeda, Kral, Kraliçe ve Balina aynı mitin oyuncularıdır ve aynı mevsimde görünür."
+  },
+  {
+   "baslik": "Kendi yıllık gökyüzü haritanı kurmak",
+   "paragraflar": [
+    "Bu dersteki bilgileri tek bir yönteme bağlayabilirsin. Her gece işe yıl boyu görünen Büyük Kepçe, Kutup Yıldızı ve Kraliçe'den başla; bunlar senin sabit noktalarındır. Oradan mevsime göre dallan: kışın Avcı'ya, ilkbaharda Aslan ve Arcturus'a, yazın Yaz Üçgeni'ne, sonbaharda Kanatlıat Karesi'ne. Her adımda yalnızca parlak yıldızlar arasında, yumrukla ölçerek ilerlemek yıldızdan yıldıza atlama yöntemidir (d11). Bir yıldızdan ötekine giden çizgiyi sözle de kaydet: 'kuşaktan güneye iki yumruk, Sirius' gibi.",
+    "İstanbul'da en büyük engel ışık kirliliğidir. Kent göğünde (Bortle 8–9) sınır kadir 4,5'ten 4'ün altına kadar iner ve tanıdık takımyıldızlar bile sönük kalır (d1). Bu yüzden önce birinci kadirden yıldızları ve parlak yıldızlardan oluşan asterizmleri öğren; sönük takımyıldızları kent dışındaki gecelere bırak. Gözlerinin karanlığa alışması için zaman tanımak ve kırmızı ışık kullanmak d11'de anlattığımız gibi çok fark yaratır.",
+    "Uygulamanın hesaplarından bir yıllık kaba takvim çıkar. Saat 22.00'de doruğa ya da ona yakın konuma gelen başlıca yıldızlara göre: ocak sonu Arabacı ve Avcı'nın batı kısmı (Capella, Rigel), şubat Avcı'nın tamamı ve Büyük Köpek (Betelgeuse, Sirius), mart İkizler ve Küçük Köpek, nisan Aslan, mayıs sonu Başak, haziran Çoban, temmuz Kuzeytacı ve Akrep, ağustos Yılancı ve Çalgı, eylül Kartal ve Kuğu, ekim Kanatlıat ve Güneybalığı, kasım Andromeda ve Kraliçe, aralık Koç ve Kahraman. Bu takvim her yıl birkaç günlük kaymayla tekrar eder.",
+    "Bu takvimin sınırlarını da bil. Doruk saatini 22.00 seçtik; daha erken ya da geç bakarsan tablo kayar. Ufuk yakınındaki yükseklikler kırılma ve pus yüzünden birkaç derece farklı görünebilir, binalar ise alçak yıldızları tamamen saklar. Kesin saat ve konum için Urania'nın gökyüzü haritası ve bu gece görünenler listesi, senin bulunduğun yer ve saat için aynı hesap çekirdeğiyle çalışır. Haritayı gökle karşılaştırmayı alışkanlık hâline getirirsen birkaç mevsim sonra takımyıldızları harita olmadan tanırsın."
+   ],
+   "ornek": {
+    "baslik": "Örnek: Akşam erken bakarsan hangi ayın göğünü görürsün?",
+    "metin": "Yıldızlar her ay yaklaşık 2 saat erken doruğa ulaşır. Uygulamanın hesabına göre Betelgeuse 22.00'de doruğa 4 Şubat'ta ulaşıyor. Bir ay önce, 4 Ocak'ta, aynı noktaya yaklaşık 2 saat sonra, saat 24.00 dolaylarında gelir. Bir ay sonra, 4 Mart'ta ise yaklaşık 20.00'de gelir. Kural şöyle özetlenir: bir gece saat 22.00 yerine 20.00'de bakarsan, bir ay önceki 22.00 göğünü görürsün; 24.00'te bakarsan bir ay sonrakini. Yani 15 Ocak'ta gece yarısı balkona çıkarsan, şubat ortası akşamlarının göğünü önceden görmüş olursun. Sonuç: saat başına yaklaşık iki haftalık mevsim kayması vardır; geç saatte bakmak geleceğin mevsimini, erken saatte bakmak geçmiş ayı gösterir."
+   },
+   "akilda": "Her gece Büyük Kepçe, Kutup Yıldızı ve Kraliçe'den başla, mevsime göre parlak tabelalara dallan ve yumrukla ölçerek ilerle. Bir ayda gökyüzü aynı saatte yaklaşık 2 saatlik dönüş kadar kayar."
+  }
+ ],
+ "formuller": [
+  {
+   "ad": "Doruk yüksekliği",
+   "ifade": "h_en büyük = 90° − φ + δ",
+   "aciklama": "φ: gözlemcinin enlemi (İstanbul ≈ 41°), δ: yıldızın dik açıklığı (derece, güneyde eksi). Yıldız doruğunu güneyde yapıyorsa (δ < φ) geçerlidir; sonuç 90°'yi aşarsa yıldız başucunun kuzeyinden geçer ve gerçek yükseklik 180° − h olur. Ufuk kırılması (yaklaşık 0,5°) ihmal edilmiştir."
+  },
+  {
+   "ad": "Hiç batmama ve hiç doğmama sınırı",
+   "ifade": "δ > 90° − φ → hiç batmaz;  δ < −(90° − φ) → hiç doğmaz",
+   "aciklama": "φ: enlem, δ: dik açıklık. İstanbul için 90 − 41 = 49: dik açıklığı +49°'den büyük yıldızlar kutup çevresidir, −49°'den küçükler hiç doğmaz. Binalar ve pus yüzünden pratikte ufkun ilk birkaç derecesi kaybolur."
+  },
+  {
+   "ad": "Yıldızların günlük öne kayması",
+   "ifade": "Δt ≈ 24 sa − 23 sa 56 dk 4 sn ≈ 3 dk 56 sn (gün başına)",
+   "aciklama": "Bir yıldız her gece bir öncekinden yaklaşık 3 dakika 56 saniye erken doğar ve doruğa ulaşır. 30 günde ≈ 118 dakika, yani ayda yaklaşık 2 saat."
+  },
+  {
+   "ad": "Parlaklık oranı",
+   "ifade": "Oran = 10^(0,4 × Δm)",
+   "aciklama": "Δm: iki yıldızın kadir farkı. Δm = 0,42 → 1,47 kat; Δm = 1 → yaklaşık 2,5 kat. Kadir küçük olan yıldız daha parlaktır."
+  },
+  {
+   "ad": "Presesyon kayması",
+   "ifade": "Kayma (°) ≈ 50″ × yıl sayısı / 3.600",
+   "aciklama": "İlkbahar noktası yıldızlara göre yılda yaklaşık 50 yay saniyesi kayar; 3.600 yay saniyesi 1°'dir. 2.000 yılda ≈ 27,8°, yani bir burç diliminin (30°) neredeyse tamamı."
+  },
+  {
+   "ad": "Gök küresinin alanı",
+   "ifade": "A = 4π × (180/π)² ≈ 41.253 derece kare",
+   "aciklama": "Bütün gökyüzünün derece kare cinsinden alanı. Bir takımyıldızın payı = takımyıldız alanı / 41.253."
+  }
+ ],
+ "anahtar_sayilar": [
+  {
+   "deger": "88",
+   "aciklama": "IAU'nun tanıdığı takımyıldız sayısı; gökyüzünü boşluksuz bölen resmî bölgeler",
+   "kaynak_url": "https://en.wikipedia.org/wiki/IAU_designated_constellations"
+  },
+  {
+   "deger": "48",
+   "aciklama": "Ptolemaios'un Almagest'inde (MS 2. yüzyıl) sıralanan takımyıldız sayısı",
+   "kaynak_url": "https://www.constellation-guide.com/what-is-a-constellation/how-many-constellations-are-there"
+  },
+  {
+   "deger": "1922 · 1928 · 1930",
+   "aciklama": "IAU'nun modern takımyıldız listesini kabulü; Delporte sınırlarının kabulü ve yayımı",
+   "kaynak_url": "https://en.wikipedia.org/wiki/IAU_designated_constellations"
+  },
+  {
+   "deger": "1.303 ve 68 derece kare",
+   "aciklama": "En büyük (Suyılanı) ve en küçük (Güneyhaçı) takımyıldızın alanı",
+   "kaynak_url": "https://en.wikipedia.org/wiki/IAU_designated_constellations"
+  },
+  {
+   "deger": "13 takımyıldız · 30 Kasım–18 Aralık",
+   "aciklama": "Tutulumun geçtiği takımyıldız sayısı ve Güneş'in Yılancı'nın önünde kaldığı dönem",
+   "kaynak_url": "https://earthsky.org/astronomy-essentials/sun-in-ophiuchus-november-30-to-december-18/"
+  },
+  {
+   "deger": "1603",
+   "aciklama": "Johann Bayer'in Uranometria atlası ve Bayer harflerinin başlangıcı",
+   "kaynak_url": "https://en.wikipedia.org/wiki/Bayer_designation"
+  },
+  {
+   "deger": "2016",
+   "aciklama": "IAU Yıldız Adları Çalışma Grubu'nun (WGSN) kuruluşu",
+   "kaynak_url": "https://en.wikipedia.org/wiki/Stellar_designations_and_names"
+  },
+  {
+   "deger": "28 astrolog · 100'ü aşkın doğum haritası · 1985",
+   "aciklama": "Carlson'ın Nature'da yayımlanan çift kör astroloji deneyi; sonuç şans düzeyinde",
+   "kaynak_url": "https://en.wikipedia.org/wiki/Shawn_Carlson"
+  },
+  {
+   "deger": "yılda ≈ 50″",
+   "aciklama": "Presesyon yüzünden ilkbahar noktasının yıldızlara göre yıllık kayması",
+   "kaynak_url": "https://en.wikipedia.org/wiki/Ecliptic"
+  },
+  {
+   "deger": "≈ 41°",
+   "aciklama": "Kutup Yıldızı'nın İstanbul'daki yüksekliği (enleme eşit)",
+   "kaynak_url": "https://en.wikipedia.org/wiki/Celestial_pole"
+  },
+  {
+   "deger": "−1,46 kadir · 8,6 ışık yılı",
+   "aciklama": "Gece göğünün en parlak yıldızı Sirius'un parlaklığı ve uzaklığı",
+   "kaynak_url": "https://en.wikipedia.org/wiki/Sirius"
+  },
+  {
+   "deger": "≈ 12′",
+   "aciklama": "Mizar ile Alcor arasındaki açı; eski bir göz keskinliği sınavı",
+   "kaynak_url": "https://en.wikipedia.org/wiki/Mizar_and_Alcor"
+  }
+ ],
+ "sozluk": [
+  {
+   "terim": "takımyıldız",
+   "tanim": "Gök küresinin IAU'nun çizdiği resmî sınırlarla ayrılmış 88 bölgesinden her biri."
+  },
+  {
+   "terim": "takımyıldız sınırı",
+   "tanim": "Takımyıldızları ayıran, sağ açıklık ve dik açıklık çizgileri boyunca giden ve 1928'de kabul edilen resmî çizgi."
+  },
+  {
+   "terim": "asterizm",
+   "tanim": "Gökte kolay tanınan ama resmî takımyıldız olmayan yıldız deseni; bir takımyıldızın parçası olabilir ya da birkaçına yayılabilir."
+  },
+  {
+   "terim": "Büyük Kepçe",
+   "tanim": "Büyük Ayı takımyıldızının en parlak yedi yıldızının oluşturduğu kepçe biçimli asterizm."
+  },
+  {
+   "terim": "Yaz Üçgeni",
+   "tanim": "Vega, Deneb ve Altair'in oluşturduğu, üç ayrı takımyıldıza yayılan yaz asterizmi."
+  },
+  {
+   "terim": "Kış Üçgeni",
+   "tanim": "Betelgeuse, Sirius ve Procyon'un oluşturduğu, neredeyse eşkenar kış asterizmi."
+  },
+  {
+   "terim": "Avcı'nın Kuşağı",
+   "tanim": "Avcı takımyıldızının ortasında düz bir sıra oluşturan Alnitak, Alnilam ve Mintaka yıldızları."
+  },
+  {
+   "terim": "göstergeç yıldızlar",
+   "tanim": "Büyük Kepçe'nin ağzındaki, aralarından çekilen çizgi Kutup Yıldızı'nı gösteren Merak ve Dubhe yıldızları."
+  },
+  {
+   "terim": "Bayer harfi",
+   "tanim": "Bir yıldızı Yunan harfi ve takımyıldız adıyla anan, 1603'te Johann Bayer'in başlattığı etiket (örneğin α Tau)."
+  },
+  {
+   "terim": "Flamsteed numarası",
+   "tanim": "Bir takımyıldızın yıldızlarına sağ açıklık sırasına göre verilen numara (örneğin 80 UMa)."
+  },
+  {
+   "terim": "WGSN",
+   "tanim": "IAU'nun 2016'da kurduğu, yıldızların özel adlarını kataloglayan ve standartlaştıran Yıldız Adları Çalışma Grubu."
+  },
+  {
+   "terim": "burç kuşağı",
+   "tanim": "Tutulumun iki yanında yaklaşık 20° genişliğinde, Güneş, Ay ve gezegenlerin hep içinde göründüğü kuşak."
+  },
+  {
+   "terim": "burç",
+   "tanim": "Astrolojide tutulumun ilkbahar noktasından başlayarak ölçülen 30°'lik eşit dilimlerinden her biri; takımyıldızla aynı şey değildir."
+  },
+  {
+   "terim": "ilkbahar noktası",
+   "tanim": "Güneş'in Mart ekinoksunda gök ekvatorunu güneyden kuzeye geçtiği, presesyonla yavaşça kayan nokta."
+  },
+  {
+   "terim": "astroloji",
+   "tanim": "Gök cisimlerinin konumlarının insan kişiliğini ve olayları belirlediğini öne süren, sınamalarda doğrulanamamış inanç sistemi."
+  }
+ ],
+ "defter_notu": [
+  "Takımyıldız = resmî gök bölgesi (88, IAU). Listesi 1922, Delporte sınırları 1928 kabul / 1930 yayım; sınırlar sağ açıklık ve dik açıklık çizgileri. Ptolemaios: 48.",
+  "Asterizm resmî değil: Büyük Kepçe (Büyük Ayı'nın 7 yıldızı), Yaz Üçgeni (Vega–Deneb–Altair), Kış Üçgeni (Betelgeuse–Sirius–Procyon), Kanatlıat Karesi (Alpheratz Andromeda'da).",
+  "Yıldız adları çoğunlukla Arapça (es-Sûfî ~964, Latince çeviriler 10.–13. yy). WGSN 2016. Yıldız adı satılamaz.",
+  "Bayer 1603: α Tau = Aldebaran. Harf ≈ parlaklık ama istisna çok (Rigel β, Betelgeuse α). Flamsteed: sağ açıklık sırası (80 UMa = Alcor).",
+  "Burç = 30°'lik eşit dilim (ilkbahar noktasından). Tutulum 13 takımyıldızdan geçer; Güneş Yılancı'da ≈ 30 Kas–18 Ara, Akrep'te yalnız ≈ 6,5 gün. Presesyon yılda ≈ 50″ → takvim ~1 ay kaymış.",
+  "Astroloji bilim değil: Carlson 1985 (Nature), 28 astrolog, >100 harita, sonuç şans düzeyinde; çelişen kanıtla kendini düzeltmez.",
+  "İstanbul (41° K): h_en büyük = 90 − 41 + δ. δ > +49° batmaz, δ < −49° doğmaz. Yıldızlar her gün ≈ 4 dk, her ay ≈ 2 sa erken.",
+  "Kutup Yıldızı ≈ 41° kuzeyde. Merak→Dubhe çizgisini ≈ 5 kat (≈ 3 yumruk) uzat. Kraliçe kutbun öbür yanında.",
+  "Kış: Kuşak → Sirius (güney, 2,3 yumruk), → Aldebaran → Ülker. İlkbahar: sapın kavisi → Arcturus → Spica. Yaz: Yaz Üçgeni, Antares en fazla ≈ 23°. Sonbahar: Kare, Alpheratz → M31 (1,4 yumruk).",
+  "22.00 takvimi: Şub Avcı, Nis Aslan, Haz Çoban, Ağu Çalgı, Eki Kanatlıat, Ara Kahraman. 20.00'de bakmak = bir ay önceki 22.00 göğü."
+ ],
+ "sorular": [
+  {
+   "soru": "Takımyıldız ile asterizm arasındaki fark nedir? Birer örnek ver.",
+   "cevap": "Takımyıldız IAU'nun resmî sınırlarla tanımladığı 88 gök bölgesinden biridir (örneğin Büyük Ayı). Asterizm ise resmî olmayan, kolay tanınan bir yıldız desenidir; bir takımyıldızın parçası olabilir (Büyük Kepçe, Büyük Ayı'nın en parlak yedi yıldızı) ya da birkaç takımyıldıza yayılabilir (Yaz Üçgeni: Çalgı, Kuğu ve Kartal)."
+  },
+  {
+   "soru": "Avcı takımyıldızındaki Betelgeuse ile Avcı Bulutsusu gökte yan yana görünür. Gerçekten komşu mudurlar?",
+   "cevap": "Hayır. Betelgeuse yaklaşık 548 ışık yılı (ölçümler 400–600 arası), Avcı Bulutsusu kaynağa göre yaklaşık 1.270–1.500 ışık yılı uzaktadır. Yalnızca bize göre aynı yöndedirler. Takımyıldız bir yön bölgesidir, uzaklık bilgisi taşımaz."
+  },
+  {
+   "soru": "IAU takımyıldız sınırları ne zaman kabul edildi ve neden yapılmaları gerekiyordu?",
+   "cevap": "Modern liste 1922'de kabul edildi; Delporte'nin çizdiği sınırlar 1928'de kabul edilip 1930'da yayımlandı. Daha önce her atlas kendi takımyıldızlarını ve sınırlarını kullandığından aynı bölge farklı adlar taşıyabiliyordu. Resmî sınırlar sayesinde gökteki her nokta tek bir takımyıldıza ait oldu."
+  },
+  {
+   "soru": "Avcı'da Betelgeuse α, Rigel β harfini taşır. Bu, Betelgeuse'ün daha parlak olduğu anlamına mı gelir?",
+   "cevap": "Hayır. Bayer harfleri yalnız kabaca parlaklık sırasındadır; Bayer yıldızları kadir sınıflarına ayırmış, aynı sınıf içinde sıralamamıştır. Rigel çoğu zaman daha parlaktır; üstelik Betelgeuse değişen bir yıldızdır ve 0,0 ile 1,6 kadir arasında oynar."
+  },
+  {
+   "soru": "Astrolojide Koç burcu 20 Mart'ta başlar. Güneş o tarihte gerçekte hangi takımyıldızın önündedir ve neden?",
+   "cevap": "Balıklar'ın önündedir; uygulamanın hesabına göre Güneş Koç takımyıldızına ancak 19 Nisan'da girer. Burçlar ilkbahar noktasından ölçülen 30°'lik dilimlerdir ve ilkbahar noktası presesyon yüzünden yılda yaklaşık 50″ kayarak Koç'tan Balıklar'a geçmiştir. Bu yüzden gerçek geçiş burç tarihlerinden yaklaşık bir ay geç kalır."
+  },
+  {
+   "soru": "Burçlar ile takımyıldızlar arasındaki kayma astrolojiyi tek başına çürütür mü? Asıl ölçüt nedir?",
+   "cevap": "Tek başına çürütmez, çünkü burç takvimi zaten takımyıldızlara değil ilkbahar noktasına bağlı eşit dilimlere göre tanımlanır. Asıl ölçüt öngörüdür: Carlson'ın 1985 çift kör deneyinde 28 astrolog 100'ü aşkın doğum haritasını kişilik profilleriyle şanstan iyi eşleştiremedi. Ayrıca astroloji çelişen kanıtlar karşısında fikirlerini düzeltmez."
+  },
+  {
+   "soru": "İstanbul'da (41° K) dik açıklığı −26,4° olan Antares en fazla ne kadar yükselir? Kanopus (dik açıklık −52,7°) neden hiç görünmez?",
+   "cevap": "Antares: 90 − 41 − 26,4 = 22,6°. Kanopus: 90 − 41 − 52,7 = −3,7°; ufkun altında kalır. Ufuktaki kırılma yalnızca yaklaşık yarım derece kazandırır, bu yüzden Kanopus İstanbul'dan hiç doğmaz. Genel kural: dik açıklığı −49°'den küçük yıldızlar İstanbul'dan görünmez."
+  },
+  {
+   "soru": "Bir yıldız bu gece saat 22.00'de doruğa ulaşıyor. Bir ay sonra aynı yere saat kaçta gelir? Neden?",
+   "cevap": "Yaklaşık 20.00'de. Dünya yıldızlara göre bir dönüşü 23 sa 56 dk 4 sn'de tamamlar; yıldızlar her gün yaklaşık 3 dk 56 sn erken gelir. 30 günde bu ≈ 118 dakika, yani yaklaşık 2 saat eder."
+  },
+  {
+   "soru": "Kutup Yıldızı'nı Büyük Kepçe'den nasıl bulursun? Kaç yumruk uzaktadır?",
+   "cevap": "Kepçenin ağzındaki göstergeç yıldızlar Merak'tan Dubhe'ye çizgi çekip uzatırsın. Uygulamanın kataloğuna göre Merak–Dubhe 5,4°, Dubhe–Kutup Yıldızı 28,7°; yani aralığı yaklaşık 5 kez uzatırsın. 28,7° / 10° ≈ 3 yumruk eder. Kutup Yıldızı İstanbul'da tam kuzeyde, yaklaşık 41° yüksekliktedir."
+  },
+  {
+   "soru": "Antik anlatımda 'Akrep doğunca Avcı batar' denir. Bu gökyüzünde doğru mu?",
+   "cevap": "Evet. Antares'in sağ açıklığı yaklaşık 16,5 saat, Betelgeuse'ünkü 5,9 saattir; fark yaklaşık 10,6 saat, yani göğün neredeyse karşı yanları. Uygulamanın hesabına göre 15 Temmuz 22.00'de Antares 23° yüksekteyken Betelgeuse ufkun 37° altında; 15 Ocak 22.00'de tersine. İkisi aynı anda yüksekte görünmez."
+  },
+  {
+   "soru": "Uygulamada bir yıldızın adı 'Alcor', bir rehberde '80 UMa' yazıyor. Aynı yıldız olabilir mi?",
+   "cevap": "Evet. Alcor özel adıdır (IAU WGSN kataloğu), 80 UMa ise Flamsteed numarasıdır: Büyük Ayı'nın yıldızlarının sağ açıklık sırasına göre numaralandırılmasında 80. sıradadır. Bir yıldızın özel adı, Bayer harfi ve Flamsteed numarası gibi birden çok etiketi olabilir."
+  },
+  {
+   "soru": "Kasım akşamı İstanbul'da Andromeda Galaksisi'ni nasıl ararsın ve neden kasım iyi bir aydır?",
+   "cevap": "Kanatlıat Karesi'nin kuzeydoğu köşesindeki Alpheratz'tan yaklaşık 14°, yani bir buçuk yumruk ötede ararsın. NASA'ya göre M31 en iyi kasımda gözlenir. Dik açıklığı +41,3° olduğundan İstanbul'da doruğunda 90 − 41 + 41,3 = 90,3°'ye, yani neredeyse başucuna çıkar; ışığı en az atmosferden geçer."
+  }
+ ],
+ "kaynaklar": [
+  {
+   "ad": "Wikipedia – IAU designated constellations",
+   "url": "https://en.wikipedia.org/wiki/IAU_designated_constellations"
+  },
+  {
+   "ad": "Constellation Guide – How many constellations are there?",
+   "url": "https://www.constellation-guide.com/what-is-a-constellation/how-many-constellations-are-there"
+  },
+  {
+   "ad": "Wikipedia – Asterism (astronomy)",
+   "url": "https://en.wikipedia.org/wiki/Asterism_(astronomy)"
+  },
+  {
+   "ad": "Wikipedia – Stellar designations and names",
+   "url": "https://en.wikipedia.org/wiki/Stellar_designations_and_names"
+  },
+  {
+   "ad": "Wikipedia – List of proper names of stars",
+   "url": "https://en.wikipedia.org/wiki/List_of_proper_names_of_stars"
+  },
+  {
+   "ad": "Wikipedia – Bayer designation",
+   "url": "https://en.wikipedia.org/wiki/Bayer_designation"
+  },
+  {
+   "ad": "TDV İslam Ansiklopedisi – Yıldız",
+   "url": "https://islamansiklopedisi.org.tr/yildiz"
+  },
+  {
+   "ad": "IAU Catalog of Star Names (WGSN listesi)",
+   "url": "https://exopla.net/star-names/modern-iau-star-names/"
+  },
+  {
+   "ad": "Royal Observatory of Belgium – Passing of the Sun through the zodiac signs in 2026",
+   "url": "https://robinfo.oma.be/en/astro-info/sun/passing-of-the-sun-through-the-zodiac-signs-in-2026/"
+  },
+  {
+   "ad": "EarthSky – Sun in Ophiuchus, November 30 to December 18",
+   "url": "https://earthsky.org/astronomy-essentials/sun-in-ophiuchus-november-30-to-december-18/"
+  },
+  {
+   "ad": "Wikipedia – Ecliptic",
+   "url": "https://en.wikipedia.org/wiki/Ecliptic"
+  },
+  {
+   "ad": "Wikipedia – Shawn Carlson (1985 Nature çift kör astroloji deneyi)",
+   "url": "https://en.wikipedia.org/wiki/Shawn_Carlson"
+  },
+  {
+   "ad": "UC Berkeley Understanding Science – Astrology: Is it scientific?",
+   "url": "https://undsci.berkeley.edu/astrology-is-it-scientific"
+  },
+  {
+   "ad": "High Point Scientific – Star Hopping 101",
+   "url": "https://www.highpointscientific.com/astronomy-hub/post/star-hopping-beginners-guide"
+  },
+  {
+   "ad": "EarthSky – Follow the arc to Arcturus",
+   "url": "https://earthsky.org/tonight/follow-the-arc-to-arcturus-in-may"
+  },
+  {
+   "ad": "EarthSky – Use the Big Dipper to locate Polaris",
+   "url": "https://earthsky.org/tonight/use-big-dipper-to-locate-polaris-the-north-star"
+  },
+  {
+   "ad": "Theoi.com – Skorpios (Orion ve Akrep)",
+   "url": "https://www.theoi.com/Ther/Skorpios.html"
+  },
+  {
+   "ad": "Theoi.com – Ketos Aithiopios (Andromeda ve Perseus)",
+   "url": "https://theoi.com/Ther/KetosAithiopios.html"
+  },
+  {
+   "ad": "Wikipedia – Betelgeuse",
+   "url": "https://en.wikipedia.org/wiki/Betelgeuse"
+  },
+  {
+   "ad": "Wikipedia – Sirius",
+   "url": "https://en.wikipedia.org/wiki/Sirius"
+  },
+  {
+   "ad": "Wikipedia – Pleiades",
+   "url": "https://en.wikipedia.org/wiki/Pleiades"
+  },
+  {
+   "ad": "Wikipedia – Mizar and Alcor",
+   "url": "https://en.wikipedia.org/wiki/Mizar_and_Alcor"
+  },
+  {
+   "ad": "NASA – Messier 31 (Andromeda Galaxy)",
+   "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-31/"
+  },
+  {
+   "ad": "Astronomy Engine (Don Cross) – uygulamanın hesap çekirdeği gok.js",
+   "url": "https://github.com/cosinekitty/astronomy"
+  }
+ ]
+}
