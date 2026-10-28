@@ -271,3 +271,18 @@ test('Tanı: rapor ve düğmeler 320 px\'te taşmaz', async ({ page }) => {
   expect(t.sw).toBeLessThanOrEqual(t.cw);
   expect(t.sag).toBeLessThanOrEqual(320);
 });
+
+test.describe('Gök levhası etiket yerleşimi (412 px)', () => {
+  test.use({ viewport: { width: 412, height: 900 } });
+  test('Yakın çift hedefin (NGC 884 / NGC 869) ikisi de yazılır, etiketler birbirine binmez, uydu etiketi yazılır', async ({ page }) => {
+    await kur(page, { zaman: '2026-10-28T19:30:00+03:00' });
+    await gokHazir(page);
+    await expect.poll(() => page.evaluate(() => window.UraniaGozlem.durum.harita.yerlesim().etiketler.some(e => /^Tiangong /.test(e.metin)))).toBe(true);
+    const y = await page.evaluate(() => window.UraniaGozlem.durum.harita.yerlesim());
+    const ad = y.etiketler.map(e => e.metin);
+    expect(ad).toEqual(expect.arrayContaining(['NGC 884', 'NGC 869', 'Ay', 'Satürn']));
+    for (let i = 0; i < y.etiketler.length; i++) for (let j = i + 1; j < y.etiketler.length; j++) {
+      expect(kesisir(y.etiketler[i], y.etiketler[j]), y.etiketler[i].metin + ' / ' + y.etiketler[j].metin).toBe(false);
+    }
+  });
+});

@@ -65,6 +65,11 @@
       const engeller = [];
       /* Etiketler sonda, önceliğe göre yerleştirilir; çakışan düşük öncelikli etiket atlanır. */
       const etiket = (metin, x, y, font, renk, oncelik, ofset, merkez) => etiketler.push({ metin, x, y, font, renk, oncelik, ofset: ofset || 0, merkez: !!merkez });
+      /* Kalabalık ızgarası (8 px hücre): yıldız noktaları, takımyıldız çizgileri ve uydu izi buraya ağırlıkla yazılır.
+         Etiket, çakışmayan aday yerler arasından en az şeyin üstüne düşene konur (eskiden ilk uyan yer seçiliyordu). */
+      const HC = 8, hs = Math.ceil(W / HC) + 1, kalabalik = new Float32Array(hs * hs);
+      const isle = (x, y, a) => { const i = Math.floor(x / HC), j = Math.floor(y / HC); if (i >= 0 && j >= 0 && i < hs && j < hs) kalabalik[j * hs + i] += a; };
+      const cizgiIsle = (x0, y0, x1, y1, a) => { const n = Math.max(1, Math.ceil(Math.hypot(x1 - x0, y1 - y0) / 4)); for (let k = 0; k <= n; k++) isle(x0 + (x1 - x0) * k / n, y0 + (y1 - y0) * k / n, a); };
       ctx.clearRect(0, 0, W, W);
 
       /* Gök zemini: Güneş'in yüksekliğine göre gündüz / alacakaranlık / gece */
@@ -103,6 +108,7 @@
             p.alt = h.alt;
             if (onceki && (onceki.alt > -15 || p.alt > -15)) {
               ctx.beginPath(); ctx.moveTo(onceki.x, onceki.y); ctx.lineTo(p.x, p.y); ctx.stroke();
+              cizgiIsle(onceki.x, onceki.y, p.x, p.y, 0.4);
             }
             onceki = p;
           });
@@ -135,6 +141,7 @@
         ctx.beginPath(); ctx.arc(p.x, p.y, r, 0, Math.PI * 2);
         ctx.fillStyle = kir ? c.yildiz : (bvRenk(s[3]) || c.yildiz);
         ctx.fill();
+        isle(p.x, p.y, r > 1.6 ? 2 : 1);
         /* Parlak yıldızın noktası etiketlerin altında kalmasın (etiketler sonda yerleştirilir) */
         if (s[2] < 3) engeller.push({ x: p.x, y: p.y, r: r + 0.5, yumusak: true });
         const ad = veri.yildizlar.adlar[i];
@@ -211,7 +218,8 @@
         if (!y.yol || y.yol.length < 2) return;
         ctx.save(); ctx.setLineDash([4, 5]); ctx.strokeStyle = uRenk; ctx.lineWidth = 1.3;
         ctx.beginPath(); let ilk = true;
-        y.yol.forEach(n => { if (n.alt < 0) { ilk = true; return; } const p = ekran(n.alt, n.az); if (ilk) { ctx.moveTo(p.x, p.y); ilk = false; } else ctx.lineTo(p.x, p.y); });
+        let o = null;
+        y.yol.forEach(n => { if (n.alt < 0) { ilk = true; o = null; return; } const p = ekran(n.alt, n.az); if (ilk) { ctx.moveTo(p.x, p.y); ilk = false; } else ctx.lineTo(p.x, p.y); if (o) cizgiIsle(o.x, o.y, p.x, p.y, 3); o = p; });
         ctx.stroke(); ctx.restore();
         /* Etiket görünür bölümün başında (güneşli ve ufkun üstünde); gölgede başlayan yolda o an görünmez */
         const bas = (y.gBas && y.yol.reduce((a, n) => (!a || Math.abs(n.t - y.gBas.t) < Math.abs(a.t - y.gBas.t) ? n : a), null)) || y.yol.find(n => n.alt >= 10 && n.isikli) || y.yol.find(n => n.alt >= 10);
@@ -269,7 +277,7 @@
         etiket('Ay', p.x, p.y, '600 ' + Math.max(11, W / 42) + 'px Plex, system-ui, sans-serif', c.ay, 12, r + 4);
         isabet.push({ x: p.x, y: p.y, oncelik: 5, bilgi: '<b>Ay</b> · ' + d.ay.ad + ', %' + Math.round(d.ay.oran * 100) + ' aydınlık · ' + Urania.derece(d.ay.alt) + ' yükseklik' });
       }
-      etiketleriYerlestir(etiketler, engeller);
+      etiketleriYerlestir(etiketler, engeller, { kalabalik, HC, hs, hale: gokRenk });
       ctx.restore();
 
       /* Ufuk halkası ve yönler */
@@ -296,7 +304,7 @@
       });
     }
 
-    function etiketleriYerlestir(ls, engeller) {
+    function etiketleriYerlestir(ls, engeller, yog) {
       const kutular = [];
       yerlesim = { etiketler: [], engeller: engeller.slice() };   // testler için: son çizimin etiket kutuları
       /* Ay, gezegen, Güneş, parlak yıldız, hedef halkası ve radyant işaretleri de engel sayılır */
@@ -308,23 +316,45 @@
       const icerde = k => [[k.x, k.y], [k.x + k.w, k.y], [k.x, k.y + k.h], [k.x + k.w, k.y + k.h]].every(([x, y]) => Math.hypot(x - cx, y - cy) <= R - 2);
       const kesisir = (k, b) => k.x < b.x + b.w && k.x + k.w > b.x && k.y < b.y + b.h && k.y + k.h > b.y;
       const cakisir = (k, tur) => !icerde(k) || kutular.some(b => (tur === 0 || !b.yumusak) && (tur < 2 || !b.engel) && kesisir(k, b));
+      /* Kutunun üstüne düştüğü kalabalık (yıldız, çizgi, uydu izi) */
+      const kalabalik = k => {
+        if (!yog) return 0;
+        let t = 0;
+        const i0 = Math.max(0, Math.floor(k.x / yog.HC)), i1 = Math.min(yog.hs - 1, Math.floor((k.x + k.w) / yog.HC));
+        const j0 = Math.max(0, Math.floor(k.y / yog.HC)), j1 = Math.min(yog.hs - 1, Math.floor((k.y + k.h) / yog.HC));
+        for (let j = j0; j <= j1; j++) for (let i = i0; i <= i1; i++) t += yog.kalabalik[j * yog.hs + i];
+        return t;
+      };
       ctx.textBaseline = 'middle';
       ls.sort((a, b) => b.oncelik - a.oncelik).forEach(e => {
         ctx.font = e.font;
         const w = ctx.measureText(e.metin).width, h = parseFloat(e.font.match(/(\d+(?:\.\d+)?)px/)[1]) * 1.1;
+        const o = e.ofset, oc = o * 0.75;
+        /* Sağ, sol, üst, alt ve dört köşe; sıra eşit kalabalıkta tercih sırasıdır (sağ önce) */
         const adaylar = e.merkez
           ? [[e.x - w / 2, e.y - h / 2]]
-          : [[e.x + e.ofset, e.y - h / 2], [e.x - e.ofset - w, e.y - h / 2], [e.x - w / 2, e.y - e.ofset - h], [e.x - w / 2, e.y + e.ofset]];
+          : [[e.x + o, e.y - h / 2], [e.x - o - w, e.y - h / 2], [e.x - w / 2, e.y - o - h], [e.x - w / 2, e.y + o],
+            [e.x + oc, e.y - oc - h], [e.x - oc - w, e.y - oc - h], [e.x + oc, e.y + oc], [e.x - oc - w, e.y + oc]];
         const turlar = e.oncelik >= 8 ? [0, 1, 2] : [0, 1];
-        for (const tur of turlar) for (const [x, y] of adaylar) {
-          const k = { x: x - 1, y, w: w + 2, h };
-          if (!cakisir(k, tur)) {
-            kutular.push(k);
-            yerlesim.etiketler.push(Object.assign({ metin: e.metin, tur }, k));
-            ctx.fillStyle = e.renk; ctx.textAlign = 'left';
-            ctx.fillText(e.metin, x, y + h / 2);
-            return;
+        for (const tur of turlar) {
+          let en = null;
+          adaylar.forEach(([x, y], s) => {
+            const k = { x: x - 1, y, w: w + 2, h };
+            if (cakisir(k, tur)) return;
+            const puan = kalabalik(k) + s * 0.15;
+            if (!en || puan < en.puan) en = { k, x, y, puan };
+          });
+          if (!en) continue;
+          kutular.push(en.k);
+          yerlesim.etiketler.push(Object.assign({ metin: e.metin, tur }, en.k));
+          /* Hale: etiket bir çizginin ya da sönük yıldızın üstüne düşse de okunur (gök zemini renginde ince kontur) */
+          if (yog && yog.hale && !e.merkez) {
+            ctx.save(); ctx.lineJoin = 'round'; ctx.lineWidth = 3; ctx.strokeStyle = yog.hale; ctx.globalAlpha = 0.9;
+            ctx.strokeText(e.metin, en.x, en.y + h / 2); ctx.restore();
           }
+          ctx.fillStyle = e.renk; ctx.textAlign = 'left';
+          ctx.fillText(e.metin, en.x, en.y + h / 2);
+          return;
         }
       });
     }
