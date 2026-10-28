@@ -509,6 +509,7 @@ html.kirmizi input[type="checkbox"]:checked::before { transform: scale(1); }
 .dinle { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; margin: 4px 0 18px; padding: 10px 0; border-top: 1px solid var(--cizgi); border-bottom: 1px solid var(--cizgi); }
 .dinle:empty { display: none; }
 .dinle .so-btn { min-height: 44px; padding: 6px 14px; font: 500 14px/1.2 var(--sans); }
+.dinle .so-ses { min-height: 44px; max-width: 100%; padding: 6px 8px; background: transparent; color: var(--parsomen); border: 1px solid var(--pirinc-soluk); border-radius: 8px; font: 500 14px var(--sans); }
 .dinle .so-hiz { min-height: 44px; padding: 6px 8px; background: transparent; color: var(--parsomen); border: 1px solid var(--pirinc-soluk); border-radius: 8px; font: 500 14px var(--sans); }
 .so-konum { font: 500 13px var(--sans); color: var(--soluk); font-variant-numeric: tabular-nums; }
 .so-mesaj { font: 400 14px/1.45 var(--sans); color: var(--soluk); }

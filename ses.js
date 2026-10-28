@@ -85,7 +85,15 @@
     try { sesler = s ? (s.getVoices() || []) : []; } catch (e) { sesler = []; }
     if (sesler.length) seslerBilinir = true;
   }
+  /* Kullanıcının seçtiği ses (okuma çubuğundaki ses seçici): voiceURI ya da ad ile saklanır.
+     Telefonun motoru ElevenReader gibi birden çok ses veriyorsa sesi uygulamanın içinden seçebilsin (Kaan, 28.10.2026). */
+  const sesKimlik = v => String(v.voiceURI || v.name || '');
+  function secilenSes() {
+    const k = U.oku('sesAdi', null);
+    return k ? sesler.find(v => v && sesKimlik(v) === k) || null : null;
+  }
   function trSes() {
+    const sec = secilenSes(); if (sec) return sec;
     const tr = sesler.filter(v => v && /^tr([-_]|$)/i.test(String(v.lang || '')));
     return tr.find(v => v.localService && v.default) || tr.find(v => v.localService) || tr.find(v => v.default) || tr[0] || null;
   }
@@ -286,16 +294,24 @@
     const h = hizOku();
     return '<select class="so-hiz" aria-label="Okuma hızı">' + HIZLAR.map(v => '<option value="' + v + '"' + (v === h ? ' selected' : '') + '>' + String(v).replace('.', ',') + '×</option>').join('') + '</select>';
   }
+  /* Yalnız Türkçe sesler: Android'de Chrome her dil/bölge için bir giriş verir (Kaan'ın telefonunda ElevenReader ile
+     878 giriş, 3'ü Türkçe: "Türkçe", "Türkçe Kıbrıs", "Türkçe Türkiye"); öbür diller ses kişisi değil dil adı. */
+  function sesSecHtml() {
+    const tr = sesler.filter(v => v && /^tr([-_]|$)/i.test(String(v.lang || '')));
+    if (tr.length < 2) return '';
+    const v0 = trSes(), k0 = v0 ? sesKimlik(v0) : '';
+    return '<select class="so-ses" aria-label="Okuyan ses">' + tr.map(v => '<option value="' + U.kacis(sesKimlik(v)) + '"' + (sesKimlik(v) === k0 ? ' selected' : '') + '>' + U.kacis(v.name) + '</option>').join('') + '</select>';
+  }
   function cubukHtml() {
     const d = sesDurumu();
     if (d === 'bekleniyor') return '';
     if (d === 'yok-api') return '<span class="so-mesaj">Bu tarayıcı sesli okumayı desteklemiyor.</span>';
     if (d === 'yok-tr') return '<span class="so-mesaj">Bu cihazda Türkçe ses bulunamadı. Chrome yalnız telefonun varsayılan metin okuma motorunun seslerini kullanır; ayarlardaki "Metin okuma" bölümünden Türkçe destekleyen bir motor seçip Türkçe ses verisini yükleyebilirsin.</span>';
-    if (!ot) return '<button type="button" class="dugme dolu so-btn" data-so="dinle">' + U.kacis(baglam.dugme || 'Dinle') + '</button>' + hizSecHtml();
+    if (!ot) return '<button type="button" class="dugme dolu so-btn" data-so="dinle">' + U.kacis(baglam.dugme || 'Dinle') + '</button>' + hizSecHtml() + sesSecHtml();
     return (ot.durum === 'oynuyor'
       ? '<button type="button" class="dugme so-btn" data-so="duraklat">Duraklat</button>'
       : '<button type="button" class="dugme dolu so-btn" data-so="devam">Devam</button>') +
-      '<button type="button" class="dugme so-btn" data-so="durdur">Durdur</button>' + hizSecHtml() +
+      '<button type="button" class="dugme so-btn" data-so="durdur">Durdur</button>' + hizSecHtml() + sesSecHtml() +
       '<span class="so-konum" aria-live="off">' + (ot.i + 1) + ' / ' + ot.birimler.length + '</span>';
   }
   function taniHtml() {
@@ -311,7 +327,7 @@
     const acik = !!c.querySelector('details.so-tani[open]');
     /* Basılan düğme (Dinle → Duraklat → Devam) yeniden çizimde silinir: odak body'ye düşmesin, eşdeğerine geçsin */
     const odak = document.activeElement && c.contains(document.activeElement) ? document.activeElement : null;
-    const odakSo = odak && odak.dataset.so, odakSinif = odak && (odak.matches('.so-hiz') ? '.so-hiz' : odak.matches('details.so-tani > summary') ? 'details.so-tani > summary' : null);
+    const odakSo = odak && odak.dataset.so, odakSinif = odak && (odak.matches('.so-hiz') ? '.so-hiz' : odak.matches('.so-ses') ? '.so-ses' : odak.matches('details.so-tani > summary') ? 'details.so-tani > summary' : null);
     c.innerHTML = html; c.dataset.soHtml = html;
     if (acik) { const d = c.querySelector('details.so-tani'); if (d) d.open = true; }
     if (odak) {
@@ -364,6 +380,14 @@
       else if (a === 'tani-kopya') { try { navigator.clipboard.writeText(gunlukMetni()); } catch (h) { /* pano yok */ } }
     });
     cubuk.addEventListener('change', e => {
+      if (e.target.classList.contains('so-ses')) {
+        const v = sesler.find(x => x && sesKimlik(x) === e.target.value); if (!v) return;
+        U.yaz('sesAdi', sesKimlik(v)); kaydet('ses seçildi', v.name + ' (' + v.lang + ')');
+        if (ot && ot.durum === 'oynuyor') konus();   // yeni ses çalan parçadan itibaren
+        else if (!ot) soyle('Bu sesle okuyacağım.');   // dinlemeden seçilmesin: kısa örnek
+        ciz();
+        return;
+      }
       if (!e.target.classList.contains('so-hiz')) return;
       const v = parseFloat(e.target.value);
       if (HIZLAR.indexOf(v) < 0) return;

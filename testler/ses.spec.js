@@ -489,3 +489,32 @@ test('(y) Gökyüzüne bak: sesli yön tarifi hedefi söyler, ortalanınca "tam 
   await yonVer(page, ((6.08 - 132.5) % 360 + 360) % 360, 90 + 39.5, 0);
   await expect.poll(() => konusmalar(page).then(k => k[k.length - 1])).toBe('Satürn tam karşında.');
 });
+
+test('Ses seçici: yalnız Türkçe sesler; seçilen ses saklanır ve çalan parçadan itibaren kullanılır', async ({ page }) => {
+  const sesler = [
+    { name: 'Türkçe', lang: 'tr', localService: true, default: false, voiceURI: 'tr-a' },
+    { name: 'Türkçe Kıbrıs', lang: 'tr-CY', localService: true, default: false, voiceURI: 'tr-b' },
+    { name: 'Türkçe Türkiye', lang: 'tr-TR', localService: true, default: false, voiceURI: 'tr-c' },
+    { name: 'English United States', lang: 'en-US', localService: true, default: true, voiceURI: 'en-a' }
+  ];
+  await sahteOrtam(page, { sesler });
+  await dersAc(page);
+  const sec = cubuk(page).locator('.so-ses');
+  await expect(sec.locator('option')).toHaveText(['Türkçe', 'Türkçe Kıbrıs', 'Türkçe Türkiye']);
+  expect((await sec.boundingBox()).height).toBeGreaterThanOrEqual(44);
+  await sec.selectOption('tr-c');   // okumadan önce: kısa örnek
+  await expect.poll(() => page.evaluate(() => window.__sahteSes.kayit.map(k => k.ses))).toEqual(['Türkçe Türkiye']);
+  await cubuk(page).locator('[data-so="dinle"]').click();
+  await expect.poll(() => page.evaluate(() => window.__sahteSes.kayit.slice(-1)[0].ses)).toBe('Türkçe Türkiye');
+  await cubuk(page).locator('.so-ses').selectOption('tr-b');
+  await expect.poll(() => page.evaluate(() => window.__sahteSes.kayit.slice(-1)[0].ses)).toBe('Türkçe Kıbrıs');
+  await page.goto('/index.html#ders/d9');
+  await expect(cubuk(page).locator('.so-ses')).toHaveValue('tr-b');
+});
+
+test('Ses seçici tek Türkçe seste görünmez', async ({ page }) => {
+  await sahteOrtam(page);
+  await dersAc(page);
+  await expect(cubuk(page).locator('[data-so="dinle"]')).toBeVisible();
+  expect(await cubuk(page).locator('.so-ses').count()).toBe(TR.filter(v => /^tr/i.test(v.lang)).length >= 2 ? 1 : 0);
+});
