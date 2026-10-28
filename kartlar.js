@@ -48,7 +48,7 @@
   function bugunku(D, hepsi, simdi) {
     const r = kayit(), t = simdi || Date.now();
     const e = id => giris(r, id);
-    return deste(D, hepsi).filter(k => !e(k.id) || e(k.id).z <= gunBasi(t) + 86400e3 - 1)
+    return deste(D, hepsi).filter(k => !e(k.id) || e(k.id).z <= gunSonra(t, 1) - 1)   // gün sonu takvimle (23/25 saatlik gün)
       .sort((a, b) => ((e(a.id) || { k: 0 }).k - (e(b.id) || { k: 0 }).k) || ((e(a.id) || { z: 0 }).z - (e(b.id) || { z: 0 }).z));
   }
   function cevapla(id, bildi, simdi) {

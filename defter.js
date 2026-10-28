@@ -399,7 +399,7 @@
   /* #defter ya da #defter/yeni/<anahtar> */
   function goster(kok, param) {
     if (!veri) return;
-    if ((param || '').split('/')[0] === 'gorevler' && window.Gorevler) { gorevAcik = true; Gorevler.ciz(el, veri); return; }
+    if ((param || '').split('/')[0] === 'gorevler' && window.Gorevler) { gorevAcik = true; Promise.resolve(Gorevler.ciz(el, veri)).catch(e => { el.innerHTML = '<a class="geri" href="#defter">Defter</a><div class="hata-kutu" role="alert">Görevler hazırlanamadı: ' + U.kacis(e && e.message || e) + '</div>'; }); return; }
     if (gorevAcik || !el.querySelector('#dfListe')) { gorevAcik = false; iskelet(); }
     listeYaz();
     const p = (param || '').split('/');

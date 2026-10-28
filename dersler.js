@@ -49,6 +49,7 @@
 
   function liste() {
     gomuluDurdur();
+    if (sinavOturum && sinavOturum.kaydedildi) sinavOturum = null;   // bitmiş sınava listeden yeniden girilince yeni sınav
     const b = biten();
     const sira = sirali();
     const sayi = sira.filter(x => b[x.id]).length;
@@ -204,6 +205,9 @@
     return u && sinavSorulari(u.id).length ? `<a class="dugme" href="#ders/sinav/${u.id}">Ünite sınavı: ${U.kacis(u.ad)}</a>` : '';
   }
   let sinavOturum = null;
+  /* Sekme değişince bekleyen kart zamanlayıcıları (düşünme sayacı, yeniden deneme) geçersizleşir: gizli
+     bölümde cevap açılıp sesli okunmasın. Geri dönünce kart yeniden çizilir. */
+  window.addEventListener('hashchange', () => { if (!/^#ders\/kartlar/.test(location.hash)) kartSayac++; });
   function karistir(ls) { const a = ls.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
   function sinav(uid) {
     gomuluDurdur();
@@ -338,6 +342,7 @@
       }, 1000);
     };
     const sorOku = (deneme) => {
+      if (!U.oku('kartSesli', false)) return;   // bu arada sesli tekrar kapatıldıysa okunmaz
       const oldu = Ses.soyle(k.on + (k.tur === 'sayi' ? '. Değeri ne?' : (k.tur === 'terim' ? '. Ne demek?' : '')) + (k.secenekler ? ' ' + k.secenekler.map((x, i) => HARF[i] + ': ' + x + '.').join(' ') : ''), { bitince: sayacBaslat });
       /* sesler henüz yüklenmediyse bir kez daha dene; yine olmazsa sayaç sessiz başlar */
       if (!oldu && !deneme) setTimeout(() => { if (kartNo === kartSayac && cevir.isConnected) sorOku(true); }, 1700);

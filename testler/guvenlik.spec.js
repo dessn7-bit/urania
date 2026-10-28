@@ -122,7 +122,7 @@ test('Depo dolunca yeniden indirilebilen önbellekler silinip kullanıcı verisi
   await page.goto('/index.html#hesap');
   const sonuc = await page.evaluate(() => {
     const asil = Storage.prototype.setItem; let ilk = true;
-    Storage.prototype.setItem = function (k, v) { if (k === 'urania_dersBitti' && ilk && localStorage.getItem('urania_gp_dizi') !== null) { ilk = false; throw new DOMException('dolu', 'QuotaExceededError'); } return asil.call(this, k, v); };
+    Storage.prototype.setItem = function (k, v) { if (k === 'urania_dersBitti' && localStorage.getItem('urania_gp_dizi') !== null) { ilk = false; throw new DOMException('dolu', 'QuotaExceededError'); } return asil.call(this, k, v); };
     const ok = Urania.yaz('dersBitti', { d1: 1 });
     return { ok, onbellek: localStorage.getItem('urania_gp_dizi') };
   });

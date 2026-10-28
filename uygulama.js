@@ -20,14 +20,18 @@
   /* true: yazıldı; false: depo dolu/kapalı — çağıran kullanıcıya söylemeli (defter gibi) */
   /* Depo dolunca (köken aynı adresteki başka uygulamalarla paylaşılıyor) yeniden indirilebilen önbellekler
      silinip bir kez daha denenir; kullanıcı verisi (defter, kartlar, ayarlar) silinmez. */
-  const ONBELLEK_ONEK = ['gp_', 'hava2_', 'hava_', 'yerAdlari', 'sesGunluk'];
+  /* Silme sırası: en az değerli önce (tanı günlüğü, yer adları, hava; yörünge verisi en son) */
+  const ONBELLEK_ONEK = ['sesGunluk', 'yerAdlari', 'hava_', 'hava2_', 'gp_'];
   function yaz(anahtar, deger) {
     const m = JSON.stringify(deger);
     try { localStorage.setItem(DEPO_ONEK + anahtar, m); return true; } catch (e) { /* aşağıda */ }
-    try {
-      ONBELLEK_ONEK.forEach(o => { if (anahtar.indexOf(o) !== 0) anahtarlar(o).forEach(a => localStorage.removeItem(DEPO_ONEK + a)); });
-      localStorage.setItem(DEPO_ONEK + anahtar, m); return true;
-    } catch (e) { return false; }
+    /* Yazılamayan şey kendisi bir önbellekse başka önbellek silinmez (günlük yüzünden yörünge verisi gitmesin) */
+    if (ONBELLEK_ONEK.some(o => anahtar.indexOf(o) === 0)) return false;
+    for (const o of ONBELLEK_ONEK) {
+      anahtarlar(o).forEach(a => { try { localStorage.removeItem(DEPO_ONEK + a); } catch (h) { /* yok */ } });
+      try { localStorage.setItem(DEPO_ONEK + anahtar, m); return true; } catch (e) { /* sıradaki önbellek */ }
+    }
+    return false;
   }
   /* Ön ekli anahtarları süz (önbellek temizliği için) */
   function anahtarlar(onek) {
@@ -157,7 +161,7 @@
   const SON_KELIME = { 0: 'sıfır', 1: 'bir', 2: 'iki', 3: 'üç', 4: 'dört', 5: 'beş', 6: 'altı', 7: 'yedi', 8: 'sekiz', 9: 'dokuz',
     10: 'on', 20: 'yirmi', 30: 'otuz', 40: 'kırk', 50: 'elli', 60: 'altmış', 70: 'yetmiş', 80: 'seksen', 90: 'doksan', 100: 'yüz', 1000: 'bin' };
   function sonOkunus(metin) {
-    const m = String(metin).match(/(\d+)(?::(\d+))?\D*$/);
+    const m = String(metin).replace(/(\d)\.(?=\d{3}(?!\d))/g, '$1').match(/(\d+)(?::(\d+))?\D*$/);
     if (!m) return 'bir';
     let n = m[2] != null ? (Number(m[2]) || Number(m[1])) : Number(m[1]);
     if (n === 0) return 'sıfır';
@@ -250,22 +254,25 @@
     if (yeniBolum) { window.scrollTo(0, 0); rota.son = bolum; }
     el.querySelectorAll(':scope > .hata-kutu.bolum-hata').forEach(x => x.remove());
     const m = moduller[bolum];
-    const hataGoster = e => {
+    const hataGoster = (e, ilkHatasi) => {
       console.error(e);
-      ilkKurulan[bolum] = false;   // bölüme yeniden gelince baştan kurulmayı denesin
+      if (ilkHatasi) ilkKurulan[bolum] = false;   // kurulum başarısızsa bölüme yeniden gelince baştan kurulmayı denesin (goster hatasında değil: çift dinleyici olmasın)
       el.querySelectorAll(':scope > .hata-kutu.bolum-hata').forEach(x => x.remove());
       el.insertAdjacentHTML('beforeend', '<div class="hata-kutu bolum-hata" role="alert">Bu bölüm açılırken hata oluştu: ' + kacis(e && e.message || e) + '. Başka bir sekmeye geçip geri dönünce yeniden denenir.</div>');
     };
-    try {
-      if (!ilkKurulan[bolum]) {
-        ilkKurulan[bolum] = true;
+    let ilkSoz = null;
+    if (!ilkKurulan[bolum]) {
+      ilkKurulan[bolum] = true;
+      try {
         /* ilk() async: reddi try/catch'e düşmez, ayrıca yakalanır */
         const sonuc = m.ilk && m.ilk(el);
         /* ilk() false dönerse (veri yüklenemedi) bölüm bir sonraki açılışta yeniden kurulur */
-        if (sonuc && sonuc.then) sonuc.then(v => { if (v === false) ilkKurulan[bolum] = false; }, hataGoster);
-      }
-      m.goster && m.goster(el, param);
-    } catch (e) { hataGoster(e); }
+        if (sonuc && sonuc.then) ilkSoz = sonuc.then(v => { if (v === false) ilkKurulan[bolum] = false; }, e => hataGoster(e, true));
+      } catch (e) { hataGoster(e, true); }
+    }
+    try { m.goster && m.goster(el, param); } catch (e) { hataGoster(e, false); }
+    /* İlk açılışta başlık eşzamansız çizilir: kurulum bitince odak yine başlığa (bölüm kendi odağını kurmadıysa) */
+    if (ilkSoz && yeniBolum && !ilkAcilis && bolum !== 'ar') ilkSoz.then(() => { if (rota.son === bolum && !el.contains(document.activeElement)) baslikOdak(el); });
     /* Sekme değişince odak yeni bölümün başlığına (ekran okuyucu yeni sayfayı duyurur); bölüm kendi odağını kurduysa dokunma */
     if (yeniBolum && !ilkAcilis && bolum !== 'ar' && !el.contains(document.activeElement)) baslikOdak(el);
     /* Bölüm içinde görünüm değiştiyse ve görünüm kendi odağını kurmadıysa (ders ve sınav kurar) odak yeni başlığa.
@@ -348,13 +355,16 @@
     if (!zorla && !otoAcik()) return Promise.resolve(null);
     if (!('geolocation' in navigator)) { konumDurum.hata = 'desteklenmiyor'; konumBildir(); return Promise.resolve(null); }
     if (konumAraniyor) return konumAraniyor;
-    konumAraniyor = new Promise(coz => {
-      /* İzin sorusu hiç yanıtlanmazsa söz takılı kalmasın: 30 sn sonra serbest bırak */
-      const bekci = setTimeout(() => { konumAraniyor = null; coz(null); }, 30e3);
+    let bu = null, bitti = false;
+    /* Yalnız kendi sözünü temizler: bekçiden sonra başlayan yeni aramanın sözü eski aramanın geç yanıtıyla silinmesin */
+    const bitir = () => { bitti = true; if (konumAraniyor === bu) konumAraniyor = null; };
+    bu = konumAraniyor = new Promise(coz => {
+      /* İzin sorusu hiç yanıtlanmazsa söz takılı kalmasın: 30 sn sonra serbest bırak; geç gelen yanıt yok sayılır */
+      const bekci = setTimeout(() => { bitir(); coz(null); }, 30e3);
       navigator.geolocation.getCurrentPosition(async pos => {
         clearTimeout(bekci);
         /* Bu arada kullanıcı elle konum seçtiyse geç gelen GPS onu ezmesin */
-        if (!otoAcik() && !zorla) { konumAraniyor = null; coz(null); return; }
+        if (!otoAcik()) { bitir(); coz(null); return; }
         const c = pos.coords;
         const once = konum();
         const yeni = { enlem: +c.latitude.toFixed(4), boylam: +c.longitude.toFixed(4) };
@@ -370,13 +380,13 @@
           const simdi = konum();
           if (ad && simdi.oto && mesafeKm(simdi, yeni) < 0.5) { konumYaz(Object.assign({}, simdi, { ad })); konumBildir(); }
         }
-        konumAraniyor = null; coz(konum());
+        bitir(); coz(konum());
       }, err => {
         clearTimeout(bekci);
         konumDurum.hata = err.code === 1 ? 'izin' : 'alinamadi';
         T('GPS konumu', 'hata', (err.code === 1 ? 'izin yok' : err.code === 2 ? 'konum yok' : 'zaman aşımı') + ' · ' + err.message);
         konumDurum.kaynak = konum().oto ? 'son' : null;
-        konumAraniyor = null; konumBildir(); coz(null);
+        bitir(); konumBildir(); coz(null);
       }, { enableHighAccuracy: false, timeout: 15000, maximumAge: 5 * 60e3 });
     });
     return konumAraniyor;

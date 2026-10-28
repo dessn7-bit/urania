@@ -117,3 +117,33 @@ test('Tanı raporu bozuk uydu önbelleğinde de üretilir', async ({ page }) => 
   await expect(page.locator('#tnRapor')).toContainText('SERVİSLER');
   expect(page.hatalar).toEqual([]);
 });
+
+test('Ek: binlik ayraçlı sayıya doğru ek; bulut çubuğu alttan yükselir', async ({ page }) => {
+  await kur(page);
+  await page.goto('/index.html#hesap');
+  expect(await page.evaluate(() => Urania.ek('3.000', 'de'))).toBe("3.000'de");
+  const r = await page.evaluate(() => {
+    const d = document.createElement('div'); d.innerHTML = '<div class="hava-iz"><div class="hava-dolu" style="height:30%"></div></div>';
+    document.body.appendChild(d); const iz = d.firstChild.getBoundingClientRect(), dolu = d.firstChild.firstChild.getBoundingClientRect(); d.remove();
+    return Math.round(iz.bottom - dolu.bottom);
+  });
+  expect(r).toBe(0);
+});
+
+test('Kart sesli tekrar: başka sekmeye geçince düşünme sayacı durur, cevap gizli bölümde açılmaz', async ({ page }) => {
+  await kur(page, { kartSesli: 'true', dersBitti: JSON.stringify({ d1: Date.now() }) });
+  await page.addInitScript(() => {
+    window.__soylenen = [];
+    const ss = { speaking: false, pending: false, paused: false, getVoices: () => [{ lang: 'tr-TR', name: 'tr', localService: true, default: true }],
+      speak(u) { window.__soylenen.push(u.text); setTimeout(() => { u.onstart && u.onstart(); u.onend && u.onend(); }, 10); }, cancel() {}, pause() {}, resume() {}, addEventListener() {}, removeEventListener() {} };
+    Object.defineProperty(window, 'speechSynthesis', { value: ss, configurable: true });
+    window.SpeechSynthesisUtterance = function (t) { this.text = t; };
+  });
+  await page.goto('/index.html#ders/kartlar');
+  await expect(page.locator('#kaCevir')).toContainText('(', { timeout: 5000 });
+  await page.evaluate(() => { location.hash = '#gok'; });
+  const once = await page.evaluate(() => window.__soylenen.length);
+  await page.clock.runFor(12000);
+  expect(await page.evaluate(() => document.querySelector('#kaArka') && document.querySelector('#kaArka').hidden)).toBe(true);
+  expect(await page.evaluate(() => window.__soylenen.length)).toBe(once);
+});
