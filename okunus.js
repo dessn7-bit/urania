@@ -145,8 +145,11 @@
     });
     /* Sayı + birim (üslü sayı ve "milyon km" da: "10²⁶ W"); ek açılmış birime uydurulur ("5772 K'ye" → kelvine) */
     const sayiBirim = () => {
-      t = t.replace(new RegExp('(\\d[⁰¹²³⁴⁵⁶⁷⁸⁹⁻]*\\s?|(?<![' + H + '])(?:bin|milyon|milyar|trilyon)\\s)(' + UD + ')' + EK + SON, 'g'), (m, n, b, ek) => {
-        const o = ekli(birimOku(b, !/[/\s]/.test(b)), ek);
+      t = t.replace(new RegExp('(\\d[⁰¹²³⁴⁵⁶⁷⁸⁹⁻]*\\s?|(?<![' + H + '])(?:bin|milyon|milyar|trilyon)\\s)(' + UD + ')' + EK + SON, 'g'), (m, n, b, ek, yer, tum) => {
+        /* Tek başına "g": tablolarda gün ("88 g ·"), metinde gram ("245 g helyum") */
+        let tek = !/[/\s]/.test(b);
+        if (tek && b === 'g' && !ek) { const sonra = tum.slice(yer + m.length).replace(/^\s+/, ''); if (sonra && !/^[·,;()]/.test(sonra)) tek = false; }
+        const o = ekli(birimOku(b, tek), ek);
         return o ? n.trim() + ' ' + o : m;
       });
     };
@@ -182,7 +185,7 @@
       const s = u.split('').map(c => UST[c]).join('');
       return a + ' üzeri ' + (s[0] === '-' ? 'eksi ' + s.slice(1) : s);
     });
-    t = t.replace(/\^\s?(-?[\d,]+)/g, (m, s) => ' üzeri ' + (s[0] === '-' ? 'eksi ' + s.slice(1) : s));
+    t = t.replace(/\^\s?(-?[\d,]+)/g, (m, s) => ' üzeri ' + (s[0] === '-' ? 'eksi ' + s.slice(1) : s)).replace(/\^\s?\(/g, ' üzeri (');
     sayiBirim();
     /* Yunan harfleri ve alt çizgi */
     t = t.replace(/[α-ωΑ-Ω]/g, h => YUNAN[h] ? ' ' + YUNAN[h] + ' ' : h);

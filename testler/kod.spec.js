@@ -93,3 +93,27 @@ test('Örtme: dilimin son saatinde başlayan pencere kesilmez (Tokyo, Nandou 202
   expect(bul.length).toBe(1);
   expect(!!bul[0].giris).toBe(!!ref.giris); expect(!!bul[0].cikis).toBe(!!ref.cikis);
 });
+
+test('Sesli okuma: metindeki "245 g helyum" gram, tablodaki "88 g ·" gün; "^(" okunur', () => {
+  const o = require('../okunus.js').okunus;
+  expect(o('1 kg sıradan madde al: 245 g helyum, 755 g hidrojen.')).toBe('1 kilogram sıradan madde al: 245 gram helyum, 755 gram hidrojen.');
+  expect(o('88 g · 365 g')).toBe('88 gün, 365 gün');
+  expect(o('10^(0,4×Δm)')).not.toContain('^');
+});
+
+test('AR: "Bul" penceresi açıkken başka sekmeye geçilince pencere kapanır, sayfa tıklanabilir kalır', async ({ page }) => {
+  await kur(page);
+  await page.goto('/index.html#ar');
+  await page.waitForSelector('#arArama', { state: 'attached' });
+  await page.evaluate(() => document.getElementById('arArama').showModal());
+  await page.evaluate(() => { location.hash = '#tani'; });
+  await expect.poll(() => page.evaluate(() => document.getElementById('arArama').open)).toBe(false);
+  await page.locator('#tnYenile').click({ timeout: 3000 });
+});
+
+test('Tanı raporu bozuk uydu önbelleğinde de üretilir', async ({ page }) => {
+  await kur(page, { gp_istasyon: JSON.stringify({ ls: [null], alindi: 'bozuk' }) });
+  await page.goto('/index.html#tani');
+  await expect(page.locator('#tnRapor')).toContainText('SERVİSLER');
+  expect(page.hatalar).toEqual([]);
+});

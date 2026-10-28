@@ -46,7 +46,7 @@
     const ar = window.UraniaAR ? window.UraniaAR.st : null;
     const defter = (U.oku('defter', []) || []).length;
     let gpI = U.oku('gp_istasyon', null), gpD = U.oku('gp_dizi', null);
-    if (!gpI || !Array.isArray(gpI.ls)) gpI = null;
+    if (!gpI || !Array.isArray(gpI.ls) || !Number.isFinite(gpI.alindi)) gpI = null;
     if (!gpD || !Array.isArray(gpD.diziler)) gpD = null;
     const satir = [
       'URANIA TANI — ' + new Date().toISOString(),
@@ -65,7 +65,7 @@
       '',
       'SERVİSLER:',
       ...Object.keys(servisler).map(a => '  ' + a + ': ' + servisler[a].durum + ' · ' + servisler[a].zaman.slice(11, 19) + (servisler[a].ayrinti ? ' · ' + servisler[a].ayrinti : '')),
-      '  Uydu öğeleri: ' + (gpI ? gpI.ls.map(o => o.OBJECT_NAME + ' ' + String(o.EPOCH).slice(0, 16)).join(', ') + ' · alındı ' + new Date(gpI.alindi).toISOString().slice(0, 16) : '—') +
+      '  Uydu öğeleri: ' + (gpI ? gpI.ls.filter(o => o && o.OBJECT_NAME).map(o => o.OBJECT_NAME + ' ' + String(o.EPOCH).slice(0, 16)).join(', ') + ' · alındı ' + new Date(gpI.alindi).toISOString().slice(0, 16) : '—') +
         ' · Starlink dizisi: ' + (gpD ? (gpD.diziler.map(d => d.kod + ' (' + d.adet + ', ' + d.yukseklik + ' km)').join(', ') || 'yok') : '—'),
       '',
       'DEPO: ' + depo + ' · defter ' + defter + ' kayıt',

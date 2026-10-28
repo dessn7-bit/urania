@@ -208,11 +208,12 @@
       st.R = eulerdenMatris(-st.az0, 90 + st.alt0, 0);
     });
     cv.addEventListener('pointerup', e => {
-      if (surukle && surukle.hareket < 8) dokunusTanimla(e.clientX, e.clientY);
-      surukle = null;
+      /* Yalnız sürüklemeyi başlatan parmak ve kıstırma olmadıysa dokunuş sayılır */
+      if (surukle && e.pointerId === surukle.id && !surukle.kistirildi && surukle.hareket < 8) dokunusTanimla(e.clientX, e.clientY);
+      if (!surukle || e.pointerId === surukle.id) surukle = null;
     });
     cv.addEventListener('touchstart', e => {
-      if (e.touches.length === 2) kistirma = { d: mesafe(e.touches), g: st.gorus };
+      if (e.touches.length === 2) { kistirma = { d: mesafe(e.touches), g: st.gorus }; if (surukle) surukle.kistirildi = true; }
     }, { passive: true });
     cv.addEventListener('touchmove', e => {
       if (kistirma && e.touches.length === 2) st.gorus = Math.max(15, Math.min(110, kistirma.g * kistirma.d / mesafe(e.touches)));
@@ -256,15 +257,17 @@
       st.uyduGecis = st.uydular.map(u => { try { return Uydu.yakinGecis(u, k, an); } catch (h) { return null; } });
       st.issZaman = an;
     }
-    if (!st.sapmaHesaplandi && window.Geomag) {
+    /* Manyetik sapma konuma bağlı: GPS ilk konumu sonradan gelirse yeniden hesaplanır */
+    const sapmaYer = k.enlem.toFixed(1) + '|' + k.boylam.toFixed(1);
+    if ((!st.sapmaHesaplandi || st.sapmaYer !== sapmaYer) && window.Geomag) {
       try { st.sapma = window.Geomag.sapma(k.enlem, k.boylam, an); } catch (h) { st.sapma = 0; }
-      st.sapmaHesaplandi = true;
+      st.sapmaHesaplandi = true; st.sapmaYer = sapmaYer;
     }
   }
 
   /* ---------- Çizim ---------- */
   function renk(ad) { return getComputedStyle(document.documentElement).getPropertyValue(ad).trim(); }
-  let olcu = null, isabet = [];
+  let isabet = [];
 
   function ciz() {
     if (!calisiyor) return;
@@ -278,7 +281,6 @@
     const f = (H / 2) / Math.tan(st.gorus / 2 * DER);
     const R = st.R, ang = yansitmaAcisi() * DER, cA = Math.cos(ang), sA = Math.sin(ang);
     const cx = W / 2, cy = H / 2;
-    olcu = { W, H, f };
     isabet = [];
 
     /* ENU vektörü → ekran (arkadaysa null) */
@@ -471,7 +473,7 @@
     if (Math.hypot(x, y) < 1e-6) x = 1;
     const a = Math.atan2(-y, x);
     /* Ok, nişangâhın çevresindeki bir çemberde: üst menü ve alt bilgiyle çakışmaz */
-    const yc = Math.min(W / 2 - 40, H / 2 - 170, 140);
+    const yc = Math.max(40, Math.min(W / 2 - 40, H / 2 - 170, 140));   // yatay ekranda eksiye düşüp ok ters yana geçmesin
     const ox = cx + Math.cos(a) * yc, oy = cy + Math.sin(a) * yc;
     ctx.save(); ctx.translate(ox, oy); ctx.rotate(a);
     ctx.beginPath(); ctx.moveTo(22, 0); ctx.lineTo(-10, -15); ctx.lineTo(-4, 0); ctx.lineTo(-10, 15); ctx.closePath(); ctx.fill();
@@ -763,7 +765,7 @@
     el.querySelector('#arHizalaDugme').addEventListener('click', hizalamaBaslat);
     el.querySelector('#arOrtaladim').addEventListener('click', hizalamaBitir);
     el.querySelector('#arHizalaIptal').addEventListener('click', () => { el.querySelector('#arHizala').hidden = true; });
-    el.querySelector('#arHizalaSifirla').addEventListener('click', () => { st.kal = 0; U.yaz('arKalibrasyon', 0); st.R = null; el.querySelector('#arHizala').hidden = true; durumYaz('Hizalama sıfırlandı.'); });
+    el.querySelector('#arHizalaSifirla').addEventListener('click', () => { st.kal = 0; if (st.manyetik) U.yaz('arKalibrasyon', 0);   /* göreli modda kayıtlı (pusulalı) hizalama silinmez */ st.R = null; el.querySelector('#arHizala').hidden = true; durumYaz('Hizalama sıfırlandı.'); });
     el.querySelector('#arKamera').addEventListener('click', () => kameraAc(!st.kamera));
     el.querySelector('#arHedefKapat').addEventListener('click', () => { st.hedef = null; el.querySelector('#arHedefSerit').hidden = true; if (window.Ses) Ses.sus(); });
     const sesli = el.querySelector('#arSesli');
@@ -828,7 +830,7 @@
     st.izinVerildi = false; st.sonMutlak = 0; st.iosOfset = null; st.manyetik = true; st.kal = kalOku();
     tarifIsaret = { hedef: null, s: 0 };
     nesneleriYenile();
-    sayac = setInterval(() => { nesneleriYenile(); sesliCiz(); }, 1000);
+    sayac = setInterval(() => { if (document.hidden) return; nesneleriYenile(); sesliCiz(); }, 1000);   // arka planda boşuna hesaplanmasın
     algilayicilariBaslat();
     durumYaz();
     kilitIste();
@@ -838,6 +840,9 @@
     if (!calisiyor) return;
     calisiyor = false;
     document.body.classList.remove('ar-acik');
+    /* Açık kalan "Bul" penceresi (modal) başka sekmede sayfayı tıklanamaz bırakmasın */
+    const d = el && el.querySelector('#arArama'); if (d && d.open) d.close();
+    const hz = el && el.querySelector('#arHizala'); if (hz) hz.hidden = true;
     cancelAnimationFrame(kare); clearInterval(sayac);
     algilayicilariDurdur();
     kameraAc(false);

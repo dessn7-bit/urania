@@ -60,7 +60,7 @@
       if (s.length <= PARCA_TAVAN) { tampon = s; return; }
       let kalan = s;
       while (kalan.length > PARCA_TAVAN) {
-        let kes = kalan.lastIndexOf(', ', PARCA_TAVAN);
+        let kes = kalan.lastIndexOf(', ', PARCA_TAVAN - 1);   // +1 ile parça tavanı aşmasın
         if (kes < PARCA_TAVAN / 3) {
           kes = kalan.lastIndexOf(' ', PARCA_TAVAN);
           /* "11. ders" gibi sıra sayısının noktasından sonra bölme: parça "on bir." diye biter */
@@ -421,7 +421,8 @@
     sonraki();
     return true;
   }
-  let tekUtt = null;
+  /* Süren kısa konuşmanın referansı: bazı tarayıcılarda referanssız SpeechSynthesisUtterance çöpe gidip onend hiç gelmez */
+  let tekUtt = null; // eslint-disable-line no-unused-vars
   function sus() { tekJeton++; tekUtt = null; if (!ot) { try { motor() && motor().cancel(); } catch (e) { /* yok */ } } }
 
   /* ---------- kurulum ---------- */
