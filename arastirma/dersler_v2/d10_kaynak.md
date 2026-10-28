@@ -189,3 +189,140 @@ Tarih: 2026-10-27. Bağımsız doğrulama ajanı. Hesaplar python3 ile yeniden y
 | Soru 4 "dürbünle ancak özel güneş filtresi önüne sağlam takılmışsa" | https://science.nasa.gov/eclipses/safety/ | "without a special-purpose solar filter ... will instantly cause severe eye injury" (d9_kaynak.md [Ö] satırı) |
 | Kavram kontrolü: kavuşum formülü 1/S = 1/P − 1/Y doğru (aynı yönde dolanım); "dönmeseydi bütün yüzleri görürdük" doğru; "altı kat yükseğe zıplama" aynı kalkış hızı için h = v²/2g'den doğru; Ay tutulmasının kırmızılığı (saçılma + kırılma) doğru; tutulmanın her ay olmaması 5,145° eğiklikten, doğru | — | kavram denetimi, değişiklik yok |
 | Askıda kalan yok | — | — |
+
+## v3 genişletme (2026-10-28)
+
+WF = bu oturumda WebFetch ile okunan sayfa (alıntı WebFetch çıktısının aktardığı metin). Bütün yeni hesaplar python3 ile yapıldı. Kısaltma: NSSDC = https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html
+
+### Bölüm: Neden 27,3 değil de 29,5 gün? (eklemeler)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| 360/27,32 = 13,18°/gün; /24 = 0,55°/saat; Ay çapı ~0,52° | HESAP (27,3217: NSSDC; 0,52°: Bölüm 9 örneği) | — |
+| Ortalama her gün 50 dakika geç doğar, çünkü günde 13° ilerler; Dünya fazladan dönmeli | https://en.wikipedia.org/wiki/Moonrise_and_moonset (WF; arama sonucu) | "On average, the Moon rises 50 minutes later each day/night than the day/night before" ; "due to the fact that the Moon moves 13 degrees every day" ; "the Earth must move 13 degrees after completing one rotation for the Moon to be visible." |
+| Gecikme evreye, dik açıklığa, yere bağlı | aynı (WF) | times "depend on the lunar phase and declination, as well as the observer's location" |
+| 13°/15° saat başına ≈ 52 dk ("kabaca 50") | HESAP | 0,867 saat |
+| Drakonitik ay yıldızıldan biraz kısa, anomalistik biraz uzun | https://en.wikipedia.org/wiki/Solar_eclipse (WF) | draconic month "slightly shorter than the sidereal month" ; anomalistic month "slightly longer than the sidereal month" |
+
+### Yeni bölüm: Dolunay neden kışın yüksek, yazın alçak?
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Dolunay Güneş'in karşısında | NASA Moon Phases (Bölüm 1 satırı) | "The Moon is opposite the Sun, as viewed from Earth" |
+| Güneş Haziran'da +23,44°, Aralık'ta −23,44° | d1_kaynak.md (WP:Solstice) | June solstice Sun overhead at Tropic of Cancer (23.44° N); December at Tropic of Capricorn (23.44° S) |
+| Yörünge eğikliği 5,145° | NSSDC (Bölüm 9 satırı) | "5.145" |
+| Yükseklik = 90° − enlem + dik açıklık; İstanbul 49° | d11 ve d1 (d11 akilda: "İstanbul'dan yükseklik = 90° − 41° + dik açıklık") | — |
+| Haziran öğle Güneşi ~72° | d1_kaynak.md HESAP | 90 − (41,01 − 23,44) = 72,43 |
+| Örnek: 49 − 23,44 = 25,56; ±5,145 → 20,4–30,7; 49 + 23,44 = 72,44; 67,3–77,6; oran 2,83 | HESAP (dolunayın dik açıklığı Güneş'in tersi kabul edilerek; yaklaşık) | — |
+| Kış dolunayı uzun gecede yüksekte, yaz dolunayı kısa gecede alçakta | ÇIKARIM (yukarıdaki geometriden) | — |
+
+### Bölüm: Hep aynı yüz (eklemeler)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Yıldızıl dönme 655,72 saat | NSSDC (WF) | Sidereal rotation period "655.720 hrs" |
+| Güneş günü = kavuşum ayı 29,53 gün; ~14,8 gün gündüz | ÇIKARIM + HESAP (29,53: NSSDC) | 655,72/24 = 27,32 ; 29,53 × 24 = 708,7 ; 29,53/2 = 14,77 |
+| Bütün büyük uydular kilitli; Plüton-Charon karşılıklı; ötegezegenler; Ay hâlâ hafif futbol topu biçiminde | https://science.nasa.gov/moon/tidal-locking/ (WF) | "All the solar system's large moons are tidally locked with their planets." ; "Pluto and its moon Charon (grey) have already become tidally locked to one another." ; "evidence is building that many planets beyond our solar system are tidally locked with their stars." ; "Earth's gravitational pull distorts the Moon into a slight football shape even today." |
+| ~50 milyar yıl sonra Dünya da kilitlenirdi (Güneş önce ölmezse) | aynı (WF) | "About 50 billion years from now" ... "the Moon would be so far away, and its orbit so large, that Earth would also tidally lock to the Moon." (if the Sun doesn't die first) |
+| Güneş'in ~5 milyar yıl ömrü kaldı | d5.json (NASA: "yaklaşık 5 milyar yıl daha") | — |
+| Örnek: 360/29,53 = 12,19°/gün; /24 = 0,508°/saat; Dünya'da 0,5°/15° = 2 dakika | HESAP (Güneş ~0,5°: WP Solar eclipse "0.5 degree of arc") | — |
+
+### Bölüm: Ay'ı tanı (ekleme)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Kurtulma hızı 2,38 km/s; yörünge hızı 1,022 (en çok 1,082, en az 0,970) km/s | NSSDC (WF) | Escape velocity "2.38" ; Mean orbital velocity "1.022" ; Max "1.082" ; Min "0.970" (km/s) |
+| Kurtulma hızı tanımı; Kepler'in ikinci yasası | d3 | — |
+| Boylam librasyonu hız farkından | WP:Libration (Bölüm 4 satırı) | "results from the eccentricity of the orbit" |
+
+### Bölüm: Denizler, kraterler ve buz (ekleme)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| 13 Mart 1610; 20× büyütme; parlak bölgeler dağlık, koyu bölgeler düz ve alçak; terminatör koyu bölgede düzgün, parlakta düzensiz; doruk-terminatör uzaklığından en az dört mil | https://en.wikipedia.org/wiki/Sidereus_Nuncius (WF; arama sonucu) | "on March 13, 1610" ; "increased to 20x linear magnification" ; "the brighter regions rough and mountainous" ; terminator "was smooth where it crossed the darker regions of the Moon but quite irregular where it crossed the brighter areas" ; "the distance of sunlit mountaintops from the terminator" ; "judged, quite accurately, that the lunar mountains were at least four miles high." |
+| Örnek: h ≈ d²/(2R); R ≈ 1738 km; d = 150 km → 6,47 km; 4 mil ≈ 6,44 km | HESAP (R: NSSDC Equatorial radius "1738.1"; mil/km: NASA "149 miles (240 kilometers)" oranı 1,61) | 22.500/3476 = 6,47 |
+
+### Bölüm: Dev çarpışma (eklemeler)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Ayrılma, yakalama, birlikte oluşma; hiçbiri açısal momentumu açıklamaz | https://en.wikipedia.org/wiki/Giant-impact_hypothesis (WF; arama sonucu) | "a molten Moon had been spun from Earth because of centrifugal forces" ; "formed elsewhere and was subsequently captured by Earth's gravitational field" ; "Earth and the Moon formed at the same time and place from the same accretion disk" ; "None of these hypotheses can account for the high angular momentum of the Earth–Moon system." |
+| Daly 1946; Hartmann ve Davis 1975 Icarus; Cameron ve Ward teğet çarpma | aynı (WF) | Reginald Daly "first proposed" it "in 1946" ; "published and discussed in Icarus in 1975 by William K. Hartmann and Donald R. Davis" ; Cameron and Ward: "the tangential impact upon Earth of a body the size of Mars" |
+| Büyük kısmı erimiş; uçucu madde fakiri; çekirdek < %25 (diğerleri ~%50) | aynı (WF) | "a large portion of the Moon once was molten" ; "The Moon is depleted in volatile substances compared to Earth." ; "less than about 25% the radius of the Moon" ; about 50% for most other terrestrial bodies |
+| Oksijen izotopları aynı; titanyum 4 ppm; eski modeller %80 çarpandan; çözümler (sinestia, yüksek hız, Theia yakında oluştu, homojenleşme); 2019 modeli %80 ilk Dünya'dan | aynı (WF) | "The Moon's oxygen isotopic ratios are essentially identical to those of Earth." ; "within 4 ppm" ; "Many prior models had suggested 80% of the Moon coming from the impactor." ; synestia: rapidly spinning, "formed a new celestial object" ; "The collision speed may have been higher than originally assumed." ; "Theia formed near Earth" ; "homogenised by convective stirring" ; "about 80% of the Moon-forming debris originated from the proto-Earth." |
+| En çok tercih edilen; tutarlı model yok; çözülmemiş güçlükler | aynı (WF) | "currently the favored hypothesis for lunar formation among astronomers" ; "there is no self-consistent model that starts with the giant-impact event" ; "This lunar origin hypothesis has some difficulties that have yet to be resolved." |
+
+### Bölüm: Uzaklık (eklemeler)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Dış merkezlik 0,0549; yerberi 363.300 km, yeröte 405.500 km | NSSDC (WF) | Orbit eccentricity "0.0549" ; Perigee "0.3633" ; Apogee "0.4055" (10⁶ km) |
+| Tam tutulmalar 650 milyon – 1,4 milyar yıl sonra biter | WP:Solar_eclipse (WF) | "Millions of years in the future, the Moon will be too far away to fully occlude the Sun, and no total eclipses will occur." ; (WF) between 650 million and 1.4 billion years from now |
+| 0,038 m × 650×10⁶ = 24.700 km; %6,4 | HESAP | — |
+
+### Yeni bölüm: Süper ay ve ufuktaki dev Ay
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Tanım (yerberiye denk dolunay/yeni ay), perigee syzygy; Nolle 1979, astrolog; kesin tanım yok | https://www.wikiwand.com/en/articles/Supermoon (Wikipedia içeriği; WF; arama sonucu) | "A supermoon is a full moon or a new moon that nearly coincides with perigee" ; "The name supermoon was coined by astrologer Richard Nolle in 1979." ; no precise astronomical definition |
+| %14 çap, %30 parlak; yüzey parlaklığı aynı | aynı (WF) | "roughly 14% larger in diameter" ; "about 30% brighter than at its farthest point, or apogee" ; surface luminance stays the same |
+| 14 Kasım 2016, 26 Ocak 1948'den beri en yakın; 6 Aralık 2052 | aynı (WF) | "the closest full occurrence since January 26, 1948" ; "will occur on December 6, 2052" |
+| Gözlemciler büyük gördüğünü söyler; büyük olasılıkla Ay illüzyonu | aynı (WF) | "Many observers insist that the Moon looks bigger to them" (attributed to the Moon illusion) |
+| Ay illüzyonu tanımı; açısal boyut sabit; ufukta ~%1,5 uzak; fotoğraflar; açıklanamamış; 8,4 mm çakıl | https://en.wikipedia.org/wiki/Moon_illusion (WF) | "The Moon illusion is the optical illusion of the Moon appearing larger near the horizon than it does higher up in the sky." ; "it remains constant as the Moon rises or sinks in the sky." ; "about 1.5% farther away" ; "Photographs of the Moon at different elevations also show that its size remains the same." ; "remains inconclusively explained" ; "No single theory has emerged victorious." ; "hold a small pebble (say, 0.33 inches or 8.4 millimetres wide) at arm's length" |
+| Örnek: 407/357 = 1,140; 0,558° / 0,489°; 1,14² = 1,30 | HESAP | — |
+
+### Yeni bölüm: Anadolu'da tutulmalar
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Herodot; Medler-Lidyalılar; Anadolu; karanlıkta savaş durdu, barış; MÖ 28 Mayıs 585; Halys varsayımı; ~150 yıl sonra yazdı; kuşku; Thales'in nasıl öngördüğü belirsiz | https://en.wikipedia.org/wiki/Eclipse_of_Thales (WF; arama sonucu) | "a long-standing war between the Medes and the Lydians" ; "ceased fighting, and were alike anxious to have terms of peace agreed on" ; "the eclipse of 28 May 585 BC" ; Halys "was located in the border region between both kingdoms" (assumption) ; Herodotus wrote about 150 years later ; "modern scholars are sceptical of the story's veracity" ; "How exactly Thales could have predicted a solar eclipse remains uncertain." ; WP:Solar_eclipse: Thales predicted "an eclipse that occurred during a battle between the Medes and the Lydians" |
+| 29 Mart 2006: Kastellorizo'dan Türkiye'ye, Karadeniz; Side 3:45, Konya 3:37, Antalya 3:15, Kayseri 1:48; Ankara %97,74; en uzun 4 dk 7 s (23°12′K 16°42′D); saros 139 | https://en.wikipedia.org/wiki/Solar_eclipse_of_March_29,_2006 (WF; arama sonucu) | "to Greece ( Kastellórizo) and Turkey, then across the Black Sea" ; Side "3:45" ; Konya "3:37" ; Antalya "3:15" ; Kayseri "1:48" ; Ankara "97.74%" ; "Duration: 247 s (4 min 7 s)" at "23°12′N 16°42′E" ; "Saros: 139" |
+| 23° K 16° D Kuzey Afrika'da | ÇIKARIM (koordinat) | — |
+| 223 kavuşum ≈ 239 anomalistik ≈ 242 drakonitik; 6585,3 gün | WP:Solar_eclipse (WF) | "223 synodic months is roughly equal to 239 anomalistic months and 242 draconic months." |
+| 0,32 gün × 360° = 115°; 223 × 29,5306 = 6585,32; 2006-03-29 + 6585 gün = 2024-04-08 | HESAP (29,5306: WP Orbital period, Bölüm 2 satırı) | — |
+| 2 Ağustos 2027: Cebelitarık, İspanya, Kuzey Afrika, Mısır, Suudi Arabistan; Luksor'un ~60 km GD'sunda 6 dk 23 s; karada en uzun, sonraki 3 Haziran 2114; Türkiye tablolarda yok | https://en.wikipedia.org/wiki/Solar_eclipse_of_August_2,_2027 (WF; arama sonucu) | "approximately 60 km (37 miles) southeast of Luxor" ; "6 minutes 23.2 seconds" ; "travel across the Strait of Gibraltar between Spain and Morocco" ; "This is the longest total solar eclipse on easily accessible land in the 21st century; a longer one will not occur until June 3, 2114." |
+| Avrupa, Afrika, Orta Doğu'nun geri kalanı parçalı | https://www.dailysabah.com/life/countdown-begins-for-2027-eclipse-of-century-crossing-spain-to-somalia/news (WF; arama sonucu) | people "elsewhere in Europe, Africa and the Middle East will see a partial eclipse" |
+| İstanbul %59, en büyük evre 12.39 (TEK KAYNAK; derste "doğrulayamadım" denildi) | https://orbitalradar.com/eclipse/2027-august-2/istanbul (WF; arama sonucu) | "59% partial eclipse" ; "maximum at 12:39 GMT+3" |
+| ISO 12312-2 | Bölüm 9 satırı (NASA) | — |
+| 31 Aralık 2028 tam Ay tutulması; tam evre 71 dk 20 s; U2 16:16:19, U3 17:27:40; Doğu Avrupa ve Asya'dan tamamen görülür | https://en.wikipedia.org/wiki/December_2028_lunar_eclipse (WF; arama sonucu) | "A total lunar eclipse" "on Sunday, December 31, 2028" ; "Totality: 71 minutes, 20 seconds" ; "U2: 16:16:19" ; "U3: 17:27:40" ; "completely visible over" eastern Europe, Asia, and Australia |
+| 3 Mart 2026'dan sonraki ilk tam Ay tutulması | https://www.space.com/stargazing/lunar-eclipses/the-total-lunar-eclipse-on-march-3-will-be-the-last-until-new-years-eve-2028 (WF; arama sonucu) | "December 31, 2028 — total lunar eclipse." (next total after March 3, 2026) |
+| İstanbul: bütün tutulma boyunca Ay ufkun üstünde; tam evre 19:15–20:28 GMT+3; en büyük evrede 22°, azimut 79° | https://orbitalradar.com/eclipse/2028-december-31-lunar/istanbul (WF; arama sonucu; saatler Wikipedia ile çapraz kontrol) | "Istanbul sees totality ... with the Moon up for the whole eclipse." ; "19:15 GMT+3" ; "20:28 GMT+3" ; "22° above the horizon" ; "azimuth 79°" |
+| Türkiye saati UTC + 3 | orbitalradar ("GMT+3" İstanbul) | — |
+
+### Bölüm: Apollo'dan Artemis'e (ekleme)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| 1 Nisan 2026, 18.35 EDT, 39B rampası, Kennedy; Wiseman, Glover, Koch (NASA), Hansen (CSA); 6 Nisan planlı geçiş; Ay çekimiyle geri dönüş; ~10 gün | https://www.sciencedaily.com/releases/2026/04/260402004721.htm (WF; arama sonucu) | "lifted off from Launch Pad 39B at Kennedy Space Center in Florida at 6:35 p.m. EDT on Wednesday, April 1, 2026." ; "NASA astronauts Reid Wiseman, Victor Glover, and Christina Koch" ; Jeremy Hansen (CSA) ; lunar flyby planned Monday, April 6 ; "The mission is expected to last about 10 days." |
+| Roller (komutan, pilot, görev uzmanı); 10 Nisan 2026 San Diego yakınında Pasifik'e iniş; 10 günlük yolculuk | https://www.nasa.gov/image-detail/artemis-ii-splashdown-2/ (WF; arama sonucu) | "Artemis II Commander Reid Wiseman, Pilot Victor Glover, and Mission Specialist Christina Koch from NASA, along with Mission Specialist Jeremy Hansen from the CSA" ; "splashes down in the Pacific Ocean near San Diego, California" (April 10, 2026) ; "10-day journey around the Moon" |
+| 18.35 EDT = 22.35 UTC = 01.35 Türkiye (2 Nisan) | HESAP (EDT = UTC − 4) | — |
+
+### Yeni bölüm: Yeni kâşifler
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Chang'e 4: 3 Ocak 2019, Güney Kutbu-Aitken, uzak yüz, Von Karman kraterinde ilk yumuşak iniş, Yutu-2 | https://en.wikipedia.org/wiki/Chinese_Lunar_Exploration_Program (WF) | "landed on 3 January 2019 on the South Pole-Aitken Basin, on the far side of the Moon" ; "first soft landing on the Far side of the Moon, landed in Von Karman crater with Yutu-2" |
+| Chang'e 5: 16 Aralık 2020, 1731 g | aynı (WF) | "16 Dec 2020" ; "returned to Earth with 1,731 grams (61.1 oz) of lunar samples" |
+| Chang'e 6 dönüş 25 Haziran 2024; Çin insanlı iniş 2029 ya da 2030 | aynı (WF) | "25 Jun 2024" ; "China plans to conduct its first crewed lunar landing in 2029 or 2030." |
+| Chang'e 6: 1 Haziran 2024 (Pekin 2 Haziran 06.23), Apollo krateri, Güney Kutbu-Aitken; ~2 kg planlı; CNSA: uzak yüzden ilk örnek getirme | https://www.space.com/china-change-6-lands-on-moon-far-side-sample-return-mission (WF; arama sonucu) | "6:23 a.m. Beijing Time on Sunday (June 2)" ; "touched down inside Apollo Crater, within the giant South Pole-Aitken basin." ; "about 4.4 pounds (2 kilograms)" ; "The Chang'e-6 mission is the first human sampling and return mission from the far side of the moon." |
+| Uzak yüzden Dünya görünmez | ÇIKARIM (eş zamanlı dönme, Bölüm 3) | — |
+| Chandrayaan-3: 23 Ağustos 2023, 69° G; güney kutbu yakınına ilk yumuşak iniş; ISRO dördüncü ajans (Sovyet, NASA, CNSA'dan sonra) | https://en.wikipedia.org/wiki/Chandrayaan-3 (WF; arama sonucu) | "on 23 August 2023 at 18:04 IST" ; "69°S" ; "the first in human history to achieve a soft landing near the lunar south pole" ; "ISRO became the fourth national space agency to successfully land on the Moon" |
+| Kutup gölgeli kraterlerinde buz | Bölüm 6 satırı (NASA) | — |
+
+### Sorular (yeni)
+
+| Hesap | Sonuç |
+|---|---|
+| 360/27,32/24 | 0,549° |
+| 49 ∓ 23,44 | 25,56° ; 72,44° |
+| 407/357 ; 1,14² | 1,140 ; 1,30 |
+| 223 × 29,5306 | 6585,32 gün |
+| 16.16/17.28 UTC + 3 | 19.16 ; 20.28 |
+
+### v3 notları
+
+- Bölüm sayısı 10 → 14 (4 yeni). Sorular 7 → 14, anahtar sayılar 11 → 24, sözlük 12 → 20, kaynaklar 17 → 35. Eski öğelerin kid alanları ve bölüm başlıkları aynen korundu.
+- Sesli okuma: "UTC+3" yerine "UTC'den 3 saat ileri", "+23,44°" yerine "23,44° (kuzey)" yazıldı (denetim "+" uyarısı).
+- İstanbul'dan 2 Ağustos 2027 parçalı tutulmasının oranı (%59) yalnız orbitalradar'da bulundu; Wikipedia tablolarında Türkiye yok. Derste tek kaynak olduğu açıkça yazıldı. 31 Aralık 2028 saatleri Wikipedia ile çapraz doğrulandı.
+- Çıkarılanlar: TV/medya kaynaklarındaki "süper ay gözle fark edilir" iddiaları; harvest moon (kaynakta yok); Artemis III ve sonraki tarihler (değişken, derse konmadı); Chang'e 6 örnek kütlesi (yalnız planlanan 2 kg verildi; gerçek kütle açılan kaynakta yoktu); Thales'in Miletli olduğu ve Halys'in bugünkü adı (açılan kaynakta yoktu).
+- Chang'e 4 Wikipedia maddesi WebFetch'te eski bir sürüm döndürdü; bilgiler Chinese Lunar Exploration Program maddesinden alındı.

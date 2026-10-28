@@ -3,7 +3,7 @@
   "unite": "yildizlar",
   "yeni": true,
   "baslik": "Kümeler, Çift Yıldızlar ve Değişen Yıldızlar",
-  "ozet": "Yıldızlar çoğunlukla yalnız değildir: kümeler halinde doğar, çoğu zaman bir yoldaşla dolanır, bazılarının ışığı gözünün önünde değişir. Bu derste bir kümenin yaşını H-R diyagramından okumayı, çift yıldızlarla yıldız tartmayı ve İstanbul'dan çıplak gözle izleyebileceğin Algol'ün kararmasını öğreneceksin.",
+  "ozet": "Yıldızlar çoğunlukla yalnız değildir: kümeler halinde doğar, çoğu zaman bir yoldaşla dolanır, bazılarının ışığı gözünün önünde değişir. Bu derste bir kümenin yaşını H-R diyagramından okumayı, kümelerin nasıl dağıldığını, çift yıldızlarla yıldız tartmayı, novaların ve zonklayan yıldızların nedenini ve İstanbul'dan çıplak gözle izleyebileceğin Algol'ün kararmasını tahmin etmeyi öğreneceksin.",
   "on_bilgi": [
     "d3",
     "d5",
@@ -15,6 +15,7 @@
       "paragraflar": [
         "d14'te bir moleküler bulutun çökerken parçalara bölündüğünü gördün. Wikipedia'ya göre bu yüzden yıldızların çoğu tek başına değil, bir grubun parçası olarak doğar: bir bulutun çöküşünde düzinelerce ile on binlerce yıldız aşağı yukarı aynı anda oluşur ve sonuç bir açık yıldız kümesidir. Bir kümenin yıldızları bu yüzden üç şeyi paylaşır: aynı yaştadırlar, aynı malzemeden yapılmışlardır ve bize aşağı yukarı aynı uzaklıktadırlar. Gökbilim için bu, laboratuvarda yalnız bir değişkeni değiştirip ötekileri sabit tutmak gibidir. Kümede yıldızdan yıldıza değişen neredeyse tek şey kütledir.",
         "Wikipedia'ya göre açık kümeler çoğunlukla galaksinin diskinde bulunur. Gökyüzünde onları çıplak gözle de görebilirsin. En ünlüsü Boğa'daki Ülker'dir (M45): uygulamanın doğrulanmış hedef listesine göre toplam parlaklığı 1,2 kadir, gökte kapladığı alan yaklaşık 110 yay dakikasıdır. Yengeç'teki Arıkovanı (M44) 3,1 kadir ve 95 yay dakikası, Kahraman'daki Çift Küme'nin iki üyesi (NGC 869 ve NGC 884) 3,7 ve 3,8 kadirdir. Bunlar toplam kadirlerdir: kümenin ışığı geniş bir alana yayıldığı için tek bir yıldız kadar keskin bir nokta gibi görünmez.",
+        "Galakside kaç açık küme var? Wikipedia'ya göre Samanyolu'nda 1.100'den fazla açık küme biliniyor; gerçek sayının bunun on katına kadar çıkabileceği düşünülüyor, çünkü diskteki toz uzak kümeleri gözden saklar. Bir açık küme onlarca ile birkaç bin arasında yıldız taşır. Yapısı da kabaca bellidir: yıldızların sık olduğu çekirdek tipik olarak 3–4 ışık yılı genişliğindedir, daha seyrek bir dış hale ise merkezden 20 ışık yılı kadar uzağa uzanır. Çekirdekte her küp ışık yılına ortalama 1,5 yıldız düşer. Kümenin kenarı keskin değildir: üyeler dışa doğru giderek seyrelir ve bir yerden sonra artık hangisinin kümeye, hangisinin arka plana ait olduğunu yalnızca hareketlerine bakarak söyleyebilirsin. Bu ayrım, aşağıda göreceğin gibi, kümelerin nasıl dağıldığını anlamanın da anahtarıdır.",
         "Bu yakın kümelerin uzaklığı ve yaşı da ölçüldü. Ülker Wikipedia'ya göre yaklaşık 444 ışık yılı uzakta; Gaia uydusunun üçüncü veri yayınına dayanan en yeni ölçüm 135,74 ± 0,10 parsek. Bu sayı bir süre tartışmalıydı: Hipparcos uydusunun verisi yalnızca 118 parsek vermişti. Harvard-Smithsonian Astrofizik Merkezi'ne göre 2014'te radyo teleskoplarıyla yapılan ıraklık ölçümü 448 ışık yılı buldu; araştırmacılar Hipparcos sonucunun düzeltilmemiş hatalar taşıdığını savundu. NASA yaklaşık 445 ışık yılı der, ama bu sayının herkesçe kabul edilmediğini de ekler. Ülker'in yaşı Wikipedia'ya göre yaklaşık 115 milyon yıl. Stauffer ve arkadaşları 1998'de kümenin en sönük üyelerindeki lityumdan 125 milyon yıl buldu; başka yöntemler 75 ile 150 milyon yıl arası verir. Yani yaş için tek bir kesin sayı yok, ama büyüklük mertebesi açık: yüz milyon yıl kadar.",
         "Boğa'nın ikinci kümesi Hyades, Wikipedia'ya göre bilinen en yakın açık kümedir: yaklaşık 153 ışık yılı (47 parsek) uzakta ve yaklaşık 625 milyon yaşında; Astronomy Now da aynı değerleri verir. Hyades'in önündeki parlak turuncu Aldebaran kümenin üyesi değildir: 65 ışık yılıyla bize çok daha yakındır, yalnızca aynı bakış doğrultusundadır. Yengeç'teki Arıkovanı'nın uzaklığı Wikipedia'da çoğunlukla 520–610 ışık yılı diye geçer, NASA yaklaşık 600 ışık yılı der. Yaşı Wikipedia'ya göre yaklaşık 600 milyon, NASA'ya göre 600–700 milyon yıldır. Wikipedia'ya göre Galileo 1609'da Arıkovanı'na teleskopla baktı ve onu 40 yıldıza ayırdı. Yaşı ve gökteki hareketi Hyades'inkiyle örtüştüğü için iki kümenin ortak bir kökeni olabileceği düşünülüyor. Üçünü yaş sırasına koy: Ülker bir bebek, Hyades ve Arıkovanı ondan beş altı kat yaşlı.",
         "Ülker'in bilimde özel bir yeri var. Wikipedia'ya göre 1910'da Hans Rosenberg Ülker yıldızları için bir diyagram yayımladı; Hertzsprung ve Rosenberg'in yakın açık kümeler Hyades ve Ülker üzerindeki çalışmaları, renk-kadir diyagramının ilk örneklerini verdi. Ülker'deki Merope yıldızının çevresindeki mavi bulutsu da d14'te gördüğün yansıma bulutsusunun ünlü bir örneğidir. Kümeler doğdukları buluttan uzun yaşar: Wikipedia'ya göre moleküler bulutlar yaklaşık 10 milyon yılda değişir ve bulutlarla birlikte bulunan genç yıldızların yaşı 10–20 milyon yıldır. Daha yaşlı kümeler artık bulutsuz, çıplak yıldız gruplarıdır."
@@ -24,6 +25,22 @@
         "metin": "Parsek ve ışık yılının IAU tanımlarından 1 parsek = 3,0857 × 10¹³ km ÷ 9,4607 × 10¹² km ≈ 3,2616 ışık yılı. 1. adım: Gaia değeri: 135,74 × 3,2616 ≈ 442,7 ışık yılı. 2. adım: Hipparcos değeri: 118 × 3,2616 ≈ 384,9 ışık yılı. 3. adım: Fark ≈ 57,8 ışık yılı, doğru değerin yaklaşık %13'ü. 4. adım: Bu fark parlaklık hesabına nasıl yansır? Işık akısı uzaklığın karesiyle azalır. (442,7 ÷ 384,9)² ≈ 1,32; yani yanlış uzaklıkla küme yıldızları gerçekte olduklarından 1,32 kat sönük hesaplanır. Kadir olarak 2,5 × log(1,32) ≈ 0,30 kadir. 5. adım: Ülker'den bugün gözüne giren ışık yaklaşık 443 yıl önce, 1580'lerde yola çıktı. Sonuç: Ülker yaklaşık 443 ışık yılı uzakta; Hipparcos hatası %13'lük bir uzaklık ve yaklaşık 0,3 kadirlik bir parlaklık hatası demekti."
       },
       "akilda": "Yıldızlar bulut çöküşünde kümeler halinde doğar. Bir kümenin yıldızları aynı yaşta, aynı bileşimde ve aynı uzaklıktadır; aralarındaki asıl fark kütledir. Ülker yaklaşık 444 ışık yılı uzakta ve 100 milyon yıl mertebesinde yaşlı; Hyades (153 ışık yılı) ve Arıkovanı (yaklaşık 600 ışık yılı) 600 milyon yıl dolayında."
+    },
+    {
+      "baslik": "Kümeler neden dağılır?",
+      "paragraflar": [
+        "Ülker'e bakınca sonsuza dek orada duracakmış gibi gelir. Oysa açık kümeler geçicidir. Wikipedia'ya göre açık kümelerin çoğu birkaç yüz milyon yıl yaşar; yalnızca en kütleli olanlar birkaç milyar yıl dayanır. Bir kümenin yıldızlarının yarısını yitirmesi için geçen süre, yani yarı ömrü, başlangıçtaki yoğunluğuna göre 150 ile 800 milyon yıl arasında değişir: sıkı kümeler daha uzun yaşar. Bu sayıları önceki bölümdeki yaşlarla yan yana koy. Ülker (yaklaşık 115 milyon yıl) hayatının başında, Hyades ve Arıkovanı (600 milyon yıl dolayında) ise bir açık küme için ileri yaştadır. Küresel kümeler milyarlarca yıl dayanabildiyse bunun nedeni çok daha kalabalık ve sıkı olmalarıdır.",
+        "Dağılma doğumla başlar. Wikipedia'ya göre bulut çekirdeğindeki gazın yalnızca yüzde 30 ile 40'ı yıldıza dönüşür; geri kalan gaz genellikle on milyon yıl içinde kümeden temizlenir. Gaz giderken kümeyi bir arada tutan kütlenin büyük bölümü de gider ve kütleçekimi zayıflar. Bu yüzden genç kümelerin büyük bir kısmı daha işin başında dağılır; bazıları yalnızca birkaç milyon yıl dayanır. Gökbilimciler buna bebek ölümü der. Hayatta kalan kümeler de kayıp verir: Wikipedia'ya göre Ülker gibi bir küme başlangıçtaki yıldızlarının ancak üçte birini tutabilir. Yani bugün Ülker'de gördüğün yıldızlar, doğan ailenin bir bölümüdür.",
+        "Gaz gittikten sonra iki yavaş süreç işler. Birincisi içeriden gelir: yıldızlar kümenin içinde birbirinin yakınından geçerken kütleçekimiyle birbirini çeker ve hız alışverişi yapar. Bazen bir yıldız böyle bir karşılaşmadan kümenin kurtulma hızını (d3) aşan bir hızla çıkar ve bir daha geri dönmez. Küme bu yolla, güneşte kalan bir su birikintisi gibi, üyelerini yavaş yavaş buharlaştırır. İkincisi dışarıdan gelir: küme galaksinin merkezi çevresinde dolanırken başka kümelerin ve dev gaz bulutlarının yakınından geçer. Wikipedia'ya göre bir açık küme kabaca yarım milyar yılda bir, bir moleküler bulutun yakınından ya da içinden geçerek sarsılır. Her sarsıntı kümeyi biraz daha gevşetir.",
+        "Bu dağılmanın en güzel kanıtı Boğa'daki Hyades'ten geldi. ESA'nın 24 Mart 2021 tarihli duyurusuna göre Tereza Jerabkova ve arkadaşları, bir milyardan fazla yıldızın uzaklığını ve hareketini ölçen Gaia uydusunun verisinde Hyades'ten kopmuş binlerce eski üyeyi buldu. Bu yıldızlar, kümenin önünde ve arkasında uzanan iki uzun kola dizilir; bunlara gelgit kuyruğu denir. Kümeden kenara itilen yıldızları galaksinin kütleçekimi çekip bu kollara dizer. Kuyruklar binlerce ışık yılı boyunca uzanır; makalenin başlığındaki uzunluk 800 parsektir. Oysa kümenin kendisi yaklaşık 60 ışık yılı genişliğindedir. Yani Hyades'in bugün gördüğün parlak çekirdeği, kuyruklardaki eski üyelerden çok daha az yıldız taşır.",
+        "Kuyruklar neden daha önce bulunamadı? ESA'ya göre eski aramalar yalnızca kümeyle aynı yönde, neredeyse aynı hızla hareket eden yıldızlara bakıyordu. Kümeden kopan yıldızlar ise kendi yörüngelerine girer ve zamanla kümeden farklı hareket eder. Ekip, kaçan yıldızların yüz milyonlarca yıl boyunca neler yaşayacağını bilgisayarda canlandırdı, sonra bu modeli gerçek veriyle karşılaştırdı. Bir de sürpriz çıktı: arkadaki kuyrukta beklenenden az yıldız var. Ekip bunu yaklaşık 10 milyon Güneş kütleli bir yapıyla karşılaşmaya bağlıyor; görünür bir aday bulunmazsa bu bir karanlık madde öbeği olabilir. Bu bir öneridir, kanıtlanmış bir sonuç değildir; ama bir yıldız kümesinin galaksinin görünmeyen yapısını yoklamak için kullanılabileceğini gösterir.",
+        "Kümeden geriye ne kalır? Wikipedia'ya göre dağılan yıldızların çoğu bir süre benzer yollarda, birlikte hareket etmeyi sürdürür; buna hareketli grup denir. En güzel örneği her gece İstanbul göğünde: Büyük Ayı'daki Büyük Kepçe. Sky & Telescope'a göre Kepçe'nin yedi yıldızından beşi (Merak, Phecda, Megrez, Alioth ve Mizar) ile Alcor, Büyük Ayı hareketli grubunun çekirdeğindedir. Kepçe'nin iki ucundaki Dubhe ile Alkaid bu gruba ait değildir. Çekirdek yaklaşık 80 ışık yılı uzaktadır ve yaklaşık 500 ± 100 milyon yıl önce doğmuştur. Yıldızlar uzayda saniyede 14 km hızla, Yay yönündeki ortak bir noktaya doğru birlikte yol alır. Dubhe ile Alkaid bu ortak harekete katılmadığı için Kepçe'nin bugünkü biçimi de kalıcı değildir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Kaçan bir yıldız ne kadar uzağa gider?",
+        "metin": "Bir yılda yaklaşık 3,156 × 10⁷ saniye, bir ışık yılında 9,4607 × 10¹² km vardır. 1. adım: Büyük Ayı grubu saniyede 14 km hızla gidiyor. Bir milyon yılda 14 × 3,156 × 10⁷ × 10⁶ ≈ 4,42 × 10¹⁴ km yol alır. Işık yılına çevir: 4,42 × 10¹⁴ ÷ 9,4607 × 10¹² ≈ 46,7 ışık yılı. Bir milyon yıl, gökbilimde kısa bir süredir, ama grubun yerini onlarca ışık yılı değiştirmeye yeter. 2. adım: Şimdi kümeden saniyede yalnızca 1 km bağıl hızla kaçan bir yıldız düşün (örnek değer). 100 milyon yılda 1 × 3,156 × 10⁷ × 10⁸ ≈ 3,16 × 10¹⁵ km, yani yaklaşık 334 ışık yılı (yaklaşık 102 parsek) uzaklaşır. 3. adım: Hyades yaklaşık 625 milyon yaşında. Aynı hızla bu sürede yaklaşık 2.090 ışık yılı yol alınır. 4. adım: Karşılaştır: Hyades kuyruklarının 800 parseklik uzunluğu 800 × 3,2616 ≈ 2.610 ışık yılıdır. Gerçekte galaksinin kütleçekimi yolları büker, bu hesap yalnızca ölçeği gösterir. Sonuç: saniyede 1 km gibi küçük bir hız bile yüz milyonlarca yılda binlerce ışık yılı eder; kuyrukların bu kadar uzun olması şaşırtıcı değil."
+      },
+      "akilda": "Açık kümeler kalıcı değildir: gaz kaybı, iç karşılaşmalar ve galaksideki bulutlar onları birkaç yüz milyon yılda dağıtır (yarı ömür 150–800 milyon yıl). Hyades'in Gaia ile bulunan gelgit kuyrukları ve Büyük Kepçe'nin beş yıldızını içeren Büyük Ayı hareketli grubu bu dağılmanın izleridir."
     },
     {
       "baslik": "Küresel kümeler: galaksinin en yaşlıları",
@@ -45,6 +62,8 @@
       "paragraflar": [
         "Bir kümenin yıldızlarını H-R diyagramına (d5) koyduğunda büyük bir kolaylık olur. Wikipedia'ya göre küme yıldızları aynı uzaklıkta olduğu için yıldızların gerçek parlaklığı yerine doğrudan görünür kadirleri kullanılabilir; uzaklığı bilmeden bile diyagramın biçimi ortaya çıkar. Bu biçim kümenin yaşını ele verir.",
         "Nasıl? d5'te kütleli yıldızların çok daha kısa yaşadığını gördün. Genç bir kümede, içinde ne kadar kütleli yıldız varsa hepsi anakoldadır. Zaman geçtikçe önce en kütleli yıldızlar yakıtlarını bitirip anakoldan ayrılır ve dev olur. Anakolun üst ucu yukarıdan aşağı doğru, bir mumun erimesi gibi kısalır. Wikipedia'ya göre yıldızların anakoldan ayrıldığı bu noktaya dönüm noktası denir; o noktadaki yıldızların anakol ömrünü bilirsen kümenin yaşını tahmin edebilirsin. Dönüm noktası ne kadar aşağıdaysa küme o kadar yaşlıdır.",
+        "Diyagramda bazen kurala uymayan yıldızlar görürsün. Wikipedia'ya göre Allan Sandage 1953'te M3 küresel kümesinin yıldızlarını ölçerken, dönüm noktasının üstünde, anakolun uzantısında duran, ondan daha sıcak ve daha parlak yıldızlar buldu. Bunlara mavi başıboş denir: sanki yaşıtları dev olup giderken geride kalmışlardır. Kütleleri kümenin öteki anakol yıldızlarının iki üç katıdır; kümenin yaşına bakılırsa bu kadar kütleli yıldızların çoktan anakolu terk etmiş olması gerekirdi. İki açıklama öne çıkar: ya iki yıldız çarpışıp birleşmiş ve daha kütleli tek bir yıldız oluşmuştur, ya da bir çiftte yıldızlardan biri yoldaşından kütle almıştır (Algol bölümündeki kütle aktarımı gibi). Mavi başıboşlar özellikle küresel kümelerin yıldızca sık merkezlerinde toplanır.",
+        "Bu konuda Hubble'ın erken bir katkısı var. NASA'nın 1991 tarihli duyurusuna göre Hubble, 47 Tucanae küresel kümesinin merkezinde 21 mavi başıboşu ayrı ayrı seçti. Yıldızların merkezde yoğunlaşması, onların çarpışmaların, birleşmelerin ya da yakın karşılaşmaların ürünü olduğu fikrini destekledi; ama ekip görüntülerin tek başına bu üç olasılığı ayıramayacağını da kabul etti. Mavi başıboşların kümede sonradan doğmuş genç yıldızlar olması ise en az olası açıklama sayıldı. Ders şu: bir kümenin yaşını okurken tek tek sıra dışı yıldızlara değil, anakolun genel olarak nerede büküldüğüne bakarsın; sıra dışı yıldızlar ise kümenin içindeki yakın ilişkiler hakkında ayrı bir hikâye anlatır.",
         "Aynı diyagram uzaklık da verir. Wikipedia'ya göre bir kümenin anakolunu, uzaklığı bilinen yıldızların anakoluyla çakıştırarak kümenin uzaklığı kabaca bulunabilir; buna anakol çakıştırma denir. Dönüm noktasının yanında kırmızı dev kolunun ucu da bu çakıştırmada kullanılır. Böylece bir kümenin fotoğrafı ile ölçülmüş renkleri, hem yaşını hem uzaklığını anlatan bir kimlik kartına dönüşür. Yine de yöntemin sınırları var: kümenin bileşimi ve aradaki tozun yarattığı kızarma (d14) sonucu kaydırır, bu yüzden yaşlar ve uzaklıklar hata paylarıyla verilir."
       ],
       "ornek": {
@@ -58,16 +77,23 @@
       "paragraflar": [
         "Güneş'in bir yoldaşı yok. Peki bu olağan mı? Sky & Telescope'un aktardığına göre uzun süre yıldızların yarıdan fazlasının çoklu sistemlerde olduğu düşünüldü; bu sonuç çoğunlukla Güneş boyunda ve daha büyük yıldızların çoğunun çift olmasından çıkıyordu. Gökbilimci Lada ise kırmızı cücelerin hem çok yaygın (yıldızların %70'inden fazlası) hem de çoğunlukla tek olduğunu hesaba katınca, tek yıldızların bütün yıldız sistemlerinin üçte ikisinden fazlasını oluşturduğunu savundu. RECONS taramasında 10 parsek içindeki 171 kırmızı cücenin 43'ünün yoldaşı bulundu; yoldaşlar bulunmaya devam ettiği için bu bir alt sınırdır. Kısacası Güneş gibi yıldızlarda çiftlik yaygın, küçük yıldızlarda daha seyrek.",
         "Çift yıldızları nasıl fark ettiğimize göre adlandırırız. Görsel çiftte iki yıldızı teleskopta ayrı ayrı görür, yıllar içinde birbirinin çevresinde dolandıklarını izleriz. Yalnızca gökte yan yana görünen ama aslında farklı uzaklıklarda olan yıldızlar da vardır; bunlar gerçek çift değildir. Bu yüzden iki yıldızın yakın görünmesi tek başına kanıt sayılmaz, ortak hareket ya da yörünge gerekir.",
-        "Bazen yoldaş görünmez ama izini bırakır. Wikipedia'ya göre Bessel 1844'te Sirius'un gökteki yolunun hafifçe yalpaladığını fark etti ve görünmeyen bir yoldaşı olduğunu öngördü; yoldaşın dolanma süresini kabaca yarım yüzyıl olarak tahmin etti. Alvan Graham Clark 31 Ocak 1862'de o yoldaşı, Sirius B'yi gördü. Sirius B bir beyaz cücedir ve 8,6 ışık yılı uzaklığıyla bilinen en yakın beyaz cücedir. Kütlesi yörüngeden 1910'a gelindiğinde 0,94, bugünkü tahminle 1,00 Güneş kütlesi olarak bulundu.",
+        "İki yıldızın gerçekten birbirine bağlı olabileceği fikri iki yüz yılı aşkın bir geçmişe sahip. Wikipedia'ya göre bu anlamda “ikili” sözcüğünü ilk kez 1802'de William Herschel kullandı. 1803'te, 25 yıl boyunca izlediği bazı yakın yıldız çiftlerinin konum değişimlerinin ıraklıkla değil, yıldızların birbirinin çevresinde dolanmasıyla açıklandığı sonucuna vardı. İkizler'deki Castor ise daha 1719'da görsel çift olarak tanınmıştı; bugün altı yıldızdan oluşan bir sistem olduğu biliniyor. Bir noktada iki, iki noktada altı: çift yıldız çalışmalarının sık tekrarlanan dersi, daha iyi aletle bakınca sistemlerin karmaşıklaşmasıdır.",
+        "Bazen yoldaş görünmez ama izini bırakır. Wikipedia'ya göre Bessel 1844'te Sirius'un gökteki yolunun hafifçe yalpaladığını fark etti ve görünmeyen bir yoldaşı olduğunu öngördü; yoldaşın dolanma süresini kabaca yarım yüzyıl olarak tahmin etti. Alvan Graham Clark 31 Ocak 1862'de o yoldaşı, Sirius B'yi gördü. Wikipedia'ya göre görünmeyen bir yoldaş yüzünden uzayda bir nokta çevresinde yalpalayan böyle yıldızlara astrometrik çift denir. Sirius B bir beyaz cücedir ve 8,6 ışık yılı uzaklığıyla bilinen en yakın beyaz cücedir. Kütlesi yörüngeden 1910'a gelindiğinde 0,94, bugünkü tahminle 1,00 Güneş kütlesi olarak bulundu.",
         "Bir de yıldızları hiç ayıramadığımız çiftler var. Tayfsal çiftte iki yıldız tek bir nokta gibi görünür, ama tayf çizgileri yıldızlar birbirinin çevresinde dolanırken düzenli olarak bir maviye bir kırmızıya kayar (Doppler kayması d2'de). Wikipedia'ya göre Hermann Carl Vogel 1889'da Algol'ün tayfında böyle dönemli kaymalar buldu. Örten çiftte ise yörünge düzlemini neredeyse yanından gördüğümüz, yani bakış çizgimiz bu düzlemin içinde kaldığı için yıldızlar sırayla birbirinin önünden geçer ve toplam ışık düzenli olarak azalır. Algol hem tayfsal hem örten çifttir."
       ],
-      "akilda": "Güneş benzeri yıldızların çoğu çifttir, küçük kırmızı cücelerin çoğu tektir. Çiftleri görsel (ayrı görünür), tayfsal (çizgiler kayar), örten (ışık düzenli azalır) ve yalpalamadan fark edilen (Sirius B) diye ayırırız."
+      "akilda": "Güneş benzeri yıldızların çoğu çifttir, küçük kırmızı cücelerin çoğu tektir. Çiftleri görsel (ayrı görünür), tayfsal (çizgiler kayar), örten (ışık düzenli azalır) ve yalpalamadan fark edilen (Sirius B) diye ayırırız.",
+      "ornek": {
+        "baslik": "Örnek: Sirius'u yörüngesinden tartmak",
+        "metin": "Wikipedia'ya göre Sirius A ile B'nin yörüngesinin yarı büyük ekseni gökte 7,4957 yay saniyesi, dolanma dönemi 50,1 yıl, sistemin uzaklığı 2,639 parsektir. Parsek tanımı gereği 1 parsek uzaklıktaki 1 yay saniyelik açı, 1 astronomik birimlik uzunluğa karşılık gelir. 1. adım: Gerçek yarı büyük eksen = 7,4957 × 2,639 ≈ 19,78 AB. 2. adım: a³ = 19,78³ ≈ 7.740. 3. adım: P² = 50,1² ≈ 2.510. 4. adım: Kütle toplamı = 7.740 ÷ 2.510 ≈ 3,08 Güneş kütlesi. 5. adım: Karşılaştır: aynı kaynak Sirius A'ya 2,063, Sirius B'ye 1,018 Güneş kütlesi verir; toplam 3,081. Yörünge oldukça basıktır (dışmerkezlik 0,59), bu yüzden iki yıldız arasındaki görünen açı 3 ile 11 yay saniyesi arasında değişir. Sonuç: bir açı, bir süre ve bir uzaklıktan Sirius sisteminin yaklaşık 3,1 Güneş kütlesi olduğunu bulduk."
+      }
     },
     {
       "baslik": "Yıldızları tartmak",
       "paragraflar": [
         "Bir yıldızın kütlesini ölçmenin en doğrudan yolu, onun çevresinde dolanan bir şeyin yörüngesini ölçmektir. d3'te Kepler'in üçüncü yasasının Newton biçimini gördün: a³ ÷ T² = G(M + m) ÷ 4π². Yörüngenin büyüklüğü (a) ve dönemi (T) ölçülürse iki kütlenin toplamı bulunur. Güneş Sistemi'nde gezegenlerin kütlesi Güneş'in yanında küçük olduğu için toplam Güneş'in kütlesine eşit alınır ve yasa yıl ve astronomik birimle P² = a³ biçimine iner.",
         "Aynı birimlerle çift yıldıza uygularsak işler çok sadeleşir: kütle toplamı Güneş kütlesi cinsinden a³ ÷ P²'dir (a astronomik birim, P yıl). Çift yıldızlarda iki kütle de büyüktür, bu yüzden formülün verdiği şey tek bir yıldızın kütlesi değil, ikisinin toplamıdır. Toplamı ikiye bölmek için yıldızların ortak kütle merkezi çevresindeki yörüngelerini ayrı ayrı izlemek gerekir: ağır yıldız merkeze daha yakın ve küçük bir yörüngede, hafif yıldız uzakta ve büyük bir yörüngede dolanır.",
+        "Bir pürüz var. Tayfsal bir çiftte Doppler kayması yalnızca hızın bize doğru ya da bizden uzağa olan kısmını ölçer. Yörüngeyi tam yanından görmüyorsak gerçek hızın bir bölümünü kaçırırız ve kütleleri olduğundan küçük buluruz. Wikipedia'ya göre tayf tek başına yörüngenin bize göre eğikliğini vermez; eğiklik başka bir yoldan, örneğin tutulmalardan biliniyorsa yörünge tam olarak çözülebilir. Örten çift bu bilgiyi kendiliğinden verir: tutulma görüyorsan yörüngeyi neredeyse yanından görüyorsun demektir. Bu yüzden hem tayfsal hem örten olan çiftler, yıldız kütlelerinin en güvenilir kaynağıdır.",
+        "Örten çiftler bir de yıldızların boyunu verir. Wikipedia'ya göre bir yıldızın diski ötekinin önüne kayarken ışığın ne kadar hızlı azaldığına bakılarak yıldızların göreli boyutları bulunur; çift aynı zamanda tayfsal ise yörüngenin öğeleri de çıkar ve sistemin tam bir çözümü yapılabilir. Böylece aynı sistemden hem kütle hem yarıçap elde edilir. Torres, Andersen ve Giménez'in 2010'da yayımladığı derlemede, 95 ayrık çift sistemdeki 190 yıldızın hem kütlesi hem yarıçapı yüzde 3 ya da daha iyi doğrulukla biliniyordu; 95 sistemin 94'ü örten çiftti, biri Alfa Centauri. Wikipedia'ya göre örten çiftler başka galaksilere uzaklığı yüzde 5 dolayında doğrulukla ölçmek için de kullanılır. Bir yıldızın ne kadar ağır ve ne kadar büyük olduğunu söyleyen tablolar büyük ölçüde bu birkaç yüz yıldıza dayanır.",
         "Bu ölçümlerin önemi büyük. Wikipedia'ya göre d5'teki kütle-ışıma gücü ilişkisi, çift sistemlerdeki yıldızların kütleleri ölçülerek ampirik olarak kuruldu. Yani tek bir yıldızın parlaklığından kütlesini tahmin ettiğimizde, aslında çift yıldızlarla yapılmış bir tartının sonucunu kullanıyoruz. Aynı yöntem beyaz cücelere de uygulandı: Wikipedia'ya göre bir çift sistemdeki yıldızın kütlesi yörüngeden kestirilebilir ve Sirius B'ye bu yol 1910'a gelindiğinde uygulanmıştı (beyaz cüceler d6'da)."
       ],
       "ornek": {
@@ -92,6 +118,21 @@
       "akilda": "Algol her 2,87 günde bir, sönük yoldaşı önünden geçtiği için yaklaşık 10 saatlik bir tutulmayla 2,1'den 3,4 kadire iner. Algol paradoksunun çözümü yıldızlar arası kütle aktarımıdır."
     },
     {
+      "baslik": "Yakın çiftler: kütle alışverişi ve novalar",
+      "paragraflar": [
+        "Algol'deki kütle aktarımı nasıl olur? Bir çiftteki her yıldızın çevresinde, kendi kütleçekiminin yoldaşınınkinden güçlü olduğu bir bölge vardır; buna Roche lobu denir. Lobun içindeki gaz o yıldıza aittir. Roche lobunu iki vadi arasındaki su bölüm çizgisi gibi düşünebilirsin: çizginin bir yanına düşen yağmur bir vadiye, öbür yanına düşen öbür vadiye akar. Benzetmenin sınırı şu: gerçek lob düz bir çizgi değil, üç boyutlu bir hacimdir. Wikipedia çiftleri buna göre üçe ayırır. Ayrık çiftte iki yıldız da kendi lobunun içinde kalır ve birbirinden bağımsız evrimleşir. Yarı ayrık çiftte yıldızlardan biri lobunu doldurur ve taşan gaz yoldaşına akar. Değen çiftte iki yıldız da lobunu doldurmuştur ve sonunda birleşebilir. Algol paradoksunun çözümündeki akış, yarı ayrık bir evrede yaşanan bu taşmadır.",
+        "Kütleyi alan yıldız bir beyaz cüce (d6) olunca iş tehlikeli hâle gelir. Swinburne Üniversitesi'nin astronomi ansiklopedisine göre klasik novada bir beyaz cüce ile bir anakol yıldızı, genellikle 12 saatten kısa bir dönemle birbirinin çevresinde dolanır. Beyaz cücenin güçlü kütleçekimi yoldaşından hidrojen çeker; gaz önce beyaz cücenin çevresinde bir toplanma diskinde döner, sonra yüzeyinde bir katman olarak birikir. Katman yaklaşık 10 milyon kelvine ulaşınca hidrojen kaynaşmaya başlar. Açığa çıkan enerji sıcaklığı artırır, artan sıcaklık tepkimeyi hızlandırır: kaçak bir termonükleer tepkime. Yanmamış hidrojenin çoğu saniyede 1.500 km'ye varan hızla bir kabuk hâlinde savrulur ve sistem kısa bir süre için 6 ile 19 kadir arasında parlaklaşır. Buna nova denir.",
+        "Nova ile süpernovayı karıştırma. Swinburne'e göre bir klasik nova yaklaşık 10³⁷ joule açığa çıkarır; d6'daki Ia süpernovası ise yaklaşık 10⁴⁴ joule, yani on milyon kat fazla. Asıl fark sonuçtadır: novada beyaz cüce de yoldaşı da yaşamayı sürdürür, çift bozulmaz. Bu yüzden aynı sistem yeniden patlayabilir. Birden çok patlaması gözlenmiş olanlara tekrarlayan nova denir; Swinburne'e göre bunlarda patlamalar arası 10 ile 100 yıl arasındadır. Yalnızca bir kez patladığı görülen klasik novalarda bile süreç döngüseldir, ama çok yavaştır: 1,3 Güneş kütleli bir beyaz cüce için iki patlama arası yaklaşık 30.000, 0,6 Güneş kütleli bir beyaz cüce için yaklaşık 100.000 yıl tahmin edilir. Yani ağır beyaz cüce çok daha sık patlar.",
+        "Bugün en çok beklenen tekrarlayan nova Kuzeytacı'ndaki T Coronae Borealis'tir; IAU'nun yıldız adları çalışma grubu 22 Eylül 2025'te onun için Alevli Yıldız (Blaze Star) adını resmî olarak onayladı. Wikipedia'ya göre yaklaşık 3.000 ışık yılı uzaktaki sistemde yaklaşık 0,93 Güneş kütleli bir kırmızı dev ile yaklaşık 1,35 Güneş kütleli bir beyaz cüce 227,6 günde bir dolanır. Yıldız normalde 10 kadir dolayındadır, yani çıplak gözle görünmez. 12 Mayıs 1866'da 2,0, 9 Şubat 1946'da 3,0 kadire yükseldi; 1946 tepe değeri için 2,5 veren kaynaklar da var. İki patlama arası yaklaşık 80 yıl olduğu için gökbilimciler yeni patlamayı birkaç yıldır bekliyor.",
+        "Ama tarih vermek zor. Sky & Telescope'a göre 2024 ve 2025 için öne sürülen tarihler patlamasız geçti. Pei ve arkadaşlarının 2026 tarihli çalışması, hiçbir tek gözlemin kesin bir saat gibi kullanılamayacağını savunuyor; Temmuz 2026'ya kadar patlama olmadığını kabul eden senaryolarından birinde olası tarih Aralık 2026, bir başkasında en erken Mayıs 2029. Wikipedia'ya göre Eylül 2026 itibarıyla nova gözlenmemişti; bu ders yazılırken (Ekim 2026) de durum buydu. Patlarsa kaynaklara göre bir iki gece ile birkaç gün arasında çıplak gözle görülecek, sonra sönecek. Kuzeytacı'nın dik açıklığı yaklaşık +25,9° olduğu için yıldız İstanbul'da meridyende yaklaşık 75° yüksekliğe çıkar; kaynaklar kuzey yarımkürede en iyi dönemi ilkbahar ve yaz olarak verir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Alevli Yıldız patlarsa kaç kat parlar?",
+        "metin": "Kadir farkından oran: farkı 0,4 ile çarp, 10'un o kuvvetini al (d1). 1. adım: Normal hâl yaklaşık 10, 1866 tepe değeri 2,0 kadir. Fark 8 kadir. 0,4 × 8 = 3,2; oran = 10^3,2 ≈ 1.580. 2. adım: 1946 tepe değeriyle (3,0) fark 7 kadir; 0,4 × 7 = 2,8; oran = 10^2,8 ≈ 630. 3. adım: 2,0 kadir, Algol'ün normal parlaklığına (2,1) çok yakındır. Yani patlarsa Kuzeytacı'nda birden Algol kadar parlak bir yıldız belirir. 4. adım: Yükseklik: h = 90° − 41,0° + 25,9° ≈ 74,9°. 5. adım: Enerji kıyası: Ia süpernovası 10⁴⁴, nova 10³⁷ joule; oran 10⁷, yani on milyon. Sonuç: T Coronae Borealis bir patlamada yaklaşık 630 ile 1.580 kat parlaklaşır ve İstanbul'da gökte yüksekte görünür, ama açığa çıkardığı enerji bir süpernovanınkinin yaklaşık on milyonda biridir."
+      },
+      "akilda": "Yakın çiftlerde her yıldızın bir Roche lobu vardır; lobunu dolduran yıldız gazını yoldaşına verir. Alan yıldız beyaz cüceyse yüzeyde biriken hidrojen 10 milyon kelvinde tutuşur ve nova olur; çift yaşamaya devam ettiği için patlama tekrarlanabilir. Kuzeytacı'ndaki T Coronae Borealis 1866 ve 1946'da patladı; yeni patlaması bekleniyor."
+    },
+    {
       "baslik": "Değişen yıldızlar: kendi ışığı oynayanlar",
       "paragraflar": [
         "Algol'ün ışığı geometri yüzünden değişir: yıldızlar aslında hep aynı parlaklıktadır, değişen yalnızca bizim bakış açımızdan kimin kimi örttüğüdür. Bir de ışığı gerçekten değişen yıldızlar vardır: şişip büzülen, ya da yüzeyinde ve çevresinde fırtınalar kopan yıldızlar. Bunların en önemlileri zonklayan yıldızlardır.",
@@ -108,11 +149,42 @@
       "akilda": "Örten çiftlerde ışık geometri yüzünden, zonklayan yıldızlarda gerçekten değişir. Sefeidler (adını 1784'te Goodricke'nin bulduğu Delta Cephei'den alır) ve RR Lyrae kararsızlık şeridindedir; Leavitt 1912'de Sefeidlerin dönemi ile parlaklığı arasındaki ilişkiyi gösterdi. Mira 332 günde bir ortalama 3,5'ten 8,6–10,1 kadire iner; genç T Tauri yıldızları düzensiz değişir."
     },
     {
+      "baslik": "Bir yıldız neden zonklar?",
+      "paragraflar": [
+        "Bir yıldız neden durup dururken şişip büzülsün? Normalde yıldız dengededir: içe çeken kütleçekimini dışa iten basınç karşılar (hidrostatik denge, d5). Zonklayan bir yıldızda ise bu denge sürekli bozulup yeniden kurulur ve salınımı besleyen bir düzenek vardır. Eddington 1918 ve 1919'da yıldız atmosferinin salınımları için bir kuram geliştirdi. Bugün Sefeidler ve RR Lyrae yıldızları için kabul edilen açıklamanın adı kappa mekanizmasıdır; Bhardwaj'ın 2020 tarihli derlemesine göre zonklamayı esas olarak iyonlaşma kuşaklarındaki opaklık artışı sürer. Opaklık, gazın ışığı ne kadar geçirmediğidir: sisli hava gibi opak gaz ışığı tutar, açık hava gibi saydam gaz geçirir.",
+        "Düzenek bir supap gibi çalışır. Yıldızın dış katmanlarında gazın iyonlaştığı, yani atomların elektron yitirdiği kuşaklar vardır; Bhardwaj'a göre bunlardan biri, zarfın daha derininde, helyumun ikinci elektronunu da yitirdiği kuşaktır. Yıldız büzüldüğünde bu kuşaklarda opaklık artar: gaz içeriden gelen ışınımı tutar, ısı ve basınç birikir. Biriken basınç katmanları dışarı iter. Yıldız genişleyince opaklık azalır, tutulan enerji salıverilir, basınç düşer ve katmanlar yeniden içe çöker. Sonra döngü baştan başlar. Kaynak da bunu mekanik bir supaba benzetir. Benzetmenin sınırı şu: gerçek bir supabın aksine burada hareketli bir kapak yoktur; açılıp kapanan şey gazın ışığı geçirme yeteneğidir.",
+        "Bu düzenek her yıldızda çalışmaz. Bhardwaj'a göre zonklayan klasik değişenler H-R diyagramında sıcaklıkça dar, dikey bir bölgede toplanır; yıldızların zonklamaya karşı kararsız olduğu bu bölge, önceki bölümde gördüğün kararsızlık şerididir. Aynı şeridin iki ünlü sakini birbirine hiç benzemez. Klasik Sefeidler genç (yaklaşık 10 ile 300 milyon yıl), 3 ile 10 Güneş kütleli, ağır elementçe zengin yıldızlardır; temel dönemleri yaklaşık 1 ile 100 gün arasındadır. RR Lyrae yıldızları ise 10 milyar yıldan yaşlı, ağır elementçe fakir yıldızlardır; Wikipedia'ya göre kütleleri Güneş'inkinin yarısı kadardır, dönemleri genellikle bir günden kısadır ve yedi saate kadar iner.",
+        "Wikipedia'ya göre RR Lyrae yıldızlarının ortalama mutlak kadiri yaklaşık +0,75'tir; yani Güneş'ten 40 ile 50 kat parlaktırlar. Hepsi aşağı yukarı aynı gerçek parlaklıkta olduğu için yakın galaktik uzaklıkları ölçmede kullanılırlar (uzaklık merdiveni d17'de). Samanyolu'nda yaklaşık 85.000 RR Lyrae olduğu tahmin ediliyor; bu, bilinen bütün Sefeidlerin birkaç katı. Türe adını veren RR Lyrae'yi Williamina Fleming 1899'dan önce buldu ve Pickering 1900'de duyurdu. 1890'ların ortasında bu türden yıldızlar çoğunlukla küresel küme taramalarında hızla bulunuyordu. Bu bağ anlamlı: küresel kümeler yaşlı olduğu için, yaşlı RR Lyrae yıldızlarının doğal yuvasıdır.",
+        "Kırmızı süperdevler de değişir, ama daha düzensiz. Avcı'daki Betelgeuse, Wikipedia'ya göre yarı düzenli değişen sınıfındadır: yaklaşık 400 günlük bir ana dönemi ve yaklaşık 2.100 günlük ikinci, daha uzun bir dönemi vardır. Parlaklığı normalde 0,0 ile +1,6 kadir arasında oynar, çoğu zaman +0,5 dolayındadır. 2019 sonbaharında beklenmedik bir şey oldu: Büyük Kararma. NASA'ya göre yıldız birkaç ay içinde ışığının yaklaşık yüzde 60'ını yitirdi ve Nisan 2020'ye doğru eski parlaklığına döndü. Wikipedia en düşük güvenilir değeri Şubat 2020'de +1,614 kadir olarak verir. Yıldız en sönükken bile +1,6 kadir olduğu için bu kararma, ışık kirliliği olan şehirlerden de çıplak gözle izlenebilen bir olaydı.",
+        "Neden kararmıştı? NASA'ya göre yıldız yüzeyinden bir miktar madde fırlattı; bu madde soğuyup tozdan bir bulut oluşturdu ve yıldızın ışığını geçici olarak perdeledi. Wikipedia'ya göre Haziran 2021'de tozun yüzeydeki soğuk bir lekeyle ilişkili olabileceği öne sürüldü; 2022'de Hubble ile yapılan bir çalışma da tozun bir yüzey kütle atımıyla oluşmuş olabileceğini söyledi. NASA, atımı neyin tetiklediğinin hâlâ bilinmediğini ekler. Kararma bir süpernova habercisi değildi: NASA'ya göre yaklaşık 700 ışık yılı uzaktaki Betelgeuse'ün süpernova olması büyük olasılıkla yaklaşık 100.000 yıl daha gerçekleşmeyecek."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Büyük Kararma'yı iki kaynakla sınamak",
+        "metin": "Wikipedia kararmayı kadirle, NASA yüzdeyle anlatıyor. İkisi tutarlı mı? 1. adım: Normal parlaklık yaklaşık +0,5, en sönük değer +1,614 kadir. Fark 1,114 kadir. 2. adım: 0,4 × 1,114 ≈ 0,446; oran = 10^0,446 ≈ 2,79. 3. adım: Yıldız en sönükken normal ışığının 1 ÷ 2,79 ≈ %36'sını veriyordu; kayıp ≈ %64. 4. adım: NASA'nın “yaklaşık yüzde 60” ifadesiyle karşılaştır: iki değer birbirine yakın. Küçük fark, “normal parlaklık” için hangi değerin alındığına bağlıdır; yıldız zaten 0,0 ile +1,6 arasında oynar. Sonuç: Betelgeuse Büyük Kararma'da ışığının kabaca üçte ikisini yitirdi; iki kaynak farklı dille aynı olayı anlatıyor."
+      },
+      "akilda": "Sefeidler ve RR Lyrae yıldızları kappa mekanizmasıyla zonklar: iyonlaşma kuşaklarındaki opaklık bir supap gibi ışınımı tutup salar. Sefeidler genç ve kütleli, RR Lyrae yaşlı ve hafiftir; ikisi de kararsızlık şeridindedir. Betelgeuse yarı düzenli bir değişendir; 2019–2020'deki Büyük Kararma'da tozun perdelemesiyle ışığının yaklaşık yüzde 60'ını yitirdi."
+    },
+    {
+      "baslik": "Değişen yıldızları izlemek: adlar ve tahminler",
+      "paragraflar": [
+        "Gök haritalarında R Coronae Borealis, SS Cygni ya da V603 Aquilae gibi adlar görürsen bunlar değişen yıldız adlarıdır. Wikipedia'ya göre sistemi Friedrich Argelander kurdu. Bir takımyıldızda bulunan ilk değişen yıldıza R harfi verilir, sonra S, T diye Z'ye kadar gidilir; ardından RR'den RZ'ye, SS'den SZ'ye diye ZZ'ye kadar, daha sonra AA'dan QZ'ye kadar çift harfler gelir. J harfi hiç kullanılmaz. Böylece 334 ad çıkar; daha fazlası için V335, V336 diye numara verilir. Harfin ardından takımyıldızın Latince adının iyelik biçimi gelir. Neden R? Wikipedia'ya göre Bayer'in Latin harfleri çok az takımyıldızda Q'yu geçtiği için R güvenli bir başlangıçtı; R'nin Almanca “kırmızı” sözcüğünden geldiği yaygın sanısını Argelander'in kendi açıklaması çürütür.",
+        "AAVSO'ya göre adlar, bir takımyıldızdaki keşif sırasına göre verilir ve zaten Yunan harfli bir adı olan yıldız o adı korur. Bu yüzden Algol değişen yıldız kataloglarında da Beta Persei, Sefeidlerin önderi de Delta Cephei olarak geçer. Kuzeytacı'nın novasının adındaki T ise sıradaki yerini gösterir: R ve S'den sonra o takımyıldızın üçüncü harfidir. Adlar ezber için değil, gök haritasında doğru yıldızı bulmak içindir; harfi görünce onun bir değişen yıldız olduğunu ve parlaklığına güvenmemen gerektiğini hemen anlarsın.",
+        "Değişen yıldız ölçmek için pahalı bir alet gerekmez. Yöntem karşılaştırmadır: değişen yıldızı, parlaklığı bilinen ve değişmeyen yakın yıldızlarla kıyaslarsın. İngiliz Astronomi Derneği'nin (BAA) Algol için önerdiği karşılaştırma yıldızları şunlar: Alfa Persei 1,8; Gama Andromedae 2,1; Epsilon ve Gama Persei 2,9; tutulmanın ortasına yakın kullanmak için Kraliçe'deki Epsilon Cassiopeiae 3,3 ve Üçgen'deki Alfa Trianguli 3,4; tutulmanın dibinde bile Algol'den sönük kalan Kappa Persei 3,8. Buna karşılaştırma yıldızı denir. Dernek yaklaşık 30 dakikada bir tahmin yapmanın yeteceğini söyler.",
+        "Tahmin şöyle yapılır: Algol'ün bir karşılaştırma yıldızından sönük, ötekinden parlak olduğunu görürsün ve onu iki yıldızın arasındaki kadir aralığına yerleştirirsin. Tam ortada görüyorsan iki kadirin ortalamasını yazarsın. Tek bir tahmin kabadır, ama gece boyunca yaptığın tahminleri saate karşı bir grafiğe dökersen kararmanın eğrisi ve en dibin zamanı ortaya çıkar. Algol bölümünde andığımız gözle zamanlanmış minimumlar da bu türden ölçümlerdir. Bir uyarı: Wikipedia'ya göre ufka yakın cisimler, ışıkları daha kalın bir hava tabakasından geçtiği için tepedekilerden sönük görünür. Karşılaştırma yıldızın ufka çok yakınsa tahminin kayar; mümkünse Algol'e benzer yükseklikteki yıldızları seç. İstanbul'da Algol yükseldikçe bu daha kolaydır, çünkü Algol neredeyse başucundan geçer."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Algol'ün parlaklığını tahmin etmek",
+        "metin": "Bir gece Algol, Epsilon Persei'den (2,9) sönük, Epsilon Cassiopeiae'den (3,3) parlak görünüyor; aralığın kabaca dörtte üçünde, sönük yıldıza yakın diyelim (örnek gözlem). 1. adım: Aralık = 3,3 − 2,9 = 0,4 kadir. 2. adım: Dörtte üçü = 0,3 kadir. 3. adım: Tahmin = 2,9 + 0,3 = 3,2 kadir. 4. adım: Algol en dipte yaklaşık 3,4 kadire iniyordu; demek ki dibe yaklaşmışsın. Yarım saat sonra yeniden bak: hâlâ sönükleşiyorsa dip daha gelmemiştir. 5. adım: VSX'e göre tutulma 9,63 saat sürer. Yarım saatte bir tahminle tutulmanın tamamında 9,63 ÷ 0,5 ≈ 19 tahmin yapılır. Sonuç: bu gözlemde Algol yaklaşık 3,2 kadir; bütün bir tutulmayı izlersen yaklaşık 19 noktalık bir ışık eğrisi çıkarırsın."
+      },
+      "akilda": "Değişen yıldızlar takımyıldızda bulunuş sırasına göre R, S, T … Z, RR … ZZ, AA … QZ ve sonra V335 diye adlandırılır; Yunan harfli yıldızlar adlarını korur. Parlaklığı, bilinen karşılaştırma yıldızları arasına yerleştirerek tahmin edersin; Algol için yarım saatte bir tahmin, bir gecede kararma eğrisini çıkarmaya yeter."
+    },
+    {
       "baslik": "İstanbul'dan gözlem rehberi",
       "paragraflar": [
         "Algol'ü izlemek için en iyi araç kendi gözündür. Algol'ün dik açıklığı yaklaşık +41,0°, İstanbul'un enlemi de 41,0° olduğu için Algol meridyenden geçerken neredeyse tam tepende, yaklaşık 90° yükseklikte olur. Kutup çevresi yıldızı değildir: enlemle dik açıklığın toplamı 90°'yi aşmadığı için her gün yaklaşık 5,5 saat ufkun altında kalır ve en alçakta ufkun yaklaşık 8° altına iner. Urania'nın “Bu gece gökyüzü” sayfasındaki “Algol'ün kararması” listesi, önümüzdeki 30 gün içinde karanlıkta görülebilecek en sönük anları gösterir. En iyisi en sönük andan bir iki saat önce başlayıp Algol'ü yakınındaki parlaklığı bilinen yıldızlarla karşılaştırarak izlemek.",
         "Çift yıldızlara bakmak için Büyük Ayı'daki Mizar ile Alcor iyi bir başlangıçtır. Uygulamanın doğrulanmış verisine göre Mizar 2,22, Alcor 4,01 kadirdir ve aralarında 11,8 yay dakikası vardır. Wikipedia'ya göre bu ikili teleskopsuz kolayca görülür; Araplar ve eski İranlılar Mizar ile Alcor'u ayırt etmeyi bir göz sınavı olarak kullanırdı. Astronomy Now ikisinin dürbünde de güzel göründüğünü yazar. Mizar'ın dik açıklığı yaklaşık +54,9° olduğu için İstanbul'da hiç batmaz: enlemle dik açıklığın toplamı 90°'yi aşar ve yıldız en alçakta bile ufkun yaklaşık 6° üstünde kalır. Yani yılın her gecesi ufkun üstündedir.",
         "Mizar'ın kendisi de bir çifttir: Mizar A ile Mizar B arasında yalnızca 14,4 yay saniyesi var, yani ilk aralıktan yaklaşık 50 kat dar. Bunu çıplak gözle ayıramazsın. Astronomy Now'a göre görüntü sabitleyicili bir dürbün yetebilir, en küçük teleskop ise ikisini rahatça gösterir. Aynı kaynağa göre Benedetto Castelli Ocak 1617'de Galileo'nun teleskoplarından biriyle Mizar'a bakıp çiftliği gördü; Wikipedia ise Giovanni Battista Riccioli'nin 1650'deki kaydını da anar. SIMBAD veritabanı hem Mizar A'yı hem Mizar B'yi tayfsal çift olarak sınıflar; Astronomy Now'a göre Mizar A 1889'da tanınan ilk tayfsal çifttir. Yani gözünle tek gördüğün Mizar noktası aslında en az dört yıldızdır.",
+        "Dağılmakta olan bir kümeyi görmek istersen Büyük Kepçe'ye bak. Kulpun ucundaki Alkaid ile kasedeki Dubhe arasında kalan beş yıldız (Mizar, Alioth, Megrez, Phecda ve Merak), Alcor'la birlikte yaklaşık 500 milyon yıl önce aynı bulutta doğmuş bir ailedir; Alkaid ile Dubhe ise bu aileden değildir. Gözünle bu farkı göremezsin, ama artık Kepçe'ye her bakışında yedi yıldızın ikisinin yabancı olduğunu biliyorsun. Kuzeytacı'nı da öğren: Starwalk'a göre Çoban ile Herkül arasındaki küçük yarım daire biçimli takımyıldızdır ve Alevli Yıldız onun yayının hemen altındadır. Patlama haberi gelirse onu bulmak için Kuzeytacı'nın yerini önceden bilmek işini kolaylaştırır; Starwalk en uygun dönem olarak Mart–Ağustos'u verir.",
         "Kuğu'daki Albireo'nun iki bileşeni arasında 34,6 yay saniyesi vardır; parlak bileşen 3,08, sönük bileşen 5,11 kadirdir. Çıplak gözle tek bir yıldız gibi görünür. Dürbün konusunda kaynaklar ayrışır: EarthSky sıradan dürbünlerin onu iki yıldız olarak göstermeyeceğini, ancak üç ayağa takılmış çok güçlü bir dürbünün yetebileceğini yazar; Astronomy Now ise sabit duran bir 10×50 dürbünle kolayca ayrıldığını söyler. Elde tutulan bir 7×50 ile ayrılıp ayrılmadığını kaynaklar söylemiyor; denemeye değer. İki kaynak küçük bir teleskopun yettiğinde birleşir; EarthSky yaklaşık 30 kat büyütme önerir. Renkleri altın sarısı ve mavi diye anlatılır. İki yıldızın birbirine kütleçekimiyle bağlı olup olmadığı hâlâ kesin değil. Bu aralıkları dürbünün ve teleskobun ayırma gücüyle karşılaştır (d11, d12).",
         "Kümeler için başlangıç listesi: Boğa'da Ülker ve Hyades, Kahraman'da Çift Küme, Yengeç'te Arıkovanı, Berenis'in Saçı kümesi (1,8 kadir, yaklaşık 275 yay dakikası) ve Herkül'de M13 ile M92. Hangisinin o gece yukarıda olduğunu aynı sayfadaki “Bu gecenin planı” gösterir; plan yüksekliği, bulut tahminini ve Ay ışığını hesaba katar. Bir açık kümeyle bir küresel kümeyi aynı gece görürsen aralarındaki yaş farkını hatırla: birinde galaksinin diskinde görece yakın zamanda doğmuş yıldızlar, ötekinde 12 milyar yılı aşkın yaşlı yıldızlar.",
         "Hangi küme hangi mevsimde? Kuzey yarımküre için kaynakların söylediği şu. NASA'ya göre Ülker'i gözlemenin en iyi ayı Aralık'tır; Wikipedia onu kuzeyin kış gökyüzünün göze çarpan bir parçası sayar. Hyades Astronomy Now'a göre sonbaharın sonundan kış boyunca görülür; NASA'nın Gece Gökyüzü Ağı, Hyades'in ve Ülker'in Ocak akşamlarında doğuda yükseldiğini yazar. Arıkovanı ilkbaharın kümesidir: NASA'ya göre gökte en yüksek noktasına Mart'ta ulaşır. M13'ü NASA'ya göre dürbünle en kolay Temmuz'da bulursun; Wikipedia en uzun görünürlüğü ilkbahar ve yaza verir. Albireo Astronomy Now'a göre yaz gecelerinin hedefidir. Kahraman'daki Çift Küme Wikipedia'ya göre kuzeyin ılıman enlemlerinin çoğundan kutup çevresidir: dik açıklığı +57,1° olduğu için İstanbul'da hiç batmaz, en alçakta ufkun yaklaşık 8° üstünde kalır. EarthSky 2026 için Mira'nın Ocak–Mart akşamlarında gökte olduğunu yazıyordu."
@@ -140,6 +212,11 @@
       "ad": "Meridyende yükseklik",
       "ifade": "h = 90° − φ + δ",
       "aciklama": "φ gözlemcinin enlemi (İstanbul ≈ 41°), δ cismin dik açıklığı. Cismin çıkabileceği en büyük yükseklik (d1'deki kutup yüksekliği kuralından). δ enlemden küçükse geçerlidir; δ enlemden büyükse cisim başucunun kuzeyinden geçer ve h = 90° + φ − δ olur."
+    },
+    {
+      "ad": "Açıdan uzunluğa (parsek tanımı)",
+      "ifade": "a (AB) = α (yay saniyesi) × d (parsek)",
+      "aciklama": "α gökte ölçülen açı (örneğin bir çiftin yarı büyük ekseni), d uzaklık. 1 parsek uzaklıktaki 1 yay saniyesi 1 AB'ye karşılık gelir. Küçük açılar için geçerlidir; yörünge bize eğik duruyorsa gökte ölçülen açı gerçek yarı büyük ekseni olduğundan küçük gösterebilir."
     }
   ],
   "anahtar_sayilar": [
@@ -244,6 +321,51 @@
       "aciklama": "SIMBAD konumlarından hesaplanan açısal ayrımlar (uygulamanın doğrulama dosyası)",
       "kaynak_url": "https://simbad.cds.unistra.fr/simbad/sim-id?output.format=ASCII&Ident=zet01%20UMa",
       "kid": "d15n16"
+    },
+    {
+      "deger": "1.100'den fazla; yarı ömür 150–800 milyon yıl",
+      "aciklama": "Samanyolu'nda bilinen açık küme sayısı ve açık kümelerin yarı ömrü",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Open_cluster"
+    },
+    {
+      "deger": "800 parsek; binlerce eski üye; 24 Mart 2021",
+      "aciklama": "Gaia verisiyle bulunan Hyades gelgit kuyruklarının uzunluğu (makale başlığı) ve ESA duyurusunun tarihi",
+      "kaynak_url": "https://www.esa.int/Science_Exploration/Space_Science/Gaia/Is_the_nearest_star_cluster_to_the_Sun_being_destroyed"
+    },
+    {
+      "deger": "~80 ışık yılı; 500 ± 100 milyon yıl; 14 km/s",
+      "aciklama": "Büyük Ayı hareketli grubunun (Büyük Kepçe'nin 5 yıldızı ve Alcor) uzaklığı, yaşı ve uzaydaki hızı",
+      "kaynak_url": "https://skyandtelescope.org/astronomy-news/a-new-way-to-see-the-big-dipper/"
+    },
+    {
+      "deger": "50,1 yıl; 7,4957″; 2,063 + 1,018 M☉",
+      "aciklama": "Sirius A–B yörüngesinin dönemi, yarı büyük ekseni ve bileşen kütleleri",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Sirius"
+    },
+    {
+      "deger": "95 sistem, 190 yıldız; kütle ve yarıçap %3 ya da daha iyi",
+      "aciklama": "Torres, Andersen ve Giménez 2010 derlemesindeki ayrık çiftler (94'ü örten çift)",
+      "kaynak_url": "https://arxiv.org/abs/0908.2624"
+    },
+    {
+      "deger": "1866 (2,0 kadir), 1946 (3,0); normalde ~10; 227,6 gün; ~3.000 ışık yılı",
+      "aciklama": "T Coronae Borealis (Alevli Yıldız): patlamalar, normal parlaklık, yörünge dönemi, uzaklık",
+      "kaynak_url": "https://en.wikipedia.org/wiki/T_Coronae_Borealis"
+    },
+    {
+      "deger": "10³⁷ J (nova) ve 10⁴⁴ J (Ia); 6–19 kadir",
+      "aciklama": "Klasik novanın ve Ia süpernovasının enerjisi; novanın parlaklaşma miktarı",
+      "kaynak_url": "https://astronomy.swinburne.edu.au/cosmos/C/Classical+Novae"
+    },
+    {
+      "deger": "+0,75; bir günden kısa; ~85.000",
+      "aciklama": "RR Lyrae yıldızlarının ortalama mutlak kadiri, dönemi ve Samanyolu'ndaki tahmini sayısı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/RR_Lyrae_variable"
+    },
+    {
+      "deger": "+1,614 kadir (Şubat 2020); ~%60 kayıp",
+      "aciklama": "Betelgeuse'ün Büyük Kararma'daki en düşük parlaklığı ve ışık kaybı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Betelgeuse"
     }
   ],
   "sozluk": [
@@ -311,18 +433,58 @@
       "terim": "Kaçamak bakış",
       "tanim": "Sönük bir cisme doğrudan değil biraz yanına bakarak onu daha iyi seçme yöntemi.",
       "kid": "d15t12"
+    },
+    {
+      "terim": "gelgit kuyruğu",
+      "tanim": "Bir kümeden kopan yıldızların galaksinin kütleçekimiyle kümenin önünde ve arkasında dizildiği uzun kol."
+    },
+    {
+      "terim": "hareketli grup",
+      "tanim": "Dağılmış bir kümeden kalan, gökte dağınık görünse de uzayda hâlâ birlikte hareket eden yıldız topluluğu."
+    },
+    {
+      "terim": "mavi başıboş",
+      "tanim": "Bir kümede dönüm noktasının üstünde duran, yaşıtlarından daha sıcak ve parlak, büyük olasılıkla birleşme ya da kütle aktarımıyla oluşmuş yıldız."
+    },
+    {
+      "terim": "astrometrik çift",
+      "tanim": "Yoldaşı görünmeyen, ama gökteki yalpalamasından yoldaşı olduğu anlaşılan yıldız."
+    },
+    {
+      "terim": "Roche lobu",
+      "tanim": "Bir çiftte, bir yıldızın kütleçekiminin yoldaşınınkinden güçlü olduğu ve içindeki gazın o yıldıza ait sayıldığı bölge."
+    },
+    {
+      "terim": "nova",
+      "tanim": "Bir beyaz cücenin yüzeyinde yoldaşından aldığı hidrojenin kaçak füzyonla tutuşması sonucu sistemin birdenbire parlaması."
+    },
+    {
+      "terim": "tekrarlayan nova",
+      "tanim": "Birden fazla patlaması gözlenmiş nova; patlamaları arasında onlarca yıl geçebilir."
+    },
+    {
+      "terim": "kappa mekanizması",
+      "tanim": "Yıldızın iyonlaşma kuşaklarındaki opaklığın bir supap gibi ışınımı tutup salarak zonklamayı sürdürmesi."
+    },
+    {
+      "terim": "yarı düzenli değişen",
+      "tanim": "Parlaklığı belli bir dönemin çevresinde ama tam düzenli olmadan değişen, çoğunlukla kırmızı dev ya da süperdev yıldız."
+    },
+    {
+      "terim": "karşılaştırma yıldızı",
+      "tanim": "Değişen bir yıldızın parlaklığını gözle tahmin etmek için kıyas olarak kullanılan, parlaklığı bilinen ve değişmeyen yıldız."
     }
   ],
   "defter_notu": [
     "Yıldızlar kümeler halinde doğar; küme üyeleri aynı yaş, aynı bileşim, aynı uzaklık. Fark = kütle.",
-    "Açık küme: disk, genç. Ülker ~444 ışık yılı, ~115 milyon yıl; Hyades 153 ışık yılı, 625 milyon yıl; Arıkovanı ~600 ışık yılı, ~600 milyon yıl. Küresel küme: hale, 150'den fazla, on binlerce–milyonlarca yıldız, en yaşlıları ~12,6 milyar yıl. İstanbul'dan en kolayı M13.",
-    "Shapley 1918: küresel kümeler Yay yönünde toplanıyor → Güneş merkezde değil.",
+    "Açık küme: disk, genç. Ülker ~444 ışık yılı, ~115 milyon yıl; Hyades 153 ışık yılı, 625 milyon yıl; Arıkovanı ~600 ışık yılı, ~600 milyon yıl. Küresel küme: hale, 150'den fazla, on binlerce–milyonlarca yıldız, en yaşlıları ~12,6 milyar yıl. İstanbul'dan en kolayı M13. Shapley 1918: küresel kümeler Yay yönünde toplanıyor → Güneş merkezde değil.",
+    "Kümeler dağılır: gaz kaybı (bebek ölümü), iç karşılaşmalar, bulutlar; yarı ömür 150–800 milyon yıl. Hyades gelgit kuyrukları (Gaia, ESA 2021, 800 parsek). Büyük Kepçe'nin 5 yıldızı + Alcor = Büyük Ayı hareketli grubu (~80 ışık yılı, ~500 milyon yıl); Dubhe ve Alkaid değil.",
     "Dönüm noktası: anakolu terk eden en kütleli yıldız → küme yaşı. B0 ≈ 4 milyon yıl, A0 ≈ 570 milyon, G2 ≈ 10 milyar.",
     "Çift türleri: görsel, tayfsal (Doppler), örten (ışık azalır), yalpalamadan (Sirius B, Bessel 1844).",
     "Kütle toplamı = a³ ÷ P² (AB, yıl, M☉). Algol: 0,062³ ÷ 0,00785² ≈ 3,87 M☉.",
-    "Algol: 2,87 günde bir 2,1 → 3,4 kadir, ~10 saat; Montanari 1667, Goodricke 1783, Vogel 1889.",
-    "Algol paradoksu: hafif yıldız daha evrimli → kütle aktarımı.",
-    "Zonklayanlar: Sefeid (Delta Cephei, Goodricke 1784; Leavitt 1912, 25 Sefeid) ve RR Lyrae; Mira (Balina, Fabricius 1596, 332 gün, 3,5 → 8,6–10,1).",
+    "Algol: 2,87 günde bir 2,1 → 3,4 kadir, ~10 saat; Montanari 1667, Goodricke 1783, Vogel 1889. Algol paradoksu: hafif yıldız daha evrimli → kütle aktarımı (Roche lobu taşması).",
+    "Nova: beyaz cüce + yoldaş, yüzeyde hidrojen 10 milyon K'de tutuşur, 6–19 kadir parlar, 10³⁷ J. T CrB (Kuzeytacı, Alevli Yıldız): 1866, 1946, ~80 yılda bir; patlarsa ~2 kadir, İstanbul'da ~75° yükseklik.",
+    "Zonklayanlar: Sefeid (Delta Cephei, Goodricke 1784; Leavitt 1912, 25 Sefeid) ve RR Lyrae; Mira (Balina, Fabricius 1596, 332 gün, 3,5 → 8,6–10,1). Zonklama: kappa mekanizması (opaklık supabı). RR Lyrae: yaşlı, dönem 1 günden kısa, mutlak kadir ≈ +0,75. Betelgeuse 2019–20: +0,5 → +1,6 (toz).",
     "İstanbul: Algol neredeyse başucundan geçer; M13 ~85°, M22 ~25°. Mizar ve Çift Küme hiç batmaz. Kış Ülker/Hyades, ilkbahar Arıkovanı, yaz M13/Albireo."
   ],
   "sorular": [
@@ -380,6 +542,30 @@
       "soru": "Sirius B görülmeden önce varlığı nasıl biliniyordu?",
       "cevap": "Bessel 1844'te Sirius'un gökteki yolunun düzenli olarak yalpaladığını fark etti; bu, görünmeyen bir yoldaşın kütleçekimiyle açıklanabiliyordu. Clark 1862'de yoldaşı gördü.",
       "kid": "d15s10"
+    },
+    {
+      "soru": "Hyades'in gelgit kuyrukları neden Gaia'dan önceki aramalarda bulunamadı?",
+      "cevap": "Eski aramalar yalnızca kümeyle aynı yönde ve neredeyse aynı hızla hareket eden yıldızlara bakıyordu. Kümeden kopan yıldızlar kendi yörüngelerine girip zamanla farklı hareket eder. Gaia'nın milyarı aşkın yıldız için verdiği uzaklık ve hareket ölçümleri, kaçan yıldızların yollarını canlandıran bir modelle karşılaştırılınca kuyruklar ortaya çıktı."
+    },
+    {
+      "soru": "Bir küresel kümede dönüm noktasının üstünde, anakolda duran sıcak ve parlak yıldızlar görüyorsun. Bunlar kümenin genç üyeleri midir?",
+      "cevap": "Büyük olasılıkla hayır. Bunlar mavi başıboşlardır: ya iki yıldızın birleşmesiyle ya da bir çiftte kütle aktarımıyla kütle kazanmış yaşlı yıldızlar. Kümenin merkezinde yoğunlaşmaları bu açıklamayı destekler; sonradan doğmuş olmaları en az olası açıklama sayılır."
+    },
+    {
+      "soru": "Bir çiftin yarı büyük ekseni gökte 2 yay saniyesi, sistem 5 parsek uzakta, dönem 10 yıl. Kütle toplamı nedir?",
+      "cevap": "a = 2 × 5 = 10 AB. M₁ + M₂ = a³ ÷ P² = 1.000 ÷ 100 = 10 Güneş kütlesi (yörüngenin bize göre eğik olmadığı varsayımıyla)."
+    },
+    {
+      "soru": "Nova ile Ia süpernovası arasındaki temel fark nedir?",
+      "cevap": "Novada beyaz cücenin yüzeyinde biriken hidrojen tutuşur, yaklaşık 10³⁷ joule açığa çıkar ve hem beyaz cüce hem yoldaşı yaşamaya devam eder; bu yüzden patlama tekrarlanabilir. Ia süpernovası yaklaşık 10⁴⁴ joule, yani on milyon kat fazla enerji açığa çıkarır (d6)."
+    },
+    {
+      "soru": "Kappa mekanizmasında yıldız büzülünce ne olur, neden bu salınımı besler?",
+      "cevap": "Büzülmede iyonlaşma kuşaklarında (örneğin helyumun ikinci kez iyonlaştığı kuşakta) opaklık artar; gaz ışınımı tutar, ısı ve basınç birikip katmanları dışa iter. Genişleyince opaklık azalır, enerji salınır, basınç düşer ve katmanlar geri çöker. Bu supap davranışı salınımı sönmeden sürdürür."
+    },
+    {
+      "soru": "Kuzeytacı'ndaki tekrarlayan novanın adı neden T harfiyle başlar? Algol neden böyle bir harf almadı?",
+      "cevap": "Argelander sisteminde bir takımyıldızda bulunan değişen yıldızlar sırayla R, S, T … diye adlandırılır; T o takımyıldızın üçüncü harfidir. Algol'ün zaten Yunan harfli bir adı (Beta Persei) olduğu için yeni ad verilmedi."
     }
   ],
   "kaynaklar": [
@@ -598,6 +784,86 @@
     {
       "ad": "AAVSO: Delta Cephei (5,366 gün; 3,5–4,4)",
       "url": "https://archive.aavso.org/vsots_delcep"
+    },
+    {
+      "ad": "Wikipedia, Open cluster",
+      "url": "https://en.wikipedia.org/wiki/Open_cluster"
+    },
+    {
+      "ad": "ESA, Is the nearest star cluster to the Sun being destroyed? (2021)",
+      "url": "https://www.esa.int/Science_Exploration/Space_Science/Gaia/Is_the_nearest_star_cluster_to_the_Sun_being_destroyed"
+    },
+    {
+      "ad": "Sky & Telescope, A New Way to See the Big Dipper",
+      "url": "https://skyandtelescope.org/astronomy-news/a-new-way-to-see-the-big-dipper/"
+    },
+    {
+      "ad": "Astronomy, Ursa Major Moving Group",
+      "url": "https://www.astronomy.com/science/ursa-major-moving-group/"
+    },
+    {
+      "ad": "Wikipedia, Blue straggler",
+      "url": "https://en.wikipedia.org/wiki/Blue_straggler"
+    },
+    {
+      "ad": "NASA, Hubble finds blue straggler stars in the core of a globular cluster (1991)",
+      "url": "https://science.nasa.gov/missions/hubble/nasas-hubble-space-telescope-finds-blue-straggler-stars-in-the-core-of-a-globular-cluster/"
+    },
+    {
+      "ad": "Wikipedia, Binary star",
+      "url": "https://en.wikipedia.org/wiki/Binary_star"
+    },
+    {
+      "ad": "Wikipedia, Sirius",
+      "url": "https://en.wikipedia.org/wiki/Sirius"
+    },
+    {
+      "ad": "Torres, Andersen ve Giménez 2010, Accurate masses and radii of normal stars (arXiv)",
+      "url": "https://arxiv.org/abs/0908.2624"
+    },
+    {
+      "ad": "Swinburne COSMOS, Classical Novae",
+      "url": "https://astronomy.swinburne.edu.au/cosmos/C/Classical+Novae"
+    },
+    {
+      "ad": "Wikipedia, T Coronae Borealis",
+      "url": "https://en.wikipedia.org/wiki/T_Coronae_Borealis"
+    },
+    {
+      "ad": "Sky & Telescope, Waiting for the Blaze Star",
+      "url": "https://skyandtelescope.org/astronomy-blogs/stargazing-why-we-look-up/waiting-for-the-blaze-star/"
+    },
+    {
+      "ad": "Pei ve ark. 2026, When will T Coronae Borealis next erupt as a nova? (arXiv 2607.15245)",
+      "url": "https://www.alphaxiv.org/abs/2607.15245.md"
+    },
+    {
+      "ad": "Star Walk, T Coronae Borealis",
+      "url": "https://starwalk.space/ay/en/tcrb"
+    },
+    {
+      "ad": "Bhardwaj 2020, High-precision distance measurements with classical pulsating stars (arXiv)",
+      "url": "https://arxiv.org/pdf/2006.16262"
+    },
+    {
+      "ad": "Wikipedia, RR Lyrae variable",
+      "url": "https://en.wikipedia.org/wiki/RR_Lyrae_variable"
+    },
+    {
+      "ad": "NASA, What Is Betelgeuse? Inside the Strange, Volatile Star",
+      "url": "https://science.nasa.gov/universe/what-is-betelgeuse-inside-the-strange-volatile-star"
+    },
+    {
+      "ad": "Wikipedia, Variable-star designation",
+      "url": "https://en.wikipedia.org/wiki/Variable-star_designation"
+    },
+    {
+      "ad": "AAVSO, Naming Variables",
+      "url": "https://www.aavso.org/index.php/node/74419"
+    },
+    {
+      "ad": "BAA, Observers' challenge: the eclipses of Algol (2021)",
+      "url": "https://britastro.org/2021/observers-challenge-the-eclipses-of-algol"
     }
   ]
 }

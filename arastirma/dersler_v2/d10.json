@@ -2,7 +2,7 @@
   "id": "d10",
   "unite": "gunes_sistemi",
   "baslik": "Ay: Evreler, Tutulmalar ve Dev Bir Çarpışmanın Çocuğu",
-  "ozet": "Ay'ın yarısı her zaman Güneş ışığı alır; evreler, bu aydınlık yarının ne kadarını gördüğümüze göre değişir. Bu derste Ay'ın neden hep aynı yüzünü gösterdiğini, tutulmaların neden her ay olmadığını, Ay'ın dev bir çarpışmadan nasıl doğmuş olabileceğini ve Apollo'dan Artemis'e insanlığın Ay yolculuğunu öğreneceksin.",
+  "ozet": "Ay'ın yarısı her zaman Güneş ışığı alır; evreler, bu aydınlık yarının ne kadarını gördüğümüze göre değişir. Bu derste Ay'ın gökte her gün neden kaydığını ve dolunayın neden kışın yüksek, yazın alçak olduğunu, neden hep aynı yüzünü gösterdiğini, süper ayın ve ufuktaki dev Ay'ın ardındaki gerçeği, tutulmaların neden her ay olmadığını ve Anadolu'nun tutulma tarihini, Ay'ın dev bir çarpışmadan nasıl doğmuş olabileceğini ve Apollo'dan Artemis'e, Chang'e'den Chandrayaan'a insanlığın Ay yolculuğunu öğreneceksin.",
   "on_bilgi": [
     "d1",
     "d3"
@@ -27,7 +27,10 @@
       "baslik": "Neden 27,3 değil de 29,5 gün?",
       "paragraflar": [
         "Ay, Dünya'nın çevresini yıldızlara göre 27,3217 günde dolanır; buna yıldızıl ay denir. Ama evreler 29,53 günde bir tekrarlanır; buna da kavuşum ayı denir. Aradaki iki günün nedeni Dünya'nın da yerinde durmamasıdır: Ay bir turu tamamlarken Dünya Güneş'in çevresinde bir miktar ilerler. Ay'ın Güneş'e göre aynı konuma, yani aynı evreye dönebilmesi için biraz daha yol alması gerekir.",
-        "Bir benzetme: saatin yelkovanı akrebi her 60 dakikada değil, biraz daha uzun aralıklarla yakalar, çünkü akrep de ilerlemektedir. Ay yelkovan, Güneş'in gökteki görünür konumu akrep gibidir. Benzetmenin sınırı: saatte iki ibre aynı merkezin çevresinde döner; gerçekte Ay Dünya'nın, Dünya Güneş'in çevresinde dolanır. İki süre arasındaki ilişki 1/S = 1/P − 1/Y formülüyle verilir; P yıldızıl ay, Y yıldızıl yıl, S kavuşum dönemidir."
+        "Bir benzetme: saatin yelkovanı akrebi her 60 dakikada değil, biraz daha uzun aralıklarla yakalar, çünkü akrep de ilerlemektedir. Ay yelkovan, Güneş'in gökteki görünür konumu akrep gibidir. Benzetmenin sınırı: saatte iki ibre aynı merkezin çevresinde döner; gerçekte Ay Dünya'nın, Dünya Güneş'in çevresinde dolanır. İki süre arasındaki ilişki 1/S = 1/P − 1/Y formülüyle verilir; P yıldızıl ay, Y yıldızıl yıl, S kavuşum dönemidir.",
+        "Bu hareketi kendin görebilirsin. Ay yıldızlara göre 27,32 günde 360° dolandığına göre her gün 360 / 27,32 ≈ 13,2° doğuya kayar. Saate bölünce yaklaşık 0,55° eder; bu da Ay'ın kendi görünür çapına, yaklaşık yarım dereceye, çok yakındır. Yani Ay, yıldızların önünde her saat kabaca kendi genişliği kadar doğuya ilerler. Ay'ın yakınında parlak bir yıldız ya da gezegen olan bir akşam, ikisi arasındaki boşluğu bir saat arayla iki kez çıplak gözle karşılaştır. Aradaki farkı yakalamak için alet gerekmez; yalnızca dikkat ve biraz sabır.",
+        "Aynı kayma, Ay'ın her gün daha geç doğmasının da nedenidir. Wikipedia'ya göre Ay ortalama olarak her gün bir önceki güne göre 50 dakika geç doğar, çünkü günde yaklaşık 13° yol alır: Dünya bir dönüşünü tamamladıktan sonra Ay'ı yeniden ufka getirmek için biraz daha dönmek zorundadır. Dünya saatte 15° döndüğüne göre 13°'lik farkı kapatmak kabaca 50 dakika sürer. Aynı kaynağa göre bu gecikme evreye, Ay'ın dik açıklığına ve gözlem yerine göre değişir; yani her gün tam 50 dakika değil, ortalama 50 dakikadır. Bu akşam dolunayı 18.00'de doğarken gördüysen, yarın aynı saatte onu ufukta bulamazsın.",
+        "Ay için tek bir 'ay' süresi de yoktur. Wikipedia'ya göre Ay'ın yörüngesinin aynı düğümüne dönme süresi, yani drakonitik ay, yıldızıl aydan biraz kısadır. Yörüngenin Dünya'ya en yakın noktasına dönme süresi, yani anomalistik ay, ise yıldızıl aydan biraz uzundur. Bu iki ay türü, tutulmaların tekrarlanma düzenini anlamanın anahtarıdır; ilerideki Anadolu'da tutulmalar bölümünde onlara geri döneceğiz."
       ],
       "ornek": {
         "baslik": "Örnek: Kavuşum ayını hesapla",
@@ -36,13 +39,32 @@
       "akilda": "Yıldızıl ay 27,32 gün, kavuşum ayı (evre döngüsü) 29,53 gün. Fark, Dünya'nın Güneş çevresinde ilerlemesinden gelir."
     },
     {
+      "baslik": "Dolunay neden kışın yüksek, yazın alçak?",
+      "paragraflar": [
+        "Dolunay, Dünya'dan bakınca Güneş'in tam karşısındadır. Bu basit gerçeğin İstanbul'da görülen hoş bir sonucu var: kış dolunayları gökte yüksekten, yaz dolunayları alçaktan geçer. Haziran'da Güneş tutulumun en kuzey noktasındadır ve dik açıklığı 23,44°'dir (kuzey) (d1). Dolunay onun karşısında olduğu için dik açıklığı yaklaşık −23,44° olur; Ay'ın yörüngesi tutuluma 5,145° eğik olduğundan bu değer birkaç derece oynar. Aralık'ta durum tersine döner: Güneş en güneyde, dolunay en kuzeydedir. Yani uzun kış gecelerinde gökte yüksekte ve uzun süre kalan, kısa yaz gecelerinde ise ufka yakın, alçaktan geçen bir dolunay görürsün.",
+        "Meridyendeki, yani gökte en yüksek olduğu andaki yükseklik d1 ve d11'deki basit kuralla bulunur: yükseklik = 90° − enlem + dik açıklık. İstanbul için 90° − 41° = 49°. Aynı kural Güneş için de geçerlidir ve ikisi gökte birbirinin tersini yaşar: kış öğle Güneşi ne kadar alçaksa, kış gece yarısı dolunayı o kadar yüksektir. Haziran'da İstanbul'da öğle Güneşi yaklaşık 72°'ye çıkarken (d1), gece yarısı dolunayı ancak 25° civarına yükselir. Yaz gecelerinin kısa olmasıyla birleşince yaz dolunayı gökte hem alçakta hem kısa süre kalır; kış dolunayı ise uzun gecenin büyük bölümünde yüksekte parlar."
+      ],
+      "akilda": "Dolunay Güneş'in karşısında olduğu için Haziran dolunayı İstanbul'da yaklaşık 25° yükselir, Aralık dolunayı yaklaşık 72°'ye çıkar. Kural: yükseklik = 90° − 41° + dik açıklık.",
+      "ornek": {
+        "baslik": "Örnek: İstanbul'da Haziran ve Aralık dolunayı",
+        "metin": "Yükseklik = 90° − 41° + dik açıklık = 49° + dik açıklık. Haziran dolunayı: dik açıklık ≈ −23,44°. 49 − 23,44 ≈ 25,6°. Yörünge eğikliği ± 5,145° eklenirse yaklaşık 20,4° ile 30,7° arası. Aralık dolunayı: dik açıklık ≈ 23,44° (kuzey). 49 + 23,44 ≈ 72,4°; ± 5,145° ile yaklaşık 67,3° ile 77,6° arası. Oran: 72,4 / 25,6 ≈ 2,8; kış dolunayı yazınkinin neredeyse üç katı yüksektir. Sonuç birimi: derece."
+      }
+    },
+    {
       "baslik": "Hep aynı yüz: eş zamanlı dönme",
       "paragraflar": [
         "Ay kendi ekseni çevresinde döner, ama bir dönüşü Dünya çevresindeki bir dolanımıyla tam olarak aynı sürer. Bu yüzden bize hep aynı yarıküresini gösterir. Buna eş zamanlı dönme denir; nedeni gelgit kilitlenmesidir. NASA'nın açıklamasına göre Dünya'nın kütleçekimi genç Ay'ı hafifçe uzatıp bir şişkinlik oluşturdu. Ay dönerken bu çekiştirme Ay'ın içinde ısı olarak enerji harcadı; dönüş yavaşladı ve sonunda bir tur, bir dolanım kadar sürer hâle geldi.",
         "Ay hiç dönmüyor olsaydı ne görürdük? Dolanırken yönünü uzaya göre sabit tutacağı için bir ay boyunca bütün yüzlerini sırayla bize gösterirdi. Uzak yüzü görmememizin nedeni dönmemesi değil, dönüşünün dolanımıyla eşit sürmesidir.",
-        "Uzak yüze karanlık yüz demek yanıltıcıdır; NASA da bu adın yanlış izlenim verdiğini belirtir. O yüz de Güneş ışığı alır, yalnızca bize dönük değildir. Yeni ay evresinde uzak yüz tam gündüzdedir. İnsanlık uzak yüzü ilk kez, Sovyet aracı Luna 3'ün 7 Ekim 1959'da Ay'a ulaşmasıyla görebildi."
+        "Uzak yüze karanlık yüz demek yanıltıcıdır; NASA da bu adın yanlış izlenim verdiğini belirtir. O yüz de Güneş ışığı alır, yalnızca bize dönük değildir. Yeni ay evresinde uzak yüz tam gündüzdedir. İnsanlık uzak yüzü ilk kez, Sovyet aracı Luna 3'ün 7 Ekim 1959'da Ay'a ulaşmasıyla görebildi.",
+        "Ay'da bir gün ne kadar sürer? NASA'nın veri sayfasına göre Ay kendi ekseni çevresindeki bir dönüşünü yıldızlara göre 655,72 saatte, yani yaklaşık 27,32 günde tamamlar. Ama Ay'da duran biri için önemli olan, Güneş'in gökte aynı konuma dönmesidir; bu da evrelerin süresine, yaklaşık 29,5 güne eşittir. Bu yüzden Ay yüzeyindeki bir nokta yaklaşık iki hafta boyunca güneş görür, ardından yaklaşık iki hafta gece yaşar. Bu uzun gündüz ve geceler, birkaç bölüm sonra göreceğin uç yüzey sıcaklıklarını anlamana yardım eder.",
+        "Gelgit kilitlenmesi Ay'a özgü değildir. NASA'ya göre Güneş Sistemi'nin bütün büyük uyduları gezegenlerine kilitlenmiştir; Plüton ile uydusu Charon ise birbirine kilitlenmiştir, yani ikisi de birbirine hep aynı yüzünü gösterir. NASA, Güneş Sistemi dışındaki pek çok gezegenin de yıldızına kilitlenmiş olduğuna dair kanıtların arttığını yazar. Kilitlenmenin izi bugün de duruyor: NASA'ya göre Dünya'nın çekimi Ay'ı bugün bile hafifçe uzunlamasına, bir Amerikan futbolu topunu andıran bir biçime sokar.",
+        "Peki sıra Dünya'ya gelecek mi? NASA'ya göre, Güneş daha önce ömrünü tamamlamazsa, yaklaşık 50 milyar yıl sonra Ay o kadar uzaklaşmış ve yörüngesi o kadar büyümüş olurdu ki Dünya da Ay'a kilitlenirdi. O zaman Plüton ile Charon gibi ikisi de birbirine hep aynı yüzü gösterir; Ay gökte hep aynı yerde asılı durur ve Dünya'nın yalnızca bir yarısından görülürdü. Bu bir düşünce deneyidir: Güneş'in yaklaşık 5 milyar yıllık kalan ömrü bundan çok daha kısadır (d5); NASA'nın da 'Güneş önce ölmezse' diye söze başlaması bu yüzdendir."
       ],
-      "akilda": "Ay'ın kendi çevresindeki dönüşü bir dolanımıyla eşit sürer (eş zamanlı dönme, gelgit kilitlenmesi). Uzak yüz karanlık değildir, yalnızca bize dönük değildir."
+      "akilda": "Ay'ın kendi çevresindeki dönüşü bir dolanımıyla eşit sürer (eş zamanlı dönme, gelgit kilitlenmesi). Uzak yüz karanlık değildir, yalnızca bize dönük değildir.",
+      "ornek": {
+        "baslik": "Örnek: Ay'da bir gün ve Güneş'in gökteki hızı",
+        "metin": "Yıldızlara göre dönüş: 655,72 saat / 24 ≈ 27,32 gün. Güneş'e göre bir gün, kavuşum ayı kadar: 29,53 gün × 24 ≈ 709 saat. Gündüz kabaca bunun yarısı: 29,53 / 2 ≈ 14,8 Dünya günü; gece de aynı kadar. Ay'ın göğünde Güneş 29,53 günde 360° dolanır: 360 / 29,53 ≈ 12,2° günde, saatte 12,2 / 24 ≈ 0,51°. Güneş'in görünür çapı da yaklaşık yarım derece olduğuna göre, Ay'da Güneş gökte saatte ancak kendi genişliği kadar yol alır. Dünya'da bu yolu yaklaşık 2 dakikada alır: 0,5° / 15° saat başına = 0,033 saat ≈ 2 dakika. Sonuç birimleri: gün, saat, derece."
+      }
     },
     {
       "baslik": "Librasyon: yüzeyin yaklaşık %59'u",
@@ -59,7 +81,8 @@
         "Ay'ın çapı 3474 km'dir; NASA'ya göre Dünya'nın genişliğinin üçte birinden azdır. NASA'nın benzetmesiyle Dünya bir madeni para kadar olsaydı, Ay bir kahve çekirdeği kadar olurdu. Kütlesi 7,346 × 10²² kg, yani Dünya'nınkinin yaklaşık %1,2'si (yaklaşık 1/81). Ortalama yoğunluğu 3344 kg/m³'tür, Dünya'nınkinin (5514 kg/m³) yaklaşık %61'i. Yüzeydeki çekim ivmesi 1,62 m/s²'dir; bu Dünya'nınkinin yaklaşık 0,165'i, yani kabaca altıda biridir.",
         "Ay'ın atmosferi yok denecek kadar seyrektir; NASA ona ekzosfer der ve solunabilir değildir. Isıyı tutacak bir hava örtüsü olmadığı için sıcaklık uç değerler arasında gidip gelir: NASA'ya göre tam güneş ışığında yaklaşık 127 °C, karanlıkta yaklaşık −173 °C. NASA'nın veri sayfası ekvator için 95 K ile 390 K arasında bir günlük değişim verir.",
         "Dolunay gökte çok parlak görünür, ama Ay'ın yüzeyi aslında koyudur. NASA'nın veri sayfasındaki geometrik albedo (yansıtma oranı) 0,12'dir; Wikipedia Ay'ın yansıtıcılığını asfaltınkine benzetir. Dolunay parlak görünür, çünkü karanlık bir gökte, Güneş'in doğrudan aydınlattığı geniş bir yüzeydir. NASA'ya göre dolunayın ortalama parlaklığı −12,74 kadirdir; gece gökyüzünün açık ara en parlak cismidir, ama Güneş yine de ondan yaklaşık 400.000 kat parlaktır (11. ders).",
-        "Ay'ın da bir iç yapısı vardır. NASA'ya göre katı, demirce zengin bir iç çekirdeği (yarıçapı yaklaşık 240 km), onu saran yaklaşık 90 km kalınlığında sıvı demir bir kabuk ve kısmen erimiş bir katman bulunur. Kabuğun kalınlığı yakın yüzde yaklaşık 40 km, uzak yüzde 60 km'ye kadardır. Wikipedia çekirdek yarıçapı için yaklaşık 350 km ya da daha azını verir; ölçümler arasında fark vardır."
+        "Ay'ın da bir iç yapısı vardır. NASA'ya göre katı, demirce zengin bir iç çekirdeği (yarıçapı yaklaşık 240 km), onu saran yaklaşık 90 km kalınlığında sıvı demir bir kabuk ve kısmen erimiş bir katman bulunur. Kabuğun kalınlığı yakın yüzde yaklaşık 40 km, uzak yüzde 60 km'ye kadardır. Wikipedia çekirdek yarıçapı için yaklaşık 350 km ya da daha azını verir; ölçümler arasında fark vardır.",
+        "Ay'ın küçük çekimi kurtulma hızına da yansır. NASA'nın veri sayfasına göre Ay'dan kurtulma (kaçış) hızı saniyede 2,38 km'dir; kurtulma hızı, bir cismin yüzeyden kalkarken çekimden kurtulabilmesi için sahip olması gereken en düşük hızdır (d3). Ay yörüngesinde de ortalama saniyede 1,022 km hızla gider; NASA'ya göre bu hız en hızlı anında 1,082, en yavaş anında 0,970 km/s'dir. Bu, d3'teki Kepler'in ikinci yasasının ta kendisidir: Ay Dünya'ya yakınken hızlı, uzakken yavaş gider. Librasyon bölümünde gördüğün boylam salınımını yaratan da bu hız farkıdır."
       ],
       "ornek": {
         "baslik": "Örnek: Ay'da kaç kilo gelirsin?",
@@ -73,31 +96,56 @@
         "Çıplak gözle gördüğün koyu lekeler denizlerdir (Latince maria). İçlerinde su yoktur; ad, 17. yüzyılın başında gökbilimcilerin bu lekeleri suyla kaplı sanmasından kalmadır. Denizler, büyük çarpışma havzalarının lavla dolmasıyla oluşmuş koyu bazalt ovalarıdır. Demirce zengin oldukları için açık renkli yaylalardan daha az ışık yansıtırlar. Yaşları için kaynaklar farklı aralık verir: NASA 4,2 ile 1,2 milyar yıl önce dolduklarını söyler; Wikipedia radyometrik yaşları 3,16–4,2 milyar yıl olarak verir ve deniz bazaltlarının çoğunun 3 ile 3,5 milyar yıl önce püskürdüğünü belirtir.",
         "Denizler Ay yüzeyinin yaklaşık %16'sını kaplar ve neredeyse hepsi yakın yüzdedir: yakın yüzün %31'i, uzak yüzün yalnızca %2'si denizdir. Bu yüzden bize bakan yüz koyu lekelidir, uzak yüzde ise koyu leke neredeyse yoktur; oradaki denizler çok daha küçüktür ve çoğunlukla büyük kraterlerin içindedir.",
         "Seyrek atmosfer çarpmaları durduramaz; asteroitler, göktaşları ve kuyruklu yıldızlar yüzeyi milyarlarca yıl boyunca kraterle doldurdu. Tycho krateri 85 km'den geniştir. NASA'ya göre keskin gözle Copernicus, Kepler, Aristarchus ve Tycho gibi büyük kraterler ve Copernicus ile Tycho'dan yayılan parlak ışınlar çıplak gözle bile seçilebilir. NASA'nın dürbün önerisi: en az 7 kat büyütme; dolunayı değil öteki evreleri seç ve aydınlıkla karanlığın sınırına, yani terminatöre bak. Orada güneş ışığı yüzeye yatık gelir, kraterler ve dağlar uzun gölge düşürür.",
+        "Ay yüzeyinin engebeli olduğunu ilk gösterenlerden biri Galileo'dur. Wikipedia'ya göre 13 Mart 1610'da yayımladığı Sidereus Nuncius (Yıldız Habercisi) adlı kitapta, büyütmesini 20 kata çıkardığı teleskobuyla Ay'ın parlak bölgelerinin pürüzlü ve dağlık, koyu bölgelerinin düz ve alçak olduğunu yazdı. Terminatörün koyu bölgeleri keserken düzgün, parlak bölgeleri keserken düzensiz olduğunu fark etti. Karanlık tarafta güneş ışığı alan dağ doruklarının terminatöre uzaklığından yola çıkarak, Ay dağlarının en az dört mil yüksekliğinde olduğuna oldukça doğru biçimde karar verdi. Dürbünle terminatörü incelerken karanlık tarafta tek başına parlayan bir nokta görürsen, Galileo'nun ölçtüğü türden bir doruğa bakıyorsun.",
         "Ay kupkuru sanılırdı, ama kutuplarda buz bulundu. NASA'ya göre kutupların hiç güneş görmeyen bölgelerinde yüksek yoğunlukta su buzu vardır. Wikipedia, 2018'de her iki kutbun 20° yakınında su buzu bulunduğunu ve buzun güneyde daha bol olduğunu aktarır. NASA'ya göre Ekim 2020'de SOFIA gözlemevi, güneş alan yüzeyde, Clavius kraterinde de su bulunduğunu doğruladı."
       ],
-      "akilda": "Denizler lavla dolmuş havzalardır (bazalt), yüzeyin yaklaşık %16'sı ve neredeyse hepsi yakın yüzde. Kraterler için terminatöre bak. Kutupların gölgeli kraterlerinde su buzu var."
+      "akilda": "Denizler lavla dolmuş havzalardır (bazalt), yüzeyin yaklaşık %16'sı ve neredeyse hepsi yakın yüzde. Kraterler için terminatöre bak. Kutupların gölgeli kraterlerinde su buzu var.",
+      "ornek": {
+        "baslik": "Örnek: Galileo'nun yöntemiyle dağ yüksekliği",
+        "metin": "Terminatörde Güneş ışığı yüzeyi teğet geçer. Terminatörden d kadar içeride, karanlık tarafta duran bir doruğun tepesi ancak yüksekliği h yeterince büyükse bu teğet ışığı yakalar. Dik üçgenden (R + h)² = R² + d², h küçük olduğundan h ≈ d² / (2 × R). Ay'ın yarıçapı R ≈ 1738 km. Doruğun terminatörden d = 150 km içeride parladığını varsay: h ≈ 150² / (2 × 1738) = 22.500 / 3476 ≈ 6,5 km. Dört mil yaklaşık 6,4 km eder; yani böyle bir gözlem Galileo'nun vardığı büyüklükte bir dağ verir. d iki katına çıkarsa h dört katına çıkar. Sonuç birimi: km."
+      }
     },
     {
       "baslik": "Ay nereden geldi? Dev çarpışma",
       "paragraflar": [
         "Dünya'nın neden bu kadar büyük bir uydusu var? Bugünkü açıklama dev çarpışma varsayımıdır. NASA, Ay'ın büyük olasılıkla Mars büyüklüğünde bir cismin Dünya'ya çarpmasından sonra oluştuğunu söyler. Wikipedia bu cisme verilen adı Theia olarak aktarır ve çarpışmayı 4,51 milyar yıl önceye koyar; izotop tarihlemesine göre Ay, Güneş Sistemi'nin başlangıcından yaklaşık 50 milyon yıl sonra oluştu. Çarpışmadan saçılan malzeme Dünya'nın çevresinde toplanarak Ay'ı oluşturdu.",
+        "Dev çarpışmadan önce üç fikir yarışıyordu. Wikipedia'ya göre ayrılma fikrinde erimiş Ay, hızlı dönen Dünya'dan merkezkaç etkisiyle koparılmıştı; yakalama fikrinde Ay başka bir yerde oluşup Dünya'nın çekimine yakalanmıştı; birlikte oluşma fikrinde ise Dünya ile Ay aynı anda, aynı diskten oluşmuştu. Aynı kaynağa göre bunların hiçbiri Dünya-Ay sisteminin yüksek açısal momentumunu, yani bu ikilinin taşıdığı büyük dönme miktarını açıklayamıyor. Dev çarpışmayı ilk öneren 1946'da Kanadalı jeolog Reginald Daly oldu. Fikir 1975'te William Hartmann ile Donald Davis'in Icarus dergisindeki çalışmasıyla tartışılmaya başlandı; Cameron ve Ward ise Mars büyüklüğünde bir cismin Dünya'ya teğet çarpmasını önerdi.",
         "Bu fikri destekleyen en güçlü ipuçlarından biri bileşimdir: Wikipedia'ya göre Dünya ile Ay'ın izotop bileşimleri neredeyse aynıdır. İzotop, bir elementin farklı sayıda nötron taşıyan türüdür ve bir tür kimyasal parmak izi gibi çalışır. Ay başka bir yerde oluşup sonradan yakalanmış olsaydı parmak izinin farklı olması beklenirdi.",
-        "Genç Ay sıcaktı. NASA'ya göre yüzeyini kaplayan küresel magma okyanusunun büyük kısmı yaklaşık 100 milyon yıl içinde katılaştı. Sonraki çarpışmaların izleri bugün de okunabilir: Apollo görevlerinin topladığı çarpma sonucu erimiş kayaçların yaşları 3,8 ile 4,1 milyar yıl arasında toplanır. Unutma ki dev çarpışma bir varsayımdır: NASA da büyük olasılıkla diyerek konuşur. Kimse o çarpışmayı görmedi; varsayım, bugün ölçebildiğimiz ipuçlarını en iyi açıklayan senaryodur."
+        "Genç Ay sıcaktı. NASA'ya göre yüzeyini kaplayan küresel magma okyanusunun büyük kısmı yaklaşık 100 milyon yıl içinde katılaştı. Sonraki çarpışmaların izleri bugün de okunabilir: Apollo görevlerinin topladığı çarpma sonucu erimiş kayaçların yaşları 3,8 ile 4,1 milyar yıl arasında toplanır. Unutma ki dev çarpışma bir varsayımdır: NASA da büyük olasılıkla diyerek konuşur. Kimse o çarpışmayı görmedi; varsayım, bugün ölçebildiğimiz ipuçlarını en iyi açıklayan senaryodur.",
+        "Apollo örnekleri bu senaryoya başka ipuçları da ekledi. Wikipedia'ya göre örnekler Ay'ın büyük bir kısmının bir zamanlar erimiş olduğunu gösteriyor; bu, yukarıdaki magma okyanusudur. Ay, uçucu maddeler bakımından Dünya'ya göre fakirdir. Ay'ın demir çekirdeği de küçüktür: yarıçapı Ay yarıçapının yaklaşık %25'inden azdır, oysa öteki karasal cisimlerin çoğunda bu oran yaklaşık %50'dir. Bu özellikler, Wikipedia'da dev çarpışma varsayımının kanıtları arasında sayılır.",
+        "Ama en güçlü kanıt aynı zamanda en büyük bilmecedir. Wikipedia'ya göre Ay'ın oksijen izotop oranları Dünya'nınkiyle esasen aynıdır; titanyumunki de milyonda 4 kadar yakındır. Oysa önceki pek çok model, Ay'ın yaklaşık %80'inin çarpan cisimden, yani Theia'dan geldiğini öngörüyordu. Theia başka bir yerde oluştuysa farklı bir parmak izi taşımalıydı; o hâlde Ay neden Dünya'ya bu kadar benziyor? Önerilen çözümler var: çarpışmadan sonra çok hızlı dönen ve yeni bir gök cismi gibi davranan bir buhar yapısı (sinestia), beklenenden yüksek bir çarpışma hızı, Theia'nın Dünya'nın yakınında oluşması ya da malzemenin karışıp homojenleşmesi. 2019 tarihli bir model ise enkazın yaklaşık %80'inin ilk Dünya'dan geldiğini buldu.",
+        "Durumu dürüstçe şöyle özetleyebiliriz. Wikipedia'ya göre dev çarpışma, gökbilimciler arasında Ay'ın oluşumu için en çok tercih edilen varsayımdır. Ama çarpışmadan başlayıp enkazı tek bir Ay'a kadar izleyen, kendi içinde tutarlı bir model henüz yoktur ve varsayımın çözülmemiş güçlükleri vardır. Ana fikir sağlam görünüyor; ayrıntılar tartışmalı. Bilimde bu sık görülen bir durumdur ve bir fikrin zayıf noktalarını bilmek, onu daha iyi anlamanın parçasıdır."
       ],
-      "akilda": "Ay büyük olasılıkla Mars büyüklüğünde bir cismin (Theia) yaklaşık 4,5 milyar yıl önce Dünya'ya çarpmasıyla oluştu. En güçlü ipucu: Dünya ile Ay'ın izotop bileşimi neredeyse aynı."
+      "akilda": "Ay büyük olasılıkla Mars büyüklüğünde bir cismin (Theia) yaklaşık 4,5 milyar yıl önce Dünya'ya çarpmasıyla oluştu; eski fikirler (ayrılma, yakalama, birlikte oluşma) açısal momentumu açıklayamıyor. Dünya ile Ay'ın izotoplarının neredeyse aynı olması hem kanıt hem de henüz çözülmemiş bir bilmecedir."
     },
     {
       "baslik": "Uzaklık ve yavaş yavaş uzaklaşma",
       "paragraflar": [
         "Ay'ın Dünya'ya ortalama uzaklığı 384.400 km'dir; NASA'ya göre arasına Dünya büyüklüğünde 30 gezegen sığar. Yörünge elips olduğu için uzaklık yıl boyunca kabaca 357.000 ile 407.000 km arasında değişir. Işık bu yolu yaklaşık 1,3 saniyede alır.",
+        "Ay'ın yörüngesi tam bir çember değildir; NASA'nın veri sayfasına göre basıklığı (dış merkezliği) 0,0549'dur. Aynı sayfa yörüngenin Dünya'ya en yakın noktasını, yani yerberiyi, ortalama 363.300 km; en uzak noktasını, yani yeröteyi, ortalama 405.500 km olarak verir. Yukarıdaki 357.000–407.000 km aralığı ise yıllar içinde görülen uç değerlerdir. Bu yüzden dolunay her ay aynı büyüklükte değildir; bunu bir sonraki bölümde, süper ay başlığında göreceksin.",
         "Apollo 11 ekibi 21 Temmuz 1969'da Ay yüzeyine bir lazer yansıtıcı dizisi bıraktı; Apollo 14 ve 15 iki dizi daha bıraktı, Sovyet Lunokhod 1 ve 2 araçları da daha küçük yansıtıcılar taşıdı. Dünya'dan gönderilen lazer atımının gidiş-dönüş süresi ölçülerek uzaklık bulunur. Wikipedia'ya göre bir atımdaki yaklaşık 3 × 10¹⁷ fotondan iyi koşullarda bile ancak 1 ile 5 tanesi geri döner; yine de 2009 itibarıyla uzaklık milimetre hassasiyetiyle ölçülebiliyordu.",
-        "Bu ölçümlere göre Ay yılda yaklaşık 3,8 cm uzaklaşıyor. NASA'nın Ay veri sayfası da 3,8 cm/yıl verir; NASA'nın gelgit kilitlenmesi sayfası ise yuvarlayarak yaklaşık 4 cm der. Enerji büyük ölçüde okyanuslardan gelir: Ay'ın çektiği okyanus kabarıklığı Ay'ın tam altında durmaz, biraz kaymış olur. NASA'ya göre bu etkileşim hem Dünya'nın dönüşünü yavaşlatan bir sürtünme yaratır hem de Ay'ı daha geniş bir yörüngeye iter. Gelgitlerin kendisini 3. derste gördün."
+        "Bu ölçümlere göre Ay yılda yaklaşık 3,8 cm uzaklaşıyor. NASA'nın Ay veri sayfası da 3,8 cm/yıl verir; NASA'nın gelgit kilitlenmesi sayfası ise yuvarlayarak yaklaşık 4 cm der. Enerji büyük ölçüde okyanuslardan gelir: Ay'ın çektiği okyanus kabarıklığı Ay'ın tam altında durmaz, biraz kaymış olur. NASA'ya göre bu etkileşim hem Dünya'nın dönüşünü yavaşlatan bir sürtünme yaratır hem de Ay'ı daha geniş bir yörüngeye iter. Gelgitlerin kendisini 3. derste gördün.",
+        "Uzaklaşmanın uzun vadeli bir sonucu daha var. Ay uzaklaştıkça gökteki görünür boyutu küçülür. Wikipedia'ya göre milyonlarca yıl sonra Ay, Güneş'i tamamen örtemeyecek kadar uzakta olacak ve tam Güneş tutulmaları sona erecek; sayfadaki tahmine göre bu, bugünden 650 milyon ile 1,4 milyar yıl sonra olabilir. Yani tam tutulmalar Dünya tarihinin geçici bir hediyesidir. Kaba bir sağlama: hız yılda 3,8 cm'de sabit kalsaydı, Ay 650 milyon yılda 0,038 m × 650.000.000 ≈ 24.700 km uzaklaşırdı; bu, bugünkü uzaklığın yaklaşık %6'sıdır. Ay'ın görünür çapı da aynı oranda küçülür ve Güneş'i tam örtmeye artık yetmez."
       ],
       "ornek": {
         "baslik": "Örnek: Lazer kaç saniyede döner, Ay ne kadar uzaklaştı?",
         "metin": "Gidiş-dönüş yolu 2 × 384.400 km = 768.800 km = 7,688 × 10⁸ m. Işık hızı 299.792.458 m/s. Süre: 7,688 × 10⁸ / 2,998 × 10⁸ ≈ 2,56 s. Wikipedia da yaklaşık 2,5 saniye der. Uzaklaşma: Apollo 11'in yansıtıcıyı bıraktığı 1969'dan 2026'ya 57 yıl geçti. 57 × 3,8 cm ≈ 217 cm, yani Ay o günden beri yaklaşık 2,2 metre uzaklaştı. Bir milyon yılda ise 3,8 cm × 1.000.000 = 38 km eder."
       },
       "akilda": "Ortalama uzaklık 384.400 km (yaklaşık 357.000–407.000 km). Apollo'nun bıraktığı yansıtıcılarla yapılan lazer ölçümleri Ay'ın yılda yaklaşık 3,8 cm uzaklaştığını gösterir."
+    },
+    {
+      "baslik": "Süper ay ve ufuktaki dev Ay",
+      "paragraflar": [
+        "Haberlerde sık sık 'süper ay' duyarsın. Wikipedia'ya göre süper ay, Ay'ın yerberiye, yani Dünya'ya en yakın noktasına neredeyse denk gelen dolunay ya da yeni aydır; gökbilimdeki teknik adı yerberi kavuşumudur (perigee syzygy). Terimi 1979'da astrolog Richard Nolle ortaya attı ve kesin bir gökbilimsel tanımı yoktur. Yani süper ay bilimsel bir sınıf değil, yaygınlaşmış bir addır. Arkasındaki olgu ise gerçektir: Ay'ın uzaklığı ay boyunca değişir.",
+        "Fark ne kadar? Wikipedia'ya göre yerberideki bir dolunay, yerötedeki bir dolunaydan çap olarak yaklaşık %14 büyük ve yaklaşık %30 daha parlaktır. Parlaklık burada yere düşen toplam ışık anlamındadır; yüzeyin birim alanının parlaklığı değişmez, Ay yalnızca gökte daha büyük bir alan kaplar. Aynı kaynağa göre 14 Kasım 2016 süper ayı, 26 Ocak 1948'den bu yana en yakın dolunaydı; 21. yüzyılın en yakın dolunayı ise 6 Aralık 2052'de olacak.",
+        "Gözle fark edilir mi? Pek değil. Gökte yan yana iki dolunay olmadığı için %14'lük farkı karşılaştıracak bir ölçün yoktur. Wikipedia, pek çok gözlemcinin süper ayı daha büyük gördüğünü ısrarla söylediğini ve bunun büyük olasılıkla Ay illüzyonundan kaynaklandığını yazar. Ay illüzyonu, Ay'ın ufka yakınken tepedeyken olduğundan daha büyük görünmesidir. Oysa açısal boyutu değişmez; Wikipedia'ya göre ufuktaki Ay aslında yaklaşık %1,5 daha uzaktadır ve biraz daha küçük görünmelidir. Farklı yüksekliklerde çekilen fotoğraflar da boyutun aynı kaldığını gösterir. İllüzyon hâlâ kesin olarak açıklanamamıştır; hiçbir kuram tek başına kabul görmemiştir.",
+        "Bunu İstanbul'da kendin sınayabilirsin. Wikipedia'da anlatılan deney şöyle: kol boyunda 8,4 mm genişliğinde küçük bir çakıl taşı tut. Ay ufukta kocaman görünürken çakılı Ay'ın yanına getir; birkaç saat sonra Ay yükseldiğinde aynısını tekrarla. Çakıl iki seferde de Ay'a göre aynı büyüklükte kalır. Boğaz'ın üzerinden ya da binaların arkasından doğan dolunayın büyüleyici iriliği gökte değil, senin algında oluşur. Bu bir hayal kırıklığı değil, gözlemcinin en iyi dersidir: ölçmeden önce gözüne güvenme."
+      ],
+      "akilda": "Süper ay, yerberiye denk gelen dolunaydır; yeröte dolunayından çapça yaklaşık %14 büyük, yaklaşık %30 parlaktır ama gözle fark etmek zordur. Ufuktaki Ay'ın büyük görünmesi bir algı yanılsamasıdır (Ay illüzyonu); açısal boyut değişmez.",
+      "ornek": {
+        "baslik": "Örnek: Yakın ve uzak dolunayı karşılaştır",
+        "metin": "Uç uzaklıklar: yakın 357.000 km, uzak 407.000 km. Görünür çap uzaklıkla ters orantılıdır: 407.000 / 357.000 ≈ 1,140, yani yakın dolunay çapça yaklaşık %14 büyük. Açı olarak: 3474 / 357.000 × 57,3 ≈ 0,558° ve 3474 / 407.000 × 57,3 ≈ 0,489°. Yere düşen ışık, gökte kaplanan alanla, yani çapın karesiyle orantılıdır: 1,140² ≈ 1,30; yakın dolunay yaklaşık %30 daha çok ışık verir. Sonuç birimleri: oran ve derece."
+      }
     },
     {
       "baslik": "Ay tutulması ile Güneş tutulması",
@@ -115,13 +163,39 @@
       "akilda": "Güneş tutulması yeni ayda, dar bir şeritte olur ve koruma ister. Ay tutulması dolunayda olur, gece tarafından her yerden görülür, güvenlidir ve Ay kızarır. Yörünge 5,145° eğik olduğu için her ay tutulma olmaz."
     },
     {
+      "baslik": "Anadolu'da tutulmalar: Thales'ten 2028'e",
+      "paragraflar": [
+        "Tutulmaların bu topraklarla eski bir bağı var. Wikipedia'nın aktardığına göre Antik Yunan tarihçisi Herodot, Anadolu'da Medler ile Lidyalılar arasında uzun süren bir savaşı anlatır: bir çarpışmanın ortasında gün birden geceye dönünce iki taraf savaşmayı bırakır ve barış yapmaya can atar. Herodot'a göre bu tutulmayı Thales önceden haber vermişti. Anlatıya uyan tek Güneş tutulması MÖ 28 Mayıs 585'tekidir; bazı araştırmacılar savaşı iki krallığın sınırındaki Halys ırmağının yakınına koyar, ama bu bir varsayımdır. Dürüst bir not: Herodot olaydan yaklaşık 150 yıl sonra yazdı, modern araştırmacılar öyküye kuşkuyla yaklaşır ve Thales'in bir Güneş tutulmasını tam olarak nasıl öngörebildiği belirsizdir.",
+        "Yakın tarihte Türkiye bir tam Güneş tutulmasını kendi topraklarında yaşadı. Wikipedia'ya göre 29 Mart 2006 tutulmasının tam gölge şeridi Meis (Kastellorizo) adasından Türkiye'ye geçti ve Karadeniz'e uzandı. Tam evre Side'de 3 dakika 45 saniye, Konya'da 3 dakika 37 saniye, Antalya'da 3 dakika 15 saniye, Kayseri'de 1 dakika 48 saniye sürdü. Ankara şeridin dışında kaldı ve yaklaşık %98'lik parçalı bir tutulma gördü. Bu tutulmanın en uzun tam evresi Türkiye'de değil, Kuzey Afrika'da 4 dakika 7 saniyeydi.",
+        "2006 tutulması saros 139 serisindendir. Saros neden işler? Wikipedia'ya göre 223 kavuşum ayı, yaklaşık 239 anomalistik aya ve 242 drakonitik aya eşittir. Yani 223 ay sonra Ay hem aynı evrededir, hem düğüme göre aynı yerdedir, hem de Dünya'ya aşağı yukarı aynı uzaklıktadır; tutulma neredeyse aynı geometriyle tekrarlanır. Ama saros tam bir gün sayısı değildir: 6585,3 gündeki 0,3 gün yüzünden Dünya bu arada fazladan yaklaşık üçte bir tur döner. Bu yüzden aynı serideki bir sonraki tutulma yaklaşık 115° daha batıda görülür.",
+        "Sıradaki büyük olay 2 Ağustos 2027 tam Güneş tutulmasıdır. Wikipedia'ya göre tam gölge Cebelitarık Boğazı'ndan geçip İspanya, Kuzey Afrika, Mısır ve Suudi Arabistan üzerinden ilerleyecek; en uzun tam evre Luksor'un yaklaşık 60 km güneydoğusunda yaklaşık 6 dakika 23 saniye sürecek. Bu, 21. yüzyılda kolay ulaşılabilir karada görülecek en uzun tam tutulma; daha uzunu 3 Haziran 2114'e kadar yok. Türkiye şeridin dışında kalıyor. Bir tutulma hesap sitesi (orbitalradar) İstanbul için Güneş'in yaklaşık %59'unun örtüleceğini, en büyük evrenin öğlen 12.39'da olacağını veriyor; bunu ikinci bir kaynakla doğrulayamadım. Parçalı tutulmanın her anında ISO 12312-2 uyumlu gözlük gerekir.",
+        "Ay tutulması için İstanbul'un şansı daha iyi. Wikipedia'ya göre 31 Aralık 2028'deki tam Ay tutulmasında tam evre 71 dakika 20 saniye sürecek; tam evre UTC'ye göre 16.16 ile 17.28 arasındadır ve tutulma Doğu Avrupa ile Asya'dan baştan sona görülecek. Türkiye saati UTC'den 3 saat ileri olduğundan bu, yılbaşı akşamı yaklaşık 19.16 ile 20.28 arasına düşer. Space.com'a göre bu, 3 Mart 2026'dan sonraki ilk tam Ay tutulmasıdır. orbitalradar'ın İstanbul hesabı da Ay'ın bütün tutulma boyunca ufkun üstünde olacağını, en büyük evrede doğu yönünde yaklaşık 22° yükseklikte duracağını veriyor. Bakır kırmızısı bir yılbaşı Ay'ı, korumasız gözle ve dürbünle rahatça izlenebilir."
+      ],
+      "akilda": "MÖ 585 Thales tutulması Anadolu'da geçer ama öykü tartışmalıdır. Türkiye son tam Güneş tutulmasını 29 Mart 2006'da gördü (Side 3 dk 45 s). Saros 223 kavuşum ayı ≈ 242 drakonitik ≈ 239 anomalistik aydır. İstanbul'dan 31 Aralık 2028 akşamı tam Ay tutulması görülecek.",
+      "ornek": {
+        "baslik": "Örnek: Saros ile tutulma tahmini",
+        "metin": "Saros = 223 kavuşum ayı: 223 × 29,5306 ≈ 6585,3 gün. 29 Mart 2006'ya 6585 gün ekle: tarih hesabı 8 Nisan 2024'ü verir; aynı serinin bir sonraki tutulması bu tarihe düşmelidir. Yer kayması: 0,3 gün × 360° ≈ 108°; daha kesin 0,32 gün × 360° ≈ 115°. Yani bir sonraki tutulma Türkiye'den yaklaşık 115° batıda, Atlas Okyanusu'nun ötesinde aranmalıdır. Üç saros sonra (yaklaşık 54 yıl 1 ay) fazladan üç üçte bir tur, yani kabaca bir tam tur birikir ve tutulma kabaca yine aynı boylamlara döner. Sonuç birimleri: gün ve derece."
+      }
+    },
+    {
       "baslik": "Apollo'dan Artemis'e: Ay'a yolculuk",
       "paragraflar": [
         "İnsanlar Ay'a ilk kez 20 Temmuz 1969'da Apollo 11 ile ayak bastı. Wikipedia'ya göre 1972'ye kadar altı Apollo görevi Ay'a toplam on iki insan indirdi. NASA'ya göre Apollo astronotları Dünya'ya toplam 382 kg Ay kayacı ve toprağı getirdi. Apollo 17'nin 1972'de topladığı ünlü turuncu cam toprak, volkanik kökenli ve titanyumca zengin bir örnek olarak hâlâ incelenir.",
         "Bu örnekler bugün de bilim üretiyor. Önceki bölümde gördüğün 3,8–4,1 milyar yıllık çarpma kayaçlarının yaşları, Apollo'nun getirdiği örneklerden ölçüldü. Apollo 11, 14 ve 15'in bıraktığı yansıtıcılar da Ay'ın her yıl biraz uzaklaştığını gösteren lazer ölçümlerini mümkün kıldı. Yani Apollo yalnızca bir yarış değil, bir ölçüm altyapısı da bıraktı.",
-        "Yeni dönem NASA'nın Artemis programıdır. Wikipedia'ya göre 2020'lerin bu programı, 2026'da mürettebatlı bir Ay çevresi uçuşu olan Artemis II'yi içerir; NASA'nın Ay sayfasında Artemis II'den gelen Ay bilim verilerinin ve görüntülerinin yayımlandığı duyuruluyor. Programın sonraki adımlarının tarihleri değişebildiği için güncel takvimi NASA'dan izlemek en doğrusu. Artemis adı da Ay'la bağlantılıdır: Yunan mitolojisinde av tanrıçası Artemis, Ay tanrıçası Selene ile özdeşleştirilmiştir."
+        "Yeni dönem NASA'nın Artemis programıdır. Wikipedia'ya göre 2020'lerin bu programı, 2026'da mürettebatlı bir Ay çevresi uçuşu olan Artemis II'yi içerir; NASA'nın Ay sayfasında Artemis II'den gelen Ay bilim verilerinin ve görüntülerinin yayımlandığı duyuruluyor. Programın sonraki adımlarının tarihleri değişebildiği için güncel takvimi NASA'dan izlemek en doğrusu. Artemis adı da Ay'la bağlantılıdır: Yunan mitolojisinde av tanrıçası Artemis, Ay tanrıçası Selene ile özdeşleştirilmiştir.",
+        "Artemis II artık bir plan değil, tamamlanmış bir görev. ScienceDaily'nin aktardığına göre görev 1 Nisan 2026'da ABD doğu saatiyle 18.35'te (Türkiye saatiyle 2 Nisan 01.35) Kennedy Uzay Merkezi'ndeki 39B rampasından kalktı. Mürettebatta NASA'dan komutan Reid Wiseman, pilot Victor Glover ve görev uzmanı Christina Koch ile Kanada Uzay Ajansı'ndan görev uzmanı Jeremy Hansen vardı. Ay'ın yakınından geçiş 6 Nisan için planlanmıştı; yörünge, Ay'ın kütleçekimini kullanarak Orion kapsülünü Dünya'ya geri yönlendiriyordu. NASA'ya göre yaklaşık 10 günlük yolculuğun sonunda Orion, 10 Nisan 2026'da San Diego açıklarında Pasifik Okyanusu'na indi."
       ],
-      "akilda": "Apollo (1969–1972) altı inişle on iki insanı Ay'a indirdi ve 382 kg örnek getirdi. Artemis programı insanları yeniden Ay'a götürmeyi amaçlıyor; Artemis II 2026'nın mürettebatlı Ay çevresi uçuşu."
+      "akilda": "Apollo (1969–1972) altı inişle on iki insanı Ay'a indirdi ve 382 kg örnek getirdi. Artemis II, 1–10 Nisan 2026'da dört kişilik mürettebatla Ay'ın çevresinden dolaşıp döndü."
+    },
+    {
+      "baslik": "Yeni kâşifler: uzak yüze ve güney kutbuna",
+      "paragraflar": [
+        "Apollo'nun ardından Ay'a robotlar gitmeyi sürdürdü. Bunun en düzenli örneği Çin'in Ay programıdır. Wikipedia'ya göre Chang'e 4, 3 Ocak 2019'da uzak yüzde, Güney Kutbu-Aitken havzasındaki Von Kármán kraterine indi ve Yutu-2 gezginini yüzeye bıraktı; bu, uzak yüze yapılan ilk yumuşak iniştir. Eş zamanlı dönme yüzünden uzak yüzden Dünya hiç görünmez; orada çalışan bir araç, Dünya'yla doğrudan bakışamaz.",
+        "Chang'e 5, Wikipedia'ya göre 16 Aralık 2020'de 1731 gram Ay örneğiyle Dünya'ya döndü. Chang'e 6 ise Space.com'a göre 1 Haziran 2024'te (Pekin saatiyle 2 Haziran sabahı) yine Güney Kutbu-Aitken havzasındaki Apollo kraterine indi. Çin Ulusal Uzay İdaresi bunu uzak yüzden örnek getiren ilk görev olarak duyurdu; yaklaşık 2 kg örnek toplanması planlanıyordu. Wikipedia'daki tabloya göre örnekler 25 Haziran 2024'te Dünya'ya ulaştı. Aynı kaynağa göre Çin ilk insanlı Ay inişini 2029 ya da 2030'da yapmayı planlıyor.",
+        "Hindistan da bu yola girdi. Wikipedia'ya göre Chandrayaan-3, 23 Ağustos 2023'te güney kutbuna yakın, yaklaşık 69° güney enleminde yumuşak iniş yaptı. Bu, güney kutbu yakınına yapılan ilk yumuşak iniştir; ISRO da Sovyet uzay programı, NASA ve Çin'in uzay idaresinden sonra Ay'a başarıyla iniş yapan dördüncü ulusal uzay ajansı oldu. Denizler bölümünde gördüğün gibi kutup bölgelerinin hiç güneş görmeyen kraterlerinde su buzu var; kutuplara yakın inişler bu bölgeleri yakından tanımanın ilk adımlarıdır.",
+        "Böylece Ay keşfi, Apollo'nun tek başına anlattığı bir öykü olmaktan çıktı. Aynı on yılın içinde uzak yüzden örnekler geldi, güney kutbu yakınına iniş yapıldı ve 2026'da Artemis II ile insanlar yeniden Ay'ın çevresine gitti. Bu takvim hızlı değiştiği için sonraki görevlerin tarihlerini derse yazmadık; güncel durumu ajansların kendi sayfalarından izlemek en doğrusu. Senin için pratik sonuç şu: İstanbul'dan dürbünle bakarken gördüğün yakın yüzün yanında, buradan hiç göremeyeceğin uzak yüzün de artık yakından çekilmiş görüntüleri ve Dünya'ya getirilmiş örnekleri var."
+      ],
+      "akilda": "Chang'e 4 (2019) uzak yüze ilk yumuşak inişi yaptı, Chang'e 6 (2024) uzak yüzden ilk örnekleri getirdi. Chandrayaan-3 (23 Ağustos 2023) güney kutbu yakınına ilk inişi yaptı; Hindistan Ay'a inen dördüncü ülke oldu."
     }
   ],
   "formuller": [
@@ -149,6 +223,21 @@
       "ad": "Ağırlık",
       "ifade": "F = m × g",
       "aciklama": "m: kütle (kg), g: yüzey çekim ivmesi (Dünya 9,80; Ay 1,62 m/s²), F: ağırlık (newton)."
+    },
+    {
+      "ad": "Meridyen yüksekliği",
+      "ifade": "yükseklik = 90° − enlem + dik açıklık",
+      "aciklama": "Gök cismi gökte en yüksek olduğu anda (meridyende) ufuktan yüksekliği; enlem ve dik açıklık derece cinsinden. İstanbul (41°) için 49° + dik açıklık. Haziran dolunayı ≈ 25,6°, Aralık dolunayı ≈ 72,4°."
+    },
+    {
+      "ad": "Terminatörden dağ yüksekliği",
+      "ifade": "h ≈ d² / (2 × R)",
+      "aciklama": "d: karanlık tarafta parlayan doruğun terminatöre uzaklığı (km), R: Ay yarıçapı (≈ 1738 km), h: doruk yüksekliği (km). h, R'ye göre küçükken geçerli."
+    },
+    {
+      "ad": "Saros",
+      "ifade": "223 kavuşum ayı ≈ 239 anomalistik ay ≈ 242 drakonitik ay ≈ 6585,3 gün",
+      "aciklama": "Tutulma geometrisinin tekrarlanma süresi (yaklaşık 18 yıl 11 gün). 0,3 günlük artık yüzünden tutulma her saros sonra yaklaşık 115° batıya kayar."
     }
   ],
   "anahtar_sayilar": [
@@ -217,6 +306,71 @@
       "aciklama": "Tutulma mevsimleri arası; saros döngüsü",
       "kaynak_url": "https://en.wikipedia.org/wiki/Solar_eclipse",
       "kid": "d10n10"
+    },
+    {
+      "deger": "~13°/gün; ~50 dakika",
+      "aciklama": "Ay'ın günlük doğuya kayması ve ortalama doğuş gecikmesi",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Moonrise_and_moonset"
+    },
+    {
+      "deger": "363.300 km / 405.500 km; e = 0,0549",
+      "aciklama": "Ortalama yerberi ve yeröte uzaklığı; yörünge basıklığı",
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html"
+    },
+    {
+      "deger": "2,38 km/s; 1,022 km/s (0,970–1,082)",
+      "aciklama": "Ay'ın kurtulma (kaçış) hızı ve yörünge hızı",
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html"
+    },
+    {
+      "deger": "%14 çap, %30 ışık",
+      "aciklama": "Yerberi dolunayının yeröte dolunayına göre farkı (süper ay)",
+      "kaynak_url": "https://www.wikiwand.com/en/articles/Supermoon"
+    },
+    {
+      "deger": "~%1,5",
+      "aciklama": "Ufuktaki Ay'ın tepedekinden daha uzak olma oranı (Ay illüzyonu)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Moon_illusion"
+    },
+    {
+      "deger": "~50 milyar yıl",
+      "aciklama": "Güneş önce ölmezse Dünya'nın da Ay'a kilitlenmesi için gereken süre (NASA)",
+      "kaynak_url": "https://science.nasa.gov/moon/tidal-locking/"
+    },
+    {
+      "deger": "650 milyon – 1,4 milyar yıl",
+      "aciklama": "Tam Güneş tutulmalarının sona ermesine kalan tahmini süre",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Solar_eclipse"
+    },
+    {
+      "deger": "223 = 239 = 242 ay",
+      "aciklama": "Saros: kavuşum, anomalistik ve drakonitik ay sayıları",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Solar_eclipse"
+    },
+    {
+      "deger": "29 Mart 2006; Side 3 dk 45 s",
+      "aciklama": "Türkiye'den görülen son tam Güneş tutulması ve Side'deki tam evre",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Solar_eclipse_of_March_29,_2006"
+    },
+    {
+      "deger": "31 Aralık 2028; 71 dk 20 s",
+      "aciklama": "İstanbul'dan görülecek tam Ay tutulması ve tam evre süresi",
+      "kaynak_url": "https://en.wikipedia.org/wiki/December_2028_lunar_eclipse"
+    },
+    {
+      "deger": "13 Mart 1610; en az 4 mil",
+      "aciklama": "Galileo'nun Sidereus Nuncius'u ve Ay dağlarına biçtiği yükseklik",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Sidereus_Nuncius"
+    },
+    {
+      "deger": "3 Ocak 2019; 23 Ağustos 2023",
+      "aciklama": "Chang'e 4'ün uzak yüze inişi; Chandrayaan-3'ün güney kutbu yakınına inişi",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Chinese_Lunar_Exploration_Program"
+    },
+    {
+      "deger": "1–10 Nisan 2026",
+      "aciklama": "Artemis II'nin kalkışı ve dönüşü",
+      "kaynak_url": "https://www.nasa.gov/image-detail/artemis-ii-splashdown-2/"
     }
   ],
   "sozluk": [
@@ -279,19 +433,51 @@
       "terim": "Dev çarpışma varsayımı",
       "tanim": "Ay'ın, Mars büyüklüğünde bir cismin genç Dünya'ya çarpmasıyla saçılan malzemeden oluştuğu görüşü.",
       "kid": "d10t11"
+    },
+    {
+      "terim": "Drakonitik ay",
+      "tanim": "Ay'ın yörüngesinin aynı düğümüne geri dönme süresi; yıldızıl aydan biraz kısadır."
+    },
+    {
+      "terim": "Anomalistik ay",
+      "tanim": "Ay'ın yörüngesinde Dünya'ya en yakın noktaya geri dönme süresi; yıldızıl aydan biraz uzundur."
+    },
+    {
+      "terim": "Yerberi",
+      "tanim": "Ay'ın yörüngesinde Dünya'ya en yakın olduğu nokta."
+    },
+    {
+      "terim": "Yeröte",
+      "tanim": "Ay'ın yörüngesinde Dünya'dan en uzak olduğu nokta."
+    },
+    {
+      "terim": "Süper ay",
+      "tanim": "Yerberiye neredeyse denk gelen dolunay ya da yeni ay için kullanılan, bilimsel tanımı kesin olmayan yaygın ad."
+    },
+    {
+      "terim": "Ay illüzyonu",
+      "tanim": "Ay'ın açısal boyutu değişmediği hâlde ufka yakınken daha büyük görünmesi algı yanılsaması."
+    },
+    {
+      "terim": "Magma okyanusu",
+      "tanim": "Genç Ay'ın yüzeyini kaplayan ve yaklaşık 100 milyon yılda büyük ölçüde katılaşan erimiş kaya katmanı."
+    },
+    {
+      "terim": "Sinestia",
+      "tanim": "Dev bir çarpışmadan sonra oluşabileceği düşünülen, çok hızlı dönen, buharlaşmış kaya yapısı."
     }
   ],
   "defter_notu": [
-    "Ay hep yarı aydınlık; evre = aydınlık yarının bize dönük kısmı. k = (1 − cos θ)/2.",
-    "Kuzey yarımküre: sağ yan aydınlık → büyüyor. Dolunay gün batımında doğar, ilkdördün öğlen.",
-    "Yıldızıl ay 27,32 g; kavuşum ayı 29,53 g (1/S = 1/P − 1/Y).",
-    "Eş zamanlı dönme: 1 dönüş = 1 dolanım → hep aynı yüz. Librasyonla yüzeyin ~%59'u görülür.",
-    "Ay: çap 3474 km, kütle Dünya × 0,0123, g = 1,62 m/s² (≈ 1/6). Gündüz ~127 °C, gece ~−173 °C.",
-    "Denizler = lavla dolmuş havzalar (bazalt), yüzeyin ~%16'sı. Kraterler için terminatöre bak.",
-    "Köken: Mars büyüklüğünde Theia, ~4,51 milyar yıl önce. İpucu: izotoplar neredeyse aynı.",
-    "Uzaklık ort. 384.400 km; Apollo yansıtıcıları → yılda ~3,8 cm uzaklaşma.",
-    "Güneş tutulması: yeni ay, dar şerit, ISO 12312-2 gözlük. Ay tutulması: dolunay, güvenli, kızıl. Yörünge 5,145° eğik.",
-    "Apollo 11: 20 Temmuz 1969. 6 iniş, 12 insan, 382 kg örnek. Artemis II: 2026, mürettebatlı Ay çevresi uçuşu."
+    "Ay hep yarı aydınlık; evre = aydınlık yarının bize dönük kısmı. k = (1 − cos θ)/2. Sağ yan aydınlık → büyüyor.",
+    "Yıldızıl ay 27,32 g; kavuşum ayı 29,53 g (1/S = 1/P − 1/Y). Ay günde ~13° doğuya kayar (saatte ~kendi çapı), her gün ort. ~50 dk geç doğar.",
+    "Dolunay Güneş'in karşısında: İstanbul'da Haziran ~25°, Aralık ~72° yükselir (49° + dik açıklık).",
+    "Eş zamanlı dönme: 1 dönüş = 1 dolanım → hep aynı yüz. Ay'da gündüz ~14,8 gün. Librasyonla yüzeyin ~%59'u görülür.",
+    "Ay: çap 3474 km, kütle Dünya × 0,0123, g = 1,62 m/s² (≈ 1/6), kaçış 2,38 km/s. Gündüz ~127 °C, gece ~−173 °C.",
+    "Denizler = lavla dolmuş havzalar, yüzeyin ~%16'sı. Kraterler için terminatöre bak. Galileo 1610: dağlar ≥ 4 mil (h ≈ d²/2R).",
+    "Köken: Theia, ~4,51 milyar yıl önce; eski fikirler açısal momentumu açıklayamaz. İzotoplar aynı: hem kanıt hem bilmece.",
+    "Uzaklık ort. 384.400 km (yerberi ~363.300, yeröte ~405.500); yılda ~3,8 cm uzaklaşma. Süper ay: %14 büyük, %30 parlak; Ay illüzyonu algıdır.",
+    "Güneş tutulması yeni ayda, ISO 12312-2 gözlük; Ay tutulması dolunayda, güvenli, kızıl. Saros: 223 kavuşum ≈ 242 drakonitik ≈ 239 anomalistik ay.",
+    "Türkiye: 29 Mart 2006 tam tutulma (Side 3 dk 45 s); 31 Aralık 2028 tam Ay tutulması 19.16–20.28. Apollo 1969–72; Chang'e 4 2019; Chandrayaan-3 2023; Artemis II 1–10 Nisan 2026."
   ],
   "sorular": [
     {
@@ -328,6 +514,34 @@
       "soru": "Dolunay neden dürbünle krater gözlemi için en kötü zamandır?",
       "cevap": "Dolunayda Güneş ışığı yüzeye neredeyse dik gelir, gölgeler kaybolur ve kabartı görünmez. Öteki evrelerde terminatör boyunca ışık yatık gelir; kraterler ve dağlar uzun gölge düşürür, bu yüzden NASA dolunay dışındaki evreleri önerir.",
       "kid": "d10s6"
+    },
+    {
+      "soru": "Ay yıldızların önünde bir saatte ne kadar yol alır? Bunu çıplak gözle nasıl fark edebilirsin?",
+      "cevap": "360° / 27,32 gün ≈ 13,2° günde; 24 saate bölünce ≈ 0,55° saatte. Bu, Ay'ın kendi çapına (≈ 0,5°) yakındır. Ay'ın yanındaki parlak bir yıldızla arasındaki uzaklığı bir saat arayla karşılaştırınca kaymayı görebilirsin."
+    },
+    {
+      "soru": "Haziran'daki bir dolunay İstanbul'da gece yarısı en çok kaç derece yükselir? Aralık'takiyle karşılaştır.",
+      "cevap": "Yükseklik = 90° − 41° + dik açıklık. Haziran dolunayının dik açıklığı ≈ −23,44°: 49 − 23,44 ≈ 25,6°. Aralık'ta ≈ 23,44° (kuzey): 49 + 23,44 ≈ 72,4°. Yörünge eğikliği yüzünden ikisi de birkaç derece oynar."
+    },
+    {
+      "soru": "Ay 357.000 km'deyken ve 407.000 km'deyken dolunayın çapı ve verdiği ışık nasıl değişir?",
+      "cevap": "Çap uzaklıkla ters orantılı: 407.000 / 357.000 ≈ 1,14, yani yakın dolunay %14 büyük. Işık kaplanan alanla orantılı: 1,14² ≈ 1,30, yani yaklaşık %30 fazla."
+    },
+    {
+      "soru": "Ufukta doğan dolunay neden tepedekinden büyük görünür? Gerçekten büyük müdür?",
+      "cevap": "Hayır. Açısal boyut aynı kalır; ufuktaki Ay aslında yaklaşık %1,5 daha uzaktadır. Fotoğraflar ve kol boyunda tutulan bir çakıl taşı bunu gösterir. Büyüklük bir algı yanılsamasıdır (Ay illüzyonu) ve nedeni hâlâ kesin olarak açıklanamamıştır."
+    },
+    {
+      "soru": "Saros neden yaklaşık 6585,3 gündür ve neden aynı serinin bir sonraki tutulması başka bir yerde görülür?",
+      "cevap": "223 kavuşum ayı (223 × 29,5306 ≈ 6585,3 gün) yaklaşık 242 drakonitik aya ve 239 anomalistik aya eşittir; Ay aynı evrede, düğüme göre aynı yerde ve aynı uzaklıktadır. Artık 0,3 gün yüzünden Dünya fazladan yaklaşık üçte bir tur döner, tutulma yaklaşık 115° batıda görülür."
+    },
+    {
+      "soru": "Dünya ile Ay'ın izotop bileşimlerinin neredeyse aynı olması dev çarpışma varsayımı için neden hem kanıt hem sorundur?",
+      "cevap": "Kanıttır, çünkü Ay'ın Dünya malzemesiyle yakın akraba olduğunu ve başka yerden yakalanmadığını gösterir. Sorundur, çünkü eski modeller Ay'ın yaklaşık %80'inin çarpan Theia'dan geldiğini öngörüyordu ve Theia'nın farklı bir parmak izi taşıması beklenirdi. Sinestia, daha hızlı çarpışma ya da Theia'nın Dünya'ya yakın oluşması gibi çözümler önerildi; tartışma sürüyor."
+    },
+    {
+      "soru": "31 Aralık 2028 tam Ay tutulmasının tam evresi UTC'ye göre 16.16–17.28 arasındadır. İstanbul saatiyle ne zaman izlersin, gözlük gerekir mi?",
+      "cevap": "Türkiye saati UTC'den 3 saat ileri olduğundan yaklaşık 19.16 ile 20.28 arası, yılbaşı akşamı. Ay tutulması korumasız gözle ve dürbünle güvenle izlenir; gözlük gerekmez."
     }
   ],
   "kaynaklar": [
@@ -398,6 +612,78 @@
     {
       "ad": "NIST CODATA – speed of light in vacuum",
       "url": "https://physics.nist.gov/cgi-bin/cuu/Value?c"
+    },
+    {
+      "ad": "Wikipedia – Moonrise and moonset",
+      "url": "https://en.wikipedia.org/wiki/Moonrise_and_moonset"
+    },
+    {
+      "ad": "Wikipedia (Wikiwand) – Supermoon",
+      "url": "https://www.wikiwand.com/en/articles/Supermoon"
+    },
+    {
+      "ad": "Wikipedia – Moon illusion",
+      "url": "https://en.wikipedia.org/wiki/Moon_illusion"
+    },
+    {
+      "ad": "Wikipedia – Giant-impact hypothesis",
+      "url": "https://en.wikipedia.org/wiki/Giant-impact_hypothesis"
+    },
+    {
+      "ad": "Wikipedia – Sidereus Nuncius",
+      "url": "https://en.wikipedia.org/wiki/Sidereus_Nuncius"
+    },
+    {
+      "ad": "Wikipedia – Eclipse of Thales",
+      "url": "https://en.wikipedia.org/wiki/Eclipse_of_Thales"
+    },
+    {
+      "ad": "Wikipedia – Solar eclipse of March 29, 2006",
+      "url": "https://en.wikipedia.org/wiki/Solar_eclipse_of_March_29,_2006"
+    },
+    {
+      "ad": "Wikipedia – Solar eclipse of August 2, 2027",
+      "url": "https://en.wikipedia.org/wiki/Solar_eclipse_of_August_2,_2027"
+    },
+    {
+      "ad": "Wikipedia – December 2028 lunar eclipse",
+      "url": "https://en.wikipedia.org/wiki/December_2028_lunar_eclipse"
+    },
+    {
+      "ad": "Space.com – The total lunar eclipse on March 3 will be the last until New Year's Eve 2028",
+      "url": "https://www.space.com/stargazing/lunar-eclipses/the-total-lunar-eclipse-on-march-3-will-be-the-last-until-new-years-eve-2028"
+    },
+    {
+      "ad": "orbitalradar – 2 Ağustos 2027 tutulması, İstanbul",
+      "url": "https://orbitalradar.com/eclipse/2027-august-2/istanbul"
+    },
+    {
+      "ad": "orbitalradar – 31 Aralık 2028 Ay tutulması, İstanbul",
+      "url": "https://orbitalradar.com/eclipse/2028-december-31-lunar/istanbul"
+    },
+    {
+      "ad": "Daily Sabah – 2027 tutulması",
+      "url": "https://www.dailysabah.com/life/countdown-begins-for-2027-eclipse-of-century-crossing-spain-to-somalia/news"
+    },
+    {
+      "ad": "Wikipedia – Chinese Lunar Exploration Program",
+      "url": "https://en.wikipedia.org/wiki/Chinese_Lunar_Exploration_Program"
+    },
+    {
+      "ad": "Space.com – Chang'e 6 lands on far side",
+      "url": "https://www.space.com/china-change-6-lands-on-moon-far-side-sample-return-mission"
+    },
+    {
+      "ad": "Wikipedia – Chandrayaan-3",
+      "url": "https://en.wikipedia.org/wiki/Chandrayaan-3"
+    },
+    {
+      "ad": "ScienceDaily – Artemis II launch (2 Nisan 2026)",
+      "url": "https://www.sciencedaily.com/releases/2026/04/260402004721.htm"
+    },
+    {
+      "ad": "NASA – Artemis II splashdown",
+      "url": "https://www.nasa.gov/image-detail/artemis-ii-splashdown-2/"
     }
   ]
 }

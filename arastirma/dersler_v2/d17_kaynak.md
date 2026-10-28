@@ -199,3 +199,191 @@ Tarih: 2026-10-27. Bağımsız doğrulayıcı. WF2 = bu oturumda yeniden açıla
 | Doğrulandı: ESA 2013 %4,9 ve %26,8 | ESA Planck (WF2) | aynı ifadeler |
 | Doğrulandı: gelecek senaryoları (10¹⁴ yıl, 10¹⁰⁰⁰ yıl, Büyük Yırtılma çekirdekler ve uzay-zaman, Büyük Çöküş "likely incorrect", boşluk kararsızlığı, ~100 milyar yıl) | WP:Chronology_of_the_universe (WF2) | "Even atomic nuclei will be torn apart." ; "Currently considered to be likely incorrect." |
 | ASKIDA (yeniden açılmadı, önceki doğrulamaya dayanıyor): WP Redshift ifadeleri, WP Expansion_of_the_universe ifadeleri, ESA/Hubble heic1611a, arXiv:1004.3869 ifadeleri, arXiv:2503.19481 "crack" ifadesi, WP Type Ia supernova, WP Galaxy rotation curve | — | — |
+
+## v3 genişletme (2026-10-28)
+
+Bu turda eklenen her yeni iddia. "WF3" = bu oturumda WebFetch ile okunan sayfa (alıntı WebFetch özetinin aktardığı metin). "PROJE" = başka bir dersin kaynak dosyasında önceden doğrulanmış satır. "HESAP" = python3 ile yapılan hesap. arXiv bu oturumda erişilemedi (izin hatası); arXiv'e yeniden gidilmedi.
+
+### Bölüm 1 — Kırmızıya kayma (ek paragraflar)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Slipher 1912'de Andromeda'nın dikine hızını tayfölçümle ölçtü | https://en.wikipedia.org/wiki/Andromeda_Galaxy (WF3) | "In 1912, Vesto Slipher used spectroscopy to measure the radial velocity of Andromeda with respect to the Solar System" |
+| Güneş'e göre ~300 km/s, Samanyolu'na göre ~110 km/s yaklaşıyor | aynı | "approaching relative to the Sun at around 300 km/s" ; "approaching the Milky Way at about 110 kilometres (68 miles) per second" ; tablo: −301 ± 1 km/s |
+| z ≈ −0,001, eksi = maviye kayma; ~100 maviye kaymış galaksi | aynı | "z = −0.001004 (negative sign indicates blueshift)" ; "one of about 100 observable blueshifted galaxies" |
+| 2025'te JWST ile tayfla doğrulanan z = 14,44 galaksi | https://arxiv.org/abs/2505.11263 (yalnız arama sonucu başlığı; arXiv açılamadı) | başlık: "A Cosmic Miracle: A Remarkably Luminous Galaxy at z_spec=14.44 Confirmed with JWST" (arXiv numarası 2505 = Mayıs 2025). "Rekor" iddiası bilerek yazılmadı. |
+| 1 + z = 15,44; 656,28 × 15,44 = 10.133 nm | HESAP | — |
+| Arka plan ışıması z ≈ 1100 | WP:Recombination_(cosmology) (PROJE, d8_kaynak.md) | "at a redshift of z = 1100" |
+
+### Bölüm 2 — Hubble-Lemaître (ek paragraflar)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Hubble 1929: 46 galaksi, ~500 km/s/Mpc, uzaklık ayarı hataları | https://en.wikipedia.org/wiki/Hubble%27s_law (WF3) | "The result he obtained was 500 (km/s)/Mpc, much larger than the value astronomers currently calculate." ; "much higher than the currently accepted value due to errors in his distance calibrations" ; 46 galaksi |
+| 977,8 / 500 = 1,96 milyar yıl | HESAP | 1,956 |
+| Dünya 4,54 milyar yaşında (USGS) | https://pubs.usgs.gov/gip/geotime/age.html (PROJE) | "4.54 billion years" |
+| Baade: iki yıldız topluluğu, iki tür Sefeid; Hubble'ın 1929 hesabını ikiye katladı | WP:Hubble%27s_law (WF3) | "there are two types of Cepheid variable stars with different luminosities" ; "recalculated Hubble constant and the size of the known universe, doubling the previous calculation made by Hubble in 1929" (derste neyin ikiye katlandığı, kaynaktaki belirsizlik yüzünden "hesabı" diye bırakıldı) |
+| de Vaucouleurs ~100, Sandage ~50; uzun ve sert tartışma | aynı | "a long and rather bitter controversy between" ... "who claimed the value was around 100" ... "who claimed the value was near 50" |
+| Özel hızlar hesaba katılmalı | aynı | "these relative velocities, called peculiar velocities, need to be accounted for" |
+| Andromeda 765 kpc | WP:Andromeda_Galaxy (PROJE, d7_kaynak.md) | "Distance: 765 kpc (2.50 Mly)" |
+| 67,4 × 0,765 = 52 km/s; 67,4 × 100 = 6740 km/s | HESAP | 51,56 |
+| "Birkaç yüz km/s'lik özel hızlar" | Andromeda'nın Güneş'e göre ~300 km/s hızı (yukarıda) örnek olarak; genel bir dağılım kaynağı yok | — |
+
+### YENİ bölüm — Merkez yok
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Kozmolojik ilke: homojen ve izotrop | https://en.wikipedia.org/wiki/Expansion_of_the_universe (WF3) | "the universe at the largest scales is homogeneous (the same everywhere) and isotropic (the same in all directions)." |
+| Ölçek çarpanı ortalama uzaklıkla orantılı | aynı | "is quantified by the scale factor, a, which is proportional to the average separation between objects, such as galaxies." |
+| Bir şeyin içine genişlemiyor | aynı | "it does not mean that the universe expands into anything or that space exists outside it." |
+| Bağlı yakın galaksiler hariç | aynı | "all but the nearest galaxies (which are bound to each other by gravity) move away at speeds that are proportional to their distance from the observer." |
+| Kek/üzüm benzetmesi ve sınırları; "her gözlemci aynı yasayı görür" | Ders içi açıklama (homojenlik tanımından ve örnek hesaptan) | Wikipedia sayfası benzetmeyi tartışmıyor; benzetme ders yazarınındır |
+| Örnek: 1, 2, 3 cm → 2, 4, 6 cm; hızlar 1, 2, 3 | HESAP | — |
+
+### Bölüm 3 — Iraklık (ek paragraflar)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Piazzi 1804, büyük öz hareket, "uçan yıldız", yakın olabilir | https://en.wikipedia.org/wiki/61_Cygni (WF3) | Piazzi 1804; "Flying Star" ; "this motion meant that it was probably one of the closest stars" |
+| Bessel, Fraunhofer'in heliometresi, 1837–1838, 313,6 ± 13,6 mas | aynı | "estimated the center point to be at 313.6 ±13.6" ; "carried out another set of measurements using this device in 1837 and 1838" |
+| 1838, ~0,3 yay saniyesi, ~11 ışık yılı | https://www.lindahall.org/friedrich-wilhelm-bessel/ (WF3) | "In 1838, Bessel was successful." ; "measured to be 0.3 seconds" ; "11 light-years distant" |
+| Bugün 287,18 mas, 11,36 ışık yılı | WP:61_Cygni (WF3) | "the currently accepted value of 287.18 mas (yielding 11.36 light-years)" |
+| 1/0,3136 = 3,19 pc = 10,4 ışık yılı; fark %9 | HESAP | 3,189 ; 10,40 ; (313,6 − 287,18)/287,18 = 0,092 |
+| 61 Cyg 5,2 ve 6,1 kadir; kentte dürbünle, kırsalda çıplak gözle | WP:61_Cygni (WF3) | "they can be seen with binoculars in city skies or with the naked eye in rural areas without light pollution." |
+| Proxima 768 mas (Gaia DR3), 1,30 pc, 4,25 ışık yılı; çıplak gözle görülmez; ~27° K'nin güneyi | https://en.wikipedia.org/wiki/Proxima_Centauri (WF3) | "768.0665±0.0499 mas" (Gaia DR3) ; 4.2465 ly, 1.3020 pc ; "too faint to be seen with the naked eye" ; en kuzey görüş enlemi 27.32° N |
+| Gaia: 19 Aralık 2013, Soyuz, Kourou; L2; >1 milyar yıldız; 0,000007″; 2025 sonuna kadar | https://britannica.com/topic/Gaia-European-Space-Agency-satellite (WF3) | "It was launched on December 19, 2013, by a Soyuz rocket from Kourou, French Guiana." ; "near the second Lagrangian point (L2)" ; "more than one billion stars" ; "Positions for the brightest stars were measured to an accuracy of 0.000007 arc second." ; "scheduled to last to the end of 2025" |
+| 0,3136 / 0,000007 ≈ 44.800 → "kırk binde birinden küçük" | HESAP | 44.800 |
+
+### Bölüm 4 — Sefeidler ve Ia (ek paragraf ve yeni örnek)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Önceleri hepsi aynı tepe parlaklığı sanılıyordu | https://astronomy.swinburne.edu.au/cosmos/T/Type+Ia+Supernova (WF3) | "Originally thought to be standard candles where every SNIa had the same peak brightness" |
+| MB ~ −19,5; ±1,5 kadir saçılım | aynı | "with an absolute magnitude of MB ~ -19.5 at maximum light" ; "range from about +1.5 to -1.5 magnitudes around a typical SNIa" |
+| Parlaklık sapması ışık eğrisinin sönme hızıyla ilişkili; en iyi uzaklık ölçütlerinden | aynı | "the over or under luminosity of these objects is correlated to how quickly the Type Ia light curve decays" ; "one of the best distance indicators available to astronomers" (kaynak ilişkinin yönünü vermediği için derste yön yazılmadı) |
+| Uzaklık modülü m − M = 5 log(d/10) | https://astronomy.swinburne.edu.au/cosmos/D/Distance+Modulus (PROJE, d5_kaynak.md #104) | m − M = 5 log₁₀(r/10) |
+| Örnek: 35,5 → 1,259×10⁸ pc = 126 Mpc = 411 Mly; 8485 km/s; z = 0,028; 10^0,3 = 1,995 | HESAP | — |
+
+### YENİ bölüm — Merdiveni İstanbul'dan görmek
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Delta Cephei dik açıklığı +58° 24′ | https://en.wikipedia.org/wiki/Delta_Cephei (WF3) | "+58° 24′ 54.7139″" (bilgi kutusu) |
+| Batmama koşulu enlem + dik açıklık > 90° | https://en.wikipedia.org/wiki/Circumpolar_star (PROJE, d1_kaynak.md) | "The star is circumpolar if θ + δ is greater than +90°" |
+| 41 + 58 = 99° | HESAP | — |
+| 5,366249 gün; 3,48–4,37 kadir; 273 ± 7 pc (890 ± 20 ışık yılı); mutlak kadir −3,47 | WP:Delta_Cephei (WF3) | "The pulsation period is 5.366249 days" ; "It varies from magnitude 3.48 to 4.37" ; "890 ± 20 ly (273 ± 7 pc)" ; "−3.47±0.10" |
+| Kent ~3, banliyö ~4 kadir çıplak göz sınırı | d1/d5 (PROJE; d5 örneğinde "1. derste gördüğün gibi kent göğünde çıplak gözün sınırı yaklaşık +3, banliyöde yaklaşık +4") | — |
+| Yoldaş 6,3 kadir, ~40″, küçük teleskoplarla | WP:Delta_Cephei (WF3) | HD 213307, 6.3 kadir, ~40 yay saniyesi, "visible in small telescopes" |
+| Kutup Yıldızı klasik Sefeid, ~4 gün, dönem artıyor | https://www.universetoday.com/163101/polaris-is-the-closest-brightest-cepheid-variable-very-recently-something-changed/ (WF3) | "Polaris Aa is a classic Cepheid variable" ; "a consistent pulse period of about four days, which has been steadily increasing every year." (parlaklık değişiminin büyüklüğü kaynakta yok, derste yazılmadı) |
+| M31 3,44 kadir; Aysız gecede orta ışık kirliliğinde çıplak gözle | WP:Andromeda_Galaxy (WF3) | "is visible to the naked eye from Earth new moon nights, even when viewed from areas with moderate light pollution" ; kadir 3,44 (d7_kaynak.md) |
+| En iyi Kasım; 2,5 milyon ışık yılı | https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-31/ (PROJE) | "best observed in November" ; "2.5 million light-years" |
+| Görünür boyut 3,167° × 1° | WP:Andromeda_Galaxy (WF3) | "Apparent size (V) 3.167° × 1°" |
+| Dolunay ~0,5°; 3,167/0,5 = 6,3 | https://en.wikipedia.org/wiki/Solar_eclipse (PROJE, d10) ; HESAP | "about 0.5 degree of arc" |
+| Hubble 1923 M31 Sefeidi | d7.json / d7_kaynak.md (PROJE) | — |
+| Toz sönükleştirir ve kızartır; maviyi daha çok soğurur | https://en.wikipedia.org/wiki/Interstellar_medium (PROJE, d14_kaynak.md #16) | Dust causes "extinction and reddening" ; "greater absorption of blue than red light" |
+| Örnek: (3,48 + 4,37)/2 = 3,925; 7,395; 301 pc; 983 ışık yılı; %10 fazla | HESAP | 10^(12,395/5) = 301,3 ; 301,3/273 = 1,10 |
+
+### Bölüm 6 — Karanlık madde 2 (ek paragraf)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Döteryum baryon/foton oranına çok duyarlı; %1 belirsizlik | https://en.wikipedia.org/wiki/Big_Bang_nucleosynthesis (WF3) | "Deuterium in particular is extraordinarily sensitive to the value of this parameter." ; "Recent work uses BBN to determine the baryon-to-photon ratio with an uncertainty of 1%." |
+| 1990'larda döteryum tahminleri baryon dışı kütle gerektirdi | aynı | "there must be mass other than baryons in the universe, an idea that came to be called dark matter." |
+| Arka plan ışıması da aynı oranı verir; ~400.000 yıl arayla uyum | aynı | BBN ve CMB yaklaşık 400.000 yıl arayla bağımsız dönemler ; "Concordance between these epochs is observed" |
+
+### Bölüm 5 — Karanlık madde 1 (ek cümle)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| 1,15 / 0,58 ≈ 2 kat belirsizlik | HESAP (sayılar WP:Milky_Way, mevcut satır) | 1,98 |
+
+### YENİ bölüm — Karanlık madde mi, değişen kütleçekimi mi?
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Milgrom, İsrailli fizikçi; 1982 geliştirildi, 1983 sunuldu | https://en.wikipedia.org/wiki/Modified_Newtonian_dynamics (WF3) | "MOND was developed in 1982 and presented in 1983 by Israeli physicist Mordehai Milgrom." |
+| Çok küçük ivmelerde Newton'u değiştirir; galaksi ve kümelerde yaygın | aynı | "MOND modifies Newton's laws for extremely small accelerations, which are common in galaxies and galaxy clusters." |
+| a0 ≈ 1,2×10⁻¹⁰ m/s² (1991 en iyi uyum) | aynı | "In 1991 Begeman et al. found a0 ≈ 1.2 × 10−10 m/s2 to be optimal by fitting Milgrom's law to rotation curve data." |
+| Dönme eğrilerine iyi uyar ama kanıt sayılmaz | aynı | "This provides a good fit to galaxy rotation curve data." ; "Since MOND was specifically designed to produce flat rotation curves, these do not constitute evidence for the hypothesis." |
+| Kümelerde kütle açığı; Mermi Kümesi; arka plan ışıması | aynı | "galaxy clusters show a residual mass discrepancy even when analyzed using MOND" ; "MOND still fails to fully explain this cluster" ; "MOND has a much harder time" |
+| Üçüncü paragraf (daha çok gözlemi açıklar; parçacık bulunmadıkça açık) | Ders içi sentez: yukarıdaki satırlar + Bölüm 6 (Chandra, arXiv:1004.3869 "not yet given a definite (positive) answer") | — |
+| Örnek: Güneş a = 1,585×10⁻¹⁰; oran 1,32 | HESAP (v = 200 km/s, r = 8178 pc mevcut satırlar) | — |
+| Dünya 29,78 km/s; 1 AB = 149.597.870.700 m | https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html (PROJE, d1/d10) ; https://iauarchive.eso.org/static/resolutions/IAU2012_English.pdf (arastirma/sabitler.json) | "Mean orbital velocity (km/s): 29.78" ; "149 597 870 700 m exactly" |
+| a_Dünya = 5,93×10⁻³; a0'ın 4,9×10⁷ katı; 9,80 / 1,585×10⁻¹⁰ = 6,2×10¹⁰ | HESAP | — |
+| 9,80 m/s² yüzey çekimi | https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html (PROJE) | "Surface gravity" "9.80" (Dünya sütunu) |
+
+### Bölüm 7 — Karanlık enerji (DESI paragrafı)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| DESI, Kitt Peak'te 4 m Mayall Teleskobu'nda, Arizona | https://www.sciencedaily.com/releases/2025/03/250320214311.htm (WF3) | "DESI is mounted on the U.S. National Science Foundation's Nicholas U. Mayall 4-meter Telescope" "at Kitt Peak National Observatory (a program of NSF NOIRLab) in Arizona." |
+| ~15 milyon galaksi ve kuasar; son 11 milyar yıl | aynı | "nearly 15 million of the best measured galaxies and quasars" ; "track dark energy's influence over the past 11 billion years" |
+| BAO: erken evrenin madde dağılımında bıraktığı desen, standart cetvel | aynı | "Events in the very early universe left subtle patterns in how matter is distributed, a feature called baryon acoustic oscillations (BAO)." ; "That BAO pattern acts as a standard ruler" |
+| 2,8–4,2 sigma; CMB, zayıf mercek, süpernova ile | aynı | "different combinations of DESI data with the CMB, weak lensing, and supernovae datasets range from 2.8 to 4.2 sigma." |
+| 5 sigmaya ulaşmadı | aynı | "So far, the preference for an evolving dark energy has not risen to "5 sigma,"" |
+| Etki zamanla zayıflıyor olabilir | aynı | "there are mounting indications that the impact of dark energy may be weakening over time" |
+| Mart 2025; üç yıllık veri; 3B harita | https://www.desi.lbl.gov/2025/03/19/more-than-a-hint-of-evolving-dark-energy-new-results-and-data-from-desi/ (WF3) | 19 Mart 2025 ; "New results from the first 3 years of DESI data strengthen hints that dark energy is evolving." ; "largest 3D map of our universe" |
+| CCAPP: kesin değil ama ciddiye alınacak kadar güçlü | https://ccapp.osu.edu/news/new-desi-results-strengthen-hints-dark-energy-may-evolve (WF3) | "The result is still not definitive, but it's strong enough to be taken quite seriously." |
+
+### Bölüm 8 — Bileşim (ek paragraf)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Ωm = 0,315 ± 0,007 | https://www.iac.es/es/ciencia-y-tecnologia/publicaciones/planck-2018-results-vi-cosmological-parameters (WF3, Planck 2018 VI özeti) | "matter density parameter Ωm = 0.315 ± 0.007" |
+| 0,0493 + 0,2645 = 0,3138 | HESAP | — |
+| Σmν < 0,12 eV; Neff = 2,99 ± 0,17; Standart Model 3,046 | aynı | "the neutrino mass is tightly constrained to ∑mν < 0.12 eV" ; "Neff = 2.99 ± 0.17, in agreement with the Standard Model prediction Neff = 3.046" |
+| Nötrinolar ilk saniyede serbest kalır | WP:Chronology_of_the_universe (PROJE, d8_kaynak.md) | "At approximately 1 second after the inflation, neutrinos decouple and begin travelling freely through space." |
+
+### YENİ bölüm — Evrenin geometrisi ve kritik yoğunluk
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Düz: üçgen 180°, Pisagor; artı eğrilik > 180° (3-küre); eksi eğrilik < 180° (hiperbolik) | https://en.wikipedia.org/wiki/Shape_of_the_universe (WF3) | (WF özeti) flat: angles sum to 180°, Pythagorean theorem holds ; positive curvature: more than 180° ; negative: less than 180° |
+| Ω = ortalama yoğunluk / düzlük için kritik yoğunluk; Ω = 1 düz, >1 artı, <1 eksi | aynı | (WF özeti) "Ω is the average density of the universe divided by the critical density needed for flatness" |
+| ρc = 3H²/(8πG) (düz evren); H0 = 70 için 9,3×10⁻³⁰ g/cm³, ~6 H atomu/m³ | https://dictionary.obspm.fr/terms/critical-density/ (WF3) | "ρc = (3c2/8πG)Ht2" ; "The critical density is currently 9.3 × 10-30g cm-3, about 6 hydrogen atoms per cubic meter (for H0 = 70 km s-1 Mpc-1)." (kaynaktaki c² çarpanı yoğunluğu enerji yoğunluğu birimine çevirir; derste kütle yoğunluğu biçimi kullanıldı) |
+| ΩK = 0,001 ± 0,002 (Planck + BAO) | Planck 2018 VI özeti, IAC (WF3) | "The joint constraint with BAO measurements on spatial curvature is consistent with a flat universe, ΩK = 0.001 ± 0.002." |
+| %0,4 hata payı içinde düz; düz evren sonlu olabilir; topoloji bilinmiyor | WP:Shape_of_the_universe (WF3) | (WF özeti) "spatially flat to within a 0.4% margin of error" ; flat universes "can also be finite and compact" ; "Its global topology is still unknown" |
+| "Yoğunluğa karanlık enerji de dahil" | Planck Ωb + Ωc + ΩΛ ≈ 1 (mevcut Bölüm 8 satırları) ile ΩK ≈ 0 | — |
+| "Bu farklar ancak çok büyük ölçeklerde" | Ders içi açıklama (%0,4 sınırından) | — |
+| Örnek: H = 2,184×10⁻¹⁸ s⁻¹; ρc = 8,53×10⁻²⁷ kg/m³ (H0 = 70 için 9,20×10⁻²⁷, sözlüğün 9,3 değeriyle uyumlu); 6 × (67,4/70)² = 5,56; × 0,049 = 0,27 | HESAP (G NIST, 1 pc arXiv:1510.06262 mevcut satırlar) | — |
+
+### Bölüm 9 — Hubble gerilimi: değişiklik yok
+
+### YENİ bölüm — Gece neden karanlık? Gözlenebilir evrenin sınırı
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Olbers, Alman gökbilimci, 7 Mayıs 1823 makalesi | https://www.uwa.edu.au/news/article/2023/june/why-is-the-sky-dark-at-night-the-200-year-history-of-a-question-that-transformed-our-understanding-of-the-universe (WF3) | "This is the problem Olbers raised in his paper of May 7 1823." |
+| Bakış her yerde bir yıldıza çarpar; her nokta Güneş yüzeyi kadar parlak | aynı | "wherever we look at night our gaze should land on the surface of a star." ; "the cosmological model of the time suggested every point in the sky should be as bright as the surface of the Sun." |
+| Poe 1848 sonlu evren; Kelvin 1901 | aynı | Poe 1848'de sonlu evren önerdi ; "by British physicist Lord Kelvin in 1901" |
+| Harrison: asıl etken yıldızların sonlu yaşı | aynı | "the main factor determining the brightness of the night sky is actually the finite age of the stars." |
+| Işığın yolculuk süresi görülebilen evreni sınırlar; genişleme dalga boyunu uzatır; gök kalıntı ışımayla parlar | aynı | "the time taken by light to reach us would limit the size of the amount of the Universe we can see." ; "the expanding Universe would have shifted it to longer wavelengths" ; "the sky is not dark, but faintly glimmers with the dim relic radiation." |
+| Evrenin yaşı ~13,8 milyar yıl | WP:Hubble%27s_law (WF3) | "the age of the universe, which is approximately 13.8 billion years." |
+| Yarıçap 14,26 Gpc = 46,5 milyar ışık yılı; çap ~93 milyar ışık yılı | https://en.wikipedia.org/wiki/Observable_universe (WF3) | "The radius of this region is about 14.26 giga parsecs (46.5 billion light-years or 4.40×1026 m)." ; çap 28,5 Gpc (93 milyar ışık yılı) |
+| Bugünkü uzaklık, yayılma anındaki değil | aynı | "These are distances now (in cosmological time), not distances at the time the light was emitted." |
+| Arka plan maddesi yayılırken ~42 milyon ışık yılı | aynı | "about 42 million light-years" |
+| Olay ufku ~16 milyar ışık yılı; sinyal asla ulaşmaz | aynı | "the current distance to this horizon is about 16 billion light-years" ; "the signal will never reach the Earth if the event is farther away." |
+| Örnek: 46,5/13,8 = 3,37; 46.000/42 = 1095 ≈ 1100 | HESAP | — |
+
+### Bölüm 10 — Gelecek (ek paragraf)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Isıl ölüm kozmolojik sabit varsayımına dayanır; değişen karanlık enerji senaryoları yeniden açar | Ders içi sentez: mevcut satır "Dark energy is believed to act like a cosmological constant" (WP:Chronology) + DESI satırları | — |
+
+### Yeni sorular
+
+| Soru | Kaynak | |
+|---|---|---|
+| Andromeda maviye kayma | HESAP + yukarıdaki satırlar | 51,6 km/s < 110 km/s |
+| Bessel 0,3136″ | HESAP | 3,19 pc ; 10,40 ışık yılı ; (11,36 − 10,40)/11,36 = 0,085 |
+| Delta Cephei batmaz | HESAP + Circumpolar_star | 99° > 90° |
+| Kritik yoğunluk H0 = 73 | HESAP | 6 × (73/70)² = 6,53 |
+
+### Notlar (v3)
+
+1. arXiv.org bu oturumda izin hatası verdi; Planck 2018 VI özeti IAC yayın sayfasından okundu. z = 14,44 galaksisi için yalnız arama sonucundaki makale başlığı kullanıldı; galaksinin adı ve "en uzak" olup olmadığı yazılmadı.
+2. DESI sonuçlarındaki 2,8–4,2 sigma, ScienceDaily'nin yayımladığı Berkeley Lab basın bülteninden; DESI'nin kendi sayfaları bu sayıyı vermedi.
+3. Polaris'in parlaklık değişiminin büyüklüğü ve uzaklığı bulunamadı ("bulamadım"); derste yazılmadı.
+4. Kuğu'nun İstanbul'dan hangi mevsimde en iyi göründüğü için bu derste kaynak açılmadı; zaman verilmedi.
+5. Kek/üzüm benzetmesi ders yazarınındır; Wikipedia sayfası benzetmeyi yalnız dış bağlantı başlığı olarak anıyor.

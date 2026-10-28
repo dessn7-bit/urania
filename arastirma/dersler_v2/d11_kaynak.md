@@ -189,3 +189,164 @@ Yeniden açılıp doğrulanan (değişiklik gerekmeyen) yüksek riskli iddialar:
 Python3 ile yeniden hesaplananlar (hepsi doğru): (50/7)² = 51,02; 50/7 = 7,143; 2,512⁴ = 39,82; 2,5 × log₁₀ 51 = 4,269; 7 × 5,8 = 40,6; 7 × 6 = 42; 50/10 = 5; kültürasyon (enlem 41°): M8 24,61°, M42 43,61°, M13 85,46°, M45 73,11°, M31 90,27° (enlem 41,0046 ile de aynı yuvarlama); 6/0,5 = 12; 6/10 = 0,6; 15/6 = 2,5; 24,6/10 ≈ 2,5 yumruk; 10^(0,4 × 14) = 398.107.
 
 Askıda kalan: yok. Kullanılan WebSearch: 0.
+
+## v3 genişletme (2026-10-28)
+
+Bu oturumda 2.076 → 5.438 kelime; 10 → 14 bölüm. İşaretler: [W] = sayfa bu oturumda indirilip (curl, Wikipedia; düz metne çevrilip) cümle birebir arandı; [B] = WebFetch ile okundu (alıntı WebFetch özet modelinin aktardığıdır; doğrulama ajanı bir kez daha bakmalı); [V] = proje veri dosyası (veri/yildizlar.json: d3-celestial, adlar IAU WGSN; veri/hedefler.json: SIMBAD + SEDS çapraz kontrollü); [U] = uygulama kodu (bulucu.js); [H] = hesap (python3 ile yapıldı). Not 6'daki "7×50 görüş alanı için kaynak bulunamadı" eksiği bu oturumda üç üretici belgesiyle kapatıldı; eski "Diyelim ki 6°" örneği 6,4°'e çevrildi.
+
+### Bölüm 1 — 7×50 ne demek? (eklenen üç paragraf)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| [W] Kaplamasız yüzey ~%4 yansıtır; 16 yüzeyde %52 kalır; MgF₂ %1,5 → %78,5 | https://en.wikipedia.org/wiki/Binoculars | "A classic lens-coating material is magnesium fluoride, which reduces reflected light from about 4% to 1.5%. At 16 air to optical glass surfaces passes, a 4% reflection loss theoretically means a 52% light transmission ... and a 1.5% reflection loss a much better 78.5% light transmission" |
+| [W] Çok katmanlı kaplama ≤%0,25; >%90 geçirgenlik | https://en.wikipedia.org/wiki/Binoculars | "effective modern anti-reflective lens coatings consist of complex multi-layers and reflect only 0.25% or less" ; "practically achieve at the eye lens or ocular lens measured over 90% light transmission values in low light conditions" |
+| [W] Yansıyan ışık puslandırır, karşıtlığı düşürür; iyi kaplamalı dürbün daha büyük objektifli kaplamasızdan parlak olabilir | https://en.wikipedia.org/wiki/Binoculars | "also reduces the amount of "lost" light present inside the binocular which would otherwise make the image appear hazy (low contrast). A pair of binoculars with good optical coatings may yield a brighter image than uncoated binoculars with a larger objective lens" |
+| [W] fully coated / multi-coated / fully multi-coated tanımları | https://en.wikipedia.org/wiki/Binoculars | "fully coated: all air-to-glass surfaces are anti-reflective coated with a single-layer coating." ; "multi-coated: one or more surfaces have anti-reflective multi-layer coatings." ; "fully multi-coated: all air-to-glass surfaces are anti-reflective multi-layer coated." |
+| [B] Bresser: Fully coated | https://www.bresser.com/p/bresser-7x50-travel-binoculars-1250752 | "Type of coating: Fully coated" |
+| [B] Celestron: Multi-Coated | https://www.celestron.com/products/cometron-7x50 | "Lens Coatings: Multi-Coated" |
+| [B] Nikon: çok katmanlı kaplamalı mercekler | https://imaging.nikon.com/sport-optics/lineup/binoculars/standard/ex_x35x40x50/ | "Multilayer-coated lenses and large objective diameter for optimal image clarity" |
+| [B] İki göz toplaması; 65 çalışmalık meta-analiz; klasik √2; daha büyük; √2 ile 2 arası; Psychological Bulletin 2018; yazarlar | https://publications.aston.ac.uk/id/eprint/33467/6/Binocular_Summation_Revisited.pdf | "This improvement in sensitivity is known as binocular summation" ; "A meta-analysis of 65 studies published across more than 5 decades" ; "is significantly greater than the canonical value of √2" ; "estimates of binocular summation fall within the range between √2 and 2, depending on stimulus properties" ; Baker, Lygo, Meese, Georgeson, Psychological Bulletin 144(11), 2018 |
+| "Gece gökyüzünde kaç kadir kazandırdığını söyleyen ölçüm yok" | — | yazar notu: makale karşıtlık eşiği deneylerini birleştiriyor; kadir cinsinden bir değer verilmedi |
+| [H] √2 ≈ 1,41 | — | hesap |
+
+### Bölüm 2 — Çıkış göz bebeği (eklenen iki paragraf)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| [W] Göreli parlaklık = çıkış göz bebeğinin karesi; 7×50 → 51 | https://en.wikipedia.org/wiki/Binoculars | "It is calculated by squaring the diameter of the exit pupil. In the above 7×50 binoculars example, this means that their relative brightness index is 51 (7.14 × 7.14 = 51)." |
+| [B] Nikon belgesi: göreli parlaklık 50,4; çıkış göz bebeği 7,1 mm | https://imaging.nikon.com/sport-optics/lineup/binoculars/standard/ex_x35x40x50/ | "Relative brightness: 50.4" ; "Exit pupil: 7.1 mm" |
+| [W] Alacakaranlık faktörü = karekök(büyütme × objektif); 7×50 → 18,71; 70×5 aynı ama işe yaramaz | https://en.wikipedia.org/wiki/Binoculars | "the twilight factor of 7×50 binoculars is therefore the square root of 7 × 50: the square root of 350 = 18.71" ; "7×50 binoculars have exactly the same twilight factor as 70×5 ones, but 70×5 binoculars are useless during twilight and also in well-lit conditions" |
+| [H] 7,1² = 50,41; √500 = 22,36; 10×50 göreli parlaklık 5² = 25; 5,8² = 33,64 | — | hesap |
+| "İkisi de senin gözünü hesaba katmaz; 7×50 senin için ~34" | — | yazar çıkarımı: göreli parlaklık tanımının, 2. bölümde kaynaklı "göz bebeğinden büyük demetin fazlası girmez" bilgisiyle birleştirilmesi |
+
+### Bölüm 3 (YENİ) — Dürbünü gözüne ayarlamak
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| [W] Göz bebekleri arası: yetişkinlerin çoğu 50–75 mm; dürbünler ~63 mm'ye göre | https://en.wikipedia.org/wiki/Binoculars | "Most are optimized for the interpupillary distance (typically about 63 mm) for adults." ; "(most adults have IPDs in the 50–75 mm range)" |
+| [B] Nikon IPD 56–72 mm | https://imaging.nikon.com/sport-optics/lineup/binoculars/standard/ex_x35x40x50/ | "Interpupillary distance range: 56-72 mm" |
+| [B] Celestron IPD 56–72 mm | https://www.celestron.com/products/cometron-7x50 | "Interpupillary Distance (max): 72mm" ; "Interpupillary Distance (min): 56mm" |
+| [B] IPD ayarı: kara pay kalmayan tek yuvarlak görüntü | https://explorescientific.com/pages/binocular-basics | "slowly push or pull the barrels together as you look through the eyepieces" ; "until you see a single, circular field of view with no black edges." |
+| [W] Orta tekerlek iki tüpü birlikte; ayarlanabilir göz merceğine dioptre denir; sonra yalnız tekerlek | https://en.wikipedia.org/wiki/Binoculars | "Central focusing is an arrangement which involves rotation of a central focusing wheel to adjust both telescope tubes together." ; "the adjustable eyepiece itself is often called a dioptre." ; "Once this adjustment has been made for a given viewer, the binoculars can be refocused on an object at a different distance by using the focusing wheel" |
+| [B] Diyoptri sırası: sağ göz kapalı orta tekerlek, sonra sol göz kapalı halka | https://explorescientific.com/pages/binocular-basics | "close the right eye while looking at a distant object" ; "Adjust the center focus dial until the view through your left eye is sharp." ; "Adjust the diopter ring until the view through your right eye is crisp." |
+| [W] Göz mesafesi tanımı; gözlükte uzun olmalı; >16 mm yeter, kalın çerçevede >17 mm | https://en.wikipedia.org/wiki/Binoculars | "Eye relief is the distance from the rear eyepiece lens to the exit pupil or eye point." ; "Generally, an eye relief over 16 mm should be adequate for any eyeglass wearer. However, if glasses frames are thicker and so significantly protrude from the face, an eye relief over 17 mm should be considered." |
+| [B] Göz mesafeleri: Nikon 17,1 mm; Bresser 14,13 mm; Celestron 13 mm | (üç belge, yukarıdaki URL'ler) | "Eye relief: 17.1 mm" ; "Eye relief (mm): 14.13" ; "Eye Relief: 13mm" |
+| [B] Göz kapakları: gözlükle indir, tam indirilmiş en geniş alan | https://explorescientific.com/pages/binocular-basics | "If you wear glasses, twist the eyecups up or roll them down to ensure that you maintain the proper distance" ; "Fully retracted eyecups offer the widest field of view so those who wear eyeglasses will get a better view" |
+| [W] Kolimasyon: paralel değilse çift görüntü; hafif kayma rahatsızlık ve yorgunluk | https://en.wikipedia.org/wiki/Binoculars | "Misalignment will cause the binoculars to produce a double image. Even slight misalignment will cause vague discomfort and visual fatigue as the brain tries to combine the skewed images." |
+| [W] Porro ~10 yay dakikası tolerans; yeniden hizalama gerekebilir; tam hizalama uzman/özel donanım | https://en.wikipedia.org/wiki/Binoculars | "Porro prisms require typically within 10 arcminutes (1/6 of 1 degree) tolerances" ; "Sometimes Porro prisms binoculars need their prisms set to be re-aligned" ; "requires specialized equipment. Unconditional alignment is usually done by a professional" |
+| Parlak yıldızla çift görüntü sınaması; darbeden korumak hizayı korur | — | yazar önerisi; "çift görüntü" ve "yeniden hizalama gerekebilir" alıntılarından |
+| [H] Örnek: 17,1 − 16 = 1,1; 17,1 − 17 = 0,1; 16 − 14,13 = 1,87; 16 − 13 = 3 | — | hesap |
+
+### Bölüm 4 — Karanlık uyumu (eklenen iki paragraf ve örnek)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| [W] İlk ~5 dk koniler, sonra çubuklar; koniler 9–10 dk; çubuklar 30–45 dk | https://en.wikipedia.org/wiki/Adaptation_(eye) | "This is due to cones obtaining more sensitivity when first entering the dark for the first five minutes but the rods taking over after five or more minutes. Cone cells are able to regain maximum retinal sensitivity in 9–10 minutes of darkness whereas rods require 30–45 minutes to do so." |
+| [W] AYRILIK: çubuklar en yüksek duyarlılığa ~2 saatte | https://en.wikipedia.org/wiki/Adaptation_(eye) | "Rods, whose photopigments regenerate more slowly, do not reach their maximum sensitivity for about two hours." ; ayrıca giriş: "a dark adaptation period of up to two hours" |
+| [W] Gece görüşü yalnız çubuklar; çözünürlük sınırlı, renk yok, gri tonlar | https://en.wikipedia.org/wiki/Adaptation_(eye) | "In humans, rod cells are exclusively responsible for night vision" ; "Night vision is of lower quality than day vision because it is limited in resolution and colors cannot be discerned; only shades of gray are seen." |
+| [W] Purkinje etkisi | https://en.wikipedia.org/wiki/Adaptation_(eye) | "In this process, the eye's perception of color changes as well (this is called the Purkinje effect)." |
+| [W] Uyum gençlerde daha hızlı ve derin | https://en.wikipedia.org/wiki/Adaptation_(eye) | "Dark adaptation is far quicker and deeper in young people than the elderly." |
+| [H] Örnek saatler: 21:00 + 5/10/30–45 dk; 21:40 + 30–45 = 22:10–22:25 | — | hesap; varsayımsal gece |
+
+### Bölüm 5 — Kaçamak bakış (eklenen iki paragraf)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| [W] Aristoteles M41 (olabilir); denizciler; askerî eğitim | https://en.wikipedia.org/wiki/Averted_vision | "it seems to have been reported by Aristotle while observing the star cluster now known as M41" ; "passed down over hundreds of generations of sailors whose duties included standing lookout watches" ; "The technique has also been used in military t[raining]" |
+| [W] Yalnızca birkaç titiz çalışma | https://en.wikipedia.org/wiki/Averted_vision | "This subject is discussed in the popular astronomy literature but only a few rigorous studies[citation needed] have quantified the effect." (cümle Wikipedia'da kaynak istemi taşıyor) |
+| Kendi sayımını yap; dürbünde ortadan biraz kaydır | — | yazar önerisi; bölümdeki kaynaklı ilkelerin uygulaması |
+
+### Bölüm 6 — Dürbünü sabit tutmak (eklenen iki paragraf)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| [W] Görüntü sabitleme: jiroskop / motorlu düzenek; 20×'e kadar elde; bedeli | https://en.wikipedia.org/wiki/Binoculars | "having a gyroscope move part of the instrument, or by powered mechanisms driven by gyroscopic or inertial detectors" ; "These techniques allow binoculars up to 20× to be hand-held, and much improve the image stability of lower-power instruments." ; "the image may not be quite as good as the best unstabilized binoculars" |
+| [Ö] 10× el sınırı; NASA en az 7× | (bölüm 1 satırları) | yukarıda |
+| [B] Ağırlıklar: Celestron 774 g, Bresser 825 g, Nikon 1.000 g | (üç belge) | "Weight: 27.3 oz (774 g)" ; "Net weight (without access.) (g): 825" ; "Weight: 1,000 g" |
+| [B] Celestron sehpaya takılabilir | https://www.celestron.com/products/cometron-7x50 | "tripod adaptable" |
+| [Ö] Tonkin: sandalye kolu dirsek desteği | (bölüm 5 eski satırı) | "A folding chair is often the ideal width to use as an elbow rest." |
+| M13 ve M31 İstanbul'dan başucuna yakın | — | aynı dersin mevsim bölümündeki kültürasyon hesabı (85,5° ve 90,3°) |
+
+### Bölüm 7 (YENİ) — Görüş alanı
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| [B] Nikon Action EX 7×50 CF: 6,4°, görünür 42,7°, 1.000 m'de 112 m | https://imaging.nikon.com/sport-optics/lineup/binoculars/standard/ex_x35x40x50/ | "Real angle of view: 6.4°" ; "Apparent angle of view: 42.7°" ; "Field of view at 1,000 m: 112 m" (ayrıca bulucu.js yorumu, 28.10.2026) |
+| [B] Celestron Cometron 7×50: 6,6°; 344 ft (105 m) | https://www.celestron.com/products/cometron-7x50 | "Angular Field of View: 6.6°" ; "Linear Field of View (@1000 yds) / @1000 m): 344 ft (105 m)" |
+| [B] Bresser 7×50 Travel: 6,97°; 1.000 m'de 122 m | https://www.bresser.com/p/bresser-7x50-travel-binoculars-1250752 | "Field of view (degrees): 6.97" ; "Field of view at 1000m (m): 122" |
+| [B] Gerçek alan tanımı; görünür alan tanımı; ISO 14132-1:2002 formülü tan ω' = Γ × tan ω; eski yöntem çarpma; 60° geniş alan (eski 65°) | https://imaging.nikon.com/sport-optics/guide/binoculars/basic/basic_08/ | "Real field of view is the angle of the visible field, seen without moving the binoculars." ; "Apparent field of view is the angle of the magnified field when you look through binoculars." ; "tan ω' = Γ x tan ω" ; "apparent field of view wider than 60° is called wide field of view." |
+| [U] Bulma haritası 6,4° kullanır, en küçüğü temkinli seçim; adım ≤ 1 alan | /home/claude/urania/bulucu.js | "Kaynaklar 6,4–7,0° arasında ayrışıyor; temkinli olarak en küçüğü (6,4°) kullanılır: adımlar kısa kalır, haritadaki daire gerçek alandan büyük çizilmez" ; "her adım en çok bir dürbün alanı" |
+| [V][H] Merak–Dubhe 5,37° | veri/yildizlar.json | Merak (165,4603; 56,3824), Dubhe (165,932; 61,751); küresel kosinüs → 5,37° |
+| [Ö] EarthSky: göstergeç yıldızlar ~5° | https://earthsky.org/astronomy-essentials/sky-measurements-degrees-arc-minutes-arc-seconds/ | "The end two stars in the bowl ... are about 5 degrees apart." |
+| [W] Hiç batmama koşulu |δ + L| > 90°; alt kültürasyon = enlem − kutba uzaklık (örnek 52° − 70°) | https://en.wikipedia.org/wiki/Culmination | "The object is above the horizon even at its lower culmination; i.e. if | δ + L | > 90°" ; "52° − 70° = −18° for the lower" |
+| [H] 7 × 6,4 = 44,8; tan 3,2° = 0,0559; 2 × 1.000 × 0,0559 = 111,8; 2·atan(7 × 0,0559) = 42,7°; Celestron: 2·atan(172/3.000) = 6,56°, 2.000 × tan 3,3° = 115,3 m; 344 ft = 104,9 m; 6,4/0,5 = 12,8; (12,8)² = 164; 6,4/10 = 0,64; 90 − 56,38 = 33,6; 41 − 33,6 = 7,4; 6,4 − 5,37 ≈ 1 | — | hesap |
+| "Celestron'un 105 m'si 1.000 m'deki genişlik değil" | — | yazar hesabı (yukarıdaki satır); belgedeki iki sayı birbiriyle tutarsız |
+
+### Bölüm 8 — Açı ölçmek ve yıldız atlama (eklenen iki paragraf, örnek 6° → 6,4°)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| [V][H] ζ Her–η Her 7,33°; ζ Her–M13 4,86°; oran 0,66; η Her ~3,5 kadir (3,48); ζ 2,81 kadir, IAU adı Tianji | veri/yildizlar.json, veri/hedefler.json | Tianji (250,3215; 31,6027; 2,81), η Her (250,724; 38,9223; 3,48), M13 (250,4235; 36,4613); küresel kosinüs |
+| [U] M13 için başlangıç Tianji; "yaklaşık 0,8 dürbün alanı kaydır" | /home/claude/urania/bulucu.js | yorum: "M13: adsız η Her (3,5 kadir, 2,5°) yerine Tianji (ζ Her, 2,8 kadir, 4,9°) seçilir: şehir gökünde çıplak gözle bulunur."; node ile hesapla()+tarif() çıktısı: "Dürbünü oradan ... yaklaşık 0,8 dürbün alanı (5°) kaydır" |
+| [U] Başlangıç ≤2,5 kadir, adlı yıldız yeğlenir; >1,5 alan ise adımlara böl; ara basamak ≤5 kadir; daire 6,4°; haritanın üstü başucu | /home/claude/urania/bulucu.js | "Parlak (≤ 2,5 kadir; yakında yoksa ≤ 3,5) ... adı olan yıldız yeğlenir" ; "Hedef ~1,5 dürbün alanı içindeyse tek ok." ; "BASAMAK_SINIR = 5; // ara basamak yıldızı: şehir/banliyö gökünde dürbünle hemen seçilen yıldızlar" ; "Haritanın üstü başucu yönü" |
+| [U][H] M31: Mirach, 7,73°, 1,21 alan; M45: Aldebaran, 13,87°, 2,17 alan, 3 adım | bulucu.js hesapla() çıktısı (İstanbul, 10.11.2026 19:00 UT) | {"bas":"Mirach","ayrim":"7.73","alanSayisi":"1.21"} ; {"bas":"Aldebaran","ayrim":"13.87","adim":3} |
+| [H] 4,86 − 3,2 = 1,66; 4,86/6,4 = 0,76; 15/6,4 = 2,34 | — | hesap |
+| Uygulamanın kırmızı modu | /home/claude/urania (testler/bulucu.spec.js: localStorage "urania_kirmizi") | uygulama özelliği |
+
+### Bölüm 9 — Messier (eklenen iki paragraf)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| [W] 1730 Badonviller, Lorraine; 1744 altı kuyruklu kuyruklu yıldız; 25 Temmuz 1748 halkalı tutulma | https://en.wikipedia.org/wiki/Charles_Messier | "Messier was born in Badonviller in the Lorraine region of France, in 1730" ; "stimulated by the appearance of the great six-tailed comet in 1744 and by an annular solar eclipse visible from his hometown on 25 July 1748." |
+| [W] XV. Louis "Ferret of Comets" | https://en.wikipedia.org/wiki/Charles_Messier | "He was given the nickname "Ferret of Comets" by King Louis XV." |
+| [W] 13 kuyruklu yıldız | https://en.wikipedia.org/wiki/Charles_Messier | "Messier discovered 13 comets:" |
+| [W] Méchain ile; Méchain en az 20 cisim (olabilir); türler 39/4/7/26/29 | https://en.wikipedia.org/wiki/Charles_Messier | "in collaboration with his friend and assistant Pierre Méchain (who may have found at least 20 of the objects)" ; "39 galaxies, 4 planetary nebulae, 7 other types of nebulae, 26 open star clusters and 29 globular star clusters." |
+| [W] 1781'de 103 cisim; sonraki eklemeler Messier ve Méchain'in notlarına dayanır | https://en.wikipedia.org/wiki/Messier_object | "The total list published by Messier in 1781 contained 103 objects, but the list was expanded through successive additions by other astronomers, motivated by notes in Messier's and Méchain's texts" |
+| [W] Avrupa enlemlerinden beş tür; çoğu kendi sınıfında en yakınlar | https://en.wikipedia.org/wiki/Messier_object | "comprises nearly all of the most spectacular examples of the five types of deep-sky object – diffuse nebulae, planetary nebulae, open clusters, globular clusters, and galaxies – visible from European latitudes" ; "almost all of the Messier objects are among the closest to Earth in their respective classes" |
+| [H] 39 + 29 + 26 + 4 + 7 = 105 | — | hesap; kalanlar için yalnız M40 örneği verildi (önceki satır) |
+| "gelincik" | — | "ferret" kelimesinin Türkçe karşılığı (çeviri) |
+
+### Bölüm 11 (YENİ) — Yüzey parlaklığı
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| [W] Toplam kadir tanımı (tek yıldızda toplanmış ışık) | https://en.wikipedia.org/wiki/Surface_brightness | "if a galaxy is quoted as having a magnitude of 12.5, it means we see the same total amount of light from the galaxy as we would from a star with magnitude 12.5" |
+| [W] Yıldız nokta, galaksi yay dakikaları; arka plana karşı zor; küçükte kadir, büyükte yüzey parlaklığı; ikisi de gerekir | https://en.wikipedia.org/wiki/Surface_brightness | "Therefore, the galaxy will be harder to see than the star against the airglow background light. Apparent magnitude is a good indication of visibility if the object is point-like or small, whereas surface brightness is a better indicator if the object is large." ; "in order to adequately assess an object's visibility one needs to know both parameters." |
+| [W] Uç çıplak göz sınırı: yıldız 8, galaksi 6,9 | https://en.wikipedia.org/wiki/Surface_brightness | "This is the reason the extreme naked eye limit for viewing a star is apparent magnitude 8, but only apparent magnitude 6.9 for galaxies." |
+| [W] Tanım; kadir/yay saniyesi²; S = m + 2,5 log₁₀ A; bölme yapılamaz | https://en.wikipedia.org/wiki/Surface_brightness | "surface brightness is often quoted on a magnitude scale, in magnitudes per square arcsecond" ; "calculating surface brightness cannot be done by simple division of magnitude by area" ; "S = m + 2.5 · log10 A" |
+| [W] Uzaklıkla değişmez | https://en.wikipedia.org/wiki/Surface_brightness | "is therefore constant with distance: as an object becomes fainter with distance, it also becomes correspondingly smaller in visual area" |
+| [W] Karanlık gök 21,8; Orion merkez ~17, dış mavimsi 21,3 | https://en.wikipedia.org/wiki/Surface_brightness | "A truly dark sky has a surface brightness of 2×10−4 cd m−2 or 21.8 mag arcsec−2." ; "The peak surface brightness of the central region of the Orion Nebula is about 17 Mag/arcsec2 ... the outer bluish glow has a peak surface brightness of 21.3 Mag/arcsec2" |
+| [W] Bortle SQM: 1. sınıf 21,76–22,0; 5. sınıf 19,25–20,3; 8. sınıf < 18,00 | https://en.wikipedia.org/wiki/Bortle_scale | tablo: "1 ... 7.6 – 8.0 ... 21.76 – 22.0" ; "5 Suburban sky 5.6 – 6.0 19.25 – 20.3" ; "8 City sky 4.1 – 4.5 < 18.00" |
+| [W] 8. sınıf: teleskopla bile yalnız parlak Messier; 9. sınıf: Ülker dışında Messier çıplak gözle yok; Ay, gezegenler, parlak uydular, en parlak birkaç küme | https://en.wikipedia.org/wiki/Bortle_scale | "Even with a telescope, only bright Messier objects can be detected." ; "Aside from the Pleiades, no Messier object is visible to the naked eye. The only objects to observe are the Moon, the planets, bright satellites, and a few of the brightest star clusters." |
+| [V] M13 5,8 kadir, 20′; M42 4,0, 85×60′ | veri/hedefler.json | "kadir": 5.8, "boyut": "20′" ; "kadir": 4.0, "boyut": "85x60′" |
+| [H] π × 600² = 1.131.000; log = 6,053; × 2,5 = 15,13; S = 20,93; 10^(0,36) = 2,29; 10^(−1,16) = 0,069; M42 ortalaması 21,9 (85×60′ elips) | — | hesap |
+| Kentte hedef beklentisi (Ay, gezegen, Ülker kolay; M13 zorlayıcı) | — | yazar çıkarımı: Bortle 8–9 alıntıları ve örnekteki hesap; "kentte merkezi seçme şansı" hedgeli |
+
+### Bölüm 12 (YENİ) — Ay, gezegenler ve uydular
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| [B] NASA: dürbünle bütün Ay; gri alanlar kraterlere ve dağ sırtlarına ayrışır; bozulmamış/çarpma yüzeyi; dolunay dışı evre doku katar; terminatör; hilalde Dünya ışığı bazen | https://science.nasa.gov/moon/viewing-tips/ | "introduce texture, especially when you look at the Moon when it's in any other phase other than full" ; "Focus particularly along the terminator line between light and dark" ; "you can also sometimes see the dark portion of the Moon glowing faintly" (WebFetch özeti: kraterler, büyük dağ sırtları, çarpma izleri) |
+| [B] Mütevazı dürbün Galileo uydularını küçük noktalar olarak gösterir; diziliş; iki gece aynı değil; 7 Ocak 1610 | https://www.astronomy.com/observing/the-galilean-moons-of-jupiter-and-how-to-observe-them/ | "even a modest pair of binoculars will reveal the Galilean moons as tiny specks very close to Jupiter itself." ; "arranged in pairs on either side of Jupiter, or three on one side and one on the other, or even all four on the same side." ; "We never see the same number and arrangement of moons two nights in a row." ; "the evening of Jan. 7, 1610" |
+| [W] Orta boy dürbünle: büyük Ay kraterleri, Uranüs, Neptün, Ceres, Vesta, Pallas, Titan, Galileo uyduları; Uranüs ve Vesta için dürbün; diğer uydular, Plüton, Eris fazla sönük; bulut kuşakları; yapay uydular | https://en.wikipedia.org/wiki/Binoculars | "including larger craters on the Moon; the dim outer planets Uranus and Neptune; the inner "minor planets" Ceres, Vesta and Pallas; Saturn's largest moon Titan; and the Galilean moons of Jupiter. Although visible unaided in pollution-free skies, Uranus and Vesta require binoculars for easy detection." ; "too faint to be seen with most binoculars are the planetary moons, except the Galileans and Titan, and the dwarf planets Pluto and Eris." ; "High-power binoculars can sometimes show one or two cloud belts on the disk of Jupiter" ; "spotting satellites in the sky as they pass." |
+| [W] 7× büyütme görüntüyü 7 kat büyük gösterir | https://en.wikipedia.org/wiki/Binoculars | "A magnification factor of 7, for example, produces an image 7 times larger than the original seen from that distance." |
+| [H] 0,5/6,4 = 0,078; 0,078² = 0,0061; 0,5 × 7 = 3,5° | — | hesap |
+| Titreşimde noktalar parıltıya karışır; gezegenlerin sabit yeri yok | — | yazar açıklaması (sabit tutma bölümüne bağlantı); gezegen konumu için uygulama/harita önerisi |
+
+### Bölüm 13 — Gözlem defteri (eklenen iki paragraf)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| [W] Türkiye 2016'da kış saatini kaldırdı; 8 Eylül 2016'dan beri kalıcı UTC+03:00; sayfa 4 Mayıs 2026'da düzenlenmiş | https://en.wikipedia.org/wiki/Daylight_saving_time_in_Turkey | "In 2016, Turkey scrapped winter time, by permanently staying in UTC+03:00 daylight saving time zone after 8 September." ; "This page was last edited on 4 May 2026" |
+| [V] Uygulamanın test konumu Europe/Istanbul | testler/bulucu.spec.js | saatDilimi: 'Europe/Istanbul' |
+| [H] 21:00 − 3 = 18:00 UT; 1 Aralık 01:30 → 30 Kasım 22:30 UT; 15 Mart 00:40 → 14 Mart 21:40 UT (soru) | — | hesap |
+| Defterle kendi kaçamak bakış/uyum verini topla | — | yazar önerisi |
+
+### Yeni sorular, anahtar sayılar, sözlük, formüller
+Yeni 7 soru, 9 anahtar sayı, 10 sözlük terimi ve 5 formülün hepsi yukarıdaki satırlardaki kaynaklara ve hesaplara dayanır (Celestron sorusu: 2·atan(172/3.000) = 6,56°; 2.000·tan 3,3° = 115,3 m). Fovea tanımındaki "koni hücrelerle dolu" ifadesi dersin mevcut 4. bölüm metnine (Averted vision kaynağı) dayanır.
+
+### Okunamayan / kullanılmayan
+- https://imaging.nikon.com/sport-optics/guide/binoculars/using/using_03/ ve https://www.skyatnightmagazine.com/advice/star-hopping-guide-find-your-way-around-the-skies/ bu oturumda izin istemi zaman aşımına uğradı; yeniden denenmedi, önceki doğrulama alıntıları kullanıldı.
+- PMC (pmc.ncbi.nlm.nih.gov) iki göz toplaması makalesi bot denetimi gösterdi; aşılmadı, aynı makalenin Aston Üniversitesi deposundaki PDF'i kullanıldı.
+- Kaçamak bakışın kadir cinsinden kazancı: kaynak "yalnızca birkaç titiz çalışma" diyor, sayı verilmedi.
+- WebSearch: 8 arama.
