@@ -109,7 +109,7 @@
   });
 
   C.ekle('d3-gelgit', {
-    ders: 'd3', bolum: 7, oran: 0.95,
+    ders: 'd3', bolum: 11, oran: 0.95,
     baslik: 'Büyük ve küçük gelgit',
     aciklama: 'Üstte Ay ile Güneş aynı doğrultuda: yeni ayda ya da dolunayda ikisinin şişirdiği su kabarıklıkları üst üste biner ve gelgit büyür. Altta Ay ile Güneş arasında dik açı var: ilkdördün ve sondördünde Güneş\'in etkisi Ay\'ınkini kısmen götürür ve kabarıklık küçülür. Güneş\'in etkisi Ay\'ınkinin yaklaşık %46\'sı alındı; şişkinlikler abartılmıştır, boylar ve uzaklıklar ölçeksizdir.',
     kaynak: [{ ad: 'NOAA – Tides tutorial: Variations', url: 'https://oceanservice.noaa.gov/education/tutorial_tides/tides06_variations.html' },
@@ -149,7 +149,7 @@
   });
 
   C.ekle('d3-lagrange', {
-    ders: 'd3', bolum: 8, oran: 0.88,
+    ders: 'd3', bolum: 12, oran: 0.88,
     baslik: 'Güneş–Dünya sisteminin beş Lagrange noktası',
     aciklama: 'L1 Dünya ile Güneş arasında, L2 Dünya\'nın tam arkasında, ikisi de Dünya\'dan yaklaşık 1,5 milyon km uzakta; L3 Güneş\'in öbür yanında. L4 ve L5, Güneş ve Dünya ile birer eşkenar üçgen kurar; biri Dünya\'nın önünde, biri arkasında dolanır. İçi boş noktalar kararsızdır, araçlar orada küçük ateşlemelerle yerinde durur; dolu noktalar kararlıdır. L1 ile L2\'nin Dünya\'ya uzaklığı abartıldı, çizim ölçeksizdir.',
     kaynak: [{ ad: 'ESA – What are Lagrange points?', url: 'https://www.esa.int/Science_Exploration/Space_Science/What_are_Lagrange_points' },
@@ -382,7 +382,7 @@
   });
 
   C.ekle('d10-tutulma', {
-    ders: 'd10', bolum: 8, oran: 0.88,
+    ders: 'd10', bolum: 10, oran: 0.88,
     baslik: 'Tutulmalarda tam gölge ve yarı gölge',
     aciklama: 'Açık zemin Güneş ışığının ulaştığı yerdir. Üstte Güneş tutulması: Ay, Güneş ile Dünya arasına girer. Ay\'ın koyu, sivrilen tam gölgesi Dünya\'da dar bir şeride değer; orada tam tutulma görülür, çevresindeki yarı gölgede parçalı tutulma görülür. Altta Ay tutulması: Dünya, Güneş ile Ay arasına girer ve Ay, Dünya\'nın tam gölgesine dalıp kızarır. Boylar ve uzaklıklar ölçeksizdir.',
     kaynak: [{ ad: 'NASA Science – Types of Eclipses', url: 'https://science.nasa.gov/eclipses/types/' },
@@ -477,7 +477,7 @@
   });
 
   C.ekle('d10-dugum', {
-    ders: 'd10', bolum: 8, oran: 0.7,
+    ders: 'd10', bolum: 10, oran: 0.7,
     baslik: 'Eğik yörünge ve tutulma mevsimleri',
     aciklama: 'Güneş\'in çevresinde Dünya\'yı dört konumda görüyorsun. Ay\'ın yörüngesi Dünya\'nınkine 5,145° eğik; çizimde bu eğiklik abartıldı. Düz çizgi Ay yörüngesinin Dünya yörüngesi düzleminin üstünde kalan yarısı, kesikli çizgi altında kalan yarısıdır; iki yarının buluştuğu noktalar düğümlerdir. İki konumda düğüm çizgisi Güneş\'e bakar: yeni ay düğüme denk gelir ve tutulma olabilir. Öbür iki konumda yeni ay düzlemin altında ya da üstünde kalır ve gölge Dünya\'yı ıskalar. Tutulma mevsimleri yaklaşık 173,3 gün arayla gelir.',
     kaynak: [{ ad: 'NASA NSSDCA – Moon Fact Sheet', url: 'https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html' },
@@ -523,7 +523,7 @@
   /* ================= d19 — küçük cisimler ================= */
 
   C.ekle('d19-kuyruk', {
-    ders: 'd19', bolum: 3, oran: 0.8,
+    ders: 'd19', bolum: 6, oran: 0.8,
     baslik: 'Kuyruklu yıldızın iki kuyruğu Güneş\'ten uzağa bakar',
     aciklama: 'Kuyruklu yıldız uzun bir elips üzerinde Güneş\'in çevresinden geçer; küçük oklar gidiş yönünü gösterir. İnce, düz çizgi iyon kuyruğudur: her konumda Güneş\'in tam tersini gösterir. Kalın, kavisli çizgi toz kuyruğudur: kuyruklu yıldızın geldiği yola doğru kavislenir. Güneş\'e yaklaştıkça kuyruklar uzar, uzakta kuyruk yoktur. Güneş\'ten uzaklaşırken kuyruk önden gider. Çizim ölçeksizdir.',
     kaynak: [{ ad: 'ESA – Structure of a comet', url: 'https://esa.int/ESA_Multimedia/Images/2023/11/Structure_of_a_comet' },
@@ -559,7 +559,7 @@
   });
 
   C.ekle('d19-meteor', {
-    ders: 'd19', bolum: 5, oran: 0.84,
+    ders: 'd19', bolum: 9, oran: 0.84,
     baslik: 'Meteor yağmuru: Dünya enkazın içinden geçer',
     aciklama: 'Kuyruklu yıldız yörüngesi boyunca toz ve küçük parçalar bırakır; noktalar bu enkazdır. Düz çember Dünya\'nın yörüngesidir. Dünya, yörüngesinin enkaz akıntısını kestiği yere her yıl aynı tarihte gelir ve parçacıkların arasından geçerken meteor yağmuru görürüz. Perseidlerin kaynağı 109P/Swift-Tuttle\'dır, tepe gecesi 12–13 Ağustos civarındadır. Çizim ölçeksizdir.',
     kaynak: [{ ad: 'NASA Science – Meteors and Meteorites: Facts', url: 'https://science.nasa.gov/solar-system/meteors-meteorites/facts/' },
@@ -601,7 +601,7 @@
   });
 
   C.ekle('d19-olcek', {
-    ders: 'd19', bolum: 7, oran: 0.72,
+    ders: 'd19', bolum: 13, oran: 0.72,
     baslik: 'Güneş Sistemi\'nin kenarına kadar: logaritmik ölçek',
     aciklama: 'Yatay eksen Güneş\'e uzaklığı AB cinsinden gösterir ve logaritmiktir: her çentik bir öncekinin 10 katıdır. Asteroit kuşağı 2,06 ile 3,27 AB, Kuiper kuşağı 30 ile 50 AB arasında; dağınık disk 1000 AB\'ye uzanır. Oort bulutunun iç kenarı 2000 ile 5000, dış kenarı 10.000 ile 100.000 AB arasında tahmin edilir; soluk uçlar bu belirsizliği gösterir. Işık 100.000 AB\'yi yaklaşık 1,58 yılda geçer.',
     kaynak: [{ ad: 'Wikipedia – Asteroid belt', url: 'https://en.wikipedia.org/wiki/Asteroid_belt' },

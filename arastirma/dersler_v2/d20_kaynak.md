@@ -44,9 +44,9 @@ Kısaltmalar: WP = en.wikipedia.org/wiki/...; TDV = https://islamansiklopedisi.o
 | [B] Sabah doğuşu Nil taşkınını haber verir; Kahire 19 Temmuz (Jülyen), taşkının hemen öncesi | aynı | "The heliacal rising of Sirius marked the flooding of the Nile" ; "This rising occurs at Cairo on 19 July" ; "just before the onset of the annual flooding of the Nile during antiquity" |
 | [B] 70 gün yokluk; Sopdet; yeraltı; Avcı = Sah, Sopdet'in eşi; İsis ile özdeşleşme | aynı | "The 70 day period of the absence of Sirius" ; Sah, Sopdet's husband ; "later syncretized with the goddess Isis" |
 | [B] Decan maddesi de Sirius–Nil bağını verir (2. kaynak) | https://en.wikipedia.org/wiki/Decan | "the heliacal rising of Sirius marked the annual flooding of the Nile" |
-| [B] 1460 yılda yeniden çakışma | aynı | "realign every 1460 years" |
+| [B] 1460 yılda yeniden çakışma | https://en.wikipedia.org/wiki/Sothic_cycle | (doğrulamada) "1,461 Egyptian civil years of 365 days each or 1,460 Julian years" ; Sirius'un sabah doğuşları "almost exactly 365.25 days apart" (WP Sirius da: "a period of almost exactly 365.25 days") |
 | [Ö] Yıl ≈ 365,24 gün | https://en.wikipedia.org/wiki/Sidereal_time | d1_kaynak.md: "A year has about 365.24 solar days" |
-| Örnek: 365 / 0,25 = 1460 | — | [H] |
+| Örnek: 365 / 0,25 = 1460 ; mevsim yılıyla 365 / 0,2422 = 1507 | — | [H] DÜZELTME (doğrulama): eski metin 0,25'i 'kaba yaklaşım, gerçek 0,24' diye sunuyordu; oysa 1460 Sirius yılına (≈365,25 g) dayanır, mevsim yılı 1507 verirdi |
 
 ## Bölüm 3 — Eratosthenes
 
@@ -70,11 +70,11 @@ Kısaltmalar: WP = en.wikipedia.org/wiki/...; TDV = https://islamansiklopedisi.o
 | İddia | Kaynak URL | Kaynaktaki ifade |
 |---|---|---|
 | [B] Yaklaşık MÖ 310–230 | https://www.britannica.com/biography/Aristarchus-of-Samos | born c. 310 BCE, died c. 230 BCE |
-| [B] Tek eser; konunun bugüne kalan en eski geometrik ele alınışı | aynı | "the oldest surviving geometric treatment of this problem" |
-| [B] Dördünde açı 87°; büyük olasılıkla tahmin | aynı | "the angular distance between the Moon and the Sun is 87 degrees" ; premise probably an estimate |
+| [B] Tek eser; konunun bugüne kalan en eski geometrik ele alınışı | aynı | "the oldest surviving geometric treatment of this problem" — DOĞRULAMA: Britannica bu turda açılamadı (izin yanıtsız); 'en eski' ifadesi dersten çıkarıldı. Tek eser: WP On_the_Sizes_and_Distances_(Aristarchus) "widely accepted as the only extant work" |
+| [B] Dördünde açı 87°; ölçüm mü varsayım mı tartışmalı | aynı ; https://en.wikipedia.org/wiki/On_the_Sizes_and_Distances_(Aristarchus) | Britannica bu turda açılamadı; WP: "a thirtieth of a quadrant ... 87°", 87° yeniden kurgusu "dubious" ; "in reality, S = 390 L" ; WP Aristarchus: "close to 89° 50'" (HESAP: arcsin(384.400/149,6 mn) = 8,8′) |
 | [B] 18–20 kat; gerçek ~390; gerçek açı 90°'den 9′ küçük | aynı | "the Sun is between 18 and 20 times farther away from Earth than the Moon is" ; actual ratio about 390 ; less than 90° by only 9 minutes of arc |
 | [B] Arşimet, Kum Sayıcı; Dünya döner ve Güneş çevresinde dolanır; evren çok daha büyük | aynı | "Earth rotates on its axis and revolves around the Sun" ; would make the universe "vastly larger" |
-| [B] Kleanthes: dinsizlikle suçlanmalı, 'evrenin ocağını harekete geçirdi' | aynı | "ought to be indicted for impiety" ; "putting into motion the hearth of the universe" |
+| [B] Kleanthes: dinsizlikle suçlanmalı, 'evrenin ocağını harekete geçirdi' — DÜZELTİLDİ: tartışmalı okuma | https://en.wikipedia.org/wiki/Cleanthes ; https://en.wikipedia.org/wiki/Aristarchus_of_Samos | Cleanthes: "this interpretation depends on an emendation of the received text" ; "in the manuscripts it is Aristarchus that did the accusing" ; Aristarchus: Plutarch manuscript "Aristarchus says Cleanthes should be charged with impiety", Ménage baskısı rolleri çevirdi |
 | [Ö] Güneş ve Ay gökte ~0,5°, aynı boyda | https://en.wikipedia.org/wiki/Solar_eclipse | d10/d11: "about 0.5 degree of arc" |
 | Yaklaşık 18 yüzyıl (MÖ ~270 → 1543) | — | [H] |
 | Örnek: 1/cos87° = 19,1; 1/cos(89,85°) = 382; 86° → 14,3; 88° → 28,7 | — | [H] python ile |
@@ -84,13 +84,13 @@ Kısaltmalar: WP = en.wikipedia.org/wiki/...; TDV = https://islamansiklopedisi.o
 | İddia | Kaynak URL | Kaynaktaki ifade |
 |---|---|---|
 | [B] Nikaia = bugünkü İznik, Bitinya | https://www.ebsco.com/research-starters/history/hipparchus/ | "a Greek-speaking city in Bithynia (modern İznik, Turkey)" |
-| [B] Gözlemler ~MÖ 146 Nikaia, MÖ 127'ye kadar Rodos; başka hayat bilgisi yok | https://catalogue.museogalileo.it/biography/HipparchusNicaea.html | "began observing the heavens in c. 146 B.C.E. in his native town of Nicaea" ; "continued to do so in Rhodes until 127 B.C.E." ; "Nothing else is known about his life" |
-| [B] Katalog ~MÖ 129 | aynı | "In c. 129 B.C.E., he pursued the topic by compiling one of the first star catalogues of antiquity" |
+| [B] Gözlemler ~MÖ 146 Nikaia, MÖ 127'ye kadar Rodos — DOĞRULAMADA DEĞİŞTİ | https://en.wikipedia.org/wiki/Hipparchus | Museo Galileo bu turda açılamadı. WP: "a working astronomer between 162 and 127 BC" ; Ptolemy attributes observations "from 147 to 127 BC", some in Rhodes. Ders WP'ye göre yeniden yazıldı |
+| [B] Katalog ~MÖ 135 (WP) / ~MÖ 129 (Museo Galileo, yazar alıntısı; bu turda açılamadı) | https://en.wikipedia.org/wiki/Hipparchus ; Museo Galileo | WP: "Late in his career (possibly about 135 BC) Hipparchus compiled his star catalog" ; ders iki değeri birlikte verir |
 | [B] Katalog MÖ 162–127; ~850 yıldız, kuzey gökyüzü | https://skyandtelescope.org/astronomy-news/lost-star-catalog-of-ancient-times-comes-to-light/ | between 162 and 127 BC ; about 850 stars in the northern sky |
 | [B] ~850 yıldız (2. kaynak) | EBSCO | "Hipparchus's star catalog included about 850 stars" |
 | [B] 2022 parçası: Azize Katerina Manastırı elyazması, palimpsest, Kuzeytacı'nda dört yıldız; ekvatoral koordinat, 1° içinde; Schaefer 'kanıtlanmamış'; Ptolemaios tutulum koordinatı, daha az kesin | S&T | "a 9th- or 10th-century manuscript from the Saint Catherine's Monastery" ; Corona Borealis, four stars ; within one degree ; "far from proven" ; ecliptic coordinates, significantly less accurate |
 | Kuzeytacı = Corona Borealis | veri/takimyildiz.json | {"k": "CrB", "ad": "Kuzeytacı"} |
-| [Ö]/[B] Altı parlaklık sınıfı; Ptolemaios yaygınlaştırdı, kökeni genel kanıya göre Hipparkhos | https://en.wikipedia.org/wiki/Apparent_magnitude ; EBSCO | d1: "popularized by Ptolemy in his Almagest and is generally believed to have originated with Hipparchus" ; EBSCO: "He divided the stars into six categories" |
+| [Ö]/[B] Altı parlaklık sınıfı; Ptolemaios yaygınlaştırdı, kökeni genel kanıya göre Hipparkhos (DOĞRULAMA: WP Hipparchus "conjectured", tek eserinde ölçek yok → derste 'yaygın kanıya göre' ve 'kanıtlanmadı' eklendi) | https://en.wikipedia.org/wiki/Apparent_magnitude ; EBSCO | d1: "popularized by Ptolemy in his Almagest and is generally believed to have originated with Hipparchus" ; EBSCO: "He divided the stars into six categories" |
 | [B] Timokharis İskenderiye'de çalıştı; Spica 8° batı | https://en.wikipedia.org/wiki/Timocharis | "worked in Alexandria during the 290s and 280s BC" ; "was located 8° west of the Autumnal equinox" |
 | [B] Timokharis'in Spica gözlemi MÖ 283 | EBSCO | Timocharis made his Spica observation in 283 B.C.E. |
 | [B] Hipparkhos 6°; boylamlar değişmiş | WP Timocharis ; EBSCO | "only 6° west of the Autumnal equinox" ; "Hipparchus discovered that the longitudes of the stars had changed over time" |
@@ -99,7 +99,7 @@ Kısaltmalar: WP = en.wikipedia.org/wiki/...; TDV = https://islamansiklopedisi.o
 | [Ö] Presesyon ~26.000 (25.770) yıl | https://en.wikipedia.org/wiki/Pole_star | d1_kaynak.md |
 | [B] Babil tutulma kayıtlarından haberdar; nasıl ulaştığı bilinmez | EBSCO | "it is impossible to say how he came to know these" |
 | [B] Gezegenler zaman zaman geri gider; ek küreler/episikl | EBSCO | planets "sometimes are retrograde relative to the stars" ; "the epicycle" main feature |
-| Örnek: 283 − 129 = 154 yıl; 2°/154 = 0,013°/yıl ≈ 47″; 3600/72 = 50″; 360 × 72 = 25.920 | — | [H] (Hipparkhos tarihinde ~MÖ 129 katalog yılı kullanıldı; gerçek ölçüm yılı bilinmiyor, bu yüzden "yaklaşık") |
+| Örnek: 283 − 135 = 148 / 283 − 129 = 154 yıl; 2°/148 ≈ 49″, 2°/154 ≈ 47″; 3600/72 = 50″; 360 × 72 = 25.920 | — | [H] (Hipparkhos tarihinde ~MÖ 129 katalog yılı kullanıldı; gerçek ölçüm yılı bilinmiyor, bu yüzden "yaklaşık") |
 
 ## Bölüm 6 — Ptolemaios ve Almagest
 
@@ -114,7 +114,7 @@ Kısaltmalar: WP = en.wikipedia.org/wiki/...; TDV = https://islamansiklopedisi.o
 | [B] 1.200 yıldan uzun | WP Almagest | "more than 1,200 years" |
 | [B] 9. yy Arapça; biri Me'mun destekli; Gerard 1175 Toledo | aynı | first translations 9th century ; sponsored by Caliph al-Ma'mun ; Gerard of Cremona, Toledo, 1175 |
 | [B] Boylamlar 138'e tarihli, 1. yy ortasına uyar; Tycho fark etti | aynı | dated to 138 AD, fit about the middle of the first century AD ; Tycho Brahe first noticed |
-| [B] R. R. Newton 1977; Goldstein; Gingerich 'remarkably fishy numbers', sahtekârlığı reddetti | aynı | Newton (1977) "the most successful fraud" ; Goldstein criticized ; Gingerich "some remarkably fishy numbers", rejected fraud |
+| [B] R. R. Newton 1977; Goldstein; Gingerich 'remarkably fishy numbers', sahtekârlığı reddetti | aynı | Newton "The Crime of Claudius Ptolemy" (1977) ; Goldstein: "Newton's arguments in support of these charges are marred by all manner of distortions" (derste 'aşırı polemikçi' yerine bu) ; Gingerich "some remarkably fishy numbers" |
 | [B] Kopya iddiası; 2022 araştırmacıları 'yalnızca Hipparkhos değil' | S&T | "Ptolemy's work was not based solely on data from Hipparchus" |
 
 ## Bölüm 7 — el-Battani
@@ -138,7 +138,7 @@ Kısaltmalar: WP = en.wikipedia.org/wiki/...; TDV = https://islamansiklopedisi.o
 | İddia | Kaynak URL | Kaynaktaki ifade |
 |---|---|---|
 | [B] 973–1048, Harezm | https://mathshistory.st-andrews.ac.uk/SH/al_biruni_sh.pdf ; https://dictionary.obspm.fr/terms/birunis-method/ | MacTutor: born September 4, 973, Khwarazm, "(973–1048)" ; obspm: Biruni (973-1048) |
-| [B] Mahmud'un tutsağı; 1018 Kabil | MacTutor SH | prisoner of Mahmud ; in Kabul in 1018 (WebFetch: Gazne adı geçmiyor) |
+| [B] Mahmud'un tutsağı; 1018 büyük olasılıkla Kabil | MacTutor SH | "While being a prisoner of Mahmud" ; "In 1018, he was probably in Kabul for some time" (derse 'büyük olasılıkla' eklendi) |
 | [B] Nandana Kalesi, Pencap, Tuz Sıradağları geçidinin güney ucu (bugünkü Pakistan) | obspm ; MacTutor SH | "when he was at Nandana Fort" near Baghanwala in the Punjab, southern end of the pass through the Salt Range ; MacTutor: Pind Dadan Khan (present-day Pakistan) |
 | [B] Tepe yüksekliği usturlapla, iki noktadan; 321,5 m | obspm | height of a hill 321.5 m ; astrolabe, two points |
 | [B] R = h cosθ / (1 − cosθ) | obspm | "R = h cosθ / (1 - cos θ)" |
@@ -205,11 +205,11 @@ Kısaltmalar: WP = en.wikipedia.org/wiki/...; TDV = https://islamansiklopedisi.o
 | İddia | Kaynak URL | Kaynaktaki ifade |
 |---|---|---|
 | [B] 1473 Toruń – 1543 | https://catalogue.museogalileo.it/biography/NicolausCopernicus.html | "Born in Torún (Pomerania)" ; 1473-1543 |
-| [B] Commentariolus ~1514, az sayıda el yazması kopya | Museo Galileo ; https://www.lindahall.org/experience/digital-exhibitions/sun-in-early-modernity/01-the-copernican-revolution/ | "In about 1514, he circulated a few manuscript copies of his Commentariolus" ; Linda Hall: 1514, select few |
+| [B] Commentariolus 1514'ten önce (~1510), az sayıda el yazması kopya (DOĞRULAMA: WP Nicolaus_Copernicus "Some time before 1514" ; "no later than May 1514") | Museo Galileo ; https://www.lindahall.org/experience/digital-exhibitions/sun-in-early-modernity/01-the-copernican-revolution/ | "In about 1514, he circulated a few manuscript copies of his Commentariolus" ; Linda Hall: 1514, select few |
 | [B] Rheticus 1539 ziyaret, 1540 Danzig anonim Narratio prima | Museo Galileo | visited 1539 ; Narratio prima anonymously in Danzig in 1540 |
 | [B] Rheticus 1516 doğumlu ('genç') | Museo Galileo | Rheticus (1516-1576) |
 | [B] De revolutionibus 1543, ölüm yılı; Nürnberg, Petreius | Linda Hall ; Museo Galileo | "1543: ... published, the year Copernicus died" ; printing with Johannes Petreius in Nuremberg |
-| [B] Ölüm döşeği hikâyesi 'efsane' | Museo Galileo | "Legend has it that in 1543 he received a copy of De revolutionibus on his deathbed." |
+| [B] Ölüm döşeği hikâyesi 'efsane' | Museo Galileo (bu turda açılamadı) ; https://en.wikipedia.org/wiki/Nicolaus_Copernicus ("Legend has it that he was presented with the final printed pages") | "Legend has it that in 1543 he received a copy of De revolutionibus on his deathbed." |
 | [B] Güneş merkezde; Dünya ve gezegenler dolanır; Dünya günde bir döner | Linda Hall | Sun at center ; Earth and planets orbit the Sun ; rotates on its axis once a day |
 | [B] Dış merkezli yörünge ve episikl sürdü; ekuant çıkarıldı | Linda Hall | "continued to use eccentric orbits and epicycles" ; removed the equant |
 | [B] Osiander, Lüteriyen ilahiyatçı; 'matematik aracı' | Museo Galileo | presenting the heliocentric hypothesis as "a mere mathematical artifice" |
@@ -219,7 +219,7 @@ Kısaltmalar: WP = en.wikipedia.org/wiki/...; TDV = https://islamansiklopedisi.o
 
 | İddia | Kaynak URL | Kaynaktaki ifade |
 |---|---|---|
-| [B] 14 Aralık 1546 Danimarka – 14 Ekim 1601 Prag | UCAR | "Born on December 14, 1546 in Knudstrup, Denmark" ; died October 14, 1601, Prague |
+| [B] 14 Aralık 1546 Danimarka – 24 Ekim 1601 Prag — DÜZELTİLDİ | UCAR ; https://mathshistory.st-andrews.ac.uk/Biographies/Brahe/ ; https://en.wikipedia.org/wiki/Tycho_Brahe | UCAR "died in Prague on October 14, 1601" (TEK KAYNAK, hatalı) ; MacTutor başlık "24 October 1601" ; WP "on 24 October 1601" → ders 24 Ekim yapıldı |
 | [B] 11 Kasım 1572 Kraliçe (Cassiopeia) | MAC ; UCAR | "On November 11, 1572, a bright star suddenly appeared in the constellation Cassiopeia." ; UCAR: Cassiopeia |
 | [B] Iraklık yok → Ay'ın ötesi | UCAR ; MAC | "A lack of detectable parallax forced Brahe to locate the nova beyond the sphere of the Moon" ; "failed to disclose any parallax" |
 | [B] Göklerin değişebileceği ilk işaret (yaygın görüş: değişmez) | MAC | first sign that the heavens could change |
@@ -232,7 +232,7 @@ Kısaltmalar: WP = en.wikipedia.org/wiki/...; TDV = https://islamansiklopedisi.o
 | [B] Kristal küreler düşüncesi sarsıldı | RJ | Tycho used the 1577 comet to challenge Aristotle's crystalline spheres |
 | [B] Dünya'nın hareketini reddetti: yıldız ıraklığı yok | MAC | "Tycho failed to detect any such parallax, and he concluded that Earth was at rest" |
 | [B] Tycho sistemi ~1583; Kopernik'le aynı hareketler, ıraklık gerektirmez | UCAR | conceived around 1583 ; "the Earth is at the center..., the Sun orbits the Earth, but all other planets orbit the Sun" ; same planetary motions without stellar parallax |
-| [B] 1597 Ven'den ayrıldı; 1598 II. Rudolf'un matematikçisi | UCAR | left Hven in 1597 ; 1598 Imperial Mathematician to Rudolf II |
+| [B] 1597 Ven'den ayrıldı; 1599 II. Rudolf'un matematikçisi — DÜZELTİLDİ | UCAR ; MacTutor Brahe ; WP Tycho_Brahe | UCAR 1598 ; MacTutor: "In 1599 he was appointed Imperial Mathematician to the Holy Roman Emperor, Rudolph II, in Prague" ; WP: "In 1599, he obtained the patronage of Rudolf II" → ders 1599 (MacTutor) |
 | [B] Kepler 1600 yardımcı; veriler Kepler'e | MAC ; UCAR | became his assistant in 1600 ; "scientific heir" |
 | [Ö] Kraliçe 40–50° K'de kutup çevresi sayılabilir | https://en.wikipedia.org/wiki/Circumpolar_star | d1_kaynak.md (ifade "may include", derste "sayılabilecek") |
 | [Ö] Tycho krateri ve ışınları keskin gözle çıplak gözle | https://science.nasa.gov/moon/viewing-tips/ | d10: "including Copernicus, Kepler, and Aristarchus and Tycho" ; ray systems |
@@ -244,13 +244,13 @@ Kısaltmalar: WP = en.wikipedia.org/wiki/...; TDV = https://islamansiklopedisi.o
 | İddia | Kaynak URL | Kaynaktaki ifade |
 |---|---|---|
 | [Ö] 1608 Hollanda; Lippershey 2 Ekim 1608; Harriot 1609 yazı altı kat; Galileo Ekim/Kasım 1609 | https://en.wikipedia.org/wiki/History_of_the_telescope | d12_kaynak.md: "on 2 October 1608" ; Harriot "six-powered telescope by the summer of 1609" ; "October or November 1609" |
-| [B] Aralık 1609 Ay evreleri; yüzey engebeli | https://www.britannica.com/biography/Galileo-Galilei/Telescopic-discoveries | "the Moon's surface is not smooth, as had been thought, but is rough and uneven" (December 1609) |
+| [B] 30 Kasım 1609 Ay'a çevirdi; yüzey engebeli (DÜZELTİLDİ; Britannica bu turda açılamadı) | https://en.wikipedia.org/wiki/Galileo_Galilei ("On 30 November 1609, Galileo aimed his telescope at the Moon" ; "the surface of the Moon is not smooth") ; Britannica | "the Moon's surface is not smooth, as had been thought, but is rough and uneven" (December 1609) |
 | [B] Sidereus Nuncius 13 Mart 1610 Venedik; teleskop gözlemine dayanan ilk yayımlanmış eser; 20× | https://en.wikipedia.org/wiki/Sidereus_Nuncius | March 13, 1610, Venice ; "the first published scientific work based on observations made through a telescope" ; 20x |
 | [B] Ay dağları ≥4 mil; ≥10 kat yıldız; Samanyolu yıldız kümeleri | aynı | "the lunar mountains were at least four miles high" ; "at least ten times more stars" ; "congeries of innumerable stars" |
 | [B] Jüpiter uyduları: 7 Ocak 1610 ilk gece; 11 Ocak 'üç yıldız'; sonra dört; Medici yıldızları → Galileo uyduları | aynı ; Britannica | January 7, 1610 ; "there are three stars in the heavens moving about Jupiter" ; four ; Britannica: four moons, January 1610 |
-| [B] Venüs evreleri 1610 sonbaharı Floransa; Venüs Güneş çevresinde; Ptolemaios/Aristoteles'e aykırı | Britannica | phases discovered in Florence after returning in fall 1610 ; Venus orbits the Sun ; undermined Aristotelian cosmology |
+| [B] Venüs evreleri Eylül 1610'dan itibaren; Güneş çevresinde; Ptolemaios'u dışlar; Tycho ile uyumlu (DÜZELTİLDİ: 'Floransa' Britannica'dan doğrulanamadı, çıkarıldı) | https://en.wikipedia.org/wiki/Galileo_Galilei ("From September 1610") ; https://en.wikipedia.org/wiki/Phases_of_Venus ("at the end of 1610" ; "proved that it orbits the Sun and not Earth" ; "essentially ruled out the Ptolemaic system" ; "compatible only with the Copernican system and the Tychonic system") ; Britannica | phases discovered in Florence after returning in fall 1610 ; Venus orbits the Sun ; undermined Aristotelian cosmology |
 | Ptolemaios düzeninde Venüs Güneş'in çevresinde dolanmaz → evreler o düzenle bağdaşmaz | https://en.wikipedia.org/wiki/Almagest | [H] çıkarım: Almagest'te gezegenler episikl/taşıyıcı çemberle Dünya'nın çevresinde döner (yer merkezli model) |
-| Venüs evreleri Tycho düzeniyle de uyumlu | UCAR | [H] çıkarım: UCAR'a göre Tycho düzeni Kopernik'le aynı gezegen hareketlerini verir; Britannica Tycho'yu tartışmıyor |
+| Venüs evreleri Tycho düzeniyle de uyumlu | https://en.wikipedia.org/wiki/Phases_of_Venus | "compatible only with the Copernican system and the Tychonic system" (artık çıkarım değil, kaynaklı) |
 | [B] 1633 ev hapsi, Kopernik savunusu | WP Sidereus Nuncius | "his support for the Copernican system led to his 1633 sentence to house arrest" |
 | [Ö] Galileo objektifi 37 mm, 16/12 mm'ye kısma | WP History_of_the_telescope | d12_kaynak.md |
 | [Ö] Orta boy dürbünle Galileo uyduları; Venüs evreleri zor hedef | https://en.wikipedia.org/wiki/Binoculars | d11_kaynak.md: "reasonably detectable with medium-size binoculars" ; d11 dersi: Venüs evreleri zor hedef |
@@ -308,3 +308,31 @@ Dört sorunun doğru cevapları Bölüm 3, 5, 10 ve 12 metnine dayanır; ek olgu
 - Uluğ Bey gözlemevinin yapım yılı (1424–1429 / 1428) ve katalogdaki yıldız sayısı (1018 / 994 / 992 + 27).
 - Takiyüddin'in doğum yeri ve yılı (Şam 1526 / Kahire 1521), müneccimbaşı atayan padişah (II. Selim / III. Murad), rasathanenin kuruluşu (1577 / 1579) ve yeri, yıkım nedenlerinin ağırlığı, ölçümlerinin Tycho ve Kopernik'ten kesin olduğu iddiası.
 - El-Battani'nin doğum yılı (yaklaşık 850 / 868) ve Avrupa'ya etkisinin ayrıntısı.
+
+## Bağımsız doğrulama (2026-10-28)
+
+Bütün ders yeni olduğu için bütün olgusal iddialar tarandı (yaklaşık 190 iddia); 46 sayfa bu turda yeniden WebFetch ile açıldı. Britannica, Museo Galileo ve NASA eclipse sayfaları izin yanıtsız kaldığı için açılamadı; bunlara dayanan iddialar Wikipedia/MacTutor ile değiştirildi ya da yumuşatıldı. Bütün örnek hesaplar python3 ile yeniden yapıldı (Saros 18,03 yıl/10,8 g; 1460; 39.060/40.320/46.250 km, −%2,4/+%0,8/+%15,6; 1/cos 87° = 19,1, 89,85° → 382, 86° → 14,3, 88° → 28,7; 47–49″; 25.920; 23.780; 365,2406; R = 6.384 km, 34,5′, 33,5′ → 6.771, 35,5′ → 6.030; 0,628 m/°, 1,05 cm/′; 23,52°/23,59°; 15,04″/s; 2,9 mm; 2,69/0,37). Hesap hatası yok.
+
+| Düzeltme | Kaynak | Not |
+|---|---|---|
+| Tycho ölüm tarihi 14 Ekim → 24 Ekim 1601 | MacTutor Brahe ; WP Tycho_Brahe | UCAR'daki 14 Ekim tek kaynaktı ve iki kaynakla çelişiyor |
+| Tycho imparatorluk matematikçisi 1598 → 1599 | MacTutor Brahe ; WP | UCAR 1598 der; kaynaklar ayrışıyor, MacTutor'a atfedildi |
+| Kleanthes–Aristarkhos dinsizlik öyküsü kesin olgu gibi verilmişti → tartışmalı okuma olarak verildi | WP Cleanthes ; WP Aristarchus_of_Samos | klasik tarih efsanesi: elyazmasında suçlayan Aristarkhos |
+| Mısır örneği: 1460'ın "0,24 yerine 0,25 kullanılan kaba hesap" olduğu söyleniyordu (fiziksel olarak yanlış) → 1460, ~365,25 günlük Sirius yılına dayanır; mevsim yılı 1507 verirdi | WP Sothic_cycle ; WP Sirius | — |
+| Hipparkhos: Museo Galileo tarihleri (146 Nikaia, 127 Rodos, katalog 129) doğrulanamadı → WP (162–127 çalıştı; 147–127 gözlemleri, bir kısmı Rodos; katalog belki ~135, bazı kaynaklarda 129); örnek 148–154 yıl, 47–49″ | WP Hipparchus | — |
+| Hipparkhos'un altı kadir sınıfı kesin olgu gibi → "yaygın kanıya göre", WP: kanıtlanmadı | WP Hipparchus | akilda ve defter_notu da düzeltildi |
+| 2022 parçası "güçlü bir olasılık" → "kanıtlanmış olmaktan uzak", 2024'te sorgulandı | S&T ("far from proven") ; WP Hipparchus | — |
+| Aristarkhos: Britannica'ya dayanan "en eski geometrik metin" ve "87° büyük olasılıkla tahmin" doğrulanamadı → çıkarıldı / "tartışmalı" | WP On_the_Sizes_and_Distances | anahtar_sayilar[2] kaynak_url WP'ye çevrildi |
+| Galileo: "Aralık 1609 Ay evrelerini çizdi" → "30 Kasım 1609'da Ay'a çevirdi"; Venüs "1610 sonbaharı Floransa" → "Eylül 1610'dan başlayarak" | WP Galileo_Galilei ; WP Phases_of_Venus | — |
+| Goldstein "aşırı polemikçi" → kaynaktaki ifade ("çarpıtmalarla gölgelenmiş") | WP Almagest | — |
+| Kopernik Commentariolus "yaklaşık 1514" → "1514'ten önce, büyük olasılıkla 1510 civarında"; efsane atfı WP'ye | WP Nicolaus_Copernicus | — |
+| El-Biruni 1018 Kabil → "büyük olasılıkla" | MacTutor SH | — |
+| SN 1604 sonrası "çıplak gözle görülen süpernova olmadı" → "gözlendiği bilinen" (Cas A ~1680 kaydedilmedi) | WP Supernova | — |
+| Giriş: "her tarihi ve sayıyı en az iki kaynakla karşılaştırdık" doğru değildi (birçok iddia tek kaynaklı) → "önemli olanları mümkün olduğunca iki kaynakla" | — | — |
+| Soru 3 cevabı: "yaklaşık yarı yarıya büyütüyor" (19,1 → 28,7) belirsizdi → "bir buçuk katına çıkarıyor" | [H] | — |
+
+Yeniden açılıp doğrulanan (değişiklik gerekmeyen) başlıca satırlar: WP Babylonian_astronomy (Enuma Anu Enlil, Venüs tableti, MUL.APIN, Saros, 360°/12 burç, Kugler 1900, Kidinnu), WP Astronomical_Diaries, WP Decan, WP Sirius, WP Earth's_circumference (Kleomedes, 252.000, −2,4/+0,8, 44.100, 40.007,863, Abreu Mora, Me'mun, Biruni), obspm Eratosthenes ve Biruni, EBSCO Hipparchus, WP Timocharis, S&T, WP Almagest, MacTutor Al-Battani, MacTutor Biruni SH, WP ve MacTutor Ulugh Beg, TDV Takiyüddin, WP Constantinople observatory, Muslim Heritage, Retrospect Journal, Linda Hall, WP Narratio_Prima (anonim yayın, Kopernik adı başlıkta), WP De_revolutionibus, UCAR, Macmillan, WP Sidereus_Nuncius, WP Kepler's laws (ikinci yasanın bugünkü biçimi 1621 Epitome), WP Supernova, WP Newton's law, WP History_of_the_telescope, WP Fraunhofer_lines, WP Leavitt, NASA Uranus, Astronomy.com, WP Andromeda, NASA Moon viewing tips (Tycho çıplak gözle), WP Circumpolar_star.
+
+Askıda: Tycho'ya Ven'in verildiği gün (23 Mayıs 1576) yalnız UCAR'da; WP yalnız "1576" der. Hipparkhos kataloğu için MÖ 129 değeri bu turda yeniden görülemedi (Museo Galileo açılamadı); derste "bazı kaynaklara göre" diye duruyor.
+
+Sınav (d20_sinav.json): dört sorunun doğru cevabı ders metninden çıkıyor; bolum indeksleri (3 Eratosthenes, 5 Hipparkhos, 10 Takiyüddin, 12 Tycho) doğru. Değişiklik gerekmedi.

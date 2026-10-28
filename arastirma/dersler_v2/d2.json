@@ -336,57 +336,68 @@
     {
       "deger": "1676; 22 dakika",
       "aciklama": "Rømer'in ışık hızı tahmini: ışığın Dünya yörüngesinin çapını aşma süresi (bugünkü değer ≈ 16,6 dk)",
-      "kaynak_url": "https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Speed_of_light"
+      "kaynak_url": "https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Speed_of_light",
+      "kid": "d2n16"
     },
     {
       "deger": "8 dk 19 sn; 1,3 sn",
       "aciklama": "Işığın Güneş'ten ve Ay'dan Dünya'ya gelme süresi",
-      "kaynak_url": "https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Speed_of_light"
+      "kaynak_url": "https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Speed_of_light",
+      "kid": "d2n17"
     },
     {
       "deger": "1361,0 W/m²",
       "aciklama": "Dünya'da atmosfer üstündeki Güneş ışınımı (NASA)",
-      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html"
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html",
+      "kid": "d2n18"
     },
     {
       "deger": "1 eV ≈ 1,6 × 10⁻¹⁹ J; E_n = −13,6 eV ÷ n²",
       "aciklama": "Elektronvolt ve hidrojenin enerji düzeyleri",
-      "kaynak_url": "https://imagine.gsfc.nasa.gov/educators/lessons/xray_spectra/worksheet-energy-levels.html"
+      "kaynak_url": "https://imagine.gsfc.nasa.gov/educators/lessons/xray_spectra/worksheet-energy-levels.html",
+      "kid": "d2n19"
     },
     {
       "deger": "656,3; 486,1; 434,0; 410,2 nm; sınır 364,6 nm",
       "aciklama": "Balmer serisinin ilk dört çizgisi (havada) ve seri sınırı; Lyman sınırı 91,175 nm",
-      "kaynak_url": "https://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq.ipfs.4everland.io/wiki/Hydrogen_spectrum.html"
+      "kaynak_url": "https://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq.ipfs.4everland.io/wiki/Hydrogen_spectrum.html",
+      "kid": "d2n20"
     },
     {
       "deger": "1420,405751768 MHz; 21,106 cm",
       "aciklama": "Nötr hidrojenin 21 cm çizgisi (öngörü 1944, algılama 1951)",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Hydrogen_line"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Hydrogen_line",
+      "kid": "d2n21"
     },
     {
       "deger": "2,725 ± 0,001 K",
       "aciklama": "Kozmik mikrodalga arka plan sıcaklığı (COBE FIRAS); tepe dalga boyu Wien ile ≈ 1,06 mm",
-      "kaynak_url": "https://asd.gsfc.nasa.gov/archive/arcade/cmb_intensity.html"
+      "kaynak_url": "https://asd.gsfc.nasa.gov/archive/arcade/cmb_intensity.html",
+      "kid": "d2n22"
     },
     {
       "deger": "9845 K; 1,714 R☉; 24,7 L☉; −5,5 km/s; B−V +0,00",
       "aciklama": "Sirius A'nın sıcaklığı, yarıçapı, ışıma gücü, dikine hızı ve renk indeksi",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Sirius"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Sirius",
+      "kid": "d2n23"
     },
     {
       "deger": "R < 1000 düşük; R > 10.000 yüksek",
       "aciklama": "Tayfölçerlerin çözünürlük sınıfları",
-      "kaynak_url": "https://vikdhillon.staff.shef.ac.uk/teaching/phy217/instruments/phy217_inst_dispersion.html"
+      "kaynak_url": "https://vikdhillon.staff.shef.ac.uk/teaching/phy217/instruments/phy217_inst_dispersion.html",
+      "kid": "d2n24"
     },
     {
       "deger": "589,0 ve 589,6 nm",
       "aciklama": "Alçak basınçlı sodyum lambasının neredeyse bütün ışığı",
-      "kaynak_url": "https://www.lamptech.co.uk/Documents/SO%20Spectral.htm"
+      "kaynak_url": "https://www.lamptech.co.uk/Documents/SO%20Spectral.htm",
+      "kid": "d2n25"
     },
     {
       "deger": "−301 km/s (Güneş'e göre); 1912; ≈ 2,5 milyon ışık yılı",
       "aciklama": "Andromeda Galaksisi'nin dikine hızı, Slipher'in ölçüm yılı ve uzaklığı",
-      "kaynak_url": "https://webarchive.library.unt.edu/web/20160706005814/https://en.wikipedia.org/wiki/Andromeda_Galaxy"
+      "kaynak_url": "https://webarchive.library.unt.edu/web/20160706005814/https://en.wikipedia.org/wiki/Andromeda_Galaxy",
+      "kid": "d2n26"
     }
   ],
   "sozluk": [
@@ -457,51 +468,63 @@
     },
     {
       "terim": "fotoelektrik olay",
-      "tanim": "Yeterince yüksek frekanslı ışık düşen bir yüzeyden elektron kopması; ışığın foton yapısının ilk güçlü kanıtlarındandır."
+      "tanim": "Yeterince yüksek frekanslı ışık düşen bir yüzeyden elektron kopması; ışığın foton yapısının ilk güçlü kanıtlarındandır.",
+      "kid": "d2t13"
     },
     {
       "terim": "ışık yılı",
-      "tanim": "Işığın boşlukta bir yılda aldığı yol; bir uzaklık birimidir, zaman birimi değildir."
+      "tanim": "Işığın boşlukta bir yılda aldığı yol; bir uzaklık birimidir, zaman birimi değildir.",
+      "kid": "d2t14"
     },
     {
       "terim": "ters kare yasası",
-      "tanim": "Bir kaynaktan birim alana düşen ışığın uzaklığın karesiyle ters orantılı olarak azalması."
+      "tanim": "Bir kaynaktan birim alana düşen ışığın uzaklığın karesiyle ters orantılı olarak azalması.",
+      "kid": "d2t15"
     },
     {
       "terim": "elektronvolt",
-      "tanim": "Atom ölçeğindeki enerjiler için kullanılan, yaklaşık 1,6 × 10⁻¹⁹ joule'e eşit enerji birimi."
+      "tanim": "Atom ölçeğindeki enerjiler için kullanılan, yaklaşık 1,6 × 10⁻¹⁹ joule'e eşit enerji birimi.",
+      "kid": "d2t16"
     },
     {
       "terim": "renk indeksi",
-      "tanim": "Bir yıldızın iki farklı süzgeçte ölçülen kadirleri arasındaki fark (örneğin B eksi V); küçük değer daha mavi ve sıcak yıldız demektir."
+      "tanim": "Bir yıldızın iki farklı süzgeçte ölçülen kadirleri arasındaki fark (örneğin B eksi V); küçük değer daha mavi ve sıcak yıldız demektir.",
+      "kid": "d2t17"
     },
     {
       "terim": "enerji düzeyi",
-      "tanim": "Bir atomdaki elektronun sahip olabileceği izinli enerji değerlerinden her biri."
+      "tanim": "Bir atomdaki elektronun sahip olabileceği izinli enerji değerlerinden her biri.",
+      "kid": "d2t18"
     },
     {
       "terim": "Balmer serisi",
-      "tanim": "Hidrojende ikinci enerji düzeyine inen geçişlerin oluşturduğu, ilk çizgileri görünür bölgede olan tayf çizgileri ailesi."
+      "tanim": "Hidrojende ikinci enerji düzeyine inen geçişlerin oluşturduğu, ilk çizgileri görünür bölgede olan tayf çizgileri ailesi.",
+      "kid": "d2t19"
     },
     {
       "terim": "iyonlaşma",
-      "tanim": "Bir atomdan elektron koparılması; hidrojende en alt düzeyden 13,6 eV gerektirir."
+      "tanim": "Bir atomdan elektron koparılması; hidrojende en alt düzeyden 13,6 eV gerektirir.",
+      "kid": "d2t20"
     },
     {
       "terim": "kırınım ağı",
-      "tanim": "Üzerine çok sık ince çizgiler işlenmiş, ışığı dalga boylarına göre farklı açılara ayıran yüzey."
+      "tanim": "Üzerine çok sık ince çizgiler işlenmiş, ışığı dalga boylarına göre farklı açılara ayıran yüzey.",
+      "kid": "d2t21"
     },
     {
       "terim": "tayfölçer",
-      "tanim": "Işığı dalga boylarına ayırıp kaydeden gözlem aleti."
+      "tanim": "Işığı dalga boylarına ayırıp kaydeden gözlem aleti.",
+      "kid": "d2t22"
     },
     {
       "terim": "tayfsal çözünürlük",
-      "tanim": "Bir tayfölçerin birbirine çok yakın iki dalga boyunu ayırabilme ölçüsü; R = λ ÷ Δλ."
+      "tanim": "Bir tayfölçerin birbirine çok yakın iki dalga boyunu ayırabilme ölçüsü; R = λ ÷ Δλ.",
+      "kid": "d2t23"
     },
     {
       "terim": "Rayleigh saçılması",
-      "tanim": "Havadaki moleküllerin ışığı dalga boyunun dördüncü kuvvetiyle ters orantılı verimle saçması; gökyüzünü mavi gösterir."
+      "tanim": "Havadaki moleküllerin ışığı dalga boyunun dördüncü kuvvetiyle ters orantılı verimle saçması; gökyüzünü mavi gösterir.",
+      "kid": "d2t24"
     }
   ],
   "defter_notu": [
@@ -559,27 +582,33 @@
     },
     {
       "soru": "Fotoelektrik olayda kırmızı ışığın şiddetini artırmak elektron koparmaya yetmiyor, ama zayıf bir morötesi ışık elektron koparıyor. Bu neden ışığın foton yapısına kanıttır?",
-      "cevap": "Çünkü her elektronu tek bir foton koparır ve fotonun enerjisi frekansına bağlıdır (E = h × f). Kırmızı fotonların her biri eşik enerjinin altındaysa sayıları artsa da elektron kopmaz; morötesi fotonun tek başına enerjisi yeterlidir. Dalga resmi enerjinin şiddete bağlı olmasını beklerdi."
+      "cevap": "Çünkü her elektronu tek bir foton koparır ve fotonun enerjisi frekansına bağlıdır (E = h × f). Kırmızı fotonların her biri eşik enerjinin altındaysa sayıları artsa da elektron kopmaz; morötesi fotonun tek başına enerjisi yeterlidir. Dalga resmi enerjinin şiddete bağlı olmasını beklerdi.",
+      "kid": "d2s8"
     },
     {
       "soru": "Bir yıldız bize şimdikinden iki kat uzak olsaydı ondan gelen ışık ne kadar azalırdı? Kadir olarak kaç kadir sönükleşirdi?",
-      "cevap": "Ters kare yasasına göre ışık 2² = 4 kat azalır, yani dörtte birine iner. 4 katlık parlaklık farkı yaklaşık 1,5 kadirdir; yıldız 1,5 kadir daha sönük görünür."
+      "cevap": "Ters kare yasasına göre ışık 2² = 4 kat azalır, yani dörtte birine iner. 4 katlık parlaklık farkı yaklaşık 1,5 kadirdir; yıldız 1,5 kadir daha sönük görünür.",
+      "kid": "d2s9"
     },
     {
       "soru": "Hidrojende elektron n = 4 düzeyinden n = 2 düzeyine iniyor. Fotonun enerjisi kaç eV'dir ve hangi çizgi oluşur?",
-      "cevap": "E_4 = −13,6 ÷ 16 = −0,85 eV, E_2 = −3,40 eV; fark 2,55 eV. Bu, Balmer serisinin ikinci çizgisi H-beta'dır, dalga boyu yaklaşık 486 nm."
+      "cevap": "E_4 = −13,6 ÷ 16 = −0,85 eV, E_2 = −3,40 eV; fark 2,55 eV. Bu, Balmer serisinin ikinci çizgisi H-beta'dır, dalga boyu yaklaşık 486 nm.",
+      "kid": "d2s10"
     },
     {
       "soru": "Hidrojenin Lyman çizgileri neden yerdeki teleskoplarla gözlenemez?",
-      "cevap": "Lyman çizgilerinin hepsi yaklaşık 122 nm ve daha kısa dalga boylarında, yani morötesindedir. Atmosferin optik penceresi yaklaşık 300 nm'de başlar ve ozon morötesine neredeyse tam bir engeldir; bu yüzden Lyman çizgileri için uzaydaki aletler gerekir."
+      "cevap": "Lyman çizgilerinin hepsi yaklaşık 122 nm ve daha kısa dalga boylarında, yani morötesindedir. Atmosferin optik penceresi yaklaşık 300 nm'de başlar ve ozon morötesine neredeyse tam bir engeldir; bu yüzden Lyman çizgileri için uzaydaki aletler gerekir.",
+      "kid": "d2s11"
     },
     {
       "soru": "Sirius'un sıcaklığı 9845 K, yarıçapı 1,714 R☉ ise ışıma gücü Güneş'inkinin yaklaşık kaç katıdır? (T☉ = 5772 K)",
-      "cevap": "L ÷ L☉ = (1,714)² × (9845 ÷ 5772)⁴ ≈ 2,94 × 8,46 ≈ 24,9. Yaklaşık 25 kat; kaynaktaki 24,7 ile uyumlu."
+      "cevap": "L ÷ L☉ = (1,714)² × (9845 ÷ 5772)⁴ ≈ 2,94 × 8,46 ≈ 24,9. Yaklaşık 25 kat; kaynaktaki 24,7 ile uyumlu.",
+      "kid": "d2s12"
     },
     {
       "soru": "Gündüz göğü neden mavi, batan Güneş neden kızıldır?",
-      "cevap": "Rayleigh saçılmasında saçılma verimi 1/λ⁴ ile orantılıdır; kısa dalga boylu mavi ışık kırmızıdan yaklaşık 6 kat daha çok saçılır ve gökyüzünün her yerinden gözümüze gelir. Gün batımında ışık havada çok uzun yol aldığı için mavisinin çoğu yolda saçılıp kaybolur; geriye turuncu ve kırmızı kalır."
+      "cevap": "Rayleigh saçılmasında saçılma verimi 1/λ⁴ ile orantılıdır; kısa dalga boylu mavi ışık kırmızıdan yaklaşık 6 kat daha çok saçılır ve gökyüzünün her yerinden gözümüze gelir. Gün batımında ışık havada çok uzun yol aldığı için mavisinin çoğu yolda saçılıp kaybolur; geriye turuncu ve kırmızı kalır.",
+      "kid": "d2s13"
     }
   ],
   "kaynaklar": [

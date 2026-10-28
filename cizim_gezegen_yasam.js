@@ -107,7 +107,7 @@
   /* d13 · bölüm 5: Güneş'in yaşanabilir bölgesi (Kasting 1993: 0,95–1,37; Kopparapu 2013: 0,99–1,67 AB) ve ışınımı 0,25 Güneş olan
      yıldız için ölçeklenmiş bölge 0,50–0,84 AB (ders örneği). Venüs 0,72 ve Mars 1,52 AB (NASA, d9). Yatay eksen ölçekli. */
   C.ekle('d13-yasanabilir-bolge', {
-    ders: 'd13', bolum: 5, oran: 0.7,
+    ders: 'd13', bolum: 6, oran: 0.7,
     baslik: 'Yaşanabilir bölge: modele ve yıldıza göre',
     aciklama: 'Güneş için iki tahmin: Kasting ve arkadaşları 0,95 ile 1,37 AB, Kopparapu ve arkadaşları 0,99 ile 1,67 AB; Dünya ikisinde de iç kenara yakın. Işınımı Güneş\'in dörtte biri olan bir yıldızda bölge kabaca 0,50 ile 0,84 AB\'ye, yani yıldıza yaklaşır. Yatay eksen ölçeklidir.',
     kaynak: [
@@ -195,7 +195,7 @@
      Europa buz ≈29 km (Juno, dış katman; SwRI 2026), okyanus 50–100 (NASA afişi) ve 60–150 km (JPL); Enceladus 2014 güney: buz 30–40,
      okyanus ≈10 km (bölgesel; Astronomy); Park ve ark. 2024 ortalama: buz 27–33, okyanus 21–26 km; Titan okyanusa ≈100 km (NASA afişi). */
   C.ekle('d18-okyanus-dunyalari', {
-    ders: 'd18', bolum: 5, oran: 1.06,
+    ders: 'd18', bolum: 7, oran: 1.06,
     baslik: 'Buzun altındaki okyanuslar: tahminler ve farkları',
     aciklama: 'Üstte üç uydu ölçekli: Titan en büyük, Enceladus Europa\'nın yanında küçük bir nokta. Altta kalınlık tahminleri: Juno\'nun ölçtüğü yaklaşık 29 km, Europa\'nın buz kabuğunun yalnız soğuk ve katı dış katmanıdır; altında daha ılık bir buz katmanı varsa kabuğun tamamı daha kalındır. Europa\'nın okyanusu için kaynaklar 50 ile 100 ya da 60 ile 150 km diyor; Enceladus için 2014 ve 2024 çalışmaları farklı buz ve okyanus kalınlıkları buluyor; Titan\'da okyanusun yaklaşık 100 km aşağıda olduğu düşünülüyor. Çubuklar tahmin aralığını, noktalar tek değerleri gösterir.',
     kaynak: [
@@ -264,7 +264,7 @@
 
   /* d18 · bölüm 8: Drake denkleminin yedi çarpanı; 1961 tahminleri ve bugün (ders metni). Tablo biçiminde, ölçeksiz. */
   C.ekle('d18-drake', {
-    ders: 'd18', bolum: 8, oran: 0.79,
+    ders: 'd18', bolum: 11, oran: 0.79,
     baslik: 'Drake denklemi: ölçülenler ve bilinmeyenler',
     aciklama: 'Yedi çarpan alt alta çarpılır. İlk üçü bugün ölçülebiliyor: yılda 1 ile 3 yıldız doğuyor, neredeyse her yıldızın gezegeni var, gezegen oranı ile uygun gezegen sayısının çarpımı yaklaşık 0,4. Yaşamın, zekânın, teknolojinin ve uygarlık ömrünün çarpanları ise hâlâ bilinmiyor; bu yüzden tahminler 1\'den milyonlara uzanır.',
     kaynak: [

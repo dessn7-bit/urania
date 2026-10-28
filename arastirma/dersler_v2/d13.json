@@ -275,32 +275,38 @@
     {
       "deger": "%0,47 (Dünya) · ≈ %10 (51 Pegasi b)",
       "aciklama": "Rastgele yönlenmiş bir yörüngenin geçiş yapma olasılığı (yıldız yarıçapı ÷ yörünge yarıçapı); Dünya değeri NASA Kepler ekibinden",
-      "kaynak_url": "https://webarchive.library.unt.edu/web/20130216172310/http://kepler.nasa.gov/Science/about/characteristicsOfTransits"
+      "kaynak_url": "https://webarchive.library.unt.edu/web/20130216172310/http://kepler.nasa.gov/Science/about/characteristicsOfTransits",
+      "kid": "d13n10"
     },
     {
       "deger": "1.100'den fazla (≈ %19, Ocak 2026)",
       "aciklama": "Dikine hız yöntemiyle bulunan ötegezegenler",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Doppler_spectroscopy"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Doppler_spectroscopy",
+      "kid": "d13n11"
     },
     {
       "deger": "30 Ağustos 2026",
       "aciklama": "Nancy Grace Roman Uzay Teleskobu'nun fırlatılışı (Falcon Heavy, Kennedy Uzay Merkezi)",
-      "kaynak_url": "https://science.nasa.gov/blogs/roman/2026/08/30/nasas-roman-space-telescope-launches/"
+      "kaynak_url": "https://science.nasa.gov/blogs/roman/2026/08/30/nasas-roman-space-telescope-launches/",
+      "kid": "d13n12"
     },
     {
       "deger": "2027 başı (plan); 26 kamera; 200.000'den fazla yıldız",
       "aciklama": "ESA'nın PLATO görevi: L2'den Güneş benzeri yıldızların çevresinde kayalık gezegen arayacak",
-      "kaynak_url": "https://www.esa.int/Science_Exploration/Space_Science/Plato_factsheet"
+      "kaynak_url": "https://www.esa.int/Science_Exploration/Space_Science/Plato_factsheet",
+      "kid": "d13n13"
     },
     {
       "deger": "7,65 kadir; 157 ışık yılı; 3,52 gün; ≈ %2",
       "aciklama": "HD 209458 (Kanatlıat): geçişi ilk görülen ötegezegenin yıldızı; dürbünle seçilebilir, gezegen her geçişte ışığı yaklaşık %2 azaltır",
-      "kaynak_url": "https://en.wikipedia.org/wiki/HD_209458"
+      "kaynak_url": "https://en.wikipedia.org/wiki/HD_209458",
+      "kid": "d13n14"
     },
     {
       "deger": "4,09 kadir; 44 ışık yılı; 3 gaz devi",
       "aciklama": "Titawin (Upsilon Andromedae): anakoldaki bir yıldızın çevresindeki ilk çok gezegenli sistem (1999)",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Upsilon_Andromedae"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Upsilon_Andromedae",
+      "kid": "d13n15"
     }
   ],
   "sozluk": [
@@ -366,23 +372,28 @@
     },
     {
       "terim": "Koronagraf",
-      "tanim": "Teleskopta yıldızın ışığını örterek yanındaki sönük gezegeni ya da yapıları görünür kılan düzenek."
+      "tanim": "Teleskopta yıldızın ışığını örterek yanındaki sönük gezegeni ya da yapıları görünür kılan düzenek.",
+      "kid": "d13t12"
     },
     {
       "terim": "Serbest gezegen",
-      "tanim": "Hiçbir yıldıza bağlı olmadan galakside tek başına dolaşan gezegen."
+      "tanim": "Hiçbir yıldıza bağlı olmadan galakside tek başına dolaşan gezegen.",
+      "kid": "d13t13"
     },
     {
       "terim": "Yanlış pozitif",
-      "tanim": "Gezegen sinyaline benzediği halde örten çift yıldız ya da alet hatası gibi başka bir nedenden kaynaklanan sinyal."
+      "tanim": "Gezegen sinyaline benzediği halde örten çift yıldız ya da alet hatası gibi başka bir nedenden kaynaklanan sinyal.",
+      "kid": "d13t14"
     },
     {
       "terim": "İkincil tutulma",
-      "tanim": "Gezegenin yıldızının arkasına geçip gizlendiği an; öncesi ve sonrasındaki ışık farkı gezegenin kendi ışımasını verir."
+      "tanim": "Gezegenin yıldızının arkasına geçip gizlendiği an; öncesi ve sonrasındaki ışık farkı gezegenin kendi ışımasını verir.",
+      "kid": "d13t15"
     },
     {
       "terim": "Ultra soğuk cüce",
-      "tanim": "Güneş'ten çok daha soğuk, kırmızı ve küçük, kütlesi Güneş'inkinin yüzde 10'undan az olan yıldız; TRAPPIST-1 bunun örneğidir."
+      "tanim": "Güneş'ten çok daha soğuk, kırmızı ve küçük, kütlesi Güneş'inkinin yüzde 10'undan az olan yıldız; TRAPPIST-1 bunun örneğidir.",
+      "kid": "d13t16"
     }
   ],
   "defter_notu": [
@@ -440,27 +451,33 @@
     },
     {
       "soru": "Güneş benzeri bir yıldızın çevresinde 0,1 AB uzaklıkta dolanan bir gezegenin geçiş yapma olasılığı yaklaşık kaçtır? Dünya'nınkiyle karşılaştır.",
-      "cevap": "Olasılık ≈ yıldız yarıçapı ÷ yörünge yarıçapı. 0,1 AB ≈ 14.960.000 km; 695.700 ÷ 14.960.000 ≈ 0,0465, yani yaklaşık %4,7. Dünya için %0,47 olduğuna göre bu gezegenin şansı 10 kat fazladır, çünkü yörüngesi 10 kat küçüktür."
+      "cevap": "Olasılık ≈ yıldız yarıçapı ÷ yörünge yarıçapı. 0,1 AB ≈ 14.960.000 km; 695.700 ÷ 14.960.000 ≈ 0,0465, yani yaklaşık %4,7. Dünya için %0,47 olduğuna göre bu gezegenin şansı 10 kat fazladır, çünkü yörüngesi 10 kat küçüktür.",
+      "kid": "d13s8"
     },
     {
       "soru": "40 parsek uzaklıktaki bir yıldızın çevresinde 20 AB yarıçaplı yörüngede bir gezegen var. Gezegen yıldızından gökte en fazla ne kadar ayrık görünür?",
-      "cevap": "Açı (yay saniyesi) ≈ AB ÷ parsek = 20 ÷ 40 = 0,5 yay saniyesi. Bu, yörüngeyi yüzden gördüğümüz en iyi durumdur; doğrudan görüntüleme için uygun sayılabilecek bir ayrılıktır, ama gezegenin yine de genç ve sıcak olması gerekir."
+      "cevap": "Açı (yay saniyesi) ≈ AB ÷ parsek = 20 ÷ 40 = 0,5 yay saniyesi. Bu, yörüngeyi yüzden gördüğümüz en iyi durumdur; doğrudan görüntüleme için uygun sayılabilecek bir ayrılıktır, ama gezegenin yine de genç ve sıcak olması gerekir.",
+      "kid": "d13s9"
     },
     {
       "soru": "1991'deki pulsar gezegeni iddiası neden geri çekildi ve bu öykü bilimin işleyişi hakkında ne söyler?",
-      "cevap": "Lyne ve Bailes analizde Dünya'nın Güneş çevresindeki hareketini doğru hesaba katmamıştı; sinyal bu hatadan geliyordu. Hatayı kendileri buldu ve Ocak 1992'de açıkça geri çekti. Bilimde hata olağandır; güvenilirliği sağlayan, başka açıklamaların elenmesi ve hataların açıkça düzeltilmesidir."
+      "cevap": "Lyne ve Bailes analizde Dünya'nın Güneş çevresindeki hareketini doğru hesaba katmamıştı; sinyal bu hatadan geliyordu. Hatayı kendileri buldu ve Ocak 1992'de açıkça geri çekti. Bilimde hata olağandır; güvenilirliği sağlayan, başka açıklamaların elenmesi ve hataların açıkça düzeltilmesidir.",
+      "kid": "d13s10"
     },
     {
       "soru": "Geçiş yönteminde bir örten çift yıldız nasıl gezegen gibi görünebilir ve bu nasıl ayıklanır?",
-      "cevap": "Parlak bir yıldızın yanında ondan ayırt edilemeyen sönük bir örten çift varsa, çiftin derin tutulmaları parlak yıldızın ışığıyla seyrelir ve sığ, gezegen geçişine benzer bir çukur gibi görünür. Ayıklamak için dikine hızla kütle ölçülür; kütle yıldız düzeyindeyse bu bir çifttir. Ayrıca derinlik ya da süre geçişten geçişe değişiyorsa sinyal gezegenden gelmiyordur."
+      "cevap": "Parlak bir yıldızın yanında ondan ayırt edilemeyen sönük bir örten çift varsa, çiftin derin tutulmaları parlak yıldızın ışığıyla seyrelir ve sığ, gezegen geçişine benzer bir çukur gibi görünür. Ayıklamak için dikine hızla kütle ölçülür; kütle yıldız düzeyindeyse bu bir çifttir. Ayrıca derinlik ya da süre geçişten geçişe değişiyorsa sinyal gezegenden gelmiyordur.",
+      "kid": "d13s11"
     },
     {
       "soru": "WASP-39 b'nin ortalama yoğunluğu yaklaşık 150 kg/m³. Bu, gezegenin yapısı ve atmosfer gözlemi hakkında ne söyler?",
-      "cevap": "Yoğunluk sudan (1.000 kg/m³) yaklaşık 7 kat, Dünya'dan (5.513 kg/m³) yaklaşık 37 kat düşük. Kayalık bir gezegen bu kadar seyrek olamaz; WASP-39 b büyük ölçüde şişkin, kabarık bir gaz zarfından oluşuyor. Yoğunluğu bulmak için iki yöntem gerekir: geçiş yarıçapı, dikine hız kütleyi verir."
+      "cevap": "Yoğunluk sudan (1.000 kg/m³) yaklaşık 7 kat, Dünya'dan (5.513 kg/m³) yaklaşık 37 kat düşük. Kayalık bir gezegen bu kadar seyrek olamaz; WASP-39 b büyük ölçüde şişkin, kabarık bir gaz zarfından oluşuyor. Yoğunluğu bulmak için iki yöntem gerekir: geçiş yarıçapı, dikine hız kütleyi verir.",
+      "kid": "d13s12"
     },
     {
       "soru": "Webb TRAPPIST-1 e için Eylül 2025'te neyi dışladı, neyi açık bıraktı?",
-      "cevap": "Hidrojenin baskın olduğu, gezegenin doğuşundan kalma bir atmosferi dışladı; Mars ve Venüs benzeri karbondioksitçe zengin bir atmosferi olası bulmadı. Titan'ınki gibi azotça zengin, ılık bir atmosfer hâlâ mümkün. Yıldızın lekeleri ve patlamaları veriyi karıştırdığı için bir atmosfer henüz doğrulanamadı; ek gözlemler sürüyor."
+      "cevap": "Hidrojenin baskın olduğu, gezegenin doğuşundan kalma bir atmosferi dışladı; Mars ve Venüs benzeri karbondioksitçe zengin bir atmosferi olası bulmadı. Titan'ınki gibi azotça zengin, ılık bir atmosfer hâlâ mümkün. Yıldızın lekeleri ve patlamaları veriyi karıştırdığı için bir atmosfer henüz doğrulanamadı; ek gözlemler sürüyor.",
+      "kid": "d13s13"
     }
   ],
   "kaynaklar": [

@@ -39,12 +39,12 @@
       "paragraflar": [
         "Bir cismin sensörde ne kadar büyük çıkacağını odak uzaklığı belirler. Telefonların sensörü çok küçük olduğu için gerçek odak uzaklıkları da birkaç milimetredir ve tek başına pek bir şey söylemez. Bu yüzden üreticiler genellikle 35 mm eşdeğeri odak uzaklığı verir. Wikipedia'ya göre bu, 36 × 24 mm'lik klasik film karesinde aynı görüş açısını verecek odak uzaklığıdır; çoğunlukla köşegen görüş açısına göre tanımlanır. Bu karenin köşegeni yaklaşık 43,3 mm'dir; CIPA adlı kuruluşun kılavuzu 43,27 mm kullanır.",
         "Gerçek odak uzaklığını eşdeğere çeviren çarpana kırpma çarpanı denir: 43,27 mm'nin sensör köşegenine oranı. Aynı kaynak tipik değerler sayar: APS-C denen kamera sensörlerinde yaklaşık 1,5, kompakt kameralarda 5–6; cep telefonu gibi aygıtlarda bu çarpan daha da yüksektir. Gökyüzü fotoğrafçılığında eşdeğer odak uzaklığı çok işe yarar, çünkü astronomi açılarla konuşur: eşdeğeri bilirsen bir pikselin gökyüzünde kaç yay saniyesine düştüğünü hesaplayabilirsin. Buna piksel ölçeği denir. Yay saniyesi, derecenin 3600'de biridir.",
-        "İki tuzak var. Birincisi piksel birleştirmedir: OPCUG notuna göre telefon, 4 ya da 9 pikselden oluşan grupları tek bir okumada birleştirebilir; 48 ya da 108 milyon pikselli bir sensörün 12 milyon piksellik fotoğraf vermesinin nedeni budur. Hesapta fotoğrafın gerçek piksel sayısını kullanmalısın. İkincisi yakınlaştırmadır. Aynı notta telefonların birkaç sabit odaklı lensi birleştirerek yaklaşık 3 kata kadar optik yakınlaştırma sunduğu, ötesinde sayısal yakınlaştırmaya dayandığı yazar. BBC Sky at Night dergisi de sayısal yakınlaştırmanın en büyük optik yakınlaştırmadan fazlasını vermediğini, en büyük optik yakınlaştırmada çekip sonra kırpmanın daha iyi olduğunu söyler.",
+        "İki tuzak var. Birincisi piksel birleştirmedir: OPCUG notuna göre telefon, 4 ya da 9 pikselden oluşan grupları tek bir okumada birleştirebilir; 48 ya da 108 milyon pikselli bir sensörün 12 milyon piksellik fotoğraf vermesinin nedeni budur. Hesapta fotoğrafın gerçek piksel sayısını kullanmalısın. İkincisi yakınlaştırmadır. Aynı notta telefonların birkaç sabit odaklı lensi birleştirerek yaklaşık 3 kata kadar optik yakınlaştırma sunduğu, ötesinde sayısal yakınlaştırmaya dayandığı yazar. BBC Sky at Night dergisi de sayısal yakınlaştırmanın en büyük optik yakınlaştırmadan fazlasını vermediğini, en büyük optik yakınlaştırmada çekip görüntüyü sonra düzenleme programında kendin büyütmenin daha iyi olduğunu söyler.",
         "Kendi telefonunun ana kamerasının 35 mm eşdeğerini teknik belgesinden öğrenebilirsin. Bu derste hesaplar için şu varsayımı kullanıyorum: ana kamera 24 mm eşdeğerinde ve fotoğraf 4000 × 3000 piksel, yani 12 milyon piksel. Sayılar telefonuna göre değişir, yöntem değişmez. Aşağıdaki örnekte bulacağın yaklaşık 74 yay saniyelik piksel ölçeği, dersin bütün hesaplarında kullanılacak."
       ],
       "ornek": {
         "baslik": "Örnek: Bir piksel gökte ne kadar?",
-        "metin": "Varsayım: 24 mm eşdeğeri, 4000 × 3000 piksel. 1. adım: Eşdeğer, köşegeni 43,27 mm olan hayali bir sensöre göre tanımlı. En-boy oranı 4'e 3 olan bir karede köşegen 5 birimse en 4 birimdir (3-4-5 üçgeni); en = 43,27 × 0,8 ≈ 34,6 mm, boy = 43,27 × 0,6 ≈ 26,0 mm. 2. adım: Bir pikselin hayali sensördeki genişliği 34,6 ÷ 4000 ≈ 0,00865 mm. 3. adım: Küçük açılarda açı (radyan) ≈ uzunluk ÷ odak uzaklığı = 0,00865 ÷ 24 ≈ 0,00036 radyan. Bir radyan 206.265 yay saniyesidir: 0,00036 × 206.265 ≈ 74 yay saniyesi. 4. adım: Görüş alanı: yatayda 2 × arctan(17,3 ÷ 24) ≈ 71,6°, dikeyde 2 × arctan(13,0 ÷ 24) ≈ 56,8°. 5. adım: NASA'nın Ay bilgi sayfasına göre Ay'ın ortalama görünür çapı 1896 yay saniyesidir. 1896 ÷ 74 ≈ 25,5. Sonuç: bu telefonda bir piksel gökte yaklaşık 74 yay saniyesi tutar ve Ay yalnızca 25 piksel kadar genişliktedir; 4000 piksellik bir karenin yüzde 1'inden az."
+        "metin": "Varsayım: 24 mm eşdeğeri, 4000 × 3000 piksel. 1. adım: Eşdeğer, köşegeni 43,27 mm olan hayali bir sensöre göre tanımlı. En-boy oranı 4'e 3 olan bir karede köşegen 5 birimse en 4 birimdir (3-4-5 üçgeni); en = 43,27 × 0,8 ≈ 34,6 mm, boy = 43,27 × 0,6 ≈ 26,0 mm. 2. adım: Bir pikselin hayali sensördeki genişliği 34,6 ÷ 4000 ≈ 0,00865 mm. 3. adım: Küçük açılarda açı (radyan) ≈ uzunluk ÷ odak uzaklığı = 0,00865 ÷ 24 ≈ 0,00036 radyan. Bir radyan 206.265 yay saniyesidir: 0,00036 × 206.265 ≈ 74 yay saniyesi. 4. adım: Görüş alanı: yatayda 2 × arctan(17,3 ÷ 24) ≈ 71,6°, dikeyde 2 × arctan(13,0 ÷ 24) ≈ 56,8°. 5. adım: NASA'nın Ay bilgi sayfasına göre Ay'ın ortalama görünür çapı 1896 yay saniyesidir. 1896 ÷ 74,4 ≈ 25,5. Sonuç: bu telefonda bir piksel gökte yaklaşık 74 yay saniyesi tutar ve Ay yalnızca 25 piksel kadar genişliktedir; 4000 piksellik bir karenin yüzde 1'inden az."
       },
       "akilda": "35 mm eşdeğeri, telefonun görüş açısını klasik 36 × 24 mm kareye göre söyler. Bundan piksel ölçeği çıkar: bir pikselin gökte kapladığı açı. Hesapta fotoğrafın gerçek piksel sayısını kullan; sayısal yakınlaştırma yeni ayrıntı getirmez."
     },
@@ -54,14 +54,14 @@
         "NASA'nın akıllı telefonla astrofotoğraf yazısı Ay'ı yeni başlayanlar için en iyi hedef sayar: büyük ve parlaktır. Ama telefonun otomatik pozlaması onu çoğu zaman yakar, yani beyaz bir lekeye çevirir. Nedeni bir önceki örnekte: Ay karenin küçük bir parçasıdır. Jerry Lodriguss'un sabit üçayaklı Ay fotoğrafı sayfası, yaklaşık 1000 mm ya da daha uzun bir odak uzaklığı kullanmadıkça ışık ölçerin çoğunlukla karanlık gökyüzünü okuyup Ay'ı fazla pozladığını yazar. Kamera ortalama bir parlaklık hedefler; siyah gökyüzünü griye çekmeye çalışırken Ay'ı patlatır.",
         "BBC Sky at Night'ın telefonla Ay rehberi pratik bir çözüm verir: telefonu Ay'a doğrultup pozlamayı ona göre ayarlatmasını sağla, ardından el ile ya da profesyonel kipe geç; Ay'ın diski fazla pozlanmışsa ISO'yu ya da pozlamayı düşür. Amaç diskte beyaz yanık bölge kalmamasıdır; gökyüzünün simsiyah olması sorun değildir, doğrusu odur.",
         "Ne kadar kısa? Fotoğrafçıların eski bir kuralı var: Looney 11. Wikipedia'ya göre Ay yüzeyinin fotoğrafı için diyaframı f/11'e, pozlama süresini de ISO değerinin tersine ayarla: ISO 100'de 1/100 ya da 1/125 saniye, ISO 400'de 1/400 ya da 1/500 saniye. Mantığı güzel: Ay'ın yüzeyine düşen Güneş ışığı Dünya'nın yüzeyine düşenle esasen aynıdır, ama Ay'ın yüzeyi daha koyudur; bu yüzden kural, gündüz için kullanılan güneşli 16 kuralına göre bir durak fazla ışık verir.",
-        "Kural dolunay içindir. Lodriguss'un tablosu ISO 250 ve f/11'de dolunay için 1/250, şişkin Ay için 1/125, dördün için 1/60, geniş hilal için 1/30, ince hilal için 1/15 saniye önerir: aydınlık kısmın her sekizde bir azalışı için bir durak daha fazla pozlama. Ufka yakın Ay atmosferde sönükleşir; yazar alçaktaki bir dolunayda tablodakinden yaklaşık üç durak fazla pozlamak zorunda kaldığını anlatır. Hangisi doğru çıkacak bilemezsin; bu yüzden aynı rehber pozlamayı bir alttan bir üstten deneyerek çekmeyi, yani kademelemeyi öğütler.",
-        "Ay ile manzarayı tek karede ikisi de güzel çıkacak biçimde çekmek neredeyse imkânsızdır. Google'ın Pixel telefonlarındaki gece modunu anlatan araştırma yazısına göre Ay'la aydınlanan bir manzara ile Ay yüzeyi arasındaki parlaklık farkı 500.000'e 1'i aşabilir; bu yüzden ikisi aynı görüntüde yakalanamıyor. Bu farka dinamik aralık sorunu denir: sensörün aynı karede kaydedebildiği en parlak ile en sönük arasındaki aralık sınırlıdır. Sky at Night'ın önerisi bu yüzden zekicedir: şişkin Ay'ı gündüz, hilali alacakaranlıkta çek; o saatlerde gök ve manzara Ay'a yakın parlaklıktadır. Hilalin karanlık kısmındaki soluk yer ışığı ise bambaşka bir pozlama ister; Lodriguss'un tablosu onun için 2 saniye, f/2,8 ve ISO 250 verir."
+        "Wikipedia kuralı genel olarak Ay yüzeyi için verir; Lodriguss'un tablosunda bu değer dolunaya karşılık gelir: ISO 250 ve f/11'de dolunay için 1/250, şişkin Ay için 1/125, dördün için 1/60, geniş hilal için 1/30, ince hilal için 1/15 saniye. Tabloda her evre adımı bir durak ekler. Yazar ayrıca aydınlanmanın her sekizde bir değişimi için bir durak kuralını verir; bu kural dolunaydan dördüne 4, tablo 2 durak eder, yani ikisi de yalnız başlangıç noktasıdır. Ufka yakın Ay atmosferde sönükleşir; yazar alçaktaki bir dolunayda tablodakinden yaklaşık üç durak fazla pozlamak zorunda kaldığını anlatır. Hangisi doğru çıkacak bilemezsin; bu yüzden aynı rehber pozlamayı bir alttan bir üstten deneyerek çekmeyi, yani kademelemeyi öğütler.",
+        "Ay ile manzarayı tek karede ikisi de güzel çıkacak biçimde çekmek neredeyse imkânsızdır. Google'ın Pixel telefonlarındaki gece modunu anlatan araştırma yazısına göre Ay'la aydınlanan bir manzara ile Ay yüzeyi arasındaki parlaklık farkı 500.000'e 1'i aşabilir; bu yüzden ikisi aynı görüntüde yakalanamıyor. Bu farka dinamik aralık sorunu denir: sensörün aynı karede kaydedebildiği en parlak ile en sönük arasındaki aralık sınırlıdır. Sky at Night'ın önerisi bu yüzden zekicedir: şişkin Ay'ı gündüz, hilali alacakaranlıkta çek; o saatlerde gök ve manzara Ay'a daha yakın parlaklıktadır. Hilalin karanlık kısmındaki soluk yer ışığı ise bambaşka bir pozlama ister; Lodriguss'un tablosu onun için 2 saniye, f/2,8 ve ISO 250 verir."
       ],
       "ornek": {
         "baslik": "Örnek: Looney 11'i telefona çevirmek ve yer ışığı",
         "metin": "Varsayım: telefonun diyaframı f/1,8, ISO 50. 1. adım: Looney 11'e göre f/11 ve ISO 50'de süre 1/50 saniye. 2. adım: f/1,8 açıklık (11 ÷ 1,8)² ≈ 37,3 kat fazla ışık geçirir; 2 üzeri 5,2 ≈ 37 olduğundan bu yaklaşık 5,2 duraktır. 3. adım: Aynı pozlama için süreyi 37,3'e böl: 1/50 ÷ 37,3 ≈ 1/1870, yani yaklaşık 1/2000 saniye. Otomatik kipin göğe bakarak seçebileceği onda bir saniyeler bu değerin yüzlerce katıdır; Ay'ın yanması şaşırtıcı değil. 4. adım: Dolunay (1/250 saniye, f/11) ile yer ışığını (2 saniye, f/2,8) Lodriguss'un tablosuyla karşılaştır; ISO ikisinde de 250. Süre oranı 2 ÷ (1/250) = 500, diyafram oranı (11 ÷ 2,8)² ≈ 15,4; toplam ≈ 7700 kat. 2 üzeri 12,9 ≈ 7700, yani yaklaşık 13 durak. Sonuç: telefonda dolunay için yaklaşık 1/2000 saniye gerekir; yer ışığı ise dolunaydan yaklaşık 13 durak, yani 7700 kat daha uzun ya da daha açık bir pozlama ister."
       },
-      "akilda": "Otomatik pozlama karanlık göğü okuyup Ay'ı yakar; pozlamayı Ay'a göre düşür. Looney 11: f/11 ve 1 bölü ISO saniye; her sekizde bir evre azalışı için bir durak ekle. Ay ile manzara arasındaki parlaklık farkı tek karenin dinamik aralığını aşar."
+      "akilda": "Otomatik pozlama karanlık göğü okuyup Ay'ı yakar; pozlamayı Ay'a göre düşür. Looney 11: f/11 ve 1 bölü ISO saniye; Ay inceldikçe pozlamayı artır (Lodriguss'un tablosunda her evre adımı bir durak). Ay ile manzara arasındaki parlaklık farkı tek karenin dinamik aralığını aşar."
     },
     {
       "baslik": "Dürbünün arkasından: afokal fotoğraf",
@@ -69,7 +69,7 @@
         "Telefonun tek başına Ay'ı 25 piksellik bir benek yapıyorsa, 7×50 dürbününü bir büyüteç gibi önüne koyabilirsin. Wikipedia bu yöntemi afokal fotoğraf diye tanımlar: lensi takılı bir kamera, başka bir görüntü oluşturan aletin göz merceğinin önüne yerleştirilir; kameranın lensi gözün yerini alır. Kuş gözlemcileri aynı yönteme dürbün ya da gözlem teleskobuyla yaptıkları için digiscoping adını vermiştir.",
         "Neden işe yarar? 11. derste gördüğün gibi 7×50 dürbün cisimleri 7 kat büyük gösterir; yani gökteki açıları 7 ile çarpar. Telefon, dürbünden çıkan bu büyütülmüş görüntüyü çeker. Sonuç, telefonun eşdeğer odak uzaklığının yaklaşık 7 katı uzunlukta bir lensle çekmek gibidir: 24 mm × 7 = 168 mm eşdeğeri. Piksel ölçeği de aynı oranda küçülür: 74 ÷ 7 ≈ 10,6 yay saniyesi. Bedeli de var: Wikipedia'ya göre bu düzenek yüksek odak oranlı, dolayısıyla daha karanlık bir görüntü verir ve kenarlarda kararma, yani vinyetleme olur. Vinyetleme, görüntünün kenarlarına doğru kararan dairesel bir çerçeve olarak görünür; sonradan kırparak atabilirsin.",
         "Uygulama adımları kaynaklarda ortaktır. Önce dürbünü kendi gözünle Ay'a ya da parlak bir yıldıza tam netle; Sky at Night'a göre gözlük ya da lens takıyorsan çekimde de tak, çünkü netlemeyi gözün için yapıyorsun. Sonra telefonun lensini dürbünün bir göz merceğine olabildiğince yaklaştır; Wikipedia kameranın göz merceğine mümkün olduğunca yakın durması gerektiğini söyler. Ekranda göz merceğinin aydınlık dairesini gör, telefonu milim milim kaydırarak Ay'ı ortala. Dokunma titreşim yaratır; Sky at Night kablolu kulaklığın ses düğmesinin deklanşör yerine kullanılabileceğini, NASA da zamanlayıcının dokunuştan gelen sarsıntıyı azalttığını belirtir. Dürbünü bir yere dayamak 11. dersteki gibi burada da fark yaratır.",
-        "Ne bekleyebilirsin? Ay bu kez yaklaşık 178 piksel genişliğinde çıkar; 11. derste NASA'nın dediği gibi aydınlık ile karanlığın sınırında gölgeler uzun düştüğü için kraterler en iyi orada seçilir. Gezegenlerde ise mucize bekleme: bir sonraki bölümde göreceğin gibi Jüpiter bile birkaç piksellik bir disk olur. Jüpiter'in uydularını 11. derste gözle gördün; telefonun dürbün arkasından onları kaydedip kaydedemeyeceğini ölçen bir kaynak bulamadım. Bu, senin deneyin olur. Son bir uyarı: bu piksel ölçeğinde gökyüzü, el hiç titremese bile bir pikseli yaklaşık 0,7 saniyede geçer. Dürbün arkasından yalnız kısa pozlamalı, parlak hedefler gerçekçidir; Ay bunun en iyisidir."
+        "Ne bekleyebilirsin? Ay bu kez yaklaşık 178 piksel genişliğinde çıkar; 11. derste NASA'nın dediği gibi aydınlık ile karanlığın sınırında gölgeler uzun düştüğü için kraterler en iyi orada seçilir. Gezegenlerde ise mucize bekleme: bir sonraki bölümde göreceğin gibi Jüpiter bile birkaç piksellik bir disk olur. Jüpiter'in uydularını 11. derste gözle gördün; telefonun dürbün arkasından onları kaydedip kaydedemeyeceğini ölçen bir kaynak bulamadım. Bu, senin deneyin olur. Son bir uyarı: bu piksel ölçeğinde gök ekvatoru yakınındaki bir cisim, el hiç titremese bile bir pikseli yaklaşık 0,7 saniyede geçer. Dürbün arkasından yalnız kısa pozlamalı, parlak hedefler gerçekçidir; Ay bunun en iyisidir."
       ],
       "ornek": {
         "baslik": "Örnek: Ay ve Jüpiter dürbün arkasında kaç piksel?",
@@ -87,7 +87,7 @@
       ],
       "ornek": {
         "baslik": "Örnek: Gezegenler kaç piksel?",
-        "metin": "Değerler NASA bilgi sayfalarından, piksel ölçekleri bu dersin varsayımından. 1. adım, telefon tek başına (74,4 yay saniyesi): Jüpiter en büyük hâlinde 50,1 ÷ 74,4 ≈ 0,67 piksel; Venüs en büyük hâlinde 66,1 ÷ 74,4 ≈ 0,89 piksel. İkisi de bir pikselden küçük; parlak bir nokta olurlar. 2. adım, 7× dürbün arkasından (10,6 yay saniyesi): Jüpiter 50,1 ÷ 10,6 ≈ 4,7 piksel, en uzak hâlinde 30,5 ÷ 10,6 ≈ 2,9 piksel; Satürn en çok 19,9 ÷ 10,6 ≈ 1,9 piksel; Venüs en büyük hâlinde 66,1 ÷ 10,6 ≈ 6,2 piksel, en küçük hâlinde 9,7 ÷ 10,6 ≈ 0,9 piksel. 3. adım, yorum: Venüs en büyük göründüğünde Dünya'ya en yakın ve ince hilal evresindedir; 6 piksellik bir hilal biçiminin seçilip seçilmeyeceğini söyleyen bir kaynak bulamadım. Sonuç: dürbün arkasından bile gezegenler birkaç piksellik benekler olur; disk ayrıntısı teleskop işidir."
+        "metin": "Değerler NASA bilgi sayfalarından, piksel ölçekleri bu dersin varsayımından. 1. adım, telefon tek başına (74,4 yay saniyesi): Jüpiter en büyük hâlinde 50,1 ÷ 74,4 ≈ 0,67 piksel; Venüs en büyük hâlinde 66,1 ÷ 74,4 ≈ 0,89 piksel. İkisi de bir pikselden küçük; parlak bir nokta olurlar. 2. adım, 7× dürbün arkasından (10,6 yay saniyesi): Jüpiter 50,1 ÷ 10,6 ≈ 4,7 piksel, en uzak hâlinde 30,5 ÷ 10,6 ≈ 2,9 piksel; Satürn en çok 19,9 ÷ 10,6 ≈ 1,9 piksel; Venüs en büyük hâlinde 66,1 ÷ 10,6 ≈ 6,2 piksel, en küçük hâlinde 9,7 ÷ 10,6 ≈ 0,9 piksel. 3. adım, yorum: Wikipedia'nın Venüs'ün evreleri maddesine göre Venüs en büyük çapına Dünya'ya en yakın olduğu alt kavuşumda, yeni evrede ulaşır; çok ince hilali 60–66 yay saniyesidir; 6 piksellik bir hilal biçiminin seçilip seçilmeyeceğini söyleyen bir kaynak bulamadım. Sonuç: dürbün arkasından bile gezegenler birkaç piksellik benekler olur; disk ayrıntısı teleskop işidir."
       },
       "akilda": "Gezegenler 10–66 yay saniyesidir; telefonun 74 yay saniyelik pikseline sığarlar, nokta olarak çıkarlar. Atmosferin görüşü (kentte 1 yay saniyesinden kötü) ayrıntıyı bozar; şanslı görüntüleme binlerce kareden en keskinleri seçip birleştirir."
     },
@@ -108,9 +108,9 @@
       "baslik": "Yıldızları nokta tutmak: 500 kuralı ve sınırları",
       "paragraflar": [
         "Fotoğrafçıların en bilinen kaba kuralı 500 kuralıdır. PhotographyLife'ın tanımıyla: saniye cinsinden enstantane, 500 bölü 35 mm eşdeğeri odak uzaklığı olmalıdır. 20 mm'lik bir lensle 25 saniye, 50 mm'lik bir lensle 10 saniye eder. Kuralın kendisi bir uzlaşmadır. National Parks at Night'taki yazıya göre bir zamanlar 600 kuralı yaygındı; yaklaşık 21 × 28 cm'den büyük baskılarda yıldızlar yuvarlak nokta yerine küçük çizgiler gibi göründüğü için fotoğrafçılar 500'e indi. Yani kural bir baskı boyutu ve bir göz için kurulmuştu, piksel için değil.",
-        "Sınırları açıktır. PhotographyLife'a göre 500 kuralı baktığın yönü, piksel boyutunu ve kırınımı hesaba katmaz ve fazla hoşgörülüdür: hemen her durumda olması gerekenden fazla iz verir. National Parks at Night yazarı da 40 milyon pikseli aşan sensörlerde izin daha kolay göründüğünü, bu yüzden 400, kırpılmış sensörlerde 250 ya da 200 kuralına geçtiğini anlatır. PhotographyLife yazarı gök ekvatoru kadrajdayken 300 kuralını kullandığını söyler. Kaynaklar arasındaki bu dağınıklık, tek bir sihirli sayı olmadığını gösterir.",
+        "Sınırları açıktır. PhotographyLife'a göre 500 kuralı baktığın yönü, piksel boyutunu ve kırınımı hesaba katmaz ve fazla hoşgörülüdür: hemen her durumda olması gerekenden fazla iz verir. National Parks at Night yazarı da piksel sayısı arttıkça kuralın yetmediğini (40 milyonu aşan sensörlerde iz daha kolay görünür), kendisinin 30 milyon pikselin altındaki tam kare sensörlerde 400, kırpılmış sensörlerde 250 ya da 200 kuralını kullandığını anlatır. PhotographyLife yazarı gök ekvatoru kadrajdayken 300 kuralını kullandığını söyler. Kaynaklar arasındaki bu dağınıklık, tek bir sihirli sayı olmadığını gösterir.",
         "Daha ayrıntılı bir seçenek NPF kuralıdır. Kaynaklara göre Fransız fotoğrafçı ve amatör gökbilimci Frédéric Michaud tarafından Le Havre astronomi derneği için geliştirildi. Kural diyaframı (N), piksel aralığını (P) ve odak uzaklığını (F) birlikte kullanır; gelişmiş biçimi kadrajdaki yıldızların en küçük dik açıklığını da hesaba katar. Okuduğum iki kaynak formülün sabitlerini açıkça vermediği için burada yazmıyorum.",
-        "Onun yerine kendi kuralını türetebilirsin, çünkü bütün parçalar elinde: bir yıldızın k pikselden fazla kaymaması için en uzun süre ≈ k × piksel ölçeği ÷ (15,04 × cos δ). k = 1 çok katı bir ölçüttür; uygulamadaki kurallar birkaç piksellik kaymaya göz yumar: aşağıdaki örnekte 500 kuralının yaklaşık 4, Google'ın gece modu sınırının yaklaşık 3 piksellik kayma verdiğini göreceksin. Bunun gerçek dünyadaki bir sağlaması var: Google, Pixel telefonlarının gece modunda tek bir karenin süresini en çok 16 saniyeyle sınırladı, çünkü kısa çizgilere dönüşen yıldızlar yanlış görünüyordu. Aşağıdaki örnekte k = 3 ile gök ekvatoru için bulacağın yaklaşık 15 saniye, bu değere çok yakındır."
+        "Onun yerine kendi kuralını türetebilirsin; bu bir kaynaktan alınmış kural değil, bu dersteki iki sonuçtan yapılmış bir türetmedir. Gök saniyede 15,04 × cos δ yay saniyesi kayar, bir piksel gökte piksel ölçeği kadar açı tutar; yıldızın k piksel kayması için geçen süre bunların oranıdır: en uzun süre ≈ k × piksel ölçeği ÷ (15,04 × cos δ). Varsayımlar: piksel ölçeği karenin ortasındaki değerdir, yıldız tek bir noktadır; mercek kusurları, kırınım, atmosfer ve görüntü işleme hesaba katılmaz; k'yı sen seçersin. k = 1 çok katı bir ölçüttür; bu dersin telefonunda gök ekvatoru için 500 kuralı yaklaşık 4, Google'ın gece modu sınırı yaklaşık 3 piksellik kayma verir. Google, Pixel'lerin gece modunda tek karenin süresini gerçek gece gökyüzü çekimlerinde bulduğu 16 saniyeyle sınırladı, çünkü kısa çizgilere dönüşen yıldızlar yanlış görünüyordu. k = 3 ile bulacağın yaklaşık 15 saniye buna yakındır; ama Pixel bu dersin varsayımsal telefonu olmadığı için bu kanıt değil, kabaca bir tutarlılıktır."
       ],
       "ornek": {
         "baslik": "Örnek: 24 mm eşdeğeri telefon için en uzun poz",
@@ -122,7 +122,7 @@
       "baslik": "Yıldız izi: Dünya'nın dönüşünü fotoğraflamak",
       "paragraflar": [
         "Kaymayı engelleyemiyorsan onu konu edebilirsin. Yıldız izi fotoğrafı, yıldızların gök kutbu çevresinde çizdiği yayları gösteren uzun süreli bir çekimdir. Royal Museums Greenwich'in rehberine göre en kolay yol en az 30 dakikalık tek bir pozdur, ama bu istenmeyen kumlanmaya, yani gürültüye yol açar. Önerilen çözüm, 30'ar saniyelik 100 ya da daha fazla kısa poz çekip bunları yıldız izi yazılımıyla birleştirmektir. Aynı rehber ISO için 200 ile 600, diyafram için f/2 ile f/9 arasından başlamayı önerir; telefonda diyafram sabit olduğu için senin oynayacağın ISO ve süredir.",
-        "Rehberin diğer öğütleri de doğrudan işine yarar. Kamerayı kuzeye ya da güneye, gök kutbuna doğrult; yıldızlar orada merkezi bir noktanın çevresinde döner. Akşamın ışığından ve ışık kirliliğinin en yoğun saatlerinden kaçınmak için gün batımından iki saat kadar sonra başla; Ay'ın doğuş saatine ve havaya bak. Netlemeyi el ile sonsuza ayarla ve ilk deneme karesini büyütüp yıldızların net olduğunu kontrol et. Ön planı ışıkla aydınlatacaksan bunu dizinin başında ya da sonunda yap; aradan bir kareyi silersen izlerde boşluk kalır. Sağlam bir dayanak ve uzaktan deklanşör şarttır.",
+        "Rehberin diğer öğütleri de doğrudan işine yarar. Kamerayı gök kutbuna doğrult; rehber yarımküreye göre kuzey ya da güney der, İstanbul'da kuzeydir; yıldızlar orada merkezi bir noktanın çevresinde döner. Akşamın kalan ışığından kaçınmak için gün batımından iki saat kadar sonra başla (rehber ışık kirliliği için ayrıca kentten uzaklaşmayı öğütler); Ay'ın doğuş saatine ve havaya bak. Netlemeyi el ile sonsuza ayarla ve ilk deneme karesini büyütüp yıldızların net olduğunu kontrol et. Ön planı ışıkla aydınlatacaksan bunu dizinin başında ya da sonunda yap; aradan bir kareyi silersen izlerde boşluk kalır. Sağlam bir dayanak ve uzaktan deklanşör şarttır.",
         "İstanbul için kadraj hesabı basit. Kuzey gök kutbu tam kuzeyde, yaklaşık 41° yükseklikte. Telefonu yatay tuttuğunda 24 mm eşdeğerinde dikey görüş alanı yaklaşık 56,8°'dir; kadrajın altını ufka yakın tutarsan kutup kadrajın içinde kalır. Kutup Yıldızı kutbun tam üstünde değildir: 1. derste geçen değerle dik açıklığı yaklaşık 89,35°, yani kutba yaklaşık 0,65° uzaktadır. Uzun bir dizide o da küçük bir yay çizer.",
         "Ataşehir'den yıldız izi çekmenin bir avantajı da var: hedef, sönük yıldızlar değil parlakların çizdiği yaylardır. Karanlık bir gökte çok daha fazla sönük yıldız iz bırakır; kentte daha az yay çıkmasını bekleyebilirsin, ama kutbun çevresindeki dönüşü göstermek için birkaç parlak yıldızın yayı yeter. Telefonunun kamera uygulaması art arda ya da aralıklı çekim sunuyorsa onu kullanabilirsin; sunmuyorsa ayrı bir uygulama gerekir. NASA'nın notuna göre telefonunun kamera uygulaması pozlama süresi ya da zamanlayıcı gibi seçenekleri sunmuyorsa bunları sunan uygulamalar indirilebilir; burada ad vermiyorum."
       ],
@@ -149,7 +149,7 @@
     {
       "baslik": "Görüntü yığınlama: çok sayıda kısa pozdan bir uzun poz",
       "paragraflar": [
-        "Poz süresini Dünya'nın dönüşü sınırlıyorsa ışığı başka yoldan toplayabilirsin: aynı gökyüzünü defalarca çekip kareleri birleştirerek. Buna görüntü yığınlama denir. Lodriguss bunu, daha uzun bir pozun sinyal-gürültü oranına ulaşmak için çok sayıda kısa poz çekip onları yığınlamak diye özetler. PetaPixel'deki açıklamaya göre yöntem, her pikselin değerini karelerin üzerinden ortalamaktır: gürültü değerleri rastgele yukarı aşağı oynattığı için ortalama gerçek sinyale yaklaşır. Aynı kaynağa göre sinyal-gürültü oranı, yığındaki görüntü sayısının karekökü kadar artar: 9 görüntü oranı 3 kat, 100 görüntü 10 kat iyileştirir.",
+        "Poz süresini Dünya'nın dönüşü sınırlıyorsa ışığı başka yoldan toplayabilirsin: aynı gökyüzünü defalarca çekip kareleri birleştirerek. Buna görüntü yığınlama denir. Lodriguss bunu, daha uzun bir pozun sinyal-gürültü oranına ulaşmak için çok sayıda kısa poz çekip onları yığınlamak diye özetler. PetaPixel'deki açıklamaya göre yöntem, her pikselin değerini karelerin üzerinden ortalamaktır: kare sayısı arttıkça ortalama gerçek değere yaklaşır, çünkü rastgele gürültü kareden kareye değişir. Aynı kaynağa göre sinyal-gürültü oranı, yığındaki görüntü sayısının karekökü kadar artar: 9 görüntü oranı 3 kat, 100 görüntü 10 kat iyileştirir.",
         "Bunun önceki bölümle bağı açıktır. N kare, N kat ışık demektir; foton gürültüsü için oran ışığın kareköküyle büyüdüğünden yığının kazancı da √N olur. Kısa karelerin üstünlüğü, her birinde yıldızın nokta kalmasıdır. Ama yıldızlar kareden kareye kaydığı için kareler üst üste konmadan önce hizalanmalıdır. Google'ın gece modu kareleri el titremesini ve sahnedeki hareketi telafi edecek biçimde hizalayıp sonra ortalar; tek tek kareler oldukça kumlu olsa da birleşik görüntü çok daha temiz görünür.",
         "Kent göğünde yığınlamanın önemi daha da büyüktür. Ataşehir'de her pikselin üstüne yalnızca yıldızın değil, ışık kirliliğinin parlattığı gökyüzünün fotonları da düşer. Bu fotonlar da kendi kareköklerince gürültü getirir; yıldızın sinyali aynı kalırken gürültü büyür. Aşağıdaki örnekte göreceğin gibi kent göğünde aynı temizliğe ulaşmak için karanlık bir gökyüzündekinden birkaç kat fazla kare gerekir. Yığınlamanın bir yan yararı daha var: bir karede uçak, uydu, sarsıntı ya da bulut varsa yalnızca o kareyi dışarıda bırakırsın; tek uzun pozda ise bütün çekim gider.",
         "Bu düşünce, Royal Museums Greenwich'in yıldız izi için verdiği öğütle de örtüşür: tek uzun poz kumlu olur, çok sayıda kısa poz daha iyidir. Yıldız izinde kareler hizalanmaz, olduğu gibi birleştirilir ve kayma bu kez istenen sonuçtur; nokta yıldız isteyen derin gök çekiminde ise kareler yıldızlara göre hizalanır. Aynı ham malzemeden, birleştirme biçimine göre iki farklı fotoğraf çıkar."
@@ -170,7 +170,7 @@
       ],
       "ornek": {
         "baslik": "Örnek: Google'ın sayılarını sağlamak",
-        "metin": "1. adım: Toplam süre 15 kare × 16 saniye = 240 saniye = 4 dakika; yazıdaki Pixel 4 değeri. 2. adım: Vizör saniyede en az 15 kez yenileniyor: bir kare en çok 1 ÷ 15 ≈ 0,066 saniye. 16 ÷ 0,066 ≈ 242; yazının 'yaklaşık 250 kat' dediği oran. 3. adım: Bu dersin 24 mm eşdeğeri varsayımıyla 16 saniyede gök ekvatorundaki bir yıldız 16 × 15,04 ≈ 241 yay saniyesi kayar: 241 ÷ 74,4 ≈ 3,2 piksel. 4. adım: 15 karenin yığını, foton gürültüsü açısından tek kareye göre √15 ≈ 3,9 kat temizlik verir. Sonuç: Google'ın seçtiği 16 saniye, yıldızların yaklaşık 3 piksel içinde kaldığı, bu derste k = 3 dediğimiz ölçüte denk düşüyor; 15 kare ise yaklaşık 4 katlık bir temizlik kazancı sağlıyor."
+        "metin": "1. adım: Toplam süre 15 kare × 16 saniye = 240 saniye = 4 dakika; yazıdaki Pixel 4 değeri. 2. adım: Vizör saniyede en az 15 kez yenileniyor: bir kare en çok 1 ÷ 15 ≈ 0,066 saniye. 16 ÷ 0,066 ≈ 242; yazının 'yaklaşık 250 kat' dediği oran. 3. adım: Bu dersin 24 mm eşdeğeri varsayımıyla 16 saniyede gök ekvatorundaki bir yıldız 16 × 15,04 ≈ 241 yay saniyesi kayar: 241 ÷ 74,4 ≈ 3,2 piksel. 4. adım: 15 karenin yığını, foton gürültüsü açısından tek kareye göre √15 ≈ 3,9 kat temizlik verir. Sonuç: Google'ın deneyle bulduğu 16 saniye, bu dersin varsayımlı telefonunda yıldızların yaklaşık 3 piksel kaydığı k = 3 ölçütüne denk düşüyor (Pixel'in kendi piksel ölçeği farklıdır); 15 kare ise yaklaşık 4 katlık bir temizlik kazancı sağlıyor."
       },
       "akilda": "Gece modu yerleşik bir yığınlamadır. Google'ın Pixel astrofotoğraf kipi: en çok 15 kare × 16 saniye (Pixel 4'te toplam 4 dakika), hizalama ve ortalama, sıcak piksel düzeltme, yapay zekâyla gökyüzünü bulup karartma. Sonuç güzel bir görüntüdür, ölçüm değildir."
     },
@@ -179,7 +179,7 @@
       "paragraflar": [
         "Telefonun çoğu zaman sana JPEG denen bir dosya verir: kameranın kendi zevkine göre işlediği, sıkıştırdığı ve 8 bitlik renk derinliğine indirdiği bir görüntü. RAW ise sensörden gelen veriye çok daha yakın, işlenmemiş ham bir dosyadır. Nikonians'taki teknik yazıya göre 8 bitlik bir JPEG her renk kanalında yalnızca 256 farklı ton tutabilir; 12 bitlik bir RAW kanal başına 4096, 14 bitlik bir RAW ise 16.384 ton saklar. Yazar, 14 bitlik bir RAW'ı bilgisayarda 8 bitlik JPEG'e çevirmenin kameranın doğrudan ürettiği 8 bitlik JPEG'den daha iyi sonuç verdiğini, çünkü düzenlerken daha çok ton basamağı olduğunu ve şeritlenmenin azaldığını yazar.",
         "Gökyüzü fotoğrafında bu fark neden büyür? Sönük yıldızlar ve gök parıltısı görüntünün en karanlık tonlarında, birbirine çok yakın değerlerde durur. Onları görünür kılmak için koyu tonları çok güçlü biçimde germen gerekir. Elinde birkaç ton basamağı varsa germe, aradaki farkı büyütmez, basamakları büyütür: düzgün bir gökyüzü yerine merdiven gibi şeritler görürsün. Aynı yazı JPEG'in sıkıştırma kayıpları yüzünden defalarca düzenlenip yeniden kaydedildikçe bozulduğunu da belirtir. NASA'nın yazısındaki cümle burada anlam kazanır: işleme, bütün astrofotoğrafçılığın sırrıdır. İşleyeceğin şeyin ham olması gerekir.",
-        "Işık kirliliğinin rengi de bir nedendir. PhotographyLife'taki ışık kirliliği yazısına göre şehir ışıkları görüntüye çoğu zaman turuncu ya da sarı bir renk katar; bu beyaz dengesini ayarlayarak düzeltilebilir. Beyaz dengesi, görüntüdeki renklerin hangi ışık kaynağına göre nötr kabul edileceğini belirleyen ayardır. JPEG'de renk ve ton kararları kamerada verilmiş, tonlar kanal başına 256 basamağa indirilmiştir; RAW'da çok daha fazla basamak olduğu için bu düzeltmeleri sonradan daha az bozulmayla yapabilirsin.",
+        "Işık kirliliğinin rengi de bir nedendir. PhotographyTalk'taki ışık kirliliği yazısına göre şehir ışıkları görüntüye çoğu zaman turuncu ya da sarı bir renk katar; bu beyaz dengesini ayarlayarak düzeltilebilir. Beyaz dengesi, görüntüdeki renklerin hangi ışık kaynağına göre nötr kabul edileceğini belirleyen ayardır. JPEG'de renk ve ton kararları kamerada verilmiş, tonlar kanal başına 256 basamağa indirilmiştir; RAW'da çok daha fazla basamak olduğu için bu düzeltmeleri sonradan daha az bozulmayla yapabilirsin.",
         "Pratikte: telefonunun kamera uygulamasında el ile ya da profesyonel kipte bir RAW seçeneği varsa aç ve JPEG ile birlikte kaydet. RAW dosyasını işlemek için bir düzenleme programı gerekir; NASA'nın yazısı da ayrıntıyı ortaya çıkarmak için bir uygulama ya da bilgisayar programı önerir, ad vermez. Telefonunun gece modunun RAW kaydedip kaydetmediği, kaydediyorsa yığınlanmış mı yoksa tek kare mi olduğu üreticiye göre değişir; bunu kendi telefonunda denemen gerekir, genel bir kaynak bulamadım."
       ],
       "ornek": {
@@ -192,8 +192,8 @@
       "baslik": "Işık kirliliğiyle baş etmek: Ataşehir'den çekim",
       "paragraflar": [
         "Işık kirliliğini balkondan kaldıramazsın, ama etkisini azaltabilirsin. Birinci kural yukarı bakmaktır. Bortle ölçeğinin Wikipedia tablosu, parlak banliyö göğünde ufkun 35° yukarısına kadar gökyüzünün grimsi beyaz parladığını söyler (1. ders). Gök parıltısı ufka yakın en yoğundur. Kadrajını mümkün olduğunca yükseğe, başucuna yakın yerlere kur; ön plan istiyorsan bunu ufku kadrajın en altına sıkıştırarak yap.",
-        "İkinci kural zamanlamadır. PhotographyLife'a göre açık ve Ay'sız geceler ideal; RMG de gün batımından iki saat kadar sonrasını ve Ay'ın doğuş saatini dikkate almayı öğütler. Ay hedefin değilse onun ufkun altında olduğu saatleri seç. Gecenin farklı saatlerinde göğün ne kadar değiştiğini Ataşehir için ölçen bir kaynak bulamadım; 1. dersteki sınır kadir yöntemiyle iki ayrı saatte kendin karşılaştırabilirsin.",
-        "Üçüncü kural ayarlardır. Kentte gökyüzü kısa sürede aydınlanır; uzun bir pozda gök tonu açılır ve sönük yıldızlar onun içinde boğulur. PhotographyLife biraz düşük ISO'nun gürültüyü ve aşırı pozlamayı azaltabileceğini, birkaç kısa poz çekip sonra birleştirmenin gürültüyü azalttığını söyler. Yani daha kısa ve daha çok kare: yığınlama bölümünün kentteki sürümü. Sokak lambalarını kadrajın dışında tut; Google'ın yazısı da uzaktaki sokak lambalarını pozlamayı zorlaştıran parlak kaynaklar arasında sayar.",
+        "İkinci kural zamanlamadır. PhotographyTalk'a göre açık ve Ay'sız geceler ideal; RMG de gün batımından iki saat kadar sonrasını ve Ay'ın doğuş saatini dikkate almayı öğütler. Ay hedefin değilse onun ufkun altında olduğu saatleri seç. Gecenin farklı saatlerinde göğün ne kadar değiştiğini Ataşehir için ölçen bir kaynak bulamadım; 1. dersteki sınır kadir yöntemiyle iki ayrı saatte kendin karşılaştırabilirsin.",
+        "Üçüncü kural ayarlardır. Kentte gökyüzü kısa sürede aydınlanır; uzun bir pozda gök tonu açılır ve sönük yıldızlar onun içinde boğulur. PhotographyTalk biraz düşük ISO'nun gürültüyü ve aşırı pozlamayı azaltabileceğini, birkaç kısa poz çekip sonra birleştirmenin gürültüyü azalttığını söyler. Yani daha kısa ve daha çok kare: yığınlama bölümünün kentteki sürümü. Sokak lambalarını kadrajın dışında tut; Google'ın yazısı da uzaktaki sokak lambalarını pozlamayı zorlaştıran parlak kaynaklar arasında sayar.",
         "Dördüncü kural işlemedir. Aynı yazıya göre ışık kirliliği görüntüye turuncu ya da sarı bir renk katar ve bu beyaz dengesiyle düzeltilebilir; ışık kirliliğinin yarattığı parlaklık eğimi, yani karenin bir kenarından öbürüne doğru açılan gök tonu da düzenleme programlarında giderilebilir. Işık kirliliği süzgeçleri de vardır; yapay ışık kaynaklarının belirli dalga boylarını keserler. Bu derste ayrıntısına girmiyorum ve ürün önermiyorum. Son olarak beklentini doğru kur: Samanyolu ve sönük bulutsular Ataşehir'in değil karanlık bir gökyüzünün hedefidir. Kentte Ay, gezegenler, parlak yıldızlar, takımyıldız biçimleri, uydular ve yıldız izleri seni yeterince meşgul eder."
       ],
       "akilda": "Kentte: yukarı çek (ufkun 35°'ye kadarı en parlak), Ay'sız saatleri seç, kısa ve çok kare çek, ISO'yu düşük tut, sokak lambasını kadraj dışında bırak; turuncu rengi beyaz dengesiyle, eğimi işlemede gider. Samanyolu karanlık gökyüzünün işidir."
@@ -237,7 +237,7 @@
     {
       "ad": "Nokta yıldız için en uzun poz",
       "ifade": "t ≈ k × piksel ölçeği ÷ (15,04 × cos δ)",
-      "aciklama": "t saniye, piksel ölçeği yay saniyesi, k izin verilen kayma (piksel). k = 1 katı ölçüt; 500 kuralı ve gece modu sınırları kabaca k = 3–4'e denk gelir. Mercek kusurları, kırınım ve görüntü işlemeyi hesaba katmaz."
+      "aciklama": "Bu derste türetilmiştir, kaynaktan alınmış bir kural değildir: süre = kayma ÷ kayma hızı. t saniye, piksel ölçeği yay saniyesi, k izin verilen kayma (piksel). k = 1 katı ölçüt; dersin varsayımlı telefonunda 500 kuralı ve Google'ın 16 sn sınırı kabaca k = 3–4'e denk gelir. Karenin ortası için geçerlidir; mercek kusurları, kırınım, atmosfer ve görüntü işlemeyi hesaba katmaz."
     },
     {
       "ad": "500 kuralı",
@@ -259,166 +259,202 @@
     {
       "deger": "23,9345 saat → saatte 15,04°",
       "aciklama": "Dünya'nın yıldızlara göre dönme süresi ve bundan çıkan gök kayma hızı (saniyede 15,04 yay saniyesi, gök ekvatorunda)",
-      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html"
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html",
+      "kid": "d24n0"
     },
     {
       "deger": "43,27 mm",
       "aciklama": "35 mm eşdeğeri hesabında kullanılan 36 × 24 mm film karesinin köşegeni (CIPA)",
-      "kaynak_url": "https://en.wikipedia.org/wiki/35_mm_equivalent_focal_length"
+      "kaynak_url": "https://en.wikipedia.org/wiki/35_mm_equivalent_focal_length",
+      "kid": "d24n1"
     },
     {
       "deger": "f/11 ve 1 bölü ISO saniye",
       "aciklama": "Looney 11 kuralı: Ay yüzeyi için başlangıç pozlaması; güneşli 16 kuralından bir durak fazla",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Looney_11_rule"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Looney_11_rule",
+      "kid": "d24n2"
     },
     {
       "deger": "1896″",
       "aciklama": "Ay'ın ortalama görünür çapı (yaklaşık 0,53°)",
-      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html"
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html",
+      "kid": "d24n3"
     },
     {
       "deger": "30,5–50,1″",
       "aciklama": "Jüpiter'in Dünya'dan görünür çapı (en küçük–en büyük)",
-      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/jupiterfact.html"
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/jupiterfact.html",
+      "kid": "d24n4"
     },
     {
       "deger": "500.000'e 1'den fazla",
       "aciklama": "Ay ile Ay'la aydınlanan manzara arasındaki parlaklık farkı; tek karede ikisi birden yakalanamıyor",
-      "kaynak_url": "https://research.google/blog/astrophotography-with-night-sight-on-pixel-phones/"
+      "kaynak_url": "https://research.google/blog/astrophotography-with-night-sight-on-pixel-phones/",
+      "kid": "d24n5"
     },
     {
       "deger": "15 kare × 16 saniye = 4 dakika",
       "aciklama": "Google Pixel 4 gece modunun astrofotoğraf kipinde kare sayısı ve kare süresi sınırları",
-      "kaynak_url": "https://research.google/blog/astrophotography-with-night-sight-on-pixel-phones/"
+      "kaynak_url": "https://research.google/blog/astrophotography-with-night-sight-on-pixel-phones/",
+      "kid": "d24n6"
     },
     {
       "deger": "9 kare → 3 kat, 100 kare → 10 kat",
       "aciklama": "Yığınlamada sinyal-gürültü oranı kare sayısının karekökü kadar artar",
-      "kaynak_url": "https://petapixel.com/2020/10/28/eli5-this-is-how-image-stacking-reduces-noise-and-recovers-signal"
+      "kaynak_url": "https://petapixel.com/2020/10/28/eli5-this-is-how-image-stacking-reduces-noise-and-recovers-signal",
+      "kid": "d24n7"
     },
     {
       "deger": "256 / 4096 / 16.384",
       "aciklama": "8 bit JPEG, 12 bit RAW ve 14 bit RAW'ın kanal başına ton sayısı",
-      "kaynak_url": "https://www.nikonians.org/reviews/how-many-ldquobitsrdquo-do-i-needmdash8-12-or-14"
+      "kaynak_url": "https://www.nikonians.org/reviews/how-many-ldquobitsrdquo-do-i-needmdash8-12-or-14",
+      "kid": "d24n8"
     },
     {
       "deger": "%0,5 → yaklaşık %20",
       "aciklama": "ZTF'nin alacakaranlık görüntülerinde Starlink izi bulunan payı, 2019'dan 2021'e",
-      "kaynak_url": "https://www.pma.caltech.edu/news/palomar-survey-instrument-analyzes-impact-of-starlink-satellites"
+      "kaynak_url": "https://www.pma.caltech.edu/news/palomar-survey-instrument-analyzes-impact-of-starlink-satellites",
+      "kid": "d24n9"
     },
     {
       "deger": "7 kadir",
       "aciklama": "SATCON1'in 550 km'deki alçak yörünge uyduları için önerdiği parlaklık sınırı (bundan sönük olmalı)",
-      "kaynak_url": "https://planet4589.org/jcm/pubs/space/papers/2020/SATCON1-Report.pdf"
+      "kaynak_url": "https://planet4589.org/jcm/pubs/space/papers/2020/SATCON1-Report.pdf",
+      "kid": "d24n10"
     },
     {
       "deger": "100 × 30 saniye",
       "aciklama": "RMG'nin yıldız izi için önerdiği başlangıç: 30 saniyelik 100 ya da daha fazla kare, ISO 200–600",
-      "kaynak_url": "https://www.rmg.co.uk/how-photograph-star-trails"
+      "kaynak_url": "https://www.rmg.co.uk/how-photograph-star-trails",
+      "kid": "d24n11"
     }
   ],
   "sozluk": [
     {
       "terim": "pozlama",
-      "tanim": "Bir fotoğraf çekilirken sensöre düşüp kaydedilen ışığın miktarı; diyafram, süre ve ISO ile ayarlanır."
+      "tanim": "Bir fotoğraf çekilirken sensöre düşüp kaydedilen ışığın miktarı; diyafram, süre ve ISO ile ayarlanır.",
+      "kid": "d24t0"
     },
     {
       "terim": "diyafram",
-      "tanim": "Kamera lensinde ışığın geçtiği açıklık; ne kadar genişse birim zamanda o kadar çok ışık geçer."
+      "tanim": "Kamera lensinde ışığın geçtiği açıklık; ne kadar genişse birim zamanda o kadar çok ışık geçer.",
+      "kid": "d24t1"
     },
     {
       "terim": "f-sayısı",
-      "tanim": "Odak uzaklığının açıklık çapına oranı; küçük f-sayısı geniş açıklık ve parlak görüntü demektir."
+      "tanim": "Odak uzaklığının açıklık çapına oranı; küçük f-sayısı geniş açıklık ve parlak görüntü demektir.",
+      "kid": "d24t2"
     },
     {
       "terim": "durak",
-      "tanim": "Fotoğrafçılıkta ışık miktarını iki katına çıkaran ya da yarıya indiren adım."
+      "tanim": "Fotoğrafçılıkta ışık miktarını iki katına çıkaran ya da yarıya indiren adım.",
+      "kid": "d24t3"
     },
     {
       "terim": "enstantane",
-      "tanim": "Deklanşörün açık kalıp sensörün ışık topladığı süre."
+      "tanim": "Deklanşörün açık kalıp sensörün ışık topladığı süre.",
+      "kid": "d24t4"
     },
     {
       "terim": "ISO",
-      "tanim": "Kameranın duyarlılık ayarı; yükseltmek görüntüyü aydınlatır ama gürültüyü de görünür kılar."
+      "tanim": "Kameranın duyarlılık ayarı; yükseltmek görüntüyü aydınlatır ama gürültüyü de görünür kılar.",
+      "kid": "d24t5"
     },
     {
       "terim": "35 mm eşdeğeri odak uzaklığı",
-      "tanim": "Bir lens-sensör ikilisinin görüş açısını, 36 × 24 mm'lik film karesinde aynı açıyı verecek odak uzaklığıyla anlatan değer."
+      "tanim": "Bir lens-sensör ikilisinin görüş açısını, 36 × 24 mm'lik film karesinde aynı açıyı verecek odak uzaklığıyla anlatan değer.",
+      "kid": "d24t6"
     },
     {
       "terim": "piksel ölçeği",
-      "tanim": "Fotoğraftaki bir pikselin gökyüzünde kapladığı açı, genellikle yay saniyesi cinsinden."
+      "tanim": "Fotoğraftaki bir pikselin gökyüzünde kapladığı açı, genellikle yay saniyesi cinsinden.",
+      "kid": "d24t7"
     },
     {
       "terim": "dinamik aralık",
-      "tanim": "Bir sensörün aynı karede kaydedebildiği en parlak ve en sönük ışık arasındaki aralık."
+      "tanim": "Bir sensörün aynı karede kaydedebildiği en parlak ve en sönük ışık arasındaki aralık.",
+      "kid": "d24t8"
     },
     {
       "terim": "afokal fotoğraf",
-      "tanim": "Kamerayı lensiyle birlikte dürbün ya da teleskobun göz merceğinin önüne koyarak, gözün yerine kamerayla çekim yapma yöntemi."
+      "tanim": "Kamerayı lensiyle birlikte dürbün ya da teleskobun göz merceğinin önüne koyarak, gözün yerine kamerayla çekim yapma yöntemi.",
+      "kid": "d24t9"
     },
     {
       "terim": "vinyetleme",
-      "tanim": "Görüntünün kenarlarına doğru kararması; afokal çekimde dairesel bir çerçeve olarak görünür."
+      "tanim": "Görüntünün kenarlarına doğru kararması; afokal çekimde dairesel bir çerçeve olarak görünür.",
+      "kid": "d24t10"
     },
     {
       "terim": "görüş",
-      "tanim": "Atmosferdeki çalkantının gök cisimlerinin görüntüsünü bulanıklaştırması ve titretmesi; yay saniyesiyle ölçülür."
+      "tanim": "Atmosferdeki çalkantının gök cisimlerinin görüntüsünü bulanıklaştırması ve titretmesi; yay saniyesiyle ölçülür.",
+      "kid": "d24t11"
     },
     {
       "terim": "şanslı görüntüleme",
-      "tanim": "Çok sayıda kısa kare çekip atmosferin sakin olduğu anlara denk gelen en keskinlerini seçerek birleştirme yöntemi."
+      "tanim": "Çok sayıda kısa kare çekip atmosferin sakin olduğu anlara denk gelen en keskinlerini seçerek birleştirme yöntemi.",
+      "kid": "d24t12"
     },
     {
       "terim": "500 kuralı",
-      "tanim": "Sabit kamerada yıldızların çizgiye dönmemesi için en uzun poz süresini 500 bölü eşdeğer odak uzaklığı olarak veren kaba kural."
+      "tanim": "Sabit kamerada yıldızların çizgiye dönmemesi için en uzun poz süresini 500 bölü eşdeğer odak uzaklığı olarak veren kaba kural.",
+      "kid": "d24t13"
     },
     {
       "terim": "NPF kuralı",
-      "tanim": "Frédéric Michaud'nun geliştirdiği, en uzun poz süresini diyafram, piksel aralığı, odak uzaklığı ve dik açıklıkla hesaplayan daha ayrıntılı kural."
+      "tanim": "Frédéric Michaud'nun geliştirdiği, en uzun poz süresini diyafram, piksel aralığı, odak uzaklığı ve dik açıklıkla hesaplayan daha ayrıntılı kural.",
+      "kid": "d24t14"
     },
     {
       "terim": "yıldız izi",
-      "tanim": "Dünya'nın dönüşü yüzünden yıldızların uzun pozlamalı fotoğrafta gök kutbu çevresinde çizdiği yaylar."
+      "tanim": "Dünya'nın dönüşü yüzünden yıldızların uzun pozlamalı fotoğrafta gök kutbu çevresinde çizdiği yaylar.",
+      "kid": "d24t15"
     },
     {
       "terim": "sinyal-gürültü oranı",
-      "tanim": "Görüntüde her seferinde tekrarlanan sinyalin, rastgele dalgalanan gürültüye oranı; büyüdükçe görüntü temizleşir."
+      "tanim": "Görüntüde her seferinde tekrarlanan sinyalin, rastgele dalgalanan gürültüye oranı; büyüdükçe görüntü temizleşir.",
+      "kid": "d24t16"
     },
     {
       "terim": "foton gürültüsü",
-      "tanim": "Gelen foton sayısının doğal rastgeleliğinden kaynaklanan, sinyalin kareköküne eşit gürültü."
+      "tanim": "Gelen foton sayısının doğal rastgeleliğinden kaynaklanan, sinyalin kareköküne eşit gürültü.",
+      "kid": "d24t17"
     },
     {
       "terim": "karanlık akım",
-      "tanim": "Sensörde ışık yokken bile ısı yüzünden oluşan sahte sinyal; uzun pozlarda ve sıcakta artar."
+      "tanim": "Sensörde ışık yokken bile ısı yüzünden oluşan sahte sinyal; uzun pozlarda ve sıcakta artar.",
+      "kid": "d24t18"
     },
     {
       "terim": "sıcak piksel",
-      "tanim": "Çevresindeki piksellerden sürekli daha parlak değer veren kusurlu ya da ısıya duyarlı piksel."
+      "tanim": "Çevresindeki piksellerden sürekli daha parlak değer veren kusurlu ya da ısıya duyarlı piksel.",
+      "kid": "d24t19"
     },
     {
       "terim": "karanlık kare",
-      "tanim": "Lens kapalıyken aynı ayarlarla çekilen ve görüntüden ısıl sinyali çıkarmak için kullanılan kare."
+      "tanim": "Lens kapalıyken aynı ayarlarla çekilen ve görüntüden ısıl sinyali çıkarmak için kullanılan kare.",
+      "kid": "d24t20"
     },
     {
       "terim": "görüntü yığınlama",
-      "tanim": "Aynı hedefin birçok karesini hizalayıp ortalayarak gürültüsü daha düşük tek bir görüntü elde etme yöntemi."
+      "tanim": "Aynı hedefin birçok karesini hizalayıp ortalayarak gürültüsü daha düşük tek bir görüntü elde etme yöntemi.",
+      "kid": "d24t21"
     },
     {
       "terim": "RAW",
-      "tanim": "Sensör verisini kamerada işlenip sıkıştırılmadan, çok daha fazla ton basamağıyla saklayan ham fotoğraf dosyası."
+      "tanim": "Sensör verisini kamerada işlenip sıkıştırılmadan, çok daha fazla ton basamağıyla saklayan ham fotoğraf dosyası.",
+      "kid": "d24t22"
     },
     {
       "terim": "beyaz dengesi",
-      "tanim": "Görüntüdeki renklerin hangi ışık kaynağına göre nötr kabul edileceğini belirleyen renk ayarı."
+      "tanim": "Görüntüdeki renklerin hangi ışık kaynağına göre nötr kabul edileceğini belirleyen renk ayarı.",
+      "kid": "d24t23"
     }
   ],
   "defter_notu": [
     "Pozlama üçlüsü: diyafram (f-sayısı = f ÷ D), süre, ISO. 1 durak = ışık × 2. Telefonda diyafram çoğu zaman sabit: düğmeler süre ve ISO.",
     "Piksel ölçeği ≈ 206.265 × (34,6 mm ÷ piksel eni) ÷ eşdeğer odak. 24 mm, 4000 piksel → ≈ 74″. Ay (1896″) ≈ 25 piksel.",
-    "Ay: Looney 11 → f/11, 1 bölü ISO saniye. Her 1/8 evre azalışı +1 durak. Otomatik ölçüm karanlık göğü okur, Ay'ı yakar: pozlamayı düşür.",
+    "Ay: Looney 11 → f/11, 1 bölü ISO saniye. İnceldikçe pozlama artar (tablo: dolunay 1/250 → dördün 1/60 → ince hilal 1/15). Otomatik ölçüm karanlık göğü okur, Ay'ı yakar: pozlamayı düşür.",
     "Afokal: telefon lensi göz merceğine yapışık. 7× → 24 mm ≈ 168 mm, ölçek ≈ 10,6″. Ay ≈ 178 piksel, Jüpiter ≤ 4,7 piksel.",
     "Gök kayması: 15,04″ her saniye × cos δ. İstanbul'da kuzey gök kutbu kuzeyde, 41° yükseklikte.",
     "En uzun poz ≈ k × ölçek ÷ (15,04 × cos δ). 500 kuralı (500 ÷ f) fazla hoşgörülü: 24 mm'de 20,8 sn → ekvatorda ≈ 4 piksel iz.",
@@ -430,55 +466,68 @@
   "sorular": [
     {
       "soru": "Telefonla çektiğin dolunay neden çoğu zaman bembeyaz bir leke olarak çıkar, nasıl düzeltirsin?",
-      "cevap": "Ay karenin çok küçük bir parçası olduğu için ışık ölçer büyük ölçüde karanlık gökyüzünü okur ve onu griye çekmek için uzun pozlar; Ay fazla pozlanır. Pozlamayı Ay'a göre ayarlatıp el ile kipe geçmek ya da ISO'yu ve süreyi Ay'ın diski yanmayana kadar düşürmek gerekir."
+      "cevap": "Ay karenin çok küçük bir parçası olduğu için ışık ölçer büyük ölçüde karanlık gökyüzünü okur ve onu griye çekmek için uzun pozlar; Ay fazla pozlanır. Pozlamayı Ay'a göre ayarlatıp el ile kipe geçmek ya da ISO'yu ve süreyi Ay'ın diski yanmayana kadar düşürmek gerekir.",
+      "kid": "d24s0"
     },
     {
       "soru": "f/2,8'den f/5,6'ya geçersen ışık kaç kat azalır, aynı pozlama için süreyi nasıl değiştirmelisin?",
-      "cevap": "(5,6 ÷ 2,8)² = 4, yani ışık 4 kat azalır; bu 2 duraktır. Aynı pozlama için süreyi 4 katına çıkarmalısın (ya da ISO'yu 4 katına)."
+      "cevap": "(5,6 ÷ 2,8)² = 4, yani ışık 4 kat azalır; bu 2 duraktır. Aynı pozlama için süreyi 4 katına çıkarmalısın (ya da ISO'yu 4 katına).",
+      "kid": "d24s1"
     },
     {
       "soru": "Looney 11 kuralına göre ISO 200'de Ay için başlangıç pozlaması nedir? Dördün Ay için ne değişir?",
-      "cevap": "f/11 ve 1/200 saniye (ya da 1/250). Lodriguss'un tablosuna göre dördün, dolunaydan iki durak fazla pozlama ister (1/250 yerine 1/60 saniye, aynı ISO ve diyaframda); aydınlık kısmın her sekizde bir azalışı bir durak demektir."
+      "cevap": "f/11 ve 1/200 saniye (ya da 1/250). Lodriguss'un tablosuna göre dördün, dolunaydan iki durak fazla pozlama ister (1/250 yerine 1/60 saniye, aynı ISO ve diyaframda); tablonun her evre adımı bir duraktır.",
+      "kid": "d24s2"
     },
     {
       "soru": "35 mm eşdeğeri 24 mm olan ve 4000 piksel genişliğinde fotoğraf veren bir telefonda bir piksel gökte yaklaşık kaç yay saniyesidir? Ay kaç piksel çıkar?",
-      "cevap": "Eşdeğer sensör eni ≈ 34,6 mm; piksel ≈ 0,00865 mm; 0,00865 ÷ 24 × 206.265 ≈ 74 yay saniyesi. Ay'ın ortalama çapı 1896 yay saniyesi olduğundan 1896 ÷ 74 ≈ 25 piksel."
+      "cevap": "Eşdeğer sensör eni ≈ 34,6 mm; piksel ≈ 0,00865 mm; 0,00865 ÷ 24 × 206.265 ≈ 74 yay saniyesi. Ay'ın ortalama çapı 1896 yay saniyesi olduğundan 1896 ÷ 74 ≈ 25 piksel.",
+      "kid": "d24s3"
     },
     {
       "soru": "Afokal fotoğraf nedir ve 7×50 dürbün telefonun piksel ölçeğini nasıl değiştirir?",
-      "cevap": "Kamerayı lensiyle birlikte dürbünün göz merceğinin önüne koyup gözün yerine kamerayla çekmektir. Dürbün açıları 7 ile çarptığı için eşdeğer odak kabaca 7 katına çıkar (24 mm → 168 mm) ve piksel ölçeği 74'ten yaklaşık 10,6 yay saniyesine iner; Ay 25 yerine yaklaşık 178 piksel olur."
+      "cevap": "Kamerayı lensiyle birlikte dürbünün göz merceğinin önüne koyup gözün yerine kamerayla çekmektir. Dürbün açıları 7 ile çarptığı için eşdeğer odak kabaca 7 katına çıkar (24 mm → 168 mm) ve piksel ölçeği 74'ten yaklaşık 10,6 yay saniyesine iner; Ay 25 yerine yaklaşık 178 piksel olur.",
+      "kid": "d24s4"
     },
     {
       "soru": "Sabit bir dayanakta neden kuzeye bakarken güneye bakarkenkinden daha uzun poz verebilirsin?",
-      "cevap": "Yıldızların kayma hızı 15,04 × cos δ ile orantılıdır. Kuzeyde gök kutbuna yakın yıldızların dik açıklığı büyük, kosinüsü küçüktür; küçük çemberler çizip yavaş kayarlar. Güneydeki gök ekvatoru yıldızları en hızlı kayar. δ = 80° için hız ekvatordakinin yaklaşık 0,17'si, izin verilen poz yaklaşık 6 kat uzundur."
+      "cevap": "Yıldızların kayma hızı 15,04 × cos δ ile orantılıdır. Kuzeyde gök kutbuna yakın yıldızların dik açıklığı büyük, kosinüsü küçüktür; küçük çemberler çizip yavaş kayarlar. Güneydeki gök ekvatoru yıldızları en hızlı kayar. δ = 80° için hız ekvatordakinin yaklaşık 0,17'si, izin verilen poz yaklaşık 6 kat uzundur.",
+      "kid": "d24s5"
     },
     {
       "soru": "500 kuralının iki zayıf yanı nedir? 24 mm eşdeğeri telefonda ne verir ve gök ekvatorunda kaç piksel iz bırakır?",
-      "cevap": "Baktığın yönü (dik açıklığı) ve piksel boyutunu hesaba katmaz ve kaynaklara göre fazla hoşgörülüdür; baskı boyutu için kurulmuş bir kuraldır. 500 ÷ 24 ≈ 20,8 saniye verir; bu sürede ekvator yıldızı ≈ 313 yay saniyesi, yani 74″'lik piksellerde ≈ 4 piksel kayar."
+      "cevap": "Baktığın yönü (dik açıklığı) ve piksel boyutunu hesaba katmaz ve kaynaklara göre fazla hoşgörülüdür; baskı boyutu için kurulmuş bir kuraldır. 500 ÷ 24 ≈ 20,8 saniye verir; bu sürede ekvator yıldızı ≈ 313 yay saniyesi, yani 74″'lik piksellerde ≈ 4 piksel kayar.",
+      "kid": "d24s6"
     },
     {
       "soru": "Bir yıldızdan 400 foton topladın. Foton gürültüsü ve sinyal-gürültü oranı nedir? 25 kare yığarsan oran ne olur?",
-      "cevap": "Gürültü √400 = 20, oran 400 ÷ 20 = 20. 25 kare yığınca oran √25 = 5 kat artar: 100."
+      "cevap": "Gürültü √400 = 20, oran 400 ÷ 20 = 20. 25 kare yığınca oran √25 = 5 kat artar: 100.",
+      "kid": "d24s7"
     },
     {
       "soru": "Kent göğünde aynı yıldız için neden daha çok kare çekmen gerekir?",
-      "cevap": "Pikselin üstüne yıldızın yanında gök parıltısının fotonları da düşer ve onlar da kendi kareköklerince gürültü getirir; gürültü √(yıldız + gök) olur. Dersin örneğinde gökten 3600 foton gelince oran 14,1'den 6,3'e düştü ve aynı temizlik için yaklaşık 5 kat kare gerekti."
+      "cevap": "Pikselin üstüne yıldızın yanında gök parıltısının fotonları da düşer ve onlar da kendi kareköklerince gürültü getirir; gürültü √(yıldız + gök) olur. Dersin örneğinde gökten 3600 foton gelince oran 14,1'den 6,3'e düştü ve aynı temizlik için yaklaşık 5 kat kare gerekti.",
+      "kid": "d24s8"
     },
     {
       "soru": "Google'ın Pixel gece modu tek bir karenin süresini neden 16 saniyeyle sınırlıyor? Bu sayı dersteki kuralla tutarlı mı?",
-      "cevap": "Daha uzun karelerde yıldızlar kısa çizgilere döner ve yanlış görünür. 24 mm eşdeğerinde 16 saniyede gök ekvatorundaki yıldız ≈ 241 yay saniyesi, yani ≈ 3 piksel kayar; dersteki k = 3 ölçütüyle uyumlu."
+      "cevap": "Daha uzun karelerde yıldızlar kısa çizgilere döner ve yanlış görünür; Google sınırı gerçek gece gökyüzü çekimleriyle buldu. 24 mm eşdeğerinde 16 saniyede gök ekvatorundaki yıldız ≈ 241 yay saniyesi, yani ≈ 3 piksel kayar; dersteki k = 3 ölçütüyle kabaca uyumlu, ama Pixel'in değerleri dersin varsayımından farklıdır.",
+      "kid": "d24s9"
     },
     {
       "soru": "Gece modu fotoğrafı neden bir ölçüm olarak kullanılmamalı?",
-      "cevap": "Kareler hizalanıp ortalanmakla kalmaz; Google'ın anlattığı modda bir sinir ağı gökyüzünü bulur, bilerek karartır ve gökyüzüne özel gürültü azaltma ve karşıtlık artırımı uygular. Sonuç güzel görünmesi için işlenmiştir; iki geceyi ya da gök parlaklığını karşılaştırmak için el ile ayar ve RAW daha uygundur."
+      "cevap": "Kareler hizalanıp ortalanmakla kalmaz; Google'ın anlattığı modda bir sinir ağı gökyüzünü bulur, bilerek karartır ve gökyüzüne özel gürültü azaltma ve karşıtlık artırımı uygular. Sonuç güzel görünmesi için işlenmiştir; iki geceyi ya da gök parlaklığını karşılaştırmak için el ile ayar ve RAW daha uygundur.",
+      "kid": "d24s10"
     },
     {
       "soru": "RAW, sönük gökyüzünü işlerken neden JPEG'den üstündür?",
-      "cevap": "JPEG kanal başına 256 ton saklar, 12 bitlik RAW 4096, 14 bitlik 16.384. Sönük ayrıntı koyu tonlarda birbirine yakın değerlerde durur; onu gerince JPEG'de basamaklar şeritlere dönüşür, RAW'da ara tonlar yumuşak geçiş verir. JPEG'in sıkıştırma kayıpları da tekrar tekrar düzenlemede birikir."
+      "cevap": "JPEG kanal başına 256 ton saklar, 12 bitlik RAW 4096, 14 bitlik 16.384. Sönük ayrıntı koyu tonlarda birbirine yakın değerlerde durur; onu gerince JPEG'de basamaklar şeritlere dönüşür, RAW'da ara tonlar yumuşak geçiş verir. JPEG'in sıkıştırma kayıpları da tekrar tekrar düzenlemede birikir.",
+      "kid": "d24s11"
     },
     {
       "soru": "Uydular neden özellikle alacakaranlıkta fotoğraflara iz bırakır?",
-      "cevap": "Yerdeki gözlemci karanlıktayken yüksekteki uydular hâlâ Güneş ışığı alır. SATCON1'e göre görünürlük gün batımından astronomik alacakaranlığın sonuna kadar kabaca sabittir; gecenin ortasında alçak uydular Dünya'nın gölgesindedir, ama 600 km üstündekiler yazın bütün gece aydınlık kalabilir. ZTF'de alacakaranlık görüntülerinin 2021'de neredeyse %20'sinde Starlink izi vardı."
+      "cevap": "Yerdeki gözlemci karanlıktayken yüksekteki uydular hâlâ Güneş ışığı alır. SATCON1'e göre görünürlük gün batımından astronomik alacakaranlığın sonuna kadar kabaca sabittir; gecenin ortasında alçak uydular Dünya'nın gölgesindedir, ama 600 km üstündekiler yazın bütün gece aydınlık kalabilir. ZTF'de alacakaranlık görüntülerinin 2021'de neredeyse %20'sinde Starlink izi vardı.",
+      "kid": "d24s12"
     }
   ],
   "kaynaklar": [

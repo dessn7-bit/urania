@@ -66,7 +66,7 @@
 
   /* d7 · bölüm 3: Hubble ayar çatalı, şematik. Eliptik basıklığı E = 10 × (1 − b/a): E3 → b/a = 0,7; E7 → 0,3 (Swinburne COSMOS). */
   C.ekle('d7-hubble-catal', {
-    ders: 'd7', bolum: 3, oran: 0.68,
+    ders: 'd7', bolum: 4, oran: 0.68,
     baslik: 'Hubble\'ın ayar çatalı',
     aciklama: 'Solda sapta eliptikler yuvarlak E0\'dan basık E7\'ye dizilir; çatalın ayrıldığı yerde kolsuz, diskli lentiküler S0 durur. Üst kolda sarmallar Sa\'dan Sc\'ye, alt kolda çubuklu sarmallar SBa\'dan SBc\'ye gider: kollar gevşer, şişkinlik küçülür. Düzensizler çatalın dışındadır. Bu bir evrim sırası değildir; çizim şematiktir.',
     kaynak: [
@@ -123,7 +123,7 @@
   /* d7 · bölüm 4: Yerel Grup, Samanyolu'ndan uzaklıklar tek doğru üzerinde (gökteki yönler farklı). Uzaklık ve çaplar ölçekli:
      Andromeda 2,5 milyon (çap 152.000), Üçgen 2,88 milyon (çap 61.100), Samanyolu çapı ≈100.000; Macellan Bulutları 160–200 bin (boyları şematik). */
   C.ekle('d7-yerel-grup', {
-    ders: 'd7', bolum: 4, oran: 0.52,
+    ders: 'd7', bolum: 5, oran: 0.52,
     baslik: 'Yerel Grup: Samanyolu\'ndan uzaklıklar',
     aciklama: 'Galaksiler Samanyolu\'ndan uzaklıklarına göre tek bir çizgiye dizildi; gökte aslında farklı yönlerdedirler. Macellan Bulutları 160.000 ile 200.000 ışık yılında hemen yanımızda, Andromeda 2,5 milyon, Üçgen Galaksisi 2,88 milyon ışık yılı ötede. Uzaklıklar ve büyük galaksilerin çapları ölçekli; Macellan Bulutlarının boyu şematik. Grubun bütün çapı, yaklaşık 17 milyon ışık yılı, bu çizginin altı katına yakındır.',
     kaynak: [
@@ -165,7 +165,7 @@
 
   /* d8 · bölüm 2: zaman çizelgesi, logaritmik zaman ekseni (saniye). 1 yıl = 3,156×10⁷ s (ders). Değerler ders metninden. */
   C.ekle('d8-zaman-cizelgesi', {
-    ders: 'd8', bolum: 2, oran: 1.14,
+    ders: 'd8', bolum: 3, oran: 1.14,
     baslik: 'Evrenin zaman çizelgesi (logaritmik)',
     aciklama: 'Zaman yukarıdan aşağı akar ve her eşit aralık on kat demektir; bu yüzden ilk saniyenin kesirleri çizginin yarısından fazlasını kaplar. Şişme saniyenin 10 üzeri eksi 33\'te, protonlar ve nötronlar 10 üzeri eksi 5 saniyede, ilk çekirdekler 10 ile 1000 saniye arasında oluşur. Yeniden birleşme yaklaşık 380.000 yılda, ilk yıldızlar birkaç yüz milyon yılda; bugün 13,8 milyar yıl.',
     kaynak: [
@@ -206,7 +206,7 @@
 
   /* d8 · bölüm 4: arka plan ışımasının sıcaklığı T = T0 × (1 + z), T0 = 2,725 K (ders). Log-log, hesaplanmış. */
   C.ekle('d8-arka-plan-sicaklik', {
-    ders: 'd8', bolum: 4, oran: 0.69,
+    ders: 'd8', bolum: 5, oran: 0.69,
     baslik: 'Evren büyüdükçe arka plan ışıması soğur',
     aciklama: 'Arka plan ışımasının sıcaklığı, evrenin o andan bu yana büyüme katıyla orantılıdır. Bugün 2,725 kelvin; MoM-z14\'ün çağında, evren 15,44 kat küçükken yaklaşık 42 kelvin; yeniden birleşmede, 1091 kat küçükken yaklaşık 2973 kelvin. İki eksen de logaritmiktir, bu yüzden ilişki düz bir çizgi olur.',
     kaynak: [
@@ -238,7 +238,7 @@
   /* d17 · bölüm 3: uzaklık merdiveni. Üst uçlar ders metninden (Astronomy.com): ıraklık birkaç on bin, Sefeid ≈50 milyon, Ia ≈10 milyar ışık yılı ve ötesi.
      Çubukların başlangıçları ve örtüşmeleri şematik. Başvuru çizgileri: Samanyolu ≈100.000 (d7), Andromeda 2,5 milyon, Başak ≈50 milyon. */
   C.ekle('d17-uzaklik-merdiveni', {
-    ders: 'd17', bolum: 3, oran: 0.7,
+    ders: 'd17', bolum: 4, oran: 0.7,
     baslik: 'Uzaklık merdiveni: basamaklar ve menzilleri',
     aciklama: 'Yatay eksen logaritmik: her çentik bin kat. Iraklık birkaç on bin ışık yılına, Sefeidler yaklaşık 50 milyon ışık yılına, yani Başak Kümesi\'ne, Ia süpernovaları 10 milyar ışık yılına ve ötesine ulaşır. Her basamak bir alttakiyle örtüştüğü yerde ayarlanır. Çubukların üst uçları dersteki menzillerdir, başlangıçları şematiktir.',
     kaynak: [
@@ -280,7 +280,7 @@
 
   /* d17 · bölüm 7: evrenin bileşimi, Planck 2018 (ders örneğinde hesaplanan yüzdeler: 4,9 / 26,4 / 68,5). */
   C.ekle('d17-bilesim', {
-    ders: 'd17', bolum: 7, oran: 0.64,
+    ders: 'd17', bolum: 10, oran: 0.64,
     baslik: 'Evrenin bileşimi: Planck 2018',
     aciklama: 'Halkanın yaklaşık yüzde 68,5\'i karanlık enerji, yüzde 26,4\'ü karanlık madde, yalnızca yüzde 4,9\'u yıldızlar, gezegenler, gaz ve bizden oluşan sıradan madde. Toplam 99,8 eder; kalan küçük boşluk modeldeki öteki küçük bileşenlerden ve yuvarlamadan gelir. NASA yuvarlak olarak yüzde 68, 27 ve 5 kullanır.',
     kaynak: [
@@ -317,7 +317,7 @@
 
   /* d17 · bölüm 8: Hubble diyagramı, v = H0 × d; Planck 2018 67,4 ve SH0ES 2022 73,04 km/s/Mpc (ders). 100 Mpc'de 6740 ve 7304 km/s (hesap). */
   C.ekle('d17-hubble-diyagrami', {
-    ders: 'd17', bolum: 8, oran: 0.68,
+    ders: 'd17', bolum: 12, oran: 0.68,
     baslik: 'Hubble diyagramı: iki eğim, iki sonuç',
     aciklama: 'Uzaklaşma hızı uzaklıkla doğru orantılı artar; eğim Hubble sabitidir. Planck\'ın erken evren değeri 67,4, uzaklık merdiveninin değeri 73,04 km/s/Mpc. 100 megaparsekte biri 6740, öteki 7304 km/s verir: fark 564 km/s, yaklaşık yüzde 8. Doğrular hesaplanmıştır, ölçüm noktası değildir.',
     kaynak: [

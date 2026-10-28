@@ -16,7 +16,7 @@
         "Bir ambulans yanından geçip uzaklaşırken sireninin sesi kalınlaşır. Işıkta da benzer bir şey olur: bizden uzaklaşan bir kaynağın ışığı daha uzun dalga boylarına, yani tayfın kırmızı ucuna doğru kayar. Buna kırmızıya kayma denir; yaklaşan kaynakta ise maviye kayma görülür (Doppler kaymasının temeli d2'de). Gökbilimciler bir galaksinin tayfında hidrojen gibi tanıdık elementlerin çizgilerini bulur ve laboratuvardaki yerleriyle karşılaştırır. Çizgiler ne kadar kaymışsa kayma o kadar büyüktür.",
         "Kaymanın ölçüsü z harfiyle gösterilir: z, gözlenen dalga boyu ile yayılan dalga boyu arasındaki farkın yayılan dalga boyuna oranıdır. Kaynak ışık hızından çok daha yavaş hareket ediyorsa z yaklaşık olarak hızın ışık hızına oranına eşittir: v ≈ c × z. Yalnız dikkat: bu yalnızca bakış doğrultusundaki hızı verir, yana doğru hareketi göstermez.",
         "Uzak galaksilerde kayma artık sıradan bir Doppler kayması gibi düşünülemez. Bu kozmolojik kırmızıya kaymada 1 + z, ışık yola çıktığından bu yana evrenin ölçeğinin kaç kat büyüdüğünü verir. Genellikle uzayın esnemesiyle ışığın dalga boyunun da esnemesi diye anlatılır; Wikipedia bu yorumun yanıltıcı olabileceğini de not eder, çünkü kayma ışığın yolu boyunca biriken çok küçük kaymaların toplamı olarak da yorumlanabilir. Pratik sonuç şu: büyük z değerlerinde hız ve uzaklık, z'den doğrudan değil, evrenin genişleme tarihine dair bir modelle hesaplanır.",
-        "Kuralın istisnaları da var ve onlar da öğretici. Andromeda Galaksisi'nin tayfı kırmızıya değil maviye kaymıştır. Vesto Slipher 1912'de Andromeda'nın Güneş Sistemi'ne göre dikine hızını tayfölçümle ölçtü. Wikipedia'ya göre Andromeda Güneş'e göre saniyede yaklaşık 300 km, Samanyolu'na göre ise yaklaşık 110 km hızla bize yaklaşıyor; z değeri yaklaşık −0,001'dir ve eksi işareti maviye kaymayı gösterir. Aynı kaynak Andromeda'yı, gözlenebilen yaklaşık 100 maviye kaymış galaksiden biri olarak anar. Bu istisnalar, kütleçekimiyle bize bağlı yakın komşulardır. Genel kuralı neden bozmadıklarını bir sonraki bölümde göreceksin.",
+        "Kuralın istisnaları da var ve onlar da öğretici. Andromeda Galaksisi'nin tayfı kırmızıya değil maviye kaymıştır. Vesto Slipher 1912'de Andromeda'nın Güneş Sistemi'ne göre dikine hızını tayfölçümle ölçtü. Wikipedia'ya göre Andromeda Güneş'e göre saniyede yaklaşık 300 km, Samanyolu'na göre ise yaklaşık 110 km hızla bize yaklaşıyor; z değeri yaklaşık −0,001'dir ve eksi işareti maviye kaymayı gösterir. Aynı kaynak Andromeda'yı, gözlenebilen yaklaşık 100 maviye kaymış galaksiden biri olarak anar. Bu istisnalar yakın galaksilerdir; kütleçekiminden gelen hızları genişlemenin etkisini bastırır. Genel kuralı neden bozmadıklarını bir sonraki bölümde göreceksin.",
         "Ölçeğin öbür ucunda çok büyük kırmızıya kaymalar var. 2025'te James Webb Uzay Teleskobu (JWST) ile tayfı alınan parlak bir galaksinin kırmızıya kayması 14,44 olarak doğrulandı. Bu durumda 1 + z = 15,44: o ışık yola çıktığında galaksiler arasındaki uzaklıklar bugünkünün yaklaşık on beşte biriydi. Işığın dalga boyları da aynı oranda uzar. Görünür ışıktaki 656,28 nm'lik H-alfa çizgisi bu galaksiden gelirken 656,28 × 15,44 ≈ 10.133 nm'ye, yani yaklaşık 10 mikrometreye, kızılötesinin derinlerine kayar. En uzak galaksileri görünür ışıkla değil kızılötesiyle aramamızın nedeni budur. Daha da büyük bir kayma var: d8'de gördüğün kozmik mikrodalga arka plan ışıması için z yaklaşık 1100'dür."
       ],
       "akilda": "Kırmızıya kayma z, dalga boyunun kesirli uzamasıdır. Küçük z'de v ≈ c × z; büyük z'de 1 + z evrenin ışık yola çıktığından beri kaç kat büyüdüğünü söyler.",
@@ -31,8 +31,8 @@
         "Uzak galaksilerin neredeyse hepsi kırmızıya kaymıştır, yani bizden uzaklaşır. Asıl şaşırtıcı olan düzendir: bir galaksi ne kadar uzaksa o kadar hızlı uzaklaşır ve hız uzaklıkla doğru orantılıdır: v = H0 × d. Orantı sabiti H0'a Hubble sabiti denir. Birimi km/s/Mpc'dir: bir galaksi bizden her megaparsek (yaklaşık 3,26 milyon ışık yılı) daha uzakta olduğunda saniyede kaç km daha hızlı uzaklaştığını söyler.",
         "Bu ilişkiyi ilk yayımlayan, Hubble'dan iki yıl önce, 1927'de Belçikalı rahip ve gökbilimci Georges Lemaître oldu; makalesi Fransızca ve az okunan bir dergideydi. Edwin Hubble'ın 1929 tarihli çalışması ilişkinin gözlemsel temeli olarak tanındı. Hubble'ın uzaklıkları Henrietta Leavitt'in Sefeid yasasına dayanıyordu; Wikipedia'ya göre Hubble bu yasayı galaksilerin kırmızıya kaymalarıyla birleştirerek evrenin genişlediğini ortaya koydu. Uluslararası Astronomi Birliği (IAU) 2018'de üyelerine elektronik oylama yaptırdı; yasanın Hubble-Lemaître yasası olarak anılması önerisi yüzde 78 oyla kabul edildi.",
         "Planck uydusunun 2018 sonuçlarına göre H0 = 67,4 ± 0,5 km/s/Mpc. Bu yasanın gücü şuradadır: tayftan z'yi ölçmek kolaydır, uzaklığı ölçmek zordur. H0 bir kez bilinirse, yakın sayılabilecek galaksilerde kırmızıya kaymadan uzaklık bulunabilir. Ama H0'ı bulmak için önce bazı galaksilerin uzaklığını başka yollarla ölçmek gerekir. İşte bu yüzden gökbilimciler uzaklık merdiveni kurar.",
-        "Hubble'ın 1929'da bulduğu sayı bugünkünden çok farklıydı. Wikipedia'ya göre 46 galaksiden çizdiği doğru yaklaşık 500 km/s/Mpc veriyordu; bu değer, uzaklık ayarındaki hatalar yüzünden bugünkü değerin çok üstündeydi. Bu sayıyla Hubble zamanı 977,8 / 500 ≈ 1,96 milyar yıl çıkar. ABD Jeoloji Araştırmaları Kurumu (USGS) Dünya'nın yaşını 4,54 milyar yıl verir. Yani o dönemin sayısı, evrenin içindeki gezegenden genç olduğunu ima ediyordu. Düzeltme yıldızların kendisinden geldi: Walter Baade iki ayrı yıldız topluluğu ve parlaklıkları farklı iki tür Sefeid olduğunu buldu; bununla yaptığı yeni hesap, Hubble'ın 1929'daki hesabını ikiye katladı. Sonraki on yıllarda Gérard de Vaucouleurs yaklaşık 100, Allan Sandage yaklaşık 50 değerini savundu; Wikipedia bunu uzun ve oldukça sert bir tartışma diye anar. Bugünkü değerler bu ikisinin arasındadır.",
-        "Andromeda'nın bize yaklaşması bu yasayla nasıl bağdaşır? Galaksiler genişlemenin yanında birbirlerinin çekimiyle de hareket eder. Wikipedia'ya göre bu ek hızlara özel hız denir ve Hubble-Lemaître yasası uygulanırken hesaba katılmaları gerekir. Andromeda yaklaşık 0,765 Mpc uzaktadır; genişlemenin bu uzaklıkta öngördüğü uzaklaşma hızı 67,4 × 0,765 ≈ 52 km/s'dir. Andromeda'nın Samanyolu'na doğru 110 km/s'lik özel hızı bundan büyüktür, bu yüzden toplamda yaklaşır. 100 Mpc ötede ise genişleme hızı 6740 km/s olur ve birkaç yüz km/s'lik özel hızlar küçük bir sapma olarak kalır. H0'ı ölçmek için uzak galaksilere bakmamızın nedeni budur."
+        "Hubble'ın 1929'da bulduğu sayı bugünkünden çok farklıydı. Wikipedia'ya göre 46 galaksiden çizdiği doğru yaklaşık 500 km/s/Mpc veriyordu; bu değer, uzaklık ayarındaki hatalar yüzünden bugünkü değerin çok üstündeydi. Bu sayıyla Hubble zamanı 977,8 / 500 ≈ 1,96 milyar yıl çıkar. ABD Jeoloji Araştırmaları Kurumu (USGS) Dünya'nın yaşını 4,54 milyar yıl verir. Yani o dönemin sayısı, evrenin içindeki gezegenden genç olduğunu ima ediyordu. Düzeltme yıldızların kendisinden geldi: Walter Baade iki ayrı yıldız topluluğu ve parlaklıkları farklı iki tür Sefeid olduğunu buldu ve 1952'de bilinen evrenin büyüklüğünü Hubble'ın 1929'daki hesabının iki katı buldu. Uzaklıklar iki katına çıkınca Hubble sabiti yarıya iner. Sonraki on yıllarda Gérard de Vaucouleurs yaklaşık 100, Allan Sandage yaklaşık 50 değerini savundu; Wikipedia bunu uzun ve oldukça sert bir tartışma diye anar. Bugünkü değerler bu ikisinin arasındadır.",
+        "Andromeda'nın bize yaklaşması bu yasayla nasıl bağdaşır? Galaksiler genişlemenin yanında birbirlerinin çekimiyle de hareket eder. Wikipedia'ya göre bu ek hızlara özel hız denir ve Hubble-Lemaître yasası uygulanırken hesaba katılmaları gerekir. Andromeda yaklaşık 0,765 Mpc uzaktadır; genişlemenin bu uzaklıkta öngördüğü uzaklaşma hızı 67,4 × 0,765 ≈ 52 km/s'dir. Andromeda'nın kütleçekiminden gelen özel hızı bu uzaklaşmayı aşar; ikisinin toplamı, Samanyolu'na göre ölçülen yaklaşık 110 km/s'lik yaklaşmadır. 100 Mpc ötede ise genişleme hızı 6740 km/s olur ve birkaç yüz km/s'lik özel hızlar küçük bir sapma olarak kalır. H0'ı ölçmek için uzak galaksilere bakmamızın nedeni budur."
       ],
       "akilda": "Hubble-Lemaître yasası: v = H0 × d. Lemaître 1927, Hubble 1929, IAU adı 2018. Planck 2018: H0 = 67,4 ± 0,5 km/s/Mpc.",
       "ornek": {
@@ -61,7 +61,7 @@
         "Sorun şu ki açılar çok küçüktür. Astronomy dergisine göre bugünkü teknolojiyle ıraklık, birkaç on bin ışık yılı uzaklıktaki yıldızlara kadar ölçülebilir; Hipparcos ve ardından Gaia uyduları Samanyolu'nu bu yolla haritaladı. Bu, galaksimizin içinde bile tam çapı kapsamaz; Andromeda gibi başka galaksiler ise çok daha uzaktadır. Merdivenin daha yukarısına çıkmak için ıraklıkla ayarlanmış başka ölçütler gerekir.",
         "Iraklığı ilk ölçen Friedrich Wilhelm Bessel oldu. Wikipedia'ya göre Giuseppe Piazzi 1804'te Kuğu takımyıldızındaki 61 Cygni'nin büyük bir öz hareketi olduğunu göstermişti; öz hareket, bir yıldızın yıllar içinde gökte yavaşça yer değiştirmesidir. Piazzi ona uçan yıldız adını verdi ve hızlı hareketin yıldızın yakın olabileceğine işaret ettiğini düşündü. Bessel, Joseph von Fraunhofer'in icat ettiği heliometre adlı aletle 1837 ve 1838'de ölçümler yaptı ve 1838'de 313,6 ± 13,6 miliyay saniyesi buldu, yani yaklaşık 0,31 yay saniyesi. Bu da 1 / 0,3136 ≈ 3,19 parsek, yaklaşık 10,4 ışık yılı demektir. Bugün kabul edilen değer 287,18 miliyay saniyesi, yani 11,36 ışık yılıdır. Yaklaşık yüz doksan yıl önceki ilk ölçüm gerçeğe yüzde 10'dan daha yakındı.",
         "61 Cygni'yi sen de görebilirsin. Wikipedia'ya göre çiftin iki yıldızı yaklaşık 5,2 ve 6,1 kadirdir; kent göğünde dürbünle, ışık kirliliği olmayan kırsalda çıplak gözle görülebilirler. Kuğu'ya 7×50 dürbününü çevirip bu çifti bulduğunda, insanlığın uzaklığını ilk ölçtüğü yıldızlardan birine bakıyorsun. En yakın yıldız ise İstanbul'dan görülmez: Gaia'ya göre Proxima Centauri'nin ıraklığı 768 miliyay saniyesidir, yani 1,30 parsek, 4,25 ışık yılı. Wikipedia'ya göre bu yıldız çıplak gözle görülemeyecek kadar sönüktür ve güney göğünde olduğu için yalnızca yaklaşık 27° kuzey enleminin güneyinden görülebilir. En yakın yıldızın bile ıraklığı 1 yay saniyesinden küçüktür.",
-        "Bugün bu işi uzay araçları yapıyor. Britannica'ya göre ESA'nın Gaia uydusu 19 Aralık 2013'te Fransız Guyanası'ndaki Kourou'dan bir Soyuz roketiyle fırlatıldı, ikinci Lagrange noktası (L2) yakınına yerleştirildi ve bir milyardan fazla yıldızın konumunu ve hareketini çok yüksek doğrulukla ölçtü. En parlak yıldızların konumları 0,000007 yay saniyesi doğrulukla belirlendi; bu açı, Bessel'in ölçtüğü kaymanın kırk binde birinden küçüktür. Görevin 2025 sonuna kadar sürmesi planlanmıştı."
+        "Bugün bu işi uzay araçları yapıyor. Britannica'ya göre ESA'nın Gaia uydusu 19 Aralık 2013'te Fransız Guyanası'ndaki Kourou'dan bir Soyuz roketiyle fırlatıldı, ikinci Lagrange noktası (L2) yakınına yerleştirildi ve bir milyardan fazla yıldızın konumunu ve hareketini çok yüksek doğrulukla ölçtü. En parlak yıldızların konumları 0,000007 yay saniyesi doğrulukla belirlendi; bu açı, Bessel'in ölçtüğü kaymanın kırk binde birinden küçüktür. ESA'ya göre Gaia bilimsel gözlemlerini 15 Ocak 2025'te bitirdi ve 27 Mart 2025'te kapatıldı."
       ],
       "akilda": "Iraklık, Dünya'nın yörüngesindeki hareketin yakın yıldızlarda yarattığı küçük açısal kaymadır; d (parsek) = 1 / p (yay saniyesi). Yalnızca geometriye dayandığı için merdivenin temelidir.",
       "ornek": {
@@ -88,7 +88,7 @@
       "paragraflar": [
         "Uzaklık merdiveninin basamaklarından bazılarını balkondan görebilirsin. İlk durak, bütün Sefeidlere adını veren yıldız: Kral takımyıldızındaki Delta Cephei. Wikipedia'ya göre dik açıklığı yaklaşık +58°'dir. Bir yıldız, enlem ile dik açıklığının toplamı 90°'yi aşıyorsa hiç batmaz (d1). İstanbul için 41 + 58 = 99°; yani Delta Cephei yılın her gecesi, gecenin her saatinde İstanbul'un ufkunun üstündedir.",
         "Parlaklığı 5,366 günde bir 3,48 ile 4,37 kadir arasında gidip gelir. Bu, çıplak gözle izlenebilecek bir değişimdir, ama yalnızca yeterince karanlık bir yerde: d1'de gördüğün gibi kent göğünde çıplak gözün sınırı yaklaşık 3, banliyöde yaklaşık 4 kadirdir. İstanbul'un aydınlık bir semtinde 7×50 dürbün işi çok kolaylaştırır. Bir iki hafta boyunca her akşam yıldızı çevresindeki sabit yıldızlarla karşılaştırıp defterine not edersen, Leavitt'in yasasının dayandığı ritmi kendi gözünle görürsün. Wikipedia'ya göre yaklaşık 40 yay saniyesi ötedeki 6,3 kadirlik yoldaşı küçük teleskoplarla görülür.",
-        "İkinci durak tanıdık bir yıldız: Kutup Yıldızı. Universe Today'in aktardığına göre Kutup Yıldızı'nın ana yıldızı klasik bir Sefeiddir ve yaklaşık dört günlük bir dönemle zonklar; bu dönem yıllar içinde giderek uzamaktadır. Her gece yönünü bulmak için baktığın yıldız, aslında evreni ölçmekte kullandığımız yıldız türünün bir örneğidir.",
+        "İkinci durak tanıdık bir yıldız: Kutup Yıldızı. Universe Today'in aktardığına göre Kutup Yıldızı'nın ana yıldızı klasik bir Sefeiddir ve yaklaşık dört günlük bir dönemle zonklar; aynı habere göre bu dönem uzun süre her yıl uzadı, ama son yıllarda kısalmaya başladı. Her gece yönünü bulmak için baktığın yıldız, aslında evreni ölçmekte kullandığımız yıldız türünün bir örneğidir.",
         "Üçüncü durak, merdivenin tarihini değiştiren galaksi: Andromeda (M31). Wikipedia'ya göre görünür kadiri 3,44'tür ve Aysız gecelerde orta derecede ışık kirliliği olan yerlerden bile çıplak gözle görülür; NASA'ya göre en iyi Kasım'da gözlenir. Wikipedia'nın verdiği görünür boyutu yaklaşık 3,2° × 1°'dir; yaklaşık 0,5° olan dolunayın altı katından uzun. Gördüğün soluk ışık yaklaşık 2,5 milyon yıl önce yola çıkmıştır. Hubble 1923'te bu galaksideki bir Sefeid sayesinde onun Samanyolu'nun dışında olduğunu gösterdi (d7). Dürbünle Andromeda'ya bakarken merdivenin Sefeid basamağına bakıyorsun.",
         "Bu gözlemlerin bir uyarısı var. Yıldızın ışığı bize gelirken yıldızlararası tozdan geçer. Wikipedia'ya göre toz ışığı hem sönükleştirir hem de kızartır, çünkü maviyi kırmızıdan daha çok soğurur. Tozu hesaba katmazsan yıldız olduğundan sönük, dolayısıyla olduğundan uzak görünür. Aşağıdaki örnekte bu hatanın izini kendin göreceksin."
       ],
@@ -167,7 +167,7 @@
       ],
       "ornek": {
         "baslik": "Örnek: Kritik yoğunluk ne kadar seyrek?",
-        "metin": "H0 = 67,4 km/s/Mpc değerini saniyenin tersine çevir: 1 Mpc = 3,0857×10²² m, H0 = 67.400 / 3,0857×10²² ≈ 2,184×10⁻¹⁸ bölü saniye. H0² ≈ 4,771×10⁻³⁶. Pay: 3 × 4,771×10⁻³⁶ ≈ 1,431×10⁻³⁵. Payda: 8 × π × 6,674×10⁻¹¹ ≈ 1,677×10⁻⁹. ρc ≈ 1,431×10⁻³⁵ / 1,677×10⁻⁹ ≈ 8,5×10⁻²⁷ kg/m³. Paris Gözlemevi sözlüğü H0 = 70 için bunu metreküpte yaklaşık 6 hidrojen atomu diye çevirir; yoğunluk H0'ın karesiyle orantılı olduğundan 67,4 için 6 × (67,4 / 70)² ≈ 5,6 atom eder. Bunun yalnızca yüzde 4,9'u sıradan maddedir: 5,6 × 0,049 ≈ 0,27. Yani evrende ortalama olarak her dört metreküpe yaklaşık bir hidrojen atomu kütlesinde sıradan madde düşer. Sonuç birimi: kilogram bölü metreküp ve metreküpteki atom sayısı."
+        "metin": "H0 = 67,4 km/s/Mpc değerini saniyenin tersine çevir: 1 Mpc = 3,0857×10²² m, H0 = 67.400 / 3,0857×10²² ≈ 2,184×10⁻¹⁸ bölü saniye. H0² ≈ 4,771×10⁻³⁶. Pay: 3 × 4,771×10⁻³⁶ ≈ 1,431×10⁻³⁵. Payda: 8 × π × 6,674×10⁻¹¹ ≈ 1,677×10⁻⁹. ρc ≈ 1,431×10⁻³⁵ / 1,677×10⁻⁹ ≈ 8,5×10⁻²⁷ kg/m³. Bir hidrojen atomu yaklaşık 1,674×10⁻²⁷ kg olduğundan bu, metreküpte 8,5 / 1,674 ≈ 5,1 atom eder; Paris Gözlemevi sözlüğü H0 = 70 için yuvarlak olarak yaklaşık 6 atom verir. Bunun yalnızca yüzde 4,9'u sıradan maddedir: 5,1 × 0,049 ≈ 0,25. Yani evrende ortalama olarak her dört metreküpe yaklaşık bir hidrojen atomu kütlesinde sıradan madde düşer. Sonuç birimi: kilogram bölü metreküp ve metreküpteki atom sayısı."
       },
       "akilda": "Uzay düz, artı ya da eksi eğrilikli olabilir; bunu yoğunluğun kritik yoğunluğa oranı Ω belirler. Planck: ΩK = 0,001 ± 0,002, evren ölçülebildiği kadarıyla düz. Kritik yoğunluk metreküpte yalnızca 5–6 hidrojen atomu kadardır."
     },
@@ -361,52 +361,62 @@
     {
       "deger": "−301 km/s; ~110 km/s; 1912",
       "aciklama": "Andromeda'nın Güneş'e göre dikine hızı, Samanyolu'na yaklaşma hızı ve Slipher'in ölçüm yılı",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Andromeda_Galaxy"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Andromeda_Galaxy",
+      "kid": "d17n16"
     },
     {
       "deger": "500 km/s/Mpc",
       "aciklama": "Hubble'ın 1929'daki ilk H0 değeri",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Hubble%27s_law"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Hubble%27s_law",
+      "kid": "d17n17"
     },
     {
       "deger": "1838; 313,6 ± 13,6 mas; bugün 287,18 mas (11,36 ışık yılı)",
       "aciklama": "Bessel'in 61 Cygni ıraklığı ve bugünkü değer",
-      "kaynak_url": "https://en.wikipedia.org/wiki/61_Cygni"
+      "kaynak_url": "https://en.wikipedia.org/wiki/61_Cygni",
+      "kid": "d17n18"
     },
     {
       "deger": "19 Aralık 2013; >1 milyar yıldız",
       "aciklama": "Gaia'nın fırlatılışı ve ölçtüğü yıldız sayısı",
-      "kaynak_url": "https://britannica.com/topic/Gaia-European-Space-Agency-satellite"
+      "kaynak_url": "https://britannica.com/topic/Gaia-European-Space-Agency-satellite",
+      "kid": "d17n19"
     },
     {
       "deger": "MB ≈ −19,5 ± ~1,5 kadir",
       "aciklama": "Tip Ia süpernovasının tipik tepe mutlak kadiri ve saçılımı",
-      "kaynak_url": "https://astronomy.swinburne.edu.au/cosmos/T/Type+Ia+Supernova"
+      "kaynak_url": "https://astronomy.swinburne.edu.au/cosmos/T/Type+Ia+Supernova",
+      "kid": "d17n20"
     },
     {
       "deger": "5,366 gün; 3,48–4,37 kadir; δ ≈ +58°",
       "aciklama": "Delta Cephei'nin dönemi, parlaklık aralığı ve dik açıklığı",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Delta_Cephei"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Delta_Cephei",
+      "kid": "d17n21"
     },
     {
       "deger": "2,8–4,2 σ",
       "aciklama": "DESI 2025: zamanla değişen karanlık enerji tercihinin anlamlılığı (5σ değil)",
-      "kaynak_url": "https://www.sciencedaily.com/releases/2025/03/250320214311.htm"
+      "kaynak_url": "https://www.sciencedaily.com/releases/2025/03/250320214311.htm",
+      "kid": "d17n22"
     },
     {
       "deger": "ΩK = 0,001 ± 0,002",
       "aciklama": "Planck 2018 + BAO uzay eğriliği (düz evrenle uyumlu)",
-      "kaynak_url": "https://www.iac.es/es/ciencia-y-tecnologia/publicaciones/planck-2018-results-vi-cosmological-parameters"
+      "kaynak_url": "https://arxiv.org/abs/1807.06209",
+      "kid": "d17n23"
     },
     {
       "deger": "46,5 milyar ışık yılı",
       "aciklama": "Gözlenebilir evrenin yarıçapı (bugünkü uzaklık)",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Observable_universe"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Observable_universe",
+      "kid": "d17n24"
     },
     {
       "deger": "a0 ≈ 1,2×10⁻¹⁰ m/s²; 1983",
       "aciklama": "MOND'un sınır ivmesi ve Milgrom'un sunduğu yıl",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Modified_Newtonian_dynamics"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Modified_Newtonian_dynamics",
+      "kid": "d17n25"
     }
   ],
   "sozluk": [
@@ -472,47 +482,58 @@
     },
     {
       "terim": "maviye kayma",
-      "tanim": "Bize yaklaşan bir kaynağın ışığının daha kısa dalga boylarına kayması; Andromeda Galaksisi bunun örneğidir."
+      "tanim": "Bize yaklaşan bir kaynağın ışığının daha kısa dalga boylarına kayması; Andromeda Galaksisi bunun örneğidir.",
+      "kid": "d17t12"
     },
     {
       "terim": "özel hız",
-      "tanim": "Bir galaksinin genişlemeden bağımsız, komşularının kütleçekimiyle kazandığı ek hızı."
+      "tanim": "Bir galaksinin genişlemeden bağımsız, komşularının kütleçekimiyle kazandığı ek hızı.",
+      "kid": "d17t13"
     },
     {
       "terim": "kozmolojik ilke",
-      "tanim": "Evrenin en büyük ölçeklerde her yerde aynı (homojen) ve her yönde aynı (izotrop) olduğu varsayımı."
+      "tanim": "Evrenin en büyük ölçeklerde her yerde aynı (homojen) ve her yönde aynı (izotrop) olduğu varsayımı.",
+      "kid": "d17t14"
     },
     {
       "terim": "ölçek çarpanı",
-      "tanim": "Evrendeki bağlı olmayan cisimler arasındaki ortalama uzaklıkla orantılı, genişlemeyi izleyen sayı."
+      "tanim": "Evrendeki bağlı olmayan cisimler arasındaki ortalama uzaklıkla orantılı, genişlemeyi izleyen sayı.",
+      "kid": "d17t15"
     },
     {
       "terim": "öz hareket",
-      "tanim": "Bir yıldızın yıllar içinde uzak yıldızlara göre gökte yavaşça yer değiştirmesi."
+      "tanim": "Bir yıldızın yıllar içinde uzak yıldızlara göre gökte yavaşça yer değiştirmesi.",
+      "kid": "d17t16"
     },
     {
       "terim": "ışık eğrisi",
-      "tanim": "Bir yıldızın ya da süpernovanın parlaklığının zamana göre değişimini gösteren grafik."
+      "tanim": "Bir yıldızın ya da süpernovanın parlaklığının zamana göre değişimini gösteren grafik.",
+      "kid": "d17t17"
     },
     {
       "terim": "baryon akustik salınımları",
-      "tanim": "Erken evrenin madde dağılımında bıraktığı ve standart bir cetvel gibi kullanılan ince desen."
+      "tanim": "Erken evrenin madde dağılımında bıraktığı ve standart bir cetvel gibi kullanılan ince desen.",
+      "kid": "d17t18"
     },
     {
       "terim": "kritik yoğunluk",
-      "tanim": "Uzayın tam düz olması için evrenin sahip olması gereken ortalama yoğunluk; bugün metreküpte birkaç hidrojen atomu kadardır."
+      "tanim": "Uzayın tam düz olması için evrenin sahip olması gereken ortalama yoğunluk; bugün metreküpte birkaç hidrojen atomu kadardır.",
+      "kid": "d17t19"
     },
     {
       "terim": "Olbers paradoksu",
-      "tanim": "Sınırsız ve yıldızlarla dolu bir evrende gece göğünün neden aydınlık olmadığı sorusu."
+      "tanim": "Sınırsız ve yıldızlarla dolu bir evrende gece göğünün neden aydınlık olmadığı sorusu.",
+      "kid": "d17t20"
     },
     {
       "terim": "gözlenebilir evren",
-      "tanim": "Işığının bize ulaşmaya vakit bulduğu, bugünkü yarıçapı yaklaşık 46,5 milyar ışık yılı olan bölge."
+      "tanim": "Işığının bize ulaşmaya vakit bulduğu, bugünkü yarıçapı yaklaşık 46,5 milyar ışık yılı olan bölge.",
+      "kid": "d17t21"
     },
     {
       "terim": "MOND",
-      "tanim": "Karanlık madde yerine Newton yasalarını çok küçük ivmelerde değiştirmeyi öneren kuram (Değiştirilmiş Newton Dinamiği)."
+      "tanim": "Karanlık madde yerine Newton yasalarını çok küçük ivmelerde değiştirmeyi öneren kuram (Değiştirilmiş Newton Dinamiği).",
+      "kid": "d17t22"
     }
   ],
   "defter_notu": [
@@ -580,27 +601,33 @@
     },
     {
       "soru": "Andromeda Galaksisi maviye kaymışken bu durum Hubble-Lemaître yasasıyla neden çelişmez?",
-      "cevap": "Andromeda yaklaşık 0,765 Mpc uzaktadır; genişlemenin orada öngördüğü hız yalnızca 67,4 × 0,765 ≈ 52 km/s'dir. Kütleçekiminden gelen 110 km/s'lik özel hızı bundan büyük olduğu için yaklaşır. Yasa, özel hızların küçük kaldığı uzak galaksiler için geçerlidir."
+      "cevap": "Andromeda yaklaşık 0,765 Mpc uzaktadır; genişlemenin orada öngördüğü hız yalnızca 67,4 × 0,765 ≈ 52 km/s'dir. Kütleçekiminden gelen özel hızı bundan büyük olduğu için toplamda yaklaşık 110 km/s hızla yaklaşır. Yasa, özel hızların küçük kaldığı uzak galaksiler için geçerlidir.",
+      "kid": "d17s10"
     },
     {
       "soru": "Bessel 1838'de 61 Cygni için 0,3136 yay saniyesi ölçtü. Bu kaç ışık yılı eder ve bugünkü 11,36 ışık yılıyla farkı yüzde kaçtır?",
-      "cevap": "d = 1 / 0,3136 ≈ 3,19 parsek; 3,19 × 3,2616 ≈ 10,4 ışık yılı. Fark (11,36 − 10,4) / 11,36 ≈ yüzde 8–9; ilk ölçüm gerçeğe yüzde 10'dan yakındı."
+      "cevap": "d = 1 / 0,3136 ≈ 3,19 parsek; 3,19 × 3,2616 ≈ 10,4 ışık yılı. Fark (11,36 − 10,4) / 11,36 ≈ yüzde 8–9; ilk ölçüm gerçeğe yüzde 10'dan yakındı.",
+      "kid": "d17s11"
     },
     {
       "soru": "İstanbul'dan Delta Cephei neden hiç batmaz?",
-      "cevap": "Bir yıldız, enlem ile dik açıklığının toplamı 90°'yi aşınca hiç batmaz. İstanbul'un enlemi 41°, Delta Cephei'nin dik açıklığı yaklaşık +58°; toplam 99° olduğu için yıl boyu her saat ufkun üstündedir."
+      "cevap": "Bir yıldız, enlem ile dik açıklığının toplamı 90°'yi aşınca hiç batmaz. İstanbul'un enlemi 41°, Delta Cephei'nin dik açıklığı yaklaşık +58°; toplam 99° olduğu için yıl boyu her saat ufkun üstündedir.",
+      "kid": "d17s12"
     },
     {
       "soru": "Gözlenebilir evrenin yarıçapı neden 13,8 değil de yaklaşık 46,5 milyar ışık yılıdır?",
-      "cevap": "Çünkü ışık yoldayken evren genişlemeye devam etti. 46,5 milyar ışık yılı, ışığı bize şimdi ulaşan en uzak maddenin bugünkü uzaklığıdır; ışığın yola çıktığı andaki uzaklık çok daha küçüktü."
+      "cevap": "Çünkü ışık yoldayken evren genişlemeye devam etti. 46,5 milyar ışık yılı, ışığı bize şimdi ulaşan en uzak maddenin bugünkü uzaklığıdır; ışığın yola çıktığı andaki uzaklık çok daha küçüktü.",
+      "kid": "d17s13"
     },
     {
       "soru": "Dönme eğrilerine iyi uymasına rağmen MOND neden karanlık maddenin yerini alamadı?",
-      "cevap": "MOND düz dönme eğrileri verecek biçimde kurulduğu için bu uyum kanıt sayılmaz. Galaksi kümelerinde MOND ile bile kütle açığı kalır, Mermi Kümesi'ni tam açıklayamaz ve arka plan ışımasındaki desenleri açıklamakta zorlanır."
+      "cevap": "MOND düz dönme eğrileri verecek biçimde kurulduğu için bu uyum kanıt sayılmaz. Galaksi kümelerinde MOND ile bile kütle açığı kalır, Mermi Kümesi'ni tam açıklayamaz ve arka plan ışımasındaki desenleri açıklamakta zorlanır.",
+      "kid": "d17s14"
     },
     {
       "soru": "Kritik yoğunluk H0 = 70 için metreküpte yaklaşık 6 hidrojen atomudur. H0 = 73 alınırsa kaç atom olur?",
-      "cevap": "Kritik yoğunluk H0'ın karesiyle orantılıdır: 6 × (73 / 70)² ≈ 6 × 1,088 ≈ 6,5 atom."
+      "cevap": "Kritik yoğunluk H0'ın karesiyle orantılıdır: 6 × (73 / 70)² ≈ 6 × 1,088 ≈ 6,5 atom.",
+      "kid": "d17s15"
     }
   ],
   "kaynaklar": [
@@ -737,8 +764,8 @@
       "url": "https://ccapp.osu.edu/news/new-desi-results-strengthen-hints-dark-energy-may-evolve"
     },
     {
-      "ad": "Planck 2018 VI özeti (IAC yayın sayfası)",
-      "url": "https://www.iac.es/es/ciencia-y-tecnologia/publicaciones/planck-2018-results-vi-cosmological-parameters"
+      "ad": "Planck Collaboration 2018 VI, tam özet (arXiv PDF v4)",
+      "url": "https://arxiv.org/pdf/1807.06209v4"
     },
     {
       "ad": "Wikipedia, Shape of the universe",
@@ -763,6 +790,18 @@
     {
       "ad": "USGS, Age of the Earth",
       "url": "https://pubs.usgs.gov/gip/geotime/age.html"
+    },
+    {
+      "ad": "ESA, Last starlight for ground-breaking Gaia (15 Ocak 2025)",
+      "url": "https://www.esa.int/Science_Exploration/Space_Science/Gaia/Last_starlight_for_ground-breaking_Gaia"
+    },
+    {
+      "ad": "Wikipedia, Walter Baade",
+      "url": "https://en.wikipedia.org/wiki/Walter_Baade"
+    },
+    {
+      "ad": "Wikipedia, Blueshift",
+      "url": "https://en.wikipedia.org/wiki/Blueshift"
     }
   ]
 }

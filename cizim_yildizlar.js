@@ -87,7 +87,7 @@
   });
 
   C.ekle('d4-atmosfer', {
-    ders: 'd4', bolum: 4, oran: 0.68,
+    ders: 'd4', bolum: 5, oran: 0.68,
     baslik: 'Yukarı çıktıkça Güneş atmosferinin sıcaklığı',
     aciklama: 'Fotosferin tabanında yaklaşık 6600 K olan sıcaklık yukarı doğru düşer ve kromosferin altında yaklaşık 4100 K ile en düşük değerine iner. Sonra yeniden yükselir: kromosferin üstünde 20–30 bin K, ince geçiş bölgesinde bir milyon K\'e fırlar, koronada 1–2 milyon K\'dir. Sıcaklık ekseni logaritmiktir; bölge genişlikleri ölçeksizdir.',
     kaynak: [{ ad: 'Wikipedia, Sun', url: 'https://en.wikipedia.org/wiki/Sun' }, { ad: 'NASA, Sun Fact Sheet', url: 'https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html' }],
@@ -113,7 +113,7 @@
   });
 
   C.ekle('d4-dongu25', {
-    ders: 'd4', bolum: 6, oran: 0.64,
+    ders: 'd4', bolum: 7, oran: 0.64,
     baslik: '25. Güneş döngüsü: öngörü ve gerçek',
     aciklama: 'Leke sayısı Aralık 2019\'daki minimumdan yükseldi ve Ekim 2024\'te 161 ile tepe yaptı; uzman panelinin öngördüğü 95–130 bandının üstüne çıktı. Eğrinin biçimi şematiktir: gerçek olan yalnız başlangıç tarihi, tepenin tarihi ve değeri ile panel bandıdır. Kesikli kısım beklenen düşüştür.',
     kaynak: [{ ad: 'SIDC, Solar Cycle 25 reached its maximum in October 2024', url: 'https://www.sidc.be/article/solar-cycle-25-reached-its-maximum-october-2024' }, { ad: 'Wikipedia, Solar cycle 25', url: 'https://en.wikipedia.org/wiki/Solar_cycle_25' }],
@@ -142,7 +142,7 @@
   /* ================= d14 — Yıldızlar nasıl doğar ================= */
 
   C.ekle('d14-bulutsu-turleri', {
-    ders: 'd14', bolum: 3, oran: 0.9,
+    ders: 'd14', bolum: 4, oran: 0.9,
     baslik: 'Üç bulutsu, üç ışık yolu',
     aciklama: 'Salma bulutsusunda sıcak yıldızın morötesi ışığı hidrojeni iyonlaştırır; gaz kendi kırmızı H-alfa ışığını, 656,28 nanometrede salar. Yansıma bulutsusunda toz yıldız ışığını saçar; mavi daha çok saçıldığı için bulutsu mavi görünür. Karanlık bulutsuda yoğun toz arkadaki ışığı örter ve bulut kara bir siluet olur. Çizim şematiktir.',
     kaynak: [{ ad: 'Wikipedia, Nebula', url: 'https://en.wikipedia.org/wiki/Nebula' }, { ad: 'Wikipedia, Reflection nebula', url: 'https://en.wikipedia.org/wiki/Reflection_nebula' }, { ad: 'Wikipedia, Hydrogen-alpha', url: 'https://en.wikipedia.org/wiki/Hydrogen-alpha' }],
@@ -186,7 +186,7 @@
   });
 
   C.ekle('d14-dogum', {
-    ders: 'd14', bolum: 6, oran: 1.06,
+    ders: 'd14', bolum: 7, oran: 1.06,
     baslik: 'Buluttan anakola',
     aciklama: 'Bir yıldızın doğumu beş adımda: soğuk moleküler bulut, kütleçekiminin basıncı yendiği çöküş ve parçalanma, çevresinde disk olan önyıldız, jet fışkırtan T Tauri yıldızı ve sonunda merkezinde hidrojen füzyonu başlayan anakol yıldızı. Süreler ders metnindendir; şema ölçeksizdir.',
     kaynak: [{ ad: 'Wikipedia, Molecular cloud', url: 'https://en.wikipedia.org/wiki/Molecular_cloud' }, { ad: 'Wikipedia, Protostar', url: 'https://en.wikipedia.org/wiki/Protostar' }, { ad: 'Wikipedia, T Tauri star', url: 'https://en.wikipedia.org/wiki/T_Tauri_star' }],
@@ -228,7 +228,7 @@
   /* ================= d5 — H-R diyagramı ve anakol ================= */
 
   C.ekle('d5-hr', {
-    ders: 'd5', bolum: 2, oran: 0.92,
+    ders: 'd5', bolum: 3, oran: 0.92,
     baslik: 'H-R diyagramı',
     aciklama: 'Yatayda yüzey sıcaklığı, dikeyde ışıma gücü var; ikisi de logaritmik ve sıcaklık sola doğru artar. Noktalar Mamajek tablosundaki anakol yıldızlarıdır: sol üstte sıcak ve parlak O5, sağ altta soğuk ve sönük M3, arada Güneş. Devler, süperdevler ve beyaz cüceler yalnız bölge olarak, yaklaşık yerleriyle çizildi. Üstteki harfler tayf sınıflarının sıcaklık aralıklarıdır.',
     kaynak: [MAMAJEK, { ad: 'Wikipedia, Hertzsprung–Russell diagram', url: 'https://en.wikipedia.org/wiki/Hertzsprung%E2%80%93Russell_diagram' }, { ad: 'Wikipedia, Stellar classification', url: 'https://en.wikipedia.org/wiki/Stellar_classification' }],
@@ -273,7 +273,7 @@
   });
 
   C.ekle('d5-kutle-isima', {
-    ders: 'd5', bolum: 4, oran: 0.78,
+    ders: 'd5', bolum: 7, oran: 0.78,
     baslik: 'Kütle biraz artınca ışıma gücü çok artar',
     aciklama: 'Noktalar Mamajek tablosundaki anakol yıldızları, çizgiler Wikipedia\'nın kaba kuralı: 0,43 ile 2 Güneş kütlesi arasında ışıma gücü kütlenin dördüncü kuvveti, 2\'nin üstünde 1,4 çarpı kütlenin 3,5\'inci kuvveti. A0 yıldızında tablo 38 der, kural yaklaşık 23 verir. İki eksen de logaritmiktir.',
     kaynak: [MAMAJEK, { ad: 'Wikipedia, Mass–luminosity relation', url: 'https://en.wikipedia.org/wiki/Mass%E2%80%93luminosity_relation' }],
@@ -304,7 +304,7 @@
   });
 
   C.ekle('d5-omur', {
-    ders: 'd5', bolum: 5, oran: 0.78,
+    ders: 'd5', bolum: 9, oran: 0.78,
     baslik: 'Kütleli yıldız kısa yaşar',
     aciklama: 'Anakol ömrü, ders formülüyle Mamajek tablosundan hesaplandı: 10 milyar yıl çarpı kütle bölü ışıma gücü. 43 Güneş kütleli bir O5 yıldızı yaklaşık 1,2 milyon yıl, A0 yaklaşık 570 milyon yıl, Güneş yaklaşık 10 milyar yıl, M0 cücesi yaklaşık 82 milyar yıl yaşar. Kesikli çizgi evrenin yaşı, 13,8 milyar yıl; ömrü bu çizginin üstünde kalan K ve M cücelerinin henüz anakolu bitirmiş olması beklenmez. İki eksen de logaritmiktir.',
     kaynak: [MAMAJEK, { ad: 'Wikipedia, Main sequence', url: 'https://en.wikipedia.org/wiki/Main_sequence' }],
@@ -337,7 +337,7 @@
   /* ================= d15 — Kümeler ve çift yıldızlar ================= */
 
   C.ekle('d15-donum', {
-    ders: 'd15', bolum: 2, oran: 0.81,
+    ders: 'd15', bolum: 3, oran: 0.81,
     baslik: 'Küme yaşlandıkça dönüm noktası aşağı iner',
     aciklama: 'Çizgi, Mamajek tablosundaki anakoldur. Bir kümede anakolu terk etmeye başlayan yıldızların kütlesini ders formülü verir. Yaklaşık 115 milyon yaşındaki Ülker\'de dönüm noktası yaklaşık 6 Güneş kütlesinde, 625 milyon yaşındaki Hyades\'te yaklaşık 3, 12,6 milyar yaşındaki en yaşlı küresel kümelerde yaklaşık 0,9 Güneş kütlesindedir. Formül kabadır.',
     kaynak: [MAMAJEK, { ad: 'Wikipedia, Pleiades', url: 'https://en.wikipedia.org/wiki/Pleiades' }, { ad: 'Wikipedia, Hyades (star cluster)', url: 'https://en.wikipedia.org/wiki/Hyades_(star_cluster)' }, { ad: 'Wikipedia, Milky Way', url: 'https://en.wikipedia.org/wiki/Milky_Way' }],
@@ -373,7 +373,7 @@
   });
 
   C.ekle('d15-algol', {
-    ders: 'd15', bolum: 5, oran: 1.0,
+    ders: 'd15', bolum: 6, oran: 1.0,
     baslik: 'Algol: yörünge ve ışık eğrisi',
     aciklama: 'Üstte yörüngeye yukarıdan bakış: biz yörünge düzleminin içinden, aşağıdan bakıyoruz. Ağır Algol A ortak kütle merkezine yakın, hafif Algol B uzakta dolanır. 1 konumunda sönük B, parlak A\'nın önüne geçer ve ışık 3,30 kadire düşer; 2 konumunda A, B\'nin önündedir ve ışık yalnız 2,15 kadire iner. Tutulma 9,63 saat, dönem 2,867343 gün sürer. Eğrinin biçimi şematiktir; derinlikler ve süreler AAVSO kataloğundandır.',
     kaynak: [{ ad: 'AAVSO VSX, bet Per (Algol)', url: 'https://vsx.aavso.org/index.php?view=detail.top&oid=26202' }, { ad: 'Wikipedia, Algol', url: 'https://en.wikipedia.org/wiki/Algol' }],
@@ -461,7 +461,7 @@
   });
 
   C.ekle('d6-sogan', {
-    ders: 'd6', bolum: 3, oran: 0.76,
+    ders: 'd6', bolum: 4, oran: 0.76,
     baslik: 'Kütleli yıldızın soğanı',
     aciklama: '8 Güneş kütlesinden ağır bir yıldızın içi sona doğru soğan gibi katmanlanır: dışta hidrojen, içe doğru helyum, karbon, neon, oksijen, silisyum ve merkezde demir. Sağdaki süreler her yanma evresinin ne kadar sürdüğünü gösterir: hidrojen yaklaşık 10 milyon yıl, silisyum yalnızca yaklaşık 1 gün. Demiri kaynaştırmak enerji vermez; çekirdek çöker. Katman kalınlıkları ölçeksizdir.',
     kaynak: [{ ad: 'Ohio State Üniversitesi, Ast162: Evolution of High-Mass Stars', url: 'https://www.astronomy.ohio-state.edu/pogge.1/Ast162/Unit2/himass.html' }],
@@ -487,7 +487,7 @@
   });
 
   C.ekle('d6-atarca', {
-    ders: 'd6', bolum: 6, oran: 1.02,
+    ders: 'd6', bolum: 10, oran: 1.02,
     baslik: 'Atarca: dönen bir deniz feneri',
     aciklama: 'Nötron yıldızı dönme ekseni çevresinde döner; ışınım demetleri ise ondan eğik duran manyetik eksen boyunca çıkar. Demet her dönüşte bir koni tarar; Dünya bu koninin üstündeyse her dönüşte bir atım görürüz. Çizim, demetin tam Dünya\'ya döndüğü anı gösteriyor. Alttaki şerit, Jocelyn Bell\'in 1967\'de bulduğu ilk atarcanın 1,337 saniye arayla gelen atımlarıdır. Çizim ölçeksizdir.',
     kaynak: [{ ad: 'NASA, Neutron Stars and Pulsars', url: 'https://imagine.gsfc.nasa.gov/science/objects/pulsars1.html' }, { ad: 'Sky & Telescope, Jocelyn Bell Burnell', url: 'https://skyandtelescope.org/astronomy-resources/famous-astronomers/jocelyn-bell-burnell-pulsar-pioneer/' }],
@@ -599,7 +599,7 @@
   });
 
   C.ekle('d16-civilti', {
-    ders: 'd16', bolum: 7, oran: 0.7,
+    ders: 'd16', bolum: 10, oran: 0.7,
     baslik: 'GW150914 sinyalinin biçimi (şematik)',
     aciklama: 'İki kara delik birbirine yaklaştıkça dalganın hem sıklığı hem genliği artar; buna cıvıltı denir. Birleşmede genlik en büyük değerine, yaklaşık 10⁻²¹\'e ulaşır, sonra yeni kara delik durulurken dalga hızla söner. Sinyal yaklaşık 0,2 saniye sürdü. Çizim şematiktir: dalga sayısı ve biçim gerçek kayıt değildir.',
     kaynak: [{ ad: 'IUCAA, GW150914', url: 'https://www.gw.iucaa.in/news/gw150914/' }, { ad: 'LIGO/Virgo, GW150914 (LIGO-P1500218)', url: 'https://dcc.ligo.org/P1500218/public' }],

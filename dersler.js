@@ -80,8 +80,8 @@
   }
   /* Ders içinde deney: bölümün sonunda, basınca açılır (açılmadan döngü çalışmaz) */
   const MINI = {
-    d2: { 4: 'tayf' }, d3: { 1: 'kepler', 5: 'yorunge', 7: 'gelgit' }, d5: { 2: 'yildiz' }, d10: { 0: 'evreler' },
-    d13: { 2: 'gecis' }, d16: { 1: 'karadelik', 2: 'gorelilik' }, d17: { 1: 'hubble' }
+    d2: { 5: 'tayf' }, d3: { 1: 'kepler', 8: 'yorunge', 11: 'gelgit' }, d5: { 3: 'yildiz' }, d10: { 0: 'evreler' },
+    d13: { 2: 'gecis' }, d16: { 1: 'karadelik', 3: 'gorelilik' }, d17: { 1: 'hubble' }
   };
   const DENEY_AD = { tayf: 'Tayf ve Doppler', kepler: 'Kepler yasaları', yorunge: 'Yörünge atışı', gelgit: 'Gelgit', yildiz: 'Yıldızın hayatı',
     evreler: 'Ay evreleri ve tutulmalar', gecis: 'Ötegezegen geçişi', karadelik: 'Kara deliğe yaklaşmak', gorelilik: 'Işığa yakın yolculuk', hubble: 'Genişleyen evren' };

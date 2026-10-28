@@ -28,7 +28,7 @@
     "dogru": 2,
     "aciklama": "Derse göre mevsimleri uzaklık değil eksen eğikliği belirler; Dünya Güneş'e en yakın noktasına Ocak'ta gelir ve o sırada kuzey yarımkürede kış yaşanır. Eğiklik öğle Güneşi'nin yüksekliğini ve gündüzün süresini değiştirir.",
     "ders": "d1",
-    "bolum": 5
+    "bolum": 7
    },
    {
     "id": "gokyuzu-03",
@@ -56,7 +56,7 @@
     "dogru": 3,
     "aciklama": "λ_tepe = 2,898 × 10⁻³ m·K ÷ T bağıntısıyla 2,898 × 10⁻³ ÷ 2900 ≈ 1,0 × 10⁻⁶ metre, yani yaklaşık 1000 nm bulunur; bu görünür bölgenin dışında, kızılötesindedir. Derse göre sıcaklık düştükçe tepe uzun dalga boylarına kayar.",
     "ders": "d2",
-    "bolum": 4
+    "bolum": 5
    },
    {
     "id": "gokyuzu-05",
@@ -70,7 +70,7 @@
     "dogru": 1,
     "aciklama": "Kirchhoff'un yasalarına göre sürekli tayf veren bir kaynağa daha soğuk ve seyrek bir gazın ardından bakarsan, gazdaki elementlere özgü dalga boylarında karanlık soğurma çizgileri görürsün. Güneş tayfındaki Fraunhofer çizgileri böyle oluşur.",
     "ders": "d2",
-    "bolum": 6
+    "bolum": 7
    },
    {
     "id": "gokyuzu-06",
@@ -84,7 +84,7 @@
     "dogru": 0,
     "aciklama": "Derse göre kaynak yaklaşırken dalgalar kısalır ve çizgiler maviye kayar; uzaklaşırken kırmızıya kayar. Doppler kayması yalnızca dikine hızı ölçer, gökte yana doğru hareket tayfta görünmez.",
     "ders": "d2",
-    "bolum": 7
+    "bolum": 9
    },
    {
     "id": "gokyuzu-07",
@@ -154,7 +154,7 @@
     "dogru": 3,
     "aciklama": "Derse göre karanlık uyumu kaynağa göre 15–45 dakika sürer ve beyaz ışık onu anında sıfırlar. Bu yüzden önce sönük hedeflere bakılır, Ay ve parlak gezegenler sona bırakılır; haritaya loş kırmızı ışıkla bakılır.",
     "ders": "d11",
-    "bolum": 2
+    "bolum": 3
    },
    {
     "id": "gokyuzu-12",
@@ -168,7 +168,231 @@
     "dogru": 2,
     "aciklama": "Derse göre retinanın merkezindeki foveada neredeyse hiç çubuk hücre yoktur; çubuk hücrelerin yoğunluğu bakış merkezinden yaklaşık 20° uzakta en yüksektir. Kaçamak bakışta cismin biraz yanına bakılır.",
     "ders": "d11",
+    "bolum": 4
+   },
+   {
+    "id": "d20-1",
+    "soru": "Eratosthenes, İskenderiye'deki gölge açısını çemberin ellide biri (7,2°) buldu ve iki kent arasını yaklaşık 5000 stadion aldı. Sonucunun bugünkü kilometre karşılığı neden kesin söylenemez?",
+    "secenekler": [
+     "Çünkü stadionun bugünkü uzunluğu kesin bilinmiyor ve tahminler yaklaşık 155 ile 185 metre arasında değişiyor",
+     "Çünkü Eratosthenes açıyı ölçmeyi unuttu ve sonucu tahmin etti",
+     "Çünkü Syene'de yaz gündönümünde de uzun bir gölge oluşuyordu",
+     "Çünkü Eratosthenes Dünya'nın düz olduğunu varsayıyordu"
+    ],
+    "dogru": 0,
+    "aciklama": "Derse göre yöntem doğrudur: 50 × 5000 = 250.000 stadion. Ama stadionun metre karşılığı tartışmalıdır; Wikipedia 155–160 m ile hatayı −%2,4 ile +%0,8, Paris Gözlemevi sözlüğü 155–185 m ile −%3 ile +%15 arasında verir.",
+    "ders": "d20",
     "bolum": 3
+   },
+   {
+    "id": "d20-2",
+    "soru": "Hipparkhos, Spica'nın sonbahar noktasına uzaklığını Timokharis'in 8° değerine karşı 6° buldu. Bu fark ona neyi gösterdi?",
+    "secenekler": [
+     "Spica'nın Dünya'ya hızla yaklaştığını",
+     "Ekinoks noktalarının yıldızlara göre yavaşça kaydığını, yani presesyonu",
+     "Timokharis'in aletinin bozuk olduğunu",
+     "Dünya'nın Güneş'in çevresinde dolandığını"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre yıldızlar birbirine göre kaymadığı için değişen, ölçümün başlangıç noktası olan ekinoks noktalarıydı. Hipparkhos bu kaymayı yılda en az yüzde bir derece olarak verdi; gerçek değer 72 yılda bir derecedir. Bu olaya presesyon denir.",
+    "ders": "d20",
+    "bolum": 5
+   },
+   {
+    "id": "d20-3",
+    "soru": "Takiyüddin'in İstanbul Rasathanesi'nde kullandığı gözlem saatinin saniyeyi göstermesi neden önemliydi?",
+    "secenekler": [
+     "Saray törenlerinin başlama anını duyurmak için",
+     "Kuyruklu yıldızların hızını ölçmek için",
+     "Sağ açıklık yıldızın meridyenden geçiş zamanıyla ölçüldüğü için; gök küresi saniyede yaklaşık 15 yay saniyesi döner",
+     "Ay tutulmalarının süresini kısaltmak için"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre Takiyüddin üç kadranlı (saat, dakika, saniye) saatini yıldızların sağ açıklığını ölçmek için kullandı. Gök küresi yaklaşık 86.164 saniyede 360° döndüğünden 1 saniye zaman yaklaşık 15″ yaya karşılık gelir; 1 yay dakikası kesinlik için saatin 4 saniyeden iyi olması gerekir.",
+    "ders": "d20",
+    "bolum": 10
+   },
+   {
+    "id": "d20-4",
+    "soru": "Tycho Brahe 1572'deki yeni yıldızın ve 1577 kuyruklu yıldızının Ay'ın ötesinde olduğunu hangi gözlemle gösterdi?",
+    "secenekler": [
+     "Teleskopla bakıp yüzeylerini inceleyerek",
+     "Renklerini Ay'ın rengiyle karşılaştırarak",
+     "Ölçülebilir bir ıraklık (paralaks) bulamayarak",
+     "Parlaklıklarının her gece arttığını görerek"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre Ay gibi yakın bir cisim yıldızlara göre kayardı; Tycho iki cisimde de ölçülebilir ıraklık bulamadı, bu yüzden Ay'ın ötesinde olmaları gerekiyordu. Tycho teleskop kullanmadı; çıplak göz aletleriyle yaklaşık 1 yay dakikası kesinliğe ulaştı.",
+    "ders": "d20",
+    "bolum": 12
+   },
+   {
+    "id": "d21-1",
+    "soru": "Büyük Kepçe neden IAU'nun 88 takımyıldızı arasında yer almaz?",
+    "secenekler": [
+     "Çünkü Büyük Kepçe bir asterizmdir: Büyük Ayı takımyıldızının en parlak yedi yıldızından oluşan, resmî sınırı olmayan bir desendir",
+     "Çünkü Büyük Kepçe yalnızca güney yarımküreden görülür",
+     "Çünkü Büyük Kepçe'nin yıldızları 1922'den sonra keşfedildi",
+     "Çünkü IAU Büyük Kepçe'yi Küçük Ayı ile birleştirdi"
+    ],
+    "dogru": 0,
+    "aciklama": "Derse göre asterizm resmî sınırı olmayan, kolay tanınan bir yıldız desenidir. Büyük Kepçe, Büyük Ayı takımyıldızının en parlak yedi yıldızından oluşur; resmî takımyıldız Büyük Ayı'dır.",
+    "ders": "d21",
+    "bolum": 2
+   },
+   {
+    "id": "d21-2",
+    "soru": "Astrolojide Koç burcu 20 Mart'ta başlar. Uygulamanın hesabına göre Güneş Koç takımyıldızının önüne ne zaman geçer ve farkın sebebi nedir?",
+    "secenekler": [
+     "Yine 20 Mart'ta; burçlar ile takımyıldızlar tam örtüşür",
+     "Yaklaşık 19 Nisan'da; ilkbahar noktası presesyon yüzünden yılda yaklaşık 50″ kayarak Koç'tan Balıklar'a geçmiştir",
+     "Yaklaşık 19 Şubat'ta; Dünya'nın yörüngesi her yıl kısalır",
+     "Hiçbir zaman; Güneş Koç takımyıldızından geçmez"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre burçlar ilkbahar noktasından ölçülen 30°'lik eşit dilimlerdir. Presesyon ilkbahar noktasını yılda yaklaşık 50″ kaydırdığından Güneş'in takımyıldızlara gerçek girişi burç tarihlerinden yaklaşık bir ay geç kalır; 2026 hesabında Güneş Koç'a 19 Nisan'da girer.",
+    "ders": "d21",
+    "bolum": 5
+   },
+   {
+    "id": "d21-3",
+    "soru": "İstanbul'da (41° K) dik açıklığı −52,7° olan Kanopus (haritada Canopus) neden hiç görünmez?",
+    "secenekler": [
+     "Çünkü Kanopus çok sönük bir yıldızdır",
+     "Çünkü Kanopus yalnızca yazın gündüz göğündedir",
+     "Çünkü en büyük yüksekliği 90 − 41 − 52,7 = −3,7° çıkar; ufkun altında kalır ve kırılmanın kazandırdığı yarım derece bunu kapatamaz",
+     "Çünkü Kanopus kutup çevresi bir yıldızdır ve hep kuzeyde kalır"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre en büyük yükseklik 90° − enlem + dik açıklıktır. Dik açıklığı −49°'den küçük yıldızlar İstanbul'dan hiç doğmaz; Kanopus için sonuç −3,7°'dir ve ufuktaki kırılma yalnızca yaklaşık 34 yay dakikası kazandırır.",
+    "ders": "d21",
+    "bolum": 7
+   },
+   {
+    "id": "d21-4",
+    "soru": "Büyük Kepçe'nin göstergeç yıldızları Merak ve Dubhe'den Kutup Yıldızı'na nasıl gidersin?",
+    "secenekler": [
+     "Merak'tan Dubhe'ye çizgi çekip aralarındaki uzaklığı yaklaşık beş kez (yaklaşık üç yumruk) uzatarak",
+     "Dubhe'den Alkaid'e doğru sapın kavisini izleyerek",
+     "Merak'tan güneye doğru yaklaşık dört buçuk yumruk giderek",
+     "Avcı'nın Kuşağı'nın çizgisini kuzeye uzatarak"
+    ],
+    "dogru": 0,
+    "aciklama": "Derse göre Merak–Dubhe arası yaklaşık 5,4°, Dubhe–Kutup Yıldızı arası 28,7°'dir; oran yaklaşık 5,3. Yumruk yaklaşık 10° olduğundan bu yaklaşık üç yumruk eder. Sapın kavisi Arcturus'a, Merak'tan güneye uzanan çizgi Aslan'a, Kuşak ise kuzeyde Aldebaran'a götürür.",
+    "ders": "d21",
+    "bolum": 8
+   },
+   {
+    "id": "d22-1",
+    "soru": "İstanbul'da (yaklaşık 28,96° D) Türkiye Saati UTC+3 iken ortalama Güneş meridyenden yaklaşık saat kaçta geçer ve neden?",
+    "secenekler": [
+     "Tam 12:00'de, çünkü saat dilimleri her kentin öğlesine göre ayarlanır",
+     "Yaklaşık 13:04'te, çünkü İstanbul'un yerel ortalama zamanı UTC'den yalnızca yaklaşık 1 sa 56 dk ileride, saat ise 3 saat ileride",
+     "Yaklaşık 11:04'te, çünkü İstanbul 45° meridyeninin doğusundadır",
+     "Yaklaşık 14:00'te, çünkü yaz saati her yıl Mart'ta bir saat ileri alınır"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre her derece boylam 4 dakikadır: 28,955° × 4 dk ≈ 1 sa 55 dk 49 sn. Saat UTC'den 3 saat ileri olduğundan ortalama öğle 12:00 + 3 sa − 1 sa 55,8 dk ≈ 13:04 olur. timeanddate'in Haziran 2025 tablosunda zaman denkleminin sıfır olduğu 13 Haziran'da Güneş'in geçişi 13:04.",
+    "ders": "d22",
+    "bolum": 3
+   },
+   {
+    "id": "d22-2",
+    "soru": "Güneş saati 3 Kasım civarında kol saatinden yaklaşık 16,5 dakika ileridedir. Bu farkın (zaman denkleminin) iki nedeni hangisidir?",
+    "secenekler": [
+     "Atmosferik kırılma ve ışık kirliliği",
+     "Dünya'nın yörüngesinin basıklığı ve ekseninin tutuluma eğikliği",
+     "Artık saniyeler ve saat dilimleri",
+     "Ay'ın kütleçekimi ve presesyon"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre zaman denklemi iki dalganın toplamıdır: yörünge basıklığından gelen yaklaşık 7,66 dakikalık yıllık bileşen ve eksen eğikliğinden gelen yaklaşık 9,87 dakikalık yarım yıllık bileşen. İkisi birlikte Kasım başında yaklaşık +16 dk 33 sn, Şubat ortasında yaklaşık −14 dk 6 sn verir.",
+    "ders": "d22",
+    "bolum": 1
+   },
+   {
+    "id": "d22-3",
+    "soru": "Ağırlıklar ve Ölçüler Genel Konferansı'nın (CGPM) 15 Ekim 2026'daki 5 numaralı kararı artık saniye için ne öngörüyor?",
+    "secenekler": [
+     "Her yıl sonunda bir artık saniye eklenmesini",
+     "Artık saniyelerin 2100'e kadar sürmesini",
+     "20 Mayıs 2027'den itibaren UTC'nin kesintisiz olmasını ve UT1 ile farkının en çok 3.600 saniyeye kadar büyüyebilmesini",
+     "UTC'nin kaldırılıp yerine UT1'in yasal saat yapılmasını"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre 28. CGPM, 5 numaralı kararla sürekli UTC'nin 20 Mayıs 2027'de yürürlüğe gireceğine ve UT1 ile UTC farkının en çok 3.600 saniye (1 saat) olacağına karar verdi. 1972–2016 arasında 27 artık saniye eklenmişti; sonuncusu 31 Aralık 2016'daydı.",
+    "ders": "d22",
+    "bolum": 6
+   },
+   {
+    "id": "d22-4",
+    "soru": "698 sayılı yasa (kabul 26 Aralık 1925) Türkiye'de takvimde neyi değiştirdi?",
+    "secenekler": [
+     "Hicri takvimi tamamen yasakladı",
+     "Ay ve günleri ilk kez Gregoryen takvime uydurdu; 13 gün atlandı",
+     "Yıl sayımını değiştirdi: 31 Kânunuevvel 1341'in ertesi günü 1 Ocak 1926 oldu; Hicri takvim özel durumlarda kaldı",
+     "Türkiye'yi UTC+3 saat dilimine geçirdi"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre ay-gün eşitlemesi 1917'de 13 gün atlanarak yapılmıştı. 698 sayılı yasa ise uluslararası takvim mebdeini kabul etti: 1341 yılı Kânunuevvel'inin 31. gününü izleyen gün 1 Ocak 1926'dır. Üçüncü madde Hicri kameri takvimin özel durumlarda kullanılmasını sürdürdü ve kameri ay başlarını rasathaneye bıraktı.",
+    "ders": "d22",
+    "bolum": 11
+   },
+   {
+    "id": "d24-1",
+    "soru": "Telefonla çekilen dolunay neden çoğu zaman bembeyaz bir leke olarak çıkar?",
+    "secenekler": [
+     "Telefon sensörleri Ay'ın yansıttığı ışığın rengini kaydedemez",
+     "Ay karenin çok küçük bir parçası olduğu için ışık ölçer çoğunlukla karanlık gökyüzünü okur ve Ay'ı fazla pozlar",
+     "Ay'ın yüzeyi Dünya'nınkinden daha açık renkli olduğu için her pozlamada yanar",
+     "Atmosfer Ay'ın ışığını kırınıma uğratıp sensörü doyurur"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre Lodriguss, yaklaşık 1000 mm'den kısa odak uzaklıklarında ışık ölçerin çoğunlukla karanlık gökyüzünü okuyup Ay'ı fazla pozladığını yazar. 24 mm eşdeğeri bir telefonda Ay yalnızca yaklaşık 25 piksel genişliğindedir. Çözüm pozlamayı Ay'a göre düşürmektir; Looney 11 kuralı f/11 ve 1 bölü ISO saniye önerir. Ay'ın yüzeyi aslında Dünya'nınkinden koyudur.",
+    "ders": "d24",
+    "bolum": 3
+   },
+   {
+    "id": "d24-2",
+    "soru": "24 mm eşdeğeri, 4000 piksel genişliğinde (piksel ölçeği yaklaşık 74 yay saniyesi) bir telefon 7×50 dürbünün arkasından afokal olarak kullanılırsa piksel ölçeği ve Ay'ın görüntüdeki genişliği yaklaşık ne olur?",
+    "secenekler": [
+     "Yaklaşık 518 yay saniyesi; Ay yaklaşık 4 piksel",
+     "Yaklaşık 74 yay saniyesi; Ay yaklaşık 25 piksel, çünkü dürbün yalnız ışığı artırır",
+     "Yaklaşık 10,6 yay saniyesi; Ay yaklaşık 178 piksel",
+     "Yaklaşık 1,5 yay saniyesi; Ay yaklaşık 1260 piksel"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre dürbün gökteki açıları 7 ile çarpar; eşdeğer odak 24 × 7 = 168 mm olur, piksel ölçeği 74,4 ÷ 7 ≈ 10,6 yay saniyesine iner. Ay'ın ortalama çapı 1896 yay saniyesi olduğundan 1896 ÷ 10,6 ≈ 178 piksel. Bu ölçekte gök bir pikseli yaklaşık 0,7 saniyede geçer.",
+    "ders": "d24",
+    "bolum": 4
+   },
+   {
+    "id": "d24-3",
+    "soru": "Sabit bir dayanaktaki telefonla nokta yıldız çekerken, gök ekvatoru yerine kutba 10° uzaklıktaki (dik açıklığı 80°) bir bölgeye bakarsan en uzun poz süresi yaklaşık nasıl değişir?",
+    "secenekler": [
+     "Değişmez; 500 kuralı yalnız odak uzaklığına bağlıdır",
+     "Yarıya iner, çünkü kutba yakın yıldızlar daha hızlı döner",
+     "Yaklaşık 6 katına çıkar, çünkü kayma hızı dik açıklığın kosinüsüyle orantılıdır ve cos 80° ≈ 0,17'dir",
+     "Yaklaşık 80 katına çıkar, çünkü dik açıklık 80°'dir"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre gökyüzü saniyede 15,04 × cos δ yay saniyesi kayar. Ekvatorda 15,04, δ = 80°'de yaklaşık 2,6 yay saniyesi. 74 yay saniyelik pikselde bir piksellik kayma ekvatorda yaklaşık 4,9 saniye, δ = 80°'de yaklaşık 28 saniye sürer: yaklaşık 6 kat. 500 kuralı bu yön farkını hesaba katmaz.",
+    "ders": "d24",
+    "bolum": 6
+   },
+   {
+    "id": "d24-4",
+    "soru": "Görüntü yığınlamada sinyal-gürültü oranı, yalnız foton gürültüsü hesaba katılırsa kare sayısına nasıl bağlıdır?",
+    "secenekler": [
+     "Kare sayısıyla doğru orantılı artar: 9 kare 9 kat",
+     "Kare sayısının karekökü kadar artar: 9 kare 3 kat, 100 kare 10 kat",
+     "Kare sayısından bağımsızdır; yalnız ISO'ya bağlıdır",
+     "Kare sayısının karesi kadar artar: 3 kare 9 kat"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre foton gürültüsü sinyalin kareköküdür; N kare N kat ışık demek olduğundan oran √N kat artar. PetaPixel'deki açıklamaya göre 9 görüntü oranı 3 kat, 100 görüntü 10 kat iyileştirir. Kent göğünde gök fotonları da gürültü kattığı için aynı temizlik için daha çok kare gerekir.",
+    "ders": "d24",
+    "bolum": 10
    }
   ],
   "gunes_sistemi": [
@@ -198,7 +422,7 @@
     "dogru": 0,
     "aciklama": "Derse göre gelgiti çekimin kendisi değil, Dünya'nın iki yüzü arasındaki çekim farkı yapar. Bu yüzden biri Ay'a bakan yüzde, biri tam karşı yüzde olmak üzere iki kabarıklık oluşur.",
     "ders": "d3",
-    "bolum": 7
+    "bolum": 11
    },
    {
     "id": "gunes_sistemi-03",
@@ -212,7 +436,7 @@
     "dogru": 3,
     "aciklama": "Dairesel yörünge hızı v = √(GM / r) ile verilir; r büyüdükçe gereken hız azalır. Derse göre Uzay İstasyonu saniyede yaklaşık 8 km giderken çok daha uzaktaki Ay saniyede yaklaşık 1 km yol alır.",
     "ders": "d3",
-    "bolum": 5
+    "bolum": 8
    },
    {
     "id": "gunes_sistemi-04",
@@ -226,7 +450,7 @@
     "dogru": 1,
     "aciklama": "Derse göre suyun yoğunluğu 1, Satürn'ünki 0,69 birimdir; bu onu sudan daha düşük yoğunluğa sahip tek gezegen yapar. Kütlesi Dünya'nın yaklaşık 95 katıdır, en yoğun gezegen ise Dünya'dır.",
     "ders": "d9",
-    "bolum": 5
+    "bolum": 8
    },
    {
     "id": "gunes_sistemi-05",
@@ -240,7 +464,7 @@
     "dogru": 3,
     "aciklama": "Derse göre gezegen Güneş'i dolanır, kendi kütleçekimiyle neredeyse küresel biçim alır ve yörüngesinin çevresini temizlemiştir. Plüton üçüncü koşulu sağlamadığı için cüce gezegen oldu; uydu sayısı tanımda yer almaz.",
     "ders": "d9",
-    "bolum": 8
+    "bolum": 14
    },
    {
     "id": "gunes_sistemi-06",
@@ -254,7 +478,7 @@
     "dogru": 0,
     "aciklama": "Derse göre Galileo uyduları ışık kirliliği yoğun bir gökte bile sıradan bir dürbünle kolayca görülür ve gezegenin çevresinde dolandıkları için konumları geceden geceye değişir. Dünya'dan kolayca görülen tek halka Satürn'ünkidir.",
     "ders": "d9",
-    "bolum": 5
+    "bolum": 8
    },
    {
     "id": "gunes_sistemi-07",
@@ -282,7 +506,7 @@
     "dogru": 1,
     "aciklama": "Derse göre uzak yüz de Güneş ışığı alır, yalnızca bize dönük değildir; yeni ayda tam gündüzdedir. Ay döner ama dönüşü dolanımıyla eşit sürer; librasyonla bile yüzeyin ancak yaklaşık %59'u görülür.",
     "ders": "d10",
-    "bolum": 2
+    "bolum": 3
    },
    {
     "id": "gunes_sistemi-09",
@@ -296,7 +520,7 @@
     "dogru": 3,
     "aciklama": "Baskül kuvveti ölçüp kilograma çevirir; kuvvet kütle × çekim ivmesidir. 60 × 1,62 ÷ 9,80 ≈ 9,9, yani yaklaşık 10 kg gösterir. Kütlen yine 60 kilogramdır; derse göre Ay'ın çekimi Dünya'nınkinin kabaca altıda biridir.",
     "ders": "d10",
-    "bolum": 4
+    "bolum": 5
    },
    {
     "id": "gunes_sistemi-10",
@@ -310,7 +534,7 @@
     "dogru": 0,
     "aciklama": "Derse göre iki kuyruk da Güneş'ten uzağa bakar; kuyruk gidiş yönünü değil Güneş'in tersini gösterir. Bu yüzden kuyruklu yıldız Güneş'ten uzaklaşırken kuyruk önden gider.",
     "ders": "d19",
-    "bolum": 3
+    "bolum": 6
    },
    {
     "id": "gunes_sistemi-11",
@@ -324,7 +548,7 @@
     "dogru": 1,
     "aciklama": "Derse göre uzaydaki taş meteoroittir; atmosferde yanarken meteor, yani kayan yıldız olur; atmosferi aşıp yere düşerse göktaşı (meteorit) adını alır.",
     "ders": "d19",
-    "bolum": 4
+    "bolum": 8
    },
    {
     "id": "gunes_sistemi-12",
@@ -338,7 +562,63 @@
     "dogru": 2,
     "aciklama": "P² = a³ ile a³ = 125 × 125 = 15.625 bulunur; bunun küp kökü 25'tir. Dersteki Halley örneğinde de aynı yolla 76 yıllık döneme yaklaşık 18 astronomik birimlik yarı büyük eksen karşılık gelir.",
     "ders": "d19",
-    "bolum": 3
+    "bolum": 6
+   },
+   {
+    "id": "d23-1",
+    "soru": "Egzoz hızı 4,5 km/s olan tek aşamalı bir roketin alçak yörüngeye çıkmak için 9,7 km/s delta-v kazanması gerekiyor. Tsiolkovsky denklemine göre kalkış kütlesinin yaklaşık ne kadarı yakıt olmalıdır?",
+    "secenekler": [
+     "Yaklaşık %46, çünkü 4,5 / 9,7 ≈ 0,46",
+     "Yaklaşık %68, çünkü yakıt payı delta-v ile doğru orantılı artar",
+     "Yaklaşık %88, çünkü kütle oranı e üssü (9,7 / 4,5) ≈ 8,6 olur",
+     "Yaklaşık %99, çünkü tek aşamalı roket hiç yük taşıyamaz"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre delta-v = egzoz hızı × ln (ıslak kütle / kuru kütle). 9,7 / 4,5 ≈ 2,156 ve e üssü 2,156 ≈ 8,63; kuru kütle başlangıcın yaklaşık %11,6'sı kalır, yani kalkış kütlesinin yaklaşık %88,4'ü yakıttır. Gereken yakıt delta-v ile doğru orantılı değil, üstel olarak büyür.",
+    "ders": "d23",
+    "bolum": 1
+   },
+   {
+    "id": "d23-2",
+    "soru": "Kütleçekim yardımıyla bir gezegenin yanından geçen uzay aracının hızı için hangisi doğrudur?",
+    "secenekler": [
+     "Gezegene göre hızı artar, Güneş'e göre değişmez",
+     "Gezegene göre ayrılırken geldiği hıza döner, ama Güneş'e göre hızı artabilir; bedeli gezegenin ölçülemeyecek kadar küçük yavaşlamasıdır",
+     "Gezegenin çekimi aracın hızını her iki ölçüye göre de kalıcı olarak artırır ve gezegen hiç etkilenmez",
+     "Araç yalnızca yönünü değiştirir; hız kazancı hiçbir ölçüye göre mümkün değildir"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre (NASA ve JPL) araç gezegene göre geldiği hızla ayrılır, ama gezegen Güneş çevresinde hareket ettiği için aracın Güneş'e göre hızı artar. Gezegen yörünge enerjisinin ölçülemeyecek kadar küçük bir kısmını yitirir; Physics World'e göre Voyager Jüpiter'i trilyon yılda yaklaşık 30 cm yavaşlattı. Voyager 2 bu yolla hızını iki katından fazla artırdı.",
+    "ders": "d23",
+    "bolum": 9
+   },
+   {
+    "id": "d23-3",
+    "soru": "Çin'in Tiangong istasyonu neden İstanbul'un (41,0° K) tam tepesinden geçebilir?",
+    "secenekler": [
+     "Çünkü yerdurgun yörüngededir ve hep İstanbul'un üstünde durur",
+     "Çünkü yörünge eğikliği yaklaşık 41,5°'dir; yer izi en çok bu enleme kadar kuzeye çıkar ve İstanbul bu sınırın hemen altındadır",
+     "Çünkü güneş eşzamanlı yörüngede, yaklaşık 98° eğikliktedir",
+     "Çünkü ISS'den daha yüksekte dolandığı için daha geniş bir alanı görür"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre bir uydu en çok yörünge eğikliği kadar kuzeye çıkan enlemlerin tepesinden geçebilir. Heavens-Above'a göre Ekim 2026 sonunda Tiangong 382 × 386 km yükseklikte ve 41,5° eğiklikte dolanıyordu; ISS 415 × 424 km ve 51,6°. Heavens-Above'ın Fetih tablosuna göre Tiangong'un 1 Kasım 2026 akşamı 18.54'te 90° yükseklikten geçmesi bekleniyordu.",
+    "ders": "d23",
+    "bolum": 10
+   },
+   {
+    "id": "d23-4",
+    "soru": "Kessler sendromu nedir?",
+    "secenekler": [
+     "Astronotlarda uzun süreli ağırlıksızlığın yol açtığı kemik kaybı",
+     "Yerdurgun uyduların yakıtı bitince mezarlık yörüngesine çıkarılması",
+     "Yörüngedeki çarpışmaların ürettiği parçaların yeni çarpışmalara yol açarak zincirleme çoğalması; Kessler ve Cour-Palais'in 1978'de hesapladığı çöp kuşağı tehlikesi",
+     "Roketlerin atmosferden geçerken sürtünmeyle ısınıp parçalanması"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre Kessler ve Cour-Palais 1978'de uydu sayısı arttıkça çarpışma olasılığının arttığını ve çarpışma parçalarının yeni çarpışmalar doğurarak bir çöp kuşağı oluşturabileceğini hesapladı. ESA'nın 2025 raporuna göre hiç yeni fırlatma olmasa bile çöp sayısı artmayı sürdürürdü. 10 Şubat 2009'daki Iridium 33 – Kosmos 2251 çarpışması gerçek bir örnektir.",
+    "ders": "d23",
+    "bolum": 13
    }
   ],
   "yildizlar": [
@@ -354,7 +634,7 @@
     "dogru": 1,
     "aciklama": "Stefan-Boltzmann yasasına göre birim alandan yayılan güç sıcaklığın dördüncü kuvvetiyle orantılıdır: 3600 ÷ 5780 ≈ 0,623 ve 0,623⁴ ≈ 0,15. Dersteki örnekte de umbra çevresinin %7 ile %37'si kadar ışık saçar; leke gerçekte parlaktır, yalnızca çevresine göre sönüktür.",
     "ders": "d4",
-    "bolum": 5
+    "bolum": 6
    },
    {
     "id": "yildizlar-02",
@@ -368,7 +648,7 @@
     "dogru": 3,
     "aciklama": "Derse göre güneş gözlükleri ne kadar koyu olursa olsun güvenli değildir, tutulma gözlüğüyle optik aletten bakılmaz ve filtre her zaman aletin önüne, objektif tarafına takılır. NASA iğne deliği yöntemini güvenli seçenekler arasında sayar.",
     "ders": "d4",
-    "bolum": 8
+    "bolum": 12
    },
    {
     "id": "yildizlar-03",
@@ -382,7 +662,7 @@
     "dogru": 0,
     "aciklama": "Derse göre toz taneleri mavi ışığı kırmızıdan daha çok soğurur ve saçar; buna sönükleştirme ve kızarma denir. Etki dalga boyu uzadıkça azalır, bu yüzden kızılötesi ışık tozdan geçer.",
     "ders": "d14",
-    "bolum": 2
+    "bolum": 3
    },
    {
     "id": "yildizlar-04",
@@ -396,7 +676,7 @@
     "dogru": 2,
     "aciklama": "Derse göre gaz ne kadar sıcaksa parçacıkları o kadar hızlı hareket eder ve dışa o kadar güçlü basınç yaratır; soğuk gaz bu basınçtan yoksundur. Moleküler bulutlar hacmin yüzde birinden azını kaplar ama gaz kütlesinin yaklaşık yarısını taşır.",
     "ders": "d14",
-    "bolum": 1
+    "bolum": 2
    },
    {
     "id": "yildizlar-05",
@@ -410,7 +690,7 @@
     "dogru": 1,
     "aciklama": "L = 1,5⁴ ≈ 5,1 Güneş ışıma gücü bulunur. Ömür ≈ 10 milyar × 1,5 ÷ 5,1 ≈ 3 milyar yıl. Derse göre kütleli yıldızın yakıtı fazladır ama onu çok daha hızlı harcadığı için daha kısa yaşar.",
     "ders": "d5",
-    "bolum": 5
+    "bolum": 9
    },
    {
     "id": "yildizlar-06",
@@ -424,7 +704,7 @@
     "dogru": 0,
     "aciklama": "Derse göre anakol yıldızlarının yaklaşık %76'sı M sınıfındadır, O yıldızlarının payı ise on milyonda üç kadardır. Kırmızı cücelerin neredeyse hiçbiri çıplak gözle görülmez; gökyüzü bize uzaktan bile parlayabilen az sayıdaki güçlü yıldızı gösterir.",
     "ders": "d5",
-    "bolum": 6
+    "bolum": 10
    },
    {
     "id": "yildizlar-07",
@@ -438,7 +718,7 @@
     "dogru": 3,
     "aciklama": "Derse göre küme yaşlandıkça önce en kütleli yıldızlar anakoldan ayrılır ve anakolun üst ucu yukarıdan aşağı doğru kısalır. Dönüm noktası ne kadar aşağıdaysa küme o kadar yaşlıdır.",
     "ders": "d15",
-    "bolum": 2
+    "bolum": 3
    },
    {
     "id": "yildizlar-08",
@@ -452,7 +732,7 @@
     "dogru": 2,
     "aciklama": "Derse göre kütle toplamı, Güneş kütlesi cinsinden a³ ÷ P² ile bulunur (a astronomik birim, P yıl). 8 × 8 × 8 = 512, 16 × 16 = 256; 512 ÷ 256 = 2. Bu, tek bir yıldızın değil, iki yıldızın toplam kütlesidir.",
     "ders": "d15",
-    "bolum": 4
+    "bolum": 5
    },
    {
     "id": "yildizlar-09",
@@ -508,7 +788,7 @@
     "dogru": 2,
     "aciklama": "Derse göre GW170817 iki nötron yıldızının birleşmesiydi ve hem kütleçekim dalgasıyla hem ışıkla gözlenen ilk olay oldu. İlk kara delik birleşmesi GW150914'tü; iki sinyalin yaklaşık iki saniye arayla gelmesi dalgaların ışıkla aynı hızda yayıldığını gösterir.",
     "ders": "d16",
-    "bolum": 8
+    "bolum": 11
    }
   ],
   "gezegen_yasam": [
@@ -552,7 +832,7 @@
     "dogru": 3,
     "aciklama": "Derse göre yaşanabilir bölge yüzeyde sıvı su olabilecek uzaklık kuşağıdır; bölgede olmak yaşanabilir olmak anlamına gelmez. Gezegenin büyüklüğü, atmosferi ve yıldızın türü de belirleyicidir.",
     "ders": "d13",
-    "bolum": 5
+    "bolum": 6
    },
    {
     "id": "gezegen_yasam-04",
@@ -580,7 +860,7 @@
     "dogru": 3,
     "aciklama": "Derse göre uzaklık, ışınımın karekökü oranında ölçeklenir: √9 = 3. 0,99 × 3 ≈ 3,0 ve 1,67 × 3 ≈ 5,0 AB bulunur. Parlak yıldızın bölgesi daha uzaktadır; bu yalnızca kaba bir ölçeklemedir.",
     "ders": "d13",
-    "bolum": 5
+    "bolum": 6
    },
    {
     "id": "gezegen_yasam-06",
@@ -594,7 +874,7 @@
     "dogru": 1,
     "aciklama": "Derse göre kent merkezinde çıplak göz sınırı 4,0–4,5 kadir civarına iner; bu yüzden 51 Pegasi'yi dürbünle, yıldız atlayarak aramalısın. Kanatlıat en yüksek konumuna eylül, ekim ve kasım akşamlarında ulaşır; ötegezegenin kendisi dürbünle görülmez.",
     "ders": "d13",
-    "bolum": 8
+    "bolum": 10
    },
    {
     "id": "gezegen_yasam-07",
@@ -622,7 +902,7 @@
     "dogru": 2,
     "aciklama": "Derse göre ışığın su moleküllerini parçalamasıyla oksijen yaşamsız da birikebilir, serpantinleşme de yaşamsız metan üretir. Dünya ise yaşam olduğu hâlde havasında oksijen biriktirmeden yaklaşık bir milyar yıl geçirdi.",
     "ders": "d18",
-    "bolum": 7
+    "bolum": 9
    },
    {
     "id": "gezegen_yasam-09",
@@ -636,7 +916,7 @@
     "dogru": 3,
     "aciklama": "Yoğunluk kütlenin hacme oranıdır ve hacim yarıçapın küpüyle büyür: 2 × 2 × 2 = 8. Yoğunluk oranı 2 ÷ 8 = 0,25 olur. Dersteki K2-18 b örneğinde de aynı yolla yoğunluk Dünya'nınkinin yaklaşık yarısı bulunur.",
     "ders": "d18",
-    "bolum": 7
+    "bolum": 9
    },
    {
     "id": "gezegen_yasam-10",
@@ -650,7 +930,7 @@
     "dogru": 1,
     "aciklama": "Derse göre Europa'nın yüzey sıcaklığı yaklaşık −133 ile −223 °C arasındadır; okyanusu sıvı tutan ısı Jüpiter'in kütleçekiminin uyduyu sürekli esnetmesinden, yani gelgit ısınmasından gelir.",
     "ders": "d18",
-    "bolum": 5
+    "bolum": 7
    },
    {
     "id": "gezegen_yasam-11",
@@ -664,7 +944,7 @@
     "dogru": 2,
     "aciklama": "Derse göre yıldız oluşum hızı ve gezegenli yıldız oranı gibi ilk çarpanlar artık ölçülebiliyor; ama yaşam, zekâ, teknoloji ve uygarlık ömrü çarpanları bilinmiyor. Bu yüzden denklem bir hesap değil, bir soru listesidir.",
     "ders": "d18",
-    "bolum": 8
+    "bolum": 11
    },
    {
     "id": "gezegen_yasam-12",
@@ -678,7 +958,7 @@
     "dogru": 0,
     "aciklama": "Derse göre ekstremofiller olası yaşam yerlerinin listesini genişletir ama orada yaşam olduğunu kanıtlamaz. Bir canlının uzayda bir süre hayatta kalması, orada yaşayıp çoğalabileceği anlamına gelmez.",
     "ders": "d18",
-    "bolum": 2
+    "bolum": 4
    }
   ],
   "evren": [
@@ -694,7 +974,7 @@
     "dogru": 1,
     "aciklama": "Derse göre erken ve geç tür adları yanlış bir evrim inancına yol açmıştır; Hubble böyle bir yorum kastetmediğini açıkça belirtmişti. NASA'ya göre Samanyolu çubuklu sarmaldır.",
     "ders": "d7",
-    "bolum": 3
+    "bolum": 4
    },
    {
     "id": "evren-02",
@@ -708,7 +988,7 @@
     "dogru": 3,
     "aciklama": "Derse göre Macellan Bulutları yaklaşık 20° ve 15° kuzey enleminin kuzeyinden görülmez; kara deliğin kendisi ise ışık yaymaz. Andromeda İstanbul'un göğündedir; ışığı geniş bir alana yayıldığı için ışıklı semtlerde dürbün işini kolaylaştırır.",
     "ders": "d7",
-    "bolum": 4
+    "bolum": 5
    },
    {
     "id": "evren-03",
@@ -722,7 +1002,7 @@
     "dogru": 0,
     "aciklama": "Derse göre enerjinin kaynağı merkezdeki dev kara deliktir: içeri düşen gaz kara deliğin çevresinde bir yığılma diski oluşturur, disk kütleçekimi ve sürtünmeyle çok ısınır ve parlak ışıma yapar.",
     "ders": "d7",
-    "bolum": 7
+    "bolum": 9
    },
    {
     "id": "evren-04",
@@ -736,7 +1016,7 @@
     "dogru": 2,
     "aciklama": "Derse göre yıldızların arası inanılmaz boştur; yıldızlar birbirinin yanından geçer ama kütleçekimleri yörüngelerini değiştirir. Gaz ise birbirine çarpıp yavaşlar ve yıldız doğumunu tetikleyebilir.",
     "ders": "d7",
-    "bolum": 6
+    "bolum": 7
    },
    {
     "id": "evren-05",
@@ -764,7 +1044,7 @@
     "dogru": 3,
     "aciklama": "Derse göre serbest elektronlar ışığı sürekli saçtığı için evren saydam değildi; sıcaklık yaklaşık 3000 kelvine düşünce nötr atomlar oluştu ve ışık serbest kaldı. O anın ışığını bugün kozmik mikrodalga arka plan ışıması olarak görüyoruz.",
     "ders": "d8",
-    "bolum": 4
+    "bolum": 5
    },
    {
     "id": "evren-07",
@@ -778,7 +1058,7 @@
     "dogru": 1,
     "aciklama": "Derse göre T(z) = T0 × (1 + z) ilişkisi geçerlidir: 2,725 × (1 + 4) = 2,725 × 5 ≈ 13,6 K. Geçmişte evren daha küçük olduğu için ışıma daha sıcaktı.",
     "ders": "d8",
-    "bolum": 4
+    "bolum": 5
    },
    {
     "id": "evren-08",
@@ -792,7 +1072,7 @@
     "dogru": 2,
     "aciklama": "Derse göre ilk yaklaşık 20 dakikada yalnızca helyum, döteryum, trityum ve lityum gibi hafif çekirdekler oluştu, sonra sıcaklık ve yoğunluk füzyon için fazla düştü. Karbon, oksijen ve demirin neredeyse tamamı çok sonra yıldızlarda üretildi.",
     "ders": "d8",
-    "bolum": 3
+    "bolum": 4
    },
    {
     "id": "evren-09",
@@ -806,7 +1086,7 @@
     "dogru": 0,
     "aciklama": "Derse göre uzaklık parsek cinsinden d = 1 / p ile bulunur: 1 ÷ 0,05 = 20 parsek. Işık yılına çevirmek için çarparsın: 20 × 3,26 ≈ 65 ışık yılı.",
     "ders": "d17",
-    "bolum": 2
+    "bolum": 3
    },
    {
     "id": "evren-10",
@@ -834,7 +1114,7 @@
     "dogru": 1,
     "aciklama": "Derse göre kütle görünen yıldızlarla bitseydi dıştaki yıldızlar daha yavaş dönmeliydi; oysa Rubin ve Ford yıldızların çoğunun kabaca aynı hızla döndüğünü buldu. Bu, kütlenin uzaklıkla birlikte arttığını ve görünmeyen bir kütle olduğunu gösterir.",
     "ders": "d17",
-    "bolum": 4
+    "bolum": 6
    },
    {
     "id": "evren-12",
@@ -848,7 +1128,7 @@
     "dogru": 2,
     "aciklama": "Derse göre çarpışan iki kümede sıcak gaz X-ışınlarıyla görüldü ve sürüklenmeyle yavaşladı; toplam kütlenin yeri ise kütleçekimsel mercek etkisinden ölçüldü. Karanlık madde yavaşlamadığı için kütlenin çoğu gazdan ayrı duruyor.",
     "ders": "d17",
-    "bolum": 5
+    "bolum": 7
    }
   ]
  }

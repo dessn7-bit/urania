@@ -134,7 +134,7 @@
 
   /* d1 · bölüm 5: İstanbul'da öğle Güneşi'nin yüksekliği (h = 90° − |φ − δ☉|, φ = 41,01°) ve aynı ışık demetinin yere yayılışı. */
   C.ekle('d1-ogle-gunesi', {
-    ders: 'd1', bolum: 5, oran: 0.86,
+    ders: 'd1', bolum: 7, oran: 0.86,
     baslik: 'İstanbul\'da öğle Güneşi: yaz, ekinoks, kış',
     aciklama: 'Üstte güneye bakan bir yan kesit var: öğle Güneşi Haziran gündönümünde 72,4°, ekinokslarda 49°, Aralık gündönümünde 25,6° yükseğe çıkar; aradaki farkları eksenin 23,44° eğikliği yaratır. Altta aynı genişlikte bir ışık demeti yere çarpıyor: Aralık\'ta yere yatık geldiği için yaklaşık 2,2 kat geniş bir alana yayılır, yani her metrekareye daha az enerji düşer. Açılar ölçeklidir.',
     kaynak: [KAYNAK.nasaDunya, KAYNAK.istanbul],
@@ -187,7 +187,7 @@
 
   /* d1 · bölüm 6: kadir ölçeği sayı doğrusu (ders metnindeki kaynaklı değerler), üstte tüm aralık, altta −6…+11 büyütülmüş. */
   C.ekle('d1-kadir-dogrusu', {
-    ders: 'd1', bolum: 6, oran: 0.78,
+    ders: 'd1', bolum: 8, oran: 0.78,
     baslik: 'Kadir ölçeği bir sayı doğrusu',
     aciklama: 'Sola gittikçe cisim parlaklaşır, sağa gittikçe sönükleşir. Üst doğru Güneş\'ten (−26,8) Hubble\'ın en derin görüntüsüne (+31,5) kadar uzanır; alttaki doğru eksi 6 ile artı 11 arasını büyütür: Venüs −4,92, Jüpiter −2,94, Sirius −1,46, Vega +0,03, Kutup Yıldızı +1,98, Andromeda +3,44, göz sınırı +6,5, 10×50 dürbün sınırı +9,5. Her 5 kadirlik adım 100 kat parlaklık farkıdır.',
     kaynak: [KAYNAK.kadir, KAYNAK.nasaAy],
@@ -263,7 +263,7 @@
 
   /* d2 · bölüm 1: elektromanyetik tayf şeridi ve görünür ışık. */
   C.ekle('d2-tayf', {
-    ders: 'd2', bolum: 1, oran: 0.62,
+    ders: 'd2', bolum: 2, oran: 0.62,
     baslik: 'Elektromanyetik tayf',
     aciklama: 'Şerit soldan sağa dalga boyunun büyüdüğü sırayla gama, X ışını, morötesi, görünür ışık, kızılötesi, mikrodalga ve radyo bantlarını gösterir; eksen logaritmiktir, her çentik bin kat demektir. Görünür ışık bu şeritte ince bir dilimdir; altta büyütülmüş hâli var: göz yaklaşık 380 nm mordan 700 nm kırmızıya kadar görür. Bant sınırları NASA çizelgesinden alınmıştır ve yaklaşıktır.',
     kaynak: [KAYNAK.nasaTayf, KAYNAK.nasaGorunur],
@@ -310,7 +310,7 @@
 
   /* d2 · bölüm 4: Planck yasasıyla hesaplanan kara cisim eğrileri; Rigel 12.100 K, Güneş 5772 K, Betelgeuse 3800 K. */
   C.ekle('d2-kara-cisim', {
-    ders: 'd2', bolum: 4, oran: 0.72,
+    ders: 'd2', bolum: 5, oran: 0.72,
     baslik: 'Üç sıcaklıkta kara cisim eğrisi',
     aciklama: 'Eğriler Planck yasasıyla hesaplandı: Rigel 12.100 K, Güneş 5772 K, Betelgeuse 3800 K. Sıcak cisim her dalga boyunda daha çok ışır ve tepesi kısa dalgaya kayar: Rigel 239 nanometrede, yani morötesinde, Güneş 502 nanometrede, Betelgeuse 763 nanometrede, yani kızılötesinin başında tepe yapar. Dikey eksen logaritmiktir, her çentik 10 kat demektir; gölgeli şerit görünür ışıktır.',
     kaynak: [KAYNAK.nist, KAYNAK.wien, KAYNAK.nasaGunes],
@@ -357,7 +357,7 @@
 
   /* d2 · bölüm 6: Kirchhoff düzeni ve hidrojenin Balmer çizgileri (havada, Wikipedia: Balmer series). */
   C.ekle('d2-cizgiler', {
-    ders: 'd2', bolum: 6, oran: 0.86,
+    ders: 'd2', bolum: 7, oran: 0.86,
     baslik: 'Sürekli tayf, soğurma ve salma',
     aciklama: 'Sıcak, yoğun bir kaynağa doğrudan bakarsan kesintisiz bir tayf görürsün. Aynı kaynağa önündeki daha soğuk, seyrek hidrojen gazının ardından bakarsan belirli dalga boylarında karanlık soğurma çizgileri çıkar. Gaza yandan, kaynağı görmeden bakarsan tam aynı dalga boylarında parlak salma çizgileri görürsün; en kırmızısı 656,28 nanometredeki H-alfa çizgisidir. Yalnız hidrojen çizgileri gösterildi; üst düzen ölçeksizdir.',
     kaynak: [KAYNAK.balmer, KAYNAK.fraunhofer],
@@ -403,7 +403,7 @@
 
   /* d2 · bölüm 8: atmosfer pencereleri (optik 300 nm–2 μm, kızılötesi 8–14 μm, radyo 0,3 mm–30 m). */
   C.ekle('d2-pencereler', {
-    ders: 'd2', bolum: 8, oran: 0.56,
+    ders: 'd2', bolum: 11, oran: 0.56,
     baslik: 'Atmosfer pencereleri',
     aciklama: 'Yukarıdan gelen oklar tayfın her bölgesinden ışığı temsil eder; çoğu atmosfer katmanında durur. Yere ulaşanlar üç pencereden geçer: yaklaşık 300 nm ile 2 μm arasındaki optik pencere, 8 ile 14 μm arasındaki kızılötesi pencere ve 0,3 mm ile 30 metre arasındaki radyo penceresi. Yatay eksen logaritmiktir; aradaki kısmi geçirgenlikler gösterilmedi.',
     kaynak: [KAYNAK.optikPencere, KAYNAK.radyoPencere, KAYNAK.nasaTayf],
@@ -577,7 +577,7 @@
 
   /* d12 · bölüm 6: ayırma gücü karşılaştırması (log eksen) ve atmosferin görüş bandı 0,4–1″. */
   C.ekle('d12-ayirma-gorus', {
-    ders: 'd12', bolum: 6, oran: 0.68,
+    ders: 'd12', bolum: 8, oran: 0.68,
     baslik: 'Aletlerin keskinliği ve atmosfer',
     aciklama: 'Çubuk ne kadar kısaysa alet o kadar ince ayrıntı seçer; eksen logaritmiktir. Göz yaklaşık 60 yay saniyesi, Galileo\'nun 37 milimetrelik objektifi 3,7, 100 milimetrelik teleskop 1,38, Hubble 0,05, Doğu Anadolu Gözlemevi\'nin 4 metrelik teleskobu görünür ışıktaki kırınım sınırıyla yaklaşık 0,03 yay saniyesi. Gölgeli şerit atmosferin en iyi yerlerdeki 0,4 ile 1 yay saniyelik titreşimidir: yerdeki büyük teleskobun keskinliğini aynası değil havası belirler, Hubble ise bunun altına iner.',
     kaynak: [KAYNAK.ayirma, KAYNAK.gozPlak, KAYNAK.gorus, KAYNAK.dag, KAYNAK.hubble],
@@ -644,7 +644,7 @@
 
   /* d11 · bölüm 5: 6°'lik örnek görüş alanı, içine sığan 12 dolunay ve el ölçüleri (ölçekli çubuklar). */
   C.ekle('d11-gorus-alani', {
-    ders: 'd11', bolum: 5, oran: 0.85,
+    ders: 'd11', bolum: 7, oran: 0.85,
     baslik: 'Dürbün görüş alanı, dolunay ve el ölçüleri',
     aciklama: 'Daire 6°\'lik örnek bir dürbün görüş alanıdır; içinden yan yana yarımşar derecelik 12 dolunay geçer. Alttaki çubuklar aynı ölçekte: kol uzunluğunda yumruk yaklaşık 10°, üç parmak 5°, serçe parmak 1°, dolunay 0,5°. Görüş alanı bir yumruktan küçük, üç parmaktan biraz büyüktür.',
     kaynak: [KAYNAK.el, KAYNAK.atlama],
@@ -670,7 +670,7 @@
 
   /* d11 · bölüm 7: İstanbul'dan (41°) hedeflerin meridyendeki yüksekliği A = 90° − 41° + δ. Açılar ölçekli. */
   C.ekle('d11-hedef-yukseklik', {
-    ders: 'd11', bolum: 7, oran: 0.56,
+    ders: 'd11', bolum: 9, oran: 0.56,
     baslik: 'Dürbün hedeflerinin İstanbul\'daki en yüksek konumu',
     aciklama: 'Güneye bakan yan kesitte her hedef gökte en yükseğe çıktığı anda gösterildi: Deniz Kulağı Bulutsusu (M8) yalnızca 24,6°, Orion Bulutsusu (M42) 43,6°, Ülker 73,1°, M13 85,5° yükselir; Andromeda (M31) başucunun 0,3° kuzeyinden geçer. Alçaktaki M8 için güney ufku açık bir yer gerekir.',
     kaynak: [KAYNAK.messier],

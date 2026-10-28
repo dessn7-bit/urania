@@ -1,11 +1,11 @@
 """Ders bölümleri genişletilince (araya yeni bölüm girince) bölüm DİZİNİNE bağlı her şeyi yeni dizine taşır:
 ders çizimleri (cizim_*.js: ders: 'dX', bolum: N), ders içi deneyler (dersler.js MINI) ve ünite sınavları
 (veri/sinavlar.json: ders, bolum). Eşleme bölüm BAŞLIĞIYLA yapılır: genişletmede mevcut başlıklar aynen kalır.
-Kullanım: python3 araclar/bolum_esle.py [önceki_başlıklar.json]   (varsayılan arastirma/dersler_v2/bolum_basliklari_v31.json)
+Kullanım: python3 araclar/bolum_esle.py [önceki_başlıklar.json]   (varsayılan arastirma/dersler_v2/bolum_basliklari_v32.json; v31→v32 eşlemesi 29.10.2026'da uygulandı)
 Bir kez çalıştırılır; sonra önceki başlık dosyası güncellenir (aynı eşleme iki kez uygulanmasın)."""
 import json, os, re, sys, glob
 K = os.path.join(os.path.dirname(__file__), '..')
-onceki_yol = sys.argv[1] if len(sys.argv) > 1 else os.path.join(K, 'arastirma/dersler_v2/bolum_basliklari_v31.json')
+onceki_yol = sys.argv[1] if len(sys.argv) > 1 else os.path.join(K, 'arastirma/dersler_v2/bolum_basliklari_v32.json')
 onceki = json.load(open(onceki_yol, encoding='utf-8'))
 yeni = {d['id']: [b['baslik'] for b in d['bolumler']] for d in json.load(open(os.path.join(K, 'veri/dersler.json'), encoding='utf-8'))['dersler']}
 esle, hata = {}, []

@@ -378,42 +378,50 @@
     {
       "deger": "Çekirdek yarıçapı ~2000 km (yarıçapın %80'i); 430 °C / −180 °C",
       "aciklama": "Merkür'ün çekirdeği ve sıcaklık uçları",
-      "kaynak_url": "https://www.nasa.gov/wp-content/uploads/2009/12/mercury_lithograph.pdf"
+      "kaynak_url": "https://www.nasa.gov/wp-content/uploads/2009/12/mercury_lithograph.pdf",
+      "kid": "d9n20"
     },
     {
       "deger": "21 Kasım 2026; bilim evresi Nisan 2027",
       "aciklama": "BepiColombo'nun Merkür yörüngesine girişi (plan)",
-      "kaynak_url": "https://www.esa.int/Science_Exploration/Space_Science/BepiColombo/Latest_updates_BepiColombo_s_arrival_at_Mercury"
+      "kaynak_url": "https://www.esa.int/Science_Exploration/Space_Science/BepiColombo/Latest_updates_BepiColombo_s_arrival_at_Mercury",
+      "kid": "d9n21"
     },
     {
       "deger": "1000'den fazla volkan; 4 günde bir tur (≈360 km/sa)",
       "aciklama": "Venüs'ün volkanları ve bulut tepelerinin süper dönmesi",
-      "kaynak_url": "https://www.nasa.gov/sites/default/files/files/Venus_Lithograph.pdf"
+      "kaynak_url": "https://www.nasa.gov/sites/default/files/files/Venus_Lithograph.pdf",
+      "kid": "d9n22"
     },
     {
       "deger": "Olympus Mons ~25 km; Valles Marineris 7 km derin",
       "aciklama": "Mars'ın en büyük volkanı ve en derin kanyonu",
-      "kaynak_url": "https://www.nhm.ac.uk/discover/planet-mars.html"
+      "kaynak_url": "https://www.nhm.ac.uk/discover/planet-mars.html",
+      "kid": "d9n23"
     },
     {
       "deger": "~20.000 kat; 1979",
       "aciklama": "Jüpiter'in manyetik alanı (Dünya'ya göre) ve halkasının keşif yılı (Voyager 1)",
-      "kaynak_url": "https://webarchive.library.unt.edu/eot2008/20080923101121/http:/solarsystem.nasa.gov/multimedia/downloads/11_Jupiter_Litho_FC.pdf"
+      "kaynak_url": "https://webarchive.library.unt.edu/eot2008/20080923101121/http:/solarsystem.nasa.gov/multimedia/downloads/11_Jupiter_Litho_FC.pdf",
+      "kid": "d9n24"
     },
     {
       "deger": "282.000 km geniş, ~1 km kalın; 23 Mart 2025",
       "aciklama": "Satürn halkalarının boyutu ve son kenardan görünüşü",
-      "kaynak_url": "https://www.skyatnightmagazine.com/space-science/saturn-ring-plane-crossing"
+      "kaynak_url": "https://www.skyatnightmagazine.com/space-science/saturn-ring-plane-crossing",
+      "kid": "d9n25"
     },
     {
       "deger": "10 Mart 1977; 13 halka",
       "aciklama": "Uranüs halkalarının yıldız örtülmesiyle keşfi ve bugünkü sayısı",
-      "kaynak_url": "https://www.nature.com/articles/267328a0"
+      "kaynak_url": "https://www.nature.com/articles/267328a0",
+      "kid": "d9n26"
     },
     {
       "deger": "Uranüs 5,6 kadir (Boğa, karşı konum 25–26 Kasım 2026 gecesi); Neptün 7,8 kadir (Balıklar)",
       "aciklama": "2026'da buz devlerinin parlaklığı ve yeri",
-      "kaynak_url": "https://space.com/stargazing/what-to-expect-from-the-planets-in-2026-key-dates-and-sky-events"
+      "kaynak_url": "https://space.com/stargazing/what-to-expect-from-the-planets-in-2026-key-dates-and-sky-events",
+      "kid": "d9n27"
     }
   ],
   "sozluk": [
@@ -484,27 +492,33 @@
     },
     {
       "terim": "Ekzosfer",
-      "tanim": "Merkür gibi atmosferi olmayan cisimlerin çevresindeki, gaz atomlarının neredeyse hiç çarpışmadığı çok seyrek dış katman."
+      "tanim": "Merkür gibi atmosferi olmayan cisimlerin çevresindeki, gaz atomlarının neredeyse hiç çarpışmadığı çok seyrek dış katman.",
+      "kid": "d9t13"
     },
     {
       "terim": "Süper dönme",
-      "tanim": "Bir gezegenin atmosferinin gezegenin kendisinden çok daha hızlı dönmesi; Venüs'ün bulutları 4 günde, gezegen 243 günde bir tur atar."
+      "tanim": "Bir gezegenin atmosferinin gezegenin kendisinden çok daha hızlı dönmesi; Venüs'ün bulutları 4 günde, gezegen 243 günde bir tur atar.",
+      "kid": "d9t14"
     },
     {
       "terim": "Metalik hidrojen",
-      "tanim": "Çok yüksek basınçta sıkışan hidrojenin elektriği bir metal gibi ilettiği hâli; Jüpiter ve Satürn'ün derinlerinde bulunur."
+      "tanim": "Çok yüksek basınçta sıkışan hidrojenin elektriği bir metal gibi ilettiği hâli; Jüpiter ve Satürn'ün derinlerinde bulunur.",
+      "kid": "d9t15"
     },
     {
       "terim": "Kar çizgisi",
-      "tanim": "Genç bir yıldızın diskinde suyun ve öbür uçucu maddelerin buz olarak katılaşabildiği en yakın uzaklık; kayalık ve dev gezegenleri ayırır."
+      "tanim": "Genç bir yıldızın diskinde suyun ve öbür uçucu maddelerin buz olarak katılaşabildiği en yakın uzaklık; kayalık ve dev gezegenleri ayırır.",
+      "kid": "d9t16"
     },
     {
       "terim": "Yıldız örtülmesi",
-      "tanim": "Bir gök cisminin bir yıldızın önünden geçerek onu kısa süre karartması; Uranüs'ün halkaları böyle bulundu."
+      "tanim": "Bir gök cisminin bir yıldızın önünden geçerek onu kısa süre karartması; Uranüs'ün halkaları böyle bulundu.",
+      "kid": "d9t17"
     },
     {
       "terim": "Kalkan volkanı",
-      "tanim": "Akışkan lavların üst üste yayılmasıyla oluşan, geniş ve yayvan eğimli volkan; Olympus Mons böyledir."
+      "tanim": "Akışkan lavların üst üste yayılmasıyla oluşan, geniş ve yayvan eğimli volkan; Olympus Mons böyledir.",
+      "kid": "d9t18"
     }
   ],
   "defter_notu": [
@@ -577,27 +591,33 @@
     },
     {
       "soru": "NASA Merkür'ün çekirdeğinin yarıçapın yaklaşık %80'i olduğunu, Planetary Society ise gezegenin yaklaşık yarısını kapladığını söylüyor. Hangisi doğru?",
-      "cevap": "İkisi de. Biri yarıçaptan, öbürü hacimden söz eder. Hacim yarıçapın küpüyle orantılı olduğu için 0,8³ ≈ 0,51; yarıçapın %80'ini kaplayan çekirdek hacmin yaklaşık yarısını kaplar."
+      "cevap": "İkisi de. Biri yarıçaptan, öbürü hacimden söz eder. Hacim yarıçapın küpüyle orantılı olduğu için 0,8³ ≈ 0,51; yarıçapın %80'ini kaplayan çekirdek hacmin yaklaşık yarısını kaplar.",
+      "kid": "d9s11"
     },
     {
       "soru": "Venüs'te bir tur 243 gün sürdüğü hâlde bulutlar gezegenin çevresini neden 4 günde dolanır?",
-      "cevap": "Atmosfer gezegenden bağımsız, çok daha hızlı döner; buna süper dönme denir. NASA'ya göre bulut tepeleri saatte ~360 km esen rüzgârlarla 4 günde bir tur atar. 243 / 4 ≈ 60, yani bulutlar yüzeyden ~60 kat hızlı döner."
+      "cevap": "Atmosfer gezegenden bağımsız, çok daha hızlı döner; buna süper dönme denir. NASA'ya göre bulut tepeleri saatte ~360 km esen rüzgârlarla 4 günde bir tur atar. 243 / 4 ≈ 60, yani bulutlar yüzeyden ~60 kat hızlı döner.",
+      "kid": "d9s12"
     },
     {
       "soru": "Satürn'ün halkaları 2025'te neden neredeyse kayboldu?",
-      "cevap": "Satürn'ün ekseni ~26,7° eğik olduğu için Satürn Güneş'in çevresinde dolanırken halkalar bize bazen açık, bazen kenardan görünür. 23 Mart 2025'te Dünya halka düzleminden geçti; ~282.000 km geniş ama yalnız ~1 km (yer yer 10 m) kalın halkalar kenardan bakınca neredeyse görünmez oldu. Bu ~15 yılda bir olur."
+      "cevap": "Satürn'ün ekseni ~26,7° eğik olduğu için Satürn Güneş'in çevresinde dolanırken halkalar bize bazen açık, bazen kenardan görünür. 23 Mart 2025'te Dünya halka düzleminden geçti; ~282.000 km geniş ama yalnız ~1 km (yer yer 10 m) kalın halkalar kenardan bakınca neredeyse görünmez oldu. Bu ~15 yılda bir olur.",
+      "kid": "d9s13"
     },
     {
       "soru": "İstanbul'un ışıklı bir semtinde 7×50 dürbünle Uranüs'ü mü, Neptün'ü mü bulman daha olasıdır? Neden?",
-      "cevap": "Uranüs'ü. Kentte çıplak gözle sınır ~+3 kadir, dürbün ~4,3 kadir ekler; sınır ~7,3 kadir. Uranüs 5,6 kadirle bu sınırın içinde, Neptün 7,8 kadirle dışında kalır. Neptün için daha karanlık bir gök gerekir."
+      "cevap": "Uranüs'ü. Kentte çıplak gözle sınır ~+3 kadir, dürbün ~4,3 kadir ekler; sınır ~7,3 kadir. Uranüs 5,6 kadirle bu sınırın içinde, Neptün 7,8 kadirle dışında kalır. Neptün için daha karanlık bir gök gerekir.",
+      "kid": "d9s14"
     },
     {
       "soru": "Kayalık gezegenler neden içte, dev gezegenler neden dışta?",
-      "cevap": "Kar çizgisinin içinde sıcaklık yüksek olduğu için yalnız kaya ve metal gibi ağır bileşikler katılaşabildi; az malzemeden küçük kayalık gezegenler oluştu. Dışında su ve öbür uçucu maddeler de buza dönüştü; katı malzeme ~5 kat arttı, büyüyen çekirdekler hidrojen ve helyumu da çekip dev oldu. Çizginin yeri modele göre ~2,7–5 AB arası verilir."
+      "cevap": "Kar çizgisinin içinde sıcaklık yüksek olduğu için yalnız kaya ve metal gibi ağır bileşikler katılaşabildi; az malzemeden küçük kayalık gezegenler oluştu. Dışında su ve öbür uçucu maddeler de buza dönüştü; katı malzeme ~5 kat arttı, büyüyen çekirdekler hidrojen ve helyumu da çekip dev oldu. Çizginin yeri modele göre ~2,7–5 AB arası verilir.",
+      "kid": "d9s15"
     },
     {
       "soru": "Triton'un Neptün'ün yanında doğmadığı neden düşünülür?",
-      "cevap": "Triton, gezegeninin dönüşüne ters yönde dolanan tek büyük uydudur. NASA'ya göre bilim insanları onu Neptün'ün çekimine yakalanmış bir Kuiper kuşağı cismi olarak görür; sıra dışı yörünge yönü bu açıklamayla uyumludur."
+      "cevap": "Triton, gezegeninin dönüşüne ters yönde dolanan tek büyük uydudur. NASA'ya göre bilim insanları onu Neptün'ün çekimine yakalanmış bir Kuiper kuşağı cismi olarak görür; sıra dışı yörünge yönü bu açıklamayla uyumludur.",
+      "kid": "d9s16"
     }
   ],
   "kaynaklar": [

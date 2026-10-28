@@ -295,3 +295,24 @@ Yöntem: WebSearch 8 arama. WebFetch yalnız proje dosyalarındaki ya da bu aram
 ### Erişilemeyenler
 - https://www.pas.rochester.edu/~emamajek/EEM_dwarf_UBVIJHK_colors_Teff.txt ve https://physics.nist.gov/cgi-bin/cuu/Value?bg: bu oturumda izin isteği yanıtlanmadı, tekrar denenmedi; ilgili değerler proje dosyalarından (simulasyon_tablolari.json, d3_kaynak.md) alındı.
 - Ballesteros B−V → sıcaklık formülü: Wikipedia Color index sayfasında formül metni okunamadı; derse konmadı.
+
+## Bağımsız doğrulama (v3, 2026-10-28)
+
+[DOĞ] = doğrulama ajanı bu oturumda WebFetch ile yeniden okudu.
+
+| İddia | Kaynak URL | Kaynaktaki ifade / hesap |
+|---|---|---|
+| [DOĞ] Vogt fikri 1926'da ortaya attı (yayın yok), ilk biçimsel yayını 1931 AN; Russell 1931 MNRAS, 1933 JRASC → derste "1920'lerin sonu" yerine "1920'lerin ikinci yarısı ile 1930'ların başında" | https://en.wikipedia.org/wiki/Vogt%E2%80%93Russell_theorem | "uniquely determined by the total mass and the initial chemical composition" ; "despite not providing a mathematical proof of uniqueness" ; "multiple mathematical solutions may exist" ; rapid rotation, strong magnetic fields, not in thermal equilibrium |
+| DÜZELTME: "anakolun iki ucu arasında yalnızca 30 kat" — M3V (0,361 R☉) anakolun soğuk ucu değil (M sınıfı 0,08 M☉'e kadar iner; satır 12 ve 58), bu yüzden "iki uç" ifadesi yanlıştı → "bu iki anakol yıldızı arasında"; akılda kutusundaki "0,36 ile 11,5 arasındadır" da "M3 cücesinde ~0,36, O5 yıldızında ~11,5" yapıldı. Mamajek tablosu bu oturumda da izin hatası verdi (yeniden denenmedi) | — | — |
+| DÜZELTME: "dev evreleri günün son dört saatine sığar" — HESAP 24 − 9,6 × 24 / 11,72 = 4,34 sa → "son 4 saat 20 dakikası kadarına" | — | python3 |
+| [DOĞ] Mutlak kadir: 10 pc; 1 pc = 3,2616 ışık yılı; Güneş +4,83; Sirius 1,4; Rigel −7,8; Deneb −8,4; gezegenleri bastırıp gölge düşürme; bolometrik | https://en.wikipedia.org/wiki/Absolute_magnitude | alıntılar tuttu |
+| [DOĞ] Bahcall: Helmholtz, Kelvin, 30 milyon yıl, 1862 "20,000,000 years' heat", Weald 300 milyon yıl, "Lord Kelvin was wrong", Aston, Bethe 1939 | https://arxiv.org/pdf/astro-ph/0009259 | alıntılar tuttu |
+| [DOĞ] t_KH = GM²/RL, ~30 milyon yıl; önyıldız çöküşü ve deve geçiş | https://www.astro.sunysb.edu/fwalter/AST101/k-h.html | "tKH = GM2/RL" ; "about 30 million years" |
+| [DOĞ] Konveksiyon/ışınım, 0,4 M☉, 1,3–1,5 M☉, orantısız uzun ömür | https://en.wikipedia.org/wiki/Main_sequence | alıntılar tuttu |
+| [DOĞ] Metalisite, [Fe/H], Baade 1944, Pop II 1/1000–1/10, Pop III 1978, < −6 | https://en.wikipedia.org/wiki/Metallicity | alıntılar tuttu (IPFS kopyası yerine özgün sayfa) |
+| [DOĞ] Arcturus: 1,08 ± 0,06 M☉; ~170 L☉; 4286 ± 30 K; 6–8,5 milyar yıl; [Fe/H] −0,52; üçte bir; yaşlı disk, Pop II olabilir; evrim durumu belirsiz; K1.5III; Çoban | https://en.wikipedia.org/wiki/Arcturus | alıntılar tuttu |
+| [DOĞ] Deneb: 1400–2600 ışık yılı; 55.000–196.000 L☉ (uzaklık belirsiz); çap 100–200 kat (sıcaklık, ışıma gücü, açısal çap); −8,4; A2Ia; Yaz Üçgeni | https://en.wikipedia.org/wiki/Deneb | alıntılar tuttu |
+| [DOĞ] Betelgeuse ~700 kat, Jüpiter yörüngesini aşar | https://science.nasa.gov/universe/what-is-betelgeuse-inside-the-strange-volatile-star | "about 700 times the size of the Sun" ; "it would stretch past Jupiter's orbit" |
+| [DOĞ] Güneş'in takvimi (altdev 1 milyar yıl, RGB 1 milyar yıl, 1/3 kütle, 256 kat, 1,19 AB, 1,5 AB, 7,59 milyar yıl, helyum parlaması %6 / %40, 10 kat / 50 kat, 100 milyon yıl, 20 milyon yıl, 100.000 yıl, 5000 kat, 179 R☉, dört atım, süpernova yok, gezegenimsi bulutsu) | https://en.wikipedia.org/wiki/Sun | alıntılar tuttu |
+| [DOĞ] Birinci kadir tablosu: 14 yıldızın tayf türleri ve kadirleri, Vega 25, Sirius 8,6 ışık yılı | https://en.wikipedia.org/wiki/First-magnitude_star | tablo birebir tuttu |
+| [HESAP yeniden] Sirius M = +1,43; KH 9,90e14 s = 31,4 milyon yıl, ×148; 1 − 0,713³ = 0,6375; 10^−0,52 = 0,302; 1,08⁴ = 1,3605 → 7,94 / 8,25 milyar yıl; 25,4³ = 16.387 → 0,093 kg/m³; 700³ = 3,43e8; 0,361³ = 0,047; Güneş günü 9.25 / 19.40 / 23.45, 12,3 dk, 2,46 dk; Vega–Deneb 3,08 → 1019 / 3516; Arcturus 23,65 R☉; meridyen yükseklikleri 22,6 / 32,3 / 40,8 / 68,2° | — | python3; hepsi dersle uyumlu |

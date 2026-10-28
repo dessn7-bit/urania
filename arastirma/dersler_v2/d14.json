@@ -279,32 +279,38 @@
     {
       "deger": "1.420,4 MHz; 21,1 cm; ~11 milyon yıl",
       "aciklama": "Nötr hidrojenin 21 cm çizgisi: frekansı, dalga boyu ve uyarılmış durumun ortalama ömrü (öngörü 1944, saptama 1951)",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Hydrogen_line"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Hydrogen_line",
+      "kid": "d14n10"
     },
     {
       "deger": "~1 kadir/kiloparsek; galaksi merkezine doğru 30 kadire kadar",
       "aciklama": "Tozun görünür ışıkta ortalama sönükleştirmesi (Trumpler 1930) ve galaksi merkezi yönünde sönükleşme",
-      "kaynak_url": "https://www.astro.utu.fi/~cflynn/galdyn/l13.html"
+      "kaynak_url": "https://www.astro.utu.fi/~cflynn/galdyn/l13.html",
+      "kid": "d14n11"
     },
     {
       "deger": "~4 milyon yıl; ~%1",
       "aciklama": "Dev moleküler bulutların (100 parçacık/cm³) serbest düşüş süresi ve bir serbest düşüş süresinde yıldıza dönüşen gaz oranı",
-      "kaynak_url": "https://arxiv.org/pdf/1101.5172"
+      "kaynak_url": "https://arxiv.org/pdf/1101.5172",
+      "kid": "d14n12"
     },
     {
       "deger": "−2,35 (Salpeter, 1955)",
       "aciklama": "Başlangıç kütle fonksiyonunun üssü: yıldız sayısı kütlenin −2,35'inci kuvvetiyle azalır",
-      "kaynak_url": "https://dictionary.obspm.fr/terms/initial-mass-function-imf/"
+      "kaynak_url": "https://dictionary.obspm.fr/terms/initial-mass-function-imf/",
+      "kid": "d14n13"
     },
     {
       "deger": "2 Temmuz 2018; ~20 AB; ~1.000 °C",
       "aciklama": "PDS 70 b: oluşum hâlinde doğrulanmış ilk gezegen görüntüsü (ESO VLT/SPHERE)",
-      "kaynak_url": "https://eso.org/public/news/eso1821/"
+      "kaynak_url": "https://eso.org/public/news/eso1821/",
+      "kid": "d14n14"
     },
     {
       "deger": "~100 parsek",
       "aciklama": "Güneş'i içine alan Yerel Kabarcık'ın yarıçapı",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Interstellar_medium"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Interstellar_medium",
+      "kid": "d14n15"
     }
   ],
   "sozluk": [
@@ -365,23 +371,28 @@
     },
     {
       "terim": "21 cm çizgisi",
-      "tanim": "Nötr hidrojen atomunda elektron spininin ters dönmesiyle salınan, 1.420,4 MHz frekanslı ve tozdan geçen radyo çizgisi."
+      "tanim": "Nötr hidrojen atomunda elektron spininin ters dönmesiyle salınan, 1.420,4 MHz frekanslı ve tozdan geçen radyo çizgisi.",
+      "kid": "d14t11"
     },
     {
       "terim": "Yerel Kabarcık",
-      "tanim": "Güneş'i içine alan, yarıçapı yaklaşık 100 parsek olan, sıcak ve çok seyrek gazla dolu bölge."
+      "tanim": "Güneş'i içine alan, yarıçapı yaklaşık 100 parsek olan, sıcak ve çok seyrek gazla dolu bölge.",
+      "kid": "d14t12"
     },
     {
       "terim": "Serbest düşüş süresi",
-      "tanim": "Basıncı olmayan bir gaz bulutunun yalnızca kendi kütleçekimiyle çökmesi için geçen, yalnızca yoğunluğa bağlı süre."
+      "tanim": "Basıncı olmayan bir gaz bulutunun yalnızca kendi kütleçekimiyle çökmesi için geçen, yalnızca yoğunluğa bağlı süre.",
+      "kid": "d14t13"
     },
     {
       "terim": "Başlangıç kütle fonksiyonu",
-      "tanim": "Yeni doğan yıldızların kütlelerine göre sayıca nasıl dağıldığını anlatan bağıntı."
+      "tanim": "Yeni doğan yıldızların kütlelerine göre sayıca nasıl dağıldığını anlatan bağıntı.",
+      "kid": "d14t14"
     },
     {
       "terim": "FU Orionis patlaması",
-      "tanim": "Genç bir yıldızın üzerine bir anda çok madde düşmesiyle parlaklığının birkaç yılda 3–5 kadir artması."
+      "tanim": "Genç bir yıldızın üzerine bir anda çok madde düşmesiyle parlaklığının birkaç yılda 3–5 kadir artması.",
+      "kid": "d14t15"
     }
   ],
   "defter_notu": [
@@ -444,27 +455,33 @@
     },
     {
       "soru": "Hartmann 1904'te Mintaka'nın tayfında neyi fark etti ve bundan neden yıldızlararası gaz sonucunu çıkardı?",
-      "cevap": "Mintaka bir çift yıldızdır; üyeleri dolanırken tayf çizgileri Doppler kaymasıyla ileri geri oynar. Ama kalsiyumun K çizgisi keskin ve yerinde sabitti. Yıldızla birlikte hareket etmeyen bir çizgi yıldızın atmosferinden gelemezdi; ışığı yolda, bizimle yıldız arasındaki bir gaz bulutu soğuruyordu."
+      "cevap": "Mintaka bir çift yıldızdır; üyeleri dolanırken tayf çizgileri Doppler kaymasıyla ileri geri oynar. Ama kalsiyumun K çizgisi keskin ve yerinde sabitti. Yıldızla birlikte hareket etmeyen bir çizgi yıldızın atmosferinden gelemezdi; ışığı yolda, bizimle yıldız arasındaki bir gaz bulutu soğuruyordu.",
+      "kid": "d14s9"
     },
     {
       "soru": "Hidrojenin 21 cm çizgisinin frekansı 1.420,4 MHz'tir. Dalga boyunu hesapla ve bu çizginin galaksiyi haritalamak için neden bu kadar değerli olduğunu açıkla.",
-      "cevap": "Dalga boyu = c ÷ f = 299.792.458 ÷ 1.420.400.000 ≈ 0,211 m ≈ 21,1 cm. Bu radyo dalgası, görünür ışığı geçirmeyen toz bulutlarından rahatça geçer; bu yüzden galaksinin içinden, tozun ardındaki nötr hidrojeni görüp Samanyolu'nun sarmal yapısını çizebiliriz."
+      "cevap": "Dalga boyu = c ÷ f = 299.792.458 ÷ 1.420.400.000 ≈ 0,211 m ≈ 21,1 cm. Bu radyo dalgası, görünür ışığı geçirmeyen toz bulutlarından rahatça geçer; bu yüzden galaksinin içinden, tozun ardındaki nötr hidrojeni görüp Samanyolu'nun sarmal yapısını çizebiliriz.",
+      "kid": "d14s10"
     },
     {
       "soru": "Toz bir yıldızın ışığını 10 kadir sönükleştiriyor. Işığın kaçta biri bize ulaşır?",
-      "cevap": "5 kadir 100 kat demektir; 10 kadir = 5 + 5 kadir, yani 100 × 100 = 10.000 kat. Işığın yalnızca on binde biri ulaşır."
+      "cevap": "5 kadir 100 kat demektir; 10 kadir = 5 + 5 kadir, yani 100 × 100 = 10.000 kat. Işığın yalnızca on binde biri ulaşır.",
+      "kid": "d14s11"
     },
     {
       "soru": "Bir bulut çekirdeğinin yoğunluğu ortalama buluttan 100 kat fazla. Serbest düşüş süresi nasıl değişir? Bulut için 4 milyon yıl al.",
-      "cevap": "Serbest düşüş süresi yoğunluğun kareköküyle ters orantılıdır. √100 = 10, yani süre 10 kat kısalır: 4 milyon ÷ 10 = 400.000 yıl. Yoğun çekirdekler bu yüzden çevrelerinden çok daha hızlı çöker."
+      "cevap": "Serbest düşüş süresi yoğunluğun kareköküyle ters orantılıdır. √100 = 10, yani süre 10 kat kısalır: 4 milyon ÷ 10 = 400.000 yıl. Yoğun çekirdekler bu yüzden çevrelerinden çok daha hızlı çöker.",
+      "kid": "d14s12"
     },
     {
       "soru": "Salpeter kuralına göre 2–4 Güneş kütlesi aralığında 20–40 Güneş kütlesi aralığına göre yaklaşık kaç kat fazla yıldız doğar?",
-      "cevap": "İki aralıkta da üst uç alt ucun 2 katı olduğu için oran yalnızca alt uçların oranına bağlıdır: 10'un 1,35'inci kuvveti ≈ 22. Yani yaklaşık 22 kat fazla yıldız doğar."
+      "cevap": "İki aralıkta da üst uç alt ucun 2 katı olduğu için oran yalnızca alt uçların oranına bağlıdır: 10'un 1,35'inci kuvveti ≈ 22. Yani yaklaşık 22 kat fazla yıldız doğar.",
+      "kid": "d14s13"
     },
     {
       "soru": "Samanyolu'ndaki moleküler gaz bir serbest düşüş süresinde tümüyle yıldıza dönüşseydi yılda yaklaşık 250 Güneş kütlesi yıldız doğardı. Gözlenen hız 1–2 Güneş kütlesi. Bu ne anlama gelir?",
-      "cevap": "Her serbest düşüş süresinde gazın yalnızca yaklaşık yüzde biri yıldıza dönüşüyor demektir. Bulutlar çökmeye karşı bir şekilde destekleniyor ya da dağılıyor; bunun nedeni hâlâ araştırılıyor ve tek bir kabul görmüş cevap yok."
+      "cevap": "Her serbest düşüş süresinde gazın yalnızca yaklaşık yüzde biri yıldıza dönüşüyor demektir. Bulutlar çökmeye karşı bir şekilde destekleniyor ya da dağılıyor; bunun nedeni hâlâ araştırılıyor ve tek bir kabul görmüş cevap yok.",
+      "kid": "d14s14"
     }
   ],
   "kaynaklar": [

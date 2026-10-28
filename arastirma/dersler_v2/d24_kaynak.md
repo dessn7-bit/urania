@@ -40,7 +40,7 @@ Kısaltmalar: GOO = https://research.google/blog/astrophotography-with-night-sig
 | [B] Kırpma çarpanı = 43,27 ÷ sensör köşegeni; APS-C ≈ 1,5; kompakt 5–6; cep telefonlarında daha yüksek | EQ | CIPA formülü; "1.5× for Nikon DX and most APS-C" ; "5× to 6× for compact cameras" ; "even higher for built-in cameras of mobile devices like cell phones or tablets" |
 | [B] Piksel birleştirme: 4 ya da 9 piksel tek okuma; 48 / 108 MP → 12 MP | OPC | Taylor: "the phone is doing "pixel binning" to combine grids of 4 or 9 pixels into a single output reading" ; 48MP ya da 108MP sensör 12MP görüntü |
 | [B] Telefonlar birkaç sabit lensle yaklaşık 3× optik yakınlaştırma; ötesi sayısal | OPC | "typically combine several fixed focal length lenses for up to about 3x optical zoom" |
-| [B] Sayısal yakınlaştırma optikten fazlasını vermez; en büyük optikte çek, sonra kırp | SAN | "digital zoom doesn't really give you any more than the maximum optical zoom of your camera" ; en büyük optik yakınlaştırmada çekip düzenlemede kırp |
+| [B] Sayısal yakınlaştırma optikten fazlasını vermez; en büyük optikte çek, sonra düzenleme programında kendin büyüt | SAN | "digital zoom doesn't really give you any more than the maximum optical zoom of your camera" ; "using the maximum optical zoom setting then downloading and resizing the image yourself with photo-editing software" (doğrulamada düzeltildi: kaynak 'kırp' değil 'resize' der) |
 | [H] Yay saniyesi derecenin 3600'de biri; 1 radyan = 206.265 yay saniyesi | — | tanım/hesap (180 × 3600 ÷ π = 206.264,8) |
 | [H] 4'e 3 karede eşdeğer en 43,27 × 0,8 ≈ 34,6 mm, boy ≈ 26,0 mm; piksel 0,00865 mm; 0,00865 ÷ 24 × 206.265 ≈ 74,4″ | — | hesap (python3) |
 | [H] Görüş alanı 2 × arctan(17,3 ÷ 24) ≈ 71,6°, 2 × arctan(13,0 ÷ 24) ≈ 56,8° | — | hesap |
@@ -54,10 +54,10 @@ Kısaltmalar: GOO = https://research.google/blog/astrophotography-with-night-sig
 | [B] NASA: Ay büyük ve parlak, yeni başlayanlar için iyi hedef | NASAS | "The Moon is large and bright, making it a great target for beginners." |
 | [B] ≈ 1000 mm altında ölçer karanlık göğü okur, Ay'ı fazla pozlar | LMOON | "Unless you use about 1,000 mm or more, the meter reads mostly the dark sky and overexposes the Moon" (WebFetch aktarımı) |
 | [B] Pozlamayı Ay'a göre ayarlat, el ile kipe geç; disk yanıyorsa ISO ya da pozlamayı düşür | SAN | pro mode "should retain those settings" ; "Reduce the ISO or exposure so the Moon's disc isn't over-exposed." |
-| [B] Looney 11: f/11, süre = 1/ISO; ISO 100 → 1/100 ya da 1/125; ISO 400 → 1/400 ya da 1/500 | L11 | "set aperture to f/11 and shutter speed to the reciprocal of the ISO film speed" ; örnek değerler |
+| [B] Looney 11: f/11, süre = 1/ISO; ISO 100 → 1/100 ya da 1/125; ISO 400 → 1/400 ya da 1/500. Kural Ay yüzeyi için geneldir, 'dolunay' demez (doğrulamada 'Kural dolunay içindir' cümlesi düzeltildi; dolunay eşleşmesi LMOON tablosundan) | L11 | "set aperture to f/11 and shutter speed to the [reciprocal of the] ISO film speed" ; "astronomical photos of the Moon's surface" ; örnek değerler |
 | [B] Ay yüzeyine düşen Güneş ışığı Dünya'dakiyle esasen aynı; yüzey daha koyu; güneşli 16'dan bir durak fazla | L11 | "essentially the same as at the surface of the Earth" ; albedo daha düşük ; "increases exposure by one stop versus the Sunny 16 rule" |
 | [B] Evre tablosu ISO 250, f/11: dolunay 1/250, şişkin 1/125, dördün 1/60, geniş hilal 1/30, ince hilal 1/15; yer ışığı 2 sn f/2,8 | LMOON | tablo (WebFetch aktarımı) |
-| [B] Her 1/8 aydınlanma değişiminde bir durak | LMOON | "expose the Moon by an additional stop for every 1/8 illumination change in the Moon" |
+| [B] Her 1/8 aydınlanma değişiminde bir durak | LMOON | "expose the Moon by an additional stop for every 1/8 illumination change in the Moon" — DİKKAT: aynı sayfanın tablosuyla tutarsız (dolunay 1/250 → dördün 1/60 = 2 durak, kural 4 durak verir); derste ikisi de 'başlangıç noktası' diye verildi, akılda/defter/soru 2 tablo adımına göre düzeltildi |
 | [B] Alçaktaki dolunayda yaklaşık üç durak fazla | LMOON | "almost three stops more than what was recommended in the table" |
 | [B] Pozlamayı kademele | LMOON | "most importantly bracket your exposures" |
 | [B] Ay ile aydınlık manzara arasındaki fark 500.000:1'i aşabilir; ikisi aynı karede yakalanamıyor | GOO | "the extremely large brightness range, which can exceed 500,000:1, so far prevents us from capturing both in the same image" |
@@ -98,7 +98,7 @@ Kısaltmalar: GOO = https://research.google/blog/astrophotography-with-night-sig
 | [Ö] Uyarlamalı optik d12'de | — | d12 bölüm başlığı |
 | [H] Piksel hesapları: 0,67; 0,89; 4,7; 2,9; 1,9; 6,2; 0,9 piksel | — | hesap |
 | Venüs'ün 6 piksellik hilal biçiminin seçilip seçilemeyeceği: kaynak bulunamadı | — | derste belirtildi |
-| [H] Venüs en büyük göründüğünde en yakın ve ince hilal evresinde | — | geometri (alt kavuşum yakınında Dünya'ya en yakın, gece yüzünü bize döner); doğrulama ajanı isterse VEN ve d9 ile çapraz kontrol |
+| [B] Venüs en büyük çapına alt kavuşumda, yeni evrede ulaşır; çok ince hilali 60–66″ | https://en.wikipedia.org/wiki/Phases_of_Venus | "up to a maximum of 68 arc seconds at new ( inferior conjunction)" ; "The apparent disk of Venus' extreme crescent measures between 60.2 and 66 seconds of arc" (doğrulamada eklendi; NASA VEN en büyük 66,1″, Wikipedia 68″ — derste NASA değeri kullanıldı) |
 
 ## Bölüm 6 — Sabit üçayakta gökyüzü neden kayar?
 
@@ -119,12 +119,13 @@ Kısaltmalar: GOO = https://research.google/blog/astrophotography-with-night-sig
 |---|---|---|
 | [B] 500 kuralı = 500 ÷ eşdeğer odak; 20 mm → 25 sn, 50 mm → 10 sn | PL | "It recommends that your shutter speed is equal to 500 ÷ Equivalent Focal Length." ; 20mm 25 s, 50mm 10 s |
 | [B] Yönü, piksel boyutunu, kırınımı hesaba katmaz; fazla hoşgörülü | PL | "In almost every case, regardless of your composition, you'll get more blur than ideal when using the 500 rule." |
-| [B] Önce 600 kuralı; 8,5 × 11 inçten büyük baskılarda yıldızlar çizgi → 500; 40+ MP'de iz belirgin → 400, APS-C 250, MFT 200 | NPN | 600 rule ; prints larger than 8.5x11 inches ; 40+ MP ; "400 rule (full-frame under 30 MP), the 250 rule (APS-C), and the 200 rule (Micro Four Thirds)" (WebFetch aktarımı) |
+| [B] Önce 600 kuralı; 8,5 × 11 inçten büyük baskılarda yıldızlar çizgi → 500; piksel sayısı artınca yetmedi (40+ MP'de iz daha belirgin); yazar 30 MP altı tam karede 400, APS-C 250, MFT 200 kullanıyor | NPN | 600 rule ; prints larger than 8.5x11 inches "tiny lines" ; 500 rule worked under 20 MP ; 40+ MP reveals trailing ; 400 rule full-frame under 30 MP, 250 APS-C, 200 MFT (Gabriel Biderman, 13 Nisan 2019). Doğrulamada düzeltildi: kaynak 400'e geçişi doğrudan 40 MP'ye bağlamıyor |
 | [H] 8,5 × 11 inç ≈ 21,6 × 27,9 cm ("yaklaşık 21 × 28 cm") | — | hesap (1 inç = 2,54 cm) |
 | [B] PhotographyLife yazarı gök ekvatoru kadrajdayken 300 kuralı | PL | "300 rule" when stars along the celestial equator are in the frame |
 | [B] NPF: Frédéric Michaud, Fransız fotoğrafçı ve amatör gökbilimci, Le Havre astronomi derneği; N diyafram, P piksel aralığı, F odak; dik açıklık da hesaba katılır | NPN, PL | NPN: "a French photographer and amateur astronomer, devised it for the Astronomical Society of Le Havre" ; N aperture, P pixel pitch, F focal length ; PL: δ minimum declination |
 | NPF formülünün sabitleri iki kaynakta da açıkça yok; derste yazılmadı | — | — |
-| [B] Google gece modu kare süresi ≤ 16 sn; çizgi yıldızlar yanlış görünür | GOO | "the per-frame exposure time should not exceed 16 seconds" ; "motion-blurred stars that look like short line segments look wrong" |
+| [B] Google gece modu kare süresi ≤ 16 sn, gerçek gece gökyüzü çekimleriyle bulundu; çizgi yıldızlar yanlış görünür | GOO | "Taking pictures of real night skies we found that the per-frame exposure time should not exceed 16 seconds." ; "motion-blurred stars that look like short line segments look wrong" (Florian Kainz, Kiran Murthy, 26 Kasım 2019). Yazı görüş alanı ya da piksel hesabı vermez; derste 'sağlama' yerine 'kabaca tutarlılık, kanıt değil' dendi |
+| [H] En uzun poz ≈ k × piksel ölçeği ÷ (15,04 × cos δ) | — | bu derste türetildi (kayma ÷ kayma hızı); varsayımlar derste yazıldı: karenin ortası, nokta yıldız, mercek/kırınım/atmosfer/işleme yok, k seçilir |
 | [H] 500 ÷ 24 ≈ 20,8 sn; 20,8 × 15,04 ≈ 313″ ≈ 4,2 piksel; k = 1: 4,9 / 6,6 / 28 sn; k = 3: ≈ 15 sn; dürbün 0,7 sn | — | hesap |
 
 ## Bölüm 8 — Yıldız izi
@@ -134,8 +135,8 @@ Kısaltmalar: GOO = https://research.google/blog/astrophotography-with-night-sig
 | [B] En kolay: en az 30 dk tek poz, ama gürültü | RMG | "The easiest way to capture star trails is to take one long exposure, of at least 30 minutes." ; "creates unwanted grain or noise" |
 | [B] 30 sn'lik 100+ kare, yazılımla birleştir | RMG | "take 100 or more shots at 30 seconds each" ; "taking multiple digital shots at short exposures and stacking them together" |
 | [B] ISO 200–600, f/2–f/9 | RMG | "between 200 and 600" ; "between F2 and F9" |
-| [B] Kuzeye ya da güneye, gök kutbuna doğrult | RMG | "Point your camera north or south... to locate the celestial pole, where stars rotate about a central point." |
-| [B] Gün batımından iki saat sonra; Ay doğuşu ve havaya bak | RMG | "a good two hours after sunset" ; check moonrise and weather |
+| [B] Gök kutbuna doğrult; yarımküreye göre kuzey ya da güney (İstanbul: kuzey) | RMG | "Point your camera north or south (depending on which hemisphere you are in) to locate the celestial pole" |
+| [B] Gün batımından iki saat sonra; Ay doğuşu ve havaya bak | RMG | "Avoid light pollution and early evening ambient light by heading out into the wild a good two hours after sunset." ; "Remember to check moonrise times and the weather." — ışık kirliliğinden kaçış saatle değil kentten uzaklaşmayla; derste doğrulamada düzeltildi |
 | [B] El ile sonsuza netle, deneme karesini büyüt | RMG | manual focus to infinity ; zoom in to check |
 | [B] Ön plan ışığı başta ya da sonda; ortadan kare silmek boşluk bırakır | RMG | "at the start or end of your shoot" |
 | [B] Uzaktan deklanşör, sağlam üçayak | RMG | "a sturdy tripod" ; remote or cable release |
@@ -164,7 +165,7 @@ Kısaltmalar: GOO = https://research.google/blog/astrophotography-with-night-sig
 | İddia | Kaynak URL | Kaynaktaki ifade |
 |---|---|---|
 | [B] Çok sayıda kısa poz yığınlanarak uzun pozun oranına ulaşılır | LSN | "shoot a lot of shorter exposures and stack them to equal the signal-to-noise ratio of a longer exposure" |
-| [B] Ortalama; oran √N; 9 → 3 kat, 100 → 10 kat | PETA | "The signal-to-noise ratio, or S/N, increases by the square root of the number of images in the stack." ; "9 images ... improves by a factor of 3" ; "100 images, the S/N improves by a factor of 10" |
+| [B] Ortalama; oran √N; 9 → 3 kat, 100 → 10 kat (PETA gürültünün rastgele olduğunu açıkça yazmaz; o kavram LSN'den) | PETA | "The signal-to-noise ratio, or S/N, increases by the square root of the number of images in the stack." ; "9 images ... improves by a factor of 3" ; "100 images, the S/N improves by a factor of 10" |
 | [B] Kareler titreme ve hareketi telafi için hizalanıp ortalanır; tek kareler kumlu, birleşik temiz | GOO | "individual frames may be fairly grainy, the combined, averaged image looks much cleaner" |
 | [B] RMG: tek uzun poz kumlu, çok kısa poz daha iyi | RMG | bölüm 8 satırları |
 | [H] Gök fotonları da √ gürültü getirir; örnek 400/400 ve 400/3600 foton (uydurma sayılar): 14,1 ve 6,3; 16 kare → 25; (14,1 ÷ 6,3)² ≈ 5 | — | hesap; sayılar derste "uydurulmuş varsayım" diye belirtildi |
@@ -191,7 +192,7 @@ Kısaltmalar: GOO = https://research.google/blog/astrophotography-with-night-sig
 | [B] 14 bit RAW'dan bilgisayarda çevirmek doğrudan 8 bit JPEG'den iyi; daha az şeritlenme | NIK | "A 14-bit RAW to 8-bit JPEG conversion, in computer, seems nicer to me than a straight 8-bit JPEG out of the camera." ; "you will have more color levels to choose from" ; banding |
 | [B] JPEG tekrar kaydedildikçe sıkıştırma kayıplarıyla bozulur | NIK | "It just cannot be modified over and over and resaved without degrading from compression losses." |
 | [B] İşleme astrofotoğrafçılığın sırrı; uygulama ya da program (ad yok) | NASAS | "Post-processing is the secret of all astrophotography." |
-| [B] Işık kirliliği turuncu/sarı renk katar; beyaz dengesiyle düzeltilir | PT | "often introduces an orange or yellow cast" |
+| [B] Işık kirliliği turuncu/sarı renk katar; beyaz dengesiyle düzeltilir | PT | "Light pollution often introduces an orange or yellow cast to your photos." ; "Adjust the white balance" (PT = Photography Talk, yazar Sean Simpson; derste üç yerde yanlışlıkla 'PhotographyLife' yazıyordu, doğrulamada 'PhotographyTalk' yapıldı) |
 | [H] 8 bit / 12 bit basamak örneği (gök 20 → 320; yıldız %3 parlak) | — | hesap; varsayım sayılar |
 | Telefon gece modunun RAW kaydedip kaydetmediği: genel kaynak bulunamadı | — | derste belirtildi |
 
@@ -215,7 +216,7 @@ Kısaltmalar: GOO = https://research.google/blog/astrophotography-with-night-sig
 |---|---|---|
 | [B] SATCON1, 9 Ağustos 2020; NOIRLab ve AAS ortak; 29 Haziran–2 Temmuz 2020 | SAT | "organized jointly by NSF's NOIRLab and AAS with funding from NSF" ; rapor tarihi 9 August 2020 |
 | [B] Uydular güneşle aydınlıkken gözlemci karanlıkta; izsiz bölgeyi Dünya'nın gölgesi yaratır; görünürlük astronomik alacakaranlığa (−18°) kadar kabaca sabit | SAT | "the trail-free region is caused by the Earth's shadow" ; "the visibility of sunlit satellites remains roughly constant between sunset and astronomical twilight" |
-| [B] 600 km üstü yazın bütün gece görünebilir | SAT | "higher altitude constellations can be visible all night long during summer" |
+| [B] 600 km üstü yazın bütün gece görünebilir | SAT | "higher altitude constellations can be visible all night long during summer" ; "Satellites above 600 km are an even greater concern ... can also be illuminated all night long" ; "LEOsat constellations below 600 km are visible for a few hours per night around astronomical twilight" |
 | [B] 100.000 ya da daha fazla önerilen alçak yörünge uydusu | SAT | "the 100,000 or more LEOsats proposed by many companies and many governments" |
 | [B] Starlink alacakaranlıkta çıplak gözle görülen hareketli cisimleri kabaca iki katına çıkarabilir | SAT | "Starlink alone may roughly double the number of space-based moving objects detectable by the unaided eye around twilight" (çapraz: IDA "will approximately double") |
 | [B] Astrofotoğrafçılık şimdiden etkilendi | SAT | "Astrophotography, amateur astronomy, and the human experience of the stars and the Milky Way are already affected." (çapraz: IDA "wide-field astrophotography will be severely impacted") |
@@ -235,3 +236,9 @@ Kısaltmalar: GOO = https://research.google/blog/astrophotography-with-night-sig
 3. Android'de RAW dosya biçimi (DNG) ve el ile kipte en uzun poz süresi gibi telefon özellikleri için kaynak aranmadı; derste genel "varsa" dili kullanıldı.
 4. Işık kirliliği süzgeçlerinin LED aydınlatmaya karşı etkinliği için güvenilir kaynak bulunamadı; derste ayrıntıya girilmedi.
 5. Venüs'ün en büyük göründüğünde ince hilal olması geometriden; doğrulama ajanı d9 ya da VEN ile çapraz kontrol edebilir.
+
+## Doğrulama turu (2026-10-28, bağımsız denetçi)
+Yeniden okunan (WebFetch/curl): GOO, LMOON, PT, SAN, NASAS, RMG, CIT, SAT (iki kez), NPN, PL, Phases of Venus, BOR, SEE, AFO, L11, EQ, FN, LSN, LLUCK, PETA, NIK, OPC, NASA fact sheet'ler (Moon, Jupiter, Saturn, Venus, Earth; curl ile), NASA Moon viewing tips, APM, Pole star. Bütün örnekler python3 ile yeniden hesaplandı; hepsi tuttu (tek küçük düzeltme: "1896 ÷ 74 ≈ 25,5" → "1896 ÷ 74,4 ≈ 25,5").
+- MOON: 1896″ "Mean values at opposition from Earth" başlığı altında (dolunaydaki ortalama).
+- NASA Moon viewing tips: "Focus particularly along the terminator line between light and dark, where features will cast long shadows" ([Ö] satırı teyit).
+- Pole star: "In 2022 Polaris' mean declination was 89.35 degrees North" ([Ö] satırı teyit).

@@ -4,14 +4,17 @@
   "yeni": true,
   "baslik": "Astronominin Kısa Tarihi: Kil Tabletten Teleskoba",
   "ozet": "Gökyüzü insanlığın ilk saatiydi; onu ölçmek için yazılan tabletler, kataloglar ve gözlemevleri bugünkü astronominin temelini attı. Bu derste Babil ve Mısır gözlemlerini, Dünya'yı ölçen ve presesyonu bulan Yunan gökbilimcilerini, İslam dünyasının gözlemevlerini (Semerkant ve İstanbul dahil), Kopernik'ten Newton'a uzanan devrimi ve teleskoptan sonraki büyük adımları göreceksin. Tarihçilerin anlaşamadığı yerleri de açıkça söyleyeceğiz.",
-  "on_bilgi": ["d1", "d3"],
+  "on_bilgi": [
+    "d1",
+    "d3"
+  ],
   "bolumler": [
     {
       "baslik": "Gökyüzü neden ilk bilimdi?",
       "paragraflar": [
         "Saat ve takvim yokken zamanı gökyüzü gösteriyordu. Güneş her gün doğup batıyor, Ay yaklaşık bir ayda evrelerini tamamlıyor, belirli yıldızlar her yıl aynı mevsimde yeniden görünüyordu. Ekim zamanını bilmek isteyen çiftçi, bayram gününü belirlemek isteyen rahip, yön bulmak isteyen gezgin aynı düzene bakıyordu. Gökyüzünün büyük avantajı şuydu: olaylar düzenli tekrarlanıyordu, bu yüzden yazıya geçirilebilir, sayılabilir ve sonunda önceden hesaplanabilirdi. Gözlem, kayıt ve öngörü; bilimin üç adımı gökyüzünde çok erken bir araya geldi.",
         "Peki binlerce yıl önce ne düşünüldüğünü nereden biliyoruz? Çoğu zaman özgün metinlerden değil, kopyalardan. Babil'in gözlem kayıtları kil tabletlerde bize ulaştı ve bunların büyük kısmı bugün British Museum'da. Eratosthenes'in Dünya'yı ölçtüğü kitap kayıp; yöntemini çok sonra Kleomedes'in yazdığı sadeleştirilmiş özetten biliyoruz. Hipparkhos'un yıldız kataloğu da kayıp; 2022'de bir manastır elyazmasının silinmiş satırlarında ondan geldiği düşünülen bir parça bulundu. Ptolemaios'un büyük kitabının Avrupa'da en etkili olan Latince çevirisi Arapçadan yapıldı.",
-        "Bu zincirin her halkası hata ve yorum taşır. Bu yüzden derste her tarihi ve sayıyı en az iki kaynakla karşılaştırdık; kaynaklar ayrıştığında bunu açıkça söyleyeceğiz. 'Yaklaşık' gördüğün yerde tarihçiler de kesin bilmiyor demektir. Önce Mezopotamya ve Mısır'ın gözlemcilerine, sonra Dünya'yı ve Güneş'i ölçmeye çalışan Yunanlara, ardından Rakka'dan Semerkant'a ve İstanbul'a uzanan İslam dünyası gözlemevlerine gideceğiz. Kopernik, Tycho, Galileo, Kepler ve Newton ile gökyüzünün yasalarına, en sonunda da teleskoptan sonraki büyük adımlara kısaca bakacağız."
+        "Bu zincirin her halkası hata ve yorum taşır. Bu yüzden derste tarihleri ve sayıları kaynaklarla, önemli olanları mümkün olduğunca iki kaynakla karşılaştırdık; kaynaklar ayrıştığında bunu açıkça söyleyeceğiz. 'Yaklaşık' gördüğün yerde tarihçiler de kesin bilmiyor demektir. Önce Mezopotamya ve Mısır'ın gözlemcilerine, sonra Dünya'yı ve Güneş'i ölçmeye çalışan Yunanlara, ardından Rakka'dan Semerkant'a ve İstanbul'a uzanan İslam dünyası gözlemevlerine gideceğiz. Kopernik, Tycho, Galileo, Kepler ve Newton ile gökyüzünün yasalarına, en sonunda da teleskoptan sonraki büyük adımlara kısaca bakacağız."
       ],
       "akilda": "Gökyüzü düzenli tekrarlandığı için gözlem, kayıt ve öngörü erken başladı. Eski astronomiyi çoğunlukla kopyalar ve çevirilerden biliyoruz; bu yüzden tarihler çoğu zaman yaklaşıktır."
     },
@@ -26,7 +29,7 @@
         "baslik": "Örnek: Saros döngüsü kaç yıl?",
         "metin": "Bir Saros döngüsü 6585,3 gündür. Bir yılı 365,25 gün alalım. 6585,3 / 365,25 ≈ 18,03 yıl. Tam 18 yıl 18 × 365,25 = 6574,5 gün eder; 6585,3 − 6574,5 = 10,8. Sonuç: Saros yaklaşık 18 yıl 11 gündür. Babilli gözlemcilerin bunu görebilmesi için tutulmaları onlarca yıl boyunca kesintisiz kaydetmeleri gerekiyordu; günlüklerin altı yüzyıllık sürekliliği tam da bunu sağladı."
       },
-      "akilda": "Babilliler gökyüzünü kehanet için izledi ama altı yüzyıla yakın düzenli kayıt tuttu. Bu kayıtlar Saros döngüsünü, 360 derece ve 12 burç bölümünü ve Yunanlara geçen hesap yöntemlerini doğurdu."
+      "akilda": "Babilliler gökyüzünü kehanet için izledi ama altı yüzyıla yakın düzenli kayıt tuttu. Bu gelenekten Saros döngüsü, 360 derecelik gökte 12 burç bölümü ve Yunanlara geçen hesap yöntemleri çıktı."
     },
     {
       "baslik": "Mısır: takvim ve yıldız saatleri",
@@ -37,7 +40,7 @@
       ],
       "ornek": {
         "baslik": "Örnek: Mısır takvimi neden 1460 yılda bir çakışır?",
-        "metin": "Bir yıl yaklaşık 365,24 gündür; Mısır takvimi 365 gün. Fark yılda yaklaşık 0,25 gün, yani dört yılda 1 gün. Takvimin bütün mevsimleri dolaşıp başa dönmesi için kaymanın 365 güne ulaşması gerekir: 365 / 0,25 = 1460 yıl. Sonuç: Sirius'un sabah doğuşu takvimde 1460 yılda bir aynı güne düşer. Gerçek değer 0,25 değil 0,24 civarında olduğu için bu kaba bir hesaptır; yine de kaynakların verdiği 1460 yılı doğrudan açıklar."
+        "metin": "Sirius'un iki sabah doğuşu arası, Wikipedia'ya göre hemen hemen tam 365,25 gündür; Mısır takvimi 365 gün. Fark yılda yaklaşık 0,25 gün, yani dört yılda 1 gün. Takvimin Sirius'un doğuşuna göre bütün yılı dolaşıp başa dönmesi için kaymanın 365 güne ulaşması gerekir: 365 / 0,25 = 1460 yıl. Sonuç: Sirius'un sabah doğuşu takvimde 1460 yılda bir aynı güne düşer. Mevsim yılı (yaklaşık 365,24 gün) kullanılsaydı sonuç 365 / 0,2422 ≈ 1507 yıl çıkardı; kaynakların verdiği 1460 yıl, Sirius'a göre ölçülen yıla dayanır."
       },
       "akilda": "Mısır'ın katkısı zamanı ölçmekti: 36 dekan ve 365 günlük takvim, gece ve gündüzün on ikişer saate bölünmesi. Sirius'un sabah doğuşu Nil taşkınını haber veriyordu."
     },
@@ -51,36 +54,36 @@
       ],
       "ornek": {
         "baslik": "Örnek: Eratosthenes'in hesabı ve stadion sorunu",
-        "metin": "Açı: 7,2°. Tam çember 360°. 360 / 7,2 = 50. Uzaklık 5000 stadion ise çevre 50 × 5000 = 250.000 stadion. Şimdi 252.000 stadionu metreye çevirelim. Stadion 155 m ise 252.000 × 155 = 39.060.000 m = 39.060 km. Stadion 160 m ise 252.000 × 160 = 40.320 km. Bugünkü kutup çevresi 40.008 km. İlk değer yüzde 2,4 eksik, ikincisi yüzde 0,8 fazla. Stadion 185 m olsaydı 250.000 × 185 = 46.250 km, yani yüzde 15'e yakın fazla çıkardı. Sonuç: Dünya'nın çevresi yaklaşık 39.000 ile 46.000 km arasında bulunur; asıl belirsizlik ölçümde değil, birimin bugünkü karşılığındadır."
+        "metin": "Açı: 7,2°. Tam çember 360°. 360 / 7,2 = 50. Uzaklık 5000 stadion ise çevre 50 × 5000 = 250.000 stadion. Şimdi 252.000 stadionu metreye çevirelim. Stadion 155 m ise 252.000 × 155 = 39.060.000 m = 39.060 km. Stadion 160 m ise 252.000 × 160 = 40.320 km. Bugünkü kutup çevresi 40.008 km. İlk değer yüzde 2,4 eksik, ikincisi yüzde 0,8 fazla. Stadion 185 m olsaydı 250.000 × 185 = 46.250 km, yani yüzde 15'ten biraz fazla (yaklaşık yüzde 15,6) çıkardı. Sonuç: Dünya'nın çevresi yaklaşık 39.000 ile 46.000 km arasında bulunur; asıl belirsizlik ölçümde değil, birimin bugünkü karşılığındadır."
       },
       "akilda": "Eratosthenes, 7,2 derecelik gölge açısı ve iki kent arasındaki uzaklıkla Dünya'nın çevresini 250.000 stadion buldu. Yöntem doğruydu; sonucun ne kadar isabetli olduğu ise stadionun bilinmeyen uzunluğuna bağlıdır."
     },
     {
       "baslik": "Aristarkhos: Güneş ne kadar uzakta?",
       "paragraflar": [
-        "Samoslu Aristarkhos (yaklaşık MÖ 310–230) daha da cesur bir soruya girişti: Güneş, Ay'dan kaç kat uzakta? Bize ulaşan tek eseri 'Güneş ve Ay'ın Büyüklükleri ve Uzaklıkları Üzerine' adını taşır ve Britannica'ya göre bu konuyu geometriyle ele alan, bugüne kalmış en eski metindir. Fikri zarifti. Ay tam yarım göründüğünde, yani ilk ya da son dördünde, Güneş, Ay ve Dünya bir dik üçgen oluşturur; dik açı Ay'dadır. O anda Dünya'dan bakınca Ay ile Güneş arasındaki açıyı bilirsen, üçgenin kenar oranlarını bulursun.",
-        "Aristarkhos bu açıyı 87 derece aldı ve Güneş'in Ay'dan 18 ile 20 kat daha uzak olduğu sonucuna vardı. Gerçek oran yaklaşık 390'dır; gerçek açı da 90 dereceden yalnızca 9 yay dakikası küçüktür. Britannica, 87 derecenin büyük olasılıkla ölçülmüş değil tahmin edilmiş bir değer olduğunu not eder. Hatanın kaynağı yöntem değil, açının ölçülmesindeki zorluktur: Ay'ın tam yarım olduğu anı çıplak gözle kestirmek çok güçtür ve dik açıya çok yakın bir açıda en küçük hata bile sonucu büyük ölçüde değiştirir. Yine de sonucun önemli bir mesajı vardı: Güneş Ay'dan çok uzaktaysa ve gökte aynı boyda görünüyorsa, Ay'dan çok daha büyük olmalıydı.",
-        "Aristarkhos'un adı bir fikirle daha anılır. Arşimet, 'Kum Sayıcı' adlı eserinde Aristarkhos'un Dünya'nın kendi ekseni çevresinde döndüğünü ve Güneş'in çevresinde dolandığını öne sürdüğünü aktarır. Arşimet'e göre bu doğruysa evren o zamanlar sanılandan çok daha büyük olmalıydı. Stoacı filozof Kleanthes ise Aristarkhos'un 'evrenin ocağını harekete geçirdiği' için dinsizlikle suçlanması gerektiğini yazdı. Güneş merkezli düşünce bu kez kök salmadı; Kopernik'in kitabına kadar yaklaşık on sekiz yüzyıl bekleyecekti."
+        "Samoslu Aristarkhos (yaklaşık MÖ 310–230) daha da cesur bir soruya girişti: Güneş, Ay'dan kaç kat uzakta? Wikipedia'ya göre bize ulaşan tek eseri 'Güneş ve Ay'ın Büyüklükleri ve Uzaklıkları Üzerine' adını taşır ve bu soruyu geometriyle çözmeye çalışır. Fikri zarifti. Ay tam yarım göründüğünde, yani ilk ya da son dördünde, Güneş, Ay ve Dünya bir dik üçgen oluşturur; dik açı Ay'dadır. O anda Dünya'dan bakınca Ay ile Güneş arasındaki açıyı bilirsen, üçgenin kenar oranlarını bulursun.",
+        "Aristarkhos bu açıyı 87 derece aldı ve Güneş'in Ay'dan 18 ile 20 kat daha uzak olduğu sonucuna vardı. Gerçek oran yaklaşık 390'dır; gerçek açı da 90 dereceden yalnızca yaklaşık 9 yay dakikası küçüktür. 87 derecenin gerçekten ölçülmüş mü yoksa varsayılmış mı olduğu tartışmalıdır. Hatanın kaynağı yöntem değil, açının ölçülmesindeki zorluktur: Ay'ın tam yarım olduğu anı çıplak gözle kestirmek çok güçtür ve dik açıya çok yakın bir açıda en küçük hata bile sonucu büyük ölçüde değiştirir. Yine de sonucun önemli bir mesajı vardı: Güneş Ay'dan çok uzaktaysa ve gökte aynı boyda görünüyorsa, Ay'dan çok daha büyük olmalıydı.",
+        "Aristarkhos'un adı bir fikirle daha anılır. Arşimet, 'Kum Sayıcı' adlı eserinde Aristarkhos'un Dünya'nın kendi ekseni çevresinde döndüğünü ve Güneş'in çevresinde dolandığını öne sürdüğünü aktarır. Arşimet'e göre bu doğruysa evren o zamanlar sanılandan çok daha büyük olmalıydı. Plutarkhos'tan gelen bir pasaja göre Stoacı filozof Kleanthes, Aristarkhos'un 'evrenin ocağını', yani Dünya'yı harekete geçirdiği için dinsizlikle suçlanması gerektiğini söylemişti. Ama Wikipedia'ya göre bu okuma metnin düzeltilmesine dayanır; elyazmalarında suçlayan Aristarkhos'tur. Güneş merkezli düşünce bu kez kök salmadı; Kopernik'in kitabına kadar yaklaşık on sekiz yüzyıl bekleyecekti."
       ],
       "ornek": {
         "baslik": "Örnek: üç derecelik fark neden yirmi kat hata yapar?",
-        "metin": "Dik üçgende Dünya–Güneş uzaklığının Dünya–Ay uzaklığına oranı 1 / cos(θ) olur; θ Dünya'dan bakınca Ay ile Güneş arasındaki açıdır. Aristarkhos: θ = 87°, cos 87° ≈ 0,0523, 1 / 0,0523 ≈ 19,1. Gerçek: θ = 90° − 9′ = 89,85°, cos 89,85° ≈ 0,00262, 1 / 0,00262 ≈ 382. Açıyı bir derece daha küçük (86°) alsaydı oran 14,3; bir derece büyük (88°) alsaydı 28,7 çıkardı. Sonuç: 9 yay dakikalık doğru açı oranı yaklaşık 380 verir; Britannica'nın 'yaklaşık 390' değeriyle farkı açının yuvarlanmasından gelir. 90 dereceye yakın açılarda küçük bir ölçüm hatası oranı katlarca değiştirir."
+        "metin": "Dik üçgende Dünya–Güneş uzaklığının Dünya–Ay uzaklığına oranı 1 / cos(θ) olur; θ Dünya'dan bakınca Ay ile Güneş arasındaki açıdır. Aristarkhos: θ = 87°, cos 87° ≈ 0,0523, 1 / 0,0523 ≈ 19,1. Gerçek: θ = 90° − 9′ = 89,85°, cos 89,85° ≈ 0,00262, 1 / 0,00262 ≈ 382. Açıyı bir derece daha küçük (86°) alsaydı oran 14,3; bir derece büyük (88°) alsaydı 28,7 çıkardı. Sonuç: 9 yay dakikalık doğru açı oranı yaklaşık 380 verir; Kaynakların verdiği 'yaklaşık 390' değeriyle farkı açının yuvarlanmasından gelir. 90 dereceye yakın açılarda küçük bir ölçüm hatası oranı katlarca değiştirir."
       },
       "akilda": "Aristarkhos, yarım Ay geometrisiyle Güneş'in Ay'dan 18–20 kat uzak olduğunu buldu; gerçek oran yaklaşık 390. Yöntem doğru, açı ölçümü çok zordu. Güneş merkezli bir evren fikrini de ilk öne sürenlerden biridir."
     },
     {
       "baslik": "Hipparkhos: yıldız kataloğu ve presesyon",
       "paragraflar": [
-        "Hipparkhos, Bitinya'daki Nikaia'da, yani bugünkü İznik'te doğdu. Museo Galileo'ya göre gözlemlerine yaklaşık MÖ 146'da doğduğu kentte başladı ve MÖ 127'ye kadar Rodos'ta sürdürdü. Doğum ve ölüm yılları bilinmez. Yaklaşık MÖ 129'da antik çağın ilk yıldız kataloglarından birini derledi. Sky and Telescope'a göre katalog sonraki kaynaklarda MÖ 162 ile 127 arasına tarihlenir ve kuzey gökyüzünde yaklaşık 850 yıldız içerdiği tahmin edilir. Katalog kayıptır. 2022'de araştırmacılar, Sina'daki Azize Katerina Manastırı'ndan gelen bir elyazmasının kazınıp üzerine yeniden yazılmış sayfalarında Kuzeytacı takımyıldızından dört yıldızın konumlarını veren bir parça buldu. Bu parçanın Hipparkhos'a ait olduğu güçlü bir olasılık, ama tarihçi Bradley Schaefer'in deyişiyle henüz kanıtlanmış değil. Parçadaki konumlar ekvatoral koordinatlarla verilmiş ve bir derece içinde doğru; Ptolemaios'un kataloğu ise tutulum koordinatlarını kullanır ve belirgin biçimde daha az kesindir.",
-        "Hipparkhos yıldızları parlaklıklarına göre altı sınıfa ayırdı: en parlaklar birinci, çıplak gözle zor seçilenler altıncı sınıf. Bu ölçeği Ptolemaios yaygınlaştırdı ve genel kanıya göre kökeni Hipparkhos'tur. d1'de öğrendiğin kadir ölçeği bu iki bin yıllık sınıflamanın torunudur; bu yüzden kadir sayısı büyüdükçe yıldız sönükleşir.",
+        "Hipparkhos, Bitinya'daki Nikaia'da, yani bugünkü İznik'te doğdu. Wikipedia'ya göre MÖ 162 ile 127 arasında çalışan bir gökbilimciydi; Ptolemaios ona MÖ 147–127 arasından gözlemler atfeder, bunların bir kısmı Rodos'ta yapılmıştır. Doğum ve ölüm yılları kesin bilinmez. Kariyerinin sonlarına doğru, belki yaklaşık MÖ 135'te (bazı kaynaklara göre MÖ 129'da) antik çağın ilk yıldız kataloglarından birini derledi. Sky and Telescope'a göre katalog sonraki kaynaklarda MÖ 162 ile 127 arasına tarihlenir ve kuzey gökyüzünde yaklaşık 850 yıldız içerdiği tahmin edilir. Katalog kayıptır. 2022'de araştırmacılar, Sina'daki Azize Katerina Manastırı'ndan gelen bir elyazmasının kazınıp üzerine yeniden yazılmış sayfalarında Kuzeytacı takımyıldızından dört yıldızın konumlarını veren bir parça buldu. Parçanın Hipparkhos'a ait olduğu ileri sürüldü, ama tarihçi Bradley Schaefer'in deyişiyle bu kanıtlanmış olmaktan uzak; Wikipedia'ya göre bulgu 2024'te sorgulandı ve tartışma sürüyor. Parçadaki konumlar ekvatoral koordinatlarla verilmiş ve bir derece içinde doğru; Ptolemaios'un kataloğu ise tutulum koordinatlarını kullanır ve belirgin biçimde daha az kesindir.",
+        "Yaygın kanıya göre Hipparkhos yıldızları parlaklıklarına göre altı sınıfa ayırdı: en parlaklar birinci, çıplak gözle zor seçilenler altıncı sınıf. Bu ölçeği Ptolemaios yaygınlaştırdı; Wikipedia ise Hipparkhos'a atfın kanıtlanmadığını, bize ulaşan tek eserinde bu ölçeğin kullanılmadığını not eder. d1'de öğrendiğin kadir ölçeği bu iki bin yıllık sınıflamanın torunudur; bu yüzden kadir sayısı büyüdükçe yıldız sönükleşir.",
         "Asıl büyük buluşu ise presesyondur. İskenderiyeli Timokharis, EBSCO'ya göre MÖ 283'te, Spica yıldızını sonbahar noktasının 8 derece batısında ölçmüştü. Hipparkhos kendi ölçümünde bu farkı 6 derece buldu. Yıldızlar birbirine göre yer değiştirmediğine göre, değişen ölçümün başlangıç noktası, yani sonbahar ve ilkbahar noktaları olmalıydı. Bugün bunu Dünya ekseninin bir topacınki gibi yavaşça yalpalamasıyla açıklıyoruz; bu yalpalamaya ve ekinoks noktalarının tutulum boyunca kaymasına presesyon denir. Hipparkhos nedenini bilemedi, ama kaymayı ölçtü: yılda en az yüzde bir derece. Almagest'e giren bu değer, gerçek değer olan 72 yılda bir derecenin biraz altındadır.",
-        "Hipparkhos geçmiş gözlemlerin değerini biliyordu. EBSCO'ya göre Babil tutulma kayıtlarından haberdardı, ama bunlara nasıl ulaştığını söylemek mümkün değil. Gezegen modellerinde de yer merkezli düşünceye bağlı kaldı: gezegenler zaman zaman yıldızlara göre geri gidiyor gibi göründüğünden, bu hareketi açıklamak için ek çemberler gerekiyordu. Bu ek çemberlere episikl denir ve bir sonraki bölümde Ptolemaios'un elinde bütün bir sisteme dönüşecek."
+        "Hipparkhos geçmiş gözlemlerin değerini biliyordu. EBSCO'ya göre Babil tutulma kayıtlarından haberdardı, ama bunlara nasıl ulaştığını söylemek mümkün değil. EBSCO'ya göre gök modelinde de yer merkezli düşünceye bağlı kaldı: gezegenler zaman zaman yıldızlara göre geri gidiyor gibi göründüğünden, bu hareketi açıklamak için ek çemberler gerekiyordu. Bu ek çemberlere episikl denir ve bir sonraki bölümde Ptolemaios'un elinde bütün bir sisteme dönüşecek."
       ],
       "ornek": {
         "baslik": "Örnek: Hipparkhos'un ölçümünden presesyon hızı",
-        "metin": "Timokharis'in Spica ölçümü MÖ 283, Hipparkhos'un kataloğu yaklaşık MÖ 129. Aradaki süre 283 − 129 = 154 yıl. Kayma 8° − 6° = 2°. Hız 2° / 154 ≈ 0,013° yıl, yani yaklaşık 0,013 × 3600 ≈ 47 yay saniyesi (″) yılda. Hipparkhos daha temkinli davranıp 'en az yüzde bir derece', yani yılda en az 36″ dedi. Gerçek değer 72 yılda 1°, yani 3600 / 72 = 50″ yılda. Tam bir tur için 360 × 72 = 25.920 yıl gerekir; d1'deki yaklaşık 26.000 yıllık döngü budur. Sonuç: iki eski ölçümle bile presesyonun hızı doğru mertebede bulunabiliyordu."
+        "metin": "Timokharis'in Spica ölçümü MÖ 283, Hipparkhos'un kataloğu yaklaşık MÖ 135 ile 129 arası. Aradaki süre 283 − 135 = 148 ile 283 − 129 = 154 yıl arası. Kayma 8° − 6° = 2°. Hız yılda 2° / 154 ≈ 0,013° ile 2° / 148 ≈ 0,0135° arası, yani yılda yaklaşık 47 ile 49 yay saniyesi (″). Hipparkhos daha temkinli davranıp 'en az yüzde bir derece', yani yılda en az 36″ dedi. Gerçek değer 72 yılda 1°, yani 3600 / 72 = 50″ yılda. Tam bir tur için 360 × 72 = 25.920 yıl gerekir; d1'deki yaklaşık 26.000 yıllık döngü budur. Sonuç: iki eski ölçümle bile presesyonun hızı doğru mertebede bulunabiliyordu."
       },
-      "akilda": "İznikli Hipparkhos yaklaşık 850 yıldızlık bir katalog yaptı, yıldızları altı parlaklık sınıfına ayırdı ve Spica'nın konumundaki 2 derecelik kaymadan presesyonu buldu."
+      "akilda": "İznikli Hipparkhos yaklaşık 850 yıldızlık bir katalog yaptı, yaygın kanıya göre yıldızları altı parlaklık sınıfına ayırdı ve Spica'nın konumundaki 2 derecelik kaymadan presesyonu buldu."
     },
     {
       "baslik": "Ptolemaios ve Almagest: yer merkezli evren",
@@ -88,7 +91,7 @@
         "Klaudios Ptolemaios yaklaşık MS 100 ile 170 arasında yaşadı. Başyapıtını büyük olasılıkla MS 150 civarında yazdı; özgün Yunanca adı 'Matematiksel Derleme' anlamına gelir, sonra 'Büyük Derleme' diye anıldı. Arapçada 'en büyük' anlamındaki Yunanca kelimeden türeyen el-Mecistî adını aldı; Avrupa'ya bu adla, Almagest olarak geçti. Kitabın adının bile Arapçadan geçmiş olması, aşağıda göreceğin çeviri zincirinin bir izidir.",
         "Almagest'in evreni yer merkezlidir: Dünya ortada durur, Güneş, Ay, gezegenler ve yıldızlar onun çevresinde döner. Ama gezegenlerin hareketi düzgün değildir. Bunu açıklamak için Ptolemaios birkaç geometrik araç kullandı. Gezegen, episikl denen küçük bir çember üzerinde döner; episiklin merkezi de taşıyıcı çember denen büyük bir çember üzerinde Dünya'nın çevresinde dolanır. Bu iki fikir Pergeli Apollonios'a dayanır. Ptolemaios bir adım daha attı: taşıyıcı çemberin merkezini Dünya'dan biraz kaydırdı ve hareketin düzgün göründüğü ayrı bir nokta tanımladı. Bu noktaya ekuant denir; gezegen, ekuanttan bakan birine sabit hızla dönüyormuş gibi görünür.",
         "Almagest bir yıldız kataloğu da içerir: metinde 1.022 yıldız geçer, kayıt sayısı sayım biçimine göre 1.028'e kadar çıkar; Sky and Telescope 1.025 der. Yıldızlar 48 takımyıldıza dağıtılmıştır: 12'si burç kuşağında, 21'i kuzeyde, 15'i güneyde. Parlaklıklar birinciden altıncı kadire kadar verilir. Bu model ve katalog Bizans, İslam ve Batı Avrupa gökbiliminde 1.200 yıldan uzun süre temel başvuru kaynağı oldu. İlk Arapça çeviriler 9. yüzyılda yapıldı; bunlardan biri Halife Me'mun tarafından desteklendi. Arapçadan Latinceye en etkili çeviriyi Cremonalı Gerard 1175'te Toledo'da tamamladı.",
-        "Ptolemaios tarihçiler arasında tartışmalı bir figürdür. Kataloğundaki boylamlar MS 138 yılına tarihlenir, ama hesaplar bunların daha çok MS 1. yüzyıl ortasına uyduğunu gösterir; bu kaymayı ilk fark eden Tycho Brahe'dir. Robert R. Newton 1977'de Ptolemaios'u gözlem uydurmakla suçladı. Bernard Goldstein bu suçlamayı aşırı polemikçi buldu; Owen Gingerich bazı sayıların 'epey şüpheli' olduğunu kabul edip sahtekârlık iddiasını reddetti. Kataloğun Hipparkhos'tan kopyalandığı da öne sürüldü; 2022'deki parçayı inceleyen araştırmacılar ise doğruluk farkına bakarak Ptolemaios'un yalnızca Hipparkhos'un verisine dayanmadığını savunuyor. Tartışma sürüyor."
+        "Ptolemaios tarihçiler arasında tartışmalı bir figürdür. Kataloğundaki boylamlar MS 138 yılına tarihlenir, ama hesaplar bunların daha çok MS 1. yüzyıl ortasına uyduğunu gösterir; bu kaymayı ilk fark eden Tycho Brahe'dir. Robert R. Newton 1977'de Ptolemaios'u gözlem uydurmakla suçladı. Bernard Goldstein, Newton'un argümanlarının her türlü çarpıtmayla gölgelendiğini yazdı; Owen Gingerich bazı sayıların 'epey şüpheli' olduğunu kabul edip sahtekârlık iddiasını reddetti. Kataloğun Hipparkhos'tan kopyalandığı da öne sürüldü; 2022'deki parçayı inceleyen araştırmacılar ise doğruluk farkına bakarak Ptolemaios'un yalnızca Hipparkhos'un verisine dayanmadığını savunuyor. Tartışma sürüyor."
       ],
       "akilda": "Almagest (yaklaşık MS 150) episikl, taşıyıcı çember ve ekuantla yer merkezli bir model ve yaklaşık bin yıldızlık bir katalog sundu; 1.200 yıldan uzun süre otorite oldu. Verilerinin kaynağı bugün de tartışılıyor."
     },
@@ -108,7 +111,7 @@
     {
       "baslik": "El-Biruni: bir tepeden Dünya'yı ölçmek",
       "paragraflar": [
-        "Eratosthenes ve Me'mun'un gökbilimcileri Dünya'yı ölçmek için iki uzak nokta arasında uzun yollar kat etmek zorundaydı. Ebu Reyhan el-Biruni (973–1048) bunu tek başına, tek bir yerde yapmanın yolunu buldu. Harezm'de doğdu; MacTutor'a göre bir dönem Sultan Mahmud'un tutsağıydı ve 1018'de Kabil'deydi. Ölçümünü bugünkü Pakistan'da, Pencap'ta, Tuz Sıradağları'ndan geçen geçidin güney ucundaki Nandana Kalesi'nde yaptı.",
+        "Eratosthenes ve Me'mun'un gökbilimcileri Dünya'yı ölçmek için iki uzak nokta arasında uzun yollar kat etmek zorundaydı. Ebu Reyhan el-Biruni (973–1048) bunu tek başına, tek bir yerde yapmanın yolunu buldu. Harezm'de doğdu; MacTutor'a göre bir dönem Sultan Mahmud'un tutsağıydı ve 1018'de büyük olasılıkla Kabil'deydi. Ölçümünü bugünkü Pakistan'da, Pencap'ta, Tuz Sıradağları'ndan geçen geçidin güney ucundaki Nandana Kalesi'nde yaptı.",
         "Yöntemi iki adımlıdır. Önce bir tepenin yüksekliğini ölçtü: usturlapla, tepeye doğru düz bir çizgi üzerindeki iki noktadan zirveye bakış açılarını ve iki nokta arasındaki uzaklığı ölçerek. Usturlap, gök cisimlerinin ve yeryüzündeki nesnelerin yükseklik açısını ölçmeye yarayan, üzerinde açı ölçekleri bulunan bir alettir. Paris Gözlemevi'nin sözlüğüne göre tepenin yüksekliğini 321,5 metre buldu. Sonra zirveden ufka baktı ve ufuk çizgisinin yatayın ne kadar altında kaldığını, yani ufuk alçalma açısını ölçtü. Dünya yuvarlak olduğu için yükseldikçe ufuk aşağı iner. Yüksekliği ve bu açıyı bilen biri, basit bir trigonometri bağıntısıyla Dünya'nın yarıçapını bulabilir.",
         "Sonuç kaynağa göre biraz değişir: MacTutor 6.339,6 km, Paris Gözlemevi sözlüğü yaklaşık 6.335,7 km verir. Fark, el-Biruni'nin kullandığı arşın biriminin bugünkü karşılığından gelir. Bugünkü ekvator yarıçapı 6.378,1 km'dir; yani sonuç yüzde 1'den az sapar. Ama dikkat: aynı sözlük bu isabetin büyük ölçüde şansa bağlı olduğunu yazar. Ova tam düz değildi, alet iddia edildiği kadar hassas değildi ve atmosferdeki kırılma sonucu etkiliyordu. Wikipedia da yöntemin önceki ölçümlerden daha doğru sonuç veremeyeceğini ve el-Biruni'nin sonunda Me'mun döneminin değerini benimsediğini belirtir. Ders şu: doğru çıkan bir sonuç, her zaman iyi bir ölçüm demek değildir.",
         "El-Biruni'nin bir başka ünlü görüşü Dünya'nın dönüşüyle ilgilidir. MacTutor'un aktardığına göre, Dünya'nın mı yoksa göğün mü hareket ettiğini kabul etmenin gökbilim hesapları açısından fark etmediğini yazdı; bunun çürütülüp çürütülemeyeceğine karar vermeyi fizikçiye bıraktı. Bu, gözlemin tek başına hangisinin doğru olduğunu söyleyemediği bir durumun dürüstçe kabulüdür."
@@ -151,7 +154,7 @@
     {
       "baslik": "Kopernik: Güneş'i merkeze koymak",
       "paragraflar": [
-        "Nikolaus Kopernik 1473'te Toruń'da doğdu ve 1543'te öldü. Yaklaşık 1514'te, Güneş merkezli fikrini anlatan kısa bir metni, Commentariolus'u, el yazması kopyalarla yalnızca birkaç kişiye dağıttı. Fikrini uzun yıllar geliştirdi. 1539'da genç matematikçi Rheticus onu ziyaret etti ve 1540'ta Danzig'de, adını vermeden, Kopernik'in sistemini tanıtan bir özet yayımladı. Başyapıt 'Gök Kürelerinin Dönüşleri Üzerine' (De revolutionibus) 1543'te, Kopernik'in öldüğü yıl yayımlandı; baskı Nürnberg'de yapıldı. Kopernik'in kitabın ilk nüshasını ölüm döşeğinde eline aldığı hikâyesini Museo Galileo açıkça 'efsane' diye anar.",
+        "Nikolaus Kopernik 1473'te Toruń'da doğdu ve 1543'te öldü. 1514'ten önce, Wikipedia'ya göre büyük olasılıkla 1510 civarında, Güneş merkezli fikrini anlatan kısa bir metni, Commentariolus'u yazdı ve el yazması kopyalarla yalnızca birkaç kişiye dağıttı. Fikrini uzun yıllar geliştirdi. 1539'da genç matematikçi Rheticus onu ziyaret etti ve 1540'ta Danzig'de, kendi adını vermeden, Kopernik'in sistemini tanıtan bir özet yayımladı. Başyapıt 'Gök Kürelerinin Dönüşleri Üzerine' (De revolutionibus) 1543'te, Kopernik'in öldüğü yıl yayımlandı; baskı Nürnberg'de yapıldı. Kopernik'in kitabın ilk nüshasını ölüm döşeğinde eline aldığı hikâyesini Wikipedia 'efsane' diye anar.",
         "Kitap Güneş'i evrenin merkezine koydu: Dünya ve öbür gezegenler Güneş'in çevresinde dolanıyor, Dünya ayrıca günde bir kez kendi ekseni çevresinde dönüyordu. Ama Kopernik eski araçların hepsini atmadı. Linda Hall Kütüphanesi'nin anlatımına göre dış merkezli yörüngeleri ve episiklleri kullanmayı sürdürdü; ekuantı ise düzgün dairesel hareket ilkesine aykırı bulduğu için çıkardı. Yani Kopernik'in sistemi hâlâ çemberlerden yapılmıştı. Asıl yenilik, hareketlerin merkezini değiştirmesiydi.",
         "Kitabın önüne Lüteriyen ilahiyatçı Andreas Osiander bir önsöz ekledi ve Güneş merkezli düzeni yalnızca hesap kolaylığı sağlayan bir matematik aracı gibi sundu. Kopernik'in düşüncesinin önünde bir de gözlem engeli vardı: Dünya Güneş'in çevresinde dolanıyorsa yakın yıldızlar yıl içinde uzak yıldızlara göre biraz yer değiştirmeliydi. Bu kaymaya ıraklık (paralaks) denir. Çıplak gözle hiçbir kayma görülmüyordu. Bugün biliyoruz ki yakın yıldızlar gerçekten kayar, ama bu kayma teleskopsuz görülemeyecek kadar küçüktür. d17'de bu küçük açının yıldız uzaklıklarını ölçmenin temeli olduğunu göreceksin."
       ],
@@ -160,10 +163,10 @@
     {
       "baslik": "Tycho Brahe: teleskopsuz en keskin göz",
       "paragraflar": [
-        "Tycho Brahe 14 Aralık 1546'da Danimarka'da doğdu ve 14 Ekim 1601'de Prag'da öldü. 11 Kasım 1572'de Kraliçe (Cassiopeia) takımyıldızında birdenbire parlak bir yıldız belirdi. O dönemin yaygın görüşüne göre Ay'ın ötesindeki gökler değişmezdi. Tycho dikkatle ölçtü ve yıldızda hiçbir ıraklık bulamadı. Ay gibi yakın bir cisim, gece boyunca ve farklı yerlerden bakınca yıldızlara göre kayardı; bu yıldız kaymıyordu, demek ki Ay'dan çok daha uzaktaydı. Sonuçlarını 1573'te 'Yeni Yıldız Üzerine' (De nova stella) adıyla yayımladı. Bugün bu olayı Tycho'nun süpernovası, SN 1572, olarak biliyoruz.",
+        "Tycho Brahe 14 Aralık 1546'da Danimarka'da doğdu ve 24 Ekim 1601'de Prag'da öldü. 11 Kasım 1572'de Kraliçe (Cassiopeia) takımyıldızında birdenbire parlak bir yıldız belirdi. O dönemin yaygın görüşüne göre Ay'ın ötesindeki gökler değişmezdi. Tycho dikkatle ölçtü ve yıldızda hiçbir ıraklık bulamadı. Ay gibi yakın bir cisim, gece boyunca ve farklı yerlerden bakınca yıldızlara göre kayardı; bu yıldız kaymıyordu, demek ki Ay'dan çok daha uzaktaydı. Sonuçlarını 1573'te 'Yeni Yıldız Üzerine' (De nova stella) adıyla yayımladı. Bugün bu olayı Tycho'nun süpernovası, SN 1572, olarak biliyoruz.",
         "Danimarka Kralı II. Frederik, 23 Mayıs 1576'da Tycho'ya Ven adasını ve yıllık bir ödenek verdi. Tycho 1576–1580 arasında burada Uraniborg'u kurdu; UCAR'a göre modern Avrupa'da gözlem için özel olarak yapılmış ilk gözlemevidir. Ana aletleri teleskop değildi; çeyrek daire ve armiller küre gibi çıplak göz aletleri kullanıyordu. Ama ölçümleri iki kaynağa göre de bir yay dakikası içinde doğruydu; aletlerinin tahmini kesinliği 32 ile 49 yay saniyesi arasındaydı. Tycho aynı gözlemi farklı aletlerle yapıp birbirine karşı denetleyerek alet hatalarını da yakaladı.",
         "1577 kuyruklu yıldızı Kasım 1577'den Ocak 1578'e kadar görüldü. Tycho onda da ölçülebilir bir ıraklık bulamadı: kuyruklu yıldız Ay'ın ötesindeydi. Böylece gökyüzünün değişmez olduğu ve gezegenlerin katı, saydam kürelere gömülü olduğu düşüncesi sarsıldı. Buna rağmen Tycho Dünya'nın hareket ettiğine inanmadı, çünkü yıldızlarda ıraklık göremiyordu. Yaklaşık 1583'te kendi sistemini kurdu: Dünya merkezde, Güneş Dünya'nın çevresinde, öbür gezegenler ise Güneş'in çevresinde dolanır. Bu düzen gezegen hareketlerini Kopernik'inkiyle aynı biçimde açıklıyordu ve yıldız ıraklığı gerektirmiyordu.",
-        "Tycho kraliyet desteğini kaybedince 1597'de Ven'den ayrıldı ve 1598'de Kutsal Roma İmparatoru II. Rudolf'un imparatorluk matematikçisi oldu. 1600'de genç Johannes Kepler onun yardımcısı oldu. Tycho'nun ölümünden sonra yıllarca biriktirdiği gözlemler Kepler'e kaldı. Bugün İstanbul'dan da Tycho'yu hatırlayabilirsin: d1'e göre Kraliçe, 40 ile 50 derece kuzey enlemlerinde kutup çevresi sayılabilecek takımyıldızlardandır, yani İstanbul'dan bakınca gece boyunca ufkun üstünde kalır. NASA'ya göre de Ay'daki büyük Tycho kraterini ve ondan yayılan parlak ışınları keskin bir göz çıplak gözle bile seçebilir."
+        "Tycho kraliyet desteğini kaybedince 1597'de Ven'den ayrıldı ve MacTutor'a göre 1599'da Prag'da Kutsal Roma İmparatoru II. Rudolf'un imparatorluk matematikçisi oldu. 1600'de genç Johannes Kepler onun yardımcısı oldu. Tycho'nun ölümünden sonra yıllarca biriktirdiği gözlemler Kepler'e kaldı. Bugün İstanbul'dan da Tycho'yu hatırlayabilirsin: d1'e göre Kraliçe, 40 ile 50 derece kuzey enlemlerinde kutup çevresi sayılabilecek takımyıldızlardandır, yani İstanbul'dan bakınca gece boyunca ufkun üstünde kalır. NASA'ya göre de Ay'daki büyük Tycho kraterini ve ondan yayılan parlak ışınları keskin bir göz çıplak gözle bile seçebilir."
       ],
       "ornek": {
         "baslik": "Örnek: bir yay dakikası ne kadar küçük?",
@@ -174,9 +177,9 @@
     {
       "baslik": "Galileo: teleskobu göğe çevirmek",
       "paragraflar": [
-        "Teleskobun bilinen ilk kaydı 1608'de Hollanda'dan gelir; Hans Lippershey 2 Ekim 1608'de aleti için patent başvurusu yaptı. Thomas Harriot 1609 yazında altı kez büyüten bir teleskopla Ay'a bakıyordu. Galileo Galilei ise 1609'un Ekim ya da Kasım ayında gökbilim gözlemlerine başladı. Britannica'ya göre Aralık 1609'da Ay'ın evrelerini çizdi ve Ay yüzeyinin sanıldığı gibi pürüzsüz değil, engebeli olduğu sonucuna vardı.",
+        "Teleskobun bilinen ilk kaydı 1608'de Hollanda'dan gelir; Hans Lippershey 2 Ekim 1608'de aleti için patent başvurusu yaptı. Thomas Harriot 1609 yazında altı kez büyüten bir teleskopla Ay'a bakıyordu. Galileo Galilei ise 1609'un Ekim ya da Kasım ayında gökbilim gözlemlerine başladı. Wikipedia'ya göre teleskobunu 30 Kasım 1609'da Ay'a çevirdi ve Ay yüzeyinin sanıldığı gibi pürüzsüz değil, engebeli olduğu sonucuna vardı.",
         "13 Mart 1610'da Venedik'te 'Yıldız Habercisi' (Sidereus Nuncius) yayımlandı; Wikipedia onu teleskopla yapılmış gözlemlere dayanan ilk yayımlanmış bilimsel eser olarak tanımlar. Galileo'nun bu gözlemler için kullandığı teleskop yaklaşık 20 kat büyütüyordu. Kitapta Ay dağlarının en az dört mil yüksekliğinde olduğu, teleskopla çıplak gözle görülenin en az on katı yıldız görüldüğü ve Samanyolu'nun sayısız yıldızın bir araya gelmesinden oluştuğu anlatılır. En çarpıcı buluş Jüpiter'in uydularıydı: Galileo onları ilk kez 7 Ocak 1610'da gördü, 11 Ocak'ta Jüpiter'in çevresinde dolanan 'üç yıldız' olduğunu yazdı; sonraki gözlemler sayıyı dörde çıkardı. Bugün bunlara Galileo uyduları diyoruz.",
-        "Jüpiter'in uyduları önemliydi, çünkü her şeyin Dünya'nın çevresinde dönmediğini gösteriyordu. Galileo 1610 sonbaharında Floransa'da Venüs'ün de Ay gibi evreler gösterdiğini buldu. Britannica'ya göre bu, Venüs'ün Güneş'in çevresinde dolandığını gösterdi ve Aristoteles'e dayanan eski evren anlayışını sarstı. Ptolemaios'un düzeninde Venüs Güneş'in çevresinde dolanmaz; bu yüzden gözlem o düzenle de bağdaşmıyordu. Ama dürüst olmak gerekirse Venüs'ün evreleri tek başına Kopernik'i kanıtlamıyordu: Tycho'nun düzeninde de Venüs Güneş'in çevresinde dolanır ve bu düzen gezegen hareketlerini Kopernik'inkiyle aynı biçimde açıklar. Galileo Kopernik sistemini savunduğu için 1633'te ev hapsine mahkûm edildi.",
+        "Jüpiter'in uyduları önemliydi, çünkü her şeyin Dünya'nın çevresinde dönmediğini gösteriyordu. Galileo Eylül 1610'dan başlayarak Venüs'ün de Ay gibi evreler gösterdiğini buldu. Wikipedia'ya göre bu, Venüs'ün Dünya'nın değil Güneş'in çevresinde dolandığını kanıtladı ve Ptolemaios düzenini fiilen dışladı. Ptolemaios'un düzeninde Venüs hiçbir zaman Güneş'in ötesine geçmez, bu yüzden dolunaya benzer evreler göstermemeliydi. Ama dürüst olmak gerekirse, aynı kaynağın da belirttiği gibi, Venüs'ün evreleri tek başına Kopernik'i kanıtlamıyordu: Tycho'nun düzeninde de Venüs Güneş'in çevresinde dolanır ve bu düzen gezegen hareketlerini Kopernik'inkiyle aynı biçimde açıklar. Galileo Kopernik sistemini savunduğu için 1633'te ev hapsine mahkûm edildi.",
         "Galileo'nun aletini bugün senin dürbününle karşılaştırabilirsin. d12'de gördüğün gibi Galileo'nun teleskoplarından birinin objektifi 37 mm'ydi ve çoğu zaman 16 ya da 12 mm'ye kısılarak kullanılıyordu; 7×50 bir dürbünün objektifi ise 50 mm. d11'e göre orta boy bir dürbünle Jüpiter'in Galileo uyduları seçilebilir; Venüs'ün evreleri ise dürbün için zor bir hedeftir. Ay'ın engebeli yüzeyi, özellikle aydınlık ile karanlığın sınırında, en az 7 kat büyüten bir dürbünle iyi incelenir. Yani Galileo'nun 1610'da dünyayı sarsan ilk üç gözleminin en az ikisini İstanbul'daki balkonundan tekrarlayabilirsin."
       ],
       "akilda": "Galileo 1610'da Ay'ın engebeli yüzeyini, Samanyolu'nun yıldızlardan oluştuğunu ve Jüpiter'in dört uydusunu yayımladı; sonra Venüs'ün evrelerini buldu. Bunlar eski yer merkezli düzeni sarstı ama Tycho'nun düzenini tek başına dışlamadı."
@@ -184,7 +187,7 @@
     {
       "baslik": "Kepler ve Newton: gökyüzünün yasaları",
       "paragraflar": [
-        "Johannes Kepler 2 Ağustos 1600'de Graz'dan sürüldü ve Prag'da Tycho'nun yanına geldi. Tycho ona Mars'ın yörüngesini anlama görevini verdi. Bu şanslı bir seçimdi: Tycho'nun bol verisi olan gezegenler arasında yörüngesi en basık olan Mars'tı. Kepler, Tycho'nun kesin gözlemlerini dairesel bir yörüngeyle bir türlü uzlaştıramadı. Sonunda daireyi bıraktı. 1609'da Astronomia nova'da birinci yasasını açıkladı: gezegenler elips biçiminde yörüngelerde dolanır ve Güneş elipsin odaklarından birindedir. UCAR, Kepler'in kusursuz daire inancından kopan ilk kişi olduğunu vurgular. Üçüncü yasa 1619'da Harmonice Mundi'de yayımlandı; ikinci yasanın bugünkü biçimi ise 1621 tarihli Epitome'de yer aldı. Ayrıntıları d3'te gördün. Kepler'in adı bir yıldız patlamasıyla da anılır: 17 Ekim 1604'te en parlak anında gözlemeye başladığı SN 1604, Tycho'nun 1572 süpernovasıyla birlikte Samanyolu'nda çıplak gözle görülen son süpernovalardır. Ondan bu yana galaksimizde çıplak gözle görülen bir süpernova olmadı.",
+        "Johannes Kepler 2 Ağustos 1600'de Graz'dan sürüldü ve Prag'da Tycho'nun yanına geldi. Tycho ona Mars'ın yörüngesini anlama görevini verdi. Bu şanslı bir seçimdi: Tycho'nun bol verisi olan gezegenler arasında yörüngesi en basık olan Mars'tı. Kepler, Tycho'nun kesin gözlemlerini dairesel bir yörüngeyle bir türlü uzlaştıramadı. Sonunda daireyi bıraktı. 1609'da Astronomia nova'da birinci yasasını açıkladı: gezegenler elips biçiminde yörüngelerde dolanır ve Güneş elipsin odaklarından birindedir. UCAR, Kepler'in kusursuz daire inancından kopan ilk kişi olduğunu vurgular. Üçüncü yasa 1619'da Harmonice Mundi'de yayımlandı; ikinci yasanın bugünkü biçimi ise 1621 tarihli Epitome'de yer aldı. Ayrıntıları d3'te gördün. Kepler'in adı bir yıldız patlamasıyla da anılır: 17 Ekim 1604'te en parlak anında gözlemeye başladığı SN 1604, Tycho'nun 1572 süpernovasıyla birlikte Samanyolu'nda çıplak gözle görülen son süpernovalardır. Ondan bu yana galaksimizde çıplak gözle gözlendiği bilinen bir süpernova olmadı.",
         "Kepler yasaları gezegenlerin nasıl hareket ettiğini anlatıyordu, ama neden öyle hareket ettiklerini değil. Bu soruyu Isaac Newton yanıtladı. 5 Temmuz 1687'de yayımlanan Principia'da hareket yasalarını evrensel kütleçekim yasasıyla birleştirdi ve Kepler'in gözlemden çıkardığı sonuçları açıkladı. Kütleçekim yasasına göre her cisim her cismi, kütlelerinin çarpımıyla doğru, aralarındaki uzaklığın karesiyle ters orantılı bir kuvvetle çeker. İlginç bir ayrıntı: Newton bugün G dediğimiz sabiti kullanmadı, yalnızca orantılardan söz etti. Kütleçekiminin iki kütle arasında laboratuvarda ilk ölçüldüğü deney 1798'de Henry Cavendish'in deneyidir.",
         "Newton teleskop tarihine de girdi: bilinen ilk çalışan aynalı teleskobu 1668'de tamamladı. Kepler ve Newton ile gökbilim bir dönüm noktasına geldi. Babil'den Uluğ Bey'e kadar gökbilimciler gök cisimlerinin konumlarını ölçüp tablolara döküyor ve geometrik modellerle öngörüyordu. Newton'dan sonra aynı yasa hem yerdeki hem göklerdeki hareketi açıklıyordu; gökbilim artık fiziğin bir parçasıydı. Bu adımın Tycho'nun bir yay dakikalık verisi olmadan atılamayacağını unutma: Kepler'in daireyi bırakmasını zorlayan, o verinin kesinliğiydi."
       ],
@@ -237,91 +240,164 @@
     {
       "deger": "MÖ 652 – MÖ 61",
       "aciklama": "Babil astronomik günlüklerinin kapsadığı yaklaşık dönem; birkaç yüz kil tablet, çoğu British Museum'da",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Astronomical_Diaries"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Astronomical_Diaries",
+      "kid": "d20n0"
     },
     {
       "deger": "7,2° ve 250.000 stadion",
       "aciklama": "Eratosthenes'in İskenderiye'de ölçtüğü gölge açısı (çemberin 1/50'si) ve bulduğu Dünya çevresi; stadionun uzunluğu tartışmalı",
-      "kaynak_url": "https://dictionary.obspm.fr/terms/eratosthenes-method/"
+      "kaynak_url": "https://dictionary.obspm.fr/terms/eratosthenes-method/",
+      "kid": "d20n1"
     },
     {
       "deger": "87° → 18–20 kat",
       "aciklama": "Aristarkhos'un yarım Ay açısı ve buna göre Güneş'in Ay'dan uzaklık oranı; gerçek oran yaklaşık 390",
-      "kaynak_url": "https://www.britannica.com/biography/Aristarchus-of-Samos"
+      "kaynak_url": "https://en.wikipedia.org/wiki/On_the_Sizes_and_Distances_(Aristarchus)",
+      "kid": "d20n2"
     },
     {
       "deger": "8° → 6°",
       "aciklama": "Spica'nın sonbahar noktasına uzaklığı: Timokharis (MÖ 283) ve Hipparkhos; bu 2 derecelik fark presesyonun keşfidir",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Timocharis"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Timocharis",
+      "kid": "d20n3"
     },
     {
       "deger": "yaklaşık 850 yıldız",
-      "aciklama": "Hipparkhos'un kayıp kataloğundaki tahmini yıldız sayısı (yaklaşık MÖ 129)",
-      "kaynak_url": "https://skyandtelescope.org/astronomy-news/lost-star-catalog-of-ancient-times-comes-to-light/"
+      "aciklama": "Hipparkhos'un kayıp kataloğundaki tahmini yıldız sayısı (yaklaşık MÖ 135–129)",
+      "kaynak_url": "https://skyandtelescope.org/astronomy-news/lost-star-catalog-of-ancient-times-comes-to-light/",
+      "kid": "d20n4"
     },
     {
       "deger": "1.022 yıldız, 48 takımyıldız",
       "aciklama": "Ptolemaios'un Almagest kataloğu (yaklaşık MS 150); kayıt sayısı sayıma göre 1.025–1.028",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Almagest"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Almagest",
+      "kid": "d20n5"
     },
     {
       "deger": "365 g 5 sa 46 dk 24 sn",
       "aciklama": "El-Battani'nin Rakka'da ölçtüğü güneş yılı (yaklaşık 365,2406 gün)",
-      "kaynak_url": "https://mathshistory.st-andrews.ac.uk/Biographies/Al-Battani/"
+      "kaynak_url": "https://mathshistory.st-andrews.ac.uk/Biographies/Al-Battani/",
+      "kid": "d20n6"
     },
     {
       "deger": "yaklaşık 6.340 km",
       "aciklama": "El-Biruni'nin Nandana'da bulduğu Dünya yarıçapı (kaynağa göre 6.335,7–6.339,6 km); bugünkü ekvator yarıçapı 6.378,1 km",
-      "kaynak_url": "https://mathshistory.st-andrews.ac.uk/SH/al_biruni_sh.pdf"
+      "kaynak_url": "https://mathshistory.st-andrews.ac.uk/SH/al_biruni_sh.pdf",
+      "kid": "d20n7"
     },
     {
       "deger": "1018 yıldız, 58 saniye",
       "aciklama": "Uluğ Bey'in Zîc-i Sultânî kataloğu (1437) ve yıldızıl yıl ölçümündeki hata",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Ulugh_Beg"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Ulugh_Beg",
+      "kid": "d20n8"
     },
     {
       "deger": "1577 – 22 Ocak 1580",
       "aciklama": "Takiyüddin'in İstanbul Rasathanesi: Tophane sırtlarında kuruluşu ve hatt-ı hümâyunla yıkılışı",
-      "kaynak_url": "https://islamansiklopedisi.org.tr/takiyyuddin-er-rasid"
+      "kaynak_url": "https://islamansiklopedisi.org.tr/takiyyuddin-er-rasid",
+      "kid": "d20n9"
     },
     {
       "deger": "1 yay dakikası",
       "aciklama": "Tycho Brahe'nin teleskopsuz gözlemlerinin kesinliği (Ay'ın görünen çapının 1/30'u)",
-      "kaynak_url": "https://www2.hao.ucar.edu/education/scientists/tycho-brahe-1546-1601"
+      "kaynak_url": "https://www2.hao.ucar.edu/education/scientists/tycho-brahe-1546-1601",
+      "kid": "d20n10"
     },
     {
       "deger": "1543 · 1610 · 1687",
       "aciklama": "Kopernik'in De revolutionibus'u, Galileo'nun Sidereus Nuncius'u (13 Mart), Newton'un Principia'sı (5 Temmuz)",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Sidereus_Nuncius"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Sidereus_Nuncius",
+      "kid": "d20n11"
     },
     {
       "deger": "930.000 ışık yılı",
       "aciklama": "Hubble'ın 1923'te bulduğu Sefeide dayanarak hesapladığı Andromeda uzaklığı; bugünkü değer yaklaşık 2,5 milyon ışık yılı",
-      "kaynak_url": "https://www.astronomy.com/science/how-edwin-hubble-won-the-great-debate/"
+      "kaynak_url": "https://www.astronomy.com/science/how-edwin-hubble-won-the-great-debate/",
+      "kid": "d20n12"
     }
   ],
   "sozluk": [
-    { "terim": "gnomon", "tanim": "Gölgesinin uzunluğundan ve yönünden Güneş'in yüksekliğini ve zamanı okumaya yarayan dik çubuk." },
-    { "terim": "Saros döngüsü", "tanim": "Benzer tutulmaların yaklaşık 18 yıl 11 günde (6585,3 gün) bir aynı sırayla tekrarlandığı dönem." },
-    { "terim": "dekan", "tanim": "Eski Mısır'da tutulum boyunca seçilen 36 yıldız grubundan her biri; sabah doğuşları onar gün arayla geldiği için takvim ve gece saati olarak kullanıldı." },
-    { "terim": "sabah doğuşu", "tanim": "Bir yıldızın, Güneş'in parıltısında görünmez kaldığı dönemden sonra şafakta, Güneş doğmadan hemen önce ilk kez yeniden görülmesi (helyakal doğuş)." },
-    { "terim": "stadion", "tanim": "Antik Yunan uzunluk birimi; bugünkü karşılığı kesin bilinmez, tahminler yaklaşık 155 ile 185 metre arasındadır." },
-    { "terim": "presesyon", "tanim": "Dünya ekseninin topaç gibi yavaşça yalpalaması ve bu yüzden ilkbahar ve sonbahar noktalarının tutulum boyunca yaklaşık 26.000 yılda bir tur atacak biçimde kayması." },
-    { "terim": "yer merkezli", "tanim": "Dünya'yı evrenin merkezine koyan ve Güneş, Ay, gezegenler ile yıldızların onun çevresinde döndüğünü kabul eden model." },
-    { "terim": "Güneş merkezli", "tanim": "Güneş'i merkeze koyan ve Dünya ile öbür gezegenlerin onun çevresinde dolandığını kabul eden model." },
-    { "terim": "episikl", "tanim": "Yer merkezli modellerde gezegenin üzerinde döndüğü küçük çember; merkezi daha büyük bir taşıyıcı çember üzerinde dolanır." },
-    { "terim": "ekuant", "tanim": "Ptolemaios modelinde, gezegenin sabit açısal hızla döner göründüğü, Dünya'dan ve çemberin merkezinden farklı nokta." },
-    { "terim": "zic", "tanim": "İslam dünyasında gök cisimlerinin konumlarını hesaplamaya yarayan tablolar ve kurallardan oluşan gökbilim el kitabı." },
-    { "terim": "usturlap", "tanim": "Gök cisimlerinin ve uzak nesnelerin yükseklik açısını ölçmeye, gökle ilgili hesaplar yapmaya yarayan, açı ölçekli el aleti." },
-    { "terim": "sekstant", "tanim": "Çemberin altıda biri biçiminde bir yay üzerinde açı ölçmeye yarayan alet; büyüdükçe ölçek daha ince bölünebilir." },
-    { "terim": "ıraklık", "tanim": "Bir cismin, gözlem yeri değişince daha uzaktaki arka plana göre görünür yer değiştirmesi (paralaks); kayma ne kadar küçükse cisim o kadar uzaktır." },
-    { "terim": "müneccimbaşı", "tanim": "Osmanlı sarayında takvim hazırlamak ve gökyüzü olaylarını yorumlamakla görevli baş astronom." }
+    {
+      "terim": "gnomon",
+      "tanim": "Gölgesinin uzunluğundan ve yönünden Güneş'in yüksekliğini ve zamanı okumaya yarayan dik çubuk.",
+      "kid": "d20t0"
+    },
+    {
+      "terim": "Saros döngüsü",
+      "tanim": "Benzer tutulmaların yaklaşık 18 yıl 11 günde (6585,3 gün) bir aynı sırayla tekrarlandığı dönem.",
+      "kid": "d20t1"
+    },
+    {
+      "terim": "dekan",
+      "tanim": "Eski Mısır'da tutulum boyunca seçilen 36 yıldız grubundan her biri; sabah doğuşları onar gün arayla geldiği için takvim ve gece saati olarak kullanıldı.",
+      "kid": "d20t2"
+    },
+    {
+      "terim": "sabah doğuşu",
+      "tanim": "Bir yıldızın, Güneş'in parıltısında görünmez kaldığı dönemden sonra şafakta, Güneş doğmadan hemen önce ilk kez yeniden görülmesi (helyakal doğuş).",
+      "kid": "d20t3"
+    },
+    {
+      "terim": "stadion",
+      "tanim": "Antik Yunan uzunluk birimi; bugünkü karşılığı kesin bilinmez, tahminler yaklaşık 155 ile 185 metre arasındadır.",
+      "kid": "d20t4"
+    },
+    {
+      "terim": "presesyon",
+      "tanim": "Dünya ekseninin topaç gibi yavaşça yalpalaması ve bu yüzden ilkbahar ve sonbahar noktalarının tutulum boyunca yaklaşık 26.000 yılda bir tur atacak biçimde kayması.",
+      "kid": "d20t5"
+    },
+    {
+      "terim": "yer merkezli",
+      "tanim": "Dünya'yı evrenin merkezine koyan ve Güneş, Ay, gezegenler ile yıldızların onun çevresinde döndüğünü kabul eden model.",
+      "kid": "d20t6"
+    },
+    {
+      "terim": "Güneş merkezli",
+      "tanim": "Güneş'i merkeze koyan ve Dünya ile öbür gezegenlerin onun çevresinde dolandığını kabul eden model.",
+      "kid": "d20t7"
+    },
+    {
+      "terim": "episikl",
+      "tanim": "Yer merkezli modellerde gezegenin üzerinde döndüğü küçük çember; merkezi daha büyük bir taşıyıcı çember üzerinde dolanır.",
+      "kid": "d20t8"
+    },
+    {
+      "terim": "ekuant",
+      "tanim": "Ptolemaios modelinde, gezegenin sabit açısal hızla döner göründüğü, Dünya'dan ve çemberin merkezinden farklı nokta.",
+      "kid": "d20t9"
+    },
+    {
+      "terim": "zic",
+      "tanim": "İslam dünyasında gök cisimlerinin konumlarını hesaplamaya yarayan tablolar ve kurallardan oluşan gökbilim el kitabı.",
+      "kid": "d20t10"
+    },
+    {
+      "terim": "usturlap",
+      "tanim": "Gök cisimlerinin ve uzak nesnelerin yükseklik açısını ölçmeye, gökle ilgili hesaplar yapmaya yarayan, açı ölçekli el aleti.",
+      "kid": "d20t11"
+    },
+    {
+      "terim": "sekstant",
+      "tanim": "Çemberin altıda biri biçiminde bir yay üzerinde açı ölçmeye yarayan alet; büyüdükçe ölçek daha ince bölünebilir.",
+      "kid": "d20t12"
+    },
+    {
+      "terim": "ıraklık",
+      "tanim": "Bir cismin, gözlem yeri değişince daha uzaktaki arka plana göre görünür yer değiştirmesi (paralaks); kayma ne kadar küçükse cisim o kadar uzaktır.",
+      "kid": "d20t13"
+    },
+    {
+      "terim": "müneccimbaşı",
+      "tanim": "Osmanlı sarayında takvim hazırlamak ve gökyüzü olaylarını yorumlamakla görevli baş astronom.",
+      "kid": "d20t14"
+    }
   ],
   "defter_notu": [
     "Babil: günlükler ~MÖ 652–61, Saros ≈ 18 yıl 11 gün, 360° ve 12 burç (30°). Mısır: 36 dekan × 10 gün + 5 = 365; Sirius'un sabah doğuşu → Nil taşkını.",
     "Eratosthenes: 7,2° = çemberin 1/50'si → 50 × 5000 = 250.000 stadion. İsabet stadionun uzunluğuna bağlı (155–185 m).",
     "Aristarkhos: yarım Ay açısı 87° → Güneş 18–20 kat uzak (gerçek ~390). Güneş merkezli fikir (Arşimet aktarır).",
-    "İznikli Hipparkhos: ~850 yıldız, 6 parlaklık sınıfı (kadir), Spica 8° → 6° → presesyon (≥ yılda 1/100°; gerçek 72 yılda 1°).",
+    "İznikli Hipparkhos: ~850 yıldız, 6 parlaklık sınıfı (kadir; atıf kesin değil), Spica 8° → 6° → presesyon (≥ yılda 1/100°; gerçek 72 yılda 1°).",
     "Almagest (~MS 150): episikl + taşıyıcı çember + ekuant; 1.022 yıldız, 48 takımyıldız; 1.200+ yıl otorite. Veri kaynağı tartışmalı.",
     "El-Battani (Rakka): yıl 365 g 5 sa 46 dk 24 sn. El-Biruni (Nandana): tepe 321,5 m + ufuk alçalma açısı → R ≈ 6.340 km (isabet kısmen şans).",
     "Uluğ Bey (Semerkant): Fahri sekstantı ~36 m, ~1018 yıldız (1437), yıldızıl yıl hatası 58 sn. 1449'da öldürüldü.",
@@ -332,97 +408,266 @@
   "sorular": [
     {
       "soru": "Babilliler gökyüzünü kehanet için izliyordu. Bu amaç neden yine de bilime büyük bir katkı sağladı?",
-      "cevap": "Kehanet için gökte olan her şeyin dikkatle ve sürekli kaydedilmesi gerekiyordu. Astronomik günlükler yaklaşık MÖ 652'den MÖ 61'e kadar altı yüzyıla yakın düzenli kayıt bıraktı. Bu uzun kayıtlar sayesinde ay tutulmalarının yaklaşık 18 yılda tekrarlandığı (Saros) fark edildi ve Babil hesap yöntemleri Yunanlara, örneğin Hipparkhos'a geçti."
+      "cevap": "Kehanet için gökte olan her şeyin dikkatle ve sürekli kaydedilmesi gerekiyordu. Astronomik günlükler yaklaşık MÖ 652'den MÖ 61'e kadar altı yüzyıla yakın düzenli kayıt bıraktı. Bu uzun kayıtlar sayesinde ay tutulmalarının yaklaşık 18 yılda tekrarlandığı (Saros) fark edildi ve Babil hesap yöntemleri Yunanlara, örneğin Hipparkhos'a geçti.",
+      "kid": "d20s0"
     },
     {
       "soru": "Eratosthenes'in yönteminde hangi varsayım, İskenderiye'deki gölge açısının iki kent arasındaki merkez açısına eşit olmasını sağlar?",
-      "cevap": "Güneş'in çok uzakta olduğu ve ışınlarının iki kente paralel geldiği varsayımı. Paralel iki doğruyu kesen bir doğru eşit açılar yapar; bu yüzden gölge açısı (7,2°) iki kentin Dünya'nın merkezinden görülen açısına eşittir ve uzaklık çevrenin 1/50'si olur."
+      "cevap": "Güneş'in çok uzakta olduğu ve ışınlarının iki kente paralel geldiği varsayımı. Paralel iki doğruyu kesen bir doğru eşit açılar yapar; bu yüzden gölge açısı (7,2°) iki kentin Dünya'nın merkezinden görülen açısına eşittir ve uzaklık çevrenin 1/50'si olur.",
+      "kid": "d20s1"
     },
     {
       "soru": "'Eratosthenes Dünya'nın çevresini yüzde 1'den az hatayla buldu' cümlesi neden dikkatle kullanılmalı?",
-      "cevap": "Çünkü sonucun isabeti stadionun bugünkü uzunluğuna bağlıdır ve bu uzunluk tartışmalıdır. Wikipedia 155–160 m alınırsa hatanın −%2,4 ile +%0,8 arasında olduğunu, Paris Gözlemevi sözlüğü ise 155–185 m aralığıyla −%3 ile +%15 arasında olduğunu yazar. Yöntem doğrudur; kesinlik ise birim belirsizliğine bağlıdır."
+      "cevap": "Çünkü sonucun isabeti stadionun bugünkü uzunluğuna bağlıdır ve bu uzunluk tartışmalıdır. Wikipedia 155–160 m alınırsa hatanın −%2,4 ile +%0,8 arasında olduğunu, Paris Gözlemevi sözlüğü ise 155–185 m aralığıyla −%3 ile +%15 arasında olduğunu yazar. Yöntem doğrudur; kesinlik ise birim belirsizliğine bağlıdır.",
+      "kid": "d20s2"
     },
     {
       "soru": "Aristarkhos 87° yerine 88° ölçseydi Güneş'in Ay'a göre uzaklık oranını kaç bulurdu? Bu sonuç sana ne öğretiyor?",
-      "cevap": "Oran 1 / cos 88° ≈ 1 / 0,0349 ≈ 28,7 olurdu; 87° ile 19,1 bulmuştu. Bir derecelik fark sonucu yaklaşık yarı yarıya büyütüyor. 90°'ye yakın açılarda küçük ölçüm hataları oranı katlarca değiştirir; Aristarkhos'un hatası yöntemden değil, açıyı ölçmenin zorluğundan gelir."
+      "cevap": "Oran 1 / cos 88° ≈ 1 / 0,0349 ≈ 28,7 olurdu; 87° ile 19,1 bulmuştu. Bir derecelik fark sonucu yaklaşık bir buçuk katına çıkarıyor. 90°'ye yakın açılarda küçük ölçüm hataları oranı katlarca değiştirir; Aristarkhos'un hatası yöntemden değil, açıyı ölçmenin zorluğundan gelir.",
+      "kid": "d20s3"
     },
     {
       "soru": "Hipparkhos presesyonu nasıl fark etti?",
-      "cevap": "Spica'nın konumunu kendisinden yaklaşık bir buçuk yüzyıl önceki Timokharis'in ölçümüyle karşılaştırdı. Timokharis Spica'yı sonbahar noktasının 8° batısında bulmuştu, Hipparkhos 6° buldu. Yıldızlar birbirine göre kaymadığına göre ölçümün başlangıç noktası olan ekinoks noktaları kaymıştı. Hızı yılda en az yüzde bir derece olarak verdi; gerçek değer 72 yılda bir derecedir."
+      "cevap": "Spica'nın konumunu kendisinden yaklaşık bir buçuk yüzyıl önceki Timokharis'in ölçümüyle karşılaştırdı. Timokharis Spica'yı sonbahar noktasının 8° batısında bulmuştu, Hipparkhos 6° buldu. Yıldızlar birbirine göre kaymadığına göre ölçümün başlangıç noktası olan ekinoks noktaları kaymıştı. Hızı yılda en az yüzde bir derece olarak verdi; gerçek değer 72 yılda bir derecedir.",
+      "kid": "d20s4"
     },
     {
       "soru": "Ptolemaios'un modelinde episikl ve ekuant ne işe yarıyordu?",
-      "cevap": "Gezegenler gökte düzgün hareket etmez, zaman zaman yıldızlara göre geri gider gibi görünür. Episikl, gezegenin üzerinde döndüğü ve merkezi taşıyıcı çember üzerinde dolanan küçük çemberdir; bu geri gitmeyi açıklar. Ekuant, gezegenin sabit hızla döner göründüğü, Dünya'dan farklı bir noktadır ve hızdaki değişimleri modellemeye yarar."
+      "cevap": "Gezegenler gökte düzgün hareket etmez, zaman zaman yıldızlara göre geri gider gibi görünür. Episikl, gezegenin üzerinde döndüğü ve merkezi taşıyıcı çember üzerinde dolanan küçük çemberdir; bu geri gitmeyi açıklar. Ekuant, gezegenin sabit hızla döner göründüğü, Dünya'dan farklı bir noktadır ve hızdaki değişimleri modellemeye yarar.",
+      "kid": "d20s5"
     },
     {
       "soru": "El-Biruni'nin Dünya yarıçapı sonucu bugünkü değere yüzde 1'den yakın. Bu neden onun ölçümünün çok kesin olduğu anlamına gelmez?",
-      "cevap": "321,5 metrelik bir tepeden ufuk alçalma açısı yalnızca yaklaşık 34,5 yay dakikasıdır ve 1 yay dakikalık hata yarıçapı yüzde 5–6 değiştirir. Paris Gözlemevi sözlüğüne göre ova tam düz değildi, alet iddia edildiği kadar hassas değildi ve atmosferdeki kırılma sonucu etkiledi; isabetin önemli bir kısmı şanstı. Wikipedia da yöntemin önceki ölçümlerden daha doğru sonuç veremeyeceğini yazar."
+      "cevap": "321,5 metrelik bir tepeden ufuk alçalma açısı yalnızca yaklaşık 34,5 yay dakikasıdır ve 1 yay dakikalık hata yarıçapı yüzde 5–6 değiştirir. Paris Gözlemevi sözlüğüne göre ova tam düz değildi, alet iddia edildiği kadar hassas değildi ve atmosferdeki kırılma sonucu etkiledi; isabetin önemli bir kısmı şanstı. Wikipedia da yöntemin önceki ölçümlerden daha doğru sonuç veremeyeceğini yazar.",
+      "kid": "d20s6"
     },
     {
       "soru": "Uluğ Bey neden 36 metre yarıçaplı bir sekstant yaptırdı?",
-      "cevap": "Teleskop yokken kesinliği artırmanın yolu aleti büyütmekti. Yay büyüdükçe bir derecelik açı daha uzun bir çizgiye karşılık gelir ve ölçek daha ince bölünebilir. Bu sayede Semerkant'ta yaklaşık bin yıldızın konumu yeniden ölçüldü ve yıldızıl yıl yalnızca 58 saniye hatayla bulundu."
+      "cevap": "Teleskop yokken kesinliği artırmanın yolu aleti büyütmekti. Yay büyüdükçe bir derecelik açı daha uzun bir çizgiye karşılık gelir ve ölçek daha ince bölünebilir. Bu sayede Semerkant'ta yaklaşık bin yıldızın konumu yeniden ölçüldü ve yıldızıl yıl yalnızca 58 saniye hatayla bulundu.",
+      "kid": "d20s7"
     },
     {
       "soru": "Takiyüddin'in gözlem saatinin saniyeyi göstermesi neden önemliydi?",
-      "cevap": "Sağ açıklık, yıldızın gök meridyeninden geçtiği anın zamanıyla ölçülür. Gök küresi bir saniyede yaklaşık 15 yay saniyesi döner; 1 yay dakikası kesinlik için saatin 4 saniyeden iyi olması gerekir. Dakika gösteren bir saat bu kesinliği veremez."
+      "cevap": "Sağ açıklık, yıldızın gök meridyeninden geçtiği anın zamanıyla ölçülür. Gök küresi bir saniyede yaklaşık 15 yay saniyesi döner; 1 yay dakikası kesinlik için saatin 4 saniyeden iyi olması gerekir. Dakika gösteren bir saat bu kesinliği veremez.",
+      "kid": "d20s8"
     },
     {
       "soru": "1577 kuyruklu yıldızına İstanbul'da ve Ven adasında nasıl bakıldı? Fark neydi?",
-      "cevap": "İstanbul'da III. Murad, Takiyüddin'den kuyruklu yıldızın ne anlama geldiğini sordu ve Takiyüddin onu zafer ve bolluk işareti olarak yorumladı. Ven adasında Tycho Brahe kuyruklu yıldızın ıraklığını ölçmeye çalıştı, ölçülebilir bir kayma bulamadı ve onun Ay'ın ötesinde olduğunu gösterdi. Biri yorum, öbürü uzaklık sorusu sordu."
+      "cevap": "İstanbul'da III. Murad, Takiyüddin'den kuyruklu yıldızın ne anlama geldiğini sordu ve Takiyüddin onu zafer ve bolluk işareti olarak yorumladı. Ven adasında Tycho Brahe kuyruklu yıldızın ıraklığını ölçmeye çalıştı, ölçülebilir bir kayma bulamadı ve onun Ay'ın ötesinde olduğunu gösterdi. Biri yorum, öbürü uzaklık sorusu sordu.",
+      "kid": "d20s9"
     },
     {
       "soru": "Galileo'nun Venüs evreleri gözlemi Ptolemaios'un düzeniyle bağdaşmıyordu. Neden tek başına Kopernik'i kanıtlamadı?",
-      "cevap": "Venüs'ün evreleri, Venüs'ün Güneş'in çevresinde dolandığını gösterir ve Ptolemaios'un düzeniyle bağdaşmaz. Ama Tycho'nun düzeninde de gezegenler Güneş'in çevresinde döner (Güneş de Dünya'nın çevresinde) ve bu düzen gezegen hareketlerini Kopernik'inkiyle aynı biçimde açıklar. Bu yüzden evreler iki düzenle de uyumludur."
+      "cevap": "Venüs'ün evreleri, Venüs'ün Güneş'in çevresinde dolandığını gösterir ve Ptolemaios'un düzeniyle bağdaşmaz. Ama Tycho'nun düzeninde de gezegenler Güneş'in çevresinde döner (Güneş de Dünya'nın çevresinde) ve bu düzen gezegen hareketlerini Kopernik'inkiyle aynı biçimde açıklar. Bu yüzden evreler iki düzenle de uyumludur.",
+      "kid": "d20s10"
     },
     {
       "soru": "Tycho Dünya'nın hareket ettiğini neden kabul etmedi ve bu itiraz nasıl çözüldü?",
-      "cevap": "Dünya Güneş'in çevresinde dolanıyorsa yakın yıldızlar yıl içinde ıraklık göstermeliydi; Tycho hiçbir kayma göremedi ve Dünya'nın durduğu sonucuna vardı. Bugün yakın yıldızların gerçekten kaydığını biliyoruz, ama bu kayma teleskopsuz görülemeyecek kadar küçüktür. Tycho'nun bir yay dakikalık kesinliği bunun için yetmiyordu."
+      "cevap": "Dünya Güneş'in çevresinde dolanıyorsa yakın yıldızlar yıl içinde ıraklık göstermeliydi; Tycho hiçbir kayma göremedi ve Dünya'nın durduğu sonucuna vardı. Bugün yakın yıldızların gerçekten kaydığını biliyoruz, ama bu kayma teleskopsuz görülemeyecek kadar küçüktür. Tycho'nun bir yay dakikalık kesinliği bunun için yetmiyordu.",
+      "kid": "d20s11"
     },
     {
       "soru": "Hubble'ın 1923'te Andromeda'da bir Sefeid bulması neden bir dönüm noktasıydı?",
-      "cevap": "Leavitt'in dönem–parlaklık ilişkisiyle Sefeidin uzaklığı, dolayısıyla Andromeda'nın uzaklığı hesaplanabildi: yaklaşık 930.000 ışık yılı. Bu, Shapley'in bütün evren için verdiği değerin üç katından fazlaydı ve Andromeda'nın Samanyolu'nun dışında ayrı bir galaksi olduğunu gösterdi. Değer bugünkü 2,5 milyon ışık yılının yarısından azdı ama sonucu değiştirmedi."
+      "cevap": "Leavitt'in dönem–parlaklık ilişkisiyle Sefeidin uzaklığı, dolayısıyla Andromeda'nın uzaklığı hesaplanabildi: yaklaşık 930.000 ışık yılı. Bu, Shapley'in bütün evren için verdiği değerin üç katından fazlaydı ve Andromeda'nın Samanyolu'nun dışında ayrı bir galaksi olduğunu gösterdi. Değer bugünkü 2,5 milyon ışık yılının yarısından azdı ama sonucu değiştirmedi.",
+      "kid": "d20s12"
     }
   ],
   "kaynaklar": [
-    { "ad": "Wikipedia – Babylonian astronomy", "url": "https://en.wikipedia.org/wiki/Babylonian_astronomy" },
-    { "ad": "Wikipedia – Astronomical Diaries", "url": "https://en.wikipedia.org/wiki/Astronomical_Diaries" },
-    { "ad": "Wikipedia – Decan", "url": "https://en.wikipedia.org/wiki/Decan" },
-    { "ad": "Wikipedia – Sirius", "url": "https://en.wikipedia.org/wiki/Sirius" },
-    { "ad": "Wikipedia – Earth's circumference", "url": "https://en.wikipedia.org/wiki/Earth%27s_circumference" },
-    { "ad": "Observatoire de Paris – Etymological Dictionary: Eratosthenes' method", "url": "https://dictionary.obspm.fr/terms/eratosthenes-method/" },
-    { "ad": "Britannica – Aristarchus of Samos", "url": "https://www.britannica.com/biography/Aristarchus-of-Samos" },
-    { "ad": "Museo Galileo – Hipparchus of Nicaea", "url": "https://catalogue.museogalileo.it/biography/HipparchusNicaea.html" },
-    { "ad": "EBSCO Research Starters – Hipparchus", "url": "https://www.ebsco.com/research-starters/history/hipparchus/" },
-    { "ad": "Wikipedia – Timocharis", "url": "https://en.wikipedia.org/wiki/Timocharis" },
-    { "ad": "Sky and Telescope – Lost star catalog of ancient times comes to light", "url": "https://skyandtelescope.org/astronomy-news/lost-star-catalog-of-ancient-times-comes-to-light/" },
-    { "ad": "Wikipedia – Almagest", "url": "https://en.wikipedia.org/wiki/Almagest" },
-    { "ad": "MacTutor – Al-Battani", "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Al-Battani/" },
-    { "ad": "MacTutor – al-Biruni (kısa biyografi, PDF)", "url": "https://mathshistory.st-andrews.ac.uk/SH/al_biruni_sh.pdf" },
-    { "ad": "Observatoire de Paris – Etymological Dictionary: Biruni's method", "url": "https://dictionary.obspm.fr/terms/birunis-method/" },
-    { "ad": "Wikipedia – Ulugh Beg", "url": "https://en.wikipedia.org/wiki/Ulugh_Beg" },
-    { "ad": "MacTutor – Ulugh Beg (kısa biyografi, PDF)", "url": "https://mathshistory.st-andrews.ac.uk/SH/ulugh_beg_sh.pdf" },
-    { "ad": "TDV İslâm Ansiklopedisi – Takıyyüddin er-Râsıd", "url": "https://islamansiklopedisi.org.tr/takiyyuddin-er-rasid" },
-    { "ad": "Wikipedia – Constantinople observatory of Taqi ad-Din", "url": "https://en.wikipedia.org/wiki/Constantinople_observatory_of_Taqi_ad-Din" },
-    { "ad": "Muslim Heritage – Taqi al-Din Ibn Ma'ruf: Survey on his Works and Scientific Method", "url": "https://muslimheritage.com/taqi-al-din-works-sci-method/" },
-    { "ad": "Retrospect Journal – The Istanbul and Uraniborg Observatories: A Comparative Study", "url": "https://retrospectjournal.com/2021/04/25/the-istanbul-and-uraniborg-observatories-a-comparative-study/" },
-    { "ad": "Museo Galileo – Nicolaus Copernicus", "url": "https://catalogue.museogalileo.it/biography/NicolausCopernicus.html" },
-    { "ad": "Linda Hall Library – The Copernican Revolution", "url": "https://www.lindahall.org/experience/digital-exhibitions/sun-in-early-modernity/01-the-copernican-revolution/" },
-    { "ad": "UCAR High Altitude Observatory – Tycho Brahe (1546-1601)", "url": "https://www2.hao.ucar.edu/education/scientists/tycho-brahe-1546-1601" },
-    { "ad": "Universe (Macmillan) – Tycho Brahe's astronomical observations disproved ancient ideas about the heavens", "url": "https://digfir-published.macmillanusa.com/universe10e/universe10e_ch4_4.html" },
-    { "ad": "Wikipedia – Supernova", "url": "https://en.wikipedia.org/wiki/Supernova" },
-    { "ad": "Wikipedia – Sidereus Nuncius", "url": "https://en.wikipedia.org/wiki/Sidereus_Nuncius" },
-    { "ad": "Britannica – Galileo: Telescopic discoveries", "url": "https://www.britannica.com/biography/Galileo-Galilei/Telescopic-discoveries" },
-    { "ad": "Wikipedia – History of the telescope", "url": "https://en.wikipedia.org/wiki/History_of_the_telescope" },
-    { "ad": "NASA – Orbits and Kepler's Laws", "url": "https://science.nasa.gov/resource/orbits-and-keplers-laws/" },
-    { "ad": "Wikipedia – Kepler's laws of planetary motion", "url": "https://en.wikipedia.org/wiki/Kepler%27s_laws_of_planetary_motion" },
-    { "ad": "Wikipedia – Newton's law of universal gravitation", "url": "https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation" },
-    { "ad": "NASA – Uranus Facts", "url": "https://science.nasa.gov/Uranus/facts" },
-    { "ad": "Wikipedia – Fraunhofer lines", "url": "https://en.wikipedia.org/wiki/Fraunhofer_lines" },
-    { "ad": "Wikipedia – Henrietta Swan Leavitt", "url": "https://en.wikipedia.org/wiki/Henrietta_Swan_Leavitt" },
-    { "ad": "Astronomy – How Edwin Hubble won the Great Debate", "url": "https://www.astronomy.com/science/how-edwin-hubble-won-the-great-debate/" },
-    { "ad": "Wikipedia – Andromeda Galaxy", "url": "https://en.wikipedia.org/wiki/Andromeda_Galaxy" },
-    { "ad": "NASA – Moon viewing tips", "url": "https://science.nasa.gov/moon/viewing-tips/" },
-    { "ad": "Wikipedia – Binoculars", "url": "https://en.wikipedia.org/wiki/Binoculars" },
-    { "ad": "Wikipedia – Ecliptic", "url": "https://en.wikipedia.org/wiki/Ecliptic" }
+    {
+      "ad": "Wikipedia – Babylonian astronomy",
+      "url": "https://en.wikipedia.org/wiki/Babylonian_astronomy"
+    },
+    {
+      "ad": "Wikipedia – Astronomical Diaries",
+      "url": "https://en.wikipedia.org/wiki/Astronomical_Diaries"
+    },
+    {
+      "ad": "Wikipedia – Decan",
+      "url": "https://en.wikipedia.org/wiki/Decan"
+    },
+    {
+      "ad": "Wikipedia – Sirius",
+      "url": "https://en.wikipedia.org/wiki/Sirius"
+    },
+    {
+      "ad": "Wikipedia – Earth's circumference",
+      "url": "https://en.wikipedia.org/wiki/Earth%27s_circumference"
+    },
+    {
+      "ad": "Observatoire de Paris – Etymological Dictionary: Eratosthenes' method",
+      "url": "https://dictionary.obspm.fr/terms/eratosthenes-method/"
+    },
+    {
+      "ad": "Britannica – Aristarchus of Samos",
+      "url": "https://www.britannica.com/biography/Aristarchus-of-Samos"
+    },
+    {
+      "ad": "Museo Galileo – Hipparchus of Nicaea",
+      "url": "https://catalogue.museogalileo.it/biography/HipparchusNicaea.html"
+    },
+    {
+      "ad": "EBSCO Research Starters – Hipparchus",
+      "url": "https://www.ebsco.com/research-starters/history/hipparchus/"
+    },
+    {
+      "ad": "Wikipedia – Timocharis",
+      "url": "https://en.wikipedia.org/wiki/Timocharis"
+    },
+    {
+      "ad": "Sky and Telescope – Lost star catalog of ancient times comes to light",
+      "url": "https://skyandtelescope.org/astronomy-news/lost-star-catalog-of-ancient-times-comes-to-light/"
+    },
+    {
+      "ad": "Wikipedia – Almagest",
+      "url": "https://en.wikipedia.org/wiki/Almagest"
+    },
+    {
+      "ad": "MacTutor – Al-Battani",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Al-Battani/"
+    },
+    {
+      "ad": "MacTutor – al-Biruni (kısa biyografi, PDF)",
+      "url": "https://mathshistory.st-andrews.ac.uk/SH/al_biruni_sh.pdf"
+    },
+    {
+      "ad": "Observatoire de Paris – Etymological Dictionary: Biruni's method",
+      "url": "https://dictionary.obspm.fr/terms/birunis-method/"
+    },
+    {
+      "ad": "Wikipedia – Ulugh Beg",
+      "url": "https://en.wikipedia.org/wiki/Ulugh_Beg"
+    },
+    {
+      "ad": "MacTutor – Ulugh Beg (kısa biyografi, PDF)",
+      "url": "https://mathshistory.st-andrews.ac.uk/SH/ulugh_beg_sh.pdf"
+    },
+    {
+      "ad": "TDV İslâm Ansiklopedisi – Takıyyüddin er-Râsıd",
+      "url": "https://islamansiklopedisi.org.tr/takiyyuddin-er-rasid"
+    },
+    {
+      "ad": "Wikipedia – Constantinople observatory of Taqi ad-Din",
+      "url": "https://en.wikipedia.org/wiki/Constantinople_observatory_of_Taqi_ad-Din"
+    },
+    {
+      "ad": "Muslim Heritage – Taqi al-Din Ibn Ma'ruf: Survey on his Works and Scientific Method",
+      "url": "https://muslimheritage.com/taqi-al-din-works-sci-method/"
+    },
+    {
+      "ad": "Retrospect Journal – The Istanbul and Uraniborg Observatories: A Comparative Study",
+      "url": "https://retrospectjournal.com/2021/04/25/the-istanbul-and-uraniborg-observatories-a-comparative-study/"
+    },
+    {
+      "ad": "Museo Galileo – Nicolaus Copernicus",
+      "url": "https://catalogue.museogalileo.it/biography/NicolausCopernicus.html"
+    },
+    {
+      "ad": "Linda Hall Library – The Copernican Revolution",
+      "url": "https://www.lindahall.org/experience/digital-exhibitions/sun-in-early-modernity/01-the-copernican-revolution/"
+    },
+    {
+      "ad": "UCAR High Altitude Observatory – Tycho Brahe (1546-1601)",
+      "url": "https://www2.hao.ucar.edu/education/scientists/tycho-brahe-1546-1601"
+    },
+    {
+      "ad": "Universe (Macmillan) – Tycho Brahe's astronomical observations disproved ancient ideas about the heavens",
+      "url": "https://digfir-published.macmillanusa.com/universe10e/universe10e_ch4_4.html"
+    },
+    {
+      "ad": "Wikipedia – Supernova",
+      "url": "https://en.wikipedia.org/wiki/Supernova"
+    },
+    {
+      "ad": "Wikipedia – Sidereus Nuncius",
+      "url": "https://en.wikipedia.org/wiki/Sidereus_Nuncius"
+    },
+    {
+      "ad": "Britannica – Galileo: Telescopic discoveries",
+      "url": "https://www.britannica.com/biography/Galileo-Galilei/Telescopic-discoveries"
+    },
+    {
+      "ad": "Wikipedia – History of the telescope",
+      "url": "https://en.wikipedia.org/wiki/History_of_the_telescope"
+    },
+    {
+      "ad": "NASA – Orbits and Kepler's Laws",
+      "url": "https://science.nasa.gov/resource/orbits-and-keplers-laws/"
+    },
+    {
+      "ad": "Wikipedia – Kepler's laws of planetary motion",
+      "url": "https://en.wikipedia.org/wiki/Kepler%27s_laws_of_planetary_motion"
+    },
+    {
+      "ad": "Wikipedia – Newton's law of universal gravitation",
+      "url": "https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation"
+    },
+    {
+      "ad": "NASA – Uranus Facts",
+      "url": "https://science.nasa.gov/Uranus/facts"
+    },
+    {
+      "ad": "Wikipedia – Fraunhofer lines",
+      "url": "https://en.wikipedia.org/wiki/Fraunhofer_lines"
+    },
+    {
+      "ad": "Wikipedia – Henrietta Swan Leavitt",
+      "url": "https://en.wikipedia.org/wiki/Henrietta_Swan_Leavitt"
+    },
+    {
+      "ad": "Astronomy – How Edwin Hubble won the Great Debate",
+      "url": "https://www.astronomy.com/science/how-edwin-hubble-won-the-great-debate/"
+    },
+    {
+      "ad": "Wikipedia – Andromeda Galaxy",
+      "url": "https://en.wikipedia.org/wiki/Andromeda_Galaxy"
+    },
+    {
+      "ad": "NASA – Moon viewing tips",
+      "url": "https://science.nasa.gov/moon/viewing-tips/"
+    },
+    {
+      "ad": "Wikipedia – Binoculars",
+      "url": "https://en.wikipedia.org/wiki/Binoculars"
+    },
+    {
+      "ad": "Wikipedia – Ecliptic",
+      "url": "https://en.wikipedia.org/wiki/Ecliptic"
+    },
+    {
+      "ad": "Wikipedia – Sothic cycle",
+      "url": "https://en.wikipedia.org/wiki/Sothic_cycle"
+    },
+    {
+      "ad": "Wikipedia – Aristarchus of Samos",
+      "url": "https://en.wikipedia.org/wiki/Aristarchus_of_Samos"
+    },
+    {
+      "ad": "Wikipedia – On the Sizes and Distances (Aristarchus)",
+      "url": "https://en.wikipedia.org/wiki/On_the_Sizes_and_Distances_(Aristarchus)"
+    },
+    {
+      "ad": "Wikipedia – Hipparchus",
+      "url": "https://en.wikipedia.org/wiki/Hipparchus"
+    },
+    {
+      "ad": "Wikipedia – Nicolaus Copernicus",
+      "url": "https://en.wikipedia.org/wiki/Nicolaus_Copernicus"
+    },
+    {
+      "ad": "MacTutor – Tycho Brahe",
+      "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Brahe/"
+    },
+    {
+      "ad": "Wikipedia – Tycho Brahe",
+      "url": "https://en.wikipedia.org/wiki/Tycho_Brahe"
+    },
+    {
+      "ad": "Wikipedia – Galileo Galilei",
+      "url": "https://en.wikipedia.org/wiki/Galileo_Galilei"
+    },
+    {
+      "ad": "Wikipedia – Phases of Venus",
+      "url": "https://en.wikipedia.org/wiki/Phases_of_Venus"
+    }
   ]
 }
