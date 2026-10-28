@@ -92,3 +92,81 @@ Tarih: 2026-10-27. Kaynaklar WebFetch ile yeniden açıldı; tüm hesaplar pytho
 - Kavram kontrolü: Schwarzschild yarıçapının kütleyle doğrusal ölçeklenmesi, "uzaktan sıradan kütle gibi çeker", spagettileşme, çok habercili gökbilim — hata bulunmadı.
 - Askıda: "Cyg X-1 Kuğu takımyıldızında" — 1911.04305 "brightest X-ray source in the constellation of Cygnus" diyor, bu yüzden artık kaynaklı (askıda değil). "Çok habercili gökbilim" terimi: eso1733 "We have entered a new era of multi-messenger astronomy!" (Andrew Levan) — kaynaklı.
 - Arama: bu ders için 1 WebSearch (GW170817 hız sınırı).
+
+## v3 genişletme (2026-10-28): yeni iddialar
+Erişim: 2026-10-28. "Kaynaktaki ifade" WebFetch aktarımıdır (kısa alıntı ya da değer). HESAP satırları kaynak değerlerinden yapılan hesaplardır; sabitler arastirma/sabitler.json'dan (G = 6,6743 × 10⁻¹¹, c = 299.792.458 m/s NIST; M☉ = 1,98841 × 10³⁰ kg ve R⊕ ekvator 6.378,1 km IAU 2015 B3). Yeni bölümler: "Yoğunluk yanılgısı: dev kara delik seyrektir", "Uyuyan kara delikler ve kayıp ara kütleliler", "Bu kadar küçük bir şeyi nasıl görüyoruz?", "On yılda yüzlerce birleşme", "Yeni kulaklar: uzayda LISA, galakside atarcalar", "Kara delikler sonsuza dek yaşar mı?", "İstanbul'dan kara deliklerin yönüne bakmak".
+
+### Olay ufku (ek paragraflar)
+- Kara delik dışarıdan yalnız kütle, açısal momentum, elektrik yüküyle betimlenir; Wheeler "black holes have no hair"; saçsızlık teoremi | https://en.wikipedia.org/wiki/No-hair_theorem | "can be completely characterized by only three independent externally observable classical parameters" ; Wheeler "black holes have no hair"
+- Rs formülü dönmeyen kara delik için; dönen kara delik farklı | https://en.wikipedia.org/wiki/Schwarzschild_radius | "a rotating black hole operates slightly differently"
+- Foton küresi: içindeki ışık yörüngede dolanır; içeri giren ışık sonunda ufka düşer; gölge ufuktan ~2,6 kat büyük | https://www.physics.unlv.edu/~jeffery/astro/black_hole/black_hole_shadow.html | "it is the spherical shell where light rays inside it are orbiting" ; "3*sqrt(3)/2 = sqrt(27)/2 = (2.598 ...) times larger on the sky than the event horizon"
+- Olay ufku gölgeden ~2,5 kat küçük; kütle büyüdükçe gölge büyür | https://www.eso.org/public/news/eso1907/ | Not 1: "around 2.5 times smaller than the shadow it casts" ; Not 2: "the more massive a black hole, the larger the shadow"
+
+### Yoğunluk
+- En kütleli kara deliklerin ortalama yoğunluğu anakol yıldızlarından düşük; süper kütleli kara delik sudan seyrek olabilir | https://en.wikipedia.org/wiki/Schwarzschild_radius | "the most massive black holes has an average density lower than main sequence stars" ; "the average density of a supermassive black hole can be less than the density of water"
+- Su 1.000 kg/m³ | https://www.theweatherprediction.com/habyhints/216/ | "Water has a density of 1000 kg/m^3."
+- Deniz düzeyinde hava ~1,2 kg/m³ | https://en.wikipedia.org/wiki/Density_of_air | "1.2250 kg/m3" (15 °C) ; "1.2041 kg/m3" (20 °C)
+- Yoğunluklar: 10 M☉ 1,84 × 10¹⁷; 1 M☉ 1,84 × 10¹⁹; Sgr A* (4,297 × 10⁶) 9,98 × 10⁵; M87 (6,5 × 10⁹) 0,436 kg/m³; oran 2,29 × 10⁶ = (1.512,7)² | HESAP | Rs = 2GM/c²: 29.532 m ; 1,269 × 10¹⁰ m ; 1,9196 × 10¹³ m ; V = 4/3 π Rs³ ; M87/hava 0,436/1,225 = 0,36 (≈ üç kat seyrek)
+
+### Cyg X-1
+- 1964 sonda roketi; Hawking–Thorne bahsi, tanık notu 10 Aralık 1974 (WP: 1975), Hawking 1990'da kabul etti; ~7.000 ışık yılı; 5,599829 gün; süperdev eş | https://en.wikipedia.org/wiki/Cyg_X-1 | "carried aloft by a sounding rocket launched" ; bet 1975, legend December 10, 1974 ; "Hawking conceded the bet in 1990" ; "located about 7,000 light-years away" ; "every 5.599829 days"
+- Miller-Jones ve ark. 2021: 2,22 kpc, 21,2 ± 2,2 M☉, radyo astrometrisi | https://ui.adsabs.harvard.edu/abs/2021Sci...371.1046M | "2.22-0.17+0.18 kiloparsecs" ; "21.2 ± 2.2 solar masses"
+- 2,22 kpc ≈ 7.240 ışık yılı | HESAP | 2,22 × 3.261,56
+- HDE 226868: tozsuz beşinci kadir; sönükleşme 3,3 kadir; Eta Cygni'ye ~yarım derece, Eta Cygni dördüncü kadir | WP:Cyg_X-1 | "HDE 226868 would be a fifth-magnitude star" ; extinction 3.3 ; "4th-magnitude star" Eta Cygni, about half a degree
+- Görünür parlaklık 8,3–9,2; 7×50 kazanç 4,3 kadir; sınırlar 6,5 + 4,3 = 10,8 ve 4 + 4,3 = 8,3 | HESAP + d11 ("~4,3 kadir kazanç") + d1 (+6,5; banliyö +4) | —
+- Kuğu yaz takımyıldızı (Albireo) | d15_kaynak satır 124 (Astronomy Now) | Albireo yaz gecelerinin hedefi
+- Not: HDE 226868'in doğrudan V kadiri kaynakta yok; aralık hesapla verildi.
+
+### Uyuyan ve ara kütleli
+- Gaia BH3: 16 Nisan 2024; ~33 M☉; 1.926 ışık yılı; Kartal; yalpalama; eş: ilk 2 milyar yılda doğmuş, ağır elementçe çok fakir yaşlı dev; ~16 AB; Gaia'nın 3. uyuyan kara deliği; Samanyolu'nda bu büyüklükte ilk; Cyg X-1 ~20, ortalama ~10 M☉; ilkel metalce fakir yıldız kuramını destekler; DR4'ten önce duyuruldu | https://www.esa.int/Science_Exploration/Space_Science/Gaia/Sleeping_giant_surprises_Gaia_scientists | "about 33 times that of the Sun" ; "at a distance of 1926 light-years" ; "analysing in detail the wobble in the star's path" ; "very few elements heavier than hydrogen and helium" ; "the third dormant black hole found with Gaia" ; "This is the first time a black hole of stellar origin this big has been spotted within the Milky Way." ; "around 20" ; "around 10 times" ; "could also have been very poor in heavy elements" ; "announce it ahead of the official release"
+- NASA: ara kütleli adaylar var ama doğrulamak zor; ~100 milyon kara delik | https://science.nasa.gov/universe/black-holes/types (mevcut satır) | mevcut d16 Bölüm 4 satırları
+- GW190521: 21 Mayıs 2019; 2 Eylül 2020; 85 + 66 → 142; ~8 M☉ dalga; ilk açık ara kütleli; ~65 M☉ üstü kara delik yıldız çöküşüyle oluşamaz (kütle boşluğu) | https://en.wikipedia.org/wiki/GW190521 | "on 21 May 2019 at 03:02:29 UTC" ; "on 2 September 2020" ; "85 and 66 solar masses" ; "142 times that of the Sun" ; "The remaining 8 solar masses were radiated away" ; "the first clear detection of an intermediate-mass black hole" ; "a star cannot collapse itself into a black hole of more than about 65 M☉"
+- Not: 85 + 66 − 142 = 9, Wikipedia "8" diyor (yuvarlama/belirsizlik); derste "yaklaşık 8" kaynağa uyularak yazıldı.
+
+### Sgr A*
+- Balick ve Brown 1974; ad Brown 1982; 4,297 ± 0,012 milyon M☉; 8.277 pc (~27.000 ışık yılı); görünür ışıkta ~25 kadir sönükleşme; düşük birikim; NASA 2015 X ışını patlaması 400 kat | https://en.wikipedia.org/wiki/Sagittarius_A* | "discovered in 1974 by Bruce Balick and Robert L. Brown" ; "coined by Brown in a 1982 paper" ; "4.297±0.012 million solar masses" ; 8,277 pc ; about 25 magnitudes of extinction ; "X-ray flare 400 times brighter than usual"
+- 25 kadir = 10¹⁰ kat | HESAP | 10^(0,4 × 25)
+- S2: Nisan 2020, 27 yıl, 330'dan fazla ölçüm, GRAVITY/SINFONI/NACO; gül deseni (Schwarzschild presesyonu); Merkür benzeri ilk kanıt | https://www.universetoday.com/articles/a-star-is-orbiting-the-milky-ways-black-hole-and-moving-exactly-how-einstein-predicted-it-should | "27 years of observations of S2" ; "over 330 measurements" ; "looks like a rosette instead of an ellipse" ; Mercury's perihelion precession early evidence
+- 12′ her yörüngede; GR ile tam uyumlu (f_SP = 1,10 ± 0,19) | https://arxiv.org/abs/2004.07187 | "del phi = 12' per orbital period" ; "The S2 data are fully consistent with GR"
+- 21.600 ÷ 12 = 1.800 yörünge × 16 yıl = 28.800 yıl | HESAP | —
+- Sgr A* İstanbul'da en yüksek ~20° | HESAP | δ −29° 00′ 28″ (WP:Sagittarius_A*) ; 90 − 41,01 − 29,01 = 19,98
+
+### EHT
+- ~20 mikro yay saniyesi; Paris–New York gazete benzetmesi; 8 teleskop adları; hidrojen maser; ~350 TB/gün; helyum dolu diskler; MPIfR ve MIT Haystack; petabaytlar | https://www.eso.org/public/news/eso1907/ | "an angular resolution of 20 micro-arcseconds" ; ALMA, APEX, IRAM 30-meter, JCMT, LMT, SMA, SMT, SPT ; "roughly 350 terabytes per day" ; "stored on high-performance helium-filled hard drives"
+- Hubble 0,05″; 0,05 ÷ 20 × 10⁻⁶ = 2.500 | d15_kaynak "Derin araştırma" (NASA Hubble optics) + HESAP | "with an angular diameter of a mere 0.05 arcsecond"
+- λ/D: 1,3 × 10⁻³ ÷ 1,2756 × 10⁷ = 1,02 × 10⁻¹⁰ rad = 21 µas | HESAP | R⊕ 6.378,1 km (IAU) ; 1 rad = 206.265″
+- M87 gölge ~40 µas (55 milyon ışık yılı; 53,5 ile ~41); Sgr A* ~53 µas; kütle oranı 1.513; uzaklık oranı 2.037 | HESAP | gölge çapı = 2 Rs × 2,598
+- M87 kütle tarihçesi: 3,5 ± 0,8 – 6,6 ± 0,4 milyar; 2016 7,22; EHT 2019 6,5 ± 0,2 (ist.) ± 0,7 (sist.) milyar | https://en.wikipedia.org/wiki/Messier_87 | "from (3.5±0.8)×10⁹ M☉" ; "(6.6±0.4)×10⁹ M☉" ; "7.22+0.34 −0.40×10⁹" ; "(6.5 ± 0.2stat ± 0.7sys) × 10⁹ M☉"
+- M87: 8,6 kadir; δ +12° 23′; Başak; 6 cm teleskop; jet en az 5.000 ışık yılı; 53,5 milyon ışık yılı; İstanbul'da 61,4° | WP:Messier_87 + HESAP | "Apparent magnitude (V): 8.6" ; "can be observed using a small telescope with a 6 cm (2.4 in) aperture" ; "at least 1.5 kiloparsecs (5,000 light-years)" ; "53.5 ± 1.63 million light-years" ; 90 − 41,01 + 12,39 = 61,4
+
+### Kütleçekim dalgaları / GW150914
+- 35 → 250 Hz; tepe genlik 1,0 × 10⁻²¹; SNR 24; > 5,1σ; ~3 M☉c² | https://issuu.com/jorgemosquete/docs/ligo-p150914-detection_of_gw150914 (PRL 116, 061102 kopyası) | "The signal sweeps upwards in frequency from 35 to 250 Hz" ; "a peak gravitational-wave strain of 1.0 × 10−21" ; "a matched-filter signal-to-noise ratio of 24" ; "greater than 5.1σ"
+- Sinyalden kütle ve dönme; son kara delik dönmesi 0,67 | https://dcc.ligo.org/P1500218/public | "62(+4/−4) solar masses and spin 0.67"
+- İki dedektör arası en büyük gecikme 3.000 km ÷ 299.792 km/s ≈ 10 ms | HESAP | 3.000 km mevcut satır (HyperPhysics)
+- Not: GW150914 SNR'si PRL'de 24, WP GW250114 maddesinde 26; derste 24 (birincil kaynak).
+
+### On yılda yüzlerce birleşme
+- GWTC-4.0: 128 yeni aday; toplam 218; O4a Mayıs 2023–Ocak 2024; yalnız iki LIGO; KAGRA yetersiz; Ağustos 2025; toplam kütle > 150 M☉ olaylar; iki olası kara delik–nötron yıldızı | https://ligo.org/science-summaries/O4a_catalog_omnibus/ | "We have found 128 new candidates" ; "brings the total number of candidates within the GWTC to 218" ; "ran from May 2023 to January 2024" ; "In August 2025"
+- O4'te ~220 birleşme; ilk üç dönemde 90; gürültüdeki azalma; GW150914 ve GW250114 ~1,3 milyar ışık yılı | https://ligo.org/detections/gw250114-10-years-of-gravitational-wave-astronomy/ | "about 220 mergers" ; 90 detections across the first three runs ; "much lower noise seen today is thanks to cutting-edge improvements"
+- GW250114: 14 Ocak 2025; 33,6 + 32,2 → 62,7 M☉; ~1,14 milyar ışık yılı; SNR ~80; alan ~240.000 → ~400.000 km²; Kerr ilk üst ton 4,1σ; GR ile uyum | https://en.wikipedia.org/wiki/GW250114 | "detected January 14, 2025" ; "33.6" ; "32.2" ; "62.7" ; "c. 1.14 billion ly" ; SNR "about 77–80" ; "about 240000 square kilometers" ; "about 400000 square kilometers" ; "4.1 σ" first overtone
+- Alan sınaması: 123.734 + 113.638 = 237.372 km²; 62,7 M☉ dönmesiz 430.869 km²; kütle kaybı 3,1 (%4,7); alan artışı 400/240 = %67 | HESAP | A = 4π Rs²
+- SNR oranı 80 ÷ 24 ≈ 3,3 ("yaklaşık üç kat") | HESAP | —
+
+### LISA ve atarcalar
+- LISA: Ocak 2024 onay; 3 uydu; eşkenar üçgen, kenar 2,5 milyon km (Dünya–Ay uzaklığının 6 katından fazla); Dünya'yı izler; 2035 Ariane 6; binlerce–milyonlarca M☉ | https://www.port.ac.uk/news-events-and-blogs/news/esa-gives-go-ahead-for-flagship-gravitational-wave-observatory-in-space | "a constellation of three" ; "Each side of the triangle will be 2.5 million km long" ; "planned for 2035" ; "thousands to millions of solar masses"
+- NANOGrav 15 yıllık veri (Haziran 2023); 67 atarca; Hellings–Downs ilişkisi p ≈ 5 × 10⁻⁵ – 1,9 × 10⁻⁴ (3,5–4σ), Bayes testi ~3σ; süper kütleli kara delik çiftleriyle uyumlu; sıra dışı kaynaklar dışlanamaz; referans frekans 1/yıl | https://arxiv.org/abs/2306.16213 | "correlated among 67 pulsars" ; "(approx. 3.5 - 4σ)" ; "(approx. 3σ)" ; "consistent with astrophysical expectations for a signal from a population of supermassive black-hole binaries" ; "more exotic cosmological and astrophysical sources cannot be excluded" ; "at a reference frequency of 1/(1 yr)"
+- Haziran 2023 tarihi | https://news.berkeley.edu/2023/06/28/after-15-years-pulsar-timing-yields-evidence-of-cosmic-gravitational-wave-background/ (arama sonucu URL'sindeki tarih) | 2023/06/28
+- Dalga boyları: 299.792 ÷ 35 = 8.565 km; ÷ 250 = 1.199 km; 1 ışık yılı; oran 7,9 × 10⁹ | HESAP | λ = c/f
+
+### Hawking ışıması
+- Hawking 1974; sıcaklık kütleyle ters orantılı; ~3 M☉ için 10⁻⁷ K; Dünya kütlesi 10⁻¹² K; CMB 2,7 K → yıldız kökenli kara delikler buharlaşamaz; Güneş kütleli > 10⁶⁷ yıl; patlamalar saptanmadı; benzetme deneyleri tartışmalı | https://en.wikipedia.org/wiki/Hawking_radiation | "developed by Stephen Hawking in 1974" ; "inversely proportional to the black hole's mass" ; 10⁻⁷ K (3 M☉) ; 10⁻¹² K (Earth mass) ; "no stellar black holes can evaporate: they are colder than outer space" ; "more than 10⁶⁷ years" ; "Such radiation bursts have not yet been detected" ; analogue results "remain debated"
+- Evrenin yaşı ~13,8 milyar yıl | d15_kaynak satır 13 (Planck 2018) | 13,797 ± 0,023 milyar yıl
+- 2,7 ÷ 10⁻⁷ = 2,7 × 10⁷; 10⁶⁷ ÷ 1,4 × 10¹⁰ ≈ 7 × 10⁵⁶ | HESAP | —
+
+### Notlar (v3)
+- WebSearch: d16 için 14 arama kullanıldı.
+- "Kara delik" teriminin kökeni (Wheeler 1967 vb.), foton küresinin ve en içteki kararlı yörüngenin sayısal yarıçapları için kaynak açılmadı; derste sayı verilmedi.
+- HDE 226868'in doğrudan V kadiri bulunamadı (WP sayfası yalnız tozsuz "beşinci kadir" ve 3,3 kadir sönükleşme veriyor); derste aralık hesapla gösterildi.
+- GW250114 uzaklığı kaynaklar arasında farklı: WP ~1,14 milyar, LIGO ~1,3 milyar ışık yılı; ikisi de yazıldı.
+- GW190521 için WP'nin "17 milyar ışık yılı" uzaklığı (ışınım uzaklığı tanımı d17 konusu) derse alınmadı.
+- PRL 116, 061102 metni doğrudan açılamadı (ubc.ca istemci hatası); özet issuu kopyasından okundu.
