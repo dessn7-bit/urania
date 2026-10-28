@@ -357,7 +357,8 @@ test('(k) Dersten derse: kutu işaretliyse ders bitince sonrakine geçer ve kend
   /* Olumlu koşul: d10'un okuması gerçekten SONA ERDİ (durdurulmadı); geçiş kararı (bitince) bu anda eşzamanlı
      verilir. Sonra: adres d10'da kaldı, sonraki derse devam bayrağı yazılmadı ve yeni okuma başlamadı. */
   expect(await durumu(page)).toBe(null);
-  expect((await olaylar(page)).slice(-1)[0]).toMatch(/^sona erdi/);
+  /* Son bitiş olayı (ardından "ekran kilidi bırakıldı" gibi kayıtlar gelebilir) "durdu" değil "sona erdi" olmalı */
+  expect((await olaylar(page)).filter(o => /^(sona erdi|durdu)/.test(o)).slice(-1)[0]).toMatch(/^sona erdi/);
   const sonSay = await say(page);
   expect(await page.evaluate(() => [location.hash, sessionStorage.getItem('urania_sesDevam')])).toEqual(['#ders/d10', null]);
   await expect(page.locator('article.ders h1')).toContainText('Ay');
