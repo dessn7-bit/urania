@@ -1,0 +1,58 @@
+[
+  {
+    "id": "d23-1",
+    "soru": "Egzoz hızı 4,5 km/s olan tek aşamalı bir roketin alçak yörüngeye çıkmak için 9,7 km/s delta-v kazanması gerekiyor. Tsiolkovsky denklemine göre kalkış kütlesinin yaklaşık ne kadarı yakıt olmalıdır?",
+    "secenekler": [
+      "Yaklaşık %46, çünkü 4,5 / 9,7 ≈ 0,46",
+      "Yaklaşık %68, çünkü yakıt payı delta-v ile doğru orantılı artar",
+      "Yaklaşık %88, çünkü kütle oranı e üssü (9,7 / 4,5) ≈ 8,6 olur",
+      "Yaklaşık %99, çünkü tek aşamalı roket hiç yük taşıyamaz"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre delta-v = egzoz hızı × ln (ıslak kütle / kuru kütle). 9,7 / 4,5 ≈ 2,156 ve e üssü 2,156 ≈ 8,63; kuru kütle başlangıcın yaklaşık %11,6'sı kalır, yani kalkış kütlesinin yaklaşık %88,4'ü yakıttır. Gereken yakıt delta-v ile doğru orantılı değil, üstel olarak büyür.",
+    "ders": "d23",
+    "bolum": 1
+  },
+  {
+    "id": "d23-2",
+    "soru": "Kütleçekim yardımıyla bir gezegenin yanından geçen uzay aracının hızı için hangisi doğrudur?",
+    "secenekler": [
+      "Gezegene göre hızı artar, Güneş'e göre değişmez",
+      "Gezegene göre ayrılırken geldiği hıza döner, ama Güneş'e göre hızı artabilir; bedeli gezegenin ölçülemeyecek kadar küçük yavaşlamasıdır",
+      "Gezegenin çekimi aracın hızını her iki ölçüye göre de kalıcı olarak artırır ve gezegen hiç etkilenmez",
+      "Araç yalnızca yönünü değiştirir; hız kazancı hiçbir ölçüye göre mümkün değildir"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre (NASA ve JPL) araç gezegene göre geldiği hızla ayrılır, ama gezegen Güneş çevresinde hareket ettiği için aracın Güneş'e göre hızı artar. Gezegen yörünge enerjisinin ölçülemeyecek kadar küçük bir kısmını yitirir; Physics World'e göre Voyager Jüpiter'i trilyon yılda yaklaşık 30 cm yavaşlattı. Voyager 2 bu yolla hızını iki katından fazla artırdı.",
+    "ders": "d23",
+    "bolum": 9
+  },
+  {
+    "id": "d23-3",
+    "soru": "Çin'in Tiangong istasyonu neden İstanbul'un (41,0° K) tam tepesinden geçebilir?",
+    "secenekler": [
+      "Çünkü yerdurgun yörüngededir ve hep İstanbul'un üstünde durur",
+      "Çünkü yörünge eğikliği yaklaşık 41,5°'dir; yer izi en çok bu enleme kadar kuzeye çıkar ve İstanbul bu sınırın hemen altındadır",
+      "Çünkü güneş eşzamanlı yörüngede, yaklaşık 98° eğikliktedir",
+      "Çünkü ISS'den daha yüksekte dolandığı için daha geniş bir alanı görür"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre bir uydu en çok yörünge eğikliği kadar kuzeye çıkan enlemlerin tepesinden geçebilir. Heavens-Above'a göre Ekim 2026 sonunda Tiangong 382 × 386 km yükseklikte ve 41,5° eğiklikte dolanıyordu; ISS 415 × 424 km ve 51,6°. Heavens-Above'ın Fetih tablosuna göre Tiangong'un 1 Kasım 2026 akşamı 18.54'te 90° yükseklikten geçmesi bekleniyordu.",
+    "ders": "d23",
+    "bolum": 10
+  },
+  {
+    "id": "d23-4",
+    "soru": "Kessler sendromu nedir?",
+    "secenekler": [
+      "Astronotlarda uzun süreli ağırlıksızlığın yol açtığı kemik kaybı",
+      "Yerdurgun uyduların yakıtı bitince mezarlık yörüngesine çıkarılması",
+      "Yörüngedeki çarpışmaların ürettiği parçaların yeni çarpışmalara yol açarak zincirleme çoğalması; Kessler ve Cour-Palais'in 1978'de hesapladığı çöp kuşağı tehlikesi",
+      "Roketlerin atmosferden geçerken sürtünmeyle ısınıp parçalanması"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre Kessler ve Cour-Palais 1978'de uydu sayısı arttıkça çarpışma olasılığının arttığını ve çarpışma parçalarının yeni çarpışmalar doğurarak bir çöp kuşağı oluşturabileceğini hesapladı. ESA'nın 2025 raporuna göre hiç yeni fırlatma olmasa bile çöp sayısı artmayı sürdürürdü. 10 Şubat 2009'daki Iridium 33 – Kosmos 2251 çarpışması gerçek bir örnektir.",
+    "ders": "d23",
+    "bolum": 13
+  }
+]

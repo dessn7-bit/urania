@@ -320,3 +320,17 @@ Yeni bölümler: "Işığın hızı: geçmişe bakmak", "Hidrojenin merdiveni: e
 - Yazılmayanlar: Cecilia Payne ve yıldızların hidrojen bolluğu (d5'te var); Rømer'in uyruğu (açılan kaynakta yok); Ritter'in deney yöntemi ve tam yılı (kaynakta yalnız "a year later"); COBE'nin hangi kuruma ait olduğu; Güneş'in B−V değeri (NASA Sun fact sheet'te yok; OpenStax türevi sayfalar kullanılmadı); Zeeman etkisi ve çizgi genişliğinden basınç ölçümü (kaynak açılmadı); 51 Pegasi'nin kayma genliği.
 - Defter notları 10 madde sınırında kaldı; 4 not yeni bilgilerle zenginleştirildi (kid alanı yok).
 - Sesli okuma için paragraflarda "B−V" yerine "B eksi V", "L☉, R☉, T☉" oranları yerine sözel ifade kullanıldı.
+
+## Bağımsız doğrulama (v3, 28 Ekim 2026)
+
+Yeni/değişen metin veri/dersler.json'daki yayındaki sürümle karşılaştırılarak çıkarıldı. Yeniden açılan sayfalar (WebFetch): Speed of light (IPFS), New World Encyclopedia fotoelektrik, NASA Imagine çok dalga boyu tarihi, Hydrogen line, ARCADE CMB, Fraunhofer lines, Hydrogen spectrum (IPFS), Hydrogen-alpha, Andromeda (UNT arşivi), Sheffield PHY217, Lamptech, Dispersive prism, NASA Sun ve Earth fact sheet, Discover yeşil yıldız, Canon Rayleigh, Sirius. Bütün örnekler python3 ile yeniden hesaplandı. WebSearch: 0.
+
+| Ne yanlıştı | Ne yapıldı | Kaynak |
+|---|---|---|
+| Stefan-Boltzmann paragrafı, anahtar sayı ve soru 12: yarıçap "1,71" yazılıp karesi "2,94" verilmiş; 1,71² = 2,924 (okur hesabı tutturamaz). 2,94 ancak kaynaktaki 1,7144 ile çıkar | Üç yerde "1,714" yapıldı; 2,94, 8,46, 24,9 ve 25,9 değişmedi (1,7144² × 8,4636 = 24,88; 9940 K ile 25,85) | https://en.wikipedia.org/wiki/Sirius infobox "Radius 1.7144±0.0090 R☉", "9,845±64 K", "24.74±0.70 L☉"; metinde "9,940 K" |
+
+Yeniden açılıp doğru bulunanlar: Hertz 1887, Einstein 1905, Nobel 1921, şiddetten bağımsızlık, eşik frekans; Rømer 1676 ve 22 dk, Fizeau 1849, 8 km, 315.000 km/s, 1983 metre tanımı, Ay 1,3 sn, Güneş 8 dk 19 sn; Herschel 1800 (termometreler), Ritter "a year later", Hertz 1887, Röntgen 1895, Villard 1900; 21 cm 1420,405751768 MHz, 21,106 cm, van de Hulst 1944, Ewen ve Purcell 1951 Harvard, sarmal yapı; CMB 2,725 ± 0,001 K, < 50 ppm, milimetre; Fraunhofer A 759,370, B 686,719 (O₂), C 656,281, F 486,134, H 396,847, K 393,366 (Ca⁺), b1/b2/b4 Mg, b3 Fe; Balmer 656,3/486,1/434,0/410,2/364,6 (hava), Lyman 91,175 ve 121,57 nm, Lyman morötesi, Paschen kızılötesi, Balmer 1885, R 1,097373 × 10⁷; H-alfa "approximately half the time", "easiest way"; Andromeda 1912 ve 300 km/s (o zamanki en büyük), −301 ± 1, 100–140 km/s, 2,5 milyon ış. yılı; R < 1000 / R > 10.000, kırınım denklemi; sodyum 589,0/589,6 nm ve süzme cümleleri; Newton 1666, prizma–kırınım ağı karşılaştırması ("lower dispersion than a well-chosen grating"); L☉ 382,8 × 10²⁴ W, 5772 K; 1361,0 W/m², 149,598 milyon km, 29,78 km/s; Sirius −5,50 km/s, B−V +0,00, 8,6 ış. yılı; Rayleigh λ⁻⁴; yeşil yıldız cümleleri.
+
+Python3 ile yeniden hesaplananlar (doğru): 16,63 dk ve 22/16,63 = 1,32; 315.000/299.792 = 1,051; 2,5 log 4 = 1,505; 4πd² = 2,8123 × 10²³, F = 1361,2; 1,77 ve 3,27 eV; 2,52 × 10¹⁸ foton/sn; Wien CMB 1,063 mm; H-alfa örneği 657,3 nm (1,602 × 10⁻¹⁹ ile 656,4 nm: farkın büyük kısmı gerçekten 1,6 yuvarlamasından); 4→2 2,55 eV; 13,6 eV → 91,3 nm; Sirius Hα kayması 0,01204 nm; R 9375 ve 54.690; (700/450)⁴ = 5,86.
+
+Askıda: yok.
