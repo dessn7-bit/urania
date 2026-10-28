@@ -412,3 +412,30 @@ Kaynak türü: [W] = bu oturumda WebSearch sonucu ya da proje URL'si WebFetch il
 | [W] ~4 AB; dışarıda katı kütle ~5 kat; yeterince büyük çekirdek H ve He toplar | https://www.astro.utoronto.ca/~mhvk/AST221/L18/L18.pdf | "frost-line ~4AU" ; "solid mass jumps by ~5" ; "If core massive enough, H & He can be accreted." |
 | Türkçe "kar çizgisi / donma çizgisi" adları | — | Türkçe terim resmî bir sözlükte doğrulanmadı; İngilizcesi (frost line) parantezde verildi |
 | Eski cümle çıkarıldı: "Bu düzenin nasıl ortaya çıktığının ayrıntıları bu derste kaynakla ele alınmadı" (artık kar çizgisi paragrafı kaynaklı olarak anlatıyor); 14. ders yönlendirmesi yeni paragrafta korundu | — | — |
+
+## Bağımsız doğrulama (v3, 2026-10-28)
+
+[DOĞ] = doğrulama ajanı bu oturumda WebFetch ile yeniden okudu. [GOK] = Urania'nın kendi gok.js'i (Astronomy Engine) ile Node'da hesap; İstanbul 41,0 K 29,0 D; takımyıldız sınırları J2000 koordinatıyla A.Constellation; karşı konum yer merkezli ekliptik boylam farkı 180° (gok.js karsiKonum yöntemi); parlaklık gok.js gezegenKadir. Betikler: oturum karalama dizini fc/gez*.js.
+
+| İddia | Kaynak URL | Kaynaktaki ifade / hesap |
+|---|---|---|
+| [DOĞ] space.com 2026 satırlarının hepsi (Merkür 13 Kas–4 Ara, Venüs 3 Kas–31 Ara ve 29 Kas, Mars 11 Eki / 26 Kas / −0,1, Jüpiter 22 Haz / 24 Eyl, Satürn 4 Eki ve Balina, Uranüs 25 Kas +5,6 Boğa, Neptün 25 Eyl +7,8 Balıklar) | https://space.com/stargazing/what-to-expect-from-the-planets-in-2026-key-dates-and-sky-events | alıntılar birebir doğrulandı |
+| [GOK] Jüpiter Yengeç'e 22 Haz 2026 03 UT; Aslan'a 23 Eyl 2026 ~16 UT (space.com 24 Eyl) → derste "23–24 Eylül"; Mart 2027'ye kadar Aslan'dan çıkmıyor | — | hesap |
+| [GOK] Jüpiter doğuşu İstanbul: 26 Eyl 03.09, 29 Eki 01.26, 30 Kas 23.31, 31 Ara 21.27 → "yıl sonuna kadar sabah göğü" düzeltildi: ekimde gece yarısından sonra, aralık sonunda 21.30 civarı | — | hesap |
+| [GOK] Jüpiter karşı konumu 11 Şub 2027 00.28 UT (İstanbul 03.28) → "10–11 Şubat gecesi" uyumlu | — | hesap |
+| [GOK] Uranüs karşı konumu 25 Kas 2026 22.41 UT = İstanbul 26 Kas 01.41; 5,6 kadir; Boğa'da bütün 2026 → derste "25–26 Kasım gecesi" | — | hesap |
+| [GOK] Neptün karşı konumu 26 Eyl 2026 01.41 UT = İstanbul 04.41; 7,7–7,8 kadir; Balıklar'da bütün 2026 → derste "25–26 Eylül gecesi" (space.com'un 25 Eylül'ü ABD saatine göre) | — | hesap |
+| [GOK] Satürn karşı konumu 4 Eki 2026 12 UT, Balina'da (5 Eyl 2026–23 Şub 2027) | — | hesap; space.com ile aynı |
+| [GOK] Mars: Yengeç 25 Eyl–30 Eki 2026; Arı Kovanı'na (M44) en yakın 11 Eki 2026, 0,08°; Regulus'a en yakın 26 Kas 2026, 1,72°, Mars kuzeyde (δ 13,6° > 12,0°); 31 Ara −0,12 kadir; karşı konum 19 Şub 2027 15.51 UT, Aslan, −1,2/−1,3 kadir, 101,4 milyon km, 13,8″ | — | hesap; space.com ve nakedeyeplanets ile aynı |
+| [GOK] Merkür: alt kavuşum 4 Kas 2026; en büyük batı uzanımı ~20 Kas (19,6°); İstanbul'da sivil şafakta yükseklik ≥5° 10 Kas–8 Ara → space.com'un 13 Kas–4 Ara aralığı uyumlu | — | hesap |
+| [GOK] Merkür en büyük uzanımları 2000 sonrası 17,9°–27,8° → "27°'nin pek ötesine geçemez" | — | hesap (Cambridge sayfası bu oturumda izin hatası verdi, yeniden denenmedi) |
+| [GOK] Venüs: alt kavuşum 24 Eki 2026; sivil şafakta yükseklik 3 Kas'ta 6,7°; en büyük uzanım 3 Oca 2027, 47,0° (">45°" uyumlu); en parlak an gezegenKadir'e göre 25 Kas (−4,89), Astronomy Engine'e göre 27 Kas (−4,87); 25–29 Kas arası fark ≤0,01 kadir → space.com'un 29 Kasım'ı tek gün olarak verilmedi, "Kasım'ın son haftası" | — | hesap |
+| [GOK] Merkür geçişleri 13 Kas 2032, 7 Kas 2039, 7 May 2049 (A.SearchTransit); İstanbul'da Güneş yüksekliği: 2032 başta 16,8°, sonda 28,1°; 2039 başta 23,0°, sonda 32,4°; 2049 başta 62°, sonda −6,6° (Güneş geçiş bitmeden batar) | — | hesap; Cambridge'in 2032/2039/2049 yılları doğrulandı |
+| [DOĞ] İkinci kaynak: 7× dürbünle Venüs hilali | https://www.universetoday.com/articles/venus-slip-slides-away-catch-it-while-you-can | "Even 7x binoculars will show its thinning sickle shortly at dusk." |
+| [DOĞ] BepiColombo tarihleri; MPO ESA'nın, Mio JAXA'nın | https://www.esa.int/Science_Exploration/Space_Science/BepiColombo/Latest_updates_BepiColombo_s_arrival_at_Mercury | "ESA's Mercury Planetary Orbiter (MPO)" ; "JAXA's Mercury Magnetospheric Orbiter (Mio)" ; "3 September 2026" ; "21 November 2026" ; "9–10 December 2026" ; "April 2027" (sayfa 06/10/2026) |
+| [DOĞ] Uranüs halkaları: örtülme 10 Mart 1977; yazarlar J. L. Elliot, E. Dunham, D. Mink (Nature 1977) | https://www.nature.com/articles/267328a0 | "occultation by Uranus on 10 March 1977" |
+| [DOĞ] Ad biçimleri James Elliot, Edward Dunham, Jessica Mink | https://www.skyatnightmagazine.com/space-science/uranus-rings-discovery | "James Elliot" ; "Edward Dunham" ; "Jessica Mink" ; "On 10 March 1977" |
+| [DOĞ] Ekzosfer: çarpışmasız seyrek katman; Merkür | https://en.wikipedia.org/wiki/Exosphere | "the molecules are essentially collision-less" ; "Mercury, the Moon, Ceres, Europa, and Ganymede have surface boundary exospheres" |
+| [DOĞ] Kalkan volkanı tanımı; Olympus Mons | https://en.wikipedia.org/wiki/Shield_volcano | "named for its low profile" ; "eruption of highly fluid (low viscosity) lava" ; "including Olympus Mons on Mars" |
+| [DOĞ] Yeniden okunan diğer kaynaklar (alıntılar tuttu): NASA Merkür ve Venüs litografileri, Jüpiter litografisi (arşiv), Planetary Society Merkür, NHM Mars, NASA Mars uyduları, NASA Uranüs, NASA Triton, CNES Satürn, Sky at Night halka düzlemi, Britannica Jüpiter içi, Toronto AST221 L18, JPL VERITAS, NASA Dünya içi, Wikipedia Binoculars ve Apparent magnitude | (yukarıdaki satırlar) | — |
+| DÜZELTME: "Aynı rehbere göre ... hilal" cümlesi Space.com cümlesinden sonra geldiği için yanlış kaynağı gösteriyordu → "Cambridge rehberine göre" | — | — |

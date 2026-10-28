@@ -1,0 +1,426 @@
+{
+  "id": "d23",
+  "unite": "gunes_sistemi",
+  "yeni": true,
+  "baslik": "Uzaya Çıkmak: Roketler, Yörüngeler ve Uzay Görevleri",
+  "ozet": "Bir roketin havaya yaslanmadan nasıl hızlandığını, Tsiolkovsky denklemiyle hızın neden bu kadar pahalı olduğunu ve roketlerin neden aşama aşama yapıldığını öğreneceksin. Ardından yörünge türlerini (alçak, yer eşzamanlı, güneş eşzamanlı), gezegenler arası en ucuz yolu (Hohmann aktarımı) ve gezegenlerden hız ödünç almayı göreceksin. Son olarak İstanbul'dan görebildiğin iki uzay istasyonunu, heliosferin sınırını aşan Voyager'ları, Türkiye'nin uzay çalışmalarını ve uzay çöpü sorununu ele alacağız.",
+  "on_bilgi": ["d3"],
+  "bolumler": [
+    {
+      "baslik": "Roketin sırrı: geriye atıp ileri gitmek",
+      "paragraflar": [
+        "Buz üstünde paten kaydığını ve elinde ağır bir sağlık topu tuttuğunu düşün. Topu ileri doğru fırlattığın anda sen geriye kayarsın. Kimse seni itmedi; topa verdiğin ileri yönlü hareket, sana geri yönde döndü. Fizikte buna momentumun korunması denir: dışarıdan bir kuvvet etki etmiyorsa bir sistemin toplam momentumu, yani kütle çarpı hızların toplamı, değişmez. Roket de tam olarak bunu yapar; yalnızca top yerine durmadan sıcak gaz fırlatır. Yakıtını yakar, oluşan gazı arkadaki ağızdan çok hızlı püskürtür; gaz geriye giderken roket ileri itilir. Bu itişe itki denir. Tsiolkovsky denklemini anlatan kaynakların özetiyle: roket, kendi kütlesinin bir kısmını yüksek hızla dışarı atarak kendini hızlandırır ve bunu momentumun korunması sayesinde yapar.",
+        "Buradan yaygın bir yanlışın düzeltilmesi çıkar. Roket havayı iterek yükselmez; itkiyi doğuran şey, gazın kendisinin geriye atılmasıdır. Bu yüzden roket havasız uzayda da çalışır. Hatta hava bir yardımcı değil engeldir, çünkü sürtünmeyle aracı yavaşlatır. Benzetmenin sınırını da bil: patenci topu bir kez atar ve kendi kütlesi değişmez. Roket ise attığı kütleyi kendi deposundan alır ve yandıkça hafifler. Aşağıdaki örnekte göreceğin gibi kalkıştaki bir roketin büyük kısmı yakıttır, yörüngeye varan kısım küçük bir parçadır. Kütlenin yol boyunca azalması, bu dersin ilk denkleminin kalbidir.",
+        "Bu hesabı uzay yolculuğu için türetip yayımlayan kişi Konstantin Tsiolkovsky'dir; denklemi 1903'te yayımladı. Ama tek kâşif o değildi. Wikipedia'nın denklem maddesine göre William Moore aynı fikrin ana hatlarını 1810'da çizmiş ve 1813'te yayımladığı bir kitapta genişletmişti; Robert Goddard 1912'de, Hermann Oberth de 1920 civarında birbirinden habersiz aynı sonuca vardı. Aynı denklemin dört kez ayrı ayrı bulunması şaşırtıcı değildir: momentumun korunmasıyla azalan kütleyi bir araya getiren herkes bu sonuca varır.",
+        "Bu dersin 3. dersle ilişkisini baştan kuralım. Orada yörünge hızını ve kurtulma hızını öğrendin, yani bir yere varmak için ne kadar hız gerektiğini. Burada soru değişiyor: o hıza nasıl ulaşırız ve bedeli nedir? Ardından yörünge türlerini, gezegenler arasında en ucuz yolu, gezegenlerden hız ödünç almayı, iki uzay istasyonunu, Güneş'in etki alanının sınırına varan Voyager'ları, Türkiye'nin uzay çalışmalarını ve uzay çöpü sorununu konuşacağız. Mars'a giden araçların orada ne aradığı 18. dersin konusuydu; burada onların oraya nasıl gittiğine bakacağız."
+      ],
+      "akilda": "Roket kütlesinin bir kısmını yüksek hızla geriye atarak ileri gider (momentumun korunması); havaya ihtiyacı yoktur, hava onu yalnızca yavaşlatır. Denklemi 1903'te Tsiolkovsky yayımladı; Moore, Goddard ve Oberth de bağımsız olarak buldu."
+    },
+    {
+      "baslik": "Tsiolkovsky denklemi: hızın bedeli",
+      "paragraflar": [
+        "Bir aracın motorlarıyla kazanabileceği toplam hız değişimine delta-v denir. Uzay mühendislerinin para birimi gibidir: her manevranın bir delta-v bedeli vardır ve roket bu bedeli yakıtla öder. Tsiolkovsky denklemi ödemenin kuralını verir: delta-v = egzoz hızı × ln (başlangıç kütlesi / son kütle). Egzoz hızı, gazın motordan çıkış hızıdır. Başlangıç kütlesi yakıt dolu roketin kütlesidir, buna ıslak kütle de denir; son kütle yakıt bittiğinde kalan kuru kütledir. İkisinin oranına kütle oranı denir. ln ise doğal logaritmadır: bir sayının, e ≈ 2,718 sayısının kaçıncı kuvveti olduğunu söyler.",
+        "Formülü sözle oku. Kazanacağın hız iki şeye bağlıdır: gazı ne kadar hızlı püskürttüğüne ve roketinin ne kadarının yakıt olduğuna. Birincisi doğrudan çarpan olarak girer: egzoz hızını iki katına çıkarırsan aynı kütle oranıyla iki kat delta-v kazanırsın. İkincisi logaritmanın içindedir ve sorun burada başlar. delta-v'yi bir egzoz hızı kadar artırmak için kütle oranını yaklaşık 2,7 katına, iki egzoz hızı kadar artırmak için yaklaşık 7,4 katına, üç egzoz hızı kadar artırmak için yaklaşık 20 katına çıkarman gerekir. Wikipedia'nın ifadesiyle gereken ıslak kütle, istenen delta-v ile üstel olarak büyür. Biraz daha hız, orantısız biçimde çok daha fazla yakıt demektir.",
+        "Mühendisler egzoz hızını çoğu zaman özgül itki adıyla ve saniye birimiyle verir. Çevirmek kolaydır: egzoz hızı = özgül itki × g0. Burada g0 = 9,80665 m/s² standart yerçekimi ivmesidir. Örneğin özgül itkisi 450 saniye olan bir motorun egzoz hızı 450 × 9,80665 ≈ 4413 m/s, yani yaklaşık 4,4 km/s'dir. Birimin saniye olması kafanı karıştırmasın; özgül itkiyi her zaman gizlenmiş bir hız gibi düşünebilirsin. Yüksek özgül itki, aynı yakıtla daha çok delta-v demektir.",
+        "Denklemin neyi yok saydığını da bil. Wikipedia'nın belirttiği gibi formül yalnızca motorun tepki kuvvetini hesaba katar; hava direnci ve kütleçekimi gibi öteki kuvvetleri içermez. Atmosferli bir gezegenden kalkarken bu etkiler delta-v ihtiyacına ayrıca eklenir. Yani denklem boş uzayda alabileceğin hızı söyler; Dünya'dan kalkarken bunun bir kısmını havaya ve çekime kaptırırsın. Bu kaybın ne kadar tuttuğunu yörüngeye çıkış bölümünde göreceksin."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Tek aşamalı bir roketin yakıt payı",
+        "metin": "Wikipedia'daki örneği izleyelim: egzoz hızı 4,5 km/s, alçak yörüngeye çıkmak için gereken delta-v 9,7 km/s. Adım 1: delta-v / egzoz hızı = 9,7 / 4,5 ≈ 2,156. Adım 2: kütle oranı = e üssü 2,156 ≈ 8,63. Adım 3: son kütle, başlangıç kütlesinin 1 / 8,63 ≈ 0,116'sı, yani %11,6'sı olur. Kalkış kütlesinin %88,4'ü yakıt olmalıdır; depolar, motorlar ve yük kalan %11,6'ya sığmak zorundadır. Şimdi egzoz hızı yalnızca 3 km/s olan varsayımsal bir motorla 9,4 km/s isteyelim: oran e üssü (9,4 / 3) ≈ 23, yakıt payı ≈ %95,6 olur. Sonuç: egzoz hızındaki bir düşüş, gereken yakıtı üstel olarak şişirir."
+      },
+      "akilda": "delta-v = egzoz hızı × ln (kütle oranı). Hız logaritmik artar, gereken yakıt üstel büyür: 4,5 km/s'lik egzozla 9,7 km/s için kalkış kütlesinin yaklaşık %88'i yakıt olmalı. Denklem hava direncini ve çekimi içermez."
+    },
+    {
+      "baslik": "Aşamalı roketler: boş depoyu taşımamak",
+      "paragraflar": [
+        "Uzun bir çöl yolculuğunda arabanın bagajına yedek benzin bidonları koyduğunu düşün. Bidon boşaldıkça onu yolda bırakırsan araba hafifler ve kalan benzinle daha uzağa gider. Aşamalı roket bu fikrin uzaydaki karşılığıdır. Roket, üst üste konmuş birkaç ayrı roketten oluşur; her aşamanın kendi deposu ve motorları vardır. Alttaki aşamanın yakıtı bitince o aşama ayrılıp düşer, üstteki aşama motorlarını ateşleyip yola devam eder.",
+        "Bunun neden işe yaradığı Tsiolkovsky denkleminde gizlidir. Denklemdeki son kütle, yakıt bittiğinde geriye kalan her şeydir: yükle birlikte boş depolar ve motorlar da. Tek aşamalı bir roket dev boş deposunu yörüngeye kadar taşımak, yani ona da hız kazandırmak zorundadır. Aşamalı rokette ise boşalan depo atılır ve sonraki aşamanın hızlandırdığı kütle küçülür. Wikipedia'nın açıkladığı gibi denklem her aşamaya ayrı ayrı uygulanır; her aşamanın başlangıç kütlesi, bir önceki aşama atıldıktan sonra kalan toplam kütledir.",
+        "Aşamaların mantığı çarpımsaldır. Wikipedia'daki bir hesap bunu iyi gösterir: her aşama kendi kütlesinin yalnızca onda birini bir sonrakine bırakıyorsa, üç aşamadan sonra yörüngeye varan kütle başlangıcın %10 × %10 × %10 = %0,1'i olur. Bu, bin tonluk bir kalkış kütlesinden yalnızca bir tonun yörüngeye varması demektir. Sayı belirli bir roketin değeri değil, aşamaların nasıl çarpıldığını gösteren bir örnektir; ama roketlerin taşıdıkları yüke göre neden bu kadar dev olduğunu açıklar.",
+        "Aşamanın bir bedeli de vardır: her aşama kendi motorlarını, depolarını ve ayrılma düzeneğini taşır, sistem karmaşıklaşır ve her ayrılma ayrı bir başarısızlık olasılığıdır. Mühendislik, bu karmaşıklığı kazandığın yükle tartma sanatıdır. Aşağıdaki örnek, aynı yolculuğu bir ve iki aşamayla karşılaştırıyor; varsayımlar açıkça yazılı, gerçek bir roketin değerleri değil."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Aynı yolculuk, iki aşamayla",
+        "metin": "Yine 4,5 km/s egzoz hızı ve toplam 9,7 km/s delta-v alalım; Wikipedia'daki gibi birinci aşama 5,0 km/s, ikinci aşama 4,7 km/s versin. Adım 1: birinci aşama için kütle oranı e üssü (5,0 / 4,5) ≈ 3,04; kalkış kütlesinin 1 / 3,04 ≈ %32,9'u kalır, yani kalkış kütlesinin %67,1'i birinci aşamanın yakıtıdır. Adım 2: varsayalım birinci aşamanın boş deposu ve motorları kalkış kütlesinin %10'u olsun; bunu atınca %22,9 kalır. Adım 3: ikinci aşama için oran e üssü (4,7 / 4,5) ≈ 2,84; yörüngeye %22,9 / 2,84 ≈ %8,1 varır. Adım 4: bundan ikinci aşamanın boş gövdesini, varsayalım kalkış kütlesinin %2'sini çıkar: yüke yaklaşık %6 kalır. Tek aşamada yörüngeye varan %11,6'nın içinde dev deponun kendisi de var; o depo kalkış kütlesinin %10'u olsaydı yüke yalnızca %1,6 kalırdı. Sonuç: bu varsayımlarla iki aşama yükü yaklaşık 4 kat artırır."
+      },
+      "akilda": "Aşamalı roket boşalan depoyu atar; denklem her aşamaya ayrı uygulanır ve boş kütleye hız vermek zorunda kalmazsın. Bedeli karmaşıklık, kazancı yükte büyük artış."
+    },
+    {
+      "baslik": "Yörüngeye çıkmak: yukarı değil, yana hızlanmak",
+      "paragraflar": [
+        "Uzaya çıkmak ile yörüngeye çıkmak aynı şey değildir. Bir roketi dimdik yukarı atıp 100 km yükseğe çıkarabilirsin, ama yatay hızı yoksa taş gibi geri düşer. 3. dersteki Newton'un dağ tepesinden fırlattığı taşı hatırla: yörüngede kalmanın şartı yükseklik değil, yere doğru düşüşü yeryüzünün eğriliğiyle denkleştiren yatay hızdır. ESA'ya göre alçak yörüngedeki uydular Dünya'ya göre yaklaşık 7,8 km/s ile gider ve bir turu yaklaşık 90 dakikada tamamlar. Fırlatmanın asıl işi, aracı bu yatay hıza çıkarmaktır.",
+        "Peki roket sıfırdan 7,8 km/s'ye çıkmak için motorlarıyla tam 7,8 km/s'lik delta-v mi harcar? Hayır, daha fazlasını. Wikipedia'nın delta-v bütçesi maddesine göre atmosfer sürtünmesi ve çekim kaybı birlikte tipik olarak 1,5 ile 2 km/s tutar; Uluslararası Uzay İstasyonu'nun ilk 300 km'lik yörüngesine çıkmak toplamda yaklaşık 9,4 km/s ister. Sürtünme kaybını anlamak kolaydır: hava aracı frenler. Çekim kaybı daha incedir. Roket dikey tırmandığı sürece itkisinin bir kısmı yalnızca düşmemeye harcanır ve hıza dönüşmez. Bu harcanan kısma çekim kaybı denir.",
+        "İki kayıp birbirine ters çeker. Yoğun havadan çabuk çıkmak için yukarı tırmanmak, çekim kaybını azaltmak içinse bir an önce yana yatıp yatay hız kazanmak istersin. Fırlatma rotası bu iki isteğin bir uzlaşmasıdır; ayrıntılı hesabı bu dersin kapsamını aşar. Dünya'nın dönüşü ise yardım eder. 3. derste gördüğün gibi ekvatordaki bir nokta doğuya yaklaşık 0,465 km/s ile döner, İstanbul'un enleminde bu hız yaklaşık 0,35 km/s'dir. Doğuya fırlatılan roket bu hızı bedavaya alır; fırlatma üslerinin olabildiğince ekvatora yakın kurulmasının bir nedeni budur.",
+        "Kalkış yerinin enlemi yörüngenin eğikliğini de etkiler ve eğikliği değiştirmek pahalıdır. Wikipedia'nın tablosuna göre alçak yörüngeden yerdurgun yörüngeye geçmek, ekvator düzlemindeki bir yörüngeden başlarsan yaklaşık 3,90 km/s, ekvatora 28° eğik bir yörüngeden başlarsan yaklaşık 4,33 km/s ister. Aradaki yaklaşık 0,43 km/s, yörünge düzlemini ekvatora çevirmenin bedelidir. ESA da ekvatorun yaklaşık 500 km kuzeyindeki Kourou'dan kalkışta bile oluşan küçük eğikliğin, yerdurgun yörüngeye geçişteki son ateşlemede giderildiğini anlatır."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Yörüngedeki enerjinin çoğu nerede?",
+        "metin": "Bir kilogramlık yükü 400 km yükseğe çıkarıp orada yörüngeye oturtalım. NASA'nın Dünya bilgi sayfasından GM = 398.600 km³/s², ortalama yarıçap R = 6371 km. Adım 1, yükseklik enerjisi: GM × (1/R − 1/(R + 400)) = 398.600 × (1/6371 − 1/6771) ≈ 3,70 km²/s², yani kilogram başına yaklaşık 3,7 milyon jul. Adım 2, hareket enerjisi: 0,5 × v² = 0,5 × 7,8² ≈ 30,4 km²/s², yani kilogram başına yaklaşık 30,4 milyon jul. Adım 3: toplam ≈ 34,1; hareket payı 30,4 / 34,1 ≈ 0,89. Sonuç: yörüngeye oturan yükün enerjisinin yaklaşık %89'u yükseklikte değil hızdadır. Uzaya çıkmak kolaydır; zor olan orada kalmaktır."
+      },
+      "akilda": "Yörünge için ~7,8 km/s yatay hız gerekir, ama sürtünme ve çekim kaybıyla fırlatma yaklaşık 9,4 km/s delta-v ister. Doğuya fırlatmak Dünya'nın dönüşünden yararlanır; yörünge düzlemini değiştirmek pahalıdır."
+    },
+    {
+      "baslik": "Yörünge haritası: alçak, orta ve yüksek yörüngeler",
+      "paragraflar": [
+        "Uydular Dünya'nın çevresine rastgele dağılmaz; işlerine göre yükseklik ve düzlem seçerler. ESA'nın sınıflamasıyla başlayalım. Alçak Dünya yörüngesi yaklaşık 2000 km'nin altıdır; kısaltması LEO'dur. Uydular genellikle yaklaşık 180 km'nin altına inmez, çünkü orada hava sürtünmesi onları kısa sürede aşağı çeker. Bu yörüngedeki araçlar yaklaşık 7,8 km/s ile gider ve bir turu yaklaşık 90 dakikada atar. Uzay istasyonları buradadır; Heavens-Above'a göre Hubble Uzay Teleskobu da yaklaşık 468 ile 471 km arasında dolanır.",
+        "Yörüngenin ikinci özelliği eğikliğidir. Yörünge eğikliği, yörünge düzlemiyle ekvator düzlemi arasındaki açıdır: 0° ekvator üstünde dolanmak, 90° kutuptan kutba geçmek demektir. Eğiklik, uydunun tepesinden geçebileceği en kuzey ve en güney enlemi de belirler. 51,6° eğik yörüngedeki Uluslararası Uzay İstasyonu, 51,6° kuzey ile 51,6° güney arasındaki her yerin tepesinden geçebilir. Hubble'ın eğikliği ise Heavens-Above'a göre yalnızca 28,5°'dir; bu yüzden İstanbul'dan bakınca güney ufkuna yakın kalır. Uygulama için yapılan hesapta Ekim–Kasım 2026'daki 10 günlük dönemde Hubble'ın en yüksek geçişi yalnızca 12° idi.",
+        "ESA'ya göre kutupsal yörünge alçak yörüngenin bir türüdür; tipik yüksekliği 200 ile 1000 km arasıdır ve uydu kabaca kutuptan kutba gider. Kutupların tam üstünden 10°'ye kadar sapan yörüngeler de kutupsal sayılır. Bunun yararı şudur: uydu kendi düzleminde dolanırken Dünya altında döner, böylece her turda farklı bir şeridin üstünden geçer ve bir süre sonra bütün yeryüzünü görmüş olur.",
+        "Daha yukarıda orta Dünya yörüngesi (MEO) başlar; ESA'ya göre alçak yörünge ile yerdurgun yörünge arasındaki bölgedir ve Avrupa'nın Galileo seyrüsefer uyduları buradadır. En dışta yerdurgun yörünge vardır: ekvatorun 35.786 km üstü, 23 saat 56 dakika 4 saniyelik bir tur ve yaklaşık 3 km/s hız. ESA'ya göre eşit aralıklı üç yerdurgun uydu Dünya'nın neredeyse tamamını kapsayabilir. Bu yükseklik ve hızlar 3. dersteki v = √(GM / r) formülünden çıkar; aşağıdaki örnekte sağlıyoruz."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Yükseldikçe yavaşlamak",
+        "metin": "GM = 398.600 km³/s², Dünya yarıçapı 6371 km. 400 km için r = 6771 km: GM / r ≈ 58,87; karekök v ≈ 7,67 km/s; bir tur 2π × 6771 / 7,67 ≈ 5547 s ≈ 92 dakika. 800 km için r = 7171 km: GM / r ≈ 55,58; v ≈ 7,46 km/s, ESA'nın 800 km için verdiği yaklaşık 7,5 km/s ile uyumlu. Yerdurgun yörünge için r = 42.164 km: GM / r ≈ 9,45; v ≈ 3,07 km/s; bir tur 2π × 42.164 / 3,07 ≈ 86.300 s ≈ 23,9 saat, yani bir yıldız günü. Sonuç: yükseklik 400 km'den 35.786 km'ye çıkınca hız 7,7'den 3,1 km/s'ye düşer, tur süresi 92 dakikadan yaklaşık bir güne uzar."
+      },
+      "akilda": "Alçak Dünya yörüngesi 2000 km'nin altı: ~7,8 km/s, ~90 dakika. Yörünge eğikliği uydunun tepesinden geçebileceği en yüksek enlemi belirler. Kutupsal yörünge bütün Dünya'yı tarar; yükseldikçe hız düşer, yerdurgun yörüngede ~3 km/s."
+    },
+    {
+      "baslik": "Yer eşzamanlı ve yerdurgun yörünge: gökte asılı uydular",
+      "paragraflar": [
+        "3. derste yerdurgun yörüngeyi gördün: ekvatorun 35.786 km üstünde, bir yıldız gününde (1436 dakika) tamamlanan bir tur; uydu yerden bakınca gökte hep aynı yerde durur. Şimdi ona bir akraba ekleyelim. Yer eşzamanlı yörünge, dolanma süresi bir yıldız gününe eşit olan her yörüngedir; eğik de olabilir, basık da. Wikipedia'nın tanımıyla yerdurgun yörünge bunun özel bir hâlidir: ekvator üstünde, eğikliği sıfır, tam dairesel bir yer eşzamanlı yörünge. Fark pratikte önemlidir. Eğik bir yer eşzamanlı uydu her gün aynı saatte gökte aynı noktaya döner, ama gün içinde yer değiştirir; onu izleyen antenin de hareket etmesi gerekir.",
+        "Fikrin tarihi kısadır. Wikipedia'ya göre yerdurgun yörünge düşüncesini 1945'te Wireless World dergisinde yayımladığı yazıyla Arthur C. Clarke yaygınlaştırdı; bu yüzden ona bazen Clarke yörüngesi denir. Syncom 2 uydusu 1963'te yer eşzamanlı yörüngeye ulaştı ama yörüngesi eğikti ve antenlerin yine de dönmesi gerekiyordu. 1964'te fırlatılan Syncom 3, yerdurgun yörüngeye yerleştirilen ilk uydu oldu.",
+        "Türkiye'nin ilk yerli haberleşme uydusu Türksat 6A da böyle bir yörüngededir; TÜBİTAK'a göre 42° doğu boylamında görev yapar. Çanak antenin bu uyduya bir kez ayarlanınca bir daha dönmesi gerekmez. İstanbul'dan bakınca uydu güney-güneydoğuda, ufkun yaklaşık 41° üstünde durur; hesabı aşağıda. Kuzeye gittikçe yerdurgun uydular ufka alçalır; Wikipedia'ya göre yaklaşık 81° enlemin ötesinde ufkun altında kalırlar. Bu yüzden Rusya'nın bazı uyduları Molniya ve Tundra adlı başka yörüngeler kullanır.",
+        "Yerdurgun yörüngenin iki bedeli vardır. Birincisi uzaklıktır: Wikipedia'ya göre ekvatordaki bir vericiden uyduya gidip dönen sinyal yaklaşık 240 milisaniye sürer ve bu gecikme sesli konuşmada fark edilir. İkincisi bakımdır: uydular yerlerini korumak için düzenli küçük ateşlemeler yapar ve yakıtları bitince genellikle emekliye ayrılır. Ömrünü dolduran uydunun, yüzde 90 olasılıkla, yerdurgun kuşağın 200 km'den fazla üstüne çıkarılması beklenir. Bu park alanına mezarlık yörüngesi denir; amaç değerli kuşağı ölü uydulardan temiz tutmaktır."
+      ],
+      "ornek": {
+        "baslik": "Örnek: İstanbul'dan Türksat 6A'ya bakmak",
+        "metin": "Uydu Dünya'nın merkezinden 42.164 km uzakta, 0° enlem ve 42° doğu boylamında. Gözlemci Fetih'te: 41,0° kuzey, 29,1° doğu; Dünya'yı 6371 km yarıçaplı bir küre sayalım. Adım 1: iki noktanın üç boyutlu konumlarını yazıp farkını alınca uyduya uzaklık ≈ 37.726 km çıkar. Adım 2: bu doğrultunun yerel yatayla açısı, yani yükseklik ≈ 40,8°; kuzeyden saat yönünde ölçülen azimut ≈ 161°, güneyin yaklaşık 19° doğusu. Adım 3: sinyalin gidiş-dönüşü 2 × 37.726 / 299.792 ≈ 0,252 s. Kıyas: ekvatordan tam tepedeki uyduya 2 × 35.786 / 299.792 ≈ 0,239 s, Wikipedia'nın yaklaşık 240 milisaniyesiyle uyumlu. Sonuç: İstanbul'daki çanak güney-güneydoğuya ve yaklaşık 41° yukarı bakar; sinyal çeyrek saniyede gidip gelir."
+      },
+      "akilda": "Yer eşzamanlı: dönem bir yıldız günü, eğik olabilir. Yerdurgun: eğikliği sıfır, dairesel özel hâl; gökte sabit durur. Türksat 6A 42° D'de; İstanbul'dan güney-güneydoğuda ~41° yükseklikte; sinyal gidiş-dönüşü ~0,25 s. Emekli uydular mezarlık yörüngesine çıkarılır."
+    },
+    {
+      "baslik": "Güneş eşzamanlı yörünge: her gün aynı saatte",
+      "paragraflar": [
+        "Bir ormanın yıllar içinde nasıl küçüldüğünü uydu fotoğraflarıyla izlemek istediğini düşün. Bir fotoğraf sabah, öteki öğleden sonra çekilmişse gölgeler farklı düşer ve gerçek değişimi ayırt etmek zorlaşır. ESA'ya göre güneş eşzamanlı yörüngenin amacı tam budur: uydu yeryüzündeki her noktanın üstünden her gün aynı yerel saatte geçer, ışık hep benzer açıdan gelir ve günler, aylar, yıllar arası görüntüler karşılaştırılabilir olur. ESA hava durumu, orman yangınları, seller, ormansızlaşma ve deniz seviyesinin yükselmesini bu yörüngeden izlenen konular arasında sayar.",
+        "Sıradan bir yörüngede bu olmaz. Yörünge düzlemi yıldızlara göre sabit kalırsa, Dünya Güneş'in çevresinde ilerledikçe Güneş bu düzleme göre yer değiştirir; birkaç ay sonra uydu aynı yerin üstünden bambaşka bir yerel saatte geçer. Çözüm Dünya'nın kendi biçiminden gelir. NASA'ya göre Dünya'nın ekvator yarıçapı 6378,137 km, kutup yarıçapı 6356,752 km'dir; yani ekvatorda yaklaşık 21 km'lik bir şişkinlik vardır. Wikipedia'ya göre bu şişkinlik eğik yörüngeleri bozar ve yörünge düzlemini yavaşça döndürür. Eğiklik yüksekliğe göre ayarlanırsa düzlem her gün doğuya doğru yaklaşık 1° döner ve Güneş'in gökteki yıllık yürüyüşüne ayak uydurur.",
+        "Wikipedia'ya göre Dünya çevresindeki tipik güneş eşzamanlı yörüngeler 600 ile 800 km yüksekliktedir, bir turu 96 ile 100 dakikada atar ve eğikliği yaklaşık 98°'dir. 90°'den büyük eğiklik, uydunun Dünya'nın dönüş yönüne biraz ters dolandığı anlamına gelir. Gereken eğiklik yükseklikle artar: aynı tabloya göre 894 km'de 99,0°, 1681 km'de 103,0° gerekir. Özel bir türü olan şafak-alacakaranlık yörüngesinde uydu ekvatoru yerel saatle gün doğumu ya da batımı civarında geçer ve gece ile gündüzün sınır çizgisi boyunca ilerler.",
+        "Türkiye'den bir örnek: TÜBİTAK'a göre İMECE gözlem uydusu 680 km yükseklikte güneş eşzamanlı yörüngeye yerleştirildi. ESA'ya göre 800 km'deki bir uydu yaklaşık 7,5 km/s ile gider; İMECE biraz daha alçakta olduğu için biraz daha hızlıdır. Hava durumu ve yer gözlem uydularının çoğunun bu yörüngeyi seçmesinin nedeni, karşılaştırılabilir görüntüdür: değişimi ölçmek için her şeyin, ışık dahil, aynı kalması gerekir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Yörünge düzlemi günde ne kadar dönmeli?",
+        "metin": "Dünya Güneş'in çevresindeki turunu bir yılda tamamlar; Güneş de bize göre yıldızların önünde bir yılda 360° yürür. Uydunun her gün aynı yerel saatte gelmesi için yörünge düzleminin bu yürüyüşe ayak uydurması gerekir. Adım 1: 360° / 365,24 gün ≈ 0,986° / gün. Wikipedia'nın ‘günde yaklaşık 1° doğuya’ ifadesi bununla uyumlu. Adım 2: tipik bir tur 96 ile 100 dakika sürdüğüne göre uydu günde 1440 / 100 = 14,4 ile 1440 / 96 = 15 tur atar. Sonuç: düzlem günde yaklaşık 1° dönerken uydu günde 14 ile 15 kez kutuptan kutba geçer ve her ekvator geçişini aynı yerel saatte yapar."
+      },
+      "akilda": "Güneş eşzamanlı yörünge: ~600–800 km, ~98° eğik. Dünya'nın ekvator şişkinliği düzlemi günde ~1° döndürür; uydu her yere hep aynı yerel saatte gelir. İMECE 680 km'de böyle bir yörüngede."
+    },
+    {
+      "baslik": "Hohmann aktarımı: gezegenler arası en ucuz yol",
+      "paragraflar": [
+        "Dünya'nın Güneş çevresindeki yörüngesinden Mars'ın yörüngesine en az yakıtla nasıl geçersin? NASA'nın Basics of Space Flight anlatımına göre çözüm, günberisi Dünya'nın Güneş'e uzaklığında, günötesi Mars'ın uzaklığında olan bir elipstir. Buna Hohmann aktarımı denir. Araç, Dünya'nın Güneş çevresindeki dolanma yönünde hızlanarak bu elipse girer, elipsin yarısını dolanır ve Mars'ın yörüngesine dokunur. Ama orada Mars da aynı anda bulunmalıdır; yoksa araç boş bir noktaya varır. Bu yüzden zamanlama, yolun kendisi kadar önemlidir.",
+        "İçe doğru gitmek ise frenlemektir. NASA'ya göre Venüs'e gitmek için araç Dünya'nın dolanma yönünün tersine hızlanmalıdır; yani Güneş'e göre yavaşlar ve Güneş'e doğru düşmeye başlar. Güneş'e yaklaşmak için fren yapmak ilk bakışta tuhaf gelir, ama 3. dersteki kural burada da geçerli: alçak yörünge hızlı, yüksek yörünge yavaştır. Aynı fikir Dünya çevresinde de çalışır. ESA'nın anlattığı yerdurgun aktarım yörüngesi (GTO), Dünya'ya en uzak noktası olan yeröte noktası 35.786 km'de bulunan bir elipstir; uydu oraya varınca motorunu ateşler ve dairesel yörüngeye oturur.",
+        "Doğru dizilişin gelmesini beklediğin zaman aralığına fırlatma penceresi denir. NASA'ya göre Mars'a en düşük enerjili aktarım fırsatı yaklaşık 25 ayda bir, Venüs'e yaklaşık 19 ayda bir doğar. Mars için bu sayı aslında 3. dersteki sinodik dönemdir: NASA'nın Mars bilgi sayfası bunu 779,94 gün, yani yaklaşık 25,6 ay verir. Dünya ile Mars ancak bu kadar sürede aynı dizilişe döner. 18. derste anlatılan Mars araçlarının hepsi bu takvime uymak zorundadır; pencereyi kaçıran bir görev iki yılı aşkın bekler.",
+        "Bedel ne kadar? Wikipedia'nın delta-v bütçesine göre alçak Dünya yörüngesinden Mars aktarım yörüngesine geçmek tipik olarak yaklaşık 4,3 km/s ister; Dünya'nın çekiminden zaten kurtulmuş bir araç için ek bedel yalnızca 0,6 km/s civarındadır. Mars'ta yörüngeye yakalanmak yaklaşık 0,9 km/s daha ister. NASA, Güneş çevresinde 180°'den az dolanan yollara birinci tür, 180° ya da daha fazla dolananlara ikinci tür yol der. Hohmann aktarımı tam yarım tur, yani 180° dolanır; gerçek görevler gezegenlerin konumuna göre ikisinden birini seçer."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Hohmann yoluyla Mars kaç günde?",
+        "metin": "NASA'ya göre Dünya'nın yarı büyük ekseni 149,598, Mars'ınki 227,956 milyon km. Adım 1: aktarım elipsinin yarı büyük ekseni a = (149,598 + 227,956) / 2 = 188,777 milyon km = 188,777 / 149,598 ≈ 1,262 AB. Adım 2: 3. dersteki Kepler'in üçüncü yasasıyla tam bir turun süresi P = a üssü 1,5 = 1,262 × √1,262 ≈ 1,418 yıl. Adım 3: araç elipsin yalnızca yarısını dolanır: 1,418 / 2 ≈ 0,709 yıl × 365,256 ≈ 259 gün. Sonuç: en düşük enerjili yolla Mars yolculuğu yaklaşık 259 gün, yani 8,5 ay sürer. Gerçek yörüngeler tam daire olmadığı için gerçek süreler bundan biraz sapar."
+      },
+      "akilda": "Hohmann aktarımı iki dairesel yörüngeye dokunan elipstir: en ucuz yol. Dış gezegene giderken hızlan, iç gezegene giderken yavaşla. Mars penceresi ~25–26 ayda bir açılır; yolculuk ~259 gün."
+    },
+    {
+      "baslik": "Kütleçekim yardımı: gezegenden hız ödünç almak",
+      "paragraflar": [
+        "3. derste kurtulma hızını öğrenirken şunu fark etmiş olabilirsin: bir gezegene yaklaşan araç hızlanır, uzaklaşırken aynı miktarda yavaşlar. JPL'nin anlatımıyla araç, gezegene göre ölçüldüğünde ayrılırken geldiğindeki hızına geri döner. Öyleyse bir gezegenin yanından geçmek nasıl hız kazandırır? Cevap, hızı kime göre ölçtüğündedir. Gezegenin kendisi de Güneş'in çevresinde büyük bir hızla ilerler. Araç gezegenin arkasından dolanıp onun hareket yönünde ayrılırsa gezegene göre hızı değişmez, ama Güneş'e göre hızı artar; gezegenin hareketinden bir pay almıştır. Buna kütleçekim yardımı denir.",
+        "Bu bedava değildir, yalnızca ucuzdur. NASA'ya göre araç gezegeni de çeker ve gezegen yörünge enerjisinin bir kısmını yitirir; ama kayıp ölçülemeyecek kadar küçüktür. Physics World'deki bir yazıya göre Voyager'ın geçişi Jüpiter'in yörünge hareketini trilyon yılda yaklaşık 30 cm yavaşlattı. Enerji korunur, yalnızca dev gezegenle küçücük araç arasında el değiştirir. Yardım ters yönde de kullanılabilir: araç gezegenin önünden geçerse Güneş'e göre yavaşlar. NASA'ya göre Galileo, Jüpiter'in uydusu Io'nun önünden geçerek Jüpiter yörüngesine girmek için gereken yakıttan 90 kg tasarruf etti.",
+        "NASA'nın Voyager tarihçesine göre bu ilkeyi ilk deneyen araç Mariner 10'du: 1974'te Venüs'ün çekiminden yararlanarak Merkür'e ulaştı. Sonraki görevler yöntemi ustalıkla kullandı. JPL'ye göre Galileo Jüpiter'e giderken Venüs'ten bir, Dünya'dan iki itme aldı; Cassini ise Satürn'e varmak için iki kez Venüs'ten, bir kez Dünya'dan ve bir kez Jüpiter'den yararlandı. Bu yollar dolambaçlıdır, ama gereken yakıtı ve dolayısıyla roketin boyunu küçültür. Tsiolkovsky denkleminin üstel bedelini hatırla: delta-v'den yapılan her tasarruf, kalkıştaki kütlede çok daha büyük bir tasarruf demektir.",
+        "En ünlü örnek Voyager 2'dir. NASA'ya göre Jüpiter'in yardımı olmasaydı aracın Güneş'ten en uzak noktası yaklaşık 5 AB'de, Jüpiter'in uzaklığında kalırdı; yani Jüpiter'e varıp geri düşerdi. Kütleçekim yardımlarıyla hızını iki katından fazla artırdı ve Satürn, Uranüs ve Neptün'e uğrayarak Güneş Sistemi'nin dışına doğru yol aldı. Bunun için gezegenlerin özel bir dizilişte olması gerekiyordu; bunu Voyager'lar bölümünde göreceksin."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Trene çarpan top",
+        "metin": "JPL'nin benzetmesini kilometreyle kuralım. Sana doğru 50 km/sa ile gelen bir trenin önüne topu 30 km/sa ile at. Adım 1: trenin gözünden top 30 + 50 = 80 km/sa ile yaklaşır. Adım 2: esnek bir çarpışmada top trenden 80 km/sa ile geri seker; trene göre hızı değişmedi. Adım 3: yerden bakınca topun hızı 80 + 50 = 130 km/sa olur. Top 30 ile gitti, 130 ile döndü: trenin hızının iki katı, 100 km/sa kazandı. Kütleçekim yardımı aynı hesaba uyar; fark, çarpma yerine çekimin aracın yolunu bükmesidir. Yol tam geri dönmediği için gerçek kazanç bu üst sınırdan küçüktür. Sonuç: gezegene göre hız aynı kalır, Güneş'e göre hız gezegenin hareketinden pay alır."
+      },
+      "akilda": "Kütleçekim yardımında araç gezegene göre hız kazanmaz, Güneş'e göre kazanır; gezegen ölçülemeyecek kadar az yavaşlar. İlk deneyen Mariner 10 (1974); Voyager 2 hızını iki katından fazla artırdı."
+    },
+    {
+      "baslik": "İki uzay istasyonu: ISS ve Tiangong",
+      "paragraflar": [
+        "Uluslararası Uzay İstasyonu'nun (ISS) ilk parçası Zarya modülüdür; Heavens-Above'a göre 20 Kasım 1998'de Baykonur'dan bir Proton-K roketiyle fırlatıldı. NASA'ya göre istasyon Kasım 2000'den beri kesintisiz insanlıdır. Uçtan uca 109 m uzunluğundadır, kütlesi 419.725 kg, basınçlı hacmi 1005 m³'tür. Genellikle yedi kişilik uluslararası bir mürettebat yaşar; sekiz güneş paneli kanadı 75 ile 90 kilovat güç üretir ve aynı anda sekiz uzay aracı bağlanabilir. NASA'ya göre istasyonda 108'den fazla ülkeden araştırmacıların yaklaşık 3000 araştırması yapıldı. Eklenen son modül, 26 Kasım 2021'de bağlanan Prichal kenetlenme modülüdür.",
+        "Çin'in Tiangong istasyonu daha yeni ve daha küçüktür. Heavens-Above'a göre çekirdek modül Tianhe 29 Nisan 2021'de Wenchang'dan Uzun Yürüyüş 5B roketiyle fırlatıldı. Wikipedia'ya göre Wentian modülü 24 Temmuz 2022'de, Mengtian 31 Ekim 2022'de fırlatıldı ve Kasım 2022'de istasyon T biçimini alarak tamamlandı. Kütlesi yaklaşık 100 ton, basınçlı hacmi 340 m³'tür; bu, ISS'nin üçte birinden biraz fazladır. Genellikle üç kişi kalır, nöbet değişiminde altı kişiye kadar çıkabilir. Mürettebat Shenzhou araçlarıyla yaklaşık altı aylık görevlere gider; Tianzhou yük araçları kendiliğinden kenetlenir. İstasyon 10 yıl için tasarlandı, 15 yıla uzatılabilir.",
+        "İstanbul için asıl ilginç olan yörüngeleridir. Heavens-Above'a göre Ekim 2026 sonunda ISS 415 × 424 km yükseklikte ve 51,6° eğiklikte, Tiangong 382 × 386 km yükseklikte ve 41,5° eğiklikte dolanıyordu. Tiangong'un yer izi en kuzeyde 41,5° enleme ulaşır ve 41,0°'deki İstanbul bu sınırın hemen altındadır; bu yüzden istasyon kentin tam tepesinden geçebilir. Heavens-Above'ın Fetih için hesapladığı tabloya göre 27 Ekim ile 5 Kasım 2026 arasında Tiangong 14 kez görünür biçimde geçiyor, hepsi akşam 18.28 ile 20.37 arasında. 1 Kasım akşamı 18.54'te tam tepeden, 90° yükseklikten geçmesi bekleniyor; en parlak geçişi 28 Ekim'deki −2,3 kadir.",
+        "Hangisi daha parlak? Heavens-Above'ın standart parlaklıklarına göre (1000 km uzaklıkta, yarısı aydınlık) ISS −1,8, Tiangong 0,0 kadirdir. 1,8 kadir fark yaklaşık 5 kat parlaklık demektir; daha büyük olan ISS daha çok güneş ışığı yansıtır. NASA, istasyonun bir günde Ay'a gidip gelmeye denk yol aldığını söyler. Sağlayalım: 420 km'de bir turun çevresi 2π × 6798 ≈ 42.700 km, günde 15,49 tur ile ≈ 662.000 km eder; Ay'a gidiş-dönüş ≈ 769.000 km. Neden yalnızca şafakta ve alacakaranlıkta görüldüklerini 3. derste öğrendin. Uygulamanın Gökyüzü sekmesindeki Uzay istasyonları ve uydular listesi, önümüzdeki 5 günün geçişlerini senin konumun için hesaplar."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Tiangong bir turu kaç dakikada atar?",
+        "metin": "Heavens-Above'a göre yükseklik 382 ile 386 km arası; ortalama 384 km alalım. Dünya'nın ekvator yarıçapı 6378 km olduğundan a ≈ 6378 + 384 = 6762 km. Adım 1: Kepler'in üçüncü yasasının Newton biçimi T = 2π × √(a³ / GM). a³ = 6762³ ≈ 3,092 × 10¹¹ km³; GM = 398.600 km³/s²; bölüm ≈ 775.700 s²; karekök ≈ 880,7 s; 2π ile çarp ≈ 5534 s ≈ 92,2 dakika. Adım 2: sağlama. CelesTrak'ın yörünge verisine göre Tiangong günde 15,6117 tur atar: 1440 / 15,6117 ≈ 92,24 dakika. Adım 3: hız v = √(GM / a) = √(398.600 / 6762) ≈ 7,68 km/s. Sonuç: Tiangong yaklaşık 92 dakikada bir tur atar ve saniyede yaklaşık 7,7 km yol alır; Wikipedia'nın 92,3 dakikasıyla uyumlu."
+      },
+      "akilda": "ISS: 1998'den beri kuruluyor, Kasım 2000'den beri insanlı, 419.725 kg, 51,6° eğik. Tiangong: 2022'de tamamlandı, ~100 ton, 41,5° eğik; İstanbul (41,0°) bu sınırın hemen altında olduğu için tepeden geçebilir. İkisi de ~92–93 dakikada bir tur atar."
+    },
+    {
+      "baslik": "Voyager'lar: heliosferin sınırına yolculuk",
+      "paragraflar": [
+        "NASA'ya göre Voyager 2 20 Ağustos 1977'de, Voyager 1 ise 5 Eylül 1977'de fırlatıldı. Zamanlama tesadüf değildi. NASA Johnson Uzay Merkezi'nin bir yazısına göre 1970'lerin sonundaki ender bir diziliş, tek bir aracın Jüpiter, Satürn, Uranüs, Neptün ve Plüton'dan kütleçekim yardımı alarak geçmesine izin veriyordu ve bu diziliş 175 yıl boyunca bir daha gelmeyecekti. Bazı kaynaklar bu süreyi 176 yıl olarak verir. NASA'ya göre büyük tur adı verilen ilk plan Ocak 1972'de, esas olarak maliyet yüzünden iptal edildi; 1974'te ikinci Voyager'ı Uranüs ve Neptün'e yönlendirme önerisi geldi.",
+        "Sonuç olağanüstüydü. NASA'ya göre Voyager 2 Jüpiter'in yanından 9 Temmuz 1979'da, Satürn'ün yanından 1981 Ağustos'unun sonunda, Uranüs'ün yanından 24 Ocak 1986'da, Neptün'ün yanından 25 Ağustos 1989'da geçti. Uranüs ve Neptün'ü ziyaret etmiş tek uzay aracı odur. Araçlar enerjilerini Güneş'ten değil, plütonyum oksitle çalışan radyoizotop termoelektrik üreteçlerden alır. BBC Sky at Night'a göre bu üreteçlerin verdiği güç bugün fırlatmadakinin yaklaşık yarısıdır; NASA güç tasarrufu için aletleri birer birer kapatıyor. EarthSky'a göre Nisan 2026'da Voyager 1'in düşük enerjili yüklü parçacık aleti de kapatıldı.",
+        "Voyager'ların bugünkü asıl hedefi heliosferin sınırıdır. JPL'nin tanımıyla heliosfer, Güneş'in yarattığı parçacık ve manyetik alan kabarcığıdır; 4. dersteki güneş rüzgârı bu kabarcığı şişirir. UNLV'nin anlatımına göre güneş rüzgârı önce sonlanma şoku denen bir yerde aniden yavaşlar. Daha ötede heliopoz vardır: JPL'nin ifadesiyle seyrek ve sıcak güneş rüzgârının soğuk ve yoğun yıldızlararası ortamla karşılaştığı sınır. Voyager 1 heliopozu 25 Ağustos 2012'de Güneş'ten 121 AB uzakta, Voyager 2 ise 5 Kasım 2018'de 119 AB uzakta geçti. Böylece insan yapımı iki araç yıldızlararası ortama girdi.",
+        "Heliopoz, Güneş Sistemi'nin sonu değildir. 19. derste gördüğün gibi NASA'ya göre Oort bulutunun iç kenarı 2000 ile 5000 AB arasındadır; NASA, Voyager 1'in Oort bulutuna yaklaşık 300 yıl daha giremeyeceğini söyler. Şimdi bir dönüm noktası yaklaşıyor. EarthSky'ın NASA'ya dayandırdığı habere göre Voyager 1, 18 Kasım 2026'da Orta ABD saatiyle 00.16'da, yani Türkiye saatiyle 09.16'da, Dünya'dan bir ışık günü uzaklığa varacak: yaklaşık 25,9 milyar km, 173,14 AB. Bazı eski haberler 13 Kasım civarı diyordu. Voyager 2 aynı uzaklığa Kasım 2035'te varacak."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Bir ışık günü ve Voyager 1'in hızı",
+        "metin": "Adım 1: ışık saniyede 299.792 km gider, bir günde 86.400 saniye var: 299.792 × 86.400 ≈ 25,90 milyar km. AB'ye çevir: 25,90 milyar / 149,6 milyon ≈ 173,1 AB, haberdeki 173,14 AB ile uyumlu. Adım 2: Voyager 1, 25 Ağustos 2012'de 121 AB'deydi, 18 Kasım 2026'da 173,1 AB'de olacak. Aradaki 52,1 AB'yi yaklaşık 14,2 yılda alıyor: 52,1 / 14,2 ≈ 3,7 AB/yıl. Adım 3: 3,7 × 149,6 milyon km / (365,25 × 86.400 s) ≈ 17,4 km/s. Sky at Night'ın verdiği saatte yaklaşık 61.000 km, yani ≈ 16,9 km/s ile aynı büyüklükte. Adım 4: bu hızla Oort bulutunun 2000 AB'lik iç kenarına (2000 − 173) / 3,7 ≈ 500 yıl sürer; NASA'nın 300 yılı ise bulutun daha içeriden başladığını varsayıyor gibi. Sonuç: Oort bulutunun sınırı gözlenmedi, yalnızca tahmin ediliyor."
+      },
+      "akilda": "Voyager 2 Uranüs ve Neptün'ü ziyaret eden tek araç. Heliopoz: güneş rüzgârının yıldızlararası ortamla karşılaştığı sınır; Voyager 1 2012'de 121 AB'de, Voyager 2 2018'de 119 AB'de geçti. Voyager 1 18 Kasım 2026'da bir ışık günü (~25,9 milyar km) uzakta olacak."
+    },
+    {
+      "baslik": "Türkiye'nin uzay çalışmaları",
+      "paragraflar": [
+        "Bu bölümde yalnızca resmî kurumların (Türkiye Uzay Ajansı ve TÜBİTAK) ve Alper Gezeravcı'nın uçuşu için görevin ortaklarının (NASA ve Axiom Space) kendi yayınlarında yazan olguları kullanıyoruz. TUA'nın Milli Uzay Programı belgesine göre ajans, 13 Aralık 2018 tarihli ve 23 sayılı Cumhurbaşkanlığı Kararnamesi ile Sanayi ve Teknoloji Bakanlığı'nın ilgili kuruluşu olarak kuruldu. Aynı belge programın amaçlarını şöyle sıralar: uzay teknolojilerinde gerekli altyapıları geliştirmek, dışa bağımlılığı azaltmak, uzay teknolojilerini kalkınmanın aracı olarak planlamak, mevcut yetenekleri milli teknolojilerle ileri taşımak, insanlığın bilimsel bilgisine katkı yapmak ve başta gençler olmak üzere toplumun uzay farkındalığını artırmak.",
+        "Gözlem uydularında geçmiş daha eskidir. TÜBİTAK'a göre Türkiye ilk gözlem uydusunu RASAT ile 2011'de gerçekleştirdi. İMECE, TÜBİTAK'ın ifadesiyle Türkiye'nin ilk yerli ve milli yüksek çözünürlüklü görüntüleme uydusudur: 15 Nisan 2023'te Türkiye saatiyle 09.48'de ABD'deki Vandenberg Uzay Kuvvetleri Üssü'nden fırlatıldı, 12.24'te roketinden ayrıldı ve 12.29'da ilk sinyali verdi. TÜBİTAK UZAY tarafından tasarlanan uydu, 680 km yükseklikte güneş eşzamanlı yörüngededir, metre altı çözünürlüklü bir kamera taşır ve 5 yıllık görev için tasarlandı. TÜBİTAK, kameranın BİLSAT, RASAT ve GÖKTÜRK-2 uydularından edinilen deneyimle geliştirildiğini belirtir.",
+        "Haberleşme tarafında dönüm noktası Türksat 6A'dır. TÜBİTAK Bilim Genç'in fırlatma öncesi duyurusuna göre uydu Cape Canaveral'dan bir Falcon 9 roketiyle, 8 Temmuz'u 9 Temmuz'a bağlayan gece Türkiye saatiyle 00.20'de fırlatılacaktı; TÜBİTAK'ın sonraki haberi 9 Temmuz 2024'te fırlatıldığını doğrular. Uydu önce 50° doğudaki test konumuna yerleşti; 16 Aralık 2024'te göreve geçiş başladı ve 28 Aralık 2024 itibarıyla 42° doğudaki görev yörüngesine oturdu. TÜBİTAK'a göre bu süreçte beş yörünge manevrası yapıldı. Uydu TÜBİTAK UZAY koordinasyonunda TUSAŞ, ASELSAN ve CTech ile geliştirildi, yerlilik oranı yüzde 81'in üzerindedir, 15 yılı aşkın hizmet vermesi beklenir ve Türkiye'yi haberleşme uydusu geliştirebilen 11 ülke arasına soktu.",
+        "İlk Türk astronot Alper Gezeravcı'dır. TÜBİTAK'a göre Axiom Mission 3 (Ax-3) ekibi 18 Ocak 2024'te ABD saatiyle 16.49'da (Türkiye saatiyle 19 Ocak 00.49) NASA'nın Kennedy Uzay Merkezi'nden bir Dragon kapsülüyle kalktı ve yaklaşık 36 saatlik yolculuktan sonra 20 Ocak'ta istasyona vardı. Ekipte Michael López-Alegría (komutan), Walter Villadei (pilot), Marcus Wandt ve görev uzmanı Gezeravcı vardı. Axiom Space'e göre ekip istasyonda 18 gün kaldı ve 30'dan fazla deney yürüttü. NASA'ya göre kapsül 7 Şubat'ta ayrıldı ve 9 Şubat 2024'te Florida'nın Daytona kıyısı açıklarında denize indi. TÜBİTAK görevin toplamını 21 gün olarak verir. Axiom, Ax-3'ü tamamen Avrupalı ilk ticari astronot görevi olarak tanımlar.",
+        "Sırada Ay var. TUA'nın 2026 Performans Programı'na göre Ay Araştırma Programı'nın ilk aşaması AYAP-1'de bir uzay aracı, yerli geliştirilen hibrit roket motorunu uzayda ateşledikten sonra uluslararası iş birliğiyle Ay'a sert iniş yapacak. İkinci aşama AYAP-2 yerli motorlarla yumuşak iniş ve bilimsel araştırma hedefler. Aynı belgeye göre AYAP-1 2024'te yüzde 71,8 ilerlemişti ve 2026 hedefi yüzde 95'tir. Takvimin kaydığını da dürüstçe söyleyelim: TUA'nın 2024 programı, pandemi kaynaklı tedarik gecikmeleri yüzünden AYAP-1'in tamamlanmasının 2026'ya kaldığını yazıyordu. Belge ayrıca bağımsız uzaya erişim için bir uzay limanı projesinden söz eder."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Gezeravcı istasyonda kaç tur attı?",
+        "metin": "Axiom'a göre ekip istasyonda 18 gün kaldı. CelesTrak'ın yörünge verisine göre ISS günde yaklaşık 15,49 tur atar. Adım 1: 18 × 15,49 ≈ 279 tur. Adım 2: bir turun çevresi yaklaşık 42.700 km (bir önceki bölümdeki hesap): 279 × 42.700 ≈ 11,9 milyon km. Adım 3: Ay'ın ortalama uzaklığı 384.400 km olduğuna göre bu yol 11,9 milyon / 384.400 ≈ 31 Ay uzaklığı eder. Sonuç: Gezeravcı istasyondaki 18 günde Dünya'nın çevresini yaklaşık 280 kez dolandı ve yaklaşık 12 milyon km yol aldı. Gidiş ve dönüş yolculuğundaki turlar bu hesaba dahil değil."
+      },
+      "akilda": "TUA 13 Aralık 2018'de 23 sayılı kararnameyle kuruldu. İMECE (2023) 680 km güneş eşzamanlı yörüngede; Türksat 6A (2024) 42° D'de yerdurgun. Gezeravcı Ax-3 ile Ocak–Şubat 2024'te ISS'te 18 gün kaldı. Ay programında AYAP-1 sert iniş hedefliyor; takvim kaydı."
+    },
+    {
+      "baslik": "Uzay çöpü ve Kessler sendromu",
+      "paragraflar": [
+        "Yörüngede yalnızca çalışan uydular yoktur. Uzay çöpü, artık işe yaramayan her insan yapımı nesnedir: ölü uydular, bitmiş roket aşamaları, patlamalardan ve çarpışmalardan kalan parçalar. ESA'nın 2025 Uzay Ortamı Raporu'na göre uzay gözetim ağları bugün yaklaşık 40.000 nesneyi izliyor ve bunların yalnızca yaklaşık 11.000'i çalışan uydu. 10 cm'den büyük çöp parçası sayısının 50.000'i, 1 cm'den büyüğünün 1,2 milyonu aştığı tahmin ediliyor. ESA'ya göre 2024'teki birkaç büyük ve çok sayıda küçük parçalanma, izlenen nesnelere en az 3000 yeni nesne ekledi.",
+        "Küçük bir parça neden tehlikelidir? Bern Üniversitesi'nden Thomas Schildknecht'in yazısına göre alçak yörüngede nesneler 7 ile 8 km/s hızla gider; 1 cm çapındaki bir parçanın çarpma enerjisi patlayan bir el bombasınınkiyle kıyaslanabilir ve birkaç milimetrelik bir parça bile bir uzay aracını öldürebilir. Hareket enerjisi hızın karesiyle büyüdüğü için yörünge hızlarında küçük kütle büyük yıkım demektir. İstanbul göğüyle bağı da var: CelesTrak'ın en parlak uydular listesinin büyük kısmı roket gövdeleridir, yani akşam alacakaranlığında kayan parlak noktaların bir kısmı yörüngede kalmış eski roket aşamalarıdır.",
+        "Bu tehlikeyi ilk kez sistemli biçimde 1978'de NASA Johnson Uzay Merkezi'nden Donald Kessler ve Burton Cour-Palais hesapladı. Journal of Geophysical Research'te yayımlanan makalelerine göre uydu sayısı arttıkça çarpışma olasılığı da artar; çarpışmalardan doğan parçalar yeni çarpışmaların olasılığını yükseltir ve Dünya'nın çevresinde, asteroit kuşağına benzer bir çöp kuşağı oluşabilir. Yazarlar bu kuşağın belirli koşullarda 20. yüzyıl içinde oluşmaya başlayabileceğini yazdı. Bugün bu zincirleme sürece Kessler sendromu denir. ESA'ya göre hiç yeni fırlatma yapılmasa bile çöp sayısı artmayı sürdürürdü, çünkü parçalanmalar çöpü doğal yoldan atmosfere düşüşünden hızlı ekliyor.",
+        "Bu bir kâğıt üstü korku değil. Wikipedia'ya göre 10 Şubat 2009'da 16.56 UTC'de, Sibirya'daki Taymır Yarımadası'nın 789 km üstünde, çalışan Amerikan haberleşme uydusu Iridium 33 ile kullanım dışı Rus askerî uydusu Kosmos 2251 saniyede 11,7 km'lik bağıl hızla çarpıştı. Kosmos 2251 yaklaşık 950 kg, Iridium 33 yaklaşık 560 kg idi. Bu, iki uydu arasında yaşanan ilk yüksek hızlı çarpışmaydı. Kataloglanan parça sayısı Kosmos için 1668, Iridium için 628'di ve 2024'te bunların 916'sı ile 212'si hâlâ yörüngedeydi. Schildknecht'e göre çarpışma 10 cm ve daha büyük 2000'den fazla parça üretti.",
+        "Çözüm temizliktir ve kurallarla başlar. ESA'ya göre alçak yörüngedeki roket gövdelerinin yaklaşık yüzde 90'ı görevden sonra 25 yıl içinde atmosfere girme kuralına uyuyor; ESA'nın 2023'te benimsediği daha sıkı 5 yıllık kurala uyanlar ise yaklaşık yüzde 80. ESA'nın Sıfır Çöp yaklaşımı 2030'a kadar yeni görevlerin Dünya ve Ay yörüngelerinde çöp üretimini ciddi biçimde sınırlamayı hedefliyor; ilgili şartı 19 ülke ve 150'den fazla kuruluş imzaladı. Yerdurgun kuşaktaki mezarlık yörüngesi de aynı mantığın ürünüdür. ESA'ya göre çöp tehdidi en çok yaklaşık 550 km civarında, çalışan uydu sayısıyla aynı mertebeye ulaşmış durumda."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Bir gramlık parça, bir tonluk araba",
+        "metin": "Hareket enerjisi E = 0,5 × m × v². Adım 1: 1 gramlık (0,001 kg) bir parça 10 km/s (10.000 m/s) bağıl hızla çarpsın: E = 0,5 × 0,001 × 10.000² = 50.000 jul. Adım 2: 1000 kg'lık bir araba saatte 36 km, yani 10 m/s ile gitsin: E = 0,5 × 1000 × 10² = 50.000 jul. İkisi aynı! Hız 1000 kat büyük olunca enerji 1000² = 1 milyon kat büyür; bu yüzden milyon kat hafif bir parça aynı enerjiyi taşır. Adım 3: 2009 çarpışmasında 950 kg'lık Kosmos 2251, 11,7 km/s bağıl hızla: E = 0,5 × 950 × 11.700² ≈ 6,5 × 10¹⁰ jul. Sonuç: yörünge hızlarında bir gramlık çöp, şehir içinde giden bir arabanın darbesini taşır."
+      },
+      "akilda": "ESA 2025: ~40.000 izlenen nesne (~11.000'i çalışan uydu), >1,2 milyon 1 cm'den büyük parça. Kessler sendromu (1978): çarpışmaların zincirleme yeni çarpışmalar doğurması. 2009 Iridium–Kosmos çarpışması gerçek bir örnektir; çözüm görev sonu temizlik kurallarıdır."
+    }
+  ],
+  "formuller": [
+    {
+      "ad": "Tsiolkovsky roket denklemi",
+      "ifade": "Δv = v_e × ln(m₀ / m₁)",
+      "aciklama": "Δv: aracın kazandığı hız değişimi (km/s), v_e: egzoz hızı (km/s), m₀: yakıt dolu başlangıç kütlesi (ıslak kütle), m₁: yakıt bittiğindeki son kütle (kuru kütle), ln: doğal logaritma. Hava direncini ve kütleçekimini içermez; aşamalı rokette her aşamaya ayrı uygulanır."
+    },
+    {
+      "ad": "Özgül itkiden egzoz hızına",
+      "ifade": "v_e = I_sp × g₀",
+      "aciklama": "I_sp: özgül itki (saniye), g₀ = 9,80665 m/s² standart yerçekimi ivmesi, v_e: egzoz hızı (m/s). Örnek: 450 s → ≈ 4413 m/s."
+    },
+    {
+      "ad": "Hohmann aktarım süresi (Güneş çevresinde)",
+      "ifade": "t = 0,5 × a^1,5,  a = (r₁ + r₂) / 2",
+      "aciklama": "r₁, r₂: başlangıç ve hedef yörüngelerin Güneş'e uzaklığı (AB), a: aktarım elipsinin yarı büyük ekseni (AB), t: yolculuk süresi (yıl). Kepler'in üçüncü yasasından gelir; yörüngeler dairesel varsayılır. Dünya → Mars: ≈ 0,709 yıl ≈ 259 gün."
+    },
+    {
+      "ad": "Dairesel yörünge hızı ve dönemi",
+      "ifade": "v = √(GM / r),  T = 2π × √(r³ / GM)",
+      "aciklama": "r: Dünya merkezinden uzaklık (km), GM = 398.600 km³/s² (Dünya), v: km/s, T: saniye. Yükseklik değil merkezden uzaklık kullanılır (yükseklik + Dünya yarıçapı)."
+    },
+    {
+      "ad": "Güneş eşzamanlı yörüngede düzlemin dönme hızı",
+      "ifade": "Ω̇ = 360° / 365,24 gün ≈ 0,986° / gün",
+      "aciklama": "Yörünge düzleminin doğuya dönmesi gereken hız; Dünya'nın ekvator şişkinliği bu dönmeyi sağlar ve eğiklik yüksekliğe göre (tipik ~98°) ayarlanır."
+    },
+    {
+      "ad": "Hareket enerjisi",
+      "ifade": "E = 0,5 × m × v²",
+      "aciklama": "E: enerji (jul), m: kütle (kg), v: hız (m/s). Hızın karesiyle büyüdüğü için yörünge hızlarında (7–12 km/s) gram ölçeğindeki çöp bile büyük enerji taşır."
+    },
+    {
+      "ad": "Işığın yolculuk süresi",
+      "ifade": "t = d / c",
+      "aciklama": "d: uzaklık (km), c = 299.792 km/s, t: saniye. Bir ışık günü = 299.792 × 86.400 ≈ 25,9 milyar km ≈ 173,1 AB."
+    }
+  ],
+  "anahtar_sayilar": [
+    {
+      "deger": "≈ 9,4 km/s",
+      "aciklama": "Alçak Dünya yörüngesine (ISS'nin ilk 300 km'lik yörüngesi) çıkmak için gereken toplam delta-v; bunun 1,5–2 km/s'si atmosfer sürtünmesi ve çekim kaybı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Delta-v_budget"
+    },
+    {
+      "deger": "%88,4",
+      "aciklama": "4,5 km/s egzoz hızı ve 9,7 km/s delta-v ile tek aşamalı bir roketin kalkış kütlesinde yakıtın payı (Tsiolkovsky denklemi örneği)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Tsiolkovsky_rocket_equation"
+    },
+    {
+      "deger": "< 2000 km, ~7,8 km/s, ~90 dk",
+      "aciklama": "Alçak Dünya yörüngesinin üst sınırı, bu yörüngedeki tipik hız ve tur süresi",
+      "kaynak_url": "https://www.esa.int/Enabling_Support/Space_Transportation/Types_of_orbits"
+    },
+    {
+      "deger": "~98°, ~1°/gün",
+      "aciklama": "600–800 km'deki güneş eşzamanlı yörüngelerin tipik eğikliği ve yörünge düzleminin doğuya dönme hızı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Sun-synchronous_orbit"
+    },
+    {
+      "deger": "≈ 25 ay",
+      "aciklama": "Mars'a en düşük enerjili aktarım için fırlatma fırsatlarının aralığı (Venüs için ≈ 19 ay)",
+      "kaynak_url": "https://science.nasa.gov/learn/basics-of-space-flight/chapter4-1/"
+    },
+    {
+      "deger": "121 AB / 119 AB",
+      "aciklama": "Voyager 1'in (25 Ağustos 2012) ve Voyager 2'nin (5 Kasım 2018) heliopozu geçtiği uzaklık",
+      "kaynak_url": "https://www.physics.unlv.edu/~jeffery/astro/sun/heliopause.html"
+    },
+    {
+      "deger": "18 Kasım 2026, ≈ 25,9 milyar km",
+      "aciklama": "Voyager 1'in Dünya'dan bir ışık günü (≈ 173,14 AB) uzaklığa varacağı tarih (NASA'ya dayanarak)",
+      "kaynak_url": "https://earthsky.org/space/voyager-1-1-light-day-from-earth-november-17-18-2026/"
+    },
+    {
+      "deger": "419.725 kg, 109 m",
+      "aciklama": "Uluslararası Uzay İstasyonu'nun kütlesi ve uçtan uca uzunluğu; Kasım 2000'den beri kesintisiz insanlı",
+      "kaynak_url": "https://www.nasa.gov/international-space-station/space-station-facts-and-figures/"
+    },
+    {
+      "deger": "382 × 386 km, 41,5°",
+      "aciklama": "Tiangong'un Ekim 2026 sonundaki yörünge yüksekliği ve eğikliği; İstanbul (41,0° K) bu eğikliğin hemen altında",
+      "kaynak_url": "https://www.heavens-above.com/SatInfo.aspx?satid=48274"
+    },
+    {
+      "deger": "42° D, 35.786 km",
+      "aciklama": "Türksat 6A'nın yerdurgun görev konumu (28 Aralık 2024'ten beri) ve ekvatordan yüksekliği",
+      "kaynak_url": "https://tubitak.gov.tr/tr/haber/turksat-6a-gorev-yorungesinde"
+    },
+    {
+      "deger": "680 km",
+      "aciklama": "İMECE'nin güneş eşzamanlı yörüngedeki yüksekliği (fırlatma 15 Nisan 2023)",
+      "kaynak_url": "https://tubitak.gov.tr/tr/haber/imece-uzaya-basariyla-firlatildi"
+    },
+    {
+      "deger": "~40.000 / >1,2 milyon",
+      "aciklama": "İzlenen yörünge nesnesi sayısı ve 1 cm'den büyük tahmini çöp parçası sayısı (ESA 2025)",
+      "kaynak_url": "https://www.esa.int/Space_Safety/Space_Debris/ESA_Space_Environment_Report_2025"
+    },
+    {
+      "deger": "11,7 km/s, 789 km",
+      "aciklama": "10 Şubat 2009 Iridium 33 – Kosmos 2251 çarpışmasının bağıl hızı ve yüksekliği",
+      "kaynak_url": "https://en.wikipedia.org/wiki/2009_satellite_collision"
+    }
+  ],
+  "sozluk": [
+    { "terim": "Momentumun korunması", "tanim": "Dışarıdan kuvvet etki etmeyen bir sistemde kütle çarpı hızların toplamının değişmemesi; roketin gazı geriye atarak ileri gitmesinin nedeni." },
+    { "terim": "İtki", "tanim": "Bir motorun kütleyi geriye püskürterek araca uyguladığı ileri yönlü kuvvet." },
+    { "terim": "Delta-v", "tanim": "Bir aracın motorlarıyla kazanabileceği ya da bir manevranın gerektirdiği toplam hız değişimi." },
+    { "terim": "Tsiolkovsky denklemi", "tanim": "Roketin kazandığı hız değişimini egzoz hızına ve yakıt dolu kütlenin yakıtsız kütleye oranının logaritmasına bağlayan denklem." },
+    { "terim": "Egzoz hızı", "tanim": "Motorun püskürttüğü gazın araca göre çıkış hızı; ne kadar yüksekse aynı yakıtla o kadar çok hız kazanılır." },
+    { "terim": "Özgül itki", "tanim": "Bir motorun yakıtı ne kadar verimli kullandığını gösteren, saniye birimiyle verilen ve standart yerçekimi ivmesiyle çarpılınca egzoz hızını veren değer." },
+    { "terim": "Kütle oranı", "tanim": "Bir roketin yakıt dolu (ıslak) kütlesinin yakıt bittiğindeki (kuru) kütlesine oranı." },
+    { "terim": "Aşamalı roket", "tanim": "Yakıtı biten bölümlerini atarak yoluna devam eden, üst üste konmuş birkaç ayrı roketten oluşan roket." },
+    { "terim": "Çekim kaybı", "tanim": "Roket tırmanırken itkisinin hız kazanmaya değil yalnızca düşmemeye harcanan kısmı." },
+    { "terim": "Alçak Dünya yörüngesi", "tanim": "Yaklaşık 2000 km yüksekliğin altındaki, bir turun yaklaşık 90 dakika sürdüğü yörünge bölgesi." },
+    { "terim": "Yörünge eğikliği", "tanim": "Yörünge düzlemi ile ekvator düzlemi arasındaki açı; uydunun tepesinden geçebileceği en yüksek enlemi belirler." },
+    { "terim": "Kutupsal yörünge", "tanim": "Uydunun kabaca kutuptan kutba geçtiği ve Dünya altında dönerken zamanla bütün yeryüzünü taradığı alçak yörünge." },
+    { "terim": "Yer eşzamanlı yörünge", "tanim": "Dolanma süresi bir yıldız gününe eşit olan, eğik ya da basık da olabilen yörünge; yerdurgun yörünge bunun özel hâlidir." },
+    { "terim": "Güneş eşzamanlı yörünge", "tanim": "Düzlemi günde yaklaşık 1° dönen ve uydunun her noktanın üstünden hep aynı yerel saatte geçmesini sağlayan, kutuplara yakın yörünge." },
+    { "terim": "Mezarlık yörüngesi", "tanim": "Ömrünü dolduran yerdurgun uyduların, kuşağı temiz tutmak için çıkarıldığı, kuşağın birkaç yüz km üstündeki park yörüngesi." },
+    { "terim": "Hohmann aktarımı", "tanim": "İki dairesel yörüngeye birer noktada dokunan elips yörünge üzerinden yapılan, en az yakıt isteyen geçiş." },
+    { "terim": "Fırlatma penceresi", "tanim": "Hedefe en uygun dizilişin oluştuğu ve fırlatmanın en az yakıtla yapılabildiği zaman aralığı." },
+    { "terim": "Kütleçekim yardımı", "tanim": "Bir aracın bir gezegenin yakınından geçerek, gezegene göre değil Güneş'e göre hızını ve yönünü değiştirmesi." },
+    { "terim": "Sonlanma şoku", "tanim": "Güneş'ten akan güneş rüzgârının yıldızlararası ortama yaklaşırken aniden yavaşladığı sınır." },
+    { "terim": "Heliopoz", "tanim": "Güneş rüzgârının yıldızlararası ortamla karşılaştığı, heliosferin dış sınırı." },
+    { "terim": "Uzay çöpü", "tanim": "Yörüngede kalmış, artık işe yaramayan her insan yapımı nesne: ölü uydular, roket aşamaları ve parçalar." },
+    { "terim": "Kessler sendromu", "tanim": "Yörüngedeki çarpışmaların ürettiği parçaların yeni çarpışmalara yol açarak zincirleme biçimde çoğalması ve yörüngeleri kullanılamaz kılabilmesi." }
+  ],
+  "defter_notu": [
+    "Roket = momentumun korunması: gazı geriye atar, ileri gider; havaya ihtiyacı yok. Tsiolkovsky 1903 (Moore 1810/1813, Goddard 1912, Oberth ~1920).",
+    "delta-v = egzoz hızı × ln (ıslak kütle / kuru kütle). Egzoz hızı = özgül itki × 9,80665. 4,5 km/s ile 9,7 km/s → kalkış kütlesinin %88,4'ü yakıt.",
+    "Aşamalı roket: boş depoyu at; denklem her aşamaya ayrı. Alçak yörünge ~7,8 km/s ama fırlatma ~9,4 km/s (sürtünme + çekim kaybı 1,5–2 km/s).",
+    "Yörüngeler: alçak < 2000 km (~90 dk); kutupsal 200–1000 km; güneş eşzamanlı 600–800 km, ~98°, düzlem ~1°/gün; yerdurgun 35.786 km, ~3 km/s, eğiklik 0.",
+    "Yer eşzamanlı = dönem bir yıldız günü (eğik olabilir); yerdurgun = onun ekvator üstü, dairesel hâli. Türksat 6A 42° D: İstanbul'dan GGD'de ~41° yükseklikte.",
+    "Hohmann: iki yörüngeye dokunan elips. Dünya → Mars ≈ 259 gün; pencere ~25–26 ayda bir (sinodik dönem 779,94 gün).",
+    "Kütleçekim yardımı: gezegene göre hız aynı, Güneş'e göre artar. İlk Mariner 10 (1974); Voyager dizilişi ~175 yılda bir.",
+    "ISS 51,6°, 415 × 424 km; Tiangong 41,5°, 382 × 386 km → İstanbul'un (41,0°) tepesinden geçebilir. Geçişler: Gökyüzü sekmesi.",
+    "Voyager 1 heliopoz 2012 (121 AB), Voyager 2 2018 (119 AB). Voyager 1: 18 Kasım 2026'da bir ışık günü (~25,9 milyar km).",
+    "Türkiye: TUA 13.12.2018 (23 sayılı kararname); İMECE 2023 (680 km); Türksat 6A 2024 (42° D); Gezeravcı Ax-3 2024. Çöp: ~40.000 izlenen nesne; Kessler 1978; Iridium–Kosmos 2009."
+  ],
+  "sorular": [
+    {
+      "soru": "Roket havasız uzayda nasıl hızlanır? Havayı itmesi gerekmez mi?",
+      "cevap": "Gerekmez. Roket kendi kütlesinin bir kısmını, yani yanmış gazı, yüksek hızla geriye atar; momentumun korunması gereği roket ileri itilir. İtkiyi doğuran gazın kendisidir, havaya yaslanmak değil. Hava ancak sürtünmeyle aracı yavaşlatır."
+    },
+    {
+      "soru": "Tsiolkovsky denklemini sözle anlat. Egzoz hızı 4,5 km/s olan bir roketin 9,7 km/s delta-v için yakıt payı nedir?",
+      "cevap": "delta-v = egzoz hızı × ln (ıslak kütle / kuru kütle). 9,7 / 4,5 ≈ 2,156; e üssü 2,156 ≈ 8,63. Kuru kütle başlangıcın 1/8,63 ≈ %11,6'sı olur, yani kalkış kütlesinin yaklaşık %88,4'ü yakıt olmalıdır."
+    },
+    {
+      "soru": "Özgül itkisi 300 saniye olan bir motorun egzoz hızı kaç km/s'dir?",
+      "cevap": "Egzoz hızı = özgül itki × g0 = 300 × 9,80665 ≈ 2942 m/s, yani yaklaşık 2,94 km/s."
+    },
+    {
+      "soru": "Roketler neden aşama aşama yapılır? Tsiolkovsky denklemiyle gerekçelendir.",
+      "cevap": "Denklemdeki son kütle boş depoları ve motorları da içerir. Tek aşamalı roket dev boş deposunu yörüngeye kadar hızlandırmak zorundadır. Aşamalı rokette boşalan depo atılır; denklem her aşamaya ayrı uygulanır ve sonraki aşama daha küçük bir kütleyi hızlandırır. Dersteki varsayımlarla iki aşama yükü yaklaşık 4 kat artırır."
+    },
+    {
+      "soru": "Alçak yörüngede hız yaklaşık 7,8 km/s ise neden fırlatma yaklaşık 9,4 km/s delta-v ister?",
+      "cevap": "Çünkü atmosfer sürtünmesi ve çekim kaybı birlikte tipik olarak 1,5–2 km/s tutar. Çekim kaybı, roket tırmanırken itkinin bir kısmının hıza değil yalnızca düşmemeye harcanmasıdır. Doğuya fırlatmak Dünya'nın dönüşünden (ekvatorda ~0,465 km/s) yararlanarak bir miktar kazandırır."
+    },
+    {
+      "soru": "Yer eşzamanlı ve yerdurgun yörünge arasındaki fark nedir? Syncom 2 ve Syncom 3 örneğiyle açıkla.",
+      "cevap": "Yer eşzamanlı yörüngenin dönemi bir yıldız günüdür ama eğik ya da basık olabilir; uydu gün içinde gökte yer değiştirir. Yerdurgun yörünge bunun ekvator üstündeki, eğikliği sıfır ve dairesel hâlidir; uydu gökte sabit durur. Syncom 2 (1963) yer eşzamanlıydı ama eğikti, antenler hareket etmek zorundaydı; Syncom 3 (1964) ilk yerdurgun uyduydu."
+    },
+    {
+      "soru": "Güneş eşzamanlı yörünge neden kullanılır ve nasıl mümkün olur?",
+      "cevap": "Uydu her noktanın üstünden hep aynı yerel saatte geçtiği için ışık açısı benzer kalır ve yıllar arası görüntüler karşılaştırılabilir olur (orman, sel, hava durumu izleme). Dünya'nın ekvator şişkinliği eğik yörüngelerin düzlemini döndürür; ~600–800 km'de ~98° eğiklik seçilince düzlem günde ~1° doğuya döner ve Güneş'in yıllık hareketine ayak uydurur."
+    },
+    {
+      "soru": "Hohmann aktarımıyla Dünya'dan Mars'a yolculuk yaklaşık kaç gün sürer? Hesabını göster.",
+      "cevap": "Aktarım elipsinin yarı büyük ekseni a = (1 + 1,524) / 2 ≈ 1,262 AB. Kepler III ile tam tur P = 1,262 üssü 1,5 ≈ 1,418 yıl; yolculuk yarım tur: 0,709 yıl ≈ 259 gün (~8,5 ay)."
+    },
+    {
+      "soru": "Kütleçekim yardımında araç gezegene göre hız kazanmıyorsa nasıl hızlanır? Bedeli kim öder?",
+      "cevap": "Araç gezegene göre geldiği hızla ayrılır, ama gezegen Güneş çevresinde hareket ettiği için aracın Güneş'e göre hızı artar: gezegenin hareketinden pay alır. Bedeli gezegen öder; yörünge enerjisinden ölçülemeyecek kadar az kaybeder (Voyager Jüpiter'i trilyon yılda ~30 cm yavaşlattı)."
+    },
+    {
+      "soru": "Tiangong neden İstanbul'un tam tepesinden geçebilir, ISS ile karşılaştır.",
+      "cevap": "Bir uydunun yer izi en çok yörünge eğikliği kadar kuzeye çıkar. Tiangong'un eğikliği 41,5°, İstanbul 41,0°'de; kent bu sınırın hemen altında kaldığı için istasyon tepeden geçebilir (ör. 1 Kasım 2026, 18.54'te 90°). ISS'nin eğikliği 51,6° olduğu için o da İstanbul'dan görülür ve daha kuzeydeki yerlerin de tepesinden geçebilir."
+    },
+    {
+      "soru": "Heliopoz nedir ve Voyager'lar onu ne zaman, kaç AB'de geçti?",
+      "cevap": "Heliopoz, seyrek ve sıcak güneş rüzgârının soğuk ve yoğun yıldızlararası ortamla karşılaştığı, heliosferin dış sınırıdır. Voyager 1 25 Ağustos 2012'de 121 AB'de, Voyager 2 5 Kasım 2018'de 119 AB'de geçti."
+    },
+    {
+      "soru": "Voyager 1 18 Kasım 2026'da bir ışık günü uzakta olacak. Bu kaç km eder ve ondan gelen bir sinyal bize ne kadar sürede ulaşır?",
+      "cevap": "Bir ışık günü 299.792 km/s × 86.400 s ≈ 25,9 milyar km (≈ 173,1 AB). Tanım gereği sinyal bir günde gelir; bir komut gönderip yanıt almak iki gün sürer."
+    },
+    {
+      "soru": "Türkiye'nin uzaydaki üç somut adımını resmî kaynaklara göre say.",
+      "cevap": "TUA 13 Aralık 2018'de 23 sayılı Cumhurbaşkanlığı Kararnamesiyle kuruldu. İMECE 15 Nisan 2023'te fırlatıldı ve 680 km güneş eşzamanlı yörüngede metre altı çözünürlükle görüntü alıyor. Türksat 6A 9 Temmuz 2024'te fırlatıldı ve 28 Aralık 2024'ten beri 42° doğuda görevde. Alper Gezeravcı Ax-3 ile Ocak–Şubat 2024'te ISS'te 18 gün kaldı."
+    },
+    {
+      "soru": "Kessler sendromu nedir ve hiç yeni fırlatma yapılmasa bile neden sorun sürer?",
+      "cevap": "Çarpışmaların ürettiği parçaların yeni çarpışmalara yol açıp zincirleme çoğalmasıdır; Kessler ve Cour-Palais 1978'de bir çöp kuşağı oluşabileceğini hesapladı. ESA'ya göre yeni fırlatma olmasa bile çöp artardı, çünkü parçalanmalar çöpü atmosfere doğal düşüşten hızlı ekliyor."
+    }
+  ],
+  "kaynaklar": [
+    { "ad": "ESA – Types of orbits", "url": "https://www.esa.int/Enabling_Support/Space_Transportation/Types_of_orbits" },
+    { "ad": "Wikipedia – Tsiolkovsky rocket equation", "url": "https://en.wikipedia.org/wiki/Tsiolkovsky_rocket_equation" },
+    { "ad": "Wikipedia – Delta-v budget", "url": "https://en.wikipedia.org/wiki/Delta-v_budget" },
+    { "ad": "Wikipedia – Geostationary orbit", "url": "https://en.wikipedia.org/wiki/Geostationary_orbit" },
+    { "ad": "Wikipedia – Sun-synchronous orbit", "url": "https://en.wikipedia.org/wiki/Sun-synchronous_orbit" },
+    { "ad": "NASA – Basics of Space Flight, Bölüm 4: Gezegenler arası yörüngeler", "url": "https://science.nasa.gov/learn/basics-of-space-flight/chapter4-1/" },
+    { "ad": "NASA JPL – A Gravity Assist Primer (arşiv)", "url": "https://webarchive.library.unt.edu/web/20080921224906/http://www2.jpl.nasa.gov/basics/grav/primer.html" },
+    { "ad": "NASA NTRS – Voyager's Grand Tour (J. J. Uri, JSC, 2017)", "url": "https://ntrs.nasa.gov/citations/20170009181" },
+    { "ad": "Physics World – The grand tour", "url": "https://physicsworld.com/a/the-grand-tour" },
+    { "ad": "NASA – Voyager 2", "url": "https://science.nasa.gov/mission/voyager/voyager-2" },
+    { "ad": "Caltech / JPL – NASA's Voyager 2 Probe Enters Interstellar Space", "url": "https://www.caltech.edu/about/news/jpl-news-nasas-voyager-2-probe-enters-interstellar-space-84606" },
+    { "ad": "UNLV – Heliopause", "url": "https://www.physics.unlv.edu/~jeffery/astro/sun/heliopause.html" },
+    { "ad": "EarthSky – Voyager 1 one light-day from Earth, Nov 17–18, 2026", "url": "https://earthsky.org/space/voyager-1-1-light-day-from-earth-november-17-18-2026/" },
+    { "ad": "BBC Sky at Night – Voyager 1 light-day", "url": "https://www.skyatnightmagazine.com/news/nasa-voyager-1-light-day" },
+    { "ad": "NASA – Oort Cloud facts", "url": "https://science.nasa.gov/solar-system/oort-cloud/facts" },
+    { "ad": "NASA – Space Station Facts and Figures", "url": "https://www.nasa.gov/international-space-station/space-station-facts-and-figures/" },
+    { "ad": "Heavens-Above – ISS uydu bilgisi", "url": "https://www.heavens-above.com/SatInfo.aspx?satid=25544" },
+    { "ad": "Heavens-Above – CSS (Tianhe) uydu bilgisi", "url": "https://www.heavens-above.com/SatInfo.aspx?satid=48274" },
+    { "ad": "Wikipedia – Tiangong space station", "url": "https://en.wikipedia.org/wiki/Tiangong_space_station" },
+    { "ad": "NASA – Earth Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html" },
+    { "ad": "NASA – Mars Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html" },
+    { "ad": "TUA – Milli Uzay Programı", "url": "https://cdn.tua.gov.tr/60227c3d5f551.pdf" },
+    { "ad": "TUA – 2026 Yılı Performans Programı", "url": "https://cdn.tua.gov.tr/69a52468589f6.pdf" },
+    { "ad": "TUA – 2024 Yılı Performans Programı", "url": "https://cdn.tua.gov.tr/65b24b34182ff.pdf" },
+    { "ad": "TÜBİTAK – Türkiye'nin İlk İnsanlı Uzay Görevi Tamamlandı", "url": "https://tubitak.gov.tr/en/news/first-manned-space-mission-turkiye-has-been-completed" },
+    { "ad": "Axiom Space – Ax-3 Splashdown", "url": "https://www.axiomspace.com/news/ax3-splashdown" },
+    { "ad": "NASA Space Station Blog – Ax-3 astronauts close Dragon hatch (7 Şubat 2024)", "url": "https://www.nasa.gov/blogs/spacestation/2024/02/07/ax-3-astronauts-close-dragon-hatch-before-undocking" },
+    { "ad": "TÜBİTAK – Türksat 6A görev yörüngesinde", "url": "https://tubitak.gov.tr/tr/haber/turksat-6a-gorev-yorungesinde" },
+    { "ad": "TÜBİTAK Bilim Genç – Türksat 6A'nın uzay yolculuğu başlıyor", "url": "https://bilimgenc.tubitak.gov.tr/makale/turksat-6anin-uzay-yolculugu-basliyor" },
+    { "ad": "TÜBİTAK – İMECE uzaya başarıyla fırlatıldı", "url": "https://tubitak.gov.tr/tr/haber/imece-uzaya-basariyla-firlatildi" },
+    { "ad": "TÜBİTAK – İMECE ile TÜBİTAK'ın uydu sistemlerine ihracat yolu açıldı", "url": "https://tubitak.gov.tr/sites/default/files/18842/imece_ile_tubitakin_uydu_sistemlerine_ihracat_yolu_acildi.pdf" },
+    { "ad": "ESA – Space Environment Report 2025", "url": "https://www.esa.int/Space_Safety/Space_Debris/ESA_Space_Environment_Report_2025" },
+    { "ad": "Kessler & Cour-Palais (1978), Collision frequency of artificial satellites (NASA NTRS)", "url": "https://ntrs.nasa.gov/citations/19780057167" },
+    { "ad": "T. Schildknecht, Spatium 52 (Pro ISSI, 2023) – uzay çöpü", "url": "https://www.issibern.ch/wp-content/uploads/SPATIUM52.pdf" },
+    { "ad": "Wikipedia – 2009 satellite collision", "url": "https://en.wikipedia.org/wiki/2009_satellite_collision" },
+    { "ad": "CelesTrak – Space Stations GP verisi", "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=stations&FORMAT=json" }
+  ]
+}

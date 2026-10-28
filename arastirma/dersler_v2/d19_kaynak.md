@@ -185,3 +185,202 @@ Bağımsız doğrulayıcı, 2026-10-27. Açılan kaynaklar (WebFetch): NASA Mete
 | DOĞRULANDI: Leonid 17 Kasım 23:45 UT, ZHR ≈ 15, 71 km/s; Geminid 14 Aralık 14h UT, ZHR 150, +33°; Perseid +58° | arastirma/meteor_2026.json (IMO 2026 PDF) | "Leonids (013 LEO) ... Nov 17 235°.27 152° +22° 71 2.5 15" ; "Maximum: December 14, 14h UT ... ZHR = 150" ; "Perseids (007 PER) ... 48° +58° 59 2.2 100" |
 | DOĞRULANDI: Wikipedia Asteroid belt, Pluto, IAU iau0603, NASA Perseids/Geminids, ESA Hera değerleri dersle birebir | (yukarıdaki URL'ler) | ör. "In 1866, Daniel Kirkwood announced the discovery of gaps" ; "Pluto's diameter is 2,376.6±1.6 km" ; "More than 2500 astronomers participated" ; "arrive at Didymos in November 2026" |
 | KAVRAM NOTU (değişiklik yok): "kısa dönemlilerin kaynağı Kuiper kuşağı" bir sadeleştirmedir; ders Jüpiter ailesi / Halley türü ayrımını ve kaynakların farklı sınır çizdiğini zaten söylüyor. | https://exploration.jsc.nasa.gov/interaction/lmdp/documents/Comets_Lithograph_h.pdf | "a disc-like belt of icy bodies exists beyond Neptune" |
+
+## v3 genişletme (2026-10-28)
+
+Ders 2.239 → 5.073 kelimeye çıkarıldı; 6 yeni bölüm eklendi, eski 8 bölümün başlıkları ve "kid" alanları aynen korundu. Alıntılar WebFetch özetlerinden aktarıldı (WebFetch özeti). "(uygulama verisi)" = veri/meteor.json, veri/yildizlar.json; "(dN)" = ilgili dersin kaynak tablosunda zaten doğrulanmış satır. WebSearch: 15/15 kullanıldı.
+
+### Bölüm 1 eki — bilginin üç yolu
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Göktaşlarının neredeyse hepsi asteroit parçası | https://science.nasa.gov/solar-system/meteors-meteorites/facts/ | "Of these, 99.8% come from asteroids." |
+| Yörünge konum ölçümlerinden hesaplanır (gözlem arttıkça yörünge iyileşir) | https://science.nasa.gov/blogs/planetary-defense/2025/02/24/latest-calculations-conclude-asteroid-2024-yr4-now-poses-no-significant-threat-to-earth-in-2032-and-beyond/ | observations submitted to the Minor Planet Center → CNEOS "were able to calculate more precise models of the asteroid's trajectory" |
+
+### Bölüm 2 eki — Kirkwood boşluğu, Vesta
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Çekirdek bölge 4:1 ve 2:1 Kirkwood boşlukları arasında | https://en.wikipedia.org/wiki/Asteroid_belt | core region between the 4:1 and 2:1 Kirkwood gaps (önceki satır, WebFetch özeti) |
+| En büyük asteroit Vesta ~530 km; en küçükler < 10 m | https://solarsystem.nasa.gov/asteroids-comets-and-meteors/asteroids/in-depth.amp | "the largest at about 329 miles (530 kilometers) in diameter" ; "bodies that are less than 33 feet (10 meters) across" |
+| Ceres 2006'dan beri cüce gezegen | https://science.nasa.gov/ceres | "scientists classified it as a dwarf planet in 2006" |
+| Vesta en parlak asteroit; ~5,5 kadire çıkar; çıplak gözle seyrek; dürbünle kolay | https://skyandtelescope.org/astronomy-news/observing-news/see-vesta-at-its-brightest/ | "Uranus and the asteroid 4 Vesta can both become as bright as about magnitude 5½" ; "Vesta, the brightest asteroid, achieves naked-eye visibility only rarely" ; "Binoculars show Vesta very easily." |
+| Bortle 8 kent göğü sınırı ~4,1–4,5 kadir | https://en.wikipedia.org/wiki/Bortle_scale | (d1) "Sınıf 8 kent göğüdür; sınır yaklaşık 4,1 ile 4,5 kadir" |
+| Asteroit birkaç gece arayla yıldızlara göre yer değiştirir | — | ÇIKARIM: Güneş çevresinde dolanan cisim yıldız arka planına göre hareket eder. |
+
+### Bölüm 3 (YENİ) — Bir asteroidin boyunu nasıl biliyoruz?
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Mutlak kadir tanımı (1 AB, 1 AB, evre açısı sıfır), sembol H | https://ssd.jpl.nasa.gov/glossary/h.html | "the visual magnitude an observer would record if the asteroid were placed 1 Astronomical Unit (au) away, and 1 au from the Sun and at a zero phase angle" |
+| H simgesi; 1 AB'deki parlaklık (ikinci kaynak) | https://neo.ssa.esa.int/definitions-assumptions | "the absolute magnitude is a measure of the brightness an object would have if it were at 1 au" ; "conventionally symbolized as H" |
+| Albedo çoğu zaman bilinmez, varsayılır → boyda büyük belirsizlik; varsayılan 0,05–0,25 | https://neo.ssa.esa.int/definitions-assumptions | "The albedo is often unknown and has to be assumed, resulting in large uncertainties in the size determination." ; varsayılan aralık 0.05–0.25 (WebFetch özeti) |
+| D = 1329 km / √p × 10^(−0,2H) | https://cneos.jpl.nasa.gov/tools/ast_size_est.html | "d = 10[ 3.1236 - 0.5 log10(a) - 0.2H ]" (10^3,1236 = 1329; HESAP) |
+| Aynı formül (ikinci kaynak) | https://neo.ssa.esa.int/definitions-assumptions | D = 1.329 × 10⁶ × p^(-1/2) × 10^(-0.2H) metre (WebFetch özeti) |
+| Formül küre, düzgün yüzey varsayar | https://cneos.jpl.nasa.gov/tools/ast_size_est.html | spherical object with a uniform surface (WebFetch özeti) |
+| CNEOS tablosu H = 22: 0,11 km (0,25), 0,24 km (0,05), 0,14 km (0,15) | https://cneos.jpl.nasa.gov/tools/ast_size_est.html | tablo satırı H = 22.0: 0.098 / 0.11 / 0.12 / 0.14 / 0.17 / 0.24 (albedo 0.30…0.05) |
+| Halley çekirdeği albedo ~0,04, kömür gibi | https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/1P/Halley | "Halley's albedo, for instance, is about 0.04" ; kömür kadar, "pitch black" (WebFetch özeti) |
+| PHA 140 m = H ≤ 22 eşiği albedo varsayımıyla | https://cneos.jpl.nasa.gov/about/neo_groups.html | "an absolute magnitude (H) of 22.0 or less" ; ~140 m (%14 albedo varsayımı) (önceki satır) |
+| Daha iyi boy: radar, yıldız örtmesi, termal kızılötesi, uzay aracı | https://neo.ssa.esa.int/definitions-assumptions | radar, stellar occultations, thermal infrared, spacecraft missions (WebFetch özeti) |
+
+### Bölüm 4 (YENİ) — Bennu
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| 121,6 g; en az 60 g gerekiyordu; iki katından fazla; 24 Eylül 2023 dönüş | https://science.nasa.gov/blogs/osiris-rex/2024/02/15/nasa-announces-osiris-rex-bulk-sample-mass/ | "the bulk Bennu sample mass totals 4.29 ounces (121.6 grams)" ; "at least 60 grams" ; "over twice the mission's requirement" ; "returned to Earth on Sep. 24, 2023" |
+| (ÇIKARILDI) "Dünya'ya yakın asteroit Bennu" ifadesi: açılan NASA sayfası Bennu'yu yalnız "asteroid Bennu" diye anıyor; kaynak bulunamadığı için metinden çıkarıldı | https://science.nasa.gov/blogs/osiris-rex/2024/02/15/nasa-announces-osiris-rex-bulk-sample-mass/ | "asteroid Bennu" |
+| 20 amino asitten 14; 5 nükleobaz; bol amonyak; kil ve tuzlu su (yavaş buharlaşma); yaşam değil; Ocak 2025 | https://www.astronomy.com/science/scientists-find-lifes-building-blocks-in-asteroid-bennu-samples/ | 14 of the 20 ; five nucleobases ; surprisingly large amount of ammonia ; clays and brines "only occur with the slow evaporation of water" ; "none of these discoveries counts as life in itself" ; January 29, 2025 |
+| Aynı bulgular; Nature ve Nature Astronomy; canlı izi yok (ikinci kaynak) | https://www.xatakaon.com/space/all-dna-nucleobases-and-14-out-of-20-amino-acids-nasa-scientists-find-key-molecules-for-life-in-the-bennu-samples | "14 of the 20 amino acids that living organisms use to create proteins" ; "all five nucleobases that form the building blocks of DNA and RNA" ; Nature and Nature Astronomy ; "don't contain evidence of living organisms" |
+| Asteroitler erken Güneş Sistemi artığı → moleküller gezegen yüzeyi olmadan bulunabildi | https://science.nasa.gov/solar-system/asteroids | "rocky, airless remnants left over from the early formation of our solar system" — cümlenin kalanı ÇIKARIM |
+| OSIRIS-APEX aynı araç | https://www.planetary.org/space-missions/osiris-apex | "It's the same spacecraft on a different mission." |
+| Apophis'ten yaklaşık bir saat sonra Dünya'nın yakınından geçecek; Haziran'da varış; 18 ay; yüzey haritası, kimya | https://science.nasa.gov/solar-system/asteroids/apophis-exploration/ | pass Earth about an hour after Apophis ; "arrive at Apophis in June for an 18-month campaign" ; map the surface and analyze chemistry (WebFetch özeti). Not: Planetary Society "a little over a week later" yetişeceğini yazıyor; derste NASA'nın Haziran varışı kullanıldı. |
+
+### Bölüm 6 (YENİ) — Çarpma olasılığı, 2024 YR4, Apophis
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Olasılık belirsizlik bölgesine bağlı; her gözlem daraltır; Dünya dışarıda kalınca sıfır | https://science.nasa.gov/blogs/planetary-defense/2025/02/19/dark-skies-bring-new-observations-of-asteroid-2024-yr4-lower-impact-probability/ | impact probability depends on the uncertainty region; each new observation narrows it; reaches zero only if Earth falls outside (WebFetch özeti) |
+| Bölge küçülürken Dünya içindeyse olasılık önce artar | — | ÇIKARIM: aynı tanımın geometrik sonucu; 2024 YR4 sayıları (%1 → %2,3 → %3,1 → %0,004) bunu gösteriyor. |
+| Torino ölçeği 0–10, enerji + olasılık | https://neo.ssa.esa.int/definitions-assumptions | A 0–10 classification "taking into account its kinetic energy and its impact probability" |
+| 27 Aralık 2024 MPC'ye bildirildi; ATLAS istasyonu, Şili; 130–300 fit; > %1 | https://science.nasa.gov/blogs/planetary-defense/2025/01/29/nasa-shares-observations-of-recently-identified-near-earth-asteroid/ | "first reported on Dec. 27, 2024, to the Minor Planet Center" ; "Asteroid Terrestrial-impact Last Alert System station in Chile" ; "about 130 to 300 feet wide" ; "a more than 1% chance of impacting Earth on Dec. 22, 2032" |
+| 7 Şubat 2025: %2,3 | https://science.nasa.gov/blogs/planetary-defense/ | Feb 7, 2025 yazısı: "a 2.3% chance on Dec. 22, 2032" |
+| %3,1'e çıktı, bir gecede %1,5'e düştü | https://science.nasa.gov/blogs/planetary-defense/2025/02/19/dark-skies-bring-new-observations-of-asteroid-2024-yr4-lower-impact-probability/ | "updated the impact probability of asteroid 2024 YR4 in 2032 to 3.1%" ; "new data collected overnight reduced the impact probability to 1.5%" |
+| 24 Şubat 2025: Dünya %0,004; Ay %1,7 | https://science.nasa.gov/blogs/planetary-defense/2025/02/24/latest-calculations-conclude-asteroid-2024-yr4-now-poses-no-significant-threat-to-earth-in-2032-and-beyond/ | "only 0.004%" ; "That probability is currently 1.7%." |
+| Ay %4,3 → JWST 18 ve 26 Şubat 2026 ile sıfır; 21.200 km | https://science.nasa.gov/blogs/planetary-defense/2026/03/05/new-nasa-asteroid-observations-eliminate-chance-of-2032-lunar-impact/ | "Using data from NASA's James Webb Space Telescope observations collected on Feb. 18 and 26" ; "a 4.3% chance of lunar impact" ; "ruling out a chance of lunar impact on Dec. 22, 2032" ; "13,200 miles (21,200 km)" |
+| 130–300 fit ≈ 40–90 m | — | HESAP: 130 × 0,3048 = 39,6 m; 300 × 0,3048 = 91,4 m |
+| Apophis ortalama çap 340 m; 13 Nisan 2029; ~32.000 km; Doğu yarımküreden dürbünsüz görülecek; en az 100 yıl risk yok | https://apex.asteroidmission.org/preview/About/About_Apophis.html | "has a mean diameter of 1,115 feet (340 meters)" ; "April 13, 2029" ; "about 20,000 miles (32,000 kilometers)" ; "without the aid of a spacecraft, telescope or even binoculars" ; "no risk of Apophis impacting Earth for at least 100 years" |
+| 13 Nisan 2029; 32.000 km (ikinci kaynak, NASA) | https://svs.gsfc.nasa.gov/5651 | "April 13, 2029 Earth flyby" ; "within 20,000 miles (32,000 kilometers) of Earth's surface" |
+| Avrupa, Afrika, Asya'nın bir kısmından çıplak gözle; Kutup Yıldızı'ndan ~3 kat sönük; karanlıkta gözle, aydınlıkta dürbünle; 7.500 yılda bir; Ay uzaklığının onda birinden az | https://www.planetary.org/space-missions/osiris-apex | "visible to the naked eye from Europe, Africa, and parts of Asia" ; "about three times dimmer than Polaris" ; "only once every 7,500 years" ; less than one-tenth the distance to the Moon |
+| Geçiş saati derste yok | — | Açılan kaynaklarda saat bulunamadı (bulamadım); derste "kaynaklı saat yok" denildi. |
+| Ay ortalama uzaklığı 384.400 km | https://science.nasa.gov/moon/facts/ | (d10) "The Moon is an average of 238,855 miles (384,400 kilometers) away." |
+| Yerdurgun yükseklik 35.786 km | https://en.wikipedia.org/wiki/Geostationary_orbit | (d3) "35,786 km (22,236 mi) in altitude above Earth's equator" |
+| Kutup Yıldızı kadiri 1,97 | veri/yildizlar.json (d3-celestial, Hipparcos tabanlı) | (uygulama verisi) Polaris satırı [37.9545, 89.2641, 1.97, 0.64] |
+| Kadir farkı 2,5 × log (oran) | arastirma/dersler_v2/d1.json | (d1) "2,5 × log₁₀(F / F₀)" |
+
+### Bölüm 7 eki ve Bölüm 8 (YENİ) — Halley, Giotto, Rosetta
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Halley'nin dönemi 72–80 yıl arasında değişir | https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/1P/Halley | period "has since been found to vary between 72 and 80 years" |
+| 1705 Edmond Halley aynı kuyruklu yıldız olduğunu anladı; 1758 dönüşünü öngördü; 25 Aralık 1758'de doğrulandı; İngiliz gökbilimci | https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/1P/Halley | "it was not until 1705 that the English astronomer Edmond Halley understood" ; "predicted its return for 1758" ; confirmed 25 December 1758 (WebFetch özeti) |
+| Giotto 14 Mart 1986, 596 km; çekirdek ~16 × 8 × 8 km | https://nssdc.gsfc.nasa.gov/imgcat/html/object_page/gio_hmc01814.html | "Closest approach occurred 14 March 1986 at 00:03:02 UT at a distance of 596 km." ; "The nucleus is about 16 x 8 x 8 km in size." |
+| Albedo ~0,04, kömür | https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/1P/Halley | "Halley's albedo, for instance, is about 0.04" |
+| Rosetta: fırlatma 2 Mart 2004; varış 6 Ağustos 2014; Philae 12 Kasım 2014 ilk kuyruklu yıldız inişi; bitiş 30 Eylül 2016 kontrollü iniş | https://www.esa.int/Enabling_Support/Operations/Rosetta | "to 2 March 2004" ; "The spacecraft arrived at the comet on 6 August 2014." ; "Rosetta's Philae lander made the first-ever landing on a comet." ; "The mission ended in a controlled landing on the comet's surface on 30 September 2016." (Philae tarihi 12 Kasım 2014: WebFetch özeti) |
+| Rosetta iki yıldan fazla yanında kaldı | — | HESAP: 6.8.2014 → 30.9.2016 = 2,15 yıl |
+| Sıradaki günberi 28 Temmuz 2061; son günberi 8/9 Şubat 1986 | https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/1P/Halley | "The next perihelion of Halley's Comet is predicted for 28 July 2061." ; infobox "8 February 1986", tablo 9 Şubat |
+| Eta Kova (Mayıs başı) ve Avcı (Ekim sonu) Halley'den | https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/1P/Halley | "Halley is associated with two meteor showers: the Eta Aquariids in early May, and the Orionids in late October." |
+| Aynı (ikinci kaynak) | https://ssd.jpl.nasa.gov/sb/meteor_streams.html | ETA "1P/Halley" ; ORI "1P/Halley" |
+| ISON (C/2012 S1) Oort bulutundan; Güneş'e yakın parçalandı; Siding Spring (C/2013 A1) Mars yakınından sağ geçti | https://science.nasa.gov/solar-system/oort-cloud/facts | "Two recent examples are comets C/2012 S1 (ISON) and C/2013 A1 Siding Spring." ; ISON broke apart near the Sun; Siding Spring survived a close pass by Mars (WebFetch özeti) |
+
+### Bölüm 9 eki — yükseklik, ışık, ateş topu, hız
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| 75–120 km'de görünür; 50–95 km'de parçalanır | https://en.wikipedia.org/wiki/Meteor | Meteors become visible at about 75 to 120 km; usually disintegrate at 50 to 95 km (WebFetch özeti) |
+| Işık sürtünmeden değil çarpma basıncından; iyonlaşma izi | https://en.wikipedia.org/wiki/Meteor | "atmospheric ram pressure (not friction)" ; ionization trails (WebFetch özeti) |
+| Parlak iz gaz ve erimiş parçacıklardan | https://en.wikipedia.org/wiki/Meteor | "a shining trail of gases and melted meteoroid particles" |
+| Ateş topu: IAU −4 ya da daha parlak; IMO başucunda en az −3 | https://en.wikipedia.org/wiki/Meteor | IAU: magnitude −4 or brighter ; IMO: at least magnitude −3 if seen at the zenith (WebFetch özeti) |
+| Dünya yörünge hızı ~29,8 km/s; Güneş'ten kurtulma Dünya uzaklığında 42,1 km/s | https://en.wikipedia.org/wiki/Escape_velocity | (d3) tablo "At Earth | The Sun's gravity | 42.1" ; Dünya 29,8 km/s (d3, NSSDCA) |
+| Dünya'nın kurtulma hızı ~11,2 km/s | https://en.wikipedia.org/wiki/Escape_velocity | (d3) "Dünya 11,19 km/s" |
+| En yüksek giriş ~72 km/s, en düşük ~11,2 km/s | — | HESAP + ÇIKARIM: 29,8 + 42,1 = 71,9; Dünya çekimiyle √(71,9² + 11,19²) ≈ 72,8. En düşük: Dünya'ya düşen cisim en az kurtulma hızını kazanır. |
+| Takvimde en yavaş Draconid 20 km/s, en hızlı Leonid 71 km/s | https://www.imo.net/files/meteor-shower/cal2026.pdf | (uygulama verisi, meteor.json) DRA hiz 20 ; LEO hiz 71 ; Tablo 5 satırları "Draconids ... 20" ; "Leonids ... 71" |
+| Leonid kaynağı 55P/Tempel-Tuttle ters yönlü yörünge → hızlı | https://en.wikipedia.org/wiki/Leonids | "Due to the retrograde orbit of 55P/Tempel-Tuttle, the Leonids are fast moving streams" |
+| Görsel meteorların çoğu +2 ile +4 kadir | https://alpo-astronomy.org/content/Meteor/Resources/MeteorsSectionObservingGuide.pdf | "Most of the meteors seen by visual observers lie in the magnitude range from +2 to +4." |
+| Kent göğünde sınır ~4 kadir | https://en.wikipedia.org/wiki/Bortle_scale | (d1) Bortle 8: 4,1–4,5; Bortle 9: ≤ 4,0 |
+
+### Bölüm 10 eki — radyant kayması, sporadik, tarihler
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Radyant günde ~1° doğuya, tutuluma paralel; Dünya'nın yörünge hareketi | https://en.wikipedia.org/wiki/Radiant_(meteor_shower) | "During the active period of most showers, the radiant moves nearly one degree eastwards, parallel to the ecliptic." ; largely due to Earth's orbital motion (WebFetch özeti) |
+| Sporadik meteor tanımı | https://en.wikipedia.org/wiki/Radiant_(meteor_shower) | "A meteor that does not point back to the known radiant for a given shower is known as a sporadic." |
+| Sporadikler kuzeyde Temmuz–Aralık en çok, ilkbahar en az | https://alpo-astronomy.org/content/Meteor/Resources/MeteorsSectionObservingGuide.pdf | "In the northern hemisphere sporadic meteors peak between July and December and reach a nadir during the spring months." |
+| Uygulama haritasında etkin yağmurların radyantı | gozlem.js (levhaCiz: radyantlar = etkin yağmurlar, radyant_ra/dec) | (uygulama kodu) |
+| Leonid 23:45 UT; İstanbul 02:45 (18 Kasım) | https://www.imo.net/files/meteor-shower/cal2026.pdf | (meteor_2026.json) "Maximum: November 17, 23h 45m UT" ; UTC+3: https://www.timeanddate.com/news/time/turkey-permanent-trt.html (d22) "permanently 3 hours ahead of UTC (UTC+3)" |
+| Uygulama 23:52 UT gösterir (λ☉'dan hesap) | veri/meteor.json | (uygulama verisi) LEO "zirve_utc": "2026-11-17T23:52:00Z", "gunes_boylami": 235.27 ; meteor_2026.json notu "LEO 23:52 vs 23:45" |
+
+### Bölüm 11 (YENİ) — Takvimdeki yağmurlar ve kaynak cisimleri
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Takvimde 13 yağmur, IMO 2026–2027 | veri/meteor.json | (uygulama verisi) QUA, LYR, ETA, SDA, CAP, PER, DRA, ORI, STA, NTA, LEO, GEM, URS; "kaynak": "IMO Meteor Shower Calendar 2026, 2027" |
+| Kaynak cisimler: QUA 2003 EH1; LYR C/1861 G1 (Thatcher); ETA, ORI 1P/Halley; SDA P/2008 Y12 (SOHO); CAP 169P/NEAT; PER 109P/Swift-Tuttle; DRA 21P/Giacobini-Zinner; STA 2P/Encke; NTA (2004 TG10); LEO 55P/Tempel-Tuttle; GEM 3200 Phaethon; URS 8P/Tuttle | https://ssd.jpl.nasa.gov/sb/meteor_streams.html | "196256 (2003 EH1)" ; "C/1861 G1 (Thatcher)" ; "1P/Halley" ; "P/2008 Y12 (SOHO)" ; "169P/NEAT" ; "109P/Swift-Tuttle" ; "21P/Giacobini-Zinner" ; "2P/Encke" ; "(2004 TG10)" ; "55P/Tempel-Tuttle" ; "3200 Phaethon" ; "8P/Tuttle" |
+| Taurid ← Encke; Leonid ← Tempel-Tuttle; Orionid ← Halley (ikinci kaynak) | https://science.nasa.gov/solar-system/meteors-meteorites/meteor-showers/ | Taurids associated with comet Encke ; Leonids with Tempel-Tuttle ; Aquariids and Orionids linked to comet Halley (WebFetch özeti) |
+| Türkçe yağmur adları | veri/meteor.json | (uygulama verisi) "Quadrantid (Dörtlük)", "Lyrid (Çalgı)", "Eta Aquariid (Eta Kova)", "Güney Delta Aquariid (Delta Kova)", "Alfa Capricornid (Oğlak)", "Perseid (Kahraman)", "Draconid (Ejderha)", "Orionid (Avcı)", "Güney/Kuzey Taurid (Boğa)", "Leonid (Aslan)", "Geminid (İkizler)", "Ursid (Küçük Ayı)" |
+| Phaethon "asteroit ya da olası kaya kuyruklu yıldız" | https://science.nasa.gov/solar-system/meteors-meteorites/geminids | "3200 Phaethon (an asteroid or a possible "rock comet")" |
+| Dörtlük ve İkizler en güçlülerden | https://www.imo.net/files/meteor-shower/cal2026.pdf | (meteor_2026.json) ZHR QUA 80, GEM 150 |
+| 1833: saatte yüz binden fazla (bir tahmin); 9 saatte 240.000'den fazla; Olmsted, Aslan'daki bir noktadan | https://en.wikipedia.org/wiki/Leonids | "over one hundred thousand meteors an hour" ; "in excess of 240,000 meteors during the nine hours of the storm" ; "radiated from a point in the constellation of Leo" |
+| Radyant yıldızlarla doğup batar → kaynak Dünya dışında | — | ÇIKARIM: radyant sabit sağ açıklık/dik açıklıkla verilir (IMO), yani gök küresine bağlıdır. |
+| Tempel-Tuttle 33 yılda bir döner; 1833 ve 1966 > 100.000/saat | https://sci.esa.int/web/observational-astronomy/-/37828-what-are-the-leonids | "returns to the vicinity of the Earth and the Sun every 33 years" ; "the events of 1833 and 1966 ... more than 100 000 shooting stars per hour" |
+| Toz yörünge boyunca yayılır, çekirdek yakınında en yoğun | https://ssd.jpl.nasa.gov/sb/meteor_streams.html | dust spreads along the comet's orbit and is densest near the nucleus (WebFetch özeti) |
+| 1966: saniyede 40'tan fazla, saatte 144.000; 1999, 2001, 2002: saatte 3.000'e kadar; fırtına > 1.000/saat, ~33 yılda bir | https://en.wikipedia.org/wiki/Leonids | "peak rates exceeding 40 meteors per second, or 144,000 meteors per hour" ; "produced up to 3,000 Leonid meteors per hour" ; "about every 33 years, during which activity exceeds 1,000 meteors per hour" |
+| 2026 Leonid ZHR ≈ 15 | https://www.imo.net/files/meteor-shower/cal2026.pdf | (meteor_2026.json) "ZHR ≈ 15" |
+| 2032 civarı dönüş; fırtına öngörüsü yok | — | HESAP 1999 + 33; fırtına için kaynak aranmadı/bulunmadı, derste "kaynaklı öngörü yok" denildi. |
+
+### Bölüm 12 (YENİ) — İstanbul'dan meteor izlemek
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Akşam en kötü zaman; arka cam benzetmesi; damlalar ön cama; sayılar gece boyunca artar; 02'den sonra belirgin; şafağa kadar | https://alpo-astronomy.org/content/Meteor/Resources/MeteorsSectionObservingGuide.pdf | "Unfortunately, the evening hours are the worst time to view meteor activity." ; "looking out of the rear window of a vehicle driving in the rain" ; "Most of the raindrops will strike the front windshield" ; "The rates slowly climb throughout the night." ; "Rates begin to increase dramatically after 2am" |
+| Gece ilerledikçe gözlemci Dünya'nın ilerleme yönüne döner | — | ÇIKARIM: benzetmenin geometrik tamamlayıcısı (Dünya'nın dönüşü). |
+| Sabah alacakaranlığından önceki son saatte ~15 sporadik (Tem–Ara); minimumda 5 | https://alpo-astronomy.org/content/Meteor/Resources/MeteorsSectionObservingGuide.pdf | "approximately 15 sporadic meteors during the last hour before the start of morning twilight" ; "can be as low as only 5 per hour" |
+| Radyant kenarda; bakış merkezi ufuk–başucu ortası; tam tepeye bakma; ≥ 60 dakika | https://alpo-astronomy.org/content/Meteor/Resources/MeteorsSectionObservingGuide.pdf | "one radiant is off to the side of your field of view" ; "halfway point between the horizon and the zenith" ; "Do not look straight up" ; "watch for at least 60 minutes" |
+| Düzeltme çarpanı r^(6,5 − LM) × F / sin^γ h (IMO El Kitabı) | https://www.rdocumentation.org/packages/MetFns/versions/3.2.2/topics/zhr | "C_i=\frac{r^{(6.5-lmg_i)}F_i}{\sin ^{\gamma}(h_i)}" ; kaynak: Rendtel & Arlt (2014) Handbook For Meteor Observers, IMO |
+| Sinüs bağımlılığı; 30° → 0,5; her 1 kadirde r kat; sinüs "dubious" | https://en.wikipedia.org/wiki/Zenithal_hourly_rate | "divided by 0.5 (sin 30°)" ; "For every change of 1 magnitude in the limiting magnitude of the observer, the number of meteors observed changes by a factor of r." ; sinüs bağımlılığı "dubious" işaretli |
+| Gerçek sayı neredeyse her zaman düşük | https://en.wikipedia.org/wiki/Zenithal_hourly_rate | "The rate that can effectively be seen is nearly always lower" |
+| Uygulama listesi: zirve tarihi, aralık, ZHR, hız, zirvede Ay %, radyant en çok kaç derece, Takvimin tamamı, Takvime ekle | gozlem.js (meteorSatir, meteorYaz) | (uygulama kodu) |
+| Sınır kadiri bilinen yıldızlarla bulma | arastirma/dersler_v2/d1.json | (d1) "çıplak gözle görebildiğin en sönük yıldızın kadirini bulmaktır" |
+| Leonid: tepe anında radyant ~29°, Ay batmış | — | HESAP (astronomy-engine 2.1.19, 41,01° K 28,98° D): 17.11.2026 23:45 UT radyant (152°, +22°) yük. 29,2°; Ay batışı 21:45 UT; radyant doğuşu ~21:05 UT |
+| Leonid r = 2,5; GEM r = 2,6; GEM ZHR 150; 14 Aralık 14 UT; son 20 yıl tepeleri 13 Ara 21 UT – 14 Ara 18 UT; büyüyen hilal | https://www.imo.net/files/meteor-shower/cal2026.pdf | (meteor_2026.json) LEO "nufus_indeksi_r": 2.5 ; GEM 2.6 ; "Maximum: December 14, 14h UT ... ZHR = 150" ; "λ⊙ 261.5–262.4 = 13 Ara 21:00 – 14 Ara 18:00 UT" ; "only a waxing crescent" |
+| GEM radyant 14 Ara 14 UT'de −10,9°; 13 Ara 23 UT'de 75,4°; Ay batışı 13 Ara 18:32 UT | — | HESAP (astronomy-engine): radyant (112°, +33°) |
+| NASA Geminid karanlık gökte 40–50/saat; IMO QUA 80'e karşı 25 | https://science.nasa.gov/solar-system/meteors-meteorites/geminids | "Expect 40 to 50 meteors per hour" ; IMO: https://www.imo.net/calendar/2024 "The average hourly rates one can expect under dark skies is 25" (önceki satır) |
+| Kent göğü LM 4,3 (Bortle 8 ortası) | https://en.wikipedia.org/wiki/Bortle_scale | (d1) Bortle 8: 4,1–4,5 |
+
+### Bölüm 13 eki — kütle ölçümü
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Eris kütlesi Dysnomia'nın dolanma süresinden | https://thisis.caltech.edu/news/dwarf-planet-known-eris-more-massive-pluto-new-data-shows-1293 | "because of the time it takes Eris's moon, Dysnomia, to complete an orbit" |
+| Plüton, Eris, Haumea, Quaoar uydulu KBO; Makemake uydulu | https://science.nasa.gov/solar-system/kuiper-belt/10-things-to-know-about-the-kuiper-belt | Pluto, Eris, Haumea, and Quaoar are Kuiper Belt objects that have moons ; Makemake ... with a moon (WebFetch özeti) |
+| Uydudan kütle; formül toplam kütleyi verir | arastirma/dersler_v2/d3.json | (d3) "Galileo uydusunun yörüngesinden Jüpiter'in kütlesi" ; "gezegen ile ayın toplam kütlesini bulursun; ay küçükse bu neredeyse gezegenin kütlesidir" |
+
+### Bölüm 14 eki — Kuiper oluşumu, Arrokoth, Oort oluşumu, 3I/ATLAS
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Neptün bölgeyi karıştırdı, gezegen oluşamadı; iç kenarı Neptün belirler | https://science.nasa.gov/solar-system/kuiper-belt/10-things-to-know-about-the-kuiper-belt | "Neptune's gravity stirred up this region of space so much" ; Neptune's orbit, not Pluto's, sets its inner edge (WebFetch özeti) |
+| Nice modeli; ilk malzeme birkaç Dünya kütlesi olabilirdi | https://science.nasa.gov/solar-system/kuiper-belt/10-things-to-know-about-the-kuiper-belt | Nice Model ... may have removed most of the belt's original material, which may have been several times Earth's mass (WebFetch özeti) |
+| Arrokoth kırmızımsı, iki loblu, yassı kardan adam; en büyük sürpriz | https://science.nasa.gov/solar-system/kuiper-belt/10-things-to-know-about-the-kuiper-belt | "a very reddish-colored, double-lobed object that looked like a partially flattened snowman" ; "was the biggest surprise of the flyby" |
+| Oort oluşumu: Jüpiter başta gezegen çekimi savurdu; bir kısmı atıldı; galaksinin gelgit kuvveti; küresel kabuk; en yakın yıldıza yolun 1/4–1/2'si | https://science.nasa.gov/solar-system/oort-cloud/facts | planetary gravity, mainly Jupiter's ; "Some planetesimals were ejected from the solar system entirely" ; "Likely the strongest influence was the tidal force from our galaxy itself" ; "a vast, extremely distant spherical shell" ; "extending perhaps one-quarter to halfway from our Sun to the next star" |
+| 3I/ATLAS: 1 Temmuz 2025, ATLAS Şili (Rio Hurtado), yıldızlararası; Yay yönünden; ~30 Ekim 1,4 AB, Mars yörüngesinin biraz içi; Dünya'ya ≥ 1,6 AB; tehlike yok | https://science.nasa.gov/blogs/planetary-defense/2025/07/02/nasa-discovers-interstellar-comet-moving-through-solar-system/ | "has been officially named 3I/ATLAS" ; "first reported observations of a comet that originated from interstellar space" (July 1) ; direction of the constellation Sagittarius ; "around Oct. 30, at a distance of 1.4 au" ; "at least 1.6 astronomical units" ; "The comet poses no threat to Earth." |
+| Sagittarius = Yay | veri/takimyildiz.json | (uygulama verisi) "la": "Sagittarius", "ad": "Yay" |
+| NASA kuyruklu yıldız sayfasında 3I/ATLAS, 2I/Borisov, 'Oumuamua | https://science.nasa.gov/solar-system/comets | öne çıkan listede "3I/ATLAS", "2I/Borisov", "'Oumuamua" |
+| Yıldızlararası cisim dışarıda oluşmuş malzemeyi inceleme fırsatı | — | ÇIKARIM: yıldızlararası uzaydan gelen cisim Güneş Sistemi dışında oluşmuştur. |
+
+### v3 hesapları (HESAP)
+
+| Hesap | Girdi | Sonuç |
+|---|---|---|
+| 10^3,1236 | — | 1329,2 km |
+| H = 22 çapları | 1329 × 10^(−4,4) = 0,05291 km; / √0,14, √0,05, √0,25 | 0,1414 / 0,2366 / 0,1058 km |
+| Kütle farkı | (0,2366 / 0,1058)³ | 2,236³ = 11,2 |
+| Albedo 0,05 / 0,20 (soru) | √(0,20 / 0,05) | 2 |
+| Apophis / Ay | 32.000 / 384.400 | 0,0832; ters oran 12,0 |
+| Apophis kadir | 1,97 + 2,5 × log 3 | 1,97 + 1,193 = 3,16 |
+| Halley turu | 9.2.1986 → 28.7.2061 | 75,46 yıl; a = 75,46^(2/3) = 17,86 AB |
+| Rosetta | 6.8.2014 → 30.9.2016 | 2,15 yıl |
+| En yüksek meteor hızı | 29,8 + 42,1; √(71,9² + 11,19²) | 71,9; 72,8 km/s |
+| Aslan fırtına aralığı | (1966 − 1833) / 33; 1999 − 1966; 1999 + 33 | 4,03; 33; 2032 |
+| Leonid beklenen | 15 × sin 29,2°; 2,5^1,5 | 7,3; 3,95 → 1,85 ≈ 2/saat |
+| Geminid beklenen | 150 × sin 75,4° = 145,2; /2,6; /2,6^2,2 (= 8,18) | 145; 55,8; 17,7 |
+| İstanbul saati | 23:45 UT + 3 sa | 18 Kasım 02:45 |
+
+### v3 notları
+
+- WebSearch bütçesi (15) tamamen kullanıldı. Bulunamayan ve derse konmayanlar: Apophis'in 2029 geçiş saati ve tam kadiri (yalnız "Kutup Yıldızı'ndan ~3 kat sönük" bulundu; 3,2 kadir derste HESAP olarak verildi ve kaynağın daha temkinli önerisi öne alındı); Rosetta'nın bilimsel bulguları (D/H oranı vb.) açılan ESA sayfasında yoktu, derste yok; "3I" adlandırmasının anlamı kaynakta bulunamadı, derste açıklanmadı; Halley'nin dönem değişiminin nedeni (gezegen çekimi) açılan kaynakta yazmadığı için derste neden verilmedi.
+- OSIRIS-APEX varışı: NASA "Haziran'da" (2029), Planetary Society "bir haftadan biraz fazla sonra". Derste NASA kullanıldı.
+- Apophis çapı: görev sayfası 340 m (ortalama çap); theweather.net haberi 375 m. Derste görev sayfası.
+- Bennu bulguları için NASA'nın kendi duyurusu açılmadı; iki ikincil kaynak (Astronomy, Xataka On) birbirini doğruluyor. Astronomy "iki makale Nature'da" diyor, Xataka "Nature ve Nature Astronomy"; derste ikincisi (bilinen yayın düzeni) kullanıldı.
+- ZHR → HR formülü: Wikipedia ZHR sayfası formülü metin olarak vermiyor (görsel), terimleri tanımlıyor; formül MetFns belgesinden (IMO El Kitabı'na dayanır) alındı ve γ = 1 (Wikipedia'daki sin h) ile sadeleştirildi.
+- Halley sayfası için Wikipedia'nın Mart 2026 kopyası (wiki.krisyotam.com) arama sonucunda çıktığı için kullanıldı; asıl sayfa en.wikipedia.org/wiki/Halley's_Comet.
+- Leonid tepe saati: IMO PDF 23:45 UT, uygulama (λ☉'dan hesap) 23:52 UT; derste ikisi de söylendi. IMO web takvimi "16–17 Kasım gecesi" diyor (meteor_2026.json tutarsızlık notu); derste PDF esas.

@@ -3,7 +3,7 @@
   "unite": "yildizlar",
   "yeni": true,
   "baslik": "Kara Delikler ve Kütleçekim Dalgaları: Uzay-Zamanın Uç Noktaları",
-  "ozet": "Kara delik, ışığın bile kaçamadığı kadar sıkışmış kütledir; sınırı olay ufkudur ve boyutu yalnızca kütleye bağlıdır. Bu derste Schwarzschild yarıçapını hesaplayacak, galaksimizin merkezindeki dev kara deliğin yıldız yörüngeleriyle nasıl tartıldığını, ilk kara delik fotoğraflarının nasıl çekildiğini ve iki kara deliğin çarpışmasından gelen kütleçekim dalgalarının nasıl duyulduğunu öğreneceksin.",
+  "ozet": "Kara delik, ışığın bile kaçamadığı kadar sıkışmış kütledir; sınırı olay ufkudur ve boyutu yalnızca kütleye bağlıdır. Bu derste Schwarzschild yarıçapını ve kara deliklerin şaşırtıcı yoğunluğunu hesaplayacak, görünmeyen kara deliklerin eş yıldızlardan nasıl tartıldığını, galaksimizin merkezindeki dev kara deliği, ilk kara delik fotoğraflarını, iki kara deliğin çarpışmasından gelen kütleçekim dalgalarını ve bu alanın son on yılını öğreneceksin.",
   "on_bilgi": [
     "d3",
     "d6"
@@ -23,6 +23,8 @@
       "paragraflar": [
         "Kara deliğin çevresinde, içinden hiçbir şeyin, ışığın bile geri çıkamadığı bir sınır vardır: olay ufku. Adı yerindedir; ufkun ötesinde olan hiçbir olay dışarıdaki birine ulaşamaz. Dönmeyen bir kara delik için olay ufkunun yarıçapına Schwarzschild yarıçapı denir ve formülü kısadır: Rs = 2GM/c². Burada G kütleçekim sabiti, M kara deliğin kütlesi, c ışık hızıdır. Sözle: yarıçap kütleyle doğru orantılıdır. Kütle iki katına çıkarsa olay ufkunun yarıçapı da iki katına çıkar.",
         "Pratik bir kısayol var. Wikipedia'nın tablosuna göre Güneş'in Schwarzschild yarıçapı yaklaşık 2,95 km. O halde herhangi bir kara delik için Rs ≈ 2,95 km × (kaç Güneş kütlesi olduğu). Güneş'i olduğu gibi bir kara deliğe sıkıştırabilseydin yaklaşık 3 km yarıçaplı bir küre elde ederdin; Dünya'yı sıkıştırsaydın yaklaşık 9 mm, yani bir misket boyutu. Elbette Güneş de Dünya da kara delik olamaz; yeterince kütleleri yok ki kendiliklerinden bu kadar sıkışsınlar. Bu yalnızca ölçeği hissetmek için bir düşünce deneyi.",
+        "Kara deliğin şaşırtıcı bir sadeliği var. Wikipedia'ya göre bir kara delik, dışarıdan ölçülebilen yalnızca üç büyüklükle tümüyle betimlenir: kütlesi, dönmesi (açısal momentumu) ve elektrik yükü. İçine düşen şeyin yıldız mı, gaz mı, kitap mı olduğu dışarıdan anlaşılmaz; geri kalan her özellik bu üç sayıdan çıkar. John Wheeler bu fikri “kara deliklerin saçı yoktur” diye özetledi ve fikir saçsızlık teoremi adıyla anılır oldu. Bu yüzden iki kara deliği birbirinden ayıran şey, temelde kütleleri ve ne kadar hızlı döndükleridir. Buraya kadar kullandığımız formül dönmeyen kara delik içindir; dönen kara delikler biraz farklı davranır ve sonraki bölümlerde gerçek kara deliklerin döndüğünü göreceksin.",
+        "Olay ufkunun biraz dışında bir başka ilginç yer daha var. Kara deliğin çevresinde ışığın bile yörüngede dolanabildiği küresel bir kabuk bulunur; buna foton küresi denir. Bu kabuğun içine giren ışık sonunda olay ufkuna düşer. Bu yüzden arkadaki parlak gazın önünde kara delik, olay ufkundan daha büyük karanlık bir leke gibi görünür; buna kara deliğin gölgesi denir. ESO'ya göre olay ufku, düşürdüğü gölgeden yaklaşık 2,5 kat küçüktür; UNLV'nin ders sayfası bu oranı 2,6 olarak verir. Az sonra EHT görüntülerinde gördüğümüz karanlık bölge olay ufkunun kendisi değil, işte bu gölgedir.",
         "Bir yanılgıyı da düzeltelim. Kara delik, her şeyi uzaktan emen bir elektrik süpürgesi değildir. Ufkun çok dışında, kütleçekimi aynı kütledeki bir yıldızınkiyle aynıdır. Güneş bir anda aynı kütlede bir kara deliğe dönüşse, Dünya karanlıkta kalırdı ama yörüngesi değişmezdi; çünkü d3'te gördüğün yörünge yasaları yalnızca merkezdeki kütleye ve uzaklığa bakar. Tehlike ancak çok yaklaşınca başlar."
       ],
       "ornek": {
@@ -30,6 +32,18 @@
         "metin": "Kısayol: Rs ≈ 2,95 km × (M/M☉). 10 Güneş kütleli bir kara delik için Rs ≈ 2,95 × 10 = 29,5 km, yani yaklaşık 30 km (Wikipedia'nın değeriyle uyumlu). Bu, olay ufkunun çapının yaklaşık 60 km olması demek; içine on Güneş kütlesi sığmış, bir şehir ölçeğinde bir küre. Şimdi 3,5 Güneş kütleli bir cisim alalım: Rs ≈ 2,95 × 3,5 ≈ 10,3 km. Sonuç: 10 M☉'lik kara deliğin olay ufku yarıçapı yaklaşık 30 km, 3,5 M☉'lik olanınki yaklaşık 10 km."
       },
       "akilda": "Olay ufku, içinden hiçbir şeyin çıkamadığı sınırdır. Yarıçapı Rs = 2GM/c², pratikte her Güneş kütlesi için yaklaşık 3 km."
+    },
+    {
+      "baslik": "Yoğunluk yanılgısı: dev kara delik seyrektir",
+      "paragraflar": [
+        "Kara delik denince akla akıl almaz bir sıkışma gelir. Küçük kara delikler için bu doğru. Ama ilginç bir ayrıntı var: olay ufkunun yarıçapı kütleyle doğru orantılı büyür, oysa bir kürenin hacmi yarıçapın küpüyle büyür. Kütle iki katına çıkınca yarıçap iki, hacim sekiz katına çıkar. Yani olay ufkunun içindeki ortalama yoğunluk, kütle arttıkça hızla düşer: kütle iki katına çıkarsa yoğunluk dörtte birine iner. Wikipedia'ya göre bu yüzden en kütleli kara deliklerin olay ufku içindeki ortalama yoğunluğu anakol yıldızlarınınkinden düşüktür ve süper kütleli bir kara deliğin ortalama yoğunluğu suyunkinden bile az olabilir.",
+        "Bu, “ortalama yoğunluk” kavramının sınırını da gösterir. Kara deliğin kütlesi olay ufkunun içinde bir maddeye yayılmış değildir; burada yaptığımız yalnızca kütleyi ufkun hacmine bölmektir. Yine de hesap öğreticidir. Bir kara delik oluşturmak için maddeyi akıl almaz yoğunluklara sıkıştırmak gerekmez: yeterince kütleyi bir araya getirmek de aynı sonuca gider. Güneş kütleli bir kara deliğin ufku içindeki ortalama yoğunluk metreküpte yaklaşık 1,8 × 10¹⁹ kg iken, milyarlarca Güneş kütleli bir kara deliğin ufku ortalamada havadan seyrek bir hacmi çevreler. Gelgit konusunda göreceğin “dev kara delik ufkunda daha naziktir” sonucu da bu ölçek etkisiyle akrabadır: ufuk büyüdükçe ufkun çevresindeki koşullar daha az aşırı olur."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Üç kara deliğin ortalama yoğunluğu",
+        "metin": "Ortalama yoğunluk = kütle ÷ (4/3 × π × Rs³). Güneş kütlesi 1,988 × 10³⁰ kg, Rs = 2,953 km × (M/M☉). 1. adım (10 M☉): Rs ≈ 29,5 km = 2,95 × 10⁴ m. Hacim ≈ 4,19 × (2,95 × 10⁴)³ ≈ 1,08 × 10¹⁴ m³. Kütle ≈ 1,99 × 10³¹ kg. Yoğunluk ≈ 1,8 × 10¹⁷ kg/m³. 2. adım (Sgr A*, 4,297 milyon M☉): Rs ≈ 1,27 × 10¹⁰ m. Yoğunluk ≈ 1,0 × 10⁶ kg/m³, yani suyun (1.000 kg/m³) yaklaşık bin katı. 3. adım (M87, 6,5 milyar M☉): Rs ≈ 1,92 × 10¹³ m. Hacim ≈ 2,96 × 10⁴⁰ m³, kütle ≈ 1,29 × 10⁴⁰ kg, yoğunluk ≈ 0,44 kg/m³. Deniz düzeyinde hava yaklaşık 1,2 kg/m³'tür; M87'nin ufku ortalamada havadan yaklaşık üç kat seyrektir. 4. adım: Sınama: yoğunluk kütlenin karesiyle ters orantılıysa Sgr A* ile M87 arasındaki oran (6,5 × 10⁹ ÷ 4,297 × 10⁶)² ≈ 2,3 milyon olmalı; 1,0 × 10⁶ ÷ 0,44 ≈ 2,3 milyon. Sonuç: yoğunluk 10 M☉'de 10¹⁷ kg/m³ mertebesinden M87'de havadan seyreğe iner."
+      },
+      "akilda": "Olay ufkunun yarıçapı kütleyle, hacmi kütlenin küpüyle büyür; bu yüzden ortalama yoğunluk kütlenin karesiyle ters orantılı düşer. 10 Güneş kütleli bir kara delik 10¹⁷ kg/m³ mertebesinde, M87'nin dev kara deliği ise ortalamada havadan seyrektir."
     },
     {
       "baslik": "Zaman yavaşlar, cisim uzar",
@@ -45,16 +59,34 @@
       "paragraflar": [
         "Işık yaymayan bir şeyi nasıl bulursun? Michell'in 1783'te önerdiği gibi: yanındaki görünür cisme bakarak. Bir kara delik bir yıldızla çift sistem oluşturuyorsa, yıldızdan çektiği gaz kara deliğe doğru dönerek düşerken çok ısınır ve X ışını yayar. Bu sistemlere X ışını çiftleri denir. Yıldızın yörünge hareketini ölçersen, d3'teki Kepler yasalarıyla görünmeyen eşin kütlesini hesaplayabilirsin. Kütle, bir nötron yıldızının taşıyabileceğinden fazlaysa geriye tek aday kalır.",
         "İlk ikna edici örnek Kuğu takımyıldızındaki Cyg X-1 oldu. Giacconi ve ekibinin Uhuru X ışını uydusuyla yaptığı gözlemler, X ışını astronomisi ile kara delikler arasındaki ilk açık bağı kurdu. Optik gözlemciler sonra bir B türü yıldızın görünmeyen bir eşle 5,6 günde bir dolandığını buldu. Hesaplanan kütle en az 3,5 M☉ çıktı; bu, nötron yıldızları için olası üst sınır olan yaklaşık 3 M☉'in üstündeydi. Hızlı parlaklık değişimleriyle birlikte bu, Cyg X-1'de bir kara deliğe işaret etti.",
+        "Cyg X-1'in hikâyesinin bir eğlenceli yanı da var. Wikipedia'ya göre kaynak 1964'te bir sonda roketinin taşıdığı X ışını aletleriyle bulundu. Stephen Hawking, fizikçi Kip Thorne ile Cyg X-1'in kara delik olmadığı üzerine bahse girdi; yazılı bahsin üzerindeki tanık notu 10 Aralık 1974 tarihini taşır. Gözlemler kara delik yorumunu güçlendirince Hawking 1990'da bahsi kaybettiğini kabul etti. Bugünkü ölçümler çok daha keskin: Miller-Jones ve arkadaşlarının 2021'de Science dergisinde yayımladığı radyo astrometrisi sonucuna göre sistem 2,22 kiloparsek (yaklaşık 7.240 ışık yılı) uzakta ve kara deliğin kütlesi 21,2 ± 2,2 M☉. Wikipedia sistemi yaklaşık 7.000 ışık yılı uzakta, yörüngeyi de 5,599829 günlük verir.",
+        "Kara deliğin eşini sen de görebilirsin. Görünen yıldız HDE 226868 adlı bir süperdevdir ve Kuğu takımyıldızında, Wikipedia'ya göre dördüncü kadirden Eta Cygni yıldızının yaklaşık yarım derece yakınındadır. Aradaki toz olmasaydı beşinci kadirden, yani çıplak gözle görülebilecek bir yıldız olurdu; ama toz ışığını yaklaşık 3,3 kadir azaltır. Kuğu'nun yaz gecelerinin takımyıldızı olduğunu d15'te Albireo için görmüştün. Dürbünle bulduğun o sönük nokta, her 5,6 günde bir 21 Güneş kütleli görünmez bir eşin çevresinde dolanıyor. Kara deliği görmezsin, ama onun dansını yapan yıldıza bakıyorsundur.",
         "Bugün ne biliyoruz? Bir derleme makalesine göre kütlesi yaklaşık yüzde 10 doğrulukla ölçülmüş birkaç düzine kara delik var; bunların kütleleri yaklaşık 4 ile 20 M☉ arasında, ortalaması yaklaşık 7 M☉. NASA'ya göre Samanyolu'nda yaklaşık 50 şüpheli ya da doğrulanmış yıldız kütleli kara delik biliniyor, ama galaksimizde 100 milyon kadar olabileceği tahmin ediliyor. Aradaki büyük fark, kara deliklerin çoğunu bulmanın ne kadar zor olduğunu gösterir. NASA iki tür daha anar: kütlesi yaklaşık yüz ile yüz binlerce M☉ arasında olması beklenen ara kütleli kara delikler (adaylar var ama doğrulamak zor) ve evrenin ilk saniyesinde oluşmuş olabilecek ilkel kara delikler (bugüne dek kesin kanıt bulunamadı)."
       ],
-      "akilda": "Yıldız kütleli kara delikler, çift sistemdeki eş yıldızın hareketinden tartılır; nötron yıldızı sınırını aşan görünmez kütle kara delik demektir. İlk güçlü örnek Cyg X-1'dir."
+      "akilda": "Yıldız kütleli kara delikler, çift sistemdeki eş yıldızın hareketinden tartılır; nötron yıldızı sınırını aşan görünmez kütle kara delik demektir. İlk güçlü örnek Cyg X-1'dir.",
+      "ornek": {
+        "baslik": "Örnek: Cyg X-1'in yıldızı dürbünde görünür mü?",
+        "metin": "1. adım: Tozsuz parlaklık beşinci kadir, yani 5,0 ile 5,9 arası. Toz 3,3 kadir sönükleştiriyor: 5,0 + 3,3 = 8,3 ile 5,9 + 3,3 = 9,2 arası. Yıldız yaklaşık 8 ile 9 kadir arasında görünür. 2. adım: d11'e göre 7×50 dürbün, göze göre yaklaşık 4,3 kadir kazanç sağlar. 3. adım: Çok karanlık gökte çıplak göz sınırı yaklaşık +6,5 (d1); dürbünle sınır kabaca 6,5 + 4,3 ≈ 10,8. Yıldız bunun rahatça içinde. 4. adım: Banliyö göğünde çıplak göz sınırı yaklaşık +4 (d1); dürbünle kabaca 4 + 4,3 ≈ 8,3. Yıldız bu sınırın tam kıyısında ya da biraz dışında kalır. Sonuç: HDE 226868 karanlık bir gökte 7×50 ile görülebilecek parlaklıkta; ışık kirli bir İstanbul semtinde ise sınırda kalır, şehir dışında denemek daha iyi."
+      }
+    },
+    {
+      "baslik": "Uyuyan kara delikler ve kayıp ara kütleliler",
+      "paragraflar": [
+        "Cyg X-1 gibi sistemler X ışınıyla parlar, çünkü kara delik eşinden gaz çeker. Peki eşi uzakta duran, hiçbir şey yemeyen bir kara delik nasıl bulunur? Yanıt d15'teki astrometrik çiftlerde: görünür yıldızın gökteki yolunun yalpalamasından. ESA'nın 16 Nisan 2024 tarihli duyurusuna göre Gaia uydusu bu yolla Kartal takımyıldızında, 1.926 ışık yılı uzakta, yaklaşık 33 Güneş kütleli bir kara delik buldu: Gaia BH3. Eşi, Büyük Patlama'dan sonraki ilk iki milyar yılda doğmuş, hidrojen ve helyumdan ağır elementçe çok fakir yaşlı bir dev yıldızdır ve kara deliğin çevresinde, Güneş–Dünya uzaklığının yaklaşık 16 katı uzaklıkta dolanır. Yakınında beslenebileceği gaz olmadığı için kara delik ışık yaymaz; bu yüzden ona uyuyan kara delik denir.",
+        "Gaia BH3, Gaia'nın bulduğu üçüncü uyuyan kara deliktir; ESA'ya göre Samanyolu'nda bu büyüklükte yıldız kökenli bir kara delik ilk kez görüldü. Karşılaştırma için ESA, Cyg X-1'in yaklaşık 20, Samanyolu'nda bilinen yıldız kütleli kara deliklerin ortalamasının ise yaklaşık 10 Güneş kütlesi olduğunu belirtir; önceki bölümdeki X ışını çiftleri derlemesinde bu ortalama yaklaşık 7'ydi, çünkü iki kaynak farklı örneklemlere bakıyor. NASA'nın tahmin ettiği 100 milyon kara deliğin büyük bölümü büyük olasılıkla böyle sessizdir; onları bulmak için en iyi araç, milyarlarca yıldızın konumunu yıllarca ölçen Gaia gibi taramalardır. Eşin ağır elementçe fakir olması da bir ipucu verir. ESA'ya göre bu, Gaia BH3'e dönüşen büyük yıldızın da ağır elementçe çok fakir olabileceğine işaret ediyor ve yüksek kütleli kara deliklerin ağır elementçe fakir ilkel büyük yıldızların çöküşünden doğduğu kuramını destekliyor. Destek kanıt demek değildir; kuram hâlâ sınanıyor. Keşif o kadar sıra dışıydı ki ekip, Gaia'nın dördüncü veri yayınını beklemeden duyurdu.",
+        "Yıldız kütleli kara deliklerle süper kütleliler arasında büyük bir boşluk var: yüzlerce ile yüz binlerce Güneş kütlesi. NASA bu aralıktaki ara kütleli kara deliklerin adaylarının bulunduğunu ama doğrulanmalarının zor olduğunu söyler. Kütleçekim dalgaları burada bir kapı araladı. Wikipedia'ya göre 21 Mayıs 2019'da yakalanan ve 2 Eylül 2020'de duyurulan GW190521 olayında 85 ve 66 Güneş kütleli iki kara delik birleşti ve 142 Güneş kütleli bir kara delik oluştu; kalan yaklaşık 8 Güneş kütlesi kütleçekim dalgası olarak yayıldı. Ortaya çıkan cisim, ara kütleli bir kara deliğin ilk açık gözlemi sayılıyor.",
+        "GW190521'in bir bilmecesi de var. Wikipedia'ya göre yıldız evrimi kuramı, bir yıldızın çöküp yaklaşık 65 Güneş kütlesinden ağır bir kara delik oluşturamayacağını öngörür; buna kütle boşluğu denir. Oysa birleşen iki kara deliğin kütlesi de bu boşluğun içine düşüyor. Bu kara deliklerin bir yıldızın çöküşünden mi, yoksa daha önceki birleşmelerden mi doğduğu henüz bilinmiyor. Bu ders yazılırken de tartışma sürüyordu; dürüst yanıt “bilmiyoruz”."
+      ],
+      "akilda": "Eşinden gaz çekmeyen kara delikler ışık yaymaz; Gaia BH3 (33 M☉, 1.926 ışık yılı) gibi uyuyan kara delikler eş yıldızın yalpalamasından bulunur. GW190521'de 85 ve 66 M☉'lik kara delikler birleşip 142 M☉'lik ara kütleli bir kara delik oluşturdu; bu kütlelerin kökeni açık bir soru."
     },
     {
       "baslik": "Galaksimizin kalbi: Sgr A*",
       "paragraflar": [
         "Gökbilimciler 1970'lerden beri Yay takımyıldızı yönünde, galaksimizin merkezinde bir radyo kaynağı olduğunu biliyordu: Sagittarius A*, kısaca Sgr A*. ESO'ya göre yaklaşık 27.000 ışık yılı uzaklıktadır. Yay takımyıldızına baktığında aslında galaksimizin merkezi yönüne bakıyorsun; ama merkezdeki kara deliği hiçbir dürbün ya da amatör teleskop gösteremez, çünkü kara deliğin kendisi ışık yaymaz. Onu tanımanın yolu, çevresindeki yıldızların hareketidir.",
+        "Radyo kaynağı Wikipedia'ya göre 1974'te Bruce Balick ve Robert Brown tarafından bulundu; Sgr A* adını Brown 1982'de koydu. Bugünkü en iyi kütle tahmini 4,297 ± 0,012 milyon Güneş kütlesi, uzaklık yaklaşık 8.277 parsek, yani yaklaşık 27.000 ışık yılı. Görünür ışıkta merkezi neden göremediğimizin de sayısal bir yanıtı var: aradaki toz ve gaz, görünür ışığı yaklaşık 25 kadir sönükleştirir. 25 kadir, 10 üssü 10 kat demektir; yani merkezden yola çıkan her on milyar fotondan yalnızca biri bize ulaşır. Bu yüzden merkezi kızılötesi ve radyo dalgalarıyla inceliyoruz. Sgr A* kütlesine göre çok az madde yuttuğu için de sönüktür; yine de zaman zaman parlar: NASA 2015'te normalden 400 kat parlak bir X ışını patlaması bildirdi.",
         "1990'ların başından itibaren Reinhard Genzel ile Andrea Ghez'in yönettiği iki ekip, merkeze en yakın yıldızların hareketini yıllarca izledi. Yıldızlar, görünmeyen tek bir noktanın çevresinde, Kepler yasalarına uyan elips yörüngelerde dönüyordu. Bu yörüngelerden çıkan sonuç: güneş sistemimizden büyük olmayan bir bölgeye yaklaşık dört milyon Güneş kütlesi sığmış. Bunu açıklayabilecek tek makul cisim süper kütleli bir kara deliktir. Genzel ve Ghez, galaksimizin merkezindeki süper kütleli tıkız cismi keşfettikleri için 2020 Nobel Fizik Ödülü'nün diğer yarısını paylaştı.",
-        "Yıldızların en ünlüsü S2'dir. GRAVITY ekibinin 2018 makalesine göre S2 çok basık bir elips üzerinde 16 yılda bir tur atar. Mayıs 2018'de merkeze en yakın noktasından geçti: yaklaşık 120 astronomik birim (AB) uzaklıktan, yani yaklaşık 1400 Schwarzschild yarıçapı ötesinden, saniyede yaklaşık 7.650 km hızla. Ekip bu geçişte, genel göreliliğin öngördüğü kütleçekimsel kızıla kaymayı, yıldızın yüksek hızından gelen göreli bir Doppler etkisiyle birlikte saptadı: yıldızın ışığı, kara deliğin kütleçekimi yüzünden kırmızıya kaymıştı. Bir kara deliğin çevresinde Einstein'ın kuramı bir kez daha sınavı geçti."
+        "Yıldızların en ünlüsü S2'dir. GRAVITY ekibinin 2018 makalesine göre S2 çok basık bir elips üzerinde 16 yılda bir tur atar. Mayıs 2018'de merkeze en yakın noktasından geçti: yaklaşık 120 astronomik birim (AB) uzaklıktan, yani yaklaşık 1400 Schwarzschild yarıçapı ötesinden, saniyede yaklaşık 7.650 km hızla. Ekip bu geçişte, genel göreliliğin öngördüğü kütleçekimsel kızıla kaymayı, yıldızın yüksek hızından gelen göreli bir Doppler etkisiyle birlikte saptadı: yıldızın ışığı, kara deliğin kütleçekimi yüzünden kırmızıya kaymıştı. Bir kara deliğin çevresinde Einstein'ın kuramı bir kez daha sınavı geçti.",
+        "S2 bir sınav daha verdi. Universe Today'in aktardığına göre GRAVITY ekibi Nisan 2020'de, 27 yılı aşkın gözlem ve 330'dan fazla konum ve hız ölçümüyle S2'nin yörüngesinin kapanmadığını gösterdi: yıldızın merkeze en yakın noktası her turda biraz döner ve yörünge bir elips yerine bir gül deseni çizer. Buna Schwarzschild presesyonu denir. Ekibin makalesine göre dönme her yörüngede yaklaşık 12 yay dakikasıdır ve ölçüm, Newton'un kuramı yerine genel göreliliğin öngörüsüyle tam uyumludur. Merkür'ün yörüngesindeki benzer bir kayma, genel göreliliğin ilk kanıtlarından biriydi; şimdi aynı etki bir kara deliğin çevresinde ölçüldü. Bu sayıyla oyna: 360 derece 21.600 yay dakikasıdır; 12'şer dakikayla tam bir tur için 1.800 yörünge, yani 16 yıllık turlarla yaklaşık 28.800 yıl gerekir."
       ],
       "ornek": {
         "baslik": "Örnek: Sgr A*'ın olay ufku ne büyüklükte?",
@@ -67,6 +99,7 @@
       "paragraflar": [
         "Kara deliğin kendisi karanlıktır, fotoğrafı çekilemez. Ama çevresinde dönen sıcak gaz parlar ve kara deliğin kütleçekimi bu ışığı büker. Sonuçta parlak bir halkanın ortasında karanlık bir bölge, bir gölge görülür. Sorun boyuttur: en büyük kara delikler bile çok uzaktadır ve gökte çok küçük görünür. ESO'nun benzetmesiyle Sgr A*'ın gökteki boyutu, Ay'ın üstüne konmuş bir simit kadardır. d12'de bir teleskobun ayırma gücünün açıklığıyla arttığını görmüştün. Bu kadar küçük bir şeyi seçmek için Dünya büyüklüğünde bir teleskop gerekir.",
         "Olay Ufku Teleskobu (EHT) tam olarak bunu yaptı. Dünya'nın farklı yerlerindeki sekiz radyo gözlemevi aynı anda aynı hedefe bakıp verilerini birleştirerek Dünya büyüklüğünde sanal bir teleskop oluşturdu. Bu tekniğe interferometri denir. Gözlemler 2017'de, 1,3 mm dalga boyunda yapıldı. 10 Nisan 2019'da 200'den fazla araştırmacıdan oluşan ekip ilk kara delik görüntüsünü yayımladı. Hedef, Başak galaksi kümesindeki dev M87 galaksisinin merkeziydi: 55 milyon ışık yılı uzaklıkta, kütlesi Güneş'in 6,5 milyar katı olan bir kara delik. Görüntüde karanlık merkezli bir halka vardı ve ESO'ya göre ayrıntılar kuramsal beklentiyle şaşırtıcı ölçüde uyuşuyordu.",
+        "Görüntü yalnızca güzel bir resim değil, bir tartı da. ESO'ya göre olay ufkunun boyutu kütleyle orantılı olduğu için kara delik ne kadar kütleliyse gölgesi de o kadar büyüktür. Uzaklığı bilinen bir kara deliğin gölgesini ölçmek, onun kütlesini ölçmek demektir. M87 için bu önemliydi, çünkü önceki yöntemler birbirini tutmuyordu: Wikipedia'ya göre daha önceki tahminler 3,5 ± 0,8 milyar ile 6,6 ± 0,4 milyar Güneş kütlesi arasında değişiyordu, 2016'daki bir tahmin ise yaklaşık 7,2 milyar veriyordu. EHT'nin Nisan 2019'da açıkladığı değer 6,5 milyar Güneş kütlesi oldu; istatistiksel belirsizlik ± 0,2, sistematik belirsizlik ± 0,7 milyar. Yani gölge, tartışmalı bir sayıya bağımsız bir yoldan yanıt verdi; ama o da hata payı olan bir ölçümdür.",
         "Kendi kara deliğimizin görüntüsü 12 Mayıs 2022'de geldi; 80 kurumdan 300'ü aşkın araştırmacı çalıştı. Daha yakın olmasına rağmen daha zordu. ESO'nun açıklamasına göre M87'deki gaz kara deliğin çevresini günlerle haftalar arasında dolaşırken, çok daha küçük Sgr A*'ın çevresinde bir turu dakikalar içinde tamamlar; yani gözlem sırasında görüntü sürekli değişir. İki görüntü birbirine çok benzer, oysa Samanyolu'nun kara deliği M87'dekinden bin kattan fazla küçük ve hafiftir. Halkanın boyutu Einstein'ın genel göreliliğinin öngörüsüyle uyumludur."
       ],
       "ornek": {
@@ -76,11 +109,25 @@
       "akilda": "EHT, sekiz radyo gözlemevini birleştirip Dünya boyunda sanal bir teleskop kurdu; 2019'da M87'nin, 2022'de Sgr A*'ın gölge görüntüsünü yayımladı. İkisi de genel göreliliğin öngörüsüyle uyumlu."
     },
     {
+      "baslik": "Bu kadar küçük bir şeyi nasıl görüyoruz?",
+      "paragraflar": [
+        "d12'de bir teleskobun ayırabileceği en küçük açının, gözlenen dalga boyunun açıklığa bölümüyle orantılı olduğunu görmüştün: büyük ayna, kısa dalga boyu, keskin görüntü. EHT'nin numarası, açıklık yerine teleskoplar arasındaki uzaklığı kullanmaktır. ESO'ya göre EHT bu yolla yaklaşık 20 mikro yay saniyesi ayırma gücüne ulaşır; ESO bunu Paris'teki bir kafeden New York'ta bir gazeteyi okumaya benzetir. Bir mikro yay saniyesi, bir yay saniyesinin milyonda biridir. Karşılaştırma: Hubble'ın görünür ışıktaki ayırma gücü yaklaşık 0,05 yay saniyesidir (d12); EHT bundan yaklaşık 2.500 kat keskindir.",
+        "İşin mühendislik yanı da etkileyici. ESO'ya göre 2017 kampanyasında ALMA, APEX, IRAM 30 metre, James Clerk Maxwell, Alfonso Serrano Büyük Milimetre Teleskobu, Milimetre Altı Dizisi, Milimetre Altı Teleskobu ve Güney Kutbu Teleskobu birlikte çalıştı. Teleskoplar birbirine kabloyla bağlı değildi; zamanlarını hidrojen maser atom saatleriyle eşlediler. Her teleskop günde yaklaşık 350 terabayt veri üretti; veriler helyum dolu sabit disklere kaydedilip Max Planck Radyo Astronomi Enstitüsü ve MIT Haystack Gözlemevi'ndeki özel süper bilgisayarlara taşındı ve orada birleştirildi. Yani bu görüntü, internetle değil kargoyla taşınan petabaytlarca veriden çıktı.",
+        "Sonuç neden 20 mikro yay saniyesinin hemen üstünde? Çünkü gölgeler bu kadar küçük. Aşağıdaki hesap, M87'nin gölgesinin gökte yaklaşık 40, Sgr A*'ınkinin yaklaşık 53 mikro yay saniyesi olduğunu gösterir; ikisi de EHT'nin ayırma gücünün ancak iki üç katı. Dikkat et: Sgr A* yaklaşık 1.500 kat hafif olduğu hâlde gökte M87'nin gölgesinden biraz daha büyük görünür, çünkü yaklaşık 2.000 kat daha yakındır. Görüntülerdeki halkanın bulanık görünmesi bu yüzdendir: halka, aletin seçebileceği en küçük ayrıntının yalnızca iki üç katı büyüklüğündedir. Bu görüntüler ayrıntılı bir fotoğraf değil, kuramın sınandığı bir ölçümdür."
+      ],
+      "ornek": {
+        "baslik": "Örnek: EHT'nin ayırma gücü ve gölgelerin gökteki boyutu",
+        "metin": "1. adım: Ayırma gücü ≈ dalga boyu ÷ teleskoplar arası uzaklık. Dalga boyu 1,3 mm = 1,3 × 10⁻³ m; en büyük uzaklık kabaca Dünya'nın çapı, 2 × 6.378 km ≈ 1,28 × 10⁷ m. Oran ≈ 1,02 × 10⁻¹⁰ radyan. Bir radyan 206.265 yay saniyesi olduğundan ≈ 2,1 × 10⁻⁵ yay saniyesi, yani yaklaşık 21 mikro yay saniyesi; ESO'nun verdiği 20 ile uyumlu. 2. adım (M87): Rs ≈ 1,92 × 10¹⁰ km; gölgenin çapı ≈ 2 × Rs × 2,6 ≈ 9,98 × 10¹⁰ km. Uzaklık 55 milyon ışık yılı ≈ 5,2 × 10²⁰ km. Açı ≈ 9,98 × 10¹⁰ ÷ 5,2 × 10²⁰ ≈ 1,92 × 10⁻¹⁰ radyan ≈ 40 mikro yay saniyesi. 3. adım (Sgr A*): Rs ≈ 1,27 × 10⁷ km; gölge çapı ≈ 6,6 × 10⁷ km; uzaklık 26.996 ışık yılı ≈ 2,55 × 10¹⁷ km; açı ≈ 53 mikro yay saniyesi. Sonuç: iki gölge de 40–53 mikro yay saniyesi; EHT'nin 20'lik keskinliği onları ancak seçebilir."
+      },
+      "akilda": "EHT, Dünya ölçeğinde birbirinden uzak radyo teleskoplarıyla yaklaşık 20 mikro yay saniyesi keskinliğe ulaşır. M87 ve Sgr A* gölgeleri gökte yalnızca 40–53 mikro yay saniyesidir; halkaların bulanık görünmesi bu yüzdendir."
+    },
+    {
       "baslik": "Kütleçekim dalgaları: uzay-zamanın titreşimi",
       "paragraflar": [
         "Durgun bir göle taş atınca halkalar yayılır. Genel göreliliğe göre kütleli cisimler hızla hareket ettiğinde uzay-zamanın kendisinde de dalgalar yayılır; bunlara kütleçekim dalgaları denir. Albert Einstein bu dalgaların varlığını 1916'da öngördü. Bir dalga geçerken uzay bir yönde biraz uzar, ona dik yönde biraz kısalır, sonra tersi olur. Benzetmenin sınırı şu: göl dalgası suyun içinde ilerler, kütleçekim dalgası ise içinde her şeyin bulunduğu uzayın kendisini esnetir ve ışık hızında yol alır.",
         "Etki inanılmaz küçüktür. İlk dolaylı kanıt bir çift atarcadan geldi. Hulse ve Taylor bu sistemi 1974'te buldu; 1979'da sistemde kütleçekim ışımasının etkilerinin saptandığı duyuruldu: yörüngedeki değişim, genel göreliliğin kütleçekim dalgalarıyla enerji kaybından beklediği gibiydi. Bu gözlem dalgaları doğrudan yakalamadı ama varlıklarına güçlü biçimde işaret etti. Hulse ve Taylor bu gözlem için 1993 Nobel Fizik Ödülü'nü aldı. Ama dalgayı doğrudan yakalamak için başka bir araç gerekiyordu.",
-        "O araç LIGO'dur. ABD'de biri Washington eyaletinin Hanford'unda, öbürü Louisiana'nın Livingston'ında iki gözlemevi vardır. Her biri L biçimli, kolları 4 km uzunluğunda bir lazer interferometresidir. Lazer ışığı ikiye bölünür, iki kolda gidip gelir ve yeniden birleşir. Bir kütleçekim dalgası geçince bir kol biraz uzar, öbürü biraz kısalır ve birleşen ışığın deseni değişir. Kollardaki değişim protonun çapının on binde birinden, yaklaşık 10⁻¹⁹ metreden küçük olsa bile ölçülebilir. İki gözlemevi birbirinden yaklaşık 1.865 mil, yani yaklaşık 3.000 km uzaktadır. Avrupa'nın Virgo dedektörü İtalya'da, Pisa yakınındaki Cascina ovasındadır."
+        "O araç LIGO'dur. ABD'de biri Washington eyaletinin Hanford'unda, öbürü Louisiana'nın Livingston'ında iki gözlemevi vardır. Her biri L biçimli, kolları 4 km uzunluğunda bir lazer interferometresidir. Lazer ışığı ikiye bölünür, iki kolda gidip gelir ve yeniden birleşir. Bir kütleçekim dalgası geçince bir kol biraz uzar, öbürü biraz kısalır ve birleşen ışığın deseni değişir. Kollardaki değişim protonun çapının on binde birinden, yaklaşık 10⁻¹⁹ metreden küçük olsa bile ölçülebilir. İki gözlemevi birbirinden yaklaşık 1.865 mil, yani yaklaşık 3.000 km uzaktadır. Avrupa'nın Virgo dedektörü İtalya'da, Pisa yakınındaki Cascina ovasındadır.",
+        "Dedektör yalnızca bir uzama ölçmez, uzamanın zaman içindeki ritmini de kaydeder. İki kara delik birbirinin çevresinde döndükçe dalga yayar, enerji kaybeder ve birbirine yaklaşır; yaklaştıkça daha hızlı döner. Bu yüzden sinyalin frekansı, yani saniyedeki titreşim sayısı, birleşmeye doğru yükselir. LIGO'nun GW150914 makalesine göre sinyalin frekansı 35 hertzden 250 hertze tırmandı. Bir hertz saniyede bir titreşim demektir. Sinyalin biçimi, yani frekansın ne hızla yükseldiği ve en sonda nasıl söndüğü, kaynaktaki kütleleri ve dönmeleri ele verir. Kütleleri okumak için kara delikleri görmeye gerek yoktur; ritimleri yeter. Yükselen frekansla şiddetlenen ve birden kesilen bu titreşim, birleşmenin parmak izidir."
       ],
       "ornek": {
         "baslik": "Örnek: Bir kütleçekim dalgası LIGO'nun kolunu ne kadar oynatır?",
@@ -92,6 +139,7 @@
       "baslik": "GW150914: iki kara deliğin son dansı",
       "paragraflar": [
         "14 Eylül 2015'te iki LIGO dedektörü aynı sinyali yaklaşık yedi milisaniye arayla kaydetti. Sinyal yaklaşık 0,2 saniye sürdü. Olaya tarihinin kısaltmasıyla GW150914 adı verildi ve 11 Şubat 2016'da duyuruldu. Nobel Komitesi'nin ifadesiyle evrenden gelen kütleçekim dalgaları o gün ilk kez gözlendi.",
+        "Bunun gürültü olmadığını nereden biliyoruz? LIGO'nun makalesine göre sinyalin en büyük genliği 1,0 × 10⁻²¹, sinyal-gürültü oranı 24'tü ve anlamlılığı 5,1 sigmanın üstündeydi. Sinyal-gürültü oranı, sinyalin dedektördeki rastgele titreşimlerden ne kadar güçlü olduğunu söyler. İki dedektörün birbirinden 3.000 km uzakta olması da önemlidir: yerel bir sarsıntı, örneğin geçen bir kamyon, ikisini aynı biçimde sallamaz. Aynı biçimli sinyalin iki yerde, ışığın aradaki yolu almasına yetecek kısa bir arayla görülmesi, kaynağın uzayda olduğunu gösterir. Bu arayla kaynağın gökteki yönü de kabaca bulunur.",
         "Sinyalin biçiminden kaynağın ne olduğu okunabildi: kütleleri yaklaşık 36 ve 29 M☉ olan iki kara delik birbirinin çevresinde dönmüş ve sonunda birleşip yaklaşık 62 M☉'lik tek bir kara delik oluşturmuştu. Kaynak yaklaşık 410 megaparsek, yani yaklaşık 1,3 milyar ışık yılı uzaktaydı. Nobel Komitesi'nin ifadesiyle dalgaların Dünya'ya ulaşması 1,3 milyar yıl sürdü. Bu kara delikler, X ışını çiftlerinde ölçülen yaklaşık 4 ile 20 M☉ aralığının üstündeydi; yani evrende X ışını çiftlerinden tanıdıklarımızdan daha ağır yıldız kütleli kara delikler de var.",
         "Hesap tutmuyor gibi: 36 + 29 = 65, ama sonuç 62. Eksik 3 Güneş kütlesi kütleçekim dalgası enerjisine dönüştü. Caltech'in açıklamasına göre dalgalar üç Güneş'in yok edilmesiyle açığa çıkacak kadar enerji taşıdı. Bu buluş için 2017 Nobel Fizik Ödülü'nün yarısı Rainer Weiss'a, diğer yarısı Barry Barish ile Kip Thorne'a verildi. Nobel Komitesi, LIGO'nun 20'den fazla ülkeden binden fazla araştırmacının ortak işi olduğunu vurguladı."
       ],
@@ -113,6 +161,53 @@
         "metin": "Yolculuk süresi: 130 milyon yıl = 1,3×10⁸ yıl. Bir yıl ≈ 365,25 gün × 86.400 saniye ≈ 3,16×10⁷ saniye. Toplam: 1,3×10⁸ × 3,16×10⁷ ≈ 4,1×10¹⁵ saniye. Gecikme: yaklaşık 2 saniye. Oran: 2 ÷ 4,1×10¹⁵ ≈ 5×10⁻¹⁶. Bu oran, iki saniyenin tamamını yolda biriken bir hız farkına yazarsan çıkar; yani kütleçekim dalgalarının ışıktan en fazla ne kadar hızlı olabileceğini kabaca söyler. Yayımlanmış ortak çözümleme daha temkinli bir uzaklık (26 megaparsek) kullandı ve gama ışınlarının dalgadan 10 saniyeye kadar geç yayılmış olabileceğini de hesaba kattı; sonuçta iki hız arasındaki farkın ışık hızının −3×10⁻¹⁵ ile +7×10⁻¹⁶ katı arasında olduğunu buldu. Sonuç: kaba hesabımız (≈5×10⁻¹⁶) yayımlanan üst sınırla aynı mertebede; kütleçekim dalgaları, ölçülebildiği kadarıyla ışıkla aynı hızda yol alır."
       },
       "akilda": "GW170817 (17 Ağustos 2017), iki nötron yıldızının birleşmesiydi ve hem kütleçekim dalgasıyla hem ışıkla gözlenen ilk olay oldu. İki sinyalin 130 milyon yıllık yolun sonunda yaklaşık iki saniye arayla gelmesi, kütleçekim dalgalarının ölçülebildiği kadarıyla ışıkla aynı hızda yayıldığını gösterir."
+    },
+    {
+      "baslik": "On yılda yüzlerce birleşme",
+      "paragraflar": [
+        "GW150914 bir başlangıçtı. LIGO'ya göre ilk üç gözlem döneminde toplam 90 olay yakalandı; dördüncü dönemde ise yaklaşık 220 birleşme saptandı. LIGO, Virgo ve KAGRA ortaklığı Ağustos 2025'te dördüncü dönemin ilk kısmının (Mayıs 2023–Ocak 2024) kataloğunu yayımladı: GWTC-4.0 ile 128 yeni aday eklendi ve katalogdaki toplam aday sayısı 218'e çıktı. Bu kısımda yalnız iki LIGO dedektörü gözlem yapıyordu; KAGRA başta kısa bir süre veri aldı ama kataloğa katkı verecek duyarlılıkta değildi. Yeni olaylar arasında toplam kütlesi 150 Güneş kütlesini aşan birleşmeler ve bir kara deliğin bir nötron yıldızıyla birleştiği düşünülen iki sinyal de var.",
+        "Duyarlılık nasıl bu kadar arttı? LIGO'ya göre on yıllık teknolojik gelişmeler dedektörlerdeki gürültüyü büyük ölçüde azalttı. En çarpıcı kanıt GW250114. Wikipedia'ya göre 14 Ocak 2025'te yakalanan bu sinyalde 33,6 ve 32,2 Güneş kütleli iki kara delik birleşip 62,7 Güneş kütleli bir kara delik oluşturdu. Yani kütleler ve uzaklık neredeyse GW150914'ünkiler kadar; LIGO ikisini de yaklaşık 1,3 milyar ışık yılı uzakta verir, Wikipedia GW250114 için yaklaşık 1,14 milyar ışık yılı der. Fark sinyalin netliğinde: sinyal-gürültü oranı yaklaşık 80. Aynı türden bir olay, on yılda yaklaşık üç kat daha net duyulur oldu.",
+        "Bu netlik, Stephen Hawking'in bir öngörüsünü sınamaya yetti. Hawking'in alan teoremine göre kara deliklerin olay ufkunun toplam yüzey alanı hiçbir zaman küçülmez. Wikipedia'ya göre GW250114'te birleşmeden önceki iki kara deliğin toplam ufuk alanı yaklaşık 240.000 km², sonraki tek kara deliğinki ise yaklaşık 400.000 km² çıktı: alan arttı, kütle ise azaldı. Ayrıca birleşmenin hemen ardından yeni kara deliğin bir çan gibi “çınlayıp” durulması incelendi ve dönen kara delik çözümünün öngördüğü ikincil bir titreşim tonu 4,1 sigma anlamlılıkla saptandı. Wikipedia'ya göre sinyal, kara deliklerin genel görelilikle doğru betimlendiğine dair güçlü bir kanıt sunuyor."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Alan teoremini kendin sına",
+        "metin": "Bir kürenin yüzey alanı 4 × π × r²'dir. Dönmeyen bir kara delik için r = Rs ≈ 2,953 km × (M/M☉). 1. adım (33,6 M☉): Rs ≈ 99,2 km; alan ≈ 4 × 3,1416 × 99,2² ≈ 123.700 km². 2. adım (32,2 M☉): Rs ≈ 95,1 km; alan ≈ 113.600 km². Toplam ≈ 237.300 km²; Wikipedia'nın yaklaşık 240.000 km²'siyle uyumlu. 3. adım (62,7 M☉, dönmediğini varsayarak): Rs ≈ 185,2 km; alan ≈ 430.900 km². Wikipedia'nın değeri yaklaşık 400.000 km². Fark, formülümüzün yalnızca dönmeyen kara delik için olmasından gelir; birleşmeden doğan kara delikler döner (GW150914'te son kara deliğin boyutsuz dönmesi 0,67 ölçülmüştü), bu yüzden 3. adım kabadır. 4. adım: Kütle: 33,6 + 32,2 = 65,8, sonuç 62,7; yaklaşık 3,1 Güneş kütlesi dalgaya gitti. Sonuç: kütle yaklaşık yüzde 5 azalırken ufuk alanı yaklaşık 240.000'den 400.000 km²'ye, yani yaklaşık yüzde 67 arttı."
+      },
+      "akilda": "Dördüncü gözlem döneminde yaklaşık 220 birleşme yakalandı; GWTC-4.0 ile katalogdaki aday sayısı 218'e çıktı. GW150914'e çok benzeyen GW250114, on yılda gelişen dedektörlerle yaklaşık 80 sinyal-gürültü oranıyla duyuldu ve Hawking'in alan teoremini doğruladı."
+    },
+    {
+      "baslik": "Yeni kulaklar: uzayda LISA, galakside atarcalar",
+      "paragraflar": [
+        "LIGO saniyede onlarca ile yüzlerce titreşimlik dalgaları duyar; bu, yıldız kütleli kara deliklerin ve nötron yıldızlarının son saniyelerine uygundur. Daha kütleli kara delik çiftleri ise, aşağıda göreceğin gibi, çok daha uzun dalgalarla ilişkilendirilir ve bunları duymak için çok daha büyük dedektörler kurulur. ESA, Ocak 2024'te LISA görevini onayladı. Portsmouth Üniversitesi'nin duyurusuna göre LISA tek bir uydu değil, üç uydudan oluşan bir takımdır; uydular Dünya'yı Güneş çevresindeki yolunda izleyerek kenarları 2,5 milyon km olan bir eşkenar üçgen oluşturacak. Bu, Dünya–Ay uzaklığının altı katından fazladır. Fırlatma Ariane 6 roketiyle 2035'te planlanıyor; LISA'nın binlerce ile milyonlarca Güneş kütleli kara deliklerin birleşmelerini izlemesi bekleniyor.",
+        "Daha da yavaş dalgalar için gökbilimciler galaksinin kendisini dedektöre çevirdi. d6'da gördüğün atarcalar, yani pulsarlar, çok düzenli aralıklarla radyo atımı gönderen dönen nötron yıldızlarıdır; birer kozmik saat gibidirler. Bize ulaşan bir kütleçekim dalgası Dünya ile atarca arasındaki uzaklığı çok az değiştirirse, atımların varış zamanları da çok az kayar. Tek bir atarcada bu kayma başka etkilerden ayırt edilemez, ama gökte farklı yerlerdeki pek çok atarcanın kaymaları belirli bir düzenle birbirine bağlıysa bu, dalganın imzasıdır. Bu yöntemin adı atarca zamanlama dizisidir.",
+        "NANOGrav ekibi Haziran 2023'te 15 yıllık verisini yayımladı. Makalenin özetine göre 67 atarcanın varış zamanlarında beklenen düzende birbirine bağlı kaymalar bulundu; anlamlılık kullanılan sınamaya göre yaklaşık 3 ile 4 sigma. GW150914'ün 5,1 sigmasıyla karşılaştır: ekip de sonucu kesin bir keşif olarak değil, bir kütleçekim dalgası arka planının “kanıtı” olarak sunuyor. Sinyal, birbirinin çevresinde dolanan süper kütleli kara delik çiftlerinden oluşan bir topluluğun beklenen katkısıyla uyumlu; ama özet, daha sıra dışı kozmolojik ya da astrofiziksel kaynakların dışlanamadığını da açıkça yazıyor. Yani evren, dev kara delik çiftlerinin yavaş ve derin uğultusuyla dolu olabilir; kesin yanıt için daha uzun veri gerekiyor."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Kütleçekim dalgalarının dalga boyu",
+        "metin": "Kütleçekim dalgaları ışık hızında gider, bu yüzden dalga boyu = ışık hızı ÷ frekans. Işık hızı ≈ 299.792 km/s. 1. adım (GW150914'ün başı, 35 Hz): 299.792 ÷ 35 ≈ 8.565 km. 2. adım (sonu, 250 Hz): 299.792 ÷ 250 ≈ 1.199 km. Yani LIGO'nun duyduğu dalgaların boyu bin ile on bin km arası; Dünya'nın çapıyla aynı mertebede. 3. adım (NANOGrav'ın referans frekansı, yılda bir titreşim): dalga boyu = ışık hızı × 1 yıl = 1 ışık yılı ≈ 9,46 × 10¹² km. 4. adım: Oran: 9,46 × 10¹² ÷ 1.199 ≈ 7,9 × 10⁹. Sonuç: atarca dizilerinin aradığı dalgalar LIGO'nunkilerden yaklaşık 8 milyar kat uzun; bu yüzden onları yakalamak için dedektörün kolları ışık yılları uzunluğunda olmalı ve galaksideki atarcalar bu işi görür."
+      },
+      "akilda": "Farklı kaynaklar farklı frekanslarda dalga üretir: LIGO yıldız kütleli birleşmeleri, 2035'te fırlatılacak LISA (2,5 milyon km'lik üçgen) dev kara delikleri, atarca zamanlama dizileri ise ışık yılı boyundaki dalgaları dinler. NANOGrav 2023'te 67 atarcayla bir kütleçekim dalgası arka planına 3–4 sigmalık kanıt buldu."
+    },
+    {
+      "baslik": "Kara delikler sonsuza dek yaşar mı?",
+      "paragraflar": [
+        "Buraya kadar kara deliğin hiçbir şey yaymadığını söyledik. Kuantum fiziği bu tabloya bir dipnot ekler. Stephen Hawking 1974'te, kuantum etkileri hesaba katılınca bir kara deliğin çok zayıf bir ısıl ışınım yayması gerektiğini gösteren bir model geliştirdi; buna Hawking ışıması denir. Wikipedia'ya göre bu ışınımın sıcaklığı kara deliğin kütlesiyle ters orantılıdır: kara delik ne kadar kütleliyse o kadar soğuktur. Kuramsal olarak en küçük yıldız kökenli kara delik, yaklaşık 3 Güneş kütlesi, yaklaşık 10⁻⁷ kelvin sıcaklığındadır. Dünya kütlesinde bir kara delik olsaydı sıcaklığı 10⁻¹² kelvin olurdu.",
+        "Bu sıcaklıklar çok düşüktür. Evren, sıcaklığı 2,7 kelvin olan kozmik mikrodalga arka planla (d8) doludur. Wikipedia'ya göre bu yüzden hiçbir yıldız kökenli kara delik bugün buharlaşamaz: çevrelerindeki uzaydan daha soğukturlar, yani yaydıklarından fazlasını soğururlar. Bir Güneş kütleli kara deliğin Hawking ışımasıyla buharlaşması 10⁶⁷ yıldan uzun sürer; karşılaştırma için evrenin yaşı yaklaşık 1,4 × 10¹⁰ yıldır.",
+        "Dürüst olalım: Hawking ışıması hiç gözlenmedi. Wikipedia'ya göre çok zayıftır ve küçük kara deliklerin sonunda patlarcasına buharlaşmasından beklenen ışınım patlamaları da henüz saptanmadı. Laboratuvarda “ses kara delikleri” gibi benzetme düzenekleriyle yapılan deneyler var, ama sonuçları tartışmalı. Yani Hawking ışıması, kuramsal olarak çok saygın ama gözlemle henüz doğrulanmamış bir öngörüdür. Kara deliklerin sonsuza dek yaşayıp yaşamadığı sorusunun bugünkü yanıtı şu: kuram hayır diyor, gözlem henüz bir şey demiyor."
+      ],
+      "akilda": "Hawking 1974'te kara deliklerin kuantum etkileriyle çok zayıf ısıl ışınım yayması gerektiğini öngördü; sıcaklık kütleyle ters orantılıdır. Yıldız kökenli kara delikler 2,7 K'lik kozmik arka plandan soğuk olduğu için bugün buharlaşamaz; Güneş kütleli biri 10⁶⁷ yıldan uzun yaşar. Hawking ışıması henüz gözlenmedi.",
+      "ornek": {
+        "baslik": "Örnek: Bir kara delik ne kadar soğuk, ne kadar uzun ömürlü?",
+        "metin": "1. adım: Kozmik mikrodalga arka plan 2,7 K, en küçük yıldız kökenli kara delik (yaklaşık 3 M☉) yaklaşık 10⁻⁷ K. Oran: 2,7 ÷ 10⁻⁷ = 2,7 × 10⁷. Kara delik çevresindeki uzaydan yaklaşık 27 milyon kat soğuk; bu yüzden ışınım yaymaktan çok soğurur. 2. adım: Sıcaklık kütleyle ters orantılı. Kütle 10 katına çıkarsa sıcaklık 10'da birine iner; Sgr A* gibi milyonlarca Güneş kütleli bir kara delik bundan da milyonlarca kat soğuktur. 3. adım: Ömür: Güneş kütleli kara delik için 10⁶⁷ yıldan uzun. Evrenin yaşı yaklaşık 1,4 × 10¹⁰ yıl. Oran: 10⁶⁷ ÷ 1,4 × 10¹⁰ ≈ 7 × 10⁵⁶. Sonuç: yıldız kökenli bir kara delik bugün evrenden onlarca milyon kat soğuk ve buharlaşması, evrenin şimdiki yaşının 10⁵⁶ katını aşan bir süre ister."
+      }
+    },
+    {
+      "baslik": "İstanbul'dan kara deliklerin yönüne bakmak",
+      "paragraflar": [
+        "Hiçbir kara deliği göremezsin, ama bu dersteki kara deliklerin çoğunun yönüne bakabilirsin. Galaksimizin merkezi için Yay takımyıldızına bak. Sgr A*'ın dik açıklığı yaklaşık −29,0° olduğu için İstanbul'da meridyende en fazla yaklaşık 20° yüksekliğe çıkar; d15'te M22 için gördüğün gibi Yay İstanbul'dan güney ufkuna yakın kalır. Güneyi açık bir yerden o yöne baktığında, görünür ışığı 25 kadir sönükleştiren tozun ötesinde dört milyon Güneş kütleli bir kara deliğe bakıyorsun.",
+        "Kuğu'da, Eta Cygni'nin hemen yakınında Cyg X-1'in eşi HDE 226868 dürbünle aranabilir (yukarıdaki örneğe bak). Kartal takımyıldızının bir yerinde, 1.926 ışık yılı ötede uyuyan Gaia BH3 duruyor. Başak'taki M87 galaksisi 8,6 kadirdir ve Wikipedia'ya göre 6 cm açıklıklı küçük bir teleskopla görülebilir; 7×50 dürbünün 5 cm'lik objektifi bu ölçünün biraz altındadır ve kaynaklar dürbün için açık bir şey söylemez. M87'nin dik açıklığı yaklaşık +12,4° olduğundan İstanbul'da meridyende yaklaşık 61° yüksekliğe çıkar. Teleskopta gördüğün bulanık leke, yaklaşık 55 milyon yıl önce yola çıkmış bir galaksi ışığıdır (Wikipedia uzaklığı 53,5 milyon ışık yılı verir); merkezinde ise EHT'nin fotoğrafladığı 6,5 milyar Güneş kütleli kara delik ve Wikipedia'ya göre en az 5.000 ışık yılı uzanan bir madde fıskiyesi bulunur."
+      ],
+      "akilda": "Sgr A*'ın yönü Yay'dadır ve İstanbul'da en fazla yaklaşık 20° yükselir; Cyg X-1'in eşi Kuğu'da dürbünle aranabilir; M87 Başak'ta, küçük bir teleskopla görülen 8,6 kadirlik bir galaksidir ve İstanbul'da yaklaşık 61° yükselir."
     }
   ],
   "formuller": [
@@ -135,6 +230,21 @@
       "ad": "Birleşmede kayıp kütle",
       "ifade": "Δm = (m₁ + m₂) − m_son",
       "aciklama": "m₁ ve m₂ birleşen iki kara deliğin kütlesi, m_son ortaya çıkan kara deliğin kütlesi (M☉). Δm kütleçekim dalgası olarak yayılan enerjinin kütle karşılığıdır."
+    },
+    {
+      "ad": "Ortalama yoğunluk (olay ufku içinde)",
+      "ifade": "ρ = M ÷ (4/3 × π × Rs³)",
+      "aciklama": "M kütle (kg), Rs Schwarzschild yarıçapı (m), ρ kg/m³. Rs kütleyle orantılı olduğu için ρ kütlenin karesiyle ters orantılıdır. Kütle ufkun içine yayılmış değildir; bu yalnızca bir karşılaştırma büyüklüğüdür."
+    },
+    {
+      "ad": "Ayırma gücü (kırınım sınırı, kaba)",
+      "ifade": "θ ≈ λ ÷ D",
+      "aciklama": "θ radyan cinsinden ayrılabilen en küçük açı, λ dalga boyu, D açıklık ya da interferometride teleskoplar arası en büyük uzaklık (aynı birimde). 1 radyan ≈ 206.265 yay saniyesi (d12)."
+    },
+    {
+      "ad": "Dalga boyu ve frekans",
+      "ifade": "λ = c ÷ f",
+      "aciklama": "λ dalga boyu (km), c ışık hızı (≈ 299.792 km/s), f frekans (Hz, saniyedeki titreşim). Kütleçekim dalgaları da ışık hızında gider."
     }
   ],
   "anahtar_sayilar": [
@@ -203,6 +313,56 @@
       "aciklama": "GW170817'nin uzaklığı ve gama ışını patlamasının gecikmesi",
       "kaynak_url": "https://www.eso.org/public/news/eso1733/",
       "kid": "d16n10"
+    },
+    {
+      "deger": "21,2 ± 2,2 M☉; 2,22 kpc (~7.240 ışık yılı); 5,6 gün",
+      "aciklama": "Cyg X-1 kara deliğinin 2021 kütlesi, uzaklığı ve yörünge süresi",
+      "kaynak_url": "https://ui.adsabs.harvard.edu/abs/2021Sci...371.1046M"
+    },
+    {
+      "deger": "~33 M☉; 1.926 ışık yılı; 16 Nisan 2024",
+      "aciklama": "Gaia BH3: kütle, uzaklık (Kartal) ve ESA duyuru tarihi",
+      "kaynak_url": "https://www.esa.int/Science_Exploration/Space_Science/Gaia/Sleeping_giant_surprises_Gaia_scientists"
+    },
+    {
+      "deger": "4,297 milyon M☉; 25 kadir sönükleşme; her yörüngede 12′",
+      "aciklama": "Sgr A*'ın güncel kütlesi, görünür ışıkta tozun yarattığı sönükleşme, S2'nin Schwarzschild presesyonu",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Sagittarius_A*"
+    },
+    {
+      "deger": "~20 mikro yay saniyesi; ~350 TB/gün",
+      "aciklama": "EHT'nin ayırma gücü ve teleskop başına günlük veri",
+      "kaynak_url": "https://www.eso.org/public/news/eso1907/"
+    },
+    {
+      "deger": "35 → 250 Hz; h = 1,0 × 10⁻²¹; SNR 24; > 5,1 sigma",
+      "aciklama": "GW150914 sinyalinin frekans aralığı, genliği, sinyal-gürültü oranı ve anlamlılığı",
+      "kaynak_url": "https://issuu.com/jorgemosquete/docs/ligo-p150914-detection_of_gw150914"
+    },
+    {
+      "deger": "218 aday (GWTC-4.0); O4'te ~220 birleşme",
+      "aciklama": "Kütleçekim dalgası kataloğundaki toplam aday sayısı ve dördüncü gözlem dönemindeki birleşmeler",
+      "kaynak_url": "https://ligo.org/science-summaries/O4a_catalog_omnibus/"
+    },
+    {
+      "deger": "33,6 + 32,2 → 62,7 M☉; SNR ~80; 240.000 → 400.000 km²",
+      "aciklama": "GW250114: kütleler, sinyal-gürültü oranı, alan teoremi sınaması",
+      "kaynak_url": "https://en.wikipedia.org/wiki/GW250114"
+    },
+    {
+      "deger": "85 + 66 → 142 M☉",
+      "aciklama": "GW190521: ilk açık ara kütleli kara delik",
+      "kaynak_url": "https://en.wikipedia.org/wiki/GW190521"
+    },
+    {
+      "deger": "2,5 milyon km; 2035",
+      "aciklama": "LISA'nın kol uzunluğu ve planlanan fırlatma yılı",
+      "kaynak_url": "https://www.port.ac.uk/news-events-and-blogs/news/esa-gives-go-ahead-for-flagship-gravitational-wave-observatory-in-space"
+    },
+    {
+      "deger": "> 10⁶⁷ yıl; ~10⁻⁷ K (3 M☉)",
+      "aciklama": "Güneş kütleli kara deliğin Hawking ışımasıyla buharlaşma süresi; en küçük yıldız kökenli kara deliğin Hawking sıcaklığı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Hawking_radiation"
     }
   ],
   "sozluk": [
@@ -255,19 +415,59 @@
       "terim": "Çok habercili gökbilim",
       "tanim": "Aynı olayı kütleçekim dalgası, ışık ya da parçacık gibi farklı habercilerle birlikte inceleme.",
       "kid": "d16t9"
+    },
+    {
+      "terim": "saçsızlık teoremi",
+      "tanim": "Bir kara deliğin dışarıdan yalnızca kütlesi, dönmesi ve elektrik yüküyle betimlenebileceğini söyleyen sonuç."
+    },
+    {
+      "terim": "foton küresi",
+      "tanim": "Kara deliğin çevresinde ışığın yörüngede dolanabildiği, olay ufkunun dışındaki küresel kabuk."
+    },
+    {
+      "terim": "gölge",
+      "tanim": "Parlak gazın önünde kara deliğin oluşturduğu, olay ufkundan yaklaşık 2,5 kat büyük karanlık bölge."
+    },
+    {
+      "terim": "uyuyan kara delik",
+      "tanim": "Eşinden gaz çekmediği için ışık yaymayan, yalnızca kütleçekim etkisiyle fark edilen kara delik."
+    },
+    {
+      "terim": "ara kütleli kara delik",
+      "tanim": "Kütlesi yaklaşık yüz ile yüz binlerce Güneş kütlesi arasında olan, yıldız kütleliler ile süper kütleliler arasındaki kara delik."
+    },
+    {
+      "terim": "Schwarzschild presesyonu",
+      "tanim": "Güçlü kütleçekiminde bir yörüngenin en yakın noktasının her turda biraz dönmesi; yörünge gül deseni çizer."
+    },
+    {
+      "terim": "sinyal-gürültü oranı",
+      "tanim": "Bir sinyalin, ölçüm aletindeki rastgele titreşimlere göre ne kadar güçlü olduğunu gösteren oran."
+    },
+    {
+      "terim": "alan teoremi",
+      "tanim": "Hawking'in, kara deliklerin olay ufku alanlarının toplamının hiçbir zaman küçülmeyeceğini söyleyen teoremi."
+    },
+    {
+      "terim": "atarca zamanlama dizisi",
+      "tanim": "Çok sayıda atarcanın atım varış zamanlarındaki ortak kaymalardan çok uzun dalga boylu kütleçekim dalgalarını arama yöntemi."
+    },
+    {
+      "terim": "Hawking ışıması",
+      "tanim": "Kuantum etkileri yüzünden kara deliklerin yayması öngörülen, sıcaklığı kütleyle ters orantılı çok zayıf ısıl ışınım."
     }
   ],
   "defter_notu": [
     "Kaçış hızı ≥ ışık hızı → kara delik. Michell 1783, Schwarzschild 1916, Penrose 1965 (Nobel 2020).",
-    "Rs = 2GM/c² ≈ 2,95 km × (M/M☉). Güneş ≈ 3 km, Dünya ≈ 9 mm.",
+    "Rs = 2GM/c² ≈ 2,95 km × (M/M☉). Güneş ≈ 3 km, Dünya ≈ 9 mm. Ortalama yoğunluk ∝ 1/M²: 10 M☉ ≈ 10¹⁷ kg/m³, M87 ≈ 0,44 kg/m³ (havadan seyrek). Saç yok: kütle, dönme, yük.",
     "Uzaktan kara delik sıradan bir kütle gibi çeker; süpürge değildir.",
     "Güçlü çekim → zaman yavaş akar (GPS: net +38,6 mikrosaniye/gün). Gelgit → spagettileşme.",
-    "Yıldız kütleli kara delik: eş yıldızın hareketinden tartılır. Cyg X-1: ≥3,5 M☉, 5,6 gün.",
-    "Sgr A*: ~4 milyon M☉, ~27.000 ışık yılı; S2 16 yılda bir tur (Genzel, Ghez, Nobel 2020).",
-    "EHT: 8 radyo gözlemevi, 1,3 mm. M87 (2019): 6,5 milyar M☉; Sgr A* (2022).",
+    "Yıldız kütleli kara delik: eş yıldızın hareketinden tartılır. Cyg X-1: 1964, 5,6 gün, bugün 21,2 M☉, ~7.240 ışık yılı (Hawking bahsi kaybetti, 1990). Gaia BH3: 33 M☉, 1.926 ışık yılı, uyuyan. GW190521: 85 + 66 → 142 M☉ (ara kütleli).",
+    "Sgr A*: ~4 milyon M☉, ~27.000 ışık yılı; S2 16 yılda bir tur (Genzel, Ghez, Nobel 2020). Güncel: 4,297 milyon M☉; görünür ışıkta 25 kadir toz. S2 presesyonu her yörüngede 12′ (2020).",
+    "EHT: 8 radyo gözlemevi, 1,3 mm. M87 (2019): 6,5 milyar M☉; Sgr A* (2022). Ayırma gücü ~20 mikro yay saniyesi; gölgeler 40–53 mikro yay saniyesi.",
     "LIGO: 4 km kol, ~10⁻¹⁹ m'yi ölçer. Einstein 1916 öngördü; Hulse-Taylor çift atarcası 1974, dolaylı kanıt 1979 (Nobel 1993).",
-    "GW150914 (14.09.2015): 36 + 29 → 62 M☉, 3 M☉ dalgaya; 1,3 milyar ışık yılı (Nobel 2017).",
-    "GW170817 (17.08.2017): nötron yıldızı birleşmesi, ~2 s sonra gama ışını, kilonova; ilk çok habercili olay."
+    "GW150914 (14.09.2015): 36 + 29 → 62 M☉, 3 M☉ dalgaya; 1,3 milyar ışık yılı (Nobel 2017). Frekans 35 → 250 Hz, SNR 24. GW250114: SNR ~80, alan 240.000 → 400.000 km² (Hawking alan teoremi). GWTC-4.0: 218 aday.",
+    "GW170817 (17.08.2017): nötron yıldızı birleşmesi, ~2 s sonra gama ışını, kilonova; ilk çok habercili olay. LISA 2035 (2,5 milyon km). NANOGrav 2023: 67 atarca, 3–4 sigma. Hawking ışıması 1974, gözlenmedi."
   ],
   "sorular": [
     {
@@ -309,6 +509,30 @@
       "soru": "GW170817 neden kara delik birleşmelerinden farklı ve önemlidir?",
       "cevap": "İki nötron yıldızının birleşmesiydi ve dalganın yanında ışık da yaydı. Gama ışını patlaması ve kilonova görüldü; bu, aynı olayın hem kütleçekim dalgasıyla hem ışıkla gözlendiği ilk olaydı ve ağır elementlerin kökeni ile kütleçekim dalgalarının hızı hakkında bilgi verdi.",
       "kid": "d16s7"
+    },
+    {
+      "soru": "Süper kütleli bir kara deliğin olay ufku içindeki ortalama yoğunluk neden çok düşük olabilir?",
+      "cevap": "Schwarzschild yarıçapı kütleyle doğru orantılı büyür, hacim ise yarıçapın küpüyle. Bu yüzden ortalama yoğunluk kütlenin karesiyle ters orantılı düşer. M87'nin 6,5 milyar Güneş kütleli kara deliği için hesaplanan değer yaklaşık 0,44 kg/m³, yani havadan seyrek."
+    },
+    {
+      "soru": "Gaia BH3 X ışını yaymadığı hâlde nasıl bulundu?",
+      "cevap": "Eş yıldızının gökteki yolunun yalpalaması Gaia ile ayrıntılı ölçüldü; bu yalpalamadan görünmeyen eşin kütlesi (yaklaşık 33 Güneş kütlesi) çıkarıldı. Eşi kara delikten uzakta olduğu için kara delik gaz çekmez ve ışık yaymaz: uyuyan bir kara deliktir."
+    },
+    {
+      "soru": "EHT'nin görüntülerindeki karanlık bölge olay ufkunun kendisi midir?",
+      "cevap": "Hayır. Kara deliğin bükerek yuttuğu ışığın oluşturduğu gölgedir; ESO'ya göre olay ufku bu gölgeden yaklaşık 2,5 kat küçüktür."
+    },
+    {
+      "soru": "LIGO'nun iki dedektörü 3.000 km uzaktaysa, aynı kütleçekim dalgası ikisine en fazla kaç milisaniye arayla ulaşabilir? GW150914'te ara yaklaşık 7 milisaniye idiyse bu ne anlatır?",
+      "cevap": "3.000 km ÷ 299.792 km/s ≈ 0,010 s = 10 milisaniye. 7 milisaniye bu sınırın altında olduğu için sinyal ışık hızıyla yol alan bir dalgayla uyumludur; aradaki fark, kaynağın gökteki yönünü kabaca sınırlamaya yarar."
+    },
+    {
+      "soru": "GW250114 Hawking'in alan teoremini nasıl sınadı?",
+      "cevap": "Birleşmeden önceki iki kara deliğin toplam ufuk alanı yaklaşık 240.000 km², sonraki kara deliğinki yaklaşık 400.000 km² çıktı. Kütle yaklaşık 3 Güneş kütlesi azaldığı hâlde alan arttı; teoremin öngördüğü gibi toplam ufuk alanı küçülmedi."
+    },
+    {
+      "soru": "Hawking ışıması neden bugüne dek gözlenmedi ve yıldız kökenli kara delikler neden şimdi buharlaşamaz?",
+      "cevap": "Işınım çok zayıftır; yıldız kökenli bir kara deliğin sıcaklığı yaklaşık 10⁻⁷ kelvin ya da daha azdır. Bu, 2,7 kelvinlik kozmik mikrodalga arka plandan çok soğuktur; kara delik yaydığından fazlasını soğurur ve küçülemez."
     }
   ],
   "kaynaklar": [
@@ -387,6 +611,82 @@
     {
       "ad": "Wikipedia, Spaghettification",
       "url": "https://en.wikipedia.org/wiki/Spaghettification"
+    },
+    {
+      "ad": "Wikipedia, No-hair theorem",
+      "url": "https://en.wikipedia.org/wiki/No-hair_theorem"
+    },
+    {
+      "ad": "UNLV (D. Jeffery), Black hole shadow",
+      "url": "https://www.physics.unlv.edu/~jeffery/astro/black_hole/black_hole_shadow.html"
+    },
+    {
+      "ad": "Wikipedia, Density of air",
+      "url": "https://en.wikipedia.org/wiki/Density_of_air"
+    },
+    {
+      "ad": "The Weather Prediction, Comparing the density of air to water",
+      "url": "https://www.theweatherprediction.com/habyhints/216/"
+    },
+    {
+      "ad": "Miller-Jones ve ark. 2021, Cygnus X-1 contains a 21-solar mass black hole (Science, ADS)",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021Sci...371.1046M"
+    },
+    {
+      "ad": "Wikipedia, Cygnus X-1",
+      "url": "https://en.wikipedia.org/wiki/Cyg_X-1"
+    },
+    {
+      "ad": "ESA, Sleeping giant surprises Gaia scientists (2024)",
+      "url": "https://www.esa.int/Science_Exploration/Space_Science/Gaia/Sleeping_giant_surprises_Gaia_scientists"
+    },
+    {
+      "ad": "Wikipedia, GW190521",
+      "url": "https://en.wikipedia.org/wiki/GW190521"
+    },
+    {
+      "ad": "Wikipedia, Sagittarius A*",
+      "url": "https://en.wikipedia.org/wiki/Sagittarius_A*"
+    },
+    {
+      "ad": "Universe Today, A star is orbiting the Milky Way's black hole... (2020)",
+      "url": "https://www.universetoday.com/articles/a-star-is-orbiting-the-milky-ways-black-hole-and-moving-exactly-how-einstein-predicted-it-should"
+    },
+    {
+      "ad": "GRAVITY Collaboration 2020, Detection of the Schwarzschild precession in the orbit of the star S2 (arXiv:2004.07187)",
+      "url": "https://arxiv.org/abs/2004.07187"
+    },
+    {
+      "ad": "LIGO/Virgo 2016, Observation of Gravitational Waves from a Binary Black Hole Merger (PRL 116, 061102; issuu kopyası)",
+      "url": "https://issuu.com/jorgemosquete/docs/ligo-p150914-detection_of_gw150914"
+    },
+    {
+      "ad": "LIGO, GWTC-4.0 science summary (2025)",
+      "url": "https://ligo.org/science-summaries/O4a_catalog_omnibus/"
+    },
+    {
+      "ad": "LIGO, GW250114: 10 years of gravitational-wave astronomy",
+      "url": "https://ligo.org/detections/gw250114-10-years-of-gravitational-wave-astronomy/"
+    },
+    {
+      "ad": "Wikipedia, GW250114",
+      "url": "https://en.wikipedia.org/wiki/GW250114"
+    },
+    {
+      "ad": "University of Portsmouth, ESA gives go-ahead for LISA (2024)",
+      "url": "https://www.port.ac.uk/news-events-and-blogs/news/esa-gives-go-ahead-for-flagship-gravitational-wave-observatory-in-space"
+    },
+    {
+      "ad": "NANOGrav 2023, The 15-year Data Set: Evidence for a Gravitational-Wave Background (arXiv:2306.16213)",
+      "url": "https://arxiv.org/abs/2306.16213"
+    },
+    {
+      "ad": "Wikipedia, Hawking radiation",
+      "url": "https://en.wikipedia.org/wiki/Hawking_radiation"
+    },
+    {
+      "ad": "Wikipedia, Messier 87",
+      "url": "https://en.wikipedia.org/wiki/Messier_87"
     }
   ]
 }
