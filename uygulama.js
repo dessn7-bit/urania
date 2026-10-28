@@ -226,8 +226,30 @@
   }
 
   /* ---- Kırmızı mod ---- */
+  /* Kırmızı mod açıkken ekran kararmasın: kırmızı mod gece dışarıda gözlem demek; ekran her kararınca açmak için
+     parlak kilit ekranı gözü kamaştırır. Sayfa gizlenince tarayıcı kilidi kendisi bırakır; görünür olunca yeniden istenir. */
+  let ekranKilidi = null;
+  function ekranAcikTut() {
+    const iste = document.documentElement.classList.contains('kirmizi') && !document.hidden;
+    if (!iste) {
+      if (ekranKilidi) { const k = ekranKilidi; ekranKilidi = null; try { Promise.resolve(k.release()).catch(() => {}); } catch (h) { /* yok */ } }
+      return;
+    }
+    if (ekranKilidi && !ekranKilidi.released) return;
+    if (!navigator.wakeLock) return;
+    let istek;
+    try { istek = navigator.wakeLock.request('screen'); } catch (h) { return; }
+    Promise.resolve(istek).then(k => {
+      if (!k) return;
+      if (!document.documentElement.classList.contains('kirmizi') || document.hidden) { try { Promise.resolve(k.release()).catch(() => {}); } catch (h) { /* yok */ } return; }
+      ekranKilidi = k;
+    }).catch(() => { /* izin yoksa ya da pil tasarrufu engellediyse sorun değil */ });
+  }
+  document.addEventListener('visibilitychange', ekranAcikTut);
+
   function kirmiziUygula(acik) {
     document.documentElement.classList.toggle('kirmizi', acik);
+    ekranAcikTut();
     const d = document.getElementById('kirmiziDugme');
     if (d) d.setAttribute('aria-pressed', String(acik));
     const meta = document.querySelector('meta[name="theme-color"]');

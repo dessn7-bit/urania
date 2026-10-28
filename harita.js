@@ -277,7 +277,19 @@
         etiket('Ay', p.x, p.y, '600 ' + Math.max(11, W / 42) + 'px Plex, system-ui, sans-serif', c.ay, 12, r + 4);
         isabet.push({ x: p.x, y: p.y, oncelik: 5, bilgi: '<b>Ay</b> · ' + d.ay.ad + ', %' + Math.round(d.ay.oran * 100) + ' aydınlık · ' + Urania.derece(d.ay.alt) + ' yükseklik' });
       }
+      /* İşaretli cismin halkası etiket engeli: adlar halkanın üstüne yazılmasın */
+      const vp = d.vurgu && d.vurgu.alt > -1 ? ekran(d.vurgu.alt, d.vurgu.az) : null, rv = 15 * Math.max(olc, .85);
+      if (vp) engeller.push({ x: vp.x, y: vp.y, r: rv + 3 });
       etiketleriYerlestir(etiketler, engeller, { kalabalik, HC, hs, hale: gokRenk });
+      /* "Haritada göster": seçilen cisim çift halka ve dört çentikle işaretlenir (renk değil biçim; kırmızı modda da seçilir) */
+      if (vp) {
+        const p = vp;
+        ctx.save(); ctx.strokeStyle = c.yazi; ctx.lineWidth = 2;
+        ctx.beginPath(); ctx.arc(p.x, p.y, rv, 0, Math.PI * 2); ctx.stroke();
+        for (let k = 0; k < 4; k++) { const a = k * Math.PI / 2; ctx.beginPath(); ctx.moveTo(p.x + Math.cos(a) * (rv + 4), p.y + Math.sin(a) * (rv + 4)); ctx.lineTo(p.x + Math.cos(a) * (rv + 11), p.y + Math.sin(a) * (rv + 11)); ctx.stroke(); }
+        ctx.restore();
+        yerlesim.vurgu = { x: p.x, y: p.y, r: rv };   // testler için
+      }
       ctx.restore();
 
       /* Ufuk halkası ve yönler */

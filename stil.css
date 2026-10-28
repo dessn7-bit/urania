@@ -227,6 +227,8 @@ html.kirmizi input[type="datetime-local"]::-webkit-calendar-picker-indicator {
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23E63A28' stroke-width='1.4'%3E%3Crect x='2' y='3' width='12' height='11' rx='1.5'/%3E%3Cpath d='M2 6.5h12M5 1.5v3M11 1.5v3'/%3E%3C/svg%3E") center / 16px 16px no-repeat;
 }
 .kadir-kontrol { max-width: 560px; margin: 4px auto 0; font-size: 14px; color: var(--soluk); }
+#gkKonumPanel .kadir-kontrol { margin: 6px 0 16px; padding-top: 14px; border-top: 1px solid var(--cizgi); }
+#gkKonumPanel .kadir-kontrol b { color: var(--parsomen); }
 /* Yatay telefonda (412 px yükseklik) levha 528 px'ti: ekrana hiçbir zaman bütün sığmıyordu. Üst bar (56) + pay */
 @media (orientation: landscape) and (max-height: 520px) {
   .levha-kap { max-width: min(560px, calc(100vh - 72px)); }
@@ -655,3 +657,18 @@ html.kirmizi { scrollbar-color: var(--soluk) var(--gece); }
 /* "Gördüm, deftere yaz" her maddede tekrarlanıyor: alt çizgi ince ve soluk, odakta/üstünde tam renk */
 .defter-bag a { text-decoration-color: var(--pirinc-soluk); text-underline-offset: 3px; }
 .defter-bag a:hover, .defter-bag a:focus-visible, html.kirmizi .defter-bag a { text-decoration-color: currentColor; }   /* kırmızı modda bağlantı rengi yazıya çok yakın: alt çizgi tam kalır */
+
+/* Gökyüzü: tek satırlık karar ("Bu gece gözlem: iyi") — sayfanın ilk cevabı. Seviye yazıyla da söylenir, renk yalnız destek. */
+.karar { margin: 16px 0 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 8px; }
+.karar:empty { display: none; }
+.karar-bas { font: 400 21px/1.3 var(--serif); color: var(--parsomen); }
+.karar-et { font: 600 21px/1.3 var(--serif); color: var(--parsomen); }
+.karar-iyi .karar-et { color: var(--iyi); }
+.karar-idare .karar-et { color: var(--pirinc); }
+.karar-kotu .karar-et { color: var(--uyari); }
+.karar-neden { flex-basis: 100%; font: 400 14px/1.5 var(--sans); color: var(--soluk); }
+
+/* Eylem satırı: "Haritada göster · Gördüm, deftere yaz" — iki eylem aynı görünüşte, ince alt çizgi */
+.defter-bag .bag { background: none; border: 0; padding: 2px 0; font: inherit; color: var(--pirinc); cursor: pointer; text-decoration: underline; text-decoration-color: var(--pirinc-soluk); text-underline-offset: 3px; }
+.defter-bag .bag:hover, .defter-bag .bag:focus-visible, html.kirmizi .defter-bag .bag { text-decoration-color: currentColor; }
+.defter-bag .ayrac { color: var(--soluk); }

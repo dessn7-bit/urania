@@ -174,7 +174,7 @@ test.describe('arayüz', () => {
     await celestrak(page, { hata: 503 });
     await page.goto('/index.html#gok');
     await expect(page.locator('#gkOlay li').first()).not.toContainText('Hesaplanıyor', { timeout: 15000 });
-    await expect(page.locator('#gkAlgol li').first()).not.toContainText('Hesaplanıyor');
+    await expect(page.locator('#gkOlay li', { hasText: 'Algol en sönük' }).first()).toBeAttached();
     expect(await page.locator('#gkOlay li').count()).toBeGreaterThan(5);
   });
 });

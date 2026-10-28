@@ -54,26 +54,26 @@ test('Gece planı: bulutlu gecede uyarı, kapalı saatlere uyarı rozeti', async
   await expect(page.locator('#gkPlan .rozet.uyari').first()).toContainText('bulut %95');
 });
 
-test('Algol: 7 Kasım 06:34 minimumu listede, VSX kaynağıyla', async ({ page }) => {
+test('Algol: 7 Kasım 06:34 minimumu yaklaşan olaylarda, VSX kaynağıyla', async ({ page }) => {
   await page.route('**/api.open-meteo.com/**', r => r.fulfill({ json: hava(0) }));
   await page.goto('/index.html#gok');
-  const ul = page.locator('#gkAlgol');
-  await expect(ul.locator('li').first()).toContainText('7 Kasım');
-  await expect(ul.locator('li').first()).toContainText('06:34');
-  await expect(ul).toContainText('AAVSO VSX');
+  const li = page.locator('#gkOlay li', { hasText: 'Algol en sönük' }).first();
+  await expect(li).toContainText('7 Kasım');
+  await expect(li).toContainText('06:34');
+  await expect(page.locator('#gkKaynak')).toContainText('AAVSO VSX');
 });
 
 test('Ay örtmeleri: 22 Aralık Ülker örtmesi (Taygeta 02:22, karanlık kenar); sönük Asterope "seçilmez" notuyla, 28 Ekim hiç yok', async ({ page }) => {
   await page.route('**/api.open-meteo.com/**', r => r.fulfill({ json: hava(0) }));
   await page.goto('/index.html#gok');
-  const ul = page.locator('#gkOrtme');
-  const ulker = ul.locator('li', { hasText: 'Ülker örtmesi · 22 Aralık' });
+  const ul = page.locator('#gkOlay');
+  const ulker = ul.locator('li', { hasText: 'Ülker örtmesi' }).filter({ hasText: '22 Aralık' });
   await expect(ulker).toBeVisible({ timeout: 15000 });
   await expect(ulker).toContainText('Taygeta (4,3): 02:22 Ay\'ın karanlık kenarında kaybolur (dürbünle sınırda)');
   /* Asterope (5,8) aynı gece karanlık kenarda ama %93 Ay'ın parıltısında 7×50 ile seçilmez */
   await expect(ulker).toContainText('Asterope (5,8): kayboluşu 02:30, karanlık kenarda: Ay\'ın parıltısında dürbünle seçilmez');
   /* 28 Ekim: Asterope 5,8 kadir, Ay %95 — dürbünle seçilmez, listede yok */
-  await expect(ul).not.toContainText('28 Ekim');
+  await expect(ul.locator('li', { hasText: 'örtmesi' }).filter({ hasText: '28 Ekim' })).toHaveCount(0);
 });
 
 test('Uydular: ISS ve Tiangong geçişleri birlikte; Starlink dizisi notuyla', async ({ page }) => {
@@ -151,7 +151,7 @@ test('Depoya yazılamasa da CelesTrak\'a yarım saatte yeniden gidilmez (incelem
 test('Takvim düğmesi gece değişince de kendi olayını indirir (inceleme bulgusu)', async ({ page }) => {
   await page.route('**/api.open-meteo.com/**', r => r.fulfill({ json: hava(0) }));
   await page.goto('/index.html#gok');
-  const dugme = page.locator('#gkOrtme li', { hasText: 'Ülker örtmesi · 22 Aralık' }).locator('[data-takvim]');
+  const dugme = page.locator('#gkOlay li', { hasText: 'Ülker örtmesi' }).filter({ hasText: '22 Aralık' }).locator('[data-takvim]');
   await expect(dugme).toBeVisible({ timeout: 15000 });
   await page.locator('#gkTarih').fill('2026-11-05');
   await page.locator('#gkTarih').dispatchEvent('change');
@@ -163,10 +163,9 @@ test('Takvim düğmesi gece değişince de kendi olayını indirir (inceleme bul
 test('Örtme listesinde aynı olay iki kez yok', async ({ page }) => {
   await page.route('**/api.open-meteo.com/**', r => r.fulfill({ json: hava(0) }));
   await page.goto('/index.html#gok');
-  await expect(page.locator('#gkOrtme li').first()).not.toContainText('Hesaplanıyor', { timeout: 15000 });
-  const basliklar = await page.locator('#gkOrtme li .ad').allInnerTexts();
-  const saatler = await page.locator('#gkOrtme li .sag').allInnerTexts();
-  const ikili = basliklar.map((b, i) => b + '|' + saatler[i]);
+  await expect(page.locator('#gkOlay li', { hasText: 'örtmesi' }).first()).toBeAttached({ timeout: 15000 });
+  const ikili = await page.locator('#gkOlay li', { hasText: 'örtmesi' }).allInnerTexts();
+  expect(ikili.length).toBeGreaterThan(0);
   expect(new Set(ikili).size).toBe(ikili.length);
 });
 

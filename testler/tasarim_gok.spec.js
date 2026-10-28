@@ -166,10 +166,11 @@ test.describe('Gökyüzü listeleri ve denetimler', () => {
     const h = await page.locator('#b-gok details.aciklama > summary').evaluateAll(ls => ls.filter(e => e.offsetParent).map(e => e.getBoundingClientRect().height));
     expect(h.length).toBeGreaterThan(0);
     h.forEach(x => expect(x).toBeGreaterThanOrEqual(44));
-    await page.waitForSelector('#gkAlgol .takvim-bag');
-    const [t, d] = await page.locator('#gkAlgol li').first().evaluate(li => [li.querySelector('.takvim-bag').getBoundingClientRect().x + 4, li.querySelector('.defter-bag a').getBoundingClientRect().x]);
-    expect(Math.abs(t - d)).toBeLessThanOrEqual(1);
-    expect(await page.locator('#gkAlgol .kaynak-satir .kaynak').evaluate(e => getComputedStyle(e).display)).toBe('block');
+    const algol = page.locator('#gkOlay li', { hasText: 'Algol en sönük' }).first();
+    await expect(algol.locator('.takvim-bag')).toBeVisible();
+    const [a, d] = await algol.evaluate(li => [li.querySelector('.alt').getBoundingClientRect().x, li.querySelector('.defter-bag').getBoundingClientRect().x]);
+    expect(Math.abs(a - d)).toBeLessThanOrEqual(1);   // eylem satırı metinle aynı hizada başlar
+    await expect(page.locator('#gkKaynak')).toContainText('AAVSO VSX');
   });
 
   test('Konum paneli: GPS ve hata iletisi düğmenin altında, uyarı renginde; otomatikte "Varsayılana dön" gizli', async ({ page }) => {
