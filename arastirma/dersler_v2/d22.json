@@ -1,0 +1,616 @@
+{
+  "id": "d22",
+  "unite": "gokyuzu",
+  "yeni": true,
+  "baslik": "Zaman, Takvim ve Gökyüzü: Güneş Saatinden Atom Saatine",
+  "ozet": "Günün, ayın ve yılın gökyüzünden nasıl çıktığını ve neden birbirine tam bölünmediğini öğreneceksin. Güneş saatinin kol saatine neden uymadığını (zaman denklemi, analemma), İstanbul'un öğlesinin neden 13:04 civarına düştüğünü, Türkiye'nin kalıcı UTC + 3 saatini, atom saatini ve artık saniyenin 2026'da kaldırılma kararını göreceksin. Son olarak Jülyen, Gregoryen, Rumi ve Hicri takvimleri, ay-güneş takvimlerini, gün adlarının gezegenlerden gelişini ve presesyonun takvime etkisini ele alacağız.",
+  "on_bilgi": [
+    "d1",
+    "d10"
+  ],
+  "bolumler": [
+    {
+      "baslik": "İki ayrı öğle: güneş saati ve kol saati",
+      "paragraflar": [
+        "Gökyüzü bize üç doğal saat verir: gün, ay ve yıl. Gün Dünya'nın dönüşünden, ay Ay'ın evrelerinden, yıl da Dünya'nın Güneş çevresindeki dolanımından gelir. Sorun şu ki bu üç saat birbirine tam bölünmez. Ay dersinde gördüğün kavuşum ayı yaklaşık 29,53 gün, mevsimlerin yılı ise NASA'ya göre 365,242 gündür. Bir yılda 365,242 ÷ 29,53 ≈ 12,37 ay vardır; ne tam 12 ne de tam 13. İnsanlığın yaptığı bütün takvimler, bu küsuratlarla uzlaşmanın farklı yollarıdır. Bu derste önce günün kendisinin bile neden düzensiz olduğunu, sonra saatlerimizi nasıl Güneş'ten koparıp atoma bağladığımızı, en sonunda da takvimlerin bu küsuratlarla nasıl başa çıktığını göreceksin.",
+        "İlk derste yıldız günü ile Güneş günü arasındaki dört dakikayı öğrendin: Güneş günü ortalama 24 saattir, yıldız günü yaklaşık 23 sa 56 dk 4 sn. Oradaki kilit kelime ortalamaydı. Bir güneş saati Güneş'in gökteki gerçek yerini gösterir; Güneş meridyenden geçerken, yani gölge en kısa olduğunda, güneş saati öğleyi gösterir. Buna görünür güneş zamanı denir. Kol saatin ise hayali bir Güneş'i izler: gök ekvatoru boyunca bütün yıl hiç hızlanmadan, hiç yavaşlamadan yürüyen ortalama bir Güneş. Bu hayali Güneş'in gösterdiği zamana ortalama güneş zamanı denir. Saatlerimizdeki her gün tam 24 saattir, çünkü onları gerçek Güneş'e değil bu ortalamaya bağladık.",
+        "Gerçek Güneş'in iki öğlesi arasındaki süre ise her gün biraz farklıdır. Yalnız eksen eğikliğinin etkisi hesaba katılsa, gündönümlerine yakın günler 24 saatten 20,3 saniyeye kadar uzun, ekinokslara yakın günler de 20,3 saniyeye kadar kısa olurdu. Yörüngenin basıklığı da işe karışır: bir öğleden ötekine geçen en uzun süre, Dünya'nın Güneş'e en yakın olduğu Ocak'ın ilk haftasında, en kısa süre de en uzak olduğu Temmuz'un ilk haftasında yaşanır. Günlük farklar saniyelerle ölçülür, bu yüzden tek bir günde fark etmezsin. Ama aynı yönde haftalarca biriktiklerinde güneş saati ile kol saati arasında dakikalarca açılan bir fark doğar. Bu birikmiş farkın adı zaman denklemidir ve bir sonraki bölümün konusudur."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Saniyeler nasıl dakikaya dönüşür?",
+        "metin": "Varsayalım ki 30 gün boyunca her güneş günü 24 saatten ortalama 20 saniye uzun sürüyor. Adım 1: Her gün güneş saati kol saatinin 20 saniye daha gerisine düşer. Adım 2: 30 gün × 20 sn = 600 sn. Adım 3: 600 sn ÷ 60 = 10 dakika. Sonuç: bir ayın sonunda güneş saati kol saatinden yaklaşık 10 dakika geride kalır. Gerçek yılda uzun ve kısa günler sırayla geldiği için fark birikip sonra geri erir; zaman denklemi bu gidip gelişin eğrisidir."
+      },
+      "akilda": "Güneş saati gerçek Güneş'i, kol saati hayali ortalama Güneş'i izler. Gerçek güneş günleri birkaç saniye uzayıp kısalır; bu küçük farklar haftalarca birikince dakikalara ulaşır."
+    },
+    {
+      "baslik": "Zaman denklemi: güneş saati neden öne geçer, neden geri kalır?",
+      "paragraflar": [
+        "Zaman denklemi, görünür güneş zamanı ile ortalama güneş zamanı arasındaki farktır. Artı işaretliyse güneş saati kol saatinden ileridedir, eksi işaretliyse geridedir. Değeri yıl içinde iki kez artıya, iki kez eksiye döner. En büyük değerine 3 Kasım civarında ulaşır: güneş saati yaklaşık 16 dk 33 sn öndedir. En derin çukuru 11 Şubat civarındadır: güneş saati yaklaşık 14 dk 6 sn geridedir. Arada iki küçük tepe daha vardır: 14 Mayıs civarında yaklaşık 3 dk 41 sn ileri, 26 Temmuz civarında yaklaşık 6 dk 30 sn geri. Fark yaklaşık 15 Nisan, 13 Haziran, 1 Eylül ve 25 Aralık'ta sıfırdan geçer; bu tarihler yıldan yıla bir gün kadar oynayabilir.",
+        "Farkın birinci nedeni yörüngenin basıklığıdır. Kütleçekim dersinde Kepler'in ikinci yasasını gördün: Dünya Güneş'e yakınken daha hızlı dolanır. Ocak başında, günberi sırasında, Dünya yörüngede her gün daha çok yol alır; bu yüzden Güneş de yıldızların önünde her gün daha çok kayar gibi görünür. Güneş'i yeniden meridyene getirmek için Dünya'nın biraz daha fazla dönmesi gerekir ve güneş günü uzar. Temmuz başında, günöte sırasında tersi olur. Bu etkinin zaman denklemine katkısı yaklaşık 7,66 dakika genliğinde, bir yıllık periyotla gidip gelen bir dalgadır. Günberi ve günöte anlarında bu bileşen sıfırdır.",
+        "İkinci ve daha büyük neden eksen eğikliğidir. Güneş yıl boyunca tutulum üzerinde yürür, ama saatlerimiz Güneş'in gök ekvatoru boyunca, yani sağ açıklıkta ne kadar ilerlediğini sayar. Tutulum ekvatora 23,44° eğik olduğu için Güneş'in tutulumdaki günlük adımının hepsi doğuya doğru işe yaramaz. Ekinokslarda Güneş ekvatoru eğik keser; adımının bir kısmı kuzeye ya da güneye gider ve sağ açıklıkta daha az ilerler. Gündönümlerinde Güneş ekvatora paralel yürür; üstelik ekvatordan uzakta saat çemberleri birbirine yaklaştığı için aynı adım sağ açıklıkta daha çok yol eder. Bu bileşenin genliği yaklaşık 9,87 dakika, periyodu yarım yıldır. Kaynaklar eğiklik etkisinin toplamın yarısından fazlasını oluşturduğunu söyler.",
+        "Bir benzetme: karşıdan karşıya çapraz geçen biri kaldırım boyunca daha yavaş ilerler, çünkü adımının bir kısmı caddeyi geçmeye gider. Benzetmenin sınırı şu: gündönümündeki ek hızlanma, çaprazlıktan değil, kutuplara yaklaştıkça boylam çizgilerinin sıklaşmasına benzeyen bir geometriden gelir. Bu farkın bilinmesi çok eskidir. Ptolemaios 2. yüzyılda zaman denklemini tablolarına koymuştu. Esasen doğru ilk tabloları 1665'te Christiaan Huygens yayımladı. John Flamsteed'in 1672–73 tabloları ise ortalama zamanın bugünkü anlamını yerleştirdi: güneş saatinden okunan zamana düzeltme ekleyip saati ortalama zamana göre kurmak."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Kışın güneş günleri ne kadar uzun?",
+        "metin": "3 Kasım'da zaman denklemi yaklaşık +16 dk 33 sn, 11 Şubat'ta yaklaşık −14 dk 6 sn. Adım 1: Aradaki gün sayısı: Kasım'da 27, Aralık'ta 31, Ocak'ta 31, Şubat'ta 11 gün; toplam 100 gün. Adım 2: Toplam değişim 16 dk 33 sn + 14 dk 6 sn = 30 dk 39 sn = 1839 sn. Adım 3: 1839 sn ÷ 100 gün ≈ 18,4 sn. Sonuç: Kasım başından Şubat ortasına kadar bir öğleden ötekine geçen süre ortalama yaklaşık 24 sa 0 dk 18 sn'dir. Bu dönemde iki neden aynı yöne çalışır: gündönümü eğiklik etkisini, Ocak başındaki günberi de basıklık etkisini en büyük yapar."
+      },
+      "akilda": "Zaman denklemi iki dalganın toplamıdır: yörünge basıklığından gelen yıllık bir dalga (yaklaşık 7,7 dk) ve eksen eğikliğinden gelen yarım yıllık bir dalga (yaklaşık 9,9 dk). Sonuç Kasım başında yaklaşık 16,5 dk ileri, Şubat ortasında yaklaşık 14 dk geridir."
+    },
+    {
+      "baslik": "Analemma: Güneş'in gökteki sekizi",
+      "paragraflar": [
+        "Bir yıl boyunca her hafta aynı yerden, kol saatinde aynı saatte Güneş'in fotoğrafını çektiğini düşün. Fotoğrafları üst üste koyduğunda Güneş'in noktaları gökte uzun, ince bir sekiz rakamı çizer. Bu şekle analemma denir. Sekizin dikey uzunluğu mevsimlerden gelir: Güneş'in dik açıklığı yıl içinde +23,44° ile −23,44° arasında gidip gelir. Yatay genişliği ise zaman denkleminden gelir: Güneş saatten önde olduğu günlerde batıya doğru, geride olduğu günlerde doğuya doğru kayar. Yani analemma, zaman denkleminin gökyüzüne çizilmiş hâlidir. Ders kitaplarındaki çizimlerde yatay eksen çoğu zaman dikeyin yaklaşık 10 katına büyütülür; gerçek sekiz çok daha incedir.",
+        "İstanbul'da yerel ortalama öğle anında çekilmiş bir analemma düşün. İlk derste hesapladığın gibi öğle Güneşi Aralık gündönümünde ufkun yaklaşık 25,6° üstüne, Haziran gündönümünde yaklaşık 72,4° üstüne çıkar. Sekizin boyu bu yüzden yaklaşık 47° tutar. Genişliğini zaman denklemi belirler: Güneş saatte 15° yol aldığına göre bir dakikalık fark 0,25° eder. Sekizin iki halkası eşit değildir, çünkü yıllık ve yarım yıllık iki dalga üst üste biner: bir halka büyük, öteki küçük olur.",
+        "Zaman denkleminin gündelik bir sonucu da en erken gün batımının en kısa günde olmamasıdır. Aralık gündönümü çevresinde gündüzün uzunluğu en küçük değerine yaklaşırken neredeyse hiç değişmez, günden güne yalnızca birkaç saniye oynar. Öte yandan bu haftalarda Güneş'in öğle anı her gün yaklaşık yarım dakika gecikir. Gündüz uzunluğu sabitken öğle kaydığı için gün doğumu ve gün batımı birlikte geç saatlere kayar. Bu yüzden en erken gün batımı gündönümünden birkaç gün önce, en geç gün doğumu ise birkaç gün sonra gelir. İstanbul'daki tam tarihleri bu dersin kaynaklarına koymadık; bir gün doğumu ve batımı tablosundan Aralık ve Ocak'a bakarak kendin bulabilirsin.",
+        "Kendi analemmanı çekmek istersen Türkiye'nin kalıcı saati işini kolaylaştırır: 2016'dan beri saatler ileri ya da geri alınmadığı için yıl boyunca aynı saat ayarını kullanabilirsin. Telefonu sabit bir yere koy, her hafta ya da iki haftada bir aynı saatte aynı kareyi çek. Güneş'e asla dürbünle ya da gözünle uzun süre bakma; Güneş dersindeki güvenlik kuralları burada da geçerli."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Sekizin eni kaç derece?",
+        "metin": "Adım 1: Gök küresi saatte 15° döner; 1 dakika 15° ÷ 60 = 0,25° eder. Adım 2: Kasım başındaki en büyük fark 16 dk 33 sn ≈ 16,55 dk; 16,55 × 0,25° ≈ 4,1°. Adım 3: Şubat ortasındaki fark 14 dk 6 sn = 14,1 dk; 14,1 × 0,25° ≈ 3,5°. Sonuç: analemmanın iki ucu arasındaki doğu-batı açısı ekvatorda yaklaşık 4,1° + 3,5° = 7,6°'dir; ufuk yönünde görülen açı yüksekliğe göre biraz daha küçüktür. Boyu ise yaklaşık 47°. Gerçek sekiz, enine göre altı kattan fazla uzundur. Bu kaba bir hesaptır: Güneş'in o günlerdeki dik açıklığını ve ufkun eğikliğini yok saydık."
+      },
+      "akilda": "Analemma, Güneş'in bir yıl boyunca aynı saatte gökteki yerlerinin çizdiği sekizdir: boyu mevsimleri, eni zaman denklemini gösterir. Zaman denklemi yüzünden en erken gün batımı en kısa günden önce, en geç gün doğumu sonra gelir."
+    },
+    {
+      "baslik": "Yerel saat: İstanbul'un öğlesi neden 13:04?",
+      "paragraflar": [
+        "Demiryolları ve telgraf yaygınlaşmadan önce her kent kendi saatini kullanırdı. Her yerin öğlesi, ortalama Güneş'in o yerin meridyeninden geçtiği andı. Buna yerel ortalama zaman denir. Kural basittir: Dünya 24 saatte 360° döner, yani saatte 15°, her derecede 4 dakika, her yay dakikasında 4 saniye. Doğudaki bir kent öğleye batıdakinden erken ulaşır. İki kent arasında 1° boylam farkı varsa öğleleri 4 dakika ayrıdır.",
+        "İstanbul'un boylamı yaklaşık 28° 57′ 18″ doğudur, ondalık olarak 28,955°. Bunu 15'e bölersen 1,930 saat, yani yaklaşık 1 sa 55 dk 49 sn bulursun. İstanbul'un yerel ortalama zamanı Greenwich'inkinden bu kadar ileridedir. Bugün Türkiye'deki saatler ise Greenwich'ten tam 3 saat ileri. Demek ki kol saatin, İstanbul'un kendi ortalama zamanından 3 sa − 1 sa 55 dk 49 sn = 1 sa 4 dk 11 sn ileridedir. Ortalama Güneş İstanbul'un meridyeninden saat 12:00'de değil, 13:04 civarında geçer.",
+        "Bu hesabı gerçek bir tabloyla sınayabilirsin. Bir gün doğumu ve batımı sitesinin İstanbul için 2025 Haziran tablosunda Güneş'in meridyenden geçişi 1 Haziran'da 13:01, 13 Haziran'da 13:04, 30 Haziran'da 13:07 olarak veriliyor. 13 Haziran, zaman denkleminin sıfırdan geçtiği günlerden biridir; o gün tablo tam bizim hesapladığımız 13:04'ü gösteriyor. Ay başında Güneş saatten biraz önde, ay sonunda biraz geride olduğu için öğle önce 13:04'ün öncesine, sonra sonrasına düşüyor.",
+        "Bu kayma yılın geri kalanında çok daha büyüktür. Kasım başında zaman denklemi yaklaşık 16,5 dakika ileri olduğu için İstanbul'da gerçek öğle saat 12:48 civarına gelir. Şubat ortasında yaklaşık 14 dakika geri olduğu için 13:18 civarına kayar. Yani aynı kentte gerçek öğle yıl içinde yarım saate yakın gidip gelir. Ülke ölçeğinde boylam farkı da eklenir. Türkiye kabaca 26° ile 45° doğu boylamları arasında uzanır; en doğu ile en batı ucu arasında yaklaşık 1 sa 16 dk güneş zamanı farkı vardır. En batıda ortalama öğle saat 13:16 civarında, en doğuda 12:00 civarında olur.",
+        "Bunu kendin ölçebilirsin. Güneşli bir günde düz bir zemine dik bir çubuk koy; gökbilimin en eski aleti olan gnomon budur. Gerçek öğlede Güneş tam güneydedir, bu yüzden gölge tam kuzeyi gösterir ve en kısa hâlini alır. Ama öğleye yakın gölgenin boyu çok yavaş değiştiği için en kısa anı birkaç dakikadan iyi yakalamak zordur. Daha iyi bir yol var: öğleden önce gölgenin ucunu işaretle ve saati yaz, öğleden sonra gölge aynı uzunluğa döndüğünde saati yeniden yaz. Güneş'in yolu meridyene göre kabaca simetrik olduğu için iki zamanın ortalaması gerçek öğleyi verir. Sonucu 13:04 ile ve o günün zaman denklemiyle karşılaştır."
+      ],
+      "ornek": {
+        "baslik": "Örnek: İstanbul'da Kasım ve Şubat öğlesi",
+        "metin": "Adım 1: İstanbul'un ortalama öğlesi: 12:00 + 3 sa − (28,955° × 4 dk) = 12:00 + 180 dk − 115,8 dk = 13:04,2, yani yaklaşık 13:04. Adım 2: Güneş saati ileride olduğunda gerçek öğle erken gelir; gerçek öğle = ortalama öğle − zaman denklemi. Adım 3: 3 Kasım: 13:04,2 − 16,55 dk ≈ 12:47,7, yaklaşık 12:48. Adım 4: 11 Şubat: 13:04,2 − (−14,1 dk) = 13:18,3, yaklaşık 13:18. Sonuç: aynı kentte gerçek öğle Kasım başında 12:48, Şubat ortasında 13:18 civarına düşer; arada 30 dakikayı aşan bir fark vardır."
+      },
+      "akilda": "Her derece boylam 4 dakikalık güneş zamanı farkı demektir. İstanbul'da ortalama öğle UTC + 3 saatiyle 13:04 civarındadır; zaman denklemi gerçek öğleyi yıl içinde yaklaşık 12:48 ile 13:18 arasında oynatır."
+    },
+    {
+      "baslik": "Saat dilimleri ve Türkiye'nin saati",
+      "paragraflar": [
+        "Her kentin kendi saati, trenle bir kentten ötekine giden yolcu için kâbustur. Çözüm, geniş bölgelerin ortak bir saat kullanmasıdır; buna saat dilimi denir. Kâğıt üzerinde her dilim 15° genişliğindedir ve Greenwich'ten 15°'nin katı uzaklıktaki bir meridyenin güneş zamanını kullanır. Örneğin UTC + 2 dilimi 30° doğu, UTC + 3 dilimi 45° doğu meridyenine karşılık gelir. Gerçekte dilim sınırları siyasi sınırları izler, bu yüzden haritada eğri büğrüdür.",
+        "Türkiye'de bu düzen bir yasayla kuruldu. 26 Aralık 1925'te kabul edilip 2 Ocak 1926 tarihli, 260 sayılı Resmî Gazete'de yayımlanan 697 sayılı Günün Yirmi Dört Saate Taksimine Dair Kanun iki şey söyler. Birincisi, gün gece yarısında başlar ve saatler sıfırdan yirmi dörde kadar sayılır. İkincisi, yasanın bugünkü metnine göre bütün Türkiye saatleri için Greenwich'e göre 30. derecedeki boylam esas alınır. Yasa 1984 ve 2017'de değiştirildi; bugünkü hâliyle hükümete bir saati aşmamak kaydıyla ileri saat uygulama yetkisi verir.",
+        "Yaz saati Türkiye'de resmî olarak ilk kez 1 Temmuz 1940'ta uygulandı. Sonraki yıllarda kaldırılıp yeniden başlatıldı; 1985'ten 2016'ya kadar her yıl uygulandı. Bu dönemde Türkiye kışın UTC + 2'yi, yazın UTC + 3'ü kullanıyordu. 2016'da kural değişti. 7 Eylül 2016'da kararlaştırılıp 8 Eylül 2016 tarihli, 29825 sayılı Resmî Gazete'de yayımlanan 2016/9154 sayılı Bakanlar Kurulu Kararı'na göre, 27 Mart 2016 saat 03:00'te bir saat ileri alınarak başlayan yaz saati her yıl, yıl boyu sürdürülecekti. Aynı karar, saatlerin 30 Ekim 2016 saat 04:00'te geri alınmasını öngören hükmü yürürlükten kaldırdı.",
+        "Sonuç olarak Türkiye o günden beri sürekli UTC + 3 kullanır ve bu saate Türkiye Saati (TRT) denir. Hukuken temel hâlâ 30° doğu meridyenidir ve üstüne yıl boyu bir saatlik ileri saat eklenmiştir; pratikte saatlerimiz 45° doğu meridyeninin güneş zamanına göre işler. İstanbul bu meridyenin yaklaşık 16° batısındadır. Bu yüzden İstanbul'da kol saati Güneş'ten yaklaşık 1 saat 4 dakika ileridedir ve bunu en çok kış sabahlarında hissedersin: Güneş saat sekizi epey geçe doğar. 2008'de enerji bakanlığının yaz saatini kaldırıp UTC + 2,5 dilimine geçme önerisi de olmuştu, ama bu öneri uygulanmadı."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Aralık sabahı neden karanlık?",
+        "metin": "İstanbul'da Haziran gündönümünde gündüz yaklaşık 15 sa 7 dk 50 sn sürer ve bu, Aralık gündönümündekinden 5 sa 55 dk uzundur. Adım 1: Aralık gündönümünde gündüz ≈ 15 sa 7 dk 50 sn − 5 sa 55 dk = 9 sa 12 dk 50 sn. Yarısı ≈ 4 sa 36 dk. Adım 2: Zaman denklemi 25 Aralık'ta sıfırdan geçtiği için gündönümünde gerçek öğleyi ortalama öğleye yakın, yani 13:04 civarında alalım. Adım 3: Gün doğumu ≈ 13:04 − 4:36 = 08:28; gün batımı ≈ 13:04 + 4:36 = 17:40. Adım 4: Eski kış saati olan UTC + 2'de aynı anlar bir saat erken, 07:28 ve 16:40 olurdu. Sonuç: kalıcı UTC + 3 ile İstanbul'da en kısa günlerde Güneş yaklaşık 08:30'da doğar. Zaman denkleminin o günlerdeki birkaç dakikalık payını yok saydığımız için bu kaba bir tahmindir; dakikası dakikasına değer için bir tabloya bak."
+      },
+      "akilda": "697 sayılı yasa (1925) günü gece yarısından başlatır ve 30° doğu meridyenini esas alır. 2016/9154 sayılı karar (Resmî Gazete, 8 Eylül 2016) yaz saatini kalıcı yaptı; Türkiye o günden beri yıl boyu UTC + 3 kullanıyor."
+    },
+    {
+      "baslik": "Atom saati: saniyeyi Dünya'dan değil atomdan almak",
+      "paragraflar": [
+        "Zamanı Dünya'nın dönüşüyle ölçersen, dönüşteki her düzensizlik zamanın kendisine geçer. Dünya ise düzgün dönen bir saat değildir. En büyük etken gelgit sürtünmesidir: Ay ve Güneş'in Dünya'da kabarttığı gelgitler dönüşü frenler; yalnız bu etki günü yüzyılda yaklaşık 2,3 milisaniye uzatırdı. Kabuk hareketleri, mantodaki akışlar ve kütlenin yer değiştirmesi de dönüşü hızlandırıp yavaşlatır. Hepsi birlikte ortalama Güneş gününü yüzyılda kabaca 1,4 ile 1,7 milisaniye uzatıyor. Gelgitleri kütleçekim dersinde görmüştün; burada aynı kuvvetin saatlerimizi nasıl etkilediğini görüyorsun.",
+        "Bu yüzden 1967'de Ağırlıklar ve Ölçüler Genel Konferansı (CGPM) saniyeyi gökyüzünden alıp atoma bağladı. Tanıma göre bir saniye, sezyum 133 atomunun taban durumundaki iki aşırı ince enerji düzeyi arasındaki geçişe karşılık gelen ışınımın 9.192.631.770 periyodunun süresidir. Bu tanım, 1956'da kabul edilip 1960'ta onaylanan önceki tanımın yerini aldı. Bugünkü SI metni aynı şeyi ters yönden söyler: sezyum frekansının sayısal değeri hertz cinsinden tam 9.192.631.770 kabul edilir. Atom saati, bu frekansı yakalayıp dalgaları sayan bir düzenektir; sayaç 9.192.631.770'e ulaştığında bir saniye geçmiştir.",
+        "Böylece elimizde üç ayrı zaman ölçeği oluştu. UT1, Dünya'nın dönüşüne dayanan zaman ölçeğidir; gökyüzünün gerçekte nerede durduğunu söyler. Uluslararası Atom Zamanı (TAI), atom saniyesiyle hiç durmadan sayar. Eşgüdümlü Evrensel Zaman (UTC) ise ikisinin arasında bir uzlaşmadır: TAI ile aynı hızda işler, ondan yalnızca tam sayıda saniye farklıdır ve bu fark UTC'yi UT1'e yakın tutmak için ayarlanır. UTC, CGPM'nin önerdiği tek uluslararası başvuru zaman ölçeğidir ve ülkelerin çoğunda yasal saatin temelidir. Türkiye Saati de UTC'ye tam 3 saat eklenerek bulunur.",
+        "Ocak 2017'den beri TAI ile UTC arasındaki fark 37 saniyedir: atom zamanı, kol saatlerimizin dayandığı UTC'den 37 saniye ileridedir. Bu 37 saniyenin nereden geldiğini bir sonraki bölümde göreceksin."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Bir salınım ne kadar sürer?",
+        "metin": "Adım 1: Bir saniyede 9.192.631.770 salınım var. Adım 2: Bir salınımın süresi 1 ÷ 9.192.631.770 ≈ 1,088 × 10⁻¹⁰ sn. Adım 3: 10⁻⁹ sn bir nanosaniye olduğuna göre bu yaklaşık 0,109 nanosaniye eder. Sonuç: atom saati, bir nanosaniyenin onda birinden kısa süren dalgaları sayarak saniyeyi kurar. Karşılaştırma için: Dünya'nın günü yüzyılda yalnızca 1,4–1,7 milisaniye uzuyor, yani yüz yılda yaklaşık 15 milyon salınım süresi kadar."
+      },
+      "akilda": "1967'den beri saniye, sezyum 133 atomunun 9.192.631.770 salınımıdır. UT1 Dünya'nın dönüşünü, TAI atom saatini izler; UTC atom hızında işleyip UT1'e yakın tutulan uzlaşmadır. Türkiye Saati = UTC + 3 saat."
+    },
+    {
+      "baslik": "Artık saniye ve vedası",
+      "paragraflar": [
+        "UTC'yi UT1'e yakın tutmak için 1972'de artık saniye kuralı getirildi. Kural başladığında UTC, TAI'nin 10 saniye gerisindeydi. UT1 ile UTC arasındaki farkın 0,9 saniyeye yaklaşacağı öngörüldüğünde UTC'ye bir saniye eklenir. Kararı, Dünya'nın dönüşünü ölçen Uluslararası Yer Dönüşü ve Referans Sistemleri Servisi (IERS) verir ve genellikle yaklaşık altı ay önceden duyurur. Eklenen saniye saatlerde 23:59:60 olarak yazılır. 1972'den bu yana 27 artık saniye eklendi, hepsi artı yönde. Sonuncusu 31 Aralık 2016'nın son dakikasına kondu. 10 + 27 = 37; TAI ile UTC arasındaki bugünkü fark böyle oluştu.",
+        "Ekstra bir saniye zararsız görünür, ama bilgisayarlar her dakikanın 60 saniye olduğunu varsayar. 30 Haziran 2012'deki artık saniyeden sonra bir havayolu şirketinin, bir tarayıcı şirketinin ve pek çok Linux sunucusunun yazılımlarında sorunlar bildirildi. Ağ ve uydu konumlama işletmecileri artık saniyeyi farklı yöntemlerle uyguluyor ve bunlar ortak bir standarda uymuyor. Daha da kötüsü, son yıllarda Dünya'nın dönüşü beklenenden hızlı ölçüldü. Bu, ilk kez bir saniyenin eklenmesi değil çıkarılması, yani eksi artık saniye gerektirebilir; böyle bir şey hiç uygulanmadı ve test edilmedi. 2026 kararına dayanak olan bir çalıştay, 2035'e kadar eksi artık saniye gerekme olasılığını %30 olarak tahmin etti.",
+        "Bu yüzden CGPM 2022'deki 27. toplantısında, 4 numaralı kararla, UT1 ile UTC arasındaki izin verilen en büyük farkın 2035'te ya da daha önce artırılmasına karar verdi. Asıl adım bu ay atıldı: 13–15 Ekim 2026'da Versailles'da toplanan 28. CGPM, 5 numaralı kararla sürekli UTC'nin 20 Mayıs 2027'de yürürlüğe gireceğini ve UT1 ile UTC arasındaki farkın en çok 3.600 saniyeye, yani bir saate kadar büyüyebileceğini kabul etti. Karar metnine göre bu sınır UTC'nin birkaç yüzyıl boyunca kesintisiz kalmasını sağlayacak. Karar gerekçesinde ulaşım, enerji, telekomünikasyon ve uzay projelerinin hiçbir ayarlama gerektirmeyen sürekli bir UTC'ye ihtiyaç duyduğu, bazı kullanıcıların uydu konumlama sistemlerinin kendi zamanına geçmesinin ise uluslararası standartlaşmayı ciddi biçimde tehlikeye atabileceği yazıyor. Fark bir saate yaklaştığında ne yapılacağı metinde ayrıntılı yazmıyor. Kararın resmî metni Fransızcadır.",
+        "Bu karar sana ne ifade eder? Telefonundaki saat aynı kalır. Güneş ile saat arasındaki fark çok yavaş büyüyecek: bir dakikalık fark Güneş'in gökteki yerinde yalnızca 0,25° eder, zaman denkleminin her yıl yaptığı 16 dakikalık salınımın yanında önemsizdir. Dünya'nın gerçek yönelimini bilmesi gereken gökbilim ve uydu hesapları ise UT1'i ayrıca izlemeyi sürdürecek. Karar, BIPM'den UT1 ile UTC arasındaki farkı izlemeye ve gidişatını düzenli olarak raporlamaya devam etmesini istiyor."
+      ],
+      "ornek": {
+        "baslik": "Örnek: 27 saniye, günün ne kadar uzun olduğunu söyler?",
+        "metin": "Ocak 1972'den Ocak 2017'ye 45 yıl geçti ve bu sürede 27 artık saniye eklendi. Adım 1: Yıllık birikim 27 ÷ 45 = 0,6 sn. Adım 2: Bir yılda yaklaşık 365,25 gün var; günlük fazlalık 0,6 ÷ 365,25 ≈ 0,0016 sn = 1,6 milisaniye. Sonuç: bu 45 yılda Dünya'nın bir dönüşü, ortalama olarak 86.400 atom saniyesinden yaklaşık 1,6 milisaniye uzun sürdü. Tek günde fark edilmeyen bu fazlalık, birikerek her bir buçuk iki yılda bir saniyeye ulaştı. Bu bir ortalamadır; dönüş hızı yıldan yıla değişir ve son yıllarda gün biraz kısaldı."
+      },
+      "akilda": "1972–2016 arasında UTC'ye 27 artık saniye eklendi; TAI − UTC bugün 37 saniye. 28. CGPM'nin 15 Ekim 2026 kararıyla artık saniye kalkıyor: 20 Mayıs 2027'den itibaren UTC kesintisiz, UT1 ile farkı en çok 1 saat."
+    },
+    {
+      "baslik": "Gök takvimlerini okumak: UT'den Türkiye saatine",
+      "paragraflar": [
+        "Tutulma öngörüleri, meteor yağmuru takvimleri ve gökbilim yıllıkları zamanları yerel saatle değil UT ya da UTC ile verir. Böylece aynı tablo dünyanın her yerinde kullanılabilir. Bir gözlem planlarken ilk iş bu saati kendi saatine çevirmektir. Türkiye için kural 2016'dan beri basittir: UTC'ye 3 saat ekle. Daha önce kışın 2, yazın 3 saat eklemen gerekirdi; eski bir gözlem kaydını ya da 2016 öncesi bir tabloyu okurken bunu hatırla.",
+        "Çevirirken tarihe de dikkat et. UTC'de gece yarısına üç saatten az kalmışsa olay Türkiye'de ertesi güne düşer. Tablolarda geçen UT ile UTC arasındaki fark ise gözlemci için önemsizdir: 2027'ye kadar artık saniye kuralı bu farkı 0,9 saniyenin altında tutuyor; sonrasında da fark yıllar içinde ancak saniyelerle büyüyecek. Bir meteor yağmurunun doruğu zaten saatlerce yayılır.",
+        "Aynı dikkat tarihler için de geçerlidir. Bir belgedeki tarihin hangi takvimle yazıldığını sormadan iki olayı karşılaştıramazsın. Örneğin 1752 öncesi bir İngiliz kaydı Jülyen takvimiyle, 1917 öncesi bir Osmanlı mali kaydı Rumi takvimle, bir vakfiye ise Hicri takvimle yazılmış olabilir. Eski bir tutulma kaydını bugünkü hesaplarla karşılaştırmak isteyen biri önce bu çeviriyi yapmak zorundadır."
+      ],
+      "ornek": {
+        "baslik": "Örnek: 2026 Quadrantid doruğu Türkiye'de hangi gün?",
+        "metin": "Uluslararası Meteor Örgütü'nün 2026 takvimine göre Quadrantid meteor yağmurunun doruğu 3 Ocak'ta 21:28 UT civarında öngörülüyor. Adım 1: Türkiye Saati = UTC + 3 sa. Adım 2: 21:28 + 3:00 = 24:28, yani gece yarısını 28 dakika geçe. Adım 3: Tarih bir gün ilerler. Sonuç: Türkiye'de doruk 4 Ocak 2026 saat 00:28 civarına düşer. Doruk saatinin bir öngörü olduğunu ve meteor yağmurlarının etkinliğinin doruğun çevresinde saatlerce sürdüğünü unutma."
+      },
+      "akilda": "Gök takvimleri UT ya da UTC kullanır; Türkiye için 3 saat ekle ve gece yarısını geçen olaylarda tarihin değiştiğine dikkat et. Eski tarihlerde önce takvimin hangisi olduğunu sor."
+    },
+    {
+      "baslik": "Yıl ne kadar? Tropik yıl ve yıldızıl yıl",
+      "paragraflar": [
+        "Gün gibi yıl da tek bir sayı değildir; neye göre ölçtüğüne bağlıdır. Tropik yıl, Güneş'in aynı ekinoks noktasına, yani aynı mevsim anına geri dönmesi için geçen süredir. NASA bunu 365,242 gün olarak verir; daha ayrıntılı bir değer 365,242199 gündür. Yıldızıl yıl ise Güneş'in uzak yıldızlara göre aynı yere dönmesi, yani Dünya'nın yıldızlara göre bir tam dolanımıdır: 365,256 gün. Mevsimler tropik yılı izler, yıldızlar yıldızıl yılı.",
+        "İki yıl arasındaki fark yaklaşık 1.224,5 saniye, yani 20 dakika 24 saniyedir. Nedeni ilk derste tanıştığın presesyondur. Dünya'nın ekseni topaç gibi yalpaladıkça ilkbahar noktası tutulum boyunca yılda yaklaşık 50,3 yay saniyesi batıya kayar. Güneş doğuya doğru ilerlerken bu nokta ona doğru geldiği için Güneş ekinoksa, yıldızlara göre tam turunu tamamlamadan biraz önce ulaşır. Yıllık bu küçük erken varış, bir presesyon turu boyunca, yani bugünkü hızla yaklaşık 25.772 yılda, tam bir yıla birikir.",
+        "Aynı inceliğin günde de karşılığı vardır. İlk derste yıldız günü için verilen 23 sa 56 dk 4,09 sn, aslında ilkbahar noktasına göre ölçülür. Dünya'nın sabit yıldızlara göre bir tam dönüşü bundan yaklaşık 0,0084 saniye uzundur, çünkü ilkbahar noktası her gün yerinden çok az kayar. Bu, günlük hayatta hiçbir şeyi değiştirmez, ama yüksek hassasiyetli gökbilim hesaplarında ayrı tutulur.",
+        "Takvim hangi yılı izlemeli? Tarım, bayramlar ve mevsimlerle ilgili her iş Güneş'in ekinoks ve gündönümlerine bağlı olduğu için Batı'nın güneş takvimleri tropik yılı izler. Her takvim böyle seçmez: Hicri takvim yılı hiç izlemez, onu ilerde göreceksin. Hint takvimlerinin bir kısmı ise hâlâ yıldızlara bağlı bir başlangıç noktası kullanır."
+      ],
+      "ornek": {
+        "baslik": "Örnek: 20 dakika bir yıla ne zaman ulaşır?",
+        "metin": "Adım 1: Fark 365,256 − 365,242 = 0,014 gün; 0,014 × 1440 dk ≈ 20,2 dk. Kaynağın verdiği daha kesin değer 1.224,5 sn ≈ 0,01417 gün. Adım 2: Bu farkın bir tam yıla, yani 365,25 güne ulaşması için 365,25 ÷ 0,01417 ≈ 25.780 yıl gerekir. Sonuç: yaklaşık 25.800 yıl; presesyonun bugünkü hızla bulunan 25.772 yıllık turuyla örtüşür. Mevsimler ve yıldızlar, bir presesyon turunda tam bir yıl birbirinden kopar."
+      },
+      "akilda": "Tropik yıl (365,242 gün) mevsimlerin, yıldızıl yıl (365,256 gün) yıldızların yılıdır. Aradaki yaklaşık 20 dakikalık fark presesyondan gelir; güneş takvimleri mevsimleri tutmak için tropik yılı izler."
+    },
+    {
+      "baslik": "Jülyen takvimi: dört yılda bir artık gün",
+      "paragraflar": [
+        "Mevsimleri izleyen bir takvim için en basit çözüm, yılı 365 gün yapıp küsuratı arada bir eklenen günlerle kapatmaktır. Roma'da MÖ 45'te yürürlüğe giren Jülyen takvimi bunu yaptı: üç yıl 365 gün, dördüncü yıl 366 gün. Fazladan günü olan yıla artık yıl denir. Böylece ortalama yıl 365,25 gün oldu.",
+        "Ama tropik yıl 365,25 değil 365,242199 gündür. Jülyen yılı her yıl yaklaşık 11 dakika 14 saniye fazla sayar. Bir yılda önemsiz görünen bu fazla, iki yüzyılda neredeyse bir buçuk güne ulaşır. Takvim gerçek mevsimlerin gerisinde kalmaya başlar: Mart ekinoksu, yani Güneş'in gök ekvatorunu güneyden kuzeye geçtiği an, takvimde her yüzyılda biraz daha erken bir güne düşer. 16. yüzyıla gelindiğinde ekinoks, 21 Mart olarak kabul edilen tarihinden epey önceye kaymıştı.",
+        "Bu kayma özellikle kilise için önemliydi, çünkü Paskalya'nın tarihi 21 Mart'taki ekinoksa bağlı bir kuralla hesaplanıyordu. Ekinoks takvimde kaydıkça, bayram gerçek mevsimden kopuyordu. Burada bir şeyi ayırt etmek önemli: sorun, artık yıl fikrinde değil, artık yılların sayısındaydı. Dört yılda bir gün biraz fazlaydı; doğru takvim için bazı artık yılları atlamak gerekiyordu."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Jülyen takvimi kaç yılda bir gün kaçırır?",
+        "metin": "Adım 1: Fark 11 dk 14 sn = 11,23 dk/yıl. Adım 2: Bir gün 1440 dakikadır. 1440 ÷ 11,23 ≈ 128 yıl. Adım 3: 400 yıllık bir dönem için 400 × 11,23 dk = 4492 dk ≈ 3,12 gün. Sonuç: Jülyen takvimi yaklaşık 128 yılda bir gün, 400 yılda yaklaşık 3 gün kayar. Gregoryen reformunun 400 yılda tam 3 artık günü kaldırması bu hesabın doğrudan sonucudur."
+      },
+      "akilda": "Jülyen takvimi (MÖ 45) her dört yılda bir artık gün ekleyerek ortalama yılı 365,25 gün yaptı. Bu, tropik yıldan yılda yaklaşık 11 dk 14 sn fazladır; ekinoks takvimde yavaşça erkene kaydı."
+    },
+    {
+      "baslik": "Gregoryen reformu: 1582'de kaybolan on gün",
+      "paragraflar": [
+        "Papa XIII. Gregorius, 24 Şubat 1582'de yayımlanan Inter gravissimas adlı belgeyle takvimi düzeltti. Düzeltmenin iki parçası vardı. Birincisi birikmiş hatayı silmekti: 4 Ekim 1582 Perşembe gününü, 15 Ekim 1582 Cuma günü izledi. Aradaki on gün takvimden atıldı, ama haftanın günlerinin sırası bozulmadı; Perşembe'den sonra yine Cuma geldi.",
+        "İkinci parça hatanın yeniden birikmesini önlemekti. Yeni kural şöyledir: 4'e bölünen yıllar artık yıldır; ama 100'e bölünenler artık yıl değildir; ama 400'e bölünenler yine de artık yıldır. Bu kurala göre 1700, 1800 ve 1900 artık yıl olmadı, 2000 oldu. 400 yılda Jülyen takvimindeki 100 artık gün yerine 97 artık gün kalır. Ortalama yıl 365,2425 gün, yani 365 gün 5 saat 49 dakika 12 saniye olur.",
+        "Bu ne kadar iyi? Kaynaklar burada biraz farklı sayılar verir. Ortalama tropik yıla göre hata bir kaynakta yaklaşık 3.030 yılda bir gün, bir başkasında yaklaşık 3.300 yılda bir gündür. Mart ekinoksundan Mart ekinoksuna ölçülen yıla göre ise hata yaklaşık 7.700 yılda bir güne düşer. Farkın nedeni hangi yılın ölçüt alındığıdır: yörünge biraz basık olduğu için ekinokstan ekinoksa geçen süre, ortalama tropik yıldan biraz farklıdır. Her hâlükârda hata, bizim ve torunlarımızın ömründe bir güne ulaşmaz.",
+        "Reform her yerde aynı anda kabul edilmedi. İtalya, İspanya, Portekiz ve Polonya 1582'de geçti. Büyük Britanya ve kolonileri 1752'de geçti: 2 Eylül'ü 14 Eylül izledi, atlanan gün sayısı 11'e çıkmıştı. Rusya 1918'de 31 Ocak'tan sonra 14 Şubat'a, Yunanistan 1923'te 15 Şubat'tan sonra 1 Mart'a atladı; bu kez fark 13 gündü. Geç kalan her ülke daha çok gün atlamak zorunda kaldı, çünkü 1700, 1800 ve 1900'de Jülyen takvimi birer gün daha kaymıştı."
+      ],
+      "ornek": {
+        "baslik": "Örnek: 2100 artık yıl mı, takvim ne zaman tekrar eder?",
+        "metin": "Adım 1: 2100, 4'e bölünür; ilk kurala göre artık yıl adayıdır. Adım 2: 100'e de bölünür; artık yıl değildir. Adım 3: 400'e bölünmez (2100 ÷ 400 = 5,25); istisna işlemez. Sonuç: 2100 artık yıl değildir. Şimdi 400 yıllık döngüye bak: 400 × 365 + 97 = 146.097 gün. 146.097 ÷ 400 = 365,2425 gün. Üstelik 146.097 ÷ 7 = 20.871, tam bir sayı. Yani 400 yıllık döngü tam 20.871 hafta eder ve Gregoryen takvimi her 400 yılda bir, haftanın günleriyle birlikte aynen tekrar eder."
+      },
+      "akilda": "Gregoryen takvimi 1582'de on günü atıp artık yıl kuralını inceltti: 100'e bölünen yıllar artık değil, 400'e bölünenler artık. Ortalama yıl 365,2425 gün; hata birkaç bin yılda bir gün."
+    },
+    {
+      "baslik": "Türkiye'de takvim: Rumi'den Miladi'ye",
+      "paragraflar": [
+        "Osmanlı'da dinî işler ve gündelik hayatın büyük kısmı Hicri takvimle yürüyordu. Vergi gibi mali işler ise mevsimlere bağlı olduğu için güneş yılına dayanan ayrı bir takvim gerektiriyordu. Bu takvime Rumi ya da mali takvim denir. Başlangıcı için kaynaklar farklı tarihler veriyor: TDV İslâm Ansiklopedisi mali takvimin 1677'de bir fermanla başlatıldığını, Diyanet İlmî Dergi'deki bir makale 1740'tan itibaren kullanıldığını yazıyor. Bir başka kaynağa göre Rumi takvim, 13 Mart 1840'ta resmî sivil takvim olarak kabul edildi.",
+        "Rumi takvimin yapısı ilginçti. Ayları ve günleri Jülyen takviminden alıyordu ve yıl Mart'ta başlıyordu. Yıl sayısı ise Hicret'ten, yani 622'den başlıyordu. Ama yıllar güneş yılı olarak sayıldığı için Miladi takvimle arasındaki fark hep 584 yılda sabit kaldı. Yani Rumi takvim, Jülyen ay ve günleriyle Hicri bir başlangıç noktasının karışımıydı.",
+        "İlk büyük adım 1917'de atıldı. Rumi 1332 yılının 15 Şubat'ından sonraki gün, 1 Mart 1333 sayıldı; araya giren 13 gün atlanarak ay ve gün Gregoryen takvimle eşitlendi. Yıl sayısı Rumi kaldı. 1333 yılı Mart'tan Aralık'a yalnızca on ay sürdü ve 1918'den itibaren mali yıl 1 Ocak'ta başladı. Bu yüzden bazı kaynaklar Türkiye'yi Gregoryen takvimine 1912–1917 arasında geçen ülkeler arasında sayar.",
+        "İkinci adım yıl sayısıydı. 26 Aralık 1925'te kabul edilip 2 Ocak 1926 tarihli, 260 sayılı resmî gazetede yayımlanan 698 sayılı Takvimde Tarih Mebdeinin Tebdili Hakkında Kanun, resmî devlet takviminde uluslararası takvimin başlangıç noktasını kabul etti. Yasanın ikinci maddesine göre 1341 yılının Kânunuevvel ayının 31. gününü izleyen gün, 1926 yılının Kânunusani ayının birinci günüydü. Yani 31 Aralık 1341'in ertesi günü 1 Ocak 1926 oldu. Bir takvim veritabanı Türkiye için 1 Ocak 1927 tarihini veriyor; yasa metni ise açıkça 1926 diyor ve biz yasaya uyuyoruz.",
+        "Aynı yasanın üçüncü maddesi Hicri takvimi kaldırmadı: Hicri kameri takvim özel durumlarda eskisi gibi kullanılacak, Hicri ayların başlangıcını rasathane resmî olarak belirleyecekti. Bu görevi uzun yıllar Kandilli Rasathanesi yürüttü. Aynı gün kabul edilen 697 sayılı yasa da günün gece yarısında başlamasını ve saatlerin 0'dan 24'e sayılmasını getirdi. Yani 1926'nın ilk günü Türkiye hem takvimini hem de günün başlangıcını uluslararası düzene bağladı."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Rumi yıldan Miladi yıla",
+        "metin": "Adım 1: Rumi ile Miladi yıl arasındaki fark 584'tür. Adım 2: Rumi 1341 + 584 = 1925. Yasa da 1341'in Aralık ayının ertesi gününü 1 Ocak 1926 sayar; tutarlı. Adım 3: 1917'deki atlama neden 13 gündü? 1582'de Jülyen ile Gregoryen arasındaki fark 10 gündü. Sonra 1700, 1800 ve 1900 Jülyen'de artık yıl oldu, Gregoryen'de olmadı: 10 + 3 = 13. Sonuç: 1917'de Rumi takvimin Gregoryen'le eşitlenmesi için tam 13 gün atlamak gerekiyordu. Bu fark 2100'e kadar 13 gün kalır, çünkü 2000 iki takvimde de artık yıldı."
+      },
+      "akilda": "Rumi takvim Jülyen ay-günlerini Hicret'ten sayılan güneş yıllarıyla birleştiriyordu. 1917'de 13 gün atlanarak ay-gün Gregoryen'e uydu; 698 sayılı yasayla 31 Aralık 1341'in ertesi günü 1 Ocak 1926 oldu. Hicri takvim özel durumlar için kaldı."
+    },
+    {
+      "baslik": "Hicri takvim: yılı Ay'a bağlamak",
+      "paragraflar": [
+        "Hicri takvim saf bir ay takvimidir: yıl 12 kameri aydan oluşur ve her ay 29 ya da 30 gün sürer. Ayın uzunluğu kavuşum ayından gelir; TDV İslâm Ansiklopedisi bunu 29,530588 gün olarak verir. On iki ay yaklaşık 354,367 gün eder. Başlangıç noktası Hz. Muhammed'in Mekke'den Medine'ye hicretidir: 622 yılı birinci yıl, Muharrem ayının ilk günü de yılbaşı kabul edilir. Hicretin takvim başlangıcı sayılması Hz. Ömer döneminde oldu; TDV, Muharrem'in ilk ay kabul edilmesini hicretin 16. yılına, yani Nisan 637'ye tarihler.",
+        "Hicri yıl güneş yılından yaklaşık 10,875 gün kısadır. Bu yüzden Hicri aylar ve onlara bağlı dinî günler, Miladi takvimde her yıl yaklaşık 11 gün erkene kayar. Ramazan bir dönem yaz aylarına, birkaç yıl sonra bahara, sonra kışa düşer. Hicri bir ay, bütün mevsimleri dolaşıp aynı mevsime yaklaşık 33,5 Hicri yılda, yani 32,5 güneş yılında geri döner. Hicri takvimin ilk özelliği budur: mevsimleri hiç izlemez, yalnızca Ay'ı izler.",
+        "Ayın ne zaman başladığı da gökbilimsel bir sorudur. TDV'ye göre dinî hükümlerde kameri ayın başlangıcı kavuşum anı değil, hilalin gerçekten ya da hesapla görülebilir olmasıdır. Kavuşumdan sonra Ay, Güneş'e çok yakın ve çok ince olduğu için gün batımının parıltısında kaybolur. Görülebilmesi için Ay ile Güneş arasındaki açının en az yaklaşık 7° olması gerekir; modern ölçümler 6° ile 8° arası bir değer verir. Bu açının oluşması için kavuşumdan sonra on ile on yedi saat geçmelidir. Ayrıca gün batımında Ay'ın ufuktan yüksekliği en az 5° olmalı ve Ay, Güneş'ten yaklaşık 25 dakika sonra batmalıdır.",
+        "Türkiye bu tartışmada etkin rol oynadı. Diyanet İşleri Başkanlığı'nın girişimiyle 27–30 Kasım 1978'de İstanbul'da toplanan Rü'yet-i Hilal Konferansı, oybirliğiyle iki ölçüt kabul etti: kavuşumdan sonra Ay ile Güneş arasındaki açı en az 8°, gün batımında Ay'ın ufuktan yüksekliği en az 5° olmalıydı. Hilalin dünyanın herhangi bir yerinde görülebilmesi yeterli sayıldı. Kandilli Rasathanesi de 1975'ten itibaren, 1974'te kabul edilen bir protokole göre hilalin gözle görülebileceği ilk anı hesaplıyordu. Kavuşumdan sonraki ilk akşamlarda gün batımından hemen sonra batı ufkuna bakarak sen de genç hilali arayabilirsin; Güneş tamamen batmadan dürbünü o yöne çevirme.",
+        "Konferansın dördüncü kararı ilginç bir sonuç doğurur: hilal dünyanın herhangi bir yerinde görülebiliyorsa ay başlamış sayılabilir. Kavuşumdan sonra Ay, Güneş'ten her saat biraz daha uzaklaşır. Batıdaki yerlerde Güneş daha geç battığı için oradaki gözlemci, kavuşumdan daha çok zaman geçmiş bir anda bakar ve ince hilali yakalama şansı daha yüksektir. Yani bir ay, hilal İstanbul'dan henüz görülemeden, daha batıdaki bir yerde görülebildiği için başlamış sayılabilir. Bu, gökbilimsel bir olayın takvime nasıl çevrileceğinin bir gözlem sorusu kadar bir uzlaşma sorusu da olduğunu gösterir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Ramazan ne kadar hızlı kayar?",
+        "metin": "Adım 1: 12 × 29,530588 = 354,367 gün; TDV'nin kameri yıl değeriyle aynı. Adım 2: Güneş yılıyla fark: 365,242 − 354,367 = 10,875 gün. Adım 3: Bu kaymanın bir tam yıla ulaşması için 365,242 ÷ 10,875 ≈ 33,6 Hicri yıl gerekir. Adım 4: 33,6 Hicri yıl × 354,367 gün ≈ 11.900 gün; ÷ 365,242 ≈ 32,6 güneş yılı. Sonuç: Ramazan bütün mevsimleri yaklaşık 33 yılda bir dolaşır; TDV'nin verdiği 33,5 Hicri yıl ve 32,5 güneş yılı değerleriyle uyumlu. Bu, bir insan ömründe Ramazan'ı her mevsimde iki kez yaşayabileceğin anlamına gelir."
+      },
+      "akilda": "Hicri takvim 12 kameri aydan oluşur (≈ 354,367 gün); güneş yılından yaklaşık 10,9 gün kısa olduğu için dinî günler her yıl yaklaşık 11 gün erkene kayar. Ay başı hilalin görülebilirliğine bağlıdır; 1978 İstanbul konferansı 8° ve 5° ölçütlerini koydu."
+    },
+    {
+      "baslik": "Ay-güneş takvimleri: iki saati birlikte tutturmak",
+      "paragraflar": [
+        "Ay'ı da mevsimi de izlemek isteyen bir takvim ne yapar? On iki ay, güneş yılından yaklaşık 11 gün kısa kalır. On üç ay ise yaklaşık 383,9 gün eder ve 18 gün uzun gelir. Çözüm, çoğu yıl 12 ay sayıp bazı yıllara 13. bir ay eklemektir. Böyle takvimlere ay-güneş takvimi denir. Ayları Ay'ın evreleriyle uyumlu kalır, yılları ise ortalamada mevsimleri izler.",
+        "İslam öncesi Arabistan'da da araya ay eklemeye benzer bir uygulama vardı. TDV İslâm Ansiklopedisi bu uygulamayı, yani nesîyi, yıla 13. bir ay eklemek ve 29 ya da 30 günlük ayları keyfî kurallarla belirlemek olarak tanımlar; Kuran bu uygulamayı kınar. Hicri takvimin saf ay takvimi olmasının arka planında bu vardır.",
+        "Ek ayları hangi yıllara koyacağını bilmek için bir döngü gerekir. En ünlüsü Meton döngüsüdür: 19 güneş yılı, 235 kavuşum ayına neredeyse tam eşittir. Bu yüzden 19 yıl sonra dolunay takvimde yaklaşık aynı güne geri döner. 235, 19 × 12 = 228'den 7 fazladır; yani 19 yılda 7 kez 13. ay eklenirse aylar ve mevsimler birlikte kalır.",
+        "Gregoryen takviminin içinde de bir ay-güneş kuralı saklıdır: Paskalya. Kurala göre Paskalya, 21 Mart'ta ya da sonrasında gelen Paskalya dolunayını izleyen ilk pazar günü kutlanır. Kilise bu dolunayı gökyüzünden değil, 19 yıllık döngüye dayanan tablolardan hesaplar. 1582 reformu yalnızca güneş yılını değil, bu ay hesabını da düzeltmek zorunda kaldı; çünkü 19 yıllık döngü de zamanla kayıyordu. Paskalya'nın her yıl farklı bir tarihe düşmesi, Ay ile Güneş'i aynı anda izleyen kuralın sonucudur."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Meton döngüsü ne kadar iyi?",
+        "metin": "Adım 1: 19 tropik yıl: 19 × 365,242 = 6939,6 gün. Adım 2: 235 kavuşum ayı: 235 × 29,5306 = 6939,7 gün. Adım 3: Fark yaklaşık 0,1 gün, yani 2–3 saat. Adım 4: Ek ay sayısı: 235 − 19 × 12 = 235 − 228 = 7. Sonuç: 19 yılda yalnızca birkaç saatlik hata birikir; bu yüzden döngü yüzyıllarca işe yarar, ama bu küçük fark da zamanla bir güne ulaşır. Yaklaşık 19 ÷ 0,1 × 1 gün hesabıyla bu, kabaca 200–250 yılda bir gün eder; kesin değer kullandığın ay ve yıl uzunluklarına bağlıdır."
+      },
+      "akilda": "Ay-güneş takvimleri çoğu yıl 12, bazı yıllar 13 ay sayar. Meton döngüsünde 19 güneş yılı ≈ 235 kavuşum ayıdır, yani 19 yılda 7 ek ay gerekir. Paskalya, güneş takvimi içindeki bir ay-güneş kuralıdır."
+    },
+    {
+      "baslik": "Haftanın günleri: gökteki yedi gezgin",
+      "paragraflar": [
+        "Gün, ay ve yıl gökyüzünden gelir; hafta ise bir gök döngüsü değildir. Kavuşum ayının dörtte biri 29,53 ÷ 4 ≈ 7,4 gündür. Ay dersinde gördüğün gibi hilalden yarım Ay'a geçmek yaklaşık bir hafta sürer, ama bu yalnızca yaklaşık bir uyumdur. Haftanın yedi gününün adları ise pek çok dilde doğrudan gökten gelir: çıplak gözle görülen ve yıldızlar arasında gezinen yedi cisimden. Bunlar Güneş, Ay, Mars, Merkür, Jüpiter, Venüs ve Satürn'dür.",
+        "Peki günlerin sırası neden bu yedi cismin gökteki sırasına uymaz? Helenistik astrolojide bu cisimler gökte en yavaştan en hızlıya dizilirdi: Satürn, Jüpiter, Mars, Güneş, Venüs, Merkür, Ay. Bu sıraya bazen Kalde sırası denir, ama bu ad moderndir ve sıranın Babil'den geldiğine dair kanıt yoktur. Gezegen saatleri düzeninde günün 24 saatinin her biri sırayla bir cisme verilirdi ve gün, ilk saatinin cisminin adını alırdı. 24'ü 7'ye böldüğünde 3 kalır; bu yüzden her yeni günün ilk saati, dizide üç adım ileri düşer. Satürn'den başlarsan Güneş, Ay, Mars, Merkür, Jüpiter, Venüs sırası çıkar: bugünkü hafta.",
+        "Bu sistemin eski olduğunu biliyoruz. Pompeii'de bulunan bir duvar yazısı, 6 Şubat 60 tarihini bir Pazar olarak anar. Roma İmparatorluğu, birinci ile üçüncü yüzyıllar arasında sekiz günlük döngüsünü bırakıp yedi günlük haftaya geçti. İmparator Konstantin 321'de haftayı resmîleştirdi ve Güneş gününü tatil yaptı. Yaklaşık 100 yılında Plutarkhos'un, günlerin neden gezegenlerin gerçek sırasından farklı dizildiğini soran bir yazı yazdığı biliniyor; yazı kayıp.",
+        "İzleri bugün de dillerde. Latince adlar dies Solis, dies Lunae, dies Martis, dies Mercurii, dies Iovis, dies Veneris ve dies Saturni idi. Fransızca, İspanyolca ve İtalyanca Pazar dışındaki günlerde bu adları korur; Fransızcadaki lundi, mardi, mercredi, jeudi, vendredi Ay, Mars, Merkür, Jüpiter ve Venüs'ün günleridir. İngilizce Saturday adını Satürn'den, Sunday ve Monday adlarını Güneş ve Ay'dan alır; arada kalan günlerde Roma tanrıları yerine Tiw, Woden, Thor ve Frigg gibi Cermen tanrıları geçer. Japoncada da nichiyōbi'den doyōbi'ye uzanan gezegen adları kullanılır. Türkçedeki Pazar, Pazartesi, Salı, Çarşamba, Perşembe, Cuma ve Cumartesi adları ise bu gezegen dizisini taşımaz; kökenleri bu dersin kaynaklarında yer almadığı için ayrıntıya girmiyoruz."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Gezegen saatleriyle haftayı kurmak",
+        "metin": "Dizi: Satürn, Jüpiter, Mars, Güneş, Venüs, Merkür, Ay (sonra yeniden Satürn). Adım 1: Birinci günün 1. saati Satürn'e verilsin. 24 saat dizide 24 adım ilerler; 24 = 3 × 7 + 3, yani bir sonraki günün 1. saati Satürn'den 3 adım ileri düşer: Jüpiter, Mars, Güneş. İkinci gün Güneş günüdür. Adım 2: Güneş'ten 3 adım: Venüs, Merkür, Ay. Üçüncü gün Ay günüdür. Adım 3: Ay'dan 3 adım: Satürn, Jüpiter, Mars. Adım 4: Mars'tan 3 adım Merkür, Merkür'den 3 adım Jüpiter, Jüpiter'den 3 adım Venüs, Venüs'ten 3 adım yeniden Satürn. Sonuç: Satürn, Güneş, Ay, Mars, Merkür, Jüpiter, Venüs; Saturday, Sunday, Monday diye giden haftanın sırası."
+      },
+      "akilda": "Hafta bir gök döngüsü değildir, ama gün adları çıplak gözle görülen yedi gezginden gelir. 24 saatin her biri sırayla bir cisme verilince ve 24 = 3 × 7 + 3 olduğu için her gün dizide üç adım atlar: Satürn, Güneş, Ay, Mars, Merkür, Jüpiter, Venüs."
+    },
+    {
+      "baslik": "Presesyon ve takvimin geleceği: mevsim sabit, yıldızlar kayıyor",
+      "paragraflar": [
+        "Gregoryen takvimi tropik yılı izlediği için mevsimleri yerinde tutar: Mart ekinoksu hep 20–21 Mart civarına düşer. Bunun bir bedeli vardır. Presesyon yüzünden ilkbahar noktası yıldızlara göre yılda yaklaşık 50,3 yay saniyesi kayar; takvim mevsime bağlı kaldıkça yıldızlar takvimde yavaşça yer değiştirir. Yaklaşık 5.000 yıl önce Mart ekinoksunda Güneş Boğa takımyıldızında, Aldebaran yakınındaydı; bugün Balıklar takımyıldızındadır. Burç adlarının takımyıldızlarla neden artık örtüşmediğini takımyıldızlar dersinde göreceksin.",
+        "Bu kaymanın gündelik bir sonucu, bir yıldızın şafaktan önce ilk kez göründüğü günün takvimde yavaş yavaş ileri kaymasıdır. Kayma bir insan ömründe birkaç günü geçmez, ama binlerce yılda büyür. Presesyon turunun yarısı, yani yaklaşık 13.000 yıl sonra, ekinokslar tutulumun öbür yanına geçmiş olacak. Kabaca söylersek, bugün kış akşamlarında gördüğün takımyıldızlar o zaman yaz akşamlarının gökyüzünde olacak; mevsimler takvimde aynı kalırken gökyüzünün mevsimlik görünümü değişecek. Bu hesap kabadır: presesyon yıldızların dik açıklığını da değiştirdiği için bazı yıldızlar İstanbul'dan daha yüksek, bazıları daha alçak görünecek.",
+        "Hiçbir takvim son sözü söylemez. Presesyonun hızı sabit değildir; 25.772 yıl bugünkü hıza göre hesaplanmış bir değerdir. Gregoryen takvimi birkaç bin yılda bir gün kaçırır. Üstelik Dünya'nın dönüşü yavaşladıkça günün kendisi uzar ve bir yıldaki gün sayısı çok yavaş azalır. Gelecekteki takvimciler bu birikimleri yine düzeltmek zorunda kalacak, tıpkı 1582'de ve 2026'da yapıldığı gibi. Bu derste gördüğün her düzeltme aynı soruya verilmiş bir cevaptır: gökyüzünün birbirine tam bölünmeyen saatlerini, insanın kullanabileceği tam sayılara nasıl çeviririz?"
+      ],
+      "ornek": {
+        "baslik": "Örnek: Bir yıldızın takvim tarihi ne hızla kayar?",
+        "metin": "Adım 1: Güneş tutulum boyunca günde yaklaşık 360° ÷ 365,24 ≈ 0,9856° ilerler; bu 0,9856 × 3600 ≈ 3548 yay saniyesi eder. Adım 2: İlkbahar noktası yıldızlara göre yılda 50,3″ kayar. Güneş'in belirli bir yıldızın önüne geldiği takvim günü her yıl 50,3 ÷ 3548 ≈ 0,0142 gün kayar. Adım 3: 1 ÷ 0,0142 ≈ 70 yıl. Sonuç: bir yıldızla ilgili takvim tarihi yaklaşık 70 yılda bir gün kayar; 2000 yılda yaklaşık 28 gün, yani neredeyse bir ay. Antik çağda belirli bir tarihe bağlanan yıldız olaylarının bugün aynı tarihte olmaması bu yüzdendir."
+      },
+      "akilda": "Takvim mevsimi izler, yıldızlar presesyonla kayar: Mart ekinoksu bugün Balıklar'da. Yaklaşık 13.000 yıl sonra kış takımyıldızları yaz akşamlarına geçmiş olacak. Takvimler, birbirine tam bölünmeyen gök döngüleri arasında süregiden uzlaşmalardır."
+    }
+  ],
+  "formuller": [
+    {
+      "ad": "Zaman denklemi",
+      "ifade": "ZD = görünür güneş zamanı − ortalama güneş zamanı",
+      "aciklama": "ZD dakika cinsinden. Artıysa güneş saati kol saatinden ileride, eksiyse geridedir. Yıl içinde yaklaşık +16 dk 33 sn (3 Kasım) ile −14 dk 6 sn (11 Şubat) arasında değişir."
+    },
+    {
+      "ad": "Gerçek öğle saati",
+      "ifade": "gerçek öğle = ortalama öğle − ZD",
+      "aciklama": "Ortalama öğle, ortalama Güneş'in yerel meridyenden geçtiği saattir (İstanbul'da UTC + 3 ile yaklaşık 13:04). ZD artıyken Güneş meridyene erken gelir."
+    },
+    {
+      "ad": "Boylamdan yerel ortalama zaman",
+      "ifade": "yerel ortalama zaman = UTC + λ ÷ 15° (saat)",
+      "aciklama": "λ doğu boylamı (derece). Her derece 4 dakika, her yay dakikası 4 saniye eder. İstanbul: 28,955° ÷ 15° ≈ 1 sa 55 dk 49 sn."
+    },
+    {
+      "ad": "Gregoryen ortalama yılı",
+      "ifade": "(400 × 365 + 97) ÷ 400 = 365,2425 gün",
+      "aciklama": "400 yılda 97 artık yıl: 4'e bölünen yıllar artık, 100'e bölünenler değil, 400'e bölünenler yine artık. 146.097 gün tam 20.871 haftadır."
+    },
+    {
+      "ad": "Hicri takvimin yıllık kayması",
+      "ifade": "365,242 − 12 × 29,530588 ≈ 10,875 gün",
+      "aciklama": "Tropik yıl ile 12 kavuşum ayının farkı. Hicri tarihler Miladi takvimde her yıl yaklaşık 11 gün erkene kayar; bütün mevsimleri yaklaşık 33 yılda dolaşır."
+    },
+    {
+      "ad": "Meton döngüsü",
+      "ifade": "19 tropik yıl ≈ 235 kavuşum ayı (≈ 6939,6 gün)",
+      "aciklama": "235 = 19 × 12 + 7; ay-güneş takviminde 19 yılda 7 ek ay gerekir. Yaklaşıklık 19 yılda birkaç saatlik fark bırakır."
+    }
+  ],
+  "anahtar_sayilar": [
+    {
+      "deger": "+16 dk 33 sn / −14 dk 6 sn",
+      "aciklama": "Zaman denkleminin uç değerleri: yaklaşık 3 Kasım'da güneş saati ileride, yaklaşık 11 Şubat'ta geride",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Equation_of_time"
+    },
+    {
+      "deger": "7,66 dk ve 9,87 dk",
+      "aciklama": "Zaman denkleminin yörünge basıklığından (yıllık) ve eksen eğikliğinden (yarım yıllık) gelen bileşenlerinin genliği",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Equation_of_time"
+    },
+    {
+      "deger": "≈ 13:04",
+      "aciklama": "İstanbul'da UTC + 3 ile ortalama Güneş'in meridyenden geçtiği saat; 13 Haziran 2025 tablosunda Güneş'in geçişi 13:04",
+      "kaynak_url": "https://timeanddate.com/sun/@745042"
+    },
+    {
+      "deger": "8 Eylül 2016",
+      "aciklama": "Yaz saatini yıl boyu süreklileştiren 2016/9154 sayılı Bakanlar Kurulu Kararı'nın Resmî Gazete'de yayımlandığı gün (sayı 29825); Türkiye o günden beri UTC + 3",
+      "kaynak_url": "https://www.alomaliye.com/2016/09/08/bkk-20169154-gun-isigindan-daha-fazla-yararlanmak/amp/"
+    },
+    {
+      "deger": "9.192.631.770",
+      "aciklama": "Bir saniyedeki sezyum 133 ışınım periyodu sayısı; 1967'den beri SI saniyesinin tanımı",
+      "kaynak_url": "https://www.bipm.org/en/si-base-units/second"
+    },
+    {
+      "deger": "27 artık saniye, 37 sn",
+      "aciklama": "1972–2016 arasında eklenen artık saniye sayısı (sonuncusu 31 Aralık 2016) ve bugünkü TAI − UTC farkı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Leap_second"
+    },
+    {
+      "deger": "20 Mayıs 2027, 3.600 sn",
+      "aciklama": "28. CGPM'nin 5 numaralı kararına (15 Ekim 2026) göre sürekli UTC'nin yürürlük tarihi ve UT1 ile UTC arasındaki en büyük fark",
+      "kaynak_url": "https://www.bipm.org/en/cgpm-2026/resolution-5"
+    },
+    {
+      "deger": "365,242 / 365,256 gün",
+      "aciklama": "Tropik yıl (mevsimler) ve yıldızıl yıl (yıldızlar); fark yaklaşık 1.224,5 sn ve presesyondan gelir",
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html"
+    },
+    {
+      "deger": "365,2425 gün",
+      "aciklama": "Gregoryen takviminin ortalama yılı (400 yılda 97 artık yıl); hata yaklaşık 3.000–3.300 yılda bir gün",
+      "kaynak_url": "https://www.tondering.dk/claus/cal/gregorian.php"
+    },
+    {
+      "deger": "1 Ocak 1926",
+      "aciklama": "698 sayılı yasaya göre 31 Kânunuevvel 1341'in ertesi günü; Türkiye'de Miladi yıl sayımının başlangıcı",
+      "kaynak_url": "https://www5.tbmm.gov.tr/tutanaklar/KANUNLAR_KARARLAR/kanuntbmmc004/kanuntbmmc004/kanuntbmmc00400698.pdf"
+    },
+    {
+      "deger": "354,367 gün",
+      "aciklama": "Hicri (kameri) yılın uzunluğu; güneş yılından yaklaşık 10,875 gün kısa",
+      "kaynak_url": "https://islamansiklopedisi.org.tr/takvim"
+    },
+    {
+      "deger": "8° ve 5°",
+      "aciklama": "1978 İstanbul Rü'yet-i Hilal Konferansı ölçütleri: kavuşumdan sonra Ay ile Güneş arası açı ve gün batımında Ay'ın yüksekliği için alt sınır",
+      "kaynak_url": "https://islamansiklopedisi.org.tr/hilal"
+    }
+  ],
+  "sozluk": [
+    {
+      "terim": "görünür güneş zamanı",
+      "tanim": "Güneş'in gökteki gerçek yerine göre okunan, güneş saatinin gösterdiği zaman."
+    },
+    {
+      "terim": "ortalama güneş zamanı",
+      "tanim": "Gök ekvatoru boyunca düzgün hızla yürüdüğü varsayılan hayali bir Güneş'e göre işleyen, her günü tam 24 saat olan zaman."
+    },
+    {
+      "terim": "zaman denklemi",
+      "tanim": "Görünür güneş zamanı ile ortalama güneş zamanı arasındaki, yıl içinde yaklaşık 16 dakika ileri ile 14 dakika geri arasında değişen fark."
+    },
+    {
+      "terim": "analemma",
+      "tanim": "Güneş'in bir yıl boyunca her gün aynı saatte gökte bulunduğu yerlerin çizdiği sekiz biçimli eğri."
+    },
+    {
+      "terim": "yerel ortalama zaman",
+      "tanim": "Ortalama Güneş'in bir yerin kendi meridyeninden geçtiği anı öğle sayan, boylama göre değişen yerel saat."
+    },
+    {
+      "terim": "saat dilimi",
+      "tanim": "Aynı resmî saati kullanan, kabaca bir meridyenin güneş zamanına bağlı bölge."
+    },
+    {
+      "terim": "UTC",
+      "tanim": "Eşgüdümlü Evrensel Zaman; atom saatlerinin hızıyla işleyen ve dünyadaki yasal saatlerin çoğunun dayandığı başvuru zaman ölçeği."
+    },
+    {
+      "terim": "UT1",
+      "tanim": "Dünya'nın kendi ekseni çevresindeki gerçek dönüşüne dayanan zaman ölçeği."
+    },
+    {
+      "terim": "TAI",
+      "tanim": "Uluslararası Atom Zamanı; atom saniyesiyle hiç ayarlanmadan sayan zaman ölçeği."
+    },
+    {
+      "terim": "atom saati",
+      "tanim": "Bir atomun belirli bir enerji geçişine karşılık gelen ışınımın salınımlarını sayarak zamanı ölçen saat."
+    },
+    {
+      "terim": "artık saniye",
+      "tanim": "UTC'yi Dünya'nın dönüşüne yakın tutmak için 1972–2016 arasında zaman zaman eklenen fazladan saniye."
+    },
+    {
+      "terim": "tropik yıl",
+      "tanim": "Güneş'in aynı ekinoks noktasına geri dönmesi için geçen, mevsimlerin tekrarlandığı yaklaşık 365,242 günlük süre."
+    },
+    {
+      "terim": "yıldızıl yıl",
+      "tanim": "Dünya'nın uzak yıldızlara göre Güneş çevresindeki bir tam dolanımı; yaklaşık 365,256 gün."
+    },
+    {
+      "terim": "artık yıl",
+      "tanim": "Takvimi mevsimlerle uyumlu tutmak için fazladan bir gün eklenen 366 günlük yıl."
+    },
+    {
+      "terim": "Jülyen takvimi",
+      "tanim": "Her dört yılda bir artık yıl sayan ve ortalama yılı 365,25 gün olan Roma kökenli güneş takvimi."
+    },
+    {
+      "terim": "Gregoryen takvimi",
+      "tanim": "1582 reformuyla 100'e bölünüp 400'e bölünmeyen yılları artık yıl saymayan, ortalama yılı 365,2425 gün olan bugünkü güneş takvimi."
+    },
+    {
+      "terim": "Rumi takvim",
+      "tanim": "Osmanlı'da Jülyen ay ve günlerini Hicret'ten başlayan güneş yılı sayımıyla birleştiren mali ve resmî takvim."
+    },
+    {
+      "terim": "Hicri takvim",
+      "tanim": "Hicret'i başlangıç alan, 29 ya da 30 günlük 12 kameri aydan oluşan ve yılı yaklaşık 354 gün süren ay takvimi."
+    },
+    {
+      "terim": "ay-güneş takvimi",
+      "tanim": "Aylarını Ay'ın evrelerine bağlayıp bazı yıllara ek ay koyarak yıllarını ortalamada mevsimlere uyduran takvim."
+    },
+    {
+      "terim": "Meton döngüsü",
+      "tanim": "19 güneş yılının 235 kavuşum ayına neredeyse eşit olmasına dayanan takvim döngüsü."
+    },
+    {
+      "terim": "hilal",
+      "tanim": "Kavuşumdan sonra gün batımında batı ufkunda görülen, Ay'ın ince aydınlık kenarı."
+    }
+  ],
+  "defter_notu": [
+    "Güneş saati = görünür güneş zamanı; kol saati = ortalama güneş zamanı. Fark = zaman denklemi: ≈ +16,5 dk (3 Kasım), ≈ −14 dk (11 Şubat); sıfır ≈ 15 Nis, 13 Haz, 1 Eyl, 25 Ara.",
+    "Zaman denkleminin iki nedeni: yörünge basıklığı (≈ 7,7 dk, yıllık) + eksen eğikliği (≈ 9,9 dk, yarım yıllık). Analemma = Güneş'in yıllık sekizi; boyu mevsim, eni zaman denklemi.",
+    "1° boylam = 4 dk. İstanbul 28,955° D → yerel ortalama zaman UTC + 1 sa 55 dk 49 sn → UTC + 3 ile ortalama öğle ≈ 13:04 (gerçek öğle ≈ 12:48 ile 13:18 arası).",
+    "697 sayılı yasa (kabul 26.12.1925, RG 2.1.1926 sayı 260): gün gece yarısı başlar, saat 0–24, esas 30° D meridyeni. 2016/9154 BKK (RG 8.9.2016 sayı 29825): yaz saati yıl boyu → Türkiye sürekli UTC + 3.",
+    "Saniye (1967): sezyum 133'ün 9.192.631.770 salınımı. UT1 = Dünya'nın dönüşü, TAI = atom, UTC = atom hızında, UT1'e yakın tutulan. TAI − UTC = 37 sn.",
+    "Artık saniye: 1972'den 27 tane, sonuncusu 31.12.2016. CGPM 2022 Karar 4: sınır 2035'e kadar artacak. CGPM 2026 Karar 5 (15 Ekim 2026): 20 Mayıs 2027'den UTC kesintisiz, UT1 − UTC en çok 3600 sn.",
+    "Tropik yıl 365,242 gün (mevsim), yıldızıl yıl 365,256 gün (yıldız); fark ≈ 20 dk 24 sn = presesyon. Jülyen 365,25 (yılda +11 dk 14 sn, ≈ 128 yılda 1 gün).",
+    "Gregoryen (24.2.1582 Inter gravissimas): 4 Ekim Perşembe → 15 Ekim Cuma. 4'e bölünen artık, 100'e bölünen değil, 400'e bölünen artık → 365,2425 gün; 400 yıl = 146.097 gün = 20.871 hafta.",
+    "Türkiye: Rumi takvim (Jülyen ay-gün + Hicret'ten güneş yılı, fark 584). 1917: 15 Şubat 1332 → 1 Mart 1333 (13 gün). 698 sayılı yasa: 31 Kânunuevvel 1341 → 1 Ocak 1926. Hicri takvim özel durumlarda, ay başını rasathane belirler.",
+    "Hicri yıl ≈ 354,367 gün → yılda ≈ 10,9 gün kayma, ≈ 33 yılda tur. Hilal: 1978 İstanbul ölçütü 8° ve 5°. Meton: 19 yıl ≈ 235 ay (7 ek ay). Gün adları: 24 = 3 × 7 + 3 → Satürn, Güneş, Ay, Mars, Merkür, Jüpiter, Venüs."
+  ],
+  "sorular": [
+    {
+      "soru": "Güneş saatin 3 Kasım'da kol saatinden yaklaşık kaç dakika ileride olur ve bunun adı nedir?",
+      "cevap": "Yaklaşık 16,5 dakika (16 dk 33 sn) ileride olur. Görünür güneş zamanı ile ortalama güneş zamanı arasındaki bu farka zaman denklemi denir; en derin eksi değeri ise 11 Şubat civarında yaklaşık −14 dk 6 sn'dir."
+    },
+    {
+      "soru": "Zaman denkleminin iki nedenini ve hangisinin daha büyük olduğunu açıkla.",
+      "cevap": "Birincisi yörüngenin basıklığıdır: Dünya Ocak başında Güneş'e yakın ve hızlı olduğu için güneş günleri uzar; bu bileşenin genliği yaklaşık 7,66 dk ve periyodu bir yıldır. İkincisi eksen eğikliğidir: Güneş tutulum boyunca yürür ama saat sağ açıklıktaki ilerlemeyi sayar; gündönümlerinde sağ açıklık hızlı, ekinokslarda yavaş artar. Genliği yaklaşık 9,87 dk, periyodu yarım yıldır; yani eğiklik etkisi daha büyüktür."
+    },
+    {
+      "soru": "İstanbul'un boylamı yaklaşık 28,955° D. Türkiye UTC + 3 kullandığına göre İstanbul'da ortalama öğle saat kaçta olur? 11 Şubat'ta gerçek öğle ne zaman gelir?",
+      "cevap": "28,955° × 4 dk = 115,8 dk ≈ 1 sa 55 dk 49 sn. Ortalama öğle 12:00 + 3 sa − 1 sa 55,8 dk ≈ 13:04. 11 Şubat'ta zaman denklemi yaklaşık −14,1 dk olduğundan gerçek öğle 13:04 + 14 dk ≈ 13:18 civarında gelir."
+    },
+    {
+      "soru": "Neden en erken gün batımı yılın en kısa gününe denk gelmez?",
+      "cevap": "Aralık gündönümü çevresinde gündüz uzunluğu en küçük değerinde olduğu için günden güne yalnızca birkaç saniye değişir. Aynı haftalarda zaman denklemi hızla azalır ve gerçek öğle her gün yaklaşık yarım dakika gecikir. Gündüz sabitken öğle kaydığı için gün doğumu ve batımı birlikte geç saatlere kayar; en erken gün batımı gündönümünden önce, en geç gün doğumu sonra gelir."
+    },
+    {
+      "soru": "Türkiye'nin yasal saat düzenini iki belgeye dayanarak özetle.",
+      "cevap": "697 sayılı yasa (kabul 26 Aralık 1925, Resmî Gazete 2 Ocak 1926, sayı 260) günün gece yarısı başlamasını ve saatlerin 0–24 sayılmasını getirir; bugünkü metne göre 30° doğu meridyeni esas alınır ve en çok bir saatlik ileri saat uygulanabilir. 8 Eylül 2016 tarihli, 29825 sayılı Resmî Gazete'de yayımlanan 2016/9154 sayılı Bakanlar Kurulu Kararı yaz saatini yıl boyu sürdürdü. Sonuç: Türkiye sürekli UTC + 3 kullanır."
+    },
+    {
+      "soru": "UT1, TAI ve UTC arasındaki fark nedir? TAI − UTC bugün kaç saniyedir?",
+      "cevap": "UT1 Dünya'nın gerçek dönüşüne dayanır. TAI atom saniyesiyle hiç ayarlanmadan sayar. UTC, TAI ile aynı hızda işler ama ondan tam sayıda saniye farklıdır ve bu fark UTC'yi UT1'e yakın tutmak için ayarlanmıştır. 1972'de 10 sn olan fark 27 artık saniyeyle 37 sn'ye çıktı."
+    },
+    {
+      "soru": "Artık saniye neden kaldırılıyor ve 2026 kararı tam olarak ne diyor?",
+      "cevap": "Eklenen saniyeler yazılım sorunlarına yol açtı, işletmeciler bunları farklı yöntemlerle uyguladı ve Dünya'nın son yıllardaki hızlanması hiç denenmemiş bir eksi artık saniye ihtimalini doğurdu. 28. CGPM 15 Ekim 2026'da 5 numaralı kararla sürekli UTC'nin 20 Mayıs 2027'de yürürlüğe girmesine ve UT1 ile UTC farkının en çok 3.600 saniyeye kadar büyüyebilmesine karar verdi."
+    },
+    {
+      "soru": "1972–2016 arasında 27 artık saniye eklendi. Bu, bir günün atom saniyesiyle ortalama ne kadar uzun sürdüğünü gösterir?",
+      "cevap": "45 yılda 27 sn, yılda 0,6 sn eder. 0,6 ÷ 365,25 ≈ 0,0016 sn; yani bir dönüş ortalama 86.400 sn'den yaklaşık 1,6 milisaniye uzun sürdü. Bu bir ortalamadır; dönüş hızı yıldan yıla değişir."
+    },
+    {
+      "soru": "Takvimler neden yıldızıl yılı değil tropik yılı izler? İkisinin farkı nereden gelir?",
+      "cevap": "Takvimin amacı mevsimleri (ekim, hasat, ekinoksa bağlı bayramlar) yerinde tutmaktır; mevsimleri Güneş'in ekinoks noktasına dönüşü, yani tropik yıl (365,242 gün) belirler. Yıldızıl yıl (365,256 gün) yaklaşık 20 dk 24 sn daha uzundur, çünkü presesyon ilkbahar noktasını yılda yaklaşık 50,3″ batıya kaydırır ve Güneş ona biraz erken ulaşır."
+    },
+    {
+      "soru": "Jülyen takvimi yılda ne kadar hata yapar ve Gregoryen kuralı bunu nasıl düzeltir?",
+      "cevap": "Jülyen yılı 365,25 gündür, tropik yıldan yaklaşık 11 dk 14 sn uzundur; bu 128 yılda bir gün, 400 yılda yaklaşık 3 gün eder. Gregoryen kuralı 400 yılda 3 artık yılı kaldırır: 100'e bölünüp 400'e bölünmeyen yıllar artık değildir. Ortalama yıl 365,2425 gün olur ve hata birkaç bin yılda bir güne iner."
+    },
+    {
+      "soru": "Rumi 1341 yılı Miladi kaçtır? Türkiye 1917'de ve 1926'da takvimde neyi değiştirdi?",
+      "cevap": "Rumi ile Miladi yıl arasında 584 fark olduğu için 1341 + 584 = 1925. 1917'de Rumi 1332'nin 15 Şubat'ından sonraki gün 1 Mart 1333 sayıldı; 13 gün atlanarak ay ve gün Gregoryen'e uydu, yıl sayısı Rumi kaldı. 698 sayılı yasayla 31 Kânunuevvel 1341'in ertesi günü 1 Ocak 1926 oldu ve yıl sayımı da Miladi'ye geçti."
+    },
+    {
+      "soru": "Ramazan neden her yıl yaklaşık 11 gün erken gelir ve yaklaşık kaç yılda bütün mevsimleri dolaşır?",
+      "cevap": "Hicri yıl 12 kameri aydır ve yaklaşık 354,367 gün sürer; güneş yılından yaklaşık 10,875 gün kısadır. Bu yüzden Hicri tarihler Miladi takvimde her yıl yaklaşık 11 gün erkene kayar. TDV'ye göre bütün mevsimleri yaklaşık 33,5 Hicri yılda, yani 32,5 güneş yılında dolaşır."
+    },
+    {
+      "soru": "1978 İstanbul Rü'yet-i Hilal Konferansı hilalin görülebilmesi için hangi iki ölçütü koydu? Bu ölçütler neden gerekli?",
+      "cevap": "Kavuşumdan sonra Ay ile Güneş arasındaki açı en az 8°, gün batımında Ay'ın ufuktan yüksekliği en az 5° olmalıdır. Yeni Ay, Güneş'e çok yakın ve çok ince olduğu için gün batımının parıltısında kaybolur; yeterince uzaklaşmadan ve ufkun yeterince üstünde kalmadan gözle görülemez."
+    },
+    {
+      "soru": "Pazar gününün ardından neden Ay günü (Monday, lundi) gelir? Gezegen saatleriyle açıkla.",
+      "cevap": "Gezegenler en yavaştan en hızlıya Satürn, Jüpiter, Mars, Güneş, Venüs, Merkür, Ay diye dizilir ve günün her saati sırayla birine verilir. 24 = 3 × 7 + 3 olduğu için ertesi günün ilk saati dizide üç adım ileri düşer. Güneş'ten üç adım ileri Venüs, Merkür, Ay'dır; bu yüzden Güneş gününü Ay günü izler."
+    }
+  ],
+  "kaynaklar": [
+    {
+      "ad": "BIPM – 28. CGPM (2026) Karar 5: UTC'nin sürekliliği",
+      "url": "https://www.bipm.org/en/cgpm-2026/resolution-5"
+    },
+    {
+      "ad": "BIPM – 27. CGPM (2022) Karar 4: UTC'nin kullanımı ve geleceği",
+      "url": "https://www.bipm.org/en/cgpm-2022/resolution-4"
+    },
+    {
+      "ad": "BIPM – CCTF Başkanının 2026 CGPM açıklaması",
+      "url": "https://www.bipm.org/documents/d/guest/statement-cctf-president-cgpm-2026"
+    },
+    {
+      "ad": "BIPM – SI temel birimi: saniye",
+      "url": "https://www.bipm.org/en/si-base-units/second"
+    },
+    {
+      "ad": "BIPM – 13. CGPM (1967) Karar 1: saniyenin tanımı",
+      "url": "https://www.bipm.org/committees/cg/cgpm/13-1967/resolution-1"
+    },
+    {
+      "ad": "Wikipedia – Leap second",
+      "url": "https://en.wikipedia.org/wiki/Leap_second"
+    },
+    {
+      "ad": "Euronews – Leap second scrapped from 2027 (16 Ekim 2026)",
+      "url": "https://www.euronews.com/next/2026/10/16/global-timekeeping-rules-change-leap-second-scrapped-from-2027"
+    },
+    {
+      "ad": "Resmî Gazete 8.9.2016 sayı 29825 – BKK 2016/9154 (metin: Alomaliye)",
+      "url": "https://www.alomaliye.com/2016/09/08/bkk-20169154-gun-isigindan-daha-fazla-yararlanmak/amp/"
+    },
+    {
+      "ad": "697 sayılı Günün Yirmi Dört Saate Taksimine Dair Kanun (metin: Alomaliye)",
+      "url": "https://www.alomaliye.com/2000/01/02/gunun-yirmi-dort-saate-taksimine-697-sayili-kanun/"
+    },
+    {
+      "ad": "TBMM – 698 sayılı Takvimde Tarih Mebdeinin Tebdili Hakkında Kanun",
+      "url": "https://www5.tbmm.gov.tr/tutanaklar/KANUNLAR_KARARLAR/kanuntbmmc004/kanuntbmmc004/kanuntbmmc00400698.pdf"
+    },
+    {
+      "ad": "timeanddate – Turkey on permanent UTC + 3",
+      "url": "https://www.timeanddate.com/news/time/turkey-permanent-trt.html"
+    },
+    {
+      "ad": "timeanddate – Turkey scraps DST (2016)",
+      "url": "https://www.timeanddate.com/news/time/turkey-scraps-dst-2016.html"
+    },
+    {
+      "ad": "Wikipedia – Daylight saving time in Turkey",
+      "url": "https://en.wikipedia.org/wiki/Daylight_saving_time_in_Turkey"
+    },
+    {
+      "ad": "timeanddate – İstanbul gün doğumu, batımı ve öğle",
+      "url": "https://timeanddate.com/sun/@745042"
+    },
+    {
+      "ad": "Wikipedia – Equation of time",
+      "url": "https://en.wikipedia.org/wiki/Equation_of_time"
+    },
+    {
+      "ad": "J. Denker – Analemma and equation of time",
+      "url": "https://www.av8n.com/physics/analemma.htm"
+    },
+    {
+      "ad": "Universe Today – Having fun with the equation of time",
+      "url": "https://www.universetoday.com/articles/having-fun-with-the-equation-of-time"
+    },
+    {
+      "ad": "NASA – Earth Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html"
+    },
+    {
+      "ad": "Wikipedia – Axial precession",
+      "url": "https://en.wikipedia.org/wiki/Axial_precession"
+    },
+    {
+      "ad": "Wikipedia – Sidereal time",
+      "url": "https://en.wikipedia.org/wiki/Sidereal_time"
+    },
+    {
+      "ad": "Britannica – Calendar: The Gregorian calendar",
+      "url": "https://www.britannica.com/science/calendar/The-Gregorian-calendar"
+    },
+    {
+      "ad": "C. Tøndering – Calendar FAQ: The Gregorian calendar",
+      "url": "https://www.tondering.dk/claus/cal/gregorian.php"
+    },
+    {
+      "ad": "Wikipedia – Gregorian calendar",
+      "url": "https://en.wikipedia.org/wiki/Gregorian_year"
+    },
+    {
+      "ad": "Wikipedia – Rumi calendar",
+      "url": "https://en.wikipedia.org/wiki/Rumi_calendar"
+    },
+    {
+      "ad": "M. Bulut – TBMM'de takvimler ve ru'yet-i hilal üzerine bir müzakere (Diyanet İlmî Dergi)",
+      "url": "https://dergipark.org.tr/en/download/article-file/410422"
+    },
+    {
+      "ad": "TDV İslâm Ansiklopedisi – Takvim",
+      "url": "https://islamansiklopedisi.org.tr/takvim"
+    },
+    {
+      "ad": "TDV İslâm Ansiklopedisi – Tarih",
+      "url": "https://islamansiklopedisi.org.tr/tarih"
+    },
+    {
+      "ad": "TDV İslâm Ansiklopedisi – Hilâl",
+      "url": "https://islamansiklopedisi.org.tr/hilal"
+    },
+    {
+      "ad": "Wikipedia – Names of the days of the week",
+      "url": "https://en.wikipedia.org/wiki/Names_of_the_days_of_the_week"
+    },
+    {
+      "ad": "Wikipedia – Planetary hours",
+      "url": "https://en.wikipedia.org/wiki/Planetary_hours"
+    },
+    {
+      "ad": "IMO – Meteor Shower Calendar",
+      "url": "https://www.imo.net/resources/calendar/"
+    },
+    {
+      "ad": "Wikipedia – Istanbul (koordinatlar)",
+      "url": "https://en.wikipedia.org/wiki/Istanbul"
+    }
+  ]
+}
