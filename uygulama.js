@@ -214,7 +214,10 @@
     const blob = new Blob([icsMetni(o)], { type: 'text/calendar;charset=utf-8' });
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
-    a.download = 'urania-' + o.baslik.toLocaleLowerCase('tr-TR').replace(/[^a-z0-9çğıöşü]+/g, '-').replace(/^-|-$/g, '') + '.ics';
+    /* Dosya adı yalnız ASCII: Chromium "ö", "ş" gibi harfli adı reddedip uzantısız "download" adıyla indiriyordu
+       (takvim uygulaması dosyayı tanımıyor). Türkçe harfler en yakın Latin harfine çevrilir. */
+    const tr = { ç: 'c', ğ: 'g', ı: 'i', ö: 'o', ş: 's', ü: 'u', â: 'a', î: 'i', û: 'u' };
+    a.download = 'urania-' + o.baslik.toLocaleLowerCase('tr-TR').replace(/[çğıöşüâîû]/g, h => tr[h]).replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') + '.ics';
     document.body.appendChild(a); a.click(); a.remove();
     setTimeout(() => URL.revokeObjectURL(a.href), 2000);
   }

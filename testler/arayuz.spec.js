@@ -179,7 +179,7 @@ test('Jüpiter satırında uydu şeması', async ({ page }) => {
 
 test('Takvime ekle: geçerli .ics dosyası iner', async ({ page }) => {
   await page.goto('/index.html#gok');
-  const [indirme] = await Promise.all([page.waitForEvent('download'), page.locator('#gkOlay .takvim-bag').first().click()]);
+  const [indirme] = await Promise.all([page.waitForEvent('download'), page.locator('#gkOlay li', { hasText: 'Yeni Ay' }).first().locator('.takvim-bag').click()]);
   const yol = await indirme.path();
   const metin = require('fs').readFileSync(yol, 'utf8');
   expect(indirme.suggestedFilename()).toMatch(/\.ics$/);
@@ -217,4 +217,10 @@ test('Tanı ekranı: rapor oluşur, yön olayı sayılır, kopyalanır', async (
   await expect(page.locator('#tnDurum')).toContainText('Kopyalandı');
   const pano = await page.evaluate(() => navigator.clipboard.readText());
   expect(pano).toContain('SERVİSLER');
+});
+
+test('Takvim dosyasının adı Türkçe harfli başlıkta da .ics uzantılı (Chromium ASCII olmayan adı reddediyordu)', async ({ page }) => {
+  await page.goto('/index.html#hesap');
+  const [d] = await Promise.all([page.waitForEvent('download'), page.evaluate(() => Urania.icsIndir({ baslik: 'Ülker örtmesi · Algol en sönük', bas: new Date('2026-11-07T03:34:00Z'), aciklama: 'x' }))]);
+  expect(d.suggestedFilename()).toBe('urania-ulker-ortmesi-algol-en-sonuk.ics');
 });

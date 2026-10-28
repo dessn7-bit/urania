@@ -68,7 +68,8 @@
 
   /* ---- Başlangıç yıldızı ----
      Parlak (≤ 2,5 kadir; yakında yoksa ≤ 3,5) ve hedefe olabildiğince yakın; adı olan yıldız yeğlenir
-     (adsız yıldız uzaklığı 1,35 kat sayılır), hedef ufkun üstündeyse ufkun altındaki yıldız elenir. */
+     (adsız yıldıza 4° ceza, her kadir sönüklük 0,5°), hedef ufkun üstündeyse ufkun altındaki yıldız elenir.
+     M13: adsız η Her (3,5 kadir, 2,5°) yerine Tianji (ζ Her, 2,8 kadir, 4,9°) seçilir: şehir gökünde çıplak gözle bulunur. */
   function baslangicSec(yv, veri, hedefV, ic, hAlt, m) {
     const y = veri.y, adlar = veri.adlar || {};
     const adaylar = [];
@@ -78,7 +79,7 @@
       const alt = yukseklik(ufukV(m, yv[i]));
       adaylar.push({ i, d, kadir: y[i][2], ad: adlar[i] || null, alt });
     }
-    const puan = a => a.d * (a.ad ? 1 : 1.35) + (hAlt > 0 && a.alt < 3 ? 60 : 0);
+    const puan = a => a.d + (a.ad ? 0 : 4) + 0.5 * (a.kadir - 2) + (hAlt > 0 && a.alt < 3 ? 60 : 0);
     const en = ls => ls.reduce((e, a) => (!e || puan(a) < puan(e) ? a : e), null);
     return en(adaylar.filter(a => a.kadir <= 2.5 && a.d <= YAKIN)) ||
       en(adaylar.filter(a => a.d <= YAKIN)) ||
@@ -158,7 +159,7 @@
     const kose = Math.cos(Math.min(170, alan * 0.75 + 2) * DER);
 
     /* Yıldızlar: harita.js ile aynı boy kuralı */
-    const olc = Math.max(W / 480, 0.85);
+    const olc = Math.max(W / 400, 0.9);   // harita.js'nin W/480'i; yakın plan harita olduğu için biraz iri
     const yildizlar = [];
     yd.y.forEach((st, i) => {
       if (st[2] > YILDIZ_SINIR || nokta(yv[i], merkezE) < kose) return;
@@ -225,7 +226,9 @@
       W, H, alan, olcek: s * DER, gorus: F, ayrim,
       merkez: { x: cx, y: cy },
       baslangic: { i: bas.i, ad: bas.ad, kadir: bas.kadir, x: bP.x, y: bP.y, r: Math.max(0.55, (7.2 - bas.kadir) * 0.62 * olc), alt: bAA.alt, az: bAA.az, ty, tyAd, enParlak },
-      hedef: { x: hP.x, y: hP.y, alt: hAA.alt, az: hAA.az, rPx: Math.max(5.5, Math.min(daire.r * 0.6, boy / 2 * s * DER)) },
+      /* Hedef halkası: cismin açısal boyu kadar, ama en az 6 px ve dürbün dairesinin üçte birinden büyük değil
+         (M31'in 3°'lik dış halesi dürbünde görünmez; büyük halka ikinci bir dürbün dairesi gibi okunuyordu) */
+      hedef: { x: hP.x, y: hP.y, alt: hAA.alt, az: hAA.az, rPx: Math.max(6, Math.min(daire.r / 3, boy / 2 * s * DER)) },
       yol: yolE, daire, yildizlar, cizgiler, ufuk, kuzey,
       adim: yol.length - 1, alanSayisi: ayrim / F, yon: ekranYon(hP.x - bP.x, hP.y - bP.y)
     };
@@ -235,7 +238,9 @@
   const sayi = (x, b) => (kok.Urania ? kok.Urania.sayi(x, b) : x.toFixed(b).replace('.', ','));
   const derece = x => (kok.Urania ? kok.Urania.derece(x) : Math.round(x) + '°');
   const kadirB = x => (kok.Urania ? kok.Urania.kadir(x) : sayi(x, 1));
-  function konumMetni(alt, az) { return alt < 0 ? 'şu an ufkun altında' : 'şu an ' + PUSULA_DA[G.yon(az)] + ', ' + derece(alt) + ' yükseklikte'; }
+  /* "şu an" yalnız harita gerçekten şimdiyi gösteriyorsa; listeden en iyi saatle açılınca "23:19'da" */
+  let anIfadesi = 'şu an';
+  function konumMetni(alt, az) { return alt < 0 ? anIfadesi + ' ufkun altında' : anIfadesi + ' ' + PUSULA_DA[G.yon(az)] + ', ' + derece(alt) + ' yükseklikte'; }
 
   function tarif(h, hedef) {
     const b = h.baslangic;
@@ -361,6 +366,9 @@
 
     /* Ufkun altı ve ufuk çizgisi */
     if (h.ufuk) {
+      /* Ufkun altı taralı (zeminden açık bir dolgu "yer"i gökten parlak gösteriyordu) */
+      const desen = svgEl('pattern', { id: 'bulucuYerDesen', patternUnits: 'userSpaceOnUse', width: 7, height: 7 }, svgEl('defs', {}, svg));
+      svgEl('path', { d: 'M-1,8 L8,-1 M-1,1 L1,-1 M6,8 L8,6', class: 'bulucu-yer-cizgi' }, desen);
       const p = h.ufuk.map(n => yuvar(n.x) + ',' + yuvar(n.y));
       const sol = h.ufuk[0], sag = h.ufuk[h.ufuk.length - 1];
       svgEl('path', { d: 'M' + p.join(' L') + ' L' + yuvar(sag.x) + ',' + (2 * H) + ' L' + yuvar(sol.x) + ',' + (2 * H) + ' Z', class: 'bulucu-yer' }, svg);
@@ -408,16 +416,17 @@
     kutular.push({ x: 6, y: 5, w: bw, h: 16 });
     const t0 = svgEl('text', { x: 7, y: 17, class: 'bulucu-kose' }, svg); t0.textContent = basucu;
     if (h.kuzey) {
-      const kx = W - 22, ky = 24, L = 13;
+      /* Kuzey oku: kuyruk merkezin 11 px gerisinde, uç 9 px önünde; "K" ucun ötesinde */
+      const kx = W - 30, ky = 30;
       const g4 = svgEl('g', { class: 'bulucu-kuzey' }, svg);
       const ux = h.kuzey.dx, uy = h.kuzey.dy;
-      svgEl('circle', { cx: kx, cy: ky, r: 17, class: 'bulucu-kuzey-zemin' }, g4);
-      svgEl('line', { x1: yuvar(kx - ux * L * 0.55), y1: yuvar(ky - uy * L * 0.55), x2: yuvar(kx + ux * (L - 5)), y2: yuvar(ky + uy * (L - 5)) }, g4);
-      const ox = kx + ux * L, oy = ky + uy * L;
-      svgEl('polygon', { points: [[ox, oy], [ox - ux * 6 - uy * 3.5, oy - uy * 6 + ux * 3.5], [ox - ux * 6 + uy * 3.5, oy - uy * 6 - ux * 3.5]].map(q => yuvar(q[0]) + ',' + yuvar(q[1])).join(' ') }, g4);
-      const tk = svgEl('text', { x: yuvar(kx - ux * 9), y: yuvar(ky - uy * 9 + 4), 'text-anchor': 'middle', class: 'bulucu-kuzey-et' }, g4);
+      svgEl('circle', { cx: kx, cy: ky, r: 25, class: 'bulucu-kuzey-zemin' }, g4);
+      svgEl('line', { x1: yuvar(kx - ux * 11), y1: yuvar(ky - uy * 11), x2: yuvar(kx + ux * 4), y2: yuvar(ky + uy * 4) }, g4);
+      const ox = kx + ux * 9, oy = ky + uy * 9;
+      svgEl('polygon', { points: [[ox, oy], [ox - ux * 7 - uy * 4, oy - uy * 7 + ux * 4], [ox - ux * 7 + uy * 4, oy - uy * 7 - ux * 4]].map(q => yuvar(q[0]) + ',' + yuvar(q[1])).join(' ') }, g4);
+      const tk = svgEl('text', { x: yuvar(kx + ux * 17), y: yuvar(ky + uy * 17 + 4.5), 'text-anchor': 'middle', class: 'bulucu-kuzey-et' }, g4);
       tk.textContent = 'K';
-      kutular.push({ x: kx - 18, y: ky - 18, w: 36, h: 36 });
+      kutular.push({ x: kx - 26, y: ky - 26, w: 52, h: 52 });
     }
     if (h.ufuk) {
       /* "ufuk" yazısı çizginin hemen altında, görünen bölümün ortasına en yakın noktada */
@@ -468,6 +477,8 @@
   function ac(hedef, secenek) {
     const s = secenek || {};
     const zaman = s.zaman instanceof Date ? s.zaman : new Date();
+    const U = kok.Urania;
+    anIfadesi = U && U.ek && Math.abs(zaman - Date.now()) > 10 * 60e3 ? U.ek(U.saat(zaman), 'de') : 'şu an';
     let gzl = s.gzl;
     if (!gzl) { const k = kok.Urania.konum(); gzl = G.gozlemci(k.enlem, k.boylam, k.yukseklik || 0); }
     panelKur();

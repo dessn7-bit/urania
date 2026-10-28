@@ -436,7 +436,10 @@
   /* Maddenin eylem satırı: "Haritada göster" (zaman verilirse: levha o saate gelir, cisim halkayla işaretlenir)
      ve "Gördüm, deftere yaz" */
   function defterBag(anahtar, zaman) {
-    const harita = zaman instanceof Date && !isNaN(zaman) ? `<button type="button" class="bag haritada" data-anahtar="${U.kacis(anahtar)}" data-zaman="${zaman.getTime()}">Haritada göster</button>` : '';
+    const zamanli = zaman instanceof Date && !isNaN(zaman);
+    let harita = zamanli ? `<button type="button" class="bag haritada" data-anahtar="${U.kacis(anahtar)}" data-zaman="${zaman.getTime()}">Haritada göster</button>` : '';
+    /* Dürbün hedefi: en yakın parlak yıldızdan hedefe bulma haritası (bulucu.js) */
+    if (zamanli && window.Bulucu && /^hedef:/.test(anahtar)) harita += `<span class="ayrac" aria-hidden="true"> · </span><button type="button" class="bag bul" data-hedef="${U.kacis(anahtar.slice(6))}" data-zaman="${zaman.getTime()}">Nasıl bulunur</button>`;
     if (!window.Defter) return harita ? `<span class="defter-bag">${harita}</span>` : '';
     const son = Defter.sonGorulme(anahtar);
     const rozet = son ? `<span class="rozet iyi">görüldü · ${U.gun(new Date(son.zaman))}</span> ` : '';
@@ -1056,6 +1059,12 @@
 
   function bagla() {
     el.addEventListener('click', e => {
+      const bul = e.target.closest('.bul');
+      if (bul) {
+        const h = durum.veri.hedefler.find(x => x.id === bul.dataset.hedef);
+        if (h && window.Bulucu) Bulucu.ac(h, { zaman: new Date(Number(bul.dataset.zaman)), gzl: durum.gzl }).catch(h => { if (window.Tani) Tani.hataEkle('bulucu: ' + (h && h.message)); });
+        return;
+      }
       const b = e.target.closest('.haritada'); if (!b) return;
       haritadaGoster(b.dataset.anahtar, new Date(Number(b.dataset.zaman)));
     });

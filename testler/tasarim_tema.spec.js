@@ -147,3 +147,20 @@ test('Kırmızı mod açıkken ekran açık tutulur, kapanınca bırakılır', a
   await page.click('#kirmiziDugme');
   await expect.poll(() => page.evaluate(() => window.__kilit.birak)).toBe(1);
 });
+
+test('Dürbün hedefinde "Nasıl bulunur" bulma haritasını o hedefin en iyi saatiyle açar', async ({ page }) => {
+  await page.route(/^https?:\/\/(?!127\.0\.0\.1|localhost)/, r => r.abort());
+  await page.clock.install({ time: new Date('2026-10-28T19:30:00+03:00') });
+  await page.addInitScript(() => { localStorage.setItem('urania_konumOto', 'false'); localStorage.setItem('urania_gokKat', '{"hedef":true}'); });
+  await page.goto('/index.html#gok');
+  const li = page.locator('#gkHedef li', { hasText: 'Andromeda' });
+  await li.locator('.bul').click();
+  const p = page.locator('#bulucuPanel');
+  await expect(p).toBeVisible();
+  await expect(p.locator('#bulucuBaslik')).toHaveText('Bulma haritası: M31');
+  await expect(p).toContainText("23:19'da");   // en iyi saat; "şu an" değil
+  await expect(p).not.toContainText('şu an');
+  await page.keyboard.press('Escape');
+  await expect(p).toBeHidden();
+  await expect(li.locator('.bul')).toBeFocused();
+});

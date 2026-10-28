@@ -374,7 +374,8 @@ test('12: kaydırıcının adı yalnız etiket metni, değer aria-valuetext\'te 
   const adlar = await page.locator('#deneyKap input[type=range]').evaluateAll(ls => ls.map(g => [g.id, g.getAttribute('aria-labelledby'), (document.getElementById(g.getAttribute('aria-labelledby')) || {}).textContent]));
   adlar.forEach(([id, by, ad]) => { expect(by, id).toBe(id + 'Ad'); expect(ad, id).toBeTruthy(); });
   await page.goto('/index.html#gok');
-  const k = page.getByRole('slider', { name: 'Görünen en sönük yıldız', exact: true });
+  await page.click('#gkKonumDegis');   // gök koşulu kaydırıcısı konum panelinde
+  const k = page.getByRole('slider', { name: 'Gök koşulu: görünen en sönük yıldız', exact: true });
   await expect(k).toHaveAttribute('aria-valuetext', '4,0 kadir, banliyö');
   await k.fill('5');
   await expect(k).toHaveAttribute('aria-valuetext', '5,0 kadir, kırsal');
