@@ -224,3 +224,109 @@ Tarih: 2026-10-27. Bağımsız doğrulayıcı. Kaynaklar bu oturumda WebFetch il
 | Doğrulandı: Mermi Kümesi (d17 ile ortak) | Chandra 2006 (WF2) | "a drag force, similar to air resistance" |
 | Doğrulandı: Gözlenebilir evren 2 trilyon / yüzlerce milyar | WP:Observable_universe (WF2) | aynı ifadeler |
 | ASKIDA (bu oturumda yeniden açılmadı, önceki doğrulamaya dayanıyor): ESA/Hubble heic9902o ve opo9734a, WP Hubble sequence ve Lenticular galaxy ifadeleri, Macmillan Universe 10e (Schmidt 1963, z = 0,158), arXiv:1904.05721 (8178 pc), arXiv:2112.07478 (±%0,25), EHT 2022, NASA galaxy types (2/3 çubuklu) | — | — |
+
+## v3 genişletme (28.10.2026) — yeni iddialar
+WebFetch ile okunan sayfalar (WF3). Eski satırlar aynen korundu.
+
+### Bölüm 2 — Samanyolu (ek)
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| van de Hulst 1944 öngörü; Ewen ve Purcell, Harvard, 1951; toz bulutlarından geçer; sarmal yapı haritası (merkez yönü dahil) | https://www.britannica.com/science/21-centimetre-radiation (WF3) | "was theoretically predicted by the Dutch astronomer H.C. van de Hulst in 1944" ; "was experimentally detected by American physicists Harold Ewen and Edward Purcell at Harvard University in 1951" ; "readily penetrates the clouds of interstellar dust particles" ; "allows the mapping of the galaxy's spiral structure" |
+| 21 cm çizgisi d2'de | d2.json | "bu yüzden 21 cm çizgisi diye anılır" |
+
+### Bölüm 3 — Güneş'in yeri (ek)
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Merkez görünür, morötesi, yumuşak X ışınında incelenemez; gama, sert X, kızılötesi, milimetre altı, radyo | https://en.wikipedia.org/wiki/Galactic_Center (WF3) | "the Galactic Center cannot be studied at visible, ultraviolet, or soft (low-energy) X-ray wavelengths" ; "gamma ray, hard (high-energy) X-ray, infrared, submillimetre, and radio wavelengths" |
+| Baade 1940'lar, ~1° boşluk | aynı | "a one-degree-wide void in the interstellar dust lanes" (Walter Baade, 1940'lar) |
+
+### YENİ BÖLÜM — İstanbul'dan Samanyolu'nu görmek
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Kuzey yarımkürede haziran–ağustos; akşam 9–10'dan; 2–4'e kadar; güney; çok karanlık gök; yeniay; 20–30 dk göz alışması (ABD okurları için) | https://www.smithsonianmag.com/smart-news/how-to-see-the-milky-way-this-weekend-180984991/ (WF3) | "the most stunning views are during the summer, from June to August" ; "around 9 or 10 p.m." ; "until between 2 and 4 a.m." ; "look toward the south" ; "around a new moon" ; "A solid 20 to 30 minutes" |
+| 20,2 kadir/yay saniyesi kare | (mevcut satır, Bölüm 2) WP:Milky_Way | "darker than about 20.2 magnitude per square arcsecond" |
+| Sgr A* dik açıklık −29° 00′ 28″ | https://en.wikipedia.org/wiki/Galactic_Center (WF3) | "Dec −29° 00′ 28.1″ (J2000 epoch)" |
+| Ufka yakın cisimler sönük (kalın hava) | d1.json | "Işık ne kadar kalın bir hava tabakasından geçerse o kadar zayıflar; bu yüzden ufka yakın cisimler başucuna yakın olanlardan daha sönük görünür." |
+| Koyu yarık = toz (Büyük Yarık) | d14.json | "Kuğu'da başlar ... Yay'da galaksinin merkezini örter" |
+| Bortle 1: Akrep ve Yay bölgeleri gölge düşürür | d1.json (d1_kaynak.md) | "Sınıf 1 ... Samanyolu'nun Akrep ve Yay bölgeleri yere belirgin gölge düşürür" |
+| Kentte çıplak göz sınırı ~3 kadir | (mevcut satır, Bölüm 5) WP:Apparent_magnitude | "Faintest objects visible in an urban neighborhood with naked eye" (+3) |
+| Andromeda sonbahar, ekimde gece yarısı en yüksek | https://en.wikipedia.org/wiki/Andromeda_Galaxy (WF3) | "best seen during autumn nights in the Northern Hemisphere" ; ekimde gece yarısı tepede |
+| 3,167° ; dolunay 1896″ | WP:Andromeda_Galaxy (mevcut satır) ; NASA dolunay çapı d10_kaynak.md | "3.167° × 1°" ; 1896″ = 0,527° |
+| Altı dolunay | HESAP | 3,167 / 0,527 = 6,01 |
+| M81 dürbünle; ilkbahar; Dubhe ile Muscida (ayının burnu) ortası, yukarı tara; ikisini tek dürbün alanı; M81 ~11,5, M82 ~12 milyon ışık yılı; dürbün boyutu verilmiyor | https://www.skyatnightmagazine.com/news/m81 (WF3) | "Bode's Galaxy can even be seen through a pair of binoculars" ; "best seen in springtime" ; "about 11.5 million lightyears from Earth" ; Dubhe ve Muscida arasında yarı yol |
+| Örnek: 90 − 41 − 29,01 ≈ 20°; ekvator 61° | HESAP | 19,99 ; 61 |
+| Zaman yolculuğu: 2,5 ve 11,5 milyon yıl; galaksi çapı 87.400 → en fazla on binlerce yıl | HESAP (mevcut uzaklık satırları) | — |
+
+### Bölüm 4 — Galaksi türleri (ek)
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Galaxy Zoo 11 Temmuz 2007; SDSS 100.000 galaksi; >100.000 gönüllü ~175 günde >40 milyon sınıflama; Hanny's Voorwerp, Yeşil Bezelye | https://en.wikipedia.org/wiki/Galaxy_Zoo (WF3) | "Launched: 11 July 2007" ; "100,000 galaxies imaged by the Sloan Digital Sky Survey" ; "more than 40 million classifications were made in approximately 175 days by more than 100,000 volunteers" ; Hanny's Voorwerp ; "the Green Pea galaxies" |
+| Saat yönü tersine fazlalık; aynalı görüntüde de; beyin dönme yönünü zor ayırt eder | aynı | "an excess of anticlockwise-spinning spiral galaxies" ; "the human brain has real difficulty discerning between something rotating clockwise or anticlockwise" |
+| Tojeiro ve ark. 2013: 13.959 kırmızı eliptik, 381 mavi eliptik, 5.139 mavi sarmal, 294 kırmızı sarmal | aynı | "13,959 red ellipticals, 381 blue ellipticals, 5,139 blue late-type spirals, 294 red late-type spirals" |
+| Mavi: sarmal kollardaki OB yıldızları, bol yıldız oluşumu; kırmızı: yıldız oluşumu az (söndürülmüş) | https://www.physics.unlv.edu/~jeffery/astro/galaxies/galaxy_color_magnitude_diagram.html (WF3) | "coming from OB stars mostly located in the spiral arms" ; "the blue cloud galaxies have a lot of star formation" ; red sequence "quenched galaxies" |
+
+### Bölüm 5 — Yerel Grup (ek)
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Andromeda'nın 20'den fazla cüce uydusu; M32 ve M110 en tanınmış, en kolay gözlenen | https://en.wikipedia.org/wiki/Andromeda_Galaxy (WF3) | "over 20 known dwarf galaxies" ; M32 ve M110 en tanınmış ve en kolay gözlenenler |
+| Eski tahmin Andromeda %25–50 ağır; 2019: ~0,8×10¹² M☉, Samanyolu'nun yeni kütlesinin yarısı | aynı | "which is only half of the Milky Way's newer mass" ; önceki tahminler %25–50 daha kütleli |
+| Andromeda ~1 M☉/yıl, Samanyolu 3–5; yeşil vadi | aynı | ~1 M☉/yıl ; Samanyolu 3–5 ; "green valley" |
+| Licquia ve Newman 1,65 M☉/yıl | d14.json / d14_kaynak.md | "yıldız oluşum hızı yılda 1,65 M☉" |
+| Yeşil vadi ara bölge; ayrımın yanlılık olduğu iddiası; tam çözülmemiş | https://www.physics.unlv.edu/~jeffery/astro/galaxies/galaxy_color_magnitude_diagram.html (WF3) | "a relatively unpopulated green valley" ; Eales ve ark. (2018) "there is NO relatively unpopulated green valley" ; konu tam çözülmemiş |
+
+### Bölüm 6 — Andromeda'yla randevu (ek)
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Slipher, Lowell (Flagstaff, Arizona); ilk net tayf Eylül 1912; Ocak 1913'e kadar 4 plaka; maviye kayma, ~300 km/s; kuşku; 1917'ye kadar 25 sarmal, 4 mavi, kalanı kırmızı | https://ar5iv.arxiv.org/html/1212.5499 (WF3; yazar C. O'Raifeartaigh) | "by January 1913, he had four plates" ; "the spectral lines were significantly blue-shifted, suggesting that the spiral was approaching at a radial velocity of 300 km s-1" ; "much larger than the known velocities of stars" ; 25 sarmal, dördü maviye kaymış ; "the remainder were red-shifted" |
+| Yan hareket çok zor; yılda <0,1 miliyay saniyesi; Güneş'in hareketi katılınca yan hız yaklaşmadan çok küçük | https://en.wikipedia.org/wiki/Andromeda%E2%80%93Milky_Way_collision (WF3) | "the lateral speed (measured as proper motion) is very difficult to measure with sufficient precision" ; "less than 0.1 milliarc-seconds per year" ; "Andromeda's tangential or sideways velocity with respect to the Milky Way was found to be much smaller" |
+| Güneş ~200 km/s | (mevcut satır, Bölüm 3) NASA Sun facts | 720.000 km/saat |
+| 300 km/s Güneş'e göre, 110 km/s Samanyolu'na göre: fark referans çerçevesinden | ÇIKARIM (kaynakta 300 → 110 dönüşümü ayrıntılı verilmiyor; ders yalnız "farklıdır" der) | — |
+| Doppler: 656,28 × 300/299.792 = 0,657 nm → 655,62 nm; 1″ / 0,1 mas/yıl = 10.000 yıl | HESAP | 0,6567 ; 655,623 ; 10.000 |
+
+### Bölüm 7 — Çarpışmalar (ek)
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Andromeda'da 2–3 milyar yıl önce büyük birleşme; Dev Akıntı dahil halenin çoğu | https://en.wikipedia.org/wiki/Andromeda_Galaxy (WF3) | "A major merger occurred 2 to 3 billion years ago at the Andromeda location" ; Giant Stream |
+| M81 ~11,5, M82 ~12 milyon ışık yılı; M82 yıldız patlaması, nedeni M81 ile etkileşim | https://www.skyatnightmagazine.com/news/m81 (WF3) | "about 11.5 million lightyears" ; M82 ~12 milyon ; starburst, gravitational interactions with Bode's Galaxy |
+| Yıldız patlaması tanımı; çoğu birleşme/yakın karşılaşmada; gelgit gazı sıkıştırır; ≥100 M☉/yıl; Samanyolu ~3 M☉/yıl | https://www.wikiwand.com/en/articles/Starburst_galaxy (WF3, Wikipedia aynası) | "undergoing an exceptionally high rate of star formation, as compared to the long-term average rate" ; "The majority of starburst galaxies are in the midst of a merger or close encounter" ; "star formation rates of 100 M☉/yr or more" ; "approximately 3 M☉/yr" |
+
+### YENİ BÖLÜM — Samanyolu'nun yamyamlığı
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Nature 2018; iki büyük yıldız taraması; iç hale büyük ölçüde enkaz; Gaia-Enceladus; SMC'den biraz kütleli; 4:1; ~10 milyar yıl; kalın diske katkı | https://ui.adsabs.harvard.edu/abs/2018Natur.563...85H/abstract (WF3) | "two large stellar surveys" ; inner halo "is dominated by debris from" ; "slightly more massive than the Small Magellanic Cloud" ; "With an estimated mass ratio of four to one" ; "approximately ten billion years ago" (kalın disk) |
+| Yay Cüce: 1994 Ibata, Irwin, Gilmore; 80.380 ışık yılı; merkezden ~50.000; merkezin öbür yanı, sönük; akıntı; M54 çekirdekte; 100 milyon yıl içinde diskten geçiş; 1 milyar yılda tam birleşme; sarmal yapı benzetimi; 2020 yıldız oluşumu | https://en.wikipedia.org/wiki/Sagittarius_Dwarf_Spheroidal_Galaxy (WF3) | "Officially discovered in 1994, by Rodrigo Ibata" (Irwin, Gilmore) ; "about 80,380 light-years from Earth" ; "about 50,000 light-years from the core" ; "on the opposite side of the Galactic Center from Earth" ; M54 "appears to reside at its core" ; "within the next hundred million years" ; "expected to be complete within a billion years" ; "repeated collisions with Sgr dSph" ; 2020 "major episodes of star formation" |
+| LMC: Durham, Cautun, MNRAS; ~2 kat karanlık madde; ~2 milyar yıl; kara delik 10 kata kadar; Güneş Sistemi savrulma küçük olasılık; Andromeda 8 milyar yıl | https://phys.org/news/2019-01-catastrophic-galactic-collision-solar-space.pdf (WF3) | "could hit the Milky Way in two billion years' time" ; "nearly twice as much dark matter than previously thought" ; "increase in size by up to ten times" ; "a small chance that the initial collision could send our Solar System hurtling into space" ; Andromeda "in eight billion years" |
+| Macellan Bulutlarının uydu olup olmadığı tartışmalı | (mevcut satır, Bölüm 5) Sky at Night | "coincidental" |
+| Örnek: 80.380 − 26.700 = 53.680; 80.380 / 3,2616 = 24.644 pc | HESAP | — |
+
+### Bölüm 8 — Aktif galaksiler (ek)
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Fath ve Slipher 1908, Lick, NGC 1068, altı parlak salma çizgisi; Seyfert 1943 yıldız gibi parlak çekirdek, geniş çizgiler; ~%10 (bir taramada %16 ± 5); çekirdek Samanyolu boyu galaksi kadar; Tip 1/2 ve bakış açısı | https://en.wikipedia.org/wiki/Seyfert_galaxy (WF3) | "noticed that NGC 1068 showed six bright emission lines" ; "very bright stellar-like nuclei that produce broad emission lines" ; "Seyfert galaxies account for about 10% of all galaxies" ; 16% ± 5% ; "comparable intensity to the luminosity of whole galaxies the size of the Milky Way" ; "Type II ... show only narrow lines" ; Unification scheme |
+| M87: Messier 1781 bulutsu; Curtis 1918 düz ışın; jet ≥1.500 pc (4.900 ışık yılı); 8,6 kadir; 6 cm teleskop; ~53 milyon ışık yılı; süperdev eliptik | https://en.wikipedia.org/wiki/Messier_87 (WF3) | "Charles Messier discovered M87 in 1781" ; "curious straight ray ... apparently connected with the nucleus by a thin line of matter" ; "at least 1,500 parsecs (4,900 light-years)" ; 8.6 ; "a small telescope with a 6 cm (2.4 in) aperture" ; "about 16.4 million parsecs (53 million light-years)" |
+
+### Bölüm 9 — Kümeler (ek)
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Lintott: bazı kümelerin kenarındaki sarmalların üçte biri kırmızı | https://en.wikipedia.org/wiki/Galaxy_Zoo (WF3) | "Now we know that a third of spirals around the edges of some clusters of galaxies are red." |
+| M87 ~12.000 küresel küme (girişte ~15.000); kütle Samanyolu'nun 200 katı olabilir | https://en.wikipedia.org/wiki/Messier_87 (WF3) | "12,000 ± 800 globular clusters" ; "may be 200 times that of the Milky Way" |
+| Markarian Zinciri: yedi parlak sarmal ve lentiküler, M84 ve M86; mart–haziran; yeniay; Denebola–Vindemiatrix ortası; 75 mm mercekli–200 mm aynalı; 100 mm dürbün yalnız parlak kısım; küme merkezi ~70 milyon ışık yılı | https://www.skyatnightmagazine.com/news/markarians-chain (WF3) | "seven bright galaxies including M84 and M86" ; "draw a straight line between the stars Denebola in Leo, the Lion, and Vindemiatrix in Virgo" ; "75mm refractor to 200mm reflector should provide excellent views" ; "a pair of 100mm binoculars in dark skies" ; "about 70 million lightyears" |
+| 7×50 büyük olasılıkla yetersiz | ÇIKARIM (100 mm dürbün bile yalnız parlak kısım) | — |
+
+### Sorular (yeni)
+| Soru | Dayanak |
+|---|---|
+| 21 cm haritası | Britannica satırı |
+| Merkez ~20° | Galactic Center dik açıklık + HESAP |
+| Yutulan galaksiler | Nature 2018 satırı |
+| Galaxy Zoo saat yönü | Galaxy Zoo satırı |
+| Seyfert Tip 1/2 | Seyfert galaxy satırı |
+| Slipher 300 → 110 | O'Raifeartaigh + çarpışma sayfası + ÇIKARIM |
+| Markarian ve 7×50 | Sky at Night Markarian satırı |
+
+### Notlar (v3)
+- imagine.gsfc.nasa.gov ve eso.org bu oturumda (d6 sırasında) izin hatası verdi; d7'ye bu alan adlarından yeni iddia eklenmedi.
+- Samanyolu yıldız oluşum hızı kaynaklar arasında farklı: Wikipedia Andromeda maddesi 3–5, Starburst maddesi ~3, d14'teki Licquia ve Newman 1,65 M☉/yıl. Derste fark açıkça söylendi.
+- Başak Kümesi uzaklığı: Wikipedia 53,8 milyon, Sky at Night ~70 milyon ışık yılı; derste fark söylendi.
+- Andromeda çarpışma zamanı: 2012 (4 milyar yıl), Phys.org 2019 haberi (8 milyar yıl), 2025 (%50 / 10 milyar yıl); derste üçü yan yana kondu.
+- Smithsonian'ın saatleri ABD okurları içindir; derste böyle belirtildi.
