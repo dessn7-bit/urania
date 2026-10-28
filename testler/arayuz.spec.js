@@ -156,7 +156,7 @@ test('İnceleme düzeltmeleri: uzak konumda saatler o konumun diliminde ve doğr
   /* USNO: Tokyo 27 Ekim 2026 gün batımı 16:52 (UTC+9) —
      https://aa.usno.navy.mil/api/rstt/oneday?date=2026-10-27&coords=35.68,139.69&tz=9 */
   const ozet = await page.locator('#gkOzet p').first().innerText();
-  const saat = ozet.match(/Güneş (\d\d):(\d\d)/);
+  const saat = ozet.match(/batış (\d\d):(\d\d)/);   // özet satırı: "Güneş · batış 16:52 · …"
   expect(saat, ozet).toBeTruthy();
   expect(Number(saat[1]) * 60 + Number(saat[2])).toBeGreaterThanOrEqual(16 * 60 + 51);
   expect(Number(saat[1]) * 60 + Number(saat[2])).toBeLessThanOrEqual(16 * 60 + 53);

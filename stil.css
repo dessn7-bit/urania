@@ -192,7 +192,8 @@ a.dugme { text-decoration: none; }
   display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px;
   font-size: 14px; color: var(--soluk);
 }
-.serit .konum { color: var(--parsomen); font-weight: 500; }
+.serit .konum { color: var(--soluk); }
+.serit .konum b { color: var(--parsomen); font-weight: 600; }
 .serit button.bag { background: none; border: 0; padding: 0; color: var(--pirinc); cursor: pointer; text-decoration: underline; text-underline-offset: 3px; font-size: 14px; }
 .serit input[type="date"] { background: var(--levha); border: 1px solid var(--girdi-kenar); border-radius: 6px; padding: 4px 8px; color: var(--parsomen); }
 
@@ -232,9 +233,21 @@ html.kirmizi input[type="datetime-local"]::-webkit-calendar-picker-indicator {
 }
 
 /* ---- Bu gece özeti ---- */
-.ozet { font: 400 19px/1.6 var(--serif); color: var(--parsomen); margin-top: 28px; }
-.ozet p { margin-bottom: 10px; }
-.ozet strong { font-weight: 600; }
+.ozet { margin-top: 28px; }
+/* Bu gecenin özeti (ve bulut): solda küçük etiket, sağda göz atılacak veri; satırlar ince çizgiyle ayrılır.
+   Saatler tablo rakamıyla, alt alta satırlarda aynı genişlikte. */
+.oz-satir { display: grid; grid-template-columns: 6.2em minmax(0, 1fr); column-gap: 14px; align-items: baseline;
+  margin: 0; padding: 11px 0; border-top: 1px solid var(--cizgi); }
+.ozet .oz-satir:last-child { border-bottom: 1px solid var(--cizgi); }
+.oz-et { font: 500 13px/1.3 var(--sans); color: var(--soluk); }
+.oz-d { font: 400 17px/1.5 var(--serif); color: var(--parsomen); font-variant-numeric: tabular-nums lining-nums; }
+.oz-d strong { font-weight: 600; }
+.oz-d .soluk { font-size: 15px; }
+.oz-p { white-space: nowrap; }
+@media (max-width: 300px) { .oz-p { white-space: normal; } }   /* çok dar görünüm (büyük sayfa yakınlaştırması): taşmasın */
+.oz-satir-ic { display: block; }
+.oz-not { display: block; margin-top: 3px; font: 400 14px/1.5 var(--sans); color: var(--soluk); }
+@media (max-width: 460px) { .oz-satir { grid-template-columns: minmax(0, 1fr); row-gap: 2px; } }   /* telefonda etiket üstte, değer tam genişlik */
 
 /* ---- Satır listeleri ---- */
 .liste { list-style: none; margin: 8px 0 0; padding: 0; }
@@ -359,7 +372,10 @@ article.ders p { max-width: 68ch; }
 }
 
 /* ---- Gökyüzüne bak (AR) ---- */
-.ar-giris { display: flex; width: 100%; max-width: 560px; margin: 16px auto 0; min-height: 48px; font-size: 16px; }
+.ar-giris { display: flex; width: 100%; max-width: 560px; margin: 18px auto 0; min-height: 48px; font-size: 16px; gap: 10px;
+  color: var(--pirinc); border-color: var(--pirinc); }   /* çerçeveli: sayfanın kahramanı harita, düğme onun yanında ikinci sırada */
+.ar-giris svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; }
+.ar-giris:hover { background: var(--levha); }
 body.ar-acik { padding-bottom: 0; overflow: hidden; }
 body.ar-acik .ust, body.ar-acik .alt-sekmeler { display: none; }
 body.ar-acik main { max-width: none; padding: 0; }
@@ -404,8 +420,8 @@ html.kirmizi .ar-durum, html.kirmizi .ar-bilgi, html.kirmizi .ar-hizala, html.ki
 .ar-sonuc button .soluk { font-size: 13px; }
 
 /* ---- Bulut tahmini ---- */
-.hava { margin-top: 8px; }
-.hava-cumle { font: 400 17px/1.5 var(--serif); margin-bottom: 8px; }
+.hava { margin-top: 0; }
+.hava .oz-satir { border-top: 0; border-bottom: 1px solid var(--cizgi); margin-bottom: 12px; }
 .hava-cubuklar { display: flex; gap: 0; align-items: flex-end; height: 96px; }
 /* Çubuklar arası boşluk düğmenin içinde (dolgu): dokunulan alan çubuk aralığının tamamı (360 px'te 22 → 25 px) */
 .hava-saat { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px; min-width: 0; background: none; border: 0; padding: 0 1.5px; cursor: pointer; color: inherit; }
@@ -633,3 +649,9 @@ html.kirmizi { scrollbar-color: var(--soluk) var(--gece); }
 #b-gok details.kat[open] .kat-ozet { display: none; }
 #b-gok details.kat > .alt-baslik:first-of-type { margin-top: 0; }
 @media (prefers-reduced-motion: reduce) { #b-gok details.kat > summary::after { transition: none; } }
+
+/* Gökyüzü: plan başlığı da katlanır bölümler gibi ince çizgiyle başlar (bölümler arası tek ritim) */
+#b-gok h2.plan-bas { margin-top: 32px; padding-top: 18px; border-top: 1px solid var(--cizgi); }
+/* "Gördüm, deftere yaz" her maddede tekrarlanıyor: alt çizgi ince ve soluk, odakta/üstünde tam renk */
+.defter-bag a { text-decoration-color: var(--pirinc-soluk); text-underline-offset: 3px; }
+.defter-bag a:hover, .defter-bag a:focus-visible, html.kirmizi .defter-bag a { text-decoration-color: currentColor; }   /* kırmızı modda bağlantı rengi yazıya çok yakın: alt çizgi tam kalır */

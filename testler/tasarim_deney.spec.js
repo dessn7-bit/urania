@@ -145,6 +145,7 @@ test.describe('320 px (WCAG yeniden akış)', () => {
       };
     });
     await page.goto('/index.html#deney/karadelik');
+    await page.waitForSelector('#kdUzak');   // deney betiği yüklenmeden kaydırıcı yok (kırılgan bekleme düzeltmesi)
     await page.evaluate(() => { for (const id of ['kdKutle', 'kdUzak']) { const g = document.getElementById(id); g.value = 0; g.dispatchEvent(new Event('input')); } });
     await page.waitForTimeout(400);
     const r = await page.evaluate(() => ({ kapsul: window.__kapsulSag, uzakta: window.__yazilar.get('kdKanvas').get('Uzakta').sol, w: document.getElementById('kdKanvas').getBoundingClientRect().width }));

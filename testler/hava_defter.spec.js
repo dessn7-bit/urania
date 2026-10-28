@@ -37,7 +37,7 @@ test.afterEach(async ({ page }) => { expect(page.hatalar).toEqual([]); });
 test('Bulut: açık gece', async ({ page }) => {
   await page.route('**/api.open-meteo.com/**', r => r.fulfill({ json: sahteHava(() => 5) }));
   await page.goto('/index.html#gok');
-  await expect(page.locator('.hava-cumle')).toContainText('Bulut tahmini: gece boyunca büyük ölçüde açık.');
+  await expect.poll(() => page.locator('.hava-cumle').getAttribute('data-ses')).toContain('Bulut tahmini: gece boyunca büyük ölçüde açık.');   // tam cümle seste; ekranda etiketli kısa satır
   await expect(page.locator('.hava-saat')).not.toHaveCount(0);
   await expect(page.locator('#gkHava a')).toHaveAttribute('href', 'https://open-meteo.com/');
 });
@@ -46,13 +46,13 @@ test('Bulut: en açık dönem doğru saatlerle yazılır', async ({ page }) => {
   /* 21:00–02:00 (dahil) açık, diğer saatler kapalı → dönem 21:00–03:00 */
   await page.route('**/api.open-meteo.com/**', r => r.fulfill({ json: sahteHava(h => (h >= 21 || h <= 2) ? 10 : 85) }));
   await page.goto('/index.html#gok');
-  await expect(page.locator('.hava-cumle')).toContainText("Bulut tahmini: en açık dönem 21:00–03:00 (bulut %30'un altında).");
+  await expect.poll(() => page.locator('.hava-cumle').getAttribute('data-ses')).toContain("Bulut tahmini: en açık dönem 21:00–03:00 (bulut %30'un altında).");   // tam cümle seste; ekranda etiketli kısa satır
 });
 
 test('Bulut: kapalı gece', async ({ page }) => {
   await page.route('**/api.open-meteo.com/**', r => r.fulfill({ json: sahteHava(() => 95) }));
   await page.goto('/index.html#gok');
-  await expect(page.locator('.hava-cumle')).toContainText('çoğunlukla kapalı (ortalama %95)');
+  await expect.poll(() => page.locator('.hava-cumle').getAttribute('data-ses')).toContain('çoğunlukla kapalı (ortalama %95)');   // tam cümle seste; ekranda etiketli kısa satır
 });
 
 test('Bulut: servis yanıt vermezse açıklayıcı not, uygulama çalışmaya devam eder', async ({ page }) => {
@@ -164,14 +164,14 @@ test('Bulut: bir saate dokununca ayrıntı çıkar', async ({ page }) => {
 test('Yağış: yağış beklenmeyen gece', async ({ page }) => {
   await page.route('**/api.open-meteo.com/**', r => r.fulfill({ json: sahteHava(() => 5, () => [3, 0]) }));
   await page.goto('/index.html#gok');
-  await expect(page.locator('.hava-cumle')).toContainText('Yağış beklenmiyor (olasılık en çok %3).');
+  await expect.poll(() => page.locator('.hava-cumle').getAttribute('data-ses')).toContain('Yağış beklenmiyor (olasılık en çok %3).');   // tam cümle seste; ekranda etiketli kısa satır
 });
 
 test('Yağış: riskli saatler ve toplam miktar', async ({ page }) => {
   /* 23:00, 00:00, 01:00 değerleri %70 / 0,8 mm; diğerleri %5. Değer önceki saati kapsar → aralık 22:00–01:00 */
   await page.route('**/api.open-meteo.com/**', r => r.fulfill({ json: sahteHava(() => 80, h => (h === 23 || h === 0 || h === 1) ? [70, 0.8] : [5, 0]) }));
   await page.goto('/index.html#gok');
-  await expect(page.locator('.hava-cumle')).toContainText("Yağış riski: 22:00–01:00 arası olasılık %70'e çıkıyor, gece toplamı yaklaşık 2,4 mm.");
+  await expect.poll(() => page.locator('.hava-cumle').getAttribute('data-ses')).toContain("Yağış riski: 22:00–01:00 arası olasılık %70'e çıkıyor, gece toplamı yaklaşık 2,4 mm.");   // tam cümle seste; ekranda etiketli kısa satır
   await page.locator('.hava-saat').nth(5).click();
   await expect(page.locator('#gkHavaDetay')).toContainText('önceki saatte yağış olasılığı');
 });
@@ -179,7 +179,7 @@ test('Yağış: riskli saatler ve toplam miktar', async ({ page }) => {
 test('Yağış: hafif olasılık', async ({ page }) => {
   await page.route('**/api.open-meteo.com/**', r => r.fulfill({ json: sahteHava(() => 50, h => h === 2 ? [25, 0] : [0, 0]) }));
   await page.goto('/index.html#gok');
-  await expect(page.locator('.hava-cumle')).toContainText('Hafif yağış olasılığı var (en çok %25).');
+  await expect.poll(() => page.locator('.hava-cumle').getAttribute('data-ses')).toContain('Hafif yağış olasılığı var (en çok %25).');   // tam cümle seste; ekranda etiketli kısa satır
 });
 
 test.describe('İnceleme düzeltmeleri (defter)', () => {

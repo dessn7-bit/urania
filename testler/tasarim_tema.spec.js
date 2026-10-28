@@ -58,3 +58,24 @@ test('Gökyüzü bölümleri ilk açılışta kapalı, başlıkta özet; açıl�
   await expect(page.locator('#gkGezegen li').first()).toBeVisible();
   await expect(page.locator('#gkMeteor')).toBeHidden();
 });
+
+for (const [gen, yanyana] of [[551, true], [412, false], [320, false]]) {
+  test(`Gece özeti etiketli satırlar (${gen} px): ekranda kısa veri, seste tam cümle, taşma yok`, async ({ page }) => {
+    await page.setViewportSize({ width: gen, height: 900 });
+    await page.route(/^https?:\/\/(?!127\.0\.0\.1|localhost)/, r => r.abort());
+    await page.clock.install({ time: new Date('2026-10-28T19:30:00+03:00') });
+    await page.addInitScript(() => localStorage.setItem('urania_konumOto', 'false'));
+    await page.goto('/index.html#gok');
+    const p = page.locator('#gkOzet .oz-satir');
+    await expect(p.first().locator('.oz-et')).toHaveText('Güneş');
+    await expect(p.first()).toContainText('batış 18:05');
+    expect(await p.first().getAttribute('data-ses')).toMatch(/^Güneş 18:05'te batıyor; gökyüzü \d\d:\d\d'de tam kararıyor/);
+    await expect(p.nth(1).locator('.oz-et')).toHaveText('Ay');
+    const d = await page.evaluate(() => {
+      const s = document.querySelector('#gkOzet .oz-satir'), e = s.querySelector('.oz-et').getBoundingClientRect(), v = s.querySelector('.oz-d').getBoundingClientRect();
+      return { yan: e.right < v.left && Math.abs(e.top - v.top) < 12, tasma: document.scrollingElement.scrollWidth - document.documentElement.clientWidth };
+    });
+    expect(d.yan).toBe(yanyana);
+    expect(d.tasma).toBeLessThanOrEqual(0);
+  });
+}

@@ -144,7 +144,7 @@ test('Depoya yazılamasa da CelesTrak\'a yarım saatte yeniden gidilmez (incelem
      tarih işlendi; istek sayısı ancak ondan sonra sınanır */
   await expect(page.locator('#gkIss li:not([data-eski])', { hasText: /ISS|Tiangong/ }).first()).toBeVisible();
   await expect(page.locator('#gkBuGece')).toBeVisible();                       // seçili gece moduna geçildi
-  await expect(page.locator('#gkOzet')).toContainText('Güneş 17:55\'te batıyor');   // 5 Kasım gecesi (27 Ekim: 18:06)
+  await expect(page.locator('#gkOzet')).toContainText('batış 17:55');   // 5 Kasım gecesi (27 Ekim: 18:06)
   expect(istek).toBe(2);
 });
 

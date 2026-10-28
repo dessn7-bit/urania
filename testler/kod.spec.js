@@ -74,7 +74,7 @@ test('Bulut değeri boş (null) saatler "açık" sayılmaz', async ({ page }) =>
   const bulut = time.map((_, i) => (i === 6 || i === 7 ? 95 : null));
   await page.route('**/api.open-meteo.com/**', r => r.fulfill({ json: { hourly: { time, cloud_cover: bulut, cloud_cover_low: bos(), cloud_cover_mid: bos(), cloud_cover_high: bos(), relative_humidity_2m: say(60), wind_speed_10m: say(5) } } }));
   await page.goto('/index.html#gok');
-  await expect(page.locator('#gkHava')).toContainText('Bulut tahmini');
+  await expect(page.locator('#gkHava .hava-cumle')).toContainText('Bulut');
   await expect(page.locator('#gkHava')).not.toContainText('açık');
   await expect(page.locator('#gkHava')).not.toContainText('null');
 });
