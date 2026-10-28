@@ -162,3 +162,152 @@ Tarih: 2026-10-27. Bağımsız doğrulayıcı. WF2 = bu oturumda yeniden açıla
 | ASKIDA: z* = 1089,92 ± 0,25 Planck 2018 VI Tablo 2'den (önceki doğrulama); PDF bu oturumda Tablo 2'yi göstermedi, Planck 2018 I Tablo 7'de z* yok. Derste "z ≈ 1090" yuvarlak kullanıldığı ve Wikipedia z = 1100 verdiği için risk düşük | — | — |
 | ASKIDA (yeniden açılmadı, önceki doğrulamaya dayanıyor): WP Redshift rekor listesi (GN-z11 11,1; JADES-GS-z14-0 14,32), Nobel 1978, IAU 1812 dışındaki WP Hubble's law ifadeleri, WP Big_Bang_nucleosynthesis | — | — |
 7. Bisiklet pompası benzetmesi öğreticidir; sıcaklık–ölçek bağı T = 2,725 × (1 + z) formülüne dayanır.
+
+## v3 genişletme (2026-10-28)
+
+Bu oturumda WF = WebFetch ile okunan sayfa (alıntı WebFetch çıktısının aktardığı metin). arxiv.org bu oturumda izin zaman aşımı verdi; bir daha açılmadı (Planck 2018 için Wikipedia Reionization kullanıldı). Yeni hesaplar python3 ile yapıldı.
+
+### Bölüm: Büyük Patlama ne değildir? (eklemeler)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Evrenin tamamının boyutu bilinmiyor, sonsuz olabilir; gözlenebilir evren | WP:Observable_universe (önceki WF2) | "The universe's size is unknown, and it may be infinite in extent." |
+| Geçmişte ölçek daha küçüktü | WP:Expansion_of_the_universe (WF) | "Because the universe is expanding, [the scale factor] is smaller in the past and larger in the future." |
+| Hubble ufkunun ötesi ışıktan hızlı uzaklaşır; özel göreliliği çiğnemez | WP:Expansion_of_the_universe (WF) | "Hubble's law predicts that objects farther than the Hubble horizon are receding faster than light." ; "This outcome is not in violation of special relativity." |
+| Hubble ufku = c / H0 (v = c) | ÇIKARIM (Hubble-Lemaître yasası v = H0 d; WP:Hubble%27s_law) + HESAP | 299.792 / 67,4 = 4447,9 Mpc ; × 3,2616 = 14,51 milyar ışık yılı ; ışık Hubble zamanında (14,51 milyar yıl) 14,51 milyar ışık yılı |
+
+### Bölüm: Üç temel kanıt (eklemeler)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Gamow 1946, 3 milyar yaşlı evren varsayımıyla 50 K | WP:Cosmic_microwave_background (WF) | Gamow "calculates a temperature of 50 K (assuming a 3-billion year old universe)" (1946) |
+| Alpher ve Herman 1948 öngörü, ~5 K | aynı (WF) | "The cosmic microwave background was first predicted in 1948 by Ralph Alpher and Robert Herman." ; "down to a temperature of about 5 K" |
+| Penzias-Wilson ~3 K | aynı (önceki satır, Bölüm 5) | "measure the temperature to be approximately 3 K" |
+| Üç kanıt bağımsız ölçüm türlerinden | Yazar yorumu (üç kanıtın tanımından: WP:Big_Bang) | — |
+
+### Yeni bölüm: Gece neden karanlık? Olbers paradoksu
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Karanlık gece sonsuz, ebedî, durağan evrenle çelişir; gök tamamen aydınlık olmalıydı | https://en.wikipedia.org/wiki/Olbers_paradox (WF; arama sonucu) | "the darkness of the night sky conflicts with the assumption of an infinite and eternal static universe" ; night sky "should be completely illuminated and very bright." |
+| Olbers (1758–1840), 1823 (başka kaynakta 1826) | aynı (WF) | "the paradox is popularly named after the German astronomer Heinrich Wilhelm Olbers (1758–1840)" ; "described it in 1823" ; bir atıf 1826 der |
+| Digges ilk; Kepler 1610; Halley ve de Cheseaux 18. yy; Poe Eureka 1848 | aynı (WF) | "the first to conceive of anything like the paradox was Thomas Digges." ; Kepler "also posed the problem in 1610." ; "the paradox took its mature form in the 18th-century work of Edmond Halley and Jean-Philippe Loys de Cheseaux." ; Eureka (1848) "anticipated some qualitative aspects of the solution." |
+| Görünen yıldız sayısı evrenin yaşıyla sınırlı; genişleme dalga boyunu uzatır; yıldız yüzeyi enerjisinden 2,73 K'e; mm dalga boyu göze karanlık; tam açıklama sonlu yaş + kırmızıya kayma | aynı (WF) | "the number of visible stars is limited by the age of the universe." ; "increases the wavelength of visible light" ; "dramatically redshifted from the energy similar to star surfaces down to 2.73 K" ; "millimeters instead of nanometers), which appear dark to the naked eye." ; "A full explanation involves a combination of finite age and redshifts." |
+| Orman benzetmesi | Öğretici benzetme (paradoksun bakış çizgisi biçimi; aynı sayfa) | — |
+| Eski TV karıncalanmasının küçük bir kısmı arka plan ışımasından | https://dunlap.utoronto.ca/coolcosmos/bigbang.php (WF; arama sonucu) | "Tune into static on your old TV." ; "A small fraction of that static is caused by the microwave afterglow from the origin of the universe." (yüzde verilmiyor; derse yüzde yazılmadı) |
+| Şehirde göğün parıltısı ışık kirliliği | d1 (Bortle ölçeği) | — |
+
+### Bölüm: İlk saniyeler (eklemeler)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Karşıt parçacık: aynı kütle, ters yük; çiftler yok olup foton üretir | https://en.wikipedia.org/wiki/Antiparticle (WF; arama sonucu) | "is associated with an antiparticle with the same mass but with opposite physical charges" ; "Particle–antiparticle pairs can annihilate each other, producing photons" |
+| Her 10¹⁰ çifte 1 fazla madde; karşıt baryon neredeyse yok; nasıl olduğu açık değil | CHRON (WF) | "Matter and antimatter are created with one extra particle of matter for every 10^{10} pairs." ; "almost no antibaryons are observed in nature" ; (önceki) "It is not clear how this came about." |
+| Baryon/foton oranı ~6×10⁻¹⁰; çekirdek sentezinin iki girdisinden biri | WP:Big_Bang_nucleosynthesis (WF) | "Its value is small, at roughly 6 × 10−10." ; BBN depends on "nuclear reaction rate parameters and two cosmological input parameters" |
+| 1 / 6×10⁻¹⁰ ≈ 1,7 milyar | HESAP | 1,667×10⁹ |
+| Örnek: 411 × 6×10⁻¹⁰ = 2,47×10⁻⁷ /cm³ = 0,247 /m³; 30 m³ → 7,4 | HESAP (411 foton/cm³: WP:Cosmic_microwave_background WF "about 411 photons/cm3") | — |
+
+### Bölüm: İlk çekirdekler (eklemeler)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| n/p dönüşümü verimsizleşti, ~1/6'da dondu; serbest nötron ömrü ~15 dakika; sonda ~1/7 | WP:Big_Bang_nucleosynthesis (WF) | "interconversion between protons and neutrons became inefficient, and the neutron-proton ratio was fixed to about 1/6." ; "free neutrons are unstable with a lifetime of about 15 minutes." ; "the neutron/proton ratio settles to about 1/7 by the end of BBN." ; CHRON: "about 1 neutron for every 7 protons" |
+| Yalnız n/p'den atomların ~%8'i He-4, kütlenin ~%25'i helyum | aynı (WF) | "The neutron/proton ratio alone is sufficient to estimate that about 8% of all atoms should be helium-4," ; "a mass fraction of helium-4 of about 25%" |
+| 16 parçacık hesabı: 4/16 = 0,25; 1/13 = %7,7 | HESAP | — |
+| Döteryum ilk kaynaşan çekirdek, bütün zincirlerin ilk adımı; küçük bağlanma enerjisi, kolay parçalanır ve ağır çekirdeklere katılır | aynı (WF) | "Deuterium is the first nucleus to fuse during BBN. Its formation is the first step in all reaction chains to synthesize heavier elements." ; "It has a small binding energy, meaning it is generally easy to break deuterium nuclei apart and incorporate them into heavier nuclei." |
+| Döteryum ~100.000'de 1; He-3 benzer; Li-7 milyarda 1 | aynı (WF) | "roughly one out of every 100,000 nuclei" ; "Roughly 1 nucleus in 100,000 is deuterium or helium-3." ; "1 nucleus in 1,000,000,000 is lithium-7." |
+| Gözlenen döteryum öngörüyle uyumlu; η'nın doğrudan ölçümü | aynı (WF) | observed values "generally consistent with the abundances predicted by BBN" ; BBN provides a direct measurement of the baryon-to-photon ratio |
+| Lityum-7 öngörüden 2–4 kat az | aynı (WF) | "The resulting measurement of primordial lithium-7 is a factor of 2–4 lower than the predicted BBN abundance." |
+| Formül Y ≈ 2(n/p)/(1 + n/p); 1/5 için 0,333 | HESAP | (2/7)/(8/7) = 0,25 ; 0,4/1,2 = 0,333 |
+
+### Bölüm: Kozmik mikrodalga arka plan (ekleme)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| 411 foton/cm³; 0,260 eV/cm³ | WP:Cosmic_microwave_background (WF) | "The energy density of the CMB is 0.260 eV/cm3 (4.17×10−14 J/m3), about 411 photons/cm3." |
+| Görünür foton 1,8–3,3 eV | d2_kaynak.md ("700 nm ≈ 1,8 eV; 380 nm ≈ 3,3 eV") | — |
+| 411 × 1000 = 411.000; 0,260/411 = 6,3×10⁻⁴ eV; görünürün 1/2800–1/5200'ü | HESAP | — |
+
+### Yeni bölüm: Eski ışıktaki ses dalgaları
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Kütleçekimi içe, foton-madde ısısı dışa basınç; ses dalgalarına benzer salınım; hız ışığın yarısından biraz fazla | https://en.wikipedia.org/wiki/Baryon_acoustic_oscillations (WF; arama sonucu) | "While this region of overdensity gravitationally attracts matter towards it," "the heat of photon-matter interactions creates a large amount of outward pressure." ; "These counteracting forces of gravity and pressure created oscillations," "comparable to sound waves created in air by pressure differences." ; "moving with a speed slightly over half the speed of light" |
+| Yeniden birleşmede dalgalar dondu | aynı (WF) | neutral atoms "stopped the expansion of the plasma density waves, "freezing" them into place." |
+| ~490 milyon ışık yılı, ~150 Mpc; 2005 SDSS ve 2dFGRS; CMB ölçeği hassas ölçer | aynı (WF) | "The length of this standard ruler (≈490 million light years in today's universe" ; "the sound horizon is ~150" Mpc ; "This signal was detected by the SDSS team in 2005." ; "The 2dFGRS collaboration and the SDSS collaboration reported a detection of the BAO signal" ; "the CMB provides a measurement of this scale to high accuracy" |
+| "Galaksi çiftleri arasında bu uzaklık biraz daha sık" | Yazar açıklaması: "standard ruler" ve "fluctuations in the density of the visible matter" ifadelerinden | — |
+| BOOMERanG ~1°; ilk tepe eğriliği belirler; kabaca düz | WP:Cosmic_microwave_background (WF) | "the highest power fluctuations occur at scales of approximately one angular degree." ; "The angular scale of the first peak determines the curvature of the universe" ; "the geometry of the universe is approximately flat" |
+| Ay ~0,5° | d10_kaynak.md (WP:Solar_eclipse) | "about 0.5 degree of arc" |
+| WMAP Haziran 2001; Planck Mayıs 2009, daha küçük ölçek | WP:Cosmic_microwave_background (WF) | WMAP "launched in June 2001" ; Planck "was launched in May 2009" ; "measured the CMB at a smaller scale than WMAP." |
+| E kipi 10 kat zayıf; ilk 2002 DASI | aynı (WF) | "The E-mode signal is a factor of 10 less strong than the temperature anisotropy." ; "first seen in 2002 by the Degree Angular Scale Interferometer (DASI)." |
+| Dipol 3,3621 ± 0,0010 mK; Güneş 369,82 ± 0,11 km/s | aynı (WF) | "The amplitude of CMB dipole is around 3.3621±0.0010 mK." ; "the Sun appears to be moving at 369.82±0.11 km/s relative to the reference frame of the CMB." |
+| Doppler (mavi/kırmızı kayma) | d2 | — |
+| Örnek: 2,72548 × 369,82 / 299.792,458 = 3,362 mK | HESAP | 0,0033622 K |
+
+### Bölüm: Karanlık çağ (eklemeler)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Nötr hidrojen ara sıra 21 cm foton salar; gözlem çalışması sürüyor; ilke olarak CMB'den güçlü araç | CHRON (WF) | "photons occasionally released by neutral hydrogen atoms, known as the 21 cm spin line of neutral hydrogen" ; "There is also an observational effort underway to detect the faint 21 cm spin line radiation" ; "in principle an even more powerful tool than the cosmic microwave background for studying the early universe." |
+| 1420,4 MHz; 21,106 cm | d2_kaynak.md (WP:Hydrogen_line) | "a frequency of 1420.405751768(2) MHz" ; "21.106114054160(30) cm" |
+| EDGES 2018 olası algılama, beklenenden güçlü; SARAS 3 sinyal bulamadı; ~200 milyon yıl, kozmik şafak; bin kat parlak + zayıf ısıtan senaryolar dışlandı | https://cam.ac.uk/node/235511 (WF; arama sonucu; 28 Kasım 2022) | "published a result that hinted at a possible detection of this earliest light." ; "The reported signal was unusually strong compared to what is expected in the simplest astrophysical picture of the early Universe." ; "India's SARAS3 radio telescope" ; "the researchers were not able to find a signal in the SARAS3 data." ; "just 200 million years after the Big Bang" ; cosmic dawn = first stars and galaxies formed ; "excludes scenarios in which the earliest galaxies were both more than a thousand times as bright as present galaxies," (and poor heaters) |
+| Aynı içerik (çapraz kontrol) | https://www.sciencedaily.com/releases/2022/11/221128112940.htm (WF; arama sonucu) | "In 2018, another research group operating the EDGES experiment published a result that hinted at a possible detection of this earliest light." |
+| Örnek: 21,106 × 21 = 443,2 cm; 1420,4/21 = 67,6 MHz; × 7 = 147,7 cm; /7 = 202,9 MHz; z = 20 ↔ 200 milyon yıl, z = 6 ↔ son | HESAP + CHRON (tablo: 200 Ma–1 Ga, z 20→6) | — |
+| Soru: z = 9 → 211 cm, 142 MHz | HESAP | 21,106 × 10 = 211,1 ; 1420,4/10 = 142,0 |
+
+### Bölüm: İlk yıldızlar (eklemeler)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Pop III: büyük ya da küçük, H ve He dışında element yok ("metal" kullanımı); hiç bulunmadı | CHRON (WF) | "They can be huge as well as perhaps small—and non-metallic (no elements except hydrogen and helium)." ; "As yet, no Population III stars have been found." ; "The first generation of stars, known as Population III stars" |
+| LAP1-B, z = 6,6, MACS J0416 merceği, üç öngörüyle uyuşan ilk cisim, ~5×10⁷ M☉ hale, ağır yıldız ağırlıklı kütle dağılımı, düşük metal; 2025 ApJL; Visbal, Hazlett, Bryan | https://scholars.utoledo.edu/display/other_activity-59821 (WF; arama sonucu) | "the $z=6.6$ Population III (Pop III) candidate LAP1-B" ; "is gravitationally lensed by galaxy cluster MACS J0416" ; "the first object to agree with three key theoretical predictions for Pop III stars" ; "extremely low-metallicity halos" ; "a top-heavy initial mass function" ; "hosted in a $\sim 5\times 10^7~M_\odot$ dark matter halo" |
+| HD 140283: Terazi; ~190 ışık yılı; 7. kadir, dürbünle; ağır element Güneş'in 1/250'si; ilkel cüce galaksi; zenginleşmeden önce | https://science.nasa.gov/missions/hubble/hubble-finds-birth-certificate-of-oldest-known-star (WF; arama sonucu; 7 Mart 2013) | "the constellation Libra" ; "190.1 light-years from Earth" ; "7th-magnitude object" "can be seen with binoculars" ; "1/250th as much of the heavy element content of our Sun" ; (WF özeti) born in a primeval dwarf galaxy later absorbed by the Milky Way |
+| Kadir 7,205, dürbünle; demir Güneş'inkinin ~250'de biri | https://en.wikipedia.org/wiki/HD_140283 (WF; arama sonucu) | "Its apparent magnitude is 7.205, so it can be seen with binoculars." ; "an iron content about a factor of 250 lower than that of the Sun." |
+| 10×50 sınır kadiri +9,5–11 | d11_kaynak.md (WP:Binoculars) | "10×50 binoculars are limited to an apparent magnitude of +9.5 to +11" |
+| Terazi = Libra | veri/takimyildiz.json ("k": "Lib", "ad": "Terazi") | — |
+
+### Bölüm: Yeniden iyonlaşma (eklemeler)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| 13,6 eV; 91,2 nm veya kısa | https://en.wikipedia.org/wiki/Reionization (WF; arama sonucu) | "To ionize neutral hydrogen, an energy larger than 13.6 eV is required," ; "photons with a wavelength of 91.2 nm or shorter." |
+| Göz 380–700 nm | d8 Bölüm 6 satırı (NASA) | "from 380 to 700 nanometers" |
+| Wien: kısa tepe dalga boyu = sıcak yüzey | d2 (Wien yasası) | — |
+| 2001 SDSS dört kuasar z 5,82–6,28; z > 6'da Gunn-Peterson çukuru | WP:Reionization (WF) | "In 2001, four quasars were detected by the Sloan Digital Sky Survey with redshifts ranging from z = 5.82 to z = 6.28." ; "While the quasars above z = 6 showed a Gunn-Peterson trough" |
+| Çukur bol nötr hidrojeni gösterir; daha geç kaybolur | CHRON (WF) | "Gunn-Peterson troughs that show the presence of large amounts of neutral hydrogen disappear" ; "Reionization is evidenced from observations of quasars." |
+| WMAP: z ≈ 10 civarı iyonlaşma kanıtı | WP:Cosmic_microwave_background (WF) | WMAP "evidence that the universe was ionized at very early times, at a redshift around 10." |
+| WMAP 3 yıl: z = 11 başlangıç, z = 7 iyonlaşmış; Planck 2018 z = 7,68 ± 0,79; ani iyonlaşma fiziksel değil | WP:Reionization (WF) | "reionization beginning at z = 11 and the universe ionized by z = 7." ; "yield an instantaneous reionization redshift of z = 7.68 ± 0.79." ; instantaneous reionization is "unlikely to be physical." |
+| Cüce galaksiler başlıca kaynak; Pop III başlatıcı; başka kaynaklar tamamladı; kuasarlar yetmez; hâlâ belirsiz | WP:Reionization (WF) | "Dwarf galaxies are currently considered to be the primary source of ionizing photons during the epoch of reionization." ; "Population III stars are currently considered the most likely energy source to initiate the reionization of the universe," "though other sources are likely to have taken over and driven reionization to completion." ; "quasars do not exist in high enough numbers to reionize the IGM alone." ; "it is still uncertain which objects provided the photons that reionized the IGM." |
+| Örnek: hc = 1,986×10⁻²⁵ J·m; 1 eV = 1,6×10⁻¹⁹ J; 91,2 nm → 2,178×10⁻¹⁸ J → 13,6 eV; 500 nm → 3,97×10⁻¹⁹ J → 2,48 eV | d2_kaynak.md (h, c, eV) + HESAP | 13,61 ; 2,48 ; 2,48/13,6 = 0,18 |
+
+### Bölüm: Evrenin yaşı (eklemeler)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Sonraki modeller 13,7 ya da 12; 12,0 ± 0,5; 2024 12–14; 2025 yıldız sismolojisi 14,2 ± 0,4 | https://en.wikipedia.org/wiki/HD_140283 (WF) | "Subsequent models of its stellar evolution have suggested revision of the star's age to 13.7 billion years or 12 billion years." ; "An age of 12.0±0.5 billion years was estimated in 2022..." ; "...a more detailed study in 2024 found an age between 12 and 14 billion years, depending on the chemical abundances used." ; "A 2025 study using asteroseismology found a more precise age of 14.2±0.4 billion years..." |
+| 14,2 − 0,4 = 13,8 (alt uç) | HESAP | — |
+| M13: Herkül, Temmuz'da dürbünle; 25.000 ışık yılı; 100.000'den fazla yıldız | d11_kaynak.md (NASA Messier 13) | "can be spotted with a pair of binoculars most easily in July." ; "Located 25,000 light-years from Earth" ; "over 100,000 stars whirl within the globular cluster M13." |
+| Valcin 2026 küresel kümelerle yaş | Önceki satır (arXiv 2603.04872) | — |
+
+### Yeni bölüm: Kozmik takvim
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Carl Sagan, The Dragons of Eden 1977, Cosmos 1980 | https://en.wikipedia.org/wiki/Cosmic_Calendar (WF; arama sonucu) | (WF) popularized by Carl Sagan in his 1977 book The Dragons of Eden and his 1980 television series Cosmos |
+| 13,787 milyar yıl; 37,8 milyon yıl/gün; 438 yıl/saniye | aynı (WF) | "13.787 billion years" ; "37.8 million years per cosmic day" ; "438 years per cosmic second" |
+| Samanyolu 1 Mart (11 milyar yıl); Güneş Sistemi 9 Eylül (4,57); Dünya ve Ay 14 Eylül; ilk yaşam izleri 14 Eylül (4,1), prokaryotlar 21 Eylül; dinozorlar 25 Aralık; insanlar 31 Aralık 23.52 | aynı (WF) | "Milky Way Galaxy formed" 1 March 11 Gya ; "Formation of the Solar System" 9 September 4.57 Gya ; "Formation of the Earth and The Moon" 14 September ; "First known remains of biotic life" 14 September ; "First Life (Prokaryotes)" 21 September ; "Dinosaurs" 25 December ; "Humans" 31 December 23:52 |
+| 4,57/13,787 = 0,33 (son üçte bir) | HESAP | 0,331 |
+| Örnek: 380.000/438 = 868 s = 14,5 dk; 280/37,8 = 7,4 gün → 8 Ocak; 1000/37,8 = 26,5 gün → 27 Ocak; (13,787 − 4,57)/0,0378 = 243,8 gün → 1 Eylül (tablo 9 Eylül; fark derste açıkça söylendi) | HESAP | 13,787×10⁹/365 = 37,77×10⁶ ; /86400 = 437,2 yıl/s |
+| 20 dakika = 3,8×10⁻⁵ yıl → 8,7×10⁻⁸ kozmik saniye | HESAP | — |
+
+### İlk galaksiler (kontrol)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| MoM-z14 Ocak 2026 itibarıyla hâlâ rekor (dersteki ifade değiştirilmedi) | Live Science (WF; arama sonucu; son güncelleme 30 Ocak 2026) | MoM-z14, 14.44, "a mere 280 million years after the Big Bang" ; heise.de/-11159321 (WF) "has a redshift of 14.44" |
+
+### v3 notları
+
+8. Yeni sorular: 15 (6 yeni); anahtar sayılar 30 (12 yeni); sözlük 22 (12 yeni); kaynaklar 35 (13 yeni). Eski öğelerin kid alanları ve bölüm başlıkları aynen korundu.
+9. Çıkarılanlar: TV karıncalanmasının yüzdesi (yalnız zayıf kaynaklarda "yüzde 1"; derse "küçük bir kısmı" yazıldı). M13'ün yaşı (kaynak açılmadı). z ≈ 7,7'nin yıl karşılığı (kaynakta yok). Hidrojeni iyonlaştıranların listesi Wikipedia Reionization'dan; "ilk yıldız doğrudan gözlenmedi" artık CHRON'daki açık ifadeye dayanıyor.
+10. ASKIDA: arXiv izin zaman aşımı yüzünden Planck 2018 özetindeki τ değeri bu oturumda okunamadı; derste τ sayısı yok, yalnız Wikipedia'daki z = 7,68 ± 0,79 var.
