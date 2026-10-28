@@ -25,7 +25,7 @@
 (function () {
   'use strict';
   const U = window.Urania;
-  const HIZLAR = [0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5];
+  const HIZLAR = [0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.75, 2, 2.5];   // Kaan: 1,5 yetmiyor (28.10.2026)
   const PARCA_TAVAN = 180;
   const GUNLUK_TAVAN = 200;
   const SES_BEKLE_MS = 1500;

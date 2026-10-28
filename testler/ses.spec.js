@@ -186,15 +186,19 @@ test('(d) Bloğa dokunma: açık oturumda oradan sürer; boşta dokunmak ses ba�
   expect((await konusmalar(page))[1]).toBe(await page.evaluate(() => window.Ses.parcala(window.Okunus.okunus(document.querySelectorAll('.ders p.okunur')[2].textContent))[0]));
 });
 
-test('(e) Hız 0,8–1,5: çalan parçaya uygulanır ve hatırlanır', async ({ page }) => {
+test('(e) Hız 0,8–2,5: çalan parçaya uygulanır ve hatırlanır', async ({ page }) => {
   await sahteOrtam(page);
   await dersAc(page);
   const sec = cubuk(page).locator('.so-hiz');
-  expect(await sec.locator('option').evaluateAll(o => o.map(x => parseFloat(x.value)))).toEqual([0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5]);
+  expect(await sec.locator('option').evaluateAll(o => o.map(x => parseFloat(x.value)))).toEqual([0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.75, 2, 2.5]);
+  await expect(sec.locator('option[value="2"]')).toHaveText('2×');
   await cubuk(page).locator('[data-so="dinle"]').click();
   await expect.poll(() => say(page)).toBe(1);
   await cubuk(page).locator('.so-hiz').selectOption('1.3');
   await expect.poll(() => page.evaluate(() => window.__sahteSes.kayit.map(k => k.rate))).toEqual([1, 1.3]);
+  await cubuk(page).locator('.so-hiz').selectOption('2');
+  await expect.poll(() => page.evaluate(() => window.__sahteSes.kayit.map(k => k.rate))).toEqual([1, 1.3, 2]);
+  await cubuk(page).locator('.so-hiz').selectOption('1.3');
   const k = await konusmalar(page);
   expect(k[1]).toBe(k[0]);
   await page.goto('/index.html#ders/d9');
