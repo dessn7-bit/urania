@@ -73,3 +73,28 @@ Okur: meraklı bir yetişkin (Kaan; Türk, İstanbul, astronomiye meraklı, lise
 - d7 Galaksiler: Samanyolu'nun yapısı ve bizim yerimiz, galaksi türleri (Hubble çatalı), Yerel Grup, Andromeda ile gelecekteki birleşme, galaksi çarpışmaları, aktif galaksi çekirdekleri ve kuasarlar, galaksi kümeleri.
 - d8 Evrenin tarihi: Büyük Patlama'nın ne olduğu/ne olmadığı, zaman çizelgesi (ilk saniyeler, ilk çekirdekler, yeniden birleşme ve kozmik mikrodalga arka plan, karanlık çağ, ilk yıldızlar ve galaksiler, yeniden iyonlaşma), evrenin yaşı.
 - d17 (YENİ) Kozmoloji: kırmızıya kayma, Hubble-Lemaître yasası, kozmik uzaklık merdiveni (ıraklık, Sefeidler, Ia süpernovaları), karanlık madde kanıtları (dönme eğrileri, kütleçekimsel mercek, Mermi Kümesi), karanlık enerji (1998, Nobel 2011), evrenin bileşimi (Planck), Hubble gerilimi, evrenin olası geleceği.
+
+## v3 GENİŞLETME (Ekim 2026, Kaan: "dersler çok kısa"; 1 ve 3 seçildi)
+
+Bu bölüm yukarıdakilerle çelişirse bu bölüm geçerli.
+
+### Mevcut dersler (d1–d19): her ders yaklaşık 2 katı
+- Hedef: bölüm paragrafları toplamı 4.500–6.000 kelime (şu an 1.900–3.000). Dolgu yok: yeni bilgi, daha çok açıklama, daha çok "neden", gündelik bağlam, İstanbul'dan gözlem bağlantısı, ek çalışılmış örnekler.
+- MEVCUT BÖLÜM BAŞLIKLARI AYNEN KALIR (tek harf değişmez) ve hiçbir mevcut bölüm silinmez. Ders çizimleri, ders içi deneyler ve sınav soruları bölümlere başlıkla yeniden eşlenir (araclar/bolum_esle.py); başlık değişirse eşleme kırılır.
+- Yeni bölümleri istediğin yere ekleyebilirsin (toplam 6–16 bölüm). Mevcut bölümlerin paragraflarını genişletebilir, sadeleştirebilirsin; doğrulanmış bilgiyi koru.
+- sorular ≥ 10, anahtar_sayilar ≥ 8, sozluk ≥ 12, en az 4 çalışılmış örnek, kaynaklar ≥ 8.
+- Mevcut sorular / anahtar_sayilar / sozluk öğelerindeki "kid" alanını SİLME, DEĞİŞTİRME (tekrar kartlarının ilerlemesi ona bağlı). Yeni öğeye kid yazma; derleme betiği verir. Mevcut öğeyi silme; düzeltmen gerekirse metnini düzelt, kid kalsın.
+- sozluk terimleri uygulamanın ortak Astro sözlüğüne de gider ve ders metninde terimin geçtiği yer altı noktalı olur: terimi metinde geçtiği yalın biçimiyle yaz ("kırmızı dev", "anakol"), tanım tek açık cümle, kendi sözlerinle, kaynaklı.
+
+### Yeni dersler (d20–d24): 4.500–6.000 kelime, "yeni": true
+- d20 Astronominin kısa tarihi (ünite gokyuzu): Babil ve Mısır gözlemleri; Antik Yunan (Eratosthenes'in Dünya'yı ölçmesi, Aristarkhos, Hipparkhos ve kadir/presesyon, Ptolemaios); İslam dünyası (el-Battani, el-Biruni, Uluğ Bey ve Semerkant gözlemevi ile yıldız kataloğu, Takiyüddin ve İstanbul gözlemevi); Kopernik, Tycho Brahe, Kepler, Galileo, Newton; teleskoptan sonra (Herschel, tayfölçüm, Leavitt, Hubble) yalnız kısaca, ayrıntı diğer derslerde. Tarih, ad ve sayıların hepsi kaynaklı; tartışmalı olanlar öyle söylenir.
+- d21 Takımyıldızlar ve mevsimlerin gökyüzü (gokyuzu): 88 takımyıldız ve IAU sınırları; takımyıldız ile asterizm (Büyük Kepçe, Yaz Üçgeni) farkı; burçlar ve tutulum (Yılancı; astroloji bilim değildir, neden değil olduğu kısaca ve kaynaklı); yıldız adları (Arapça kökenli adlar, IAU WGSN), Bayer harfleri; İstanbul'dan mevsim mevsim belirgin takımyıldızlar ve onları bulma yolları (yıldız atlama); takımyıldız mitolojisi yalnız kısaca ve kaynaklı. Uygulamadaki Türkçe takımyıldız adlarını kullan (veri/takimyildiz.json).
+- d22 Zaman, takvim ve gökyüzü (gokyuzu): güneş günü ile yıldız günü (d1'i tekrarlama, ona dayan), zaman denklemi ve analemma, yerel saat, saat dilimleri ve Türkiye'nin kalıcı UTC+3'ü, UTC, atom saati ve artık saniye (kaldırılma kararı), tropik yıl, Jülyen ve Gregoryen takvimi (Türkiye'de geçiş), Hicri (ay) takvimi ve ay-güneş takvimleri, haftanın günlerinin gök cisimlerinden gelen adları, presesyon.
+- d23 Uzaya çıkmak: roketler, yörüngeler ve uzay görevleri (gunes_sistemi): roket ilkesi ve Tsiolkovsky denklemi (sözle + örnek), yörüngeye çıkmak için gereken hız, yörünge türleri (alçak yörünge, yer eşzamanlı, Güneş eşzamanlı), Hohmann aktarımı, kütleçekim yardımı, Uluslararası Uzay İstasyonu, Voyager'lar ve güneşkürenin sınırı, Türkiye'nin uzay çalışmaları (yalnız resmî kaynaklı olgular), uzay çöpü ve Kessler sendromu. d3 (yörünge fiziği) ve d18 (Mars görevleri) ile tekrar etme, onlara gönder.
+- d24 Gökyüzünü fotoğraflamak (gokyuzu): telefonla Ay ve parlak gezegenler, dürbün ya da teleskop arkasından fotoğraf (afokal), pozlamanın üç ayarı (ISO, enstantane, diyafram), sabit üçayakla yıldız izi ve yıldızları nokta tutmak için kaba kurallar (sınırlarıyla), RAW, gece modu ve görüntü yığınlama (stacking) mantığı, ışık kirliliğiyle baş etmek, uydu izleri. Ürün önerisi yok; teknik iddialar kaynaklı.
+- Her yeni ders için ayrıca arastirma/dersler_v2/dNN_sinav.json yaz: veri/sinavlar.json biçiminde 4 çoktan seçmeli soru ({"id": "dNN-1", "soru", "secenekler"[4], "dogru", "aciklama", "ders": "dNN", "bolum": <0'dan dizin>}); doğru cevap dersin kendi metnine dayanır.
+
+### Araştırma bütçesi ve yöntem
+- WebSearch payı paylaşılıyor: ders başına en çok 15 arama. Önce dersin kaynaklar listesindeki ve dNN_kaynak.md'deki URL'leri WebFetch ile oku (bunlar proje dosyasında olduğu için serbest); yeni bilgi için arama yap. WebFetch yalnız kendi aramandan ya da proje dosyalarından gelen URL'lere. Bir alan adı izin hatası verirse ona bir daha gitme.
+- dNN_kaynak.md'ye her YENİ iddia için satır ekle (iddia | URL | kaynaktaki ifade). Eski satırlar kalır.
+- Bitince: python3 araclar/ders_denetim.py dNN (HATA yok). araclar/ders_verisi_v2.py'yi ÇALIŞTIRMA (koordinatör derler).

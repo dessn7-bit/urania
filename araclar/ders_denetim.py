@@ -26,8 +26,8 @@ def denetle(yol):
     yeni = d.get('yeni', False)
     alt = 1800 if yeni else 2000
     if w < alt: hatalar.append(f'bölüm paragrafları {w} kelime; en az {alt}')
-    if w > 3600: uyarilar.append(f'{w} kelime; 3600 üstü çok uzun olabilir')
-    if not 5 <= len(d['bolumler']) <= 10: hatalar.append(f'{len(d["bolumler"])} bölüm; 5–10 olmalı')
+    if w > 7500: uyarilar.append(f'{w} kelime; 7500 üstü çok uzun olabilir')   # v3 genişletme hedefi 4500–6000 (Ekim 2026)
+    if not 5 <= len(d['bolumler']) <= 16: hatalar.append(f'{len(d["bolumler"])} bölüm; 5–16 olmalı')
     for i, b in enumerate(d['bolumler']):
         if not b.get('baslik') or not b.get('paragraflar'): hatalar.append(f'bölüm {i}: başlık/paragraf yok')
         if not b.get('akilda'): hatalar.append(f'bölüm {i} ({b.get("baslik")}): "akilda" ara özeti yok')
