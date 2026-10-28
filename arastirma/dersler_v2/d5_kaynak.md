@@ -172,3 +172,126 @@ Kaynak: araştırma raporu "Urania: askıdaki 13 olgusal iddianın birincil kayn
 | Kütle–ışıma: Duric yalnız iki parça | https://www.tevza.org/home/course/PCO2012/Duric%20N.%20Advanced%20astrophysics%20(CUP,%202004).pdf | L = M^4 (M > 0,43), 0,23 M^2,3 (M < 0,43); 1,4 M^3,5 ve 32.000 M yalnız Wikipedia türevlerinde |
 
 | Lacaille 8760 6,7 kadir; ancak olağanüstü karanlık gökte | https://en.wikipedia.org/wiki/Lacaille_8760 | "may only be visible to the unaided eye under exceptionally good viewing conditions" (ana oturum, sınav denetiminden sonra; "hiçbiri" mutlak ifadesi yumuşatıldı) |
+
+## v3 genişletme (2026-10-28) — yeni iddialar
+
+Yöntem: WebSearch 8 arama. WebFetch yalnız proje dosyalarındaki ya da bu aramalardan gelen URL'lere; "(WebFetch)" yazan alıntılar sayfanın WebFetch ile alınan metninden. Mamajek tablosu (MAM) bu oturumda izin isteği yanıtlanmadığı için yeniden açılamadı; M3V ve O5V yarıçapları proje dosyası arastirma/simulasyon_tablolari.json'daki (MAM'dan 2026-10-27'de okunmuş) değerlerden alındı. Arcturus'un takımyıldızı artık kaynaklı (Notlar'daki eski "kaynak bulunamadı" notunu bu satırlar günceller).
+
+### YENİ BÖLÜM — Mutlak kadir
+
+| # | İddia (derste) | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|---|
+| 103 | Mutlak kadir = 10 parsekten görünen kadir; 1 pc = 3,2616 ışık yılı | https://en.wikipedia.org/wiki/Absolute_magnitude | "the apparent magnitude that the object would have if it were viewed from a distance of exactly 10 parsecs" ; "1 pc = 3.2616 light-years" (WebFetch) |
+| 104 | m − M = 5 log(d/10), d parsek | https://astronomy.swinburne.edu.au/cosmos/D/Distance+Modulus | m − M = 5 log₁₀(r/10), r "distance to the star in parsecs" (WebFetch) |
+| 105 | 10 kat uzaklık → 100 kat sönük → 5 kadir | d2 (ters kare yasası) ; d1 (Pogson, 100^(1/5)) | d1_kaynak.md: "100^(1/5) = 2,5119" ; HESAP |
+| 106 | Iraklık; ayrıntı d17 | https://esahubble.org/images/heic1611a/ (d17_kaynak.md) | "a basic geometrical technique called parallax" |
+| 107 | Güneş görünür −26,74, mutlak +4,83 | https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html ; https://en.wikipedia.org/wiki/Absolute_magnitude | "Visual magnitude V(1,0) -26.74" ; "Absolute magnitude +4.83" (WebFetch) ; WP: "has absolute magnitude MV = +4.83" |
+| 108 | Sirius 1,4; Rigel −7,8; Deneb −8,4 (en uzak tahmin) | https://en.wikipedia.org/wiki/Absolute_magnitude ; https://en.wikipedia.org/wiki/Deneb | Sirius 1.4, Rigel −7.8, Deneb −8.4 (WebFetch) ; "At its highest distance estimate, Deneb's absolute magnitude is estimated as −8.4." |
+| 109 | Swinburne: Rigel −7,1, 276,1 pc | https://astronomy.swinburne.edu.au/cosmos/D/Distance+Modulus | tablo: Rigel apparent 0.14, absolute -7.1, 276.1 pc (WebFetch) |
+| 110 | Bazı çıplak göz yıldızları 10 pc'de gezegenleri bastırır, gölge düşürür | https://en.wikipedia.org/wiki/Absolute_magnitude | "would appear bright enough to outshine the planets and cast shadows if they were at 10 parsecs from the Earth" (WebFetch) |
+| 111 | −7,8 dolunay (−12,74) ile Venüs (−4,92) arasında | d1_kaynak.md satır 152 | "dolunay −12,74, Venüs −4,92" (WP Apparent magnitude) |
+| 112 | Bolometrik kadir: tüm dalga boyları | https://en.wikipedia.org/wiki/Absolute_magnitude | absolute bolometric magnitude "represents its total luminosity over all wavelengths" (WebFetch) |
+| 113 | Betelgeuse %85 kızılötesi, Rigel %60 morötesi | d2 (d2_kaynak.md) | d2 metni: "Rigel ışığının %60'ını morötesinde, Betelgeuse ise %85'ini kızılötesinde yayar" |
+| 114 | Sirius m −1,46; 8,6 ışık yılı | https://en.wikipedia.org/wiki/First-magnitude_star | Sirius "−1.46", "A1 V", "8.6" ly (WebFetch) |
+| 115 | Kent +3, banliyö +4 | d1_kaynak.md satır 110 | WP Apparent magnitude: urban +3, suburban +4 |
+| 116 | Örnek | — | HESAP: 8,6 / 3,2616 = 2,637 pc ; log₁₀(0,2637) = −0,579 ; −1,46 + 2,894 = +1,43 |
+
+### YENİ BÖLÜM — Kütleçekimi yetmez: Kelvin'in hesabı
+
+| # | İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|---|
+| 117 | Helmholtz: kütleçekimiyle büzülme; Kelvin: kütleçekimi enerjisi ısıya | https://arxiv.org/pdf/astro-ph/0009259 | Helmholtz "proposed that the origin of the sun's enormous radiated energy is the gravitational contraction of a large mass" ; "Kelvin was convinced that the sun's luminosity was produced by the conversion of gravitational energy into heat" (WebFetch; Bahcall, How the Sun Shines, Nobel e-Museum 2000) |
+| 118 | 30 milyon yıl; 1862 yirmi milyon yıl; fizikçiler birkaç on milyon yıl | aynı | "This calculation yielded a lifetime of only 30 million years." ; "There is no difficulty in accounting for 20,000,000 years' heat by the meteoric theory." ; "at most a few tens of million years old" (WebFetch) |
+| 119 | Darwin Weald ~300 milyon yıl; Kelvin yanıldı | aynı | "a number for the "denudation of the Weald" in the range of 300 million years" ; "Today we know that Lord Kelvin was wrong and the geologists and evolutionary biologists were right." (WebFetch) |
+| 120 | 1920 Aston, Eddington; Bethe 1939 "Energy Production in Stars" | aynı | "Aston found that four hydrogen nuclei were heavier than a helium nucleus." ; Eddington argued "the sun could shine by converting hydrogen atoms to helium" ; Bethe, "Energy production in Stars," Phys. Rev. 55, 436 (1939) (WebFetch) |
+| 121 | t_KH = GM²/RL ≈ 30 milyon yıl; önyıldız çöküşü ve devlere geçiş hızı | https://www.astro.sunysb.edu/fwalter/AST101/k-h.html | "tKH = GM2/RL" ; "about 30 million years" ; timescale sets pace of protostellar collapse to the main sequence and of main-sequence evolution into giants (WebFetch) |
+| 122 | G = 6,674 × 10⁻¹¹ | d3_kaynak.md satır 56 | NIST: "6.674 30 x 10-11 m3 kg-1 s-2" |
+| 123 | Örnek | — | HESAP: (1,988e30)² = 3,952e60 ; × 6,6743e-11 = 2,638e50 ; 6,957e8 × 3,828e26 = 2,663e35 ; oran 9,906e14 s ; / 3,156e7 = 3,14e7 yıl ; 4,6e9 / 3,1e7 = 148 |
+
+### YENİ BÖLÜM — Enerji yıldızın içinde nasıl taşınır?
+
+| # | İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|---|
+| 124 | Konveksiyon daha etkili ama dik sıcaklık değişimi ister; yüksek opaklık konveksiyon yaratır | https://en.wikipedia.org/wiki/Main_sequence | Convection "is a more efficient mode for carrying energy than radiation, but it will only occur under conditions that create a steep temperature gradient" ; "A sufficiently high opacity can result in energy transport via convection." (WebFetch) |
+| 125 | < 0,4 M☉ tamamen konvektif; Güneş benzeri: ışınımlı çekirdek, yüzeye yakın konveksiyon; > 1,3–1,5 M☉ konvektif çekirdek (CNO), dış bölge ışınımlı | https://en.wikipedia.org/wiki/Main_sequence | "The main-sequence stars below 0.4 M☉ undergo convection throughout their mass." ; "stars have cores that are entirely radiative with convective zones near the surface" ; core convection "in the cores of stars greater than 1.3 to 1.5 times the Sun's mass" ; "The outer regions of a massive star transport energy by radiation, with little or no convection." (WebFetch) |
+| 126 | Tamamen konvektifte helyum dağılır, orantısız uzun ömür | https://en.wikipedia.org/wiki/Main_sequence | "the helium produced at the core is distributed across the star, producing a relatively uniform atmosphere and a proportionately longer main-sequence lifespan" (WebFetch) |
+| 127 | Güneş'te helyum çekirdekte birikir; hidrojenin esas olarak çekirdekteki kısmı yakılır | — | ÇIKARIM: ışınımlı çekirdek karışmaz (satır 125) + yüzey kütlece %74,9 H (d4_kaynak.md) + yıldız çekirdekteki hidrojen tükenince anakolu terk eder (WP Main_sequence "until a significant amount of hydrogen in the core has been consumed") |
+| 128 | Konveksiyon tabanı 0,713 R | https://arxiv.org/pdf/astro-ph/0403604 | R_CZ = (0.713 ± 0.001) R☉ (d4_kaynak.md) |
+| 129 | Dış kabuk hacmin ~%64'ü; hacim payı ≠ kütle payı | — | HESAP: 1 − 0,713³ = 0,6375. Kütle payı için sayı verilmedi (BULAMADIM); yalnız merkez/ortalama yoğunluk farkından (satır 38; NSSDCA 1408 kg/m³) nitel çıkarım |
+| 130 | Tencere benzetmesi ve sınırı | — | AÇIKLAMA |
+
+### YENİ BÖLÜM — Kütle ve bileşim
+
+| # | İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|---|
+| 131 | Vogt-Russell: dengedeki yıldızın yapısı kütle ve başlangıç bileşimiyle tek türlü belirlenir; anakolun dar şeridi ve kütle-ışıma ilişkisini açıklar | https://en.wikipedia.org/wiki/Vogt%E2%80%93Russell_theorem | "The internal structure of a star in hydrostatic and thermal equilibrium" is "uniquely determined by the total mass and the initial chemical composition" ; explains narrow MS band and mass–luminosity relation (WebFetch) |
+| 132 | Tarih: 1920'lerin sonu – 1930'ların başı, bağımsız | https://en.wikipedia.org/wiki/Vogt%E2%80%93Russell_theorem ; https://arxiv.org/pdf/1504.08188 | WP: Vogt ~1926 (yayın yok), ilk biçimsel ifade 1931 AN; Russell 1931 MNRAS, 1933 JRASC ; Gautschy: Vogt 1926 notu (AN), Russell 1927 ders kitabı "Astronomy" (WebFetch). Kaynaklar arası fark yüzünden derste aralık verildi |
+| 133 | Gerçek teorem değil; çoklu çözüm; hızlı dönme, manyetik alan, ısıl dengesizlikte geçersiz | aynı | "lacks a mathematical proof of uniqueness" ; same global parameters can yield multiple solutions ; fails with rapid rotation, strong magnetic fields, not in thermal equilibrium (WebFetch) ; Gautschy: "its failure to serve as a theorem in the strict mathematical sense" |
+| 134 | Metal = H ve He dışındaki her element; metalisite tanımı | https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Metallicity | "In astronomy, metallicity is the abundance of elements present in an object that are heavier than hydrogen and helium." ; "metals" for "all elements except hydrogen and helium" (WebFetch; Wikipedia'nın IPFS kopyası) |
+| 135 | [Fe/H]: demir oranının on tabanlı logaritması; Güneş 0; −1 onda bir; +1 on kat | aynı | "the common logarithm of the ratio of a star's iron abundance compared to that of the Sun" (WebFetch) |
+| 136 | Baade 1944; Pop I zengin, Pop II fakir; Pop II 1/1000–1/10; Pop III 1978, ilk yıldızlar, < −6 | aynı | Walter Baade 1944, "Population I (metal-rich)" and "Population II (metal-poor)" ; Pop II roughly 1/1000 to 1/10 of the Sun's ; Pop III introduced in 1978, "first-born" stars, metallicity "less than −6" (WebFetch) |
+| 137 | Güneş fotosferinde ağır elementler < %2 | https://en.wikipedia.org/wiki/Sun | "less than 2% of the mass" (d4_kaynak.md) |
+| 138 | Arcturus [Fe/H] −0,52, ~1/3 Güneş; yaşlı disk yıldızı, Pop II olabilir | https://en.wikipedia.org/wiki/Arcturus | [Fe/H] "−0.52 ± 0.04" ; about a third of solar metallicity ; "old-disk star" ; possibly a Population II star (WebFetch) |
+| 139 | Örnek | — | HESAP: 10^(−0,52) = 0,302 ; 10^0,3 = 1,995 |
+
+### Anakol ömrü (eklenen paragraf)
+
+| # | İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|---|
+| 140 | Arcturus 1,08 M☉; yaş 6–8,5 milyar yıl | https://en.wikipedia.org/wiki/Arcturus | "1.08 ± 0.06" ; age range 6 to 8.5 billion years (WebFetch) |
+| 141 | Hesap | — | HESAP: 1,08⁴ = 1,3605 ; 10 × 1,08 / 1,3605 = 7,94 ; 1,08^(−2,5) = 0,825 → 8,25 milyar yıl |
+
+### YENİ BÖLÜM — Devler ve cüceler
+
+| # | İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|---|
+| 142 | M3V 0,361 R☉; O5V 11,45 R☉ | https://www.pas.rochester.edu/~emamajek/EEM_dwarf_UBVIJHK_colors_Teff.txt | arastirma/simulasyon_tablolari.json "anakol_ozellikleri": ["M3V", 0.37, 0.0162, 3430, 0.361] ; ["O5V", 43, 347000.0, 41400, 11.45] (MAM'dan aynen) |
+| 143 | ~30 kat | — | HESAP: 11,45 / 0,361 = 31,7 |
+| 144 | Arcturus 25,4 R☉ | https://en.wikipedia.org/wiki/Arcturus | "25.4 ± 0.2 solar radii" (WebFetch) |
+| 145 | Deneb çapı 100–200 kat; sıcaklık, ışıma gücü ve açısal çaptan | https://en.wikipedia.org/wiki/Deneb | "Deneb appears to have a diameter about 100 – 200 times" the Sun's, based on temperature, luminosity, and angular diameter (WebFetch) |
+| 146 | Betelgeuse ~700 kat; Jüpiter yörüngesini aşar | https://science.nasa.gov/universe/what-is-betelgeuse-inside-the-strange-volatile-star | "about 700 times the size of the Sun" ; "would stretch past Jupiter's orbit" (d6_kaynak.md satır 63) |
+| 147 | Güneş ortalama yoğunluk 1408 kg/m³ | https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html | "Mean density (kg/m^3) 1408." (WebFetch) |
+| 148 | Helyum parlamasında çekirdek Güneş kütlesinin %40'ı | https://en.wikipedia.org/wiki/Sun | "6% of the core—by then itself 40% of the Sun's mass" (WebFetch) |
+| 149 | Uzaklık belirsizliği → ışıma gücü/yarıçap belirsiz | https://en.wikipedia.org/wiki/Deneb | luminosity range "reflecting the distance uncertainty" (WebFetch); yarıçapa yansıması ÇIKARIM (L = 4πR²σT⁴) |
+| 150 | Örnek | — | HESAP: 25,4³ = 16.387 ; 1,08 / 16.387 = 6,59e-5 ; × 1408 = 0,0928 kg/m³ ; 700³ = 3,43e8 ; 0,361³ = 0,047 ; kütle aralığı 200 / 0,08 = 2500 ; hacim 3,43e8 / 0,047 = 7,3e9 |
+
+### YENİ BÖLÜM — Güneş'in takvimi
+
+| # | İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|---|
+| 151 | ~5 milyar yıl sonra çekirdek H biter; sonraki 2 milyar yıl: ~1 milyar yıl altdev, sonra kırmızı dev; L > 1000 kat | https://en.wikipedia.org/wiki/Sun | "when it runs out of hydrogen in the core in approximately 5 billion years" ; "expand over the next 2 billion years: first into a subgiant for a billion years" ; "eventually reach more than 1,000 times its present value" (WebFetch) |
+| 152 | RGB ~1 milyar yıl, kütlenin ~1/3'ü kaybı; 256 kat çap, 1,19 AB | aynı | "The Sun will spend around a billion years in the RGB and lose around a third of its mass." ; "about 256 times as big across as it is today, with a radius of 1.19 au" (WebFetch) |
+| 153 | Merkür, Venüs yutulur; Dünya yörüngesi ≤ 1,5 AB; Dünya ~7,59 milyar yıl sonra yutulur | aynı | Mercury and Venus engulfed ; Earth engulfed about 7.59 billion years from now ; "Earth's orbit may initially expand to at most 1.5 au" (WebFetch) ; NASA: "possibly Earth as well" (satır 77) |
+| 154 | Helyum parlaması: çekirdek %40 kütle, %6'sı dakikalar içinde karbon; sonra ~10 kat boy, ~50 kat L, biraz soğuk | aynı | "6% of the core—by then itself 40% of the Sun's mass—will be converted into carbon within a matter of minutes" ; shrinks to about 10 times current size, about 50 times luminosity, slightly lower temperature (WebFetch) |
+| 155 | Yatay kol / kırmızı yığıntı ~100 milyon yıl; erken AGB ~20 milyon yıl | aynı | "over about 100 million years as it begins fusing helium in its core" ; "After about 20 million years on the early asymptotic giant branch" (WebFetch) |
+| 156 | Isıl atımlar ~100.000 yılda bir, birkaç yüz yıl; L 5000 kata kadar; en büyük 179 R☉ (< RGB tepesi); dört atım | aynı | "for a few hundred years every 100,000 years or so" ; "as much as 5,000 times the current level" ; "less than its tip-RGB maximum, or 179 R☉" ; "four thermal pulses are predicted before it completely loses its outer envelope" (WebFetch) |
+| 157 | Süpernova olamaz; gezegenimsi bulutsu oluşturabilen en hafif yıldızlardan biri olabilir | aynı | "The Sun does not have enough mass to explode as a supernova." ; "Simulations indicate that the Sun may be among the least massive stars capable of forming a planetary nebula." (WebFetch) |
+| 158 | Örnek | — | HESAP: 9,6 + 2 + 0,1 + 0,02 = 11,72 ; 24 / 11,72 = 2,048 sa ; 4,6 × 2,048 = 9,42 sa (09.25) ; 9,6 × 2,048 = 19,66 sa (19.40) ; 11,6 × 2,048 = 23,75 sa (23.45) ; 0,1 × 2,048 sa = 12,3 dk ; 0,02 × 2,048 sa = 2,46 dk. "Yüz milyonlarca yıllık farklar": Güneş maddesinin girişinde kırmızı dev geçişi için 4–7 milyar yıl aralığı (d4_kaynak.md) |
+
+### YENİ BÖLÜM — İstanbul'dan yıldız renkleri gezintisi
+
+| # | İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|---|
+| 159 | Tayf türleri: Rigel B8 Iab; Spica B1 III-IV + B2 V; Regulus B8 IV; Vega A0 V; Sirius A1 V; Altair A7 V; Deneb A2 Ia; Procyon F5 IV-V; Capella G8 III + G0 III; Arcturus K1.5 III; Pollux K0 IIIb; Aldebaran K5 III; Betelgeuse M2 Iab; Antares M1.5 Iab-b; kadirler (Vega 0,03, Deneb 1,25); uzaklık Vega 25 ışık yılı | https://en.wikipedia.org/wiki/First-magnitude_star | tablo (WebFetch): "Rigel 0.12 β Ori B8 Iab 860" ; "Spica 1.04 α Vir B1 III-IV + B2 V" ; "Regulus 1.39 α Leo B8 IV" ; "Vega 0.03 α Lyr A0 V 25" ; "Sirius −1.46 α CMa A1 V 8.6" ; "Altair 0.77 α Aql A7 V" ; "Deneb 1.25 α Cyg A2 Ia 2,600" ; "Procyon 0.34 α CMi F5 IV-V" ; "Capella 0.08 α Aur G8 III + G0 III" ; "Arcturus −0.05 α Boo K1.5 III 37" ; "Pollux 1.15 β Gem K0 IIIb" ; "Aldebaran 0.85 α Tau K5 III" ; "Betelgeuse 0.42 α Ori M2 Iab" ; "Antares 1.09 α Sco M1.5 Iab-b" |
+| 160 | Türkçe takımyıldız adları | veri/takimyildiz.json | Ori Avcı, Vir Başak, Leo Aslan, Lyr Çalgı, CMa Büyük Köpek, Aql Kartal, Cyg Kuğu, CMi Küçük Köpek, Aur Arabacı, Boo Çoban, Gem İkizler, Tau Boğa, Sco Akrep |
+| 161 | Dik açıklıklar ve en yüksek irtifalar | veri/yildizlar.json (d3-celestial) | Antares −26,432 → 22,6° ; Sirius −16,716 → 32,3° ; Rigel −8,202 → 40,8° ; Arcturus 19,182 → 68,2° (HESAP: 90 − 41,014 + δ) |
+| 162 | B−V: Rigel −0,03, Vega −0,0, Procyon 0,43, Capella 0,8, Arcturus 1,24, Aldebaran 1,54, Antares 1,86 | veri/yildizlar.json | y[6] … −0.03 ; y[4] … −0.0 ; y[7] … 0.43 ; y[5] … 0.8 ; y[2] … 1.24 ; y[13] … 1.54 ; y[15] … 1.86 |
+| 163 | Güneş B−V 0,656 | https://en.wikipedia.org/wiki/Color_index | "has a B−V index of 0.656 ± 0.005" (WebFetch) |
+| 164 | Hava kütlesi | d1 (sözlük "hava kütlesi") | d1 dersinde tanımlı |
+| 165 | Arcturus: 1,08 M☉, 7,1 milyar yıl (6–8,5), 25,4 R☉, 170 L☉, 4286 K, metalisite ~1/3, RGB ama belirsizlik (Charbonnel 1998: helyum parlaması geçmiş olabilir) | https://en.wikipedia.org/wiki/Arcturus | infobox ve metin (WebFetch): "1.08 ± 0.06" ; 7.1 (+1.5/−1.2) Gyr ; "25.4 ± 0.2" ; 170 L☉ ; "4,286 ± 30 K" ; "there is some uncertainty about its evolutionary status" ; Charbonnel et al. (1998) |
+| 166 | Yaz Üçgeni (Vega, Deneb, Altair); Deneb A2Ia süperdev; uzaklık 1400–2600 ışık yılı; L 55.000–196.000 L☉ | https://en.wikipedia.org/wiki/Deneb | "one vertex of the prominent and widely spaced asterism called the Summer Triangle" ; "Distance estimates range from 1,400 to 2,600 light-years." ; "between 55,000 and 196,000 times" (WebFetch) |
+| 167 | Örnek | — | HESAP: 1,25 − 0,03 = 1,22 ; 10^0,488 = 3,076 ; (2600/25)² = 10.816 → / 3,076 = 3516 ; (1400/25)² = 3136 → 1019 ; √170 = 13,04 ; (4286/5772)² = 0,5514 ; 13,04 / 0,5514 = 23,65 R☉ |
+
+### Sorular (yeni)
+
+| Soru | Dayanak |
+|---|---|
+| m = 5, d = 100 pc → M = 0 | HESAP; Vega +0,03 (d1) |
+| Kelvin | satır 117–121 |
+| Fe/H = −2 → 1/100, Pop II | satır 135–136 ; HESAP |
+| Vega–Deneb | satır 159, 166, 167 |
+| 0,3 M☉ kırmızı cüce | satır 125–126 |
+
+### Erişilemeyenler
+- https://www.pas.rochester.edu/~emamajek/EEM_dwarf_UBVIJHK_colors_Teff.txt ve https://physics.nist.gov/cgi-bin/cuu/Value?bg: bu oturumda izin isteği yanıtlanmadı, tekrar denenmedi; ilgili değerler proje dosyalarından (simulasyon_tablolari.json, d3_kaynak.md) alındı.
+- Ballesteros B−V → sıcaklık formülü: Wikipedia Color index sayfasında formül metni okunamadı; derse konmadı.
