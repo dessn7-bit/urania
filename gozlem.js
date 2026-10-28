@@ -104,7 +104,7 @@
           <p class="soluk kucuk" id="gkKDurum" role="status"></p>
           <div class="cip-grup" style="justify-content:space-between">
             <button type="button" class="dugme" id="gkKSifirla">Varsayılana dön (Fetih Mah.)</button>
-            <span class="cip-grup"><button value="iptal" class="dugme">Vazgeç</button><button value="kaydet" class="dugme dolu" id="gkKKaydet">Kaydet</button></span>
+            <span class="cip-grup"><button type="button" class="dugme" id="gkKVazgec">Vazgeç</button><button value="kaydet" class="dugme dolu" id="gkKKaydet">Kaydet</button></span>
           </div>
         </form>
       </dialog>`;
@@ -136,7 +136,8 @@
     durum.gece = G.geceAraligi(bazAn(), durum.gzl);
     /* Konum değiştiyse eski yerin örtme, geçiş ve bulut verisi planda kalmasın */
     const yer = k.enlem + '|' + k.boylam;
-    if (durum.yer !== yer) { durum.yer = yer; durum.ortmeler = null; durum.uyduGecisleri = null; durum.havaSaatler = null; }
+    const yerDegisti = durum.yer !== yer;
+    if (yerDegisti) { durum.yer = yer; durum.ortmeler = null; durum.uyduGecisleri = null; durum.havaSaatler = null; }
     durum.geceAnahtar = ogle().getTime() + '|' + k.enlem + '|' + k.boylam;
     const temsil = durum.gece.karanlikBas || secilenAn();
     durum.hedefDurum = G.hedeflerBuGece(durum.veri.hedefler, durum.gzl, durum.gece, temsil);
@@ -150,7 +151,7 @@
     listeleriYaz(true);
     ortmeYaz();
     havaYaz();
-    issYaz(true);
+    issYaz(yerDegisti);   // geçişler "şimdi"ye ve konuma bağlı: yalnız tarih değiştiyse baştan hesaplanmaz
     setTimeout(() => {
       if (sira !== geceSira) return;
       /* Algol: bu gece (planda) ve önümüzdeki 30 gün (listede) */
@@ -195,7 +196,9 @@
       const yer = k.enlem + '|' + k.boylam, t = an.getTime();
       const p = durum.uyduPencere;
       if (durum.uyduDilim !== 'pencere' || !p || p.yer !== yer || t < p.bas + 15 * 60e3 || t > p.son - 60 * 60e3) {
-        const bas = t - 15 * 60e3, son = bas + 4 * 3600e3;
+        /* Geri yönde gezinirken her adımda yeniden kurulmasın: geri giderken pencere geriye doğru açılır */
+        const geri = p && p.yer === yer && t < p.bas + 15 * 60e3;
+        const bas = t - (geri ? 2 * 3600e3 : 15 * 60e3), son = bas + 4 * 3600e3;
         durum.uyduDilim = 'pencere';
         durum.uyduPencere = { yer, bas, son, ls: durum.uydular.map(u => { try { return Uydu.yakinGecisler(u, k, new Date(bas), 4); } catch (h) { return []; } }) };
       }
@@ -379,7 +382,11 @@
   function takvimBag(o) {
     takvimNo++;
     takvimOlaylari.set(takvimNo, o);
-    if (takvimOlaylari.size > 1500) { for (const k of takvimOlaylari.keys()) { if (k > takvimNo - 1000) break; takvimOlaylari.delete(k); } }
+    if (takvimOlaylari.size > 1500) {
+      /* Yalnız artık sayfada olmayan düğmelerin olayları silinir (seyrek yenilenen listelerin düğmeleri çalışmaya devam etsin) */
+      const ekranda = new Set([...document.querySelectorAll('[data-takvim]')].map(b => Number(b.dataset.takvim)));
+      for (const k of [...takvimOlaylari.keys()]) if (k < takvimNo - 200 && !ekranda.has(k)) takvimOlaylari.delete(k);
+    }
     return `<button type="button" class="bag takvim-bag" data-takvim="${takvimNo}">Takvime ekle</button>`;
   }
   function olayYaz() {
@@ -395,7 +402,14 @@
 
   /* ---- Uydu geçişleri (gecelere değil "şimdi"ye bağlı; konum değişince yeniden) ---- */
   let issAnahtar = '', issSira = 0;
-  async function issYaz(zorla) {
+  /* Beklenmedik bir hata listeyi "Hesaplanıyor…"da bırakmasın, yakalanmamış söz reddi olmasın */
+  function issYaz(zorla) {
+    return issYazAsil(zorla).catch(e => {
+      if (window.Tani) Tani.hataEkle('uydu: ' + (e && e.message));
+      const ul = el && el.querySelector('#gkIss'); if (ul) ul.innerHTML = '<li><span class="bos">Uydu geçişleri hesaplanamadı.</span></li>';
+    });
+  }
+  async function issYazAsil(zorla) {
     const k = U.konum();
     /* 10 dakikalık dilim: geçmiş geçişler listeden düşsün */
     const anahtar = k.enlem + '|' + k.boylam + '|' + Math.floor(Date.now() / 600e3);
@@ -417,6 +431,11 @@
     /* Öğelerin dönemi şimdiden 14 günden uzaksa (cihaz saati yanlış ya da veri çok eski) SGP4 tahmini anlamsız:
        geçiş gösterilmez */
     const yasGun = u => (Date.now() - Uydu.donem(u)) / 86400e3;
+    if (!uydular.length) {
+      durum.uydular = null; durum.uyduGecisleri = null; planYaz(); levhaCiz();
+      ul.innerHTML = '<li><span class="bos">Yörünge verisinde izlenen uydu yok (ISS ve Tiangong bulunamadı, yeni Starlink dizisi yok).</span></li>';
+      kay.textContent = ''; return;
+    }
     if (uydular.every(u => Math.abs(yasGun(u)) > 14)) {
       durum.uydular = null; durum.uyduGecisleri = null; planYaz(); levhaCiz();
       ul.innerHTML = '<li><span class="bos">Cihazın saati ya da yörünge verisi güncel değil (öğeler ' + U.sayi(Math.abs(yasGun(uydular[0])), 0) + ' gün ' + (yasGun(uydular[0]) < 0 ? 'ileride' : 'eski') + '); geçiş saatleri hesaplanamaz. Telefonun tarih ve saatini kontrol et.</span></li>';
@@ -759,8 +778,7 @@
     let kaynak;
     if (!U.otoAcik()) kaynak = 'elle seçildi';
     else if (d.kaynak === 'gps' && k.oto) kaynak = 'GPS' + (d.hassasiyet ? ', ±' + (d.hassasiyet >= 1000 ? U.sayi(d.hassasiyet / 1000, 1) + ' km' : Math.round(d.hassasiyet) + ' m') : '');
-    else if (d.hata === 'izin') kaynak = 'konum izni yok, ' + (k.oto ? 'son bilinen yer' : 'varsayılan yer');
-    else if (d.hata) kaynak = 'konum alınamadı, ' + (k.oto ? 'son bilinen yer' : 'varsayılan yer');
+    else if (d.hata) kaynak = (d.hata === 'izin' ? 'konum izni yok, ' : 'konum alınamadı, ') + (k.oto ? 'son bilinen yer' : (k === U.VARSAYILAN_KONUM ? 'varsayılan yer' : 'elle seçilen yer'));
     else kaynak = k.oto ? 'son bilinen yer, güncelleniyor…' : 'konum aranıyor…';
     const s = el.querySelector('#gkKonum');
     if (s) s.textContent = k.ad + ' (' + U.sayi(k.enlem, 2) + '°, ' + U.sayi(k.boylam, 2) + '°) · ' + kaynak + (k.saatDilimi !== 'Europe/Istanbul' || k.dilimYaklasik ? ' · saatler: ' + U.dilimAdi(k.saatDilimi) + (k.dilimYaklasik && !/yaklaşık/.test(U.dilimAdi(k.saatDilimi)) ? ' (boylamdan yaklaşık; yaz saati ve sınırlar hesaba katılmadı)' : '') : '');
@@ -784,6 +802,7 @@
   }
   /* Enlem/boylam değişince öneri güncellenir (kullanıcı listeden seçmediyse) */
   function dilimOner() {
+    gpsDilim = null;   // koordinat elle değişti: GPS'in (cihazın) dilimi artık bu yere ait değil
     if (dilimElle) return;
     const enlem = sayiOku(el.querySelector('#gkKEnlem').value), boylam = sayiOku(el.querySelector('#gkKBoylam').value);
     if (!(Math.abs(enlem) <= 90 && Math.abs(boylam) <= 180)) return;
@@ -840,12 +859,15 @@
     });
     el.querySelector('#gkKOto').addEventListener('change', e => { el.querySelector('#gkKElle').hidden = e.target.checked; });
     el.querySelector('#gkKDilim').addEventListener('change', () => { dilimElle = true; });
+    /* Vazgeç gönderim düğmesi değil: Enter formun ilk gönderim düğmesi olan Kaydet'e basar */
+    el.querySelector('#gkKVazgec').addEventListener('click', () => { const p = el.querySelector('#gkKonumPanel'); if (p.close) p.close('iptal'); else p.removeAttribute('open'); });
     el.querySelectorAll('#gkKEnlem, #gkKBoylam').forEach(i => i.addEventListener('change', dilimOner));
     el.querySelector('#gkKSifirla').addEventListener('click', () => {
       const v = U.VARSAYILAN_KONUM;
       el.querySelector('#gkKAd').value = v.ad;
       el.querySelector('#gkKEnlem').value = String(v.enlem).replace('.', ',');
       el.querySelector('#gkKBoylam').value = String(v.boylam).replace('.', ',');
+      gpsDilim = null;
       if (!dilimElle) dilimDoldur(v.saatDilimi);
     });
     /* Geçersiz girişte panel kapanmaz, otomatik konum ayarı da değişmez */
@@ -916,7 +938,7 @@
     kadir.addEventListener('input', () => {
       durum.limitKadir = Number(kadir.value);
       U.yaz('limitKadir', durum.limitKadir);
-      kadirEtiket(); levhaCiz(); ozetYaz(); gezegenYaz();
+      kadirEtiket(); levhaCiz(); ozetYaz(); gezegenYaz(); planYaz();
     });
     const tarih = el.querySelector('#gkTarih');
     tarih.addEventListener('change', () => {
@@ -925,9 +947,7 @@
       /* Gök hesapları ve yıldız verisi 1900–2100 için; dışındaki yıl (ya da yarım yazılmış tarih) yok sayılır */
       if (!(y >= 1900 && y <= 2100) || !a || !g) { tarih.setCustomValidity('1900 ile 2100 arasında bir tarih seç.'); tarih.reportValidity(); return; }
       tarih.setCustomValidity('');
-      /* Seçilen günün akşamı, gözlemcinin boylamına göre (yerel güneş saatiyle 21:00). Date.UTC 0–99 yıllarını
-         1900'e kaydırdığı için yıl ayrıca kurulur. */
-      /* Seçilen günün saat 21:00'i, konumun saat diliminde */
+      /* Seçilen günün saat 21:00'i, konumun saat diliminde. Date.UTC 0–99 yıllarını 1900'e kaydırdığı için yıl ayrıca kurulur. */
       const d = new Date(Date.UTC(2000, a - 1, g, 21, 0, 0)); d.setUTCFullYear(y);
       const t21 = new Date(d.getTime() - dilimOfsDk(U.konum().saatDilimi, d) * 60e3);
       durum.gun = t21;

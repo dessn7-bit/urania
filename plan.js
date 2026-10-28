@@ -102,10 +102,10 @@
         if (o[k] && b && b.gorunur && b.iyi !== false && icinde(o[k])) maddeler.push({ tur: 'ortme', sabit: true, zaman: o[k], ad: o.ad + (k === 'giris' ? ': Ay\'ın arkasına giriyor' : ': Ay\'ın arkasından çıkıyor'), ortme: o, kenar: b, alt: b.alt, az: b.az, bulut: bulutBul(g.hava, o[k]) });
       });
     });
-    (g.meteorDurum || []).filter(m => m.aktif && m.radyantTepe && m.radyantTepe.alt >= 25 && Math.abs(m.gunFark) <= 3)
+    (g.meteorDurum || []).filter(m => m.aktif && m.radyantTepe && m.radyantTepe.alt >= 25 && Math.abs(m.gunFark) <= 3 && icinde(m.radyantTepe.zaman))
       .slice(0, 1).forEach(m => {
         const t = m.radyantTepe.zaman;
-        if (icinde(t)) maddeler.push({ tur: 'meteor', sabit: true, zaman: t, ad: m.ad + ' meteorları', meteor: m, alt: m.radyantTepe.alt, az: m.radyantTepe.az, anahtar: 'meteor:' + m.kod, bulut: bulutBul(g.hava, t) });
+        maddeler.push({ tur: 'meteor', sabit: true, zaman: t, ad: m.ad + ' meteorları', meteor: m, alt: m.radyantTepe.alt, az: m.radyantTepe.az, anahtar: 'meteor:' + m.kod, bulut: bulutBul(g.hava, t) });
       });
 
     /* ---- Esnek olanlara saat ver: en iyi puanın ≥%75'i olan saatlerden, doluya 12 dk'dan yakın olmayan ---- */

@@ -136,7 +136,8 @@
     let gezYon = null, gezZaman = 0;
     /* Dilim sınırında kesilmesin: aday saatler 3 saat önceden ve sonradan da taranır; bir pencere yalnız
        başladığı dilime aittir (bas ≤ başlangıç < son). Böylece kayboluş bir dilimde, belirişi ötekinde kalmaz. */
-    for (let ms = bas.getTime() - 3 * 3600e3; ms <= son + 3 * 3600e3; ms += 3600e3) {
+    /* Tarama sondan 9 saat sonraya kadar: yer merkezli pencere ~7 saat sürebilir, topos ıraklığı ±1,9 saat kaydırır */
+    for (let ms = bas.getTime() - 3 * 3600e3; ms <= son + 9 * 3600e3; ms += 3600e3) {
       const t = new Date(ms);
       const ay = birim(A.GeoMoon(t));
       if (!gezYon || ms - gezZaman >= 6 * 3600e3) {

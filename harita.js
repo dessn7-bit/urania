@@ -324,7 +324,8 @@
       /* En yakın cisim; öncelik (Ay, gezegen, uydu…) yalnız uzaklıklar 3 px'ten yakınsa belirleyici */
       const aday = isabet.map(h => ({ h, dd: Math.hypot(h.x - x, h.y - y) })).filter(a => a.dd <= 22).sort((a, b2) => a.dd - b2.dd);
       let en = aday[0] || null;
-      aday.forEach(a => { if (a.dd <= en.dd + 3 && a.h.oncelik > en.h.oncelik) en = a; });
+      const d0 = en ? en.dd : 0;   // eşik en yakın adaya göre (zincirleme kaymasın)
+      aday.forEach(a => { if (a.dd <= d0 + 3 && a.h.oncelik > en.h.oncelik) en = a; });
       tiklaninca(en ? en.h.bilgi : null);
     }
     canvas.addEventListener('click', tikla);

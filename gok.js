@@ -336,7 +336,7 @@
     }
     const [ba, bg] = m.baslangic.split('-').map(Number);
     const [sa, sg] = m.bitis.split('-').map(Number);
-    const bugun = gunNo(zaman.getMonth() + 1, zaman.getDate());
+    const bugun = gunNo(zaman.getUTCMonth() + 1, zaman.getUTCDate());   // tam tarih dalıyla aynı: UT
     const b = gunNo(ba, bg), s = gunNo(sa, sg);
     return b <= s ? (bugun >= b && bugun <= s) : (bugun >= b || bugun <= s);
   }
@@ -365,7 +365,7 @@
     if (y1 <= sonYil && y0 >= ilkYil) return ls;
     const an = ilkYil + '|' + sonYil + '|' + y0;
     if (meteorOnbellek.has(an)) return meteorOnbellek.get(an);
-    const kaydir = (s, k) => { const d = new Date(s + 'T00:00:00Z'); d.setUTCFullYear(d.getUTCFullYear() + k); return d.toISOString().slice(0, 10); };
+    const kaydir = (s, k) => { if (!/^\d{4}-\d{2}-\d{2}$/.test(s)) return s; const d = new Date(s + 'T00:00:00Z'); d.setUTCFullYear(d.getUTCFullYear() + k); return d.toISOString().slice(0, 10); };
     const ek = [];
     /* İleriye son veri yılından, geriye (geçmiş bir tarih seçilince) ilk veri yılından */
     const yillar = [];
@@ -400,10 +400,10 @@
         if (!aktif && !zirveHesapla) o = [];
         else if (!aktif) {
           const an = m.zirve_utc + '|' + gzl.latitude.toFixed(2) + '|' + gzl.longitude.toFixed(2);
-          if (!zirveGecesi[an]) { const g = geceAraligi(new Date(zirve.getTime() - 12 * 3600e3), gzl); zirveGecesi[an] = g.karanlikYok ? [] : ornekler(g.karanlikBas, g.karanlikSon, 20, gzl); }
+          if (!zirveGecesi[an]) { if (Object.keys(zirveGecesi).length > 200) Object.keys(zirveGecesi).forEach(k => delete zirveGecesi[k]); const g = geceAraligi(new Date(zirve.getTime() - 12 * 3600e3), gzl); zirveGecesi[an] = g.karanlikYok ? [] : ornekler(g.karanlikBas, g.karanlikSon, 20, gzl); }
           o = zirveGecesi[an];
         }
-        if (o.length) radyantTepe = enYuksekSabit(birimVektor(m.radyant_ra, m.radyant_dec), o);
+        if (o.length) radyantTepe = enYuksekSabit(birimVektor(m.radyant_ra, m.radyant_dec), o, gzl);
       }
       return Object.assign({}, m, { aktif, gunFark, radyantTepe, radyantGece });
     });

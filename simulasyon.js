@@ -82,7 +82,7 @@
     function adim(t) {
       if (!calisiyor) return;
       if (kok && !kok.isConnected) { calisiyor = false; return; }      // kutu sayfadan kalktı: döngü kendini bitirir
-      const dt = Math.min(0.05, (t - son) / 1000); son = t;
+      const dt = Math.max(0, Math.min(0.05, (t - son) / 1000)); son = t;   // ilk karede rAF zamanı son'dan önce olabilir
       if (gorunur(kok)) ciz(dt);
       sonraki();
     }
@@ -365,7 +365,7 @@
       kap.querySelector('#hrR').textContent = U.sayi(R, R < 10 ? 2 : 1) + ' R☉';
       kap.querySelector('#hrOmur').textContent = omur >= 1e9 ? U.sayi(omur / 1e9, omur < 1e10 ? 2 : 0) + ' milyar yıl' : U.sayi(omur / 1e6, omur < 1e7 ? 1 : 0) + ' milyon yıl';
       kap.querySelector('#hrSon').textContent = son ? son.son : '—';
-      kap.querySelector('#hrMetin').innerHTML = `<p>${U.sayi(m, m < 1 ? 2 : (m < 10 ? 1 : 0))} Güneş kütleli bir yıldız ${L > 0.9 && L < 1.1 ? "Güneş'le neredeyse aynı parlaklıkta" : "Güneş'ten " + (L >= 1 ? U.bilimsel(L, 2) + ' kat parlak' : U.bilimsel(1 / L, 2) + ' kat sönük')}. Yakıtı kütlesiyle, harcama hızı ışıma gücüyle orantılı: bu yüzden ${m > 1.05 ? 'büyük yıldızlar fazla yakıtlarını çok daha hızlı yakar ve kısa yaşar.' : (m < 0.95 ? 'küçük yıldızlar yakıtını çok yavaş harcar ve Güneş\'ten çok uzun yaşar.' : 'Güneş kütlesindeki bir yıldız anakolda yaklaşık 10 milyar yıl kalır; daha ağırlar daha kısa, daha hafifler daha uzun yaşar.')}</p>${son && son.aciklama ? '<p>' + U.kacis(son.aciklama) + '</p>' : ''}`;
+      kap.querySelector('#hrMetin').innerHTML = `<p>${U.sayi(m, m < 1 ? 2 : (m < 10 ? 1 : 0))} Güneş kütleli bir yıldız ${L > 0.9 && L < 1.1 ? "Güneş'le neredeyse aynı parlaklıkta" : "Güneş'ten " + (L >= 1 ? U.bilimsel(L, 2) + ' kat parlak' : U.bilimsel(1 / L, 2) + ' kat sönük')}. Yakıtı kütlesiyle, harcama hızı ışıma gücüyle orantılı: bu yüzden ${m > 1.05 ? 'büyük yıldızlar fazla yakıtlarını çok daha hızlı yakar ve kısa yaşar.' : (m < 0.95 ? 'küçük yıldızlar yakıtını çok yavaş harcar ve Güneş\'ten çok uzun yaşar.' : 'Güneş kütlesindeki bir yıldız anakolda yaklaşık 10 milyar yıl kalır; daha ağırlar daha kısa, daha hafifler daha uzun yaşar.')}</p>`;
       ciz();
     }
     function ciz() {
@@ -422,9 +422,9 @@
       return '#FF9E6A';
     }
     s.addEventListener('input', hesapla);
-    window.addEventListener('resize', ciz);
+    window.addEventListener('resize', ciz); document.addEventListener('urania:tema', ciz);   // kırmızı mod değişince renkler yenilensin
     hesapla();
-    return { durdur() { window.removeEventListener('resize', ciz); } };
+    return { durdur() { window.removeEventListener('resize', ciz); document.removeEventListener('urania:tema', ciz); } };
   }
 
   /* =================== 4. Görelilik =================== */
@@ -474,9 +474,9 @@
       kap.querySelectorAll('#grHedef button').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
       hesapla();
     });
-    window.addEventListener('resize', hesapla);
+    window.addEventListener('resize', hesapla); document.addEventListener('urania:tema', hesapla);
     hesapla();
-    return { durdur() { window.removeEventListener('resize', hesapla); } };
+    return { durdur() { window.removeEventListener('resize', hesapla); document.removeEventListener('urania:tema', hesapla); } };
   }
 
   const KURUCU = { karadelik, yorunge, yildiz, gorelilik };

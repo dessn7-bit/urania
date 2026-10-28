@@ -312,9 +312,9 @@
         const bt = e.target.closest('button'); if (!bt) return;
         tS.value = Math.log10(yildizlar[Number(bt.dataset.i)].T); hesapla();
       });
-      window.addEventListener('resize', ciz);
+      window.addEventListener('resize', ciz); document.addEventListener('urania:tema', ciz);   // kırmızı mod değişince renkler yenilensin
       hesapla();
-      return { durdur() { window.removeEventListener('resize', ciz); } };
+      return { durdur() { window.removeEventListener('resize', ciz); document.removeEventListener('urania:tema', ciz); } };
     });
   }
   /* görünür dalga boyu → yaklaşık renk (yalnız görsel) */
@@ -353,7 +353,7 @@
         const dugumAci = Number(mS.value);                      // Güneş'in yükselen düğümden açısı
         const u = (dugumAci + uzanim) % 360;                   // Ay'ın yükselen düğümden açısı
         const beta = H.ayEnlem(d.egim_derece, u);
-        const yeni = Math.abs(((uzanim + 180) % 360) - 180) < 8, dolun = Math.abs(uzanim - 180) < 8;
+        const yeni = Math.abs(((uzanim + 180) % 360) - 180) < 7.5, dolun = Math.abs(uzanim - 180) < 7.5;   // evre adıyla (gok.js evreAdi) aynı eşik
         const tutulma = (yeni || dolun) && Math.abs(beta) < d.tutulma_enlem_derece;
         st = { uzanim, k, beta, dugumAci, yeni, dolun, tutulma };
         kap.querySelector('#evGunCikti').textContent = U.sayi(gun, 2) + ' gün';
@@ -397,9 +397,9 @@
         ctx.beginPath(); ctx.arc(bx + bw * (st.uzanim / 360), yAy, 5, 0, IKI_PI); ctx.fillStyle = st.tutulma ? o.renk('--pirinc') : '#DDD'; ctx.fill();
       }
       gS.addEventListener('input', hesapla); mS.addEventListener('input', hesapla);
-      window.addEventListener('resize', ciz);
+      window.addEventListener('resize', ciz); document.addEventListener('urania:tema', ciz);   // kırmızı mod değişince renkler yenilensin
       hesapla();
-      return { durdur() { window.removeEventListener('resize', ciz); } };
+      return { durdur() { window.removeEventListener('resize', ciz); document.removeEventListener('urania:tema', ciz); } };
     });
   }
 

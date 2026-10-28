@@ -12,7 +12,8 @@
     const h = j && j.hourly;
     if (!h || !Array.isArray(h.time) || !h.time.length || !h.time.every(Number.isFinite)) return false;
     return ['cloud_cover', 'cloud_cover_low', 'cloud_cover_mid', 'cloud_cover_high', 'relative_humidity_2m', 'wind_speed_10m']
-      .every(a => Array.isArray(h[a]) && h[a].length === h.time.length && h[a].every(x => x === null || Number.isFinite(x)));
+      .every(a => Array.isArray(h[a]) && h[a].length === h.time.length && h[a].every(x => x === null || Number.isFinite(x))) &&
+      h.cloud_cover.some(Number.isFinite);   // hiç bulut değeri olmayan yanıt işe yaramaz
   }
   /* Bellekte de tutulur: depo doluyken her gece değişiminde yeniden istek gitmesin */
   const bellek = {};
@@ -62,7 +63,7 @@
       /* Yapı doğrulanmadan önbelleğe yazılmaz: bozuk yanıt defter kaydını ve gece özetini bozmasın */
       if (!yanitGecerli(j)) throw new Error('beklenmeyen yanıt biçimi');
       /* 48 saatten eski hava önbelleklerini sil (her ~1 km hücre ~3,5 KB) */
-      U.anahtarlar('hava2_').forEach(a => { const x = U.oku(a, null); if (!x || Date.now() - x.alindi > EN_ESKI) U.sil(a); });
+      U.anahtarlar('hava2_').forEach(a => { const x = U.oku(a, null); if (!x || !(Date.now() - x.alindi <= EN_ESKI)) U.sil(a); });   // alindi bozuksa da silinir
       U.anahtarlar('hava_').forEach(a => U.sil(a)); // eski biçim
       bellek[k] = { alindi: Date.now(), j };
       U.yaz(k, bellek[k]);
@@ -78,7 +79,8 @@
 
   /* Bir aralıktaki saatlik değerler + en uzun açık (bulut ≤ esik) dönem */
   function geceOzeti(saatler, bas, son, esik) {
-    const ls = saatler.filter(s => s.t >= new Date(bas.getTime() - 30 * 60e3) && s.t <= new Date(son.getTime() + 30 * 60e3));
+    /* Bulut değeri olmayan saat (null) "açık" sayılmasın: yok sayılır */
+    const ls = saatler.filter(s => s.bulut != null && s.t >= new Date(bas.getTime() - 30 * 60e3) && s.t <= new Date(son.getTime() + 30 * 60e3));
     if (!ls.length) return null;
     let enIyi = null, cur = null;
     ls.forEach(s => {
@@ -101,7 +103,7 @@
 
   /* Belirli bir saatin önbellekteki tahmini (defter kaydı için) */
   function saatDegeri(enlem, boylam, zaman) {
-    const k = [U.oku(anahtar(enlem, boylam), null), bellek[anahtar(enlem, boylam)]].find(x => x && x.j && yanitGecerli(x.j));
+    const k = [U.oku(anahtar(enlem, boylam), null), bellek[anahtar(enlem, boylam)]].filter(x => x && x.j && yanitGecerli(x.j)).sort((a, b) => b.alindi - a.alindi)[0];
     if (!k) return null;
     const h = k.j.hourly;
     /* Bulut anlık değer: en yakın saat. Yağış "önceki bir saat" için: o anı kapsayan saat = yukarı yuvarla */

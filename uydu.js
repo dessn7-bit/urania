@@ -173,6 +173,20 @@
     return k > 1e-6 ? icsel + 5 * Math.log10(uzaklik / 1000) - 2.5 * Math.log10(k) : null;
   }
 
+  /* Güneş yönü dakikada ~0,04° kayar: dakikalık önbellek (geçiş hesabında 1 sn adımla binlerce çağrı) */
+  const gunesOnbellek = new Map();
+  function gunesYonu(t) {
+    const dk = Math.round(t.getTime() / 60e3);
+    let s = gunesOnbellek.get(dk);
+    if (!s) {
+      const tt = new Date(dk * 60e3), g = G.A.RotateVector(G.A.Rotation_EQJ_EQD(tt), G.A.GeoVector('Sun', tt, true));
+      const gl = Math.hypot(g.x, g.y, g.z);
+      s = [g.x / gl, g.y / gl, g.z / gl];
+      if (gunesOnbellek.size > 20000) gunesOnbellek.clear();
+      gunesOnbellek.set(dk, s);
+    }
+    return s;
+  }
   function durumHesapla(sat, gd, t, yalnizYon, icsel) {
     const pv = satellite.propagate(sat, t);
     if (!pv || !pv.position) return null;
@@ -181,9 +195,7 @@
     if (yalnizYon) return { t, alt: la.elevation / DER, az: la.azimuth / DER };
     /* Güneş ışığı: Güneş yönüne izdüşüm ve gölge silindirine uzaklık.
        Güneş yönü J2000'den tarihin ekvatoruna döndürülür (SGP4 konumu TEME: tarihin ekvatoru) */
-    const g = G.A.RotateVector(G.A.Rotation_EQJ_EQD(t), G.A.GeoVector('Sun', t, true));
-    const gl = Math.hypot(g.x, g.y, g.z);
-    const s = [g.x / gl, g.y / gl, g.z / gl];
+    const s = gunesYonu(t);
     const r = pv.position;
     const izd = r.x * s[0] + r.y * s[1] + r.z * s[2];
     const dik = Math.hypot(r.x - izd * s[0], r.y - izd * s[1], r.z - izd * s[2]);

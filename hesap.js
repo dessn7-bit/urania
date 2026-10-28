@@ -12,11 +12,17 @@
   function oku(id) {
     const ham = el.querySelector('#' + id).value.trim().replace(/\s/g, '').replace(/−/g, '-');
     if (ham === '') return NaN;
-    if (/^[+-]?\d{1,3}(\.\d{3})+$/.test(ham)) belirsiz.add(ham);
-    const v = ham.replace(',', '.');
+    let v;
+    /* Türkçe biçim: "1.234,5" (nokta binlik, virgül ondalık) ve "1.000.000" (birden çok binlik grup) */
+    if (/^[+-]?\d{1,3}(\.\d{3})+,\d+$/.test(ham)) v = ham.replace(/\./g, '').replace(',', '.');
+    else if (/^[+-]?\d{1,3}(\.\d{3}){2,}$/.test(ham)) v = ham.replace(/\./g, '');
+    else v = ham.replace(',', '.');
     if (!SAYI.test(v)) return NaN;
     const x = Number(v);
-    return isFinite(x) ? x : NaN;
+    if (!isFinite(x)) return NaN;
+    /* "1.500" bin beş yüz mü, bir buçuk mu? Ondalık okunur ve not düşülür ("0.500" belirsiz değil) */
+    if (/^[+-]?[1-9]\d{0,2}\.\d{3}$/.test(ham)) belirsiz.add(ham);
+    return x;
   }
   const eksi = x => (x < 0 && Math.abs(x) >= 0.005 ? '−' : '') + U.sayi(Math.abs(x), 2);
   /* eksiOlur: iOS'ta "decimal" klavyesinde eksi tuşu yok; eksi değer alabilen alanlar düz metin klavyesi açar */
@@ -53,6 +59,7 @@
         const v = oku('uzD'), B = birimler(), b = el.querySelector('#uzB').value;
         if (!(v > 0)) return hata('Pozitif bir sayı yaz.', ['uzD']);
         const m = v * B[b].m;
+        if (!isFinite(m)) return hata('Değer çok büyük: hesaplanamıyor.', ['uzD']);
         const isik = m / d('c');
         return `<b>${U.bilimsel(m / 1e3, 4)} km</b><span class="ek">= ${U.bilimsel(m / B.au.m, 4)} AB = ${U.bilimsel(m / B.ly.m, 4)} ışık yılı = ${U.bilimsel(m / B.pc.m, 4)} parsek</span><span class="ek">Işık bu yolu ${sure(isik)} alır.</span>`;
       },
@@ -80,7 +87,7 @@
         if (R <= rs) return `<b>Kara delik</b><span class="ek">Bu kütle bu yarıçapın içinde kalıyor (Schwarzschild yarıçapı ${U.bilimsel(rs / 1e3, 3)} km): yüzeyden kurtulmak için ışıktan hızlı gitmek gerekirdi, yani kurtulma yok.</span>`;
         return `<b>${U.bilimsel(v / 1e3, 4)} km/s</b> kurtulma hızı<span class="ek">Yüzey çekimi ${U.bilimsel(gy, 3)} m/s² — Dünya'da 70 kg gelen biri burada ${U.bilimsel(70 * kilo, 3)} kg gelir.</span>${ref && ref.kurtulma_kms ? `<span class="ek">Karşılaştırma: NASA tablosundaki kurtulma hızı ${U.sayi(ref.kurtulma_kms, 2)} km/s. NASA ekvator yarıçapını kullanır, burada ortalama yarıçap kullanıldı; basık dev gezegenlerde küçük fark bundandır.</span>` : ''}`;
       },
-      formul: 'v = √(2GM/R), g = GM/R²', kaynak: ['G', 'M_dunya', 'g0'], ekKaynak: () => F.gezegenKaynak
+      formul: 'v = √(2GM/R), g = GM/R²', kaynak: ['G', 'M_dunya', 'g0', 'c'], ekKaynak: () => F.gezegenKaynak
     },
     {
       id: 'schwarzschild', baslik: 'Schwarzschild yarıçapı',
@@ -90,6 +97,7 @@
         const M = oku('swM') * kutleBirim()[el.querySelector('#swB').value];
         if (!(M > 0)) return hata('Pozitif bir kütle yaz.', ['swM']);
         const rs = 2 * d('G') * M / (d('c') * d('c'));
+        if (!isFinite(rs)) return hata('Değer çok büyük: hesaplanamıyor.', ['swM']);
         let s;
         if (rs < 1e-3) s = U.bilimsel(rs * 1e3, 3) + ' mm';
         else if (rs < 1) s = U.sayi(rs * 1e3, 2) + ' mm';
@@ -109,9 +117,11 @@
         const T = 2 * Math.PI * Math.sqrt(a * a * a / (d('G') * M));
         const v = 2 * Math.PI * a / T;
         const gunEk = T >= 365.25 * 86400 && T < 1000 * 365.25 * 86400 ? ` (${U.sayi(T / 86400, 1)} gün)` : '';
+        /* Hız ışık hızına yaklaşırsa (yörünge kara deliğin ufkuna denk) Newton yasası geçersiz */
+        if (!(v < 0.1 * d('c'))) return `<b>${sure(T)}${gunEk}</b><span class="ek">Ortalama yörünge hızı ${v >= d('c') ? 'ışık hızını aşıyor' : U.sayi(v / 1e3, 0) + ' km/s, ışık hızının %' + U.sayi(v / d('c') * 100, 0) + "'i"}: bu kadar sıkı bir yörüngede Newton'un yasası geçersizdir (genel görelilik gerekir; kütle bu yarıçapta bir kara delik olabilir).</span>`;
         return `<b>${sure(T)}${gunEk}</b><span class="ek">Ortalama yörünge hızı ${U.sayi(v / 1e3, 2)} km/s (dairesel yaklaşımla).</span>`;
       },
-      formul: 'T = 2π √(a³ / GM)', kaynak: ['G', 'au', 'M_gunes']
+      formul: 'T = 2π √(a³ / GM)', kaynak: ['G', 'au', 'M_gunes', 'c']
     },
     {
       id: 'kadir', baslik: 'Görünür ve mutlak kadir',
@@ -178,20 +188,24 @@
         const R = oku('sbR') * d('R_gunes'), T = oku('sbT');
         if (!(R > 0 && T > 0)) return hata('İki değer de pozitif olmalı.', [!(R > 0) && 'sbR', !(T > 0) && 'sbT']);
         const L = 4 * Math.PI * R * R * d('sigma') * Math.pow(T, 4);
+        if (!isFinite(L)) return hata('Değer çok büyük: hesaplanamıyor.', ['sbR', 'sbT']);
         return `<b>${U.bilimsel(L / d('L_gunes'), 3)} L☉</b><span class="ek">${U.bilimsel(L, 3)} W</span>`;
       },
       formul: 'L = 4πR²σT⁴', kaynak: ['sigma', 'R_gunes', 'L_gunes']
     }
   ];
 
+  /* Birim, yuvarlanmış değere göre seçilir: 0,99996 s "1.000,0 milisaniye" değil "1,0 saniye" yazılır */
   function sure(s) {
     const yil = 365.25 * 86400;
-    if (s < 1e-3) return U.bilimsel(s * 1e6, 3) + ' mikrosaniye';
-    if (s < 1) return U.sayi(s * 1000, 1) + ' milisaniye';
-    if (s < 120) return U.sayi(s, 1) + ' saniye';
-    if (s < 7200) return U.sayi(s / 60, 1) + ' dakika';
-    if (s < 3 * 86400) return U.sayi(s / 3600, 2) + ' saat';
-    if (s < yil) return U.sayi(s / 86400, 1) + ' gün';
+    const yuv = (x, b) => Math.round(x * Math.pow(10, b)) / Math.pow(10, b);
+    const us = s * 1e6;
+    if (s < 1e-3 && Number(us.toPrecision(3)) < 1000) return U.bilimsel(us, 3) + ' mikrosaniye';
+    if (s < 1 && yuv(s * 1000, 1) < 1000) return U.sayi(s * 1000, 1) + ' milisaniye';
+    if (s < 120 && yuv(s, 1) < 120) return U.sayi(s, 1) + ' saniye';
+    if (s < 7200 && yuv(s / 60, 1) < 120) return U.sayi(s / 60, 1) + ' dakika';
+    if (s < 3 * 86400 && yuv(s / 3600, 2) < 72) return U.sayi(s / 3600, 2) + ' saat';
+    if (s < yil && yuv(s / 86400, 1) < 365.3) return U.sayi(s / 86400, 1) + ' gün';
     return U.bilimsel(s / yil, 4) + ' yıl';
   }
 
