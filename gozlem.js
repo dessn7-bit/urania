@@ -177,7 +177,18 @@
   let geceSira = 0;
 
   /* ---- Levha (her zaman değişiminde) ---- */
+  /* Canlı modda tarih kutusu boş kalınca Android'de boş bir kutu (masaüstünde "gg.aa.yyyy") görünüyordu; "Gece [ ]"
+     hangi geceyi gösterdiğini söylemiyordu. Bu gecenin tarihi (konumun saat diliminde, öğleden öğleye gece) yazılır.
+     Kullanıcı kutuyu düzenlerken (odakta) dokunulmaz; değeri programla değiştirmek 'change' tetiklemez. */
+  function tarihKutusu() {
+    const t = el && el.querySelector('#gkTarih');
+    if (!t || durum.gun || document.activeElement === t) return;
+    const o = ogle();
+    const v = new Date(o.getTime() + dilimOfsDk(U.konum().saatDilimi, o) * 60e3).toISOString().slice(0, 10);
+    if (t.value !== v) t.value = v;
+  }
   function levhaCiz() {
+    tarihKutusu();
     const an = secilenAn();
     const gzl = durum.gzl;
     const gunes = G.cisimAltAz('Sun', an, gzl);
@@ -936,7 +947,6 @@
     el.querySelector('#gkSimdi').addEventListener('click', () => {
       const geceDegisti = durum.gun !== null;
       durum.gun = null; durum.canli = true; durum.sabitOgle = null;
-      el.querySelector('#gkTarih').value = '';
       el.querySelector('#gkBuGece').hidden = true;
       simdiyeKur();
       if (geceDegisti || geceAnahtariDegisti()) geceHesapla();

@@ -84,6 +84,8 @@ body {
 }
 a { color: var(--pirinc); }
 :focus-visible { outline: 2px solid var(--pirinc); outline-offset: 2px; border-radius: 4px; }
+/* Programla odak verilen başlık/ileti (sayfa geçişi, sınav sonucu): etkileşimli değil, ekran okuyucu için; çerçeve gereksiz */
+[tabindex="-1"]:focus { outline: none; }
 button, input, select { font: inherit; color: inherit; }
 /* Yer tutucu: tarayıcının grisi (#757575, 3,74:1) yerine ikincil metin rengi (normalde 6,9:1; kırmızı modda kırmızı, 5,00:1) */
 ::placeholder { color: var(--soluk); opacity: 1; }
@@ -172,11 +174,14 @@ p { margin: 0 0 12px; }
 
 .dugme {
   display: inline-flex; align-items: center; justify-content: center; gap: 6px;
-  min-height: 40px; padding: 8px 14px;
+  min-height: 44px; padding: 8px 14px;   /* dokunma hedefi: Android 48 dp önerisine yakın, WCAG 2.5.8 asgarisi 24 px */
   border-radius: 8px; border: 1px solid var(--pirinc-soluk);
   background: transparent; color: var(--parsomen); cursor: pointer; font-weight: 500; font-size: 15px;
 }
 .dugme:hover { border-color: var(--pirinc); }
+/* Kırmızı modda --pirinc-soluk kenar zeminde 1,22:1 kalıyor, düğme yazısı paragrafla aynı renk: düğme düz yazıya benziyordu.
+   :where ile özgüllük düşük kalır; dolu, basılı ve üstüne gelinen hâller kendi kenarını korur. */
+html.kirmizi :where(.dugme) { border-color: var(--girdi-kenar); }
 a.dugme { text-decoration: none; }
 .dugme.dolu { background: var(--pirinc); color: var(--gece); border-color: var(--pirinc); }
 .dugme[aria-pressed="true"] { background: var(--levha-2); border-color: var(--pirinc); color: var(--pirinc); }
@@ -189,7 +194,7 @@ a.dugme { text-decoration: none; }
 }
 .serit .konum { color: var(--parsomen); font-weight: 500; }
 .serit button.bag { background: none; border: 0; padding: 0; color: var(--pirinc); cursor: pointer; text-decoration: underline; text-underline-offset: 3px; font-size: 14px; }
-.serit input[type="date"] { background: var(--levha); border: 1px solid var(--cizgi); border-radius: 6px; padding: 4px 8px; color: var(--parsomen); }
+.serit input[type="date"] { background: var(--levha); border: 1px solid var(--girdi-kenar); border-radius: 6px; padding: 4px 8px; color: var(--parsomen); }
 
 /* ---- Gök levhası ---- */
 .levha-kap { position: relative; margin: 16px auto 0; max-width: 560px; }
@@ -207,7 +212,7 @@ a.dugme { text-decoration: none; }
 .zaman-kontrol .etiket { grid-column: 1 / -1; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 0 12px; font-size: 14px; color: var(--soluk); }   /* uzun saat + "Sivil alacakaranlık" dar ekranda bitişmesin, alta insin */
 .zaman-kontrol .etiket b { color: var(--parsomen); font-weight: 600; font-size: 16px; }
 /* Kaydırıcılar: tarayıcının açık renkli izi kırmızı modda göz alırdı; iz ve tutamaç değişkenlerden. */
-input[type="range"] { -webkit-appearance: none; appearance: none; width: 100%; height: 32px; background: transparent; cursor: pointer; }
+input[type="range"] { -webkit-appearance: none; appearance: none; width: 100%; height: 44px; background: transparent; cursor: pointer; }
 input[type="range"]::-webkit-slider-runnable-track { height: 4px; border-radius: 2px; background: linear-gradient(to right, var(--pirinc) var(--dolu, 0%), var(--levha-2) var(--dolu, 0%)); }
 input[type="range"]::-moz-range-track { height: 4px; border-radius: 2px; background: var(--levha-2); }
 input[type="range"]::-moz-range-progress { height: 4px; border-radius: 2px; background: var(--pirinc); }
@@ -423,6 +428,7 @@ html.kirmizi textarea::-webkit-resizer { background: linear-gradient(135deg, tra
 #dfListe .sag { white-space: normal; overflow-wrap: anywhere; max-width: min(14em, 40vw); }
 #dfListe .bag[data-onay="1"] { color: var(--uyari); }   /* "Silmek için tekrar bas": silme kurulmuş */
 #dfYedekDurum { margin-top: 8px; }
+#b-defter details.aciklama > summary { padding: 3px 0; }   /* 21 → 27 px dokunma hedefi (WCAG 2.5.8) */
 #dfYedekDurum.hata { color: var(--uyari); }
 .defter-not { display: block; color: var(--parsomen); font: 400 16px/1.55 var(--serif); margin-top: 6px; white-space: pre-wrap; overflow-wrap: anywhere; }
 .defter-bag { display: block; margin-top: 4px; font-size: 14px; }
@@ -436,12 +442,12 @@ label.dugme { cursor: pointer; }
 /* Kırmızı modda tarih-saat girdisinin klavyeyle seçilen parçası tarayıcının açık mavisiyle (#99C8FF) boyanıyordu.
    Yazar CSS'i bu parçalarda :focus'u seçemiyor; parçaların zemini ve rengi her zaman sabitlenir (odak halkası girdinin
    kendisinde kalır). Takvim simgesinin beyaz odak halkası da kırmızı olur. */
-html.kirmizi .defter-form input::-webkit-datetime-edit-year-field,
-html.kirmizi .defter-form input::-webkit-datetime-edit-month-field,
-html.kirmizi .defter-form input::-webkit-datetime-edit-day-field,
-html.kirmizi .defter-form input::-webkit-datetime-edit-hour-field,
-html.kirmizi .defter-form input::-webkit-datetime-edit-minute-field,
-html.kirmizi .defter-form input::-webkit-datetime-edit-ampm-field { background-color: transparent; color: var(--parsomen); }
+html.kirmizi input::-webkit-datetime-edit-year-field,
+html.kirmizi input::-webkit-datetime-edit-month-field,
+html.kirmizi input::-webkit-datetime-edit-day-field,
+html.kirmizi input::-webkit-datetime-edit-hour-field,
+html.kirmizi input::-webkit-datetime-edit-minute-field,
+html.kirmizi input::-webkit-datetime-edit-ampm-field { background-color: transparent; color: var(--parsomen); }
 html.kirmizi .defter-form input::-webkit-calendar-picker-indicator { outline-color: var(--pirinc); }
 .alan input[type="datetime-local"] { min-width: 0; }
 .yagis-iz { display: block; width: 100%; height: 18px; background: var(--levha); border-radius: 3px; position: relative; overflow: hidden; }
@@ -544,7 +550,7 @@ html.kirmizi input[type="checkbox"]:checked::before { transform: scale(1); }
 .rehber-adim li.yapildi::marker { color: var(--iyi); }
 .rh-yap { margin: 0 0 4px; }
 .rh-uygula { margin-left: 6px; }
-.rh-ac summary { cursor: pointer; color: var(--soluk); font: 500 14px var(--sans); padding: 2px 0; }
+.rh-ac summary { cursor: pointer; color: var(--soluk); font: 500 14px var(--sans); padding: 4px 0; }   /* 26 px: dokunma hedefi ≥ 24 (WCAG 2.5.8); hemen üstünde "Uygula" var */
 .rh-ac p { margin: 6px 0; font-size: 15px; }
 .deney-ders { margin-top: 18px; font-family: var(--sans); }
 .rehber .bag { background: none; border: 0; padding: 0; color: var(--pirinc); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; font-size: 14px; }

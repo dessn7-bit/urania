@@ -255,6 +255,17 @@ test.describe('320 px (WCAG yeniden akış)', () => {
     expect(n).toBe(0);
   });
 
+  test('Rehber ve yedek özetleri en az 24 px dokunma hedefi (WCAG 2.5.8)', async ({ page }) => {
+    await kur(page);
+    await page.goto('/index.html#deney/kepler');
+    await expect(page.locator('.rh-ac summary').first()).toBeVisible();
+    for (const s of await page.locator('.rh-ac summary, .rh-uygula').all()) expect((await s.boundingBox()).height).toBeGreaterThanOrEqual(24);
+    await page.goto('/index.html#defter');
+    const y = page.locator('#b-defter details.aciklama > summary');
+    await expect(y).toBeVisible();
+    expect((await y.boundingBox()).height).toBeGreaterThanOrEqual(24);
+  });
+
   test('Görevler: özet açılır olduğunu gösterir; "Defterde" yazısı düğmeyle ortalı', async ({ page }) => {
     await kur(page, { defter: JSON.stringify([kayit(1)]) });
     await page.goto('/index.html#defter/gorevler');

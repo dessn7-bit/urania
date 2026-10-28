@@ -22,3 +22,18 @@ test('Kırmızı mod kapalıyken ilk boyama normal tema', async ({ page }) => {
   await page.goto('/index.html#gok');
   expect(await page.evaluate(() => document.documentElement.classList.contains('kirmizi'))).toBe(false);
 });
+
+for (const [an, beklenen] of [['2026-10-28T20:30:00+03:00', '2026-10-28'], ['2026-10-29T02:00:00+03:00', '2026-10-28']]) {
+  test(`Gece kutusu canlı modda bu gecenin tarihini gösterir (${an})`, async ({ page }) => {
+    await page.route(/^https?:\/\/(?!127\.0\.0\.1|localhost)/, r => r.abort());
+    await page.clock.install({ time: new Date(an) });
+    await page.addInitScript(() => localStorage.setItem('urania_konumOto', 'false'));
+    await page.goto('/index.html#gok');
+    await expect(page.locator('#gkTarih')).toHaveValue(beklenen);
+    await page.locator('#gkTarih').fill('2026-11-05');
+    await page.locator('#gkTarih').dispatchEvent('change');
+    await expect(page.locator('#gkBuGece')).toBeVisible();
+    await page.click('#gkSimdi');
+    await expect(page.locator('#gkTarih')).toHaveValue(beklenen);
+  });
+}
