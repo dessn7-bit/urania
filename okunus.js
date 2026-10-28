@@ -187,7 +187,7 @@
       const s = u.split('').map(c => UST[c]).join('');
       return a + ' üzeri ' + (s[0] === '-' ? 'eksi ' + s.slice(1) : s);
     });
-    t = t.replace(/\^\s?(-?[\d,]+)/g, (m, s) => ' üzeri ' + (s[0] === '-' ? 'eksi ' + s.slice(1) : s)).replace(/\^\s?\(/g, ' üzeri (');
+    t = t.replace(/\[(Fe|M|X)\/H\]/g, '$1 bölü H').replace(/\^\s?([-−]?[\d,]+)/g, (m, s) => ' üzeri ' + (/^[-−]/.test(s) ? 'eksi ' + s.slice(1) : s)).replace(/\^\s?\(/g, ' üzeri (');
     sayiBirim();
     /* Yunan harfleri ve alt çizgi */
     t = t.replace(/[α-ωΑ-Ω]/g, h => YUNAN[h] ? ' ' + YUNAN[h] + ' ' : h);
@@ -233,6 +233,9 @@
     t = t.replace(/(\d)\+(?=\d)/g, '$1 artı ');
     /* Yüzde */
     t = t.replace(/%\s?(?=\d)/g, 'yüzde ');
+    /* "−%2,4 ile +%0,8" → "eksi yüzde 2,4 ile artı yüzde 0,8"; saat dilimi "UTC+3" → "UTC artı 3" */
+    t = t.replace(/(^|[\s(])([+−])(?=yüzde)/g, (m, o, i) => o + (i === '+' ? 'artı ' : 'eksi '));
+    t = t.replace(/\b(UTC|GMT)([+−-])(\d)/g, (m, z, i, n) => z + (i === '+' ? ' artı ' : ' eksi ') + n);
     return t.replace(/\s+/g, ' ').replace(/\s([,.;:!?)])/g, '$1').replace(/\(\s/g, '(').trim();
   }
 

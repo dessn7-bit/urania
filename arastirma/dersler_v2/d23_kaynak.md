@@ -58,7 +58,7 @@ Kaynak notu (Türkiye bölümü): Kaan'ın kuralı gereği Türkiye'nin uzay ça
 | [B] Cape Canaveral gibi uzak üslerden süper eşzamanlı aktarım yakıt tasarrufu | ESAO | "Launching from a site far from the equator, such as Cape Canaveral, can save fuel with a higher-apogee 'Supersynchronous' transfer orbit" |
 | [H] Düzlem değiştirme bedeli hızla orantılı; elipsin en uzak noktasında araç en yavaş | — | akıl yürütme (Kepler II, d3; düzlem değişimi hız vektörünün döndürülmesi) |
 | [B] GM = 0,39860 × 10⁶ km³/s²; ortalama yarıçap 6371 km | EF | "GM: 0.39860" ; "Volumetric mean radius: 6371.000 km" |
-| [H] Örnek: yükseklik enerjisi 398.600 × (1/6371 − 1/6771) ≈ 3,70 km²/s²; hareket 0,5 × 7,8² ≈ 30,4; pay 0,89 | — | python hesap (3,696 × 10⁶ J/kg ; 30,42 × 10⁶ J/kg) |
+| [H][D] Örnek: yükseklik enerjisi 398.600 × (1/6371 − 1/6771) ≈ 3,70 km²/s²; hareket 0,5 × 7,67² ≈ 29,4 (400 km'deki gerçek dairesel hız; eski 7,8 genel LEO değeriydi); pay 0,888 ≈ 0,89 | — | python hesap |
 
 ## Bölüm 4 — Yörünge haritası
 
@@ -88,7 +88,7 @@ Kaynak notu (Türkiye bölümü): Kaan'ın kuralı gereği Türkiye'nin uzay ça
 | [B] ~81° enlem ötesinde ufkun altında; Molniya ve Tundra | GEO | "Above about 81° latitude they are below the horizon" ; "Some Russian satellites therefore use Molniya and Tundra orbits" (WebFetch özeti) |
 | [B] Gidiş-dönüş ~240 ms; sesli konuşmada sorun | GEO | "about 240 ms" ; delay a problem for voice communication |
 | [B] Konum koruma; yakıt bitince emeklilik | GEO | periodic station-keeping ; "Once thruster fuel runs out, they are usually retired" (WebFetch özeti) |
-| [B] Mezarlık yörüngesi: %90 olasılıkla 200 km'den fazla üste | GEO | "over 200 km above the geostationary belt" ; 90% chance (WebFetch özeti; 300 km değeri sayfada yok) |
+| [B][D] Mezarlık yörüngesi: "satellites must have a 90% chance of moving over 200 km above the geostationary belt at end of life" (ders cümlesi bu anlama göre netleştirildi) | GEO | "over 200 km above the geostationary belt" ; 90% chance (WebFetch özeti; 300 km değeri sayfada yok) |
 | [H] Örnek: Fetih 41,0046°K 29,0762°D, küre R = 6371 km, uydu 42.164 km 0° 42°D → uzaklık 37.726 km, yükseklik 40,8°, azimut 160,7°; gidiş-dönüş 0,252 s; ekvatordan 0,239 s | — | python vektör hesabı (bu oturum); ışık hızı 299.792 km/s |
 
 ## Bölüm 6 — Güneş eşzamanlı yörünge
@@ -136,7 +136,7 @@ Kaynak notu (Türkiye bölümü): Kaan'ın kuralı gereği Türkiye'nin uzay ça
 | [H] 5,93 − 4,04 = 1,89 ≈ 1,9 km/s | — | hesap (iki ayrı matris değerinin farkı; kaba) |
 | [Ö] Ay'ın atmosferi yok denecek kadar seyrek, ekzosfer | https://science.nasa.gov/moon/facts/ | d10_kaynak.md satır 61: "very thin and tenuous atmosphere called an exosphere" |
 | [H] Paraşüt kullanılamaz, fren motorla | — | ekzosfer satırından çıkarım |
-| [B] AYAP-1 sert iniş; AYAP-2 yumuşak iniş | TUA26 | AYAP-1: "hard landing on the Moon after firing a domestically developed hybrid rocket engine in space" ; AYAP-2: "soft landing with domestic engines, followed by scientific research" (WebFetch özeti) |
+| [B][D] AYAP-1: "Dünya yörüngesine uluslararası iş birliğiyle çıkarılacak AYAP-1 adlı uzay aracının" ... "milli olarak geliştirilmiş hibrit roket motorunu uzayda ateşleyerek Ay'a sert iniş gerçekleştirmesi planlanmaktadır" (uluslararası iş birliği iniş için değil yörüngeye çıkış için; ders düzeltildi); AYAP-2 yumuşak iniş | TUA26 | AYAP-1: "hard landing on the Moon after firing a domestically developed hybrid rocket engine in space" ; AYAP-2: "soft landing with domestic engines, followed by scientific research" (WebFetch özeti) |
 | [H] Sert inişte son frenin bedeli ödenmez; aşamaların sırası | — | yorum (tanımdan); TUA böyle bir gerekçe yazmıyor |
 | [B] LEO→Mars aktarım 4,3; yakalanma 0,9; alçak Mars yörüngesine 1,4 | DVB | "Mars capture orbit to low Mars orbit: 1.4 km/s" ve önceki satırlar |
 | [H] 4,3 + 0,9 + 1,4 = 6,6 km/s | — | hesap |
@@ -154,7 +154,7 @@ Kaynak notu (Türkiye bölümü): Kaan'ın kuralı gereği Türkiye'nin uzay ça
 | [B] Gezegene göre ayrılırken geldiği hıza döner | GAP ; BSF | "eventually reaching the same speed it had on its way in" ; "The spacecraft slows to the same velocity going away that it had coming in" |
 | [B] Güneş'e göre hız artar, gezegenin hareketinden pay | GAP ; BSF | velocity relative to the Sun "takes on a nice boost from Jupiter" ; "relative to the Sun, it never slowed all the way to its initial Jupiter approach speed" |
 | [B] Gezegen yörünge enerjisi kaybeder, ölçülemeyecek kadar küçük | BSF ; GAP | "causing the massive planet to actually lose some of its orbital energy" ; "The massive planet's loss is too small to be measured" ; "decrease the planet's orbital momentum by a tiny amount" |
-| [B] Voyager Jüpiter'i trilyon yılda ~30 cm yavaşlattı | PW | "slowed Jupiter's orbit by about 30 cm per trillion years" |
+| [B][D] Voyager araçları Jüpiter'i trilyon yılda ~30 cm yavaşlattı | PW | "the Voyager probes actually slowed Jupiter's orbit by about 30 cm per trillion years" (çoğul; derste düzeltildi) |
 | [B] Galileo Io'nun önünden geçişle Jüpiter yörünge girişinde 90 kg yakıt tasarrufu | BSF | reduced the propellant needed for Jupiter orbit insertion "by 90 kg" |
 | [B] Mariner 10 ilk: Venüs → Merkür 1974 | JSC | Mariner 10 was the first to test this principle; used Venus's gravity to reach Mercury in 1974 (WebFetch özeti) |
 | [B] Galileo: Venüs'ten bir, Dünya'dan iki; Cassini: iki Venüs, bir Dünya, bir Jüpiter | GAP | "took one kick from Venus and two from Earth" ; "took two boosts from Venus, one from Earth, and another from Jupiter" |
@@ -200,28 +200,28 @@ Kaynak notu (Türkiye bölümü): Kaan'ın kuralı gereği Türkiye'nin uzay ça
 |---|---|---|
 | [B] Voyager 2 fırlatma 20 Ağustos 1977 | V2 | key facts "Aug. 20, 1977" |
 | [B] Voyager 1 fırlatma 5 Eylül 1977 | ES | "Voyager 1 launched on September 5, 1977." |
-| [B] Ender diziliş Jüpiter, Satürn, Uranüs, Neptün, Plüton; 175 yıl | JSC | "This unique alignment would not occur again for another 175 years!" |
+| [B][D] Ender diziliş, dış gezegenlerin hepsini (Jüpiter, Satürn, Uranüs, Neptün, Plüton) ziyaret; 175 yıl | JSC ; PW | "visit all the outer planets (Jupiter, Saturn, Uranus, Neptune and Pluto)" ; "This unique alignment would not occur again for another 175 years!" ; PW: "only occurs once every 175 years". (Doğrulama: "tek bir araç" ifadesi kaynakta yok, "uzay araçları" yapıldı.) |
 | [B] Bazı kaynaklar 176 yıl | https://spark.iop.org/gravity-lends-hand | "wouldn't recur for 176 years" (WebFetch özeti); PW de 175 der: "only occurs once every 175 years" |
 | [B] Büyük tur Ocak 1972'de maliyet yüzünden iptal; 1974 Uranüs/Neptün önerisi | V2 | canceled the original "Grand Tour" plan in January 1972, mainly over cost ; In 1974 ... redirecting the second Voyager to Uranus and Neptune (WebFetch özeti) |
 | [B] Geçiş tarihleri: Jüpiter 9 Tem 1979; Satürn 25–26 Ağu 1981; Uranüs 24 Oca 1986; Neptün 25 Ağu 1989 | V2 | key dates (WebFetch özeti; Satürn için 25 ve 26 Ağustos iki tarih verildi, derste "Ağustos'un sonunda") |
 | [B] Uranüs ve Neptün'ü ziyaret eden tek araç | V2 | "Voyager 2 is the only spacecraft to visit Uranus and Neptune" |
 | [B] Plütonyum oksitli RTG | V2 | "Three plutonium oxide radioisotope thermoelectric generators (RTGs)" (WebFetch özeti) |
 | [B] Güç fırlatmadakinin yaklaşık yarısı | SAN | "the power generated now is only about half that at launch" |
-| [B] Aletler güç için kapatılıyor; Nisan 2026'da LECP kapatıldı, yeniden açılabilir | ES | "NASA has shut down systems over the years to conserve power" ; "In April 2026, NASA turned off the Low-Energy Charged Particle (LECP) instrument. It could be turned back on later." (WebFetch özeti; hangi Voyager olduğu özetten net değil, derste araç adı verilmedi) |
+| [B][D] Aletler güç için kapatılıyor; Voyager 1 LECP 17 Nisan 2026'da kapatıldı (NASA tablosu: "Low-Energy Charged Particles: off to save power, April 17, 2026", Voyager 1 altında; Voyager 2'nin LECP'si 24 Mart 2025'te kapatılmıştı); yeniden açılabilir (ES) | https://science.nasa.gov/mission/voyager/where-are-voyager-1-and-voyager-2-now/ ; ES | "NASA has shut down systems over the years to conserve power" ; "In April 2026, NASA turned off the Low-Energy Charged Particle (LECP) instrument. It could be turned back on later." (WebFetch özeti; hangi Voyager olduğu özetten net değil, derste araç adı verilmedi) |
 | [B] Heliosfer: Güneş'in parçacık ve manyetik alan kabarcığı | CIT | "the protective bubble of particles and magnetic fields created by the sun" |
 | [Ö] Güneş rüzgârı (4. ders) | d4.json sözlük "Heliosfer", "Güneş rüzgârı" | d4_kaynak.md |
 | [B] Sonlanma şoku: güneş rüzgârı aniden yavaşlar | UNLV | termination shock ... where the solar wind slows suddenly (WebFetch özeti) |
 | [B] Heliopoz: sıcak seyrek güneş rüzgârı ile soğuk yoğun yıldızlararası ortamın buluştuğu yer | CIT | "where the tenuous, hot solar wind meets the cold, dense interstellar medium" |
-| [B] V1 25 Ağustos 2012, 121 AB; V2 5 Kasım 2018, 119 AB | UNLV ; CIT | "crossed the heliopause on August 25, 2012, at 121 AU" ; "November 5, 2018, at 119 AU" ; CIT: crossed the heliopause on November 5 |
-| [Not] V2 sayfası (NASA) özetinde 25 Kasım 2018 geçti; Caltech/JPL ve UNLV 5 Kasım diyor → 5 Kasım kullanıldı | V2 ; CIT ; UNLV | — |
-| [B] V2 o sırada 18 milyar km'den biraz fazla; sinyal ~16,5 saat | CIT | "slightly more than 11 billion miles (18 billion kilometers)" ; signals take about 16.5 hours |
+| [B][D] V1 25 Ağustos 2012, ~122 AB; V2 5 Kasım 2018, 119 AB | https://science.nasa.gov/mission/voyager/interstellar-mission/ ; https://ui.adsabs.harvard.edu/abs/2019NatAs...3.1013S ; CIT ; https://www.nasa.gov/solar-system/voyager-2-illuminates-boundary-of-interstellar-space/ | NASA: "Voyager 1 entered interstellar space on Aug. 25, 2012" at "about 122 AU" ; "Voyager 2 crossed this boundary on Nov. 5, 2018" ; Stone vd. 2019: "On 5 November 2018 ..." "crossed the heliopause at 119 au" ; NASA 2019: "on Nov. 5, 2018, NASA's Voyager 2 became only the second spacecraft". (Doğrulama: UNLV'nin 121 AB'si Wikipedia'ya dayanıyordu; NASA'nın ~122 AB'si kullanıldı.) |
+| [Not][D] NASA V2 görev sayfasının "key dates" tablosu "Nov 25, 2018: Entered Interstellar Space" diyor (doğrulamada yeniden okundu); ama NASA'nın Interstellar Mission sayfası, NASA'nın 2019 haberi, JPL/Caltech 10 Aralık 2018 haberi ve Stone vd. 2019 (Nature Astronomy) hepsi 5 Kasım 2018 diyor → 5 Kasım doğru; 25 Kasım NASA tablosunda yazım hatası gibi görünüyor | V2 ; CIT ; NASA interstellar-mission ; ADS 2019NatAs...3.1013S | — |
+| [B][D] V2 18 milyar km'den biraz fazla; sinyal ~16,5 saat (haberin tarihi 10 Aralık 2018, geçiş günü değil) | CIT | "slightly more than 11 billion miles (18 billion kilometers)" ; signals take about 16.5 hours |
 | [Ö] Oort iç kenar 2000–5000 AB; Voyager 1 ~300 yıl sonra girer | OORT | d19_kaynak.md satır 124: inner edge 2,000–5,000 AU ; "won't enter the Oort Cloud for about 300 years" |
-| [B] Bir ışık günü: 18 Kasım 2026 00:16:07 CST; 25,9 milyar km; 173,14 AB | ES | "12:16:07 a.m. CST on November 18, 2026" ; "25.9 billion km, or 173.14 AU" (NASA'ya atfen; NASA "Where are Voyager 1 and Voyager 2 now" sayfasını kaynak gösteriyor) |
-| [H] CST = UTC − 6 → 06:16 UTC → 09:16 Türkiye (UTC + 3) | — | saat dilimi hesabı (Kasım'da ABD yaz saati bitmiş) |
+| [B][D] Bir ışık günü: NASA: "On Wednesday, Nov. 18, 2026, at 2:16:07 a.m. PST" ; "16.094 billion miles" (25,902 milyar km); geri sayım "NOV 18, 2026, 5:16AM EST". EarthSky'ın "12:16:07 a.m. CST" saati NASA ile 4 saat farklı → NASA kullanıldı | https://science.nasa.gov/mission/voyager/where-are-voyager-1-and-voyager-2-now/ ; ES | "12:16:07 a.m. CST on November 18, 2026" ; "25.9 billion km, or 173.14 AU" (NASA'ya atfen; NASA "Where are Voyager 1 and Voyager 2 now" sayfasını kaynak gösteriyor) |
+| [H][D] PST = UTC − 8 → 10:16 UTC → 13:16 Türkiye (UTC + 3); EST 5:16 + 5 = 10:16 UTC ile tutarlı (eski satır: CST 00:16 → 09:16, düzeltildi) | — | saat dilimi hesabı (Kasım'da ABD yaz saati bitmiş) |
 | [B] Eski haber: ~13 Kasım | SAN | "Around 13 November in 2026, Voyager 1 will be one light-day from Earth." |
 | [B] Voyager 2 Kasım 2035'te bir ışık günü | ES | "NASA says Voyager 2 will reach 1 light-day in November 2035." |
 | [B] Hız ~61.000 km/sa | SAN | "about 61,000km/h (38,000mph)" |
-| [H] Örnek: 299.792 × 86.400 ≈ 25,90 milyar km ≈ 173,1 AB; (173,1 − 121)/14,2 yıl ≈ 3,7 AB/yıl ≈ 17,4 km/s; 61.000/3600 ≈ 16,9 km/s; (2000 − 173)/3,7 ≈ 500 yıl; 300 yıl × 3,7 ≈ 1100 AB | — | python hesap; NASA'nın 300 yılı ile fark "bulutun sınırı tahmin" diye yorumlandı (yorum) |
+| [H][D] Örnek: 299.792 × 86.400 ≈ 25,90 milyar km ≈ 173,1 AB; (173,1 − 122)/14,23 yıl ≈ 3,6 AB/yıl ≈ 17,0 km/s; 61.000/3600 ≈ 16,9 km/s; (2000 − 173)/3,6 ≈ 507 ≈ 500 yıl. NASA'nın 300 yılı bu hesapla uyuşmuyor; eski "daha içeriden başladığını varsayıyor gibi" yorumu kaynaksızdı, "uyuşmuyor, kaynaklar farklı değerler kullanıyor" yapıldı | — | python hesap |
 
 ## Bölüm 12 — Türkiye'nin uzay çalışmaları
 
@@ -229,21 +229,21 @@ Kaynak notu (Türkiye bölümü): Kaan'ın kuralı gereği Türkiye'nin uzay ça
 |---|---|---|
 | [B] TUA 13.12.2018 tarihli 23 sayılı CK ile Sanayi ve Teknoloji Bakanlığı ilgili kuruluşu | TUA | "13.12.2018 tarihli ve 23 sayılı Cumhurbaşkanlığı Kararnamesi ile" ; Sanayi ve Teknoloji Bakanlığının ilgili kuruluşu (WebFetch özeti) |
 | [B] Milli Uzay Programı amaçları | TUA | "teknolojilerin ve gerekli altyapıların geliştirilmesi," ; "Ülkemizin dışa bağımlığının azaltılması," ; "Uzay teknolojilerinin ülkemizin kalkınmasında bir araç olarak kullanımı için planlanması," ; "Uzay alanında mevcut yeteneklerin ve başarıların milli teknolojiler ile daha ileriye taşınması," ; "İnsanlığın bilimsel bilgi ve tecrübesine katkı sağlanması," ; "Başta gençler olmak üzere ülkemiz insanının uzay farkındalığının artırılması." |
-| [B] 2011'de RASAT ile ilk kez gözlem uydusu; ardından GÖKTÜRK-2 | IMCPDF | "2011’de Rasat ile ilk kez gözlem uydumuzu yaptık." ; "Sonrasında Göktürk-2 olarak gözlem uydumuzu yaptık ve halen görevde." (TÜBİTAK haberinde aktarılan konuşma) |
+| [B][D] 2011'de RASAT ile ilk kez gözlem uydusu; ardından GÖKTÜRK-2 (konuşan: TÜBİTAK Başkanı Prof. Dr. Hasan Mandal; derste atıf netleştirildi) | IMCPDF | "2011’de Rasat ile ilk kez gözlem uydumuzu yaptık." ; "Sonrasında Göktürk-2 olarak gözlem uydumuzu yaptık ve halen görevde." (TÜBİTAK haberinde aktarılan konuşma) |
 | [B] İMECE: ilk yerli ve milli yüksek çözünürlüklü görüntüleme uydusu; 15 Nisan 2023 09.48; Vandenberg; 12.24 ayrılma; 12.29 ilk sinyal; TÜBİTAK UZAY; 680 km SSO; metre altı; 5 yıl; BİLSAT/RASAT/GÖKTÜRK-2 deneyimi | IMC | "Türkiye’nin ilk yerli ve milli yüksek çözünürlüklü görüntüleme uydusu" ; Türkiye saatiyle 09.48 ; Vandenberg Uzay Kuvvetleri Üssü ; 12.24'te ayrıldı ; "12.29’da İMECE’den ilk sinyal alındı" ; "metrealtı çözünürlüğe sahip elektro-optik uydu kamerası" ; tasarım görev ömrü 5 yıl ; "BİLSAT, RASAT ve GÖKTÜRK-2 uydularından edinilen tecrübe" |
 | [B] Türksat 6A: Cape Canaveral, Falcon 9, 8–9 Temmuz gecesi 00.20 (plan) | BG | "8 Temmuz’u 9 Temmuz’a bağlayan gece Türkiye saati ile 00.20’de" ; Cape Canaveral ; "Falcon 9 roketi ile uzaya gönderilecek" (08/07/2024 tarihli fırlatma öncesi yazı) |
 | [B] 9 Temmuz 2024'te fırlatıldı; 50° D test; 16 Aralık 2024 geçiş; 28 Aralık 2024 42° D; beş manevra; 15+ yıl; TUSAŞ, ASELSAN, CTech; 11 ülke | T6A | "9 Temmuz 2024’te fırlatılan" ; 50° Doğu test yörüngesi ; 16 Aralık 2024 ; 28 Aralık 2024 itibarıyla 42° Doğu ; "beş yörünge manevrası" ; "15 yılı aşkın hizmet süresi" ; TÜBİTAK UZAY koordinasyonu, TUSAŞ, ASELSAN ve CTech ; "haberleşme uydusu geliştirebilen 11 ülke arasına girmesini sağlayarak" |
 | [B] Yerlilik %81'in üzerinde | BG | "yüzde 81’in üzerinde yerlilik oranıyla üretilmişti" |
 | [B] Ax-3: 18 Ocak 16.49 (19 Ocak 00.49), Kennedy, Dragon kapsülü, ~36 saat, 20 Ocak'ta ISS | TBAX | January 18 at 16:49 (January 19 at 00:49) ; NASA's Kennedy Space Center ; "Dragon capsule" ; reached the ISS on January 20 after about 36 hours |
 | [H] 16.49 = ABD doğu saati (EST, UTC − 5) → 21.49 UTC → 00.49 Türkiye | — | saat hesabı; NASAB EST saatleri kullanıyor |
-| [B] Ekip ve roller: López-Alegría komutan, Villadei pilot, Gezeravcı ve Wandt görev uzmanı | AX ; TBAX | "Michael López-Alegría, Commander" ; "Walter Villadei, Pilot" ; "Alper Gezeravcı, Mission Specialist (Türkiye)" ; "Marcus Wandt, Mission Specialist" |
+| [B][D] Ekip ve roller: López-Alegría komutan, Villadei pilot, Gezeravcı ve Wandt görev uzmanı (derste eski cümle Wandt'ı rolsüz bırakıyordu, düzeltildi) | AX ; TBAX | "Michael López-Alegría, Commander" ; "Walter Villadei, Pilot" ; "Alper Gezeravcı, Mission Specialist (Türkiye)" ; "Marcus Wandt, Mission Specialist" |
 | [B] 18 gün kenetli; 30'dan fazla deney; tamamen Avrupalı ilk ticari görev | AX | "18 days docked to the ISS" ; "More than 30 experiments" ; "Completing First All-European Commercial Astronaut Mission to ISS" |
 | [B] Kapak 7 Şubat kapandı/ayrılma; 9 Şubat 2024 Daytona açıkları | NASAB ; AX | post dated February 7, 2024, hatch closed, undocking about 9:20 a.m. ; splashdown "about 8:30 a.m. EST on Friday, Feb. 9" "off the coast of Daytona, Florida" ; AX: "February 9, 2024 ... off the coast of Florida (near Daytona)" |
 | [B] Toplam 21 gün | TBAX | başlık: "Returned to Earth After 21 Days" |
 | [B] İlk Türk astronot | TBAX ; AX | "Türkiye's first astronaut" |
 | [B] AYAP-1: yerli hibrit motor uzayda ateşlenir, uluslararası iş birliği, sert iniş; AYAP-2 yumuşak iniş | TUA26 | yukarıdaki Bölüm 8 satırı |
 | [B] AYAP-1 2024'te %71,8; 2026 hedefi %95 | TUA26 | "Progress was 71.8% in 2024, with a 2026 target of 95%" (WebFetch özeti) |
-| [B] 2024 programı: pandemi kaynaklı tedarik gecikmesi, tamamlanma 2026 | TUA24 | "AYAP-1 completion is expected in 2026 because of pandemic-related supply delays" (WebFetch özeti) |
+| [B][D] 2024 programı: "Özellikle kimyasal itki sistemi ve bazı alt bileşenlerin tedarik süreçlerinde pandemi kaynaklı yaşanan gecikmeler" ; "projenin 2026 yılında tamamlanacağı öngörülmektedir" | TUA24 | "AYAP-1 completion is expected in 2026 because of pandemic-related supply delays" (WebFetch özeti) |
 | [B] Uzaya Erişim ve Uzay Limanı projesi | TUA26 | "Uzaya Erişim ve Uzay Limanı" |
 | [P] ISS günde ~15,49 tur | Bölüm 10 satırı | — |
 | [H] Örnek: 18 × 15,49 ≈ 279 tur; × 42.700 ≈ 11,9 milyon km; / 384.400 ≈ 31 | — | python hesap |
@@ -256,7 +256,7 @@ Kaynak notu (Türkiye bölümü): Kaan'ın kuralı gereği Türkiye'nin uzay ça
 | [B] 2024 parçalanmaları en az 3000 izlenen nesne ekledi | SER | "several major fragmentation events as well as many smaller ones" added at least 3,000 tracked objects |
 | [B] LEO'da 7–8 km/s; 1 cm parça el bombası enerjisi; birkaç mm ölümcül olabilir | SPA | "objects move with velocities of 7 to 8 km/s" ; "comparable to the energy of an exploding hand grenade" ; a few millimetres may be lethal (WebFetch özeti) |
 | [P] CelesTrak en parlak (visual) listesi ağırlıklı roket gövdesi | https://celestrak.org/NORAD/elements/gp.php?GROUP=visual&FORMAT=tle | arastirma/uydu_kaynaklar.md bölüm 3: "`visual` içeriği: ağırlıklı roket gövdeleri (SL-3/SL-8/... R/B, CZ-xx R/B, H-2A R/B)" |
-| [B] Kessler & Cour-Palais, JSC, JGR 83(A6), 1 Haziran 1978; çarpışma olasılığı artar; parçalar kuşak oluşturur; asteroit kuşağı benzetmesi; "within this century" | KES | "Collision frequency of artificial satellites - The creation of a debris belt" ; "the probability of collisions between satellites also increases" ; "Under certain conditions the belt could begin to form within this century." |
+| [B][D] ("ilk kez" üstünlük iddiası kaynakta yok, dersten çıkarıldı) Kessler & Cour-Palais, JSC, JGR 83(A6), 1 Haziran 1978; çarpışma olasılığı artar; parçalar kuşak oluşturur; asteroit kuşağı benzetmesi; "within this century" | KES | "Collision frequency of artificial satellites - The creation of a debris belt" ; "the probability of collisions between satellites also increases" ; "Under certain conditions the belt could begin to form within this century." |
 | [B] Kessler sendromu: zincirleme, yörüngeleri kullanılamaz kılar | SER ; https://blogs.esa.int/access/?p=128 | chain reaction ... making some orbits unusable ; "cascading collisions could render entire orbital regions unusable" |
 | [B] Yeni fırlatma olmasa bile çöp artardı | SER | "even without any additional launches, the number of space debris would keep growing" |
 | [B] 10 Şubat 2009, 16.56 UTC, 789 km, Taymır; 11,7 km/s; Iridium 33 aktif ABD yapımı ticari, Kosmos 2251 kullanım dışı Rus askerî haberleşme; 950 ve 560 kg; ilk iki uydu çarpışması; 1668 + 628; 2024'te 916 ve 212 | COL | "16:56 UTC" ; "789 kilometres" ; "above the Taymyr Peninsula in Siberia" ; "11.7 km/s" ; "950-kilogram" ; "560-kilogram" ; "first time a hypervelocity collision had occurred between two satellites" ; 1,668 ve 628 ; 2024: 916 ve 212 |
@@ -273,4 +273,10 @@ Kaynak notu (Türkiye bölümü): Kaan'ın kuralı gereği Türkiye'nin uzay ça
 4. Ax-3 için Falcon 9 ve kapsül adı: yalnız Wikipedia'da okundu; resmî kaynak kuralı gereği derste yok.
 5. Türksat 6A'nın kütlesi ve İMECE'nin metre cinsinden çözünürlüğü: TÜBİTAK sayfalarında sayı yok ("metre altı"), derste sayı verilmedi.
 6. Hohmann'ın kişisel tarihi (Walter Hohmann, 1925): bu oturumda kaynakta görülmedi, derste yok.
-7. Voyager 2 heliopoz tarihi: NASA Voyager 2 sayfasının WebFetch özeti 25 Kasım 2018 verdi; Caltech/JPL haberi ve UNLV 5 Kasım 2018 diyor. 5 Kasım kullanıldı; doğrulama ajanı NASA sayfasına bir kez daha bakmalı.
+7. Voyager 2 heliopoz tarihi: doğrulamada çözüldü, 5 Kasım 2018 (NASA Interstellar Mission sayfası, NASA 2019 haberi, JPL/Caltech 2018 haberi, Stone vd. 2019). NASA V2 sayfasındaki 25 Kasım tablo hatası.
+
+## Bağımsız doğrulama notları (2026-10-28)
+[D] = doğrulama ajanının bu oturumda yeniden okuduğu ya da düzelttiği satır. Yeniden okunan kaynaklar: NASA V2, NASA Interstellar Mission, NASA Where Are Voyager, NASA 2019 Voyager 2 haberi, Caltech/JPL 2018, ADS Stone vd. 2019, UNLV, EarthSky, Sky at Night, NASA Oort, JSC NTRS, Physics World, JPL Gravity Assist Primer, NASA BSF, TÜBİTAK (Ax-3, Türksat 6A, İMECE, İMECE PDF), Bilim Genç, Axiom, NASA blog, TUA (Milli Uzay Programı, 2024 ve 2026 performans programları), ESA SER 2025, ESA Types of orbits, Wikipedia (Tsiolkovsky, Delta-v budget, GEO, SSO, Tiangong, 2009 collision), Kessler NTRS, Spatium 52, NASA ISS facts, NASA Earth ve Mars fact sheet; proje dosyaları ha_satinfo_25544/48274.html ve ha_css_passsummary.html (14 geçiş satırı tek tek kontrol edildi).
+- Delta-v budget maddesinde LEO → alçak Ay yörüngesi için bir tabloda 8,0 km/s, Dünya-Ay tablosunda 4,04 km/s geçiyor; ders 4,04'ü kullanıyor ve maddenin tutarsızlık notunu zaten veriyor.
+- Tuva Cihangir Atasever derste yok (TUA 2026 performans programında da adı ve yörünge altı uçuş geçmiyor).
+- jpl.nasa.gov haber sayfası izin yanıtı gelmediği için okunamadı; aynı metin Caltech kopyasından okundu.

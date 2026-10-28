@@ -201,7 +201,7 @@
   function sinavGiris(u) {
     const ls = sinavSorulari(u.id); if (!ls.length) return '';
     const g = uniteSonuclari(sinavSonuclari(), u.id).slice(-1)[0];
-    return `<a class="sinav-giris" href="#ders/sinav/${u.id}"><b>Ünite sınavı</b><span>${ls.length} soru${g ? ` · son sonucun ${g.dogru}/${g.toplam}` : ''}</span></a>`;
+    return `<a class="sinav-giris" href="#ders/sinav/${u.id}"><b>Ünite sınavı</b><span>${Math.min(ls.length, SINAV_SORU)} soru${ls.length > SINAV_SORU ? ` (${ls.length} soruluk havuzdan)` : ''}${g ? ` · son sonucun ${g.dogru}/${g.toplam}` : ''}</span></a>`;
   }
   function uniteSonu(dersId) {
     const u = (D.uniteler || []).find(u => u.dersler[u.dersler.length - 1] === dersId);
@@ -211,13 +211,23 @@
   /* Sekme değişince bekleyen kart zamanlayıcıları (düşünme sayacı, yeniden deneme) geçersizleşir: gizli
      bölümde cevap açılıp sesli okunmasın. Geri dönünce kart yeniden çizilir. */
   window.addEventListener('hashchange', () => { if (!/^#ders\/kartlar/.test(location.hash)) kartSayac++; });
+  /* Ünite sınavı en çok 15 soru: v3'te yeni derslerle ünite havuzu 20 soruya çıktı. Her dersten en az bir soru,
+     kalanı havuzdan rastgele; her açılışta farklı bir karışım. */
+  const SINAV_SORU = 15;
+  function sinavSec(ls) {
+    if (ls.length <= SINAV_SORU) return karistir(ls);
+    const k = karistir(ls), secilen = [], dersler = new Set();
+    k.forEach(q => { if (!dersler.has(q.ders)) { dersler.add(q.ders); secilen.push(q); } });
+    k.forEach(q => { if (secilen.length < SINAV_SORU && secilen.indexOf(q) < 0) secilen.push(q); });
+    return karistir(secilen.slice(0, SINAV_SORU));
+  }
   function karistir(ls) { const a = ls.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
   function sinav(uid) {
     gomuluDurdur();
     const u = (D.uniteler || []).find(x => x.id === uid), ls = sinavSorulari(uid);
     if (!u || !ls.length) { liste(); return; }
     const yeni = !sinavOturum || sinavOturum.uid !== uid;
-    if (yeni) sinavOturum = { uid, sira: karistir(ls), i: 0, cevap: {}, dogru: 0 };
+    if (yeni) sinavOturum = { uid, sira: sinavSec(ls), i: 0, cevap: {}, dogru: 0 };
     sinavCiz(u);
     if (yeni) window.scrollTo(0, 0);
     /* Sınava (geri tuşuyla) dönünce de odak soruya; bitmiş sınavda sinavCiz sonuca odaklar */
@@ -374,7 +384,7 @@
     el = kok;
     el.innerHTML = '<p class="bos">Dersler yükleniyor…</p>';
     /* Çizimler ayrı yüklenir; yüklenemezse dersler çizimsiz açılır */
-    const cizim = U.betikler(['./cizim.js', './cizim_gokyuzu.js', './cizim_gunes_sistemi.js', './cizim_yildizlar.js', './cizim_gezegen_yasam.js', './cizim_evren.js']).catch(e => console.warn(e.message));
+    const cizim = U.betikler(['./cizim.js', './cizim_gokyuzu.js', './cizim_gunes_sistemi.js', './cizim_yildizlar.js', './cizim_gezegen_yasam.js', './cizim_evren.js', './cizim_v3.js']).catch(e => console.warn(e.message));
     try {
       const sozluk = window.Sozluk ? Sozluk.yukle().catch(e => console.warn('Sözlük yüklenemedi: ' + e.message)) : null;
       [D] = await Promise.all([U.veri('dersler'), cizim, sozluk]);

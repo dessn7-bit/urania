@@ -130,13 +130,14 @@ test('6 ve 15: sınav sonucu/yanlışlar yazılamazsa "kartlara eklendi" denmez;
   await expect(page.locator('#snSoru')).toBeVisible();
   const sorular = await page.evaluate(() => fetch('veri/sinavlar.json').then(r => r.json()).then(j => j.uniteler.gokyuzu));
   await yazmaHatasi(page, ['sinavSonuc', 'sinavYanlis']);
-  for (let i = 0; i < sorular.length; i++) {
+  const N = Math.min(15, sorular.length);   // ünite sınavı en çok 15 soru
+  for (let i = 0; i < N; i++) {
     const metin = await page.locator('#snSoru').innerText();
     const s = sorular.find(x => x.soru === metin);
     await page.locator(`.sinav-secenek button[data-i="${(s.dogru + 1) % 4}"]`).click();
     await page.locator('#snSonraki').click();
   }
-  await expect(page.locator('.sinav-puan')).toContainText('0 / 12');
+  await expect(page.locator('.sinav-puan')).toContainText('0 / ' + N);
   await expect(page.locator('.hata-kutu[role="alert"]')).toContainText('Bu sonuç kaydedilemedi; yanlışların tekrar kartlarına eklenemedi');
   await expect(page.locator('#b-ders')).not.toContainText('tekrar kartlarına eklendi');
   await page.goto('/index.html#gok');

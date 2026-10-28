@@ -64,16 +64,20 @@ test('Ders içi deney: d3\'te Kepler deneyi açılır, ölçer, kapanır; başka
   await expect(page.locator('.mini-deney[data-deney="gecis"] #gcDer')).toContainText('84 ppm');
 });
 
-test('Ünite sınavı: 12 soru, yanlış cevap açıklama gösterir, sonuç kaydedilir, yanlışlar karta düşer', async ({ page }) => {
+test('Ünite sınavı: 20 soruluk havuzdan 15 soru (her dersten en az biri), yanlış cevap açıklama gösterir, sonuç kaydedilir, yanlışlar karta düşer', async ({ page }) => {
   await page.goto('/index.html#ders');
   await expect(page.locator('.sinav-giris')).toHaveCount(5);
+  await expect(page.locator('.sinav-giris').first()).toContainText('15 soru (20 soruluk havuzdan)');
   await page.goto('/index.html#ders/sinav/gokyuzu');
-  const sorular = await page.evaluate(() => fetch('veri/sinavlar.json').then(r => r.json()).then(j => j.uniteler.gokyuzu));
-  expect(sorular.length).toBe(12);
-  let dogru = 0;
-  for (let i = 0; i < 12; i++) {
+  const [sorular, uniteDers] = await page.evaluate(() => Promise.all([fetch('veri/sinavlar.json').then(r => r.json()).then(j => j.uniteler.gokyuzu), fetch('veri/dersler.json').then(r => r.json()).then(j => j.uniteler.find(u => u.id === 'gokyuzu').dersler)]));
+  expect(sorular.length).toBe(20);
+  const N = 15;
+  let dogru = 0; const gorulen = new Set();
+  for (let i = 0; i < N; i++) {
+    await expect(page.locator('.kucuk.soluk', { hasText: `Soru ${i + 1} / ${N}` })).toBeVisible();
     const metin = await page.locator('#snSoru').innerText();
     const q = sorular.find(x => x.soru === metin);
+    gorulen.add(q.ders);
     const sec = i % 2 === 0 ? q.dogru : (q.dogru + 1) % 4;      // yarısı doğru, yarısı yanlış
     if (sec === q.dogru) dogru++;
     await page.locator(`.sinav-secenek button[data-i="${sec}"]`).click();
@@ -81,13 +85,15 @@ test('Ünite sınavı: 12 soru, yanlış cevap açıklama gösterir, sonuç kayd
     await expect(page.locator('.sinav-secenek .dugme.dogru')).toHaveCount(1);
     await page.locator('#snSonraki').click();
   }
-  await expect(page.locator('.sinav-puan')).toContainText(`${dogru} / 12`);
+  /* sorusu olan her ders sınavda en az bir kez */
+  expect([...gorulen].sort()).toEqual([...new Set(sorular.map(q => q.ders))].filter(d => uniteDers.includes(d)).sort());
+  await expect(page.locator('.sinav-puan')).toContainText(`${dogru} / ${N}`);
   const kayit = await page.evaluate(() => [JSON.parse(localStorage.getItem('urania_sinavSonuc')), Object.keys(JSON.parse(localStorage.getItem('urania_sinavYanlis')))]);
-  expect(kayit[0].gokyuzu.slice(-1)[0]).toMatchObject({ dogru, toplam: 12 });
-  expect(kayit[1].length).toBe(12 - dogru);
+  expect(kayit[0].gokyuzu.slice(-1)[0]).toMatchObject({ dogru, toplam: N });
+  expect(kayit[1].length).toBe(N - dogru);
   await page.goto('/index.html#ders');
-  await expect(page.locator('.kart-ozet')).toContainText(`${12 - dogru} kart`);
-  await expect(page.locator('.sinav-giris').first()).toContainText(`son sonucun ${dogru}/12`);
+  await expect(page.locator('.kart-ozet')).toContainText(`${N - dogru} kart`);
+  await expect(page.locator('.sinav-giris').first()).toContainText(`son sonucun ${dogru}/${N}`);
 });
 
 test('Sınav soruları: dört farklı şık, geçerli ders ve bölüm, okunuşta sembol kalmaz', async ({ page }) => {
@@ -164,12 +170,12 @@ test('İnceleme bulguları: sınav adresi doğrudan açılır; ders bağlantıs�
   await expect(page.locator('h1')).toHaveText(/^Ünite sınavı: \S/);   // h1 ünite adını da içerir (erişilebilirlik bulgusu 13)
   await page.locator('.sinav-secenek button').first().click();
   await page.locator('#snSonraki').click();
-  await expect(page.locator('.kucuk.soluk').first()).toContainText('Soru 2 / 12');
+  await expect(page.locator('.kucuk.soluk').first()).toContainText('Soru 2 / 15');   // evren havuzu 16 → sınav 15 soru
   const soru2 = await page.locator('#snSoru').innerText();
   await page.goto('/index.html#ders/d7');
   await page.goBack();
   await expect(page.locator('#snSoru')).toHaveText(soru2);
-  for (let i = 1; i < 12; i++) { await page.locator('.sinav-secenek button').first().click(); await page.locator('#snSonraki').click(); }
+  for (let i = 1; i < 15; i++) { await page.locator('.sinav-secenek button').first().click(); await page.locator('#snSonraki').click(); }
   await expect(page.locator('.sinav-puan')).toBeVisible();
   await page.goto('/index.html#gok');
   await page.goBack();

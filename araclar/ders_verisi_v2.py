@@ -7,11 +7,11 @@ sys.path.insert(0, os.path.join(K, 'araclar'))
 from ders_denetim import denetle
 
 UNITELER = [
-    {'id': 'gokyuzu', 'ad': 'Gökyüzünü okumak', 'aciklama': 'Gökte yön bulmak, ışığın dili, teleskop ve dürbün.', 'dersler': ['d1', 'd21', 'd22', 'd20', 'd2', 'd11', 'd12', 'd24']},
-    {'id': 'gunes_sistemi', 'ad': 'Güneş Sistemi', 'aciklama': 'Kütleçekim, gezegenler, Ay ve küçük cisimler.', 'dersler': ['d3', 'd9', 'd10', 'd19', 'd23']},
+    {'id': 'gokyuzu', 'ad': 'Gökyüzünü okumak', 'aciklama': 'Gökte yön bulmak, ışığın dili, dürbün, takımyıldızlar, teleskop ve gökyüzü fotoğrafı.', 'dersler': ['d1', 'd2', 'd11', 'd21', 'd12', 'd24']},
+    {'id': 'gunes_sistemi', 'ad': 'Güneş Sistemi', 'aciklama': 'Kütleçekim, gezegenler, Ay, zaman ve takvim, küçük cisimler ve uzaya çıkmak.', 'dersler': ['d3', 'd9', 'd10', 'd22', 'd19', 'd23']},
     {'id': 'yildizlar', 'ad': 'Yıldızlar', 'aciklama': 'Güneş\'ten başlayıp yıldızların doğumu, hayatı ve ölümü.', 'dersler': ['d4', 'd14', 'd5', 'd15', 'd6', 'd16']},
     {'id': 'gezegen_yasam', 'ad': 'Ötegezegenler ve yaşam', 'aciklama': 'Başka yıldızların gezegenleri ve yaşam arayışı.', 'dersler': ['d13', 'd18']},
-    {'id': 'evren', 'ad': 'Galaksiler ve evren', 'aciklama': 'Samanyolu\'ndan evrenin tarihine ve geleceğine.', 'dersler': ['d7', 'd8', 'd17']},
+    {'id': 'evren', 'ad': 'Galaksiler ve evren', 'aciklama': 'Samanyolu\'ndan evrenin tarihine ve geleceğine; sonunda astronominin kendi tarihi.', 'dersler': ['d7', 'd8', 'd17', 'd20']},   # d20 tarih: kapanış dersi (Kepler/Newton için d3 önce okunmuş olur)
 ]
 # v3 (Ekim 2026) yeni dersler: taslağı henüz yazılmadıysa atlanır (yazım sürerken derleme kırılmasın)
 YENI_V3 = {'d20', 'd21', 'd22', 'd23', 'd24'}
@@ -91,6 +91,10 @@ for i in sorted(YENI_V3 & set(kaynak)):
     ls = json.load(open(yol, encoding='utf-8'))
     ls = ls if isinstance(ls, list) else ls.get('sorular', [])
     hedef = S['uniteler'].setdefault(unite_of[i], [])
+    # ders ünite değiştirdiyse eski ünitedeki kopyası silinir
+    idler = {q['id'] for q in ls}
+    for u, l in S['uniteler'].items():
+        if u != unite_of[i]: l[:] = [q for q in l if q.get('id') not in idler]
     for q in ls:
         q = numarala(q); q['ders'] = i
         assert 0 <= q['dogru'] < len(q['secenekler']) and 0 <= q['bolum'] < len(next(d for d in dersler if d['id'] == i)['bolumler']), (i, q.get('id'))

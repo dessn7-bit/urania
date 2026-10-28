@@ -171,62 +171,6 @@
     "bolum": 4
    },
    {
-    "id": "d20-1",
-    "soru": "Eratosthenes, İskenderiye'deki gölge açısını çemberin ellide biri (7,2°) buldu ve iki kent arasını yaklaşık 5000 stadion aldı. Sonucunun bugünkü kilometre karşılığı neden kesin söylenemez?",
-    "secenekler": [
-     "Çünkü stadionun bugünkü uzunluğu kesin bilinmiyor ve tahminler yaklaşık 155 ile 185 metre arasında değişiyor",
-     "Çünkü Eratosthenes açıyı ölçmeyi unuttu ve sonucu tahmin etti",
-     "Çünkü Syene'de yaz gündönümünde de uzun bir gölge oluşuyordu",
-     "Çünkü Eratosthenes Dünya'nın düz olduğunu varsayıyordu"
-    ],
-    "dogru": 0,
-    "aciklama": "Derse göre yöntem doğrudur: 50 × 5000 = 250.000 stadion. Ama stadionun metre karşılığı tartışmalıdır; Wikipedia 155–160 m ile hatayı −%2,4 ile +%0,8, Paris Gözlemevi sözlüğü 155–185 m ile −%3 ile +%15 arasında verir.",
-    "ders": "d20",
-    "bolum": 3
-   },
-   {
-    "id": "d20-2",
-    "soru": "Hipparkhos, Spica'nın sonbahar noktasına uzaklığını Timokharis'in 8° değerine karşı 6° buldu. Bu fark ona neyi gösterdi?",
-    "secenekler": [
-     "Spica'nın Dünya'ya hızla yaklaştığını",
-     "Ekinoks noktalarının yıldızlara göre yavaşça kaydığını, yani presesyonu",
-     "Timokharis'in aletinin bozuk olduğunu",
-     "Dünya'nın Güneş'in çevresinde dolandığını"
-    ],
-    "dogru": 1,
-    "aciklama": "Derse göre yıldızlar birbirine göre kaymadığı için değişen, ölçümün başlangıç noktası olan ekinoks noktalarıydı. Hipparkhos bu kaymayı yılda en az yüzde bir derece olarak verdi; gerçek değer 72 yılda bir derecedir. Bu olaya presesyon denir.",
-    "ders": "d20",
-    "bolum": 5
-   },
-   {
-    "id": "d20-3",
-    "soru": "Takiyüddin'in İstanbul Rasathanesi'nde kullandığı gözlem saatinin saniyeyi göstermesi neden önemliydi?",
-    "secenekler": [
-     "Saray törenlerinin başlama anını duyurmak için",
-     "Kuyruklu yıldızların hızını ölçmek için",
-     "Sağ açıklık yıldızın meridyenden geçiş zamanıyla ölçüldüğü için; gök küresi saniyede yaklaşık 15 yay saniyesi döner",
-     "Ay tutulmalarının süresini kısaltmak için"
-    ],
-    "dogru": 2,
-    "aciklama": "Derse göre Takiyüddin üç kadranlı (saat, dakika, saniye) saatini yıldızların sağ açıklığını ölçmek için kullandı. Gök küresi yaklaşık 86.164 saniyede 360° döndüğünden 1 saniye zaman yaklaşık 15″ yaya karşılık gelir; 1 yay dakikası kesinlik için saatin 4 saniyeden iyi olması gerekir.",
-    "ders": "d20",
-    "bolum": 10
-   },
-   {
-    "id": "d20-4",
-    "soru": "Tycho Brahe 1572'deki yeni yıldızın ve 1577 kuyruklu yıldızının Ay'ın ötesinde olduğunu hangi gözlemle gösterdi?",
-    "secenekler": [
-     "Teleskopla bakıp yüzeylerini inceleyerek",
-     "Renklerini Ay'ın rengiyle karşılaştırarak",
-     "Ölçülebilir bir ıraklık (paralaks) bulamayarak",
-     "Parlaklıklarının her gece arttığını görerek"
-    ],
-    "dogru": 2,
-    "aciklama": "Derse göre Ay gibi yakın bir cisim yıldızlara göre kayardı; Tycho iki cisimde de ölçülebilir ıraklık bulamadı, bu yüzden Ay'ın ötesinde olmaları gerekiyordu. Tycho teleskop kullanmadı; çıplak göz aletleriyle yaklaşık 1 yay dakikası kesinliğe ulaştı.",
-    "ders": "d20",
-    "bolum": 12
-   },
-   {
     "id": "d21-1",
     "soru": "Büyük Kepçe neden IAU'nun 88 takımyıldızı arasında yer almaz?",
     "secenekler": [
@@ -281,62 +225,6 @@
     "aciklama": "Derse göre Merak–Dubhe arası yaklaşık 5,4°, Dubhe–Kutup Yıldızı arası 28,7°'dir; oran yaklaşık 5,3. Yumruk yaklaşık 10° olduğundan bu yaklaşık üç yumruk eder. Sapın kavisi Arcturus'a, Merak'tan güneye uzanan çizgi Aslan'a, Kuşak ise kuzeyde Aldebaran'a götürür.",
     "ders": "d21",
     "bolum": 8
-   },
-   {
-    "id": "d22-1",
-    "soru": "İstanbul'da (yaklaşık 28,96° D) Türkiye Saati UTC+3 iken ortalama Güneş meridyenden yaklaşık saat kaçta geçer ve neden?",
-    "secenekler": [
-     "Tam 12:00'de, çünkü saat dilimleri her kentin öğlesine göre ayarlanır",
-     "Yaklaşık 13:04'te, çünkü İstanbul'un yerel ortalama zamanı UTC'den yalnızca yaklaşık 1 sa 56 dk ileride, saat ise 3 saat ileride",
-     "Yaklaşık 11:04'te, çünkü İstanbul 45° meridyeninin doğusundadır",
-     "Yaklaşık 14:00'te, çünkü yaz saati her yıl Mart'ta bir saat ileri alınır"
-    ],
-    "dogru": 1,
-    "aciklama": "Derse göre her derece boylam 4 dakikadır: 28,955° × 4 dk ≈ 1 sa 55 dk 49 sn. Saat UTC'den 3 saat ileri olduğundan ortalama öğle 12:00 + 3 sa − 1 sa 55,8 dk ≈ 13:04 olur. timeanddate'in Haziran 2025 tablosunda zaman denkleminin sıfır olduğu 13 Haziran'da Güneş'in geçişi 13:04.",
-    "ders": "d22",
-    "bolum": 3
-   },
-   {
-    "id": "d22-2",
-    "soru": "Güneş saati 3 Kasım civarında kol saatinden yaklaşık 16,5 dakika ileridedir. Bu farkın (zaman denkleminin) iki nedeni hangisidir?",
-    "secenekler": [
-     "Atmosferik kırılma ve ışık kirliliği",
-     "Dünya'nın yörüngesinin basıklığı ve ekseninin tutuluma eğikliği",
-     "Artık saniyeler ve saat dilimleri",
-     "Ay'ın kütleçekimi ve presesyon"
-    ],
-    "dogru": 1,
-    "aciklama": "Derse göre zaman denklemi iki dalganın toplamıdır: yörünge basıklığından gelen yaklaşık 7,66 dakikalık yıllık bileşen ve eksen eğikliğinden gelen yaklaşık 9,87 dakikalık yarım yıllık bileşen. İkisi birlikte Kasım başında yaklaşık +16 dk 33 sn, Şubat ortasında yaklaşık −14 dk 6 sn verir.",
-    "ders": "d22",
-    "bolum": 1
-   },
-   {
-    "id": "d22-3",
-    "soru": "Ağırlıklar ve Ölçüler Genel Konferansı'nın (CGPM) 15 Ekim 2026'daki 5 numaralı kararı artık saniye için ne öngörüyor?",
-    "secenekler": [
-     "Her yıl sonunda bir artık saniye eklenmesini",
-     "Artık saniyelerin 2100'e kadar sürmesini",
-     "20 Mayıs 2027'den itibaren UTC'nin kesintisiz olmasını ve UT1 ile farkının en çok 3.600 saniyeye kadar büyüyebilmesini",
-     "UTC'nin kaldırılıp yerine UT1'in yasal saat yapılmasını"
-    ],
-    "dogru": 2,
-    "aciklama": "Derse göre 28. CGPM, 5 numaralı kararla sürekli UTC'nin 20 Mayıs 2027'de yürürlüğe gireceğine ve UT1 ile UTC farkının en çok 3.600 saniye (1 saat) olacağına karar verdi. 1972–2016 arasında 27 artık saniye eklenmişti; sonuncusu 31 Aralık 2016'daydı.",
-    "ders": "d22",
-    "bolum": 6
-   },
-   {
-    "id": "d22-4",
-    "soru": "698 sayılı yasa (kabul 26 Aralık 1925) Türkiye'de takvimde neyi değiştirdi?",
-    "secenekler": [
-     "Hicri takvimi tamamen yasakladı",
-     "Ay ve günleri ilk kez Gregoryen takvime uydurdu; 13 gün atlandı",
-     "Yıl sayımını değiştirdi: 31 Kânunuevvel 1341'in ertesi günü 1 Ocak 1926 oldu; Hicri takvim özel durumlarda kaldı",
-     "Türkiye'yi UTC+3 saat dilimine geçirdi"
-    ],
-    "dogru": 2,
-    "aciklama": "Derse göre ay-gün eşitlemesi 1917'de 13 gün atlanarak yapılmıştı. 698 sayılı yasa ise uluslararası takvim mebdeini kabul etti: 1341 yılı Kânunuevvel'inin 31. gününü izleyen gün 1 Ocak 1926'dır. Üçüncü madde Hicri kameri takvimin özel durumlarda kullanılmasını sürdürdü ve kameri ay başlarını rasathaneye bıraktı.",
-    "ders": "d22",
-    "bolum": 11
    },
    {
     "id": "d24-1",
@@ -619,6 +507,62 @@
     "aciklama": "Derse göre Kessler ve Cour-Palais 1978'de uydu sayısı arttıkça çarpışma olasılığının arttığını ve çarpışma parçalarının yeni çarpışmalar doğurarak bir çöp kuşağı oluşturabileceğini hesapladı. ESA'nın 2025 raporuna göre hiç yeni fırlatma olmasa bile çöp sayısı artmayı sürdürürdü. 10 Şubat 2009'daki Iridium 33 – Kosmos 2251 çarpışması gerçek bir örnektir.",
     "ders": "d23",
     "bolum": 13
+   },
+   {
+    "id": "d22-1",
+    "soru": "İstanbul'da (yaklaşık 28,96° D) Türkiye Saati UTC+3 iken ortalama Güneş meridyenden yaklaşık saat kaçta geçer ve neden?",
+    "secenekler": [
+     "Tam 12:00'de, çünkü saat dilimleri her kentin öğlesine göre ayarlanır",
+     "Yaklaşık 13:04'te, çünkü İstanbul'un yerel ortalama zamanı UTC'den yalnızca yaklaşık 1 sa 56 dk ileride, saat ise 3 saat ileride",
+     "Yaklaşık 11:04'te, çünkü İstanbul 45° meridyeninin doğusundadır",
+     "Yaklaşık 14:00'te, çünkü yaz saati her yıl Mart'ta bir saat ileri alınır"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre her derece boylam 4 dakikadır: 28,955° × 4 dk ≈ 1 sa 55 dk 49 sn. Saat UTC'den 3 saat ileri olduğundan ortalama öğle 12:00 + 3 sa − 1 sa 55,8 dk ≈ 13:04 olur. timeanddate'in Haziran 2025 tablosunda zaman denkleminin sıfır olduğu 13 Haziran'da Güneş'in geçişi 13:04.",
+    "ders": "d22",
+    "bolum": 3
+   },
+   {
+    "id": "d22-2",
+    "soru": "Güneş saati 3 Kasım civarında kol saatinden yaklaşık 16,5 dakika ileridedir. Bu farkın (zaman denkleminin) iki nedeni hangisidir?",
+    "secenekler": [
+     "Atmosferik kırılma ve ışık kirliliği",
+     "Dünya'nın yörüngesinin basıklığı ve ekseninin tutuluma eğikliği",
+     "Artık saniyeler ve saat dilimleri",
+     "Ay'ın kütleçekimi ve presesyon"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre zaman denklemi iki dalganın toplamıdır: yörünge basıklığından gelen yaklaşık 7,66 dakikalık yıllık bileşen ve eksen eğikliğinden gelen yaklaşık 9,87 dakikalık yarım yıllık bileşen. İkisi birlikte Kasım başında yaklaşık +16 dk 33 sn, Şubat ortasında yaklaşık −14 dk 6 sn verir.",
+    "ders": "d22",
+    "bolum": 1
+   },
+   {
+    "id": "d22-3",
+    "soru": "Ağırlıklar ve Ölçüler Genel Konferansı'nın (CGPM) 15 Ekim 2026'daki 5 numaralı kararı artık saniye için ne öngörüyor?",
+    "secenekler": [
+     "Her yıl sonunda bir artık saniye eklenmesini",
+     "Artık saniyelerin 2100'e kadar sürmesini",
+     "20 Mayıs 2027'den itibaren UTC'nin kesintisiz olmasını ve UT1 ile farkının en çok 3.600 saniyeye kadar büyüyebilmesini",
+     "UTC'nin kaldırılıp yerine UT1'in yasal saat yapılmasını"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre 28. CGPM, 5 numaralı kararla sürekli UTC'nin 20 Mayıs 2027'de yürürlüğe gireceğine ve UT1 ile UTC farkının en çok 3.600 saniye (1 saat) olacağına karar verdi. 1972–2016 arasında 27 artık saniye eklenmişti; sonuncusu 31 Aralık 2016'daydı.",
+    "ders": "d22",
+    "bolum": 6
+   },
+   {
+    "id": "d22-4",
+    "soru": "698 sayılı yasa (kabul 26 Aralık 1925) Türkiye'de takvimde neyi değiştirdi?",
+    "secenekler": [
+     "Hicri takvimi tamamen yasakladı",
+     "Ay ve günleri ilk kez Gregoryen takvime uydurdu; 13 gün atlandı",
+     "Yıl sayımını değiştirdi: 31 Kânunuevvel 1341'in ertesi günü 1 Ocak 1926 oldu; Hicri takvim özel durumlarda kaldı",
+     "Türkiye'yi UTC+3 saat dilimine geçirdi"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre ay-gün eşitlemesi 1917'de 13 gün atlanarak yapılmıştı. 698 sayılı yasa ise uluslararası takvim mebdeini kabul etti: 1341 yılı Kânunuevvel'inin 31. gününü izleyen gün 1 Ocak 1926'dır. Üçüncü madde Hicri kameri takvimin özel durumlarda kullanılmasını sürdürdü ve kameri ay başlarını rasathaneye bıraktı.",
+    "ders": "d22",
+    "bolum": 11
    }
   ],
   "yildizlar": [
@@ -1129,6 +1073,62 @@
     "aciklama": "Derse göre çarpışan iki kümede sıcak gaz X-ışınlarıyla görüldü ve sürüklenmeyle yavaşladı; toplam kütlenin yeri ise kütleçekimsel mercek etkisinden ölçüldü. Karanlık madde yavaşlamadığı için kütlenin çoğu gazdan ayrı duruyor.",
     "ders": "d17",
     "bolum": 7
+   },
+   {
+    "id": "d20-1",
+    "soru": "Eratosthenes, İskenderiye'deki gölge açısını çemberin ellide biri (7,2°) buldu ve iki kent arasını yaklaşık 5000 stadion aldı. Sonucunun bugünkü kilometre karşılığı neden kesin söylenemez?",
+    "secenekler": [
+     "Çünkü stadionun bugünkü uzunluğu kesin bilinmiyor ve tahminler yaklaşık 155 ile 185 metre arasında değişiyor",
+     "Çünkü Eratosthenes açıyı ölçmeyi unuttu ve sonucu tahmin etti",
+     "Çünkü Syene'de yaz gündönümünde de uzun bir gölge oluşuyordu",
+     "Çünkü Eratosthenes Dünya'nın düz olduğunu varsayıyordu"
+    ],
+    "dogru": 0,
+    "aciklama": "Derse göre yöntem doğrudur: 50 × 5000 = 250.000 stadion. Ama stadionun metre karşılığı tartışmalıdır; Wikipedia 155–160 m ile hatayı −%2,4 ile +%0,8, Paris Gözlemevi sözlüğü 155–185 m ile −%3 ile +%15 arasında verir.",
+    "ders": "d20",
+    "bolum": 3
+   },
+   {
+    "id": "d20-2",
+    "soru": "Hipparkhos, Spica'nın sonbahar noktasına uzaklığını Timokharis'in 8° değerine karşı 6° buldu. Bu fark ona neyi gösterdi?",
+    "secenekler": [
+     "Spica'nın Dünya'ya hızla yaklaştığını",
+     "Ekinoks noktalarının yıldızlara göre yavaşça kaydığını, yani presesyonu",
+     "Timokharis'in aletinin bozuk olduğunu",
+     "Dünya'nın Güneş'in çevresinde dolandığını"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre yıldızlar birbirine göre kaymadığı için değişen, ölçümün başlangıç noktası olan ekinoks noktalarıydı. Hipparkhos bu kaymayı yılda en az yüzde bir derece olarak verdi; gerçek değer 72 yılda bir derecedir. Bu olaya presesyon denir.",
+    "ders": "d20",
+    "bolum": 5
+   },
+   {
+    "id": "d20-3",
+    "soru": "Takiyüddin'in İstanbul Rasathanesi'nde kullandığı gözlem saatinin saniyeyi göstermesi neden önemliydi?",
+    "secenekler": [
+     "Saray törenlerinin başlama anını duyurmak için",
+     "Kuyruklu yıldızların hızını ölçmek için",
+     "Sağ açıklık yıldızın meridyenden geçiş zamanıyla ölçüldüğü için; gök küresi saniyede yaklaşık 15 yay saniyesi döner",
+     "Ay tutulmalarının süresini kısaltmak için"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre Takiyüddin üç kadranlı (saat, dakika, saniye) saatini yıldızların sağ açıklığını ölçmek için kullandı. Gök küresi yaklaşık 86.164 saniyede 360° döndüğünden 1 saniye zaman yaklaşık 15″ yaya karşılık gelir; 1 yay dakikası kesinlik için saatin 4 saniyeden iyi olması gerekir.",
+    "ders": "d20",
+    "bolum": 10
+   },
+   {
+    "id": "d20-4",
+    "soru": "Tycho Brahe 1572'deki yeni yıldızın ve 1577 kuyruklu yıldızının Ay'ın ötesinde olduğunu hangi gözlemle gösterdi?",
+    "secenekler": [
+     "Teleskopla bakıp yüzeylerini inceleyerek",
+     "Renklerini Ay'ın rengiyle karşılaştırarak",
+     "Ölçülebilir bir ıraklık (paralaks) bulamayarak",
+     "Parlaklıklarının her gece arttığını görerek"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre Ay gibi yakın bir cisim yıldızlara göre kayardı; Tycho iki cisimde de ölçülebilir ıraklık bulamadı, bu yüzden Ay'ın ötesinde olmaları gerekiyordu. Tycho teleskop kullanmadı; çıplak göz aletleriyle yaklaşık 1 yay dakikası kesinliğe ulaştı.",
+    "ders": "d20",
+    "bolum": 12
    }
   ]
  }
