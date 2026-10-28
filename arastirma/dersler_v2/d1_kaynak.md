@@ -165,7 +165,7 @@ Yeni bölümler: "Yıldız zamanı ve saat açısı: gökyüzünün kendi saati"
 |---|---|---|
 | 1° = 60′, 1′ = 60″ (1° = 3600″) | https://en.wikipedia.org/wiki/Right_ascension | ders formülündeki "1 dk = 15′; 1 sn = 15″" dönüşümüyle tutarlı tanım; 3600 = 60 × 60 hesap |
 | Dolunayın ortalama görünür çapı 1896″ ≈ 31,6′ | https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html | WebFetch: "Apparent diameter" 1896 (arcseconds), "Mean values at opposition from Earth"; 1896 / 60 = 31,6 hesap |
-| Güneş'in görünür çapı ≈ 30′ | https://en.wikipedia.org/wiki/Atmospheric_refraction | WebFetch: setting sun "flattened by about 5′ (about 1/6 of its apparent diameter)" → 6 × 5′ = 30′ |
+| Güneş'in görünür çapı ortalama uzaklıkta ≈ 32′ (doğrulamada düzeltildi; eski satır 6 × 5′ = 30′ kaba çıkarımıydı) | https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html ; https://en.wikipedia.org/wiki/Angular_diameter | NASA: "At 1 A.U.(seconds of arc) 1919" (en çok 1952, en az 1887) → 1919/60 = 32,0′ ; Wikipedia tablo: Sun "32′32″ – 31′27″" |
 | Meridyen: gök kutuplarından ve başucundan geçen büyük çember; ufkun K ve G noktalarını içerir | https://wikiwand.com/en/articles/Meridian_(astronomy) | WebFetch: "the meridian is the great circle passing through the celestial poles" (devamı zenith ve nadir) ; "Consequently, it contains also the north and south points on the horizon" |
 | Doruğa ulaşma: cisim üst meridyene değer, en yüksek noktasına varır; her gün meridyeni geçer | https://wikiwand.com/en/articles/Meridian_(astronomy) | WebFetch: "At culmination, the object contacts the upper meridian and reaches its highest point in the sky." ; "On any given (sidereal) day/night, a celestial object will appear to drift across, or transit, the observer's upper meridian" |
 
@@ -238,7 +238,7 @@ Yeni bölümler: "Yıldız zamanı ve saat açısı: gökyüzünün kendi saati"
 | Bradley ve Molyneux; alet Kasım 1725, gözlem Aralık'tan; γ Draconis = Eltanin | https://en.wikipedia.org/wiki/Stellar_aberration | WebFetch: "The instrument was set up in November 1725, and observations on Eltanin were made starting in December." ; Bradley and Samuel Molyneux "decided to reinvestigate the motion of γ Draconis" ; Gamma Draconis "also known as Eltanin". Türkçe takımyıldız adı Ejderha: veri/takimyildiz.json (Dra) |
 | Amaç ıraklıktı | https://en.wikipedia.org/wiki/Stellar_aberration | WebFetch: aberration "supported the Copernican heliocentric model, which was the original motivation for the search for stellar parallax" |
 | Eylül→Mart ≈ 40″ güneye, Mart→Eylül geri; ne ıraklık ne ölçüm hatası | https://en.wikipedia.org/wiki/Stellar_aberration | WebFetch: "The star was observed to move 40″ southwards between September and March, and then reversed its course from March to September." ; "the apparent motion was evidently caused neither by parallax nor observational errors" |
-| 1727 açıklama; Ocak 1729 Royal Society | https://en.wikipedia.org/wiki/Stellar_aberration | WebFetch: "In 1727, James Bradley provided a classical explanation for it." ; "presented to the Royal Society in mid-January the following year" (1729) |
+| Açıklama 1728; Ocak 1729 Royal Society (doğrulamada 1727 → 1728 düzeltildi) | https://en.wikipedia.org/wiki/Stellar_aberration ; https://mathshistory.st-andrews.ac.uk/DNB/Bradley.pdf | Wikipedia tarih bölümü: "Bradley eventually developed his explanation of aberration in about September 1728 and this theory was presented to the Royal Society in mid-January the following year." (aynı sayfanın girişinde "In 1727" geçiyor: kaynak içi çelişki) ; DNB: Wanstead gözlemleri Ağustos 1727'de başladı, açıklama Thames'te teknedeyken geldi, mektup "was read to the Royal Society in January 1729" → açıklama 1727 olamaz |
 | Yağmur ve şemsiye benzetmesi | https://en.wikipedia.org/wiki/Stellar_aberration | WebFetch: kaynak aynı benzetmeyi kullanıyor (yürüyen kişi şemsiyesini öne eğer, hızlandıkça daha çok) ; metin kendi sözlerimizle |
 | Sapma sabiti 20,49552″; Bradley 20,2″ | https://en.wikipedia.org/wiki/Stellar_aberration | WebFetch: "Its accepted value is 20.49552 arcseconds (sec) or 0.000099365 radians (rad) (at J2000)" ; "Bradley estimated it at 20.2"" |
 | Yıl içindeki değişim Dünya–yıldız göreli hareketini gösterir, Güneş merkezli modeli destekler | https://en.wikipedia.org/wiki/Stellar_aberration | WebFetch: "The change of aberration in the course of the year demonstrates the relative motion of the Earth and the stars." |
@@ -278,7 +278,7 @@ Yeni bölümler: "Yıldız zamanı ve saat açısı: gökyüzünün kendi saati"
 | Atmosfer kaybı ve hava kütlesi düzeltilmeli | https://en.wikipedia.org/wiki/Apparent_magnitude | WebFetch: "the airmasses of the target and calibration stars must be taken into account" |
 | Logaritmik ölçek gözün logaritmik tepkisinden değil; bugün üs yasası düşünülüyor | https://en.wikipedia.org/wiki/Apparent_magnitude | WebFetch: "but it is now believed that the response is a power law." |
 | 35 mm → +11,3; 508 mm → +16,4 (yüksek büyütme, görsel) | https://en.wikipedia.org/wiki/Apparent_magnitude | WebFetch: limiting magnitudes for visual observation at high magnification: 35 mm 11.3, 508 mm 16.4 |
-| +16,4 ile +6,5 arası ≈ 10 kadir ≈ 10.000 kat | hesap | 16,4 − 6,5 = 9,9 ; 10^(0,4 × 9,9) = 8.318 (≈ 10.000 yuvarlak, "yaklaşık" yazıldı) |
+| +16,4 ile +6,5 arası ≈ 10 kadir ≈ 10.000 kat | hesap | 16,4 − 6,5 = 9,9 ; 10^(0,4 × 9,9) = 9.120 (doğrulamada düzeltildi: önceki satırda 8.318 yazıyordu; ≈ 10.000 yuvarlaması kabul edilebilir) |
 
 ### Yeni bölüm – Atmosferin oyunları
 
@@ -303,3 +303,20 @@ Yeni bölümler: "Yıldız zamanı ve saat açısı: gökyüzünün kendi saati"
 - Yazılmayanlar: Aralık gündönümünde İstanbul gün doğumu azimutu ve gündüz süresi (timeanddate sayfası yalnız Haziran verisi veriyor); Güneyhaçı'nın İstanbul'dan görünmezliği (kaynak sayfada açıkça yok); İstanbul'da bir Foucault sarkacı olup olmadığı (arama sonuç vermedi); Türkiye'ye özgü ışık kirliliği oranı (Falchi atlası haberlerinde Türkiye geçmiyor); Merkür'ün en parlak değeri (−2,48, üst kavuşumda; o anda gözlenemediği için yanıltıcı olur); yıldız izi fotoğrafı gibi gözlem önerileri (d24'e bırakıldı).
 - Kanopus'un dik açıklığı sayı olarak yazılmadı; yalnız EarthSky'ın 37° enlem sınırı kullanıldı.
 - Ekinoks örneğindeki 8,8 dakika kaba hesaptır (kırılmanın ufuk yakınında değiştiği yok sayıldı); kaynağın "eight or so" değeriyle uyumlu.
+
+## Bağımsız doğrulama (v3, 28 Ekim 2026)
+
+Yeni/değişen metin veri/dersler.json'daki yayındaki sürümle karşılaştırılarak çıkarıldı. Yeniden açılan sayfalar (WebFetch): Stellar aberration, Foucault pendulum, Sirius, Atmospheric refraction, EarthSky ekinoks, Apparent magnitude, Axial precession, Air mass, EarthSky Kanopus, EarthSky mevsimler, Angular diameter, NASA Moon/Sun/Earth fact sheet, KStars Hour Angle, Discover %7, Insolation (UNT arşivi), St Andrews DNB Bradley. Bütün örnekler python3 ile yeniden hesaplandı. WebSearch: 1.
+
+| Ne yanlıştı | Ne yapıldı | Kaynak |
+|---|---|---|
+| "Güneş'in görünür çapı da yaklaşık 30 yay dakikası" (kaba çıkarım; aynı derste ekinoks örneği 16′ yarıçap, yani 32′ kullanıyor) | "NASA'ya göre ... ortalama uzaklıkta yaklaşık 32 yay dakikası" | NASA Sun fact sheet "At 1 A.U. 1919" ″ |
+| "Bradley 1727'de açıklamayı buldu"; akılda notu ve anahtar sayı "(1727)" | 1728 yapıldı (üç yerde) | Wikipedia Stellar aberration tarih bölümü "about September 1728" ; DNB (Wanstead gözlemi Ağustos 1727'de başladı) |
+| "ekinoks günü gündüz geceden yaklaşık 8 dakika uzun": kaynak 8 dakikayı 12 saate EK gündüz olarak veriyor; gündüz 12 sa + 8 dk ise gece 12 sa − 8 dk, fark ≈ 16 dk | "gündüz 12 saatten yaklaşık 8 dakika uzun, gece de o kadar kısa" | EarthSky: "an additional eight or so minutes of daylight on the day of the equinox" |
+| kaynak satırı hesabı 10^(0,4 × 9,9) = 8.318 | 9.120 (metin değişmedi) | python3 |
+
+Yeniden açılıp doğru bulunanlar: Sirius RA 6 sa 45 dk 08,9 sn, Dec −16° 42′ 58″, St. Petersburg 13°, 73° K, Kahire 19 Temmuz, Kış Üçgeni; presesyon 50,3″/yıl, 71,6 yıl, Hipparkos MÖ 2. yy; Foucault Şubat 1851, 28 kg, 67 m, Paris 11,3°/sa, sinüs; Bradley Kasım 1725 / Aralık, 40″, Ocak 1729, 20,49552″, 20,2″; kırılma 34′, 35,4′ (10 °C, 1013,25 hPa), 45°'de < 1′, 5′ basıklık, %1/0,9 kPa, %1/3 °C; hava kütlesi 1 / ≈2 / ≈38; ISS −5,90, Mars −2,94, Satürn −0,55, Arcturus −0,04 (4.), Uranüs +5,38, 35 mm 11,3, 508 mm 16,4, üs yasası; Kanopus 37° K; mevsimler 88,99/92,76/93,65/89,84; %7; 1896″; KStars HA = LST − RA; Insolation sinüs ve 30° → iki kat alan.
+
+Python3 ile yeniden hesaplananlar (doğru): Sirius doruğu 32,3°; hava kütlesi 1,87; Foucault İstanbul 236,2°/yıldız günü, 9,87°/sa, 36,5 sa; sapma 20,49″; 1896/20,5 = 92,5; ekinoks 11,32°/sa, 3,00 dk, 1,41 dk, toplam 8,83 dk; 2000→2026 presesyon 21,8′; yıldız saati 59 dk 50,2 sn; İstanbul boylamı 1 sa 55,8 dk; yaz/kış öğle oranı 2,21; (152,100/147,095)² = 1,069.
+
+Askıda: Kahire 19 Temmuz için "(Julian)" nitelemesi WebFetch özetinde görünmedi; tarih ve Nil cümlesi doğrulandı, "Jülyen takvimiyle" ifadesi yazarın önceki alıntısına dayanıyor.

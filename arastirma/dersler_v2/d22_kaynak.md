@@ -14,7 +14,7 @@ Kısaltmalar: EOT = https://en.wikipedia.org/wiki/Equation_of_time ; AV8N = http
 | [Ö] Yıldız günü ≈ 23 sa 56 dk 4 sn; Güneş günü 24 sa | EARTH | "Sidereal rotation period 23.9345 hours" ; "Length of day 24.0000 hours" |
 | [B] Zaman denklemi = görünür güneş zamanı − ortalama güneş zamanı (güneş saati görünür zamanı gösterir) | EOT | USNO: "the Equation of Time is the difference apparent solar time minus mean solar time" ; AV8N: "the sundial is ahead of local mean time" |
 | [B] Yalnız eğiklik etkisinde gündönümü yakınında günler 24 sa + 20,3 sn, ekinoks yakınında 24 sa − 20,3 sn | EOT | WebFetch aktarımı: "solar days near the solstices would run up to 24 hours and 20.3 seconds, and near the equinoxes up to 20.3 seconds short" |
-| [B] En uzun öğleden öğleye süre günberide (Ocak'ın ilk haftası), en kısa günötede (Temmuz'un ilk haftası) | AV8N | "The longest Etmal of the year occurs at perihelion, which is in the first week of January each year." ; "The shortest Etmal occurs at aphelion, which is in the first week of July." |
+| [B] DÜZELTİLDİ (doğrulama turu): basıklık etkisi TEK BAŞINA en uzun günleri Ocak başına, en kısaları Temmuz başına koyar; toplam öğleden öğleye süre ise 22 Aralık'ta 24 sa + 29,9 sn, 16 Eylül'de 24 sa − 21,3 sn | https://en.wikipedia.org/wiki/Solar_time | tablo: "September 16 \|\| 24 hours − 21.3 seconds" ; "December 22 \|\| 24 hours + 29.9 seconds" ; "can be 21 seconds less or 29 seconds more than 24 hours". AV8N'nin "longest Etmal ... at perihelion" cümlesi toplam için yanlış (gok.js ile de kontrol: 2026'da en uzun 23 Ara +29,8 sn, en kısa 17 Eyl −21,4 sn; 6 Tem +10,2 sn, yani Temmuz başında gün 24 saatten UZUN) |
 | [H] Örnek: 30 gün × 20 sn = 10 dk (varsayımsal) | — | hesap |
 
 ## Bölüm 1 — Zaman denklemi
@@ -43,7 +43,7 @@ Kısaltmalar: EOT = https://en.wikipedia.org/wiki/Equation_of_time ; AV8N = http
 | [B] Çizimde yatay eksen ~10 kat büyütülmüş | AV8N | horizontal scale magnified about 10× |
 | [Ö] İstanbul öğle Güneşi 25,6° ve 72,4° | d1 dersi | d1_kaynak.md örnek hesabı (φ = 41,01°, ε = 23,44°) |
 | [H] 1 dk = 0,25°; 16,55 dk ≈ 4,1°, 14,1 dk ≈ 3,5°, toplam ≈ 7,6°; boy ≈ 47° | — | hesap |
-| [H] En erken gün batımı gündönümünden önce, en geç doğuş sonra; öğle günde ≈ yarım dakika gecikir | — | akıl yürütme: eğiklik etkisi 20,3 sn/gün (EOT) + basıklık 2π × 7,66 dk ÷ 365,25 ≈ 7,9 sn/gün (EOT genliğinden) ≈ 28 sn/gün. İstanbul'a özgü tarihler bulunamadı ("bulamadım"), derste verilmedi |
+| [H]/[HESAP] En erken gün batımı gündönümünden önce, en geç doğuş sonra; öğle günde ≈ yarım dakika gecikir; İstanbul'da en erken batış ≈ 8 Aralık, en geç doğuş ≈ 4 Ocak (≈ iki hafta) | gok.js / AE SearchRiseSet (41,0136° K, 28,955° D) | doğrulama turu hesabı: "en erken batış 2026-12-08 17:35:39, en geç doğuş 2027-01-04 08:29:16" (TRT). AV8N "a few days before/after" diyor; İstanbul enleminde fark ≈ 13–14 gün olduğundan derste "birkaç gün" yerine hesap sonucu yazıldı. Öğle gecikmesi: Wikipedia Solar time, 22 Ara +29,9 sn |
 | [B] Türkiye 2016'dan beri saat değiştirmiyor | BKK | Madde 1, yaz saati "yıl boyu sürdürülmesi" |
 
 ## Bölüm 3 — Yerel saat
@@ -117,7 +117,7 @@ Kısaltmalar: EOT = https://en.wikipedia.org/wiki/Equation_of_time ; AV8N = http
 | [B] 2026 Quadrantid doruğu 3 Ocak ~21:28 UT | https://www.imo.net/resources/calendar/ | "Predictions for 2026 show a peak near 21:28 UT on January 3rd." |
 | [H] 21:28 + 3 sa = 4 Ocak 00:28 TRT | — | hesap |
 | [B] 2016 öncesi kış +2, yaz +3 | https://www.timeanddate.com/news/time/turkey-permanent-trt.html | EET/EEST (yukarıda) |
-| [H] UT ile UTC farkı 0,9 sn altında | R4 | 0,9 sn kuralından |
+| [H] UT ile UTC farkı Mayıs 2027'ye kadar 0,9 sn altında; sonra birikir, 1972–2016 ortalamasıyla ≈ 0,6 sn/yıl | R4 ; R5 | 0,9 sn kuralı (R4) ; sürekli UTC 20 Mayıs 2027 (R5) ; 27 ÷ 45 = 0,6 sn/yıl (Bölüm 6 hesabı). Önceki "ancak saniyelerle büyüyecek" ifadesi kaynaksız öngörüydü, geçmiş ortalamaya bağlandı |
 | [B] İngiltere 1752'ye kadar Jülyen; Osmanlı mali kayıtları Rumi | TON ; RUMI | aşağıdaki bölümler |
 
 ## Bölüm 8 — Tropik yıl ve yıldızıl yıl
@@ -162,7 +162,7 @@ Kısaltmalar: EOT = https://en.wikipedia.org/wiki/Equation_of_time ; AV8N = http
 |---|---|---|
 | [B] Mali takvim 1677 fermanı (4 Safer 1088 = 8 Nisan 1677), yılbaşı 1 Mart | TDVT | "4 Safer 1088 (8 April 1677)" firmanı, 1 March New Year (WebFetch aktarımı) |
 | [B] Rumî-mali takvim 1740'tan itibaren | BULUT | "Rumî-mali adıyla bir takvim kullanılmaya başlandı (1740)" |
-| [B] Rumi takvim 13 Mart 1840'ta resmî sivil takvim; Jülyen ay-gün, Mart yılbaşı, Hicret'ten yıl sayımı, fark 584 | RUMI | "adopted on March 13, 1840 AD (March 1, 1256 AH)" ; gap "stayed at 584 years" |
+| [B] Rumi takvim 13 Mart 1840'ta resmî sivil takvim; Jülyen ay-gün, Mart yılbaşı; yıl numarası Hicri sayımdan devralındı (1840 = 1256), sonra güneş yılı; fark 584 | RUMI ; TDVT | RUMI: "adopted on March 13, 1840 AD (March 1, 1256 AH)" ; "in 1256 AH the difference between the Hijri and the Gregorian calendars amounted to 584 years. With the change from lunar calendar to solar calendar, the difference ... remained a constant 584 years." ; TDVT: "Sıvış olayının sebebi malî yıl sayısının hicrî ile bir tutulmasıdır". Doğrulama turu: "yıl sayısı 622'den başlıyordu" ifadesi yanıltıcıydı (Rumi 1 = MS 585), düzeltildi |
 | [B] 1917: 15 Şubat 1332'nin ertesi günü 1 Mart 1333; 13 gün | RUMI ; BULUT | RUMI: day after February 15, 1332 became March 1, 1333 ; BULUT: 16 Şubat 1332'de "13 gün eklenerek '1 Mart' denilmesi suretiyle" |
 | [B] 1333 on ay (Mart–Aralık); 1918'den mali yıl 1 Ocak | RUMI | "made into a year with only ten months, running from March 1 to December 31" ; from 1918 fiscal year began 1 January |
 | [B] Türkiye 1912–1917 arasında geçen ülkeler arasında (Britannica) | BRIT | Turkey listed among countries that adopted it "between 1912 and 1917" |
@@ -196,7 +196,7 @@ Kısaltmalar: EOT = https://en.wikipedia.org/wiki/Equation_of_time ; AV8N = http
 | [B] Meton 19 yıllık döngüsü: dolunay ayın aynı gününe döner | BRIT | "the Metonic 19-year cycle, bringing the full moon back to the same day of the month" |
 | [B] Paskalya hesabında 19 yıllık döngü; reformda revizyon gerekti | GREG | "product of the 19-year Metonic cycle" ; "The 19-year cycle used for the lunar calendar required revision." |
 | [B] Paskalya tabloları (altın sayı, epakt) | BRIT | golden numbers, epacts |
-| [H] 13 × 29,53 ≈ 383,9; 19 × 365,242 = 6939,6; 235 × 29,5306 = 6939,7; 235 − 228 = 7; ≈ 200–250 yılda bir gün | — | hesap |
+| [H] 13 × 29,5306 ≈ 383,9 (tropik yıldan ≈ 18,7 → "yaklaşık 19" gün uzun); 19 × 365,242 = 6939,6; 235 × 29,5306 = 6939,7; 235 − 228 = 7; kesin değerlerle 235 × 29,530588 − 19 × 365,242199 = 0,086 gün → 19 ÷ 0,086 ≈ 220 yıl | — | hesap (doğrulama turu: "18 gün" → "yaklaşık 19 gün"; "19 ÷ 0,1" = 190 veriyordu, "200–250" ile çelişiyordu) |
 
 ## Bölüm 14 — Haftanın günleri
 
@@ -209,7 +209,7 @@ Kısaltmalar: EOT = https://en.wikipedia.org/wiki/Equation_of_time ; AV8N = http
 | [B] Roma 1.–3. yüzyıl arasında 8 günlükten 7 günlüğe | NAMES | "Between the first and third centuries CE" |
 | [B] Konstantin 321 resmîleştirdi, Güneş günü tatil | NAMES | "official in AD 321" ; made dies Solis a legal holiday |
 | [B] Plutarkhos ~100, kayıp yazı | NAMES | c. 100 CE "Why are the days named after the planets reckoned in a different order" ; treatise lost |
-| [B] Latince adlar; Roman dilleri Pazar dışında korur; Fransızca lundi... vendredi | NAMES | diēs Sōlis ... diēs Sāturnī ; "the Romance languages preserved the Latin names, except for the names of Sunday" |
+| [B] Latince adlar; Roman dilleri Pazar VE Cumartesi dışında korur; Fransızca lundi... vendredi | NAMES | "the Romance languages preserved the Latin names, except for the names of Sunday, which was replaced by [dies] Dominicus (Dominica) ... and of Saturday, which was named for the Jewish Sabbath" (doğrulama turu: önceki alıntı cümlenin ortasında kesilmişti; Cumartesi eklendi) |
 | [B] İngilizce Saturday Satürn, Sunday (Sunnandæg); Cermen tanrıları Tiw, Woden, Thor, Frigg | NAMES | Saturday "named after the Roman god Saturn" ; substituted "the Germanic deities ... (with the exception of Saturday)" |
 | [B] Japonca nichiyōbi ... doyōbi | NAMES | table |
 | [B] Türkçe adlar tabloda: Pazar ... Cumartesi; köken verilmiyor | NAMES | table lists Pazar, Pazartesi, Salı, Çarşamba, Perşembe, Cuma, Cumartesi; etimoloji yok → derste "kaynaklarımızda yok" denildi (bulamadım) |
@@ -231,3 +231,11 @@ Kısaltmalar: EOT = https://en.wikipedia.org/wiki/Equation_of_time ; AV8N = http
 - 1884 Uluslararası Meridyen Konferansı: kaynak okunmadı, derse alınmadı.
 - Türkçe gün adlarının kökeni: okunan kaynaklarda yok.
 - 2017 Danıştay kararı ve sonrası: yalnız haber kaynakları; derse alınmadı.
+
+## Doğrulama turu (bağımsız denetçi, 2026-10-28)
+
+- 28. CGPM Karar 5 BIPM sayfasından (https://www.bipm.org/en/cgpm-2026/resolution-5, curl ile ham metin) kelimesi kelimesine okundu: "decides that continuous UTC will become effective on 20 May 2027, the maximum value for the difference |UT1-UTC| will be 3 600 seconds (1 hour), ensuring the long term continuity for UTC for several centuries" ; "a workshop organized by the Consultative Committee for Time and Frequency (CCTF) and IERS in March 2025 ... reaching a 30 % probability by 2035" ; "industrial users and the synchronization needs of national critical infrastructures, for example transportation, energy distribution, telecommunication, and space projects require UTC to be continuous without any future adjustment" ; "change their reference time scales to, for example, a GNSS time instead of UTC, seriously compromising the concept of international standardization in metrology" ; "inform the CIPM regularly on the evolution of the value of UT1-UTC" ; "the official version of this Resolution is the French text". Bir saate yaklaşınca ne yapılacağına dair hüküm metinde yok (doğrulandı).
+- Toplantı tarihi ve yeri: https://www.bipm.org/en/cgpm-2026 "met from Tuesday 13 to Thursday 15 October 2026 at the Palais des Congrès de Versailles". Kabul günü: CCTF Başkanı açıklaması (PDF) "Versailles, France | 15 October 2026 ... three resolutions related to time metrology were adopted at the CGPM earlier today".
+- 2022 Karar 4 (https://www.bipm.org/en/cgpm-2022/resolution-4) ham metinden: "predicted to approach 0.9 seconds" ; "do not follow any agreed standards" ; "the first negative leap second whose insertion has never been foreseen or tested" ; "will be increased in, or before, 2035".
+- Yeniden okunan diğer kaynaklar: EOT, Solar time, Leap second, Axial precession, Sidereal time, Gregorian calendar, Rumi calendar, Names of the days of the week, Planetary hours, Daylight saving time in Turkey (Wikipedia ham metin); K697, BKK, K698 (TBMM PDF), TDVT, TDVH, TDVTR, BULUT (PDF), TON, BRIT, EARTH, AV8N, BIPM 13. CGPM Karar 1 ve SI saniye sayfası, IMO takvimi, timeanddate (Haziran 2025 tablosu ve TRT haberi). Hepsi alıntılarla uyumlu; sapmalar yukarıdaki DÜZELTİLDİ satırlarında.
+- Ek düzeltmeler: "Asıl adım bu ay atıldı" → "Ekim 2026'da" (zamana bağlı ifade); Bölüm 4 ara özeti: 30° meridyeni kuralı 697 sayılı yasanın 1984'te değişen bugünkü metnindedir ("bugünkü metni" eklendi).

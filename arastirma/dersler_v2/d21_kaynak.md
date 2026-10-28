@@ -49,7 +49,7 @@ Kısaltmalar: WP = https://en.wikipedia.org/wiki/... ; IAUc = https://en.wikiped
 | [B] Köşe koordinatları 1875.0 | IAUc | reference note: boundary data "1875.0 coordinates of the vertices" |
 | [B] Astronomy Engine Constellation işlevi J2000'i B1875'e çevirip tabloya bakar | AE (satır 7926–7954) | "Convert coordinates from J2000 to B1875." ; "the converted B1875 (ra,dec) for that point" |
 | [HESAP] Sirius RA 6,752 sa (J2000) → 6,659 sa (B1875); Polaris Dec 89,26° → 88,64° | AE `Constellation()` | b1875.js çıktısı: "Sirius CMa J2000 6.752h -16.72 B1875 6.659h -16.59" ; "Polaris UMi J2000 2.530h 89.26 B1875 1.214h 88.64" |
-| [H] 125 yılda bir dereceye yakın kayma; sınıra yakın cisimde takımyıldız değişebilir; sınırlar yıldızlara göre sabit | — | 2000 − 1875 = 125; presesyon ≈ 50″/yıl × 125 = 6.250″ ≈ 1,7° (tutulum boyunca; dik açıklıkta daha az) ; sınırlar B1875 ağında sabit tanımlı olduğu için yıldızlara göre sabittir (AE yöntemi) |
+| [H] 125 yılda yaklaşık bir derece kayma (Sirius sağ açıklıkta 0,093 sa ≈ 1,3° gök yayı; Polaris dik açıklıkta 0,62°); sınıra yakın cisimde takımyıldız değişebilir; sınırlar yıldızlara göre sabit | — | 2000 − 1875 = 125; presesyon ≈ 50″/yıl × 125 = 6.250″ ≈ 1,7° (tutulum boyunca; dik açıklıkta daha az) ; sınırlar B1875 ağında sabit tanımlı olduğu için yıldızlara göre sabittir (AE yöntemi) |
 | [B] 36 kuzey, 52 güney | CG | "36 modern constellations lie principally in the northern celestial hemisphere," 52 southern |
 | [B] En büyük Hydra 1.303, en küçük Crux 68 derece kare | IAUc | Hydra 1303 sq. deg. ; Crux 68 sq. deg. |
 | [B] Serpens iki ayrı parça, IAU tek takımyıldız sayar | IAUc | "may be divided into Serpens Cauda and Serpens Caput" ; "these disjoint areas are considered part of the same constellation by the IAU" |
@@ -88,7 +88,7 @@ Kısaltmalar: WP = https://en.wikipedia.org/wiki/... ; IAUc = https://en.wikiped
 | [Ö] Ülker = Pleiades'in Türkçe adı (uygulamada) | https://tr.wikipedia.org/wiki/Orion_Bulutsusu (d11 satırı) ; veri/hedefler.json | d11_kaynak.md: "Türkçe adlar: Ülker ..." ; hedefler.json M45 "ad": "Ülker" |
 | [B] WGSN 2016'da kuruldu; görevi kataloglamak ve standartlaştırmak | SDN | IAU organized the WGSN in 2016 ; "to catalog and standardize proper names for stars" |
 | [B] İlk onaylar 30 Haziran ve 20 Temmuz 2016 | LPN | first bulletin (July 2016): batches approved on 30 June and 20 July 2016 |
-| [V] Uygulamanın listesi 28.10.2026, 652 ad | arastirma/iau_wgsn_yildiz_adlari.json | "indirme": "2026-10-28", "satir": 652 |
+| [V] Uygulamanın listesi 28.10.2026, 652 ad; haritadaki adların ÇOĞU bu katalogdan (veri/yildizlar.json'daki 578 adın 483'ü WGSN adı, kalanı d3-celestial starnames) | arastirma/iau_wgsn_yildiz_adlari.json ; veri/yildizlar.json "kaynak" alanı | "indirme": "2026-10-28", "satir": 652 ; yildizlar.json: "WGSN adı olmayan yıldızlarda d3-celestial starnames.json" (doğrulama turu: "adlar bu katalogdan gelir" → "adların çoğu") |
 | [V] 210 ad 2016, 122 ad 2026 tarihli | aynı | "date" alanı sayımı: 2016: 210, 2026: 122 |
 | [V] 15.10.2026: θ Cet = Tiancang, δ And = Kuda | aynı | {"name": "Tiancang", "bayer": "θ Cet", "date": "2026/10/15"} ; {"name": "Kuda", "bayer": "δ And", "date": "2026/10/15"} |
 | [V] Balina = Cet, Andromeda = And | veri/takimyildiz.json | "Balina", "Andromeda" |
@@ -128,7 +128,7 @@ Kısaltmalar: WP = https://en.wikipedia.org/wiki/... ; IAUc = https://en.wikiped
 | [H] Süreler: Başak 17 Eyl 02 → 31 Eki 14 = 44,5 gün; Akrep 23 Kas 18 → 30 Kas 06 = 6,5 gün; Yılancı 30 Kas 06 → 18 Ara 14 = 18,3 gün; 18,3/6,5 = 2,8 | — | hesap |
 | [B] İlkbahar noktası Koç'tan Balıklar'a geçti; antik çağda burçlar takımyıldızlarla kabaca örtüşüyordu | https://en.wikipedia.org/wiki/Ecliptic | signs roughly matched 12 constellations in ancient times ; First Point of Aries "has since moved into Pisces" |
 | [B] Presesyon ≈ 50″/yıl | https://en.wikipedia.org/wiki/Ecliptic | "by about 50 arc seconds (about 0.014°) per year" |
-| [B] Gerçek geçiş burç tarihlerinden yaklaşık bir ay sonra | ROB | actual Sun passage through constellations "about a month later" |
+| [B] Gerçek geçiş ile burç tarihleri arasında yaklaşık bir aylık fark (yönü uygulamanın hesabından: sonra) | ROB | "there is about a month's difference between the actual passage of the Sun through these constellations and the dates mentioned below" (doğrulama turu: ROB "later" demiyor; ifade düzeltildi) |
 | [B] 2026 burç girişleri: Koç 20 Mart; Akrep 23 Ekim | ROB | Aries 20 March 15h46 ; Scorpio 23 October 11h38 (Belçika yerel saati) |
 | [HESAP] 28 Ekim 2026 akşamı: Ay Boğa, Jüpiter Aslan, Mars Yengeç, Satürn Balina | gok.js `takimyildiz()` | b1875.js çıktısı (2026-10-28T19:00Z): "Moon Tau", "Jupiter Leo", "Mars Cnc", "Saturn Cet" |
 | [Ö] Ay ve gezegenler kuşak içinde, tutulumun biraz kuzeyinde/güneyinde | https://en.wikipedia.org/wiki/Ecliptic | 20° genişlikteki kuşak (yukarıda) |
@@ -197,7 +197,7 @@ Kısaltmalar: WP = https://en.wikipedia.org/wiki/... ; IAUc = https://en.wikiped
 | [HESAP] Capella 15 Oca 22.00 81° | mevsim.js | "Capella 81°/KD" |
 | [HESAP] Castor–Pollux 4,51°; doruk 1–4 Mart 22.00 | aci.js ; yildiz.js | — |
 | [B] Büyük sönüklük: Ekim 2019 başlangıç; Şubat 2020 ortası 0,5 → 1,7, ≈ üç kat; toz; bir çalışma yıldız lekeleri; 2023'te toparlanma | https://en.wikipedia.org/wiki/Betelgeuse | "Starting in October 2019" ; "from magnitude 0.5 to 1.7" ; "about threefold" ; dust ; "one submillimetre study pointed to large starspots" ; peak 0.0 in April 2023 |
-| [B] Orion–Akrep miti: Gaia (Hesiodos, Pseudo-Hyginus, Ovidius) ya da Artemis (Aratos); Zeus yıldızlara yerleştirir; "when Scorpion rises, Orion sets" | THS | sources listed ; "roused up against him another kind of beast" (Aratus) ; "when Scorpion rises, Orion sets" (Pseudo-Hyginus 2.26) |
+| [B] Orion–Akrep miti: Gaia (Hesiodos, Pseudo-Hyginus, Ovidius) ya da Artemis (Aratos); Hesiodos'ta akrep Orion'u öldürür, Zeus ikisini yerleştirir; Ovidius'ta Orion'u Leto yıldızlara koyar; "when Scorpion rises, Orion sets" | THS | sources listed ; "roused up against him another kind of beast" (Aratus) ; "when Scorpion rises, Orion sets" (Pseudo-Hyginus 2.26) |
 | [Ö] M42: en iyi Ocak; kadir 4; karanlık yerden çıplak gözle | https://science.nasa.gov/?p=29958 | d11_kaynak.md: "It is best observed during January." ; "relatively bright apparent magnitude of 4." ; "with the unaided eye from a dark sky site" |
 | [Ö] M45: en iyi Aralık; ≈445 ışık yılı; binden fazla yıldız | https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-45 | d11_kaynak.md: "best time ... December" ; "roughly 445 light-years" ; "over a thousand stars" |
 | [B] Ülker: çıplak gözle 6–7 kolay, koşullara göre 14'e kadar | https://en.wikipedia.org/wiki/Pleiades | brightest six or seven easily visible ; up to 14 depending on conditions and eyesight |
@@ -285,3 +285,10 @@ Kısaltmalar: WP = https://en.wikipedia.org/wiki/... ; IAUc = https://en.wikiped
 5. Eski Türk yıldız adları (Demir Kazık, Yedigen vb.) için TDV maddesinde ad bulunamadı; yalnız TDV'nin "altın veya demirden kazık" ifadesi kullanıldı. Diğer Türkçe gelenek adları derse konmadı (bulamadım).
 6. Mevsim tarihleri 2027 için hesaplandı; yıldızların doruk tarihleri her yıl ±1 gün tekrar eder (yıldız zamanı), derste "yaklaşık" diye verildi. Güneş'in takımyıldız giriş tarihleri 2026 ve 2027 için aynı günlere düştü (saat farkı ≤ 6 sa).
 7. Görünürlük sayımı (61/11/16) IAU sınırlarına göre değil, uygulamanın takımyıldız çizimlerindeki yıldızlara göre yapıldı; derste bu açıkça söylendi.
+
+## Doğrulama turu (bağımsız denetçi, 2026-10-28)
+
+- HESAP satırlarının hepsi bağımsız betiklerle (gok.js + veri/yildizlar.json, veri/hedefler.json, veri/takimyildiz.json) yeniden hesaplandı ve tuttu: B1875 (Sirius 6,752→6,659 sa; Polaris 89,26→88,64°), 23 açısal uzaklık, Regulus'un Dubhe–Merak çemberine 11,41°, en büyük/en küçük yükseklikler, 22.00 doruk tarihleri (2027), 22.00 ufuk konumları, doğuşlar (Sirius 21.10 / 19.08, Betelgeuse 20.52, Arcturus 20.35), Güneş'in 2026 takımyıldız girişleri (saat çözünürlüğü), 28.10.2026 Ay Tau / Jüpiter Leo / Mars Cnc / Satürn Cet, 61/11/16 ve 53 sayımı.
+- Bütün yıldız adları veri/yildizlar.json'da, bütün Türkçe takımyıldız adları veri/takimyildiz.json'da var. Tek fark: derste "Kanopus", uygulamada "Canopus"; derse ve sınava "(haritada Canopus)" eklendi.
+- Yeniden okunan kaynaklar: IAUc, AST, SDN, LPN, BAY, Betelgeuse, Sirius, Pleiades, Mizar_and_Alcor, Shawn_Carlson, Ecliptic, Pole_star, Fomalhaut, Deneb, Altair, Aldebaran, Algol (Wikipedia ham metin); TDV Yıldız, ROB, ESO, ESA, ESP, UCB, THS, THK, HPS, CG, NASA M31. Not 1'deki tek kaynaklı ad anlamları kendi Wikipedia sayfalarında ikinci kez doğrulandı (Fomalhaut "the mouth of the [Southern] Fish", Deneb "tail of the hen", Altair "the flying eagle", Aldebaran "the follower", Algol "head of the ogre").
+- Ek düzeltmeler: burç kuşağı "tutulumun iki yanında 20°" → "tutulumu ortalayan, toplam 20°" (Ecliptic: "a celestial belt about 20° wide in latitude"); Bölüm 7 "Aralıkta / haziranda" → "Aralık sonunda / haziran sonunda" (Güneş Yay'a 18 Ara, İkizler'e 22 Haz'da girer); Bölüm 12 doruk tarihleri hesapla uyumlu yazıldı (Algenib/Alpheratz ≈ 8–10 Kas; Fomalhaut ≈ 21 Eki, önceki metin "ekim sonu" diyordu).
