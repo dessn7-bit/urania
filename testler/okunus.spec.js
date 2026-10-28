@@ -108,3 +108,8 @@ test('Tüm ders metinlerinde okunuşa çevrilmemiş sembol kalmaz', () => {
   expect(kalan).toEqual([]);
   expect(t).not.toMatch(/%/);
 });
+
+test('Tarih kısaltmaları: MÖ ve sayıdan önce MS açılır, "ms" birimi dokunulmaz', () => {
+  const { okunus } = require('../okunus.js');
+  expect(okunus('MÖ 240 civarında; MS 150 yılında (MÖ 190–120). 5 ms')).toBe('milattan önce 240 civarında; milattan sonra 150 yılında (milattan önce 190 ile 120). 5 ms');
+});

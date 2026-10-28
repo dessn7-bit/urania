@@ -1,0 +1,58 @@
+[
+  {
+    "id": "d20-1",
+    "soru": "Eratosthenes, İskenderiye'deki gölge açısını çemberin ellide biri (7,2°) buldu ve iki kent arasını yaklaşık 5000 stadion aldı. Sonucunun bugünkü kilometre karşılığı neden kesin söylenemez?",
+    "secenekler": [
+      "Çünkü stadionun bugünkü uzunluğu kesin bilinmiyor ve tahminler yaklaşık 155 ile 185 metre arasında değişiyor",
+      "Çünkü Eratosthenes açıyı ölçmeyi unuttu ve sonucu tahmin etti",
+      "Çünkü Syene'de yaz gündönümünde de uzun bir gölge oluşuyordu",
+      "Çünkü Eratosthenes Dünya'nın düz olduğunu varsayıyordu"
+    ],
+    "dogru": 0,
+    "aciklama": "Derse göre yöntem doğrudur: 50 × 5000 = 250.000 stadion. Ama stadionun metre karşılığı tartışmalıdır; Wikipedia 155–160 m ile hatayı −%2,4 ile +%0,8, Paris Gözlemevi sözlüğü 155–185 m ile −%3 ile +%15 arasında verir.",
+    "ders": "d20",
+    "bolum": 3
+  },
+  {
+    "id": "d20-2",
+    "soru": "Hipparkhos, Spica'nın sonbahar noktasına uzaklığını Timokharis'in 8° değerine karşı 6° buldu. Bu fark ona neyi gösterdi?",
+    "secenekler": [
+      "Spica'nın Dünya'ya hızla yaklaştığını",
+      "Ekinoks noktalarının yıldızlara göre yavaşça kaydığını, yani presesyonu",
+      "Timokharis'in aletinin bozuk olduğunu",
+      "Dünya'nın Güneş'in çevresinde dolandığını"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre yıldızlar birbirine göre kaymadığı için değişen, ölçümün başlangıç noktası olan ekinoks noktalarıydı. Hipparkhos bu kaymayı yılda en az yüzde bir derece olarak verdi; gerçek değer 72 yılda bir derecedir. Bu olaya presesyon denir.",
+    "ders": "d20",
+    "bolum": 5
+  },
+  {
+    "id": "d20-3",
+    "soru": "Takiyüddin'in İstanbul Rasathanesi'nde kullandığı gözlem saatinin saniyeyi göstermesi neden önemliydi?",
+    "secenekler": [
+      "Saray törenlerinin başlama anını duyurmak için",
+      "Kuyruklu yıldızların hızını ölçmek için",
+      "Sağ açıklık yıldızın meridyenden geçiş zamanıyla ölçüldüğü için; gök küresi saniyede yaklaşık 15 yay saniyesi döner",
+      "Ay tutulmalarının süresini kısaltmak için"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre Takiyüddin üç kadranlı (saat, dakika, saniye) saatini yıldızların sağ açıklığını ölçmek için kullandı. Gök küresi yaklaşık 86.164 saniyede 360° döndüğünden 1 saniye zaman yaklaşık 15″ yaya karşılık gelir; 1 yay dakikası kesinlik için saatin 4 saniyeden iyi olması gerekir.",
+    "ders": "d20",
+    "bolum": 10
+  },
+  {
+    "id": "d20-4",
+    "soru": "Tycho Brahe 1572'deki yeni yıldızın ve 1577 kuyruklu yıldızının Ay'ın ötesinde olduğunu hangi gözlemle gösterdi?",
+    "secenekler": [
+      "Teleskopla bakıp yüzeylerini inceleyerek",
+      "Renklerini Ay'ın rengiyle karşılaştırarak",
+      "Ölçülebilir bir ıraklık (paralaks) bulamayarak",
+      "Parlaklıklarının her gece arttığını görerek"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre Ay gibi yakın bir cisim yıldızlara göre kayardı; Tycho iki cisimde de ölçülebilir ıraklık bulamadı, bu yüzden Ay'ın ötesinde olmaları gerekiyordu. Tycho teleskop kullanmadı; çıplak göz aletleriyle yaklaşık 1 yay dakikası kesinliğe ulaştı.",
+    "ders": "d20",
+    "bolum": 12
+  }
+]

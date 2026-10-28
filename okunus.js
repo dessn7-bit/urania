@@ -105,6 +105,8 @@
     /* Özel adlar: "Sgr A*", "M87*" → yıldız */
     t = t.replace(new RegExp('([A-Za-z]\\d*)\\*' + EK, 'g'), (m, a, ek) => { const o = ekli('yıldız', ek); return o ? a + ' ' + o : m; });
     t = t.replace(/\s&\s/g, ' ve ');
+    /* Tarih kısaltmaları (d20 Astronominin tarihi): "MÖ 240" → "milattan önce 240"; MS yalnız sayıdan önce (ms ≠ MS) */
+    t = t.replace(/(^|[\s(–-])MÖ(?=\s|\.|,|\))/g, '$1milattan önce').replace(/(^|[\s(–-])MS(?=\s\d)/g, '$1milattan sonra');
     /* Binlik ayraç (veride ondalık ayraç virgül): "14.500" → "14500"; nokta cümle sonu sanılmasın */
     t = t.replace(/(\d)\.(?=\d{3}(?!\d))/g, '$1');
     /* Alt simge: H₂ → H 2 */
