@@ -264,7 +264,13 @@
       if (sonArama) { girdi.value = ''; sonArama = ''; }
       hedef.classList.add('sz-vurgu');
       hedef.focus({ preventScroll: true });
-      hedef.scrollIntoView({ block: 'center' });
+      /* İlk açılışta tarayıcı yükleme bitince sayfayı başa alabiliyor; yazı tipleri de yerleşimi kaydırır */
+      const adres = location.hash;
+      const kaydir = () => { if (location.hash === adres && hedef.isConnected) hedef.scrollIntoView({ block: 'center' }); };
+      kaydir();
+      setTimeout(kaydir, 0);
+      if (document.readyState !== 'complete') window.addEventListener('load', () => setTimeout(kaydir, 0), { once: true });
+      if (document.fonts && document.fonts.status !== 'loaded') document.fonts.ready.then(kaydir);
     } else {
       if (sonArama) { girdi.value = sonArama; suz(); }
       const bas = el.querySelector('h1');

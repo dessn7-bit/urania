@@ -256,3 +256,159 @@ Tarih: 2026-10-27. Bağımsız doğrulama ajanı. Hesaplar python3 ile yeniden y
 | ÇÖZÜLDÜ: Plüton beş cüce gezegenin en büyüğü (Eris ikinci) | https://science.nasa.gov/solar-system/planets/planet-sizes-and-locations-in-our-solar-system/ | "Eris is the second largest dwarf planet with an equatorial diameter of about 1,445 miles (about 2,326 kilometers)." (dersler_9_11_dogrulama.md #46) |
 | ÇÖZÜLDÜ: "Galileo Jüpiter yörüngesine giren ilk araç" artık NASA'ya dayanıyor; ders cümlesi "NASA'ya göre Jüpiter'in ilk yapay uydusu" yapıldı | https://www.nasa.gov/history/30-years-ago-galileo-off-to-orbit-jupiter/ | "The orbiter fired its main engine on Dec. 7, 1995" ; "the first artificial satellite of Jupiter" ; "On Sept. 21, 2003, after 14 years in space" |
 | Askıda kalan madde yok. Arama (d3+d9+d10 toplamı): 5 WebSearch (Mariner 10, BepiColombo, Galileo ×2, d10 aydınlık kesir formülü); geri kalan her şey kaynak dosyalarındaki URL'lerin WebFetch'iyle | — | — |
+
+## v3 genişletme (2026-10-28) — yeni satırlar
+
+Kaynak türü: [W] = bu oturumda WebSearch sonucu ya da proje URL'si WebFetch ile okundu (alıntılar WebFetch özetinin aktardığı metindir); [P] = proje dosyasında daha önce doğrulanmış satır; [H] = python3 ile hesap; ÇIKARIM = kaynak ifadesinden mantıkla çıkan cümle. d9 için 14 WebSearch kullanıldı. İzin hatası veren ve yeniden denenmeyen adresler: esa.int Facts_about_Mars, cambridge.org jupiter_and_saturn_2027 (aynı oturumda mercury_and_venus sayfası okunabildi), d2pn8kiwq2w21t.cloudfront.net (JPL Jüpiter PDF'si), space.com/17777 (Dünya katmanları), earthsky.org.
+
+### Yeni bölüm — Merkür yakından
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| [W] Çekirdek yarıçapı ~2000 km, gezegen yarıçapının ~%80'i | https://www.nasa.gov/wp-content/uploads/2009/12/mercury_lithograph.pdf | "with a large metallic core having a radius of about 2,000 kilometers (1,240 miles), about 80 percent of the planet's radius." |
+| [W] Çekirdek gezegenin yaklaşık yarısı | https://www.planetary.org/worlds/mercury | "Mercury's core takes up about half of the entire planet." |
+| [H] 0,8³ = 0,512; 2000/2439,4 = 0,820; 0,820³ = 0,551 | https://ssd.jpl.nasa.gov/planets/phys_par.html | Merkür ortalama yarıçapı 2439,4 km (Bölüm 4 satırı) |
+| [W] Çekirdeğin bir kısmı eriyik, küresel manyetik alan | https://www.planetary.org/worlds/mercury | "there is evidence that part of the core is still molten, churning and driving a global magnetic field." |
+| [W] Alan yüzeyde Dünya'nınkinin %1'i | https://www.nasa.gov/wp-content/uploads/2009/12/mercury_lithograph.pdf | "Mercury's magnetic field at the surface has just 1 percent the strength of Earth's" |
+| [W] Sırtlar çekirdek soğudukça büzülmeden | https://www.planetary.org/worlds/mercury | some ridges come from "Mercury shrinking as its core cools." |
+| [W] Atmosfer yerine ince ekzosfer | https://www.nasa.gov/wp-content/uploads/2009/12/mercury_lithograph.pdf | "Instead of an atmosphere, Mercury possesses a thin "exosphere"" |
+| Isı tutulamaz, sıcaklık uçlara gider | — | ÇIKARIM (atmosfer yokluğu + aşağıdaki sıcaklıklar) |
+| [W] 430 °C; gece −180 °C | https://www.nasa.gov/wp-content/uploads/2009/12/mercury_lithograph.pdf | "Temperatures on Mercury's surface can reach 430 degrees Celsius" ; "nighttime temperatures on the surface can drop to –180 degrees Celsius" |
+| [W] İkinci kaynak −180 / 430 °C | https://www.planetary.org/worlds/mercury | bilgi kutusu: -180°C ile 430°C |
+| [W] Ay'a benzer kraterli yüzey; Caloris ~1550 km | https://www.nasa.gov/wp-content/uploads/2009/12/mercury_lithograph.pdf | "Mercury's surface resembles that of Earth's Moon, scarred by many impact craters" ; Caloris "about 1,550 kilometers (960 miles) across" |
+| [W] Kutuplardaki derin kraterlerde su buzu olabilir; MESSENGER: yalnız sürekli gölgede | https://www.nasa.gov/wp-content/uploads/2009/12/mercury_lithograph.pdf | "Mercury may have water ice at its north and south poles inside deep craters." ; "MESSENGER observations have shown that the materials identified by radar are present only in regions of permanent shadow" |
+| [W] İkinci kaynak: kutuplarda buz kanıtı | https://www.planetary.org/worlds/mercury | "ample evidence of water ice at the poles." |
+| [W] BepiColombo: varış evresi 3 Eylül 2026'da MTM ayrılmasıyla başladı; yörünge 21 Kasım 2026; MPO–Mio ayrılması 9–10 Aralık 2026; bilim evresi Nisan 2027 | https://www.esa.int/Science_Exploration/Space_Science/BepiColombo/Latest_updates_BepiColombo_s_arrival_at_Mercury | "began with the separation of the Mercury Transfer Module" ; "The composite spacecraft will enter orbit around Mercury on 21 November 2026" ; "MPO and Mio will separate from each other on 9–10 December 2026." ; "The mission's science phase is set to begin in April 2027." (sayfanın son güncellemesi 6 Ekim 2026) |
+| [W] İkinci kaynak: BepiColombo 2026'da varacak | https://www.planetary.org/worlds/mercury | "will arrive in 2026." |
+| [P] MPO ESA'nın, Mio JAXA'nın | https://www.esa.int/For_Media/Press_Releases/BepiColombo_blasts_off_to_investigate_Mercury_s_mysteries | "BepiColombo is a joint endeavour between ESA and the Japan Aerospace Exploration Agency, JAXA." (hangi modülün kime ait olduğu bu oturumda ayrıca alıntılanmadı; doğrulama ajanı kontrol etmeli) |
+| [W] Merkür yalnız şafakta ya da alacakaranlıkta | https://www.nasa.gov/wp-content/uploads/2009/12/mercury_lithograph.pdf | "it is hard to directly observe from Earth except during dawn or twilight." |
+| [W] Güneş'ten 27° ya da daha fazla; ufuktan yükseklik önemli; bir iki hafta, birkaç on dakika | https://www.cambridge.org/turnleft/pages/the_planets/mercury_and_venus | "Mercury may be up to 27° or more from the Sun" ; "What actually counts is how high above the horizon Mercury is during twilight." ; "just a few tens of minutes during twilight over just a week or two" |
+| [W] Merkür sabah göğünde 13 Kasım–4 Aralık 2026 | https://space.com/stargazing/what-to-expect-from-the-planets-in-2026-key-dates-and-sky-events | Mercury morning window "Nov. 13– Dec. 4" (tek kaynak) |
+| Doğu ufku | — | ÇIKARIM: sabah göğündeki, Güneş'e yakın cisim doğu yönündedir |
+| [W] Merkür geçişleri 2032, 2039, 2049 | https://www.cambridge.org/turnleft/pages/the_planets/mercury_and_venus | WebFetch özeti: sayfada Merkür geçişleri için 2032, 2039, 2049 tarihleri |
+| İstanbul'dan görünürlük | — | BULUNAMADI; derste açıkça söylendi |
+| [P] Güneş'e filtresiz dürbünle bakmak göz hasarı | https://science.nasa.gov/eclipses/safety/ | "Viewing any part of the bright Sun through ... binoculars ... without a special-purpose solar filter ... will instantly cause severe eye injury." |
+
+### Yeni bölüm — Venüs yakından
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| [W] 20 km'den büyük 1000'den fazla volkan/volkanik merkez | https://www.nasa.gov/sites/default/files/files/Venus_Lithograph.pdf | "More than 1,000 volcanoes or volcanic centers larger than 20 kilometers (12 miles) in diameter dot the surface." |
+| [W] Yüzlerce km'lik kıvrımlı lav kanalları | https://www.nasa.gov/sites/default/files/files/Venus_Lithograph.pdf | "Volcanic flows have produced long, sinuous channels extending for hundreds of kilometers." |
+| [W] Yüzey 300–500 milyon yıl önce yenilendi | https://www.nasa.gov/sites/default/files/files/Venus_Lithograph.pdf | "It is thought that Venus was completely resurfaced by volcanic activity 300 to 500 million years ago." |
+| [W] 1,5–2 km'den küçük krater yok | https://www.nasa.gov/sites/default/files/files/Venus_Lithograph.pdf | "Craters smaller than 1.5 to 2 kilometers (0.9 to 1.2 miles) across do not exist on Venus" (nedeni derste verilmedi) |
+| [W] Demir çekirdek ~3000 km yarıçap | https://www.nasa.gov/sites/default/files/files/Venus_Lithograph.pdf | "Venus has an iron core that is approximately 3,000 kilometers (1,200 miles) in radius." |
+| [W] Küresel manyetik alan yok; fazla yavaş dönüyor | https://www.nasa.gov/sites/default/files/files/Venus_Lithograph.pdf | "Venus has no global magnetic field" ; "Venus rotates too slowly to generate the type of magnetic field that Earth has." |
+| [W] Uydu 0 | https://www.nasa.gov/sites/default/files/files/Venus_Lithograph.pdf | "Known Moons 0" |
+| [W] Bulut tepeleri 4 günde tur; ~360 km/sa | https://www.nasa.gov/sites/default/files/files/Venus_Lithograph.pdf | "the top level of cloud layers zips around the planet every four Earth days" ; "hurricane-force winds traveling at about 360 kilometers (224 miles) per hour." |
+| [W] Süper dönme adı; 4 gün; 100 m/s ≈ 360 km/sa; gezegen dönüşünün 60 katına kadar | https://en.wikipedia.org/wiki/Atmosphere_of_Venus | "exhibits a phenomenon of super-rotation, in which the atmosphere circles the planet in just four Earth days" ; "blow at a speed of 100 m/s (≈360 km/h or 220 mph)" ; "Winds move at up to 60 times the speed of the planet's rotation." |
+| [H] 243/4 = 60,75; 2π × 6051,8 = 38.025 km; /96 sa = 396 km/sa; /(243 × 24) = 6,52 km/sa | https://ssd.jpl.nasa.gov/planets/phys_par.html | Venüs yarıçapı 6051,8 km (Bölüm 4 satırı) |
+| [W] Venus Express 2005 (ESA) | https://www.nasa.gov/sites/default/files/files/Venus_Lithograph.pdf | "2005 — The European Space Agency launches Venus Express to study the atmosphere and surface." |
+| [W] VERITAS: yüzey ve iç, radar haritaları, kaya bileşimi haritası, etkin volkanizma; fırlatma TBD, durum "Future"; ardından DAVINCI ve EnVision | https://jpl.nasa.gov/missions/veritas | "VERITAS will return richly detailed radar maps of Venus' surface" ; "will also produce the first maps of surface rock composition" ; "will search for the thermal signatures of active volcanism" ; launch date "TBD" ; "It will be followed by NASA's DAVINCI mission and ESA's EnVision mission" |
+| [W] Güneş ve Ay'dan sonra en parlak; 45°'den fazla uzaklaşır | https://www.cambridge.org/turnleft/pages/the_planets/mercury_and_venus | "other than the Sun and the Moon it's the brightest thing in the sky" ; "it can wander more than 45° from the Sun" |
+| [W] İyi sabitlenmiş dürbünle hilal | https://www.cambridge.org/turnleft/pages/the_planets/mercury_and_venus | "you can see the crescent shape in your finderscope or well-stabilized binoculars!" |
+| [W] Venüs sabah göğünde 3 Kasım–31 Aralık 2026; sabah en parlak 29 Kasım | https://space.com/stargazing/what-to-expect-from-the-planets-in-2026-key-dates-and-sky-events | "Mornings: Nov. 3– Dec. 31" ; "in the morning sky on Nov. 29" (greatest brilliancy) |
+
+### Bölüm 5 — Dünya (ek paragraf)
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| [W] İç çekirdek katı demir top, ~Güneş yüzeyi kadar sıcak, Ay'ın %70'i genişliğinde | https://www.nasa.gov/?p=414092 | "At the heart of our planet lies a solid iron ball, about as hot as the surface of the sun." ; "which is 70% as wide as the moon." (sayfa başlığı "Cut-away Diagram of Earth's Interior") |
+| [W] Dış çekirdek sıvı demir; manto; kabuk | https://www.nasa.gov/?p=414092 | "an ocean of liquid iron known as "the outer core."" ; "Surrounding the core is "the mantle" and Earth's "crust" forms the top layer." |
+| [W] Manyetik alan dış çekirdekten | https://www.nasa.gov/?p=414092 | "Earth's magnetic field comes from the outer core's ocean of iron," |
+| "ince kabuk" | — | ÇIKARIM ("top layer"); kalınlık bu oturumda kaynakla bulunamadı (space.com sayfası izin hatası) |
+
+### Yeni bölüm — Mars yakından
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| [W] Kırmızı renk demirin oksitlenmesi (paslanma); havadaki toz | https://www.nhm.ac.uk/discover/planet-mars.html | "Its famous colour is caused by the iron in rocks and dust of the crust's surface oxidising" ; "the process of iron on Earth rusting" ; "Dust is heavily present in Mars's atmosphere, making the planet appear red to us on Earth." |
+| [W] Olympus Mons kalkan volkanı, ~25 km, 624 km çap | https://www.nhm.ac.uk/discover/planet-mars.html | "Olympus Mons is a shield volcano around 25 kilometres in height and 624 kilometres in diameter." |
+| [W] İkinci kaynak: 17 mil yükseklik, 373 mil genişlik | https://www.nasa.gov/pdf/173749main_Mars_Poster.pdf | "Olympus Mons is about 17 miles high and 373 miles wide." ; [H] 17 × 1,609 = 27,4 km; 373 × 1,609 = 600 km |
+| [W] Valles Marineris 7 km derin | https://www.nhm.ac.uk/discover/planet-mars.html | "The deepest canyon on the planet is Valles Marineris at 7 kilometres." |
+| [W] New York–Los Angeles uzunluğu | https://www.nasa.gov/pdf/173749main_Mars_Poster.pdf | "stretches a distance equivalent to the distance from New York to Los Angeles" (afişte "Vallis" yazımıyla) |
+| [W] Kutup başlıkları mevsimle büyür/küçülür | https://www.nasa.gov/pdf/173749main_Mars_Poster.pdf | "the growth and retreat of the Martian polar ice caps with the change of seasons" |
+| [W] Eriseydi 20–30 m su | https://www.nhm.ac.uk/discover/planet-mars.html | "If these melted, the planet would be covered by 20- to 30-metre-deep water." |
+| [W] Bütün gezegeni saran toz fırtınaları | https://www.nasa.gov/pdf/173749main_Mars_Poster.pdf | "Seasonally, great dust storms occur that engulf the entire planet." |
+| [W] Çekirdek demir + nikel + kükürt; gezegenin ~yarısı; tamamen sıvı olabilir | https://www.nhm.ac.uk/discover/planet-mars.html | "It's thought that Mars's core is predominantly made up of iron, but also nickel and sulphur." ; "The core is about half the size of the planet and may be entirely liquid." |
+| [W] Asaph Hall, Ağustos 1877 | https://science.nasa.gov/mars/moons/ | "August 1877" ; "Asaph Hall" |
+| [W] Phobos büyük olan, günde üç tur, 100 yılda 1,8 m yaklaşır, 50 milyon yılda çarpar ya da halka olur | https://science.nasa.gov/mars/moons/ | "Phobos is the larger of Mars' two moons" ; "It orbits Mars three times a day." ; "Phobos is nearing Mars at a rate of six feet (1.8 meters) every hundred years." ; "it will either crash into Mars in 50 million years or break up into a ring." |
+| [W] Deimos küçük, kraterli, 30 saat | https://science.nasa.gov/mars/moons/ | "a small and lumpy, heavily cratered object" ; "It orbits Mars every 30 hours." |
+| [W] Yakalanmış asteroit ya da erken enkaz | https://science.nasa.gov/mars/moons/ | "Both are thought to be captured asteroids, or debris from early in the formation of our solar system." |
+| [W] 11 Ekim 2026 Yengeç'te Arı Kovanı; 26 Kasım Regulus'un 1,7° üstü (Aslan); aralık sonu −0,1, Arcturus'la renk ve parlaklıkta yarış | https://space.com/stargazing/what-to-expect-from-the-planets-in-2026-key-dates-and-sky-events | "Mars passes through the Beehive Cluster in Cancer." ; "Mars passes 1.7 degrees above Regulus in Leo" ; "By late December, Mars brightens to magnitude –0.1 and will rival Arcturus in both color and brightness." |
+| Regulus Aslan'da; Arcturus bir yıldız | https://space.com/stargazing/what-to-expect-from-the-planets-in-2026-key-dates-and-sky-events | "Regulus in Leo" ; "rival Arcturus" (derste "en parlak" ve "turuncu" nitelemeleri kaynaksız olduğu için kullanılmadı) |
+| [P] Karşı konum 19 Şubat 2027, Aslan, −1,2; 13,8″; ~101 milyon km | https://nakedeyeplanets.com/mars-oppositions.htm | d18_kaynak.md: 2027 "February 19", "Leo", "-1.2", 13,8″, 0,6780 AB (= 101,4 milyon km) |
+| [W] En yakın uzaklık 54,6 milyon km; en büyük görünür çap 25,6″ | https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html | "Minimum (106 km) 54.6" ; "Maximum (seconds of arc) 25.6" |
+| [H] 54,6/101 = 0,541; 25,6 × 0,541 = 13,84″; 13,8 × 7 = 96,6″ = 1,61′; 1,61/31,6 = 0,051 (~1/20) | — | hesap (dolunay 31,6′: d10/d3 kaynak satırları) |
+| Dürbünde yüzey ayrıntısı beklenmez, teleskop gerekir | — | ÇIKARIM (1,6 yay dakikalık disk) |
+| Manyetik alan konusu | — | Derste "kaynakla girmedik" diye açıkça bırakıldı |
+
+### Yeni bölüm — Jüpiter yakından
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| [W] Derinde hidrojen sıvılaşır; yolun ~üçte birinde metalik ve iletken; merkezde Dünya boyutunda buz-kaya çekirdeği olabilir | https://webarchive.library.unt.edu/eot2008/20080923101121/http:/solarsystem.nasa.gov/multimedia/downloads/11_Jupiter_Litho_FC.pdf | "compressing the hydrogen gas into a liquid." ; "At depths about a third of the way down, the hydrogen becomes metallic and electrically conducting." ; "At the center, the immense pressure may support a solid core of ice–rock about the size of Earth." |
+| [W] Merkez basıncı 50–100 milyon atmosfer; metalik hâl; modellerin çoğu (hepsi değil) yoğun çekirdek | https://www.britannica.com/place/Jupiter-planet/The-interior | "The central pressure is in the range of 50–100 million atmospheres" ; "At such tremendous pressures hydrogen is expected to be in a metallic state." ; "most (but not all) models incorporate a dense core" |
+| [W] İkinci kaynak: metalik hidrojen ve helyum karışımı | https://www.rmg.co.uk/stories/space-astronomy/planet-jupiter-gas-giant-king-planets | "Surrounding this is thought to be a dense mixture of metallic hydrogen and helium." |
+| Metalik hidrojen tanımı (elektronlar serbest) | — | yazar açıklaması ("electrically conducting" ifadesinden) |
+| [W] Manyetik alan ~20.000 kat | https://webarchive.library.unt.edu/eot2008/20080923101121/http:/solarsystem.nasa.gov/multimedia/downloads/11_Jupiter_Litho_FC.pdf | "Jupiter's enormous magnetic field is nearly 20,000 times as powerful as Earth's." |
+| [W] Atmosfer Güneş'e benzer, H ve He; bulutlar çoğunlukla amonyak; kuşaklar ve bölgeler doğu-batı rüzgârlarından | aynı | "mostly hydrogen and helium." ; "Most visible clouds are composed of ammonia." ; "dark belts and light zones created by strong east–west winds" |
+| [W] Halka 1979 Voyager 1, sürpriz; göktaşlarının kaldırdığı toz | aynı | "Discovered in 1979 by NASA's Voyager 1 spacecraft, Jupiter's rings were a surprise" ; "may be formed by dust kicked up as interplanetary meteoroids" |
+| [W] İkinci kaynak: Voyager I soluk halka; Dünya'dan görülmez | https://www.rmg.co.uk/stories/space-astronomy/planet-jupiter-gas-giant-king-planets | "Voyager I discovered a faint ring on Jupiter by chance." ; "The ring is not visible from the Earth." |
+| [W] Güneş'ten aldığının ~2 katı enerji yayar | https://www.britannica.com/place/Jupiter-planet/The-interior | "allows Jupiter to radiate about twice as much energy as it receives from the Sun." |
+| [W] BKL 300 yıldan uzun süredir gözleniyor (eski NASA kartı) | https://webarchive.library.unt.edu/eot2008/20080923101121/http:/solarsystem.nasa.gov/multimedia/downloads/11_Jupiter_Litho_FC.pdf | "The Great Red Spot, a giant spinning storm, has been observed for more than 300 years." |
+| AYRILIK: Juno sitesi en az 250 yıl | https://www.missionjuno.swri.edu/key-terms/great-red-spot | "It has been present for at least 250 years" (Bölüm 6 satırı); "tartışmalı" nitelemesi ÇIKARIM (iki kaynak arasındaki fark) |
+| [W] Jüpiter 24 Eylül 2026'dan yıl sonuna Aslan'da; sabah göğü 19 Ağustos–31 Aralık | https://space.com/stargazing/what-to-expect-from-the-planets-in-2026-key-dates-and-sky-events | "enters Cancer on June 22 and Leo on Sept. 24, where it remains through year's end" ; "Mornings: Aug. 19– Dec. 31." |
+| [P] Karşı konum 10–11 Şubat 2027 | https://www.cambridge.org/turnleft/pages/the_planets/jupiter_and_saturn_2027 | d18_kaynak.md: Cambridge "February 10", EarthSky "February 11, 2027" |
+| [W] Dürbünle dört uydu; küçük teleskopla basık disk ve bantlar | https://www.rmg.co.uk/stories/space-astronomy/planet-jupiter-gas-giant-king-planets | "With a pair of binoculars, you can see the four moons discovered by Galileo." ; "even in a small telescope, to show a disc with polar flattening." ; "several bands of dark and light clouds can be seen." |
+
+### Yeni bölüm — Satürn yakından
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| [W] Çekirdek kaya + erimiş metal, >11.700 °C (muhtemel) | https://cubesat.cnes.fr/en/saturn | "Saturn's core is likely a mixture of rock and molten metal at a temperature of more than 11,700°C" |
+| [W] Sıvı metalik hidrojen okyanusu; akımlar manyetik alanı üretir | https://cubesat.cnes.fr/en/saturn | "The outer core is fluid metallic hydrogen (atomic hydrogen) forming a liquid-metal and electrically conductive ocean" ; "with currents generating Saturn's powerful magnetic field." |
+| [W] Sıvı hidrojen katmanı; atmosfer H ve He | https://cubesat.cnes.fr/en/saturn | "Next comes a layer of liquid hydrogen at 6,000°C" ; "chiefly composed of hydrogen and helium gas" |
+| [W] Rüzgâr 1800 km/sa | https://cubesat.cnes.fr/en/saturn | "Winds here may attain speeds of 1,800 km/h." (tek kaynak) |
+| [W] Halkalar 282.000 km, ~1 km kalın; su buzu; tanelerden onlarca metrelik kayalara | https://www.skyatnightmagazine.com/space-science/saturn-ring-plane-crossing | "only around 1km (0.6 miles) in thickness" ; "spread over 282,000km" ; "almost entirely composed of particles of water ice" ; tiny grains to boulders tens of metres across |
+| [W] Yer yer 10 m; ana halkalar ~280.000 km; neredeyse saf su buzu | https://www.scientificamerican.com/article/are-saturns-rings-vanishing-that-depends-on-your-point-of-view/ | "In some places the rings are just 10 meters high, as tall as a three-story building." ; "The main rings are about 280,000 kilometers across" ; "nearly pure water ice" |
+| [W] Üçüncü kaynak: ~1 km, yer yer onlarca metre; A halkası >270.000 km; su buzu | https://cubesat.cnes.fr/en/saturn | "These rings are around 1 km thick but may thin locally to only a few tens of metres." ; "it's A ring spans more than 270,000 km" ; "billions of fragments of water ice" |
+| [W] Eksen 26,7°; 23 Mart 2025 kenardan; ~15 yılda bir; sonraki 2038 | https://www.skyatnightmagazine.com/space-science/saturn-ring-plane-crossing | "axis of rotation being tilted by 26.7°" ; "On 23 March 2025, Saturn's rings will seem to vanish." ; "occurring around every 15 years" ; "not until 2038" |
+| [W] İkinci kaynak: 23 Mart; ~15 yıl | https://www.scientificamerican.com/article/are-saturns-rings-vanishing-that-depends-on-your-point-of-view/ | "And on March 23 our planet will pass through the ring plane" ; "Approximately every 15 years the relatively paper-thin rings ... can be seen edge-on." |
+| [H] 282.000 × 0,1 mm = 28,2 m; 282.000 km / 10 m = 28,2 milyon | — | hesap (kâğıt 0,1 mm yazar varsayımı, derste "yuvarlak varsayım" diye belirtildi) |
+| [W] Satürn karşı konumu 4 Ekim 2026; 5 Eylül'den itibaren Balina'da; sarımsı beyaz, orta parlaklık | https://space.com/stargazing/what-to-expect-from-the-planets-in-2026-key-dates-and-sky-events | "Saturn reaches opposition on Oct. 4" ; "Back into Cetus (from Sept. 5 onward)" ; "shines as a yellowish-white 'star' of moderate brightness." |
+| [P] Halkalar için 20× ve üstü; Titan orta boy dürbünle | https://en.wikipedia.org/wiki/Binoculars | "Only binoculars with very high magnification, 20x or higher, are capable of discerning Saturn's rings" ; "Saturn's largest moon Titan" (Bölüm 6 satırı) |
+| Titan'ın geceden geceye yer değiştirmesi | — | ÇIKARIM (Titan Satürn'ü dolanan bir uydu; dönemi bu oturumda kaynakla verilmedi) |
+
+### Yeni bölüm — Uranüs ve Neptün yakından
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| [W] Uranüs kütlesinin ≥%80'i sıcak yoğun "buzlu" akışkan, küçük kayalık çekirdek | https://science.nasa.gov/Uranus/facts | "Most (80% or more) of the planet's mass is made up of a hot dense fluid of "icy" materials" ; "above a small rocky core." |
+| [P] "Buz" = su, metan, amonyak | https://en.wikipedia.org/wiki/Solar_System | Bölüm 1 satırı ("chemical compounds with melting points of up to a few hundred kelvins such as water, methane, ammonia") |
+| [W] Neptün: atmosfer derinlere uzanır, suya ve erimiş buzlara karışır; ~Dünya boyutunda katı çekirdek; mavi renk metan | https://www.nasa.gov/sites/default/files/files/Neptune_Lithograph_h.pdf | "Neptune's atmosphere extends to great depths, gradually merging into water and other melted ices over a heavier, approximately Earth-size solid core." ; "Neptune's blue color is the result of methane in the atmosphere." |
+| [W] Uranüs manyetik ekseni ~60° eğik, merkezden yarıçapın 1/3'ü kadar kaymış | https://science.nasa.gov/Uranus/facts | "the magnetic axis is tilted nearly 60 degrees from the planet's axis of rotation" ; "offset from the center of the planet by one-third of the planet's radius." |
+| [W] Neptün manyetik ekseni ~47° | https://www.nasa.gov/sites/default/files/files/Neptune_Lithograph_h.pdf | "tipped over by about 47 degrees compared with the planet's rotation axis." |
+| [W] 21 yıllık karanlık kış; en düşük 49 K (−224,2 °C) | https://science.nasa.gov/Uranus/facts | "plunging the other half of the planet into a 21-year-long, dark winter." ; "a minimum temperature of 49K (-224.2 degrees Celsius)." |
+| [W] Halkalar 10 Mart 1977, yıldız örtülmesi, en az beş halka; Elliot, Dunham, Mink | https://www.nature.com/articles/267328a0 | "AT least five rings encircle the planet Uranus" ; "five brief occultations of the star SAO 158687 that occurred both before and after its occultation by Uranus" (Nature 267, 328–330, 26 Mayıs 1977) |
+| [W] Kuiper Uçan Gözlemevi; James Elliot fikri; Voyager 2 1986 ilk doğrudan görüntü; toplam 13 | https://www.skyatnightmagazine.com/space-science/uranus-rings-discovery | "turned to NASA's Kuiper Airborne Observatory to get us above the clouds" ; "James Elliot was our principal investigator" ; "In 1986 Voyager 2 flew past the planet, sending back the first direct images of the rings" ; "the total count to 13" |
+| [W] NASA: 13 halka | https://science.nasa.gov/Uranus/facts | WebFetch özeti: sayfa 13 halka listeler |
+| [W] Neptün altı halka, dört yay | https://www.nasa.gov/sites/default/files/files/Neptune_Lithograph_h.pdf | "Neptune has six known rings." ; "have four thick regions (clumps of dust) called arcs." |
+| [W] Uranüs uyduları Shakespeare ve Pope karakterleri | https://science.nasa.gov/Uranus/facts | "Uranus' moons are unique in being named for characters from the works of William Shakespeare and Alexander Pope." |
+| [W] Triton: Lassell 10 Ekim 1846, Neptün'den 17 gün sonra; ters yönde dolanan tek büyük uydu; yakalanmış Kuiper cismi (milyonlarca yıl önce); Voyager 2 gayzerleri; −235 °C; 2700 km | https://science.nasa.gov/neptune/neptune-moons/triton/ | "Triton was discovered on Oct. 10, 1846 by British astronomer William Lassell" ; "just 17 days after Neptune itself was discovered." ; "the only large moon in our solar system that orbits in the opposite direction of its planet's rotation." ; "Scientists think Triton is a Kuiper Belt Object captured by Neptune's gravity millions of years ago." ; "Voyager 2 also found Triton has active geysers." ; "-235 degrees Celsius" ; "1,680 miles (2,700 kilometers)" |
+| [W] Gayzerler 8 km'den yükseğe | https://www.nasa.gov/sites/default/files/files/Neptune_Lithograph_h.pdf | "Voyager 2 discovered geysers spewing icy material upward more than 8 kilometers (5 miles)." |
+| [W] Büyük Karanlık Leke Hubble görüntülerinde yok | https://www.nasa.gov/sites/default/files/files/Neptune_Lithograph_h.pdf | "Subsequent images taken by the Hubble Space Telescope showed no sign of this Great Dark Spot." |
+| "Ters yörünge bu fikirle uyumlu" | — | ÇIKARIM (NASA iki olguyu yan yana verir; nedensellik derste "uyumlu" diye yumuşatıldı) |
+| [W] Uranüs: 2026 boyunca Boğa; karşı konum 25 Kasım; +5,6; dürbünle kolay | https://space.com/stargazing/what-to-expect-from-the-planets-in-2026-key-dates-and-sky-events | "Uranus spends all of 2026 in Taurus." ; "Uranus reaches opposition on Nov. 25" ; "At magnitude +5.6, it is easily found with binoculars" |
+| [W] Neptün: 2026 boyunca Balıklar; karşı konum 25 Eylül; +7,8 | aynı | "remains in Pisces throughout 2026" ; "Neptune reaches opposition on Sept. 25" ; "At magnitude +7.8, it is visible only in binoculars or a telescope" |
+| [W] Neptün çıplak gözle görülmez | https://www.nasa.gov/sites/default/files/files/Neptune_Lithograph_h.pdf | "It is invisible to the naked eye because of its extreme distance from Earth." |
+| [P] Kent +3, banliyö +4 | https://en.wikipedia.org/wiki/Apparent_magnitude | d1_kaynak.md satır 110 |
+| [P] 50 mm dürbün ~4,3 kadir kazanç | — | d11_kaynak.md satır 25 ([H] 2,5 × log₁₀(51) = 4,27) |
+| [H] 10^(0,4 × 2,2) = 7,59; 3 + 4,3 = 7,3; 10^(0,4 × 0,5) = 1,58 | — | hesap |
+
+### Bölüm 3 (ek), Uydular (ek), Oluşum (ek)
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| [H] Yıllık ortalama ilerleme: 360/11,8626 = 30,3°; 360/29,447 = 12,2°; 360/84,017 = 4,28°; 360/164,79 = 2,18° | https://ssd.jpl.nasa.gov/planets/phys_par.html | yıldızıl yörünge dönemleri (Bölüm 3 satırları) |
+| Gökteki ortalama hareketin yörünge dönemine bağlı olması | — | ÇIKARIM (uzun vadede yer merkezli ortalama hareket yıldızıl döneme eşittir); geri hareket 3. ders |
+| [W] Jüpiter 22 Haziran Yengeç, 24 Eylül 2026 Aslan; Uranüs Boğa, Neptün Balıklar | https://space.com/stargazing/what-to-expect-from-the-planets-in-2026-key-dates-and-sky-events | yukarıdaki satırlar |
+| [P] Galileo uyduları ve Titan dışındaki uydular dürbün için fazla sönük | https://en.wikipedia.org/wiki/Binoculars | "too faint to be seen with most binoculars are the planetary moons, except the Galileans and Titan" (Bölüm 6 satırı) |
+| [P] Galileo/Marius 1610; Huygens Titan 1655 | https://www.nasa.gov/wp-content/uploads/2009/12/moons_of_jupiter_lithograph.pdf ; https://esa.int/Our_Activities/Space_Science/Cassini-Huygens/Facts_about_Titan | Bölüm 6 satırları |
+| [W] Kar çizgisi tanımı; içte ağır bileşikler → küçük kayalık gezegenler; dışta uçucular → devler; karasal/dev ayrımı | https://en.wikipedia.org/wiki/Frost_line_(astrophysics) | "the minimum distance from the central protostar of a solar nebula where the temperature is low enough" ; "only heavier compounds can be accreted to form the typically much smaller rocky planets" ; "gaseous compounds (which are much more abundant) can be quite easily condensed" ; "therefore separates terrestrial planets from giant planets in the Solar System" |
+| [W] Oluşumda ~5 AB; asteroit kanıtı ~2,7 AB; modele bağlı; zamanla değişir | https://en.wikipedia.org/wiki/Frost_line_(astrophysics) | "approximately equals 5 AU" ; "the frost line was located at around 2.7 AU from the Sun" ; "depend on the physical model used to calculate it" ; "The location of the frost line changes over time" |
+| [W] ~4 AB; dışarıda katı kütle ~5 kat; yeterince büyük çekirdek H ve He toplar | https://www.astro.utoronto.ca/~mhvk/AST221/L18/L18.pdf | "frost-line ~4AU" ; "solid mass jumps by ~5" ; "If core massive enough, H & He can be accreted." |
+| Türkçe "kar çizgisi / donma çizgisi" adları | — | Türkçe terim resmî bir sözlükte doğrulanmadı; İngilizcesi (frost line) parantezde verildi |
+| Eski cümle çıkarıldı: "Bu düzenin nasıl ortaya çıktığının ayrıntıları bu derste kaynakla ele alınmadı" (artık kar çizgisi paragrafı kaynaklı olarak anlatıyor); 14. ders yönlendirmesi yeni paragrafta korundu | — | — |
