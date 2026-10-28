@@ -193,3 +193,148 @@ Tarih: 2026-10-27. Bağımsız doğrulama ajanı. Bütün çalışılmış örne
 | [B] Tide maddesi yeniden doğrulandı (%46, küp, 16,3 m, 1–4 cm, 600 milyon yılda 2 saat, 3,8 cm/yıl, 12 sa 25,2 dk) | https://en.wikipedia.org/wiki/Tide | "it is only 46% as large as the lunar" ; "recorded a maximum range of 16.3 metres" ; "Day length has increased by about 2 hours in the last 600 million years." |
 | Kavram kontrolü: ikinci yasa örneğinde "uç noktalarda hız × uzaklık sabit" doğru (günberi ve günötede hız yarıçapa dik); "gelgit ∝ M/d³" doğru; kurtulma = √2 × dairesel doğru; L4 uzaklığı ≈ 1 AB (eşkenar üçgen) doğru | — | kavram denetimi, değişiklik yok |
 | Askıda kalan yok. Not: "kuyrukluyıldız" yazımı d9'daki "kuyruklu yıldız"dan farklı; olgusal hata olmadığı için dokunulmadı | — | — |
+
+## v3 genişletme (2026-10-28) — yeni satırlar
+
+Kaynak türü: [W] = bu oturumda WebSearch sonucu ya da proje URL'si WebFetch ile okundu (alıntılar WebFetch özetinin aktardığı metindir); [P] = proje dosyasında daha önce doğrulanmış satır (dosya adı verildi); [H] = hesap (python3 ile yapıldı); ÇIKARIM = kaynak ifadesinden mantıkla çıkan, ayrı alıntısı olmayan cümle. Bu turda d3 için 9 WebSearch kullanıldı. EarthSky "jupiter-at-opposition" sayfası izin hatası verdi, yeniden denenmedi; Jüpiter karşı konum tarihi d18_kaynak.md'deki doğrulanmış satırlardan alındı.
+
+### Bölüm 1 — Tycho ve Kepler (ek)
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| [W] Brahe'nin gözlemleri iki yay dakikası içinde doğru kabul edilirdi | https://keplersdiscovery.com/aVicariousHypothesis.html | "Tycho Brahe's observation were considered accurate to within two minutes of arc." |
+| [W] İkinci kaynak: ±2 yay dakikası ya da daha iyi | https://arxiv.org/pdf/1610.05750 | "demonstably accurate to ±2′ or better" (K. Krisciunas, Texas A&M) |
+| [W] Ptolemaios 10 yay dakikasının altına inmediğini söylüyordu | https://keplersdiscovery.com/aVicariousHypothesis.html | Ptolemy "professed not to go below 10'" |
+| [W] Kepler'in modeli gözlemden en çok 8 yay dakikası saptı | https://keplersdiscovery.com/aVicariousHypothesis.html | "found that they differed at maximum by eight minutes from the observations." |
+| [W] İkinci kaynak: 8 yay dakikalık sistematik fark | https://arxiv.org/pdf/1610.05750 | "systematic differences amounting to 8′ between the measured ecliptic longitudes of Mars" |
+| [W] Kepler: sekiz dakika astronominin yeniden kurulmasına yol açacak | https://keplersdiscovery.com/aVicariousHypothesis.html | these eight minutes "will have led the way to the reformation of all of astronomy." |
+| "Daireye dayanan, özenle ayarlanmış model" | https://keplersdiscovery.com/aVicariousHypothesis.html | sayfa başlığı "A Vicarious Hypothesis" (dairesel model); ayrıntı derste verilmedi |
+| [P] Dolunay görünür çapı 1896 yay saniyesi | https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html | Apparent diameter (seconds of arc) "1896" (d10_kaynak.md satır 135; NSSDCA'da "Mean values at opposition from Earth" başlığı altında) |
+| [H] 1896/60 = 31,6′; 8/31,6 = 0,253; 2/31,6 = 0,063 | — | hesap |
+
+### Bölüm 2 — Mevsim süreleri (ek)
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| [W] Mevsim süreleri 88,99 / 92,76 / 93,65 / 89,84 gün | https://earthsky.org/tonight/years-shortest-season-starts-with-december-solstice/ | "December solstice to March equinox: 88.99 days" ; "March equinox to June solstice: 92.76 days" ; "June solstice to September equinox: 93.65 days" ; "September equinox to December solstice: 89.84 days" |
+| [W] Günberi ocak başında, Dünya o sırada en hızlı | https://earthsky.org/tonight/years-shortest-season-starts-with-december-solstice/ | "Because Earth reaches perihelion in early January, our planet moves most swiftly in its orbit around now." |
+| [W] İkinci kaynak: kış ~89, yaz 93 gün; yakınken daha hızlı | https://stardate.org/podcast/2022-01-03 | "winter is only about 89 days long, compared to 93 days of summer" ; "When Earth is close to the Sun, it moves faster in its orbit than when it's farther away." |
+| [H] 93,65 − 88,99 = 4,66; (92,76 + 93,65) − (89,84 + 88,99) = 7,58 gün | — | hesap |
+| [P] Mevsimlerin nedeni eğiklik; günberi ocakta | https://spaceplace.nasa.gov/seasons/en | d1_kaynak.md: "Earth's tilted axis causes the seasons." ; "perihelion (when we are closest) occurs in January" |
+
+### Bölüm 3 — Üçüncü yasa (ek paragraf)
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| [P] Uranüs 1781, Neptün 1846 | https://nssdc.gsfc.nasa.gov/planetary/factsheet/uranusfact.html ; https://www.nasa.gov/history/175-years-ago-astronomers-discover-neptune-the-eighth-planet | d9_kaynak.md: "13 March 1781" ; "On the night of Sept. 23-24, 1846, astronomers discovered Neptune" |
+| Üçüncü yasanın yayımlanmasından (1619) çok sonra | https://en.wikipedia.org/wiki/Kepler%27s_laws_of_planetary_motion | "Kepler's third law was published in 1619 in his Harmonice Mundi." ; [H] 1781 − 1619 = 162 yıl |
+| [P] Neptün a = 30,06896348 AB (J2000) ; dönem 60.189,018 gün | https://nssdc.gsfc.nasa.gov/planetary/factsheet/neptunefact.html | d9_kaynak.md satır 246: "Semimajor axis (AU)" "30.06896348" ; "Sidereal orbit period (days) \| 60,189.018" |
+| [H] 30,07³ = 27.190; √ = 164,9 yıl; 60.189/365,25 = 164,79 yıl; fark %0,06 | — | hesap |
+| Gezegen kütlesinin formüle girmemesi | https://en.wikipedia.org/wiki/Kepler%27s_laws_of_planetary_motion | a³/T² = G(M+m)/4π² ve M + m ≈ M (Bölüm 5 satırları) |
+
+### Yeni bölüm — Gökte geri giden gezegenler
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| [W] Mars yörüngesinde yön değiştirmez; geri görünmenin nedeni Dünya'nın hareketi | https://science.nasa.gov/image-article/apod-2018-november-8-mars-in-the-loop/ | "But Mars didn't actually reverse the direction of its orbit." ; WebFetch özeti: Dünya içteki yörüngede daha hızlı gittiği için dış gezegenleri "overtakes and laps" |
+| [W] İlmek biçimi | https://science.nasa.gov/image-article/apod-2018-november-8-mars-in-the-loop/ | sayfa başlığı "Mars in the Loop" |
+| [P] Dünya 29,8, Mars 24,1 km/s | https://nssdc.gsfc.nasa.gov/planetary/factsheet/ | "Orbital Velocity (km/s) \| 47.4 \| 35.0 \| 29.8 \| 1.0* \| 24.1 \| ..." |
+| Otoyol benzetmesi; eğik düzlemler yüzünden ilmek | — | yazar benzetmesi; "eğik düzlemler" ÇIKARIM (yörünge eğiklikleri bu derste sayıyla verilmedi) |
+| [P] Karşı konum: gezegen Güneş'in tam karşısında, en parlak | https://skyatnightmagazine.com/advice/skills/mars-opposition | d18_kaynak.md (karşı konum tanımı ve 2027 tarihi) |
+| Güneş batarken doğar, bütün gece görünür | — | ÇIKARIM: Güneş'in tam karşısındaki (180°) cisim, Güneş ufkun altına inerken ufkun üstüne çıkar |
+| Geri hareket karşı konum çevresinde | https://science.nasa.gov/image-article/apod-2018-november-8-mars-in-the-loop/ | WebFetch özeti: 2018 geri hareketi 27 Temmuz karşı konumu çevresinde; sollama anı = karşı konum ÇIKARIM |
+| [W] Mars sinodik dönemi 779,94 gün | https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html | "Synodic period (days) \| 779.94" |
+| [W] Jüpiter sinodik dönemi 398,88 gün | https://nssdc.gsfc.nasa.gov/planetary/factsheet/jupiterfact.html | "Synodic period (days) \| 398.88" |
+| [P] Jüpiter karşı konumu 11 Şubat 2027 (EarthSky), 10 Şubat (Cambridge); Aslan | https://www.cambridge.org/turnleft/pages/the_planets/jupiter_and_saturn_2027 | d18_kaynak.md: EarthSky "February 11, 2027", "Leo" ; Cambridge "February 10", "in Leo" |
+| [P] Mars karşı konumu 19 Şubat 2027, Aslan, −1,2 | https://skyatnightmagazine.com/advice/skills/mars-opposition | d18_kaynak.md: "reaches opposition on 19 February 2027" ; nakedeyeplanets.com: "February 19", "Leo", "-1.2" |
+| İkisi de çıplak gözle kolay görülür | https://nssdc.gsfc.nasa.gov/planetary/factsheet/jupiterfact.html | Jüpiter en çok −2,94; Mars 2027'de −1,2 (yukarıdaki satır); ikisi de kolay görülen parlaklıkta (d1 kadir ölçeği) |
+| Ocaktan nisana çizim önerisi | — | yazar gözlem önerisi; geri hareketin tam başlangıç/bitiş tarihleri kaynakla bulunmadığı için verilmedi |
+| [H] 1/365,256 − 1/686,980 = 0,0012822; 1/0,0012822 = 779,93 gün = 2,135 yıl | — | hesap |
+| [H] Soru: 1 − 1/4 = 0,75; S = 1,333 yıl = 487 gün | — | hesap |
+
+### Bölüm 4 — Newton (ek paragraf)
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| [H] 6,674e-11 × 70 × 70 / 1 = 3,27e-7 N; 70 × 9,80 = 686 N; oran 2,1e9 | https://physics.nist.gov/cgi-bin/cuu/Value?bg | G değeri (Bölüm 4 satırı); 9,80 m/s² JPL ekvator çekimi (d9_kaynak.md Earth satırı) |
+| Her kütle her kütleyi çeker, katkılar toplanır | https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation | "any particle attracts any other particle" (Bölüm 4 satırı); "toplanır" ÇIKARIM |
+
+### Yeni bölüm — Ay testi
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| [W] Conduitt'in aktarımı: "Ay'ın yüksekliğine kadar neden olmasın" | https://pwg.gsfc.nasa.gov/stargaze/Sgravity.htm | "Why not as high as the Moon thought he to himself" (David P. Stern) |
+| [W] Ay ~60 Dünya yarıçapı; çekim 3600 kat zayıf | https://pwg.gsfc.nasa.gov/stargaze/Sgravity.htm | "The distance R to the Moon is then about 60 RE" ; "3600 times weaker" |
+| [W] İkinci kaynak: 60 kat, 1/3600 | https://vikdhillon.staff.shef.ac.uk/teaching/phy105/celsphere/phy105_gravitation.html | "Newton knew that the radius of the Moon's orbit was about 60 times the radius of the Earth." ; "he would have predicted a ratio of 1/3600." |
+| [W] Newton 23 yaşında; Ay saniyede 1,3 mm düşer | https://vikdhillon.staff.shef.ac.uk/teaching/phy105/celsphere/phy105_gravitation.html | "Newton, at the age of 23, came to think about the motion of the Moon." ; "in 1 second the Moon falls vertically towards the Earth by 1.3 mm." |
+| a = 4π² r / T² | https://en.wikipedia.org/wiki/Kepler%27s_laws_of_planetary_motion | [H] T² = (4π²/GM) r³ (Bölüm 5 satırı) → GM/r² = 4π² r / T² |
+| [P] Yerdeki çekim 9,80 m/s² | https://ssd.jpl.nasa.gov/planets/phys_par.html | d9_kaynak.md: Earth satırı ekvator çekimi 9.80 |
+| [H] a = 39,478 × 3,844e8 / (2,36059e6)² = 0,0027233 m/s²; ½at² = 1,36 mm; 9,80/0,0027233 = 3599; ½ × 9,80 = 4,9 m | — | hesap |
+| [H] 384.400/6371 = 60,34; 60,34² = 3640; 9,80/3640 = 0,002692 (ölçülenden %1,1 küçük); GM_D(1 + 0,07346/5,9722)/r² = 0,002731 (fark %0,3) | https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html | GM 0,39860 × 10⁶ km³/s² (Bölüm 6 satırı); kütleler Bölüm 4–5 satırları |
+
+### Yeni bölüm — Jüpiter'in uyduları
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| [P] 1610, Galileo ve Marius bağımsız; adlar | https://www.nasa.gov/wp-content/uploads/2009/12/moons_of_jupiter_lithograph.pdf | d9_kaynak.md: "1610 — Galileo Galilei and Simon Marius independently discover four moons orbiting Jupiter." |
+| [W] Dünya dışında bir gezegeni dolandığı bulunan ilk cisimler; Ptolemaios düzenine darbe | https://en.wikipedia.org/wiki/Galilean_moons | "the first objects to be found to orbit any planet beyond Earth" ; "dealt a serious blow to the then-accepted (among educated Europeans) Ptolemaic world system" |
+| [W] Işık kirliliğinde bile sıradan dürbünle | https://en.wikipedia.org/wiki/Galilean_moons | "readily seen with common binoculars, even under night sky conditions of high light pollution" |
+| [W] Karşı konumda 4,6–5,6 kadir | https://en.wikipedia.org/wiki/Galilean_moons | "They have apparent magnitudes between 4.6 and 5.6 when Jupiter is in opposition with the Sun." |
+| [W] En çok 2–10 yay dakikası açılırlar | https://en.wikipedia.org/wiki/Galilean_moons | "The maximum angular separations of the moons are between 2 and 10 arcminutes from Jupiter." |
+| [W] Yörüngeler: Io 421.800 km 1,762732 g; Europa 671.100 km 3,525463 g; Ganymede 1.070.400 km 7,155588 g; Callisto 1.882.700 km 16,690440 g | https://ssd.jpl.nasa.gov/sats/elem/sep.html | tablo satırları "421800. … 1.762732", "671100. … 3.525463", "1070400. … 7.155588", "1882700. … 16.690440" |
+| [W] İkinci kaynak (yuvarlak): 422/671/1070/1883 bin km; 1,8/3,6/7,2/16,7 gün | https://nssdc.gsfc.nasa.gov/planetary/factsheet/galileanfact_table.html | "Orbital Distance (10^3 km) 422 671 1070 1883" ; "Orbital Period (days) 1.8 3.6 7.2 16.7" |
+| [H] 1.882.700/421.800 = 4,463; 16,690/1,7627 = 9,469; 4,463^1,5 = 9,430; a³/T² (10¹⁵ km³/gün²): 24,15 / 24,32 / 23,95 / 23,96 → en çok %1,5 fark | — | hesap |
+| [H] Callisto'dan Jüpiter kütlesi: 4π² × (1,8827e9)³ / (6,6743e-11 × (1,442054e6)²) = 2,6345e29 / 138,79 = 1,8982e27 kg | — | hesap |
+| [W] Jüpiter kütlesi 1898,13 × 10²⁴ kg; Dünya'nın 317,83 katı | https://nssdc.gsfc.nasa.gov/planetary/factsheet/jupiterfact.html | "Mass (1024 kg) \| 1,898.13 \| 5.9722 \| 317.83" |
+| [W] Callisto kütlesi 107,6 × 10²¹ kg (ihmal edilebilir: Jüpiter'in %0,006'sı) | https://nssdc.gsfc.nasa.gov/planetary/factsheet/galileanfact_table.html | "Mass (10^21 kg) … 107.6" |
+| Dolunay çapının üçte biri (10′ / 31,6′) | — | [H] 10/31,6 = 0,32 |
+| Jüpiter Şubat 2027 başında karşı konumda | https://www.cambridge.org/turnleft/pages/the_planets/jupiter_and_saturn_2027 | yukarıdaki d18 satırları |
+
+### Yörünge (bölüm adı aynı) ve yeni bölüm — Uzay istasyonu
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| [W] İstasyon 200–250 mil yükseklikte; orada çekim ~%90 | https://www.nasa.gov/learning-resources/for-kids-and-students/what-is-microgravity-grades-5-8/ | "The International Space Station orbits Earth at an altitude between 200 and 250 miles." ; "At that altitude, Earth's gravity is about 90 percent of what it is on the planet's surface." |
+| [W] Serbest düşüş; birlikte düştükleri için süzülürler | https://www.nasa.gov/learning-resources/for-kids-and-students/what-is-microgravity-grades-5-8/ | "The answer is because they are in free fall." ; "Since they are all falling together, the crew and objects appear to float when compared with the spacecraft." |
+| [H] 200 mil = 322 km; 250 mil = 402 km | — | 1 mil = 1,609 km |
+| [P] Heavens-Above, 27 Ekim 2026: yörünge 415 × 424 km, 51,6° | https://www.heavens-above.com/PassSummary.aspx?satid=25544&lat=41.0046&lng=29.0762&loc=Fetih&alt=0&tz=UCTm3 | proje dosyası arastirma/heavens_above/ha_iss_passsummary.html: "Orbit: 415 x 424 km, 51.6° (Epoch: 27 October)" ; ha_satinfo_25544.html: "Orbit 415 x 424 km, 51.6°" |
+| [P] Fetih için 27 Ekim–5 Kasım 2026: 14 görünür sabah geçişi, en parlak −3,7 | aynı | ha_iss_passsummary.html tablo: 27 Oct −1.4 … 2 Nov −3.7 … 5 Nov −0.9 (14 satır, saatler 05:20–07:04) |
+| [P] İstasyon ~8 km/s (5 mil/s), ~90 dk | https://www.nasa.gov/international-space-station/space-station-facts-and-figures/ | "five miles per second, orbiting Earth about every 90 minutes." |
+| [P] Spot the Station: gün doğumu/batımından önce-sonra birkaç saat; uçak ya da çok parlak yıldız gibi; yanıp sönmez, yön değiştirmez, uçaktan hızlı | https://www.nasa.gov/spot-the-station/ | "All International Space Station sightings will occur within a few hours before or after sunrise or sunset." ; "an airplane or a very bright star moving across the night sky" ; "does not have flashing lights or change direction" ; "moves faster than a typical airplane" (bu oturumda yeniden okundu; ayrıca gorevler_kaynak.md) |
+| 51,6° eğik yörünge ±51,6° enlemleri arasında geçer; 41° içeride | — | ÇIKARIM (yörünge eğikliği = yer izinin ulaştığı en yüksek enlem); Heavens-Above'ın Fetih için görünür geçiş listelemesi bunu doğrular |
+| Mikro çekim adı | https://www.nasa.gov/learning-resources/for-kids-and-students/what-is-microgravity-grades-5-8/ | sayfa başlığı "What Is Microgravity?" |
+| Asansör düşünce deneyi | — | yazar benzetmesi (serbest düşüş tanımından) |
+| [P] Jüpiter en parlak −2,94 | https://nssdc.gsfc.nasa.gov/planetary/factsheet/jupiterfact.html | "Maximum apparent visual magnitude -2.94" (bu oturumda okundu) |
+| [H] r = 6791 km; (6371/6791)² = 0,880; T = 2π √(6791³/398.600) = 5569 s = 92,8 dk | — | hesap |
+
+### Bölüm 7 — Kurtulma hızı (ek)
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| [W] Roketler kurtulma hızına tek hamlede ulaşmak zorunda değil; itki süren araç her hızla kaçabilir | https://en.wikipedia.org/wiki/Escape_velocity | "Rockets do not have to reach escape velocity in a single maneuver" ; "can attain escape at any non-zero speed" |
+| [W] Formül balistik (itkisiz) yörünge için | https://en.wikipedia.org/wiki/Escape_velocity | "Ballistic trajectory– no other forces are acting on the object, such as propulsion and friction" |
+| [W] Ekvatordan doğuya 10,735 km/s; üsler ekvatora yakın | https://en.wikipedia.org/wiki/Escape_velocity | "a rocket launched tangentially from the Earth's equator to the east requires an initial velocity of about 10.735 km/s" ; "space launch facilities are often located as close to the equator as feasible." |
+| [H] 11,186 − 10,735 = 0,451; ekvator dönüş hızı 2π × 6378,137 / 86.164,1 s = 0,465 km/s; İstanbul (41°) 0,465 × cos 41° = 0,351 km/s | https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html | ekvator yarıçapı 6378,137 km ve yıldızıl dönme 23,9345 sa (NSSDCA; d9_kaynak.md) |
+| [W] Dünya uzaklığında Güneş'ten kurtulma 42,1 km/s | https://en.wikipedia.org/wiki/Escape_velocity | tablo satırı "At Earth \| The Sun's gravity \| 42.1" |
+| [H] √2 × 29,78 = 42,1; 42,1 − 29,8 = 12,3 km/s | https://nssdc.gsfc.nasa.gov/planetary/factsheet/ | Dünya yörünge hızı 29,8 km/s |
+
+### Bölüm 8 — Gelgitler (ek)
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| [W] Akdeniz ve Baltık'ın salınım dönemleri astronomik zorlamayla çakışmaz; en büyük gelgit dar geçitlerin yakınında | https://en.wikipedia.org/wiki/Tide | "the oscillation modes of the Mediterranean Sea and the Baltic Sea do not coincide with any significant astronomical forcing period" ; "the largest tides are close to their narrow connections with the Atlantic Ocean." |
+| [W] Türk Boğazlar Sistemi düşük gelgitli | https://dergipark.org.tr/en/download/article-file/103910 | "the area is one of low tidal amplitude." (Alpar ve Yüce 1997, Turkish Journal of Marine Sciences 3, 11–22) |
+| [W] Karadeniz genlik 3–9 cm | https://dergipark.org.tr/en/download/article-file/103910 | "Tidal amplitudes are very small (3-9 cm)" |
+| [W] Marmara'da günlük bileşenler baskın | https://dergipark.org.tr/en/download/article-file/103910 | "Diurnal constituents are more dominant in the Sea of Marmara" |
+| [W] En büyük: Gökçeada ortalama büyük gelgit aralığı 23,0 cm | https://dergipark.org.tr/en/download/article-file/103910 | Tablo 2 (WebFetch özeti): Gökçeada "mean spring range of 23.0 cm" |
+| [W] Aynı çalışmanın özet sayfası: gelgit genliği küçük | https://blackmeditjournal.org/volumes-archive/vol3-1997/vol-3-1997-no-1/short-and-tidal-period-sea-level-variations-along-the-turkish-strait-system/ | "Tidal oscillations are small in amplitude and tidal regimes change along the Turkish Strait System." |
+| [H] 1630 / 23 = 70,9 | — | hesap (16,3 m Bölüm 8 satırı) |
+| [W] Yer gelgiti santimetreler; ekvatorda ~55 cm, ~15 cm Güneş'ten | https://en.wikipedia.org/wiki/Tide | "these forces produce periodic vertical displacements of centimeters, a phenomenon known as Earth tide." ; "terrestrial tides' semi-diurnal amplitude can reach about 55 centimetres (22 in) at the Equator" ; "15 centimetres (5.9 in) due to the Sun" |
+| İstanbul yer gelgiti değeri | — | BULUNAMADI; derste açıkça söylendi |
+| Not: makalede Boğaz için "diurnal" ve "mixed, but mainly semi-diurnal" ifadeleri birlikte geçiyor (iki farklı bölüm); bu yüzden derste Boğaz rejimi verilmedi, yalnız Marmara cümlesi kullanıldı | — | — |
+
+### Yeni bölüm — Merkür'ün günberi kayması
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| [P] Le Verrier Neptün'ün yerini hesapladı; Galle ilk gecede buldu (1846) | https://www.nasa.gov/sites/default/files/files/Neptune_Lithograph_h.pdf | d9_kaynak.md: "Le Verrier sent his predictions to Johann Gottfried Galle" ; "found Neptune on his first night of searching in 1846." |
+| [W] Le Verrier 1859: ~574 yay saniyesi/yüzyıl | https://serviastro.ub.edu/sites/serviastro/files/2019-10/mercurivulcaneng.pdf | "Le Verrier showed in 1859 that the orbit of Mercury rotates with a rate of approximately 574 arcsecs per century." (C. Pantelidou, ICCUB) |
+| [W] İkinci kaynak 574; Newton 531; artık 43 | https://www.eftaylor.com/exploringblackholes/Ch10AdvanceOfMercurysPerihelion200331v1.pdf | "the perihelion of Mercury precesses at the rate of 574 arcseconds (0.159 degree) per Earth-century" ; "Newton's mechanics accounts for 531 seconds of arc of this advance" ; "a stubborn 43 arcseconds" |
+| [W] Diğer gezegenler 531'i açıklar; 43 açık | https://serviastro.ub.edu/sites/serviastro/files/2019-10/mercurivulcaneng.pdf | "all the corrections due to the other planets could only account for 531 arcsecs per century" ; "leaving a deficit of 43 arcsec." |
+| [W] Üçüncü kaynak: Le Verrier 1859; 43″ artık | https://arxiv.org/pdf/1705.04397 | "it was viewed by Le Verrier in 1859" ; "leaving a residual of 43” century-1" |
+| [W] Vulkan önerildi, bulunamadı | https://serviastro.ub.edu/sites/serviastro/files/2019-10/mercurivulcaneng.pdf | "there exists another planet, called Vulcan" ; "astronomers searched for Vulcan but with no success." |
+| [W] Einstein 1915 doğru değeri türetti | https://arxiv.org/pdf/1705.04397 | "In 1915 Einstein derived the correct value of the precession of the perihelion of Mercury" |
+| AYRILIK: Pantelidou 1916 der | https://serviastro.ub.edu/sites/serviastro/files/2019-10/mercurivulcaneng.pdf | "It was only in 1916 when Einstein's theory of General Relativity (GR) correctly accounted for this deficit." (derste iki tarih de belirtildi) |
+| [W] JPL hesabı: Merkür 42,980 ± 0,001; Venüs 8,618; Dünya 3,846; Mars 1,351 ″/yüzyıl | https://www.eftaylor.com/exploringblackholes/Ch10AdvanceOfMercurysPerihelion200331v1.pdf | Table 10.1: "Mercury 42.980 ± 0.001" ; "Venus 8.618 ± 0.041" ; "Earth 3.846 ± 0.012" ; "Mars 1.351 ± 0.001" |
+| Elips yörüngenin dönmesi = günberinin ilerlemesi | https://serviastro.ub.edu/sites/serviastro/files/2019-10/mercurivulcaneng.pdf | "the orbit of Mercury rotates" |
+| [H] 3600/43 = 83,7 yüzyıl; 360 × 3600/574 = 2258 yüzyıl; 8 × 60 = 480; 480/43 = 11,2 | — | hesap |
+| [P] Uranüs düzensizlikleri | https://www.nasa.gov/history/175-years-ago-astronomers-discover-neptune-the-eighth-planet | d9_kaynak.md: "noticed irregularities in its orbit that Newton's law of universal gravitation could not fully explain" |

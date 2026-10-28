@@ -154,3 +154,152 @@ Yeniden açılıp doğrulanan (değişiklik gerekmeyen) yüksek riskli iddialar:
 Python3 ile yeniden hesaplananlar (hepsi doğru): 5 sa 30 dk = 82,5°; 6 sa 20 dk = 95°; 41 + 60 = 101; −55 − 41 = −96; 41 + 45 = 86; −52 − 41 = −93; günberi–günöte farkı %3,40; öğle Güneşi 72,43° / 25,55° / 48,99°, oran 2,83; 30 gün → 117,95 dk; 100^(1/5) = 2,5119; 2 kadir = 6,310; Sirius/Polaris 10^(0,4 × 3,44) = 23,77; 14 kadir = 398.107; 3,5 kadir = 25,1.
 
 Askıda kalan: yok. Kullanılan WebSearch: 0 (d1, d2, d11 için toplam).
+
+## v3 genişletme (28 Ekim 2026)
+
+Yeni bölümler: "Yıldız zamanı ve saat açısı: gökyüzünün kendi saati", "Dünya'nın hareketini nereden biliyoruz?", "Atmosferin oyunları: kırılma ve sönükleşme". Mevcut sekiz bölüme paragraf eklendi; başlıklar ve kid alanları değişmedi. Alıntılar WebFetch aracının döndürdüğü metinden (araç sayfayı özetler; tırnak içindekiler aracın birebir aktardığı ifadeler). Kullanılan WebSearch: 14.
+
+### Bölüm 1 – Gök küresi (eklenenler)
+
+| İddia | Kaynak | Kaynaktaki ifade |
+|---|---|---|
+| 1° = 60′, 1′ = 60″ (1° = 3600″) | https://en.wikipedia.org/wiki/Right_ascension | ders formülündeki "1 dk = 15′; 1 sn = 15″" dönüşümüyle tutarlı tanım; 3600 = 60 × 60 hesap |
+| Dolunayın ortalama görünür çapı 1896″ ≈ 31,6′ | https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html | WebFetch: "Apparent diameter" 1896 (arcseconds), "Mean values at opposition from Earth"; 1896 / 60 = 31,6 hesap |
+| Güneş'in görünür çapı ≈ 30′ | https://en.wikipedia.org/wiki/Atmospheric_refraction | WebFetch: setting sun "flattened by about 5′ (about 1/6 of its apparent diameter)" → 6 × 5′ = 30′ |
+| Meridyen: gök kutuplarından ve başucundan geçen büyük çember; ufkun K ve G noktalarını içerir | https://wikiwand.com/en/articles/Meridian_(astronomy) | WebFetch: "the meridian is the great circle passing through the celestial poles" (devamı zenith ve nadir) ; "Consequently, it contains also the north and south points on the horizon" |
+| Doruğa ulaşma: cisim üst meridyene değer, en yüksek noktasına varır; her gün meridyeni geçer | https://wikiwand.com/en/articles/Meridian_(astronomy) | WebFetch: "At culmination, the object contacts the upper meridian and reaches its highest point in the sky." ; "On any given (sidereal) day/night, a celestial object will appear to drift across, or transit, the observer's upper meridian" |
+
+### Bölüm 2 – Ufuk koordinatları (eklenenler)
+
+| İddia | Kaynak | Kaynaktaki ifade |
+|---|---|---|
+| Doruk yüksekliği 90° − |φ − δ| (öğle Güneşi kuralının genel hali) | https://en.wikipedia.org/wiki/Solar_zenith_angle ; https://en.wikipedia.org/wiki/Sirius | Güneş için kural bölüm 6 satırında. Genel hal St. Petersburg örneğiyle sağlandı: 90 − (59,94 + 16,72) = 13,3° ≈ kaynaktaki 13° |
+| Sirius dik açıklık −16° 42′ 58″ (≈ −16,7°) | https://en.wikipedia.org/wiki/Sirius | WebFetch: Declination "−16° 42′ 58.02″" |
+| İstanbul'dan Sirius doruğu ≈ 32° | hesap | 90 − (41,01 + 16,716) = 32,27 |
+| St. Petersburg'dan ≈ 13°; 73° K'nin kuzeyinden görünmez | https://en.wikipedia.org/wiki/Sirius | WebFetch: "reaching only 13° above the horizon from Saint Petersburg" ; "visible from almost everywhere on Earth, except latitudes north of 73° N" |
+
+### Bölüm 3 – Ekvatoral koordinatlar (eklenenler)
+
+| İddia | Kaynak | Kaynaktaki ifade |
+|---|---|---|
+| Sirius sağ açıklık ≈ 6 sa 45 dk, dik açıklık ≈ −16° 43′ | https://en.wikipedia.org/wiki/Sirius | WebFetch: RA "06h 45m 08.917s", Dec "−16° 42′ 58.02″" (J2000 dönemi) |
+| Presesyon ilkbahar noktasını tutulum boyunca batıya kaydırır | https://en.wikipedia.org/wiki/Axial_precession | WebFetch: "the equinoxes moved westward along the ecliptic relative to the fixed stars" |
+| Hız ≈ 50,3″/yıl, 71,6 yılda 1° | https://en.wikipedia.org/wiki/Axial_precession | WebFetch: "at the rate of about 50.3 seconds of arc per year, or 1 degree every 71.6 years" |
+| Bu hareket koordinat sistemini döndürür; dönem (epoch, ör. J2000.0) belirtmek gerekir | https://en.wikipedia.org/wiki/Equatorial_coordinate_system | WebFetch: "these motions necessitate the specification of the equinox of a particular date, known as an epoch" ; "Mean equinox of a standard epoch (usually J2000.0 ...)" ; "slow, continuous turning of the coordinate system westward" |
+| 2000→2026 kayma ≈ 22′, dolunay çapının ≈ 2/3'ü | hesap | 26 × 50,3 = 1307,8″ = 21,8′ ; 21,8 / 31,6 = 0,69 |
+| Teleskobu otomatik yöneltirken hesaba katılmalı | çıkarım | yukarıdaki "necessitate the specification ... epoch" ifadesinden; çıplak gözle fark edilmemesi 22′ < 31,6′ hesabına dayanır |
+| Keşif Batı'da genellikle Hipparkos'a (MÖ 2. yy) dayandırılır | https://en.wikipedia.org/wiki/Axial_precession | WebFetch: "usually attributed in the West to the 2nd-century-BC astronomer Hipparchus" |
+
+### Bölüm 4 – Günlük dönüş (eklenenler)
+
+| İddia | Kaynak | Kaynaktaki ifade |
+|---|---|---|
+| İstanbul'da δ < ≈ −49° doğmaz | hesap | δ − 41 < −90 → δ < −49 (koşul bölüm 4 satırında, Circumpolar star) |
+| Kanopus ikinci en parlak yıldız, Karina'da; ≈ 37° K'nin kuzeyinden hiç doğmaz | https://earthsky.org/?p=2965 | WebFetch: "the second-brightest star – Canopus in the constellation Carina the Keel" ; "Canopus never rises above the horizon for locations north of about 37 degrees north latitude." Türkçe ad Karina: veri/takimyildiz.json (Car) |
+| İstanbul bu çizginin ≈ 4° kuzeyinde | hesap | 41 − 37 = 4 |
+| Kuzeyde kutup çevresi yıldızları saat yönünün tersine; kutbun üstünde sola/batıya, altında sağa/doğuya; güneyde sağa/batıya | https://en.wikipedia.org/wiki/Diurnal_motion | WebFetch: "northern circumpolar stars move counter clockwise around Polaris" ; facing north below Polaris "rightward, or eastward", above Polaris "leftward, or westward" ; facing south "rightward, or westward" |
+
+### Bölüm 5 – Yıldız günü (eklenenler)
+
+| İddia | Kaynak | Kaynaktaki ifade |
+|---|---|---|
+| Güneş her gün tutulumda doğuya 1°'den biraz az ilerler | https://en.wikipedia.org/wiki/Ecliptic | WebFetch: "the Sun moves a little less than 1° eastward" (every day) ; 360 / 365,24 = 0,986 hesap |
+| Kış Üçgeni: Sirius, Procyon, Betelgeuse (kuzey yarımküre) | https://en.wikipedia.org/wiki/Sirius | WebFetch: Sirius "forms one of the three vertices of the Winter Triangle to observers in the Northern Hemisphere" with Procyon and Betelgeuse |
+| Sirius'un heliakal doğuşu Kahire'de 19 Temmuz (Jülyen) | https://en.wikipedia.org/wiki/Sirius | WebFetch: heliacal rising "occurs at Cairo on 19 July (Julian)" |
+| Gündüz göğündeki yıldızlar gün ışığında kaybolur; gece yarısı Güneş'in karşı tarafı | çıkarım | heliakal doğuşun tanımı ve geometri; ayrı kaynak açılmadı |
+| Antik dönemde bu doğuş Nil'in yıllık taşkınından hemen önceye düşüyordu | https://en.wikipedia.org/wiki/Sirius | WebFetch: heliacal rising placed "just before the Nile's annual flooding in antiquity" |
+
+### Yeni bölüm – Yıldız zamanı ve saat açısı
+
+| İddia | Kaynak | Kaynaktaki ifade |
+|---|---|---|
+| Sağ açıklık, cismin yerel meridyenden geçeceği yıldız zamanını verir | https://kstars-docs.kde.org/en/user_manual/ai-hourangle.html | WebFetch: "the Right Ascension of an object indicates the Sidereal Time at which it will transit across your Local Meridian" |
+| İlkbahar noktası meridyeni yerel yıldız zamanı 0 sa'te geçer | https://en.wikipedia.org/wiki/Sidereal_time | WebFetch: "the March equinox would transit the meridian of the observatory at 0 hours local sidereal time" |
+| Saat açısı = yerel yıldız zamanı − sağ açıklık; 0 → meridyende | https://kstars-docs.kde.org/en/user_manual/ai-hourangle.html | WebFetch: "HAobj = LST - RAobj" ; "an Hour Angle of zero means the object is currently on the Local Meridian" |
+| Saat açısı meridyenden batıya ölçülür | https://en.wikipedia.org/wiki/Equatorial_coordinate_system | WebFetch: hour angle "measures the angular distance of an object westward along the celestial equator from the observer's meridian" |
+| 1 yıldız saati ≈ 59 dk 50 sn | hesap | 3600 × 23,9345 / 24 = 3590,2 sn = 59 dk 50,2 sn (NASA 23,9345 sa) |
+| Yerel yıldız zamanı = Greenwich yıldız zamanı + doğu boylamı | https://en.wikipedia.org/wiki/Sidereal_time | WebFetch: "local mean sidereal time = GMST + east longitude" ; "astronomical tables use Greenwich sidereal time (GST)" |
+| İstanbul: +1 sa 56 dk | hesap | 28° 57′ 18″ = 28,955° ; / 15 = 1,9303 sa = 1 sa 55,8 dk (boylam: https://en.wikipedia.org/wiki/Istanbul) |
+| Yıldız saati her gün ≈ 4 dk fazla ilerler | https://en.wikipedia.org/wiki/Sidereal_time | WebFetch: "Each day, the sidereal time at any given place and time will be about four minutes shorter than local civil time" |
+| Ufuk koordinatlarına çeviri küresel trigonometriyle | https://en.wikipedia.org/wiki/Horizontal_coordinate_system | sayfa ekvatoral→ufuk dönüşüm formüllerini içerir (önceki oturumda açılan sayfa); ders formül vermiyor |
+| Örnek: HA = −2 sa; 2 yıldız saati ≈ 1 sa 59 dk 40 sn; yükseklik ≈ 32° | hesap | 2 × 3590,17 = 7180,35 sn = 1 sa 59 dk 40 sn |
+
+### Yeni bölüm – Dünya'nın hareketini nereden biliyoruz?
+
+| İddia | Kaynak | Kaynaktaki ifade |
+|---|---|---|
+| Léon Foucault, Fransız fizikçi | https://en.wikipedia.org/wiki/Foucault_pendulum | WebFetch: "named after French physicist Léon Foucault" |
+| İlk halka gösterim Şubat 1851, Paris Gözlemevi | https://en.wikipedia.org/wiki/Foucault_pendulum | WebFetch: "The first public exhibition of a Foucault pendulum took place in February 1851 in the Meridian of the Paris Observatory." |
+| Birkaç hafta sonra Panthéon: 28 kg pirinç kaplı kurşun ağırlık, 67 m tel | https://en.wikipedia.org/wiki/Foucault_pendulum | WebFetch: "A few weeks later, Foucault made his most famous pendulum when he suspended a 28-kilogram (62 lb) brass-coated lead bob with a 67-metre-long (220 ft) wire from the dome of the Panthéon, Paris." |
+| Kutupta düzlem uzayda sabit, Dünya altında döner; bir yıldız gününde tam tur | https://en.wikipedia.org/wiki/Foucault_pendulum | WebFetch: "the plane of oscillation of a pendulum remains fixed relative to the distant masses of the universe" while "Earth rotates underneath it" ; "taking one sidereal day to complete a rotation" |
+| Ekvatorda yere göre dönmez | https://en.wikipedia.org/wiki/Foucault_pendulum | WebFetch: "When a Foucault pendulum is suspended at the equator, the plane of oscillation remains fixed relative to Earth." |
+| Dönüş hızı enlemin sinüsüyle orantılı; Paris ≈ 11,3°/sa | https://en.wikipedia.org/wiki/Foucault_pendulum | WebFetch: "is proportional to the sine of the latitude" ; "rotating clockwise approximately 11.3° per hour". Sağlama: 360 × sin 48,85° / 23,9345 = 11,33°/sa |
+| İstanbul: 236°/yıldız günü, 9,9°/sa, tam tur 36,5 sa | hesap | 360 × sin 41,01° = 236,2 ; / 23,9345 = 9,87 ; 360/236,2 × 23,9345 = 36,47 |
+| Bradley ve Molyneux; alet Kasım 1725, gözlem Aralık'tan; γ Draconis = Eltanin | https://en.wikipedia.org/wiki/Stellar_aberration | WebFetch: "The instrument was set up in November 1725, and observations on Eltanin were made starting in December." ; Bradley and Samuel Molyneux "decided to reinvestigate the motion of γ Draconis" ; Gamma Draconis "also known as Eltanin". Türkçe takımyıldız adı Ejderha: veri/takimyildiz.json (Dra) |
+| Amaç ıraklıktı | https://en.wikipedia.org/wiki/Stellar_aberration | WebFetch: aberration "supported the Copernican heliocentric model, which was the original motivation for the search for stellar parallax" |
+| Eylül→Mart ≈ 40″ güneye, Mart→Eylül geri; ne ıraklık ne ölçüm hatası | https://en.wikipedia.org/wiki/Stellar_aberration | WebFetch: "The star was observed to move 40″ southwards between September and March, and then reversed its course from March to September." ; "the apparent motion was evidently caused neither by parallax nor observational errors" |
+| 1727 açıklama; Ocak 1729 Royal Society | https://en.wikipedia.org/wiki/Stellar_aberration | WebFetch: "In 1727, James Bradley provided a classical explanation for it." ; "presented to the Royal Society in mid-January the following year" (1729) |
+| Yağmur ve şemsiye benzetmesi | https://en.wikipedia.org/wiki/Stellar_aberration | WebFetch: kaynak aynı benzetmeyi kullanıyor (yürüyen kişi şemsiyesini öne eğer, hızlandıkça daha çok) ; metin kendi sözlerimizle |
+| Sapma sabiti 20,49552″; Bradley 20,2″ | https://en.wikipedia.org/wiki/Stellar_aberration | WebFetch: "Its accepted value is 20.49552 arcseconds (sec) or 0.000099365 radians (rad) (at J2000)" ; "Bradley estimated it at 20.2"" |
+| Yıl içindeki değişim Dünya–yıldız göreli hareketini gösterir, Güneş merkezli modeli destekler | https://en.wikipedia.org/wiki/Stellar_aberration | WebFetch: "The change of aberration in the course of the year demonstrates the relative motion of the Earth and the stars." |
+| Sapma açısı v/c mertebesinde; sabit Dünya'nın ortalama hızıyla hesaplanır | https://en.wikipedia.org/wiki/Stellar_aberration | WebFetch: "The change in angle is of the order of v/c" ; "substituting the Earth's average speed in the Sun's frame ... and the speed of light" |
+| Dünya ortalama yörünge hızı 29,78 km/s | https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html | WebFetch: "Mean orbital velocity (km/s): 29.78" |
+| Işık hızı 299.792 km/s | https://physics.nist.gov/cgi-bin/cuu/Value?c | d2_kaynak.md satırı: "299 792 458 m s-1" |
+| Örnek: 0,0000993 rad ≈ 20,5″; dolunay çapının ≈ 1/90'ı | hesap | 29,78 / 299.792,458 = 9,934e-5 rad × 206.264,8 = 20,49″ (kaynaktaki 0,000099365 rad ile aynı) ; 1896 / 20,5 = 92,5 |
+| "İlk doğrudan kanıtlardan biri" (soru cevabı) | çıkarım | yukarıdaki "demonstrates the relative motion" ifadesine dayanır; "ilk" iddiası yumuşatılarak "ilklerinden biri" yazıldı |
+
+### Bölüm 6 – Mevsimler (eklenenler)
+
+| İddia | Kaynak | Kaynaktaki ifade |
+|---|---|---|
+| Yatay yüzeye düşen enerji Güneş yüksekliğinin sinüsüyle orantılı; 30°'de aynı ışın iki kat alana yayılır | https://webarchive.library.unt.edu/web/20140912092205/http://en.wikipedia.org/wiki/Insolation | WebFetch: insolation "is reduced in proportion to the cosine of the angle" ; açı yerden ölçülünce "the sine rather than the cosine is appropriate" ; "the sunbeam hitting the ground at a 30° angle spreads the same amount of light over twice as much area" |
+| İstanbul yaz/kış öğle oranı ≈ 2,2 | hesap | sin 72,43° = 0,953 ; sin 25,55° = 0,431 ; oran 2,21 |
+| Alçak Güneş ışığı daha kalın havadan geçer, daha çok zayıflar | https://en.wikipedia.org/wiki/Air_mass_(astronomy) ; https://ftexploring.com/solar-energy/sun-angle-and-insolation2.htm | WebFetch: "the thicker atmosphere through which it passes, the greater the attenuation" ; ftexploring: "the intensity of the solar radiation striking a horizontal surface is lower when the sun is lower in the sky" (tabloda 90°'de 1040, 30°'de 420 W/m², hava kütlesi sonrası) |
+| Işık şiddeti uzaklığın karesiyle azalır; günberide ≈ %7 fazla | https://www.discovermagazine.com/at-the-bottom-of-earths-orbit-22665 ; https://www.ess.uci.edu/~yu/class/ess5/Chapter.2.solar_radiation_season_files/v3_slide0071.htm | Discover: "about 7% more sunlight than on aphelion in July!" ; "The amount of energy you receive from an object gets smaller with the square of your distance" ; UCI: "radiation intensity varies by about 7% between perihelion and aphelion" ; hesap (152,100/147,095)² = 1,0692 |
+| Ocak'ta güney yarımküre Güneş'e doğru eğik | https://spaceplace.nasa.gov/seasons/en | WebFetch: (kuzeyde kış iken) "that is when it is the South Pole's turn to be tilted toward the Sun" |
+| Mevsim uzunlukları 88,99 / 92,76 / 93,65 / 89,84 gün; toplam 365,24 | https://earthsky.org/tonight/years-shortest-season-starts-with-december-solstice/ | WebFetch: "December solstice to March equinox: 88.99 days" ; "March equinox to June solstice: 92.76 days" ; "June solstice to September equinox: 93.65 days" ; "September equinox to December solstice: 89.84 days" ; toplam hesap 365,24 |
+| Neden: günberi Ocak başında, Dünya en hızlı o sırada | https://earthsky.org/tonight/years-shortest-season-starts-with-december-solstice/ | WebFetch: "Because Earth reaches perihelion in early January, our planet moves most swiftly in its orbit around now." |
+| Kış yazdan ≈ 4,7 gün kısa | hesap | 93,65 − 88,99 = 4,66 |
+| Mevsimsel gecikme: en sıcak günler gündönümünden 1–2 ay sonra; kara ve okyanus ısı depolar | https://earthsky.org/earth/why-isnt-the-longest-day-of-the-year-the-hottest-day | WebFetch: "the hottest days in the north actually come a month or two after the solstice" ; land and ocean need "those extra months to warm up – to store heat" ; "It takes a few months for the ocean to warm up in summer and cool down in winter" |
+| Soğuk mevsimde de gecikme | https://earthsky.org/earth/why-isnt-the-longest-day-of-the-year-the-hottest-day | WebFetch: (güney yarımküre) "The coldest weather comes in July and August" ; "take some extra weeks to give up their stored heat" |
+| "Mevsimsel gecikme" terimi | https://earthsky.org/earth/why-isnt-the-longest-day-of-the-year-the-hottest-day | arama sonucu başlıkları "seasonal lag" terimini kullanıyor; Türkçe karşılık çeviridir |
+
+### Bölüm 7 – Kadir ölçeği (eklenenler)
+
+| İddia | Kaynak | Kaynaktaki ifade |
+|---|---|---|
+| ISS −5,90 (yerberide, tam aydınlık) | https://en.wikipedia.org/wiki/Apparent_magnitude | WebFetch: "−5.90 International Space Station ... when the ISS is at its perigee and fully lit by the Sun" |
+| ISS Venüs'ün en parlak halinden parlak | hesap | −5,90 < −4,92 |
+| Mars en çok −2,94; Satürn en çok −0,55 | https://en.wikipedia.org/wiki/Apparent_magnitude | WebFetch: "−2.94 planet Mars ... maximum brightness" ; "−0.55 planet Saturn ... maximum brightness near opposition and perihelion" |
+| Arcturus −0,04, en parlak dördüncü yıldız | https://en.wikipedia.org/wiki/Apparent_magnitude | WebFetch: "−0.04 star Arcturus ... 4th brightest star to the naked eye" |
+| Uranüs en çok +5,38 | https://en.wikipedia.org/wiki/Apparent_magnitude | WebFetch: "+5.38 planet Uranus ... maximum brightness (Uranus comes to perihelion in 2050)" |
+| U, B, V bantları; V göze en yakın | https://en.wikipedia.org/wiki/Apparent_magnitude | WebFetch: standart bantlar U, B, V ; "The V band was chosen for spectral purposes and gives magnitudes closely corresponding to those seen by the human eye." |
+| Kırmızımsı yıldız mavi süzgeçte daha sönük | çıkarım | bantlara göre kadirin değişmesinden; renk ayrıntısı d2 dersinde (kara cisim) |
+| Atmosfer kaybı ve hava kütlesi düzeltilmeli | https://en.wikipedia.org/wiki/Apparent_magnitude | WebFetch: "the airmasses of the target and calibration stars must be taken into account" |
+| Logaritmik ölçek gözün logaritmik tepkisinden değil; bugün üs yasası düşünülüyor | https://en.wikipedia.org/wiki/Apparent_magnitude | WebFetch: "but it is now believed that the response is a power law." |
+| 35 mm → +11,3; 508 mm → +16,4 (yüksek büyütme, görsel) | https://en.wikipedia.org/wiki/Apparent_magnitude | WebFetch: limiting magnitudes for visual observation at high magnification: 35 mm 11.3, 508 mm 16.4 |
+| +16,4 ile +6,5 arası ≈ 10 kadir ≈ 10.000 kat | hesap | 16,4 − 6,5 = 9,9 ; 10^(0,4 × 9,9) = 8.318 (≈ 10.000 yuvarlak, "yaklaşık" yazıldı) |
+
+### Yeni bölüm – Atmosferin oyunları
+
+| İddia | Kaynak | Kaynaktaki ifade |
+|---|---|---|
+| Alt kenar ufka değdiğinde gerçek yükseklik negatif | https://en.wikipedia.org/wiki/Atmospheric_refraction | WebFetch: "so when the bottom of the sun's disc appears to touch the horizon, the sun's true altitude is negative" |
+| Ufukta ≈ 34′; 10 °C ve 1013,25 hPa'da 35,4′ | https://en.wikipedia.org/wiki/Atmospheric_refraction | WebFetch: "nominally 34′ on the horizon" ; "35.4′ at the horizon; all values are for 10 °C and 1013.25 hPa" |
+| 45°'de < 1′, başucunda 0 | https://en.wikipedia.org/wiki/Atmospheric_refraction | WebFetch: "less than 1′ (one arc-minute)" (45°) ; "Atmospheric refraction of the light from a star is zero in the zenith." |
+| Güneş ≈ 5′ (çapın 1/6'sı) basık | https://en.wikipedia.org/wiki/Atmospheric_refraction | WebFetch: "flattened by about 5′ (about 1/6 of its apparent diameter)" |
+| Basınç +0,9 kPa → +%1; sıcaklık −3 °C → +%1 | https://en.wikipedia.org/wiki/Atmospheric_refraction | WebFetch: "Refraction increases approximately 1% for every 0.9 kPa increase in pressure" ; "approximately 1% for every 3 °C decrease in temperature" |
+| Gün doğumu/batımı hava koşullarıyla değişir | https://en.wikipedia.org/wiki/Atmospheric_refraction | WebFetch: "Day-to-day variations in the weather will affect the exact times of sunrise and sunset." |
+| Takvim tanımı üst kenar (+2,5–3 dk); kırılma ≈ yarım derece (+≈6 dk); ekinoksta toplam ≈ 8 dk fazla gündüz (orta enlemler) | https://earthsky.org/space/why-arent-day-and-night-equal-on-the-day-of-the-equinox | WebFetch: "most almanacs define sunrise as when the top of the sun first touches the eastern horizon" ; "an extra 2 1/2 to three minutes of daylight at mid-temperate latitudes" ; "Atmospheric refraction actually raises the sun about 1/2 degree" ; "nearly another six minutes" ; "an additional eight or so minutes of daylight on the day of the equinox" |
+| Örnek: ekvator ufku 90° − φ açıyla keser; düşey hız 15° × cos φ ≈ 11,3°/sa; 3,0 dk + 1,4 dk; toplam ≈ 8,8 dk | hesap | kutup yüksekliği = φ (bölüm 4) → ekvator–ufuk açısı 90° − φ ; 15 × cos 41,01° = 11,32 ; 34/60/11,32 × 60 = 3,00 dk ; 16/60/11,32 × 60 = 1,41 dk ; 2 × (3,00 + 1,41) = 8,83 dk |
+| Kalın hava → daha çok zayıflama; ufka yakın cisimler daha sönük | https://en.wikipedia.org/wiki/Air_mass_(astronomy) | WebFetch: "the thicker atmosphere through which it passes, the greater the attenuation" ; "celestial bodies when nearer the horizon appear less bright than when nearer the zenith" |
+| Hava kütlesi başucunda 1; başucu açısı 60°'de ≈ 2; ufukta ≈ 38 | https://en.wikipedia.org/wiki/Air_mass_(astronomy) | WebFetch: "by definition, the relative air mass at the zenith is 1" ; "At a zenith angle of 60°, the air mass is approximately 2." ; "approximately 38 at the horizon" |
+| Sirius doruğunda ≈ 1,9 hava kütlesi | hesap | düzlem-paralel yaklaşım (kaynak: hava kütlesi ≈ başucu açısının sekantı, 60–75°'ye kadar kullanılabilir) ; 1 / cos(90 − 32,27) = 1,87 |
+| Parlak banliyö: ufuktan 35°'ye kadar gri-beyaz | https://en.wikipedia.org/wiki/Bortle_scale | bölüm 8 satırı: "sky within 35° of the horizon glows grayish white" |
+
+## v3 notları
+
+- Sözlüğe 11 terim eklendi (yay dakikası, meridyen, doruğa ulaşma, yerel yıldız zamanı, saat açısı, Foucault sarkacı, ışık sapması, günberi, mevsimsel gecikme, atmosferik kırılma, hava kütlesi); tanımlar yukarıdaki satırlara dayanır.
+- Yazılmayanlar: Aralık gündönümünde İstanbul gün doğumu azimutu ve gündüz süresi (timeanddate sayfası yalnız Haziran verisi veriyor); Güneyhaçı'nın İstanbul'dan görünmezliği (kaynak sayfada açıkça yok); İstanbul'da bir Foucault sarkacı olup olmadığı (arama sonuç vermedi); Türkiye'ye özgü ışık kirliliği oranı (Falchi atlası haberlerinde Türkiye geçmiyor); Merkür'ün en parlak değeri (−2,48, üst kavuşumda; o anda gözlenemediği için yanıltıcı olur); yıldız izi fotoğrafı gibi gözlem önerileri (d24'e bırakıldı).
+- Kanopus'un dik açıklığı sayı olarak yazılmadı; yalnız EarthSky'ın 37° enlem sınırı kullanıldı.
+- Ekinoks örneğindeki 8,8 dakika kaba hesaptır (kırılmanın ufuk yakınında değiştiği yok sayıldı); kaynağın "eight or so" değeriyle uyumlu.
