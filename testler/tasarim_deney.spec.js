@@ -170,6 +170,9 @@ test.describe('320 px (WCAG yeniden akış)', () => {
         return out;
       }, ids);
       for (const id of ids) expect(h[id].length, d + ' ' + id + ' ' + h[id]).toBe(1);
+      /* değer kutusu daralıp yazısı etiketten taşmasın */
+      const tasan = await page.evaluate(() => [...document.querySelectorAll('.kontrol label')].filter(l => l.scrollWidth > l.clientWidth + 0.5).map(l => l.textContent));
+      expect(tasan, d).toEqual([]);
     }
   });
 
