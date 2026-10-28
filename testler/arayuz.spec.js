@@ -4,6 +4,9 @@
 const { test, expect } = require('@playwright/test');
 const { celestrak } = require('./yardim');
 
+/* Gökyüzü bölümleri katlanır (ilk açılışta kapalı); bu dosyadaki testler liste içeriğini gördüğü için hepsi açık başlar */
+test.beforeEach(async ({ page }) => { await page.addInitScript(() => localStorage.setItem('urania_gokKat', JSON.stringify({ gezegen: true, hedef: true, meteor: true, algol: true, ortme: true, uydu: true, olay: true }))); });
+
 const SABIT_AN = new Date('2026-10-27T21:00:00+03:00');
 
 test.beforeEach(async ({ page }) => {

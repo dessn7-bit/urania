@@ -5,6 +5,9 @@ const { test, expect } = require('@playwright/test');
 const { ISTASYON, SON30 } = require('./yardim');
 const G = require('../gok.js');
 
+/* Gökyüzü bölümleri katlanır (ilk açılışta kapalı); bu dosyadaki testler liste içeriğini gördüğü için hepsi açık başlar */
+test.beforeEach(async ({ page }) => { await page.addInitScript(() => localStorage.setItem('urania_gokKat', JSON.stringify({ gezegen: true, hedef: true, meteor: true, algol: true, ortme: true, uydu: true, olay: true }))); });
+
 test('Meteor takvimi geçmişe de uzar: 1950 Perseid zirvesi ve etkinliği', () => {
   const v = require('../veri/meteor.json');
   const ls = G.meteorTakvimi(v, new Date('1950-08-12T20:00Z'));

@@ -23,6 +23,39 @@
     return 'çok karanlık gök';
   }
 
+  /* Katlanır bölümler (Gezegenler … Yaklaşan olaylar): sayfa bir telefonda 15 ekrandan uzundu. Plan ve üst kısım hep açık
+     (plan sesli okunuyor). Her bölümün başlığında kapalıyken de işe yarayan bir özet satırı var: listenin ilk öğesi ya da
+     sayısı; liste her yeniden çizildiğinde (MutationObserver) güncellenir. Açık/kapalı tercihi saklanır, ilk açılışta hepsi kapalı. */
+  const KAT_LISTE = { gezegen: 'gkGezegen', hedef: 'gkHedef', meteor: 'gkMeteor', algol: 'gkAlgol', ortme: 'gkOrtme', uydu: 'gkIss', olay: 'gkOlay' };
+  function ilkMetin(li, sec) {
+    const e = li.querySelector(sec); if (!e) return '';
+    const n = e.firstChild; return (n && n.nodeType === 3 ? n.textContent : e.textContent).trim();
+  }
+  function katOzetYaz(kat) {
+    const ul = el.querySelector('#' + KAT_LISTE[kat]), oz = el.querySelector('#gkOzet_' + kat);
+    if (!ul || !oz) return;
+    const bos = ul.querySelector('.bos');
+    const ls = [...ul.children].filter(li => li.tagName === 'LI' && !li.querySelector('.bos') && !li.classList.contains('sonuk'));
+    let m;
+    if (!ls.length) m = bos ? bos.textContent.trim() : '';
+    else if (kat === 'gezegen') m = ls.map(li => ilkMetin(li, '.ad')).join(', ');
+    else if (kat === 'hedef') m = ls.length + ' hedef karanlıkta 20°\'nin üstünde';
+    else m = 'sıradaki: ' + [ilkMetin(ls[0], '.ad'), ilkMetin(ls[0], '.sag')].filter(Boolean).join(' · ');
+    if (m.length > 140) m = m.slice(0, 138) + '…';
+    if (oz.textContent !== m) oz.textContent = m;
+  }
+  function katlar() {
+    const acik = U.nesneOku('gokKat');
+    el.querySelectorAll('details.kat').forEach(d => {
+      const kat = d.dataset.kat;
+      d.open = acik[kat] === true;
+      d.addEventListener('toggle', () => { const a = U.nesneOku('gokKat'); a[kat] = d.open; U.yaz('gokKat', a); });
+      const ul = el.querySelector('#' + KAT_LISTE[kat]);
+      if (ul) new MutationObserver(() => katOzetYaz(kat)).observe(ul, { childList: true, subtree: true, characterData: true });
+      katOzetYaz(kat);
+    });
+  }
+
   function iskelet() {
     el.innerHTML = `
       <h1>Bu gece gökyüzü</h1>
@@ -55,35 +88,42 @@
       <ol class="plan" id="gkPlan"><li><span class="bos">Hazırlanıyor…</span></li></ol>
       <div class="cip-grup" id="gkPlanDugme" hidden><button type="button" class="dugme" id="gkPlanTakvim">Planı takvime ekle</button></div>
 
-      <h2>Gezegenler</h2>
+      <details class="kat" data-kat="gezegen"><summary><span class="kat-bas"><h2>Gezegenler</h2><span class="kat-ozet" id="gkOzet_gezegen"></span></span></summary>
       <p class="alt-baslik">Saatler seçili gece için; "en iyi" o gece en yüksekte olduğu an.</p>
       <ul class="liste" id="gkGezegen"></ul>
+      </details>
 
-      <h2>Dürbün hedefleri</h2>
+      <details class="kat" data-kat="hedef"><summary><span class="kat-bas"><h2>Dürbün hedefleri</h2><span class="kat-ozet" id="gkOzet_hedef"></span></span></summary>
       <p class="alt-baslik">7×50 dürbün için parlak kümeler, bulutsular ve çift yıldızlar. Karanlıkta 20°'nin üstüne çıkanlar.</p>
       <ul class="liste" id="gkHedef"></ul>
       <details class="aciklama" id="gkHedefDiger"><summary>Bu gece alçakta kalanlar</summary><ul class="liste" id="gkHedefAlcak"></ul></details>
+      </details>
 
-      <h2>Meteor yağmurları</h2>
+      <details class="kat" data-kat="meteor"><summary><span class="kat-bas"><h2>Meteor yağmurları</h2><span class="kat-ozet" id="gkOzet_meteor"></span></span></summary>
       <p class="alt-baslik">Saatlik sayı (ZHR), radyant başucundayken kusursuz karanlıkta görülecek en yüksek sayıdır; şehirde ve Ay ışığında bunun küçük bir kısmı görülür.</p>
       <ul class="liste" id="gkMeteor"></ul>
       <details class="aciklama"><summary>Takvimin tamamı</summary><ul class="liste" id="gkMeteorTum"></ul></details>
+      </details>
 
-      <h2>Algol'ün kararması</h2>
+      <details class="kat" data-kat="algol"><summary><span class="kat-bas"><h2>Algol'ün kararması</h2><span class="kat-ozet" id="gkOzet_algol"></span></span></summary>
       <p class="alt-baslik">Perseus'taki Algol, bir yoldaşı önünden geçtikçe 2 gün 21 saatte bir sönükleşir: çıplak gözle izlenebilen bir değişen yıldız. En parlakken Almach (γ And, 2,1 kadir) kadar, en sönükken δ Persei'den (3,0) de sönük (3,3). Önümüzdeki 30 günde en sönük anı buradan karanlıkta görülebilenler:</p>
       <ul class="liste" id="gkAlgol"></ul>
+      </details>
 
-      <h2>Ay örtmeleri</h2>
+      <details class="kat" data-kat="ortme"><summary><span class="kat-bas"><h2>Ay örtmeleri</h2><span class="kat-ozet" id="gkOzet_ortme"></span></span></summary>
       <p class="alt-baslik">Ay bir yıldızın ya da gezegenin önünden geçerken yıldız Ay'ın kenarında bir anda kaybolur, sonra öbür kenarda bir anda belirir. Önümüzdeki 90 günde buradan dürbünle izlenebilecek olanlar: Ay ufkun en az 5° üstünde, gök kararmış, yıldız Ay'ın parıltısında seçilecek kadar parlak. Karanlık kenardaki olaylar çok daha kolay izlenir.</p>
       <ul class="liste" id="gkOrtme"><li><span class="bos">Hesaplanıyor…</span></li></ul>
+      </details>
 
-      <h2>Uzay istasyonları ve uydular</h2>
+      <details class="kat" data-kat="uydu"><summary><span class="kat-bas"><h2>Uzay istasyonları ve uydular</h2><span class="kat-ozet" id="gkOzet_uydu"></span></span></summary>
       <p class="alt-baslik">Önümüzdeki 5 günde buradan görülebilecek geçişler: uydu Güneş ışığı alırken, gök karanlıkken ve ufkun en az 10° üstündeyken. ISS en parlağıdır; Tiangong daha küçük ve biraz sönük ama ikisi de çıplak gözle, yıldızlar arasında kaymayan, hızla ilerleyen bir ışık gibi görülür.</p>
       <ul class="liste" id="gkIss"><li><span class="bos">Hesaplanıyor…</span></li></ul>
       <p class="kaynak" id="gkIssKaynak"></p>
+      </details>
 
-      <h2>Yaklaşan olaylar</h2>
+      <details class="kat" data-kat="olay"><summary><span class="kat-bas"><h2>Yaklaşan olaylar</h2><span class="kat-ozet" id="gkOzet_olay"></span></span></summary>
       <ul class="liste" id="gkOlay"></ul>
+      </details>
 
       <p class="kaynak" id="gkKaynak"></p>
 
@@ -1038,6 +1078,7 @@
       return false;   // uygulama.js: bölüm bir sonraki açılışta yeniden kurulur
     }
     iskelet();
+    katlar();
     bagla();
     kaynakYaz();
     simdiyeKur();

@@ -4,6 +4,9 @@
 const { test, expect } = require('@playwright/test');
 const { celestrak } = require('./yardim');
 
+/* Gökyüzü bölümleri katlanır (ilk açılışta kapalı); bu dosyadaki testler liste içeriğini gördüğü için hepsi açık başlar */
+test.beforeEach(async ({ page }) => { await page.addInitScript(() => localStorage.setItem('urania_gokKat', JSON.stringify({ gezegen: true, hedef: true, meteor: true, algol: true, ortme: true, uydu: true, olay: true }))); });
+
 const SABIT_AN = new Date('2026-10-27T19:00:00+03:00');
 function hava(bulut) {
   /* 27 Ekim 12:00 UT'den itibaren 72 saat, her saat aynı bulut */

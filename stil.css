@@ -617,3 +617,19 @@ html.kirmizi .sahne canvas { filter: url(#kirmiziSuz); }
 html.kirmizi ::selection { background: #5A0A06; color: var(--parsomen); }
 /* Kaydırma çubukları (sayfa, kaynak listeleri, tanı metni) gri kalmasın; Android Chrome 121+ uygular */
 html.kirmizi { scrollbar-color: var(--soluk) var(--gece); }
+
+/* Gökyüzü: katlanır bölümler. Başlık + özet satırı tek dokunma alanı (≥ 48 px); ok işareti açılınca döner. */
+#b-gok details.kat { border-top: 1px solid var(--cizgi); margin-top: 28px; }
+#b-gok details.kat + details.kat { margin-top: 0; }
+#b-gok details.kat[open] { padding-bottom: 20px; }
+#b-gok details.kat > summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 12px; padding: 14px 0; min-height: 48px; }
+#b-gok details.kat > summary::-webkit-details-marker { display: none; }
+#b-gok details.kat > summary::after { content: ''; flex: none; width: 9px; height: 9px; margin-right: 6px; border-right: 2px solid var(--pirinc); border-bottom: 2px solid var(--pirinc); transform: rotate(45deg) translateY(-3px); transition: transform .15s; }
+#b-gok details.kat[open] > summary::after { transform: rotate(-135deg) translate(-3px, 0); }
+#b-gok .kat-bas { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+#b-gok .kat-bas h2 { margin: 0; }
+#b-gok .kat-ozet { font: 400 14px/1.4 var(--sans); color: var(--soluk); overflow-wrap: anywhere; }
+#b-gok .kat-ozet:empty { display: none; }
+#b-gok details.kat[open] .kat-ozet { display: none; }
+#b-gok details.kat > .alt-baslik:first-of-type { margin-top: 0; }
+@media (prefers-reduced-motion: reduce) { #b-gok details.kat > summary::after { transition: none; } }

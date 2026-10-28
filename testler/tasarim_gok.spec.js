@@ -4,6 +4,9 @@
 const { test, expect } = require('@playwright/test');
 const { celestrak, disAgiKes } = require('./yardim');
 
+/* Gökyüzü bölümleri katlanır (ilk açılışta kapalı); bu dosyadaki testler liste içeriğini gördüğü için hepsi açık başlar */
+test.beforeEach(async ({ page }) => { await page.addInitScript(() => localStorage.setItem('urania_gokKat', JSON.stringify({ gezegen: true, hedef: true, meteor: true, algol: true, ortme: true, uydu: true, olay: true }))); });
+
 const KONUM = { ad: 'Kadıköy', enlem: 40.99, boylam: 29.03, yukseklik: 0, oto: false, saatDilimi: 'Europe/Istanbul' };
 const TROMSO = { ad: 'Tromsø', enlem: 69.65, boylam: 18.96, yukseklik: 0, oto: false, saatDilimi: 'Europe/Oslo' };
 

@@ -37,3 +37,24 @@ for (const [an, beklenen] of [['2026-10-28T20:30:00+03:00', '2026-10-28'], ['202
     await expect(page.locator('#gkTarih')).toHaveValue(beklenen);
   });
 }
+
+test('Gökyüzü bölümleri ilk açılışta kapalı, başlıkta özet; açılınca liste görünür ve tercih saklanır', async ({ page }) => {
+  await page.route('**/celestrak.org/**', r => r.abort());
+  await page.route(/^https?:\/\/(?!127\.0\.0\.1|localhost)/, r => r.abort());
+  await page.clock.install({ time: new Date('2026-10-28T11:30:00+03:00') });
+  await page.addInitScript(() => localStorage.setItem('urania_konumOto', 'false'));
+  await page.goto('/index.html#gok');
+  await expect(page.locator('#gkOzet_gezegen')).toContainText('Satürn');
+  await expect(page.locator('#gkOzet_algol')).toContainText('sıradaki:');
+  await expect(page.locator('#gkOzet_olay')).toContainText('sıradaki: Yeni Ay');
+  await expect(page.locator('#gkGezegen')).toBeHidden();
+  await expect(page.locator('#gkPlan')).toBeVisible();   // plan hep açık
+  const s = page.locator('details[data-kat="gezegen"] > summary');
+  expect((await s.boundingBox()).height).toBeGreaterThanOrEqual(48);
+  await s.click();
+  await expect(page.locator('#gkGezegen li').first()).toBeVisible();
+  await expect(page.locator('#gkOzet_gezegen')).toBeHidden();
+  await page.reload();
+  await expect(page.locator('#gkGezegen li').first()).toBeVisible();
+  await expect(page.locator('#gkMeteor')).toBeHidden();
+});
