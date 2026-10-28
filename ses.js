@@ -216,6 +216,10 @@
     gunluk = [];
     ot = { birimler: baglam.bloklar.map(b => ({ el: b.el, parcalar: parcala(b.metin) })), i: Math.max(0, Math.min(baglam.bloklar.length - 1, parseInt(sira, 10) || 0)), j: 0, durum: 'oynuyor', sonOlay: Date.now() };
     kaydet('oturum', baglam.ad + ' · ' + ot.birimler.length + ' blok · hız ' + hizOku());
+    /* Hangi ses okuyor: telefonun motoru değişince (ör. ElevenReader) Chrome'un gerçekten hangi sesi verdiği görülsün */
+    const v = trSes(), trler = sesler.filter(x => x && /^tr([-_]|$)/i.test(String(x.lang || '')));
+    kaydet('ses', v ? v.name + ' (' + v.lang + (v.localService ? ', cihazda' : ', ağdan') + ')' : 'yok');
+    kaydet('sesler', 'Türkçe ' + trler.length + ': ' + trler.map(x => x.name).join(' | ') + ' · toplam ' + sesler.length);
     konus(); kilitAl(); ciz();
     return true;
   }
