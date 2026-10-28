@@ -427,6 +427,23 @@
     return new Date((a.getTime() + b.getTime()) / 2);
   }
 
+  /* ---- Mira (ο Ceti): uzun dönemli değişen yıldız ----
+     Öğeler GCVS'ten (Kholopov ve ark. 1998): dönem 331,96 gün, en parlak an JD 2444839 (22 Ağustos 1981);
+     parlaklık V 2,0–10,1. Wikipedia: yükseliş ~100 gün, sönme bunun iki katı; en parlak hâli döngüden döngüye
+     2,0 ile 4,9 arasında değişir. Sınama: öğeler 10 Mayıs 2024 en parlak anını (Wikipedia) aynı güne veriyor.
+     Konum (J2000): 02s 19d 20,79s, −2° 58′ 39,5″. Dönem kesin olmadığından tahmin birkaç hafta sapabilir. */
+  const MIRA = { ra: 34.836634, dec: -2.977638, donem: 331.96, epokJd: 2444839 };
+  function miraDurumu(t) {
+    const jd = t.getTime() / 86400e3 + 2440587.5;
+    const n = Math.floor((jd - MIRA.epokJd) / MIRA.donem);
+    const jdTarih = j => new Date((j - 2440587.5) * 86400e3);
+    const son = jdTarih(MIRA.epokJd + n * MIRA.donem), sonraki = jdTarih(MIRA.epokJd + (n + 1) * MIRA.donem);
+    const faz = (jd - (MIRA.epokJd + n * MIRA.donem)) / MIRA.donem;     // 0: en parlak; ~0,3: en sönüğe doğru
+    /* En parlak andan yaklaşık 50 gün önce ve sonra çıplak gözle görülebilir aralıkta (kaba; döngüye göre değişir) */
+    const parlak = faz < 0.15 || faz > 0.85;
+    return Object.assign({ son, sonraki, faz, parlak, ad: 'Mira' }, MIRA);
+  }
+
   /* ---- Yaklaşan olaylar ---- */
   function olaylar(zaman, gzl, gunSayisi) {
     const son = new Date(zaman.getTime() + (gunSayisi || 120) * 86400e3);
@@ -455,6 +472,18 @@
       const kismen = alt <= 0 && (basAlt > 0 || sonAlt > 0);
       ls.push({ tur: 'tutulma', zaman: tarih(se.peak.time), baslik: tur, not: alt > 0 ? 'Buradan görünür; en büyük anda Güneş ' + Math.round(alt) + '° yükseklikte. Güneşe asla filtresiz bakma.' : (kismen ? 'Kısmen görünür: ' + (basAlt > 0 ? 'Güneş batarken' : 'Güneş doğarken') + ' tutulmuş hâlde. Güneşe asla filtresiz bakma.' : 'Buradan görünmez (Güneş ufkun altında).'), gorunur: alt > 0 || kismen, ortulme: se.obscuration });
       se = A.NextLocalSolarEclipse(se.peak.time, gzl);
+    }
+    /* Mira'nın en parlak hâli (Güneş'e uzaklığıyla görünürlük notu) */
+    {
+      const md = miraDurumu(zaman);
+      [md.son, md.sonraki].forEach(t => {
+        if (t < zaman || t > son) return;
+        const g = A.Equator('Sun', t, gzl, false, true), gv = birimVektor(g.ra * 15, g.dec), mv = birimVektor(MIRA.ra, MIRA.dec);
+        const uz = Math.acos(Math.max(-1, Math.min(1, gv[0] * mv[0] + gv[1] * mv[1] + gv[2] * mv[2]))) / DER;
+        ls.push({ tur: 'yildiz', zaman: t, baslik: 'Mira en parlak (tahmini)', gorunur: uz > 35,
+          not: 'Balina\'daki değişen yıldız Mira, 332 günde bir en parlak hâline çıkar; o zaman 2 ile 5 kadir arası (her döngüde farklı), en sönükken 10 kadir. ' +
+            (uz > 35 ? 'Bu sefer Güneş\'ten ' + Math.round(uz) + '° uzakta: gözlenebilir.' : 'Bu sefer Güneş\'e çok yakın (' + Math.round(uz) + '°): görülemez.') + ' Tarih GCVS öğeleriyle tahmin, birkaç hafta sapabilir.' });
+      });
     }
     const yil = zaman.getFullYear();
     [yil, yil + 1].forEach(y => {
@@ -505,7 +534,7 @@
     A, DER, GEZEGENLER, TR_AD, YON_UZUN,
     gozlemci, yon, ufukMatrisi, birimVektor, ufkaCevir, sabitAltAz, cisimAltAz, takimyildiz,
     yerelOgle, geceAraligi, ayDurumu, ayCeyrekleri, evreAdi, enYuksek, ornekler, enYuksekSabit, gezegenlerBuGece, hedeflerBuGece,
-    meteorDurumu, meteorTakvimi, gunesBoylamJ2000, aktifMi, olaylar, gezegenKadir, jupiterUydulari, jupiterYaricap
+    meteorDurumu, meteorTakvimi, miraDurumu, gunesBoylamJ2000, aktifMi, olaylar, gezegenKadir, jupiterUydulari, jupiterYaricap
   };
   if (typeof module !== 'undefined' && module.exports) module.exports = Gok;
   else kok.Gok = Gok;

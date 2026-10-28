@@ -152,6 +152,21 @@
         isabet.push({ x: p.x, y: p.y, oncelik: 2, bilgi: '<b>' + Urania.kacis(t.ad) + '</b> · ' + Urania.kacis(t.turAd) + ' · ' + Urania.kadir(t.kadir) + ' kadir · ' + Urania.derece(h.alt) + ' yükseklik' });
       });
 
+      /* Mira: değişen yıldız. Yıldız verisinde yok (ortalama 6,5 kadir); en parlak dönemine yakınsa dolu nokta ve ad,
+         değilse soluk halka (Balina'nın çizgisi orada biter) */
+      if (d.mira) {
+        const h = G.ufkaCevir(m, G.birimVektor(d.mira.ra, d.mira.dec));
+        if (h.alt >= 0) {
+          const p = ekran(h.alt, h.az), mp = d.mira.parlak;
+          ctx.beginPath(); ctx.arc(p.x, p.y, (mp ? 2.4 : 2) * Math.max(olc, .85), 0, Math.PI * 2);
+          if (mp && limit >= 4) { ctx.fillStyle = c.yildiz; ctx.fill(); etiket('Mira', p.x, p.y, '500 ' + Math.max(10, W / 50) + 'px Plex, system-ui, sans-serif', kir ? c.soluk : 'rgba(233,226,208,.7)', 1.5, 5); }
+          else { ctx.strokeStyle = c.soluk; ctx.lineWidth = 1; ctx.stroke(); }
+          const g = t => Urania.gun(t);
+          isabet.push({ x: p.x, y: p.y, oncelik: 1, bilgi: '<b>Mira</b> (ο Ceti) · değişen yıldız: 332 günde bir 2–5 kadire çıkar, en sönükken 10 kadir · ' +
+            (mp ? 'şu sıralar en parlak dönemine yakın' : 'şu sıralar sönük') + ' · tahmini en parlak: ' + g(d.mira.son) + ', sonraki ' + g(d.mira.sonraki) + ' · ' + Urania.derece(h.alt) + ' yükseklik' });
+        }
+      }
+
       /* Meteor radyantları (yalnız etkin yağmurlar) */
       (d.radyantlar || []).forEach(r => {
         const h = G.ufkaCevir(m, G.birimVektor(r.ra, r.dec));

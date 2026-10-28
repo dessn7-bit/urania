@@ -236,3 +236,15 @@ test('Tekrar kartlarının kimliği kalıcı (kid): benzersiz, ilk atamada eski 
     expect(x.kid).toBeTruthy(); expect(gor.has(x.kid)).toBe(false); gor.add(x.kid);
   })));
 });
+
+/* Mira: GCVS öğeleri (P 331,96 g, en parlak JD 2444839) Wikipedia'nın verdiği 10 Mayıs 2024 en parlak anını vermeli */
+test('Mira: en parlak an tahmini 10 Mayıs 2024 ile 1 gün içinde; olaylarda ve haritada görünür', async ({ page }) => {
+  const d = G.miraDurumu(new Date('2024-06-01T00:00Z'));
+  expect(Math.abs(d.son - new Date('2024-05-10T12:00Z')) / 86400e3).toBeLessThan(1);
+  expect(G.olaylar(new Date('2026-10-28T00:00Z'), IST, 120).some(o => /Mira/.test(o.baslik))).toBe(true);
+  await page.route(/^https?:\/\/(?!127\.0\.0\.1|localhost)/, r => r.abort());
+  await page.clock.install({ time: new Date('2027-01-10T19:00:00+03:00') });
+  await page.addInitScript(() => { localStorage.setItem('urania_konumOto', 'false'); });
+  await page.goto('/index.html#gok');
+  await expect(page.locator('#gkOlay')).toContainText('Mira', { timeout: 15000 });
+});
