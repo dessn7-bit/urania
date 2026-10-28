@@ -46,6 +46,7 @@
     nasaBsf: { ad: 'NASA Basics of Space Flight, Bölüm 4', url: 'https://science.nasa.gov/learn/basics-of-space-flight/chapter4-1/' },
     deltaV: { ad: 'Wikipedia: Delta-v budget', url: 'https://en.wikipedia.org/wiki/Delta-v_budget' },
     fSayisi: { ad: 'Wikipedia: F-number', url: 'https://en.wikipedia.org/wiki/F-number' },
+    enstantane: { ad: 'Wikipedia: Shutter speed', url: 'https://en.wikipedia.org/wiki/Shutter_speed' },
     photographyLife: { ad: 'Photography Life: 500 rule vs NPF rule', url: 'https://photographylife.com/500-rule-vs-npf-rule' },
     googleGece: { ad: 'Google Research: Night Sight astrofotoğraf', url: 'https://research.google/blog/astrophotography-with-night-sight-on-pixel-phones/' },
     petapixel: { ad: 'PetaPixel: yığınlama ve gürültü', url: 'https://petapixel.com/2020/10/28/eli5-this-is-how-image-stacking-reduces-noise-and-recovers-signal' }
@@ -55,7 +56,7 @@
 
   /* d20 · bölüm 0: Babil günlüklerinden Principia'ya ölçekli zaman çizelgesi (MÖ 700–MS 1700). Tarihler ders metninden. */
   C.ekle('d20-zaman-cizelgesi', {
-    ders: 'd20', bolum: 0, oran: 1.15,
+    ders: 'd20', bolum: 0, oran: 1.14,
     baslik: 'Babil günlüklerinden Newton\'a: gökbilimin zaman çizelgesi',
     aciklama: 'Zaman yukarıdan aşağı akar ve eksen ölçeklidir: her çentik 300 yıl. Babil\'in astronomik günlükleri yaklaşık MÖ 652 ile 61 arasında altı yüzyıla yakın sürer. Aristarkhos, Eratosthenes ve Hipparkhos MÖ 3. ve 2. yüzyıldadır, Almagest yaklaşık MS 150\'de. İslam dünyasının gözlemcileri el-Battani\'den Uluğ Bey\'e ve İstanbul Rasathanesi\'ne uzanır. Kopernik\'ten Newton\'a kadarki büyük adımlar ise yalnızca 144 yıla, çizelgenin en altındaki dar bir dilime sığar; yazılar sığsın diye yana açıldı, ince çizgiler her olayın gerçek yerine gider.',
     kaynak: [KAYNAK.babil, KAYNAK.aristarkhos, KAYNAK.almagest, KAYNAK.battani, KAYNAK.ulugbey, KAYNAK.takiyuddin, KAYNAK.kopernik, KAYNAK.tycho, KAYNAK.kepler, KAYNAK.galileo, KAYNAK.newton],
@@ -273,44 +274,44 @@
   /* d21 · bölüm 8: göstergeç yıldızlardan Kutup Yıldızı'na ve Kraliçe'ye. Kutup merkezli stereografik izdüşüm; 15 Ekim 2026 saat 22.00'de
      İstanbul'dan kuzeye bakınca görünen dönüşle (yerel yıldız zamanı 338,28°, Astronomy Engine). Yukarısı başucu, aşağısı kuzey ufku. */
   C.ekle('d21-kutup-atlama', {
-    ders: 'd21', bolum: 8, oran: 0.86,
+    ders: 'd21', bolum: 8, oran: 0.9,
     baslik: 'Göstergeç yıldızlardan Kutup Yıldızı\'na ve Kraliçe\'ye',
     aciklama: 'Gökyüzü 15 Ekim saat 22.00\'de İstanbul\'dan kuzeye bakarken göründüğü gibi döndürüldü: Büyük Kepçe aşağıda, ufka yakın; Kraliçe yukarıda. Kepçenin ağzındaki Merak\'tan Dubhe\'ye çizgi çek: aralık 5,4 derece. Bu aralığı yaklaşık beş kez uzatınca, 28,7 derece ötede, yaklaşık üç yumrukta Kutup Yıldızı\'na varırsın. Aynı yönde 32,8 derece daha gidince Kraliçe\'nin Schedar yıldızındasın. Açılar uygulamanın yıldız kataloğundan hesaplandı; izdüşüm kutup çevresinde açıları korur, kenarlarda boylar yüzde birkaç büyür.',
     kaynak: [KAYNAK.polaris, KAYNAK.wgsn, KAYNAK.astronomyEngine],
     ciz(S) {
-      const R = S.R, cx = 196, cy = 150, k = 172, lst = 338.28;
+      const R = S.R, cx = 200, cy = 178, k = 232, lst = 338.28;
       const P = n => {
         const [ra, de] = YIL[n], r = k * 2 * Math.tan((90 - de) / 2 * rad), H = (lst - ra) * rad;
         return [cx - r * Math.sin(H), cy - r * Math.cos(H)];
       };
       let s = '';
       /* yön okları */
-      s += S.ok(14, 300, 14, 330, { renk: R.soluk, kalin: 1.2, boy: 7 }) + S.yazi(24, 326, 'kuzey ufkuna doğru', { boy: 13, renk: R.soluk });
       s += S.ok(14, 46, 14, 16, { renk: R.soluk, kalin: 1.2, boy: 7 }) + S.yazi(24, 30, 'başucuna doğru', { boy: 13, renk: R.soluk });
+      s += S.ok(386, 316, 386, 346, { renk: R.soluk, kalin: 1.2, boy: 7 }) + S.yazi(376, 342, 'kuzey ufkuna doğru', { boy: 13, hiza: 'end', renk: R.soluk });
       /* çizgiler */
       s += S.egri(KEPCE.map(P), { renk: R.soluk, kalin: 1.4 });
       s += S.egri(['Caph', 'Schedar', 'gCas', 'Ruchbah', 'Segin'].map(P), { renk: R.soluk, kalin: 1.4 });
       const me = P('Merak'), du = P('Dubhe'), po = P('Polaris'), sc = P('Schedar');
       s += S.cizgi(me[0], me[1], du[0], du[1], { renk: R.vurgu, kalin: 3 });
-      s += S.ok(du[0], du[1], po[0] + (du[0] - po[0]) * 0.06, po[1] + (du[1] - po[1]) * 0.06, { renk: R.vurgu, kalin: 1.6, kesik: '6 4', boy: 8 });
-      s += S.ok(po[0], po[1], sc[0] + (po[0] - sc[0]) * 0.07, sc[1] + (po[1] - sc[1]) * 0.07, { renk: R.mavi, kalin: 1.6, kesik: '6 4', boy: 8 });
+      s += S.ok(du[0], du[1] - 6, po[0] + (du[0] - po[0]) * 0.05, po[1] + (du[1] - po[1]) * 0.05, { renk: R.vurgu, kalin: 1.6, kesik: '6 4', boy: 8 });
+      s += S.ok(po[0], po[1], sc[0] + (po[0] - sc[0]) * 0.06, sc[1] + (po[1] - sc[1]) * 0.06, { renk: R.mavi, kalin: 1.6, kesik: '6 4', boy: 8 });
       Object.keys(YIL).filter(n => n !== 'Arcturus' && n !== 'Spica').forEach(n => { const p = P(n); s += S.daire(p[0], p[1], yildizR(YIL[n][2]), { dolgu: R.yildiz, renk: R.zemin, kalin: 1 }); });
       /* etiketler */
-      s += S.yazi(po[0] + 10, po[1] - 8, 'Kutup Yıldızı', { boy: 14, renk: R.metin, kalin: true });
-      s += S.yazi(du[0] + 9, du[1] + 4, 'Dubhe', { boy: 13, renk: R.metin, kalin: true });
-      s += S.yazi(me[0] + 9, me[1] + 4, 'Merak', { boy: 13, renk: R.metin, kalin: true });
-      const al = P('Alkaid'); s += S.yazi(al[0] - 8, al[1] + 18, 'Alkaid', { boy: 13, hiza: 'middle', renk: R.soluk });
-      s += S.yazi(sc[0] + 9, sc[1] + 14, 'Schedar', { boy: 13, renk: R.metin, kalin: true });
-      s += S.yazi(P('Segin')[0] - 20, P('Segin')[1] - 14, 'Kraliçe', { boy: 13, hiza: 'middle', renk: R.soluk });
-      s += S.yazi(120, 318, 'Büyük Kepçe', { boy: 13, hiza: 'middle', renk: R.soluk });
+      s += S.yazi(po[0] - 10, po[1] + 5, 'Kutup Yıldızı', { boy: 14, hiza: 'end', renk: R.metin, kalin: true });
+      s += S.yazi(du[0] + 10, du[1] - 2, 'Dubhe', { boy: 13, renk: R.metin, kalin: true });
+      s += S.yazi(me[0] + 10, me[1] + 16, 'Merak', { boy: 13, renk: R.metin, kalin: true });
+      const al = P('Alkaid'); s += S.yazi(al[0], al[1] + 20, 'Alkaid', { boy: 13, hiza: 'middle', renk: R.soluk });
+      s += S.yazi(sc[0] + 10, sc[1] + 4, 'Schedar', { boy: 13, renk: R.metin, kalin: true });
+      s += S.yazi(P('Caph')[0] + 10, P('Caph')[1] - 14, 'Kraliçe', { boy: 13, hiza: 'middle', renk: R.soluk });
+      s += S.yazi(124, 346, 'Büyük Kepçe', { boy: 13, hiza: 'middle', renk: R.soluk });
       /* uzaklıklar */
-      s += S.zeminliYazi((me[0] + du[0]) / 2 + 22, (me[1] + du[1]) / 2 + 14, '5,4°', { boy: 13, renk: R.vurgu, kalin: true });
-      s += S.zeminliYazi((du[0] + po[0]) / 2 - 10, (du[1] + po[1]) / 2 + 4, '28,7° ≈ 3 yumruk', { boy: 13, hiza: 'end', renk: R.vurgu });
-      s += S.zeminliYazi((po[0] + sc[0]) / 2 + 12, (po[1] + sc[1]) / 2 + 12, '32,8°', { boy: 13, renk: R.mavi });
+      s += S.zeminliYazi(me[0] + 16, (me[1] + du[1]) / 2 + 6, '5,4°', { boy: 13, renk: R.vurgu, kalin: true });
+      s += S.zeminliYazi((du[0] + po[0]) / 2 - 8, (du[1] + po[1]) / 2 + 4, '28,7° ≈ 3 yumruk', { boy: 13, hiza: 'end', renk: R.vurgu });
+      s += S.zeminliYazi((po[0] + sc[0]) / 2 + 10, (po[1] + sc[1]) / 2 + 12, '32,8°', { boy: 13, renk: R.mavi });
       /* ölçek: 10° (kutup yakınında) */
-      const L = k * 2 * Math.tan(5 * rad);
-      s += S.cizgi(312, 300, 312 + L, 300, { renk: R.metin, kalin: 2 }) + S.cizgi(312, 295, 312, 305, { renk: R.metin, kalin: 1 }) + S.cizgi(312 + L, 295, 312 + L, 305, { renk: R.metin, kalin: 1 });
-      s += S.yazi(312 + L / 2, 322, '10° ≈ yumruk', { boy: 13, hiza: 'middle', renk: R.metin });
+      const L = k * 2 * Math.tan(5 * rad), lx = 300, ly = 236;
+      s += S.cizgi(lx, ly, lx + L, ly, { renk: R.metin, kalin: 2 }) + S.cizgi(lx, ly - 5, lx, ly + 5, { renk: R.metin, kalin: 1 }) + S.cizgi(lx + L, ly - 5, lx + L, ly + 5, { renk: R.metin, kalin: 1 });
+      s += S.yazi(lx + L / 2, ly + 22, '10° ≈ yumruk', { boy: 13, hiza: 'middle', renk: R.metin });
       return s;
     }
   });
@@ -371,35 +372,34 @@
     aciklama: 'Birinci gün öğlende Güneş ve çok uzak bir yıldız aynı yöndedir. Dünya kendi çevresinde bir tur atıp aynı yıldızı yeniden tam karşısına aldığında 23 saat 56 dakika 4 saniye geçmiştir; buna yıldız günü denir. Ama Dünya bu sürede yörüngesinde yaklaşık 1 derece, tam olarak 360 bölü 365,256, yani 0,986 derece ilerlemiştir; Güneş\'i yeniden meridyene getirmek için bu kadar daha dönmesi gerekir. Bu fazladan dönüş yaklaşık 3 dakika 56 saniye sürer ve güneş gününü ortalama 24 saate tamamlar. Yörüngedeki açı okunsun diye büyütüldü; çizim şematiktir.',
     kaynak: [KAYNAK.yildizZamani, KAYNAK.nasaDunya],
     ciz(S) {
-      const R = S.R, gx = 120, gy = 180, ro = 130, b = 28;          // b: çizimde büyütülmüş günlük açı (derece)
+      const R = S.R, gx = 104, gy = 176, ro = 150, b = 26;          // b: çizimde büyütülmüş günlük açı (derece)
       const E1 = [gx + ro, gy], E2 = [gx + ro * Math.cos(b * rad), gy - ro * Math.sin(b * rad)];
       const gunAci = 360 / 365.256, fark = gunAci * 4;              // derece, dakika (1° = 4 dk)
       let s = '';
-      s += S.yay(gx, gy, ro, -40, 70, { renk: R.soluk, kalin: 1, kesik: '4 4' });
+      s += S.yay(gx, gy, ro, -28, 62, { renk: R.soluk, kalin: 1, kesik: '4 4' });
       s += S.daire(gx, gy, 18, { dolgu: R.gunes, renk: 'none' }) + S.yazi(gx, gy + 38, 'Güneş', { boy: 13, hiza: 'middle', renk: R.metin, kalin: true });
-      { const p = [gx + ro * Math.cos(55 * rad), gy - ro * Math.sin(55 * rad)], q = [gx + ro * Math.cos(64 * rad), gy - ro * Math.sin(64 * rad)];
-        s += S.ok(p[0], p[1], q[0], q[1], { renk: R.soluk, kalin: 1.4, boy: 7 }); }
-      s += S.yazi(gx + ro * Math.cos(60 * rad) - 10, gy - ro * Math.sin(60 * rad) - 8, 'dolanma yönü', { boy: 13, hiza: 'end', renk: R.soluk });
-      const dunya = (p, ad, alt) => S.daire(p[0], p[1], 13, { dolgu: R.mavi, renk: R.zemin, kalin: 1.5 }) + S.yazi(p[0] + 18, p[1] + (alt ? 22 : -14), ad, { boy: 13, renk: R.metin, kalin: true });
+      { const p = [gx + ro * Math.cos(44 * rad), gy - ro * Math.sin(44 * rad)], q = [gx + ro * Math.cos(52 * rad), gy - ro * Math.sin(52 * rad)];
+        s += S.ok(p[0], p[1], q[0], q[1], { renk: R.soluk, kalin: 1.4, boy: 7 });
+        s += S.yazi(q[0] - 20, q[1] + 4, 'dolanma yönü', { boy: 13, hiza: 'end', renk: R.soluk }); }
+      const dunya = p => S.daire(p[0], p[1], 13, { dolgu: R.mavi, renk: R.zemin, kalin: 1.5 });
       /* 1. gün: Güneş ve uzak yıldız aynı yönde */
-      s += S.ok(E1[0] - 15, E1[1], E1[0] - 48, E1[1], { renk: R.vurgu, kalin: 2.4, boy: 8 });
-      s += dunya(E1, '1. gün öğle', true);
-      /* 2. gün: yıldız günü sonunda ok yine aynı yönü (uzak yıldızı) gösterir; Güneş için biraz daha dönmek gerekir */
-      s += S.ok(E2[0] - 15, E2[1], E2[0] - 50, E2[1], { renk: R.vurgu, kalin: 2.4, boy: 8 });
+      s += S.ok(E1[0] - 15, E1[1], E1[0] - 54, E1[1], { renk: R.vurgu, kalin: 2.4, boy: 8 });
+      s += dunya(E1) + S.yazi(E1[0] + 20, E1[1] + 5, '1. gün öğle', { boy: 13, renk: R.metin, kalin: true });
+      /* yıldız günü sonunda ok yine aynı yönü (uzak yıldızı) gösterir; Güneş için biraz daha dönmek gerekir */
+      s += S.ok(E2[0] - 15, E2[1], E2[0] - 56, E2[1], { renk: R.vurgu, kalin: 2.4, boy: 8 });
       const ug = Math.atan2(gy - E2[1], gx - E2[0]);
-      s += S.ok(E2[0] + 15 * Math.cos(ug), E2[1] + 15 * Math.sin(ug), E2[0] + 50 * Math.cos(ug), E2[1] + 50 * Math.sin(ug), { renk: R.gunes, kalin: 2, boy: 8, kesik: '5 3' });
-      s += dunya(E2, '1 gün sonra', false);
-      s += S.yay(E2[0], E2[1], 40, 180, 180 + b, { renk: R.uyari, kalin: 2 });
-      s += S.zeminliYazi(E2[0] - 50, E2[1] + 38, 'fazladan dönüş', { boy: 13, hiza: 'end', renk: R.uyari, kalin: true });
-      s += S.yazi(E2[0] - 50, E2[1] + 56, '≈' + tr(gunAci, 3) + '° ≈ 3 dk 56 sn', { boy: 13, hiza: 'end', renk: R.uyari });
+      s += S.ok(E2[0] + 15 * Math.cos(ug), E2[1] + 15 * Math.sin(ug), E2[0] + 56 * Math.cos(ug), E2[1] + 56 * Math.sin(ug), { renk: R.gunes, kalin: 2, boy: 8, kesik: '5 3' });
+      s += S.yay(E2[0], E2[1], 44, 180, 180 + b, { renk: R.uyari, kalin: 2 });
+      s += dunya(E2) + S.yazi(E2[0] + 20, E2[1] - 8, 'yıldız günü sonra', { boy: 13, renk: R.metin, kalin: true });
+      s += S.yazi(E2[0] + 20, E2[1] + 10, 'fazladan dönüş:', { boy: 13, renk: R.uyari, kalin: true });
+      s += S.yazi(E2[0] + 20, E2[1] + 28, '≈' + tr(gunAci, 3) + '° ≈ 3 dk 56 sn', { boy: 13, renk: R.uyari });
       /* uzak yıldız yönü */
-      s += S.yazi(12, 24, '← uzak yıldızın yönü (iki ok paralel)', { boy: 13, renk: R.vurgu });
+      s += S.yazi(8, 22, '← uzak yıldızın yönü: iki sarı ok paralel', { boy: 13, renk: R.vurgu });
       /* özet */
-      const ox = 236;
-      s += S.yazi(ox, 248, 'yıldız günü: 23 sa 56 dk 4 sn', { boy: 13, renk: R.metin });
-      s += S.yazi(ox, 266, '+ ' + tr(fark, 2) + ' dk fazladan dönüş', { boy: 13, renk: R.uyari });
-      s += S.yazi(ox, 284, '= güneş günü ≈ 24 sa', { boy: 13, renk: R.metin, kalin: true });
-      s += S.yazi(12, 300, 'açı büyütüldü: şematik', { boy: 13, renk: R.soluk });
+      s += S.yazi(8, 262, 'yıldız günü: 23 sa 56 dk 4 sn', { boy: 13, renk: R.metin });
+      s += S.yazi(8, 280, '+ ' + tr(fark, 2) + ' dk fazladan dönüş', { boy: 13, renk: R.uyari });
+      s += S.yazi(8, 298, '= güneş günü ≈ 24 sa', { boy: 13, renk: R.metin, kalin: true });
+      s += S.yazi(392, 298, 'açı büyütüldü: şematik', { boy: 13, hiza: 'end', renk: R.soluk });
       return s;
     }
   });
@@ -413,13 +413,13 @@
 
   /* d22 · bölüm 1: zaman denklemi eğrisi (hesap) ve iki yaklaşık bileşeni (Wikipedia: −7,659 sin D ve 9,863 sin(2D + 3,5932)). */
   C.ekle('d22-zaman-denklemi', {
-    ders: 'd22', bolum: 1, oran: 0.74,
+    ders: 'd22', bolum: 1, oran: 0.72,
     baslik: 'Zaman denklemi: güneş saati ile kol saati arasındaki fark',
     aciklama: 'Kalın eğri 2026 için hesaplandı: sıfırın üstünde güneş saati kol saatinden ileride, altında geridedir. En büyük fark 3 Kasım\'da yaklaşık artı 16 dakika 27 saniye, en derin çukur 11 Şubat\'ta eksi 14 dakika 11 saniye; aradaki küçük tepeler 13 Mayıs\'ta artı 3 dakika 41 saniye ve 26 Temmuz\'da eksi 6 dakika 34 saniye. Ders metnindeki 16 dakika 33 saniye ve 14 dakika 6 saniye, Wikipedia\'nın genel değerleridir; yıldan yıla birkaç saniye oynar. İnce kesikli eğriler iki yaklaşık bileşendir: yörünge basıklığından gelen yıllık dalga, yaklaşık 7,66 dakika, ve eksen eğikliğinden gelen yarım yıllık dalga, yaklaşık 9,87 dakika. Toplamları kalın eğriyi bir dakika içinde verir.',
     kaynak: [KAYNAK.zd, KAYNAK.astronomyEngine],
     ciz(S) {
       const R = S.R;
-      const ek = S.eksen({ x: 54, y: 52, w: 330, h: 196 }, { x0: 0, x1: 365, y0: -17, y1: 18 }, {
+      const ek = S.eksen({ x: 54, y: 58, w: 330, h: 196 }, { x0: 0, x1: 365, y0: -20, y1: 18 }, {
         yIsaret: [[-15, '−15'], [-10, '−10'], [-5, '−5'], [0, '0'], [5, '+5'], [10, '+10'], [15, '+15']]
       });
       let s = ek.svg;
@@ -427,7 +427,7 @@
       [-15, -10, -5, 5, 10, 15].forEach(v => s += S.cizgi(54, ek.Y(v), 384, ek.Y(v), { renk: R.cizgi, kalin: 0.8 }));
       s += S.cizgi(54, ek.Y(0), 384, ek.Y(0), { renk: R.soluk, kalin: 1.2 });
       /* aylar */
-      AYLAR.forEach((a, i) => { const x = ek.X(gunu(i + 1, 1)); s += S.cizgi(x, 248, x, 253, { renk: R.soluk, kalin: 1 }); if (i % 2 === 0) s += S.yazi(x, 268, a, { boy: 13, hiza: 'start', renk: R.soluk }); });
+      AYLAR.forEach((a, i) => { const x = ek.X(gunu(i + 1, 1)); s += S.cizgi(x, 254, x, 259, { renk: R.soluk, kalin: 1 }); if (i % 2 === 0) s += S.yazi(x, 274, a, { boy: 13, hiza: 'start', renk: R.soluk }); });
       /* bileşenler: D = 6,24004077 + 0,01720197 × (2000'den beri gün); 2026-01-01 = J2000 + 9497 gün */
       const D = g => 6.24004077 + 0.01720197 * (9497 + g);
       s += S.fonk(ek, g => -7.659 * Math.sin(D(g)), 0, 365, 120, { renk: R.mavi, kalin: 1.4, kesik: '5 4' });
@@ -435,15 +435,14 @@
       s += S.egri(ZD.map((v, i) => [ek.X(i * 4), ek.Y(v)]), { renk: R.vurgu, kalin: 2.8 });
       /* uç noktalar */
       const nok = (g, v, t, dx, dy, hz) => S.daire(ek.X(g), ek.Y(v), 4.5, { dolgu: R.vurgu, renk: R.zemin, kalin: 1.2 }) + S.zeminliYazi(ek.X(g) + dx, ek.Y(v) + dy, t, { boy: 13, hiza: hz || 'middle', renk: R.metin });
-      s += nok(gunu(11, 3), 16.45, '3 Kas +16:27', -8, -10, 'end');
-      s += nok(gunu(2, 11), -14.18, '11 Şub −14:11', 8, 4, 'start');
+      s += nok(gunu(11, 3), 16.45, '3 Kas +16:27', -9, 4, 'end');
+      s += nok(gunu(2, 11), -14.18, '11 Şub −14:11', 8, 19, 'start');
       s += nok(gunu(5, 13), 3.68, '13 May +3:41', 0, -10);
       s += nok(gunu(7, 26), -6.56, '26 Tem −6:34', 0, 22);
       /* gösterge */
-      const gx = 214;
-      s += S.cizgi(gx, 34, gx + 22, 34, { renk: R.vurgu, kalin: 2.8 }) + S.yazi(gx + 28, 39, 'toplam (2026)', { boy: 13, renk: R.metin });
-      s += S.cizgi(54, 34, 76, 34, { renk: R.mavi, kalin: 1.4, kesik: '5 4' }) + S.yazi(82, 39, 'basıklık ≈7,7', { boy: 13, renk: R.mavi });
-      s += S.cizgi(214, 280, 236, 280, { renk: R.iyi, kalin: 1.4, kesik: '2 3' }) + S.yazi(242, 285, 'eğiklik ≈9,9', { boy: 13, renk: R.iyi });
+      s += S.cizgi(8, 36, 30, 36, { renk: R.vurgu, kalin: 2.8 }) + S.yazi(36, 41, 'toplam 2026', { boy: 13, renk: R.metin });
+      s += S.cizgi(128, 36, 150, 36, { renk: R.mavi, kalin: 1.4, kesik: '5 4' }) + S.yazi(156, 41, 'basıklık ±7,7', { boy: 13, renk: R.mavi });
+      s += S.cizgi(258, 36, 280, 36, { renk: R.iyi, kalin: 1.4, kesik: '2 3' }) + S.yazi(286, 41, 'eğiklik ±9,9', { boy: 13, renk: R.iyi });
       return s;
     }
   });
@@ -458,11 +457,11 @@
     [2.33, 46.83], [2.73, 44.87], [3.09, 42.94], [3.4, 41.03], [3.65, 39.18], [3.84, 37.39], [3.95, 35.67], [3.97, 34.05], [3.92, 32.53], [3.78, 31.12], [3.56, 29.85],
     [3.26, 28.73], [2.9, 27.76], [2.47, 26.96], [1.98, 26.33], [1.46, 25.88], [0.91, 25.62], [0.34, 25.55], [-0.23, 25.67], [-0.81, 26]];
 
-  /* d22 · bölüm 2: analemma. Solda ölçekli (her iki eksende aynı derece), sağda yatay eksen 5 kat büyütülmüş. */
+  /* d22 · bölüm 2: analemma. Solda ölçekli (her iki eksende aynı derece), sağda yatay eksen 4 kat büyütülmüş. */
   C.ekle('d22-analemma', {
     ders: 'd22', bolum: 2, oran: 1.0,
     baslik: 'İstanbul\'un analemması: her gün saat 13.04\'te Güneş',
-    aciklama: 'Her nokta, 2026\'da İstanbul\'da kol saati 13.04\'ü, yani yerel ortalama öğleyi gösterirken Güneş\'in güney gökteki yeridir; uygulamanın hesap çekirdeğiyle hesaplandı. Soldaki sekiz ölçeklidir: boyu Haziran\'daki 72,4 dereceden Aralık\'taki 25,5 dereceye yaklaşık 47 derece, eni ise yalnızca yaklaşık 7,4 derece. Sağdaki aynı sekizdir, yalnız yatayı 5 kat büyütüldü. Güneş saati öndeyken, örneğin 3 Kasım\'da, Güneş batıya, sağa kayar; gerideyken, 11 Şubat\'ta, doğuya, sola. Halkalar eşit değildir: üstteki küçük, alttaki büyük.',
+    aciklama: 'Her nokta, 2026\'da İstanbul\'da kol saati 13.04\'ü, yani yerel ortalama öğleyi gösterirken Güneş\'in güney gökteki yeridir; uygulamanın hesap çekirdeğiyle hesaplandı. Soldaki sekiz ölçeklidir: boyu Haziran\'daki 72,4 dereceden Aralık\'taki 25,6 dereceye yaklaşık 47 derece, eni ise yalnızca yaklaşık 7,4 derece. Sağdaki aynı sekizdir, yalnız yatayı 4 kat büyütüldü. Güneş saati öndeyken, örneğin 3 Kasım\'da, Güneş batıya, sağa kayar; gerideyken, 11 Şubat\'ta, doğuya, sola. Halkalar eşit değildir: üstteki küçük, alttaki büyük.',
     kaynak: [KAYNAK.analemma, KAYNAK.zd, KAYNAK.astronomyEngine],
     ciz(S) {
       const R = S.R, k = 5.6, Y = h => 30 + (76 - h) * k;
@@ -473,25 +472,25 @@
       [30, 40, 50, 60, 70].forEach(h => { s += S.cizgi(ax - 5, Y(h), ax, Y(h), { renk: R.soluk, kalin: 1 }) + S.yazi(ax - 8, Y(h) + 4, h + '°', { boy: 13, hiza: 'end', renk: R.soluk }); s += S.cizgi(ax, Y(h), 392, Y(h), { renk: R.cizgi, kalin: 0.6 }); });
       s += S.yazi(8, 16, 'yükseklik', { boy: 13, renk: R.soluk });
       /* ölçekli sekiz */
-      const x1 = 104, x2 = 270, B = 5;
+      const x1 = 104, x2 = 262, B = 4;
       const egri = (xm, f) => S.egri(ANALEMMA.map(([x, h]) => [xm + x * k * f, Y(h)]), { renk: R.gunes, kalin: 2.2 });
       s += S.cizgi(x1, Y(74), x1, Y(23), { renk: R.soluk, kalin: 1, kesik: '2 4' }) + S.cizgi(x2, Y(74), x2, Y(23), { renk: R.soluk, kalin: 1, kesik: '2 4' });
       s += egri(x1, 1) + egri(x2, B);
       s += S.yazi(x1, 394, 'ölçekli', { boy: 13, hiza: 'middle', renk: R.metin, kalin: true });
-      s += S.yazi(x2, 394, 'yatay 5 kat büyütüldü', { boy: 13, hiza: 'middle', renk: R.metin, kalin: true });
+      s += S.yazi(x2, 394, 'yatay 4 kat büyütüldü', { boy: 13, hiza: 'middle', renk: R.metin, kalin: true });
       /* ölçekli çizimin yanında 47° ok */
       s += S.ok(x1 + 30, Y(49), x1 + 30, Y(72.4) + 2, { renk: R.soluk, kalin: 1, boy: 6 }) + S.ok(x1 + 30, Y(49), x1 + 30, Y(25.5) - 2, { renk: R.soluk, kalin: 1, boy: 6 });
-      s += S.zeminliYazi(x1 + 36, Y(49) + 5, '≈47°', { boy: 13, renk: R.soluk });
+      s += S.yazi(x1 + 46, Y(49), '≈47°', { boy: 13, hiza: 'middle', renk: R.soluk, yan: -90 });
       /* büyütülmüşte tarihler */
       const nok = (x, h, t, dx, dy, hz) => S.daire(x2 + x * k * B, Y(h), 3.6, { dolgu: R.metin, renk: R.zemin, kalin: 1 }) + S.zeminliYazi(x2 + x * k * B + dx, Y(h) + dy, t, { boy: 13, hiza: hz, renk: R.metin });
       s += nok(-0.41, 72.42, '21 Haz 72,4°', 8, -6, 'start');
-      s += nok(0.45, 25.55, '21 Ara 25,5°', 8, 18, 'start');
-      s += nok(3.97, 33.73, '3 Kas', 8, 5, 'start');
-      s += nok(-3.44, 34.94, '11 Şub', -8, 5, 'end');
+      s += nok(0.45, 25.55, '21 Ara 25,6°', 8, 18, 'start');
+      s += nok(3.97, 33.73, '3 Kas', -9, 5, 'end');
+      s += nok(-3.44, 34.94, '11 Şub', 9, 5, 'start');
       s += nok(-1.87, 48.88, '20 Mar', -8, 5, 'end');
       s += nok(1.9, 48.79, '23 Eyl', 8, 5, 'start');
       /* yönler */
-      s += S.yazi(x2 - 70, 54, '← doğu', { boy: 13, hiza: 'middle', renk: R.soluk }) + S.yazi(x2 + 70, 54, 'batı →', { boy: 13, hiza: 'middle', renk: R.soluk });
+      s += S.yazi(x2 - 80, 104, '← doğu', { boy: 13, hiza: 'middle', renk: R.soluk }) + S.yazi(x2 + 88, 104, 'batı →', { boy: 13, hiza: 'middle', renk: R.soluk });
       s += S.yazi(x2, 372, 'güneye bakarken', { boy: 13, hiza: 'middle', renk: R.soluk });
       return s;
     }
@@ -521,7 +520,7 @@
       const n1 = pay(9.7, 4.5), n2 = pay(9.4, 3);
       s += S.cizgi(ek.X(9.7), ek.Y(0), ek.X(9.7), ek.Y(n1), { renk: R.vurgu, kalin: 1, kesik: '2 3' });
       s += S.daire(ek.X(9.7), ek.Y(n1), 5, { dolgu: R.vurgu, renk: R.zemin, kalin: 1.2 }) + S.daire(ek.X(9.4), ek.Y(n2), 5, { dolgu: R.mavi, renk: R.zemin, kalin: 1.2 });
-      s += S.zeminliYazi(ek.X(9.7) + 4, ek.Y(n1) + 28, '9,7 km/s → %' + tr(n1, 1), { boy: 13, hiza: 'end', renk: R.metin, kalin: true });
+      s += S.zeminliYazi(ek.X(9.7) + 4, ek.Y(n1) + 44, '9,7 km/s → %' + tr(n1, 1), { boy: 13, hiza: 'end', renk: R.metin, kalin: true });
       s += S.zeminliYazi(ek.X(9.4) - 8, ek.Y(n2) - 8, '9,4 km/s → %' + tr(n2, 1), { boy: 13, hiza: 'end', renk: R.metin });
       /* gösterge */
       s += S.cizgi(150, 160, 174, 160, { renk: R.vurgu, kalin: 2.6 }) + S.yazi(180, 165, 'egzoz hızı 4,5 km/s', { boy: 13, renk: R.metin });
@@ -532,7 +531,7 @@
 
   /* d23 · bölüm 4: yörünge haritası. Üstte ölçekli yarım kesit (Dünya 6371 km, LEO < 2000 km, GEO 35.786 km); altta LEO büyütülmüş. */
   C.ekle('d23-yorunge-haritasi', {
-    ders: 'd23', bolum: 4, oran: 0.98,
+    ders: 'd23', bolum: 4, oran: 1.05,
     baslik: 'Yörünge haritası: alçak, orta ve yerdurgun',
     aciklama: 'Üstteki yarım kesit ölçeklidir: Dünya\'nın 6371 kilometrelik yarıçapına göre alçak yörünge kuşağı, 2000 kilometrenin altı, yüzeye yapışık ince bir halkadır; yerdurgun yörünge ise 35.786 kilometre yukarıda, Dünya yarıçapının yaklaşık 5,6 katı ötededir. Aradaki geniş bölge orta yörüngedir. Alttaki şerit alçak yörüngeyi büyütür: uydular genellikle 180 kilometrenin altına inmez; Tiangong yaklaşık 382 ile 386, Uluslararası Uzay İstasyonu 415 ile 424, Hubble 468 ile 471 kilometrede; güneş eşzamanlı yörüngeler 600 ile 800 kilometrede, İMECE 680 kilometrede. Hız 400 kilometrede saniyede yaklaşık 7,7, yerdurgun yörüngede yaklaşık 3,1 kilometredir.',
     kaynak: [KAYNAK.esaYorunge, KAYNAK.heavensAbove, KAYNAK.sso, KAYNAK.imece, KAYNAK.nasaDunya],
@@ -552,12 +551,13 @@
       s += S.zeminliYazi(cx, cy - 110, 'Orta yörünge (MEO)', { boy: 13, hiza: 'middle', renk: R.metin, kalin: true, zemin: R.yuzey2 });
       s += S.zeminliYazi(cx, cy - 92, 'Galileo seyrüsefer uyduları', { boy: 13, hiza: 'middle', renk: R.soluk, zemin: R.yuzey2 });
       const p = [cx + r(1000) * Math.cos(35 * rad), cy - r(1000) * Math.sin(35 * rad)];
-      s += S.cizgi(p[0], p[1], 268, cy - 50, { renk: R.vurgu, kalin: 1 });
-      s += S.zeminliYazi(272, cy - 46, 'Alçak (LEO) < 2000 km', { boy: 13, renk: R.vurgu, kalin: true, zemin: R.yuzey2 });
+      s += S.cizgi(p[0], p[1], 268, cy - 46, { renk: R.vurgu, kalin: 1 });
+      s += S.zeminliYazi(272, cy - 52, 'Alçak (LEO)', { boy: 13, renk: R.vurgu, kalin: true, zemin: R.yuzey2 });
+      s += S.zeminliYazi(272, cy - 34, '< 2000 km', { boy: 13, renk: R.vurgu, kalin: true, zemin: R.yuzey2 });
       s += S.yazi(8, cy + 18, 'üstte ölçekli kesit', { boy: 13, renk: R.soluk });
       /* alt: LEO büyütmesi 0–2000 km */
-      const x0 = 30, x1 = 376, X = h => x0 + h / 2000 * (x1 - x0), sy = 316;
-      s += S.yazi(8, cy + 40, 'alçak yörünge büyütüldü (km)', { boy: 13, renk: R.metin, kalin: true });
+      const x0 = 30, x1 = 376, X = h => x0 + h / 2000 * (x1 - x0), sy = 356;
+      s += S.yazi(8, cy + 46, 'alçak yörünge büyütüldü (km)', { boy: 13, renk: R.metin, kalin: true });
       s += S.kutu(X(0), sy - 10, X(180) - X(0), 20, { dolgu: R.yuzey2, renk: 'none' });
       s += S.kutu(X(600), sy - 10, X(800) - X(600), 20, { dolgu: R.iyi, renk: 'none', saydam: 0.4 });
       s += S.cizgi(x0, sy, x1, sy, { renk: R.soluk, kalin: 1.2 });
@@ -569,9 +569,9 @@
       s += et(420, sy - 28, 'ISS', R.vurgu, 'end');
       s += et(470, sy - 46, 'Hubble', R.mavi);
       s += et(680, sy - 28, 'İMECE 680', R.metin);
-      s += S.yazi(X(700), sy + 48, 'güneş eşzamanlı 600–800', { boy: 13, hiza: 'middle', renk: R.iyi });
-      s += S.yazi(X(90), sy + 48, 'sürtünme', { boy: 13, hiza: 'start', renk: R.soluk });
-      s += S.yazi(x1, sy - 28, '400 km: ' + tr(v(400), 2) + ' km/s', { boy: 13, hiza: 'end', renk: R.metin });
+      s += S.yazi(X(600), sy + 50, 'güneş eşzamanlı 600–800', { boy: 13, hiza: 'start', renk: R.iyi });
+      s += S.yazi(X(0), sy + 50, 'sürtünme', { boy: 13, hiza: 'start', renk: R.soluk });
+      s += S.yazi(x1, sy - 46, '400 km: ' + tr(v(400), 2) + ' km/s', { boy: 13, hiza: 'end', renk: R.metin });
       return s;
     }
   });
@@ -581,10 +581,10 @@
   C.ekle('d23-hohmann', {
     ders: 'd23', bolum: 7, oran: 0.96,
     baslik: 'Hohmann aktarımı: Dünya\'dan Mars\'a en ucuz yol',
-    aciklama: 'Yörüngeler dairesel varsayılarak ölçekli çizildi. Araç, Dünya\'nın dolanma yönünde hızlanarak günberisi Dünya\'nın, günötesi Mars\'ın yörüngesinde olan elipse girer ve elipsin yarısını dolanır: Kepler\'in üçüncü yasasıyla yaklaşık 259 gün. Mars o sürede yörüngesinde yaklaşık 136 derece ilerlediği için kalkış anında Dünya\'dan yaklaşık 44 derece önde olmalıdır; bu diziliş yaklaşık 26 ayda bir gelir. Delta-v bedelleri ders metninden: alçak Dünya yörüngesinden aktarıma yaklaşık 4,3, Mars\'ta yakalanmaya yaklaşık 0,9 kilometre bölü saniye.',
+    aciklama: 'Yörüngeler dairesel varsayılarak ölçekli çizildi. Araç, Dünya\'nın dolanma yönünde hızlanarak günberisi Dünya\'nın, günötesi Mars\'ın yörüngesinde olan elipse girer ve elipsin yarısını dolanır: Kepler\'in üçüncü yasasıyla yaklaşık 259 gün. Mars o sürede yörüngesinde yaklaşık 136 derece ilerlediği için kalkış anında Dünya\'dan yaklaşık 44 derece önde olmalıdır; bu diziliş yaklaşık 25,6 ayda bir gelir. Delta-v bedelleri ders metninden: alçak Dünya yörüngesinden aktarıma yaklaşık 4,3, Mars\'ta yakalanmaya yaklaşık 0,9 kilometre bölü saniye.',
     kaynak: [KAYNAK.nasaBsf, KAYNAK.nasaMars, KAYNAK.nasaDunya, KAYNAK.deltaV],
     ciz(S) {
-      const R = S.R, gx = 214, gy = 168, au = 96;
+      const R = S.R, gx = 196, gy = 176, au = 90;
       const rM = 227.956 / 149.598, a = (1 + rM) / 2, c = a - 1, b = Math.sqrt(rM);
       const gun = 0.5 * Math.pow(a, 1.5) * 365.256, oncu = 180 - gun / 686.980 * 360, dunyaVaris = gun / 365.256 * 360;
       const P = (aci, r) => [gx + r * au * Math.cos(aci * rad), gy - r * au * Math.sin(aci * rad)];
@@ -604,13 +604,14 @@
       s += S.zeminliYazi(gx + 46, gy - 14, tr(oncu, 0) + '°', { boy: 13, renk: R.uyari, kalin: true });
       s += S.daire(d0[0], d0[1], 6.5, { dolgu: R.mavi, renk: R.zemin, kalin: 1.5 }) + S.daire(m0[0], m0[1], 5.5, { dolgu: R.uyari, renk: R.zemin, kalin: 1.5 });
       s += S.daire(m1[0], m1[1], 5.5, { dolgu: R.uyari, renk: R.zemin, kalin: 1.5 }) + S.daire(d1[0], d1[1], 6.5, { dolgu: 'none', renk: R.mavi, kalin: 1.6 });
-      s += S.yazi(d0[0] + 10, d0[1] + 20, 'kalkış: Dünya', { boy: 13, renk: R.mavi, kalin: true });
-      s += S.yazi(d0[0] + 10, d0[1] + 36, '≈4,3 km/s', { boy: 13, renk: R.metin });
-      s += S.yazi(m0[0] + 10, m0[1] - 6, 'Mars, kalkışta', { boy: 13, renk: R.uyari, kalin: true });
-      s += S.yazi(m1[0] + 10, m1[1] + 22, 'varış', { boy: 13, renk: R.uyari, kalin: true });
-      s += S.yazi(m1[0] + 10, m1[1] + 38, '≈0,9 km/s', { boy: 13, renk: R.metin });
+      s += S.zeminliYazi(d0[0] + 10, d0[1] + 20, 'kalkış: Dünya', { boy: 13, renk: R.mavi, kalin: true });
+      s += S.zeminliYazi(d0[0] + 10, d0[1] + 38, '≈4,3 km/s', { boy: 13, renk: R.metin });
+      s += S.yazi(m0[0] + 10, m0[1] - 8, 'Mars,', { boy: 13, renk: R.uyari, kalin: true }) + S.yazi(m0[0] + 10, m0[1] + 8, 'kalkışta', { boy: 13, renk: R.uyari, kalin: true });
+      s += S.zeminliYazi(m1[0] + 10, m1[1] + 22, 'varış', { boy: 13, renk: R.uyari, kalin: true });
+      s += S.zeminliYazi(m1[0] + 10, m1[1] + 40, '≈0,9 km/s', { boy: 13, renk: R.metin });
       s += S.yazi(d1[0] + 12, d1[1] + 16, 'Dünya, varışta', { boy: 13, renk: R.mavi });
-      s += S.zeminliYazi(gx - 40, gy - b * au - 8, 'yolculuk ≈' + tr(gun, 0) + ' gün', { boy: 14, hiza: 'middle', renk: R.vurgu, kalin: true });
+      s += S.yazi(8, 22, 'yolculuk ≈' + tr(gun, 0) + ' gün', { boy: 14, renk: R.vurgu, kalin: true });
+      s += S.cizgi(90, 28, ecx - 4, gy - b * au - 3, { renk: R.vurgu, kalin: 1 });
       /* gösterge */
       s += S.yazi(8, 352, 'Dünya yörüngesi 1 AB', { boy: 13, renk: R.mavi });
       s += S.yazi(8, 370, 'Mars yörüngesi ' + tr(rM, 3) + ' AB', { boy: 13, renk: R.uyari });
@@ -622,35 +623,35 @@
 
   /* ================================================================ d24 ================================================================ */
 
-  /* d24 · bölüm 1: üç ayar, aynı para birimi: durak. Diyafram tam durakları (ders), enstantane ve ISO iki katlık adımlar. */
+  /* d24 · bölüm 1: üç ayar, aynı para birimi: durak. Diyafram tam durakları (ders), enstantane standart dizisi (Wikipedia: Shutter speed), ISO iki katlık adımlar. */
   C.ekle('d24-durak', {
-    ders: 'd24', bolum: 1, oran: 0.74,
+    ders: 'd24', bolum: 1, oran: 0.72,
     baslik: 'Diyafram, enstantane ve ISO: her adım bir durak',
-    aciklama: 'Üç sıra aynı ölçekle dizildi: her sütun bir durak, yani ışığın iki katı ya da yarısı. Diyaframda f sayısı sağa doğru yaklaşık kök iki kat büyür ve ışık her adımda yarıya iner. Enstantanede süre sağa doğru iki katına çıkar, ışık da. ISO\'da duyarlılık iki katına çıkar ve görüntü parlaklaşır, ama gürültü de görünür olur. Vurgulu kutular dersteki örnektir: f/8 ile 250\'de 1 saniye, f/11 ile 125\'te 1 saniyeye eşdeğerdir, çünkü diyaframda bir durak kaybedilen ışık sürede bir durak geri kazanılır. Enstantane değerleri fotoğrafçılıktaki yuvarlak değerlerdir.',
-    kaynak: [KAYNAK.fSayisi],
+    aciklama: 'Üç sıra aynı ölçekle dizildi: her sütun bir durak, yani ışığın iki katı ya da yarısı. Diyaframda f sayısı sağa doğru yaklaşık kök iki kat büyür ve ışık her adımda yarıya iner. Enstantanede süre sağa doğru iki katına çıkar, ışık da. ISO\'da duyarlılık iki katına çıkar ve görüntü parlaklaşır, ama gürültü de görünür olur. Vurgulu kutular dersteki örnektir: f/8 ile 250\'de 1 saniye, f/11 ile 125\'te 1 saniyeye eşdeğerdir, çünkü diyaframda bir durak kaybedilen ışık sürede bir durak geri kazanılır. Enstantane değerleri fotoğrafçılığın standart dizisidir; her adım ışığı kabaca iki katına çıkarır.',
+    kaynak: [KAYNAK.fSayisi, KAYNAK.enstantane],
     ciz(S) {
       const R = S.R, x0 = 104, w = 41;
       const sira = [
         ['Diyafram', ['f/2', 'f/2,8', 'f/4', 'f/5,6', 'f/8', 'f/11', 'f/16'], 'daha az ışık →', 4, 5],
-        ['Enstantane', ['1/1000', '1/500', '1/250', '1/125', '1/60', '1/30', '1/15'], 'daha çok ışık →', 2, 3],
+        ['Enstantane', ['1/500', '1/250', '1/125', '1/60', '1/30', '1/15', '1/8'], 'daha çok ışık →', 1, 2],
         ['ISO', ['100', '200', '400', '800', '1600', '3200', '6400'], 'daha parlak, daha çok gürültü →', -1, -1]
       ];
       let s = '';
       sira.forEach(([ad, ls, yon, e1, e2], i) => {
-        const y = 52 + i * 70;
+        const y = 40 + i * 70;
         s += S.yazi(8, y + 22, ad, { boy: 14, renk: R.metin, kalin: true });
         s += S.yazi(x0, y - 8, yon, { boy: 13, renk: R.soluk });
         ls.forEach((t, j) => {
           const x = x0 + j * w, vur = j === e1 || j === e2;
           s += S.kutu(x, y, w - 3, 30, { dolgu: vur ? R.vurguSoluk : R.yuzey2, renk: vur ? R.vurgu : 'none', kalin: 1.6 }, 3);
-          s += S.yazi(x + (w - 3) / 2, y + 20, t, { boy: 13, hiza: 'middle', renk: vur ? R.vurgu : R.metin, kalin: vur });
+          s += S.yazi(x + (w - 3) / 2, y + 20, t, { boy: 13, hiza: 'middle', renk: vur ? R.vurgu : R.metin });
         });
       });
       /* eşdeğerlik okları: f/8 → f/11 (−1 durak), 1/250 → 1/125 (+1 durak) */
       const cx = j => x0 + j * w + (w - 3) / 2;
-      s += S.ok(cx(4), 88, cx(5) - 6, 88, { renk: R.vurgu, kalin: 1.6, boy: 6 }) + S.ok(cx(2), 158, cx(3) - 6, 158, { renk: R.vurgu, kalin: 1.6, boy: 6 });
-      s += S.yazi(8, 270, 'f/8 + 1/250 sn = f/11 + 1/125 sn', { boy: 14, renk: R.vurgu, kalin: true });
-      s += S.yazi(8, 290, 'ISO 100 → 400: 2 durak, süre 4\'e bölünebilir', { boy: 13, renk: R.metin });
+      s += S.ok(cx(4), 76, cx(5) - 6, 76, { renk: R.vurgu, kalin: 1.6, boy: 6 }) + S.ok(cx(1), 146, cx(2) - 6, 146, { renk: R.vurgu, kalin: 1.6, boy: 6 });
+      s += S.yazi(8, 258, 'f/8 + 1/250 sn = f/11 + 1/125 sn', { boy: 14, renk: R.vurgu, kalin: true });
+      s += S.yazi(8, 278, 'ISO 100 → 400: 2 durak, süre 4\'e bölünebilir', { boy: 13, renk: R.metin });
       return s;
     }
   });
@@ -696,7 +697,7 @@
     kaynak: [KAYNAK.petapixel, KAYNAK.googleGece],
     ciz(S) {
       const R = S.R, kar = 400 / Math.sqrt(800), ken = 400 / Math.sqrt(4000);
-      const ek = S.eksen({ x: 56, y: 30, w: 320, h: 196 }, { x0: 1, x1: 100, y0: 4, y1: 200 }, {
+      const ek = S.eksen({ x: 56, y: 30, w: 320, h: 196 }, { x0: 1, x1: 100, y0: 3, y1: 200 }, {
         logX: true, logY: true,
         xIsaret: [[1, '1'], [5, '5'], [10, '10'], [16, '16'], [50, '50'], [100, '100']],
         yIsaret: [[5, '5'], [10, '10'], [20, '20'], [50, '50'], [100, '100'], [200, '200']],
@@ -709,11 +710,10 @@
       /* kentte 5 kare = karanlıkta 1 kare */
       const n5 = Math.pow(kar / ken, 2);
       s += S.cizgi(ek.X(1), ek.Y(kar), ek.X(n5), ek.Y(kar), { renk: R.soluk, kalin: 1, kesik: '2 3' });
-      s += S.cizgi(ek.X(n5), ek.Y(kar), ek.X(n5), ek.Y(4), { renk: R.soluk, kalin: 1, kesik: '2 3' });
+      s += S.cizgi(ek.X(n5), ek.Y(kar), ek.X(n5), ek.Y(3), { renk: R.soluk, kalin: 1, kesik: '2 3' });
       const nk = (x, y, r) => S.daire(ek.X(x), ek.Y(y), 4.5, { dolgu: r, renk: R.zemin, kalin: 1.2 });
       s += nk(1, kar, R.mavi) + nk(1, ken, R.vurgu) + nk(n5, kar, R.vurgu) + nk(16, ken * 4, R.vurgu);
-      s += S.zeminliYazi(ek.X(1) + 8, ek.Y(kar) - 10, 'karanlık gök, 1 kare: ' + tr(kar, 1), { boy: 13, renk: R.mavi });
-      s += S.zeminliYazi(ek.X(1) + 8, ek.Y(ken) + 20, 'kent, 1 kare: ' + tr(ken, 1), { boy: 13, renk: R.vurgu });
+      s += S.yazi(370, 212, 'tek kare: karanlık ' + tr(kar, 1) + ', kent ' + tr(ken, 1), { boy: 13, hiza: 'end', renk: R.metin });
       s += S.zeminliYazi(ek.X(n5) + 8, ek.Y(kar) + 20, 'kentte ' + tr(n5, 0) + ' kare', { boy: 13, renk: R.metin });
       s += S.zeminliYazi(ek.X(16) + 8, ek.Y(ken * 4) + 18, '16 kare: ' + tr(ken * 4, 0), { boy: 13, renk: R.metin });
       s += S.zeminliYazi(370, ek.Y(kar * 10) - 10, 'karanlık gök', { boy: 13, hiza: 'end', renk: R.mavi, kalin: true });
