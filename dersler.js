@@ -59,6 +59,7 @@
       : `<div class="kart-ozet"><div><b>Tekrar kartları</b><span>Bir dersi "Okudum" diye işaretleyince soruları ve sayıları tekrar kartı olur.</span></div></div>`;
     el.innerHTML = `<h1>Dersler</h1>
       <p class="alt-baslik">Gökyüzünü okumaktan evrenin tarihine, sırayla. ${sayi ? `${sira.length} dersin ${sayi} tanesini bitirdin.` : 'Her dersin sonunda çözülmüş örnekler, sözlük, deftere notlar ve kendini sınama soruları var.'}</p>
+      <a class="sozluk-giris" href="#ders/sozluk"><b>Astro sözlük</b><span>${window.Sozluk && Sozluk.sayi() ? Sozluk.sayi() + ' terim' : 'Terimler'}: ara, dokun, öğren. Derslerde altı noktalı çizili sözcüklere dokununca da açılır.</span></a>
       ${kartKutu}
       ${(D.uniteler || [{ ad: '', dersler: sira.map(x => x.id) }]).map(u => {
         const ls = u.dersler.map(id => sira.find(x => x.id === id)).filter(Boolean);
@@ -166,6 +167,8 @@
       d.classList.toggle('dolu', !acik);
       d.textContent = acik ? 'Okundu olarak işaretli' : 'Okudum';
     });
+    /* Astro sözlük: terimlerin ilk geçtiği yer altı noktalı düğme olur (metin ve sesli okuma değişmez) */
+    if (window.Sozluk) Sozluk.isaretle(el.querySelector('article.ders'), { ders: x.id });
     /* Dersten derse kesintisiz dinleme: okuma bitince (ve kutu işaretliyse) sonraki derse geç, orada
        kendiliğinden başlat. Bayrak yalnız bu oturumda (sessionStorage); elle gezinmede tetiklenmez. */
     Ses.bagla(el.querySelector('article.ders'), el.querySelector('#dsSes'), 'ders ' + x.id, {
@@ -373,7 +376,8 @@
     /* Çizimler ayrı yüklenir; yüklenemezse dersler çizimsiz açılır */
     const cizim = U.betikler(['./cizim.js', './cizim_gokyuzu.js', './cizim_gunes_sistemi.js', './cizim_yildizlar.js', './cizim_gezegen_yasam.js', './cizim_evren.js']).catch(e => console.warn(e.message));
     try {
-      [D] = await Promise.all([U.veri('dersler'), cizim]);
+      const sozluk = window.Sozluk ? Sozluk.yukle().catch(e => console.warn('Sözlük yüklenemedi: ' + e.message)) : null;
+      [D] = await Promise.all([U.veri('dersler'), cizim, sozluk]);
       try { D.sinavlar = await U.veri('sinavlar'); } catch (e) { D.sinavlar = null; }   // sınavlar yoksa dersler yine açılır
     } catch (e) {
       el.innerHTML = '<div class="hata-kutu" role="alert">Dersler yüklenemedi: ' + U.kacis(e.message) + '. Başka bir sekmeye geçip dönünce yeniden denenir.</div>'; return false;
@@ -384,6 +388,7 @@
     if (!D) return;
     if (param === 'kartlar' || param === 'kartlar/hepsi') kartlar(param === 'kartlar/hepsi');
     else if (param.startsWith('sinav/')) { oturum = null; sinav(param.slice(6)); }
+    else if ((param === 'sozluk' || param.startsWith('sozluk/')) && window.Sozluk) { oturum = null; gomuluDurdur(); Sozluk.sayfa(el, decodeURIComponent(param.slice(7))); }
     else { oturum = null; if (param) ders(param); else liste(); }
   }
   U.modul('ders', { ilk, goster });

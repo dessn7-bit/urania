@@ -2,7 +2,7 @@
   "id": "d5",
   "unite": "yildizlar",
   "baslik": "Yıldızların Hayatı",
-  "ozet": "Bir yıldızın rengi, parlaklığı, büyüklüğü ve ne kadar yaşayacağı büyük ölçüde tek bir sayıya bağlıdır: doğduğu kütleye. Bu derste yıldızları tayflarına göre sınıflamayı, H-R diyagramını okumayı, yıldızı ayakta tutan iç dengeyi ve büyük yıldızların neden kısa yaşadığını öğreneceksin.",
+  "ozet": "Bir yıldızın rengi, parlaklığı, büyüklüğü ve ne kadar yaşayacağı büyük ölçüde tek bir sayıya bağlıdır: doğduğu kütleye. Bu derste yıldızları tayflarına göre sınıflamayı, mutlak kadirle yıldızları aynı uzaklığa koymayı, H-R diyagramını okumayı, yıldızı ayakta tutan iç dengeyi ve enerjinin içeride nasıl taşındığını, büyük yıldızların neden kısa yaşadığını ve Güneş'in dev evrelerinin takvimini öğreneceksin; sonunda bunları İstanbul göğündeki parlak yıldızlarla sınayacaksın.",
   "on_bilgi": [
     "d2",
     "d4",
@@ -35,6 +35,20 @@
       "akilda": "Aynı sıcaklıkta daha parlak olan yıldız daha büyüktür, çünkü L = 4πR²σT⁴. MK sistemi bu farkı Romen rakamıyla yazar: Güneş G2V, yani G2 renginde bir anakol yıldızıdır."
     },
     {
+      "baslik": "Mutlak kadir: yıldızları aynı uzaklığa koymak",
+      "paragraflar": [
+        "Gökte parlak görünen bir yıldız gerçekten güçlü müdür, yoksa yalnızca yakın mı? Görünür kadir (1. ders) iki bilgiyi birden taşır: yıldızın gücünü ve uzaklığını. Uzaktaki güçlü bir sokak lambası, yakındaki zayıf bir el fenerinden sönük görünebilir. Yıldızları adil karşılaştırmak için hepsini hayalî olarak aynı uzaklığa koyarız. Astronomlar bu uzaklık için 10 parseği seçmiştir; 1 parsek yaklaşık 3,26 ışık yılıdır, yani 10 parsek yaklaşık 32,6 ışık yılı eder. Bir yıldız 10 parsek uzaktan bakılınca hangi kadirde görünecekse, ona o yıldızın mutlak kadiri denir.",
+        "Görünür kadir (m), mutlak kadir (M) ve parsek cinsinden uzaklık (d) arasındaki bağa uzaklık modülü denir: m − M = 5 × log(d / 10). Formül ters kare yasasından gelir (2. ders): uzaklık 10 kat artınca ışık 100 kat azalır ve 100 kat, kadir ölçeğinde tam 5 kadirdir. Yani bir yıldızı 10 kat uzaklaştırırsan 5 kadir sönükleşir. Yakın yıldızların uzaklığı ıraklıkla, yani Dünya Güneş'in çevresinde dolanırken yıldızın gökte yaptığı küçük kaymayla ölçülür; bu yöntemi kozmik uzaklık merdiveniyle birlikte 17. derste göreceksin.",
+        "Güneş'in görünür kadiri −26,74, ama NASA'ya göre mutlak kadiri +4,83'tür. Yani Güneş 10 parsek uzakta olsaydı sıradan, sönük bir yıldız olurdu. Wikipedia'nın örnekleri farkı çarpıcı biçimde gösterir: Sirius'un mutlak kadiri yaklaşık 1,4, Rigel'inki yaklaşık −7,8, Deneb'inki en uzak tahmine göre −8,4. Kaynaklar burada da ayrışabilir: Swinburne Üniversitesi'nin astronomi ansiklopedisi Rigel için −7,1 ve 276,1 parseklik bir uzaklık verir. Mutlak kadir, ancak dayandığı uzaklık ölçümü kadar güvenilirdir; bunu Deneb örneğinde dersin sonunda yeniden göreceksin.",
+        "Bir ayrıntı daha: buraya kadar konuştuğumuz kadirler gözün gördüğü görsel ışıkla ölçülür. Yıldızın bütün dalga boylarındaki toplam ışımasını gösteren mutlak kadire mutlak bolometrik kadir denir. Fark çok soğuk ve çok sıcak yıldızlarda büyüktür: 2. derste gördüğün gibi Betelgeuse ışığının %85'ini kızılötesinde, Rigel ise %60'ını morötesinde yayar. Görsel kadir ikisinin de toplam gücünü olduğundan az gösterir. H-R diyagramının kuramsal biçiminde ışıma gücünün toplam enerjiyle verilmesinin nedeni budur."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Sirius'un mutlak kadiri ve 10 parsek uzaktaki Güneş",
+        "metin": "Sirius'un görünür kadiri −1,46, uzaklığı yaklaşık 8,6 ışık yılı. Önce parseğe çevir: 8,6 / 3,26 ≈ 2,64 parsek. Formül: M = m − 5 × log(d / 10) = −1,46 − 5 × log(0,264). log(0,264) ≈ −0,578; 5 ile çarpınca −2,89. M = −1,46 + 2,89 ≈ +1,43. Kaynağın verdiği 1,4 ile aynı: Sirius'u bu kadar parlak gösteren biraz da yakınlığıdır. Şimdi Güneş'i 10 parseğe taşı: +4,83 kadirlik bir yıldız. 1. derste gördüğün gibi kent göğünde çıplak gözün sınırı yaklaşık +3, banliyöde yaklaşık +4 kadirdir. 10 parsek uzaktaki bir Güneş İstanbul'un merkezinden görünmezdi; ancak karanlık bir kırsal gökte sönük bir yıldız olarak seçilirdi."
+      },
+      "akilda": "Mutlak kadir, yıldızın 10 parsek (yaklaşık 32,6 ışık yılı) uzaktan görüneceği kadirdir: m − M = 5 × log(d / 10). Güneş'in mutlak kadiri +4,83, Sirius'unki yaklaşık +1,4; mutlak kadir uzaklık ölçümü kadar güvenilirdir."
+    },
+    {
       "baslik": "H-R diyagramı ve anakol",
       "paragraflar": [
         "Ejnar Hertzsprung 1911'de, Henry Norris Russell 1913'te birbirinden bağımsız olarak yıldızların parlaklığını tayf sınıflarına karşı çizdi. Özgün diyagramın yatay ekseninde tayf sınıfı, dikey ekseninde mutlak görsel kadir vardı. Bugün Hertzsprung-Russell (H-R) diyagramı dediğimiz grafiğin her biçiminde ortak bir düzen vardır: ışıma gücü yüksek yıldızlar yukarıda, yüzey sıcaklığı yüksek yıldızlar soldadır. Dikkat: sıcaklık sola doğru artar, alışık olduğumuz grafiklerin tersine.",
@@ -57,6 +71,28 @@
       "akilda": "Yıldızı kütleçekimi içe, sıcak gazın basıncı dışa iter; bu hidrostatik dengedir. Denge kendini düzeltir: çekirdek sıkışırsa ısınır ve füzyon hızlanır."
     },
     {
+      "baslik": "Kütleçekimi yetmez: Kelvin'in hesabı",
+      "paragraflar": [
+        "Füzyon bilinmeden önce de Güneş'in enerjisi için bir açıklama vardı. Helmholtz, Güneş'in yaydığı muazzam enerjinin büyük bir kütlenin kütleçekimiyle büzülmesinden geldiğini önerdi; Lord Kelvin de Güneş'in ışığının kütleçekimi enerjisinin ısıya dönüşmesiyle üretildiğine inanıyordu. Fikir mantıklıydı: büzülen gaz ısınır. Bir önceki bölümdeki denge de aynı şeyi söyler: enerji kaybeden bir yıldız büzülür ve ısınır. Ama hesap bir sorun çıkardı.",
+        "Kelvin'in hesabı Güneş'e yalnızca yaklaşık 30 milyon yıllık bir ömür veriyordu; 1862'de yirmi milyon yıllık ısıyı açıklamakta hiç zorluk olmadığını yazmıştı. Jeologlar ve evrim biyologları ise çok daha uzun süreler istiyordu: Charles Darwin, Weald denen bölgenin aşınması için 300 milyon yıl civarında bir sayı bulmuştu. Fizikçiler Güneş'i en fazla birkaç on milyon yaşında sayıyordu. John Bahcall'ın Nobel Vakfı için yazdığı bir yazıda dediği gibi, bugün Kelvin'in yanıldığını, yerbilimcilerle biyologların haklı olduğunu biliyoruz.",
+        "Çözüm 1920'de belirdi: Aston dört hidrojen çekirdeğinin bir helyum çekirdeğinden ağır olduğunu ölçtü ve Eddington, Güneş'in hidrojeni helyuma çevirerek parlayabileceğini savundu (4. ders). Hans Bethe 1939'da yayımladığı Yıldızlarda Enerji Üretimi makalesinde ayrıntıyı hesapladı. Kütleçekimi yine de önemsiz değildir: aynı zaman ölçeği, bir önyıldızın anakola çöküşünün ve anakoldan deve geçişin hızını belirler. Ama milyarlarca yıllık parlaklığın kaynağı olamaz."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Kütleçekimi Güneş'i ne kadar süre parlatabilirdi?",
+        "metin": "Kelvin-Helmholtz zaman ölçeği kabaca t ≈ G × M² / (R × L) ile verilir: Güneş'in kütleçekimi enerjisini bugünkü güçle ışıyarak harcaması için gereken süre. Değerler SI biriminde: G = 6,674 × 10⁻¹¹, M = 1,988 × 10³⁰ kg, R = 6,957 × 10⁸ m, L = 3,828 × 10²⁶ W. Pay: M² ≈ 3,952 × 10⁶⁰; G × M² ≈ 2,638 × 10⁵⁰. Payda: R × L ≈ 2,663 × 10³⁵. t ≈ 2,638 × 10⁵⁰ / 2,663 × 10³⁵ ≈ 9,9 × 10¹⁴ s. Bir yılda yaklaşık 3,156 × 10⁷ s olduğundan t ≈ 3,1 × 10⁷ yıl, yani yaklaşık 31 milyon yıl; kaynakların verdiği 30 milyon yılla aynı. Güneş'in yaşı ise 4,6 milyar yıl, bunun yaklaşık 150 katı. Sonuç: kütleçekimi tek başına Güneş'i ancak on milyonlarca yıl parlatabilirdi; aradaki fark, başka bir enerji kaynağının, füzyonun kanıtıdır."
+      },
+      "akilda": "Kütleçekimiyle büzülme Güneş'i yalnızca yaklaşık 30 milyon yıl parlatabilirdi (Kelvin-Helmholtz zaman ölçeği). Jeolojinin istediği yüz milyonlarca yıl ancak füzyonla açıklandı."
+    },
+    {
+      "baslik": "Enerji yıldızın içinde nasıl taşınır?",
+      "paragraflar": [
+        "Çekirdekte üretilen enerji yüzeye iki yolla taşınır: ışınımla, yani fotonların maddenin içinden yavaş yavaş sızmasıyla, ya da konveksiyonla, yani sıcak gazın yükselip soğuyan gazın batmasıyla. Konveksiyon enerji taşımada ışınımdan daha etkilidir, ama ancak sıcaklık derinlikle çok hızlı değiştiğinde başlar. Bir de maddenin ışığı ne kadar geçirmediği, yani opaklığı önemlidir: opaklık yeterince yüksekse ışınım tıkanır ve enerji konveksiyonla taşınır. Ocaktaki tencereyi düşün: hafif ısıtılan su durgun kalır, ateş güçlenince kaynamaya başlar. Benzetme yalnızca eşiği anlatır; yıldızda konveksiyonun rakibi ışınımdır.",
+        "Hangi yolun nerede işlediği kütleye bağlıdır ve anakolda üç tip yapı çıkar. Kütlesi Güneş'inkinin yaklaşık 0,4 katından az olan yıldızlar baştan sona konvektiftir: bütün yıldız yavaşça karışır. Güneş gibi yıldızların çekirdeği ışınımla, yalnızca yüzeye yakın dış katmanı konveksiyonla enerji taşır; bunu 4. dersteki ışınım ve konveksiyon bölgelerinde gördün. Kütlesi Güneş'inkinin yaklaşık 1,3–1,5 katından büyük yıldızlarda tablo tersine döner: CNO döngüsü enerjiyi çekirdekte o kadar yoğunlaştırır ki çekirdek konvektif olur, dış katmanlar ise enerjiyi ışınımla, az ya da hiç konveksiyon olmadan taşır.",
+        "Bu ayrıntı yıldızın ömrünü de etkiler. Tamamen konvektif küçük yıldızlarda çekirdekte üretilen helyum bütün yıldıza dağılır; bileşim görece düzgün kalır ve anakol ömrü orantısız biçimde uzar. Güneş'te ise ışınım bölgesi karışmadığı için helyum çekirdekte birikir; çekirdekte hidrojen bitince Güneş anakolu terk edecek; oysa bugün bile yüzeyindeki gazın kütlece yaklaşık dörtte üçü hidrojendir (4. ders). Yani Güneş hidrojeninin tamamını değil, esas olarak çekirdekteki kısmını yakabilecek. H-R diyagramı bölümündeki Gaia boşluğu da bu sınırla, M cücelerinde yıldızın tamamen konvektif hale geçtiği kütleyle açıklanıyor. Güneş'te ise iki bölgenin sınırı ölçülmüştür: helyosismoloji konveksiyon bölgesinin tabanını yarıçapın 0,713'ünde bulur (4. ders). Hacim olarak bakarsan bu dış kabuk Güneş'in hacminin yaklaşık %64'ünü kaplar, çünkü 1 − 0,713³ ≈ 0,64. Ama yoğunluk merkeze doğru çok arttığı için bu büyük hacmin tuttuğu kütle görece küçüktür; Güneş'in kütlesinin çoğu ışınımlı iç bölgededir."
+      ],
+      "akilda": "Enerji ışınımla ya da konveksiyonla taşınır; sıcaklık hızlı değişince ya da opaklık yüksekse konveksiyon başlar. 0,4 M☉ altı yıldızlar tamamen konvektif; Güneş'te çekirdek ışınımlı, dış katman konvektif; 1,3–1,5 M☉ üstünde çekirdek konvektif, dış katman ışınımlı."
+    },
+    {
       "baslik": "Kütle–ışıma gücü ilişkisi",
       "paragraflar": [
         "Kütlesi büyük olan yıldızda üstteki katmanların ağırlığı da büyüktür; onu taşıyan hidrostatik denge daha sıcak bir çekirdekte kurulur ve füzyon çok daha hızlı yürür. Bir önceki bölümdeki sayılar bunu gösteriyor: Güneş'in çekirdeği yaklaşık 15,7 milyon kelvin, 1,5 Güneş kütleli bir yıldızınki yaklaşık 18 milyon kelvindir. Sonuç: kütle biraz artınca ışıma gücü çok artar. Bu ilişki ilk önce gözlemden çıkarıldı: Wikipedia'ya göre çift yıldız sistemlerindeki yıldızların kütleleri ölçülüp ışıma güçleriyle karşılaştırıldı (çift yıldızlarla kütle ölçmek d15'te). Arthur Eddington 1924'te yıldız içi modellerinin aynı ilişkiyi verdiğini gösterdi.",
@@ -66,12 +102,27 @@
       "akilda": "Anakolda kütle biraz artınca ışıma gücü çok artar: kabaca L ∝ M^3,5 ile M^4 arası. İlişki çift yıldızlardan ölçülen kütlelerle kuruldu; kural kabadır, tablo değerleri daha güvenilirdir."
     },
     {
+      "baslik": "Kütle ve bileşim: yıldızın kimlik kartı",
+      "paragraflar": [
+        "Bu derste sık sık kütlenin her şeyi belirlediğini söyledik. Bu fikrin bir adı var: Vogt-Russell teoremi. Heinrich Vogt ile Henry Norris Russell'ın 1920'lerin sonu ile 1930'ların başında birbirinden bağımsız dile getirdiği bu fikre göre, hidrostatik ve ısıl dengedeki bir yıldızın iç yapısı, yarıçapı ve ışıma gücü, toplam kütlesi ve başlangıçtaki kimyasal bileşimiyle tek türlü belirlenir. Anakolun H-R diyagramında ince bir şerit olmasını ve kütle-ışıma ilişkisini açıklayan budur.",
+        "Ama adına rağmen bu, matematik anlamında gerçek bir teorem değildir: tekliği kanıtlanmamıştır ve sayısal modeller aynı genel değerlerin birden çok çözüm verebildiğini gösterdi. Hızlı dönen, güçlü manyetik alanlı ya da ısıl dengede olmayan yıldızlarda geçerliliğini yitirir. Yine de anakol yıldızlarının çoğu için çok iyi bir yaklaşımdır. Dürüst özet şu: bir yıldızın kimlik kartında iki satır büyük ölçüde her şeyi söyler, kütle ve bileşim; ama kartın dipnotları da vardır.",
+        "Bileşim satırını okumak için astronomların tuhaf bir alışkanlığını bilmen gerekir: hidrojen ve helyum dışındaki bütün elementlere metal derler; karbon da oksijen de onlar için metaldir. Bir yıldızın bu ağır elementlerce zenginliğine metalisite denir. Güneş'in fotosferinde ağır elementler kütlenin %2'sinden azdır (4. ders). Metalisite çoğunlukla köşeli parantez içinde Fe/H diye yazılır ve demir bölü hidrojen diye okunur: yıldızdaki demir bolluğunun Güneş'tekine oranının on tabanlı logaritması. Güneş için Fe/H = 0; −1, Güneş'in onda biri kadar demir demektir; +1 ise on katı.",
+        "Walter Baade 1944'te yıldızları iki gruba ayırdı: metalce zengin Popülasyon I ve metalce fakir Popülasyon II. Popülasyon II yıldızlarının metalisitesi Güneş'inkinin kabaca binde biri ile onda biri arasındadır. 1978'de ortaya atılan Popülasyon III ise evrenin ilk doğan yıldızları için kuramsal bir gruptur; metalisitelerinin −6'dan, yani Güneş'in milyonda birinden düşük olduğu tahmin edilir. Neden ilk yıldızlar metalce bu kadar fakirdi? Cevap ağır elementlerin nerede üretildiğinde yatıyor; onu 6. derste göreceksin. Dersin sonunda göreceğin Arcturus, metalisitesi Güneş'inkinin yaklaşık üçte biri olan yaşlı bir yıldızdır. Wikipedia onu yaşlı bir disk yıldızı olarak anar ve düşük metalisitesi yüzünden bir Popülasyon II yıldızı olabileceğini belirtir; yani her yıldız iki kutudan birine tam oturmaz, popülasyonlar arasında geçişler vardır."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Fe/H değerini okumak",
+        "metin": "Fe/H bir logaritma olduğu için oranı bulmak üzere 10'un o kuvvetini al. Arcturus için Fe/H = −0,52: 10^(−0,52) ≈ 0,30. Yani Arcturus'un atmosferinde demir, Güneş'tekinin yaklaşık üçte biri kadardır; kaynak da metalisitesinin Güneş'inkinin yaklaşık üçte biri olduğunu söyler. Popülasyon II sınırları: binde bir 10⁻³ demektir, yani Fe/H = −3; onda bir Fe/H = −1. Popülasyon III için −6'dan küçük: 10⁻⁶, milyonda bir. Ters yönden düşün: Fe/H = +0,3 olan bir yıldızda 10^0,3 ≈ 2, yani Güneş'in iki katı demir vardır. Sonuç: Fe/H'deki her 1 birim 10 kat demektir; kadir ölçeği gibi logaritmik bir dildir."
+      },
+      "akilda": "Vogt-Russell: dengedeki bir yıldızı büyük ölçüde kütlesi ve başlangıç bileşimi belirler, ama bu kesin bir teorem değildir. Astronomide H ve He dışındaki her element metaldir; Fe/H = 0 Güneş, −1 onda bir. Popülasyon I metalce zengin, II fakir, III kuramsal ilk yıldızlar."
+    },
+    {
       "baslik": "Anakol ömrü: çok yakıt, kısa ömür",
       "paragraflar": [
         "Daha çok yakıtı olan daha uzun yaşar diye düşünürüz; yıldızlarda tersi olur. Yakıt miktarı kütleyle orantılıdır, harcama hızı ise ışıma gücüdür. Kütle iki katına çıkınca yakıt iki katına çıkar ama harcama kabaca 11–16 katına çıkar. Wikipedia'daki yaklaşık formül bunu özetler: ömür ≈ 10 milyar yıl × (M ÷ M☉) × (L☉ ÷ L).",
         "Bu formülü Mamajek'in tablosundaki kütle ve ışıma gücü değerlerine uygulayınca şu tablo çıkar: 43 Güneş kütleli bir O5 yıldızı anakolda yalnızca yaklaşık 1,2 milyon yıl, 17,7 Güneş kütleli bir B0 yıldızı yaklaşık 4 milyon yıl, 2,18 Güneş kütleli bir A0 yıldızı yaklaşık 570 milyon yıl kalır. Güneş (G2) yaklaşık 10 milyar yıl, 0,88 Güneş kütleli bir K0 yıldızı yaklaşık 19 milyar yıl, 0,57 Güneş kütleli bir M0 yıldızı yaklaşık 82 milyar yıl yaşar. Son ikisi, 13,8 milyar yıllık evrenin bugünkü yaşından uzundur: tek başına yaşayan hiçbir M cücesinin anakolu terk etmiş olması beklenmez.",
         "Wikipedia'ya göre Güneş yaklaşık 4,5 milyar yıldır anakoldadır ve toplam anakol ömrü yaklaşık 10 milyar yıldır. NASA'ya göre Güneş ömrünün yarısından biraz azını tamamlamıştır ve beyaz cüceye dönüşmeden önce yaklaşık 5 milyar yıl daha yaşayacaktır.",
-        "Anakolda geçen süre durgun değildir. Çekirdekte hidrojen helyuma dönüştükçe çekirdek yavaşça büzülür ve ısınır; yıldız giderek parlaklaşır. Wikipedia'ya göre genç Güneş bugünkü parlaklığının yalnızca yaklaşık %70'i kadar parlaktı; Güneş maddesi bu artışı anakola girişten bu yana 0,677'den 1,0 Güneş ışıma gücüne, yani %48 olarak verir. Güneş bugün her 100 milyon yılda yaklaşık %1 parlaklaşıyor."
+        "Anakolda geçen süre durgun değildir. Çekirdekte hidrojen helyuma dönüştükçe çekirdek yavaşça büzülür ve ısınır; yıldız giderek parlaklaşır. Wikipedia'ya göre genç Güneş bugünkü parlaklığının yalnızca yaklaşık %70'i kadar parlaktı; Güneş maddesi bu artışı anakola girişten bu yana 0,677'den 1,0 Güneş ışıma gücüne, yani %48 olarak verir. Güneş bugün her 100 milyon yılda yaklaşık %1 parlaklaşıyor.",
+        "Formülü gerçek bir yıldızla sınayalım. Arcturus'un kütlesi yaklaşık 1,08 Güneş kütlesi. M^4 kuralıyla ışıma gücü 1,08^4 ≈ 1,36 L☉, ömür ≈ 10 milyar yıl × 1,08 / 1,36 ≈ 7,9 milyar yıl. Kısa biçimle 10 milyar yıl × 1,08^(−2,5) ≈ 8,2 milyar yıl. Arcturus'un yaşı 6 ile 8,5 milyar yıl arasında tahmin ediliyor ve yıldız anakolu çoktan terk etmiş. Kaba kurallardan bekleneceği kadar uyumlu bir sonuç: Güneş'ten biraz ağır bir yıldız anakolda Güneş'ten biraz kısa kalır ve 8 milyar yaşına varmadan dev olur."
       ],
       "ornek": {
         "baslik": "Örnek: Güneş'ten iki kat kütleli bir yıldız ne kadar yaşar?",
@@ -97,6 +148,47 @@
         "Bir kırmızı devi bugün kendi gözünle görebilirsin. Wikipedia'nın kırmızı dev maddesi, parlak Arcturus'u 36 ışık yılı uzaklıkta, kırmızı dev kolunda bir K yıldızı olarak anar (madde içinde sınıfı bir yerde K0, bir yerde K1,5 diye geçiyor). Uygulamanın kataloğuna göre görünür kadiri −0,05, renk indeksi 1,24'tür: turuncu ve çok parlak. Dik açıklığı yaklaşık +19,2° olduğu için İstanbul'da meridyenden geçerken ufkun yaklaşık 68° yukarısına çıkar. Turuncu rengine bakarken şunu düşün: Güneş'ten soğuk bir yüzeyle bu kadar parlak görünebilmesinin tek yolu, Güneş'ten çok daha büyük olmasıdır."
       ],
       "akilda": "Çekirdekte hidrojen bitince füzyon kabuğa taşınır, yıldız şişip kırmızı dev olur. Yaklaşık 100 milyon kelvinde helyum karbona dönüşmeye başlar. Güneş kırmızı dev olunca yarıçapı Dünya'nın yörüngesini aşabilir."
+    },
+    {
+      "baslik": "Devler ve cüceler: boyların ve yoğunlukların yelpazesi",
+      "paragraflar": [
+        "Anakol yıldızlarının kütleleri kabaca 0,08 ile 120–200 Güneş kütlesi arasındadır; boylar ise çok daha geniş bir yelpazeye yayılır. Mamajek'in anakol tablosunda bir M3 cücesinin yarıçapı yaklaşık 0,36, bir O5 yıldızınınki yaklaşık 11,5 Güneş yarıçapıdır; anakolun iki ucu arasında yalnızca 30 kat kadar fark var. Devlere geçince ölçek değişir. Arcturus yaklaşık 25 Güneş yarıçapındadır, Deneb'in çapı Güneş'inkinin yaklaşık 100–200 katıdır. Betelgeuse ise NASA'ya göre Güneş'in yaklaşık 700 katı büyüklüğündedir; Güneş'in yerine konsa Jüpiter'in yörüngesinin ötesine taşardı.",
+        "Kütle bu kadar az değişirken boy neden bu kadar çok değişir? Çünkü bir dev, kütlesini çok büyük bir hacme yaymıştır. Sonuç, devlerin akıl almaz seyrekliğidir. Güneş'in ortalama yoğunluğu NASA'ya göre 1408 kg/m³, sudan biraz fazla. Arcturus ise Güneş'ten yalnızca biraz kütleli ama hacmi yaklaşık 16.000 kat büyük; ortalama yoğunluğu bu yüzden Güneş'inkinin on binde birinden de azdır. Bu ortalama da yanıltıcıdır: devlerin kütlesinin önemli bir kısmı küçük ve yoğun çekirdeklerinde toplanır. Güneş örneğinde helyum parlaması sırasında çekirdek, Güneş kütlesinin %40'ını tutacak.",
+        "Bu boyları nasıl biliyoruz? Çoğunu bu dersteki formülle: sıcaklık ve ışıma gücü ölçülünce L = 4πR²σT⁴ yarıçapı verir. Bazı yakın ve büyük yıldızlarda gökteki açısal çap da ölçülebilir; Wikipedia'ya göre Deneb'in çapı sıcaklığı, ışıma gücü ve açısal çapı birlikte kullanılarak tahmin edilir. Uzaklık belirsizse ışıma gücü, dolayısıyla yarıçap da belirsizdir; Deneb için verilen geniş aralıkların ortak kaynağı budur."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Arcturus'un içine kaç Güneş sığar, ne kadar seyrektir?",
+        "metin": "Hacim yarıçapın küpüyle orantılıdır. Arcturus: 25,4 × 25,4 × 25,4 ≈ 16.387; yani hacmi Güneş'inkinin yaklaşık 16.400 katı. Kütlesi 1,08 Güneş kütlesi olduğundan ortalama yoğunluğu Güneş'inkinin 1,08 / 16.387 ≈ 6,6 × 10⁻⁵ katıdır: 1408 kg/m³ × 6,6 × 10⁻⁵ ≈ 0,093 kg/m³. Bir metreküp Arcturus maddesi ortalamada yaklaşık 93 gram gelir; aynı hacimde su 1000 kg'dır. Betelgeuse için yalnızca hacim: 700³ = 343.000.000, yani yaklaşık 340 milyon Güneş. Bir M3 cücesi ise 0,36³ ≈ 0,047, Güneş hacminin yaklaşık %5'i. Sonuç: yıldızların kütleleri birkaç bin kat değişirken hacimleri milyarlarca kat değişir."
+      },
+      "akilda": "Anakolda yarıçap yaklaşık 0,36 ile 11,5 Güneş yarıçapı arasındadır; devlerde onlarca (Arcturus yaklaşık 25), süperdevlerde yüzlerce kat (Betelgeuse yaklaşık 700). Devler kütlelerini dev bir hacme yaydıkları için ortalamada son derece seyrektir."
+    },
+    {
+      "baslik": "Güneş'in takvimi: anakoldan sonrası",
+      "paragraflar": [
+        "Kırmızı dev evresini genel olarak gördün; şimdi Güneş için takvime dökelim. Wikipedia'nın Güneş maddesindeki model sonuçlarına göre Güneş, çekirdeğindeki hidrojen yaklaşık 5 milyar yıl sonra bittiğinde sonraki 2 milyar yıl boyunca genişleyecek: önce yaklaşık 1 milyar yıl bir altdev, sonra bir kırmızı dev olacak. Kırmızı dev kolunda yaklaşık 1 milyar yıl geçirecek ve kütlesinin yaklaşık üçte birini kaybedecek. Işıma gücü sonunda bugünkünün 1000 katını aşacak; kolun tepesinde çapı bugünkünün yaklaşık 256 katı, yarıçapı yaklaşık 1,19 AB olacak.",
+        "Merkür ve Venüs yutulacak. Dünya'nın kaderi biraz belirsiz: kaynağın aktardığı bir modele göre Dünya'nın yörüngesi önce en çok 1,5 AB'ye kadar genişleyebilir, ama Dünya yine de yaklaşık 7,59 milyar yıl sonra yutulur; NASA da Dünya'nın belki yutulacağını söyler. Sonra helyum parlaması gelir: o sırada Güneş kütlesinin %40'ını tutan çok sıkışmış helyum çekirdeğin yaklaşık %6'sı birkaç dakika içinde karbona dönüşür. Ardından Güneş küçülerek bugünkünün yaklaşık 10 katı boyuna ve 50 katı ışıma gücüne iner; yüzeyi bugünkünden biraz soğuk olur.",
+        "Sonra yatay kolda ya da kırmızı yığıntı denen bölgede yaklaşık 100 milyon yıl çekirdeğinde helyum yakar. Ardından asimptotik dev koluna çıkar; bu kolun erken evresi yaklaşık 20 milyon yıl sürer. Sonlara doğru yaklaşık her 100.000 yılda bir tekrarlanan ve birkaç yüz yıl süren ısıl atım dönemleri yaşar; bu dönemlerde ışıma gücü bugünkünün 5000 katına kadar çıkabilir. En büyük yarıçapı bu kez yaklaşık 179 Güneş yarıçapıyla kırmızı dev kolundaki tepeden küçük kalır. Modeller, dış zarfını tamamen yitirmeden önce dört ısıl atım öngörür. Sonrası, yani gezegenimsi bulutsu ve beyaz cüce, 6. dersin konusu."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Güneş'in hayatını bir güne sığdırmak",
+        "metin": "Güneş'in aktif hayatını topla: doğumdan çekirdekteki hidrojenin bitmesine kadar yaklaşık 4,6 + 5 = 9,6 milyar yıl; altdev ve kırmızı dev evreleri birlikte 2 milyar yıl; yatay kol 0,1 milyar yıl; erken asimptotik dev kolu 0,02 milyar yıl. Toplam ≈ 11,72 milyar yıl. Bunu 24 saate sığdırırsak 1 milyar yıl = 24 / 11,72 ≈ 2,05 saat olur. Bugün (4,6 milyar yıl): 4,6 × 2,05 ≈ 9,4 saat, yani sabah 9.25 civarı. Anakolun sonu: 9,6 × 2,05 ≈ 19,7 saat, akşam 19.40 civarı. Kırmızı dev kolunun sonu (11,6 milyar yıl): yaklaşık 23.45. Yatay kol: 0,1 × 2,05 saat ≈ 12 dakika. Erken asimptotik dev kolu: 0,02 × 2,05 saat ≈ 2,5 dakika. Yani Güneş'in bütün dev evreleri günün son dört saatine sığar, en hareketli kısmı ise son birkaç dakikaya. Süreleri yuvarlak aldık; modellere göre yüz milyonlarca yıllık farklar olabilir."
+      },
+      "akilda": "Güneş yaklaşık 5 milyar yıl sonra yaklaşık 1 milyar yıl altdev, sonra yaklaşık 1 milyar yıl kırmızı dev (çapı 256 kat) olur; helyum parlamasından sonra yaklaşık 100 milyon yıl yatay kolda, yaklaşık 20 milyon yıl asimptotik dev kolunda kalır."
+    },
+    {
+      "baslik": "İstanbul'dan yıldız renkleri gezintisi",
+      "paragraflar": [
+        "Bu dersteki fikirleri çıplak gözle sınayabilirsin. Gökyüzünün en parlak yıldızlarının çoğu İstanbul'dan görülür ve farklı tayf sınıflarına dağılır. Wikipedia'nın birinci kadir yıldızları tablosuna göre B sınıfında Rigel (Avcı) B8 Iab, Spica (Başak; B1 III-IV ve B2 V yıldızlarından oluşan bir çift) ve Regulus (Aslan) B8 IV; A sınıfında Vega (Çalgı) A0 V, Sirius (Büyük Köpek) A1 V, Altair (Kartal) A7 V ve Deneb (Kuğu) A2 Ia; F sınıfında Procyon (Küçük Köpek) F5 IV-V; G sınıfında, G8 III ile G0 III yıldızlarından oluşan bir çift olan Capella (Arabacı); K sınıfında Arcturus (Çoban) K1,5 III, Pollux (İkizler) K0 IIIb ve Aldebaran (Boğa) K5 III; M sınıfında Betelgeuse (Avcı) M2 Iab ve Antares (Akrep) M1,5 Iab-b var.",
+        "Görünürlük için 1. dersteki kuralı kullan: bir yıldızın İstanbul'da meridyenden geçerken yüksekliği yaklaşık 90° − 41° + dik açıklıktır. Uygulamanın kataloğuna göre Antares'in dik açıklığı yaklaşık −26,4°; en yükseğe çıktığında bile ufkun yalnızca yaklaşık 23° üstündedir ve güney ufkunda alçakta kalır. Sirius yaklaşık 32°, Rigel yaklaşık 41°, Arcturus yaklaşık 68° yükseğe çıkar. Ufka yakın bir yıldızın ışığı atmosferde daha uzun yol alır (1. dersteki hava kütlesi); renkleri karşılaştırırken mümkünse yüksekteki yıldızları seç.",
+        "Renk ile sınıf arasındaki bağı uygulamanın kataloğundaki B eksi V değerleriyle de görebilirsin: Rigel −0,03, Vega yaklaşık 0, Procyon 0,43, Capella 0,80, Arcturus 1,24, Aldebaran 1,54, Antares 1,86. Sayı büyüdükçe yıldız kızarır ve sınıf B'den M'ye doğru kayar. Karşılaştırma için Güneş'in B eksi V değeri yaklaşık 0,656'dır; bu listede Güneş'e renkçe en yakın yıldızlar, değeri ondan biraz küçük olan Procyon ile biraz büyük olan Capella'dır.",
+        "Arcturus'a bakarken Güneş'in geleceğine bakıyorsun. Wikipedia'ya göre Arcturus'un kütlesi yaklaşık 1,08 Güneş kütlesi, yaşı yaklaşık 7,1 milyar yıl (metinde 6 ile 8,5 milyar yıl arası verilir), yarıçapı yaklaşık 25,4 Güneş yarıçapı, ışıma gücü Güneş'in yaklaşık 170 katı, yüzey sıcaklığı yaklaşık 4286 K'dir. Yani kütlesi Güneş'e çok yakın bir yıldız, çekirdeğindeki hidrojeni bitirmiş ve şişmiştir. Metalisitesi Güneş'inkinin yaklaşık üçte biridir. Evrim durumunda biraz belirsizlik var: çoğu kaynak onu kırmızı dev kolunda sayar, bir çalışma ise helyum parlamasını çoktan geçirmiş olabileceğini öne sürer.",
+        "Yaz Üçgeni'nin iki köşesi, Vega ile Deneb, ışıma sınıfının ne demek olduğunu gösterir. İkisi de A sınıfı, yani yüzey sıcaklıkları benzer. Vega yaklaşık 25 ışık yılı uzaktaki bir anakol yıldızıdır (V); Deneb ise bir süperdevdir (Ia). Deneb'in uzaklığı belirsizdir: tahminler 1400 ile 2600 ışık yılı arasında değişir ve buna bağlı olarak ışıma gücü Güneş'in 55.000 ile 196.000 katı arasında verilir. Gökte Deneb, Vega'dan yalnızca biraz sönük görünür. Aşağıdaki örnek bunun ne anlama geldiğini hesaplıyor."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Deneb, Vega'dan kaç kat güçlü; Arcturus ne kadar büyük?",
+        "metin": "Görünür kadirler: Vega 0,03, Deneb 1,25; fark 1,22 kadir. Parlaklık oranı 10^(0,4 × 1,22) = 10^0,488 ≈ 3,08; Deneb gökte yaklaşık 3 kat sönük görünür. Gerçek güç farkı için uzaklık oranının karesini al. Uzak tahmin (2600 ışık yılı): 2600 / 25 = 104; 104² = 10.816; 10.816 / 3,08 ≈ 3500. Yakın tahmin (1400 ışık yılı): 1400 / 25 = 56; 56² = 3136; 3136 / 3,08 ≈ 1000. Deneb, Vega'dan görsel olarak 1000 ile 3500 kat güçlüdür; aradaki belirsizliğin tamamı uzaklıktan gelir. Yıldızlararası tozun ışığı sönükleştirmesini hesaba katmadık. Arcturus için ışıma sınıfları bölümündeki formülü kullan: √170 ≈ 13,04; (4286 / 5772)² ≈ 0,551; R ≈ 13,04 / 0,551 ≈ 23,7 Güneş yarıçapı. Ölçülen 25,4 ile yakın; soğuk ama parlak bir yıldızın dev olması gerektiğini sayılar da söylüyor."
+      },
+      "akilda": "İstanbul'dan B'den M'ye bütün sınıfların parlak örnekleri görülür: Rigel ve Spica (B), Vega ve Sirius (A), Procyon (F), Capella (G), Arcturus ve Aldebaran (K), Betelgeuse ve Antares (M). Arcturus, Güneş kütlesinde şişmiş yaşlı bir yıldızdır; Vega ve Deneb aynı sınıfta, çok farklı boydadır."
     }
   ],
   "formuller": [
@@ -114,6 +206,21 @@
       "ad": "Anakol ömrü (yaklaşık)",
       "ifade": "τ ≈ 10^10 yıl × (M/M☉) × (L☉/L)",
       "aciklama": "Wikipedia 'Main sequence'. Yakıt kütleyle, harcama ışıma gücüyle orantılı. Aynı kaynak bunu τ ≈ 10^10 yıl × (M/M☉)^-2,5 olarak da yazar. İki biçim farklı sonuç verebilir; yalnız büyüklük mertebesi için kullan."
+    },
+    {
+      "ad": "Uzaklık modülü",
+      "ifade": "m − M = 5 × log₁₀(d / 10 pc)",
+      "aciklama": "m görünür kadir, M mutlak kadir, d parsek cinsinden uzaklık (1 pc ≈ 3,26 ışık yılı). Yıldızlararası tozun sönükleştirmesini hesaba katmaz."
+    },
+    {
+      "ad": "Kelvin-Helmholtz zaman ölçeği",
+      "ifade": "t ≈ G × M² / (R × L)",
+      "aciklama": "G = 6,674 × 10⁻¹¹ m³ kg⁻¹ s⁻², M kütle (kg), R yarıçap (m), L ışıma gücü (W). Güneş için yaklaşık 30 milyon yıl: kütleçekimiyle büzülmenin Güneş'i parlatabileceği süre."
+    },
+    {
+      "ad": "Metalisite",
+      "ifade": "[Fe/H] = log₁₀[(Fe/H)yıldız / (Fe/H)Güneş]",
+      "aciklama": "Güneş için 0; −1 Güneş'in onda biri, +1 on katı kadar demir. Oran = 10^[Fe/H]."
     }
   ],
   "anahtar_sayilar": [
@@ -206,6 +313,51 @@
       "aciklama": "Kırmızı dev kolunun tepesinde Güneş",
       "kaynak_url": "https://en.wikipedia.org/wiki/Sun",
       "kid": "d5n14"
+    },
+    {
+      "deger": "+4,83",
+      "aciklama": "Güneş'in mutlak (görsel) kadiri",
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html"
+    },
+    {
+      "deger": "1 pc = 3,2616 ışık yılı; 10 pc",
+      "aciklama": "Mutlak kadirin tanımındaki uzaklık",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Absolute_magnitude"
+    },
+    {
+      "deger": "~30 milyon yıl",
+      "aciklama": "Kelvin'in kütleçekimiyle büzülmeden bulduğu Güneş ömrü (Kelvin-Helmholtz zaman ölçeği)",
+      "kaynak_url": "https://arxiv.org/pdf/astro-ph/0009259"
+    },
+    {
+      "deger": "< 0,4 M☉ tamamen konvektif; > 1,3–1,5 M☉ konvektif çekirdek",
+      "aciklama": "Anakolda enerji taşınımının kütleye göre değişimi",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Main_sequence"
+    },
+    {
+      "deger": "Pop II: Güneş'in 1/1000–1/10'u; Pop III: [Fe/H] < −6",
+      "aciklama": "Yıldız popülasyonlarının metalisitesi (Baade 1944; Pop III 1978)",
+      "kaynak_url": "https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Metallicity"
+    },
+    {
+      "deger": "1,08 M☉; 25,4 R☉; 170 L☉; 4286 K; 7,1 milyar yıl; [Fe/H] −0,52",
+      "aciklama": "Arcturus (K1,5 III)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Arcturus"
+    },
+    {
+      "deger": "1400–2600 ışık yılı; 55.000–196.000 L☉",
+      "aciklama": "Deneb'in belirsiz uzaklığı ve ışıma gücü",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Deneb"
+    },
+    {
+      "deger": "altdev ~1 milyar yıl; kırmızı dev kolu ~1 milyar yıl; yatay kol ~100 milyon yıl; erken AGB ~20 milyon yıl",
+      "aciklama": "Güneş'in anakol sonrası takvimi (model)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Sun"
+    },
+    {
+      "deger": "~700 kat (Jüpiter yörüngesini aşar)",
+      "aciklama": "Betelgeuse'ün Güneş'e göre büyüklüğü",
+      "kaynak_url": "https://science.nasa.gov/universe/what-is-betelgeuse-inside-the-strange-volatile-star"
     }
   ],
   "sozluk": [
@@ -263,6 +415,58 @@
       "terim": "Hertzsprung boşluğu",
       "tanim": "H-R diyagramında kırmızı devleri anakoldan ayıran, yıldızın az bulunduğu bölge.",
       "kid": "d5t10"
+    },
+    {
+      "terim": "Mutlak kadir",
+      "tanim": "Bir yıldızın 10 parsek (yaklaşık 32,6 ışık yılı) uzaktan bakılınca görüneceği kadir; yıldızların gerçek gücünü karşılaştırmaya yarar."
+    },
+    {
+      "terim": "Uzaklık modülü",
+      "tanim": "Görünür kadir ile mutlak kadir arasındaki fark (m − M); yıldızın uzaklığına bağlıdır."
+    },
+    {
+      "terim": "Kelvin-Helmholtz zaman ölçeği",
+      "tanim": "Bir yıldızın yalnızca kütleçekimiyle büzülerek bugünkü gücüyle parlayabileceği süre; Güneş için yaklaşık 30 milyon yıl."
+    },
+    {
+      "terim": "Konveksiyon",
+      "tanim": "Enerjinin sıcak gazın yükselip soğuyan gazın batmasıyla, maddenin kendisi taşınarak aktarılması."
+    },
+    {
+      "terim": "Opaklık",
+      "tanim": "Maddenin içinden geçmeye çalışan ışığı ne kadar engellediğinin ölçüsü."
+    },
+    {
+      "terim": "Vogt-Russell teoremi",
+      "tanim": "Dengedeki bir yıldızın yapısının büyük ölçüde kütlesi ve başlangıç bileşimiyle belirlendiğini söyleyen, kesin kanıtı olmayan kural."
+    },
+    {
+      "terim": "Metalisite",
+      "tanim": "Bir yıldızdaki hidrojen ve helyum dışındaki elementlerin (astronomların dilinde metallerin) bolluğu."
+    },
+    {
+      "terim": "Popülasyon II",
+      "tanim": "Metalisitesi Güneş'inkinin kabaca binde biri ile onda biri arasında olan, metalce fakir yıldız grubu."
+    },
+    {
+      "terim": "Altdev",
+      "tanim": "Çekirdeğindeki hidrojeni bitirip anakoldan ayrılmış, henüz kırmızı dev olmamış, MK sisteminde IV sınıfındaki yıldız."
+    },
+    {
+      "terim": "Yatay kol",
+      "tanim": "Helyum parlamasından sonra çekirdeğinde helyum yakan yıldızların H-R diyagramında bulunduğu evre."
+    },
+    {
+      "terim": "Asimptotik dev kolu",
+      "tanim": "Yatay kol evresinden sonra yıldızın yeniden şişip çok parladığı ve sonunda dış katmanlarını uzaya attığı dev evresi."
+    },
+    {
+      "terim": "Isıl atım",
+      "tanim": "Asimptotik dev kolundaki bir yıldızda yaklaşık 100.000 yılda bir yaşanan, birkaç yüz yıl süren ve ışıma gücünü yükselten dönem."
+    },
+    {
+      "terim": "Bolometrik kadir",
+      "tanim": "Bir yıldızın yalnızca görünür ışıkta değil, bütün dalga boylarındaki toplam ışımasına göre hesaplanan kadiri."
     }
   ],
   "defter_notu": [
@@ -274,7 +478,8 @@
     "L ∝ M^3,5 (2–55 M☉); 0,43–2 M☉ için L = M^4. 2 kat kütle ≈ 16 kat parlaklık.",
     "Ömür ≈ 10^10 yıl × M/L. O5 ≈ 1 milyon yıl, Güneş ≈ 10 milyar yıl, M0 ≈ 80 milyar yıl.",
     "Anakol yıldızlarının %76'sı M cücesi; neredeyse hiçbiri çıplak gözle görülmez.",
-    "Hidrojen bitince: kabukta füzyon, dış katmanlar şişer → kırmızı dev; ~100 milyon K'de helyum → karbon."
+    "Hidrojen bitince: kabukta füzyon, dış katmanlar şişer → kırmızı dev; ~100 milyon K'de helyum → karbon.",
+    "Mutlak kadir = 10 parsek (32,6 ışık yılı) uzaktaki kadir; m − M = 5 log(d/10). Güneş +4,83. Kelvin: kütleçekimi yalnız ~30 milyon yıl yeter → füzyon. [Fe/H]: 0 Güneş, −1 onda bir. 0,4 M☉ altı tamamen konvektif."
   ],
   "sorular": [
     {
@@ -316,6 +521,26 @@
       "soru": "Anakol yıldızlarının çoğu M cücesiyse neden çıplak gözle gördüğümüz yıldızların neredeyse hiçbiri M cücesi değil?",
       "cevap": "M cüceleri çok sönüktür: bir M0 cücesi Güneş'in yalnızca yaklaşık %7'si kadar ışık verir ve ışığının çoğu kızılötesindedir. En yakını bile çıplak gözle görülmez. Gözle gördüklerimiz uzaktan bile parlayan az sayıdaki güçlü yıldızlardır; bu bir seçim yanılgısıdır.",
       "kid": "d5s7"
+    },
+    {
+      "soru": "Görünür kadiri 5, uzaklığı 100 parsek olan bir yıldızın mutlak kadiri kaçtır?",
+      "cevap": "M = m − 5 × log(d / 10) = 5 − 5 × log(10) = 5 − 5 = 0. Yıldız 10 parsek uzakta olsaydı 0 kadirde, yani Vega kadar parlak görünürdü."
+    },
+    {
+      "soru": "Lord Kelvin Güneş'in yaşını neden yalnızca birkaç on milyon yıl buldu? Nerede yanıldı?",
+      "cevap": "Güneş'in enerjisinin kütleçekimiyle büzülmeden geldiğini varsaydı; bu kaynak Güneş'i bugünkü güçle ancak yaklaşık 30 milyon yıl parlatabilir (G × M² / (R × L)). Yanıldığı nokta enerji kaynağıydı: Güneş hidrojeni helyuma kaynaştırarak parlar ve bu ona milyarlarca yıl yeter."
+    },
+    {
+      "soru": "Fe/H değeri −2 olan bir yıldızda demir Güneş'tekinin kaçta biridir? Hangi popülasyona girer?",
+      "cevap": "10^(−2) = 1/100, yani yüzde biri. Güneş'in binde biri ile onda biri arasında olduğu için Popülasyon II, yani metalce fakir bir yıldızdır."
+    },
+    {
+      "soru": "Vega ve Deneb ikisi de A sınıfı ve gökte benzer parlaklıkta. Deneb nasıl Vega'dan yüzlerce, binlerce kat güçlü olabiliyor?",
+      "cevap": "Sınıf yalnızca yüzey sıcaklığını söyler; ışıma sınıfı boyu söyler. Vega bir anakol yıldızı (V), Deneb bir süperdev (Ia). Deneb yaklaşık 56–104 kat uzakta olduğu halde gökte yalnızca yaklaşık 3 kat sönük görünür; ters kare yasasıyla bu, görsel olarak 1000–3500 kat daha güçlü olduğu anlamına gelir. Aralığın geniş olması Deneb'in uzaklığının belirsizliğinden gelir."
+    },
+    {
+      "soru": "Kütlesi 0,3 Güneş kütlesi olan bir kırmızı cüce neden yalnızca az yakıt harcadığı için değil, yapısı yüzünden de çok uzun yaşar?",
+      "cevap": "0,4 Güneş kütlesinin altındaki yıldızlar baştan sona konvektiftir. Çekirdekte üretilen helyum bütün yıldıza dağılır ve bileşim görece düzgün kalır; kaynağa göre bu, yıldıza orantısız biçimde uzun bir anakol ömrü verir."
     }
   ],
   "kaynaklar": [
@@ -430,6 +655,58 @@
     {
       "ad": "Wikipedia: Lacaille 8760 (6,7 kadir)",
       "url": "https://en.wikipedia.org/wiki/Lacaille_8760"
+    },
+    {
+      "ad": "Wikipedia, Absolute magnitude",
+      "url": "https://en.wikipedia.org/wiki/Absolute_magnitude"
+    },
+    {
+      "ad": "Swinburne University, COSMOS: Distance Modulus",
+      "url": "https://astronomy.swinburne.edu.au/cosmos/D/Distance+Modulus"
+    },
+    {
+      "ad": "NASA NSSDCA, Sun Fact Sheet (mutlak kadir +4,83)",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html"
+    },
+    {
+      "ad": "J. N. Bahcall, How the Sun Shines (Nobel e-Museum, 2000; arXiv:astro-ph/0009259)",
+      "url": "https://arxiv.org/pdf/astro-ph/0009259"
+    },
+    {
+      "ad": "Stony Brook University AST101, The Kelvin-Helmholtz Timescale",
+      "url": "https://www.astro.sunysb.edu/fwalter/AST101/k-h.html"
+    },
+    {
+      "ad": "Wikipedia, Vogt–Russell theorem",
+      "url": "https://en.wikipedia.org/wiki/Vogt%E2%80%93Russell_theorem"
+    },
+    {
+      "ad": "A. Gautschy, The theorem that was none – I. Early history (arXiv:1504.08188)",
+      "url": "https://arxiv.org/pdf/1504.08188"
+    },
+    {
+      "ad": "Wikipedia, Metallicity (IPFS kopyası)",
+      "url": "https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Metallicity"
+    },
+    {
+      "ad": "Wikipedia, Arcturus",
+      "url": "https://en.wikipedia.org/wiki/Arcturus"
+    },
+    {
+      "ad": "Wikipedia, First-magnitude star (parlak yıldızların tayf türleri)",
+      "url": "https://en.wikipedia.org/wiki/First-magnitude_star"
+    },
+    {
+      "ad": "Wikipedia, Deneb",
+      "url": "https://en.wikipedia.org/wiki/Deneb"
+    },
+    {
+      "ad": "Wikipedia, Color index (Güneş B−V)",
+      "url": "https://en.wikipedia.org/wiki/Color_index"
+    },
+    {
+      "ad": "NASA Science, What Is Betelgeuse? (700 kat büyüklük)",
+      "url": "https://science.nasa.gov/universe/what-is-betelgeuse-inside-the-strange-volatile-star"
     }
   ]
 }

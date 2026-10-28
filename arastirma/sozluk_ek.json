@@ -1,0 +1,2153 @@
+{
+ "aciklama": "Astro sözlük için elle seçilmiş ek terimler. Her tanım Urania için yazıldı ve kaynağıyla karşılaştırıldı (alıntılar: sozluk_kaynak.md). 'esanlam' gösterilir ve eşleşir; 'bicim' yalnız metinde eşleşir (çekim/yazım biçimi); 'haric' bu sözcük başlarıyla başlayan sözcükler işaretlenmez; 'yalniz' yalnız bu derslerde işaretlenir; 'buyuk' yalnız büyük harfle yazılmışsa. 'ayarlar' ders sözlüklerindeki terimlere uygulanır. Erişim: 28 Ekim 2026.",
+ "terimler": [
+  {
+   "terim": "Gök ekvatoru",
+   "tanim": "Dünya ekvatorunun gök küresine izdüşürülmesiyle oluşan büyük çember. Dik açıklık bu çemberden kuzeye ya da güneye ölçülür.",
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Equatorial coordinate system",
+     "url": "https://en.wikipedia.org/wiki/Equatorial_coordinate_system",
+     "alinti": "the celestial equator, which is the projection of the Earth's equator onto the celestial sphere"
+    },
+    {
+     "ad": "Wikipedia: Equatorial coordinate system",
+     "url": "https://en.wikipedia.org/wiki/Equatorial_coordinate_system",
+     "alinti": "Declination is analogous to terrestrial latitude."
+    },
+    {
+     "ad": "Wikipedia: Glossary of astronomy",
+     "url": "https://en.wikipedia.org/wiki/Glossary_of_astronomy",
+     "alinti": "The imaginary great circle of a body's celestial sphere that is coplanar with the body's terrestrial equator."
+    }
+   ]
+  },
+  {
+   "terim": "Gök kutbu",
+   "tanim": "Dünya'nın dönme ekseni sonsuza uzatıldığında gök küresini deldiği iki noktadan biri. Gökteki bütün noktalar bu iki kutbun çevresinde dönüyormuş gibi görünür.",
+   "esanlam": [
+    "gök kutupları",
+    "kuzey gök kutbu",
+    "güney gök kutbu"
+   ],
+   "bicim": [
+    "gök kutup",
+    "kuzey gök kutup",
+    "güney gök kutup"
+   ],
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Celestial pole",
+     "url": "https://en.wikipedia.org/wiki/Celestial_pole",
+     "alinti": "The north and south celestial poles are the two points in the sky where Earth's axis of rotation, indefinitely extended, ..."
+    },
+    {
+     "ad": "Wikipedia: Celestial pole",
+     "url": "https://en.wikipedia.org/wiki/Celestial_pole",
+     "alinti": "all other celestial points appear to rotate around them"
+    }
+   ]
+  },
+  {
+   "terim": "Meridyen",
+   "tanim": "Gözlemcinin başucundan ve gök kutuplarından geçen büyük çember. Bir gök cisminin bu çizgiden geçmesine doruğa ulaşma (kulminasyon) denir.",
+   "kaynak": [
+    {
+     "ad": "NASA JPL SSD Glossary: meridian",
+     "url": "https://ssd.jpl.nasa.gov/glossary/meridian.html",
+     "alinti": "A great circle passing through the Earth's rotational poles and through the zenith (the point directly overhead) of a location on the Earth."
+    },
+    {
+     "ad": "Wikipedia: Culmination",
+     "url": "https://en.wikipedia.org/wiki/Culmination",
+     "alinti": "culmination is the passage of a celestial object across the observer's local meridian"
+    }
+   ]
+  },
+  {
+   "terim": "Ufuk",
+   "tanim": "Gök küresini görünen üst yarı ile görünmeyen alt yarıya ayıran büyük çember. Üst yarının kutbu başucudur.",
+   "bicim": [
+    "ufk"
+   ],
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Horizontal coordinate system",
+     "url": "https://en.wikipedia.org/wiki/Horizontal_coordinate_system",
+     "alinti": "The great circle separating the hemispheres is the celestial horizon"
+    },
+    {
+     "ad": "Wikipedia: Horizontal coordinate system",
+     "url": "https://en.wikipedia.org/wiki/Horizontal_coordinate_system",
+     "alinti": "The pole of the upper hemisphere is called the zenith"
+    }
+   ]
+  },
+  {
+   "terim": "Enlem",
+   "tanim": "Bir yerin ekvatorun kaç derece kuzeyinde ya da güneyinde olduğu. Ekvator 0°, kutuplar 90°'dir.",
+   "kaynak": [
+    {
+     "ad": "NOAA Ocean Service: Latitude and longitude",
+     "url": "https://oceanservice.noaa.gov/education/tutorial_nautical_charts/nautical_charts02_information_2b.html",
+     "alinti": "Lines of latitude are measured in degrees north or south of the equator, to 90 degrees at the North or South poles."
+    },
+    {
+     "ad": "NOAA Ocean Service: Latitude and longitude",
+     "url": "https://oceanservice.noaa.gov/education/tutorial_nautical_charts/nautical_charts02_information_2b.html",
+     "alinti": "At 0 degrees latitude, the equator equally divides the Earth into the Northern and Southern Hemispheres."
+    }
+   ]
+  },
+  {
+   "terim": "Boylam",
+   "tanim": "Bir yerin başlangıç meridyeninin (0°) kaç derece doğusunda ya da batısında olduğu. Boylam çizgileri (meridyenler) kutuplarda birleşir.",
+   "kaynak": [
+    {
+     "ad": "NOAA Ocean Service: Latitude and longitude",
+     "url": "https://oceanservice.noaa.gov/education/tutorial_nautical_charts/nautical_charts02_information_2b.html",
+     "alinti": "Longitude lines, called meridians, circle the Earth north to south and intersect at the poles."
+    },
+    {
+     "ad": "NOAA Ocean Service: Latitude and longitude",
+     "url": "https://oceanservice.noaa.gov/education/tutorial_nautical_charts/nautical_charts02_information_2b.html",
+     "alinti": "The prime meridian has a longitude of 0 degrees, and it divides the Earth into the Eastern and Western Hemispheres."
+    }
+   ]
+  },
+  {
+   "terim": "İlkbahar noktası",
+   "tanim": "Güneş'in tutulum boyunca ilerlerken gök ekvatorunu güneyden kuzeye geçtiği nokta (Mart ekinoksu). Sağ açıklık bu noktadan doğuya doğru ölçülür.",
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Ecliptic",
+     "url": "https://en.wikipedia.org/wiki/Ecliptic",
+     "alinti": "The crossing from south to north is known as the March equinox, also known as the first point of Aries"
+    },
+    {
+     "ad": "Wikipedia: Equatorial coordinate system",
+     "url": "https://en.wikipedia.org/wiki/Equatorial_coordinate_system",
+     "alinti": "measures the angular distance of an object eastward along the celestial equator from the March equinox"
+    }
+   ]
+  },
+  {
+   "terim": "Karşı konum",
+   "tanim": "Dünya'nın Güneş ile bir gezegenin tam arasına girdiği an. Gezegen gökte Güneş'in tam karşı yönünde görünür.",
+   "kaynak": [
+    {
+     "ad": "Royal Museums Greenwich: Planet opposition",
+     "url": "https://www.rmg.co.uk/discover/explore/space-stargazing/planet-opposition-dates-definition",
+     "alinti": "the Earth finds itself directly between the Sun and another planet. This is the moment at which that planet is said to be 'in opposition'."
+    }
+   ]
+  },
+  {
+   "terim": "Kavuşum",
+   "tanim": "İki gök cisminin gökte aynı sağ açıklıkta (ya da aynı tutulum boylamında) görünmesi; gökte birbirlerine yaklaşmış görünürler.",
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Glossary of astronomy",
+     "url": "https://en.wikipedia.org/wiki/Glossary_of_astronomy",
+     "alinti": "A phenomenon during which two astronomical objects or spacecraft have either the same right ascension or the same ecliptic longitude"
+    }
+   ]
+  },
+  {
+   "terim": "Yay dakikası",
+   "tanim": "Bir derecenin altmışta biri olan açı birimi (′).",
+   "kaynak": [
+    {
+     "ad": "NASA Imagine the Universe: Dictionary (A–D)",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dict_ad.html",
+     "alinti": "arc minute: An angular measurement equal to 1/60th of a degree."
+    }
+   ]
+  },
+  {
+   "terim": "Yay saniyesi",
+   "tanim": "Bir yay dakikasının altmışta biri, yani bir derecenin 3600'de biri olan açı birimi (″).",
+   "kaynak": [
+    {
+     "ad": "NASA Imagine the Universe: Dictionary (A–D)",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dict_ad.html",
+     "alinti": "arc second: An angular measurement equal to 1/60th of an arc minute or 1/3600th of a degree."
+    }
+   ]
+  },
+  {
+   "terim": "Açısal çap",
+   "tanim": "Bir cismin gökte ne kadar büyük göründüğünün açıyla ölçüsü. Cisim büyüdükçe artar, uzaklaştıkça küçülür; Ay da Güneş de yaklaşık yarım derece görünür.",
+   "esanlam": [
+    "açısal boyut"
+   ],
+   "kaynak": [
+    {
+     "ad": "IAU OAE Glossary: Angular Diameter",
+     "url": "https://www.astro4edu.org/resources/glossary/term/9/",
+     "alinti": "The angular diameter of an object is its visible diameter from a specific location measured as an angle. (Sayfa: Ay ve Güneş Dünya'dan yaklaşık yarım derece görünür.)"
+    }
+   ]
+  },
+  {
+   "terim": "Takımyıldız",
+   "tanim": "Gök küresinde belli ve tanınabilir bir yıldız grubunu çevreleyen bölge. Gökbilimde takımyıldız yalnız yıldız deseni değil, gökte sınırı çizilmiş bir alandır.",
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Glossary of astronomy",
+     "url": "https://en.wikipedia.org/wiki/Glossary_of_astronomy",
+     "alinti": "A region on the celestial sphere surrounding a specific and identifiable grouping of stars."
+    }
+   ]
+  },
+  {
+   "terim": "Samanyolu",
+   "tanim": "Güneş Sistemi'nin içinde bulunduğu galaksi. Karanlık gökte yaklaşık 30° genişliğinde, puslu, beyazımsı bir ışık şeridi olarak görünür.",
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Milky Way",
+     "url": "https://en.wikipedia.org/wiki/Milky_Way",
+     "alinti": "is the galaxy that includes the Solar System"
+    },
+    {
+     "ad": "Wikipedia: Milky Way",
+     "url": "https://en.wikipedia.org/wiki/Milky_Way",
+     "alinti": "The Milky Way is visible as a hazy band of white light, some 30° wide, arching in the night sky."
+    }
+   ]
+  },
+  {
+   "terim": "Işık kirliliği",
+   "tanim": "Sokak lambası, tabela gibi aşırı yapay dış aydınlatmanın gece gökyüzünü aydınlatması. Gök parladıkça görülebilen yıldız sayısı azalır.",
+   "kaynak": [
+    {
+     "ad": "HKU Night Sky: What is light pollution",
+     "url": "https://nightsky.physics.hku.hk/en-hk/light-pollution-resources/educational-resources/what-light-pollution",
+     "alinti": "\"Light Pollution\" is a form of environmental degradation in which excessive artificial outdoor lightings, such as street lamps, neon signs, and illuminated signboards, affect the natural environment"
+    },
+    {
+     "ad": "HKU Night Sky: What is light pollution",
+     "url": "https://nightsky.physics.hku.hk/en-hk/light-pollution-resources/educational-resources/what-light-pollution",
+     "alinti": "The night sky is thus brightened, leading to a reduced number of stars visible in the sky"
+    }
+   ]
+  },
+  {
+   "terim": "Gök cismi",
+   "tanim": "Gözlenebilir evrende doğal olarak bulunan fiziksel varlık ya da yapı: yıldız, gezegen, uydu, bulutsu, galaksi gibi.",
+   "esanlam": [
+    "gök cisimleri"
+   ],
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Glossary of astronomy",
+     "url": "https://en.wikipedia.org/wiki/Glossary_of_astronomy",
+     "alinti": "A type of naturally occurring physical entity, association, or structure that exists within the observable universe"
+    }
+   ]
+  },
+  {
+   "terim": "Kutup Yıldızı",
+   "tanim": "Kuzey gök kutbuna yarım dereceden yakın duran, yaklaşık 2. kadirden yıldız (Polaris). Gökteki her şey kutbun çevresinde döndüğü için neredeyse yerinden kıpırdamaz ve kuzeyi gösterir.",
+   "esanlam": [
+    "Polaris"
+   ],
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Pole star",
+     "url": "https://en.wikipedia.org/wiki/Pole_star",
+     "alinti": "A pole star is a visible star that is approximately aligned with the axis of rotation of an astronomical body"
+    },
+    {
+     "ad": "Wikipedia: Pole star",
+     "url": "https://en.wikipedia.org/wiki/Pole_star",
+     "alinti": "Polaris (Alpha Ursae Minoris), a bright magnitude 2 star ... \"within 0.5°\" of the north celestial pole"
+    },
+    {
+     "ad": "Wikipedia: Celestial pole",
+     "url": "https://en.wikipedia.org/wiki/Celestial_pole",
+     "alinti": "all other celestial points appear to rotate around them"
+    }
+   ]
+  },
+  {
+   "terim": "Alacakaranlık",
+   "tanim": "Güneş ufkun altındayken üst atmosferin saçtığı ışıkla süren aydınlık. Güneş'in merkezi ufkun 0–6° altındayken sivil, 6–12° altındayken denizcilik, 12–18° altındayken astronomik alacakaranlık denir.",
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Twilight",
+     "url": "https://en.wikipedia.org/wiki/Twilight",
+     "alinti": "Twilight is daylight illumination produced by diffuse sky radiation when the Sun is below the horizon"
+    },
+    {
+     "ad": "Wikipedia: Twilight",
+     "url": "https://en.wikipedia.org/wiki/Twilight",
+     "alinti": "Civil twilight is the period of time for which the geometric center of the Sun is between the horizon and 6° below the horizon."
+    },
+    {
+     "ad": "Wikipedia: Twilight",
+     "url": "https://en.wikipedia.org/wiki/Twilight",
+     "alinti": "Nautical twilight occurs when the geometric center of the Sun is between 12° and 6° below the horizon."
+    },
+    {
+     "ad": "Wikipedia: Twilight",
+     "url": "https://en.wikipedia.org/wiki/Twilight",
+     "alinti": "Astronomical twilight is defined as when the geometric center of the Sun is between 18° and 12° below the horizon."
+    }
+   ]
+  },
+  {
+   "terim": "Örtme",
+   "tanim": "Bir gök cisminin, gözlemci ile arasına giren başka bir cisim tarafından gizlenmesi. En sık görüleni Ay'ın bir yıldızın önünden geçmesidir.",
+   "haric": [
+    "örtmek",
+    "örtmez",
+    "örtmes",
+    "örtmed",
+    "örtmey"
+   ],
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Occultation",
+     "url": "https://en.wikipedia.org/wiki/Occultation",
+     "alinti": "An occultation is an event that occurs when one object is hidden from the observer by another object that passes between them"
+    },
+    {
+     "ad": "Wikipedia: Occultation",
+     "url": "https://en.wikipedia.org/wiki/Occultation",
+     "alinti": "lunar occultations, those relatively frequent occasions when the Moon passes in front of a star"
+    }
+   ]
+  },
+  {
+   "terim": "Gerçek kuzey",
+   "tanim": "Bir meridyen boyunca coğrafi Kuzey Kutbu'na doğru olan yön. Pusulanın gösterdiği manyetik kuzeyden farklıdır.",
+   "esanlam": [
+    "coğrafi kuzey"
+   ],
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Magnetic declination",
+     "url": "https://en.wikipedia.org/wiki/Magnetic_declination",
+     "alinti": "True north is the direction along a meridian towards the geographic North Pole."
+    },
+    {
+     "ad": "Wikipedia: Magnetic declination",
+     "url": "https://en.wikipedia.org/wiki/Magnetic_declination",
+     "alinti": "Magnetic north is the direction that the north end of a magnetised compass needle points"
+    }
+   ]
+  },
+  {
+   "terim": "Manyetik sapma",
+   "tanim": "Manyetik kuzey ile gerçek kuzey arasındaki açı. Yere ve zamana göre değişir; pusulayla yön bulurken bu açı kadar düzeltme gerekir.",
+   "kaynak": [
+    {
+     "ad": "NOAA NCEI: Magnetic declination",
+     "url": "https://www.ncei.noaa.gov/products/magnetic-declination",
+     "alinti": "Magnetic declination (sometimes called magnetic variation) is the angle between magnetic north and true north."
+    },
+    {
+     "ad": "NOAA NCEI: Magnetic declination",
+     "url": "https://www.ncei.noaa.gov/products/magnetic-declination",
+     "alinti": "Magnetic declination changes over time, and with location."
+    }
+   ]
+  },
+  {
+   "terim": "Güneş günü",
+   "tanim": "Güneş'in bir yerde art arda iki öğle geçişi arasındaki süre; günlük hayatta \"gün\" dediğimiz budur. Ortalama Güneş günü, yıldız gününden yaklaşık 4 dakika uzundur.",
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Sidereal time",
+     "url": "https://en.wikipedia.org/wiki/Sidereal_time",
+     "alinti": "A mean solar day (what we normally measure as a \"day\") is the average time between local solar noons"
+    },
+    {
+     "ad": "Wikipedia: Sidereal time",
+     "url": "https://en.wikipedia.org/wiki/Sidereal_time",
+     "alinti": "A mean solar day is, therefore, nearly 4 minutes longer than a sidereal day."
+    }
+   ]
+  },
+  {
+   "terim": "Yörünge düzlemi",
+   "tanim": "Bir cismin yörüngesinin içinde bulunduğu düzlem. Dünya'nın yörünge düzlemi tutulum düzlemidir; Güneş gökte bu düzlem boyunca yol alıyor görünür.",
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Glossary of astronomy",
+     "url": "https://en.wikipedia.org/wiki/Glossary_of_astronomy",
+     "alinti": "ecliptic: The plane defined by the Earth's orbit around the Sun."
+    },
+    {
+     "ad": "Wikipedia: Ecliptic",
+     "url": "https://en.wikipedia.org/wiki/Ecliptic",
+     "alinti": "The ecliptic or ecliptic plane is the apparent path of the Sun on the celestial sphere"
+    }
+   ]
+  },
+  {
+   "terim": "Ay evresi",
+   "tanim": "Ay'ın Güneş'in aydınlattığı yüzünün Dünya'dan görünen kısmına göre aldığı biçim: yeni ay, hilal, ilk dördün, dolunay, son dördün.",
+   "esanlam": [
+    "Ay'ın evreleri"
+   ],
+   "bicim": [
+    "ay'ın evresi"
+   ],
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Lunar phase",
+     "url": "https://en.wikipedia.org/wiki/Lunar_phase",
+     "alinti": "A lunar phase or Moon phase is the apparent shape of the Moon's day and night phases of the lunar day as viewed from afar."
+    },
+    {
+     "ad": "Wikipedia: Lunar phase",
+     "url": "https://en.wikipedia.org/wiki/Lunar_phase",
+     "alinti": "the sunlit portion varying from 0% (at new moon) to nearly 100% (at full moon)"
+    }
+   ]
+  },
+  {
+   "terim": "Dolunay",
+   "tanim": "Ay'ın Dünya'ya bakan yüzünün tamamen aydınlık göründüğü evre.",
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Lunar phase",
+     "url": "https://en.wikipedia.org/wiki/Lunar_phase",
+     "alinti": "the sunlit portion varying from 0% (at new moon) to nearly 100% (at full moon)"
+    }
+   ]
+  },
+  {
+   "terim": "Yeni ay",
+   "tanim": "Ay'ın Dünya'ya bakan yüzünün Güneş'ten ışık almadığı, bu yüzden görünmediği evre.",
+   "haric": [
+    "yeni ayr",
+    "yeni ayn",
+    "yeni ayg",
+    "yeni ayk",
+    "yeni ayt",
+    "yeni ays",
+    "yeni ayar"
+   ],
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Lunar phase",
+     "url": "https://en.wikipedia.org/wiki/Lunar_phase",
+     "alinti": "the side of the Moon facing Earth is not illuminated by the Sun"
+    }
+   ]
+  },
+  {
+   "terim": "Hilal",
+   "tanim": "Ay'ın aydınlık kısmının ince bir yay biçiminde göründüğü evre.",
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Lunar phase",
+     "url": "https://en.wikipedia.org/wiki/Lunar_phase",
+     "alinti": "if the half-ellipse is concave with respect to the half-circle, then the shape will be a crescent"
+    }
+   ]
+  },
+  {
+   "terim": "Güneş tutulması",
+   "tanim": "Ay'ın Güneş ile Dünya arasından geçip Güneş'i kısmen ya da tamamen örtmesi.",
+   "kaynak": [
+    {
+     "ad": "NASA Science: Types of eclipses",
+     "url": "https://science.nasa.gov/eclipses/types/",
+     "alinti": "A solar eclipse happens when the Moon passes between the Sun and Earth"
+    }
+   ]
+  },
+  {
+   "terim": "Ay tutulması",
+   "tanim": "Dünya, Güneş ile Ay'ın tam arasına girince Dünya'nın gölgesinin Ay'ın üstüne düşmesi. Ay kararır ya da kızıla döner.",
+   "kaynak": [
+    {
+     "ad": "NASA Science: Types of eclipses",
+     "url": "https://science.nasa.gov/eclipses/types/",
+     "alinti": "When Earth is positioned precisely between the Moon and Sun, Earth's shadow falls upon the surface of the Moon."
+    }
+   ]
+  },
+  {
+   "terim": "Tam gölge",
+   "tanim": "Bir gölgenin en iç ve en karanlık kısmı; burada ışık kaynağı tamamen örtülür. Güneş tutulmasında Ay'ın tam gölgesindeki gözlemci tam tutulma görür.",
+   "esanlam": [
+    "umbra"
+   ],
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Umbra, penumbra and antumbra",
+     "url": "https://en.wikipedia.org/wiki/Umbra,_penumbra_and_antumbra",
+     "alinti": "The umbra (Latin for 'shadow') is the innermost and darkest part of a shadow ... where the light source is completely blocked by the occluding body."
+    },
+    {
+     "ad": "Wikipedia: Umbra, penumbra and antumbra",
+     "url": "https://en.wikipedia.org/wiki/Umbra,_penumbra_and_antumbra",
+     "alinti": "An observer within the umbra experiences a total occultation."
+    }
+   ]
+  },
+  {
+   "terim": "Yarı gölge",
+   "tanim": "Gölgenin, ışık kaynağının yalnız bir kısmının örtüldüğü dış bölgesi. Buradaki gözlemci parçalı tutulma görür.",
+   "esanlam": [
+    "penumbra"
+   ],
+   "bicim": [
+    "yarıgölge"
+   ],
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Umbra, penumbra and antumbra",
+     "url": "https://en.wikipedia.org/wiki/Umbra,_penumbra_and_antumbra",
+     "alinti": "the region in which only a portion of the light source is obscured by the occluding body"
+    },
+    {
+     "ad": "Wikipedia: Umbra, penumbra and antumbra",
+     "url": "https://en.wikipedia.org/wiki/Umbra,_penumbra_and_antumbra",
+     "alinti": "an observer in the penumbra experiences a partial eclipse"
+    }
+   ]
+  },
+  {
+   "terim": "Tam tutulma",
+   "tanim": "Ay'ın Güneş'in yüzünü tamamen örttüğü Güneş tutulması.",
+   "kaynak": [
+    {
+     "ad": "NASA Science: Types of eclipses",
+     "url": "https://science.nasa.gov/eclipses/types/",
+     "alinti": "A total solar eclipse happens when the Moon passes between the Sun and Earth, completely blocking the face of the Sun."
+    }
+   ]
+  },
+  {
+   "terim": "Halkalı tutulma",
+   "tanim": "Ay, Dünya'dan en uzak noktasına yakınken Güneş'ten küçük göründüğü için Güneş'i tam örtemez; Ay'ın çevresinde parlak bir halka kalır.",
+   "kaynak": [
+    {
+     "ad": "NASA Science: Types of eclipses",
+     "url": "https://science.nasa.gov/eclipses/types/",
+     "alinti": "An annular solar eclipse happens when the Moon passes between the Sun and Earth ... (Ay en uzak noktasına yakınken Güneş'ten küçük görünür, parlak bir halka kalır.)"
+    },
+    {
+     "ad": "Wikipedia: Umbra, penumbra and antumbra",
+     "url": "https://en.wikipedia.org/wiki/Umbra,_penumbra_and_antumbra",
+     "alinti": "An observer in this region experiences an annular eclipse ... a bright ring is visible around the eclipsing body"
+    }
+   ]
+  },
+  {
+   "terim": "Parçalı tutulma",
+   "tanim": "Güneş, Ay ve Dünya tam hizalanmadığı için Güneş'in yalnız bir kısmının örtüldüğü tutulma.",
+   "kaynak": [
+    {
+     "ad": "NASA Science: Types of eclipses",
+     "url": "https://science.nasa.gov/eclipses/types/",
+     "alinti": "A partial solar eclipse happens when the Moon passes between the Sun and Earth. (Güneş, Ay ve Dünya tam hizalı değildir; Güneş'in yalnız bir kısmı örtülür.)"
+    }
+   ]
+  },
+  {
+   "terim": "Meteor yağmuru",
+   "tanim": "Kısa sürede çok sayıda meteorun görüldüğü olay. Meteorlar gökte bir noktadan çıkıyormuş gibi görünür; yağmur adını bu noktanın yakınındaki yıldız ya da takımyıldızdan alır.",
+   "kaynak": [
+    {
+     "ad": "NASA Science: Meteors and meteorites, facts",
+     "url": "https://science.nasa.gov/solar-system/meteors-meteorites/facts/",
+     "alinti": "When there are lots more meteors, you're watching a meteor shower."
+    },
+    {
+     "ad": "NASA Science: Meteors and meteorites, facts",
+     "url": "https://science.nasa.gov/solar-system/meteors-meteorites/facts/",
+     "alinti": "Meteor showers are usually named after a star or constellation that is close to where the meteors appear to originate in the sky."
+    }
+   ]
+  },
+  {
+   "terim": "Asteroit kuşağı",
+   "tanim": "Güneş Sistemi'nde Mars ile Jüpiter'in yörüngeleri arasında kalan, asteroitlerin toplandığı simit biçimli bölge.",
+   "esanlam": [
+    "ana kuşak"
+   ],
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Asteroid belt",
+     "url": "https://en.wikipedia.org/wiki/Asteroid_belt",
+     "alinti": "The asteroid belt is a torus-shaped region in the Solar System, centered on the Sun and roughly spanning the space between the orbits of the planets Jupiter and Mars."
+    },
+    {
+     "ad": "Wikipedia: Asteroid belt",
+     "url": "https://en.wikipedia.org/wiki/Asteroid_belt",
+     "alinti": "This asteroid belt is also called the main asteroid belt or main belt"
+    }
+   ]
+  },
+  {
+   "terim": "Uydu",
+   "tanim": "Bir gezegenin ya da küçük bir cismin çevresinde dolanan doğal gök cismi; Ay, Dünya'nın uydusudur. Aynı sözcük insan yapımı yapay uydular için de kullanılır.",
+   "esanlam": [
+    "doğal uydu"
+   ],
+   "haric": [
+    "uydur",
+    "uyduğ",
+    "uyduk",
+    "uydum",
+    "uydun"
+   ],
+   "kaynak": [
+    {
+     "ad": "NASA Science: Moons, facts",
+     "url": "https://science.nasa.gov/solar-system/moons/facts/",
+     "alinti": "Moons that orbit planets, like Earth's Moon, come in many shapes, sizes and types."
+    },
+    {
+     "ad": "NASA Science: Moons, facts",
+     "url": "https://science.nasa.gov/solar-system/moons/facts/",
+     "alinti": "Most planetary moons, which are also called satellites,"
+    }
+   ]
+  },
+  {
+   "terim": "Krater",
+   "tanim": "Bir göktaşının çarpması, volkanik etkinlik ya da patlamayla oluşan çanak biçimli çukur. Çarpmayla oluşanlara çarpma krateri denir.",
+   "kaynak": [
+    {
+     "ad": "National Geographic Education: Crater",
+     "url": "https://education.nationalgeographic.org/resource/crater/",
+     "alinti": "A crater is a bowl-shaped depression produced by the impact of a meteorite, volcanic activity, or an explosion."
+    },
+    {
+     "ad": "National Geographic Education: Crater",
+     "url": "https://education.nationalgeographic.org/resource/crater/",
+     "alinti": "Craters produced by the collision of a meteorite with Earth (or another planet or moon) are called impact craters."
+    }
+   ]
+  },
+  {
+   "terim": "Bazalt",
+   "tanim": "Ay'ın koyu \"denizlerini\" oluşturan, eski çarpma havzalarına akan lavdan oluşmuş koyu renkli kaya.",
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Lunar mare",
+     "url": "https://en.wikipedia.org/wiki/Lunar_mare",
+     "alinti": "are large, dark, basaltic plains on Earth's Moon, formed by lava flowing into ancient impact basins."
+    }
+   ]
+  },
+  {
+   "terim": "Yörünge",
+   "tanim": "Bir cismin başka bir cismin ya da noktanın çevresinde izlediği yol.",
+   "kaynak": [
+    {
+     "ad": "NASA Imagine the Universe: Dictionary",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dictionary.html",
+     "alinti": "orbit: The path of an object that is moving around a second object or point."
+    }
+   ]
+  },
+  {
+   "terim": "Dolanma dönemi",
+   "tanim": "Bir gök cisminin yörüngesinde bir tam turu tamamlaması için geçen süre.",
+   "esanlam": [
+    "yörünge dönemi"
+   ],
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Orbital period",
+     "url": "https://en.wikipedia.org/wiki/Orbital_period",
+     "alinti": "The orbital period (also revolution period) is the amount of time a given astronomical object takes to complete one orbit"
+    }
+   ]
+  },
+  {
+   "terim": "Kütleçekim",
+   "tanim": "Kütleli iki cismin birbirini çekmesi. Newton'a göre bu çekim kütlelerle doğru, aralarındaki uzaklığın karesiyle ters orantılıdır.",
+   "esanlam": [
+    "kütle çekimi"
+   ],
+   "kaynak": [
+    {
+     "ad": "NASA Imagine the Universe: Dictionary",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dictionary.html",
+     "alinti": "gravity: A mutual physical force attracting two bodies."
+    },
+    {
+     "ad": "Wikipedia: Newton's law of universal gravitation",
+     "url": "https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation",
+     "alinti": "every particle attracts every other particle in the universe with a force that is proportional to their masses ... and inversely proportional to the square of the distance between their centers of mass."
+    }
+   ]
+  },
+  {
+   "terim": "Yörünge hızı",
+   "tanim": "Bir cismin yörüngesinde ilerleme hızı. Dairesel yörüngede sabittir; aynı uzaklıktaki kurtulma hızı bunun √2 katıdır.",
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Circular orbit",
+     "url": "https://en.wikipedia.org/wiki/Circular_orbit",
+     "alinti": "The speed (or the magnitude of velocity) relative to the centre of mass is constant"
+    },
+    {
+     "ad": "Wikipedia: Circular orbit",
+     "url": "https://en.wikipedia.org/wiki/Circular_orbit",
+     "alinti": "The escape velocity from any distance is √2 times the speed in a circular orbit at that distance"
+    }
+   ]
+  },
+  {
+   "terim": "Kütle merkezi",
+   "tanim": "Kütleçekimiyle birbirine bağlı iki ya da daha çok cismin birlikte çevresinde dolandığı ortak nokta. Çift yıldızlar da bu noktanın çevresinde döner.",
+   "esanlam": [
+    "ağırlık merkezi",
+    "ortak kütle merkezi"
+   ],
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Glossary of astronomy",
+     "url": "https://en.wikipedia.org/wiki/Glossary_of_astronomy",
+     "alinti": "barycenter: The common center of mass about which any two or more bodies of a gravitationally bound system orbit."
+    },
+    {
+     "ad": "NASA Imagine the Universe: Dictionary (A–D)",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dict_ad.html",
+     "alinti": "Binary stars are two stars that orbit around a common center of mass."
+    }
+   ]
+  },
+  {
+   "terim": "Kepler yasaları",
+   "tanim": "Gezegen hareketinin üç yasası: yörünge, Güneş'in bir odağında durduğu bir elipstir; Güneş'ten gezegene çizilen doğru eşit sürelerde eşit alanlar tarar; dolanma döneminin karesi yarı büyük eksenin küpüyle orantılıdır.",
+   "esanlam": [
+    "Kepler'in yasaları"
+   ],
+   "bicim": [
+    "kepler yasa",
+    "kepler'in yasa",
+    "kepler'in birinci yasa",
+    "kepler'in ikinci yasa",
+    "kepler'in üçüncü yasa"
+   ],
+   "kaynak": [
+    {
+     "ad": "NASA Imagine the Universe: Dictionary",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dictionary.html",
+     "alinti": "Kepler's laws: A planet orbits the Sun in an ellipse with the Sun at one focus. / A line directed from the Sun to a planet sweeps out equal areas in equal times as the planet orbits the Sun. / The square of the period of a planet's orbit is proportional to the cube of that planet's semimajor axis"
+    }
+   ]
+  },
+  {
+   "terim": "Gelgit",
+   "tanim": "Ay'ın ve Güneş'in kütleçekiminin Dünya'nın farklı yerlerinde farklı olmasından doğan, deniz seviyesinin düzenli yükselip alçalması.",
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Tide",
+     "url": "https://en.wikipedia.org/wiki/Tide",
+     "alinti": "the periodic rise and fall of sea level"
+    },
+    {
+     "ad": "Wikipedia: Tide",
+     "url": "https://en.wikipedia.org/wiki/Tide",
+     "alinti": "the differential gravitational forces exerted primarily by the Moon and the Sun"
+    }
+   ]
+  },
+  {
+   "terim": "Kızılötesi",
+   "tanim": "Dalga boyu görünür ışığın kırmızı ucundan uzun, mikrodalgadan kısa olan elektromanyetik ışınım; gözle görülmez.",
+   "esanlam": [
+    "kızıl ötesi"
+   ],
+   "kaynak": [
+    {
+     "ad": "NASA Imagine the Universe: Dictionary (E–I)",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dict_ei.html",
+     "alinti": "infrared: Electromagnetic radiation at wavelengths longer than the red end of visible light and shorter than microwaves"
+    }
+   ]
+  },
+  {
+   "terim": "Morötesi",
+   "tanim": "Dalga boyu görünür ışığın mor ucundan kısa olan elektromanyetik ışınım. Dünya atmosferi çoğunu geçirmez.",
+   "esanlam": [
+    "mor ötesi"
+   ],
+   "kaynak": [
+    {
+     "ad": "NASA Imagine the Universe: Dictionary",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dictionary.html",
+     "alinti": "ultraviolet: Electromagnetic radiation at wavelengths shorter than the violet end of visible light; (atmosfer çoğunu geçirmez)"
+    }
+   ]
+  },
+  {
+   "terim": "Radyo dalgası",
+   "tanim": "Frekansı en düşük, dalga boyu en uzun elektromanyetik ışınım. Atmosfer, dalga boyu birkaç milimetreden yaklaşık 20 metreye kadar olanları geçirir.",
+   "bicim": [
+    "radyo dalga"
+   ],
+   "kaynak": [
+    {
+     "ad": "NASA Imagine the Universe: Dictionary",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dictionary.html",
+     "alinti": "radio: Electromagnetic radiation which has the lowest frequency, the longest wavelength, and is produced by charged particles ... (atmosfer birkaç mm ile yaklaşık 20 m arasını geçirir)"
+    }
+   ]
+  },
+  {
+   "terim": "Mikrodalga",
+   "tanim": "Dalga boyu yaklaşık 1 mm ile 30 cm arasında olan, görünür ışıktan uzun dalgalı elektromanyetik ışınım.",
+   "kaynak": [
+    {
+     "ad": "NASA Imagine the Universe: Dictionary",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dictionary.html",
+     "alinti": "microwave: Electromagnetic radiation which has a longer wavelength (between 1 mm and 30 cm) than visible light."
+    }
+   ]
+  },
+  {
+   "terim": "X ışını",
+   "tanim": "Dalga boyu çok kısa, enerjisi çok yüksek elektromanyetik ışınım; morötesinden kısa, gama ışınından uzun dalgalıdır.",
+   "esanlam": [
+    "X-ışını"
+   ],
+   "kaynak": [
+    {
+     "ad": "NASA Imagine the Universe: Dictionary",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dictionary.html",
+     "alinti": "X-ray: Electromagnetic radiation of very short wavelength and very high-energy; (morötesinden kısa, gama ışınından uzun dalga boyu)"
+    }
+   ]
+  },
+  {
+   "terim": "Gama ışını",
+   "tanim": "Enerjisi en yüksek, dalga boyu en kısa elektromanyetik ışınım.",
+   "kaynak": [
+    {
+     "ad": "NASA Imagine the Universe: Dictionary (E–I)",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dict_ei.html",
+     "alinti": "gamma ray: The highest energy, shortest wavelength electromagnetic radiations."
+    }
+   ]
+  },
+  {
+   "terim": "Görünür ışık",
+   "tanim": "Elektromanyetik tayfın insan gözünün görebildiği dar bölümü.",
+   "kaynak": [
+    {
+     "ad": "NASA Science: Introduction to the electromagnetic spectrum",
+     "url": "https://science.nasa.gov/ems/01_intro/",
+     "alinti": "The human eye can only detect only a small portion of this spectrum called visible light."
+    },
+    {
+     "ad": "NASA Imagine the Universe: Dictionary",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dictionary.html",
+     "alinti": "visible: Electromagnetic radiation at wavelengths which the human eye can see."
+    }
+   ]
+  },
+  {
+   "terim": "Işınım",
+   "tanim": "Dalga (ışık) ya da parçacık (foton) biçiminde yayılan enerji. Elektromanyetik ışınım çok uzun radyo dalgalarından çok kısa gama ışınlarına kadar uzanır.",
+   "esanlam": [
+    "radyasyon"
+   ],
+   "kaynak": [
+    {
+     "ad": "NASA Imagine the Universe: Dictionary",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dictionary.html",
+     "alinti": "radiation: Energy emitted in the form of waves (light) or particles (photons)."
+    },
+    {
+     "ad": "NASA Science: Introduction to the electromagnetic spectrum",
+     "url": "https://science.nasa.gov/ems/01_intro/",
+     "alinti": "Electromagnetic energy travels in waves and spans a broad spectrum from very long radio waves to very short gamma rays."
+    }
+   ]
+  },
+  {
+   "terim": "Tayf",
+   "tanim": "Işığın dalga boylarına (renklerine) ayrılmış hâli; her dalga boyunda ne kadar ışık geldiğini gösterir. Yıldızın sıcaklığı, bileşimi ve hızı tayfından okunur.",
+   "esanlam": [
+    "spektrum"
+   ],
+   "kaynak": [
+    {
+     "ad": "NASA Imagine the Universe: Dictionary",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dictionary.html",
+     "alinti": "spectrum: A plot of the intensity of light at different frequencies."
+    },
+    {
+     "ad": "Wikipedia: Spectral line",
+     "url": "https://en.wikipedia.org/wiki/Spectral_line",
+     "alinti": "Spectral lines are highly atom-specific, and can be used to identify the chemical composition of any medium."
+    }
+   ]
+  },
+  {
+   "terim": "Tayfölçer",
+   "tanim": "Teleskoba bağlanan, gelen ışığı dalga boylarına ayırıp tayfını çıkaran alet.",
+   "esanlam": [
+    "spektrometre",
+    "tayfçeker"
+   ],
+   "kaynak": [
+    {
+     "ad": "NASA Imagine the Universe: Dictionary",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dictionary.html",
+     "alinti": "spectrometer: The instrument connected to a telescope that separates the light signals into different frequencies, producing a spectrum."
+    }
+   ]
+  },
+  {
+   "terim": "Tayf çizgisi",
+   "tanim": "Sürekli bir tayfta ışığın çevresinden daha zayıf ya da daha güçlü olduğu dar bölge. Her atoma özgü olduğu için cismin kimyasal bileşimini ele verir.",
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Spectral line",
+     "url": "https://en.wikipedia.org/wiki/Spectral_line",
+     "alinti": "A spectral line is a weaker or stronger region in an otherwise uniform and continuous spectrum."
+    },
+    {
+     "ad": "Wikipedia: Spectral line",
+     "url": "https://en.wikipedia.org/wiki/Spectral_line",
+     "alinti": "Spectral lines are highly atom-specific, and can be used to identify the chemical composition of any medium."
+    }
+   ]
+  },
+  {
+   "terim": "Doppler etkisi",
+   "tanim": "Kaynak ya da gözlemci hareket ettiği için ses ya da ışığın dalga boyunun değişmiş algılanması. Yaklaşan kaynağın ışığı maviye, uzaklaşanınki kırmızıya kayar.",
+   "esanlam": [
+    "Doppler kayması"
+   ],
+   "bicim": [
+    "doppler"
+   ],
+   "kaynak": [
+    {
+     "ad": "NASA Imagine the Universe: Dictionary (A–D)",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dict_ad.html",
+     "alinti": "Doppler effect: The apparent change in wavelength of sound or light caused by the motion of the source, observer or both."
+    },
+    {
+     "ad": "Wikipedia: Redshift",
+     "url": "https://en.wikipedia.org/wiki/Redshift",
+     "alinti": "If a source of the light is moving away from an observer, then redshift (z > 0) occurs; if the source moves towards the observer, then blueshift (z < 0) occurs."
+    }
+   ]
+  },
+  {
+   "terim": "Maviye kayma",
+   "tanim": "Bir cismin tayf çizgilerinin daha kısa dalga boylarına (daha yüksek frekansa) kaymış görünmesi. Cismin bize yaklaştığını gösterir.",
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Redshift",
+     "url": "https://en.wikipedia.org/wiki/Redshift",
+     "alinti": "A blueshift is any decrease in wavelength (increase in energy), with a corresponding increase in frequency"
+    },
+    {
+     "ad": "Wikipedia: Redshift",
+     "url": "https://en.wikipedia.org/wiki/Redshift",
+     "alinti": "if the source moves towards the observer, then blueshift (z < 0) occurs."
+    }
+   ]
+  },
+  {
+   "terim": "Wien yasası",
+   "tanim": "Kara cisim ışınımının en güçlü olduğu dalga boyu sıcaklıkla ters orantılıdır: tepe dalga boyu ≈ 2898 µm·K / T. Sıcaklık arttıkça tepe kısa dalgaya kayar.",
+   "esanlam": [
+    "Wien'in yer değiştirme yasası"
+   ],
+   "bicim": [
+    "wien yasa"
+   ],
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Wien's displacement law",
+     "url": "https://en.wikipedia.org/wiki/Wien%27s_displacement_law",
+     "alinti": "Wien's displacement law states that the black-body radiation curve for different temperatures will peak at different wavelengths that are inversely proportional to the temperature."
+    },
+    {
+     "ad": "Wikipedia: Wien's displacement law",
+     "url": "https://en.wikipedia.org/wiki/Wien%27s_displacement_law",
+     "alinti": "b ≈ 2898 μm⋅K"
+    }
+   ]
+  },
+  {
+   "terim": "Stefan-Boltzmann yasası",
+   "tanim": "Bir kara cismin birim yüzeyinden saniyede yaydığı toplam enerji, sıcaklığının dördüncü kuvvetiyle doğru orantılıdır. Sıcaklık iki katına çıkınca ışıma 16 katına çıkar.",
+   "bicim": [
+    "stefan-boltzmann"
+   ],
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Stefan–Boltzmann law",
+     "url": "https://en.wikipedia.org/wiki/Stefan%E2%80%93Boltzmann_law",
+     "alinti": "the total energy radiated per unit surface area per unit time ... is directly proportional to the fourth power of the black body's temperature"
+    }
+   ]
+  },
+  {
+   "terim": "Planck sabiti",
+   "tanim": "Bir fotonun enerjisini frekansına bağlayan sabit (E = h·f). Değeri tanım gereği 6,62607015 × 10⁻³⁴ J·s'dir.",
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Planck constant",
+     "url": "https://en.wikipedia.org/wiki/Planck_constant",
+     "alinti": "a photon's energy is equal to its frequency multiplied by the Planck constant"
+    },
+    {
+     "ad": "Wikipedia: Planck constant",
+     "url": "https://en.wikipedia.org/wiki/Planck_constant",
+     "alinti": "defined by taking the fixed numerical value of h to be 6.62607015×10−34 when expressed in the unit J⋅s"
+    }
+   ]
+  },
+  {
+   "terim": "Işık hızı",
+   "tanim": "Elektromanyetik ışınımın boşlukta yayılma hızı; tanım gereği saniyede tam 299.792.458 metre. Görelilik kuramına göre hiçbir şey ondan hızlı gidemez.",
+   "kaynak": [
+    {
+     "ad": "NASA Imagine the Universe: Dictionary",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dictionary.html",
+     "alinti": "speed of light (in vacuum): The speed at which electromagnetic radiation propagates in a vacuum; it is defined as 299 792 458 m/s (görelilik: hiçbir şey ışıktan hızlı gidemez)"
+    }
+   ]
+  },
+  {
+   "terim": "Işık yılı",
+   "tanim": "Işığın bir yılda aldığı yol, tam 9.460.730.472.580,8 km (yaklaşık 9,46 trilyon km). Zaman değil, uzaklık birimidir.",
+   "kaynak": [
+    {
+     "ad": "NASA Imagine the Universe: Dictionary",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dictionary.html",
+     "alinti": "light year: A unit of length used in astronomy which equals the distance light travels in a year."
+    },
+    {
+     "ad": "Wikipedia: Light-year",
+     "url": "https://en.wikipedia.org/wiki/Light-year",
+     "alinti": "exactly 9460730472580.8 km"
+    }
+   ]
+  },
+  {
+   "terim": "Parsek",
+   "tanim": "Iraklık açısı bir yay saniyesi olan cismin uzaklığı, yaklaşık 3,26 ışık yılı. Gökbilimcilerin en çok kullandığı uzaklık birimidir.",
+   "kaynak": [
+    {
+     "ad": "NASA Imagine the Universe: Dictionary",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dictionary.html",
+     "alinti": "parsec: The distance to an object which has a parallax of one arc second."
+    },
+    {
+     "ad": "Wikipedia: Light-year",
+     "url": "https://en.wikipedia.org/wiki/Light-year",
+     "alinti": "The unit most commonly used in professional astronomy is the parsec (pc), approximately 3.26 light-years."
+    }
+   ]
+  },
+  {
+   "terim": "Megaparsek",
+   "tanim": "Bir milyon parsek, yaklaşık 3,26 milyon ışık yılı.",
+   "kaynak": [
+    {
+     "ad": "NASA Imagine the Universe: Dictionary",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dictionary.html",
+     "alinti": "A megaparsec (Mpc) is equal to a million (10^6) parsecs."
+    }
+   ]
+  },
+  {
+   "terim": "Güneş kütlesi",
+   "tanim": "Güneş'in kütlesine eşit kütle birimi (M☉). Derslerde yıldızların ve kara deliklerin kütlesi bu birimle verilir.",
+   "kaynak": [
+    {
+     "ad": "NASA Imagine the Universe: Dictionary",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dictionary.html",
+     "alinti": "solar mass: A unit of mass equivalent to the mass of the Sun."
+    }
+   ]
+  },
+  {
+   "terim": "Mutlak kadir",
+   "tanim": "Bir cisim tam 10 parsek (32,6 ışık yılı) uzaktan bakılsaydı sahip olacağı görünür kadir. Yıldızların gerçek parlaklıklarını karşılaştırmaya yarar; Güneş'inki +4,83.",
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Absolute magnitude",
+     "url": "https://en.wikipedia.org/wiki/Absolute_magnitude",
+     "alinti": "An object's absolute magnitude is defined to be equal to the apparent magnitude that the object would have if it were viewed from a distance of exactly 10 parsecs (32.6 light-years)"
+    },
+    {
+     "ad": "Wikipedia: Absolute magnitude",
+     "url": "https://en.wikipedia.org/wiki/Absolute_magnitude",
+     "alinti": "The Sun has absolute magnitude MV = +4.83."
+    }
+   ]
+  },
+  {
+   "terim": "Görünür kadir",
+   "tanim": "Bir gök cisminin Dünya'dan bakınca ne kadar parlak göründüğünün ölçüsü. Cisim parladıkça sayı küçülür; en parlak cisimlerinki eksidir.",
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Apparent magnitude",
+     "url": "https://en.wikipedia.org/wiki/Apparent_magnitude",
+     "alinti": "Apparent magnitude (m) is a measure of the brightness of a star, astronomical object or other celestial objects"
+    },
+    {
+     "ad": "Wikipedia: Apparent magnitude",
+     "url": "https://en.wikipedia.org/wiki/Apparent_magnitude",
+     "alinti": "the brighter an object is, the lower its magnitude number."
+    },
+    {
+     "ad": "Wikipedia: Apparent magnitude",
+     "url": "https://en.wikipedia.org/wiki/Apparent_magnitude",
+     "alinti": "The brightest astronomical objects have negative apparent magnitudes."
+    }
+   ]
+  },
+  {
+   "terim": "Kelvin",
+   "tanim": "Termodinamik sıcaklığın SI birimi (K). Yıldız sıcaklıkları genellikle kelvinle verilir.",
+   "kaynak": [
+    {
+     "ad": "NASA Imagine the Universe: Dictionary",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dictionary.html",
+     "alinti": "kelvin: The fundamental SI unit of thermodynamic temperature defined as 1/273.16 of the thermodynamic temperature of the triple point of water"
+    }
+   ]
+  },
+  {
+   "terim": "Element",
+   "tanim": "Maddenin yapıtaşı olan temel atom türleri; hidrojen, helyum, karbon, demir birer elementtir.",
+   "kaynak": [
+    {
+     "ad": "NASA Imagine the Universe: Dictionary (E–I)",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dict_ei.html",
+     "alinti": "element: The fundamental kinds of atoms that make up the building blocks of matter"
+    }
+   ]
+  },
+  {
+   "terim": "Atom",
+   "tanim": "Bir elementin en küçük parçası: ortada proton ve nötronlardan oluşan bir çekirdek, dış katmanlarında elektronlar.",
+   "kaynak": [
+    {
+     "ad": "NASA Imagine the Universe: Dictionary (E–I)",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dict_ei.html",
+     "alinti": "element: The fundamental kinds of atoms that make up the building blocks of matter"
+    },
+    {
+     "ad": "NASA Imagine the Universe: Dictionary",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dictionary.html",
+     "alinti": "electron: A negatively charged particle commonly found in the outer layers of atoms."
+    },
+    {
+     "ad": "NASA Imagine the Universe: Dictionary",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dictionary.html",
+     "alinti": "proton: A particle with a positive charge commonly found in the nucleus of atoms."
+    }
+   ]
+  },
+  {
+   "terim": "Elektron",
+   "tanim": "Eksi yüklü, atomların dış katmanlarında bulunan parçacık.",
+   "haric": [
+    "elektronik"
+   ],
+   "kaynak": [
+    {
+     "ad": "NASA Imagine the Universe: Dictionary",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dictionary.html",
+     "alinti": "electron: A negatively charged particle commonly found in the outer layers of atoms."
+    }
+   ]
+  },
+  {
+   "terim": "Proton",
+   "tanim": "Atom çekirdeğinde bulunan artı yüklü parçacık. Çekirdekteki proton sayısı atomun hangi element olduğunu belirler.",
+   "kaynak": [
+    {
+     "ad": "NASA Imagine the Universe: Dictionary",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dictionary.html",
+     "alinti": "proton: A particle with a positive charge commonly found in the nucleus of atoms."
+    },
+    {
+     "ad": "IAU OAE Glossary: Isotope",
+     "url": "https://astro4edu.org/resources/glossary/term/165",
+     "alinti": "Atomic nuclei that have the same number of protons, but different numbers of neutrons, are called isotopes (proton sayısı elementi belirler)"
+    }
+   ]
+  },
+  {
+   "terim": "Nötron",
+   "tanim": "Kütlesi protonunkine yakın, yükü sıfır olan, atom çekirdeğinde bulunan parçacık.",
+   "kaynak": [
+    {
+     "ad": "NASA Imagine the Universe: Dictionary",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dictionary.html",
+     "alinti": "neutron: A particle with approximately the mass of a proton, but zero charge, commonly found in the nucleus of atoms."
+    }
+   ]
+  },
+  {
+   "terim": "İyon",
+   "tanim": "Bir ya da daha çok elektronu koparılmış, bu yüzden artı yüklü hâle gelmiş atom.",
+   "kaynak": [
+    {
+     "ad": "NASA Imagine the Universe: Dictionary (E–I)",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dict_ei.html",
+     "alinti": "ion: An atom with one or more electrons stripped off, giving it a net positive charge."
+    }
+   ]
+  },
+  {
+   "terim": "İyonlaşma",
+   "tanim": "Bir atomun elektron yitirip iyona dönüşmesi. Atomları iyonlaşmış seyrek gaza plazma denir.",
+   "bicim": [
+    "iyonlaş"
+   ],
+   "kaynak": [
+    {
+     "ad": "NASA Imagine the Universe: Dictionary (E–I)",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dict_ei.html",
+     "alinti": "ion: An atom with one or more electrons stripped off, giving it a net positive charge."
+    },
+    {
+     "ad": "NASA Imagine the Universe: Dictionary",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dictionary.html",
+     "alinti": "plasma: A low-density gas in which the individual atoms are ionized (and therefore charged)"
+    }
+   ]
+  },
+  {
+   "terim": "İzotop",
+   "tanim": "Proton sayısı aynı, nötron sayısı farklı atom çekirdekleri; aynı elementin farklı türleri. Örneğin döteryum, çekirdeğinde bir de nötron olan hidrojendir.",
+   "kaynak": [
+    {
+     "ad": "IAU OAE Glossary: Isotope",
+     "url": "https://astro4edu.org/resources/glossary/term/165",
+     "alinti": "Atomic nuclei that have the same number of protons, but different numbers of neutrons, are called isotopes (örnek: döteryum)"
+    },
+    {
+     "ad": "Jefferson Lab STEM glossary: Isotope",
+     "url": "https://stem-tools.jlab.org/glossary/isotope",
+     "alinti": "Atoms that have the same number of protons but different numbers of neutrons are called isotopes."
+    }
+   ]
+  },
+  {
+   "terim": "Hidrojen",
+   "tanim": "En hafif ve evrende en bol element. Güneş gibi yıldızlar çekirdeklerinde hidrojeni helyuma çevirerek parlar.",
+   "kaynak": [
+    {
+     "ad": "NASA Imagine the Universe: Dictionary (E–I)",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dict_ei.html",
+     "alinti": "hydrogen: The lightest and most abundant element."
+    },
+    {
+     "ad": "IAU OAE Glossary: Red Supergiant",
+     "url": "https://www.astro4edu.org/resources/glossary/term/278/",
+     "alinti": "stars like our Sun that burn hydrogen to helium in their cores via nuclear fusion"
+    }
+   ]
+  },
+  {
+   "terim": "Helyum",
+   "tanim": "Hidrojenden sonra en hafif ve en bol ikinci element. Yıldızların çekirdeğinde hidrojenin kaynaşmasıyla oluşur.",
+   "kaynak": [
+    {
+     "ad": "NASA Imagine the Universe: Dictionary (E–I)",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dict_ei.html",
+     "alinti": "helium: The second lightest and second most abundant element."
+    },
+    {
+     "ad": "IAU OAE Glossary: Red Supergiant",
+     "url": "https://www.astro4edu.org/resources/glossary/term/278/",
+     "alinti": "stars like our Sun that burn hydrogen to helium in their cores via nuclear fusion"
+    }
+   ]
+  },
+  {
+   "terim": "Metal",
+   "tanim": "Gökbilimde helyumdan ağır bütün elementlere metal denir; bir yıldızdaki oranlarına metallik (metalisite) denir. Gündelik anlamından çok daha geniştir.",
+   "esanlam": [
+    "metallik",
+    "metalisite"
+   ],
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Main sequence",
+     "url": "https://en.wikipedia.org/wiki/Main_sequence",
+     "alinti": "This is the abundance of heavier-than-helium elements present in the star. (metallicity)"
+    }
+   ]
+  },
+  {
+   "terim": "Kuark",
+   "tanim": "Proton ve nötron gibi parçacıkları oluşturan temel parçacık; her proton ve nötron üç kuarktan oluşur.",
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Chronology of the universe",
+     "url": "https://en.wikipedia.org/wiki/Chronology_of_the_universe",
+     "alinti": "Baryons are subatomic particles such as protons and neutrons that are composed of three quarks."
+    }
+   ]
+  },
+  {
+   "terim": "Baryon",
+   "tanim": "Üç kuarktan oluşan, güçlü çekirdek kuvvetiyle etkileşen parçacık; proton ve nötron birer baryondur.",
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Chronology of the universe",
+     "url": "https://en.wikipedia.org/wiki/Chronology_of_the_universe",
+     "alinti": "Baryons are subatomic particles such as protons and neutrons that are composed of three quarks."
+    },
+    {
+     "ad": "NASA Imagine the Universe: Dictionary (A–D)",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dict_ad.html",
+     "alinti": "baryon: Any of the subatomic particles which interact via the strong nuclear force."
+    }
+   ]
+  },
+  {
+   "terim": "Süpernova",
+   "tanim": "Kütleli bir yıldızın ölümüyle gelen patlama: parlaklık birden çok artar, sonra yavaş yavaş söner. Bir beyaz cücenin patlaması da süpernovadır (Tip Ia).",
+   "kaynak": [
+    {
+     "ad": "NASA Imagine the Universe: Dictionary",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dictionary.html",
+     "alinti": "supernova: The death explosion of a massive star, resulting in a sharp increase in brightness followed by a gradual fading."
+    }
+   ]
+  },
+  {
+   "terim": "Nova",
+   "tanim": "Bir yıldızın birden enerji saçıp parlaklığını yüzlerce ila binlerce kat artırması, sonra eski parlaklığına dönmesi.",
+   "kaynak": [
+    {
+     "ad": "NASA Imagine the Universe: Dictionary",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dictionary.html",
+     "alinti": "nova: A star that experiences a sudden outburst of radiant energy, temporarily increasing its luminosity by hundreds to thousands of times"
+    }
+   ]
+  },
+  {
+   "terim": "Süperdev",
+   "tanim": "Güneş'ten çok daha kütleli yıldızların ileri yaşta dönüştüğü, çok parlak dev yıldız. Kırmızı süperdevlerin yarıçapı Güneş'inkinin yüzlerce, binlerce katıdır (Betelgeuse, Antares); çoğu süpernovayla biter.",
+   "esanlam": [
+    "kırmızı süperdev",
+    "süper dev"
+   ],
+   "kaynak": [
+    {
+     "ad": "IAU OAE Glossary: Red Supergiant",
+     "url": "https://www.astro4edu.org/resources/glossary/term/278/",
+     "alinti": "A red supergiant is a star that has a comparatively cool surface but a radius typically several hundred or even thousands of times that of a main sequence star like our Sun."
+    },
+    {
+     "ad": "IAU OAE Glossary: Red Supergiant",
+     "url": "https://www.astro4edu.org/resources/glossary/term/278/",
+     "alinti": "Examples of red supergiants are Betelgeuse, in Orion, and Antares, in Scorpius."
+    },
+    {
+     "ad": "IAU OAE Glossary: Red Supergiant",
+     "url": "https://www.astro4edu.org/resources/glossary/term/278/",
+     "alinti": "Most, possibly all, red supergiants end in a supernova explosion"
+    },
+    {
+     "ad": "Wikipedia: Stellar evolution",
+     "url": "https://en.wikipedia.org/wiki/Stellar_evolution",
+     "alinti": "evolve to highly luminous supergiants"
+    }
+   ]
+  },
+  {
+   "terim": "Kırmızı cüce",
+   "tanim": "Küçük, görece soğuk ve kütlesi düşük yıldız. Hidrojeni çok yavaş yaktığı için anakolda son derece uzun kalır.",
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Stellar evolution",
+     "url": "https://en.wikipedia.org/wiki/Stellar_evolution",
+     "alinti": "Small, relatively cold, low-mass red dwarfs fuse hydrogen slowly."
+    }
+   ]
+  },
+  {
+   "terim": "Çift yıldız",
+   "tanim": "Ortak kütle merkezleri çevresinde dolanan iki yıldızdan oluşan sistem.",
+   "esanlam": [
+    "ikili yıldız"
+   ],
+   "kaynak": [
+    {
+     "ad": "NASA Imagine the Universe: Dictionary (A–D)",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dict_ad.html",
+     "alinti": "Binary stars are two stars that orbit around a common center of mass."
+    },
+    {
+     "ad": "Wikipedia: Glossary of astronomy",
+     "url": "https://en.wikipedia.org/wiki/Glossary_of_astronomy",
+     "alinti": "binary star: A star system consisting of exactly two stars orbiting around their common barycenter."
+    }
+   ]
+  },
+  {
+   "terim": "Yıldız kümesi",
+   "tanim": "Birbirine kütleçekimiyle bağlı, birkaç taneden yüz binlercesine kadar yıldızdan oluşan topluluk.",
+   "kaynak": [
+    {
+     "ad": "NASA Imagine the Universe: Dictionary",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dictionary.html",
+     "alinti": "star cluster: A bunch of stars (ranging in number from a few to hundreds of thousands) which are bound to each other"
+    }
+   ]
+  },
+  {
+   "terim": "Bulutsu",
+   "tanim": "Yıldızlararası ortamda gaz ve tozdan oluşan, ayrı ve ışıklı bir bulut. Adı Latincede \"bulut, sis\" anlamına gelen nebuladan.",
+   "esanlam": [
+    "nebula"
+   ],
+   "haric": [
+    "bulutsuz"
+   ],
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Nebula",
+     "url": "https://en.wikipedia.org/wiki/Nebula",
+     "alinti": "A nebula (Latin for 'cloud, fog'; pl. nebulae or nebulas) is a distinct luminescent part of interstellar medium."
+    },
+    {
+     "ad": "NASA Imagine the Universe: Dictionary",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dictionary.html",
+     "alinti": "nebula: A diffuse mass of interstellar dust and gas."
+    }
+   ]
+  },
+  {
+   "terim": "Yıldız oluşumu",
+   "tanim": "Yıldızlararası ortamdaki moleküler bulutların yoğun bölgelerinin çöküp yıldızlara dönüşmesi.",
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Star formation",
+     "url": "https://en.wikipedia.org/wiki/Star_formation",
+     "alinti": "Star formation is the process by which dense regions within molecular clouds in interstellar space ... collapse and form stars."
+    }
+   ]
+  },
+  {
+   "terim": "Yıldız evrimi",
+   "tanim": "Bir yıldızın zaman içinde geçirdiği değişimlerin tümü.",
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Stellar evolution",
+     "url": "https://en.wikipedia.org/wiki/Stellar_evolution",
+     "alinti": "Stellar evolution is the process by which a star changes over the course of time."
+    }
+   ]
+  },
+  {
+   "terim": "Yıldız rüzgârı",
+   "tanim": "Bir yıldızın yüzeyinden sürekli gaz atılması. Çok kütleli yıldızlarda dış katmanlarını soyacak kadar güçlü olabilir.",
+   "kaynak": [
+    {
+     "ad": "NASA Imagine the Universe: Dictionary",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dictionary.html",
+     "alinti": "stellar wind: The ejection of gas off the surface of a star."
+    },
+    {
+     "ad": "Wikipedia: Stellar evolution",
+     "url": "https://en.wikipedia.org/wiki/Stellar_evolution",
+     "alinti": "have very rapid stellar winds ... (çok kütleli yıldızlar dış katmanlarını soyabilir)"
+    }
+   ]
+  },
+  {
+   "terim": "Kromosfer",
+   "tanim": "Güneş'in (ya da bir yıldızın) dış atmosferinde, fotosferin üstünde ve koronanın altında kalan, yaklaşık 2000 km kalınlığında ince geçiş katmanı.",
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Glossary of astronomy",
+     "url": "https://en.wikipedia.org/wiki/Glossary_of_astronomy",
+     "alinti": "chromosphere: A thin transition region of a star's outer atmosphere, positioned above the cooler photosphere and below the hot corona."
+    },
+    {
+     "ad": "Wikipedia: Sun",
+     "url": "https://en.wikipedia.org/wiki/Sun",
+     "alinti": "a layer about 2,000 km thick, dominated by a spectrum of emission and absorption lines"
+    }
+   ]
+  },
+  {
+   "terim": "Konveksiyon",
+   "tanim": "Enerjinin plazmanın toplu hareketiyle taşınması; ışınımla taşınmaktan daha verimlidir. Güneş'te yarıçapın yaklaşık 0,7'sinden yüzeye kadar enerji böyle taşınır.",
+   "esanlam": [
+    "konveksiyon bölgesi",
+    "konvektif"
+   ],
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Main sequence",
+     "url": "https://en.wikipedia.org/wiki/Main_sequence",
+     "alinti": "Convection is a more efficient mode for carrying energy than radiation"
+    },
+    {
+     "ad": "Wikipedia: Main sequence",
+     "url": "https://en.wikipedia.org/wiki/Main_sequence",
+     "alinti": "energy is transported by bulk movement of plasma"
+    },
+    {
+     "ad": "Wikipedia: Sun",
+     "url": "https://en.wikipedia.org/wiki/Sun",
+     "alinti": "The Sun's convection zone extends from 0.7 solar radii (500,000 km) to near the surface."
+    }
+   ]
+  },
+  {
+   "terim": "Işınım bölgesi",
+   "tanim": "Güneş'in çekirdeği ile konveksiyon bölgesi arasındaki, enerjinin plazma karışmadan ışınımla taşındığı katman; Güneş'in en kalın katmanı.",
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Sun",
+     "url": "https://en.wikipedia.org/wiki/Sun",
+     "alinti": "The radiative zone is the thickest layer of the Sun."
+    },
+    {
+     "ad": "Wikipedia: Main sequence",
+     "url": "https://en.wikipedia.org/wiki/Main_sequence",
+     "alinti": "Radiation zones ... move energy without bulk plasma motion (very little mixing)"
+    }
+   ]
+  },
+  {
+   "terim": "Güneş döngüsü",
+   "tanim": "Güneş etkinliğinin (leke sayısı, patlamalar) ortalama 11 yılda bir artıp azalması.",
+   "esanlam": [
+    "leke döngüsü",
+    "Güneş lekesi döngüsü"
+   ],
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Solar cycle",
+     "url": "https://en.wikipedia.org/wiki/Solar_cycle",
+     "alinti": "The Solar cycle, also known as the solar magnetic activity cycle, sunspot cycle, or Schwabe cycle, is a periodic 11-year change in the Sun's activity"
+    },
+    {
+     "ad": "Wikipedia: Solar cycle",
+     "url": "https://en.wikipedia.org/wiki/Solar_cycle",
+     "alinti": "Solar cycles have an average duration of about 11 years."
+    }
+   ]
+  },
+  {
+   "terim": "Kutup ışığı",
+   "tanim": "Güneş'ten gelen yüklü parçacıkların üst atmosferdeki atomlara çarpmasıyla oluşan doğal ışık gösterisi; en çok yüksek enlemlerde görülür.",
+   "esanlam": [
+    "aurora",
+    "kutup ışıkları"
+   ],
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Aurora",
+     "url": "https://en.wikipedia.org/wiki/Aurora",
+     "alinti": "An aurora (pl. aurorae or auroras) is a natural light display in Earth's upper atmosphere ... caused by charged particles from the Sun colliding with atoms in the atmosphere"
+    }
+   ]
+  },
+  {
+   "terim": "Manyetik alan",
+   "tanim": "Bir cismin uyguladığı manyetik kuvvetin gücünü anlatan alan. Güneş patlamaları, manyetik alandaki enerjinin birden boşalmasıyla olur.",
+   "kaynak": [
+    {
+     "ad": "NASA Imagine the Universe: Dictionary",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dictionary.html",
+     "alinti": "magnetic field: A description of the strength of the magnetic force exerted by an object."
+    },
+    {
+     "ad": "Wikipedia: Sun",
+     "url": "https://en.wikipedia.org/wiki/Sun",
+     "alinti": "released through magnetic reconnection in the form of large solar flares"
+    }
+   ]
+  },
+  {
+   "terim": "CNO döngüsü",
+   "tanim": "Karbon, azot ve oksijen atomlarını ara basamak olarak kullanıp hidrojeni helyuma çeviren füzyon yolu. Yaklaşık 1,8 Güneş kütlesinden ağır yıldızlar enerjilerinin neredeyse hepsini buradan alır; Güneş'te payı yaklaşık %1.",
+   "esanlam": [
+    "CNO çevrimi"
+   ],
+   "bicim": [
+    "cno"
+   ],
+   "buyuk": true,
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Main sequence",
+     "url": "https://en.wikipedia.org/wiki/Main_sequence",
+     "alinti": "This process uses atoms of carbon, nitrogen, and oxygen as intermediaries in the process of fusing hydrogen into helium."
+    },
+    {
+     "ad": "Wikipedia: Main sequence",
+     "url": "https://en.wikipedia.org/wiki/Main_sequence",
+     "alinti": "stars with 1.8 M☉ or above generate almost their entire energy output through the CNO cycle"
+    },
+    {
+     "ad": "Wikipedia: Proton–proton chain",
+     "url": "https://en.wikipedia.org/wiki/Proton%E2%80%93proton_chain",
+     "alinti": "the other 1% coming from the CNO cycle"
+    }
+   ]
+  },
+  {
+   "terim": "Üçlü alfa süreci",
+   "tanim": "Üç helyum-4 çekirdeğinin birleşip karbona dönüştüğü füzyon tepkimeleri dizisi.",
+   "bicim": [
+    "üçlü alfa"
+   ],
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Triple-alpha process",
+     "url": "https://en.wikipedia.org/wiki/Triple-alpha_process",
+     "alinti": "The triple-alpha process is a set of nuclear fusion reactions by which three helium-4 nuclei (alpha particles) are transformed into carbon."
+    }
+   ]
+  },
+  {
+   "terim": "Kütle-ışıma ilişkisi",
+   "tanim": "Bir yıldızın kütlesi ile ışıma gücü arasındaki ilişki. Anakol yıldızlarında ışıma gücü kabaca kütlenin 3,5. kuvvetiyle artar: kütle iki katına çıkınca yıldız on bir kat parlar.",
+   "bicim": [
+    "kütle-ışıma"
+   ],
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Mass–luminosity relation",
+     "url": "https://en.wikipedia.org/wiki/Mass%E2%80%93luminosity_relation",
+     "alinti": "the mass–luminosity relation is an empirical and theoretical relationship between a star's mass and its luminosity."
+    },
+    {
+     "ad": "Wikipedia: Mass–luminosity relation",
+     "url": "https://en.wikipedia.org/wiki/Mass%E2%80%93luminosity_relation",
+     "alinti": "The value a = 3.5 is commonly used for main-sequence stars."
+    }
+   ]
+  },
+  {
+   "terim": "Jet",
+   "tanim": "Genellikle etkin bir galaksi çekirdeğinden ya da bir atarcadan fırlayan dar parçacık demetleri.",
+   "haric": [
+    "jetsu"
+   ],
+   "kaynak": [
+    {
+     "ad": "NASA Imagine the Universe: Dictionary",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dictionary.html",
+     "alinti": "jet: Beams of particles, usually coming from an active galactic nucleus or a pulsar."
+    }
+   ]
+  },
+  {
+   "terim": "Kozmik toz",
+   "tanim": "Uzayda bulunan ya da Dünya'ya düşmüş, katı maddenin çok ince parçacıklarından oluşan toz.",
+   "esanlam": [
+    "yıldızlararası toz"
+   ],
+   "bicim": [
+    "toz"
+   ],
+   "haric": [
+    "tozla"
+   ],
+   "yalniz": [
+    "d6",
+    "d7",
+    "d12",
+    "d13",
+    "d14",
+    "d15",
+    "d19"
+   ],
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Glossary of astronomy",
+     "url": "https://en.wikipedia.org/wiki/Glossary_of_astronomy",
+     "alinti": "cosmic dust: Dust which exists in outer space or has fallen on Earth, generally composed of fine particles of solid matter"
+    },
+    {
+     "ad": "NASA Imagine the Universe: Dictionary",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dictionary.html",
+     "alinti": "nebula: A diffuse mass of interstellar dust and gas."
+    }
+   ]
+  },
+  {
+   "terim": "Kozmik ışın",
+   "tanim": "Uzaydan gelip Dünya atmosferine çarpan, çok yüksek enerjili atom çekirdekleri (çoğu proton) ve elektronlar.",
+   "kaynak": [
+    {
+     "ad": "NASA Imagine the Universe: Dictionary (A–D)",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dict_ad.html",
+     "alinti": "cosmic ray: Atomic nuclei (mostly protons) and electrons that are observed to strike the Earth's atmosphere with exceedingly high energies"
+    }
+   ]
+  },
+  {
+   "terim": "Gama ışını patlaması",
+   "tanim": "Kısa ama çok güçlü bir gama ışını parlaması üreten, felaket boyutunda olay.",
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Glossary of astronomy",
+     "url": "https://en.wikipedia.org/wiki/Glossary_of_astronomy",
+     "alinti": "gamma-ray burst: A cataclysmic event that generates a brief but intense outburst of gamma ray radiation"
+    }
+   ]
+  },
+  {
+   "terim": "Sarmal galaksi",
+   "tanim": "Dönen, yassı bir yıldız diski, ortasında yoğun bir şişkinlik ve sarmal kolları olan galaksi. Samanyolu da sarmaldır.",
+   "kaynak": [
+    {
+     "ad": "NASA Science: Galaxy types",
+     "url": "https://science.nasa.gov/universe/galaxies/types/",
+     "alinti": "Our Milky Way is one example of a broad class of galaxies defined by the presence of spiral arms."
+    },
+    {
+     "ad": "NASA Science: Galaxy types",
+     "url": "https://science.nasa.gov/universe/galaxies/types/",
+     "alinti": "These galaxies resemble giant rotating pinwheels with a pancake-like disk of stars and a central bulge or tight concentration of stars"
+    }
+   ]
+  },
+  {
+   "terim": "Eliptik galaksi",
+   "tanim": "Yuvarlaktan ovale değişen biçimli, az gaz ve tozlu, belirgin yapısı olmayan galaksi.",
+   "kaynak": [
+    {
+     "ad": "NASA Science: Galaxy types",
+     "url": "https://science.nasa.gov/universe/galaxies/types/",
+     "alinti": "Elliptical galaxies have shapes that range from completely round to oval."
+    },
+    {
+     "ad": "NASA Science: Galaxy types",
+     "url": "https://science.nasa.gov/universe/galaxies/types/",
+     "alinti": "Unlike spirals, elliptical galaxies usually contain little gas and dust and show very little organization or structure."
+    },
+    {
+     "ad": "Wikipedia: Glossary of astronomy",
+     "url": "https://en.wikipedia.org/wiki/Glossary_of_astronomy",
+     "alinti": "elliptical galaxy: A type of galaxy with an approximately ellipsoidal shape and a smooth, nearly featureless appearance."
+    }
+   ]
+  },
+  {
+   "terim": "Düzensiz galaksi",
+   "tanim": "Ne sarmal ne eliptik olan, alışılmadık biçimli galaksi.",
+   "kaynak": [
+    {
+     "ad": "NASA Science: Galaxy types",
+     "url": "https://science.nasa.gov/universe/galaxies/types/",
+     "alinti": "Irregular galaxies have unusual shapes, like toothpicks, rings, or even little groupings of stars."
+    }
+   ]
+  },
+  {
+   "terim": "Sarmal kol",
+   "tanim": "Sarmal bir galaksinin diskinde yıldızların, gazın ve tozun toplandığı kıvrımlı kol. Samanyolu'nda dört ana kol vardır.",
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Milky Way",
+     "url": "https://en.wikipedia.org/wiki/Milky_Way",
+     "alinti": "the structure of the interstellar medium and stars in the disk of the Milky Way is organized into four spiral arms"
+    }
+   ]
+  },
+  {
+   "terim": "Şişkinlik",
+   "tanim": "Sarmal bir galaksinin merkezindeki, yıldızların sıkıştığı şişkin bölge. Samanyolu'nda merkezin çevresindeki yaklaşık 10.000 ışık yılını kaplar.",
+   "esanlam": [
+    "merkezî şişkinlik"
+   ],
+   "yalniz": [
+    "d7"
+   ],
+   "kaynak": [
+    {
+     "ad": "NASA Science: Galaxy types",
+     "url": "https://science.nasa.gov/universe/galaxies/types/",
+     "alinti": "a central bulge or tight concentration of stars"
+    },
+    {
+     "ad": "Wikipedia: Milky Way",
+     "url": "https://en.wikipedia.org/wiki/Milky_Way",
+     "alinti": "The stars in the innermost 10,000 light-years form a bulge, from which the bar radiates."
+    }
+   ]
+  },
+  {
+   "terim": "Kara delik",
+   "tanim": "Kütlesi öyle küçük bir hacme sıkışmış bir bölge ki kütleçekiminden ışık bile kaçamaz.",
+   "bicim": [
+    "karadelik"
+   ],
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Glossary of astronomy",
+     "url": "https://en.wikipedia.org/wiki/Glossary_of_astronomy",
+     "alinti": "black hole: A concentration of mass so compact that it creates a region of space from which not even light can escape."
+    },
+    {
+     "ad": "NASA Imagine the Universe: Dictionary (A–D)",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dict_ad.html",
+     "alinti": "black hole: An object whose gravity is so strong that not even light can escape from it."
+    }
+   ]
+  },
+  {
+   "terim": "Genişleyen evren",
+   "tanim": "Kütleçekimiyle birbirine bağlı olmayan evren parçaları arasındaki uzaklığın zamanla artması.",
+   "esanlam": [
+    "evrenin genişlemesi"
+   ],
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Expansion of the universe",
+     "url": "https://en.wikipedia.org/wiki/Expansion_of_the_universe",
+     "alinti": "The expansion of the universe is the increase in distance between gravitationally unbound parts of the observable universe (with time)"
+    }
+   ]
+  },
+  {
+   "terim": "Hubble yasası",
+   "tanim": "Galaksilerin bizden, uzaklıklarıyla orantılı hızlarla uzaklaştığını söyleyen gözlemsel yasa; resmî adı Hubble–Lemaître yasası.",
+   "esanlam": [
+    "Hubble–Lemaître yasası"
+   ],
+   "bicim": [
+    "hubble yasa",
+    "hubble-lemaître yasa"
+   ],
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Hubble's law",
+     "url": "https://en.wikipedia.org/wiki/Hubble%27s_law",
+     "alinti": "Hubble's law, officially the Hubble–Lemaître law, is the observation in physical cosmology that galaxies are moving away from Earth at speeds proportional to their distance."
+    }
+   ]
+  },
+  {
+   "terim": "Genel görelilik",
+   "tanim": "Einstein'ın kütleçekimini geometriyle açıklayan kuramı.",
+   "esanlam": [
+    "genel görelilik kuramı"
+   ],
+   "kaynak": [
+    {
+     "ad": "NASA Imagine the Universe: Dictionary (E–I)",
+     "url": "https://imagine.gsfc.nasa.gov/resources/dict_ei.html",
+     "alinti": "general relativity: The geometric theory of gravitation developed by Albert Einstein"
+    }
+   ]
+  },
+  {
+   "terim": "Zaman genişlemesi",
+   "tanim": "İki saatin aynı olay için farklı süre ölçmesi: saatler birbirine göre hareket ediyorsa (özel görelilik) ya da farklı kütleçekim ortamındaysa (genel görelilik). Gözlemciye göre hareket eden saat daha yavaş işler.",
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Time dilation",
+     "url": "https://en.wikipedia.org/wiki/Time_dilation",
+     "alinti": "Time dilation is the difference in elapsed time as measured by two clocks, either because of a relative velocity, a consequence of special relativity, or a difference in gravitational potential between their locations"
+    },
+    {
+     "ad": "Wikipedia: Time dilation",
+     "url": "https://en.wikipedia.org/wiki/Time_dilation",
+     "alinti": "a clock that is moving relative to the observer will be measured to tick more slowly than a clock at rest"
+    }
+   ]
+  },
+  {
+   "terim": "Lorentz çarpanı",
+   "tanim": "Özel görelilikte zaman genişlemesinin büyüklüğünü veren katsayı (γ); cismin hızına ve ışık hızına bağlıdır.",
+   "bicim": [
+    "lorentz"
+   ],
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Time dilation",
+     "url": "https://en.wikipedia.org/wiki/Time_dilation",
+     "alinti": "Time dilation by the Lorentz factor was predicted by several authors at the turn of the 20th century. (γ, v ve c'ye bağlıdır)"
+    }
+   ]
+  },
+  {
+   "terim": "Radyo teleskobu",
+   "tanim": "Gökteki radyo kaynaklarından gelen radyo dalgalarını algılayan özel anten ve alıcı.",
+   "bicim": [
+    "radyo teleskop"
+   ],
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Radio telescope",
+     "url": "https://en.wikipedia.org/wiki/Radio_telescope",
+     "alinti": "A radio telescope is a specialized antenna and radio receiver used to detect radio waves from astronomical radio sources in the sky."
+    }
+   ]
+  },
+  {
+   "terim": "Uzay teleskobu",
+   "tanim": "Uzaya yerleştirilmiş teleskop. Dünya atmosferinin ışığı soğurmasından, saçmasından ve bozmasından kurtulur; Hubble ve James Webb örnektir.",
+   "bicim": [
+    "uzay teleskop"
+   ],
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Space telescope",
+     "url": "https://en.wikipedia.org/wiki/Space_telescope",
+     "alinti": "A space telescope (also known as space observatory) is a telescope in outer space used to observe astronomical objects."
+    },
+    {
+     "ad": "Wikipedia: Space telescope",
+     "url": "https://en.wikipedia.org/wiki/Space_telescope",
+     "alinti": "Space telescopes avoid several problems caused by the Earth's atmosphere (soğurma, saçılma, bozulma)"
+    }
+   ]
+  },
+  {
+   "terim": "Büyütme",
+   "tanim": "Bir dürbünün ya da teleskobun görüntüyü kaç kat büyük gösterdiği. 7×50 dürbünde ilk sayı (7) büyütmedir.",
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Binoculars",
+     "url": "https://en.wikipedia.org/wiki/Binoculars",
+     "alinti": "It is customary to categorize binoculars by the magnification × the objective diameter; e.g., 7×50."
+    },
+    {
+     "ad": "Wikipedia: Binoculars",
+     "url": "https://en.wikipedia.org/wiki/Binoculars",
+     "alinti": "A magnification factor of 7, for example, produces an image 7 times larger than the original seen from that distance."
+    }
+   ]
+  },
+  {
+   "terim": "Işık toplama gücü",
+   "tanim": "Bir teleskobun ya da dürbünün ne kadar ışık topladığı. Objektifin çapı büyüdükçe artar; sönük cisimler böyle görünür olur.",
+   "bicim": [
+    "ışık toplama"
+   ],
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Binoculars",
+     "url": "https://en.wikipedia.org/wiki/Binoculars",
+     "alinti": "the diameter of the objective lens increases the total amount of light captured"
+    }
+   ]
+  },
+  {
+   "terim": "Kırınım",
+   "tanim": "Işığın dalga doğası yüzünden bir açıklıktan geçerken yayılması. Teleskobun ayırabileceği en ince ayrıntıyı dalga boyunun açıklık çapına oranı sınırlar.",
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Angular resolution",
+     "url": "https://en.wikipedia.org/wiki/Angular_resolution",
+     "alinti": "diffraction comes from the wave nature of light and is determined by the finite aperture of the optical elements"
+    },
+    {
+     "ad": "Wikipedia: Angular resolution",
+     "url": "https://en.wikipedia.org/wiki/Angular_resolution",
+     "alinti": "is limited by diffraction to the ratio of the wavelength of the waves to the aperture width"
+    }
+   ]
+  },
+  {
+   "terim": "Göz bebeği",
+   "tanim": "Gözde irisin ortasındaki, siyah görünen açıklık. Karanlıkta genişler, aydınlıkta daralır.",
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Pupil",
+     "url": "https://en.wikipedia.org/wiki/Pupil",
+     "alinti": "The pupil is the central opening of the iris on the inside of the eye, which normally appears black."
+    },
+    {
+     "ad": "Wikipedia: Pupil",
+     "url": "https://en.wikipedia.org/wiki/Pupil",
+     "alinti": "The pupil gets wider in the dark and narrower in light."
+    }
+   ]
+  },
+  {
+   "terim": "Retina",
+   "tanim": "Gözün iç yüzündeki, ışığı algılayan çubuk ve koni hücrelerinin bulunduğu tabaka; farklı ışık düzeylerine uyum sağlayan budur.",
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Adaptation (eye)",
+     "url": "https://en.wikipedia.org/wiki/Adaptation_(eye)",
+     "alinti": "In visual physiology, adaptation is the ability of the retina of the eye to adjust to various levels of light."
+    }
+   ]
+  },
+  {
+   "terim": "Koni hücre",
+   "tanim": "Retinadaki, parlak ışıkta çalışan ve renkleri ayırt etmeyi sağlayan ışık algılayıcı hücreler. Gece görüşünü ise çubuk hücreler sağlar.",
+   "esanlam": [
+    "koni hücresi"
+   ],
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Adaptation (eye)",
+     "url": "https://en.wikipedia.org/wiki/Adaptation_(eye)",
+     "alinti": "Perception in high luminescence settings is dominated by cones"
+    },
+    {
+     "ad": "Wikipedia: Adaptation (eye)",
+     "url": "https://en.wikipedia.org/wiki/Adaptation_(eye)",
+     "alinti": "In humans, rod cells are exclusively responsible for night vision"
+    }
+   ]
+  },
+  {
+   "terim": "Gezegen",
+   "tanim": "IAU'nun 2006 tanımına göre: Güneş'in çevresinde dolanan, kendi kütleçekimiyle yuvarlak biçim alacak kadar kütleli ve yörüngesinin çevresini temizlemiş gök cismi.",
+   "kaynak": [
+    {
+     "ad": "Wikipedia: IAU definition of planet",
+     "url": "https://en.wikipedia.org/wiki/IAU_definition_of_planet",
+     "alinti": "is in orbit around the Sun ; has sufficient mass for its self-gravity to overcome rigid body forces so that it assumes a hydrostatic equilibrium (nearly round) shape ; has cleared the neighbourhood around its orbit"
+    }
+   ]
+  },
+  {
+   "terim": "Güneş Sistemi",
+   "tanim": "Güneş ile onun çevresinde dolanan ve kütleçekimiyle ona bağlı bütün cisimler; en büyükleri sekiz gezegendir.",
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Solar System",
+     "url": "https://en.wikipedia.org/wiki/Solar_System",
+     "alinti": "The Solar System is the gravitationally bound system of the Sun and the masses that orbit it (en belirgin üyeleri sekiz gezegen)"
+    }
+   ]
+  },
+  {
+   "terim": "Atmosfer",
+   "tanim": "Bir gök cismini saran ve kütleçekimiyle tutulan gaz katmanı.",
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Glossary of astronomy",
+     "url": "https://en.wikipedia.org/wiki/Glossary_of_astronomy",
+     "alinti": "atmosphere: An envelope of gases surrounding an astronomical body such as a planet and held in place by its gravity."
+    }
+   ]
+  },
+  {
+   "terim": "Albedo",
+   "tanim": "Bir cismin üstüne düşen Güneş ışığının ne kadarını geri yansıttığının ölçüsü.",
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Glossary of astronomy",
+     "url": "https://en.wikipedia.org/wiki/Glossary_of_astronomy",
+     "alinti": "albedo: A measure of the proportion of the total solar radiation received by an astronomical body that is reflected"
+    }
+   ]
+  }
+ ],
+ "ayarlar": [
+  {
+   "terim": "Başucu",
+   "esanlam": [
+    "zenit"
+   ],
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Horizontal coordinate system",
+     "url": "https://en.wikipedia.org/wiki/Horizontal_coordinate_system",
+     "alinti": "The pole of the upper hemisphere is called the zenith"
+    }
+   ]
+  },
+  {
+   "terim": "Meteor",
+   "esanlam": [
+    "kayan yıldız"
+   ],
+   "kaynak": [
+    {
+     "ad": "NASA Science: Meteors and meteorites, facts",
+     "url": "https://science.nasa.gov/solar-system/meteors-meteorites/facts/",
+     "alinti": "This is also when we refer to them as \"shooting stars.\""
+    }
+   ]
+  },
+  {
+   "terim": "Hale",
+   "yalniz": [
+    "d7"
+   ],
+   "haric": [
+    "halen"
+   ]
+  },
+  {
+   "terim": "Deniz",
+   "yalniz": [
+    "d10"
+   ]
+  },
+  {
+   "terim": "Düğüm",
+   "yalniz": [
+    "d10"
+   ]
+  },
+  {
+   "terim": "Dönüm noktası",
+   "yalniz": [
+    "d15"
+   ]
+  },
+  {
+   "terim": "Görüş",
+   "yalniz": [
+    "d12"
+   ]
+  },
+  {
+   "terim": "Yükseklik",
+   "yalniz": [
+    "d1",
+    "d11"
+   ]
+  },
+  {
+   "terim": "Açıklık",
+   "yalniz": [
+    "d11",
+    "d12"
+   ]
+  },
+  {
+   "terim": "Sönükleştirme ve kızarma",
+   "yalniz": [
+    "d14"
+   ]
+  },
+  {
+   "terim": "UT",
+   "buyuk": true
+  },
+  {
+   "terim": "ZHR",
+   "buyuk": true
+  },
+  {
+   "terim": "SETI",
+   "buyuk": true
+  },
+  {
+   "terim": "CHNOPS",
+   "buyuk": true
+  }
+ ]
+}
