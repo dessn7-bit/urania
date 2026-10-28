@@ -1,9 +1,13 @@
 // Ders çizimleri, ders içi deney, ünite sınavları ve gözlem görevleri.
 const { test, expect } = require('@playwright/test');
+const { celestrak, disAgiKes } = require('./yardim');
 
 test.beforeEach(async ({ page }) => {
   page.hatalar = [];
   page.on('pageerror', e => page.hatalar.push(String(e)));
+  /* Gerçek ağa çıkılmaz (sınav testi Gökyüzü'ne de uğrar: CelesTrak, Open-Meteo): önce genel kesme, sonra fikstür */
+  await disAgiKes(page);
+  await celestrak(page);
 });
 test.afterEach(async ({ page }) => { expect(page.hatalar).toEqual([]); });
 

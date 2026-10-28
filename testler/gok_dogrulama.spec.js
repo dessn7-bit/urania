@@ -5,11 +5,13 @@
    https://aa.usno.navy.mil/api/moon/phases/date?date=2026-10-01&nump=20
    USNO dakikaya yuvarlar; tolerans 1 dk (evrelerde 1,5 dk). */
 const { test, expect } = require('@playwright/test');
-process.env.TZ = 'Europe/Istanbul';
 const G = require('../gok.js');
 
 const KADIKOY = G.gozlemci(40.99, 29.03, 0);
-const dk = (d) => d.getHours() * 60 + d.getMinutes() + d.getSeconds() / 60;
+/* USNO değerleri İstanbul saatiyle (tz=3; Türkiye 2016'dan beri yıl boyu UTC+3). process.env.TZ değiştirilmez
+   (aynı işçi sürecindeki başka dosyaları etkilerdi): saat ve gün açık +3 sa ofsetle okunur. */
+const ist = (d) => new Date(d.getTime() + 3 * 3600e3);
+const dk = (d) => { const t = ist(d); return t.getUTCHours() * 60 + t.getUTCMinutes() + t.getUTCSeconds() / 60; };
 const hm = (s) => { const [h, m] = s.split(':').map(Number); return h * 60 + m; };
 
 test('Güneş batışı ve sivil alacakaranlık USNO ile ±1 dk', () => {
@@ -45,8 +47,8 @@ test('Ay evreleri USNO tablosuyla ±1,5 dk (UT)', () => {
 
 test('Gece 02:00\'de bakınca "bu gece" dün akşam başlayan gecedir', () => {
   const g = G.geceAraligi(new Date('2026-10-28T02:00:00+03:00'), KADIKOY);
-  expect(g.batis.getDate()).toBe(27);
-  expect(g.dogus.getDate()).toBe(28);
+  expect(ist(g.batis).getUTCDate()).toBe(27);
+  expect(ist(g.dogus).getUTCDate()).toBe(28);
 });
 
 test('Hızlı ufuk dönüşümü Astronomy Engine\'in doğrudan yoluyla 0,6° içinde (kırılma farkı)', () => {

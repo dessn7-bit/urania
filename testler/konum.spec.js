@@ -40,8 +40,13 @@ test.describe('izin verilmiş', () => {
     await expect(page.locator('#gkKonum')).toContainText('Fenerbahçe Parkı');
     await expect(page.locator('#gkKonum')).toContainText('elle seçildi');
     await page.reload();
-    await page.waitForTimeout(500);
+    /* Olumlu hazır olma koşulu: sayfa çizildi (özet geldi). Sonra sayfadan bir konum isteği tamamlanana kadar
+       beklenir: uygulama GPS istediyse onun yanıtı da bu sürede gelmiş olur (Playwright konumu anında verir). */
+    await expect(page.locator('#gkOzet p').first()).toBeVisible();
+    await page.evaluate(() => new Promise(r => navigator.geolocation.getCurrentPosition(() => r(), () => r(), { maximumAge: 0 })));
     await expect(page.locator('#gkKonum')).toContainText('Fenerbahçe Parkı');
+    await expect(page.locator('#gkKonum')).toContainText('elle seçildi');
+    await expect(page.locator('#gkKonum')).not.toContainText('Kızılay');
     /* yeniden otomatiğe al */
     await page.locator('#gkKonumDegis').click();
     await page.locator('#gkKOto').check();

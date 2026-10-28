@@ -6,6 +6,7 @@ const { test, expect } = require('@playwright/test');
 const fs = require('fs');
 const path = require('path');
 const os = require('os');
+const { xssGozcu, xssDurumu } = require('./yardim');
 
 const SABIT_AN = new Date('2026-10-27T21:00:00+03:00');
 const KONUM = { ad: 'Kadıköy', enlem: 40.99, boylam: 29.03, yukseklik: 0, oto: false, saatDilimi: 'Europe/Istanbul' };
@@ -53,16 +54,29 @@ test('Prototip adlı rota ve deney adresi boş sayfa ya da hata bırakmaz', asyn
 
 test('Depodaki saat dilimi "constructor" uygulamayı kilitlemez; bozuk ayarlar varsayılana döner', async ({ page }) => {
   await page.route('**/api.open-meteo.com/**', r => r.abort());
-  await kur(page, { konum: JSON.stringify(Object.assign({}, KONUM, { saatDilimi: 'constructor' })), limitKadir: '"abc"', arKalibrasyon: '"x"', sesGunluk: '[null, 5]', yerAdlari: 'null', rehber_kepler: '{"length":"<img src=x onerror=window.__xss=1>"}' });
+  /* XSS yükleri ekrana GERÇEKTEN gelen yollara konur (yalnız window.__xss'e bakmak hiçbir şey sınamaz: CSP satır içi
+     onerror'ı zaten engeller):
+     - konum adı: Gökyüzü'nde konum satırında düz metin olarak görünmeli;
+     - rehber_kepler: dizi olarak okunur (diziOku); içindeki 0 "1. adım yapıldı" diye işlenir, yanındaki dize HTML'e girmemeli;
+     - rehber_karadelik: dizi olmayan nesne ({length: …}) diziOku'da [] olur; deney listesinde adım rozeti çıkmamalı. */
+  const YUK = '<img src=x onerror=window.__xss=1>';
+  await xssGozcu(page);
+  await kur(page, { konum: JSON.stringify(Object.assign({}, KONUM, { ad: 'Kadıköy ' + YUK, saatDilimi: 'constructor' })), limitKadir: '"abc"', arKalibrasyon: '"x"', sesGunluk: '[null, 5]', yerAdlari: 'null',
+    rehber_kepler: JSON.stringify([0, YUK]), rehber_karadelik: JSON.stringify({ length: YUK }) });
   await page.goto('/index.html#gok');
   await expect(page.locator('#gkOzet p').first()).toBeVisible();
   await expect(page.locator('#gkKadirDeger')).toContainText('4');
+  await expect(page.locator('#gkKonum')).toContainText('Kadıköy ' + YUK);   // kaçışlı, düz metin
   await page.goto('/index.html#deney');
   await expect(page.locator('.deney-liste').first()).toBeVisible();
+  await expect(page.locator('.deney-liste a[href="#deney/kepler"] .rozet')).toContainText('2/');   // dizi okundu (2 öğe)
+  await expect(page.locator('.deney-liste a[href="#deney/karadelik"] .rozet')).toHaveCount(0);   // nesne dizi sayılmadı
   await page.goto('/index.html#deney/kepler');
   await expect(page.locator('.rehber')).toBeVisible();
+  await expect(page.locator('.rehber-adim li.yapildi')).toHaveCount(1);
   await page.goto('/index.html#tani');
-  expect(await page.evaluate(() => window.__xss)).toBeUndefined();
+  await expect(page.locator('.bolum:not([hidden])').first()).toBeVisible();
+  expect(await xssDurumu(page)).toEqual({ xss: undefined, olayli: [], csp: [] });
   expect(page.hatalar).toEqual([]);
 });
 

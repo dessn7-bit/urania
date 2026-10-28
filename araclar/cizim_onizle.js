@@ -42,6 +42,7 @@ const hazirMi = () => new Promise(r => {
     for (const kirmizi of [false, true]) {
       const p = await b.newPage({ viewport: { width: 390, height: 900 }, deviceScaleFactor: 2 });
       const hatalar = []; p.on('pageerror', e => hatalar.push(String(e))); p.on('console', m => { if (m.type() === 'error') hatalar.push(m.text()); });
+      await p.route(/^https?:\/\/(?!127\.0\.0\.1|localhost)/, r => r.abort());   // önizleme dış servislere (CelesTrak vb.) gitmez
       await p.addInitScript(k => { localStorage.setItem('urania_kirmizi', k ? 'true' : 'false'); }, kirmizi);
       await p.goto(ADRES + '#ders');
       await p.waitForSelector('.ders-liste li');

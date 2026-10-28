@@ -354,7 +354,14 @@ test('(k) Dersten derse: kutu işaretliyse ders bitince sonrakine geçer ve kend
   /* işaret kaldırılınca sonda durur */
   await page.locator('#dsSurekli').uncheck();
   for (let i = 0; i < 600 && await durumu(page); i++) await page.evaluate(() => window.__sahteSes.bitir());
-  await page.waitForTimeout(600);
+  /* Olumlu koşul: d10'un okuması gerçekten SONA ERDİ (durdurulmadı); geçiş kararı (bitince) bu anda eşzamanlı
+     verilir. Sonra: adres d10'da kaldı, sonraki derse devam bayrağı yazılmadı ve yeni okuma başlamadı. */
+  expect(await durumu(page)).toBe(null);
+  expect((await olaylar(page)).slice(-1)[0]).toMatch(/^sona erdi/);
+  const sonSay = await say(page);
+  expect(await page.evaluate(() => [location.hash, sessionStorage.getItem('urania_sesDevam')])).toEqual(['#ders/d10', null]);
+  await expect(page.locator('article.ders h1')).toContainText('Ay');
+  expect(await say(page)).toBe(sonSay);
   await expect(page).toHaveURL(/#ders\/d10$/);
 });
 

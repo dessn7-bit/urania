@@ -81,8 +81,26 @@ test('Uydular: ISS ve Tiangong geçişleri birlikte; Starlink dizisi notuyla', a
   /* Skyfield (uydu.spec.js): Tiangong 28 Ekim 16:37 UT (19:37) doğar, tepe 80,7° */
   await expect(ul.locator('li', { hasText: 'Tiangong · 28 Ekim' }).first()).toContainText('en çok 81°');
   await expect(ul.locator('li', { hasText: 'ISS' }).first()).toBeVisible();
-  const dizi = ul.locator('li', { hasText: 'Starlink' });
-  if (await dizi.count()) await expect(dizi.first()).toContainText('art arda dizili');
+  /* Fikstürdeki tek dizi (2026-242, 27 uydu, 266 km) Fetih'ten 3 gün içinde görünür geçiş yapmıyor: geçişlerin
+     tepesi 10–19° ve hepsi gölgede ya da gündüz (uydu.js gecisler ile hesaplandı). Liste çizildikten sonra satır yok. */
+  await expect(ul.locator('li', { hasText: 'Starlink' })).toHaveCount(0);
+});
+
+test('Uydular: Starlink dizisi görünür olduğu yerde "art arda dizili" notuyla listelenir (Moskova)', async ({ page }) => {
+  /* Aynı fikstür ve saat; konum Moskova (55,76 K, 37,62 D; UTC+3). uydu.js gecisler: 2026-242 dizisi
+     28 Ekim 02:45:30–02:47:48 UT (05:45 yerel) en çok 44,8°; 29 ve 30 Ekim'de de görünür. */
+  await page.addInitScript(() => {
+    if (sessionStorage.getItem('mk_kuruldu')) return; sessionStorage.setItem('mk_kuruldu', '1');
+    localStorage.setItem('urania_konumOto', 'false');
+    localStorage.setItem('urania_konum', JSON.stringify({ ad: 'Moskova', enlem: 55.7558, boylam: 37.6173, yukseklik: 150, oto: false, saatDilimi: 'Europe/Moscow' }));
+  });
+  await page.route('**/api.open-meteo.com/**', r => r.fulfill({ json: hava(0) }));
+  await page.goto('/index.html#gok');
+  const dizi = page.locator('#gkIss li', { hasText: 'Starlink' });
+  await expect(dizi).toHaveCount(3, { timeout: 20000 });
+  await expect(dizi.first()).toContainText('28 Ekim');
+  await expect(dizi.first()).toContainText('en çok 45°');
+  await expect(dizi.first()).toContainText('27 uydu art arda dizili');
 });
 
 test('Uydu verisi alınamazsa anlaşılır mesaj; CelesTrak\'a 2 saat yeniden gidilmez', async ({ page }) => {
@@ -113,10 +131,17 @@ test('Depoya yazılamasa da CelesTrak\'a yarım saatte yeniden gidilmez (incelem
   await page.route('**/api.open-meteo.com/**', r => r.fulfill({ json: hava(0) }));
   await page.goto('/index.html#gok');
   await expect(page.locator('#gkIss li', { hasText: 'Tiangong' }).first()).toBeVisible({ timeout: 20000 });
+  /* Eski liste işaretlenir: yeniden çizilen liste işaretsiz gelir */
+  await page.evaluate(() => document.querySelectorAll('#gkIss li').forEach(li => { li.dataset.eski = '1'; }));
   await page.clock.runFor(30 * 60e3);
   await page.locator('#gkTarih').fill('2026-11-05');
   await page.locator('#gkTarih').dispatchEvent('change');
-  await page.waitForTimeout(500);
+  /* Sabit bekleme yerine olumlu koşul: 30 dk sonra uydu listesi yeniden hesaplanıp çizildi (10 dk'lık yenileme
+     uydu verisini yeniden ister; depo yazılamadığı için önbellek yoksa CelesTrak'a burada gidilirdi) ve yeni
+     tarih işlendi; istek sayısı ancak ondan sonra sınanır */
+  await expect(page.locator('#gkIss li:not([data-eski])', { hasText: /ISS|Tiangong/ }).first()).toBeVisible();
+  await expect(page.locator('#gkBuGece')).toBeVisible();                       // seçili gece moduna geçildi
+  await expect(page.locator('#gkOzet')).toContainText('Güneş 17:55\'te batıyor');   // 5 Kasım gecesi (27 Ekim: 18:06)
   expect(istek).toBe(2);
 });
 

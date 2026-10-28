@@ -51,6 +51,8 @@ test('Cihaz saati ileri gidip düzeltilince "gelecekte alınmış" önbellek yen
   }, gelecek);
   await page.goto('/index.html#gok');
   await expect.poll(() => istek).toBeGreaterThanOrEqual(2);
+  /* Olumsuz iddiadan önce liste gerçekten çizilmiş olsun ("Hesaplanıyor…" iken her olumsuz iddia geçer) */
+  await expect(page.locator('#gkIss li', { hasText: /ISS|Tiangong/ }).first()).toBeVisible({ timeout: 20000 });
   await expect(page.locator('#gkIss')).not.toContainText('alınamadı');
   const bugun = await page.evaluate(async () => { const D = await Urania.veri('dersler'); return Kartlar.bugunku(D, true).some(k => k.id === 'd1s0'); });
   expect(bugun).toBe(true);

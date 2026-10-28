@@ -2,7 +2,7 @@
 /* Bulut tahmini ve gözlem defteri testleri. Open-Meteo ağdan çağrılmaz: istek yakalanır,
    API'nin gerçek biçiminde (timeformat=unixtime, timezone=GMT) sahte yanıt döner. */
 const { test, expect } = require('@playwright/test');
-const { celestrak } = require('./yardim');
+const { celestrak, xssGozcu, xssDurumu } = require('./yardim');
 const path = require('path');
 const fs = require('fs');
 const os = require('os');
@@ -185,6 +185,9 @@ test.describe('İnceleme düzeltmeleri (defter)', () => {
   });
 
   test('Kötü niyetli yedek: betik çalışmaz, bozuk kayıt reddedilir', async ({ page }) => {
+    /* CSP satır içi onerror'ı zaten engeller; bu yüzden asıl sınama: DOM'a olay öznitelikli öğe girmedi ve CSP
+       hiçbir şeyi engellemek zorunda kalmadı (securitypolicyviolation sayısı 0) */
+    await xssGozcu(page);
     await page.goto('/index.html#defter');
     const dosya = path.join(os.tmpdir(), 'urania-xss.json');
     fs.writeFileSync(dosya, JSON.stringify({ kayitlar: [
@@ -195,9 +198,8 @@ test.describe('İnceleme düzeltmeleri (defter)', () => {
     await page.locator('details summary', { hasText: 'Yedekle' }).click();
     await page.locator('#dfYukle').setInputFiles(dosya);
     await expect(page.locator('#dfYedekDurum')).toHaveText('1 kayıt eklendi, 2 kayıt bozuk olduğu için atlandı.');
-    await page.waitForTimeout(300);
-    expect(await page.evaluate(() => window.__xss)).toBeUndefined();
     await expect(page.locator('#dfListe .ad').first()).toHaveText('<img src=x onerror="window.__xss=2">'); // düz metin olarak
+    expect(await xssDurumu(page)).toEqual({ xss: undefined, olayli: [], csp: [] });
   });
 
   test('Depolama doluysa kayıt "kaydedildi" gibi görünmez', async ({ page }) => {

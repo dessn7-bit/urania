@@ -23,6 +23,10 @@ async function yonVer(page, alpha, beta, gamma) {
 test.beforeEach(async ({ page }) => {
   page.hatalar = [];
   page.on('pageerror', e => page.hatalar.push(e.message));
+  /* Gerçek ağa çıkılmaz: önce her dış istek kesilir, sonra CelesTrak fikstürü eklenir (Playwright son eklenen
+     rotayı önce dener). AR sekmesi uydular için CelesTrak'a, "Kapat" sonrası Gökyüzü de Open-Meteo'ya gider. */
+  await page.route(/^https?:\/\/(?!127\.0\.0\.1|localhost)/, r => r.abort());
+  await celestrak(page);
   await page.clock.install({ time: SABIT_AN });
 });
 test.afterEach(async ({ page }) => { expect(page.hatalar).toEqual([]); });
@@ -310,13 +314,14 @@ test.describe('iOS izin akışı (A6, A11)', () => {
   test('A11: izin reddedilince düğme gizlenir, red mesajı korunur, sürükleme çalışır', async ({ page }) => {
     await ios(page, 'denied');
     await page.goto('/index.html#ar');
-    await page.waitForTimeout(300);
+    await expect(page.locator('#arPusula')).toBeVisible();
     await page.locator('#arPusula').click();
-    await page.waitForTimeout(200);
+    const RED = { mod: 'dokunma', dugme: false, mesaj: 'Yön algılayıcı izni verilmedi; parmağınla sürükleyerek gezebilirsin.' };
+    await expect.poll(() => arDurum(page)).toEqual(RED);
+    /* İlk 1,5 sn zamanlayıcısı (ve 1 sn'lik yenileme) mesajı ezmemeli: sahte saat zamanlayıcıların hepsini
+       kesin olarak çalıştıracak kadar ileri alınır (gerçek süre beklemeye bağlı değil) */
+    await page.clock.runFor(2500);
     let d = await arDurum(page);
-    expect(d).toEqual({ mod: 'dokunma', dugme: false, mesaj: 'Yön algılayıcı izni verilmedi; parmağınla sürükleyerek gezebilirsin.' });
-    await page.waitForTimeout(1500);   // ilk 1,5 sn zamanlayıcısı mesajı ezmemeli
-    d = await arDurum(page);
     expect(d.dugme).toBe(false);
     expect(d.mesaj).toBe('Yön algılayıcı izni verilmedi; parmağınla sürükleyerek gezebilirsin.');
     expect(await suruklemeCalisiyor(page)).toBe(true);
@@ -338,11 +343,14 @@ test.describe('iOS izin akışı (A6, A11)', () => {
   test('A6: izin verildikten sonra olay gelirse algılayıcı moduna geçer', async ({ page }) => {
     await ios(page, 'granted');
     await page.goto('/index.html#ar');
-    await page.waitForTimeout(300);
+    await expect(page.locator('#arPusula')).toBeVisible();
     await page.locator('#arPusula').click();
-    await page.waitForTimeout(200);
+    /* İzin sözü çözülene kadar (düğme gizlenir) bekle; sonra olay yolla */
+    await expect(page.locator('#arPusula')).toBeHidden();
     await iosOlay(page, 0, 90, 0, 0);
-    await page.waitForTimeout(2200);
+    await expect.poll(async () => (await arDurum(page)).mod).toBe('algilayici');
+    /* 1,5 sn'lik açılış ve 1,8 sn'lik "olay gelmiyor" zamanlayıcıları kesin dolsun: algılayıcı modu korunmalı */
+    await page.clock.runFor(2500);
     expect((await arDurum(page)).mod).toBe('algilayici');
     await expect(page.locator('#arMerkez .ar-yon')).toHaveText('6° K · yükseklik 0°');
   });
@@ -420,8 +428,12 @@ test('A13: ufkun altındaki hedef tam karşıdayken sesli tarif "ufkun altında"
 test('A14: sesler geç yüklenirse "Sesli" düğmesi sonradan görünür', async ({ page }) => {
   await sahteSes(page, { gec: true });
   await page.goto('/index.html#ar');
-  await page.waitForTimeout(2300);   // ses.js 1,5 sn bekler, ar.js 1,8 sn'de bakar: henüz Türkçe ses yok
+  /* Önce AR gerçekten açılsın (olumlu hazır olma koşulu), sonra ses.js'in 1,5 sn'lik ve ar.js'in 1,8 sn'lik
+     bakışları sahte saatle kesin çalıştırılsın: henüz Türkçe ses yok, düğme gizli kalmalı */
+  await expect.poll(() => page.evaluate(() => !!(window.UraniaAR && window.UraniaAR.st && window.UraniaAR.st.nesneler))).toBe(true);
+  await page.clock.runFor(2500);
   await expect(page.locator('#arSesli')).toBeHidden();
+  expect(await page.evaluate(() => window.Ses.sesDurumu())).toBe('yok-tr');
   await page.evaluate(() => window.__sesYukle());
   await expect(page.locator('#arSesli')).toBeVisible({ timeout: 2000 });
 });

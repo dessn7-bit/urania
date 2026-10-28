@@ -7,13 +7,14 @@
    Skyfield is_sunlit (DE421): 2026-10-28 02:20:00 gölgede, 02:21:00 ışıkta;
    2026-10-29 03:07:30 gölgede, 03:08:30 ışıkta. */
 const { test, expect } = require('@playwright/test');
-process.env.TZ = 'UTC';
-global.self = global; global.window = global;
-global.satellite = require('../lib/satellite.min.js');
-global.Astronomy = require('../lib/astronomy.browser.min.js');
-global.Gok = require('../gok.js');
-global.Urania = { oku: () => null, yaz: () => {} };
-require('../uydu.js');
+const fs = require('fs');
+const path = require('path');
+/* uydu.js tarayıcı betiği: Node'un ortak global'ine (aynı işçi süreci başka test dosyalarını da çalıştırır)
+   window/Urania/satellite yazmak yerine kendi "window" nesnesiyle bir işlev içinde çalıştırılır. Saat dilimine
+   bağlı değil (her şey UT ile); process.env.TZ değiştirilmez. */
+const pencere = { Gok: require('../gok.js'), Urania: { oku: () => null, yaz: () => {}, sil: () => {} } };
+new Function('window', 'self', 'satellite', fs.readFileSync(path.join(__dirname, '..', 'uydu.js'), 'utf8'))(pencere, pencere, require('../lib/satellite.min.js'));
+const Uydu = pencere.Uydu;
 
 const { ISTASYON, SON30 } = require('./yardim');
 /* CelesTrak OMM/JSON, 2026-10-27; ISS öğeleri aşağıdaki TLE ile aynı takım (EPOCH 26300.17675415):

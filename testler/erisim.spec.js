@@ -154,8 +154,10 @@ test('3: kırmızı modda deney kanvası bir kez kızarır: süzgeç yeşil/mavi
     await page.goto('/index.html#deney/' + d);
     const cv = page.locator('.sahne canvas').first();
     await expect(cv).toBeVisible();
-    await page.waitForTimeout(400);
-    const r = await kirmiziOlmayan(page, cv, 3);
+    /* Sabit bekleme yerine: kanvas gerçekten çizilene kadar (etiketler saf kırmızı 255'e ulaşır) yeniden ölç;
+       son ölçüm denetlenir. Boş/çizilmemiş kanvas maxR < 255 verir ve n = 0 ile yanlışlıkla geçmez. */
+    let r = null;
+    await expect.poll(async () => (r = await kirmiziOlmayan(page, cv, 3)).maxR, { message: d + ' kanvas çizildi mi' }).toBe(255);
     expect(r.n, d + ' kırmızı olmayan piksel').toBe(0);
     expect(r.maxR, d + ' en parlak piksel (etiketler)').toBe(255);
   }
