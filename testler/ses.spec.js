@@ -143,7 +143,7 @@ test('(b) Dinle: bloklar sırayla, tr-TR ve Türkçe ses, okunan blok vurgulu; s
   await expect(page.locator('.ders .so-okunan')).toHaveCount(0);
   await expect(cubuk(page).locator('[data-so="dinle"]')).toBeVisible();
   const hepsi = await konusmalar(page);
-  expect(hepsi.every(x => x.length <= 180)).toBe(true);
+  expect(hepsi.every(x => x.length <= 600)).toBe(true);   // okumada parça tavanı 600 (ağdan gelen seste her parça bekletir)
   const sorular = await page.locator('details.soru summary').allInnerTexts();
   expect(hepsi.join(' ')).not.toContain(sorular[0].slice(0, 40));   // sorular okunmaz
   expect(page.hatalar).toEqual([]);
@@ -183,7 +183,7 @@ test('(d) Bloğa dokunma: açık oturumda oradan sürer; boşta dokunmak ses ba�
   await p.nth(2).click();
   await expect.poll(() => say(page)).toBe(2);
   await expect(p.nth(2)).toHaveClass(/so-okunan/);
-  expect((await konusmalar(page))[1]).toBe(await page.evaluate(() => window.Ses.parcala(window.Okunus.okunus(document.querySelectorAll('.ders p.okunur')[2].textContent))[0]));
+  expect((await konusmalar(page))[1]).toBe(await page.evaluate(() => window.Ses.parcala(window.Okunus.okunus(document.querySelectorAll('.ders p.okunur')[2].textContent), window.Ses.UZUN_TAVAN)[0]));
 });
 
 test('(e) Hız 0,8–2,5: çalan parçaya uygulanır ve hatırlanır', async ({ page }) => {
@@ -517,4 +517,26 @@ test('Ses seçici tek Türkçe seste görünmez', async ({ page }) => {
   await dersAc(page);
   await expect(cubuk(page).locator('[data-so="dinle"]')).toBeVisible();
   expect(await cubuk(page).locator('.so-ses').count()).toBe(TR.filter(v => /^tr/i.test(v.lang)).length >= 2 ? 1 : 0);
+});
+
+test('Okumada parçalar 600 karaktere kadar (daha az bekleme); bekçi sessiz kesilme görünce kalan parçalar 180\'e bölünür', async ({ page }) => {
+  await sahteOrtam(page);
+  await dersAc(page);
+  await cubuk(page).locator('[data-so="dinle"]').click();
+  await expect.poll(() => say(page)).toBe(1);
+  for (let i = 0; i < 400; i++) {
+    const t = await page.evaluate(() => window.__sahteSes.aktif());
+    if (t && t.length > 180) break;
+    await page.evaluate(() => window.__sahteSes.bitir());
+  }
+  const uzun = await page.evaluate(() => window.__sahteSes.aktif());
+  expect(uzun.length).toBeGreaterThan(180);
+  expect(uzun.length).toBeLessThanOrEqual(600);
+  /* Chrome konuşmayı sessizce kesti: olay yok, motor susuyor */
+  await page.evaluate(() => window.__sahteSes.sustur());
+  await bekciZorla(page);
+  const sonraki = await page.evaluate(() => window.__sahteSes.aktif());
+  expect(sonraki.length).toBeLessThanOrEqual(180);
+  expect(uzun.startsWith(sonraki.slice(0, 40))).toBe(true);   // aynı yerden, kısa parçayla
+  expect((await olaylar(page)).some(o => o.startsWith('bekçi: uzun parçalar kısaya bölündü'))).toBe(true);
 });

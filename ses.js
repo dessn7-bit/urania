@@ -7,9 +7,9 @@
      Chrome yalnız cihazın varsayılan metin okuma motorunun seslerini görür. Türkçe ses
      yoksa düğme çıkmaz, nedeni yazılır (yabancı sesle Türkçe okutmak anlamsız).
    · Birim = ekrandaki blok (.okunur: başlık, paragraf, deftere notu). Blok da cümle
-     sınırından ≤180 karakterlik parçalara bölünür: Chrome ~15 sn'yi aşan tek konuşmayı
-     sessizce kesebiliyor; kısa parça kaybı küçük tutar. Android tek konuşmada 4000 karakteri
-     reddeder.
+     sınırından ≤600 karakterlik parçalara bölünür (Urania v31: ağdan gelen seste her parça
+     ayrı bekletir). Chrome ~15 sn'yi aşan tek konuşmayı sessizce kesebiliyor: bekçi bunu görünce
+     o oturumda kalan parçaları ≤180'e böler. Android tek konuşmada 4000 karakteri reddeder.
    · DURAKLAT = cancel + konumu hatırla (pause()/resume() değil: Android'de pause()
      konuşmayı bitirir). Devam aynı parçanın başından.
    · Her konuşmanın JETONU var: iptal edilmiş konuşmanın geç gelen onend/onerror'ı ilerletmez.
@@ -27,6 +27,11 @@
   const U = window.Urania;
   const HIZLAR = [0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.75, 2, 2.5];   // Kaan: 1,5 yetmiyor (28.10.2026)
   const PARCA_TAVAN = 180;
+  /* Ders/gece okumasında parça tavanı. Kaan'ın telefonunda motor ElevenReader (ses ağdan geliyor): her konuşmadan önce
+     0,7–1,7 sn bekliyor (okuma tanısı, 28.10.2026). 180'lik parçalarla derslerde 2660 konuşma = 2660 bekleme; 600'le 790.
+     Chrome bir konuşmayı sessizce keserse bekçi bunu görür: o parça ve sonrakiler o oturumda yine 180'e bölünür. */
+  const UZUN_TAVAN = 600;
+  const KISA_VARSAYILAN = PARCA_TAVAN;
   const GUNLUK_TAVAN = 200;
   const SES_BEKLE_MS = 1500;
 
@@ -39,7 +44,8 @@
      Noktadan sonra küçük harf ya da boşluksuz devam gelirse cümle bitmemiştir: sıra sayısı
      ("11. dersten"), kısaltma ("ör. balkon"), saat ve sayı ("03.21", "14.500"; binlik ayracı
      okunus.js zaten kaldırır); orada bölünmez. */
-  function parcala(metin) {
+  function parcala(metin, tavan) {
+    const PARCA_TAVAN = tavan || KISA_VARSAYILAN;
     const t = String(metin || '').replace(/\s+/g, ' ').trim();
     if (!t) return [];
     if (t.length <= PARCA_TAVAN) return [t];
@@ -222,7 +228,7 @@
     if (sesDurumu() !== 'var' || !baglam || !baglam.bloklar.length) return false;
     durdur('yeni okuma');
     gunluk = [];
-    ot = { birimler: baglam.bloklar.map(b => ({ el: b.el, parcalar: parcala(b.metin) })), i: Math.max(0, Math.min(baglam.bloklar.length - 1, parseInt(sira, 10) || 0)), j: 0, durum: 'oynuyor', sonOlay: Date.now() };
+    ot = { birimler: baglam.bloklar.map(b => ({ el: b.el, parcalar: parcala(b.metin, UZUN_TAVAN) })), i: Math.max(0, Math.min(baglam.bloklar.length - 1, parseInt(sira, 10) || 0)), j: 0, durum: 'oynuyor', sonOlay: Date.now() };
     kaydet('oturum', baglam.ad + ' · ' + ot.birimler.length + ' blok · hız ' + hizOku());
     /* Hangi ses okuyor: telefonun motoru değişince (ör. ElevenReader) Chrome'un gerçekten hangi sesi verdiği görülsün */
     const v = trSes(), trler = sesler.filter(x => x && /^tr([-_]|$)/i.test(String(x.lang || '')));
@@ -286,6 +292,15 @@
     if (s.speaking || s.pending) return;
     if (Date.now() - (ot.sonOlay || 0) < 3000) return;
     kaydet('bekçi: sessiz motor, yeniden', (ot.i + 1) + '.' + (ot.j + 1));
+    /* Uzun parça sessizce kesildiyse (Chrome ~15 sn sınırı olan cihazlar): bu oturumda kalan parçalar kısaya bölünür */
+    if (!ot.kisa && (ot.birimler[ot.i].parcalar[ot.j] || '').length > PARCA_TAVAN) {
+      ot.kisa = true;
+      for (let k = ot.i; k < ot.birimler.length; k++) {
+        const b = ot.birimler[k], bas = k === ot.i ? ot.j : 0;
+        b.parcalar = b.parcalar.slice(0, bas).concat(...b.parcalar.slice(bas).map(p => parcala(p, PARCA_TAVAN)));
+      }
+      kaydet('bekçi: uzun parçalar kısaya bölündü', (ot.i + 1) + '.' + (ot.j + 1));
+    }
     konus();
   }
 
@@ -479,7 +494,7 @@
   })();
 
   window.Ses = {
-    destek: !!motor(), parcala, HIZLAR, PARCA_TAVAN, sesDurumu, bagla, baslat, duraklat, devam, durdur, atla, bekci, soyle, sus,
+    destek: !!motor(), parcala, HIZLAR, PARCA_TAVAN, UZUN_TAVAN, sesDurumu, bagla, baslat, duraklat, devam, durdur, atla, bekci, soyle, sus,
     durum: () => ot ? { i: ot.i, j: ot.j, durum: ot.durum, blok: ot.birimler.length } : null,
     kilitVar: () => !!kilit, gunluk: () => gunluk.slice(), gunlukMetni,
     sesleriYenile: () => { sesleriOku(); seslerBilinir = true; ciz(); }
