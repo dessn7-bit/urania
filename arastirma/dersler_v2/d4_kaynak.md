@@ -181,3 +181,170 @@ Bağımsız doğrulayıcı, 2026-10-27. Açılan kaynaklar (WebFetch): NASA NSSD
 | BIRAKILDI (AÇIKLAMA): kalabalık meydan benzetmesi, "göz kırpması", nötrinoların çekirdeğin anlık hâlini taşıması | — | 10.000–170.000 yıl ile 2,3 s ve 8 dk 19 s karşılaştırmasından çıkar; fiziksel olarak doğru, sınırı derste söylenmiş. |
 | BIRAKILDI (ÇIKARIM): "kutup ışıkları bizim enlemlere inebilir" | — | Carrington'da Küba'dan görüldü (NASA); Küba İstanbul'dan (41° K) güneydedir. Küba'nın enlem değeri bu doğrulamada kaynakla açılmadı, bu yüzden sayı yazılmadı. |
 | SÜREÇ NOTU | — | Bu "Doğrulama (bağımsız)" bölümü dosyaya Bash ile eklendi (görev Edit istiyordu); içerik aynıdır, sonraki düzeltme Edit ile yapıldı. |
+
+## v3 genişletme (2026-10-28) — yeni iddialar
+
+Yöntem: WebSearch 15 arama (d4 payının tamamı). WebFetch yalnız proje dosyalarındaki ya da bu aramalardan gelen URL'lere. "(WebFetch)" yazan alıntılar sayfanın WebFetch ile alınan metninden. NIST "Value?bg" sayfası izin isteği yanıtlanmadığı için açılamadı; G değeri gerekmedi (kütle hesabı d3'e gönderildi).
+
+### Temel sayılar (eklenen paragraflar)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Ortalama yoğunluk 1408 kg/m³; Dünya 5514 kg/m³; oran 0,255 | https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html | "Mean density (kg/m^3) \| 1408. \| 5514. \| 0.255" (WebFetch) |
+| Suyun yaklaşık 1,4 katı | — | HESAP: 1408 / 1000 = 1,41 |
+| Merkez yoğunluk > suyun 150 katı, kütle merkeze yığılmış | https://en.wikipedia.org/wiki/Sun | "density of up to 150 g/cm3" (mevcut satır). "Kütle merkeze yığılmış" ÇIKARIM: merkez 162 g/cm³ ile ortalama 1,4 g/cm³ karşılaştırması; NASA I/MR² = 0,070 de bunu destekler |
+| Yüzey çekimi 274 m/s², 28 kat; kurtulma hızı 617,6 km/s (Dünya 11,19) | https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html | "Surface gravity (eq.) (m/s^2) \| 274.0 \| 9.78 \| 28.0" ; "Escape velocity (km/s) \| 617.6 \| 11.19 \| 55.2" (WebFetch) |
+| Kütle Dünya'nın yörüngesinden (Kepler 3) | arastirma/dersler_v2/d3_kaynak.md | d3 hesap satırı: "Güneş kütlesi: 4π² × (1,49598e11)³ / (6,6743e-11 × (3,15581e7)²) = ... 1,988e30 kg"; NASA GM = 132.712 × 10⁶ km³/s² |
+| Atom sayısıyla H ~%91, He ~%8,9 | https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html | "Photosphere composition: Major elements: H - 90.965%, He - 8.889%" (WebFetch). Tablonun atom sayısına göre olduğu ÇIKARIM: kütlece %74,9/%23,8 ile ancak sayı oranı olarak uyuşur (90,965 / (90,965 + 4 × 8,889) = 0,72) |
+| He-4 kütlesi 4 protonunkinden %0,7 az | https://en.wikipedia.org/wiki/Sun | "releases around 0.7% of the fused mass as energy" (mevcut satır) |
+
+### Çekirdek
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Termostat: hızlanınca ısınır, genleşir, yoğunluk düşer; yavaşlayınca tersi | https://en.wikipedia.org/wiki/Sun | "The fusion rate in the core is in a stable equilibrium: a slightly higher rate of fusion would cause the core to heat up more and expand slightly against the weight of the outer layers, reducing the density and hence the fusion rate and correcting the perturbation" ; "a slightly lower rate would cause the core to cool and shrink slightly, increasing the density and increasing the fusion rate" (WebFetch) |
+| 276,5 W/m³; Kruszelnicki kompost yığını | https://en.wikipedia.org/wiki/Sun | "approximately 276.5 watts per cubic metre at the centre of the core, which, according to Karl Kruszelnicki, is about the same as the power density inside a compost pile" (WebFetch) |
+| Ortalama enerji üretimi 0,1925 × 10⁻³ W/kg | https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html | "Mean energy production (10^-3 J/kg s) \| 0.1925" (WebFetch) |
+| Örnek | — | HESAP: 3,828e26 / 1,988e30 = 1,926e-4 W/kg ; 100 / 1,925e-4 = 519.480 kg ≈ 520 ton |
+
+### Enerji kaynağı
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Coulomb engeli; o dönemde sıcaklık yetersiz sanıldı; kuantum tünellemesi daha düşük sıcaklıkta füzyona izin verir | https://en.wikipedia.org/wiki/Proton%E2%80%93proton_chain | "At the time, the temperature of the Sun was considered to be too low to overcome the Coulomb barrier." ; "tunneling of the wavefunctions of the protons through the repulsive barrier allows for fusion at a lower temperature than the classical prediction" (WebFetch) |
+| p-p ≤ 1 M☉ baskın; CNO > ~1,3 M☉ (model); p-p I 10–18 MK | https://en.wikipedia.org/wiki/Proton%E2%80%93proton_chain | "It dominates in stars with masses less than or equal to that of the Sun" ; CNO "suggested by theoretical models to dominate in stars with masses greater than about 1.3" ; "The p–p I branch is dominant at temperatures of 10 to 18 MK." (WebFetch) |
+| C, N, O katalizör; CNO %1 | https://arxiv.org/pdf/2105.09211 | "the "metals" Carbon, Nitrogen and Oxygen are the elements who catalyze the process" ; "the CNO cycle accounts for the remaining 1% in the solar luminosity balance" (WebFetch) |
+| Benzetme (tepenin içinden geçmek) ve sınırı | — | AÇIKLAMA |
+
+### Işınım ve konveksiyon
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Granül ~1100 km; ~10 dk (8–15); yükselme ~2 km/s, 7 km/s'ye kadar; ~4 milyon granül | https://sws.bom.gov.au/Category/Educational/The%20Sun%20and%20Solar%20Activity/General%20Info/Photosphere.pdf | "The bright cells or granules are on average about 1100 km across" ; "Their average lifetime is around 10 minutes, with a range from about 8 to 15 minutes." ; "The vertical convection velocity averages about 2 km/sec, although it can reach 7 km/sec." ; "There are approximately 4 million granules that cover the solar surface at any one time." (WebFetch; belge © IPS Radio and Space Services) |
+| (ikinci kaynak) granül boyu | https://en.wikipedia.org/wiki/Supergranulation | "granulation (with typical diameters of 150–2500 km)" (WebFetch) |
+| Süpergranül ~30.000 km, ~24 saat, 300–500 m/s | https://en.wikipedia.org/wiki/Supergranulation | "a typical size of about 30000 km for supergranules" ; "with a lifetime of about 24 hours" ; "flow speed about 300 to 500 m/s" (WebFetch) |
+| Granül ~1,5″; disk 1919″ | https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html | "Apparent diameter at 1 A.U. (arcsec): 1919." ; HESAP: 1100 / 1,496e8 × 206265 = 1,52″ ; 1,52 / 1919 = 7,9e-4 |
+
+### YENİ BÖLÜM — Güneş'in içini nasıl biliyoruz
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Dünya'da cm² başına saniyede onlarca milyar nötrino | https://en.wikipedia.org/wiki/Solar_neutrino_problem | flux "several tens of billions per square centimetre per second" (WebFetch) |
+| Homestake: 1478 m; 380 m³ perkloretilen; Cl-37 + elektron nötrinosu → Ar-37; birkaç haftada birkaç düzine atom; 1970–1994 | https://en.wikipedia.org/wiki/Homestake_experiment | "1,478 meters (4,850 feet) underground" ; "380 cubic meter (100,000 gallon) tank of perchloroethylene" ; "Upon interaction with an electron neutrino, a 37Cl atom transforms into a radioactive isotope of 37 Ar" ; "the collected few tens of atoms of 37Ar" every few weeks ; "The experiment operated continuously from 1970 until 1994." (WebFetch) |
+| Davis ve Bahcall; ölçüm öngörünün ~1/3'ü | https://en.wikipedia.org/wiki/Homestake_experiment ; https://en.wikipedia.org/wiki/Solar_neutrino_problem | "Davis' figures were consistently very close to one-third of Bahcall's calculations." ; Davis and Bahcall's experiment first to detect a deficit (WebFetch) |
+| Üç tür; Güneş yalnız elektron nötrinosu üretir; salınım | https://en.wikipedia.org/wiki/Solar_neutrino_problem | "electron neutrinos, muon neutrinos, and tau neutrinos" ; "the Sun produces only electron neutrinos" ; Super-Kamiokande 1998 "strong evidence for neutrino oscillation" (WebFetch) |
+| SNO ağır su; 2001 ~%34 elektron türü; 8B toplamı modelle uyumlu | https://en.wikipedia.org/wiki/Solar_neutrino_problem | "heavy water as the detection medium" ; electron-neutrino fraction "to be about 34%" ; "The total number of detected 8B neutrinos also agrees with the then-rough predictions from the solar model." (WebFetch) |
+| Nobel 2002 Davis, Koshiba (ödülün bir kısmı); 2015 Kajita, McDonald (salınım kanıtı) | https://en.wikipedia.org/wiki/Solar_neutrino_problem | 2002: Davis and Koshiba shared part of the prize ; 2015: Kajita and McDonald, evidence "for neutrino oscillation" (WebFetch) |
+| Borexino, Gran Sasso (İtalya); 25 Kasım 2020 Nature; ilk deneysel kanıt; büyük kütleli yıldızlarda CNO baskın | https://apc.u-paris.fr/en/borexino-achieves-first-experimental-test-how-massive-stars-shine ; https://arxiv.org/pdf/2105.09211 | "today, November 25th, 2020, in Nature" ; CNO "is predominant in the most massive stars than the Sun" ; "the first experimental evidence of the existence of this additional energy generation mechanism" ; "located at the Laboratori Nazionali del Gran Sasso (Italy)" (WebFetch) |
+| Beş dakikalık salınımlar; tayf çizgisi kaymaları; hapsolmuş ses dalgaları, üstte yansıma, derinde kırılma | https://arxiv.org/pdf/astro-ph/0703711 | "The Sun exhibits so-called five-minute oscillations that are best seen in spectral line shifts." ; "they are just sound waves that are trapped in a cavity formed by reflection at the top and refraction in deeper layers" (WebFetch; Brandenburg) |
+| Işınım bölgesi neredeyse katı döner | https://arxiv.org/pdf/astro-ph/0703711 | "nearly rigid rotation in the radiative interior" (WebFetch) |
+| Konveksiyon tabanı 0,713 ± 0,001 R (Basu & Antia 1997; ilk 0,713 ± 0,003 CDGT 1991) | https://arxiv.org/pdf/astro-ph/0403604 | R_CZ = (0.713 ± 0.001) R☉ ; "has been measured by helioseismological techniques to high accuracy" (WebFetch) |
+| 2004: düşük ağır element bolluğuyla model 0,726 → ölçümle uyuşmaz | https://arxiv.org/pdf/astro-ph/0403604 | with Z/X = 0.0176 "R_CZ = 0.726 R☉", "very different from the measured depth of the CZ" (WebFetch) |
+| Çelişkinin bugünkü durumu | — | BULAMADIM: güncel çözüm durumu bu oturumda kaynakla açılmadı; derste "kaynaklı olarak söyleyemiyoruz" dendi |
+| Çan benzetmesi | — | AÇIKLAMA |
+| Örnek: her He-4 başına 2 nötrino | https://en.wikipedia.org/wiki/Proton%E2%80%93proton_chain | ÇIKARIM: zincir adımları (p + p → ²H + e⁺ + ν; ²H + p → ³He; ³He + ³He → ⁴He + 2p) — bir ⁴He için iki ³He, dolayısıyla iki p + p tepkimesi ve iki ν |
+| e = 1,602176634 × 10⁻¹⁹ C (tam) | https://en.wikipedia.org/wiki/List_of_physical_constants | "1.602176634×10^{−19} C", relative uncertainty 0 (WebFetch); 1 eV = e × 1 V |
+| Örnek hesap | — | HESAP: 26,73e6 × 1,602e-19 = 4,282e-12 J ; 3,828e26 / 4,282e-12 = 8,94e37 ; × 2 = 1,79e38 ; / 2,812e27 cm² = 6,36e10 |
+
+### Atmosfer
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Kenar kararması; üst fotosfer daha soğuk | https://en.wikipedia.org/wiki/Sun | "Because the upper part of the photosphere is cooler than the lower part, an image of the Sun appears brighter in the centre than on the edge or limb of the solar disk, in a phenomenon known as limb darkening." (WebFetch) |
+| Dik/eğik bakış açıklaması; "gaz küresi olduğunu sezdirir" | — | AÇIKLAMA/ÇIKARIM: kaynaktaki sıcaklık farkının geometrik yorumu |
+| Koronal deliklerden yavaş değişen hızlı rüzgâr akımları | https://en.wikipedia.org/wiki/Sun | "Slowly changing high-speed streams of solar wind are emitted from coronal holes at the photospheric surface." (WebFetch) |
+| Manyetik alan: kutup 1–2 G, çıkıntılar 10–100 G, leke 3000 G | https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html | "Polar field: 1 - 2 Gauss" ; "Prominences: 10 - 100 Gauss" ; "Sunspots: 3000 Gauss" (WebFetch) |
+
+### 11 yıllık döngü
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Wolf formülü R = k(10Ng + Ns); k kişisel katsayı; Wolf k = 1; sistematik sayım 1849 | https://arxiv.org/pdf/1407.3231 | "R = k (10 × Ng + Ns)" ; k "the personal coefficient of the observer" ; Wolf set his own k to 1 ; systematic census began in 1849 (WebFetch; Clette, Svalgaard, Vaquero, Cliver) |
+| ~400 yıl; diziyi yeniden ele alma | https://arxiv.org/pdf/1407.3231 | başlık: "Revisiting the Sunspot Number: A 400-year perspective on the solar cycle" |
+
+### YENİ BÖLÜM — Güneş rüzgârı ve Parker Güneş Sondası
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Parker 1958, ApJ, iki hakem ret önerdi, hemen kabul görmedi | https://en.wikipedia.org/wiki/Solar_wind | 1958 paper "Dynamics of the Interplanetary Gas and Magnetic Fields" published in The Astrophysical Journal despite two reviewers recommending rejection ; "Parker's theoretical modeling was not immediately accepted by the astronomical community." (WebFetch) |
+| Luna 1 Ocak 1959; Mariner 2 üç yıl sonra iki bileşen | https://en.wikipedia.org/wiki/Solar_wind | Luna 1 first directly observed the solar wind in January 1959 ; three years later Mariner 2 showed a low- and a high-speed component (WebFetch) |
+| Yavaş 300–500 km/s, hızlı ~750 km/s; hızlı koronal deliklerden, yavaş ekvator kuşağı | https://en.wikipedia.org/wiki/Solar_wind | "the slow solar wind is observed to have a velocity of 300–500 km/s" ; "the fast solar wind has a typical velocity of 750 km/s" ; slow wind from "a region around the Sun's equatorial belt" (WebFetch) |
+| Elektron, proton, alfa; 1 AB'de 3–10 parçacık/cm³ | https://en.wikipedia.org/wiki/Solar_wind | "mostly consists of electrons, protons and alpha particles" ; "a density ranging between 3 and 10 particles per cubic centimeter" (WebFetch) |
+| Kütle kaybı 1,3–1,9 milyon ton/s; yılda (2–3) × 10⁻¹⁴ M☉ | https://en.wikipedia.org/wiki/Solar_wind | "about 1.3–1.9 million tonnes per second" ; "about (2–3)×10−14 solar masses" (WebFetch) |
+| Parker sarmalı | https://en.wikipedia.org/wiki/Sun | "into an Archimedean spiral structure called the Parker spiral" (WebFetch). Bahçe hortumu benzetmesi AÇIKLAMA |
+| Kutup ışıklarına yol açan parçacıklar | https://en.wikipedia.org/wiki/Solar_wind | CME sonrası manyetik yeniden bağlanma "launches protons and electrons downward toward Earth's atmosphere", aurora (WebFetch) |
+| Parker Solar Probe: 24 Aralık; 3,8 milyon mil; ~430.000 mil/sa; koronal ısınma ve rüzgârın kökeni | https://science.nasa.gov/blogs/parker-solar-probe/2024/12/27/nasas-parker-solar-probe-reports-successful-closest-approach-to-sun | "Dec. 24" ; "just 3.8 million miles from the solar surface" ; "about 430,000 miles per hour" ; "how material in this region gets heated to millions of degrees" ; "trace the origin of the solar wind" (WebFetch) |
+| Dönüşümler | — | HESAP: 3,8e6 × 1,609 = 6,11e6 km ; 430.000 × 1,609 = 691.900 km/sa ; 149,6 / 6,11 = 24,5 |
+| Örnek | — | HESAP: 1,496e8 / 400 = 374.000 s = 4,33 gün ; / 750 = 199.467 s = 2,31 gün ; 1,3 / 5,56 = 0,234 ; 1,9 / 6,16 = 0,308 ; 6,2e9 × 3,156e7 × 4,6e9 = 9,0e26 kg ; / 1,988e30 = 4,5e-4 |
+
+### YENİ BÖLÜM — Patlama sınıfları ve uzay havası ölçekleri
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Logaritmik A, B, C, M, X; her biri 10 kat; GOES XRS 0,1–0,8 nm; dakikalardan saatlere | https://webarchive.library.unt.edu/web/20170119110903/http://www.swpc.noaa.gov/phenomena/solar-flares-radio-blackouts | "classified on a logarithmic scale" ; "the next (10 times) larger called "B" flares" ; "NOAA/GOES XRS instrument's 0.1 -- 0.8 nm spectral band" ; "lasting from minutes to hours" (WebFetch; NOAA SWPC sayfasının arşiv kopyası) |
+| M1 = 10⁻⁵, X1 = 10⁻⁴, X20 = 2 × 10⁻³ W/m²; R1 = M1, R3 = X1, R5 = X20 | aynı | tablo: M1 0.00001, M5 0.00005, X1 0.0001, X10 0.001, X20 0.002 ; R-1 Minor (M1), R-3 Strong (X1), R-5 Extreme (X20) (WebFetch) |
+| X ışınları ve aşırı morötesi atmosferi iyonlaştırır | aynı | X-rays and extreme ultraviolet light ionize the atmosphere (WebFetch özeti) |
+| G1 = Kp 5, G3 = Kp 7, G5 = Kp 9; döngüde 1700 / 200 / 4; S ölçeği | https://swpc-drupal.woc.noaa.gov/noaa-scales-explanation | G5 "Kp = 9" "4 per cycle (4 days per cycle)" ; G3 "Kp = 7" "200 per cycle" ; G1 "Kp = 5" "1700 per cycle" ; S1–S5 Solar radiation storms (WebFetch) |
+| Mayıs 2024: 10 Mayıs başladı, 11 Mayıs tepe, G5, Kp 9, 2003 Cadılar Bayramı'ndan beri en şiddetli, AR 13664 | https://en.wikipedia.org/wiki/May_2024_solar_storms | "G5 "Extreme" geomagnetic storm" ; "the most intense storm since the 2003 Halloween solar storms" ; highest Kp 9 ; "assigned the NOAA region number 13664" (WebFetch) |
+| X9.0, 3 Ekim 2024 | https://science.nasa.gov/science-research/heliophysics/nasa-noaa-sun-reaches-maximum-phase-in-11-year-solar-cycle/ | mevcut satır (Bölüm 8) |
+| Örnek | — | HESAP: C1 = M1 / 10 = 1e-6 ; X9 = 9e-4 ; oran 900 ; C→X 100 kat |
+
+### YENİ BÖLÜM — Kutup ışıkları
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Rüzgâr manyetosferle etkileşir, enerji birikir; manyetosfer korur | https://science.nasa.gov/sun/auroras | "it can interact with Earth's magnetic shield, often depositing and accumulating energy there" ; the magnetosphere "protects us from harmful charged particles in the space environment" (WebFetch) |
+| Yeniden bağlanma protonları ve elektronları atmosfere fırlatır | https://en.wikipedia.org/wiki/Solar_wind | magnetic reconnection in the magnetotail "launches protons and electrons downward toward Earth's atmosphere" (WebFetch) |
+| Parçacıkların atom ve moleküllere çarpması ışık yapar | https://science.nasa.gov/sun/auroras | "When energetic particles from space collide with atoms and molecules in the atmosphere" (WebFetch) |
+| Oksijen yeşil 100–200 km, kırmızı > 200 km; azot mavi 100–200 km; < 100 km pembe-mor alt kenar | https://science.nasa.gov/sun/auroras | "Green occurs roughly between 60 to 120 miles (100-200 km) altitude, and red occurs above 120 miles (200 km)." ; "Excited nitrogen gas from about 60 to 120 miles (100-200 km) glows blue." ; "below about 60 miles (100 km), it gives the lower edge of the aurora a reddish-purple to pink glow" (WebFetch) |
+| Kutup daireleri çevresinde sık; uzakta büyük gösteriler nadir | https://science.nasa.gov/sun/auroras | "Auroras that stay near the Arctic and Antarctic circles are much more frequent." ; displays far from the poles "relatively rare" (WebFetch) |
+| Onawa, Iowa 42° K coğrafi, 51° manyetik, başucunda | https://en.wikipedia.org/wiki/May_2024_solar_storms | Onawa, Iowa (42°N geographic latitude, 51°N magnetic latitude), aurora seen at zenith (WebFetch) |
+| G5: tipik olarak 40° manyetik enlem | https://swpc-drupal.woc.noaa.gov/noaa-scales-explanation | "aurora has been seen as low as Florida and southern Texas (typically 40° geomagnetic lat.)" (WebFetch) |
+| İstanbul'un manyetik enlemi | — | BULAMADIM: derste sayı verilmedi |
+| 5–6 Kasım 2023; Marmara ve Karadeniz; Kırklareli Kıyıköy, İğneada balıkçıları; fotoğraf | https://hurriyetdailynews.com/northern-lights-create-a-dazzling-display-across-turkiyes-skies-187660 | lights appeared "late on Nov. 5 and early Nov. 6" over "multiple cities" in the Marmara and Black Sea regions; a fisherman photographed them near Kıyıköy and Kastro, friends fishing off İğneada also saw them ; Selçuk Topal: "Not all of the images on social media may be authentic." (WebFetch) |
+| TUA açıklaması; 2 Kasım KKA, G3 uyarısı | https://www.cnnturk.com/turkiye/gokyuzunde-gorsel-solen-turkiye-uzay-ajansindan-aciklama-geldi | "Güneş'te meydana gelen jeomanyetik fırtınalar sebebiyle Avrupa ve Türkiye'nin birçok bölgesinde Auroralar gözlemlendi." ; 2 Kasım koronal kütle atımı nedeniyle G3 (güçlü) uyarısı (WebFetch) |
+| Kamera algılayıcıları gözle görülmeyeni kaydeder | https://science.nasa.gov/sun/auroras | "Digital camera sensors are incredibly sensitive and can even allow you to record auroras you can't see with the naked eye." (WebFetch) |
+| Örnek: Dünya yarıçapı 6371 km | https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html | Earth "Volumetric mean radius (km) 6371." |
+| Örnek hesap | — | HESAP: √(2 × 6371 × 200) = 1596 km ; 2π × 6371 / 360 = 111,2 km ; 1596 / 111,2 = 14,4° ; kırılma ihmal (AÇIKLAMA) |
+
+### Güvenli bakış (eklenen paragraf)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Kutu: alüminyum folyodaki iğne deliği, içteki kâğıt, başka delikten bakış; Güneş arkada; delikten bakma | https://science.nasa.gov/eclipses/safety/ | "sunlight will stream through a pinhole punched into aluminum foil" ; "Look into the box through another hole cut into the box to see the projected image." ; "With the Sun at your back" ; "Do NOT look at the Sun through the pinhole!" (WebFetch) |
+| Süzgeç delikleri hilal düşürür | https://science.nasa.gov/eclipses/safety/ | "The circular holes of a colander project crescent shapes onto the ground during the partial phases of a solar eclipse." (WebFetch) |
+
+### YENİ BÖLÜM — Güneş'i İstanbul'dan izlemek
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Filtre önden; büyük lekeler gözlükle büyütmeden | https://science.nasa.gov/eclipses/safety/ ; https://science.nasa.gov/sun/sunspots/ | mevcut satırlar (Bölüm 6 ve 9) |
+| Maksimum evresi bir yıl kadar, sonra düşüş | https://science.nasa.gov/science-research/heliophysics/nasa-noaa-sun-reaches-maximum-phase-in-11-year-solar-cycle/ | "anticipate that the maximum phase will last another year or so before the Sun enters the declining phase" (mevcut satır). "Önümüzdeki yıllar leke sayısının azaldığı yıllar" ÇIKARIM |
+| Dönme formülü 14,37 − 2,33 sin²L − 1,56 sin⁴L derece/gün | https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html | "Actual rotation varies with latitude L as (14.37 - 2.33 sin^2 L - 1.56 sin^4 L) deg/day." ; "Sidereal rotation period (hrs) 609.12" ("Adopted period at 16 deg. latitude") (WebFetch) |
+| Görünen çap 1919 / 1952 / 1887″; uzaklık 147,1–152,1 milyon km | https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html | "Apparent diameter at 1 A.U. (arcsec): 1919." ; "maximum 1952" ; "minimum 1887" ; "Distance minimum (10^6 km): 147.1" ; "maximum 152.1" (WebFetch) |
+| Günberi Ocak'ta | https://spaceplace.nasa.gov/seasons/en | d1_kaynak.md satırı: "perihelion (when we are closest) occurs in January" |
+| Hesaplar | — | HESAP: 1919″ / 3600 = 0,533° ; 1952 / 1887 = 1,034 ; (152,1 / 147,1)² = 1,069 ; kutup 14,37 − 2,33 − 1,56 = 10,48 °/gün → 34,4 gün |
+| 2 Ağustos 2027 tam tutulma; yol İspanya, Cebelitarık, Fas, Cezayir, Tunus, Libya, Mısır, Suudi Arabistan, Yemen, Somali; en uzun 6 dk 22 s Mısır | https://en.wikipedia.org/wiki/Solar_eclipse_of_August_2,_2027 | "A total solar eclipse" ; path crosses Spain, Gibraltar, Morocco, Algeria, Tunisia, Libya, Egypt, Saudi Arabia, Yemen ; maximum "will last 6 minutes and 22 seconds" in Egypt (WebFetch) |
+| Türkiye'den parçalı | https://medyascope.tv/2026/08/12/gunes-tutulmasi-ne-zaman-olacak-turkiyeden-izlenebilecek-mi/ | "Türkiye'den izlenebilecek bir sonraki güneş tutulması 2 Ağustos 2027'de gerçekleşecek." ; "Türkiye'de bu tutulma parçalı olarak gözlemlenebilecek." (WebFetch) |
+| İstanbul %59; 11.27 / 12.39 / 13.50 (GMT+3) | https://orbitalradar.com/eclipse/2027-august-2/istanbul | "59% partial eclipse" ; C1 11:27 GMT+3 ; maximum 12:39 ; C4 13:50 ; Sun altitude 66° (WebFetch). TEK KAYNAK: ikinci kaynakla doğrulanamadı; derste bunu açıkça söylendi |
+| Örnek hesap | — | HESAP: 10 × 3 + 8 = 38 ; 10 + 1 = 11 ; 14,37 − 0,5825 − 0,0975 = 13,69 → 26,30 gün ; 360 / 14,37 = 25,05 ; 14,37 − 1,7475 − 0,8775 = 11,745 → 30,65 gün |
+
+### YENİ BÖLÜM — Güneş'in dünü ve yarını
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Her 100 milyon yılda ~%1; 0,677 → 1,0 (%48); 5620 K → 5772 K | https://en.wikipedia.org/wiki/Sun | "At present, it is increasing in brightness by about 1% every 100 million years." ; "resulting in a 48% increase in luminosity from 0.677 solar luminosities to its present-day 1.0 solar luminosity" ; "the surface has increased in temperature from 5,620 K (9,660 °F) to 5,772 K" (WebFetch) |
+| Sıvı su en az 1 milyar yıl | https://en.wikipedia.org/wiki/Sun | "It will take at least 1 billion years from now to deplete liquid water from the Earth from such increase." (WebFetch) |
+| Kırmızı dev ~5 milyar yıl (giriş: 4–7 milyar); anakolda toplam 10–11 milyar yıl | https://en.wikipedia.org/wiki/Sun | "when it runs out of hydrogen in the core in approximately 5 billion years" ; "About four to seven billion years from now" ; "The Sun will spend a total of approximately 10 to 11 billion years as a main-sequence star" (WebFetch) |
+| Örnek | — | HESAP: 1,01¹⁰ = 1,1046 ; 1361 × 1,1046 = 1503 W/m² ; fark 142 W/m² ; 142 / 1,4 = 101. Sabit hız varsayımı (AÇIKLAMA) |
+
+### Sorular (yeni)
+
+| Soru | Dayanak |
+|---|---|
+| Homestake üçte bir | Solar neutrino problem / Homestake satırları |
+| 276,5 W/m³ | Wikipedia Sun satırı; 0,19 mW/kg HESAP |
+| X2 / M5 = 4 | HESAP: 2e-4 / 5e-5 |
+| 1,5 milyon ton/s × yıl | HESAP: 1,5e6 × 3,156e7 = 4,73e13 ton ; / 1,988e27 ton = 2,4e-14 |
+| İstanbul 41° K ve G5 | Onawa ve NOAA G5 satırları; TUA/Hürriyet satırları |
+| Helyosismoloji | Brandenburg ve Bahcall satırları |

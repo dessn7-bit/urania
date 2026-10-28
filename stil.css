@@ -710,3 +710,53 @@ dialog.bulucu { width: min(560px, calc(100vw - 16px)); max-height: calc(100dvh -
 .bulucu-uyari { color: var(--uyari); }
 .bulucu-tarif { margin: 8px 0 0; font: 400 16px/1.5 var(--serif); }
 .bulucu-not { margin: 10px 0 0; font-size: 13px; color: var(--soluk); }
+
+/* ---- Deney açıklamaları ---- */
+/* "Bu deney ne?" kanvasın üstünde; "Ekranda ne var?" ve "Gerçek dünyada" kanvasın hemen altında katlanır
+   (simulasyon.js aciklamaYerlestir): telefonda açınca kanvas yukarıda görünür kalır. Bütün renkler tema
+   değişkenlerinden; kanvas renk örnekleri kırmızı modda kanvasla aynı süzgeçten geçer (yalnız kırmızı). */
+.dn-ne { margin: 8px 0 14px; }
+.dn-ne p { font: 400 17px/1.55 var(--serif); margin: 2px 0 0; max-width: 68ch; }
+h2.dn-bas { font: 600 14px/1.4 var(--sans); letter-spacing: .02em; color: var(--pirinc); margin: 0; }
+.dn-acik { margin-top: 12px; border-bottom: 1px solid var(--cizgi); }
+.dn-kat { border-top: 1px solid var(--cizgi); }
+.dn-kat > summary { list-style: none; cursor: pointer; display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 12px; align-items: center; padding: 10px 0; min-height: 48px; }
+.dn-kat > summary::-webkit-details-marker { display: none; }
+.dn-kat > summary::after { content: ''; grid-column: 2; grid-row: 1 / span 2; width: 9px; height: 9px; margin-right: 6px; border-right: 2px solid var(--pirinc); border-bottom: 2px solid var(--pirinc); transform: rotate(45deg) translateY(-3px); transition: transform .15s; }
+.dn-kat[open] > summary::after { transform: rotate(-135deg) translate(-3px, 0); }
+.dn-kat > summary h2 { grid-column: 1; font: 400 20px/1.25 var(--serif); margin: 0; }
+.dn-ozet { grid-column: 1; font: 400 13px/1.4 var(--sans); color: var(--soluk); overflow-wrap: anywhere; }
+.dn-kat[open] .dn-ozet { display: none; }
+.dn-ic { padding: 0 0 16px; font-family: var(--sans); }
+.dn-alt { font: 600 14px/1.4 var(--sans); color: var(--soluk); margin: 6px 0 2px; }
+.dn-alt ~ .dn-alt { margin-top: 14px; }
+.dn-lejant { list-style: none; margin: 0; padding: 0; }
+.dn-lejant li { display: grid; grid-template-columns: 30px minmax(0, 1fr); gap: 10px; align-items: start; padding: 6px 0; font-size: 15px; line-height: 1.5; overflow-wrap: anywhere; }
+.dn-lejant b { font-weight: 600; color: var(--parsomen); }
+.dn-kontroller li { display: block; }
+.dn-tur { display: inline-block; font: 500 12px/1.4 var(--sans); color: var(--soluk); border: 1px solid var(--girdi-kenar); border-radius: 999px; padding: 0 8px; margin-right: 2px; }
+.dn-not { font-size: 14px; color: var(--soluk); margin: 10px 0 0; }
+.dn-kirmizi-not { display: none; }
+html.kirmizi .dn-kirmizi-not { display: block; }
+.dn-gercek p:first-child { font: 400 17px/1.6 var(--serif); margin: 0 0 10px; max-width: 68ch; }
+/* Renk örneği: kanvasın zemini üstünde kanvastaki şeklin küçük kopyası */
+.dn-ornek { display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 20px; margin-top: 2px; border-radius: 4px; background: #0A1422; border: 1px solid var(--cizgi); }
+html.kirmizi .dn-ornek { background: #000; filter: url(#kirmiziSuz); }
+.dn-ornek i { display: block; }
+.dn-zeminli { background: var(--dn-zemin); }
+.dn-zemin-serit, .dn-serit i { background: linear-gradient(90deg, #7A00C8, #2050FF 25%, #00C060 45%, #F0F000 62%, #FF9000 78%, #FF2000); }
+.dn-daire i { width: 10px; height: 10px; border-radius: 50%; background: var(--dn-renk); }
+.dn-halka i { width: 13px; height: 13px; border-radius: 50%; border: 2px solid var(--dn-renk); background: var(--dn-zemin, transparent); }
+.dn-cizgi i { width: 20px; border-top: 2px solid var(--dn-renk); }
+.dn-kesik i { width: 20px; border-top: 2px dashed var(--dn-renk); }
+.dn-kalin i { width: 22px; height: 7px; border-radius: 4px; background: var(--dn-renk); }
+.dn-alan i { width: 22px; height: 12px; border-radius: 3px; background: var(--dn-renk); }
+.dn-serit i { width: 26px; height: 12px; }
+.dn-yarim i { width: 13px; height: 13px; border-radius: 50%; background: linear-gradient(90deg, #333 50%, var(--dn-renk) 50%); }
+.dn-dikey i { width: 3px; height: 14px; background: var(--dn-renk); }
+.dn-dikey-kesik i { height: 14px; border-left: 2px dashed var(--dn-renk); }
+.dn-yazi { font: 600 11px/1 var(--sans); color: var(--dn-renk); }
+.dn-ipucu { font-size: 14px; color: var(--soluk); margin: 2px 0 8px; }
+.deney-ders { margin-top: 22px; font-family: var(--sans); }
+.deney-ders ul { margin: 4px 0 0; padding-left: 20px; }
+.deney-ders li { margin: 6px 0; }

@@ -160,3 +160,163 @@ Yeniden açılıp doğrulanan (değişiklik gerekmeyen) yüksek riskli iddialar:
 Python3 ile yeniden hesaplananlar (hepsi doğru): 500 nm → 5,996 × 10¹⁴ Hz; 30 m / 500 nm = 6 × 10⁷; c / 10 MHz = 29,98 m; c / 1 THz = 0,30 mm; hc = 1,9864 × 10⁻²⁵ J·m; E(500 nm) = 3,973 × 10⁻¹⁹ J; E(656,28 nm) = 3,027 × 10⁻¹⁹ J; oran 1,313; E(555 nm) = 3,579 × 10⁻¹⁹ J (Wikipedia'daki 3,58 × 10⁻¹⁹ ile tutarlı); 700/380 = 1,842; Wien: 5772 K → 502,0 nm; 255 K → 11,36 μm; 12.100 K → 239,5 nm; 3800 K → 762,6 nm; 10.000 K → 289,8 nm; 4πR² = 6,082 × 10¹⁸ m²; 5772⁴ = 1,1100 × 10¹⁵; σT⁴ = 6,294 × 10⁷ W/m²; L = 3,828 × 10²⁶ W (NASA 382,8 × 10²⁴ W); σ sabitlerden 5,67037 × 10⁻⁸; Doppler örneği 1,067 × 10⁻⁴ → 31,98 km/s; soru 3,28 nm → 0,004998 → 1498 km/s; 255 K = −18,15 °C; 288 − 255 = 33.
 
 Askıda kalan: yok.
+
+## v3 genişletme (28 Ekim 2026)
+
+Yeni bölümler: "Işığın hızı: geçmişe bakmak", "Hidrojenin merdiveni: enerji düzeyleri ve tayf serileri", "Tayfı elde etmek: prizmadan tayfölçere". Mevcut dokuz bölüme paragraf eklendi; başlıklar ve kid alanları değişmedi. Alıntılar WebFetch aracının döndürdüğü metinden (araç sayfayı özetler; tırnak içindekiler aracın birebir aktardığı ifadeler). Kullanılan WebSearch: 14.
+
+### Bölüm 1 – Işık (eklenenler)
+
+| İddia | Kaynak | Kaynaktaki ifade |
+|---|---|---|
+| Fotoelektrik olay: ışık düşen yüzeyden elektron kopması; Hertz 1887'de gözledi | https://newworldencyclopedia.org/entry/Photoelectric_effect | WebFetch: "In 1887, a young German scientist named Heinrich Hertz observed the photoelectric effect" |
+| Elektron enerjisi şiddete değil frekansa bağlı; eşik frekans altında elektron yok | https://newworldencyclopedia.org/entry/Photoelectric_effect | WebFetch: "the energy of the emitted electrons does not depend on the intensity of the incoming light" ; "there exists a certain minimum frequency of incident radiation below which no photoelectrons can be emitted" |
+| Einstein 1905 ışığı ayrık kuantumlarla açıkladı; 1921 Nobel; kuantum devrimi | https://newworldencyclopedia.org/entry/Photoelectric_effect | WebFetch: "In 1905, Albert Einstein solved this paradox by describing light as composed of discrete quanta" ; "This discovery led to the quantum revolution in physics and earned Einstein the Nobel Prize in 1921." |
+| "Her elektronu tek paket koparır; enerji yetmezse paket sayısı önemsiz" | çıkarım | yukarıdaki eşik frekans ve şiddetten bağımsızlık ifadelerinin E = h f ile birleşimi |
+| Kırınım ağında her dalga boyu ayrı açıda güçlenir (dalga yüzü) | https://vikdhillon.staff.shef.ac.uk/teaching/phy217/instruments/phy217_inst_dispersion.html | kırınım denklemi nλ = d(sin θ + sin φ) (aşağıda) |
+
+### Yeni bölüm – Işığın hızı: geçmişe bakmak
+
+| İddia | Kaynak | Kaynaktaki ifade |
+|---|---|---|
+| Uydu dolanım süresi Dünya yaklaşırken kısa, uzaklaşırken uzun ölçülür | https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Speed_of_light | WebFetch: "the periods of moons orbiting a distant planet are shorter when the Earth is approaching the planet than when the Earth is receding from it" |
+| Ole Christensen Rømer, 1676, İo; ışık yörünge çapını ≈ 22 dk'da aşar; ilk sayısal tahmin | https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Speed_of_light | WebFetch: "The first quantitative estimate of the speed of light was made in 1676 by Rømer." ; "Rømer observed this effect for Jupiter's innermost moon Io and deduced that light takes 22 minutes to cross the diameter of the Earth's orbit." ; ad: "Ole Christensen Rømer" |
+| Bugünkü değer ≈ 16,6 dk; Rømer ≈ üçte bir fazla | hesap | 2 × 149,598e6 km / 299.792,458 km/s = 998 sn = 16,63 dk (yarı büyük eksen: NASA Earth fact sheet "Semimajor axis 149.598") ; 22 / 16,63 = 1,32 |
+| Fizeau 1849, dişli çark, 8 km ötede ayna, 315.000 km/s | https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Speed_of_light | WebFetch: Fizeau "reported a value of 315000 km/s" (1849, toothed wheel) ; "a beam of light directed at a mirror 8 kilometres (5 mi) away" ; "the beam passes through one gap on the way out and another on the way back ... or ... strikes a tooth" |
+| ≈ %5 fazla | hesap | 315.000 / 299.792 = 1,051 |
+| 1983'ten beri metre c ile tanımlı; c kesin | https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Speed_of_light | WebFetch: "In 1983, the metre was redefined in the International System of Units (SI)" (1/299792458 saniyede alınan yol) |
+| Ay 1,3 sn; Güneş 8 dk 19 sn | https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Speed_of_light | WebFetch: tablo "from Moon to Earth 1.3 s" ; metin "8 minutes 19 seconds" (tablo 8,3 min) |
+| Sirius 8,6 ışık yılı | https://en.wikipedia.org/wiki/Sirius | WebFetch: "At a distance of 2.64 parsecs (8.6 ly)" |
+| Işık yılı = ışığın boşlukta bir yılda aldığı yol | tanım | birimin adından gelen standart tanım; ayrı sayfa açılmadı |
+| Uzak cisimlere bakarak evrenin geçmişi incelenir | https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Speed_of_light | WebFetch: "allowing the study of the history of the universe by looking at distant objects" |
+| Ters kare yasası; uzaklık 2 kat → 1/4 | https://www.discovermagazine.com/at-the-bottom-of-earths-orbit-22665 | WebFetch: "The amount of energy you receive from an object gets smaller with the square of your distance: double your distance and you only get 1/4 the amount of light from it." |
+| F = L ÷ (4πd²) | çıkarım | küre yüzeyi 4πd² (L = 4πR²σT⁴ bağıntısındaki aynı geometri, bölüm 6 satırı) |
+| 4 kat ≈ 1,5 kadir | hesap | 2,5 × log₁₀ 4 = 1,505 (kadir tanımı d1) |
+| Örnek: L = 382,8 × 10²⁴ W | https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html | bölüm 6 satırı: "Luminosity: 382.8 × 10^24 J/s" |
+| Örnek: yarı büyük eksen 149,598 milyon km; Güneş ışınımı 1361,0 W/m² | https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html | WebFetch: "Semimajor axis (10^6 km): 149.598" ; "Solar irradiance (W/m2): 1361.0" |
+| Örnek hesap 4πd² ≈ 2,812 × 10²³ m²; F ≈ 1361 | hesap | 4π(1,49598e11)² = 2,8123e23 ; 3,828e26 / 2,8123e23 = 1361,2 |
+
+### Bölüm 2 – Dalga boyu ve tayf (eklenenler)
+
+| İddia | Kaynak | Kaynaktaki ifade |
+|---|---|---|
+| Herschel 1800: cam prizma, her rengin altına termometre, bir tane kırmızının ötesine; en sıcak olan o → kızılötesi | https://imagine.gsfc.nasa.gov/science/toolbox/history_multiwavelength1.html | WebFetch: "he used a glass prism to separate sunlight into it's rainbow of colors" ; "he placed a thermometer under each color, with one extra thermometer just beyond the red light" ; "the thermometer that was seemingly out of the light had the highest temperature" ; "Thus, he discovered infrared light." (1800 yılı sayfada) |
+| Ritter bir yıl sonra morötesini buldu | https://imagine.gsfc.nasa.gov/science/toolbox/history_multiwavelength1.html | WebFetch: "A year later, Johann Wilhelm Ritter ... see if there might be light just beyond the purple end" ; "Ritter discovered ultraviolet light." (yıl sayfada açıkça yok; "bir yıl sonra" yazıldı) |
+| Hertz 1887 Maxwell'in dalgaları; Röntgen 1895 X; Villard 1900 gama | https://imagine.gsfc.nasa.gov/science/toolbox/history_multiwavelength1.html | WebFetch: "In 1887 Heinrich Hertz demonstrated the existence of the waves predicted by Maxwell" ; "X-rays were first observed and documented in 1895 by Wilhelm Conrad Röntgen" ; "Gamma-rays were first observed in 1900 by Paul Villard" |
+| 21 cm çizgisi 1420,405751768 MHz, 21,106 cm | https://en.wikipedia.org/wiki/Hydrogen_line | WebFetch: "a frequency of 1420.405751768(2) MHz" ; "a wavelength of 21.106114054160(30) cm in a vacuum" ; sağlama c/f = 0,21106 m |
+| van de Hulst 1944 öngörü; Ewen ve Purcell 1951 Harvard | https://en.wikipedia.org/wiki/Hydrogen_line | WebFetch: "predicted by Dutch astronomer H. van de Hulst in 1944" ; "first detected in 1951 by Ewen and Purcell at Harvard University" |
+| Toz bulutlarını geçer; ilk haritalar Samanyolu'nun sarmal yapısını gösterdi | https://en.wikipedia.org/wiki/Hydrogen_line | WebFetch: "readily penetrates clouds of interstellar cosmic dust that are opaque to visible light" ; "revealed for the first time the spiral structure of the Milky Way" |
+
+### Bölüm 3 – Foton enerjisi (eklenenler)
+
+| İddia | Kaynak | Kaynaktaki ifade |
+|---|---|---|
+| 1 eV ≈ 1,6 × 10⁻¹⁹ J | https://imagine.gsfc.nasa.gov/educators/lessons/xray_spectra/worksheet-energy-levels.html | WebFetch: "1 eV = 1.6 x 10-19 J." |
+| 700 nm ≈ 1,8 eV; 380 nm ≈ 3,3 eV | hesap | 1,98645e-25 / 700e-9 / 1,6e-19 = 1,77 ; / 380e-9 = 3,27 |
+| Hidrojeni en alt düzeyden iyonlaştırmak 13,6 eV | https://imagine.gsfc.nasa.gov/educators/lessons/xray_spectra/worksheet-energy-levels.html | WebFetch: "energy = -13.6 over n^2 eV" ; enerji sıfırın üstünde elektron "no longer bound ... considered to be ionized" → n = 1 için 13,6 eV (hesap) |
+| 1 W, 500 nm → ≈ 2,5 × 10¹⁸ foton/sn | hesap | 1 / 3,973e-19 = 2,517e18 |
+
+### Bölüm 4 – Kara cisim (eklenenler)
+
+| İddia | Kaynak | Kaynaktaki ifade |
+|---|---|---|
+| Yeşilde tepe yapan yıldız bol kırmızı ve mavi de yayar, beyaz görünür; yeşil görünmesi için neredeyse yalnız yeşil yayması gerekir | https://www.discovermagazine.com/why-are-there-no-green-stars-848 | WebFetch: "the only way to see a star as green is for it to almost exclusively emit green light" ; "Any star emitting mostly green will also be putting out lots of red and blue, making the star look white." |
+| Güneş yeşilde tepe yapar ama uzaydan beyaz görünür | https://www.discovermagazine.com/why-are-there-no-green-stars-848 | WebFetch: "our Sun peaks at the green part of the blackbody curve color spectrum" ; "the Sun is clearly white when imaged from space" |
+| Gözde üç tür koni | https://www.discovermagazine.com/why-are-there-no-green-stars-848 | WebFetch: "Our eyes have three kinds of cones that help us see color: red cones, blue cones and green cones." |
+| Renk sırası kızıl → turuncu → beyaz → mavimsi beyaz | https://en.wikipedia.org/wiki/Wien%27s_displacement_law | bölüm 4 satırları (red hot, orange-red, white hot) ve bölüm 5 "blue-white Rigel" |
+| B ve V süzgeçleri, kadir farkı = renk indeksi; küçük değer daha mavi/sıcak | https://en.wikipedia.org/wiki/Apparent_magnitude | d1_kaynak.md: U, B, V bantları, V göze yakın. Renk indeksi kavramı d5 dersinde kaynaklı; yön (küçük = mavi) kadir ölçeğinin ters olmasından çıkarım |
+| Sirius B−V +0,00; beyaz | https://en.wikipedia.org/wiki/Sirius | WebFetch: "B−V color index: +0.00" ; "two white stars" |
+
+### Bölüm 5 – Wien (eklenenler)
+
+| İddia | Kaynak | Kaynaktaki ifade |
+|---|---|---|
+| CMB 2,725 ± 0,001 K, COBE FIRAS | https://asd.gsfc.nasa.gov/archive/arcade/cmb_intensity.html | WebFetch: "FIRAS determined the CMB temperature to be 2.725 +/- 0.001 K" |
+| Kara cisimden sapma < 50 milyonda bir (şiddette) | https://asd.gsfc.nasa.gov/archive/arcade/cmb_intensity.html | WebFetch: "deviations from a perfect blackbody limited to less than 50 parts per million in intensity" |
+| En hassas ölçümler tepeye yakın milimetre dalga boylarında | https://asd.gsfc.nasa.gov/archive/arcade/cmb_intensity.html | WebFetch: "The most precise measurements of the CMB spectrum at the millimeter wavelengths near its peak" |
+| Tepe ≈ 1,06 mm | hesap | 2,897771955e-3 / 2,725 = 1,0634e-3 m |
+| Bu bölge kızılötesi ile radyo arasında | https://en.wikipedia.org/wiki/Electromagnetic_spectrum | bant sıralaması (bölüm 2 satırı): radyo, mikrodalga, kızılötesi |
+
+### Bölüm 6 – Stefan-Boltzmann (eklenenler)
+
+| İddia | Kaynak | Kaynaktaki ifade |
+|---|---|---|
+| Sirius A: 9845 K, 1,7144 R☉, 24,74 L☉ | https://en.wikipedia.org/wiki/Sirius | WebFetch infobox: "Radius: 1.7144±0.0090 R☉" ; "Luminosity: 24.74±0.70 L☉" ; "9,845±64 K" |
+| Aynı sayfa metninde 9940 K | https://en.wikipedia.org/wiki/Sirius | WebFetch: "the article's body text gives a surface temperature of 9,940 K" (kaynak içi fark) |
+| Oran hesabı: 2,94 × 8,46 ≈ 24,9 (9845 K); 25,9 (9940 K); yüzey başına ≈ 8,5 kat | hesap | 1,7144² = 2,939 ; (9845/5772)⁴ = 8,464 ; çarpım 24,88 (24,74'ten %0,6 fark) ; 9940 K ile 25,85 |
+
+### Bölüm 7 – Tayf çizgileri (eklenenler)
+
+| İddia | Kaynak | Kaynaktaki ifade |
+|---|---|---|
+| C = Hα 656,281; F = Hβ 486,134; D1/D2 Na; H 396,847 ve K 393,366 Ca⁺; b1–b4 üçü Mg biri Fe; A 759,370 ve B 686,719 O₂ | https://en.wikipedia.org/wiki/Fraunhofer_lines | WebFetch tablo: "A O2 759.370" ; "B O2 686.719" ; "C Hα 656.281" ; "F Hβ 486.134" ; "H Ca+ 396.847" ; "K Ca+ 393.366" ; "b1 Mg 518.362" ; "b2 Mg 517.270" ; "b3 Fe 516.891" ; "b4 Mg 516.733" |
+| H ve K morun ucunda | https://en.wikipedia.org/wiki/Fraunhofer_lines | WebFetch: "the calcium doublet in the violet part of the spectrum" |
+| Güneş tayfındaki bazı çizgiler Dünya atmosferindeki O₂ soğurmasından | https://en.wikipedia.org/wiki/Fraunhofer_lines | WebFetch: "telluric lines originating from absorption by oxygen molecules in the Earth's atmosphere" (kaynak A ve B'yi tek tek "telluric" diye nitelemiyor; derste A ve B yalnız "oksijen molekülüyle eşleştirilir" diye yazıldı) |
+
+### Yeni bölüm – Hidrojenin merdiveni
+
+| İddia | Kaynak | Kaynaktaki ifade |
+|---|---|---|
+| Bohr düzeyleri n ile numaralandırdı; E_n = −13,6 eV / n² | https://imagine.gsfc.nasa.gov/educators/lessons/xray_spectra/worksheet-energy-levels.html | WebFetch: "Neils Bohr numbered the energy levels (n) of hydrogen" ; "energy = -13.6 over n^2 eV" |
+| Enerji sıfırın üstünde → bağlı değil, iyonlaşmış | https://imagine.gsfc.nasa.gov/educators/lessons/xray_spectra/worksheet-energy-levels.html | WebFetch: "the electron is no longer bound to the nucleus of the atom and it is considered to be ionized" |
+| Foton enerjisi iki düzey arasındaki farka eşit | https://en.wikipedia.org/wiki/Emission_spectrum | bölüm 3 satırı: "The photon energy of the emitted photons is equal to the energy difference between the two states." |
+| Lyman serisinin hepsi morötesi; Lyman-alfa 121,57 nm; seri sınırı 91,175 nm | https://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq.ipfs.4everland.io/wiki/Hydrogen_spectrum.html | WebFetch: "All the wavelengths in the Lyman series are in the ultraviolet band." ; 2 → 1 121,57 nm (boşluk) ; n = ∞ 91,175 nm |
+| Balmer (n′ = 2): 656,3; 486,1; 434,0; 410,2 nm; sınır 364,6 nm | aynı sayfa | WebFetch tablo (hava, nm): n=3 656.3; n=4 486.1; n=5 434.0; n=6 410.2; n=∞ 364.6. Hα = 3 → 2: https://en.wikipedia.org/wiki/Hydrogen-alpha ; Hβ, Hγ, Hδ adları n = 4, 5, 6 sırasına göre (tablo satırları etiketsiz; Hβ = 486,134 nm Fraunhofer tablosunda F olarak doğrulandı) |
+| Paschen hepsi kızılötesi | aynı sayfa | WebFetch: "The Paschen lines all lie in the infrared band." |
+| Balmer 1885, ampirik formül | aynı sayfa | WebFetch: "Johann Balmer, who discovered the Balmer formula, an empirical equation to predict the Balmer series, in 1885" |
+| Rydberg sabiti 1,097373 × 10⁷ m⁻¹; formül 1/λ = R(1/m² − 1/n²), n > m | aynı sayfa | WebFetch: "1.097373×10^7 m−1" ; "Meaningful values are returned only when n is greater than n′" (formül sayfada görsel). Biçim sağlaması: R(1/4 − 1/9) → 656,11 nm, R(1/4 − 1/16) → 486,01 nm (tablo ile uyumlu) |
+| Lyman çizgileri ≈ 122 nm ve altı → optik pencere (≈ 300 nm) dışında | hesap | optik pencere bölüm 9 satırı (Optical window "runs from around 300 nanometers") |
+| 13,6 eV ↔ ≈ 91,2 nm | hesap + kaynak | 1,98645e-25 / (13,6 × 1,6e-19) = 91,3 nm ; kaynaktaki seri sınırı 91,175 nm |
+| Rigel ışığının %60'ı morötesi | https://en.wikipedia.org/wiki/Wien%27s_displacement_law | bölüm 5 satırı |
+| 91,2 nm'den kısa dalga boylu ışık hidrojeni iyonlaştırabilir | hesap/çıkarım | E = h c / λ ile 13,6 eV eşiği |
+| İyonlaşmadan sonra yeniden birleşme; elektron herhangi düzeyde başlayıp basamak basamak iner, her geçişte foton; yaklaşık yarısında 3 → 2 (H-alfa) | https://en.wikipedia.org/wiki/Hydrogen-alpha | WebFetch: "After ionization, the electron and proton recombine to form a new hydrogen atom. In the new atom, the electron may begin in any energy level, and subsequently cascades to the ground state (n = 1), emitting photons with each transition." ; "Approximately half the time, this cascade will include the n = 3 to n = 2 transition" |
+| H-alfa iyonlaşmış hidrojeni izlemenin en kolay yolu | https://en.wikipedia.org/wiki/Hydrogen-alpha | WebFetch: "the easiest way for astronomers to trace the ionized hydrogen content of gas clouds" |
+| Örnek: 1,889 eV → 3,02 × 10⁻¹⁹ J → ≈ 657 nm | hesap | 13,6 × (1/4 − 1/9) = 1,8889 ; × 1,6e-19 = 3,022e-19 ; 1,98645e-25 / 3,022e-19 = 657,3 nm. Yuvarlamasız sabitlerle (13,606 eV, 1,602e-19 J) ≈ 656,1 nm; kalan fark hava/boşluk ve çekirdek kütlesi düzeltmeleri (derste yalnız "yuvarlama" ve "büyük kısmı" dendi) |
+| Soru: 4 → 2: 2,55 eV, ≈ 486 nm | hesap | 13,6 × (1/4 − 1/16) = 2,55 eV |
+
+### Bölüm 8 – Doppler (eklenenler)
+
+| İddia | Kaynak | Kaynaktaki ifade |
+|---|---|---|
+| Sirius dikine hız −5,50 km/s | https://en.wikipedia.org/wiki/Sirius | WebFetch infobox: "Radial velocity: −5.50 km/s" |
+| Hα kayması ≈ 0,012 nm | hesap | 656,28 × 5,5 / 299.792 = 0,01204 |
+| Dünya ortalama yörünge hızı 29,78 km/s | https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html | d1_kaynak.md satırı: "Mean orbital velocity (km/s): 29.78" |
+| Ölçülen dikine hız Dünya'nın hareketiyle yıl içinde değişebilir | çıkarım | Doppler kayması göreli hıza bağlıdır (bölüm 8 satırları) ; ayrı kaynak açılmadı, "değişebilir" diye yazıldı |
+| Slipher 1912, ≈ 300 km/s, o zamana dek kaydedilen en büyük hız | https://webarchive.library.unt.edu/web/20160706005814/https://en.wikipedia.org/wiki/Andromeda_Galaxy ; https://www.ebsco.com/research-starters/history/slipher-obtains-spectrum-distant-galaxy | Wikipedia: "measured in 1912 by Vesto Slipher" ; "the largest velocity recorded at that time, at 300 kilometres per second" ; EBSCO: 1912, Lowell Gözlemevi, "–300 kilometers" ; "the greatest radial velocity ever observed". Not: EBSCO aynı yerde "receding" diyor; eksi işaretle ve Wikipedia'nın "blueshifted" ifadesiyle çelişiyor, bu yüzden yön için yalnız Wikipedia kullanıldı |
+| Güneş'e göre −301 km/s; eksi = maviye kayma | https://webarchive.library.unt.edu/web/20160706005814/https://en.wikipedia.org/wiki/Andromeda_Galaxy | WebFetch: infobox "Helio radial velocity −301 ± 1 km/s" ; "z = −0.001 (minus sign indicates blueshift)" ; "one of the few blueshifted galaxies" |
+| Samanyolu'na göre yaklaşma ≈ 100–140 km/s | aynı | WebFetch: "approaching the Milky Way at about 100 to 140 kilometres per second" |
+| Andromeda ≈ 2,5 milyon ışık yılı | aynı | WebFetch: "approximately 2.5 million light-years" |
+| Karanlık gökte çıplak gözle görülür | https://en.wikipedia.org/wiki/Apparent_magnitude | d1_kaynak.md: "Andromeda Galaxy (M31): +3.44" ve göz sınırı +6,5 |
+
+### Yeni bölüm – Tayfı elde etmek
+
+| İddia | Kaynak | Kaynaktaki ifade |
+|---|---|---|
+| Newton 1666 prizma; renkler ışıkta zaten var; kırmızı ikinci prizmada değişmez; mercek ve ikinci prizmayla beyaz; beyaz ışık renklerin karışımı | https://en.wikipedia.org/wiki/Dispersive_prism | WebFetch: "Isaac Newton's 1666 experiment of bending white light through a prism demonstrated" ; "led Sir Isaac Newton to conclude that white light consisted of a mixture of different colors" ; ikinci prizmada kırmızı değişmedi ; "used a lens and a second prism to recompose the spectrum back into white light" |
+| Kırma indisi dalga boyuna bağlı (renk ayrışması); kırmızı az, mavi çok bükülür | https://en.wikipedia.org/wiki/Dispersive_prism | WebFetch: "the prism material's index of refraction varying with wavelength (dispersion)" ; "longer wavelengths (red) undergo a smaller deviation than shorter wavelengths (blue)" |
+| Prizma geniş aralık, kat binmesi yok; iyi kırınım ağı daha yüksek ayrıştırma | https://en.wikipedia.org/wiki/Dispersive_prism | WebFetch: "Prisms will generally disperse light over a much larger frequency bandwidth than diffraction gratings" ; prisms avoid "overlapping spectral orders, which all gratings have" ; a well-chosen grating can achieve higher dispersion |
+| Kırınım denklemi nλ = d(sin θ + sin φ); yüksek kat ve küçük d → daha çok ayrıştırma | https://vikdhillon.staff.shef.ac.uk/teaching/phy217/instruments/phy217_inst_dispersion.html | WebFetch: grating equation nλ = d(sin θ + sin φ) ; dispersion "greater for higher orders of the spectrum (larger n) and smaller values of the grating spacing d" |
+| 800 nm 1. kat = 400 nm 2. kat | hesap | 1 × 800 = 2 × 400 (denklemde aynı nλ → aynı açı) |
+| "Bugünkü aletlerde çoğunlukla kırınım ağı" | https://vikdhillon.staff.shef.ac.uk/teaching/phy217/instruments/phy217_inst_dispersion.html | ders notu astronomik tayfölçerleri kırınım ağı üzerinden anlatır; "çoğunlukla" nitelemesi bu kaynağa dayanan yumuşak bir ifadedir |
+| R = λ/Δλ; R < 1000 düşük, R > 10.000 yüksek, arası orta | https://vikdhillon.staff.shef.ac.uk/teaching/phy217/instruments/phy217_inst_dispersion.html | WebFetch: "the ability to distinguish between two wavelengths separated by a small amount Δλ" ; "spectrographs with R < 1000 are regarded as low resolution" ; "high-resolution spectrographs, with R > 10,000" |
+| Örnek: R ≈ 9.400 ve ≈ 55.000 | hesap | 656,28 / 0,07 = 9375 ; 656,28 / 0,012 = 54.690 |
+
+### Bölüm 9 – Atmosfer pencereleri (eklenenler)
+
+| İddia | Kaynak | Kaynaktaki ifade |
+|---|---|---|
+| Rayleigh: saçılma verimi λ⁴ ile ters orantılı; gök mavi; şafak ve alacakaranlıkta uzun yol mavi saçar | https://global.canon/en/technology/s_labo/light/001/01.html | WebFetch: "the efficiency of scattering is inversely proportional to the fourth power of the wavelength" ; "The sky looks blue because blue light is scattered far more than red light" ; "At dawn and dusk, light passes through the atmosphere for a longer period, which scatters blue light waves." |
+| (700/450)⁴ ≈ 5,9 | hesap | 5,855 |
+| Ufka yakın yıldızların ışığı mavisini daha çok yitirir | çıkarım | Rayleigh + hava kütlesi (d1_kaynak.md: Air mass, "the thicker atmosphere ... the greater the attenuation") |
+| Alçak basınçlı sodyum: neredeyse tamamen 589,0 ve 589,6 nm, koyu sarı | https://www.lamptech.co.uk/Documents/SO%20Spectral.htm | WebFetch: "low pressure sodium light is almost totally made up from deep yellow wavelengths at 589.0 and 589.6nm" |
+| Bunlar Na D çizgileri | https://en.wikipedia.org/wiki/Fraunhofer_lines | D1 589,592, D2 588,995 nm (bölüm 7 satırı) |
+| Süzgeçle kolay ayıklanır; gökbilimciler bu parıltıyı yeğler; büyük gözlemevli bazı kentler neredeyse tamamen bu lambalara geçti; başka hiçbir kaynak bu kadar kolay süzülmez | https://www.lamptech.co.uk/Documents/SO%20Spectral.htm | WebFetch: "it can be filtered out by removing its single wavelength" ; "astronomers are actually fully in favour of sky glow originating from this light source" ; "Several cities which are home to major astronomical sites have almost completely converted" ; "No other light source offers such easy filtering of night time glow in the sky." |
+| Geniş tayflı lambalar için tek dar bandı kesmek yetmez | çıkarım | yukarıdaki "single wavelength" ifadesinin tersi |
+| Son paragraf (İstanbul'dan sına): Rigel/Betelgeuse renk ve sıcaklık, Sirius 8,6 yıl, Andromeda 2,5 milyon yıl, Rayleigh, sodyum D | yukarıdaki satırlar | hepsi bu dosyadaki satırlara dayanır; Avcı'nın kış göğünde olması d1'deki Kış Üçgeni (Betelgeuse) satırına dayanır (https://en.wikipedia.org/wiki/Sirius) |
+
+## v3 notları
+
+- Sözlüğe 12 terim eklendi (fotoelektrik olay, ışık yılı, ters kare yasası, elektronvolt, renk indeksi, enerji düzeyi, Balmer serisi, iyonlaşma, kırınım ağı, tayfölçer, tayfsal çözünürlük, Rayleigh saçılması). "Ayırma gücü" d12'de açısal anlamda kullanıldığı için burada "tayfsal çözünürlük" seçildi. "Renk indeksi" d5 ile aynı terim.
+- Yazılmayanlar: Cecilia Payne ve yıldızların hidrojen bolluğu (d5'te var); Rømer'in uyruğu (açılan kaynakta yok); Ritter'in deney yöntemi ve tam yılı (kaynakta yalnız "a year later"); COBE'nin hangi kuruma ait olduğu; Güneş'in B−V değeri (NASA Sun fact sheet'te yok; OpenStax türevi sayfalar kullanılmadı); Zeeman etkisi ve çizgi genişliğinden basınç ölçümü (kaynak açılmadı); 51 Pegasi'nin kayma genliği.
+- Defter notları 10 madde sınırında kaldı; 4 not yeni bilgilerle zenginleştirildi (kid alanı yok).
+- Sesli okuma için paragraflarda "B−V" yerine "B eksi V", "L☉, R☉, T☉" oranları yerine sözel ifade kullanıldı.
