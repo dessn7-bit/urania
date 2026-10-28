@@ -389,8 +389,8 @@
       s += S.daire(cx, cy - rA, 10, { dolgu: R.yildiz, renk: 'none' }) + S.daire(cx, cy + rB, 7, { dolgu: R.soguk, renk: 'none' });
       s += S.yazi(cx + 16, cy - rA - 2, 'A', { boy: 14, kalin: true });
       s += S.yazi(cx + 13, cy + rB + 5, 'B', { boy: 14, kalin: true });
-      s += S.yazi(cx - 14, cy + rB + 5, '1', { boy: 15, kalin: true, renk: R.vurgu, hiza: 'end' });
-      s += S.yazi(cx - 14, cy - rB + 5, '2', { boy: 15, kalin: true, renk: R.vurgu, hiza: 'end' });
+      s += S.yazi(cx - 14, cy + rB - 7, '1', { boy: 15, kalin: true, renk: R.vurgu, hiza: 'end' });   // çemberin içinde: kesikli çizgi rakamı kesmesin
+      s += S.yazi(cx - 14, cy - rB + 19, '2', { boy: 15, kalin: true, renk: R.vurgu, hiza: 'end' });
       s += S.ok(cx, cy + rB + 12, cx, cy + rB + 34, { renk: R.vurgu, kalin: 2, boy: 7 });
       s += S.yazi(cx + 8, cy + rB + 32, 'Dünya\'ya', { boy: 13, renk: R.soluk });
       s += S.yazi(196, 20, 'Yukarıdan bakış (ölçeksiz)', { boy: 13, renk: R.soluk });
@@ -528,7 +528,7 @@
       for (let t = 0; t <= 4; t++) { const x = t0x + t * ol; s += S.cizgi(x, by, x, by + 5, { renk: R.soluk, kalin: 1 }) + S.yazi(x, by + 19, String(t), { boy: 13, hiza: 'middle', renk: R.soluk }); }
       const x1 = t0x, x2 = t0x + d * ol, yb = by - 46;
       s += S.cizgi(x1, yb, x2, yb, { renk: R.metin, kalin: 1 }) + S.cizgi(x1, yb - 4, x1, yb + 4, { renk: R.metin, kalin: 1 }) + S.cizgi(x2, yb - 4, x2, yb + 4, { renk: R.metin, kalin: 1 });
-      s += S.yazi((x1 + x2) / 2, yb - 6, '1,337 s', { boy: 13, hiza: 'middle', kalin: true });
+      s += S.yazi(x2 + 8, yb + 5, '1,337 s', { boy: 13, kalin: true });   // parantezin sağında: üstteki "Radyo atımları" başlığına değmesin
       s += S.yazi(200, by + 40, 'zaman (saniye)', { boy: 13, hiza: 'middle', renk: R.soluk });
       s += S.yazi(200, by + 62, 'Yengeç atarcası ise saniyede 30 atım verir', { boy: 13, hiza: 'middle', renk: R.soluk });
       return s;

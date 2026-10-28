@@ -159,7 +159,7 @@
         s += S.daire(x, y, 8, { dolgu: R.gunes, renk: R.gunes });
         s += S.yazi(x + 14, y + 5, ad, { boy: 14, renk: R.metin, kalin: true });
       });
-      { const t = 40, o = 13, a = hE * rad;   // ekinoks çizgisi gök ekvatorudur: yazı çizginin hemen altında, ona paralel
+      { const t = 40, o = 16, a = hE * rad;   // ekinoks çizgisi gök ekvatorudur: yazı çizginin hemen altında, ona paralel
         s += S.yazi(cx + t * Math.cos(a) + o * Math.sin(a), cy - t * Math.sin(a) + o * Math.cos(a), 'gök ekvatoru', { boy: 13, renk: R.soluk, yan: -hE }); }
       s += S.daire(cx, cy, 4.5, { dolgu: R.metin, renk: R.metin });
       /* alt: aynı demet, iki geliş açısı */
@@ -332,10 +332,11 @@
       s += S.kutu(ek.X(380), alan.y, ek.X(700) - ek.X(380), alan.h, { renk: 'none', dolgu: R.vurguSoluk, saydam: 0.55 });
       s += S.yazi((ek.X(380) + ek.X(700)) / 2, alan.y + alan.h - 8, 'görünür', { boy: 13, renk: R.vurgu, hiza: 'middle' });
       s += ek.svg.replace(/(<text[^>]*>2000 nm<\/text>)/, m => m.replace('text-anchor="middle"', 'text-anchor="end"'));
-      /* açıklama kutusu sağ üstte (eğrilerin üstünde boş bölge); kırmızı modda çizgi kalınlığı ve kesikle ayırt edilir */
+      /* açıklama kutusu sağ üstte (eğrilerin üstünde boş bölge); kırmızı modda çizgi kalınlığı ve kesikle ayırt edilir;
+         Rigel kırmızı modda ayrıca noktalı (.kz-nokta, stil.css): kalınlık farkı 360 px'te 1,6 / 2,1 px, Güneş'ten ayırt edilmiyordu */
       yildizlar.forEach(([T, ad, renk, kes], i) => {
         const y = 50 + i * 20;
-        s += S.cizgi(238, y - 4, 262, y - 4, { renk, kalin: T === 5772 ? 2.6 : 2, kesik: kes });
+        s += (T === 12100 ? '<g class="kz-nokta">' : '') + S.cizgi(238, y - 4, 262, y - 4, { renk, kalin: T === 5772 ? 2.6 : 2, kesik: kes }) + (T === 12100 ? '</g>' : '');
         s += S.yazi(268, y, ad + ' ' + (T >= 10000 ? '12.100' : T) + ' K', { boy: 13, renk: R.metin, kalin: true });
       });
       yildizlar.forEach(([T, ad, renk, kes]) => {
@@ -344,7 +345,7 @@
           const l = ar.x0 + (ar.x1 - ar.x0) * i / 240, v = B(l, T) / ref;
           if (v >= ar.y0) ls.push([ek.X(l), ek.Y(Math.min(v, ar.y1))]);
         }
-        s += S.egri(ls, { renk, kalin: T === 5772 ? 2.6 : 2, kesik: kes });
+        s += (T === 12100 ? '<g class="kz-nokta">' : '') + S.egri(ls, { renk, kalin: T === 5772 ? 2.6 : 2, kesik: kes }) + (T === 12100 ? '</g>' : '');
         const lt = b / T * 1e9, xt = ek.X(lt), yt = ek.Y(B(lt, T) / ref);
         s += S.cizgi(xt, yt, xt, alan.y + alan.h, { renk, kalin: 1, kesik: '2 3', saydam: 0.8 });
         s += S.daire(xt, yt, 4, { dolgu: renk, renk });

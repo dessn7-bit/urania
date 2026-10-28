@@ -332,12 +332,16 @@
         cz.forEach(v => { const p = yansit(v); if (o && p && Math.abs(o.x - p.x) < W && Math.abs(o.y - p.y) < H) { ctx.beginPath(); ctx.moveTo(o.x, o.y); ctx.lineTo(p.x, p.y); ctx.stroke(); } o = p; });
       });
     });
+    const etiketKutu = [];   // yerleşen etiketler: dürbün hedefi adı bunlarla çakışırsa yazılmaz
     ctx.font = 'italic 400 15px Spectral, Georgia, serif';
-    ctx.fillStyle = kir ? 'rgba(194,58,46,.7)' : 'rgba(233,226,208,.55)';
+    /* Kırmızı modda --soluk (siyahta 5,0:1); eski yarı saydam kırmızı 2,4:1'di */
+    ctx.fillStyle = kir ? renk('--soluk') : 'rgba(233,226,208,.55)';
     st.nesneler.ty.forEach(t => {
       if (st.gorus > 70 && t.r > 2) return;
       const p = yansit(t.m); if (!p || p.x < 0 || p.x > W || p.y < 0 || p.y > H) return;
       ctx.fillText(t.ad, p.x, p.y);
+      const w = ctx.measureText(t.ad).width;
+      etiketKutu.push({ x: p.x - w / 2 - 1, y: p.y - 9, w: w + 2, h: 18 });
       isabet.push({ x: p.x, y: p.y, o: 0, ad: t.ad, alt: 'takımyıldızı' });
     });
 
@@ -360,6 +364,7 @@
       if (ad && m < 2.2) {
         ctx.font = '500 13px Plex, system-ui, sans-serif'; ctx.fillStyle = kir ? renk('--soluk') : 'rgba(233,226,208,.8)';
         ctx.fillText(ad, p.x + r + 4, p.y);
+        etiketKutu.push({ x: p.x + r + 3, y: p.y - 8, w: ctx.measureText(ad).width + 2, h: 16 });
       }
       ctx.globalAlpha = 1;
       if (m < 4) isabet.push({ x: p.x, y: p.y, o: 1, ad: ad || 'Yıldız', alt: U.kadir(m) + ' kadir' + (altta ? ' · ufkun altında' : '') });
@@ -371,7 +376,9 @@
       ctx.beginPath(); ctx.arc(p.x, p.y, 7, 0, Math.PI * 2);
       ctx.strokeStyle = renk('--hedef'); ctx.lineWidth = 1.3; ctx.stroke();
       ctx.font = '500 12px Plex, system-ui, sans-serif'; ctx.fillStyle = renk('--hedef');
-      ctx.fillText(h.kisa, p.x + 10, p.y);
+      /* Yakın hedeflerin (Mizar–Alcor, M36–M38) ve parlak yıldız adlarının üstüne yazılmasın: çakışan etiket atlanır */
+      const k = { x: p.x + 9, y: p.y - 8, w: ctx.measureText(h.kisa).width + 2, h: 16 };
+      if (!etiketKutu.some(b => k.x < b.x + b.w && k.x + k.w > b.x && k.y < b.y + b.h && k.y + k.h > b.y)) { ctx.fillText(h.kisa, p.x + 10, p.y); etiketKutu.push(k); }
       isabet.push({ x: p.x, y: p.y, o: 2, ad: h.ad, alt: h.tur + ' · ' + U.kadir(h.kadir) + ' kadir' });
     });
 
@@ -731,6 +738,7 @@
       <video id="arVideo" class="ar-video" playsinline muted hidden></video>
       <h1 class="gorsel-gizli">Gökyüzüne bak</h1>
       <canvas id="arKanvas" class="ar-kanvas" role="img" aria-label="Telefonun baktığı yöndeki gökyüzü"></canvas>
+      <div class="ar-ust-kap">
       <div class="ar-ust">
         <a class="ar-kapat" href="#gok" aria-label="Kapat">×</a>
         <span class="cip-grup">
@@ -741,8 +749,10 @@
           <button type="button" class="dugme" id="arKamera" aria-pressed="false">Kamera</button>
         </span>
       </div>
+      <!-- Şerit ve durum, üst çubuğun altında akışta: dar ekranda düğmeler iki satıra inse ya da şerit uzasa da üst üste binmez -->
       <div class="ar-serit" id="arHedefSerit" hidden><span>Aranan: <b id="arHedefAd"></b> · <span id="arTarif"></span></span><button type="button" class="bag" id="arHedefKapat">bırak</button></div>
       <div class="ar-durum" id="arDurum" role="status" hidden></div>
+      </div>
       <div class="ar-bilgi" id="arBilgi" aria-live="polite" hidden></div>
       <div class="ar-merkez" id="arMerkez"></div>
       <div class="gorunmez" id="arDuyuru" aria-live="polite"></div>

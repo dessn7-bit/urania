@@ -30,6 +30,7 @@
     let isabet = [];
     let olcu = { W: 0, R: 0, cx: 0, cy: 0 };
     let sonDurum = null;
+    let yerlesim = { etiketler: [], engeller: [] };
 
     function boyutla() {
       const css = canvas.clientWidth || 360;
@@ -110,7 +111,8 @@
 
       /* Takımyıldız adları */
       const tyFont = 'italic 400 ' + Math.max(10, W / 46) + 'px Spectral, Georgia, serif';
-      const tyRenk = kir ? 'rgba(194,58,46,.6)' : 'rgba(233,226,208,.42)';
+      /* Takımyıldız adı küçük italik yazı: gece gökte 4,8:1 (eski ,42 saydamlık 3,4:1 idi); kırmızı modda --soluk 4,9:1 (eski 2,0:1) */
+      const tyRenk = kir ? c.soluk : 'rgba(233,226,208,.55)';
       const rankSinir = W < 520 ? 1 : 2;
       tyV.forEach(t => {
         const h = G.ufkaCevir(m, t.m);
@@ -133,6 +135,8 @@
         ctx.beginPath(); ctx.arc(p.x, p.y, r, 0, Math.PI * 2);
         ctx.fillStyle = kir ? c.yildiz : (bvRenk(s[3]) || c.yildiz);
         ctx.fill();
+        /* Parlak yıldızın noktası etiketlerin altında kalmasın (etiketler sonda yerleştirilir) */
+        if (s[2] < 3) engeller.push({ x: p.x, y: p.y, r: r + 0.5, yumusak: true });
         const ad = veri.yildizlar.adlar[i];
         if (ad && s[2] < 1.6) {
           etiket(ad, p.x, p.y, '500 ' + Math.max(10, W / 50) + 'px Plex, system-ui, sans-serif', kir ? c.soluk : 'rgba(233,226,208,.7)', 2 - s[2] / 2, r + 3);
@@ -146,9 +150,12 @@
         const h = G.ufkaCevir(m, G.birimVektor(t.ra, t.dec));
         if (h.alt < 0) return;
         const p = ekran(h.alt, h.az);
-        ctx.beginPath(); ctx.arc(p.x, p.y, 4.5 * Math.max(olc, .8), 0, Math.PI * 2);
+        const hr = 4.5 * Math.max(olc, .8);
+        ctx.beginPath(); ctx.arc(p.x, p.y, hr, 0, Math.PI * 2);
         ctx.strokeStyle = c.hedef; ctx.lineWidth = 1.2; ctx.stroke();
-        etiket(t.kisa, p.x, p.y, '500 ' + Math.max(9, W / 56) + 'px Plex, system-ui, sans-serif', c.hedef, 1, 7);
+        /* Hedef halkası da engel: başka bir etiket halkanın üstüne yazılmasın (Cr 399, M27, M8 çakışıyordu) */
+        engeller.push({ x: p.x, y: p.y, r: hr + 1 });
+        etiket(t.kisa, p.x, p.y, '500 ' + Math.max(9, W / 56) + 'px Plex, system-ui, sans-serif', c.hedef, 1, hr + 3);
         isabet.push({ x: p.x, y: p.y, oncelik: 2, bilgi: '<b>' + Urania.kacis(t.ad) + '</b> · ' + Urania.kacis(t.turAd) + ' · ' + Urania.kadir(t.kadir) + ' kadir · ' + Urania.derece(h.alt) + ' yükseklik' });
       });
 
@@ -182,6 +189,7 @@
           ctx.lineTo(p.x - Math.cos(a) * 8, p.y - Math.sin(a) * 8);
           ctx.stroke();
         }
+        engeller.push({ x: p.x, y: p.y, r: 8 });
         isabet.push({ x: p.x, y: p.y, oncelik: 3, bilgi: '<b>' + Urania.kacis(r.ad) + '</b> radyantı · meteorlar bu noktadan saçılıyormuş gibi görünür' });
       });
 
@@ -223,6 +231,7 @@
         const p = ekran(d.gunes.alt, d.gunes.az);
         ctx.beginPath(); ctx.arc(p.x, p.y, 9, 0, Math.PI * 2);
         ctx.fillStyle = kir ? c.pirinc : '#FFD77A'; ctx.fill();
+        engeller.push({ x: p.x, y: p.y, r: 10 });
         isabet.push({ x: p.x, y: p.y, oncelik: 5, bilgi: '<b>Güneş</b> · ' + Urania.derece(d.gunes.alt) + ' yükseklik. Dürbünle asla bakma.' });
       }
 
@@ -289,11 +298,16 @@
 
     function etiketleriYerlestir(ls, engeller) {
       const kutular = [];
-      /* Ay, gezegen ve Güneş işaretleri de engel sayılır */
-      engeller.forEach(e => kutular.push({ x: e.x - e.r, y: e.y - e.r, w: 2 * e.r, h: 2 * e.r }));
+      yerlesim = { etiketler: [], engeller: engeller.slice() };   // testler için: son çizimin etiket kutuları
+      /* Ay, gezegen, Güneş, parlak yıldız, hedef halkası ve radyant işaretleri de engel sayılır */
+      /* Yumuşak engel (parlak yıldız noktası) yalnız ilk denemede: hiçbir yere sığmayan etiket ikinci turda
+         yıldızın üstüne yazılabilir; Ay, gezegen ve uydu adları (öncelik ≥ 8) kaybolmasın diye üçüncü turda
+         yalnız öbür etiketlerden kaçar. */
+      engeller.forEach(e => kutular.push({ x: e.x - e.r, y: e.y - e.r, w: 2 * e.r, h: 2 * e.r, yumusak: !!e.yumusak, engel: true }));
       const { cx, cy, R } = olcu;
       const icerde = k => [[k.x, k.y], [k.x + k.w, k.y], [k.x, k.y + k.h], [k.x + k.w, k.y + k.h]].every(([x, y]) => Math.hypot(x - cx, y - cy) <= R - 2);
-      const cakisir = k => !icerde(k) || kutular.some(b => k.x < b.x + b.w && k.x + k.w > b.x && k.y < b.y + b.h && k.y + k.h > b.y);
+      const kesisir = (k, b) => k.x < b.x + b.w && k.x + k.w > b.x && k.y < b.y + b.h && k.y + k.h > b.y;
+      const cakisir = (k, tur) => !icerde(k) || kutular.some(b => (tur === 0 || !b.yumusak) && (tur < 2 || !b.engel) && kesisir(k, b));
       ctx.textBaseline = 'middle';
       ls.sort((a, b) => b.oncelik - a.oncelik).forEach(e => {
         ctx.font = e.font;
@@ -301,10 +315,12 @@
         const adaylar = e.merkez
           ? [[e.x - w / 2, e.y - h / 2]]
           : [[e.x + e.ofset, e.y - h / 2], [e.x - e.ofset - w, e.y - h / 2], [e.x - w / 2, e.y - e.ofset - h], [e.x - w / 2, e.y + e.ofset]];
-        for (const [x, y] of adaylar) {
+        const turlar = e.oncelik >= 8 ? [0, 1, 2] : [0, 1];
+        for (const tur of turlar) for (const [x, y] of adaylar) {
           const k = { x: x - 1, y, w: w + 2, h };
-          if (!cakisir(k)) {
+          if (!cakisir(k, tur)) {
             kutular.push(k);
+            yerlesim.etiketler.push(Object.assign({ metin: e.metin, tur }, k));
             ctx.fillStyle = e.renk; ctx.textAlign = 'left';
             ctx.fillText(e.metin, x, y + h / 2);
             return;
@@ -326,7 +342,8 @@
       let en = aday[0] || null;
       const d0 = en ? en.dd : 0;   // eşik en yakın adaya göre (zincirleme kaymasın)
       aday.forEach(a => { if (a.dd <= d0 + 3 && a.h.oncelik > en.h.oncelik) en = a; });
-      tiklaninca(en ? en.h.bilgi : null);
+      /* Konum da verilir: bilgi kutusu dokunulan cismin üstüne binmesin (alttaki cisimde kutu üste çıkar) */
+      tiklaninca(en ? en.h.bilgi : null, en ? { x: en.h.x / olcu.W, y: en.h.y / olcu.W } : null);
     }
     canvas.addEventListener('click', tikla);
     let zamanlayici = null;
@@ -336,7 +353,7 @@
     });
     document.addEventListener('urania:tema', () => { if (sonDurum) ciz(sonDurum); });
 
-    return { ciz };
+    return { ciz, yerlesim: () => yerlesim };
   }
 
   window.Harita = { olustur };

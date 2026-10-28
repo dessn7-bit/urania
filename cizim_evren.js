@@ -255,7 +255,7 @@
       });
       const basamak = (y, ad, metin, a, a2, b, b2, renk) => {
         let o = S.yazi(8, y + 12, ad, { boy: 13, renk: R.metin, kalin: true });
-        o += S.yazi(px, y - 6, metin, { boy: 13, renk: renk });
+        o += S.zeminliYazi(px, y - 6, metin, { boy: 13, renk: renk });   // başvuru çizgileri yazının içinden geçmesin (360 px'te okunmuyordu)
         if (a2 > a) o += S.kutu(X(a), y, X(a2) - X(a), 14, { dolgu: 'none', renk: renk, kalin: 1.2, kesik: '3 3' }, 3);
         o += S.kutu(X(a2), y, X(b) - X(a2), 14, { dolgu: renk, renk: renk, saydam: 0.85 }, 3);
         if (b2 > b) o += S.kutu(X(b), y, X(b2) - X(b), 14, { dolgu: 'none', renk: renk, kalin: 1.2, kesik: '3 3' }, 3);
@@ -344,7 +344,7 @@
       s += S.daire(x, ek.Y(hs * 100), 4, { dolgu: R.vurgu, renk: R.zemin, kalin: 1.2 }) + S.daire(x, ek.Y(hp * 100), 4, { dolgu: R.mavi, renk: R.zemin, kalin: 1.2 });
       s += S.yazi(x - 6, ek.Y(hs * 100) - 7, '7.304', { boy: 13, hiza: 'end', renk: R.metin });
       s += S.yazi(x + 7, ek.Y(hp * 100) + 17, '6.740', { boy: 13, renk: R.metin });
-      s += S.yazi(366, 203, '100 Mpc\'de fark ≈ 564 km/s (%8)', { boy: 13, hiza: 'end', renk: R.soluk });
+      s += S.zeminliYazi(366, 203, '100 Mpc\'de fark ≈ 564 km/s (%8)', { boy: 13, hiza: 'end', renk: R.soluk });   // 100 Mpc çizgisi yazıyı kesmesin
       return s;
     }
   });

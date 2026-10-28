@@ -27,16 +27,30 @@
   function renk(ad) { return getComputedStyle(document.documentElement).getPropertyValue(ad).trim(); }
   function deger(k) { return F.sabitler[k].deger; }
 
-  /* Kanvas hazırlığı: CSS genişliğine göre keskin çizim */
+  /* Kanvas hazırlığı: CSS genişliğine göre keskin çizim. En-boy oranı CSS'e (--en-boy) de yazılır: yatay telefonda
+     kanvas ekran yüksekliğine sığacak kadar daralır (stil.css .sahne canvas). Piksel oranı 3'e kadar: 2,625'lik
+     telefonlarda 2,5 ile sınırlamak çizimi %5 büyütüp bulanıklaştırıyordu. Genişlik kesirli ölçülür (yuvarlanan
+     clientWidth arka tamponu CSS kutusundan bir piksel kaydırıyordu). */
   function kanvas(cv, oran) {
-    const w = cv.clientWidth || 600;
-    const h = Math.round(w * oran);
-    const dpr = Math.min(window.devicePixelRatio || 1, 2.5);
-    if (cv.width !== Math.round(w * dpr)) { cv.width = Math.round(w * dpr); cv.height = Math.round(h * dpr); }
-    cv.style.aspectRatio = (1 / oran).toFixed(4);
+    const enBoy = (1 / oran).toFixed(4);
+    if (cv.dataset.enBoy !== enBoy) { cv.dataset.enBoy = enBoy; cv.style.aspectRatio = enBoy; cv.style.setProperty('--en-boy', enBoy); }
+    const w = cv.getBoundingClientRect().width || cv.clientWidth || 600;
+    const h = w * oran;
+    const dpr = Math.min(window.devicePixelRatio || 1, 3);
+    const gw = Math.round(w * dpr), gh = Math.round(h * dpr);
+    if (cv.width !== gw || cv.height !== gh) { cv.width = gw; cv.height = gh; }
     const ctx = cv.getContext('2d');
-    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.setTransform(gw / w, 0, 0, gh / h, 0, 0);
     return { ctx, w, h };
+  }
+  /* Kanvas etiketi: çizginin ya da şeklin üstüne düşse de okunsun diye sahne zemini renginde ince bir hale ile yazılır */
+  function etiket(ctx, metin, x, y) {
+    ctx.save();
+    ctx.lineJoin = 'round'; ctx.lineWidth = 4; ctx.setLineDash([]);
+    ctx.strokeStyle = document.documentElement.classList.contains('kirmizi') ? '#000' : '#0A1422';
+    ctx.strokeText(metin, x, y);
+    ctx.restore();
+    ctx.fillText(metin, x, y);
   }
 
   /* Kaydırıcının adı yalnız etiket metni (aria-labelledby); değer çıktı kutusundan aria-valuetext'e yazılır */
@@ -155,16 +169,17 @@
       ctx.fillText('olay ufku', cx, cy + R + 18);
       /* astronot: ayakları kara deliğe dönük yatay bir kapsül; gelgite göre boyuna uzar,
          enine incelir (görsel abartı logaritmik) */
-      const boyOn = 30 * (1 + Math.min(4, Math.max(0, Math.log10(1 + st.gelgit)) * 0.55));
-      const ax = Math.max(cx + R + boyOn / 2 + 4, xEkran(st.x) + boyOn / 2);
       const uzama = 1 + Math.min(4, Math.max(0, Math.log10(1 + st.gelgit)) * 0.55);
-      const boy = 30 * uzama, en = 10 / Math.sqrt(uzama);
+      /* Kapsül sağdaki saatlere ve "Uzakta" etiketine değmesin: dar ekranda en çok saatlerin solundaki boşluk kadar uzar */
+      const sinir = w * 0.78 - h * 0.13 - 30;
+      const boy = Math.max(30, Math.min(30 * uzama, sinir - (cx + R + 4))), en = 10 / Math.sqrt(uzama);
+      const ax = Math.min(Math.max(cx + R + boy / 2 + 4, xEkran(st.x) + boy / 2), Math.max(cx + R + boy / 2 + 4, sinir - boy / 2));
       ctx.save(); ctx.translate(ax, cy);
       ctx.fillStyle = renk('--parsomen');
       ctx.beginPath(); ctx.roundRect(-boy / 2, -en / 2, boy - en, en, en / 2); ctx.fill();
       ctx.beginPath(); ctx.arc(boy / 2 - en / 2 + 1, 0, en * 0.75, 0, Math.PI * 2); ctx.fill();
       ctx.fillStyle = renk('--soluk'); ctx.font = '500 12px Plex, sans-serif'; ctx.textAlign = 'center';
-      ctx.fillText('sen', 0, -en - 8);
+      etiket(ctx, 'sen', 0, -en - 8);
       ctx.restore();
       /* iki saat */
       if (!azHareket) { saatUzak += dt; saatYakin += dt * st.oran; }
@@ -184,7 +199,7 @@
       ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x + Math.sin(a) * r * 0.78, y - Math.cos(a) * r * 0.78);
       ctx.strokeStyle = renk('--parsomen'); ctx.lineWidth = 2; ctx.stroke();
       ctx.fillStyle = renk('--soluk'); ctx.font = '500 12px Plex, sans-serif'; ctx.textAlign = 'center';
-      ctx.fillText(ad, x, y + r + 15);
+      etiket(ctx, ad, x, y + r + 15);
     }
     kS.addEventListener('input', hesapla);
     uS.addEventListener('input', hesapla);
@@ -307,7 +322,10 @@
       ctx.fillStyle = renk('--gezegen'); ctx.fill();
       if (azHareket) {
         ctx.fillStyle = renk('--soluk'); ctx.font = '500 12px Plex, sans-serif'; ctx.textAlign = 'left';
-        ctx.fillText('Hareket azaltıldı: yalnız öngörülen yol gösteriliyor.', 10, h - 10);
+        /* dar ekranda tek satıra sığmaz: iki satır */
+        const not = 'Hareket azaltıldı: yalnız öngörülen yol gösteriliyor.';
+        if (ctx.measureText(not).width <= w - 20) etiket(ctx, not, 10, h - 10);
+        else { etiket(ctx, 'Hareket azaltıldı:', 10, h - 26); etiket(ctx, 'yalnız öngörülen yol gösteriliyor.', 10, h - 10); }
       }
     }
     yS.addEventListener('input', kur); hS.addEventListener('input', kur);
@@ -395,14 +413,15 @@
         ctx.beginPath(); ctx.arc(X(r.sicaklik), Y(r.isima), 2.5, 0, Math.PI * 2); ctx.fillStyle = renk('--pirinc'); ctx.fill();
         /* Kalabalığı önlemek için yalnız tayf sınıflarının başı etiketlenir */
         if (!/^[OBAFKM]0V$|^B5V$/.test(r.tip)) return;
+        /* bandın sağ üstüne: bant sağ aşağı indiği için etiket banda, "Güneş" yazısına ve seçili yıldıza binmez */
         ctx.fillStyle = renk('--soluk'); ctx.font = '500 10px Plex, sans-serif'; ctx.textAlign = 'left';
-        ctx.fillText(r.tip, X(r.sicaklik) + 5, Y(r.isima) + 12);
+        etiket(ctx, r.tip, X(r.sicaklik) + 6, Y(r.isima) - 6);
       });
       /* Güneş */
       const gx = X(deger('T_gunes')), gy = Y(1);
       ctx.beginPath(); ctx.arc(gx, gy, 5, 0, Math.PI * 2); ctx.strokeStyle = renk('--parsomen'); ctx.lineWidth = 1.2; ctx.stroke();
       ctx.beginPath(); ctx.arc(gx, gy, 1.3, 0, Math.PI * 2); ctx.fillStyle = renk('--parsomen'); ctx.fill();
-      ctx.font = 'italic 400 13px Spectral, serif'; ctx.textAlign = 'right'; ctx.fillText('Güneş', gx - 9, gy + 16);
+      ctx.font = 'italic 400 13px Spectral, serif'; ctx.textAlign = 'right'; etiket(ctx, 'Güneş', gx - 9, gy + 16);
       /* seçili yıldız */
       if (st.L) {
         const x = X(st.Tk), y = Y(st.L);
@@ -481,7 +500,7 @@
 
   const KURUCU = { karadelik, yorunge, yildiz, gorelilik };
   /* Yeni deneyler (deneyler2.js) ortak yardımcılarla kurulur */
-  function ortak(kok) { return { F, U, R, kanvas, kaydirici, olcumler, kaynakSatiri, dongu: ciz => dongu(ciz, kok), renk, deger, azHareket, el: () => el }; }
+  function ortak(kok) { return { F, U, R, kanvas, etiket, kaydirici, olcumler, kaynakSatiri, dongu: ciz => dongu(ciz, kok), renk, deger, azHareket, el: () => el }; }
   function kurucu(id) {
     const kendi = (o, k) => !!o && Object.prototype.hasOwnProperty.call(o, k);   // "#deney/constructor" gibi adlar prototipe takılmasın
     if (kendi(KURUCU, id)) return KURUCU[id];

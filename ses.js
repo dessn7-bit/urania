@@ -133,7 +133,8 @@
     const el = ot.birimler[ot.i] && ot.birimler[ot.i].el;
     if (el && ot.kaydirilan !== ot.i) {   // aynı blokta tekrar kaydırma yok (kullanıcı elle kaydırabilsin)
       ot.kaydirilan = ot.i;
-      try { el.scrollIntoView({ block: 'center', behavior: 'smooth' }); } catch (e) { /* eski tarayıcı */ }
+      /* Hareket azaltma tercihinde kayarak değil, doğrudan (CSS scroll-behavior, JS'teki 'smooth'u geçersiz kılmaz) */
+      try { el.scrollIntoView({ block: 'center', behavior: (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) ? 'auto' : 'smooth' }); } catch (e) { /* eski tarayıcı */ }
     }
   }
 

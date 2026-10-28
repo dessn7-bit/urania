@@ -93,6 +93,7 @@
           <label class="secim-satir"><input type="checkbox" id="gkKOto"> <span><b>Her zaman bulunduğum yeri kullan</b><br><span class="soluk kucuk">Uygulama her açıldığında ve 10 dakikada bir telefonun konumunu alır.</span></span></label>
           <div id="gkKElle">
           <button type="button" class="dugme" id="gkGps" style="width:100%;margin:12px 0 14px">Şu anki konumu bir kez al</button>
+          <p class="soluk kucuk" id="gkKDurum" role="status"></p>
           <div class="alan"><label for="gkKAd">Ad</label><input id="gkKAd" autocomplete="off" maxlength="80"></div>
           <div class="hesap-ızgara">
             <div class="alan"><label for="gkKEnlem">Enlem (°K)</label><input id="gkKEnlem" inputmode="decimal"></div>
@@ -101,7 +102,6 @@
           <div class="alan"><label for="gkKDilim">Saat dilimi</label><select id="gkKDilim"></select>
             <p class="soluk kucuk" id="gkKDilimNot">Konumdan tahmin edildi; yanlışsa listeden seç (yaz saati ve ülke sınırları dilime göre hesaplanır).</p></div>
           </div>
-          <p class="soluk kucuk" id="gkKDurum" role="status"></p>
           <div class="cip-grup" style="justify-content:space-between">
             <button type="button" class="dugme" id="gkKSifirla">Varsayılana dön (Fetih Mah.)</button>
             <span class="cip-grup"><button type="button" class="dugme" id="gkKVazgec">Vazgeç</button><button value="kaydet" class="dugme dolu" id="gkKKaydet">Kaydet</button></span>
@@ -312,8 +312,12 @@
   function jupiterSema(zaman) {
     const ls = G.jupiterUydulari(zaman), R = G.jupiterYaricap(zaman);
     const enUzak = Math.max(60, ...ls.map(m => Math.abs(m.dogu))) * 1.12;
-    const W = 320, H = 54, cx = W / 2, cy = 24, olc = (W / 2 - 8) / enUzak;
+    const W = 320, cx = W / 2, olc = (W / 2 - 8) / enUzak;
     const r = Math.max(4, R * olc);
+    /* Uyduların yörünge düzlemi gökte ~20°'ye kadar eğik görünür (kuzey yukarı): yükseklik sabit 54 olunca dış
+       uydular (Ganymede, Callisto) çizimin dışında kalıyordu. Yükseklik en kuzeydeki ve en güneydeki uyduya göre. */
+    const ust = Math.max(r, ...ls.map(m => m.kuzey * olc)) + 4, alt = Math.max(r, ...ls.map(m => -m.kuzey * olc)) + 4;
+    const cy = 14 + ust, etiketY = cy + alt + 12, H = Math.ceil(etiketY + 4);
     const durum = m => {
       const ic = Math.hypot(m.dogu, m.kuzey) < R;
       if (ic && m.derinlik > 0) return 'arkada';
@@ -323,7 +327,7 @@
     const nok = ls.map(m => {
       const x = cx - m.dogu * olc, y = cy - m.kuzey * olc, d = durum(m);
       return `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="2.6" class="${d === 'arkada' ? 'uydu-gizli' : 'uydu'}"/>
-        <text x="${x.toFixed(1)}" y="${(cy + 22).toFixed(1)}" text-anchor="middle" class="uydu-ad">${m.ad[0]}</text>`;
+        <text x="${x.toFixed(1)}" y="${etiketY.toFixed(1)}" text-anchor="middle" class="uydu-ad">${m.ad[0]}</text>`;
     }).join('');
     const bati = ls.filter(m => m.dogu < 0).map(m => m.ad), dogu = ls.filter(m => m.dogu >= 0).map(m => m.ad);
     const notlar = ls.filter(m => durum(m)).map(m => m.ad + (durum(m) === 'onde' ? ' Jüpiter\'in önünden geçiyor' : ' Jüpiter\'in arkasında, görünmez'));
@@ -359,7 +363,7 @@
     const ayAd = ['Oca', 'Şub', 'Mar', 'Nis', 'May', 'Haz', 'Tem', 'Ağu', 'Eyl', 'Eki', 'Kas', 'Ara'];
     const aralik = `${bas[1]} ${ayAd[bas[0] - 1]} – ${bit[1]} ${ayAd[bit[0] - 1]}`;
     const rozet = m.aktif ? '<span class="rozet iyi">etkin</span>' : '';
-    const parca = [`zirve ${U.gun(zirve)} (${U.kacGun(m.gunFark)})`, aralik, /\(.*\)/.test(String(m.zhr)) ? 'ZHR ' + U.kacis(String(m.zhr).replace(/^\S+\s*/, '')) : null, m.hiz ? m.hiz + ' km/s' : null, `zirvede Ay %${Math.round(ayOran * 100)}`];
+    const parca = [`zirve ${U.gun(zirve)} (${U.kacGun(m.gunFark)})`, aralik, /\(.*\)/.test(String(m.zhr)) ? 'ZHR ' + U.kacis(String(m.zhr).replace(/^\S+\s*/, '')) : null, m.hiz ? m.hiz + '\u00a0km/s' : null, `zirvede Ay %${Math.round(ayOran * 100)}`];
     if (m.radyantTepe && !tam) parca.push(`radyant ${m.radyantGece === 'bu gece' ? 'bu gece' : 'zirve gecesi'} en çok ${U.derece(m.radyantTepe.alt)}`);
     if (!tam && m.gunFark > 0) parca.push(takvimBag({ baslik: m.ad + ' meteor yağmuru zirvesi', bas: zirve, aciklama: 'IMO takvimine göre zirve. ZHR ' + m.zhr + '; zirvede Ay %' + Math.round(ayOran * 100) + ' aydınlık. (Urania)' }));
     const tahminNot = m.tahmini ? `<br><span class="kucuk">Zirve, IMO ${m.tahmini} takvimindeki Güneş boylamından (λ☉ ${U.sayi(m.gunes_boylami, 2)}°) hesaplandı; IMO bu yılın takvimini yayımlayınca birkaç saat değişebilir.</span>` : '';
@@ -728,7 +732,7 @@
       kap._bagli = true;
       kap.addEventListener('click', e => {
         const b = e.target.closest('.hava-saat'); if (!b) return;
-        kap.querySelectorAll('.hava-saat').forEach(x => x.classList.toggle('secili', x === b));
+        kap.querySelectorAll('.hava-saat').forEach(x => { x.classList.toggle('secili', x === b); x.setAttribute('aria-pressed', String(x === b)); });
         kap.querySelector('#gkHavaDetay').textContent = b.dataset.detay;
       });
     }
@@ -744,7 +748,7 @@
     const detay = s => `${U.saat(s.t)}: bulut %${s.bulut} (alçak %${s.alcak}, orta %${s.orta}, yüksek %${s.yuksek})` +
       (s.yagisOl != null ? ` · önceki saatte yağış olasılığı %${s.yagisOl}, ${U.sayi(s.yagis || 0, 1)} mm` : '') +
       ` · nem %${s.nem} · rüzgâr ${Math.round(s.ruzgar)} km/sa`;
-    const cubuk = oz.ls.map((s, i) => `<button type="button" class="hava-saat" data-detay="${U.kacis(detay(s))}" aria-label="${U.kacis(detay(s))}">
+    const cubuk = oz.ls.map((s, i) => `<button type="button" class="hava-saat" aria-pressed="false" data-detay="${U.kacis(detay(s))}" aria-label="${U.kacis(detay(s))}">
         <span class="hava-iz"><span class="hava-dolu" style="height:${Math.max(2, s.bulut)}%"></span></span>
         <span class="yagis-iz"><span class="yagis-dolu" style="height:${s.yagisOl != null ? Math.max(0, s.yagisOl) : 0}%"></span></span>
         <span class="hava-etiket">${i % 2 === 0 ? U.saat(s.t).slice(0, 2) : ''}</span></button>`).join('');
@@ -761,7 +765,7 @@
     kap.innerHTML = `<p class="hava-cumle okunur">${cumle}${yCumle ? '<br>' + yCumle : ''}</p>
       <div class="hava-cubuklar" role="group" aria-label="Saatlik bulut oranı">${cubuk}</div>
       <p class="kucuk" id="gkHavaDetay" aria-live="polite"></p>
-      <p class="kaynak">Gri çubuk bulut oranı, altındaki mavi çubuk yağış olasılığı; bir saate dokununca ayrıntısı çıkar. ${h.eski ? 'Çevrimdışı: son güncelleme ' + U.saat(h.alindi) + ', ' + U.gun(h.alindi) + '. ' : ''}${kaynak}</p>`;
+      <p class="kaynak">Üstteki uzun çubuk bulut oranı, alttaki kısa çubuk yağış olasılığı; bir saate dokununca ayrıntısı çıkar. ${h.eski ? 'Çevrimdışı: son güncelleme ' + U.saat(h.alindi) + ', ' + U.gun(h.alindi) + '. ' : ''}${kaynak}</p>`;
   }
 
   /* planBekle: plan, Algol hesabından sonra ayrıca yazılır (ilk açılışta uzun görev bölünsün) */
@@ -816,11 +820,11 @@
     el.querySelector('#gkKAd').value = k.ad;
     el.querySelector('#gkKEnlem').value = String(k.enlem).replace('.', ',');
     el.querySelector('#gkKBoylam').value = String(k.boylam).replace('.', ',');
-    el.querySelector('#gkKDurum').textContent = '';
+    durumYazK('');
     el.querySelectorAll('#gkKEnlem, #gkKBoylam').forEach(i => { i.removeAttribute('aria-invalid'); i.removeAttribute('aria-describedby'); });
     const oto = el.querySelector('#gkKOto');
     oto.checked = U.otoAcik();
-    el.querySelector('#gkKElle').hidden = oto.checked;
+    otoGoster(oto.checked);
     if (p.showModal) p.showModal(); else p.setAttribute('open', '');
   }
   /* Sıkı okuma: "41,5abc", "41,0,5", "1e1" kabul edilmez; ekranda kullanılan "−" (U+2212) eksi sayılır */
@@ -839,25 +843,35 @@
     });
     return e && b ? { enlem, boylam } : null;
   }
+  /* Durum satırı: hata (izin yok, geçersiz sayı) uyarı renginde; bilgi ("Konum alınıyor…") soluk */
+  function durumYazK(metin, hata) {
+    const d = el.querySelector('#gkKDurum');
+    d.textContent = metin;
+    d.classList.toggle('hata', !!hata);
+  }
+  /* "Her zaman bulunduğum yeri kullan" açıkken elle konum alanları ve onlara ait "Varsayılana dön" gizli */
+  function otoGoster(acik) {
+    el.querySelector('#gkKElle').hidden = acik;
+    el.querySelector('#gkKSifirla').hidden = acik;
+  }
   function konumBagla() {
     const p = el.querySelector('#gkKonumPanel');
     el.querySelector('#gkKonumDegis').addEventListener('click', konumPaneli);
     el.querySelector('#gkGps').addEventListener('click', () => {
-      const d = el.querySelector('#gkKDurum');
-      if (!navigator.geolocation) { d.textContent = 'Bu tarayıcı konum vermiyor; enlem ve boylamı elle yaz.'; return; }
-      d.textContent = 'Konum alınıyor…';
+      if (!navigator.geolocation) { durumYazK('Bu tarayıcı konum vermiyor; enlem ve boylamı elle yaz.', true); return; }
+      durumYazK('Konum alınıyor…');
       navigator.geolocation.getCurrentPosition(pos => {
         el.querySelector('#gkKEnlem').value = pos.coords.latitude.toFixed(3).replace('.', ',');
         el.querySelector('#gkKBoylam').value = pos.coords.longitude.toFixed(3).replace('.', ',');
         el.querySelector('#gkKAd').value = 'Bulunduğum yer';
         gpsDilim = Intl.DateTimeFormat().resolvedOptions().timeZone;
         if (!dilimElle) dilimDoldur(gpsDilim);
-        d.textContent = 'Konum alındı (±' + Math.round(pos.coords.accuracy) + ' m). Kaydet\'e bas.';
+        durumYazK('Konum alındı (±' + Math.round(pos.coords.accuracy) + ' m). Kaydet\'e bas.');
       }, err => {
-        d.textContent = err.code === 1 ? 'Konum izni verilmedi. Tarayıcı ayarlarından izin ver ya da elle yaz.' : 'Konum alınamadı; elle yaz.';
+        durumYazK(err.code === 1 ? 'Konum izni verilmedi. Tarayıcı ayarlarından izin ver ya da elle yaz.' : 'Konum alınamadı; elle yaz.', true);
       }, { enableHighAccuracy: false, timeout: 15000, maximumAge: 600000 });
     });
-    el.querySelector('#gkKOto').addEventListener('change', e => { el.querySelector('#gkKElle').hidden = e.target.checked; });
+    el.querySelector('#gkKOto').addEventListener('change', e => otoGoster(e.target.checked));
     el.querySelector('#gkKDilim').addEventListener('change', () => { dilimElle = true; });
     /* Vazgeç gönderim düğmesi değil: Enter formun ilk gönderim düğmesi olan Kaydet'e basar */
     el.querySelector('#gkKVazgec').addEventListener('click', () => { const p = el.querySelector('#gkKonumPanel'); if (p.close) p.close('iptal'); else p.removeAttribute('open'); });
@@ -874,7 +888,7 @@
     el.querySelector('#gkKKaydet').addEventListener('click', e => {
       if (el.querySelector('#gkKOto').checked || konumGecerli()) return;
       e.preventDefault();
-      el.querySelector('#gkKDurum').textContent = 'Enlem −90 ile 90, boylam −180 ile 180 arasında bir sayı olmalı (ör. 41,02 ya da −33,87).';
+      durumYazK('Enlem −90 ile 90, boylam −180 ile 180 arasında bir sayı olmalı (ör. 41,02 ya da −33,87).', true);
       (el.querySelector('#gkKEnlem[aria-invalid="true"]') || el.querySelector('#gkKBoylam')).focus();
     });
     p.addEventListener('close', () => {
@@ -959,10 +973,11 @@
     el.querySelector('#gkBuGece').addEventListener('click', () => el.querySelector('#gkSimdi').click());
     const bilgi = el.querySelector('#gkBilgi');
     let bilgiSayac = null;
-    durum.harita = Harita.olustur(el.querySelector('#gkLevha'), durum.veri, html => {
+    durum.harita = Harita.olustur(el.querySelector('#gkLevha'), durum.veri, (html, yer) => {
       clearTimeout(bilgiSayac);
       if (!html) { bilgi.hidden = true; return; }
       bilgi.innerHTML = html; bilgi.hidden = false;
+      bilgi.classList.toggle('ustte', !!yer && yer.y > 0.55);   // haritanın alt kısmındaki cisim kutunun altında kalmasın
       bilgiSayac = setTimeout(() => { bilgi.hidden = true; }, 6000);
     });
     konumBagla();
@@ -1008,7 +1023,8 @@
       const [yildizlar, takimyildizlar, hedefler, meteor, ortmeY, algol] = await Promise.all([U.veri('yildizlar'), U.veri('takimyildiz'), U.veri('hedefler'), U.veri('meteor'), U.veri('ortme_yildiz'), U.veri('algol')]);
       durum.veri = { yildizlar, takimyildizlar, hedefler: hedefler.hedefler, hedefKaynak: hedefler.kaynak, meteor, ortmeYildiz: ortmeY.y, algol };
     } catch (e) {
-      el.innerHTML = '<div class="hata-kutu" role="alert">Gök verisi yüklenemedi: ' + U.kacis(e.message) + '. Başka bir sekmeye geçip dönünce yeniden denenir; sorun sürerse internet bağlantısını kontrol et.</div>';
+      if (window.Tani) Tani.hataEkle('gök verisi: ' + (e && e.message));
+      el.innerHTML = '<h1>Bu gece gökyüzü</h1><div class="hata-kutu" role="alert">Gök verisi yüklenemedi. Başka bir sekmeye geçip dönünce yeniden denenir; sorun sürerse internet bağlantısını kontrol et.</div>';
       return false;   // uygulama.js: bölüm bir sonraki açılışta yeniden kurulur
     }
     iskelet();

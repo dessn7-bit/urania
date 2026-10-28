@@ -137,8 +137,8 @@
         ctx.beginPath(); ctx.arc(X(p.x), Y(p.y), 5, 0, IKI_PI); ctx.fillStyle = o.renk('--parsomen'); ctx.fill();
         ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(X(p.x), Y(p.y)); ctx.strokeStyle = o.renk('--soluk'); ctx.stroke();
         ctx.fillStyle = o.renk('--soluk'); ctx.font = '500 11px Plex, sans-serif'; ctx.textAlign = 'center';
-        ctx.fillText('enberi', X(a * (1 - e)) + 0, cy + 16);
-        ctx.fillText('enöte', X(-a * (1 + e)), cy + 16);
+        o.etiket(ctx, 'enberi', X(a * (1 - e)), cy + 16);        // yörünge çizgisi etiketin içinden geçer: haleli
+        o.etiket(ctx, 'enöte', X(-a * (1 + e)), cy + 16);
         /* her karede değişir: yalnız metin değiştiyse yazılır (azaltılmış harekette aynı değer yeniden duyurulmasın) */
         yazDegisirse(kap.querySelector('#kpV'), U.sayi(H.visViva(GM, p.r * AU, a * AU) / 1e3, 1) + ' km/s');
         yazDegisirse(kap.querySelector('#kpR'), U.sayi(p.r, 3) + ' AB');
@@ -217,7 +217,7 @@
           const ga = -st.aci * DER, gx = cx + Math.cos(ga) * h * 0.44, gy = cy - Math.sin(ga) * h * 0.44;
           ctx.save(); ctx.setLineDash([4, 5]); ctx.strokeStyle = 'rgba(255,210,122,.6)'; ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(gx, gy); ctx.stroke(); ctx.restore();
           ctx.beginPath(); ctx.arc(gx, gy, 9, 0, IKI_PI); ctx.fillStyle = '#FFD27A'; ctx.fill();
-          ctx.fillStyle = o.renk('--soluk'); ctx.fillText('Güneş yönü', Math.min(w - 36, Math.max(36, gx)), Math.min(h - 4, Math.max(12, gy + (gy > cy ? 24 : -14))));
+          ctx.fillStyle = o.renk('--soluk'); o.etiket(ctx, 'Güneş yönü', Math.min(w - 36, Math.max(36, gx)), Math.min(h - 4, Math.max(12, gy + (gy > cy ? 24 : -14))));
         }
         /* noktadaki deniz seviyesi: bir gün boyunca grafik (iki kabarma) */
         const gx0 = w * 0.06, gy0 = h * 0.9, gw = w * 0.32, gh = h * 0.12;
@@ -293,7 +293,15 @@
         ctx.strokeStyle = o.renk('--parsomen'); ctx.lineWidth = 2; ctx.stroke();
         if (st.tepe >= l0) { ctx.save(); ctx.setLineDash([3, 4]); ctx.strokeStyle = o.renk('--pirinc'); ctx.beginPath(); ctx.moveTo(X(st.tepe), ust); ctx.lineTo(X(st.tepe), hh - alt); ctx.stroke(); ctx.restore(); }
         ctx.fillStyle = o.renk('--soluk'); ctx.font = '500 11px Plex, sans-serif'; ctx.textAlign = 'center';
-        [500, 1000, 1500, 2000, 2500].forEach(nm => ctx.fillText(nm + ' nm', X(nm), hh - 10));
+        /* Son etiket sağa yaslı (ortalanınca kenarda kesiliyordu). Dar kanvasta birim her etikette değil, eksenin
+           solunda bir kez yazılır (yoksa etiketler birbirine değiyordu). */
+        const dar = ctx.measureText('2.000 nm').width * 5 + 40 > w - sol - sag;
+        [500, 1000, 1500, 2000, 2500].forEach((nm, i, ls) => {
+          const son = i === ls.length - 1;
+          ctx.textAlign = son ? 'right' : 'center';
+          ctx.fillText(U.sayi(nm, 0) + (dar ? '' : ' nm'), son ? w - sag : X(nm), hh - 10);
+        });
+        if (dar) { ctx.textAlign = 'left'; ctx.fillText('nm', 4, hh - 10); }
         /* yıldız rengi kutusu */
         ctx.beginPath(); ctx.arc(w - 30, ust + 22, 14, 0, IKI_PI); ctx.fillStyle = yildizRengi(st.T); ctx.fill();
         /* tayf şeridi: 380–750 nm, soğurma çizgileri */
@@ -388,7 +396,9 @@
         const ex = vr * Math.abs(1 - 2 * kk);
         ctx.ellipse(0, 0, ex, vr, 0, Math.PI / 2, -Math.PI / 2, kk < 0.5);
         ctx.fillStyle = '#EDEDED'; ctx.fill(); ctx.restore();
-        ctx.fillStyle = o.renk('--soluk'); ctx.textAlign = 'center'; ctx.fillText('Dünya\'dan (kuzey yarım küre)', vx, vy + vr + 18);
+        ctx.fillStyle = o.renk('--soluk'); ctx.textAlign = 'center';
+        const ad = 'Dünya\'dan (kuzey yarım küre)', yw = ctx.measureText(ad).width / 2;   // dar kanvasta sağ kenara taşmasın
+        ctx.fillText(ad, Math.max(yw + 4, Math.min(vx, w - yw - 4)), vy + vr + 18);
         /* alt şerit: yan görünüş — Ay'ın tutuluma göre yüksekliği (abartılı) */
         const by = h * 0.84, bw = w * 0.9, bx = w * 0.05;
         ctx.strokeStyle = 'rgba(255,210,122,.6)'; ctx.beginPath(); ctx.moveTo(bx, by); ctx.lineTo(bx + bw, by); ctx.stroke();

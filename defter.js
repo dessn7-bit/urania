@@ -336,7 +336,7 @@
     a.download = 'urania-defter-' + bg.getFullYear() + '-' + iki(bg.getMonth() + 1) + '-' + iki(bg.getDate()) + '.json';   // yerel tarih
     document.body.appendChild(a); a.click(); a.remove();
     setTimeout(() => URL.revokeObjectURL(a.href), 2000);
-    el.querySelector('#dfYedekDurum').textContent = ls.length + ' kayıt indirildi.';
+    yedekDurum(ls.length + ' kayıt indirildi.');
   }
   /* Yedekten gelen kayıt sıkı denetlenir; metinler zaten her yerde kaçışlanır */
   function gecerliKayit(k) {
@@ -359,19 +359,23 @@
     return { id: k.id, zaman: new Date(k.zaman).toISOString(), cisim: { anahtar: k.cisim.anahtar, ad: k.cisim.ad }, alet: k.alet, kosul: k.kosul, not: k.not || '',
       konum, otomatik: oo };
   }
+  /* Yedek durum satırı: hata iletisi uyarı renginde (başarı iletisinden ayırt edilsin) */
+  function yedekDurum(metin, hatali) {
+    const d = el.querySelector('#dfYedekDurum');
+    d.textContent = metin; d.classList.toggle('hata', !!hatali);
+  }
   function yedekYukle(e) {
     const dosya = e.target.files && e.target.files[0];
-    const durumEl = el.querySelector('#dfYedekDurum');
     /* Seçim hemen temizlenir (File nesnesi elde kalır): hata da olsa aynı dosya yeniden seçilebilsin */
     e.target.value = '';
     if (!dosya) return;
     const r = new FileReader();
-    r.onerror = () => { durumEl.textContent = 'Bu dosya okunamadı.'; };
+    r.onerror = () => { yedekDurum('Bu dosya okunamadı.', true); };
     r.onload = () => {
       let j;
-      try { j = JSON.parse(r.result); } catch (h) { durumEl.textContent = 'Bu dosya okunamadı: geçerli bir JSON değil.'; return; }
+      try { j = JSON.parse(r.result); } catch (h) { yedekDurum('Bu dosya okunamadı: geçerli bir JSON değil.', true); return; }
       const gelen = Array.isArray(j) ? j : (j && j.kayitlar);
-      if (!Array.isArray(gelen)) { durumEl.textContent = 'Bu dosya bir Urania defter yedeği değil.'; return; }
+      if (!Array.isArray(gelen)) { yedekDurum('Bu dosya bir Urania defter yedeği değil.', true); return; }
       const ls = kayitlar();
       const var_ = new Set(ls.map(k => k.id));
       let eklenen = 0, atlanan = 0, gecersiz = 0;
@@ -380,9 +384,9 @@
         if (var_.has(k.id)) { atlanan++; return; }
         ls.push(temizle(k)); var_.add(k.id); eklenen++;
       });
-      if (eklenen && !kaydet(ls)) { durumEl.textContent = 'Yüklenemedi: depolama alanı dolu ya da kapalı. Hiçbir kayıt eklenmedi.'; return; }
+      if (eklenen && !kaydet(ls)) { yedekDurum('Yüklenemedi: depolama alanı dolu ya da kapalı. Hiçbir kayıt eklenmedi.', true); return; }
       listeYaz();
-      durumEl.textContent = `${eklenen} kayıt eklendi` + (atlanan ? `, ${atlanan} kayıt zaten vardı` : '') + (gecersiz ? `, ${gecersiz} kayıt bozuk olduğu için atlandı` : '') + '.';
+      yedekDurum(`${eklenen} kayıt eklendi` + (atlanan ? `, ${atlanan} kayıt zaten vardı` : '') + (gecersiz ? `, ${gecersiz} kayıt bozuk olduğu için atlandı` : '') + '.', !eklenen && gecersiz > 0);
     };
     r.readAsText(dosya);
   }

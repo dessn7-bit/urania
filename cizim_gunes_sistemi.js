@@ -463,7 +463,7 @@
       s += S.daire(dx2, cy, dr2, { dolgu: R.yuzey2, renk: R.mavi, kalin: 1.5 });
       s += S.yazi(dx2, cy + 5, 'Dünya', { boy: 13, hiza: 'middle' });
       s += S.cizgi(ayX, cy + 12, ayX, cy + 32, { renk: R.uyari, kalin: 1 });
-      s += S.yazi(ayX, cy + 46, 'Ay: tam gölgede', { boy: 13, hiza: 'middle', renk: R.uyari });
+      s += S.zeminliYazi(ayX, cy + 46, 'Ay: tam gölgede', { boy: 13, hiza: 'middle', renk: R.uyari });   // yarı gölge taraması yazının içinden geçmesin
       s += S.yazi(36, cy + 46, 'Güneş', { boy: 13, renk: R.gunes });
       /* gösterge */
       s += S.kutu(40, 330, 16, 13, { dolgu: R.gunes, renk: 'none', saydam: ISIK }) + S.kutu(40, 330, 16, 13, { renk: R.soluk });

@@ -115,11 +115,12 @@
         const a = oku('hkA') * d('au'), M = oku('hkM') * d('M_gunes');
         if (!(a > 0 && M > 0)) return hata('İki değer de pozitif olmalı.', [!(a > 0) && 'hkA', !(M > 0) && 'hkM']);
         const T = 2 * Math.PI * Math.sqrt(a * a * a / (d('G') * M));
+        if (!isFinite(T) || !(T > 0)) return hata('Değerler hesaplanamayacak kadar büyük ya da küçük.', ['hkA', 'hkM']);
         const v = 2 * Math.PI * a / T;
         const gunEk = T >= 365.25 * 86400 && T < 1000 * 365.25 * 86400 ? ` (${U.sayi(T / 86400, 1)} gün)` : '';
         /* Hız ışık hızına yaklaşırsa (yörünge kara deliğin ufkuna denk) Newton yasası geçersiz */
         if (!(v < 0.1 * d('c'))) return `<b>${sure(T)}${gunEk}</b><span class="ek">Ortalama yörünge hızı ${v >= d('c') ? 'ışık hızını aşıyor' : U.sayi(v / 1e3, 0) + ' km/s, ışık hızının %' + U.sayi(v / d('c') * 100, 0) + "'i"}: bu kadar sıkı bir yörüngede Newton'un yasası geçersizdir (genel görelilik gerekir; kütle bu yarıçapta bir kara delik olabilir).</span>`;
-        return `<b>${sure(T)}${gunEk}</b><span class="ek">Ortalama yörünge hızı ${U.sayi(v / 1e3, 2)} km/s (dairesel yaklaşımla).</span>`;
+        return `<b>${sure(T)}${gunEk}</b><span class="ek">Ortalama yörünge hızı ${v / 1e3 < 0.01 ? U.bilimsel(v / 1e3, 3) : U.sayi(v / 1e3, 2)} km/s (dairesel yaklaşımla).</span>`;
       },
       formul: 'T = 2π √(a³ / GM)', kaynak: ['G', 'au', 'M_gunes', 'c']
     },
@@ -132,7 +133,9 @@
         if (isNaN(m) || !(dp > 0)) return hata('Kadir bir sayı, uzaklık pozitif olmalı.', [isNaN(m) && 'mgM', !(dp > 0) && 'mgD']);
         const M = m - 5 * Math.log10(dp / 10);
         const L = Math.pow(10, 0.4 * (d('MV_gunes') - M));
-        return `<b>M = ${U.kadir(M)}</b><span class="ek">Uzaklık modülü m − M = ${eksi(m - M)}.</span><span class="ek">Görsel (V) bantta Güneş'in yaklaşık ${U.bilimsel(L, 2)} katı parlak (Güneş'in mutlak V kadiri ${U.sayi(d('MV_gunes'), 2)} alınarak).</span>`;
+        /* Oran sayıya sığmıyorsa (sonsuz ya da sıfır) "— katı parlak" yazmasın */
+        const karsi = isFinite(L) && L > 0 ? `Görsel (V) bantta Güneş'in yaklaşık ${U.bilimsel(L, 2)} katı parlak` : `Güneş'le parlaklık oranı hesaplanamayacak kadar ${L > 0 ? 'büyük' : 'küçük'}`;
+        return `<b>M = ${U.kadir(M)}</b><span class="ek">Uzaklık modülü m − M = ${eksi(m - M)}.</span><span class="ek">${karsi} (Güneş'in mutlak V kadiri ${U.sayi(d('MV_gunes'), 2)} alınarak).</span>`;
       },
       formul: 'M = m − 5 log₁₀(d / 10 pc)', kaynak: ['MV_gunes']
     },
@@ -157,8 +160,11 @@
         let p = oku('paP');
         if (!(p > 0)) return hata('Pozitif bir açı yaz.', ['paP']);
         if (el.querySelector('#paB').value === 'mas') p /= 1000;
-        const dp = 1 / p;
-        return `<b>${U.sayi(dp, dp < 10 ? 3 : 1)} parsek</b><span class="ek">= ${U.sayi(dp * d('pc') / d('ly'), 2)} ışık yılı</span>`;
+        const dp = 1 / p, ly = dp * (d('pc') / d('ly'));
+        if (!isFinite(ly)) return hata('Açı çok küçük: hesaplanamıyor.', ['paP']);
+        /* Çok küçük açıda yüzlerce basamaklı sayı sonuç kutusundan taşıyordu: büyük değerler bilimsel yazılır */
+        const yaz = (x, b) => x >= 1e6 ? U.bilimsel(x, 4) : U.sayi(x, b);
+        return `<b>${yaz(dp, dp < 10 ? 3 : 1)} parsek</b><span class="ek">= ${yaz(ly, 2)} ışık yılı</span>`;
       },
       formul: 'd (parsek) = 1 / p (yay saniyesi)', kaynak: ['pc', 'ly']
     },
