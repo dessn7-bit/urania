@@ -35,7 +35,11 @@
         "Dönüm noktası camın üstüne ince bir metal katman sermekti. 1856–57'de Karl August von Steinheil ve Léon Foucault cam aynaların üstüne gümüş kaplama yöntemini getirdi: gümüş spekulumdan çok daha iyi yansıtıyor, daha uzun dayanıyor ve camın biçimini bozmadan sökülüp yeniden kaplanabiliyordu. 1932'de John Strong bir aynayı ilk kez vakumda buharlaştırılmış alüminyumla kapladı; alüminyum gümüşten çok daha uzun ömürlüydü. 1948'de tamamlanan 5,1 metrelik Hale teleskobu, düşük genleşmeli Pyrex cam gibi yeniliklerle sonraki dev teleskoplara yol gösterdi. Klasik Cassegrain'in bir türevi olan ve daha geniş görüş alanı veren Ritchey–Chrétien tasarımı 1910 civarında icat edildi, 1950'den sonra yaygınlaştı; Hubble Uzay Teleskobu da bu tasarımı kullanır.",
         "Amatörlerin sık gördüğü üçüncü bir aile, ayna ile merceği birleştiren katadioptrik teleskoplardır. Sheffield Üniversitesi'nin ders notlarına göre küresel bir ayna, küresel sapma denen bir bulanıklık üretir; Schmidt tasarımında ince bir düzeltici mercek bu sapmayı giderir ve çok geniş alanlı, neredeyse kusursuz görüntüler verir. Schmidt ile Cassegrain'i birleştiren Schmidt–Cassegrain, Cassegrain'in en önemli üstünlüğünü korur: kısa bir tüpte uzun bir odak uzaklığı. Bu yüzden derli toplu, taşınabilir ve amatörler arasında yaygındır; bedeli alan kenarlarında bazı görüntü bozulmalarıdır. Maksutov türünde düzeltici, küresel yüzeyli kalın bir menisküs mercektir. Türkiye'den bir örnek: Wikipedia'daki listeye göre TÜBİTAK Ulusal Gözlemevi'nin 1 metrelik T100 ve 60 cm'lik T60 teleskopları Ritchey–Chrétien, 40 cm'lik YT40 teleskobu ise Schmidt–Cassegrain tasarımındadır."
       ],
-      "akilda": "Mercek renkleri ayrı noktalarda odaklar ve kenarından tutulduğu için sarkar; en büyük mercekli teleskop 1,02 m'lik Yerkes'tir (1897). Ayna renk sapması yapmaz ve arkadan desteklenir; bütün büyük araştırma teleskopları aynalıdır."
+      "ornek": {
+        "baslik": "Örnek: Herschel, Yerkes ve Hale: çap ne kazandırır?",
+        "metin": "Herschel'in 1789'daki aynası 120 cm, Yerkes'in merceği 102 cm. Işık toplama oranı (120 / 102)² ≈ 1,18² ≈ 1,38: Herschel'in aynası kâğıt üstünde yüzde 38 kadar fazla ışık toplar. Ama spekulum ışığı zayıf yansıtıyordu ve Herschel bu kaybı azaltmak için ikincil aynayı bile kaldırmıştı; yansıtma oranını veren bir sayı bu derste kullanılan kaynaklarda yok, bu yüzden gerçek farkı hesaplayamayız. Hale teleskobuyla kıyas: (510 / 102)² = 5² = 25 kat. Herschel'den Hale'e: (510 / 120)² ≈ 4,25² ≈ 18 kat. Sonuç: çap 1,2 m'den 5,1 m'ye çıkınca ışık yaklaşık 18 kat artar; kaplamanın kalitesi ise bu kâğıt üstü sayıyı gerçekte ne kadarının kullanılabildiğini belirler."
+      },
+      "akilda": "Mercek renkleri ayrı noktalarda odaklar ve kenarından tutulduğu için sarkar; en büyük mercekli teleskop 1,02 m'lik Yerkes'tir (1897). Ayna renk sapması yapmaz ve arkadan desteklenir; bütün büyük araştırma teleskopları aynalıdır. Spekulum → gümüş (1856–57) → alüminyum (1932). Schmidt–Cassegrain kısa tüpte uzun odak verir."
     },
     {
       "baslik": "Açıklık: ışık kovasının ağzı",
@@ -128,10 +132,10 @@
         "Görüş, büyük bir teleskobun kırınım sınırından genellikle çok daha kötüdür. En iyi yüksek dağ gözlemevlerinde görüş bazen 0,4 yay saniyesine kadar iner; ortalama bir gözlem yeri için 1 yay saniyesi iyi bir değerdir; kent ortamında görüş genellikle çok daha kötüdür. Bir eşik de vardır: görüş parametresi denen bir uzunluk, en iyi yerlerde yaklaşık 20 cm, deniz seviyesindeki tipik yerlerde yaklaşık 5 cm'dir. Çapı bundan küçük teleskopların uzun pozlamalı görüntüsünün keskinliğini kırınım, büyüklerinkini atmosfer belirler. İstanbul'u deniz seviyesindeki tipik bir yer sayarsan, birkaç santimetreden büyük bir teleskobun uzun pozlamalı keskinliğini aynası değil havası belirler.",
         "Profesyonellerin ilk çaresi yer seçimidir. Gözlemevi ne kadar yüksekteyse üstündeki atmosfer o kadar incedir; iyi görüşlü bir yer seçmek en önemli ölçütlerden biridir ve en büyük teleskoplar ışık kirliliği az bölgelere kurulur. Türkiye'deki örnek Erzurum yakınındaki Doğu Anadolu Gözlemevi'dir (DAG). Karakaya Tepesi'nde deniz seviyesinden 3.170 metre yükseklikteki 4 metre çaplı teleskobu, Türkiye'nin en büyük teleskobu ve ilk kızılötesi teleskobu olarak tasarlandı. Teleskop teknik ilk ışığını 2024'te aldı, ön kabulü Mayıs 2025 sonunda tamamlandı. Bilimsel gözlemlerin 2026 sonu ile 2027 başı arasında başlaması bekleniyor.",
         "İkinci çare uyarlamalı optiktir: atmosferin bozduğu ışığı anında düzeltmek. Teleskop, bir kılavuz yıldızın ışığındaki bozulmayı ölçer; ışık yolundaki biçimi değiştirilebilen esnek bir ayna, bozulmayı telafi edecek şekilde ayarlanır. ESO'ya göre bu ölçüm saniyede yaklaşık 1000 kez yapılır. Hedefin yakınında yeterince parlak bir yıldız yoksa yapay bir yıldız yaratılır: güçlü bir lazer, yaklaşık 90 km yükseklikteki sodyum atomlarını parlatır. Bugün birçok büyük yer teleskobu uyarlamalı optik kullanır; DAG'ın da bu teknolojiyle donatılacağı belirtiliyor. Şili'deki ELT'nin 39,3 metrelik ana aynası 798 altıgen parçadan oluşacak. ESO'nun Mart 2025 duyurusuna göre teleskobun ilk ışığı Mart 2029'da, bilimsel aletlerle ilk gözlemler Aralık 2030'da bekleniyor.",
-        "Üçüncü çare ucuzdur ve amatörlerin de elindedir: şanslı görüntüleme. Wikipedia'nın görüş maddesine göre bu yöntem, atmosferin etkisinin ara sıra ihmal edilecek kadar azaldığı gerçeğine dayanır: gerçek zamanlı olarak çok sayıda görüntü kaydedilir ve içlerinden 'şanslı', çok iyi bir kare seçilir. Fikrin kökü savaş öncesinde iyi görüş anlarını çıplak gözle yakalamaya çalışan gözlemcilere, İkinci Dünya Savaşı'ndan sonra gezegenleri sinema filmine kaydedenlere uzanır. Yöntem küçük teleskoplarda iyi sonuç verir, bazı durumlarda uyarlamalı optikten bile iyi olabilir; ama teleskobun açıklığı görüş parametresinin çok katı olduğunda işe yaramaz hâle gelir ve sönük hedefler için çok uzun gözlem süresi ister. Kentteki bir balkondan gezegen fotoğrafı çeken amatörlerin yaptığı da özünde budur.",
+        "Üçüncü çare ucuzdur ve amatörlerin de elindedir: şanslı görüntüleme. Wikipedia'nın görüş maddesine göre bu yöntem, atmosferin etkisinin ara sıra ihmal edilecek kadar azaldığı gerçeğine dayanır: gerçek zamanlı olarak çok sayıda görüntü kaydedilir ve içlerinden 'şanslı', çok iyi bir kare seçilir. Fikrin kökü savaş öncesinde iyi görüş anlarını çıplak gözle yakalamaya çalışan gözlemcilere, İkinci Dünya Savaşı'ndan sonra gezegenleri sinema filmine kaydedenlere uzanır. Yöntem küçük teleskoplarda iyi sonuç verir, bazı durumlarda uyarlamalı optikten bile iyi olabilir; ama teleskobun açıklığı görüş parametresinin çok katı olduğunda işe yaramaz hâle gelir ve sönük hedefler için çok uzun gözlem süresi ister. Kaynak, yöntemin amatörlerin de erişebileceği bir yöntem olduğunu özellikle belirtir; gezegen fotoğrafçılığını 24. derste ayrıca göreceksin.",
         "Türkiye'de bugün çalışan en büyük araştırma teleskopları Antalya yakınındaki TÜBİTAK Ulusal Gözlemevi'ndedir (TUG). Wikipedia'ya göre gözlemevi 1991'de kuruldu ve Antalya'nın yaklaşık 50 km batı-güneybatısında, Bakırlıtepe'de 2.450 metre yükseklikte; TÜBİTAK'ın 2022 tarihli haberi bu yüksekliği yuvarlak olarak 2.500 metre diye verir. Aynı habere göre en büyük ayna çaplı optik teleskobu 1,5 metrelik RTT150'dir; ilk yıldız gözlemleri Ağustos 2000'de yapıldı. 1 metrelik T100 teleskobu ilk ışığını 7 Ekim 2009'da aldı. Wikipedia'ya göre Ankara Üniversitesi'nden bir Türk gökbilimcinin yönettiği ekip, RTT150'deki bir tayfölçerle on yıl süren dikine hız ölçümleri sonucunda HD 208897 adlı dev yıldızın çevresinde bir ötegezegen keşfetti ve bunu 6 Ağustos 2017'de duyurdu. TUG da DAG gibi yüksek ve kentten uzak bir yerin seçilmesinin örneğidir."
       ],
-      "akilda": "Atmosferin titreşimi (görüş) yerdeki teleskopları en iyi yerlerde 0,4–1 yay saniyesiyle, kentte daha kötüsüyle sınırlar. Çare: yüksek ve karanlık yerler, bir de bozulmayı saniyede yaklaşık 1000 kez ölçüp esnek aynayla düzelten uyarlamalı optik."
+      "akilda": "Atmosferin titreşimi (görüş) yerdeki teleskopları en iyi yerlerde 0,4–1 yay saniyesiyle, kentte daha kötüsüyle sınırlar. Çare: yüksek ve karanlık yerler (Türkiye'de TUG ~2.450 m, DAG 3.170 m), bozulmayı saniyede yaklaşık 1000 kez ölçüp esnek aynayla düzelten uyarlamalı optik ve amatörlerin de kullandığı şanslı görüntüleme."
     },
     {
       "baslik": "Radyo ve kızılötesi teleskoplar",
@@ -145,7 +149,7 @@
         "baslik": "Örnek: Dünyanın en büyük çanağı senin gözünden keskin mi?",
         "metin": "FAST'ın 20 cm dalga boyunda gözlem yaptığını varsayalım (örnek değer; 21 cm'lik hidrojen çizgisine yakın); kullanılan çap 300 m. θ = 1,22 × 0,2 / 300 ≈ 8,13 × 10⁻⁴ radyan. Yay saniyesine çevir: 8,13 × 10⁻⁴ × 206.265 ≈ 168 yay saniyesi, yani yaklaşık 2,8 yay dakikası. Çıplak gözün ayırma gücü yaklaşık 1 yay dakikasıydı: dünyanın en büyük tek çanağı bu dalga boyunda senin gözünden yaklaşık üç kat bulanık görür. Tersinden bak: görünür ışıkta (500 nm) 1 yay dakikası, yani 2,91 × 10⁻⁴ radyan ayırmak için gereken çap D = 1,22 × 5 × 10⁻⁷ / 2,91 × 10⁻⁴ ≈ 0,0021 m, yalnızca yaklaşık 2 mm. Sonuç: FAST bu örnekte yaklaşık 2,8 yay dakikası ayırır; radyoda keskinlik için yüzlerce metre bile yetmez."
       },
-      "akilda": "Radyo dalgaları çok uzun olduğu için radyo teleskopları dev olmalıdır; en büyük tek çanak FAST (500 m). Kızılötesi teleskoplar kendi ısılarıyla parlar; soğutulur ve atmosferin üstüne çıkarılır."
+      "akilda": "Radyo dalgaları çok uzun olduğu için radyo teleskopları dev olmalıdır; en büyük tek çanak FAST (500 m). Kızılötesi teleskoplar kendi ısılarıyla parlar; soğutulur ve atmosferin üstüne çıkarılır. 21 cm'lik hidrojen çizgisi tozun içinden geçer; Samanyolu'nun sarmal yapısı onunla bulundu."
     },
     {
       "baslik": "İnterferometri: teleskopları birleştirmek",
@@ -153,7 +157,7 @@
         "Bir çanağı kilometrelerce büyütemezsin, ama birçok çanağı birlikte çalıştırabilirsin. İnterferometride birden çok antenin sinyalleri birleştirilir ve daha büyük tek bir anteni taklit eder. Böyle bir dizinin ayırma gücünü çanakların tek tek boyu değil, dizideki en uzak iki teleskop arasındaki uzaklık belirler; bu uzaklığa taban çizgisi denir. Yaklaşık formül θ ≈ λ / B'dir: B taban çizgisi, θ radyan cinsinden. Cambridge'de Martin Ryle, gözlemleri ve özellikle açıklık sentezi tekniği için 1974 Nobel Fizik Ödülü'nü Antony Hewish ile paylaştı.",
         "İki ünlü örnek: ABD'nin New Mexico eyaletinde Socorro yakınındaki Çok Büyük Dizi (VLA) 27 teleskoptan oluşur ve aynı anda 351 bağımsız taban çizgisi kurar. Şili'nin Atacama Çölü'ndeki Chajnantor Platosu'na kurulan ALMA ise 54 tane 12 metrelik ve 12 tane 7 metrelik, toplam 66 antenle milimetre ve milimetre altı dalgalarda gözlem yapar; antenleri 16 kilometreye kadar yayılabilir. ALMA'nın dizi işletme alanı 5.100 metre yüksekliktedir. 2. dersten hatırla: su buharının etkisini azaltmak için gözlemevleri yüksek dağlara kurulur.",
         "Taban çizgisi Dünya boyuna kadar uzatılabilir: binlerce kilometre uzaktaki antenlerin kayıtları gözlemden sonra birleştirilir. Buna çok uzun taban çizgili interferometri (VLBI) denir. Olay Ufku Teleskobu (EHT) bu yöntemle sekiz yer konuşlu radyo gözlemevini birleştirip Dünya büyüklüğünde sanal bir teleskop kurdu ve 1,3 mm dalga boyunda gözlem yaptı. Dünya çapı uzunluğundaki taban çizgileri yaklaşık 20 mikro yay saniyesi ayırma gücüne ulaşır. Sonuç, 10 Nisan 2019'da yayımlanan, M87 galaksisinin merkezindeki kara deliğin gölge görüntüsüydü (16. ders). ALMA da EHT dizisinin merkezinde yer alan önemli bir parçasıdır.",
-        "İnterferometri radyoya özgü değildir; ilk büyük başarısı görünür ışıkta geldi. Wikipedia'ya göre Albert Michelson, Hippolyte Fizeau'nun bir önerisinden yola çıkarak 1890'da yıldız interferometresini önerdi. İlk örneği Mount Wilson Gözlemevi'nde, yaklaşık 2,5 metrelik Hooker teleskobunun üstüne yerleştirildi: teleskobun çerçevesine 20 fitlik, yani yaklaşık 6 metrelik bir kiriş takıldı ve iki ucundaki aynaların topladığı ışık birleştirildi. Michelson ve Francis Pease bu düzenekle Aralık 1920'de Betelgeuse'ün çapını ölçtü; bu, bir yıldızın çapının ilk ölçümüydü. Bulunan çap yaklaşık 380 milyon km'ydi: kabaca Mars'ın yörüngesi büyüklüğünde, Güneş'in yaklaşık 300 katı. Aynaların aralığını 6 metreye açmak, keskinliği 2,5 metrelik aynanın çapının değil, kirişin boyunun belirlediği düzeye, yani kabaca 6 / 2,5 ≈ 2,4 kat daha ince bir sınıra taşıdı. Bu, θ ≈ λ / B formülünün ilk büyük sınavıydı."
+        "İnterferometri radyoya özgü değildir; ilk büyük başarısı görünür ışıkta geldi. Wikipedia'ya göre Albert Michelson, Hippolyte Fizeau'nun bir önerisinden yola çıkarak 1890'da yıldız interferometresini önerdi. İlk örneği Mount Wilson Gözlemevi'nde, yaklaşık 2,5 metrelik Hooker teleskobunun üstüne yerleştirildi: teleskobun çerçevesine 20 fitlik, yani yaklaşık 6 metrelik bir interferometre yerleştirildi; böylece ışığı birleştirilen noktalar arasındaki uzaklık aynanın çapını aştı. Michelson ve Francis Pease bu düzenekle Aralık 1920'de Betelgeuse'ün çapını ölçtü; bu, bir yıldızın çapının ilk ölçümüydü. Bulunan çap yaklaşık 380 milyon km'ydi: kabaca Mars'ın yörüngesi büyüklüğünde, Güneş'in yaklaşık 300 katı. Aynaların aralığını 6 metreye açmak, keskinliği 2,5 metrelik aynanın çapının değil, kirişin boyunun belirlediği düzeye, yani kabaca 6 / 2,5 ≈ 2,4 kat daha ince bir sınıra taşıdı. Bu da yukarıdaki θ ≈ λ / B mantığının görünür ışıktaki bir uygulamasıdır."
       ],
       "ornek": {
         "baslik": "Örnek: Dünya boyunda bir teleskop ne kadar keskin görür?",
@@ -218,6 +222,26 @@
       "ad": "İnterferometrenin ayırma gücü",
       "ifade": "θ ≈ λ / B",
       "aciklama": "θ: radyan, λ: dalga boyu (m), B: dizideki en uzak iki teleskop arasındaki uzaklık, yani taban çizgisi (m). EHT: 1,3 mm / Dünya çapı ≈ 20 mikro yay saniyesi."
+    },
+    {
+      "ad": "Odak oranı",
+      "ifade": "f-sayısı = F / D",
+      "aciklama": "F: odak uzaklığı, D: açıklık (aynı birim). 1000 mm / 100 mm = f/10. Sky & Telescope tanımı."
+    },
+    {
+      "ad": "Gerçek alan (yaklaşık)",
+      "ifade": "Gerçek alan ≈ göz merceğinin görünür alanı / büyütme",
+      "aciklama": "Eski, basit yöntem (Nikon; ISO 14132-1 tanjantlı formülü kullanır). 50° / 100 = 0,5°."
+    },
+    {
+      "ad": "Gök küresinin dönme hızı",
+      "ifade": "Hız = 360° / 23,9345 saat ≈ 15,04° / saat ≈ 0,25° / dakika",
+      "aciklama": "Gök ekvatorundaki bir yıldız için; kutba yakın yıldızlar daha yavaş kayar. Alandan çıkış süresi ≈ alan / 0,25 dakika."
+    },
+    {
+      "ad": "Yüksek büyütmede gözün seçebildiği açı",
+      "ifade": "θ_göz ≈ 60″ / büyütme",
+      "aciklama": "Gözün ayırma gücü ~1′ (60″). 7× → 8,6″; 100× → 0,6″. Aletin gerçek sınırı bu değer ile kırınım sınırından büyük olanıdır."
     }
   ],
   "anahtar_sayilar": [
@@ -310,6 +334,46 @@
       "aciklama": "ELT'nin planlanan teleskop ilk ışığı ve bilimsel aletlerle ilk gözlemleri (ESO, Mart 2025)",
       "kaynak_url": "https://eso.org/public/announcements/ann25001/",
       "kid": "d12n14"
+    },
+    {
+      "deger": "13 Mart 1610 · Ülker 6 → 35 · Avcı 9 → 80 yıldız",
+      "aciklama": "Galileo'nun Sidereus Nuncius'u ve teleskopla sayılan yıldızlar",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Sidereus_Nuncius"
+    },
+    {
+      "deger": "1789 · 1856–57 · 1932 · 1948",
+      "aciklama": "Herschel'in 120 cm'lik spekulum aynası; cama gümüş kaplama; alüminyum kaplama; 5,1 m'lik Hale teleskobu",
+      "kaynak_url": "https://en.wikipedia.org/wiki/History_of_the_telescope"
+    },
+    {
+      "deger": "Yüzde birkaç · yüzde 90+",
+      "aciklama": "Gözün (ve filmin) ve CCD'nin kuantum verimliliği; 1 m + CCD ≈ 5,5 m + film",
+      "kaynak_url": "https://jila.colorado.edu/~ajsh/courses/astr1120_03/text/chapter2/L2S3.htm"
+    },
+    {
+      "deger": "17,5 · 15 · 13 kadir",
+      "aciklama": "32 cm'lik aynalı teleskobun sınır kadiri Bortle 1, 5 ve 8 göklerinde",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Bortle_scale"
+    },
+    {
+      "deger": "21,1 cm (1420,4 MHz) · 1951",
+      "aciklama": "Nötr hidrojen çizgisi ve ilk gözlemi (Ewen ve Purcell)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Hydrogen_line"
+    },
+    {
+      "deger": "Aralık 1920 · ~6 m kiriş",
+      "aciklama": "Michelson ve Pease'in Betelgeuse çapını ölçtüğü ilk yıldız interferometresi",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Michelson_stellar_interferometer"
+    },
+    {
+      "deger": "1,5 m (RTT150) · ~2.450–2.500 m",
+      "aciklama": "TÜBİTAK Ulusal Gözlemevi'nin en büyük teleskobu ve Bakırlıtepe'nin yüksekliği",
+      "kaynak_url": "https://tubitak.gov.tr/tr/haber/tug-25-yasinda"
+    },
+    {
+      "deger": "~15° / saat",
+      "aciklama": "Gök küresinin dönme hızı (360° / 23,9345 saat); yüksek büyütmede yıldız alandan dakikalar içinde çıkar",
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html"
     }
   ],
   "sozluk": [
@@ -377,15 +441,39 @@
       "terim": "Taban çizgisi",
       "tanim": "Bir interferometre dizisinde iki teleskop arasındaki uzaklık; en büyüğü ayırma gücünü belirler.",
       "kid": "d12t12"
+    },
+    {
+      "terim": "Odak oranı",
+      "tanim": "Bir merceğin ya da aynanın odak uzaklığının açıklığına bölümü; f/10 gibi yazılır."
+    },
+    {
+      "terim": "Katadioptrik teleskop",
+      "tanim": "Ayna ile merceği birlikte kullanan teleskop; Schmidt–Cassegrain ve Maksutov bu ailedendir."
+    },
+    {
+      "terim": "Spekulum",
+      "tanim": "Eski aynalı teleskoplarda ayna yapımında kullanılan, zayıf yansıtan ve çabuk kararan parlatılmış metal alaşımı."
+    },
+    {
+      "terim": "Kuantum verimliliği",
+      "tanim": "Bir dedektörün üstüne düşen fotonların yüzde kaçını kaydettiği; göz için yüzde birkaç, CCD için yüzde 90 civarı."
+    },
+    {
+      "terim": "Şanslı görüntüleme",
+      "tanim": "Çok sayıda kısa görüntü kaydedip atmosferin bir an sakinleştiği en keskin kareleri seçme yöntemi."
+    },
+    {
+      "terim": "Hidrojen çizgisi",
+      "tanim": "Nötr hidrojen atomlarının saldığı, yaklaşık 21 cm dalga boylu ve toz bulutlarından geçebilen radyo çizgisi."
     }
   ],
   "defter_notu": [
     "Teleskobun 2 işi: ışık toplamak + ayrıntı ayırmak. İkisi de AÇIKLIĞA bağlı; büyütme en az önemli.",
-    "Mercek: renk sapması + sarkma → en büyük mercekli Yerkes 1,02 m (1897). Ayna: renk sapması yok, arkadan desteklenir. Newton 1668.",
+    "Mercek: renk sapması + sarkma → en büyük mercekli Yerkes 1,02 m (1897). Ayna: renk sapması yok, arkadan desteklenir. Newton 1668. Spekulum → gümüş 1856–57 → alüminyum 1932. Galileo 1610: 16 mm ile Ay dağları, Jüpiter'in 4 uydusu.",
     "Işık ∝ D². 200 mm / 7 mm → ~816 kat ≈ 7,3 kadir. Güneş'e filtresiz ASLA bakma.",
     "Ayırma: θ = 1,22 λ / D (radyan); pratik θ″ ≈ 138 / D(mm), Dawes 116 / D. Göz ~1′, 100 mm ~1,4″, Hubble ~0,05″.",
-    "Büyütme M = F / f. En yüksek yararlı ≈ 2 × D(mm). Çıkış göz bebeği = D / M ≤ 7 mm.",
-    "Kundak: alt-az (basit, Dobson), ekvatoral (ekseni Kutup Yıldızı'na, İstanbul'da 41°; fotoğraf için).",
+    "Büyütme M = F / f. En yüksek yararlı ≈ 2 × D(mm). Çıkış göz bebeği = D / M ≤ 7 mm. Göz büyütülmüş görüntüde ~60″ / M seçer: 7×50 → 8,6″ (sınır göz). CCD yüzde 90, göz yüzde birkaç.",
+    "Kundak: alt-az (basit, Dobson), ekvatoral (ekseni Kutup Yıldızı'na, İstanbul'da 41°; fotoğraf için). Gök saatte ~15° döner: 200 katta yıldız ~1 dakikada alandan çıkar. Odak oranı = F / D.",
     "Görüş: en iyi 0,4″, ortalama yerde 1″ iyi, kent daha kötü. Uyarlamalı optik: esnek ayna ~1000/s, lazer yıldız ~90 km.",
     "DAG (Erzurum): 4 m, 3.170 m, teknik ilk ışık 2024, ön kabul Mayıs 2025; bilimsel gözlem 2026 sonu–2027 başı bekleniyor. ELT: 39,3 m, 798 parça, ilk ışık planı Mart 2029.",
     "Radyo: Jansky 1932, Reber 1937; FAST 500 m. İnterferometri θ ≈ λ / B: VLA 27, ALMA 66, EHT ~20 mikro yay saniyesi.",
@@ -436,6 +524,26 @@
       "soru": "Webb'in aynası Hubble'ınkinden 2,7 kat geniş. Görüntüleri neden 2,7 kat daha keskin değil?",
       "cevap": "Kırınım sınırı θ = 1,22 × λ / D, dalga boyuyla birlikte büyür. Webb kızılötesinde, yani Hubble'ın çalıştığı görünür ışıktan daha uzun dalga boylarında gözlem yapar. Örneğin 2 μm'de Webb ≈ 0,077″, 0,5 μm'de Hubble ≈ 0,052″ ayırır. Webb'in üstünlüğü ışık toplamadadır: alanı yaklaşık 6 kat büyüktür.",
       "kid": "d12s8"
+    },
+    {
+      "soru": "7×50 dürbününün objektifi 2,8 yay saniyesini ayırabilecekken neden gökte ancak 8,6 yay saniyesi kadar ayrıntı seçersin?",
+      "cevap": "Kırınım sınırı 138 / 50 ≈ 2,8″, ama dürbün yalnızca 7 kat büyütür. Gözün ayırma gücü yaklaşık 60″ olduğu için 7 kat büyütülmüş görüntüde gökte 60 / 7 ≈ 8,6″'den küçük ayrıntıyı seçemezsin. Sınırı objektif değil göz çizer; büyütmenin işi açıklığın ayırdığı ayrıntıyı gözün seçebileceği boyuta getirmektir."
+    },
+    {
+      "soru": "50°'lik bir göz merceğiyle 200 kat büyüten bir teleskopta gök ekvatorundaki bir yıldız, alanın ortasından kenarına kaç saniyede varır?",
+      "cevap": "Gerçek alan ≈ 50 / 200 = 0,25°; merkezden kenara 0,125°. Gök küresi 360° / 23,9345 saat ≈ 15,04° / saat ≈ 0,25° / dakika döner. 0,125 / 0,25 = 0,5 dakika, yani yaklaşık 30 saniye. Bu yüzden yüksek büyütmede izleyen bir kundak büyük kolaylıktır."
+    },
+    {
+      "soru": "Mars'ta kanallar olduğu inancı neden dolaylı olarak atmosferin titreşiminden doğdu ve bugün amatörler aynı sorunu nasıl aşıyor?",
+      "cevap": "Wikipedia'ya göre Mars'ın görüntüsü yalnızca hava bir an sakinleştiğinde netleşiyordu; CCD'lerden önce bu anı kaydetmenin yolu olmadığı için gözlemciler görüntüyü belleklerinden çizdi ve çizimler beklentilerle şekillendi. Bugün şanslı görüntüleme ile çok sayıda kısa görüntü kaydedilip en keskin kareler seçiliyor."
+    },
+    {
+      "soru": "CCD'nin kuantum verimliliği yüzde 90, gözünki yüzde 3 olsun. Bu fark kaç kadirlik kazanç eder, kaynaktaki '1 m + CCD ≈ 5,5 m + film' karşılaştırmasıyla tutarlı mı?",
+      "cevap": "Oran 90 / 3 = 30; 2,5 × log 30 ≈ 3,7 kadir. Aynalar için (5,5 / 1)² ≈ 30 kat ışık toplama farkı demektir; yani CCD'nin verimlilik üstünlüğü, çapı 5,5 kat büyük bir aynanın ışık üstünlüğüne denk gelir. İki sayı tutarlıdır."
+    },
+    {
+      "soru": "Samanyolu'nun sarmal yapısı neden görünür ışıkla değil de 21 cm'lik radyo dalgalarıyla bulundu?",
+      "cevap": "Galaksinin düzlemindeki yıldızlararası toz bulutları görünür ışığı geçirmez. Nötr hidrojenin 21 cm'lik çizgisi ise bu toz bulutlarının içinden kolayca geçer. 1951'deki ilk gözlemden sonra, 1952'den itibaren çıkarılan nötr hidrojen haritaları Samanyolu'nun sarmal yapısını ilk kez gösterdi."
     }
   ],
   "kaynaklar": [
@@ -582,6 +690,46 @@
     {
       "ad": "Nobel Fizik Ödülü 1974 (nobelprize.org)",
       "url": "https://www.nobelprize.org/prizes/physics/1974/summary/"
+    },
+    {
+      "ad": "Wikipedia – Sidereus Nuncius",
+      "url": "https://en.wikipedia.org/wiki/Sidereus_Nuncius"
+    },
+    {
+      "ad": "Sheffield Üniversitesi (V. Dhillon) – PHY217 Catadioptric telescopes",
+      "url": "https://vikdhillon.staff.shef.ac.uk/teaching/phy217/telescopes/phy217_tel_catadioptric.html"
+    },
+    {
+      "ad": "University of Colorado (A. Hamilton) – Sensitivity of optical telescopes",
+      "url": "https://jila.colorado.edu/~ajsh/courses/astr1120_03/text/chapter2/L2S3.htm"
+    },
+    {
+      "ad": "Wikipedia – Bortle scale (32 cm aynalı teleskop sınır kadirleri)",
+      "url": "https://en.wikipedia.org/wiki/Bortle_scale"
+    },
+    {
+      "ad": "Wikipedia – Hydrogen line",
+      "url": "https://en.wikipedia.org/wiki/Hydrogen_line"
+    },
+    {
+      "ad": "Wikipedia – Michelson stellar interferometer",
+      "url": "https://en.wikipedia.org/wiki/Michelson_stellar_interferometer"
+    },
+    {
+      "ad": "Wikipedia – TÜBİTAK National Observatory",
+      "url": "https://en.wikipedia.org/wiki/National_Optical_Observatory"
+    },
+    {
+      "ad": "TÜBİTAK – TUG 25 yaşında (6 Eylül 2022)",
+      "url": "https://tubitak.gov.tr/tr/haber/tug-25-yasinda"
+    },
+    {
+      "ad": "Wikipedia – Binoculars (Satürn halkası için 20× ve üstü; düşük büyütmenin geniş alanı)",
+      "url": "https://en.wikipedia.org/wiki/Binoculars"
+    },
+    {
+      "ad": "Nikon – Field of view (gerçek ve görünür alan)",
+      "url": "https://imaging.nikon.com/sport-optics/guide/binoculars/basic/basic_08/"
     }
   ]
 }

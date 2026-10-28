@@ -152,3 +152,91 @@ Kaynak: araştırma raporu "Urania: askıdaki 13 olgusal iddianın birincil kayn
 | 33 tüp, 27 kaya karotu | https://science.nasa.gov/photojournal/the-33-sample-tubes-collected-by-perseverance/ | "33 tubes… 27 rock cores" |
 | Sapphire Canyon 25. örnek, 22. kaya örneği | https://science.nasa.gov/resource/meet-the-mars-samples-sapphire-canyon-sample-25/ ; https://science.nasa.gov/mars/the-mars-report/2025-september-special-edition/ | "Meet the 25th Martian sample"; "the rover's 22nd rock sample" |
 | Kütle–ışıma: Duric yalnız iki parça | https://www.tevza.org/home/course/PCO2012/Duric%20N.%20Advanced%20astrophysics%20(CUP,%202004).pdf | L = M^4 (M > 0,43), 0,23 M^2,3 (M < 0,43); 1,4 M^3,5 ve 32.000 M yalnız Wikipedia türevlerinde |
+
+## v3 genişletme (2026-10-28)
+
+Bu turda eklenen her yeni iddia. [W3] = bu oturumda WebSearch sonucundan ya da proje dosyasındaki URL'den WebFetch ile okundu (alıntı WebFetch özetinin aktardığı metin) · [d] başka bir dersin kaynak dosyasında doğrulanmış · [Ö] bu dosyada önceden doğrulanmış satır · [H] hesap. WebSearch: 9.
+
+### 1. Yaşam neye ihtiyaç duyar? (ek paragraf)
+- [W3] CHNOPS her canlının parçası; ilk Dünya'nın kabuk ve manto kayalarında vardı; su erken dönemde vardı; levha hareketi ve volkanizma elementleri dolaştırır; suyun aşındırması karbon ve fosforu toprağa ve okyanusa bırakır; sıcak su kaynakları ve hidrotermal bacalar bol metal sağlar | https://science.nasa.gov/astrobiology/learning-resources/alp/sources-of-lifes-building-blocks/ | "are known to be part of every living thing" ; "were present in the rocks of the crust and mantle of Earth" ; "hot springs and hydrothermal vents can make a lot of metals available for life"
+- Enceladus'ta suyla sıcak kayanın buluşması | Bölüm 6'daki mevcut Eos satırı (Waite 2017 hidrotermal yorum)
+
+### 2. Dünya'da yaşamın ilk izleri (ek paragraf)
+- [Ö] En eski mineraller ~4,4 milyar yıllık zirkon | https://pubs.usgs.gov/gip/geotime/age.html | yukarıdaki satır 21 ("zirkon ~4,4 milyar yıl")
+- [Ö] Djokic ve ekibi 2017, Pilbara, 3,48 milyar yıllık sıcak su kaynağı çökeltisi (geyserit), karadaki yaşam izi ~580 milyon yıl geri | https://earthsky.org/earth/oldest-life-hot-springs-pilbara-australia-2017/ | yukarıdaki satır 24 ve bağımsız doğrulama ("karadaki yaşam 580 milyon yıl geri")
+- Okyanus tabanı mı kara mı sorusunun açık olduğu | Djokic bulgusunun anlamı olarak yazar yorumu; ayrı alıntı yok
+
+### YENİ — Yaşam nasıl başlamış olabilir?
+- [W3] 1952, Stanley Miller, Harold Urey gözetiminde, Chicago Üniversitesi; 1953 yayın | https://en.wikipedia.org/wiki/Miller-Urey | "performed in 1952 by Stanley Miller, supervised by Nobel laureate Harold Urey at the University of Chicago" ; ertesi yıl, 1953
+- [W3] CH₄, NH₃, H₂ 2:2:1 + su buharı; yıldırımı taklit eden elektrik arkı; amino asitler | aynı | "methane (CH4), ammonia (NH3), hydrogen (H2), in ratio 2:2:1" ; "Applying an electric arc (simulating lightning) resulted in the production of amino acids."
+- [W3] Glisin ve alaninin iki biçimi kesin; aspartik asit ve α-aminobütirik asit daha az kesin (soluk lekeler) | aynı | (WF özeti) "Glycine and two forms of alanine were positively identified, while aspartic acid and α-aminobutyric acid were less certain"
+- [W3] 2008 volkanik kıvılcım şişeleri: daha çeşitli amino asitler | aynı | "the 2008 re-analysis of vials from the volcanic spark discharge experiment" ; "a more diverse suite of amino acids" (sayı kaynakta yok, yazılmadı)
+- [W3] İlk atmosfer zayıf indirgen; CO₂ ve N₂; bazı argümanlar ilk birkaç yüz milyon yılda daha indirgen atmosfer | aynı | "recent models point to an early 'weakly reducing' atmosphere" ; "likely dominated by CO2 and N2 and not CH4 and NH3"
+- [W3] RNA: bilgi saklar/kopyalar, ribozimler tepkime hızlandırır; 1980'lerde kendi kendini işleyen RNA; ribozom bir ribozim; Gilbert 1986 | https://en.wikipedia.org/wiki/RNA_world | "Enzymes made of RNA (ribozymes)" ; "In the 1980s, RNA structures capable of self-processing were discovered" ; "ribosomes are ribozymes" ; "coined the term in 1986"
+- [W3] Güçlükler: nükleotitlerin yaşam öncesi sentezi için bilinen yol yok; RNA hidrolize yatkın; kendini kopyalayan kısa RNA'lar yalnız yapay; kesin kanıt yok; alternatifler: RNA öncesi nükleik asitler, panspermi | aynı | "no known chemical pathways for the abiogenic synthesis of nucleotides" (sitozin ve urasilden) ; "not conclusive evidence to completely falsify other paradigms"
+- DNA bilgi saklar, proteinler işleri yapar (tavuk-yumurta çerçevesi) | RNA world sayfasının anlattığı "DNA ve proteinlerden önce" çerçevesinden yazar özeti
+- [W3] Örnek: yaşam proteinleri 20 amino asitle kurar | https://svs.gsfc.nasa.gov/14774/ | "the twenty amino acids that life on Earth uses to build proteins"
+- [H] 20² = 400; 20¹⁰ = 1,024×10¹³; 20¹⁰⁰ = 1,27×10¹³⁰
+
+### YENİ — Gökten düşen ipuçları: göktaşları ve Bennu
+- [W3] Murchison: 28 Eylül 1969, Murchison, Victoria, Avustralya; >100 kg; CM2 karbonlu kondrit | https://en.wikipedia.org/wiki/Murchison_meteorite | (WF özeti) "28 September 1969, near Murchison, Victoria, Australia" ; "Over 100 kg" ; CM2
+- [W3] >15 amino asit; 2010'da tek örnekte 70 | aynı | (WF özeti) "More than 15 have been identified across multiple studies. A 2010 study found 70 in one sample."
+- [W3] Urasil ve ksantin; karbon izotopları Dünya dışı köken | aynı | uracil δ13C = +44,5‰, xanthine +37,7‰, "non-terrestrial origin"
+- [W3] 2010: ~14.000 molekül bileşimi; milyonlarca organik bileşik olabilir | aynı | "millions of distinct organic compounds"
+- [W3] OSIRIS-REx Bennu örneği 2023'te Dünya'da; 29 Ocak 2025; 20'den 14 amino asit; beş nükleik bazın beşi | https://svs.gsfc.nasa.gov/14774/ | "Fourteen of the twenty amino acids that life on Earth uses to build proteins were discovered within the Bennu samples." ; "Scientists found all five nucleobases – the genetic components of DNA and RNA" ; "Wednesday, January 29, 2025"
+- [W3] Olağan dışı bol amonyak; 11 tuz minerali (buharlaşan tuzlu su); Nature ve Nature Astronomy; yapı taşı, yaşam değil; yaşamın neden yalnız Dünya'da görüldüğü açık soru | https://www.sci.news/space/amino-acids-salts-asteroid-bennu-samples-13624.html | "exceptionally high abundances of ammonia" ; "traces of 11 salt minerals" ; Nature Astronomy + Nature ; "building blocks for life"
+- Göktaşının düştükten sonra bulaşmaya açık olması | ALH84001 satırındaki "Amino acids are probably Antarctic contamination" ve Murchison 1982 L-alanin bulaşma şüphesi (WP Murchison) ile desteklenen yazar açıklaması
+- [W3] ALH84001: 27 Aralık 1984, Allan Hills, Antarktika (ANSMET); 4,091 milyar yıl önce kristalleşme; ~17 milyon yıl önce Mars'tan kopma; ~13.000 yıl önce Dünya'ya düşme | https://en.wikipedia.org/wiki/Allan_Hills_84001 | (WF özeti) December 27 ; "about 4.091 billion years ago" ; "about 17 million years ago" ; "about 13,000 years ago"
+- [W3] 6 Ağustos 1996, McKay dahil NASA ekibi; "may contain trace evidence of life from Mars"; Science birkaç gün sonra | aynı | "may contain trace evidence of life from Mars"
+- [W3] 20–100 nm yapılar, bilinen hücrelerden küçük; manyetit; PAH | aynı | 20–100 nm, "smaller than any known cellular life at the time"
+- [W3] 2001 yaşamsız manyetit; PAH'lar asteroit/kuyruklu yıldız/göktaşlarında; amino asitler büyük olasılıkla Antarktika bulaşması; çoğunluk biyolojik yorumu reddetti; Ocak 2022: yaşamsız serpantinleşme ve karbonatlaşma ~4 milyar yıl önce; biçim tek başına yetmez | aynı | "morphology alone cannot be used unambiguously as a tool for primitive life detection."
+- [W3] Panspermi tanımı | https://en.wikipedia.org/wiki/RNA_world | "Panspermia, in which early life or its building blocks arrived on meteorites" (WF özeti)
+- [H] Örnek: 17e6/4,091e9 = 0,004156; × 24 = 0,0997 sa = 5,98 dk; 13.000/4,091e9 = 3,178e-6; × 86.400 = 0,275 s; 4,54 − 4,091 = 0,449 milyar yıl (Dünya yaşı USGS satırı)
+
+### 3. Aşırı ortam canlıları (ek paragraf)
+- [W3] Deinococcus 1956, Arthur Anderson, Oregon (Corvallis); gama ışınımıyla konserve kısırlaştırma deneyleri; bütün canlıları öldürmesi beklenen doz; et bozuldu | https://en.wikipedia.org/wiki/Deinococcus_radiodurans | "discovered in 1956 by Arthur Anderson at the Oregon Agricultural Experiment Station in Corvallis, Oregon" ; "thought to kill all known forms of life" ; "the meat subsequently spoiled"
+- [W3] Su ayılarını 4.000 Gy üstü öldürür ("citation needed") | aynı | "more than 4,000 Gy will kill the radiation-resistant tardigrade" — derste kaynağın kaynak istediği açıkça söylendi
+- [Ö] Strain 121: 130 °C'de 2 saat, 103 °C taze ortamda yeniden üredi | https://www.sciencedaily.com/releases/2003/08/030815075108.htm | "still grew when transferred to a fresh medium at 103 C"
+
+### 4. Mars (metan paragrafı)
+- [W3] 2004'ten beri yörünge, yüzey ve yer teleskobu metan iddiaları; güneş ışığında kararsız → etkin kaynak; Curiosity TLS sızıntı yüzünden kesin değil; 2019 üst sınır 0,05 ppbv, önceki raporlarla çelişki; modeller hızlı değişimi açıklayamıyor; kütle tayfölçerli iniş aracı gerekli | https://en.wikipedia.org/wiki/Biosignature | "Since 2004 there have been several detection claims of methane in the Mars atmosphere" ; "this data is inconclusive due to methane leaks in the TLS" ; "2019 measurements put an upper bound on the overall methane abundance at 0.05 p.p.b.v" ; "Current photochemical models cannot explain the reported rapid variations in space and time."
+- "Kaynak canlılar da olabilir, jeolojik süreçler de" | aynı sayfa: biyolojik ise biyoimza olabilir, yaşamsız kökenlerin elenmesi gerekir; jeolojik örnek olarak serpantinleşme bu dosyada [W] satırı 72 (VPL)
+
+### 6. Europa ve Enceladus (ek)
+- [W3] JUICE: 14 Nisan 2023, Ariane 5, Fransız Guyanası; 2031 Jüpiter; Ganymede, Callisto, Europa; son yörünge Ganymede; yaşanabilirlik | https://www.universetoday.com/articles/esas-juice-is-on-its-way-to-visit-jupiters-moons | "on April 14th, 2023" ; Ariane 5 ; 2031 ; "eventually settle into a final orbit around Ganymede" ; "investigate whether they could be potentially habitable" (ay ve Ganymede yörünge yılı kaynakta yok, yazılmadı)
+- [Ö] Metanojenler hidrojeni tüketebilir | https://eos.org/articles/hydrogen-molecules-hint-at-habitability-of-enceladuss-ocean | yukarıdaki satır 57 ("metanojenler hidrojeni tüketebilir")
+
+### 7. Titan (ek paragraf)
+- [Ö] Basınç ~1,45 kat, atmosfer yoğunluğu ~4 kat, çekim %13,8 | https://en.wikipedia.org/wiki/Dragonfly_(Titan_space_probe) | yukarıdaki satır 66
+- Yoğun hava + zayıf çekim uçmayı kolaylaştırır | yazar açıklaması (kaldırma havanın yoğunluğuyla, ağırlık çekimle orantılı)
+- [d] Titan orta boy dürbünle seçilebilir | https://en.wikipedia.org/wiki/Binoculars | d9/d11: "reasonably detectable with medium-size binoculars" ... "Saturn's largest moon Titan"
+
+### 8. Biyoimzalar (Galileo paragrafı)
+- [W3] Galileo Aralık 1990 Dünya geçişi; bol O₂; kırmızıda keskin soğurma sınırlı yaygın yüzey boyası; termodinamik dengeden aşırı sapmış metan; dar bantlı, darbeli, genliği değiştirilmiş radyo; "strongly suggestive of life"; radyo "uniquely attributable to intelligence"; denetim deneyi; Sagan ve ark. 1993 Nature | https://astrobiology.com/2023/10/a-search-for-life-on-earth-from-the-galileo-spacecraft-carl-sagan-et-al-1993.html | "December 1990 fly-by of Earth" ; "abundant gaseous oxygen" ; "a widely distributed surface pigment with a sharp absorption edge in the red part of the visible spectrum" ; "atmospheric methane in extreme thermodynamic disequilibrium" ; "a control experiment" ; Nature: https://www.doi.org/10.1038/365715A0 (arama sonucu)
+
+### YENİ — Venüs'ün bulutlarında fosfin tartışması
+- [d] Venüs %96,5 CO₂, 92 bar, 464 °C | https://nssdc.gsfc.nasa.gov/planetary/factsheet/venusfact.html | d9_kaynak.md: "Surface pressure: 92 bars" ; "Average temperature: 737 K (464 C)" ; "96.5% Carbon Dioxide"
+- [d] Sülfürik asit bulutları | https://en.wikipedia.org/wiki/Atmosphere_of_Venus | d9_kaynak.md: sülfürik asit bulutları
+- [W3] Greaves (Cardiff), JCMT 2017, ALMA 2019, ~20 ppb; güneş ışığı ya da sülfürik asitle yok edilmesi gerekirdi → yenileyen bilinmeyen kaynak; "potential indicator of life" | https://www.universetoday.com/158983/sofia-fails-to-find-phosphine-in-the-atmosphere-of-venus-but-the-debate-continues | (WF özeti) JCMT 2017, ALMA 2019, about 20 ppb ; "a gas that is a potential indicator of life"
+- [W3] Haftalar içinde üç çalışma sorguladı; düzeltme "7 or fewer parts per billion"; SOFIA Kasım 2021 üç uçuş, GREAT, iz yok, en fazla ~0,8 ppb; Greaves ekibi 6,5 sigma, sabah/akşam; DAVINCI gibi bir sonda 2030'ların başı | aynı | "7 or fewer parts per billion" ; "a maximum of about 0.8 parts per billion"
+- [d] Venüs hilalde −4,92; en parlak gezegen | https://en.wikipedia.org/wiki/Apparent_magnitude | d1/d9: "Venus: maximum −4.92, when illuminated as a crescent"
+- [d] Venüs evreleri zor dürbün hedefi | https://en.wikipedia.org/wiki/Binoculars | d9: "Other difficult binocular targets include the phases of Venus"
+- [H] Örnek: 20/1e9 = 2e-8 = %0,000002; 20/7 = 2,86; 20/0,8 = 25; 0,8/0,05 = 16
+
+### 10. Fermi ve SETI (Tau Ceti paragrafı)
+- [W3] Tau Ceti: Balina, 3,5 kadir çıplak gözle, 12 ışık yılından biraz yakın (3,7 pc), G8V, Güneş kütlesinin ~%78'i; dik açıklık −15° 56′; 2025 itibarıyla kesin gezegen yok; enkaz diski Güneş'inkinin 10 katından fazla; Ozma 200 saat | https://en.wikipedia.org/wiki/Tau_Ceti | "It can be seen with the unaided eye with an apparent magnitude of 3.5." ; "just under 12 light-years (3.7 parsecs)" ; "more than ten times the amount of cometary and asteroidal material" ; "No artificial signals were found despite 200 hours of observations."
+- [H] En büyük yükseklik 90 − 41 + (−15,94) = 33,1°
+- [d] Kentte çıplak göz sınırı ~3 kadir | d1 (d5 örneğinde aktarılan değer)
+- [Ö] Ozma ~150 saat (Britannica) — WP 200 saat; fark derste söylendi
+- [Ö] Epsilon Eridani yanlış alarmı gizli askerî deney | https://skyandtelescope.org/astronomy-news/project-ozma-the-first-seti/ | yukarıdaki satır 88
+
+### Yeni formül, sorular
+- [d] En büyük yükseklik h = 90° − φ + δ | d13_kaynak.md satır 87 (aynı formül, 90 − 41 + 20,8) ; https://en.wikipedia.org/wiki/Culmination (d11_kaynak.md satır 281, kültürasyon koşulları)
+- Sorular yukarıdaki satırlara dayanır; 20/0,8 = 25; 90 − 41 − 16 = 33
+
+### Notlar (v3)
+1. JUICE'ın Jüpiter'e varış ayı ve Ganymede yörüngesine giriş yılı kaynakta yoktu; yazılmadı ("bulamadım").
+2. Miller'ın 2008 yeniden çözümlemesinde bulunan amino asit sayısı Wikipedia'da yok; sayı verilmedi.
+3. Bennu örneğinin kütlesi ve amino asitlerin sol/sağ elli dağılımı açılan kaynaklarda yok; yazılmadı.
+4. Su ayılarının 4.000 Gy sınırı Wikipedia'da "citation needed" işaretli; derste temkinli verildi.
+5. Venüs fosfininde kükürt dioksit karışması açıklaması kaynakta görülmedi; yazılmadı.

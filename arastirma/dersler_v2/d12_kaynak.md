@@ -246,3 +246,144 @@ Kaynak: araştırma raporu "Urania: askıdaki 13 olgusal iddianın birincil kayn
 | 33 tüp, 27 kaya karotu | https://science.nasa.gov/photojournal/the-33-sample-tubes-collected-by-perseverance/ | "33 tubes… 27 rock cores" |
 | Sapphire Canyon 25. örnek, 22. kaya örneği | https://science.nasa.gov/resource/meet-the-mars-samples-sapphire-canyon-sample-25/ ; https://science.nasa.gov/mars/the-mars-report/2025-september-special-edition/ | "Meet the 25th Martian sample"; "the rover's 22nd rock sample" |
 | Kütle–ışıma: Duric yalnız iki parça | https://www.tevza.org/home/course/PCO2012/Duric%20N.%20Advanced%20astrophysics%20(CUP,%202004).pdf | L = M^4 (M > 0,43), 0,23 M^2,3 (M < 0,43); 1,4 M^3,5 ve 32.000 M yalnız Wikipedia türevlerinde |
+
+## v3 genişletme (2026-10-28)
+
+2.573 → 5.009 kelime; 10 → 12 bölüm (yeni: "Dürbünden teleskoba: ne kazanırsın, ne kaybedersin?", "Gözden kameraya: dedektörler"). Mevcut başlıklar ve kid alanları aynen korundu. İşaretler: [W] = sayfa bu oturumda curl ile indirilip düz metne çevrildi, cümle birebir arandı; [B] = WebFetch ile okundu (alıntı WebFetch özet modelinin aktardığı; doğrulama ajanı bir kez daha bakmalı); [Ö] = projede önceden doğrulanmış (d1, d11 kaynak dosyaları); [H] = hesap (python3).
+
+### Bölüm 1 — Teleskobun asıl işi (eklenen iki paragraf, yeni örnek)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| [W] Sidereus Nuncius 13 Mart 1610; teleskop gözlemlerine dayanan ilk yayımlanmış bilimsel çalışma | https://en.wikipedia.org/wiki/Sidereus_Nuncius | "published in Neo-Latin by Galileo Galilei on March 13, 1610. It was the first published scientific work based on observations made through a telescope" |
+| [W] Terminatör koyu bölgelerde düz, parlakta düzensiz; koyu = alçak düzlük, parlak = dağlık; dağlar en az 4 mil | aynı | "the terminator) was smooth where it crossed the darker regions of the Moon but quite irregular where it crossed the brighter areas" ; "he judged, quite accurately, that the lunar mountains were at least four miles high" |
+| [W] En az on kat fazla yıldız; Ülker 6 → 35; Avcı 9 → 80; bulutsular ve Samanyolu yıldız topluluğu | aynı | "at least ten times more stars" ; "only six stars in the Pleiades; through his telescope, however, Galileo was capable of seeing thirty-five" ; "When he turned his telescope on Orion, he was capable of seeing eighty stars, rather than the previously observed nine" ; "the nebulae and the Milky Way were "congeries of innumerable stars"" |
+| [W] Jüpiter: düz çizgi, ilk gece üç, sonra dördüncü, dizilişler değişti; çevresinde dolanma | aynı | "On the first night he detected a line of three little stars close to Jupiter" ; "the following nights brought different arrangements and another star into his view, totalling four" ; "there are three stars in the heavens moving about Jupiter" |
+| [W] Şüphe: mercek kusuru, hayalî ışık noktaları; ilk başta yalnızca birkaç kişi görebildi | aynı | "the telescope had a lens defect and was producing illusory points of light" ; "That only a few could initially see and verify what Galileo had observed supported the supposition" |
+| [W] Harriot, Marius doğrulamalarını 1610 sonbaharında Jüpiter yeniden görününce yayımladı | aynı | "Several astronomers, such as Thomas Harriot ... and Simon Marius, published their confirmation of the Medicean Stars after Jupiter became visible again in the autumn of 1610." |
+| [H] 4 mil × 1,609 = 6,4 km; (50/16)² = 9,77; (50/12)² = 17,36; 2,5 log 9,77 = 2,47; 2,5 log 17,36 = 3,10 | — | hesap |
+| [Ö] Jüpiter uyduları dürbünle görülür | https://en.wikipedia.org/wiki/Binoculars | d11_kaynak.md: Galileo uyduları orta boy dürbünle seçilebilir |
+
+### Bölüm 2 — Mercekli ve aynalı (eklenen üç paragraf, yeni örnek)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| [W] Spekulum aynalar zayıf yansıtır, çabuk kararır; sık sökülüp parlatılır; eğri bozulabilir | https://en.wikipedia.org/wiki/History_of_the_telescope | "All of these larger reflectors suffered from the poor reflectivity and fast tarnishing nature of their speculum metal mirrors." ; "the polishing process could change the curve of the mirror" |
+| [W] Herschel 1789: 49 inç (120 cm), 40 ft (12 m); ikincil aynayı kaldırdı; ilk gece 28 Ağustos 1789 Enceladus, 17 Eylül Mimas | aynı | "In 1789 Herschel finished building his largest reflecting telescope with a mirror of 49 inches (120 cm) and a focal length of 40 ft (12 m)" ; "Herschel eliminated the small diagonal mirror from his design" ; "He discovered Saturn's sixth known moon, Enceladus, the first night he used it (August 28, 1789), and on September 17, its seventh known moon, Mimas." |
+| [W] 1845 Rosse, 72 inç (180 cm) Leviathan; galaksilerin sarmal biçimi | aynı | "In 1845 William Parsons, 3rd Earl of Rosse built his 72-inch (180 cm) Newtonian reflector called the "Leviathan of Parsonstown" with which he discovered the spiral form of galaxies." |
+| [W] 1856–57 Steinheil ve Foucault gümüş; daha iyi yansıtır, uzun dayanır, biçim bozulmadan yeniden kaplanır | aynı | "In 1856–57, Karl August von Steinheil and Léon Foucault introduced a process of depositing a layer of silver on glass telescope mirrors. The silver layer was not only much more reflective and longer lasting ... able to be removed and re-deposited without changing the shape" |
+| [W] 1932 Strong alüminyum, vakumda buharlaştırma, çok daha uzun ömür | aynı | "a technique for coating a mirror with a much longer lasting aluminum coating using thermal vacuum evaporation. In 1932, he became the first person to "aluminize" a mirror" |
+| [W] 1948 Hale 200 inç (510 cm); Pyrex düşük genleşmeli cam | aynı | "1948 saw the completion of the 200-inch (510 cm) Hale reflector" ; "the use of Pyrex low-expansion glass for the mirrors" |
+| [W] Ritchey–Chrétien ~1910, 1950 sonrası; Hubble kullanır; daha geniş alan | aynı | "The Ritchey-Chretien variant of Cassegrain reflector was invented around 1910, but not widely adopted until after 1950; many modern telescopes including the Hubble Space Telescope use this design, which gives a wider field of view than a classic Cassegrain." |
+| [B] Katadioptrik tanımı; Schmidt düzelticisi küresel sapmayı giderir, geniş alan; Schmidt–Cassegrain kısa tüpte uzun odak, amatörlerde yaygın; alan kenarında koma/astigmatizma; Maksutov menisküs, ~f/15 | https://vikdhillon.staff.shef.ac.uk/teaching/phy217/telescopes/phy217_tel_catadioptric.html | "such telescope designs are known as catadioptric" ; "The Schmidt-Cassegrain retains one of the main advantages of the Cassegrain - a long focal length in a short tube." ; WebFetch özeti: "wide-field, almost aberration-free views"; off-axis coma ve astigmatism; Maksutov "slower focal ratios (around f/15)" |
+| [W] TUG: T100 1,0 m ve T60 0,6 m Ritchey–Chrétien; YT40 0,4 m Schmidt–Cassegrain | https://en.wikipedia.org/wiki/National_Optical_Observatory | "T100 (ACE RC1.0) - 1.0 m Ritchey–Chrétien telescope (2009)" ; "T60 (OMI RC06) - 0.6 m Ritchey–Chrétien telescope (2008)" ; "YT40 (Meade LX200GPS) - 0.4 m Schmidt–Cassegrain telescope (2006)" |
+| [H] Örnek: (120/102)² = 1,38; (510/102)² = 25; (510/120)² = 18,06 | — | hesap; Yerkes 1,02 m önceki satırlarda |
+| Spekulumun yansıtma oranı için sayı | — | bulamadım; örnekte "hesaplayamayız" diye belirtildi |
+
+### Bölüm 3 — Açıklık (eklenen paragraf)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| [W] 32 cm aynalı teleskop sınır kadiri: 1. sınıf 17,5 (zorlanarak), 5. sınıf 15, 8. sınıf 13 | https://en.wikipedia.org/wiki/Bortle_scale | "Limiting magnitude with 32 cm (12.5 in) reflector is 17.5 (with effort)." ; (5) "Limiting magnitude with 32 cm reflector is 15." ; (8) "Limiting magnitude with 32 cm reflector is 13." |
+| [W] 8. sınıf: teleskopla bile yalnız parlak Messier; 9. sınıf: Ay, gezegenler, parlak uydular, en parlak birkaç küme | aynı | "Even with a telescope, only bright Messier objects can be detected." ; "The only objects to observe are the Moon, the planets, bright satellites, and a few of the brightest star clusters." |
+| [H] 17,5 − 13 = 4,5 kadir; 10^(0,4 × 4,5) = 63 | — | hesap |
+
+### Bölüm 4 — Ayırma gücü (eklenen iki paragraf)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| [Ö] Göz ~1′ | https://en.wikipedia.org/wiki/Naked_eye | "The angular resolution of the naked eye is about 1′" |
+| [H] 138/50 = 2,76″; 60/7 = 8,57″; 138/16 = 8,63″; 60/23 = 2,61″ | — | hesap; 138/D önceki satırlarda (eckop) |
+| "Büyütme açıklığın ayırdığını gözün seçebileceği boyuta getirir" | — | yazar açıklaması: göz sınırı ve kırınım sınırının karşılaştırılmasından |
+| [B] Rayleigh %22 çukur, Dawes %4; Dawes iki yıldızın en küçük ayrılabilir açısı | https://www.eckop.com/resources/optics/resolution/ | "Dawes' criterion allows for only a 4% dip between the two peaks, while Rayleigh's allows for a 22% dip." ; "gives the minimum resolvable separation between two stars" |
+| [Ö] Kentte görüş genellikle 1″'den kötü | https://en.wikipedia.org/wiki/Astronomical_seeing | "A 1.0″ seeing is a good one for average astronomical sites." ; "The seeing of an urban environment is usually much worse." |
+
+### Bölüm 5 — Büyütme (eklenen iki paragraf)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| [B] Odak oranı = odak uzaklığı / açıklık | https://skyandtelescope.org/observing/telescope-calculator/ | "A lens or mirror's focal length divided by its aperture." |
+| [B] Maksutov ~f/15, alan daralır | https://vikdhillon.staff.shef.ac.uk/teaching/phy217/telescopes/phy217_tel_catadioptric.html | WebFetch: "slower focal ratios (around f/15), which keeps off-axis aberrations low but narrows the field of view" |
+| [B] Kellner, Ortoskopik, Plössl görünür alan ~50° | https://skyandtelescope.org/observing/telescope-calculator/ | WebFetch: "about 50 degrees for most Kellner, Orthoscopic, or Plössl eyepieces" |
+| [B] Gerçek alan ≈ görünür alan / büyütme (eski basit yöntem) | https://imaging.nikon.com/sport-optics/guide/binoculars/basic/basic_08/ | WebFetch: Nikon now calculates it per ISO 14132-1:2002 "rather than by multiplying the real field by magnification" |
+| "Aynı göz merceğiyle uzun odaklı daha çok büyütür, dar alan" | — | yazar çıkarımı: M = F / f ve gerçek alan ≈ görünür / M |
+| [Ö] 7×50 alanı 6,4° | https://imaging.nikon.com/sport-optics/lineup/binoculars/standard/ex_x35x40x50/ | d11_kaynak.md: "Real angle of view: 6.4°" |
+| [H] 1000/100 = 10; 50/40 = 1,25; 50/100 = 0,5; 50/200 = 0,25 | — | hesap |
+
+### Bölüm 6 — Kundaklar (eklenen paragraf, yeni örnek)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| [Ö] Yıldızlara göre dönüş 23,9345 saat | https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html | d1_kaynak.md: "Sidereal rotation period (hrs) 23.9345" |
+| [H] 360/23,9345 = 15,04°/sa; /60 = 0,2507°/dk; 6,4/0,2507 = 25,5 dk; 1,25/0,25 = 5; 0,5/0,25 = 2; 0,25/0,25 = 1 dk | — | hesap |
+| Kutba yakın yıldızlar daha yavaş; Kutup Yıldızı neredeyse kımıldamaz | — | yazar açıklaması (küçük çember geometrisi; d1'deki gök küresi ve Kutup Yıldızı konusu) |
+
+### Bölüm 7 (YENİ) — Dürbünden teleskoba
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| [H] (100/50)² = 4; 2,5 log 4 = 1,51; 138/100 = 1,38; 60/100 = 0,6; 8,6/1,4 ≈ 6,2; 1000/25 = 40; (6,4/1,25)² = 26,2 | — | hesap; teleskop değerleri örnek |
+| [Ö] İki göz toplaması (d11) | https://publications.aston.ac.uk/id/eprint/33467/6/Binocular_Summation_Revisited.pdf | d11_kaynak.md |
+| [W] Satürn halkası için 20× ve üstü dürbün | https://en.wikipedia.org/wiki/Binoculars | "Only binoculars with very high magnification, 20x or higher, are capable of discerning Saturn's rings to a recognizable extent." |
+| [B] En küçük teleskop halkaları gösterir | https://skyandtelescope.org/astronomy-press-releases/first-lights-what-to-see-with-your-new-telescope/ | (önceki satır) "Even the smallest telescope will reveal the planet's pale-yellow globe completely encircled by the dazzlingly white rings." |
+| [W] Düşük büyütme geniş alan: Samanyolu ve büyük bulutsular | https://en.wikipedia.org/wiki/Binoculars | "A lower magnification facilitates a larger field of view which is useful in viewing the Milky Way and large nebulous objects" |
+| "Dürbün ve teleskop tamamlayıcıdır" | — | yazar sonucu, bölümdeki hesaplardan |
+
+### Bölüm 8 (YENİ) — Dedektörler
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| [B] Göz (karanlıkta) kuantum verimi yüzde birkaç; hızlı film aynı; CCD çoğu zaman %90+, göz/filmden 30 kattan fazla | https://jila.colorado.edu/~ajsh/courses/astr1120_03/text/chapter2/L2S3.htm | "The quantum efficiency of your eye (when fully dark-adapted) is a few percent." ; "It's about the same for fast film." ; "But CCDs have much better Q.E. -- often 90% or better, i.e., more than 30 times better than the eye or film." |
+| [B] 1 m + CCD ≈ 5,5 m + film | aynı | "a 1 meter telescope equipped with a CCD is as sensitive as a 5.5 meter telescope with film." |
+| [B] Gözün pozu ~0,1 s; pozlamalar saniyelerden günlere; en derin poz Hubble 10 gün; Hubble 32. kadir | aynı | "the exposure time of your eye is about 0.1 seconds." ; "Exposure times in astronomy range from seconds to days." ; "The deepest exposure I know of took 10 days with the Hubble Space Telescope." ; "The Hubble Space Telescope can detect stars of brightness 32nd magnitude" (sayfa 2003 ders notu; derste "2003 tarihli" denildi) |
+| AYRILIK: aynı sayfa gözün karanlık gökteki sınırını ~5. kadir der; derste kullanılan Naked eye maddesi +6 (tipik) ve +8 (kusursuz) | — | derste 5. kadir değeri kullanılmadı |
+| [W] Mars kanalları: sakin hava anı, CCD öncesi kayıt yolu yok, bellekten çizim, beklenti | https://en.wikipedia.org/wiki/Astronomical_seeing | "The effects of atmospheric seeing were indirectly responsible for the belief that there were canals on Mars.[citation needed]" ; "Before the use of charge-coupled devices, there was no way of recording the image of the planet in the brief moment other than having the observer remember the image and draw it later." (cümle Wikipedia'da kaynak istemi taşıyor) |
+| [H] 90/3 = 30; 2,5 log 30 = 3,69; (5,5/1)² = 30,25; 3600/0,1 = 36.000; 2,5 log 36.000 = 11,39 | — | hesap; "yüzde 3" örnek değer ("yüzde birkaç") |
+| "Uzun pozlamada gök parıltısı da birikir; kazanç karanlık gökte büyük" | — | yazar çekincesi; sayısal kaynak yok, örnekte "kaba üst sınır" diye işaretlendi |
+
+### Bölüm 9 — Atmosfer (eklenen iki paragraf)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| [W] Şanslı görüntüleme: ara sıra atmosfer etkisi ihmal edilebilir; çok sayıda görüntü, şanslı kare; savaş öncesi çıplak göz, savaş sonrası sinema filmi; küçük teleskoplar; çok büyüklerde bozulur; bazen AO'dan iyi; amatörlere erişilebilir; sönük hedefte uzun süre | https://en.wikipedia.org/wiki/Astronomical_seeing | "Another cheaper technique, lucky imaging, has had good results on smaller telescopes." ; "dates back to pre-war naked-eye observations of moments of good seeing, which were followed by observations of the planets on cine film after World War II" ; "the technique consequently breaks down for very large telescopes. It can nonetheless outperform adaptive optics in some cases and is accessible to amateurs. It does require very much longer observation times" |
+| [W] TUG 1991; Bakırtepe 2.450 m; Antalya'nın ~50 km batı-güneybatısı | https://en.wikipedia.org/wiki/National_Optical_Observatory | "Established in 1991, it is located at an altitude of 2,450 m (8,040 ft) in Bakırtepe, around 50 km (31 mi) west-southwest of Antalya" |
+| [B] AYRILIK/çapraz: TÜBİTAK "2 bin 500 metre"; RTT150 1,5 m en büyük ayna çaplı optik teleskop; ilk yıldız gözlemi Ağustos 2000; T100 ilk ışık 7 Ekim 2009; haber 6 Eylül 2022 | https://tubitak.gov.tr/tr/haber/tug-25-yasinda | WebFetch: "2 bin 500 metre yükseklikte" ; "1,5 metre ile en büyük ayna çaplı optik teleskop" ; ilk yıldız gözlemleri Ağustos 2000 ; T100 ilk ışık 7 Ekim 2009 ; "06 Eyl 2022" |
+| [W] HD 208897 ötegezegeni; Ankara Üniversitesi'nden Türk gökbilimci liderliği; RTT150 CES ile 10 yıl dikine hız; 6 Ağustos 2017 | https://en.wikipedia.org/wiki/National_Optical_Observatory | "Scientists led by a Turkish astronomer from Ankara University discovered an exoplanet orbiting the giant star HD 208897" ; "ten-year-long research work of precise radial-velocity method carried out by using the Coude Echelle Spectrograph (CES) installed on the 1.5-meter Russian-Turkish Telescope (RTT150)" ; "made public on August 6, 2017" |
+| Not: Wikipedia yer adını "Bakırtepe", TÜBİTAK "Bakırlıtepe" yazıyor | — | derste TÜBİTAK yazımı kullanıldı |
+
+### Bölüm 10 — Radyo ve kızılötesi (eklenen paragraf, örnekte not)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| [W] Hidrojen çizgisi: nötr hidrojen, spin dönmesi; 1420,405751768 MHz; 21,106 cm | https://en.wikipedia.org/wiki/Hydrogen_line | "created by a change in the energy state of solitary, electrically neutral hydrogen atoms. It is produced by a spin-flip transition, which means the direction of the electron's spin is reversed relative to the spin of the proton." ; "λ = 21.106114054160(30) cm" ; "ν = 1420405751.768(2) Hz" |
+| [W] van de Hulst 1944 öngördü; Purcell ve öğrencisi Ewen 1951 gözledi; Harvard | aynı | "predicted by Dutch astronomer H. van de Hulst in 1944, then directly observed by E. M. Purcell and his student H. I. Ewen in 1951" ; "first detected in 1951 by Ewen and Purcell at Harvard University" |
+| [W] Toz bulutlarından geçer | aynı | "those radio waves can penetrate the large clouds of interstellar cosmic dust that are opaque to visible light" |
+| [W] 1952 sonrası haritalar, sarmal yapı ilk kez | aynı | "After 1952 the first maps of the neutral hydrogen in the Galaxy were made, and revealed for the first time the spiral structure of the Milky Way." |
+
+### Bölüm 11 — İnterferometri (eklenen paragraf)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| [W] Michelson 1890, Fizeau önerisi; ilk örnek Mount Wilson, 100 inç (~250 cm); Michelson ve Pease Aralık 1920 Betelgeuse; ilk yıldız çapı; ~380 milyon km, Mars yörüngesi, Güneş'in ~300 katı; 20 ft (~6 m) interferometre Hooker çerçevesinde | https://en.wikipedia.org/wiki/Michelson_stellar_interferometer | "proposed by Albert A. Michelson in 1890, following a suggestion by Hippolyte Fizeau." ; "The first such interferometer built was at the Mount Wilson Observatory, making use of its 100-inch (~250 centimeters) mirror." ; "first-ever measurement of a stellar diameter, by Michelson and Francis G. Pease, when the diameter of Betelgeuse was measured in December 1920" ; "(~380 million kilometers), about the size of the orbit of Mars, or about 300 times larger than the Sun." ; "A 20-foot (~6 meters) Michelson interferometer mounted on the frame of the 100-inch (~250 cm) Hooker Telescope" |
+| [H] 6 / 2,5 = 2,4 | — | hesap (θ ≈ λ/B, önceki satırlar) |
+| Betelgeuse'ün açısal çapı | — | açılan kaynak vermiyor; derse konmadı |
+
+### Bölüm 12 — Uzay teleskopları (eklenen iki paragraf)
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| [B] Hava ışıması Samanyolu'nun ~1/3'ü; uzayda gök (Samanyolu dışı) ~100 kat karanlık | https://jila.colorado.edu/~ajsh/courses/astr1120_03/text/chapter2/L2S3.htm | WebFetch: "airglow is about 1/3 as bright as the Milky Way" ; "In space, the sky (away from the Milky Way) is about 100 times darker." |
+| "Hubble'ın 32. kadire inmesinde karanlığın da payı" | — | yazar bağlantısı (iki alıntının birleşimi), çekinceli |
+| [Ö] Atmosfer tayfın büyük bölümüne kapalı | d2.json / d2_kaynak.md | atmosfer pencereleri (2. ders) |
+| [Ö] Hubble kusuru 1993 STS-61 ile düzeltildi | (önceki satırlar) | NASA 30. yıl sayfası |
+| [W] Hubble Ritchey–Chrétien | https://en.wikipedia.org/wiki/History_of_the_telescope | (bölüm 2 satırı) |
+| [Ö] Webb 18 parça; ELT 798 parça; Keck bölümlü | (önceki satırlar) | Webb fact sheet; ESO; History of the telescope |
+| [H] 2026 − 1608 = 418 ("400 yıllık") | — | hesap |
+
+### Yeni sorular, sözlük, formüller, anahtar sayılar
+5 yeni soru (dürbün ayırma sınırı, 200× alandan çıkış: 0,125/0,25 = 0,5 dk; Mars kanalları; CCD 3,7 kadir ve 5,5² ≈ 30; 21 cm ve sarmal yapı), 6 sözlük terimi, 4 formül, 8 anahtar sayı: hepsi yukarıdaki satırlara dayanır. Gök dönme hızı anahtar sayısının kaynağı NASA Earth fact sheet (d1'de doğrulanmış).
+
+### Notlar
+- WebSearch: 7 arama (Sidereus Nuncius, TUG, hidrojen çizgisi, Michelson, CCD verimi, Schmidt–Cassegrain, artı d11 ile ortak hiçbiri). WebFetch/curl: Wikipedia sayfaları curl ile indirilip birebir arandı; PMC'deki bir makale bot denetimi gösterdi, aşılmadı (d11 notu).
+- Hubble'ın "10 günlük" en derin pozu ve "32. kadir" 2003 tarihli ders notuna dayanıyor; daha güncel değer aranmadı, derste tarihiyle verildi.
+- "Teleskopla genellikle tek gözle bakılır" gibi kaynaksız bir ifade taslakta vardı, çıkarıldı.
