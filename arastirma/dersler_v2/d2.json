@@ -95,7 +95,7 @@
         "Bir kara cismin her metrekaresinden saniyede yayılan toplam enerji, sıcaklığın dördüncü kuvvetiyle orantılıdır: F = σT⁴. σ Stefan-Boltzmann sabitidir: 5,670 × 10⁻⁸ vat bölü metrekare bölü kelvinin dördüncü kuvveti. Dördüncü kuvvet çok güçlü bir etkidir: sıcaklığı iki katına çıkarırsan her metrekare 2⁴ = 16 kat fazla enerji yayar. Bu ilişkiyi Josef Stefan 1877'de deney verilerinden çıkardı, Ludwig Boltzmann 1884'te kuramsal olarak türetti. 2019'daki SI birim sistemi düzenlemesinden beri σ, değerleri tanım gereği sabitlenmiş Boltzmann sabiti, Planck sabiti ve ışık hızından tam olarak hesaplanır.",
         "Stefan, yasasını Güneş'e uygulayarak Güneş yüzeyinin sıcaklığı için yaklaşık 5700 K buldu. Bu, Güneş'in sıcaklığı için elde edilen ilk makul değer sayılır ve bugünkü 5772 K'ye çok yakındır. Bir yıldızın toplam ışıma gücünü (L) bulmak için yüzeyden yayılan değeri yıldızın yüzey alanıyla (4πR²) çarparız: L = 4πR²σT⁴. Yani ışıma gücü, yarıçap ve sıcaklıktan ikisini biliyorsak üçüncüsünü hesaplayabiliriz. Örneğin ışıma gücü ve sıcaklığı bilinen bir yıldızın yarıçapı, onu hiç çözemeyecek kadar uzakta olsa bile bu bağıntıyla bulunur.",
         "Aynı yasa gezegenimize de uygulanır. Atmosferi olmayan, Güneş ışığının %30'unu yansıtan bir Dünya'nın etkin sıcaklığı yaklaşık 255 K, yani −18 °C olurdu. Gerçek ortalama yüzey sıcaklığı ise yaklaşık 288 K'dir. Aradaki yaklaşık 33 derecelik fark sera etkisinden gelir: atmosfer, yüzeyin kızılötesinde yaydığı ışınımın bir kısmını tutar.",
-        "Yasayı gerçek bir yıldızla deneyelim. Kaynaklar Sirius A için etkin sıcaklığı yaklaşık 9845 K, yarıçapı Güneş'inkinin yaklaşık 1,71 katı ve ışıma gücünü Güneş'inkinin yaklaşık 24,7 katı olarak verir. L = 4πR²σT⁴ bağıntısında her şeyi Güneş'e oranlarsan sabitler sadeleşir: ışıma gücü oranı, yarıçap oranının karesi ile sıcaklık oranının dördüncü kuvvetinin çarpımıdır. Sirius için (1,71)² ≈ 2,94 ve (9845 ÷ 5772)⁴ ≈ 8,46; çarpım yaklaşık 24,9 eder ve katalogdaki 24,7 ile yaklaşık %1 içinde örtüşür. Dürüst bir not: aynı kaynak metninde Sirius için 9940 K de geçiyor; o değerle sonuç yaklaşık 25,9 çıkar. Ölçümler arasındaki böyle farklar olağandır. Hesabın asıl dersi şu: Sirius Güneş'ten pek büyük değildir. Onu yaklaşık 25 kat güçlü yapan, yüzeyinin her metrekaresinin dördüncü kuvvet yüzünden yaklaşık 8,5 kat fazla enerji yaymasıdır."
+        "Yasayı gerçek bir yıldızla deneyelim. Kaynaklar Sirius A için etkin sıcaklığı yaklaşık 9845 K, yarıçapı Güneş'inkinin yaklaşık 1,714 katı ve ışıma gücünü Güneş'inkinin yaklaşık 24,7 katı olarak verir. L = 4πR²σT⁴ bağıntısında her şeyi Güneş'e oranlarsan sabitler sadeleşir: ışıma gücü oranı, yarıçap oranının karesi ile sıcaklık oranının dördüncü kuvvetinin çarpımıdır. Sirius için (1,714)² ≈ 2,94 ve (9845 ÷ 5772)⁴ ≈ 8,46; çarpım yaklaşık 24,9 eder ve katalogdaki 24,7 ile yaklaşık %1 içinde örtüşür. Dürüst bir not: aynı kaynak metninde Sirius için 9940 K de geçiyor; o değerle sonuç yaklaşık 25,9 çıkar. Ölçümler arasındaki böyle farklar olağandır. Hesabın asıl dersi şu: Sirius Güneş'ten pek büyük değildir. Onu yaklaşık 25 kat güçlü yapan, yüzeyinin her metrekaresinin dördüncü kuvvet yüzünden yaklaşık 8,5 kat fazla enerji yaymasıdır."
       ],
       "ornek": {
         "baslik": "Örnek: Güneş'in ışıma gücünü hesaplamak",
@@ -369,7 +369,7 @@
       "kaynak_url": "https://asd.gsfc.nasa.gov/archive/arcade/cmb_intensity.html"
     },
     {
-      "deger": "9845 K; 1,71 R☉; 24,7 L☉; −5,5 km/s; B−V +0,00",
+      "deger": "9845 K; 1,714 R☉; 24,7 L☉; −5,5 km/s; B−V +0,00",
       "aciklama": "Sirius A'nın sıcaklığı, yarıçapı, ışıma gücü, dikine hızı ve renk indeksi",
       "kaynak_url": "https://en.wikipedia.org/wiki/Sirius"
     },
@@ -574,8 +574,8 @@
       "cevap": "Lyman çizgilerinin hepsi yaklaşık 122 nm ve daha kısa dalga boylarında, yani morötesindedir. Atmosferin optik penceresi yaklaşık 300 nm'de başlar ve ozon morötesine neredeyse tam bir engeldir; bu yüzden Lyman çizgileri için uzaydaki aletler gerekir."
     },
     {
-      "soru": "Sirius'un sıcaklığı 9845 K, yarıçapı 1,71 R☉ ise ışıma gücü Güneş'inkinin yaklaşık kaç katıdır? (T☉ = 5772 K)",
-      "cevap": "L ÷ L☉ = (1,71)² × (9845 ÷ 5772)⁴ ≈ 2,94 × 8,46 ≈ 24,9. Yaklaşık 25 kat; kaynaktaki 24,7 ile uyumlu."
+      "soru": "Sirius'un sıcaklığı 9845 K, yarıçapı 1,714 R☉ ise ışıma gücü Güneş'inkinin yaklaşık kaç katıdır? (T☉ = 5772 K)",
+      "cevap": "L ÷ L☉ = (1,714)² × (9845 ÷ 5772)⁴ ≈ 2,94 × 8,46 ≈ 24,9. Yaklaşık 25 kat; kaynaktaki 24,7 ile uyumlu."
     },
     {
       "soru": "Gündüz göğü neden mavi, batan Güneş neden kızıldır?",

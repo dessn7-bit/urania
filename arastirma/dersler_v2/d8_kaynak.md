@@ -311,3 +311,17 @@ Bu oturumda WF = WebFetch ile okunan sayfa (alıntı WebFetch çıktısının ak
 8. Yeni sorular: 15 (6 yeni); anahtar sayılar 30 (12 yeni); sözlük 22 (12 yeni); kaynaklar 35 (13 yeni). Eski öğelerin kid alanları ve bölüm başlıkları aynen korundu.
 9. Çıkarılanlar: TV karıncalanmasının yüzdesi (yalnız zayıf kaynaklarda "yüzde 1"; derse "küçük bir kısmı" yazıldı). M13'ün yaşı (kaynak açılmadı). z ≈ 7,7'nin yıl karşılığı (kaynakta yok). Hidrojeni iyonlaştıranların listesi Wikipedia Reionization'dan; "ilk yıldız doğrudan gözlenmedi" artık CHRON'daki açık ifadeye dayanıyor.
 10. ASKIDA: arXiv izin zaman aşımı yüzünden Planck 2018 özetindeki τ değeri bu oturumda okunamadı; derste τ sayısı yok, yalnız Wikipedia'daki z = 7,68 ± 0,79 var.
+
+## Bağımsız doğrulama (v3, 28.10.2026)
+Yeniden açılan sayfalar (WebFetch): WP Cosmic microwave background, Big Bang nucleosynthesis, Olbers paradox, Reionization, HD 140283, Cosmic Calendar, Chronology of the universe, Baryon acoustic oscillations; cam.ac.uk/node/235511; scholars.utoledo.edu (LAP1-B); NASA HD 140283 (2013); CoolCosmos. Bütün örnekler python3 ile yeniden hesaplandı (4448 Mpc = 14,51 milyar ışık yılı; 0,247 /m³; 7,4; 0,25; 1/13; 0,333; 3,3621 mK; 443 cm / 67,6 MHz; 148 cm / 203 MHz; 13,61 eV; 2,48 eV; 37,77 milyon yıl/gün; 437,2 yıl/s; 14,5 dk; 7,4 / 26,5 / 244 gün; 8,7×10⁻⁸ s).
+
+| Değişiklik / bulgu | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| DÜZELTME (yanlış aktarım): LAP1-B'nin üç öngörüsünden üçüncüsü "5×10⁷ M☉ hale" değil, "birkaç bin M☉'lik küçük kümeler halinde oluşma"; 5×10⁷ M☉ hale yazarların uyum sonucu. Metin düzeltildi | https://scholars.utoledo.edu/display/other_activity-59821 | üç öngörü: "formation in extremely low-metallicity halos..." ; "a top-heavy initial mass function" ; low-mass clusters "of a few thousand solar masses" ; "consistent with ... a dark matter halo of ~5×10⁷ M☉" (WebFetch özeti) |
+| YUMUŞATMA: CoolCosmos sayfası yayıncısını belirtmiyor; "Toronto Üniversitesi'nde yayımlanan" → "CoolCosmos adlı eğitim sayfası" | https://dunlap.utoronto.ca/coolcosmos/bigbang.php | "A small fraction of that static is caused by the microwave afterglow from the origin of the universe." ; yayıncı adı yok |
+| DÜZELTME (atıf): Olbers 1826 "başka kaynak" değil, kaynakçadaki Olbers yayını | https://en.wikipedia.org/wiki/Olbers_paradox | "who described it in 1823" ; kaynakça: "H. W. M. Olbers (1826)" |
+| EK (güncellik): HD 140283 uzaklığı NASA 2013'te 190,1 ışık yılı; güncel WP ~200 ışık yılı; ikisi de metinde | https://en.wikipedia.org/wiki/HD_140283 ; NASA 2013 | "about 200 light years away" ; "190.1 light-years" |
+| DÜZELTME (Türkçe/sayı): "birkaç binde biri kadar enerji" belirsizdi → "yaklaşık 3.000 ile 5.000 kat küçük" | HESAP | 1,8/6,33×10⁻⁴ = 2.845 ; 3,3/6,33×10⁻⁴ = 5.217 |
+| KAVRAM NOTU: z = 20 → 6 aralığı CHRON tablosunda "Reionization" satırında (200 Ma–1 Ga); karanlık çağ satırı z 1100–20. Örnekteki "kozmik şafak ve yeniden iyonlaşmanın başı z = 20" bununla uyumlu | https://en.wikipedia.org/wiki/Chronology_of_the_universe | Reionization: "200 Ma – 1 Ga", "20 – 6" |
+| DOĞRULANDI: 2025 yıldız sismolojisi 14,2 ± 0,4; WP notu "still in agreement with the age of the Universe within one standard deviation" | WP HD 140283 | aynı |
+| DOĞRULANDI: kozmik takvim tarihleri (1 Mart, 9 Eylül, 14 Eylül ×2, 25 Aralık, 31 Aralık 23.52); 438 yıl/s WP'nin yuvarlaması (hesap 437,2) | WP Cosmic_Calendar | aynı |

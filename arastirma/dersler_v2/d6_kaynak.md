@@ -258,3 +258,19 @@ Not: imagine.gsfc.nasa.gov ve eso.org bu oturumda izin hatası verdi (yeniden de
 | T CrB 7,5 kadir | HESAP |
 | Nötrino bekçileri | SNEWS satırları |
 | Tycho ışık yankısı | ScienceDaily satırı |
+
+## Bağımsız doğrulama (v3, 28.10.2026)
+Yeniden açılan sayfalar (WebFetch): WP White dwarf, SN 1006, Millisecond pulsar, Planetary nebula, Sirius B, Type Ia supernova, Red dwarf; snews2.org/about; Swinburne Classical Novae; alphaxiv 2607.15245; Star Walk T CrB; S&T Blaze Star; Astronomy (Betelgeuse 2020, altın 2017); ScienceDaily 2008; ADS 2024ApJ...964..171B; NASA Betelgeuse. Bütün örnekler python3 ile yeniden hesaplandı (29.979 yıl; 1,156 milyon; 26,4 / 317 / 13–25 kat; 1585 / 631 / 1000 kat; 0,00138).
+
+| Değişiklik / bulgu | Kaynak URL | Kaynaktaki ifade ya da hesap |
+|---|---|---|
+| DÜZELTME (fizik): SN 1006 örneği J2000 dik açıklığını (−41° 57′) 1006 yılına uyguluyordu; presesyon ihmal edilmişti. 1006 dönemine taşınınca δ ≈ −37,6°; İstanbul en yüksek ≈ 11° (7° değil), St. Gallen ≈ 5° (0,5° değil). Örnek ve "ufka çok yakın" ifadesi düzeltildi. | https://en.wikipedia.org/wiki/SN_1006 ; presesyon d1 (WP Axial_precession) | "Declination −41° 57′" (J2000), sayfada 1006 dönemi koordinatı yok. HESAP: astropy 8.0.2 FK5(J2000) → FK5(equinox J1006,33): δ = −37,58° ; 90−41−37,58 = 11,4 ; 90−47,5−37,58 = 4,9 |
+| EK (SNEWS sıklığı): sayfa iki ayrı ifade veriyor; metne ikincisi de eklendi | https://snews2.org/about/ | "only happens once or twice a century" ; "expected only every few decades" |
+| SNEWS 10 kpc aralıkları doğrulandı: Super-K 4.100–7.800, IceCube 320.000–820.000; aralık öncül kütlesi (11,2 / 27 / 40 M☉) ve kütle sıralamasına bağlı | aynı | tablo; "normal mass ordering (left number) and the inverted mass order (right number)" ; 20 deney |
+| YUMUŞATMA: "Kırmızı dev eş, onu klasik novalardan ayırır" → "eşin anakol yıldızı değil kırmızı dev olması onu yukarıda anlatılan tipik klasik novadan ayırır" (Swinburne klasik novayı anakol eşli tarif ediyor) | https://astronomy.swinburne.edu.au/cosmos/C/Classical+Novae ; https://www.alphaxiv.org/abs/2607.15245.md | "a white dwarf and a main-sequence star" (özet) ; "a Roche-lobe-filling M4 III red giant" |
+| DOĞRULANDI (yinelenen nova 10–100 yıl; yalnızca bir kez görülmüş) | Swinburne | "the interval between outbursts of recurrent novae range from 10 to 100 years" ; "has only been seen to erupt once is known as a classical nova" |
+| DOĞRULANDI (2026 sonrası iddia): T CrB preprint 17 Temmuz 2026, Pei ve ark.; 1,32–1,38; 227,55–227,58 gün; ~80 yıl; 11 Temmuz 2026 koşulu; 2026 Aralık; 2029 Mayıs; pencere | alphaxiv 2607.15245 | alıntılar yukarıdaki satırla aynı |
+| DOĞRULANDI: kristalleşme — 2019'da doğrulanan şey enerji salımı; ders metni de "enerjinin izi" diyor | WP White_dwarf | "This energy release was first confirmed in 2019" |
+| DOĞRULANDI: "tanınan ilk beyaz cüce 40 Eridani B" | WP White_dwarf | "The first white dwarf discovered was in the triple star system of 40 Eridani" |
+| KAVRAM NOTU (değişiklik yok): altın "10–100 Dünya kütlesi" = kaynakta "10 and 100 Earths worth of gold" | Astronomy 2017 | aynı |
+| KAVRAM NOTU: Tycho SN'nin 1572 dik açıklığı presesyonla ≈ +61,8°; İstanbul'dan kutup çevresi olma sonucu değişmiyor (> 49°) | HESAP (astropy) | — |
