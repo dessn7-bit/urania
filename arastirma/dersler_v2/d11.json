@@ -176,7 +176,7 @@
         "Bir yıl sonra 'Andromeda'yı ilk ne zaman görmüştüm, o gece gök nasıldı?' diye merak edeceksin. BBC Sky at Night'a göre gözlem defteri gökte gördüklerini kaydetmeni sağlar; geriye dönüp baktığında gözlem ve çizim becerinin nasıl geliştiğini görürsün. Doğru bir kaydın yoksa önemli bir şey görüp görmediğini hiç bilemeyebilirsin.",
         "Her gözlem için şunları yaz: tam tarih (yıl-ay-gün biçiminde), her gözlemin saati UT (evrensel zaman) olarak, kullandığın alet (dürbün için örneğin 7×50) ve büyütme, kullandıysan filtre, gökyüzünün durumu (bulut, pus, Ay ışığı). Atmosferin ne kadar sakin olduğunu not etmek için Antoniadi ölçeği kullanılır: I kusursuz keskin bir görüntü, V ise odaklanmayan bir lekedir. Bulutsu ya da küme çizerken kuzey yönünü işaretle ve takımyıldızın adını yaz. Çizimi önce ayrı bir kâğıda yapıp sonra deftere yapıştırmak işini kolaylaştırır. Değişen yıldız gözlüyorsan kadir tahminini mutlaka kaydet.",
         "Gökyüzünün karanlığını da kaydet. John E. Bortle, Şubat 2001'de Sky & Telescope'ta gökyüzünü 1'den 9'a sınıflayan bir ölçek yayımladı; ayrıntısı 1. derste. Ölçeğe göre çıplak gözle görülebilen en sönük yıldız 1. sınıfta 7,6–8,0, 3. sınıfta 6,6–7,0, 5. sınıfta 5,6–6,0 kadirdir; 7. sınıfta ancak zorlanarak 5,0, 8. sınıfta en iyi ihtimalle 4,5, 9. sınıfta ise 4,0 ya da daha parlaktır. Wikipedia'daki tablo bazı sınırları biraz farklı çizer. Her gece başucuna yakın bir bölgede seçebildiğin en sönük yıldızın kadirini deftere yazarsan, aynı balkondan bakarken bile gökyüzünün geceden geceye değişip değişmediğini sayıyla görürsün.",
-        "Saati UT olarak yazmak İstanbul'dan kolaydır. Wikipedia'nın Türkiye'de yaz saati maddesine göre Türkiye 2016'da kış saatine dönmeyi bıraktı ve 8 Eylül 2016'dan beri yıl boyu UTC+3 saat diliminde kalıyor (madde Mayıs 2026'da güncellenmiş hâliyle de böyle). Yani Türkiye saatinden 3 saat çıkarırsın: akşam 21:00, 18:00 UT olur. Gece yarısından sonra dikkat: 1 Aralık gecesi saat 01:30'da yaptığın bir gözlem, UT ile 30 Kasım 22:30'dur. Tarih de bir gün geri gider. Kayıtta tarihi ve saati birlikte UT olarak yazarsan, yıllar sonra kayıtlarını başkalarınınkiyle ya da kataloglarla karşılaştırırken karışıklık çıkmaz.",
+        "Saati UT olarak yazmak İstanbul'dan kolaydır. Wikipedia'nın Türkiye'de yaz saati maddesine göre Türkiye 2016'da kış saatine dönmeyi bıraktı ve 8 Eylül 2016'dan beri yıl boyu UTC artı 3 saat diliminde kalıyor (madde Mayıs 2026'da güncellenmiş hâliyle de böyle). Yani Türkiye saatinden 3 saat çıkarırsın: akşam 21:00, 18:00 UT olur. Gece yarısından sonra dikkat: 1 Aralık gecesi saat 01:30'da yaptığın bir gözlem, UT ile 30 Kasım 22:30'dur. Tarih de bir gün geri gider. Kayıtta tarihi ve saati birlikte UT olarak yazarsan, yıllar sonra kayıtlarını başkalarınınkiyle ya da kataloglarla karşılaştırırken karışıklık çıkmaz.",
         "Defterin bir değeri daha var: kendi gözünü ve gökyüzünü tanımak. Aynı hedefe farklı gecelerde bakıp notlarını karşılaştırdığında, örneğin Ülker'de kaç yıldız seçtiğini ya da Andromeda'nın parlak merkezini ne kadar kolay bulduğunu yazdığında, hangi gecelerin gerçekten iyi olduğunu görmeye başlarsın. Kaçamak bakış bölümündeki 'önce doğrudan, sonra yandan say' denemesi, karanlık uyumu süresi, kullandığın dayanak ve gök durumu aynı satırda durursa, hangi alışkanlığın sana ne kazandırdığını kendi verinle görürsün. Kaynakların veremediği sayıları, örneğin kaçamak bakışın senin gözüne kaç yıldız kazandırdığını, böyle bulursun."
       ],
       "ornek": {
@@ -219,6 +219,31 @@
       "ad": "En yüksek konumdaki yükseklik (Kuzey Yarımküre, cisim başucunun güneyinde)",
       "ifade": "A = 90° − enlem + dik açıklık",
       "aciklama": "A: cismin meridyenden geçerken ufuktan yüksekliği (derece). İstanbul için enlem 41°. Sonuç 90°'yi aşarsa cisim başucunun kuzeyinden geçer."
+    },
+    {
+      "ad": "Görünür görüş alanı (ISO 14132-1)",
+      "ifade": "tan(görünür alan / 2) = büyütme × tan(gerçek alan / 2)",
+      "aciklama": "Alanlar derece. 7×, 6,4° → 42,7° (Nikon belgesi). Eski yöntem: görünür alan ≈ büyütme × gerçek alan (44,8°)."
+    },
+    {
+      "ad": "Belli uzaklıktaki genişlik",
+      "ifade": "Genişlik = 2 × uzaklık × tan(gerçek alan / 2)",
+      "aciklama": "6,4° ve 1.000 m → 111,8 m ≈ 112 m. Belgedeki uzaklığın metre mi yarda mı olduğuna dikkat et."
+    },
+    {
+      "ad": "Göreli parlaklık ve alacakaranlık faktörü",
+      "ifade": "Göreli parlaklık = (çıkış göz bebeği)² ; Alacakaranlık faktörü = karekök(büyütme × objektif çapı)",
+      "aciklama": "7×50: 51 ve 18,7. İkisi de senin göz bebeğini hesaba katmaz; 70×5 de 18,7 verir."
+    },
+    {
+      "ad": "Yüzey parlaklığı",
+      "ifade": "S = m + 2,5 × log₁₀(A)",
+      "aciklama": "S: yay saniyesi karesi başına kadir; m: toplam kadir; A: cismin alanı (yay saniyesi karesi). M13: 5,8 + 2,5 × 6,05 ≈ 20,9. Karanlık gök ≈ 21,8; kent göğü < 18."
+    },
+    {
+      "ad": "Hiç batmama koşulu ve en alçak yükseklik",
+      "ifade": "dik açıklık > 90° − enlem ise cisim batmaz; en alçak yükseklik = enlem − (90° − dik açıklık)",
+      "aciklama": "İstanbul (41°): dik açıklığı 49°'den büyük cisimler batmaz. Merak (56,4°): 41 − 33,6 = 7,4°."
     }
   ],
   "anahtar_sayilar": [
@@ -305,6 +330,51 @@
       "aciklama": "Güneş'in dolunaya göre parlaklığı (−26,74 ve −12,74 kadirden hesap)",
       "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html",
       "kid": "d11n13"
+    },
+    {
+      "deger": "6,4° · 6,6° · 6,97°",
+      "aciklama": "Üç 7×50 belgesinde gerçek görüş alanı (Nikon Action EX, Celestron Cometron, Bresser Travel); Urania'nın bulma haritası en küçüğünü (6,4°) kullanır",
+      "kaynak_url": "https://imaging.nikon.com/sport-optics/lineup/binoculars/standard/ex_x35x40x50/"
+    },
+    {
+      "deger": "42,7°",
+      "aciklama": "Nikon Action EX 7×50'nin görünür görüş alanı (ISO 14132-1 formülüyle)",
+      "kaynak_url": "https://imaging.nikon.com/sport-optics/guide/binoculars/basic/basic_08/"
+    },
+    {
+      "deger": "> 16 mm",
+      "aciklama": "Çoğu gözlük kullanıcısına yeten göz mesafesi (kalın çerçevede > 17 mm)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Binoculars"
+    },
+    {
+      "deger": "Yüzde 52 → yüzde 78,5",
+      "aciklama": "16 hava-cam yüzeyinden sonra kalan ışık: kaplamasız (yüzey başına yüzde 4 yansıma) ve magnezyum florür kaplamalı (yüzde 1,5)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Binoculars"
+    },
+    {
+      "deger": "Koniler 9–10 dk; çubuklar 30–45 dk (başka yerde ~2 saat)",
+      "aciklama": "Karanlık uyumunun iki aşaması",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Adaptation_(eye)"
+    },
+    {
+      "deger": "~21,8",
+      "aciklama": "Gerçekten karanlık bir göğün yüzey parlaklığı (yay saniyesi karesi başına kadir); Bortle 8 kent göğü < 18",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Surface_brightness"
+    },
+    {
+      "deger": "8 ve 6,9 kadir",
+      "aciklama": "Çıplak gözün en uç sınırı: yıldız için 8, galaksi için 6,9",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Surface_brightness"
+    },
+    {
+      "deger": "13",
+      "aciklama": "Charles Messier'nin keşfettiği kuyruklu yıldız sayısı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Charles_Messier"
+    },
+    {
+      "deger": "UTC artı 3 (2016'dan beri)",
+      "aciklama": "Türkiye'nin yıl boyu saat dilimi: UT = Türkiye saati − 3 saat",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Daylight_saving_time_in_Turkey"
     }
   ],
   "sozluk": [
@@ -357,6 +427,46 @@
       "terim": "UT (evrensel zaman)",
       "tanim": "Gözlem kayıtlarında kullanılan, yerel saat diliminden bağımsız ortak zaman.",
       "kid": "d11t9"
+    },
+    {
+      "terim": "Gerçek görüş alanı",
+      "tanim": "Dürbünü oynatmadan görülen gök parçasının gökteki açısal genişliği; 7×50'lerde belgeye göre 6,4–7°."
+    },
+    {
+      "terim": "Görünür görüş alanı",
+      "tanim": "Büyütülmüş görüntünün göze göründüğü açısal genişlik; ISO 14132-1 formülüyle gerçek alandan hesaplanır."
+    },
+    {
+      "terim": "Göz mesafesi",
+      "tanim": "Dürbünün en arka merceği ile gözün durması gereken nokta arasındaki uzaklık; gözlükle bakarken yeterince uzun olmalıdır."
+    },
+    {
+      "terim": "Diyoptri ayarı",
+      "tanim": "Bir göz merceğindeki, iki göz arasındaki keskinlik farkını düzelten ayrı odak halkası."
+    },
+    {
+      "terim": "Kolimasyon",
+      "tanim": "Dürbünün iki tüpünün birbirine paralel hizalanması; bozulursa çift görüntü ve göz yorgunluğu olur."
+    },
+    {
+      "terim": "Toplam kadir",
+      "tanim": "Yayılmış bir cismin bütün ışığı tek bir noktada toplansaydı görüneceği kadir."
+    },
+    {
+      "terim": "Yüzey parlaklığı",
+      "tanim": "Yayılmış bir cismin ya da gök arka planının birim açısal alana düşen parlaklığı; yay saniyesi karesi başına kadirle verilir."
+    },
+    {
+      "terim": "Purkinje etkisi",
+      "tanim": "Göz karanlığa uyum sağlarken renk algısının değişmesi; çok loş ışıkta renkler kaybolur."
+    },
+    {
+      "terim": "İki göz toplaması",
+      "tanim": "İki gözle bakınca karşıtlığa duyarlılığın tek göze göre artması; artış uyarana göre yaklaşık 1,4 ile 2 kat arasıdır."
+    },
+    {
+      "terim": "Fovea",
+      "tanim": "Retinanın merkezindeki, koni hücrelerle dolu ve neredeyse hiç çubuk hücre bulunmayan küçük bölge."
     }
   ],
   "defter_notu": [
@@ -365,10 +475,10 @@
     "Karanlık uyumu 20–30 dk (kaynağa göre 15–45). Beyaz ışık bir anda sıfırlar; loş kırmızı ışık kullan.",
     "Kaçamak bakış: sönük cismin biraz yanına bak; çubuklar merkezde yok, ~20° dışta yoğun.",
     "Sabit tut: iki el, dirsekler gövdeye, bir yere yaslan, mümkünse sehpa.",
-    "El cetveli: yumruk 10°, üç parmak 5°, serçe 1°. Dolunay 0,5°. Dürbün görüş alanı ≤ 8°.",
-    "Messier: kuyruklu yıldız avcısının listesi; 1774'te 45, bugün 110 cisim.",
+    "El cetveli: yumruk 10°, üç parmak 5°, serçe 1°. Dolunay 0,5°. 7×50 alanı 6,4–7° (Urania 6,4° kullanır). Merak–Dubhe 5,37° ile kendi alanını sına.",
+    "Messier: kuyruklu yıldız avcısının listesi; 1774'te 45, bugün 110 cisim. Bulanık cisimde toplam kadir yanıltır: yüzey parlaklığı = m + 2,5 log(alan).",
     "Hedefler: M45 Ara · M42 Oca · M44 Mar · M13 Tem · M8 Ağu · M31 Kas. İstanbul'da yükseklik = 49° + dik açıklık.",
-    "Defter: yyyy-aa-gg, UT saat, alet, gök durumu, sınır kadir, çizim (kuzey işaretli).",
+    "Ayar: göz bebekleri arası → diyoptri (sağ göz kapalı orta tekerlek, sol göz kapalı halka). Gözlükle göz mesafesi > 16 mm. Defter: yyyy-aa-gg, UT = TSİ − 3, alet, gök, sınır kadir, çizim.",
     "Güneş'e dürbünle ASLA bakma. Ay güvenli ama karanlık uyumunu bozar → sona bırak."
   ],
   "sorular": [
@@ -411,6 +521,34 @@
       "soru": "Gözlem defterine saati neden yerel saat yerine UT olarak yazmak önerilir?",
       "cevap": "UT herkes için aynı zamandır; kaydın başka gözlemcilerin kayıtlarıyla, kataloglarla ve yıllar sonra kendi kayıtlarınla saat dilimi ya da yaz saati karışıklığı olmadan karşılaştırılabilmesini sağlar. BBC Sky at Night da her gözlemin saatini UT olarak yazmayı önerir.",
       "kid": "d11s7"
+    },
+    {
+      "soru": "Urania'nın bulma haritası 7×50 için neden 6,6° ya da 6,97° değil de 6,4°'lik bir daire çizer?",
+      "cevap": "Üç üretici belgesi 6,4° (Nikon), 6,6° (Celestron) ve 6,97° (Bresser) veriyor. Daire gerçek alandan büyük çizilirse, haritada dairenin kenarındaki bir hedef dar alanlı bir dürbünde hiç görünmeyebilir. En küçük değer güvenli taraftır: hedef haritada dairedeyse daha geniş alanlı dürbünlerde de alana girer, atlama adımları da kısa kalır."
+    },
+    {
+      "soru": "Celestron'un belgesi 1.000 yardada 344 fit diyor. Bu kaç derecelik gerçek alan eder, 1.000 metrede genişlik kaç metre olmalı?",
+      "cevap": "1.000 yarda = 3.000 fit. Yarı açı: tanjantı 172 / 3.000 ≈ 0,0573 olan açı ≈ 3,28°; iki katı ≈ 6,56°, yani belgedeki 6,6°. 1.000 metrede: 2 × 1.000 × tan 3,3° ≈ 115 m. Sayfadaki '105 m' 344 fitin metre karşılığıdır, 1.000 metredeki genişlik değildir."
+    },
+    {
+      "soru": "Gözlük takan biri Nikon Action EX (17,1 mm), Bresser 7×50 Travel (14,13 mm) ve Celestron Cometron (13 mm) arasında göz mesafesine göre hangisini seçmeli?",
+      "cevap": "Wikipedia'ya göre çoğu gözlük kullanıcısına 16 mm'nin üstündeki göz mesafesi yeter. Bu ölçütü yalnızca Nikon (17,1 mm) geçer; ötekilerde gözlükle bakınca alanın kenarları kararabilir. Kalın çerçevede önerilen 17 mm'yi de Nikon ancak 0,1 mm farkla geçer."
+    },
+    {
+      "soru": "Andromeda 3,44 kadir, ama tek bir 3,44 kadirlik yıldız kadar kolay görünmez. Neden?",
+      "cevap": "3,44 toplam kadirdir: bütün ışık tek noktada toplansaydı görüneceği parlaklık. Galaksinin ışığı geniş bir alana yayıldığı için birim alana düşen parlaklık, yani yüzey parlaklığı düşüktür ve gök arka planına karşı seçmek zorlaşır. Bu yüzden çıplak gözün en uç sınırı yıldızlar için 8, galaksiler için 6,9 kadirdir."
+    },
+    {
+      "soru": "M13'ün yüzey parlaklığı yaklaşık 20,9 (yay saniyesi karesi başına kadir). Gök arka planı 21,8 olan karanlık bir yerde ve 18,0 olan bir kentte M13'ün ortalama yüzeyi arka planın kaç katı ışık verir?",
+      "cevap": "Karanlıkta fark 21,8 − 20,9 = 0,9 kadir lehine: 10 üzeri (0,4 × 0,9) ≈ 2,3 kat. Kentte 20,9 − 18,0 = 2,9 kadir aleyhine: 10 üzeri (−0,4 × 2,9) ≈ 0,07, yani arka planın ancak yüzde 7'si kadar ek ışık. Kentte M13'ü zorlaştıran budur; parlak merkezi ortalamadan iyi olduğu için yine de denemeye değer."
+    },
+    {
+      "soru": "Türkiye saatiyle 15 Mart gecesi 00:40'ta Jüpiter'in uydularını çizdin. Deftere tarih ve saati UT olarak nasıl yazarsın?",
+      "cevap": "Türkiye 2016'dan beri yıl boyu UTC artı 3 kullanıyor; 3 saat çıkarırsın. 15 Mart 00:40 Türkiye saati, UT ile 14 Mart 21:40'tır. Tarih de bir gün geri gider: 2026-03-14, 21:40 UT gibi."
+    },
+    {
+      "soru": "Karanlığa çıktıktan 10 dakika sonra gözün tam uyum sağlamış sayılır mı?",
+      "cevap": "Hayır. Wikipedia'ya göre koniler en yüksek duyarlılıklarına 9–10 dakikada ulaşır, ama gece görüşünü sağlayan çubuklar için 30–45 dakika (aynı maddenin başka bir yerinde en yüksek duyarlılık için yaklaşık iki saat) gerekir. 10. dakikada uyumun yalnızca ilk aşaması bitmiştir."
     }
   ],
   "kaynaklar": [
@@ -533,6 +671,46 @@
     {
       "ad": "NASA NSSDCA – Moon Fact Sheet / Sun Fact Sheet",
       "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html"
+    },
+    {
+      "ad": "Nikon – Action EX 7×50 CF teknik özellikleri",
+      "url": "https://imaging.nikon.com/sport-optics/lineup/binoculars/standard/ex_x35x40x50/"
+    },
+    {
+      "ad": "Celestron – Cometron 7×50",
+      "url": "https://www.celestron.com/products/cometron-7x50"
+    },
+    {
+      "ad": "Bresser – 7×50 Travel (1250752)",
+      "url": "https://www.bresser.com/p/bresser-7x50-travel-binoculars-1250752"
+    },
+    {
+      "ad": "Nikon – Field of view (gerçek ve görünür alan, ISO 14132-1)",
+      "url": "https://imaging.nikon.com/sport-optics/guide/binoculars/basic/basic_08/"
+    },
+    {
+      "ad": "Explore Scientific – Binocular Basics (göz arası, diyoptri, göz kapakları)",
+      "url": "https://explorescientific.com/pages/binocular-basics"
+    },
+    {
+      "ad": "Baker, Lygo, Meese, Georgeson (2018), Binocular Summation Revisited: Beyond √2, Psychological Bulletin",
+      "url": "https://publications.aston.ac.uk/id/eprint/33467/6/Binocular_Summation_Revisited.pdf"
+    },
+    {
+      "ad": "Wikipedia – Surface brightness",
+      "url": "https://en.wikipedia.org/wiki/Surface_brightness"
+    },
+    {
+      "ad": "Wikipedia – Charles Messier",
+      "url": "https://en.wikipedia.org/wiki/Charles_Messier"
+    },
+    {
+      "ad": "Astronomy – The Galilean moons of Jupiter and how to observe them",
+      "url": "https://www.astronomy.com/observing/the-galilean-moons-of-jupiter-and-how-to-observe-them/"
+    },
+    {
+      "ad": "Wikipedia – Daylight saving time in Turkey",
+      "url": "https://en.wikipedia.org/wiki/Daylight_saving_time_in_Turkey"
     }
   ]
 }

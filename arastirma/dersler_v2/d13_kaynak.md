@@ -107,3 +107,112 @@ Tarih: 2026-10-27. Kaynaklar WebFetch ile yeniden açıldı; hesaplar python3 il
 - Not (askıda değil, nüans): 51 Pegasi tayf türü kaynaklarda farklı veriliyor — Wikipedia bilgi kutusu "G2V+", metinde G2IV (1989) ve G5V (tarihsel) da anılıyor. Derste "G2V" bırakıldı (bilgi kutusu ve NStars ile uyumlu).
 - Not: sıcak Jüpiterlerin "yıldızlarını güçlü salındırması" Smithsonian'da yok; dayanağı Doppler spectroscopy tablosu (51 Peg b 55,9 m/s, Jüpiter 12,4 m/s).
 - Arama: bu ders için 0 WebSearch.
+
+## v3 GENİŞLETME (2026-10-28) — yeni iddialar
+Biçim: iddia | kaynak URL | kaynaktaki ifade. [H] = hesap.
+
+### Bölüm 1 eklemeleri
+- Struve 1952: güçlü tayfölçerlerle gezegen bulma önerisi | https://en.wikipedia.org/wiki/Doppler_spectroscopy | "Otto Struve proposed in 1952 the use of powerful spectrographs to detect distant planets."
+- Struve: yıldızına yakın Jüpiter benzeri gezegen ölçülebilir dikine hız değişimi yaratabilir | https://k12.libretexts.org/Bookshelves/Science_and_Technology/Origins_and_the_Search_for_Life_in_the_Universe/07%3A_Exoplanet_Detection_Methods/7.01%3A_Early_History | Struve (1952) suggested a Jupiter-like planet close to its star could produce detectable radial velocity variations (CK-12 lisanslı sayfa; OpenStax değil)
+- Jüpiter dolanma süresi ~4.333 gün (~12 yıl) | https://nssdc.gsfc.nasa.gov/planetary/factsheet/jupiterfact.html | "Sidereal orbit period (days) 4,332.589"
+- Yakın yörünge dönemin oluşum kuramlarıyla bağdaşmadı; göç tartışması | https://en.wikipedia.org/wiki/51_Pegasi | close orbit "not compatible with planet formation theories", led to discussion of planetary migration
+- 1952 → 1995 = 43 yıl | [H]
+- ELODIE, Haute-Provence, 1993 | https://en.wikipedia.org/wiki/Doppler_spectroscopy | ELODIE "installed at the Haute-Provence Observatory in Southern France in 1993"
+- 51 Peg b sıcaklık tahmini ~1.200 °C | https://en.wikipedia.org/wiki/51_Pegasi | estimated temperature about 1,200 °C (1,500 K)
+- 51 Pegasi kütlesi 1,09 ± 0,02 M☉; yarıçap 1,152 R☉; 15,53 pc; P = 4,2307966 gün; a = 0,0523 AB; eğiklik 49,8° | https://en.wikipedia.org/wiki/51_Pegasi | bilgi kutusu değerleri
+- a³ = M × P² (AB, yıl, M☉) | https://en.wikipedia.org/wiki/Kepler%27s_laws_of_planetary_motion | Newton biçimi a³/T² = G(M+m)/4π² (d3'te doğrulanmış); M☉ ve yıl birimlerinde M = 1 için P² = a³
+- [H] 4,2308/365,25 = 0,011583; ² = 1,3417×10⁻⁴; ×1,09 = 1,4625×10⁻⁴; küp kök = 0,05268 AB; ×149,6 = 7,88 milyon km; M = 1,07 için 0,05237
+
+### Bölüm 2 eklemeleri
+- [H] 0,3 / 299.792.458 ≈ 1,0×10⁻⁹; 500 nm × 10⁻⁹ = 5×10⁻⁷ nm | c değeri: arastirma/sabitler.json (NIST CODATA)
+- Çok sayıda çizgi ve çok tur sinyal/gürültü oranını artırır | https://en.wikipedia.org/wiki/Doppler_spectroscopy | "Observation of many separate spectral lines and many orbital periods allows the signal-to-noise ratio ... to be increased"
+- Yıldız etkinliği gezegen sinyalini boğabilir ya da taklit edebilir | https://en.wikipedia.org/wiki/Doppler_spectroscopy | "the impact of stellar activity from the host star, which can drown out or even mimic planetary signals"
+- Ocak 2026: 1.100'den fazla, ~%19,0 dikine hızla | https://en.wikipedia.org/wiki/Doppler_spectroscopy | "Over 1,100 known extrasolar planets (about 19.0% of the total) have been discovered using Doppler spectroscopy" (Ocak 2026)
+- Dönem → yörünge (Kepler), genlik → en az kütle | https://en.wikipedia.org/wiki/Doppler_spectroscopy | "the amplitude of the curve will allow the minimum mass of the planet to be calculated"
+
+### Bölüm 3 eklemeleri
+- Dünya geçişi 13,0 saat; derinlik %0,0084 | https://webarchive.library.unt.edu/web/20130216172310/http://kepler.nasa.gov/Science/about/characteristicsOfTransits | tablo: Earth duration 13.0 hours; depth 0.0084%
+- Kepler tasarımı: mv=12 Güneş benzeri yıldızda Dünya boyu gezegen, 4 geçiş; SNR geçiş sayısının karekökü | aynı URL | "SNR=8 sigma for an Earth-size planet orbiting an mv=12 solar-like star with 4 near-grazing transits"; SNR scales with square root of number of transits
+- Derinlik/süre değişirse geçiş dışı olay | aynı URL | if depth or duration varies, "some other non-transit phenomena are taking place"
+- CoRoT: 26 alanda 163.665 hedef; CoRoT-7b ilk geçiş yapan karasal gezegen | https://arxiv.org/pdf/1803.07867 | "it surveyed 163,665 targets distributed over 26 stellar fields"; CoRoT-7b first transiting terrestrial planet
+- TESS Nisan 2018; gözlemler çoğunlukla 28 gün | https://arxiv.org/pdf/1803.07867 | "TESS was launched in April 2018"; pointings most often last 28 days
+- TESS kısa yörüngede verimli | (28 günlük bakıştan mantıksal çıkarım: birden çok geçiş için dönem ≲ 14 gün)
+
+### Bölüm 4 eklemeleri
+- Doğrudan görüntüleme yalnız genç, sıcak, kendi ışıyan büyük kütleli gezegenler | https://arxiv.org/pdf/2404.09143 | "can only directly picture massive planets that are young, warm, and selfluminous"
+- Genç gezegenler hâlâ parlayacak kadar sıcak, doğrudan saptanabilir | https://phys.org/news/2021-12-eso-telescopes-uncover-largest-group.html | "still hot enough to glow, making them directly detectable by sensitive cameras"
+- Güneş Dünya'dan ~10 milyar kat parlak | https://www.ipac.caltech.edu/news/the-nasa-exoplanet-archive-hits-6-000-planets | (Bölüm 1 satırı)
+- Parsek tanımı: 1 pc = 648.000/π AB (1 AB 1 yay saniyesi görünür) | https://arxiv.org/pdf/1510.06262 | "The parsec is defined as exactly (648 000/π) au" (arastirma/sabitler.json)
+- Jüpiter a = 778,479 milyon km | https://nssdc.gsfc.nasa.gov/planetary/factsheet/jupiterfact.html | "Semimajor axis (10^6 km) 778.479"
+- [H] 778,5/149,6 = 5,20 AB; 5,2/10 = 0,52″; 0,052/15,5 = 0,00335″; oran 155 ≈ 150; 10 pc = 32,6 ışık yılı
+- Serbest gezegen tanımı | https://www.nasa.gov/missions/roman-space-telescope/new-study-reveals-nasas-roman-could-find-400-earth-mass-rogue-planets | rogue/free-floating planets not bound to stars
+- Güneş kütlesi 1.988.400 ×10²⁴ kg; Jüpiter 1.898,13 ×10²⁴ kg | https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html?level=1 ; https://nssdc.gsfc.nasa.gov/planetary/factsheet/jupiterfact.html | değerler
+- [H] 1.898,13/1.988.400 = 0,000955; 778,479×10⁶ × 0,000955 = 743.100 km > 695.700 km; 743.100/149.597.871 = 0,00497 AB; /10 = 0,000497″ ≈ 500 µas; 500/25 = 20
+- Gaia 20–25 µas (15. kadir) | https://arxiv.org/pdf/2404.09143 | (Bölüm 4 eski satırı)
+
+### Yeni bölüm: Bir sinyal ne zaman gezegen sayılır?
+- van de Kamp, Hollandalı, 1960'lar, Barnard Yıldızı, iki gezegen; 1970'lerin ortasında kusurlu teleskop merceği | https://www.sciencefocus.com/space/who-really-discovered-the-first-exoplanet | "Dutch astronomer Peter van de Kamp, who claimed to have found two planets orbiting a nearby red dwarf called Barnard's Star"; mid-1970s, faulty telescope lens
+- Başka gözlemler doğrulamadı; van de Kamp hatayı kabul etmedi | https://k12.libretexts.org/Bookshelves/Science_and_Technology/Origins_and_the_Search_for_Life_in_the_Universe/07%3A_Exoplanet_Detection_Methods/7.01%3A_Early_History | "Observations by other astronomers contradicted that result, although van de Kamp never admitted that his claim was in error."
+- 1991, iki İngiliz gökbilimci, pulsar gezegeni, aylar içinde yanılsama | https://www.sciencefocus.com/space/who-really-discovered-the-first-exoplanet | "In 1991, two British astronomers claimed to have found a planet orbiting a pulsar"; illusion within months
+- Lyne ve Bailes, PSR 1829-10, Nature; Dünya'nın hareketi hesaba katılmadı; Ocak 1992 AAS toplantısında geri çekme | https://k12.libretexts.org/Bookshelves/Science_and_Technology/Origins_and_the_Search_for_Life_in_the_Universe/07%3A_Exoplanet_Detection_Methods/7.01%3A_Early_History | "they had not properly accounted for the velocity of the Earth around the Sun"; retracted "at a meeting of the American Astronomical Society in January 1992"
+- Campbell, Walker, Yang 1988, Gamma Cephei kırmızı dev, temkinli yorum; 2002 Hatzes ve ark. gezegen | aynı URL | "tentatively interpreted this as photospheric variability"; 2002 Hatzes showed orbiting exoplanet
+- Gamma Cephei → Kral (Cepheus) | yıldız adı (Cephei = Cepheus'un tamlaması); Türkçe ad veri/takimyildiz.json "Kral"
+- Örten çiftin seyrelmesiyle sığ çukur; izleme gözlemleri; dikine hızla kütle; çoklu sinyalde istatistiksel doğrulama | https://arxiv.org/pdf/1803.07867 | "a stellar eclipsing binary that is so close to a brighter single star"; follow-up "to detect false positives and to confirm the planetary nature"; RV mass; "several transiting signals are seen on the same star"
+- 2026 çalışması: 51 Peg'de ikinci cisim izi, "likely an instrumental artifact" | https://en.wikipedia.org/wiki/51_Pegasi | 2026 tentative second body; signal "likely an instrumental artifact"
+- Lyne örneği hakkında "iyi örnek" ifadesi | yazar yorumu
+
+### Bölüm 5 eklemeleri
+- Geçiş olasılığı ≈ R_y / a; Dünya %0,47 | https://webarchive.library.unt.edu/web/20130216172310/http://kepler.nasa.gov/Science/about/characteristicsOfTransits | "For the Earth and Venus this is 0.47% and 0.65% respectively" ; arXiv 1803.07867: "for an Earth-like planet at 1 AU from a solar-like star, it goes down to 0.5%"
+- [H] 695.700/149.597.871 = 0,00465 (NASA değeriyle aynı); 1/0,00465 = 215; 1,152 × 695.700 = 801.446 km; 0,0523 × 149.597.871 = 7.824.000 km; oran 0,1024; 0,1024/0,00465 = 22
+- 51 Peg b geçiş yapmaz | [H] eğiklik 49,8° → a·cos i / R_y = 7,82×10⁶ × 0,645 / 8,01×10⁵ ≈ 6,3 > 1 (geçiş için ≲ 1 gerekir)
+- Kepler gezegenlerinin ~%3'ü Jüpiter boyunda | https://arxiv.org/pdf/1803.07867 | "a small fraction (3%) of Kepler planets are Jupiter-sized"
+
+### Bölüm 6 eklemeleri
+- TRAPPIST-1 c'nin aldığı ışınım Venüs'ünkine neredeyse eşit | https://www.mpia.de/news/science/2023-08-trappist-1-c | radiation "nearly identical to that of Venus"
+- TRAPPIST-1 gezegenleri Merkür'den çok daha yakın | https://science.nasa.gov/photojournal/trappist-1-statistics-table/ | periods 1.5 – ~20 days vs Mercury ~88 days (Kepler yasasıyla daha küçük yörünge)
+- Proxima Centauri kırmızı cüce; Proxima b yaşanabilir bölgenin içinde; morötesi/X ışını patlamaları; büyük olasılıkla gelgit kilitli | https://physicsworld.com/a/rocky-planet-found-in-habitable-zone-around-suns-nearest-neighbour/ | "a red-dwarf star"; "lies well within the habitable zone"; "strongly affected by the ultraviolet and X-ray flares"; "most likely tidally locked"
+
+### Bölüm 7 eklemeleri
+- İkincil tutulma: gezegen ~yarım saat gizlenir; öncesi/sonrası farkı | https://www.mpia.de/news/science/2023-08-trappist-1-c | "completely hiding it from our telescopes for about half an hour"
+- TRAPPIST-1 c: Ekim–Kasım 2022'de dört gözlem | https://thedebrief.org/trappist-1-could-have-lower-number-of-habitable-planets-new-webb-data-suggests/ | observed four times in October and November 2022
+- 19 Haziran 2023 Nature; çap ve kütle Dünya'ya yakın; 380 K / 110 °C; kalın Venüs benzeri atmosfer dışlandı; ince atmosfer ya da çıplak kaya | https://www.mpia.de/news/science/2023-08-trappist-1-c | "19 June 2023"; "close match with those of Earth"; "110 degrees Celsius (380 Kelvin)"; "We can definitely rule out a thick and Venus-like atmosphere"
+- Zieba: yaşanabilir olabilecek gezegen sayısını azaltır | https://thedebrief.org/trappist-1-could-have-lower-number-of-habitable-planets-new-webb-data-suggests/ | "would definitely reduce the amount of planets which might be habitable"
+- TRAPPIST-1 e, 8 Eylül 2025: ilk dört gözlem yetmez; özgün atmosfer olası değil; ek gözlemler sürüyor | https://www.stsci.edu/contents/news-releases/2025/news-2025-109 | "the initial four observations by Webb are not enough to confirm an atmosphere"
+- Hidrojen baskın atmosfer dışlandı; Mars/Venüs benzeri CO₂ atmosfer olası değil; Titan benzeri azotça zengin mümkün; yıldız etkinliği (lekeler, patlamalar) karışıyor | https://news.mit.edu/2025/study-finds-habitable-zone-planet-unlikely-have-venus-or-mars-like-atmosphere-0908 | "rule out a hydrogen-dominated atmosphere"; "carbon dioxide-rich atmospheres, like those of Mars and Venus, are unlikely"; "a warm, nitrogen-rich atmosphere similar to Saturn's moon Titan remains possible"; "Stellar activity strongly interferes"
+
+### Bölüm 8 eklemeleri
+- 2001 sonu, Charbonneau, Hubble STIS, HD 209458 b'de sodyum, ilk ötegezegen atmosferi; çizgiler geçişte derinleşti; %70 Jüpiter kütlesi; 3,5 gün | https://astrobiology.nasa.gov/news/atmosphere-of-an-extrasolar-planet-detected-for-the-first-time/ | 5 Aralık 2001; "Space Telescope Imaging Spectrograph, or STIS"; "70 percent the mass of Jupiter"; every 3.5 days (sayfa 150 ışık yılı diyor; derste Gaia tabanlı 157 kullanıldı)
+- Kasım 2001 duyuru; sonraki veriler sodyumu doğrulamadı | https://en.wikipedia.org/wiki/HD_209458_b | "The additional data did not confirm the presence of sodium in the atmosphere of HD 209458 b"
+- 2020 tayfı sodyum ya da TiO; 2021 molekül soğurması yok; 157 ışık yılı | https://en.wikipedia.org/wiki/HD_209458 | "either sodium or titanium oxide"; 2021 no molecular absorption; "157.0 ± 0.2 ly"
+- WASP-39 b ~0,25 Jüpiter kütlesi, 1,3 Jüpiter çapı | https://www.jpl.nasa.gov/news/nasas-webb-detects-carbon-dioxide-in-exoplanet-atmosphere/ | (Bölüm 8 eski satırı)
+- Jüpiter yoğunluğu 1.326 kg/m³; Dünya 5.513 kg/m³ | https://nssdc.gsfc.nasa.gov/planetary/factsheet/jupiterfact.html | "Mean density 1326"; Earth 5513
+- [H] 1,3³ = 2,197; 0,25/2,197 = 0,1138; ×1.326 = 151 kg/m³; 1000/151 = 6,6 ≈ 7; 5.513/151 = 36,5 ≈ 37
+
+### Yeni bölüm: Sırada ne var
+- Roman 30 Ağustos 2026, 07:26 EDT, Falcon Heavy, KSC LC-39A | https://science.nasa.gov/?p=1225642 | "August 30, 2026, at 7:26 a.m. EDT"; SpaceX Falcon Heavy; Kennedy Space Center
+- Mikromercekle serbest gezegen olayları çok seyrek; ağı genişletmek; Roman ~400 Dünya kütleli serbest gezegen (önceki tahmin ~50) | https://www.nasa.gov/missions/roman-space-telescope/new-study-reveals-nasas-roman-could-find-400-earth-mass-rogue-planets | "extraordinarily rare"; "cast a wider net"; "400 Earth-mass rogue worlds"; previous estimate about 50
+- PLATO: 2027 başı, Ariane 6 | https://www.esa.int/esatv/Videos/2026/03/Plato_s_launch_on_Ariane_6 | "is set to launch at the beginning of 2027"; Ariane 6
+- PLATO: 26 kamera; L2, 1,5 milyon km; 200.000'den fazla yıldız; Güneş benzeri yıldızlarda kayalık gezegen, yaşanabilir bölge; 4 yıl, 8,5 yıla uzatılabilir | https://www.esa.int/Science_Exploration/Space_Science/Plato_factsheet | "26 telescope cameras"; "Sun-Earth Lagrange point 2"; "more than 200 000 stars"; "Four years, with possible extensions up to 8.5 years" (bilgi sayfası "Planned launch: 2027")
+- ExoClock Eylül 2019; 217 yazar, ~160 amatör, 35'ten fazla ülke; küçük ve orta boy teleskop; 450 Ariel hedefi; %40'tan fazla takvim güncellemesi; Ariel 2029, 1.000'den fazla ötegezegen; Ariel'in geçiş zamanlarını kesin bilmesi gerekir | https://www.eurekalert.org/news-releases/965744 | değerler sayfadan (23 Eylül 2022)
+- Örnek: 1.000 × 10 s = 10.000 s = 2,78 sa; 1.000 × 3,5 gün = 3.500 gün = 9,58 yıl | [H] (varsayımsal sayılar, örnek olduğu derste söyleniyor)
+
+### Bölüm 9 eklemeleri (51 Pegasi)
+- HD 209458: Kanatlıat, V = 7,65, 157 ışık yılı, RA 22s 03d, Dec +18° 53′; iyi dürbünle kolay; ~%2 kararma; 3,52 gün | https://en.wikipedia.org/wiki/HD_209458 | "Apparent magnitude (V): 7.65"; "With good binoculars or a small telescope it should be easily detectable."; "dimmed by about 2%"
+- 10×50 sınır kadiri 9,5–11 (gök koşulu ve deneyime bağlı) | https://en.wikipedia.org/wiki/Binoculars | "10×50 binoculars are limited to an apparent magnitude of +9.5 to +11 depending on sky conditions and observer experience."
+- HD 209458 b ilk geçiş yapan ötegezegen, 1999 | https://en.wikipedia.org/wiki/HD_209458_b | "the first known transiting extrasolar planet" ; arXiv 1803.07867: STARE "1999 discovery of the transits of HD 209458b"
+- [H] 90 − 41 + 18,9 = 67,9 ≈ 68°
+
+### Yeni bölüm: Upsilon Andromedae
+- Titawin resmî adı (IAU, NameExoWorlds 2015); 4,09 kadir; orta ışık kirliliğinde çıplak gözle; 44 ışık yılı; F9V; M4.5V kırmızı cüce eş; M31'in ~10° doğusu; Dec +41° 24′ | https://en.wikipedia.org/wiki/Upsilon_Andromedae | "visible to the naked eye even under moderately light-polluted skies"; "about 10 degrees east of the Andromeda Galaxy"
+- b 1996'da bulundu, Ocak 1997 duyuru; 1999'da iki grup bağımsız üç gezegen; anakolda ilk çok gezegenli sistem; çoklu yıldız sisteminde ilk; üç Jüpiter boyu gaz devi; 4,6 / 241 / 1.276 gün | aynı URL | değerler sayfadan
+- Nisan 1999 duyuru; iki ekip; 44 ışık yılı; çıplak gözle | https://newsarchive.berkeley.edu/news/media/releases/99legacy/4-15-1999.html | "reported today (4/14/99)"; "A bright star visible to the naked eye"; "located 44 light years from Earth"
+- Yumruk ≈ 10° | https://earthsky.org/astronomy-essentials/sky-measurements-degrees-arc-minutes-arc-seconds/ | d11'de doğrulanmış
+- M31 en iyi Kasım, orta ışık kirliliğinde çıplak gözle | d11 (NASA Messier 31 sayfası, d11_kaynak.md)
+- "Sarımsı beyaz" | https://en.wikipedia.org/wiki/Upsilon_Andromedae | "yellow-white main-sequence star"
+- [H] 90 − 41 + 41,4 = 90,4 → 89,6° (başucunun 0,4° kuzeyi); 1.276 gün = 3,5 yıl
+- Uyarı: Bortle 8–9 sınırı 4,0–4,5 | https://skyandtelescope.org/astronomy-resources/light-pollution-and-astronomy-the-bortle-dark-sky-scale/ | (Bölüm 9 eski satırı)
+
+### Erişim notları
+- https://esawebb.org/news/weic2309/ bu oturumda izin hatası verdi (açılamadı); TRAPPIST-1 b satırları önceki doğrulamaya dayanıyor, yeni iddia eklenmedi.
+- https://www.europlanet.org/exoclock-counts-down-ariel-exoplanet-targets/ izin hatası; yerine EurekAlert bülteni kullanıldı.
+- WebSearch: d13 için 9 arama.

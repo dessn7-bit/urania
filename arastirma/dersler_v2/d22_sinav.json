@@ -1,0 +1,58 @@
+[
+  {
+    "id": "d22-1",
+    "soru": "İstanbul'da (yaklaşık 28,96° D) Türkiye Saati UTC+3 iken ortalama Güneş meridyenden yaklaşık saat kaçta geçer ve neden?",
+    "secenekler": [
+      "Tam 12:00'de, çünkü saat dilimleri her kentin öğlesine göre ayarlanır",
+      "Yaklaşık 13:04'te, çünkü İstanbul'un yerel ortalama zamanı UTC'den yalnızca yaklaşık 1 sa 56 dk ileride, saat ise 3 saat ileride",
+      "Yaklaşık 11:04'te, çünkü İstanbul 45° meridyeninin doğusundadır",
+      "Yaklaşık 14:00'te, çünkü yaz saati her yıl Mart'ta bir saat ileri alınır"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre her derece boylam 4 dakikadır: 28,955° × 4 dk ≈ 1 sa 55 dk 49 sn. Saat UTC'den 3 saat ileri olduğundan ortalama öğle 12:00 + 3 sa − 1 sa 55,8 dk ≈ 13:04 olur. timeanddate'in Haziran 2025 tablosunda zaman denkleminin sıfır olduğu 13 Haziran'da Güneş'in geçişi 13:04.",
+    "ders": "d22",
+    "bolum": 3
+  },
+  {
+    "id": "d22-2",
+    "soru": "Güneş saati 3 Kasım civarında kol saatinden yaklaşık 16,5 dakika ileridedir. Bu farkın (zaman denkleminin) iki nedeni hangisidir?",
+    "secenekler": [
+      "Atmosferik kırılma ve ışık kirliliği",
+      "Dünya'nın yörüngesinin basıklığı ve ekseninin tutuluma eğikliği",
+      "Artık saniyeler ve saat dilimleri",
+      "Ay'ın kütleçekimi ve presesyon"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre zaman denklemi iki dalganın toplamıdır: yörünge basıklığından gelen yaklaşık 7,66 dakikalık yıllık bileşen ve eksen eğikliğinden gelen yaklaşık 9,87 dakikalık yarım yıllık bileşen. İkisi birlikte Kasım başında yaklaşık +16 dk 33 sn, Şubat ortasında yaklaşık −14 dk 6 sn verir.",
+    "ders": "d22",
+    "bolum": 1
+  },
+  {
+    "id": "d22-3",
+    "soru": "Ağırlıklar ve Ölçüler Genel Konferansı'nın (CGPM) 15 Ekim 2026'daki 5 numaralı kararı artık saniye için ne öngörüyor?",
+    "secenekler": [
+      "Her yıl sonunda bir artık saniye eklenmesini",
+      "Artık saniyelerin 2100'e kadar sürmesini",
+      "20 Mayıs 2027'den itibaren UTC'nin kesintisiz olmasını ve UT1 ile farkının en çok 3.600 saniyeye kadar büyüyebilmesini",
+      "UTC'nin kaldırılıp yerine UT1'in yasal saat yapılmasını"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre 28. CGPM, 5 numaralı kararla sürekli UTC'nin 20 Mayıs 2027'de yürürlüğe gireceğine ve UT1 ile UTC farkının en çok 3.600 saniye (1 saat) olacağına karar verdi. 1972–2016 arasında 27 artık saniye eklenmişti; sonuncusu 31 Aralık 2016'daydı.",
+    "ders": "d22",
+    "bolum": 6
+  },
+  {
+    "id": "d22-4",
+    "soru": "698 sayılı yasa (kabul 26 Aralık 1925) Türkiye'de takvimde neyi değiştirdi?",
+    "secenekler": [
+      "Hicri takvimi tamamen yasakladı",
+      "Ay ve günleri ilk kez Gregoryen takvime uydurdu; 13 gün atlandı",
+      "Yıl sayımını değiştirdi: 31 Kânunuevvel 1341'in ertesi günü 1 Ocak 1926 oldu; Hicri takvim özel durumlarda kaldı",
+      "Türkiye'yi UTC+3 saat dilimine geçirdi"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre ay-gün eşitlemesi 1917'de 13 gün atlanarak yapılmıştı. 698 sayılı yasa ise uluslararası takvim mebdeini kabul etti: 1341 yılı Kânunuevvel'inin 31. gününü izleyen gün 1 Ocak 1926'dır. Üçüncü madde Hicri kameri takvimin özel durumlarda kullanılmasını sürdürdü ve kameri ay başlarını rasathaneye bıraktı.",
+    "ders": "d22",
+    "bolum": 11
+  }
+]
