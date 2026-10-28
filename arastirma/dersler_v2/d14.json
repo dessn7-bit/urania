@@ -3,7 +3,7 @@
   "unite": "yildizlar",
   "yeni": true,
   "baslik": "Yıldızlararası Ortam ve Yıldızların Doğumu",
-  "ozet": "Yıldızların arası boş değil: son derece seyrek bir gaz ve toz var. Bu derste o malzemenin türlerini, bulutsuların neden kızıl, mavi ya da kara göründüğünü ve soğuk bir bulutun nasıl çöküp önyıldıza, T Tauri yıldızına ve gezegen diskine dönüştüğünü öğreneceksin. Orion Bulutsusu'nu da dürbünle nerede bulacağını göreceksin.",
+  "ozet": "Yıldızların arası boş değil: son derece seyrek bir gaz ve toz var. Bu derste o malzemenin nasıl keşfedildiğini, türlerini, bulutsuların neden kızıl, mavi ya da kara göründüğünü ve soğuk bir bulutun nasıl çöküp önyıldıza, T Tauri yıldızına ve gezegen diskine dönüştüğünü öğreneceksin. Orion ve Kartal bulutsularında yıldız doğumunu izleyecek, kaç büyük kaç küçük yıldız doğduğunu hesaplayacak ve Orion Bulutsusu'nu dürbünle nerede bulacağını göreceksin.",
   "on_bilgi": [
     "d2",
     "d4"
@@ -14,15 +14,33 @@
       "paragraflar": [
         "Gece gökyüzüne bakınca yıldızların arası kapkara ve boş görünür. Oysa yıldızların arasındaki uzay tam boş değildir: içinde son derece seyrek bir gaz ve çok ince bir toz bulunur. Gökbilimciler buna yıldızlararası ortam der. Bu dersin konusu, bu seyrek maddenin nasıl yoğunlaşıp yeni yıldızlara dönüştüğüdür.",
         "Önce malzemeyi tanıyalım. Wikipedia'nın derlediği değerlere göre yıldızlararası ortamın kütlece %99'u gaz, %1'i tozdur. Gazın atomlarını tek tek sayarsan %91'i hidrojen, %8,9'u helyum, yalnızca %0,1'i daha ağır elementlerdir. Kütleye çevirince oranlar değişir, çünkü helyum atomu hidrojenden ağırdır: yaklaşık %70 hidrojen, %28 helyum ve %1,5 ağır element. Bu tablo Güneş'in dış katmanlarındaki bileşime (kütlece yaklaşık %75 hidrojen, %24 helyum) çok benzer. Şaşırtıcı değil: Güneş de böyle bir buluttan doğdu.",
-        "Peki ne kadar seyrek? Wikipedia'nın bulutsular maddesine göre soluduğumuz havanın her santimetreküpünde yaklaşık 10¹⁹ molekül vardır; en yoğun bulutsularda bu sayı 10⁴ civarındadır. Yani böyle bir bulutsu havadan yaklaşık 10¹⁵ kat seyrektir. Birazdan göreceğin moleküler bulutların en yoğun çekirdeklerinde sayı santimetreküpte 10⁶'ya kadar çıkar; bunlar bile havadan 10¹³ kat seyrektir. Aynı kaynak çarpıcı bir örnek verir: Dünya büyüklüğünde bir bulutsu parçasının kütlesi yalnızca birkaç kilogram olurdu. Bu kadar seyrek madde nasıl yıldız yapar sorusunun cevabı ölçektedir. Bulutlar ışık yılları boyunca uzanır; çok küçük bir yoğunluk dev bir hacimle çarpılınca ortaya Güneş'in binlerce katı kütle çıkar. Bunu birazdan bir örnekle hesaplayacağız."
+        "Peki ne kadar seyrek? Wikipedia'nın bulutsular maddesine göre soluduğumuz havanın her santimetreküpünde yaklaşık 10¹⁹ molekül vardır; en yoğun bulutsularda bu sayı 10⁴ civarındadır. Yani böyle bir bulutsu havadan yaklaşık 10¹⁵ kat seyrektir. Birazdan göreceğin moleküler bulutların en yoğun çekirdeklerinde sayı santimetreküpte 10⁶'ya kadar çıkar; bunlar bile havadan 10¹³ kat seyrektir. Aynı kaynak çarpıcı bir örnek verir: Dünya büyüklüğünde bir bulutsu parçasının kütlesi yalnızca birkaç kilogram olurdu. Bu kadar seyrek madde nasıl yıldız yapar sorusunun cevabı ölçektedir. Bulutlar ışık yılları boyunca uzanır; çok küçük bir yoğunluk dev bir hacimle çarpılınca ortaya Güneş'in binlerce katı kütle çıkar. Bunu birazdan bir örnekle hesaplayacağız.",
+        "Bu sayıları gündelik bir ölçeğe taşıyalım. 4 metreye 5 metre, tavanı 2,5 metre olan bir oda 50 metreküp, yani 50 milyon santimetreküptür. Hava santimetreküpte yaklaşık 10¹⁹ molekül içerdiğine göre odada yaklaşık 5 × 10²⁶ molekül vardır. Aynı odayı santimetreküpte 0,2–0,5 parçacık barındıran ılık yıldızlararası gazla doldursan, içinde yalnızca 10 ile 25 milyon atom bulunurdu. Yerel Kabarcık'taki gibi santimetreküpte 10⁻⁴ ile 10⁻² parçacıklık sıcak koronal gazla doldursan, oda başına ancak birkaç bin ile birkaç yüz bin atom düşerdi. Gündelik ölçülerimizle yıldızlararası ortam neredeyse kusursuz bir boşluktur; onu önemli kılan yoğunluğu değil, kapladığı akıl almaz hacimdir.",
+        "Peki biz bu ortamın neresindeyiz? Güneş bugün Yerel Yıldızlararası Bulut adlı, birkaç parsek genişliğinde, ılık nötr gazdan oluşan düzensiz bir topağın içinden geçiyor. Bu topak da daha büyük bir yapının içinde duruyor: Yerel Kabarcık. Yerel Kabarcık, yarıçapı yaklaşık 100 parsek (yaklaşık 330 ışık yılı) olan, gazın evreleri bölümünde tanıyacağın sıcak koronal gazla dolu, ortalamadan seyrek bir bölgedir. Yani Güneş Sistemi galaksinin özellikle seyrek bir köşesinde yaşıyor. Bize en yakın yıldız doğum bölgelerinden Boğa bulutu bile, yaklaşık 140 parsek uzaklığıyla, bu kabarcığın sınırının ötesindedir."
       ],
       "akilda": "Yıldızların arası tamamen boş değil: kütlece %99 gaz ve %1 toz var. Tek tek bakınca havadan en az on trilyon kat seyrek, ama ışık yıllarına yayılınca binlerce Güneş kütlesi eder."
+    },
+    {
+      "baslik": "Boşluğun içini nasıl keşfettik?",
+      "paragraflar": [
+        "Yıldızlararası maddenin varlığı kendiliğinden belli değildi; üç ayrı ipucuyla ortaya çıktı. İlk ipucu karanlıktı. Barnard 1889'dan başlayarak Samanyolu'nda yıldızsız lekeler gördü ve onlara Samanyolu'ndaki delikler dedi. 1899'da, deliği olan bir boşluğu akla sığdırmanın neredeyse imkânsız olduğunu yazdı; yani bu lekeler gerçekten boş olamazdı. Bugün bunların, arkadaki yıldızların önüne siluet gibi düşen tozlu moleküler bulutlar, yani karanlık bulutsular olduğunu biliyoruz.",
+        "İkinci ipucu tayftan geldi. 1904'te Hartmann, Potsdam'daki büyük mercekli teleskopla Avcı takımyıldızındaki çift yıldız Mintaka'yı (Delta Orionis) inceliyordu. Bir çift yıldızın üyeleri birbirinin çevresinde dolanırken tayf çizgileri Doppler kaymasıyla ileri geri oynar. Ama kalsiyumun K çizgisi oynamıyordu: çok zayıf ama neredeyse kusursuz keskindi ve yerinde sabit duruyordu. Hartmann bu çizgiyi yıldızın atmosferinin değil, bizimle yıldız arasındaki bir gaz bulutunun soğurduğu sonucuna vardı. Yıldızlararası gazın ilk tayfsal kanıtı buydu.",
+        "Üçüncü ipucu, tozun yıldızları sessizce sönükleştirdiğiydi. 1930'da Trumpler 100 açık kümenin uzaklığını iki yolla hesapladı: biri kümenin gökteki açısal çapından, öbürü yıldızlarının parlaklığından. Parlaklıktan bulunan uzaklıklar sistematik olarak daha büyük çıktı; yıldızlar olması gerekenden sönüktü. Demek ki aradaki uzay tam saydam değildi. Trumpler görünür ışığın kiloparsek başına yaklaşık 1 kadir zayıfladığını ve uzaklık arttıkça renklerin kızardığını buldu. Bu kızarmayı ancak ince bir kozmik toz açıklayabilirdi.",
+        "Dördüncü ve belki en güçlü araç radyodan geldi. Hollandalı gökbilimci van de Hulst 1944'te, soğuk nötr hidrojenin radyo dalgalarında bir çizgi yayması gerektiğini öngördü. Hidrojen atomunda elektronun ve protonun spini, yani kendi dönme yönleri, aynı ya da zıt yönde olabilir. Elektron spinini ters çevirdiğinde atom çok küçük bir enerji farkını 1.420,4 MHz frekansında bir foton olarak salar; bu çizgiye 21 cm çizgisi denir. Geçiş son derece seyrektir: uyarılmış durumdaki bir atom bunu yapmadan önce ortalama yaklaşık 11 milyon yıl bekler. Ama galakside o kadar çok hidrojen atomu var ki toplam ışıma ölçülebilir. Çizgi 1951'de Harvard'da Ewen ve Purcell tarafından yakalandı.",
+        "21 cm çizgisinin büyük üstünlüğü, görünür ışığı geçirmeyen toz bulutlarından rahatça geçmesidir. 1952'den sonra çizilen ilk nötr hidrojen haritaları, Samanyolu'nun sarmal yapısını ilk kez ortaya koydu. Galaksinin içinden, tozun ardını göremeden onun biçimini çizebilmemiz bu çizgi sayesindedir (galaksinin yapısı d7'de)."
+      ],
+      "ornek": {
+        "baslik": "Örnek: 21 cm adı nereden geliyor?",
+        "metin": "Dalga boyu = ışık hızı ÷ frekans. Işık hızı 299.792.458 m/s, hidrojen çizgisinin frekansı 1.420.405.752 Hz. 299.792.458 ÷ 1.420.405.752 ≈ 0,2111 m, yani yaklaşık 21,1 cm. Aynı hesabı moleküler bulutları izlemekte kullanılan karbon monoksit çizgisi için yap: frekansı yaklaşık 115 GHz, yani 115.000.000.000 Hz. 299.792.458 ÷ 115.000.000.000 ≈ 0,0026 m, yani yaklaşık 2,6 mm. Karşılaştır: görünür ışığın dalga boyu yarım mikrometre civarındadır; 21 cm ondan yaklaşık 400.000 kat uzundur. Sonuç: hidrojen çizgisi yaklaşık 21,1 cm, karbon monoksit çizgisi yaklaşık 2,6 mm dalga boyundadır; ikisi de radyo bölgesindedir ve tozdan geçer."
+      },
+      "akilda": "Yıldızlararası madde karanlık bulutsularla (Barnard), yerinde duran soğurma çizgileriyle (Hartmann, 1904), kümelerin sönükleşmesiyle (Trumpler, 1930) ve nötr hidrojenin 21 cm radyo çizgisiyle (1951) keşfedildi."
     },
     {
       "baslik": "Sıcak, ılık, soğuk: gazın evreleri",
       "paragraflar": [
         "Yıldızlararası gaz her yerde aynı değildir. Wikipedia'nın Samanyolu için verdiği tabloda birbirinden çok farklı evreler var. En sıcak uçta, sıcaklığı 10⁶ ile 10⁷ kelvin arasında olan koronal gaz bulunur. Santimetreküpte 10⁻⁴ ile 10⁻² parçacık kadar seyrektir ama galaksideki hacmin %30–70'ini kaplar. Ilık nötr gaz 6000–10.000 kelvin, ılık iyonlaşmış gaz yaklaşık 8000 kelvin sıcaklıktadır ve santimetreküpte 0,2–0,5 parçacık barındırır. Soğuk nötr gaz 50–100 kelvindir ve santimetreküpte 20–50 parçacık içerir.",
         "En soğuk ve en yoğun evre moleküler bulutlardır: sıcaklıkları 10–20 kelvin, yoğunlukları santimetreküpte 10² ile 10⁶ parçacıktır. Bu bulutlar hacmin yüzde birinden azını kaplar, ama Wikipedia'ya göre bir galaksideki yıldızlararası gazın kütlesinin yaklaşık yarısını taşır. Tablo şaşırtıcı bir dengesizlik gösteriyor: hacmi dolduran sıcak gazın kütlesi az, kütleyi taşıyan soğuk gazın hacmi az.",
+        "Bu kadar farklı sıcaklıklar nasıl korunuyor? Gazı ısıtan birçok kaynak var: kozmik ışınlar, yıldız ışığının toz tanelerinden kopardığı elektronlar, sıcak yıldızların morötesi ışığıyla iyonlaşma, X ışınları ve en büyük ölçekte süpernova patlamalarıyla yıldız rüzgârları. Gaz da ışıma yaparak soğur: nötr gazda iyonlaşmış karbon ve nötr oksijen atomlarının belirli çizgileri, moleküler bulutlarda karbon monoksitin çizgileri ısıyı uzaya taşır. Milyon kelvinlik gazın uzun süre sıcak kalabilmesinin nedeni ilginçtir: o kadar seyrektir ki parçacıklar nadiren çarpışır, az ışıma yapar ve ısısını kolay kaybetmez. 1977'de McKee ve Ostriker, süpernovaların ısıttığı bu çok sıcak gazı yıldızlararası ortamın üçüncü evresi olarak modele ekledi.",
         "Yıldız doğumu için önemli olan soğuk uçtur. Bir gaz ne kadar sıcaksa parçacıkları o kadar hızlı hareket eder ve dışa doğru o kadar güçlü bir basınç yaratır. Soğuk gaz bu basınçtan yoksundur ve kendi kütleçekimine daha kolay yenilir. Bu yüzden yıldızlar galaksinin en soğuk, en karanlık köşelerinde, moleküler bulutların içinde doğar. Bir ölçek fikri vermek için: Wikipedia'ya göre Samanyolu'ndaki gazın toplam kütlesi, yıldızlarının toplam kütlesinin yaklaşık %10–15'i kadardır. Yani galaksinin yıldız yapabileceği malzeme sınırlıdır."
       ],
       "akilda": "Gaz milyon kelvinlik seyrek koronal gazdan 10–20 kelvinlik yoğun moleküler bulutlara uzanır. Hacmi küçük ama kütlesi büyük olan moleküler bulutlar yıldızların doğum yeridir."
@@ -32,9 +50,14 @@
       "paragraflar": [
         "Toz, yıldızlararası maddenin kütlece yalnızca yüzde biridir ama etkisi büyüktür. Toz taneleri arkadaki yıldızın ışığını soğurur ve saçar; buna sönükleştirme denir. Etki dalga boyuna bağlıdır: mavi ışık kırmızıdan daha çok soğurulur. Bu yüzden toz perdesinin arkasındaki yıldızlar hem sönük hem de olduğundan daha kırmızı görünür; buna kızarma denir. Wikipedia'ya göre etki dalga boyu uzadıkça hızla azalır ve 5 mikrometrenin üstündeki orta kızılötesinde neredeyse ortadan kalkar. Kızılötesi teleskopların toz bulutlarının içindeki genç yıldızları görebilmesinin nedeni budur.",
         "Gündelik bir benzetme: Wikipedia'nın yansıma bulutsusu maddesi, mavi ışığın daha verimli saçılmasının gökyüzünü mavi, gün batımını kızıl yapan süreçle aynı olduğunu söyler. Batan Güneş'in ışığı atmosferde uzun yol alırken mavisini yitirir ve kızıl görünür; toz bulutunun arkasındaki yıldız da benzer biçimde kızarır. Benzetmenin sınırı şu: atmosferde ışığı saçan çoğunlukla hava molekülleridir, uzayda ise toz taneleridir. Ayrıntı farklı, sonuç benzer: mavi ışık ayıklanır, kırmızı geçer.",
+        "Toz taneleri neden yapılmıştır? Bugünkü görüşe göre büyük ölçüde amorf, yani düzensiz yapılı silikatlardan ve bir tür karbonlu maddeden oluşurlar. Yoğun bulutlarda taneler su buzuyla kaplanır; su buzu yalnızca yoğun bölgelerde görülür. En küçük taneler aslında büyük moleküllerdir: hidrojenle bağlanmış grafen parçalarına benzeyen halkalı aromatik hidrokarbonlar. Tane boyları birkaç atom çapından birkaç mikrometreye kadar uzanır; görünür ışığı söndüren taneler yaklaşık 0,1 mikrometredir. Bu tozu kim üretiyor? Soğuk, karbonca zengin yıldızların ve oksijence zengin dev yıldızların atmosferlerinde yoğuşan taneler ile süpernovalar başlıca kaynaklar sayılır (yıldızların ölümü d6'da). Gökteki is perdesi, yaşlanmış ve ölmüş yıldızların küllerinden örülür.",
         "Çıplak gözle görebileceğin en büyük toz yapısı Büyük Yarık'tır: Samanyolu'nun parlak şeridini ortadan ikiye ayıran karanlık şerit. Wikipedia'ya göre Kuğu'da başlar, Yılan ve Kartal bölgesinden ve Yılancı'dan geçer, Yay'da galaksinin merkezini örter ve Erboğa'da sona erer. Bulutlar bizden yaklaşık 800–1000 parsek (2600–3300 ışık yılı) uzaktadır ve toplam kütleleri yaklaşık bir milyon Güneş kütlesidir. Karanlık ve açık gecelerde çıplak gözle ya da dürbünle seçilir. Ama dikkat: Samanyolu'nu göremediğin bir yerde, onu bölen yarığı da göremezsin (ışık kirliliği d1'de)."
       ],
-      "akilda": "Toz ışığı söndürür ve kızartır, çünkü maviyi kırmızıdan daha çok tutar. Kızılötesi ışık tozdan geçer. Samanyolu'ndaki Büyük Yarık çıplak gözle görülebilen dev bir toz bulutudur."
+      "akilda": "Toz ışığı söndürür ve kızartır, çünkü maviyi kırmızıdan daha çok tutar. Kızılötesi ışık tozdan geçer. Samanyolu'ndaki Büyük Yarık çıplak gözle görülebilen dev bir toz bulutudur.",
+      "ornek": {
+        "baslik": "Örnek: Galaksinin merkezine neden görünür ışıkla bakamıyoruz?",
+        "metin": "d1'de gördüğün gibi 1 kadir, parlaklıkta yaklaşık 2,512 kat, 5 kadir tam 100 kat fark demektir. Trumpler'in ortalaması kiloparsek başına yaklaşık 1 kadirdi. Galaksinin merkezi yaklaşık 8 kiloparsek uzakta. Ortalama değerle sönükleşme 8 × 1 = 8 kadir olurdu. 8 kadiri 5 + 3 diye böl: 100 × 2,512 × 2,512 × 2,512 ≈ 100 × 15,9 ≈ 1.600 kat. Ama merkez yönünde bakış çizgimiz galaksi düzlemindeki yoğun toz bulutlarından geçer ve görünür ışıktaki sönükleşme 30 kadire kadar çıkar. 30 kadir = 6 × 5 kadir, yani 100 × 100 × 100 × 100 × 100 × 100 = 10¹² kat. Sonuç: merkezden yola çıkan her trilyon görünür ışık fotonundan yalnızca yaklaşık biri bize ulaşır. Bu yüzden galaksinin merkezi kızılötesinde (1,6–3,8 mikrometre), radyoda ve X ışınlarında incelenir."
+      }
     },
     {
       "baslik": "Üç tür bulutsu",
@@ -42,7 +65,9 @@
         "Bulutsu, Latincede “bulut, sis” anlamına gelen nebula sözcüğünün karşılığıdır. Uzun süre her bulanık lekeye bulutsu dendi. 1864'te Huggins yaklaşık 70 bulutsunun tayfına baktı ve yaklaşık üçte birinin gazın verdiği salma tayfını gösterdiğini buldu; gerisinin sürekli tayfı onların yıldız toplulukları olduğunu düşündürüyordu. Bugün gerçek gaz ve toz bulutsularını, ışıklarını nereden aldıklarına göre üç gruba ayırıyoruz.",
         "Salma bulutsusu, yakınındaki çok sıcak bir yıldızın morötesi ışığıyla hidrojeni iyonlaşmış bulutsudur; bunlara H II bölgesi de denir. Wikipedia'ya göre bu bölgeler yaklaşık 8000 kelvin sıcaklıktadır. Serbest kalan elektron bir protonla yeniden birleşince enerji basamaklarından aşağı iner. Bu inişlerin yaklaşık yarısında üçüncü düzeyden ikinci düzeye geçiş olur ve 656,28 nanometrede koyu kırmızı H-alfa çizgisi salınır (tayf çizgileri d2'de). Fotoğraflarda bulutsuların kızıl çıkmasının nedeni budur. Sky & Telescope'a göre gözle teleskopta ise aynı bulutsu çoğu zaman yeşilimsi ya da gri görünür; gözün sönük kırmızıya duyarlılığı düşüktür.",
         "Yansıma bulutsusunda yakındaki yıldızlar gazı iyonlaştıracak kadar enerjik değildir; toz yıldız ışığını saçar. Mavi ışık daha verimli saçıldığı için bu bulutsular mavidir ve tayfları aydınlatan yıldızınkine benzer. Wikipedia'ya göre yaklaşık 500 yansıma bulutsusu bilinir. Ülker'deki Merope yıldızının çevresindeki bulutsunun yıldız ışığını yansıttığını 1912'de Vesto Slipher tayfıyla gösterdi.",
-        "Karanlık bulutsu, arkasındaki ışığı örten yoğun bir toz ve gaz bulutudur. En ünlüsü Avcı'daki At Başı Bulutsusu'dur. ESA'ya göre yaklaşık 1300 ışık yılı uzaktadır, Orion B moleküler bulutunun kenarındadır ve aşınmaya direnen yoğun topaklardan oluşan bir sütundur; çevresi şimdiden dağılmıştır ve sütunun da yaklaşık 5 milyon yıl içinde dağılacağı tahmin ediliyor. Üç tür çoğu zaman yan yanadır: aynı bulutun aydınlanan ve aydınlanmayan parçalarıdır."
+        "Karanlık bulutsu, arkasındaki ışığı örten yoğun bir toz ve gaz bulutudur. En ünlüsü Avcı'daki At Başı Bulutsusu'dur. ESA'ya göre yaklaşık 1300 ışık yılı uzaktadır, Orion B moleküler bulutunun kenarındadır ve aşınmaya direnen yoğun topaklardan oluşan bir sütundur; çevresi şimdiden dağılmıştır ve sütunun da yaklaşık 5 milyon yıl içinde dağılacağı tahmin ediliyor. Üç tür çoğu zaman yan yanadır: aynı bulutun aydınlanan ve aydınlanmayan parçalarıdır.",
+        "Bu türleri yaz gökyüzünde kendin arayabilirsin. Yay takımyıldızındaki Deniz Kulağı Bulutsusu (M8), NASA'ya göre içine gömülü genç yıldızların iyonlaştırıcı morötesi ışığıyla parlayan, yıldız üreten bir salma bulutsusudur. Yaklaşık 5.200 ışık yılı uzaktadır, kadiri 6'dır; karanlık gökte çıplak gözle soluk seçilir, dürbünle kolayca görülür ve en iyi ağustosta gözlenir. Aynı takımyıldızdaki Trifid Bulutsusu (M20) ise bir ders kitabı örneğidir: adı 'üç loblu' demektir ve tek yerde bir açık yıldız kümesini, bir salma bulutsusunu, bir yansıma bulutsusunu ve karanlık toz şeritlerini bir arada gösterir. Kadiri 6,3'tür, küçük bir teleskopla bulunabilir. Uzaklığı için NASA yaklaşık 5.000, Wikipedia 4.100 ± 200 ışık yılı verir.",
+        "İstanbul'dan bakınca ikisi de alçaktadır. d11'deki hesapla M8 meridyende ufkun en fazla yaklaşık 25° üzerine çıkar; M20'nin dik açıklığı yaklaşık −23° olduğundan h = 90 − 41 − 23 = 26° bulursun. Bu yüzden güney ufku açık, mümkünse kentten uzak bir yer seç. Bir uyarı: d6'da göreceğin gezegenimsi bulutsular da sıcak bir yıldızın ışığıyla parlayan gaz bulutlarıdır, ama onlar doğum değil, ölüm sahneleridir. Yani bir bulutsunun kızıl salma ışığı, orada yıldız doğduğuna dair bir ipucudur ama tek başına kanıt sayılmaz; çevresindeki genç yıldızlara ve moleküler gaza da bakmak gerekir."
       ],
       "akilda": "Salma bulutsusu kendi ışığını verir (iyonlaşmış hidrojen, kızıl H-alfa), yansıma bulutsusu yıldız ışığını saçar (mavi), karanlık bulutsu arkadaki ışığı örter. Fark gazda değil, yakındaki yıldızın enerjisinde ve bulutun yoğunluğundadır."
     },
@@ -50,6 +75,7 @@
       "baslik": "Moleküler bulutlar: yıldızların doğum odası",
       "paragraflar": [
         "Moleküler bulutun gazının çoğu iki hidrojen atomunun birleştiği hidrojen molekülüdür. Sorun şu: bu molekül soğukta neredeyse hiç ışık yaymaz, doğrudan görmek çok zordur. Wikipedia'ya göre gökbilimciler onun yerine en bol ikinci molekül olan karbon monoksiti izler; karbon monoksitin yaydığı radyo dalgaları, hidrojenin nerede olduğunu ele verir. Bu bulutların içi çok soğuktur: Wikipedia'ya göre dev moleküler bulutların iç sıcaklığı ortalama 10 kelvin civarındadır.",
+        "Moleküller yalnızca bir iz sürme aracı değil, çöküşün de yardımcısıdır. Yıldızlararası uzayda hidrojen molekülünün yanında yüzlerce başka molekül saptanmıştır; çoğu, dönerken yaydıkları radyo çizgileriyle bulunur ve en çok kullanılanı karbon monoksitin 115 GHz'teki çizgisidir. Bu çizgiler bulutun ısısını uzaya da taşır: moleküler bulutlar başlıca karbon monoksit çizgileriyle soğur. Bir bulut ne kadar etkili soğursa iç basıncı o kadar düşük kalır ve bir sonraki bölümde göreceğin gibi çökmeye o kadar yatkın olur. Toz da işin içindedir: hidrojen molekülleri toz tanelerinin yüzeyinde oluşur ve dev moleküler bulutların derinliklerinde gazı ısıtan başlıca süreç, gaz ile toz taneleri arasındaki çarpışmalardır.",
         "Dev moleküler bulutların kütlesi Wikipedia'ya göre tipik olarak 10.000 ile 10 milyon Güneş kütlesi arasındadır; NASA moleküler bulutlar için 1000 ile 10 milyon Güneş kütlesi aralığını verir. Çapları 15 ile 600 ışık yılı arasında değişir. İçlerindeki yoğun çekirdeklerde yoğunluk santimetreküpte 10⁴ ile 10⁶ parçacığa çıkar. Ölçeğin öbür ucunda Bok küreciği denen küçük, yalıtılmış bulutlar vardır; kütleleri birkaç yüz Güneş kütlesinden azdır.",
         "Moleküler gaz çoğunlukla sarmal kollarda toplanır. Güneş'in yakınındaki dev bulutlar bulundukları takımyıldızın adıyla anılır; Orion ve Boğa bulutları böyledir. Boğa bulutu yaklaşık 140 parsek (yaklaşık 460 ışık yılı) uzaklığıyla bize en yakın yıldız oluşum bölgelerindendir. Bu bulutlar kalıcı değildir: Wikipedia'ya göre yaklaşık 10 milyon yıl içinde değişirler ve içlerinde bulunan genç yıldızlar 10–20 milyon yaşındadır. Kozmik ölçekte bir mevsim kadar kısa bir ömür."
       ],
@@ -63,10 +89,17 @@
       "baslik": "Çöküş: kütleçekimi basınca karşı",
       "paragraflar": [
         "Bir bulut neden kendiliğinden çökmez? İki kuvvet çekişir. Gazın ısısı dışa iten bir basınç yaratır; bulutun kendi kütleçekimi ise içe çeker. İngiliz fizikçi James Jeans 1902'de bu yarışı inceledi: iç basınç kütleçekimini durduracak kadar güçlü değilse bölge çöker. Dengenin bozulduğu kritik kütleye Jeans kütlesi denir. Wikipedia'ya göre bulut ne kadar soğuksa o kadar kararsızdır; büyük ve kütleli bulutlar da küçüklerinden daha kararsızdır. Jeans kütlesi bulutun sıcaklığına ve yoğunluğuna bağlıdır; tipik olarak binlerce ile on binlerce Güneş kütlesidir.",
+        "Moleküler bulutların yaklaşık 10 kelvin gibi düşük sıcaklıklarda kalabilmesi bu yüzden kritik önemdedir. Önceki bölümde gördüğün gibi bulut, karbon monoksitin çizgileriyle ısısını uzaya taşır. Sıcaklık düşük kaldıkça iç basınç da düşük kalır ve Jeans kütlesi küçülür; böylece bulutun daha küçük parçaları da kendi başına çökebilir. Isınan bir bulut ise kararlılaşır ve yıldız yapmayı yavaşlatır. Yani yıldız doğumu, kütleçekimi ile ısı arasındaki bir yarıştır ve bu yarışta soğuma, kütleçekiminin en büyük müttefikidir.",
         "Bir benzetme: şişirilmiş balonda içerideki havanın basıncı lastiği gerer; havayı soğutursan basınç düşer ve balon büzülür. Benzetmenin sınırı önemli: balonu dışarıdan lastik sıkar, bulutu ise kendi kütleçekimi. Bulut büzüldükçe parçaları birbirine yaklaşır ve çekim güçlenir; balonda böyle bir kendini hızlandıran etki yoktur. Çöküşü başlatan bir dürtü de olabilir: Wikipedia'ya göre yakındaki bir süpernovanın şok dalgası bulutu sıkıştırabilir, çarpışan galaksilerde ise yıldız oluşumu patlama hızına çıkabilir.",
-        "Çöken bulut tek bir yıldıza dönüşmez. Wikipedia'ya göre çökme sırasında bulut basamak basamak küçük parçalara bölünür; çöküş ilerledikçe Jeans kütlesi küçüldüğü için her parça kendi başına çökebilir. Bu yüzden yıldızlar çoğunlukla tek tek değil, gruplar halinde doğar: bir bulutun çöküşünde düzinelerce ile on binlerce yıldız aşağı yukarı aynı anda oluşur ve sonuç bir açık yıldız kümesidir (kümeler d15'te). Çöken parçanın merkezi ısınır; sıcaklık yaklaşık 2000 kelvine ulaşınca hidrojen molekülleri atomlarına ayrılır."
+        "Çöken bulut tek bir yıldıza dönüşmez. Wikipedia'ya göre çökme sırasında bulut basamak basamak küçük parçalara bölünür; çöküş ilerledikçe Jeans kütlesi küçüldüğü için her parça kendi başına çökebilir. Bu yüzden yıldızlar çoğunlukla tek tek değil, gruplar halinde doğar: bir bulutun çöküşünde düzinelerce ile on binlerce yıldız aşağı yukarı aynı anda oluşur ve sonuç bir açık yıldız kümesidir (kümeler d15'te). Çöken parçanın merkezi ısınır; sıcaklık yaklaşık 2000 kelvine ulaşınca hidrojen molekülleri atomlarına ayrılır.",
+        "Çöküş ne kadar sürer? Basıncı hiç olmayan, her yerde aynı yoğunlukta bir gaz küresinin kendi ağırlığıyla bir noktaya çökmesi için geçen süreye serbest düşüş süresi denir. Bu süre yalnızca yoğunluğa bağlıdır ve yoğunluğun kareköküyle ters orantılıdır: yoğunluk 100 kat artınca süre 10 kat kısalır. Samanyolu'ndaki dev moleküler bulutlar için, santimetreküpte yaklaşık 100 parçacıklık ortalama yoğunlukla, serbest düşüş süresi yaklaşık 4 milyon yıldır. Gerçek bir bulut basınçla direndiği için bundan daha hızlı çökemez; serbest düşüş süresi bir alt sınırdır. Bulutların yaklaşık 10 milyon yıllık ömrüyle karşılaştırınca, bir bulutun ancak birkaç serbest düşüş süresi yaşadığını görürsün.",
+        "Burada ilginç bir bilmece var. Samanyolu'ndaki bütün moleküler gaz bir serbest düşüş süresinde yıldıza dönüşseydi, galaksi yılda kabaca 250 Güneş kütlesi yıldız üretirdi. Gözlenen hız ise yılda 1–2 Güneş kütlesi kadardır (son bölümde). Yani her serbest düşüş süresinde gazın ancak yaklaşık yüzde biri yıldıza dönüşüyor. Krumholz ve Tan'ın derlediği farklı bölge ve galaksilerde de bu verim yaklaşık yüzde bir çıkıyor. Bulutların neden bu kadar yavaş yıldız yaptığı, yıldız oluşumu araştırmalarının önemli sorularından biridir ve tek bir kabul görmüş cevabı henüz yoktur."
       ],
-      "akilda": "Bulutu basınç dışa, kütleçekimi içe iter. Soğuk ve kütleli bulut Jeans kütlesini aşınca çöker ve parçalara bölünür. Yıldızların çoğu bu yüzden kümeler halinde doğar."
+      "akilda": "Bulutu basınç dışa, kütleçekimi içe iter. Soğuk ve kütleli bulut Jeans kütlesini aşınca çöker ve parçalara bölünür. Yıldızların çoğu bu yüzden kümeler halinde doğar.",
+      "ornek": {
+        "baslik": "Örnek: Bir bulutun serbest düşüş süresi",
+        "metin": "Formül: süre = √(3π ÷ (32 × G × yoğunluk)); G kütleçekim sabiti, SI birimlerinde 6,674 × 10⁻¹¹; yoğunluk kilogram bölü metreküp cinsinden. 1. adım: Santimetreküpte 100 parçacık ve parçacık başına 3,9 × 10⁻²⁴ g ile yoğunluk 3,9 × 10⁻²² g/cm³ olur; 1 g/cm³ = 1.000 kg/m³ olduğundan 3,9 × 10⁻¹⁹ kg/m³. 2. adım: Payda 32 × 6,674 × 10⁻¹¹ × 3,9 × 10⁻¹⁹ ≈ 8,33 × 10⁻²⁸. 3. adım: Pay 3π ≈ 9,42; 9,42 ÷ 8,33 × 10⁻²⁸ ≈ 1,13 × 10²⁸. 4. adım: Karekök ≈ 1,06 × 10¹⁴ s. Bir yıl yaklaşık 3,156 × 10⁷ s; 1,06 × 10¹⁴ ÷ 3,156 × 10⁷ ≈ 3,4 milyon yıl. Kaynaktaki yaklaşık 4 milyon yılla aynı mertebede. 5. adım: Santimetreküpte 10⁴ parçacıklık yoğun bir çekirdek 100 kat yoğundur; süre √100 = 10 kat kısalır: yaklaşık 340.000 yıl. Sonuç: bulut ölçeğinde birkaç milyon yıl, yoğun çekirdekte birkaç yüz bin yıl; önyıldız evresinin süresiyle aynı mertebe."
+      }
     },
     {
       "baslik": "Önyıldızdan T Tauri yıldızına",
@@ -74,7 +107,9 @@
         "Çöken parçanın merkezinde bir önyıldız oluşur: çevresindeki buluttan hâlâ kütle toplayan çok genç bir yıldız. Bulut biraz döndüğü için düşen gaz doğrudan yıldıza değil, çevresindeki bir diske düşer; kollarını kapatınca hızlanan buz patencisi gibi, büzülen bulut da açısal momentumunu korur ve hızlanır. Önyıldız görünür ışıkta saptanamaz: Wikipedia'ya göre çevresindeki toz gelen ışığın hepsini soğurup daha uzun dalga boylarında yeniden yayar. En genç evre (Sınıf 0) yaklaşık 10⁴ yıl sürer ve en çok milimetre altı dalgalarda parlar; sonraki evre (Sınıf I) yaklaşık 10⁵ yıl sürer ve uzak kızılötesinde parlar. Bu sınıfların gerçekten evrimsel sırayı gösterdiğinin kesin kanıtı olmadığını da not et. Güneş ve daha hafif yıldızlar için önyıldız evresi toplam yaklaşık 500.000 yıldır.",
         "Genç yıldızlar iki yöne hızlı gaz jetleri fışkırtır. Wikipedia'ya göre bu jetler, düşen gazın fazla açısal momentumunu atmanın yolu olabilir. Jetlerin çevredeki gaza çarptığı yerlerde parlayan düğümlere Herbig–Haro cisimleri denir. İlk örnekleri Guillermo Haro 1950'de buldu, George Herbig 1951'de tayflarını inceledi. Bu düğümlerdeki şok hızları saniyede yaklaşık 100 kilometredir ve bazıları gökyüzünde saniyede yüzlerce kilometre hızla yer değiştirir. 1978'de 42 tane biliniyordu; bugün binlercesi biliniyor.",
         "Gaz düşüşü bitince geriye anakol öncesi bir yıldız kalır. Bu yıldız enerjisini hidrojen füzyonundan değil büzülmeden alır; önce kısa bir süre döteryum kaynaştırır. Kütlesi 2 Güneş kütlesinden az olan bu genç yıldızlara T Tauri yıldızı denir: 10 milyon yıldan genç değişen yıldızlar. Sınıfı 1945'te Alfred Joy tanımladı; ölçütleri arasında yaklaşık 3 kadirlik düzensiz parlaklık değişimi ve bulutsuluklarla birlikte bulunma vardı. Adını Boğa'daki T Tauri yıldızından alır; AAVSO'ya göre John Russell Hind onu Ekim 1852'de Ülker ile Hyades arasında, haritalarında olmayan 10. kadirden bir yıldız olarak buldu.",
-        "T Tauri yıldızlarının tayflarında Güneş'tekinden çok lityum vardır. Lityum 2,5 milyon kelvinin üstünde yok olduğu için bu, yıldızın gençliğinin bir imzasıdır. X-ışını ve radyo salımları Güneş'inkinin yaklaşık 1000 katıdır; yaklaşık yarısının çevresinde disk vardır. Daha kütleli kardeşleri (2–8 Güneş kütlesi) Herbig Ae/Be yıldızları adını alır. Büzülme sürer, merkez ısınır ve hidrojen füzyonu başlayınca yıldız anakola yerleşir (anakol d5'te). Wikipedia'ya göre 0,5 Güneş kütlesinden hafif yıldızlar büzülmenin ardından doğrudan anakola katılır. Yaklaşık 0,08 Güneş kütlesinin altında kalan cisimler hidrojen kaynaştıramaz; Jüpiter'in 13 ile 80 katı arasındakilere kahverengi cüce denir."
+        "T Tauri yıldızlarının tayflarında Güneş'tekinden çok lityum vardır. Lityum 2,5 milyon kelvinin üstünde yok olduğu için bu, yıldızın gençliğinin bir imzasıdır. X-ışını ve radyo salımları Güneş'inkinin yaklaşık 1000 katıdır; yaklaşık yarısının çevresinde disk vardır. Daha kütleli kardeşleri (2–8 Güneş kütlesi) Herbig Ae/Be yıldızları adını alır. Büzülme sürer, merkez ısınır ve hidrojen füzyonu başlayınca yıldız anakola yerleşir (anakol d5'te). Wikipedia'ya göre 0,5 Güneş kütlesinden hafif yıldızlar büzülmenin ardından doğrudan anakola katılır. Yaklaşık 0,08 Güneş kütlesinin altında kalan cisimler hidrojen kaynaştıramaz; Jüpiter'in 13 ile 80 katı arasındakilere kahverengi cüce denir.",
+        "T Tauri'nin kendisi bugün de huysuzdur. AAVSO'ya göre parlaklığı düzensiz biçimde 9,3 ile 10,7 kadir arasında gidip gelir ve neredeyse her gün birkaç onda bir kadir oynar. Nedeni tam bilinmiyor; diskteki kararsızlıklar, yıldızın atmosferindeki şiddetli etkinlik ve önünden geçen toz ve gaz bulutları aday açıklamalardır. Yanındaki küçük yansıma bulutsusu, Hind'in Değişen Bulutsusu (NGC 1555), yıldızdan aldığı ışığa göre parlayıp söner: 1852–1861 arasında görülüyordu, 1868'de teleskoplardan kayboldu, 1890'da yeniden belirdi ve 1930'lardan beri yavaş yavaş parlaklaşıyor. Dürbünle denemek istersen: 10×50 dürbünün sınırı gök koşullarına göre 9,5 ile 11 kadir arasındadır; T Tauri ancak karanlık bir gökte ve sınırda seçilebilir, İstanbul'un ışıklı göğünde zor bir hedeftir.",
+        "Bazı genç yıldızlar çok daha çarpıcı davranır. FU Orionis türü yıldızlarda yıldızın üzerine bir anda büyük miktarda madde düşer; bu tür FU Orionis patlaması sırasında yaygın kabul gören 11 örneğin yaklaşık yarısında parlaklık 1 ile 10 yıl içinde 3–5 kadir arttı. 5 kadirin 100 kat demek olduğunu düşünürsen, bu birkaç yılda yüz kata varan bir parlaklaşmadır. Herbig 1987'de bütün T Tauri yıldızlarının hayatlarında bir ya da birkaç kez böyle bir evre geçirebileceğini öne sürdü. Bu doğruysa, yıldızlar kütlelerinin bir kısmını düzenli bir akışla değil, ara ara gelen patlamalarla topluyor demektir. Fikir henüz kanıtlanmış değil, bir varsayımdır."
       ],
       "akilda": "Önyıldız tozun içinde gizli, kütle toplayan bir yıldız tohumudur; jetler ve disk açısal momentumu yönetir. Gaz düşüşü bitince T Tauri yıldızı kalır; büzülüp merkezinde hidrojen yanınca anakola girer."
     },
@@ -83,6 +118,7 @@
       "paragraflar": [
         "Önyıldızın çevresindeki disk boşa gitmez. ESA'ya göre bu disklerdeki toz topaklanıp gezegenleri oluşturabilir; bu yüzden onlara öngezegen diski denir. NASA, Güneş Sistemi'nin de 4,5 milyar yıl önce muhtemelen böyle bir diskten oluştuğunu yazar. Diskleri doğrudan görmek ise ancak yakın zamanda mümkün oldu. Wikipedia'ya göre 1993'te Hubble Uzay Teleskobu'nun Orion Bulutsusu gözlemleri öngezegen disklerinin en güçlü doğrulamasını verdi; Hubble orada 150'den fazla disk buldu. Bu disklere proplid denir. ESA'nın 2009'da yayımladığı Hubble atlasında 42 disk var: parlak yıldız θ1 Orionis C'ye yakın olanlar ışıkla parlıyor, uzaktakiler bulutsunun önünde kara siluet olarak görünüyor.",
         "En ünlü disk görüntüsü ALMA radyo teleskop dizisinden geldi. ESO'nun 6 Kasım 2014'te yayımladığı görüntü, yaklaşık 450 ışık yılı uzaktaki genç HL Tauri yıldızının diskinde daha önce görülmemiş yapıları gösterdi: iç içe parlak halkalar ve aralarında koyu boşluklar. ESO'ya göre koyu bölgeler oluşmakta olan gezegenlerin olası konumları olabilir.",
+        "Disklerin içinde gezegenler gerçekten doğuyor mu? 2 Temmuz 2018'de ESO, Şili'deki Çok Büyük Teleskop'un (VLT) gezegen avcısı aleti SPHERE ile çekilmiş bir görüntü yayımladı: Erboğa takımyıldızındaki genç cüce yıldız PDS 70'in diskinde, oluşum hâlindeki bir gezegen. ESO bunu, oluşum anında yakalanmış bir gezegenin doğrulanmış ilk görüntüsü olarak duyurdu. Gezegen, kütlesi Jüpiter'in birkaç katı olan bir gaz devidir; yıldızından yaklaşık 3 milyar km, yani yaklaşık 20 AB uzaktadır ve yüzey sıcaklığı yaklaşık 1.000 °C'dir. d13'te doğrudan görüntülemenin genç, sıcak ve yıldızından uzak gezegenleri yeğlediğini görmüştün; PDS 70 b bu tarife tam uyar.",
         "Diskler ne kadar yaşar? Bu, gezegenlerin ne kadar sürede oluşması gerektiğini belirlediği için önemli bir soru ve cevabı tartışmalı. Küme taramalarına dayanan en kısa tahminler 1 ile 3,5 milyon yıl arasındadır. Pfalzner ve arkadaşlarının 2022'deki yeniden çözümlemesi ise 650 ışık yılı içindeki genç ve yaşlı kümelerden dengeli bir örnekle ortanca disk ömrünü 6,5 milyon yıl buldu; disklerin önemli bir kısmı 10–20 milyon yıl yaşıyor olabilir. Wikipedia'nın T Tauri maddesi de disklerin 10 milyon yıla kadar dağıldığını söyler. Kısacası gezegenler birkaç milyon ile birkaç on milyon yıl arasında bir zaman penceresinde oluşmak zorunda."
       ],
       "akilda": "Genç yıldızın diski gezegenlerin hammaddesidir. Hubble Orion'da yüzlerce disk, ALMA ise HL Tauri'de halkalar gördü. Disk ömrü birkaç milyon yıl; kesin değer tartışmalı."
@@ -93,6 +129,8 @@
         "Avcı takımyıldızının kemerinin altında, kılıcın ortasındaki “yıldız” aslında bir bulutsudur: Orion Bulutsusu, yani M42. Wikipedia ve NASA'ya göre Dünya'ya en yakın büyük kütleli yıldız oluşum bölgesidir. Uzaklığı için kaynaklar farklı sayı verir. VLBA radyo teleskoplarıyla yapılan ıraklık ölçümü (Kounkel ve arkadaşları, 2017) 388 ± 5 parsek buldu; bu yaklaşık 1270 ışık yılıdır. NASA ve Sky & Telescope ise yuvarlak 1500 ışık yılı yazar. Daha yeni ve doğrudan ölçüm 1270'e yakındır.",
         "Wikipedia'ya göre bulutsunun çapı yaklaşık 25 ışık yılı, kütlesi Güneş'in yaklaşık 2000 katıdır; görünür kadiri 4,0'dır. İçinde, 20 ışık yılı çapında bir alanda yaklaşık 2800 yıldızlık bir küme var. Merkezde Trapezyum denen ve 1,5 ışık yılı çapında bir alana sığan dört yıldız bulunur. Bunlardan θ1 Orionis C, bulutsuyu iyonlaştıran ışığın en büyük kaynağıdır. Buradaki en genç parlak yıldızların 300.000 yıldan genç, en parlaklarının belki yalnızca 10.000 yaşında olduğu düşünülüyor; insanlık tarihinden bile genç yıldızlar.",
         "Bulutsunun bulutsu doğası teleskopla ilk kez 26 Kasım 1610'da Nicolas-Claude Fabri de Peiresc tarafından fark edildi. Galileo 4 Şubat 1617'de Trapezyum'un dört yıldızından üçünü gördü. Messier 4 Mart 1769'da gözledi ve kataloğuna 42. cisim olarak ekledi. Henry Draper 30 Eylül 1880'de 51 dakikalık bir pozla onu fotoğrafladı; bu, bir bulutsunun tarihteki ilk fotoğrafıdır.",
+        "Gördüğün bulutsu, çok daha büyük bir yapının yalnızca parlayan ucudur. Orion Moleküler Bulut Kompleksi yüzlerce ışık yılı boyunca uzanır ve bütün Avcı takımyıldızına yayılır; Barnard Halkası, At Başı Bulutsusu, M43, M78 ve Alev Bulutsusu da onun parçasıdır ve her yanında yıldız doğmaktadır. M42 bu uzun bulutun bir yanında, kütleli genç yıldızların oyduğu bir boşlukta durur. İçeride şiddetli olaylar da var: kızılötesinde demir atomlarıyla parlayan gaz 'mermileri' görülür; her birinin çapı Plüton'un yörüngesinin on katıdır ve büyük olasılıkla yaklaşık bin yıl önce bilinmeyen şiddetli bir olayla fırlatılmışlardır. Hubble bulutsuda öngezegen disklerinin yanında kahverengi cüceleri de doğrudan gözledi.",
+        "Bu fabrikanın ömrü sınırlıdır. Wikipedia'ya göre yaklaşık 100.000 yıl içinde gaz ve tozun çoğu dışarı atılacak ve geride genç bir açık küme kalacak. Trapezyum'un morötesi ışığının bulutsuda bir boşluk oyduğunu son bölümde göreceksin. İnsan ömrüyle karşılaştırınca 100.000 yıl uzun görünür, ama Güneş'in 4,5 milyar yıllık yaşının yaklaşık 45.000'de biridir. Yani bugün baktığımız M42, kozmik bir an içinde yakalanmış bir sahnedir: birkaç yüz bin yıl önce yoktu, birkaç yüz bin yıl sonra bu biçimde olmayacak.",
         "İstanbul'dan gözlem: M42'nin dik açıklığı yaklaşık −5,4°'dir; meridyenden geçerken İstanbul'da ufkun yaklaşık 44° yukarısına çıkar. NASA en iyi ay olarak Ocak'ı, Sky & Telescope Ocak ve Şubat akşamlarını gösterir. Sky & Telescope'a göre 7×50 ya da 10×50 dürbünle karanlık bir gökte θ1 ve θ2 Orionis'in altında asılı, puslu bir lale gibi görünür ve dürbünün alanına rahatça sığar; ışık kirliliği olan banliyölerden de görülebilir. Trapezyum'u ayırmak için en az 3 inçlik (yaklaşık 76 milimetre) bir teleskop ve 40–50 kat büyütme gerekir."
       ],
       "ornek": {
@@ -102,11 +140,36 @@
       "akilda": "M42, Avcı'nın kılıcında, yaklaşık 1270 ışık yılı uzakta ve 25 ışık yılı çapında bir yıldız fabrikasıdır. Kışın İstanbul'dan çıplak gözle ve dürbünle rahatça görülür."
     },
     {
+      "baslik": "Kartal Bulutsusu ve Yaratılış Sütunları",
+      "paragraflar": [
+        "Yıldız doğumunun belki en ünlü görüntüsü, Hubble'ın Kartal Bulutsusu'nda (M16) çektiği Yaratılış Sütunları'dır. Sütunlar soğuk gaz ve tozdan oluşan, ışık yılları uzunluğunda yıldız oluşum kolonlarıdır; NASA'ya göre boyları yaklaşık 4–5 ışık yılıdır. Bulutsu, iki parçaya ayrılmış Yılan takımyıldızının kuyruk kısmı yönündedir. Uzaklığı için NASA'nın kendi sayfaları bile farklı sayı verir: Hubble'ın Messier kataloğu 7.000, Günün Astronomi Görüntüsü (APOD) sayfası yaklaşık 6.500 ışık yılı yazar. Bu küçük fark, gökbilimde uzaklığın çoğu zaman en belirsiz sayı olduğunu hatırlatır. Kadiri 6'dır, en iyi ağustosta gözlenir ve küçük bir teleskopla bulunabilir.",
+        "Sütunlar iki yönlü bir sürecin ortasındadır. Bir yandan yakındaki genç yıldızların rüzgârları onları yavaş yavaş aşındırıyor; At Başı Bulutsusu'nda olduğu gibi, yoğun topaklar direnirken çevreleri dağılıyor. Öte yandan sütunların içinde yeni yıldızlar doğuyor. Webb'in Ekim 2022'de yayımlanan NIRCam görüntüsü, yakın kızılötesinde bakarak Hubble'ın keşfettiği bölgeyi daha ayrıntılı ve daha derin gösterdi: doğum bulutlarının içinde kütleçekimiyle çöken madde düğümleri. Görünür ışığı tutan toz kızılötesini daha kolay geçirdiği için Webb sütunların içine bakabildi; toz bölümünde gördüğün ilkenin canlı bir örneği.",
+        "Bu sahnede dersin bütün parçaları bir arada: genç ve sıcak yıldızların morötesi ışığıyla parlayan bir salma bulutsusu, onun önünde siluet gibi duran karanlık toz sütunları, sütunların içinde kızılötesinde görülen, çökmekte olan yoğun madde düğümleri. Yıldız oluşumu böyle kendi kendini besleyip kendi kendini yok eden bir süreçtir: ilk doğan kütleli yıldızlar, kardeşlerinin doğduğu bulutu ışıklarıyla ve rüzgârlarıyla aşındırır.",
+        "Kendi gözlem takvimini kurmak istersen bu dersteki bulutsular iki mevsime ayrılır. NASA'ya göre Orion Bulutsusu (M42) en iyi ocakta gözlenir; Deniz Kulağı (M8), Trifid (M20) ve Kartal (M16) bulutsuları ise en iyi ağustosta. Kışın Avcı'nın kılıcındaki M42, ışık kirliliğinden etkilenen yerlerden bile çıplak gözle seçilebilir ve İstanbul'da yaklaşık 44°'ye yükselir. Yazın Yay ve Yılan yönündeki bulutsular daha sönüktür ve İstanbul'dan alçakta kalır; onlar için güney ufku açık, karanlık bir yer ve dürbün ya da küçük bir teleskop gerekir. Gördüğün her birinin içinde, şu anda yıldızların doğduğunu unutma."
+      ],
+      "akilda": "Kartal Bulutsusu'ndaki (M16) 4–5 ışık yılı boyundaki sütunlar, genç yıldızların rüzgârıyla aşınırken içlerinde yeni yıldızlar doğuran toz ve gaz kolonlarıdır; Webb onların içini kızılötesinde gördü."
+    },
+    {
+      "baslik": "Kaç büyük, kaç küçük yıldız doğar?",
+      "paragraflar": [
+        "Bir bulut parçalanınca her boyda yıldız çıkar, ama boylar eşit sayıda değildir. Yeni doğan yıldızların kütlelerine göre dağılımına başlangıç kütle fonksiyonu denir. 1955'te Salpeter, Güneş'in çevresindeki düşük ve orta kütleli yıldızlar için basit bir kural buldu: belirli bir kütle aralığına düşen yıldız sayısı, kütle büyüdükçe hızla azalır ve kütlenin −2,35'inci kuvvetiyle orantılıdır. Bunu sözle söylersen: kütle iki katına çıkınca, o kütle civarındaki yıldızların sayısı yaklaşık beşte birine iner (2'nin 2,35'inci kuvveti yaklaşık 5,1'dir).",
+        "Bu kuralın ne kadar sert olduğunu bir karşılaştırma gösterir. 1 Güneş kütlesi civarında ve 10 Güneş kütlesi civarında, aynı genişlikte iki kütle aralığı düşün. Kütle 10 katına çıktığında sayı 10'un 2,35'inci kuvveti kadar, yani yaklaşık 224 kat azalır (10² = 100 ve 10 üzeri 0,35 ≈ 2,24). Yani 10 Güneş kütlesinde bir yıldız doğarken, Güneş kütlesi civarında aynı genişlikteki aralığa yaklaşık 224 yıldız düşer. Kütleli yıldızlar bu yüzden nadirdir; bir bulutun yalnızca birkaç dev yıldız çıkarması için yüzlerce küçük yıldız doğurması gerekir.",
+        "Sonraki çalışmalar kuralın her kütlede aynı olmadığını gösterdi. Bugün sık kullanılan bir biçimde üs, 0,5 Güneş kütlesinin üstünde yaklaşık −2,3, 0,08 ile 0,5 Güneş kütlesi arasında ise yaklaşık −1,3'tür; yani en küçük yıldızlara doğru sayıdaki artış yavaşlar. Yine de ana sonuç değişmez: doğan yıldızların büyük çoğunluğu küçük kırmızı cücelerdir. Bu, anakoldaki yıldızların yaklaşık %76'sının en küçük ve en soğuk tür olan M yıldızları olmasıyla uyumludur.",
+        "Kütleli yıldızlar az sayıda doğar ama etkileri sayılarıyla orantısızdır. Orion'da Trapezyum'un dört yıldızının bulutsuyu oyduğunu, Kartal Bulutsusu'nda genç yıldızların sütunları aşındırdığını gördün. Bulut parçalarının hangi kütlelere bölüneceğini neyin belirlediği, yani başlangıç kütle fonksiyonunun kökeni, hâlâ araştırılan bir sorudur; farklı ortamlarda ne kadar aynı kaldığı da tartışılıyor."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Her dev yıldıza kaç Güneş benzeri yıldız düşer?",
+        "metin": "Salpeter kuralında sayı kütlenin −2,35'inci kuvvetiyle orantılı olduğundan, bir aralıktaki toplam sayı aralığın alt ve üst ucundaki kütlelerin −1,35'inci kuvvetlerinin farkıyla orantılıdır. 1–2 Güneş kütlesi aralığını 10–20 Güneş kütlesi aralığıyla karşılaştır. İkisinde de üst uç alt ucun 2 katıdır; bu yüzden oran yalnızca alt uçların oranına bağlı kalır: 10'un 1,35'inci kuvveti. 10¹ = 10 ve 10 üzeri 0,35 ≈ 2,24 olduğundan sonuç ≈ 22,4. Sonuç: 10–20 Güneş kütlesinde doğan her yıldıza karşılık 1–2 Güneş kütlesinde yaklaşık 22 yıldız doğar; daha küçük kütlelere inildikçe sayı daha da artar."
+      },
+      "akilda": "Başlangıç kütle fonksiyonu yeni doğan yıldızların kütle dağılımıdır; Salpeter'e (1955) göre sayı kütlenin −2,35'inci kuvvetiyle azalır, bu yüzden doğan yıldızların çoğu küçük kırmızı cücelerdir."
+    },
+    {
       "baslik": "Galaksi ne hızla yıldız üretiyor?",
       "paragraflar": [
         "Samanyolu bugün de yıldız üretiyor, ama sanılandan yavaş. Licquia ve Newman'ın daha önceki birçok ölçümü birleştiren çalışmasına göre galaksimiz yılda 1,65 ± 0,19 Güneş kütlesi kadar yeni yıldız oluşturuyor; aynı çalışma Samanyolu'ndaki yıldızların toplam kütlesini 6,08 ± 1,14 × 10¹⁰ Güneş kütlesi olarak verir. Bu, yılda bir iki Güneş demek değildir: doğan yıldızların büyük çoğunluğu Güneş'ten hafiftir. Wikipedia'ya göre anakol yıldızlarının yaklaşık %76'sı en küçük ve en soğuk tür olan M yıldızlarıdır.",
         "Bulutlar da malzemelerinin küçük bir kısmını yıldıza çevirir. Wikipedia'ya göre bir bulutun kütlesinin yaklaşık %2'si yıldıza dönüştüğünde gaz bulutun dışına atılmaya başlar. Orion bunun canlı bir örneğidir: NASA'ya göre Trapezyum'un dört kütleli yıldızının morötesi ışığı bulutsuda bir boşluk oyuyor ve çevredeki yüzlerce küçük yıldızın büyümesini bozuyor. Yani yıldız oluşumu kendi kendini frenleyen bir süreçtir: en kütleli yıldızlar doğar doğmaz doğum odasını dağıtır.",
-        "Bu hızın hep böyle olmadığını basit bir hesapla görebiliriz (aşağıdaki örnek). Wikipedia'nın Samanyolu maddesi de yıldız oluşumunun, galaksi diskinin oluştuğu 10 ile 8 milyar yıl önceki dönemde on kat kadar düşmüş olabileceğini yazar. Yıldız oluşumu bir galaksinin nabzı gibidir ve bizim galaksimizin nabzı yaşla birlikte yavaşlamıştır."
+        "Bu hızın hep böyle olmadığını basit bir hesapla görebiliriz (aşağıdaki örnek). Wikipedia'nın Samanyolu maddesi de yıldız oluşumunun, galaksi diskinin oluştuğu 10 ile 8 milyar yıl önceki dönemde on kat kadar düşmüş olabileceğini yazar. Yıldız oluşumu bir galaksinin nabzı gibidir ve bizim galaksimizin nabzı yaşla birlikte yavaşlamıştır.",
+        "Döngü burada kapanır. Yıldızlar yıldızlararası ortamın en yoğun bölgelerinde doğar ve hayatları boyunca ve sonunda o ortamı geri doldurur: gezegenimsi bulutsularla, yıldız rüzgârlarıyla ve süpernovalarla. Geri dönen gaz, yıldızların içinde üretilmiş ağır elementlerle ve yeni tozla zenginleşmiştir; yıldız rüzgârları ve süpernova şokları da ortamı çalkalayıp ona enerji verir. Güneş, yaklaşık 4,5 milyar yıl önce, kendinden önceki yıldızların zenginleştirdiği böyle bir buluttan doğdu. Bu yüzden yıldızlararası ortam bir artık değil, galaksinin hammadde deposudur."
       ],
       "ornek": {
         "baslik": "Örnek: Bugünkü hızla Samanyolu'nu doldurmak ne kadar sürerdi?",
@@ -130,6 +193,26 @@
       "ad": "Meridyende yükseklik",
       "ifade": "h = 90° − φ + δ",
       "aciklama": "φ: gözlemcinin enlemi (İstanbul ≈ 41°), δ: cismin dik açıklığı. Cismin gökte çıkabileceği en büyük yükseklik; kuzey yarımkürede, cisim güneyden geçerken geçerlidir. Kutup yüksekliği = enlem kuralının (d1) sonucudur."
+    },
+    {
+      "ad": "Serbest düşüş süresi",
+      "ifade": "t = √(3π ÷ (32 × G × ρ))",
+      "aciklama": "t: basınçsız, düzgün yoğunluklu bir gaz küresinin çökme süresi (saniye); G: kütleçekim sabiti (6,674 × 10⁻¹¹ m³/(kg·s²)); ρ: yoğunluk (kg/m³). Basınç ve dönme ihmal edildiği için gerçek çöküş süresinin alt sınırıdır. Yoğunluk 100 kat artarsa süre 10 kat kısalır."
+    },
+    {
+      "ad": "Dalga boyu ve frekans",
+      "ifade": "dalga boyu = c ÷ f",
+      "aciklama": "c: ışık hızı (299.792.458 m/s), f: frekans (Hz); dalga boyu metre cinsinden çıkar. Hidrojenin 1.420,4 MHz'lik çizgisi için ≈ 21,1 cm."
+    },
+    {
+      "ad": "Kadir farkı ve ışık oranı",
+      "ifade": "oran = 100 üzeri (Δm ÷ 5)",
+      "aciklama": "Δm: kadir cinsinden sönükleşme (ya da parlaklık farkı); 5 kadir = 100 kat, 1 kadir ≈ 2,512 kat. Tozun söndürdüğü ışık oranını bulmak için kullanılır."
+    },
+    {
+      "ad": "Başlangıç kütle fonksiyonu (Salpeter)",
+      "ifade": "dN/dM ∝ M^−2,35",
+      "aciklama": "dN/dM: birim kütle aralığına düşen yeni doğmuş yıldız sayısı, M: yıldız kütlesi (M☉). Salpeter (1955), Güneş çevresindeki düşük ve orta kütleli yıldızlar için; 0,5 M☉'nin altında üs yaklaşık −1,3'e iner."
     }
   ],
   "anahtar_sayilar": [
@@ -192,6 +275,36 @@
       "aciklama": "Öngezegen disklerinin ömrü",
       "kaynak_url": "https://aasnova.org/?p=10172",
       "kid": "d14n9"
+    },
+    {
+      "deger": "1.420,4 MHz; 21,1 cm; ~11 milyon yıl",
+      "aciklama": "Nötr hidrojenin 21 cm çizgisi: frekansı, dalga boyu ve uyarılmış durumun ortalama ömrü (öngörü 1944, saptama 1951)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Hydrogen_line"
+    },
+    {
+      "deger": "~1 kadir/kiloparsek; galaksi merkezine doğru 30 kadire kadar",
+      "aciklama": "Tozun görünür ışıkta ortalama sönükleştirmesi (Trumpler 1930) ve galaksi merkezi yönünde sönükleşme",
+      "kaynak_url": "https://www.astro.utu.fi/~cflynn/galdyn/l13.html"
+    },
+    {
+      "deger": "~4 milyon yıl; ~%1",
+      "aciklama": "Dev moleküler bulutların (100 parçacık/cm³) serbest düşüş süresi ve bir serbest düşüş süresinde yıldıza dönüşen gaz oranı",
+      "kaynak_url": "https://arxiv.org/pdf/1101.5172"
+    },
+    {
+      "deger": "−2,35 (Salpeter, 1955)",
+      "aciklama": "Başlangıç kütle fonksiyonunun üssü: yıldız sayısı kütlenin −2,35'inci kuvvetiyle azalır",
+      "kaynak_url": "https://dictionary.obspm.fr/terms/initial-mass-function-imf/"
+    },
+    {
+      "deger": "2 Temmuz 2018; ~20 AB; ~1.000 °C",
+      "aciklama": "PDS 70 b: oluşum hâlinde doğrulanmış ilk gezegen görüntüsü (ESO VLT/SPHERE)",
+      "kaynak_url": "https://eso.org/public/news/eso1821/"
+    },
+    {
+      "deger": "~100 parsek",
+      "aciklama": "Güneş'i içine alan Yerel Kabarcık'ın yarıçapı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Interstellar_medium"
     }
   ],
   "sozluk": [
@@ -249,19 +362,39 @@
       "terim": "Sönükleştirme ve kızarma",
       "tanim": "Tozun yıldız ışığını soğurup saçarak sönükleştirmesi; maviyi daha çok tuttuğu için ışığın kızarması.",
       "kid": "d14t10"
+    },
+    {
+      "terim": "21 cm çizgisi",
+      "tanim": "Nötr hidrojen atomunda elektron spininin ters dönmesiyle salınan, 1.420,4 MHz frekanslı ve tozdan geçen radyo çizgisi."
+    },
+    {
+      "terim": "Yerel Kabarcık",
+      "tanim": "Güneş'i içine alan, yarıçapı yaklaşık 100 parsek olan, sıcak ve çok seyrek gazla dolu bölge."
+    },
+    {
+      "terim": "Serbest düşüş süresi",
+      "tanim": "Basıncı olmayan bir gaz bulutunun yalnızca kendi kütleçekimiyle çökmesi için geçen, yalnızca yoğunluğa bağlı süre."
+    },
+    {
+      "terim": "Başlangıç kütle fonksiyonu",
+      "tanim": "Yeni doğan yıldızların kütlelerine göre sayıca nasıl dağıldığını anlatan bağıntı."
+    },
+    {
+      "terim": "FU Orionis patlaması",
+      "tanim": "Genç bir yıldızın üzerine bir anda çok madde düşmesiyle parlaklığının birkaç yılda 3–5 kadir artması."
     }
   ],
   "defter_notu": [
-    "Yıldızlararası ortam: kütlece %99 gaz, %1 toz; gaz kütlece ~%70 H, %28 He.",
-    "Gaz evreleri: koronal 10⁶–10⁷ K (hacim çok, kütle az) … moleküler bulut 10–20 K (hacim az, gaz kütlesinin ~yarısı).",
-    "Toz: maviyi daha çok tutar → sönükleştirme + kızarma. Kızılötesi tozdan geçer.",
-    "Bulutsular: salma (kızıl, H-alfa 656,28 nm), yansıma (mavi, saçılma), karanlık (örter).",
-    "Moleküler bulut: H₂ görünmez, CO ile izlenir. Dev bulut 10⁴–10⁷ M☉, 1 küp ışık yılı ≈ 0,17 M☉.",
-    "Jeans (1902): basınç < kütleçekimi → çöküş; soğuk = kararsız. Çöküş parçalanır → küme.",
-    "Önyıldız (~500.000 yıl) → T Tauri (10 milyon yıldan kısa, Joy 1945) → anakol. Alt sınır 0,08 M☉.",
-    "Disk ömrü 1–3,5 milyon yıl mı, ~6,5 milyon yıl mı? Tartışmalı. HL Tauri halkaları ALMA 2014.",
-    "M42: Avcı'nın kılıcı, 388 pc ≈ 1270 ışık yılı, ~25 ışık yılı çap, İstanbul'da en yüksek ~44°, en iyi Ocak.",
-    "Samanyolu: yılda ~1,65 M☉ yeni yıldız; geçmişte en az ~2,7 kat hızlı."
+    "Yıldızlararası ortam: kütlece %99 gaz, %1 toz; gaz kütlece ~%70 H, %28 He. Güneş Yerel Kabarcık'ta (~100 pc).",
+    "Keşif: Barnard'ın delikleri (karanlık bulutsu), Hartmann 1904 (sabit Ca K çizgisi), Trumpler 1930 (~1 kadir/kpc), 21 cm (1944 öngörü, 1951 saptama).",
+    "Gaz evreleri: koronal 10⁶–10⁷ K (hacim çok, kütle az) … moleküler bulut 10–20 K (hacim az, gaz kütlesinin ~yarısı). CO çizgileriyle soğur.",
+    "Toz: silikat + karbon, ~0,1 mikrometre; maviyi daha çok tutar → sönükleştirme + kızarma. Galaksi merkezi 30 kadir → 10¹² kat. Kızılötesi geçer.",
+    "Bulutsular: salma (kızıl, H-alfa 656,28 nm; M8), yansıma (mavi, saçılma), karanlık (örter); M20 hepsi bir arada.",
+    "Moleküler bulut: H₂ görünmez, CO (115 GHz, 2,6 mm) ile izlenir. Dev bulut 10⁴–10⁷ M☉, 1 küp ışık yılı ≈ 0,17 M☉.",
+    "Jeans (1902): basınç < kütleçekimi → çöküş, parçalanma, küme. Serbest düşüş ~4 milyon yıl (100/cm³); verim ~%1.",
+    "Önyıldız (~500.000 yıl) → T Tauri (10 milyon yıldan kısa, 9,3–10,7 kadir) → anakol. FU Orionis: 3–5 kadir patlama. Alt sınır 0,08 M☉.",
+    "Diskler 1–3,5 mi ~6,5 milyon yıl mı? Tartışmalı. HL Tauri halkaları (ALMA 2014), PDS 70 b (VLT 2018). M42: 1270 ışık yılı, İstanbul ~44°; M16 sütunları 4–5 ışık yılı.",
+    "Salpeter 1955: dN/dM ∝ M^−2,35 → çoğu yıldız kırmızı cüce. Samanyolu yılda ~1,65 M☉; geçmişte en az ~2,7 kat hızlı."
   ],
   "sorular": [
     {
@@ -308,6 +441,30 @@
       "soru": "İstanbul'dan (enlem yaklaşık 41°) dik açıklığı −5,4° olan M42 en fazla kaç derece yükselir?",
       "cevap": "h = 90° − 41° + (−5,4°) ≈ 43,6°. Yani meridyenden geçerken ufkun yaklaşık 44° yukarısındadır; güney ufku açık bir yerden rahat gözlenir.",
       "kid": "d14s8"
+    },
+    {
+      "soru": "Hartmann 1904'te Mintaka'nın tayfında neyi fark etti ve bundan neden yıldızlararası gaz sonucunu çıkardı?",
+      "cevap": "Mintaka bir çift yıldızdır; üyeleri dolanırken tayf çizgileri Doppler kaymasıyla ileri geri oynar. Ama kalsiyumun K çizgisi keskin ve yerinde sabitti. Yıldızla birlikte hareket etmeyen bir çizgi yıldızın atmosferinden gelemezdi; ışığı yolda, bizimle yıldız arasındaki bir gaz bulutu soğuruyordu."
+    },
+    {
+      "soru": "Hidrojenin 21 cm çizgisinin frekansı 1.420,4 MHz'tir. Dalga boyunu hesapla ve bu çizginin galaksiyi haritalamak için neden bu kadar değerli olduğunu açıkla.",
+      "cevap": "Dalga boyu = c ÷ f = 299.792.458 ÷ 1.420.400.000 ≈ 0,211 m ≈ 21,1 cm. Bu radyo dalgası, görünür ışığı geçirmeyen toz bulutlarından rahatça geçer; bu yüzden galaksinin içinden, tozun ardındaki nötr hidrojeni görüp Samanyolu'nun sarmal yapısını çizebiliriz."
+    },
+    {
+      "soru": "Toz bir yıldızın ışığını 10 kadir sönükleştiriyor. Işığın kaçta biri bize ulaşır?",
+      "cevap": "5 kadir 100 kat demektir; 10 kadir = 5 + 5 kadir, yani 100 × 100 = 10.000 kat. Işığın yalnızca on binde biri ulaşır."
+    },
+    {
+      "soru": "Bir bulut çekirdeğinin yoğunluğu ortalama buluttan 100 kat fazla. Serbest düşüş süresi nasıl değişir? Bulut için 4 milyon yıl al.",
+      "cevap": "Serbest düşüş süresi yoğunluğun kareköküyle ters orantılıdır. √100 = 10, yani süre 10 kat kısalır: 4 milyon ÷ 10 = 400.000 yıl. Yoğun çekirdekler bu yüzden çevrelerinden çok daha hızlı çöker."
+    },
+    {
+      "soru": "Salpeter kuralına göre 2–4 Güneş kütlesi aralığında 20–40 Güneş kütlesi aralığına göre yaklaşık kaç kat fazla yıldız doğar?",
+      "cevap": "İki aralıkta da üst uç alt ucun 2 katı olduğu için oran yalnızca alt uçların oranına bağlıdır: 10'un 1,35'inci kuvveti ≈ 22. Yani yaklaşık 22 kat fazla yıldız doğar."
+    },
+    {
+      "soru": "Samanyolu'ndaki moleküler gaz bir serbest düşüş süresinde tümüyle yıldıza dönüşseydi yılda yaklaşık 250 Güneş kütlesi yıldız doğardı. Gözlenen hız 1–2 Güneş kütlesi. Bu ne anlama gelir?",
+      "cevap": "Her serbest düşüş süresinde gazın yalnızca yaklaşık yüzde biri yıldıza dönüşüyor demektir. Bulutlar çökmeye karşı bir şekilde destekleniyor ya da dağılıyor; bunun nedeni hâlâ araştırılıyor ve tek bir kabul görmüş cevap yok."
     }
   ],
   "kaynaklar": [
@@ -422,6 +579,54 @@
     {
       "ad": "NASA Science, Stars",
       "url": "https://science.nasa.gov/universe/stars/"
+    },
+    {
+      "ad": "Wikipedia, Hydrogen line",
+      "url": "https://en.wikipedia.org/wiki/Hydrogen_line"
+    },
+    {
+      "ad": "Interstellar Grains – The 75th Anniversary (arXiv astro-ph/0503569)",
+      "url": "https://arxiv.org/pdf/astro-ph/0503569"
+    },
+    {
+      "ad": "Turku Üniversitesi ders notu, The Galactic center",
+      "url": "https://www.astro.utu.fi/~cflynn/galdyn/l13.html"
+    },
+    {
+      "ad": "Star Formation in Molecular Clouds (arXiv 1101.5172)",
+      "url": "https://arxiv.org/pdf/1101.5172"
+    },
+    {
+      "ad": "Paris Gözlemevi astronomi sözlüğü, Initial mass function",
+      "url": "https://dictionary.obspm.fr/terms/initial-mass-function-imf/"
+    },
+    {
+      "ad": "ESO eso1821, First confirmed image of newborn planet (PDS 70)",
+      "url": "https://eso.org/public/news/eso1821/"
+    },
+    {
+      "ad": "NASA Hubble, Messier 8",
+      "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-8"
+    },
+    {
+      "ad": "NASA Hubble, Messier 20",
+      "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-20/"
+    },
+    {
+      "ad": "Wikipedia, Trifid Nebula",
+      "url": "https://en.wikipedia.org/wiki/Trifid_Nebula"
+    },
+    {
+      "ad": "NASA Hubble, Messier 16",
+      "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-16/"
+    },
+    {
+      "ad": "NASA APOD, Pillars of Creation (20 Ekim 2022)",
+      "url": "https://science.nasa.gov/image-article/apod-2022-october-20-pillars-of-creation/"
+    },
+    {
+      "ad": "Wikipedia, Binoculars (dürbün sınır kadiri)",
+      "url": "https://en.wikipedia.org/wiki/Binoculars"
     }
   ]
 }
