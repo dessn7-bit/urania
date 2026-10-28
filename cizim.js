@@ -95,6 +95,9 @@
     grup: (icerik, donus) => `<g${donus ? ` transform="${donus}"` : ''}>${icerik}</g>`
   };
 
+  /* Kaynak bağlantısı: Urania yüklüyse onun denetimi; değilse (ör. önizleme) aynı kural burada: yalnız http(s), kaçışlı */
+  const guvenliUrl = u => (window.Urania && window.Urania.guvenliUrl) ? window.Urania.guvenliUrl(u)
+    : (/^https?:\/\//i.test(String(u || '')) ? kac(u).replace(/'/g, '&#39;') : '#');
   function ekle(id, tanim) { tanim.id = id; kayit[id] = tanim; }
   /* Bir dersin bir bölümüne ait çizimler (sıra: eklenme sırası) */
   function bolumCizimleri(ders, bolum) { return Object.values(kayit).filter(t => t.ders === ders && t.bolum === bolum); }
@@ -110,7 +113,7 @@
   function html(t, no) {
     const kaynak = (t.kaynak || []).filter(k => k && k.url);
     return `<figure class="cizim" id="cz-${kac(t.id)}">${svg(t)}
-      <figcaption class="okunur" data-ses="${kac('Şekil ' + no + ': ' + t.baslik + '. ' + t.aciklama)}"><b>Şekil ${no}.</b> ${kac(t.baslik)}. <span>${kac(t.aciklama)}</span>${kaynak.length ? ` <span class="kucuk soluk">Kaynak: ${kaynak.map(k => `<a href="${window.Urania ? window.Urania.guvenliUrl(k.url) : k.url}" target="_blank" rel="noopener">${kac(k.ad)}</a>`).join(', ')}</span>` : ''}</figcaption></figure>`;
+      <figcaption class="okunur" data-ses="${kac('Şekil ' + no + ': ' + t.baslik + '. ' + t.aciklama)}"><b>Şekil ${no}.</b> ${kac(t.baslik)}. <span>${kac(t.aciklama)}</span>${kaynak.length ? ` <span class="kucuk soluk">Kaynak: ${kaynak.map(k => `<a href="${guvenliUrl(k.url)}" target="_blank" rel="noopener">${kac(k.ad)}</a>`).join(', ')}</span>` : ''}</figcaption></figure>`;
   }
 
   window.UraniaCizim = { ekle, kayit, bolumCizimleri, dersCizimleri, svg, html, S };

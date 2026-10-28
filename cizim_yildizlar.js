@@ -355,9 +355,13 @@
       const kumeler = [['Ülker', 115e6, '~115 milyon yıl'], ['Hyades', 625e6, '~625 milyon yıl'], ['Küresel', 12.6e9, '~12,6 milyar yıl']];
       const renk = [R.sicak, R.vurgu, R.iyi];
       kumeler.forEach(([ad, yas, yazi], i) => {
-        const M = Math.pow(yas / 1e10, -0.4), k = anakolKonum(M), x = ek.X(k.T), y = ek.Y(k.L);
-        s += S.cizgi(x - 12, y, x + 12, y, { renk: renk[i], kalin: 3 }) + S.daire(x, y, 5, { dolgu: renk[i], renk: 'none' });
-        s += S.yazi(x - 12, y + 18, String(i + 1), { boy: 14, kalin: true, renk: renk[i], hiza: 'end' });
+        const M = Math.pow(yas / 1e10, -0.4), k = anakolKonum(M);
+        /* anakolKonum tablo aralığı (0,37–43 Güneş kütlesi) dışında null döner: o kümenin işareti çizilmez, yazısı kalır */
+        if (k) {
+          const x = ek.X(k.T), y = ek.Y(k.L);
+          s += S.cizgi(x - 12, y, x + 12, y, { renk: renk[i], kalin: 3 }) + S.daire(x, y, 5, { dolgu: renk[i], renk: 'none' });
+          s += S.yazi(x - 12, y + 18, String(i + 1), { boy: 14, kalin: true, renk: renk[i], hiza: 'end' });
+        }
         const ly = al.y + 16 + i * 36;
         s += S.yazi(200, ly, (i + 1) + ' · ' + ad + ', ' + yazi, { boy: 13, kalin: true, renk: renk[i] });
         s += S.yazi(214, ly + 16, 'dönüm ≈ ' + S.sayi(M, M < 1 ? 1 : 0) + ' Güneş kütlesi', { boy: 13, renk: R.soluk });

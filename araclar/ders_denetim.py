@@ -11,7 +11,7 @@ YASAK_KAYNAK = re.compile(r'openstax', re.I)
 SIZ = re.compile(r'\b\w+(?:ınız|iniz|unuz|ünüz|sanız|seniz|sınız|siniz|ınızı|inizi|nuz|nüz)\b')
 
 def kelime(d):
-    return sum(len(p.split()) for b in d['bolumler'] for p in b['paragraflar'])
+    return sum(len(p.split()) for b in d['bolumler'] for p in (b.get('paragraflar') or []))
 
 def denetle(yol):
     hatalar, uyarilar = [], []
@@ -49,23 +49,28 @@ def denetle(yol):
     if len(d['kaynaklar']) < 6: hatalar.append('en az 6 kaynak')
     tum = json.dumps(d, ensure_ascii=False)
     if YASAK_KAYNAK.search(tum): hatalar.append('OpenStax kullanılamaz (yapay zekâ kullanımı yasak lisans)')
-    siz = sorted(set(SIZ.findall(' '.join(p for b in d['bolumler'] for p in b['paragraflar']))))
-    siz = [x for x in siz if x.lower() not in {'yeniniz', 'deniz', 'sonuz', 'ikiniz'}]
+    siz = sorted(set(SIZ.findall(' '.join(p for b in d['bolumler'] for p in (b.get('paragraflar') or [])))))
+    siz = [x for x in siz if x.lower() not in {'yeniniz', 'deniz', 'sonuz', 'ikiniz', 'henüz'}]
     if siz: uyarilar.append(f'"siz" hitabı olabilir (sen kullan): {siz[:8]}')
     # okunuş: sesli okumada çevrilmemiş sembol kalmasın
     try:
         import subprocess
-        js = "const {okunus}=require('%s');const d=require('%s');const t=d.bolumler.flatMap(b=>[b.baslik,...b.paragraflar,b.akilda||'',...(b.ornek?[b.ornek.baslik,b.ornek.metin]:[])]).map(okunus).join(' ');const k=[...t].filter(c=>!/[\\p{L}\\p{N}\\s.,;:!?()'\"’‘“”…%%\\-–—]/u.test(c));console.log(JSON.stringify([...new Set(k)]));" % (os.path.join(K, 'okunus.js'), os.path.abspath(yol))
-        r = subprocess.run(['node', '-e', js], capture_output=True, text=True, timeout=30)
-        kalan = json.loads(r.stdout.strip() or '[]')
+        # Yollar betiğe gömülmez (tırnak/ters bölü kaçışı derdi yok); argv ile geçer: process.argv[1..2]
+        js = "const {okunus}=require(process.argv[1]);const d=require(process.argv[2]);const t=d.bolumler.flatMap(b=>[b.baslik,...b.paragraflar,b.akilda||'',...(b.ornek?[b.ornek.baslik,b.ornek.metin]:[])]).map(okunus).join(' ');const k=[...t].filter(c=>!/[\\p{L}\\p{N}\\s.,;:!?()'\"’‘“”…%\\-–—]/u.test(c));console.log(JSON.stringify([...new Set(k)]));"
+        argv = [os.path.abspath(os.path.join(K, 'okunus.js')), os.path.abspath(yol)]
+        def node(kod):
+            r = subprocess.run(['node', '-e', kod, *argv], capture_output=True, text=True, timeout=30)
+            if r.returncode != 0 or not r.stdout.strip():
+                raise RuntimeError(f'node çıkış kodu {r.returncode}: {(r.stderr or r.stdout).strip()[-300:]}')
+            return json.loads(r.stdout.strip())
+        kalan = node(js)
         if kalan: uyarilar.append(f'sesli okumada karşılığı olmayan semboller: {kalan} (kelimeyle yaz ya da Claude\'a bildir)')
         # okunuş: sayıdan sonra açılmadan kalan ekli birim ("5 km'de") ve "ya da" okunan birimli eğik çizgi
-        js2 = ("const {okunus}=require('%s');const d=require('%s');const m=d.bolumler.flatMap(b=>[b.baslik,...b.paragraflar,b.akilda||'',...(b.ornek?[b.ornek.baslik,b.ornek.metin]:[])]).concat(d.defter_notu||[]);"
+        js2 = ("const {okunus}=require(process.argv[1]);const d=require(process.argv[2]);const m=d.bolumler.flatMap(b=>[b.baslik,...b.paragraflar,b.akilda||'',...(b.ornek?[b.ornek.baslik,b.ornek.metin]:[])]).concat(d.defter_notu||[]);"
                "const ek=new Set(),yd=new Set();m.forEach(x=>{const o=okunus(x);(o.match(/\\d\\s?(?:km|cm|mm|nm|μm|kg|AB|K|dk|sa|sn|Mpc|kpc|pc|W|J|Hz|MHz|THz|MeV|s|m|g|°C?)[²³]?['’][a-zçğıöşü]+/g)||[]).forEach(e=>ek.add(e));"
                "(x.match(/\\S+\\/\\S+/g)||[]).forEach(e=>{if(/ ya da /.test(okunus(e))&&!/^[a-zçğıöşü]{2,}\\/[a-zçğıöşü]{2,}[.,;:)]*$/.test(e))yd.add(e);});});"
-               "console.log(JSON.stringify({ek:[...ek],yd:[...yd]}));") % (os.path.join(K, 'okunus.js'), os.path.abspath(yol))
-        r2 = subprocess.run(['node', '-e', js2], capture_output=True, text=True, timeout=30)
-        o2 = json.loads(r2.stdout.strip() or '{}')
+               "console.log(JSON.stringify({ek:[...ek],yd:[...yd]}));")
+        o2 = node(js2)
         if o2.get('ek'): uyarilar.append(f'sesli okumada açılmayan ekli birim: {o2["ek"][:8]} (okunus.js birim listesine ekle)')
         if o2.get('yd'): uyarilar.append(f'birimli eğik çizgi "ya da" okunuyor: {o2["yd"][:8]} (okunus.js birim listesine ekle)')
     except Exception as e:

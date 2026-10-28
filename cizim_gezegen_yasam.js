@@ -164,7 +164,7 @@
     ],
     ciz(S) {
       const R = S.R, ax = 112, y0 = 40, y1 = 380, T = 4.54, Y = t => y0 + (T - t) / T * (y1 - y0);
-      const saat = t => { const h = (T - t) / T * 24, hh = Math.floor(h), mm = Math.round((h - hh) * 60); return String(hh).padStart(2, '0') + '.' + String(mm).padStart(2, '0'); };
+      const saat = t => { const dk = Math.round((T - t) / T * 24 * 60), hh = Math.floor(dk / 60), mm = dk % 60; return String(hh).padStart(2, '0') + '.' + String(mm).padStart(2, '0'); };
       let s = '';
       s += S.yazi(ax - 8, 20, 'milyar yıl önce', { boy: 13, hiza: 'end', renk: R.soluk });
       s += S.cizgi(ax, y0, ax, y1, { renk: R.soluk, kalin: 2 });

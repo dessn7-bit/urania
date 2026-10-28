@@ -39,8 +39,10 @@ for u in UNITELER:
         if os.path.exists(yol):
             h, _ = denetle(yol)
             if h:
-                print('UYARI: denetimden geçmedi, eski sürüm kalıyor:', i, h[:3]); 
-                if i in eski: dersler.append(eski[i]); kaynak[i] = 'eski'
+                if i not in eski:
+                    sys.exit(f'HATA: {i} denetimden geçmedi ve veri/dersler.json içinde eski sürümü yok; ders düşürülmez. {h[:3]}')
+                print('UYARI: denetimden geçmedi, eski sürüm kalıyor:', i, h[:3])
+                dersler.append(eski[i]); kaynak[i] = 'eski'
                 continue
             d = json.load(open(yol, encoding='utf-8'))
             if kimlik_ver(d): json.dump(d, open(yol, 'w', encoding='utf-8'), ensure_ascii=False, indent=2)
@@ -48,6 +50,8 @@ for u in UNITELER:
             dersler.append(d); kaynak[i] = 'v2'
         elif i in eski:
             dersler.append(eski[i]); kaynak[i] = 'eski'
+        else:
+            sys.exit(f'HATA: {i} için ne taslak ({yol}) ne de veri/dersler.json içinde eski sürüm var; ders düşürülmez.')
 # Kaynak metinler başka dersleri dosya kimliğiyle anar ("11. ders" = d11). Uygulama dersleri ünite sırasıyla
 # numaralar ("Ders 4 / 19"), bu yüzden atıflar burada uygulamadaki sıra numarasına çevrilir.
 SIRA = {d['id']: i + 1 for i, d in enumerate(dersler)}

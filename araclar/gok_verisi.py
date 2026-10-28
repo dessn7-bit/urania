@@ -3,35 +3,14 @@ Girdi: arastirma/gokyuzu/*.json, arastirma/iau_wgsn_yildiz_adlari.json  Çıktı
 Koordinatlar J2000; d3-celestial boylamı -180..180 verir, burada 0..360 sağ açıklığa çevrilir.
 Yıldız adları (HIP ile eşlenir): önce IAU WGSN kataloğu (aynı HIP'te birden çok ad varsa en eski kabul edilen,
 ör. ε Boo: Izar); WGSN'de adı olmayan yıldızda d3-celestial adı yalnız şu koşullarla kalır: WGSN o adı başka
-bir HIP'e vermemiş, ad d3-celestial'da tek yıldızda geçiyor ve TAKMA_AD listesinde değil."""
+bir HIP'e vermemiş, ad d3-celestial'da tek yıldızda geçiyor ve TAKMA_AD listesinde değil (kural: yildiz_adlari.py)."""
 import json, sys, os
-from collections import Counter
 K = os.path.join(os.path.dirname(__file__), '..')
 g = lambda p: json.load(open(os.path.join(K, 'arastirma/gokyuzu', p), encoding='utf-8'))
 ra = lambda x: round(x % 360, 4)
 
-# WGSN adı olmayan takma/yanlış adlar (d3-celestial'dan gelir): Trapezium (küme takma adı), Becklin's Star
-# (BN nesnesinin adı, θ1 Ori C'ye yanlış bağlanmış), The Ruby Star (119 Tau), Revenant of the Swan (P Cyg),
-# Double Double (ε Lyr; WGSN: Pongaponga), Dsiban (ψ1 Dra B'de; WGSN Dziban ψ1 Dra A, HIP 86614)
-# Ad değil tanım olanlar da çıkarılır: "Bidelman's Helium Variable Star", "Polaris Galacticus Borealis",
-# "Variabilis Coronae" (Latince "Taç'ın değişeni"), "Persian".
-TAKMA_AD = {"Trapezium", "Becklin's Star", "The Ruby Star", "Revenant of the Swan", "Double Double", "Dsiban",
-            "Bidelman's Helium Variable Star", "Polaris Galacticus Borealis", "Variabilis Coronae", "Persian"}
-
-def ad_bulucu(names):
-    wgsn = json.load(open(os.path.join(K, 'arastirma/iau_wgsn_yildiz_adlari.json'), encoding='utf-8'))['adlar']
-    hip_ad, ad_hip = {}, {}
-    for r in sorted(wgsn, key=lambda r: r['date']):
-        if r['hip']: hip_ad.setdefault(r['hip'], r['name'])
-        ad_hip[r['name']] = r['hip']
-    say = Counter(v['name'] for v in names.values() if v.get('name'))
-    def ad(hip):
-        if hip in hip_ad: return hip_ad[hip]
-        n = names.get(str(hip), {}).get('name', '')
-        if not n or n in TAKMA_AD or say[n] > 1: return ''
-        if n in ad_hip and ad_hip[n] not in (None, hip): return ''   # WGSN bu adı başka yıldıza vermiş
-        return n
-    return ad
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from yildiz_adlari import ad_bulucu   # TAKMA_AD ve ad kuralı ortme_verisi.py ile ortak
 
 stars = g('stars.6.json')['features']
 names = g('starnames.json')

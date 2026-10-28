@@ -1,8 +1,11 @@
 """arastirma/dersler_*.json taslaklarını birleştirip veri/dersler.json'u üretir.
 Arayüzün diliyle tutarlı olsun diye 'siz' hitabı 'sen'e çevrilir (yalnız aşağıdaki
 listelenmiş kelimeler; içerik değişmez)."""
-import json, os, re
-K = os.path.join(os.path.dirname(__file__), '..')
+import json, os, re, sys
+# ESKİDİ: bu v1 betiği yalnız 11 dersi (arastirma/dersler_*.json) bilir; çalışırsa veri/dersler.json'daki
+# 19 dersi ve üniteleri silerek üzerine yazar. Güncel derleyici: araclar/ders_verisi_v2.py
+sys.exit('Bu betik eskidi (veri/dersler.json\'u 11 derse indirir); araclar/ders_verisi_v2.py kullan.')
+K =os.path.join(os.path.dirname(__file__), '..')
 HITAP = [
     ('fırlattığınızı düşünün', 'fırlattığını düşün'), ('Formüle bakın', 'Formüle bak'),
     ('baktığınızda', 'baktığında'), ('başınızın', 'başının'), ('durduğunuz', 'durduğun'),

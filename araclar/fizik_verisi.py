@@ -1,7 +1,7 @@
 """arastirma/ altındaki doğrulanmış kaynak dosyalarından veri/fizik.json'u üretir.
 Elle sayı YAZILMAZ: her değer bir araştırma dosyasından, kaynağıyla birlikte gelir.
 Tek istisna standart yerçekimi ivmesi g0 (tanım gereği kesin; kaynağı aşağıda)."""
-import json, os
+import json, os, re
 K = os.path.join(os.path.dirname(__file__), '..')
 A = lambda p: json.load(open(os.path.join(K, 'arastirma', p), encoding='utf-8'))
 
@@ -49,10 +49,16 @@ karadelikler = [
     KD('ESO eso2119 (Sgr A*)', 'Sgr A* kütlesi', 'Sgr A* (Samanyolu merkezi)'),
     KD('ESO eso1907 (M87*)', 'M87* kütlesi', 'M87*')
 ]
-karadelikler = [k for k in karadelikler]
+# Samanyolu merkezi: ESO eso2119'un yuvarlak "27 000 light-years" değeri alıntıdan okunur (elle yazılmaz).
+# Aynı kayıttaki GRAVITY R0 = 8178 pc ≈ 26 673 ışık yılı; ESO bunu 27 000'e yuvarlıyor.
+R0 = ref['Galaksi merkezine uzaklık (R0)']
+_m = re.search(r'(\d{1,3}(?:[ ,]\d{3})*) light-years', R0['ikinci_kaynak_alinti'])
+assert _m, ('ESO alıntısında ışık yılı bulunamadı', R0['ikinci_kaynak_alinti'])
+r0_isik_yili = int(re.sub(r'[ ,]', '', _m.group(1)))
+assert abs(r0_isik_yili - R0['deger'] * 3.2616) / r0_isik_yili < 0.02, (r0_isik_yili, R0['deger'])   # iki kaynak tutarlı mı
 uzakliklar = [
     {'ad': 'Proxima Centauri', 'isik_yili': ref['Proxima Centauri uzaklığı']['deger'], 'kaynak': 'NASA Sun facts (Proxima)', 'url': ref['Proxima Centauri uzaklığı']['kaynak_url']},
-    {'ad': 'Samanyolu merkezi', 'isik_yili': 27000, 'kaynak': 'ESO eso2119 (Sgr A* uzaklığı)', 'url': ref['Galaksi merkezine uzaklık (R0)']['ikinci_kaynak_url']},
+    {'ad': 'Samanyolu merkezi', 'isik_yili': r0_isik_yili, 'kaynak': 'ESO eso2119 (Sgr A* uzaklığı)', 'url': R0['ikinci_kaynak_url']},
     {'ad': 'Andromeda Galaksisi', 'isik_yili': ref['Andromeda uzaklığı']['deger'], 'kaynak': 'NASA (Andromeda)', 'url': ref['Andromeda uzaklığı']['kaynak_url']}
 ]
 out = {'aciklama': 'Urania fizik verisi; araclar/fizik_verisi.py ile arastirma/ dosyalarından üretilir.',

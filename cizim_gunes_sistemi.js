@@ -29,7 +29,7 @@
   }
   /* Bir dış noktadan çembere teğet değme noktası (yan: +1 / −1) */
   function teget(cx, cy, r, ax, ay, yan) {
-    const d = Math.hypot(ax - cx, ay - cy), f = Math.atan2(ay - cy, ax - cx), b = Math.acos(r / d);
+    const d = Math.hypot(ax - cx, ay - cy), f = Math.atan2(ay - cy, ax - cx), b = Math.acos(Math.min(1, Math.max(-1, r / d)));   // nokta çembere çok yakın/içeride: NaN yerine sınırda kal
     return [cx + r * Math.cos(f + yan * b), cy + r * Math.sin(f + yan * b)];
   }
 
@@ -395,7 +395,7 @@
       const kesis = (p, q, c, r) => {
         const d = [q[0] - p[0], q[1] - p[1]], f = [p[0] - c[0], p[1] - c[1]];
         const A = d[0] * d[0] + d[1] * d[1], B = 2 * (f[0] * d[0] + f[1] * d[1]), Cc = f[0] * f[0] + f[1] * f[1] - r * r;
-        const t = (-B - Math.sqrt(B * B - 4 * A * Cc)) / (2 * A); return [p[0] + t * d[0], p[1] + t * d[1]];
+        const t = (-B - Math.sqrt(Math.max(0, B * B - 4 * A * Cc))) / (2 * A);   // doğru çembere değmiyorsa en yakın noktayı ver return [p[0] + t * d[0], p[1] + t * d[1]];
       };
       /* Güneş (sx, sr) ile gölgeyi yapan cisim (x2, r2) arasındaki gölge konileri.
          Tam gölge: dış teğetler (cisimden sonra sivrilir). Yarı gölge: iç teğetler (cisimden sonra açılır).
