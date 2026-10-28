@@ -1,0 +1,58 @@
+[
+  {
+    "id": "d24-1",
+    "soru": "Telefonla çekilen dolunay neden çoğu zaman bembeyaz bir leke olarak çıkar?",
+    "secenekler": [
+      "Telefon sensörleri Ay'ın yansıttığı ışığın rengini kaydedemez",
+      "Ay karenin çok küçük bir parçası olduğu için ışık ölçer çoğunlukla karanlık gökyüzünü okur ve Ay'ı fazla pozlar",
+      "Ay'ın yüzeyi Dünya'nınkinden daha açık renkli olduğu için her pozlamada yanar",
+      "Atmosfer Ay'ın ışığını kırınıma uğratıp sensörü doyurur"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre Lodriguss, yaklaşık 1000 mm'den kısa odak uzaklıklarında ışık ölçerin çoğunlukla karanlık gökyüzünü okuyup Ay'ı fazla pozladığını yazar. 24 mm eşdeğeri bir telefonda Ay yalnızca yaklaşık 25 piksel genişliğindedir. Çözüm pozlamayı Ay'a göre düşürmektir; Looney 11 kuralı f/11 ve 1 bölü ISO saniye önerir. Ay'ın yüzeyi aslında Dünya'nınkinden koyudur.",
+    "ders": "d24",
+    "bolum": 3
+  },
+  {
+    "id": "d24-2",
+    "soru": "24 mm eşdeğeri, 4000 piksel genişliğinde (piksel ölçeği yaklaşık 74 yay saniyesi) bir telefon 7×50 dürbünün arkasından afokal olarak kullanılırsa piksel ölçeği ve Ay'ın görüntüdeki genişliği yaklaşık ne olur?",
+    "secenekler": [
+      "Yaklaşık 518 yay saniyesi; Ay yaklaşık 4 piksel",
+      "Yaklaşık 74 yay saniyesi; Ay yaklaşık 25 piksel, çünkü dürbün yalnız ışığı artırır",
+      "Yaklaşık 10,6 yay saniyesi; Ay yaklaşık 178 piksel",
+      "Yaklaşık 1,5 yay saniyesi; Ay yaklaşık 1260 piksel"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre dürbün gökteki açıları 7 ile çarpar; eşdeğer odak 24 × 7 = 168 mm olur, piksel ölçeği 74,4 ÷ 7 ≈ 10,6 yay saniyesine iner. Ay'ın ortalama çapı 1896 yay saniyesi olduğundan 1896 ÷ 10,6 ≈ 178 piksel. Bu ölçekte gök bir pikseli yaklaşık 0,7 saniyede geçer.",
+    "ders": "d24",
+    "bolum": 4
+  },
+  {
+    "id": "d24-3",
+    "soru": "Sabit bir dayanaktaki telefonla nokta yıldız çekerken, gök ekvatoru yerine kutba 10° uzaklıktaki (dik açıklığı 80°) bir bölgeye bakarsan en uzun poz süresi yaklaşık nasıl değişir?",
+    "secenekler": [
+      "Değişmez; 500 kuralı yalnız odak uzaklığına bağlıdır",
+      "Yarıya iner, çünkü kutba yakın yıldızlar daha hızlı döner",
+      "Yaklaşık 6 katına çıkar, çünkü kayma hızı dik açıklığın kosinüsüyle orantılıdır ve cos 80° ≈ 0,17'dir",
+      "Yaklaşık 80 katına çıkar, çünkü dik açıklık 80°'dir"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre gökyüzü saniyede 15,04 × cos δ yay saniyesi kayar. Ekvatorda 15,04, δ = 80°'de yaklaşık 2,6 yay saniyesi. 74 yay saniyelik pikselde bir piksellik kayma ekvatorda yaklaşık 4,9 saniye, δ = 80°'de yaklaşık 28 saniye sürer: yaklaşık 6 kat. 500 kuralı bu yön farkını hesaba katmaz.",
+    "ders": "d24",
+    "bolum": 6
+  },
+  {
+    "id": "d24-4",
+    "soru": "Görüntü yığınlamada sinyal-gürültü oranı, yalnız foton gürültüsü hesaba katılırsa kare sayısına nasıl bağlıdır?",
+    "secenekler": [
+      "Kare sayısıyla doğru orantılı artar: 9 kare 9 kat",
+      "Kare sayısının karekökü kadar artar: 9 kare 3 kat, 100 kare 10 kat",
+      "Kare sayısından bağımsızdır; yalnız ISO'ya bağlıdır",
+      "Kare sayısının karesi kadar artar: 3 kare 9 kat"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre foton gürültüsü sinyalin kareköküdür; N kare N kat ışık demek olduğundan oran √N kat artar. PetaPixel'deki açıklamaya göre 9 görüntü oranı 3 kat, 100 görüntü 10 kat iyileştirir. Kent göğünde gök fotonları da gürültü kattığı için aynı temizlik için daha çok kare gerekir.",
+    "ders": "d24",
+    "bolum": 10
+  }
+]
