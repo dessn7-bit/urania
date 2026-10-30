@@ -7,14 +7,14 @@ test.beforeEach(async ({ page }) => {
 });
 test.afterEach(async ({ page }) => { expect(page.hatalar).toEqual([]); });
 
-test('Deney listesi: on deney gruplu listelenir', async ({ page }) => {
+test('Deney listesi: yirmi deney gruplu listelenir', async ({ page }) => {
   await page.goto('/index.html#deney');
-  await expect(page.locator('.deney-liste li')).toHaveCount(10);
-  await expect(page.locator('h2.unite-bas')).toHaveCount(5);
+  await expect(page.locator('.deney-liste li')).toHaveCount(20);
+  await expect(page.locator('h2.unite-bas')).toHaveCount(8);
   await page.locator('.deney-liste a[href="#deney/kepler"]').click();
   await expect(page.locator('h1')).toHaveText('Kepler yasaları');
   await page.locator('a.geri').click();
-  await expect(page.locator('.deney-liste li')).toHaveCount(10);
+  await expect(page.locator('.deney-liste li')).toHaveCount(20);
 });
 
 test('Hesaplar: kaynaklı referans değerleri', async ({ page }) => {

@@ -590,5 +590,5 @@
     });
   }
 
-  window.UraniaDeneyEk = { kepler, gelgit, tayf, evreler, gecis, hubble };
+  window.UraniaDeneyEk = Object.assign(window.UraniaDeneyEk || {}, { kepler, gelgit, tayf, evreler, gecis, hubble });   // modül deneyleri (deney/*.js) de buraya ekler
 })();

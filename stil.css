@@ -298,6 +298,10 @@ html.kirmizi .sahne { background: #000; }
    üst bar ve bir kaydırıcı satırı da görünür kalır. Dikey telefonda ve tablette sınır devreye girmez. */
 .sahne canvas { max-width: max(240px, calc((100svh - 140px) * var(--en-boy, 100))); }
 .kontroller { display: grid; gap: 14px; margin-top: 16px; }
+/* Deneyler sayfasında kanvas aşağı kaydırırken üst barın altında kalır (simulasyon.js yapiskanAyarla: ekranın
+   en çok %55'ini kaplıyorsa). Altından kayan metin görünmesin diye zemin opak, alt kenarda gölge var. */
+.sahne.yapiskan { position: sticky; top: var(--yapis-ust, 56px); z-index: 6; box-shadow: 0 10px 14px -10px rgba(0, 0, 0, .75); }
+.dn-ek { margin-top: 4px; }
 .kontrol label { display: flex; justify-content: space-between; gap: 12px; font-size: 14px; color: var(--soluk); }
 /* En az genişlik: değer kısalıp uzadıkça ("0°" → "90°") etiket bir ile iki satır arasında gidip gelmesin (kaydırıcı zıplıyordu) */
 .kontrol label output { color: var(--parsomen); font-weight: 600; white-space: nowrap; flex: none; min-width: 3em; text-align: right; }

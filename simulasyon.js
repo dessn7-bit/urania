@@ -10,12 +10,22 @@
 
   /* Deney listesi: gruplu; yeni deneyler deneyler2.js'ten (window.UraniaDeneyEk) gelir */
   const DENEYLER = [
+    { id: 'mevsim', grup: 'Gökyüzü ve zaman', modul: true, ad: 'Mevsimler ve Güneş\'in yolu', oz: 'Dünya\'nın ekseni eğik: öğle Güneşi neden yazın yüksek, kışın alçak; günler neden uzayıp kısalır?' },
+    { id: 'analemma', grup: 'Gökyüzü ve zaman', modul: true, ad: 'Güneş saati ve zaman denklemi', oz: 'Güneş saati kol saatinden neden bazen 16 dakika ileri, bazen 14 dakika geri; yıl boyu öğle Güneşi gökte sekiz çizer.' },
+    { id: 'eratosthenes', grup: 'Gökyüzünü ölçmek', modul: true, ad: 'Dünya\'yı ölçmek', oz: 'Eratosthenes gibi iki kentteki gölgeden Dünya\'nın çevresini hesapla: bir sopa, bir açı, bir uzaklık yeter.' },
+    { id: 'paralaks', grup: 'Gökyüzünü ölçmek', modul: true, ad: 'Yıldızlara uzaklık: paralaks', oz: 'Dünya Güneş\'in çevresinde dönerken yakın yıldız uzaktakilere göre azıcık kayar; kayma ne kadar küçükse yıldız o kadar uzak.' },
+    { id: 'durbun', grup: 'Gözlem araçları', modul: true, ad: 'Dürbün ve teleskop', oz: 'Ağız çapını ve büyütmeyi seç: ne kadar ışık toplar, ne kadar sönük yıldız gösterir, görüş alanı ne kadar geniş?' },
+    { id: 'astrofoto', grup: 'Gözlem araçları', modul: true, ad: 'Gökyüzü fotoğrafı', oz: 'Pozlama süresi ve odak uzaklığı: yıldızlar ne zaman çizgiye döner, kent göğünde kaç kare üst üste eklemek gerekir?' },
     { id: 'kepler', grup: 'Kütleçekim ve yörüngeler', ad: 'Kepler yasaları', oz: 'Bir gezegenin yörüngesini kendin ayarla: neden elips, neden Güneş\'e yakınken hızlanır, uzak gezegenin yılı neden uzun?' },
     { id: 'yorunge', grup: 'Kütleçekim ve yörüngeler', ad: 'Yörünge atışı', oz: 'Newton\'un topu: yavaş atarsan yere düşer, yeterince hızlıysa Dünya\'nın çevresinde döner, daha hızlıysa kaçar.' },
+    { id: 'roket', grup: 'Kütleçekim ve yörüngeler', modul: true, ad: 'Roket denklemi', oz: 'Yakıt oranı ve motor verimi: bir roket neden çoğunlukla yakıttır, aşamalar neden işe yarar, yörüngeye çıkmak ne kadar zor?' },
+    { id: 'hohmann', grup: 'Kütleçekim ve yörüngeler', modul: true, ad: 'Mars\'a yolculuk', oz: 'En ucuz yol: Hohmann aktarımı. Mars\'a neden ancak 26 ayda bir fırlatılır, yolculuk neden aylar sürer?' },
     { id: 'gelgit', grup: 'Kütleçekim ve yörüngeler', ad: 'Gelgit', oz: 'Ay ve Güneş denizleri neden iki yandan şişirir; deniz günde iki kez kabarır, bazı günler daha çok.' },
     { id: 'tayf', grup: 'Işık', ad: 'Tayf ve Doppler', oz: 'Yıldız ışığını renklerine ayır: sıcaklık rengini belirler, hareket tayf çizgilerini kaydırır.' },
     { id: 'evreler', grup: 'Ay ve gezegenler', ad: 'Ay evreleri ve tutulmalar', oz: 'Ay neden hilal, yarım ya da dolunay görünür; tutulma neden her ay olmaz?' },
     { id: 'gecis', grup: 'Ay ve gezegenler', ad: 'Ötegezegen geçişi', oz: 'Gezegen yıldızının önünden geçince ışık biraz azalır: uzak gezegenler böyle bulunur.' },
+    { id: 'yasanabilir', grup: 'Ay ve gezegenler', modul: true, ad: 'Yaşanabilir bölge', oz: 'Yıldız ne kadar parlaksa sıvı suyun mümkün olduğu kuşak o kadar uzakta: gezegenini yerleştir, sıcaklığını gör.' },
+    { id: 'ortme', grup: 'Yıldızlar ve kara delikler', modul: true, ad: 'Örten çift yıldız', oz: 'İki yıldız birbirinin önünden geçince ışık düşer: Algol\'ün "göz kırpması" ve ışık eğrisinden yıldızları tartmak.' },
     { id: 'yildiz', grup: 'Yıldızlar ve kara delikler', ad: 'Yıldızın hayatı', oz: 'Yıldızın kütlesini seç: rengi, parlaklığı, ne kadar yaşayacağı ve nasıl öleceği buna bağlı.' },
     { id: 'karadelik', grup: 'Yıldızlar ve kara delikler', ad: 'Kara deliğe yaklaşmak', oz: 'Yaklaştıkça olay ufku, yavaşlayan saatin ve seni boyuna geren çekim.' },
     { id: 'gorelilik', grup: 'Görelilik ve evren', ad: 'Işığa yakın yolculuk', oz: 'Işık hızına yakın giden gemide zaman yavaşlar: Proxima\'ya, Andromeda\'ya yolculuk kaç yıl sürer?' },
@@ -500,12 +510,23 @@
 
   const KURUCU = { karadelik, yorunge, yildiz, gorelilik };
   /* Yeni deneyler (deneyler2.js) ortak yardımcılarla kurulur */
-  function ortak(kok) { return { F, U, R, kanvas, etiket, kaydirici, olcumler, kaynakSatiri, dongu: ciz => dongu(ciz, kok), renk, deger, azHareket, el: () => el }; }
+  function ortak(kok, id) { return { F, U, R, veri: MODUL_VERI[id] || null, kanvas, etiket, kaydirici, olcumler, kaynakSatiri, dongu: ciz => dongu(ciz, kok), renk, deger, azHareket, el: () => el }; }
+  /* Modül deneyleri (deney/<kimlik>.js + veri/deney/<kimlik>.json) yalnız açılınca yüklenir. JSON'da "rehber"
+     (açıklamalar ve Neler dene) ve "veri" (deneyin kaynaklı sayıları) vardır. */
+  const MODUL_VERI = {};
+  function modulMu(id) { const d = DENEYLER.find(x => x.id === id); return !!(d && d.modul); }
+  function hazirla(id) {
+    if (!modulMu(id)) return Promise.resolve();
+    return Promise.all([U.betikler(['./deney/' + id + '.js']), U.veri('deney/' + id)]).then(([, j]) => {
+      if (j && j.rehber && typeof j.rehber === 'object') R[id] = j.rehber;
+      MODUL_VERI[id] = j && j.veri ? j.veri : {};
+    });
+  }
   function kurucu(id) {
     const kendi = (o, k) => !!o && Object.prototype.hasOwnProperty.call(o, k);   // "#deney/constructor" gibi adlar prototipe takılmasın
     if (kendi(KURUCU, id)) return KURUCU[id];
     const ek = kendi(window.UraniaDeneyEk, id) && window.UraniaDeneyEk[id];
-    return ek ? kap => ek(kap, ortak(kap)) : null;
+    return ek ? kap => ek(kap, ortak(kap, id)) : null;
   }
 
   /* ---- Açıklamalar (veri/deney_rehber.json): "Bu deney ne?" (ne), "Ekranda ne var?" (ekran), "Gerçek dünyada"
@@ -561,20 +582,37 @@
   }
   /* Açıklamaları kanvasın (son .sahne) hemen altına koyar: açılınca kanvas yukarıda görünür kalır. Veriye bağlı
      deneyler kutuyu sonradan doldurduğu için sahne çıkana kadar bekler. */
-  function aciklamaYerlestir(kap, html) {
+  /* Rehber (Neler dene) ve katlanır açıklamalar deney kutusunun sonuna, kontrollerin ve ölçümlerin altına konur.
+     Kanvas yapışkan olduğunda (yapiskanAyarla) aşağı kaydırırken çizim ekranın üstünde kalır: adımı okurken, Uygula'ya
+     basınca ve kaydırıcıyı çekerken sonuç hep görünür. Veriye bağlı deneyler kutuyu sonradan doldurduğu için sahne
+     çıkana kadar beklenir; kutu yeniden yazılırsa ekler yeniden konur. */
+  function ekleriYerlestir(kap, html) {
     if (!html) return;
     const koy = () => {
       if (!kap.isConnected) return true;
-      if (kap.querySelector('.dn-acik')) return true;
-      const sahneler = kap.querySelectorAll(':scope > .sahne');
-      if (!sahneler.length) return false;
-      sahneler[sahneler.length - 1].insertAdjacentHTML('afterend', html);
-      sozlukIsaretle(kap.querySelector('.dn-acik'));
-      return true;
+      if (kap.querySelector(':scope > .dn-ek')) return false;
+      if (!kap.querySelector(':scope > .sahne')) return false;
+      kap.insertAdjacentHTML('beforeend', '<div class="dn-ek">' + html + '</div>');
+      const ek = kap.querySelector(':scope > .dn-ek');
+      sozlukIsaretle(ek.querySelector('.dn-acik'));
+      sozlukIsaretle(ek.querySelector('.rehber'));
+      yapiskanAyarla(kap);
+      return false;
     };
-    if (koy()) return;
-    const mo = new MutationObserver(() => { if (koy()) mo.disconnect(); });
+    koy();
+    const mo = new MutationObserver(() => { if (!kap.isConnected) mo.disconnect(); else koy(); });
     mo.observe(kap, { childList: true });
+  }
+  /* İlk kanvas, ekranın (üst ve alt çubuklar dışında) en çok %55'ini kaplıyorsa yapışkan olur; yatay telefonda olmaz */
+  function yapiskanAyarla(kap) {
+    const s = kap && kap.querySelector(':scope > .sahne'); if (!s || !kap.closest('[data-bolum="deney"]')) return;
+    const ust = document.querySelector('header.ust'), alt = document.querySelector('.alt-sekmeler');
+    const ustB = ust ? ust.getBoundingClientRect().height : 0;
+    const altB = alt && getComputedStyle(alt).display !== 'none' ? alt.getBoundingClientRect().height : 0;
+    const kullanilir = window.innerHeight - ustB - altB;
+    const uygun = s.getBoundingClientRect().height <= kullanilir * 0.55;
+    kap.style.setProperty('--yapis-ust', Math.round(ustB) + 'px');
+    s.classList.toggle('yapiskan', uygun);
   }
 
   /* ---- Rehber ("Neler dene"): "Yap / Gözle / Neden" adımları. "Uygula" düğmesi deneyin kontrollerini ayarlar. ---- */
@@ -606,10 +644,24 @@
     if (li) { li.classList.add('yapildi'); const d = li.querySelector('details'); if (d) d.open = true; }
     const bitti = U.diziOku('rehber_' + id);
     if (bitti.indexOf(i) < 0) { bitti.push(i); U.yaz('rehber_' + id, bitti); }
-    const sahne = kap.querySelector('.sahne'); if (sahne && sahne.scrollIntoView) sahne.scrollIntoView({ block: 'nearest', behavior: azHareket ? 'auto' : 'smooth' });
+    const sahne = kap.querySelector('.sahne');
+    if (sahne && !sahne.classList.contains('yapiskan') && sahne.scrollIntoView) sahne.scrollIntoView({ block: 'nearest', behavior: azHareket ? 'auto' : 'smooth' });
   }
 
+  let acilis = 0;
   function deneyAc(id) {
+    const benim = ++acilis;
+    if (aktif) { aktif.durdur(); aktif = null; }
+    if (!kurucu(id) && modulMu(id)) {
+      const d = DENEYLER.find(x => x.id === id);
+      el.innerHTML = `<a class="geri" href="#deney">Tüm deneyler</a><h1>${U.kacis(d.ad)}</h1><p class="bos">Deney hazırlanıyor…</p>`;
+      hazirla(id).then(() => { if (benim === acilis && el.querySelector('h1')) deneyKur(id); })
+        .catch(e => { if (benim === acilis) el.innerHTML = `<a class="geri" href="#deney">Tüm deneyler</a><div class="hata-kutu" role="alert">Deney yüklenemedi: ${U.kacis(e.message)}. Bağlantı gelince sayfayı yenile.</div>`; });
+      return;
+    }
+    deneyKur(id);
+  }
+  function deneyKur(id) {
     const k = kurucu(id);
     if (!k) { listeAc(); return; }
     if (aktif) { aktif.durdur(); aktif = null; }
@@ -618,16 +670,13 @@
     el.innerHTML = `<a class="geri" href="#deney">Tüm deneyler</a><h1>${U.kacis(d.ad)}</h1>
       ${neHtml(r)}
       <div id="deneyKap" data-deney="${id}"></div>
-      ${rehberHtml(id)}
       ${dersHtml(r)}`;
     const kap = el.querySelector('#deneyKap');
     kurulanKok = kap;
     try { aktif = k(kap) || null; } finally { kurulanKok = null; }
-    aciklamaYerlestir(kap, aciklamaHtml(r));
+    ekleriYerlestir(kap, rehberHtml(id) + aciklamaHtml(r));
     erisilebilir(kap, d.ad);
     sozlukIsaretle(el.querySelector('.dn-ne'));
-    sozlukIsaretle(el.querySelector('.rehber'));
-    el.querySelectorAll('.rh-uygula').forEach(b => b.addEventListener('click', () => rehberUygula(kap, id, Number(b.dataset.i))));
     window.scrollTo(0, 0);
   }
   /* Ekran okuyucu: kaydırıcı değeri çıktı kutusundaki metinle okunsun, ölçümler duyurulsun, kanvasın adı olsun */
@@ -656,17 +705,24 @@
   function listeAc() {
     if (aktif) { aktif.durdur(); aktif = null; }
     const gruplar = [];
-    DENEYLER.forEach(d => { if (!kurucu(d.id)) return; let g = gruplar.find(x => x.ad === d.grup); if (!g) { g = { ad: d.grup, ls: [] }; gruplar.push(g); } g.ls.push(d); });
+    DENEYLER.forEach(d => { if (!kurucu(d.id) && !d.modul) return; let g = gruplar.find(x => x.ad === d.grup); if (!g) { g = { ad: d.grup, ls: [] }; gruplar.push(g); } g.ls.push(d); });
     el.innerHTML = `<h1>Deneyler</h1>
       <p class="alt-baslik">Her deneyin başında ne olduğu yazar; “Ekranda ne var?” her şeklin anlamını, “Neler dene” ne yapacağını, ne görmen gerektiğini ve nedenini söyler.</p>
-      ${gruplar.map(g => `<h2 class="unite-bas">${U.kacis(g.ad)}</h2><ul class="deney-liste">${g.ls.map(d => `<li><a href="#deney/${d.id}"><b>${U.kacis(d.ad)}</b><span>${U.kacis(d.oz)}</span>${U.diziOku('rehber_' + d.id).length ? `<span class="rozet iyi">${U.diziOku('rehber_' + d.id).length}/${(R[d.id] && R[d.id].adimlar.length) || 0} adım</span>` : ''}</a></li>`).join('')}</ul>`).join('')}`;
+      ${gruplar.map(g => `<h2 class="unite-bas">${U.kacis(g.ad)}</h2><ul class="deney-liste">${g.ls.map(d => `<li><a href="#deney/${d.id}"><b>${U.kacis(d.ad)}</b><span>${U.kacis(d.oz)}</span>${U.diziOku('rehber_' + d.id).length ? `<span class="rozet iyi">${U.diziOku('rehber_' + d.id).length}${R[d.id] && R[d.id].adimlar ? '/' + R[d.id].adimlar.length : ''} adım</span>` : ''}</a></li>`).join('')}</ul>`).join('')}`;
   }
 
   async function ilk(kok) {
     el = kok;
+    el.addEventListener('click', e => {
+      const b = e.target.closest('.rh-uygula'); if (!b) return;
+      const kap = el.querySelector('#deneyKap'); if (kap) rehberUygula(kap, kap.dataset.deney, Number(b.dataset.i));
+    });
+    let bekle = null;
+    window.addEventListener('resize', () => { clearTimeout(bekle); bekle = setTimeout(() => yapiskanAyarla(el.querySelector('#deneyKap')), 150); });
     el.innerHTML = '<p class="bos">Deneyler hazırlanıyor…</p>';
     try {
-      [F, R] = await Promise.all([U.veri('fizik'), U.veri('deney_rehber').catch(() => ({}))]);
+      const [f, r] = await Promise.all([U.veri('fizik'), U.veri('deney_rehber').catch(() => ({}))]);
+      F = f; R = Object.assign({}, r, R);            // ders içinde önceden yüklenen modül rehberleri korunur
       U.veri('dersler').then(D => { (D.dersler || []).forEach(x => { dersAdlari[x.id] = x.baslik; }); el.querySelectorAll('.deney-ders a[data-ders]').forEach(a => { a.textContent = dersAdi(a.dataset.ders); }); }).catch(() => {});
     } catch (e) {
       el.innerHTML = '<div class="hata-kutu" role="alert">Fizik verisi yüklenemedi: ' + U.kacis(e.message) + '. Başka bir sekmeye geçip dönünce yeniden denenir.</div>'; return false;
@@ -682,6 +738,7 @@
   /* Ders içine gömülü deney: fizik verisini yükler, deneyi kutuya kurar; {durdur} döndürür */
   async function gom(kap, id) {
     if (!F) [F, R] = await Promise.all([U.veri('fizik'), U.veri('deney_rehber').catch(() => ({}))]);
+    if (!kurucu(id)) await hazirla(id);
     const k = kurucu(id);
     if (!k) throw new Error('deney yok: ' + id);
     /* Deneyler bölümünde aynı deney kuruluysa (gizli de olsa) kaldır: aynı kimlikli öğeler iki kez olmasın.

@@ -6,8 +6,12 @@ const fs = require('fs');
 const path = require('path');
 const { disAgiKes, kok } = require('./yardim');
 
-const DENEYLER = ['kepler', 'yorunge', 'gelgit', 'tayf', 'evreler', 'gecis', 'yildiz', 'karadelik', 'gorelilik', 'hubble'];
+/* Eski on deneyin rehberi veri/deney_rehber.json'da; modül deneylerininki veri/deney/<kimlik>.json'un "rehber" alanında.
+   DENEY=kimlik ortam değişkeniyle yalnız bir deney sınanır (yeni deney yazarken). */
 const R = JSON.parse(fs.readFileSync(path.join(kok, 'veri/deney_rehber.json'), 'utf8'));
+const MODUL_KLS = path.join(kok, 'veri/deney');
+(fs.existsSync(MODUL_KLS) ? fs.readdirSync(MODUL_KLS) : []).filter(f => f.endsWith('.json')).forEach(f => { R[f.slice(0, -5)] = JSON.parse(fs.readFileSync(path.join(MODUL_KLS, f), 'utf8')).rehber; });
+const DENEYLER = Object.keys(R).filter(id => !process.env.DENEY || process.env.DENEY.split(',').includes(id));
 const DERS = new Set(JSON.parse(fs.readFileSync(path.join(kok, 'veri/dersler.json'), 'utf8')).dersler.map(d => d.id));
 
 async function kur(page, ek) {
@@ -27,7 +31,7 @@ async function kontrolDenetimi(page) {
   return page.evaluate(() => {
     const kap = document.getElementById('deneyKap');
     const lejant = [...kap.querySelectorAll('.dn-kontroller li[data-kontrol]')].map(li => li.dataset.kontrol);
-    const ogeler = [...kap.querySelectorAll('input, button, select')].filter(g => !g.closest('.dn-acik'));
+    const ogeler = [...kap.querySelectorAll('input, button, select')].filter(g => !g.closest('.dn-ek'));
     const eksik = ogeler.filter(g => !lejant.some(s => g.matches(s) || g.closest(s))).map(g => g.id || g.textContent.trim() || g.outerHTML.slice(0, 60));
     const fazla = lejant.filter(s => !kap.querySelector(s));
     return { eksik, fazla, sayi: ogeler.length, lejant: lejant.length };
@@ -51,7 +55,7 @@ test('Veri: her deneyde açıklama alanları dolu, kaynaklı, dersler var olan d
     expect(r.adimlar.length, id + ' adım').toBeLessThanOrEqual(8);
     r.adimlar.forEach((a, i) => { expect(a.yap && a.gozle && a.neden, id + ' ' + i).toBeTruthy(); });
     expect(r.dersler.length, id).toBeGreaterThan(0);
-    r.dersler.forEach(d => { expect(DERS.has(d), id + ' ' + d).toBe(true); expect(Number(d.slice(1)), d).toBeLessThanOrEqual(19); });
+    r.dersler.forEach(d => { expect(DERS.has(d), id + ' ' + d).toBe(true); expect(Number(d.slice(1)), d).toBeLessThanOrEqual(24); });
     expect(JSON.stringify(r), id + ' OpenStax yok').not.toMatch(/openstax/i);
   }
 });
@@ -89,11 +93,14 @@ test.describe('Telefon (412 px)', () => {
         const d = page.locator(kat);
         await expect(d).not.toHaveAttribute('open', /.*/);
         await expect(d.locator('.dn-ic')).toBeHidden();
-        const once = await cv.evaluate(c => c.getBoundingClientRect().top + scrollY);
+        /* yapışkan kanvas (simulasyon.js yapiskanAyarla) kaydırınca üstte kalır; değilse sayfadaki yeri değişmez */
+        const yer = () => cv.evaluate(c => c.closest('.sahne').classList.contains('yapiskan') ? 'yapiskan' : Math.round(c.getBoundingClientRect().top + scrollY));
+        const once = await yer();
         await d.locator('summary').click();
         await expect(d).toHaveAttribute('open', '');
         await expect(d.locator('.dn-ic')).toBeVisible();
-        expect(await cv.evaluate(c => c.getBoundingClientRect().top + scrollY), id + kat).toBeCloseTo(once, 0);
+        expect(await yer(), id + kat).toBe(once);
+        if (once === 'yapiskan') await expect(cv, id + kat + ' yapışkan kanvas görünür').toBeInViewport();
         expect((await d.locator('summary').boundingBox()).height, id + kat + ' dokunma hedefi').toBeGreaterThanOrEqual(44);
       }
       await expect(page.locator('#dnGercek .dn-gercek p').first()).toHaveText(R[id].gercek);
@@ -152,7 +159,7 @@ test.describe('Telefon (412 px)', () => {
     await kur(page);
     await page.goto('/index.html#deney');
     const oz = await page.locator('.deney-liste a > span:not(.rozet)').allTextContents();
-    expect(oz.length).toBe(10);
+    expect(oz.length).toBe(20);
     oz.forEach(s => expect(s.length, s).toBeGreaterThan(40));
   });
 });
