@@ -4,14 +4,19 @@
   "yeni": true,
   "baslik": "Beyaz Delikler, Solucan Delikleri ve Zaman Yolculuğu",
   "ozet": "Genel göreliliğin denklemleri, hiçbir şeyin giremediği beyaz deliklere, uzayın iki ucunu birleştiren solucan deliklerine ve hatta geçmişe dönen yollara izin veriyor. Bu derste bu çözümlerin nereden çıktığını, neden hiçbirinin gözlenmediğini, geleceğe yolculuğun neden kesin ve sıradan, geçmişe yolculuğun ise neden derin bir bilmece olduğunu, 2022'nin “kuantum bilgisayarda solucan deliği” haberini ve Interstellar'ın ne kadarının bilim olduğunu öğreneceksin. Her fikri dört kesinlik düzeyiyle ayıracağız.",
-  "on_bilgi": ["d16", "d25", "d26", "d52"],
+  "on_bilgi": [
+    "d16",
+    "d25",
+    "d26",
+    "d52"
+  ],
   "bolumler": [
     {
       "baslik": "Denklemin izin verdiği, doğanın yaptığı",
       "paragraflar": [
         "Genel göreliliğin denklemlerine bir kütle ve bir başlangıç durumu verirsin, denklemler de sana uzay-zamanın biçimini verir. Bu biçimlere çözüm denir. Bazı çözümler doğada karşılığını buldu. d16'da gördüğün gibi Schwarzschild 1916'da kara delik çözümünü bulduğunda bu, uzun süre matematiğin bir garipliği sayıldı; sonra Penrose kara deliklerin gerçekten oluşabileceğini gösterdi, bugün de onları tartıyor, fotoğraflıyor ve birleşmelerini duyuyoruz. Ama her çözümün başına bu gelmez. Bir denklemin bir şeye izin vermesi, doğanın onu yaptığı anlamına gelmez.",
         "Bu ders tam bu ayrımın dersi. Beyaz delikler, solucan delikleri ve geçmişe dönen yollar, genel göreliliğin geçerli çözümleri olarak kâğıt üstünde vardır. Ama her biri ya özel başlangıç koşulları, ya kararsızlık, ya da bilinen hiçbir maddede bulunmayan özellikler ister. Bu yüzden hepsini d50'de tanıştığın dört düzeyle dikkatle etiketleyeceğiz: “Gözlemle kesinleşmiş”, “Güçlü kanıtlı ama açık sorulu”, “Kuram / hipotez” ve “Spekülasyon”. Göreceğin gibi bu dersin başlıklarının çoğu dördüncü düzeyde durur; ama biri, geleceğe yolculuk, şaşırtıcı biçimde birinci düzeydedir.",
-        "İlginç bir rastlantı: Interstellar filminin bilim danışmanı Kip Thorne, filmin bilimini anlattığı kitabında her bölümü benzer bir ölçekle etiketledi. Space.com'un kitap incelemesine göre Thorne her bölümdeki bilimi “doğru”, “bilgiye dayalı tahmin” ya da “spekülasyon” diye işaretler. Thorne, 2017 Nobel Fizik Ödülü'nü LIGO'daki katkısıyla paylaşan fizikçidir (d16) ve geçilebilir solucan delikleri üzerine en çok atıf alan makalelerden birinin de yazarıdır. Bilim ile bilim kurgu arasındaki çizgiyi en iyi bilenlerden biri, çizginin varlığını açıkça söylemeyi seçmiş. Biz de öyle yapacağız: Interstellar'a dersin sonunda geri döneceğiz."
+        "İlginç bir rastlantı: Interstellar filminin bilim danışmanı Kip Thorne, filmin bilimini anlattığı kitabında her bölümü benzer bir ölçekle etiketledi. Space.com'un kitap incelemesine göre Thorne her bölümdeki bilimi “doğru”, “bilgiye dayalı tahmin” ya da “spekülasyon” diye işaretler. Thorne, 2017 Nobel Fizik Ödülü'nü LIGO'daki katkısıyla paylaşan fizikçidir (d16) ve bu dersin ilerleyen bölümlerinde göreceğin 1988 tarihli geçilebilir solucan deliği makalesinin de yazarlarındandır. Bilim ile bilim kurgu arasındaki çizgiyi en iyi bilenlerden biri, çizginin varlığını açıkça söylemeyi seçmiş. Biz de öyle yapacağız: Interstellar'a dersin sonunda geri döneceğiz."
       ],
       "akilda": "Genel göreliliğin bir çözümü olmak, doğada var olmak demek değildir. Beyaz delikler, solucan delikleri ve geçmişe yolculuk kâğıt üstünde mümkün, gözlemde yok; geleceğe yolculuk ise ölçülmüş bir gerçektir."
     },
@@ -49,7 +54,7 @@
       "baslik": "Kara delikten beyaz deliğe sıçrama",
       "paragraflar": [
         "Genel göreliliğe göre bir kara deliğin merkezinde yoğunluğun sonsuz olduğu bir tekillik vardır. d26'nın sonunda gördüğün gibi fizikçilerin çoğu bunu kuramın orada geçerliliğini yitirdiğinin işareti sayar. Peki kuantum etkileri tekilliği önlerse ne olur? Hal Haggard ile Carlo Rovelli, 3 Temmuz 2014'te arXiv'e konan ve sonra Physical Review D'de yayımlanan “Kara delik havai fişekleri” adlı makalede bir senaryo önerdi. Özetlerine göre sonlu bir bölgenin dışında Einstein denklemlerini sağlayan klasik bir uzay-zaman yapısı vardır; kuantum etkileri uzun bir süre boyunca birikebilir ve bir kara delik kuantum tünellemesiyle bir beyaz deliğe dönüşebilir.",
-        "Kuantum tünellemesini d28'de, Güneş'in yanmasını sağlayan olay olarak görmüştün: klasik olarak aşılamayan bir engelin, kuantum fiziğinde küçük bir olasılıkla aşılabilmesi. Senaryoda çöken madde tekilliğe ulaşmadan bir “sıçrama” yapar; dışarıdan bakan için bu, çok uzun bir süre kara delik gibi görünen bir cismin sonunda beyaz deliğe dönüşüp içindekini geri vermesi demektir. Wikipedia'ya göre Rovelli'nin 2018 tarihli bir makalesi, uzay ve zamanın, Einstein denklemlerinin kuantum etkilerince çiğnendiği kısa bir geçiş bölgesinden geçerek devam ettiğini savunur. Bu çalışmalar, d53'te göreceğin döngü kuantum kütleçekimi fikirleriyle bağlantılıdır.",
+        "Kuantum tünellemesini d28'de, Güneş'in yanmasını sağlayan olay olarak görmüştün: klasik olarak aşılamayan bir engelin, kuantum fiziğinde küçük bir olasılıkla aşılabilmesi. Senaryoda çöken madde tekilliğe ulaşmadan bir “sıçrama” yapar; dışarıdan bakan için bu, çok uzun bir süre kara delik gibi görünen bir cismin sonunda beyaz deliğe dönüşüp içindekini geri vermesi demektir. Wikipedia'ya göre Rovelli'nin 2018 tarihli bir makalesi, uzay ve zamanın, Einstein denklemlerinin kuantum etkilerince çiğnendiği kısa bir geçiş bölgesinden geçerek devam ettiğini savunur. Martin-Dussaud'nun 2024 tarihli derlemesine göre döngü kuantum kütleçekimi, spin köpüğü denen biçimiyle, sıçrama süresini hesaplamak için bir çerçeve sunar; bu yaklaşımı d53'te göreceksin.",
         "Senaryonun çekici yanı, d52'deki bilgi paradoksuna bir yanıt önermesidir. Haggard ve Rovelli'nin özeti senaryonun bilgi bilmecesi tartışmasını kökten değiştirdiğini yazar. 2024'te Pierre Martin-Dussaud'nun bir makalesi, bu senaryoda bilginin buharlaşmanın sonunda oluşan küçük bir beyaz delikte saklanıp sonra geri verilebileceğini savunur. Aynı makale sıçramanın ne kadar süreceğine dair tahminlerin ayrıştığını da aktarır: Haggard ve Rovelli'nin tahmini kütlenin karesiyle büyür, d52'de gördüğün Hawking buharlaşması ise kütlenin küpüyle. Tahminler arasında üstel olarak çok daha uzun süreler veren hesaplar da var.",
         "Eleştiriler de ciddi. Barceló, Carballo-Rubio ve Garay, 2015 sonunda arXiv'e konan bir makalede, uzun süreli kara delikten beyaz deliğe geçişlerin önceki bölümdeki kararsızlık yüzünden sağlıksız olduğunu savundu: çok az bir madde birikimi bile dışarı çıkacak maddeyi yakalayıp patlamayı önler. Onlara göre ancak çok hızlı geçişler, Schwarzschild yarıçapını ışığın kabaca iki kez geçme süresi kadar kısa olanlar, sağlam kalır; aksi hâlde kara delikler kara kalır. Kesinlik düzeyi: kara delikten beyaz deliğe sıçrama “Spekülasyon”; tutarlı bir kuantum kütleçekimi kuramı yok, gözlemsel bir işaret de yok."
       ],
@@ -82,9 +87,9 @@
     {
       "baslik": "Geçilebilir solucan delikleri ve egzotik madde",
       "paragraflar": [
-        "1980'lerin ortasında bir roman fizik tarihine karıştı. Morris ve Thorne'un 1988'de American Journal of Physics'te yayımlanan makalesinin özeti, çalışmanın Carl Sagan'ın Contact romanına değindiğini ve romanın, çoğu bilim kurgunun aksine, yıldızlararası yolculuğu 1986'nın fizik bilgisiyle uyumlu biçimde ele aldığını yazar. Makalenin sorusu öğretici bir soruydu: bir insanın gerçekten içinden geçebileceği bir solucan deliği için genel göreliliğe göre ne gerekir? Özette kara deliklerin ya da Schwarzschild solucan deliklerinin hızlı yolculuk için kullanılmasına karşı birçok itiraz sıralanır.",
-        "Morris ve Thorne, Einstein denklemlerinin yeni bir çözüm ailesini sundu: ilke olarak insanların geçebileceği solucan delikleri. Özete göre bunun için solucan deliğinin boğazında olay ufku olmamalıdır. Bu koşul ve Einstein denklemleri, boğazı açık tutan malzemeye aşırı bir şart koyar: boğazdaki malzemenin muazzam bir çekme gerilimi taşıması ve bu gerilimin malzemenin kütle-enerji yoğunluğunu aşması gerekir. Gerilimin büyüklüğü, özetteki tahmine göre en kütleli nötron yıldızlarının merkezindeki basınç mertebesindedir; boğaz genişledikçe azalır. Bilinen hiçbir malzeme bu özelliğe sahip değildir.",
-        "Böyle bir malzemeye egzotik madde denir. Wikipedia'ya göre geçilebilir bir solucan deliği, eksi enerjili bir madde gerektirir ve özete göre bu malzeme, genel görelilikteki birçok önemli teoremin dayandığı “enerji koşullarının” hepsini çiğner. Yine de yazarlar, böyle bir malzemenin bugün kesinlikle dışlanamayacağını ve kuantum alan kuramının buna dair ilgi çekici ipuçları verdiğini de not eder. En bilinen ipucu Casimir etkisidir: Wikipedia'ya göre kuantum alan kuramı, Casimir etkisinde olduğu gibi, uzayın belirli bölgelerinde enerji yoğunluğunun eksi olmasına izin verir. Ancak laboratuvarda ölçülen Casimir etkisi, birbirine çok yakın iki levha arasındaki son derece küçük bir etkidir; bir boğazı açık tutmaya yetecek bir şey değildir.",
+        "Bir roman fizik tarihine karıştı. Morris ve Thorne'un 1988'de American Journal of Physics'te yayımlanan makalesinin özeti, çalışmanın Carl Sagan'ın Contact romanına değindiğini ve romanın, çoğu bilim kurgunun aksine, yıldızlararası yolculuğu 1986'nın fizik bilgisiyle uyumlu biçimde ele aldığını yazar. Makalenin sorusu öğretici bir soruydu: bir insanın gerçekten içinden geçebileceği bir solucan deliği için genel göreliliğe göre ne gerekir? Özette kara deliklerin ya da Schwarzschild solucan deliklerinin hızlı yolculuk için kullanılmasına karşı birçok itiraz sıralanır.",
+        "Morris ve Thorne, Einstein denklemlerinin yeni bir çözüm ailesini sundu: ilke olarak insanların geçebileceği solucan delikleri. Özete göre bunun için solucan deliğinin boğazında olay ufku olmamalıdır. Bu koşul ve Einstein denklemleri, boğazı açık tutan malzemeye aşırı bir şart koyar: boğazdaki malzemenin muazzam bir çekme gerilimi taşıması ve bu gerilimin malzemenin kütle-enerji yoğunluğunu aşması gerekir. Özetteki tahmine göre boğazın çevresi 20 km kadarken gereken gerilim, en kütleli nötron yıldızlarının merkezindeki basınç mertebesindedir; boğaz büyüdükçe çevrenin karesiyle azalır. Bilinen hiçbir malzeme bu özelliğe sahip değildir.",
+        "Böyle bir malzemeye egzotik madde denir. Wikipedia'ya göre geçilebilir bir solucan deliği, eksi enerjili bir madde gerektirir ve özete göre bu malzeme, genel görelilikteki birçok önemli teoremin dayandığı “enerji koşullarının” hepsini çiğner. Yine de yazarlar, böyle bir malzemenin bugün kesinlikle dışlanamayacağını ve kuantum alan kuramının buna dair ilgi çekici ipuçları verdiğini de not eder. En bilinen ipucu Casimir etkisidir: Wikipedia'ya göre kuantum alan kuramı, Casimir etkisinde olduğu gibi, uzayın belirli bölgelerinde enerji yoğunluğunun eksi olmasına izin verir. Ama Casimir etkisinin varlığı, bir solucan deliğini açık tutacak egzotik maddenin gerçekten bulunduğunu göstermez; aradaki uçurum hiçbir deneyle kapatılmış değil.",
         "Kesinlik düzeyleri: Morris-Thorne çözümü matematiksel olarak geçerlidir; bu yüzden geçilebilir solucan delikleri genel görelilik içinde “Kuram / hipotez” sayılabilecek bir çözüm ailesidir. Ama gerçekte var olmaları, kozmik ölçekte egzotik madde gerektirdiği için “Spekülasyon” düzeyindedir. Wikipedia'nın deyişiyle solucan delikleri genel görelilikle tutarlıdır, ama gerçekten var olup olmadıkları bilinmiyor; şimdiye kadar hiçbir gözlemsel kanıt yok."
       ],
       "akilda": "Morris ve Thorne (1988) Sagan'ın Contact romanından yola çıkarak geçilebilir solucan deliği çözümleri sundu. Boğazı açık tutmak için gerilimi enerji yoğunluğunu aşan, enerji koşullarını çiğneyen egzotik madde gerekir. Var olmaları “Spekülasyon”."
@@ -102,8 +107,8 @@
     {
       "baslik": "2022'nin “kuantum bilgisayarda solucan deliği” haberi",
       "paragraflar": [
-        "1 Aralık 2022'de Nature dergisinde yayımlanan bir makale büyük ses getirdi. Daniel Jafferis, Maria Spiropulu, Joseph Lykken ve Google'ın kuantum ekibinden araştırmacıların da aralarında bulunduğu bir grup, Google'ın Sycamore kuantum işlemcisinde “geçilebilir solucan deliği dinamiği” gözlediklerini bildirdi. Pek çok haber başlığı bunu “bilim insanları bir solucan deliği yarattı” diye verdi. Önce gerçekte ne yapıldığına bakalım, sonra ne yapılmadığına.",
-        "Deneyin temeli d28'de gördüğün kuantum ışınlamadır: bir kuantum durumunun, kendisi ölçülmeden başka bir yere aktarılması. Ekip, kütleçekimiyle holografik bir ikizi olduğu düşünülen SYK modeli denen bir kuantum sistemini aldı. Caltech'in duyurusuna göre tam model bugünkü donanıma sığmadığı için, sıradan bilgisayarlarda makine öğrenmesiyle basitleştirilmiş bir “bebek” modeli üretildi. Kobrin ve arkadaşlarının özetine göre bu öğrenilmiş model yedi Majorana fermiyonundan ve beş terimden oluşuyordu; bir başka çözümlemeye göre protokol dokuz kübit kullandı. Bir sisteme bir kübit sokuldu ve bilginin öbür sistemden çıktığı gözlendi. Caltech'e göre solucan deliğine benzeyen imzalar yalnızca eksi enerjinin karşılığı olan bir işlem uygulandığında görüldü.",
+        "1 Aralık 2022'de Nature dergisinde yayımlanan bir makale büyük ses getirdi. Daniel Jafferis, Maria Spiropulu, Joseph Lykken ve Google'ın kuantum ekibinden araştırmacıların da aralarında bulunduğu bir grup, Google'ın Sycamore kuantum işlemcisinde “geçilebilir solucan deliği dinamiği” gözlediklerini bildirdi. Reuters'ın haberinin başlığı, bilim insanlarının “bebek bir solucan deliği” kurduğunu ve bilim kurgunun gerçeğe yaklaştığını söylüyordu. Önce gerçekte ne yapıldığına bakalım, sonra ne yapılmadığına.",
+        "Deneyin temeli d28'de gördüğün kuantum ışınlamadır: bir kuantum durumunun, kendisi ölçülmeden başka bir yere aktarılması. Ekip, kütleçekimiyle holografik bir ikizi olduğu düşünülen SYK modeli denen bir kuantum sistemini aldı. Caltech'in duyurusuna göre tam model bugünkü donanıma sığmadığı için, sıradan bilgisayarlarda makine öğrenmesiyle basitleştirilmiş bir “bebek” modeli üretildi. Kobrin ve arkadaşlarının özetine göre bu öğrenilmiş model, Majorana fermiyonu denen yedi kuramsal yapı taşından ve beş terimden oluşuyordu; bir başka çözümlemeye göre protokol dokuz kübit kullandı. Bir sisteme bir kübit sokuldu ve bilginin öbür sistemden çıktığı gözlendi. Caltech'e göre solucan deliğine benzeyen imzalar yalnızca eksi enerjinin karşılığı olan bir işlem uygulandığında görüldü.",
         "Caltech'in duyurusu açıktır: deney gerçek bir solucan deliği, yani uzay ve zamanda bir yarık yaratmadı. Spiropulu'ya göre çalışma kuantum kütleçekiminin doğrudan sınamalarının yerini tutmaz; kuantum kütleçekimi fikirleri için bir deneme tezgâhıdır. Yani olan şu: kuantum bilgisayarda ışınlama protokolü çalıştırıldı ve sonuçları, matematiksel bir eşleme altında, geçilebilir bir solucan deliğinden geçen bir mesaj gibi okunabilecek biçimde yorumlandı. Bizim uzay-zamanımızda hiçbir solucan deliği açılmadı; hiçbir şey hiçbir yere kestirmeden gitmedi.",
         "Eleştiri birkaç ay sonra geldi. Bryce Kobrin, Thomas Schuster ve Norman Yao, 15 Şubat 2023'te arXiv'e konan yorumlarında üç bulgu sıraladı: öğrenilmiş modelin ısıllaşmadığını, yani kütleçekimi benzeri modellerin beklenen davranışını göstermediğini; ışınlama sinyalinin yalnızca makine öğrenmesinde eğitim için kullanılan işlemler için SYK modeline benzediğini; ve kütleçekiminin imzası sayılan bir özelliğin aslında bu kadar küçük ve terimleri birbiriyle değişen modellerin genel bir özelliği olduğunu. Jafferis ve arkadaşları yanıtlarında yaklaşımlarını savundu; deneylerini “geçilebilir bir solucan deliği olarak yorumlanabilecek en küçük sistem örneği” diye tanımladılar ve öğrenilmiş modelin davranışının her zaman solucan deliği dışı bir açıklamasının da bulunduğunu kabul ettiler. Kesinlik düzeyleri: deney gerçekten yapıldı; “solucan deliği dinamiği” yorumu tartışmalı; bir solucan deliğinin yaratıldığı ise yanlış."
       ],
@@ -127,7 +132,7 @@
       "baslik": "Geçmişe yolculuk: kapalı zaman benzeri eğriler",
       "paragraflar": [
         "d25'te uzay-zamanda her nesnenin bir dünya çizgisi, yani olaylardan oluşan bir yolu olduğunu görmüştün. Işıktan yavaş giden her şeyin dünya çizgisine zaman benzeri denir. Geçmişe yolculuk, kendi üzerine kapanan bir zaman benzeri dünya çizgisi demektir: hep ileriye, ışıktan yavaş giderek başladığın olaya, hatta ondan öncesine dönmek. Böyle yollara kapalı zaman benzeri eğri denir. Soru şu: genel görelilik bunlara izin verir mi?",
-        "İzin veren çözümler var. En ünlüsü mantıkçı Kurt Gödel'in 1949'da bulduğu, bütünüyle dönen bir evren çözümüdür; bu çözümde kendi üstüne kapanan dünya çizgileri bulunur ve nedensellik çiğnenir. Bir başkası Tipler silindiri: kendi ekseni çevresinde dönen, sonsuz uzunlukta, kütleli bir silindirin uzay-zamanı sürüklemesiyle kapalı zaman benzeri eğriler oluşur. Pitanga'nın makalesinin aktardığına göre Tipler, sonlu bir silindirin de geçmişe yolculuğa izin verebileceğini önermiş, ama bunu kanıtlamamıştır. Bu çözümlerin ortak sorunu, ya evrenin bütünüyle dönmesi gibi gözlenen evrenimize uymayan koşullar, ya da sonsuz uzunlukta cisimler gibi gerçekleşemez yapılar istemeleridir.",
+        "İzin veren çözümler var. En ünlüsü Kurt Gödel'in 1949'da bulduğu, bütünüyle dönen bir evren çözümüdür; bu çözümde kendi üstüne kapanan dünya çizgileri bulunur ve nedensellik çiğnenir. Bir başkası Tipler silindiri: kendi ekseni çevresinde dönen, sonsuz uzunlukta, kütleli bir silindirin uzay-zamanı sürüklemesiyle kapalı zaman benzeri eğriler oluşur. Pitanga'nın makalesinin aktardığına göre Tipler, sonlu bir silindirin de geçmişe yolculuğa izin verebileceğini önermiş, ama bunu kanıtlamamıştır. Bu çözümlerin ortak sorunu, ya evrenin bütünüyle dönmesi gibi gözlenen evrenimize uymayan koşullar, ya da sonsuz uzunlukta cisimler gibi gerçekleşemez yapılar istemeleridir.",
         "En somut öneri, bir önceki bölümlerdeki solucan deliklerinden gelir. Wikipedia'ya göre Morris, Thorne ve Yurtsever 1988'de, ağızlarından biri hızlandırılarak uzayda kestirme sağlayan bir solucan deliğinin zamanda kestirme sağlayan bir solucan deliğine nasıl çevrilebileceğini hesapladı. Fikir, ikizler paradoksunu solucan deliğinin ağızlarına uygulamaktır: yolculuğa çıkan ağız, evde kalan ağızdan daha az yaşlanır. Boğaz ise iki ağzı birbirine kendi içinden bağlar. Sonuçta iki ağız arasında bir saat farkı birikir ve bu fark bir zaman makinesine dönüşür. Aşağıdaki örnek bunu d25'teki sayılarla yapıyor.",
         "İtirazlar da hemen geldi. Wikipedia'ya göre Matt Visser 1993'te, saat farkı olan iki ağzın nedenselliği çiğneyecek kadar birbirine yaklaştırılamayacağını savundu; 1997'de ise “Roma halkası” denen bir düzenlemenin yine de zaman makinesi gibi davranabileceğini önerdi. Hawking'in 1992 makalesinin özetine göre de sonlu uzunlukta kozmik sicimlerle kapalı zaman benzeri eğriler yaratılamaz. Kesinlik düzeyleri: kapalı zaman benzeri eğriler içeren çözümlerin varlığı matematiksel bir gerçektir; evrenimizde gerçekleşebilir bir zaman makinesi ise “Spekülasyon”, üstelik ciddi itirazlarla."
       ],
@@ -160,9 +165,9 @@
     {
       "baslik": "Interstellar: bilim nerede biter, kurgu nerede başlar?",
       "paragraflar": [
-        "2014 yapımı Interstellar, bu dersin bütün konularını beyaz perdeye taşıdı: dev bir kara delik, bir solucan deliği, zaman genişlemesi ve beşinci boyuttan gelen mesajlar. Space.com'un incelemesine göre Kip Thorne projeye 2005'te, eski dostu yapımcı Lynda Obst'un elinde yalnızca bir fikir tohumu varken katıldı ve çekimler boyunca senarist Jonathan Nolan'ın ve yönetmen Christopher Nolan'ın bilim danışmanı olarak kaldı. Filmi bölüm bölüm, bu dersin kesinlik düzeyleriyle okuyalım.",
-        "Gargantua denen kara deliğin görüntüsü bilimin en sağlam yanıdır. James, von Tunzelmann, Franklin ve Thorne 2015'te Classical and Quantum Gravity dergisinde, görsel efekt şirketi Double Negative için yazdıkları DNGR adlı bir yazılımı anlattı. Yazılım, dönen bir kara deliğin, yani d16'da gördüğün Kerr çözümünün, eğri uzay-zamanında ışık demetlerinin yolunu izler. Makalenin özetine göre Interstellar, bir kara deliği yakındaki birinin gerçekten göreceği gibi göstermeye çalışan ilk Hollywood filmidir. Yine de sanat bazı yerlerde ağır bastı: Steinle ve Olson'ın bir sunum özetine göre Thorne, yapımcıların birikim diskini gösterirken bilimsel tutarlılık yerine görsel zarafeti seçtiğini belirtmiştir.",
-        "Miller gezegenindeki zaman farkı ikinci durak. Space.com'a göre Christopher Nolan Thorne'dan bir şey istedi: gezegendeki bir saat, Dünya'daki yedi yıla eşit olmalıydı. Thorne önce bunun imkânsız olduğunu düşündü, çünkü kara deliğe bu kadar yakın dolanan bir gezegen parçalanırdı. Sonra kara delik son derece hızlı dönerse bunun mümkün olabileceğini buldu. Yani bu sahne fizik yasalarıyla uyumludur, ama aşırı ve doğada bulunup bulunmadığı bilinmeyen koşullara dayanır; Thorne'un ölçeğiyle bir “bilgiye dayalı tahmin”, bizim ölçeğimizle “Kuram / hipotez” düzeyinde bir senaryo.",
+        "Interstellar filmi, bu dersin bütün konularını beyaz perdeye taşıdı: dev bir kara delik, bir solucan deliği, zaman genişlemesi ve beşinci boyuttan gelen mesajlar. Space.com'un incelemesine göre Kip Thorne projeye 2005'te, eski dostu yapımcı Lynda Obst'un elinde yalnızca bir fikir tohumu varken katıldı ve çekimler boyunca senarist Jonathan Nolan'ın ve yönetmen Christopher Nolan'ın bilim danışmanı olarak kaldı. Filmi bölüm bölüm, bu dersin kesinlik düzeyleriyle okuyalım.",
+        "Gargantua denen kara deliğin görüntüsü bilimin en sağlam yanıdır. James, von Tunzelmann, Franklin ve Thorne 2015'te Classical and Quantum Gravity dergisinde, görsel efekt şirketi Double Negative için yazdıkları DNGR adlı bir yazılımı anlattı. Yazılım, dönen bir kara deliğin, yani Kerr kara deliğinin, eğri uzay-zamanında ışık demetlerinin yolunu izler. Makalenin özetine göre Interstellar, bir kara deliği yakındaki birinin gerçekten göreceği gibi göstermeye çalışan ilk Hollywood filmidir. Yine de sanat bazı yerlerde ağır bastı: Steinle ve Olson'ın bir sunum özetine göre Thorne, yapımcıların birikim diskini gösterirken bilimsel tutarlılık yerine görsel zarafeti seçtiğini belirtmiştir.",
+        "Miller gezegenindeki zaman farkı ikinci durak. Space.com'a göre Christopher Nolan Thorne'dan bir şey istedi: gezegendeki bir saat, Dünya'daki yedi yıla eşit olmalıydı. Thorne önce bunun imkânsız olduğunu düşündü, çünkü kara deliğe bu kadar yakın dolanan bir gezegen parçalanırdı. Sonra kara delik son derece hızlı dönerse bunun mümkün olabileceğini buldu. Yani bu sahne fizik yasalarıyla uyumludur, ama aşırı ve doğada bulunup bulunmadığı bilinmeyen koşullara dayanır; bizim ölçeğimizle “Kuram / hipotez” düzeyinde bir senaryo.",
         "Solucan deliği ise üçüncü durak ve burada film açıkça spekülasyondur: Morris ve Thorne'un çözümleri gibi geçilebilir bir solucan deliği, bu derste gördüğün gibi bilinmeyen bir egzotik madde ister. Filmin sonundaki dört boyutlu odalar ve geçmişe mesaj gönderme sahneleri ise bugünkü fiziğin söyleyebildiklerinin ötesindedir. Steinle ve Olson'ın sunum özeti filmin bilim kurgu ile bilimsel doğruluk arasında ince bir çizgide yürüdüğünü ve genel olarak her iki tarafta da başarılı olduğunu yazar. Bu ders için en iyi okuma şu olabilir: Interstellar'ı izlerken her sahneye bir kesinlik etiketi yapıştır. Kara deliğin ışığı büküşü: doğru fizik. Gezegendeki zaman farkı: aşırı ama mümkün. Solucan deliği: “Spekülasyon”. Beşinci boyuttan mesaj: bilim kurgu."
       ],
       "ornek": {
@@ -262,26 +267,86 @@
     }
   ],
   "sozluk": [
-    { "terim": "beyaz delik", "tanim": "Dışarıdan girilemeyen ama içinden madde ve ışığın çıkabildiği, zamanda tersine çevrilmiş kara delik çözümü; hiç gözlenmedi." },
-    { "terim": "Kruskal-Szekeres koordinatları", "tanim": "Schwarzschild çözümünün bütün bölgelerini, beyaz delik ve ikinci dış bölge dahil, tek haritada gösteren koordinat seçimi." },
-    { "terim": "ebedî kara delik", "tanim": "Sonsuz geçmişten beri var olduğu varsayılan, içi boş ideal kara delik çözümü; gerçek, çökmeyle doğan kara deliklerden farklıdır." },
-    { "terim": "solucan deliği", "tanim": "Uzay-zamanın iki uzak bölgesini kısa bir boğazla birleştiren kuramsal yapı." },
-    { "terim": "Einstein-Rosen köprüsü", "tanim": "Ebedî Schwarzschild çözümünde iki dış bölgeyi birleştiren, ışığın bile geçemeyeceği kadar hızlı kapanan boğaz." },
-    { "terim": "geçilebilir solucan deliği", "tanim": "Boğazında olay ufku bulunmayan ve ilke olarak içinden geçilebilen, egzotik madde gerektiren solucan deliği çözümü." },
-    { "terim": "egzotik madde", "tanim": "Enerji yoğunluğu eksi olan ya da gerilimi enerji yoğunluğunu aşan, enerji koşullarını çiğneyen varsayımsal madde." },
-    { "terim": "enerji koşulları", "tanim": "Genel görelilikte sıradan maddenin enerji ve basıncının uyduğu varsayılan, birçok teoremin dayandığı koşullar." },
-    { "terim": "Casimir etkisi", "tanim": "Birbirine çok yakın iki levha arasında kuantum alan dalgalanmalarından doğan, bazı bölgelerde eksi enerji yoğunluğuna izin veren küçük etki." },
-    { "terim": "ER = EPR", "tanim": "Dolanık parçacıkların ya da kara deliklerin geçilemez solucan delikleriyle bağlı olabileceğini söyleyen 2013 tarihli öneri." },
-    { "terim": "kara delikten beyaz deliğe sıçrama", "tanim": "Kuantum etkilerinin tekilliği önleyip bir kara deliği uzun sürede beyaz deliğe çevirebileceğini öne süren spekülatif senaryo." },
-    { "terim": "SYK modeli", "tanim": "Kütleçekimiyle holografik bir ikizi olduğu düşünülen, birbiriyle rastgele etkileşen parçacıklardan oluşan kuramsal kuantum modeli." },
-    { "terim": "kapalı zaman benzeri eğri", "tanim": "Hep ışıktan yavaş giderek kendi başlangıç olayına geri dönen, yani geçmişe yolculuğa karşılık gelen dünya çizgisi." },
-    { "terim": "Gödel evreni", "tanim": "Gödel'in 1949'da bulduğu, bütünüyle dönen ve kapalı zaman benzeri eğriler içeren genel görelilik çözümü." },
-    { "terim": "Tipler silindiri", "tanim": "Sonsuz uzunlukta, dönen kütleli bir silindirin uzay-zamanı sürükleyerek kapalı zaman benzeri eğriler oluşturduğu çözüm." },
-    { "terim": "büyükbaba paradoksu", "tanim": "Geçmişe giden birinin kendi varlığını önleyecek bir olaya yol açmasıyla ortaya çıkan mantıksal çelişki." },
-    { "terim": "Polchinski paradoksu", "tanim": "Bir solucan deliğinden geçmişe giden bilardo topunun kendi genç hâlini yolundan saptırmasıyla kurulan, büyükbaba paradoksunun insansız sürümü." },
-    { "terim": "Novikov'un kendi kendini tutarlılık ilkesi", "tanim": "Geçmişe yolculuk mümkünse, yalnızca paradoks yaratmayan, kendi içinde tutarlı olayların gerçekleşebileceğini söyleyen ilke." },
-    { "terim": "kronoloji koruma varsayımı", "tanim": "Hawking'in, fizik yasalarının kapalı zaman benzeri eğrilerin, yani zaman makinelerinin oluşmasını önleyeceğini söyleyen kanıtlanmamış varsayımı." },
-    { "terim": "Cauchy ufku", "tanim": "Bir uzay-zamanda zaman yolculuğunun mümkün olmaya başladığı ve geçmişin geleceği tek başına belirleyemediği sınır." }
+    {
+      "terim": "beyaz delik",
+      "tanim": "Dışarıdan girilemeyen ama içinden madde ve ışığın çıkabildiği, zamanda tersine çevrilmiş kara delik çözümü; hiç gözlenmedi."
+    },
+    {
+      "terim": "Kruskal-Szekeres koordinatları",
+      "tanim": "Schwarzschild çözümünün bütün bölgelerini, beyaz delik ve ikinci dış bölge dahil, tek haritada gösteren koordinat seçimi."
+    },
+    {
+      "terim": "ebedî kara delik",
+      "tanim": "Sonsuz geçmişten beri var olduğu varsayılan, içi boş ideal kara delik çözümü; gerçek, çökmeyle doğan kara deliklerden farklıdır."
+    },
+    {
+      "terim": "solucan deliği",
+      "tanim": "Uzay-zamanın iki uzak bölgesini kısa bir boğazla birleştiren kuramsal yapı."
+    },
+    {
+      "terim": "Einstein-Rosen köprüsü",
+      "tanim": "Ebedî Schwarzschild çözümünde iki dış bölgeyi birleştiren, ışığın bile geçemeyeceği kadar hızlı kapanan boğaz."
+    },
+    {
+      "terim": "geçilebilir solucan deliği",
+      "tanim": "Boğazında olay ufku bulunmayan ve ilke olarak içinden geçilebilen, egzotik madde gerektiren solucan deliği çözümü."
+    },
+    {
+      "terim": "egzotik madde",
+      "tanim": "Enerji yoğunluğu eksi olan ya da gerilimi enerji yoğunluğunu aşan, enerji koşullarını çiğneyen varsayımsal madde."
+    },
+    {
+      "terim": "enerji koşulları",
+      "tanim": "Genel görelilikte sıradan maddenin enerji ve basıncının uyduğu varsayılan, birçok teoremin dayandığı koşullar."
+    },
+    {
+      "terim": "Casimir etkisi",
+      "tanim": "Kuantum alan kuramının, uzayın bazı bölgelerinde enerji yoğunluğunun eksi olmasına izin verdiğini gösteren etki."
+    },
+    {
+      "terim": "ER = EPR",
+      "tanim": "Dolanık parçacıkların ya da kara deliklerin geçilemez solucan delikleriyle bağlı olabileceğini söyleyen 2013 tarihli öneri."
+    },
+    {
+      "terim": "kara delikten beyaz deliğe sıçrama",
+      "tanim": "Kuantum etkilerinin tekilliği önleyip bir kara deliği uzun sürede beyaz deliğe çevirebileceğini öne süren spekülatif senaryo."
+    },
+    {
+      "terim": "SYK modeli",
+      "tanim": "Kütleçekimiyle holografik bir ikizi olduğu düşünülen, Majorana fermiyonlarından kurulu kuramsal kuantum modeli."
+    },
+    {
+      "terim": "kapalı zaman benzeri eğri",
+      "tanim": "Hep ışıktan yavaş giderek kendi başlangıç olayına geri dönen, yani geçmişe yolculuğa karşılık gelen dünya çizgisi."
+    },
+    {
+      "terim": "Gödel evreni",
+      "tanim": "Gödel'in 1949'da bulduğu, bütünüyle dönen ve kapalı zaman benzeri eğriler içeren genel görelilik çözümü."
+    },
+    {
+      "terim": "Tipler silindiri",
+      "tanim": "Sonsuz uzunlukta, dönen kütleli bir silindirin uzay-zamanı sürükleyerek kapalı zaman benzeri eğriler oluşturduğu çözüm."
+    },
+    {
+      "terim": "büyükbaba paradoksu",
+      "tanim": "Geçmişe giden birinin kendi varlığını önleyecek bir olaya yol açmasıyla ortaya çıkan mantıksal çelişki."
+    },
+    {
+      "terim": "Polchinski paradoksu",
+      "tanim": "Bir solucan deliğinden geçmişe giden bilardo topunun kendi genç hâlini yolundan saptırmasıyla kurulan, büyükbaba paradoksunun insansız sürümü."
+    },
+    {
+      "terim": "Novikov'un kendi kendini tutarlılık ilkesi",
+      "tanim": "Geçmişe yolculuk mümkünse, yalnızca paradoks yaratmayan, kendi içinde tutarlı olayların gerçekleşebileceğini söyleyen ilke."
+    },
+    {
+      "terim": "kronoloji koruma varsayımı",
+      "tanim": "Hawking'in, fizik yasalarının kapalı zaman benzeri eğrilerin, yani zaman makinelerinin oluşmasını önleyeceğini söyleyen kanıtlanmamış varsayımı."
+    },
+    {
+      "terim": "Cauchy ufku",
+      "tanim": "Bir uzay-zamanda zaman yolculuğunun mümkün olduğu bölgenin sınırı."
+    }
   ],
   "defter_notu": [
     "Çözüm ≠ gerçeklik. Dört düzey: Gözlemle kesinleşmiş / Güçlü kanıtlı ama açık sorulu / Kuram, hipotez / Spekülasyon. Thorne'un kitabı: doğru, bilgiye dayalı tahmin, spekülasyon.",
@@ -346,30 +411,109 @@
     }
   ],
   "kaynaklar": [
-    { "ad": "Wikipedia, White hole", "url": "https://en.wikipedia.org/wiki/White_hole" },
-    { "ad": "Wikipedia (Wikiwand), Wormhole", "url": "https://wikiwand.com/en/Wormhole" },
-    { "ad": "Haggard ve Rovelli 2014, Black hole fireworks (arXiv:1407.0989; Phys. Rev. D 92, 104020)", "url": "https://arxiv.org/abs/1407.0989v1" },
-    { "ad": "Barceló, Carballo-Rubio, Garay, Black holes turn white fast, otherwise stay black: no half measures (arXiv:1511.00633)", "url": "https://arxiv.org/pdf/1511.00633" },
-    { "ad": "Martin-Dussaud 2024, How the black-to-white hole scenario resolves the information loss paradox (arXiv:2411.03125)", "url": "https://arxiv.org/pdf/2411.03125" },
-    { "ad": "Retter ve Heller 2011, The Revival of White Holes as Small Bangs (arXiv:1105.2776)", "url": "https://arxiv.org/abs/1105.2776v1" },
-    { "ad": "Wikipedia (IPFS kopyası), GRB 060614", "url": "https://en.wikipedia-on-ipfs.org/wiki/GRB_060614" },
-    { "ad": "EarthSky, Have we seen a white hole? (27 Mayıs 2011)", "url": "https://earthsky.org/space/have-we-seen-a-white-hole/" },
-    { "ad": "Yang ve ark. 2015, A possible macronova in the late afterglow of the long-short burst GRB 060614 (Nature Communications 6, 7323; arXiv:1503.07761)", "url": "https://www.arxiv.org/abs/1503.07761" },
-    { "ad": "Morris ve Thorne 1988, Wormholes in spacetime and their use for interstellar travel (Am. J. Phys. 56; OSTI özeti)", "url": "https://www.osti.gov/biblio/5435651" },
-    { "ad": "Maldacena ve Susskind 2013, Cool horizons for entangled black holes (arXiv:1306.0533)", "url": "https://arxiv.org/abs/1306.0533" },
-    { "ad": "Wikipedia, Firewall (physics) (ER = EPR yanıtı)", "url": "https://en.wikipedia.org/wiki/Firewall_(physics)" },
-    { "ad": "Caltech PMA, Physicists Observe Wormhole Dynamics Using a Quantum Computer (Aralık 2022)", "url": "https://www.pma.caltech.edu/news/physicists-observe-wormhole-dynamics-using-a-quantum-computer" },
-    { "ad": "Kobrin, Schuster, Yao 2023, Comment on “Traversable wormhole dynamics on a quantum processor” (arXiv:2302.07897)", "url": "https://arxiv.org/abs/2302.07897" },
-    { "ad": "Jafferis ve ark. 2023, Comment on “Comment on ‘Traversable wormhole dynamics…’” (arXiv:2303.15423)", "url": "https://arxiv.org/pdf/2303.15423" },
-    { "ad": "Weinstein, Debating the Reliability and Robustness of the Learned Hamiltonian in the Traversable Wormhole Experiment (arXiv:2308.00697)", "url": "https://ar5iv.labs.arxiv.org/html/2308.00697" },
-    { "ad": "Universe Today, Cosmonaut Sergei Krikalev, the World's Most Prolific Time Traveler (22 Ekim 2013)", "url": "https://www.universetoday.com/105650/cosmonaut-sergei-krikalev-the-worlds-most-prolific-time-traveler" },
-    { "ad": "Pitanga, Gödel's universe and the chronology protection conjecture (arXiv:1110.0173)", "url": "https://ar5iv.labs.arxiv.org/html/1110.0173" },
-    { "ad": "Hawking 1992, Chronology protection conjecture (Phys. Rev. D 46, 603)", "url": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.46.603" },
-    { "ad": "Wikipedia, Chronology protection conjecture", "url": "https://en.wikipedia.org/wiki/Chronology_protection_conjecture" },
-    { "ad": "Wikipedia, Novikov self-consistency principle", "url": "https://en.wikipedia.org/wiki/Novikov_self-consistency_principle" },
-    { "ad": "Wikipedia, Hawking's time traveller party", "url": "https://en.wikipedia.org/wiki/Hawking%27s_time_traveller_party" },
-    { "ad": "Space.com, The Science of Interstellar kitap incelemesi (29 Aralık 2014)", "url": "https://www.space.com/28075-science-of-interstellar-book-review.html" },
-    { "ad": "James, von Tunzelmann, Franklin, Thorne 2015, Gravitational Lensing by Spinning Black Holes in Astrophysics, and in the Movie Interstellar (arXiv:1502.03808)", "url": "https://arxiv.org/abs/1502.03808v2" },
-    { "ad": "Steinle ve Olson, The Black Hole(s) of Interstellar (APS toplantı özeti, 2016)", "url": "https://meetings-archive.aps.org/tss/2016/f1/6" }
+    {
+      "ad": "Wikipedia, White hole",
+      "url": "https://en.wikipedia.org/wiki/White_hole"
+    },
+    {
+      "ad": "Wikipedia (Wikiwand), Wormhole",
+      "url": "https://wikiwand.com/en/Wormhole"
+    },
+    {
+      "ad": "Haggard ve Rovelli 2014, Black hole fireworks (arXiv:1407.0989; Phys. Rev. D 92, 104020)",
+      "url": "https://arxiv.org/abs/1407.0989v1"
+    },
+    {
+      "ad": "Barceló, Carballo-Rubio, Garay, Black holes turn white fast, otherwise stay black: no half measures (arXiv:1511.00633)",
+      "url": "https://arxiv.org/pdf/1511.00633"
+    },
+    {
+      "ad": "Martin-Dussaud 2024, How the black-to-white hole scenario resolves the information loss paradox (arXiv:2411.03125)",
+      "url": "https://arxiv.org/pdf/2411.03125"
+    },
+    {
+      "ad": "Retter ve Heller 2011, The Revival of White Holes as Small Bangs (arXiv:1105.2776)",
+      "url": "https://arxiv.org/abs/1105.2776v1"
+    },
+    {
+      "ad": "Wikipedia (IPFS kopyası), GRB 060614",
+      "url": "https://en.wikipedia-on-ipfs.org/wiki/GRB_060614"
+    },
+    {
+      "ad": "EarthSky, Have we seen a white hole? (27 Mayıs 2011)",
+      "url": "https://earthsky.org/space/have-we-seen-a-white-hole/"
+    },
+    {
+      "ad": "Yang ve ark. 2015, A possible macronova in the late afterglow of the long-short burst GRB 060614 (Nature Communications 6, 7323; arXiv:1503.07761)",
+      "url": "https://www.arxiv.org/abs/1503.07761"
+    },
+    {
+      "ad": "Morris ve Thorne 1988, Wormholes in spacetime and their use for interstellar travel (Am. J. Phys. 56; OSTI özeti)",
+      "url": "https://www.osti.gov/biblio/5435651"
+    },
+    {
+      "ad": "Maldacena ve Susskind 2013, Cool horizons for entangled black holes (arXiv:1306.0533)",
+      "url": "https://arxiv.org/abs/1306.0533"
+    },
+    {
+      "ad": "Wikipedia, Firewall (physics) (ER = EPR yanıtı)",
+      "url": "https://en.wikipedia.org/wiki/Firewall_(physics)"
+    },
+    {
+      "ad": "Caltech PMA, Physicists Observe Wormhole Dynamics Using a Quantum Computer (Aralık 2022)",
+      "url": "https://www.pma.caltech.edu/news/physicists-observe-wormhole-dynamics-using-a-quantum-computer"
+    },
+    {
+      "ad": "Kobrin, Schuster, Yao 2023, Comment on “Traversable wormhole dynamics on a quantum processor” (arXiv:2302.07897)",
+      "url": "https://arxiv.org/abs/2302.07897"
+    },
+    {
+      "ad": "Jafferis ve ark. 2023, Comment on “Comment on ‘Traversable wormhole dynamics…’” (arXiv:2303.15423)",
+      "url": "https://arxiv.org/pdf/2303.15423"
+    },
+    {
+      "ad": "Weinstein, Debating the Reliability and Robustness of the Learned Hamiltonian in the Traversable Wormhole Experiment (arXiv:2308.00697)",
+      "url": "https://ar5iv.labs.arxiv.org/html/2308.00697"
+    },
+    {
+      "ad": "Universe Today, Cosmonaut Sergei Krikalev, the World's Most Prolific Time Traveler (22 Ekim 2013)",
+      "url": "https://www.universetoday.com/105650/cosmonaut-sergei-krikalev-the-worlds-most-prolific-time-traveler"
+    },
+    {
+      "ad": "Pitanga, Gödel's universe and the chronology protection conjecture (arXiv:1110.0173)",
+      "url": "https://ar5iv.labs.arxiv.org/html/1110.0173"
+    },
+    {
+      "ad": "Hawking 1992, Chronology protection conjecture (Phys. Rev. D 46, 603)",
+      "url": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.46.603"
+    },
+    {
+      "ad": "Wikipedia, Chronology protection conjecture",
+      "url": "https://en.wikipedia.org/wiki/Chronology_protection_conjecture"
+    },
+    {
+      "ad": "Wikipedia, Novikov self-consistency principle",
+      "url": "https://en.wikipedia.org/wiki/Novikov_self-consistency_principle"
+    },
+    {
+      "ad": "Wikipedia, Hawking's time traveller party",
+      "url": "https://en.wikipedia.org/wiki/Hawking%27s_time_traveller_party"
+    },
+    {
+      "ad": "Space.com, The Science of Interstellar kitap incelemesi (29 Aralık 2014)",
+      "url": "https://www.space.com/28075-science-of-interstellar-book-review.html"
+    },
+    {
+      "ad": "James, von Tunzelmann, Franklin, Thorne 2015, Gravitational Lensing by Spinning Black Holes in Astrophysics, and in the Movie Interstellar (arXiv:1502.03808)",
+      "url": "https://arxiv.org/abs/1502.03808v2"
+    },
+    {
+      "ad": "Steinle ve Olson, The Black Hole(s) of Interstellar (APS toplantı özeti, 2016)",
+      "url": "https://meetings-archive.aps.org/tss/2016/f1/6"
+    },
+    {
+      "ad": "Reuters (Investing.com kopyası), Scientists build 'baby' wormhole as sci-fi moves closer to fact (Kasım 2022)",
+      "url": "https://m.investing.com/news/world-news/scientists-build-baby-wormhole-as-scifi-moves-closer-to-fact-2954900?ampMode=1"
+    }
   ]
 }
