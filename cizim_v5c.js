@@ -54,7 +54,7 @@
 
   /* d41 · bölüm 3: Plüton'un yörüngesi tepeden, ölçekli (en yakın 29,6, en uzak 48,8 AB; Neptün 30,2 AB) ve 3:2 sayacı. */
   C.ekle('d41-pluton-yorunge', {
-    ders: 'd41', bolum: 3, oran: 1.02,
+    ders: 'd41', bolum: 3, oran: 1.05,
     baslik: 'Plüton ile Neptün: yollar kesişir gibi görünür, ama ikisi hiç buluşmaz',
     aciklama: 'Üstteki çizim ölçeklidir ve Güneş Sistemi\'ne tepeden bakar. Düz çember Neptün\'ün yaklaşık 30,2 astronomi birimlik yörüngesidir. Kesikli elips Plüton\'un yörüngesidir: en yakın noktası 29,6, en uzak noktası 48,8 astronomi birimi. Solda kalın çizilen kısa yay, Plüton\'un Neptün\'ün çemberinin içine girdiği bölümdür; Plüton o yıllarda Güneş\'e Neptün\'den daha yakındır. Son günberi geçişi 1989\'daydı. Yine de ikisi çarpışmaz, çünkü 3\'e 2 rezonansındadırlar: alttaki şeritte Neptün 495 yılda 3 tur atarken Plüton 2 tur atar, ve aralarındaki uzaklık hiçbir zaman 17 astronomi biriminin altına inmez. Plüton\'un yörüngesi 17 derece eğiktir; tepeden bakışta bu eğiklik görünmez.',
     kaynak: [KAYNAK.plutoNasa, KAYNAK.plutoWiki],
@@ -82,7 +82,7 @@
       s += S.zeminliYazi(ax - 6, ay + 22, 'en uzak', { boy: 13, hiza: 'end', renk: R.metin, kalin: true });
       s += S.zeminliYazi(ax - 6, ay + 38, '48,8 AB', { boy: 13, hiza: 'end', renk: R.metin, kalin: true });
       /* etiketler */
-      s += S.yazi(gx, gy - nep * k - 8, 'Neptün: 30,2 AB (düz)', { boy: 13, hiza: 'middle', renk: R.mavi, kalin: true });
+      s += S.zeminliYazi(gx, gy - nep * k - 8, 'Neptün: 30,2 AB (düz)', { boy: 13, hiza: 'middle', renk: R.mavi, kalin: true });
       const [lx, ly] = nokta(-118);
       s += S.zeminliYazi(lx + 6, ly + 18, 'Plüton (kesikli)', { boy: 13, renk: R.metin, kalin: true });
       const [ix, iy] = nokta(nuIc + 4);
@@ -170,7 +170,7 @@
       /* uçurum */
       s += S.kutu(X(50), Y(36), X(55) - X(50), Y(0) - Y(36), { dolgu: R.yuzey2, renk: 'none' });
       for (let v = 50.6; v < 55; v += 0.9) s += S.cizgi(X(v), Y(36), X(v), Y(0), { renk: R.cizgi, kalin: 1 });
-      s += S.zeminliYazi(X(52.5) + 5, Y(18), 'Kuiper uçurumu', { boy: 13, hiza: 'middle', renk: R.metin, kalin: true, yan: -90 });
+      s += S.yazi(X(52.5) + 5, Y(18), 'Kuiper uçurumu', { boy: 14, hiza: 'middle', renk: R.metin, kalin: true, yan: -90 });
       /* sıcak ve soğuk klasik */
       s += S.kutu(X(42), Y(30), X(48) - X(42), Y(0) - Y(30), { dolgu: R.vurguSoluk, saydam: 0.35, renk: R.vurgu, kalin: 1.4, kesik: '5 4' });
       s += S.kutu(X(42), Y(10), X(48) - X(42), Y(0) - Y(10), { dolgu: R.vurguSoluk, saydam: 0.9, renk: R.vurgu, kalin: 2 });
@@ -284,9 +284,10 @@
       /* Gliese 710: 16.000 AB, sol altta */
       const ga = 214 * rad, gr = r(16000), gx = cx + gr * Math.cos(ga), gy = cy - gr * Math.sin(ga);
       s += `<polygon points="${[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map(i => { const rr = i % 2 ? 3.2 : 8, aa = -Math.PI / 2 + i * Math.PI / 5; return Math.round((gx + rr * Math.cos(aa)) * 10) / 10 + ',' + Math.round((gy + rr * Math.sin(aa)) * 10) / 10; }).join(' ')}" fill="${R.yildiz}" stroke="${R.zemin}" stroke-width="1"/>`;
-      s += S.cizgi(gx - 6, gy + 6, 40, 360, { renk: R.soluk, kalin: 1 });
-      s += S.yazi(8, 376, 'Gliese 710: ≈1,3 milyon yıl sonra', { boy: 13, renk: R.metin, kalin: true });
-      s += S.yazi(8, 392, '≈16.000 AB\'ye yaklaşacak', { boy: 13, renk: R.metin });
+      s += S.cizgi(gx - 5, gy + 6, 40, 358, { renk: R.soluk, kalin: 1 });
+      s += S.yazi(8, 374, 'Gliese 710 yıldızı', { boy: 13, renk: R.metin, kalin: true });
+      s += S.yazi(8, 390, '≈1,3 milyon yıl sonra', { boy: 13, renk: R.metin });
+      s += S.yazi(8, 406, '≈16.000 AB\'ye gelecek', { boy: 13, renk: R.metin });
       /* etiketler */
       s += S.yazi(8, 20, 'Oort bulutu (hiç görülmedi)', { boy: 14, renk: R.metin, kalin: true });
       s += S.yazi(8, 38, 'iç kenar 2.000–5.000 AB', { boy: 13, renk: R.metin });
@@ -298,14 +299,14 @@
       s += S.zeminliYazi(cx + r(50) + 12, cy + 22, '30–50 AB, ±10°', { boy: 13, renk: R.vurgu });
       s += S.zeminliYazi(cx, cy - r(hp) - 6, 'heliopoz ≈17 ışık saati', { boy: 13, hiza: 'middle', renk: R.mavi, kalin: true });
       /* cetvel: merkezden sağa yarıçap */
-      const yc = 386, ux = au => cx + r(au);
+      const yc = 384, ux = au => cx + r(au);
       s += S.cizgi(cx, yc, ux(100000), yc, { renk: R.soluk, kalin: 1.2 });
       s += S.ok(cx + 2, yc, cx, yc, { renk: R.soluk, kalin: 1.2, boy: 0.1 });
       [[1, '1'], [10, '10'], [100, '100'], [1000, '10³'], [10000, '10⁴'], [100000, '10⁵']].forEach(([au, t]) => {
         s += S.cizgi(ux(au), yc - 4, ux(au), yc + 4, { renk: R.soluk, kalin: 1 }) + S.yazi(ux(au), yc + 20, t, { boy: 13, hiza: 'middle', renk: R.soluk });
       });
-      s += S.yazi(cx, yc - 10, 'Güneş\'ten uzaklık, AB (logaritmik)', { boy: 13, renk: R.soluk });
-      s += S.yazi(cx, 440, 'ışık: iç kenara 10–28 gün', { boy: 13, renk: R.metin });
+      s += S.yazi(cx, yc - 10, 'Güneş\'ten uzaklık, AB (log)', { boy: 13, renk: R.soluk });
+      s += S.yazi(cx, 428, 'ışık iç kenara 10–28 günde', { boy: 13, renk: R.metin });
       return s;
     }
   });
@@ -359,7 +360,7 @@
 
   /* d43 · bölüm 2: parlak uçuş, karanlık uçuş, rüzgâr kayması ve saçılma alanı. Yükseklik ekseni ölçekli, yatay ölçeksiz. */
   C.ekle('d43-karanlik-ucus', {
-    ders: 'd43', bolum: 2, oran: 0.92,
+    ders: 'd43', bolum: 2, oran: 0.95,
     baslik: 'Göktaşının son dakikaları: parlak uçuş, karanlık uçuş ve rüzgâr',
     aciklama: 'Dikey eksen kilometre cinsinden yüksekliktir ve ölçeklidir; yatay uzaklık ölçeksizdir. Taş havaya saniyede en az 11 kilometre hızla girer. Kalın çizgi parlak uçuştur: yüzey erir ve akan havayla sıyrılır, buna ablasyon denir. Gölgeli şerit, parlak uçuşun tipik olarak bittiği 20 ile 30 kilometrelik yüksekliktir; çizimdeki yol Murrili örneğidir, 18 kilometrede saniyede 3,3 kilometre hızla söndü. Kesikli çizgi karanlık uçuştur: taş artık ışık saçmaz, yavaşlayıp dikleşerek düşer ve yüksek irtifa rüzgârları onu birkaç kilometre sürükler. Bu yüzden taş, söndüğü noktanın tam altında değildir; parçalar yerde uzun ve dar bir saçılma alanına yayılır. Sol alttaki kesit füzyon kabuğudur: ısı yalnızca birkaç milimetre içeri işler, taşın içi soğuk kalır.',
     kaynak: [KAYNAK.towner, KAYNAK.msfc, KAYNAK.meteorNasa],
@@ -390,10 +391,10 @@
         ls.push([X(x), Y(h)]);
       }
       s += S.egri(ls, { renk: R.metin, kalin: 2.4, kesik: '7 5' });
-      s += S.zeminliYazi(X(0.62) + 8, Y(10.5), 'karanlık uçuş', { boy: 13, renk: R.metin, kalin: true });
+      s += S.zeminliYazi(X(0.62) + 8, Y(10), 'karanlık uçuş', { boy: 13, renk: R.metin, kalin: true });
       /* rüzgâr okları */
-      [[12.5, 0.66], [7, 0.70]].forEach(([h, x]) => { s += S.ok(X(x) + 52, Y(h), X(x) + 92, Y(h), { renk: R.mavi, kalin: 2, boy: 8 }); });
-      s += S.zeminliYazi(X(1) - 4, Y(4), 'rüzgâr birkaç km sürükler', { boy: 13, hiza: 'end', renk: R.mavi });
+      [[14, 0.66], [6, 0.70]].forEach(([h, x]) => { s += S.ok(X(x) + 52, Y(h), X(x) + 92, Y(h), { renk: R.mavi, kalin: 2, boy: 8 }); });
+      s += S.zeminliYazi(X(1) - 4, Y(3.3), 'rüzgâr sürükler', { boy: 13, hiza: 'end', renk: R.mavi });
       /* söndüğü yerin altı: taş burada değil */
       s += S.cizgi(b[0], b[1] + 8, b[0], Y(0) - 8, { renk: R.uyari, kalin: 1.2, kesik: '2 4' });
       s += S.cizgi(b[0] - 6, Y(0) - 12, b[0] + 6, Y(0), { renk: R.uyari, kalin: 2.2 }) + S.cizgi(b[0] + 6, Y(0) - 12, b[0] - 6, Y(0), { renk: R.uyari, kalin: 2.2 });
@@ -404,11 +405,11 @@
       s += S.yazi(sx, Y(0) + 22, 'saçılma alanı', { boy: 13, hiza: 'middle', renk: R.metin, kalin: true });
       s += S.yazi(X(0.02), Y(0) + 22, 'yer', { boy: 13, renk: R.soluk });
       /* füzyon kabuğu kesiti */
-      const fx = 104, fy = 248;
+      const fx = 360, fy = 66;
       s += S.daire(fx, fy, 24, { dolgu: R.yuzey2, renk: R.metin, kalin: 4 });
-      s += S.zeminliYazi(fx + 32, fy - 4, 'füzyon kabuğu:', { boy: 13, renk: R.metin, kalin: true });
-      s += S.zeminliYazi(fx + 32, fy + 12, 'birkaç mm; içi soğuk', { boy: 13, renk: R.metin });
-      s += S.yazi(392, 352, 'yatay uzaklık ölçeksiz', { boy: 13, hiza: 'end', renk: R.soluk });
+      s += S.yazi(392, fy + 42, 'füzyon kabuğu:', { boy: 13, hiza: 'end', renk: R.metin, kalin: true });
+      s += S.yazi(392, fy + 58, 'birkaç mm; içi soğuk', { boy: 13, hiza: 'end', renk: R.metin });
+      s += S.yazi(392, 366, 'yatay uzaklık ölçeksiz', { boy: 13, hiza: 'end', renk: R.soluk });
       return s;
     }
   });
