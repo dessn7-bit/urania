@@ -1,0 +1,529 @@
+{
+  "id": "d57",
+  "unite": "evren",
+  "yeni": true,
+  "baslik": "Büyük Patlama: Bir Kuram Nasıl Kuruldu?",
+  "ozet": "Evrenin sıcak ve yoğun bir başlangıçtan evrildiği fikrinin yüz yıllık öyküsünü izleyeceksin: Friedmann'ın denklemleri, Lemaître'nin ilkel atomu, Hubble'ın ölçümleri, Gamow ve Alpher'in ilk çekirdekleri ve artık ışıma öngörüsü, Hoyle'un Kararlı Durum kuramıyla rekabet. Sonra kuramı ayakta tutan kanıtları, lityum sorununu, evrenin yaşının nasıl hesaplandığını ve yaygın yanlış anlamaları kesinlik etiketleriyle tartacağız.",
+  "on_bilgi": [
+    "d2",
+    "d3",
+    "d7",
+    "d48"
+  ],
+  "bolumler": [
+    {
+      "baslik": "Bir kuram nasıl kurulur? Bu dersin pusulası",
+      "paragraflar": [
+        "Bugün bir gökbilimciye evrenin geçmişini sorarsan cevabı Büyük Patlama kuramına dayanır. Wikipedia'nın özetine göre çok geniş bir gözlem yelpazesi bu modeli güçlü biçimde destekler ve model bugün yaygın olarak kabul görür. Ama yüz yıl önce durum tersiydi: dönemin büyük kozmologlarının çoğu başı ve sonu olmayan, hep var olan bir evreni tercih ediyordu. Bu derste bir fikrin nasıl kenardan merkeze geçtiğini izleyeceksin: kim neyi önerdi, kim itiraz etti, hangi ölçüm tartışmayı bitirdi. Evrenin ilk saniyelerden ilk galaksilere uzanan zaman çizelgesinin tamamı d8'in konusu; arka plan ışımasının kendisi bir sonraki ders olan d58'in. Burada hikâyenin mantığına, yani bir kuramın nasıl kanıt topladığına odaklanıyoruz.",
+        "Yol boyunca her önemli iddianın ne kadar kesin olduğunu söyleyeceğiz. Bunun için kuramlar ünitesinde (d50) ayrıntısıyla göreceğin dört basamaklı bir ölçek kullanıyoruz. Birinci basamak gözlemle kesinleşmiş: birbirinden bağımsız pek çok ölçümün aynı sonucu verdiği bilgiler. İkinci basamak güçlü kanıtlı ama açık sorulu: kanıt sağlam, ama önemli bir soru hâlâ açık. Üçüncü basamak kuram ya da hipotez: matematiksel olarak tutarlı ama henüz gözlemle desteklenmemiş fikirler. Dördüncü basamak spekülasyon: sınanmasının yolu bile belirsiz fikirler. Metinde bunları “Kesinlik: gözlemle kesinleşmiş” gibi tek bir kalıpla göreceksin. Bu derste ilginç bir şey de göreceksin: aynı fikir zaman içinde basamak değiştirir. 1948'de kâğıt üstünde bir öngörü olan şey, 1965'te ölçülür ve en üst basamağa çıkar.",
+        "Önce kuramın neyi iddia ettiğini netleştirelim. Wikipedia'ya göre Büyük Patlama, evrenin çok yoğun ve çok sıcak erken bir hâlden nasıl genişlediğini anlatan fiziksel bir kuramdır. Evrenin nereden geldiğini değil, o sıcak hâlden bugüne nasıl evrildiğini anlatır. Kuram üç varsayıma dayanır: fizik yasaları her yerde aynıdır; evren büyük ölçekte her yerde ve her yönde aynıdır (kozmolojik ilke); madde, sürtünmesiz ideal bir akışkan gibi modellenebilir. Bunlar başta yalnızca kabul edilmiş, sonra sınanmıştır. Aynı kaynağa göre kozmolojik ilke, arka plan ışımasının sıcaklığıyla yüz binde bir düzeyinde doğrulanmıştır. Yani kuramın temel taşları bile gökyüzünde ölçülerek denetlenir."
+      ],
+      "akilda": "Büyük Patlama, evrenin sıcak ve yoğun bir hâlden nasıl evrildiğinin kuramıdır, kökeninin değil. Ders boyunca dört basamaklı kesinlik ölçeğini kullanacağız: gözlemle kesinleşmiş, güçlü kanıtlı ama açık sorulu, kuram ya da hipotez, spekülasyon."
+    },
+    {
+      "baslik": "Einstein'ın durağan evreni ve Friedmann'ın cesur çözümü",
+      "paragraflar": [
+        "Hikâye 1915'te Einstein'ın genel görelilik kuramıyla başlar (ayrıntısı fizik ünitesindeki d26'da). Wikipedia'nın evrenin yaşı maddesine göre Einstein 1917'de bu kuramla ilk kozmoloji modelini kurdu. O dönemde bilim insanlarının çoğu evrenin büyük ölçekte değişmediğini varsayıyordu. Einstein'ın denklemleri ise durağan bir evrene kendiliğinden izin vermiyordu; Einstein modelinin yerinde durması için denklemlerine sonradan kozmolojik sabit denen bir terim ekledi. Arthur Eddington daha sonra bu durağan modelin kararsız olduğunu gösterdi. Ucunun üstünde dengede duran bir kalem düşün: kâğıt üstünde durabilir, ama en küçük bir sarsıntıda ya bir yana ya öbür yana devrilir. Durağan evren de en küçük bir dengesizlikte ya genişlemeye ya büzülmeye başlardı.",
+        "Bu kalıbı ilk kıran Rus fizikçi ve matematikçi Alexander Friedmann oldu. Wikipedia'ya göre Friedmann, 1922'deki Uzayın eğriliği üzerine adlı makalesinde Einstein'ın denklemlerine her yerde ve her yönde aynı olan bir evren varsayımını uyguladı ve tek bir durağan çözümün yanında zamanla değişen pek çok çözüm bulunduğunu gösterdi. Bugün Friedmann denklemleri dediğimiz bu bağıntılar, evrenin genişleme hızını içindeki madde ve enerjiye bağlar. 1924'teki ikinci makalesinde eksi eğrilikli uzayı inceledi ve evrenin sonlu mu sonsuz mu olduğunun yalnızca görelilik denklemleriyle belirlenemeyeceğini gösterdi. Aynı kaynağa göre bu çalışmalar uzun süre büyük ölçüde görmezden gelindi; Einstein ise başta onları açıkça reddetti.",
+        "Friedmann, kuramının doğrulandığını göremedi. Wikipedia'ya göre Temmuz 1925'te bir balon uçuşuyla 7.400 metreye çıkarak rekor kırdı; iki ay sonra, 16 Eylül 1925'te yanlış teşhis konmuş tifodan öldü. Hubble'ın galaksilerin uzaklaşmasını gösteren makalesi dört yıl sonra yayımlandı ve Einstein ancak o zaman ikna oldu. Bu bölümün dersi şudur: matematik gözlemden önce hazırdı. Denklemler bir dizi olası evren sunar; hangisinin bizim evrenimiz olduğunu ancak ölçüm seçer. 1922'de genişleyen evren fikri bu yüzden kuram ya da hipotez basamağındaydı. Bugün evrenin genişlediği gözlemle kesinleşmiş bir olgudur; ama bu terfi, ancak gökbilimciler galaksilerin hızlarını ve uzaklıklarını ölçtükten sonra geldi."
+      ],
+      "akilda": "Einstein 1917'de durağan bir evren modeli kurdu; model kararsızdı. Friedmann 1922'de görelilik denklemlerinin genişleyen ya da büzülen evrenlere izin verdiğini gösterdi, ama doğrulanmasını göremeden 1925'te öldü."
+    },
+    {
+      "baslik": "Lemaître: genişleyen evren ve ilkel atom",
+      "paragraflar": [
+        "İkinci kahraman Belçikalı Georges Lemaître'dir (1894–1966). Wikipedia'ya göre hem Katolik rahip hem kuramsal fizikçiydi; 1923'te rahip oldu, sonra Cambridge'de Eddington'la, Harvard'da Harlow Shapley'le çalıştı. 1927'de Brüksel Bilim Derneği'nin yıllığında yayımladığı Fransızca makalede, Friedmann'ın çalışmasından habersiz olarak, Einstein'ın denklemlerinin durağan olmayan bir evren gerektirdiğini savundu. Daha da önemlisi bunu gözleme bağladı: galaksilerin ortalama uzaklaşma hızının uzaklıklarıyla orantılı olduğunu öne sürdü ve bu oran için bir değer kestirdi. Wikipedia'nın Hubble sabiti ölçümleri tablosu bu ilk kestirimi 625 km/s/Mpc olarak verir ve onu genişlemenin ilk ölçümü ve yorumu diye anar.",
+        "Makale neredeyse hiç okunmadı, çünkü yayımlandığı yıllık Belçika dışında pek izlenmiyordu. Lemaître sonradan Einstein'ın kendisine hesaplarının doğru ama fiziğinin berbat olduğunu söylediğini anlattı. 1931'de makalenin İngilizce çevirisi Kraliyet Astronomi Derneği'nin dergisinde, Eddington'ın övgü dolu yorumuyla çıktı. Ama çeviride Lemaître'nin genişleme hızı kestirimi yoktu. Bu eksik yıllarca bir gizem olarak kaldı. Wikipedia'ya göre gökbilimci Mario Livio 2011'de bulmacayı çözdü: o paragrafları çeviriyi hazırlarken Lemaître'nin kendisi çıkarmış ve yerine Hubble'ın 1929'da yayımladığı daha güçlü sonuçlara gönderme yapmayı seçmişti. Yani öncelik kavgası çıkarmak yerine daha iyi veriyi öne koymuştu.",
+        "Lemaître bir adım daha attı. Wikipedia'ya göre Mart 1931'de Nature'da kısa bir yazıyla, evrenin tek bir ilk kuantumdan genişlediğini önerdi ve buna ilkel atom dedi. Aynı kaynağın aktardığı bir yazısında şunu savunur: dünya tek bir kuantumla başladıysa, başlangıçta uzay ve zaman kavramlarının hiçbir anlamı yoktu; ancak ilk kuantum yeterince çok parçaya bölündükten sonra anlam kazandılar. Bu, Büyük Patlama'dan önce ne olduğu sorusunun bugün de tartışılan bir yüzüdür (bu dersin sondan bir önceki bölümü). Lemaître ilk anın bir fosilini de aradı: kozmik ışınların ilkel atomun bozunmasından kalan bir fosil ışıma olduğunu düşündü. Bu tahmin yanlış çıktı, ama evrenin başlangıcından kalan bir ışımayı arama fikri otuz yıl sonra bambaşka bir adayla doğrulanacaktı (d58).",
+        "Lemaître'nin rahip olması fikre gölge düşürdü. Wikipedia'ya göre 1920'ler ve 1930'larda bazı kozmologlar, zamanın bir başlangıcı olması fikrinin fiziğe dinsel kavramlar soktuğundan yakındı. Lemaître ise iki alanı karıştırmaya karşıydı; 1933'te New York Times'a bilim ile din arasında uzlaştırılacak bir çatışma olmadığını söyledi ve çalışmasının yalnızca bilimsel ölçütlerle değerlendirilmesini istedi. Ders açıktır: bir fikrin kimden geldiği ya da hangi inanca uygun düştüğü, onu ne destekler ne çürütür. Ünlü sözlere de dikkat: Einstein'ın 1933'te Lemaître'yi dinledikten sonra bunu duyduğu en güzel açıklama diye övdüğü aktarılır, ama aynı kaynak gazete aktarımlarının tartışmalı olduğunu ve övgünün yalnızca kozmik ışın önerisine yönelmiş olabileceğini yazar. Lemaître 20 Haziran 1966'da, arka plan ışımasının keşfini öğrendikten kısa süre sonra öldü."
+      ],
+      "akilda": "Lemaître 1927'de genişlemeyi gözlemle ilişkilendirdi ve genişleme hızını ilk kez kestirdi; 1931'de evrenin bir ilkel atomdan doğduğunu önerdi. Bir fikrin sahibinin inancı ya da ünü kanıt değildir."
+    },
+    {
+      "baslik": "Hubble 1929 ve yasanın iki adı",
+      "paragraflar": [
+        "Gözlem tarafı 1912'de başladı. Wikipedia'ya göre Vesto Slipher o yıl bir sarmal bulutsunun ilk Doppler kaymasını ölçtü ve kısa sürede bu cisimlerin neredeyse hepsinin bizden uzaklaştığını buldu; ama sonucun kozmolojik anlamını kavramadı. Carl Wilhelm Wirtz 1922 ve 1924'te daha küçük ve sönük görünen galaksilerin daha büyük kırmızıya kayma gösterdiğini çıkardı. Eksik olan güvenilir uzaklıklardı. Edwin Hubble 1924'te Mount Wilson'daki 100 inçlik (yaklaşık 2,5 m) Hooker teleskobuyla en yakın sarmal bulutsuların uzaklığını ölçtü ve bunların Samanyolu'nun dışında, başka galaksiler olduğunu gösterdi (Sefeid yöntemi d17'de).",
+        "1929'da Hubble, Milton Humason'un yardımıyla uzaklık ile uzaklaşma hızı arasında bir ilişki yayımladı. Wikipedia'ya göre çalıştığı 46 galaksiden çizdiği doğru 500 km/s/Mpc civarında bir değer veriyordu; değer, uzaklık ayarındaki hatalar yüzünden bugünkünün çok üstündeydi. İlginç bir ayrıntı var: Wikipedia'nın Lemaître maddesine göre Hubble bu sonucu kendisi genişleyen bir evren diye yorumlamadı. Yine de çalışması büyük ilgi gördü ve Einstein dahil pek çok uzmanı evrenin durağan olmadığına ikna etti. Yani gözlemi yapan kişi ile onu kurama bağlayan kişi farklıydı.",
+        "Uzun yıllar boyunca bu ilişkiye yalnızca Hubble yasası dendi. Uluslararası Astronomi Birliği (IAU) 2018'de bunu düzeltmek için üyelerine elektronik oylama yaptırdı. IAU'nun duyurusuna göre oylama 26 Ekim 2018 gece yarısı (UT) sona erdi; oy hakkı olan 11.072 üyeden 4.060'ı, yani yaklaşık yüzde 37'si oy kullandı ve öneri yüzde 78 oyla kabul edildi. IAU artık evrenin genişlemesinin Hubble–Lemaître yasası olarak anılmasını öneriyor. Bu öykü, bilimde önceliğin bazen dil ve dergi seçimi yüzünden gözden kaçabildiğini ve sonradan düzeltilebildiğini gösterir.",
+        "İlk ölçümlerin bir sorunu vardı ve bu sorun Büyük Patlama'nın önünde yıllarca engel oldu. Genişleme hızı ne kadar büyükse, galaksilerin bir zamanlar bir arada olduğu an o kadar yakın geçmişe düşer. 625 ya da 500 km/s/Mpc gibi değerler evrene, aşağıdaki örnekte göreceğin gibi, Dünya'dan bile kısa bir yaş biçiyordu. Wikipedia'ya göre Walter Baade iki ayrı yıldız topluluğunu ve parlaklıkları farklı iki tür Sefeid olduğunu fark etti ve 1952'de Roma'daki IAU toplantısında bilinen evrenin ölçeğini iki katına çıkardığını duyurdu. Ölçek büyüdükçe yaş da büyüdü; sonraki on yılların uzun tartışması d17'de anlatılıyor."
+      ],
+      "ornek": {
+        "baslik": "Örnek: İlk ölçümler evrene kaç yaş biçiyordu?",
+        "metin": "Genişleme hep aynı hızda sürseydi yaş Hubble zamanı olurdu: yaklaşık 977,8 / H0 milyar yıl (H0 km/s/Mpc cinsinden; d8). Lemaître 1927, H0 = 625 için: 977,8 / 625 ≈ 1,56 milyar yıl. Hubble 1929, H0 = 500 için: 977,8 / 500 ≈ 1,96 milyar yıl. Bugünkü Planck değeri 67,4 için: 977,8 / 67,4 ≈ 14,5 milyar yıl. ABD Jeoloji Araştırmaları Kurumu'na göre Dünya yaklaşık 4,54 milyar yaşında (d17). İlk iki sonuç, evrenin içindeki gezegenden 2–3 kat genç olduğunu ima eder: 4,54 / 1,56 ≈ 2,9 ve 4,54 / 1,96 ≈ 2,3. Çelişki kuramdan değil, ölçülen uzaklıklardaki hatadan geliyordu. Sonuç birimi: milyar yıl."
+      },
+      "akilda": "Slipher (1912) kırmızıya kaymaları, Hubble (1929) uzaklık-hız ilişkisini ölçtü; Lemaître ilişkiyi iki yıl önce kuramla birlikte yayımlamıştı. IAU 2018'de yüzde 78 oyla Hubble–Lemaître yasası adını önerdi."
+    },
+    {
+      "baslik": "Gamow, Alpher ve Herman: sıcak başlangıcın hesabı",
+      "paragraflar": [
+        "İkinci Dünya Savaşı'ndan sonra Lemaître'nin fikrini en çok ilerleten George Gamow oldu. Wikipedia'ya göre Gamow genişleyen evren kuramını kimyasal elementlerin bolluğunu açıklamak için kullandı. Ralph Alpher onun doktora öğrencisiydi. Çalışmaları The Origin of Chemical Elements (Kimyasal elementlerin kökeni) adıyla 1 Nisan 1948'de Physical Review'de çıktı. Gamow burada bir şaka yaptı: ünlü fizikçi dostu Hans Bethe'nin adını da yazar listesine ekledi, böylece liste Alpher, Bethe, Gamow oldu; Yunan alfabesinin ilk üç harfine benzediği için makale αβγ makalesi diye anılır. Bethe'nin kuramın gelişmesinde doğrudan payı yoktu. Alpher bu şakadan hoşlanmadı: ünlü bir adın kendi katkısını gölgeleyeceğinden korktu ve Wikipedia'ya göre buna 1999'da bile içerliyordu.",
+        "Fikir şuydu: ilk anlarda evren o kadar sıcak ve yoğundu ki proton ile nötron birleşir birleşmez enerjik fotonlar onları yeniden parçalıyordu. Evren soğuyunca bağlar kalıcı oldu ve çekirdekler, Alpher ile Gamow'un önerisine göre nötronları teker teker yakalayarak ağırlaştı. Wikipedia'ya göre bu nötron yakalama zinciri bir yerde kırıldı: kütle numarası 5 ve 8 olan kararlı bir çekirdek yoktur. Bir basamağı eksik merdiveni adım adım çıkamazsın; helyumun ötesine geçmek de böyle tıkandı. Ağır elementlerin büyük kısmının yıldızlarda üretildiği sonradan anlaşıldı (d6). Ama kuram hidrojen ve helyumun göreli bolluğunu doğru açıkladı; Wikipedia'ya göre bu ikisi evrendeki sıradan madde kütlesinin yüzde 99'undan fazlasıdır.",
+        "Aynı çalışma bir de ışık öngörüsü taşıyordu. Wikipedia'ya göre Alpher'in 1948'deki tez savunmasına, basın dahil 300'den fazla kişi geldi; bir doktora savunması için olağanüstü bir ilgiydi. Aynı yıl Alpher, Robert Herman'la birlikte, sıcak başlangıçtan kalan ışımanın bugünkü sıcaklığını yaklaşık 5 kelvin olarak tahmin etti. Bunun mantığı Richard Tolman'ın 1934'te gösterdiği bir sonuca dayanır: genişleme kara cisim ışımasını soğutur ama tayfının biçimini bozmaz (kara cisim d2'de). Gamow da benzer hesaplar yaptı: 1946'da, evrenin 3 milyar yaşında olduğunu varsayarak 50 kelvin buldu ama bunu bir arka plan ışıması olarak sunmadı; 1953'te serbest bir değişkene dayanmayan bir modelle 7 kelvin verdi.",
+        "Sonra öngörü unutuldu. Wikipedia'ya göre Alpher'in arka plan ışımasıyla ilgili öngörüleri, 1960'ların başında Robert Dicke ve Yakov Zeldoviç tarafından yeniden bulunana kadar neredeyse hatırlanmadı. Alpher ile Herman 1993'te Henry Draper Madalyası aldı; Alpher'e 2005'te ABD Ulusal Bilim Madalyası verildi ve madalyayı 27 Temmuz 2007'de yolculuk edemeyen babası adına oğlu teslim aldı. Alpher 12 Ağustos 2007'de öldü. Bu öykünün kesinlik açısından dersi şu: 1948'de artık ışıma, kuram ya da hipotez basamağında bir öngörüydü. Doğru büyüklükte tahmin edilmişti, ama kimse onu ölçmeye kalkmadı. Bir öngörü ancak ölçülürse basamak atlar; ölçecek insanlara ulaşmayan bir öngörü yıllarca rafta bekleyebilir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Tahminler ölçüme ne kadar yaklaşmıştı?",
+        "metin": "Bugün ölçülen sıcaklık T0 = 2,725 K (d8). Alpher ve Herman, 5 K: 5 / 2,725 ≈ 1,8 kat fazla. Gamow 1953, 7 K: 7 / 2,725 ≈ 2,6 kat. Gamow 1946, 50 K: 50 / 2,725 ≈ 18 kat. Şimdi bu sıcaklıkların ışığının hangi dalga boyunda tepe yaptığına Wien yasasıyla bak (d2): λtepe = 2,898×10⁻³ m·K / T. 5 K için 2,898×10⁻³ / 5 ≈ 0,58 mm; 2,725 K için 2,898×10⁻³ / 2,725 ≈ 1,06 mm; 50 K için ≈ 0,058 mm, yani 58 mikrometre, kızılötesinde. Alpher ve Herman'ın tahmini ışımayı doğru bölgeye, milimetre dalgalarına koymuştu. Sonuç birimleri: kelvin ve milimetre."
+      },
+      "akilda": "αβγ makalesi (1948) ilk çekirdeklerin sıcak başlangıçta oluştuğunu savundu; nötron yakalama zinciri helyumda tıkandı, ama hidrojen-helyum oranını doğru açıkladı. Alpher ve Herman artık ışımanın sıcaklığını yaklaşık 5 K tahmin etti; öngörü yıllarca unutuldu."
+    },
+    {
+      "baslik": "Hoyle'un radyo konuşması ve Kararlı Durum kuramı",
+      "paragraflar": [
+        "Büyük Patlama'nın en güçlü rakibi 1948'de doğdu. Wikipedia'ya göre Hermann Bondi, Thomas Gold ve Fred Hoyle, savaşta radar üzerinde birlikte çalışırken kozmoloji tartışmışlar ve o yıl Kararlı Durum kuramını yayımlamışlardı. Kuram mükemmel kozmolojik ilke denen bir varsayıma dayanır: evren yalnızca her yerde değil, her zaman da aynı görünür. Galaksiler birbirinden uzaklaşıyordu, bu inkâr edilmiyordu. Ama yoğunluk azalmasın diye galaksilerin arasında sürekli yeni madde yaratılıyordu. Wikipedia bunu akan bir nehre benzetir: su molekülleri akıp gider, nehir aynı kalır. Benzetmenin sınırı şu: nehre su kaynaktan gelir; kuram ise yeni maddenin nereden geldiğini açıklamaz, yalnızca yaratıldığını varsayar.",
+        "Ad ironik biçimde Hoyle'dan geldi. Wikipedia'ya göre Hoyle 28 Mart 1949'da BBC'nin Third Programme kanalındaki bir radyo konuşmasında rakip görüşü, evrenin sonlu bir süre önce tek ve büyük bir patlamayla başladığı varsayımı diye anlattı ve ondan “bu Big Bang fikri” diye söz etti; fikri kendisi tatmin edici bulmuyordu. Hoyle'un terimi küçümsemek için kullandığı sık anlatılır. Hoyle bunu açıkça reddetti ve dinleyicilere iki kuram arasındaki farkı göstermek için çarpıcı bir imge seçtiğini söyledi. Tarihçi Helge Kragh da aşağılama iddiasının kanıtlarını ikna edici bulmaz. Aynı kaynağa göre terim ancak 1970'lerde yaygınlaştı.",
+        "Adın kendisi yanıltıcıdır. Wikipedia iki sorun sayar: patlama, çevredeki bir boşluğa doğru saçılmayı çağrıştırır, oysa kuram yalnızca evrenin içindeki uzaklıkların büyümesini anlatır; patlama bir ses de çağrıştırır, oysa ses modelin önemli bir özelliği değildir. Sky and Telescope dergisi 1993'te daha uygun bir ad bulmak için yarışma açtı, ama önerilerin hiçbiri tutmadı. Wikipedia, genişlemenin her yerde aynı anda olduğunu vurgulamak için her yerde esneme anlamına gelen Everywhere Stretch adının önerildiğini de aktarır. Türkçedeki Büyük Patlama da aynı yükü taşır; adı her duyduğunda d8'deki üzümlü kek resmini hatırla.",
+        "Kararlı Durum ciddi bir kuramdı ve onu küçümsemek yanlış olur. Wikipedia'ya göre Einstein bile 1931 tarihli bir el yazmasında genişleyen bir evrenin kararlı durum modelini düşünmüş, sonra vazgeçmişti. Kuramın büyük bir erdemi vardı: çok kesin öngörüler yapıyordu. Steven Weinberg 1972'de bu yüzden onu övdü: bütün kozmolojiler içinde, eldeki sınırlı gözlemlerle bile çürütülebilecek kadar kesin öngörüler yapan tek model oydu. Bir kuramın yanlışlanabilmesi bilimde bir zayıflık değil, güçtür; bir kuram neyin olamayacağını ne kadar açık söylerse, o kadar sınanabilir. Aşağıdaki örnek ise kuramın doğrudan sınanmasının neden imkânsız olduğunu gösteriyor."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Sürekli yaratılış ne kadar madde gerektirirdi?",
+        "metin": "Bir hacim, ölçek çarpanının küpüyle büyür; bu yüzden kesirli büyüme hızı yaklaşık 3 × H0'dır. H0 = 67,4 km/s/Mpc, saniyenin tersine çevrilince 2,184×10⁻¹⁸ bölü saniyedir (d17). Bir yıl yaklaşık 3,156×10⁷ saniye: H0 ≈ 6,89×10⁻¹¹ bölü yıl. 3 × H0 ≈ 2,07×10⁻¹⁰ bölü yıl, yani milyar yılda 0,207. Evrende ortalama metreküpte yaklaşık 0,25 proton ya da nötron var (d8). Yoğunluğu sabit tutmak için: 0,25 × 0,207 ≈ 0,05 atom / m³ / milyar yıl. Başka bir deyişle, her 20 metreküplük hacimde milyar yılda yalnızca bir yeni atom. Bu hesap bugünkü değerlerle yapıldı; 1948'deki değerler farklıydı ama sonuç yine ölçülemeyecek kadar küçüktü. Sonuç birimi: atom / m³ / milyar yıl."
+      },
+      "akilda": "Bondi, Gold ve Hoyle'un Kararlı Durum kuramı (1948) evrenin hep aynı göründüğünü, genişlemenin sürekli madde yaratılışıyla dengelendiğini savundu. Hoyle 28 Mart 1949'da BBC'de “Big Bang” terimini kullandı; aşağılama amacını reddetti."
+    },
+    {
+      "baslik": "Gözlem hakemliğe geçiyor: radyo kaynakları ve kuasarlar",
+      "paragraflar": [
+        "Kararlı Durum'un en güçlü yanı aynı zamanda en kırılgan yanıydı. Evren her zaman aynı görünüyorsa, uzaktaki evren de yakındaki gibi görünmelidir. Uzağa bakmak geçmişe bakmak olduğuna göre (d7), milyarlarca yıl önceki galaksiler de bugünküler gibi olmalıdır. Büyük Patlama ise evrimleşen bir evren öngörür: geçmiş farklıydı. Böylece iki kuram arasında net bir sınav ortaya çıktı: uzaktaki ve yakındaki cisimleri sayıp karşılaştırmak. Bu iş için 1950'lerde yeni bir göz açılmıştı: radyo teleskopları. Radyo dalgaları toza takılmadan çok uzaklardan gelebiliyordu.",
+        "Wikipedia'ya göre 1950'ler ve 1960'larda parlak radyo kaynaklarının, yani kuasarların ve radyo galaksilerin yalnızca büyük uzaklıklarda bulunduğu, bize yakın galaksilerde görülmediği anlaşıldı. Büyük Patlama bunu bekliyordu; Kararlı Durum ise bu cisimlerin her yerde, Samanyolu'nun yakınında da bulunmasını öngörüyordu. Aynı kaynağa göre 1961'e gelindiğinde radyo kaynak taramalarına dayanan istatistik testler Kararlı Durum'a karşı güçlü kanıt oluşturuyordu. Hoyle'un Cambridge'deki radyo gökbilimci Martin Ryle ile sert bir tartışması oldu. Halton Arp gibi bazı savunucular radyo verisinin güvenilmez olduğunda ısrar etti. Sayım verisine itiraz etmek meşrudur; ama sonraki her yeni gözlem aynı yönü gösterdi.",
+        "Sonra kuasarlar geldi. Wikipedia'ya göre Maarten Schmidt 1963'te 3C 273'ün tayfındaki tuhaf çizgilerin kırmızıya kaymış hidrojen çizgileri olduğunu gösterdi; ayrıntılı öykü d48'de. Asıl darbe 1967'de geldi: Schmidt kuasarların erken evrende bugünkünden çok daha yaygın olduğunu buldu. Aynı kaynak bunu Kararlı Durum'a karşı ve Büyük Patlama lehine erken ve güçlü bir kanıt diye anar. Bugünkü taramalara göre kuasar etkinliği en yoğun dönemini yaklaşık 10 milyar yıl önce yaşadı ve bilinen en yakın kuasar yaklaşık 600 milyon ışık yılı uzaktadır. Gökteki en parlak kuasar 3C 273 bile 12,8–12,9 kadirdir; d48'de gördüğün gibi 7×50 dürbünle görülmez, bir teleskop gerekir.",
+        "Galaksilerin kendisi de evrim gösterir. Wikipedia'ya göre yıldız toplulukları yaşlanıp evrildiği için, erken evrendeki hâlleriyle gördüğümüz uzak galaksiler yakındakilerden belirgin biçimde farklı görünür; bu gözlemler Kararlı Durum'a karşı güçlü argümanlardır. Aynı kaynak, gözlem ve kuramın birlikte ilk kuasarların ve galaksilerin Büyük Patlama'dan sonraki ilk milyar yıl içinde oluştuğunu gösterdiğini yazar; JWST'nin bu konudaki rekorları d8'de. Kesinlik: evrenin zaman içinde değiştiği gözlemle kesinleşmiş bir olgudur. Bilimin hakemi burada açıkça görülür: tartışmayı ne Hoyle'un ünü ne de karşı tarafın sayısı bitirdi; gökyüzünü saymak bitirdi."
+      ],
+      "akilda": "Kararlı Durum her çağda aynı evreni öngörüyordu. Radyo kaynak sayımları (1961'e kadar), Schmidt'in 1967'de kuasarların erken evrende çok daha yaygın olduğunu bulması ve uzak galaksilerin farklı görünmesi evrimleşen bir evreni gösterdi."
+    },
+    {
+      "baslik": "1965: arka plan ışıması kararı veriyor",
+      "paragraflar": [
+        "Keşfin kendisi, yani Penzias ve Wilson'ın antenindeki açıklanamayan gürültü ve Princeton ekibinin yorumu, d58'in konusu. Burada sonucun kuramlar savaşı için ne anlama geldiğine bakıyoruz. Sıcak bir başlangıç, gökyüzünün her yönünden aynı sıcaklıkta gelen ve tayfı bir kara cisim eğrisine uyan bir ışıma öngörür. Wikipedia'ya göre ışımanın gerçekten kozmik olduğunu göstermek için iki şart gerekiyordu: tayfın ısıl, yani kara cisim biçiminde olduğu 1968'e kadar farklı dalga boylarındaki ölçümlerle gösterildi; ışımanın her yönden aynı geldiği de 1970'e kadar gösterildi. İki şart birlikte sağlanınca alternatif açıklamaların çoğu elendi.",
+        "Kararlı Durum'un savunucuları bir açıklama denedi: bu ışıma, eski yıldızların ışığının galaksilerdeki tozca saçılıp yeniden yayılmasından gelebilirdi. Wikipedia'ya göre bu açıklama üç yerden çöktü. Birincisi, ışıma her yönden son derece düzgün geliyor; sayısız ayrı nokta kaynaktan böyle bir düzgünlük çıkarmak çok zor. İkincisi, saçılmanın kendine özgü kutuplanması görülmüyor. Üçüncüsü ve en ağırı, tayf ideal bir kara cisme o kadar yakın ki farklı sıcaklıklarda ve farklı kırmızıya kaymalardaki çok sayıda toz topağının katkılarını üst üste koyarak elde edilemez. Farklı renklerdeki boyaları karıştırıp kusursuz tek bir renk tonu elde etmeye çalışmak gibidir: karışım hep bir şeyleri ele verir.",
+        "Weinberg'in 1972'deki yargısı bunu özetler: ışıma gerçekten kara cisim ışımasıysa, evrenin daha sıcak ve daha yoğun bir erken evreden evrildiğinden kuşku duymak zor olacaktır. Wikipedia'ya göre 1960'ların sonunda kozmologların çoğu Kararlı Durum'un yanlış olduğuna ikna olmuştu. Hoyle pes etmedi: 1993'te Geoffrey Burbidge ve Jayant Narlikar'la birlikte, evrende zaman zaman küçük yaratılış patlamaları öngören yarı kararlı durum kozmolojisini önerdi. Kozmolog Ned Wright ve başkaları modelde gözlemlerle uyuşmayan kusurlar gösterdi; model yaygın kabul görmedi. Hoyle 2001'de, Büyük Patlama kuramını hiç kabul etmeden öldü.",
+        "Kaybeden kuramın da bilime büyük katkısı oldu. Hoyle yıldızlarda element üretiminin kuramını kuranlardan biriydi (d6). Bugünkü resimde iki fikir birbirini tamamlar: Wikipedia'nın αβγ makalesi maddesine göre çekirdek sentezinin iki aşamada olduğu düşünülür; hidrojen ve helyum Büyük Patlama'da, daha ağır elementler yıldızlarda oluştu. Kararlı Durum, kesin öngörüler yaparak Büyük Patlama'yı da daha kesin olmaya zorladı. Kesinlik: Kararlı Durum bugün gözlemle çürütülmüş bir kuramdır; evrenin sıcak ve yoğun bir geçmişten geldiği ise gözlemle kesinleşmiştir."
+      ],
+      "akilda": "Arka plan ışımasının kara cisim tayfı (1968'e kadar) ve her yönde aynılığı (1970'e kadar) gösterilince Kararlı Durum'un toz açıklaması çöktü. 1960'ların sonunda kozmologların çoğu Büyük Patlama'yı kabul etmişti."
+    },
+    {
+      "baslik": "İlk çekirdekler: kuramın en sert sınavı",
+      "paragraflar": [
+        "d8'de ilk yirmi dakikanın sonuçlarını gördün: kütlece yaklaşık dörtte üç hidrojen, dörtte bir helyum, çok az döteryum ve helyum-3, çok çok az lityum. Burada bu sayıların kuramı nasıl sınadığına bakıyoruz. Wikipedia'ya göre arka plan ışımasının keşfi, Jim Peebles'a ölçülen yaklaşık 3 K sıcaklığı kullanarak ilk ayrıntılı bolluk hesaplarını yapma olanağı verdi; Peebles helyum için yüzde 26 ile 28 arası buldu. Ertesi yıl Hoyle, William Fowler ve Robert Wagoner, çok hafif elementlerin yıldızların sağlayabileceğinden daha yüksek sıcaklıklar gerektirdiğini gösterdi; bilim insanlarının çoğu bunu Büyük Patlama'ya destek saydı. Kararlı Durum'un kurucusunun hesabının rakip kuramı güçlendirmesi, bilimde kanıtın kişiye bakmadığının güzel bir örneğidir.",
+        "Bu sınav neden bu kadar sert? Wikipedia iki gerekçe verir. Birincisi, Büyük Patlama'yı yüzde 20–30 aralığından belirgin biçimde fazla ya da az helyum üretecek biçimde ayarlamak neredeyse imkânsızdır; yani kuramın elinde sonucu istediği gibi oynatacak bir düğme yoktur. İkincisi, yıldızlar oluşmadan önceki genç evrenin neden döteryumdan çok helyum, helyum-3'ten çok döteryum içermesi gerektiğine, üstelik sabit oranlarda, Büyük Patlama dışında bilinen açık bir neden yoktur. Bir kuramın gücü, neyin olamayacağını söylemesinden gelir; burada kuram, olası bolluk oranlarının çok dar bir kümesini işaret eder ve gözlem o kümenin içine düşer.",
+        "Ölçmek kolay değildir, çünkü yıldızlar milyarlarca yıldır elementleri değiştiriyor. Wikipedia'ya göre bu yüzden ilksel bollukları ölçmek için ağır elementi az, yani yıldız ürünleriyle az kirlenmiş ortamlara bakılır. Döteryum, uzak ve parlak kuasarların önünden geçen metal fakiri gaz bulutlarının soğurma tayflarından ölçülür; helyum-4 ise metal fakiri cüce galaksilerdeki helyumun ışık çizgilerinden. İki ölçüm de bugün yüzde düzeyinde hassastır ve ikisi de kuramın öngörüsüyle genel olarak uyumludur. Aynı kaynağa göre 1972'de Copernicus uydusu döteryumun ilk hassas ölçümlerini sağladı; 1990'lara gelindiğinde döteryumdan çıkan madde yoğunluğu, evrende baryonlardan başka bir kütle olması gerektiğini gösteriyordu (karanlık madde d17'de).",
+        "Döteryum bu yüzden bir tür baryon terazisidir. Wikipedia'ya göre ilk döteryum miktarı baryon/foton oranına son derece duyarlıdır: oran 10 kat azalırsa ilk döteryum yaklaşık 50 kat artar. Baryon/foton oranı, her bir proton ya da nötrona kaç foton düştüğünü söyleyen sayıdır; değeri yaklaşık 6×10⁻¹⁰'dur (d8). Neden ters yönde? Aynı kaynağa göre fotonlara düşen baryon sayısı arttıkça çekirdek sentezi daha erken başlar ve daha uzun sürer; helyum-4'e kaynaşabilen hafif çekirdekler, döteryum da dahil, daha çok tükenir ve geride az döteryum kalır. Bugün bu oran döteryumdan yaklaşık yüzde 1 belirsizlikle bulunur. Aynı oran, tamamen başka bir fizikle, arka plan ışımasının lekelerinden de ölçülür (d58). İki yöntemin, aralarında yaklaşık 380.000 yıl olan iki çağdan aynı sayıyı çıkarması, kuramın en güçlü tutarlılık sınavlarından biridir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Döteryum terazisi ne kadar hassas?",
+        "metin": "Kural: baryon/foton oranı η 10 kat azalırsa döteryum yaklaşık 50 kat artar. Bunu bir kuvvet bağıntısı gibi yaz: D ∝ η üzeri eksi p. 10 üzeri p = 50 olmalı; log 50 ≈ 1,70, yani p ≈ 1,7. Şimdi η yüzde 10 artsın (1,1 kat): döteryum 1,1 üzeri eksi 1,7 ≈ 0,85 katına iner, yani yaklaşık yüzde 15 azalır. Tersinden düşün: döteryumu yüzde 10 hassasiyetle ölçersen η'yı yaklaşık 10 / 1,7 ≈ yüzde 6 hassasiyetle bulursun. Döteryum η'daki değişimi 1,7 kat büyüterek gösterdiği için iyi bir terazidir. Bu basit kuvvet bağıntısı kaynaktaki 10 kat – 50 kat ilişkisinden türetilmiş kaba bir yaklaşımdır; gerçek hesaplar tam tepkime ağıyla yapılır. Sonuç birimi: yüzde (oran)."
+      },
+      "akilda": "Hafif element bollukları tek bir sayıya, baryon/foton oranına bağlıdır ve Büyük Patlama'yı istenen sonucu verecek biçimde ayarlamak neredeyse imkânsızdır. Döteryum bu oranı ölçen hassas bir terazidir; sonuç arka plan ışımasından çıkan değerle uyuşur."
+    },
+    {
+      "baslik": "Lityum sorunu ve ilksel gaz bulutları",
+      "paragraflar": [
+        "Kuramın karnesi her derste aynı ölçüde parlak değildir. Wikipedia'nın Büyük Patlama maddesine göre ölçülen bolluklar tek bir baryon/foton oranından öngörülen değerlerle en azından kabaca uyuşur: döteryumda uyum mükemmeldir, helyum-4'te yakın ama biçimsel olarak uyuşmaz, lityum-7'de ise yaklaşık 2 kat sapma vardır. Büyük Patlama çekirdek sentezi maddesi lityum için sapmayı 2 ile 4 kat arası verir (d8 de bu aralığı kullanır). Kaynaklar arasındaki bu fark, ölçümün kendisinin ne kadar zor olduğunu gösterir. Bu uyuşmazlığa kozmolojik lityum sorunu denir.",
+        "Sorunun kaynağı henüz bilinmiyor ve ölçümün kendisi de tartışmalı. Wikipedia'ya göre 1980'lerde farklı metal oranlarına sahip yaşlı (Popülasyon II) cüce yıldızlarda lityumun benzer düzeyde olduğu görüldü; bu düzlüğe Spite platosu dendi ve ilksel lityum bolluğunu gösterdiği düşünüldü. Ama daha da metal fakiri yıldızlarda daha az lityum bulundu ve platonun gerçekten ilksel değer olup olmadığı sorgulanmaya başladı. Bir başka zorluk da yıldızların lityumu kolayca yakmasıdır: Wikipedia'ya göre hidrojeni kaynaştıracak sıcaklığa, yaklaşık 2,5 milyon kelvine ulaşan yıldızlar lityumlarını hızla tüketir. Yani yaşlı bir yıldızın yüzeyinde ölçülen lityumun başlangıçtaki miktarı ne kadar yansıttığı açık bir sorudur.",
+        "Bu sorun nasıl okunmalı? Kesinlik: hidrojen, helyum ve döteryum bolluklarının Büyük Patlama'dan geldiği gözlemle kesinleşmiştir. Lityum sorunu ise açık bir sorudur: ölçüm hatası da olabilir, yıldızların içindeki bir süreç de, yeni bir fizik de. İyi bilim uyuşmazlığı görmezden gelmez, kayda geçirir ve çözülene kadar açık tutar. Ama tek bir uyuşmazlık, birçok bağımsız uyumu silmez. Aşağıdaki örnekte kuramın aynı anda tutturduğu bollukların ne kadar geniş bir aralığa yayıldığını göreceksin.",
+        "İlksel maddenin bizzat kendisi de görüldü. Wikipedia'ya göre 2011'de gökbilimciler uzak kuasarların tayflarındaki soğurma çizgilerini inceleyerek ilksel gaz olduğunu düşündükleri iki bulut buldu. Ölçümler karbona, oksijene ve silisyuma duyarlıydı, ama bu bulutlarda üçü de saptanmadı. Daha önce incelenen bütün gökcisimlerinde yıldızlarda üretilmiş ağır elementler bulunmuştu. Ağır elementin saptanamadığı bu bulutların büyük olasılıkla Büyük Patlama çekirdek sentezi sırasında, yani ilk birkaç dakikada oluşmuş maddeden geldiği düşünülüyor. Bu, kuramın öngördüğü saf hidrojen-helyum karışımının gökyüzündeki bir örneğidir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Kuram ne kadar geniş bir aralığı tek sayıyla tutturuyor?",
+        "metin": "Wikipedia'nın verdiği öngörülen kütle oranları (hidrojene göre): helyum-4 yaklaşık 0,25, döteryum yaklaşık 10⁻³, helyum-3 yaklaşık 10⁻⁴, lityum-7 yaklaşık 10⁻⁹. En büyükle en küçüğün oranı: 0,25 / 10⁻⁹ = 2,5×10⁸, yani 250 milyon kat. Kuram bu dört sayıyı tek bir değişkenle, baryon/foton oranıyla birlikte öngörür. Lityumda 2 kat sapma, bu ölçekte küçük görünür; ama ölçüm hataları bunun altında olduğu için ciddiye alınır. 2 kat sapma 10⁻⁹ yerine yaklaşık 0,5×10⁻⁹ ölçmek demektir; 4 kat sapma 0,25×10⁻⁹. Sonuç birimi: kütle oranı (birimsiz)."
+      },
+      "akilda": "Döteryumda uyum mükemmel, helyumda yakın; lityum-7'de ölçüm öngörünün 2–4 katı altında kalıyor (lityum sorunu, açık). 2011'de ağır elementi saptanamayan ilksel gaz bulutları bulundu."
+    },
+    {
+      "baslik": "Uzak evren geçmişi gösterir: iki modern sınav",
+      "paragraflar": [
+        "Büyük Patlama açık ve sınanabilir bir öngörü yapar: arka plan ışıması geçmişte daha sıcaktı ve sıcaklığı T = T0 × (1 + z) bağıntısıyla artar (d8). Durağan bir evrende böyle bir zorunluluk yoktur. Wikipedia'ya göre bu öngörü, kırmızıya kayması büyük gaz bulutlarındaki çok soğuk soğurma çizgilerinin gözlemiyle desteklenmiştir. Yöntem şöyle işler: uzak bir buluttaki moleküller arka plan ışımasıyla aynı sıcaklığa gelir, tıpkı bir odadaki eşyaların oda sıcaklığına gelmesi gibi. Moleküllerin enerji düzeylerinin ne oranda dolu olduğunu tayftan okursan, o çağın arka plan sıcaklığını ölçmüş olursun. d58'de göreceğin gibi aynı yöntemle 1941'de, yakındaki yıldızlararası gazda, farkına varılmadan 2,3 K ölçülmüştü.",
+        "2008'de bu termometre uzak evrende kullanıldı. Astronomy and Astrophysics dergisinde yayımlanan çalışmaya göre Srianand, Noterdaeme, Ledoux ve Petitjean, SDSS J143912.04+111740.5 adlı kuasarın önünde, kırmızıya kayması z = 2,41837 olan bir gaz bulutunda karbon monoksit buldu ve arka plan ışımasının o çağdaki sıcaklığını 9,15 ± 0,72 K olarak ölçtü; sıcak Büyük Patlama'nın beklediği değer 9,315 ± 0,007 K idi. Phys.org'daki habere göre ölçüm ESO'nun Çok Büyük Teleskobu'ndaki UVES tayfölçeriyle yapıldı ve bulutun ışığı bize yaklaşık 11 milyar yılda ulaştı. Kesinlik: geçmişte daha sıcak bir arka plan, gözlemle kesinleşmiş bir sonuçtur.",
+        "İkinci sınav zamanın kendisiyle ilgilidir. Genişleyen bir evrende uzaktaki olaylar bize ağır çekimde görünür: z kırmızıya kaymasındaki bir olay (1 + z) kat uzun sürer. Örneğin z = 1'deki 20 günlük bir parlama bize 40 gün sürüyormuş gibi görünür. 1930'larda Fritz Zwicky'nin önerdiği yorgun ışık fikri ise kırmızıya kaymayı, evren genişlemeden ışığın yolda enerji kaybetmesiyle açıklıyordu; böyle bir evrende zaman uzamaz. 2024'te Karanlık Enerji Taraması (DES), 0,1 ile 1,2 arasındaki kırmızıya kaymalarda 1504 Tip Ia süpernovasının ışık eğrilerini inceledi. Süreler (1 + z) üzeri b ile uzuyordu ve b = 1,003 ± 0,005 (istatistik) ± 0,010 (sistematik) bulundu. Yazarlara göre zaman genişlemesi göstermeyen modeller çok yüksek anlamlılıkla dışlanır.",
+        "Her test bu kadar temiz değildir ve bunu söylemek gerekir. 1930'da Richard Tolman, galaksilerin yüzey parlaklığının kırmızıya kaymayla nasıl azaldığına bakarak genişlemenin sınanabileceğini önerdi. Wikipedia'ya göre Keck ve Hubble teleskoplarıyla yaklaşık bin galaksi üzerinde yapılan bir çalışma sonucu genişlemeyle tutarlı buldu; ama bazı çalışmalar, galaksilerin zamanla değişmesi hesaba katılınca bu testin her durağan modeli dışlayamadığını savundu. Galaksiler evrimleştiği için onları sabit bir ölçü gibi kullanmak zordur. Süpernovaların zaman genişlemesi bu yüzden daha güçlü bir kanıttır: Wikipedia'ya göre yorgun ışık modelleri süpernova gözlemleriyle çelişir, çünkü kozmolojik zaman genişlemesini öngörmezler. Bilim tek bir mükemmel deneye değil, birbirini destekleyen testlerin toplamına dayanır."
+      ],
+      "ornek": {
+        "baslik": "Örnek: 11 milyar yıl önceki termometreyi kendin denetle",
+        "metin": "Bağıntı: T(z) = T0 × (1 + z). T0 = 2,725 K, z = 2,41837 olsun. 1 + z = 3,41837. T = 2,725 × 3,41837 ≈ 9,315 K. Ölçülen 9,15 ± 0,72 K. Fark: 9,315 − 9,15 = 0,165 K. Bu fark ölçüm belirsizliğinin 0,165 / 0,72 ≈ 0,23 katı, yani belirsizliğin rahatça içinde. Karşılaştırma için: durağan bir evrende sıcaklık her çağda yaklaşık 2,7 K kalırdı; ölçülen değer bundan 9,15 − 2,725 ≈ 6,4 K, yani belirsizliğin yaklaşık 9 katı uzakta. Sonuç birimi: kelvin."
+      },
+      "akilda": "Geçmişteki arka plan sıcaklığı ölçüldü: z = 2,418'de 9,15 ± 0,72 K, öngörü 9,315 K. DES 2024, 1504 süpernovada süre uzamasını (1 + z) üzeri 1,003 ± 0,005 buldu; yorgun ışık dışlandı."
+    },
+    {
+      "baslik": "Evren kaç yaşında? Sayının arkasındaki model",
+      "paragraflar": [
+        "Evrenin yaşı yaklaşık 13,8 milyar yıldır; Planck uydusunun 2018 sonuçlarına göre 13,797 ± 0,023 milyar yıl (d8). Ama bu sayı bir saatin okunması gibi doğrudan ölçülmez. Wikipedia'ya göre Uluslararası Astronomi Birliği evrenin yaşı terimini, standart kozmoloji modeli ΛCDM'deki genişlemenin süresi anlamında kullanır. ΛCDM, kozmolojik sabit (Λ) ile soğuk karanlık maddeyi (CDM) içeren modelin kısaltmasıdır (d17). Yöntem şudur: bugünkü genişleme hızı H0 ile evrendeki madde, ışınım ve karanlık enerji oranları ölçülür; Friedmann denklemleri ile genişleme geriye doğru, ölçek çarpanının sıfıra indiği ana kadar izlenir.",
+        "Sonuç t0 = F / H0 biçiminde yazılabilir. Wikipedia'ya göre buradaki F düzeltme çarpanı yalnızca bileşime bağlıdır; Planck'ın madde ve karanlık enerji oranlarıyla F yaklaşık 0,956'dır. Kozmolojik sabiti olmayan, yalnızca maddeyle dolu düz bir evrende ise F = 2/3 olur, yani aynı H0 ile evren çok daha genç çıkar. Aynı kaynak tarihsel bir sorunu hatırlatır: kozmolojik sabit genel kabul görmeden önce, Büyük Patlama modeli Samanyolu'ndaki küresel kümelerin neden yalnızca maddeyle dolu bir evrenden hesaplanan yaştan yaşlı göründüğünü açıklamakta zorlanıyordu. Lemaître ise yıllar önce pozitif bir kozmolojik sabiti savunmuş, bunun bir gerekçesi olarak da yaşı en yaşlı yıldızlarla uzlaştırmayı göstermişti; Wikipedia'ya göre 2011 Nobel'inin bilimsel arka plan metni hızlanmayı süren vakum enerjisi fikrini ona bağlar.",
+        "Farklı uydular birbirine çok yakın sayılar verdi. Wikipedia'ya göre WMAP'in 2012'deki dokuz yıllık verisi 13,772 ± 0,059 milyar yıl buldu. Yöntem, arka plan ışımasının güç tayfındaki ilk akustik zirvenin konumundan ışığın ayrıştığı yüzeyin boyutunu çıkarmaya ve oradan ışığın yolculuk süresini hesaplamaya dayanıyordu; aynı kaynak bu yaşın modelin doğru olduğu varsayımına bağlı olduğunu ve model doğruysa hata payının yaklaşık yüzde 1 olduğunu yazar. Planck 2015'te 13,813 ± 0,038 verdi, 2018'de 13,797 ± 0,023. Bağımsız bir sağlama en yaşlı yıldızlardan gelir (d8). Kesinlik: model içinde yaşın değeri gözlemle kesinleşmiştir; modelin kendisi, özellikle karanlık enerji ve Hubble gerilimi (d17) yüzünden, güçlü kanıtlı ama açık sorulu basamaktadır."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Karanlık enerji olmasaydı evren kaç yaşında çıkardı?",
+        "metin": "Hubble zamanı: 977,8 / 67,4 ≈ 14,5 milyar yıl (d8). Planck bileşimiyle F ≈ 0,956: t0 ≈ 14,5 × 0,956 ≈ 13,9 milyar yıl. Planck'ın tam hesabı 13,797 verir; küçük fark Wikipedia'daki F değerinin biraz farklı bir parametre setinden (Ωm = 0,3086) gelmesinden ve yuvarlamadan kaynaklanır. Yalnız maddeyle dolu düz evren, F = 2/3: t0 ≈ 14,5 × 2/3 ≈ 9,7 milyar yıl. d8'deki 2026 çalışmasına göre en yaşlı küresel kümelerin ortalama yaşı 13,61 milyar yıl. 9,7 < 13,6: böyle bir evren, içindeki yıldızlardan yaklaşık 4 milyar yıl genç olurdu. Sonuç birimi: milyar yıl."
+      },
+      "akilda": "Evrenin yaşı (13,797 ± 0,023 milyar yıl) H0 ve bileşimden, t0 = F / H0 ile hesaplanır; Planck değerleriyle F ≈ 0,956. Yalnız maddeli bir evrende F = 2/3 olurdu ve evren en yaşlı yıldızlardan genç çıkardı; kozmolojik sabit bu sorunu çözdü."
+    },
+    {
+      "baslik": "Yaygın yanlış anlamalar",
+      "paragraflar": [
+        "Birinci yanlış: Büyük Patlama boşlukta bir noktada olan bir patlamadır. Wikipedia açıkça yazar: evrenin genişlemesi tek bir noktada değil, her yerde olur. d8'deki kek benzetmesine bir ikincisini ekleyelim: elinde bir şehir haritası var ve haritanın ölçek çubuğu her gün biraz daha uzun bir gerçek uzaklığı gösteriyor. Haritadaki şehirlerin hiçbiri yerinden oynamaz, ama aralarındaki gerçek uzaklıklar her gün büyür ve hiçbir şehir merkez değildir. Benzetmenin sınırı: harita iki boyutludur ve sen ona dışarıdan bakarsın; evrene dışarıdan bakılacak bir yer yoktur. Ayrıca harita bütün uzaklıkları büyütür, oysa evrende kütleçekimiyle birbirine bağlı galaksiler, yıldızlar ve gezegenler büyümez (d17).",
+        "İkinci yanlış: galaksiler uzayın içinde bizden kaçıyor. Wikipedia'ya göre Hubble yasasındaki uzaklaşma hızları görelilik kuramındaki anlamıyla birer hız değildir; bu yüzden Hubble uzaklığının ötesindeki galaksilerin ışıktan hızlı uzaklaşması şaşırtıcı değildir ve ışıktan hızlı bir yolculuk anlamına gelmez. Büyüyen şey, galaksilerin arasındaki uzaklıktır. Önceki bölümde gördüğün süpernova zaman genişlemesi de bu resmin bir sonucudur. Üçüncü yanlış: evren bir şeyin içine doğru genişliyor. Genişleme, evrenin dışında bir uzay olduğu anlamına gelmez; tanım gereği büyüyen şey içerideki uzaklıklardır. Evren sonsuz da olabilir (d8); sonsuz bir evren de genişleyebilir, çünkü “genişliyor” demek “her iki galaksi arasındaki uzaklık büyüyor” demektir.",
+        "Dördüncü yanlış: Büyük Patlama evrenin kökenini açıklar. Wikipedia bunu yaygın bir yanlış anlama olarak anar: model evreni yalnızca sıcak ve yoğun ısıl bir hâldeyken betimler. Bugünkü görüşe göre şişme bu hâlden önce geldi; Büyük Patlama, şişmeyi süren enerjinin yeniden ısınma denen süreçle sıcak bir plazmaya dönüşmesinden sonra başladı. Burada bir dil tuzağı da var: aynı kaynağa göre Büyük Patlama terimi bazen ilk tekilliği, bazen genel olarak erken sıcak ve yoğun evreyi anlatır. Bir haberde “Büyük Patlama anında” diye bir ifade okuduğunda hangi anlamın kastedildiğini sor. Sıcak ve yoğun evre gözlemle kesinleşmiş; tekillik ise, bir sonraki bölümde göreceğin gibi, belki de hiç var olmamış bir matematik uç noktasıdır."
+      ],
+      "akilda": "Büyük Patlama bir noktadan patlama değil, her yerde aynı anda genişlemedir; galaksiler uzayda kaçmaz, aradaki uzaklıklar büyür; evren bir şeyin içine genişlemez. Kuram kökeni değil, sıcak yoğun hâlden sonrasını anlatır."
+    },
+    {
+      "baslik": "Büyük Patlama'dan önce ne vardı? Sorunun anlamı",
+      "paragraflar": [
+        "Bu soru iki ayrı anlamda sorulabilir ve cevapları çok farklıdır. Önce kuramın kendi sınırına bakalım. Wikipedia'ya göre şişme kuramından önceki Büyük Patlama modeli geriye doğru bir tekilliğe, yani yoğunluğun ve sıcaklığın sonsuza gittiği bir noktaya uzatılıyordu. 1968 ve 1970'te Roger Penrose, Stephen Hawking ve George Ellis, göreli Büyük Patlama modellerinde tekilliklerin kaçınılmaz bir başlangıç koşulu olduğunu gösterdi. Tekillikten sonra gelen döneme Planck çağı denir: sıcaklık yaklaşık 10³² K'dir ve çağ yaklaşık 10⁻⁴³ saniyeye kadar sürer. Aynı kaynağa göre bu koşullarda parçacık kavramı bile çöker ve dönemi anlamak için henüz elimizde olmayan bir kuantum kütleçekim kuramı gerekir.",
+        "Önemli bir nokta: tekillik büyük olasılıkla doğanın değil, kuramın sınırıdır. Wikipedia'ya göre ilk tekillik genel göreliliğin geriye doğru uzatılmasından doğar ve bir kuantum kütleçekim kuramında olmayabilir. Bir haritanın kenarına gelip “dünya burada bitiyor” demek gibi değil, “bu harita burada bitiyor” demek gibidir. Bugünkü görüşte evren şişmeden aşırı soğumuş bir hâlde çıktı; yeniden ısınma şişmeyi süren enerjiyi sıcak ve yoğun bir plazmaya çevirdi ve sıcak Büyük Patlama böyle başladı. Bu anlamda “Büyük Patlama'dan önce” sorusunun en güçlü aday cevabı şişmedir. Kesinlik: şişme güçlü kanıtlı ama açık sorulu basamaktadır; arka plan ışımasındaki desen öngörüleriyle iyi uyuşur (d58), ayrıntısı ve eleştirileri d54'te.",
+        "Soru “zamanın kendisinden önce ne vardı?” anlamında sorulursa cevap bilinmiyor. Lemaître'nin 1931'deki sezgisi, yani başlangıcın uzay ve zamanın başlangıcından biraz önce olabileceği fikri, bugün de tartışılan bir sorunun ilk biçimlerinden biridir. Hartle–Hawking'in sınırı olmayan başlangıç önerisi, sıçrayan evren modelleri ve Penrose'un döngüsel kozmolojisi gibi senaryolar kuramlar ünitesindeki d55'te, her biri kendi kesinlik etiketiyle anlatılıyor; çoğu kuram ya da hipotez, bazıları spekülasyon basamağındadır. Wikipedia'nın da yazdığı gibi, evrenin kökenine dair doğru bir anlayış şimdilik ancak tahmine dayanabilir. Bunu söylemek kuramın zayıflığı değil, sınırını bilmesidir."
+      ],
+      "akilda": "Klasik model geriye doğru bir tekilliğe uzanır (Penrose, Hawking, Ellis 1968–1970), ama tekillik büyük olasılıkla kuramın sınırıdır. Sıcak Büyük Patlama'dan önce büyük olasılıkla şişme vardı (güçlü kanıtlı ama açık sorulu); zamanın başlangıcı sorusu açık (d55)."
+    },
+    {
+      "baslik": "Kuramın karnesi: ne kesin, ne açık?",
+      "paragraflar": [
+        "Wikipedia, Büyük Patlama'nın en eski ve en doğrudan kanıtlarını üç başlıkta toplar: kırmızıya kaymalarla görülen genişleme, kozmik mikrodalga arka plan ışımasının keşfi ve ölçümü, ilk çekirdeklerin göreli bollukları. Galaksilerin evrimi ve büyük ölçekli yapının dağılımı da eklenince bunlara modelin dört sütunu denir. Bu derste her birinin ayrı bir ölçüm türünden geldiğini gördün: tayflar, radyo antenleri, gaz bulutlarının kimyası, gökyüzü sayımları. Bunlara modern sınavlar eklendi: geçmişteki daha sıcak arka plan ve süpernovaların zaman genişlemesi. Kesinlik: evrenin genişlediği ve sıcak, yoğun bir geçmişten geldiği gözlemle kesinleşmiştir.",
+        "Açık sorular da vardır ve Wikipedia bunları açıkça sıralar: maddenin karşıt maddeye neden üstün geldiği (baryon asimetrisi), galaksileri saran karanlık maddenin doğası ve karanlık enerjinin kökeni. Bunlara bu derste gördüğün lityum sorunu ve d17'deki Hubble gerilimi eklenir. Aynı kaynak, erken evrendeki bazı cisimlerin, örneğin APM 08279+5255 kuasarının, ΛCDM'de bu kadar erken oluşmaya yeterli zamanı olup olmadığı konusunda kaygılar bulunduğunu da not eder. Bu sorular sıcak Büyük Patlama'nın kendisini değil, onun üzerine kurulan ayrıntılı modeli sorgular. Karanlık maddenin ve karanlık enerjinin ne olduğu kuramlar ünitesinde (d50, d51) kesinlik etiketleriyle ele alınıyor.",
+        "Kuramın kuruluş öyküsünü toparlayalım. Önce matematik geldi: Friedmann ve Lemaître genel göreliliğin genişleyen evrenlere izin verdiğini gösterdi. Sonra gözlem: Slipher ve Hubble galaksilerin uzaklaştığını ölçtü. Sonra fizik: Gamow, Alpher ve Herman sıcak başlangıcın ne bırakması gerektiğini hesapladı. Sonra güçlü bir rakip: Hoyle'un Kararlı Durum'u kesin öngörüleriyle kuramı sınamaya zorladı. En sonunda hakem: radyo sayımları, kuasarlar, arka plan ışıması ve hafif elementler. Bu süreçte hiçbir otorite yetmedi: Einstein başta yanıldı, Hoyle sonuna kadar karşı çıktı, Lemaître kozmik ışınlar konusunda yanıldı. Kuramı ayakta tutan şey kimin söylediği değil, gökyüzünün verdiği cevaplardı."
+      ],
+      "akilda": "Dört sütun: genişleme, arka plan ışıması, hafif element bollukları, galaksi evrimi ve büyük ölçekli yapı. Sıcak yoğun geçmiş gözlemle kesinleşmiş; baryon asimetrisi, karanlık madde, karanlık enerji, lityum ve Hubble gerilimi açık sorular."
+    }
+  ],
+  "formuller": [
+    {
+      "ad": "Hubble–Lemaître yasası",
+      "ifade": "v = H0 × d",
+      "aciklama": "v uzaklaşma hızı (km/s), d uzaklık (Mpc), H0 Hubble sabiti (km/s/Mpc). Lemaître 1927: 625; Hubble 1929: 500; Planck 2018: 67,4. Çekimle bağlı yakın galaksilere uygulanmaz."
+    },
+    {
+      "ad": "Hubble zamanı",
+      "ifade": "tH ≈ 977,8 / H0 milyar yıl",
+      "aciklama": "H0 km/s/Mpc cinsinden. Genişleme hep aynı hızda sürseydi evrenin yaşı bu olurdu. 67,4 için ≈ 14,5 milyar yıl."
+    },
+    {
+      "ad": "Evrenin yaşı",
+      "ifade": "t0 = F / H0",
+      "aciklama": "F yalnız bileşime bağlı düzeltme çarpanı (birimsiz): Planck bileşimiyle ≈ 0,956, yalnız maddeli düz evrende 2/3. 1 / H0 Hubble zamanıdır."
+    },
+    {
+      "ad": "Arka plan sıcaklığının geçmişi",
+      "ifade": "T(z) = T0 × (1 + z)",
+      "aciklama": "T0 = 2,725 K bugünkü sıcaklık, z kırmızıya kayma. z = 2,418 için ≈ 9,3 K; 2008'de 9,15 ± 0,72 K ölçüldü."
+    },
+    {
+      "ad": "Kozmolojik zaman genişlemesi",
+      "ifade": "Δt gözlenen = Δt kaynakta × (1 + z)",
+      "aciklama": "z kırmızıya kaymadaki bir olayın süresi bize (1 + z) kat uzun görünür. DES 2024 üssü 1,003 ± 0,005 (istatistik) ± 0,010 (sistematik) ölçtü."
+    },
+    {
+      "ad": "Sürekli yaratılış hızı (Kararlı Durum)",
+      "ifade": "yaratılış hızı ≈ 3 × H0 × n",
+      "aciklama": "n ortalama sayı yoğunluğu (atom / m³), H0 bölü zaman biriminden. Hacim ölçek çarpanının küpüyle büyüdüğü için kesirli büyüme 3 × H0'dır. n = 0,25 için ≈ 0,05 atom / m³ / milyar yıl."
+    },
+    {
+      "ad": "Wien yasası",
+      "ifade": "λtepe = 2,898×10⁻³ m·K / T",
+      "aciklama": "T kelvin, λ metre. Kara cisim ışımasının en parlak olduğu dalga boyu. 2,725 K için ≈ 1,06 mm."
+    }
+  ],
+  "anahtar_sayilar": [
+    {
+      "deger": "1922; 1924",
+      "aciklama": "Friedmann'ın genişleyen evren çözümleri ve eksi eğrilikli uzay makalesi",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Friedmann_equations"
+    },
+    {
+      "deger": "1927; 625 km/s/Mpc",
+      "aciklama": "Lemaître'nin makalesi ve genişleme hızı kestirimi",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Hubble%27s_law"
+    },
+    {
+      "deger": "Mart 1931",
+      "aciklama": "Lemaître'nin Nature'da ilkel atom önerisi",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Georges_Lema%C3%AEtre"
+    },
+    {
+      "deger": "1929; 46 galaksi; 500 km/s/Mpc",
+      "aciklama": "Hubble'ın uzaklık-hız ilişkisi ve H0 değeri",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Hubble%27s_law"
+    },
+    {
+      "deger": "26 Ekim 2018; %78; 4.060 / 11.072 üye",
+      "aciklama": "IAU'nun Hubble–Lemaître yasası oylaması",
+      "kaynak_url": "https://iau.org/news/pressreleases/detail/iau1812"
+    },
+    {
+      "deger": "1 Nisan 1948",
+      "aciklama": "αβγ makalesinin Physical Review'de yayımı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Alpher%E2%80%93Bethe%E2%80%93Gamow_paper"
+    },
+    {
+      "deger": "~5 K (1948); 50 K (1946); 7 K (1953)",
+      "aciklama": "Alpher-Herman ve Gamow'un artık ışıma sıcaklığı tahminleri",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Cosmic_microwave_background"
+    },
+    {
+      "deger": "28 Mart 1949",
+      "aciklama": "Hoyle'un BBC Third Programme konuşmasında “Big Bang” demesi",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Fred_Hoyle"
+    },
+    {
+      "deger": "1948",
+      "aciklama": "Bondi, Gold ve Hoyle'un Kararlı Durum makaleleri",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Steady-state_model"
+    },
+    {
+      "deger": "1961; 1967",
+      "aciklama": "Radyo kaynak sayımlarının Kararlı Durum'a karşı güçlü kanıtı; Schmidt'in kuasar sayımı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Quasar"
+    },
+    {
+      "deger": "Helyum %26–28",
+      "aciklama": "Peebles'in keşiften sonra 3 K kullanarak yaptığı ilk ayrıntılı helyum bolluğu hesabı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Big_Bang_nucleosynthesis"
+    },
+    {
+      "deger": "η 10 kat ↓ → döteryum ~50 kat ↑",
+      "aciklama": "İlk döteryumun baryon/foton oranına duyarlılığı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Big_Bang_nucleosynthesis"
+    },
+    {
+      "deger": "2 kat (Büyük Patlama maddesi); 2–4 kat (BBN maddesi)",
+      "aciklama": "Lityum-7'de öngörü ile ölçüm arasındaki sapma (lityum sorunu)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Big_Bang"
+    },
+    {
+      "deger": "z = 2,41837; 9,15 ± 0,72 K (öngörü 9,315 K)",
+      "aciklama": "Uzak bir bulutta karbon monoksitle ölçülen arka plan sıcaklığı (2008)",
+      "kaynak_url": "https://repository.ias.ac.in/55225"
+    },
+    {
+      "deger": "b = 1,003 ± 0,005 ± 0,010; 1504 süpernova",
+      "aciklama": "DES 2024: süpernova sürelerinin (1 + z) üzeri b ile uzaması",
+      "kaynak_url": "https://arxiv.org/abs/2406.05050"
+    },
+    {
+      "deger": "13,772 ± 0,059 (WMAP); 13,797 ± 0,023 (Planck)",
+      "aciklama": "Evrenin yaşı, milyar yıl",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Age_of_the_universe"
+    },
+    {
+      "deger": "F ≈ 0,956; madde dolu evrende F = 2/3",
+      "aciklama": "Yaş formülündeki düzeltme çarpanı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Age_of_the_universe"
+    }
+  ],
+  "sozluk": [
+    {
+      "terim": "Friedmann denklemleri",
+      "tanim": "Genel görelilikten türetilen ve evrenin genişleme hızını içindeki madde ve enerjiye bağlayan bağıntılar."
+    },
+    {
+      "terim": "ilkel atom",
+      "tanim": "Lemaître'nin 1931'de önerdiği, evrenin tek bir ilk kuantumun bölünmesiyle başladığı fikri; Büyük Patlama'nın ilk biçimi."
+    },
+    {
+      "terim": "Hubble–Lemaître yasası",
+      "tanim": "Galaksilerin uzaklaşma hızının uzaklıklarıyla orantılı olduğunu söyleyen ilişki; IAU 2018'den beri bu adla anılır."
+    },
+    {
+      "terim": "αβγ makalesi",
+      "tanim": "Alpher, Bethe ve Gamow'un 1948'de yayımlanan, hafif elementlerin sıcak başlangıçta oluştuğunu savunan makalesi."
+    },
+    {
+      "terim": "nötron yakalama",
+      "tanim": "Bir atom çekirdeğinin serbest bir nötronu bünyesine katarak ağırlaşması."
+    },
+    {
+      "terim": "Kararlı Durum kuramı",
+      "tanim": "Evrenin genişlediğini ama sürekli madde yaratılışı sayesinde her zaman aynı göründüğünü savunan, bugün çürütülmüş kozmoloji kuramı."
+    },
+    {
+      "terim": "mükemmel kozmolojik ilke",
+      "tanim": "Evrenin yalnız her yerde ve her yönde değil, her zaman da aynı göründüğü varsayımı."
+    },
+    {
+      "terim": "sürekli yaratılış",
+      "tanim": "Kararlı Durum kuramında, genişleyen evrenin yoğunluğunu sabit tutmak için galaksiler arasında yeni madde oluştuğu varsayımı."
+    },
+    {
+      "terim": "radyo kaynak sayımı",
+      "tanim": "Gökteki radyo kaynaklarını parlaklıklarına göre sayıp uzak ve yakın evrendeki sayılarını karşılaştırma yöntemi."
+    },
+    {
+      "terim": "yorgun ışık",
+      "tanim": "Kırmızıya kaymayı genişleme yerine ışığın yolda enerji kaybetmesiyle açıklamaya çalışan, gözlemlerle çürütülmüş fikir."
+    },
+    {
+      "terim": "kozmolojik zaman genişlemesi",
+      "tanim": "Genişleyen evrende z kırmızıya kaymasındaki bir olayın bize (1 + z) kat yavaşlamış görünmesi."
+    },
+    {
+      "terim": "lityum sorunu",
+      "tanim": "Yaşlı yıldızlarda ölçülen ilk lityum miktarının Büyük Patlama çekirdek sentezinin öngördüğünden 2–4 kat az çıkması."
+    },
+    {
+      "terim": "Spite platosu",
+      "tanim": "Farklı metal oranlarındaki yaşlı cüce yıldızlarda lityum bolluğunun aynı düzeyde görünmesi."
+    },
+    {
+      "terim": "baryon/foton oranı",
+      "tanim": "Evrendeki proton ve nötron sayısının foton sayısına oranı; yaklaşık 6×10⁻¹⁰ olan ve hafif element bolluklarını belirleyen sayı."
+    },
+    {
+      "terim": "ΛCDM modeli",
+      "tanim": "Kozmolojik sabit ve soğuk karanlık madde içeren, bugünkü standart kozmoloji modeli."
+    },
+    {
+      "terim": "Planck çağı",
+      "tanim": "Evrenin yaklaşık ilk 10⁻⁴³ saniyesi; bilinen fiziğin geçerliliğini yitirdiği, kuantum kütleçekim gerektiren dönem."
+    },
+    {
+      "terim": "yeniden ısınma",
+      "tanim": "Şişmenin sonunda, şişmeyi süren enerjinin sıcak ve yoğun bir parçacık plazmasına dönüştüğü süreç."
+    }
+  ],
+  "defter_notu": [
+    "Kesinlik ölçeği: gözlemle kesinleşmiş → güçlü kanıtlı ama açık sorulu → kuram ya da hipotez → spekülasyon (d50).",
+    "Einstein 1917 durağan evren (kararsız). Friedmann 1922: genişleyen çözümler; 1925'te öldü.",
+    "Lemaître 1927: genişleme + H0 ≈ 625; 1931 ilkel atom. Hubble 1929: 46 galaksi, H0 ≈ 500. IAU 2018: Hubble–Lemaître yasası (%78).",
+    "αβγ makalesi 1 Nisan 1948. Alpher-Herman: artık ışıma ~5 K. Ölçülen 2,725 K.",
+    "Kararlı Durum 1948 (Bondi, Gold, Hoyle). Hoyle “Big Bang” dedi: BBC, 28 Mart 1949.",
+    "Kararlı Durum'u bitirenler: radyo sayımları (1961), kuasarlar (Schmidt 1967), arka plan ışımasının kara cisim tayfı.",
+    "Hafif elementler tek sayıya bağlı: η ≈ 6×10⁻¹⁰. Döteryum terazidir (η 10 kat ↓ → D ~50 kat ↑). Lityum 2–4 kat az: açık soru.",
+    "Modern sınavlar: z = 2,418'de T = 9,15 ± 0,72 K (öngörü 9,315); DES 2024 zaman genişlemesi b = 1,003.",
+    "Yaş: t0 = F / H0; F ≈ 0,956 (Planck), madde dolu evrende 2/3 → 9,7 milyar yıl, yıldızlardan genç.",
+    "Büyük Patlama kökeni değil sıcak yoğun hâlden sonrasını anlatır; tekillik büyük olasılıkla kuramın sınırı."
+  ],
+  "sorular": [
+    {
+      "soru": "Friedmann 1922'de neyi gösterdi ve Einstein buna nasıl tepki verdi?",
+      "cevap": "Einstein'ın denklemlerinin tek bir durağan çözümün yanında zamanla değişen, yani genişleyen ya da büzülen pek çok çözümü olduğunu gösterdi. Einstein başta bu çalışmaları reddetti; ancak Hubble'ın 1929'daki gözlemlerinden sonra evrenin durağan olmadığına ikna oldu."
+    },
+    {
+      "soru": "Lemaître'nin 1927 makalesindeki genişleme hızı kestirimi neden 1931 İngilizce çevirisinde yoktu?",
+      "cevap": "Mario Livio'nun 2011'de ortaya koyduğuna göre o paragrafları çeviriyi hazırlarken Lemaître'nin kendisi çıkardı ve yerine Hubble'ın 1929'daki daha güçlü sonuçlarına gönderme yapmayı seçti."
+    },
+    {
+      "soru": "Hubble 1929'da H0 için yaklaşık 500 km/s/Mpc buldu. Bu değerle Hubble zamanı kaç milyar yıldır ve neden sorunluydu?",
+      "cevap": "977,8 / 500 ≈ 1,96 milyar yıl. Dünya yaklaşık 4,54 milyar yaşında olduğu için bu sayı evreni içindeki gezegenden genç gösteriyordu. Sorun kuramdan değil uzaklık ölçümlerindeki hatadan geliyordu; Baade 1952'de ölçeği iki katına çıkardı."
+    },
+    {
+      "soru": "αβγ makalesinin nötron yakalama zinciri nerede tıkandı ve kuram yine de neyi doğru açıkladı?",
+      "cevap": "Kütle numarası 5 ve 8 olan kararlı çekirdek bulunmadığı için zincir helyumun ötesine geçemedi; ağır elementler sonradan yıldızlarda açıklandı. Ama kuram, sıradan madde kütlesinin yüzde 99'undan fazlasını oluşturan hidrojen ile helyumun göreli bolluğunu doğru açıkladı."
+    },
+    {
+      "soru": "Kararlı Durum kuramı genişlemeyi kabul ediyordu. O hâlde Büyük Patlama'dan temel farkı neydi?",
+      "cevap": "Mükemmel kozmolojik ilkeye göre evren her zaman aynı görünür; yoğunluk sürekli madde yaratılışıyla sabit tutulur, başlangıç yoktur. Büyük Patlama ise evrimleşen bir evren öngörür: geçmiş daha sıcak, daha yoğun ve farklıydı."
+    },
+    {
+      "soru": "Hoyle “Big Bang” terimini nerede ve ne zaman kullandı? Küçümsemek için mi kullandı?",
+      "cevap": "28 Mart 1949'da BBC'nin Third Programme radyo konuşmasında. Küçümseme amaçladığı sık söylenir, ama Hoyle bunu açıkça reddetti ve iki kuram arasındaki farkı gösteren çarpıcı bir imge olduğunu söyledi; tarihçi Helge Kragh da aşağılama iddiasının kanıtlarını ikna edici bulmaz."
+    },
+    {
+      "soru": "Kararlı Durum'un arka plan ışımasını galaktik tozla açıklama girişimi neden başarısız oldu?",
+      "cevap": "Işıma her yönden çok düzgün geliyor, saçılmanın beklenen kutuplanmasını göstermiyor ve tayfı farklı sıcaklık ve kırmızıya kaymadaki toz topaklarının katkılarının üst üste binmesiyle elde edilemeyecek kadar ideal bir kara cisim tayfı."
+    },
+    {
+      "soru": "Kuasar sayıları Kararlı Durum'a karşı neden kanıttır?",
+      "cevap": "Kararlı Durum her çağda aynı evreni öngördüğü için kuasarların yakında da uzakta da aynı sıklıkta görülmesi gerekirdi. Schmidt 1967'de kuasarların erken evrende çok daha yaygın olduğunu buldu; en yakın kuasar bile yaklaşık 600 milyon ışık yılı uzaktadır. Bu, evrimleşen bir evreni gösterir."
+    },
+    {
+      "soru": "Döteryuma neden “baryon terazisi” denebilir?",
+      "cevap": "İlk döteryum miktarı baryon/foton oranına çok duyarlıdır: oran 10 kat azalırsa döteryum yaklaşık 50 kat artar. Yoğun maddede döteryum daha ağır çekirdeklere dönüşüp tükendiği için ölçülen döteryum, maddenin yoğunluğunu hassas biçimde söyler."
+    },
+    {
+      "soru": "z = 2,41837'deki bir bulutta arka plan sıcaklığı ne olmalıdır? Ölçümle karşılaştır.",
+      "cevap": "T = 2,725 × 3,41837 ≈ 9,315 K. 2008'de karbon monoksitle 9,15 ± 0,72 K ölçüldü; fark belirsizliğin yaklaşık dörtte biri kadardır, yani ölçüm öngörüyle uyumludur."
+    },
+    {
+      "soru": "Yorgun ışık fikri hangi gözlemle çürütüldü?",
+      "cevap": "Yorgun ışıkta evren genişlemez, bu yüzden uzak olaylar yavaşlamış görünmez. DES 2024 çalışmasında 1504 Ia süpernovasının ışık eğrileri (1 + z) üzeri b ile uzuyordu; b = 1,003 ± 0,005 ± 0,010 bulundu ve zaman genişlemesi göstermeyen modeller çok yüksek anlamlılıkla dışlandı."
+    },
+    {
+      "soru": "Karanlık enerji olmasaydı aynı H0 ile evren neden en yaşlı yıldızlardan genç çıkardı?",
+      "cevap": "Yaş t0 = F / H0'dır. Yalnız maddeyle dolu düz evrende F = 2/3, yani 14,5 × 2/3 ≈ 9,7 milyar yıl; en yaşlı küresel kümeler ise yaklaşık 13,6 milyar yaşında. Kozmolojik sabit F'yi yaklaşık 0,956'ya çıkararak çelişkiyi giderir."
+    },
+    {
+      "soru": "“Büyük Patlama'dan önce ne vardı?” sorusuna kesinlik etiketleriyle nasıl cevap verirsin?",
+      "cevap": "Sıcak, yoğun evrenin varlığı gözlemle kesinleşmiştir. Ondan önce büyük olasılıkla şişme vardı; bu güçlü kanıtlı ama açık sorulu basamaktadır. Zamanın kendisinin başlangıcı ve tekillik ise bilinmiyor: Hartle–Hawking, sıçrayan evren gibi öneriler kuram ya da hipotez, bazıları spekülasyon basamağındadır (d55)."
+    }
+  ],
+  "kaynaklar": [
+    {
+      "ad": "Wikipedia: Big Bang",
+      "url": "https://en.wikipedia.org/wiki/Big_Bang"
+    },
+    {
+      "ad": "Wikipedia: Georges Lemaître",
+      "url": "https://en.wikipedia.org/wiki/Georges_Lema%C3%AEtre"
+    },
+    {
+      "ad": "Wikipedia: Alexander Friedmann",
+      "url": "https://en.wikipedia.org/wiki/Alexander_Friedmann"
+    },
+    {
+      "ad": "Wikipedia: Friedmann equations",
+      "url": "https://en.wikipedia.org/wiki/Friedmann_equations"
+    },
+    {
+      "ad": "Wikipedia: Hubble's law",
+      "url": "https://en.wikipedia.org/wiki/Hubble%27s_law"
+    },
+    {
+      "ad": "IAU: IAU members vote to recommend renaming the Hubble law as the Hubble–Lemaître law (iau1812, 2018)",
+      "url": "https://iau.org/news/pressreleases/detail/iau1812"
+    },
+    {
+      "ad": "Wikipedia: Alpher–Bethe–Gamow paper",
+      "url": "https://en.wikipedia.org/wiki/Alpher%E2%80%93Bethe%E2%80%93Gamow_paper"
+    },
+    {
+      "ad": "Wikipedia: Ralph Alpher",
+      "url": "https://en.wikipedia.org/wiki/Ralph_Alpher"
+    },
+    {
+      "ad": "Wikipedia: Fred Hoyle",
+      "url": "https://en.wikipedia.org/wiki/Fred_Hoyle"
+    },
+    {
+      "ad": "Wikipedia: Steady-state model",
+      "url": "https://en.wikipedia.org/wiki/Steady-state_model"
+    },
+    {
+      "ad": "Wikipedia: Quasar",
+      "url": "https://en.wikipedia.org/wiki/Quasar"
+    },
+    {
+      "ad": "Wikipedia: Big Bang nucleosynthesis",
+      "url": "https://en.wikipedia.org/wiki/Big_Bang_nucleosynthesis"
+    },
+    {
+      "ad": "Wikipedia: Lithium burning",
+      "url": "https://en.wikipedia.org/wiki/Lithium_burning"
+    },
+    {
+      "ad": "Srianand, Noterdaeme, Ledoux, Petitjean (2008), First detection of CO in a high-redshift damped Lyman-α system, A&A 482, L39",
+      "url": "https://repository.ias.ac.in/55225"
+    },
+    {
+      "ad": "Phys.org (ESO): A molecular thermometer for the distant universe (2008)",
+      "url": "https://phys.org/news/2008-05-molecular-thermometer-distant-universe.html"
+    },
+    {
+      "ad": "DES Collaboration (2024), Slow supernovae show cosmological time dilation out to z ∼ 1, MNRAS (arXiv:2406.05050)",
+      "url": "https://arxiv.org/abs/2406.05050"
+    },
+    {
+      "ad": "Wikipedia: Tolman surface brightness test",
+      "url": "https://en.wikipedia.org/wiki/Tolman_surface_brightness_test"
+    },
+    {
+      "ad": "Wikipedia: Age of the universe",
+      "url": "https://en.wikipedia.org/wiki/Age_of_the_universe"
+    },
+    {
+      "ad": "Wikipedia: Cosmic microwave background",
+      "url": "https://en.wikipedia.org/wiki/Cosmic_microwave_background"
+    },
+    {
+      "ad": "Planck Collaboration, Planck 2018 results VI. Cosmological parameters (arXiv:1807.06209)",
+      "url": "https://arxiv.org/abs/1807.06209"
+    }
+  ]
+}

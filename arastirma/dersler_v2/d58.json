@@ -1,0 +1,585 @@
+{
+  "id": "d58",
+  "unite": "evren",
+  "yeni": true,
+  "baslik": "Kozmik Mikrodalga Arka Plan Işıması: Evrenin Bebeklik Fotoğrafı",
+  "ozet": "Her yönden gelen soluk mikrodalga ışımanın öyküsünü izleyeceksin: kaçırılan ilk ölçümler, Penzias ve Wilson'ın inatçı gürültüsü, Princeton'daki “kaçırıldık” anı, COBE'nin kusursuz kara cismi ve ilk tohumları, WMAP ve Planck'ın haritaları. Işığın neden mikrodalgada olduğunu, son saçılma yüzeyini, akustik zirvelerin evrenin düzlüğünü ve içeriğini nasıl söylediğini, kutuplanmayı, yol boyunca bırakılan izleri, açık anomalileri ve yeni teleskopları kesinlik etiketleriyle öğreneceksin.",
+  "on_bilgi": [
+    "d2",
+    "d12",
+    "d57"
+  ],
+  "bolumler": [
+    {
+      "baslik": "Gökyüzünün her yerinden gelen soluk parıltı",
+      "paragraflar": [
+        "Gece bir teleskopla yıldızların arasına bakarsan neredeyse kapkara bir boşluk görürsün. Wikipedia'ya göre yeterince duyarlı bir radyo teleskobu ise aynı boşlukta, hiçbir yıldıza ya da galaksiye ait olmayan, her yönden neredeyse aynı gelen soluk bir parıltı yakalar. Bu parıltı en güçlü hâlini elektromanyetik tayfın mikrodalga bölgesinde gösterir; adı kozmik mikrodalga arka plan ışımasıdır. d8'de onun evrenin yaklaşık 380.000 yaşındayken saydamlaştığı anda salındığını, d57'de de keşfinin Büyük Patlama kuramına nasıl zafer kazandırdığını gördün. Bu derste ışımanın kendisine odaklanıyoruz: nasıl bulundu, neden mikrodalgada, üzerindeki küçük lekeler bize ne söylüyor ve bugün hangi sorular açık.",
+        "Bu ışıma göründüğünden çok daha büyük bir şeydir. Wikipedia'ya göre enerji yoğunluğu, evrenin tarihi boyunca bütün yıldızların saldığı bütün fotonların toplam enerji yoğunluğunu aşar ve evrendeki fotonların büyük çoğunluğunu, yaklaşık 400'e 1 oranında, bu ışıma oluşturur. Aynı kaynak çarpıcı bir karşılaştırma yapar: genişleme bu ışığı soğutmasaydı gece göğü Güneş kadar parlak olurdu. Yani karanlık gece göğü, d8'deki Olbers paradoksunun bir başka yüzüdür: ışık orada, ama gözümüzün göremeyeceği kadar soğumuş.",
+        "ESA'nın 2013 duyurusunda dönemin genel müdürü Planck haritasını bebeklik çağındaki evrenin portresi diye anar; bu dersin başlığı da oradan gelir. Benzetmenin gücü şu: harita, evrenin henüz yıldızsız ve galaksisiz olduğu bir anın görüntüsüdür ve bugünkü bütün yapıların tohumlarını taşır. Sınırları da var. Birincisi, bu bir görünür ışık fotoğrafı değildir; renkli haritalardaki renkler, gözle görülemeyen sıcaklık farklarını göstermek için seçilmiştir. İkincisi, fotoğraf evrenin içini değil, bizi her yönden saran bir kabuğu gösterir; ondan öncesini ışıkla göremeyiz. Kesinlik: ışımanın varlığı, kara cisim tayfı ve sıcaklığı gözlemle kesinleşmiştir; lekelerin şişmeden gelen tohumlar olduğu ise güçlü kanıtlı ama açık sorulu basamaktadır (d54)."
+      ],
+      "akilda": "Kozmik mikrodalga arka plan ışıması her yönden gelen, yıldızlara ait olmayan, mikrodalgada en güçlü soluk bir parıltıdır. Evrendeki fotonların büyük çoğunluğunu oluşturur; bebeklik fotoğrafı benzetmesinin sınırı, gördüğümüzün evrenin içi değil bizi saran bir kabuk olmasıdır."
+    },
+    {
+      "baslik": "Kaçırılan ipuçları: 1941'den 1964'e",
+      "paragraflar": [
+        "Bu ışıma, adı konmadan önce birkaç kez ölçüldü ama kimse ne olduğunu anlamadı. Wikipedia'ya göre 1941'de Andrew McKellar, Walter Adams'ın bir B türü yıldızın tayfında gözlediği siyanojen (CN) molekülünün soğurma çizgilerini kullanarak yaklaşık 2,3 K'lik bir sıcaklık hesapladı. Moleküller, içinde bulundukları ışıma ortamının sıcaklığına göre farklı enerji düzeylerine dağılır; McKellar bu dağılımdan bir sıcaklık okudu. Ama bunu yıldızlararası moleküllerin dönme sıcaklığı diye adlandırdı ve kozmolojik bir yorum yapmadı; sonucun belki sınırlı bir önemi olacağını yazdı. Ölçümün anlamı ancak Penzias ve Wilson'dan çok sonra anlaşıldı.",
+        "Başka ölçümler de vardı. Wikipedia'nın zaman çizelgesine göre Émile Le Roux 1955'te Fransa'daki Nançay Radyo Gözlemevi'nde 33 cm dalga boyunda bir gökyüzü taraması yaptı ve neredeyse her yönden aynı gelen 3 ± 2 kelvinlik bir arka plan bildirdi; kozmolojik önemini fark etmedi ve sonradan hata payını 20 kelvine çıkardı. 1957'de Sovyet bilim insanı Tigran Shmaonov 3,2 cm dalga boyunda, zamandan ve yönden bağımsız, 4 ± 3 K'lik bir etkin sıcaklık bildirdi; aynı kaynağa göre bugün onun gerçekten arka plan ışımasını gördüğü açıktır. Robert Dicke ise 1946'da kozmik maddeden gelen 20 K'den düşük bir ışımadan söz etmiş, ama bunu bir arka plan ışıması olarak ele almamıştı.",
+        "Kuramcılar da yaklaşıyordu. Wikipedia'ya göre Sovyet astrofizikçiler A. G. Doroşkeviç ve İgor Novikov 1964 baharında kısa bir makalede, Gamow, Alpher ve Herman'ın öngördüğü kara cisim ışımasının mikrodalgada aranabileceğini yazdı; bu, ışımanın saptanabilir bir olgu olarak yayımlanan ilk tanınmasıydı. Aynı yıl Princeton'da Dicke'nin çalışma arkadaşları David Wilkinson ve Peter Roll, ışımayı ölçmek için bir alıcı kurmaya başlamıştı. Bu bölümün dersi şu: bir ölçüm, onu yorumlayacak bir kuramla buluşmadıkça keşif sayılmaz. Veri elde vardı; eksik olan, verinin hangi soruya cevap olduğunu bilen biriydi."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Erken ölçümler gerçek değeri tutturmuş muydu?",
+        "metin": "Bugünkü değer T0 = 2,725 K (d8). Le Roux: 3 ± 2 K, yani 1 ile 5 K arası; 2,725 bu aralığın içinde. Shmaonov: 4 ± 3 K, yani 1 ile 7 K arası; 2,725 yine içinde. McKellar: 2,3 K; gerçek değerden 2,725 − 2,3 = 0,425 K düşük, oran 2,3 / 2,725 ≈ 0,84, yani yaklaşık yüzde 16 eksik. Üç ölçüm de doğru büyüklük düzeyindeydi. Ama hata payları geniş olunca, yani “1 ile 7 K arası” gibi bir sonuçla, bunun evrenin başlangıcından kalan bir ışıma olduğunu iddia etmek zordu. Sonuç birimi: kelvin."
+      },
+      "akilda": "McKellar (1941, ~2,3 K), Le Roux (1955) ve Shmaonov (1957) ışımayı fark etmeden ölçtü. Doroşkeviç ve Novikov 1964'te aranabileceğini yazdı. Ölçüm, onu yorumlayan kuramla buluşmadan keşif olmaz."
+    },
+    {
+      "baslik": "Holmdel'deki inatçı gürültü",
+      "paragraflar": [
+        "Asıl keşif bir iletişim deneyinden çıktı. Wikipedia'ya göre Bell Telefon Laboratuvarları'nın New Jersey'deki Holmdel tesisinde, Crawford Tepesi'nde, yaklaşık 6 metre (20 fit) boyunda boynuz biçimli bir anten vardı. Anten, NASA'nın Echo projesi için yapılmıştı: Echo uyduları, Dünya çevresinde dolanan ve radyo sinyallerini bir noktadan öbürüne yansıtan alüminyum kaplı plastik balonlardı. Antenin yapım yılını kaynaklar 1959 ve 1960 olarak farklı verir. Echo'nun işi bitince anten radyo astronomisine kaldı. 1964'te Arno Penzias ve Robert Wilson onunla çok sönük radyo dalgalarını ölçmeye hazırlanıyordu. Bunun için alıcılarındaki her tanıdık parazit kaynağını ayıkladılar: radarları, radyo yayınlarını, hatta alıcının kendi ısısından gelen gürültüyü, alıcıyı sıvı helyumla −269 °C'ye, mutlak sıfırın 4 derece üstüne kadar soğutarak bastırdılar.",
+        "Geriye yine de bir şey kaldı. Wikipedia'ya göre verileri işlediklerinde alıcılarında sabit, düşük ve gizemli bir gürültü buldular: bekledikleri düzeyin 100 katıydı, gökyüzüne eşit dağılmıştı ve gece gündüz oradaydı. Ölçüm 7,35 cm dalga boyunda yapılıyordu ve gürültünün Dünya'dan, Güneş'ten ya da Samanyolu'ndan gelmediğinden emin oldular. Aynı kaynağa göre bu fazlalığı açıkça gösteren ilk ölçüm 20 Mayıs 1964'te yapıldı. Bir bilim insanının en sık yaptığı iş, beklenmedik bir sinyalin kendi aletinden gelip gelmediğini anlamaktır. Penzias ve Wilson da şüpheyi önce kendilerine yönelttiler.",
+        "Şüphelilerden biri güvercinlerdi. Amerikan Fizik Derneği'nin (APS) tarihî yer sayfasına göre antenin içine yuva yapmış güvercinlerin pislikleri bulundu. Antenin temizlenip kuşların uzaklaştırılmaya çalışılması sonuç vermeyince kuşlar vuruldu; Penzias bundan memnun olmadığını ama başka bir seçenek göremediğini anlattı. Aynı kaynak Penzias'ın esprili özetini de aktarır: güvercinler daha küçük bir patlamayla gitti, gürültü ise kaldı ve her yönden gelmeye devam etti. Wikipedia da bütün bu temizlikten sonra gürültünün sürdüğünü ve ikilinin onun galaksimizin dışından geldiği sonucuna vardığını yazar. Ama bunu açıklayacak bir radyo kaynağı bilmiyorlardı."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Penzias ve Wilson tayfın neresine bakıyordu?",
+        "metin": "Dalga boyu λ = 7,35 cm = 0,0735 m. Frekans f = c / λ = 299.792.458 / 0,0735 ≈ 4,08×10⁹ Hz, yani yaklaşık 4080 megahertz; makalelerinin başlığındaki değer budur. Bugünkü 2,725 K'lik ışımanın dalga boyuna göre tepesi Wien yasasıyla (d2): 2,898×10⁻³ m·K / 2,725 K ≈ 1,06×10⁻³ m, yani yaklaşık 1,06 mm. Oran: 73,5 mm / 1,06 mm ≈ 69. Penzias ve Wilson tepenin yaklaşık 69 kat uzun dalga boylu kuyruğunda, ışımanın çok sönük olduğu bir yerde ölçüm yapıyordu; buna rağmen yakalayabilmeleri alıcılarının duyarlılığının bir göstergesidir. Sonuç birimleri: megahertz ve milimetre."
+      },
+      "akilda": "Penzias ve Wilson 1964'te Echo uyduları için yapılmış 6 metrelik boynuz antenle 7,35 cm'de açıklanamayan, her yönden ve gece gündüz gelen bir gürültü buldu; güvercin pisliği temizlense de gürültü kaldı."
+    },
+    {
+      "baslik": "Princeton'daki ekip ve “kaçırıldık”",
+      "paragraflar": [
+        "Tam o sırada, yaklaşık 60 km ötede, Princeton Üniversitesi'nde Robert Dicke, Jim Peebles ve David Wilkinson bu ışımayı aramaya hazırlanıyordu. Wikipedia'ya göre Dicke ve arkadaşları, Büyük Patlama'nın yalnızca galaksilere dönüşen maddeyi değil, büyük miktarda ışımayı da saçmış olması gerektiğini ve bu ışımanın büyük kırmızıya kayma yüzünden mikrodalga olarak görüleceğini düşünüyordu. Bağlantıyı bir üçüncü kişi kurdu: MIT'den fizikçi Bernard Burke, Penzias'a Peebles'ın evrenin başlangıcından kalan ışımayı bulma olasılığını tartışan bir ön baskısını gördüğünü söyledi. Penzias Dicke'yi aradı, Dicke yayımlanmamış makalenin bir kopyasını gönderdi, sonra Bell Laboratuvarları'na gelip antene ve gürültüye baktı.",
+        "Wikipedia'ya göre Crawford Tepesi'nden gelen telefondan sonra Dicke ekibine dönüp “Çocuklar, kaçırıldık” dedi; APS ve PBS'in sayfaları da bu sözü aktarır. Yani ölçmeye hazırlandıkları şeyi başkaları, ne olduğunu bilmeden, çoktan ölçmüştü. İki ekip bir çatışma yerine ortak bir yol seçti: Astrophysical Journal Letters'a iki kısa yazı gönderildi. Birincisinde Dicke ve arkadaşları ışımanın Büyük Patlama için önemini anlattı. İkincisinde, 4080 megahertzde fazladan anten sıcaklığının ölçülmesi başlıklı yazıda, Penzias ve Wilson 2,3 K'lik atmosfer katkısını ve 0,9 K'lik alet katkısını çıkardıktan sonra kalan 3,5 K'lik bir arka plan gürültüsü bildirdi ve olası açıklama için Dicke'nin yazısına gönderme yaptı.",
+        "Bu ayrıntı önemlidir: Penzias ve Wilson ışımayı ölçtü, Princeton ekibi onu yorumladı. Wikipedia'ya göre Penzias ve Wilson 1978 Nobel Fizik Ödülü'nü bu ölçüm için aldı ve ödülü, ilgisiz bir çalışma için ödüllendirilen Pyotr Kapitsa ile paylaştı. Jim Peebles ise 2019'da fiziksel kozmolojideki kuramsal keşifleri için Nobel Fizik Ödülü'nü aldı. d8'de keşfin yaklaşık 3 K olarak anıldığını gördün; bu yuvarlak bir değerdir, yayımlanan sayı 3,5 K'dir ve bugünkü 2,725 K'lik değerden biraz yüksektir. Kesinlik: 1965'te ışımanın kozmik kökeni güçlü bir yorumdu; tayfın kara cisim olduğu 1968'e, her yönden aynı geldiği 1970'e kadar gösterilince gözlemle kesinleşti (d57)."
+      ],
+      "ornek": {
+        "baslik": "Örnek: 3,5 K nereden çıktı?",
+        "metin": "Penzias ve Wilson'ın yazısına göre kalan arka plan 3,5 K, atmosferin katkısı 2,3 K, aletin katkısı 0,9 K idi. Bu üç parça toplanınca antenin gösterdiği toplam: 3,5 + 2,3 + 0,9 = 6,7 K. Demek ki ölçülen gürültünün yaklaşık 3,5 / 6,7 ≈ yüzde 52'si evrenden geliyordu; geri kalanı tanıdık kaynaklardı. Bugünkü değerle karşılaştır: 3,5 / 2,725 ≈ 1,28, yani ilk ölçüm yaklaşık yüzde 28 yüksekti. Atmosferi ve aleti 1 kelvinin altında bir hassasiyetle hesaba katmak zorundaydılar; bu, ölçümün ne kadar zor olduğunu gösterir. Sonuç birimi: kelvin."
+      },
+      "akilda": "Princeton ekibi (Dicke, Peebles, Wilkinson, Roll) ışımayı aramaya hazırlanırken Penzias ve Wilson'ın ölçtüğünü öğrendi; Dicke “kaçırıldık” dedi. Ölçüm 3,5 K; 1978 Nobel Penzias ve Wilson'a, 2019 Nobel Peebles'a."
+    },
+    {
+      "baslik": "Neden mikrodalga? 3000 kelvinden 2,725 kelvine",
+      "paragraflar": [
+        "Işık salındığında evren yaklaşık 3000 K sıcaklığındaydı (d8); bu, kırmızı-turuncu ışıklı bir yıldızın yüzeyine yakın bir sıcaklıktır. O zamandan beri evren genişledi ve Wikipedia'ya göre ışımanın renk sıcaklığı ortalama 1089 kat düştü; Planck'ın son saçılma yüzeyi için verdiği kırmızıya kayma 1089,92'dir. Kırmızıya kayma ışığın her dalga boyunu aynı oranda uzatır. Bu yüzden 3000 K'lik bir kara cismin ışığı, 1090 kat genişlemeden sonra yaklaşık 2,7 K'lik bir kara cismin ışığına dönüşür. Wikipedia'nın deyişiyle kırmızıya kaymış kara cisim ışıması, daha düşük sıcaklıktaki bir kara cisim ışıması gibidir. Bunun mümkün olduğunu Tolman 1934'te göstermişti (d57).",
+        "Bugünkü ışımanın tepesi nerededir? Planck uydusunun Wikipedia maddesine göre ışımanın tayfı 160,2 gigahertzte en yüksek değerine ulaşır. Wien yasası ise dalga boyuna göre tepeyi yaklaşık 1,06 mm'de verir. Dikkatli bir okur burada bir tutarsızlık görebilir: 160,2 gigahertzin dalga boyu 1,06 değil 1,87 mm'dir. İki sayı da doğrudur; tepenin yeri tayfın frekansa göre mi dalga boyuna göre mi çizildiğine bağlıdır, çünkü iki çizimde eğrinin dağılımı farklı yayılır. Hangi çizimi kullanırsan kullan sonuç değişmez: ışıma milimetre dalgalarında, yani mikrodalganın kısa ucunda yoğunlaşır. Bu yüzden ona mikrodalga arka plan denir.",
+        "Tek tek fotonlar da buna göre zayıfladı. Wikipedia'ya göre ışımanın bugünkü karakteristik enerjisi yaklaşık 0,2348 milielektronvolttur; ışık salındığında, 3000 K'de, bu enerji yaklaşık 0,26 elektronvolttu. Oran yine yaklaşık 1100'dür. Görünür ışığın bir fotonu yaklaşık 2 elektronvolt taşır (d2); arka plan fotonları bugün bundan binlerce kat zayıftır. Bir şeyi vurgulayalım: ışımanın tayfı genişlemeyle yalnızca kaydı, biçimini korudu. d57'de gördüğün gibi uzak bir buluttaki moleküllerle ölçülen geçmiş sıcaklık da bu kaymanın öngördüğü değeri verir. Kesinlik: ışımanın sıcaklığının genişlemeyle (1 + z) oranında düştüğü gözlemle kesinleşmiştir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Görünmeyen kırmızıdan mikrodalgaya",
+        "metin": "Wien yasası: λtepe = 2,898×10⁻³ m·K / T. Işık salındığında, T = 3000 K: 2,898×10⁻³ / 3000 ≈ 9,66×10⁻⁷ m, yani yaklaşık 966 nm; görünür kırmızının hemen ötesinde, yakın kızılötesinde (d8). Bugün, T = 2,725 K: 2,898×10⁻³ / 2,725 ≈ 1,063×10⁻³ m, yani 1,063 mm. Oran: 1,063×10⁻³ / 9,66×10⁻⁷ ≈ 1100. Sıcaklıklar: 3000 / 2,725 ≈ 1101. Dalga boyu ne kadar uzadıysa sıcaklık o kadar düştü; ikisi de 1 + z ≈ 1090 civarındadır (fark 3000 K'nin yuvarlak bir değer olmasından gelir). Sonuç birimleri: nanometre ve milimetre."
+      },
+      "akilda": "Işıma 3000 K'de salındı; evren yaklaşık 1090 kat genişleyince her dalga boyu aynı oranda uzadı ve ışıma 2,725 K'lik bir kara cisim ışımasına dönüştü. Tepe frekansa göre 160,2 gigahertzte, dalga boyuna göre yaklaşık 1,06 mm'de."
+    },
+    {
+      "baslik": "Son saçılma yüzeyi: sisin kalktığı an",
+      "paragraflar": [
+        "Saydamlaşmadan önceki evren d8'de gördüğün gibi sıcak bir plazmaydı. Wikipedia'ya göre fotonlar serbest yüklü parçacıklardan, özellikle elektronlardan, sürekli saçılıyordu; ışığın serbest elektronlardan bu tür saçılmasına Thomson saçılması denir. Elektronlar protonlara bağlanıp nötr hidrojen atomları oluşunca bu saçılma büyük ölçüde durdu ve ışık serbestçe yol almaya başladı. Bu ana yeniden birleşme denir; Wikipedia, baştaki “yeniden” sözcüğünün yanıltıcı olduğunu, çünkü proton ile elektronun daha önce hiç birleşik olmadığını, adın tarihsel olduğunu not eder. Aynı kaynak iki olayı ayırır: atomların oluşması yeniden birleşmedir, fotonların maddeden kurtulması ise foton ayrışmasıdır; aynı dönemde olurlar ama farklı fiziksel süreçlerdir.",
+        "Burada şaşırtıcı bir soru var: hidrojeni iyonlaştırmak için 13,6 elektronvoltluk foton gerekir (d8), oysa 3000 K'deki fotonların tipik enerjisi yalnızca yaklaşık 0,26 elektronvolttur. O hâlde atomlar neden çok daha erken, çok daha sıcak bir evrede oluşmadı? Cevap foton kalabalığındadır. Her proton ya da nötrona yaklaşık 1,7 milyar foton düşer (d8). Wikipedia'nın yeniden birleşme maddesine göre atom oluşmak enerji açısından mümkün olduğu anda bile, bu muazzam sayıdaki fotonlardan biri onu hemen yeniden iyonlaştırıyordu. Fotonların çok küçük bir kesri bile ortalamanın çok üstünde enerji taşır; foton sayısı bu kadar büyük olunca o küçük kesir bile her atomu bozmaya yeter. Evren bu yüzden ancak yaklaşık 3000 K'ye kadar soğuyunca saydamlaşabildi.",
+        "Süreç bir anda olmadı. Wikipedia'ya göre basit bir denge hesabı (Saha denklemi) hidrojenin yarısının yaklaşık 4000 K'de, z ≈ 1500'de nötrleşeceğini verir. Ama 1968'de Jim Peebles ABD'de, Yakov Zeldoviç ve arkadaşları Sovyetler Birliği'nde birbirinden bağımsız olarak, dengeden sapan süreci hesapladı: doğrudan temel duruma inen bir elektronun saldığı foton hemen başka bir atomu iyonlaştırdığı için birleşme yavaş ilerledi. Bugünkü değerlerle evren z ≈ 1070'te yüzde 90 nötrdür. WMAP ekibi son saçılma yüzeyinin kalınlığını kırmızıya kaymada 195 ± 2, zamanda yaklaşık 118.000 yıl olarak ölçtü ve ayrışma anındaki yaşı yaklaşık 379.000 yıl buldu. Yani yüzey aslında kalın bir kabuktur.",
+        "Bulutlu bir günü düşün. Güneş'i göremezsin; gördüğün, Güneş ışığının son kez saçıldığı bulut yüzeyidir. Bulutun altında hava saydamdır, ışık oradan sana dümdüz gelir. Son saçılma yüzeyi de böyledir: fotonların son kez bir elektrona çarptığı yerlerin kümesidir ve bizi her yönden bir küre gibi sarar. Wikipedia'ya göre bu kabuk, fotonları tam şimdi bize ulaşan ve ayrışma anında salınmış noktalardan oluşur. Benzetmenin sınırı şu: bulutun bir üstü ve altı vardır, gökte bir yerde durur; son saçılma yüzeyi ise bir yerden çok bir zamandır. Başka bir galakside yaşayan bir gözlemci de kendi küresini görür; o küre bizimkinden farklı bölgelerden oluşur. Bu kabuğun ötesine, yani saydamlaşmadan önceki evrene, ışıkla bakamayız."
+      ],
+      "ornek": {
+        "baslik": "Örnek: 13,6 elektronvolt hangi sıcaklığa denk gelir?",
+        "metin": "Bir sıcaklığa karşılık gelen tipik enerji k × T'dir; Boltzmann sabiti k ≈ 8,617×10⁻⁵ elektronvolt bölü kelvin (d27). Hidrojenin iyonlaşma enerjisi 13,6 elektronvolta denk gelen sıcaklık: T = 13,6 / 8,617×10⁻⁵ ≈ 157.800 K. Gerçek saydamlaşma sıcaklığı yaklaşık 3000 K: 157.800 / 3000 ≈ 53 kat daha düşük. Ters yönde: 3000 K'de k × T = 8,617×10⁻⁵ × 3000 ≈ 0,26 elektronvolt; Wikipedia'nın verdiği değerle aynı. Foton kalabalığı: baryon/foton oranı yaklaşık 6×10⁻¹⁰ ise her baryona 1 / (6×10⁻¹⁰) ≈ 1,7×10⁹ foton düşer. Sonuç birimleri: kelvin ve elektronvolt."
+      },
+      "akilda": "Yeniden birleşmede elektronlar protonlara bağlandı, foton ayrışmasıyla ışık serbest kaldı. Her baryona 1,7 milyar foton düştüğü için bu ancak ~3000 K'de oldu. Son saçılma yüzeyi yaklaşık 118.000 yıllık kalın bir kabuktur."
+    },
+    {
+      "baslik": "COBE ve kusursuz kara cisim",
+      "paragraflar": [
+        "Keşiften sonraki çeyrek yüzyılın büyük sorusu şuydu: ışıma gerçekten kusursuz bir kara cisim tayfına mı sahip ve gökyüzünde hiç mi sıcaklık farkı yok? Bunu yerden yanıtlamak zordu; atmosfer bu dalga boylarının bir kısmını soğurur. Wikipedia'ya göre NASA'nın COBE uydusunun Uzay Mekiği'yle fırlatılması planlanıyordu, ama Challenger kazası mekik uçuşlarını durdurunca plan değişti ve uydu yeniden tasarlanarak 18 Kasım 1989'da bir Delta roketiyle yaklaşık 900 km yükseklikte, Güneş eşzamanlı bir yörüngeye yerleştirildi. COBE'de üç alet vardı; ikisi bu dersin konusu. Birincisi FIRAS adlı uzak kızılötesi mutlak tayfölçerdi; sorumlusu John Mather'dı.",
+        "FIRAS'ın hilesi karşılaştırmaydı. Wikipedia'ya göre alet gökyüzünün 7 derecelik bir parçasının tayfını, uydunun içindeki, sıcaklığı bilinen bir yapay kara cisimle karşılaştırıyordu; mutlak bir ölçüm yerine iki ışığın farkını ölçmek, aletin kendi hatalarını büyük ölçüde siliyordu. Aletin dedektörleri 650 litrelik süperakışkan helyum deposuyla soğutuluyordu. Nobel Komitesi'nin 2006 basın bültenine göre ilk sonuçlar yalnızca dokuz dakikalık gözlemden sonra geldi: COBE kusursuz bir kara cisim tayfı kaydetmişti ve sonuç bir astronomi toplantısında gösterildiğinde ayakta alkışlandı.",
+        "Ne kadar kusursuz? Wikipedia'nın Büyük Patlama maddesine göre 1990'daki yüksek hassasiyetli ölçümler tayfın neredeyse kusursuz bir kara cisim olduğunu, on binde bir düzeyinde bile sapma göstermediğini ortaya koydu ve sıcaklığı 2,726 K olarak verdi. Daha sonraki analizler değeri biraz aşağı çekti: bugün kullanılan değer 2,72548 ± 0,00057 K'dir (d8). Aynı madde FIRAS'ın ölçtüğü tayfı doğadaki en hassas ölçülmüş kara cisim tayfı diye anar; grafikteki ölçüm noktalarının hata çubukları, kuramsal eğrinin çizgisinin altında kaybolacak kadar küçüktür. d57'de gördüğün gibi tozdan ya da çok sayıda kaynaktan gelen bir ışımanın böyle bir tayf üretmesi çok zordur. COBE'nin bu sonucu, sıcak ve yoğun bir erken evrenin en temiz kanıtlarından biridir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Ölçüm ne kadar keskinleşti?",
+        "metin": "Bugünkü değer 2,72548 K, belirsizlik 0,00057 K. Göreli belirsizlik: 0,00057 / 2,72548 ≈ 2,1×10⁻⁴, yani yaklaşık on binde iki. 1965'teki 3,5 K ile karşılaştır: 3,5 − 2,72548 ≈ 0,77 K fark, gerçek değerin yaklaşık yüzde 28'i. COBE'nin 1990'daki 2,726 K değeri ise bugünkünden yalnızca 2,726 − 2,72548 ≈ 0,0005 K, yani on binde ikiden az farklı. Çeyrek yüzyılda ölçüm, yüzde 28'lik bir sapmadan on binde ikilik bir belirsizliğe indi; bin kattan fazla keskinleşti (0,28 / 0,00021 ≈ 1300). Sonuç birimi: kelvin ve oran."
+      },
+      "akilda": "COBE 18 Kasım 1989'da fırlatıldı. Mather'ın FIRAS aleti gökyüzünü iç kara cisimle karşılaştırarak ilk dokuz dakikada kusursuz bir kara cisim tayfı ölçtü; sapma on binde birin altında. Bugünkü değer 2,72548 ± 0,00057 K."
+    },
+    {
+      "baslik": "DMR: ilk tohumlar ve hassas bilim olarak kozmoloji",
+      "paragraflar": [
+        "COBE'nin ikinci büyük aleti, George Smoot'un sorumlu olduğu DMR'ydi: farklı mikrodalga radyometresi. Wikipedia'ya göre DMR gökyüzünü 31,5, 53 ve 90 gigahertzte haritalayan üç ayrı radyometreden oluşuyordu. Her biri, aralarında 60 derece bulunan ve her biri 7 derece genişliğinde iki gökyüzü bölgesinin parlaklık farkını ölçüyordu. Mutlak sıcaklığı değil, iki yön arasındaki farkı ölçmek, küçük farkları bulmanın en iyi yoluydu. Büyük ölçekli farklara duyarlılığı yaklaşık 3×10⁻⁵ K idi. DMR helyum deposuna bağlı olmayan tek alet olduğu için dört yıl boyunca çalışabildi ve gökten Samanyolu'nun ışımasını ve hareketimizden gelen dipolü çıkararak tam gökyüzü haritaları üretti.",
+        "Sonuç 23 Nisan 1992'de, Washington'daki Amerikan Fizik Derneği toplantısında duyuruldu. Wikipedia'ya göre COBE bilim insanları DMR verisinde ilksel tohumları, yani ışımanın yönden yöne küçük sıcaklık farklarını bulduklarını açıkladı; ertesi gün New York Times haberi ilk sayfadan verdi ve onu başlangıçta pürüzsüz olan evrenin bugünkü yıldız, galaksi ve dev galaksi kümesi manzarasına nasıl evrildiğinin ilk kanıtı diye niteledi. Adil olmak gerekirse aynı kaynak, Sovyet RELIKT-1 deneyinin verisini inceleyen bilim insanlarının da Ocak 1992'de Moskova'daki bir seminerde ışımada yönsel fark bulduklarını bildirdiğini yazar. Farklar son derece küçüktü: COBE maddesine göre ortalama 2,73 K'lik sıcaklığın yüz binde biri düzeyinde.",
+        "Nobel Komitesi 2006 Fizik Ödülü'nü John Mather ve George Smoot'a, ışımanın kara cisim biçimini ve yönsel farklarını, yani anizotropisini keşfetmeleri için verdi. Basın bültenine göre projede 1000'den fazla araştırmacı, mühendis ve çalışan yer aldı; Mather bütün projeyi eşgüdümledi ve kara cisim deneyinden birinci derecede sorumluydu, Smoot ise küçük sıcaklık farklarının ölçümünden. Bültenin en önemli cümlesine göre bu ölçümler kozmolojinin hassas bir bilim olarak başlangıcını işaretledi. Kesinlik: ışımada yüz binde bir düzeyinde farkların bulunduğu gözlemle kesinleşmiştir. Bu farkların galaksilerin tohumları olduğu da gözlemle kesinleşmiş sayılabilir; tohumların şişmedeki kuantum dalgalanmalarından doğduğu ise güçlü kanıtlı ama açık sorulu basamaktadır (d54)."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Yüz binde bir ne kadar küçük?",
+        "metin": "Ortalama sıcaklık 2,725 K. Yüz binde biri: 2,725 / 100.000 ≈ 2,7×10⁻⁵ K, yani yaklaşık 27 mikrokelvin. DMR'nin büyük ölçekli farklara duyarlılığı 3×10⁻⁵ K, yani 30 mikrokelvin; aranan sinyalle aynı düzeyde. Bu yüzden DMR dört yıl boyunca aynı gökyüzünü defalarca taradı ve ölçümleri üst üste ekledi. Gündelik bir karşılaştırma: 100 metrelik bir futbol sahasının yüz binde biri 1 milimetredir. Sahanın her yerde aynı yükseklikte olup olmadığını milimetre hassasiyetle ölçmek gibi bir iş. Sonuç birimi: mikrokelvin."
+      },
+      "akilda": "Smoot'un DMR aleti 60 derece aralı iki yön arasındaki farkı ölçerek ilk sıcaklık farklarını buldu; duyuru 23 Nisan 1992. Farklar yüz binde bir düzeyinde. 2006 Nobel Mather ve Smoot'a: kozmoloji hassas bir bilim oldu."
+    },
+    {
+      "baslik": "Plazmadaki ses: akustik zirveler",
+      "paragraflar": [
+        "d8'de saydamlaşmadan önceki plazmada ses dalgaları olduğunu ve bu dalgaların saydamlaşma anında donduğunu gördün. Burada bu dalgaların ışımada nasıl okunduğuna bakıyoruz. Wikipedia'ya göre ışımadaki desen iki etkinin yarışından doğar: fotonların basıncı farkları silmeye, baryonların kütleçekimi ise yoğun bölgeleri daha da sıkıştırmaya çalışır. Bu çekişme plazmayı titreştirir. Gökbilimciler haritayı, her açısal büyüklükte ne kadar güçlü leke olduğunu gösteren bir grafiğe dönüştürür; buna güç tayfı denir. Bir müzik kaydının hangi notalarda ne kadar güçlü olduğunu gösteren bir ses tayfı gibi düşünebilirsin. Grafikte sırayla tepeler ve çukurlar görülür; tepelere akustik zirve denir. Aynı kaynağa göre zirveler, saydamlaşma anında tam en yüksek titreşim noktasında yakalanan dalgalara karşılık gelir.",
+        "Her zirve başka bir şey söyler. Wikipedia'ya göre ilk zirvenin açısal büyüklüğü evrenin eğriliğini belirler (bir sonraki bölüm). İkinci zirve, daha doğrusu tek ve çift sıradaki zirvelerin oranı, sıradan maddenin yoğunluğunu verir: baryonlar plazmaya ağırlık ekler, sıkışmayı güçlendirir, gevşemeyi zayıflatır. Üçüncü zirve karanlık madde yoğunluğu hakkında bilgi taşır. Bir flütün ana notası ve üst sesleri, borunun uzunluğunu ve havanın özelliklerini birlikte ele verir; ışımanın zirveleri de evrenin içeriğini öyle ele verir. Benzetmenin sınırı: flütte ses havada yayılır ve kulağına zaman içinde gelir; ışımada ise tek bir anın donmuş görüntüsüne bakarız, ses değil, sesin bıraktığı yoğunluk izini görürüz.",
+        "Zirvelerin dizilişi tohumların türünü de söyler. Wikipedia'ya göre iki temel tür yoğunluk dalgalanması vardır. Adyabatik dalgalanmada her parçacık türü, yani baryonlar, fotonlar ve nötrinolar, aynı yerde aynı oranda fazladır; şişme bu türü öngörür. Diğer türde fazlalıkların toplamı sıfırdır; kozmik sicimler gibi varsayımsal yapılar ağırlıkla bu türü üretirdi. İki türün zirveleri farklı dizilir: adyabatik dalgalanmalar 1 : 2 : 3 oranında, öbür tür 1 : 3 : 5 oranında sıralanan açısal sıklıklar verir. Gözlemler dalgalanmaların tamamen adyabatik olduğuyla uyumludur; aynı kaynağa göre bu şişme için önemli bir destektir ve kozmik sicimleri yapı oluşumunun ana açıklaması olmaktan çıkarır.",
+        "Çok küçük açılara gidildikçe zirveler söner. Wikipedia'ya göre bunun iki nedeni vardır: genişleyen plazma seyreldikçe fotonların bir çarpışmadan öbürüne aldığı yol uzar ve küçük dalgaları siler; ayrıca son saçılma yüzeyinin kalınlığı küçük ayrıntıları bulanıklaştırır. Bu sönüme, onu hesaplayan fizikçinin adıyla Silk sönümü de denir. Çok sayıda zirveyi tek tek görmek kolay değildir: Wikipedia'ya göre güç tayfında yedi akustik zirveyi ilk kez Atacama Kozmoloji Teleskobu (ACT) saptadı. Kesinlik: akustik zirvelerin varlığı ve konumları gözlemle kesinleşmiştir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Zirve dizilişi hangi türü ele verir?",
+        "metin": "Diyelim ki ilk zirve gökte yaklaşık 1 derecelik lekelere karşılık geliyor (d8). Açısal sıklık ters orantılıdır: sıklık 2 kat ise lekeler 2 kat küçüktür. Adyabatik dizilişte (1 : 2 : 3) sonraki zirveler 1 / 2 = 0,5 derece ve 1 / 3 ≈ 0,33 derece civarında olmalıdır. Öbür türde (1 : 3 : 5) ise 1 / 3 ≈ 0,33 ve 1 / 5 = 0,2 derece civarında. Yani ikinci zirvenin yerine bakmak bile iki türü ayırmaya yeter: yaklaşık yarım derecede bir zirve varsa adyabatik, üçte bir derecede varsa öbür tür. Bu yalnızca oranları gösteren kaba bir örnektir; gerçek zirve konumları ayrıntılı hesapla bulunur. Sonuç birimi: derece."
+      },
+      "akilda": "Güç tayfı her açısal büyüklükte ne kadar leke olduğunu gösterir; tepelerine akustik zirve denir. İlk zirve eğriliği, tek/çift zirve oranı baryonları, üçüncüsü karanlık maddeyi söyler. 1 : 2 : 3 dizilişi adyabatik tohumları gösterir; küçük ölçekte Silk sönümü vardır."
+    },
+    {
+      "baslik": "Gökteki cetvel: evrenin düz olduğunu nasıl bildik?",
+      "paragraflar": [
+        "Gerçek boyunu bildiğin bir cisim ne kadar uzaksa o kadar küçük görünür. Uzaklığını da biliyorsan, cismin göründüğü açıyı önceden hesaplayabilirsin. Uzay eğriyse, ışınlar yol boyunca biraz yakınsar ya da ıraksar ve cisim beklenenden büyük ya da küçük görünür (eğrilik d17'de). Arka plan ışıması böyle bir cetvel taşır. Saydamlaşmaya kadar plazmadaki ses dalgaları ancak belli bir uzaklığa erişebilmişti; buna ses ufku denir. Planck 2018 sonuçlarına göre bu uzaklık, bugünkü ölçeğe taşındığında 144,43 ± 0,26 Mpc'dir. Bu uzunluk bilinen fizikle, sesin plazmadaki hızından hesaplanır; aynı uzunluğun galaksi dağılımında bıraktığı izi d8'de baryon akustik salınımları olarak gördün.",
+        "Planck bu cetvelin gökteki açısını olağanüstü bir hassasiyetle ölçtü. Planck 2018 makalesine göre ses ufkunun açısı 0,59643 ± 0,00026 derecedir, yani yaklaşık yüzde 0,05 hassasiyetle; makale bu açının ölçülen parametreler içinde en sağlamı olduğunu, kozmoloji modelinin seçimine yalnızca zayıfça bağlı olduğunu yazar. Bu sayıyı d8'deki “en güçlü lekeler yaklaşık 1 derece” bilgisiyle karıştırma: ikisi aynı cetvelin iki farklı okunuşudur. 0,6 derece, ses dalgasının erişebildiği uzaklığın açısıdır; en güçlü lekelerin gökteki tipik boyutu ise dalganın bir sıkışma ve gevşeme deseninden gelir ve biraz daha büyüktür. Aralarındaki ilişki ayrıntılı hesap gerektirir.",
+        "Düzlüğü ilk kez yer ve balon deneyleri gösterdi. Wikipedia'ya göre ilk zirve önce MAT/TOCO deneyinde ön bulgu olarak görüldü, BOOMERanG ve MAXIMA ile doğrulandı; 2000'de BOOMERanG en güçlü dalgalanmaların yaklaşık bir derecelik ölçekte olduğunu bildirdi ve sonuçlar öteki verilerle birlikte evrenin geometrisinin düz olduğunu gösterdi. WMAP dokuz yıllık verisiyle eğrilik için −0,0027 civarında, sıfırla uyumlu bir değer buldu; Planck ile baryon akustik salınımlarının birleşimi ise 0,001 ± 0,002 verir (d17). Kesinlik: gözlenebilir evrenin ölçülebildiği kadarıyla düz olduğu gözlemle kesinleşmiştir. Evrenin tamamının sonlu mu sonsuz mu olduğu ise bu ölçümden çıkmaz (d17)."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Cetvelden son saçılma yüzeyinin uzaklığına",
+        "metin": "Açı radyana çevrilir: 0,59643 × π / 180 ≈ 0,010410 radyan. Küçük açılarda uzaklık ≈ boy / açı: D = 144,43 Mpc / 0,010410 ≈ 13.870 Mpc, yani yaklaşık 13,9 gigaparsek. Işık yılına: 13.870 × 3,2616 ≈ 45.240 milyon, yani yaklaşık 45 milyar ışık yılı; d17'deki “arka plan ışımasını yayan madde bugün yaklaşık 46 milyar ışık yılı ötede” bilgisiyle tutarlı. Bu uzaklık bugünkü ölçekte. Işık salındığında evren 1 + z ≈ 1090,92 kat küçüktü: 13.870 / 1090,92 ≈ 12,7 Mpc ≈ 41 milyon ışık yılı; d17'deki yaklaşık 42 milyon ışık yılıyla uyumlu. Sonuç birimleri: megaparsek ve ışık yılı."
+      },
+      "akilda": "Ses ufku (bugünkü ölçekte 144,43 Mpc) gökte bir cetveldir; Planck açısını 0,59643 ± 0,00026 derece ölçtü. Cetvelin göründüğü açı, aradaki uzayın düz olduğunu gösterir (BOOMERanG 2000; Planck + BAO eğrilik 0,001 ± 0,002)."
+    },
+    {
+      "baslik": "WMAP ve Planck: lekelerden sayılara",
+      "paragraflar": [
+        "COBE lekelerin varlığını gösterdi ama 7 derecelik bulanık gözüyle ayrıntıyı göremedi. Wikipedia'ya göre NASA'nın WMAP uydusu 30 Haziran 2001'de Cape Canaveral'dan bir Delta II roketiyle fırlatıldı ve 1 Ekim 2001'de Dünya'dan yaklaşık 1,5 milyon km uzaktaki ikinci Lagrange noktası (L2) çevresine vardı; orada Güneş'ten, Dünya'dan ve Ay'dan gelen parazit en azdı. WMAP 23 ile 94 gigahertz arasında beş frekansta gözlem yaptı, en iyi çözünürlüğü yaklaşık 13 yay dakikasıydı ve COBE'den 45 kat duyarlı, 33 kat keskindi. Adı 2003'te, Princeton ekibinin üyesi ve görevin bilim ekibinde yer almış David Wilkinson'ın (1935–2002) anısına konmuştu. Uydu 2010'da kapatıldı; son veri sürümü 2012'deki dokuz yıllık veridir.",
+        "Wikipedia'ya göre WMAP'in ölçümleri bugünkü standart kozmoloji modelinin, ΛCDM'nin yerleşmesinde kilit rol oynadı. Sonra sıra Avrupa'ya geldi. ESA'nın Planck uydusu 14 Mayıs 2009'da Herschel uzay gözlemeviyle birlikte Fransız Guyanası'ndan bir Ariane 5 ile fırlatıldı ve Temmuz 2009'da L2'ye yerleşti. Dedektörleri mutlak sıfırın yalnızca 0,1 derece üstüne kadar soğutuldu; Wikipedia'ya göre Planck Ağustos 2009'dan soğutucusu Ocak 2012'de bitene kadar uzayda bilinen en soğuk cisimdi. 30 ile 857 gigahertz arasında dokuz frekans bandında ölçüm yaptı. Yüksek frekans aleti Ocak 2012'de helyum-3'ü bitince durdu; o zamana kadar gökyüzünü hedeflenen iki yerine beş kez taramıştı. Son kapatma komutu 23 Ekim 2013'te gönderildi.",
+        "Planck'ın ilk tam gökyüzü haritası 21 Mart 2013'te yayımlandı. ESA'ya göre harita ilk 15,5 aylık veriye dayanıyordu ve proje bilim insanı Jan Tauber standart kozmoloji modeliyle neredeyse kusursuz bir uyum gördüklerini söyledi. Son sonuçlar Temmuz 2018'de geldi. Planck 2018 makalesine göre düz ve altı parametreli ΛCDM modeli verilere uyar ve modelin uzantılarına dair ikna edici bir kanıt yoktur. Temel değerler: H0 = 67,4 ± 0,5 km/s/Mpc, madde yoğunluğu Ωm = 0,315 ± 0,007, sıradan madde Ωb h² = 0,0224 ± 0,0001, karanlık madde Ωc h² = 0,120 ± 0,001, tohumların eğimi ns = 0,965 ± 0,004 ve sonraki bölümde göreceğin optik derinlik 0,054 ± 0,007. Bu sayıların evrenin bileşimine çevrilmesi d17'de. Kesinlik: model içinde bu değerler gözlemle kesinleşmiştir; d17'deki Hubble gerilimi ise modelin bir yerde eksik olabileceğini düşündürür."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Üç uydunun keskinliği",
+        "metin": "COBE'nin gözü 7 derece = 7 × 60 = 420 yay dakikası. WMAP'in en keskin bandı 13,2 yay dakikası: 420 / 13,2 ≈ 32 kat daha keskin; kaynaktaki “33 kat” ile uyumlu. Planck'ın 143 gigahertz bandı 7,1 yay dakikası: 420 / 7,1 ≈ 59 kat. Gökyüzünde ayırt edilebilen bölge sayısı açının karesiyle artar: WMAP için 32² ≈ 1000 kat, Planck için 59² ≈ 3500 kat daha çok ayrıntı. Karşılaştırma: dolunay yaklaşık yarım derece, yani 30 yay dakikası; Planck'ın bu bandı Ay'ın genişliğine yaklaşık 4 leke sığdırır (30 / 7,1 ≈ 4,2), COBE'nin tek bir gözü ise yaklaşık 14 dolunay genişliğindeydi (420 / 30). Sonuç birimi: yay dakikası ve kat."
+      },
+      "akilda": "WMAP (2001–2010): L2, beş frekans, 13 yay dakikası, COBE'den 33 kat keskin. Planck (2009–2013): 0,1 K, dokuz frekans, 2013 ilk harita, 2018 son sonuçlar: altı parametreli düz ΛCDM, H0 = 67,4 ± 0,5."
+    },
+    {
+      "baslik": "Samanyolu'nun perdesi: ön planı temizlemek",
+      "paragraflar": [
+        "Arka plan ışımasına bakarken aradaki her şeye de bakarsın. Kirli bir pencereden dışarıyı fotoğraflamaya benzer: fotoğrafta manzaranın yanında camdaki lekeler de vardır. Wikipedia'nın WMAP maddesine göre bu lekelerin başlıcaları Samanyolu'ndan gelir: hızlı elektronların manyetik alanda saldığı senkrotron ışıması ve sıcak gazın serbest elektronlarından gelen ışıma düşük frekanslarda, yıldızlararası toz ise yüksek frekanslarda baskındır. Bunlara ön plan ışıması denir. Planck maddesine göre Planck'ın ölçümlerinin çoğu dedektörlerin başarımından çok ön planın ne kadar iyi çıkarılabildiğiyle sınırlıdır; bu, özellikle kutuplanma ölçümleri için önemlidir.",
+        "Çözüm renklerden yararlanmaktır. Arka plan ışıması kusursuz bir kara cisim tayfına sahiptir; ön plan kaynaklarının tayfları ise farklıdır. Simons Gözlemevi'nin Wikipedia maddesine göre bu yüzden ışımanın tepesine yakın frekansların yanında daha düşük ve daha yüksek frekanslarda da ölçüm yapılır ve bileşenler tayflarına göre ayrılır. WMAP'in beş, Planck'ın dokuz frekans bandı kullanmasının nedeni budur. Kirli pencereyi farklı renk filtreleriyle defalarca fotoğraflayıp, lekelerin her renkte farklı, manzaranın ise hep aynı görünmesinden yararlanarak lekeleri silmek gibi. Benzetmenin sınırı: gerçek ön plan yalnızca bir cam değil, gökyüzüne yayılmış, kendisi de üç boyutlu bir yapıdır ve her yönde farklı kalınlıktadır.",
+        "Yerden yapılan gözlemlerin bir perdesi daha vardır: Dünya'nın atmosferi. Wikipedia'ya göre su buharı milimetre dalgalarını hem soğurur hem de kendisi bu dalga boylarında ışıyarak sahte sinyaller üretir. Bu yüzden yer teleskopları en kuru ve en yüksek yerlere kurulur. Güney Kutbu yaklaşık 2,8 km yüksektedir; aşırı soğuk havada çok az su buharı bulunur ve Güneş her gün doğup batmadığı için atmosfer olağanüstü kararlıdır. Şili'deki Atacama Çölü'nde ACT yaklaşık 5.190 metrede, Simons Gözlemevi yaklaşık 5.200 metrede kuruludur. Ön planın tehlikesini en çarpıcı biçimde 2014'teki BICEP2 olayı gösterdi: duyurulan sinyal büyük ölçüde galaktik tozdan çıktı. Bu dürüst dersin ayrıntısı d54'te."
+      ],
+      "akilda": "Ön plan ışıması (düşük frekansta senkrotron ve serbest elektron ışıması, yüksek frekansta toz) çok frekanslı ölçümle ayrılır; Planck'ın ölçümleri çoğu yerde ön plan temizliğiyle sınırlıdır. Yerden gözlem için kuru ve yüksek yerler seçilir: Güney Kutbu ve Atacama."
+    },
+    {
+      "baslik": "Işığın titreşim yönü: kutuplanma",
+      "paragraflar": [
+        "Işık bir dalgadır ve titreşimin belli bir yönde olması, yani kutuplanma, ışığın geçmişi hakkında bilgi taşır (kutuplanmalı güneş gözlüğünü düşün). Wikipedia'ya göre arka plan ışıması birkaç mikrokelvin düzeyinde kutuplanmıştır. Nedeni son saçılmadır: bir elektrona her yönden aynı şiddette ışık gelirse saçılan ışığın kutuplanmaları birbirini götürür; ama elektronun bir yanından gelen ışık biraz sıcak, öbür yanından gelen biraz soğuksa, yani ışık dört yapraklı bir desenle geliyorsa, geride net bir kutuplanma kalır. Kutuplanma desenleri ikiye ayrılır. E kipi, sıcaklık lekelerinin çevresinde ışınsal ya da çember biçimli dizilen desendir; B kipi ise girdap gibi kıvrılan desendir.",
+        "E kipi kutuplanmayı Wikipedia'ya göre ilk kez 2002'de DASI adlı interferometre gördü. Bu sinyal sıcaklık farklarından yaklaşık 10 kat zayıftır ve onlarla ilişkilidir. Kutuplanmanın bir hazinesi daha vardır: yeniden iyonlaşma (d8). İlk yıldızlar evreni yeniden iyonlaştırınca ortaya çıkan serbest elektronlar, arka plan fotonlarının bir kısmını bir kez daha saçtı. Wikipedia'ya göre bu, büyük açısal ölçeklerde ek bir kutuplanma deseni bırakır ve küçük ölçekli sıcaklık farklarını sisli bir camın ardındaki ayrıntılar gibi biraz siler. Bu etkinin gücü optik derinlik denen bir sayıyla ölçülür; Planck 2018'e göre değeri 0,054 ± 0,007'dir ve d8'deki yaklaşık z = 7,7'lik yeniden iyonlaşma tarihi buradan çıkar.",
+        "B kipi iki kaynaktan gelebilir. Birincisi kütleçekimsel mercektir: yol üstündeki büyük yapılar daha güçlü olan E kipini büker ve bir kısmını B kipine çevirir. Wikipedia'ya göre bu tür B kipi 2013'te Güney Kutbu Teleskobu (SPT) ile, Herschel uzay gözlemevinin yardımıyla bulundu; POLARBEAR deneyi de 2014'te yüzde 97,2 güvenle kozmik kökenli B kipi ölçtüğünü bildirdi. İkinci kaynak çok daha büyük bir ödüldür: şişme sırasında oluştuğu düşünülen ilksel kütleçekim dalgaları. Bunlar henüz bulunamadı; 2014'te duyurulan BICEP2 sinyali tozdan çıktı ve bugünkü üst sınır r < 0,036'dır (d54). Kesinlik: E kipi ve mercek kaynaklı B kipi gözlemle kesinleşmiştir; ilksel B kipi kuram ya da hipotez basamağında bir öngörüdür.",
+        "Bu arayış için tasarlanan bir uydu var. Wikipedia'ya göre Japonya uzay ajansı JAXA, Mayıs 2019'da LiteBIRD görevini seçti. Uydunun 2032'de bir H3 roketiyle fırlatılıp L2'de üç yıl gözlem yapması planlanıyor; kozmolog Peter Coles 2023'te fırlatma tarihinin 2030'lara kaydığını yazmıştı. LiteBIRD 40 ile 400 gigahertz arasında bütün gökyüzünün kutuplanmasını ölçecek ve tensör-skaler oranı r'yi 0,001 düzeyinde sınamayı hedefliyor; Wikipedia'ya göre bu duyarlılık, tek alanlı ve yavaş yuvarlanan şişme modellerinin başlıcalarını deneysel olarak sınamaya yetecek. Yani önümüzdeki on yılda şişmenin en önemli eksik halkası ya bulunacak ya da en basit modeller daha da sıkışacak."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Arka plan fotonlarının kaçı yeniden saçıldı?",
+        "metin": "Optik derinlik τ, bir fotonun yolda saçılmadan geçme olasılığını e üzeri eksi τ olarak verir. τ = 0,054 için saçılmadan geçen kesir: e üzeri eksi 0,054 ≈ 0,947. Saçılan kesir: 1 − 0,947 ≈ 0,053, yani yaklaşık yüzde 5. Demek ki gördüğümüz arka plan fotonlarının yaklaşık yirmide biri, son saçılma yüzeyinden çıktıktan sonra, yeniden iyonlaşmış gazdaki bir elektrondan bir kez daha saçıldı. Bu küçük kesir, büyük ölçekli kutuplanmayı ve yeniden iyonlaşmanın tarihini ölçmemize yeter. Belirsizliğin uçlarında: τ = 0,047 için ≈ yüzde 4,6, τ = 0,061 için ≈ yüzde 5,9. Sonuç birimi: yüzde."
+      },
+      "akilda": "Arka plan ışıması son saçılmada kutuplandı. E kipi 2002'de (DASI) görüldü, sıcaklık farklarından ~10 kat zayıf; yeniden iyonlaşmanın optik derinliği 0,054 ± 0,007. Mercek kaynaklı B kipi 2013'te bulundu; ilksel B kipi henüz yok (r < 0,036), LiteBIRD 2032'de arayacak."
+    },
+    {
+      "baslik": "Yol boyunca izler: dipol, Sunyaev–Zeldoviç ve Sachs–Wolfe",
+      "paragraflar": [
+        "Haritadaki en büyük desen bizimle ilgilidir: d8'de gördüğün dipol. Güneş, arka plan ışımasına göre saniyede 369,82 km hızla gider ve dipolün genliği yaklaşık 3,36 milikelvindir. Wikipedia'ya göre gittiğimiz yön, Kupa takımyıldızının Aslan ile sınırına yakındır. Yerel Grup ise bir bütün olarak saniyede yaklaşık 620 ± 15 km hızla hareket eder. Aynı kaynağa göre dipolün genliği Dünya'nın Güneş çevresindeki dolanımı yüzünden yıl içinde değişir ve bu yıllık değişim COBE'nin FIRAS ölçümlerinde görülmüştür; dipol bugün haritaları ayarlamak için de kullanılır, WMAP kendini dipol ve Jüpiter ölçümleriyle ayarladı. Bir uyarı var: Wikipedia'ya göre WISE uydusu verisinden kuasarların yoğunluğuyla ölçülen dipol, arka plan ışımasının dipolünden belirgin biçimde farklı çıktı ve bu kozmolojik ilkeyle çelişiyor. Kesinlik: bu çelişki askıdadır; nedeni henüz bilinmiyor.",
+        "Işık yolda galaksi kümelerinden de geçer. Kümelerin içindeki milyonlarca derecelik gazda çok hızlı elektronlar vardır. Wikipedia'ya göre bu elektronlar arka plan fotonlarına çarpıp onlara enerji aktarır; sonuçta kümenin yönünde ışımanın tayfı küçük bir bozulmaya uğrar. Buna Sunyaev–Zeldoviç etkisi denir; Raşid Sunyaev ve Yakov Zeldoviç 1969'da incelediler. Etkinin büyüklüğü kırmızıya kaymaya bağlı olmadığı için çok uzak kümeler de yakındakiler kadar kolay bulunur. Etki ilk kez 1980'lerin başında, Cambridge ve Owens Valley gruplarınca kümelerde saptandı; Wikipedia SPT'nin bu yolla binden fazla galaksi kümesi keşfettiğini yazar. Kümelerin kütlesi ve kozmik ağdaki yeri d49'da.",
+        "Bir de kütleçekiminin izi vardır. Wikipedia'ya göre Sachs–Wolfe etkisinde arka plan fotonları, son saçılma anında bulundukları bölgenin kütleçekiminden çıkarken enerji kaybeder ya da kazanır; bu etki 10 dereceden büyük açılardaki dalgalanmaların başlıca kaynağıdır. Bütünleşik Sachs–Wolfe etkisi ise yol boyunca olur: karanlık enerji genişlemeyi hızlandırınca dev kümelerin ve boşlukların kütleçekim çukurları ve tepeleri foton içlerinden geçerken sığlaşır. Foton bir süper kümeye girerken kazandığı enerjinin bir kısmını çıkarken geri vermez ve biraz ısınır; bir süper boşluktan geçen foton ise biraz soğur. Aynı kaynağa göre galaksi yoğunluğu ile ışımanın sıcaklığı arasındaki bu ilişki orta ile yüksek anlamlılıkla saptanmıştır; yani arka plan ışıması karanlık enerjinin de dolaylı bir tanığıdır."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Dünya'nın yörünge hareketi dipolü ne kadar değiştirir?",
+        "metin": "Küçük hızlarda ΔT ≈ T0 × v / c (d8). Dünya'nın Güneş çevresindeki hızı yaklaşık 29,78 km/s (d17). ΔT ≈ 2,72548 × 29,78 / 299.792 ≈ 2,71×10⁻⁴ K, yani yaklaşık 0,27 milikelvin. Güneş'in hareketinden gelen dipol 3,36 milikelvin. Dünya'nın hızı yılın bir döneminde Güneş'in hareketine eklenir, altı ay sonra ondan çıkar; bu yüzden ölçülen dipol yıl içinde en çok yaklaşık 0,27 / 3,36 ≈ yüzde 8 oranında salınır (kesin oran, iki hareketin yönleri arasındaki açıya bağlıdır ve daha küçüktür). COBE'nin bu yıllık salınımı görmesi, ölçümün ne kadar hassas olduğunu gösterir. Sonuç birimi: milikelvin."
+      },
+      "akilda": "Güneş arka plana göre 369,82 km/s, Yerel Grup ~620 km/s hızla gider; dipol yıl içinde Dünya'nın hareketiyle değişir. Sunyaev–Zeldoviç etkisi kümeleri her uzaklıkta gösterir; Sachs–Wolfe ve bütünleşik Sachs–Wolfe etkileri kütleçekimin ve karanlık enerjinin izleridir."
+    },
+    {
+      "baslik": "Kusurlu fotoğraftaki tuhaflıklar: anomaliler",
+      "paragraflar": [
+        "Planck haritası standart modele neredeyse kusursuz uyar, ama birkaç tuhaflık da gösterir. ESA'nın 2013 duyurusu üçünü sayar: büyük açısal ölçeklerdeki dalgalanmalar modelin öngördüğünden zayıftır; gökyüzünün karşılıklı iki yarısının ortalama sıcaklıkları arasında bir asimetri vardır; bir soğuk nokta da beklenenden çok daha geniş bir alana yayılır. Aynı kaynağa göre bunların ilk belirtileri WMAP'te görülmüş, ama kozmik kökenli olduklarından kuşkulanıldığı için büyük ölçüde görmezden gelinmişti. Wikipedia'ya göre en eski tuhaflık COBE'den beri bilinen zayıf dört kutuplu (kuadrupol) bileşendir; ayrıca dört kutuplu ve sekiz kutuplu bileşenlerin eksenleri birbirine ve Güneş Sistemi'nin tutulum düzlemine hizalı görünür. João Magueijo ve Kate Land 2005'te bu hizalanmaya şeytanın ekseni dedi.",
+        "Soğuk Nokta, Wikipedia'ya göre Irmak takımyıldızı yönünde, yarıçapı yaklaşık 5 derece olan bir bölgedir. Ortalamadan yaklaşık 70 mikrokelvin, yer yer 140 mikrokelvin daha soğuktur; oysa o çözünürlükte tipik sıcaklık sapmalarının ortalama büyüklüğü yalnızca 18 mikrokelvindir. WMAP'in üç yıllık verisiyle yapılan analizde, standart rastgele dalgalanmalarla üretilen benzetim gökyüzlerinde en az bu kadar büyük bir sapma bulunma olasılığı yüzde 1,85 çıktı. Planck 2013'te Soğuk Nokta'yı benzer anlamlılıkla gördü; bu, WMAP aletinden kaynaklanan bir hata olasılığını ortadan kaldırdı. Wikipedia'nın ana maddesine göre Planck'ın görmesi alet hatasını dışlar, ama ön plan kirliliğini dışlamaz.",
+        "Açıklamalar farklı kesinlik basamaklarındadır. En sade açıklama rastlantıdır: gökyüzünde çok sayıda olası tuhaflık aranınca bazılarının rastlantıyla bulunması beklenir (d55'te bunun adı başka yere bakma etkisi). WMAP'in baş bilim insanı Charles Bennett'in de insanların sıra dışı şeyler bulmak istediğini, bunun bir psikolojik etkisi olduğunu söylediği aktarılır. Wikipedia'ya göre WMAP güç tayfının ayrıntılı bir analizi zayıf kuadrupolün modelle yüzde 10 düzeyinde uyumlu olduğunu buldu. Soğuk Nokta için bir süper boşluk açıklaması da var: 2015'te o yönde çapı 1,8 milyar ışık yılı olan bir süper boşluk bulunduğu bildirildi; 2017'deki bir çalışma böyle bir boşluğun soğukluğu açıklayamayacağını söyledi; 2021'de Karanlık Enerji Taraması ilişki lehine yeni kanıt sundu. Kesinlik: askıda. Başka bir evrenle dolanıklık ya da kabarcık çarpışması önerileri ise spekülasyon basamağındadır.",
+        "Bu tuhaflıkların neden kolayca çözülemediğinin temel bir nedeni var: elimizde tek bir gökyüzü var. En büyük desenlerden gökte yalnızca birkaç tane bulunur; birkaç örnekle bir ortalamayı kesin ölçemezsin. Wikipedia'ya göre bu kozmik varyans ve ön planlar yüzünden en büyük ölçekli desenler hiçbir zaman küçük ölçekliler kadar iyi ölçülemeyecek. Zarı yalnızca birkaç kez atabiliyorsan, gelen sayıların hileli bir zardan mı yoksa şanstan mı geldiğini ayırt edemezsin. İstanbul'dan bir not: Soğuk Nokta'nın dik açıklığı yaklaşık −19,6 derecedir; d1'deki kurala göre bu yön İstanbul'da en fazla 90 − 41 − 19,6 ≈ 29 derece yükselir. O yöne bakabilirsin, ama mikrodalga olduğu için hiçbir şey göremezsin; yalnızca evrenin en tartışmalı lekelerinden birinin oralarda olduğunu bilirsin."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Soğuk Nokta ne kadar sıra dışı?",
+        "metin": "Soğuk Nokta ortalamadan 70 mikrokelvin soğuk, tipik sapma 18 mikrokelvin. Oran: 70 / 18 ≈ 3,9, yani tipik sapmanın yaklaşık 4 katı. En derin yerinde 140 / 18 ≈ 7,8 kat. Benzetimlerde en az bu kadar büyük bir sapma olasılığı yüzde 1,85, yani kabaca 1 / 0,0185 ≈ 54 gökyüzünden birinde. Bu küçük ama imkânsız değil: 54 farklı evren haritası çizsen birinde böyle bir leke beklenir. Şimdi başka yere bakma etkisini düşün: gökyüzünde 10 farklı türde tuhaflık arıyorsan, her biri yüzde 1,85 olasılıklı olsa bile en az birini bulma olasılığı 1 − (1 − 0,0185) üzeri 10 ≈ yüzde 17 olur. Sonuç birimi: oran ve yüzde."
+      },
+      "akilda": "Anomaliler: zayıf büyük ölçekler, iki yarı arasında asimetri, şeytanın ekseni (2005) ve Irmak'taki Soğuk Nokta (~70 mikrokelvin, rastlantı olasılığı %1,85). Hepsi askıda; kozmik varyans yüzünden en büyük ölçekler hiçbir zaman tam ölçülemez."
+    },
+    {
+      "baslik": "Bugün ve yarın: yeni teleskoplar ve evdeki karıncalanma",
+      "paragraflar": [
+        "Uydu çağından sonra öncülük yer teleskoplarına geçti. Wikipedia'ya göre ACT, Şili'de 2007'den 2022 ortasına kadar gözlem yaptı. Güney Kutbu'ndaki 10 metrelik SPT'ye 2017'de 16.000'den fazla dedektörlü SPT-3G kamerası takıldı; kamera 90, 150 ve 220 gigahertzte gözlem yapıyor ve 2019'dan beri yaklaşık 10.000 derece karelik bir alanı tarıyor. Onların yerini Atacama'daki Simons Gözlemevi alıyor: üç küçük açıklıklı (0,5 m) ve bir büyük (6 m) teleskop, yaklaşık 60.000 bolometre. Bolometre, soğurduğu ışığın onu çok az ısıtmasını ölçen, mutlak sıfırın hemen üstünde, burada 100 milikelvinde çalışan bir dedektördür. Wikipedia'ya göre küçük teleskoplardan ikisi Nisan 2024'te, üçüncüsü Haziran 2024'te, büyük teleskop Mart 2025'te gözleme başladı; hedef, kutuplanmayı Planck'tan on kat duyarlı haritalamak ve yaklaşık 16.000 galaksi kümesi bulmak.",
+        "Her plan gerçekleşmedi. ABD'nin bir sonraki büyük yer projesi CMB-S4, Güney Kutbu ve Şili'de yüz binlerce dedektörü bir araya getirecekti. Projenin sitesine göre ABD Enerji Bakanlığı (DOE) ve Ulusal Bilim Vakfı (NSF) 9 Temmuz 2025'te projeyi artık destekleyemeyeceklerini bildirdi; proje düzenli biçimde kapatılıyor ve iki kurum mevcut deneylerin sınırlı iyileştirmeleri üzerinde toplulukla çalışmayı sürdüreceğini söylüyor. Gelecek için açık bir hedef daha var: Wikipedia'ya göre ışımanın tayfında kara cisim yasasından çok küçük sapmalar, yani tayfsal bozulmalar bekleniyor; ilk ölçümlerinin önümüzdeki on yıllarda yapılması umuluyor. Kesinlik: bu sapmalar kuram ya da hipotez basamağında bir öngörüdür, henüz ölçülmedi.",
+        "Bu ışımaya eskiden evlerimizde de dokunuyorduk. d8'de CoolCosmos'a göre eski analog televizyonlarda yayın olmayan kanaldaki karıncalanmanın küçük bir kısmının bu ışımadan geldiğini gördün. Bu kısım genellikle yaklaşık yüzde 1 olarak anılır: kozmolog Peter Coles 2025'te, kozmolog Ethan Siegel 2022'de bu değeri verir; Coles karıncalanmanın büyük kısmının alıcının kendi ısıl gürültüsünden geldiğini ekler. İki yazı da sayının nasıl hesaplandığını göstermez; bu yüzden onu kaba bir büyüklük olarak oku. Işıma şu an bulunduğun odayı da doldurur: d8'e göre her santimetreküpte yaklaşık 411 arka plan fotonu var. İstanbul'da balkona çıktığında bu ışığı göremezsin; ama Penzias ve Wilson'ın antenine giren ışıkla aynı ışığın içinde durursun."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Odanda kaç arka plan fotonu var?",
+        "metin": "Oda 4 m × 5 m, tavan 2,5 m: hacim 4 × 5 × 2,5 = 50 m³. Bir metreküp 10⁶ santimetreküp: 50 × 10⁶ = 5×10⁷ cm³. Her santimetreküpte yaklaşık 411 foton (d8): 5×10⁷ × 411 ≈ 2,1×10¹⁰ foton. Yani odanda her an yaklaşık 20 milyar arka plan fotonu var. Ama hepsinin enerjisi toplanınca küçüktür: d8'e göre enerji yoğunluğu 0,260 elektronvolt / cm³. 5×10⁷ × 0,260 ≈ 1,3×10⁷ elektronvolt; 1 elektronvolt ≈ 1,6×10⁻¹⁹ J olduğundan ≈ 2,1×10⁻¹² J. Bu, bir mumun bir saniyede saldığı enerjinin trilyonda birinden de azdır; kaba karşılaştırma için mumun gücünü birkaç onluk vat düzeyinde düşün. Sonuç birimleri: foton sayısı ve jul."
+      },
+      "akilda": "ACT (2007–2022), SPT-3G (2017'den beri) ve Simons Gözlemevi (2024–2025'te gözleme başladı) işi sürdürüyor; CMB-S4'e DOE ve NSF 9 Temmuz 2025'te desteği kesti; LiteBIRD 2032'de planlanıyor. Eski TV karıncalanmasının yaklaşık yüzde 1'inin bu ışımadan geldiği söylenir (kaba bir değer)."
+    }
+  ],
+  "formuller": [
+    {
+      "ad": "Sıcaklık ve kırmızıya kayma",
+      "ifade": "T(z) = T0 × (1 + z)",
+      "aciklama": "T0 = 2,72548 K bugünkü sıcaklık, z kırmızıya kayma. Son saçılmada z ≈ 1090 için ≈ 2970 K, yani yaklaşık 3000 K."
+    },
+    {
+      "ad": "Wien yasası",
+      "ifade": "λtepe = 2,898×10⁻³ m·K / T",
+      "aciklama": "T kelvin, λ metre; dalga boyuna göre çizilen tayfın tepesi. 2,725 K için ≈ 1,06 mm. Frekansa göre çizilen tayfın tepesi ise 160,2 gigahertzte (dalga boyu ≈ 1,87 mm)."
+    },
+    {
+      "ad": "Frekans ve dalga boyu",
+      "ifade": "f = c / λ",
+      "aciklama": "c = 299.792.458 m/s, λ metre, f hertz. 7,35 cm için ≈ 4080 megahertz (Penzias ve Wilson)."
+    },
+    {
+      "ad": "Sıcaklığa karşılık gelen enerji",
+      "ifade": "E ≈ k × T",
+      "aciklama": "k ≈ 8,617×10⁻⁵ elektronvolt bölü kelvin. 3000 K için ≈ 0,26 elektronvolt; 13,6 elektronvolt ≈ 157.800 K'ye denk gelir."
+    },
+    {
+      "ad": "Gökteki cetvel",
+      "ifade": "D ≈ r / θ",
+      "aciklama": "r cetvelin boyu (ses ufku, bugünkü ölçekte 144,43 Mpc), θ gökteki açısı (radyan; 0,59643° ≈ 0,010410 rad), D uzaklık (≈ 13.870 Mpc). Küçük açılarda geçerli."
+    },
+    {
+      "ad": "Hareketten doğan dipol",
+      "ifade": "ΔT ≈ T0 × v / c",
+      "aciklama": "v gözlemcinin arka plana göre hızı. Güneş için 369,82 km/s → ≈ 3,36 milikelvin; Dünya'nın yörünge hızı 29,78 km/s → ≈ 0,27 milikelvinlik yıllık salınım."
+    },
+    {
+      "ad": "Saçılmadan geçme olasılığı",
+      "ifade": "P = e^(−τ)",
+      "aciklama": "τ optik derinlik (birimsiz). Planck 2018: τ = 0,054 ± 0,007 → fotonların yaklaşık yüzde 5'i yeniden iyonlaşmış gazda bir kez daha saçıldı."
+    }
+  ],
+  "anahtar_sayilar": [
+    {
+      "deger": "1941; 2,3 K",
+      "aciklama": "McKellar'ın siyanojen çizgilerinden farkında olmadan ölçtüğü sıcaklık",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Discovery_of_cosmic_microwave_background_radiation"
+    },
+    {
+      "deger": "20 Mayıs 1964; 7,35 cm (4080 MHz)",
+      "aciklama": "Penzias ve Wilson'ın fazlalığı açıkça gösteren ilk ölçümü ve dalga boyu",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Cosmic_microwave_background"
+    },
+    {
+      "deger": "3,5 K (2,3 K atmosfer + 0,9 K alet çıkarıldıktan sonra)",
+      "aciklama": "Penzias ve Wilson'ın yayımladığı fazladan anten sıcaklığı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Discovery_of_cosmic_microwave_background_radiation"
+    },
+    {
+      "deger": "1978; 2019",
+      "aciklama": "Penzias–Wilson Nobel'i (Kapitsa ile paylaşıldı); Peebles'ın Nobel'i",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Discovery_of_cosmic_microwave_background_radiation"
+    },
+    {
+      "deger": "18 Kasım 1989; 9 dakika; >1000 kişi",
+      "aciklama": "COBE'nin fırlatılışı, kara cisim tayfının ilk sonucu için gereken gözlem süresi, proje ekibi",
+      "kaynak_url": "https://www.nobelprize.org/prizes/physics/2006/press-release/"
+    },
+    {
+      "deger": "< 1/10.000 sapma; 2,72548 ± 0,00057 K",
+      "aciklama": "FIRAS'ın kara cisim tayfı ve bugünkü sıcaklık",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Big_Bang"
+    },
+    {
+      "deger": "23 Nisan 1992; ~1/100.000",
+      "aciklama": "DMR'nin sıcaklık farklarını duyurduğu gün ve farkların göreli büyüklüğü",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Cosmic_Background_Explorer"
+    },
+    {
+      "deger": "z = 1089,92 ± 0,25",
+      "aciklama": "Son saçılma yüzeyinin kırmızıya kayması (Planck 2018)",
+      "kaynak_url": "https://arxiv.org/abs/1807.06209"
+    },
+    {
+      "deger": "Δz = 195 ± 2; ~118.000 yıl; ~379.000 yıl",
+      "aciklama": "Son saçılma yüzeyinin kalınlığı ve ayrışma anındaki yaş (WMAP)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Wilkinson_Microwave_Anisotropy_Probe"
+    },
+    {
+      "deger": "θ = 0,59643° ± 0,00026°; r = 144,43 ± 0,26 Mpc",
+      "aciklama": "Ses ufkunun gökteki açısı ve bugünkü ölçekteki boyu (Planck 2018)",
+      "kaynak_url": "https://arxiv.org/abs/1807.06209"
+    },
+    {
+      "deger": "30 Haziran 2001 – 20 Ekim 2010; 23–94 GHz; 13 yay dakikası",
+      "aciklama": "WMAP'in görev süresi, frekansları ve en iyi çözünürlüğü",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Wilkinson_Microwave_Anisotropy_Probe"
+    },
+    {
+      "deger": "14 Mayıs 2009 – 23 Ekim 2013; 30–857 GHz; 0,1 K",
+      "aciklama": "Planck'ın görev süresi, frekans aralığı ve dedektör sıcaklığı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Planck_(spacecraft)"
+    },
+    {
+      "deger": "160,2 GHz",
+      "aciklama": "Arka plan ışıması tayfının frekansa göre tepesi",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Planck_(spacecraft)"
+    },
+    {
+      "deger": "τ = 0,054 ± 0,007; ns = 0,965 ± 0,004",
+      "aciklama": "Yeniden iyonlaşmanın optik derinliği ve tohumların eğimi (Planck 2018)",
+      "kaynak_url": "https://arxiv.org/abs/1807.06209"
+    },
+    {
+      "deger": "620 ± 15 km/s",
+      "aciklama": "Yerel Grup'un arka plan ışımasına göre hızı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Cosmic_microwave_background"
+    },
+    {
+      "deger": "~70 mikrokelvin; yarıçap ~5°; %1,85",
+      "aciklama": "Soğuk Nokta'nın soğukluğu, boyutu ve rastlantı olasılığı (WMAP 3 yıllık)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/CMB_cold_spot"
+    },
+    {
+      "deger": "9 Temmuz 2025",
+      "aciklama": "DOE ve NSF'nin CMB-S4'e desteği kestiğini açıkladığı gün",
+      "kaynak_url": "https://cmb-s4.org/"
+    },
+    {
+      "deger": "~%1",
+      "aciklama": "Eski TV karıncalanmasında arka plan ışımasının payı (kaba, türetilmeden aktarılan değer)",
+      "kaynak_url": "https://telescoper.blog/?p=70428"
+    }
+  ],
+  "sozluk": [
+    {
+      "terim": "boynuz anten",
+      "tanim": "Huni biçimli, yandan gelen paraziti iyi bastıran ve bu yüzden hassas radyo ölçümlerinde kullanılan anten."
+    },
+    {
+      "terim": "anten sıcaklığı",
+      "tanim": "Bir antenin aldığı radyo gücünün, aynı gücü verecek bir cismin sıcaklığı cinsinden ifadesi."
+    },
+    {
+      "terim": "son saçılma yüzeyi",
+      "tanim": "Arka plan fotonlarının bir elektrondan son kez saçıldığı, bizi her yönden saran ve yaklaşık 118.000 yıl kalınlığında bir kabuk olan bölge."
+    },
+    {
+      "terim": "foton ayrışması",
+      "tanim": "Elektronlar atomlara bağlanınca fotonların maddeyle etkileşmeyi bırakıp serbestçe yol almaya başlaması."
+    },
+    {
+      "terim": "Thomson saçılması",
+      "tanim": "Işığın serbest elektronlardan enerjisi değişmeden saçılması; saydamlaşmadan önce evreni sisli tutan süreç."
+    },
+    {
+      "terim": "anizotropi",
+      "tanim": "Bir niceliğin yönden yöne farklı olması; burada arka plan ışımasının sıcaklığındaki yönsel farklar."
+    },
+    {
+      "terim": "güç tayfı",
+      "tanim": "Bir haritada her açısal büyüklükteki dalgalanmanın ne kadar güçlü olduğunu gösteren grafik."
+    },
+    {
+      "terim": "akustik zirve",
+      "tanim": "Arka plan ışımasının güç tayfında, erken plazmadaki ses dalgalarından kalan tepelerden biri."
+    },
+    {
+      "terim": "adyabatik dalgalanma",
+      "tanim": "Bütün parçacık türlerinin aynı yerde aynı oranda fazla ya da eksik olduğu yoğunluk dalgalanması; şişmenin öngördüğü tür."
+    },
+    {
+      "terim": "Silk sönümü",
+      "tanim": "Fotonların plazmada giderek uzun yollar alması ve son saçılma yüzeyinin kalınlığı yüzünden küçük ölçekli dalgalanmaların silinmesi."
+    },
+    {
+      "terim": "Sachs–Wolfe etkisi",
+      "tanim": "Arka plan fotonlarının son saçılma anında bulundukları bölgenin kütleçekiminden çıkarken enerji kaybetmesi ya da kazanması."
+    },
+    {
+      "terim": "bütünleşik Sachs–Wolfe etkisi",
+      "tanim": "Karanlık enerjinin sığlaştırdığı dev yapıların içinden geçen fotonların biraz ısınması ya da soğuması."
+    },
+    {
+      "terim": "E kipi",
+      "tanim": "Arka plan ışımasının kutuplanmasında, sıcaklık lekelerinin çevresinde ışınsal ya da çember biçiminde dizilen desen."
+    },
+    {
+      "terim": "ön plan ışıması",
+      "tanim": "Arka plan ışımasının önüne binen, başta Samanyolu'nun toz ve senkrotron ışıması olmak üzere başka kaynaklardan gelen mikrodalga ışık."
+    },
+    {
+      "terim": "kozmik varyans",
+      "tanim": "Elimizde tek bir gökyüzü olduğu için en büyük ölçekli desenlerin yalnızca birkaç örnekle, dolayısıyla sınırlı kesinlikle ölçülebilmesi."
+    },
+    {
+      "terim": "Soğuk Nokta",
+      "tanim": "Irmak takımyıldızı yönünde, yarıçapı yaklaşık 5 derece olan ve beklenenden soğuk görünen, açıklaması askıda bir bölge."
+    },
+    {
+      "terim": "şeytanın ekseni",
+      "tanim": "Arka plan ışımasının en büyük ölçekli desenlerinin birbirine ve tutulum düzlemine hizalı görünmesine 2005'te verilen ad."
+    },
+    {
+      "terim": "tayfsal bozulma",
+      "tanim": "Arka plan ışımasının tayfında kusursuz kara cisim eğrisinden beklenen, henüz ölçülmemiş çok küçük sapmalar."
+    },
+    {
+      "terim": "bolometre",
+      "tanim": "Soğurduğu ışığın kendisini ne kadar ısıttığını ölçerek ışık gücünü bulan, çok soğuk tutulan dedektör."
+    }
+  ],
+  "defter_notu": [
+    "Kaçırılan ölçümler: McKellar 1941 (~2,3 K), Le Roux 1955, Shmaonov 1957. Ölçüm + yorum = keşif.",
+    "Penzias ve Wilson 1964, Holmdel boynuz anteni, 7,35 cm (4080 MHz), 3,5 K fazlalık; güvercinler gitti, gürültü kaldı.",
+    "Dicke: “Çocuklar, kaçırıldık.” Nobel: 1978 Penzias–Wilson, 2019 Peebles.",
+    "3000 K → 2,725 K: z ≈ 1090. Tepe: 160,2 GHz (frekansa göre) ya da 1,06 mm (dalga boyuna göre).",
+    "Saydamlaşma neden 3000 K'de? Her baryona ~1,7 milyar foton. Son saçılma yüzeyi ~118.000 yıl kalınlığında.",
+    "COBE 1989: FIRAS kusursuz kara cisim (9 dakika, sapma < 1/10.000), DMR yüz binde bir farklar (23 Nisan 1992). 2006 Nobel Mather–Smoot.",
+    "Akustik zirveler: 1. eğrilik, tek/çift oranı baryonlar, 3. karanlık madde; 1 : 2 : 3 → adyabatik tohumlar.",
+    "Cetvel: ses ufku 144,43 Mpc, açı 0,59643° → D ≈ 13,9 Gpc; evren düz.",
+    "Kutuplanma: E kipi 2002 (DASI); τ = 0,054; mercek B kipi 2013 (SPT); ilksel B kipi yok, r < 0,036.",
+    "Anomaliler askıda: Soğuk Nokta (Irmak, ~70 mikrokelvin, %1,85), şeytanın ekseni. CMB-S4 iptal (9 Temmuz 2025); Simons çalışıyor; LiteBIRD 2032."
+  ],
+  "sorular": [
+    {
+      "soru": "McKellar 1941'de arka plan ışımasını ölçmüştü. Bu neden keşif sayılmadı?",
+      "cevap": "Siyanojen çizgilerinden yaklaşık 2,3 K'lik bir sıcaklık çıkardı ama bunu yıldızlararası moleküllerin dönme sıcaklığı diye yorumladı ve kozmolojik bir anlam vermedi. Ölçüm, onu evrenin başlangıcından kalan ışıma diye yorumlayan bir kuramla buluşmadı."
+    },
+    {
+      "soru": "Penzias ve Wilson gürültünün kendi aletlerinden gelmediğinden nasıl emin oldu?",
+      "cevap": "Radar ve yayın parazitini ayıkladılar, alıcıyı sıvı helyumla 4 K'ye soğuttular, güvercin pisliğini temizlediler. Gürültü beklenenin 100 katıydı, gökyüzüne eşit dağılmıştı ve gece gündüz sürüyordu; Dünya, Güneş ya da Samanyolu kaynaklı olmadığını gösterdiler."
+    },
+    {
+      "soru": "Penzias ve Wilson 3,5 K'lik fazlalığı nasıl buldu?",
+      "cevap": "Antenin ölçtüğü gürültüden 2,3 K'lik atmosfer katkısını ve 0,9 K'lik alet katkısını çıkardılar; geriye 3,5 K kaldı. Toplam yaklaşık 6,7 K'nin yarıdan biraz fazlası evrenden geliyordu."
+    },
+    {
+      "soru": "Işıma 3000 K'de salındı. Bugün neden 2,725 K'lik mikrodalga ışıma olarak görüyoruz?",
+      "cevap": "Evren o zamandan beri yaklaşık 1090 kat genişledi; her dalga boyu aynı oranda uzadı. Kırmızıya kaymış kara cisim ışıması, daha düşük sıcaklıkta bir kara cisim ışımasıdır: 3000 / 1091 ≈ 2,75 K. Tepe yakın kızılötesinden (≈ 966 nm) milimetre dalgalarına (≈ 1,06 mm) kaydı."
+    },
+    {
+      "soru": "Hidrojenin iyonlaşma enerjisi 13,6 elektronvolt, yani yaklaşık 157.800 K'ye denk geliyor. Evren neden ancak ~3000 K'de saydamlaştı?",
+      "cevap": "Her baryona yaklaşık 1,7 milyar foton düşüyordu. Ortalama foton enerjisi düşük olsa da, bu kadar çok fotonun içindeki küçük yüksek enerjili kesir bile oluşan her atomu hemen yeniden iyonlaştırmaya yetiyordu. Atomlar ancak sıcaklık yaklaşık 3000 K'ye inince kalıcı oldu."
+    },
+    {
+      "soru": "Son saçılma yüzeyi neden gerçekte bir “yüzey” değildir?",
+      "cevap": "Yeniden birleşme bir anda olmadı; WMAP'e göre kabuğun kalınlığı kırmızıya kaymada 195 ± 2, zamanda yaklaşık 118.000 yıl. Ayrıca bir yerden çok bir zamandır: bizi her yönden saran, fotonları tam şimdi bize ulaşan noktaların kümesidir."
+    },
+    {
+      "soru": "COBE'nin FIRAS ve DMR aletleri neyi buldu ve neden ikisi de fark ölçüyordu?",
+      "cevap": "FIRAS gökyüzünü uydunun içindeki bilinen bir kara cisimle karşılaştırarak tayfın kusursuz bir kara cisim olduğunu (sapma on binde birin altında) gösterdi. DMR 60 derece aralı iki yönün farkını ölçerek yüz binde bir düzeyindeki sıcaklık farklarını buldu. Fark ölçmek aletin kendi hatalarını büyük ölçüde siler."
+    },
+    {
+      "soru": "Akustik zirvelerin dizilişi 1 : 2 : 3 oranında. Bu bize ne söyler?",
+      "cevap": "Tohum dalgalanmaların adyabatik olduğunu, yani bütün parçacık türlerinin aynı yerde aynı oranda fazla olduğunu gösterir. Öbür tür 1 : 3 : 5 verirdi. Adyabatik tohumlar şişmenin öngörüsüdür ve kozmik sicimleri yapı oluşumunun ana açıklaması olmaktan çıkarır."
+    },
+    {
+      "soru": "Ses ufku bugünkü ölçekte 144,43 Mpc ve gökte 0,59643 derece görünüyorsa son saçılma yüzeyi ne kadar uzaktadır?",
+      "cevap": "0,59643° ≈ 0,010410 radyan; D ≈ 144,43 / 0,010410 ≈ 13.870 Mpc, yani yaklaşık 13,9 gigaparsek ya da 45 milyar ışık yılı (bugünkü ölçekte). Cetvelin bu açıyla görünmesi, aradaki uzayın düz olduğunu gösterir."
+    },
+    {
+      "soru": "Optik derinlik 0,054 ne demektir?",
+      "cevap": "Arka plan fotonlarının yaklaşık e üzeri eksi 0,054 ≈ 0,947'si yolda saçılmadan geldi; yaklaşık yüzde 5'i yeniden iyonlaşmış gazdaki bir elektrondan bir kez daha saçıldı. Bu saçılma büyük ölçekli kutuplanma bırakır ve yeniden iyonlaşmanın tarihini (z ≈ 7,7) verir."
+    },
+    {
+      "soru": "Sunyaev–Zeldoviç etkisi neden uzak galaksi kümelerini bulmak için çok değerlidir?",
+      "cevap": "Kümedeki sıcak gazın elektronları arka plan fotonlarına enerji aktarır ve tayfı bozar. Bu bir saçılma etkisi olduğu için büyüklüğü kırmızıya kaymaya bağlı değildir; çok uzak kümeler yakındakiler kadar kolay bulunur. SPT bu yolla binden fazla küme keşfetti."
+    },
+    {
+      "soru": "Soğuk Nokta'nın kesinlik etiketi nedir ve neden?",
+      "cevap": "Askıda. Planck onu WMAP ile benzer anlamlılıkla gördü, yani alet hatası değil; ama rastlantı olasılığı yüzde 1,85 ve çok sayıda tuhaflık arandığında böyle bir lekenin bulunması beklenebilir (başka yere bakma etkisi). Süper boşluk açıklaması tartışmalı; başka evren önerileri spekülasyondur."
+    },
+    {
+      "soru": "Eski TV karıncalanmasının yüzde kaçı arka plan ışımasından gelir ve bu sayıya ne kadar güvenmelisin?",
+      "cevap": "Kozmologlar Peter Coles ve Ethan Siegel yaklaşık yüzde 1 der; karıncalanmanın büyük kısmı alıcının kendi ısıl gürültüsündendir. İki kaynak da sayının nasıl hesaplandığını göstermediği için onu kaba bir büyüklük düzeyi olarak okumak gerekir."
+    }
+  ],
+  "kaynaklar": [
+    {
+      "ad": "Wikipedia: Cosmic microwave background",
+      "url": "https://en.wikipedia.org/wiki/Cosmic_microwave_background"
+    },
+    {
+      "ad": "Wikipedia: Discovery of cosmic microwave background radiation",
+      "url": "https://en.wikipedia.org/wiki/Discovery_of_cosmic_microwave_background_radiation"
+    },
+    {
+      "ad": "APS Physics Historic Sites: Holmdel Horn Antenna",
+      "url": "https://www.aps.org/funding-recognition/historic-sites/holmdel-horn-antenna"
+    },
+    {
+      "ad": "PBS A Science Odyssey: Penzias and Wilson discover cosmic microwave radiation",
+      "url": "https://www.pbs.org/wgbh/aso/databank/entries/dp65co.html"
+    },
+    {
+      "ad": "Wikipedia: Recombination (cosmology)",
+      "url": "https://en.wikipedia.org/wiki/Recombination_(cosmology)"
+    },
+    {
+      "ad": "Wikipedia: Cosmic Background Explorer",
+      "url": "https://en.wikipedia.org/wiki/Cosmic_Background_Explorer"
+    },
+    {
+      "ad": "Nobel Prize in Physics 2006: press release",
+      "url": "https://www.nobelprize.org/prizes/physics/2006/press-release/"
+    },
+    {
+      "ad": "Wikipedia: Big Bang",
+      "url": "https://en.wikipedia.org/wiki/Big_Bang"
+    },
+    {
+      "ad": "Wikipedia: Wilkinson Microwave Anisotropy Probe",
+      "url": "https://en.wikipedia.org/wiki/Wilkinson_Microwave_Anisotropy_Probe"
+    },
+    {
+      "ad": "Wikipedia: Planck (spacecraft)",
+      "url": "https://en.wikipedia.org/wiki/Planck_(spacecraft)"
+    },
+    {
+      "ad": "Planck Collaboration, Planck 2018 results VI. Cosmological parameters (arXiv:1807.06209)",
+      "url": "https://arxiv.org/abs/1807.06209"
+    },
+    {
+      "ad": "ESA: Planck reveals an almost perfect Universe (21 Mart 2013)",
+      "url": "https://www.esa.int/Science_Exploration/Space_Science/Planck/Planck_reveals_an_almost_perfect_Universe"
+    },
+    {
+      "ad": "Wikipedia: Sunyaev–Zeldovich effect",
+      "url": "https://en.wikipedia.org/wiki/Sunyaev%E2%80%93Zeldovich_effect"
+    },
+    {
+      "ad": "Wikipedia: Sachs–Wolfe effect",
+      "url": "https://en.wikipedia.org/wiki/Sachs%E2%80%93Wolfe_effect"
+    },
+    {
+      "ad": "Wikipedia: CMB cold spot",
+      "url": "https://en.wikipedia.org/wiki/CMB_cold_spot"
+    },
+    {
+      "ad": "Wikipedia: Axis of evil (cosmology)",
+      "url": "https://en.wikipedia.org/wiki/Axis_of_evil_(cosmology)"
+    },
+    {
+      "ad": "Wikipedia: Atacama Cosmology Telescope",
+      "url": "https://en.wikipedia.org/wiki/Atacama_Cosmology_Telescope"
+    },
+    {
+      "ad": "Wikipedia: South Pole Telescope",
+      "url": "https://en.wikipedia.org/wiki/South_Pole_Telescope"
+    },
+    {
+      "ad": "Wikipedia: Simons Observatory",
+      "url": "https://en.wikipedia.org/wiki/Simons_Observatory"
+    },
+    {
+      "ad": "Wikipedia: LiteBIRD",
+      "url": "https://en.wikipedia.org/wiki/LiteBIRD"
+    },
+    {
+      "ad": "CMB-S4 project site: status statement (DOE/NSF, 9 July 2025)",
+      "url": "https://cmb-s4.org/"
+    },
+    {
+      "ad": "Peter Coles, The Cosmic Poltergeist (In the Dark, 8 Haziran 2025)",
+      "url": "https://telescoper.blog/?p=70428"
+    },
+    {
+      "ad": "Ethan Siegel, Big Think (Starts With A Bang, 11 Ağustos 2022)",
+      "url": "https://develop.bigthink.com/?p=235878"
+    }
+  ]
+}

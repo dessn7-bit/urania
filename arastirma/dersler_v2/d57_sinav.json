@@ -1,0 +1,58 @@
+[
+  {
+    "id": "d57-1",
+    "soru": "Lemaître'nin 1927 makalesinin 1931'deki İngilizce çevirisinde genişleme hızı kestiriminin bulunmamasının nedeni nedir?",
+    "secenekler": [
+      "Eddington kestirimi yanlış bulduğu için sildi",
+      "Lemaître o paragrafları kendisi çıkardı ve Hubble'ın 1929'daki daha güçlü sonuçlarına gönderme yapmayı seçti",
+      "Dergi editörleri Hubble'ın önceliğini korumak için çıkardı",
+      "Lemaître'nin 1927 makalesinde zaten böyle bir kestirim yoktu"
+    ],
+    "dogru": 1,
+    "aciklama": "Mario Livio 2011'de bulmacayı çözdü: paragrafları çeviriyi hazırlarken Lemaître'nin kendisi çıkarmıştı. 1927 makalesinde kestirim vardı; Wikipedia'nın tablosu onu 625 km/s/Mpc olarak verir.",
+    "ders": "d57",
+    "bolum": 2
+  },
+  {
+    "id": "d57-2",
+    "soru": "Kararlı Durum savunucularının arka plan ışımasını “eski yıldız ışığının tozca saçılması” diye açıklama girişimi neden başarısız oldu?",
+    "secenekler": [
+      "Galakside hiç toz bulunmadığı anlaşıldı",
+      "Işıma yalnızca Samanyolu düzleminden geliyordu",
+      "Işıma her yönden çok düzgün geliyor, saçılmanın beklenen kutuplanmasını göstermiyor ve tayfı farklı sıcaklıktaki toz topaklarının toplamıyla elde edilemeyecek kadar ideal bir kara cisim",
+      "Tozun ışığı saçması fizik yasalarına aykırıdır"
+    ],
+    "dogru": 2,
+    "aciklama": "Wikipedia'nın Kararlı Durum maddesi üç engeli sayar: aşırı düzgünlük, kutuplanmanın yokluğu ve kusursuz kara cisim tayfı. Weinberg 1972'de ışıma gerçekten kara cisimse evrenin daha sıcak ve yoğun bir evreden geldiğinden kuşku duymanın zor olacağını yazdı.",
+    "ders": "d57",
+    "bolum": 7
+  },
+  {
+    "id": "d57-3",
+    "soru": "Baryon/foton oranı 10 kat azalırsa Büyük Patlama'da oluşan döteryum miktarı yaklaşık nasıl değişir?",
+    "secenekler": [
+      "Yaklaşık 10 kat azalır",
+      "Hiç değişmez",
+      "Yaklaşık 50 kat artar",
+      "Yaklaşık 2 kat artar"
+    ],
+    "dogru": 2,
+    "aciklama": "Wikipedia'ya göre döteryum bu orana son derece duyarlıdır: oran 10 kat azalınca ilk döteryum yaklaşık 50 kat artar. Fotonlara düşen baryon arttıkça çekirdek sentezi uzar ve döteryum daha çok tükenir. Bu yüzden döteryum bir baryon terazisi gibi kullanılır.",
+    "ders": "d57",
+    "bolum": 8
+  },
+  {
+    "id": "d57-4",
+    "soru": "DES'in 2024'te 1504 Tip Ia süpernovasıyla yaptığı ölçüm neyi gösterdi?",
+    "secenekler": [
+      "Süpernova süreleri (1 + z) üzeri b ile uzuyor; b = 1,003 ± 0,005 ± 0,010 bulundu, zaman genişlemesi göstermeyen yorgun ışık modelleri dışlandı",
+      "Uzak süpernovalar yakındakilerle aynı sürede sönüyor; genişleme kanıtlanamadı",
+      "Süpernovalar uzaklıkla daha kısa sürüyor; evren büzülüyor",
+      "Ölçüm yalnız Hubble sabitini 73 km/s/Mpc olarak verdi"
+    ],
+    "dogru": 0,
+    "aciklama": "Genişleyen evrende z'deki bir olay (1 + z) kat uzun görünür. Yorgun ışık fikrinde evren genişlemediği için böyle bir uzama olmaz. Ölçülen üs 1'e çok yakın çıktı ve zaman genişlemesi göstermeyen modeller çok yüksek anlamlılıkla dışlandı.",
+    "ders": "d57",
+    "bolum": 10
+  }
+]
