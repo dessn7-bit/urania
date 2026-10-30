@@ -1,0 +1,58 @@
+[
+  {
+    "id": "d39-1",
+    "soru": "Le Verrier'nin hesabı Neptün'ün yerini hangi gözlemden yola çıkarak buldu?",
+    "secenekler": [
+      "Neptün'ün Güneş'in önünden geçişinden",
+      "Uranüs'ün yörüngesindeki, Newton yasasının açıklayamadığı sapmalardan",
+      "Triton'un parlaklık değişimlerinden",
+      "Jüpiter'in uydularının tutulma saatlerinden"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre Bouvard'ın 1821 tablolarından sapan Uranüs gözlemleri (pertürbasyonlar) bilinmeyen bir gezegenin çekimine işaret ediyordu. Le Verrier ve Adams bu sapmalardan yeri hesapladı; Galle 23 Eylül 1846'da Le Verrier'nin noktasından 1° uzakta buldu.",
+    "ders": "d39",
+    "bolum": 2
+  },
+  {
+    "id": "d39-2",
+    "soru": "Laboratuvardaki 'elmas yağmuru' deneyleri tam olarak neyi gösterdi?",
+    "secenekler": [
+      "Neptün'ün içinde milyonlarca kıratlık elmasların ölçüldüğünü",
+      "Voyager 2'nin elmas parçacıklarına çarptığını",
+      "Lazer şokuyla sıkıştırılan polistiren ve PET plastiğinde nanometre boyunda elmasların oluştuğunu",
+      "Uranüs'ün halkalarının elmastan yapıldığını"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre 2017'de polistiren, 2022'de PET plastiği lazerle şoklanıp X-ışınıyla izlendiğinde birkaç nanometrelik elmaslar oluştu. Bu, benzer koşullarda karbonun elmasa dönüşebildiğini gösterir; gezegenlerin içinde doğrudan ölçülmedi.",
+    "ders": "d39",
+    "bolum": 5
+  },
+  {
+    "id": "d39-3",
+    "soru": "Neptün Güneş'ten aldığının yaklaşık kaç katı enerjiyi uzaya yayar ve bu ne anlama gelir?",
+    "secenekler": [
+      "Yaklaşık 2,6 katını; güçlü bir iç ısısı vardır",
+      "Tam 1 katını; iç ısısı yoktur",
+      "Yaklaşık 0,5 katını; enerji biriktirir",
+      "Yaklaşık 10 katını; içinde füzyon vardır"
+    ],
+    "dogru": 0,
+    "aciklama": "Derse göre Neptün aldığının ~2,61 katını yayar; içten gelen akı metrekare başına ~0,43 W'tır. Uranüs ise Voyager verisiyle yalnızca ~1,1 kat; 2025 modelleri ~%15 fazlalık buldu.",
+    "ders": "d39",
+    "bolum": 6
+  },
+  {
+    "id": "d39-4",
+    "soru": "Uranüs'ün manyetik alanının eğikliğinin yan yatmış eksenden kaynaklanmadığını hangi gözlem gösterdi?",
+    "secenekler": [
+      "Uranüs'ün halkalarının 1977'de keşfi",
+      "Hubble'ın 2025 dönme ölçümü",
+      "Neptün'ün renginin 2024'te yeniden hesaplanması",
+      "Voyager 2'nin, ekseni normal eğiklikteki Neptün'ün alanını da benzer biçimde eğik ve kaymış bulması"
+    ],
+    "dogru": 3,
+    "aciklama": "Derse göre Neptün'ün ekseni 28,32° eğik olduğu hâlde manyetik ekseni 46,9° yatık ve merkezden kayıktır. Bu yüzden tuhaf geometri iç akışlara, ince ve iletken bir kabuktaki dinamoya bağlanır.",
+    "ders": "d39",
+    "bolum": 10
+  }
+]

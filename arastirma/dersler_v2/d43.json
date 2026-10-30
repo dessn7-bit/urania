@@ -1,0 +1,570 @@
+{
+  "id": "d43",
+  "unite": "kucuk_cisimler",
+  "yeni": true,
+  "baslik": "Meteorlar ve Göktaşları: Gökten Düşen Taşların Bilimi",
+  "ozet": "Atmosferden sağ çıkan bir taşın son dakikalarını, Çelyabinsk ve Tunguska gibi havada patlamaları, kondrit, akondrit ve demir göktaşı ailelerini öğreneceksin. Göktaşlarından Güneş Sistemi'nin 4,567 milyar yıllık yaşının nasıl ölçüldüğünü, Ay ve Mars taşlarının nasıl tanındığını, Türkiye'ye düşen göktaşlarını, kraterlerin nasıl açıldığını, Chicxulub'un kanıt zincirini ve bir göktaşı bulursan ne yapacağını göreceksin.",
+  "on_bilgi": [
+    "d3",
+    "d19",
+    "d42"
+  ],
+  "bolumler": [
+    {
+      "baslik": "Gökten taş yağar mı? İnanılmazın kabul edilişi",
+      "paragraflar": [
+        "Bugün bir göktaşını müzede görmek sana sıradan gelebilir. Oysa iki yüz yıl önce bilim insanlarının çoğu gökten taş düşebileceğine inanmıyordu. On sekizinci yüzyılın akılcı düşünürleri, köylülerin anlattığı taş ya da demir yağmurlarını gökten başka tuhaf şeylerin yağdığına dair söylentilerle aynı rafa koyup geçiştiriyordu. Ay'ın ötesinde küçük cisimlerin dolaşabileceği fikri yerleşik inanca aykırıydı. Bu derste gökten düşen taşların nasıl ciddiye alındığını, atmosferde son dakikalarında ne yaşadıklarını, laboratuvarda bize neler anlattıklarını ve bazen neden felakete dönüştüklerini göreceksin.",
+        "Fizikçi Ernst Chladni 1794'te yayımladığı bir kitapta bu taşların uzaydan geldiğini öne sürdü. Kendisi de çekingendi, çünkü fikri yaygın kanıya ters düşüyordu; üstelik düşüş yerlerinde tanıklarla konuşmamıştı. Bu eksik 1803'te kapandı. Fransa'nın Normandiya bölgesindeki L'Aigle kasabasına 3.000'den fazla taş yağdı ve fizikçi Jean-Baptiste Biot olayı yerinde inceledi. Taşların çevredeki dökümhanelerin, madenlerin ya da cürufun hiçbirine benzemediğini, ama 1790'da Barbotan'a düşen bir taşa benzediğini gösterdi. Her kesimden pek çok tanık aynı taş yağmurunu anlatıyordu; bu kadar insanın anlaşıp aynı yalanı söylemesi akla yatkın değildi. Biot düşüşü köy köy izledi. Smithsonian dergisine göre bu rapor, göktaşlarının gerçek olduğunun kabul edilmesine büyük katkı yaptı.",
+        "Bu ders, d19'daki temel ayrımın üstüne kurulu: uzayda dolanan taş meteoroit, atmosferde parlarken meteor, yere ulaşırsa göktaşıdır (meteorit). Meteorların hangi yükseklikte parladığını, giriş hızlarını, meteor yağmurlarının hangi kuyruklu yıldızlardan geldiğini ve İstanbul'dan bir yağmurda kaç meteor bekleyebileceğini orada gördün; burada tekrar etmeyeceğiz. Kuyruklu yıldızların kendisini d42 anlatıyor. Bu derste daha derine iniyoruz: atmosferden sağ çıkan bir taşın son dakikaları, büyük havada patlamalar ve çarpmalar, göktaşı aileleri, Türkiye'ye düşen göktaşları ve bu taşların içinde saklı 4,5 milyar yıllık takvim."
+      ],
+      "akilda": "Gökten taş düştüğü, 1794'te Chladni'nin önerisi ve 1803'te L'Aigle'e yağan 3.000'den fazla taşı inceleyen Biot'nun raporuyla kabul gördü. Meteoroit, meteor ve göktaşı ayrımı d19'da; bu ders onun üstüne kurulu."
+    },
+    {
+      "baslik": "Toz tanesinden süper bolide: kayan yıldızların boyu",
+      "paragraflar": [
+        "Gördüğün kayan yıldızların çoğu sandığından çok küçük bir cisimden gelir. Wikipedia'nın derlediği bilgilere göre meteor oluşturan meteoroitlerin çoğu bir kum tanesi kadardır, genellikle 1 milimetre ya da daha küçük. Bu kadar küçük bir taneyi birkaç kilometre öteden göremezsin; ama saniyede onlarca kilometre hızla gelen tane, yolundaki havayı akkor hâle getirecek kadar enerji taşır (d19'daki bir gramlık taş örneğini hatırla). Atmosfere her gün milyonlarca meteor girer. Herhangi bir bölgenin üstünde birkaç saniyede bir kum tanesi boyunda bir meteoroit yanar.",
+        "Büyükler seyrek ama yine de sık sayılır. Aynı kaynağa göre her gün birkaç bin ateş topu oluşur; çoğunu kimse görmez, çünkü büyük kısmı okyanusların üstünde, yarısı da gündüz olur. Ateş topunun tanımlarını d19'da gördün: IAU için eksi 4 kadir ya da daha parlak, IMO için başucunda görülseydi en az eksi 3 kadire ulaşacak meteor. Daha da parlakları için iki ad daha kullanılır: eksi 14 kadir ya da daha parlak olana bolit, eksi 17 kadir ya da daha parlak olana süper bolit denir. IAU'nun bolit için resmî bir tanımı yoktur ve terimi ateş topuyla eş anlamlı sayar. Amerikan Meteor Derneği'ne gelen ateş topu bildirimleri 2008'de 734'ken 2021'de 9.629'a çıktı; kaynak bu artışın nedenini söylemiyor, bildirim sayısının ateş topu sayısıyla aynı şey olmadığını unutma.",
+        "Meteorun bıraktığı iz yalnız ışık değildir. Yanan taş havayı iyonlaştırır, yani atomlardan elektron koparır; bu iyonlaşmış iz 45 dakikaya kadar yaşayabilir. Kum tanesi boyundaki meteoroitler o kadar sık geldiği için üst atmosferde neredeyse her an böyle izler bulunur. Radyo dalgaları bu izlerden yansıtılabilir; buna meteor patlaması iletişimi denir. Meteor radarları da izin ne hızla söndüğünden ve Doppler kaymasından üst atmosferin yoğunluğunu ve rüzgârlarını ölçer. Yani meteorlar yalnız gözle değil radyoyla da izlenir.",
+        "Bir de ses meselesi var. Büyük bir ateş topunun gümbürtüsü, yani ses patlaması, olaydan genellikle birçok saniye sonra gelir; ses ışıktan çok yavaştır. Ama bazı gözlemciler meteorun parladığı anda çıtırtı, hışırtı ya da tıslama duyduklarını bildirmiştir, örneğin 2001 Aslan yağmurunda. Bunlara elektrofonik ses denir. 1998'de Moğolistan'da denetimli koşullarda yapılan kayıtlar bu seslerin gerçek olduğunu destekler. Önerilen bir açıklamaya göre iyonlaşmış iz Dünya'nın manyetik alanıyla etkileşip radyo atımları üretir, bu atımlar da yakındaki nesneleri titreştirir. Laboratuvar deneyleri bunu olası gösteriyor, ama sahada doğrulanmış değil; açık bir soru olarak kalıyor."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Bir bolit Venüs'ten kaç kat parlaktır?",
+        "metin": "d19'daki kadir formülü: kadir farkı = 2,5 × log (parlaklık oranı), yani parlaklık oranı = 10 üzeri (0,4 × kadir farkı). Venüs'ü kabaca eksi 4 kadir alalım (NASA ateş topunu Venüs'ten parlak meteor diye tanımlar). eksi 14 kadirlik bir bolit: fark 10 kadir, oran 10 üzeri 4 = 10.000 kat. eksi 17 kadirlik bir süper bolit: fark 13 kadir, oran 10 üzeri 5,2 ≈ 158.000 kat. Sonuç: bolit tanımındaki eşik bile Venüs'ten on bin kat parlak bir ışık demektir; böyle bir olayı kaçırmak zordur, ama okyanus üstünde ya da gündüz olunca çoğu yine de kaçar."
+      },
+      "akilda": "Meteorların çoğu 1 mm ya da daha küçük tanelerden gelir; her gün milyonlarca meteor ve birkaç bin ateş topu olur. eksi 14 kadirden parlak olana bolit, eksi 17'den parlak olana süper bolit denir. İyonlaşmış izler radarla izlenir; elektrofonik seslerin nedeni hâlâ tartışmalı."
+    },
+    {
+      "baslik": "Atmosferde son dakikalar: ablasyon, kabuk ve karanlık uçuş",
+      "paragraflar": [
+        "Bir meteoroit havaya saniyede en az 11 km hızla girer (d19). Önündeki hava sıkışır, hava molekülleriyle çarpışmalar yüzeyi ısıtır ve yüzey erir. Eriyen madde akan havayla sıyrılıp gider; buna ablasyon denir. Ablasyon taşı yontar ve bazen yüzeyinde başparmak izine benzeyen sığ çukurlar bırakır. Bu çukurlara regmaglipt denir; NASA'nın göktaşı tanıma sayfasına göre demir göktaşlarının çoğunda görülür. Taşın büyük kısmı bu yolculukta yok olur: d19'da gördüğün gibi NASA'ya göre bir futbol sahasından küçük cisimlerin çoğu parçalanır ve yere genellikle ilk kütlenin %5'inden azı ulaşır.",
+        "Hız düşüp ısınma bitince yüzeyde kalan ince erimiş tabaka katılaşır. Buna füzyon kabuğu denir. NASA'ya göre bu kabuk çoğu zaman siyahtır, taşı bir yumurta kabuğu gibi sarar ve birkaç yıl içinde havayla temas ederek pas kahverengisine döner. Wikipedia'ya göre taş göktaşlarında ısıdan etkilenen bölge en fazla birkaç milimetre derinliktedir. Yolculuk ısının içe işleyemeyeceği kadar kısa sürer; bu yüzden NASA, göktaşlarının çoğunun yere soğuk düştüğünü ve yangın çıkarmadığını söyler. Eski tanıklıklar karışıktır: bazıları elle tutulamayacak kadar sıcak, bazıları üstünde kırağı oluşacak kadar soğuk göktaşları anlatır. Filmlerdeki alev alev yanan kayalar gerçeği yansıtmaz.",
+        "Taş ne zaman parlamayı bırakır? Avustralya'dan Towner ve arkadaşlarının 2022'de yayımladığı bir çalışmaya göre parlak uçuş tipik olarak 20 ile 30 km yükseklikte biter. Örneğin Murrili göktaşının parlak uçuşu yaklaşık 18 km'de, saniyede yaklaşık 3,3 km hızla sona erdi. Sonrasına karanlık uçuş denir: taş artık ışık saçmaz, hava direnciyle yavaşlayarak düşer ve son kısmı ses hızının altındadır. Bu aşamada taşı yüksek irtifa rüzgârları, özellikle jet akımları sürükler; aynı çalışmaya göre düşüş noktası birkaç kilometre kayabilir.",
+        "Bunun pratik bir sonucu var. Bir ateş topunun söndüğü yeri gördüğünde taş, varsa, o noktanın altında değildir. Parçalar uzun ve dar bir alana saçılır; buna saçılma alanı denir. Göktaşı avcıları bu yüzden önce birkaç kameradan ateş topunun yolunu hesaplar, sonra rüzgâr verisiyle karanlık uçuşu modelleyip arama alanını daraltır. Murrili için farklı rüzgâr modelleriyle hesaplanan düşüş çizgileri birbirinden 200 ile 300 metre ayrıldı. Yani bir göktaşını bulmak hem gökyüzünü hem havayı bilmeyi gerektirir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Murrili parlamayı bıraktığında hızının ne kadarını kaybetmişti?",
+        "metin": "Parlak uçuşun sonunda hız yaklaşık 3.280 m/s, yani 3,28 km/s. Bir meteoroit atmosfere en az 11,2 km/s ile girer (d19, Dünya'nın kurtulma hızı). En yavaş giriş varsayımıyla bile kalan hız oranı 3,28 / 11,2 ≈ 0,29: hızın yaklaşık %71'i gitmiştir. Hareket enerjisi hızın karesiyle orantılı olduğundan, kilogram başına kalan enerji oranı 0,29 × 0,29 ≈ 0,086, yani enerjinin en az %91'i atmosferde ısıya, ışığa ve sese dönüşmüştür. Giriş hızı daha yüksekse kayıp daha da büyüktür. Bu sonuç, atmosferin küçük taşlar için neden iyi bir fren olduğunu gösterir."
+      },
+      "akilda": "Ablasyon taşın yüzeyini eritip sıyırır; geriye ince, siyah bir füzyon kabuğu ve bazen regmaglipt çukurları kalır. Parlak uçuş tipik olarak 20–30 km'de biter; ardından rüzgârın sürüklediği karanlık uçuş gelir. Göktaşlarının çoğu yere soğuk düşer."
+    },
+    {
+      "baslik": "Çelyabinsk 2013: Güneş'in yönünden gelen taş",
+      "paragraflar": [
+        "d19'da Çelyabinsk olayının ana hatlarını NASA'dan okudun. Şimdi ayrıntıya bakalım. 15 Şubat 2013 sabahı, yerel saatle 09.20'de, Rusya'nın Ural bölgesi üstünde bir cisim atmosfere girdi. Wikipedia'nın derlediği ölçümlere göre giriş hızı saniyede 19,16 ± 0,15 km'ydi; NASA en parlak an için yaklaşık 18,6 km/s verir. Cismin çapı 17 ile 20 metre arasında hesaplandı. Kütle için ilk tahminler 12.000 ile 13.000 ton, NASA'nın son tahmini 10.000 ton; aynı olayın göktaşı maddesinde ise 18 metre ve yaklaşık 9.100 ton yazar. Kaynaklar arasındaki bu fark, kütlenin doğrudan tartılamayıp parlaklık ve yavaşlamadan hesaplanmasından gelir.",
+        "Açığa çıkan enerji yaklaşık 500 kiloton TNT olarak hesaplandı; Wikipedia bunu Hiroşima'ya atılan bombanın yaklaşık 29 katı diye verir ve başka tahminlerin 200 ile 470 kiloton arasında değiştiğini, belirsizliğin iki kata varabildiğini not eder. En parlak anında cisim bir an için Güneş'ten yaklaşık 30 kat parlaktı. Yükseklikler de kaynağa göre değişir: en parlak an yaklaşık 29,7 km'de ölçüldü, NASA'nın ilk hesabı 23,3 km idi (d19'daki 23 km); Nature'da yayımlanan bir çalışma parçalanmanın 30 ile 45 km arasında olduğunu yazdı. Bunlar çelişki değil, aynı olayın farklı anlarıdır: cisim tek seferde değil, kademe kademe parçalandı.",
+        "Şok dalgası yere birkaç dakika sonra ulaştı. Wikipedia'ya göre 311'i çocuk olmak üzere 1.491 kişi sağlık kuruluşuna başvurdu, 112 kişi hastaneye yatırıldı, ölen olmadı; altı kentte 7.200'den fazla bina hasar gördü. NASA yaralı sayısını 1.600'ün üstünde verir; sayım yöntemleri farklıdır. Science dergisinin yaptığı bir ankete göre dışarıda olan 25 kişi ateş topunun morötesi ışığıyla güneş yanığı oldu. Kapsamlı Nükleer Deneme Yasağı Antlaşması Örgütü'nün 20 infrases istasyonu, yani insan kulağının duyamayacağı kadar alçak frekanslı ses dalgalarını dinleyen istasyonlar, patlamayı kaydetti; 15.000 km ötedeki Antarktika istasyonu da dahil. Bu, sistemin o güne kadar kaydettiği en büyük infrases olayıydı ve dalga Dünya'nın çevresini birden fazla kez dolandı.",
+        "Neden kimse önceden görmedi? Cismin radyantı Güneş'e çok yakındı; yani bize Güneş'in yönünden, gündüz gökyüzünden geldi ve teleskopların bakamadığı bir yönden yaklaştı. Yere düşen parçalar LL5 sınıfı bir sıradan kondrittir (sınıfları birazdan göreceksin). Toplam yaklaşık 1.000 kg göktaşı toplandı. En büyük parça Çebarkul Gölü'nün dibinden 16 Ekim 2013'te çıkarıldı; Wikipedia'nın olay maddesi bu parçanın kütlesini 654 kg, göktaşı maddesi 540 kg verir. Ne sıklıkla? Aynı kaynağa göre yaklaşık 20 metrelik cisimlerin havada patlaması ortalama 60 yılda bir beklenir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Çelyabinsk cisminin hareket enerjisi",
+        "metin": "Hareket enerjisi E = 0,5 × m × v². Kütle 12.000 ton = 1,2 × 10⁷ kg, hız 19.160 m/s. v² = 19.160 × 19.160 ≈ 3,67 × 10⁸. E = 0,5 × 1,2 × 10⁷ × 3,67 × 10⁸ ≈ 2,2 × 10¹⁵ J. TNT'ye çevirelim: d25'te 8,99 × 10¹⁶ J'ün 21.500 kiloton TNT ettiğini gördük, yani 1 kiloton ≈ 4,18 × 10¹² J. 2,2 × 10¹⁵ / 4,18 × 10¹² ≈ 530 kiloton. NASA'nın 10.000 tonluk kütlesiyle: E ≈ 1,84 × 10¹⁵ J ≈ 440 kiloton. Sonuç kaynaklardaki 440–500 kiloton aralığına oturur; kütledeki belirsizlik doğrudan enerjiye geçer."
+      },
+      "akilda": "Çelyabinsk (15 Şubat 2013): yaklaşık 19 km/s, 17–20 m, 10.000–13.000 ton, yaklaşık 500 kiloton; 1.491 kişi başvurdu, 7.200'den fazla bina hasar gördü. Güneş yönünden geldiği için önceden görülemedi. 20 m'lik havada patlamalar ortalama 60 yılda bir beklenir."
+    },
+    {
+      "baslik": "Tunguska 1908: krater bırakmayan patlama",
+      "paragraflar": [
+        "30 Haziran 1908 sabahı yerel saatle yaklaşık 07.14'te, Orta Sibirya'da Podkamennaya Tunguska Irmağı havzasının üstünde büyük bir patlama oldu. Wikipedia'ya göre yaklaşık 2.150 km²'lik bir ormanda ağaçlar yere serildi. Sık duyulan 80 milyon ağaç sayısı abartılı sayılır: 1933'te yaklaşık 8.000 km²'lik bir alan varsayılarak yapılmış bir tahminden gelir; 2008'deki bir makale yaklaşık 2.000 km² için 60 milyon ağaç verir. Devrilen ağaçlar havadan bakınca kanatlarını açmış bir kelebeğe benzeyen bir desen oluşturur: kanat açıklığı yaklaşık 70 km, gövde boyu yaklaşık 55 km.",
+        "Bölge o kadar uzaktı ki bilimsel bir ekip ancak yıllar sonra oraya varabildi. Leonid Kulik'in 1921'deki ilk seferi merkeze ulaşamadı; 1927'de vardığında bir krater bulmayı bekliyordu, ama merkezde krater yoktu. Tam tersine, yaklaşık 8 km'lik bir bölgede ağaçlar ayakta duruyor, ama dalları kopmuş ve yanmıştı. Sonraki seferler krater sanılan bir bataklık çukurunu kuruttu ve dibinde bir ağaç kütüğü buldu; demek ki çukur bir çarpma krateri değildi. Bu tablo patlamanın yerde değil havada olduğunu gösterir: tepeden gelen şok dalgası tam altındaki ağaçları ayakta bırakıp dallarını koparmış, çevredekileri dışa doğru yatırmıştır. Yükseklik tahminleri 5 ile 10 km arasında, bazı 2013 modellerinde 10 ile 14 km arasındadır.",
+        "Cisim neydi? En güçlü açıklama 50 ile 60 metre çaplı taşsı bir göktaşının havada patlamasıdır; NASA'nın sayfası yaklaşık 37 metre der (d19), bir 2020 modeli ise 200 metreye kadar bir demir asteroit önerir. Enerji tahminleri çalışmadan çalışmaya 3 ile 30 megaton TNT arasında değişir. En az üç Evenk'in öldüğü bildirilmiştir. Kuyruklu yıldız mı asteroit mi tartışması da uzun sürdü: Fred Whipple 1930'da küçük bir kuyruklu yıldız önerdi, Kresák 1978'de olayı Encke kuyruklu yıldızıyla ilişkilendirdi, Sekanina 1983'te yoğun, kayalık bir cisim savundu. Farinella ve arkadaşlarının 2001 tarihli hesabı asteroit kökenine %83, kuyruklu yıldız kökenine %17 olasılık verdi.",
+        "Hikâyenin hâlâ açık uçları var. 2007'de Bologna'dan bir ekip, merkezin 7–8 km ötesindeki Çeko Gölü'nün hayatta kalan yaklaşık 10 metrelik bir parçanın açtığı krater olabileceğini öne sürdü. 2017'de bir Rus çalışması göl tabanındaki katmanları sayarak gölün en az 280 yaşında, yani olaydan eski olduğu sonucuna vardı. Bu büyüklükte olaylar ne sıklıkla olur? Eugene Shoemaker'ın tahmini yaklaşık 300 yılda bir, daha yeni tahminler yaklaşık 1.000 yılda birdir; aynı kaynağa göre 5 kilotonluk havada patlamalar ise yaklaşık yılda bir kez olur."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Tunguska, Çelyabinsk'ten kaç kat güçlüydü?",
+        "metin": "Çelyabinsk yaklaşık 500 kiloton = 0,5 megaton. Tunguska için en düşük tahmin 3 megaton: 3 / 0,5 = 6 kat. En yüksek tahmin 30 megaton: 30 / 0,5 = 60 kat. Yani Tunguska, tahmine göre Çelyabinsk'in 6 ile 60 katı enerji taşıdı. Aralığın bu kadar geniş olması, yüz yıl önce hiçbir aletin olayı doğrudan ölçmemesinden ve enerjinin yıkılan ormandan geriye doğru hesaplanmasından gelir. Bir ölçek daha: Çelyabinsk'in camlarını kırdığı alan NASA'ya göre 518 km², Tunguska'nın devirdiği orman 2.150 km²; ama biri cam kırılması, öteki ağaç devrilmesi olduğu için bu iki alan doğrudan karşılaştırılamaz."
+      },
+      "akilda": "Tunguska (30 Haziran 1908): yaklaşık 2.150 km² orman yıkıldı ama krater yok, çünkü cisim 5–10 km yükseklikte havada patladı. Boy tahmini 37–60 m (modellere göre daha büyük), enerji 3–30 megaton. Benzer olaylar 300–1.000 yılda bir beklenir."
+    },
+    {
+      "baslik": "Göktaşı aileleri: kondritler, akondritler, demirler",
+      "paragraflar": [
+        "Göktaşlarını saymadan önce bir ayrım gerekir. Düşerken görülüp hemen toplanan göktaşına düşüş, kimse görmeden sonradan bulunanına buluntu denir. Buluntular düşüşlerden yaklaşık 30 kat fazladır, ama bize ne düştüğünü doğru anlatmazlar. Wikipedia'nın düşüş istatistiklerine göre bazı türler daha kolay fark edilir, bazıları daha hızlı aşınır, demirler tarih boyunca ilginç ya da işe yarar oldukları için toplanmıştır ve değerli türler piyasada öne çıkar. d19'da NASA'nın söylediğini hatırla: düşerken görülenlerin çoğu taş, sonradan bulunanların çoğu demirdir. Asıl oranları görmek için yalnız düşüşlere bakmak gerekir.",
+        "Haziran 2012'ye kadar kayıtlı 1.102 gözlenmiş düşüşün dağılımı şöyle: sınıflandırılabilen 1.003 düşüşün 792'si, yani yaklaşık %79'u sıradan kondrittir (339'u H, 371'i L, 82'si LL grubu). Karbonlu kondritler 44 düşüşle %4,4, enstatit kondritler 16 düşüşle %1,6'dır. Vesta kökenli sayılan HED akondritleri 61 düşüşle yaklaşık %6'yı tutar. Demirler, ana türüne göre sınıflanmış 1.062 düşüşün 49'u, yani %4,6'sıdır. Taş-demirler 4 palasit ve 7 mezosideritle %1 civarındadır. Mars göktaşlarından 5 düşüş vardır; Ay göktaşlarının ise hiçbiri düşerken görülmemiştir, hepsi buluntudur. Eski bir derleme benzer bir tablo verir: kondritler %86, akondritler %8, demirler %5, taş-demirler %1.",
+        "Kondritlerin adı içlerindeki kondrüllerden gelir. Kondrül, çoğu silikat minerallerinden oluşan, uzayda serbestçe yüzerken erimiş gibi görünen küçük, yuvarlak tanedir. Wikipedia'ya göre kondritler Güneş Sistemi'nin en eski ve en ilkel malzemeleri arasındadır; asteroit kuşağında hiçbir zaman büyük bir cisme dönüşmemiş malzemeyi temsil ettikleri düşünülür. Bazı kondrit türleri amino asitler de dahil az miktarda organik madde taşır; bunların başında karbonlu kondritler gelir. En çok incelenenlerden biri Murchison göktaşıdır: 28 Eylül 1969'da Avustralya'nın Victoria eyaletine düştü, 100 kg'dan fazlası toplandı. 2010'da bir örnekte yaklaşık 14.000 bileşik arasında 70 amino asit sayıldı. İçindeki silisyum karbür taneleri ise Güneş'ten eski yıldızlardan kalmadır; 2020'de yaklaşık 7 milyar yıla kadar yaşlandırıldı, ama kaynak aynı bulgu için iki farklı değer veriyor.",
+        "Akondritlerde kondrül yoktur ve bazıları Dünya'daki volkanik kayaçlara benzer. Katmanlaşmış, yani bir zamanlar erimiş ve ağır maddesi merkeze çökmüş gezegenciklerin kabuk malzemesi oldukları düşünülür. Demir göktaşlarının çoğu bu tür gezegenciklerin çekirdeklerinden gelir. Taş-demirler demir-nikel metal ile silikat minerallerinin karışımıdır; palasitlerin, demirlerin geldiği çekirdeğin hemen üstündeki sınır bölgesinde oluştuğu düşünülür. Bu sıralama aslında bir gezegenin içini dilim dilim önüne koyar: kabuk akondritlerde, çekirdeğin sınırı palasitlerde, çekirdek demirlerde. Dünya'nın çekirdeğine hiçbir zaman inemeyeceğiz, ama parçalanmış bir gezegenciğin çekirdeğinden bir dilimi elimize alabiliyoruz."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Bir sonraki düşüşün demir olma olasılığı",
+        "metin": "Ana türüne göre sınıflanmış 1.062 düşüşün 49'u demirdir: 49 / 1.062 ≈ 0,046, yani yaklaşık %4,6, kabaca 22 düşüşte bir. Sıradan kondritler için 792 / 1.003 ≈ 0,79. Buna göre rastgele bir göktaşı düşüşünü izlesen, yaklaşık dörtte üç olasılıkla bir sıradan kondrit, yaklaşık yirmide bir olasılıkla bir demir göreceksin. Bir sonraki bölümlerde Türkiye'ye 1981'de düşen Akyumak'ın bir demir düşüşü olduğunu göreceksin; bu oranla bakınca seyrek bir olaydır. Buluntulara bakarak aynı hesabı yapsaydın demirlerin payını çok daha büyük bulurdun; buluntu yanlılığı tam olarak budur."
+      },
+      "akilda": "Düşüşler (gözlenen) gerçek oranları verir: yaklaşık %79 sıradan kondrit, %4,4 karbonlu kondrit, %6 HED akondrit, %4,6 demir, %1 taş-demir. Kondritler hiç erimemiş ilkel malzemedir; akondritler erimiş kabuk ve mantodan, demirler gezegenciklerin çekirdeklerinden gelir."
+    },
+    {
+      "baslik": "Demir göktaşları ve Widmanstätten deseni",
+      "paragraflar": [
+        "Bir demir göktaşını ortadan kesip yüzeyini parlatsan önce sıradan bir çelik gibi görünür. Yüzeyi seyreltik nitrik asit ya da demir klorürle dağlayınca birden iç içe geçmiş ince şeritlerden oluşan bir desen belirir. Buna Widmanstätten deseni denir. Desen iki farklı demir-nikel alaşımının, kamasit ve tenitin, ince katmanlar hâlinde dizilmesinden doğar. Tenit asidin aşındırmasına kamasitten daha iyi dayandığı için şeritler kabartma gibi öne çıkar; aradaki boşlukları ikisinin ince karışımı olan plesit doldurabilir.",
+        "Desenin keşif hikâyesi bir öncelik tartışması içerir. William (Guglielmo) Thomson 1804'te Napoli'de Krasnoyarsk göktaşından bir parçayı nitrik asitle dağlayıp şekilleri gördü ve aynı yıl yayımladı. Kont Alois von Beckh Widmanstätten 1808'de demir göktaşlarını alevle ısıtırken benzer bölgelenmeyi fark etti, ama bulgusunu yalnız sözlü olarak paylaştı. Desen onun adını aldı; bugün Thomson'ın önceliği kabul ediliyor ve bazı yazarlar Thomson yapısı adını öneriyor.",
+        "Desen neden bu kadar önemli? Kamasit katmanları, nikel atomlarının metal içinde çok yavaş yer değiştirmesiyle büyür. Bunun için metalin son derece yavaş soğuması gerekir: Wikipedia'ya göre milyon yılda 100 ile 10.000 santigrat derece arası, toplam soğuma süresi 10 milyon yıl ya da daha kısa. Laboratuvarda bu yavaşlık taklit edilemediği için desen yapay olarak üretilemez; bu yüzden bir göktaşının Dünya dışı kökenli olduğunun kanıtlarından biri sayılır. Bu yavaşlık bir şey daha söyler: metal, büyük bir cismin derinlerinde, kalın bir kaya örtüsünün altında, bir termos gibi yalıtılmış hâlde soğumuş olmalıdır.",
+        "Desen her demir göktaşında görülmez. Kamasit levhaları kristal yapının sekiz yüzlü bir şeklin yüzeylerine paralel dizildiği için bu göktaşlarına oktahedrit denir; desen bazı palasitlerde de görülür. Levhaların genişliği göktaşına göre değişir. Türkiye'den iki örnek: 1981'de Doğu Anadolu'ya düşen Akyumak göktaşı orta oktahedrit (IVA grubu, şerit genişliği 0,32 mm) olarak, 1999'da Konya'da bulunan Turgut göktaşı ise grubu belirlenemeyen çok ince bir oktahedrit olarak sınıflandı. NASA'nın göktaşı sayfası bir ipucu daha verir: göktaşı metali nikel içerir, insan yapımı demirin çoğu ise içermez."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Bir gezegenciğin çekirdeği ne kadar sürede soğur?",
+        "metin": "Diyelim ki metalin deseni oluşturan aralıkta 1.000 santigrat derece soğuması gerekiyor (açıklama için seçilmiş yuvarlak bir sayı). Hızlı uçta, milyon yılda 10.000 °C: süre = 1.000 / 10.000 = 0,1 milyon yıl = 100.000 yıl. Yavaş uçta, milyon yılda 100 °C: süre = 1.000 / 100 = 10 milyon yıl. Sonuç kaynağın verdiği '10 milyon yıl ya da daha kısa' üst sınırıyla uyumlu. Güneş Sistemi'nin yaşına oranla: 10 / 4.567 ≈ 0,002, yani binde iki. Gezegencik ölçeğinde kısa, insan ölçeğinde akıl almaz uzun bir süre."
+      },
+      "akilda": "Widmanstätten (Thomson) deseni, dağlanmış demir göktaşında kamasit ve tenit şeritleridir. Oluşması için milyon yılda 100–10.000 °C kadar yavaş soğuma gerekir; laboratuvarda üretilemez ve metalin büyük bir cismin derinlerinde soğuduğunu gösterir."
+    },
+    {
+      "baslik": "Göktaşlarıyla saat tutmak: 4,567 milyar yıl",
+      "paragraflar": [
+        "Güneş Sistemi'nin yaşını neden Dünya'daki taşlardan değil göktaşlarından öğreniyoruz? Çünkü Dünya durmadan kendini yeniler. Wikipedia'nın Dünya'nın yaşı maddesine göre gezegenimiz çekirdek, manto ve kabuk diye katmanlaşmıştır; levha hareketleri, aşınma ve sıcak su dolaşımı bu katmanları tekrar tekrar karıştırır. Bu yüzden bilinen en yaşlı Dünya mineralleri bile, Batı Avustralya'daki Jack Hills zirkonları, en az 4,404 milyar yaşındadır; Dünya'nın doğuşunu doğrudan göstermezler. Bazı göktaşları ise oluştuktan kısa süre sonra kapalı bir kutu gibi davranmış, yani içine sonradan madde girip çıkmamış ilkel malzemedir.",
+        "İlk kesin tarih 1956'da geldi. Clair Patterson, Canyon Diablo da dahil olmak üzere birkaç göktaşına kurşun-kurşun yöntemini uygulayarak 4,55 ± 0,07 milyar yıl buldu. Canyon Diablo bilerek seçilmişti: içinde troilit adlı bir demir sülfür minerali vardır. Kurşun bu minerale toplanır, uranyum toplanmaz; yani troilitteki kurşun neredeyse Güneş Sistemi'nin başlangıçtaki kurşunudur ve sonradan uranyum bozunmasıyla eklenen kurşunla karışmamıştır. Bu karşılaştırma tarihi çok daha kesin kıldı. Yöntemin fiziğini fizik ünitesindeki d31 anlatıyor.",
+        "Bugün en yaşlı tarih kalsiyum-alüminyumca zengin kapsamlardan, kısaca CAI'lerden gelir. Bunlar karbonlu kondritlerin içinde bulunan, milimetrenin altından santimetreye kadar boyda, açık renkli tanelerdir. Öngezegen diski 1.300 kelvinin üstündeyken gazdan ilk yoğuşan katılar oldukları düşünülür. CV grubu kondritlerden alınmış dört CAI'nin kurşun-kurşun yaşlarının ortalaması 4.567,30 ± 0,16 milyon yıldır; bu değer çoğu zaman gezegen oluşumunun sıfır anı olarak kullanılır. Daha fazla örnekle yapılan sonraki çalışmalar biraz daha yaşlı bir değer, 4.568,3 ± 0,7 milyon yıl önerir. Dünya'nın yaşı ise 4,54 ± 0,05 milyar yıl olarak verilir. Güneş Sistemi'nin bu ilk milyon yıllarda nasıl kurulduğunu d34 anlatıyor.",
+        "Kurşun-kurşun yönteminin güzelliği, aynı taşın içinde iki ayrı saatin işlemesidir. d31'de gördüğün gibi uranyum-238 yaklaşık 4,47 milyar yıllık yarılanma ömrüyle zincirleme bozunup sonunda kurşun-206'ya, uranyum-235 ise 704 milyon yılla kurşun-207'ye dönüşür. İki saat çok farklı hızlarda işlediği için, ürettikleri iki kurşun türünün oranı zamanla düzenli biçimde değişir ve bir taşın kaç yıl önce kapandığını gösterir. Aşağıdaki örnekte iki saatin 4,567 milyar yılda ne kadar ilerlediğini kendin hesaplayacaksın."
+      ],
+      "ornek": {
+        "baslik": "Örnek: 4,567 milyar yılda uranyumdan ne kalır?",
+        "metin": "Kalan oran = (1/2) üzeri (geçen süre / yarılanma ömrü). Uranyum-238: 4.567 / 4.470 ≈ 1,02 yarılanma ömrü; (1/2) üzeri 1,02 ≈ 0,49. Yani başlangıçtaki uranyum-238'in yaklaşık yarısı hâlâ duruyor. Uranyum-235: 4.567 / 704 ≈ 6,49 yarılanma ömrü; (1/2) üzeri 6,49 ≈ 0,011. Başlangıçtaki uranyum-235'in yalnız yaklaşık %1,1'i kaldı, gerisi kurşun-207'ye dönüştü. Hızlı saat neredeyse bitmiş, yavaş saat yarı yolda: bu fark, iki kurşun türünün oranını yaşa karşı çok duyarlı yapar ve milyon yıllık hassasiyete izin verir."
+      },
+      "akilda": "Dünya kendini yenilediği için en yaşlı tarihler göktaşlarından gelir. Patterson 1956: 4,55 ± 0,07 milyar yıl. CAI'ler: 4.567,30 ± 0,16 milyon yıl (sonraki çalışmalarda 4.568,3 ± 0,7). Kurşun-kurşun yöntemi aynı taştaki iki uranyum saatini karşılaştırır."
+    },
+    {
+      "baslik": "Ay'dan ve Mars'tan gelen taşlar",
+      "paragraflar": [
+        "Göktaşlarının çok büyük kısmı asteroit parçasıdır (d19: NASA'ya göre yaklaşık %99,8), ama bir kısmı başka dünyalardan gelir. İlk Ay göktaşı, ALHA81005, Ocak 1982'de Antarktika'da John Schutt'ın yönettiği bir arama ekibince bulundu. Smithsonian'dan jeokimyacı Brian Mason taşın bilinen hiçbir göktaşına benzemediğini, Apollo'nun getirdiği Ay kayaçlarına ise benzediğini fark etti. Bir taşın Ay'dan geldiği bugün de böyle anlaşılır: minerallerini, kimyasını ve izotoplarını Apollo örnekleriyle karşılaştırarak. Temmuz 2019'a kadar 371 Ay göktaşı bulunmuştu; ama çoğu aynı cismin parçaları olduğu için bunlar belki 30'dan biraz fazla ayrı düşüşe karşılık gelir. Toplam kütle 1.090 kg'ı aşar.",
+        "Ay göktaşlarının hepsi Ay'dan son 20 milyon yıl içinde, çoğu son 100.000 yıl içinde ayrılmıştır; bunu taşların uzayda kozmik ışınlara ne kadar süre maruz kaldığını gösteren soy gaz ölçümleri söyler. Çoğu önce Dünya'nın çevresinde bir yörüngeye girip sonunda düşmüş; bazıları Güneş çevresinde dolanıp daha uzun süre sonra Dünya'nın yoluna çıkmıştır. Onları fırlatan çarpmalar çoğunlukla birkaç kilometre ya da daha küçük kraterler açmıştır; kaynak kraterlerin hiçbiri kesin olarak belirlenemedi. Mars göktaşları için kanıt daha dolambaçlıdır. Bilinen ilk düşüşler Fransa'da Chassigny (1815), Hindistan'da Shergotty (1865) ve Mısır'da Nakhla (1911) olduğu için bu gruba baş harflerinden SNC göktaşları denir. 1983'te EETA79001 adlı göktaşının çarpma camında hapsolmuş gazların, Viking iniş araçlarının Mars atmosferinde ölçtüğü gazlara çok benzediği bildirildi; bu, Mars kökeninin doğrudan kanıtı oldu. Eylül 2020'ye kadar 277 göktaşı Mars kökenli diye sınıflanmıştı; bunların yaklaşık dörtte üçü şergotit denen gruptandır.",
+        "Mars göktaşlarının uzayda ne kadar kaldığı da ölçülebilir; bunlar yaklaşık 0,7 ile 20 milyon yıl önce Mars'tan kopmuştur. En ünlüsü ALH84001'dir: 27 Aralık 1984'te Antarktika'nın Allan Hills bölgesinde bulundu, 1,93 kg gelir ve yaklaşık 4,091 milyar yıl önce erimiş kayaçtan kristalleşti. Wikipedia'nın ana metnine göre yaklaşık 17 milyon yıl önce Mars'tan fırlatıldı ve yaklaşık 13.000 yıl önce Dünya'ya düştü; aynı sitenin Mars göktaşları tablosu ise kopma yaşını 15,0 ± 0,8 milyon yıl verir. 1996'da McKay ve arkadaşları Science'ta bu taşta bakteriye benzeyen yapılar, özel biçimli manyetit kristalleri ve organik moleküller bulduklarını, bunların olası eski yaşamın izleri olabileceğini yazdı.",
+        "İddia büyük ilgi gördü ama bilim camiasının çoğu sonunda onu reddetti. Benzer yapılar laboratuvarda canlı olmadan üretildi; aynı organik moleküller canlı bulunmayan asteroitlerde, kuyruklu yıldızlarda ve uzayda da vardır; 2001'de manyetitli karbonat taneleri canlı olmayan bir süreçle elde edildi; 2022'deki bir çalışma organik molekülleri erken Mars'taki cansız tepkimelere bağladı. Biçim tek başına yaşam kanıtı sayılmaz; d18 bu konuyu ayrıntılı tartışıyor. Son bir ilginç örnek: 2011'de Sahra'da bulunan, yaklaşık 320 gramlık NWA 7034, takma adıyla Kara Güzel. Diğer Mars göktaşlarının yaklaşık on katı su içerir ve içindeki bazı parçalar 4,42 ± 0,07 milyar yaşındadır."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Ay'dan taş kaçırmak Mars'tan neden daha kolay?",
+        "metin": "Bir taşın bir gökcisminden kurtulması için kilogram başına en az 0,5 × v² enerji gerekir; v kurtulma hızıdır. NASA'nın veri sayfalarına göre Ay için v = 2,38 km/s, Mars için 5,03 km/s, Dünya için 11,19 km/s. Ay: 0,5 × 2.380² ≈ 2,8 × 10⁶ J/kg. Mars: 0,5 × 5.030² ≈ 1,3 × 10⁷ J/kg, Ay'ın yaklaşık 4,5 katı. Dünya: 0,5 × 11.190² ≈ 6,3 × 10⁷ J/kg, Ay'ın yaklaşık 22 katı. Mars'tan taş fırlatmak Ay'dan fırlatmaktan kat kat fazla çarpma enerjisi ister; Ay ayrıca bize çok yakındır. Bulunan Ay göktaşı sayısının Mars göktaşlarından fazla olması bununla uyumludur, ama tek neden bu değildir; bulma ve sınıflama koşulları da sayıyı etkiler."
+      },
+      "akilda": "Ay göktaşları Apollo örnekleriyle karşılaştırılarak tanınır (ilki ALHA81005, 1982; 2019'da 371). Mars kökeni 1983'te EETA79001'deki gazların Viking ölçümlerine benzemesiyle kanıtlandı (2020'de 277). ALH84001'deki 1996 yaşam iddiası bugün büyük ölçüde reddedilmiştir."
+    },
+    {
+      "baslik": "Türkiye'ye düşen göktaşları",
+      "paragraflar": [
+        "Bir göktaşı resmî olarak tanınmak için sınıflandırılır ve Meteoritical Bulletin adlı uluslararası kayıtlara girer. Bu kayıtlara bakınca Türkiye'den birkaç ilginç örnek çıkar. Bu liste eksiksiz değildir; yalnız kaynağıyla doğrulayabildiklerimizi veriyoruz. Arizona Eyalet Üniversitesi'nin göktaşı merkezine göre Bursa'ya iki kez göktaşı düşmüştür: 1907'de Domanitch adlı L5 sıradan kondriti ve 39 yıl sonra, 1946'da, Bursa adlı L6 sıradan kondriti. İkisi de düşerken görülmüş ve parçaları kısa süre sonra toplanmıştır.",
+        "Doğu Anadolu'daki Akyumak köyüne 2 Ağustos 1981'de, saat 15.30 ile 16.00 arasında bir demir göktaşı düştü. Meteoritical Bulletin'e göre 45 ile 50 kg arası bir kütle düştü ve göktaşı IVA grubundan, orta oktahedrit olarak sınıflandı; 18 kg'ı Elazığ'daki bir üniversitede tutuluyordu. Bir önceki bölümde gördüğün gibi düşüşlerin yalnız yaklaşık %4,6'sı demirdir; Akyumak bu yüzden seyrek bir olaydır. Konya'daki Turgut göktaşı ise bir buluntudur: Nisan 1999'da çiftçi Cemil Günay tarlasını sürerken buldu. İlk parça 152 kg geliyordu ve 140 kg'lık ana kütle bulanda kaldı. Grubu belirlenemeyen, çok ince bir oktahedrit olarak sınıflandı.",
+        "Son yılların en önemli Türkiye düşüşü Sarıçiçek'tir. 2 Eylül 2015 akşamı, yerel saatle yaklaşık 23.10'da Bingöl'ün Sarıçiçek köyü üstünde bir ateş topu görüldü. Türk ve yabancı bilim insanlarından oluşan Sarıçiçek Göktaşı Konsorsiyumu, başında İstanbul Üniversitesi'nden Ozan Ünsalan ve kalabalık ekipte Peter Jenniskens ile birlikte, taşları belgeledi; 343 taş kayda geçti. Göktaşı 22 Şubat 2016'da Meteoritical Bulletin'e SARIÇİÇEK adıyla kaydedildi. Bir howardittir; yani Vesta'dan geldiği düşünülen HED akondrit ailesinin bir üyesi. 2019'da Meteoritics and Planetary Science dergisinde yayımlanan makaleye göre bu, belgelenmiş ilk howardit düşüşüdür.",
+        "Makale taşın geçmişini de izledi. Yaklaşık 1 metrelik meteoroit, Vesta'daki 16,7 km çaplı Antionia kraterini açan çarpmayla yaklaşık 22 ± 2 milyon yıl önce fırlatılmış; ondan önce asteroidin yüzeye yakın toprağında yaklaşık 12 ile 14 milyon yıl kozmik ışınlara maruz kalmış. Yani Bingöl'e düşen taşın Vesta'daki doğum yeri belirli bir kratere kadar izlenebildi. Konsorsiyumun duyuru sayfasına göre ateş topunu NASA uyduları da kaydetti ve ana cisim yaklaşık 40 km yükseklikte parçalandı; bu sayfa makine çevirisi olduğu için ayrıntılarını temkinle oku. Bir örnek İstanbul Üniversitesi Mühendislik Fakültesi Jeoloji Müzesi'nde sergilendi. Vesta'yı, gökte en parlak görünen asteroit olarak, d19'da gördün."
+      ],
+      "akilda": "Türkiye örnekleri: Domanitch (Bursa, 1907, L5) ve Bursa (1946, L6) düşüşleri; Akyumak (1981) demir düşüşü; Turgut (Konya, 1999) 152 kg demir buluntusu; Sarıçiçek (Bingöl, 2 Eylül 2015) belgelenmiş ilk howardit düşüşü, 343 taş, Vesta'daki Antionia kraterinden."
+    },
+    {
+      "baslik": "Bir krater nasıl açılır?",
+      "paragraflar": [
+        "Küçük taşları atmosfer frenler, ama büyük cisimler neredeyse tam hızla yere çarpar. Wikipedia'ya göre Dünya'ya çarpma hızı en az yaklaşık 11 km/s, en fazla yaklaşık 72 km/s'dir ve ortanca değer yaklaşık 20 km/s'dir; d19'daki giriş hızı aralığıyla aynı. Bu hızlarda bir çarpma, bir kaya düşmesinden çok bir patlama gibi davranır. Süreç üç aşamaya ayrılır ve aşamalar iç içe geçer: önce temas ve sıkışma, cismin yüzeye değip bir şok dalgası göndermesi; sonra kazılma, malzemenin dışa fırlatılması; en sonda değişim ve çökme, açılan çukurun kendi ağırlığıyla yeniden şekillenmesi.",
+        "Kazılma bittiğinde oluşan en büyük çukura geçici krater denir; derinliği çapının dörtte biri ile üçte biri arasındadır. Dünya'da çapı yaklaşık 4 km'den küçük kraterler basit bir kase biçiminde kalır. Daha büyükleri çöker ve karmaşık krater olur: ortası yükselir, tabanı genişleyip düzleşir, duvarları basamak basamak olur. Küçük karmaşık kraterlerin ortasında bir merkez tepe vardır, Ay'daki Tycho gibi. Daha büyüklerinde merkez tepe yerine bir tepe halkası oluşur, Ay'daki Schrödinger gibi. En büyükleri çok halkalı havzalardır, Ay'daki Orientale gibi. Ay'ın kraterli yüzünü d10'da gördün; Ay bu kayıtları milyarlarca yıl saklar.",
+        "Bir çukurun çarpma krateri olduğunu nereden biliriz? Çarpmanın şok basıncı, sıradan jeolojik süreçlerin üretemeyeceği izler bırakır. Kuvars minerali koezit ve stişovit adlı yüksek basınç biçimlerine dönüşür; kayalarda koni biçimli, çizgili kırılma yüzeyleri, yani parçalanma konileri oluşur; kırılmış ve yeniden kaynaşmış kaya (breş) ve erimiş damlacıklar bulunur. Arizona'daki Meteor Krateri (Barringer Krateri) bunun klasik örneğidir. Daniel Barringer 1903'te kraterin kozmik kökenli olduğuna inanmıştı, ama jeologların çoğu bir buhar patlaması düşünüyordu. Yaklaşık 1960'ta Eugene Shoemaker ve Edward Chao kraterde koezit buldu ve bu, kraterin bir çarpmayla açıldığını gösterdi.",
+        "Dünya'da kaç krater biliniyor? NASA yaklaşık 190 der (d19). Wikipedia'nın aktardığı Dünya Çarpma Veritabanı ise Ağustos 2026 itibarıyla 196 doğrulanmış krater sayar. Bu sayı Ay'daki kraterlerin yanında çok küçüktür, çünkü Dünya yüzeyi çarpma izlerini hızla siler: aşınma, tortuyla gömülme, levha hareketleri ve volkanizma eski kraterleri yok eder. Bu yüzden ayakta kalan kraterlerin çoğu 500 milyon yıldan gençtir. Okyanus tabanı levha hareketleriyle sürekli yer altına battığı için deniz altındaki kraterlerden de çok azını biliyoruz. Gördüğümüz krater sayısı, Dünya'ya ne kadar çarpma olduğunu değil, ne kadarının iz bırakıp korunduğunu gösterir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Krater, çarpan cisimden kaç kat büyüktür?",
+        "metin": "Barringer Krateri: NASA'ya göre yaklaşık 1 km genişlikte ve onu yaklaşık 50 metrelik bir demir-nikel cisim açtı (d19). Oran 1.000 / 50 = 20. Chicxulub (bir sonraki bölüm): yaklaşık 10 km'lik bir cisim, 180 ile 200 km'lik bir krater: oran 18 ile 20. Dış sınırı 300 km kabul edilirse oran 30'a çıkar. Bu iki örnek, kraterin çarpan cisimden kabaca 20 kat geniş olduğunu düşündürür. Ama bu bir doğa yasası değil, iki örnekten çıkan kaba bir oran: gerçek boyut hıza, geliş açısına, cismin ve hedef kayanın yoğunluğuna bağlıdır. Bir krater gördüğünde 'bunu açan cisim bundan çok daha küçüktü' demek yine de yerinde bir sezgidir."
+      },
+      "akilda": "Çarpma hızı 11–72 km/s, ortanca yaklaşık 20 km/s; çarpma bir patlama gibi davranır (sıkışma, kazılma, çökme). Dünya'da 4 km'den küçükler basit kase, büyükler karmaşık kraterdir. Koezit, stişovit ve parçalanma konileri çarpmanın imzasıdır. Dünya'da yaklaşık 190–196 krater bilinir."
+    },
+    {
+      "baslik": "Chicxulub: dinozorların sonunun kanıt zinciri",
+      "paragraflar": [
+        "1980'de fizikçi Luis Alvarez ve jeolog oğlu Walter Alvarez cesur bir öneri yaptı: Kretase ile Paleojen dönemleri arasındaki büyük yok oluşa bir göktaşı çarpması yol açmıştı. Ana kanıtları İtalya'nın Gubbio kenti yakınındaki bir kil katmanıydı. O dönem sınırındaki kilde iridyum elementi, olağan düzeyin 160 katına kadar çıkıyordu. Ama bir sorun vardı: bu kadar büyük bir çarpmanın kraterini kimse bilmiyordu. Bir iddia ne kadar çekici olursa olsun, beklenen kanıt bulunmadıkça askıda kalır.",
+        "Krater aslında 1978'de fark edilmişti. Meksika'nın devlet petrol şirketi Pemex için çalışan Glen Penfield ve Antonio Camargo, Yucatán Yarımadası'nın jeofizik verilerinde olası bir çarpma yapısı gördü, ama bulguları uzun süre gözden kaçtı. 1990'da Alan Hildebrand Pemex'in sondaj örneklerine ulaştı ve ekibi 1991'de krateri tanımlayan makaleyi yayımladı. Kanıtlar birbirini tamamladı: şoklanmış kuvars, çekim alanındaki düzensizlikler, çarpmayla erimiş cam taneleri (tektitler) ve dünyanın birçok yerinde aynı yaşta iridyum katmanı. Fırlatılmış cam küreciklerinin başta yanlış yorumlanması, araştırmacıların bir süre krateri okyanusta aramasına yol açmıştı.",
+        "Kraterin çapı için yaygın tahmin 200 km'dir; daha yeni kanıtlara göre gerçek çap 300 km'ye yakın olabilir ve 180 km'lik halka bir iç duvardır. Merkezinde yaklaşık 80 km çaplı bir tepe halkası vardır; batıda krater tabanından 400 ile 600 metre yükselir. Bu, büyük çarpma yapıları arasında bozulmadan kalmış ve doğrudan ulaşılabilen tek tepe halkasıdır; yani d10'da Ay'da gördüğün tepe halkalı kraterlerin Dünya'daki incelenebilir bir örneğidir. 2016'da Uluslararası Okyanus Keşif Programı'nın 364 numaralı seferi bu halkadan deniz tabanının 1.335 m altına kadar karot çıkardı. Yaşı 2013'te Science'ta 66,043 ± 0,011 milyon yıl olarak ölçüldü; 2018'deki bir çalışma 66,051 ± 0,031 milyon yıl verdi.",
+        "Çarpan cisim yaklaşık 10 km çapındaydı. 2021'deki bir çalışmaya göre saniyede yaklaşık 20 km hızla, yatayla 45–60° açı yaparak kuzeydoğudan geldi. Enerji tahminleri 10²³ ile 10²⁵ J arasındadır. Bileşimi bir karbonlu kondrite benzeyen, C türü bir asteroit olduğu konusunda geniş bir uzlaşma var; çarpma katmanlarındaki rutenyum izotopları da bir asteroidi destekler. Yok oluş bitki ve hayvan türlerinin yaklaşık %75'ini, kuşlar dışındaki bütün dinozorları sildi. Tartışmanın bittiğini sanma: Princeton'dan Gerta Keller, Hindistan'daki Deccan volkanizmasının asıl suçlu olduğunu savunur; başka çalışmalar ise en şiddetli volkanizmanın çarpmadan önce olduğunu ve Deccan'ın daha çok toparlanmayı etkilediğini söyler. Çarpma kesin; yok oluştaki payı tartışılıyor."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Chicxulub, Çelyabinsk'ten kaç kat güçlüydü?",
+        "metin": "Çelyabinsk ≈ 2 × 10¹⁵ J (yaklaşık 500 kiloton). Chicxulub için en düşük tahmin 10²³ J: 10²³ / (2 × 10¹⁵) = 5 × 10⁷, yani 50 milyon kat. En yüksek tahmin 10²⁵ J: 5 × 10⁹, yani 5 milyar kat. Megatona çevirelim: 1 megaton = 1.000 kiloton ≈ 4,18 × 10¹⁵ J. 10²³ / 4,18 × 10¹⁵ ≈ 2,4 × 10⁷, yani yaklaşık 24 milyon megaton; üst uçta yaklaşık 2,4 milyar megaton. Wikipedia'nın 'on milyonlarca ile milyarlarca megaton' ifadesiyle uyumlu. Aralığın iki kuvvet büyüklüğü geniş olması, enerjinin yalnız krater boyundan dolaylı hesaplanabilmesinden gelir."
+      },
+      "akilda": "Alvarez'ler 1980'de iridyum fazlasından çarpma önerdi; krater Yucatán'da 1978'de fark edildi, 1991'de tanımlandı. Yaklaşık 10 km'lik bir cisim, 66,04 milyon yıl önce, 200 km (belki 300 km) çaplı krater. Türlerin yaklaşık %75'i yok oldu; Deccan volkanizmasının payı tartışmalı."
+    },
+    {
+      "baslik": "Ne sıklıkla? Gezegen savunmasında son durum",
+      "paragraflar": [
+        "Gökten düşenleri boyuna göre sıralayınca açık bir kural görünür: küçükler çok sık, büyükler çok seyrek gelir. Her gün milyonlarca kum tanesi meteoru, NASA'ya göre günde yaklaşık 44.000 kg malzeme (d19). Yaklaşık 5 kilotonluk havada patlamalar yılda bir kez. Çelyabinsk boyunda, yaklaşık 20 metrelik bir cisim ortalama 60 yılda bir. Tunguska ölçeğinde bir olay 300 ile 1.000 yılda bir. Chicxulub gibi bir felaket ise o kadar seyrek ki kayıtlı tarihte hiç yaşanmadı; Dünya tarihindeki tek bir sınır katmanından biliyoruz. Bu tablo gezegen savunmasının önceliğini belirler: büyükleri tek tek bulmak ve izlemek. Küçükler sık gelir ama atmosfer onların çoğunu yere ulaşmadan durdurur; büyükler seyrektir ama atmosfer onları durduramaz. Bir de arada kalan boy var: Çelyabinsk ve Tunguska gibi, yere çarpmadan havada patlayıp yine de geniş bir alanda hasar bırakan onlarca metrelik cisimler. Bu boydakilerin çoğu henüz bulunmadı; d19'daki sayılar bunu gösterir.",
+        "d19'da gördüğün gibi 1 km'den büyük Dünya'ya yakın asteroitlerin neredeyse tamamı bulundu, 140 metreden büyüklerin ise yarısından azı. Çelyabinsk bir zayıf noktayı da gösterdi: Güneş'in yönünden gelen cisimleri yerdeki teleskoplar göremez, çünkü o yöne ancak gündüz bakılabilir. Bulmanın yanında saptırmayı da denedik: NASA'nın DART aracı 26 Eylül 2022'de Dimorphos'a çarparak onun Didymos çevresindeki dolanma süresini 32 dakika kısalttı (ayrıntı d19'da).",
+        "Deneyin ikinci yarısı şimdi yaşanıyor. ESA'nın Hera aracı 7 Ekim 2024'te fırlatıldı. Space.com'un Mart 2026 tarihli haberine göre araç Şubat ve Mart 2026'da toplam dört haftaya yayılan üç ana yanma ve bir küçük düzeltmeyle bir derin uzay manevrası yaptı; 123 kg hidrazin yakarak hızını saniyede 367 metre değiştirdi. Didymos sistemine Kasım 2026'da varması bekleniyor ve en az altı ay orada çalışacak. Önce iki küresel inceleme yapacak, sonra Milani ve Juventas adlı iki küçük uyduyu bırakacak; görevin sonunda DART'ın açtığı kratere yaklaşık 1 km yükseklikten yakından bakacak. Haber Dimorphos'u yaklaşık 170 metre verir; d19'daki 160 metreyle kaynaklar arasında küçük bir fark var.",
+        "Amaç, DART'ın tek seferlik çarpmasını tekrarlanabilir bir saptırma yöntemine çevirmek: Dimorphos'un kütlesini ve kraterin biçimini bilmeden, çarpmanın aktardığı itmeyi tam hesaplayamayız. Bu ders yazılırken, Ekim 2026'nın sonunda, Hera henüz varmamıştı; sonucunu ESA'nın duyurularından izle. Bir sonraki büyük gösteri ise kendi gökyüzünde: Apophis 13 Nisan 2029'da Dünya yüzeyinin yaklaşık 32.000 km yakınından geçecek ve d19'da hesapladığın gibi İstanbul'dan çıplak gözle görülebilecek; çarpma riski yok."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Bir insan ömründe Çelyabinsk benzeri bir olay",
+        "metin": "Olaylar birbirinden bağımsız ve ortalama 60 yılda bir olsun. Belli bir süre içinde en az bir olay olma olasılığı için basit bir yaklaşım: olasılık = 1 eksi e üzeri (eksi süre / ortalama aralık). 80 yıllık bir ömür için: 80 / 60 ≈ 1,33; e üzeri eksi 1,33 ≈ 0,26; olasılık ≈ 1 eksi 0,26 = 0,74. Yani bir insan ömründe Dünya'nın bir yerinde böyle bir olay yaşanması olasıdır. Ama bu Dünya'nın tamamı içindir: olayın çoğu okyanus ya da ıssız bölge üstünde olur, tıpkı ateş toplarının çoğunun kimse görmeden geçmesi gibi. Belirli bir kentin üstünde olma olasılığı çok daha küçüktür. Hesabın varsayımı da kabadır; ortalama aralığın kendisi belirsizdir."
+      },
+      "akilda": "Küçükler sık, büyükler seyrek: 5 kiloton yılda bir, 20 m'lik cisim 60 yılda bir, Tunguska 300–1.000 yılda bir. DART 2022'de yörüngeyi değiştirdi; Hera Kasım 2026'da Didymos'a varıp sonucu ölçecek. Apophis 13 Nisan 2029'da çarpmadan geçecek."
+    },
+    {
+      "baslik": "Bir ateş topu görürsen, bir göktaşı bulursan",
+      "paragraflar": [
+        "Parlak bir ateş topu gördüysen bunu bilimle paylaşabilirsin. Uluslararası Meteor Örgütü (IMO), ateş topu gözlemlerini fireball.imo.net adresindeki bildirim sayfasında toplar ve başkalarının bildirimlerini de orada gösterir. Farklı yerlerden yapılmış gözlemler birleştirilince ateş topunun gökteki yolu, hatta bazen yörüngesi ve olası düşüş alanı hesaplanabilir; Sarıçiçek'in ve Murrili'nin bulunması da böyle işlerin sonucudur. Görür görmez saati, bulunduğun yeri, ateş topunun gökte nereden nereye gittiğini ve ne kadar sürdüğünü not et. Bunu takımyıldızlara göre söyleyebilirsen, örneğin 'Büyük Ayı'nın altından başlayıp Arabacı'ya doğru indi' gibi, bildirim çok daha değerli olur; uygulamanın Gökyüzü sekmesindeki harita, o saatte hangi takımyıldızın nerede durduğunu hatırlamana yardım eder. Bir ses patlaması duyarsan, ışıkla ses arasında geçen saniyeleri de yaz.",
+        "Yerde tuhaf bir taş bulduğunda ne olacak? NASA'nın Marshall Uzay Uçuş Merkezi'nin göktaşı sayfası birkaç ipucu sıralar. Füzyon kabuğu: ince, çoğu zaman siyah, yumurta kabuğu gibi bir dış katman; birkaç yılda pas kahverengisine döner. Regmaglipt denen başparmak izi çukurları, özellikle demirlerde. Ağırlık: demir göktaşları aynı boydaki sıradan kayalardan yaklaşık 3,5 kat, taş göktaşları yaklaşık 1,5 kat ağırdır. Mıknatıs: göktaşlarının çoğu demir-nikel metal içerdiği için mıknatısı çeker; taş göktaşları belki yalnız ipe asılı bir mıknatısı oynatır. Kırık yüzeyde parlayan metal benekler de bir ipucudur. Bunların hiçbiri tek başına kanıt değildir.",
+        "Göktaşı sanılan taşların çoğu başka şeydir; İngilizcede bunlara şakayla meteorwrong denir. Manyetit ve hematit adlı demir mineralleri en sık karışanlardır. Ayırmak için sırsız bir seramik karonun arkasına taşı sürt: manyetit siyah-gri, hematit kırmızı-kahverengi iz bırakır; göktaşı ise çok aşınmış değilse genellikle iz bırakmaz. Cüruf ve öğütme bilyeleri gibi insan yapımı demirler de göktaşına benzer; ama göktaşı demiri nikel içerir, insan yapımı demirin çoğu içermez. Taşta kuvars ya da parlak kristaller varsa, ya da içi kabarcıklı, gözenekliyse büyük olasılıkla Dünya'nın kendi kayasıdır; gözenekler volkanik kayaçlara özgüdür.",
+        "Yine de umut veriyorsa taşı olduğu gibi sakla, bulduğun yeri ve tarihi not et, fotoğrafını çek. Kaynak taşın temizlenip temizlenmemesi konusunda bir şey söylemiyor; bu yüzden onu fırçalamadan ya da kesmeden önce uzmana danış. Sarıçiçek örneğinde olduğu gibi üniversitelerin jeoloji bölümleri ve müzeler doğru adrestir. Türkiye'de bulunan göktaşlarının yasal durumu hakkında kaynaklı bir bilgiye ulaşamadık; satmadan ya da yurt dışına göndermeden önce resmî kurumlara sor. İstanbul'dan kayan yıldız izlemenin yolu ise d19'da: meteor takvimi, radyant, saat seçimi ve beklenen sayı. Ateş topları her gece, her yönde çıkabilir; en iyi aletin dikkatli gözün ve saatindir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Eldeki taş ne kadar ağır olmalı?",
+        "metin": "Diyelim ki bahçende yumruk büyüklüğünde bir taş buldun. Aynı boyda sıradan bir kaya parçası 400 gram gelsin. NASA'nın oranlarına göre aynı boyda bir taş göktaşı yaklaşık 1,5 kat: 400 × 1,5 = 600 gram; bir demir göktaşı yaklaşık 3,5 kat: 400 × 3,5 = 1.400 gram. Elindeki taş 400 gram civarındaysa göktaşı olma olasılığı düşüktür; 1,4 kg'a yakınsa ve mıknatıs çekiyorsa, bir uzmana göstermeye değer. Ama yoğunluk tek başına karar vermez: manyetit gibi ağır Dünya mineralleri de vardır. Bu yüzden iz testini ve kabuğu da birlikte değerlendir."
+      },
+      "akilda": "Ateş topunu saatini, yerini ve gökteki yolunu not ederek fireball.imo.net'e bildir. Göktaşı ipuçları: füzyon kabuğu, regmaglipt, ağırlık, mıknatıs, metal benek; iz bırakmaz. Kuvars ya da gözenek varsa büyük olasılıkla göktaşı değildir. Şüpheli taşı olduğu gibi saklayıp uzmana götür."
+    }
+  ],
+  "formuller": [
+    {
+      "ad": "Hareket enerjisi",
+      "ifade": "E = 0,5 × m × v²",
+      "aciklama": "E: enerji (J), m: kütle (kg), v: hız (m/s). Çelyabinsk: 0,5 × 1,2 × 10⁷ × 19.160² ≈ 2,2 × 10¹⁵ J."
+    },
+    {
+      "ad": "Joule'dan TNT eşdeğerine",
+      "ifade": "kiloton = E / (4,18 × 10¹² J)",
+      "aciklama": "1 kiloton TNT ≈ 4,18 × 10¹² J; 1 megaton = 1.000 kiloton ≈ 4,18 × 10¹⁵ J. d25'teki 8,99 × 10¹⁶ J ≈ 21.500 kiloton eşitliğinden."
+    },
+    {
+      "ad": "Kadir farkından parlaklık oranı",
+      "ifade": "oran = 10^(0,4 × Δm)",
+      "aciklama": "Δm: iki cismin kadir farkı. 10 kadir fark = 10.000 kat. Bolit (−14) ile Venüs (yaklaşık −4) arası."
+    },
+    {
+      "ad": "Radyoaktif bozunmada kalan oran",
+      "ifade": "N / N₀ = (1/2)^(t / T½)",
+      "aciklama": "N₀: başlangıçtaki atom sayısı, N: t süre sonra kalan, T½: yarılanma ömrü (t ile aynı birimde). Uranyum-238 için T½ ≈ 4,47 milyar yıl, uranyum-235 için 704 milyon yıl (d31)."
+    },
+    {
+      "ad": "Kurtulma için kilogram başına enerji",
+      "ifade": "E / m = 0,5 × v_k²",
+      "aciklama": "v_k: kurtulma hızı (m/s). Ay 2,38 km/s, Mars 5,03 km/s, Dünya 11,19 km/s (NASA veri sayfaları)."
+    },
+    {
+      "ad": "Yüzde pay",
+      "ifade": "pay (%) = 100 × parça / bütün",
+      "aciklama": "Düşüş istatistikleri: demir 100 × 49 / 1.062 ≈ %4,6."
+    },
+    {
+      "ad": "Bağımsız olayların en az bir kez olma olasılığı (yaklaşık)",
+      "ifade": "P ≈ 1 − e^(−t / T)",
+      "aciklama": "t: süre, T: olaylar arasındaki ortalama süre. Olayların rastgele ve bağımsız olduğu varsayılır; T'nin kendisi belirsizse sonuç da kabadır."
+    }
+  ],
+  "anahtar_sayilar": [
+    {
+      "deger": "3.000'den fazla taş (1803)",
+      "aciklama": "L'Aigle düşüşü; Biot'nun raporu göktaşlarının kabulüne katkı yaptı",
+      "kaynak_url": "https://www.smithsonianmag.com/smart-news/1803-rain-rocks-helped-establish-existence-meteorites-180963017/"
+    },
+    {
+      "deger": "19,16 km/s; 17–20 m; yaklaşık 500 kiloton",
+      "aciklama": "Çelyabinsk cisminin giriş hızı, çapı ve enerjisi (15 Şubat 2013)",
+      "kaynak_url": "https://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq.ipfs.4everland.io/wiki/Chelyabinsk_meteor.html"
+    },
+    {
+      "deger": "yaklaşık 2.150 km²; 3–30 megaton",
+      "aciklama": "Tunguska'da (1908) yıkılan orman alanı ve enerji tahminleri",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Tunguska_event"
+    },
+    {
+      "deger": "1.102 düşüş; %79 sıradan kondrit; %4,6 demir",
+      "aciklama": "Haziran 2012'ye kadar gözlenmiş göktaşı düşüşleri ve türlerin payı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Meteorite_fall_statistics"
+    },
+    {
+      "deger": "4.567,30 ± 0,16 milyon yıl",
+      "aciklama": "CAI'lerin kurşun-kurşun yaşı; Güneş Sistemi'nin 'sıfır anı'",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Calcium%E2%80%93aluminium-rich_inclusion"
+    },
+    {
+      "deger": "milyon yılda 100–10.000 °C",
+      "aciklama": "Widmanstätten deseninin oluşması için gereken soğuma hızı",
+      "kaynak_url": "https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Widmanst%C3%A4tten_pattern"
+    },
+    {
+      "deger": "371 (Temmuz 2019) / 277 (Eylül 2020)",
+      "aciklama": "Bulunmuş Ay göktaşı ve Mars göktaşı sayıları",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Lunar_meteorite"
+    },
+    {
+      "deger": "343 taş; 2 Eylül 2015",
+      "aciklama": "Sarıçiçek (Bingöl) howardit düşüşü: belgelenmiş ilk howardit düşüşü",
+      "kaynak_url": "https://experts.arizona.edu/en/publications/the-sari%C3%A7i%C3%A7ek-howardite-fall-in-turkey-source-crater-of-hed-meteo/"
+    },
+    {
+      "deger": "196 (Ağustos 2026)",
+      "aciklama": "Dünya Çarpma Veritabanı'ndaki doğrulanmış krater sayısı (NASA: yaklaşık 190)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Impact_crater"
+    },
+    {
+      "deger": "66,043 ± 0,011 milyon yıl; yaklaşık 10 km",
+      "aciklama": "Chicxulub çarpmasının yaşı ve çarpan cismin çapı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Chicxulub_crater"
+    },
+    {
+      "deger": "20–30 km",
+      "aciklama": "Göktaşı düşüşlerinde parlak uçuşun tipik bittiği yükseklik; sonrası karanlık uçuş",
+      "kaynak_url": "https://dfn.gfo.rocks/documents/papers_reprints/Towner_2022_Dark_Flight.pdf"
+    },
+    {
+      "deger": "367 m/s; Kasım 2026",
+      "aciklama": "Hera'nın 2026 manevrasındaki hız değişimi ve Didymos'a beklenen varışı",
+      "kaynak_url": "https://www.space.com/astronomy/asteroids/like-accelerating-from-stationary-to-supersonic-flight-europes-hera-probe-boosts-speed-stays-on-course-for-november-asteroid-rendezvous"
+    }
+  ],
+  "sozluk": [
+    {
+      "terim": "bolit",
+      "tanim": "Kadiri −14 ya da daha parlak olan çok parlak ateş topu; IAU bu terimi ateş topuyla eş anlamlı sayar."
+    },
+    {
+      "terim": "süper bolit",
+      "tanim": "Kadiri −17 ya da daha parlak olan meteor."
+    },
+    {
+      "terim": "elektrofonik ses",
+      "tanim": "Parlak bir meteorla aynı anda duyulduğu bildirilen çıtırtı ya da hışırtı; nedeni henüz sahada doğrulanmamıştır."
+    },
+    {
+      "terim": "ablasyon",
+      "tanim": "Atmosfere giren cismin yüzeyinin ısınıp eriyerek ya da buharlaşarak sıyrılıp gitmesi."
+    },
+    {
+      "terim": "regmaglipt",
+      "tanim": "Ablasyonun göktaşı yüzeyinde bıraktığı, başparmak izine benzeyen sığ çukur."
+    },
+    {
+      "terim": "füzyon kabuğu",
+      "tanim": "Göktaşının atmosferde eriyip katılaşan, çoğu zaman siyah ve ince dış katmanı."
+    },
+    {
+      "terim": "karanlık uçuş",
+      "tanim": "Göktaşının parlamayı bıraktıktan sonra hava direnci ve rüzgârın etkisiyle yere düştüğü ışıksız son evre."
+    },
+    {
+      "terim": "saçılma alanı",
+      "tanim": "Bir göktaşı düşüşünde parçaların yere dağıldığı, genellikle uzun ve dar alan."
+    },
+    {
+      "terim": "infrases",
+      "tanim": "İnsan kulağının duyamayacağı kadar düşük frekanslı, çok uzaklara yayılabilen ses dalgası."
+    },
+    {
+      "terim": "düşüş",
+      "tanim": "Atmosferden geçerken ya da yere çarparken görülüp ardından toplanan göktaşı; görülmeden bulunana buluntu denir."
+    },
+    {
+      "terim": "kondrül",
+      "tanim": "Kondritlerin içinde bulunan, uzayda serbestçe yüzerken erimiş gibi görünen küçük, yuvarlak, çoğu silikat tanesi."
+    },
+    {
+      "terim": "karbonlu kondrit",
+      "tanim": "Karbon ve organik moleküller bakımından zengin, en ilkel göktaşlarından sayılan kondrit türü."
+    },
+    {
+      "terim": "akondrit",
+      "tanim": "Kondrül içermeyen, erimiş ve katmanlaşmış bir cisimden gelen taş göktaşı."
+    },
+    {
+      "terim": "Widmanstätten deseni",
+      "tanim": "Dağlanmış demir göktaşında görülen, çok yavaş soğumanın ürünü olan kamasit ve tenit şeritlerinden desen."
+    },
+    {
+      "terim": "oktahedrit",
+      "tanim": "Kamasit levhaları sekiz yüzlü bir kristal şeklin yüzeylerine paralel dizilmiş, Widmanstätten deseni gösteren demir göktaşı."
+    },
+    {
+      "terim": "CAI",
+      "tanim": "Kalsiyum-alüminyumca zengin kapsam: karbonlu kondritlerde bulunan, Güneş Sistemi'nin yaşı tarihlenmiş en eski katı taneleri."
+    },
+    {
+      "terim": "howardit",
+      "tanim": "Vesta'dan geldiği düşünülen HED akondrit ailesinden, farklı kayaç parçalarının kaynaşmasıyla oluşmuş göktaşı."
+    },
+    {
+      "terim": "geçici krater",
+      "tanim": "Bir çarpmada kazılma evresi bittiğinde oluşan, çökme öncesindeki en büyük çukur."
+    },
+    {
+      "terim": "karmaşık krater",
+      "tanim": "Ortası yükselmiş, tabanı düz, duvarları basamaklı büyük krater; Dünya'da yaklaşık 4 km'den büyük olanlar."
+    },
+    {
+      "terim": "koezit",
+      "tanim": "Kuvarsın yalnız çok yüksek basınçta oluşan biçimi; çarpma kraterlerinin imzalarından biri."
+    },
+    {
+      "terim": "parçalanma konisi",
+      "tanim": "Çarpmanın şok dalgasının kayada bıraktığı koni biçimli, çizgili kırılma yüzeyi."
+    }
+  ],
+  "defter_notu": [
+    "1794 Chladni: taşlar uzaydan. 1803 L'Aigle: 3.000'den fazla taş, Biot'nun raporu → göktaşı kabul edildi.",
+    "Meteorların çoğu ≤ 1 mm. Ateş topu ≤ −4 (IAU), bolit ≤ −14, süper bolit ≤ −17 kadir. İyon izi 45 dk'ya kadar.",
+    "Ablasyon → füzyon kabuğu (siyah, ince) + regmaglipt. Parlak uçuş 20–30 km'de biter → karanlık uçuş, rüzgâr kaydırır. Göktaşı çoğunlukla soğuk düşer.",
+    "Çelyabinsk 15.02.2013: 19 km/s, 17–20 m, yaklaşık 500 kiloton, Güneş yönünden. Tunguska 30.06.1908: 2.150 km², krater yok, 3–30 megaton.",
+    "Düşüşler: %79 sıradan kondrit, %4,4 karbonlu, %6 HED, %4,6 demir, %1 taş-demir. Buluntular yanlı (demir fazla görünür).",
+    "Widmanstätten: kamasit + tenit, milyon yılda 100–10.000 °C soğuma, laboratuvarda yapılamaz.",
+    "Yaş: Patterson 1956 4,55 milyar; CAI 4.567,30 ± 0,16 milyon yıl. U-238 4,47 milyar, U-235 704 milyon yıl.",
+    "Ay göktaşı: ALHA81005 (1982), 371. Mars: EETA79001 gazı = Viking (1983), 277; ALH84001 yaşam iddiası büyük ölçüde reddedildi.",
+    "Türkiye: Domanitch 1907, Bursa 1946, Akyumak 1981 (demir düşüşü), Turgut 1999 (152 kg), Sarıçiçek 2.09.2015 (howardit, Vesta, 343 taş).",
+    "Krater ≈ çarpan × 20 (kaba). Koezit, stişovit, parçalanma konisi. Chicxulub: 66,04 milyon yıl, 10 km cisim, 200 (300?) km krater, Alvarez 1980."
+  ],
+  "sorular": [
+    {
+      "soru": "Göktaşlarının gökten düştüğü fikri neden 1803'teki L'Aigle düşüşünden sonra kabul gördü?",
+      "cevap": "Chladni 1794'te uzay kökenini önermişti ama tanık incelemesi yoktu. L'Aigle'e 3.000'den fazla taş düştü; Biot taşların yerel dökümhane, maden ya da cürufa benzemediğini, farklı kesimlerden pek çok tanığın aynı yağmuru anlattığını gösterdi ve düşüşü köy köy izledi."
+    },
+    {
+      "soru": "Bir göktaşı yere düştüğünde neden çoğu zaman sıcak değil, soğuktur?",
+      "cevap": "Atmosferdeki yolculuk ısının taşın içine işlemesine yetmeyecek kadar kısadır; erime yalnız ince bir dış katmanda olur ve o katman sıyrılıp gider. Taş göktaşlarında ısıdan etkilenen bölge birkaç milimetredir. Parlak uçuş 20–30 km'de bitince taş karanlık uçuşta soğuk havada yavaşça düşer."
+    },
+    {
+      "soru": "Bir ateş topunun söndüğü noktanın tam altında göktaşı aramak neden yanlış olur?",
+      "cevap": "Parlak uçuş bittikten sonra taş birkaç dakika karanlık uçuşla düşmeye devam eder ve bu sırada yüksek irtifa rüzgârları, özellikle jet akımları, onu birkaç kilometre sürükleyebilir. Ayrıca parçalar uzun bir saçılma alanına yayılır. Bu yüzden yörünge ve rüzgâr modelleriyle arama alanı hesaplanır."
+    },
+    {
+      "soru": "Çelyabinsk cisminin kütlesi 12.000 ton yerine 10.000 ton alınırsa, 19,16 km/s hızla taşıdığı enerji kaç kiloton TNT olur?",
+      "cevap": "E = 0,5 × 10⁷ kg × (19.160 m/s)² ≈ 0,5 × 10⁷ × 3,67 × 10⁸ ≈ 1,84 × 10¹⁵ J. 1 kiloton ≈ 4,18 × 10¹² J olduğundan 1,84 × 10¹⁵ / 4,18 × 10¹² ≈ 440 kiloton. Kütledeki belirsizlik doğrudan enerjiye yansır."
+    },
+    {
+      "soru": "Tunguska'da krater yokken merkezde ağaçların ayakta kalması neyi gösterir?",
+      "cevap": "Patlamanın yerde değil havada, 5–10 km yükseklikte olduğunu. Tepeden gelen şok dalgası tam altındaki ağaçların dallarını kopardı ama onları devirmedi; çevredeki ağaçları ise dışa doğru yatırdı. Bataklık çukurunun dibinde ağaç kütüğü çıkması da oranın krater olmadığını gösterdi."
+    },
+    {
+      "soru": "Buluntularda demir göktaşlarının payı neden düşüşlerdekinden çok daha yüksek görünür?",
+      "cevap": "Demirler sıradan kayalara benzemediği, ağır olduğu ve yavaş aşındığı için daha kolay fark edilir ve uzun süre bozulmadan kalır; tarih boyunca işe yarar diye de toplanmıştır. Bu yüzden buluntular yanlıdır. Gerçek oranı gözlenmiş düşüşler verir: demirler yalnız yaklaşık %4,6."
+    },
+    {
+      "soru": "Widmanstätten deseni neden bir göktaşının Dünya dışı kökenli olduğunun kanıtı sayılır?",
+      "cevap": "Desen nikelin metal içinde çok yavaş yer değiştirmesiyle oluşur ve milyon yılda 100–10.000 °C gibi son derece yavaş bir soğuma gerektirir. Bu yavaşlık laboratuvarda üretilemez; ancak büyük bir gezegenciğin derinlerinde, yalıtılmış bir çekirdekte mümkündür."
+    },
+    {
+      "soru": "Güneş Sistemi'nin yaşını ölçmek için neden Dünya kayaçları değil göktaşları kullanılır?",
+      "cevap": "Dünya katmanlaşmıştır ve levha hareketleri, aşınma ve sıcak su dolaşımı kayaçları tekrar tekrar karıştırır; en yaşlı Dünya mineralleri bile (Jack Hills zirkonları) 4,404 milyar yıldır. Bazı göktaşları oluştuktan kısa süre sonra kapalı kalmıştır; CAI'ler 4.567,30 ± 0,16 milyon yıl verir."
+    },
+    {
+      "soru": "4,567 milyar yılda uranyum-235'in yaklaşık ne kadarı kalmıştır? (Yarılanma ömrü 704 milyon yıl.)",
+      "cevap": "4.567 / 704 ≈ 6,49 yarılanma ömrü; (1/2) üzeri 6,49 ≈ 0,011. Başlangıçtakinin yaklaşık %1,1'i kalmıştır. Uranyum-238 ise (4,47 milyar yıl) yaklaşık yarısını korur."
+    },
+    {
+      "soru": "Bir göktaşının Mars'tan geldiği ilk kez nasıl kanıtlandı?",
+      "cevap": "1983'te EETA79001 göktaşının çarpma camında hapsolmuş gazların, Viking iniş araçlarının ölçtüğü Mars atmosferi bileşimine çok benzediği bildirildi. Bu, Mars kökeninin doğrudan kanıtı oldu."
+    },
+    {
+      "soru": "Sarıçiçek göktaşını özel yapan nedir?",
+      "cevap": "2 Eylül 2015'te Bingöl'e düşen Sarıçiçek, belgelenmiş ilk howardit düşüşüdür; 343 taş kayda geçti. Vesta kökenli HED ailesindendir ve 2019'daki çalışma onu yaklaşık 22 milyon yıl önce Vesta'daki 16,7 km'lik Antionia kraterinden fırlatılmış yaklaşık 1 metrelik bir meteoroide bağladı."
+    },
+    {
+      "soru": "Bir çukurun çarpma krateri olduğunu hangi kanıtlar gösterir? Bir örnek ver.",
+      "cevap": "Şoklanmış kuvars ve onun yüksek basınç biçimleri koezit ile stişovit, parçalanma konileri, breş ve erimiş damlacıklar. Örnek: Shoemaker ve Chao yaklaşık 1960'ta Meteor Krateri'nde koezit bularak kraterin çarpmayla açıldığını gösterdi."
+    },
+    {
+      "soru": "Chicxulub hipotezi için Alvarez'lerin kanıtı neydi ve hangi eksik sonradan tamamlandı?",
+      "cevap": "Kretase–Paleojen sınırındaki kil katmanında, İtalya'da Gubbio'da, olağan düzeyin 160 katına varan iridyum. Eksik olan kraterdi; 1978'de Pemex verilerinde fark edildi ve 1991'de Hildebrand ve ekibi Yucatán'daki Chicxulub kraterini tanımladı. Yaşı yaklaşık 66,04 milyon yıl."
+    },
+    {
+      "soru": "Evdeki bir taşın göktaşı olup olmadığını anlamak için iz testi nasıl yapılır, ne gösterir?",
+      "cevap": "Taş sırsız seramik bir karonun arka yüzüne sürtülür. Manyetit siyah-gri, hematit kırmızı-kahverengi iz bırakır; göktaşı çok aşınmış değilse genellikle iz bırakmaz. Test, göktaşı sanılan en yaygın demir minerallerini ayıklar ama tek başına kesin kanıt değildir."
+    }
+  ],
+  "kaynaklar": [
+    {
+      "ad": "Smithsonian – 1803 Rain of Rocks Helped Establish Existence of Meteorites",
+      "url": "https://www.smithsonianmag.com/smart-news/1803-rain-rocks-helped-establish-existence-meteorites-180963017/"
+    },
+    {
+      "ad": "Wikipedia – Meteor (meteoroid boyları, bolit, iyonlaşma izleri, elektrofonik ses)",
+      "url": "https://en.wikipedia.org/wiki/Meteor"
+    },
+    {
+      "ad": "Towner ve ark. 2022, The Planetary Science Journal – Dark flight (Murrili)",
+      "url": "https://dfn.gfo.rocks/documents/papers_reprints/Towner_2022_Dark_Flight.pdf"
+    },
+    {
+      "ad": "NASA MSFC – Meteorites and Craters (göktaşı tanıma)",
+      "url": "https://planetary.msfc.nasa.gov/Meteorites_and_Craters.html"
+    },
+    {
+      "ad": "Wikipedia – Chelyabinsk meteor",
+      "url": "https://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq.ipfs.4everland.io/wiki/Chelyabinsk_meteor.html"
+    },
+    {
+      "ad": "Wikipedia – Chelyabinsk meteorite",
+      "url": "https://en.wikipedia.org/wiki/Chelyabinsk_meteorite"
+    },
+    {
+      "ad": "SpaceDaily – Chelyabinsk asteroid measured 12,000 tonnes",
+      "url": "https://www.spacedaily.com/reports/Chelyabinsk_asteroid_measured_12000_tonnes_999.html"
+    },
+    {
+      "ad": "Wikipedia – Tunguska event",
+      "url": "https://en.wikipedia.org/wiki/Tunguska_event"
+    },
+    {
+      "ad": "Wikipedia – Meteorite fall statistics",
+      "url": "https://en.wikipedia.org/wiki/Meteorite_fall_statistics"
+    },
+    {
+      "ad": "Wikipedia – Murchison meteorite",
+      "url": "https://en.wikipedia.org/wiki/Murchison_meteorite"
+    },
+    {
+      "ad": "Wikipedia – Widmanstätten pattern",
+      "url": "https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Widmanst%C3%A4tten_pattern"
+    },
+    {
+      "ad": "Wikipedia – Age of Earth",
+      "url": "https://en.wikipedia.org/wiki/Age_of_Earth"
+    },
+    {
+      "ad": "Wikipedia – Calcium–aluminium-rich inclusion",
+      "url": "https://en.wikipedia.org/wiki/Calcium%E2%80%93aluminium-rich_inclusion"
+    },
+    {
+      "ad": "Wikipedia – Lunar meteorite",
+      "url": "https://en.wikipedia.org/wiki/Lunar_meteorite"
+    },
+    {
+      "ad": "Wikipedia – Martian meteorite",
+      "url": "https://en.wikipedia.org/wiki/Martian_meteorite"
+    },
+    {
+      "ad": "Wikipedia – Allan Hills 84001",
+      "url": "https://en.wikipedia.org/wiki/Allan_Hills_84001"
+    },
+    {
+      "ad": "ASU Buseck Center – Domanitch & Bursa",
+      "url": "https://meteorites.asu.edu/meteorites/domanitch-bursa"
+    },
+    {
+      "ad": "Meteorite Studies (Meteoritical Bulletin özeti) – Akyumak",
+      "url": "https://www.meteoritestudies.com/meteorites/view/433/akyumak/"
+    },
+    {
+      "ad": "Meteorite Studies (Meteoritical Bulletin özeti) – Turgut",
+      "url": "https://www.meteoritestudies.com/meteorites/view/60080/turgut/"
+    },
+    {
+      "ad": "The Sariçiçek Meteorite Consortium 2019, Meteoritics and Planetary Science 54(5)",
+      "url": "https://experts.arizona.edu/en/publications/the-sari%C3%A7i%C3%A7ek-howardite-fall-in-turkey-source-crater-of-hed-meteo/"
+    },
+    {
+      "ad": "Karmaka – Sarıçiçek (Bingöl) howardit düşüşü bilgileri",
+      "url": "https://karmaka.de/?p=5855"
+    },
+    {
+      "ad": "Wikipedia – Impact crater",
+      "url": "https://en.wikipedia.org/wiki/Impact_crater"
+    },
+    {
+      "ad": "Wikipedia – Chicxulub crater",
+      "url": "https://en.wikipedia.org/wiki/Chicxulub_crater"
+    },
+    {
+      "ad": "Space.com – Hera boosts speed, stays on course for November asteroid rendezvous (Mart 2026)",
+      "url": "https://www.space.com/astronomy/asteroids/like-accelerating-from-stationary-to-supersonic-flight-europes-hera-probe-boosts-speed-stays-on-course-for-november-asteroid-rendezvous"
+    },
+    {
+      "ad": "NASA NSSDCA – Mars Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html"
+    },
+    {
+      "ad": "NASA NSSDCA – Moon Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html"
+    },
+    {
+      "ad": "NASA Science – Meteors and Meteorites: Facts",
+      "url": "https://science.nasa.gov/solar-system/meteors-meteorites/facts/"
+    },
+    {
+      "ad": "IMO – Fireballs and Meteorite Falls (ateş topu bildirimi)",
+      "url": "https://www.imo.net/?p=622"
+    }
+  ]
+}

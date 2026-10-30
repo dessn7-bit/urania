@@ -1,0 +1,58 @@
+[
+  {
+    "id": "d45-1",
+    "soru": "Jocelyn Bell'in 1967'de bulduğu atan radyo kaynağının uzaylı sinyali olmadığına ekibin kanaat getirmesinde en çok ne etkili oldu?",
+    "secenekler": [
+      "Sinyalin her gün farklı bir saatte gelmesi",
+      "21 Aralık 1967'de gökyüzünün başka bir yerinde aynı türden ikinci bir atan kaynağın bulunması",
+      "Hewish'in sinyali hemen bir nötron yıldızı olarak tanımlaması",
+      "Sinyalin görünür ışıkta da görülmesi"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre Bell 21 Aralık 1967'de ikinci bir atarca buldu; gökyüzünün farklı köşelerinde aynı yöntemle sinyal gönderen iki uygarlık olması akla yatkın değildi. Hewish önce sinyali insan yapımı parazit sanmıştı; görünür ışıkta atan ilk atarca 1969'da Yengeç'te bulundu.",
+    "ders": "d45",
+    "bolum": 1
+  },
+  {
+    "id": "d45-2",
+    "soru": "Periyodu 1 saniye, periyot türevi 10⁻¹⁵ olan bir atarcanın karakteristik yaşı yaklaşık ne kadardır? (1 yıl ≈ 3,156 × 10⁷ s)",
+    "secenekler": [
+      "Yaklaşık 16.000 yıl",
+      "Yaklaşık 1,6 milyon yıl",
+      "Yaklaşık 16 milyon yıl",
+      "Yaklaşık 16 milyar yıl"
+    ],
+    "dogru": 2,
+    "aciklama": "Karakteristik yaş = periyot / (2 × periyot türevi) = 1 / (2 × 10⁻¹⁵) = 5 × 10¹⁴ s; 5 × 10¹⁴ / 3,156 × 10⁷ ≈ 1,6 × 10⁷ yıl, yani yaklaşık 16 milyon yıl. Derste vurgulandığı gibi bu, çok hızlı başlangıç dönüşü ve basit manyetik frenleme varsayan bir tahmindir; Yengeç'te tahmin (1.280 yıl) gerçek yaştan (972 yıl) yaklaşık %30 fazladır.",
+    "ders": "d45",
+    "bolum": 4
+  },
+  {
+    "id": "d45-3",
+    "soru": "NASA'nın NICER aleti bir nötron yıldızının yarıçapını nasıl ölçer?",
+    "secenekler": [
+      "Yıldızın diskini doğrudan fotoğraflayıp çapını ölçerek",
+      "Manyetik kutuplardaki sıcak lekelerden gelen X ışını atımlarının biçiminden; ışığın güçlü çekimde bükülmesi atım biçimini sıkılığa bağlı olarak değiştirir",
+      "Yıldızın tayfındaki demir çizgilerinin genişliğinden",
+      "Yıldızın önünden geçen bir gezegenin gölgesinden"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre NICER her X ışını fotonunun varış anını ölçer; sıcak lekeler yıldız döndükçe görünüp kaybolur ve ışığın bükülmesi bu süreleri değiştirir. Atım biçiminden sıkılık (G × M / R c²) ve kütle, onlardan yarıçap çıkar. PSR J0030+0451 için 1,44 M☉ ve 13,02 km bulundu.",
+    "ders": "d45",
+    "bolum": 10
+  },
+  {
+    "id": "d45-4",
+    "soru": "Hulse–Taylor atarcası (PSR B1913+16) genel görelilik için neden önemlidir?",
+    "secenekler": [
+      "Kütleçekim dalgalarını doğrudan yakalayan ilk dedektördür",
+      "Yörüngesi kütleçekim dalgalarıyla enerji kaybının öngördüğü hızda küçülür: periyot her yıl 76,5 mikrosaniye kısalır ve gözlenen/öngörülen oranı 0,9983 ± 0,0016'dır",
+      "Bilinen en ağır nötron yıldızıdır ve TOV sınırını aşar",
+      "Çevresinde Güneş Sistemi dışındaki ilk gezegenler bulunmuştur"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre 1974'te Arecibo'da bulunan sistemde yörünge yılda yaklaşık 3,5 m küçülür; Weisberg ve Huang'ın 2016 sonucuna göre gözlenen küçülmenin kuramın öngörüsüne oranı 0,9983 ± 0,0016'dır. Bu, kütleçekim dalgalarının dolaylı kanıtıdır ve 1993 Nobel'ini getirdi. İlk ötegezegenler ise PSR B1257+12'nin çevresinde bulundu (1992).",
+    "ders": "d45",
+    "bolum": 13
+  }
+]

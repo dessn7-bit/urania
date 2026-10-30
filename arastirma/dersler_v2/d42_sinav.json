@@ -1,0 +1,58 @@
+[
+  {
+    "id": "d42-1",
+    "soru": "Rosetta, 67P çekirdeğinin ortalama yoğunluğunu yaklaşık 533 kg/m³ ölçtü. Bu sonuç en iyi nasıl yorumlanır?",
+    "secenekler": [
+      "Çekirdek neredeyse saf, sıkı su buzundan oluşur",
+      "Çekirdek, hacminin yaklaşık dörtte üçü boş olan, kütlece tozu buzdan fazla, çok gözenekli bir yapıdır",
+      "Çekirdeğin içinde büyük bir mağara vardır",
+      "Çekirdek demir ve nikelden oluşur"
+    ],
+    "dogru": 1,
+    "aciklama": "Pätzold ve ekibine göre gözeneklilik %72–74'tür, kütlece toz buzdan yaklaşık dört kat fazladır ve iç yapı büyük ölçekte türdeştir, büyük boşluk yoktur. Bu, 'kirli kartopu'ndan çok gevşek, buzlu bir toz yığınıdır.",
+    "ders": "d42",
+    "bolum": 1
+  },
+  {
+    "id": "d42-2",
+    "soru": "Bir kuyruklu yıldızın iyon kuyruğu neden Güneş'in tam tersine düz bir çizgi hâlinde uzanır?",
+    "secenekler": [
+      "Çünkü iyonlar kuyruklu yıldızın yörüngesinde geride kalır",
+      "Çünkü iyonlar Güneş rüzgârının manyetik alan çizgilerini izler ve rüzgâr kuyruklu yıldızdan çok daha hızlıdır",
+      "Çünkü Dünya'nın manyetik alanı onu çeker",
+      "Çünkü iyonlar toz taneciklerinden daha ağırdır"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre iyon kuyruğu yörüngeyi değil, Güneş rüzgârının taşıdığı manyetik alan çizgilerini izler; rüzgâr 400–800 km/s ile akar. Toz kuyruğu ise yörüngede geride kaldığı için kavislenir.",
+    "ders": "d42",
+    "bolum": 4
+  },
+  {
+    "id": "d42-3",
+    "soru": "Oort bulutunun varlığı hakkındaki bilgimiz hangisine dayanır?",
+    "secenekler": [
+      "Hubble Uzay Teleskobu'nun buluttaki cisimleri doğrudan görüntülemesine",
+      "Voyager 1'in buluta girip ölçüm yapmasına",
+      "Uzun dönemli kuyruklu yıldızların her yönden gelmesinden ve yörüngelerinden yapılan çıkarıma",
+      "Radyo teleskoplarla ölçülen sıcaklığına"
+    ],
+    "dogru": 2,
+    "aciklama": "Oort 1950'de uzun dönemli kuyruklu yıldızların gezegen düzleminden değil her yönden gelmesini küresel bir bulutla açıkladı. Bulut hiç doğrudan gözlenmedi; NASA ona 'kuramsal' der. Voyager 1 ona ancak yaklaşık 300 yıl sonra girecek.",
+    "ders": "d42",
+    "bolum": 6
+  },
+  {
+    "id": "d42-4",
+    "soru": "Astronomy dergisine göre 1973'te 'yüzyılın kuyruklu yıldızı' diye duyurulan Kohoutek neden hayal kırıklığı yarattı?",
+    "secenekler": [
+      "Güneş'e yaklaşırken tamamen parçalandığı için",
+      "Tahminler parlaklaşma üssünü (n) gerçekçi olmayan yükseklikte, 4 civarında kabul ettiği; kuyruklu yıldız ise sıradan bir hızla (n ≈ 2,5) parladığı için",
+      "Dünya'nın öbür yarıküresinden görüldüğü için",
+      "Ay ışığı onu gölgede bıraktığı için"
+    ],
+    "dogru": 1,
+    "aciklama": "Formül m = H + 5 log Δ + 2,5 n log r'de n = 4 varsayımı uzun dönemli kuyruklu yıldızların parlaklığını fazla tahmin ettirir. Derse göre Kohoutek'te yanlış olan kuyruklu yıldız değil, tahminlerdi.",
+    "ders": "d42",
+    "bolum": 13
+  }
+]

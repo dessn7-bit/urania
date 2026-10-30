@@ -1,0 +1,500 @@
+{
+ "id": "d54",
+ "unite": "kuramlar",
+ "yeni": true,
+ "baslik": "Enflasyon ve Çoklu Evren: Paralel Evrenler Bilimin Neresinde?",
+ "ozet": "Büyük Patlama'nın ufuk ve düzlük sorunlarını kozmik şişmenin (enflasyonun) nasıl çözdüğünü, kuantum dalgalanmalarının galaksi tohumlarına nasıl dönüştüğünü ve Planck'ın hangi öngörüleri doğruladığını öğreneceksin. Sonra BICEP2'nin yanlış alarmını, sonsuz şişmeyi, Tegmark'ın dört çoklu evren düzeyini, Everett'in çok dünyalarını, ince ayar ve antropik ilkeyi ve çoklu evrenin bilim mi felsefe mi olduğu tartışmasını, her fikrin kesinlik etiketiyle göreceksin.",
+ "on_bilgi": [
+  "d8",
+  "d17",
+  "d27",
+  "d50"
+ ],
+ "bolumler": [
+  {
+   "baslik": "Paralel evren: üç ayrı fikre tek ad",
+   "paragraflar": [
+    "Paralel evren sözünü duyunca aklına büyük olasılıkla bir film sahnesi gelir: kahraman bir kapıdan geçer, kendisinin başka bir sürümüyle karşılaşır. Fizikte ise bu ad, birbirinden çok farklı en az üç fikre birden takılır. Birincisi kozmolojiden gelir: gözlenebilir evrenimizin sınırının ötesinde uzayın sürmesi. İkincisi kozmik şişme kuramının bazı biçimlerinden çıkar: şişmenin hiç durmadan sürdüğü ve içinde sayısız ayrı baloncuk evren doğurduğu bir resim. Üçüncüsü kuantum mekaniğinin bir yorumudur: her ölçümde evrenin dallara ayrıldığı çok dünyalar yorumu.",
+    "Bu üç fikir aynı kanıta dayanmaz, aynı kesinlikte değildir ve aynı soruya cevap vermez. Bu dersin amacı onları ayırmaktır. Önce çoklu evren fikrinin en ciddi kaynağı olan kozmik şişmeyi tanıyacaksın: hangi sorunları çözmek için önerildi, hangi öngörüleri tuttu, hangisi henüz bekleniyor. Sonra şişmenin nasıl bir çoklu evrene yol açabildiğini, fizikçi Max Tegmark'ın çoklu evrenleri dört düzeyde sınıflandırmasını, kuantumun çok dünyalarını, ince ayar ve antropik ilke tartışmasını göreceksin. En sonda da asıl büyük soruya geleceğiz: gözleyemeyeceğimiz evrenler hakkında konuşmak bilim midir, felsefe mi?",
+    "Bu derste d50'de tanıdığın dört basamaklı kesinlik ölçeğini her adımda kullanacağız: gözlemle kesinleşmiş, güçlü kanıtlı ama açık sorulu, kuram/hipotez (matematiksel olarak tutarlı ama gözlemle desteklenmemiş) ve spekülasyon. Bir fikrin ünlü bir fizikçi tarafından savunulması ya da belgesellerde sık anlatılması onu bir basamak yukarı taşımaz; yalnızca gözlem taşır. Aşağıda her önemli iddianın yanında etiketini açıkça göreceksin. Bir uyarı daha: bu dersteki fikirlerin hiçbiri, filmlerdeki gibi başka bir evrene geçmeye ya da onunla haberleşmeye izin vermez; bunun nedenini de ilgili bölümlerde kaynağıyla göreceksin."
+   ],
+   "akilda": "Paralel evren adı üç ayrı fikri kapsar: ufkun ötesindeki uzay, sonsuz şişmenin baloncukları ve kuantumun çok dünyaları. Her birinin kanıtı ve kesinlik etiketi farklıdır."
+  },
+  {
+   "baslik": "Büyük Patlama'nın açıklayamadığı tuhaflıklar",
+   "paragraflar": [
+    "d8'de Büyük Patlama modelinin üç güçlü kanıtını gördün. Ama 1970'lerin sonunda model, kendi içinde açıklayamadığı bazı tuhaflıklar taşıyordu. Bunlar modeli yanlışlamıyordu; yalnızca evrenin başlangıç koşullarının akıl almaz derecede özel seçilmiş olmasını gerektiriyordu. Fizikçiler böyle 'şans eseri' açıklamalardan hoşlanmaz, çünkü genellikle altında henüz bulunmamış bir mekanizma yatar.",
+    "Birincisi ufuk sorunudur. Kozmik mikrodalga arka plan ışıması gökyüzünün her yönünden aynı sıcaklıkta gelir; d8'de gördüğün gibi farklar derecenin yüz binde biri düzeyindedir. İki bardak suyun aynı sıcaklığa gelmesi için birbirine dokunup ısı alışverişi yapmaları gerekir. Oysa Wikipedia'nın ufuk sorunu maddesine göre, ışığın salındığı anda gökte yalnızca yaklaşık 2 dereceden yakın bölgeler birbiriyle nedensel temas kurabilmiş olabilirdi; yani birbirine ışık hızıyla bile sinyal gönderecek zamanı bulmuştu. Birbirinden 2 dereceden uzak noktalar hiç 'konuşmamıştı', ama yine de aynı sıcaklıktaydı. Aynı kaynağa göre bu sorunu ilk Wolfgang Rindler 1956'da dile getirdi.",
+    "İkincisi düzlük sorunudur. d17'de evrenin ölçülebildiği kadarıyla düz olduğunu, yani yoğunluğunun kritik yoğunluğa çok yakın olduğunu gördün. Wikipedia'nın düzlük sorunu maddesine göre bu durum kararsızdır: yoğunluk kritik değerden biraz saparsa zamanla sapma büyür. Bugün sapma çok küçük olduğuna göre, geçmişte inanılmaz derecede daha küçük olmalıydı; aynı maddeye göre en erken dönemde Ω ile 1 arasındaki fark 10⁻⁶²'den büyük olamazdı. Sorunu ilk Robert Dicke 1969'da ortaya koydu. Bunu ucunun üstünde dengede duran bir kalemin milyarlarca yıl devrilmeden durmasına benzetebilirsin.",
+    "Üçüncüsü manyetik tek kutup sorunudur. Bütün kuvvetleri birleştirmeye çalışan büyük birleşik kuramlar, çok yüksek sıcaklıklarda bol miktarda manyetik tek kutup, yani yalnız kuzey ya da yalnız güney kutbu olan parçacıklar üretilmesi gerektiğini söyler. Böyle parçacıklar görülmüyor. Wikipedia'ya göre Alan Guth şişmeyi ilk olarak tam da bu tek kutupların yokluğunu açıklamak için önerdi. Bu üçüncü sorun, büyük birleşik kuramların doğru olmasına bağlıdır; ilk ikisi ise doğrudan gözleme dayanır."
+   ],
+   "ornek": {
+    "baslik": "Örnek: Gökyüzünde kaç 'habersiz' bölge var?",
+    "metin": "Bütün gökyüzünün alanı derece kare cinsinden 4π × (180 / π)² ≈ 41.253 derece karedir. Işığın salındığı anda birbiriyle temas edebilmiş bir bölgeyi kabaca 2 derece çapında bir daire sayalım; yarıçap 1 derece, alan π × 1² ≈ 3,14 derece kare. Bölge sayısı ≈ 41.253 / 3,14 ≈ 13.000. Kareler kullansaydın (2 × 2 = 4 derece kare) 41.253 / 4 ≈ 10.300 çıkardı. Sonuç: arka plan ışımasında birbirinden hiç haber almamış yaklaşık on bin bölge var ve hepsi aynı 2,725 kelvinlik sıcaklığı derecenin yüz binde biri hassasiyetle paylaşıyor. Hesap kabadır; amaç büyüklük düzeyini görmek. Sonuç birimi: bölge sayısı (birimsiz)."
+   },
+   "akilda": "Ufuk sorunu: gökte 2 dereceden uzak bölgeler hiç temas etmediği hâlde aynı sıcaklıkta. Düzlük sorunu: evren başta 10⁻⁶²'den daha ince bir ayarla düz olmalıydı (Dicke 1969). Bir de görülmeyen manyetik tek kutuplar var."
+  },
+  {
+   "baslik": "Guth'un fikri: kısa ve çılgın bir şişme",
+   "paragraflar": [
+    "Çözümü bir genç fizikçi buldu. Wikipedia'nın Alan Guth maddesine göre Guth fikri 1979'da Cornell Üniversitesi'nde geliştirdi. Ona ilham veren iki konuşma vardı: Robert Dicke'nin 1978'de düzlük sorunu üzerine verdiği bir ders ve Steven Weinberg'in 1979 başındaki bir konuşması. Guth fikrini ilk kez Ocak 1980'de Stanford'daki SLAC'ta bir seminerde anlattı, makalesini Ağustos 1980'de dergiye gönderdi. Makale 1981'de Physical Review D'de 'Şişen evren: ufuk ve düzlük sorunlarına olası bir çözüm' başlığıyla yayımlandı.",
+    "Fikrin özü şudur: evren, ilk anlarında çok kısa bir süre boyunca üstel olarak, yani her eşit zaman aralığında katlanarak genişledi. Buna kozmik şişme ya da kısaca şişme denir; d8'de bu sözcükle tanışmıştın, İngilizcedeki adıyla enflasyon da denir. d8'deki zaman çizelgesine göre şişme saniyenin 10⁻³³'ü ile 10⁻³²'si arasında sürdü ve evren bu sürede en az 10²⁶ kat büyüdü. Şişmeyi süren şeyin bilinmeyen bir alan olduğu düşünülür; bu varsayımsal alana şişiren alan (inflaton) denir. Ne olduğu hâlâ bilinmiyor.",
+    "Guth tek değildi. Wikipedia'ya göre Rus fizikçi Alexei Starobinsky 1979'da, Guth'tan bağımsız olarak, evrenin ilk anlarında üstel bir genişleme geçirdiği bir model önermişti; model bugün Starobinsky şişmesi diye anılır. Guth'un ilk modelinin de bir kusuru vardı: şişmeyi düzgün biçimde bitiremiyordu (bir sonraki bölümde göreceksin). Wikipedia'ya göre Guth'un kendisi 1983'e gelindiğinde, eski senaryonun bitebilmesi için parametrelerde aşırı bir ince ayar gerektiğini göstermişti. Sorunu Andrei Linde ve ondan bağımsız olarak Andreas Albrecht ile Paul Steinhardt, 'yeni şişme' ya da 'yavaş yuvarlanan şişme' denen bir modelle aştı. Linde daha sonra 'kaotik şişme' adlı başka bir model önerdi.",
+    "Bu adların hepsi bir arada 1982'de üç hafta süren Nuffield Erken Evren Çalıştayı'nda tartışıldı. Otuz yılı aşkın bir sürenin sonunda Guth, Linde ve Starobinsky 2014 Kavli Astrofizik Ödülü'nü 'kozmik şişme kuramına öncülük ettikleri için' paylaştı. Guth ayrıca Temmuz 2012'de ilk kez verilen, 3 milyon dolarlık Temel Fizik Breakthrough Ödülü'nü alanlar arasındaydı. Bir ödülün bir kuramı kanıtlamadığını unutma; ödül, bir fikrin alanda ne kadar etkili olduğunu gösterir. Kanıt sorusunu Planck bölümünde ele alacağız."
+   ],
+   "akilda": "Şişme: evrenin ilk anlarında çok kısa süren üstel genişleme. Starobinsky (1979) ve Guth (1979–1981) bağımsız önerdi; Linde, Albrecht ve Steinhardt geliştirdi. Şişmeyi süren alanın ne olduğu bilinmiyor."
+  },
+  {
+   "baslik": "Şişme sorunları nasıl çözer?",
+   "paragraflar": [
+    "Şişmenin gücü, üç sorunu tek hamlede çözmesidir. Ufuk sorununu düşün. Wikipedia'nın ufuk sorunu maddesine göre şişme, küçük ve kendi içinde nedensel temas kurabilmiş bir bölgeden başlar; bölgenin her yeri önce aynı sıcaklığa gelir. Sonra bu bölge öylesine hızlı büyür ki bugün gökte birbirinden çok uzak görünen yerler aslında bir zamanlar komşudur. Aynı sıcaklık, şişmeden önce kurulmuş bir dengenin donmuş izidir.",
+    "Düzlük sorununu bir balonla düşün. Küçük bir balonun yüzeyindeki karıncaya yüzeyin eğriliği açıkça görünür. Balonu Dünya büyüklüğüne şişirirsen karıncanın çevresi düz görünür. Wikipedia'ya göre şişmeyi süren alanın enerji yoğunluğu hemen hemen sabit kalırken eğriliğin etkisi hızla küçülür ve şişme, Ω'yı 1'e çok yaklaştırır. Yani evrenin bugün bu kadar düz olması bir rastlantı değil, şişmenin beklenen sonucudur. Tek kutuplar ise Guth'un maddesine göre şişmeyle akıl almaz bir hacme yayılıp seyrelir; gözlenebilir evrenimizde bir tane bile kalmayabilir.",
+    "Benzetmenin sınırı: balonun bir dışı ve şişiren bir pompa vardır; evrenin dışı yoktur ve şişen, uzayın kendisidir. Bir soru daha akla gelir: bu kadar hızlı genişleme ışık hızını aşmaz mı? d8'de gördüğün gibi uzayın genişlemesi bir cismin uzayda ışıktan hızlı koşması değildir; özel görelilik (d25) cisimlerin uzay içindeki hızını sınırlar, uzayın kendisinin büyüme hızını değil. Şişme sırasında da bölgeler birbirinden ışıktan hızlı uzaklaşmış olabilir, ama hiçbir şey kendi yerel ışık hızını geçmemiştir.",
+    "Kesinlik etiketi açısından ayrım yapmak gerekir. Ufuk ve düzlük gözlemle kesinleşmiş olgulardır: arka plan ışıması gerçekten her yönde aynı sıcaklıktadır, evren gerçekten düzdür. Şişmenin bunları açıklayan mekanizma olması ise güçlü kanıtlı ama açık sorulu düzeydedir. Açık sorular arasında şişmeyi neyin sürdüğü, ne zaman ve nasıl bittiği ve en baştaki koşulların kendisinin ince ayar gerektirip gerektirmediği var. Wikipedia'nın kozmik şişme maddesi, şişmenin en ciddi sorunlarından birinin ince ayar ihtiyacı olduğunu açıkça yazar."
+   ],
+   "ornek": {
+    "baslik": "Örnek: 10²⁶ kat kaç katlamadır?",
+    "metin": "Üstel büyümede uzunluk her 'e-katlama'da e ≈ 2,718 katına çıkar. 10²⁶ kat büyüme için gereken e-katlama sayısı N = ln(10²⁶) = 26 × ln 10 = 26 × 2,3026 ≈ 59,9, yani yaklaşık 60. Aynı büyüme ikiye katlamayla sayılırsa: log₂(10²⁶) = 26 × 3,3219 ≈ 86 katlama. Wikipedia'nın kozmik şişme maddesindeki bir örnek de aynı düzeyi verir: yarıçapı yaklaşık 4 × 10⁻²⁹ m olan bir küre şişme sonunda yaklaşık 0,9 m'ye ulaşır. Oran 0,9 / (4 × 10⁻²⁹) ≈ 2,3 × 10²⁸, bunun doğal logaritması ≈ 65 e-katlama. Sonuç: kozmologların sık söylediği 'en az 60 e-katlama' ile d8'deki 'en az 10²⁶ kat' aynı şeyin iki ifadesidir. Sonuç birimi: e-katlama sayısı (birimsiz)."
+   },
+   "akilda": "Şişme küçük, dengelenmiş bir bölgeyi dev boyutlara büyütür: uzak yerler aynı sıcaklıkta kalır, eğrilik silinir, tek kutuplar seyrelir. Ufuk ve düzlük gözlemle kesinleşmiş; şişmenin açıklama olması güçlü kanıtlı ama açık sorulu."
+  },
+  {
+   "baslik": "Şişme nasıl biter? Yokuştan yuvarlanan alan",
+   "paragraflar": [
+    "Şişme bir başlangıç kadar bir bitiş de ister; yoksa evren sonsuza dek boş ve soğuk biçimde katlanarak büyürdü. Guth'un ilk modelinde, Wikipedia'nın kozmik şişme maddesine göre, evren yüksek enerjili bir sahte boşlukta, yani en düşük enerjili durum olmadığı hâlde bir süre kararlı kalabilen bir durumda sıkışıp kalmıştı. Bu sahte boşluk denizinde gerçek boşluktan baloncuklar kendiliğinden oluşuyor ve ışık hızına yakın bir hızla büyüyordu. Işınım ancak baloncuk duvarları çarpıştığında doğabiliyordu. Ama uzay baloncuklardan hızlı genişlediği için çarpışmalar son derece seyrek kalıyordu; evren düzgün, sıcak bir hâle geçemiyordu. Buna şişmenin 'zarif çıkış' sorunu denir.",
+    "Yeni şişme modeli resmi değiştirdi. Aynı maddeye göre bu modellerde şişirici alan bir potansiyel enerji tepesinden aşağı yuvarlanır ve alan, evrenin genişlemesine göre çok yavaş yuvarlandığı sürece şişme sürer. Bunu çok hafif eğimli, uzun bir yokuştan ağır ağır inen bir top gibi düşünebilirsin. Top yokuşun dibine yaklaşınca hızlanır, dibin çevresinde salınır ve şişme biter. Benzetmenin sınırı: top uzayda bir yerde duran bir cisim değil, uzayın her noktasındaki alanın değeridir; 'yokuş' da bir yerin değil, alanın enerjisinin çizimidir.",
+    "Peki şişme bitince ne olur? Wikipedia'ya göre şişme boyunca önceden var olan her türlü sıcak madde önemsiz düzeye kadar seyrelir; şişmenin sonunda evren neredeyse boştur. Ardından şişirici alanın enerjisi sıcak ve yoğun parçacıklara dönüşür. Bu enerjinin Standart Model parçacıklarından oluşan sıcak bir çorbaya dönüşmesine yeniden ısınma denir. d8'deki sıcak Büyük Patlama ve d32'deki kuark çağı işte bu çorbadan başlar. Yani bu resimde 'Büyük Patlama'nın sıcak hâli' şişmenin sonunda doğar.",
+    "Kesinlik etiketi açısından: şişmenin nasıl bittiği ve yeniden ısınmanın ayrıntıları kuram/hipotez düzeyindedir; hangi alanın, hangi potansiyelle yuvarlandığı bilinmiyor. Ama ardından gelen sıcak evre, yani evrenin bir zamanlar sıcak ve yoğun olduğu, d8'deki üç kanıtla gözlemle kesinleşmiştir. Bu ayrım önemli: şişmenin ayrıntılarındaki belirsizlik, sıcak Büyük Patlama'nın sağlamlığını zayıflatmaz."
+   ],
+   "akilda": "Guth'un ilk modelinde şişme düzgün bitemiyordu. Yeni şişmede alan bir enerji yokuşundan yavaşça yuvarlanır; dibe varınca enerjisi sıcak parçacıklara dönüşür (yeniden ısınma). Ayrıntılar kuram/hipotez; sonraki sıcak evre gözlemle kesinleşmiş."
+  },
+  {
+   "baslik": "Kuantumun en büyük izi: galaksilerin tohumları",
+   "paragraflar": [
+    "Şişme evreni pürüzsüzleştiriyorsa, galaksiler nereden çıktı? Tamamen pürüzsüz bir evrende kütleçekiminin toplayacağı hiçbir yoğun nokta olmazdı. Cevap kuantum fiziğinden gelir. d27'de Heisenberg belirsizlik ilkesinin, bir alanın değerinin hiçbir zaman tam olarak sabit olamayacağını, her zaman küçük kuantum dalgalanmaları taşıdığını söylediğini gördün. Bu dalgalanmalar normalde atomlardan bile küçük ölçeklerde kalır.",
+    "Şişme sırasında ise durum değişir. Gruber Kozmoloji Ödülü'nün 2013 açıklamasına göre Viatcheslav Mukhanov ile Gennady Chibisov 1981'de, üstel genişlemenin bu küçücük kuantum dalgalanmalarını devasa boyutlara gereceğini ve bunların galaksi oluşumunun tohumları olacağını hesapladı. Mukhanov 1985'te bu dalgalanmaların ayrıntılı kuramını kurdu. Aynı açıklamaya göre Starobinsky de 1979'da şişme sırasında kütleçekim dalgaları üretilmesi gerektiğini hesaplamıştı; bu öngörünün akıbetini ileride göreceksin.",
+    "Sonuç şaşırtıcıdır: d8'de gördüğün arka plan ışımasındaki küçük sıcaklık farkları, yani bugünkü bütün galaksi kümelerinin tohumları, bu resme göre başlangıçta atom altı ölçekte kuantum dalgalanmalarıydı. Kuantum fiziğinin gökyüzüne çizilmiş en büyük izi budur. Gruber açıklamasına göre arka plan ışımasının pek çok gözlemi, en son da ESA'nın Planck uydusunun verileri, Mukhanov ve Chibisov'un öngörüleriyle çok iyi örtüşür. Mukhanov ve Starobinsky 2013 Gruber Kozmoloji Ödülü'nü bu katkıları için aldı.",
+    "Burada da dürüst olmak gerekir. Galaksilerin, arka plan ışımasındaki küçük farklardan kütleçekimiyle büyüdüğü gözlemle kesinleşmiş sayılabilir; d8 ve d49 bu süreci anlatır. Bu farkların kökeninin şişmede gerilmiş kuantum dalgalanmaları olması ise güçlü kanıtlı ama açık sorulu düzeydedir: desen öngörüyle çok iyi uyuşur, ama aynı deseni üretmeye çalışan başka modeller de vardır (d55'te sıçrayan ve ekpirotik evren modellerini göreceksin). Bir kuramın öngörüsünün tutması, onu destekler ama tek seçenek olduğunu kanıtlamaz.",
+    "Bir de ince bir kuramsal soru var. Şişme çok uzun sürdüyse, bugün galaksi kümesi büyüklüğündeki dalgalanmalar şişmenin başında Planck uzunluğundan (d26) bile küçük ölçeklerden gelmiş olabilir. O ölçeklerde bugünkü fizik geçerliliğini yitirir. Wikipedia'nın kozmik şişme maddesi buna Planck ötesi sorun der: hesaplara, henüz bilinmeyen kuantum kütleçekim kuramından gelen düzeltmeler girmeli. Aynı kaynağa göre bu etkinin ne kadar büyük olduğu konusunda görüş ayrılığı sürüyor. Yani en büyük ölçekli kuantum izinin hesabı, fiziğin en küçük ölçekli bilinmeyenine dokunuyor."
+   ],
+   "akilda": "Mukhanov ve Chibisov (1981): şişme kuantum dalgalanmalarını gererek galaksilerin tohumlarını oluşturur. Planck verileriyle çok iyi uyuşur; kesinlik etiketi güçlü kanıtlı ama açık sorulu."
+  },
+  {
+   "baslik": "Planck'ın karnesi: tutan öngörüler",
+   "paragraflar": [
+    "Bir kuramın değeri, henüz ölçülmemiş bir şeyi önceden doğru söylemesinden gelir. Şişme birkaç somut öngörü yapar. Birincisi evrenin çok yüksek bir hassasiyetle düz olmasıdır. Planck ekibinin 2018 şişme makalesine göre Planck verileri baryon akustik salınımlarıyla birleştirilince evren yüzde 0,4'lük bir hassasiyetle düz çıkar (yüzde 95 güven düzeyinde). Bu, d17'deki ΩK = 0,001 ± 0,002 değeriyle aynı sonuçtur.",
+    "İkinci öngörü daha incedir. Şişme, tohum dalgalanmaların bütün ölçeklerde neredeyse aynı güçte, ama tam aynı değil, biraz eğik dağılmasını bekler. Bu eğikliği spektral indeks denen n_s sayısı ölçer: n_s = 1 bütün ölçeklerin tam eşit olduğu durumdur. Wikipedia'ya göre en basit şişme modelleri n_s'nin 0,92 ile 0,98 arasında olmasını öngörür. Planck 2018 sonucu n_s = 0,9649 ± 0,0042'dir: aralığın içinde ve 1'den belirgin biçimde küçük. 2025'te Atacama Kozmoloji Teleskobu'nun (ACT) Planck, mercek ve baryon akustik salınımı verileriyle birleşik analizi biraz daha büyük bir değer verdi: 0,974 ± 0,003. Hâlâ 1'in altında; ama farkın hangi şişme modellerini zorlayacağı tartışılıyor.",
+    "Üçüncü ve dördüncü öngörü dalgalanmaların türüyle ilgilidir. Şişmenin en basit biçimleri dalgalanmaların rastgele ama belli bir istatistiğe, Gauss dağılımına uymasını bekler. Planck makalesine göre Planck öncesi dönemde görülen büyük Gauss dışılık ipuçları Planck ölçümleriyle ortadan kalktı. Ayrıca dalgalanmaların 'adyabatik' olması beklenir: madde, ışık ve karanlık maddedeki yoğunluk farklarının aynı yerde aynı yönde olması. Planck'a göre adyabatik olmayan katkılar yüzde 1,3 ile 1,7 arasındaki üst sınırların altındadır.",
+    "Planck makalesinin özetindeki yargı şudur: bu bulguların hepsi standart tek alanlı şişme modellerinin temel öngörülerini destekler. Aynı makale, şişirici alanın ikinci kuvvetle artan en basit potansiyelinin, yani φ² modelinin, kesin biçimde elendiğini de yazar; 'iç bükey' potansiyelli modeller ise giderek öne çıkıyor. Yani veriler genel olarak şişmeyi desteklerken, şişmenin pek çok somut modelini de eliyor. Kesinlik etiketi: güçlü kanıtlı ama açık sorulu. Açık kalan en büyük soru, bir sonraki bölümün konusu olan ilksel kütleçekim dalgalarıdır."
+   ],
+   "ornek": {
+    "baslik": "Örnek: Spektral indeksin 1'den farkı ne kadar güvenilir?",
+    "metin": "Planck: n_s = 0,9649, belirsizlik σ = 0,0042. Tam eşit ölçekler n_s = 1 demek. Fark: 1 − 0,9649 = 0,0351. Bu farkın belirsizliğe oranı: 0,0351 / 0,0042 ≈ 8,4. Yani ölçülen değer 1'den yaklaşık 8 sigma uzakta; d32'de gördüğün 5 sigma keşif eşiğinin epey üstünde. Dalgalanmalar büyük ölçeklerde küçük ölçeklere göre yaklaşık yüzde 3,5 oranında (0,0351 ≈ %3,5) daha güçlüdür; bu, şişmenin genel beklentisiyle uyumludur. ACT'nin 0,974 ± 0,003 değeri için: (1 − 0,974) / 0,003 ≈ 8,7 sigma. İki ölçüm birbirinden biraz farklı ama ikisi de 1'den kesin biçimde küçük. Sonuç birimi: sigma (birimsiz)."
+   },
+   "akilda": "Planck 2018: evren yüzde 0,4 hassasiyetle düz, n_s = 0,9649 ± 0,0042 (1'den küçük), dalgalanmalar Gauss dağılımlı ve adyabatik. φ² modeli elendi. Etiket: güçlü kanıtlı ama açık sorulu."
+  },
+  {
+   "baslik": "Eksik halka: ilksel kütleçekim dalgaları",
+   "paragraflar": [
+    "d16'da birleşen kara deliklerin uzay-zamanda dalgalar yaydığını gördün. Şişme de benzer bir şey öngörür: Starobinsky'nin 1979'da hesapladığı gibi, şişme sırasında yalnız yoğunluk dalgalanmaları değil, uzay-zamanın kendisinin dalgalanmaları da gerilmiş olmalıdır. Bunlara ilksel kütleçekim dalgaları denir. Bugün doğrudan duyulamayacak kadar uzun dalga boyludurlar, ama arka plan ışımasında bir iz bırakmış olmaları beklenir.",
+    "İz, ışığın kutuplanmasındadır. d8'de arka plan ışımasının titreşim yönünün de ölçüldüğünü ve 'E kipi' denen bir desenin 2002'de bulunduğunu gördün. Kütleçekim dalgaları ise 'B kipi' denen, girdap gibi kıvrılan ayrı bir desen üretir. Bu desenin gücünü ölçen sayıya tensör-skaler oranı denir ve r harfiyle gösterilir: kütleçekim dalgalarının, yoğunluk dalgalanmalarına göre ne kadar güçlü olduğunu söyler. r'yi ölçmek şişmenin hangi enerjide olduğunu doğrudan söylerdi.",
+    "Wikipedia'nın kozmik şişme maddesine göre ince ayar gerektirmeyen en basit şişme modelleri 0,1 civarında bir r öngörür. Ölçümler bu değere gelmedi. Planck 2018 tek başına r < 0,10, BICEP/Keck verileriyle birlikte r < 0,056 sınırını verdi. BICEP/Keck ortaklığının 2021'de Physical Review Letters'ta yayımlanan, 2018 gözlem dönemine kadarki bütün verilerini kullanan analizi sınırı r < 0,036'ya indirdi (yüzde 95 güven). Aynı makaleye göre 'doğal şişme' denen model ailesi ve φ^(2/3) modeli artık bu sınırın dışında kalıyor.",
+    "Bu durum nasıl okunmalı? Kütleçekim dalgalarının bulunamaması şişmeyi yanlışlamaz, çünkü r'yi çok küçük öngören şişme modelleri de vardır. Ama en basit, en 'doğal' modellerin birer birer elendiği de bir gerçektir. Eleştirmenlere göre bu, şişmenin her sonuca uyacak kadar esnek olduğunu gösterir; savunuculara göre ise bilim tam olarak böyle çalışır: veri geldikçe modellerin sayısı daralır. İki tarafın tartışmasını dersin sonunda kaynaklarıyla göreceksin. Kesinlik etiketi: ilksel kütleçekim dalgaları kuram/hipotez düzeyinde bir öngörüdür; henüz gözlenmedi."
+   ],
+   "akilda": "İlksel kütleçekim dalgaları arka plan ışımasında B kipi kutuplanması bırakmalı. Gücü r ile ölçülür. Bugünkü sınır r < 0,036 (BICEP/Keck 2021); en basit modeller (~0,1) elendi. Henüz gözlenmedi."
+  },
+  {
+   "baslik": "BICEP2: 17 Mart 2014'ün dürüst dersi",
+   "paragraflar": [
+    "17 Mart 2014'te BICEP2 teleskobunun ekibi büyük bir duyuru yaptı: arka plan ışımasında B kipi kutuplanması bulmuşlardı ve bunu ilksel kütleçekim dalgalarına bağlıyorlardı. Physics Today'in aktarımına göre duyurulan tensör-skaler oranı r = 0,2 idi ve sıfırdan birkaç standart sapma uzaktaydı. Haber bütün dünyada 'Büyük Patlama'nın yankısı duyuldu', 'şişme kanıtlandı' başlıklarıyla yayıldı.",
+    "Sorun, ışığın yolda geçtiği Samanyolu'ndaydı. Galaksimizdeki toz taneleri, manyetik alan boyunca hizalanıp kendi ışımalarını kutuplanmış biçimde yayar ve bu da B kipi üretebilir. Physics Today'e göre galaktik toz, 200 gigahertzin epey üstündeki frekanslarda kütleçekim dalgası işaretine baskın gelir. Planck uydusu 353 gigahertzde, yani tozun kesinlikle baskın olduğu bir frekansta, aynı gökyüzü bölgesinin haritasını çıkarmıştı. BICEP2 ve Keck'in 150 gigahertzlik verileri bu toz haritasıyla karşılaştırıldığında iki desenin güçlü biçimde ilişkili olduğu görüldü: BICEP2'nin gördüğü işaretin büyük kısmı da tozdu.",
+    "Şubat 2015'te BICEP2/Keck ve Planck ekiplerinin ortak makalesi, ilksel kütleçekim dalgalarına dair sağlam bir kanıt kalmadığını gösterdi; Physics Today'e göre yeni analiz r için 0,12'lik bir üst sınır verdi. Yani dünyayı dolaşan 'keşif' bir yıl içinde bir üst sınıra dönüştü. Sonraki yıllarda aynı ekiplerin kendi daha duyarlı ölçümleri, önceki bölümde gördüğün r < 0,036 sınırına vardı.",
+    "Bu öykü bilimin kötü değil, iyi işlediğini gösterir. Hata, başka ekiplerin bağımsız verisiyle ve bizzat aynı ekibin katkısıyla düzeltildi. Ama bir uyarı da taşır: bir sonucun basın toplantısında duyurulması, kesinlik ölçeğinde onu yukarı taşımaz. Bir ölçüm ancak bağımsız gözlemlerle doğrulandığında, olası karıştırıcı etkiler (burada toz) dışlandığında güçlü kanıt sayılır. Bu derste ve d55'te başka 'keşif' iddialarını değerlendirirken bu ölçütü aklında tut."
+   ],
+   "ornek": {
+    "baslik": "Örnek: Duyurulan değer ile bugünkü sınır",
+    "metin": "2014'te duyurulan değer r = 0,20. 2015 ortak analizinin üst sınırı r < 0,12: 0,20 / 0,12 ≈ 1,7, yani duyurulan değer sınırın yaklaşık 1,7 katıydı. 2021 BICEP/Keck sınırı r < 0,036: 0,20 / 0,036 ≈ 5,6. Yani bugün bilinen sınır, 2014'te duyurulan değerin altıda birinden de küçüktür. En basit modellerin öngördüğü 0,1 civarı da bu sınırın yaklaşık 2,8 katıdır (0,1 / 0,036 ≈ 2,8). Sonuç: tozdan arındırılmış ölçümler, hem 2014 iddiasını hem de en basit modelleri sınırın dışına itti. Sonuç birimi: oran (birimsiz)."
+   },
+   "akilda": "BICEP2 (17 Mart 2014) r = 0,2 duyurdu; Planck'ın toz haritası işaretin büyük kısmının galaktik toz olduğunu gösterdi (Şubat 2015, r < 0,12). Ders: bağımsız doğrulama olmadan duyuru kanıt değildir."
+  },
+  {
+   "baslik": "Sonsuz şişme ve cep evrenler",
+   "paragraflar": [
+    "Şişmenin en tartışmalı sonucu, kendisini hiç durduramayabilecek olmasıdır. Wikipedia'nın sonsuz şişme maddesine göre bu, kozmik şişme modelinin bazı biçimlerinin bir öngörüsüdür. Resim kabaca şöyle: şişirici alanın kuantum dalgalanmaları bazı bölgelerde şişmeyi bitirir, bazı bölgelerde ise sürdürür. Şişen bölgeler bitenlerden çok daha hızlı büyüdüğü için, toplamda şişen hacim hep artar. Şişmenin bittiği her bölge, bizimki gibi sıcak bir Büyük Patlama yaşayan ayrı bir baloncuk olur. Bunlara popüler dilde cep evrenler ya da baloncuk evrenler denir.",
+    "Aynı maddeye göre Paul Steinhardt 1983'te sonsuz şişmenin ilk örneğini verdi; Alexander Vilenkin aynı yıl bu davranışın yeni şişme modellerinde genel olduğunu gösterdi; Andrei Linde ise 1986'da bu fikirleri kaotik ya da sonsuz şişme denen modelde kullandı. Guth'un maddede aktarılan görüşüne göre şişme modellerinin çoğu bir çoklu evrene yol açar. Baloncukların her birinde fiziğin etkin yasaları, örneğin bazı sabitlerin değerleri, farklı çıkabilir; bu fikir d53'te göreceğin sicim kuramının 'manzara'sıyla birleştirilir.",
+    "Burada ciddi bir sorun çıkar. Vilenkin'in 2006 tarihli gözden geçirme makalesine göre baloncukların toplam sayısı, sınırlı bir bölgede bile sonsuzdur. Sonsuz sayıda baloncuk ve gözlemci varsa, 'bizimki gibi bir evrenin olasılığı nedir?' sorusu bir anda anlamsızlaşır: sonsuzları karşılaştırmanın tek bir doğru yolu yoktur ve sonuç, hesabın nasıl kesildiğine çok duyarlıdır. Buna ölçü sorunu denir. Vilenkin bir kesme yöntemi önerir, ama makalenin kendi ifadesiyle bu bir öneridir, çözülmüş bir sorun değil.",
+    "Bir şey daha: sonsuz şişme geleceğe doğru sonsuz olabilir ama geçmişe doğru değil. Wikipedia'nın aktardığı gibi Guth 2007'de şişmenin genellikle geleceğe doğru sonsuz, geçmişe doğru ise sonsuz olmadığını yazdı; yani şişme evrenin başlangıcı sorusunu ortadan kaldırmaz, yalnızca geriye iter. Bu soruyu d55'te ele alacağız. Kesinlik etiketleri: sonsuz şişmenin bazı şişme modellerinin sonucu olması kuram/hipotez düzeyindedir; başka baloncuk evrenlerin gerçekten var olması ise spekülasyondur, çünkü hiçbiri gözlenmedi ve şişmenin kendisinin hangi modelle gerçekleştiği bilinmiyor."
+   ],
+   "akilda": "Bazı şişme modellerinde şişme hiç bitmez ve sayısız baloncuk evren doğar (Steinhardt, Vilenkin 1983; Linde 1986). Sonsuz sayıda baloncuk olasılık hesaplarını bozar: ölçü sorunu. Model sonucu: kuram/hipotez; başka evrenlerin varlığı: spekülasyon."
+  },
+  {
+   "baslik": "Tegmark'ın dört düzeyi",
+   "paragraflar": [
+    "Çoklu evren fikirlerini düzenlemenin en bilinen yolu, fizikçi Max Tegmark'ın 2003 tarihli 'Paralel Evrenler' makalesidir. Tegmark çoklu evrenleri dört düzeyde sıralar. Burada her düzeyi tanıtıp kesinlik etiketini ekleyeceğiz; etiketler bu dersin değerlendirmesidir, Tegmark'ın değil.",
+    "I. Düzey: ufkumuzun ötesindeki bölgeler. d8'de gözlenebilir evrenin yarıçapının yaklaşık 46,5 milyar ışık yılı olduğunu, evrenin tamamının ise sonsuz da olabileceğini gördün. Tegmark'a göre uzay sonsuzsa ve madde büyük ölçekte yeterince düzgün dağılmışsa, ışığının bize hiç ulaşamayacağı sayısız 'Hubble hacmi' vardır; aynı fizik yasalarına ama farklı başlangıç koşullarına sahiptirler. Bu yeterince büyük bir uzayda olabilecek her düzenlemenin bir yerde gerçekleşmesi demektir. Ufkun ötesinde de uzay olduğu güçlü kanıtlı ama açık sorulu bir çıkarımdır; orada bizim kopyalarımızın olması ise sonsuz uzay varsayımına bağlı olduğu için spekülasyondur.",
+    "Bu varsayımları biraz açalım. Tegmark'ın akıl yürütmesi iki koşula dayanır: uzay sonsuzdur ve madde büyük ölçekte yeterince düzgün dağılmıştır. Makalenin ifadesiyle bu, ilke olarak burada olabilecek her şeyin başka bir yerde gerçekten olduğu anlamına gelir. Ama d17'de gördüğün gibi evrenin düz olması sonsuz olduğunu kanıtlamaz; düz bir evren sonlu da olabilir ve evrenin bütününün yapısı bilinmiyor. Uzay sonluysa ve yeterince büyük değilse, kopya akıl yürütmesi çöker. Tegmark'ın verdiği öteki sayılar da aynı varsayımlara dayanır: bizim çevremizdeki 100 ışık yılı yarıçaplı bir kürenin tıpatıp aynısı yaklaşık 10^(10^91) metre ötede, bütün Hubble hacmimizin aynısı yaklaşık 10^(10^115) metre ötede olmalıdır.",
+    "II. Düzey: sonsuz şişmenin baloncukları. Tegmark'a göre şişmeden sonra oluşan başka baloncuklarda sabitler, boyut sayısı ya da parçacık içeriği gibi etkin fizik yasaları farklı olabilir. Önceki bölümde gördüğün gibi bu, belli şişme modellerine bağlıdır: spekülasyon.",
+    "III. Düzey: kuantumun çok dünyaları. Bir sonraki bölümün konusu. Tegmark'ın ilginç tespiti şudur: III. Düzey, I. ve II. Düzey'e nitelik olarak yeni bir şey eklemez; yalnızca aynı tür evrenlerin daha fazla kopyasını verir ve bu anlamda I. Düzey'den daha tuhaf değildir. IV. Düzey: matematiksel yapılar. Tegmark, matematiksel olarak var olan her yapının fiziksel olarak da var olduğunu, yani bir tür 'matematiksel demokrasi' önerir. Bu düzey en çok felsefeye yaklaşır: spekülasyon.",
+    "Tegmark'ın kendisi bu fikirlerin sınanabilirliği konusunda açık bir ölçüt koyar: bir çoklu evren kuramı, evrenler topluluğunu ve bu topluluk üzerinde bir olasılık dağılımını öngörüyorsa sınanabilir ve yanlışlanabilir. Yani 'öbür evrenleri görebilir miyiz?' değil, 'kuramın bizim evrenimiz için öngördüğü olasılıklar gözlemle uyuşuyor mu?' diye sorulur. Eleştirmenler bu ölçütün pratikte uygulanıp uygulanamayacağını sorguluyor; bunu son bölümde göreceksin."
+   ],
+   "ornek": {
+    "baslik": "Örnek: En yakın 'ikizin' ne kadar uzakta?",
+    "metin": "Tegmark'ın 2003 makalesine göre, I. Düzey varsayımları altında sana tıpatıp benzeyen en yakın kopya yaklaşık 10^(10^29) metre uzaktadır. Bu sayıyı kavramak için yazmayı dene: 1'in arkasına 10²⁹ tane sıfır gelir. Her rakamı 1 milimetrelik bir kutuya yazsan, rakam dizisinin uzunluğu 10²⁹ mm = 10²⁶ m olur. Bir ışık yılı ≈ 9,46 × 10¹⁵ m olduğuna göre bu 10²⁶ / 9,46 × 10¹⁵ ≈ 1,1 × 10¹⁰, yani yaklaşık 11 milyar ışık yılı eder. Karşılaştırma: gözlenebilir evrenin yarıçapı 46,5 milyar ışık yılı ≈ 4,4 × 10²⁶ m. Yani yalnızca uzaklığı yazmak için gereken kâğıt şeridi gözlenebilir evrenin dörtte biri kadar uzun olurdu; uzaklığın kendisi ise bundan hayal edilemeyecek kadar büyüktür. Tegmark'a göre özdeş bir Hubble hacmi için uzaklık 10^(10^115) metreye çıkar. Sonuç birimi: metre ve ışık yılı."
+   },
+   "akilda": "Tegmark (2003): I. Düzey ufkun ötesi, II. Düzey şişme baloncukları, III. Düzey kuantum dalları, IV. Düzey matematiksel yapılar. Ufkun ötesinde uzay olması güçlü kanıtlı; kopyalar, baloncuklar ve matematiksel evrenler spekülasyon."
+  },
+  {
+   "baslik": "Everett'in dalları: kuantumun paralel dünyaları",
+   "paragraflar": [
+    "Üçüncü tür paralel evren uzayın uzak köşelerinden değil, kuantum mekaniğinin içinden çıkar. d27'de dalga fonksiyonunu ve ölçüm sorununu gördün: bir parçacık ölçülmeden önce birden çok durumun üst üste binmesi gibi davranır, ölçülünce tek bir sonuç verir. Ders kitaplarının çoğu bunu dalga fonksiyonunun 'çökmesi' diye anlatır. Peki çökme gerçekten olur mu?",
+    "Hugh Everett'e göre olmaz. Wikipedia'nın çok dünyalar yorumu maddesine göre Everett bu fikri 1957'de Princeton'daki doktora çalışmasında ortaya koydu; kısa bir özeti aynı yıl Reviews of Modern Physics'te 'göreli durum' başlığıyla yayımlandı ve bu adı danışmanı John Wheeler önerdi. Yoruma 'çok dünyalar' adını 1970'lerde Bryce DeWitt verdi ve onu yaygınlaştırdı. Yoruma göre bütün evrenin dalga fonksiyonu gerçektir ve hiç çökmez. Bir ölçümde ölçüm aleti, gözlemci ve çevre de üst üste binmeye katılır; çevreyle etkileşim, yani d27'de gördüğün dekoherans, farklı sonuçları birbirinden ayrı 'dallara' böler. Her dalda bir sonuç gözlenir.",
+    "Aynı madde bu 'dünyaların' temel değil, yaklaşık ve kendiliğinden ortaya çıkan yapılar olduğunu vurgular. Önemli bir nokta: dallar arasında bilgi geçmez; madde onları 'birbiriyle haberleşmeyen paralel evrenler' diye anar. Bu yüzden filmlerdeki gibi başka bir dala geçmek ya da oradaki kendinle konuşmak bu yorumda bile mümkün değildir. Yorum, laboratuvarda bugün yapılabilen deneylerde Kopenhag yorumuyla aynı sonuçları verir; ayırt edici deney önerileri, büyük cisimleri üst üste binme durumunda tutmayı gerektirdiği için bugünkü deneysel olanakların ötesindedir.",
+    "Eleştiriler de ciddidir. Wikipedia'ya göre en büyük tartışma olasılıkla ilgilidir: her sonuç bir dalda gerçekleşiyorsa, Born kuralının verdiği olasılıklar ne anlama gelir? Everett'in ve sonraki pek çok fizikçinin bu kuralı türetme denemeleri eleştirildi ve bu konuda bir uzlaşma yok. Gerard 't Hooft gibi fizikçiler ise 'akıl almaz sayıda paralel dünya' fikrine itiraz eder. Yorumun fizikçiler arasındaki desteği de zamanla ve ankete göre değişir. Aynı maddeye göre 1991'den önceki bir ankette 72 kozmolog ve kuantum alan kuramcısının yüzde 58'i çok dünyaların doğru olduğunu düşündüğünü söylemişti; 2011'de Avusturya'daki bir konferansta yapılan 33 kişilik ankette ise 6 kişi çok dünyaları, 14 kişi Kopenhag yorumunu seçti. d27'deki 2025 Nature anketinde katılımcıların yüzde 15'i çok dünyaları seçmişti. Anket sonuçları bir görüşün yaygınlığını gösterir, doğruluğunu değil. Kesinlik etiketi: bir yorum olarak kuram/hipotez düzeyindedir; matematiksel olarak tutarlıdır ama öteki yorumlardan deneyle ayırt edilemedi."
+   ],
+   "akilda": "Everett (1957): dalga fonksiyonu hiç çökmez, ölçümler evreni haberleşmeyen dallara ayırır; ad DeWitt'ten (1970'ler). Deneyde öteki yorumlarla aynı sonucu verir; olasılık sorunu tartışmalı. Etiket: kuram/hipotez."
+  },
+  {
+   "baslik": "İnce ayar ve antropik ilke",
+   "paragraflar": [
+    "Fizik yasalarındaki bazı sayılar biraz farklı olsaydı biz burada olmazdık. Wikipedia'nın antropik ilke maddesi birkaç örnek verir: güçlü kuvvet biraz daha güçlü olsaydı iki nötronun ya da iki protonun bağlı bir çift oluşturabileceği ve erken evrendeki bütün hidrojenin helyuma dönüşeceği öne sürülür. Hidrojen olmasaydı su da, uzun ömürlü kararlı yıldızlar da olmazdı. Robert Dicke ise evren bugünkü yaşının onda biri olsaydı ağır elementlerin birikmesine yetecek zaman olmayacağını savundu. Bu tür gözlemlere ince ayar denir.",
+    "İnce ayara verilen cevaplardan biri antropik ilkedir. Aynı maddeye göre terimi Brandon Carter 1973'te Kraków'daki bir sempozyumda ortaya attı. Zayıf antropik ilke, evrendeki yerimizin gözlemci olarak varlığımızla uyumlu olmak zorunda olduğunu söyler: biz ancak yaşama izin veren bir yerde ve zamanda kendimizi bulabiliriz. Güçlü antropik ilke ise evrenin bir aşamada gözlemcilerin oluşmasına izin verecek özellikte olması gerektiğini söyler. Düzlük sorunu için de bir antropik cevap önerildi: Collins ve Hawking 1973'te, ancak kritik yoğunluğa yakın evrenlerin gözlemci ürettiğini savundu.",
+    "Antropik akıl yürütmenin en ünlü başarısı karanlık enerjiyle ilgilidir. Wikipedia'ya göre Steven Weinberg 1987'de, kozmolojik sabit gözlenen değerden birkaç basamak büyük olsaydı evrenin yıldız ve yaşam oluşamayacak kadar hızlı genişleyeceğini savundu. Kozmolojik sabitin sonradan, 1998'de, küçük ama sıfır olmayan bir değerle ölçülmesi (d17) bu anlamda başarılı bir öngörü sayılır. Bu sabitin parçacık fiziğinin beklediğinden neden bu kadar küçük olduğu, d51'deki 'vakum enerjisi sorunu'dur.",
+    "Çoklu evrenle bağ şuradadır. Tek bir evren varsa, sabitlerin yaşama uygun çıkması açıklama isteyen bir rastlantıdır. Sayısız baloncukta sabitler farklı değerler alıyorsa, biz doğal olarak yaşama izin veren baloncuklardan birinde buluruz; tıpkı balıkların kendilerini kuru toprakta değil, suda bulması gibi. Carter'ın kendisi birden çok evreni antropik öngörüleri açıklamaya çevirmek için 'son çare' olarak görüyordu.",
+    "Eleştirmenler ise antropik ilkenin bir totoloji olduğunu, güçlü biçiminin ne sınanabilir ne yanlışlanabilir olduğunu söyler; Wikipedia, David Gross, Lubos Motl, Peter Woit ve Lee Smolin'in sicim manzarasıyla birleşen antropik yaklaşımı öngörüsüz bulduğunu aktarır. Bazı eleştirmenler, bu akıl yürütmenin yaşamın ancak bildiğimiz karbon kimyasıyla mümkün olduğunu varsaydığını, yani bir tür 'hayal gücü eksikliği' taşıdığını da söyler. Lee Smolin bu eleştiriye cevap olarak, kara deliklerin yeni evrenler doğurduğu ve evrenlerin bir tür doğal seçilimle çoğaldığı 'doğurgan evrenler' fikrini önerdi; bu da spekülasyon düzeyinde bir öneridir. Kesinlik etiketi: ince ayarın varlığı bir gözlemdir; antropik açıklama ise kuram/hipotez ile spekülasyon arasında tartışmalıdır."
+   ],
+   "akilda": "İnce ayar: bazı sabitler biraz farklı olsa yaşam olmazdı. Antropik ilke (Carter 1973): ancak yaşama izin veren bir evrende gözlemci olabiliriz. Weinberg 1987 küçük kozmolojik sabiti bu yolla öngördü. Eleştiri: sınanamaz, totoloji."
+  },
+  {
+   "baslik": "Bilim mi felsefe mi? Yanlışlanabilirlik tartışması",
+   "paragraflar": [
+    "Felsefeci Karl Popper'ın ünlü ölçütüne göre bir kuramın bilimsel olması için yanlışlanabilir olması, yani hangi gözlemin onu çürüteceğini söyleyebilmesi gerekir. Çoklu evren bu ölçütle sınava girer. Aralık 2014'te kozmologlar George Ellis ve Joe Silk, Nature'da 'Fiziğin bütünlüğünü savunun' başlıklı bir yazı yayımladı. Yazarlara göre bazı fizikçiler, yeterince zarif ve açıklayıcı bir kuramın deneyle sınanması gerekmediğini savunmaya başlamıştı. Ellis ve Silk'e göre çoklu evren gözlenemeyen evrenler varsayar ve her gözlemi açıklayabilir; bu yüzden sınanamaz. Yazarlar sicim kuramının ek boyutlarının da gözlenemediğini hatırlatır ve bir kuramın bilimsel sayılması için hangi kanıtın onu terk ettireceğinin söylenebilmesi gerektiğini savunur. Önerileri de somuttu: fizikçilerin, felsefecilerin ve öteki bilim insanlarının iki taraftan katılımla bir araya gelip bilimsel yöntemi yeniden tartışması ve sınanabilirliği zayıf çalışmaların dergilerde ayrı bir kategoride yayımlanması.",
+    "Şişmenin kendisi de bu tartışmanın içinde. Wikipedia'ya göre Paul Steinhardt, bir zamanlar şişmenin kurucularından biri olduğu hâlde, sonsuz şişme yüzünden şişmenin hiçbir öngörü yapmadığını ve bu yüzden sınanamaz olduğunu savunmaya başladı. Roger Penrose daha da sert bir cümleyle şişmenin 'yanlışlanamaz değil, yanlışlanmış' olduğunu söyledi. Penrose'un bir başka itirazı başlangıç koşullarıyla ilgilidir: Wikipedia'nın aktardığına göre şişmenin başlaması için evrenin, şişmenin sonundakinden bile daha özel bir durumda olması gerekirdi; yani şişme ince ayarı çözmez, geriye taşır. Steinhardt da benzer biçimde, olasılıklar hesaplanınca 'kötü' şişmenin 'iyi' şişmeden, hiç şişme olmamasının ise ikisinden de daha olası çıktığını savunur. Şubat 2017'de Anna Ijjas, Paul Steinhardt ve Abraham Loeb, Scientific American'da şişmeye karşı ve sıçrayan bir evren modelinden yana bir makale yayımladı; şişmenin o kadar esnek olduğunu ki hiçbir deneyin onu çürütemeyeceğini öne sürdüler.",
+    "Cevap gecikmedi. Temmuz 2017'de aynı dergide 33 fizikçinin imzasıyla bir mektup çıktı; Caltech kayıtlarına göre imzacılar şişme üzerine çalışan fizikçilerdi, aralarında Alan Guth, Andrei Linde, David Kaiser ve Stephen Hawking vardı. Mektup, şişmenin sınanamaz olduğu iddiasına karşı çıktı, Planck sonuçlarının basit şişme modelleri lehine güçlü kanıt sunduğunu hatırlattı ve bazı fizikçilerin deneysel sınanabilirliği bir kenara atmayı önerdiği iddiasını reddetti: 'Deneysel bilim canlı ve sağlıklı.' Dergi, ilk yazarların cevabını da aynı sayıda yayımladı. Bu tartışma bugün de sürüyor ve bu ders taraf tutmuyor.",
+    "Çoklu evrenin hiç sınanamayacağı da kesin değil. Bazı modellere göre bizim baloncuğumuz geçmişte başka bir baloncukla çarpışmışsa, arka plan ışımasında daire biçimli izler kalmış olabilir. Stephen Feeney ve arkadaşları 2011'de WMAP uydusunun yedi yıllık verisinde bu izleri aradı. Sonuç: veriler standart modele çarpışma eklemeyi gerektirmiyor; görülebilir çarpışmaların ortalama sayısı için yaklaşık 1,6'lık bir üst sınır bulundu. Yani arama yapıldı ve bir şey bulunamadı. Bu, çoklu evreni çürütmez, ama en azından bazı biçimlerinin ilke olarak sınanabilir izler bırakabileceğini gösterir."
+   ],
+   "akilda": "Ellis ve Silk (2014): çoklu evren sınanamaz, bilimin ölçütü tehlikede. Steinhardt ve Penrose şişmeyi de eleştiriyor; 33 fizikçi (2017) şişmenin sınandığını savundu. Baloncuk çarpışması araması (2011) hiçbir şey bulmadı. Tartışma sürüyor."
+  },
+  {
+   "baslik": "Bilim kurgu ile bilimi ayırmak",
+   "paragraflar": [
+    "Bu dersin sonunda elinde bir tablo olmalı. Gözlemle kesinleşmiş olanlar: arka plan ışımasının her yönde aynı sıcaklıkta olması, evrenin ölçülebildiği kadarıyla düz olması, galaksilerin küçük yoğunluk farklarından büyümesi, ışığı bize hiç ulaşmayacak bölgelerin var olması. Güçlü kanıtlı ama açık sorulu olanlar: bu gözlemleri kozmik şişmenin açıklaması ve galaksi tohumlarının kuantum dalgalanmalarından gelmesi. Kuram/hipotez düzeyinde olanlar: ilksel kütleçekim dalgaları, bazı şişme modellerinin sonsuz şişmeye yol açması ve çok dünyalar yorumu. Spekülasyon olanlar: ufkun ötesinde bizim kopyalarımızın bulunması, başka baloncuk evrenlerin gerçekten var olması ve matematiksel evrenler.",
+    "Bu tabloda iki ayrımı akılda tutmak yararlı. Birincisi, şişmeyi kabul etmek çoklu evreni kabul etmek demek değildir. Şişmenin Planck'ın doğruladığı öngörüleri ayrı, bazı modellerin sonsuz şişme sonucu ayrı bir basamaktadır. İkincisi, çoklu evren adı altında birbirinden bağımsız fikirler anılır; birinin eleştirisi ötekini otomatik olarak çürütmez. Tegmark'ın da vurguladığı gibi asıl soru 'paralel evrenler var mı?' değil, hangi kuramın onları hangi olasılıklarla öngördüğü ve bu öngörünün bizim evrenimizde sınanıp sınanamayacağıdır.",
+    "Bilim kurguya gelince: filmlerde ve dizilerde sık görülen 'başka bir evrene geçmek', 'paralel evrendeki ikizinle karşılaşmak' gibi sahnelerin bu dersteki modellerin hiçbirinde karşılığı yok. I. Düzey'deki bölgeler ışığın bile ulaşamayacağı kadar uzaktadır; baloncuklar arasında uzay genişlemeye devam eder; çok dünyaların dalları ise birbiriyle haberleşmez. Bu, kurguyu değersiz kılmaz; yalnızca neyin fikir, neyin bilim olduğunu ayırmayı gerektirir.",
+    "Ufukta ne var? Arka plan ışımasının kutuplanması üzerine daha duyarlı ölçümler, r'yi daha da küçük değerlere kadar sınayacak; bulunursa şişme kesinlik ölçeğinde bir basamak yukarı çıkar, bulunmazsa daha çok model elenir. d55'te şişmeye rakip başlangıç senaryolarını, sıçrayan evreni, ekpirotik modeli ve Penrose'un döngüsel kozmolojisini göreceksin. d53'te ise baloncukların farklı yasalarına kaynaklık ettiği öne sürülen sicim kuramı manzarasına bakacaksın. İstanbul'dan arka plan ışımasını gözle göremezsin; ama d8'de gördüğün gibi bulunduğun odadaki her santimetreküpte yaklaşık 411 foton olarak o eski ışık seni de sarıyor. Bu dersin bütün tartışması, o fotonların taşıdığı küçük farkları okuma çabasıdır."
+   ],
+   "akilda": "Şişmeyi kabul etmek çoklu evreni kabul etmek değildir. Gözlem: düzlük, tekdüze sıcaklık, galaksi tohumları. Güçlü kanıt: şişme. Kuram/hipotez: kütleçekim dalgaları, sonsuz şişme, çok dünyalar. Spekülasyon: kopyalar, baloncuk evrenler, matematiksel evrenler."
+  }
+ ],
+ "formuller": [
+  {
+   "ad": "Üstel genişleme",
+   "ifade": "a(t) = a₀ × e^(H × t)",
+   "aciklama": "a ölçek çarpanı (evrendeki uzaklıkların göreli büyüklüğü), H şişme sırasında yaklaşık sabit Hubble parametresi (bölü saniye), t zaman (s). Her 1/H süresinde uzaklıklar e ≈ 2,718 katına çıkar. Yalnız şişmenin yaklaşık sabit enerji yoğunluklu evresi için geçerli bir yaklaşım."
+  },
+  {
+   "ad": "e-katlama sayısı",
+   "ifade": "N = ln(a_son / a_baş)",
+   "aciklama": "N birimsiz; a_son / a_baş şişme boyunca uzaklıkların büyüme katı. 10²⁶ kat büyüme için N = 26 × ln 10 ≈ 60."
+  },
+  {
+   "ad": "Düzlükten sapma",
+   "ifade": "ΩK = 1 − Ω",
+   "aciklama": "Ω evrenin ortalama yoğunluğunun kritik yoğunluğa oranı (birimsiz, d17). Bugün |Ω − 1| < 0,01; düzlük sorununa göre en erken dönemde 10⁻⁶²'den küçük olmalıydı."
+  },
+  {
+   "ad": "Spektral indeks",
+   "ifade": "n_s = 1 ise bütün ölçekler eşit güçte",
+   "aciklama": "n_s birimsiz; tohum dalgalanmalarının ölçeğe göre ne kadar eğik dağıldığını gösterir. Planck 2018: 0,9649 ± 0,0042; ACT 2025 (birleşik): 0,974 ± 0,003."
+  },
+  {
+   "ad": "Tensör-skaler oranı",
+   "ifade": "r = (kütleçekim dalgası dalgalanmalarının gücü) / (yoğunluk dalgalanmalarının gücü)",
+   "aciklama": "r birimsiz. Şişmenin enerji ölçeğini gösterir. BICEP/Keck 2021: r < 0,036 (yüzde 95 güven); henüz ölçülmedi."
+  },
+  {
+   "ad": "Sigma uzaklığı",
+   "ifade": "sapma / belirsizlik",
+   "aciklama": "Bir ölçümün beklenen değerden kaç standart sapma uzakta olduğunu verir; örn. (1 − 0,9649) / 0,0042 ≈ 8,4. Parçacık fiziğinde keşif için 5 sigma aranır (d32)."
+  }
+ ],
+ "anahtar_sayilar": [
+  {
+   "deger": "≈ 2°",
+   "aciklama": "Işığın salındığı anda nedensel temas kurabilmiş bölgelerin gökteki açısal boyutu (ufuk sorunu)",
+   "kaynak_url": "https://en.wikipedia.org/wiki/Horizon_problem"
+  },
+  {
+   "deger": "|Ω − 1| < 10⁻⁶²; Dicke 1969",
+   "aciklama": "Düzlük sorunu: en erken dönemde gereken ince ayar",
+   "kaynak_url": "https://en.wikipedia.org/wiki/Flatness_problem"
+  },
+  {
+   "deger": "1979; Ocak 1980; 1981",
+   "aciklama": "Guth'un fikri, SLAC semineri ve Physical Review D makalesi",
+   "kaynak_url": "https://en.wikipedia.org/wiki/Alan_Guth"
+  },
+  {
+   "deger": "1981",
+   "aciklama": "Mukhanov ve Chibisov: kuantum dalgalanmaları galaksi tohumu olur",
+   "kaynak_url": "https://gruber.yale.edu/prize/2013-gruber-cosmology-prize"
+  },
+  {
+   "deger": "n_s = 0,9649 ± 0,0042",
+   "aciklama": "Planck 2018 spektral indeksi; evren yüzde 0,4 hassasiyetle düz",
+   "kaynak_url": "https://arxiv.org/abs/1807.06211"
+  },
+  {
+   "deger": "n_s = 0,974 ± 0,003",
+   "aciklama": "ACT DR6, Planck, mercek ve BAO ile birleşik (2025)",
+   "kaynak_url": "https://www.arxiv.org/pdf/2503.14452v2"
+  },
+  {
+   "deger": "r < 0,036",
+   "aciklama": "BICEP/Keck 2021 tensör-skaler oranı üst sınırı (yüzde 95 güven)",
+   "kaynak_url": "https://link.aps.org/accepted/10.1103/PhysRevLett.127.151301"
+  },
+  {
+   "deger": "17 Mart 2014; r = 0,2; Şubat 2015 r < 0,12",
+   "aciklama": "BICEP2 duyurusu ve Planck ile ortak analiz sonrası sınır",
+   "kaynak_url": "https://physicstoday.aip.org/news/last-years-evidence-for-primordial-gravitational-waves-negated"
+  },
+  {
+   "deger": "10^(10^29) m",
+   "aciklama": "Tegmark'a göre I. Düzey varsayımlarıyla en yakın özdeş kopyanın uzaklığı",
+   "kaynak_url": "https://ar5iv.labs.arxiv.org/html/astro-ph/0302131"
+  },
+  {
+   "deger": "1957; 1970'ler",
+   "aciklama": "Everett'in göreli durum çalışması; DeWitt'in 'çok dünyalar' adını vermesi",
+   "kaynak_url": "https://en.wikipedia.org/wiki/Many-worlds_interpretation"
+  },
+  {
+   "deger": "1973; 1987",
+   "aciklama": "Carter'ın antropik ilke terimi; Weinberg'in kozmolojik sabit için antropik akıl yürütmesi",
+   "kaynak_url": "https://en.wikipedia.org/wiki/Anthropic_principle"
+  },
+  {
+   "deger": "< 1,6",
+   "aciklama": "WMAP 7 yıllık verisinde görülebilir baloncuk çarpışmalarının ortalama sayısı için üst sınır (Feeney ve ark. 2011)",
+   "kaynak_url": "https://ar5iv.arxiv.org/html/1012.1995"
+  }
+ ],
+ "sozluk": [
+  {
+   "terim": "kozmik şişme",
+   "tanim": "Evrenin ilk anlarında çok kısa sürdüğü düşünülen, uzaklıkların katlanarak büyüdüğü üstel genişleme evresi; enflasyon da denir."
+  },
+  {
+   "terim": "ufuk sorunu",
+   "tanim": "Birbiriyle hiç temas edememiş uzak gök bölgelerinin arka plan ışımasında neden aynı sıcaklıkta göründüğü sorusu."
+  },
+  {
+   "terim": "düzlük sorunu",
+   "tanim": "Evrenin yoğunluğunun neden kritik yoğunluğa bu kadar yakın, yani uzayın neden bu kadar düz olduğu sorusu."
+  },
+  {
+   "terim": "manyetik tek kutup",
+   "tanim": "Yalnız kuzey ya da yalnız güney manyetik kutbu taşıyan, bazı birleşik kuramların öngördüğü ama hiç gözlenmemiş parçacık."
+  },
+  {
+   "terim": "şişiren alan",
+   "tanim": "Kozmik şişmeyi sürdürdüğü varsayılan, kimliği bilinmeyen kuantum alanı; İngilizce adı inflaton."
+  },
+  {
+   "terim": "e-katlama",
+   "tanim": "Üstel büyümede uzaklıkların e ≈ 2,718 katına çıktığı süre; şişmenin ne kadar sürdüğünü saymanın birimi."
+  },
+  {
+   "terim": "spektral indeks",
+   "tanim": "İlk yoğunluk dalgalanmalarının gücünün ölçekle nasıl değiştiğini gösteren sayı; 1 olması bütün ölçeklerin eşit güçte olduğu anlamına gelir."
+  },
+  {
+   "terim": "ilksel kütleçekim dalgaları",
+   "tanim": "Kozmik şişme sırasında uzay-zamanın kuantum dalgalanmalarından doğduğu öngörülen, henüz gözlenmemiş kütleçekim dalgaları."
+  },
+  {
+   "terim": "B kipi",
+   "tanim": "Arka plan ışımasının kutuplanmasında girdap gibi kıvrılan desen; ilksel kütleçekim dalgalarının ve galaktik tozun izini taşıyabilir."
+  },
+  {
+   "terim": "tensör-skaler oranı",
+   "tanim": "İlksel kütleçekim dalgalarının gücünün yoğunluk dalgalanmalarının gücüne oranı; r harfiyle gösterilir."
+  },
+  {
+   "terim": "sonsuz şişme",
+   "tanim": "Bazı şişme modellerinde şişmenin hiç bitmeden sürdüğü ve sürekli yeni baloncuk evrenler doğurduğu durum."
+  },
+  {
+   "terim": "cep evren",
+   "tanim": "Sonsuz şişme resminde şişmenin bittiği ve kendi Büyük Patlama'sını yaşayan ayrı bölge; baloncuk evren de denir."
+  },
+  {
+   "terim": "ölçü sorunu",
+   "tanim": "Sonsuz sayıda baloncuk evren ve gözlemci olduğunda olasılıkların tek ve tutarlı bir yolla nasıl hesaplanacağı sorunu."
+  },
+  {
+   "terim": "çoklu evren",
+   "tanim": "Gözlenebilir evrenimizin ötesinde ya da yanında başka evrenlerin bulunduğunu öne süren fikirlerin ortak adı."
+  },
+  {
+   "terim": "Hubble hacmi",
+   "tanim": "Bir gözlemcinin çevresinde, ışığın ulaşabileceği kabaca gözlenebilir evren büyüklüğündeki bölge."
+  },
+  {
+   "terim": "ince ayar",
+   "tanim": "Fizik sabitlerinin bazılarının biraz farklı olması durumunda yıldızların, kimyanın ya da yaşamın oluşamayacağı gözlemi."
+  },
+  {
+   "terim": "antropik ilke",
+   "tanim": "Gözlediğimiz evrenin, içinde gözlemcilerin var olabilmesine izin veren özellikleri taşımak zorunda olduğunu söyleyen ilke."
+  },
+  {
+   "terim": "yanlışlanabilirlik",
+   "tanim": "Bir kuramın hangi gözlemle çürütülebileceğinin söylenebilmesi; Popper'a göre bilimsel kuramın ölçütü."
+  }
+ ],
+ "defter_notu": [
+  "Kesinlik ölçeği (d50): gözlemle kesinleşmiş → güçlü kanıtlı ama açık sorulu → kuram/hipotez → spekülasyon. Ün kanıt değildir.",
+  "Ufuk sorunu (Rindler 1956): gökte ~2°'den uzak bölgeler temas etmemiş ama aynı sıcaklıkta. Düzlük (Dicke 1969): başta |Ω − 1| < 10⁻⁶².",
+  "Şişme: Starobinsky 1979, Guth 1979–1981 (Phys. Rev. D), Linde ve Albrecht–Steinhardt yeni şişme. 10²⁶ kat ≈ 60 e-katlama. Kavli 2014.",
+  "Galaksi tohumu = gerilmiş kuantum dalgalanması (Mukhanov–Chibisov 1981; Gruber 2013).",
+  "Planck 2018: düz (%0,4), n_s = 0,9649 ± 0,0042, Gauss ve adyabatik; φ² elendi. ACT 2025: n_s = 0,974 ± 0,003.",
+  "r < 0,036 (BICEP/Keck 2021). BICEP2 17.03.2014 r = 0,2 → toz; Şubat 2015 r < 0,12.",
+  "Sonsuz şişme: Steinhardt ve Vilenkin 1983, Linde 1986; ölçü sorunu. Model sonucu: kuram/hipotez; baloncukların varlığı: spekülasyon.",
+  "Tegmark 2003: I ufkun ötesi, II baloncuklar, III kuantum dalları, IV matematik. En yakın ikiz ~10^(10^29) m.",
+  "Everett 1957, DeWitt 1970'ler: çökme yok, dallar haberleşmez. Antropik ilke: Carter 1973; Weinberg 1987.",
+  "Ellis–Silk 2014 (sınanamaz) ↔ 33 fizikçi 2017 (sınandı). Baloncuk çarpışması araması 2011: < 1,6, bulunmadı."
+ ],
+ "sorular": [
+  {
+   "soru": "Ufuk sorunu nedir ve şişme onu nasıl çözer?",
+   "cevap": "Arka plan ışımasında birbirinden yaklaşık 2 dereceden uzak bölgeler ışık salındığında hiç temas edememişti, ama aynı sıcaklıktalar. Şişmeye göre bu bölgeler önce küçük, temas hâlinde ve dengelenmiş tek bir bölgeydi; sonra üstel genişleme onları birbirinden uzaklaştırdı."
+  },
+  {
+   "soru": "10²⁶ kat büyüme yaklaşık kaç e-katlamadır? Hesapla.",
+   "cevap": "N = ln(10²⁶) = 26 × ln 10 ≈ 26 × 2,303 ≈ 59,9; yaklaşık 60 e-katlama."
+  },
+  {
+   "soru": "Planck'ın ölçtüğü n_s = 0,9649 ± 0,0042, 1'den kaç sigma uzaktadır ve bu neden önemlidir?",
+   "cevap": "(1 − 0,9649) / 0,0042 ≈ 8,4 sigma. Şişme dalgalanmaların neredeyse ama tam olmayan biçimde ölçekten bağımsız olmasını öngörür; 1'den belirgin biçimde küçük bir değer bu öngörüyle uyumludur."
+  },
+  {
+   "soru": "BICEP2'nin 2014'teki B kipi işaretinin büyük kısmı neden geliyordu ve bu nasıl anlaşıldı?",
+   "cevap": "Samanyolu'ndaki hizalanmış toz tanelerinin kutuplanmış ışımasından. Planck'ın 353 gigahertzlik toz haritası BICEP2/Keck'in 150 gigahertzlik verileriyle karşılaştırılınca desenlerin güçlü biçimde ilişkili olduğu görüldü; Şubat 2015 ortak analizi r < 0,12 verdi."
+  },
+  {
+   "soru": "İlksel kütleçekim dalgalarının bulunamaması şişmeyi yanlışlar mı?",
+   "cevap": "Hayır. r'yi çok küçük öngören şişme modelleri de var. Ama en basit modeller (r ≈ 0,1) r < 0,036 sınırıyla elendi; eleştirmenler bunu şişmenin aşırı esnekliğine, savunucular modellerin veriyle daralmasına yorumlar."
+  },
+  {
+   "soru": "Şişmeyi kabul etmek çoklu evreni kabul etmeyi gerektirir mi?",
+   "cevap": "Hayır. Planck'ın doğruladığı öngörüler (düzlük, n_s, Gauss ve adyabatik dalgalanmalar) şişmeyi destekler; sonsuz şişme ise yalnız bazı modellerin sonucudur (kuram/hipotez), başka baloncukların varlığı da spekülasyondur."
+  },
+  {
+   "soru": "Tegmark'ın dört düzeyini kısaca say ve her birine bu dersteki kesinlik etiketini ver.",
+   "cevap": "I: ufkun ötesindeki bölgeler (uzayın sürmesi güçlü kanıtlı, kopyalar spekülasyon). II: şişme baloncukları (spekülasyon). III: kuantum dalları (yorum olarak kuram/hipotez). IV: bütün matematiksel yapılar (spekülasyon)."
+  },
+  {
+   "soru": "Çok dünyalar yorumunda başka bir dala geçmek ya da onunla haberleşmek mümkün müdür?",
+   "cevap": "Hayır. Yoruma göre dallar dekoheransla ayrılır ve aralarında bilgi geçmez; Wikipedia onları birbiriyle haberleşmeyen paralel evrenler diye anar. Yorum, bugünkü deneylerde öteki yorumlarla aynı sonucu verir."
+  },
+  {
+   "soru": "Zayıf antropik ilke nedir? Weinberg onu nasıl kullandı?",
+   "cevap": "Evrendeki yerimizin, gözlemci olarak varlığımızla uyumlu olmak zorunda olduğunu söyler. Weinberg 1987'de kozmolojik sabit çok büyük olsaydı yıldız ve yaşam oluşamayacağını, bu yüzden küçük olması gerektiğini savundu; 1998'de küçük ama sıfır olmayan bir değer ölçüldü."
+  },
+  {
+   "soru": "Ellis ve Silk'in çoklu evren eleştirisi neydi? Karşı görüş ne diyor?",
+   "cevap": "Ellis ve Silk (Nature, 2014): çoklu evren gözlenemeyen evrenler varsayar ve her gözlemi açıklayabilir, bu yüzden sınanamaz; bilimin yanlışlanabilirlik ölçütü korunmalı. Tegmark ise kuram evrenler topluluğu ve olasılık dağılımı öngörüyorsa sınanabileceğini savunur; 33 fizikçinin 2017 mektubu da şişmenin defalarca sınandığını söyler."
+  },
+  {
+   "soru": "Baloncuk çarpışması araması neyi gösterdi?",
+   "cevap": "Feeney ve arkadaşları 2011'de WMAP'in yedi yıllık verisinde başka baloncuklarla çarpışma izi aradı; veriler çarpışma eklemeyi gerektirmedi ve görülebilir çarpışma sayısı için yaklaşık 1,6'lık bir üst sınır çıktı. Yani hiçbir şey bulunmadı, ama bazı çoklu evren modellerinin ilke olarak sınanabileceği görüldü."
+  },
+  {
+   "soru": "Tegmark'ın 10^(10^29) metresini yazmak için her rakama 1 mm ayırsan şerit kaç ışık yılı uzun olur?",
+   "cevap": "10²⁹ rakam × 1 mm = 10²⁶ m; 10²⁶ / 9,46 × 10¹⁵ ≈ 1,1 × 10¹⁰ ışık yılı, yani yaklaşık 11 milyar ışık yılı."
+  }
+ ],
+ "kaynaklar": [
+  {
+   "ad": "Planck Collaboration, Planck 2018 results X. Constraints on inflation, arXiv:1807.06211",
+   "url": "https://arxiv.org/abs/1807.06211"
+  },
+  {
+   "ad": "BICEP/Keck Collaboration, Improved Constraints on Primordial Gravitational Waves (Phys. Rev. Lett. 127, 151301, 2021)",
+   "url": "https://link.aps.org/accepted/10.1103/PhysRevLett.127.151301"
+  },
+  {
+   "ad": "Physics Today, Last year's evidence for primordial gravitational waves negated (2015)",
+   "url": "https://physicstoday.aip.org/news/last-years-evidence-for-primordial-gravitational-waves-negated"
+  },
+  {
+   "ad": "ACT DR6: Power Spectra, Likelihoods and ΛCDM Parameters, arXiv:2503.14452",
+   "url": "https://www.arxiv.org/pdf/2503.14452v2"
+  },
+  {
+   "ad": "Wikipedia, Cosmic inflation",
+   "url": "https://en.wikipedia.org/wiki/Cosmic_inflation"
+  },
+  {
+   "ad": "Wikipedia, Horizon problem",
+   "url": "https://en.wikipedia.org/wiki/Horizon_problem"
+  },
+  {
+   "ad": "Wikipedia, Flatness problem",
+   "url": "https://en.wikipedia.org/wiki/Flatness_problem"
+  },
+  {
+   "ad": "Wikipedia, Alan Guth",
+   "url": "https://en.wikipedia.org/wiki/Alan_Guth"
+  },
+  {
+   "ad": "Wikipedia, Alexei Starobinsky",
+   "url": "https://en.wikipedia.org/wiki/Alexei_Starobinsky"
+  },
+  {
+   "ad": "Gruber Foundation, 2013 Gruber Cosmology Prize (Mukhanov, Starobinsky)",
+   "url": "https://gruber.yale.edu/prize/2013-gruber-cosmology-prize"
+  },
+  {
+   "ad": "Wikipedia, Eternal inflation",
+   "url": "https://en.wikipedia.org/wiki/Eternal_inflation"
+  },
+  {
+   "ad": "A. Vilenkin, Probabilities in the landscape, arXiv:hep-th/0602264",
+   "url": "https://ar5iv.labs.arxiv.org/html/hep-th/0602264"
+  },
+  {
+   "ad": "M. Tegmark, Parallel Universes, arXiv:astro-ph/0302131",
+   "url": "https://ar5iv.labs.arxiv.org/html/astro-ph/0302131"
+  },
+  {
+   "ad": "Wikipedia, Many-worlds interpretation",
+   "url": "https://en.wikipedia.org/wiki/Many-worlds_interpretation"
+  },
+  {
+   "ad": "Wikipedia, Anthropic principle",
+   "url": "https://en.wikipedia.org/wiki/Anthropic_principle"
+  },
+  {
+   "ad": "G. Ellis, J. Silk, Scientific method: Defend the integrity of physics, Nature 516 (2014)",
+   "url": "https://www.nature.com/news/scientific-method-defend-the-integrity-of-physics-1.16535"
+  },
+  {
+   "ad": "Guth ve ark. (33 fizikçi), POP goes the universe, Scientific American 317(1), Temmuz 2017 (CaltechAUTHORS)",
+   "url": "https://authors.library.caltech.edu/records/f8hgg-sav44"
+  },
+  {
+   "ad": "Interesting Engineering, 33 top physicists including Hawking defend theory of cosmic inflation",
+   "url": "https://interestingengineering.com/33-top-physicists-including-hawking-defends-theory-cosmic-inflation/"
+  },
+  {
+   "ad": "Feeney, Johnson, Mortlock, Peiris, First Observational Tests of Eternal Inflation, arXiv:1012.1995",
+   "url": "https://ar5iv.arxiv.org/html/1012.1995"
+  },
+  {
+   "ad": "Wikipedia, Chronology of the universe (şişme süresi ve büyüme katı, d8 ile ortak)",
+   "url": "https://en.wikipedia.org/wiki/Chronology_of_the_universe"
+  }
+ ]
+}

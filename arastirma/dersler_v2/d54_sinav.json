@@ -1,0 +1,58 @@
+[
+  {
+    "id": "d54-1",
+    "soru": "BICEP2 ekibinin 17 Mart 2014'te ilksel kütleçekim dalgalarına bağladığı B kipi işaretinin büyük kısmının aslında nereden geldiği anlaşıldı?",
+    "secenekler": [
+      "Teleskobun kendi elektronik gürültüsünden",
+      "Samanyolu'ndaki hizalanmış toz tanelerinin kutuplanmış ışımasından",
+      "Dünya atmosferindeki su buharından",
+      "Gerçekten ilksel kütleçekim dalgalarından; sonuç daha sonra doğrulandı"
+    ],
+    "dogru": 1,
+    "aciklama": "Planck'ın tozun baskın olduğu 353 gigahertzlik haritası BICEP2/Keck'in 150 gigahertzlik verileriyle güçlü biçimde ilişkili çıktı. Şubat 2015 ortak analizi sağlam bir kanıt bulamadı ve r < 0,12 sınırını verdi; bugünkü sınır r < 0,036.",
+    "ders": "d54",
+    "bolum": 8
+  },
+  {
+    "id": "d54-2",
+    "soru": "Planck 2018'in ölçtüğü spektral indeks n_s = 0,9649 ± 0,0042 için hangisi doğrudur?",
+    "secenekler": [
+      "Değer tam 1'dir; bütün ölçekler eşit güçtedir",
+      "Değer 1'den yaklaşık 8 sigma küçüktür; bu şişmenin genel beklentisiyle uyumludur",
+      "Değer şişmeyi kesin olarak yanlışlamıştır",
+      "Değer yalnızca galaktik tozdan kaynaklanır"
+    ],
+    "dogru": 1,
+    "aciklama": "(1 − 0,9649) / 0,0042 ≈ 8,4 sigma. En basit şişme modelleri n_s'nin 0,92 ile 0,98 arasında, yani 1'den biraz küçük olmasını öngörür. ACT'nin 2025 birleşik değeri 0,974 ± 0,003 de 1'in altındadır.",
+    "ders": "d54",
+    "bolum": 6
+  },
+  {
+    "id": "d54-3",
+    "soru": "Derse göre kozmik şişme ile çoklu evren arasındaki ilişki hangisidir?",
+    "secenekler": [
+      "Şişmeyi kabul eden herkes çoklu evreni de kabul etmek zorundadır",
+      "Planck şişmeyi doğrulayınca başka baloncuk evrenlerin varlığı da gözlemle kesinleşti",
+      "Şişmenin doğrulanan öngörüleri ayrı bir basamaktır; sonsuz şişme bazı modellerin sonucudur (kuram/hipotez), başka baloncukların varlığı ise spekülasyondur",
+      "Çoklu evren gözlemle kesinleşmiştir, şişme ise spekülasyondur"
+    ],
+    "dogru": 2,
+    "aciklama": "Düzlük, n_s ve Gauss dağılımlı dalgalanmalar şişmeyi destekler (güçlü kanıtlı ama açık sorulu). Sonsuz şişme yalnız bazı modellerden çıkar ve hiçbir baloncuk gözlenmedi; 2011 baloncuk çarpışması araması da bir şey bulmadı.",
+    "ders": "d54",
+    "bolum": 14
+  },
+  {
+    "id": "d54-4",
+    "soru": "Everett'in çok dünyalar yorumuna göre hangisi doğrudur?",
+    "secenekler": [
+      "Dalga fonksiyonu her ölçümde çöker ve tek bir dünya kalır",
+      "İnsan bilinci hangi dalın gerçekleşeceğini seçer",
+      "Dalga fonksiyonu hiç çökmez; dekoherans sonuçları birbirleriyle haberleşmeyen dallara ayırır",
+      "Dallar arasında yolculuk yapılabildiği deneyle gösterilmiştir"
+    ],
+    "dogru": 2,
+    "aciklama": "Everett (1957) evrenin dalga fonksiyonunu gerçek sayar ve çökme varsaymaz; 'çok dünyalar' adını 1970'lerde DeWitt verdi. Dallar arasında bilgi geçmez ve yorum bugünkü deneylerde öteki yorumlarla aynı sonuçları verir; kesinlik etiketi kuram/hipotez.",
+    "ders": "d54",
+    "bolum": 11
+  }
+]

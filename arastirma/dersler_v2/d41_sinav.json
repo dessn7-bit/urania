@@ -1,0 +1,58 @@
+[
+  {
+    "id": "d41-1",
+    "soru": "New Horizons, Plüton'daki Sputnik Planitia ovasında tek bir krater bile göremedi. Bu en iyi nasıl açıklanır?",
+    "secenekler": [
+      "Plüton'a hiç gök taşı çarpmadığı için",
+      "Ovanın azot buzu yavaş bir konveksiyonla sürekli yenilendiği ve yüzeyin çok genç olduğu için",
+      "New Horizons ovayı çok uzaktan, kraterleri seçemeyecek bir çözünürlükle görüntülediği için",
+      "Kraterler kalın bir atmosferin altında gizlendiği için"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre ovanın 20–30 km'lik çokgen hücreleri, yılda yaklaşık 2 cm hızla dönen azot buzu konveksiyonudur. Yüzey bu yüzden genç kalır: tahminler 10 milyon yıldan genç, yaklaşık 1 milyon yıl, en yenisi yaklaşık 180.000 yıl.",
+    "ders": "d41",
+    "bolum": 5
+  },
+  {
+    "id": "d41-2",
+    "soru": "Charon'un yörüngesinden (a = 19.596 km, P = 6,3872 gün) Newton'un formülüyle yaklaşık 1,46 × 10²² kg bulunur. Bu sayı neyin kütlesidir?",
+    "secenekler": [
+      "Yalnızca Plüton'un",
+      "Yalnızca Charon'un",
+      "Plüton ile Charon'un toplamının",
+      "Plüton'un beş uydusunun toplamının"
+    ],
+    "dogru": 2,
+    "aciklama": "Formül birbirini dolanan iki cismin toplam kütlesini verir. NASA'nın değerleri 1,303 × 10²² (Plüton) ve 0,159 × 10²² kg (Charon) toplanınca aynı sonuç çıkar. Charon ağır olduğu için ortak kütle merkezi Plüton'un dışındadır.",
+    "ders": "d41",
+    "bolum": 7
+  },
+  {
+    "id": "d41-3",
+    "soru": "Ceres'teki Occator kraterinin parlak lekeleri (faküla) için Dawn'ın bulguları neyi gösterir?",
+    "secenekler": [
+      "Taze su buzu kaplı, yeni oluşmuş kraterlerdir",
+      "Yüzeye yükselen tuzlu sıvının bıraktığı, çoğunlukla sodyum karbonattan oluşan tuz birikintileridir",
+      "Güneş ışığını yansıtan metal parçalarıdır",
+      "Ceres'e düşen buzlu bir kuyruklu yıldızın kalıntısıdır"
+    ],
+    "dogru": 1,
+    "aciklama": "Haziran 2016 çalışmasına göre parlak madde çoğunlukla sodyum karbonattır. Cerealia'daki tuzlar hâlâ su taşır, yani yakın zamanda yüzeye çıkmıştır. Çekim ölçümleri yaklaşık 40 km derinde geniş bir salamura rezervuarı gösterdi.",
+    "ders": "d41",
+    "bolum": 10
+  },
+  {
+    "id": "d41-4",
+    "soru": "Rubin Gözlemevi'nin bulduğu 2026 ED138'in çapı neden 600 ile 1.500 km gibi geniş bir aralıkta veriliyor?",
+    "secenekler": [
+      "Cisim düzensiz biçimli olduğu için en kısa ve en uzun ekseni verilmiş",
+      "Uzaklığı bilinmediği için",
+      "Yüzeyinin ışığı ne kadar yansıttığı (albedo) bilinmediği için; aynı parlaklık albedoya göre farklı çaplara karşılık gelir",
+      "Rubin'in görüntüleri bulanık olduğu için"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre aynı parlaklıkta çap albedonun kareköküyle ters orantılıdır. 2,5 katlık çap aralığı 6,25 katlık bir albedo aralığına karşılık gelir. Çapı kızılötesi gözlemler daraltacak.",
+    "ders": "d41",
+    "bolum": 14
+  }
+]

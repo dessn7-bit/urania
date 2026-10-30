@@ -1,0 +1,58 @@
+[
+  {
+    "id": "d47-1",
+    "soru": "Kapteyn'in 1922 modeli Güneş'i galaksinin merkezine yaklaşık 2.000 ışık yılı uzağa koydu. Bu yanılgının asıl nedeni neydi?",
+    "secenekler": [
+      "Yıldızlararası tozun ışığı söndürdüğü bilinmiyordu; düzlem boyunca her yönde görüş aynı uzaklıkta kesildiği için Güneş ortada sanıldı",
+      "Kapteyn yalnız güney yarımküreden gözlem yapabiliyordu",
+      "O yıllarda teleskoplar yıldızları ayırt edemiyordu",
+      "Kapteyn yıldızların hareketlerini hesaba katmayı unuttu"
+    ],
+    "dogru": 0,
+    "aciklama": "Derse göre model düzlemden uzak yönlerde çalıştı ama düzlemin içinde, yıldızlararası sönükleşme bilinmediği için çöktü. Trumpler kızarmanın sanılandan çok büyük olduğunu gösterince galaksi ~100.000 ışık yılına büyüdü, Güneş merkezden ~30.000 ışık yılı uzağa taşındı.",
+    "ders": "d47",
+    "bolum": 1
+  },
+  {
+    "id": "d47-2",
+    "soru": "Kızılötesi taramalar Kalkan–Erboğa kolunda beklenenden yaklaşık yüzde 30 fazla kırmızı dev bulurken Yay–Karina kolunda fazlalık bulmadı. Bundan ne sonuç çıkarıldı?",
+    "secenekler": [
+      "Samanyolu'nun hiç sarmal kolu yoktur",
+      "Yay–Karina kolu yakın zamanda yok olmuştur",
+      "Yaşlı yıldızlarda yalnız iki ana kol (Kahraman ve Kalkan–Erboğa) belirgindir; gaz ve genç yıldızlar ise dört kola uyar",
+      "Kırmızı devler yalnız galaksinin merkezinde bulunur"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre yaşlı yıldızlarda iki, gazda ve genç yıldızlarda dört kol görünüyor; Aralık 2013'te genç yıldızların dört kollu tabloya uyduğu bulundu. Bu farkın nedeni belirsiz.",
+    "ders": "d47",
+    "bolum": 7
+  },
+  {
+    "id": "d47-3",
+    "soru": "Jiao ve arkadaşları (2023) Gaia DR3 ile Samanyolu'nun dönme hızının 19,5–26,5 kiloparsek arasında yaklaşık 30 km/s düştüğünü buldu. Bu sonucun anlamı nedir?",
+    "secenekler": [
+      "Samanyolu'nda hiç karanlık madde olmadığı kesinleşti",
+      "Bu yarıçaplar arasına neredeyse yeni kütle eklenmiyor; toplam kütle yaklaşık 2,06×10¹¹ M☉ çıkıyor, önceki bazı tahminlerden 7 kattan fazla düşük",
+      "Galaksinin dış kısmı ters yönde dönüyor",
+      "Güneş'in yörünge hızı 30 km/s'ye düştü"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre bu bir Kepler düşüşüdür ve toplam kütle 2,06×10¹¹ M☉ (üst sınır 5,4×10¹¹) bulundu; 2019'daki bir çalışma 1,54×10¹² vermişti. 2,06×10¹¹ bile yıldız kütlesinin üç dört katı olduğu için karanlık madde ortadan kalkmaz; konu tartışmalıdır.",
+    "ders": "d47",
+    "bolum": 10
+  },
+  {
+    "id": "d47-4",
+    "soru": "Samanyolu kuşağını İstanbul çevresinden görmek için hangisi derste verilen koşullardan biri değildir?",
+    "secenekler": [
+      "Gözlerin yaklaşık 30 dakika karanlığa alışması",
+      "Bortle 4 ya da daha karanlık bir gök",
+      "Yeniay çevresindeki yaklaşık beş günlük pencere",
+      "Dolunay gecesini seçmek, çünkü Ay ışığı kuşağı belirginleştirir"
+    ],
+    "dogru": 3,
+    "aciklama": "Derse göre Ay ışığı ve kent ışığı düşük yüzey parlaklıklı kuşağı siler; gök yay saniyesi karesi başına ~20,2 kadirden karanlık olmalı. Ayrıca galaksi merkezi İstanbul'dan en fazla ~20° yükseldiği için açık bir güney ufku gerekir.",
+    "ders": "d47",
+    "bolum": 15
+  }
+]

@@ -1,0 +1,550 @@
+{
+  "id": "d46",
+  "unite": "yildiz_olum",
+  "yeni": true,
+  "baslik": "Süper Kütleli Kara Delikler: Galaksilerin Kalbindeki Devler",
+  "ozet": "Galaksilerin merkezindeki milyonlarca ile milyarlarca Güneş kütleli kara deliklerin nasıl tartıldığını, galaksileriyle neden bu kadar sıkı bağlı olduklarını, evrenin ilk milyar yılında nasıl bu kadar büyüyebildiklerini, yıldız yutmalarını, birbirleriyle birleşmelerini ve en büyüklerini öğreneceksin. d16'daki Sgr A* ve EHT anlatısının üstüne kuruludur; her sayının nasıl ölçüldüğünü ve ne kadar güvenilir olduğunu birlikte izleyeceğiz.",
+  "on_bilgi": [
+    "d3",
+    "d6",
+    "d16"
+  ],
+  "bolumler": [
+    {
+      "baslik": "Her büyük galaksinin kalbinde bir dev",
+      "paragraflar": [
+        "d16'da galaksimizin merkezindeki Sgr A*'ı, çevresinde dönen S2 yıldızını ve Olay Ufku Teleskobu'nun (EHT) iki kara delik görüntüsünü gördün. Bu ders o iki örneğin arkasındaki büyük resme bakıyor: süper kütleli kara deliklerin genel olarak nasıl tartıldığı, galaksileriyle ilişkisi, nasıl büyüdükleri, yıldızları nasıl parçaladıkları, birbirleriyle nasıl birleştikleri ve en büyüklerinin ne kadar büyük olduğu. Wikipedia'ya göre süper kütleli kara deliklerin kütlesi yüz binlerce ile milyarlarca Güneş kütlesi arasındadır; klasik tanımda alt sınır 10⁵ M☉ alınır. Aynı kaynak neredeyse her büyük galaksinin merkezinde böyle bir kara delik bulunduğunu yazar.",
+        "Fikir kuasarlarla doğdu. d7'de gördüğün gibi Maarten Schmidt 1963'te 3C 273'ün tayfındaki hidrojen çizgilerinin kırmızıya kaydığını fark etti; kuasarların öyküsü d48'de. 1964'te Edwin Salpeter ve Yakov Zeldoviç, kuasarların enerjisini kütleli ve sıkışık bir cisme düşen maddenin açıklayabileceğini önerdi ve bunun için yaklaşık 10⁸ Güneş kütlesi gerektiğini hesapladı. 1969'da Donald Lynden-Bell, düşen gazın düz bir yığılma diski oluşturacağını ve yakın galaksilerin sessiz çekirdeklerinin sönmüş, yaşlı kuasarlar olabileceğini yazdı. 1971'de Lynden-Bell ile Martin Rees, Samanyolu'nun merkezinde de dev bir kara delik olduğunu öne sürdü. Üç yıl sonra Balick ve Brown merkezdeki radyo kaynağı Sgr A*'ı buldu (d16).",
+        "Dürüst bir uyarıyla başlayalım. Wikipedia'ya göre bir dev kara deliğin varlığına kuşku bırakmayan dinamik kanıt yalnızca bir avuç galaksi için vardır; aralarında Samanyolu, Andromeda (M31), onun uydusu M32 ve NGC 4395 sayılır. Başka galaksilerdeki kütlelerin çoğu dolaylı yollardan, birazdan göreceğin ilişkiler ve ölçeklemelerden gelir. “Her büyük galaksinin bir dev kara deliği var” sözü güçlü bir çıkarımdır, ama tek tek ölçülmüş bir gerçek değildir. Bu derste her sayının yanında, onun hangi yöntemle bulunduğunu ve ne kadar belirsiz olduğunu da konuşacağız. Kara deliklerde hangi sayının sağlam, hangisinin tahmin olduğunu ayırmak, konunun yarısıdır. Dolaylı yöntemlerin gücü de az değil: Wikipedia'ya göre Avrupa'nın LOFAR radyo teleskop ağı 2021'de yaklaşık 25.000 etkin süper kütleli kara deliğin radyo ışığını tek bir haritada topladı. Yani tek tek tartılmış devler az, ama varlıklarını ele veren işaretler çok."
+      ],
+      "akilda": "Süper kütleli kara delikler 10⁵ ile 10¹⁰ M☉ arasındadır ve büyük galaksilerin çoğunun merkezinde olduğu düşünülür. Fikir 1964'te kuasarları açıklamak için doğdu; ama kuşkusuz dinamik kanıt yalnızca birkaç galaksi için vardır."
+    },
+    {
+      "baslik": "Bir kara deliği tartmanın yolları: yıldızlar, gaz ve maserler",
+      "paragraflar": [
+        "Işık yaymayan bir şeyi tartmanın tek yolu, çevresindekilerin onun çevresinde ne hızla döndüğüne bakmaktır. d3'te gördüğün Newton yasası, dairesel bir yörüngede hız ile uzaklığın merkezdeki kütleyi verdiğini söyler: M = v² × r / G. Hızı, tayf çizgilerinin Doppler kaymasından ölçeriz (d2). Samanyolu'nda tek tek yıldızların yörüngesi izlenebilir; uzak galaksilerde ise tek yıldız seçilemez. Orada galaksinin merkezindeki milyonlarca yıldızın hızlarının ne kadar saçıldığına bakılır; buna hız dağılımı denir. Hızlar ne kadar saçılmışsa tayf çizgileri o kadar genişler ve merkezdeki kütle o kadar büyüktür.",
+        "İkinci yol gazdır. Wikipedia'ya göre M87'nin merkezinde büyük bir kütle bulunduğuna dair ilk dinamik kanıt 1978'de geldi ve kütle başta 5 milyar Güneş kütlesi tahmin edildi. 1994'te Hubble Uzay Teleskobu merkezdeki dönen gazın hızlarını ölçtü ve 0,25 yay saniyelik bir bölgeye (2,4 ± 0,7) milyar Güneş kütlesi sığdığını buldu. d16'da gördüğün gibi EHT 2019'da 6,5 milyar verdi. Aynı kara delik için yöntemden yönteme iki üç kat değişen sayılar, kara delik kütlelerinin neden “yaklaşık” diye okunması gerektiğini gösterir.",
+        "Üçüncü yol en zarif olanıdır: maser. Lazerin mikrodalga karşılığı olan maser, bazı gaz bulutlarındaki su moleküllerinin belirli bir dalga boyundaki ışığı kendiliğinden güçlendirerek çok parlak, çok keskin bir sinyal yaymasıdır. Wikipedia'ya göre Miyoshi ve arkadaşları 1995'te NGC 4258 (M106) galaksisinin merkezindeki su maserlerini kullanarak 0,13 parseklik bir bölgede 3,6 × 10⁷ Güneş kütlesi buldu. Maserler hafifçe bükülmüş, ince ve neredeyse kenardan gördüğümüz bir diskte dizilidir ve hızları Kepler yasasına tam uyar. Bu kadar küçük bir hacimde Güneş kütleli kara deliklerden oluşan bir küme olsaydı, cisimler çarpışır ve küme uzun süre dayanamazdı; bu yüzden NGC 4258 dev kara deliklerin en güçlü kanıtlarından biridir. Bugünkü değer (3,9 ± 0,1) × 10⁷ Güneş kütlesidir.",
+        "Maser diskinin bir armağanı daha oldu. Diskin gökteki boyu ile gerçek boyu karşılaştırılarak galaksinin uzaklığı da geometriyle ölçüldü. Wikipedia'ya göre bu, bir galaksiye yapılan ilk doğrudan uzaklık ölçümüydü ve d17'de gördüğün kozmik uzaklık merdiveni için bağımsız bir çapa oldu. Yani bir kara deliği tartarken evrenin cetvelini de ayarlamış olduk."
+      ],
+      "ornek": {
+        "baslik": "Örnek: NGC 4258'in maser diski ne hızla dönmeli?",
+        "metin": "Dairesel yörüngede v = √(G × M / r). 1. adım: M = 3,6 × 10⁷ M☉ × 1,988 × 10³⁰ kg ≈ 7,16 × 10³⁷ kg. 2. adım: r = 0,13 parsek × 3,086 × 10¹⁶ m ≈ 4,01 × 10¹⁵ m. 3. adım: G × M = 6,674 × 10⁻¹¹ × 7,16 × 10³⁷ ≈ 4,78 × 10²⁷. Bunu r'ye böl: 4,78 × 10²⁷ ÷ 4,01 × 10¹⁵ ≈ 1,19 × 10¹². 4. adım: Karekök ≈ 1,09 × 10⁶ m/s, yani saniyede yaklaşık 1.090 km. Sonuç: yayımlanan kütle ve yarıçap doğruysa, diskin bu kenarındaki gaz saniyede yaklaşık 1.100 km hızla dönmelidir. Gerçekte işlem tersinden yapılır: hız tayftan, yarıçap gökteki konumdan ölçülür ve kütle bu ikisinden hesaplanır."
+      },
+      "akilda": "Dev kara delik, çevresinde dönen yıldızların, gazın ya da maserlerin hızından tartılır: M = v² × r / G. NGC 4258'in maser diski 0,13 parsek içinde yaklaşık 4 × 10⁷ M☉ gösterdi ve galaksinin uzaklığını da geometriyle verdi."
+    },
+    {
+      "baslik": "Yankı haritalama: ışığın gecikmesiyle tartmak",
+      "paragraflar": [
+        "Uzak bir kuasarda ne tek yıldız ne de maser seçilebilir. Orada zamanı kullanırız. d7'de gördüğün aktif galaksi çekirdeklerinde kara deliği besleyen yığılma diskinin parlaklığı sürekli değişir. Diskin biraz dışında, hızla dönen gaz bulutları vardır; bu bulutlar diskin ışığıyla aydınlanıp hidrojen çizgileri yayar. Gaz çok hızlı döndüğü için Doppler etkisi çizgileri genişletir; bu bölgeye geniş çizgi bölgesi denir (ayrıntısı d48'de). Disk birden parlarsa bulutlar bunu ancak ışık onlara ulaşınca, biraz gecikmeyle yansıtır. Gecikmeyi ışık hızıyla çarparsan bulutların uzaklığını bulursun. Bu yönteme yankı haritalama denir: tıpkı bir vadide bağırıp yankının ne kadar sonra geldiğinden karşı yamacın uzaklığını kestirmek gibi.",
+        "Uzaklığı bulduktan sonra çizginin genişliği bize gazın hızını verir. İkisi birleşince kütle çıkar: M = f × c × τ × V² / G. Burada τ gecikme, c × τ bulutların uzaklığı, V çizgi genişliğinden ölçülen hız, f ise bulutların nasıl dizildiğini bilmediğimiz için eklenen bir düzeltme çarpanıdır. Yöntemin zayıf yanı bu f'dir: bulutlar düz bir disk mi, yoksa her yöne dağılmış bir küme mi, bilinmez. Merritt ve Ferrarese 2000'de, o günkü yankı kütlelerinin başka yöntemlere göre kabaca 20 kat düşük kaldığını yazmıştı; bugün f, kütlesi başka yolla bilinen galaksilere göre ayarlanır.",
+        "Yöntemin vitrin galaksisi NGC 5548'dir. 2025'te yayımlanan bir çalışma onu uzun süreli yankı izlemesiyle en iyi gözlenmiş aktif çekirdek olarak anar; tayfsal izleme 1989'da başladı. 2023 kampanyasında hidrojenin Hβ çizgisi diskten 15,6 gün sonra tepki verdi (belirsizlik +2,6 ile −2,9 gün). Aynı galaksi için 2015–2021 arasındaki gecikmeler 7 ile 10 gün arasındaydı; yani bölge yıldan yıla büyüyüp küçülüyor. Ekip dört farklı çizgi genişliği ve f seçimini ortalayarak kütleyi (2,58 ± 1,12) × 10⁸ Güneş kütlesi buldu. Hata payının neredeyse yarı yarıya olması, yöntemin bugünkü kesinliğini dürüstçe gösterir. NGC 5548 bize çok uzak değildir; kırmızıya kayması yalnızca 0,017'dir. Bu kadar yakın bir galakside bile kara deliğin kütlesini ancak yaklaşık yüzde 40'lık bir hata payıyla bilmek, uzak kuasarlarda kütlelerin neden çok daha belirsiz olduğunu anlatır."
+      ],
+      "ornek": {
+        "baslik": "Örnek: NGC 5548'i yankısından tart",
+        "metin": "1. adım (uzaklık): τ = 15,6 gün = 15,6 × 86.400 s ≈ 1,35 × 10⁶ s. c × τ ≈ 3 × 10⁸ × 1,35 × 10⁶ ≈ 4,04 × 10¹⁴ m, yani yaklaşık 2.700 AB ya da 15,6 ışık günü. 2. adım (hız): Ortalama tayfta çizginin genişliği σ = 4.440 km/s = 4,44 × 10⁶ m/s; V² ≈ 1,97 × 10¹³. 3. adım: c × τ × V² / G ≈ 4,04 × 10¹⁴ × 1,97 × 10¹³ ÷ 6,674 × 10⁻¹¹ ≈ 1,19 × 10³⁸ kg. 4. adım: Bu ölçü için makalenin f değeri 5,6: 5,6 × 1,19 × 10³⁸ ≈ 6,7 × 10³⁸ kg ÷ 1,988 × 10³⁰ ≈ 3,4 × 10⁸ M☉. Sınama: tam genişlik (9.654 km/s) ve f = 1,3 ile ≈ 3,7 × 10⁸ M☉ çıkar; makale bu seçim için 3,68 × 10⁸ verir. Sonuç: tek bir gecikme ve bir çizgi genişliği, kara deliği birkaç yüz milyon Güneş kütlesi mertebesinde tartar; hangi f'nin seçildiği sonucu kolayca yüzde 30–40 değiştirir."
+      },
+      "akilda": "Yankı haritalama, gaz bulutlarının diskteki parlamaya ne kadar gecikmeyle tepki verdiğinden uzaklıklarını, çizgi genişliğinden hızlarını bulup kütleyi hesaplar. NGC 5548'de gecikme 15,6 gün, kütle (2,6 ± 1,1) × 10⁸ M☉; belirsizliğin büyük kısmı geometri çarpanı f'den gelir."
+    },
+    {
+      "baslik": "Yay A*'a daha yakından: S2'den S301'e",
+      "paragraflar": [
+        "d16'da S2 yıldızının yaklaşık 16 yılda bir Sgr A*'ın çevresini dolandığını, en yakın noktasında 120 AB'ye kadar sokulduğunu ve bu yörüngeden kütlenin yaklaşık 4,3 milyon Güneş kütlesi bulunduğunu görmüştün. Ağustos 2026'da ESO yeni bir rekortmen duyurdu. Şili'deki Çok Büyük Teleskop İnterferometresi (VLTI), dört adet 8 metrelik teleskobun ışığını birleştirerek tek bir 8 metrelik teleskobun 15 katı ayırma gücüne ulaşır; GRAVITY aleti yenilendikten sonra GRAVITY+ adını aldı. Bu düzenek, S301 adlı bir yıldızın kara deliğin çevresini yalnızca 8,7 yılda dolandığını gösterdi.",
+        "ESO'ya göre S301 en yakın noktasında kara deliğe 1,78 milyar km, yani Dünya–Güneş uzaklığının yaklaşık 12 katı kadar yaklaşır; bu, Güneş–Satürn uzaklığından yalnızca yüzde 20 kadar fazladır. O noktada saniyede yaklaşık 25.000 km hızla, ışık hızının yüzde 8'inden fazlasıyla hareket eder ve Samanyolu'nda bilinen en hızlı yıldızdır. Yıldız 2017'den beri izleniyor; son en yakın geçişi 2023 başındaydı. Çok sönüktür: ESO onu Betelgeuse'den yaklaşık iki milyar kat sönük diye tarif eder. Bu sayıları Haberler sekmesindeki S301 haberinde de bulabilirsin.",
+        "S301'in asıl önemi kara deliğin dönmesiyle ilgili. Dönen bir kara delik çevresindeki uzay-zamanı da kendisiyle birlikte sürükler; buna çerçeve sürüklenmesi ya da Lense–Thirring etkisi denir. Etki, yakın yörüngelerin yönünü yavaş yavaş çevirir ve kara delik ne kadar hızlı dönerse, yörünge ne kadar yakınsa o kadar güçlüdür. ESO'ya göre ekip bu küçük kaymayı ölçebilmek için S301'in en az iki tam turunu izlemek zorunda; bir sonraki en yakın geçiş 2031'de ve dönme ölçümü yaklaşık on yıl içinde umuluyor. Yani bugün bir dönme değeri yok; yalnızca onu ölçebilecek bir yıldız var. d16'da S2'nin yörüngesindeki 12 yay dakikalık dönüş Einstein'ın kuramını sınamıştı; S301 bir adım öteye, kara deliğin kendi dönüşüne uzanıyor.",
+        "Sgr A*'ın çevresinde yalnızca yıldızlar dönmez. Wikipedia'ya göre kara deliğin hemen çevresinde ışık hızının yaklaşık yüzde 30'uyla dolanan sıcak gaz noktaları da gözlendi. Bu noktalar olay ufkuna yıldızlardan çok daha yakındır ve kara deliğin yakın çevresindeki uzay-zamanı sınamak için ayrı bir pencere açar."
+      ],
+      "ornek": {
+        "baslik": "Örnek: S301'in yörüngesini Kepler'le çöz",
+        "metin": "d3'teki Kepler'in üçüncü yasası, uzaklık AB, süre yıl, kütle Güneş kütlesi cinsinden alınırsa a³ = M × P² biçimini alır. 1. adım: M = 4,3 × 10⁶, P = 8,7 yıl. a³ = 4,3 × 10⁶ × 75,7 ≈ 3,25 × 10⁸, buradan a ≈ 688 AB. Karşılaştırma: S2 için P = 16 yılla a ≈ 1.030 AB çıkar. 2. adım: En yakın nokta 1,78 × 10¹² m ≈ 11,9 AB. Yörüngenin basıklığı e = 1 − 11,9 ÷ 688 ≈ 0,983; neredeyse bir çizgi kadar ince bir elips. 3. adım: En yakın noktadaki hız v = √(G × M × (1 + e) / r). G × M ≈ 5,71 × 10²⁶; × 1,983 ÷ 1,78 × 10¹² ≈ 6,36 × 10¹⁴; karekök ≈ 2,52 × 10⁷ m/s ≈ 25.200 km/s. ESO'nun 25.000 km/s'iyle uyumlu. 4. adım: Sgr A*'ın Schwarzschild yarıçapı ≈ 1,27 × 10¹⁰ m; 1,78 × 10¹² ÷ 1,27 × 10¹⁰ ≈ 140. Sonuç: S301 olay ufkunun yaklaşık 140 katı uzaklığa kadar sokulur; S2'nin yaklaşık 1.400 katına göre on kat daha yakın."
+      },
+      "akilda": "S301 (2026) Sgr A*'ı 8,7 yılda dolanır, ~12 AB'ye kadar yaklaşır ve ~25.000 km/s ile Samanyolu'nun en hızlı yıldızıdır. Yörüngesindeki çerçeve sürüklenmesi kara deliğin dönüşünü ölçebilir; bunun için en az iki tur, yani 2030'ların ilk yarısı gerekiyor."
+    },
+    {
+      "baslik": "Kara delikler döner: en içteki yörünge ve ışınım verimi",
+      "paragraflar": [
+        "d16'da bir kara deliğin dışarıdan yalnızca üç sayıyla, kütle, dönme ve elektrik yüküyle betimlendiğini gördün. Dev kara delikler için ikinci sayı çok önemlidir. Dönme, boyutsuz bir sayıyla 0 (hiç dönmüyor) ile 1 (kuramın izin verdiği en hızlı dönme) arasında ölçülür; d16'daki GW250114 birleşmesinden doğan kara deliğinki 0,68'di. ESO, Sgr A*'ın da dönmesinin beklendiğini yazar, ama bunun ne kadar olduğunu henüz kimse ölçmedi.",
+        "Dönme neyi değiştirir? Yığılma diskindeki gaz kara deliğin çevresinde sonsuza dek yavaşça içeri kıvrılamaz. Belli bir yarıçapın içinde kararlı çember yörünge kalmaz ve gaz hızla ufka dalar; bu sınıra en içteki kararlı yörünge denir. Wikipedia'ya göre kara delikle aynı yönde dolanan madde için bu sınır içeri kayar, en hızlı dönmede neredeyse olay ufkuna kadar iner; ters yönde dolanan madde için dışarı kayar. Dönen kara deliğin bir de ergosfer denen dış kabuğu vardır: orada uzay-zaman öyle sürüklenir ki hiçbir şey yerinde duramaz. Kuramda bu bölgeden kara deliğin dönme enerjisinin bir kısmı dışarı alınabilir.",
+        "Bu ayrıntı enerji bakımından çok önemlidir. Gaz en içteki kararlı yörüngeye kadar spiral çizerken kütleçekim enerjisini ısıya, ısıyı da ışığa çevirir. Wikipedia'ya göre bu yolda gazın kütlesinin, dönmeye bağlı olarak yüzde 5,7 ile yüzde 42'si enerjiye dönüşür ve bu enerjinin yaklaşık yüzde 90'ı kara deliğin 20 yarıçapı içinde açığa çıkar. d4'te gördüğün gibi Güneş'teki füzyon kütlenin yalnızca yaklaşık yüzde 0,7'sini enerjiye çevirir. Yani bir kara deliğe düşen madde, aynı kütlenin yıldızda yanmasından 8 ile 60 kat arası daha fazla ışık verir. Kuasarlar bu yüzden evrenin en parlak cisimleridir (d48). Shen'in derlemesine göre kuasarların toplam ışığı ile bugünkü kara delik kütleleri karşılaştırıldığında ortalama verim yaklaşık 0,1, yani yüzde 10 çıkar.",
+        "Dönmeyi ölçmek zordur. Haberler sekmesindeki S301 haberinin de vurguladığı gibi bugün çoğu dönme tahmini, iç diskten gelen ışığın biçimini modelleyen dolaylı yöntemlere dayanır. Wikipedia'ya göre 2013'te NuSTAR X ışını teleskobu NGC 1365 galaksisindeki kara deliğin ufkunun ışık hızına yakın döndüğünü ölçtü. EHT'nin M87 görüntülerinde parlak noktanın yeri de kara deliğin dönme ekseninin jetle aynı doğrultuda olduğu fikriyle uyumludur. S301 ise ilk kez bir yıldızın yörüngesinden, modelden daha az etkilenen bir ölçüm vaat ediyor."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Bir kilogram madde ne kadar enerji verir?",
+        "metin": "Enerji E = ε × m × c²; burada ε verim, m kütle, c ışık hızı. c² ≈ (3 × 10⁸)² ≈ 8,99 × 10¹⁶ J/kg. 1. adım (Güneş'te füzyon, ε = 0,007): E ≈ 0,007 × 8,99 × 10¹⁶ ≈ 6,3 × 10¹⁴ J. 2. adım (dönmeyen kara delik, ε = 0,057): E ≈ 5,1 × 10¹⁵ J. 3. adım (en hızlı dönen, ε = 0,42): E ≈ 3,8 × 10¹⁶ J. 4. adım (oranlar): 5,1 × 10¹⁵ ÷ 6,3 × 10¹⁴ ≈ 8; 3,8 × 10¹⁶ ÷ 6,3 × 10¹⁴ ≈ 60. Karşılaştırma: 6,3 × 10¹⁴ J, bir kilogram maddenin füzyonla verdiği enerjidir; kara delik aynı kilogramdan bunun 8 ile 60 katını çıkarır. Sonuç: yığılma, kütleyi ışığa çevirmenin bilinen en verimli doğal yollarından biridir."
+      },
+      "akilda": "Dönme, en içteki kararlı yörüngeyi kara deliğe yaklaştırır ve yığılmanın verimini yüzde 5,7'den yüzde 42'ye çıkarabilir; füzyon yalnızca yüzde 0,7'dir. Dönme çoğunlukla dolaylı ölçülür; S301 doğrudan bir yol açabilir."
+    },
+    {
+      "baslik": "EHT'den sonra: halka yerinde, parlak nokta dolaşıyor",
+      "paragraflar": [
+        "d16'da EHT'nin 2017 gözlemlerinden çıkan ilk M87 görüntüsünü (2019) ve Sgr A* görüntüsünü (2022) gördün. Bir görüntü tek başına bir anı yakalar; asıl soru, bu halkanın gerçekten kara deliğe mi ait olduğu, yoksa gazın o anki görünümü mü olduğuydu. Yanıt, aynı kara deliğe yıllar sonra yeniden bakmaktan geldi. Ocak 2024'te EHT, Nisan 2018'de alınan M87 verisinden yeni bir görüntü yayımladı. ALMA'nın duyurusuna göre halka 2017'dekiyle aynı boydaydı, ama en parlak bölgesi saat yönünün tersine yaklaşık 30 derece kaymış, saat 5 konumuna gelmişti. 2018'de ağa ilk kez Kuzey Kutup Dairesi'nin üstündeki Grönland Teleskobu katıldı ve ağın kuzey–güney doğrultusundaki kapsamını iyileştirdi.",
+        "EHT ekibinin 2025'te yayımladığı çalışma 2017, 2018 ve 2021 görüntülerini birlikte inceledi. Halkanın çapı üç dönemde de 43,9 ± 0,6 mikro yay saniyesinde sabit kaldı. Parlak bölge 2017'den 2018'e 30 ile 45 derece arasında döndü; 2018 ile 2021 görüntüleri ise birbirine çok benziyordu. Işığın kutuplanması da değişti. Kutuplanma, ışık dalgasının titreşim yönünün rastgele değil belirli bir doğrultuda düzenlenmesidir ve gazın içindeki manyetik alanların izini taşır. Doğrusal kutuplanmanın oranı 2017'de yaklaşık yüzde 15 iken 2018 ve 2021'de yaklaşık yüzde 5'e indi; 2021'de kutuplanma deseninin dönme yönü tersine çevrildi.",
+        "Bu sonuçlar iki şeyi birbirinden ayırır. Halkanın boyu kara deliğin kütlesine ve uzay-zamanın bükülmesine bağlıdır; kütle yıldan yıla değişmez, halka da değişmez. Parlaklık dağılımı ve kutuplanma ise kara deliğe düşen gazın türbülanslı, rastgele değişen akışına bağlıdır. Ekip de değişimi böyle yorumluyor. Benzetmeyle: kütleçekim iklimdir, gaz hava durumudur. d16'daki kaba hesabımız M87'nin gölgesi için yaklaşık 40 mikro yay saniyesi vermişti; ölçülen halka, gölgenin kenarından gelen parlak ışık olduğu için aynı mertebede ve biraz daha büyüktür. Halkanın inatla aynı boyda kalması, onun gerçekten bir kara deliğin izi olduğunun en güçlü kanıtlarından biridir."
+      ],
+      "akilda": "M87'nin halkası 2017, 2018 ve 2021'de aynı boyda (43,9 mikro yay saniyesi) kaldı; parlak bölge ise 30–45 derece döndü ve kutuplanma değişti. Sabit halka kütleçekimin, değişen parlaklık türbülanslı gazın imzasıdır."
+    },
+    {
+      "baslik": "Kara delik galaksisini tanır mı? M–σ ilişkisi",
+      "paragraflar": [
+        "2000 yılında iki ekip birbirinden bağımsız olarak şaşırtıcı bir düzen buldu. Karl Gebhardt ve arkadaşları 26 galaksiyle, Laura Ferrarese ve David Merritt kendi örnekleriyle, merkezdeki kara deliğin kütlesinin galaksinin şişkinliğindeki yıldızların hız dağılımıyla çok sıkı bağlı olduğunu gösterdi. Şişkinlik, sarmal galaksilerin merkezindeki yuvarlak yıldız topluluğudur; eliptik galaksilerde galaksinin tamamı bu rolü oynar. Bu bağa M–σ ilişkisi denir; σ, Yunan alfabesinin sigma harfidir ve hız dağılımını gösterir.",
+        "İlişki garip, çünkü kara deliğin kütleçekimi yalnızca çok yakın çevresinde baskındır. Şişkinlikteki yıldızlar binlerce ışık yılı uzaktadır ve kara deliğin varlığını neredeyse hiç hissetmez. Sgr A*'ın 4,3 milyon Güneş kütlesi, Samanyolu'nun toplam kütlesinin çok küçük bir kesridir. Yine de şişkinliği hızlı yıldızlarla dolu galaksilerin kara delikleri daha büyüktür. Bu, galaksi ile kara deliğin geçmişte bir biçimde birbirinden haberdar olduğunu düşündürür.",
+        "Sayılar: Gebhardt ve arkadaşlarının uyumu M ≈ 1,2 × 10⁸ M☉ × (σ / 200 km/s)^3,75 idi ve sabit σ'da kütlenin saçılması yalnızca 0,30 dex'ti. Dex, logaritmik bir ölçüdür: 1 dex on kat, 0,3 dex yaklaşık iki kat demektir. Merritt ve Ferrarese 34 galaksilik birleşik örnekle üssü 4,72 ± 0,36, katsayıyı 1,30 × 10⁸ M☉ buldu. Üs farkının nedenlerinden biri ilginçtir: Gebhardt ekibi Samanyolu için σ = 75 km/s almıştı; Merritt ve Ferrarese bu değeri, galaksinin dönmesini hesaba katmadığı için akla yatmayacak kadar düşük bulup 100 km/s önerdi ve tek bir galaksinin bu seçiminin bile eğimi belirgin biçimde değiştirdiğini yazdı.",
+        "İlişkiden önce kullanılan Magorrian ilişkisi (1998), kara delik kütlesini şişkinliğin parlaklığına bağlıyordu. Merritt ve Ferrarese'ye göre o çalışmadaki kütleler M–σ ilişkisinin sistematik olarak üstündeydi, bazıları yüz kata kadar; sapma da galaksinin uzaklığıyla güçlü biçimde artıyordu. Ders şu: kara deliğin etkisini ayırt edemeyecek kadar uzak galaksilerde ölçülen kütleler kolayca şişebilir. M–σ ilişkisi bugün, kütlesi doğrudan ölçülemeyen binlerce galaksinin kara deliğini tahmin etmenin başlıca aracıdır."
+      ],
+      "ornek": {
+        "baslik": "Örnek: M–σ ilişkisi Samanyolu için ne öngörür?",
+        "metin": "Samanyolu için σ = 100 km/s al (Merritt ve Ferrarese'nin önerisi). Oran σ / 200 = 0,5. 1. adım (Merritt–Ferrarese, üs 4,72): 0,5^4,72 ≈ 0,038. Kütle ≈ 1,30 × 10⁸ × 0,038 ≈ 4,9 × 10⁶ M☉. 2. adım (Gebhardt, üs 3,75): 0,5^3,75 ≈ 0,074. Kütle ≈ 1,2 × 10⁸ × 0,074 ≈ 8,9 × 10⁶ M☉. 3. adım: Ölçülen değer (d16) ≈ 4,3 × 10⁶ M☉. Birinci öngörü yüzde 15 kadar, ikincisi iki kat kadar yüksek. Sonuç: ilişki Sgr A*'ı doğru mertebede, birkaç milyon Güneş kütlesi olarak öngörür; ama eğimdeki küçük bir fark sonucu iki kat değiştirir, bu da ilişkinin 0,3 dex'lik (yaklaşık iki katlık) saçılmasıyla uyumludur."
+      },
+      "akilda": "M–σ ilişkisi: kara deliğin kütlesi şişkinlikteki yıldızların hız dağılımının yaklaşık dördüncü-beşinci kuvvetiyle artar (2000). Kara delik bu yıldızları neredeyse hiç çekmediği hâlde ilişkinin var olması, ortak bir geçmişe işaret eder; saçılma yaklaşık iki kattır."
+    },
+    {
+      "baslik": "Birlikte mi büyüdüler?",
+      "paragraflar": [
+        "M–σ ilişkisi bulununca birçok gökbilimci şu sonuca vardı: kara delik ile galaksinin şişkinliği birbirinin büyümesini düzenleyerek birlikte evrimleşmiş olmalı. John Kormendy ve Luis Ho'nun 2013'te yazdığı kapsamlı inceleme bu tabloyu inceltti. Özetlerine göre kara delikler şişkinliklerle sıkı ilişkiliyken galaksi diskleriyle ilişkili değildir; disk içinde yavaş yavaş oluşmuş sahte şişkinliklerle ya da karanlık madde halesiyle ilişkileri, sıkı bir birlikte evrimi düşündürmeyecek kadar zayıftır. Üstelik şişkinliği hiç olmayan saf disk galaksilerde de kara delik bulunur.",
+        "Kormendy ve Ho dört ayrı rejim önerdi. Birincisi, çoğunlukla şişkinliksiz galaksilerde küçük kara deliklerin yerel olarak beslenmesi; bunun birlikte evrim yaratacak kadar enerjisi yoktur. İkincisi, iki gazlı galaksinin büyük birleşmesinde kara deliğe bol gaz akması; bu, kısa süren, kuasara benzer parlak dönemler üretir ve ev sahibi galaksiyi etkiler. Üçüncüsü, en kütleli kara deliklerin dev eliptik galaksilerde gazı sıcak tutan bakım modu geri beslemesi. Dördüncüsü ise ardı ardına gelen birleşmelerin istatistiksel ortalaması: galaksiler ve kara delikleri defalarca birleştikçe aradaki oran, hiçbir geri besleme olmasa bile kendiliğinden sıkılaşır. Geri beslemenin nasıl işlediğini d48'de göreceksin.",
+        "İlişkinin uç noktaları da öğreticidir. Wikipedia'ya göre NGC 1277 galaksisinin kara deliğinin bir ara şişkinlik kütlesinin yaklaşık yüzde 59'u olduğu ileri sürüldü; ama 2013'teki yeniden çözümleme kara deliğin kütlesini 2 ile 5 milyar Güneş kütlesi arasına indirdi. Aykırı bir ölçüm yeniden yapıldığında sık sık yumuşar. Yine de ilişkinin neden bu kadar sıkı olduğu, büyük kütlelerde neden dikleştiği ve evrenin ilk milyar yılında geçerli olup olmadığı açık sorulardır. Birazdan göreceğin gibi James Webb Uzay Teleskobu, erken evrende ilişkinin çok üstünde kalan kara delikler buluyor."
+      ],
+      "akilda": "Kormendy ve Ho'ya (2013) göre kara delikler şişkinliklerle sıkı, disklerle hiç ilişkili değildir. İlişkinin kaynağı tek değildir: birleşmelerdeki kuasar dönemleri, dev eliptiklerdeki bakım modu geri beslemesi ve ardışık birleşmelerin ortalaması birlikte rol oynar."
+    },
+    {
+      "baslik": "Nasıl büyürler: Eddington sınırı ve Salpeter zamanı",
+      "paragraflar": [
+        "Bir kara delik iki yolla büyür: madde yutarak ve başka kara deliklerle birleşerek. Wikipedia'ya göre kütlenin büyük kısmının, aktif çekirdek ya da kuasar olarak gördüğümüz hızlı yığılma dönemlerinde ve birleşmelerle kazanıldığı düşünülür. Yutmanın ise bir hız sınırı vardır. Kara deliğe düşen gaz ısınıp ışır ve bu ışık dışarı doğru iter: fotonlar gazdaki elektronlara çarpıp onları dışarı iter, elektronlar da elektrik çekimiyle protonları sürükler. Kütleçekimi ise içe çeker. İki kuvvetin dengelendiği parlaklığa Eddington sınırı denir; adını Arthur Eddington'dan alır.",
+        "Değeri basit bir orantıdır: L_Edd ≈ 1,26 × 10³¹ W × (M / M☉), yani her Güneş kütlesi başına yaklaşık 32.000 Güneş ışınımı. Kara delik bundan parlak yanarsa ışığı, kendisini besleyen gazı üfler ve beslenme kendiliğinden yavaşlar. Sınır kesin bir duvar değildir: aynı kaynağa göre bazı yıldız kütleli kara deliklerin bu sınırı aşan hızla beslendiği düşünülen modeller vardır ve disklerin yapısına bağlı olarak sınır aşılabilir. Ama uzun vadede iyi bir rehberdir.",
+        "Eddington sınırında beslenen bir kara delik ne hızla büyür? Ortaya bir zaman ölçeği çıkar; buna Salpeter zamanı denir. Yue Shen'in derlemesine göre bu süre t ≈ 4,5 × 10⁸ yıl × ε / (λ × (1 − ε)) formülüyle verilir; burada ε ışınım verimi, λ ise parlaklığın Eddington sınırına oranıdır. Kara delik her Salpeter zamanında kütlesini e ≈ 2,718 katına çıkarır. ε = 0,1 ve λ = 1 için süre 4,5 × 10⁸ × 0,1 ÷ 0,9 = 50 milyon yıldır. Bu, faiz gibi üstel bir büyümedir: kütle büyüdükçe daha çok yer ve daha hızlı büyür. Benzetmenin sınırı şu: faiz kesintisiz işler, kara deliğin beslenmesi ise gaz geldikçe açılıp kapanır.",
+        "Formülde bir paradoks saklı. Verim ε büyüdükçe, yani kara delik hızlı dönüp düşen maddenin daha büyük kesrini ışığa çevirdikçe, Salpeter zamanı uzar: ε = 0,42 için 4,5 × 10⁸ × 0,42 ÷ 0,58 ≈ 330 milyon yıl. Çünkü ışığa giden kütle kara deliğe eklenmez ve daha güçlü ışık beslemeyi daha erken frenler. En parlak kara delik en hızlı büyüyen kara delik değildir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: 100 Güneş kütlesinden bir milyara kaç yılda?",
+        "metin": "Eddington sınırında, ε = 0,1 ile Salpeter zamanı 50 milyon yıl; her 50 milyon yılda kütle e ≈ 2,718 katına çıkar. 1. adım: On kat büyümek için gereken Salpeter zamanı sayısı ln(10) ≈ 2,30; süre 2,30 × 50 ≈ 115 milyon yıl. 2. adım: 100 M☉'den 10⁹ M☉'e çıkmak 10⁷ kat büyümek demektir; bu yedi kez on kat demektir: 7 × 115 ≈ 805 milyon yıl. 3. adım: Sınama: ln(10⁷) ≈ 16,1; 16,1 × 50 ≈ 806 milyon yıl. Sonuç: hiç durmadan Eddington sınırında beslense bile 100 Güneş kütleli bir tohumun milyar Güneş kütlesine ulaşması yaklaşık 800 milyon yıl alır."
+      },
+      "akilda": "Eddington sınırı, ışığın dışa itişinin kütleçekimini dengelediği parlaklıktır: 1,26 × 10³¹ W × (M/M☉). Bu sınırda ε = 0,1 ile beslenen kara delik her 50 milyon yılda (Salpeter zamanı) kütlesini e katına çıkarır; 100 M☉'den 10⁹ M☉'e ~800 milyon yılda varır."
+    },
+    {
+      "baslik": "Tohum sorunu: devler nasıl bu kadar erken?",
+      "paragraflar": [
+        "Şimdi önceki örneğin sonucunu evrenin takvimiyle karşılaştır. Wikipedia'ya göre Ocak 2021'de duyurulan J0313–1806 kuasarı, Irmak takımyıldızı yönünde, z = 7,64 kırmızıya kaymasındadır ve kara deliği (1,6 ± 0,4) milyar Güneş kütlesidir. d17'deki Planck değerleriyle hesaplayınca o ışık yola çıktığında evren yalnızca yaklaşık 680 milyon yaşındaydı. Shen'in derlemesi de genel durumu özetler: z > 6'daki parlak kuasarlar, Büyük Patlama'dan sonraki ilk milyar yılda 10⁹ Güneş kütlesini aşan kara delikler gerektirir. Wikipedia buna zaman ölçeği sorunu der: yavaş büyüyen hafif tohumlarla bu devleri açıklamak zordur.",
+        "Bu erken devlerin kütlesi nereden biliniyor? Çoğunlukla parlaklıktan. Shen'e göre z > 6'daki parlak kuasarların toplam ışınımı 10⁴⁷ erg/s'yi, yani 10⁴⁰ watt'ı aşar. Bir kara delik uzun süre Eddington sınırından çok daha parlak yanamayacağına göre, bu parlaklık en az L ÷ 1,26 × 10³¹ W ≈ 8 × 10⁸ Güneş kütlesi gerektirir. Tayf çizgilerinin genişliğinden yapılan ölçeklemeler de aynı mertebeyi verir. Dolayısıyla tahminin özü sağlamdır: ışık bu kadar güçlüyse arkasında yüz milyonlarca, hatta milyarlarca Güneş kütlesi vardır. Ama tek tek kütlelerde iki üç katlık belirsizlik olağandır.",
+        "Kara delik tohumu, sonradan büyüyecek ilk kara deliktir ve iki ana aday vardır. Hafif tohumlar, d8'de gördüğün ilk büyük yıldız kuşağının, Popülasyon III yıldızlarının ölümünden kalan onlarca ile yüzlerce Güneş kütleli kara deliklerdir. Ağır tohumlar ise metal içermeyen bir gaz bulutunun yıldızlara bölünmeden doğrudan çökmesiyle doğabilir; Wikipedia bu doğrudan çöküş tohumları için yaklaşık 10⁵ Güneş kütlesi verir. Arada başka öneriler de var: yaklaşık 20 Güneş kütleli kara deliklere çöken yarı-yıldızlar ve 2018'de önerilen, yaklaşık 10⁵ Güneş kütleli tohumlar bırakan süper kütleli yıldızlar.",
+        "Gözlemsel durum açık bir tablo çizmez. Wikipedia'ya göre yıldız ölümünden kalan kara delikler gözlemle desteklenir, ama ilk yıldızlardan kalan hafif tohumlar kuramsaldır; d8'de gördüğün gibi şimdiye dek tek bir Popülasyon III yıldızı bile kesin olarak bulunamadı. Ağır tohumlar da doğrudan görülmedi. Üçüncü bir kaçış yolu, kara deliklerin kısa dönemlerde Eddington sınırını aşan hızla beslenmesidir; bu da tartışılıyor. Bir sonraki bölümde James Webb ve Chandra'nın bu tartışmaya getirdiği ilk ipuçlarını göreceksin."
+      ],
+      "ornek": {
+        "baslik": "Örnek: J0313–1806'nın kara deliği zamanına sığar mı?",
+        "metin": "Hedef 1,6 × 10⁹ M☉, evrenin yaşı yaklaşık 680 milyon yıl, Salpeter zamanı 50 milyon yıl. 1. adım (hafif tohum, 100 M☉): Gereken büyüme 1,6 × 10⁷ kat; ln(1,6 × 10⁷) ≈ 16,6 Salpeter zamanı; 16,6 × 50 ≈ 830 milyon yıl. Bu, evrenin o anki yaşından bile uzun; tohum Büyük Patlama anında doğup hiç durmadan Eddington sınırında beslense bile yetişemez. 2. adım (ağır tohum, 10⁵ M☉): Gereken büyüme 1,6 × 10⁴ kat; ln(1,6 × 10⁴) ≈ 9,7; 9,7 × 50 ≈ 485 milyon yıl. Tohum Büyük Patlama'dan 200 milyon yıl sonra doğarsa 200 + 485 = 685 milyon yıl eder; ancak sığar. Sonuç: hafif tohum kesintisiz Eddington beslemesiyle bile yetmez; ağır tohum ancak hiç ara vermeden beslenirse sığar. Zaman ölçeği sorununun özü budur."
+      },
+      "akilda": "z = 7,64'teki J0313–1806, evren ~680 milyon yaşındayken 1,6 milyar M☉'lik bir kara delik taşır. 100 M☉'lik hafif tohum Eddington hızıyla bile yetişemez; 10⁵ M☉'lik ağır tohum (doğrudan çöküş) ancak kesintisiz beslenirse yetişir."
+    },
+    {
+      "baslik": "JWST'nin erken devleri ve aşırı kütleli kara delikler",
+      "paragraflar": [
+        "James Webb Uzay Teleskobu (JWST) evrenin ilk milyar yılına kızılötesiyle bakınca beklenmedik bir kalabalık buldu. Cambridge Üniversitesi'nden Roberto Maiolino ve arkadaşlarının 2023 çalışmasına göre GN-z11 galaksisinin tayfı, evren yaklaşık 420 milyon yaşındayken hem yıldız oluşumunun hem de madde yutan bir kara deliğin izlerini taşıyordu. Kara deliğin kütlesi yaklaşık 1,6 milyon Güneş kütlesi tahmin edildi; yazarlar onun z = 12–15 dolayında yıldız kütleli bir tohumdan doğmuş olabileceğini de not etti.",
+        "Daha çarpıcı örnek UHZ1'dir. Chandra X ışını gözlemevinin Kasım 2023 duyurusuna göre gökbilimciler iki haftayı aşan Chandra gözlemlerini JWST verisiyle birleştirdi. Önde duran, yaklaşık 3,5 milyar ışık yılı uzaklıktaki Abell 2744 galaksi kümesinin kütleçekimsel merceği (d17) X ışını sinyalini dört kat güçlendirmeseydi bu kaynak hiç görülemeyecekti. Natarajan ve arkadaşlarına göre UHZ1 z ≈ 10,1'de, Büyük Patlama'dan yaklaşık 470 milyon yıl sonradır; Eddington hızında beslendiği varsayılırsa kara deliği yaklaşık 4 × 10⁷ Güneş kütlesidir (Chandra duyurusu 10 ile 100 milyon arası der). Asıl şaşırtıcı olan, kara deliğin kütlesinin ev sahibi galaksideki bütün yıldızların kütlesine yakın olması. Yakın evrende tipik bir kara delik, ev sahibinin yıldız kütlesinin yalnızca binde biri kadardır.",
+        "Ev sahibine göre bu kadar ağır kara deliklere aşırı kütleli kara delik denir. Yazarlar UHZ1'in ölçülerinin, 2017'de öngörülen “doğuştan büyük” kara delik senaryosuyla, yani doğrudan çöküşten doğmuş ağır bir tohumla uyuştuğunu söylüyor. Dikkatli olmak gerek: bu kütleler çoğunlukla Eddington sınırında beslenme varsayımına ya da tek bir tayftan yapılan ölçeklemelere dayanır ve belirsizlikleri büyüktür. Yine de M–σ'ya benzer yerel ilişkilerin erken evrende aynı biçimde işlemediği görülüyor.",
+        "Webb'in bir bilmecesi daha var: küçük kırmızı noktalar denen, çok sıkışık ve kırmızı ışıklı cisimler (ayrıntısı d48'de). Haberler sekmesindeki Eylül 2026 haberi, Chon ve arkadaşlarının Nature'da yayımlanan simülasyonunu anlatır: Space.com'un aktardığına göre komşu galaksilerin güçlü morötesi ışığı gazın sıradan yıldızlara bölünmesini engelliyor, birkaç yüz bin Güneş kütleli süper kütleli yıldızlar yaklaşık iki milyon yılda çöküp ağır tohumlar bırakıyor; tohum kendi yakıtına sarılmış, aşırı beslenen bir kara deliğe dönüşüyor ve tayfı kırmızı ve geniş hidrojen çizgili görünüyor. Chon'un kendi sözüyle simülasyon, bu noktaların neden sonradan ortadan kaybolduğunu henüz açıklamıyor. Haberin kesinlik etiketi “tartışmalı”."
+      ],
+      "ornek": {
+        "baslik": "Örnek: UHZ1'in kara deliği hangi tohumdan gelmiş olabilir?",
+        "metin": "Hedef 4 × 10⁷ M☉, evrenin yaşı yaklaşık 470 milyon yıl, Salpeter zamanı 50 milyon yıl. 1. adım (hafif tohum, 100 M☉): Gereken büyüme 4 × 10⁵ kat; ln(4 × 10⁵) ≈ 12,9; 12,9 × 50 ≈ 645 milyon yıl. Evrenin o anki yaşından 175 milyon yıl uzun. 2. adım (ağır tohum, 10⁵ M☉): Gereken büyüme 400 kat; ln(400) ≈ 6,0; 6,0 × 50 ≈ 300 milyon yıl. Tohum ilk 170 milyon yıl içinde doğarsa sığar. Sonuç: basit hesap, UHZ1'in yazarlarının vardığı sonuçla aynı yöne işaret eder: ağır bir tohum ya da Eddington'u aşan büyüme dönemleri gerekir. Hesap yalnızca bir mertebe tahminidir; kütlenin kendisi de Eddington varsayımıyla bulunduğu için döngüsel bir yanı vardır."
+      },
+      "akilda": "JWST ve Chandra, evren 420–470 milyon yaşındayken beslenen kara delikler buldu (GN-z11 ~1,6 milyon, UHZ1 ~4 × 10⁷ M☉). UHZ1'in kara deliği ev sahibinin yıldızları kadar ağır; bu, ağır tohum fikrini destekler ama kütle tahminleri büyük belirsizlik taşır."
+    },
+    {
+      "baslik": "Gelgit yırtılma olayları: bir yıldızın son parlaması",
+      "paragraflar": [
+        "d16'da kara deliğe düşen bir astronotun gelgitle boyuna uzadığını, buna spagettileşme dendiğini görmüştün. Aynı şey bir yıldızın başına da gelebilir. Bir yıldız dev bir kara deliğe çok yaklaşırsa kara deliğin yıldızın yakın ve uzak yüzü arasındaki çekim farkı yıldızın kendi kütleçekimini yener ve yıldız paramparça olur. Buna gelgit yırtılma olayı denir. Wikipedia'ya göre olguyu ilk kez Jack Hills 1975'te kuramsal olarak öngördü; Martin Rees 1988'de parçalanan yıldız maddesinin yaklaşık yarısının kara deliğe bağlı kalıp bir yığılma diski oluşturacağını ve sonunda yutulacağını anlattı. Gökte bu, bir galaksinin merkezinde birden parlayan, sonra aylar ya da yıllar içinde sönen bir ışık olarak görülür.",
+        "Yıldızın nerede parçalanacağını gelgit yarıçapı söyler: r_t ≈ R* × (M_kd / M*)^(1/3). Burada R* yıldızın yarıçapı, M* yıldızın kütlesi, M_kd kara deliğin kütlesidir. Sözle: kara delik bin kat ağırlaşırsa gelgit yarıçapı yalnızca on kat büyür. Oysa olay ufku kütleyle doğru orantılı büyür. Demek ki yeterince büyük bir kara delikte ufuk gelgit yarıçapını yakalar ve geçer; yıldız parçalanmadan bütün olarak yutulur ve hiçbir parlama görülmez. Bu sınıra Hills kütlesi denir. Stone ve arkadaşlarının derlemesine göre Güneş benzeri bir yıldız için kabaca 10⁸ Güneş kütlesidir. Göreli hesap, dönmeyen bir kara delik için sınırı biraz aşağı, yaklaşık 10^7,4 Güneş kütlesine çeker; hızlı dönen bir kara delikte ise yıldızın geliş yönüne bağlı olarak 10⁹ Güneş kütlesine kadar çıkabilir.",
+        "Bu, d16'daki “dev kara delik ufkunda daha naziktir” sonucunun yıldız ölçeğindeki karşılığıdır. Wikipedia'ya göre 10⁷ Güneş kütleli bir kara deliğin ufkunda bir insanın başı ile ayağı arasındaki gelgit farkı, Dünya yüzeyinde hissettiğimizle aynı mertebededir. Gelgit yırtılma olayları bu yüzden ancak Hills kütlesinden hafif kara deliklerde görülebilir; Wikipedia'nın andığı 2011 olayında yıldızı parçalayan kara delik yaklaşık 10⁶ Güneş kütlesindeydi, yani Sgr A* boyundaydı. Böyle bir olay, normalde sessiz duran uyuyan bir dev kara deliği bir süreliğine aydınlatır.",
+        "Her olay biraz farklı bir şey öğretir. Wikipedia'ya göre ASASSN-14li, 2014'te bir gelgit yırtılma olayından göreli olmayan, daha yavaş bir madde akışının radyo dalgalarıyla ilk kez saptandığı olaydı. AT 2018hyz ise yaklaşık 750 gün boyunca radyoda sessiz kaldı, sonra birden radyo ışığı vermeye başladı; parçalanmadan yaklaşık iki yıl sonra fırlatılmış bir akış ya da bize yandan bakan bir jet olabilir. AT 2022dbl'in aynı yıldızın tekrar tekrar kısmen soyulmasından kaynaklanan yinelenen bir olay olduğu düşünülüyor. Bu da “sıradan” sanılan bazı parlamaların yıldızın tamamen değil, kısmen parçalandığı olaylar olabileceğini düşündürüyor.",
+        "Gözlemler hızla çoğalıyor. Wikipedia'ya göre Mayıs 2024 itibarıyla yaklaşık 100 olay biliniyor; Onları bulan araçlar arasında Zwicky Geçici Kaynak Tesisi (ZTF) ve ASAS-SN gibi optik taramalar ile eROSITA ve XMM-Newton gibi X ışını gözlemevleri var. Olayların yalnızca yaklaşık yüzde 1'i göreli jet üretir; 2023'e dek yalnızca dört jetli olay gözlenmişti. Bunlardan Swift J1644+57'nin jeti 3,8 milyar ışık yılı ötede 1,5 yıl sürdü; AT2022cmc'yi ZTF 2022'de buldu. AT 2024tvd ise bir galaksinin merkezinde olmayan ilk olay: merkezdeki dev kara delikten yaklaşık 2.600 ışık yılı uzakta, yani galaksi içinde dolaşan ikinci bir kara delikten geliyor gibi. Model hesapları 10⁸ Güneş kütleli bir kara delik için galaksi başına yılda 2,1 × 10⁻⁴ ya da 2,9 × 10⁻⁵ olay verir; yani tek bir galakside birkaç bin ile birkaç on bin yılda bir. Bu yüzden onları görmek için çok sayıda galaksi sürekli taranır."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Güneş benzeri bir yıldız hangi kara delikte parçalanır?",
+        "metin": "Güneş'in yarıçapı R* ≈ 695.700 km (d4). Rs ≈ 2,95 km × (M/M☉) (d16). 1. adım (10⁶ M☉): (10⁶)^(1/3) = 100; r_t ≈ 695.700 × 100 ≈ 6,96 × 10⁷ km. Rs ≈ 2,95 × 10⁶ km. Oran ≈ 24: yıldız ufkun 24 katı uzakta parçalanır; enkaz ufka varmadan ışır ve parlama görülür. 2. adım (10⁷ M☉): (10⁷)^(1/3) ≈ 215; r_t ≈ 1,50 × 10⁸ km; Rs ≈ 2,95 × 10⁷ km; oran ≈ 5. 3. adım (10⁸ M☉): (10⁸)^(1/3) ≈ 464; r_t ≈ 3,23 × 10⁸ km; Rs ≈ 2,95 × 10⁸ km; oran ≈ 1,1. Sonuç: 10⁸ M☉ dolayında gelgit yarıçapı olay ufkuna yetişir; daha büyük kara delikler Güneş benzeri bir yıldızı parçalamadan bütün olarak yutar. Hills kütlesi için verilen yaklaşık 10⁸ M☉ budur."
+      },
+      "akilda": "Yıldız, gelgit yarıçapı r_t ≈ R* × (M_kd/M*)^(1/3) içine girerse parçalanır ve aylarca parlayan bir gelgit yırtılma olayı doğar. Güneş benzeri yıldız için Hills kütlesi ~10⁸ M☉'dir; daha büyük kara delikler yıldızı bütün yutar. 2024'e dek ~100 olay biliniyor."
+    },
+    {
+      "baslik": "İki dev bir galakside: çiftler ve son parsek sorunu",
+      "paragraflar": [
+        "d7'de galaksilerin çarpışıp birleştiğini gördün. İki galaksi birleşince merkezlerindeki dev kara delikler de aynı galakside kalır ve merkeze doğru çöker. Önce çevrelerindeki yıldızlara ve gaza kütleçekimle enerji aktararak yavaşlarlar ve birbirlerinin çevresinde dolanan bir çift oluştururlar. Sorun bundan sonra başlar. Komossa ve arkadaşlarının 2021 incelemesine göre çiftten enerji ve açısal momentum alacak etkileşimler olmazsa iki kara delik kabaca bir parsek uzaklıkta takılıp kalabilir ve evrenin yaşı içinde hiç birleşmeyebilir. Buna son parsek sorunu denir.",
+        "Önerilen çözümler çifti bu ölü noktadan geçirecek bir şey bulmaya dayanır: büyük gaz bulutlarıyla etkileşimler, ya da galaksi çekirdeği tam yuvarlak değilse uzun, basık yörüngelerde dolanıp çifte yaklaşan yıldızlar. Aynı inceleme bir parsekin altında kütleçekim dalgası yaymanın baskın hâle geldiğini söyler; çift oraya bir kez vardı mı, d16'da gördüğün dalgalar onu kendiliğinden birleşmeye sürükler. d16'daki NANOGrav sonucu, böyle dev çiftlerden gelen bir kütleçekim dalgası uğultusuyla uyumluydu; 2035'te fırlatılması planlanan LISA ise milyonlarca Güneş kütleli kara deliklerin birleşmesini doğrudan duymayı hedefliyor.",
+        "En ünlü çift adayı OJ 287'dir. Komossa ve arkadaşlarına göre bu kaynağın optik ışık eğrisinde yaklaşık 12 yılda bir ikiz tepeler görülür. Önde gelen modelde 1,8 × 10¹⁰ Güneş kütleli bir ana kara deliğin çevresinde 1,5 × 10⁸ Güneş kütleli küçük bir eş dolanır ve her turda ana kara deliğin diskini iki kez delip parlamalara yol açar. Yörüngenin en yakın noktası genel görelilik yüzünden her turda yaklaşık 38 derece döner; bu yüzden parlamalar tam 12 yılda bir gelmez. Kırmızıya kayması 0,306'dır. 2015 ve 2019'da öngörülen parlamaların gözlendiği bildirildi. Yine de inceleme OJ 287'yi kesin bir çift değil, en iyi incelenmiş aday olarak sunar; eğik ve yalpalayan bir yığılma diski gibi başka açıklamalar da masada."
+      ],
+      "akilda": "Galaksiler birleşince kara delikleri çift oluşturur, ama bir parsek civarında takılabilir (son parsek sorunu). Gaz ve yıldızlarla etkileşim onları kütleçekim dalgalarının devraldığı bölgeye itebilir. OJ 287 (12 yıllık parlamalar, modelde 18 milyar + 150 milyon M☉) en iyi çift adayıdır, ama kesin değildir."
+    },
+    {
+      "baslik": "Devlerin devleri: en büyük kara delikler",
+      "paragraflar": [
+        "En büyük kara delik hangisi? Yanıt ölçüm yöntemine bağlıdır. Ağustos 2025'te Monthly Notices of the Royal Astronomical Society'de yayımlanan bir çalışma, Aslan takımyıldızı yönünde yaklaşık 5 milyar ışık yılı uzaklıktaki Kozmik At Nalı (SDSS J1148+1930) sisteminde 36 milyar Güneş kütleli bir kara delik buldu. Carlos Melo ile Portsmouth Üniversitesi'nden Thomas Collett'in ekibi iki yöntemi birleştirdi: ön galaksinin arkadaki galaksinin ışığını büküp at nalı biçiminde bir halka oluşturan kütleçekimsel merceği ve yıldız hızları. Collett'e göre bu kara delik bilinen en kütleli on kara delik arasında ve belki de en kütlelisi. İlginç bir ayrıntı: şu anda madde yutmuyor, yani uyuyan bir kara delik. Wikipedia, 5 milyar Güneş kütlesinin üstündeki kara deliklere zaman zaman ultra kütleli kara delik dendiğini, ama bu terimin yaygın kullanılmadığını not eder.",
+        "Rekor listelerindeki öteki adlar daha dolaylı ölçümlerle gelir. Wikipedia TON 618 kuasarına yaklaşık 4,07 × 10¹⁰ Güneş kütlesi verir; ama bu, kuasarın tayf çizgilerinin genişliğinden yapılan ve aynı kaynağın deyişiyle önemli belirsizlik taşıyan bir tahmindir. Aynı kaynak NGC 4889 için yaklaşık 2,1 × 10¹⁰ Güneş kütlesi, OJ 287'nin ana kara deliği için modelde 18 milyar Güneş kütlesi verir. At Nalı ölçümünü haberleştiren yazının da vurguladığı gibi, madde yutan kara deliklerin kütlelerinden yapılan tahminler çoğu zaman büyük belirsizlik taşır; yıldız hızları ise uzak sistemlerde iyi çalışmaz. Bu yüzden “en büyük” sıralamaları kesin sıralama değil, hata paylarıyla örtüşen bir kümedir.",
+        "Kara delikler sonsuza dek büyüyebilir mi? Wikipedia'nın aktardığına göre Andrew King 2016'da, ışık saçarak beslenen kara delikler için tipik koşullarda yaklaşık 5 × 10¹⁰ Güneş kütlelik doğal bir üst sınır hesapladı; büyüme yaklaşık 10¹⁰ Güneş kütlesinin üstünde yavaşlar, en hızlı dönmede sınır yaklaşık 2,7 × 10¹¹'e çıkabilir. At Nalı'nın 36 milyarı bu sınıra yakındır. 2020'de bir çalışma 10¹¹ Güneş kütlesini aşan akıl almaz büyüklükte kara delikler bile önerdi, ama bunlar yalnızca kuramsaldır."
+      ],
+      "ornek": {
+        "baslik": "Örnek: 36 milyar Güneş kütleli kara delik ne büyüklükte?",
+        "metin": "1. adım (boyut): Rs ≈ 2,953 km × 3,6 × 10¹⁰ ≈ 1,06 × 10¹¹ km. 1 AB ≈ 1,496 × 10⁸ km olduğundan Rs ≈ 711 AB. Neptün Güneş'ten yaklaşık 30 AB uzakta (d9); olay ufku Neptün'ün yörüngesinin yaklaşık 24 katı yarıçapında. 2. adım (ortalama yoğunluk): d16'da ortalama yoğunluğun kütlenin karesiyle ters orantılı düştüğünü ve M87'nin 6,5 milyar M☉'lik kara deliği için yaklaşık 0,44 kg/m³ olduğunu görmüştün. Kütle oranı 36 ÷ 6,5 ≈ 5,5; karesi ≈ 30,7. Yoğunluk ≈ 0,44 ÷ 30,7 ≈ 0,014 kg/m³. Deniz düzeyinde hava yaklaşık 1,2 kg/m³ olduğundan bu, havanın yaklaşık 80'de biri. Sonuç: Kozmik At Nalı'nın kara deliğinin olay ufku yarıçapı ~700 AB, ufkun içindeki ortalama yoğunluk ise havadan yaklaşık 80 kat seyrek."
+      },
+      "akilda": "Bugünkü en büyük adaylar on milyarlarca M☉'dir: Kozmik At Nalı 36 milyar (2025, mercek + yıldız hızları, uyuyan), TON 618 ~40 milyar (dolaylı, belirsiz). Kuramsal üst sınır tipik koşullarda ~5 × 10¹⁰ M☉ (King 2016)."
+    },
+    {
+      "baslik": "İstanbul'dan dev kara deliklerin evlerine bakmak",
+      "paragraflar": [
+        "Hiçbir dev kara deliği göremezsin, ama içinde oturdukları galaksilerin birkaçını görebilirsin. d16'da Sgr A*'ın yönünü (Yay, İstanbul'da en fazla yaklaşık 20°) ve M87'yi (Başak, 8,6 kadir, yaklaşık 61°) konuşmuştuk. En kolayı Andromeda'dır: d7'de gördüğün gibi 3,44 kadirle karanlık bir gökte çıplak gözle görülür ve 2,5 milyon ışık yılı uzaktadır. Wikipedia'ya göre merkezinde 1,4 × 10⁸ Güneş kütleli bir kara delik vardır (belirsizlik +0,65 ile −0,45 × 10⁸); bu, Sgr A*'ın yaklaşık 30 katıdır. O soluk lekeye baktığında, merkezinde Samanyolu'nunkinden otuz kat ağır bir kara delik olan bir galaksiye bakıyorsun.",
+        "İkinci hedef, maser yöntemiyle tartılan NGC 4258'dir, yani M106. Wikipedia'ya göre Av Köpekleri takımyıldızındadır, görünür parlaklığı 8,4 kadir, uzaklığı yaklaşık 23,7 milyon ışık yılı, dik açıklığı +47,3°'dir; merkezindeki kara delik (3,9 ± 0,1) × 10⁷ Güneş kütlesidir ve çekirdeği 2. tip Seyfert olarak sınıflanır. Aşağıdaki hesap, İstanbul'dan meridyende neredeyse başucuna kadar yükseldiğini gösterir; yani ufuk pusundan uzak, iyi bir hedeftir. Kaynaklarım M106'nın 7×50 dürbünle görülüp görülmediğini açıkça söylemiyor. Kadir hesabı karanlık bir gökte sınırın içinde kaldığını gösterir; ama bir galaksinin ışığı tek bir noktada değil bir lekeye yayılır, bu yüzden aynı kadirdeki bir yıldızdan daha zor seçilir.",
+        "Bu galaksilerin hepsinin konumunu uygulamanın Gökyüzü sekmesindeki haritada bulabilirsin. Onlara bakarken aklında şu dursun: Andromeda'nın merkezindeki kara delik doğrudan yıldız hareketleriyle, M106'nınki maserlerle, M87'ninki hem gazla hem EHT gölgesiyle tartıldı. Her biri bu dersteki bir yöntemin canlı örneği."
+      ],
+      "ornek": {
+        "baslik": "Örnek: M106 İstanbul'da ne kadar yükselir, dürbün sınırında mı?",
+        "metin": "1. adım (yükseklik): Kuzeyde, enleminden büyük dik açıklıklı bir cisim meridyenden geçerken en yüksek konumu 90° − (dik açıklık − enlem) olur. İstanbul için enlem ≈ 41,0°, M106 için dik açıklık ≈ +47,3°. 90 − (47,3 − 41,0) = 90 − 6,3 ≈ 83,7°. Neredeyse başucu, biraz kuzeyde. 2. adım (dürbün): d16'daki yaklaşımla çok karanlık gökte çıplak göz sınırı yaklaşık +6,5, 7×50 dürbünün kazancı yaklaşık 4,3 kadir; sınır ≈ 10,8. Banliyö göğünde çıplak göz sınırı yaklaşık +4, dürbünle ≈ 8,3. 3. adım: M106'nın 8,4 kadiri karanlık gökte sınırın 2,4 kadir içinde, banliyöde ise sınırın tam kıyısında kalır. Sonuç: M106 İstanbul'dan yaklaşık 84° yükselir; kadir hesabına göre karanlık bir yerde dürbün menzilinde, ama yayılmış ışığı yüzünden şehirde ancak küçük bir teleskopla aranmalı."
+      },
+      "akilda": "Andromeda (çıplak göz, merkezde 1,4 × 10⁸ M☉), M106 (8,4 kadir, İstanbul'da ~84° yükselir, maserle tartılmış 3,9 × 10⁷ M☉) ve M87 dev kara deliklerin evleridir; her biri farklı bir tartma yönteminin örneğidir."
+    }
+  ],
+  "formuller": [
+    {
+      "ad": "Yörüngeden kütle",
+      "ifade": "M = v² × r / G",
+      "aciklama": "M merkezdeki kütle (kg), v dairesel yörünge hızı (m/s), r yarıçap (m), G = 6,674 × 10⁻¹¹ m³/(kg·s²). Dairesel yörünge ve merkezde toplanmış kütle varsayılır (d3)."
+    },
+    {
+      "ad": "Yankı haritalama kütlesi",
+      "ifade": "M = f × c × τ × V² / G",
+      "aciklama": "τ geniş çizginin diskteki değişime gecikmesi (s), c × τ bulutların uzaklığı (m), V çizgi genişliğinden hız (m/s), f bulutların bilinmeyen dizilişini karşılayan boyutsuz çarpan (örneğin NGC 5548 için 1,3 ile 6,3 arası, hangi genişliğin kullanıldığına bağlı)."
+    },
+    {
+      "ad": "M–σ ilişkisi",
+      "ifade": "M ≈ 1,2 × 10⁸ M☉ × (σ / 200 km/s)^3,75",
+      "aciklama": "σ şişkinlik yıldızlarının hız dağılımı (km/s). Gebhardt ve ark. 2000; Merritt ve Ferrarese 2000 üssü 4,72, katsayıyı 1,30 × 10⁸ M☉ buldu. Saçılma yaklaşık 0,3 dex (iki kat)."
+    },
+    {
+      "ad": "Eddington sınırı",
+      "ifade": "L_Edd ≈ 1,26 × 10³¹ W × (M / M☉)",
+      "aciklama": "Saf iyonlaşmış hidrojen için, ışınımın dışa itişinin kütleçekimini dengelediği parlaklık. Güneş ışınımı cinsinden yaklaşık 3,2 × 10⁴ L☉ × (M/M☉)."
+    },
+    {
+      "ad": "Salpeter zamanı",
+      "ifade": "t ≈ 4,5 × 10⁸ yıl × ε / (λ × (1 − ε))",
+      "aciklama": "ε ışınım verimi, λ parlaklığın Eddington sınırına oranı. Kara delik her t sürede kütlesini e ≈ 2,718 katına çıkarır; ε = 0,1, λ = 1 için t = 50 milyon yıl."
+    },
+    {
+      "ad": "Üstel büyüme",
+      "ifade": "M = M₀ × e^(t / t_S)",
+      "aciklama": "M₀ başlangıç (tohum) kütlesi, t geçen süre, t_S Salpeter zamanı. Gereken süre t = t_S × ln(M / M₀)."
+    },
+    {
+      "ad": "Gelgit yarıçapı",
+      "ifade": "r_t ≈ R* × (M_kd / M*)^(1/3)",
+      "aciklama": "R* yıldızın yarıçapı, M* yıldızın kütlesi, M_kd kara deliğin kütlesi. r_t olay ufkundan küçükse yıldız parçalanmadan yutulur (Hills kütlesi, Güneş benzeri yıldız için ~10⁸ M☉)."
+    },
+    {
+      "ad": "Kepler'in üçüncü yasası (pratik biçim)",
+      "ifade": "a³ = M × P²",
+      "aciklama": "a yarı büyük eksen (AB), P dolanma süresi (yıl), M merkezdeki kütle (Güneş kütlesi). Yıldızın kütlesi kara deliğin yanında ihmal edilir."
+    },
+    {
+      "ad": "Kütleden enerji",
+      "ifade": "E = ε × m × c²",
+      "aciklama": "ε verim (füzyonda ~0,007; kara delik yığılmasında dönmeye göre 0,057–0,42), m kütle (kg), c ışık hızı (m/s), E joule."
+    }
+  ],
+  "anahtar_sayilar": [
+    {
+      "deger": "10⁵–10¹⁰ M☉",
+      "aciklama": "Süper kütleli kara deliklerin kütle aralığı (klasik alt sınır 10⁵)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Supermassive_black_hole"
+    },
+    {
+      "deger": "3,6 × 10⁷ M☉ / 0,13 pc (1995); bugün (3,9 ± 0,1) × 10⁷ M☉",
+      "aciklama": "NGC 4258 (M106) maser diskinden ölçülen kara delik kütlesi",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Messier_106"
+    },
+    {
+      "deger": "15,6 gün; (2,58 ± 1,12) × 10⁸ M☉",
+      "aciklama": "NGC 5548'de Hβ yankı gecikmesi (2023) ve ortalama kara delik kütlesi",
+      "kaynak_url": "https://arxiv.org/pdf/2511.05851"
+    },
+    {
+      "deger": "8,7 yıl; 1,78 milyar km (~12 AB); ~25.000 km/s; sonraki yaklaşma 2031",
+      "aciklama": "S301 yıldızının Sgr A* çevresindeki yörüngesi (ESO, Ağustos 2026)",
+      "kaynak_url": "https://www.eso.org/public/news/eso2612/"
+    },
+    {
+      "deger": "%5,7–%42 (füzyon %0,7)",
+      "aciklama": "Yığılmada kütlenin enerjiye dönüşen kesri, kara deliğin dönmesine bağlı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Black_hole"
+    },
+    {
+      "deger": "43,9 ± 0,6 mikro yay saniyesi",
+      "aciklama": "M87 halkasının 2017, 2018 ve 2021'de değişmeyen çapı",
+      "kaynak_url": "https://arxiv.org/pdf/2509.24593"
+    },
+    {
+      "deger": "M ≈ 1,2 × 10⁸ M☉ × (σ/200 km/s)^3,75; saçılma 0,30 dex",
+      "aciklama": "M–σ ilişkisi (Gebhardt ve ark. 2000; 26 galaksi)",
+      "kaynak_url": "https://arxiv.org/pdf/astro-ph/0006289"
+    },
+    {
+      "deger": "1,26 × 10³¹ W/M☉; 50 milyon yıl",
+      "aciklama": "Eddington parlaklığı ve ε = 0,1 için Salpeter (e-katlanma) zamanı",
+      "kaynak_url": "https://ned.ipac.caltech.edu/level5/Sept13/Shen/Shen1.html"
+    },
+    {
+      "deger": "z = 7,64; (1,6 ± 0,4) × 10⁹ M☉",
+      "aciklama": "J0313–1806 kuasarı (Ocak 2021) ve kara deliği",
+      "kaynak_url": "https://en.wikipedia.org/wiki/QSO_J0313%E2%88%921806"
+    },
+    {
+      "deger": "z ≈ 10,1; ~470 milyon yıl; ~4 × 10⁷ M☉",
+      "aciklama": "UHZ1: ev sahibinin yıldızları kadar ağır, aşırı kütleli kara delik",
+      "kaynak_url": "https://arxiv.org/html/2308.02654v3"
+    },
+    {
+      "deger": "~10⁸ M☉ (Güneş benzeri yıldız)",
+      "aciklama": "Hills kütlesi: bundan ağır kara delik yıldızı parçalamadan yutar",
+      "kaynak_url": "https://arxiv.org/pdf/1801.10180"
+    },
+    {
+      "deger": "36 milyar M☉; ~5 milyar ışık yılı",
+      "aciklama": "Kozmik At Nalı'ndaki uyuyan kara delik (2025)",
+      "kaynak_url": "https://www.sci.news/astronomy/cosmic-horseshoe-black-hole-14122.html"
+    },
+    {
+      "deger": "~5 × 10¹⁰ M☉",
+      "aciklama": "Işık saçarak beslenen kara delikler için kuramsal üst sınır (King 2016)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Supermassive_black_hole"
+    }
+  ],
+  "sozluk": [
+    {
+      "terim": "hız dağılımı",
+      "tanim": "Bir yıldız topluluğundaki yıldızların hızlarının ortalama hız çevresinde ne kadar saçıldığını gösteren ölçü; tayf çizgilerini genişletir."
+    },
+    {
+      "terim": "maser",
+      "tanim": "Gaz bulutlarındaki moleküllerin belirli bir mikrodalga ışığı kendiliğinden güçlendirerek yaydığı çok parlak ve keskin sinyal; lazerin mikrodalga karşılığı."
+    },
+    {
+      "terim": "yankı haritalama",
+      "tanim": "Aktif çekirdekte gaz bulutlarının disk parlamasına verdiği gecikmeli tepkiden bulutların uzaklığını ve kara deliğin kütlesini bulma yöntemi."
+    },
+    {
+      "terim": "geniş çizgi bölgesi",
+      "tanim": "Kara deliğe yakın, hızla dönen ve Doppler etkisiyle tayf çizgilerini genişleten gaz bulutlarının bölgesi."
+    },
+    {
+      "terim": "çerçeve sürüklenmesi",
+      "tanim": "Dönen kütlenin çevresindeki uzay-zamanı kendisiyle birlikte sürüklemesi; Lense–Thirring etkisi de denir."
+    },
+    {
+      "terim": "en içteki kararlı yörünge",
+      "tanim": "Kara deliğin çevresinde maddenin hâlâ kararlı çember yörüngede kalabildiği en küçük yarıçap; içinde madde ufka dalar."
+    },
+    {
+      "terim": "ergosfer",
+      "tanim": "Dönen kara deliğin olay ufkunun dışında, uzay-zaman sürüklendiği için hiçbir şeyin yerinde duramadığı bölge."
+    },
+    {
+      "terim": "ışınım verimi",
+      "tanim": "Kara deliğe düşen kütlenin ışığa dönüşen kesri; dönmeye göre yaklaşık 0,057 ile 0,42 arasında."
+    },
+    {
+      "terim": "M–σ ilişkisi",
+      "tanim": "Galaksi merkezindeki kara deliğin kütlesinin, şişkinlikteki yıldızların hız dağılımıyla sıkı biçimde artması."
+    },
+    {
+      "terim": "şişkinlik",
+      "tanim": "Sarmal galaksilerin merkezindeki yuvarlak yıldız topluluğu; eliptik galaksilerde galaksinin tamamı."
+    },
+    {
+      "terim": "dex",
+      "tanim": "Logaritmik büyüklük farkı: 1 dex on kat, 0,3 dex yaklaşık iki kat demektir."
+    },
+    {
+      "terim": "Eddington sınırı",
+      "tanim": "Işığın dışa itişinin kütleçekiminin içe çekişini dengelediği en büyük kararlı parlaklık; kütleyle orantılıdır."
+    },
+    {
+      "terim": "Salpeter zamanı",
+      "tanim": "Eddington sınırında beslenen bir kara deliğin kütlesini e (≈2,718) katına çıkarması için gereken süre; ε = 0,1 için yaklaşık 50 milyon yıl."
+    },
+    {
+      "terim": "kara delik tohumu",
+      "tanim": "Sonradan süper kütleli kara deliğe büyüyecek ilk kara delik; hafif (onlarca–yüzlerce M☉) ya da ağır (~10⁵ M☉) olabilir."
+    },
+    {
+      "terim": "doğrudan çöküş",
+      "tanim": "Metal içermeyen bir gaz bulutunun yıldızlara bölünmeden çöküp yaklaşık 10⁵ Güneş kütleli bir kara delik oluşturduğu varsayılan süreç."
+    },
+    {
+      "terim": "aşırı kütleli kara delik",
+      "tanim": "Ev sahibi galaksinin yıldız kütlesine göre yerel ilişkilerin beklediğinden çok daha ağır kara delik; erken evrende JWST ile bulundu."
+    },
+    {
+      "terim": "gelgit yırtılma olayı",
+      "tanim": "Dev bir kara deliğe çok yaklaşan yıldızın gelgit kuvvetiyle parçalanması ve enkazın yutulurken aylarca parlaması."
+    },
+    {
+      "terim": "gelgit yarıçapı",
+      "tanim": "Kara deliğin gelgit etkisinin yıldızın kendi kütleçekimini yendiği, yıldızın parçalandığı uzaklık."
+    },
+    {
+      "terim": "Hills kütlesi",
+      "tanim": "Gelgit yarıçapının olay ufkuna eşit olduğu kara delik kütlesi; Güneş benzeri yıldız için yaklaşık 10⁸ M☉."
+    },
+    {
+      "terim": "son parsek sorunu",
+      "tanim": "Birleşen galaksilerdeki iki dev kara deliğin, kütleçekim dalgalarının devraldığı uzaklığa inemeden yaklaşık bir parsekte takılabilmesi."
+    }
+  ],
+  "defter_notu": [
+    "Süper kütleli kara delik: 10⁵–10¹⁰ M☉. Fikir: Salpeter–Zeldoviç 1964, Lynden-Bell 1969. Kuşkusuz dinamik kanıt yalnız birkaç galakside (Samanyolu, M31, M32, NGC 4395).",
+    "Tartma yolları: yıldız yörüngesi (S2), gaz (M87, Hubble 1994: 2,4 milyar), maser (NGC 4258: 0,13 pc'de 3,6–3,9 × 10⁷ M☉), yankı haritalama (NGC 5548: 15,6 gün, 2,6 × 10⁸), EHT gölgesi. M = v² r / G.",
+    "S301 (ESO 2026): 8,7 yıl, 1,78 milyar km (~12 AB, ~140 Rs), 25.000 km/s (%8 c). Çerçeve sürüklenmesiyle dönmeyi ölçecek; 2 tur gerekli, sonraki geçiş 2031.",
+    "Yığılma verimi %5,7–%42 (dönmeye göre), füzyon %0,7. Ortalama kuasar verimi ~0,1.",
+    "M87 halkası 2017–2018–2021: çap 43,9 µas sabit; parlak bölge 30–45° döndü; kutuplanma %15 → %5. Sabit halka = kütleçekim, değişen parlaklık = gaz.",
+    "M–σ (2000): M ≈ 1,2 × 10⁸ (σ/200)^3,75 (Gebhardt) ya da 1,30 × 10⁸ (σ/200)^4,72 (Merritt–Ferrarese); saçılma ~0,3 dex. Kormendy–Ho 2013: disklerle ilişki yok.",
+    "Eddington: 1,26 × 10³¹ W × M/M☉. Salpeter zamanı ε = 0,1 → 50 milyon yıl. 100 M☉ → 10⁹ M☉: ~800 milyon yıl.",
+    "Tohum sorunu: J0313–1806 z = 7,64, 1,6 × 10⁹ M☉, evren ~680 milyon yaşında. UHZ1 z ≈ 10,1, ~4 × 10⁷ M☉ ≈ ev sahibi yıldız kütlesi (aşırı kütleli). Ağır tohum ~10⁵ M☉ (doğrudan çöküş).",
+    "Gelgit yırtılma: Hills 1975, Rees 1988 (yarısı bağlı kalır). r_t ≈ R* (M/M*)^(1/3). Hills kütlesi ~10⁸ M☉. ~100 olay (2024), %1 jetli. AT 2024tvd merkez dışı.",
+    "Son parsek sorunu; OJ 287 aday (12 yıl, 18 milyar + 150 milyon M☉ modeli). En büyükler: At Nalı 36 milyar (2025), TON 618 ~40 milyar (dolaylı). Üst sınır ~5 × 10¹⁰ (King 2016)."
+  ],
+  "sorular": [
+    {
+      "soru": "Uzak galaksilerde tek tek yıldızların yörüngesi izlenemiyorsa merkezdeki kara deliğin kütlesi nasıl tahmin edilir?",
+      "cevap": "Merkezdeki çok sayıda yıldızın hızlarının ne kadar saçıldığına, yani hız dağılımına bakılır; dağılım tayf çizgilerini genişletir. Ayrıca dönen gazın ya da maserlerin hızları ve aktif çekirdeklerde yankı haritalama kullanılır."
+    },
+    {
+      "soru": "NGC 4258'in maser ölçümü neden dev kara deliklerin en güçlü kanıtlarından biri sayılır?",
+      "cevap": "Maserler Kepler yasasına tam uyan ince bir diskte dönüyor ve 0,13 parseklik küçük bir hacme yaklaşık 4 × 10⁷ M☉ sığdığını gösteriyor. Bu kadar sıkışık bir hacimde Güneş kütleli kara deliklerden bir küme olsa cisimler çarpışır ve küme uzun süre dayanamazdı; geriye tek bir kara delik kalıyor."
+    },
+    {
+      "soru": "Yankı haritalamada hangi iki ölçüm birleştirilir ve f çarpanı neden gerekir?",
+      "cevap": "Geniş çizginin diskteki değişime gecikmesi (ışık hızıyla çarpılınca bulutların uzaklığı) ve çizgi genişliği (gazın hızı). f, bulutların disk mi küme mi olduğu gibi bilinmeyen geometriyi karşılar; seçimi sonucu kolayca yüzde 30–40 değiştirir."
+    },
+    {
+      "soru": "S301 neden S2'den daha değerli bir yıldız olabilir?",
+      "cevap": "Sgr A*'a S2'den yaklaşık on kat daha yakın (~12 AB, ~140 Rs) geçiyor ve 8,7 yılda dolanıyor. Bu yakınlıkta kara deliğin dönmesinin yarattığı çerçeve sürüklenmesi yörüngede ölçülebilir bir kayma oluşturabilir; böylece dönme bir modelden değil, bir yıldızın hareketinden ölçülebilir."
+    },
+    {
+      "soru": "Bir kilogram madde dönmeyen bir kara deliğe düşerse, Güneş'teki füzyona göre kaç kat enerji verir?",
+      "cevap": "Dönmeyen kara delikte verim 0,057, füzyonda 0,007: 0,057 ÷ 0,007 ≈ 8 kat. Joule olarak yaklaşık 5,1 × 10¹⁵ J ile 6,3 × 10¹⁴ J."
+    },
+    {
+      "soru": "EHT'nin üç yıllık M87 gözlemlerinde neyin değişmeyip neyin değiştiği, halkanın gerçekliği hakkında ne söyler?",
+      "cevap": "Halkanın çapı (43,9 mikro yay saniyesi) sabit kaldı; parlak bölgenin yeri ve kutuplanma değişti. Kütleye bağlı olan boyutun sabit kalması halkanın kara deliğin kütleçekimine ait olduğunu, değişen parlaklık ise türbülanslı gaz akışını gösterir."
+    },
+    {
+      "soru": "σ = 100 km/s için Merritt–Ferrarese M–σ ilişkisi kaç Güneş kütlesi öngörür? Ölçülen Sgr A* ile karşılaştır.",
+      "cevap": "1,30 × 10⁸ × 0,5^4,72 ≈ 1,30 × 10⁸ × 0,038 ≈ 4,9 × 10⁶ M☉. Ölçülen yaklaşık 4,3 × 10⁶ M☉; fark yüzde 15 kadar, ilişkinin iki katlık saçılması içinde."
+    },
+    {
+      "soru": "M–σ ilişkisi neden şaşırtıcıdır?",
+      "cevap": "Kara deliğin kütleçekimi yalnızca çok yakın çevresinde baskındır; şişkinlikteki yıldızlar binlerce ışık yılı ötededir ve onu neredeyse hissetmez. Buna rağmen sıkı bir ilişki olması, kara delik ile galaksinin geçmişte birbirini etkilediğini ya da birleşmelerle birlikte büyüdüğünü düşündürür."
+    },
+    {
+      "soru": "Eddington sınırında ε = 0,1 ile beslenen bir kara delik 10⁵ M☉'den 10⁸ M☉'e kaç yılda çıkar?",
+      "cevap": "Büyüme 1000 kat; ln(1000) ≈ 6,9 Salpeter zamanı. 6,9 × 50 milyon yıl ≈ 345 milyon yıl."
+    },
+    {
+      "soru": "Işınım verimi artınca kara deliğin büyümesi neden yavaşlar?",
+      "cevap": "Salpeter zamanı ε / (1 − ε) ile orantılıdır. Verim yüksekse düşen kütlenin daha büyük kısmı ışık olarak kaçar ve kara deliğe eklenmez; ayrıca güçlü ışık beslemeyi Eddington sınırında daha erken frenler. ε = 0,42 için süre ~330 milyon yıla çıkar."
+    },
+    {
+      "soru": "UHZ1'i özel yapan nedir ve neden ağır tohum fikrini destekler?",
+      "cevap": "Evren ~470 milyon yaşındayken ~4 × 10⁷ M☉'lik bir kara delik taşır ve bu kütle ev sahibinin bütün yıldızları kadardır; yakın evrende oran binde birdir. 100 M☉'lik bir tohum Eddington hızıyla bu kütleye ~645 milyon yılda ulaşırdı, ki bu evrenin o anki yaşından uzundur; 10⁵ M☉'lik bir tohum ise ~300 milyon yılda yetişir."
+    },
+    {
+      "soru": "Neden çok büyük kara delikler Güneş benzeri yıldızları parçalamadan yutar?",
+      "cevap": "Gelgit yarıçapı kütlenin küp köküyle, olay ufku ise kütleyle doğru orantılı büyür. Yaklaşık 10⁸ M☉'de (Hills kütlesi) ikisi eşitlenir; daha büyük kara deliklerde yıldız parçalanacağı noktaya varmadan ufkun içine girer ve parlama görülmez."
+    },
+    {
+      "soru": "Son parsek sorunu nedir?",
+      "cevap": "Birleşen galaksilerdeki iki dev kara delik yaklaşık bir parsekte birbirinin çevresinde takılabilir; çünkü orada çevrelerindeki yıldız ve gaz onlardan yeterince enerji alamaz, kütleçekim dalgaları ise henüz etkili değildir. Gaz bulutları ya da basık yörüngeli yıldızlar çifti daha içeri itebilir."
+    },
+    {
+      "soru": "Kozmik At Nalı'ndaki kara deliğin olay ufku yarıçapı kaç AB'dir?",
+      "cevap": "Rs ≈ 2,953 km × 3,6 × 10¹⁰ ≈ 1,06 × 10¹¹ km; 1,496 × 10⁸ km'ye bölünce ≈ 711 AB, Neptün'ün yörüngesinin ~24 katı."
+    }
+  ],
+  "kaynaklar": [
+    {
+      "ad": "Wikipedia, Supermassive black hole",
+      "url": "https://en.wikipedia.org/wiki/Supermassive_black_hole"
+    },
+    {
+      "ad": "Wikipedia, Black hole",
+      "url": "https://en.wikipedia.org/wiki/Black_hole"
+    },
+    {
+      "ad": "Wikipedia, Messier 106",
+      "url": "https://en.wikipedia.org/wiki/Messier_106"
+    },
+    {
+      "ad": "Lu ve ark. 2025, Supermassive Black Hole and Broad-line Region in NGC 5548: 2023 Reverberation Mapping Results (arXiv:2511.05851)",
+      "url": "https://arxiv.org/pdf/2511.05851"
+    },
+    {
+      "ad": "ESO eso2612, Milky Way's fastest star orbits our supermassive black hole so closely it feels its spin (19 Ağustos 2026)",
+      "url": "https://www.eso.org/public/news/eso2612/"
+    },
+    {
+      "ad": "ALMA (NAOJ), M87* One Year Later: Proof of a Persistent Black Hole Shadow (Ocak 2024)",
+      "url": "https://alma-telescope.jp/en/news/bhshadow-202401"
+    },
+    {
+      "ad": "EHT Collaboration 2025, Horizon-scale variability of M87* from 2017–2021 EHT observations (arXiv:2509.24593)",
+      "url": "https://arxiv.org/pdf/2509.24593"
+    },
+    {
+      "ad": "Gebhardt ve ark. 2000, A Relationship Between Nuclear Black Hole Mass and Galaxy Velocity Dispersion (arXiv:astro-ph/0006289)",
+      "url": "https://arxiv.org/pdf/astro-ph/0006289"
+    },
+    {
+      "ad": "Merritt ve Ferrarese 2000, The M–σ Relation for Supermassive Black Holes (arXiv:astro-ph/0008310)",
+      "url": "https://ar5iv.labs.arxiv.org/html/astro-ph/0008310"
+    },
+    {
+      "ad": "Kormendy ve Ho 2013, Coevolution (Or Not) of Supermassive Black Holes and Host Galaxies (arXiv:1304.7762)",
+      "url": "https://arxiv.org/abs/1304.7762v1"
+    },
+    {
+      "ad": "Yue Shen, The Mass of Quasars (NED derlemesi, giriş)",
+      "url": "https://ned.ipac.caltech.edu/level5/Sept13/Shen/Shen1.html"
+    },
+    {
+      "ad": "Wikipedia, QSO J0313−1806",
+      "url": "https://en.wikipedia.org/wiki/QSO_J0313%E2%88%921806"
+    },
+    {
+      "ad": "Natarajan ve ark. 2023, First Detection of an Over-Massive Black Hole Galaxy UHZ1 (arXiv:2308.02654)",
+      "url": "https://arxiv.org/html/2308.02654v3"
+    },
+    {
+      "ad": "Chandra X-ray Observatory blog, UHZ1 duyurusu (6 Kasım 2023)",
+      "url": "https://chandra.cfa.harvard.edu/blog/node/861"
+    },
+    {
+      "ad": "Sci.News, Webb Detects Small and Vigorous Black Hole in Early Universe (GN-z11, Haziran 2023)",
+      "url": "https://www.sci.news/astronomy/webb-supermassive-black-hole-early-universe-11980.html"
+    },
+    {
+      "ad": "Space.com, The James Webb Space Telescope's mysterious Little Red Dots may be overfeeding black holes (Eylül 2026)",
+      "url": "https://www.space.com/astronomy/black-holes/the-james-webb-space-telescopes-mysterious-little-red-dots-may-be-overfeeding-black-holes"
+    },
+    {
+      "ad": "Wikipedia, Tidal disruption event",
+      "url": "https://en.wikipedia.org/wiki/Tidal_disruption_event"
+    },
+    {
+      "ad": "Stone, Kesden, Cheng ve van Velzen, Stellar Tidal Disruption Events in General Relativity (arXiv:1801.10180)",
+      "url": "https://arxiv.org/pdf/1801.10180"
+    },
+    {
+      "ad": "Komossa ve ark. 2021, Supermassive binary black holes and the case of OJ 287 (arXiv:2104.12901)",
+      "url": "https://ar5iv.labs.arxiv.org/html/2104.12901"
+    },
+    {
+      "ad": "Sci.News, Astronomers Discover Most Massive Black Hole Yet (Kozmik At Nalı, Ağustos 2025)",
+      "url": "https://www.sci.news/astronomy/cosmic-horseshoe-black-hole-14122.html"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "d35-1",
+    "soru": "MESSENGER'ın verileriyle Merkür'ün çekirdeği hakkında 2019'da ne bulundu?",
+    "secenekler": [
+      "Merkür'ün hiç metal çekirdeği olmadığı",
+      "Çekirdeğin tamamen sıvı olduğu",
+      "Çekirdeğin içinde, çekirdeğin yaklaşık yarısı büyüklüğünde katı bir iç çekirdek olduğu",
+      "Çekirdeğin gezegen hacminin yalnızca %15'i olduğu"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre Genova'nın ekibi Nisan 2019'da MESSENGER'ın radyo izleme verileriyle çekim alanını inceledi ve yaklaşık 2000 km çaplı, çekirdeğin yaklaşık yarısı büyüklüğünde katı bir iç çekirdek bildirdi. 2007'deki librasyon ölçümleri ise çekirdeğin bir kısmının eriyik olduğunu göstermişti. %15, Dünya'nın çekirdeğinin hacim payıdır.",
+    "ders": "d35",
+    "bolum": 2
+  },
+  {
+    "id": "d35-2",
+    "soru": "Merkür'de bir güneş günü (gün doğumundan gün doğumuna) yaklaşık ne kadar sürer?",
+    "secenekler": [
+      "58,6 Dünya günü, dönüş süresi kadar",
+      "88 Dünya günü, bir Merkür yılı kadar",
+      "Yaklaşık 176 Dünya günü, yani iki Merkür yılı",
+      "24 saat, Dünya'daki gibi"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre Merkür iki turda üç kez döner (3:2 rezonans). Dönüş ve dolanma aynı yönde olduğu için 1/S = 1/58,646 − 1/87,969 ile S ≈ 175,9 gün çıkar; NASA 175,94 gün verir. Bu, iki Merkür yılı ya da üç dönüşe eşittir.",
+    "ders": "d35",
+    "bolum": 5
+  },
+  {
+    "id": "d35-3",
+    "soru": "Venüs, Dünya'dan daha az güneş enerjisi soğurduğu hâlde yüzeyi neden 737 K'dir?",
+    "secenekler": [
+      "Güneş'e Merkür'den daha yakın olduğu için",
+      "İçindeki radyoaktif elementler yüzeyi ısıttığı için",
+      "92 barlık karbondioksit atmosferi yüzeyin yaydığı ısıyı hapsettiği için; sera etkisi yaklaşık 510 K ekler",
+      "Bulutları güneş ışığının tamamını soğurduğu için"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre Venüs'ün Bond albedosu 0,77'dir; parlak bulutlar ışığın çoğunu yansıtır ve kara cisim sıcaklığı yalnızca 226,6 K'dir. Ama kalın CO₂ atmosferi yüzeyden kaçan kızılötesi ısıyı tutar: 737 − 226,6 ≈ 510 K'lik bir sera ısınması. Dünya'da bu fark yalnızca 34 K'dir. Venüs Güneş'e Merkür'den daha uzaktır.",
+    "ders": "d35",
+    "bolum": 11
+  },
+  {
+    "id": "d35-4",
+    "soru": "Maat Mons yakınındaki volkan bacasıyla ilgili 2023 bulgusu için hangisi doğrudur?",
+    "secenekler": [
+      "Bir iniş aracı püskürmeyi yerinde fotoğrafladı",
+      "Magellan'ın 1991'de sekiz ay arayla çektiği radar görüntülerinde baca büyüyüp biçim değiştirdi; en iyi açıklama püskürme, ama duvar çökmesi dışlanamıyor",
+      "Venus Express bacadan yükselen lavı kızılötesinde canlı izledi",
+      "Bulgu, Venüs'te volkan olmadığını kanıtladı"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre Herrick ve Hensley, Magellan'ın Şubat ve Ekim 1991 görüntülerini karşılaştırdı: baca yaklaşık 2,2 km²'den 4 km²'ye büyüdü, biçimi bozuldu ve neredeyse ağzına kadar doldu. Modellere göre en iyi açıklama püskürmedir; ancak depremle tetiklenen bir duvar çökmesi de mümkündür, bu yüzden güçlü ama kesin olmayan bir kanıttır.",
+    "ders": "d35",
+    "bolum": 10
+  }
+]

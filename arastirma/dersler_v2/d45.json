@@ -1,0 +1,591 @@
+{
+  "id": "d45",
+  "unite": "yildiz_olum",
+  "yeni": true,
+  "baslik": "Nötron Yıldızları ve Atarcalar (Pulsarlar): Evrenin En Yoğun Saatleri",
+  "ozet": "Bir şehir büyüklüğüne sıkışmış yıldızların keşif hikâyesini (Jocelyn Bell, 1967) ve Nobel tartışmasını, atarcanın deniz feneri gibi nasıl attığını, içyapısını (kabuk, nükleer makarna, bilinmeyen çekirdek), kütle sınırını ve NICER'in yarıçap ölçümlerini öğreneceksin. Magnetarları, milisaniye atarcalarını, Einstein'ı sınayan çift atarcaları, galaksi boyunda kütleçekim dalgası dedektörünü ve hızlı radyo patlamalarıyla bağlarını göreceksin.",
+  "on_bilgi": [
+    "d3",
+    "d5",
+    "d6"
+  ],
+  "bolumler": [
+    {
+      "baslik": "Bir şehir boyunda yıldız: kâğıttan göğe",
+      "paragraflar": [
+        "d6'da büyük kütleli bir yıldızın demir çekirdeğinin nasıl çöktüğünü ve geride çoğu zaman bir nötron yıldızı kaldığını gördün: bir Güneş'ten fazla kütle, NASA'ya göre yaklaşık 20 km çaplı bir küreye sıkışmış. Bu derste o küreye yakından bakacağız. Nasıl keşfedildi, nasıl atar, içinde ne var, ne kadar ağır olabilir, yüzeyinde zaman nasıl akar, en güçlü mıknatısları ve en düzenli saatleri nasıl üretir? Wikipedia'nın derlediği değerlere göre tipik bir nötron yıldızının kütlesi yaklaşık 1,4 Güneş kütlesi (M☉), yarıçapı 10 km mertebesindedir; birazdan NICER ölçümleriyle bu sayının 12–13 km'ye yakın olduğunu göreceksin.",
+        "Nötron yıldızları gözlenmeden otuz yıldan fazla önce kâğıt üstünde doğdu. James Chadwick nötronu keşfettikten iki yıl bile geçmeden, gökbilimciler Walter Baade ve Fritz Zwicky Aralık 1933'teki Amerikan Fizik Derneği toplantısında, Ocak 1934'te de yayımladıkları 'On Super-Novae' makalesinde iki yeni fikir ortaya attı: süpernovalar ayrı bir patlama türüdür ve bu patlamalar nötron yıldızları oluşturabilir. Süpernova ve nötron yıldızı terimlerini de onlar kullandı. Lev Landau'nun 1931'de benzer cisimleri sezdiği söylenir; Wikipedia, onun nötron yıldızlarını öngördüğü iddiasının yanlış olduğunu not eder.",
+        "1939'da Physical Review dergisinin aynı sayısında iki makale çıktı. Richard Tolman, Einstein'ın denklemlerinin akışkan küreler için çözümlerini verdi; J. Robert Oppenheimer ve George Volkoff bu çözümleri nötronlardan oluşan bir yıldıza uyguladı. Nötronları birbirini hiç itmeyen soğuk bir gaz gibi varsaydıklarında, böyle bir yıldızın taşıyabileceği en büyük kütle yaklaşık 0,7 M☉ çıktı. Bu sayı yanlış çıkacaktı ama soru doğruydu: bir nötron yıldızının bir kütle sınırı vardır. Gözlem ise 1967'yi bekledi. Bugün Samanyolu ve Macellan Bulutları'nda yaklaşık 3.200 nötron yıldızı biliniyor, çoğu radyo atarcası; yalnız Samanyolu'nda toplam sayının yaklaşık bir milyar olduğu tahmin ediliyor. Bilinenlerin yaklaşık %5'i çift sistemdedir; en yakını, yaklaşık 400 ışık yılı ötedeki RX J1856.5-3754'tür.",
+        "Nötron yıldızları doğdukları yerde de kalmaz. Wikipedia'ya göre süpernova patlaması yeni doğan yıldıza bir tekme vurur ve ona saniyede yaklaşık 400 km'lik bir hız kazandırabilir. Bu hızla bir milyon yılda ne kadar yol alınır? Bir milyon yıl yaklaşık 3,16 × 10¹³ saniyedir; 400 × 3,16 × 10¹³ ≈ 1,26 × 10¹⁶ km, yani yaklaşık 1.300 ışık yılı. Bu yüzden yaşlı bir atarcanın, onu doğuran süpernova kalıntısından çoktan uzaklaşmış olması şaşırtıcı değildir; Yengeç gibi genç olanlar ise hâlâ kalıntılarının ortasında durur."
+      ],
+      "akilda": "Nötron yıldızı: yaklaşık 1,4 M☉, yarıçap 10–13 km. Baade ve Zwicky 1933–34'te süpernovaların nötron yıldızı bırakabileceğini önerdi; Oppenheimer ve Volkoff 1939'da ilk kütle sınırını (0,7 M☉) hesapladı. Bugün yaklaşık 3.200 tanesi biliniyor; galakside yaklaşık bir milyar olduğu tahmin ediliyor."
+    },
+    {
+      "baslik": "1967: Kayıt kâğıdındaki pürüz",
+      "paragraflar": [
+        "Jocelyn Bell, Cambridge'de doktora öğrencisiyken, yıldızların ışığının güneş rüzgârından geçerken titreşmesini incelemek için kurulan bir radyo teleskobunun yapımında çalıştı. Sky & Telescope'a göre teleskop, yaklaşık 2.000 tahta direğe gerilmiş bakır tel ve kablolardan oluşuyor, dört buçuk akrelik, yani yaklaşık 18.000 m²'lik (18 dönüm kadar) bir alanı kaplıyordu. Teleskop kayıtlarını kâğıt şeritlere çiziyordu ve Bell bu kâğıtları elle inceliyordu. 6 Ağustos 1967'de, 500 metrelik kâğıt kaydın içinde yaklaşık 5 milimetrelik bir pürüz gözüne çarptı. Bu, ne yıldız titreşmesine ne de bilinen bir parazite benziyordu.",
+        "Danışmanı Antony Hewish önce bunun insan yapımı bir parazit olduğunu düşündü. Bell kaynağı haftalarca izledi ve 28 Kasım 1967'de kaydı hızlı bir kâğıtla alarak sinyalin, her 1,337 saniyede bir tekrarlanan ve her biri yaklaşık 0,3 saniye süren son derece düzenli atımlardan oluştuğunu gördü. Ekip kaynağa şaka yollu 'küçük yeşil adamlar' sözünden LGM-1 adını taktı. Bell'in kendi sözleriyle bu ciddi değildi; başka bir uygarlıktan sinyal aldıklarına gerçekten inanmıyorlardı. 21 Aralık 1967'de Bell gökyüzünün başka bir yerinde ikinci bir atan kaynak buldu. Gökyüzünün farklı köşelerinde aynı tuhaf yöntemle sinyal gönderen iki uygarlık olması akla yatkın değildi; uzaylı fikri iyice düştü.",
+        "Sonuçlar 24 Şubat 1968'de Nature dergisinde yayımlandı. İlk kaynak önce CP 1919, bugün PSR B1919+21 adıyla bilinir; buradaki PSR, İngilizce pulsar kelimesinin kısaltmasıdır ve sayılar kaynağın gökteki konumunu gösterir. Türkçede bu cisimlere atarca diyoruz. Keşfin en öğretici yanı şudur: büyük buluş bir kuramın sınanmasından değil, verideki küçük bir tuhaflığın ciddiye alınmasından çıktı. Bell, beklenmeyeni parazit diye silmek yerine onu sabırla izledi."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Atımın süresinden kaynağın boyu",
+        "metin": "Bir cisim kendi boyundan daha kısa sürede bütünüyle parlayıp sönemez; çünkü uzak kenarından gelen değişim yakın kenarından gelenden ışığın o yolu aldığı süre kadar geç ulaşır. Sky & Telescope'a göre ilk atarcanın atımlarından kaynağın yaklaşık onda bir ışık saniyesi boyunda olduğu anlaşıldı. Işık hızı yaklaşık 299.792 km/s. 0,1 × 299.792 ≈ 30.000 km. Bu, Dünya'nın çapının (12.756 km) yaklaşık 2,4 katı, Güneş'in çapının (yaklaşık 1,39 milyon km) ise yalnız %2'si kadardır. Sonuç: sıradan bir yıldız bu kadar hızlı atamaz; kaynak çok küçük ve çok yoğun bir cisim olmalıdır. Bu bir üst sınırdır; gerçek nötron yıldızı bundan binlerce kat küçüktür."
+      },
+      "akilda": "Jocelyn Bell 6 Ağustos 1967'de 500 m kayıt içinde 5 mm'lik bir pürüz fark etti; 28 Kasım'da 1,337 saniyede bir tekrarlanan atımları çözdü, 21 Aralık'ta ikinci atarcayı buldu. Sonuç 24 Şubat 1968'de Nature'da çıktı."
+    },
+    {
+      "baslik": "Nobel tartışması",
+      "paragraflar": [
+        "1974 Nobel Fizik Ödülü radyo astronomiye verildi. Nobel Vakfı'na göre ödülün yarısı Martin Ryle'a gözlemleri ve buluşları, özellikle açıklık sentezi tekniği için, öteki yarısı Antony Hewish'e atarcaların keşfindeki belirleyici rolü için verildi. Sinyali ilk fark eden ve onu sabırla izleyen Jocelyn Bell ödülü alanlar arasında yoktu. Bu karar o günden beri bilim tarihinin en çok tartışılan Nobel kararlarından biridir. Sky & Telescope'un aktardığına göre Bell'in astronomiye ilgisi, 14 yaşındayken babasının eve getirdiği bir astronomi kitabıyla başladı; optik gökbilimci olmamasının nedenini de esprili biçimde, optik gökbilimcinin gece çalışması gerektiği ve kendisinin uykuya ihtiyacı olduğu diye anlatır. Radyo astronomi onu, kimsenin beklemediği bir keşfin tam önüne getirdi.",
+        "Karara açıkça ve sert biçimde itiraz edenlerden biri gökbilimci Fred Hoyle'du. Sky & Telescope, bu tavrın 1983'te William Fowler'a verilen ödülde Hoyle'un kendisinin dışarıda kalmasına katkı yapmış olabileceğini yazar; ama bu bir yorumdur, kanıtlanmış bir neden değil. Bell'in kendi tavrı dikkat çekicidir: Wikipedia'nın aktardığına göre kararda bir acı duymadığını söylemiş ve komitenin kararını desteklemiştir. Doktora öğrencilerinin buluşlarının kime yazılacağı sorusu ise bugün de tartışılıyor.",
+        "Hikâyenin bir devamı var. Bell 2018'de 3 milyon dolarlık Temel Fizikte Özel Breakthrough Ödülü'nü aldı ve paranın tamamını İngiltere'deki Fizik Enstitüsü'ne bağışladı. Bağış, kadınlar, mülteciler ve etnik azınlıklar gibi fizikte az temsil edilen gruplardan doktora öğrencilerini desteklemek için kullanılıyor. d20'de astronomi tarihindeki başka keşif hikâyelerini görebilirsin; bu hikâye, keşfin kime ait olduğu sorusunun da bilimin bir parçası olduğunu hatırlatır."
+      ],
+      "akilda": "1974 Nobel Fizik Ödülü Hewish (atarcalar) ve Ryle (açıklık sentezi) arasında paylaştırıldı; Bell dışarıda kaldı. Hoyle karara itiraz etti; Bell ise kararı desteklediğini söyledi. 2018'de 3 milyon dolarlık Breakthrough Ödülü'nü az temsil edilen öğrencilere bağışladı."
+    },
+    {
+      "baslik": "Deniz feneri: atarca nasıl atar?",
+      "paragraflar": [
+        "Atan bir kaynak neden bu kadar düzenlidir? Mayıs 1968'de Nature'da yayımlanan 'Dönen nötron yıldızları, atan radyo kaynaklarının kökeni' başlıklı makale, kısa süre içinde kabul görecek açıklamayı verdi; Maryland Üniversitesi'nin ders notları bu fikri Thomas Gold'a yazar ve Franco Pacini'nin keşiften önce dönen bir nötron yıldızının radyo dalgası yayabileceğini önerdiğini not eder. Fikre göre çok hızlı dönen ve çok güçlü manyetik alanı olan bir nötron yıldızı, çevresindeki elektrik yüklü gazı neredeyse ışık hızına kadar savurur ve manyetik kutuplarından iki dar ışınım demeti yayar.",
+        "Manyetik eksen dönme ekseniyle çakışmak zorunda değildir; Dünya'nın manyetik kutbu da coğrafi kutbuyla aynı yerde değildir. Bu yüzden yıldız döndükçe demetler gökyüzünü süpürür. Demet her dönüşte Dünya'nın üstünden geçerse biz bir atım görürüz, tıpkı bir deniz fenerinin ışığının her turda gemiye vurması gibi. Benzetmenin sınırını bil: fenerin lambası kendi enerjisini dışarıdan alır ve yavaşlamaz; atarca ise enerjisini dönmesinden alır ve bu yüzden yavaş yavaş yavaşlar. Ayrıca demet çoğu zaman görünür ışık değil, radyo dalgasıdır.",
+        "Wikipedia'ya göre bilinen nötron yıldızlarının dönme periyotları yaklaşık 1,4 milisaniyeden 30 saniyeye kadar uzanır. Bu kadar hızlı dönüşün nedeni çöküştür: dönen bir buz patencisi kollarını kapatınca hızlandığı gibi, yıldızın binlerce kilometrelik çekirdeği 10 km'lik bir küreye büzülünce dönmesi de korkunç ölçüde hızlanır. Bu, fizikte açısal momentumun korunumu denen ilkedir. Demeti bize hiç değmeyen atarcaları göremeyiz; yani bilinen sayılar gerçek sayının yalnız bir kısmıdır.",
+        "Atarca sonsuza kadar atmaz. Wikipedia'ya göre dönme yavaşladıkça radyo mekanizması bir noktada, yani ölüm çizgisi denen sınırda, durur; bu kabaca 10 ile 100 milyon yıl sürer. Bu yüzden nötron yıldızlarının yaklaşık %99'u artık atarca olarak görünmez. Atarcalar enerjilerini nereden aldıklarına göre de ayrılır: dönme enerjisiyle çalışanlar, eşinden düşen maddenin kütleçekim enerjisiyle çalışanlar (X ışını atarcalarının çoğu) ve aşırı güçlü manyetik alanlarının sönmesiyle çalışan magnetarlar."
+      ],
+      "akilda": "Atarca, manyetik ekseni dönme ekseninden sapmış, hızla dönen bir nötron yıldızıdır; demeti her turda Dünya'yı süpürürse atım görürüz (Gold, 1968). Periyotlar 1,4 milisaniye ile 30 saniye arasındadır. Atarcalar 10–100 milyon yılda söner; nötron yıldızlarının yaklaşık %99'u artık atmaz."
+    },
+    {
+      "baslik": "Yavaşlayan topaç: bir atarcanın yaşını ve manyetik alanını okumak",
+      "paragraflar": [
+        "Bir atarcanın periyodu her gün çok az uzar. Bu uzamanın hızına periyot türevi denir; birimi saniyede saniyedir, yani her saniye geçtikçe periyodun kaç saniye uzadığını söyler. Wikipedia'ya göre bu değer tipik olarak 10⁻²² ile 10⁻⁹ arasındadır. Küçük görünür, ama periyodun kendisini ve onun ne hızla uzadığını bilmek, yıldızın içine hiç bakmadan üç şeyi tahmin etmemizi sağlar: ne kadar enerji harcadığını, kaç yaşında olduğunu ve manyetik alanının ne kadar güçlü olduğunu.",
+        "Enerji: dönen bir cismin dönme enerjisi, cismin kütlesinin eksenden ne kadar uzağa dağıldığını gösteren eylemsizlik momentine ve dönme hızının karesine bağlıdır. Nötron yıldızı için eylemsizlik momenti yaklaşık 10³⁸ kg m² alınır (Maryland Üniversitesi ders notlarında 10⁴⁵ g cm²). Dönme yavaşladıkça kaybolan enerji ışınım ve parçacık rüzgârı olarak dışarı akar; buna dönme yavaşlaması gücü denir.",
+        "Yaş: atarca doğduğunda şimdikinden çok hızlı dönüyorduysa ve hep aynı manyetik frenlemeyle yavaşladıysa, yaşı yaklaşık olarak periyodun, periyot türevinin iki katına bölümüdür. Buna karakteristik yaş denir. Varsayımlarına dikkat: başlangıç dönüşü gerçekten çok hızlı değilse ya da frenleme biçimi farklıysa karakteristik yaş gerçek yaştan sapar. Manyetik alan: aynı frenleme modeli, yüzeydeki manyetik alanın periyot ile periyot türevinin çarpımının kareköküyle orantılı olduğunu söyler. Ders notlarındaki kaba formüle göre alan, gauss biriminde, yaklaşık 3 × 10¹⁹ ile bu karekökün çarpımıdır (10.000 gauss 1 teslaya eşittir).",
+        "Bu üç tahminin güzelliği, hepsinin yalnız saatle ölçülebilen iki sayıdan çıkmasıdır. Aşağıdaki örnekte Yengeç atarcası için hepsini kendin hesaplayacaksın; sonuçları Yengeç'in bilinen doğum yılıyla, yani 1054'le karşılaştırma şansın var. Bu karşılaştırma modelin ne kadar iyi çalıştığını, nerede yanıldığını gösterir.",
+        "Bir tutarlılık sınaması daha yapabilirsin. Dönme enerjisi 0,5 × eylemsizlik momenti × açısal hızın karesidir. Yengeç için açısal hız 2π × 29,946 ≈ 188 radyan bölü saniye; karesi yaklaşık 35.400. Enerji ≈ 0,5 × 10³⁸ × 35.400 ≈ 1,8 × 10⁴² J. Bu depo, aşağıdaki örnekte bulacağın yaklaşık 4,4 × 10³¹ W'lık harcamayla 1,8 × 10⁴² / 4,4 × 10³¹ ≈ 4 × 10¹⁰ saniye, yani kabaca 1.300 yıl dayanırdı; bu da karakteristik yaşla aynı mertebe. Yani atarca bulutsuyu aydınlatırken gerçekten kendi dönmesini harcıyor."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Yengeç atarcasının yaşı, alanı ve gücü",
+        "metin": "Wikipedia: periyot P = 0,033392 s, dönme frekansı 29,946 Hz, frekansın azalma hızı 3,7 × 10⁻¹⁰ Hz/s. Periyot türevi = 3,7 × 10⁻¹⁰ / 29,946² ≈ 3,7 × 10⁻¹⁰ / 896,8 ≈ 4,13 × 10⁻¹³. Karakteristik yaş = 0,033392 / (2 × 4,13 × 10⁻¹³) ≈ 4,04 × 10¹⁰ s; yılda 3,156 × 10⁷ s olduğundan ≈ 1.280 yıl. Gerçek yaş 2026 eksi 1054 = 972 yıl: tahmin yaklaşık %30 fazla, ama mertebe doğru. Alan ≈ 3 × 10¹⁹ × karekök (0,033392 × 4,13 × 10⁻¹³) ≈ 3 × 10¹⁹ × 1,17 × 10⁻⁷ ≈ 3,5 × 10¹² gauss ≈ 3,5 × 10⁸ tesla (ders notları yaklaşık 5 × 10¹² gauss yazar). Güç = 4π² × 10³⁸ × 4,13 × 10⁻¹³ / 0,033392³ ≈ 39,5 × 10³⁸ × 1,11 × 10⁻⁸ ≈ 4,4 × 10³¹ W, yani Güneş'in ışınım gücünün (3,828 × 10²⁶ W) yaklaşık 115.000 katı."
+      },
+      "akilda": "Periyot ve periyot türevi üç şey verir: dönme yavaşlaması gücü (eylemsizlik momenti yaklaşık 10³⁸ kg m²), karakteristik yaş (periyot ÷ 2 × türev) ve manyetik alan (yaklaşık 3 × 10¹⁹ × karekök (periyot × türev) gauss). Hepsi basit bir frenleme modeline dayanan tahminlerdir."
+    },
+    {
+      "baslik": "Yengeç atarcası: göğün laboratuvarı",
+      "paragraflar": [
+        "d6'da Yengeç Bulutsusu'nun 1054'te görülen bir süpernovanın kalıntısı olduğunu ve merkezindeki atarcanın saniyede yaklaşık 30 kez attığını gördün. Wikipedia'ya göre atarcayı 10 Kasım 1968'de Richard Lovelace ve arkadaşları Porto Riko'daki Arecibo radyo gözlemevinde buldu; daha önce Staelin ve Reifenstein, Green Bank'teki 91 metrelik antenle bulutsunun yakınında atan kaynaklar bildirmişti. Yaklaşık 33 milisaniyelik periyot, o güne kadarki en hızlı atarcaydı ve dönen nötron yıldızı modelini doğruladı: bu kadar hızlı atan bir beyaz cüce kendi dönüşüyle parçalanırdı. Atarcanın bir süpernova kalıntısının tam ortasında durması, Baade ile Zwicky'nin 1934'teki öngörüsüne de uyuyordu.",
+        "Yengeç atarcası radyonun dışında da atar. 1969'da Cocke, Disney ve Taylor, Arizona'daki Kitt Peak'te 91 cm'lik bir teleskopla görünür ışıkta atımlar yakaladı; Nather, Warner ve Macfarlane bunu doğruladı. Böylece ilk kez bir atarca görünür ışıkta da atarken görüldü. Atımlı ışınım 1,5 teraelektronvolt enerjili gama ışınlarına kadar uzanır; bulutsu ise 2019'da 100 teraelektronvoltun üstünde gama ışını yayarken görüldü. Atarcanın düzenli sinyali X ışını dedektörlerinin zamanlamasını sınamak için, bulutsu da X ışını aletlerinin ayarı için kullanılır.",
+        "Uzaklık konusunda kaynaklar biraz ayrışır: NASA yaklaşık 6.500 ışık yılı verir (d6), Wikipedia ise 2023'teki bir ıraklık ölçümüne dayanarak yaklaşık 6.200 ışık yılı (1.900 parsek) yazar; bu ölçümde atarcanın dev radyo atımlarından yararlanıldı. Atarcanın kütlesi için 1,5 ile 2,5 M☉, yarıçapı için yaklaşık 10 km verilir. Thomas Gold'un fark ettiği gibi, atarcanın dönmesini yitirirken saldığı güç bütün bulutsuyu aydınlatmaya yeter. Bulutsunun mavimsi ışığı, atarcanın rüzgârıyla hızlanan elektronların manyetik alanda sarmal çizerken yaydığı ışınımdır. Yani 970 yıl önce ölmüş bir yıldızın kalbi, bugün hâlâ çevresini yakıyor."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Günde 38 nanosaniye",
+        "metin": "Wikipedia'ya göre Yengeç atarcasının periyodu günde 38 nanosaniye uzar. Bir yılda: 38 × 365,25 ≈ 13.900 nanosaniye ≈ 13,9 mikrosaniye. Bunu saniye başına çevirelim: 38 × 10⁻⁹ s / 86.400 s ≈ 4,4 × 10⁻¹³; önceki bölümde frekanstan bulduğumuz 4,13 × 10⁻¹³'e yakın, fark yuvarlamadan gelir. Bu hızla periyot ne zaman iki katına çıkar? 0,0334 / 4,4 × 10⁻¹³ ≈ 7,6 × 10¹⁰ s ≈ 2.400 yıl; bu, karakteristik yaşın iki katıdır, tam da formülden beklendiği gibi. Gerçekte yavaşlama hızı da zamanla azalır; bu hesap yalnız ölçek verir."
+      },
+      "akilda": "Yengeç atarcası 1968'de Arecibo'da bulundu (yaklaşık 33 milisaniye), 1969'da görünür ışıkta atan ilk atarca oldu. Uzaklığı 6.200–6.500 ışık yılı. Dönme yavaşlaması gücü bütün bulutsuyu besler."
+    },
+    {
+      "baslik": "İçine yolculuk: atmosferden çekirdeğe",
+      "paragraflar": [
+        "Bir nötron yıldızının içine kimse bakamaz; içyapı, bilinen fizik yasalarının, gözlenen kütlelere ve yarıçaplara uyacak biçimde çözülmesiyle çizilir. Wikipedia'daki tabloya göre dışarıdan içeriye katmanlar şöyledir. En dışta birkaç milimetre ile birkaç santimetre kalınlığında bir atmosfer vardır. Altında metrelerle onlarca metre arası kalınlıkta, atom çekirdeklerinin ve elektronların sıvı gibi davrandığı bir okyanus bulunur. Sonra katı kabuk gelir: son derece sert ve pürüzsüzdür. 2020'deki bir çalışmaya göre yüzeydeki dağlar milimetrenin ancak kesirleri kadar yüksek olabilir.",
+        "Daha derinde iç kabuk başlar. Burada atom çekirdekleri gittikçe daha fazla nötron taşır. Bir derinlikte çekirdekler artık fazladan nötron tutamaz; bu sınıra nötron damlaması denir ve ötesinde çekirdeklerin arasını serbest nötronlardan oluşan bir deniz doldurur. İç kabuğun en derin kısmında çekirdekler birbirine yapışıp tuhaf şekiller alır; bunlara nükleer makarna denir ve bir sonraki bölümün konusudur. Kabuğun yoğunluğu dışta yaklaşık 10⁹ kg/m³'ten başlar.",
+        "Kabuğun altında dış çekirdek vardır: Wikipedia'nın ifadesiyle son derece nötronca zengin, düzgün dağılmış madde. İç çekirdekte ne olduğu ise bilinmiyor. Öneriler arasında süperakışkan nötron maddesi, garip madde, pionlar ve kaonlar, serbest kuarklardan oluşan madde ve hiperon denen ağır parçacıklar var. Merkezde yoğunluk 6 ile 8 × 10¹⁷ kg/m³'e, basınç yaklaşık 1,6 × 10³⁴ pascala ulaşır; kıyas için Dünya yüzeyindeki hava basıncı yaklaşık 10⁵ pascaldır. Ortalama yoğunluk 3,7 ile 5,9 × 10¹⁷ kg/m³ arasındadır; bu, bir atom çekirdeğinin içindeki yoğunlukla, yaklaşık 3 × 10¹⁷ kg/m³'le aynı mertebededir.",
+        "Bu sayılar şunu söyler: bir nötron yıldızı, bir şehir büyüklüğüne şişirilmiş dev bir atom çekirdeğine benzer. Benzetmenin sınırı: sıradan çekirdekleri güçlü kuvvet bir arada tutar, nötron yıldızını ise kendi kütleçekimi. Yıldızın içinin neden çökmeden durduğunu, yani nötronların birbirine sıkışmaya direncini, d28'de anlatılan Pauli dışarlama ilkesi ve nötronlar arasındaki itme birlikte açıklar. İç çekirdeğin bileşimi, nötron yıldızı fiziğinin en büyük açık sorusudur ve bir sonraki bölümlerdeki kütle ve yarıçap ölçümleri tam da bu soruya cevap arar."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Bir çay kaşığı nötron yıldızı",
+        "metin": "Wikipedia 10 km yarıçaplı bir yıldız için ortalama yoğunluğu yaklaşık 1,1 × 10¹⁸ kg/m³ verir. Bir çay kaşığı 4,929 mililitre = 4,929 × 10⁻⁶ m³. Kütle = 1,1 × 10¹⁸ × 4,929 × 10⁻⁶ ≈ 5,4 × 10¹² kg; kaynak 5,5 × 10¹² kg'dan fazla der. d6'da NASA'nın bir şeker küpü için verdiği 1 trilyon kg ile aynı mertebe. Daha gerçekçi bir yarıçapla, 12 km ve 1,4 M☉ ile hesaplayalım: kütle 1,4 × 1,988 × 10³⁰ ≈ 2,78 × 10³⁰ kg; hacim (4/3) × π × (1,2 × 10⁴)³ ≈ 7,24 × 10¹² m³; yoğunluk ≈ 3,85 × 10¹⁷ kg/m³. Bu, kaynaktaki 3,7–5,9 × 10¹⁷ aralığının içinde: yarıçap biraz büyüyünce yoğunluk hızla düşer, çünkü hacim yarıçapın küpüyle büyür."
+      },
+      "akilda": "Dıştan içe: milimetre–santimetre atmosfer, metrelik okyanus, sert kabuk, nötron damlamasından sonra serbest nötron denizi ve nükleer makarna, nötronca zengin dış çekirdek ve bileşimi bilinmeyen iç çekirdek. Ortalama yoğunluk atom çekirdeği mertebesinde, 3,7–5,9 × 10¹⁷ kg/m³."
+    },
+    {
+      "baslik": "Nükleer makarna ve sıçrayan atarcalar",
+      "paragraflar": [
+        "İç kabuğun derinliklerinde, yüzeyin yaklaşık bir kilometre altında, yoğunluk suyun yaklaşık 100 trilyon katına ulaşır. Science News'ün aktardığı benzetimlere göre burada çekirdekler birbirine yapışıp kümeler oluşturur: kimi yerde top top, kimi yerde uzun tüpler, kimi yerde düz levhalar. Fizikçiler bunlara makarna adlarını taktı: gnocchi, spagetti ve lazanya. M. E. Caplan, A. S. Schneider ve C. J. Horowitz'in 2018'de Physical Review Letters'ta yayımlanan bilgisayar benzetimleri, lazanya biçimli levhaları gererek bu maddeyi kırmak için çeliği çatlatmaya yetenden 10 milyar kat büyük bir kuvvet gerektiğini buldu. Bu, nükleer makarnayı evrende bilinen en sağlam madde adayı yapar.",
+        "Sağlam bir kabuğun gözlenebilir bir sonucu olabilir. Kabuk ne kadar sağlamsa üstünde o kadar büyük tümsekler, yani dağlar taşıyabilir; dönen bir yıldızdaki tümsek ise sürekli kütleçekim dalgası yayar. Science News'e göre nükleer makarna onlarca santimetre yüksekliğinde dağları taşıyabilir ve bu, LIGO'nun duyabileceği bir sinyal üretebilir. Bir önceki bölümde andığımız 2020 çalışması ise milimetrenin kesirleri kadar dağlar hesaplamıştı. İki tahmin birbirinden çok farklı; bu fark, kabuğun gerçek yapısını hâlâ bilmediğimizi açıkça gösteriyor.",
+        "Atarcaların bazen aniden hızlandığı görülür. Saat gibi düzenli yavaşlayan bir atarcanın dönmesi bir anda biraz artar, sonra yavaşlama yeniden başlar. Buna sıçrama denir. Eskiden kabuğun kırılmasıyla, yani bir yıldız depremiyle açıklanırdı; Wikipedia'ya göre yeni çalışmalar daha çok yıldızın içindeki süperakışkanı işaret ediyor. Süperakışkan, hiç sürtünmeden akabilen bir madde hâlidir. İçerideki nötron süperakışkanı küçük girdaplar hâlinde döner ve bu girdaplar kabuğa takılı kalır. Kabuk yavaşlarken iç kısım hızlı dönmeye devam eder; gerilim birikince girdaplar topluca kurtulur ve açısal momentumlarını kabuğa aktarır. Sonuç: atarca bir anda hızlanır.",
+        "En iyi incelenen örnek, gökteki en parlak radyo atarcası olan Yelken (Vela) atarcasıdır. Büyük sıçramaları yaklaşık 1.000 günde bir gelir. 12 Aralık 2016'daki sıçrama Avustralya'daki Mount Pleasant radyo teleskobuyla atım atım izlendi. Ölçümlere göre dönme frekansı milyonda yaklaşık 1,43 oranında arttı; artış 12,6 saniyeden kısa sürede tamamlandı, yaklaşık 54 saniyelik bir ilk gevşeme izledi. Sıçramadan hemen önce yaklaşık 100 saniye boyunca küçük bir yavaşlama da görüldü. Bu ayrıntılar, kabuk ile iç kısmın ne kadar sıkı bağlı olduğunu ve süperakışkanın nasıl davrandığını sınamak için birer veridir."
+      ],
+      "akilda": "Nükleer makarna (gnocchi, spagetti, lazanya) iç kabukta, yaklaşık 1 km derinlikte; benzetimlere göre çelikten 10 milyar kat sağlam. Sıçramalar, içteki süperakışkan girdaplarının açısal momentumunu birden kabuğa aktarmasıyla açıklanır; Yelken atarcası 2016'da atım atım izlendi."
+    },
+    {
+      "baslik": "Yüzeyde olsaydın: çekim, ışık ve zaman",
+      "paragraflar": [
+        "Bir nötron yıldızının yüzeyi, fizik kitaplarındaki uç örneklerin gerçek olduğu yerdir. Wikipedia'ya göre yüzey çekim ivmesi 10¹² ile 10¹³ m/s² arasındadır, yani Dünya'nınkinin yüz milyar katından fazla. Kurtulma hızı ışık hızının yarısını aşar. Bu çekimde hiçbir şey ayakta duramaz; yüzeydeki en yüksek dağların milimetre mertebesinde kalması da bundandır.",
+        "Bir düşünce deneyi: yüzeyin bir metre üstünden bir cisim bıraksan ne hızla çarpar? Düşme hızı karekök (2 × g × yükseklik) ile bulunur. Aşağıdaki örnekteki g ≈ 1,3 × 10¹² m/s² ile: karekök (2 × 1,3 × 10¹² × 1) ≈ 1,6 × 10⁶ m/s, yani saniyede yaklaşık 1.600 km. Wikipedia aynı deney için yaklaşık 1.400 km/s yazar; fark varsayılan kütleden, yarıçaptan ve görelilik düzeltmelerinden gelir. Her iki durumda da bir metrelik düşüş, Dünya'dan kaçmak için gereken hızın yüz katından fazlasını kazandırır.",
+        "Çekim ışığı da büker. d26'da kütlenin ışığın yolunu eğdiğini gördün; nötron yıldızında bu etki o kadar güçlüdür ki yıldızın normalde görünmeyecek arka yüzünün bir kısmı da görünür hâle gelir. Wikipedia'ya göre yarıçap kütleye göre belirli bir eşiğin altında olsaydı, yani kütleçekim yarıçapının bir buçuk katından küçük olsaydı, ışık yıldızın çevresinde yörüngeye girebilir ve bütün yüzey tek bir noktadan görülebilirdi. Bu bükülme, sonraki bölümde göreceğin NICER ölçümlerinin de temelidir: sıcak lekelerin ışığının ne kadar büküldüğü, yıldızın sıkılığını ele verir.",
+        "Zaman da yavaşlar. d26'daki kütleçekimsel zaman genişlemesi burada gündelik bir etki değil, büyük bir etkidir: Wikipedia'ya göre Dünya'da 10 yıl geçerken nötron yıldızının yüzeyinde yaklaşık 8 yıl geçer. Kara deliklerin yakınındaki zaman genişlemesini uygulamanın Kara delik deneyinde kendin deneyebilirsin; nötron yıldızı yüzeyi, bir kara deliğin olay ufkuna yaklaşmadan önceki ara duraklardan biri gibidir.",
+        "Sıcaklık da uçtadır. Yeni doğmuş bir nötron yıldızının içi 10¹¹ ile 10¹² kelvin arasındadır, yüzeyi on milyon kelvin ya da daha sıcaktır. İç sıcaklık birkaç yılda yaklaşık bir milyon kelvine düşer; yüzey ise bin ile bir milyon yıl arasında yaklaşık bir milyon kelvin civarında kalır. Bu sıcaklıkta yüzey en çok X ışını yayar. En yakın nötron yıldızı RX J1856.5-3754'ün yüzeyi ortalama 434.000 kelvindir; Güneş'in yüzeyi ise yaklaşık 5.780 kelvin."
+      ],
+      "ornek": {
+        "baslik": "Örnek: 1,4 M☉ ve 12 km'lik bir yıldızın çekimi",
+        "metin": "Yüzey çekimi g = G × M / R². G = 6,674 × 10⁻¹¹ (NIST), M = 1,4 × 1,9884 × 10³⁰ ≈ 2,784 × 10³⁰ kg. G × M ≈ 1,858 × 10²⁰. R = 12.000 m, R² = 1,44 × 10⁸. g ≈ 1,858 × 10²⁰ / 1,44 × 10⁸ ≈ 1,29 × 10¹² m/s². Dünya'nın 9,80 m/s²'sine bölersek ≈ 1,3 × 10¹¹ kat. Kurtulma hızı = karekök (2 × G × M / R) = karekök (2 × 1,858 × 10²⁰ / 12.000) ≈ karekök (3,10 × 10¹⁶) ≈ 1,76 × 10⁸ m/s, ışık hızının (2,998 × 10⁸) yaklaşık 0,59 katı. Bu Newton hesabıdır; bu kadar güçlü çekimde genel görelilik düzeltmeleri gerekir, ama sonuç kaynaktaki 'ışık hızının yarısından fazla' ifadesiyle uyumludur."
+      },
+      "akilda": "Yüzey çekimi 10¹²–10¹³ m/s² (Dünya'nın 10¹¹ katından fazla), kurtulma hızı ışık hızının yarısından fazla. Işık bükülür, arka yüzün bir kısmı görünür. Dünya'da 10 yıl geçerken yüzeyde yaklaşık 8 yıl geçer. Yeni doğanın içi 10¹¹–10¹² K."
+    },
+    {
+      "baslik": "Ne kadar ağır olabilir? Kütle sınırı ve kütle boşluğu",
+      "paragraflar": [
+        "Oppenheimer ile Volkoff'un 0,7 M☉'lik sınırı neden yanlış çıktı? Çünkü nötronları birbirini hiç itmeyen bir gaz gibi varsaymışlardı. Wikipedia'ya göre nötronlar arasındaki etkileşimler hesaba katılınca sınır 2 M☉'in üstüne çıkar; hızlı dönüş onu yaklaşık 2,9 M☉'e kadar, katı bir cisim gibi dönen bir yıldızda yaklaşık %18–20 artırabilir. Bu sınıra bugün Tolman–Oppenheimer–Volkoff sınırı, kısaca TOV sınırı denir. Değeri, yoğun maddenin basıncının yoğunlukla nasıl değiştiğini anlatan bağıntıya, yani durum denklemine bağlıdır ve bu denklem iyi bilinmediği için sınır da kesin değildir.",
+        "Tahminler bu yüzden geniş bir aralığa yayılır. 1996'da Kalogera ve Baym 2,2 ile 2,9 M☉ arası verdi. GW170817 birleşmesinin verileri (d6, d16) dönmeyen bir yıldız için sınırı 2,01 ile 2,17 M☉ arasına daralttı; birleşmeden kalan yaklaşık 2,74 M☉'lik cismin 5 ile 10 saniye içinde bir kara deliğe çöktüğü düşünülüyor. d6'da gördüğün gibi NASA kabaca 3 M☉'i sınır gösterir, Universe Today'in aktardığı 2026 tarihli bir çalışma ise NICER ve GW170817 verilerini birleştirerek 2,2 ile 2,3 M☉ arasını önerir.",
+        "Gözlenen en ağır nötron yıldızları bu tartışmanın hakemidir. PSR J0952-0607 için 2,35 ± 0,17 M☉ ölçüldü; bilinen en ağırıdır ama belirsizliği büyüktür. PSR J0348+0432 2,01 ± 0,04 M☉ ile kütlesi iyi belirlenmiş en ağırlardandır. PSR J0740+6620 ise 2,08 ± 0,07 M☉ ile kütlesi hassas ölçülmüş en ağır nötron yıldızı sayılır. Bu kütleler, eşleriyle birlikte dolandıkları yörüngelerin zamanlamasından ölçülür. Atarcanın ışığı eşinin yakınından geçerken eğri uzay-zamanda biraz gecikir; bu Shapiro gecikmesi, eşin kütlesini, dolayısıyla atarcanınkini verir.",
+        "Sınırın öte yanında ne var? Wikipedia'ya göre yaklaşık 2 ile 5 M☉ arasında çok az tıkız cisim gözlenmiştir; buna kütle boşluğu denir. d6'daki GW190814 olayının 2,59 M☉'lik cismi tam bu boşluktadır; Universe Today'in aktardığı 2026 çalışması onu büyük olasılıkla bir kara delik sayar. En ağır nötron yıldızı ile en hafif kara delik arasındaki çizginin tam yeri, nötron yıldızı fiziğinin en güncel sorularından biridir.",
+        "Sınırı daraltmanın bir yolu da birleşmelerdir. İki nötron yıldızı birleşmeden hemen önce birbirini gelgit kuvvetiyle uzatır; ne kadar uzadıkları, yani ne kadar ezilebilir oldukları, içlerindeki maddenin ne kadar yumuşak olduğunu gösterir. Universe Today'in aktardığı, Macar fizikçiler Gábor Kasza ve György Wolf'un 2026 çalışması tam bunu yapar: iki farklı durum denklemi modelini, GW170817'deki ezilebilirlik verisiyle, NICER'in sıcak leke ölçümleriyle ve madde içinde sesin ışıktan hızlı gidemeyeceği koşuluyla sınar. İki model de neredeyse aynı en büyük kütleye, 2,2 ile 2,3 M☉'e, ve yaklaşık 12 km'lik tipik bir yarıçapa varır. Bu, farklı yöntemlerin aynı yere yakınsamaya başladığını gösterir; ama tek bir çalışmadır."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Sınır ne kadar sıkıştı?",
+        "metin": "PSR J0740+6620'nin kütlesi 2,08 ± 0,07 M☉, yani gerçek değer büyük olasılıkla 2,01 ile 2,15 arasında. GW170817'den çıkan sınır 2,01 ile 2,17 M☉. Gözlenen bir nötron yıldızı sınırdan ağır olamayacağına göre, sınırın en az 2,01 M☉ olması gerekir; J0740+6620'nin ortanca değeri 2,08 doğruysa sınır en az 2,08'dir. İki aralık neredeyse üst üste biniyor: doğanın izin verdiği en büyük kütle ile gözlediğimiz en ağır yıldız arasında yalnız birkaç yüzde Güneş kütlesi kalıyor olabilir. PSR J0952-0607'nin 2,35 değeri kesinleşirse ise 2,17'lik üst sınırla çelişir; bu yüzden onun büyük belirsizliğini (± 0,17) hesaba katmak gerekir: 2,35 eksi 0,17 = 2,18, sınırın hemen üstü."
+      },
+      "akilda": "İlk sınır (1939) 0,7 M☉ idi; etkileşimlerle 2 M☉'in üstüne çıkar. Güncel tahminler 2,01–2,17 (GW170817), 2,2–2,3 (2026) ve kabaca 3 M☉ (NASA) arasında. Ölçülen en ağırlar: J0952-0607 2,35 ± 0,17, J0740+6620 2,08 ± 0,07 M☉. 2–5 M☉ arası kütle boşluğudur."
+    },
+    {
+      "baslik": "NICER: sıcak lekelerden yarıçap ölçmek",
+      "paragraflar": [
+        "Kütleyi ölçmek görece kolaydır; yarıçapı ölçmek çok daha zordur, çünkü 12 km'lik bir küreyi binlerce ışık yılı öteden göremeyiz. NASA'nın Uluslararası Uzay İstasyonu'na yerleştirilmiş X ışını teleskobu NICER bunu dolaylı yoldan yapar. Bir milisaniye atarcasının manyetik kutupları, yıldızın üstüne düşen parçacıklarla ısınmış sıcak lekelerdir. Yıldız döndükçe lekeler görünür ve kaybolur; NICER her X ışını fotonunun varış anını çok hassas ölçer. Işığın bükülmesi lekelerin ne kadar süre göründüğünü değiştirdiği için, atımın biçimi yıldızın kütlesine oranla ne kadar küçük olduğunu, yani sıkılığını ele verir.",
+        "İlk büyük sonuç 12 Aralık 2019'da, The Astrophysical Journal Letters dergisinde yedi makalelik bir özel sayıyla geldi. Hedef, saniyede 205,53 kez dönen PSR J0030+0451'di. Miller ve arkadaşları kütleyi 1,44 M☉ (artı 0,14, eksi 0,15), ekvator yarıçapını 13,02 km (artı 1,06, eksi 1,24) buldu; bağımsız çalışan Riley ve arkadaşlarının sonucu bununla uyumluydu. Bu, eşi olmayan, tek başına bir nötron yıldızının kütlesinin ilk ölçümüydü. Sürpriz de vardı: NASA'nın özetine göre sıcak lekeler, basit bir mıknatıstan beklendiği gibi karşılıklı kutuplarda değil, bize dönük olmayan aynı yarımkürede toplanmıştı.",
+        "İkinci hedef, kütlesi radyo zamanlamasıyla 2,08 ± 0,07 M☉ olarak bilinen PSR J0740+6620'ydi. Riley ve arkadaşları yarıçapı 12,39 km (artı 1,30, eksi 0,98), Miller ve arkadaşları NICER ile XMM-Newton verilerinden 13,7 km (artı 2,6, eksi 1,5) buldu; 2024'teki güncelleme 12,92 km (artı 2,09, eksi 1,13) verdi. Wikipedia'nın aktardığı birleşik sonuçlara göre 2 M☉'lik bir yıldız yaklaşık 12,4 km, 1,4 M☉'lik bir yıldız yaklaşık 12,3 km yarıçaplıdır.",
+        "Bu neden önemli? Ağır bir yıldızın hafif olandan küçük olmaması, içerideki maddenin sıkıştırılmaya beklenenden daha dirençli, fizikçilerin deyişiyle sert olduğunu düşündürür. Çok yumuşak bir durum denklemi, ağır yıldızı çok daha küçük bir küreye büzerdi. Yani bir uzay istasyonunun dışındaki X ışını teleskobu, Dünya'daki hiçbir laboratuvarın üretemeyeceği yoğunluktaki maddenin özelliklerini ölçüyor. Belirsizlikler hâlâ birer kilometre mertebesinde; iç çekirdekte kuark maddesi olup olmadığı gibi sorular bu yüzden henüz cevapsız."
+      ],
+      "ornek": {
+        "baslik": "Örnek: J0030+0451 ne kadar sıkı?",
+        "metin": "Sıkılık = G × M / (R × c²). Önce Güneş için G × M☉ / c² hesaplayalım: 6,674 × 10⁻¹¹ × 1,9884 × 10³⁰ / (2,998 × 10⁸)² ≈ 1,327 × 10²⁰ / 8,988 × 10¹⁶ ≈ 1.477 m ≈ 1,48 km. J0030+0451 için: 1,44 × 1,477 ≈ 2,13 km. Yarıçapa bölelim: 2,13 / 13,02 ≈ 0,163. Makaledeki iki lekeli model 0,160 verir; uyumlu. Güneş için aynı oran 1,48 / 695.700 ≈ 0,000002. Kütleçekim yarıçapı bunun iki katı, 2 × 2,13 ≈ 4,25 km; yıldız kendi kara delik boyunun yalnız yaklaşık 3 katı. Işığın yörüngeye girmesi için yarıçapın 3 × 2,13 ≈ 6,4 km'den küçük olması gerekirdi; 13 km bundan büyük, o yüzden ışık yalnız bükülür."
+      },
+      "akilda": "NICER, sıcak lekelerin X ışını atımlarının biçiminden sıkılığı ve yarıçapı ölçer. J0030+0451 (2019): 1,44 M☉, 13,02 km; lekeler aynı yarımkürede. J0740+6620 (2,08 M☉): 12,4–13,7 km. Ağır ve hafif yıldızların benzer boyda olması içerideki maddenin sert olduğunu düşündürür."
+    },
+    {
+      "baslik": "Magnetarlar ve hızlı radyo patlamaları",
+      "paragraflar": [
+        "Bazı nötron yıldızlarının manyetik alanı sıradan olanlardan yaklaşık bin kat güçlüdür. Bunlara magnetar denir; varlıklarını 1992'de Robert Duncan ve Christopher Thompson önerdi. Wikipedia'ya göre magnetarların yüzey alanı 10⁹ ile 10¹¹ tesla arasındadır. Kıyas: Dünya'nın manyetik alanı 30 ile 60 mikrotesla, güçlü bir neodimyum mıknatıs yaklaşık 1,25 tesladır; magnetarın alanı insan yapımı her mıknatıstan yüz milyon kat güçlüdür. Kaynak, böyle bir alanın 1.000 km uzaktan bile öldürücü olacağını, çünkü atomların elektron bulutlarını bozup yaşamın kimyasını imkânsız kılacağını yazar. Temmuz 2021'de 24 magnetar doğrulanmış, 6 aday daha bekliyordu. NASA'nın bir özetine göre magnetarlar yavaş döner, periyotları kabaca 5 ile 12 saniyedir; Wikipedia'ya göre güçlü alanları yaklaşık 10.000 yılda zayıflar.",
+        "Magnetarın kabuğu, manyetik alanın gerilimiyle zaman zaman kırılır ve dev enerji salar. Kayıtlı üç dev parlama vardır: 5 Mart 1979'da SGR 0525-66, 27 Ağustos 1998'de SGR 1900+14 ki onun ışınımı NEAR Shoemaker uzay aracını kapanmaya zorladı, ve 27 Aralık 2004'te SGR 1806-20. Sonuncusu yaklaşık 50.000 ışık yılı ötede, Yay takımyıldızı yönündedir. NASA'ya göre bu magnetar saniyenin onda birinde Güneş'in son 100.000 yılda yaydığından fazla enerji saldı. Kaydedilmiş en parlak gama ışını parlamasıydı ve önceki iki dev parlamadan yaklaşık yüz kat güçlüydü. Bir an için dolunaydan parlak oldu, ama gözün göremediği gama ışınlarında. Dünya'nın üst atmosferini, yani iyonosferi bile etkiledi.",
+        "Aynı olay, yakınımızda olsaydı ne olurdu sorusunu da getirdi. Harvard–Smithsonian Astrofizik Merkezi'nin açıklamasına göre 10 ışık yılı içinde böyle bir patlama ozon tabakasının büyük kısmını yok eder ve artan ışınım nedeniyle canlı türlerinin yok olmasına yol açardı. Rahatlatıcı taraf: bilinen magnetarların hiçbiri bu kadar yakında değil; SGR 1806-20 bu mesafenin 5.000 katı uzakta. Uydu kayıtları ise magnetarların başka bir sırrını da çözdü.",
+        "Hızlı radyo patlamaları, milisaniyeler süren ve çoğu başka galaksilerden gelen çok güçlü radyo flaşlarıdır; ilkini 2007'de Duncan Lorimer bildirdi. Kaynakları uzun süre gizemliydi. 28 Nisan 2020'de Kanada'daki CHIME teleskobu ve ondan bağımsız olarak Caltech'in STARE2 dizisi, Samanyolu'ndaki magnetar SGR 1935+2154'ten, Tilkicik takımyıldızı yönünden, böyle bir patlama yakaladı; aynı anda dört uzay teleskobu bir X ışını patlaması kaydetti. Bu, galaksimizdeki magnetarlardan o güne kadar görülen radyo atımlarından yaklaşık bin kat parlaktı. Ama dikkat: bu tek olay bütün hızlı radyo patlamalarını açıklamaz. Patlamanın mekanizması tartışmalı, tekrarlayan patlamalarda beklenen dönme periyodu bulunamadı ve tek seferlik olanların bir kısmı birleşen nötron yıldızları gibi başka kaynaklardan gelebilir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: SGR 1806-20 kaç jul saldı?",
+        "metin": "Güneş'in ışınım gücü 3,828 × 10²⁶ W (d4). 100.000 yıl = 10⁵ × 3,156 × 10⁷ s ≈ 3,16 × 10¹² s. Enerji = 3,828 × 10²⁶ × 3,16 × 10¹² ≈ 1,2 × 10³⁹ J. NASA'ya göre magnetar bundan fazlasını 0,1 saniyede saldı; güç en az 1,2 × 10³⁹ / 0,1 ≈ 1,2 × 10⁴⁰ W, Güneş'in yaklaşık 3 × 10¹³ katı. Sağlama: NASA'nın bir makale özetine göre tipik bir dev parlama yaklaşık 10⁴⁴ erg = 10³⁷ J salar; bu parlama öncekilerden yaklaşık 100 kat güçlüydü: 100 × 10³⁷ = 10³⁹ J. İki yol aynı mertebeyi veriyor. Alan kıyası: 10¹⁰ tesla / 5 × 10⁻⁵ tesla = 2 × 10¹⁴; magnetar Dünya'nın alanından yaklaşık 200 trilyon kat güçlü."
+      },
+      "akilda": "Magnetar: 10⁹–10¹¹ T, yaklaşık 10.000 yıl etkin; Temmuz 2021'de 24 doğrulanmış. SGR 1806-20 (27 Aralık 2004, 50.000 ışık yılı) saniyenin onda birinde Güneş'in 100.000 yılda yaydığından fazla enerji saldı. 28 Nisan 2020'de SGR 1935+2154'ten hızlı radyo patlaması geldi; tüm patlamaları açıklamaz."
+    },
+    {
+      "baslik": "Milisaniye atarcaları: kozmik saatler",
+      "paragraflar": [
+        "d6'da milisaniye atarcalarının, eşinden madde çekerek yeniden hızlanmış, geri dönüştürülmüş atarcalar olduğunu gördün. İlki, PSR B1937+21, 1982'de Don Backer'ın ekibince bulundu; saniyede 641–642 kez döner, yani periyodu yaklaşık 1,6 milisaniyedir (kaynaklar son basamakta ayrışıyor). Bugün bilinen en hızlısı, PSR J1748-2446ad, saniyede 716 tur atar; bu dakikada yaklaşık 43.000 tur demektir. Bir X ışını patlamasından XTE J1739-285 için saniyede 1.122 tur önerildi, ama bu doğrulanmadı.",
+        "Bu atarcaları değerli kılan hızları değil düzenleridir. Yavaşlamaları çok küçüktür. Wikipedia'ya göre PSR J0437-4715'in periyodu 0,005757451936712637 saniye olarak ölçülmüştür ve hata yalnız 1,7 × 10⁻¹⁷ saniyedir. Milisaniye atarcaları en iyi atom saatlerinin kararlılığıyla yarışabilir; atarcaların genelinde ise zamanlama gürültüsü denen küçük rastgele sapmalar vardır ve bu açıdan atom saatlerine yetişemezler. Böyle bir saati uzayda gözlemek, onun ile bizim aramızda olan her şeyi, örneğin bir gezegenin çekimini, bir eşin yörüngesini ya da geçen bir kütleçekim dalgasını, varış zamanlarındaki küçük kaymalardan okumamızı sağlar.",
+        "Bu hassasiyetin ilk büyük ödülü 1992'de geldi: Aleksander Wolszczan, PSR B1257+12 atarcasının çevresinde dolanan gezegenleri, atımların düzenli olarak biraz erken ve biraz geç gelmesinden buldu. Bunlar Güneş Sistemi dışında bulunan ilk gezegenlerdir; hikâyenin devamı d13'te. Atarcanın kendisi bir gezegeni göremez; ama gezegenin çekimi atarcayı ortak kütle merkezinin çevresinde çok az salladığı için atımlar bize biraz uzaktan ve biraz yakından gelir. Aynı mantık, iki bölüm sonra galaksi boyunda bir kütleçekim dalgası dedektörüne dönüşecek."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Saniyede 716 tur dönen yüzey ne hızla gider?",
+        "metin": "Ekvatordaki bir noktanın hızı = 2 × π × R × dönme frekansı. R = 12 km alalım (NICER'in ölçtüğü mertebe): 2 × 3,1416 × 12 ≈ 75,4 km; 75,4 × 716 ≈ 54.000 km/s. Işık hızına oran: 54.000 / 299.792 ≈ 0,18. Wikipedia yüzey hızını ışık hızının yaklaşık 0,24'ü olarak verir; bu yaklaşık 16 km'lik bir yarıçapa karşılık gelir (0,24 × 299.792 / (2π × 716) ≈ 16 km). Fark kullanılan yarıçaptan gelir ve bu yıldızın gerçek yarıçapı ölçülmemiştir. d6'daki modele göre saniyede yaklaşık 1.500 turu aşan bir atarca parçalanırdı; 716 bunun yarısından az."
+      },
+      "akilda": "İlk milisaniye atarcası PSR B1937+21 (1982, yaklaşık 1,6 milisaniye); en hızlısı PSR J1748-2446ad, saniyede 716 tur. PSR J0437-4715'in periyodu 1,7 × 10⁻¹⁷ s hatayla bilinir. Atım zamanlarındaki küçük kaymalar gezegenleri (1992, PSR B1257+12) ve kütleçekim dalgalarını ele verir."
+    },
+    {
+      "baslik": "Hulse–Taylor ve çift atarca: Einstein'ın en zorlu sınavı",
+      "paragraflar": [
+        "1974'te Russell Hulse ve Joseph Taylor, Arecibo'nun 305 metrelik çanağıyla PSR B1913+16'yı buldu: saniyede yaklaşık 17 kez dönen, periyodu 59,03 milisaniye olan bir atarca. Atımlar düzenli olarak kayıyordu; atarca bir eşle 7,75 saatte bir dolanıyordu. Wikipedia'ya göre yörünge çok basıktır (dış merkezlik 0,617): iki yıldız arasındaki uzaklık en yakın noktada yaklaşık 746.600 km, yani Güneş'in yarıçapı kadar; en uzak noktada yaklaşık 3,15 milyon km. Atarcanın kütlesi yaklaşık 1,441, eşininki 1,387 M☉'dir. Sistem yaklaşık 21.000 ışık yılı uzaktadır.",
+        "Bu sistem genel görelilik için bir laboratuvardır. Yörüngenin en yakın noktası yılda yaklaşık 4,2 derece döner; Merkür'ün d26'da gördüğün günberi kaymasının çok daha güçlü bir benzeri. Daha önemlisi, genel görelilik dolanan iki kütlenin kütleçekim dalgaları yayarak enerji kaybetmesini ve birbirine yaklaşmasını öngörür. Ölçümler bunu doğruladı: yörünge periyodu her yıl 76,5 mikrosaniye kısalıyor, yörünge yılda yaklaşık 3,5 metre küçülüyor. Weisberg ve Huang'ın 2016 sonucuna göre gözlenen küçülmenin kuramın öngördüğüne oranı 0,9983 ± 0,0016'dır. İki yıldız yaklaşık 300 milyon yıl sonra birleşecek. d16'da gördüğün gibi Hulse ile Taylor bu buluş için 1993 Nobel Fizik Ödülü'nü aldı.",
+        "2003'te daha da iyisi bulundu: PSR J0737-3039, iki bileşeni de atarca olarak görülen ilk çift atarca. Biri saniyede 44 kez döner, daha genç eşinin periyodu 2,8 saniyedir. Max Planck Radyo Astronomi Enstitüsü'ne göre ikisi birbirinin çevresini 147 dakikada, saatte yaklaşık 1 milyon km hızla dolanır ve yaklaşık 2.400 ışık yılı uzaktadır. Yedi radyo teleskobuyla 16 yıl süren gözlemler genel göreliliği en az %99,99 düzeyinde doğruladı. Yörünge kütleçekim dalgaları yüzünden günde yaklaşık 7 mm küçülüyor ve bu kuramla %0,013 içinde uyuşuyor. Işık yaklaşık 0,04 derece bükülüyor, eşin yakınından geçen atımlar yaklaşık 130 mikrosaniye gecikiyor (Shapiro gecikmesi). Yörünge yönelimindeki değişim Merkür'de görülenden yaklaşık 140.000 kat güçlü.",
+        "Bu sistem görelilik kitaplarındaki neredeyse bütün etkileri bir arada gösterir: uzay-zamanın dönen kütle tarafından sürüklenmesi, kütleçekimsel zaman genişlemesi ve atarcanın kendi dönme ekseninin yalpalaması. Bu sonuncusu yüzünden eş atarcanın demeti 2008'de bizim yönümüzden çıktı ve atarca geçici olarak görünmez oldu. Kütleçekim dalgalarıyla enerji kaybı burada Hulse–Taylor'dakinden 25 kat daha hassas ölçülüyor. Enstitünün hesabına göre atarcanın saldığı ışınım, E = mc² üzerinden, her saniye yaklaşık 8 milyon ton kütle yitirmesine eşdeğerdir; bu, atarcanın kütlesinin saniyede binlerce milyar milyarda üçü kadardır."
+      ],
+      "ornek": {
+        "baslik": "Örnek: İki çift atarcanın yörüngesi ne kadar küçülüyor?",
+        "metin": "Çift atarca: günde 7 mm. Bir yılda 7 × 365,25 ≈ 2.557 mm ≈ 2,56 m. Hulse–Taylor: yılda yaklaşık 3,5 m. İkisi aynı mertebe, ama çift atarcanın yörüngesi çok daha küçük ve hızlı. Hulse–Taylor'ın en yakın noktası 746.600 km; Güneş'in yarıçapı 695.700 km olduğuna göre oran 746.600 / 695.700 ≈ 1,07: iki nötron yıldızı en yakın noktada, Güneş'in merkezinden yüzeyine olan uzaklık kadar yakınlaşıyor. Yörüngenin yarı büyük ekseni yaklaşık (746.600 + 3.153.600) / 2 ≈ 1,95 milyon km = 1,95 × 10⁹ m. Yılda 3,5 metreyle bunu kapatmak 1,95 × 10⁹ / 3,5 ≈ 560 milyon yıl sürerdi. Kaynaktaki birleşme süresi, yaklaşık 300 milyon yıl, bundan kısadır; çünkü yıldızlar yaklaştıkça daha güçlü dalga yayar ve küçülme hızlanır."
+      },
+      "akilda": "Hulse–Taylor (1974): 59 milisaniye, 7,75 saatlik basık yörünge; periyot yılda 76,5 mikrosaniye kısalıyor, gözlenen/öngörülen = 0,9983 ± 0,0016; 1993 Nobel. Çift atarca J0737-3039 (2003): 147 dakikalık yörünge, günde 7 mm küçülme, görelilik %99,99 düzeyinde doğrulandı."
+    },
+    {
+      "baslik": "Galaksi boyunda dedektör: atarca zamanlama dizileri",
+      "paragraflar": [
+        "d16'da milisaniye atarcalarının bir kütleçekim dalgası dedektörü olarak nasıl kullanıldığını ve NANOGrav'ın 2023'te 67 atarcayla bir arka plan sinyalinin kanıtını sunduğunu gördün. Burada biraz daha derine inelim. Bir kütleçekim dalgası Dünya ile atarcalar arasındaki uzaklıkları çok az esnetir; atımlar biraz erken ya da biraz geç gelir. Tek bir atarcada bu kayma başka gürültülerden ayırt edilemez. Ama dalga, gökte birbirine yakın atarcaların kaymalarını birbirine benzer, aralarında büyük açı olanlarınkini farklı, hatta ters yönde etkiler. İki atarcanın kaymaları arasındaki benzerliğin aralarındaki açıya göre beklenen değişimine Hellings–Downs eğrisi denir; NANOGrav makalesinin özetine göre sinyalin kütleçekim dalgalarından geldiğini gösteren şey tam da bu ilişkidir.",
+        "NANOGrav'ın 15 yıllık veri makalesinin özetine göre, atarcalar arasında ilişki bulunan bir modeli yalnız gürültüye dayanan bir modele 10¹⁴'ten büyük bir oranla yeğleyen bir Bayes katsayısı bulundu. İlişkisiz ortak bir sinyale karşı bu oran, modelleme seçimlerine göre 200 ile 1.000 arasıdır. Klasik istatistik testleri ise 3 ile 4 sigma arası bir anlamlılık verir. Fizikte bir keşif ilanı için genellikle 5 sigma beklenir (d32'de müonun manyetik momenti örneğinde gördüğün eşik); d16'daki GW150914 5,1 sigmaydı. Bu yüzden ekip sonucu bir keşif değil, bir kanıt olarak sundu. Sinyalin genliği, yılda bir salınımlık frekansta, 2,4 × 10⁻¹⁵ (artı 0,7, eksi 0,6) olarak verildi.",
+        "Bu sinyal nereden geliyor olabilir? Genlik ve frekansa göre dağılım, birbirinin çevresinde dolanan süper kütleli kara delik çiftlerinin oluşturduğu bir topluluktan beklenenle uyumludur. Özet açıkça yazıyor: daha sıra dışı kozmolojik ve astrofiziksel kaynaklar dışlanamaz. Bu iş tek bir ekibin değildir: Wikipedia'ya göre Avrupa'daki EPTA, Avustralya'daki PPTA, ABD ile Kanada'daki NANOGrav ve Hindistan'daki InPTA birlikte Uluslararası Atarca Zamanlama Dizisi'ni (IPTA) oluşturur. Daha uzun veri ve daha çok atarca, sinyalin 5 sigmaya ulaşıp ulaşmayacağını ve kaynağını gösterecek. Süper kütleli kara delikleri ve çiftlerini d46 anlatıyor.",
+        "Bu yöntemin güzelliği ölçektedir. LIGO'nun kolları 4 km'dir; atarca zamanlama dizisinin kolları ise Dünya ile atarcalar arasındaki yüzlerce ile binlerce ışık yılıdır. Dedektörün parçaları, bin yıl önce yıldız ölmüş, sonra eşinden beslenip yeniden hızlanmış nötron yıldızlarıdır. Bell'in 1967'de kâğıt üstünde fark ettiği pürüz, yarım yüzyıl sonra galaksi boyunda bir aletin dişlisi oldu."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Sinyal atımları kaç nanosaniye kaydırır?",
+        "metin": "Kaba bir ölçek hesabı (kaynakta bu hesap yok, yalnız büyüklük mertebesi için): genliği h olan, periyodu T olan bir dalga, varış zamanlarını kabaca h × T / (2π) kadar kaydırır. h = 2,4 × 10⁻¹⁵, T = 1 yıl ≈ 3,156 × 10⁷ s. 2,4 × 10⁻¹⁵ × 3,156 × 10⁷ ≈ 7,6 × 10⁻⁸ s; 2π'ye bölünce ≈ 1,2 × 10⁻⁸ s, yani yaklaşık 12 nanosaniye. Atımlar binlerce ışık yılı yol alıyor ve dalga onları yıllar boyunca yalnız birkaç on nanosaniye oynatıyor. Bunu görebilmek için atarcanın kendisinin de nanosaniye düzeyinde kararlı olması gerekir; bu yüzden yalnız en düzenli milisaniye atarcaları kullanılır."
+      },
+      "akilda": "Kütleçekim dalgası atarcaların varış zamanlarını gökteki açılarına bağlı bir düzenle kaydırır (Hellings–Downs eğrisi). NANOGrav 15 yıl: 3–4 sigma, genlik 2,4 × 10⁻¹⁵; süper kütleli kara delik çiftleriyle uyumlu ama başka kaynaklar dışlanamaz. EPTA, PPTA, NANOGrav ve InPTA birlikte IPTA'dır."
+    },
+    {
+      "baslik": "İstanbul'dan: Yengeç'in yerine bakmak",
+      "paragraflar": [
+        "Nötron yıldızlarının hiçbirini çıplak gözle ya da dürbünle göremezsin; ama birinin yerini, hatta çevresindeki bulutsuyu arayabilirsin. Yengeç atarcası Boğa takımyıldızındadır. NASA'ya göre Yengeç Bulutsusu (M1) 8,4 kadirdir, küçük bir teleskopla görülür ve en iyi Ocak ayında gözlenir; kış akşamları Boğa İstanbul göğünde yüksektedir. Astronomy dergisine göre bulutsuyu bulmak için Boğa'nın doğudaki boynuzunun ucundaki Zeta Tauri yıldızının yaklaşık 1 derece kuzeybatısına bakmalısın. Uygulamanın Gökyüzü sekmesinde Boğa'yı bulup bu yıldızı tanıyabilirsin.",
+        "Gerçekçi ol: aynı yazar M1'i liseli yıllarında 7×35'lik eski bir dürbünle, karda yatarak, soğuk ve berrak bir Ocak gecesinde ve ancak gözünün kenarıyla bakarak küçük bir leke olarak gördüğünü anlatır; bulutsunun çoğu dürbünün sınırında olduğunu söyler. d19'da gördüğün gibi kent göğünde çıplak göz sınırı 4 kadir civarına iner. İstanbul'un içinden 7×50 dürbünle M1'i görmeyi bekleme; ışıktan uzak, karanlık bir yer ve berrak bir kış gecesi gerekir. Uygulamanın dürbün hedefleri listesinde M1 bu yüzden yer almıyor.",
+        "Atarcanın kendisi bulutsunun ortasında 16,65 kadirlik bir yıldız gibi görünür; bu ancak büyük teleskoplarla seçilebilir. Bu derste andığımız öteki nötron yıldızlarının yönleri de gökte bellidir: dev parlama yapan SGR 1806-20 Yay'da, hızlı radyo patlaması yapan SGR 1935+2154 Tilkicik'te. İkisi de görünmez; ama yaz akşamları Yay'ın ve Tilkicik'in bulunduğu yöne bakarken, oradan 2004'te ve 2020'de neler geldiğini bilmek göğe bakışını değiştirir. Radyo ve X ışınında ise atarcalar gökyüzünün en düzenli sesleridir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Atarca, bulutsusundan kaç kat sönük?",
+        "metin": "Kadir farkı: 16,65 eksi 8,4 = 8,25. Parlaklık oranı = 10 üzeri (0,4 × 8,25) = 10 üzeri 3,3 ≈ 2.000. Yani merkezdeki atarca, çevresindeki bulutsunun toplam ışığından yaklaşık 2.000 kat sönüktür. Çıplak göz sınırı karanlık bir gökte yaklaşık 6,5 kadir (d19'daki ZHR tanımı); atarca bundan 10,15 kadir, yani yaklaşık 10 üzeri 4,06 ≈ 11.500 kat sönük. Bulutsu dürbünün sınırındayken atarca teleskop gerektirir. Ama aynı atarcanın, gözün göremediği radyo ve gama ışınlarında gökyüzünün en parlak ve en düzenli kaynaklarından biri olduğunu unutma."
+      },
+      "akilda": "Atarcaları göremezsin, ama Yengeç Bulutsusu'nu (M1, 8,4 kadir) Zeta Tauri'nin yaklaşık 1° kuzeybatısında arayabilirsin; karanlık bir kış gecesinde bile dürbün sınırındadır, kentten beklenmez. Atarca 16,65 kadirdir."
+    }
+  ],
+  "formuller": [
+    {
+      "ad": "Yüzey çekimi",
+      "ifade": "g = G × M / R²",
+      "aciklama": "G = 6,674 × 10⁻¹¹ m³ kg⁻¹ s⁻² (NIST), M: kütle (kg), R: yarıçap (m). 1,4 M☉ ve 12 km için g ≈ 1,3 × 10¹² m/s²."
+    },
+    {
+      "ad": "Kurtulma hızı (Newton yaklaşımı)",
+      "ifade": "v = √(2 × G × M / R)",
+      "aciklama": "Aynı simgeler. Nötron yıldızı için ışık hızının yarısından fazla çıkar; bu kadar güçlü çekimde genel görelilik düzeltmesi gerekir."
+    },
+    {
+      "ad": "Sıkılık",
+      "ifade": "C = G × M / (R × c²)",
+      "aciklama": "c: ışık hızı. G × M☉ / c² ≈ 1,48 km. PSR J0030+0451 için C ≈ 0,16; Güneş için yaklaşık 0,000002."
+    },
+    {
+      "ad": "Karakteristik yaş",
+      "ifade": "τ = P / (2 × Ṗ)",
+      "aciklama": "P: dönme periyodu (s), Ṗ: periyot türevi (saniyede saniye, birimsiz). Başlangıç dönüşü çok hızlı ve frenleme manyetik dipol biçiminde varsayılır. Yengeç: yaklaşık 1.280 yıl (gerçek 972 yıl)."
+    },
+    {
+      "ad": "Yüzey manyetik alanı tahmini",
+      "ifade": "B ≈ 3 × 10¹⁹ × √(P × Ṗ) gauss",
+      "aciklama": "P saniye, Ṗ birimsiz. 1 tesla = 10.000 gauss. Yengeç: yaklaşık 3,5 × 10¹² gauss."
+    },
+    {
+      "ad": "Dönme yavaşlaması gücü",
+      "ifade": "Ė = 4π² × I × Ṗ / P³",
+      "aciklama": "I: eylemsizlik momenti, nötron yıldızı için yaklaşık 10³⁸ kg m². Yengeç: yaklaşık 4,4 × 10³¹ W."
+    },
+    {
+      "ad": "Ekvator hızı",
+      "ifade": "v = 2π × R / P",
+      "aciklama": "R: yarıçap, P: periyot. 716 Hz ve 12 km için yaklaşık 54.000 km/s."
+    },
+    {
+      "ad": "Kadir farkından parlaklık oranı",
+      "ifade": "oran = 10^(0,4 × Δm)",
+      "aciklama": "Yengeç atarcası (16,65) ile bulutsusu (8,4): 10 üzeri 3,3 ≈ 2.000 kat."
+    }
+  ],
+  "anahtar_sayilar": [
+    {
+      "deger": "yaklaşık 1,4 M☉; yarıçap 10 km mertebesi; yaklaşık 3.200 bilinen",
+      "aciklama": "Tipik nötron yıldızı ve Samanyolu ile Macellan Bulutları'nda bilinenlerin sayısı (galakside tahmini toplam yaklaşık 1 milyar)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Neutron_star"
+    },
+    {
+      "deger": "6 Ağustos 1967; 1,337 s; 24 Şubat 1968",
+      "aciklama": "Bell'in ilk fark ettiği gün, ilk atarcanın periyodu ve Nature'daki yayın",
+      "kaynak_url": "https://skyandtelescope.org/astronomy-resources/famous-astronomers/jocelyn-bell-burnell-pulsar-pioneer/"
+    },
+    {
+      "deger": "0,7 M☉ (1939)",
+      "aciklama": "Oppenheimer ve Volkoff'un etkileşimsiz nötron gazı için bulduğu ilk kütle sınırı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Tolman%E2%80%93Oppenheimer%E2%80%93Volkoff_limit"
+    },
+    {
+      "deger": "33,392 milisaniye; günde 38 nanosaniye",
+      "aciklama": "Yengeç atarcasının periyodu ve periyodunun günlük uzaması",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Crab_Pulsar"
+    },
+    {
+      "deger": "2,08 ± 0,07 M☉; 2,35 ± 0,17 M☉",
+      "aciklama": "Kütlesi hassas ölçülmüş en ağır (J0740+6620) ve bilinen en ağır (J0952−0607) nötron yıldızı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Tolman%E2%80%93Oppenheimer%E2%80%93Volkoff_limit"
+    },
+    {
+      "deger": "2,01–2,17 M☉",
+      "aciklama": "GW170817 verilerinden dönmeyen nötron yıldızı için kütle sınırı (Rezzolla ve ark. 2018)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Tolman%E2%80%93Oppenheimer%E2%80%93Volkoff_limit"
+    },
+    {
+      "deger": "1,44 M☉; 13,02 km",
+      "aciklama": "NICER ile PSR J0030+0451'in kütlesi ve ekvator yarıçapı (Miller ve ark. 2019)",
+      "kaynak_url": "https://pages.astro.umd.edu/~mcmiller/reprints/miller19e.pdf"
+    },
+    {
+      "deger": "10⁹–10¹¹ tesla; 24 doğrulanmış (Temmuz 2021)",
+      "aciklama": "Magnetarların yüzey manyetik alanı ve sayısı",
+      "kaynak_url": "https://www.wikiwand.com/en/articles/Magnetar"
+    },
+    {
+      "deger": "0,1 s'de Güneş'in 100.000 yıllık enerjisinden fazla",
+      "aciklama": "SGR 1806−20'nin 27 Aralık 2004 dev parlaması (yaklaşık 50.000 ışık yılı)",
+      "kaynak_url": "https://imagine.gsfc.nasa.gov/science/objects/neutron_stars1.html"
+    },
+    {
+      "deger": "0,9983 ± 0,0016",
+      "aciklama": "Hulse–Taylor atarcasında gözlenen yörünge küçülmesinin genel göreliliğin öngörüsüne oranı (2016)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Hulse%E2%80%93Taylor_pulsar"
+    },
+    {
+      "deger": "147 dakika; günde 7 mm; %99,99",
+      "aciklama": "Çift atarca J0737−3039: yörünge süresi, yörüngenin küçülmesi ve genel göreliliğin doğrulanma düzeyi",
+      "kaynak_url": "https://www.mpifr-bonn.mpg.de/pressreleases/2021/12"
+    },
+    {
+      "deger": "2,4 × 10⁻¹⁵; 3–4 sigma; 67 atarca",
+      "aciklama": "NANOGrav 15 yıllık verisinde kütleçekim dalgası arka planının genliği ve anlamlılığı",
+      "kaynak_url": "https://arxiv.org/abs/2306.16213"
+    },
+    {
+      "deger": "28 Nisan 2020",
+      "aciklama": "Galaksimizdeki magnetar SGR 1935+2154'ten hızlı radyo patlaması (CHIME, STARE2)",
+      "kaynak_url": "https://physicstoday.aip.org/news/a-galactic-fast-radio-burst-finally-reveals-its-origin"
+    }
+  ],
+  "sozluk": [
+    {
+      "terim": "deniz feneri modeli",
+      "tanim": "Atarcanın manyetik kutuplarından çıkan demetlerin, yıldız döndükçe gökyüzünü süpürmesi ve Dünya'ya her değişinde bir atım olarak görünmesi açıklaması."
+    },
+    {
+      "terim": "ölüm çizgisi",
+      "tanim": "Bir atarcanın dönmesi yeterince yavaşlayınca radyo ışınım mekanizmasının durduğu sınır."
+    },
+    {
+      "terim": "periyot türevi",
+      "tanim": "Bir atarcanın dönme periyodunun her saniyede ne kadar uzadığını gösteren, saniyede saniye birimli sayı."
+    },
+    {
+      "terim": "eylemsizlik momenti",
+      "tanim": "Dönen bir cismin dönme hızındaki değişime gösterdiği direnç; kütlenin eksenden ne kadar uzağa dağıldığına bağlıdır."
+    },
+    {
+      "terim": "karakteristik yaş",
+      "tanim": "Atarcanın periyodunun, periyot türevinin iki katına bölünmesiyle bulunan, basit bir frenleme modeline dayanan yaş tahmini."
+    },
+    {
+      "terim": "dönme yavaşlaması gücü",
+      "tanim": "Bir atarcanın dönmesi yavaşlarken birim zamanda yitirdiği ve ışınım ile parçacık rüzgârı olarak saldığı enerji."
+    },
+    {
+      "terim": "nötron damlaması",
+      "tanim": "Nötron yıldızının iç kabuğunda, atom çekirdeklerinin daha fazla nötron tutamayıp serbest nötronların ortaya çıktığı yoğunluk sınırı."
+    },
+    {
+      "terim": "nükleer makarna",
+      "tanim": "Nötron yıldızının iç kabuğunda çekirdeklerin top, tüp ve levha biçimli kümeler oluşturduğu, çok sağlam olduğu hesaplanan madde hâli."
+    },
+    {
+      "terim": "süperakışkan",
+      "tanim": "Hiç sürtünme olmadan akabilen madde hâli; nötron yıldızlarının içindeki nötronların bu hâlde olduğu düşünülür."
+    },
+    {
+      "terim": "sıçrama",
+      "tanim": "Düzenli yavaşlayan bir atarcanın dönme hızının bir anda biraz artması."
+    },
+    {
+      "terim": "TOV sınırı",
+      "tanim": "Tolman–Oppenheimer–Volkoff sınırı: bir nötron yıldızının çökmeden taşıyabileceği en büyük kütle."
+    },
+    {
+      "terim": "durum denklemi",
+      "tanim": "Bir maddenin basıncının yoğunluğuna ve sıcaklığına nasıl bağlı olduğunu anlatan bağıntı; nötron yıldızının kütle sınırını ve yarıçapını belirler."
+    },
+    {
+      "terim": "kütle boşluğu",
+      "tanim": "En ağır nötron yıldızları ile en hafif kara delikler arasında, yaklaşık 2–5 M☉ aralığında çok az tıkız cisim gözlenen kütle aralığı."
+    },
+    {
+      "terim": "Shapiro gecikmesi",
+      "tanim": "Işığın büyük bir kütlenin yakınından geçerken eğri uzay-zaman yüzünden biraz geç varması."
+    },
+    {
+      "terim": "sıkılık",
+      "tanim": "Bir cismin kütlesinin yarıçapına göre ne kadar yoğunlaştığını gösteren, G × M / (R × c²) ile hesaplanan birimsiz sayı."
+    },
+    {
+      "terim": "sıcak leke",
+      "tanim": "Atarcanın manyetik kutuplarında, yüzeye düşen parçacıklarla ısınmış ve X ışını yayan bölge."
+    },
+    {
+      "terim": "dev parlama",
+      "tanim": "Bir magnetarın kabuğunun kırılmasıyla saniyeler içinde olağanüstü enerji saldığı seyrek patlama."
+    },
+    {
+      "terim": "hızlı radyo patlaması",
+      "tanim": "Milisaniyeler süren, çoğu başka galaksilerden gelen çok güçlü radyo flaşı."
+    },
+    {
+      "terim": "çift atarca",
+      "tanim": "İki bileşeninin de atarca olarak gözlendiği çift yıldız sistemi; ilk ve tek örneği PSR J0737−3039."
+    },
+    {
+      "terim": "Hellings–Downs eğrisi",
+      "tanim": "Bir kütleçekim dalgası arka planının, gökte farklı açılarla ayrılmış atarca çiftlerinin zamanlama kaymaları arasında yarattığı beklenen ilişki."
+    }
+  ],
+  "defter_notu": [
+    "Nötron yıldızı: yaklaşık 1,4 M☉, R ≈ 12 km, ortalama yoğunluk 3,7–5,9 × 10¹⁷ kg/m³ (atom çekirdeği mertebesi). Bilinen yaklaşık 3.200.",
+    "1933–34 Baade ve Zwicky: süpernova → nötron yıldızı. 1939 Oppenheimer–Volkoff: ilk sınır 0,7 M☉.",
+    "Bell 6.08.1967: 500 m kâğıtta 5 mm pürüz; 1,337 s; Nature 24.02.1968. Nobel 1974 Hewish + Ryle; Bell yok.",
+    "Deniz feneri (Gold 1968): manyetik eksen ≠ dönme ekseni. Periyot 1,4 ms – 30 s. 10–100 milyon yılda söner, %99'u atmıyor.",
+    "τ = P / 2Ṗ; B ≈ 3 × 10¹⁹ √(PṖ) gauss; Ė = 4π² I Ṗ / P³. Yengeç: τ ≈ 1.280 yıl (gerçek 972), B ≈ 3,5 × 10¹² G, Ė ≈ 4,4 × 10³¹ W.",
+    "İç yapı: atmosfer (mm–cm) → okyanus → kabuk → nötron damlaması → makarna → nötronca zengin çekirdek → iç çekirdek bilinmiyor.",
+    "Kütle sınırı: GW170817 2,01–2,17; NASA ~3; ölçülen J0740+6620 2,08 ± 0,07, J0952−0607 2,35 ± 0,17. Kütle boşluğu 2–5 M☉.",
+    "NICER J0030+0451: 1,44 M☉, 13,02 km, sıkılık ≈ 0,16. Magnetar 10⁹–10¹¹ T; SGR 1806−20 27.12.2004.",
+    "Hulse–Taylor 1974: 7,75 sa, yılda 3,5 m küçülme, oran 0,9983. Çift atarca 2003: 147 dk, günde 7 mm, %99,99.",
+    "NANOGrav 2023: 67 atarca, 3–4 sigma, kanıt (keşif değil). FRB 28.04.2020 SGR 1935+2154. M1: ζ Tau'nun 1° KB'si, dürbün sınırı."
+  ],
+  "sorular": [
+    {
+      "soru": "Bell'in ilk atarcanın uzaylılardan gelmediğini anlamasına en çok ne yardım etti?",
+      "cevap": "21 Aralık 1967'de gökyüzünün başka bir yerinde aynı türden ikinci bir atan kaynak bulması. Gökyüzünün farklı köşelerinde aynı yöntemle sinyal gönderen iki uygarlık olması akla yatkın değildi; ekip zaten LGM adını ciddiye almıyordu."
+    },
+    {
+      "soru": "1974 Nobel Fizik Ödülü neden tartışmalı sayılır?",
+      "cevap": "Ödül Hewish'e atarcaların keşfindeki belirleyici rolü, Ryle'a açıklık sentezi için verildi; sinyali ilk fark eden ve izleyen doktora öğrencisi Jocelyn Bell ödülü alanlar arasında yoktu. Fred Hoyle karara sertçe itiraz etti; Bell ise kararı desteklediğini söyledi."
+    },
+    {
+      "soru": "Atarcalar neden atar? Manyetik eksenle dönme ekseni çakışsaydı ne görürdük?",
+      "cevap": "Manyetik kutuplardan çıkan demetler yıldız döndükçe gökyüzünü süpürür; demet her turda Dünya'ya değerse bir atım görürüz. Eksenler çakışsaydı demetler hep aynı yöne bakar, dönmeyle süpürme olmazdı; ya sürekli bir ışınım görürdük ya da hiç görmezdik, atım olmazdı."
+    },
+    {
+      "soru": "Periyodu 0,5 s ve periyot türevi 10⁻¹⁵ olan bir atarcanın karakteristik yaşı yaklaşık kaç yıldır?",
+      "cevap": "Yaş = P / (2 × türev) = 0,5 / (2 × 10⁻¹⁵) = 2,5 × 10¹⁴ s. Yılda 3,156 × 10⁷ s olduğundan ≈ 7,9 milyon yıl. Bu, başlangıç dönüşünün çok hızlı olduğu ve frenlemenin basit manyetik model gibi işlediği varsayımına dayanan bir tahmindir."
+    },
+    {
+      "soru": "Yengeç atarcasının karakteristik yaşı (yaklaşık 1.280 yıl) neden gerçek yaşından (972 yıl) farklıdır?",
+      "cevap": "Karakteristik yaş, atarcanın doğduğunda şimdikinden çok hızlı döndüğünü ve hep aynı biçimde frenlendiğini varsayar. Yengeç'in başlangıç dönüşü sonsuz hızlı değildi ve frenleme biçimi modelden sapabilir; bu yüzden tahmin mertebe olarak doğru ama yaklaşık %30 fazla çıkar."
+    },
+    {
+      "soru": "Nükleer makarna nedir ve neden ilginçtir?",
+      "cevap": "Nötron yıldızının iç kabuğunda, yaklaşık 1 km derinlikte çekirdeklerin top, tüp ve levha (gnocchi, spagetti, lazanya) biçimli kümeler oluşturduğu madde hâlidir. 2018 benzetimlerine göre kırmak için çeliği çatlatandan 10 milyar kat büyük kuvvet gerekir; bu kabuğun kütleçekim dalgası yayabilecek dağlar taşıyıp taşıyamayacağını etkiler."
+    },
+    {
+      "soru": "Atarca sıçraması nasıl açıklanıyor?",
+      "cevap": "İçerideki nötron süperakışkanı girdaplar hâlinde döner ve girdaplar kabuğa takılı kalır. Kabuk yavaşlarken iç kısım hızlı dönmeyi sürdürür; gerilim birikince girdaplar topluca kurtulup açısal momentumu kabuğa aktarır ve atarca bir anda hızlanır. Eskiden yıldız depremleri öne çıkarılırdı."
+    },
+    {
+      "soru": "Oppenheimer ve Volkoff'un 1939'da bulduğu 0,7 M☉'lik sınır neden bugün 2 M☉'in üstünde kabul ediliyor?",
+      "cevap": "Nötronları birbirini itmeyen bir gaz gibi varsaymışlardı. Nötronlar arasındaki güçlü etkileşimler hesaba katılınca madde sıkışmaya daha çok direnir ve sınır 2 M☉'in üstüne çıkar. Gözlemler de bunu doğrular: J0740+6620 2,08 ± 0,07 M☉."
+    },
+    {
+      "soru": "NICER bir nötron yıldızının yarıçapını nasıl ölçer?",
+      "cevap": "Manyetik kutuplardaki sıcak lekelerden gelen X ışını atımlarının biçimini ölçer. Işığın güçlü çekimde bükülmesi, lekelerin ne kadar süre görüneceğini değiştirir; bu bükülme sıkılığa (G × M / R c²) bağlıdır. Atım biçiminden sıkılık ve kütle, onlardan da yarıçap çıkarılır."
+    },
+    {
+      "soru": "Hulse–Taylor atarcası kütleçekim dalgalarının varlığını nasıl gösterdi?",
+      "cevap": "Genel görelilik, dolanan iki nötron yıldızının kütleçekim dalgalarıyla enerji yitirip yaklaşacağını öngörür. Ölçümlerde yörünge periyodu her yıl 76,5 mikrosaniye kısalıyor; gözlenen küçülmenin öngörüye oranı 0,9983 ± 0,0016. Bu, dalgaları doğrudan değil dolaylı olarak kanıtladı ve 1993 Nobel'ini getirdi."
+    },
+    {
+      "soru": "SGR 1806−20'nin dev parlaması neden önemlidir ve bize tehlikeli miydi?",
+      "cevap": "27 Aralık 2004'te kaydedilmiş en parlak gama ışını parlamasıydı; saniyenin onda birinde Güneş'in 100.000 yılda yaydığından fazla enerji saldı ve Dünya'nın iyonosferini etkiledi. Ama yaklaşık 50.000 ışık yılı uzaktaydı; ozon tabakasına ciddi zarar için 10 ışık yılı içinde olması gerekirdi."
+    },
+    {
+      "soru": "NANOGrav 2023 sonucu neden bir keşif değil de kanıt olarak sunuldu?",
+      "cevap": "Anlamlılık kullanılan teste göre 3 ile 4 sigma arasıydı; fizikte keşif için alışılmış eşik 5 sigmadır. Ayrıca sinyal süper kütleli kara delik çiftleriyle uyumlu olsa da başka kaynaklar dışlanamıyor. Daha uzun veri ve uluslararası birleşik analizler gerekiyor."
+    },
+    {
+      "soru": "İstanbul'dan Yengeç Bulutsusu'nu 7×50 dürbünle görmeyi bekleyebilir misin?",
+      "cevap": "Kentin içinden hayır. M1 8,4 kadirdir; Astronomy dergisindeki yazar onu karanlık ve çok berrak bir kış gecesinde bile dürbün sınırında, gözün kenarıyla bakarak küçük bir leke olarak gördüğünü anlatır. Karanlık bir yer ve Zeta Tauri'nin yaklaşık 1° kuzeybatısını tanıyan bir arama gerekir. Atarcanın kendisi 16,65 kadirdir."
+    }
+  ],
+  "kaynaklar": [
+    {
+      "ad": "Wikipedia – Neutron star",
+      "url": "https://en.wikipedia.org/wiki/Neutron_star"
+    },
+    {
+      "ad": "Wikipedia – Pulsar",
+      "url": "https://en.wikipedia.org/wiki/Pulsar"
+    },
+    {
+      "ad": "NASA Imagine the Universe – Neutron Stars",
+      "url": "https://imagine.gsfc.nasa.gov/science/objects/neutron_stars1.html"
+    },
+    {
+      "ad": "Wikipedia – Walter Baade",
+      "url": "https://en.wikipedia.org/wiki/Walter_Baade"
+    },
+    {
+      "ad": "Wikipedia – Tolman–Oppenheimer–Volkoff limit",
+      "url": "https://en.wikipedia.org/wiki/Tolman%E2%80%93Oppenheimer%E2%80%93Volkoff_limit"
+    },
+    {
+      "ad": "Sky & Telescope – Jocelyn Bell Burnell: Pulsar Pioneer",
+      "url": "https://skyandtelescope.org/astronomy-resources/famous-astronomers/jocelyn-bell-burnell-pulsar-pioneer/"
+    },
+    {
+      "ad": "Nobel Vakfı – The Nobel Prize in Physics 1974",
+      "url": "https://www.nobelprize.org/prizes/physics/1974/summary/"
+    },
+    {
+      "ad": "Gold 1968, Nature 218, 731 – Rotating Neutron Stars as the Origin of the Pulsating Radio Sources (ADS)",
+      "url": "https://ui.adsabs.harvard.edu/abs/1968Natur.218..731G/abstract"
+    },
+    {
+      "ad": "Maryland Üniversitesi (M. C. Miller) – Rotation-Powered Pulsars ders notu",
+      "url": "https://pages.astro.umd.edu/~mcmiller/teaching/astr498/lecture18.pdf"
+    },
+    {
+      "ad": "Wikipedia – Crab Pulsar",
+      "url": "https://en.wikipedia.org/wiki/Crab_Pulsar"
+    },
+    {
+      "ad": "Science News – Nuclear pasta in neutron stars may be the strongest material in the universe (2018)",
+      "url": "https://www.sciencenews.org/article/nuclear-pasta-neutron-stars-may-be-strongest-material-universe"
+    },
+    {
+      "ad": "arXiv 2003.08724 – The 2016 Vela glitch: a key to neutron star internal structure and dynamics",
+      "url": "https://arxiv.org/pdf/2003.08724"
+    },
+    {
+      "ad": "Universe Today – How heavy can a neutron star get? (2026)",
+      "url": "https://www.universetoday.com/articles/how-heavy-can-a-neutron-star-get"
+    },
+    {
+      "ad": "NASA HEASARC – NICER Science Nugget, 12 Aralık 2019",
+      "url": "https://heasarc.gsfc.nasa.gov/docs/nicer/science_nuggets/20191212.html"
+    },
+    {
+      "ad": "Miller ve ark. 2019, ApJL 887, L24 – PSR J0030+0451 Mass and Radius from NICER Data",
+      "url": "https://pages.astro.umd.edu/~mcmiller/reprints/miller19e.pdf"
+    },
+    {
+      "ad": "Dittmann ve ark. 2024 – A More Precise Measurement of the Radius of PSR J0740+6620 (arXiv 2406.14467)",
+      "url": "https://arxiv.org/html/2406.14467v2"
+    },
+    {
+      "ad": "Wikipedia (Wikiwand) – Magnetar",
+      "url": "https://www.wikiwand.com/en/articles/Magnetar"
+    },
+    {
+      "ad": "NASA NTRS – SGR 1806-20 giant flare özeti",
+      "url": "https://ntrs.nasa.gov/citations/20050167059"
+    },
+    {
+      "ad": "Harvard–Smithsonian CfA – Blast affected Earth halfway across Milky Way",
+      "url": "https://www.cfa.harvard.edu/news/blast-affected-earth-halfway-across-milky-way"
+    },
+    {
+      "ad": "ScienceDaily – SGR 1806-20 (Şubat 2005)",
+      "url": "https://www.sciencedaily.com/releases/2005/02/050222195452.htm"
+    },
+    {
+      "ad": "Physics Today – A galactic fast radio burst finally reveals its origin",
+      "url": "https://physicstoday.aip.org/news/a-galactic-fast-radio-burst-finally-reveals-its-origin"
+    },
+    {
+      "ad": "Wikipedia – Hulse–Taylor pulsar",
+      "url": "https://en.wikipedia.org/wiki/Hulse%E2%80%93Taylor_pulsar"
+    },
+    {
+      "ad": "Max Planck Radyo Astronomi Enstitüsü – Einstein wins again (2021)",
+      "url": "https://www.mpifr-bonn.mpg.de/pressreleases/2021/12"
+    },
+    {
+      "ad": "NANOGrav 2023, arXiv 2306.16213 – The NANOGrav 15-year Data Set: Evidence for a Gravitational-Wave Background",
+      "url": "https://arxiv.org/abs/2306.16213"
+    },
+    {
+      "ad": "Astronomy – 11 top winter binocular gems",
+      "url": "https://www.astronomy.com/science/web-extra-11-top-winter-binocular-gems/"
+    },
+    {
+      "ad": "NASA Hubble – Messier 1",
+      "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-1/"
+    },
+    {
+      "ad": "NIST – Newton kütleçekim sabiti",
+      "url": "https://physics.nist.gov/cgi-bin/cuu/Value?bg"
+    },
+    {
+      "ad": "NASA NSSDCA – Sun Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html"
+    }
+  ]
+}

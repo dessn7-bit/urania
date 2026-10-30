@@ -1,0 +1,389 @@
+{
+  "id": "d52",
+  "unite": "kuramlar",
+  "yeni": true,
+  "baslik": "Kara Deliklerin Kuantum Yüzü: Hawking Işıması ve Bilgi Paradoksu",
+  "ozet": "Kuantum fiziği kara deliğin kenarına taşınınca kara delik bir sıcaklık ve entropi kazanır, çok yavaş da olsa ışır ve buharlaşır. Bu derste Hawking ışımasını sayılarla hesaplayacak, buharlaşmanın neden fiziğin en temel kurallarından biriyle, bilginin korunmasıyla çatıştığını, Page eğrisini, ateş duvarı tartışmasını, holografik ilkeyi, 2019'un “ada” hesaplarını ve laboratuvardaki ses kara deliklerini öğreneceksin. Her fikrin ne kadar sağlam olduğunu dört kesinlik düzeyiyle ayıracağız.",
+  "on_bilgi": ["d16", "d30", "d28", "d50"],
+  "bolumler": [
+    {
+      "baslik": "Kara delik neden bir kuantum sorusu?",
+      "paragraflar": [
+        "d16'da kara deliği genel göreliliğin gözüyle tanıdın: olay ufku, Schwarzschild yarıçapı, gölge ve kütleçekim dalgaları. O tabloda kara delik kusursuz, tek yönlü bir kapıdır: içeri giren hiçbir şey, ışık bile, geri dönmez. Ama d26'nın sonunda gördüğün gibi genel görelilik, atomların ve ışığın dünyasını anlatan kuantum fiziğiyle uyuşmaz. İkisinin birlikte önemli olduğu yerlerden biri kara deliklerdir. Bu ders, kuantum fiziğini kara deliğin kenarına taşıyınca ortaya çıkan üç büyük fikri anlatıyor: kara deliğin bir entropisi ve sıcaklığı olması, çok yavaş da olsa ışıyıp buharlaşması ve bu buharlaşmanın fiziğin en köklü kurallarından biriyle, bilginin korunmasıyla çatışması.",
+        "Bu ünitenin bütün derslerinde olduğu gibi burada da her önemli iddianın ne kadar sağlam olduğunu açıkça söyleyeceğiz. d50'de tanıştığın dört düzeyi hatırla. “Gözlemle kesinleşmiş”: ölçümle defalarca doğrulanmış bilgi; kara deliklerin var olması ve kütleçekim dalgaları gibi. “Güçlü kanıtlı ama açık sorulu”: kanıtı sağlam, ama önemli ayrıntıları tartışmalı olan bilgi. “Kuram / hipotez”: matematiksel olarak tutarlı ama gözlemle henüz desteklenmemiş fikir; Hawking ışıması bunun en tipik örneğidir. “Spekülasyon”: ilginç ama ne gözlemle ne de sağlam bir hesapla desteklenen fikir.",
+        "Bu dersin büyük kısmı üçüncü düzeyde geçiyor ve bunu baştan bilmen önemli. Hawking ışıması, bilgi paradoksu, holografik ilke ve 2019'un ada hesapları, dünyanın en iyi kuramcılarının yarım yüzyıllık emeğidir; ama hiçbiri bir teleskopla ya da dedektörle doğrulanmadı. Bir fikrin ünlü bir fizikçiden gelmesi ya da çok konuşulması onu kanıtlanmış yapmaz. Öte yandan bu fikirler boş fantezi de değildir: hepsi, kendi alanlarında ayrı ayrı çok iyi sınanmış iki kuramın, genel görelilik ile kuantum alan kuramının birlikte kullanılmasından doğar. Kuantum alan kuramı, parçacıkları uzaya yayılmış alanların titreşimleri olarak anlatan kuramdır. Kara delik, bu iki kuramı aynı masaya oturmak zorunda bırakan en uç düşünce laboratuvarıdır."
+      ],
+      "akilda": "Kara delik, genel görelilik ile kuantum fiziğinin birlikte gerektiği yerdir. Bu dersteki fikirlerin çoğu “Kuram / hipotez” düzeyindedir: matematiksel olarak sağlam ama gözlenmemiş. Ünlü birinin savunması kanıt sayılmaz."
+    },
+    {
+      "baslik": "Alan hiç küçülmez: kara deliklerin termodinamiği",
+      "paragraflar": [
+        "Hikâye bir benzerlikle başladı. d16'da Hawking'in alan teoremini gördün: kara deliklerin olay ufku alanlarının toplamı hiçbir zaman küçülmez. d30'da da çok benzer bir cümle okumuştun: yalıtılmış bir sistemin entropisi hiçbir zaman azalmaz. Entropi, d30'daki tanımıyla, bir sistemin kaba görünüşüyle uyumlu ayrıntılı durumlarının sayısının ölçüsüdür. İki yasanın biçimi şaşırtıcı ölçüde birbirine benziyor. Bu bir rastlantı mı, yoksa derin bir bağın işareti mi?",
+        "Jacob Bekenstein bunun rastlantı olmadığını savundu. Wikipedia'ya göre 1972'de kara deliklerin olay ufkunun alanıyla orantılı bir entropisi olması gerektiğini öne sürdü, 1973'te de orantı sabiti için kaba bir tahmin verdi. Gerekçesi d30'daki bilmeceydi: kara deliğe bir kutu sıcak gaz atarsan gazın entropisi evrenden silinmiş gibi görünür ve ikinci yasa kolayca aldatılır. Kara deliğin kendisi entropi taşıyorsa ve gazı yuttuğunda ufku büyüyorsa, toplam entropi yine de artabilir. Kara deliğin entropisini de sayan bu genişletilmiş kurala genelleştirilmiş ikinci yasa denir.",
+        "Fikir ilk başta sert karşılandı. JTA'nın Hawking'in ölümü üzerine yayımladığı yazıya göre Hawking 1972'de kara deliklerin hiçbir şey yayamayacağını savunuyor ve Bekenstein'ın görüşünü reddediyordu; aynı yıl Fransa'daki bir konferansta birkaç kıdemli meslektaşıyla birlikte Bekenstein'a öfkeyle itiraz etti. İtirazın mantığı sağlamdı: bir cismin entropisi varsa sıcaklığı da olmalıdır; sıcaklığı olan her cisim ışır; oysa kara delik hiçbir şey yaymaz. Aynı dönemde, 1973'te, Bardeen, Carter ve Hawking kara delik mekaniğinin dört yasasını yazdı. Bu yasalar termodinamiğin dört yasasına neredeyse harfi harfine benziyordu: ufuktaki yüzey çekimi sıcaklığın, ufuk alanı entropinin yerini tutuyordu. Ama kara delik ışımadığı sürece bu benzerlik bir benzetme olarak kalıyordu.",
+        "Bugün Bekenstein-Hawking entropisi denen sonucu d30'da hesaplamıştın: entropi, ufuk alanının dört Planck alanına bölümüyle orantılıdır. Burada kesinliği ayırmak gerekir. Alan teoremi klasik genel göreliliğin bir sonucudur ve d16'da gördüğün GW250114 birleşmesinde ufuk alanının arttığı ölçüldü; bu tek bir olaydır ama güçlü bir sınamadır. Kara deliğin gerçekten bir entropisi olduğu, yani bu alanın içerdeki kuantum durumlarını saydığı ise “Kuram / hipotez” düzeyindedir. Wikipedia'ya göre sicim kuramında Strominger ve Vafa, süpersimetrik denen özel bir kara delik türü için bu entropiyi durum sayarak elde etti; döngü kuantum kütleçekiminde de bu durumlara geometrik bir yorum verilebiliyor. Bu iki yaklaşımı d53'te ayrıntılı göreceksin."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Bir kara deliğin entropisi kaç bit eder?",
+        "metin": "d30'da 1 M☉'lik bir kara deliğin entropisini Boltzmann sabitinin yaklaşık 1,05 × 10⁷⁷ katı bulmuştun. Entropiyi bite çevirmek için k × ln 2'ye bölersin; ln 2 yaklaşık 0,693'tür. 1. adım: 1,05 × 10⁷⁷ ÷ 0,693 ≈ 1,5 × 10⁷⁷ bit. 2. adım: Entropi alanla, alan da kütlenin karesiyle büyür. Sgr A* (4,297 milyon M☉) için çarpan (4,297 × 10⁶)² ≈ 1,85 × 10¹³; entropi ≈ 1,05 × 10⁷⁷ × 1,85 × 10¹³ ≈ 1,9 × 10⁹⁰ k. 3. adım: Ölçek: bir terabayt 10¹² bayt, yani 8 × 10¹² bittir. 1,5 × 10⁷⁷ ÷ 8 × 10¹² ≈ 1,9 × 10⁶⁴. Sonuç: Güneş kütleli bir kara deliğin entropisi yaklaşık 1,5 × 10⁷⁷ bite, yani 10⁶⁴ mertebesinde terabaytlık diske karşılık gelir; Sgr A*'ınki bundan yaklaşık 18 trilyon kat büyüktür."
+      },
+      "akilda": "Bekenstein 1972'de kara deliğin ufuk alanıyla orantılı bir entropisi olduğunu önerdi; Hawking başta karşı çıktı. Alan teoremi bir birleşmede sınandı; alanın gerçekten iç durumları saydığı “Kuram / hipotez” düzeyindedir."
+    },
+    {
+      "baslik": "Hawking'in 1974 hesabı: kara delik ışır",
+      "paragraflar": [
+        "Hawking daha sonra kuantum alan kuramını, kara deliğin çevresindeki eğri uzay-zamanda kullanarak soruyu yeniden ele aldı. Sonuç, önceki görüşünün tam tersini verdi. JTA'nın aktardığına göre Hawking hesabını bir süre kendine sakladı, çünkü yanıldığını kabul etmekte isteksizdi; sonunda yayımladı. Kısa bir makale Mart 1974'te Nature dergisinde “Kara delik patlamaları mı?” başlığıyla çıktı, ayrıntılı hesap ise Ağustos 1975'te Communications in Mathematical Physics dergisinde yayımlandı. Hesaba göre kara delik, kütlesiyle ters orantılı bir sıcaklıkla, sıcak bir cisim gibi ısıl ışınım yayar. Böylece Bekenstein'ın entropisi gerçek bir sıcaklığa kavuştu; Wikipedia'ya göre orantı sabitini de, ufuk alanının dörtte biri olarak, Hawking kesinleştirdi.",
+        "Peki içinden hiçbir şeyin çıkamadığı bir cisim nasıl ışır? Kuantum fiziğine göre boş uzay gerçekten boş değildir; alanlar en düşük enerji durumlarında bile durmadan dalgalanır. Wikipedia'nın özetine göre elektromanyetik alandaki böyle bir dalgalanma, ufkun hemen dışında bir fotonun, ufkun içinde de onun eşinin ortaya çıkmasına yol açabilir; ufuk ikisini birbirinden ayırır ve biri dışarı kaçar. Kaçan fotonlar uzaktaki gözlemciye ısıl bir ışınım olarak ulaşır. İçeri düşen eşin enerjisi dışarıdan bakınca eksi sayılır; bu yüzden kara deliğin kütlesi azalır.",
+        "Bu “ufukta ayrılan çift” resmini popüler kitaplarda çok göreceksin. Onu bir benzetme olarak tut: gerçek hesap tek tek parçacıkların yolculuğunu izlemez, alanların uzay-zamandaki durumunu karşılaştırır. Wikipedia'ya göre Hawking ışıması, ivmelenen bir gözlemcinin ölçtüğü sıcaklıkla ilgili Unruh etkisine ve d26'da gördüğün eşdeğerlik ilkesinin ufka uygulanmasına dayanır. Hesabın bir de kaygı verici yanı vardı: Hawking'in özgün hesabında, geriye doğru izlenince dalga boyu Planck uzunluğundan kısa olan parçacıklar yer alıyordu. Planck uzunluğunun altındaki fiziği bilmediğimiz için buna Planck ötesi sorun denir. Wikipedia'ya göre bugün bu sorun çoğunlukla ufuk hesaplarının matematiksel bir yan ürünü sayılıyor; dersin sonundaki laboratuvar düzenekleri tam da bu konuda bir ipucu verir.",
+        "Kesinlik düzeyi: “Kuram / hipotez”. Hawking ışıması, iki iyi sınanmış kuramın dikkatli bir birleşiminden çıkar; d16'nın deyişiyle kuramsal olarak çok saygın bir öngörüdür. Ama bir gökcisminden gelen Hawking ışıması hiç gözlenmedi ve az sonra göreceğin sayılar bunun neden şaşırtıcı olmadığını gösteriyor. d16'nın sonundaki cümle hâlâ geçerli: kuram, kara deliklerin sonsuza dek yaşamadığını söylüyor; gözlem henüz bir şey söylemiyor. Hawking'in hesabı aynı zamanda bu dersin asıl bilmecesinin de kaynağıdır, çünkü ışınım tam olarak ısıl çıkar. Bunun neden sorun olduğunu bilgi bölümünde göreceksin."
+      ],
+      "akilda": "Hawking 1974'te (Nature) ve 1975'te kara deliğin kütlesiyle ters orantılı bir sıcaklıkla ısıl ışınım yaydığını hesapladı. “Ufukta ayrılan çift” bir benzetmedir. Hawking ışıması “Kuram / hipotez” düzeyindedir: sağlam ama gözlenmemiş."
+    },
+    {
+      "baslik": "Ne kadar sıcak? Kütle büyüdükçe soğuyan cisim",
+      "paragraflar": [
+        "Hawking sıcaklığının formülü kısadır: T = ħc³ ÷ (8π G M k). Burada ħ indirgenmiş Planck sabiti, yani Planck sabitinin 2π'ye bölümüdür; c ışık hızı, G kütleçekim sabiti, M kara deliğin kütlesi, k Boltzmann sabitidir. Formüldeki en önemli ayrıntı, kütlenin paydada durmasıdır: kütle iki katına çıkarsa sıcaklık yarıya iner. Sabitleri yerine koyunca pratik bir kısayol çıkar: T ≈ 6,17 × 10⁻⁸ K × (M☉ ÷ M). Yani 1 Güneş kütleli bir kara delik yaklaşık 62 nanokelvin sıcaklıktadır; d16'da okuduğun değer budur.",
+        "Bu ters orantı garip bir sonuç doğurur. Gündelik cisimler enerji kaybettikçe soğur: sıcak çay ısı verdikçe ılır. Kara delik ise ışıyıp kütle kaybettikçe ısınır; daha sıcak olunca daha hızlı ışır, daha hızlı kütle kaybeder ve daha da ısınır. Wikipedia'ya göre kara delik termodinamiğinin hesapları bu yüzden eksi bir ısı sığası verir. Isı sığası, bir cismin sıcaklığını bir derece değiştirmek için gereken enerjidir; eksi olması, enerji kaybedince sıcaklığın artması demektir. d30'da yıldızların da benzer biçimde enerji kaybettikçe ısındığını görmüştün. Kara delik için bunun sonu kaçınılmazdır: kuram doğruysa buharlaşma kendini hızlandırarak biter.",
+        "Gerçek kara deliklerin sıcaklıkları ise akıl almaz ölçüde düşüktür. Aşağıdaki hesap, galaksimizin merkezindeki Sgr A*'ın Hawking sıcaklığının kelvinin yüz trilyonda biri mertebesinde, M87'nin dev kara deliğininkinin ise ondan da yaklaşık bin beş yüz kat düşük olduğunu gösteriyor. Dünya kütlesinde bir kara delik olsaydı sıcaklığı yalnızca yaklaşık 0,02 kelvin olurdu (d16). Bu tablo, bir kara deliğin Hawking ışımasını uzaktan ölçmenin neden umutsuz olduğunu da gösterir: bilinen kara deliklerin hepsi, ışımalarını boğacak kadar soğuktur."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Dört kara deliğin Hawking sıcaklığı",
+        "metin": "Kısayol: T ≈ 6,17 × 10⁻⁸ K × (M☉ ÷ M). 1. adım (1 M☉): 6,17 × 10⁻⁸ K, yani yaklaşık 62 nanokelvin. 2. adım (10 M☉): on kat soğuk, yaklaşık 6,2 nanokelvin. 3. adım (Sgr A*, 4,297 milyon M☉): 6,17 × 10⁻⁸ ÷ 4,297 × 10⁶ ≈ 1,44 × 10⁻¹⁴ K. 4. adım (M87, 6,5 milyar M☉): 6,17 × 10⁻⁸ ÷ 6,5 × 10⁹ ≈ 9,5 × 10⁻¹⁸ K. 5. adım (Dünya kütlesi): Güneş, Dünya'dan yaklaşık 332.900 kat ağırdır; 6,17 × 10⁻⁸ × 332.900 ≈ 0,0205 K. Sonuç: yıldız kökenli kara delikler nanokelvin mertebesinde, dev kara delikler 10⁻¹⁴ ile 10⁻¹⁸ kelvin arasındadır; sıcaklık kütle büyüdükçe düşer."
+      },
+      "akilda": "Hawking sıcaklığı T ≈ 6,17 × 10⁻⁸ K × (M☉ ÷ M): kütle büyüdükçe kara delik soğur. Kara delik ışıyıp küçüldükçe ısınır (eksi ısı sığası), bu yüzden buharlaşma kendini hızlandırır."
+    },
+    {
+      "baslik": "Kozmik arka planla yarış: hangi kara delik bugün küçülür?",
+      "paragraflar": [
+        "Bir kara deliğin küçülmesi için ışıması yetmez; çevresinden aldığından fazlasını vermesi gerekir. Evren, d8'de gördüğün kozmik mikrodalga arka planla, yani Büyük Patlama'dan kalan ve bugün yaklaşık 2,725 K sıcaklıkta olan ışınımla doludur (d30). Kara delik bu ışınımı da yutar. Sıcaklığı 2,725 K'den düşükse aldığı enerji verdiğinden fazladır ve büyür. Wikipedia'ya göre yıldız kütleli ve daha büyük kara delikler bu yüzden bugün kozmik arka plandan, Hawking ışımasıyla kaybettiğinden fazla kütle kazanır; yani küçülmez, büyür.",
+        "O hâlde eşik nerede? Formülü tersine çevirip sıcaklığın tam 2,725 K olduğu kütleyi bulabiliriz. Aşağıdaki hesap yaklaşık 4,5 × 10²² kg veriyor; bu, Ay'ın kütlesinin (7,346 × 10²² kg) yaklaşık yüzde 61'i. Wikipedia da bugün buharlaşabilmek için bir kara deliğin Ay'dan hafif olması gerektiğini yazar. Böyle bir kara deliğin olay ufku yarıçapı yaklaşık 0,07 milimetre olurdu: Ay'ın yarısından ağır bir kütle, ince bir toz tanesi boyutunda bir küreye sığmış. Bilinen bütün kara delikler bu eşiğin çok üstündedir; d16'da gördüğün en hafif yıldız kökenli kara delikler bile birkaç Güneş kütlesidir.",
+        "Bu yarış zamanla değişecek. d17'de gördüğün gibi evren genişledikçe daha soğuk ve seyrek olur; kozmik arka planın sıcaklığı da düşer. Genişleme sürerse bir gün arka plan, yıldız kökenli kara deliklerden de soğuk olacak ve o zaman onlar da net kütle kaybetmeye başlayacak. d30'daki ısıl ölüm senaryosunun son sahnesi tam olarak budur: yıldızlar söndükten çok sonra kara delikler Hawking ışımasıyla yavaş yavaş buharlaşır. Bu tablo iki kabule dayanır: Hawking ışımasının gerçek olması ve karanlık enerjinin bugünkü gibi davranmayı sürdürmesi. İkincisini d51'de, uzak gelecek senaryolarını da d55'te göreceksin."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Kozmik arka plandan sıcak bir kara delik ne kadar ağır olur?",
+        "metin": "Koşul: T = 2,725 K. Kısayoldan M ÷ M☉ = 6,17 × 10⁻⁸ ÷ 2,725 ≈ 2,26 × 10⁻⁸. 1. adım: Kütle ≈ 2,26 × 10⁻⁸ × 1,988 × 10³⁰ kg ≈ 4,5 × 10²² kg. 2. adım: Ay'la karşılaştır: 4,5 × 10²² ÷ 7,346 × 10²² ≈ 0,61. 3. adım: Ufuk yarıçapı: Rs ≈ 2,95 km × 2,26 × 10⁻⁸ ≈ 6,7 × 10⁻⁸ km = 6,7 × 10⁻⁵ m, yani yaklaşık 0,07 mm. Sonuç: bugün net olarak küçülebilecek bir kara delik, Ay kütlesinin yaklaşık yüzde 61'inden hafif olmalı; böyle bir kara deliğin ufku 0,07 mm yarıçaplıdır ve böyle bir cisim hiç gözlenmedi."
+      },
+      "akilda": "Bir kara delik ancak 2,725 K'lik kozmik arka plandan sıcaksa net olarak küçülür. Bunun için Ay kütlesinin yaklaşık yüzde 61'inden hafif olmalı; bilinen bütün kara delikler bugün büyüyor."
+    },
+    {
+      "baslik": "Buharlaşma: ömür kütlenin küpüyle büyür",
+      "paragraflar": [
+        "Hawking ışıması doğruysa her kara deliğin bir ömrü vardır. Wikipedia'ya göre bu ömür, ilk kütlenin küpüyle ölçeklenir: kütle on katına çıkarsa ömür bin katına çıkar. Yalnızca fotonların yayıldığı varsayılan basit hesapta formül şöyledir: ömür ≈ 2,1 × 10⁶⁷ yıl × (M ÷ M☉)³. d16'da okuduğun “Güneş kütleli bir kara delik 10⁶⁷ yıldan uzun yaşar” cümlesi bu formülden gelir. Hesap kozmik arka planın ısıtmasını yok sayar; gerçekte, önceki bölümde gördüğün gibi, bu kara delik bugün hiç küçülmez bile.",
+        "Neden küp? Kaba bir akıl yürütmeyle görebilirsin. d2'de gördüğün Stefan-Boltzmann yasasına göre sıcak bir cismin yaydığı güç, yüzey alanıyla ve sıcaklığın dördüncü kuvvetiyle orantılıdır. Kara deliğin ufuk alanı kütlenin karesiyle büyür, sıcaklığı ise kütleyle ters orantılıdır. Güç, kütlenin karesi çarpı kütlenin eksi dördüncü kuvveti, yani 1 ÷ M² ile orantılı çıkar: büyük kara delik çok daha yavaş ışır. Ömür, aşağı yukarı kütle ÷ kütle kaybı hızı olduğuna göre M ÷ (1 ÷ M²) = M³ ile orantılıdır. Ayrıntılı hesap sabiti değiştirir ama bu ölçeklemeyi değiştirmez.",
+        "Buharlaşmanın son anları ise sakin değildir. Kütle azaldıkça sıcaklık tırmanır ve kara delik ömrünün sonunda bir patlamayla tükenir; Wikipedia'ya göre küçük bir kara deliğin son evresinin mikrosaniyeler süren bir gama ışını parlaması olması beklenir. Sıcaklık arttıkça kara delik yalnız foton değil, başka parçacıklar da yaymaya başlar; buharlaşma üzerine 2024'te arXiv'e konan bir makale, foton dışı parçacıkların yayılmasının ömrü kısalttığını hatırlatır. Bu yüzden basit formül, küçük kara deliklerin ömrünü biraz uzun tahmin eder.",
+        "Dev kara deliklerde sayılar evrenin bütün tarihini önemsiz kılar. Basit formül Sgr A* için yaklaşık 1,7 × 10⁸⁷ yıl verir. d30'da gördüğün gibi yüz milyar Güneş kütleli dev bir kara delik 10¹⁰⁰ yıl mertebesinde yaşar. Karşılaştırma için evrenin yaşı yaklaşık 1,38 × 10¹⁰ yıldır (d8). Bunlar, Hawking ışımasının gerçek olduğu ve bugünkü fizik yasalarının bu süreler boyunca geçerli kaldığı varsayımıyla yapılmış hesaplardır; kesinlik düzeyleri de Hawking ışımasınınkiyle aynıdır: “Kuram / hipotez”."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Tam şimdi biten bir kara delik ne kadar ağırdı?",
+        "metin": "Evrenin yaşı ≈ 1,38 × 10¹⁰ yıl. Basit formül: 2,1 × 10⁶⁷ × (M ÷ M☉)³ = 1,38 × 10¹⁰. 1. adım: (M ÷ M☉)³ = 1,38 × 10¹⁰ ÷ 2,1 × 10⁶⁷ ≈ 6,6 × 10⁻⁵⁸. 2. adım: Küp kök ≈ 8,7 × 10⁻²⁰. 3. adım: M ≈ 8,7 × 10⁻²⁰ × 1,988 × 10³⁰ kg ≈ 1,7 × 10¹¹ kg. Makalenin değeri 1,8 × 10¹⁴ gram, yani 1,8 × 10¹¹ kg; uyumlu. 4. adım: Bütün parçacık türleri hesaba katılınca ömür kısalır ve HAWC ekibinin verdiği değer yaklaşık 5 × 10¹¹ kg olur. 5. adım: Bu kütlenin ufku: 2,95 km × (5 × 10¹¹ ÷ 1,988 × 10³⁰) ≈ 7,4 × 10⁻¹⁶ m; sıcaklığı 6,17 × 10⁻⁸ × (1,988 × 10³⁰ ÷ 5 × 10¹¹) ≈ 2,5 × 10¹¹ K. Sonuç: bugün bitmekte olan bir kara delik birkaç yüz milyar kilogramlık, yani bir dağ kütlesinde doğmuş olmalı; yarıçapı bir metrenin katrilyonda birinden küçük, sıcaklığı yüz milyarlarca kelvindir."
+      },
+      "akilda": "Ömür kütlenin küpüyle büyür: Güneş kütleli bir kara delik için yaklaşık 2,1 × 10⁶⁷ yıl. Evrenin yaşı içinde bitebilecek kara delikler ancak birkaç yüz milyar kilogramlık olabilir; son anları bir gama ışını parlamasıyla bitmelidir."
+    },
+    {
+      "baslik": "İlkel kara delikler: göğün son patlamalarını aramak",
+      "paragraflar": [
+        "Önceki örnekteki kara delikler bir dağ kütlesindeydi. Böyle bir kara delik bir yıldızın çöküşünden doğamaz; d6 ve d16'da gördüğün gibi yıldız kökenli kara delikler birkaç Güneş kütlesinden başlar. Patlayan bir kara delik görmek için tek aday, evrenin ilk anlarında oluşmuş olabilecek ilkel kara deliklerdir. HAWC ekibinin makalesine göre bunlar erken evrendeki yoğunluk dalgalanmalarından doğmuş olabilir. Wikipedia'ya göre Hawking 1975'te, kütlesi yaklaşık 10¹² kg'dan az olan ilkel kara deliklerin bugüne kadar tamamen buharlaşmış olacağını hesapladı. Daha ağır olanlar hâlâ ortalıkta olabilir; karanlık maddenin bir kısmını oluşturup oluşturamayacakları d50'nin konusuydu.",
+        "Avın yöntemi basittir: bitmekte olan bir kara deliğin son saniyeleri, gökte kısa ve çok enerjik bir gama ışını parlaması olarak görünmelidir. Wikipedia'ya göre Haziran 2008'de fırlatılan Fermi Gama Işını Uzay Teleskobu bu parlamaları arıyor. Fermi'nin Büyük Alan Teleskobu ekibi 2018'de, aday bulamamasından yola çıkarak, Dünya'nın yakın çevresinde bu tür buharlaşmaların yılda parsek küp başına 7.200'den az olması gerektiğini yüzde 99 güvenle hesapladı. Meksika'da Sierra Negra yanardağının yamacında, deniz düzeyinden 4.100 m yüksekte duran HAWC gözlemevi 959 günlük veriyle bu sınırı yılda parsek küp başına 3.400'e indirdi.",
+        "Sonuç kısa: Wikipedia'ya göre Ocak 2024 itibarıyla böyle bir patlama hiç saptanmadı. Bu, Hawking ışımasını çürütmez. Ya ilkel kara delikler hiç oluşmadı, ya da o kadar seyrektir ki yakınımızda patlayanı yakalayamadık. Ayrıca bu sınırların ölçüm değil, üst sınır olduğuna dikkat et: “şundan fazla olamaz” derler, “şu kadar var” demezler. Arada bir heyecan verici öneriler de çıkar. Wikipedia'ya göre KM3NeT deniz altı nötrino teleskobunun 2023'te kaydettiği son derece yüksek enerjili bir olay için öne sürülen açıklamalardan biri bir ilkel kara deliğin buharlaşmasıdır; bu, pek çok olası açıklamadan yalnızca biridir.",
+        "Kesinlik düzeyleri: ilkel kara deliklerin var olması “Kuram / hipotez”; matematiksel olarak mümkün, ama hiç gözlenmedi. Buharlaşan bir ilkel kara deliğin son patlamasının gözlenmesi: yok. KM3NeT olayının ilkel kara delikle açıklanması: “Spekülasyon”. Bir gün böyle bir patlama yakalanırsa, bu Hawking ışımasının ilk doğrudan gözlemi olur ve fizik tarihinin en önemli sonuçlarından biri sayılır; ama bugünkü dürüst durum, aramaların hep boş döndüğüdür."
+      ],
+      "akilda": "Bugün buharlaşan kara delikler ancak erken evrende oluşmuş ilkel kara delikler olabilir. Fermi ve HAWC son gama ışını patlamalarını arıyor; Ocak 2024 itibarıyla hiçbiri saptanmadı. İlkel kara delikler “Kuram / hipotez” düzeyindedir."
+    },
+    {
+      "baslik": "Bilgi nedir ve neden kaybolmamalı?",
+      "paragraflar": [
+        "Fizikçiler “bilgi” derken bir dosyayı ya da haberi kastetmez. Bir sistemin bilgisi, onun tam ayrıntılı durumudur: d30'daki dille mikrodurumu. Kuantum mekaniğinde bu durumu d27'de tanıdığın dalga fonksiyonu taşır. Wikipedia'nın özetine göre kuantum durumları zaman içinde üniter denen bir kurala göre değişir ve bu yüzden herhangi bir andaki dalga fonksiyonu hem geçmişini hem geleceğini belirler. Bu özelliğe üniterlik denir. Sonucu çok güçlüdür: ilke olarak bilgi hiçbir zaman yok olmaz, yalnızca karışır ve dağılır.",
+        "Bunu bir ansiklopediyi yakmayla düşünebilirsin. Ansiklopedi yanınca sayfalardaki yazılar duman, kül ve ısı ışınımına karışır. Pratikte geri okunamaz. Ama kuantum kurallarına göre ilke olarak duman parçacıklarının, külün ve ışığın en ince ayrıntılarında hâlâ saklıdır; bütün parçaları kusursuz ölçebilen ve hesabı geriye işletebilen biri, yazıyı geri kurabilirdi. d30'da bilginin soyut değil fiziksel bir şey olduğunu, Landauer ilkesiyle silmenin bile bir ısı bedeli olduğunu görmüştün. Benzetmenin sınırı da tam kara deliğin farkını gösterir: duman, kitabın kendisiyle etkileşmiş parçacıklardan oluşur; Hawking'in hesabındaki ışınım ise ufkun dışındaki boş uzaydan doğar ve içeri düşen kitabın ayrıntılarına dokunmuyor gibi görünür.",
+        "Bir ayrım daha gerekiyor. Tam olarak belirli tek bir kuantum durumuna saf durum denir; Wikipedia'ya göre saf durumun entropisi sıfırdır. Sistemin hangi durumda olduğunu yalnızca olasılıklarla bilebildiğimiz duruma karışık durum denir ve entropisi sıfırdan büyüktür. d28'deki dolanıklığı hatırla: dolanık bir çiftin bütünü saf bir durumda olabilir, ama çiftin tek bir parçasına baktığında o parça karışık görünür. Parçanın entropisine dolanıklık entropisi denir. Üniter bir değişim saf bir durumu hiçbir zaman karışık bir duruma çeviremez. Bu kural, bir sonraki bölümdeki paradoksun düğüm noktasıdır.",
+        "Kesinlik düzeyi: Kuantum mekaniğinin hesap kuralları, d27'de gördüğün gibi yüz yıldır laboratuvarda her sınavı geçti; laboratuvar ölçeklerinde “Gözlemle kesinleşmiş” saymak yerindedir. Açık olan soru, bu kuralların kütleçekiminin en uç olduğu yerde, bir kara deliğin buharlaşmasında da geçerli olup olmadığıdır. Bu soruyu deneyle sınayamıyoruz; yanıtı ancak kuramsal tutarlılıktan arıyoruz. Bu yüzden bundan sonraki bölümlerin hemen hepsi “Kuram / hipotez” düzeyinde ilerleyecek."
+      ],
+      "akilda": "Fizikte bilgi, bir sistemin tam ayrıntılı durumudur. Kuantum kuralları üniterdir: bilgi karışır ama yok olmaz ve saf bir durum hiçbir zaman karışık bir duruma dönüşemez."
+    },
+    {
+      "baslik": "Paradoks: Hawking 1976 ve ansiklopedi bahsi",
+      "paragraflar": [
+        "Hawking sorunu 1976'da Physical Review D dergisinde yayımlanan “Kütleçekimsel çöküşte öngörülebilirliğin yıkılışı” adlı makalesinde açıkça koydu. Akıl yürütme şöyledir. Bir yıldız ya da herhangi bir madde, saf bir kuantum durumunda çöküp kara delik oluşturur. Kara delik d16'da gördüğün saçsızlık ilkesi yüzünden dışarıdan yalnızca kütle, dönme ve yükle betimlenir. Hawking ışıması tam ısıldır; özellikleri bu üç sayıyla belirlenir ve içeri neyin düştüğünü taşımaz. Kara delik tamamen buharlaşınca geriye yalnızca bu ısıl ışınım kalır. Wikipedia'nın özetiyle: buharlaşma saf bir durumu karışık bir duruma çevirir, oysa üniter bir değişim bunu yapamaz. Ya kuantum mekaniği yanlıştır, ya da hesapta bir eksik vardır.",
+        "Akla üç çıkış yolu gelir. Birincisi, bilgi gerçekten kaybolur ve kuantum mekaniği kütleçekimiyle birleşince değişmelidir; Hawking'in 1976'daki görüşü buydu. İkincisi, bilgi ışınımın içinde, çok ince ilişkiler hâlinde gizlidir ve Hawking'in yaklaşık hesabı bunları kaçırır. Üçüncüsü, buharlaşma bir noktada durur ve bilgi küçük bir kalıntıda saklanır. Wikipedia'ya göre kalıntı fikrinin ciddi sorunları var: kara deliğin hâlâ büyükken ışımayı durdurmasını sağlayacak kabul görmüş bir mekanizma yok ve küçük bir kalıntıda bu kadar çok bilgi saklamak, bir bölgedeki entropinin üst sınırını veren Bekenstein sınırını çiğneyebilir.",
+        "Tartışma bir bahse de konu oldu. 6 Şubat 1997'de imzalanan bahiste Kip Thorne ile Hawking, Hawking ışımasının taşıdığı bilginin “yeni” olduğunu ve olay ufkunun içinden gelmediğini savundu; John Preskill ise ışınımın, içeri düşen bilgiyle ilişkili olduğunu ve genel göreliliğin kara delik tablosunun değişmesi gerektiğini. Kazanan taraf seçtiği bir ansiklopediyi alacaktı: içinden “istendiğinde bilgi geri alınabilen” bir kaynak. Wikipedia'ya göre Hawking 21 Temmuz 2004'te Dublin'deki 17. Uluslararası Genel Görelilik ve Kütleçekim Konferansı'ndaki konuşmasıyla bağlantılı olarak bahsi kaybettiğini kabul etti ve Preskill'e bir beyzbol ansiklopedisi verdi.",
+        "Hikâyenin sonu bile tartışmalıdır. Thorne, Hawking'in kanıtına ikna olmadı ve ödüle katılmadı; 2024 itibarıyla da “hâlâ direnen” olduğunu söylüyordu. Wikipedia'ya göre Hawking'in argümanı bilim topluluğunca bütünüyle kabul görmüş değil. Bugünkü durumu özetlersek: paradoks resmen çözülmemiş bir sorundur ve kuantum kütleçekiminin etkin bir araştırma alanıdır. Fizikçilerin baskın görüşü bilginin korunduğu yönünde; ama gerçekten kaybolduğunu savunan bir azınlık da var. Çoğunluğun görüşü kanıt değildir; bu, bugünkü en iyi tahmindir."
+      ],
+      "akilda": "Hawking 1976'da buharlaşmanın saf durumu karışık duruma çevirdiğini, yani bilgiyi yok ettiğini savundu. 1997'de bahse girildi; Hawking 2004'te kabul etti ama Thorne ikna olmadı. Paradoks resmen çözülmüş değildir."
+    },
+    {
+      "baslik": "Page eğrisi: bilgi dışarı çıkıyorsa entropi ne yapmalı?",
+      "paragraflar": [
+        "Bilgi kaybolmuyorsa, nasıl dışarı çıktığını göremesek bile ne yapması gerektiğini sorabiliriz. Bu soruyu Hawking'in doktora öğrencisi ve birçok makalesinin ortak yazarı olan Don Page sordu. Page 1993'te Physical Review Letters dergisinde yayımlanan makalesinde basit ama güçlü bir şey gösterdi: kara deliğin oluşumu ve buharlaşması üniterse, ışınımın dolanıklık entropisinin zaman içindeki eğrisi belirli bir biçimde olmalıdır. Bu eğriye bugün Page eğrisi denir.",
+        "Mantığı şöyle izleyebilirsin. Başta ortada saf bir durum var ve henüz ışınım yok; ışınımın entropisi sıfır. Kara delik ışımaya başlayınca ilk parçacıklar geride kalan kara delikle dolanıktır; ışınıma tek başına bakan biri onu karışık bulur ve entropisi artar. Ama bir dolanık çiftte iki parçanın dolanıklık entropisi birbirine eşittir; ışınımın entropisi, kara deliğin taşıyabileceğinden fazla olamaz. Kara delik küçüldükçe taşıyabileceği entropi de küçülür. Bir noktada eğri dönmek zorundadır. Bir 2020 makalesinin özetlediği gibi entropi sıfırdan başlayıp buharlaşmanın kabaca yarı yoluna kadar artar, sonra yeniden sıfıra iner. Dönüm noktasına Page zamanı denir.",
+        "Hawking'in hesabı ise farklı bir eğri verir: ışınım baştan sona ısıl olduğu için entropisi kara delik bitene kadar hep artar ve sonunda büyük bir değerde kalır. İki eğri, Page zamanına kadar neredeyse aynıdır; ayrılık ondan sonra başlar. Page'in makalesi ince bir noktaya da dikkat çekti: bilgi ışınımla dışarı çıkıyor olsa bile, başlangıçta o kadar yavaş ya da o kadar dağınık çıkabilir ki yaklaşık hesaplarda hiç görünmez. Yani Hawking'in hesabının buharlaşmanın ilk yarısında doğru görünmesi, bilginin kaybolduğunu kanıtlamaz. Bilgi paradoksunu çözmek isteyen her öneri için Page eğrisini yeniden üretmek bir sınav hâline geldi.",
+        "Kesinlik düzeyi: Page eğrisi, üniterlik varsayımından çıkan matematiksel bir sonuçtur; o varsayım doğruysa eğri de doğrudur. Ama gerçek bir kara deliğin ışınımının bu eğriyi izlediği hiçbir zaman ölçülmedi ve aşağıdaki örnek, neden ölçülemeyeceğini gösteriyor. Bu yüzden Page eğrisi “Kuram / hipotez” düzeyindedir: hedefin ne olduğunu söyler, oraya nasıl varıldığını söylemez."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Güneş kütleli bir kara deliğin Page zamanı",
+        "metin": "Kozmik arka planın ısıtmasını yok sayalım ve basit formülü kullanalım. 1. adım: 1 M☉'lik kara deliğin ömrü ≈ 2,1 × 10⁶⁷ yıl. 2. adım: Page zamanı kabaca yarı yolda: ≈ 1 × 10⁶⁷ yıl. 3. adım: Evrenin yaşıyla oranı: 1 × 10⁶⁷ ÷ 1,38 × 10¹⁰ ≈ 7 × 10⁵⁶. 4. adım: Sgr A* için ömür ≈ 2,1 × 10⁶⁷ × (4,297 × 10⁶)³ ≈ 1,7 × 10⁸⁷ yıl; Page zamanı ≈ 8 × 10⁸⁶ yıl. Sonuç: Güneş kütleli bir kara deliğin ışınımından bilginin belirgin biçimde çıkmaya başlaması için evrenin bugünkü yaşının yaklaşık 10⁵⁷ katı beklemek gerekir; Page eğrisi bu yüzden gözlemle değil, ancak kuramla sınanabilir."
+      },
+      "akilda": "Buharlaşma üniterse ışınımın entropisi sıfırdan başlayıp kabaca yarı yola dek artmalı, sonra yeniden sıfıra inmelidir (Page 1993). Dönüm noktası Page zamanıdır; Hawking'in hesabı ise hep artan bir eğri verir."
+    },
+    {
+      "baslik": "Ateş duvarı: ufukta yanmak mı, kuralı bozmak mı?",
+      "paragraflar": [
+        "1990'larda bir uzlaşma önerisi ortaya çıktı: kara delik tamamlayıcılığı. Wikipedia'ya göre fikir Leonard Susskind, Lárus Thorlacius ve John Uglum'un 1993 makalesine ve Gerard 't Hooft'un daha önceki çalışmalarına dayanır. Önerinin özü şudur. Dışarıdaki gözlemci için içeri düşen bilgi, ufkun hemen üstündeki sıcak bir “gerilmiş ufukta” toplanır ve Hawking ışımasıyla üniter biçimde geri verilir. İçeri düşen gözlemci içinse ufukta hiçbir olağandışı şey olmaz; ufkun içine geçer. İki anlatı birbiriyle çelişiyor gibi görünür; ama hiçbir gözlemci ikisini birden doğrulayamaz. Bilginin iki kopyası olsaydı kuantum durumlarının kopyalanamayacağını söyleyen kural çiğnenirdi; tamamlayıcılık, kimsenin iki kopyayı birden göremeyeceğini savunur.",
+        "13 Temmuz 2012'de Ahmed Almheiri, Donald Marolf, Joseph Polchinski ve James Sully, yazarlarının baş harfleriyle AMPS denen bir makaleyle bu uzlaşmayı sarstı. Makalenin özetine göre şu üç ifade aynı anda doğru olamaz: birincisi, Hawking ışıması saf bir durumdadır, yani bilgi korunur; ikincisi, bilgi ufkun yakınından yayılır ve ufuktan biraz uzakta bildiğimiz fizik geçerlidir; üçüncüsü, içeri düşen gözlemci ufukta olağandışı bir şeyle karşılaşmaz. Gerekçe d28'deki dolanıklıkla ilgilidir: dolanıklık tekeşlidir; geç dönemde ışınan bir parçacık hem erken ışınımla hem de ufkun içindeki eşiyle aynı anda tam dolanık olamaz. Yazarlara göre en tutucu çözüm, düşen gözlemcinin ufukta yanmasıdır. Ufukta bekleyen bu yüksek enerjili parçacık katmanına ateş duvarı denir.",
+        "Sonuç fizikçileri şaşırttı, çünkü d16'da dev kara deliklerin ufkunun nazik olduğunu, d26'da da eşdeğerlik ilkesine göre serbest düşen bir gözlemcinin boş uzayda özel bir şey hissetmemesi gerektiğini görmüştün. Wikipedia'nın aktardığına göre Raphael Bousso, bir ateş duvarının boş uzayda öylece beliremeyeceğini söyledi. Önerilen çıkış yolları çok çeşitli: bilginin yavaş yavaş kaybolması, ışınım ile kara deliğin içinin aslında aynı serbestlik derecelerinden oluşması, sicim kuramından gelen “tüy yumağı” modeli, d56'da göreceğin ER = EPR fikri ve Hawking'in 2014'te olay ufku yerine “görünür ufuk” önermesi. Wikipedia'ya göre ateş duvarı fikri hâlâ tartışmalıdır ve fizikçiler çözüm konusunda bölünmüş durumdadır.",
+        "Gözlemle sınanabilir mi? Ufukta bir yapı varsa, birleşen kara deliklerden gelen kütleçekim dalgalarının ardından küçük yankılar gelebilir. 2016'da Niayesh Afshordi ve arkadaşları ilk LIGO birleşmelerinin verisinde böyle yankıların ön işaretlerini bildirdi; aynı veriye bakan sonraki çalışmalar ise istatistiksel olarak anlamlı bir kanıt bulamadı. Kesinlik düzeyleri: AMPS çelişkisi ciddi ve iyi tanımlanmış bir kuramsal sorundur; ateş duvarlarının gerçekten var olması ise “Spekülasyon”. Yankı iddiaları bugünkü verilerle desteklenmiyor."
+      ],
+      "akilda": "Tamamlayıcılık (1993) dışarıdaki ve içeri düşen gözlemcinin anlatılarını uzlaştırmaya çalıştı. AMPS (2012), dolanıklığın tekeşliliğinden yola çıkarak düşen gözlemcinin ufukta yanabileceğini savundu: ateş duvarı. Tartışma sürüyor; ateş duvarı “Spekülasyon” düzeyindedir."
+    },
+    {
+      "baslik": "Holografik ilke ve AdS/CFT: evren bir yüzeye mi yazılı?",
+      "paragraflar": [
+        "Kara delik entropisinin hacimle değil alanla büyümesi, d30'da da şaşırtıcı bulduğun gibi, derin bir ipucu gibi duruyordu. Wikipedia'ya göre Bekenstein sınırı, bir bölgedeki en büyük entropinin yarıçapın küpüyle değil karesiyle sınırlı olduğunu söyler. Gerard 't Hooft 1993'te buradan cesur bir ilke çıkardı; Leonard Susskind 1995'teki “Hologram olarak dünya” makalesiyle ona sicim kuramı içinde kesin bir yorum verdi. Holografik ilkeye göre bir uzay bölgesinin betimi, o bölgenin sınırındaki daha az boyutlu bir yüzeye kodlanmış gibi düşünülebilir.",
+        "Adındaki benzetme kredi kartlarındaki hologramdan gelir: düz bir yüzey, üç boyutlu görünen bir görüntü taşır. Benzetmenin sınırını bil: ilke, dünyanın bir yanılsama ya da bir bilgisayar oyunu olduğunu söylemez. Yalnızca bir bölgeyi tam olarak anlatmak için gereken bilgi miktarının, bölgenin hacmiyle değil yüzeyiyle sınırlı olduğunu söyler. Bunu bir muhasebe kuralı gibi düşünebilirsin: kara delik, bir bölgeye sığabilecek en çok bilginin ölçüsüdür ve o ölçü alanla büyür.",
+        "İlkenin en başarılı somut örneğini Juan Maldacena 1997'nin sonunda önerdi; makalesi 1 Ocak 1998'de yayımlandı. Wikipedia'ya göre 2015'e kadar 10.000'den fazla atıf alarak yüksek enerji fiziğinde en çok atıf alan makale oldu. AdS/CFT eşlemesi denen bu öneriye göre anti-de Sitter (AdS) denen, kozmolojik sabiti eksi olan, kütleçekimli bir evren, sınırındaki kütleçekimsiz bir kuantum alan kuramına, konformal alan kuramına (CFT), tamamen eşdeğerdir. Sınırdaki kuram sıradan, üniter bir kuantum kuramıdır. Öyleyse içerideki bir kara deliğin oluşumu ve buharlaşması da üniter olmalıdır. Wikipedia'ya göre eşleme bilgi paradoksunu “en azından bir ölçüde” çözer; Hawking de 2005'te bu nedenle bilginin korunduğunu ilan etti.",
+        "Sınırlar önemlidir. AdS bizim evrenimiz değildir: d17'de gördüğün gibi evrenimizin kozmolojik sabiti küçük ve artıdır, evren hızlanarak genişler; Wikipedia'ya göre AdS ise ne genişler ne büzülür. Eşleme kesin olarak kanıtlanmamış bir sanıdır; onu destekleyen çok sayıda hesap vardır. Bilinen örnekleri fiziksel olmayan boyut sayıları ve süpersimetri kullanır. Kendi evrenimize benzeyen uzay-zamanlar için holografik betimleme arayışları, örneğin dS/CFT ve “göksel holografi”, sürüyor; ama merkezi sanıları kanıtlanmış değil. Kesinlik düzeyleri: AdS/CFT “Kuram / hipotez”, kendi alanında matematiksel olarak çok güçlü desteklenen bir sanı; “evrenimiz bir hologramdır” iddiası popüler biçimiyle “Spekülasyon”."
+      ],
+      "akilda": "Holografik ilke ('t Hooft 1993, Susskind 1995), bir bölgenin bilgisinin sınır yüzeyine yazılabileceğini söyler. Maldacena'nın AdS/CFT'si (1997) bunun en güçlü örneğidir ve bilginin korunmasını destekler; ama AdS bizim evrenimiz değildir ve eşleme kanıtlanmamış bir sanıdır."
+    },
+    {
+      "baslik": "Adalar ve kopya solucan delikleri: 2019'un hesapları",
+      "paragraflar": [
+        "Otuz yıl boyunca Page eğrisini kütleçekimi hesabının içinden çıkarmak mümkün olmadı. 2019'da birkaç ekip bunu başardı. 27 Kasım 2019'da arXiv'e iki makale geldi: Almheiri, Hartman, Maldacena, Shaghoulian ve Tajdini'nin “Kopya solucan delikleri ve Hawking ışımasının entropisi” ile Penington, Shenker, Stanford ve Yang'ın “Kopya solucan delikleri ve kara deliğin içi”. İkinci makalenin özetine göre, yakın tarihli başka çalışmalar Page eğrisini holografik entropi hesaplarıyla zaten elde etmişti; bu iki makale o sonucu kütleçekiminin kendi hesap yöntemiyle temellendirdi.",
+        "Ne yaptılar? Entropiyi hesaplamanın bir yolu, kopya yöntemi denen matematiksel bir hiledir: sistemin birkaç kopyasını alıp birbirine bağlar, sonra kopya sayısını bire indirirsin. Kütleçekimi hesaba katılınca, kopyaları birbirine bağlayan yeni uzay-zaman geometrileri de katkı verir; bunlara kopya solucan delikleri denir. Almheiri ve arkadaşlarının özetine göre bu yeni katkılar eklenince Hawking'in hesapladığı entropi ile üniterliğin istediği arasındaki büyük fark kapanır. Sonuçta ortaya bir “ada kuralı” çıkar: Page zamanından sonra ışınımın entropisini hesaplarken, kara deliğin içindeki bir bölgeyi, adayı, ışınıma ait saymak gerekir. Entropi Page eğrisini izler: önce artar, sonra düşer.",
+        "Bunlar büyük teknik başarılardır ama sınırları açıktır. Almheiri ve arkadaşlarının düzeneği, bir AdS bölgesinin düz bir uzay-zamana eklendiği bir modeldir; ayrıntılı hesaplar iki boyutlu Jackiw-Teitelboim kütleçekimi denen basitleştirilmiş bir oyuncak modelde yapılır. Gerçek, dört boyutlu, dönen bir kara delik değildir bu. Cornell'in haberinde makalenin yazarlarından Thomas Hartman çalışmanın paradoksun “bir köşesini” çözdüğünü söyler ve paradoksun neredeyse çözüldüğü fikrine karşı çıkar. Hesap, Page eğrisinin doğru olduğunu gösterir; bilginin hangi fiziksel süreçle dışarı taşındığını göstermez.",
+        "Berkeley'in haberine göre 2019'daki adalar ufkun yalnızca çok az dışına taşıyordu; bu uzaklık ölçülebilecek en küçük uzunluktan da küçük göründüğü için adalar ilk başta fiziksel bir gerçeklikten çok matematiksel bir merak gibi görüldü. Raphael Bousso ile Geoff Penington'ın sonraki hesabı daha karmaşık kara deliklere uzandı. Haberde Maldacena'nın gerçekçi bir kara delik için bunun deneyle sınanamayacağını söylediği, laboratuvardaki oyuncak kara delikler içinse yaklaşık bir milyon kübit gerektiği, oysa haber tarihindeki en iyi kuantum bilgisayarların yaklaşık 1.000 kübitli olduğu aktarılır. Kesinlik düzeyi: “Kuram / hipotez”; önemli bir ilerleme, ama oyuncak modellerde ve gözlemsiz."
+      ],
+      "akilda": "2019'da kopya solucan delikleri ve ada kuralıyla Page eğrisi kütleçekimi hesabından elde edildi. Bu hesaplar oyuncak modellerde (AdS, iki boyut) yapıldı ve bilginin nasıl dışarı çıktığını göstermez; yazarlardan biri “paradoksun bir köşesini” çözdüklerini söylüyor."
+    },
+    {
+      "baslik": "Laboratuvarda kara delik: ses ufukları",
+      "paragraflar": [
+        "Gerçek bir kara deliğin Hawking ışımasını ölçemiyorsak, ufkun kendisini laboratuvarda taklit edebilir miyiz? William Unruh 1981'de Physical Review Letters'ta yayımlanan “Deneysel kara delik buharlaşması mı?” adlı makalesinde bunu önerdi. Fikir şudur: bir akışkanın hızının ses hızını aştığı bir yüzey, ses dalgaları için bir ufuk gibi davranır. Akıntıya karşı ilerlemeye çalışan ses, akıntı ondan hızlı olduğu için geri gelemez. Steinhauer'in benzetmesiyle: nehir, senin yüzebileceğinden hızlı akıyordur. Unruh'a göre böyle bir “sağır delik”, Hawking hesabının varsayımlarını sınamanın bir yolu olabilir.",
+        "Jeff Steinhauer ve ekibi bu fikri mutlak sıfırın hemen üstüne soğutulmuş bir atom bulutunda, bir Bose-Einstein yoğuşmasında gerçekleştirdi. Bose-Einstein yoğuşması, atomların hep birlikte tek bir kuantum durumu gibi davrandığı aşırı soğuk bir gazdır. 2016'da Nature Physics dergisinde kendiliğinden oluşan Hawking benzeri ışınımı ve onun dolanıklığını gözlediklerini bildirdiler. 2019'da Muñoz de Nova, Golubkov, Kolobov ve Steinhauer, Nature dergisinde iyileştirilmiş bir düzenekle sonuçlarını yayımladı. Makalenin arXiv sürümüne göre ses kara deliği 8.000 rubidyum-87 atomundan oluşuyordu ve deney 7.400 kez tekrarlandı. Özete göre ışınımın tayfı ısıl bir tayfla iyi uyuştu ve sıcaklığı, Hawking'in kuramının öngördüğü gibi ufkun “yüzey çekimi”yle belirlendi; öngörülen sıcaklık yaklaşık 0,35 nanokelvindi.",
+        "Eleştiriler de vardı. Weizmann Enstitüsü'nden Ulf Leonhardt, 2016 sonucunu ayrıntılı biçimde sorguladı: ona göre tayf açıkça Planck biçiminde değildi, sıcaklık geçici bir modelle uyduruluyordu ve belirsizlikler hesaba katılınca veriler yalnızca bir standart sapma düzeyinde ayırt edilebiliyordu. Leonhardt'a göre keşif ölçütleriyle kuantum Hawking ışımasının ve dolanıklığının gözlendiği söylenemezdi. 2019 makalesinin özeti de önceki ölçümde tayfın ısıl biçimde olmadığını ve ona bir sıcaklık atanamadığını kabul eder; yeni düzenek bu yüzden geliştirildi. Wikipedia'ya göre 2010'daki bir optik deneyin sonuçları da hâlâ tartışmalıdır.",
+        "Bu deneyler neyi gösterir, neyi göstermez? Gösterdikleri: ufku olan bir kuantum sisteminde, Hawking'in mekanizmasıyla kendiliğinden, eşli ve ısıl bir ışınım doğabiliyor. Unruh'a göre sonuç doğrulanırsa, ışınımın çok kısa dalga boylarındaki fizikten bağımsız olduğunu düşündürür; bu, Planck ötesi soruna dolaylı bir yanıttır. Göstermedikleri: bu düzeneklerde kütleçekimi, Einstein denklemleri ya da kuantum kütleçekimi yoktur. Nautilus'un yazısına göre deney, gökteki kara deliklerde Hawking ışımasının varlığını doğrulamaz; phys.org'un haberine göre kesin kanıt ancak gerçek bir kara deliğin ışınımını ölçmekle gelir. Bilgi paradoksu hakkında da doğrudan bir şey söylemez. Kesinlik düzeyleri: ses kara deliklerinde Hawking benzeri ışıma “Güçlü kanıtlı ama açık sorulu”; gökteki Hawking ışıması hâlâ “Kuram / hipotez”."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Ses kara deliği hangi kara deliğe denk düşer?",
+        "metin": "Ses kara deliğinin öngörülen Hawking sıcaklığı ≈ 0,35 nanokelvin = 3,5 × 10⁻¹⁰ K. 1 M☉'lik gerçek bir kara deliğinki ≈ 6,17 × 10⁻⁸ K. 1. adım: Oran: 6,17 × 10⁻⁸ ÷ 3,5 × 10⁻¹⁰ ≈ 176. 2. adım: Sıcaklık kütleyle ters orantılı olduğu için aynı sıcaklıktaki gerçek kara delik ≈ 176 M☉ olurdu. 3. adım: Fark nerede? 176 M☉'lik bir kara deliğin ışınımı 2,725 K'lik kozmik arka planın içinde kaybolur: 2,725 ÷ 3,5 × 10⁻¹⁰ ≈ 8 × 10⁹, yani arka plan yaklaşık 8 milyar kat sıcaktır. Laboratuvardaki yoğuşma ise kendisi nanokelvin düzeyinde soğuk bir ortamda durur. Sonuç: sıcaklık bakımından ses kara deliği yaklaşık 176 Güneş kütleli bir kara deliğe denktir; ölçülebilmesinin sırrı, gökteki gibi sıcak bir arka planın içinde olmamasıdır."
+      },
+      "akilda": "Unruh 1981'de akışkanlarda ses ufkuyla Hawking ışımasını taklit etmeyi önerdi. Steinhauer'in ekibi 2016 ve 2019'da Bose-Einstein yoğuşmasında Hawking benzeri ısıl ışınım bildirdi; 2016 sonucu eleştirildi. Bu deneyler mekanizmayı sınar ama kütleçekimini ve gerçek kara delikleri sınamaz."
+    },
+    {
+      "baslik": "Neyi biliyoruz, neyi bilmiyoruz?",
+      "paragraflar": [
+        "Dersi dört kesinlik düzeyiyle toparlayalım. “Gözlemle kesinleşmiş”: kara delikler vardır; kuantum mekaniğinin kuralları laboratuvar ölçeklerinde her sınavı geçti. “Güçlü kanıtlı ama açık sorulu”: alan teoreminin GW250114 birleşmesindeki sınaması (güçlü ama tek bir olay) ve ses kara deliklerinde Hawking benzeri ısıl ışınım. “Kuram / hipotez”: gökteki kara deliklerin Hawking ışıması ve buharlaşması, Bekenstein-Hawking entropisinin iç durumları sayması, Page eğrisi, AdS/CFT, ilkel kara delikler ve 2019'un ada hesapları. “Spekülasyon”: ateş duvarlarının gerçekten var olması, kütleçekim dalgası yankıları, “evren bir hologramdır” sözünün popüler okuması ve KM3NeT olayının ilkel kara delikle açıklanması.",
+        "Bu tabloya bakıp “o hâlde hepsi havada” deme. Kara delik termodinamiği, kuantum kütleçekimi kuramına giden yolda elimizdeki en net işaretlerden biridir. Bekenstein-Hawking entropi formülü, aday kuramların hepsinin yeniden üretmesi gereken bir sınav sorusu gibi kullanılıyor; d53'te sicim kuramının ve döngü kuantum kütleçekiminin bu sınava nasıl girdiğini göreceksin. Bilgi paradoksu da kuramcıları, uzay-zamanın kendisinin kuantum dolanıklıktan örülmüş olabileceği gibi yeni fikirlere götürdü; bunların bir kısmını d56'da, ER = EPR adıyla, solucan delikleriyle birlikte göreceksin.",
+        "Gözlem umutları gerçekçi ama zayıf: bir ilkel kara deliğin son gama ışını patlaması, kütleçekim dalgalarında ufuk yapısının izleri ya da laboratuvar benzetmelerinin giderek inceltilmesi. Şimdiye kadar ilk ikisinden hiçbir kesin işaret gelmedi. Yeni bir sonuç duyurulduğunda uygulamanın Haberler sekmesinde onu bu dersin diliyle okumayı dene: hangi kesinlik düzeyinde, kaç sigma, kim eleştiriyor?",
+        "İstanbul'dan bir yaz akşamı Kuğu takımyıldızına bakarken Cyg X-1'in yönünü, güney ufkuna yakın Yay takımyıldızına bakarken de galaksimizin merkezindeki Sgr A*'ın yönünü düşün (d16). Örnekteki hesaba göre Sgr A*'ın Hawking sıcaklığı kelvinin yüz trilyonda biri mertebesindedir; onu her yönden ısıtan kozmik arka plan ise 2,725 K'dir. Yani o dev kara delik bugün buharlaşmıyor, büyüyor. Kuram doğruysa, evren yeterince soğuduktan çok sonra, 10⁸⁷ yıl mertebesinde bir sürenin sonunda o da ışıyarak tükenecek; ama bunu söylerken, bu dersin bütün cümleleri gibi, bir kuramın öngörüsünü anlattığımızı unutma."
+      ],
+      "akilda": "Kara deliklerin varlığı kesin; Hawking ışıması, Page eğrisi, AdS/CFT ve ada hesapları “Kuram / hipotez”; ateş duvarı ve yankılar “Spekülasyon”. Kara delik termodinamiği, kuantum kütleçekimine giden yolun en net işaretlerinden biridir."
+    }
+  ],
+  "formuller": [
+    {
+      "ad": "Hawking sıcaklığı",
+      "ifade": "T = ħc³ ÷ (8π × G × M × k)",
+      "aciklama": "T sıcaklık (K), ħ indirgenmiş Planck sabiti (h ÷ 2π), c ışık hızı (m/s), G kütleçekim sabiti, M kara deliğin kütlesi (kg), k Boltzmann sabiti (J/K). Dönmeyen, yüksüz kara delik için. Sıcaklık kütleyle ters orantılıdır."
+    },
+    {
+      "ad": "Hawking sıcaklığı, pratik kısayol",
+      "ifade": "T ≈ 6,17 × 10⁻⁸ K × (M☉ ÷ M)",
+      "aciklama": "M☉ ÷ M, kara deliğin kaç Güneş kütlesi olduğunun tersi. 1 M☉ için yaklaşık 62 nanokelvin."
+    },
+    {
+      "ad": "Buharlaşma süresi (yalnız foton, basit)",
+      "ifade": "t ≈ 5120π × G² × M³ ÷ (ħ × c⁴) ≈ 2,1 × 10⁶⁷ yıl × (M ÷ M☉)³",
+      "aciklama": "M ilk kütle. Kozmik arka planın ısıtması yok sayılır. Başka parçacık türleri yayıldığında (küçük, sıcak kara delikler) gerçek ömür daha kısadır. Ömür kütlenin küpüyle büyür."
+    },
+    {
+      "ad": "Bekenstein-Hawking entropisi",
+      "ifade": "S = k × A ÷ (4 × ℓ²)",
+      "aciklama": "S entropi (J/K), k Boltzmann sabiti, A olay ufkunun alanı (m²), ℓ Planck uzunluğu (1,616 × 10⁻³⁵ m). Entropi alanla, alan da kütlenin karesiyle büyür (d30)."
+    },
+    {
+      "ad": "Entropiden bite",
+      "ifade": "bit sayısı = S ÷ (k × ln 2)",
+      "aciklama": "ln 2 ≈ 0,693. 1 M☉'lik kara delik için S ≈ 1,05 × 10⁷⁷ k, yani yaklaşık 1,5 × 10⁷⁷ bit."
+    },
+    {
+      "ad": "Işıma gücü ve ömür ölçeklemesi",
+      "ifade": "güç ∝ A × T⁴ ∝ 1 ÷ M² ;  ömür ∝ M ÷ güç ∝ M³",
+      "aciklama": "Stefan-Boltzmann yasasından kaba ölçekleme (d2): ufuk alanı A ∝ M², sıcaklık T ∝ 1 ÷ M. Sabitleri değil, kütleye bağımlılığı verir."
+    }
+  ],
+  "anahtar_sayilar": [
+    {
+      "deger": "6,17 × 10⁻⁸ K × (M☉ ÷ M); 1 M☉ için ~62 nanokelvin",
+      "aciklama": "Hawking sıcaklığı ve Güneş kütleli kara deliğin sıcaklığı",
+      "kaynak_url": "https://arxiv.org/pdf/2411.09081"
+    },
+    {
+      "deger": "2,1 × 10⁶⁷ yıl × (M ÷ M☉)³",
+      "aciklama": "Yalnız foton yayıldığı varsayımıyla buharlaşma süresi",
+      "kaynak_url": "https://arxiv.org/pdf/2411.09081"
+    },
+    {
+      "deger": "~4,5 × 10²² kg (Ay kütlesinin ~%61'i)",
+      "aciklama": "Hawking sıcaklığı 2,725 K olan kara deliğin kütlesi (hesap); bundan ağır kara delikler bugün büyür",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Black_hole"
+    },
+    {
+      "deger": "~5 × 10¹⁴ g (5 × 10¹¹ kg)",
+      "aciklama": "Bugün buharlaşması biten ilkel kara deliklerin ilk kütlesi (bütün parçacık türleriyle)",
+      "kaynak_url": "https://ar5iv.labs.arxiv.org/html/1911.04356"
+    },
+    {
+      "deger": "< 3.400 (HAWC), < 7.200 (Fermi-LAT) parsek küp başına yılda; %99 güven",
+      "aciklama": "Yakın çevremizde ilkel kara delik buharlaşma patlaması sıklığına üst sınırlar; hiç patlama saptanmadı",
+      "kaynak_url": "https://ar5iv.labs.arxiv.org/html/1911.04356"
+    },
+    {
+      "deger": "Nature Mart 1974; CMP Ağustos 1975; PRD 1976",
+      "aciklama": "Hawking ışımasının ilk duyurusu, ayrıntılı hesabı ve bilgi paradoksu makalesi",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Hawking_radiation"
+    },
+    {
+      "deger": "6 Şubat 1997; 21 Temmuz 2004",
+      "aciklama": "Thorne–Hawking–Preskill bahsinin imza tarihi ve Hawking'in kabulü (Dublin)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Thorne%E2%80%93Hawking%E2%80%93Preskill_bet"
+    },
+    {
+      "deger": "1993 (Page); 13 Temmuz 2012 (AMPS)",
+      "aciklama": "Page eğrisi makalesi ve ateş duvarı makalesi",
+      "kaynak_url": "https://arxiv.org/abs/1207.3123"
+    },
+    {
+      "deger": "1997 sonu; 10.000'den fazla atıf (2015)",
+      "aciklama": "Maldacena'nın AdS/CFT önerisi; yüksek enerji fiziğinin en çok atıf alan makalesi",
+      "kaynak_url": "https://en.wikipedia.org/wiki/AdS/CFT_correspondence"
+    },
+    {
+      "deger": "8.000 atom; 7.400 tekrar; ~0,35 nanokelvin",
+      "aciklama": "2019 ses kara deliği deneyi (rubidyum-87 Bose-Einstein yoğuşması): atom sayısı, tekrar sayısı, öngörülen Hawking sıcaklığı",
+      "kaynak_url": "https://arxiv.org/pdf/1809.00913v1"
+    },
+    {
+      "deger": "~1,05 × 10⁷⁷ k ≈ 1,5 × 10⁷⁷ bit",
+      "aciklama": "1 M☉'lik kara deliğin Bekenstein-Hawking entropisi (d30) ve bit karşılığı",
+      "kaynak_url": "https://arxiv.org/pdf/2410.11851"
+    }
+  ],
+  "sozluk": [
+    { "terim": "genelleştirilmiş ikinci yasa", "tanim": "Sıradan maddenin entropisiyle kara deliklerin entropisinin toplamının hiçbir zaman azalmadığını söyleyen genişletilmiş termodinamik kuralı." },
+    { "terim": "Hawking sıcaklığı", "tanim": "Kuantum etkileri yüzünden bir kara deliğin ışımasına karşılık gelen, kütleyle ters orantılı sıcaklık; 1 Güneş kütlesi için yaklaşık 62 nanokelvin." },
+    { "terim": "kuantum alan kuramı", "tanim": "Parçacıkları, uzaya yayılmış alanların kuantumlu titreşimleri olarak anlatan fizik kuramı." },
+    { "terim": "Planck ötesi sorun", "tanim": "Hawking'in hesabında, geriye doğru izlenince dalga boyu Planck uzunluğundan kısa olan parçacıkların yer almasından doğan kaygı." },
+    { "terim": "eksi ısı sığası", "tanim": "Bir cismin enerji kaybettikçe soğumak yerine ısınması; kara delikler ve yıldızlar böyle davranır." },
+    { "terim": "ilkel kara delik", "tanim": "Yıldız çöküşünden değil, evrenin ilk anlarındaki yoğunluk dalgalanmalarından oluşmuş olabileceği düşünülen, henüz gözlenmemiş kara delik." },
+    { "terim": "üniterlik", "tanim": "Kuantum durumlarının zaman içinde bilgiyi yok etmeyen, geçmişi ve geleceği tek biçimde belirleyen bir kurala göre değişmesi." },
+    { "terim": "saf durum", "tanim": "Tam olarak belirli tek bir kuantum durumu; entropisi sıfırdır." },
+    { "terim": "karışık durum", "tanim": "Bir sistemin hangi kuantum durumunda olduğunun yalnızca olasılıklarla bilinebildiği, entropisi sıfırdan büyük durum." },
+    { "terim": "dolanıklık entropisi", "tanim": "Dolanık bir bütünün bir parçasına tek başına bakınca görülen belirsizliğin ölçüsü." },
+    { "terim": "bilgi paradoksu", "tanim": "Kara deliğin tamamen ısıl ışınımla buharlaşmasının, kuantum kurallarının istediği bilgi korunumuyla çelişmesi sorunu." },
+    { "terim": "kalıntı", "tanim": "Buharlaşmanın sonunda geriye kalıp bilgiyi saklayabileceği öne sürülen, varlığı kanıtlanmamış küçük cisim." },
+    { "terim": "Page eğrisi", "tanim": "Buharlaşma üniterse Hawking ışımasının dolanıklık entropisinin önce artıp sonra yeniden sıfıra inmesi gerektiğini gösteren eğri." },
+    { "terim": "Page zamanı", "tanim": "Page eğrisinin artıştan düşüşe döndüğü an; kabaca buharlaşmanın yarı yolu." },
+    { "terim": "kara delik tamamlayıcılığı", "tanim": "Dışarıdaki ve içeri düşen gözlemcinin kara delik hakkındaki farklı anlatılarının, kimse ikisini birden doğrulayamadığı için çelişmediğini savunan öneri." },
+    { "terim": "ateş duvarı", "tanim": "Bilginin korunması için olay ufkunda içeri düşeni yakacak yüksek enerjili bir parçacık katmanı bulunması gerektiğini söyleyen tartışmalı öneri." },
+    { "terim": "holografik ilke", "tanim": "Bir uzay bölgesinin bilgisinin, o bölgenin sınır yüzeyine kodlanmış gibi düşünülebileceğini söyleyen kuramsal ilke." },
+    { "terim": "AdS/CFT eşlemesi", "tanim": "Eksi kozmolojik sabitli kütleçekimli bir evrenin, sınırındaki kütleçekimsiz bir kuantum alan kuramına eşdeğer olduğunu söyleyen, kanıtlanmamış ama güçlü desteklenen sanı." },
+    { "terim": "anti-de Sitter", "tanim": "Kozmolojik sabiti eksi olan, ne genişleyen ne büzülen kuramsal evren modeli; bizim evrenimiz böyle değildir." },
+    { "terim": "kopya solucan delikleri", "tanim": "Entropi hesabında bir sistemin kopyalarını birbirine bağlayan ve Page eğrisini veren kuramsal uzay-zaman geometrileri." },
+    { "terim": "ada", "tanim": "2019 hesaplarında, Page zamanından sonra Hawking ışımasına ait sayılması gereken kara delik içi bölge." },
+    { "terim": "ses ufku", "tanim": "Bir akışkanın hızının ses hızını aştığı ve sesin geri dönemediği, olay ufkunun laboratuvardaki benzeri." },
+    { "terim": "Bose-Einstein yoğuşması", "tanim": "Mutlak sıfıra çok yakın soğutulmuş atomların hep birlikte tek bir kuantum durumu gibi davrandığı gaz." }
+  ],
+  "defter_notu": [
+    "Dört kesinlik düzeyi: Gözlemle kesinleşmiş / Güçlü kanıtlı ama açık sorulu / Kuram, hipotez / Spekülasyon. Hawking ışıması: Kuram, hipotez.",
+    "Bekenstein 1972: entropi ∝ ufuk alanı. Bardeen–Carter–Hawking 1973: dört yasa. Hawking 1974 (Nature), 1975: kara delik ışır; sabit = alanın dörtte biri.",
+    "T ≈ 6,17 × 10⁻⁸ K × (M☉ ÷ M): 1 M☉ ≈ 62 nanokelvin, Sgr A* ≈ 1,4 × 10⁻¹⁴ K. Kütle kaybettikçe ısınır.",
+    "2,725 K'den sıcak olmak için M < ~4,5 × 10²² kg (Ay'ın ~%61'i). Bilinen bütün kara delikler bugün büyüyor.",
+    "Ömür ≈ 2,1 × 10⁶⁷ yıl × (M ÷ M☉)³. Bugün biten: ~1,7–5 × 10¹¹ kg (ilkel). Fermi, HAWC: patlama yok (Ocak 2024).",
+    "Üniterlik: bilgi karışır, yok olmaz; saf durum karışığa dönmez. Hawking 1976: buharlaşma bilgiyi siler mi? Bahis 1997, Hawking kabul 2004, Thorne ikna olmadı.",
+    "Page 1993: ışınım entropisi artar, yarı yolda döner, sıfıra iner. Tamamlayıcılık 1993. AMPS 2012: ateş duvarı (tekeşli dolanıklık).",
+    "Holografik ilke 't Hooft 1993, Susskind 1995. AdS/CFT Maldacena 1997 (AdS bizim evren değil). 2019: kopya solucan delikleri, adalar (oyuncak modeller).",
+    "Ses ufku: Unruh 1981. Steinhauer 2016, 2019 (8.000 Rb atomu, 0,35 nanokelvin). Mekanizmayı sınar, kütleçekimini sınamaz."
+  ],
+  "sorular": [
+    {
+      "soru": "Bekenstein kara deliklerin entropisi olması gerektiğini neden düşündü?",
+      "cevap": "Kara deliğe sıcak gaz atılınca gazın entropisi evrenden silinmiş gibi görünüyor ve ikinci yasa aldatılıyordu. Kara deliğin ufuk alanı hiç küçülmediği için entropi gibi davranıyordu; Bekenstein kara deliğe alanla orantılı bir entropi vererek toplam entropinin yine artmasını sağladı (genelleştirilmiş ikinci yasa)."
+    },
+    {
+      "soru": "10 Güneş kütleli bir kara deliğin Hawking sıcaklığı yaklaşık kaç kelvindir? Bu kara delik bugün küçülür mü?",
+      "cevap": "T ≈ 6,17 × 10⁻⁸ ÷ 10 ≈ 6,2 × 10⁻⁹ K, yani yaklaşık 6 nanokelvin. Kozmik arka plan 2,725 K olduğundan kara delik yaydığından çok daha fazlasını soğurur; küçülmez, büyür."
+    },
+    {
+      "soru": "Bir kara delik ışıyıp kütle kaybettikçe neden soğumak yerine ısınır ve bu neye yol açar?",
+      "cevap": "Hawking sıcaklığı kütleyle ters orantılıdır; kütle azalınca sıcaklık artar (eksi ısı sığası). Sıcaklık artınca ışıma hızlanır, kütle daha hızlı azalır; süreç kendini hızlandırır ve kuram doğruysa bir gama ışını parlamasıyla biter."
+    },
+    {
+      "soru": "Bir kara deliğin kütlesi iki katına çıkarsa buharlaşma süresi kaç katına çıkar? Neden?",
+      "cevap": "Sekiz katına (2³). Işıma gücü yaklaşık 1 ÷ M² ile orantılıdır (alan M² ile büyür, sıcaklığın dördüncü kuvveti M⁻⁴ ile küçülür); ömür kütle ÷ güç olduğu için M³ ile orantılıdır."
+    },
+    {
+      "soru": "Fermi ve HAWC neden ilkel kara delikleri arıyor ve şimdiye kadar ne buldular?",
+      "cevap": "Evrenin yaşı içinde buharlaşmasını bitirebilecek kara delikler ancak birkaç yüz milyar kilogramlık ilkel kara delikler olabilir; bunların son anları kısa gama ışını parlamaları olarak görülmelidir. Ocak 2024 itibarıyla hiçbiri saptanmadı; yalnızca sıklıklarına üst sınırlar konabildi (HAWC: yılda parsek küp başına 3.400'den az)."
+    },
+    {
+      "soru": "Bilgi paradoksunu iki üç cümleyle anlat.",
+      "cevap": "Hawking ışıması tam ısıldır ve içeri ne düştüğünü taşımaz. Kara delik tamamen buharlaşırsa, saf bir durumdan başlayan sistem karışık bir ısıl ışınıma dönüşür; bu, kuantum mekaniğinin üniterlik kuralını, yani bilginin yok olmamasını çiğner. Ya kuantum kuralları kara deliklerde değişir ya da Hawking'in yaklaşık hesabı bir şeyi kaçırır."
+    },
+    {
+      "soru": "Page eğrisi neyi gösterir ve Hawking'in hesabından nerede ayrılır?",
+      "cevap": "Buharlaşma üniterse ışınımın dolanıklık entropisi sıfırdan başlayıp kabaca buharlaşmanın yarı yoluna (Page zamanı) kadar artmalı, sonra yeniden sıfıra inmelidir. Hawking'in hesabında ise entropi sona kadar hep artar. İki eğri Page zamanına kadar benzer, sonra ayrılır."
+    },
+    {
+      "soru": "AMPS ateş duvarı argümanı hangi üç ifadenin birlikte doğru olamayacağını söyler?",
+      "cevap": "(1) Hawking ışıması saf durumdadır, bilgi korunur; (2) bilgi ufkun yakınından yayılır ve ufuktan biraz uzakta bildiğimiz fizik geçerlidir; (3) içeri düşen gözlemci ufukta olağandışı bir şey görmez. Dolanıklığın tekeşliliği yüzünden üçü birden tutmaz; en tutucu seçenek ufukta bir ateş duvarıdır."
+    },
+    {
+      "soru": "AdS/CFT bilgi paradoksu için neden önemli, ama neden onu bizim evrenimiz için tam çözmüş sayılmaz?",
+      "cevap": "Kütleçekimli AdS evrenini sınırdaki sıradan, üniter bir kuantum kuramına eşdeğer kıldığı için içerideki kara deliğin buharlaşması da üniter olmalıdır; bu bilginin korunmasını destekler. Ama AdS'nin kozmolojik sabiti eksidir, bizim evrenimizinki artıdır; eşleme de kanıtlanmamış bir sanıdır ve bilinen örnekleri fiziksel olmayan boyut sayıları ve süpersimetri kullanır."
+    },
+    {
+      "soru": "2019'un ada hesapları neyi başardı, neyi başarmadı?",
+      "cevap": "Kopya solucan delikleri denen yeni geometrileri hesaba katarak Page eğrisini kütleçekimi hesabının içinden elde etti. Ama bunu iki boyutlu ve AdS'ye dayanan oyuncak modellerde yaptı ve bilginin hangi fiziksel süreçle dışarı çıktığını göstermedi; yazarlardan Hartman çalışmanın paradoksun yalnızca bir köşesini çözdüğünü söylüyor."
+    },
+    {
+      "soru": "Steinhauer'in ses kara deliği deneyi Hawking ışımasını kanıtladı mı?",
+      "cevap": "Hayır. Ufku olan bir kuantum sisteminde Hawking'in mekanizmasıyla ısıl ve eşli bir ışınım doğabildiğini gösterdi (2019'da öngörülen sıcaklık ~0,35 nanokelvin). Ama düzenekte kütleçekimi yoktur; gökteki kara deliklerde Hawking ışımasını doğrulamaz. 2016 sonucu Leonhardt tarafından ayrıntılı biçimde eleştirildi."
+    },
+    {
+      "soru": "Bu dersteki şu iddiaları kesinlik düzeylerine yerleştir: ilkel kara delikler, ateş duvarı, kara deliklerin var olması, ses kara deliklerinde Hawking benzeri ışıma.",
+      "cevap": "Kara deliklerin var olması: Gözlemle kesinleşmiş. Ses kara deliklerinde Hawking benzeri ışıma: Güçlü kanıtlı ama açık sorulu. İlkel kara delikler: Kuram / hipotez. Ateş duvarının gerçekten var olması: Spekülasyon."
+    }
+  ],
+  "kaynaklar": [
+    { "ad": "Wikipedia, Hawking radiation", "url": "https://en.wikipedia.org/wiki/Hawking_radiation" },
+    { "ad": "Wikipedia, Black hole", "url": "https://en.wikipedia.org/wiki/Black_hole" },
+    { "ad": "Wikipedia, Black hole thermodynamics", "url": "https://en.wikipedia.org/wiki/Black_hole_thermodynamics" },
+    { "ad": "JTA, Stephen Hawking boycotted Israel, but an Israeli academic inspired one of his biggest discoveries (14 Mart 2018)", "url": "https://www.jta.org/2018/03/14/obituaries/stephen-hawking-boycotted-israel-israeli-academic-inspired-one-biggest-discoveries" },
+    { "ad": "Hawking radiation from non-evaporating primordial black holes… (arXiv:2411.09081)", "url": "https://arxiv.org/pdf/2411.09081" },
+    { "ad": "HAWC Collaboration, Constraining the Local Burst Rate Density of Primordial Black Holes with HAWC (arXiv:1911.04356)", "url": "https://ar5iv.labs.arxiv.org/html/1911.04356" },
+    { "ad": "Fermi-LAT Collaboration 2018, Search for Gamma-Ray Emission from Local Primordial Black Holes (arXiv:1802.00100)", "url": "https://arxiv.org/abs/1802.00100v1" },
+    { "ad": "Wikipedia, Black hole information paradox", "url": "https://en.wikipedia.org/wiki/Hawking_paradox" },
+    { "ad": "Wikipedia, Thorne–Hawking–Preskill bet", "url": "https://en.wikipedia.org/wiki/Thorne%E2%80%93Hawking%E2%80%93Preskill_bet" },
+    { "ad": "Wikipedia, Don Page (physicist)", "url": "https://en.wikipedia.org/wiki/Don_Page_(physicist)" },
+    { "ad": "Page 1993, Information in Black Hole Radiation (PRL 71, 3743; arXiv:hep-th/9306083)", "url": "https://arxiv.org/abs/hep-th/9306083" },
+    { "ad": "A dynamical mechanism for the Page curve from quantum chaos (arXiv:2002.05734)", "url": "https://arxiv.org/pdf/2002.05734" },
+    { "ad": "Wikipedia, Black hole complementarity", "url": "https://en.wikipedia.org/wiki/Black_hole_complementarity" },
+    { "ad": "Susskind, Thorlacius, Uglum 1993, The Stretched Horizon and Black Hole Complementarity (arXiv:hep-th/9306069)", "url": "https://arxiv.org/abs/hep-th/9306069" },
+    { "ad": "Almheiri, Marolf, Polchinski, Sully 2012, Black Holes: Complementarity or Firewalls? (arXiv:1207.3123)", "url": "https://arxiv.org/abs/1207.3123" },
+    { "ad": "Wikipedia, Firewall (physics)", "url": "https://en.wikipedia.org/wiki/Firewall_(physics)" },
+    { "ad": "IAS, Ahmed Almheiri: From the UAE to Firewalls", "url": "https://www.ias.edu/node/201536" },
+    { "ad": "Wikipedia, Holographic principle", "url": "https://en.wikipedia.org/wiki/Holographic_principle" },
+    { "ad": "Wikipedia, AdS/CFT correspondence", "url": "https://en.wikipedia.org/wiki/AdS/CFT_correspondence" },
+    { "ad": "Almheiri, Hartman, Maldacena, Shaghoulian, Tajdini 2019, Replica Wormholes and the Entropy of Hawking Radiation (arXiv:1911.12333)", "url": "https://arxiv.org/abs/1911.12333v2" },
+    { "ad": "Penington, Shenker, Stanford, Yang 2019, Replica wormholes and the black hole interior (arXiv:1911.11977)", "url": "https://arxiv.org/abs/1911.11977v2" },
+    { "ad": "Cornell Chronicle, Hartman ve kopya solucan delikleri (Aralık 2020)", "url": "https://news.cornell.edu/node/320627" },
+    { "ad": "UC Berkeley Physics, ‘Islands’ poking out of black holes may solve the information paradox", "url": "https://physics.berkeley.edu/news/%E2%80%98islands%E2%80%99-poking-out-black-holes-may-solve-information-paradox" },
+    { "ad": "Unruh 2016, Experimental black hole evaporation (Physics Today)", "url": "https://physicstoday.aip.org/opinion/experimental-black-hole-evaporation" },
+    { "ad": "Muñoz de Nova, Golubkov, Kolobov, Steinhauer 2019, Observation of thermal Hawking radiation and its temperature in an analogue black hole (Nature 569, 688; ADS)", "url": "https://ui.adsabs.harvard.edu/abs/2019Natur.569..688M/abstract" },
+    { "ad": "Aynı makalenin arXiv sürümü (arXiv:1809.00913)", "url": "https://arxiv.org/pdf/1809.00913v1" },
+    { "ad": "Leonhardt, Questioning the recent observation of quantum Hawking radiation (arXiv:1609.03803)", "url": "https://arxiv.org/pdf/1609.03803" },
+    { "ad": "Nautilus, Benchtop Black Holes Help Physicists Glimpse the Quantum Universe (2016)", "url": "https://nautil.us/benchtop-black-holes-help-physicists-glimpse-the-quantum-universe-236111/" },
+    { "ad": "phys.org, Thermal Hawking radiation in an analog black hole (Mayıs 2019)", "url": "https://phys.org/news/2019-05-thermal-analog-black-hole-hawking.html" },
+    { "ad": "Pinochet, Black hole entropy (arXiv:2410.11851)", "url": "https://arxiv.org/pdf/2410.11851" },
+    { "ad": "NASA, Moon Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html" }
+  ]
+}

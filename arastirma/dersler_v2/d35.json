@@ -1,0 +1,538 @@
+{
+  "id": "d35",
+  "unite": "gunes_sistemi",
+  "yeni": true,
+  "baslik": "Merkür ve Venüs: Demir Yürekli Cüce ile Cehennem İkizi",
+  "ozet": "Güneş'e en yakın iki gezegen, aynı bölgede doğmuş ama bambaşka sonlara varmış iki dünyadır: biri neredeyse çıplak bir demir topu, öbürü kalın bir karbondioksit örtüsünün altında kavrulan bir ikiz. Bu derste Merkür'ün dev çekirdeğini, büzüşen kabuğunu, kutuplarındaki buzu ve 3:2 dansını; Venüs'ün ters dönüşünü, 92 barlık havasını, kaçak sera etkisini, asit bulutlarını ve volkanlarını, bunları nasıl bildiğimizi ve İstanbul'dan nasıl göreceğini öğreneceksin.",
+  "on_bilgi": [
+    "d3",
+    "d9"
+  ],
+  "bolumler": [
+    {
+      "baslik": "Güneş'in iki yakın komşusu",
+      "paragraflar": [
+        "d9'da sekiz gezegeni tek tek tanıdın ve Merkür ile Venüs'e birer bölüm ayırdın. Bu derste o bölümleri tekrar etmeyeceğiz; onların üstüne kuracağız. Sorumuz şu: aynı iç bölgede, Güneş'e yakın doğmuş iki kayalık gezegen nasıl bu kadar farklı olabilir? Merkür ince bir dış küresi olan, çekirdeği gezegenin büyük kısmını kaplayan küçük bir dünyadır. Venüs ise boyutça Dünya'nın neredeyse ikizidir, ama yüzeyi kurşunu eritecek kadar sıcaktır. İkisinin de uydusu yoktur. İkisi de Dünya'dan bakınca hep Güneş'in yakınında görünür, çünkü yörüngeleri Dünya'nınkinin içindedir; gökbilimde bunlara iç gezegen denir.",
+        "Güneş'e yakınlığın ilk sonucu ışık miktarıdır. NASA'nın bilgi sayfalarına göre Dünya'nın uzaklığında her metrekareye düşen güneş ışığı 1361 W'tır. Aynı değer Venüs'te 2601,3 W, Merkür'de 9082,7 W'tır. Işık, kaynaktan uzaklaştıkça uzaklığın karesiyle zayıflar; buna ters kare yasası denir. Bu yüzden Güneş'e iki kat yakın olan bir yer dört kat fazla ışık alır. Aşağıdaki örnekte bu sayıları kendin bulacaksın.",
+        "İç gezegen olmanın gökteki sonucu bir ritimdir. Bir gezegenin Güneş'e göre aynı dizilişe, örneğin yeniden akşam göğüne dönmesi için geçen süreye sinodik dönem denir (d3). NASA'nın tablolarına göre bu süre Merkür için 115,88 gün, Venüs için 583,92 gündür. Merkür hızlı döndüğü için yılda üç kez akşam, üç kez sabah göğüne çıkar: Space.com'un 2026 takvimi de üç akşam ve üç sabah görünürlük dönemi sayar. Venüs ise yaklaşık 19 ayda bir aynı döngüyü tamamlar; bir kez akşam yıldızı olur, aylarca öyle kalır, sonra Güneş'in önünden geçip sabah yıldızı olur. Bu derste ikisini de gözlemek için en uygun sabahların Kasım 2026'da başladığını göreceksin.",
+        "Ama bu derste göreceğin en önemli ders, sıcaklığın yalnızca uzaklıkla belirlenmediğidir. Merkür'ün gündüzü kavurucu, gecesi dondurucudur; Venüs ise gece gündüz aynı sıcaklıktadır ve Güneş'e daha yakın olan Merkür'den bile sıcaktır. Farkı yaratan şey atmosferdir. Merkür'ün neredeyse hiç havası yoktur; Venüs'ünki ise Dünya'nınkinin yaklaşık 93 katı kütlededir. Ders boyunca önce Merkür'ün içine, yüzeyine ve dönüşüne, sonra Venüs'ün içine, yüzeyine ve havasına ineceğiz. Her adımda “bunu nereden biliyoruz” sorusunu da soracağız: hangi araç, hangi ölçüm, hangi yıl. En sonda da İstanbul'dan bu iki gezegeni nasıl göreceğini konuşacağız; Kasım 2026, Venüs için iyi bir başlangıç zamanı."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Güneş ışığı neden Merkür'de altı buçuk kat güçlü?",
+        "metin": "Ters kare yasası: ışık akısı uzaklığın karesiyle ters orantılıdır. Merkür'ün ortalama uzaklığı 0,387 AB. 0,387 × 0,387 = 0,1498; 1 / 0,1498 ≈ 6,68. NASA'nın tablosu: 9082,7 / 1361,0 ≈ 6,67. Venüs için 0,723 AB: 0,723 × 0,723 = 0,5227; 1 / 0,5227 ≈ 1,91; tablo 2601,3 / 1361,0 ≈ 1,91. Sonuç: Merkür metrekare başına Dünya'nın yaklaşık 6,7 katı, Venüs yaklaşık 1,9 katı güneş ışığı alır."
+      },
+      "akilda": "Merkür ve Venüs, yörüngeleri Dünya'nınkinin içinde kalan iç gezegenlerdir. Güneş ışığı Merkür'de 6,7, Venüs'te 1,9 kat güçlüdür; ama sıcaklığı asıl belirleyen atmosferdir."
+    },
+    {
+      "baslik": "Merkür'ü tartmak ve ölçmek",
+      "paragraflar": [
+        "NASA NSSDCA'nın Merkür sayfası bu küçük gezegenin kimlik kartıdır. Kütlesi 0,33010 × 10²⁴ kg, yani Dünya'nınkinin %5,53'ü. Ortalama yarıçapı 2439,7 km; Dünya'nınkinin 0,383'ü. Ortalama yoğunluğu 5429 kg/m³, Dünya'nın 5513 kg/m³'üne çok yakın. Yüzey çekimi 3,70 m/s², kurtulma hızı 4,3 km/s. Kütleyi nasıl biliyoruz? Bir uzay aracı gezegenin yanından geçerken ya da çevresinde dolanırken çekim onun hızını değiştirir. Araçtan gelen radyo sinyalinin frekansındaki küçük kaymalar (Doppler etkisi, d2) bu hız değişimini ölçer, hız değişimi de kütleyi verir.",
+        "Merkür'ün yörüngesi gezegenlerin en eksantrik, yani en basık olanıdır. Dış merkezlik denen bu basıklık ölçüsü Merkür için 0,2056, Dünya için 0,0167'dir. Bu yüzden Merkür'ün Güneş'e uzaklığı 46,0 milyon km (günberi) ile 69,8 milyon km (günöte) arasında değişir. Hızı da değişir: Kepler'in ikinci yasasına (d3) uygun olarak Güneş'e yakınken saniyede 58,97 km, uzakken 38,86 km hızla gider; ortalaması 47,36 km/s ile gezegenlerin en hızlısıdır. Yörüngesi tutulum düzlemine 7° eğiktir.",
+        "Buna karşılık kendi ekseni neredeyse dimdiktir: NASA'ya göre eksen eğikliği yalnızca 0,034°. Dünya'nın 23,44°'lik eğikliği mevsimleri yaratır (d1); Merkür'de bu anlamda mevsim yoktur. Ama yörünge çok basık olduğu için Güneş'ten gelen ışık yıl içinde iki kattan fazla değişir; Merkür'ün “mevsimleri” eğiklikten değil uzaklıktan gelir. NASA'nın Merkür bilgi kartına göre günberideki bir gözlemci Güneş'i Dünya'dan gördüğünden üç kat daha büyük görürdü. Neredeyse sıfır olan eğikliğin bir sonucu daha var: kutuplardaki bazı kraterlerin dibine Güneş hiç vurmaz. Bu ayrıntıya buz bölümünde döneceğiz.",
+        "Dünya'dan bakınca bu küçük gezegen ne kadar parlak ve büyük görünür? NASA'nın tablosuna göre Merkür'ün Dünya'ya uzaklığı 77,3 ile 221,9 milyon km arasında değişir, görünür çapı 4,5 ile 13,0 yay saniyesi arasındadır ve en parlak hâlinde −2,43 kadire ulaşır. Yay saniyesi bir derecenin 3600'de biridir; dolunay yaklaşık 1800 yay saniyesidir (d26). Yani Merkür'ün diski, en büyük hâlinde bile dolunayın yaklaşık 140'ta biri kadardır ve çıplak gözle yalnızca bir ışık noktasıdır. Parlaklığı ise az değildir; onu kaçırmamızın nedeni sönüklüğü değil, hep alacakaranlığın aydınlık göğünde ve ufka yakın durmasıdır."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Merkür'ün günberisi ile günötesi arasında ışık ne kadar değişir?",
+        "metin": "Günberi 46,000, günöte 69,818 milyon km (NASA). Işık uzaklığın karesiyle zayıfladığı için oran (69,818 / 46,000)² = 1,518² ≈ 2,30. Değerleri de bulalım: Dünya 149,598 milyon km'de 1361 W/m² alıyor. Günberide 1361 × (149,598 / 46,000)² = 1361 × 3,252² ≈ 1361 × 10,58 ≈ 14.400 W/m²; günötede 1361 × (149,598 / 69,818)² = 1361 × 2,143² ≈ 6250 W/m². Güneş'in görünür çapı uzaklıkla ters orantılıdır: 149,598 / 46,0 ≈ 3,25. Sonuç: günberide Merkür 2,3 kat fazla ışık alır (yaklaşık 14.400 W/m²) ve Güneş orada Dünya'dakinin 3,25 katı büyük görünür."
+      },
+      "akilda": "Merkür: Dünya kütlesinin %5,5'i, yoğunluğu neredeyse Dünya'nınki kadar (5429 kg/m³). Yörüngesi en basık (0,2056), ekseni neredeyse dik (0,034°); ışık yıl içinde 2,3 kat değişir."
+    },
+    {
+      "baslik": "Dev bir demir yürek: Merkür'ün içi",
+      "paragraflar": [
+        "Merkür, Dünya'dan çok daha küçük olduğu hâlde neredeyse aynı yoğunluktadır. Bunun anlamı, içinde çok fazla demir olmasıdır. d9'da NASA'nın verdiği sayıyı gördün: metal çekirdeğin yarıçapı yaklaşık 2000 km, gezegen yarıçapının yaklaşık %80'i. d9'daki örnekte bunun hacmin yaklaşık yarısı ettiğini hesapladın. Planetary Society'ye göre Dünya'da çekirdek hacmin yaklaşık %15'idir. Kaynakları okurken dikkatli ol: bazı haber siteleri “çekirdek hacmin %85'ini doldurur” yazar. 2000 km'lik bir çekirdek için bu doğru olamaz; %80–85 yarıçap oranıdır, hacim oranı değil. Bu tür karışıklık bilim haberlerinde sık görülür.",
+        "Çekirdeğin üstünde ne var? NASA'nın Merkür bilgi kartına göre manto ve kabuk birlikte yalnızca yaklaşık 400 km kalınlığında bir kabuk oluşturur. Manto, çekirdek ile en dış kabuk arasındaki kalın kaya katmanıdır; kabuk ise en dıştaki ince kaya örtüsüdür. BepiColombo ekibinin iç yapı çalışma grubunun özetinde manto-çekirdek sınırı için 420 ± 30 km'lik bir model değeri geçer. Aynı özete göre 2024'te yayımlanan bir model, çekirdeğin tepesinde 1–2 km kalınlığında katı grafit ya da elmas katmanı olabileceğini önerdi; bu henüz bir modeldir.",
+        "Çekirdeğin tamamı eriyik mi? Uzun süre bilinmiyordu. Merkür'ün dönüşündeki küçük salınımlar (librasyon) 2007'de radarla ölçüldü ve çekirdeğin bir kısmının eriyik olduğunu gösterdi. Mantık şöyle: içi tamamen katı bir gezegen Güneş'in çekimine bütün olarak tepki verir; kabuğu sıvı bir katmanın üstünde yüzen bir gezegen ise daha çok sallanır. Nisan 2019'da Antonio Genova'nın öncülük ettiği ekip MESSENGER'ın radyo izleme verileriyle gezegenin çekim alanını inceledi ve Geophysical Research Letters'ta katı bir iç çekirdek olduğunu bildirdi. EarthSky'ın aktarımına göre iç çekirdek yaklaşık 2000 km çapında, yani bütün çekirdeğin yaklaşık yarısı kadardır; Dünya'nın iç çekirdeği ise yaklaşık 2400 km çapındadır.",
+        "Bu sonuçları birbirine bağlayan bir sayı var: eylemsizlik momenti çarpanı. Bir gezegenin kütlesinin merkezde mi, dış katmanlarda mı toplandığını söyleyen birimsiz bir sayıdır. Her yerde aynı yoğunlukta bir küre için 0,4'tür; değer 0,4'ün altına indikçe ağır malzeme merkezde daha çok toplanmış demektir. Wikipedia'nın tablosuna göre Merkür için 0,346, Dünya için 0,3307, Ay için 0,393'tür. Bu sayı gezegenin dönüş ekseninin yavaşça yalpalamasından ve çekim alanının biçiminden ölçülür; yani bir uzay aracının yörüngesini çok dikkatle izleyerek gezegenin içini “tartabilirsin”. Ay'ın neredeyse 0,4 olması onun küçük bir çekirdeği olduğunu söyler (d10)."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Kütle ve yarıçaptan Merkür'ün yoğunluğu",
+        "metin": "Yoğunluk = kütle / hacim; kürenin hacmi (4/3) × π × R³. R = 2439,7 km = 2,4397 × 10⁶ m. R³ = 2,4397³ × 10¹⁸ ≈ 14,52 × 10¹⁸ m³. Hacim ≈ 4,189 × 14,52 × 10¹⁸ ≈ 6,083 × 10¹⁹ m³ (NASA'nın tablosundaki 6,083 × 10¹⁰ km³ ile aynı). Kütle 3,3010 × 10²³ kg. Yoğunluk ≈ 3,3010 × 10²³ / 6,083 × 10¹⁹ ≈ 5427 kg/m³. Sonuç: yaklaşık 5430 kg/m³, yani suyun 5,4 katı; NASA 5429 kg/m³ verir. Modellerde Merkür'ün mantosu için verilen yoğunluk yaklaşık 3100–3300 kg/m³, yani bunun yaklaşık yarısıdır; aradaki fark büyük bir demir çekirdekten gelir."
+      },
+      "akilda": "Merkür'ün metal çekirdeği yarıçapın ~%80'i, üstündeki manto ve kabuk yalnız ~400 km. 2019'da MESSENGER verileriyle ~2000 km çaplı katı iç çekirdek bulundu. Eylemsizlik momenti çarpanı 0,346: kütle merkezde toplanmış."
+    },
+    {
+      "baslik": "Büzüşen gezegen: sarplar, karanlık kabuk ve oyuklar",
+      "paragraflar": [
+        "Büyük bir demir çekirdek zamanla soğur, soğudukça da büzülür. Çekirdek küçülünce üstündeki kaya kabuk sığmayan bir elbise gibi buruşur. Merkür'ün yüzeyinde bunun izleri görülür: kilometrelerce yüksek, kıvrımlı kenarlı uzun sarplar. Bunlara loblu sarp denir. Kabuğun bir parçası, sıkışma yüzünden kırılıp komşusunun üstüne bindiğinde oluşurlar; jeolojide buna bindirme fayı denir. NASA'nın Merkür bilgi kartına göre bu sarplar yüzlerce mil uzunluğa ve bir mil yüksekliğe ulaşabilir; Victoria Rupes adlı sarp yaklaşık 500 km uzunluğundadır.",
+        "Merkür ne kadar küçüldü? Mariner 10'un 1970'lerdeki görüntüleri yarıçapta yalnızca 1–2 km'lik bir küçülme düşündürüyordu; ama araç yüzeyin ancak yaklaşık %45'ini görebilmişti. MESSENGER bütün yüzeyi görüntüleyince tablo değişti. Paul Byrne ve Christian Klimczak'ın ekibi 5934 tektonik yapıyı haritaladı ve 16 Mart 2014'te Nature Geoscience'ta yayımladıkları çalışmada Merkür'ün yarıçapının son 4 milyar yılda 4,6 ile 7 km arasında küçüldüğünü bildirdi. Bu, Mariner 10'a dayanan tahminden birkaç kat büyüktür ve bir gezegenin içi hakkında yüzeydeki kırışıklıklardan ne kadar çok şey öğrenilebileceğini gösterir.",
+        "Kabuğun kendisi de şaşırtıcı çıktı. Bir 2016 değerlendirmesine göre Merkür her yerde koyudur; kabuğu çoğunlukla dev lav örtülerinden oluşur ve eski örtüler çok sayıda kraterle kaplıdır. İlk kabuk bugün yüzeyde bozulmadan durmaz; ancak büyük çarpışmaların kazıp çıkardığı yerlerde görülebilir. MESSENGER'ın yüzeye 100 km'den yakın geçtiği dönemdeki ölçümleri, koyu lekelerin sıradan kaya kırıntısına karışmış yüzde birkaç oranında grafit içerdiğini gösterdi. Grafit, saf karbonun kurşun kalemdeki biçimidir.",
+        "Bir başka sürpriz uçucu elementlerdir. Uçucu element, kolayca buharlaşan elementtir; Güneş'e bu kadar yakın bir gezegende az bulunması beklenirdi. Oysa aynı değerlendirmeye göre kükürt, klor, sodyum ve potasyum Merkür'de beklenmedik ölçüde boldur. MESSENGER yeni bir yeryüzü şekli de buldu: oyuklar. Aynı değerlendirmeye göre oyuklar, uçucu maddelerin buhar olarak kaybolduğu yerlerde oluşmuş, jeolojik ölçüde yeni çukurlardır ve çoğu koyu, az ışık yansıtan malzemenin üstünde ya da yakınında bulunur. Yeni olmaları, Merkür'ün yüzeyinin bugün de yavaş yavaş değişiyor olabileceğini düşündürür. Merkür'ün neden bu kadar çok demir taşıdığı ise çözülmemiş bir sorudur. Phys.org'un aktardığı 2018 çalışmasına göre en çok kabul gören fikir, gezegenin oluşumunun sonlarında dev bir çarpışma ya da buharlaşma ile mantosunun bir kısmını kaybettiğidir; ama hesaplar böyle bir çarpışmanın ince ayar gerektirdiğini gösteriyor ve yüzeydeki uçucu zenginliği bazı senaryoları zorluyor."
+      ],
+      "ornek": {
+        "baslik": "Örnek: 7 km küçülmek yüzeyden ne kadar götürür?",
+        "metin": "Kürenin yüzey alanı 4 × π × R². R = 2439,7 km iken alan ≈ 4 × 3,1416 × 5.952.000 ≈ 74,8 milyon km². R 7 km azalıp 2432,7 km olsun: oran (2432,7 / 2439,7)² = 0,99713² ≈ 0,99427. Kayıp ≈ 1 − 0,99427 = 0,00573, yani %0,57. Alan olarak 74,8 milyon × 0,00573 ≈ 429.000 km². Sonuç: küçülme yüzdesi küçük görünür, ama yaklaşık 430.000 km²'lik kabuk fazlası sarplar boyunca üst üste binerek yer bulmak zorunda kaldı."
+      },
+      "akilda": "Soğuyan çekirdek Merkür'ü 4,6–7 km küçülttü (Byrne ve ekibi, 2014); kabuk loblu sarplarla buruştu. Yüzey koyu, grafitli ve uçucu elementlerce zengin; oyuklar uçucuların buharlaştığı genç çukurlardır. Büyük çekirdeğin kökeni hâlâ tartışmalı."
+    },
+    {
+      "baslik": "Güneş'e en yakın gezegende buz",
+      "paragraflar": [
+        "Merkür'ün gündüzü d9'da gördüğün gibi 430 °C'ye çıkar. NASA NSSDCA'nın tablosu Güneş'e bakan tarafta 590–725 K, yani yaklaşık 320–450 °C verir; iki kaynak aynı büyüklüğü söyler. Böyle bir gezegende buz nasıl olur? Cevap eksen eğikliğindedir. Eğiklik neredeyse sıfır olduğu için kutuplarda Güneş hep ufkun hemen üstünde, yatay gezinir. Derin kraterlerin dibine güneş ışığı hiç ulaşmaz. Bu yerlere sürekli gölgeli bölge denir. Hava olmadığı için ısı dışarıdan taşınmaz; bu çukurlar milyarlarca yıl soğuk kalabilir.",
+        "İlk ipucu Dünya'dan geldi. NASA'nın Merkür bilgi kartına göre 1991'de yerden yapılan radar gözlemleri kutup kraterlerinde radar dalgalarını çok parlak yansıtan bir madde buldu ve bunun su buzu olabileceği önerildi. Radar parlaklığı tek başına kanıt değildi; başka maddeler de radarı güçlü yansıtabilir. Kesinleşmeye yakın kanıt MESSENGER'dan geldi. Johns Hopkins Üniversitesi'nin 29 Kasım 2012 tarihli duyurusuna göre aracın nötron tayfölçeri, radarda parlak görünen bölgelerde ortalama hidrojen miktarını ölçtü. Nötron tayfölçeri, gezegen yüzeyinden kaçan nötronları sayan bir alettir; hidrojen nötronları yavaşlattığı için yüzeydeki hidrojen bu sayımda iz bırakır. Sonuçlar üç makale olarak Science dergisinde yayımlandı.",
+        "Ölçümlerin anlattığı tablo şöyle: kutup çökellerinin çoğunda buz, olağandışı koyu bir maddenin altına gömülüdür. Yüzeydeki 10–20 cm'lik katman hidrojence daha fakirdir; altında ise kalınlığı birkaç on santimetreyi aşan ve hidrojen içeriği neredeyse saf su buzuyla uyumlu bir katman vardır. Buz yalnızca en soğuk çökellerde yüzeye açılır. Koyu örtü maddesinin organik, yani karbonlu bileşikler içerebileceği de o günlerin haberlerine yansıdı; bu yorum hâlâ dolaylı ölçümlere dayanır.",
+        "Bu buz nereden geldi? Bu derste dayandığımız kaynaklar buna kesin bir cevap vermiyor; o yüzden bir senaryoyu kesinmiş gibi anlatmayacağız. Bildiğimiz şu: Ay'ın kutuplarında da benzer sürekli gölgeli bölgelerde buz var (d10). BepiColombo'nun hedeflerinden biri de Planetary Society'ye göre bu kutup buz çökellerini incelemektir. Güneş Sistemi'nde soğuğun adresi bazen Güneş'e en yakın yerdedir; yeter ki ışık hiç ulaşmasın."
+      ],
+      "akilda": "Eksen eğikliği ~0 olduğu için Merkür'ün kutup kraterlerinin dibi hiç güneş görmez. 1991 radarı buz olasılığını gösterdi; MESSENGER'ın nötron tayfölçeri 2012'de hidrojen ölçerek neredeyse saf su buzunu, çoğunun koyu bir örtü altında olduğunu doğruladı."
+    },
+    {
+      "baslik": "Bir Merkür günü iki Merkür yılı sürer",
+      "paragraflar": [
+        "1960'lara kadar gökbilimciler Merkür'ün Güneş'e kilitli olduğunu düşünüyordu: Ay'ın Dünya'ya hep aynı yüzünü göstermesi gibi (d10), Merkür'ün de Güneş'e hep aynı yüzünü gösterdiği sanılıyordu. Bu doğru olsaydı dönüş süresi yılıyla, yani 88 günle aynı olurdu. 1965'te radar gözlemleri bu fikri yıktı. Radar dalgası dönen bir gezegenden yansıyınca, bize doğru gelen kenardan dönen dalga biraz yüksek, uzaklaşan kenardan dönen biraz alçak frekansta gelir. Bu Doppler yayılması dönüş hızını verir. NASA'nın bilgi kartına göre 1965'te Merkür'ün her iki dolanışta üç kez döndüğü bulundu.",
+        "d9'da 87,969 / 58,646 ≈ 1,5 oranını hesapladın: bu bir dönme-dolanma rezonansıdır. Rezonans, iki dönemin küçük tam sayılarla orantılı olmasıdır; burada 3:2. UNLV'nin ders sayfasına göre Merkür'ü bu orana yerleştiren şey yörüngesinin yüksek dış merkezliğidir (0,2056): basık bir yörüngede gezegen, tam kilitlenme yerine 3:2 oranında kararlı bir dönüşe oturmuştur ve küçük etkiler bu oranı korur. Bir kurama göre bu yerleşme, gezegenin oluşumundan sonraki ilk 20 milyon yıl içinde olmuş olabilir.",
+        "Bu dansın tuhaf bir sonucu var: Merkür'de bir güneş günü, yani Güneş'in iki öğle arasında geçen süre, 176 Dünya günü kadardır. NASA'nın tablosu 4222,6 saat, yani 175,94 gün verir. Bu, tam iki Merkür yılı ya da üç dönüştür. Dönüş ile dolanma aynı yöndedir; gezegen kendi çevresinde dönerken Güneş çevresinde de ilerlediği için Güneş'i yeniden tepesine almak daha uzun sürer. Dünya'da da aynı şey olur, ama fark küçüktür: yıldız günü 23 sa 56 dk, güneş günü 24 saattir (d1, d22).",
+        "Merkür'ün yörüngesinin bir hilesi daha var: günberisi, yani Güneş'e en yakın noktası, yüzyıllar içinde yavaşça kayar. Bu kaymanın küçük bir bölümünü Newton'un kütleçekim yasası açıklayamadı ve Einstein'ın genel görelilik kuramının ilk zaferlerinden biri oldu. d26'da gördüğün gibi açıklanamayan pay yüzyılda yaklaşık 43 yay saniyesidir. Merkür yalnızca bir kaya ve demir topu değil; fiziğin en büyük sınavlarından birinin de deney aletidir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Merkür'de bir güneş günü ne kadar sürer?",
+        "metin": "Dönüş ve dolanma aynı yöndeyse güneş günü S için 1/S = 1/Tdönüş − 1/Tyıl. Tdönüş = 58,646 gün, Tyıl = 87,969 gün (NASA). 1/58,646 ≈ 0,017052; 1/87,969 ≈ 0,011368. Fark ≈ 0,005684; S ≈ 1/0,005684 ≈ 175,9 gün. Sağlama: 2 × 87,969 = 175,94 gün. NASA'nın tablosu 4222,6 saat = 175,94 gün verir. Sonuç: Merkür'de gün doğumundan gün doğumuna yaklaşık 176 Dünya günü geçer; bir “gün” iki yıl sürer."
+      },
+      "akilda": "1965'teki radar ölçümleri Merkür'ün kilitli olmadığını, iki turda üç kez döndüğünü (3:2 rezonans) gösterdi. Bir güneş günü ~176 Dünya günü, yani iki Merkür yılıdır. Günberi kaymasının yüzyılda 43 yay saniyelik payını genel görelilik açıklar."
+    },
+    {
+      "baslik": "Seyrek bir dış küre ve kaymış bir mıknatıs",
+      "paragraflar": [
+        "Merkür'ün havası yok denecek kadar seyrektir. NASA NSSDCA buna yüzeye dayalı ekzosfer der ve onu “esasen boşluk” diye tanımlar. Yüzey basıncı 5 × 10⁻¹⁵ bardan azdır; bütün bu dış kürenin toplam kütlesi 10.000 kg'ı geçmez. Kıyas için Dünya'nın atmosferi 5,1 × 10¹⁸ kg'dır. Merkür'ün dış küresindeki atomlar birbirine pek çarpmaz; yüzeyden sıçrar, uzaya kaçar ya da geri düşer. Tablodaki ölçümlere göre sodyum, magnezyum, oksijen, hidrojen, potasyum ve kalsiyum vardır; bazı türlerin miktarı yerel saate ve yere göre değişir. NASA'nın bilgi kartına göre Güneş ışığının basıncı bu atomları gezegenden geriye iter ve kuyruklu yıldızınkine benzeyen nötr bir kuyruk oluşturur.",
+        "Hava olmadığı için ısı tutulmaz ve sıcaklık uçlara gider: gündüz 430 °C, gece −180 °C (d9). Venüs'le karşılaştırmanın anahtarı burasıdır: Merkür'ün “havası” Güneş'in ısısını ne gece tarafına taşıyabilir ne de tutabilir.",
+        "Merkür'ün bir de manyetik alanı vardır, ve bu sürpriz oldu. Planetary Society'ye göre alanı ilk kez Mariner 10 1970'lerdeki geçişlerinde ortaya çıkardı. Kayalık gezegenler arasında, Dünya dışında, eriyik çekirdeğindeki akışlarla kendi küresel alanını üreten bilinen tek gezegendir. Bu alanı üreten mekanizmaya dinamo denir: iletken sıvı demirin akışı, bisiklet dinamosu gibi elektrik akımı ve onunla manyetik alan doğurur. Ama alan zayıftır; NASA'ya göre yüzeyde Dünya'nınkinin yaklaşık yüzde biri kadardır. NSSDCA'nın MESSENGER modeli yüzeyde 0,0025–0,007 gauss verir.",
+        "Alanın bir tuhaflığı daha var: merkezi gezegenin merkezinde değildir. NASA'nın bilgi kartına göre MESSENGER alanın gezegenin ekvatoruna göre kaymış olduğunu buldu; NSSDCA'nın modelinde bu kayma gezegen yarıçapının 0,17'si, yani yaklaşık 415 km'dir. Zayıf alan Güneş rüzgârını zar zor tutar; NASA'ya göre alan zaman zaman Güneş rüzgârının plazmasını yüzeye kadar indiren “manyetik kasırgalar” üretir. Bu alanı ayrıntılı ölçmek BepiColombo'nun Japon aracı Mio'nun asıl işidir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Merkür'ün havası Venüs'ünkinin yanında ne kadar?",
+        "metin": "Merkür'ün dış küresi en çok 10.000 kg = 10⁴ kg (NASA). Venüs'ün atmosferi 4,8 × 10²⁰ kg, Dünya'nınki 5,1 × 10¹⁸ kg (NASA). Venüs / Merkür ≥ 4,8 × 10²⁰ / 10⁴ = 4,8 × 10¹⁶. Venüs / Dünya = 4,8 × 10²⁰ / 5,1 × 10¹⁸ ≈ 94. Sonuç: Venüs'ün havası Dünya'nınkinin yaklaşık 94 katı, Merkür'ünkinin ise en az 48 milyon milyar katıdır; iki komşu bu açıdan iki uç noktadır."
+      },
+      "akilda": "Merkür'ün ekzosferi toplam 10 tondan hafiftir; ısı tutamaz. Mariner 10'un bulduğu küresel manyetik alan, eriyik çekirdekteki dinamodan gelir; Dünya'nınkinin ~%1'i kadar zayıf ve merkezi ~415 km kaymıştır."
+    },
+    {
+      "baslik": "Merkür'e gitmek: MESSENGER'dan BepiColombo'ya",
+      "paragraflar": [
+        "Merkür Dünya'ya en yakın gezegenlerden biridir, ama oraya gitmek çok zordur. Planetary Society'ye göre Merkür'e ulaşmak Plüton'a ulaşmaktan daha fazla enerji ister. Nedeni şu: Dünya'dan kalkan bir araç zaten Güneş çevresinde Dünya'nın hızıyla, ortalama 29,78 km/s ile gider. Güneş'e doğru “düştükçe” hızlanır. Merkür'ün yörüngesine girebilmek için bu kazandığı hızı frenleyip atması gerekir. Yakıtla yapmak çok pahalı olduğu için görevler Dünya, Venüs ve Merkür'ün kendisinin yanından tekrar tekrar geçerek yavaşlar. Bu geçişlere kütleçekim yardımı denir (d23).",
+        "İlk ziyaretçi Mariner 10 oldu: d9'da gördüğün gibi 1974–1975'te üç geçiş yaptı ve NASA'nın bilgi kartına göre yüzeyin yaklaşık %45'ini görüntüledi. MESSENGER 2008–2009'da üç geçiş yaptıktan sonra 18 Mart 2011'de yörüngeye girdi, bütün yüzeyi görüntüledi ve 30 Nisan 2015'te yüzeye çarparak görevini bitirdi. Bu derste anlattığımız katı iç çekirdek, büzülme, grafit, oyuklar, kutup buzu ve kaymış manyetik alan büyük ölçüde MESSENGER'ın verilerinden çıktı.",
+        "Şimdi sıra BepiColombo'da. Avrupa Uzay Ajansı ESA ile Japonya'nın JAXA'sının ortak görevi 20 Ekim 2018'de fırlatıldı. Uygulamanın Haberler sekmesindeki habere göre araç dokuz gezegen yakın geçişi yaptı ve 9,9 milyar km yol aldı; Nisan 2024'teki bir güneş paneli sorunu iticilerin gücünü azaltınca varış Aralık 2025'ten Kasım 2026'ya kaydı. ESA'nın güncel sayfasına göre aracı sekiz yıl taşıyan Merkür Transfer Modülü 3 Eylül 2026'da ayrıldı, yörünge aracı MPO'nun aletleri 15 Eylül'de birlikte açıldı ve 24 Eylül'de 8 dakika 42 saniyelik bir yanmayla 11,4 m/s'lik ilk düzeltme yapıldı.",
+        "ESA'nın takvimine göre araç 21 Kasım 2026'da Merkür yörüngesine girecek, ESA'nın MPO'su ile JAXA'nın Mio'su 9–10 Aralık 2026'da ayrılacak ve bilim evresi Nisan 2027'de başlayacak. MPO yüzeyi ve iç yapıyı, Mio manyetik alanı ve Güneş rüzgârıyla etkileşimini inceleyecek. Bu satırları yazarken (30 Ekim 2026) yörüngeye giriş henüz olmadı; okuduğunda olmuşsa sonucu ESA'nın sayfasından ve Haberler sekmesinden kontrol et. İki aracın aynı anda iki farklı noktadan ölçüm yapması, MESSENGER'ın tek başına çözemediği soruları, örneğin manyetik alanın Güneş rüzgârıyla nasıl titreştiğini, ilk kez doğrudan yanıtlayabilir."
+      ],
+      "akilda": "Merkür'e gitmek, Güneş'e düşerken kazanılan hızı atmak demektir; bu yüzden görevler gezegen geçişleriyle yavaşlar. Mariner 10 (1974–75), MESSENGER (2011–2015, ilk yörünge aracı). BepiColombo: 20 Ekim 2018 fırlatma, 21 Kasım 2026 yörüngeye giriş, Nisan 2027 bilim."
+    },
+    {
+      "baslik": "Venüs'ün sayıları: ters dönen ikiz",
+      "paragraflar": [
+        "Şimdi Venüs'e geçelim. NASA NSSDCA'ya göre kütlesi 4,8673 × 10²⁴ kg (Dünya'nın 0,815'i), yarıçapı 6051,8 km (0,950), ortalama yoğunluğu 5243 kg/m³, yüzey çekimi 8,87 m/s², kurtulma hızı 10,36 km/s. Boyut, kütle ve yoğunlukta gerçekten Dünya'nın ikizidir. Yörüngesi gezegenlerin en dairesel olanıdır: dış merkezlik 0,0068, yani Güneş'e uzaklığı 107,5 ile 108,9 milyon km arasında, yalnızca %1,4 değişir.",
+        "Ama dönüşü bambaşkadır. d9'da Venüs'ün ters yöne, 243 günde döndüğünü gördün. Bu sayının bu kadar kesin bilinmesi yakın zamanda oldu. Jean-Luc Margot'nun ekibi 2006–2020 arasında Goldstone ve Green Bank radyo antenleriyle Venüs'e 21 kez radar gönderdi ve yansıyan dalgadaki yüzey desenlerinin iki antene ne zaman ulaştığını karşılaştırdı. Nature Astronomy'de 2021'de yayımlanan sonuca göre ortalama yıldız günü 243,0226 ± 0,0013 Dünya günüdür. Şaşırtıcı bulgu, günün uzunluğunun sabit olmamasıydı: ölçümler arasında yaklaşık 20 dakikaya varan, milyonda 61 düzeyinde farklar çıktı. Ekip bunu kalın atmosferin gezegenle dönme momentumu alışverişine bağladı; yani rüzgârlar gezegeni hafifçe hızlandırıp yavaşlatıyor.",
+        "Aynı çalışma eksenin eğikliğini 2,6392° ve eksenin yalpalama (presesyon) dönemini yaklaşık 29.000 yıl olarak ölçtü; Dünya'nınki yaklaşık 26.000 yıldır. NASA'nın tablosu eğikliği 177,36° diye yazar. Bu çelişki değildir: 177,36° “ters çevrilmiş” bir eksendir ve 180 − 177,36 = 2,64°'lik bir eğiklikle aynı geometriyi, ama ters dönüşle anlatır. Venüs neden ters döner? Bu derste dayandığımız kaynaklar buna kesin bir açıklama vermiyor. Uygulamanın Haberler sekmesinde, Venüs'ün olası eski bir uydusunun gelgitlerle yok olmuş olabileceğini ve gezegenin dönüşünü etkileyebileceğini inceleyen Eylül 2026 tarihli bir model çalışması var; ama bu bir hipotezdir.",
+        "Ters ve yavaş dönüşün gündelik sonucu güneş günüdür. NASA'nın Venüs bilgi kartına göre iki gün doğumu arasında 116,75 gün geçer; Wikipedia'ya göre yüzeyin bir noktası 58,3 gün karanlıkta kalır. Aşağıdaki örnekte bu sayıyı kendin bulacaksın. Dikkat et: Merkür'de dönüş ve dolanma aynı yönde olduğu için iki frekansı çıkardık; Venüs'te ters yönde olduğu için toplayacağız."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Ters dönen Venüs'te güneş günü",
+        "metin": "Dönüş dolanmaya ters yöndeyse 1/S, 1/Tdönüş ile 1/Tyıl'ın toplamıdır. Tdönüş = 243,0226 gün (Margot 2021), Tyıl = 224,701 gün (NASA). 1/243,0226 ≈ 0,0041148; 1/224,701 ≈ 0,0044504. Toplam ≈ 0,0085652; S ≈ 1/0,0085652 ≈ 116,75 gün. NASA'nın bilgi kartı 116,75 gün verir. Sonuç: Venüs'te Güneş batıdan doğar ve bir sonraki doğuş yaklaşık 117 Dünya günü sonra gelir; gündüz ve gece yaklaşık 58'er gün sürer."
+      },
+      "akilda": "Venüs kütle, boyut ve yoğunlukta Dünya'nın ikizi; yörüngesi en dairesel. Ters dönüşü 243,0226 gün (radar, 2021) ve gün uzunluğu atmosfer yüzünden ~20 dakika oynar. Güneş günü 116,75 gün."
+    },
+    {
+      "baslik": "Bulutların altındaki gezegen: Venüs'ün içi ve yüzeyi",
+      "paragraflar": [
+        "Venüs'ün içi hakkında bildiklerimiz Merkür'ünkinden de azdır. NASA'nın Venüs bilgi kartına göre gezegenin yarıçapı yaklaşık 3000 km olan bir demir çekirdeği vardır. Margot ekibinin 2021'deki ölçümü bu konudaki ilk doğrudan ipuçlarından birini verdi: eylemsizlik momenti çarpanı 0,337 ± 0,024. Değer Dünya'nın 0,3307'sine yakındır; ama belirsizlik payı büyük olduğu için çekirdeğin boyutu ancak kabaca kestirilebiliyor. Haberlere göre çekirdeğin katı mı sıvı mı olduğu henüz bilinmiyor. NASA JPL'ye göre VERITAS görevinin hedeflerinden biri tam olarak çekirdeğin boyutunu ve durumunu belirlemektir.",
+        "Çekirdek Dünya'nınkine benzer bir demir içerse de Venüs'ün küresel bir manyetik alanı yoktur. d9'da NASA'nın açıklamasını gördün: gezegen böyle bir alan üretmek için fazla yavaş döner. Bunun yerine Güneş rüzgârı atmosferin üst katmanlarıyla çarpışarak bir indüklenmiş manyetosfer oluşturur. Wikipedia'ya göre Güneş'e bakan tarafta yay şoku yüzeyden yaklaşık 1900 km yukarıdadır ve manyetik kuyruk gezegen yarıçapının on katına kadar uzanır. Hafif iyonlar bu kuyruk boyunca uzaya kaçar.",
+        "Yüzeyi bulutlar gizlediği için Venüs'ün haritası radarla çıkarıldı. Radar dalgaları bulutları delip geçer ve yansımaları yüzeyin pürüzlülüğünü ve yüksekliğini anlatır. d9'da gördüğün Magellan aracı 1990–1994 arasında yüzeyin %98'ini böyle haritaladı. NASA'nın bilgi kartına göre yüzeyde çapı 20 km'den büyük binden fazla volkan ya da volkanik merkez vardır; en yüksek dağ Maxwell Montes, Everest'le karşılaştırılabilir yüksekliktedir. NASA'nın tablosu en alçak ile en yüksek nokta arasındaki farkı 13 km verir; Dünya'da bu fark 20 km'dir.",
+        "Yüzeyin en ilginç özelliği kraterlerdir, daha doğrusu azlığı. NASA'ya göre çapı yaklaşık 1,5–2 km'den küçük krater yoktur, çünkü küçük göktaşları kalın atmosferde yanıp biter. Kraterlerin azlığı yüzeyin genç olduğunu düşündürür: NASA'ya göre bütün yüzeyin 300–500 milyon yıl önce volkanik etkinlikle yenilendiği düşünülür. Ayrıca NASA'ya göre Venus Express'in 2010'daki kızılötesi görüntüleri, son birkaç yüz bin yıl içinde de volkanik etkinlik olduğunu düşündürdü. Asıl soru şu: Venüs bugün de püskürüyor mu?"
+      ],
+      "akilda": "Venüs'ün ~3000 km yarıçaplı demir çekirdeği var; eylemsizlik momenti 0,337 ± 0,024, çekirdeğin hâli bilinmiyor. Küresel manyetik alan yok, yalnızca Güneş rüzgârının oluşturduğu indüklenmiş bir manyetosfer var. Yüzey 300–500 milyon yıl önce volkanlarla yenilendi; 1,5–2 km'den küçük krater yok."
+    },
+    {
+      "baslik": "Maat Mons: Venüs'te volkan hâlâ etkin mi?",
+      "paragraflar": [
+        "Bir gezegenin volkanik olarak hâlâ “canlı” olup olmadığını anlamanın en doğrudan yolu, aynı yeri iki farklı zamanda görüntüleyip bir değişiklik aramaktır. Magellan'ın verileri 30 yıldan uzun süre arşivde bekledi. Alaska Fairbanks Üniversitesi'nden Robert Herrick, bu görüntüleri farklı yörüngelerden karşılaştırarak elle taramaya yaklaşık 200 saat harcadı. NASA JPL'nin 15 Mart 2023 tarihli haberine göre sonunda Venüs'ün ekvatoru yakınındaki geniş Atla Regio yaylasında, büyük volkan Maat Mons ile ilişkili bir volkan bacasında değişiklik buldu. Volkan bacası, lavın yüzeye çıktığı açıklıktır.",
+        "Şubat 1991'de çekilen görüntüde baca neredeyse yuvarlaktı ve alanı yaklaşık 2,2 km²'ydi. Sekiz ay sonra, Ekim 1991'deki görüntüde baca iki katına yakın büyümüş (yaklaşık 4 km²), biçimi bozulmuş ve neredeyse ağzına kadar dolmuş görünüyordu. Herrick ve JPL'den Scott Hensley bacanın farklı biçimlerini bilgisayarda modelledi; vardıkları sonuca göre bu değişikliği en iyi açıklayan şey bir püskürmeydi. Bacada bir lav gölü oluşmuş olabilir; ama içindekinin sıvı mı katı mı olduğu bilinmiyor. Sonuçlar Science dergisinde yayımlandı.",
+        "Bu güçlü ama kesin olmayan bir kanıttır, ve araştırmacılar bunu açıkça söyler. Sci.News'in aktardığına göre volkanik olmayan bir açıklama da mümkündür: bir depremin tetiklediği duvar çökmesi. Dünya'da bu ölçekteki baca çökmeleri genellikle yakındaki püskürmelerle birlikte görülse de, Venüs'te tek bir baca için kesin hüküm vermek zordur. Bu yüzden Venüs'ün bugün volkanik olarak etkin olduğu “olası, giderek daha olası” diye özetlenmelidir, “kanıtlandı” diye değil.",
+        "Bu bulgu, gelecek görevlerin neden önemli olduğunu da gösterir. Magellan'ın görüntüleri bugünkü ölçütlerle kaba çözünürlüktedir ve iki görüntü arasında yalnızca birkaç ay vardı. Herrick, Hensley ve ekip arkadaşları VERITAS biliminin içinde yer alıyor; JPL'ye göre VERITAS çok daha yüksek çözünürlüklü radar haritaları çıkaracak, yüzeyin bugün deforme olduğu bölgeleri arayacak ve etkin volkanizmanın ısı izlerini ve yakın zamandaki volkanizmanın kimyasal izlerini kovalayacak. Otuz yıl arayla çekilmiş iki radar haritası, bir gezegenin nefes alıp almadığını söyleyebilir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Baca alanı 2,2 km²'den 4 km²'ye çıkınca çapı ne olur?",
+        "metin": "Yuvarlak bir baca için alan A = π × r², çap d = 2 × √(A / π). Önce: 2,2 / 3,1416 ≈ 0,700; √0,700 ≈ 0,837; d ≈ 1,67 km. Sonra: 4 / 3,1416 ≈ 1,273; √1,273 ≈ 1,128; d ≈ 2,26 km. Alan oranı 4 / 2,2 ≈ 1,8, çap oranı ise √1,8 ≈ 1,34. Sonuç: baca yaklaşık 1,7 km'den 2,3 km genişliğe çıkmış gibi; alanın neredeyse iki katına çıkması, çapın yalnızca üçte bir artması demektir. Gerçek baca tam yuvarlak olmadığı için bunlar yaklaşık değerlerdir."
+      },
+      "akilda": "Herrick ve Hensley (Science, 2023): Maat Mons yakınındaki bir volkan bacası Şubat–Ekim 1991 arasında ~2,2 km²'den ~4 km²'ye büyüdü ve doldu; en iyi açıklama püskürme, ama duvar çökmesi dışlanamıyor. VERITAS yeni radar haritalarıyla değişim arayacak."
+    },
+    {
+      "baslik": "92 bar ve 464 °C: kaçak sera etkisi",
+      "paragraflar": [
+        "Venüs'ün havası d9'da kısaca gördüğün gibi %96,5 karbondioksit ve %3,5 azottur. NASA NSSDCA'nın tablosu iz gazları da verir: milyonda 150 kükürt dioksit, milyonda 70 argon ve yalnızca milyonda 20 su buharı. Yüzey basıncı 92 bar, yüzeydeki havanın yoğunluğu yaklaşık 65 kg/m³'tür; Wikipedia'ya göre bu, sıvı suyun yoğunluğunun %6,5'idir. Ortalama sıcaklık 737 K, yani 464 °C'dir ve tablo gece ile gündüz arasındaki farkı “yaklaşık sıfır” verir. Kalın hava, ısıyı gezegenin her yerine eşit dağıtır.",
+        "Bu sıcaklığı anlamak için önce bir “havasız” sıcaklık hesaplayalım. Bir gezegenin aldığı ışıkla verdiği ısı dengedeyse, havası hiç ısı tutmasaydı ulaşacağı sıcaklığa kara cisim sıcaklığı denir. NASA'nın tablosuna göre bu değer Venüs için 226,6 K, Dünya için 254,0 K'dir. Venüs Güneş'e daha yakın olduğu hâlde daha soğuk çıkıyor, çünkü parlak bulutları ışığın çoğunu geri yansıtır. Bir gezegenin üstüne düşen bütün ışığın ne kadarını geri yansıttığına Bond albedosu denir: Venüs için 0,77, Dünya için 0,294. Yani Venüs, metrekare başına Dünya'dan az güneş enerjisi soğurur, ama yüzeyi 500 kelvinden fazla daha sıcaktır.",
+        "Farkı yaratan sera etkisidir: atmosfer, yüzeyin kızılötesi ışık olarak yaydığı ısının kaçmasını engeller (d2, d44). Dünya'da bu etki yüzeyi yaklaşık 34 K ısıtır; Venüs'te 510 K. Peki Venüs'ü bu uç noktaya ne getirdi? Wikipedia'nın özetlediği yaygın senaryoya göre Güneş'in ışıma gücü son 3,8 milyar yılda yaklaşık %25 arttı. Genç Venüs'te yüzey suyu olmuş olabilir; ısınan okyanuslar buharlaştıkça su buharı, kendisi de bir sera gazı olarak, ısınmayı daha da artırdı. Kendi kendini besleyen bu döngüye kaçak sera etkisi denir. Bu olayın yaklaşık 4 milyar yıl önce başladığı düşünülür; yaygın tahminlere göre yüzey suyu yaklaşık 600 milyon yıl dayandı, bazı araştırmacılar 2 milyar yıla kadar dayanmış olabileceğini savunur.",
+        "Bu bir senaryodur; ama bir kanıtı var. Hidrojenin ağır bir kardeşi olan döteryum, sudan uzaya hidrojenden daha zor kaçar. Bir gezegen suyunu uzaya kaybettikçe geride kalan suda döteryumun hidrojene oranı (D/H oranı) yükselir. Wikipedia'ya göre Venüs'te bu oran Dünya'dakinin 100–150 katıdır. Üst atmosferde hidrojen ile oksijenin kaçış oranı yaklaşık 2'ye 1'dir, yani su molekülünün bileşimine uygun; Venüs suyunu bugün de kaybetmeye devam ediyor. Venüs'ün geçmişte gerçekten okyanusları olup olmadığı ise açık bir sorudur; DAVINCI'nin ölçeceği soy gazlar ve izotoplar bu soruya cevap arayacak."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Sera etkisi Venüs'ü ve Dünya'yı kaç derece ısıtıyor?",
+        "metin": "Sera ısınması ≈ gerçek ortalama sıcaklık − kara cisim sıcaklığı. Venüs: 737 − 226,6 ≈ 510 K. Dünya: 288 − 254,0 = 34 K (NASA). Oran 510 / 34 ≈ 15. Soğurulan ışığı da karşılaştıralım: Venüs (1 − 0,77) × 2601,3 ≈ 598 W/m²; Dünya (1 − 0,294) × 1361,0 ≈ 961 W/m². Sonuç: Venüs Dünya'dan yaklaşık %40 az güneş enerjisi soğurduğu hâlde sera etkisi onu yaklaşık 510 K, Dünya'yı ise yalnızca 34 K ısıtıyor; fark 15 kat."
+      },
+      "akilda": "Venüs: %96,5 CO₂, 92 bar, 737 K, gece-gündüz farkı yok. Kara cisim sıcaklığı yalnızca 226,6 K; sera etkisi ~510 K ekler (Dünya'da 34 K). Kaçak sera etkisi suyu buharlaştırıp uzaya kaybettirdi; D/H oranı Dünya'nın 100–150 katı."
+    },
+    {
+      "baslik": "Asit bulutları, süper dönme ve şimşek tartışması",
+      "paragraflar": [
+        "Venüs'ün havası katmanlıdır. Wikipedia'ya göre en alttaki katman olan troposfer yüzeyden 65 km'ye kadar uzanır ve atmosfer kütlesinin %99'unu taşır; kütlenin %90'ı yüzeyin ilk 28 km'sindedir. Bulut tabakası yaklaşık 20 km kalınlığındadır ve gündüz tarafında yaklaşık 65 km'ye kadar çıkar; en yoğun katman 48,5 km civarındadır. Bulutların %75–96'sı sülfürik asit damlacıklarından oluşur ve güneş ışığının yaklaşık %75'ini geri yansıtır. Venüs'ü gökte bu kadar parlak gösteren işte bu bulutlardır.",
+        "Bulutların içinde ilginç bir kuşak vardır. Wikipedia'nın tablosuna göre 50 km yükseklikte sıcaklık 75 °C ve basınç 1,066 atmosfer, 55 km'de ise 27 °C ve 0,531 atmosferdir. Yani 50–55 km arasında basınç ve sıcaklık Dünya'nın yüzeyine benzer; bu yüzden bu kuşak hem insanlı keşif fikirlerinde hem de yaşam tartışmalarında öne çıkar. d18'deki fosfin tartışması da bu bulut katmanıyla ilgilidir; orada ayrıntısıyla okuyabilirsin. Aşağıda ise ortam karanlıktır: Wikipedia'ya göre yüzeydeki aydınlık yaklaşık 14.000 lükstür, bulutlu bir Dünya gününe benzer. Asit yağmuru da yere ulaşmadan buharlaşır; havada asılı kalan bu yağmur perdesine virga denir.",
+        "Bulutlar gezegenden çok daha hızlı döner. d9'da bulut tepelerinin dört günde bir tur attığını ve bunun süper dönme diye adlandırıldığını gördün; oradaki örnekte hızı yaklaşık 400 km/sa hesapladın. Wikipedia'ya göre rüzgâr hızı kutuplara doğru azalır ve kutuplarda sıfıra iner; troposferin derinliklerinde her kilometrede yaklaşık 3 m/s düşer. Yüzeyde ise NASA'nın tablosuna göre rüzgâr yalnızca 0,3–1,0 m/s'dir; ama 65 kg/m³ yoğunlukta bir hava için bu, toz ve küçük taşları taşımaya yeter. Kutuplarda iki “gözlü”, S biçimli bulut yapılarıyla birbirine bağlı dev girdaplar vardır; Wikipedia'ya göre her biri yaklaşık üç günde bir döner.",
+        "Venüs'te şimşek çakar mı? Bu, uzun süredir tartışmalı bir sorudur. NASA'nın Venüs bilgi kartı Venus Express'in 2007'de şimşeği doğruladığını yazar. Ama Wikipedia'nın özetine göre tablo karışıktır: Venera 9 ve 10 belirsiz işaretler verdi, Venera 11–14 şimşek kaydetmedi; Venus Express'in algıladığı radyo dalgaları Dünya'nınkinin en az yarısı kadar şimşeğe işaret ediyordu, ama Japonya'nın Akatsuki aracının verileri çok düşük bir çakma oranı gösterdi ve Parker Güneş Sondası'nın bir geçişi bu dalgaların gezegen dışı bir kaynaktan gelebileceğini düşündürdü. Kaynaklar arasında böyle bir çelişki gördüğünde en dürüst özet şudur: soru açık."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Venüs'ün yüzeyindeki 92 bar, denizin kaç metre altına eşit?",
+        "metin": "Suyun altında basınç her metrede ρ × g kadar artar: ρ = 1000 kg/m³, g ≈ 9,8 m/s², yani metre başına 9800 Pa. 1 bar = 100.000 Pa. Dünya'da yüzeyde zaten yaklaşık 1 bar hava basıncı var; eksik kalan 92 − 1 = 91 bar = 9.100.000 Pa. Derinlik ≈ 9.100.000 / 9800 ≈ 930 m. Sonuç: Venüs'ün yüzeyinde durmak, Dünya'da tatlı suyun yaklaşık 930 m derinliğinde durmak gibidir; deniz suyu biraz daha yoğun olduğu için orada bu derinlik biraz daha az çıkar."
+      },
+      "akilda": "Troposfer 65 km'ye kadar, kütlenin %99'u; bulutlar %75–96 sülfürik asit, ışığın ~%75'ini yansıtır. 50–55 km'de basınç ve sıcaklık Dünya yüzeyine benzer. Bulut tepeleri 4 günde döner, yüzeyde rüzgâr ~1 m/s'nin altında. Şimşek tartışmalı."
+    },
+    {
+      "baslik": "Venera'dan EnVision'a: Venüs'e gidenler ve gidecekler",
+      "paragraflar": [
+        "Venüs'ün yüzeyi bir uzay aracının karşılaşabileceği en zor yerlerden biridir: 92 bar basınç ve kurşunu eritecek sıcaklık. Buna rağmen Sovyetler Birliği oraya defalarca indi. NASA'nın Venüs bilgi kartına göre Venera 7, 15 Aralık 1970'te yumuşak iniş yaparak başka bir gezegene başarıyla inen ilk araç oldu ve yüzeyden 23 dakika veri gönderdi. Space.com'a göre yüzeyden ilk fotoğrafları 1975'te Venera 9 yolladı.",
+        "En ünlüsü Venera 13'tür. 30 Ekim 1981'de fırlatıldı, yaklaşık dört aylık yolculuktan sonra 1 Mart 1982'de gezegenin güney yarımküresine indi. Yaklaşık yarım saat dayanacak biçimde tasarlanmıştı; 127 dakika çalıştı ve 14 renkli, 8 siyah-beyaz fotoğraf gönderdi. Beş gün sonra fırlatılan ikizi Venera 14 ise 57 dakika dayandı. Venüs yüzeyinin bugün bildiğimiz renkli görüntülerinin çoğu bu iki araçtan gelir. Bu sürelere bakınca bir şey dikkatini çekmeli: yüzeyde en uzun yaşayan araç bile iki saatten biraz fazla dayandı.",
+        "Yörüngeden ve yakın geçişlerden de çok şey öğrenildi. NASA'nın bilgi kartına göre NASA'nın Mariner 2'si 1962'de Venüs'ten bilgi gönderdi; bu, başka bir gezegenden bilgi gönderen ilk araçtı. Pioneer Venus 1979'da bulutları morötesi ışıkta görüntüledi, Magellan 1990–1994'te yüzeyi radarla haritaladı. ESA'nın 2005'te fırlatılan Venus Express aracı Nisan 2006'da Venüs'e vardı. NASA JPL'nin sayfasına göre VERITAS, “1990'lardan beri” Venüs'e dönecek ilk NASA görevi olacak.",
+        "Sıradaki görevlerin durumu bütçelere bağlı ve değişken; tarihleri yazdığımız gibi değil, kaynağıyla birlikte oku. NASA, 2 Haziran 2021'de iki Venüs görevi seçti. DAVINCI, Alpha Regio bölgesine atmosferi boyunca inecek bir sonda bırakacak; soy gazları, iz gazları ve onların izotoplarını, sıcaklığı, basıncı ve rüzgârları ölçecek. Space.com'un 27 Mart 2026 tarihli haberine göre fırlatma hedefi Aralık 2030, sondanın Venüs'e bırakılması Ocak 2033'tür ve 2026 bütçesi görev için 99 milyon dolar ayırdı. VERITAS'ın fırlatma tarihi JPL'ye göre belirlenmedi ve aynı habere göre çalışmalar yavaş ilerliyor. ESA'nın EnVision görevi 25 Ocak 2024'te onaylandı ve 2031'de Ariane 6 roketiyle fırlatılması öngörülüyor; ama Space.com'un Ocak 2026 haberine göre NASA'nın vereceği VenSAR radarı ABD bütçe kesintileri yüzünden risk altında ve görev en geç 2033'te kalkmazsa en az üç yıl beklemek zorunda kalacak. NASA'dan bir yetkili, üç Venüs görevinin de devam etmesinin zor olacağını söyledi."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Venera 13 tasarımından kaç kat uzun yaşadı?",
+        "metin": "Tasarım ömrü yaklaşık yarım saat, yani 30 dakika; gerçekleşen 127 dakika (Space.com). Oran 127 / 30 ≈ 4,2. Venera 7'nin 23 dakikasıyla karşılaştır: 127 / 23 ≈ 5,5. Venera 14'ün 57 dakikasıyla: 127 / 57 ≈ 2,2. Sonuç: Venera 13 tasarımının dört katından fazla, yaklaşık 2 saat 7 dakika dayandı; yine de Venüs yüzeyinde en uzun çalışan araçlar bile ancak saatlerle ölçülen ömürler sürdü."
+      },
+      "akilda": "Venera 7 (1970) ilk iniş, 23 dk; Venera 9 (1975) ilk yüzey fotoğrafı; Venera 13 (1 Mart 1982) 127 dk, 14 renkli fotoğraf. Gelecek: DAVINCI (hedef Aralık 2030 fırlatma, Ocak 2033 sonda), VERITAS (tarih yok), EnVision (2031 hedef, radar riski). Tarihler bütçeye bağlı."
+    },
+    {
+      "baslik": "İstanbul'dan Merkür ve Venüs'ü görmek",
+      "paragraflar": [
+        "İç gezegenler gökte hep Güneş'in yakınında kalır. Bir iç gezegenin Güneş'ten görünen açısal uzaklığına uzanım denir. Cambridge'in gözlem rehberine göre Merkür en çok 27° ya da biraz fazlası, Venüs 45°'den fazla uzaklaşabilir. Gezegen Dünya ile Güneş'in arasından geçtiğinde, yani bize en yakın olduğunda, gökte Güneş'le aynı yöndedir; buna alt kavuşum denir. Venüs alt kavuşumda yaklaşık 41 milyon km uzaktadır ve NASA'ya göre görünür çapı ortalama 60 yay saniyesine çıkar; ama o sırada ışıklı yüzünü Güneş'e, karanlık yüzünü bize çevirir.",
+        "Venüs'ün evreleri tarihte büyük bir rol oynadı. Wikipedia'ya göre Galileo 1610'da teleskobuyla Venüs'ün Ay gibi evreler geçirdiğini gördü. Ptolemaios'un Dünya merkezli modelinde Venüs hiçbir zaman Güneş'in arkasına geçmediği için tam dolu bir Venüs görülemezdi; Galileo'nun gözlemi bu modeli dışarıda bıraktı (d20). Evre ve uzaklık birlikte değişir: Venüs dolunay evresinde uzaktadır ve yaklaşık 10 yay saniyesi görünür; ince hilaldeyken yakındır ve 60 yay saniyesini aşar. En parlak olduğu an ise ince hilal değil, yaklaşık %28 aydınlık bir hilal evresidir; büyüyen disk ile küçülen aydınlık pay bu noktada dengelenir.",
+        "Şimdi takvime bakalım. Venüs 23–24 Ekim 2026'da alt kavuşumdaydı (kaynaklar 23 ya da 24 Ekim veriyor). Space.com'a göre 3 Kasım'dan yıl sonuna kadar sabah göğünde; en parlak hâline 29 Kasım civarında ulaşır (d9'da Urania'nın hesabı 25–27 Kasım veriyordu). 7 Kasım sabahı Venüs, ince bir hilal Ay ve Başak takımyıldızının parlak yıldızı Spika 2,5°'lik bir alana toplanır. EarthSky'a göre Venüs 3 Ocak 2027'de en büyük batı uzanımına, yani sabah göğünde Güneş'ten en uzak noktasına ulaşır: yaklaşık 47°, %50 aydınlık, 24,76 yay saniyesi ve −4,3 kadir. Sabah göğünde yaklaşık Haziran 2027'ye kadar kalır.",
+        "Dürbünle ne görürsün? Space.com'a göre hilal evresi, sağlam tutulan bir dürbünle Kasım ayının büyük bölümünde görülebilir; Cambridge rehberi de iyi sabitlenmiş bir dürbünle hilalin seçilebileceğini söyler. Dürbünü bir duvara ya da üçayağa dayamak işini çok kolaylaştırır (d11). Ama kural kesindir: Venüs Güneş'e yakın olduğu için dürbünü yalnızca Güneş tamamen ufkun altındayken kullan; Güneş'i bir an bile dürbünle görmek gözüne kalıcı zarar verir. Cambridge'in gündüz Venüs arama önerisi de bu yüzden bir binanın gölgesinde durmaktır.",
+        "Merkür daha zor bir avdır. Space.com'a göre 13 Kasım–4 Aralık 2026 arası onun yılın en iyi sabah dönemi; gün doğmadan önce doğu-güneydoğu ufkunun açık olduğu bir yer seç. Cambridge'e göre en büyük uzanım çevresinde Merkür yaklaşık yarı aydınlık ve yaklaşık 8 yay saniyesi çapındadır; görünür kaldığı süre her sabah yalnızca birkaç on dakikadır. Çıplak gözle başla, dürbünü yalnızca Güneş'in kesinlikle ufkun altında olduğundan eminken kullan. Bir de gelecek için not: Cambridge'e göre sıradaki Merkür geçişleri 13 Kasım 2032, 7 Kasım 2039 ve 7 Mayıs 2049'da; bunları yalnızca uygun Güneş filtresiyle izleyebilirsin (d4). Uygulamanın Gökyüzü sekmesi o gece görülebilen gezegenleri ve yaklaşan en büyük uzanımları listeler; sabah planını oradan yapabilirsin."
+      ],
+      "ornek": {
+        "baslik": "Örnek: 7×50 dürbünde Venüs'ün hilali ne büyüklükte görünür?",
+        "metin": "Dürbün görünür çapı büyütme kadar büyütür. Cambridge'e göre Güneş'ten 20° uzaktaki Venüs %6'lık bir hilal ve yaklaşık 58 yay saniyesidir: 58 × 7 = 406 yay saniyesi ≈ 6,8 yay dakikası. En büyük uzanımda (3 Ocak 2027) 24,76 × 7 ≈ 173 yay saniyesi ≈ 2,9 yay dakikası. Kıyas: d9'daki örnekte 2027 karşı konumundaki Mars dürbünde yaklaşık 1,6 yay dakikası görünüyordu. Sonuç: ince hilal evresindeki Venüs dürbünde Mars'ın dört katından büyük görünür; hilal biçimi bu yüzden seçilebilir, ama ancak dürbün sabitken."
+      },
+      "akilda": "Venüs alt kavuşumu 23–24 Ekim 2026; 3 Kasım'dan sabah göğünde, en parlak ~25–29 Kasım, en büyük batı uzanımı 3 Ocak 2027 (47°). Hilal sabit dürbünle görülür. Merkür'ün iyi sabah dönemi 13 Kasım–4 Aralık 2026. Dürbünü yalnız Güneş ufkun altındayken kullan."
+    }
+  ],
+  "formuller": [
+    {
+      "ad": "Ters kare yasası (güneş ışığı)",
+      "ifade": "F = F_Dünya × (1 AB / d)²",
+      "aciklama": "F: metrekare başına düşen güneş ışığı (W/m²), F_Dünya = 1361 W/m², d: Güneş'e uzaklık (AB). Merkür (0,387 AB) ≈ 9083, Venüs (0,723 AB) ≈ 2601 W/m²."
+    },
+    {
+      "ad": "Ortalama yoğunluk",
+      "ifade": "ρ = M / ((4/3) × π × R³)",
+      "aciklama": "ρ: yoğunluk (kg/m³), M: kütle (kg), R: ortalama yarıçap (m). Merkür: 3,301 × 10²³ kg ve 2,4397 × 10⁶ m ile ≈ 5430 kg/m³."
+    },
+    {
+      "ad": "Güneş günü (aynı yönde dönüş)",
+      "ifade": "1/S = 1/T_dönüş − 1/T_yıl",
+      "aciklama": "S: güneş günü, T_dönüş: yıldızlara göre dönüş süresi, T_yıl: yörünge dönemi (hepsi gün). Merkür: 58,646 ve 87,969 gün ile S ≈ 175,9 gün."
+    },
+    {
+      "ad": "Güneş günü (ters yönde dönüş)",
+      "ifade": "1/S = 1/T_dönüş + 1/T_yıl",
+      "aciklama": "Gezegen dolanma yönünün tersine dönüyorsa frekanslar toplanır. Venüs: 243,0226 ve 224,701 gün ile S ≈ 116,75 gün."
+    },
+    {
+      "ad": "Eylemsizlik momenti çarpanı",
+      "ifade": "C / (M × R²)",
+      "aciklama": "C: gezegenin dönme eksenine göre eylemsizlik momenti, M: kütle, R: yarıçap. Birimsizdir. Düzgün yoğunluklu küre 0,4; daha küçük değer kütlenin merkezde toplandığını gösterir. Merkür 0,346, Venüs 0,337, Dünya 0,3307."
+    },
+    {
+      "ad": "Sera ısınması (kaba ölçü)",
+      "ifade": "ΔT ≈ T_yüzey − T_kara cisim",
+      "aciklama": "T_yüzey: gerçek ortalama yüzey sıcaklığı (K), T_kara cisim: atmosfer ısı tutmasaydı olacak denge sıcaklığı (K). Venüs 737 − 226,6 ≈ 510 K; Dünya 288 − 254 = 34 K."
+    },
+    {
+      "ad": "Sıvı içinde basınç",
+      "ifade": "P = ρ × g × h",
+      "aciklama": "P: basınç artışı (Pa), ρ: sıvının yoğunluğu (kg/m³), g: çekim ivmesi (m/s²), h: derinlik (m). Tatlı suda her 10 m yaklaşık 1 bar ekler; Venüs'ün 92 barı yaklaşık 930 m su altına denk gelir."
+    }
+  ],
+  "anahtar_sayilar": [
+    {
+      "deger": "Merkür: 0,33010 × 10²⁴ kg · 2439,7 km · 5429 kg/m³ · 3,70 m/s²",
+      "aciklama": "Merkür'ün kütlesi, ortalama yarıçapı, yoğunluğu ve yüzey çekimi (NASA NSSDCA)",
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/mercuryfact.html"
+    },
+    {
+      "deger": "~2000 km (yarıçapın ~%80'i); manto + kabuk ~400 km",
+      "aciklama": "Merkür'ün metal çekirdeğinin yarıçapı ve üstündeki kaya kabuğun kalınlığı",
+      "kaynak_url": "https://www.nasa.gov/wp-content/uploads/2009/12/mercury_lithograph.pdf"
+    },
+    {
+      "deger": "4,6–7 km",
+      "aciklama": "Merkür'ün yarıçapının son 4 milyar yılda küçülmesi (Byrne ve ekibi, 2014; 5934 tektonik yapı)",
+      "kaynak_url": "https://www.eurekalert.org/news-releases/627608"
+    },
+    {
+      "deger": "175,94 gün",
+      "aciklama": "Merkür'de bir güneş günü: iki yıl, üç dönüş (3:2 rezonans, 1965'te radarla bulundu)",
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/mercuryfact.html"
+    },
+    {
+      "deger": "21 Kasım 2026 · Nisan 2027",
+      "aciklama": "BepiColombo'nun planlanan Merkür yörüngesine girişi ve bilim evresinin başlangıcı",
+      "kaynak_url": "https://www.esa.int/Science_Exploration/Space_Science/BepiColombo/Latest_updates_BepiColombo_s_arrival_at_Mercury"
+    },
+    {
+      "deger": "243,0226 ± 0,0013 gün; ~20 dk oynama",
+      "aciklama": "Venüs'ün ters yönde yıldız günü ve gün uzunluğundaki değişim (Margot ve ekibi, 2021)",
+      "kaynak_url": "https://ui.adsabs.harvard.edu/abs/2021NatAs.tmp...74M"
+    },
+    {
+      "deger": "116,75 gün",
+      "aciklama": "Venüs'te iki gün doğumu arası (güneş günü)",
+      "kaynak_url": "https://www.nasa.gov/sites/default/files/files/Venus_Lithograph.pdf"
+    },
+    {
+      "deger": "92 bar · 737 K · ~65 kg/m³ · 4,8 × 10²⁰ kg",
+      "aciklama": "Venüs yüzeyinde basınç, sıcaklık, hava yoğunluğu ve atmosferin toplam kütlesi",
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/venusfact.html"
+    },
+    {
+      "deger": "226,6 K · Bond albedosu 0,77",
+      "aciklama": "Venüs'ün kara cisim sıcaklığı ve geri yansıttığı ışık payı; sera etkisi ~510 K ekler",
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/venusfact.html"
+    },
+    {
+      "deger": "D/H = Dünya'nın 100–150 katı",
+      "aciklama": "Venüs atmosferinde döteryum/hidrojen oranı: kaybedilen suyun izi",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Atmosphere_of_Venus"
+    },
+    {
+      "deger": "~2,2 km² → ~4 km² (Şubat–Ekim 1991)",
+      "aciklama": "Maat Mons yakınındaki volkan bacasının Magellan görüntülerindeki büyümesi",
+      "kaynak_url": "https://www.jpl.nasa.gov/news/nasas-magellan-data-reveals-volcanic-activity-on-venus/"
+    },
+    {
+      "deger": "127 dakika",
+      "aciklama": "Venera 13'ün Venüs yüzeyinde çalıştığı süre (1 Mart 1982)",
+      "kaynak_url": "https://www.space.com/18551-venera-13.html"
+    },
+    {
+      "deger": "3 Ocak 2027 · ~47° · −4,3 kadir",
+      "aciklama": "Venüs'ün en büyük batı uzanımı (sabah göğü)",
+      "kaynak_url": "https://earthsky.org/astronomy-essentials/venus-before-sunrise-greatest-elongation/"
+    }
+  ],
+  "sozluk": [
+    {
+      "terim": "İç gezegen",
+      "tanim": "Yörüngesi Dünya'nınkinin içinde kalan, bu yüzden gökte hep Güneş'in yakınında görünen gezegen: Merkür ve Venüs."
+    },
+    {
+      "terim": "Manto",
+      "tanim": "Kayalık bir gezegende çekirdek ile en dıştaki kabuk arasında kalan kalın kaya katmanı."
+    },
+    {
+      "terim": "İç çekirdek",
+      "tanim": "Bir gezegenin metal çekirdeğinin en içteki, basınç yüzünden katılaşmış bölümü."
+    },
+    {
+      "terim": "Eylemsizlik momenti çarpanı",
+      "tanim": "Bir gezegenin kütlesinin merkezde ne kadar toplandığını gösteren birimsiz sayı; düzgün bir küre için 0,4'tür, daha küçük değer ağır bir çekirdeğe işaret eder."
+    },
+    {
+      "terim": "Loblu sarp",
+      "tanim": "Kabuğun sıkışarak kırılıp bir parçasının ötekinin üstüne bindiği yerde oluşan, kıvrımlı kenarlı uzun ve yüksek yamaç."
+    },
+    {
+      "terim": "Oyuk",
+      "tanim": "Merkür'de uçucu maddelerin buhar olarak kaybolduğu yerlerde oluştuğu düşünülen, jeolojik olarak genç çukur."
+    },
+    {
+      "terim": "Uçucu element",
+      "tanim": "Kükürt, sodyum ya da potasyum gibi görece düşük sıcaklıkta kolayca buharlaşan element."
+    },
+    {
+      "terim": "Sürekli gölgeli bölge",
+      "tanim": "Kutuplara yakın derin kraterlerde güneş ışığının hiç ulaşmadığı, bu yüzden buzun milyarlarca yıl korunabildiği alan."
+    },
+    {
+      "terim": "Nötron tayfölçeri",
+      "tanim": "Gezegen yüzeyinden kaçan nötronları sayarak yüzeyin altındaki hidrojeni, dolayısıyla su buzunu dolaylı olarak ölçen alet."
+    },
+    {
+      "terim": "Dönme-dolanma rezonansı",
+      "tanim": "Bir cismin kendi ekseni çevresindeki dönüş süresiyle yörünge süresinin küçük tam sayılarla orantılı olması; Merkür'de 3:2."
+    },
+    {
+      "terim": "Dinamo",
+      "tanim": "Bir gezegenin içindeki iletken sıvının akışıyla elektrik akımı ve küresel manyetik alan üretmesi."
+    },
+    {
+      "terim": "İndüklenmiş manyetosfer",
+      "tanim": "Kendi manyetik alanı olmayan bir gezegenin çevresinde, Güneş rüzgârının üst atmosferle etkileşmesiyle oluşan manyetik kılıf."
+    },
+    {
+      "terim": "Kara cisim sıcaklığı",
+      "tanim": "Bir gezegenin, aldığı güneş ışığıyla yaydığı ısı dengedeyken atmosferi hiç ısı tutmasaydı ulaşacağı sıcaklık."
+    },
+    {
+      "terim": "Bond albedosu",
+      "tanim": "Bir gezegenin üstüne düşen bütün güneş ışığının, her yöne ve her dalga boyunda geri yansıttığı payı."
+    },
+    {
+      "terim": "Kaçak sera etkisi",
+      "tanim": "Isınmanın su buharı gibi sera gazlarını artırıp ısınmayı daha da büyüttüğü, durdurulamayan kendini besleyen döngü."
+    },
+    {
+      "terim": "D/H oranı",
+      "tanim": "Bir gezegenin suyundaki ağır hidrojen (döteryum) ile sıradan hidrojen sayılarının oranı; yükselmesi suyun uzaya kaybedildiğine işaret eder."
+    },
+    {
+      "terim": "Volkan bacası",
+      "tanim": "Lavın ve volkanik gazların yüzeye çıktığı açıklık."
+    },
+    {
+      "terim": "Virga",
+      "tanim": "Bulutlardan düşen ama yere ulaşmadan buharlaşan yağış."
+    },
+    {
+      "terim": "Alt kavuşum",
+      "tanim": "Bir iç gezegenin Dünya ile Güneş'in tam arasından geçtiği, gökte Güneş'le aynı yönde göründüğü an."
+    },
+    {
+      "terim": "En büyük uzanım",
+      "tanim": "Bir iç gezegenin gökte Güneş'ten en uzak açıda göründüğü an; Merkür için ~27°, Venüs için ~45–47°."
+    }
+  ],
+  "defter_notu": [
+    "Güneş ışığı ∝ 1/d²: Merkür 6,7×, Venüs 1,9× Dünya (1361 W/m²). Sıcaklığı asıl atmosfer belirler.",
+    "Merkür: 0,055 Dünya kütlesi, 5429 kg/m³; çekirdek yarıçapı ~2000 km (%80), manto ve kabuk ~400 km; katı iç çekirdek (Genova 2019). C/MR² = 0,346 (düzgün küre 0,4).",
+    "Merkür büzüldü: yarıçap 4,6–7 km (Byrne 2014, 5934 yapı) → loblu sarplar. Yüzey koyu, grafitli; S, Cl, Na, K bol; oyuklar genç.",
+    "Kutup buzu: eğiklik 0,034° → sürekli gölge. 1991 radar ipucu; MESSENGER nötron tayfölçeri 2012: neredeyse saf buz, koyu örtü altında.",
+    "3:2 rezonans (1965 radar). Güneş günü 175,94 g = 2 yıl = 3 dönüş. 1/S = 1/Td − 1/Ty (aynı yön), 1/S = 1/Td + 1/Ty (ters yön).",
+    "Ekzosfer < 10.000 kg; manyetik alan Dünya'nın ~%1'i, merkezi ~415 km kaymış. BepiColombo: 20.10.2018 → yörünge 21.11.2026, MPO ve Mio, bilim Nisan 2027.",
+    "Venüs: 0,815 Dünya kütlesi; dönüş −243,0226 g, ~20 dk oynar; güneş günü 116,75 g. Çekirdek ~3000 km, C/MR² = 0,337 ± 0,024; manyetik alan yok.",
+    "Venüs havası: %96,5 CO₂, 92 bar, 737 K, 4,8 × 10²⁰ kg (~93 Dünya). Kara cisim 226,6 K, albedo 0,77 → sera ~510 K (Dünya 34 K). D/H 100–150×.",
+    "Bulutlar %75–96 H₂SO₄, 48–65 km; 50–55 km Dünya'ya benzer. Maat Mons bacası 1991'de 2,2 → 4 km² (Herrick & Hensley 2023). Venera 13: 127 dk.",
+    "Gözlem: Venüs alt kavuşum 23–24.10.2026; sabah göğü Kasım'dan; en büyük batı uzanımı 3.1.2027 (47°). Merkür sabahı 13.11–4.12.2026. Dürbün yalnız Güneş ufuk altındayken."
+  ],
+  "sorular": [
+    {
+      "soru": "Merkür Dünya'dan çok küçük olduğu hâlde yoğunluğu neden neredeyse Dünya'nınki kadardır?",
+      "cevap": "Çünkü içinde orantısız büyük bir metal çekirdek vardır: çekirdeğin yarıçapı gezegen yarıçapının ~%80'i, hacminin yaklaşık yarısıdır. Manto kayaları için modeller yaklaşık 3100–3300 kg/m³ verir; demir çok daha yoğundur, ortalama bu yüzden 5429 kg/m³'e çıkar."
+    },
+    {
+      "soru": "Eylemsizlik momenti çarpanı nedir? Merkür için 0,346, Ay için 0,393 olması ne söyler?",
+      "cevap": "Kütlenin merkezde ne kadar toplandığını gösteren birimsiz bir sayıdır; düzgün bir küre için 0,4'tür. Merkür'ün 0,346'sı ağır malzemenin merkezde büyük bir çekirdekte toplandığını, Ay'ın 0,4'e yakın 0,393'ü ise çekirdeğinin küçük olduğunu söyler."
+    },
+    {
+      "soru": "Merkür'ün yüzeyindeki loblu sarplar nasıl oluşmuştur ve bize ne anlatır?",
+      "cevap": "Çekirdek soğuyup küçüldükçe gezegen büzüştü; kabuk sıkışarak kırıldı ve parçalar birbirinin üstüne bindi (bindirme fayı). Byrne ve ekibi 2014'te 5934 yapıyı haritalayarak yarıçapın son 4 milyar yılda 4,6–7 km küçüldüğünü hesapladı."
+    },
+    {
+      "soru": "Güneş'e en yakın gezegende su buzu nasıl var olabiliyor ve varlığı nasıl gösterildi?",
+      "cevap": "Eksen eğikliği yalnızca 0,034° olduğu için kutup kraterlerinin dibi hiç güneş görmez ve hava olmadığı için ısı taşınmaz. 1991'de radar parlak çökeller buldu; MESSENGER'ın nötron tayfölçeri 2012'de bu bölgelerde neredeyse saf su buzuna uyan hidrojen ölçtü; buzun çoğu koyu bir örtünün altındadır."
+    },
+    {
+      "soru": "Merkür'ün dönüş süresi 58,646 gün, yılı 87,969 gün. Güneş günü kaç gündür? Hesapla.",
+      "cevap": "Aynı yönde dönüş: 1/S = 1/58,646 − 1/87,969 ≈ 0,017052 − 0,011368 = 0,005684; S ≈ 175,9 gün. Bu, iki Merkür yılı ya da üç dönüşe eşittir."
+    },
+    {
+      "soru": "Venüs'ün güneş günü neden yıldız gününden (243 gün) çok daha kısadır?",
+      "cevap": "Venüs dolanma yönünün tersine döner. Bu durumda iki hareket birbirine eklenir: 1/S = 1/243,0226 + 1/224,701 ≈ 0,008565, S ≈ 116,75 gün. Ters dönüş Güneş'i daha çabuk yeniden doğurur."
+    },
+    {
+      "soru": "Venüs'ün gün uzunluğunun 20 dakikaya kadar değişmesinin nedeni nedir?",
+      "cevap": "Margot ve ekibine (2021) göre kalın atmosfer, dönme momentumunu katı gezegenle alıp verir; rüzgârlar gezegeni hafifçe hızlandırıp yavaşlatır. Radar ölçümleri arasında milyonda ~61'lik farklar böyle açıklanır."
+    },
+    {
+      "soru": "Venüs Dünya'dan daha az güneş enerjisi soğurduğu hâlde neden çok daha sıcaktır?",
+      "cevap": "Parlak bulutları ışığın %77'sini geri yansıtır; Venüs metrekare başına ~598 W, Dünya ~961 W soğurur. Ama 92 barlık CO₂ atmosferi yüzeyin yaydığı kızılötesi ısıyı hapseder: kara cisim sıcaklığı 226,6 K iken yüzey 737 K'dir, sera etkisi ~510 K ekler (Dünya'da 34 K)."
+    },
+    {
+      "soru": "Venüs'te D/H oranının Dünya'nın 100–150 katı olması neden su kaybına kanıt sayılır?",
+      "cevap": "Ağır döteryum, sıradan hidrojenden daha zor uzaya kaçar. Gezegen suyunu kaybettikçe geride kalan suda döteryum birikir. Yüksek oran, Venüs'ün geçmişte çok daha fazla suyu olduğunu ve onu uzaya kaybettiğini düşündürür; okyanus olup olmadığı ise açık sorudur."
+    },
+    {
+      "soru": "Maat Mons bulgusu Venüs'te etkin volkanizmayı kesin olarak kanıtlıyor mu? Neden?",
+      "cevap": "Hayır. Magellan görüntülerinde bir baca Şubat–Ekim 1991 arasında 2,2 km²'den ~4 km²'ye büyüdü ve doldu; en iyi açıklama püskürmedir. Ama depremle tetiklenen bir duvar çökmesi de mümkün. Güçlü ama kesin olmayan bir kanıttır; VERITAS ve EnVision yeni radar verileriyle sınayacak."
+    },
+    {
+      "soru": "Venüs yüzeyindeki 92 bar, tatlı suyun yaklaşık kaç metre derinliğine eşittir?",
+      "cevap": "Her metre su ≈ 9800 Pa ekler. Dünya'da yüzeyde 1 bar zaten var; ek 91 bar = 9,1 × 10⁶ Pa. 9,1 × 10⁶ / 9800 ≈ 930 m."
+    },
+    {
+      "soru": "Galileo'nun 1610'da Venüs'ün evrelerini görmesi neden önemliydi?",
+      "cevap": "Ptolemaios'un Dünya merkezli modelinde Venüs hiç Güneş'in arkasına geçmediği için tam dolu bir Venüs görülemezdi. Galileo bütün evreleri gördü; bu, Ptolemaios modelini dışarıda bıraktı ve Güneş merkezli (ve Tycho'nun) modellerle uyumluydu."
+    },
+    {
+      "soru": "Kasım 2026'da İstanbul'dan Venüs'ün hilalini dürbünle görmek istiyorsun. Neye dikkat etmelisin?",
+      "cevap": "Venüs 3 Kasım'dan itibaren sabah göğünde, gün doğmadan önce doğuda. Hilal sabit tutulan dürbünle seçilebilir; dürbünü bir desteğe dayamak işi kolaylaştırır. Dürbünü yalnızca Güneş tamamen ufkun altındayken kullan; Güneş'i bir an bile dürbünle görmek kalıcı göz hasarı yapar."
+    }
+  ],
+  "kaynaklar": [
+    {
+      "ad": "NASA NSSDCA: Mercury Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/mercuryfact.html"
+    },
+    {
+      "ad": "NASA NSSDCA: Venus Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/venusfact.html"
+    },
+    {
+      "ad": "NASA: Mercury lithograph (bilgi kartı)",
+      "url": "https://www.nasa.gov/wp-content/uploads/2009/12/mercury_lithograph.pdf"
+    },
+    {
+      "ad": "NASA: Venus lithograph (bilgi kartı)",
+      "url": "https://www.nasa.gov/sites/default/files/files/Venus_Lithograph.pdf"
+    },
+    {
+      "ad": "EarthSky: Mercury's solid inner core (Genova ve ekibi, 2019)",
+      "url": "https://earthsky.org/space/mystery-solved-mercury-solid-inner-core-messenger/"
+    },
+    {
+      "ad": "EurekAlert: Mercury contracted more than thought (Byrne ve ekibi, 2014)",
+      "url": "https://www.eurekalert.org/news-releases/627608"
+    },
+    {
+      "ad": "Johns Hopkins Hub: MESSENGER water ice at Mercury (2012)",
+      "url": "https://hub.jhu.edu/2012/11/29/messenger-water-mercury"
+    },
+    {
+      "ad": "The Conversation: The more we learn about Mercury, the weirder it seems",
+      "url": "https://theconversation.com/the-more-we-learn-about-mercury-the-weirder-it-seems-55972"
+    },
+    {
+      "ad": "ESA: BepiColombo's arrival at Mercury, latest updates",
+      "url": "https://www.esa.int/Science_Exploration/Space_Science/BepiColombo/Latest_updates_BepiColombo_s_arrival_at_Mercury"
+    },
+    {
+      "ad": "Margot ve ekibi (2021), Spin state and moment of inertia of Venus, Nature Astronomy (ADS)",
+      "url": "https://ui.adsabs.harvard.edu/abs/2021NatAs.tmp...74M"
+    },
+    {
+      "ad": "Wikipedia: Atmosphere of Venus",
+      "url": "https://en.wikipedia.org/wiki/Atmosphere_of_Venus"
+    },
+    {
+      "ad": "NASA JPL: Magellan data reveals volcanic activity on Venus (2023)",
+      "url": "https://www.jpl.nasa.gov/news/nasas-magellan-data-reveals-volcanic-activity-on-venus/"
+    },
+    {
+      "ad": "Space.com: Venera 13",
+      "url": "https://www.space.com/18551-venera-13.html"
+    },
+    {
+      "ad": "Space.com: NASA's decade of Venus exploration may bank on 1 probe (27 Mart 2026)",
+      "url": "https://space.com/space-exploration/missions/nasas-ambitious-decade-of-venus-exploration-may-bank-on-1-probe-not-everything-can-move-forward"
+    },
+    {
+      "ad": "ESA: We're heading for Venus, ESA approves EnVision",
+      "url": "https://www.esa.int/Science_Exploration/Space_Science/We_re_heading_for_Venus_ESA_approves_Envision"
+    },
+    {
+      "ad": "Cambridge Turn Left: Mercury and Venus",
+      "url": "https://www.cambridge.org/turnleft/pages/the_planets/mercury_and_venus"
+    },
+    {
+      "ad": "EarthSky: Venus greatest western elongation",
+      "url": "https://earthsky.org/astronomy-essentials/venus-before-sunrise-greatest-elongation/"
+    },
+    {
+      "ad": "Wikipedia: Moment of inertia factor",
+      "url": "https://en.wikipedia.org/wiki/Moment_of_inertia_factor"
+    }
+  ]
+}

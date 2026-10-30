@@ -1,0 +1,521 @@
+{
+  "id": "d40",
+  "unite": "dev_gezegenler",
+  "yeni": true,
+  "baslik": "Dev Gezegenlerin Uyduları: Buzun Altındaki Dünyalar",
+  "ozet": "Io'nun volkanlarından Europa'nın buz kabuğuna, Ganymede'nin kendi manyetik alanından Callisto'nun değişmeyen kraterlerine, Titan'ın metan göllerinden Enceladus'un gayzerlerine, Mimas'ın genç okyanusundan Miranda'nın yamalı yüzüne ve ters dolanan Triton'a kadar dev gezegenlerin büyük uydularını tanıyacaksın. Bir uydunun içinin yoğunluk, eylemsizlik momenti, manyetik indüksiyon ve sallantı ölçümleriyle nasıl çözüldüğünü, gelgit ısınmasını ve Laplace rezonansını sayılarla göreceksin; İstanbul'dan dürbünle Galileo uydularını ve Titan'ı bulmayı öğreneceksin.",
+  "on_bilgi": [
+    "d3",
+    "d9",
+    "d37",
+    "d38",
+    "d39"
+  ],
+  "bolumler": [
+    {
+      "baslik": "Gezegen kadar ilginç uydular",
+      "paragraflar": [
+        "9. derste uydu sayılarının hızla arttığını gördük: NASA'ya göre Ekim 2026 itibarıyla Jüpiter'in 115, Satürn'ün 293, Uranüs'ün 29, Neptün'ün 16 resmî uydusu var. Ama bu yüzlerce uydunun çoğu birkaç kilometrelik kaya ve buz parçalarıdır. Bu ders, aralarındaki bir avuç büyük dünyayı ele alıyor: Jüpiter'in dört Galileo uydusu, Satürn'ün Titan'ı, Enceladus'u, Mimas'ı ve Iapetus'u, Uranüs'ün Miranda'sı ve Neptün'ün Triton'u. Wikipedia'ya göre Galileo uyduları, Titan ve Triton, Ay'la birlikte, bilinen bütün cüce gezegenlerden büyüktür.",
+        "Uyduları iki aileye ayırmak işe yarar. Düzenli uydular gezegenin ekvator düzlemine yakın, neredeyse dairesel ve gezegenin dönüşüyle aynı yönde dolanır; büyük olasılıkla gezegenle birlikte, çevresindeki bir diskte doğmuşlardır. Düzensiz uydular ise uzak, basık, çok eğik ve çoğu zaman ters yönlü yörüngelerde dolanır. NASA'nın Uranüs uydu tablosunda Francisco'dan dışarıdaki uyduların çoğu ters yönde ve 140° ile 170° arası eğiklikle dolanır; NASA bu dış uyduların büyük olasılıkla yakalanmış asteroitler olduğunu söyler. Yakalanmış uydu, gezegenin yanında doğmayıp sonradan onun çekimine takılmış cisimdir.",
+        "Bu derste her büyük uydu için aynı soruları soracağız: Yüzeyi neye benziyor? İçinde ne var? Bunu nasıl biliyoruz? Ve iç ısısı nereden geliyor? Son sorunun cevabı çoğu zaman gelgittir: 3. derste Ay'ın Dünya'yı nasıl esnettiğini gördün; dev gezegenler uydularını çok daha güçlü esnetir. Bazı uyduların buz kabuklarının altında sıvı su okyanusları olması bu yüzdendir.",
+        "Bir sınır çizelim. Bu okyanusların yaşama elverişli olup olmadığı, Europa'nın ve Enceladus'un neden astrobiyolojinin gözdesi olduğu, Enceladus'taki fosfor ve hidrojen bulguları 18. dersin konusu; burada onları yinelemeyeceğiz. Jüpiter ve Satürn'ün kendisi 37. ve 38. derslerde, Uranüs ve Neptün 39. derste anlatıldı. Bu ders uyduların kendisine, yapısına ve onu nasıl çözdüğümüze odaklanıyor."
+      ],
+      "akilda": "Bu ders büyük uydulara odaklanır: Galileo uyduları, Titan, Enceladus, Mimas, Iapetus, Miranda, Triton. Düzenli uydular gezegenle doğmuştur; düzensiz uydular uzak, eğik, çoğu ters yönlü, büyük olasılıkla yakalanmıştır. Yaşam tartışması 18. derste."
+    },
+    {
+      "baslik": "Bir uydunun içini nasıl görürüz?",
+      "paragraflar": [
+        "Bir uydunun içine sonda indiremeyiz; ama yanından geçen bir uzay aracı onu dört ayrı yoldan 'röntgenler'. Birinci yol yoğunluktur. Aracın yörüngesi uydunun çekimiyle bükülür; radyo sinyalindeki Doppler kaymasından bu bükülme, oradan da uydunun kütlesi çıkar. Kütleyi görüntülerden ölçülen hacme bölünce ortalama yoğunluk elde edilir (9. ders). Wikipedia'ya göre Callisto'nun yoğunluğu buz ile kaya arasında, Io'nunki kaya ile demir arasında bir değerdedir; yani ortalama yoğunluk, uydudaki buz, kaya ve metal oranının kaba bir ölçüsüdür.",
+        "İkinci yol eylemsizlik momenti çarpanıdır (39. ders): kütlenin merkeze ne kadar yığıldığını gösteren, düzgün bir küre için 0,4 olan sayı. Wikipedia'nın tablosuna göre Io için 0,378, Europa için 0,346, Ganymede için 0,3115, Callisto için 0,3549, Titan için 0,341, Enceladus için 0,3305'tir. Bu değerler doğrudan ölçülmemiştir; uçuş verisinden çıkarılan çekim alanı ve uydunun biçimi, uydunun dengede olduğu varsayılarak Darwin–Radau adlı bir ilişkiyle bu sayıya çevrilmiştir. Yani modelin varsayımı sonuca girer.",
+        "Üçüncü yol manyetik indüksiyondur. Jüpiter'in dev manyetik alanı gezegenle birlikte döndüğünden, bir uydunun bulunduğu yerde alan sürekli değişir. Değişen bir alan, iletken bir maddede elektrik akımları doğurur ve bu akımlar kendi ikincil manyetik alanlarını üretir; buna manyetik indüksiyon denir. Khurana ve arkadaşları 1998'de Nature'da, Galileo aracının manyetometresinin Europa ve Callisto çevresinde böyle ikincil alanlar ölçtüğünü bildirdi. Bu akımların akabilmesi için yüzeyin hemen altında elektriği iyi ileten katmanlar gerekir; Khurana ve arkadaşlarına göre en olası açıklama tuzlu sıvı su okyanuslarıdır.",
+        "Dördüncü yol uydunun sallantısını ve esnekliğini ölçmektir. Gezegeninin çekimiyle kilitlenmiş bir uydu, yörüngesinde hafifçe ileri geri sallanır; buna librasyon denir (10. ders). Buz kabuğu kayadan bir sıvı katmanla ayrılmışsa kabuk daha serbest sallanır. Benzer biçimde, uydunun gezegenin çekimiyle ne kadar uzayıp kısaldığı Love sayısı denen bir katsayıyla ölçülür; Love sayısı ne kadar büyükse cisim o kadar esnek, yani içi o kadar akışkandır. Bu derste Enceladus'un ve Mimas'ın okyanuslarının sallantıdan, Titan'ınkinin ise Love sayısından nasıl tartışıldığını göreceksin."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Ganymede ile Callisto aynı malzemeden mi?",
+        "metin": "NSSDCA'ya göre Ganymede'nin kütlesi 1481,9 × 10²⁰ kg, yarıçapı 2631,2 km; Callisto'nunki 1075,9 × 10²⁰ kg ve 2410,3 km. Yoğunluk = kütle / ((4/3) × π × R³). Ganymede: hacim ≈ 4,19 × (2,6312 × 10⁶ m)³ ≈ 7,63 × 10¹⁹ m³; 1,4819 × 10²³ / 7,63 × 10¹⁹ ≈ 1942 kg/m³ = 1,94 g/cm³. Callisto: hacim ≈ 5,87 × 10¹⁹ m³; 1,0759 × 10²³ / 5,87 × 10¹⁹ ≈ 1834 kg/m³ = 1,83 g/cm³. Yoğunluklar yakın, ama eylemsizlik momenti çarpanları farklı: 0,3115 ve 0,3549. Düzgün küre 0,4'e göre: 0,3115 / 0,4 ≈ 0,78; 0,3549 / 0,4 ≈ 0,89. Sonuç: iki uydu kabaca aynı kaya-buz karışımından yapılmış, ama Ganymede'de ağır malzeme merkeze çökmüş, Callisto'da büyük ölçüde karışık kalmış."
+      },
+      "akilda": "Dört araç: yoğunluk (kütle bölü hacim), eylemsizlik momenti çarpanı (0,4'ten küçükse merkezde ağır çekirdek), manyetik indüksiyon (değişen Jüpiter alanında iletken tuzlu su ikincil alan üretir) ve librasyon ya da Love sayısı (esneklik, iç sıvı). Hepsi model varsayımı içerir."
+    },
+    {
+      "baslik": "Laplace rezonansı ve gelgit ısınması",
+      "paragraflar": [
+        "Jüpiter'in iç üç Galileo uydusu birbirine bir saat mekanizması gibi bağlıdır. NASA'ya göre Ganymede Jüpiter'i bir kez dolanırken Europa iki, Io dört kez dolanır. Bu 1:2:4 düzenine Laplace rezonansı denir. Yörünge rezonansı, iki ya da daha fazla cismin dolanma sürelerinin basit tam sayı oranlarında olmasıdır; cisimler aynı göreli konumlara düzenli aralıklarla gelir ve birbirlerine hep aynı yerlerde küçük çekim dürtüleri verir.",
+        "Bu dürtüler önemlidir. NASA'nın Ganymede sayfasına göre zamanla çoğu uydunun yörüngesi daireselleşir, ama rezonans bu üç uydunun yörüngelerini hafifçe eliptik kalmaya zorlar. Eliptik yörüngede Io bazen Jüpiter'e yaklaşır, bazen uzaklaşır; Jüpiter'in gelgit çekimi de buna göre güçlenip zayıflar. Uydu bir stres topu gibi sürekli sıkışıp gevşer. Wikipedia'ya göre bu yüzden Io'nun gelgit kabarıklığı yörünge boyunca 100 metreye kadar değişir. Juno görevinin yürütücüsü Scott Bolton'un Live Science'a aktarılan sözleriyle bu sürekli esneme muazzam bir ısı üretir ve Io'nun içinin bazı kısımlarını eritir; buna gelgit ısınması denir (18. derste Europa için gördün).",
+        "Gelgit kuvvetinin uzaklığın küpüyle ters orantılı olduğunu 3. derste öğrendin; uygulamanın Deneyler sekmesindeki gelgit modeli de yüzeydeki gelgit ivmesini 2GMR/d³ ile hesaplar. Bu yüzden içteki uydu en çok ısınır. Wikipedia'nın Galileo uyduları maddesi bu düzeni güzel özetler: uydular Jüpiter'e yaklaştıkça içleri daha sıcaktır. Callisto rezonansın dışında olduğu için kayda değer gelgit ısınması yaşamaz; Ganymede'de geçmişte kısmen erimiş katmanların izi, Europa'da daha ince ve kolay kırılan bir buz kabuğu, Io'da ise etkin volkanlar vardır.",
+        "Rezonansın sonsuza dek bu hâlde kalması da gerekmez. Wikipedia'ya göre gelgit etkileşimi sürüyor ve Lari ile arkadaşlarının 2020 modeline göre Callisto da yaklaşık 1,5 milyar yıl içinde rezonansa yakalanarak 1:2:4:8 zincirini tamamlayabilir. Bu tür sayılar model sonuçlarıdır; başka varsayımlar başka süreler verebilir. Kesin olan şu: bugün gördüğümüz volkanlar ve okyanuslar, yörüngelerin bu ince ayarına bağlıdır."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Rezonansı sayılarla doğrula, gelgiti kıyasla",
+        "metin": "NSSDCA'ya göre dönemler: Io 1,769138 gün, Europa 3,551181, Ganymede 7,154553. Oranlar: 3,551181 / 1,769138 ≈ 2,007; 7,154553 / 3,551181 ≈ 2,015; 7,154553 / 1,769138 ≈ 4,04. Neredeyse tam 1:2:4. Gelgit: yüzeydeki gelgit ivmesi 2GMR/d³ ile orantılı. Jüpiter'in Io'daki etkisini Ay'ın Dünya'daki etkisiyle kıyasla: kütle oranı 1898,13 × 10²⁴ / 73,5 × 10²¹ ≈ 25.800; yarıçap oranı 1821,5 / 6371 ≈ 0,286; uzaklık oranının küpü (384.000 / 421.800)³ ≈ 0,755. Çarpım: 25.800 × 0,286 × 0,755 ≈ 5570. Sonuç: dönemler 1:2:4 oranındadır ve Jüpiter'in Io'yu esneten gelgit ivmesi, Ay'ın Dünya'yı esnetenin yaklaşık 5600 katıdır."
+      },
+      "akilda": "Laplace rezonansı: Io 4, Europa 2, Ganymede 1 tur (1:2:4). Rezonans yörüngeleri eliptik tutar; Jüpiter'in değişen gelgit çekimi uyduları sıkıştırıp ısıtır (gelgit ısınması). İçteki en sıcak: Io volkanik, Europa'da okyanus, Callisto rezonans dışı ve soğuk."
+    },
+    {
+      "baslik": "Io: volkanlarla kaplı dünya",
+      "paragraflar": [
+        "Io, Ay'dan biraz büyüktür: NSSDCA'ya göre çapı 3643 km, yoğunluğu 3,53 g/cm³'tür. Jüpiter'e 421.800 km uzaklıkta 1,77 günde bir dolanır. Wikipedia'nın Io volkanizması maddesine göre Voyager 1'in 5 Mart 1979'daki geçişinden önce Io'nun Ay gibi ölü bir dünya olduğu düşünülüyordu. Bu geçişten kısa süre önce Stan Peale, Patrick Cassen ve R. T. Reynolds Science dergisinde, Jüpiter'in Io'nun hafif basık yörüngesi boyunca değişen gelgit çekiminin ürettiği ısıya dayanarak volkanik olarak değişmiş bir yüzey öngören bir makale yayımladı. Hesaplarına göre bu ısı, yalnızca radyoaktif bozunmadan gelecek ısının en az üç katıydı. Öngörü tuttu: volkanik etkinliği 1979'da Voyager 1'in görüntülerinde Linda Morabito keşfetti.",
+        "Io bugün Güneş Sistemi'nin volkanik bakımdan en etkin cismidir. Wikipedia'ya göre uzay araçları ve yer teleskopları 150'den fazla etkin volkan saptadı; 2024 itibarıyla bu gözlemlere dayanarak 400'e kadar volkan olduğu tahmin ediliyor. Lavların çoğu bazalttır, Hawaii'deki Kilauea gibi kalkan volkanlarınkine benzer; ama 1600 K'e kadar çıkan püskürme sıcaklıkları da ölçüldü, bunlar daha sıcak silikat lavlarla açıklanır. Bazı püskürmeler kükürt, kükürt dioksit gazı ve kül benzeri malzemeyi 500 km'ye kadar yükseğe fırlatarak dev şemsiye biçimli bulutlar oluşturur. Io'nun çok ince atmosferi de çoğunlukla kükürt dioksittir.",
+        "Io'nun içinden yüzeyine akan ısı muazzamdır. Wikipedia'ya göre toplam ısı akışı 0,6 ile 1,6 × 10¹⁴ W arasındadır. Dünya'da iç ısının çoğu kabuktan yavaşça iletilerek çıkar; Io'da ise doğrudan volkanlardan dışarı atılır. Volkanların en ünlüsü Loki Patera'dır. Universe Today'in aktardığına göre Juno aracı Aralık 2023 ve Şubat 2024'teki iki yakın geçişte Io'nun 1500 km yakınına indi ve yaklaşık 200 km uzunluğundaki bu lav gölünün, ortasında adalar bulunan, yer yer cam kadar pürüzsüz bir yüzeyi olduğunu gösterdi. Lav gölü, bir çukurun içinde yüzeyi açıkta duran erimiş kaya birikintisidir. Wikipedia'ya göre Loki'nin ortalama ısı çıkışı yaklaşık 10 terawatt'tır ve en az 20 küçük ada 1979'dan beri yerinden kıpırdamamıştır.",
+        "Peki bu volkanları besleyen nedir? Uzun süre Io'nun kabuğunun altında, bütün uyduyu saran sığ bir magma okyanusu olduğu düşünüldü. Live Science'ın aktardığına göre Juno'nun iki yakın geçişindeki çekim ölçümleri bu soruyu sınadı: küresel bir magma okyanusu olsaydı Io'nun gelgitle şekil değiştirmesi çok daha büyük olurdu. Ryan Park'ın yönettiği ve 12 Aralık 2024'te Nature'da yayımlanan çalışma, Io'nun içinin büyük ölçüde katı olduğunu ve her volkanın kendi yeraltı magma odasından beslendiğini öne sürdü. Bu, 'gelgit ısınması her zaman küresel bir okyanus doğurur' varsayımını sarstı; sonuç Europa ve Enceladus'un yorumunu da etkiler.",
+        "Io'nun bileşimi de komşularından farklıdır. Wikipedia'nın Galileo uyduları maddesine göre öbür dış Güneş Sistemi uydularının çoğunun aksine kalın bir buz örtüsü yoktur; esas olarak erimiş demir ya da demir sülfür çekirdeği saran silikat kayadan yapılmıştır. Io'nun suyunun, gelgit ısısıyla çok önceden kaynayıp uzaya kaçtığı düşünülür. 0,378'lik eylemsizlik momenti çarpanı da yoğun bir çekirdeğe işaret eder. Wikipedia'ya göre Io Dünya, Venüs, Enceladus ve Triton'la birlikte bugün volkanik ya da buz volkanik olarak etkin olduğu bilinen beş dünyadan biridir."
+      ],
+      "akilda": "Io: 3643 km, 3,53 g/cm³, buzsuz silikat dünya. Volkanizmayı Peale ve arkadaşları 1979'da öngördü, Morabito Voyager 1 görüntülerinde buldu. 150+ etkin volkan (400'e kadar tahmin), 1600 K lav, 500 km bulutlar, Loki lav gölü. Juno 2024: küresel sığ magma okyanusu yok, her volkanın kendi odası var."
+    },
+    {
+      "baslik": "Europa: ince sayılan buz kabuğu ne kadar kalın?",
+      "paragraflar": [
+        "Europa'nın yeraltı okyanusunu ve Europa Clipper görevini 18. derste gördün: çapı 3122 km, okyanusunda Dünya okyanuslarının toplamının iki katından fazla su olduğu düşünülüyor, Clipper Nisan 2030'da Jüpiter yörüngesine girecek ve uydunun yanından 49 kez geçecek. Burada bir adım geri çekilip şunu soralım: o okyanusun varlığını ve buz kabuğunun kalınlığını nereden biliyoruz?",
+        "İlk ipucu yoğunluk ve iç yapıdır. NSSDCA'ya göre Europa'nın yoğunluğu 3,01 g/cm³, yani çoğunlukla kayadır; eylemsizlik momenti çarpanı 0,346'dır. NASA'ya göre Europa'nın bir demir çekirdeği, kayalık bir mantosu ve tuzlu su okyanusu olduğu düşünülür. Wikipedia'ya göre kayalık mantoyu yaklaşık 100 km kalınlığında bir su katmanı sarar; üstü buz, altının sıvı olduğu tahmin edilir. Yüzeyde çok az krater vardır; bu, yüzeyin genç olduğunu ve sürekli yenilendiğini gösterir.",
+        "İkinci ipucu manyetiktir. Khurana ve arkadaşlarının 1998'de Nature'da yayımladığı çalışmaya göre Galileo'nun manyetometresi Europa'nın kendi kalıcı bir manyetik alanı olmadığını, ama Jüpiter'in değişen alanına yanıt olarak indüklenmiş bir alan ürettiğini gösterdi. Bu, yüzeyin hemen altında ciddi bir elektrik iletkenliği olan katman gerektirir; en iyi açıklama tuzlu sıvı sudur. NASA teknik rapor sunucusundaki bir özete göre Galileo'nun ölçtüğü indüksiyon, tuzluluğu Dünya okyanuslarına benzeyen ve kalınlığı yaklaşık 6 ile 100 km arasında olan küresel okyanuslarla açıklanabilir.",
+        "Kabuğun kalınlığı ise uzun süre tartışmalıydı. SwRI'nın Ocak 2026 duyurusuna göre önceki modeller kabuk için 1 km'den inceden onlarca kilometreye kadar değerler veriyordu. Juno aracı 29 Eylül 2022'de Europa'nın yaklaşık 360 km yakınından geçti ve mikrodalga radyometresiyle yüzeyin yarısı kadar bir bölgede buzun farklı derinliklerdeki sıcaklığını ölçtü. 17 Aralık 2025'te Nature Astronomy'de yayımlanan sonuca göre gözlenen bölgede soğuk, sert, ısıyı iletimle taşıyan dış buz katmanı ortalama yaklaşık 29 km kalınlığındadır. Altında daha sıcak, akan bir buz katmanı varsa toplam kalınlık daha da fazladır; buz biraz tuz içeriyorsa tahmin yaklaşık 5 km azalır.",
+        "Juno aynı ölçümle yüzeye yakın buzda en fazla birkaç inç, yani birkaç santimetre büyüklüğünde çatlak, gözenek ve boşluklar buldu; bunlar yüzlerce fit, yani onlarca metre derine kadar uzanıyor gibi görünüyor. Bu, yüzeyle okyanus arasındaki madde alışverişi için önemlidir: kalın bir kabuk, oksijen ve besinlerin okyanusa ulaşmak için daha uzun bir yol izlemesi demektir. Europa'dan uzaya su püskürdüğü de öne sürülmüştü, ama Wikipedia'ya göre yeni bir çalışma herhangi bir püskürmenin varlığını şüpheye düşürdü. Bu soruların kesin cevabını Europa Clipper ile ESA'nın Juice aracından bekliyoruz."
+      ],
+      "akilda": "Europa: 3,01 g/cm³, demir çekirdek + kaya manto + ~100 km su katmanı. Galileo manyetometresi indüklenmiş alan ölçtü (Khurana 1998) → tuzlu okyanus. Juno 2022 geçişi: gözlenen bölgede sert dış buz ~29 km (Nature Astronomy, Aralık 2025). Püskürmeler tartışmalı."
+    },
+    {
+      "baslik": "Ganymede: kendi mıknatısı olan uydu",
+      "paragraflar": [
+        "Ganymede Güneş Sistemi'nin en büyük uydusudur. NSSDCA'ya göre çapı 5262 km, Merkür'ünkinden (4879 km) büyüktür; ama kütlesi Merkür'ünkinin yalnızca yaklaşık yüzde 45'i kadardır, çünkü yoğunluğu 1,94 g/cm³'tür ve büyük ölçüde buz içerir. NASA'ya göre Galileo Galilei onu 7 Ocak 1610'da buldu. Jüpiter'den yaklaşık 1,07 milyon km uzaklıkta 7,155 günde bir dolanır.",
+        "Ganymede'nin içi Güneş Sistemi'ndeki en düzgün ayrışmış yapılardan biridir. Wikipedia'ya göre 0,3115'lik eylemsizlik momenti çarpanı, katı cisimler arasında en düşük değerdir; bunun nedeni tamamen farklılaşmış bir iç yapı ve bol miktarda hafif su buzudur. Farklılaşma, bir cismin erken dönemde ısınıp yumuşaması sonucu ağır malzemenin merkeze batması, hafif malzemenin yukarıda kalmasıdır. Ganymede'de bu süreç, Laplace rezonansının geçmişteki gelgit ısınmasıyla da desteklenmiş olabilir. Sonuç: bir metal çekirdek, kayalık bir manto ve kalın buz-su katmanları.",
+        "Ganymede'nin asıl ayrıcalığı manyetiktir. Sci.News'in aktardığı NASA çalışmasına göre Galileo aracı 27 Haziran 1996'da Ganymede'nin yanından ilk kez geçti ve onun kendi içinde manyetik alan üreten bilinen tek uydu olduğunu buldu. Bu alan, Dünya'daki gibi Ganymede'nin çevresinde küçük bir manyetosfer kurar; ama bu kabarcık Jüpiter'in çok daha büyük manyetosferinin içinde durur. Ganymede'nin kutup bölgelerinde kutup ışıkları oluşur.",
+        "Bu kutup ışıkları bir okyanusu ele verdi. BBC'nin aktardığına göre Joachim Saur'un ekibi 2015'te Hubble'la Ganymede'nin kutup ışıklarının Jüpiter'in değişen alanıyla nasıl ileri geri salındığını izledi. Okyanus olmasaydı salınım 6° olmalıydı; ölçülen yalnızca 2°'ydi. Tuzlu su Jüpiter'in alanına karşı ikincil bir alan üreterek salınımı sönümlüyordu. Saur'a göre okyanus 330 km'den derin olamaz; veriler örneğin litresinde yaklaşık 5 gram tuz bulunan 100 km kalınlığında bir okyanusla da, 10 kat daha tuzlu 10 km'lik bir okyanusla da uyumludur.",
+        "NASA'ya göre Ganymede'nin okyanusunun yaklaşık 100 km kalınlığında olduğu ve buzdan oluşan yaklaşık 150 km'lik bir kabuğun altında bulunduğu tahmin edilir; içinde Dünya yüzeyindeki bütün sudan fazla su olabilir. Wikipedia ise okyanusun yaklaşık 200 km derinlikte, buz katmanları arasında sıkışmış olduğunu yazar; iki kaynağın derinlik ifadeleri kabaca uyumludur. NASA'ya göre Juno aracı 7 Haziran 2021'deki yakın geçişte yüzeyde mineral tuzlar ve organik bileşikler gözledi; bulgu 30 Ekim 2023'te Nature Astronomy'de yayımlandı. Yüzey iki tür arazinin karışımıdır: yoğun kraterli koyu bölgeler ve oluk ve sırtlarla dolu daha genç, açık renkli bölgeler."
+      ],
+      "akilda": "Ganymede: en büyük uydu (5262 km, Merkür'den büyük ama kütlesi ~%45'i). Eylemsizlik momenti çarpanı 0,3115, katı cisimlerin en düşüğü: tam farklılaşmış. Kendi manyetik alanı olan tek uydu (Galileo, 27 Haziran 1996). Hubble 2015: kutup ışıkları 6° yerine 2° salınıyor → tuzlu okyanus (~100 km, ~150 km buzun altında)."
+    },
+    {
+      "baslik": "Callisto: değişmeden kalmış kraterli dünya",
+      "paragraflar": [
+        "Callisto dört Galileo uydusunun en dıştakidir. NSSDCA'ya göre çapı 4821 km, yani Merkür'den biraz küçüktür; yoğunluğu 1,83 g/cm³ ile Galileo uydularının en düşüğüdür. Jüpiter'den 1,88 milyon km uzakta 16,7 günde bir dolanır. Wikipedia'ya göre kabaca eşit miktarda kaya ve buzdan oluşur. NASA'nın Ganymede sayfası Callisto'yu Güneş Sistemi'nin en yoğun kraterli cismi olarak anar; yüzeyindeki en büyük yapı, Wikipedia'ya göre yaklaşık 3000 km genişliğindeki Valhalla çarpma havzasıdır.",
+        "Callisto'nun yüzü, Güneş Sistemi'nin erken dönemindeki bombardımanın neredeyse bozulmamış bir kaydıdır. Bunun nedeni Laplace rezonansının dışında kalmasıdır: NASA'ya göre Callisto, uyduların erken tarihinde Jüpiter'e yeterince yakın olmadığı için rezonansa çekilmemiştir ve Wikipedia'ya göre kayda değer gelgit ısınması yaşamaz. Isınmayan bir uyduda yüzeyi yenileyecek bir iç etkinlik de olmaz; kraterler silinmeden birikir. Wikipedia yüzeyi eski, yoğun kraterli ve değişmemiş diye tanımlar.",
+        "İç yapısı da bunu yansıtır. Wikipedia'ya göre Callisto'nun dönüşü, yoğunluğunun içinde neredeyse eşit dağıldığını gösterir; yani belirgin bir kaya ya da metal çekirdeği yoktur, homojen bir kaya-buz karışımıdır. 0,3549'luk eylemsizlik momenti çarpanı Ganymede'ninkinden belirgin biçimde yüksektir, ama düzgün kürenin 0,4'ünden yine düşüktür; Wikipedia'nın ifadesiyle Callisto, Ganymede'den daha az farklılaşmıştır. Wikipedia'ya göre bu, belki de bütün Galileo uydularının başlangıçtaki yapısıydı; öbür üçü sonradan ısınarak katmanlaştı.",
+        "Şaşırtıcı biçimde Callisto'nun da bir okyanusu olabilir. Khurana ve arkadaşlarının 1998 çalışmasında Galileo'nun Europa'nın yanında Callisto çevresinde de indüklenmiş manyetik alan ölçtüğünü gördük. Wikipedia'ya göre Callisto'nun yüzeyden 300 km'den daha az derinlikte sıvı su okyanusu barındırabileceği öne sürüldü; ama bunun Europa'dakinden daha az olası bir yaşam ortamı olduğu düşünülür. Isınmayan bir uyduda böyle bir okyanusun nasıl sıvı kalabildiği açık bir sorudur.",
+        "Callisto'nun bir pratik önemi de var. Wikipedia'ya göre Jüpiter'in manyetik alanının yoğun radyasyonundan en uzak Galileo uydusu olduğu için, Jüpiter sistemine gelecekte insanlı bir üs kurulacaksa uzun zamandır en uygun yer olarak görülür. Io'nun yüzeyinde ise radyasyon ve manyetik alan o kadar güçlüdür ki bir iniş aracı Venüs'e inen Sovyet Venera araçları gibi son derece dayanıklı olmalıdır."
+      ],
+      "akilda": "Callisto: 4821 km, 1,83 g/cm³, kaya ve buzun yarı yarıya karışımı. Rezonans dışı, gelgit ısınması yok → Güneş Sistemi'nin en kraterli yüzeyi (Valhalla ~3000 km). Eylemsizlik çarpanı 0,3549: kısmen farklılaşmış. İndüklenmiş alan bir okyanusa işaret edebilir (<300 km derinde)."
+    },
+    {
+      "baslik": "Titan: kalın hava ve metan gölleri",
+      "paragraflar": [
+        "Satürn'ün en büyük uydusu Titan'ı, NASA'ya göre Hollandalı gökbilimci Christiaan Huygens 25 Mart 1655'te buldu. Yarıçapı yaklaşık 2575 km'dir; NASA'ya göre Ganymede'den yalnızca yüzde 2 küçüktür ve Merkür gezegeninden büyüktür. Satürn'den 1,22 milyon km uzakta 15 gün 22 saatte bir dolanır. ESA'ya göre yoğunluğu suyunkinin 1,88 katıdır; bu değer Ganymede ve Callisto'nunkine yakındır.",
+        "Titan'ı eşsiz kılan atmosferidir. NASA'ya göre Güneş Sistemi'nde yoğun atmosferi olan tek uydudur; havası Dünya'nınki gibi büyük ölçüde azottur ve az miktarda metan içerir. ESA'ya göre yüzeydeki basınç 1500 milibar, yani Dünya'dakinin 1,5 katıdır; sıcaklık 94 K, yaklaşık −180 °C'dir. Altın renkli bir pus yüzeyi tamamen gizler. Bu soğukta su buzu kaya gibi sertleşir ve Titan'ın ana kayasını oluşturur.",
+        "Titan aynı zamanda yüzeyinde sıvı bulunan, Dünya dışındaki bilinen tek yerdir. NASA'ya göre bulutlar, yağmur, ırmaklar, göller ve denizler vardır; ama sıvı su değil, metan ve etandır. Bu döngü Dünya'daki su döngüsüne benzer: sıvı buluttan yağar, yüzeyde akar, gölleri doldurur, yeniden buharlaşır. Bir bilmece de var: NASA'ya göre güneş ışığı atmosferdeki metanı sürekli parçaladığı için bir kaynağın onu yenilemesi gerekir; yoksa metan zamanla tükenirdi. Bu kaynağın, lav yerine soğuk su püskürten buz volkanları olabileceği düşünülüyor, ama emin değiliz. Bu tür etkinliğe kriyovolkanizma denir.",
+        "Titan'a inen tek araç ESA'nın Huygens sondasıdır. Wikipedia'ya göre Cassini sondayı 25 Aralık 2004'te serbest bıraktı; Huygens 14 Ocak 2005'te atmosfere girdi ve iki buçuk saatlik bir inişten sonra katı zemine kondu. Yörünge aracını aktarıcı olarak kullanarak yaklaşık 90 dakika veri gönderdi; bu, dış Güneş Sistemi'ndeki ilk ve Ay dışında bir uyduya yapılan ilk iniştir. Cassini iniş sırasında çekilen görüntülerin 350'sini aktardı; bir iletişim kanalındaki arıza yüzünden 350 görüntü daha kayboldu.",
+        "Titan'ın mevsimleri Satürn'ünkilerle aynı takvime bağlıdır. NASA'ya göre Satürn'ün ekseni Dünya'nınki gibi eğiktir ve Titan Satürn'ün ekvator düzlemine yakın dolanır; bu yüzden Titan'da her mevsim yedi Dünya yılından uzun sürer ve bir yıl 29 Dünya yılıdır. Titan'ı uçarak keşfedecek NASA'nın Dragonfly aracını 18. derste gördün: Temmuz 2028'de fırlatılması, 2034'te varması planlanıyor. Yoğun hava ve zayıf çekim, aşağıdaki örnekte göreceğin gibi, Titan'ı uçmak için elverişli bir yer yapar."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Titan'da bir metrekarenin üstünde ne kadar hava var?",
+        "metin": "Yüzey basıncı, bir metrekarenin üstündeki hava sütununun ağırlığıdır: basınç = kütle × g / alan, yani metrekare başına kütle = P / g. Titan: P = 1500 milibar = 150.000 Pa (ESA), g = 1,35 m/s² (NSSDCA). 150.000 / 1,35 ≈ 111.000 kg. Dünya: P = 1014 milibar = 101.400 Pa, g = 9,80 m/s² (9. ders). 101.400 / 9,80 ≈ 10.350 kg. Oran: 111.000 / 10.350 ≈ 10,7. Sonuç: Titan'da her metrekarenin üstünde Dünya'dakinin yaklaşık 11 katı kütlede gaz vardır; basınç yalnızca 1,5 kat çünkü çekim çok zayıftır. Bu kalın hava, Dragonfly gibi bir uçan aracın pervanelerine bol tutunma sağlar."
+      },
+      "akilda": "Titan: Huygens 1655'te buldu; Ganymede'den %2 küçük, Merkür'den büyük. Yoğun azot atmosferi (1,5 bar, 94 K), metan-etan yağmuru, ırmak ve göller. Metanın kaynağı bilinmiyor (kriyovolkanizma adayı). Huygens 14 Ocak 2005'te indi, ~90 dk veri gönderdi."
+    },
+    {
+      "baslik": "Titan'ın içi: okyanus mu, çamur mu?",
+      "paragraflar": [
+        "Titan'ın kalın buzunun altında ne var? Uzun yıllar cevap 'tuzlu bir okyanus' idi. NASA'nın Titan sayfasına göre Cassini'nin pek çok çekim ölçümü bir yeraltı su okyanusuna işaret ediyordu; Huygens sondasının inişi sırasında ölçtüğü radyo sinyalleri de yüzeyin 55 ile 80 km altında bir okyanusu güçlü biçimde düşündürüyordu. NASA'nın aynı sayfadaki modelinde Titan beş katmanlıdır: yaklaşık 4000 km çapında su içeren kayadan bir çekirdek, onu saran ve yalnızca çok yüksek basınçta oluşan özel bir buz türü, bunun üstünde tuzlu sıvı su ve en üstte buz kabuk.",
+        "Bu sonuç, Titan'ın Satürn'ün çekimiyle ne kadar esnediğinden çıkıyordu. Physics Today'in anlatımına göre Titan Satürn çevresindeki basık yörüngesinde dolanırken gezegene uzaklığı değiştikçe uzayıp kısalır; Cassini'nin radyo sinyallerindeki Doppler kaymalarından bu esneme ölçüldü ve 2008'den itibaren bu kadar esnemenin ancak içeride sıvı bir okyanus varsa mümkün olduğu savunuldu. Esneklik Love sayısıyla ölçülür. Ama bazı analizler yüksek, bazıları düşük Love sayısı buluyordu ve hiçbiri iç sürtünmeyle ne kadar enerji kaybolduğunu ayrı ölçemiyordu.",
+        "Flavio Petricca ve arkadaşları Cassini verisini modern yöntemlerle yeniden işledi. ScienceDaily'nin aktardığı Washington Üniversitesi duyurusuna ve Physics Today'e göre 17 Aralık 2025'te Nature'da yayımlanan sonuçta Love sayısı yine büyük çıktı; ama yeni bir şey ölçüldü: Titan'ın biçim değişikliği Satürn'ün en güçlü çekiminin yaklaşık 15 saat gerisinden geliyordu. Bu gecikme, içerideki malzemenin bal gibi yapışkan olduğunu ve esnerken çok enerji harcadığını gösterir. Harcanan enerji, içeride küresel bir sıvı okyanus olsaydı beklenenden çok fazlaydı.",
+        "Ekibin modeline göre Titan'ın 150 km'den kalın buz kabuğunun altında açık bir okyanus değil, sulu kaya, yarı erimiş buz ve erimiş su ceplerinden oluşan, yavaşça çalkalanan çamursu bir karışım vardır. Physics Today'e göre bütün bu ceplerdeki sıvı suyun toplam hacmi Atlas Okyanusu kadar olabilir; araştırmacılar böyle bir ortamın yaşam açısından açık bir okyanustan daha elverişli bile olabileceğini söylüyor. Bu iç yapının nasıl oluştuğu henüz anlaşılmadı; olasılıklardan biri, son 100 milyon yılda bir çarpışmanın ya da başka bir olayın Titan'ın yörüngesini değiştirmiş olmasıdır.",
+        "Burada bilimin nasıl çalıştığını gör: aynı uzay aracının aynı verisi, yeni bir işleme yöntemi ve yeni bir ölçütle farklı bir sonuca götürdü. NASA'nın Titan sayfası bugün hâlâ okyanustan söz ediyor; 2025 çalışması ise bunu sorguluyor. Hangisinin doğru olduğu henüz kesin değil. Physics Today'e göre Juice ve Europa Clipper 2030'larda Jüpiter'in buzlu uyduları için benzer çekim verisi toplayacak; Titan'da ise Dragonfly'ın, Physics Today'e göre, yüzeyde buz depremlerini algılamaya çalışması planlanıyor; altta bir okyanus varsa bu sarsıntılar sönümlenirdi. Titan için Wikipedia'nın verdiği 0,341'lik eylemsizlik momenti çarpanı da bu tartışmada kullanılan girdilerden biridir."
+      ],
+      "akilda": "Titan'ın içi tartışmalı: Cassini'nin esneme ölçümleri (büyük Love sayısı) ve Huygens radyo verisi okyanus düşündürdü. Petricca ve ark. (Nature, Aralık 2025): ~15 saatlik gecikme ve güçlü enerji kaybı → küresel okyanus yerine 150 km+ buzun altında çamursu katman ve su cepleri. Kesin değil."
+    },
+    {
+      "baslik": "Enceladus: gayzerli küçük dünya",
+      "paragraflar": [
+        "Enceladus küçüktür: NSSDCA'ya göre boyutları 257 × 251 × 248 km yarıçap, yani çapı yaklaşık 500 km, yoğunluğu 1,61 g/cm³'tür. NASA'ya göre onu William Herschel 1789'da buldu. Satürn'e 238.000 km uzaklıkta 1,37 günde bir dolanır. Bu kadar küçük bir buz topunun soğuyup donmuş olması beklenirdi; oysa Wikipedia'ya göre bugün volkanik ya da buz volkanik olarak etkin olduğu bilinen beş dünyadan biridir.",
+        "Wikipedia'nın Cassini–Huygens maddesine göre Cassini 2005'teki ilk iki yakın geçişinde Enceladus'un çevresinde manyetik alanı saptıran ince bir atmosfer fark etti ve güney kutbundan su buzu püskürten gayzerler gözledi. Gayzer, yeraltındaki suyun ya da buharın basınçla yüzeyden yukarı fışkırmasıdır. 12 Mart 2008'de Cassini yüzeyin 50 km yakınından geçerek bu püskürmelerin içinden uçtu ve kütle spektrometresiyle su, karbondioksit ve çeşitli hidrokarbonlar saptadı. Bu püskürmelerin Satürn'ün E halkasını beslediğini 18. derste gördün.",
+        "Püskürmeler rastgele yerlerden çıkmaz. NASA/JPL'nin 2014 duyurusuna göre Cassini'nin kameraları yaklaşık yedi yıl boyunca güney kutup bölgesini taradı ve 101 ayrı gayzer haritaladı; hepsi kaplan çizgileri denen dört belirgin çatlaktan birinden fışkırıyordu. Kaplan çizgileri, Enceladus'un güney kutup bölgesindeki dört belirgin çatlağa verilen addır. Her gayzerin yerinde yalnızca birkaç on metre genişliğinde küçük bir sıcak nokta vardı. Carolyn Porco'nun ekibi bu sıcak noktaların gayzerleri doğurmadığını, tersine gayzerlerden çıkan buharın çatlak duvarlarında yoğunlaşarak onları ısıttığını gösterdi: ısı gayzerin nedeni değil, sonucuydu.",
+        "Peki su nereden geliyor? Önce yalnızca güney kutbunun altında bölgesel bir deniz olduğu düşünüldü. Cornell Üniversitesi'nin duyurusuna göre Peter Thomas'ın ekibi, Cassini'nin yedi yılı aşkın görüntülerinde yaklaşık 5800 yüzey noktasını elle işaretleyerek Enceladus'un sallantısını ölçtü. Sallantı yaklaşık 0,1° idi; buz kabuk kayalık çekirdeğe sıkıca bağlı olsaydı bundan çok daha küçük olmalıydı. Sonuç, Eylül 2015'te Icarus'ta yayımlandı: kabuğu çekirdekten ayıran küresel bir sıvı katman, yani küresel bir okyanus vardır.",
+        "Enceladus'un okyanusu kendi suyunu uzaya püskürttüğü için Cassini onu yüzeye inmeden, püskürmenin içinden geçerek örnekleyebildi. Wikipedia'ya göre Enceladus'un eylemsizlik momenti çarpanı 0,3305'tir; yani kayalık çekirdeği belirgin biçimde ayrışmıştır. Okyanustaki kimya, hidrojen ve fosfat bulguları ile bunların yaşam açısından anlamı 18. dersin konusudur."
+      ],
+      "ornek": {
+        "baslik": "Örnek: 0,1°'lik sallantı yüzeyde kaç metre eder?",
+        "metin": "Bir küre ekseni çevresinde küçük bir açıyla dönerse ekvatordaki bir nokta, çevrenin o açıya düşen payı kadar yer değiştirir: yay uzunluğu = 2π × R × (açı / 360°). Enceladus'un ortalama yarıçapı yaklaşık 252 km (NSSDCA: 257 × 251 × 248). Hesap: 2 × 3,1416 × 252 × (0,1 / 360) ≈ 1583 × 0,000278 ≈ 0,44 km. Sonuç: yaklaşık 0,1°'lik sallantı, ekvatordaki bir noktanın yaklaşık 440 metre ileri geri gitmesi demektir. Thomas'ın ekibi bunu yüzlerce kilometre uzaktan çekilmiş fotoğraflarda binlerce noktayı izleyerek ölçtü."
+      },
+      "akilda": "Enceladus: ~500 km çap, 1,61 g/cm³. Cassini 2005'te güney kutbunda gayzerleri buldu; 2008'de içinden geçip su, CO₂, hidrokarbon ölçtü. 101 gayzer dört kaplan çizgisinden fışkırır. ~0,1°'lik sallantı → küresel okyanus (Thomas ve ark., 2015). Ayrıntılı kimya 18. derste."
+    },
+    {
+      "baslik": "Mimas ve Iapetus: Satürn'ün iki tuhafı",
+      "paragraflar": [
+        "Mimas Satürn'ün büyük uydularının en içtekidir. NASA'ya göre onu da Herschel 1789'da buldu; NSSDCA'ya göre yoğunluğu 1,15 g/cm³'tür, yani neredeyse tamamen buzdur. Yüzündeki dev Herschel kraterinin onu Yıldız Savaşları filmindeki Ölüm Yıldızı'na benzettiği sık söylenir; National Geographic'e göre Dünya'da aynı oranda bir krater Kanada'dan geniş olurdu. Kraterlerle kaplı, sessiz görünen bu küçük uydunun içi ise 2024'te sürpriz yaptı.",
+        "National Geographic'in aktardığına göre Paris Gözlemevi'nden Valéry Lainey'nin ekibi 7 Şubat 2024'te Nature'da, Cassini'nin ölçtüğü sallantının Mimas'ın yörüngesini nasıl etkilediğini inceleyerek uydunun yüzeyinin altında küresel bir okyanus bulunduğunu gösterdi. Aynı ekip bu fikri 2014'te Science'ta önermişti, ama yüzeyde hiçbir iz olmadığı için büyük ölçüde reddedilmişti; sallantı, aşırı uzamış bir çekirdekle de açıklanabilirdi. Yeni analiz okyanus seçeneğini öne çıkardı. Lainey'e göre okyanus çok gençtir: 2 ile 25 milyon yaşında. Üst yüzeyi en fazla yaklaşık 29 km derindedir ve okyanus bazı yerlerde 64 km'den fazla derinliğe ulaşabilir.",
+        "Mimas dersi şudur: buz volkanı, çatlak ya da gayzer olmaması okyanus olmadığını kanıtlamaz. Okyanus yeni oluşmuşsa yüzeyi henüz değiştirmeye vakit bulamamış olabilir. Lainey'nin dediği gibi Mimas, Enceladus'tan biraz küçük ve aynı tür kaya ve buzdan yapılmış; bu yüzden iki komşu, buzlu uydulardaki okyanusların nasıl doğup geliştiğini anlamak için yan yana karşılaştırılabilir.",
+        "Iapetus ise iki renkli yüzüyle ünlüdür. Wikipedia'ya göre onu Giovanni Domenico Cassini Ekim 1671'de buldu. Cassini uyduyu yalnızca Satürn'ün batı yanındayken görebildi; doğu yanındayken ancak 1705'te daha iyi bir teleskopla ve iki kadir daha sönük olarak gördü. Buradan Iapetus'un bir yarısının parlak, öbürünün koyu olduğunu ve eş zamanlı döndüğünü, yani Satürn'e hep aynı yüzünü gösterdiğini doğru biçimde çıkardı. Bugün koyu bölgeye Cassini Regio denir.",
+        "Bu renk farkının açıklaması kendini besleyen bir döngüdür. Wikipedia'ya göre dışarıdan gelen koyu bir malzeme bir yarıküreyi biraz kararttı; koyu yüzey daha çok ısındı, oradaki buz buharlaşıp daha soğuk parlak bölgelere ve kutuplara taşındı; bu da koyu bölgeyi daha koyu, parlak bölgeyi daha parlak yaptı. Iapetus'un bir başka gizemi ekvatorundaki sırttır: Cassini aracının 31 Aralık 2004'te görüntülediği bu yapı yaklaşık 1300 km uzunluğunda, 20 km genişliğinde ve 13 km yüksekliğindedir; bazı tepeleri çevresindeki ovadan 20 km'den fazla yükselir. Sırt uyduya ceviz benzeri bir biçim verir; nasıl oluştuğu hâlâ tartışmalıdır."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Iapetus'un iki yüzü arasında parlaklık farkı",
+        "metin": "Wikipedia'ya göre Iapetus'un parlak arka yarıküresi Dünya'dan yaklaşık 10,2 kadir, koyu ön yarıküresi yaklaşık 11,9 kadir görünür. Fark: 11,9 − 10,2 = 1,7 kadir. Parlaklık oranı = 10^(0,4 × 1,7) = 10^0,68 ≈ 4,8. Yani Iapetus, Satürn'ün bir yanındayken öbür yanındakinin yaklaşık 5 katı parlak görünür. Cassini'nin 1671'de yaşadığı da buydu: aynı uydu bir yanda görülüyor, öbür yanda dönemin teleskobunun sınırının altına düşüyordu. Sonuç: 1,7 kadirlik fark yaklaşık 4,8 kat parlaklık farkıdır."
+      },
+      "akilda": "Mimas: 1,15 g/cm³, Herschel krateri; Lainey 2024: sallantıdan genç (2–25 milyon yıl) küresel okyanus, ~29 km derinde. Yüzeyde iz olmaması okyanus yok demek değil. Iapetus: bir yüzü koyu, bir yüzü parlak (Cassini 1671'de fark etti), kendini besleyen buz göçü; ekvatorda 1300 km'lik, 13 km yüksekliğinde sırt."
+    },
+    {
+      "baslik": "Uranüs'ün uyduları ve yamalı Miranda",
+      "paragraflar": [
+        "Uranüs'ün büyük uyduları beş tanedir. NASA'ya göre Titania ile Oberon'u William Herschel 1787'de, Ariel ile Umbriel'i William Lassell 1851'de, Miranda'yı ise Gerard Kuiper 1948'de buldu. Adlarını Shakespeare ve Alexander Pope'un eserlerindeki karakterlerden alırlar (9. ders). NSSDCA'ya göre yoğunlukları 1,20 ile 1,66 g/cm³ arasındadır; NASA'ya göre Uranüs'ün iç uydularının kabaca yarı su buzu, yarı kaya olduğu görünüyor. En yenisi S/2025 U1 adlı küçük bir uydudur; NASA'nın listesine göre 2025'te James Webb Uzay Teleskobu verisiyle bulundu.",
+        "Bu uyduların tek yakın görüntüleri, 39. derste anlattığımız 1986 Voyager 2 geçişinden gelir. Universe Today'e göre araç Miranda'nın yalnızca güney yarıküresini görüntüleyebildi; Space.com'un aktardığına göre büyük uyduların kuzey yarıküreleri o sırada kış karanlığındaydı. Yine de görüntüler sürprizlerle doluydu. Voyager 2'nin en çok yaklaştığı cisim Miranda oldu: NASA'ya göre yalnızca 28.260 km uzaktan geçti ve görüntüler, hiçbir düzene uymuyormuş gibi görünen tuhaf yüzey özellikleriyle dolu bir dünya gösterdi.",
+        "Miranda'nın çapı yaklaşık 471 km'dir. Universe Today'e göre yüzeyi kraterli bölgelerin, sarp yamaçların ve oluklu alanların karmakarışık bir yamasıdır; ünlü yamuk biçimli 'taç' yapıları vardır ve Güneş Sistemi'nin en yüksek uçurumu olabilecek, yaklaşık 20 km'lik Verona Rupes yamacını taşır. NSSDCA'ya göre yoğunluğu 1,20 g/cm³ ile beş büyük uydunun en düşüğüdür. Bu kadar küçük ve soğuk bir buz topunun yüzeyini böyle karıştıran neydi?",
+        "Caleb Strom ve arkadaşlarının 2024'te The Planetary Science Journal'da yayımlanan çalışması bir cevap öneriyor. Universe Today'e göre ekip Miranda'nın çatlaklarını, sırtlarını ve taç yapılarını haritaladı ve farklı iç yapı modellerinin hangisinin bu yüzeyi üretebileceğini bilgisayarda sınadı. En iyi uyan model, Miranda'nın 100 ile 500 milyon yıl önce kalınlığı 100 km'ye varabilen bir okyanus barındırdığı, buz kabuğunun ise 30 km ya da daha ince olduğu modeldi. Isı kaynağı, Miranda ile komşu uydular arasındaki geçmiş yörünge rezonanslarının yarattığı gelgit ısınması olabilir. Bu bir modeldir, doğrudan bir ölçüm değil.",
+        "Universe Today'in başka bir haberine göre bilgisayar modelleri, Miranda dışındaki dört büyük uydunun da okyanus katmanları barındırmış ya da hâlâ barındırıyor olabileceğini gösteriyor. 39. derste gördüğümüz Jasinski çalışması da Voyager'ın Uranüs'ü nadir bir Güneş rüzgârı sıkışmasında gördüğünü, bu yüzden uyduların 'ölü' sayılmasının erken olabileceğini gösterdi. Uranüs'ün uydularının gerçekten okyanus dünyaları olup olmadığını ancak Uranüs'e gidecek yeni bir yörünge aracı söyleyebilir."
+      ],
+      "akilda": "Uranüs'ün beş büyük uydusu: Miranda (Kuiper 1948), Ariel, Umbriel (Lassell 1851), Titania, Oberon (Herschel 1787); yarı buz yarı kaya. Miranda: ~471 km, yamalı yüzey, taç yapıları, ~20 km'lik Verona Rupes. Strom ve ark. 2024 modeli: 100–500 milyon yıl önce ~100 km'lik okyanus. Doğrulama için yeni görev gerekli."
+    },
+    {
+      "baslik": "Triton: yakalanmış ve ters dolanan dünya",
+      "paragraflar": [
+        "Neptün'ün en büyük uydusu Triton'u NASA'ya göre William Lassell 10 Ekim 1846'da, Neptün'ün bulunuşundan yalnızca 17 gün sonra buldu. NASA'nın bir ayrıntısı hoştur: 19. yüzyıl İngiltere'sinin büyük amatör gökbilimcilerinden Lassell, teleskoplarını bira işinden kazandığı servetle yaptırmıştı. NSSDCA'ya göre Triton'un yarıçapı 1353,4 km, yoğunluğu 2,05 g/cm³'tür. Wikipedia'ya göre Neptün çevresinde dolanan bilinen bütün kütlenin yüzde 99,5'inden fazlası Triton'dadır.",
+        "Triton'un yörüngesi alarm verir. NSSDCA'ya göre Neptün'den 354.760 km uzakta 5,877 günde bir, ama ters yönde dolanır; yörünge eğikliği 157,3°'dir. Ters dolanım, bir uydunun gezegeninin dönüş yönünün tersine dolanmasıdır. NASA'ya göre Triton, Güneş Sistemi'nde böyle dolanan tek büyük uydudur. Gezegenle birlikte bir diskte doğan düzenli uydular gezegenle aynı yönde dolanır; bu yüzden bilim insanları Triton'un milyonlarca yıl önce Neptün'ün çekimine yakalanmış bir Kuiper kuşağı cismi olduğunu düşünür. NASA'ya göre Plüton'la pek çok benzerliği vardır.",
+        "Triton'un yüzeyi de geçmişini yansıtır. NASA'ya göre yüzey az kraterlidir; düz volkanik ovalar, tümsekler ve buzlu lav akıntılarının açtığı yuvarlak çukurlar içerir. Yapısı donmuş azottan bir kabuk, buzlu bir manto ve kaya ile metalden bir çekirdek olarak düşünülür. Yoğunluğu suyun yaklaşık iki katıdır; NASA'ya göre bu, Satürn ve Uranüs'ün buzlu uydularından daha çok kaya içerdiğine işaret eder. Voyager 2'nin görev sayfası, güney yarıküredeki tuhaf, çukurlu kavun kabuğu arazisini de anlatır.",
+        "Triton çok soğuktur. NASA'ya göre Voyager 2 yüzey sıcaklığını −235 °C ölçtü; azotun çoğu kırağı olarak donmuştur ve yüzey güneş ışığının yüzde 70'ini yansıtır. Wikipedia'ya göre ince, çoğunlukla azottan oluşan atmosferinin yüzey basıncı 1989'da yalnızca yaklaşık 1,4 pascaldı, yani Dünya'dakinin yaklaşık 72.000'de biri. Buna rağmen Voyager 2 1989'da etkin gayzerler buldu (9. ders). NASA'ya göre Triton, Io ve Venüs, Dünya dışında bugün volkanik olarak etkin olduğu bilinen cisimlerdir; NASA bu etkinliğin Güneş'in mevsimsel ısıtmasıyla sürdüğünü düşünür.",
+        "Triton'un geleceği de tartışmalıdır. Chyba ve arkadaşlarının 1989 tarihli çalışmasının özetine göre Triton, hem kendisinde hem Neptün'de oluşturduğu gelgitler yüzünden gezegene doğru yavaşça yaklaşmaktadır ve varsayımlara bağlı olarak yaklaşık 3,6 ya da 1,4 milyar yıl içinde Neptün'ün Roche sınırına ulaşabilir. Roche sınırı, gezegenin gelgit etkisinin yalnızca kendi kütleçekimiyle bir arada duran bir uyduyu parçalayacak kadar güçlendiği uzaklıktır. Wikipedia'ya göre o zaman Triton ya Neptün'ün atmosferine çarpar ya da parçalanıp Satürn'ünkine benzer bir halka sistemi oluşturur. Ama aynı kaynağa göre 2025'te yapılan yeni bir çalışma bu sürenin 28 milyar yıl olduğunu hesapladı. Yani uzak gelecek modellere çok bağlıdır."
+      ],
+      "akilda": "Triton: Lassell 1846'da buldu; Neptün'ün uydu kütlesinin %99,5'i. Ters yönde (157,3°) dolanan tek büyük uydu → yakalanmış Kuiper kuşağı cismi. Azot kabuk, −235 °C, ince azot atmosferi, gayzerler. Roche sınırına varış: 3,6 (ya da 1,4) milyar yıl (1989) ile 28 milyar yıl (2025) arasında tartışmalı."
+    },
+    {
+      "baslik": "Yoldaki görevler ve İstanbul'dan uydular",
+      "paragraflar": [
+        "Önümüzdeki on yıl buzlu uydular için hareketli geçecek. NASA'nın Europa Clipper aracı 14 Ekim 2024'te fırlatıldı ve 18. derste gördüğün gibi Nisan 2030'da Jüpiter yörüngesine girecek. ESA'nın Juice aracı 14 Nisan 2023'te fırlatıldı. ESA'ya göre 28 Eylül 2026'da Dünya'nın 8640 km yakınından geçerek rotasını yaklaşık 20° büktü ve hızını saniyede yaklaşık 3,5 km artırdı. Ocak 2029'da son kez Dünya'nın yanından geçecek, Temmuz 2031'de Jüpiter'e varacak, 2034'te Ganymede yörüngesine girecek. Planetary Society'ye göre Ganymede'nin çevresinde yaklaşık dokuz ay çalıştıktan sonra yüzeyine bilerek çarptırılacak; BBC'ye göre buzlu bir uydunun yörüngesine giren ilk görev olacak.",
+        "Satürn sisteminde ise Dragonfly sırada (18. ders). Neptün ve Uranüs'ün uyduları için şimdilik yalnızca 39. derste anlattığımız Uranüs yörünge aracı kavramı var. Bu görevler gelene kadar bu dersteki pek çok sonuç, yani Titan'ın çamursu içi, Europa'nın buz kalınlığı, Mimas'ın genç okyanusu, eski verilerin yeniden işlenmesiyle değişmeye devam edecek. Bir uydunun okyanusu hakkında okuduğun haberin tarihine ve hangi ölçüme dayandığına bakmayı alışkanlık hâline getir.",
+        "Bu dünyaların bazılarını İstanbul'dan kendin görebilirsin. 3. ve 9. derslerde gördüğün gibi Galileo uyduları ışık kirliliği yoğun bir gökte bile sıradan bir dürbünle görülür; Jüpiter karşı konumdayken parlaklıkları 4,6 ile 5,6 kadir arasındadır ve gezegenden 2 ile 10 yay dakikası açılırlar. Jüpiter 2026 sonunda Aslan takımyıldızındadır; ekimde gece yarısından sonra, aralık sonunda akşam 21.30 civarında doğar ve 10–11 Şubat 2027'de karşı konuma gelir (9. ders). Urania'nın Gökyüzü sekmesindeki Jüpiter satırında, uyduların o anki dizilişini dürbünde görüneceği gibi gösteren küçük bir şema vardır: kuzey yukarıda, doğu soldadır.",
+        "Bu şemayla küçük bir deney yap: birkaç gece aynı saatte dürbünle Jüpiter'e bak ve noktaların yerini deftere çiz, sonra şemayla karşılaştır. Io'nun 1,77 günlük turu yüzünden konumu her gece belirgin biçimde değişir; Callisto ise yavaş ilerler. Laplace rezonansını gözünle göremezsin, ama rezonanstaki üç uydunun dönemlerinin 1:2:4 oranını çizimlerinden kabaca çıkarabilirsin; 3. dersteki Kepler deneyinin devamı gibi düşün. Satürn ise 4 Ekim 2026'daki karşı konumundan sonra akşam göğündedir ve Balina takımyıldızındadır (9. ders); 9. dersteki kaynağa göre en büyük uydusu Titan orta boy bir dürbünle seçilebilir. Gördüğün sönük nokta, bu dersin en tartışmalı iç yapısına sahip dünyadır."
+      ],
+      "akilda": "Europa Clipper Nisan 2030, Juice Temmuz 2031'de Jüpiter'de (2034'te Ganymede yörüngesi; 28 Eylül 2026'da Dünya'dan kütleçekim yardımı aldı), Dragonfly 2034'te Titan'da. İstanbul'dan 7×50 ile Galileo uyduları (4,6–5,6 kadir) ve iyi bir gecede Titan görülebilir; Gökyüzü sekmesindeki Jüpiter şeması uyduları tanıtır."
+    }
+  ],
+  "formuller": [
+    {
+      "ad": "Ortalama yoğunluk",
+      "ifade": "ρ = M / ((4/3) × π × R³)",
+      "aciklama": "ρ: yoğunluk (kg/m³; 1000'e bölünce g/cm³), M: kütle (kg), R: ortalama yarıçap (m). Küre varsayar. Callisto 1,83, Ganymede 1,94, Europa 3,01, Io 3,53 g/cm³."
+    },
+    {
+      "ad": "Yüzeydeki gelgit ivmesi",
+      "ifade": "a ≈ 2 × G × M × R / d³",
+      "aciklama": "M: gezegenin kütlesi (kg), R: uydunun yarıçapı (m), d: uzaklık (m), G = 6,674 × 10⁻¹¹. Uygulamanın gelgit deneyi aynı formülü kullanır. Uzaklığın küpüyle düştüğü için içteki uydu en çok esnetilir (3. ders)."
+    },
+    {
+      "ad": "Rezonans oranı",
+      "ifade": "Oran = T₂ / T₁",
+      "aciklama": "T: iki uydunun dolanma süreleri. Oran basit bir tam sayıya (2, 3/2 gibi) çok yakınsa uydular rezonanstadır. Europa/Io ≈ 2,007; Ganymede/Europa ≈ 2,015."
+    },
+    {
+      "ad": "Hava sütununun kütlesi",
+      "ifade": "m = P / g",
+      "aciklama": "m: yüzeyin metrekaresi üstündeki gaz kütlesi (kg/m²), P: yüzey basıncı (Pa), g: yüzey çekim ivmesi (m/s²). Titan ≈ 111.000, Dünya ≈ 10.350 kg/m²."
+    },
+    {
+      "ad": "Küçük dönmede yüzey kayması",
+      "ifade": "s = 2 × π × R × (α / 360°)",
+      "aciklama": "s: ekvatordaki bir noktanın yer değiştirmesi (km), R: yarıçap (km), α: dönme ya da sallantı açısı (derece). Enceladus, 0,1°: ≈ 0,44 km."
+    },
+    {
+      "ad": "Kadir farkından parlaklık oranı",
+      "ifade": "Oran = 10^(0,4 × Δm)",
+      "aciklama": "Δm: kadir farkı (1. ders). Iapetus'un iki yüzü: Δm = 1,7 → ≈ 4,8 kat."
+    }
+  ],
+  "anahtar_sayilar": [
+    {
+      "deger": "1,769 · 3,551 · 7,155 gün (1:2:4)",
+      "aciklama": "Io, Europa ve Ganymede'nin dolanma süreleri; Laplace rezonansı",
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/joviansatfact.html"
+    },
+    {
+      "deger": "Io 0,378 · Europa 0,346 · Ganymede 0,3115 · Callisto 0,3549 · Titan 0,341 · Enceladus 0,3305",
+      "aciklama": "Eylemsizlik momenti çarpanları (düzgün küre 0,4); Ganymede katı cisimlerin en düşüğü",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Moment_of_inertia_factor"
+    },
+    {
+      "deger": "150+ etkin volkan (400'e kadar tahmin) · 1600 K · 500 km",
+      "aciklama": "Io'nun etkin volkan sayısı, en sıcak lav ve en yüksek püskürme bulutları",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Volcanism_on_Io"
+    },
+    {
+      "deger": "≈ 29 km",
+      "aciklama": "Juno'nun 2022 geçişinde ölçülen bölgede Europa'nın sert dış buz katmanının ortalama kalınlığı (Nature Astronomy, Aralık 2025)",
+      "kaynak_url": "https://www.swri.org/newsroom/press-releases/nasa-s-juno-spacecraft-measures-thickness-of-europa-s-ice-shell"
+    },
+    {
+      "deger": "27 Haziran 1996",
+      "aciklama": "Galileo aracının Ganymede'nin kendi manyetik alanını keşfettiği ilk geçiş",
+      "kaynak_url": "https://www.sci.news/space/galileos-flyby-ganymede-05963.html"
+    },
+    {
+      "deger": "2° (okyanussuz beklenen 6°)",
+      "aciklama": "Ganymede'nin kutup ışıklarının salınımı; tuzlu okyanus kanıtı (Hubble, 2015)",
+      "kaynak_url": "https://science.nasa.gov/jupiter/jupiter-moons/ganymede/facts/"
+    },
+    {
+      "deger": "1500 milibar · 94 K (−180 °C)",
+      "aciklama": "Titan'ın yüzey basıncı ve sıcaklığı",
+      "kaynak_url": "https://esa.int/Our_Activities/Space_Science/Cassini-Huygens/Facts_about_Titan"
+    },
+    {
+      "deger": "14 Ocak 2005",
+      "aciklama": "Huygens'in Titan'a inişi; dış Güneş Sistemi'ndeki ilk iniş",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Cassini%E2%80%93Huygens"
+    },
+    {
+      "deger": "101 gayzer · 4 kaplan çizgisi",
+      "aciklama": "Cassini'nin Enceladus'un güney kutbunda haritaladığı gayzerler (2014)",
+      "kaynak_url": "https://www.sciencedaily.com/releases/2014/07/140728191530.htm"
+    },
+    {
+      "deger": "5,877 gün · 157,3° (ters yönde)",
+      "aciklama": "Triton'un dolanma süresi ve yörünge eğikliği",
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/neptuniansatfact.html"
+    },
+    {
+      "deger": "Temmuz 2031 · 2034",
+      "aciklama": "Juice'un Jüpiter'e varışı ve Ganymede yörüngesine girişi (28 Eylül 2026'da Dünya'dan kütleçekim yardımı)",
+      "kaynak_url": "https://www.esa.int/Science_Exploration/Space_Science/Successful_Earth_flyby_improves_Juice_s_course_to_Jupiter"
+    }
+  ],
+  "sozluk": [
+    {
+      "terim": "düzenli uydu",
+      "tanim": "Gezegenin ekvator düzlemine yakın, neredeyse dairesel ve gezegenin dönüşüyle aynı yönde dolanan, büyük olasılıkla gezegenle birlikte doğmuş uydu."
+    },
+    {
+      "terim": "düzensiz uydu",
+      "tanim": "Gezegenden uzakta, basık, çok eğik ve çoğu zaman ters yönlü bir yörüngede dolanan, genellikle yakalanmış olduğu düşünülen uydu."
+    },
+    {
+      "terim": "yakalanmış uydu",
+      "tanim": "Gezegenin yanında doğmayıp sonradan onun kütleçekimine takılarak yörüngesine girmiş gök cismi."
+    },
+    {
+      "terim": "manyetometre",
+      "tanim": "Manyetik alanın yönünü ve şiddetini ölçen alet; uzay araçlarında uzun bir kolun ucunda taşınır."
+    },
+    {
+      "terim": "manyetik indüksiyon",
+      "tanim": "Değişen bir manyetik alanın iletken bir maddede elektrik akımları doğurması ve bu akımların kendi ikincil manyetik alanını üretmesi."
+    },
+    {
+      "terim": "Love sayısı",
+      "tanim": "Bir gök cisminin gelgit kuvveti altında ne kadar esnediğini gösteren katsayı; büyük değer, içte akışkan bir katmana işaret eder."
+    },
+    {
+      "terim": "yörünge rezonansı",
+      "tanim": "İki ya da daha fazla cismin dolanma sürelerinin basit tam sayı oranlarında olması; cisimler düzenli aralıklarla aynı göreli konuma gelir."
+    },
+    {
+      "terim": "Laplace rezonansı",
+      "tanim": "Io, Europa ve Ganymede'nin dolanma sürelerinin 1:2:4 oranında olduğu, yörüngelerini eliptik tutan üçlü rezonans."
+    },
+    {
+      "terim": "lav gölü",
+      "tanim": "Bir çukurun içinde yüzeyi açıkta duran, uzun süre erimiş kalan lav birikintisi; Io'daki Loki Patera bunun en büyüklerinden biridir."
+    },
+    {
+      "terim": "farklılaşma",
+      "tanim": "Bir gök cisminin erken dönemde ısınıp yumuşaması sonucu ağır malzemenin merkeze batması, hafif malzemenin yukarıda kalarak katmanlar oluşturması."
+    },
+    {
+      "terim": "çarpma havzası",
+      "tanim": "Büyük bir çarpışmanın açtığı, yüzlerce ya da binlerce kilometre genişliğinde dev krater yapısı; Callisto'daki Valhalla bir örnektir."
+    },
+    {
+      "terim": "kriyovolkanizma",
+      "tanim": "Erimiş kaya yerine su, amonyak ya da metan gibi uçucu maddelerin püskürdüğü buz volkanizması."
+    },
+    {
+      "terim": "gayzer",
+      "tanim": "Yeraltındaki suyun ya da buharın basınçla yüzeyden yukarı fışkırması; Enceladus'ta ve Triton'da gözlenmiştir."
+    },
+    {
+      "terim": "kaplan çizgileri",
+      "tanim": "Enceladus'un güney kutup bölgesinde gayzerlerin fışkırdığı dört belirgin çatlak."
+    },
+    {
+      "terim": "ters dolanım",
+      "tanim": "Bir uydunun gezegeninin dönüş yönünün tersine dolanması; Triton'un yörüngesi böyledir."
+    },
+    {
+      "terim": "Roche sınırı",
+      "tanim": "Gezegenin gelgit etkisinin, yalnızca kendi kütleçekimiyle bir arada duran bir uyduyu parçalayacak kadar güçlendiği uzaklık."
+    }
+  ],
+  "defter_notu": [
+    "İç yapı araçları: yoğunluk, eylemsizlik momenti çarpanı (0,4 = düzgün), manyetik indüksiyon (tuzlu su), librasyon / Love sayısı (esneklik).",
+    "Laplace: Io 1,769 · Europa 3,551 · Ganymede 7,155 gün = 1:2:4. Eliptik yörünge → gelgit ısınması. Jüpiter'in Io'daki gelgiti, Ay'ın Dünya'dakinin ~5600 katı.",
+    "Io: 3643 km, 3,53 g/cm³, 150+ volkan (400'e kadar), 1600 K lav, Loki lav gölü ~200 km. Juno 2024: küresel sığ magma okyanusu yok.",
+    "Europa: kaya + demir çekirdek + ~100 km su; Galileo indüksiyonu (Khurana 1998). Juno 2022: sert dış buz ~29 km (2025 yayını).",
+    "Ganymede: 5262 km (Merkür'den büyük), 0,3115 (en düşük), kendi manyetik alanı (Galileo, 27.06.1996). Hubble 2015: aurora 6° yerine 2° → okyanus.",
+    "Callisto: 1,83 g/cm³, rezonans dışı, en kraterli; 0,3549 → az farklılaşmış; indüksiyon → okyanus olabilir.",
+    "Titan: azot atmosfer 1,5 bar, 94 K; metan-etan gölleri; Huygens 14.01.2005. İç: okyanus mu? Petricca 2025: 15 saatlik gecikme → çamursu iç, su cepleri.",
+    "Enceladus: ~500 km, gayzerler 2005, 101 gayzer / 4 kaplan çizgisi, 0,1° sallantı → küresel okyanus. Mimas: 2024'te genç okyanus (2–25 milyon yıl).",
+    "Iapetus: iki renk (Cassini 1671), 1300 km'lik ekvator sırtı. Miranda: yamalı yüzey, Verona Rupes ~20 km. Triton: ters (157,3°), yakalanmış KBO, −235 °C, gayzer.",
+    "Görevler: Europa Clipper Nisan 2030, Juice Temmuz 2031 (Ganymede 2034), Dragonfly 2034. İstanbul: 7×50 ile Galileo uyduları (4,6–5,6 kadir), iyi gecede Titan."
+  ],
+  "sorular": [
+    {
+      "soru": "Ganymede ile Callisto'nun yoğunlukları neredeyse aynı (1,94 ve 1,83 g/cm³). Eylemsizlik momenti çarpanları (0,3115 ve 0,3549) bize ek olarak ne söyler?",
+      "cevap": "Benzer yoğunluk, iki uydunun kabaca aynı kaya-buz karışımından yapıldığını gösterir. Ama çarpan 0,4'ten ne kadar küçükse ağır malzeme merkeze o kadar çökmüştür: Ganymede tam farklılaşmış (metal çekirdek, kaya manto, buz katmanları), Callisto ise büyük ölçüde karışık kalmıştır. Fark, Ganymede'nin Laplace rezonansındaki geçmiş gelgit ısınmasına bağlanır."
+    },
+    {
+      "soru": "Laplace rezonansı olmasaydı Io'nun volkanları büyük olasılıkla neden sönerdi?",
+      "cevap": "Çünkü gelgit ısınması yörüngenin eliptik olmasına dayanır: Io Jüpiter'e yaklaşıp uzaklaştıkça değişen gelgit çekimi onu sıkıştırıp gevşetir. Zamanla yörüngeler daireselleşir; 1:2:4 rezonansı Europa ve Ganymede'nin düzenli çekim dürtüleriyle Io'nun yörüngesini eliptik tutar. Rezonans olmasa yörünge daireselleşir, esneme ve dolayısıyla ısı büyük ölçüde azalırdı."
+    },
+    {
+      "soru": "Galileo aracının manyetometresi Europa'nın yanında 'indüklenmiş' bir alan ölçtü. Bu neden bir okyanusa işaret eder?",
+      "cevap": "Jüpiter'in alanı gezegenle birlikte döndüğü için Europa'nın bulunduğu yerde sürekli değişir. Değişen alan ancak iletken bir maddede akımlar doğurup ikincil bir alan üretebilir. Ölçülen ikincil alan, yüzeyin hemen altında elektriği iyi ileten bir katman gerektirir; Khurana ve arkadaşlarına göre en olası açıklama tuzlu sıvı su okyanusudur."
+    },
+    {
+      "soru": "Hubble Ganymede'nin kutup ışıklarını neden izledi ve ne buldu?",
+      "cevap": "Ganymede'nin kendi manyetik alanı vardır ve kutup ışıkları bu alanın Jüpiter'in değişen alanıyla etkileşimini gösterir. Okyanus yoksa kutup ışıklarının yaklaşık 6° salınması beklenirdi; ölçülen salınım yalnızca 2°'ydi. Tuzlu su, Jüpiter'in alanına karşı ikincil bir alan üreterek salınımı sönümler; bu da yeraltında bir okyanusun en iyi kanıtlarından biri sayıldı."
+    },
+    {
+      "soru": "Juno'nun 2024'teki ölçümleri Io'nun içi hakkında hangi yaygın varsayımı sarstı?",
+      "cevap": "Io'nun kabuğunun altında bütün uyduyu saran sığ bir magma okyanusu olduğu varsayımını. Küresel bir magma okyanusu olsaydı Io gelgitle çok daha fazla şekil değiştirirdi; Juno'nun çekim ölçümleri içinin büyük ölçüde katı olduğunu ve her volkanın kendi magma odasından beslendiğini gösterdi (Park ve ark., Nature, Aralık 2024)."
+    },
+    {
+      "soru": "Titan'ın yüzey basıncı Dünya'nınkinin yalnızca 1,5 katı. Peki neden metrekare başına Dünya'dakinin yaklaşık 11 katı hava var?",
+      "cevap": "Basınç, hava sütununun ağırlığıdır: P = m × g / alan. Titan'ın çekimi (1,35 m/s²) Dünya'nınkinin (9,80) yaklaşık yedide biridir. Aynı basıncı üretmek için çok daha fazla gaz gerekir: 150.000 / 1,35 ≈ 111.000 kg/m², Dünya'da 101.400 / 9,80 ≈ 10.350 kg/m²; oran ≈ 10,7."
+    },
+    {
+      "soru": "2025'teki Titan çalışması, aynı Cassini verisinden neden farklı bir sonuç çıkardı?",
+      "cevap": "Eski analizler yalnızca Titan'ın ne kadar esnediğine (Love sayısı) bakıyordu; büyük esneme okyanus lehine yorumlandı. Petricca ve arkadaşları verileri modern yöntemlerle yeniden işleyip esnemenin Satürn'ün çekiminin ~15 saat gerisinden geldiğini, yani içeride çok enerji harcandığını ölçtü. Bu kadar enerji kaybı açık bir okyanusla değil, çamursu bir iç ve su cepleriyle daha uyumludur. Sonuç kesin değildir; NASA'nın sayfası hâlâ okyanustan söz ediyor."
+    },
+    {
+      "soru": "Enceladus'taki gayzerlerin yerinde sıcak noktalar var. Bu, gayzerleri sürtünme ısısının çalıştırdığını mı gösterir?",
+      "cevap": "Hayır. Porco'nun ekibine göre sıcak noktalar yalnızca birkaç on metre genişliğindeydi; sürtünmeyle oluşmak için fazla küçüktü ama buharın çatlak duvarlarında yoğunlaşmasıyla açıklanabilecek boyuttaydı. Yani ısı gayzerin nedeni değil sonucudur; su ve buhar alttaki okyanustan gelir."
+    },
+    {
+      "soru": "Mimas'ın yüzeyinde hiçbir etkinlik izi yok. Yine de okyanusu olduğunu nasıl söyleyebiliyoruz?",
+      "cevap": "Cassini'nin ölçtüğü sallantının (librasyon) Mimas'ın yörüngesini nasıl etkilediği incelendi; bu davranış ya aşırı uzamış bir çekirdekle ya da kabuğu çekirdekten ayıran bir sıvı katmanla açıklanabilirdi. Lainey ve arkadaşlarının 2024 analizi okyanus seçeneğini destekledi. Okyanus 2–25 milyon yıl gibi çok genç olduğu için yüzeyi henüz değiştirmemiş olabilir."
+    },
+    {
+      "soru": "Triton'un neden Neptün'ün yanında doğmadığı, yakalandığı düşünülür?",
+      "cevap": "Çünkü Neptün'ün dönüşünün tersine (157,3° eğiklikle) dolanır; Güneş Sistemi'nde böyle dolanan tek büyük uydudur. Gezegenle birlikte dönen bir diskte doğan uydular gezegenle aynı yönde dolanır. Ayrıca bileşimi ve yüzeyi Plüton'a benzer; NASA'ya göre büyük olasılıkla Kuiper kuşağından gelip yakalanmıştır."
+    },
+    {
+      "soru": "Iapetus'u Satürn'ün bir yanındayken 10,2, öbür yanındayken 11,9 kadir görüyorsun. Parlaklık kaç kat değişir ve neden?",
+      "cevap": "Δm = 1,7; oran = 10^(0,4 × 1,7) ≈ 4,8 kat. Iapetus eş zamanlı döner, Satürn'e hep aynı yüzünü gösterir; bu yüzden Satürn'ün bir yanındayken bize parlak yarıküresini, öbür yanındayken koyu yarıküresini (Cassini Regio) gösterir."
+    },
+    {
+      "soru": "İstanbul'dan 7×50 dürbünle bu dersin hangi uydularını görebilirsin?",
+      "cevap": "Jüpiter'in dört Galileo uydusunu (4,6–5,6 kadir, gezegenden 2–10 yay dakikası uzakta) ışıklı bir gökte bile; iyi bir gecede Satürn'ün Titan'ını orta boy bir dürbünle. Öbür uydular (Enceladus, Mimas, Iapetus, Miranda, Triton) teleskop ister. Hangi noktanın hangi uydu olduğunu Gökyüzü sekmesindeki Jüpiter şemasıyla bulabilirsin."
+    }
+  ],
+  "kaynaklar": [
+    {
+      "ad": "NASA NSSDCA – Jovian Satellite Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/joviansatfact.html"
+    },
+    {
+      "ad": "NASA NSSDCA – Solar System Small Worlds Fact Sheet (Galileo uyduları, Titan, Triton)",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/galileanfact_table.html"
+    },
+    {
+      "ad": "NASA NSSDCA – Saturnian, Uranian ve Neptunian Satellite Fact Sheets",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturniansatfact.html"
+    },
+    {
+      "ad": "Wikipedia – Moment of inertia factor",
+      "url": "https://en.wikipedia.org/wiki/Moment_of_inertia_factor"
+    },
+    {
+      "ad": "Wikipedia – Galilean moons",
+      "url": "https://en.wikipedia.org/wiki/Galilean_moons"
+    },
+    {
+      "ad": "Wikipedia – Volcanism on Io",
+      "url": "https://en.wikipedia.org/wiki/Volcanism_on_Io"
+    },
+    {
+      "ad": "Khurana ve ark. (1998), Induced magnetic fields as evidence for subsurface oceans in Europa and Callisto (Nature, PubMed özeti)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9796812/"
+    },
+    {
+      "ad": "NASA Science – Ganymede Facts",
+      "url": "https://science.nasa.gov/jupiter/jupiter-moons/ganymede/facts/"
+    },
+    {
+      "ad": "NASA Science – Titan Facts",
+      "url": "https://science.nasa.gov/saturn/moons/titan/facts/"
+    },
+    {
+      "ad": "ESA – Facts about Titan",
+      "url": "https://esa.int/Our_Activities/Space_Science/Cassini-Huygens/Facts_about_Titan"
+    },
+    {
+      "ad": "Physics Today (2026) – Data reanalysis throws existence of an ocean on Titan into question",
+      "url": "https://physicstoday.aip.org/news/data-reanalysis-throws-existence-of-an-ocean-on-titan-into-question"
+    },
+    {
+      "ad": "ScienceDaily / University of Washington (2025) – What scientists found inside Titan",
+      "url": "https://sciencedaily.com/releases/2025/12/251220104621.htm"
+    },
+    {
+      "ad": "SwRI (2026) – NASA's Juno spacecraft measures thickness of Europa's ice shell",
+      "url": "https://www.swri.org/newsroom/press-releases/nasa-s-juno-spacecraft-measures-thickness-of-europa-s-ice-shell"
+    },
+    {
+      "ad": "Live Science (2024) – NASA solves mystery of why Jupiter's Io is so volcanically active",
+      "url": "https://livescience.com/space/nasa-solves-mystery-of-why-jupiters-io-is-so-volcanically-active"
+    },
+    {
+      "ad": "Universe Today – Juno reveals a giant lava lake on Io",
+      "url": "https://www.universetoday.com/166716/juno-reveals-a-giant-lava-lake-on-io/"
+    },
+    {
+      "ad": "Sci.News – Galileo's flyby of Ganymede (1996)",
+      "url": "https://www.sci.news/space/galileos-flyby-ganymede-05963.html"
+    },
+    {
+      "ad": "BBC (2015) – Hubble finds 'best evidence' for Ganymede subsurface ocean",
+      "url": "https://geomet.uni-koeln.de/fileadmin/Dokumente/Mitarbeiter/Profile/Saur__Joachim/presseresonanz/BBC/science-environment-31855395.htm"
+    },
+    {
+      "ad": "ScienceDaily / NASA JPL (2014) – Cassini reveals 101 geysers on Enceladus",
+      "url": "https://www.sciencedaily.com/releases/2014/07/140728191530.htm"
+    },
+    {
+      "ad": "Cornell Chronicle (2015) – Under Saturnian moon's icy crust lies a 'global' ocean",
+      "url": "https://news.cornell.edu/node/284780"
+    },
+    {
+      "ad": "National Geographic (2024) – Saturn's 'Death Star' moon was hiding an underground ocean",
+      "url": "https://www.nationalgeographic.com/science/article/subsurface-ocean-saturn-death-star-moon-mimas"
+    },
+    {
+      "ad": "Wikipedia – Iapetus (moon)",
+      "url": "https://en.wikipedia.org/wiki/Iapetus_(moon)"
+    },
+    {
+      "ad": "Wikipedia – Cassini–Huygens",
+      "url": "https://en.wikipedia.org/wiki/Cassini%E2%80%93Huygens"
+    },
+    {
+      "ad": "Universe Today – There's another ocean moon candidate: Miranda",
+      "url": "https://universetoday.com/169058/theres-another-ocean-moon-candidate-uranus-tiny-moon-miranda"
+    },
+    {
+      "ad": "NASA Science – Triton",
+      "url": "https://science.nasa.gov/neptune/neptune-moons/triton/"
+    },
+    {
+      "ad": "Wikipedia – Triton (moon)",
+      "url": "https://en.wikipedia.org/wiki/Triton_(moon)"
+    },
+    {
+      "ad": "Chyba, Jankowski ve Nicholson (1989), Tidal evolution in the Neptune-Triton system (NASA NTRS)",
+      "url": "https://ntrs.nasa.gov/citations/19890064536"
+    },
+    {
+      "ad": "ESA (2026) – Successful Earth flyby improves Juice's course to Jupiter",
+      "url": "https://www.esa.int/Science_Exploration/Space_Science/Successful_Earth_flyby_improves_Juice_s_course_to_Jupiter"
+    },
+    {
+      "ad": "The Planetary Society – Juice launch mission preview",
+      "url": "https://planetary.org/articles/juice-launch-mission-preview"
+    },
+    {
+      "ad": "NASA Science – Uranus Moons",
+      "url": "https://science.nasa.gov/uranus/moons/"
+    }
+  ]
+}

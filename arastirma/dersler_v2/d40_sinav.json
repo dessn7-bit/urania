@@ -1,0 +1,58 @@
+[
+  {
+    "id": "d40-1",
+    "soru": "Io, Europa ve Ganymede'nin dolanma süreleri 1:2:4 oranındadır. Bu rezonansın Io için en önemli sonucu nedir?",
+    "secenekler": [
+      "Io'nun yörüngesini eliptik tutarak değişen gelgit çekimiyle sürekli ısınmasını sağlar",
+      "Io'yu Jüpiter'in gölgesinden hiç çıkarmaz",
+      "Io'nun kendi manyetik alanını üretir",
+      "Io'nun buz kabuğunu kalınlaştırır"
+    ],
+    "dogru": 0,
+    "aciklama": "Derse göre rezonans yörüngeleri hafifçe eliptik kalmaya zorlar; Io Jüpiter'e yaklaşıp uzaklaştıkça sıkışıp gevşer ve bu gelgit ısınması volkanlarını besler. Jüpiter'in Io'daki gelgit ivmesi, Ay'ın Dünya'dakinin yaklaşık 5600 katıdır.",
+    "ders": "d40",
+    "bolum": 2
+  },
+  {
+    "id": "d40-2",
+    "soru": "Galileo aracının manyetometresinin Europa ve Callisto çevresinde ölçtüğü indüklenmiş manyetik alanlar en iyi neyle açıklanır?",
+    "secenekler": [
+      "Uyduların demir çekirdeklerinin dinamo etkisiyle",
+      "Yüzeyin hemen altındaki iletken tuzlu su katmanlarıyla",
+      "Güneş rüzgârının uydu yüzeylerine çarpmasıyla",
+      "Uyduların kalın buz kabuklarının mıknatıslanmasıyla"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre Jüpiter'in dönen alanı uydularda sürekli değişir; değişen alan yalnızca iletken bir maddede akım ve ikincil alan doğurur. Khurana ve arkadaşlarına (1998) göre en olası iletken, tuzlu sıvı su okyanuslarıdır.",
+    "ders": "d40",
+    "bolum": 1
+  },
+  {
+    "id": "d40-3",
+    "soru": "Petricca ve arkadaşlarının 2025 çalışması Titan'ın içi hakkında ne öne sürdü?",
+    "secenekler": [
+      "Titan'ın tamamen kaya olduğunu",
+      "Titan'ın metan okyanusunun yüzeyin 1000 km altında olduğunu",
+      "Küresel bir su okyanusu yerine kalın buzun altında çamursu bir katman ve su cepleri bulunduğunu",
+      "Titan'ın içinin Io gibi erimiş kayadan oluştuğunu"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre Titan'ın biçim değişikliği Satürn'ün en güçlü çekiminin yaklaşık 15 saat gerisinden geliyor ve içeride harcanan enerji küresel bir okyanus için fazla. Model: 150 km'den kalın buzun altında çamursu bir karışım ve erimiş su cepleri. Sonuç kesin değil.",
+    "ders": "d40",
+    "bolum": 8
+  },
+  {
+    "id": "d40-4",
+    "soru": "Triton'un Neptün'ün yanında doğmayıp sonradan yakalandığı neden düşünülür?",
+    "secenekler": [
+      "Çünkü Neptün'ün halkalarının içinde dolanır",
+      "Çünkü gezegenin dönüşünün tersine dolanan tek büyük uydudur",
+      "Çünkü Güneş Sistemi'nin en sıcak uydusudur",
+      "Çünkü yüzeyi tamamen kraterlerle kaplıdır"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre Triton 157,3° eğiklikle ters yönde dolanır; gezegenle birlikte bir diskte doğan uydular gezegenle aynı yönde dolanır. Bu yüzden Triton'un Kuiper kuşağından gelip yakalandığı düşünülür.",
+    "ders": "d40",
+    "bolum": 12
+  }
+]

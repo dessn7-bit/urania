@@ -1,0 +1,58 @@
+[
+  {
+    "id": "d46-1",
+    "soru": "S301 yıldızı Sgr A*'ın çevresinde 8,7 yılda dolanıyor ve ~12 AB'ye kadar yaklaşıyor. Gökbilimciler bu yıldızla öncelikle neyi ölçmeyi umuyor?",
+    "secenekler": [
+      "Kara deliğin elektrik yükünü",
+      "Kara deliğin dönmesini, yörüngedeki çerçeve sürüklenmesinin yarattığı kaymadan",
+      "Samanyolu'nun merkeze uzaklığını, yıldızın ıraklığından",
+      "Kara deliğin Hawking sıcaklığını"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre dönen kara delik çevresindeki uzay-zamanı sürükler (Lense–Thirring etkisi) ve yakın yörüngelerin yönünü yavaşça çevirir. ESO'ya göre bunu ölçmek için S301'in en az iki tam turu gerekiyor; sonraki en yakın geçiş 2031'de.",
+    "ders": "d46",
+    "bolum": 3
+  },
+  {
+    "id": "d46-2",
+    "soru": "M–σ ilişkisi neden şaşırtıcı bulunur?",
+    "secenekler": [
+      "Çünkü kara deliğin kütleçekimi şişkinlikteki uzak yıldızları neredeyse hiç etkilemediği hâlde kütlesi onların hız dağılımıyla sıkı biçimde ilişkilidir",
+      "Çünkü yalnızca Samanyolu için geçerlidir",
+      "Çünkü kara delik kütlesi galaksi diskinin büyüklüğüyle tam orantılıdır",
+      "Çünkü hız dağılımı arttıkça kara delik kütlesi azalır"
+    ],
+    "dogru": 0,
+    "aciklama": "Kara deliğin çekimi yalnızca çok yakın çevresinde baskındır; şişkinlik yıldızları binlerce ışık yılı uzaktadır. Yine de kütle, hız dağılımının yaklaşık dördüncü-beşinci kuvvetiyle artar. Kormendy ve Ho'ya göre kara delikler disklerle ise ilişkili değildir.",
+    "ders": "d46",
+    "bolum": 6
+  },
+  {
+    "id": "d46-3",
+    "soru": "Eddington sınırında ε = 0,1 ile beslenen bir kara delik kütlesini her 50 milyon yılda e katına çıkarır. 100 Güneş kütleli bir tohum için z = 7,64'teki J0313–1806'nın 1,6 milyar M☉'lik kara deliği neden sorun yaratır?",
+    "secenekler": [
+      "Çünkü o çağda Eddington sınırı yoktu",
+      "Çünkü gereken yaklaşık 16,6 e-katlanma ~830 milyon yıl sürer; bu, evrenin o anki ~680 milyon yıllık yaşından uzundur",
+      "Çünkü 100 Güneş kütleli kara delikler hiç madde yutamaz",
+      "Çünkü kara delik o kadar büyükse kuasar görünmez olurdu"
+    ],
+    "dogru": 1,
+    "aciklama": "Büyüme 1,6 × 10⁷ kat; ln(1,6 × 10⁷) ≈ 16,6 Salpeter zamanı × 50 milyon yıl ≈ 830 milyon yıl. Kesintisiz beslenseydi bile yetişemezdi; bu yüzden 10⁵ M☉ civarında ağır tohumlar ya da Eddington'u aşan büyüme dönemleri tartışılıyor.",
+    "ders": "d46",
+    "bolum": 9
+  },
+  {
+    "id": "d46-4",
+    "soru": "Yaklaşık 10⁹ Güneş kütleli, dönmeyen bir kara deliğin yanına Güneş benzeri bir yıldız düşerse ne beklenir?",
+    "secenekler": [
+      "Yıldız parçalanır ve aylarca süren parlak bir gelgit yırtılma olayı görülür",
+      "Yıldız kara delikten sekip geri fırlatılır",
+      "Yıldız parçalanmadan, parlama görülmeden olay ufkunun içine girer, çünkü kara delik Hills kütlesinden ağırdır",
+      "Yıldız bir nötron yıldızına dönüşür"
+    ],
+    "dogru": 2,
+    "aciklama": "Gelgit yarıçapı kütlenin küp köküyle, olay ufku kütleyle doğru orantılı büyür. Güneş benzeri bir yıldız için iki yarıçap yaklaşık 10⁸ M☉'de eşitlenir (Hills kütlesi); dönmeyen ve daha ağır bir kara delikte yıldız parçalanacağı noktaya varmadan ufka girer.",
+    "ders": "d46",
+    "bolum": 11
+  }
+]
