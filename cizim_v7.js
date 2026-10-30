@@ -103,56 +103,60 @@
     }
   });
 
-  /* d57 · bölüm 9: hafif element bollukları (hidrojene göre kütle oranı) ve lityum açığı. Değerler dersin örneğinden. */
+  /* d57 · bölüm 9: hafif element bollukları, hidrojene göre SAYICA oran (dersin örneği, PDG 2024) ve lityum açığı (PDG 2024, denklem 24.4 ve sonrası) */
   C.ekle('d57-hafif-elementler', {
-    ders: 'd57', bolum: 9, oran: 0.99,
-    baslik: 'Hafif elementler: 250 milyon katlık aralık ve lityumdaki açık',
-    aciklama: "Üstteki eksen logaritmiktir, her çentik yüz kat demektir. Halkalar Büyük Patlama'nın tek bir baryon foton oranından öngördüğü kütle oranlarıdır, hepsi hidrojene göre: helyum-4 yaklaşık 0,25, döteryum 10 üzeri eksi 3, helyum-3 10 üzeri eksi 4, lityum-7 10 üzeri eksi 9. En büyükle en küçük arasında 250 milyon kat var. Döteryumda uyum mükemmel, helyumda yakındır; bu ikisinin Büyük Patlama'dan geldiği gözlemle kesinleşmiştir. Alttaki doğrusal yakın plan lityumu gösterir: ölçülen değer öngörünün 2 ile 4 kat altında, yani milyarda 0,25 ile 0,5 arasında kalıyor. Logaritmik eksende küçük görünen bu fark, ölçüm hatalarından büyük olduğu için ciddiye alınır. Lityum sorunu açık bir sorudur, nedeni henüz bilinmiyor; noktalı çerçeve bunu gösterir.",
-    kaynak: [KAYNAK.bbWiki, KAYNAK.bbnWiki],
+    ders: 'd57', bolum: 9, oran: 0.975,
+    baslik: 'Hafif elementler: dokuz basamaklık aralık ve lityumdaki açık',
+    aciklama: "Üstteki eksen logaritmiktir, her çentik yüz kat demektir. Değerler Parçacık Verileri Grubu'nun 2024 incelemesinden, hidrojene göre sayıca oranlardır: helyum-4 yaklaşık 0,08, döteryum yaklaşık 2,5 çarpı 10 üzeri eksi 5, lityum-7 10 üzeri eksi 10 düzeyinde. Helyumla lityum arasında dokuz basamak, yaklaşık 800 milyon kat var ve kuram bunların hepsini tek bir baryon foton oranıyla birlikte öngörür. Helyum-3 çizilmedi; kaynak onu yalnızca birkaç kez 10 üzeri eksi 5 diye verir. Döteryumda uyum mükemmel, helyumda yakındır; düz çerçeveler bunların gözlemle kesinleştiğini gösterir. Alttaki doğrusal yakın plan lityumdur: hesap 4,72 artı eksi 0,7, yaşlı yıldızlarda ölçülen 1,6 artı eksi 0,3, birim 10 üzeri eksi 10. Fark yaklaşık 3 kat ve belirsizlikler hesaba katılınca 4,4 sigma; Wikipedia'nın maddeleri sapmayı 2 ile 4 kat arası verir. Lityum sorunu açık bir sorudur; noktalı çerçeve bunu gösterir.",
+    kaynak: [{ ad: 'PDG 2024: Big-Bang nucleosynthesis (Fields, Molaro, Sarkar)', url: 'https://pdg.lbl.gov/2024/reviews/rpp2024-rev-bbang-nucleosynthesis.pdf' }, KAYNAK.bbWiki, KAYNAK.bbnWiki],
     ciz(S) {
-      const R = S.R, X = l => 122 + (l + 10) / 10 * 258, ya = 214;
-      let s = S.yazi(8, 14, 'hidrojene göre kütle oranı, logaritmik', { boy: 13, renk: R.soluk });
-      /* 250 milyon kat ayracı */
-      const xa = X(-9), xb = X(L10(0.25));
-      s += S.cizgi(xa, 34, xb, 34, { renk: R.metin, kalin: 1.2 }) + S.cizgi(xa, 28, xa, 40, { renk: R.metin, kalin: 1.2 }) + S.cizgi(xb, 28, xb, 40, { renk: R.metin, kalin: 1.2 });
-      s += S.zeminliYazi((xa + xb) / 2, 38, '250 milyon kat', { boy: 13, hiza: 'middle', renk: R.metin, kalin: true });
+      const R = S.R, X = l => 122 + (l + 11) / 11 * 258, ya = 184;
+      let s = S.yazi(8, 14, 'hidrojene göre sayıca oran, logaritmik', { boy: 13, renk: R.soluk });
+      /* dokuz basamak ayracı: 0,08 ile 10⁻¹⁰ */
+      const xa = X(-10), xb = X(L10(0.08));
+      s += S.cizgi(xa, 44, xb, 44, { renk: R.metin, kalin: 1.2 }) + S.cizgi(xa, 38, xa, 50, { renk: R.metin, kalin: 1.2 }) + S.cizgi(xb, 38, xb, 50, { renk: R.metin, kalin: 1.2 });
+      s += S.yazi((xa + xb) / 2, 34, 'dokuz basamak: ≈ 800 milyon kat', { boy: 13, hiza: 'middle', renk: R.metin, kalin: true });
       /* eksen */
       s += S.cizgi(122, ya, 380, ya, { renk: R.soluk, kalin: 1 });
       [[-10, '10⁻¹⁰'], [-8, '10⁻⁸'], [-6, '10⁻⁶'], [-4, '10⁻⁴'], [-2, '10⁻²'], [0, '1']].forEach(([l, t]) => {
         s += S.cizgi(X(l), ya, X(l), ya + 5, { renk: R.soluk, kalin: 1 }) + S.yazi(X(l), ya + 20, t, { boy: 13, hiza: 'middle', renk: R.soluk });
-        s += S.cizgi(X(l), 50, X(l), ya, { renk: R.cizgi, kalin: 1, kesik: '2 4' });
+        s += S.cizgi(X(l), 54, X(l), ya, { renk: R.cizgi, kalin: 1, kesik: '2 4' });
       });
-      const satir = (y, ad, l, deger, tur, tag) => {
+      const satir = (y, ad, l, deger, tag) => {
         let o = S.yazi(8, y + 5, ad, { boy: 13, renk: R.metin, kalin: true });
         o += S.cizgi(80, y, X(l) - 7, y, { renk: R.soluk, kalin: 1, kesik: '1 4' });
-        o += S.daire(X(l), y, 5.5, { dolgu: R.zemin, renk: R.metin, kalin: 2 });
-        o += S.zeminliYazi(X(l) + (l > -2 ? -10 : 10), y - 9, deger, { boy: 13, hiza: l > -2 ? 'end' : 'start', renk: R.metin });
-        if (tag) o += etiket(S, 86, y + 5, tag, tur);
+        o += S.daire(X(l), y, 5.5, { dolgu: R.metin, renk: 'none' });
+        o += S.zeminliYazi(X(l) + (l > -2 ? -11 : 10), l > -2 ? y + 5 : y - 9, deger, { boy: 13, hiza: l > -2 ? 'end' : 'start', renk: R.metin });
+        if (tag) o += etiket(S, 86, y + 5, tag, 'kesin');
         return o;
       };
-      s += satir(64, 'helyum-4', L10(0.25), '≈ 0,25', 'kesin', 'yakın uyum');
-      s += satir(110, 'döteryum', -3, '≈ 10⁻³', 'kesin', 'mükemmel uyum');
-      s += satir(154, 'helyum-3', -4, '≈ 10⁻⁴', null, null);
-      s += satir(190, 'lityum-7', -9, '≈ 10⁻⁹', null, null);
-      /* lityumun ölçülen aralığı üst eksende: 0,25–0,5 × 10⁻⁹ */
-      s += S.kutu(X(L10(2.5e-10)), 185, X(L10(5e-10)) - X(L10(2.5e-10)), 10, { dolgu: R.metin, renk: 'none' }, 2);
-      /* yakın plan */
-      const y0 = 268, X2 = v => 40 + v / 1.2 * 340, ax = 366;
-      s += S.cizgi(X(-9), 196, X(-9), 206, { renk: R.soluk, kalin: 1 });
-      s += S.yol(`M${X(-9)},${ya + 26} L${X(-9)},${y0 - 12}`, { renk: R.soluk, kalin: 1, kesik: '2 3' });
-      s += S.zeminliYazi(X(-9) + 8, y0 - 14, 'lityum-7 yakından: doğrusal, birim 10⁻⁹', { boy: 13, renk: R.soluk });
+      s += satir(66, 'helyum-4', L10(0.08), '≈ 0,08', 'yakın uyum');
+      s += satir(112, 'döteryum', L10(2.5e-5), '≈ 2,5×10⁻⁵', 'mükemmel uyum');
+      /* lityum: halka hesap, kare ölçüm */
+      const yl = 154;
+      s += S.yazi(8, yl + 5, 'lityum-7', { boy: 13, renk: R.metin, kalin: true });
+      s += S.cizgi(80, yl, X(L10(1.6e-10)) - 7, yl, { renk: R.soluk, kalin: 1, kesik: '1 4' });
+      s += S.kutu(X(L10(1.6e-10)) - 4.5, yl - 4.5, 9, 9, { dolgu: R.metin, renk: 'none' });
+      s += S.daire(X(L10(4.72e-10)), yl, 5.5, { dolgu: R.zemin, renk: R.metin, kalin: 2 });
+      s += S.zeminliYazi(X(L10(4.72e-10)) + 10, yl - 9, '≈ 10⁻¹⁰', { boy: 13, renk: R.metin });
+      /* yakın plan: doğrusal, birim 10⁻¹⁰ */
+      const X2 = v => 40 + v / 6 * 340, ax = 362, yo = 266, yc = 290;
+      s += S.yol(`M${X(L10(3e-10))},${yl + 8} L${X(L10(3e-10))},${ya} M${X(L10(3e-10))},${ya + 26} L${X(L10(3e-10))},${226}`, { renk: R.soluk, kalin: 1, kesik: '2 3' });
+      s += S.zeminliYazi(X(L10(3e-10)) + 8, 238, 'lityum-7 yakından: doğrusal, birim 10⁻¹⁰', { boy: 13, renk: R.soluk });
       s += S.cizgi(40, ax, 380, ax, { renk: R.soluk, kalin: 1 });
-      [0, 0.25, 0.5, 0.75, 1].forEach(v => { s += S.cizgi(X2(v), ax, X2(v), ax + 5, { renk: R.soluk, kalin: 1 }) + S.yazi(X2(v), ax + 20, tr(v, v === 0 || v === 1 ? 0 : 2), { boy: 13, hiza: 'middle', renk: R.soluk }); });
-      /* öngörü */
-      s += S.cizgi(X2(1), 290, X2(1), ax, { renk: R.metin, kalin: 1, kesik: '3 3' });
-      s += S.daire(X2(1), 290, 5.5, { dolgu: R.zemin, renk: R.metin, kalin: 2 });
-      s += S.yazi(X2(1) + 10, 295, 'öngörü ≈ 1', { boy: 13, renk: R.metin });
-      /* ölçülen */
-      s += S.kutu(X2(0.25), 300, X2(0.5) - X2(0.25), 14, { dolgu: R.metin, renk: 'none' }, 3);
-      s += S.yazi(X2(0.25) - 8, 312, 'ölçülen', { boy: 13, hiza: 'end', renk: R.metin });
+      for (let v = 0; v <= 6; v++) s += S.cizgi(X2(v), ax, X2(v), ax + 5, { renk: R.soluk, kalin: 1 }) + S.yazi(X2(v), ax + 20, String(v), { boy: 13, hiza: 'middle', renk: R.soluk });
+      const biyik = (v, e, y) => S.cizgi(X2(v - e), y, X2(v + e), y, { renk: R.metin, kalin: 1.4 }) + S.cizgi(X2(v - e), y - 5, X2(v - e), y + 5, { renk: R.metin, kalin: 1.4 }) + S.cizgi(X2(v + e), y - 5, X2(v + e), y + 5, { renk: R.metin, kalin: 1.4 });
+      /* hesap 4,72 ± 0,7 */
+      s += S.cizgi(X2(4.72), yo, X2(4.72), ax, { renk: R.soluk, kalin: 1, kesik: '3 3' });
+      s += biyik(4.72, 0.7, yo) + S.daire(X2(4.72), yo, 5.5, { dolgu: R.zemin, renk: R.metin, kalin: 2 });
+      s += S.yazi(X2(4.02) - 8, yo + 5, 'hesap: 4,72 ± 0,7', { boy: 13, hiza: 'end', renk: R.metin });
+      /* ölçülen 1,6 ± 0,3 */
+      s += S.cizgi(X2(1.6), yc, X2(1.6), ax, { renk: R.soluk, kalin: 1, kesik: '3 3' });
+      s += biyik(1.6, 0.3, yc) + S.kutu(X2(1.6) - 4.5, yc - 4.5, 9, 9, { dolgu: R.metin, renk: 'none' });
+      s += S.yazi(X2(1.9) + 8, yc + 5, 'yıldızlarda ölçülen: 1,6 ± 0,3', { boy: 13, renk: R.metin });
       /* açık */
-      s += S.ok(X2(0.5) + 5, 307, X2(1) - 7, 307, { renk: R.metin, kalin: 1.4, boy: 7 }) + S.ok(X2(1) - 7, 307, X2(0.5) + 5, 307, { renk: R.metin, kalin: 1.4, boy: 7 });
-      s += etiket(S, (X2(0.5) + X2(1)) / 2, 342, '2–4 kat eksik: açık soru', 'askida', { hiza: 'middle' });
+      s += S.ok(X2(1.6) + 2, 314, X2(4.72) - 2, 314, { renk: R.metin, kalin: 1.4, boy: 7 }) + S.ok(X2(4.72) - 2, 314, X2(1.6) + 2, 314, { renk: R.metin, kalin: 1.4, boy: 7 });
+      s += etiket(S, (X2(1.6) + X2(4.72)) / 2, 342, '≈ 3 kat eksik (4,4σ): açık soru', 'askida', { hiza: 'middle' });
       return s;
     }
   });
