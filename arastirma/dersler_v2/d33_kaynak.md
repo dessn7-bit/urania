@@ -9,7 +9,7 @@ Kısaltmalar: HME = https://en.wikipedia.org/wiki/History_of_Maxwell%27s_equatio
 |---|---|---|
 | Gilbert, De Magnete 1600; kehribarla durgun elektrik; electricus "kehribar gibi"; kehribar Yunanca elektron; "electricity" buradan; terrella deneyleriyle Dünya'nın kendisi mıknatıs | GIL | [B] "remembered today largely for his book De Magnete (1600)" ; "studied static electricity using amber" ; Neo-Latin "electricus," meaning "like amber" ; "amber is called elektron in Greek, so Gilbert decided to call its effect the electric force" ; "he concluded that Earth was itself magnetic" |
 | Gilbert 1544?–1603, Colchester doğumlu, İngiliz | GIL | [B] "24 May 1544? – 30 November 1603" ; Colchester, London |
-| Türkiye 230 V, 50 Hz | WS | [B] "the voltage in Turkey is 230 volts and the frequency is 50 Hz" |
+| Türkiye 230 V, 50 Hz | WS ; https://en.wikipedia.org/wiki/Mains_electricity_by_country ; Elektrik Şebeke Yönetmeliği (kopya: https://www.alomaliye.com/wp-content/uploads/2014/05/elektrik-sebeke-221-01-2025.pdf) | [B] WS "the voltage in Turkey is 230 volts and the frequency is 50 Hz" ; [DOĞ] Wikipedia tablosu: Turkey "230/400 V", "50 Hz" (TEDAŞ sayaç şartnamesi kaynaklı; TEDAŞ PDF'i HTML döndürdü) ; Yönetmelik MADDE 7: "Sistemin 50 Hertz (Hz) olan nominal frekansı, TEİAŞ tarafından 49,8-50,2 Hz aralığında kontrol edilir" ; Ek 4: "230 V + %10 - %15, 50 Hz". IEC world-plugs sayfası izin isteği yanıtsız kaldı |
 | Dünyada elektriğin çoğu türbinli santrallerde; Faraday 1831 ilkesi jeneratörlerin çoğunun temeli | EIA | [B] "Most U.S. and world electricity generation is from electric power plants that use a turbine" ; "He found that moving a magnet inside a coil of wire makes (induces) an electric current flow through the wire." |
 | Maxwell 1860'lar–1870'ler, İskoç | NASAEM | [Ö] d2_kaynak.md: "In the 1860's and 1870's, a Scottish scientist named James Clerk Maxwell developed a scientific theory" |
 
@@ -49,18 +49,20 @@ Kısaltmalar: HME = https://en.wikipedia.org/wiki/History_of_Maxwell%27s_equatio
 | İddia | Kaynak URL | Kaynaktaki ifade |
 |---|---|---|
 | Ørsted 1820, ders sırasında, pusula iğnesi tele dik | MAG | [B] "notices during one of his lectures" that a compass needle "aligns itself perpendicularly to a current-carrying wire" |
-| Ørsted Danimarkalı (1777–1851) | https://physics.it.com/physicists/hans-christian-orsted | arama sonucu başlığı: "§ PHYSICIST · 1777–1851 · DANISH" (sayfa açılmadı; doğrulama ajanı bakmalı) |
+| Ørsted Danimarkalı (1777–1851) | MAG ; https://en.wikipedia.org/wiki/Hans_Christian_%C3%98rsted | [DOĞ] MAG: "Danish physicist and chemist" ; Wikipedia: "Danish chemist and physicist (1777–1851)" |
 | Ampère 1820: paralel teller aynı yönde çeker, zıt yönde iter | MAG | [B] "parallel wires with currents flowing through them attract each other when the currents flow in the same direction" ; repel in opposite directions |
 | Arago 1820: demir tozları telin çevresinde halka, akım kesilince dağılır | MAG | [B] "unmagnetized iron filings orient themselves in a circle around a copper wire through which an electric current flows" ; scatter when current stops |
 | Faraday 1821 dönme hareketi, ilkel motor | MAG | [B] "electricity can produce rotary motion" ; one of the first primitive electric motors |
 | Sturgeon 1825 ilk kullanışlı elektromıknatıs, 20 katı | MAG | [B] "develops and exhibits the first practical electromagnet, which is strong enough to support 20 times its own weight" |
-| Dünya yüzeyi ~22–67 μT (ayrıca 25.000–65.000 nT = 0,25–0,65 G); güçlü buzdolabı mıknatısı ~10.000 μT (100 G) | EMF | [B] "ranges between approximately 22 and 67 μT (0.22 and 0.67 G)" ; 25,000 to 65,000 nT, 0.25 to 0.65 G ; "a strong refrigerator magnet has a field of about 10,000 μT (100 G)" |
+| Dünya yüzeyi ~22–67 μT; 1 G = 100.000 nT | http://www.geomag.bgs.ac.uk/education/earthmag.html | [DOĞ] BGS: "At the Earth's surface the total intensity varies from 22,000 nanotesla (nT) to 67,000 nT" ; "1 Gauss = 100,000 nT". UYARI: EMF'nin bugünkü metninde "22 and 67 μT" ve "25,000 to 65,000 nT" YOK (2019 IGRF: ~30.000–60.000 nT); yazarın aşağıdaki EMF alıntısı doğrulanamadı, 0,25–0,65 G derse BGS'nin 0,22–0,67 G'si ile değiştirildi |
+| güçlü buzdolabı mıknatısı ~10.000 μT (100 G) ; [eski satır] 22–67 μT, 0,25–0,65 G | EMF | [B] "ranges between approximately 22 and 67 μT (0.22 and 0.67 G)" ; 25,000 to 65,000 nT, 0.25 to 0.65 G ; "a strong refrigerator magnet has a field of about 10,000 μT (100 G)" |
 | MR çoğunlukla 1,5 T ya da 3 T; Dünya alanı MR'dan beş basamak zayıf | RAD | [B] "Most current medical magnetic resonance imaging (MRI) units utilize 1.5 T or 3 T field strengths." ; "five orders of magnitude weaker than the magnets used for MRI" |
 | [H] 0,01/5e-5 = 200 ; 1,5/5e-5 = 30.000 ; 3/5e-5 = 60.000 ([V] 50 μT orta değer) | — | hesap |
 
 ## Bölüm 6 — Faraday'ın keşfi
 | İddia | Kaynak URL | Kaynaktaki ifade |
 |---|---|---|
+| 29 Ağustos 1831 (ikinci kaynak) | https://en.wikipedia.org/wiki/Faraday%27s_law_of_induction | [DOĞ] "Faraday's notebook on August 29, 1831 describes an experimental demonstration of induction" (Royal Institution defteri faraday_notebooks__induction_0.pdf kaynaklı; RI PDF'i ve arşiv kopyası açılamadı) ; "transient currents when a bar magnet was rapidly moved into or out of a coil" ; "rotating a copper disk". Derste "Laboratuvar defterine göre" |
 | 29 Ağustos 1831; demir halka, iki sargı; açma/kapamada kısa akım | FAR | [B] "On 29 August 1831" ; two coils wound on an iron ring; brief current when the current in the other was switched on or off |
 | 1831 indüksiyon | HME ; EIA | [B] "In 1831 Faraday discovered electromagnetic induction" ; EIA: Faraday's 1831 finding |
 | Mıknatısı sargıya itmek akım doğurur (haftalar içinde) | FAR ; EIA | [B] pushing a bar magnet into a solenoid, within weeks ; EIA: "moving a magnet inside a coil of wire makes (induces) an electric current" |
@@ -93,6 +95,7 @@ Kısaltmalar: HME = https://en.wikipedia.org/wiki/History_of_Maxwell%27s_equatio
 | Maxwell 1861 sonunda sonuçlara baktı, ışık hızına bağladı, ışığın elektromanyetik olduğu sonucuna vardı | HME | [B] "In late 1861, Maxwell looked up their results ... linked them to the speed of light, and concluded that light is electromagnetic radiation" (WebFetch aktarımı) |
 | Makale 27 Ekim 1864'te gönderildi, 8 Aralık 1864'te okundu, 1865'te yayımlandı; ışık "alan içinde elektromanyetik yasalara göre yayılan elektromanyetik bozulma" | DYN | [B] sent 27 October 1864, first read 8 December 1864, approved 15 June 1865, Philosophical Transactions ; "an electromagnetic disturbance propagated through the field according to electromagnetic laws" |
 | Hertz 1887 Maxwell'in dalgalarını gösterdi; radyo dalgaları ışık hızında | https://imagine.gsfc.nasa.gov/science/toolbox/history_multiwavelength1.html ; NASAEM | [Ö] d2_kaynak.md: "In 1887 Heinrich Hertz demonstrated the existence of the waves predicted by Maxwell" ; "the velocity of radio waves was equal to the velocity of light!" |
+| [DOĞ] 2019'dan beri ε₀μ₀c² = 1 (c tanımlı) → bugünkü değerlerle c = 1/√(μ₀ε₀) tanım gereği tutar; derste "hiç ışık ölçmeden" kaldırıldı, dürüst not eklendi | https://en.wikipedia.org/wiki/Vacuum_permittivity | "making ε0 and μ0 measured quantities, neither of them exact, but related by the equation ε0μ0c² = 1" |
 | μ₀ = 1,25663706127 × 10⁻⁶ N/A²; ε₀ = 8,8541878188 × 10⁻¹² F/m | NIST | [N] "vacuum mag. permeability 1.256 637 061 27 e-6 N A^-2" ; "vacuum electric permittivity 8.854 187 8188 e-12 F m^-1" |
 | [H] 1/√(μ₀ε₀) = 299.792.457,9998 m/s ; 3,107e8 / c = 1,0364 (%3,6) | NIST | hesap |
 
@@ -119,7 +122,8 @@ Kısaltmalar: HME = https://en.wikipedia.org/wiki/History_of_Maxwell%27s_equatio
 ## Bölüm 12 — Dünya bir mıknatıs
 | İddia | Kaynak URL | Kaynaktaki ifade |
 |---|---|---|
-| Alanın çekirdekteki iletken demir alaşımlarındaki akımlardan doğduğuna inanılır; dış çekirdekte ısının sürdürdüğü konveksiyon, jeodinamo | EMF | [B] "believed to be generated by electric currents in the conductive iron alloys of its core" ; heat leaving the core drives convection in the liquid outer core ... geodynamo |
+| [DOĞ] Alan dış çekirdekteki sıvı demirdeki akımlardan, kendi kendini besleyen dinamoyla doğar ("inanılır" kaldırıldı) | http://www.geomag.bgs.ac.uk/education/earthmag.html ; EMF | BGS: "generated in the fluid outer core by a self-exciting dynamo process. Electrical currents flowing in the slowly moving molten iron generate the magnetic field." ; EMF (bugün): "generated by electric currents due to the motion of convection currents of a mixture of molten iron and nickel in Earth's outer core: these convection currents are caused by heat escaping from the core ... geodynamo" |
+| [eski satır] Alanın çekirdekteki iletken demir alaşımlarındaki akımlardan doğduğuna inanılır; dış çekirdekte ısının sürdürdüğü konveksiyon, jeodinamo | EMF | [B] "believed to be generated by electric currents in the conductive iron alloys of its core" ; heat leaving the core drives convection in the liquid outer core ... geodynamo |
 | Sıvı dış çekirdekte demir ve nikel | https://cavac.at/cavacopedia/Earth%27s_magnetic_field | GÜVENİLMEZ AYNA: sayfa içine yerleştirilmiş talimatlar içeriyordu; kullanılmadı; derste yalnız EMF'nin "iron alloys" ifadesi ("demir alaşımları") kaldı, bu aynadan gelen "nikel" ve "Kanada'dan Sibirya'ya" ifadeleri çıkarıldı |
 | 22–67 μT | EMF | [B] yukarıda |
 | Kuzey manyetik kutbu yılda 40 km'ye varan hareket, 1900'lerin başından beri hızlanıyor | EMF | [B] "Movements of up to 40 kilometres (25 mi) per year have been observed for the North Magnetic Pole." ; accelerated since the early 1900s |
@@ -138,7 +142,7 @@ Kısaltmalar: HME = https://en.wikipedia.org/wiki/History_of_Maxwell%27s_equatio
 | Hale 1908, Zeeman olayı, değiştirilmiş spektrohelioskop, lekelerde güçlü yoğun alan; Chicago 1868 – Pasadena 1938 | HAO | [B] "In 1908, Georges Ellery Hale used the Zeeman effect with a modified spectrohelioscope to establish that sunspots have" strong concentrated fields ; born Chicago June 29, 1868 ; died February 21, 1938, Pasadena |
 | Polarite yasası: büyük ölçekli alan ortalama 11 yılda yön değiştirir; manyetik döngü iki katı | HAO | [B] "cyclically changes polarity on average every 11 years" ; magnetic cycle twice the sunspot cycle |
 | Zeeman: çizginin alan içinde bölünmesi, ayrılma alanla büyür | — | [K] kavram; HAO yöntemi Zeeman olarak adlandırır |
-| Leke 3000 G; kutup 1–2 G | https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html | [Ö] d4_kaynak.md: "Sunspots: 3000 Gauss" |
+| Leke 3000 G; kutup 1–2 G | https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html ; https://arxiv.org/pdf/1712.08700 | [DOĞ] NASA: "Sunspots: 3000 Gauss" ; "Polar Field: 1 - 2 Gauss" ; Okamoto & Sakurai 2018: "A typical field strength in sunspots is around 3,000 G". HAO Hale için sayı vermez → derste "Hale'in 1908'de ölçtüğü gibi 3000 G" yerine "Hale'in gösterdiği türden, tipik olarak 3000 G" |
 | Lekeler: alan çizgileri ısı akışını engeller (NASA) | d4_kaynak.md | [Ö] d4 Güneş lekeleri satırı |
 | 1 G = 100 μT | EMF | [B] 25,000–65,000 nT = 0.25–0.65 G ; 10,000 μT = 100 G ; [H] |
 | [H] 3000/0,65 = 4615 ; 3000/0,25 = 12.000 ; 0,3/1,5 = 0,2 ; 0,3/3 = 0,1 | — | hesap |
@@ -167,3 +171,25 @@ Kısaltmalar: HME = https://en.wikipedia.org/wiki/History_of_Maxwell%27s_equatio
 - Özel göreliliğin yılı (1905) kaynakta doğrulanamadığı için derse yazılmadı.
 - Maxwell'in kendi hesapladığı hız sayısı (bazı kaynaklarda 310.740.000 m/s) okunan sayfada yoktu; derse yazılmadı.
 - İstanbul'un manyetik sapma değeri için kaynaklı sayı bulunamadı ("bulamadım"); okura NOAA hesaplayıcısı önerildi.
+
+## Bağımsız doğrulama (2026-10-30)
+[DOĞ] = doğrulama ajanı bu oturumda okudu (Wikipedia ham wikitext curl ile; diğerleri WebFetch/curl).
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Gilbert 1600 De Magnete; electricus; elektron; terrella; Dünya mıknatıs | GIL | [DOĞ] "Neo-Latin electricus, meaning 'like amber'" ; "amber is called elektron in Greek" ; "experiments with his model Earth called the terrella ... concluded that Earth was itself magnetic" |
+| Coulomb 1785; gümüş, bakır ya da ipek tel; merkezler arası ters kare; ikinci yöntem; ordu mühendisi | APS | [DOĞ] "a fine fiber of silver, copper, or silk" ; "inversely proportional to the square of the distance between the centers of the two globes" ; salınan iğne ve içi boş küre ; "trained army engineer" |
+| Ørsted, Ampère, Arago 1820; Faraday 1821; Sturgeon 1825 (20 kat); Ohm 1827 | MAG | [DOĞ] dördü de kelimesi kelimesine doğrulandı |
+| MR 1,5 / 3 T; Dünya beş basamak zayıf | RAD | [DOĞ] "Most current medical ... MRI units utilize 1.5 T or 3 T" ; "five orders of magnitude weaker" |
+| EIA: Faraday 1831; türbin; elektromıknatıs, rotor, stator; 2022 buhar %42, rüzgâr %10; PV doğrudan | EIA | [DOĞ] hepsi doğrulandı |
+| Kuzey manyetik kutbu 40 km/yıl, 1900'lerin başında 10 km/yıl; Brunhes–Matuyama ~780.000 yıl; Van Allen 1–2 ve 4–7 R⊕; Güneş rüzgârına kalkan | EMF | [DOĞ] "Movements of up to 40 km per year" ; "10 km per year at the beginning of the 1900s, up to 40 km per year in 2003" ; "about 780,000 years ago" ; "inner belt is 1–2 Earth radii out while the outer belt is at 4–7" ; "protecting Earth from the charged particles of the solar wind" |
+| Jansky 20,5 MHz/14,6 m; 30 m; Model T; 16 Eylül 1932 19.10; 23 sa 56 dk; Nisan 1933 Washington toplantısı; Ekim 1933 Proc. IRE; Reber 1937 | JAN | [DOĞ] hepsi doğrulandı. İkinci kaynak (NRAO) izin isteği yanıtsız kaldığı için açılamadı; 1932/1933 tarihleri tek kaynaklı |
+| Weber–Kohlrausch 1855, 3,107 × 10⁸; ışığa bağlamadılar; Maxwell 1861 sonu; Heaviside 1884 (Gibbs, Hertz); yirmi denklem | HME | [DOĞ] "The discovery of this relationship started in 1855" ; "found a value 3.107e8 m/s" ; "Weber and Kohlrausch did not make the connection" ; "Towards the end of 1861 ... looked up Weber and Kohlrausch's results" ; "not until 1884 that Oliver Heaviside ... grouped the twenty equations together into a set of only four" |
+| Makale 27 Ekim 1864 gönderildi, 8 Aralık 1864 okundu, 1865 yayımlandı | DYN | [DOĞ] "first read to the Royal Society on 8 December 1864, having been sent by Maxwell to the society on 27 October" |
+| Sinkrotron: 24 Nisan 1947 Floyd Haber, GE 70 MeV Schenectady; 1956 Oort–Walraven Yengeç; birkaç ay sonra Burbidge M87; kozmik radyo kaynaklarının çoğu; doğrusal kutuplanma | SYN | [DOĞ] hepsi doğrulandı |
+| Hale 1908 Zeeman; polarite ortalama 11 yılda; manyetik döngü iki kat | HAO | [DOĞ] doğrulandı; sayısal alan değeri vermez |
+| Faraday diski ilk homopolar jeneratör, 1831 | https://en.wikipedia.org/wiki/Homopolar_generator | [DOĞ] "Faraday disc, the first homopolar generator" ; "The first homopolar generator was developed by Michael Faraday during his experiments in 1831" |
+| Kutup ışıkları bu enlemde seyrek, çoğu zaman fotoğraf makinesiyle | d4_kaynak.md / d4.json | [Ö] d4: NASA "dijital fotoğraf makinelerinin algılayıcıları ... çıplak gözle göremediğin kutup ışıklarını bile kaydedebilir" ; "çok güçlü fırtınalarda bizim enlemlerimize de inebilir" |
+| Tutulma gözlüğü, sıradan güneş gözlüğü değil | d4_kaynak.md | [Ö] NASA güneş güvenliği satırları; "koruyucu güneş gözlüğü" ifadesi sıradan güneş gözlüğüyle karışabileceği için düzeltildi |
+| Michelson–Morley: beklenen fark bulunamadı | HME | [B] "measurements intended to detect Earth's motion through the aether conflicted with this idea" → "kim ölçerse ölçsün hep aynı" abartısı yumuşatıldı |
+| [H] Doğrulama ajanı hesapları: F_e/F_g = 2,2687e39 ; 1/e = 6,2415e18 ; 3600/e = 2,247e22 ; 2000/230 = 8,70 ; 1/√(μ₀ε₀) = 299.792.458,0 ; 3,107e8/c = 1,0364 ; c/50 = 5.995.849 m ; c/2,45e9 = 0,1224 m ; c/20,5e6 = 14,62 m ; 3000/0,67 = 4478 ; 3000/0,22 = 13.636 ; 90 − 41,0 − 29,0 ≈ 20° | — | python3 |
+- cavac.at: derste bu aynadan gelen ifade kalmadı. Yazarın EMF'ye atfettiği iki alıntı ("22 and 67 μT", "believed to be generated ... iron alloys") EMF'nin bugünkü metninde bulunamadı; kaynağı belirsiz olduğu için ikisi de BGS ile değiştirildi ("inanılır" kaldırıldı, 0,25–0,65 G → 0,22–0,67 G).
