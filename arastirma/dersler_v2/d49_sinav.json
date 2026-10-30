@@ -1,0 +1,58 @@
+[
+  {
+    "id": "d49-1",
+    "soru": "Kahn ve Woltjer'in 1959'daki zamanlama argümanı Yerel Grup'un kütlesini neye dayanarak tahmin etti?",
+    "secenekler": [
+      "Andromeda'nın parlaklığından yıldız sayısını hesaplayarak",
+      "Samanyolu ile Andromeda'nın Büyük Patlama'dan bu yana uzaklaşıp geri dönerek bugünkü uzaklık ve yaklaşma hızına ulaşması için gereken kütleyi hesaplayarak",
+      "Yerel Grup'taki sıcak gazın X-ışınlarını ölçerek",
+      "Arka plan ışımasındaki Sunyaev–Zeldovich gölgesini ölçerek"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre iki galaksinin aynı yerden çıkıp önce uzaklaştığı, sonra kendi çekimleriyle geri döndüğü varsayıldı ve görünenin en az on katı kütle bulundu. Bugünkü zamanlama kütlesi ~5×10¹² M☉ olup başka yöntemlerden büyük çıkıyor; konu tartışmalı.",
+    "ders": "d49",
+    "bolum": 1
+  },
+  {
+    "id": "d49-2",
+    "soru": "Bir galaksi kümesi Sunyaev–Zeldovich etkisiyle nasıl fark edilir?",
+    "secenekler": [
+      "Kümenin galaksileri radyo dalgalarında yanıp söner",
+      "Küme, arka plan ışımasında her frekansta eşit derecede parlak görünür",
+      "Arka plan ışımasının fotonları küme gazının elektronlarından enerji kazandığı için küme düşük frekansta sönük, yüksek frekansta parlak görünür; ~217 GHz'de etki sıfırdır",
+      "Kümenin kütlesi arka plandaki galaksileri yay biçiminde büker"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre bu ters Compton saçılmasıdır; etkinin büyüklüğü görüş doğrultusu boyunca gaz basıncına bağlıdır ve kütlenin iyi bir göstergesidir. Planck'ın 2015 kataloğu 1653 tespit, 1203 doğrulanmış küme içerir. Son seçenek kütleçekimsel mercektir.",
+    "ders": "d49",
+    "bolum": 6
+  },
+  {
+    "id": "d49-3",
+    "soru": "Cautun ve arkadaşlarının 2014 benzetim çözümlemesine göre bugünkü evrende hangi ifade doğrudur?",
+    "secenekler": [
+      "Boşluklar hacmin yaklaşık %78'ini kaplar ama maddenin yalnız ~%15'ini taşır; lifler ise maddenin ~%50'sini hacmin ~%6'sında taşır",
+      "Maddenin çoğu boşluklardadır",
+      "Kümeler hacmin yarısını kaplar",
+      "Duvarlar ve lifler aynı yoğunluktadır"
+    ],
+    "dogru": 0,
+    "aciklama": "Derse göre lifler %50, duvarlar %25, boşluklar %15, kümeler %10 kütle taşır; hacimde boşluklar %78, duvarlar %18, lifler %6'dır. Madde boşluklardan duvarlara, oradan liflerle kümelere akar.",
+    "ders": "d49",
+    "bolum": 10
+  },
+  {
+    "id": "d49-4",
+    "soru": "Baryon akustik salınım cetveli saydamlaşma anında yaklaşık 0,14 megaparsek yarıçaplıydı. Bugün neden yaklaşık 150 megaparsektir?",
+    "secenekler": [
+      "Ses dalgaları bugün hâlâ yayılmaya devam ettiği için",
+      "Galaksiler kabuğun içine düşüp onu şişirdiği için",
+      "Ölçümler yanlış olduğu için",
+      "Evren o zamandan (z = 1089) beri yaklaşık 1090 kat genişlediği için"
+    ],
+    "dogru": 3,
+    "aciklama": "Derse göre dalgalar ışık maddeden ayrılınca dondu; o zamandan beri uzunluklar 1 + z = 1090 kat büyüdü: 0,14 × 1090 ≈ 153 Mpc, yani ~490 milyon ışık yılı. İşaret 2005'te SDSS ve 2dF taramalarında bulundu.",
+    "ders": "d49",
+    "bolum": 14
+  }
+]

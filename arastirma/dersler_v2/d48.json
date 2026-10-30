@@ -1,0 +1,571 @@
+{
+  "id": "d48",
+  "unite": "samanyolu",
+  "yeni": true,
+  "baslik": "Kuasarlar ve Aktif Galaksiler: Beslenen Devlerin Işığı",
+  "ozet": "Yıldız gibi görünen radyo kaynaklarının 1963'te evrenin en parlak cisimleri olarak tanınmasını, kuasarın aslında beslenen bir süper kütleli kara delik olduğunu, ışığın nasıl üretildiğini ve neden bir sınırı olduğunu, aynı canavarın farklı açılardan neden farklı göründüğünü, ışıktan hızlı görünen jetleri, kuasarlarla evrenin nasıl ölçüldüğünü ve Webb'in gizemli küçük kırmızı noktalarını öğreneceksin. Sonunda İstanbul'dan 3C 273'ü aramanın gerçekçi yolunu konuşacağız.",
+  "on_bilgi": [
+    "d2",
+    "d16",
+    "d46",
+    "d47",
+    "d7"
+  ],
+  "bolumler": [
+    {
+      "baslik": "Yıldız gibi görünen radyo kaynakları",
+      "paragraflar": [
+        "1950'lerde radyo teleskoplar gökyüzünü taradıkça yüzlerce radyo kaynağı buldu. Wikipedia'ya göre Üçüncü Cambridge Kataloğu (kısaca 3C) 1960'a gelindiğinde yüzlerce kaynak listeliyordu. Bunların çoğu bir galaksiyle eşleşti, ama bazılarının yerinde optik teleskoplar yalnızca sönük, yıldız gibi bir nokta görüyordu. İlk örnekler 3C 48 ve 3C 273'tü; Sandage ve Matthews 3C 48'in optik karşılığını 1963'te yayımladı. d7'de gördüğün gibi bu “yıldızların” tayfındaki çizgiler hiçbir bilinen elemente uymuyordu. Gizemi çözmenin ilk adımı, kaynağın gökte tam olarak nerede olduğunu bulmaktı.",
+        "Bu düşündüğünden zordu. d12'de bir teleskobun ayırma gücünün dalga boyuna bağlı olduğunu görmüştün; radyo dalgaları uzun olduğu için o yıllarda radyo konumları kaba kalıyordu ve kalabalık gökte hangi noktanın kaynak olduğunu söylemek güçtü. Çözüm, Ay'ı bir perde gibi kullanmaktı. Ay keskin kenarlı bir cisimdir; bir radyo kaynağının önünden geçerken sinyal birden kesilir, arkasından çıkınca geri gelir. Ay'ın gökteki yeri çok iyi bilindiği için bu iki anın zamanı kaynağın konumunu verir. Bu yönteme Ay örtmesi denir.",
+        "CSIRO'nun Parkes sayfasına göre Avustralya'daki Parkes radyo teleskobunda Cyril Hazard'ın ekibi 1962'de 3C 273'ün üç örtmesini gözledi. 15 Mayıs'ta yalnızca çıkış görülebildi ve zamanlama kullanılamadı, ama kaynağın sıkışık olduğu anlaşıldı. 5 Ağustos'ta hem giriş hem çıkış ölçüldü; kaynak ufka yakın olduğu için John Bolton çanağın yaklaşık bir derece daha fazla eğilebilmesini sağlayacak bir değişiklik yaptı. 26 Ekim'de yalnızca giriş görüldü. 1962 sonunda bitirilen hesaplar konumu 0,1 yay saniyesinden daha iyi verdi ve kaynağın A ve B adlı iki parçadan oluştuğunu gösterdi. Aralık 1962'de bu konum Caltech'te Tom Matthews'a, ondan da Maarten Schmidt'e ulaştı.",
+        "İki parçanın kendine özgü kişilikleri vardı. CSIRO sayfasına göre A bileşeni radyo ışığının yaklaşık yüzde 90'ını veriyordu ve yüksek frekanslara doğru hızla sönüyordu; B bileşeni ise frekansla neredeyse değişmeyen bir ışık veriyordu ve ışığının yaklaşık yüzde 80'i yarım yay saniyelik küçük bir çekirdekten geliyordu. B'nin konumu bugün VLBA radyo interferometresiyle çok keskin biçimde ölçülmüştür. 1963 yayınlarının öyküsünü anlatan bir makalenin başlığı, onları hem ilk kuasarın hem de ilk galaksi dışı radyo jetinin yayınları diye anar. Hazard'ın verisi 1971'de yeniden çözümlendi; 2011'deki bir denetim de konumda yalnızca yay saniyesinin onda biri mertebesinde düzeltmeler buldu."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Ay örtmesi konumu neden bu kadar keskin verir?",
+        "metin": "d10'a göre Ay yıldızlara göre 27,32 günde 360° dolanır. 1. adım: Günde 360 ÷ 27,32 ≈ 13,18°. 2. adım: Saatte 13,18 ÷ 24 ≈ 0,549°. 3. adım: Bir derece 3.600 yay saniyesidir; saatte 0,549 × 3.600 ≈ 1.977 yay saniyesi. Bir saat 3.600 saniye olduğundan 1.977 ÷ 3.600 ≈ 0,55 yay saniyesi bir saniyede. 4. adım: Ay'ın kenarı kaynağın üstünden saniyede yaklaşık 0,55 yay saniyesi geçtiğine göre, sinyalin kesilme anını saniyenin beşte biri doğrulukla ölçmek kenarın konumunu kabaca 0,1 yay saniyesine bağlar. Tek bir örtme gökte yalnızca bir çizgi verir (Ay'ın kenarı); giriş ve çıkış farklı kenar noktalarında olduğundan iki çizginin kesiştiği yer kaynağın noktasıdır. Sonuç: Ay'ın yavaş ve çok iyi bilinen hareketi, kaba bir radyo teleskobunu 0,1 yay saniyesi keskinliğinde bir konum ölçere çevirir."
+      },
+      "akilda": "3C 273 gibi bazı radyo kaynaklarının optik karşılığı yıldız gibi bir noktaydı. 1962'de Parkes'te Ay örtmeleriyle 3C 273'ün konumu 0,1 yay saniyesinden iyi ölçüldü ve bu konum Schmidt'e ulaştı."
+    },
+    {
+      "baslik": "1963: Schmidt'in fark ettiği",
+      "paragraflar": [
+        "Schmidt, Palomar'ın 200 inçlik (yaklaşık 5 metrelik) teleskobuyla o yıldızsı noktanın tayfını aldı. d7'de gördüğün gibi çizgilerin, hidrojenin Balmer serisi olduğunu ama hepsinin yüzde 15,8 daha uzun dalga boylarına kaydığını fark etti: z = 0,158. Sonuç 16 Mart 1963'te Nature dergisinin 197. cildinde art arda dört mektupla yayımlandı: Hazard, Mackey ve Shimmins'in örtme konumu, Schmidt'in tayf yorumu, J. B. Oke'nin notu ve Greenstein ile Matthews'ın 3C 48 çalışması. d17'deki Hubble–Lemaître yasası, bu kırmızıya kaymanın 3C 273'ü milyarlarca ışık yılı uzağa yerleştirdiğini söyler.",
+        "Uzaklık şaşırtıcı bir parlaklık demekti. Wikipedia'ya göre 3C 273 görünür ışıkta Güneş'ten 4 trilyon kattan fazla parlaktır, mutlak kadiri −26,7'dir ve içinde oturduğu dev eliptik galaksinin tamamını 16 kattan fazla bastırır (d7). Bir yıldız gibi küçük görünen bir nokta, bütün bir galaksiden parlak olabiliyordu. Gökbilimciler bunlara yıldızsı radyo kaynağı dedi; Wikipedia'ya göre bunun kısaltması olan “quasar” sözcüğünü ilk kez Hong-Yee Chiu, Mayıs 1964'te Physics Today'deki bir yazısında kullandı. Türkçede kuasar diyoruz. Schmidt'in keşfi o kadar ses getirdi ki 11 Mart 1966'da Time dergisinin kapağına çıktı.",
+        "Adın bir ironisi var: kuasar “radyo kaynağı” diye adlandırıldı, ama bugün bildiğimiz kuasarların çoğu radyoda sessizdir. Wikipedia'ya göre kuasarların yalnızca yaklaşık yüzde 10'u radyoda güçlüdür, yaklaşık yüzde 90'ı radyo sessizdir. Yani ilk kuasarlar, radyo teleskopların o yıllarda görebildiği azınlıktı. Kuasarı tanımlayan radyo değil, son derece küçük bir bölgeden gelen olağanüstü parlaklıktır."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Kadirlerden 3C 273'ün uzaklığı",
+        "metin": "Uzaklık modülü: m − M = 5 × log(d / 10 pc). 3C 273 için görünür kadir m = 12,9, mutlak kadir M = −26,7. 1. adım: m − M = 12,9 − (−26,7) = 39,6. 2. adım: log(d / 10) = 39,6 ÷ 5 = 7,92; d / 10 = 10^7,92 ≈ 8,3 × 10⁷; d ≈ 8,3 × 10⁸ parsek ≈ 830 megaparsek. 3. adım: Karşılaştırma: Wikipedia kırmızıya kaymadan hesaplanan parlaklık uzaklığını 749 megaparsek verir. Aynı mertebe, ama birebir değil; bu basit formül genişleyen evrenin ince düzeltmelerini içermez (d17) ve kuasarın parlaklığı da zamanla değişir. Sonuç: iki yol da 3C 273'ü yaklaşık 750–830 megaparsek, yani 2,5 milyar ışık yılı mertebesinde bir uzaklığa koyar; yıldız gibi görünen bu nokta Samanyolu'nun çok dışındadır."
+      },
+      "akilda": "Schmidt 1963'te 3C 273'ün çizgilerinin %15,8 kaymış Balmer çizgileri olduğunu gösterdi (Nature, 16 Mart 1963). Bu uzaklıkta 3C 273 Güneş'in trilyonlarca katı parlaktır. “Kuasar” adı 1964'te Chiu'dan gelir; kuasarların yalnız ~%10'u radyoda güçlüdür."
+    },
+    {
+      "baslik": "Enerji bilmecesi: yıldızlar yetmez",
+      "paragraflar": [
+        "Bu ışığı ne üretiyor? Wikipedia'ya göre tipik bir kuasar yaklaşık 10⁴⁰ watt saçar; en güçlüleri Samanyolu'nun binlerce katı enerji yayar. İlk akla gelen yanıt, çok sayıda yıldızdır. Ama iki sorun var. Birincisi verim: d4'te gördüğün gibi Güneş'teki füzyon yanan kütlenin yalnızca yaklaşık yüzde 0,7'sini enerjiye çevirir. İkincisi boyut: birazdan göreceğin gibi kuasarın ışığı günler ya da haftalar içinde değişir, yani ışık çok küçük bir bölgeden gelir. O küçük bölgeye bu kadar ışığı verecek yıldız sığmaz.",
+        "d46'da gördüğün gibi 1964'te Salpeter ve Zeldoviç başka bir kaynak önerdi: sıkışık ve çok kütleli bir cisme düşen madde. Kuasar, beslenen bir süper kütleli kara deliktir. d7'de anlatılan yığılma diskinde gaz kara deliğin çevresinde dönerken açısal momentumunu yavaş yavaş kaybeder, içeri kıvrılır ve kütleçekim enerjisi sürtünmeyle ısıya, ısı da ışığa dönüşür. Wikipedia'nın kuasar maddesine göre bu yolla düşen kütlenin kabaca yüzde 5,7 ile yüzde 32'si enerjiye çevrilir; kara delik maddesi üst değeri yüzde 42 verir. Fark, kara deliğin dönmesine ilişkin varsayımlardan gelir (d46). Hangisini alırsan al, füzyondan en az sekiz kat verimlidir.",
+        "Bu yüzden kuasar, bir galaksinin merkezindeki küçük bir bölgeye her yıl birkaç Güneş kütlesi kadar gaz akınca yanan bir fenerdir. Gaz biterse fener söner. Wikipedia'ya göre bir kuasar, kara delik yakınındaki gazı ve tozu tükettiğinde sıradan bir galaksiye dönüşür. d46'da Lynden-Bell'in 1969'daki öngörüsünü görmüştün: yakın galaksilerin sessiz çekirdekleri, bir zamanlar parlayan kuasarların sönmüş kalıntılarıdır. Samanyolu'nun Sgr A*'ı da bugün çok az madde yuttuğu için sönüktür (d16)."
+      ],
+      "ornek": {
+        "baslik": "Örnek: 3C 273 yılda ne kadar gaz yutuyor?",
+        "metin": "1. adım (parlaklık): Görünür ışıkta Güneş'in 4 × 10¹² katı. Güneş'in ışınımı 3,828 × 10²⁶ W (d2). L ≈ 4 × 10¹² × 3,828 × 10²⁶ ≈ 1,53 × 10³⁹ W. 2. adım (verim ε = 0,1): Kütle akışı Ṁ = L ÷ (ε × c²) ≈ 1,53 × 10³⁹ ÷ (0,1 × 8,99 × 10¹⁶) ≈ 1,7 × 10²³ kg/s. 3. adım: Bir yılda 1,7 × 10²³ × 3,156 × 10⁷ ≈ 5,4 × 10³⁰ kg ≈ 2,7 Güneş kütlesi. 4. adım (füzyonla karşılaştırma, ε = 0,007): aynı ışık için yılda yaklaşık 39 Güneş kütlesi yanmalıydı. Sonuç: yalnızca görünür ışığını açıklamak için 3C 273'ün kara deliği yılda yaklaşık 3 Güneş kütlesi yutmalı. Kuasar her dalga boyunda ışıdığı için gerçek değer bundan büyüktür; bu sayı bir alt sınırdır."
+      },
+      "akilda": "Kuasar, yığılma diskinden beslenen bir süper kütleli kara deliktir. Yığılma kütlenin %5,7'sinden %32–42'sine kadarını ışığa çevirir; füzyon yalnız %0,7. 3C 273'ün görünür ışığı bile yılda ~3 Güneş kütlesi yutmayı gerektirir."
+    },
+    {
+      "baslik": "Eddington sınırı: kuasarın gaz pedalı",
+      "paragraflar": [
+        "d46'da Eddington sınırını bir büyüme hız sınırı olarak gördün. Kuasarlar için aynı sınır bir parlaklık tavanıdır. Işık gazı dışarı iter, kütleçekimi içe çeker; ışık çok güçlenirse kara deliği besleyen gazı üfler. Yue Shen'in derlemesine göre bu tavan L_Edd ≈ 1,26 × 10³¹ W × (M / M☉) kadardır. Kuasarın parlaklığının bu tavana oranına Eddington oranı denir; arabanın gaz pedalının ne kadar basıldığı gibi düşünebilirsin.",
+        "Bu sınırın kullanışlı bir yanı var: ters çevrilirse kütle için alt sınır verir. Bir kuasarın parlaklığını ölçersen, kara deliği en az L ÷ 1,26 × 10³¹ W kadar Güneş kütlesi olmalıdır; yoksa ışığı kendi beslenmesini durdururdu. Tipik bir kuasarın 10⁴⁰ watt'ı için bu, en az yaklaşık 8 × 10⁸ Güneş kütlesi demektir. Wikipedia'ya göre 3C 273'ün kara deliğinin yankı haritalamayla (d46) ölçülen kütlesi 886 ± 187 milyon Güneş kütlesidir.",
+        "Sınır bir duvar değildir. Wikipedia'nın Eddington parlaklığı maddesine göre yığılma diskleri yapılarına bağlı olarak bu sınırın 10 ile 100 katına çıkabilir ve bazı parlak X ışını kaynakları için Eddington üstü beslenme modelleri öneriliyor. ScienceDaily'nin aktardığına göre Haberler sekmesindeki 2026 simülasyonunda da erken evrendeki kara delikler bugün mümkün olandan onlarca kat hızlı büyüyor. Bir kuasarın gerçekten sınırı aşıp aşmadığını anlamak ise zordur, çünkü hem toplam parlaklığı hem de kütleyi ayrı ayrı belirsizliklerle ölçmek gerekir.",
+        "Bu ters çevirmenin bir tuzağı var. d46'da gördüğün UHZ1'in kütlesi tam olarak bu yolla bulundu: Natarajan ve arkadaşlarına göre Chandra'nın ölçtüğü toplam ışınım yaklaşık 5 × 10⁴⁵ erg/s, yani 5 × 10³⁸ W'tır; kara deliğin tam Eddington sınırında beslendiği varsayılınca 5 × 10³⁸ ÷ 1,26 × 10³¹ ≈ 4 × 10⁷ Güneş kütlesi çıkar. Kara delik sınırın yalnızca onda birinde yanıyorsa kütle on kat büyük, sınırı aşıyorsa daha küçük olur. Chandra'nın duyurusunun 10 ile 100 milyon arasında bir aralık vermesi bu yüzdendir. Bir kütle tahmininin hangi varsayıma dayandığını sormak, bu alanda en önemli alışkanlıktır."
+      ],
+      "ornek": {
+        "baslik": "Örnek: 3C 273 gaz pedalının ne kadarına basıyor?",
+        "metin": "1. adım (tavan): M ≈ 8,86 × 10⁸ M☉. L_Edd ≈ 1,26 × 10³¹ × 8,86 × 10⁸ ≈ 1,12 × 10⁴⁰ W. 2. adım (görünür ışık): Önceki örnekten L ≈ 1,53 × 10³⁹ W. 3. adım (oran): 1,53 × 10³⁹ ÷ 1,12 × 10⁴⁰ ≈ 0,14. Sonuç: yalnızca görünür ışıkla 3C 273, Eddington tavanının yaklaşık yüzde 14'ünde yanıyor. Kuasar morötesinden X ışınına kadar her dalga boyunda ışıdığı ve kütlenin kendisi de yaklaşık yüzde 20 belirsiz olduğu için gerçek oran daha yüksektir; ama bu kaba hesap bile 3C 273'ün pedalı epey sert bastığını gösterir."
+      },
+      "akilda": "Eddington tavanı L_Edd ≈ 1,26 × 10³¹ W × (M/M☉); parlaklığın buna oranı Eddington oranıdır. Ters çevrilince kütle için alt sınır verir: 10⁴⁰ W'lık kuasar en az ~8 × 10⁸ M☉ ister. 3C 273'ün görünür ışığı tek başına tavanın ~%14'üdür."
+    },
+    {
+      "baslik": "Kuasar ne kadar küçük? Değişkenlikten boyut",
+      "paragraflar": [
+        "Bir kuasarın boyunu doğrudan göremeyiz; çok uzak ve çok küçüktür. Ama ışığının ne kadar hızlı değiştiğine bakarak boyuna bir üst sınır koyabiliriz. Wikipedia'ya göre kuasarların parlaklığı aylarla saatler arasında değişen sürelerde değişir ve birkaç haftada değişen bir kuasar birkaç ışık haftasından büyük olamaz.",
+        "Mantık şöyle. Kocaman bir bölgenin her yanı tam aynı anda parlasın. Sana en yakın kenarın ışığı önce, en uzak kenarın ışığı ise bölgenin boyunu ışığın geçmesi için gereken süre kadar sonra ulaşır. Bu yüzden ani bir parlama sana yayılmış, bulanık bir parlama olarak gelir. Bölge bir ışık yılı boyundaysa, en hızlı değişim bile en az bir yıla yayılır. Tersinden: ışık birkaç günde değişiyorsa, onu yayan bölge birkaç ışık gününden büyük olamaz. Benzetmenin sınırı: bölgenin her yerinin bir sinyalle aynı anda tetiklenmesi gerekmez; ama tetiklense bile sonuç budur, tetiklenmezse değişim daha da yavaşlar.",
+        "Wikipedia'ya göre 3C 273'ün parlaklığı neredeyse her dalga boyunda birkaç günden on yıllara uzanan sürelerde değişir. 3C 273, 1970'te bulunan ilk galaksi dışı X ışını kaynaklarındandır. d46'da yankı haritalamanın NGC 5548'de 15,6 ışık günlük bir uzaklık verdiğini görmüştün. Demek ki bir galaksinin bütün enerjisini aşan ışık, ölçeği ışık günleriyle anlatılan, yani Neptün'ün yörüngesinin onlarca katı kadar bir bölgeden gelir. Galaksinin tamamı ise yüz binlerce ışık yılıdır."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Birkaç günde değişen ışık ne büyüklükte bir yerden gelir?",
+        "metin": "Bir ışık günü = 86.400 s × 299.792 km/s ≈ 2,59 × 10¹⁰ km. 1. adım: 3 ışık günü ≈ 7,77 × 10¹⁰ km. AB'ye çevir (1 AB ≈ 1,496 × 10⁸ km): ≈ 520 AB. 2. adım: 3C 273'ün kara deliği 8,86 × 10⁸ M☉; Schwarzschild yarıçapı (d16) ≈ 2,953 km × 8,86 × 10⁸ ≈ 2,62 × 10⁹ km ≈ 17,5 AB. 3. adım: 520 ÷ 17,5 ≈ 30. Sonuç: üç günde değişen ışık, kara deliğin olay ufkunun yaklaşık 30 katından küçük bir bölgeden gelmelidir. Neptün 30 AB'de (d9); bölge, Neptün'ün yörüngesinden yaklaşık 17 kat büyük ama galaksiye göre bir toz zerresi kadardır."
+      },
+      "akilda": "Işık t sürede değişiyorsa kaynak c × t'den büyük olamaz. Kuasarlar saatlerle aylar arasında değişir; 3C 273 günlerle on yıllar arasında. Bu, kuasar ışığının olay ufkunun onlarca katı büyüklükte, Güneş Sistemi ölçeğinde bir bölgeden geldiğini gösterir."
+    },
+    {
+      "baslik": "Merkezin anatomisi: disk, bulutlar ve tozlu simit",
+      "paragraflar": [
+        "Bugünkü resimde bir aktif galaksi çekirdeği iç içe katmanlardan oluşur. En içte kara delik ve onu besleyen yığılma diski vardır (d7). Wikipedia'nın Seyfert galaksisi maddesine göre geniş çizgiler diskin üstündeki gazdan gelir; çizgi genişlikleri saniyede 10.000 km'ye kadar çıkar ve kısa sürelerde değişir. Bu, d46'da tanıştığın geniş çizgi bölgesidir; aynı kaynak boyunu 0,1 ile 1 parsek arasında verir. NGC 5548'in 15,6 ışık günlük yankı uzaklığı yaklaşık 0,013 parseke karşılık gelir; yani bölgenin boyu galaksiden galaksiye çok değişir.",
+        "Daha dışarıda dar çizgi bölgesi bulunur. Buradaki gaz daha yavaş hareket eder; çizgilerin genişliği saniyede birkaç yüz km'dir. Dar çizgiler ölçülebilir biçimde değişmez; bu da bölgenin büyük olduğunu gösterir. Aynı kaynağa göre NGC 1068'de bu çizgiler çapı bin ışık yılını aşan bir bölgeden gelir. Karşılaştır: geniş çizgiler ışık günleri, dar çizgiler ışık yüzyılları ölçeğindedir.",
+        "Bu yapıyı saran bir toz halkası, bir simit vardır. Antonucci ve Miller'in 1985'teki yorumuna göre bu opak ve tozlu simit, belirli açılardan bakınca diski ve geniş çizgi bölgesini doğrudan görmemizi engeller. Toz, emdiği ışığı ısınarak kızılötesinde yeniden yayar. Son olarak bazı çekirdeklerde kutuplardan dışarı fırlayan jetler vardır. Joseph Shields'in tarih derlemesine göre örtülü aktif çekirdekler fikri, gökyüzündeki X ışını arka planının büyük kısmını aktif çekirdeklerin üretebileceği önerisini de destekledi. Bu katmanlı resmi bir soğana benzetebilirsin; benzetmenin sınırı, gerçekte katmanların düzgün kabuklar değil, bulutlu, eğri ve sürekli değişen yapılar olmasıdır.",
+        "Simit fikrinin başka destekleri de geldi. Shields'e göre Antonucci 1984'te benzer bir resmi 3C 234 radyo galaksisi için önermişti; Pogge'nin 1988'de bazı Seyfert'lerde gözlediği iyonlaşma konileri de bu geometriyi destekledi. İyonlaşma konisi, merkezin morötesi ışığının yalnızca simidin açık bıraktığı iki koni boyunca kaçıp çevredeki gazı aydınlatmasıyla oluşan, iki zıt yöne açılan parlak gaz bölgesidir. Bir el fenerinin önüne kalın bir halka koyarsan ışık yalnızca halkanın deliğinden iki yöne çıkar; gökte gördüğümüz de budur. Seyfert maddesine göre bütün bu çekirdek yapısı 100 parsekten küçük bir bölgeye sığar ve Samanyolu'na yaklaşık 27 megaparsek içinde Seyfert davranışı gösteren birkaç düzine galaksi vardır."
+      ],
+      "akilda": "İçten dışa: kara delik ve yığılma diski; ışık günleri ölçeğinde, saniyede 10.000 km'ye varan hızlarla geniş çizgi bölgesi; yüzlerce ışık yılı boyunca uzanan, birkaç yüz km/s'lik dar çizgi bölgesi; görüşü kesebilen tozlu simit; ve bazılarında jetler."
+    },
+    {
+      "baslik": "Birleşik model: aynı canavar, farklı açılar",
+      "paragraflar": [
+        "d7'de Seyfert galaksilerinin iki türünü görmüştün: tip 1'lerin tayfında hem geniş hem dar çizgiler, tip 2'lerde yalnızca dar çizgiler vardır. Tip 2'lerde geniş çizgi bölgesi hiç yok mu, yoksa gizli mi? Shields'in derlemesine göre Rowan-Robinson 1977'de bölgenin tozla gizlenmiş olabileceğini ileri sürdü. Asıl kanıt 1985'te geldi. Robert Antonucci ve Joseph Miller, en ünlü tip 2 Seyfert olan NGC 1068'in (M77) yalnızca kutuplanmış ışığına baktı. Kutuplanma, ışık dalgasının titreşim yönünün belirli bir doğrultuda düzenlenmesidir; bir yüzeyden ya da elektronlardan saçılan ışık kutuplanır. Kutuplanmış ışıkta tayf, sıradan bir tip 1 Seyfert tayfı gibi görünüyordu.",
+        "Açıklama zarifti: opak, tozlu bir simit merkezi doğrudan görmemizi engelliyordu; ama simidin üstündeki gazdaki elektronlar merkezin ışığının bir kısmını bize doğru saçıyordu. Köşeyi dönmüş bir koridoru göremezsin ama tavandaki ayna sana arkasını gösterir. Saçılan ışık kutuplanmış olduğu için bu ayna görüntüsü kutuplanma süzgeciyle ayıklanabildi. Sonuç: tip 1 ile tip 2 arasındaki fark büyük ölçüde bakış açısıdır; simide kenardan bakarsan tip 2, yukarıdan bakarsan tip 1 görürsün. Bu düşünceye birleşik model denir.",
+        "Aynı mantık jetlere de uygulandı. Shields'e göre Blandford ve Rees 1978'de, bir BL Lac cisminin aslında jetinin eksenine bakılan bir radyo galaksisi olduğunu önerdi. Işığa yakın hızla bize doğru gelen jetin sürekli ışığı çok güçlenir ve tayf çizgileri bu parlaklığın içinde zayıf kalır. Gökbilimciler sonra çekirdekteki radyo ışığının dış loblardakine oranını bakış açısının bir göstergesi olarak kullandı.",
+        "Modelin sınırları da var. Shields'e göre radyo gürültülü ve radyo sessiz ayrımı açıyla açıklanamaz, çünkü geniş loblardaki radyo ışığı her yöne kabaca eşit yayılır. Radyo gürültülü çekirdekler eliptik galaksilerle, radyo sessizler sarmallarla ilişkili görünür. Seyfert maddesi de birleşik modelin bütün farkları açıklayıp açıklamadığının henüz belli olmadığını not eder. Bugünkü özet şöyle: bakış açısı çok şeyi açıklar, ama kara deliğin gücü, beslenme hızı ve ev sahibi galaksi de işin içindedir."
+      ],
+      "akilda": "Antonucci ve Miller (1985), tip 2 Seyfert NGC 1068'in kutuplanmış ışığında gizli bir tip 1 tayfı buldu: tozlu simit merkezi gizliyor, elektronlar ışığı ayna gibi saçıyordu. Birleşik model türleri büyük ölçüde bakış açısıyla açıklar; ama radyo gücü ve ev sahibi galaksi gibi farklar açıyla açıklanamaz."
+    },
+    {
+      "baslik": "Jetler ve radyo galaksileri",
+      "paragraflar": [
+        "NASA'ya göre aktif çekirdeklerin yaklaşık onda birinde, ışığa yakın hızla dışarı fırlayan madde akıntıları, yani jetler oluşur (d7). Ölçekleri baş döndürücüdür. Wikipedia'ya göre 3C 273'ün görünür jeti yaklaşık 200.000 ışık yılı uzunluğundadır ve gökte 23 yay saniyesi tutar; M87'nin jeti çekirdekten en az 4.900 ışık yılı uzanır (d16). Yani olay ufku AB'lerle ölçülen bir kara deliğin çevresinden çıkan madde, galaksinin kendisinden uzun bir fıskiye oluşturabilir.",
+        "Jetin ışığı nereden gelir? Wikipedia'ya göre 3C 273'ün jetinden gelen radyo, kızılötesi ve görünür ışık senkrotron ışımasıdır. Senkrotron ışıması, manyetik alan içinde sarmal çizerek dönen ve ışığa yakın hızla hareket eden elektronların yaydığı ışıktır. Bir jette bu ışığı görmek, orada hem güçlü manyetik alanlar hem de ışığa yakın hızlı elektronlar olduğunu söyler.",
+        "Jetler galaksinin dışına çıkınca çevredeki gaza çarpar ve dev radyo lobları şişirir. Bernie Fanaroff ve Julia Riley 1974'te radyo galaksilerini iki sınıfa ayırdı; buna Fanaroff–Riley sınıflaması denir. Wikipedia'ya göre FR I türünde ışık merkeze yakın parlaktır ve uçlara doğru söner; bunların çoğunda jet görülür ve ev sahipleri çoğu zaman zengin kümelerdeki büyük galaksilerdir. Küme gazının basıncı bu yapıları bükebilir. FR II türü ise daha parlaktır ve tam tersine uçlarda parlar: lobların ucunda sıcak noktalar bulunur. Ayrımın, enerjinin merkezden dışarı nasıl taşındığıyla ve dış bölgelerde radyo ışığına nasıl dönüştüğüyle ilgili olduğu düşünülür.",
+        "FR II jetlerinin çoğu zaman tek taraflı görünmesinin nedeni göreli ışınlamadır. Işığa yakın hızla bize doğru gelen maddenin ışığı ileri doğru toplanır ve güçlenir; bizden uzaklaşan karşı jet ise aynı etkiyle sönükleşir. İki jet de vardır ama yalnız biri parlar. Bu etki birazdan göreceğin ışıktan hızlı yanılsamayla ve blazarlarla aynı köklerden gelir."
+      ],
+      "akilda": "Jetler, aktif çekirdeklerin ~onda birinde görülür ve 200.000 ışık yılına kadar uzanabilir; ışıkları manyetik alanda dönen hızlı elektronların senkrotron ışımasıdır. Fanaroff–Riley (1974): FR I merkeze yakın, FR II uçlarda (sıcak noktalar) parlar. Göreli ışınlama jetleri tek taraflı gösterir."
+    },
+    {
+      "baslik": "Işıktan hızlı yanılsama",
+      "paragraflar": [
+        "Bazı jetlerde madde düğümlerinin gökte ışıktan hızlı ilerlediği görülür. Wikipedia'ya göre bu ışıktan hızlı görünen hareket bazı radyo galaksilerinde, BL Lac cisimlerinde, kuasarlarda ve blazarlarda ölçülür. Martin Rees 1966'da, göreli hızla hareket eden bir cismin uzak bir gözlemciye ışıktan çok daha hızlı bir yanal hızla ilerliyor görünebileceğini öngördü. 1968–1970 arasında Amerikalı ve Avustralyalı bir ekip (Gubbay ve arkadaşları), kıtalar arası radyo interferometrisiyle (VLBI) 3C 279 kuasarının en az ışık hızının iki katıyla genişliyor göründüğünü ölçtü. VLBI, d16'da EHT'de gördüğün ilkeyle birbirinden binlerce km uzaktaki radyo teleskoplarını tek bir sanal teleskop gibi çalıştırır.",
+        "Rekorlar etkileyicidir. Wikipedia'ya göre 3C 273'ün iç jetinde ışık hızının 9,6 katına kadar görünür hızlar ölçüldü. M87'nin iç jetinde 6 kata kadar çıkan hızlar görüldü; ama bu, jetin bakış doğrultusuyla 19 dereceden küçük bir açı yapmasını gerektirir, oysa başka kanıtlar yaklaşık 43 derece diyor. Ekip sonradan hareketin, jetin içindeki bir desenin ilerlemesi olabileceğini önerdi. Samanyolu'nda 1994'te bulunan GRS 1915+105, haftalar içinde yaklaşık 0,5 yay saniyesi açılan düğümleriyle “mikrokuasar” adını aldı. 3C 273'ün Wikipedia sayfası, kaynağın ışıktan hızlı genişlemesini inceleyen 1981 ve 1991 tarihli çalışmalara gönderme yapar; yani bu ölçümler onlarca yıldır tekrarlanıyor.",
+        "Hiçbir şey ışıktan hızlı gitmiyor (d25). Yanılsamanın anahtarı, ışığın yolculuk süresidir. Bize doğru ve biraz yana doğru ışığa yakın hızla giden bir düğüm düşün. Düğüm A noktasında bir ışık yayar, sonra B'ye gidip bir ışık daha yayar. B bize A'dan daha yakın olduğu için ikinci ışığın alacağı yol daha kısadır; iki ışık bize gerçekte aradan geçen süreden çok daha kısa arayla ulaşır. Gökte gördüğümüz yalnızca yandaki kaymadır; bu yan kaymayı kısalmış süreye bölünce ışıktan hızlı bir sayı çıkar. Etki, hız ışığa çok yakınsa ve hareket neredeyse bize dönükse en güçlüdür."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Işığın %99'uyla giden bir düğüm ne hızla görünür?",
+        "metin": "Düğüm ışık hızının 0,99'uyla, bakış doğrultumuza 8 derece açıyla 10 yıl boyunca gitsin. 1. adım: Aldığı yol 0,99 × 10 = 9,9 ışık yılı. 2. adım: Bunun bize doğru bileşeni 9,9 × cos 8° ≈ 9,9 × 0,990 ≈ 9,80 ışık yılı; yana doğru bileşeni 9,9 × sin 8° ≈ 9,9 × 0,139 ≈ 1,38 ışık yılı. 3. adım: Son konumdan çıkan ışık 9,80 ışık yılı daha az yol alır, yani 9,80 yıl erken varır. İki ışık bize 10 − 9,80 ≈ 0,20 yıl arayla ulaşır. 4. adım: Görünür yanal hız = 1,38 ışık yılı ÷ 0,20 yıl ≈ 7,0 kat ışık hızı. Aynı formülle (görünür hız = β × sin θ ÷ (1 − β × cos θ), β hızın ışık hızına oranı, θ açı) 30 derecede ≈ 3,5, 2 derecede ≈ 3,3 kat çıkar. Sonuç: ışık hızının %99'uyla giden bir düğüm, uygun açıdan bakılınca ışıktan yaklaşık 7 kat hızlı görünür; açı çok küçük de çok büyük de olsa etki zayıflar."
+      },
+      "akilda": "Işıktan hızlı görünen hareket bir yanılsamadır: bize doğru ışığa yakın hızla gelen düğümün ışıkları gerçek süreden çok daha kısa arayla gelir. Rees 1966'da öngördü, 3C 279'da 1968–1970'te ölçüldü; 3C 273'te 9,6c'ye kadar görünür hız var."
+    },
+    {
+      "baslik": "Blazarlar: jetin namlusuna bakmak",
+      "paragraflar": [
+        "Jet neredeyse tam bize dönükse aktif çekirdeğe blazar denir (d7). Göreli ışınlama ışığı öyle güçlendirir ki tayfa jetin sürekli ışığı egemen olur ve parlaklık hızla, şiddetle değişir. Wikipedia 3C 273'ün türünü bile “blazar; Seyfert 1” diye listeler; yani en ünlü kuasar, jetine epey yakın bir açıdan baktığımız bir kaynaktır. Blazarlar radyo dalgalarından gama ışınlarına kadar geniş bir aralıkta ışır; aşağıdaki örnekte bir blazar radyodan çok yüksek enerjili gama ışınlarına kadar izlendi.",
+        "Blazarlar çok habercili gökbilimin de (d16) kahramanı oldu. 22 Eylül 2017'de IceCube nötrino dedektörü yaklaşık 290 TeV enerjili bir nötrino yakaladı; olaya IceCube-170922A adı verildi. Nötrino, maddeyle neredeyse hiç etkileşmeyen, yüksüz ve çok hafif bir temel parçacıktır (d32). Bir teraelektronvolt (TeV), 10¹² elektronvolttur. Nötrinonun geldiği yönde, gama ışınında parlama evresinde olan bilinen bir blazar vardı: TXS 0506+056. Fermi-LAT, MAGIC ve birçok başka gözlemevi radyodan gama ışınına kadar kaynağı izledi ve blazar ilk kez çok yüksek enerjili gama ışınlarında saptandı. Ortak makaleye göre bu rastlantı, blazarların yüksek enerjili nötrinoların kaynağı olabileceğini düşündürüyor. Aynı yıl yayımlanan ikinci bir IceCube makalesi, başlığının söylediği gibi, bu blazarın yönünden uyarıdan önceki yıllarda da nötrino salımı bulunduğunu bildirdi; yani tek bir rastlantıdan fazlası söz konusuydu.",
+        "Haberler sekmesinde bunun küçük ölçekli bir akrabası var. Science News'in 5 Ekim 2026 tarihli haberine göre gökbilimciler, Samanyolu içinde jeti bize dönük bir mikroblazar adayı buldu: IRAS 18293-0941. Mikroblazar, büyük bir yıldızdan madde çeken küçük bir kara deliğin bize dönük jet üreten küçük ölçekli kopyasıdır. Yaklaşık 35 yıldır aranıyor. 1983 tarihli bir uzay aracı kataloğundaki kaynak, modern radyo gözlemlerinde tek tarafı parlayan küçük ve çok parlak bir yapı gösterdi; yazarlar bunu blazarların parmak izi sayıyor. Küçük olduğu için değişimleri çok daha hızlıdır; Science News onu hızlı sarılmış bir kozmik film izlemeye yarayacak bir ölçek modeli diye anlatır. Haberin kesinlik etiketi “ön sonuç”."
+      ],
+      "akilda": "Blazar, jetine neredeyse önden baktığımız aktif çekirdektir; göreli ışınlama onu çok parlak ve hızlı değişken yapar. 2017'de IceCube'ün ~290 TeV'lik nötrinosu parlayan blazar TXS 0506+056'nın yönünden geldi. 2026'da Samanyolu'nda bir mikroblazar adayı (IRAS 18293-0941) bildirildi."
+    },
+    {
+      "baslik": "Kuasar çağı ve en uzak kuasarlar",
+      "paragraflar": [
+        "Bugün kaç kuasar biliyoruz? Wikipedia'ya göre yaklaşık bir milyon kuasarın güvenilir tayfsal kırmızıya kayması var, fotometrik kataloglarda ise 2–3 milyon kuasar bulunuyor; Temmuz 2023 itibarıyla 900.000'den fazlası bulunmuştu ve çoğu Sloan Dijital Gökyüzü Taraması'ndan (SDSS) geliyor. Gözlenen kırmızıya kaymalar 0,056 ile 10,1 arasında uzanıyor. Wikipedia bu aralığı yaklaşık 600 milyon ile 30 milyar ışık yılı arası uzaklıklara karşılık gelir diye çevirir. Yani en yakın kuasar bile 600 milyon ışık yılı ötededir; kuasarlar zaman içinde de eşit dağılmaz.",
+        "Wikipedia'ya göre kuasarlar evren gençken çok daha yaygındı ve kuasar etkinliği yaklaşık 10 milyar yıl önce zirve yaptı. d17'deki Planck değerleriyle hesaplayınca 10 milyar yıl önce yola çıkan ışığın kırmızıya kayması yaklaşık 1,7'dir. Aynı kaynak, yıldız oluşumunun ve galaksi etkinliğinin en yüksek olduğu dönemi z ≈ 2 olarak anar. Yani galaksiler en hızlı yıldız yaptığı çağda, merkezlerindeki kara delikler de en hızlı besleniyordu. Bu eşzamanlılık, d46'daki “kara delik ve galaksi birlikte mi büyüdü?” sorusuna bir ipucu olarak görülebilir. Bugün kuasarlar seyrektir; gökteki en parlak kuasar olan 3C 273 bile yaklaşık 2,4 milyar ışık yılı (parlaklık uzaklığı) ötededir.",
+        "En uzak kuasar unvanı tanıma bağlıdır. Klasik anlamda parlak bir kuasar olarak J0313–1806 z = 7,64'tedir ve 1,6 milyar Güneş kütleli kara deliği d46'daki zaman ölçeği sorununun yüzüdür. Wikipedia'nın kuasar maddesi ise Ağustos 2024 itibarıyla en yüksek kırmızıya kaymalı kuasar olarak z ≈ 10,1'deki UHZ1'i anar. Ama d46'da gördüğün gibi UHZ1, X ışınıyla saptanmış, ev sahibi galaksisi kadar ağır bir kara delik barındıran sönük bir aktif çekirdektir; 3C 273 gibi göz kamaştırıcı bir fener değildir. Hangisinin “en uzak kuasar” sayılacağı, “kuasar” sözcüğüne ne kadar geniş anlam yüklediğine bağlıdır.",
+        "Bu uzaklıkları okurken dikkat. Wikipedia UHZ1'in “eş hareketli uzaklığını” yaklaşık 31,6–31,7 milyar ışık yılı verir. Evren 13,8 milyar yaşında olduğu hâlde bu nasıl olur? d17'de gördüğün gibi genişleyen evrende ışığın yolculuk süresi ile bugünkü uzaklık aynı şey değildir: ışık yolda iken uzay genişlemeye devam etti, bu yüzden ışığı yayan galaksi bugün ışığın yol aldığı süreden çok daha uzaktadır. 3C 273 için de Wikipedia 2,4 milyar ışık yılı parlaklık uzaklığı verirken ışığın yolculuğu yaklaşık 2 milyar yıldır (d7). Kuasar haberlerinde tek bir “uzaklık” sayısı gördüğünde hangisi olduğunu sor."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Kuasar çağında evren ne kadar küçüktü?",
+        "metin": "d8'deki kural: 1 + z, ışık yola çıktığından bu yana evrenin kaç kat büyüdüğünü verir. 1. adım (kuasar zirvesi, z ≈ 1,7): 1 + z = 2,7; o çağda galaksiler arası uzaklıklar bugünkünün 1 ÷ 2,7 ≈ 0,37'si, yani üçte birinden biraz fazlasıydı. 2. adım (J0313–1806, z = 7,64): 1 + z = 8,64; uzaklıklar bugünkünün yaklaşık 1 ÷ 8,64 ≈ 0,12'si. 3. adım (UHZ1, z ≈ 10,1): 1 + z = 11,1; yaklaşık 0,09'u. 4. adım: Hacim uzaklığın küpüyle değiştiği için kuasar zirvesinde aynı miktar madde bugünkünün yaklaşık 2,7³ ≈ 20'de biri kadar hacme sıkışmıştı. Sonuç: kuasarlar en yaygınken evren bugünkünden yaklaşık 2,7 kat küçük ve 20 kat yoğundu; gaz bol, galaksi birleşmeleri sıktı."
+      },
+      "akilda": "Yaklaşık bir milyon kuasarın tayfsal kırmızıya kayması var (çoğu SDSS). Kuasar etkinliği ~10 milyar yıl önce (z ≈ 1,7–2) zirve yaptı. En uzak parlak kuasar J0313–1806 (z = 7,64); UHZ1 (z ≈ 10,1) daha uzak ama sönük, X ışınıyla bulunmuş bir aktif çekirdek."
+    },
+    {
+      "baslik": "Kuasarlarla evreni ölçmek: Lyman-alfa ormanı",
+      "paragraflar": [
+        "Kuasarın bir başka değeri, evrenin öbür ucundan bize tutulan bir el feneri olmasıdır. Işığı bize gelirken yol üstündeki galaksiler arası hidrojen bulutlarının içinden geçer. d2'de hidrojenin en güçlü morötesi çizgisinin 121,57 nm'deki Lyman-alfa olduğunu görmüştün. Her bulut kuasar ışığını kendi Lyman-alfa dalga boyunda soğurur; ama bulutlar farklı uzaklıklarda, yani farklı kırmızıya kaymalarda durduğu için her biri ışığı farklı bir dalga boyunda keser. Sonuçta kuasarın kendi Lyman-alfa salma çizgisinin mavi tarafında yüzlerce ince soğurma çizgisi sıralanır. Bu sık çizgilere Lyman-alfa ormanı denir.",
+        "Ormandaki her ağaç bir buluttur. Tek bir kuasar tayfı, bu yüzden görüş hattı boyunca milyarlarca ışık yılını kaplayan bir hidrojen haritasıdır. DESI ekibinin makalesine göre ormanı galaksiler arası ortamdaki görece seyrek gaz oluşturur. Wikipedia'ya göre ormanın varlığı, galaksiler arası ortamın yeniden iyonlaşmış olduğunu gösterir. Daha geriye, daha yüksek kırmızıya kaymalara gidildikçe nötr hidrojen o kadar artar ki ağaçlar birleşir ve d8'deki Gunn–Peterson çukuru açılır. Orman ile çukur, yeniden iyonlaşmanın ne zaman bittiğinin saatidir.",
+        "Orman kozmolojinin de aracıdır. DESI'nin ikinci veri yayınında ormanın 820.000'den fazla kuasar tayfında ölçüldüğü ve 1,2 milyondan fazla kuasarın konumunun kullanıldığı bildirildi. Gözlemler Mayıs 2021 ile Nisan 2024 arasında yapıldı, sonuçların körlemesi Aralık 2024'te kaldırıldı. Etkin kırmızıya kayma 2,33; d8 ve d17'de gördüğün baryon akustik salınımları ölçeği bu kırmızıya kaymada yüzde 0,65 kesinlikle (sistematik hatalarla yüzde 0,7) ölçüldü. Bu, evrenin genişleme tarihine ve karanlık enerjiye (d17) konan en keskin cetvellerden biridir.",
+        "Kuasarların sessiz bir hizmeti daha var. Wikipedia'ya göre Uluslararası Göksel Referans Sistemi, çoğu kuasar olan yüzlerce galaksi dışı radyo kaynağına dayanır ve bunların konumları 0,001 yay saniyesi ya da daha iyi bilinir. Yıldızlar gökte yavaşça kayar; milyarlarca ışık yılı ötedeki kuasarlar ise sabit çiviler gibidir. Bugün kullanılan gök koordinatları sonunda bu çivilere bağlanır. Ayrıca 1979'da bulunan ikiz görüntülü Q0957+561, yani İkiz Kuasar, ilk keşfedilen kütleçekimsel mercektir (d17).",
+        "Mercekler de kuasar sayesinde bulunur. Wikipedia'ya göre Gaia gözlemevi, ön plandaki bir galaksinin bir kuasarın ışığını dört görüntüye böldüğü bir düzine kadar Einstein haçı keşfetti. Kuasar çok uzakta ve nokta gibi olduğu için mercek görüntüleri keskin, ayrı ayrı noktalar olarak çıkar; bu da mercekleyen galaksinin kütlesini ölçmeyi kolaylaştırır (kütleçekimsel mercek d17'de)."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Orman tayfın neresine düşer?",
+        "metin": "Gözlenen dalga boyu = 121,57 nm × (1 + z). 1. adım (z = 3'teki kuasar): Kendi Lyman-alfa çizgisi 121,57 × 4 ≈ 486,3 nm'de, mavi-yeşil görünür ışıkta. 2. adım (yoldaki bulutlar): z = 2'deki bir bulut 121,57 × 3 ≈ 364,7 nm'de, z = 2,5'teki bir bulut ≈ 425,5 nm'de soğurur. Orman 486 nm'nin mavi tarafına dizilir. 3. adım (yerden gözlem sınırı): d2'ye göre atmosfer yaklaşık 300 nm'nin altını geçirmez. 121,57 × (1 + z) > 300 için z > 1,47 olmalı; yerden ormanı görmek için kuasar en az bu kırmızıya kaymada olmalı. DESI'nin z = 2,33'ü ≈ 404,8 nm verir. 4. adım (J0313–1806, z = 7,64): ≈ 1.050 nm, yakın kızılötesi. Sonuç: orman, kırmızıya kaymaya göre morötesinden kızılötesine taşınır; DESI'nin aralığı onu yer teleskoplarının görebildiği mavi-mor ışığa getirir."
+      },
+      "akilda": "Kuasar ışığı yoldaki her hidrojen bulutunda kendi kırmızıya kaymasına göre farklı dalga boyunda soğurulur: Lyman-alfa ormanı. DESI (DR2) 820.000'den fazla kuasarın ormanıyla baryon akustik salınımlarını z = 2,33'te %0,65 kesinlikle ölçtü. Kuasarlar ayrıca gök koordinatlarının sabit çivileridir."
+    },
+    {
+      "baslik": "Geri besleme: kara delik galaksisini nasıl susturur?",
+      "paragraflar": [
+        "Bir kara delik, galaksisinin kütlesinin küçük bir kesridir; ama beslenirken saldığı enerji galaksinin gazını ısıtmaya ya da dışarı itmeye yetebilir. Kara deliğin saldığı enerjinin galaksinin gazını etkileyerek hem kendi beslenmesini hem de yıldız oluşumunu kısmasına geri besleme denir. d46'da Kormendy ve Ho'nun iki tür geri beslemesini görmüştün: gazlı galaksi birleşmelerindeki kısa, kuasara benzer dönemler ev sahibi galaksiyi etkiler; en kütleli kara deliklerin bakım modu ise dev eliptik galaksilerde gazı sıcak tutar.",
+        "Bakım modunun en ünlü kanıtı Perseus galaksi kümesinden gelir. Chandra X ışını gözlemevinin 9 Eylül 2003 tarihli duyurusuna göre yaklaşık 250 milyon ışık yılı uzaktaki kümenin merkezindeki kara deliğin jetleri, sıcak gazda baloncuk biçiminde X ışını boşlukları şişirmişti. Boşluklardan dışarı halka halka yayılan basınç dalgaları, yani ses dalgaları görüldü. Andrew Fabian'ın ekibi bu sesin perdesini bir si bemol olarak hesapladı: orta do'nun 57 oktav altında, evrendeki bir cisimden o güne dek saptanmış en derin nota. Piyanonun klavyesi yaklaşık yedi oktavdır; bu nota insan kulağının duyabileceği en derin sesten milyon kere milyar kat daha pestir.",
+        "Bu sesin işlevi önemli. Kümelerin merkezindeki sıcak gaz X ışını yayarak enerji kaybeder ve soğumalıdır. Soğuyan gaz merkezdeki galaksiye çöküp bol yıldız yapmalıdır; ama Chandra'ya göre böyle bir yıldız oluşumu çok az görülür. Ses dalgalarının taşıdığı enerji kümenin gazına dağılıp onu ılık tutuyor ve bu soğuma akışını engelliyor olabilir. Duyuruya göre boşlukları şişirmek yaklaşık 100 milyon süpernovanın toplam enerjisi kadar enerji istedi ve ses dalgaları kara delikten yüz binlerce ışık yılı uzağa ulaşıyor. Duyurudaki dil temkinlidir: “olabilir”. Geri beslemenin ayrıntıları bugün de araştırılıyor, ama kara deliğin yalnızca yiyen değil, sofrayı da düzenleyen bir şey olduğu fikri artık yaygındır.",
+        "Geri besleme d46'daki büyük soruya da bağlanır. Bir kara delik büyüdükçe ışığı ve jetleri, onu ve galaksisini besleyen gazı ısıtıp dağıtıyorsa, büyümesi kendiliğinden frenlenir: kara delik, galaksisi ona izin verdiği kadar büyür, galaksi de kara deliği izin verdiği kadar yıldız yapar. Kormendy ve Ho'nun önerdiği rejimlerde bu karşılıklı frenin hangi galaksilerde gerçekten etkili olduğu tartışılır; şişkinliksiz galaksilerdeki küçük kara delikler için enerji yetmez, dev eliptiklerde ise etkili olduğu düşünülür. M–σ ilişkisinin sıkılığının ne kadarının geri beslemeden, ne kadarının birleşmelerin ortalamasından geldiği hâlâ açık bir sorudur."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Olay ufkundan küme ölçeğine",
+        "metin": "Perseus'un merkezindeki kara deliğin kütlesini burada bilmiyoruz; ölçeği hissetmek için örnek olarak 10⁹ M☉ al. 1. adım: Rs ≈ 2,953 km × 10⁹ ≈ 2,95 × 10⁹ km ≈ 20 AB. 2. adım: Ses dalgalarının ulaştığı uzaklık için 300.000 ışık yılı al. Bir ışık yılı ≈ 63.241 AB olduğundan 300.000 × 63.241 ≈ 1,9 × 10¹⁰ AB. 3. adım: Oran ≈ 1,9 × 10¹⁰ ÷ 20 ≈ 10⁹. Karşılaştırma: bir milimetrelik bir kum tanesi ile bin kilometre arasındaki oran da 10⁹'dur. Sonuç: geri beslemede kara delik, kendi boyunun yaklaşık bir milyar katı uzaktaki gazı etkiler; bir kum tanesinin bin kilometre ötedeki havayı ısıtması gibi."
+      },
+      "akilda": "Geri besleme, kara deliğin saldığı enerjinin gazı ısıtıp ya da iterek yıldız oluşumunu ve kendi beslenmesini kısmasıdır. Perseus kümesinde (Chandra, 2003) jetlerin şişirdiği boşluklardan yayılan ses dalgaları (orta do'nun 57 oktav altında si bemol) gazın soğumasını engelliyor olabilir."
+    },
+    {
+      "baslik": "JWST'nin küçük kırmızı noktaları",
+      "paragraflar": [
+        "Max Planck Astronomi Enstitüsü'nün (MPIA) 2025 duyurusuna göre James Webb Uzay Teleskobu (JWST) ilk bilimsel görüntülerini vermeye başladıktan kısa süre sonra, 2022 yazında gökbilimciler çok sayıda küçük, çok kırmızı nokta fark etti. Bunlara küçük kırmızı noktalar dendi. Hubble'ın gözünden kaçmışlardı, çünkü ışıklarının çoğunu Hubble'ın göremediği uzun dalga boylarında yayıyorlar. Ne zamana ait oldukları kaynağa göre değişir: Space.com'un aktardığına göre Büyük Patlama'dan 600 milyon ile 1 milyar yıl sonrasında görülüyor ve evren 1,5 milyar yaşına gelmeden kayboluyorlar; Kocevski ve arkadaşlarının 341 cisimlik örneği ise z ≈ 2 ile 11 arasına yayılıyor.",
+        "Sayıları şaşırtıcı. Kocevski ve arkadaşlarına (2024) göre z = 5–7 aralığında, X ışını ve morötesiyle seçilen aktif çekirdeklerden yaklaşık on kat daha çoklar. Örneklerinden 17'sinin tayfında aktif çekirdekle uyumlu geniş çizgiler görüldü ve iki tanesi ilk kez X ışınında saptandı. Matthee ve arkadaşları (2024), z = 4,2–5,5 aralığında geniş bileşenli 20 hidrojen Hα çizgisi buldu; çizgi genişlikleri saniyede 1.200 ile 3.700 km arasındaydı ve buradan 10⁷–10⁸ Güneş kütleli kara delikler çıkarıldı. Bu da kuasarların sayısından beklenenden on kat fazlaydı. Karşılaştırma: tipik bir Seyfert'in geniş çizgileri saniyede 10.000 km'ye çıkabilir; bu noktalarınkiler daha dardır.",
+        "Kocevski ve arkadaşlarının X ışınında saptadığı iki nokta “orta düzeyde örtülü” çıktı: görüş hattındaki hidrojen sütun yoğunlukları santimetrekare başına yaklaşık 2 × 10²³ ve 5 × 10²² atom. Sütun yoğunluğu, bakış doğrultumuz boyunca bir santimetrekarelik bir tüpün içine düşen atom sayısıdır; yazarlar bu değerleri orta düzeyde bir perde olarak niteler. Bu, kara deliğin ışığının bize ancak bir gaz ve toz örtüsünü geçerek ulaştığını düşündürür ve “örtülü aktif çekirdek” ile “kara delik yıldızı” yorumlarını aynı yöne iter. Ama X ışını saptanan nokta sayısı ikidir; noktaların çoğu X ışınında hâlâ karanlıktır.",
+        "Ne olduklarına dair üç ana yorum yarışıyor. MPIA'nın özetine göre birinci yorum, tozla kızarmış, sıkışık ve yıldızca zengin galaksiler; ama bu, Büyük Patlama'dan bir milyar yıl geçmeden yüz milyarlarca Güneş kütlesi yıldız gerektirir ve galaksi evrimi modellerini zorlar. İkincisi, tozla örtülü aktif çekirdekler; bu da şaşırtıcı sayıda ve çok kütleli kara delik ister, üstelik tayfları daha önce bilinen tozlu aktif çekirdeklere benzemez. Üçüncüsü yeni bir fikir: kara delik yıldızı. Bu, yığılma diskiyle birlikte kalın ve türbülanslı bir hidrojen zarfına gömülmüş bir dev kara deliktir. İçinde füzyon yoktur, zarfı kara delik ısıtır, ama dışarıdan bir yıldız gibi görünür.",
+        "Üçüncü yorumun en güçlü dayanağı, Anna de Graaff ve arkadaşlarının 2025'te Astronomy & Astrophysics'te yayımladığı ve “Uçurum” (The Cliff) diye adlandırılan cisimdir. z = 3,55'teki bu kaynağın tayfında, Balmer kırılması denen basamak sıradan galaksilerdekinden çok daha diktir. Balmer kırılması, tayfın hidrojenin belirli bir dalga boyunun altında birden sönükleştiği basamaktır. MPIA'ya göre galaksi ve sıradan aktif çekirdek modellerinin hepsi bu basamağı üretemedi; kara delik yıldızı modeli çok daha iyi açıkladı. Haberler sekmesindeki 2026 simülasyonu (d46) da kendi yakıtına sarılmış, aşırı beslenen kara delikler önerir ve kırmızı tayfları ile geniş hidrojen çizgilerini üretir, ama noktaların neden kaybolduğunu açıklayamaz. Dürüst özet: küçük kırmızı noktaların ne olduğu bilinmiyor; kesinlik “tartışmalı”."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Bu noktaları neden ancak Webb görebilir?",
+        "metin": "Hidrojenin Hα çizgisi laboratuvarda 656,28 nm'dedir (d2). Gözlenen dalga boyu = 656,28 × (1 + z). 1. adım (z = 5): 656,28 × 6 ≈ 3.938 nm ≈ 3,9 mikrometre. 2. adım (Uçurum, z = 3,55): 656,28 × 4,55 ≈ 2.986 nm ≈ 3,0 mikrometre. 3. adım: Göz 380–700 nm arasını görür (d8); bu çizgiler kızılötesinin derinliklerinde, JWST'nin kızılötesi aygıtlarının alanındadır. 4. adım (yaş sınaması): d17'deki Planck değerleriyle z = 3,55'te evren yaklaşık 1,77 milyar yaşındaydı ve ışık yaklaşık 12,0 milyar yıl yol almıştır; MPIA 11,9 milyar yıl verir. Sonuç: noktaların hidrojen çizgileri 3–4 mikrometreye kaymıştır; bu yüzden onları ancak kızılötesinde keskin gören Webb ortaya çıkarabildi."
+      },
+      "akilda": "Küçük kırmızı noktalar (JWST, 2022'den beri) sıkışık, kırmızı, sayıca beklenenden ~10 kat fazla cisimlerdir; bazılarında geniş Hα çizgileri 10⁷–10⁸ M☉ kara deliklere işaret eder. Yorumlar: tozlu yıldız patlaması, örtülü aktif çekirdek ya da gaz zarfına gömülü “kara delik yıldızı” (Uçurum, z = 3,55). Tartışmalı."
+    },
+    {
+      "baslik": "İstanbul'dan bir kuasar avı",
+      "paragraflar": [
+        "Gökyüzündeki en parlak kuasar 3C 273'tür. Wikipedia'ya göre Başak takımyıldızındadır, dik açıklığı +2° 03′'tür ve ortalama görünür parlaklığı 12,9 kadirdir (maddenin bir yerinde 12,8 yazar; kuasar değişkendir). Aynı kaynağa göre 150 mm açıklıklı bir amatör teleskopla gözle görülebilir. Dik açıklığı ekvatora çok yakın olduğu için İstanbul'dan meridyende yaklaşık 51°'ye kadar yükselir, yani ufuk pusundan uzak, rahat bir yükseklikte durur. Teleskopta sıradan, sönük bir yıldızdan farkı yoktur; onu ayırt etmenin tek yolu yıldız haritası ve çevresindeki yıldızlardan yıldız atlamaktır (d11). Uygulamanın Gökyüzü sekmesindeki harita bunun için iyi bir başlangıçtır.",
+        "7×50 dürbün için gerçekçi olalım. d16'daki yaklaşımla çok karanlık bir gökte dürbünün sınır kadiri yaklaşık 10,8'dir; 3C 273 bundan 2 kadir daha sönüktür. Dürbünle onu görmen beklenmez; şehir ışığı altında hiç değil. Bir teleskopla bulursan baktığın ışık d7'de hesapladığımız gibi yaklaşık 2 milyar yıl önce yola çıkmıştır. O sönük nokta, kendi galaksisinin tamamını 16 kat bastıran, kara deliği yaklaşık 900 milyon Güneş kütlesi olan bir fenerdir.",
+        "3C 273'ü bulursan küçük bir deney yapabilirsin. Kuasar değişken olduğu için onun parlaklığını çevresindeki kadiri bilinen yıldızlarla karşılaştırıp deftere yazabilir, aylar sonra yeniden bakabilirsin. d15'te değişen yıldızlar için gördüğün mantık burada da geçerlidir: daha parlak ve daha sönük iki karşılaştırma yıldızı seçer, kuasarın aralarında nerede durduğunu tahmin edersin. Wikipedia'ya göre 3C 273'ün ışığı günlerle on yıllar arasında değişir; amatör bir gözle görülebilecek kadar büyük bir değişim yakalayıp yakalayamayacağını kaynaklarım söylemiyor. Ama 2 milyar yıllık bir ışığın parlaklığını kendi defterine kaydetmek, kuasarları gerçekten anlamanın güzel bir yoludur.",
+        "Daha kolay ama daha sessiz bir hedef de var: M77, yani NGC 1068. NASA'ya göre Balina takımyıldızındadır, görünür parlaklığı 9,6 kadirdir, yaklaşık 45 milyon ışık yılı uzaktadır (Wikipedia 47 milyon der) ve küçük bir teleskopla görülür; en kolay Aralık'ta gözlenir. Dik açıklığı neredeyse sıfırdır, bu yüzden İstanbul'da meridyende yaklaşık 49°'ye yükselir. Bu, Antonucci ile Miller'ın 1985'te gizli geniş çizgileri bulduğu galaksidir: tip 2 Seyfert'lerin örneği. Teleskopta göreceğin parlak çekirdek, tozlu bir simidin ardına saklanmış beslenen bir kara deliğin yalnızca dolaylı ışığıdır. M87'nin jetini ve kara deliğini d16'da, maser galaksisi M106'yı d46'da bulabilirsin."
+      ],
+      "ornek": {
+        "baslik": "Örnek: 3C 273 İstanbul'dan ne kadar yükselir, dürbünle görülür mü?",
+        "metin": "1. adım (yükseklik): Ekvatorun kuzeyindeki bir cisim için en yüksek konum ≈ 90° − enlem + dik açıklık. İstanbul enlemi ≈ 41,0°, 3C 273'ün dik açıklığı ≈ +2,05°. 90 − 41,0 + 2,05 ≈ 51°. 2. adım (dürbün sınırı): Çok karanlık gökte çıplak göz ≈ +6,5, 7×50 kazancı ≈ 4,3 kadir (d16); sınır ≈ 10,8. 3. adım (fark): 12,9 − 10,8 = 2,1 kadir. Parlaklık oranı 10^(0,4 × 2,1) ≈ 6,9. 4. adım (M77 için): 90 − 41,0 + 0 ≈ 49°; 9,6 kadir dürbün sınırının 1,2 kadir içinde, ama galaksi ışığı bir lekeye yayılır. Sonuç: 3C 273 İstanbul'da ~51°'ye yükselir ama 7×50 dürbünün en iyi koşuldaki sınırından yaklaşık 7 kat sönüktür; onu görmek için en az 150 mm'lik bir teleskop gerekir."
+      },
+      "akilda": "3C 273 (Başak, 12,9 kadir) İstanbul'da ~51°'ye yükselir; 150 mm teleskop gerekir, 7×50 dürbünün sınırından ~7 kat sönüktür. M77 (Balina, 9,6 kadir, ~49°) Antonucci–Miller'ın tip 2 Seyfert'idir ve küçük teleskopla görülür."
+    }
+  ],
+  "formuller": [
+    {
+      "ad": "Uzaklık modülü",
+      "ifade": "m − M = 5 × log(d / 10 pc)",
+      "aciklama": "m görünür kadir, M mutlak kadir, d parsek cinsinden uzaklık. Yakın evrende iyi çalışır; büyük kırmızıya kaymalarda genişleme modeli gerekir (d17)."
+    },
+    {
+      "ad": "Yığılmadan kütle akışı",
+      "ifade": "Ṁ = L ÷ (ε × c²)",
+      "aciklama": "L parlaklık (W), ε ışınım verimi (tipik 0,1), c ışık hızı (m/s), Ṁ saniyede yutulan kütle (kg/s)."
+    },
+    {
+      "ad": "Eddington parlaklığı",
+      "ifade": "L_Edd ≈ 1,26 × 10³¹ W × (M / M☉)",
+      "aciklama": "M kara deliğin kütlesi. Eddington oranı λ = L / L_Edd. Ters çevrilince parlaklıktan kütle için alt sınır verir: M ≥ L ÷ 1,26 × 10³¹ W."
+    },
+    {
+      "ad": "Işık süresinden boyut sınırı",
+      "ifade": "R ≤ c × Δt",
+      "aciklama": "Δt parlaklığın değişme süresi, c ışık hızı, R ışığı yayan bölgenin boyu. Bir ışık günü ≈ 2,59 × 10¹⁰ km ≈ 173 AB."
+    },
+    {
+      "ad": "Görünür yanal hız",
+      "ifade": "β_g = β × sin θ ÷ (1 − β × cos θ)",
+      "aciklama": "β gerçek hızın ışık hızına oranı, θ hareket ile bakış doğrultusu arasındaki açı, β_g görünür yanal hızın ışık hızına oranı. β = 0,99, θ = 8° için ≈ 7."
+    },
+    {
+      "ad": "Kırmızıya kaymış dalga boyu",
+      "ifade": "λ_gözlenen = λ_lab × (1 + z)",
+      "aciklama": "Lyman-alfa için λ_lab = 121,57 nm, Hα için 656,28 nm (d2). Lyman-alfa ormanındaki her bulut kendi z'siyle ayrı bir dalga boyunda soğurur."
+    },
+    {
+      "ad": "Meridyende yükseklik",
+      "ifade": "h ≈ 90° − φ + δ",
+      "aciklama": "φ gözlem yerinin enlemi (İstanbul ≈ 41,0°), δ cismin dik açıklığı. Dik açıklığı enlemden küçük cisimler için geçerlidir."
+    },
+    {
+      "ad": "Parlaklık oranı",
+      "ifade": "oran = 10^(0,4 × Δm)",
+      "aciklama": "Δm iki cisim arasındaki kadir farkı (d1). 2,1 kadir ≈ 6,9 kat."
+    }
+  ],
+  "anahtar_sayilar": [
+    {
+      "deger": "5 Ağustos 1962; < 0,1 yay saniyesi",
+      "aciklama": "Parkes'te 3C 273'ün tam (giriş ve çıkış) Ay örtmesi ve elde edilen konum doğruluğu",
+      "kaynak_url": "https://www.parkes.atnf.csiro.au/people/sar049/3C273/"
+    },
+    {
+      "deger": "16 Mart 1963; Nature 197",
+      "aciklama": "3C 273'ün konumu ve Schmidt'in kırmızıya kayma yorumu dahil dört ardışık mektubun yayım tarihi",
+      "kaynak_url": "https://www.parkes.atnf.csiro.au/people/sar049/3C273/"
+    },
+    {
+      "deger": "Mayıs 1964",
+      "aciklama": "Hong-Yee Chiu'nun Physics Today'de “quasar” sözcüğünü ilk kullanması",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Quasar"
+    },
+    {
+      "deger": "~10⁴⁰ W; %5,7–%32 verim; ~%10 radyo gürültülü",
+      "aciklama": "Tipik kuasar gücü, yığılma verimi ve radyoda güçlü kuasarların oranı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Quasar"
+    },
+    {
+      "deger": "886 ± 187 milyon M☉; −26,7 mutlak kadir; 12,9 kadir",
+      "aciklama": "3C 273'ün kara delik kütlesi (yankı haritalama), mutlak ve görünür parlaklığı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/3C_273"
+    },
+    {
+      "deger": "0,1–1 pc ve 10⁴ km/s; birkaç yüz km/s",
+      "aciklama": "Geniş çizgi bölgesinin boyu ve çizgi genişliği; dar çizgilerin genişliği",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Seyfert_galaxy"
+    },
+    {
+      "deger": "1985",
+      "aciklama": "Antonucci ve Miller'ın NGC 1068'in kutuplanmış ışığında gizli tip 1 tayfını bulması",
+      "kaynak_url": "https://ned.ipac.caltech.edu/level5/Sept04/Shields/Shields4_7.html"
+    },
+    {
+      "deger": "1966; 3C 279'da ≥ 2c (1968–1970); 3C 273'te ≤ 9,6c",
+      "aciklama": "Rees'in öngörüsü ve ışıktan hızlı görünen hareketin ilk ölçümü, 3C 273'teki en büyük görünür hız",
+      "kaynak_url": "https://www.wikiwand.com/en/articles/Superluminal_motion"
+    },
+    {
+      "deger": "22 Eylül 2017; ~290 TeV",
+      "aciklama": "IceCube-170922A nötrinosu ve parlayan blazar TXS 0506+056",
+      "kaynak_url": "https://www.arxiv.org/abs/1807.08816"
+    },
+    {
+      "deger": "~1 milyon; zirve ~10 milyar yıl önce",
+      "aciklama": "Tayfsal kırmızıya kayması bilinen kuasar sayısı ve kuasar etkinliğinin zirvesi",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Quasar"
+    },
+    {
+      "deger": "820.000+ kuasar; z = 2,33; %0,65",
+      "aciklama": "DESI DR2 Lyman-alfa ormanı baryon akustik salınım ölçümü",
+      "kaynak_url": "https://arxiv.org/pdf/2503.14739"
+    },
+    {
+      "deger": "57 oktav; 250 milyon ışık yılı",
+      "aciklama": "Perseus kümesindeki kara deliğin ses dalgasının perdesi (orta do'nun altında) ve kümenin uzaklığı",
+      "kaynak_url": "https://chandra.harvard.edu/press/03_releases/press_090903.html"
+    },
+    {
+      "deger": "341 LRD; AGN'lerden ~10 kat çok (z = 5–7)",
+      "aciklama": "Küçük kırmızı noktaların bolluğu (Kocevski ve ark. 2024)",
+      "kaynak_url": "https://arxiv.org/abs/2404.03576v1"
+    },
+    {
+      "deger": "z = 3,55",
+      "aciklama": "“Uçurum” (The Cliff): dik Balmer kırılmalı, kara delik yıldızı adayı",
+      "kaynak_url": "https://www.mpia.de/news/science/2025-06-black-hole-stars"
+    }
+  ],
+  "sozluk": [
+    {
+      "terim": "Ay örtmesi",
+      "tanim": "Ay'ın bir gök cisminin önünden geçerek onu gizlemesi; ışığın kesilme ve geri gelme anları cismin konumunu verir."
+    },
+    {
+      "terim": "yıldızsı radyo kaynağı",
+      "tanim": "Optik teleskopta yıldız gibi nokta görünen ama güçlü radyo yayan kaynak; “kuasar” sözcüğü bunun kısaltmasıdır."
+    },
+    {
+      "terim": "Eddington oranı",
+      "tanim": "Bir kara deliğin parlaklığının, kütlesine karşılık gelen Eddington sınırına oranı."
+    },
+    {
+      "terim": "dar çizgi bölgesi",
+      "tanim": "Aktif çekirdekte geniş çizgi bölgesinin ötesinde, saniyede birkaç yüz km ile hareket eden ve dar tayf çizgileri yayan büyük gaz bölgesi."
+    },
+    {
+      "terim": "tozlu simit",
+      "tanim": "Aktif çekirdeği çevreleyen, belirli açılardan merkezi görmemizi engelleyen opak toz halkası."
+    },
+    {
+      "terim": "kutuplanma",
+      "tanim": "Işık dalgasının titreşim yönünün rastgele değil belirli bir doğrultuda düzenlenmesi; saçılan ışık ve manyetik alanlar bunu yaratır."
+    },
+    {
+      "terim": "birleşik model",
+      "tanim": "Farklı aktif galaksi türlerinin büyük ölçüde aynı yapıya farklı açılardan bakmanın sonucu olduğunu söyleyen model."
+    },
+    {
+      "terim": "BL Lac cismi",
+      "tanim": "Tayf çizgileri çok zayıf, parlaklığı hızla değişen ve jetinin eksenine bakıldığı düşünülen aktif çekirdek türü."
+    },
+    {
+      "terim": "blazar",
+      "tanim": "Jeti neredeyse doğrudan bize dönük olan, bu yüzden çok parlak ve hızlı değişken görünen aktif galaksi çekirdeği."
+    },
+    {
+      "terim": "senkrotron ışıması",
+      "tanim": "Manyetik alanda sarmal çizen, ışığa yakın hızlı elektronların yaydığı ışık; jetlerin radyo ve görünür ışığının kaynağı."
+    },
+    {
+      "terim": "Fanaroff–Riley sınıflaması",
+      "tanim": "Radyo galaksilerini merkeze yakın parlayanlar (FR I) ve lob uçlarında parlayanlar (FR II) olarak ayıran 1974 sınıflaması."
+    },
+    {
+      "terim": "sıcak nokta",
+      "tanim": "FR II radyo galaksilerinde jetin çevre gaza çarptığı, lobun ucundaki çok parlak küçük bölge."
+    },
+    {
+      "terim": "göreli ışınlama",
+      "tanim": "Işığa yakın hızla bize doğru gelen maddenin ışığının ileri doğru toplanıp güçlenmesi, uzaklaşanınkinin sönmesi."
+    },
+    {
+      "terim": "ışıktan hızlı görünen hareket",
+      "tanim": "Bize doğru ışığa yakın hızla gelen jet düğümlerinin, ışığın yolculuk süresi yüzünden gökte ışıktan hızlı ilerliyor görünmesi."
+    },
+    {
+      "terim": "VLBI",
+      "tanim": "Binlerce km uzaktaki radyo teleskoplarının verilerini birleştirip tek dev teleskop gibi çalıştıran çok uzun taban çizgili interferometri."
+    },
+    {
+      "terim": "mikroblazar",
+      "tanim": "Bir yıldızdan madde çeken küçük bir kara deliğin bize dönük jet üreten, blazarın küçük ölçekli kopyası olan çift sistem."
+    },
+    {
+      "terim": "Lyman-alfa ormanı",
+      "tanim": "Uzak kuasar tayfında, yoldaki hidrojen bulutlarının farklı kırmızıya kaymalarda Lyman-alfa soğurmasıyla oluşan sık çizgiler."
+    },
+    {
+      "terim": "geri besleme",
+      "tanim": "Kara deliğin saldığı enerjinin galaksi gazını ısıtıp ya da dışarı iterek yıldız oluşumunu ve kendi beslenmesini kısması."
+    },
+    {
+      "terim": "soğuma akışı",
+      "tanim": "Galaksi kümesinin merkezindeki sıcak gazın ışıyarak soğuyup merkeze çökmesi; gözlenen yıldız oluşumu bunun beklenenden çok azdır."
+    },
+    {
+      "terim": "küçük kırmızı noktalar",
+      "tanim": "JWST'nin erken evrende bulduğu çok sıkışık ve kırmızı, doğası tartışmalı cisimler."
+    },
+    {
+      "terim": "kara delik yıldızı",
+      "tanim": "Kalın, türbülanslı bir hidrojen zarfına gömülü, füzyon yapmadığı hâlde dışarıdan yıldız gibi görünen beslenen dev kara delik varsayımı."
+    },
+    {
+      "terim": "Balmer kırılması",
+      "tanim": "Tayfta hidrojenin belirli bir dalga boyunun altında ışığın birden azaldığı basamak."
+    }
+  ],
+  "defter_notu": [
+    "3C kataloğu; yıldızsı radyo kaynakları. Parkes 1962 Ay örtmeleri (Hazard, Bolton): 3C 273 konumu < 0,1″. Ay saniyede ~0,55″ kayar.",
+    "Schmidt: Nature 16 Mart 1963; Balmer çizgileri %15,8 kaymış, z = 0,158. “Quasar”: Chiu, Mayıs 1964. Yalnız ~%10 radyo gürültülü.",
+    "Kuasar = beslenen süper kütleli kara delik. Tipik 10⁴⁰ W. Yığılma verimi %5,7–%32 (%42), füzyon %0,7. 3C 273 görünür ışığı için ~3 M☉/yıl.",
+    "Eddington: L_Edd ≈ 1,26 × 10³¹ W × M/M☉. 3C 273: 886 ± 187 milyon M☉; görünür ışıkla tavanın ~%14'ü.",
+    "Değişkenlik → boyut ≤ c × Δt. 3 ışık günü ≈ 520 AB ≈ 30 Rs (3C 273).",
+    "Anatomi: disk; geniş çizgi bölgesi (0,1–1 pc, 10⁴ km/s); dar çizgi bölgesi (yüzlerce km/s, NGC 1068'de > 1000 ışık yılı); tozlu simit; jet. Antonucci–Miller 1985: NGC 1068 kutuplanmış ışıkta tip 1.",
+    "Jet: ~onda bir; 3C 273 jeti 200.000 ışık yılı; senkrotron. Fanaroff–Riley 1974: FR I merkez parlak, FR II uçlarda sıcak noktalar.",
+    "Işıktan hızlı görünen hareket: Rees 1966; 3C 279 (1968–70) ≥ 2c; 3C 273 ≤ 9,6c. β = 0,99, θ = 8° → 7c. Blazar TXS 0506+056 + IceCube 22.09.2017 (~290 TeV).",
+    "~1 milyon kuasar (çoğu SDSS); zirve ~10 milyar yıl önce (z ≈ 1,7–2). En uzak parlak: J0313–1806 z = 7,64. Lyman-alfa ormanı: 121,57 nm × (1+z); DESI DR2 820.000+ kuasar, BAO %0,65 (z = 2,33).",
+    "Geri besleme: Perseus (Chandra 2003), si bemol, orta do'nun 57 oktav altı. Küçük kırmızı noktalar: 2022, ~10 kat çok, geniş Hα, “Uçurum” z = 3,55, kara delik yıldızı? Tartışmalı. 3C 273: 12,9 kadir, İstanbul'da ~51°, 150 mm teleskop."
+  ],
+  "sorular": [
+    {
+      "soru": "Ay örtmesi bir radyo kaynağının konumunu nasıl verir ve neden bu kadar keskindir?",
+      "cevap": "Ay'ın keskin kenarı kaynağı örttüğü ve açtığı anlarda sinyal kesilip geri gelir; Ay'ın konumu çok iyi bilindiği için bu anlar kaynağı birer çizgiye yerleştirir, giriş ve çıkış çizgilerinin kesişimi konumdur. Ay saniyede yalnızca ~0,55″ kaydığı için zamanlamadaki küçük hatalar konumda çok küçük hatalara karşılık gelir; 3C 273 için 0,1″'den iyi konum elde edildi."
+    },
+    {
+      "soru": "Schmidt 1963'te 3C 273'ün tayfında neyi fark etti?",
+      "cevap": "Tanınmayan çizgilerin hidrojenin Balmer serisi olduğunu, ama hepsinin %15,8 daha uzun dalga boylarına kaydığını (z = 0,158). Bu, kaynağı kozmolojik bir uzaklığa ve olağanüstü bir parlaklığa yerleştirdi."
+    },
+    {
+      "soru": "Kuasarın enerjisini neden yıldızlar açıklayamaz?",
+      "cevap": "Füzyon kütlenin yalnız %0,7'sini enerjiye çevirir; ayrıca kuasar ışığı günler-haftalar içinde değişir, yani çok küçük bir bölgeden gelir ve o bölgeye bu kadar ışık verecek yıldız sığmaz. Yığılma ise %5,7'den %32–42'ye kadar verimlidir."
+    },
+    {
+      "soru": "10⁴⁰ W parlaklığındaki bir kuasarın kara deliği en az kaç Güneş kütlesi olmalıdır?",
+      "cevap": "M ≥ L ÷ 1,26 × 10³¹ W = 10⁴⁰ ÷ 1,26 × 10³¹ ≈ 7,9 × 10⁸ M☉; yoksa ışığı kendi beslenmesini durdururdu."
+    },
+    {
+      "soru": "Bir kuasarın parlaklığı 5 günde belirgin biçimde değişiyorsa ışığı yayan bölge en fazla kaç AB'dir?",
+      "cevap": "5 ışık günü ≈ 5 × 2,59 × 10¹⁰ km ≈ 1,3 × 10¹¹ km; 1,496 × 10⁸ km'ye bölünce ≈ 870 AB."
+    },
+    {
+      "soru": "Antonucci ve Miller'ın 1985 gözlemi birleşik modeli neden güçlendirdi?",
+      "cevap": "Tip 2 Seyfert NGC 1068'in kutuplanmış ışığında tip 1 tayfı (geniş çizgiler) gördüler. Bu, geniş çizgi bölgesinin yok değil, tozlu simidin arkasında gizli olduğunu ve elektronların ışığı ayna gibi saçtığını gösterdi; tür farkı büyük ölçüde bakış açısıdır."
+    },
+    {
+      "soru": "Birleşik modelin açıklayamadığı bir fark söyle.",
+      "cevap": "Radyo gürültülü ile radyo sessiz ayrımı: geniş radyo lobları her yöne kabaca eşit ışıdığından bu fark bakış açısıyla açıklanamaz. Radyo gürültülüler eliptiklerle, sessizler sarmallarla ilişkili görünür."
+    },
+    {
+      "soru": "FR I ve FR II radyo galaksileri nasıl ayrılır?",
+      "cevap": "FR I'de ışık merkeze yakın parlak, uçlara doğru söner; FR II daha güçlüdür ve lobların ucundaki sıcak noktalarda parlar, jetleri çoğu zaman göreli ışınlama yüzünden tek taraflı görünür."
+    },
+    {
+      "soru": "Işığın %99'uyla 8° açıyla bize doğru giden bir jet düğümü neden ışıktan ~7 kat hızlı görünür? Bu görelilikle çelişir mi?",
+      "cevap": "Düğüm bize yaklaşırken sonraki konumundan çıkan ışığın yolu kısalır; 10 yıllık hareketin ışıkları ~0,2 yıl arayla gelir. 1,38 ışık yıllık yan kayma 0,2 yıla bölününce ~7c çıkar. Çelişmez: gerçek hız 0,99c'dir, yalnızca görünür hız büyüktür."
+    },
+    {
+      "soru": "TXS 0506+056 olayı neden önemlidir?",
+      "cevap": "22 Eylül 2017'de IceCube'ün ~290 TeV'lik nötrinosu, gama ışınında parlama evresindeki bu blazarın yönünden geldi ve kaynak radyodan gama ışınına kadar izlendi. Bu, blazarların yüksek enerjili nötrino kaynağı olabileceğini düşündüren ilk güçlü çok habercili ipucuydu."
+    },
+    {
+      "soru": "z = 3 kuasarın tayfında Lyman-alfa ormanı hangi dalga boyu aralığına düşer?",
+      "cevap": "Kuasarın kendi Lyman-alfa çizgisi 121,57 × 4 ≈ 486 nm'dedir; orman bunun mavi tarafında, örneğin z = 2'deki bulut için ≈ 365 nm, z = 2,5 için ≈ 425 nm'de yer alır."
+    },
+    {
+      "soru": "Perseus kümesindeki ses dalgalarının galaksi evrimi için önemi nedir?",
+      "cevap": "Küme merkezindeki sıcak gaz ışıyarak soğumalı ve bol yıldız yapmalıydı, ama az yıldız oluşumu görülüyor. Kara delik jetlerinin şişirdiği boşluklardan yayılan ses dalgalarının enerjisi gazı ılık tutup soğuma akışını engelliyor olabilir; bu, geri beslemenin örneğidir."
+    },
+    {
+      "soru": "Küçük kırmızı noktalar için yarışan üç yorum nedir?",
+      "cevap": "Tozla kızarmış, sıkışık, yıldızca zengin galaksiler (çok fazla yıldız kütlesi gerektirir); tozla örtülü aktif çekirdekler (çok sayıda kütleli kara delik gerektirir, tayfları bilinen tozlu AGN'lere benzemez); kalın hidrojen zarfına gömülü kara delik yıldızları (“Uçurum”un dik Balmer kırılmasını en iyi açıklayan model). Henüz karar verilmedi."
+    },
+    {
+      "soru": "3C 273'ü İstanbul'dan 7×50 dürbünle görebilir misin?",
+      "cevap": "Hayır. Karanlık gökte dürbün sınırı ~10,8 kadir, 3C 273 ise 12,9 kadir: 2,1 kadir, yani ~7 kat sönük. Wikipedia'ya göre 150 mm'lik bir teleskop gerekir; İstanbul'da meridyende ~51°'ye yükselir."
+    }
+  ],
+  "kaynaklar": [
+    {
+      "ad": "CSIRO Parkes, Parkes and 3C273 (örtme zaman çizelgesi)",
+      "url": "https://www.parkes.atnf.csiro.au/people/sar049/3C273/"
+    },
+    {
+      "ad": "Wikipedia, Quasar",
+      "url": "https://en.wikipedia.org/wiki/Quasar"
+    },
+    {
+      "ad": "Wikipedia, 3C 273",
+      "url": "https://en.wikipedia.org/wiki/3C_273"
+    },
+    {
+      "ad": "Wikipedia, Seyfert galaxy",
+      "url": "https://en.wikipedia.org/wiki/Seyfert_galaxy"
+    },
+    {
+      "ad": "J. Shields, A Brief History of AGN: unification (NED)",
+      "url": "https://ned.ipac.caltech.edu/level5/Sept04/Shields/Shields4_7.html"
+    },
+    {
+      "ad": "Yue Shen, The Mass of Quasars (NED derlemesi, giriş)",
+      "url": "https://ned.ipac.caltech.edu/level5/Sept13/Shen/Shen1.html"
+    },
+    {
+      "ad": "Wikipedia, Eddington luminosity (cavac.at yansısı)",
+      "url": "https://cavac.at/cavacopedia/Eddington%20luminosity"
+    },
+    {
+      "ad": "Wikipedia, Fanaroff–Riley classification",
+      "url": "https://en.wikipedia.org/wiki/Fanaroff%E2%80%93Riley_classification"
+    },
+    {
+      "ad": "Wikipedia (Wikiwand), Superluminal motion",
+      "url": "https://www.wikiwand.com/en/articles/Superluminal_motion"
+    },
+    {
+      "ad": "IceCube ve ark. 2018, Multimessenger observations of a flaring blazar coincident with high-energy neutrino IceCube-170922A (arXiv:1807.08816)",
+      "url": "https://www.arxiv.org/abs/1807.08816"
+    },
+    {
+      "ad": "Science News, Astronomers say they've spotted the first miniature quasar pointed at Earth (5 Ekim 2026)",
+      "url": "https://www.sciencenews.org/article/first-miniature-quasar-earth"
+    },
+    {
+      "ad": "Wikipedia, QSO J0313−1806",
+      "url": "https://en.wikipedia.org/wiki/QSO_J0313%E2%88%921806"
+    },
+    {
+      "ad": "DESI Collaboration 2025, DESI DR2 Results I: BAO from the Lyman Alpha Forest (arXiv:2503.14739)",
+      "url": "https://arxiv.org/pdf/2503.14739"
+    },
+    {
+      "ad": "Chandra X-ray Observatory, Chandra 'Hears' a Supermassive Black Hole in Perseus (9 Eylül 2003)",
+      "url": "https://chandra.harvard.edu/press/03_releases/press_090903.html"
+    },
+    {
+      "ad": "MPIA, “Black Hole Stars” could solve JWST riddle of overly massive early galaxies (2025)",
+      "url": "https://www.mpia.de/news/science/2025-06-black-hole-stars"
+    },
+    {
+      "ad": "Kocevski ve ark. 2024, The Rise of Faint, Red AGN at z>4: A Sample of Little Red Dots (arXiv:2404.03576)",
+      "url": "https://arxiv.org/abs/2404.03576v1"
+    },
+    {
+      "ad": "Matthee ve ark. 2024, Little Red Dots: an abundant population of faint AGN at z~5 (ApJ 963, 129; Princeton kaydı)",
+      "url": "https://collaborate.princeton.edu/en/publications/little-red-dots-an-abundant-population-of-faint-active-galactic-n/"
+    },
+    {
+      "ad": "Space.com, The James Webb Space Telescope's mysterious Little Red Dots may be overfeeding black holes (Eylül 2026)",
+      "url": "https://www.space.com/astronomy/black-holes/the-james-webb-space-telescopes-mysterious-little-red-dots-may-be-overfeeding-black-holes"
+    },
+    {
+      "ad": "ScienceDaily (NINS), JWST's mysterious Little Red Dots may be black holes growing at incredible speeds (17 Eylül 2026)",
+      "url": "https://www.sciencedaily.com/releases/2026/09/260917003703.htm"
+    },
+    {
+      "ad": "NASA Hubble, Messier 77",
+      "url": "https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-77"
+    },
+    {
+      "ad": "Wikipedia (IPFS kopyası), Messier 77",
+      "url": "https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Messier_77"
+    },
+    {
+      "ad": "NASA Imagine the Universe, Active Galaxies",
+      "url": "https://imagine.gsfc.nasa.gov/science/objects/active_galaxies1.html"
+    }
+  ]
+}

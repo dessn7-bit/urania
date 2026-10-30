@@ -1,0 +1,523 @@
+{
+ "id": "d55",
+ "unite": "kuramlar",
+ "yeni": true,
+ "baslik": "Evrenin Başlangıcı ve Sonu: Senaryolar",
+ "ozet": "'Büyük Patlama'dan önce ne vardı?' sorusunun ne anlama geldiğini, Borde–Guth–Vilenkin teoremini, Hartle–Hawking sınırsızlık önerisini, sıçrayan evreni, ekpirotik modeli ve Penrose'un döngüsel kozmolojisini Hawking noktaları tartışmasıyla birlikte öğreneceksin. Sonra uzak geleceğin takvimini, ısıl ölümü, Büyük Yırtılma'yı, Büyük Çöküş'ü, Higgs alanına bağlı vakum bozunmasını ve DESI'nin 2025 sonuçlarının bu seçenekleri nasıl etkilediğini, her senaryonun kesinlik etiketi ve sayısal zaman ölçeğiyle göreceksin.",
+ "on_bilgi": [
+  "d8",
+  "d17",
+  "d30",
+  "d32",
+  "d50",
+  "d51",
+  "d54",
+  "d52",
+  "d56",
+  "d53"
+ ],
+ "bolumler": [
+  {
+   "baslik": "İki uç, tek ölçek: bildiklerimiz ve tahminlerimiz",
+   "paragraflar": [
+    "Evrenin başı ve sonu, insanın sorabileceği en eski sorulardandır. Bu derste ikisini de ele alacağız, ama önce bir uyarı: bu iki uç, bilimin en az kesin olduğu yerlerdir. Başlangıçta fiziğimiz geçerliliğini yitirir; sonda ise henüz yaşanmamış bir geleceği bugünkü ölçümlerden tahmin ederiz. Bu yüzden ünitenin başında, d50'de tanıdığın dört basamaklı kesinlik ölçeğini her senaryoya tek tek uygulayacağız: gözlemle kesinleşmiş, güçlü kanıtlı ama açık sorulu, kuram/hipotez ve spekülasyon.",
+    "Önce sağlam zemini işaretleyelim. Evrenin yaklaşık 13,8 milyar yıl önce sıcak ve yoğun bir hâlden bugüne genişleyerek ve soğuyarak evrildiği gözlemle kesinleşmiştir; d8'deki üç bağımsız kanıt bunu gösterir. Evrenin bugün genişlediği de gözlemle kesinleşmiştir. Genişlemenin hızlandığı ve bunu karanlık enerji denen bir bileşenin sürdüğü ise güçlü kanıtlı ama açık sorulu düzeydedir: hızlanma 1998'den beri ölçülüyor (d17), ama karanlık enerjinin ne olduğu bilinmiyor (d51).",
+    "Bunların dışındaki her şey, yani Büyük Patlama'dan 'önce' ne olduğu ve çok uzak gelecekte ne olacağı, modellere dayanır. d17'de Wikipedia'nın zaman çizelgesine dayanarak yaklaşık 100 milyar yıllık kozmik zamanın ötesinde bilim insanlarının evrenin izleyeceği yoldan daha az emin olduğunu görmüştün. Bu derste o belirsizliğin içine gireceğiz: önce başlangıç için önerilen dört senaryoya, sonra son için önerilen dört senaryoya bakacak, en sonda da 2025'teki DESI sonuçlarının bu tabloyu nasıl sarstığını göreceğiz. Her senaryoda şu üç soruyu soracağız: ne öneriyor, hangi varsayıma dayanıyor ve gözlemle sınanabilir mi?",
+    "Son soru özellikle önemlidir. Başlangıç senaryoları bugün ancak o dönemden kalan izlerle sınanabilir: arka plan ışımasındaki desenler, ilksel kütleçekim dalgaları, gökte aranacak özel lekeler. Son senaryoları ise bugünkü ölçümlerin geleceğe uzatılmasıyla değerlendiririz: karanlık enerjinin davranışı, parçacık kütleleri, protonun ömrü. Yani 'milyarlarca yıl sonra ne olacak?' sorusu, bugün laboratuvarda ve teleskopta yapılan ölçümlere dayanır. Bir senaryo bugün ölçülebilecek hiçbir şeye bağlanamıyorsa, ne kadar ilginç olursa olsun kesinlik ölçeğinin en altında kalır."
+   ],
+   "akilda": "Sağlam olan: 13,8 milyar yıllık sıcak Büyük Patlama evrimi ve genişleme (gözlemle kesinleşmiş), hızlanma ve karanlık enerji (güçlü kanıtlı ama açık sorulu). Başlangıç öncesi ve uzak gelecek modellere dayanır."
+  },
+  {
+   "baslik": "Büyük Patlama'dan önce ne vardı?",
+   "paragraflar": [
+    "Bu soruyu sorduğunda aslında iki ayrı şey sormuş olabilirsin. Birincisi: evrenin sıcak ve yoğun hâlinden önce başka bir evre var mıydı? İkincisi: zamanın kendisinin bir başlangıcı var mı? d8'de gördüğün gibi Büyük Patlama kuramı, evrenin nasıl başladığını değil, sıcak ve yoğun bir hâlden bugüne nasıl evrildiğini anlatır; Wikipedia bu ilk durumun nereden geldiğinin açık bir soru olduğunu yazar. Yani kuram ilk soruya hiçbir cevap vermez.",
+    "Filmi geriye sararsan, genel görelilik (d26) bütün uzaklıkların sıfıra indiği, yoğunluğun ve eğriliğin sonsuz olduğu bir ana, bir tekilliğe varır. d26'nın son bölümünde gördüğün gibi fizikçilerin çoğu bunu doğanın gerçekten sonsuzluk içerdiği biçiminde değil, kuramın orada geçerliliğini yitirdiği biçiminde yorumlar. d8'deki Planck çağı, kuantum kütleçekiminin önem kazandığı ve doğrulanmış bir kuramın bulunmadığı bu ilk andır. Bu yüzden 'zaman sıfırı' bir gözlem değil, bilgimizin sınırıdır. O sınırın ötesine geçmeye çalışan kuramları d53'te görmüştün.",
+    "Stephen Hawking 1996 tarihli 'Zamanın Başlangıcı' konferansında soruya başka bir açıdan bakar. Ona göre Büyük Patlama'dan önceki olayların bugün gözlenebilir hiçbir sonucu yoksa, onları kuramdan çıkarıp zamanın Büyük Patlama'da başladığını söylemek mümkündür; o olaylar ölçülemedikleri için tanımsızdır. Bu bir keşif değil, bir tanım önerisidir: ölçülemeyen bir şey hakkında konuşmanın anlamı ne? Bazı kozmologlar ise önceki bir evrenin bugüne iz bırakmış olabileceğini savunur ve bu izleri arar. Aşağıdaki senaryoların hepsi bu iki tavır arasında bir yerde durur.",
+    "Burada dilin de tuzakları var. 'Önce' sözcüğü zamanın zaten aktığı bir dünyayı varsayar. Zamanın kendisi Büyük Patlama'yla ortaya çıktıysa 'önce' sorusu, Hawking'in kuzey kutbu benzetmesinden yola çıkarsak, Dünya'nın kuzey kutbunun kuzeyinde ne olduğunu sormaya benzer: soru dilbilgisi açısından düzgündür ama karşılığı yoktur. Zaman daha önceki bir evreden sürüyorsa soru gayet anlamlıdır. Hangisinin doğru olduğu bugün bilinmiyor. Kesinlik etiketi açısından: 'Büyük Patlama'dan önce bir şey vardı' da 'yoktu' da şu an gözlemle desteklenmeyen iddialardır."
+   ],
+   "akilda": "Büyük Patlama kuramı evrenin kökenini değil, sıcak hâlden evrimini anlatır. Geriye sarınca varılan tekillik kuramın sınırıdır. Zamanın başlayıp başlamadığı bilinmiyor; 'önce' sorusunun anlamı da senaryoya göre değişir."
+  },
+  {
+   "baslik": "Şişme de başlangıcı silmez",
+   "paragraflar": [
+    "d54'te kozmik şişmenin bazı modellerde hiç bitmeden sürebileceğini gördün. Akla şu soru gelir: geleceğe doğru sonsuz sürebilen şişme, geçmişe doğru da sonsuz olamaz mı? Öyleyse evrenin bir başlangıcı olması gerekmezdi. Bu soruya Arvind Borde, Alan Guth ve Alexander Vilenkin bir teoremle cevap verdi; çalışma 'Şişen uzay-zamanlar geçmişe doğru tam değildir' başlığıyla 2003'te yayımlandı ve bugün üçünün adıyla anılır.",
+    "Teoremin dili tekniktir, ama özü şöyle anlatılabilir. Uzayda yol alan bir gözlemcinin geçmişini geriye doğru izlediğini düşün. Yazarların kanıtına göre, ortalama olarak genişleyen bir evrende, yani şişen ya da yeterince hızlı genişleyen her modelde, bu geriye doğru izleme sonlu bir uzunlukta biter: gözlemcinin geçmişi sonsuza uzanmaz. Bu duruma geçmişe doğru eksiklik denir. Gündelik bir benzetme: bir arabanın kilometre sayacının hep arttığını biliyorsan ve araba yol boyunca ortalama olarak hep belli bir hızın üstünde gittiyse, geriye doğru saydığında sayacın sonsuz büyüklükte bir geçmişe uzanamayacağını, bir yerde sıfıra varacağını anlarsın. Benzetmenin sınırı: teorem bir sayaçtan değil, uzay-zamanın geometrisinden söz eder ve sıfır noktasında ne olduğunu söylemez. Önemli bir ayrıntı: teorem, eski tekillik teoremlerinin dayandığı belli bir enerji koşulunu kullanmaz; yalnızca genişlemenin ortalamasına bakar.",
+    "Teorem neyi söylemez? 'Evren bir anda yoktan var oldu' demez. Makalenin kendi sonucu daha dikkatlidir: şişme modelleri, şişen bölgenin geçmişteki sınırını anlatmak için şişmenin dışında başka bir fiziğe ihtiyaç duyar. Wikipedia'nın aktardığı gibi Guth da 2007'de şişmenin genellikle geleceğe doğru sonsuz, geçmişe doğru ise sonsuz olmadığını yazdı. Yani şişme başlangıç sorusunu çözmez, yalnızca bir adım geriye taşır.",
+    "Bu sonuç, sonraki bölümlerdeki senaryoları anlamanın anahtarıdır. Evrenin geçmişine sonsuz bir öykü yazmak isteyen her model, genişlemenin ortalamasının sıfırdan büyük olmadığı bir evre önermek zorundadır: örneğin evrenin önce büzüldüğü sonra sıçradığı bir evre. Sıçrayan evren ve ekpirotik model tam olarak bunu yapar. Kesinlik etiketi: teorem matematiksel bir sonuçtur ve kendi varsayımları içinde sağlamdır; evrenin gerçekte nasıl başladığı ise açık sorudur."
+   ],
+   "akilda": "Borde–Guth–Vilenkin (2003): ortalama olarak genişleyen her evren geçmişe doğru eksiktir; şişme başlangıcı ortadan kaldırmaz, başlangıç sınırını anlatmak için başka fizik gerekir. Sonsuz geçmiş isteyen modeller büzülme ya da sıçrama önerir."
+  },
+  {
+   "baslik": "Hartle–Hawking: sınırı olmayan bir başlangıç",
+   "paragraflar": [
+    "Başlangıç sorusuna verilen en ünlü cevaplardan biri James Hartle ile Stephen Hawking'den geldi. Wikipedia'ya göre ikili 1983'te Physical Review D'de 'Evrenin dalga fonksiyonu' başlıklı makaleyi yayımladı. Fikir, kuantum mekaniğini evrenin bütününe uygulamaktır: d27'de bir parçacığın dalga fonksiyonunu gördün; burada dalga fonksiyonu bütün evrenin olası geometrileri üzerine tanımlanır. Hesap, Feynman'ın yol toplamı yöntemiyle (d29) ve zamanın sanal zaman denen matematiksel bir biçime çevrilmesiyle yapılır.",
+    "Sanal zaman gözünü korkutmasın; burada bir hesap tekniğidir. Wikipedia'ya göre bu dönüşümle uzayın üç boyutu ile sanal zaman, bir kürenin yüzeyi gibi hem sonlu hem de sınırsız bir geometri oluşturabilir. Hawking 1996 konferansında Dünya benzetmesini kullanır: Dünya'nın yüzeyi sonludur ama kenarı yoktur, etrafını dolaşan kimse kenardan düşmez. Önerinin evreni Dünya'nın kuzey kutbu gibi tek bir noktadan başlatacağını, ama bu noktanın bir tekillik değil, sıradan bir uzay-zaman noktası olacağını söyler. Kutupta 'daha kuzey' olmadığı gibi, başlangıçta da 'daha önce' yoktur.",
+    "Hawking bu öneriye konferansında açıkça bir hipotez der: gözlemlerle sınanmalıdır, gözlemler uymazsa yanlıştır; uyması ise onu kanıtlamaz. 2017'de Job Feldbrugge, Jean-Luc Lehners ve Neil Turok öneriyi ilk kez kesin bir matematiksel biçimde ele aldı. Max Planck Kütleçekim Fiziği Enstitüsü'nün duyurusuna göre vardıkları sonuç, belirsizlik ilkesi yüzünden yalnız düzgün değil, düzensiz evrenlerin de 'hiçlikten' doğabileceği ve düzensizlik arttıkça bunun daha olası hâle geldiğiydi. Lehners'e göre öneri bizimki gibi büyük bir evren değil, hemen çöken küçük, eğri evrenler veriyordu; Büyük Patlama bütün gizemini koruyordu.",
+    "Tartışma burada bitmedi. Öneriyi savunanlar aynı yıl 'Gerçek sınırsızlık dalga fonksiyonu' başlıklı bir makaleyle cevap verdi; Feldbrugge ve arkadaşları da buna 'Sınırsızlık önerisine kurtuluş yok' başlıklı bir makaleyle karşılık verdi. 2018'de Hartle ve Thomas Hertog'un da aralarında bulunduğu bir ekip, öneri farklı biçimde kurulduğunda büyük düzensizliklerin güçlü biçimde bastırıldığını gösteren bir hesap yayımladı. Bu, bir kuramın matematiksel tutarlılığının bile yıllarca tartışılabildiğini gösterir. Öneri yıllar içinde genişletildi de: Wikipedia'ya göre Hawking ve Neil Turok 1998'de kavramı açık, yani eyer biçimli geometrilere uyguladı; Hawking'in Thomas Hertog'la 2018'de yayımlanan çalışması ise, sonsuz şişme maddesinin aktarımına göre, bu fikirleri kütleçekim dalgası astronomisiyle sınanabilir kılmayı amaçlıyordu. Kesinlik etiketi: kuram/hipotez; matematiği hâlâ tartışılıyor ve doğrudan bir gözlemle sınanmadı."
+   ],
+   "akilda": "Hartle–Hawking (1983): sanal zamanla evren, Dünya yüzeyi gibi sonlu ama sınırsızdır; başlangıç kuzey kutbu gibi sıradan bir noktadır. 2017'den beri matematiği tartışılıyor (Feldbrugge, Lehners, Turok ↔ Hartle, Hertog). Etiket: kuram/hipotez."
+  },
+  {
+   "baslik": "Sıçrayan evren: çöküşten doğan genişleme",
+   "paragraflar": [
+    "Başlangıç sorununa tamamen farklı bir cevap: belki Büyük Patlama bir başlangıç değil, bir dönüş noktasıydı. Wikipedia'nın Büyük Sıçrama maddesine göre bu hipotez, bildiğimiz genişlemenin daha önceki bir büzülme evresinin ardından geldiğini öne sürer. Evren büzülür, çok yoğun bir hâle gelir, ama tekilliğe çökmek yerine geri seker ve genişlemeye başlar. Önceki bölümdeki teoremle çelişmez, çünkü büzülme evresi eklendiğinde genişlemenin geçmişteki ortalaması artık sıfırdan büyük olmak zorunda değildir.",
+    "Fikrin eski bir geçmişi var. Aynı maddeye göre sıçrama başlangıçta döngüsel ya da salınan evren modellerinin bir evresi olarak önerildi; de Sitter, Weizsäcker, McVittie ve Gamow gibi isimler tarafından, büyük ölçüde estetik nedenlerle desteklendi. 1980'lerin başında şişme kuramı ufuk sorununa bir çözüm olarak ortaya çıkınca ciddi gündemden düştü. 'Büyük Sıçrama' adı ise 1987'de Priester ve Blome'un yazılarında geçti.",
+    "Fikri yeniden canlandıran, d53'te gördüğün döngü kuantum kütleçekimi oldu. Wikipedia'ya göre bu kuramın evrene uygulanan biçiminde, döngü kuantum kozmolojisinde, sıçrama ilk kez Şubat 2006'da Abhay Ashtekar, Tomasz Pawlowski ve Parampreet Singh tarafından basitleştirilmiş evren modellerinde bulundu. Bu modellerde uzayın Planck ölçeğindeki taneli yapısı, yoğunluk çok yükselince kütleçekimini itici bir etkiye çevirir ve tekilliği bir sıçramayla değiştirir. Martin Bojowald 2007'de bu yolla Büyük Patlama'dan önceki zamanı anlatmaya çalışan bir çalışma yayımladı; öteki gruplar bu sonuca itiraz etti. Aynı madde, sıçramanın varlığının döngü kuantum kütleçekiminin kendisinden henüz gösterilmediğini de vurgular.",
+    "Sınanabilir mi? Bir sıçramanın arka plan ışımasında iz bırakması beklenir. Wikipedia'ya göre Mayıs 2023'te Physical Review Letters'ta yayımlanan bir çalışma Planck verilerini tek bir sıçramanın benzetimleriyle karşılaştırdı ve o belirli sıçrama izini bulamadı. Bu, bütün sıçrama modellerini çürütmez ama birini sınadı. d56'da göreceğin 'kara delikten beyaz deliğe sıçrama' önerisi de aynı fikir ailesindendir. Kesinlik etiketi: sıçramanın bazı modellerin matematiksel sonucu olması kuram/hipotez; gerçekte yaşanmış olması spekülasyon."
+   ],
+   "akilda": "Büyük Sıçrama: genişleme daha önceki bir büzülmeden sekerek başladı. Eski döngüsel fikirlerden gelir; döngü kuantum kozmolojisinde 2006'da bulundu. 2023'te Planck'ta bir sıçrama izi arandı, bulunamadı. Etiket: kuram/hipotez; yaşanmışlığı spekülasyon."
+  },
+  {
+   "baslik": "Ekpirotik evren: çarpışan zarlar",
+   "paragraflar": [
+    "Sıçrayan evrenin en iddialı biçimlerinden biri ekpirotik modeldir. Wikipedia'ya göre model 2001'de Justin Khoury, Burt Ovrut, Paul Steinhardt ve Neil Turok tarafından ortaya atıldı. Adı Eski Yunancada 'büyük yangın' anlamına gelen ekpyrosis sözcüğünden gelir; Steinhardt bu adı, evrenin ateşle doğup soğuyup yeniden doğduğu sonsuz döngüleri anlatan Stoacı kozmolojiden almıştır. d54'te şişmeyi en sert eleştirenlerden biri olarak tanıdığın Steinhardt, bu modelin kurucuları arasındadır.",
+    "Modelin ilk biçimleri d53'teki sicim kuramının araçlarını kullanır: ek boyutlar ve zar denen, daha çok boyutlu bir uzayda yüzen çok boyutlu yüzeyler. Bu resimde bizim evrenimiz böyle bir zardır ve bir başka zarla çarpışması sıcak Büyük Patlama'yı başlatır. Wikipedia'ya göre modelin asıl yeniliği şudur: evreni pürüzsüzleştirip düzleştiren şey şişme değil, Büyük Patlama'dan önceki yavaş bir büzülme evresidir. Büyük Patlama, bu büzülmeden genişlemeye geçişin, yani bir sıçramanın adıdır.",
+    "Ekpirotik model daha sonra döngüsel bir evren kuramına eklendi: Steinhardt ve Turok 2002'de Science dergisinde 'Evrenin döngüsel bir modeli' adlı makaleyi yayımladı. Bu kuramda evren düzenli aralıklarla sıçrar; her döngünün kendi Büyük Patlama'sı vardır. Wikipedia'ya göre şişmeden önemli bir farkı da var: kuantum dalgalanmaları şişmeyle gerilmediği için bu modeller bir çoklu evren üretmez. d54'teki çoklu evren tartışması bu modelde ortaya çıkmaz.",
+    "Eleştiriler de var. Wikipedia'ya göre bazı araştırmacılar Planck verilerinin ekpirotik ve döngüsel senaryoların uygun parametre aralığını önemli ölçüde daralttığını savunur; Renata Kallosh, Lev Kofman ve Andrei Linde'nin 2001'deki 'Piroteknik evren' makalesi modeldeki sorunlara ilk dikkat çeken çalışma olarak anılır. Ayırt edici bir sınav, d54'teki ilksel kütleçekim dalgalarıdır: Wikipedia'ya göre bu dalgalar gözlenirse evrenin kökenine dair kuramları ayırt etmeye yardım edebilir. Şimdiye kadar gözlenmediler; d54'te gördüğün r < 0,036 sınırı henüz iki taraf arasında bir karar vermedi. Kesinlik etiketi: kuram/hipotez."
+   ],
+   "akilda": "Ekpirotik model (Khoury, Ovrut, Steinhardt, Turok 2001): evreni şişme değil, Büyük Patlama öncesindeki yavaş büzülme düzleştirir; sıçrama zar çarpışmasıdır. Döngüsel sürümü 2002. Çoklu evren üretmez. Etiket: kuram/hipotez."
+  },
+  {
+   "baslik": "Penrose'un döngüleri: konformal döngüsel kozmoloji",
+   "paragraflar": [
+    "Roger Penrose, kara deliklerin genel göreliliğin sağlam bir öngörüsü olduğunu gösterdiği için 2020 Nobel Fizik Ödülü'nün yarısını aldı (d16). Kozmolojide ise çok daha tartışmalı bir fikrin sahibidir. Wikipedia'ya göre Penrose'un konformal döngüsel kozmoloji (CCC) adlı modeli, 2010'da yayımlanan 'Zamanın Döngüleri' kitabıyla geniş kitlelere ulaştı. Modelde evren, aeon denen sonsuz bir evreler dizisinden geçer.",
+    "Fikrin özü bir ölçek oyunudur. Wikipedia'ya göre bir aeonun sonsuz geleceği, ölçek değiştirilerek bir sonraki aeonun Büyük Patlama'sıyla özdeşleştirilir; bu ölçek değiştirmede ışık konilerinin yapısı, yani ışığın hangi yollardan gidebileceği korunur. Böyle ölçek değiştiren ama ışık konilerini koruyan dönüşümlere konformal denir; adın kaynağı budur. Aynı kaynağa göre fotonlar gibi bozonlar konformal olarak değişmez kuantum yasalarına uyar ve ölçeği değiştirilmiş aeonda da eskisi gibi davranır; onlar için aeonlar arasındaki sınır aslında bir sınır değildir. Kabaca söylersek: evrende yalnız ışık kaldığında 'büyük' ile 'küçük' arasındaki fark anlamını yitirir ve çok büyük, soğuk bir evren çok küçük, sıcak bir başlangıçtan ayırt edilemez.",
+    "Bunun bir bedeli var. Wikipedia'ya göre modelin işlemesi için kütleli parçacıkların hepsinin eninde sonunda yok olması gerekir; fermiyonlar, yani elektron ve kuarklar gibi madde parçacıkları, kara deliklerin buharlaşması sırasında geri dönüşsüz biçimde ışınıma dönüşmelidir; elektronların da ya bozunması ya da yüklerini veya kütlelerini kaybetmesi gerekir ve aynı kaynak, bunun için bilinen hiçbir alışılmış öneri olmadığını not eder. Penrose daha sonra bu koşulu yumuşatarak önemsiz miktarda kütleye izin verdi. Yani model, bugünkü fizikte karşılığı bulunmayan bir varsayıma dayanıyor.",
+    "Penrose ve Vahe Gurzadyan 2010'da WMAP ve BOOMERanG verilerinde, önceki aeondaki olayların izi olabilecek eş merkezli, sıcaklık değişimi düşük daireler bulduklarını ve bunun benzetimlere göre 6 sigma düzeyinde bir fazlalık olduğunu öne sürdü. Wikipedia'ya göre üç ayrı grup (Wehus ve Eriksen; Moss, Scott ve Zibin; Hajian) verileri yeniden inceledi ve anlamlı bir fazlalık bulmadı; anlaşmazlığın kaynağı Penrose ile Gurzadyan'ın benzetimleri belgelenmemiş, alışılmadık bir yolla kurmasıydı. 2024'te yapılan bir yeniden analiz de böyle daireler bulmadı, ama yazarlarına göre bu yokluk modeli çürütmez. Modelin daha geniş kozmoloji topluluğunca kabul görmediği de aynı kaynakta yazar.",
+    "Burada d50'deki kuralı hatırla: bir fikrin ünlü biri tarafından, hatta bir Nobel ödüllü tarafından savunulması kanıt sayılmaz. Penrose'un kara delik çalışmaları gözlemle doğrulandı; bu, kozmolojideki önerisini otomatik olarak doğru yapmaz. Kesinlik etiketi: spekülasyon. Matematiksel bir çerçevesi var, ama bilinen fizikte karşılığı olmayan bir varsayıma dayanıyor ve gözlem iddiaları bağımsız analizlerde doğrulanmadı."
+   ],
+   "akilda": "Konformal döngüsel kozmoloji (Penrose; 'Zamanın Döngüleri' 2010): her aeonun sonsuz geleceği ölçek değiştirilerek bir sonraki Büyük Patlama olur. Bütün kütlenin yok olmasını gerektirir. 2010 daire iddiası üç grupça doğrulanmadı. Etiket: spekülasyon."
+  },
+  {
+   "baslik": "Hawking noktaları: bir iddia ve sınanması",
+   "paragraflar": [
+    "Penrose'un modelinin ikinci gözlem iddiası daha yenidir. Daniel An, Krzysztof Meissner, Paweł Nurowski ve Roger Penrose 2018'de arXiv'de 'Gökteki arka plan ışımasında Hawking noktalarına dair görünür kanıt' başlıklı bir makale yayımladı. Makaleye göre arka plan ışımasında önceden fark edilmemiş, sıcaklığı belirgin biçimde yüksek, dairesel lekeler vardı; önce Planck'ın 70 gigahertzlik verilerinde fark edilmiş, sonra WMAP verilerinde de tam aynı konumlarda bulunmuşlardı. Lekelerin açısal yarıçapı 0,03 ile 0,04 radyan arasındaydı, yani çapları yaklaşık 3 ile 4 derece.",
+    "Yazarların yorumu şuydu: bu noktalar, bizim aeonumuzdan önceki bir aeondaki süper kütleli kara deliklerin Hawking ışımasıyla buharlaşırken yaydığı enerjinin, ölçek değiştirilerek bizim arka plan ışımamıza düşmüş izleridir. Yazarlar lekeleri 1.000 ve sonra 10.000 benzetimle karşılaştırdı ve örtüşmenin gürültüden kaynaklanmasını son derece olası dışı buldu. İddianın kendisinin iki katlı bir spekülasyon olduğuna dikkat et: d16'da ve d52'de gördüğün gibi Hawking ışıması bile henüz hiç gözlenmedi; burada ise önceki bir evrendeki kara deliklerin Hawking ışıması öne sürülüyor.",
+    "Bağımsız sınama 2020'de geldi. Wikipedia'ya göre Dylan Jow ve Douglas Scott, 'başka yere bakma etkisi' hesaba katıldığında bu noktaların standart şişme resmiyle uyumlu olduğunu buldu; dolayısıyla CCC için kanıt sayılamazlardı. Başka yere bakma etkisi şudur: bir gökyüzü haritasında çok sayıda yerde, çok sayıda boyutta ve biçimde bir şey ararsan, salt rastlantıyla 'ilginç' görünen bir şeye rastlaman çok olasıdır. Asıl soru 'bu leke tuhaf mı?' değil, 'bu kadar çok yere baktıktan sonra bu kadar tuhaf bir leke bulmak ne kadar şaşırtıcı?' sorusudur.",
+    "Bu öykü BICEP2'ninkine (d54) benzer, ama bir farkla: BICEP2 ekibi hatayı Planck'la birlikte kendisi düzeltti, Hawking noktaları ise iddiayı ortaya atanlarla onu yeniden analiz edenler arasında tartışmalı kaldı. Bilimsel topluluk bu tür durumlarda bağımsız analizlerin sonucuna bakar. Kesinlik etiketi: spekülasyon; bağımsız analiz noktaları standart modelle açıklanabilir buldu."
+   ],
+   "ornek": {
+    "baslik": "Örnek: Başka yere bakma etkisi ve lekelerin boyu",
+    "metin": "1. adım: Lekelerin çapı 3 ile 4 derece. Dolunayın görünür çapı yaklaşık 0,5 derecedir (d8). 3 / 0,5 = 6, 4 / 0,5 = 8: her leke gökte yan yana dizilmiş 6 ile 8 dolunay genişliğindedir. 2. adım: Başka yere bakma etkisini bir sayıyla gör. Tek bir bölgede rastlantıyla 'binde bir olasılıklı' bir tuhaflık görme şansı 0,001 olsun. Haritada birbirinden bağımsız 10.000 bölgeye bakarsan, beklenen tuhaf bölge sayısı 10.000 × 0,001 = 10 olur. En az bir tane bulma olasılığı 1 − (0,999)^10.000 ≈ 1 − 0,000045 ≈ 0,99996, yani neredeyse kesin. 3. adım: Bu yüzden tek bir yerde 'binde bir' görünen bir sonuç, bütün aramaya bakınca hiç şaşırtıcı olmayabilir. Sayılar açıklama içindir, makalelerdeki gerçek hesap daha karmaşıktır. Sonuç birimi: dolunay çapı ve olasılık (birimsiz)."
+   },
+   "akilda": "An, Meissner, Nurowski, Penrose (2018): arka plan ışımasında 3–4 derece çaplı sıcak noktalar, önceki aeondan kara delik izi diye yorumlandı. Jow ve Scott (2020): başka yere bakma etkisiyle standart modele uyuyorlar. Etiket: spekülasyon."
+  },
+  {
+   "baslik": "Uzak geleceğin takvimi: yıldızların sonu",
+   "paragraflar": [
+    "Şimdi zamanın öbür ucuna geçelim. Uzak gelecek senaryolarının hepsi bugünkü fizik yasalarının ve bugün ölçülen genişlemenin sürdüğü varsayımına dayanır. Wikipedia'nın genişleyen bir evrenin geleceği maddesi bu varsayımlarla bir takvim verir. Bu bölümde, karanlık enerjinin kozmolojik sabit gibi davrandığı ve evrenin sonsuza dek genişlediği en yaygın varsayımı izleyeceğiz; öteki senaryolar sonraki bölümlerde.",
+    "İlk büyük değişiklik gökyüzünün boşalmasıdır. Aynı maddeye göre, Krauss ve Starkman'ın 2000 tarihli hesabına dayanarak, yaklaşık 150 milyar yıl içinde Yerel Üstküme'nin dışındaki bütün galaksiler kozmolojik ufkun ardına geçecek; yaklaşık 2 trilyon yıl sonra da o galaksilerin ışığı gözlenemeyecek kadar kırmızıya kaymış olacak. d17'de gördüğün gibi çekimle bağlı yapılar genişlemeye katılmaz; bizim galaksimiz ve Yerel Grup'taki komşularımız birbirine bağlı kalır. O çağın gökbilimcileri, eğer varsa, evrenin genişlediğini galaksilere bakarak anlayamayabilir.",
+    "İkinci değişiklik yıldızların sönmesidir. Wikipedia'ya göre en uzun ömürlü yıldızlar olan kırmızı cüceler yaklaşık 10¹³ yıl yaşar ve yaklaşık 10¹⁴ yıl sonra yıldız oluşumu sona erer; bu, d17'deki değerle aynıdır. Ardından 10¹⁴ ile 10⁴⁰ yıl arasında yozlaşmış çağ gelir: evrene beyaz cüceler, nötron yıldızları ve kara delikler gibi yıldız kalıntıları hâkimdir (d6). Aynı maddeye göre bu çağda karanlığı yalnız ara sıra, örneğin Ia süpernovaları gibi kısa parlamalar böler.",
+    "Üçüncü soru maddenin kendisinin ömrüdür. Bazı büyük birleşik kuramlara göre proton da sonunda bozunur. Wikipedia'ya göre deneyler protonun bozunuyorsa yarılanma ömrünün en az 10³⁴ yıl olduğunu gösteriyor; kuramların öngörüleri 10³¹ ile 10³⁶ yıl arasında değişiyor ve yeni araştırmalar en basit kuramları dışlıyor. Proton bozunmuyorsa da süreç durmaz: aynı kaynağa göre yaklaşık 10¹⁵⁰⁰ yıl içinde kuantum tünellemesiyle (d28) yıldız kalıntılarındaki hafif çekirdekler demire dönüşerek 'demir yıldızlar' oluşturur. Kesinlik etiketi: yıldızların yakıtını bitirip söneceği, yıldız fiziğine dayanan sağlam bir öngörüdür; proton bozunması ise hiç gözlenmedi, kuram/hipotez."
+   ],
+   "ornek": {
+    "baslik": "Örnek: Vücudundaki protonlar bozunuyor mu?",
+    "metin": "1. adım: 70 kg'lık bir vücuttaki proton ve nötron sayısı kabaca kütle bölü atomik kütle birimidir: 70 / (1,66 × 10⁻²⁷) ≈ 4,2 × 10²⁸ çekirdek parçacığı. 2. adım: Yarılanma ömrü T olan N parçacıktan bir yılda bozunan sayı yaklaşık N × 0,693 / T'dir (d31'deki yarılanma ömrü mantığı). Deneylerin alt sınırı T = 10³⁴ yıl alınırsa: 4,2 × 10²⁸ × 0,693 / 10³⁴ ≈ 2,9 × 10⁻⁶ bozunma bölü yıl. 3. adım: 80 yıllık bir ömürde: 2,9 × 10⁻⁶ × 80 ≈ 2,3 × 10⁻⁴. Yani proton bozunsa bile, bir insanın ömrü boyunca vücudunda tek bir bozunma görme olasılığı yaklaşık on binde ikidir. Basitleştirme: hesap protonla nötronu birlikte saydı; amaç büyüklük düzeyi. Deneyler bu yüzden binlerce ton suyu yıllarca izler. Sonuç birimi: bozunma sayısı."
+   },
+   "akilda": "~150 milyar yılda Yerel Üstküme dışındaki galaksiler ufkun ardına geçer. ~10¹⁴ yılda yıldız oluşumu biter; 10¹⁴–10⁴⁰ yıl yozlaşmış çağ. Proton bozunuyorsa yarılanma ömrü ≥ 10³⁴ yıl, bu kuram/hipotez; bozunmuyorsa ~10¹⁵⁰⁰ yılda demir yıldızlar."
+  },
+  {
+   "baslik": "Isıl ölüm: en sessiz son",
+   "paragraflar": [
+    "Genişleme sonsuza dek sürer ve karanlık enerji sabit kalırsa, takvimin son sayfası d30'da tanıdığın ısıl ölümdür. Wikipedia'nın ısıl ölüm maddesine göre bu, evrenin kullanılabilir serbest enerjinin kalmadığı, en yüksek entropiye ulaştığı ve hiçbir termodinamik sürecin süremediği durumdur. Fikri ilk kez 1851'den başlayarak Lord Kelvin dile getirdi; enerjinin dağılması üzerine yazısını 1852'de yayımladı. d30'da gördüğün gibi ısıl ölüm soğuk bir donma değil, her yerin aynı sıcaklığa geldiği, ısı akışının ve dolayısıyla her türlü değişimin durduğu bir dengedir.",
+    "Yozlaşmış çağdan sonra Wikipedia'nın takvimi kara delik çağını verir: yaklaşık 10⁴⁰ ile 10¹⁰⁰ yıl arası. Bu çağda geriye kalan en büyük yapılar kara deliklerdir ve onlar da d16'da gördüğün Hawking ışımasıyla çok yavaş buharlaşır. Isıl ölüm maddesine göre bir galaksi kütlesindeki, yaklaşık 10¹¹ Güneş kütleli bir kara deliğin buharlaşması 10¹⁰⁰ yıl mertebesinde, 10¹⁴ Güneş kütlesine kadar olan en büyüklerinki ise 10¹⁰⁶ yıla kadar sürebilir; bu değerler d30'dakilerle aynıdır. Buharlaşmanın fiziğini d52'de ayrıntılı gördün; orada da hatırladığın gibi Hawking ışıması kuramsal olarak sağlam ama henüz gözlenmemiştir.",
+    "Yaklaşık 10¹⁰⁰ yıldan sonra karanlık çağ başlar: Wikipedia'ya göre evren neredeyse boştur; yalnızca fotonlar, nötrinolar, elektronlar ve pozitronlar kalır ve bunlar da çok seyrek etkileşir. Karanlık enerji pozitif bir kozmolojik sabitse, ısıl ölüm maddesine göre sıcaklık mutlak sıfıra inmez, sıfırdan büyük çok küçük bir değere yaklaşır; kozmolojik sabit sıfır olsaydı mutlak sıfıra çok uzun sürede yaklaşırdı. Aynı madde, akıl almaz ölçüde uzun sürelerde Poincaré yinelemesi denen bir matematiksel sonuç yüzünden entropinin kendiliğinden azalabileceğinin de tartışıldığını yazar; bu, bugün yalnızca bir kuramsal meraktır.",
+    "Isıl ölüm neden en çok anılan senaryo? Çünkü en az ek varsayım ister: bugün ölçtüğümüz hızlanan genişlemenin ve bildiğimiz fiziğin sürmesi yeterlidir. Ama ısıl ölüm maddesinin de belirttiği gibi evrenin sonu hakkındaki varsayımlar zaman içinde çok değişti ve ısıl ölüm Büyük Yırtılma, vakum bozunması gibi seçeneklerle yan yana anılır. Kesinlik etiketi: kuram/hipotez düzeyinde bir öngörü, ama bugünkü verilerin en doğrudan uzantısı. Bütün ayrıntılar, karanlık enerjinin gerçekten sabit olup olmadığına bağlıdır."
+   ],
+   "ornek": {
+    "baslik": "Örnek: Evrenin yaşı bir saniye olsaydı",
+    "metin": "Evrenin bugünkü yaşını, 1,38 × 10¹⁰ yılı, bir saniyeye sıkıştıralım. Çevirme çarpanı: 1 saniye / 1,38 × 10¹⁰ yıl. 1. adım: Yıldız oluşumunun bitişi, 10¹⁴ yıl: 10¹⁴ / 1,38 × 10¹⁰ ≈ 7.250 saniye, yani yaklaşık 2 saat. 2. adım: Yozlaşmış çağın sonu, 10⁴⁰ yıl: 10⁴⁰ / 1,38 × 10¹⁰ ≈ 7,2 × 10²⁹ saniye. Bir yıl yaklaşık 3,16 × 10⁷ saniye olduğundan bu ≈ 2,3 × 10²² yıl eder. 3. adım: Kara delik çağının sonu, 10¹⁰⁰ yıl: ≈ 7,2 × 10⁸⁹ saniye ≈ 2,3 × 10⁸² yıl. Sonuç: bu ölçekte yıldızların parladığı bütün dönem bir öğleden sonra kadar sürer; kara deliklerin çağı ise sıkıştırılmış hâliyle bile bugünkü evrenin yaşının akıl almaz katları kadar uzundur. Sonuç birimi: saniye ve yıl."
+   },
+   "akilda": "Isıl ölüm: en yüksek entropi, kullanılabilir enerji yok. Kara delik çağı 10⁴⁰–10¹⁰⁰ yıl; dev kara delikler 10¹⁰⁰–10¹⁰⁶ yılda buharlaşır. Sonra neredeyse boş karanlık çağ. Bugünkü verilerin en doğrudan uzantısı, ama karanlık enerjinin sabit olmasına bağlı."
+  },
+  {
+   "baslik": "Büyük Yırtılma: her şeyi parçalayan genişleme",
+   "paragraflar": [
+    "Karanlık enerji sabit değil de zamanla güçleniyorsa ne olur? Bunu anlamak için karanlık enerjinin davranışını özetleyen bir sayıya bakmak gerekir: basıncının enerji yoğunluğuna oranı, w. d51'de gördüğün gibi kozmolojik sabit w = −1'e karşılık gelir: genişleme sürdükçe yoğunluğu değişmez. Robert Caldwell, Marc Kamionkowski ve Nevin Weinberg 2003'te 'Hayalet enerji ve kozmik kıyamet günü' başlıklı makalelerinde, basıncı ile enerji yoğunluğunun toplamı eksi olan, yani w'si −1'den küçük bir karanlık enerjiyi incelediler ve ona hayalet enerji dediler.",
+    "Makalenin özetine göre hayalet enerjinin yoğunluğu genişledikçe azalmaz, artar ve sonlu bir sürede sonsuza ulaşır. Bu sırada bir arada duran her yapıyı sırayla söker: önce galaksi kümelerini, sonra Samanyolu'nu, Güneş Sistemi'ni, Dünya'yı ve en sonda moleküllerimizi, atomlarımızı, çekirdekleri ve nükleonları. Evrenin bu sonuna Büyük Yırtılma denir.",
+    "Yazarlar bir örnek hesap da verir: w = −1,5, Hubble sabiti 70 km/s/Mpc ve madde oranı 0,3 alınırsa Büyük Yırtılma'ya yaklaşık 22 milyar yıl kalır. Bu örnekte sonun takvimi ürkütücü biçimde kesindir: galaksi kümeleri yaklaşık 1 milyar yıl önce, Samanyolu yaklaşık 60 milyon yıl önce sökülür; Güneş Sistemi sondan yaklaşık 3 ay önce dağılır, Dünya yaklaşık 30 dakika önce parçalanır, atomlar ise sondan 10⁻¹⁹ saniye önce. Aşağıdaki örnekte bu sürenin w'ye ne kadar duyarlı olduğunu göreceksin.",
+    "Bu senaryo ne kadar ciddi? Matematiksel olarak tutarlıdır, ama w'nin sonsuza dek −1'in altında kalmasını gerektirir ve böyle bir enerjinin fiziksel olarak nasıl olabileceği tartışmalıdır. 2025'teki DESI analizleri ise, son bölümde göreceğin gibi, karanlık enerjinin geçmişte −1'in altında olmuş olabileceğini ama bugün −1'in üstünde olduğunu ima ediyor; bu doğru çıkarsa Büyük Yırtılma'ya giden yol zayıflar. İlginç bir tarihsel not: makalenin yazıldığı 2003'te, yazarların aktarımına göre veriler w'nin −1'e yaklaştığını gösteriyordu ve bazı varsayımlarla en iyi uyum −1'in hemen altına düşüyordu; yani hayalet enerji o gün de dışlanamıyordu. Aradan geçen yirmi yılda veriler çok keskinleşti, ama soru kapanmadı. Kesinlik etiketi: kuram/hipotez; sürekli bir hayalet enerjiye dair gözlemsel destek yok."
+   ],
+   "ornek": {
+    "baslik": "Örnek: Kıyamete kaç milyar yıl?",
+    "metin": "Makaledeki yaklaşık formül: t_yırtılma − t_bugün ≈ (2/3) × 1 / A × 1 / H0 × 1 / √(1 − Ωm); burada A, 1 + w'nin mutlak değeridir (eksi işareti atılmış hâli). 1. adım: Hubble zamanı 1 / H0 ≈ 977,8 / 70 ≈ 13,97 milyar yıl (d17'deki kısa yol). 2. adım: √(1 − 0,3) = √0,7 ≈ 0,837. 3. adım: w = −1,5 için A = 0,5: t ≈ (2/3) × 2 × 13,97 / 0,837 ≈ 22,3 milyar yıl. Makalenin verdiği değerle aynı. 4. adım: w = −1,1 için A = 0,1: t ≈ (2/3) × 10 × 13,97 / 0,837 ≈ 111 milyar yıl. 5. adım: w = −1,05 için ≈ 223 milyar yıl. Sonuç: w −1'e yaklaştıkça son gittikçe uzaklaşır; w tam −1 ise (kozmolojik sabit) Büyük Yırtılma hiç olmaz. Sonuç birimi: milyar yıl."
+   },
+   "akilda": "Büyük Yırtılma (Caldwell, Kamionkowski, Weinberg 2003): w < −1 olan hayalet enerji zamanla güçlenir, önce galaksileri sonra atomları söker. w = −1,5 örneğinde sona ~22 milyar yıl. Etiket: kuram/hipotez; DESI bugün w > −1'i işaret ediyor."
+  },
+  {
+   "baslik": "Büyük Çöküş: genişleme tersine dönerse",
+   "paragraflar": [
+    "Uzun süre en doğal son senaryo bu sanılırdı: yukarı atılan bir taş gibi, evrenin genişlemesi de kütleçekimiyle yavaşlar, durur ve tersine döner; evren yeniden sıkışarak sıcak ve yoğun bir hâle, Büyük Çöküş'e varır. d17'de gördüğün gibi hızlanan genişlemenin keşfiyle bu senaryo gözden düştü; Wikipedia'nın zaman çizelgesi onu şu anda büyük olasılıkla yanlış kabul edilen bir seçenek olarak anar. Benzetmenin sınırı: taşı yavaşlatan Dünya'nın çekimidir; evrende ise genişlemeyi kütleçekimi yavaşlatırken karanlık enerji hızlandırır ve hangisinin üstün geleceği karanlık enerjinin zamanla nasıl değiştiğine bağlıdır. Ama bu yargı da karanlık enerjinin sabit olduğu varsayımına dayanır.",
+    "Karanlık enerji zamanla zayıflıyorsa ve altında eksi işaretli bir kozmolojik sabit gizliyse tablo değişir. Cornell Üniversitesi'nin 1 Ekim 2025 tarihli duyurusuna göre fizikçi Henry Tye ile Hoang Nhan Luu ve Yu-Cheng Qiu, 18 Eylül 2025'te Journal of Cosmology and Astroparticle Physics'te yayımlanan makalelerinde DESI ve Karanlık Enerji Araştırması (DES) verilerini böyle bir modelle yorumladı. Modelde eksi işaretli bir kozmolojik sabitin yanında, evrenin erken döneminde kozmolojik sabit gibi davranmış ama artık öyle davranmayan çok hafif, varsayımsal bir parçacık var.",
+    "Bu modele göre evrenin toplam ömrü yaklaşık 33 milyar yıldır. Evren yaklaşık 11 milyar yıl sonra en büyük boyutuna ulaşacak, sonra büzülmeye başlayacak ve yaklaşık 20 milyar yıl sonra bir Büyük Çöküş yaşayacak. Tye'nin duyurudaki ifadesi önemlidir: veriler doğru çıkarsa evrenin bir sonu olacak. Aynı duyuru, DESI, Zwicky Geçici Olay Tesisi, Euclid, SPHEREx ve Vera C. Rubin Gözlemevi gibi aletlerden gelecek verilerle tahminlerin düzeltilebileceğini de yazar.",
+    "Bağımsız bir ekip de benzer bir yöne işaret ediyor. Tallinn'deki Kimyasal ve Biyolojik Fizik Enstitüsü'nden Ioannis Gialamas ve arkadaşlarının 2025 tarihli analizine göre DESI 2025 verileri, evrenin gelecekte, sonunda kozmolojik bir çöküşe yol açabilecek bir duruma geçişini yüzde 93,8 oranında yeğliyor. Ama aynı makale, hayalet davranışı olmayan modellerin de verilerle 2 sigma düzeyinde uyumlu olduğunu yazar. Yani kesinlik yok. Kesinlik etiketi: spekülasyon; keşif eşiğinin altındaki bir işarete ve belirli model seçimlerine dayanıyor."
+   ],
+   "ornek": {
+    "baslik": "Örnek: Tye modelinin takvimi",
+    "metin": "Bugünkü yaş: 13,8 milyar yıl. 1. adım: En büyük boyut yaklaşık 11 milyar yıl sonra: evrenin o andaki yaşı 13,8 + 11 = 24,8 milyar yıl. 2. adım: Çöküş yaklaşık 20 milyar yıl sonra: 13,8 + 20 = 33,8 milyar yıl, duyurudaki 'yaklaşık 33 milyar yıllık ömür' ile uyumlu (yuvarlama farkı). 3. adım: Şu anki yaş toplam ömrün oranı olarak: 13,8 / 33 ≈ 0,42; yani bu modele göre evren ömrünün yarısına yaklaşıyor. 4. adım: Karşılaştırma: ısıl ölüm senaryosunda yıldız oluşumu 10¹⁴ yıl sürer; Tye modelindeki toplam ömür bunun yalnızca 33 × 10⁹ / 10¹⁴ ≈ 3,3 × 10⁻⁴'ü, yani yaklaşık üç binde biridir. Sonuç birimi: milyar yıl."
+   },
+   "akilda": "Büyük Çöküş: genişleme durup tersine döner. Sabit karanlık enerjiyle olası değil. Tye ve ark. (2025): DESI ve DES verileri doğru çıkarsa toplam ömür ~33 milyar yıl, çöküş ~20 milyar yıl sonra. Etiket: spekülasyon."
+  },
+  {
+   "baslik": "Vakum bozunması: Higgs'in sessiz tehdidi",
+   "paragraflar": [
+    "En tuhaf son senaryo, uzayın kendisiyle ilgilidir. d32'de bütün evreni dolduran Higgs alanını gördün. Bir alanın en düşük enerjili durumuna boşluk ya da vakum denir. Wikipedia'nın sahte boşluk maddesine göre bir sistem bir süre kararlı kalabildiği hâlde aslında en düşük enerjili durumda olmayabilir; buna sahte boşluk denir. Sahte boşluktaki bir evren bir gün daha kararlı, gerçek boşluğa geçebilir; buna vakum bozunması denir. Bir benzetme: bir dağın yamacındaki küçük bir çukurda duran top, çukurun dibinde rahat görünür, ama vadinin dibi daha aşağıdadır.",
+    "Bunun gerçekleşme biçimi korkutucu bir sadeliktedir. Aynı maddeye göre bozunma büyük olasılıkla bir gerçek boşluk baloncuğunun oluşmasıyla başlar; baloncuk belli bir boyu aşınca duvarının hızı son derece çabuk ışık hızına yaklaşır. Baloncuğun içinde parçacıkların ve kuvvetlerin özellikleri değişir. Kütleçekiminin rolünü 1980'de Sidney Coleman ve Frank De Luccia inceledi; sahte boşluk maddesine göre kütleçekimi bozunmayı genellikle daha az olası kılar, ama bizimki gibi bir evrenden bozunmayla oluşacak bir baloncuğun içindeki evren son derece kararsız olur ve neredeyse hemen çöker. Sahte boşluk maddesinin bir gözlemine göre böyle bir olay hakkındaki her bilgi bize ancak biz de yok olduğumuz anda ulaşırdı; yani önceden bir uyarı olmazdı.",
+    "Peki bizim evrenimiz sahte boşlukta mı? Burada d32'deki iki sayı belirleyicidir: Higgs bozonunun kütlesi, yaklaşık 125,11 milyar elektronvolt, ve üst kuarkın kütlesi, yaklaşık 173 milyar elektronvolt. Tommi Markkanen, Arttu Rajantie ve Stephen Stopyra'nın 2018 tarihli gözden geçirmesine göre ölçülen kütleler Standart Model'i açıkça yarı kararlı bölgeye yerleştirir: boşluk şu an kararlı görünür, ama sonsuza dek değil. Sahte boşluk maddesine göre 2022'deki bir yeniden analiz de üst kuark kütlesini kararlılık çizgisine yakın, ama hâlâ yarı kararlı bölgede buldu; kesin cevap için üst kuark kütlesinin daha hassas ölçülmesi gerekiyor.",
+    "Ne zaman? Anders Andreassen, William Frost ve Matthew Schwartz 2018'de Standart Model içinde evrenimizin ömrü için ilk eksiksiz hesabı yayımladı: yaklaşık 10¹³⁹ yıl. Yüzde 95 güvenle evrenin 10⁵⁸ yıldan uzun yaşaması beklenir. Wikipedia'nın gelecek maddesi yüzde 95'lik aralığı 10⁵⁸ ile 10²⁴¹ yıl arası diye verir; belirsizliğin bir kısmı üst kuarkın kütlesinden gelir. Önemli bir çekince: sahte boşluk maddesine göre Standart Model'in ötesindeki yeni bir fizik bu kararlılık haritasını kökten değiştirebilir. Yani hesap, d32'nin sonunda gördüğün bilinmeyenlerin hiçbirinin işe karışmadığını varsayar.",
+    "Bir yaygın korkuyu da kaynakla yanıtlayalım: parçacık hızlandırıcıları böyle bir baloncuk başlatabilir mi? Sahte boşluk maddesine göre hayır: kozmik ışınlar (d32) LHC'dekinden çok daha yüksek enerjili çarpışmaları zaten doğal olarak üretiyor ve Hut ile Rees'in sonucuna göre bu tür deneyler öngörülebilir gelecekte boşluğumuz için bir tehdit değildir. Kesinlik etiketi: Higgs ve üst kuark kütlelerinin ölçümü gözlemle kesinleşmiştir; boşluğun yarı kararlı olduğu çıkarımı ve ömür hesabı ise Standart Model'in çok yüksek enerjilere kadar değişmeden geçerli olduğu varsayımına dayanır: kuram/hipotez."
+   ],
+   "ornek": {
+    "baslik": "Örnek: 10¹³⁹ yıl ne kadar uzun?",
+    "metin": "1. adım: Evrenin yaşı 1,38 × 10¹⁰ yıl. 10¹³⁹ / 1,38 × 10¹⁰ ≈ 7,2 × 10¹²⁸: tahmini ömür bugünkü yaşın yaklaşık 10¹²⁸ katı. 2. adım: Yüzde 95'lik alt sınır 10⁵⁸ yıl: 10⁵⁸ / 1,38 × 10¹⁰ ≈ 7,2 × 10⁴⁷ kat. 3. adım: Isıl ölüm takvimiyle karşılaştır: yıldız oluşumunun bitişi 10¹⁴ yıl, yozlaşmış çağın sonu 10⁴⁰ yıl, kara delik çağının sonu 10¹⁰⁰ yıl. Tahmini 10¹³⁹ yıl, kara delik çağının sonundan 10³⁹ kat sonradır; alt sınır olan 10⁵⁸ yıl ise yozlaşmış çağdan sonra, kara delik çağının içine düşer. Sonuç: Standart Model hesabı doğruysa vakum bozunması büyük olasılıkla ısıl ölüm takviminin çok uzak bir sayfasında yer alır. Sonuç birimi: yıl ve kat."
+   },
+   "akilda": "Ölçülen Higgs (~125 GeV) ve üst kuark (~173 GeV) kütleleri boşluğumuzu yarı kararlı gösteriyor. Standart Model hesabı: ömür ~10¹³⁹ yıl, %95 güvenle > 10⁵⁸ yıl. Yeni fizik bunu değiştirebilir. Hızlandırıcılar tehlike değil. Etiket: kuram/hipotez."
+  },
+  {
+   "baslik": "DESI'nin işareti: senaryolar yeniden tartılıyor",
+   "paragraflar": [
+    "Bütün son senaryoları birbirinden ayıran tek bir soru var: karanlık enerji zamanla nasıl değişiyor? d17'de ve d51'de Karanlık Enerji Tayf Aleti DESI'nin Mart 2025'te açıkladığı sonuçları gördün: yaklaşık 15 milyon galaksi ve kuasarın üç boyutlu haritası, arka plan ışıması, zayıf mercek ve süpernova verileriyle birleştirilince, zamanla değişen bir karanlık enerjiyi 2,8 ile 4,2 sigma arasında bir güçle yeğliyor. Bu, 5 sigmalık keşif eşiğinin altında.",
+    "Bu sonuçların ayrıntısı son senaryolar için önemlidir. Astrobites'ın DESI'nin ikinci veri sürümü üzerine özetine göre en iyi uyum, w'nin bugün −1'den büyük olduğunu, geçmişte ise −1'den küçük olduğunu ve −1'i kırmızıya kayma 0,5 civarında geçtiğini ima ediyor; Planck değerleriyle yapılan kaba bir hesap bunun yaklaşık 5 milyar yıl öncesine karşılık geldiğini verir. Dört farklı parametre seçimi ve daha karmaşık uyumlar bu 'hayalet geçişini' ortadan kaldırmadı. Ama aynı yazıya göre geçişin gerçek olduğunu söylemek için henüz çok erken ve bilinmeyen bir sistematik hata olasılığı da var. Gialamas ve arkadaşlarının analizi de hayalet davranışı olmayan modellerin verilerle 2 sigma düzeyinde uyumlu olduğunu gösteriyor.",
+    "Senaryolar için anlamı şöyle özetlenebilir. Karanlık enerji bugün −1'in üstündeyse ve zayıflamayı sürdürüyorsa, Büyük Yırtılma için gereken sürekli hayalet enerji gözlemle desteklenmiyor demektir. Zayıflama, eksi işaretli bir kozmolojik sabitle birleşirse, önceki bölümde gördüğün gibi bazı modellerde Büyük Çöküş yeniden masaya gelir. Veriler ileride kozmolojik sabitle tam uyumlu çıkarsa, ısıl ölüm en doğrudan uzantı olarak kalır. Vakum bozunması ise karanlık enerjiden çok Higgs alanına bağlı ayrı bir sorudur.",
+    "Kesinlik etiketi açısından: karanlık enerjinin varlığı güçlü kanıtlı ama açık sorulu; zamanla değiştiği ise henüz bir ön sonuç, kuram/hipotez düzeyinde bir ipucu. Bu ipucunun gerçek olup olmadığını önümüzdeki yıllarda DESI'nin kendi yeni verileri ve Euclid, Rubin Gözlemevi gibi araştırmalar sınayacak. Haberler sekmesinde bu konuda yeni bir sonuç gördüğünde soracağın soru belli: kaç sigma, hangi veri birleşimiyle ve bağımsız bir ekip aynı sonuca varıyor mu?"
+   ],
+   "akilda": "DESI 2025: zamanla değişen karanlık enerji 2,8–4,2 sigma (keşif eşiğinin altında). En iyi uyum: w bugün > −1, geçmişte < −1. Doğruysa Büyük Yırtılma zayıflar, bazı modellerde Büyük Çöküş olası olur. Etiket: kuram/hipotez düzeyinde ipucu."
+  },
+  {
+   "baslik": "Başlangıç ve son: tablonun tamamı",
+   "paragraflar": [
+    "Bu derste gördüğün senaryoları kesinlik ölçeğine yerleştirelim. Gözlemle kesinleşmiş: evrenin 13,8 milyar yıl önce sıcak ve yoğun bir hâlden evrildiği, bugün genişlediği, Higgs ve üst kuark kütlelerinin ölçülen değerleri. Güçlü kanıtlı ama açık sorulu: genişlemenin hızlandığı ve karanlık enerjinin varlığı; yıldızların yakıtlarını bitirip söneceği de yıldız fiziğine dayanan sağlam bir öngörüdür. Kuram/hipotez: Hartle–Hawking önerisi, sıçrayan evren ve ekpirotik model, ısıl ölüm, Büyük Yırtılma, vakum bozunması hesabı, proton bozunması, Hawking ışımasıyla buharlaşma ve karanlık enerjinin zamanla değiştiği ipucu. Spekülasyon: Penrose'un döngüsel kozmolojisi ve Hawking noktaları, sıçramanın gerçekten yaşanmış olması ve Büyük Çöküş'ün 20 milyar yıl sonra geleceği.",
+    "Bu tablo bir yarışma sıralaması değil, bir harita. Bir senaryonun kuram/hipotez basamağında olması yanlış olduğu, spekülasyon basamağında olması saçma olduğu anlamına gelmez; yalnızca bugün onu destekleyen gözlemin ne kadar olduğunu söyler. Bir fikir yeni bir gözlemle basamak çıkabilir de inebilir de: BICEP2 (d54) ve Hawking noktaları inenlere, DESI'nin işareti ise çıkmaya aday olanlara örnektir.",
+    "İki ucun ortak bir yanı da var: ikisi de d53'te gördüğün kuantum kütleçekiminin eksikliğine takılır. Başlangıçta tekilliği aşmak için, sonda kara deliklerin buharlaşmasını ve boşluğun kararlılığını anlamak için uzay-zamanın kuantum yapısını bilmemiz gerekir. d52'deki bilgi paradoksu ve d56'daki beyaz delik önerileri de aynı soruların farklı yüzleridir. Bu yüzden evrenin başı ve sonu hakkındaki en dürüst cümle şudur: ikisi de, fiziğin henüz yazılmamış bir bölümüne bağlı.",
+    "Son olarak başını kaldırıp İstanbul'un gökyüzüne bak. d7'de gördüğün gibi çıplak gözle görebildiğin en uzak cisim olan Andromeda Galaksisi, Yerel Grup'tadır ve galaksimize kütleçekimiyle bağlıdır; d17'ye göre bu tür bağlı yapılar evrenin genişlemesine katılmaz. Yani hangi senaryo doğru çıkarsa çıksın, yakın gökyüzü genişlemeyle kaybolmayacak. Kaybolacak olan, ancak büyük teleskoplarla görülebilen uzak galaksilerdir: yaklaşık 150 milyar yıl içinde Yerel Üstküme'nin dışındakiler ufkun ardına geçecek. Bugünkü gökbilimcilerin, evrenin hem başlangıcını hem de genişlemesini görebildiği nadir bir çağda yaşadığını söyleyebiliriz."
+   ],
+   "akilda": "Kesin: 13,8 milyar yıllık evrim, genişleme. Güçlü kanıt: hızlanma, karanlık enerji. Kuram/hipotez: Hartle–Hawking, sıçrama, ekpirotik, ısıl ölüm, Büyük Yırtılma, vakum bozunması, DESI ipucu. Spekülasyon: CCC, Hawking noktaları, 20 milyar yıl sonra çöküş. İki uç da kuantum kütleçekimine bağlı."
+  }
+ ],
+ "formuller": [
+  {
+   "ad": "Karanlık enerjinin durum denklemi",
+   "ifade": "w = p / ρ",
+   "aciklama": "p basınç, ρ enerji yoğunluğu (aynı birimde, örn. J/m³); w birimsiz. Kozmolojik sabit w = −1; w < −1 hayalet enerji (Büyük Yırtılma'ya götürebilir); DESI 2025 en iyi uyumu bugün w > −1."
+  },
+  {
+   "ad": "Büyük Yırtılma'ya kalan süre (yaklaşık)",
+   "ifade": "t ≈ (2/3) × 1 / |1 + w| × 1 / H0 × 1 / √(1 − Ωm)",
+   "aciklama": "Caldwell, Kamionkowski ve Weinberg (2003). w < −1 ve sabit, H0 Hubble sabiti, Ωm madde oranı (birimsiz). 1 / H0 ≈ 977,8 / H0 milyar yıl (H0 km/s/Mpc). w = −1,5, H0 = 70, Ωm = 0,3 için ≈ 22 milyar yıl."
+  },
+  {
+   "ad": "Hubble zamanı",
+   "ifade": "1 / H0 ≈ 977,8 / H0 milyar yıl",
+   "aciklama": "H0 km/s/Mpc cinsinden (d17). 70 için ≈ 13,97; 67,4 için ≈ 14,5 milyar yıl."
+  },
+  {
+   "ad": "Yılda bozunma sayısı",
+   "ifade": "bozunma / yıl ≈ N × 0,693 / T",
+   "aciklama": "N parçacık sayısı, T yarılanma ömrü (yıl); T, gözlem süresinden çok uzunsa geçerli. Proton için deneysel alt sınır T ≥ 10³⁴ yıl."
+  },
+  {
+   "ad": "Zaman sıkıştırma",
+   "ifade": "t_ölçekli = t × (1 s / 1,38 × 10¹⁰ yıl)",
+   "aciklama": "Evrenin yaşını 1 saniyeye eşleyerek uzak gelecek sürelerini kavramak için; t yıl, sonuç saniye."
+  },
+  {
+   "ad": "Rastlantıyla en az bir 'tuhaf' sonuç bulma olasılığı",
+   "ifade": "P = 1 − (1 − p)^n",
+   "aciklama": "p tek bir bağımsız denemede rastlantı olasılığı, n denenen yer sayısı; başka yere bakma etkisinin basit biçimi. p = 0,001 ve n = 10.000 için P ≈ 0,99996."
+  }
+ ],
+ "anahtar_sayilar": [
+  {
+   "deger": "1983",
+   "aciklama": "Hartle ve Hawking, 'Evrenin dalga fonksiyonu', Physical Review D 28, 2960",
+   "kaynak_url": "https://en.wikipedia.org/wiki/Hartle%E2%80%93Hawking_proposal"
+  },
+  {
+   "deger": "2003 (ön baskı 11 Ocak 2003)",
+   "aciklama": "Borde–Guth–Vilenkin: şişen uzay-zamanlar geçmişe doğru tam değildir",
+   "kaynak_url": "https://ar5iv.arxiv.org/html/gr-qc/0110012"
+  },
+  {
+   "deger": "Şubat 2006; Mayıs 2023",
+   "aciklama": "Döngü kuantum kozmolojisinde ilk sıçrama; Planck'ta tek sıçrama izinin bulunamaması",
+   "kaynak_url": "https://en.wikipedia.org/wiki/Big_Bounce"
+  },
+  {
+   "deger": "2001; 2002",
+   "aciklama": "Ekpirotik model (Khoury, Ovrut, Steinhardt, Turok); döngüsel model (Steinhardt, Turok)",
+   "kaynak_url": "https://en.wikipedia.org/wiki/Ekpyrotic_universe"
+  },
+  {
+   "deger": "2010; 6 sigma iddiası",
+   "aciklama": "'Zamanın Döngüleri' ve Gurzadyan–Penrose daire iddiası; üç grup doğrulamadı",
+   "kaynak_url": "https://en.wikipedia.org/wiki/Conformal_cyclic_cosmology"
+  },
+  {
+   "deger": "3–4° çap; 2018",
+   "aciklama": "Öne sürülen Hawking noktalarının açısal boyutu (An, Meissner, Nurowski, Penrose)",
+   "kaynak_url": "https://arxiv.org/abs/1808.01740v3"
+  },
+  {
+   "deger": "~150 milyar yıl; ~2 trilyon yıl",
+   "aciklama": "Yerel Üstküme dışındaki galaksilerin ufkun ardına geçmesi; ışıklarının gözlenemez olması",
+   "kaynak_url": "https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Future_of_an_expanding_universe"
+  },
+  {
+   "deger": "~10¹⁴ yıl; 10¹⁴–10⁴⁰ yıl; 10⁴⁰–10¹⁰⁰ yıl",
+   "aciklama": "Yıldız oluşumunun sonu; yozlaşmış çağ; kara delik çağı",
+   "kaynak_url": "https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Future_of_an_expanding_universe"
+  },
+  {
+   "deger": "≥ 10³⁴ yıl",
+   "aciklama": "Proton bozunuyorsa yarılanma ömrünün deneysel alt sınırı",
+   "kaynak_url": "https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Future_of_an_expanding_universe"
+  },
+  {
+   "deger": "10¹⁰⁰ yıl; 10¹⁰⁶ yıl",
+   "aciklama": "10¹¹ ve 10¹⁴ Güneş kütleli kara deliklerin buharlaşma süreleri",
+   "kaynak_url": "https://en.wikipedia.org/wiki/Heat_death_of_the_universe"
+  },
+  {
+   "deger": "~22 milyar yıl",
+   "aciklama": "w = −1,5, H0 = 70, Ωm = 0,3 için Büyük Yırtılma'ya kalan süre",
+   "kaynak_url": "https://ar5iv.labs.arxiv.org/html/astro-ph/0302506"
+  },
+  {
+   "deger": "~33 milyar yıl; ~20 milyar yıl sonra çöküş",
+   "aciklama": "Tye ve ark. (2025) modelinde evrenin toplam ömrü",
+   "kaynak_url": "https://news.cornell.edu/node/331616"
+  },
+  {
+   "deger": "~10¹³⁹ yıl; %95 güvenle > 10⁵⁸ yıl",
+   "aciklama": "Standart Model'de boşluğumuzun ömrü (Andreassen, Frost, Schwartz 2018)",
+   "kaynak_url": "https://arxiv.org/abs/1707.08124v2"
+  },
+  {
+   "deger": "z ≈ 0,5",
+   "aciklama": "DESI DR2 en iyi uyumunda w'nin −1'i geçtiği kırmızıya kayma",
+   "kaynak_url": "https://astrobites.org/2025/10/06/desi-dr2-part3/"
+  }
+ ],
+ "sozluk": [
+  {
+   "terim": "geçmişe doğru eksiklik",
+   "tanim": "Bir uzay-zamanda geriye doğru izlenen bir yolun sonlu bir uzunlukta bitmesi, yani geçmişin sonsuza uzanmaması."
+  },
+  {
+   "terim": "sınırsızlık önerisi",
+   "tanim": "Hartle ve Hawking'in, evrenin sanal zamanla tanımlanan, sonlu ama kenarı olmayan bir geometriyle başladığını öne süren kuantum kozmoloji önerisi."
+  },
+  {
+   "terim": "sanal zaman",
+   "tanim": "Hesaplarda zamanın matematiksel olarak bir uzay boyutu gibi davranacak biçimde dönüştürülmesiyle elde edilen yardımcı zaman kavramı."
+  },
+  {
+   "terim": "Büyük Sıçrama",
+   "tanim": "Bugünkü genişlemenin, daha önceki bir büzülme evresinden tekilliğe çökmeden sekerek başladığını öne süren hipotez."
+  },
+  {
+   "terim": "döngü kuantum kozmolojisi",
+   "tanim": "Döngü kuantum kütleçekiminin bütün evrene uygulanan, Büyük Patlama tekilliğini bir sıçramayla değiştirebilen biçimi."
+  },
+  {
+   "terim": "ekpirotik model",
+   "tanim": "Evrenin Büyük Patlama'dan önceki yavaş bir büzülmeyle düzleştiğini ve Büyük Patlama'nın bir sıçrama olduğunu öne süren kozmoloji modeli."
+  },
+  {
+   "terim": "zar",
+   "tanim": "Sicim kuramında daha çok boyutlu bir uzayın içinde yer alan çok boyutlu yüzey; ekpirotik modelde evrenimiz böyle bir yüzeydir."
+  },
+  {
+   "terim": "konformal döngüsel kozmoloji",
+   "tanim": "Penrose'un, her evrenin sonsuz geleceğinin ölçek değiştirilerek bir sonrakinin Büyük Patlama'sı olduğunu öne süren modeli."
+  },
+  {
+   "terim": "aeon",
+   "tanim": "Penrose'un döngüsel kozmolojisinde Büyük Patlama'dan sonsuz geleceğe kadar uzanan tek bir evren evresi."
+  },
+  {
+   "terim": "Hawking noktası",
+   "tanim": "Arka plan ışımasında önceki bir aeondaki kara deliklerin buharlaşma izi olduğu öne sürülen ama doğrulanmamış sıcak leke."
+  },
+  {
+   "terim": "başka yere bakma etkisi",
+   "tanim": "Çok sayıda yerde arama yapıldığında, salt rastlantıyla anlamlı görünen bir sonuç bulma olasılığının artması."
+  },
+  {
+   "terim": "yozlaşmış çağ",
+   "tanim": "Yıldız oluşumu bittikten sonra evrene beyaz cüce, nötron yıldızı ve kara delik gibi yıldız kalıntılarının hâkim olduğu, yaklaşık 10¹⁴ ile 10⁴⁰ yıl arası dönem."
+  },
+  {
+   "terim": "proton bozunması",
+   "tanim": "Bazı büyük birleşik kuramların öngördüğü, protonun daha hafif parçacıklara dönüşmesi; hiç gözlenmedi."
+  },
+  {
+   "terim": "Büyük Yırtılma",
+   "tanim": "Zamanla güçlenen bir karanlık enerjinin sonunda galaksilerden atomlara kadar her yapıyı söktüğü son senaryosu."
+  },
+  {
+   "terim": "hayalet enerji",
+   "tanim": "Basıncıyla enerji yoğunluğunun toplamı eksi olan, yani w'si −1'den küçük olan ve genişledikçe yoğunlaşan varsayımsal karanlık enerji."
+  },
+  {
+   "terim": "Büyük Çöküş",
+   "tanim": "Evrenin genişlemesinin durup tersine döndüğü ve evrenin yeniden sıcak, yoğun bir hâle sıkıştığı son senaryosu."
+  },
+  {
+   "terim": "sahte boşluk",
+   "tanim": "Bir süre kararlı kalabilen ama en düşük enerjili durum olmayan, daha kararlı bir duruma geçebilecek alan durumu."
+  },
+  {
+   "terim": "vakum bozunması",
+   "tanim": "Sahte boşluktaki bir evrenin, ışık hızına yakın büyüyen bir gerçek boşluk baloncuğuyla daha kararlı duruma geçmesi."
+  },
+  {
+   "terim": "yarı kararlı",
+   "tanim": "Şu an kararlı görünen ama çok uzun sürede daha kararlı bir duruma geçebilecek durum."
+  }
+ ],
+ "defter_notu": [
+  "Kesin: 13,8 milyar yıllık evrim, genişleme. Güçlü kanıt: hızlanma, karanlık enerji. Başlangıç öncesi ve uzak gelecek = modeller.",
+  "Borde–Guth–Vilenkin 2003: ortalama genişleyen evren geçmişe doğru eksik; şişme başlangıcı silmez.",
+  "Hartle–Hawking 1983: sanal zaman, sonlu ama sınırsız; 'kuzey kutbunun kuzeyi'. 2017'den beri matematiği tartışmalı.",
+  "Büyük Sıçrama: LQC 2006 (Ashtekar, Pawlowski, Singh); 2023 Planck'ta iz yok. Ekpirotik 2001, döngüsel 2002; çoklu evren yok.",
+  "CCC (Penrose, 2010): bütün kütle yok olmalı. Daireler (2010) ve Hawking noktaları (2018, 3–4°) bağımsız analizlerde doğrulanmadı. Nobel ≠ kanıt.",
+  "Takvim: ~150 milyar yıl uzak galaksiler ufkun ardına; 10¹⁴ yıl yıldızlar biter; 10¹⁴–10⁴⁰ yozlaşmış; 10⁴⁰–10¹⁰⁰ kara delik çağı; proton ≥ 10³⁴ yıl.",
+  "Isıl ölüm: en az varsayım; Λ > 0 ise sıcaklık sıfırın biraz üstünde dengelenir.",
+  "Büyük Yırtılma: w < −1; t ≈ (2/3)/|1 + w| × 1/H0 / √(1 − Ωm); w = −1,5 → 22 milyar yıl.",
+  "Büyük Çöküş: Tye ve ark. 2025, ömür ~33 milyar yıl ('veriler doğru çıkarsa'). Vakum bozunması: SM'de ~10¹³⁹ yıl, %95 > 10⁵⁸ yıl.",
+  "DESI 2025: 2,8–4,2σ; w bugün > −1, geçmişte < −1 (z ≈ 0,5). 5σ değil: kuram/hipotez düzeyinde ipucu."
+ ],
+ "sorular": [
+  {
+   "soru": "Büyük Patlama kuramı evrenin nasıl başladığını anlatır mı?",
+   "cevap": "Hayır. Kuram evrenin sıcak ve yoğun bir hâlden bugüne nasıl evrildiğini anlatır; o hâlin nereden geldiği açık bir sorudur. Geriye sarınca varılan tekillik, kuramın geçerliliğini yitirdiği yerdir."
+  },
+  {
+   "soru": "Borde–Guth–Vilenkin teoremi ne söyler, ne söylemez?",
+   "cevap": "Ortalama olarak genişleyen, örneğin şişen her evrenin geçmişe doğru eksik olduğunu, yani geçmişin sonsuza uzanmadığını söyler; başlangıç sınırını anlatmak için şişmenin dışında bir fizik gerekir. Evrenin yoktan var olduğunu ya da nasıl başladığını söylemez."
+  },
+  {
+   "soru": "Hartle–Hawking önerisindeki 'kuzey kutbu' benzetmesini açıkla.",
+   "cevap": "Dünya'nın yüzeyi sonludur ama kenarı yoktur; kuzey kutbu sıradan bir noktadır ve 'daha kuzey' yoktur. Öneride evren sanal zamanla tanımlanan böyle sonlu ama sınırsız bir geometriyle başlar; başlangıç bir tekillik değil, sıradan bir noktadır ve 'daha önce' sorusunun karşılığı yoktur."
+  },
+  {
+   "soru": "Ekpirotik model ufuk ve düzlük sorunlarını şişme olmadan nasıl çözmeye çalışır? Şişmeden bir farkı nedir?",
+   "cevap": "Evreni Büyük Patlama'dan önceki yavaş bir büzülme evresi düzleştirir ve pürüzsüzleştirir; Büyük Patlama bir sıçramadır. Kuantum dalgalanmaları şişmeyle gerilmediği için çoklu evren üretmez."
+  },
+  {
+   "soru": "Hawking noktaları neden CCC için kanıt sayılmıyor?",
+   "cevap": "Jow ve Scott (2020) başka yere bakma etkisini hesaba katınca noktaların standart şişme resmiyle uyumlu olduğunu buldu. Ayrıca yorum, kendisi de gözlenmemiş Hawking ışımasına ve bilinen fizikte karşılığı olmayan bütün kütlenin yok olması varsayımına dayanıyor."
+  },
+  {
+   "soru": "Gökte 10.000 bağımsız bölgeye bakıyorsun; her birinde rastlantıyla 'binde bir' tuhaflık görme olasılığı 0,001. Kaç tuhaf bölge beklersin?",
+   "cevap": "10.000 × 0,001 = 10. En az bir tane bulma olasılığı 1 − 0,999^10.000 ≈ 0,99996; yani neredeyse kesin."
+  },
+  {
+   "soru": "Proton yarılanma ömrü 10³⁴ yıl olsaydı, 4,2 × 10²⁸ çekirdek parçacığı içeren bir vücutta yılda kaç bozunma beklenirdi?",
+   "cevap": "4,2 × 10²⁸ × 0,693 / 10³⁴ ≈ 2,9 × 10⁻⁶ bozunma bölü yıl; 80 yılda yaklaşık 2,3 × 10⁻⁴, yani on binde iki."
+  },
+  {
+   "soru": "Büyük Yırtılma için w = −1,5, H0 = 70 km/s/Mpc, Ωm = 0,3 ile kalan süreyi hesapla. w = −1,1 olsaydı ne olurdu?",
+   "cevap": "1/H0 ≈ 13,97 milyar yıl, √0,7 ≈ 0,837. w = −1,5: (2/3) × 2 × 13,97 / 0,837 ≈ 22 milyar yıl. w = −1,1: (2/3) × 10 × 13,97 / 0,837 ≈ 111 milyar yıl. w = −1'de Büyük Yırtılma olmaz."
+  },
+  {
+   "soru": "Tye ve arkadaşlarının 2025 modeline göre evrenin takvimi nedir ve bu sonuca neden spekülasyon etiketi verildi?",
+   "cevap": "Toplam ömür ~33 milyar yıl; en büyük boyut ~11 milyar yıl sonra, çöküş ~20 milyar yıl sonra. Sonuç keşif eşiğinin altındaki (2,8–4,2 sigma) DESI işaretine ve eksi işaretli kozmolojik sabit ile varsayımsal bir parçacık içeren belirli bir modele dayanıyor; Tye'nin kendisi 'veriler doğru çıkarsa' diyor."
+  },
+  {
+   "soru": "Vakum bozunması nedir ve Higgs kütlesinin bununla ilgisi ne?",
+   "cevap": "Sahte boşluktaki evrenin ışık hızına yakın büyüyen bir gerçek boşluk baloncuğuyla daha kararlı duruma geçmesidir. Ölçülen Higgs (~125 GeV) ve üst kuark (~173 GeV) kütleleri Standart Model'de boşluğu yarı kararlı bölgeye yerleştirir; ömür ~10¹³⁹ yıl (%95 > 10⁵⁸ yıl). Yeni fizik bunu değiştirebilir."
+  },
+  {
+   "soru": "DESI'nin 2025 sonuçları Büyük Yırtılma senaryosunu nasıl etkiler?",
+   "cevap": "En iyi uyum w'nin bugün −1'den büyük olduğunu, yalnız geçmişte −1'in altında olduğunu ima ediyor. Büyük Yırtılma sürekli w < −1 gerektirdiği için bu doğru çıkarsa senaryo zayıflar. Ama sonuç 5 sigma değil; bir ön sonuç."
+  },
+  {
+   "soru": "Uzak gelecekte İstanbul'dan görülen Andromeda Galaksisi genişlemeyle kaybolur mu?",
+   "cevap": "Hayır. Andromeda Yerel Grup'ta ve galaksimize kütleçekimiyle bağlı; bağlı yapılar genişlemeye katılmaz. Kaybolacak olanlar Yerel Üstküme'nin dışındaki uzak galaksilerdir: yaklaşık 150 milyar yıl içinde ufkun ardına geçerler."
+  }
+ ],
+ "kaynaklar": [
+  {
+   "ad": "S. Hawking, The Beginning of Time (1996 konferansı)",
+   "url": "https://www.hawking.org.uk/in-words/lectures/the-beginning-of-time"
+  },
+  {
+   "ad": "Wikipedia, Hartle–Hawking proposal",
+   "url": "https://en.wikipedia.org/wiki/Hartle%E2%80%93Hawking_proposal"
+  },
+  {
+   "ad": "Max Planck Kütleçekim Fiziği Enstitüsü, No universe without big bang (2017)",
+   "url": "https://www.aei.mpg.de/189516/no-universe-without-big-bang"
+  },
+  {
+   "ad": "Diaz Dorronsoro ve ark., Damped perturbations in the no-boundary state, arXiv:1804.01102",
+   "url": "https://arxiv.org/abs/1804.01102v1"
+  },
+  {
+   "ad": "Borde, Guth, Vilenkin, Inflationary spacetimes are not past-complete, arXiv:gr-qc/0110012",
+   "url": "https://ar5iv.arxiv.org/html/gr-qc/0110012"
+  },
+  {
+   "ad": "Wikipedia, Eternal inflation (Guth 2007 alıntısı)",
+   "url": "https://en.wikipedia.org/wiki/Eternal_inflation"
+  },
+  {
+   "ad": "Wikipedia, Big Bounce",
+   "url": "https://en.wikipedia.org/wiki/Big_Bounce"
+  },
+  {
+   "ad": "Wikipedia, Ekpyrotic universe",
+   "url": "https://en.wikipedia.org/wiki/Ekpyrotic_universe"
+  },
+  {
+   "ad": "Wikipedia, Conformal cyclic cosmology",
+   "url": "https://en.wikipedia.org/wiki/Conformal_cyclic_cosmology"
+  },
+  {
+   "ad": "An, Meissner, Nurowski, Penrose, Apparent evidence for Hawking points in the CMB Sky, arXiv:1808.01740",
+   "url": "https://arxiv.org/abs/1808.01740v3"
+  },
+  {
+   "ad": "Wikipedia, Future of an expanding universe (IPFS kopyası)",
+   "url": "https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Future_of_an_expanding_universe"
+  },
+  {
+   "ad": "Wikipedia, Heat death of the universe",
+   "url": "https://en.wikipedia.org/wiki/Heat_death_of_the_universe"
+  },
+  {
+   "ad": "Caldwell, Kamionkowski, Weinberg, Phantom Energy and Cosmic Doomsday, arXiv:astro-ph/0302506",
+   "url": "https://ar5iv.labs.arxiv.org/html/astro-ph/0302506"
+  },
+  {
+   "ad": "Cornell Chronicle, After 33 billion years, universe 'will end in a big crunch' (1 Ekim 2025)",
+   "url": "https://news.cornell.edu/node/331616"
+  },
+  {
+   "ad": "Gialamas ve ark., Quintessence and phantoms in light of DESI 2025, arXiv:2506.21542",
+   "url": "https://arxiv.org/html/2506.21542v2"
+  },
+  {
+   "ad": "Wikipedia, False vacuum",
+   "url": "https://en.wikipedia.org/wiki/False_vacuum"
+  },
+  {
+   "ad": "Markkanen, Rajantie, Stopyra, Cosmological Aspects of Higgs Vacuum Metastability, arXiv:1809.06923",
+   "url": "https://ar5iv.arxiv.org/html/1809.06923"
+  },
+  {
+   "ad": "Andreassen, Frost, Schwartz, Scale Invariant Instantons and the Complete Lifetime of the Standard Model, arXiv:1707.08124",
+   "url": "https://arxiv.org/abs/1707.08124v2"
+  },
+  {
+   "ad": "Astrobites, DESI DR2 Part 3: Extended Physics Analyses (Ekim 2025)",
+   "url": "https://astrobites.org/2025/10/06/desi-dr2-part3/"
+  },
+  {
+   "ad": "Wikipedia, Chronology of the universe (Büyük Çöküş ve 100 milyar yıl, d17 ile ortak)",
+   "url": "https://en.wikipedia.org/wiki/Chronology_of_the_universe"
+  }
+ ]
+}

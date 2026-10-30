@@ -1,0 +1,58 @@
+[
+  {
+    "id": "d50-1",
+    "soru": "Bu ünitenin kesinlik ölçeğine göre “karanlık madde WIMP'lerden oluşur” iddiası hangi basamaktadır?",
+    "secenekler": [
+      "Gözlemle kesinleşmiş",
+      "Güçlü kanıtlı ama açık sorulu",
+      "Kuram ya da hipotez",
+      "Bilim kurgu"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre karanlık maddenin kütleçekim etkisi gözlemle kesinleşmiştir, ama tek tek aday parçacıklar, WIMP dahil, kuram ya da hipotez basamağındadır: matematiksel olarak tutarlıdırlar ama hiçbir WIMP araması başarılı olmadı.",
+    "ders": "d50",
+    "bolum": 0
+  },
+  {
+    "id": "d50-2",
+    "soru": "LZ ve XENONnT gibi ksenon dedektörleri bir WIMP'i nasıl yakalamayı umar?",
+    "secenekler": [
+      "WIMP'in yaydığı görünür ışığı teleskopla görerek",
+      "WIMP'in bir ksenon çekirdeğine çarpıp onu itmesinden doğan küçük ışık ve yük sinyalini kaydederek",
+      "WIMP'i güçlü bir mıknatısta mikrodalga fotonuna dönüştürerek",
+      "WIMP'in Dünya'nın yörüngesini değiştirmesini ölçerek"
+    ],
+    "dogru": 1,
+    "aciklama": "Doğrudan algılamada umut, bir WIMP'in ksenon çekirdeğine vurup onu hareket ettirmesidir; dedektör bu çekirdek geri tepmesinin ürettiği ışığı ve elektronları kaydeder. Mıknatısta mikrodalgaya dönüştürme aksiyon aramasının (ADMX) yöntemidir.",
+    "ders": "d50",
+    "bolum": 6
+  },
+  {
+    "id": "d50-3",
+    "soru": "ADMX 1,10 GHz frekansında bir aksiyon sinyali arıyor. Bu yaklaşık hangi aksiyon kütlesine karşılık gelir? (h = 4,1357×10⁻¹⁵ eV·s)",
+    "secenekler": [
+      "Yaklaşık 4,5 μeV",
+      "Yaklaşık 4,5 eV",
+      "Yaklaşık 100 GeV",
+      "Yaklaşık 7,1 keV"
+    ],
+    "dogru": 0,
+    "aciklama": "m c² = h × f = 4,1357×10⁻¹⁵ × 1,10×10⁹ ≈ 4,5×10⁻⁶ eV, yani yaklaşık 4,5 μeV. Bu, ADMX'in 2025 makalesindeki 4,54 μeV ile uyumludur. 100 GeV tipik WIMP kütlesi, 7,1 keV ise 3,5 keV çizgisinin steril nötrino yorumudur.",
+    "ders": "d50",
+    "bolum": 8
+  },
+  {
+    "id": "d50-4",
+    "soru": "İlkel kara deliklerin karanlık maddenin tamamı olabilmesi için hâlâ açık kalan tek kütle penceresi hangisidir?",
+    "secenekler": [
+      "Yıldız kütleleri, LIGO'nun duyduğu 10–100 Güneş kütlesi",
+      "Güneş kütlesinin 10⁻¹⁷ ile 10⁻¹⁰ katı arası, asteroit kütleleri",
+      "10⁹ ile 10¹⁷ gram arası",
+      "Milyonlarca Güneş kütlesi, galaksi merkezlerindeki kara delikler"
+    ],
+    "dogru": 1,
+    "aciklama": "Carr ve arkadaşlarının 2026 derlemesine göre tek sağlam sınırı olmayan bölge asteroit kütleli penceredir (10⁻¹⁷–10⁻¹⁰ Güneş kütlesi). 10⁹–10¹⁷ gram arası Hawking buharlaşmasıyla, yıldız kütleleri LIGO'nun birleşme hızıyla sınırlanır.",
+    "ders": "d50",
+    "bolum": 10
+  }
+]

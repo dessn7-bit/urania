@@ -4,12 +4,16 @@
   "yeni": true,
   "baslik": "Satürn ve Halkaları: Sudan Hafif Dev, Buzdan Plak",
   "ozet": "Satürn'ü içinden dışına tanıyacaksın: sudan düşük yoğunluğunu, neden Jüpiter'den bile basık olduğunu, bir gününün uzunluğunun neden yıllarca ölçülemediğini, içinde yağan helyumu ve halkaların sismograf gibi kullanılarak bulunan 'bulanık' çekirdeği. Sonra halkalara geçeceğiz: Galileo'nun 'kulaklarından' Cassini'nin Büyük Finali'ne kadar nasıl keşfedildiklerini, yapılarını, boşluklarını ve çoban uydularını, ne kadar yaşlı olduklarına dair süren tartışmayı ve yavaş yavaş Satürn'e yağdıklarını. Son olarak 2025'te neden kaybolduklarını ve İstanbul'dan Satürn'ü ne zaman, neyle izleyeceğini göreceksin.",
-  "on_bilgi": ["d3", "d9", "d37"],
+  "on_bilgi": [
+    "d3",
+    "d9",
+    "d37"
+  ],
   "bolumler": [
     {
       "baslik": "Sudan hafif bir dev: sayılarla Satürn",
       "paragraflar": [
-        "d9'da Satürn'ü kısaca tanımıştın; d37'de de onun büyük kardeşi Jüpiter'i katman katman inceledin. Satürn'de aynı yolu izleyeceğiz, ama bu dev kendi sürprizleriyle geliyor. Önce NASA'nın Satürn bilgi kartındaki temel sayılar: kütle 568,32 × 10²⁴ kg, yani Dünya'nın yaklaşık 95 katı. Ekvator yarıçapı 60.268 km, kutup yarıçapı 54.364 km, hacme göre ortalama yarıçap 58.232 km. Ortalama yoğunluk 0,687 g/cm³: suyunkinden (yaklaşık 1 g/cm³) düşük, gezegenler arasında tek.",
+        "d9'da Satürn'ü kısaca tanımıştın; d37'de de onun büyük kardeşi Jüpiter'i katman katman inceledin. Satürn'de aynı yolu izleyeceğiz, ama bu dev kendi sürprizleriyle geliyor. Önce NASA'nın Satürn bilgi kartındaki temel sayılar: kütle 568,32 × 10²⁴ kg, yani Dünya'nın yaklaşık 95 katı. Ekvator yarıçapı 60.268 km, kutup yarıçapı 54.364 km, hacme göre ortalama yarıçap 58.232 km. Ortalama yoğunluk 0,687 g/cm³: suyunkinden (yaklaşık 1 g/cm³) düşük, gezegenler arasında tek. Jüpiter'le karşılaştır: Satürn'ün kütlesi Jüpiter'inkinin yalnızca %30'u, ortalama yarıçapı ise %83'ü. Neredeyse aynı boyda ama üçte bir kütlede bir gezegen, ortalama yoğunluğun yaklaşık yarıya inmesi demektir: 1,33'e karşı 0,69.",
         "Satürn Güneş'ten ortalama 9,5 ile 9,6 AB uzaktadır (d9'da iki NASA satırının neden biraz farklı olduğunu görmüştün) ve bir turunu 10.755,7 günde, yani yaklaşık 29,45 yılda tamamlar. Ekseni yörüngesine göre 26,73° eğiktir; Dünya'nın 23,44°'lik eğikliğine yakın olduğu için Satürn'de belirgin mevsimler vardır, ama her biri yedi yıldan uzun sürer. Bir metrekaresine düşen güneş ışığı 14,82 W/m²'dir, Dünya'dakinin yaklaşık 92'de biri. 1 bar düzeyinde sıcaklık 134 K, yani yaklaşık −139 °C.",
         "'Sudan hafif' sözünü yanlış anlamamak gerekir. Popüler bir benzetme, yeterince büyük bir küvete konsa Satürn'ün yüzeceğini söyler. Ortalama yoğunluk bir ortalamadır: Satürn'ün dış katmanları çok seyrek bir gazdır, merkezi ise sudan çok daha yoğundur (aşağıda). Ayrıca bir gaz topu suya 'oturmaz', onunla karışır. Benzetmenin anlattığı tek doğru şey, Satürn'ün kütlesinin hacmine göre şaşırtıcı derecede az olduğudur; o kadar."
       ],
@@ -22,8 +26,8 @@
     {
       "baslik": "Jüpiter'den basık, merkezde daha yoğun",
       "paragraflar": [
-        "Satürn gezegenlerin en göze çarpan basığıdır. Ekvator ile kutup yarıçapı arasındaki fark 5904 km, yani ekvator yarıçapının yaklaşık %10'u; NASA basıklığı 0,098 verir. d37'de Jüpiter için 0,065 bulmuştuk. Satürn Jüpiter'den biraz daha yavaş döndüğü hâlde neden daha basık? Çünkü daha hafiftir: kendi çekimi zayıf olduğundan, dönüşün ekvatordaki maddeyi dışa savurma etkisi çekime oranla daha büyüktür. Aşağıdaki örnek bunu sayıyla gösteriyor.",
-        "Bu basıklık ve hızlı dönüş, Satürn'ün 'yüzeyinde' çekimin her yerde aynı olmamasına yol açar. NASA'nın kartına göre 1 bar düzeyinde çekim ivmesi ekvatorda 8,96 m/s², kutuplarda 12,14 m/s²'dir; ortalaması 11,19. Yani kutupta ekvatordakinden %35 kadar ağır gelirsin. 70 kg'lık bir insanın tartısı, d9'daki 'başka gezegende tartı' formülüyle, ekvatorda yaklaşık 64, kutupta yaklaşık 87 kg gösterirdi. Tabii Satürn'de basılacak bir zemin yok; bu ancak 1 bar düzeyinde yüzen bir balonun içinde geçerli bir düşünce deneyidir. d9'daki JPL tablosu ekvator için 10,44 m/s² verir; aradaki fark, dönüşün savurma etkisinin hesaba katılıp katılmamasından gelir.",
+        "Satürn, Jüpiter'den bile basıktır. Ekvator ile kutup yarıçapı arasındaki fark 5904 km, yani ekvator yarıçapının yaklaşık %10'u; NASA basıklığı 0,098 verir. d37'de Jüpiter için 0,065 bulmuştuk. Satürn Jüpiter'den biraz daha yavaş döndüğü hâlde neden daha basık? Çünkü daha hafiftir: kendi çekimi zayıf olduğundan, dönüşün ekvatordaki maddeyi dışa savurma etkisi çekime oranla daha büyüktür. Aşağıdaki örnek bunu sayıyla gösteriyor.",
+        "Bu basıklık ve hızlı dönüş, Satürn'ün 'yüzeyinde' çekimin her yerde aynı olmamasına yol açar. NASA'nın kartına göre 1 bar düzeyinde çekim ivmesi ekvatorda 8,96 m/s², kutuplarda 12,14 m/s²'dir; ortalaması 11,19. Yani kutupta ekvatordakinden %35 kadar ağır gelirsin. 70 kg'lık bir insanın tartısı, d9'daki 'başka gezegende tartı' formülüyle, ekvatorda yaklaşık 64, kutupta yaklaşık 87 kg gösterirdi. Tabii Satürn'de basılacak bir zemin yok; bu ancak 1 bar düzeyinde yüzen bir balonun içinde geçerli bir düşünce deneyidir. d9'daki JPL tablosu ekvator için 10,44 m/s² verir. İki değerin farkı yaklaşık 1,5 m/s²; aşağıdaki örnekte dönüşün savurma ivmesi 1,6 m/s² çıkıyor. Yani farkın büyük olasılıkla çoğu, savurmanın hesaba katılıp katılmamasından gelir.",
         "Basıklık ve çekim alanının ayrıntıları gezegenin içini de ele verir. NASA Satürn'ün eylemsizlik momentini 0,210 verir; Jüpiter'de bu sayı 0,254, her yeri aynı yoğunlukta bir kürede 0,4'tü (d37). Britannica'ya göre çekim alanındaki bozulma, Satürn'ün Jüpiter'den belirgin biçimde daha 'merkezde yoğunlaşmış' olduğunu, yani yoğun malzemenin merkeze daha çok toplandığını gösterir. Dışı en seyrek, merkezi en yoğun dev Satürn'dür."
       ],
       "ornek": {
@@ -36,9 +40,9 @@
       "baslik": "Kusursuz hizalı bir mıknatıs ve ölçülemeyen gün",
       "paragraflar": [
         "Bir gezegenin gününü ölçmenin en kolay yolu, yüzeyindeki bir dağın ya da kraterin dönüp yeniden görünmesini beklemektir. Satürn'de yüzey yok, bulutlar ise enleme göre farklı hızlarla eser. Gökbilimciler bu yüzden dev gezegenlerin dönüşünü manyetik alanlarından ölçer: Jüpiter'in manyetik ekseni dönme eksenine 9,4° eğik olduğundan (d37), alan gezegenle birlikte döner ve radyo ışınımı bir deniz feneri gibi düzenli aralıklarla değişir.",
-        "Satürn'de bu yöntem işlemez. NASA'nın kartı Satürn'ün manyetik ekseninin dönme eksenine eğikliğini 0,0° verir. Cassini'nin 2017'deki son yörüngelerinde yapılan ölçümler bu eğikliğin, daha önce konan 0,06°'lik alt sınırdan bile çok daha küçük olduğunu gösterdi. Alan neredeyse kusursuz biçimde dönme eksenine hizalıdır; dönmesi bize hiçbir 'fener' sinyali vermez. ESA'ya göre alanın neden beklenenden zayıf ve neden bu kadar hizalı olduğu, Cassini'nin cevaplamaya çalıştığı sorulardandı. Hesaplarsan, NASA'nın dipol değerlerine göre Satürn'ün manyetik momenti Dünya'nınkinin yaklaşık 600 katıdır, ama ekvatordaki alan şiddeti (0,215 gauss) Dünya'nınkinden (0,306) bile zayıftır.",
-        "JPL'nin anlattığına göre Voyager verileriyle 1981'de yapılan analiz, Satürn'ün radyo ışınımından günü 10 saat 39 dakika 23 saniye buldu. NASA'nın kartındaki 10,656 saat (10 sa 39 dk 22 sn) ve d9'da kullandığımız 10 sa 39 dk bu döneme dayanır. Cassini ise radyo sinyalinden 10 sa 36 dk ile 10 sa 48 dk arasında değişen değerler buldu: dönem sanki zamanla kayıyordu, ki bu bir gezegenin gerçek dönüşü için akla yatkın değildi.",
-        "Çözüm halkalardan geldi. Christopher Mankovich'in Ocak 2019'da Astrophysical Journal'da yayımlanan çalışması, gezegenin içindeki titreşimlerin halkalarda bıraktığı dalga izlerini kullandı ve Satürn'ün gününü 10 saat 33 dakika 38 saniye buldu. Yöntemin ayrıntısını iki bölüm sonra göreceksin. Bugün bu değer, Satürn'ün iç dönüşünün en iyi tahmini olarak anılıyor; yine de kaynaklarda eski değerle karşılaşırsan şaşırma."
+        "Satürn'de bu yöntem işlemez. NASA'nın kartı Satürn'ün manyetik ekseninin dönme eksenine eğikliğini 0,0° verir. Cassini'nin 2017'deki son yörüngelerinde yapılan ölçümler bu eğikliğin, daha önce konan 0,06°'lik alt sınırdan bile çok daha küçük olduğunu gösterdi. Alan neredeyse kusursuz biçimde dönme eksenine hizalıdır; dönmesi bize hiçbir 'fener' sinyali vermez. ESA'ya göre alanın neden beklenenden zayıf ve neden bu kadar hizalı olduğu, Cassini'nin cevaplamaya çalıştığı sorulardandı. NASA'nın modeline göre dipolün merkezden kayması da küçüktür: Satürn yarıçapının 0,038'i; Jüpiter'de bu oran 0,119'dur. Hesaplarsan, NASA'nın dipol değerlerine göre Satürn'ün manyetik momenti Dünya'nınkinin yaklaşık 600 katıdır, ama ekvatordaki alan şiddeti (0,215 gauss) Dünya'nınkinden (0,306) bile zayıftır.",
+        "JPL'nin anlattığına göre Voyager verileriyle 1981'de yapılan analiz, Satürn'ün radyo ışınımından günü 10 saat 39 dakika 23 saniye buldu. NASA'nın kartındaki 10,656 saat (10 sa 39 dk 22 sn) ve d9'da kullandığımız 10 sa 39 dk bu döneme dayanır. Cassini ise radyo sinyalinden 10 sa 36 dk ile 10 sa 48 dk arasında değişen değerler buldu. Bir gezegenin iç dönüşü bu kadar oynak olamayacağına göre, radyo sinyali iç dönüşü doğrudan izlemiyor olmalıydı.",
+        "Çözüm halkalardan geldi. Christopher Mankovich'in Ocak 2019'da Astrophysical Journal'da yayımlanan çalışması, gezegenin içindeki titreşimlerin halkalarda bıraktığı dalga izlerini kullandı ve Satürn'ün gününü 10 saat 33 dakika 38 saniye buldu. Yöntemin ayrıntısını iki bölüm sonra göreceksin. JPL bu sonucu 'bilim insanları sonunda Satürn'de saatin kaç olduğunu biliyor' diye duyurdu; yine de NASA'nın bilgi kartı dahil birçok kaynakta eski değerle karşılaşırsan şaşırma."
       ],
       "ornek": {
         "baslik": "Örnek: Beş dakikalık fark neden önemli?",
@@ -50,18 +54,19 @@
       "baslik": "İçyapı: metalik hidrojen ve helyum yağmuru",
       "paragraflar": [
         "Satürn'ün içi Jüpiter'inkine benzer, ama oranlar farklıdır. Atmosfer NASA'ya göre hacimce %96,3 hidrojen molekülü ve %3,25 helyumdan oluşur; metan, amonyak ve etan izleri de vardır. d37'de Jüpiter'in atmosferinde helyum payının %10,2 olduğunu görmüştün. Satürn'ün dış katmanında helyum belirgin biçimde azdır; Britannica'ya göre Voyager bu eksikliği ölçmüştü.",
-        "Derine inildikçe Britannica'ya göre hidrojen yaklaşık bir kilobar basınçta sıvılaşır ve yaklaşık iki megabar basınç ile 6000 K civarında elektriği ileten metalik bir akışkana dönüşür. Bu geçiş Satürn'de bulut tepeleri ile merkez arasındaki yolun yaklaşık yarısında olur; Jüpiter'de yolun üçte birinde olduğunu d37'de görmüştün. Sebep basittir: Satürn daha hafif olduğundan iç basınç daha yavaş artar ve aynı basınca ulaşmak için daha derine inmek gerekir. d9'da CNES'in anlattığı gibi bu metalik okyanustaki akımlar manyetik alanı üretir ve merkezdeki kaya ile metal karışımının sıcaklığı muhtemelen 11.700 °C'yi aşar.",
+        "Derine inildikçe Britannica'ya göre hidrojen yaklaşık bir kilobar basınçta sıvılaşır ve yaklaşık iki megabar basınç ile 6000 K civarında elektriği ileten metalik bir akışkana dönüşür. Bu geçiş Satürn'de bulut tepeleri ile merkez arasındaki yolun yaklaşık yarısında olur; Jüpiter'de yolun üçte birinde olduğunu d37'de görmüştün. Kabaca söylersek Satürn daha hafif olduğundan iç basınç daha yavaş artar ve aynı basınca ulaşmak için oranca daha derine inmek gerekir. d9'da CNES'in anlattığı gibi bu metalik okyanustaki akımlar manyetik alanı üretir ve merkezdeki kaya ile metal karışımının sıcaklığı muhtemelen 11.700 °C'yi aşar.",
         "Peki dış katmandaki helyum nereye gitti? Önde gelen açıklama helyum yağmurudur. Belirli basınç ve sıcaklıklarda helyum hidrojenin içinde iyi çözünmez; tıpkı soğuyan şekerli suda şekerin dibe çökmesi gibi, ayrılıp yoğun damlalar oluşturur ve bu damlalar derine düşer. Benzetmenin sınırı: burada çöken şey katı değil, sıvı damlalardır. Britannica'ya göre düşen damlaların sürtünmesi ısı açığa çıkarır ve bu, Satürn'ün iç ısısını uzatan bir kaynaktır.",
-        "Satürn de Jüpiter gibi kendi ısısını yayar: Britannica'ya göre Güneş'ten aldığının yaklaşık iki katı enerjiyi, çoğunlukla kızılötesinde, uzaya verir. Daha küçük bir gezegen olarak Satürn oluşumdan kalan ısısını Jüpiter'den daha önce tüketmiş olmalıydı; helyum yağmuru bu fazlalığı açıklayan bir aday olarak öne çıkar. Ama dürüst olalım: Britannica, atmosferdeki helyum eksikliğinin bu kuramın kanıtı sayılmasının sonradan sorgulanmaya açıldığını da not eder. Helyum yağmuru güçlü bir hipotez, kesinleşmiş bir gözlem değildir."
+        "Satürn de Jüpiter gibi kendi ısısını yayar: Britannica'ya göre Güneş'ten aldığının yaklaşık iki katı enerjiyi, çoğunlukla kızılötesinde, uzaya verir. Britannica'ya göre helyum yağmuru Satürn'ün iç ısı kaynağını uzatır; yani bu fazla enerjiyi yalnızca d37'de gördüğün yavaş büzülmeyle değil, düşen helyum damlalarıyla da açıklamaya çalışırız. Ama dürüst olalım: Britannica, atmosferdeki helyum eksikliğinin bu kuramın kanıtı sayılmasının sonradan sorgulanmaya açıldığını da not eder. Helyum yağmuru güçlü bir hipotez, kesinleşmiş bir gözlem değildir.",
+        "d37'de Jüpiter için yaptığımız sağlamayı burada da yapabiliriz. NASA'nın kartına göre Satürn'ün Bond albedosu 0,342: düşen ışığın %65,8'ini soğurur. Soğurulan gücün bütün yüzeye ortalaması 0,658 × 14,82 / 4 ≈ 2,4 W/m² eder. Satürn bunun yaklaşık iki katını yayıyorsa içeriden de metrekare başına yaklaşık 2,4 W gelmelidir; Jüpiter'de bu sayıyı ~8 W bulmuştuk. Satürn'ün iç ısı akısı mutlak olarak Jüpiter'inkinin üçte biri kadar, ama Güneş'ten aldığına oranla aynı derecede önemlidir. Kütlesi Jüpiter'inkinin yalnızca %30'u olan bir gezegen için bu, açıklanması gereken bir fazlalıktır."
       ],
       "akilda": "Satürn atmosferinde helyum az (%3,25; Jüpiter %10,2). Hidrojen ~1 kilobarda sıvılaşır, ~2 megabar ve ~6000 K'de metalikleşir (yolun yarısında). Helyum yağmuru hem helyum eksikliğini hem Satürn'ün aldığının ~2 katı enerji yaymasını açıklayabilir; hâlâ hipotez."
     },
     {
       "baslik": "Halkalar sismograf olunca: bulanık çekirdek",
       "paragraflar": [
-        "Dünya'nın içini depremlerin dalgalarıyla öğreniyoruz (d44). Satürn'de deprem ölçecek bir sismometre yok, ama başka bir şey var: halkalar. 1990'ların başında Mark Marley ve Carolyn Porco, Satürn'ün iç titreşimlerinin halkalarda iz bırakabileceğini ve halkaların dev bir sismograf gibi kullanılabileceğini öne sürdü. Fikir şuydu: gezegenin içi titreştiğinde çekim alanı çok hafifçe dalgalanır ve bu dalgalanmayla uyumlu yörüngelerdeki halka parçacıkları sarmal dalgalar oluşturur.",
-        "Bu öngörü yirmi yıl sonra doğrulandı: Matt Hedman ve Philip Nicholson 2013'te Cassini verilerinde bu dalgaları ilk kez gözledi. Caltech'e göre C halkasındaki bazı dalgalar uyduların değil, Satürn'ün çekim alanındaki dalgalanmaların eseridir. Halka sismolojisi denen bu yöntemle, halkadaki dalgaların konumlarından ve biçimlerinden gezegenin içindeki titreşimler, oradan da iç yapı çıkarılır.",
-        "Christopher Mankovich ve Jim Fuller'ın Ağustos 2021'de Nature Astronomy'de yayımlanan çalışması bu yöntemle şaşırtıcı bir sonuca ulaştı. Satürn'ün çekirdeği keskin sınırlı bir kaya topu değil, buz, kaya ve metalik akışkanlardan oluşan dağınık bir 'çorba'dır; Satürn'ün çapının yaklaşık %60'ına yayılır. Toplam kütlesi yaklaşık 55 Dünya kütlesidir; bunun yaklaşık 17 Dünya kütlesi buz ve kaya, gerisi hidrojen-helyum akışkanıdır. Bu, d37'de Jüpiter için anlatılan seyrelmiş çekirdeğin Satürn'deki karşılığıdır; Caltech de Juno'nun Jüpiter için benzer bir yapı işaret ettiğini not eder.",
+        "Dünya'nın içini depremlerin dalgalarıyla öğreniyoruz (d44). Satürn'de deprem ölçecek bir sismometre yok, ama başka bir şey var: halkalar. 1990'ların başında Mark Marley ve Carolyn Porco, Satürn'ün iç titreşimlerinin halkalarda iz bırakabileceğini ve halkaların dev bir sismograf gibi kullanılabileceğini öne sürdü. Fikir şuydu: gezegenin içi titreştiğinde çekim alanı çok hafifçe dalgalanır ve halkalar bu dalgalanmaya küçük dalgacıklarla karşılık verir, tıpkı bir sismometrenin yer sarsıntısına karşılık vermesi gibi.",
+        "Bu öngörü yirmi yıl sonra doğrulandı: Matt Hedman ve P. D. Nicholson 2013'te Cassini verilerinde bu dalgaları ilk kez gözledi. Caltech'e göre C halkasındaki bazı dalgalar uyduların değil, Satürn'ün çekim alanındaki dalgalanmaların eseridir. Halka sismolojisi denen bu yöntemle, halkadaki dalgaların konumlarından ve biçimlerinden gezegenin içindeki titreşimler, oradan da iç yapı çıkarılır.",
+        "Christopher Mankovich ve Jim Fuller'ın Ağustos 2021'de duyurulan ve Nature Astronomy'de yayımlanmak üzere kabul edilen çalışması bu yöntemle şaşırtıcı bir sonuca ulaştı. Satürn'ün çekirdeği keskin sınırlı bir kaya topu değil, buz, kaya ve metalik akışkanlardan oluşan dağınık bir 'çorba'dır; Satürn'ün çapının yaklaşık %60'ına yayılır. Toplam kütlesi yaklaşık 55 Dünya kütlesidir; bunun yaklaşık 17 Dünya kütlesi buz ve kaya, gerisi hidrojen-helyum akışkanıdır. Bu, d37'de Jüpiter için anlatılan seyrelmiş çekirdeğin Satürn'deki karşılığıdır; Caltech de Juno'nun Jüpiter için benzer bir yapı işaret ettiğini not eder.",
         "Bağımsız bir yöntem de benzer bir sayı verdi. Cassini'nin son yörüngelerinde ölçülen çekim alanından Iess ve meslektaşları 2019'da Science'ta çekirdek kütlesinin 15 ile 18 Dünya kütlesiyle uyumlu olduğunu bildirdi; Britannica da kaya-buz çekirdeği için aynı aralığı verir. İki yöntemin buz-kaya miktarında anlaşması güven verir; anlaşmadıkları nokta bu malzemenin sıkı mı, dağınık mı olduğudur. Caltech'e göre bulanık bir çekirdek, önce kayalık çekirdeğin oluşup sonra gazı çektiği klasik modeli zorlar; gezegenler gazı daha erken toplamaya başlamış olabilir."
       ],
       "akilda": "Halka sismolojisi (öneri 1990'lar, ilk gözlem 2013): Satürn'ün iç titreşimleri C halkasında dalgalar yaratır. 2021: çekirdek dağınık, çapın ~%60'ına yayılı, ~55 Dünya kütlesi (17'si buz-kaya). Cassini çekim ölçümü: 15–18 Dünya kütlesi."
@@ -70,7 +75,7 @@
       "baslik": "Rüzgârlar, puslu bulutlar ve Büyük Beyaz Leke",
       "paragraflar": [
         "Satürn'ün rüzgârları Jüpiter'inkileri geride bırakır. NASA'nın kartına göre 30° enlemin altında rüzgâr saniyede 400 metreye, yani saatte yaklaşık 1440 km'ye kadar çıkar; daha yüksek enlemlerde saniyede 150 metreye kadar. d9'da CNES'in verdiği saatte 1800 km daha yüksek bir değerdir; kaynaklar farklı ölçümlere ve tanımlara dayanır. Bu rüzgârlar sığ değildir. Cassini'nin çekim ölçümlerine göre gezegenin farklı enlemlerinin farklı hızlarla dönmesi, yani diferansiyel dönme, yaklaşık 9000 km derine iner; Jüpiter'de bu derinlik yaklaşık 3000 km idi (d37). NASA'nın bir sayfası 8000 km der.",
-        "Bulutlar Jüpiter'deki üç katmanın aynısıdır: amonyak, amonyum hidrosülfür ve su. Ama bir ders kitabına göre Satürn'ün zayıf çekimi bu katmanları Jüpiter'deki gibi 75 km'ye değil, yaklaşık 300 km'ye yayar. NASA'nın verdiği ölçek yüksekliği de aynı şeyi söyler: Satürn'de 59,5 km, Jüpiter'de 27 km. Atmosfer daha kabarık ve daha soğuk olduğu için bulut katmanları daha derinde ve daha geniş bir dilimde dizilir; Satürn'ün bulut şeritleri Jüpiter'inkiler kadar keskin değildir.",
+        "Bulutlar Jüpiter'deki üç katmanın aynısıdır: amonyak, amonyum hidrosülfür ve su. Bileşimde küçük farklar var: NASA'ya göre Satürn'ün atmosferinde metan milyonda 4500 pay, amonyak milyonda 125 pay; Jüpiter'de bu sayılar 3000 ve 260'tır. Ama bir ders kitabına göre Satürn'ün zayıf çekimi bu katmanları Jüpiter'deki gibi 75 km'ye değil, yaklaşık 300 km'ye yayar. NASA'nın verdiği ölçek yüksekliği de aynı şeyi söyler: Satürn'de 59,5 km, Jüpiter'de 27 km. Satürn'ün atmosferi Jüpiter'inkinden daha kabarıktır; aynı bulut katmanları dikey olarak dört kat daha geniş bir dilime yayılır.",
         "Satürn'ün havası çoğu zaman sakin görünür, ama arada bir patlar. ESA'ya göre 2010 sonunda başlayan dev bir fırtına aylarca sürdü, gezegenin çevresini dolaşıp kendi kuyruğuna yetişti ve atmosferin bulutlarını, sıcaklığını ve bileşimini üç yıldan uzun süre etkiledi. Bu tür fırtınalara Büyük Beyaz Leke denir ve ESA'ya göre kabaca her Satürn yılında bir, yani yaklaşık 30 Dünya yılında bir görülür. Cassini o sırada Satürn'ün yörüngesinde olduğu için fırtınayı yakından izleme şansı yakaladı; fırtına şimşeklerle dolu bir kasırga gibi davrandı ve on binlerce kilometre uzaktaki ekvator atmosferini bile etkiledi. Dünya'daki iklimde de uzak olayların birbirini etkilediği bu tür bağlara uzaktan bağlantı denir."
       ],
       "akilda": "Satürn'de rüzgâr 30° altında 400 m/s'ye (~1440 km/sa) çıkar ve ~9000 km derine iner (Jüpiter ~3000 km). Bulut katmanları ~300 km'ye yayılır (Jüpiter 75 km). Büyük Beyaz Leke kabaca her Satürn yılında (~30 yıl) bir; sonuncusu 2010 sonu."
@@ -92,17 +97,18 @@
     {
       "baslik": "Halkaların keşfi: kulaklardan parçacıklara",
       "paragraflar": [
-        "1610'da Galileo teleskobunu Satürn'e çevirdiğinde halka görmedi; gördüğünü anlayamadı. Wikipedia'ya göre Toskana dükalığına yazdığı mektupta Satürn'ün yalnız olmadığını, üç parçadan oluştuğunu yazdı ve yan çıkıntıları Satürn'ün 'kulakları' diye andı. 1612'de kulaklar kayboldu: Dünya halka düzleminden geçiyordu ve halkalar kenardan görülüyordu. Galileo'nun şaşkın sorusu, 'Satürn çocuklarını mı yuttu?' oldu. Bu kaybolma olayı bugün de yaşanıyor; 2025'tekini aşağıda göreceksin.",
-        "Bilmeceyi Christiaan Huygens çözdü. 1655'te Satürn'ün çevresinde bir disk tanımladı ve 1659'da Systema Saturnium adlı kitabında, gezegeni hiçbir yerde ona değmeyen ince, yassı bir halkanın sardığını yayımladı. 1675'te Giovanni Domenico Cassini halkanın tek parça olmadığını, aralarında boşluklar bulunan birkaç halkadan oluştuğunu buldu; en büyük boşluk bugün onun adını taşır.",
+        "1610'da Galileo teleskobunu Satürn'e çevirdiğinde halka görmedi; gördüğünü anlayamadı. Wikipedia'ya göre Toskana Dükü'ne yazdığı mektupta Satürn'ün yalnız olmadığını, üç parçadan oluştuğunu yazdı ve yan çıkıntıları Satürn'ün 'kulakları' diye andı. 1612'de kulaklar kayboldu: Dünya halka düzleminden geçiyordu ve halkalar kenardan görülüyordu. Galileo'nun şaşkın sorusu, 'Satürn çocuklarını mı yuttu?' oldu. Bu kaybolma olayı bugün de yaşanıyor; 2025'tekini aşağıda göreceksin.",
+        "Bilmeceyi Christiaan Huygens çözdü; d9'da gördüğün gibi aynı yıl, 1655'te, Satürn'ün en büyük uydusu Titan'ı da o bulmuştu. 1655'te Satürn'ün çevresinde bir disk tanımladı ve 1659'da Systema Saturnium adlı kitabında, gezegeni hiçbir yerde ona değmeyen ince, yassı bir halkanın sardığını yayımladı. 1675'te Giovanni Domenico Cassini halkanın tek parça olmadığını, aralarında boşluklar bulunan birkaç halkadan oluştuğunu buldu; en büyük boşluk bugün onun adını taşır.",
         "Halka neden yapılmıştı? Wikipedia'ya göre Laplace 1787'de tek parça, düzgün bir katı halkanın kararsız olacağını gösterdi ve halkaların çok sayıda ince katı halkacıktan oluştuğunu önerdi. 1859'da James Clerk Maxwell bir adım ileri gitti: katı, düzensiz ya da sıvı bir halka kararlı olamaz; halkalar Satürn'ün çevresinde her biri bağımsız dolanan sayısız küçük parçacıktan oluşmalıdır.",
-        "Kanıt 1895'te tayftan geldi: James Keeler ve Aristarkh Belopolsky birbirinden bağımsız tayfsal gözlemlerle Maxwell'i doğruladı. Mantığı d2 ve d3'ü birleştirir. Halka tek parça katı bir tekerlek olsaydı, dış kenarı iç kenarından daha hızlı hareket ederdi, çünkü daha büyük bir çemberi aynı sürede dolaşırdı. Bağımsız parçacıklardan oluşuyorsa Kepler'in üçüncü yasası gereği içteki parçacıklar dıştakilerden hızlı dolanır. Doppler kayması (d2) halkanın farklı yerlerindeki hızı ölçmeyi sağlar ve hangi durumun geçerli olduğunu gösterir."
+        "Kanıt 1895'te tayftan geldi: Keeler ve Belopolsky birbirinden bağımsız tayfsal gözlemlerle Maxwell'i doğruladı. Mantığı d2 ve d3'ü birleştirir. Halka tek parça katı bir tekerlek olsaydı, dış kenarı iç kenarından daha hızlı hareket ederdi, çünkü daha büyük bir çemberi aynı sürede dolaşırdı. Bağımsız parçacıklardan oluşuyorsa Kepler'in üçüncü yasası gereği içteki parçacıklar dıştakilerden hızlı dolanır. Doppler kayması (d2) halkanın farklı yerlerindeki hızı ölçmeyi sağlar ve hangi durumun geçerli olduğunu gösterir.",
+        "Bu farkı sayılarla da görebilirsin. Planetary Data System tablosuna göre Mimas 185.537 km'de 0,942 günde bir tur atar. Kepler'in üçüncü yasasıyla (d3) dönem uzaklığın 1,5'inci kuvvetiyle büyür; buradan C halkasının iç kenarındaki (74.491 km) bir parçacığın turu yaklaşık 5,8 saat, A halkasının dış kenarındakinin (136.770 km) yaklaşık 14,3 saat çıkar. Aynı hesap Encke Boşluğu'ndaki Pan için 0,575 gün verir; tablo da 0,575 gün der, yani hesap tutarlıdır. İlginç bir sonuç: Satürn'ün günü yaklaşık 10,6 saat olduğundan, iç halkalar gezegenin kendisinden hızlı, dış halkalar yavaş dolanır."
       ],
       "akilda": "Galileo 1610'da 'kulaklar' gördü, 1612'de kayboldular. Huygens 1659'da halkayı açıkladı, Cassini 1675'te boşluğu buldu. Laplace (1787) ve Maxwell (1859) halkanın katı olamayacağını gösterdi; Keeler ve Belopolsky 1895'te tayfla doğruladı."
     },
     {
       "baslik": "Halkaların anatomisi",
       "paragraflar": [
-        "Halkalar keşif sırasına göre harflerle adlandırılır, bu yüzden içten dışa sıra alfabetik değildir. NASA'nın Planetary Data System halka tablosuna göre, Satürn'ün merkezinden ölçülen uzaklıklarla: en içte soluk D halkası 66.900 km'de başlar; C halkası 74.491 ile 91.975 km, en parlak ve en yoğun B halkası 91.975 ile 117.570 km arasındadır. Ardından Cassini Bölümü gelir: 117.500 ile 122.050 km arasında, yaklaşık 4550 km genişliğinde, malzemenin çok seyrek olduğu bir bölge (Wikipedia yaklaşık 4800 km verir). Onun dışında A halkası 122.050 ile 136.770 km arasındadır.",
+        "Halkalar harflerle adlandırılır, ama içten dışa sıra alfabetik değildir. NASA'nın Planetary Data System halka tablosuna göre, Satürn'ün merkezinden ölçülen uzaklıklarla: en içte soluk D halkası 66.900 km'de, yani Satürn'ün 1 bar düzeyinin (60.268 km) yalnızca 6600 km kadar üstünde başlar; Cassini'nin son yörüngeleri bu dar boşluktan geçti; C halkası 74.491 ile 91.975 km, en yoğun B halkası 91.975 ile 117.570 km arasındadır. Ardından Cassini Bölümü gelir: 117.500 ile 122.050 km arasında, yaklaşık 4550 km genişliğinde, malzemenin çok seyrek olduğu bir bölge (Wikipedia yaklaşık 4800 km verir). Onun dışında A halkası 122.050 ile 136.770 km arasındadır.",
         "Ana halkaların içinde de boşluklar vardır. A halkasındaki Encke Boşluğu yaklaşık 322 km geniştir ve içinde Pan uydusu dolanır; A halkasının dış kenarına yakın Keeler Boşluğu yalnızca 35 km geniştir ve içinde Daphnis uydusu dolanır. A halkasının dışında seyrek Roche Bölümü, sonra dar F halkası (139.826–140.612 km) gelir. Daha dışta soluk G halkası (166.000–173.200 km) ve 180.000 ile 480.000 km arasına yayılan, malzemesini Enceladus uydusundan alan geniş E halkası bulunur (Enceladus, d40).",
         "Bir de görülmesi çok zor dev bir halka var. Wikipedia'ya göre Ekim 2009'da NASA'nın Spitzer kızılötesi teleskobuyla keşfedilen Phoebe halkası, 7,7 ile 12,5 milyon km arasında uzanır. Ana halkalara göre yaklaşık 27° eğiktir, Satürn'ün yörünge düzleminde durur ve parçacıkları Phoebe uydusu gibi ters yönde dolanır; muhtemelen Phoebe'ye çarpan göktaşlarının kaldırdığı tozdur.",
         "Halkaların ne kadar 'dolu' olduğunu optik derinlik anlatır: ışığın bir katmandan geçerken ne kadar söndüğünü gösteren sayıdır. Optik derinlik 1 olan bir katman, içinden geçen ışığın yaklaşık %63'ünü engeller; 0,1 olan katman çok az bir kısmını. Aynı tabloya göre B halkasının optik derinliği yer yer 5'i aşar, yani neredeyse tamamen opaktır; C halkası 0,05–0,35, Cassini Bölümü 0 ile 0,2 arasındadır. E ve G halkalarında ise milyonda bir mertebesindedir. Cassini Bölümü bu yüzden boş değil, yalnızca B ve A halkalarının yanında çok seyrek bir bölgedir."
@@ -116,8 +122,8 @@
     {
       "baslik": "Parçacıklar, kalınlık ve kütle",
       "paragraflar": [
-        "Halkaları oluşturan parçacıklar Wikipedia'ya göre mikrometreden metrelere kadar uzanır; ana halkalarda çoğu 10 metreden küçüktür. Bileşim şaşırtıcı derecede saftır: Wikipedia'ya göre yaklaşık %99,9 su buzu, IPGP'ye göre %99'dan fazla; geri kalanı silikatlar ya da tolin denen koyu organik maddeler gibi kirleticilerdir. Cassini'nin tayf haritalarına göre en saf buz ya da en iri taneler A ve B halkalarında, buz olmayan malzeme ya da daha küçük taneler ise C halkasında ve Cassini Bölümü'ndedir.",
-        "Kalınlık için tek bir sayı yoktur. Wikipedia'ya göre yerel dikey kalınlık 10 metreden 1 km'ye kadar değişir; d9'da kâğıt yaprağıyla yaptığımız karşılaştırmayı hatırla. Bu kadar ince olmalarının bir nedeni, parçacıkların birbirine sürekli çarpmasıdır: düzlemin dışına sapan bir parçacık komşularına çarpıp enerji kaybeder ve sonunda düzleme geri döner.",
+        "Halkaları oluşturan parçacıklar Wikipedia'ya göre mikrometreden metrelere kadar uzanır; ana halkalarda çoğu 10 metreden küçüktür. Bileşim şaşırtıcı derecede saftır: Wikipedia'ya göre yaklaşık %99,9 su buzu, IPGP'ye göre %99'dan fazla; geri kalanı tolin ya da silikat gibi kirleticilerin izleridir. Cassini'nin tayf haritalarına göre en saf buz ya da en iri taneler A ve B halkalarında, buz olmayan malzeme ya da daha küçük taneler ise C halkasında ve Cassini Bölümü'ndedir.",
+        "Kalınlık için tek bir sayı yoktur. Wikipedia'ya göre yerel dikey kalınlık 10 metreden 1 km'ye kadar değişir; d9'da kâğıt yaprağıyla yaptığımız karşılaştırmayı hatırla.",
         "Kütle uzun süre en büyük bilinmeyendi. Cassini'nin 2017'deki son yörüngelerinde araç gezegen ile en içteki halka arasından, bulut tepelerinin 2600 ile 3900 km üstünden geçti. Dünya'dan izlenen radyo sinyali aracın ivmesini saniyede milimetrenin kesirleri düzeyinde gösterdi; böylece gezegenin ve halkaların çekimi ayrı ayrı çıkarılabildi. Iess ve meslektaşlarının Ocak 2019'da Science'ta yayımladığı sonuca göre halkaların kütlesi 1,54 × 10¹⁹ kg (±0,49), Satürn'ün küçük uydusu Mimas'ın kütlesinin yaklaşık %41'i. Wikipedia bunu Satürn kütlesinin milyarda 0,25'i olarak verir.",
         "Bu sayıyı bir kenara yaz, çünkü iki bölüm sonra halkaların yaşı tartışmasının merkezinde duracak. Çok büyük görünen halkalar aslında toplanınca küçük bir uydudan bile hafiftir; ince ve hafif bir sistem, dışarıdan gelen kirliliği ya da kendi kaybını daha çabuk gösterir."
       ],
@@ -144,9 +150,10 @@
     {
       "baslik": "Halkalar ne kadar yaşlı? Süren bir tartışma",
       "paragraflar": [
-        "Satürn yaklaşık 4,5 milyar yaşında. Halkaları da öyle mi? Cassini'nin cevabı ilk bakışta 'hayır' oldu. Iess ve meslektaşları, ölçtükleri düşük kütleye dayanarak halkaların genç olduğunu, büyük olasılıkla 10 ile 100 milyon yaşında olduğunu yazdı. Gerekçenin ikinci ayağı temizliktir: Güneş Sistemi'nde sürekli bir toz yağar ve bu tozun taneleri mikrometeoroit denen, toz boyutundaki minik göktaşlarıdır. Bunlar halkaya çarptıkça buz yavaş yavaş kirlenip kararmalıdır. Cassini halkaları çok temiz buldu; IPGP'ye göre 2010'lar ve 2020'lerde yapılan tahminler, kirlenme hızına bakarak halkalara en çok birkaç yüz milyon yıl yaş biçti.",
-        "Halka genç ise dinozorların çağıyla aynı zaman dilimlerinde oluşmuş olabilir; bu fikir büyük ilgi gördü. Ama Aralık 2024'te Ryuki Hyodo, Gustavo Madeira ve Hidenori Genda, Nature Geoscience'ta ters yönde bir sonuç yayımladı. Bilgisayar benzetimlerine göre mikrometeoroitler halkaya saniyede yaklaşık 20 km hızla çarpar ve tamamen buharlaşır. Oluşan sıcak gaz yaklaşık 10.000 °C'lik bir plazmaya dönüşür ve Satürn'ün manyetik alanı bu iyonlaşmış malzemeyi ya gezegene çeker ya da halkaların dışına savurur. Böylece kirleticilerin çok azı halkada kalır.",
+        "NASA'ya göre Satürn 4 milyar yıldan yaşlıdır. Halkaları da öyle mi? Cassini'nin cevabı ilk bakışta 'hayır' oldu. Iess ve meslektaşları, ölçtükleri düşük kütleye dayanarak halkaların genç olduğunu, büyük olasılıkla 10 ile 100 milyon yaşında olduğunu yazdı. Gerekçenin ikinci ayağı temizliktir: Güneş Sistemi'nde sürekli bir toz yağar ve bu tozun taneleri mikrometeoroit denen, toz boyutundaki minik göktaşlarıdır. Bunlar halkaya çarptıkça buz yavaş yavaş kirlenip kararmalıdır. Cassini halkaları çok temiz buldu; IPGP'ye göre 2010'lar ve 2020'lerde yapılan tahminler, kirlenme hızına bakarak halkalara en çok birkaç yüz milyon yıl yaş biçti.",
+        "Genç halka fikri on yılı aşkın süre baskın görüş oldu. Ama Aralık 2024'te Ryuki Hyodo, Gustavo Madeira ve Hidenori Genda, Nature Geoscience'ta ters yönde bir sonuç yayımladı. Bilgisayar benzetimlerine göre mikrometeoroitler halkaya saniyede yaklaşık 20 km hızla çarpar ve tamamen buharlaşır. Oluşan sıcak gaz yaklaşık 10.000 °C'lik bir plazmaya dönüşür ve Satürn'ün manyetik alanı bu iyonlaşmış malzemeyi ya gezegene çeker ya da halkaların dışına savurur. Böylece kirleticilerin çok azı halkada kalır.",
         "Bu sonuç doğruysa halkaların temiz görünmesi genç olduklarını göstermez; IPGP'nin aktardığına göre halkalar Güneş Sistemi'nin oluşumuna, yaklaşık 4,5 milyar yıl öncesine kadar uzanabilir. Wikipedia ise mikrometeoroitlerin baskın olduğu C halkasının bir milyar yıla yakın yaşlı olabileceğini söyleyen bir çalışmayı da anar. Dikkat: Hyodo ve ekibinin çalışması model ve benzetimdir, ölçüm değil; yazarlar da 'olabilir' diye konuşur. Tartışma açık.",
+        "Tartışmayı ne çözebilir? Colorado Üniversitesi'nin halka yağmuru çalışmasını anlatan haberine göre Cassini'nin yakaladığı silikat tanelerinin türünü belirlemek, halkaların milyarlarca yıllık mı yoksa çok daha genç mi olduğuna karar vermeye yardım edebilir ve bu iş sürüyor. Yani cevap belki yeni bir görevde değil, Cassini'nin arşivdeki verisinde saklıdır. Kesin söylemek için henüz erken.",
         "Halkalar nasıl oluştu? Burada da birden fazla fikir var. d37'de gördüğün Roche sınırı düşüncesinin sahibi Édouard Roche, yörüngesi küçülen bir uydunun gelgitle parçalandığını önerdi; 2022 benzetimleri bu fikri destekledi ve kayıp uyduya 'Chrysalis' adı önerildi. Başka çalışmalar büyük bir çarpmayla parçalanan bir uyduyu, iki buzlu uydunun çarpışmasını (2023), Satürn'e yakalanıp parçalanan bir kuyruklu yıldızı ya da Robin Canup'un önerdiği gibi Titan boyutunda bir uydunun buz mantosundan kalan, başta çok daha kütleli halkaları anlatır. Wikipedia'ya göre Roche Bölümü Satürn'ün Roche sınırına yakındır; bu sınırın içinde buzlu malzeme bir uyduya toplanamaz, bu yüzden halkalar halka olarak kalır."
       ],
       "akilda": "Cassini: düşük kütle ve temizlik → halkalar genç (10–100 milyon yıl). Hyodo ve ekibi (Aralık 2024, benzetim): mikrometeoroitler buharlaşıp uzaklaştırılır, halkalar az kirlenir → 4,5 milyar yaşında olabilir. Köken de tartışmalı (parçalanan uydu, çarpışma, kuyruklu yıldız, ilkel halka)."
@@ -155,7 +162,7 @@
       "baslik": "Halka yağmuru: halkalar Satürn'e dökülüyor",
       "paragraflar": [
         "Halkalar yalnızca toz toplamaz, malzeme de kaybeder. James O'Donoghue ve ekibinin 17 Aralık 2018'de Icarus'ta yayımlanan çalışmasına göre halkalardan Satürn'e yarım saatte bir olimpik yüzme havuzunu dolduracak kadar su ürünü yağar. Buna halka yağmuru denir. Mekanizma şöyledir: Güneş'in morötesi ışığı ya da mikrometeoroit çarpmalarının ürettiği plazma, minik buz tanelerini elektrikle yükler. Yüklü taneler artık yalnızca çekime değil, manyetik alana da uyar; alan çizgileri boyunca Satürn'ün üst atmosferine çekilir, orada buharlaşıp iyonosferle tepkimeye girerler.",
-        "Bunu nereden biliyoruz? NASA'ya göre ilk ipuçları Voyager'dan geldi: Voyager 2'nin 1981'de çektiği görüntülerde Satürn'ün üst atmosferinde koyu bantlar vardı ve Jack Connerney 1986'da bunları manyetik alanla ilişkilendirdi. O'Donoghue'nun ekibi ise Hawaii'deki Keck teleskobuyla, düşen suyun iyonosferde ürettiği H₃⁺ iyonlarının kızılötesi parıltısını, manyetik alan çizgilerinin halka düzlemini kestiği enlemlerde gözledi. Daha yüksek bir güney enlemindeki ayrı bir bant ise Enceladus'tan gelen suyun izidir (d40).",
+        "Bunu nereden biliyoruz? NASA'ya göre ilk ipuçları Voyager'dan geldi: Voyager 2'nin 1981'de çektiği görüntülerde Satürn'ün üst atmosferinde koyu bantlar vardı ve Jack Connerney 1986'da bunları manyetik alanla ilişkilendirdi. O'Donoghue'nun ekibi ise Hawaii'deki Keck teleskobuyla, düşen suyun iyonosferde ürettiği üç hidrojen atomlu H₃ artı iyonlarının kızılötesi parıltısını, manyetik alan çizgilerinin halka düzlemini kestiği enlemlerde gözledi. Daha yüksek bir güney enlemindeki ayrı bir bant ise Enceladus'tan gelen suyun izidir (d40).",
         "Ne kadar hızlı? NASA'ya göre yalnızca halka yağmuru bütün halkayı 300 milyon yılda tüketir. Cassini'nin son yörüngelerinde ekvatora doğrudan düşen malzeme de eklenince halkaların 100 milyon yıldan az ömrü kalır. Ama ölçümler birbirinden epey farklı: Wikipedia, Cassini'nin 2017'de ölçtüğü akışı saniyede 4800 ile 44.000 kg arasında verir; Colorado Üniversitesi'nin Ekim 2018'de Science'ta yayımlanan, Cassini'nin toz çözümleyicisinin sekiz yörüngede yakaladığı 2700'den fazla taneye dayanan sonucu ise saniyede yaklaşık bir ton. Bu malzemenin çoğu su buzu, bir kısmı da minik silikat taneleriydi.",
         "Bu sayılar yaş tartışmasıyla doğrudan bağlantılıdır: halkalar hızla tükeniyorsa geçmişte daha kütleli olmalıydılar ya da yakın zamanda oluşmuş olmalıdırlar. Ama bir uyarı: bütün ömür hesapları, bugün ölçülen hızın milyonlarca yıl sabit kaldığını varsayar. Cassini yalnızca birkaç ay ölçüm yaptı; hız mevsimle, Güneş etkinliğiyle ya da zamanla değişiyor olabilir."
       ],
@@ -168,10 +175,10 @@
     {
       "baslik": "Cassini'nin Büyük Finali",
       "paragraflar": [
-        "d9'da gördüğün gibi Cassini 1997'de fırlatıldı, 1 Temmuz 2004'te Satürn'ün yörüngesine girdi ve 15 Eylül 2017'de Satürn'ün atmosferine daldırılarak görevini bitirdi. Bu derste aktardığımız bulguların çoğu, görevin son aylarından gelir. Aralık 2016 ile Nisan 2017 arasında araç önce halkaların dış kenarını sıyıran yörüngelerde dolaştı. 26 Nisan 2017'de ise Büyük Final başladı: Cassini, gezegen ile en içteki halka arasındaki dar boşluktan geçen, her biri yaklaşık bir hafta süren 22 yörüngeye girdi. Hızı saatte yaklaşık 75.000 mil, yani saniyede yaklaşık 33,5 km idi.",
+        "d9'da gördüğün gibi Cassini 1997'de fırlatıldı, 1 Temmuz 2004'te Satürn'ün yörüngesine girdi ve 15 Eylül 2017'de Satürn'ün atmosferine daldırılarak görevini bitirdi. Bu derste aktardığımız bulguların çoğu, görevin son aylarından gelir. Aralık 2016 ile Nisan 2017 arasında araç önce halkaları sıyıran yörüngelerde dolaştı. 26 Nisan 2017'de ise Büyük Final başladı: Cassini, gezegen ile en içteki halka arasındaki dar boşluktan geçen, her biri yaklaşık bir hafta süren 22 yörüngeye girdi. Hızı saatte yaklaşık 75.000 mil, yani saniyede yaklaşık 33,5 km idi. ESA'ya göre çekim ölçümleri için araç Satürn'ün üst bulut katmanlarına 3000 km kadar yaklaşacak, iyon ve nötr kütle tayfölçeri de üst atmosferden kaçan molekülleri ve halkalardan gelen suyla ilgili molekülleri doğrudan örnekleyecekti.",
         "Neden böyle riskli bir son? ESA'ya göre aracın yörüngesini düzeltecek yakıtı azalmıştı. Yakıtı biten bir araç kontrolsüz kalır ve bir gün yaşama elverişli olabilecek bir uyduya, örneğin Enceladus'a çarpıp onu Dünya mikroplarıyla kirletebilirdi. Gezegen koruması denen kurallar, başka dünyaları bu tür biyolojik kirlenmeden korumayı amaçlar. Galileo da 2003'te Europa'yı korumak için aynı biçimde Jüpiter'e daldırılmıştı (d37). Cassini'yi Satürn'de yakmak hem kuralı yerine getirdi hem de son bir bilim fırsatı yarattı.",
         "Büyük Final'in getirdikleri: halkaların kütlesi (1,54 × 10¹⁹ kg), çekirdeğin 15–18 Dünya kütlesi olması ve rüzgârların yaklaşık 9000 km derine inmesi; manyetik eksenin dönme eksenine 0,06°'den bile çok daha az eğik olduğu; halka ile gezegen arasındaki boşluğun ilk başta boş sanılıp sonra toz çözümleyicisinin yakaladığı çok küçük tanelerle dolu çıkması; ve gezegene düşen halka malzemesinin ilk doğrudan ölçümü. Araç ayrıca en içteki halkaların o güne kadarki en ayrıntılı görüntülerini çekti.",
-        "Cassini'nin son verisi, atmosfere dalarken gönderdiği ölçümlerdi. On üç yıllık yörünge görevinin sonunda Satürn hakkında öğrendiklerimizin büyük kısmı bu aracın eseri; ama bu derste gördüğün gibi her cevap yeni sorular açtı: halkaların yaşı, çekirdeğin oluşumu, manyetik alanın hizası hâlâ tartışılıyor."
+        "On üç yıllık yörünge görevinin sonunda Satürn hakkında öğrendiklerimizin büyük kısmı bu aracın eseri; ama bu derste gördüğün gibi her cevap yeni sorular açtı: halkaların yaşı, çekirdeğin oluşumu, manyetik alanın hizası hâlâ tartışılıyor."
       ],
       "akilda": "Büyük Final: 26 Nisan–15 Eylül 2017, gezegen ile halkalar arasından 22 haftalık yörünge, ~33,5 km/s. Neden: yakıt azaldı, gezegen koruması (Enceladus'u kirletmemek). Getirdikleri: halka kütlesi, çekirdek, derin rüzgârlar, hizalı manyetik alan, halka yağmuru ölçümü."
     },
@@ -179,6 +186,7 @@
       "baslik": "Mevsimler ve kaybolan halkalar",
       "paragraflar": [
         "Satürn'ün 26,73°'lik eksen eğikliği iki şey yapar. Birincisi mevsimleri doğurur: NASA'ya göre Satürn'ün bir yılı yaklaşık 29 Dünya yılıdır ve her mevsim yedi yıldan uzun sürer. Kuzey yarıkürenin yaz gündönümü 24 Mayıs 2017'deydi; kutup altıgeninin renginin o yıllarda değişmesi, Güneş'in kutbu yeniden aydınlatmasıyla ilişkilendirilir. İkincisi, halkalar ekvator düzleminde durduğu için bize gösterdikleri yüz de mevsimle değişir: Satürn Güneş'in çevresinde dolanırken halkaları bazen geniş açık, bazen tam kenardan görürüz.",
+        "Halkalardaki ve atmosferdeki bazı olaylar da mevsimin saatine uyar. Wikipedia'ya göre B halkasındaki ışınsal çizgiler mevsimlik olarak belirir ve kış ile yaz ortasına doğru kaybolur; Voyager'ın 1980'deki gözleminden sonra ilk kez 2005'te, yaklaşık 25 yıl sonra Cassini tarafından yeniden görüldüler. ESA'ya göre Büyük Beyaz Leke türünden dev fırtınalar da kabaca her Satürn yılında bir patlar. Yani Satürn'ü yalnızca bir yıl gözlemek, onun 'iklimini' tanımaya yetmez; Cassini'nin 13 yılı bile bir Satürn yılının yarısından azdır.",
         "Halkalar Dünya'dan tam kenardan görüldüğünde, ki buna halka düzlemi geçişi denir, neredeyse kaybolurlar; çünkü d9'da gördüğün gibi yalnızca yaklaşık 1 km kalınlıktadırlar. Son geçiş 23 Mart 2025'teydi. Britanya Astronomi Derneği'ne göre Satürn 12 Mart 2025'te Güneş'le kavuşumdaydı, yani o sırada Güneş'e çok yakın göründüğü için olay doğrudan izlenemedi. Güneş ise 6 Mayıs 2025'te halka düzleminden geçti: bu, Satürn'ün ekinoksudur, Güneş halkaları tam kenardan aydınlatır. Halkaların Dünya'ya göre eğikliği Kasım 2025'te yeniden yaklaşık 0,4°'ye kadar indi ve sonra açılmaya başladı. Galileo'nun 1612'deki 'Satürn çocuklarını mı yuttu?' sorusu, bu olayın bir önceki tekrarlarından birine aitti.",
         "Sıradaki geçişler Abrams Planetaryumu'nun hesabına göre Dünya için 15 Ekim 2038, 1 Nisan 2039 ve 9 Temmuz 2039'da; Güneş için 22 Ocak 2039'da. Geçişin bazen üç kez olmasının nedeni Dünya'nın kendi yörüngesidir: Dünya Güneş'in çevresinde dolanırken bakış noktamız halka düzleminin bir yanından öbürüne birkaç kez geçebilir. Halkalar en açık hâllerine ise 12 Mayıs 2032'de, yaklaşık 26,9°'lik eğiklikle ulaşacak."
       ],
@@ -191,10 +199,11 @@
     {
       "baslik": "İstanbul'dan Satürn",
       "paragraflar": [
-        "Satürn bu sonbaharın akşam gezegeni. Space.com'un 2026 takvimine göre 5 Eylül'den itibaren Balina takımyıldızında, 4 Ekim 2026'da karşı konumdaydı ve en parlak hâlini 24 Eylül ile 9 Ekim arasında yaşadı; 4 Ekim'den yıl sonuna kadar akşam göğünde. d9'da anlatıldığı gibi sarımsı beyaz, orta parlaklıkta bir yıldız gibi görünür ve yıldızlar gibi titreşmeden durur. Urania'nın Gökyüzü sekmesi o gecenin konumunu ve batış saatini verir.",
+        "Satürn bu sonbaharın akşam gezegeni. Space.com'un 2026 takvimine göre 5 Eylül'den itibaren Balina takımyıldızında, 4 Ekim 2026'da karşı konumdaydı ve en parlak hâlini 24 Eylül ile 9 Ekim arasında yaşadı; 4 Ekim'den yıl sonuna kadar akşam göğünde. d9'da anlatıldığı gibi sarımsı beyaz, orta parlaklıkta bir yıldız gibi görünür. Urania'nın Gökyüzü sekmesi o gecenin konumunu ve batış saatini verir.",
+        "Satürn'ün parlaklığı halkalara bağlıdır. NASA'nın kartı en parlak hâlini halkasız 0,43, halkalarla birlikte −0,55 kadir verir. d9'daki kadir formülüyle: fark 0,98 kadir, 10^(0,4 × 0,98) ≈ 2,5. Yani halkalar en açık olduğunda Satürn'ü yaklaşık 2,5 kat parlak gösterir. 2025'te halkalar kenardan görülürken bu katkı neredeyse sıfıra indi; önümüzdeki yıllarda halkalar açıldıkça Satürn karşı konumdan karşı konuma biraz daha parlak görünecek. Bu, gökte çıplak gözle bile izleyebileceğin, halkaların varlığının dolaylı bir kanıtıdır.",
         "7×50 dürbünle halkayı görebilir misin? Kısa cevap: hayır, özellikle bu yıllarda. d9'da Wikipedia'ya dayanarak halkaları ayırmak için 20 kat ya da daha yüksek büyütme gerektiğini görmüştün. Bir gözlem rehberi de aynı yönde: halkalar geniş açıkken iyi bir 10×50 dürbünde gezegen biraz oval görünebilir, ama hâlâ küçücüktür ve halkaları önceden bilmesen sıradan bir dürbünle fark edemezsin. Üstelik 2026'da halkalar çok dar açıktır: Abrams Planetaryumu'nun hesabına göre Dünya'ya göre eğiklikleri Temmuz 2026'da 9,2°, Aralık 2026'da 6,1° civarında. Halka bu açıyla gezegenin ortasından geçen ince bir çizgiye yakındır.",
         "En büyük uydu Titan için kaynaklar aynı iyimserlikte değil: d9 ve d11'de Wikipedia'ya göre orta boy bir dürbünle seçilebileceğini gördün; aynı rehber ise ancak deneyimli gözlemcilerin çok iyi koşullarda görebileceğini söyler. İstanbul'un ışık kirliliğinde dürbünü sabitleyip Satürn'ün yakınında, geceden geceye yer değiştiren sönük bir nokta aramayı dene; görürsen başarı say, görmezsen şaşırma. Titan'ın kendisini d40'ta tanıyacaksın.",
-        "Halkaları gerçekten görmek için bir teleskop gerekir. Aynı rehbere göre 70 mm'lik küçük bir mercekli ya da aynalı teleskop, yaklaşık 30 kat büyütmede halkaları rahatça gösterir; Cassini Bölümü için 100 kata yakın büyütme, çok daha ince Encke Boşluğu için ise en az 25 cm'lik bir teleskop gerekir. Sabırlıysan bekleyebileceğin bir yıl var: halkalar 2032'de en açık hâline ulaşacak ve küçük bir teleskopta bile en etkileyici görüntülerini verecek. Hangi büyütmenin ne göstereceğini Urania'daki Dürbün ve teleskop deneyinde de deneyebilirsin."
+        "Halkaları gerçekten görmek için bir teleskop gerekir. Aynı rehbere göre 70 mm'lik küçük bir mercekli ya da aynalı teleskop, yaklaşık 30 kat büyütmede halkaları rahatça gösterir; Cassini Bölümü için 100 kata yakın büyütme, çok daha ince Encke Boşluğu için ise en az 25 cm'lik bir teleskop gerekir. Sabırlıysan bekleyebileceğin bir yıl var: halkalar 2032'de en açık hâline ulaşacak; küçük bir teleskopla halkaları izlemek için en elverişli yıllar o dönemdir. Hangi büyütmenin ne göstereceğini Urania'daki Dürbün ve teleskop deneyinde de deneyebilirsin."
       ],
       "ornek": {
         "baslik": "Örnek: Satürn ve halkaları gökte ne kadar büyük?",
@@ -204,46 +213,173 @@
     }
   ],
   "formuller": [
-    {"ad": "Yoğunluk", "ifade": "ρ = M / V", "aciklama": "ρ: ortalama yoğunluk (kg/m³), M: kütle (kg), V: hacim (m³; 1 km³ = 10⁹ m³). Satürn: 5,6832 × 10²⁶ / 8,2713 × 10²³ ≈ 687 kg/m³."},
-    {"ad": "Dönüşün savurma ivmesi", "ifade": "a = ω² × R,  ω = 2π / P", "aciklama": "a: ekvatordaki savurma ivmesi (m/s²), R: ekvator yarıçapı (m), P: dönme süresi (s). Satürn ≈ 1,62 m/s², çekimin ~%15'i; Jüpiter ≈ 2,21 m/s², ~%9'u."},
-    {"ad": "Rezonans uzaklığı (Kepler III)", "ifade": "a_parçacık = a_uydu × (T_parçacık / T_uydu)^(2/3)", "aciklama": "a: yarı büyük eksen, T: dönem. 2:1 rezonansta T oranı 1/2, çarpan ≈ 0,630. Mimas (185.537 km) için ≈ 116.900 km: Cassini Bölümü'nün iç kenarı."},
-    {"ad": "Halka yüzey yoğunluğu", "ifade": "Σ = M / [π × (R_dış² − R_iç²)]", "aciklama": "Σ: birim alana düşen kütle (kg/m²), M: halka kütlesi, R_dış ve R_iç: halkanın dış ve iç yarıçapı (m). Ana halkalar: ≈ 370 kg/m²."},
-    {"ad": "Kütle kaybından ömür", "ifade": "t = M / (dM/dt)", "aciklama": "t: ömür (s; yıla çevirmek için 3,156 × 10⁷'ye böl), M: kalan kütle (kg), dM/dt: saniyede kaybedilen kütle (kg/s). Hızın sabit kaldığını varsayar."},
-    {"ad": "Optik derinlik ve geçen ışık", "ifade": "Geçen oran = e^(−τ)", "aciklama": "τ: optik derinlik (birimsiz), e ≈ 2,718. τ = 1 iken ışığın ~%37'si geçer (~%63'ü engellenir); τ = 5 iken %1'den azı geçer."},
-    {"ad": "Görünür çap", "ifade": "θ ≈ 206.265 × D / d", "aciklama": "θ: yay saniyesi, D: çap, d: uzaklık (aynı birim). Satürn küresi en yakında ≈ 19,9″, halkalar uçtan uca ≈ 47″."}
+    {
+      "ad": "Yoğunluk",
+      "ifade": "ρ = M / V",
+      "aciklama": "ρ: ortalama yoğunluk (kg/m³), M: kütle (kg), V: hacim (m³; 1 km³ = 10⁹ m³). Satürn: 5,6832 × 10²⁶ / 8,2713 × 10²³ ≈ 687 kg/m³."
+    },
+    {
+      "ad": "Dönüşün savurma ivmesi",
+      "ifade": "a = ω² × R,  ω = 2π / P",
+      "aciklama": "a: ekvatordaki savurma ivmesi (m/s²), R: ekvator yarıçapı (m), P: dönme süresi (s). Satürn ≈ 1,62 m/s², çekimin ~%15'i; Jüpiter ≈ 2,21 m/s², ~%9'u."
+    },
+    {
+      "ad": "Rezonans uzaklığı (Kepler III)",
+      "ifade": "a_parçacık = a_uydu × (T_parçacık / T_uydu)^(2/3)",
+      "aciklama": "a: yarı büyük eksen, T: dönem. 2:1 rezonansta T oranı 1/2, çarpan ≈ 0,630. Mimas (185.537 km) için ≈ 116.900 km: Cassini Bölümü'nün iç kenarı."
+    },
+    {
+      "ad": "Halka yüzey yoğunluğu",
+      "ifade": "Σ = M / [π × (R_dış² − R_iç²)]",
+      "aciklama": "Σ: birim alana düşen kütle (kg/m²), M: halka kütlesi, R_dış ve R_iç: halkanın dış ve iç yarıçapı (m). Ana halkalar: ≈ 370 kg/m²."
+    },
+    {
+      "ad": "Kütle kaybından ömür",
+      "ifade": "t = M / (dM/dt)",
+      "aciklama": "t: ömür (s; yıla çevirmek için 3,156 × 10⁷'ye böl), M: kalan kütle (kg), dM/dt: saniyede kaybedilen kütle (kg/s). Hızın sabit kaldığını varsayar."
+    },
+    {
+      "ad": "Optik derinlik ve geçen ışık",
+      "ifade": "Geçen oran = e^(−τ)",
+      "aciklama": "τ: optik derinlik (birimsiz), e ≈ 2,718. τ = 1 iken ışığın ~%37'si geçer (~%63'ü engellenir); τ = 5 iken %1'den azı geçer."
+    },
+    {
+      "ad": "Görünür çap",
+      "ifade": "θ ≈ 206.265 × D / d",
+      "aciklama": "θ: yay saniyesi, D: çap, d: uzaklık (aynı birim). Satürn küresi en yakında ≈ 19,9″, halkalar uçtan uca ≈ 47″."
+    }
   ],
   "anahtar_sayilar": [
-    {"deger": "568,32 × 10²⁴ kg; 0,687 g/cm³; ortalama yarıçap 58.232 km", "aciklama": "Satürn'ün kütlesi, ortalama yoğunluğu (sudan az) ve yarıçapı", "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturnfact.html"},
-    {"deger": "Basıklık 0,098; çekim ekvatorda 8,96, kutupta 12,14 m/s²; eylemsizlik momenti 0,210", "aciklama": "Satürn'ün biçimi, 1 bar düzeyinde çekimi ve kütle dağılımı", "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturnfact.html"},
-    {"deger": "10 sa 33 dk 38 sn (2019); eski değer 10 sa 39 dk 22–23 sn", "aciklama": "Halka dalgalarından bulunan Satürn günü ve Voyager dönemi değeri", "kaynak_url": "https://www.jpl.nasa.gov/news/scientists-finally-know-what-time-it-is-on-saturn/"},
-    {"deger": "H₂ %96,3; He %3,25; 1 barda 134 K", "aciklama": "Satürn atmosferinin hacimce bileşimi ve sıcaklığı", "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturnfact.html"},
-    {"deger": "Çapın ~%60'ı; ~55 Dünya kütlesi (17'si buz-kaya)", "aciklama": "Halka sismolojisiyle bulunan bulanık çekirdek (Mankovich ve Fuller 2021)", "kaynak_url": "https://www.astro.caltech.edu/news/saturn-makes-waves-in-its-own-rings"},
-    {"deger": "~14.500 km kenar; ~78° K", "aciklama": "Satürn'ün kutup altıgeninin kenar uzunluğu ve enlemi", "kaynak_url": "https://en.wikipedia.org/wiki/Saturn%27s_hexagon"},
-    {"deger": "C 74.491 · B 91.975–117.570 · Cassini Bölümü 117.500–122.050 · A 122.050–136.770 km", "aciklama": "Ana halkaların Satürn merkezinden uzaklıkları", "kaynak_url": "https://pds-rings.seti.org:443/saturn/saturn_rings_table.html"},
-    {"deger": "1,54 × 10¹⁹ kg ≈ 0,41 Mimas", "aciklama": "Cassini'nin Büyük Finali'nde ölçülen halka kütlesi (Iess ve ark. 2019)", "kaynak_url": "https://www.sci.news/space/saturns-rings-age-06825.html"},
-    {"deger": "10–100 milyon yıl ↔ ~4,5 milyar yıl", "aciklama": "Halkaların yaşı için Cassini sonrası 'genç' tahmini ve 2024 'yaşlı olabilir' benzetimi", "kaynak_url": "https://www.ipgp.fr/en/news-and-agenda/news/a-new-perspective-on-the-age-of-saturns-rings"},
-    {"deger": "300 milyon yıl (yalnız halka yağmuru); <100 milyon yıl (Cassini akışıyla)", "aciklama": "Halka yağmuru ömür tahminleri (O'Donoghue 2018)", "kaynak_url": "https://science.nasa.gov/solar-system/nasa-research-reveals-saturn-is-losing-its-rings-at-worst-case-scenario-rate"},
-    {"deger": "26 Nisan – 15 Eylül 2017; 22 yörünge", "aciklama": "Cassini'nin Büyük Finali", "kaynak_url": "https://www.esa.int/Science_Exploration/Space_Science/Cassini-Huygens/Countdown_to_Cassini_s_Grand_Finale"},
-    {"deger": "23 Mart 2025 (Dünya) · 6 Mayıs 2025 (Güneş); sonraki 2038–2039", "aciklama": "Halka düzlemi geçişleri", "kaynak_url": "https://abramsplanetarium.natsci.msu.edu/_assets/files/Sky_Cal_PDFS/BobCorner/Appearance_of_Saturn_Rings_2025-2039.pdf"}
+    {
+      "deger": "568,32 × 10²⁴ kg; 0,687 g/cm³; ortalama yarıçap 58.232 km",
+      "aciklama": "Satürn'ün kütlesi, ortalama yoğunluğu (sudan az) ve yarıçapı",
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturnfact.html"
+    },
+    {
+      "deger": "Basıklık 0,098; çekim ekvatorda 8,96, kutupta 12,14 m/s²; eylemsizlik momenti 0,210",
+      "aciklama": "Satürn'ün biçimi, 1 bar düzeyinde çekimi ve kütle dağılımı",
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturnfact.html"
+    },
+    {
+      "deger": "10 sa 33 dk 38 sn (2019); eski değer 10 sa 39 dk 22–23 sn",
+      "aciklama": "Halka dalgalarından bulunan Satürn günü ve Voyager dönemi değeri",
+      "kaynak_url": "https://www.jpl.nasa.gov/news/scientists-finally-know-what-time-it-is-on-saturn/"
+    },
+    {
+      "deger": "H₂ %96,3; He %3,25; 1 barda 134 K",
+      "aciklama": "Satürn atmosferinin hacimce bileşimi ve sıcaklığı",
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturnfact.html"
+    },
+    {
+      "deger": "Çapın ~%60'ı; ~55 Dünya kütlesi (17'si buz-kaya)",
+      "aciklama": "Halka sismolojisiyle bulunan bulanık çekirdek (Mankovich ve Fuller 2021)",
+      "kaynak_url": "https://www.astro.caltech.edu/news/saturn-makes-waves-in-its-own-rings"
+    },
+    {
+      "deger": "~14.500 km kenar; ~78° K",
+      "aciklama": "Satürn'ün kutup altıgeninin kenar uzunluğu ve enlemi",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Saturn%27s_hexagon"
+    },
+    {
+      "deger": "C 74.491 · B 91.975–117.570 · Cassini Bölümü 117.500–122.050 · A 122.050–136.770 km",
+      "aciklama": "Ana halkaların Satürn merkezinden uzaklıkları",
+      "kaynak_url": "https://pds-rings.seti.org:443/saturn/saturn_rings_table.html"
+    },
+    {
+      "deger": "1,54 × 10¹⁹ kg ≈ 0,41 Mimas",
+      "aciklama": "Cassini'nin Büyük Finali'nde ölçülen halka kütlesi (Iess ve ark. 2019)",
+      "kaynak_url": "https://www.sci.news/space/saturns-rings-age-06825.html"
+    },
+    {
+      "deger": "10–100 milyon yıl ↔ ~4,5 milyar yıl",
+      "aciklama": "Halkaların yaşı için Cassini sonrası 'genç' tahmini ve 2024 'yaşlı olabilir' benzetimi",
+      "kaynak_url": "https://www.ipgp.fr/en/news-and-agenda/news/a-new-perspective-on-the-age-of-saturns-rings"
+    },
+    {
+      "deger": "300 milyon yıl (yalnız halka yağmuru); <100 milyon yıl (Cassini akışıyla)",
+      "aciklama": "Halka yağmuru ömür tahminleri (O'Donoghue 2018)",
+      "kaynak_url": "https://science.nasa.gov/solar-system/nasa-research-reveals-saturn-is-losing-its-rings-at-worst-case-scenario-rate"
+    },
+    {
+      "deger": "26 Nisan – 15 Eylül 2017; 22 yörünge",
+      "aciklama": "Cassini'nin Büyük Finali",
+      "kaynak_url": "https://www.esa.int/Science_Exploration/Space_Science/Cassini-Huygens/Countdown_to_Cassini_s_Grand_Finale"
+    },
+    {
+      "deger": "23 Mart 2025 (Dünya) · 6 Mayıs 2025 (Güneş); sonraki 2038–2039",
+      "aciklama": "Halka düzlemi geçişleri",
+      "kaynak_url": "https://abramsplanetarium.natsci.msu.edu/_assets/files/Sky_Cal_PDFS/BobCorner/Appearance_of_Saturn_Rings_2025-2039.pdf"
+    }
   ],
   "sozluk": [
-    {"terim": "Diferansiyel dönme", "tanim": "Bir gezegenin ya da yıldızın farklı enlemlerinin farklı hızlarla dönmesi; katı olmayan cisimlerde görülür."},
-    {"terim": "Helyum yağmuru", "tanim": "Dev gezegenlerin derinlerinde helyumun hidrojenden ayrılıp yoğun damlalar hâlinde aşağı düşmesi; Satürn'ün fazla ısısını açıklayan bir hipotez."},
-    {"terim": "Halka sismolojisi", "tanim": "Gezegenin iç titreşimlerinin halkalarda yarattığı dalgalardan gezegenin iç yapısını çıkarma yöntemi."},
-    {"terim": "Büyük Beyaz Leke", "tanim": "Satürn'de kabaca her Satürn yılında bir patlayan ve gezegeni çevreleyebilen dev fırtına."},
-    {"terim": "Uzaktan bağlantı", "tanim": "Bir iklim sisteminde birbirinden çok uzak bölgelerdeki olayların birbirini etkilemesi."},
-    {"terim": "Kutup altıgeni", "tanim": "Satürn'ün kuzey kutbunu ~78° enlemde çevreleyen, altı kenarlı biçimde akan jet akımı."},
-    {"terim": "Optik derinlik", "tanim": "Bir katmanın içinden geçen ışığı ne kadar söndürdüğünü gösteren sayı; 1 değerinde ışığın yaklaşık %63'ü engellenir."},
-    {"terim": "Cassini Bölümü", "tanim": "Satürn'ün B ve A halkaları arasındaki, yaklaşık 4500–4800 km genişliğindeki seyrek bölge; 1675'te Cassini buldu."},
-    {"terim": "Encke Boşluğu", "tanim": "Satürn'ün A halkasındaki yaklaşık 322 km genişliğindeki boşluk; içinde Pan uydusu dolanır."},
-    {"terim": "Yörünge rezonansı", "tanim": "İki cismin dolanma dönemlerinin 2:1 gibi basit bir oran tutması; küçük çekim etkileri birikir."},
-    {"terim": "Çoban uydu", "tanim": "Bir halkanın ya da boşluğun kenarlarını çekimiyle düzenleyen küçük uydu."},
-    {"terim": "Pervane yapısı", "tanim": "Halkanın içindeki küçük bir uydunun çevresinde bıraktığı, gemi pervanesine benzeyen iz."},
-    {"terim": "Işınsal çizgiler (spokes)", "tanim": "Satürn'ün B halkasında mevsime bağlı belirip kaybolan, tekerlek telleri gibi uzanan geçici izler; nedeni bilinmiyor."},
-    {"terim": "Mikrometeoroit", "tanim": "Toz boyutunda çok küçük göktaşı; halkalara ve hava örtüsü olmayan yüzeylere sürekli çarpar."},
-    {"terim": "Halka yağmuru", "tanim": "Elektrikle yüklenen halka tanelerinin manyetik alan çizgileri boyunca Satürn'ün atmosferine düşmesi."},
-    {"terim": "Gezegen koruması", "tanim": "Uzay araçlarının başka dünyaları Dünya mikroplarıyla kirletmesini önlemeye yönelik kurallar."},
-    {"terim": "Halka düzlemi geçişi", "tanim": "Dünya'nın ya da Güneş'in Satürn'ün halka düzleminden geçmesi; halkalar kenardan görülür ve neredeyse kaybolur."}
+    {
+      "terim": "Diferansiyel dönme",
+      "tanim": "Bir gezegenin ya da yıldızın farklı enlemlerinin farklı hızlarla dönmesi; katı olmayan cisimlerde görülür."
+    },
+    {
+      "terim": "Helyum yağmuru",
+      "tanim": "Dev gezegenlerin derinlerinde helyumun hidrojenden ayrılıp yoğun damlalar hâlinde aşağı düşmesi; Satürn'ün fazla ısısını açıklayan bir hipotez."
+    },
+    {
+      "terim": "Halka sismolojisi",
+      "tanim": "Gezegenin iç titreşimlerinin halkalarda yarattığı dalgalardan gezegenin iç yapısını çıkarma yöntemi."
+    },
+    {
+      "terim": "Büyük Beyaz Leke",
+      "tanim": "Satürn'de kabaca her Satürn yılında bir patlayan ve gezegeni çevreleyebilen dev fırtına."
+    },
+    {
+      "terim": "Uzaktan bağlantı",
+      "tanim": "Bir iklim sisteminde birbirinden çok uzak bölgelerdeki olayların birbirini etkilemesi."
+    },
+    {
+      "terim": "Kutup altıgeni",
+      "tanim": "Satürn'ün kuzey kutbunu ~78° enlemde çevreleyen, altı kenarlı biçimde akan jet akımı."
+    },
+    {
+      "terim": "Optik derinlik",
+      "tanim": "Bir katmanın içinden geçen ışığı ne kadar söndürdüğünü gösteren sayı; 1 değerinde ışığın yaklaşık %63'ü engellenir."
+    },
+    {
+      "terim": "Cassini Bölümü",
+      "tanim": "Satürn'ün B ve A halkaları arasındaki, yaklaşık 4500–4800 km genişliğindeki seyrek bölge; 1675'te Cassini buldu."
+    },
+    {
+      "terim": "Encke Boşluğu",
+      "tanim": "Satürn'ün A halkasındaki yaklaşık 322 km genişliğindeki boşluk; içinde Pan uydusu dolanır."
+    },
+    {
+      "terim": "Yörünge rezonansı",
+      "tanim": "İki cismin dolanma dönemlerinin 2:1 gibi basit bir oran tutması; küçük çekim etkileri birikir."
+    },
+    {
+      "terim": "Çoban uydu",
+      "tanim": "Bir halkanın ya da boşluğun kenarlarını çekimiyle düzenleyen küçük uydu."
+    },
+    {
+      "terim": "Pervane yapısı",
+      "tanim": "Halkanın içindeki küçük bir uydunun çevresinde bıraktığı, gemi pervanesine benzeyen iz."
+    },
+    {
+      "terim": "Işınsal çizgiler (spokes)",
+      "tanim": "Satürn'ün B halkasında mevsime bağlı belirip kaybolan, tekerlek telleri gibi uzanan geçici izler; nedeni bilinmiyor."
+    },
+    {
+      "terim": "Mikrometeoroit",
+      "tanim": "Toz boyutunda çok küçük göktaşı; halkalara ve hava örtüsü olmayan yüzeylere sürekli çarpar."
+    },
+    {
+      "terim": "Halka yağmuru",
+      "tanim": "Elektrikle yüklenen halka tanelerinin manyetik alan çizgileri boyunca Satürn'ün atmosferine düşmesi."
+    },
+    {
+      "terim": "Gezegen koruması",
+      "tanim": "Uzay araçlarının başka dünyaları Dünya mikroplarıyla kirletmesini önlemeye yönelik kurallar."
+    },
+    {
+      "terim": "Halka düzlemi geçişi",
+      "tanim": "Dünya'nın ya da Güneş'in Satürn'ün halka düzleminden geçmesi; halkalar kenardan görülür ve neredeyse kaybolur."
+    }
   ],
   "defter_notu": [
     "Satürn: 568 × 10²⁴ kg (95 Dünya), R ort 58.232 km, 0,687 g/cm³, yıl 29,45 y, eğiklik 26,73°, 1 barda 134 K.",
@@ -258,46 +394,163 @@
     "Büyük Final 26.04–15.09.2017. Halka geçişi 23.03.2025; en açık 2032. 7×50 halkayı göstermez."
   ],
   "sorular": [
-    {"soru": "Satürn'ün yoğunluğu sudan az; bu, dev bir küvette yüzeceği anlamına gelir mi?", "cevap": "Hayır. 0,687 g/cm³ bir ortalamadır: dış katmanlar çok seyrek, merkez sudan çok yoğundur ve bir gaz topu suya oturmaz, karışır. Benzetme yalnızca kütlenin hacme göre az olduğunu anlatır."},
-    {"soru": "Satürn Jüpiter'den daha yavaş döndüğü hâlde neden daha basık?", "cevap": "Çekimi zayıf olduğundan dönüşün savurması çekime oranla daha büyüktür: Satürn'de ekvatorda çekimin ~%15'i, Jüpiter'de ~%9'u. Bu yüzden Satürn'ün basıklığı 0,098, Jüpiter'inki 0,065'tir."},
-    {"soru": "Satürn'ün gününün uzunluğunu ölçmek neden yıllarca zor oldu?", "cevap": "Katı yüzeyi yok ve manyetik ekseni dönme eksenine neredeyse kusursuz hizalı (<0,06°), bu yüzden radyo sinyali dönüşü 'fener' gibi belli etmez. Voyager 10:39:23 buldu, Cassini 10:36–10:48 arası değerler; 2019'da halka dalgalarından 10 sa 33 dk 38 sn bulundu."},
-    {"soru": "Satürn'ün atmosferinde helyum neden Jüpiter'inkinden az?", "cevap": "Önde gelen açıklama helyum yağmurudur: derinlerde helyum hidrojenden ayrılıp damlalar hâlinde aşağı düşer, dış katman helyumca fakirleşir ve düşüş ısı açığa çıkarır. Bu bir hipotezdir; helyum eksikliğinin kanıt değeri sorgulanmıştır."},
-    {"soru": "Halka sismolojisi nedir ve Satürn hakkında ne buldu?", "cevap": "Gezegenin iç titreşimlerinin çekim alanını dalgalandırıp C halkasında dalgalar yaratmasından iç yapıyı çıkarma yöntemidir. 2021'de Satürn'ün çekirdeğinin dağınık, çapın ~%60'ına yayılı ve ~55 Dünya kütlesinde (17'si buz-kaya) olduğunu; 2019'da da günün 10 sa 33 dk 38 sn olduğunu gösterdi."},
-    {"soru": "Kutup altıgeninin jet akımı saatte 320 km hızla akıyorsa bir bulut altıgeni kaç günde dolaşır?", "cevap": "Çevre 6 × 14.500 = 87.000 km; 87.000 / 320 ≈ 272 saat ≈ 11 gün. NASA'nın 500 km/sa değeriyle ≈ 7 gün."},
-    {"soru": "Maxwell 1859'da halkalar hakkında ne gösterdi ve bu nasıl doğrulandı?", "cevap": "Katı, düzensiz ya da sıvı bir halkanın kararlı olamayacağını, halkaların bağımsız dolanan sayısız parçacıktan oluşması gerektiğini gösterdi. 1895'te Keeler ve Belopolsky tayfla doğruladı: Doppler kayması içteki parçacıkların dıştakilerden hızlı dolandığını (Kepler III) gösterir; katı bir tekerlekte tersi olurdu."},
-    {"soru": "Cassini Bölümü neden oradadır?", "cevap": "İç kenarındaki parçacıklar Mimas'ın her turunda iki tur atar (2:1 rezonans); Mimas'ın küçük çekişleri hep aynı noktada birikir ve malzemeyi seyreltir. Kepler hesabı: 185.537 × (1/2)^(2/3) ≈ 116.900 km, gerçek kenar 117.500 km."},
-    {"soru": "Halka kütlesi 1,54 × 10¹⁹ kg. Bu kütle ana halkalara eşit yayılsa metrekareye ne düşer?", "cevap": "Alan ≈ π × (136.770² − 74.491²) km² ≈ 4,13 × 10¹⁶ m²; 1,54 × 10¹⁹ / 4,13 × 10¹⁶ ≈ 370 kg/m², yani eritilse ~37 cm kalınlığında bir su tabakası."},
-    {"soru": "Cassini halkaları 'genç' buldu, 2024'teki bir çalışma 'yaşlı olabilir' diyor. İki görüşün gerekçesi nedir?", "cevap": "Genç görüşü: düşük kütle ve halkaların temizliği; mikrometeoroit tozu halkayı zamanla kirletmeliydi. Yaşlı görüşü (Hyodo ve ekibi, benzetim): mikrometeoroitler ~20 km/s'de buharlaşıp plazmaya döner ve manyetik alanla halkadan uzaklaştırılır; halka az kirlenir, temizlik yaşı göstermez. Tartışma açık."},
-    {"soru": "Halka yağmuru nedir ve halkaların ömür tahminleri neden bu kadar farklı?", "cevap": "Morötesi ışık ya da plazmayla yüklenen buz tanelerinin manyetik alan çizgileri boyunca Satürn'e düşmesidir. Ölçülen akış saniyede ~1 tondan 44 tona kadar değişir; ömür = kütle / akış olduğundan tahmin ~11 ile ~490 milyon yıl arasında kalır ve hızın sabit olduğu varsayılır."},
-    {"soru": "Cassini neden kasten Satürn'e daldırıldı?", "cevap": "Yakıtı azalmıştı; kontrolsüz kalan araç yaşama elverişli olabilecek Enceladus gibi bir uyduya çarpıp onu kirletebilirdi. Gezegen koruması kuralları gereği Satürn'de yakıldı; son yörüngeler de eşsiz ölçümler sağladı."},
-    {"soru": "Halka düzlemi geçişleri neden tam 14,7 yılda bir olmuyor?", "cevap": "Satürn'ün yörüngesi dışmerkezlidir (0,052); Kepler'in ikinci yasasına göre Güneş'e yakın kesimde daha hızlı gider, yörüngenin iki yarısı eşit sürmez. Güneş geçişleri 6 Mayıs 2025 ile 22 Ocak 2039 arasında ~13,7 yıl; ortalama ~15 yıl."},
-    {"soru": "Ekim 2026'da İstanbul'dan 7×50 dürbünle Satürn'e bakarsan halkaları görür müsün?", "cevap": "Hayır. Kaynaklara göre halkaları ayırmak için 20× ya da daha fazla büyütme gerekir; 10×50 bile ancak halkalar geniş açıkken oval bir görüntü verir. 2026'da halkalar yalnızca 6–9° açık. Halkalar için ~30× büyüten 70 mm'lik bir teleskop gerekir."}
+    {
+      "soru": "Satürn'ün yoğunluğu sudan az; bu, dev bir küvette yüzeceği anlamına gelir mi?",
+      "cevap": "Hayır. 0,687 g/cm³ bir ortalamadır: dış katmanlar çok seyrek, merkez sudan çok yoğundur ve bir gaz topu suya oturmaz, karışır. Benzetme yalnızca kütlenin hacme göre az olduğunu anlatır."
+    },
+    {
+      "soru": "Satürn Jüpiter'den daha yavaş döndüğü hâlde neden daha basık?",
+      "cevap": "Çekimi zayıf olduğundan dönüşün savurması çekime oranla daha büyüktür: Satürn'de ekvatorda çekimin ~%15'i, Jüpiter'de ~%9'u. Bu yüzden Satürn'ün basıklığı 0,098, Jüpiter'inki 0,065'tir."
+    },
+    {
+      "soru": "Satürn'ün gününün uzunluğunu ölçmek neden yıllarca zor oldu?",
+      "cevap": "Katı yüzeyi yok ve manyetik ekseni dönme eksenine neredeyse kusursuz hizalı (<0,06°), bu yüzden radyo sinyali dönüşü 'fener' gibi belli etmez. Voyager 10:39:23 buldu, Cassini 10:36–10:48 arası değerler; 2019'da halka dalgalarından 10 sa 33 dk 38 sn bulundu."
+    },
+    {
+      "soru": "Satürn'ün atmosferinde helyum neden Jüpiter'inkinden az?",
+      "cevap": "Önde gelen açıklama helyum yağmurudur: derinlerde helyum hidrojenden ayrılıp damlalar hâlinde aşağı düşer, dış katman helyumca fakirleşir ve düşüş ısı açığa çıkarır. Bu bir hipotezdir; helyum eksikliğinin kanıt değeri sorgulanmıştır."
+    },
+    {
+      "soru": "Halka sismolojisi nedir ve Satürn hakkında ne buldu?",
+      "cevap": "Gezegenin iç titreşimlerinin çekim alanını dalgalandırıp C halkasında dalgalar yaratmasından iç yapıyı çıkarma yöntemidir. 2021'de Satürn'ün çekirdeğinin dağınık, çapın ~%60'ına yayılı ve ~55 Dünya kütlesinde (17'si buz-kaya) olduğunu; 2019'da da günün 10 sa 33 dk 38 sn olduğunu gösterdi."
+    },
+    {
+      "soru": "Kutup altıgeninin jet akımı saatte 320 km hızla akıyorsa bir bulut altıgeni kaç günde dolaşır?",
+      "cevap": "Çevre 6 × 14.500 = 87.000 km; 87.000 / 320 ≈ 272 saat ≈ 11 gün. NASA'nın 500 km/sa değeriyle ≈ 7 gün."
+    },
+    {
+      "soru": "Maxwell 1859'da halkalar hakkında ne gösterdi ve bu nasıl doğrulandı?",
+      "cevap": "Katı, düzensiz ya da sıvı bir halkanın kararlı olamayacağını, halkaların bağımsız dolanan sayısız parçacıktan oluşması gerektiğini gösterdi. 1895'te Keeler ve Belopolsky tayfla doğruladı: Doppler kayması içteki parçacıkların dıştakilerden hızlı dolandığını (Kepler III) gösterir; katı bir tekerlekte tersi olurdu."
+    },
+    {
+      "soru": "Cassini Bölümü neden oradadır?",
+      "cevap": "İç kenarındaki parçacıklar Mimas'ın her turunda iki tur atar (2:1 rezonans); Mimas'ın küçük çekişleri hep aynı noktada birikir ve malzemeyi seyreltir. Kepler hesabı: 185.537 × (1/2)^(2/3) ≈ 116.900 km, gerçek kenar 117.500 km."
+    },
+    {
+      "soru": "Halka kütlesi 1,54 × 10¹⁹ kg. Bu kütle ana halkalara eşit yayılsa metrekareye ne düşer?",
+      "cevap": "Alan ≈ π × (136.770² − 74.491²) km² ≈ 4,13 × 10¹⁶ m²; 1,54 × 10¹⁹ / 4,13 × 10¹⁶ ≈ 370 kg/m², yani eritilse ~37 cm kalınlığında bir su tabakası."
+    },
+    {
+      "soru": "Cassini halkaları 'genç' buldu, 2024'teki bir çalışma 'yaşlı olabilir' diyor. İki görüşün gerekçesi nedir?",
+      "cevap": "Genç görüşü: düşük kütle ve halkaların temizliği; mikrometeoroit tozu halkayı zamanla kirletmeliydi. Yaşlı görüşü (Hyodo ve ekibi, benzetim): mikrometeoroitler ~20 km/s'de buharlaşıp plazmaya döner ve manyetik alanla halkadan uzaklaştırılır; halka az kirlenir, temizlik yaşı göstermez. Tartışma açık."
+    },
+    {
+      "soru": "Halka yağmuru nedir ve halkaların ömür tahminleri neden bu kadar farklı?",
+      "cevap": "Morötesi ışık ya da plazmayla yüklenen buz tanelerinin manyetik alan çizgileri boyunca Satürn'e düşmesidir. Ölçülen akış saniyede ~1 tondan 44 tona kadar değişir; ömür = kütle / akış olduğundan tahmin ~11 ile ~490 milyon yıl arasında kalır ve hızın sabit olduğu varsayılır."
+    },
+    {
+      "soru": "Cassini neden kasten Satürn'e daldırıldı?",
+      "cevap": "Yakıtı azalmıştı; kontrolsüz kalan araç yaşama elverişli olabilecek Enceladus gibi bir uyduya çarpıp onu kirletebilirdi. Gezegen koruması kuralları gereği Satürn'de yakıldı; son yörüngeler de eşsiz ölçümler sağladı."
+    },
+    {
+      "soru": "Halka düzlemi geçişleri neden tam 14,7 yılda bir olmuyor?",
+      "cevap": "Satürn'ün yörüngesi dışmerkezlidir (0,052); Kepler'in ikinci yasasına göre Güneş'e yakın kesimde daha hızlı gider, yörüngenin iki yarısı eşit sürmez. Güneş geçişleri 6 Mayıs 2025 ile 22 Ocak 2039 arasında ~13,7 yıl; ortalama ~15 yıl."
+    },
+    {
+      "soru": "Ekim 2026'da İstanbul'dan 7×50 dürbünle Satürn'e bakarsan halkaları görür müsün?",
+      "cevap": "Hayır. Kaynaklara göre halkaları ayırmak için 20× ya da daha fazla büyütme gerekir; 10×50 bile ancak halkalar geniş açıkken oval bir görüntü verir. 2026'da halkalar yalnızca 6–9° açık. Halkalar için ~30× büyüten 70 mm'lik bir teleskop gerekir."
+    }
   ],
   "kaynaklar": [
-    {"ad": "NASA NSSDCA, Saturn Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturnfact.html"},
-    {"ad": "NASA PDS Ring-Moon Systems Node, Vital Statistics for Saturn's Rings", "url": "https://pds-rings.seti.org:443/saturn/saturn_rings_table.html"},
-    {"ad": "NASA PDS Ring-Moon Systems Node, Saturn's Rings and Inner Satellites", "url": "https://pds-rings.seti.org/saturn/saturn_tables.html"},
-    {"ad": "Britannica, Saturn: The interior", "url": "https://www.britannica.com/place/Saturn-planet/The-interior"},
-    {"ad": "Caltech, Saturn Makes Waves in Its Own Rings (2021)", "url": "https://www.astro.caltech.edu/news/saturn-makes-waves-in-its-own-rings"},
-    {"ad": "NASA JPL, Scientists Finally Know What Time It Is on Saturn (2019)", "url": "https://www.jpl.nasa.gov/news/scientists-finally-know-what-time-it-is-on-saturn/"},
-    {"ad": "NASA JPL, Saturn Surprises as Cassini Continues its Grand Finale (2017)", "url": "https://www.jpl.nasa.gov/news/saturn-surprises-as-cassini-continues-its-grand-finale/"},
-    {"ad": "ESA, Countdown to Cassini's Grand Finale", "url": "https://www.esa.int/Science_Exploration/Space_Science/Cassini-Huygens/Countdown_to_Cassini_s_Grand_Finale"},
-    {"ad": "Sci.News, Saturn's Rings are 10 to 100 Million Years Old (Iess ve ark. 2019)", "url": "https://www.sci.news/space/saturns-rings-age-06825.html"},
-    {"ad": "Sci.News, Cassini Team Delivers New Findings on Saturn's Ring System (2019)", "url": "https://www.sci.news/space/saturns-ring-system-07295.html"},
-    {"ad": "IPGP, A new perspective on the age of Saturn's rings (2025)", "url": "https://www.ipgp.fr/en/news-and-agenda/news/a-new-perspective-on-the-age-of-saturns-rings"},
-    {"ad": "Sci.News, Saturn's Rings May Be as Old as the Gas Giant Itself (2024)", "url": "https://www.sci.news/space/saturns-rings-13514.html"},
-    {"ad": "NASA, NASA Research Reveals Saturn is Losing Its Rings at Worst-Case-Scenario Rate (2018)", "url": "https://science.nasa.gov/solar-system/nasa-research-reveals-saturn-is-losing-its-rings-at-worst-case-scenario-rate"},
-    {"ad": "CU Boulder, In its final days, Cassini bathed in 'ring rain' (2018)", "url": "https://www.colorado.edu/today/2018/10/04/its-final-days-cassini-bathed-ring-rain"},
-    {"ad": "Wikipedia, Rings of Saturn", "url": "https://en.wikipedia.org/wiki/Rings_of_Saturn"},
-    {"ad": "Wikipedia, Saturn's hexagon", "url": "https://en.wikipedia.org/wiki/Saturn%27s_hexagon"},
-    {"ad": "NASA Cassini, Hexagon in Motion", "url": "https://science.nasa.gov/mission/cassini/science/saturn/hexagon-in-motion"},
-    {"ad": "ESA, Saturn's greatest storm", "url": "https://esa.int/About_Us/ESAC/Saturn_s_greatest_storm"},
-    {"ad": "Freedman ve ark., Universe (Macmillan), bölüm 12.5: bulut katmanları", "url": "https://digfir-published.macmillanusa.com/universe10e/universe10e_ch12_5.html"},
-    {"ad": "Sky at Night Magazine, Saturn ring plane crossing", "url": "https://www.skyatnightmagazine.com/space-science/saturn-ring-plane-crossing"},
-    {"ad": "British Astronomical Association, Saturn 2025 Apparition Notes", "url": "https://britastro.org/?p=629902"},
-    {"ad": "Abrams Planetarium, Appearance of Saturn's Rings 2025–2039", "url": "https://abramsplanetarium.natsci.msu.edu/_assets/files/Sky_Cal_PDFS/BobCorner/Appearance_of_Saturn_Rings_2025-2039.pdf"},
-    {"ad": "Space.com, What to expect from the planets in 2026", "url": "https://space.com/stargazing/what-to-expect-from-the-planets-in-2026-key-dates-and-sky-events"},
-    {"ad": "High Point Scientific, How To Observe Saturn", "url": "https://www.highpointscientific.com/astronomy-hub/post/how-to-observe-saturn"},
-    {"ad": "CNES, Saturn", "url": "https://cubesat.cnes.fr/en/saturn"}
+    {
+      "ad": "NASA NSSDCA, Saturn Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturnfact.html"
+    },
+    {
+      "ad": "NASA PDS Ring-Moon Systems Node, Vital Statistics for Saturn's Rings",
+      "url": "https://pds-rings.seti.org:443/saturn/saturn_rings_table.html"
+    },
+    {
+      "ad": "NASA PDS Ring-Moon Systems Node, Saturn's Rings and Inner Satellites",
+      "url": "https://pds-rings.seti.org/saturn/saturn_tables.html"
+    },
+    {
+      "ad": "Britannica, Saturn: The interior",
+      "url": "https://www.britannica.com/place/Saturn-planet/The-interior"
+    },
+    {
+      "ad": "Caltech, Saturn Makes Waves in Its Own Rings (2021)",
+      "url": "https://www.astro.caltech.edu/news/saturn-makes-waves-in-its-own-rings"
+    },
+    {
+      "ad": "NASA JPL, Scientists Finally Know What Time It Is on Saturn (2019)",
+      "url": "https://www.jpl.nasa.gov/news/scientists-finally-know-what-time-it-is-on-saturn/"
+    },
+    {
+      "ad": "NASA JPL, Saturn Surprises as Cassini Continues its Grand Finale (2017)",
+      "url": "https://www.jpl.nasa.gov/news/saturn-surprises-as-cassini-continues-its-grand-finale/"
+    },
+    {
+      "ad": "ESA, Countdown to Cassini's Grand Finale",
+      "url": "https://www.esa.int/Science_Exploration/Space_Science/Cassini-Huygens/Countdown_to_Cassini_s_Grand_Finale"
+    },
+    {
+      "ad": "Sci.News, Saturn's Rings are 10 to 100 Million Years Old (Iess ve ark. 2019)",
+      "url": "https://www.sci.news/space/saturns-rings-age-06825.html"
+    },
+    {
+      "ad": "Sci.News, Cassini Team Delivers New Findings on Saturn's Ring System (2019)",
+      "url": "https://www.sci.news/space/saturns-ring-system-07295.html"
+    },
+    {
+      "ad": "IPGP, A new perspective on the age of Saturn's rings (2025)",
+      "url": "https://www.ipgp.fr/en/news-and-agenda/news/a-new-perspective-on-the-age-of-saturns-rings"
+    },
+    {
+      "ad": "Sci.News, Saturn's Rings May Be as Old as the Gas Giant Itself (2024)",
+      "url": "https://www.sci.news/space/saturns-rings-13514.html"
+    },
+    {
+      "ad": "NASA, NASA Research Reveals Saturn is Losing Its Rings at Worst-Case-Scenario Rate (2018)",
+      "url": "https://science.nasa.gov/solar-system/nasa-research-reveals-saturn-is-losing-its-rings-at-worst-case-scenario-rate"
+    },
+    {
+      "ad": "CU Boulder, In its final days, Cassini bathed in 'ring rain' (2018)",
+      "url": "https://www.colorado.edu/today/2018/10/04/its-final-days-cassini-bathed-ring-rain"
+    },
+    {
+      "ad": "Wikipedia, Rings of Saturn",
+      "url": "https://en.wikipedia.org/wiki/Rings_of_Saturn"
+    },
+    {
+      "ad": "Wikipedia, Saturn's hexagon",
+      "url": "https://en.wikipedia.org/wiki/Saturn%27s_hexagon"
+    },
+    {
+      "ad": "NASA Cassini, Hexagon in Motion",
+      "url": "https://science.nasa.gov/mission/cassini/science/saturn/hexagon-in-motion"
+    },
+    {
+      "ad": "ESA, Saturn's greatest storm",
+      "url": "https://esa.int/About_Us/ESAC/Saturn_s_greatest_storm"
+    },
+    {
+      "ad": "Freedman ve ark., Universe (Macmillan), bölüm 12.5: bulut katmanları",
+      "url": "https://digfir-published.macmillanusa.com/universe10e/universe10e_ch12_5.html"
+    },
+    {
+      "ad": "Sky at Night Magazine, Saturn ring plane crossing",
+      "url": "https://www.skyatnightmagazine.com/space-science/saturn-ring-plane-crossing"
+    },
+    {
+      "ad": "British Astronomical Association, Saturn 2025 Apparition Notes",
+      "url": "https://britastro.org/?p=629902"
+    },
+    {
+      "ad": "Abrams Planetarium, Appearance of Saturn's Rings 2025–2039",
+      "url": "https://abramsplanetarium.natsci.msu.edu/_assets/files/Sky_Cal_PDFS/BobCorner/Appearance_of_Saturn_Rings_2025-2039.pdf"
+    },
+    {
+      "ad": "Space.com, What to expect from the planets in 2026",
+      "url": "https://space.com/stargazing/what-to-expect-from-the-planets-in-2026-key-dates-and-sky-events"
+    },
+    {
+      "ad": "High Point Scientific, How To Observe Saturn",
+      "url": "https://www.highpointscientific.com/astronomy-hub/post/how-to-observe-saturn"
+    },
+    {
+      "ad": "CNES, Saturn",
+      "url": "https://cubesat.cnes.fr/en/saturn"
+    }
   ]
 }

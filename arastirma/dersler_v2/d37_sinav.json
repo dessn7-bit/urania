@@ -1,0 +1,58 @@
+[
+  {
+    "id": "d37-1",
+    "soru": "Juno'nun çekim ölçümleri Jüpiter'in çekirdeği hakkında ne gösterdi?",
+    "secenekler": [
+      "Merkezde Dünya büyüklüğünde, keskin sınırlı bir kaya-buz topu olduğunu kesinleştirdi",
+      "Ölçümlere uyan birçok modelde ağır elementlerin merkezden dışa seyrelerek yarıçapın belki yarısına kadar yayıldığını",
+      "Jüpiter'in merkezinde hiç ağır element bulunmadığını",
+      "Çekirdeğin tamamen metalik helyumdan oluştuğunu"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre Juno'nun ölçtüğü çekim alanına uyan modellerin birçoğunda sıkı bir çekirdek yok; ağır elementler seyrelmiş bir çekirdek bölgesine, Helled ve meslektaşlarına göre belki yarıçapın yarısına kadar yayılmış (Liu ve ekibine göre 10 ile birkaç on Dünya kütlesi). İçeride küçük, sıkı bir çekirdek kesin dışlanmadı; bu yapının nasıl oluştuğu tartışmalı.",
+    "ders": "d37",
+    "bolum": 3
+  },
+  {
+    "id": "d37-2",
+    "soru": "2024'te yayımlanan çalışmaya göre Büyük Kırmızı Leke ile Cassini'nin 1665'te gördüğü 'Kalıcı Leke' arasındaki ilişki nedir?",
+    "secenekler": [
+      "İkisi aynı fırtınadır; leke 360 yıldır kesintisiz izleniyor",
+      "Kalıcı Leke 1713'ten sonra kayboldu; bugünkü leke 1831'de kaydedildi, yani 190 yaşından büyük ama Cassini'nin lekesi değil",
+      "Kalıcı Leke Satürn'deydi, Jüpiter'de değil",
+      "Büyük Kırmızı Leke 1979'da Voyager'lar geçerken oluştu"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre Sánchez-Lavega ve ekibi (Geophysical Research Letters, Haziran 2024) bugünkü lekenin Kalıcı Leke olmasını 'pek olası' bulmadı: Kalıcı Leke 1713'e kadar izlenip kayboldu, aynı enlemde yeni bir leke 1831'de kaydedildi. Leke 1879'da ~39.000 km iken bugün ~14.000 km'dir.",
+    "ders": "d37",
+    "bolum": 7
+  },
+  {
+    "id": "d37-3",
+    "soru": "Shoemaker-Levy 9 kuyruklu yıldızı neden 21 parçaya bölündü?",
+    "secenekler": [
+      "Güneş'e çok yaklaşıp buzları kaynadığı için",
+      "Bir asteroitle çarpıştığı için",
+      "Temmuz 1992'de Jüpiter'e Roche sınırının içinden geçtiği ve gelgit kuvveti onu bir arada tutan kendi çekiminden büyük olduğu için",
+      "Jüpiter'in manyetik alanı onu elektrikle parçaladığı için"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre kuyruklu yıldız 8 Temmuz 1992'de Jüpiter'in bulut tepelerinin yaklaşık 22.100 km üstünden geçti. Yakın yanının uzak yanından çok daha güçlü çekilmesi, yani gelgit kuvveti, zayıf kendi çekimini yendi; buna Roche sınırı denir. Parçalar 16–22 Temmuz 1994'te yaklaşık 61 km/s hızla çarptı.",
+    "ders": "d37",
+    "bolum": 11
+  },
+  {
+    "id": "d37-4",
+    "soru": "Jüpiter'in manyetik alanı için verilen '20.000 kat' sayısı neyi anlatır?",
+    "secenekler": [
+      "Bulut tepelerinde ölçülen alan şiddetinin Dünya yüzeyindekinin 20.000 katı olduğunu",
+      "Manyetik momentin, yani alan şiddeti ile yarıçapın küpünün çarpımıyla orantılı toplam büyüklüğün Dünya'nınkinin ~20.000 katı olduğunu",
+      "Manyetosferin Dünya'nınkinden 20.000 kat uzun kuyruğu olduğunu",
+      "Kutup ışıklarının Dünya'dakilerden 20.000 kat parlak olduğunu"
+    ],
+    "dogru": 1,
+    "aciklama": "Derste NASA'nın dipol değerleriyle hesaplandı: (4,30 / 0,306) × (71.492 / 6378)³ ≈ 19.800. Bulut tepelerindeki alan şiddeti ise 4–13 gauss, yani Dünya'nın ekvatorundaki ~0,31 gauss'un onlarca katıdır; farkı Jüpiter'in büyüklüğü yaratır.",
+    "ders": "d37",
+    "bolum": 8
+  }
+]

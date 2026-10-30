@@ -1,0 +1,570 @@
+{
+  "id": "d36",
+  "unite": "gunes_sistemi",
+  "yeni": true,
+  "baslik": "Mars: Pas Rengi Çöl, Kayıp Bir Okyanus",
+  "ozet": "Mars, içine sismometreyle kulak verdiğimiz ilk başka gezegendir. Bu derste InSight'ın Mars depremleriyle çizilen iç yapıyı ve üç kez yeniden ölçülen çekirdeği, iki yüzlü kabuğu, Olympus Mons ile Valles Marineris'i, kuru buzlu kutup başlıklarını, gezegeni saran toz fırtınalarını, suyun ve havanın nereye gittiğini, Phobos ile Deimos'u, Mars'a yolculuğun hesabını ve 19 Şubat 2027 karşı konumunda İstanbul'dan neler göreceğini öğreneceksin.",
+  "on_bilgi": [
+    "d3",
+    "d9",
+    "d35"
+  ],
+  "bolumler": [
+    {
+      "baslik": "Kızıl gezegenin kimlik kartı",
+      "paragraflar": [
+        "d9'da Mars'ı genel hatlarıyla tanıdın: Dünya'nın yarısı çapında, havası ince, rengi pastan gelen bir gezegen. d18'de de geçmişteki su ve yaşam arayışını okudun. Bu ders o ikisinin arasındaki boşluğu dolduracak: Mars'ın içi, kabuğu, havası, kutupları, uyduları ve oraya nasıl gidildiği. Sayıları önce NASA NSSDCA'nın Mars sayfasından toplayalım. Kütle 0,64169 × 10²⁴ kg, yani Dünya'nın %10,7'si. Ortalama yarıçap 3389,5 km; ekvatorda 3396,2, kutuplarda 3376,2 km. Mars'ın basıklığı 0,00589'dur; Dünya'nın 0,00335'inden fazladır, yani Mars Dünya'dan daha basık bir küredir. Ortalama yoğunluk 3934 kg/m³, yüzey çekimi ortalama 3,73 m/s², kurtulma hızı 5,03 km/s.",
+        "Bir Mars günü Dünya'nınkine şaşırtıcı ölçüde yakındır. NASA'nın tablosuna göre Mars yıldızlara göre 24,6229 saatte, yani 24 saat 37 dakikada bir döner; Güneş'e göre bir gün, yani iki öğle arası ise 24,6597 saat, yaklaşık 24 saat 39,6 dakikadır. Gezegen bilimciler bu güneş gününe sol der. ESA'nın sayfası solu 24 saat 37 dakika diye yazar; bu aslında yıldız günüdür ve aradaki iki dakikalık fark d1'de gördüğün yıldız günü ile güneş günü farkının Mars'taki karşılığıdır. Bir Mars yılı 686,98 Dünya günü sürer; ESA bunu 669 sol diye verir.",
+        "Mars'ın içinin ne kadar katmanlı olduğunu söyleyen ilk sayı, d35'te tanıdığın eylemsizlik momenti çarpanıdır. NASA'nın tablosu Mars için 0,366, Wikipedia 0,3644 verir. Dünya'nınki 0,3307, Merkür'ünkü 0,346'dır. Mars'ın değeri 0,4'e daha yakındır; yani kütlesi merkezde Dünya'dakinden ve Merkür'dekinden daha az toplanmıştır. Bu, Mars'ın çekirdeğinin oransal olarak daha küçük ya da daha hafif olduğunu düşündürür. Bu ipucunu birkaç bölüm sonra InSight'ın doğrudan ölçümleriyle sınayacağız. Bir uyarı: Mars'ın yüzey çekimi için d9 JPL'nin ekvator değeri olan 3,71 m/s²'yi kullanmıştı; NASA NSSDCA ortalama için 3,73, ekvator için 3,69 verir. Fark, gezegenin basıklığından ve dönüşünden gelir; hepsi “yaklaşık 3,7 m/s²” demektir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Bir Mars yılında kaç sol var?",
+        "metin": "Mars yılı 686,98 Dünya günü = 686,98 × 24 = 16.487,5 saat. Bir sol 24,6597 saat (NASA). Sol sayısı = 16.487,5 / 24,6597 ≈ 668,6. ESA bunu yuvarlayarak 669 sol verir. Sağlama: 669 × 24,6597 ≈ 16.497 saat ≈ 687,4 gün; bir sol fazla sayınca biraz aşıyor. Sonuç: bir Mars yılı yaklaşık 668,6 soldür; Mars'taki bir gezgin takvimini Dünya günüyle değil solla tutar."
+      },
+      "akilda": "Mars: Dünya kütlesinin %10,7'si, ortalama yarıçap 3389,5 km, yoğunluk 3934 kg/m³, g ≈ 3,7 m/s². Sol (güneş günü) 24 sa 39,6 dk; yıl 686,98 gün ≈ 669 sol. Eylemsizlik momenti ~0,366: kütle merkezde Dünya'dakinden az toplanmış."
+    },
+    {
+      "baslik": "Mevsimler ve sallanan bir eksen",
+      "paragraflar": [
+        "Mars'ın ekseni yörüngesine 25,19° eğiktir; Dünya'nın 23,44°'sine çok yakın. Bu yüzden Mars'ta da Dünya'daki gibi mevsimler vardır (d1): yazın bir yarımküre Güneş'e dönük olur, kışın uzaklaşır. Ama Mars yılı neredeyse iki Dünya yılı olduğu için her mevsim aşağı yukarı iki kat uzun sürer. Bir fark daha var: Mars'ın yörüngesi Dünya'nınkinden çok daha basıktır. Dış merkezlik 0,0935, Dünya'da 0,0167. NASA'ya göre Mars'ın Güneş'e uzaklığı 206,65 ile 249,26 milyon km arasında değişir. Aşağıdaki örnekte bu farkın güneş ışığını yaklaşık %45 değiştirdiğini göreceksin.",
+        "Bu iki etki üst üste biner. Kepler'in ikinci yasasına göre (d3) gezegen Güneş'e yakınken hızlı, uzakken yavaş gider; bu yüzden Mars'ta mevsimlerin uzunlukları birbirine eşit değildir. Güneş'e en yakın geçişin denk geldiği yarımkürede yaz kısa ama daha sıcak, öbür yarımkürede uzun ama daha serin olur. ESA'ya göre sıcaklık kış kutbunda −133 °C'ye iner, yaz ortasında +27 °C'ye çıkar. NASA'ya göre Viking 1 iniş aracının bulunduğu yerde bir gün içinde sıcaklık −89 ile −31 °C arasında gidip geldi (d9). Gezegen Güneş'e yakınken atmosferden kaçış da artar: Wikipedia'nın MAVEN maddesine göre hidrojenin uzaya kaçışı Güneş'e en yakın noktada en yüksektir, en uzak noktada bunun onda biri kadardır.",
+        "Asıl şaşırtıcı olan ise eksenin kendisidir. Dünya'nın eğikliği binlerce yıl içinde yalnızca küçük bir aralıkta oynar. Jacques Laskar ve Philippe Robutel 1993'te Nature'da yayımladıkları çalışmada Mars'ın eğikliğinin hâlâ geniş bir kaotik bölgede olduğunu, 0° ile 60° arasında değişebildiğini gösterdi. Kaotik, burada tamamen rastgele değil, uzun vadede önceden kestirilemeyecek kadar küçük farklara duyarlı demektir. Aynı çalışma, Dünya'nın eğikliğini büyük Ay'ın kararlı tutmuş olabileceğini önerir; bunu bir olasılık olarak sunar. Mars'ın iki uydusu ise birkaç on kilometrelik küçük cisimlerdir. Eğiklik büyüdükçe kutuplar daha çok güneş alır ve kutuplardaki buzun bir kısmı atmosfere geçebilir; bu yüzden Mars'ın iklimi geçmişte büyük salınımlar geçirmiş olmalıdır. Bunun izlerini kutup başlıkları bölümünde göreceksin."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Mars günberide günötesine göre ne kadar fazla ışık alır?",
+        "metin": "Işık uzaklığın karesiyle ters orantılıdır (d35). Günöte 249,261, günberi 206,650 milyon km (NASA). Oran (249,261 / 206,650)² = 1,2062² ≈ 1,455. Ortalama değer NASA'ya göre 586,2 W/m²; Dünya'nın 1361 W/m²'sinin %43'ü. Kıyas: Dünya için (152,100 / 147,095)² = 1,034² ≈ 1,069. Sonuç: Mars günberide günötesine göre yaklaşık %45, Dünya ise yalnızca yaklaşık %7 fazla ışık alır; Mars'ta yörüngenin basıklığı mevsimleri belirgin biçimde etkiler."
+      },
+      "akilda": "Eğiklik 25,19° → Dünya'ya benzer mevsimler, ama iki kat uzun ve basık yörünge (e = 0,0935) yüzünden eşitsiz; ışık günberide %45 fazla. Sıcaklık −133 ile +27 °C arası. Eğiklik kaotik biçimde 0–60° arasında değişebilir (Laskar ve Robutel, 1993)."
+    },
+    {
+      "baslik": "Mars'ı dinlemek: InSight ve Mars depremleri",
+      "paragraflar": [
+        "Bir gezegenin içini görmenin en iyi yolu onu dinlemektir. Deprem dalgaları gezegenin içinden geçerken hızları geçtikleri malzemeye göre değişir; katmanların sınırında yansır ve kırılırlar. Yüzeydeki bir sismometre, yani yerin titreşimlerini kaydeden alet, bu dalgaların ne zaman ve hangi sırayla geldiğini ölçer. Dünya'nın çekirdeği, mantosu ve kabuğu böyle bulundu; ayrıntısını d44'te okuyabilirsin. Mars'ta bunu yapan ilk araç NASA'nın InSight'ıdır.",
+        "InSight 26 Kasım 2018'de Mars'ın Elysium Planitia ovasına indi. Dört yıla yakın çalıştı ve 1300'den fazla Mars depremi kaydetti. Mars depremi, gezegenin kabuğundaki gerilimlerin boşalmasıyla ya da göktaşı çarpmalarıyla oluşan titreşimdir. Görev, güneş panellerine biriken tozun gücü kritik düzeye indirmesiyle sona erdi: araçla son temas 18 Aralık 2022'de kuruldu, NASA görevin bittiğini 21 Aralık 2022'de açıkladı. Sismometre kapandı, ama veriler bugün de inceleniyor ve aşağıda göreceğin gibi her birkaç yılda yeni bir sonuç çıkıyor.",
+        "Kabuk hakkında en net sonuçlardan biri, Mayıs 2022'de kaydedilen 4,7 büyüklüğündeki en güçlü Mars depreminden geldi. ETH Zürih'ten Doyeon Kim'in yönettiği ve 2023'te Geophysical Research Letters'ta yayımlanan çalışma, bu depremin yüzey boyunca yayılan dalgalarını gezegenin çekim ve yükseklik haritalarıyla birleştirdi. Sonuca göre Mars kabuğunun ortalama kalınlığı 42–56 km'dir; en kalın yeri yaklaşık 90 km ile Tharsis volkanik bölgesi, en ince yeri yaklaşık 20 km ile Hellas havzasıdır. Universe Today'in bu çalışmayı aktaran haberinin başlığı durumu özetler: Mars'ın kabuğu kalındır.",
+        "Aynı çalışmanın bir sonucu daha var: Mars'ın iç ısısının büyük kısmı uranyum, toryum ve potasyum gibi radyoaktif elementlerin bozunmasından gelir ve bu elementlerin %50–70'i kabukta toplanmıştır. Bu dağılım, gezegenin iç ısısının milyarlarca yıl içinde nasıl değiştiğini anlamak için önemli bir girdidir. Mars'ın manyetik alanını kaybetmesine MAVEN bölümünde döneceğiz."
+      ],
+      "akilda": "InSight (26 Kasım 2018–21 Aralık 2022) 1300'den fazla Mars depremi kaydetti ve tozla kapanan panelleri yüzünden sustu. Mayıs 2022'deki 4,7'lik deprem: kabuk ortalama 42–56 km, Tharsis'te ~90, Hellas'ta ~20 km; ısı üreten elementlerin %50–70'i kabukta."
+    },
+    {
+      "baslik": "Mars'ın çekirdeği: üç kez yeniden çizilen resim",
+      "paragraflar": [
+        "Mars'ın çekirdeği, bilimin nasıl ilerlediğini gösteren iyi bir örnektir, çünkü resmi birkaç yılda üç kez değişti. NASA NSSDCA'nın tablosunda çekirdek yarıçapı hâlâ 1830 km diye yazar; ama aynı sayfaya düşülmüş bir not, son sonuçların 1650–1675 km'lik daha küçük bir çekirdek önerdiğini söyler. İlk InSight sonuçları 1800 km'yi aşan, buna karşın görece hafif bir çekirdek veriyordu. Bu kadar hafif bir çekirdek, içinde çok miktarda hafif element bulunmasını gerektiriyordu.",
+        "İkinci resim Ekim 2023'te geldi. Paris Yer Fiziği Enstitüsü'nden Henri Samuel'in yönettiği ve Nature'da yayımlanan çalışma, 18 Eylül 2021'de gezegenin uzak yüzüne düşen bir göktaşının yarattığı dalgaları kullandı. Bu dalgaların bir kısmı çekirdeğin kenarını yalayarak kırınıma uğramış, yani sınırın çevresinden bükülerek yayılmıştı; varış süreleri sınırın yerini daha iyi gösterdi. Ekip ayrıca Phobos'un yörüngesindeki küçük değişimleri de hesaba kattı. Sonuç: metal çekirdeğin yarıçapı 1650 ± 20 km ve onun hemen üstünde, mantonun dibinde birkaç on kilometrelik erimiş bir silikat katmanı var. Önceki yorumlar bu sıvı kaya katmanını çekirdeğin parçası sanmıştı. Yeni çekirdek daha küçük ve yoğunluğu yaklaşık 6,5 g/cm³ ile eski tahminlerden %5–8 daha yüksek; dolayısıyla daha az hafif element gerektiriyor.",
+        "Üçüncü resim Eylül 2025'te Nature'da yayımlandı. Çin Bilim ve Teknoloji Üniversitesi'nden Sun Daoyuan ve Mao Zhu'nun grupları, uluslararası ortaklarla, InSight'ın kaydettiği binden fazla depremden sinyali en temiz 23 tanesini seçti. Çekirdeğin içinden geçip geri dönen dalgaların izini sürerek yaklaşık 600 km yarıçaplı katı bir iç çekirdek bildirdiler. Dalga hızı sıvı dış çekirdekten katı iç çekirdeğe geçerken yaklaşık %30 sıçrıyor. Ekibin modellerine göre çekirdek saf demir-nikel değil: %12–16 kükürt, %6,7–9 oksijen ve %3,8'den az karbon içeriyor olabilir.",
+        "Bu son sonucu nasıl okumalısın? Dikkatle. Kaynağın kendisi de Mars sinyallerinin zayıf ve gürültülü olduğunu, yalnızca 23 olayın kullanılabildiğini ve yarıçap ile bileşimin model tahminleri olduğunu belirtir. Yani “Mars'ın katı iç çekirdeği var” cümlesi bugün güçlü bir iddia, ama 2023'teki revizyon gibi başka ekiplerin bağımsız çözümlemeleriyle sınanması gereken bir iddiadır. InSight artık kapalı olduğu için yeni veri de gelmeyecek; yeni sonuçlar aynı kayıtların daha iyi çözümlenmesinden çıkacak. Bilim bazen yeni ölçümle, bazen eski ölçüme yeniden bakmakla ilerler."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Çekirdek Mars'ın hacminin ne kadarı?",
+        "metin": "Hacim oranı yarıçap oranının küpüdür. Yeni değer: 1650 / 3389,5 ≈ 0,487; 0,487³ ≈ 0,115, yani %11,5. Eski değer: 1830 / 3389,5 ≈ 0,540; 0,540³ ≈ 0,157, yani %15,7. Dünya: çekirdek 3485 km, gezegen 6371 km (NASA): 0,547³ ≈ 0,164, yani %16,4. Merkür'de bu oran d35'te gördüğün gibi yaklaşık %55. Sonuç: 2023 revizyonu çekirdeğin hacimdeki payını yaklaşık %16'dan %11,5'e indirdi; Mars'ın çekirdeği oransal olarak Dünya'nınkinden küçük, Merkür'ünkinden ise çok küçüktür. Bu, eylemsizlik momentinin 0,4'e görece yakın olmasıyla uyumludur."
+      },
+      "akilda": "Çekirdek önce ~1830 km sanıldı; Samuel ve ekibi (Nature, Ekim 2023) üstünde erimiş silikat katmanı bulup yarıçapı 1650 ± 20 km'ye indirdi. Eylül 2025'te ~600 km yarıçaplı katı iç çekirdek bildirildi (23 olay; bağımsız doğrulama bekliyor)."
+    },
+    {
+      "baslik": "İki yüzlü gezegen: kabuk, ikilik ve Tharsis",
+      "paragraflar": [
+        "Mars'ın haritasına bakınca iki farklı gezegeni yan yana dikilmiş gibi görürsün. Kuzeyde alçak ovalar, güneyde yüksek yaylalar vardır. Buna Mars ikiliği denir. Wikipedia'ya göre kuzey ovaları yüzeyin yaklaşık üçte birini kaplar ve güney yaylalarından 1–3 km daha alçaktır. Kabuk da farklıdır: ortalama 45 km iken kuzeyde yaklaşık 32, güneyde yaklaşık 58 km kalınlığındadır. Bu sayılar InSight'a dayanan 42–56 km'lik ortalamayla uyumludur.",
+        "İkiliğin nasıl oluştuğu bilinmiyor. Wikipedia birbiriyle yarışan birkaç açıklamayı sıralar. Birincisi tek bir dev çarpışmadır: devasa bir cisim kuzey yarımküreye çarpıp dev bir havza açmış olabilir; ama böyle bir çarpışmadan beklenen fırlatılmış malzeme ve volkanizma açıkça görülmüyor. İkincisi birkaç büyük çarpışmadır; ama kuzey ovalarının o havzaların dışına taşan bölümleri bu fikri zayıflatıyor. Üçüncüsü gezegenin içindeki manto akıntılarıdır; Mars'ta levha hareketi olmaması bunu da zorlaştırıyor. Daha yeni bir fikir ise güney kutbuna yapılan bir çarpışmanın güney yarımküreyi eritip daha kalın bir kabukla yeniden katılaştırdığıdır. Bugün bu açıklamalardan hiçbiri kesin kazanmış değil.",
+        "Mars'ın en büyük volkanik bölgesi Tharsis'tir. ESA'nın Mars Express sayfası onu volkanlarıyla birlikte geniş bir yayla olarak tanımlar. InSight'a dayanan çalışmaya göre kabuk en kalın hâline, yaklaşık 90 km'ye, burada ulaşır. NASA'nın tablosuna göre Mars'ta en alçak ile en yüksek nokta arasındaki fark 30 km'dir; Dünya'da bu 20 km'dir. Yarıçapı Dünya'nın yarısı olan bir gezegende bu, çok büyük bir yükselti farkıdır.",
+        "Kuzey-güney farkı neden önemli? Çünkü iki yarımküre gezegenin farklı öykülerini saklar. Örneğin aşağıda göreceğin eski manyetik şeritler güney yarımkürede, Terra Sirenum ve Terra Cimmeria bölgelerinde bulundu. İkiliğin kökeni ile ilgili açıklamaların çoğu da Mars'ın ilk dönemine, büyük çarpışmaların sık olduğu çağa işaret eder. Bu yüzden Mars'ın haritası, gezegenin en eski olaylarının bugün hâlâ okunabilen bir izidir."
+      ],
+      "akilda": "Mars ikiliği: kuzey ovaları (yüzeyin ~1/3'ü) güney yaylalarından 1–3 km alçak; kabuk kuzeyde ~32, güneyde ~58 km. Kökeni çözülmedi (tek çarpışma, çoklu çarpışma, manto akıntısı, güney kutbu çarpışması). Tharsis'te kabuk ~90 km; yükselti aralığı 30 km."
+    },
+    {
+      "baslik": "Olympus Mons ve Valles Marineris",
+      "paragraflar": [
+        "d9'da Olympus Mons'un yüksekliği için iki değer görmüştün: Londra Doğa Tarihi Müzesi'ne göre yaklaşık 25 km yükseklik ve 624 km çap, NASA'nın bir afişine göre yaklaşık 27 km ve 600 km. WorldAtlas ise 22 km verir. Bu farklar ölçümün neye göre yapıldığından gelir: Mars'ta deniz olmadığı için yükseklik ya ortalama bir referans yüzeyden ya da volkanın çevresindeki ovadan ölçülür. Hangi değeri kullanırsan kullan, Olympus Mons Güneş Sistemi'nin bilinen en büyük volkanlarındandır. Kalkan volkanıdır: akışkan lavların kat kat yayılmasıyla oluşmuş, geniş ve yayvan bir yapı.",
+        "Neden bu kadar büyük? WorldAtlas iki neden sayar. Birincisi, Mars'ın kabuğu Dünya'daki gibi hareket eden levhalara bölünmemiştir. Dünya'da bir sıcak nokta, yani mantodan yükselen sıcak bir kaya akıntısı, üstündeki levha kaydıkça art arda yeni volkanlar besler ve bir volkan zinciri oluşur. Mars'ta kabuk yerinde durduğu için magma hep aynı noktada birikir ve tek bir dev volkan büyür. İkincisi, düşük çekim volkanların daha kısa sürede daha büyük olmasına izin verir. Aynı kaynağa göre volkanın ortalama eğimi yalnızca yaklaşık 5°'dir; tepesine yürüyen biri bir dağa tırmandığını zor fark ederdi.",
+        "Tharsis'in doğusunda Valles Marineris başlar. ESA'nın Temmuz 2022 tarihli Mars Express haberine göre bu kanyon sistemi 4000 km uzunluğunda, 200 km genişliğinde ve 7 km'ye kadar derinliktedir: Büyük Kanyon'dan neredeyse 10 kat uzun, 20 kat geniş ve 5 kat derin. Güneş Sistemi'nin bilinen en büyük kanyon sistemidir. d9'da NASA'nın onu New York ile Los Angeles arasındaki uzaklığa benzettiğini görmüştün.",
+        "Büyük Kanyon'u Colorado Nehri oydu. Valles Marineris ise ESA'ya göre kabuğun gerilmesiyle, yani iki yana çekilerek yarılmasıyla oluştu; bu gerilme yakındaki Tharsis yaylasının ve volkanlarının yükselmesiyle bağlantılıdır. Açılan yarık sonra aşınmayla genişledi. Yani Mars'ın en büyük volkanları ile en büyük kanyonu aynı olayın, Tharsis'in yükselmesinin iki ayrı yüzüdür. Kanyonun bir bölümündeki koyu kumların kaynağı da ESA'ya göre Tharsis'in volkanik bölgesi olabilir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Olympus Mons'un eğimi ne kadar?",
+        "metin": "Volkanı kabaca bir koni say: yükseklik 25 km, çap 624 km (NHM), yani yarıçap 312 km. Ortalama eğim tan θ = 25 / 312 ≈ 0,080. Küçük açılarda θ (radyan) ≈ 0,080; dereceye çevir: 0,080 × 57,3 ≈ 4,6°. WorldAtlas'ın verdiği ortalama eğim yaklaşık 5°. Sonuç: dünyanın en dik yokuşlarından çok daha yayvan, ortalama yaklaşık 4,6–5°'lik bir eğim; tepe, eteklerinden 300 km uzakta olduğu için bu yükseklik yavaş yavaş kazanılır."
+      },
+      "akilda": "Olympus Mons ~22–27 km yükseklik (referansa göre), ~600 km çap, ortalama eğim ~5°; levha hareketi olmadığı için sıcak nokta hep aynı yeri besledi ve düşük çekim büyümesine izin verdi. Valles Marineris 4000 × 200 km, 7 km derin; Tharsis'in yükselmesiyle kabuğun gerilip yarılmasından oluştu."
+    },
+    {
+      "baslik": "Kutup başlıkları: su buzu ve kuru buz",
+      "paragraflar": [
+        "Mars'ın iki kutbunda da beyaz buz başlıkları vardır. Bunlar iki farklı buzdan yapılır: su buzu ve donmuş karbondioksit, yani kuru buz. Wikipedia'nın Mars kutup başlıkları maddesine göre kuzey başlığı kuzey yazında yaklaşık 1000 km çapındadır ve çoğunlukla su buzudur. Hacmi yaklaşık 1,6 milyon km³'tür; düz yayılsa yaklaşık 2 km kalınlıkta olurdu. Her kış üstüne 1,5–2 metrelik mevsimlik bir kuru buz örtüsü eklenir. Güney başlığı daha küçüktür, yaklaşık 350 km çapında ve yaklaşık 3 km kalınlığındadır; üstünde yaz kış kalan yaklaşık 8 metrelik kalıcı bir kuru buz tabakası vardır.",
+        "Mars'ın havasının kendisi kutuplarda donar. Atmosfer çoğunlukla karbondioksit olduğu ve kış kutbu −133 °C'ye kadar soğuduğu için gazın bir kısmı her kış donarak kutuplarda çökelir, baharda yeniden gaza döner. Ne kadarı? Kaynaklar burada ayrışır: aynı Wikipedia maddesi bir yerde atmosferin %25–30'unun her yıl kutuplarda çökeldiğini, başka bir yerde yörünge ölçümlerine dayanan bir çalışmanın her kış 3–4 trilyon ton, yani atmosfer kütlesinin %12–16'sı kadar karbondioksitin donduğunu yazar. Hangi sayı doğru olursa olsun sonuç çarpıcıdır: bir gezegenin havasının kayda değer bir bölümü her yıl buza dönüp geri gelir. NASA'nın tablosuna göre yüzey basıncı da mevsime göre 4,0 ile 8,7 milibar arasında değişir.",
+        "Kutupların altında bir hazine daha var. Nisan 2011'de yayımlanan araştırmalara göre güney kutbunun altında büyük bir donmuş karbondioksit birikintisi gömülüdür; her biri yaklaşık 30 m su buzuyla örtülü üç katman hâlindedir. Wikipedia'ya göre bu karbondioksitin hepsi gaza dönseydi atmosfer basıncı iki katına çıkardı. Eksen eğikliği büyüdüğünde, önceki bölümde gördüğün gibi, bu birikintinin çoğunun atmosfere geçmesi beklenir: hava kalınlaşır, rüzgârlar güçlenir ve sıvı suyun dayanabileceği alanlar genişler.",
+        "Kuzey başlığının yüzeyinde bir de sarmal biçimli derin oluklar görülür; uzaydan bakınca başlık bir girdap gibi görünür. Wikipedia'ya göre Mars Reconnaissance Orbiter'ın SHARAD radarıyla yapılan çözümlemeler, bu olukları başlıktan aşağı akan soğuk, yoğun rüzgârlara bağlıyor; rüzgârlar gezegenin dönüşünün etkisiyle saparak sarmal bir desen çiziyor. Aynı radar, kuzeydeki katmanlı çökellerin ne kadar buz taşıdığını ve katmanların nasıl dizildiğini de haritaladı.",
+        "Başlıklar bir iklim arşividir. Her iki kutupta da kat kat dizilmiş buz ve toz katmanları, buna katmanlı kutup çökelleri denir, büyük olasılıkla bir dizi buzul çağı boyunca birikmiştir; Dünya'daki ağaç halkaları ve buz karotları gibi geçmiş iklimi saklıyor olabilirler. Kuzeydeki katmanlı çökellerde yaklaşık 821.000 km³ su buzu vardır; Grönland buz örtüsünün yaklaşık %30'u kadar. d9'da Doğa Tarihi Müzesi'nin hesabını görmüştün: kutup buzu eriseydi bütün gezegeni 20–30 m suyla örterdi. ESA'nın Mars Express aracının radarı 2018'de güney başlığının altında tuzlu sıvı su olabileceğine işaret eden yansımalar buldu; bu bir işarettir, doğrudan gözlem değildir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Atmosferin dörtte biri donarsa kaç ton eder?",
+        "metin": "NASA'ya göre Mars atmosferinin toplam kütlesi yaklaşık 2,5 × 10¹⁶ kg. %25'i: 0,25 × 2,5 × 10¹⁶ = 6,25 × 10¹⁵ kg. 1 ton = 1000 kg olduğundan 6,25 × 10¹² ton, yani yaklaşık 6 trilyon ton. Öbür tahmin 3–4 trilyon ton: 3 × 10¹⁵ / 2,5 × 10¹⁶ = 0,12; 4 × 10¹⁵ / 2,5 × 10¹⁶ = 0,16. Sonuç: iki tahmin %12–16 (3–4 trilyon ton) ile %25–30 (6–7,5 trilyon ton) arasında, yaklaşık iki kat farklı; ama ikisi de her kış trilyonlarca ton karbondioksitin kutuplara yağdığını söylüyor."
+      },
+      "akilda": "Kuzey başlığı ~1000 km, çoğunlukla su buzu (1,6 milyon km³); güney başlığı ~350 km, üstünde ~8 m kalıcı kuru buz. Her kış atmosferin %12–30'u (kaynaklar farklı) kutuplarda donar; basınç 4,0–8,7 mbar arasında oynar. Gömülü CO₂ salınsa basınç iki katına çıkardı."
+    },
+    {
+      "baslik": "İnce bir hava ve gezegeni saran toz",
+      "paragraflar": [
+        "Mars'ın havasının bileşimini d9'da gördün: %95,1 karbondioksit, %2,59 azot, %1,94 argon. Şimdi ne kadar ince olduğuna bakalım. NASA'ya göre yüzeydeki havanın yoğunluğu yaklaşık 0,016 kg/m³'tür; Dünya'da 1,217, Venüs'te yaklaşık 65 kg/m³. Atmosferin toplam kütlesi yaklaşık 2,5 × 10¹⁶ kg, Dünya'nınkinin yalnızca yaklaşık %0,5'idir. Havada milyonda yalnızca 210 pay su buharı vardır.",
+        "Bir atmosferin yükseldikçe ne kadar hızlı incelediğini ölçek yüksekliği anlatır: basıncın yaklaşık 2,7 kat azaldığı yükseklik farkı. NASA'ya göre bu Mars'ta 11,0 km, Dünya'da 8,5 km'dir. Mars'ın havası daha az, ama çekim zayıf olduğu için daha yavaş incelir. Rüzgâr da zayıf değildir: Viking iniş araçlarının ölçümlerine göre yazın 2–7, sonbaharda 5–10, toz fırtınalarında 17–30 m/s eser.",
+        "Mars'ın en ünlü hava olayı toz fırtınalarıdır. d9'da bazı mevsimlerde bütün gezegeni saranların olduğunu gördün. Bunun en iyi belgelenmiş örneği 2018'deki küresel toz fırtınasıdır. Wikipedia'ya göre fırtına ilk kez 31 Mayıs 2018'de kuzey yarımkürede küçük, bölgesel bir fırtına olarak fark edildi; Haziran ortasında yüzeyin büyük kısmını kaplıyordu ve sonunda bütün gezegeni sardı. Havanın ne kadar tozlu olduğunu optik derinlik denen sayı anlatır: ışığın bir katmandan geçerken ne kadar zayıfladığının ölçüsü. Bu fırtınada optik derinlik bütün gezegende 5'e, bazı yerlerde 10'a ve üstüne çıktı. Fırtına Temmuz sonunda dağılmaya başladı.",
+        "Bu fırtına bir gezgini öldürdü. PBS'nin haberine göre NASA'nın Opportunity gezgini 25 Ocak 2004'te Mars'a inmişti ve yalnızca 90 gün çalışacak biçimde tasarlanmıştı. On dört yılı aşkın süre çalıştı ve maraton mesafesinden uzun yol aldı. Fırtına sırasında panellerine ulaşan güneş ışığı fırtına öncesinin kırkta birine düştü; piller dolmadı. Gezginle son temas 10 Haziran 2018'de kuruldu ve NASA görevi 13 Şubat 2019'da resmen bitirdi. Aynı fırtınada Curiosity, enerjisini güneşten değil nükleer bir güç kaynağından aldığı için doğrudan etkilenmedi. Bu iki gezginin kaderi, Mars'ta enerji seçiminin neden hayati olduğunu gösterir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Mars'ın havası Dünya'nınkinin ve Venüs'ünkinin yanında ne kadar yoğun?",
+        "metin": "Yüzeyde hava yoğunluğu (NASA): Mars 0,016, Dünya 1,217, Venüs ~65 kg/m³. Mars / Dünya = 0,016 / 1,217 ≈ 0,013, yani %1,3. Venüs / Mars = 65 / 0,016 ≈ 4060. Toplam kütle: Mars 2,5 × 10¹⁶, Dünya 5,1 × 10¹⁸ kg; oran ≈ 0,0049, yani ~%0,5. Sonuç: Mars'ın yüzeyindeki hava Dünya'dakinin yaklaşık %1,3'ü yoğunluğunda; Venüs'ün yüzeyindeki hava ise Mars'ınkinin yaklaşık 4000 katı yoğundur. Üç komşu, ince ile çok kalın arasında bütün yelpazeyi kaplar."
+      },
+      "akilda": "Mars havası yüzeyde 0,016 kg/m³ (Dünya'nın %1,3'ü), toplam 2,5 × 10¹⁶ kg; ölçek yüksekliği 11 km. 2018 küresel toz fırtınası (31 Mayıs'tan Temmuz sonuna) optik derinliği 5–10'a çıkardı; Opportunity'yi sonlandırdı (son temas 10 Haziran 2018), nükleer güçlü Curiosity etkilenmedi."
+    },
+    {
+      "baslik": "Islak bir geçmiş: Gale'in gölü ve kaybolan su",
+      "paragraflar": [
+        "Bugün Mars kuru ve soğuk; ama d18'de gördüğün gibi yüzeyi başka bir geçmiş anlatıyor. Bu geçmişi yerinde okuyan ilk büyük araç Curiosity'dir. Space.com'a göre Curiosity, ABD Pasifik saatiyle 5 Ağustos 2012'de 154 km genişliğindeki Gale kraterinin içine indi. İnişte ilk kez roketli bir gök vinci kullanıldı: araç ipler ucunda yüzeye indirildi, sonra vinç kendini koparıp güvenli bir uzaklığa düşürüldü. Krater ortasında yaklaşık 5,5 km yükselen Sharp Dağı (Aeolis Mons) vardır; Curiosity onun eteklerine Eylül 2014'te ulaştı.",
+        "Curiosity'nin deldiği kayalar, Gale kraterinin geçmişte büyük olasılıkla milyonlarca yıl boyunca yaşanabilir bir göl ve akarsu sistemine ev sahipliği yaptığını gösterdi. Delinmiş bir örnekte yaşamın temel elementleri olan azot, oksijen, hidrojen, kükürt, fosfor ve karbon bulundu. “Yaşanabilir” burada “yaşam vardı” anlamına gelmez; yaşamın ihtiyaç duyacağı koşulların bulunduğu anlamına gelir (d18). Daha önce Opportunity de PBS'ye göre akan suyla biçimlenmiş kaya oluşumları ve mikroplara elverişli olabilecek kil oluşumları bulmuştu. Perseverance'ın Jezero kraterindeki eski delta ve Cheyava Falls kayası ise d18'in konusu; orada ayrıntısıyla okuyabilirsin.",
+        "Peki o su nereye gitti? Bir kısmı buz olarak kutuplarda duruyor, bir kısmı ise uzaya kaçtı. Kaçan suyun izini d35'te Venüs için gördüğün yöntemle sürebilirsin: döteryumun hidrojene oranı. Wikipedia'nın Mars kutup başlıkları maddesine göre bu ölçümler Mars'ın bir zamanlar gezegeni en az 137 m derinliğinde kaplayacak kadar suyu olduğunu düşündürüyor ve kaybedilen su bugün kutup başlıklarında duran suyun yaklaşık 6,5 katı olarak tahmin ediliyor.",
+        "Mars'ın havasında metan olup olmadığı tartışması da suyla ve yaşam sorusuyla bağlantılıdır. d18'de gördüğün gibi farklı aletlerin sonuçları birbirini tutmuyor ve 2019 ölçümleri çok düşük bir üst sınır koydu; bu derste bu tartışmayı tekrarlamayacağız. Burada aklında kalması gereken şu: Mars bir zamanlar göllere ve belki bir okyanusa yetecek kadar su taşıyordu ve o suyun çoğunu kaybetti. Bu kaybın nasıl olduğunu anlamak için gezegenin manyetik kalkanına ve MAVEN'in ölçümlerine bakacağız."
+      ],
+      "ornek": {
+        "baslik": "Örnek: 137 m'lik bir küresel okyanus ne kadar su eder?",
+        "metin": "Kürenin yüzey alanı 4 × π × R². R = 3389,5 km: R² ≈ 11.488.700 km²; × 12,566 ≈ 144,4 milyon km². Derinlik 137 m = 0,137 km. Hacim ≈ 144,4 milyon × 0,137 ≈ 19,8 milyon km³. Kuzey başlığındaki su buzu ~1,6 milyon km³ (Wikipedia): 19,8 / 1,6 ≈ 12. Ayrıca kuzey ovaları yüzeyin üçte biri; bu su yalnızca oraya dolsaydı derinlik yaklaşık 3 × 137 ≈ 410 m olurdu. Sonuç: en az yaklaşık 20 milyon km³ su; bugün kuzey başlığında duranın yaklaşık 12 katı."
+      },
+      "akilda": "Curiosity (Ağustos 2012, Gale, gök vinci) Gale'de milyonlarca yıl süren yaşanabilir bir göl-akarsu sistemi ve CHNOPS elementlerini buldu. D/H ölçümleri en az 137 m'lik küresel okyanusa yetecek suyu ve bugünkü kutup suyunun ~6,5 katı kaybı düşündürüyor."
+    },
+    {
+      "baslik": "Mars'tan gelen taşlar",
+      "paragraflar": [
+        "Mars'ın kayalarını laboratuvarda incelemek için oraya gitmek her zaman gerekmez; bazıları zaten Dünya'ya düştü. Büyük bir göktaşı Mars'a çarptığında yüzeyden kopan bazı kaya parçaları gezegenin çekiminden kurtulacak kadar hızlanır, milyonlarca yıl Güneş çevresinde dolanır ve bir kısmı sonunda Dünya'ya düşer. Wikipedia'ya göre Eylül 2020 itibarıyla 277 göktaşı Mars kökenli olarak sınıflandırılmıştı; bu, sınıflandırılmış yaklaşık 72.000 göktaşının yüzde yarımından azıdır.",
+        "Bir taşın Mars'tan geldiğini nereden biliyoruz? En güçlü kanıt 1983'te geldi: EET79001 adlı göktaşının içindeki, çarpma sırasında oluşmuş camsı ceplere hapsolmuş gazlar, Viking iniş araçlarının Mars atmosferinde ölçtüğü bileşimle çok yakın eşleşti. Yani taş, Mars'ın havasından bir nefesi içinde taşıyordu. Elementlerin ve izotopların oranları da uzay araçlarının ve gezginlerin ölçtüğü Mars kayalarıyla uyuşur. Bu, d35'te gördüğün “uzaktan ölçüm” mantığının tersidir: burada Mars'ın kendisi bize örnek göndermiştir.",
+        "Mars göktaşları birkaç gruba ayrılır. Wikipedia'ya göre yaklaşık dörtte üçü şergotit denen volkanik kayalardır; nahlit ve şasinyit grupları ve tek başına bir sınıf oluşturan ALH 84001 de vardır. Yaşları çok farklıdır: şergotitlerin çoğu 150–575 milyon yıl önce oluşmuştur ve bu genç yaşlar tam açıklanamamıştır; nahlitler yaklaşık 1,3 milyar yıllık, ALH 84001 ise yaklaşık 4,1 milyar yıllıktır. Kozmik ışınlara maruz kalma süreleri, bu taşların sınırlı sayıda çarpışmayla, birkaç milyon yılda bir koptuğunu gösterir; ALH 84001 yaklaşık 15–16 milyon yıl önce fırlatılmıştır.",
+        "Bu yaş farkları kendi başına bir bilmecedir. Şergotitlerin bu kadar genç çıkmasına Wikipedia “şergotit yaşı paradoksu” der ve sorunun çözülmediğini belirtir; bazı şergotitler yalnızca yaklaşık 180 milyon yıl önce kristalleşmiş görünüyor. Nahlitler ise yaklaşık 10,75 milyon yıl önce, tek bir çarpışmayla fırlatılmış görünüyor.",
+        "ALH 84001'in ünlü bir öyküsü var. 1996'da elektron mikroskobuyla içinde bakteriye benzeyen yapılar görüldü ve bunlar fosilleşmiş Mars yaşamı olarak yorumlandı. Wikipedia'ya göre 2005'e gelindiğinde bilimsel uzlaşma bu yapıların Mars yaşamını göstermediği, Dünya'daki biyofilm kirlenmesini yansıttığı yönündeydi. Taşın içindeki manyetit kristallerinin kökeni ise daha uzun süre tartışıldı. Bu öykü d18'deki biyoimza dersini hatırlatır: olağanüstü bir iddia, yaşamsız açıklamalar elenene kadar beklemelidir. Göktaşlarının genel öyküsü d43'te."
+      ],
+      "akilda": "Eylül 2020'ye kadar 277 Mars göktaşı tanındı; Mars kökenini 1983'te EET79001'deki hapsolmuş gazın Viking ölçümleriyle eşleşmesi kanıtladı. Gruplar: şergotit (~3/4), nahlit, şasinyit, ALH 84001 (~4,1 milyar yıl; 1996 fosil iddiası kabul görmedi)."
+    },
+    {
+      "baslik": "Manyetik kalkanın kaybı: MGS'den MAVEN'e",
+      "paragraflar": [
+        "Bugün Mars'ın Dünya'daki gibi küresel bir manyetik alanı yoktur. Ama kabuğunda eski bir alanın izleri vardır. Bunu ilk gösteren NASA'nın Mars Global Surveyor (MGS) aracıdır: Kasım 1996'da fırlatıldı, Eylül 1997'de Mars'a vardı. Aracın manyetometresi 916 yörüngede, yüzeyden kabaca 100–200 km yukarıdan ölçüm yaptı. Sonuçlar 30 Nisan 1999'da Science dergisinde yayımlandı: güney yarımkürede, Terra Sirenum ve Terra Cimmeria bölgelerinde, doğu-batı doğrultusunda uzanan, en uzunu yaklaşık 2000 km'yi bulan manyetik şeritler vardı. Buna kabuk manyetizması denir.",
+        "Kayalar bir manyetik alan içinde soğurken içlerindeki demirli mineraller o alanın yönünü “dondurur”. Bu yüzden mıknatıslanmış eski kabuk, Mars'ın bir zamanlar küresel bir alanı, yani çalışan bir dinamosu olduğunu söyler. Habere göre bu alan yaklaşık 4 milyar yıl önce etkindi ve izlerin dağılımı dinamonun gezegenin tarihinin erken bir döneminde durduğunu düşündürüyor. Şeritlerin Dünya'daki okyanus tabanının yayılmasıyla oluşan şeritlere benzemesi, eski Mars'ta levha hareketine benzer bir süreç olup olmadığı sorusunu da doğurdu; bu bir olasılık olarak kaldı. O güne dek ölçülen en güçlü kabuk alanı, Dünya'nın ekvatordaki alanının yaklaşık yirmide biri kadardı.",
+        "Küresel alan kaybolunca Güneş rüzgârı atmosferin üst katmanlarına doğrudan çarpmaya başladı. Bunu ölçmek için NASA, MAVEN'i gönderdi: 18 Kasım 2013'te fırlatıldı, 22 Eylül 2014'te Mars yörüngesine girdi. MAVEN'in en önemli sonuçlarından biri argon ölçümüdür. Argon soy bir gazdır: kayalara bağlanmaz, kimyasal tepkimeyle saklanmaz; atmosferden ancak uzaya kaçarak kaybolabilir. Hafif argon izotopu ağır olandan daha kolay kaçtığı için, geride kalan argon zamanla ağırlaşır. Bruce Jakosky'nin yönettiği ve 31 Mart 2017'de Science'ta yayımlanan çalışma, üst atmosfer ile yüzeydeki argon izotoplarını karşılaştırarak Mars'ın tarihi boyunca argonunun yaklaşık %65'ini uzaya kaybettiğini hesapladı.",
+        "Argonu söken süreç püskürtmedir: Güneş rüzgârının hızlı iyonları atmosferin üst kısmındaki atomlara çarpıp onları uzaya fırlatır. Aynı çalışmaya göre karbondioksitin çoğu da bu yolla kaybolmuştur, ve bu bir alt sınırdır, çünkü başka süreçler de gaz götürür. Kayıp, genç Güneş'in morötesi ışığının ve rüzgârının daha güçlü olduğu erken dönemde çok daha büyüktü. Wikipedia'ya göre MAVEN, Güneş fırtınaları sırasında kaybın belirgin biçimde arttığını da gösterdi ve bu süreç Mars'ın yaklaşık 4,2 ile 3,7 milyar yıl önce sıcak ve karbondioksitçe zengin bir iklimden bugünkü soğuk, kuru iklime geçişinde rol oynadı. MAVEN ayrıca Mars'ta ilk kez proton kutup ışıkları buldu. Görevin sonu ise beklenmedik oldu: Wikipedia'ya göre araçla bağlantı 6 Aralık 2025'te koptu, inceleme kurulu aracın büyük olasılıkla kurtarılamayacağına karar verdi ve NASA görevi 3 Haziran 2026'da sona erdirdi. MAVEN, gezginlerin verisini Dünya'ya aktaran bir röle olarak da çalışıyordu; kaybı bu iletişimi de etkiledi."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Argonun %65'i kaybolduysa başta ne kadar vardı?",
+        "metin": "Kalan pay 1 − 0,65 = 0,35. Bugünkü miktara A dersek, baştaki miktar B için A = 0,35 × B, yani B = A / 0,35 ≈ 2,86 × A. Sonuç: Mars'ın başlangıçtaki argonu bugünkünün yaklaşık 2,9 katıydı. Argon kayalara bağlanamadığı için bu oran, öteki gazların kaybı için de bir fikir verir; ama başka süreçler de gaz götürdüğü için karbondioksit kaybı için bulunan değer bir alt sınırdır."
+      },
+      "akilda": "MGS (1999) güney kabuğunda ~2000 km'lik manyetik şeritler buldu: ~4 milyar yıl önce çalışan, erken duran bir dinamonun izi. MAVEN (2014–2025): argonun ~%65'i püskürtmeyle uzaya kaçtı; CO₂'nin çoğu da. MAVEN'le bağlantı 6 Aralık 2025'te koptu, görev 3 Haziran 2026'da bitirildi."
+    },
+    {
+      "baslik": "Phobos ve Deimos",
+      "paragraflar": [
+        "Mars'ın iki küçük uydusunu Ağustos 1877'de Asaph Hall buldu (d9). ESA'ya göre Phobos yaklaşık 27 × 22 × 18 km boyutunda düzensiz bir cisimdir ve Mars yüzeyinden yalnızca yaklaşık 6000 km yukarıda dolanır. NASA NSSDCA'ya göre yörüngesinin yarıçapı 9378 km, dolanma süresi 0,31891 gün, yani yaklaşık 7 saat 39 dakikadır; NASA'nın deyişiyle Mars'ı günde üç kez dolanır. Deimos daha küçüktür: yaklaşık 15 × 12 × 11 km, Mars'ın merkezinden 23.459 km uzakta ve 1,26244 günde, yaklaşık 30 saatte bir tur atar. İkisi de eş zamanlı döner, yani Mars'a hep aynı yüzlerini gösterir.",
+        "Yoğunlukları düşüktür: NASA'ya göre Phobos 1900, Deimos 1750 kg/m³. Kıyas için Mars'ın ortalaması 3934 kg/m³'tür. NASA'ya göre ikisinin de yakalanmış asteroitler ya da Güneş Sistemi'nin ilk döneminden kalma enkaz olduğu düşünülür; köken henüz belli değildir. JAXA'ya göre Mars'ın uyduları karbonlu asteroitlere çok benzer. Yakalanma mı, yoksa Mars'a yapılmış bir çarpışmanın enkazından oluşma mı? Bu sorunun cevabı, uyduların hangi malzemeden yapıldığına bakılarak verilebilir; bunun en doğrudan yolu da örnek getirmektir.",
+        "Phobos yavaş yavaş Mars'a yaklaşıyor. NASA'ya göre her yüz yılda 1,8 metre içe kayar ve bu hızla yaklaşık 50 milyon yıl sonra ya Mars'a çarpacak ya da parçalanıp bir halkaya dönüşecek. Bu, Ay'ın Dünya'dan her yıl biraz uzaklaşmasının (d10) tersidir: Phobos içe doğru kayıyor. Phobos'un yörüngesindeki bu küçük değişimler o kadar hassas ölçülmüştür ki, Samuel ve ekibi Mars'ın çekirdeğini hesaplarken onları da kullandı.",
+        "Şimdi bu uydulara bir ziyaretçi yolda. Uygulamanın Haberler sekmesindeki habere ve JAXA'ya göre Japonya'nın MMX (Mars'ın Uydularını Keşif) aracı 20 Ekim 2026'da Japonya saatiyle 04.41'de Tanegashima'dan H3 roketiyle fırlatıldı. ESA'ya göre Phobos'un yörüngesine giren, yüzeyinden örnek toplayan ve Mars sisteminden Dünya'ya dönen ilk araç olmayı hedefliyor. JAXA'nın takvimine göre araç yaklaşık bir yılda Mars'a varacak, 2027–2030 arasında Phobos'un çevresinde yarı uydu yörüngesinde, yani Phobos'la birlikte Mars'ı dolanırken ona göre yakınında kalarak çalışacak, iki iniş yapıp en az 10 g örnek toplayacak ve son evrede Deimos'u gözlemleyecek. Örnek kapsülü 2031'de Avustralya'ya inecek. Haberlere göre araçta Fransa ile Almanya'nın yaptığı IDEFIX adlı küçük bir gezgin de var."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Mars'tan bakan biri Phobos'u ne sıklıkla tepesinde görür?",
+        "metin": "Phobos 7,654 saatte dolanır (0,31891 × 24), Mars 24,623 saatte döner, ikisi aynı yönde. Gökte tekrar aynı yere gelme süresi için 1/T = 1/7,654 − 1/24,623 ≈ 0,13065 − 0,04061 = 0,09004; T ≈ 11,1 saat. Phobos Mars'ın dönüşünden hızlı olduğu için gökte batıdan doğuya doğru ilerler, yani batıdan doğar. Deimos için 1/T = 1/24,623 − 1/30,299 ≈ 0,04061 − 0,03300 = 0,00761; T ≈ 131 saat ≈ 5,5 gün. Sonuç: Phobos yaklaşık 11 saatte bir batıdan doğup doğuda batar; Deimos ise doğudan doğar ve gökte günlerce kalır."
+      },
+      "akilda": "Phobos ~27 × 22 × 18 km, yüzeyden ~6000 km yukarıda, 7 sa 39 dk'da dolanır, yüzyılda 1,8 m yaklaşır (50 milyon yılda çarpma ya da halka). Deimos ~15 × 12 × 11 km, ~30 saat. Köken belirsiz. MMX 20 Ekim 2026'da fırlatıldı; ≥10 g Phobos örneği 2031'de Dünya'da."
+    },
+    {
+      "baslik": "Mars'a yolculuk: pencere, süre ve hız",
+      "paragraflar": [
+        "Mars'a ne zaman gidebilirsin? Her zaman değil. d23'te Hohmann aktarımını gördün: Güneş çevresinde, bir ucu Dünya'nın, öbür ucu Mars'ın yörüngesine değen bir elipsin yarısını dolanan en az yakıtlı yol. Uygulamanın deneyler bölümündeki “Mars'a yolculuk” deneyi bu yolu canlandırır. Deneyin ölçümlerine göre yolculuk 258,9 gün, yani yaklaşık 8,5 ay sürer. Araç vardığında Mars'ın da orada olması gerekir; bunun için kalkış anında Mars'ın Dünya'nın 44,3° önünde olması gerekir. Gökte iki gezegen arasındaki bu açıya faz açısı denir.",
+        "Aynı diziliş ancak Dünya Mars'a bir tur bindirdiğinde yeniden gelir: bu, d9 ve d23'te gördüğün sinodik dönemdir, NASA'ya göre 779,94 gün, yaklaşık 26 ay. Fırlatma pencereleri de bu yüzden iki yılı biraz aşan aralıklarla açılır. NASA'nın Mars görev tasarımı el kitabına göre bu dönemin en düşük enerjili kalkış tarihi 31 Ekim 2026, yani bu dersi yazdığımız günün ertesi günü; bir sonrakininki 2 Aralık 2028. MMX bu pencerede yola çıktı. ESA da Avrupa'nın Rosalind Franklin gezgini için Ekim 2028'deki fırlatma fırsatını belirledi.",
+        "Ne kadar hız gerekir? Deneyin hesabına göre Dünya Güneş çevresinde 29,8 km/s ile gider; aracın aktarım elipsine girmesi için Güneş'e göre yalnızca 2,95 km/s daha hızlı gitmesi yeter. Ama araç önce Dünya'nın çekiminden de kurtulmak zorunda olduğu için, 300 km'lik alçak Dünya yörüngesinden yapılan ateşleme 3,59 km/s tutar. d23'te Wikipedia'nın tablosundan gördüğün tipik 4,3 km/s, bu en küçük değerden büyüktür; gerçek görevler kalkış tarihine ve yörüngeye göre biraz daha fazlasını harcar. Mars'a varınca yörüngeye yakalanmak d23'e göre yaklaşık 0,9 km/s daha ister.",
+        "Gerçek görevler her zaman tam Hohmann yolunu izlemez. JAXA'ya göre MMX, Mars'a yaklaşık bir yılda varacak; deneyin hesapladığı 8,5 aydan uzun. d23'te gördüğün gibi NASA, Güneş çevresinde 180°'den az dolanan yollara birinci tür, 180° ya da daha fazla dolananlara ikinci tür yol der; görevler o yılki dizilişe ve aracın yüküne göre birini seçer. Hohmann aktarımı bu ailenin en basit, en temiz örneğidir: gerçeği anlamak için bir başlangıç noktası, tarifin kendisi değil.",
+        "Bu hesabın bir sonucu daha var: gidiş-dönüş görevleri de pencerelere bağlıdır. Mars'a varan bir araç ya da insan, dönmek için yeniden doğru dizilişi beklemek zorundadır. Bu yüzden Curiosity'nin radyasyon ölçümlerine dayanan senaryoda 860 günlük bir insanlı görev esas alınır. Bu sayıya bir sonraki bölümde döneceğiz."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Kalkışta Mars neden 44,3° önde olmalı?",
+        "metin": "Yolculuk 258,9 gün (deney; d23'te Kepler III ile ~259 gün). Mars bu sürede kendi yörüngesinde 360° × 258,9 / 686,98 ≈ 135,7° ilerler. Araç Güneş'in öbür yanına, kalkış noktasının tam karşısına, yani 180° öteye varır. Mars'ın da orada olması için kalkışta 180° − 135,7° = 44,3° önde olması gerekir. Sonuç: faz açısı yaklaşık 44,3°; Mars'a, şimdi bulunduğu yere değil, 8,5 ay sonra olacağı yere nişan alınır."
+      },
+      "akilda": "Hohmann yolu ~259 gün; kalkışta Mars 44,3° önde olmalı. Pencere 779,94 günde (~26 ay) bir açılır: en düşük enerjili kalkış 31 Ekim 2026, sonra 2 Aralık 2028. Güneş'e göre +2,95 km/s; alçak yörüngeden 3,59 km/s. Deney: “Mars'a yolculuk”."
+    },
+    {
+      "baslik": "İnsanlı Mars görevi: gerçekçi zorluklar",
+      "paragraflar": [
+        "Mars'a insan göndermek sık sık manşet olur. Bu bölümde abartıdan uzak durup bu derste gördüğümüz sayıların neyi zorlaştırdığına bakalım. Birinci zorluk süredir. Önceki bölümde gördüğün gibi yolculuk tek yön yaklaşık sekiz buçuk ay sürer ve dönüş penceresi beklenir; Curiosity'nin ölçümlerine dayanan senaryoda görev 860 gün olarak hesaplanır. İnsanların bu kadar uzun süre Dünya'dan uzakta, kapalı bir araçta yaşaması gerekir.",
+        "İkinci zorluk radyasyondur. Curiosity, yolculuğu sırasında ve yüzeyde radyasyonu ölçen RAD adlı bir alet taşıyordu. Space.com'a göre 2013'te açıklanan ölçümler, 860 günlük bir Mars görevinde bir insanın yaklaşık 1,01 sievert doz alacağını gösterdi. Sievert, radyasyonun insan dokusuna etkisini ölçen birimdir. Aynı habere göre Avrupa Uzay Ajansı bir astronotun ömür boyu alabileceği dozu 1 sievertle sınırlar. Yani tek bir Mars görevi, bu sınırın hepsini ya da biraz fazlasını tek başına tüketebilir. Mars'ın küresel manyetik alanı ve kalın bir havası olmadığı için yüzeyde de Dünya'daki gibi bir kalkan yoktur.",
+        "Üçüncü zorluk iletişimdir. Işığın hızı sonludur ve Mars'ın Dünya'ya uzaklığı 54,6 ile 401,4 milyon km arasında değişir. Aşağıdaki örnekte göreceğin gibi bir mesajın tek yönde gitmesi 3 ile 22 dakika arasında sürer. Bu yüzden Mars'taki ekip ya da gezgin Dünya'dan anlık yönetilemez; bir soru sorup cevap almak çoğu zaman yarım saati aşar. MAVEN'in kaybı, röle uydularının ne kadar değerli olduğunu da gösterdi.",
+        "Dördüncüsü yüzey koşullarıdır: çekim Dünya'nınkinin yaklaşık %38'i, hava basıncı Dünya'dakinin yüzde birinden azdır ve küresel toz fırtınaları güneş enerjisini haftalarca kesebilir; Opportunity'nin öyküsünü hatırla. Son olarak, göktaşlarını saymazsak, Mars'tan Dünya'ya henüz hiçbir görev örnek getirmedi. d18'de gördüğün gibi NASA'nın Mars Örnek Getirme programı 2026 bütçesiyle fiilen iptal edildi; Mars sisteminden ilk örneği büyük olasılıkla MMX, Phobos'tan getirecek. Robotlar bile henüz Mars'tan dönemezken insanlı bir gidiş-dönüş, bugünün en zor mühendislik hedeflerinden biridir. Bunu söylemek karamsarlık değil, ölçünün kendisidir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Mars'a bir mesaj kaç dakikada gider?",
+        "metin": "t = d / c; c ≈ 299.792 km/s. En yakın: d = 54,6 milyon km; t ≈ 54.600.000 / 299.792 ≈ 182 s ≈ 3,0 dakika. En uzak: d = 401,4 milyon km; t ≈ 401.400.000 / 299.792 ≈ 1339 s ≈ 22,3 dakika (NASA'nın uzaklıkları). 2027 karşı konumunda (~101 milyon km): ≈ 337 s ≈ 5,6 dakika. Sonuç: tek yönlü gecikme 3–22 dakika; gidiş-dönüş bir soru-cevap 6 ile 45 dakika arasında sürer."
+      },
+      "akilda": "İnsanlı Mars görevinin gerçek zorlukları: ~860 günlük süre, ~1,01 Sv radyasyon (ESA ömür sınırı 1 Sv), 3–22 dakikalık tek yönlü sinyal gecikmesi, ince hava ve toz. Mars'tan henüz örnek getirilmedi; MSR fiilen iptal edildi."
+    },
+    {
+      "baslik": "İstanbul'dan Mars: 2027 karşı konumu",
+      "paragraflar": [
+        "Mars şu sıralar sabah göğünde ve yavaş yavaş parlıyor. d9'da Space.com'un 2026 takvimini gördün: Mars 11 Ekim'de Yengeç'teki Arı Kovanı kümesinin içinden geçti, 26 Kasım 2026'da Aslan'ın parlak yıldızı Regulus'un 1,7° üstünden geçecek ve Aralık sonunda −0,1 kadire ulaşarak rengi ve parlaklığıyla Arcturus'la yarışacak. Karşı konum, yani Mars'ın gökte Güneş'in tam karşısına düştüğü an, 19 Şubat 2027'de, yine Aslan'da. O günlerde Mars yaklaşık −1,2 kadir parlayacak ve d18'e göre 20 Şubat'ta Dünya'ya en çok, yaklaşık 101 milyon km'ye yaklaşacak.",
+        "Karşı konumda Mars, Güneş batarken doğar ve gün doğarken batar; Mars'a yolculuk deneyinin açıklamasına göre o gece İstanbul'dan akşamdan sabaha kadar Aslan takımyıldızında kızılımsı parlak bir nokta olarak görülür. Bu, Mars'ı gözlemek için en iyi zamandır. Ama her karşı konum eşit değildir. Mars'ın yörüngesi basık olduğu için bazı karşı konumlarda çok yakın, bazılarında uzaktır. NASA'nın tablosuna göre Mars Dünya'ya en çok 54,6 milyon km'ye yaklaşabilir; o zaman görünür çapı 25,6 yay saniyesi, parlaklığı −2,94 kadir olur. Ortalama bir karşı konumda uzaklık 78,34 milyon km, görünür çap 17,8 yay saniyesi, parlaklık −2,0 kadirdir.",
+        "2027 karşı konumu uzak bir karşı konumdur: d9'daki örnekte görünür çapın yalnızca 13,8 yay saniyesi olacağını hesapladın. Çünkü d18'de gördüğün gibi Mars bu sefer yörüngesinin Güneş'ten uzak kısmında. Aşağıdaki örnekte bu karşı konumun en iyi olasılıktan kaç kat sönük olduğunu bulacaksın. 7×50 dürbünde Mars yalnızca renkli bir ışık noktasıdır; yüzey ayrıntısı, kutup başlığı ya da koyu bölgeler için teleskop gerekir. Ama çıplak gözle de yapabileceğin güzel bir gözlem var: Mars'ı Kasım'dan Mart'a kadar haftada bir aynı yıldızlara göre konumunu not ederek izle. Rengi, parlaklığının artışı ve yıldızlar arasındaki yolculuğu, bu derste gördüğün yörünge geometrisinin kendisidir.",
+        "Bu aylarda Mars'ın parlaklığındaki değişimi kendi gözünle izleyebilirsin. Space.com'a göre Aralık sonunda −0,1 kadir olacak; 19 Şubat'ta −1,2. Fark 1,1 kadirdir ve d9'daki formülle 10^(0,4 × 1,1) = 10^0,44 ≈ 2,75 eder: Mars yaklaşık yedi hafta içinde neredeyse üç kat parlaklaşacak. Bunun nedeni Dünya'nın Mars'a hızla yaklaşmasıdır; ikisi aynı yönde dolanır ama Dünya daha hızlıdır ve Mars'ı yörüngesinde arkadan yakalar. Karşı konumdan sonra Dünya Mars'ı geride bırakır ve gezegen aylar içinde yeniden sönükleşir.",
+        "Bir sonraki karşı konum sinodik dönem kadar, yaklaşık 26 ay sonra, 2029'da gelir. Uygulamanın Gökyüzü sekmesi o gece görülebilen gezegenleri, parlaklıklarını ve ufuktan yüksekliklerini gösterir; Mars'ı bulmak için oradan başla. Mars'ın rengini görünce şunu hatırla: o kırmızılık d9'da gördüğün gibi yüzeydeki demirin paslanmasından gelir ve kayıp bir okyanusun, sökülen bir havanın ve susmuş bir dinamonun milyarlarca yıllık öyküsünün en dış katmanıdır."
+      ],
+      "ornek": {
+        "baslik": "Örnek: 2027 karşı konumu en iyi duruma göre kaç kat sönük?",
+        "metin": "Kadir farkından parlaklık oranı: Oran = 10^(0,4 × Δm) (d9). En parlak olası Mars −2,94, 2027 karşı konumu −1,2: Δm = 1,74. 0,4 × 1,74 = 0,696; 10^0,696 ≈ 4,97. Ortalama karşı konum −2,0 ile kıyas: Δm = 0,8; 10^0,32 ≈ 2,09. Görünür çap: 13,8 / 25,6 ≈ 0,54. Sonuç: 2027'de Mars, en yakın karşı konumlardakinden yaklaşık 5 kat, ortalama bir karşı konumdakinden yaklaşık 2 kat sönük ve onların yaklaşık yarısı büyüklüğünde görünecek; yine de gökteki en parlak noktalardan biri olacak."
+      },
+      "akilda": "Mars şimdi sabah göğünde; 26 Kasım 2026'da Regulus'un 1,7° üstünde. Karşı konum 19 Şubat 2027 (Aslan, −1,2 kadir, 13,8″, ~101 milyon km): uzak bir karşı konum, en iyisinden ~5 kat sönük. Dürbünde renkli nokta; ayrıntı için teleskop gerekir. Sonraki karşı konum ~26 ay sonra."
+    }
+  ],
+  "formuller": [
+    {
+      "ad": "Sol sayısı",
+      "ifade": "N = (yıl, saat) / (sol, saat)",
+      "aciklama": "Mars yılı 686,98 × 24 = 16.487,5 saat; sol 24,6597 saat; N ≈ 668,6. Sol, Güneş'e göre bir Mars günüdür."
+    },
+    {
+      "ad": "Ters kare yasası",
+      "ifade": "F₁ / F₂ = (d₂ / d₁)²",
+      "aciklama": "F: metrekare başına güneş ışığı, d: Güneş'e uzaklık. Mars günberi/günöte: (249,261 / 206,650)² ≈ 1,455."
+    },
+    {
+      "ad": "Çekirdeğin hacim payı",
+      "ifade": "V_çekirdek / V_gezegen = (r / R)³",
+      "aciklama": "r: çekirdek yarıçapı, R: gezegen yarıçapı (aynı birim). Mars: (1650 / 3389,5)³ ≈ 0,115."
+    },
+    {
+      "ad": "Ortalama eğim",
+      "ifade": "tan θ = h / r",
+      "aciklama": "h: yükseklik, r: tabanın yarıçapı (aynı birim); θ: eğim açısı. Küçük açıda θ (derece) ≈ 57,3 × h / r. Olympus Mons: 25 / 312 → ~4,6°."
+    },
+    {
+      "ad": "Göreli dönem (gökte tekrar aynı yere gelme)",
+      "ifade": "1/T = |1/T₁ − 1/T₂|",
+      "aciklama": "T₁, T₂: aynı yöndeki iki dönme ya da dolanma süresi. Phobos (7,654 sa) ve Mars dönüşü (24,623 sa): T ≈ 11,1 sa."
+    },
+    {
+      "ad": "Faz açısı (Hohmann)",
+      "ifade": "φ = 180° − 360° × t / P_Mars",
+      "aciklama": "t: yolculuk süresi (gün), P_Mars = 686,98 gün. t = 258,9 gün için φ ≈ 44,3°: kalkışta Mars'ın Dünya'nın ne kadar önünde olması gerektiği."
+    },
+    {
+      "ad": "Işığın yolculuk süresi",
+      "ifade": "t = d / c",
+      "aciklama": "d: uzaklık (km), c ≈ 299.792 km/s. Mars 54,6–401,4 milyon km → 3,0–22,3 dakika."
+    },
+    {
+      "ad": "Kadir farkından parlaklık oranı",
+      "ifade": "Oran = 10^(0,4 × Δm)",
+      "aciklama": "Δm: iki parlaklık arasındaki kadir farkı. Mars −2,94 ile −1,2: Δm = 1,74 → ~5 kat."
+    }
+  ],
+  "anahtar_sayilar": [
+    {
+      "deger": "0,64169 × 10²⁴ kg · 3389,5 km · 3934 kg/m³ · ~3,7 m/s²",
+      "aciklama": "Mars'ın kütlesi, ortalama yarıçapı, yoğunluğu ve yüzey çekimi",
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html"
+    },
+    {
+      "deger": "Sol = 24,6597 sa (24 sa 39,6 dk); yıl = 686,98 gün ≈ 669 sol",
+      "aciklama": "Mars'ta güneş günü ve yıl",
+      "kaynak_url": "https://www.esa.int/Science_Exploration/Space_Science/Mars_Express/Facts_about_Mars"
+    },
+    {
+      "deger": "25,19° · e = 0,0935 · 0–60° (kaotik)",
+      "aciklama": "Eksen eğikliği, yörünge dış merkezliği ve eğikliğin uzun vadeli değişim aralığı",
+      "kaynak_url": "https://www.nature.com/nature/journal/v361/n6413/abs/361608a0.html"
+    },
+    {
+      "deger": "Kabuk ortalama 42–56 km (Tharsis ~90, Hellas ~20)",
+      "aciklama": "Mayıs 2022'deki 4,7'lik Mars depremine dayanan kabuk kalınlığı (Kim ve ekibi, 2023)",
+      "kaynak_url": "https://www.universetoday.com/articles/mars-has-a-thick-crust-its-internal-heat-mainly-comes-from-radioactivity"
+    },
+    {
+      "deger": "1650 ± 20 km",
+      "aciklama": "Mars'ın metal çekirdeğinin yarıçapı (Samuel ve ekibi, Nature, Ekim 2023; önceki ~1830 km)",
+      "kaynak_url": "https://www.ipgp.fr/en/news-and-agenda/news/insight-seismic-data-reveals-a-molten-layer-at-the-base-of-the-martian-mantle/"
+    },
+    {
+      "deger": "~600 km",
+      "aciklama": "Eylül 2025'te bildirilen katı iç çekirdeğin yarıçapı (23 olay; bağımsız doğrulama bekliyor)",
+      "kaynak_url": "https://english.cas.cn/newsroom/research_news/earth/202509/t20250928_1058923.shtml"
+    },
+    {
+      "deger": "4000 km × 200 km × 7 km",
+      "aciklama": "Valles Marineris'in uzunluğu, genişliği ve en büyük derinliği",
+      "kaynak_url": "https://esa.int/Science_Exploration/Space_Science/Mars_Express/Mars_Express_peers_into_Mars_Grand_Canyon"
+    },
+    {
+      "deger": "~8 m kuru buz; %12–30",
+      "aciklama": "Güney başlığının kalıcı CO₂ örtüsü ve her kış donan atmosfer payı (kaynaklar farklı)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Martian_polar_ice_caps"
+    },
+    {
+      "deger": "0,016 kg/m³ · 2,5 × 10¹⁶ kg · 11,0 km",
+      "aciklama": "Mars'ta yüzey hava yoğunluğu, atmosferin toplam kütlesi ve ölçek yüksekliği",
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html"
+    },
+    {
+      "deger": "%65",
+      "aciklama": "Mars'ın tarihi boyunca uzaya kaybettiği argon payı (MAVEN, Jakosky ve ekibi, 2017)",
+      "kaynak_url": "https://lasp.colorado.edu/maven/2017/03/30/maven-reveals-most-of-mars-atmosphere-was-lost-to-space/"
+    },
+    {
+      "deger": "≥ 137 m",
+      "aciklama": "D/H ölçümlerine göre Mars'ın bir zamanlar sahip olduğu suyun küresel okyanus derinliği karşılığı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Martian_polar_ice_caps"
+    },
+    {
+      "deger": "1,8 m / 100 yıl; ~50 milyon yıl",
+      "aciklama": "Phobos'un Mars'a yaklaşma hızı ve çarpma ya da halkaya dönüşme süresi",
+      "kaynak_url": "https://science.nasa.gov/mars/moons/"
+    },
+    {
+      "deger": "31 Ekim 2026 · 2 Aralık 2028 · 779,94 gün",
+      "aciklama": "En düşük enerjili Mars kalkış tarihleri ve pencereler arası süre",
+      "kaynak_url": "https://ntrs.nasa.gov/citations/20100037210"
+    },
+    {
+      "deger": "1,01 Sv",
+      "aciklama": "Curiosity RAD ölçümlerine göre 860 günlük bir Mars görevinde alınacak radyasyon dozu",
+      "kaynak_url": "https://www.space.com/37712-mars-rover-curiosity-10-biggest-moments-5-years.html"
+    }
+  ],
+  "sozluk": [
+    {
+      "terim": "Sol",
+      "tanim": "Mars'ta Güneş'e göre bir gün, yani iki öğle arası geçen süre: yaklaşık 24 saat 39,6 dakika."
+    },
+    {
+      "terim": "Kaotik eğiklik",
+      "tanim": "Bir gezegenin eksen eğikliğinin, uzun vadede önceden kestirilemeyecek biçimde geniş bir aralıkta değişmesi; Mars'ta 0° ile 60° arası."
+    },
+    {
+      "terim": "Sismometre",
+      "tanim": "Yerin titreşimlerini kaydederek deprem dalgalarının ne zaman ve hangi sırayla geldiğini ölçen alet."
+    },
+    {
+      "terim": "Mars depremi",
+      "tanim": "Mars kabuğundaki gerilimlerin boşalması ya da göktaşı çarpmaları sonucu oluşan ve gezegenin içinden geçen titreşim."
+    },
+    {
+      "terim": "Erimiş silikat katmanı",
+      "tanim": "Mars'ta mantonun dibinde, metal çekirdeğin hemen üstünde bulunduğu 2023'te gösterilen sıvı kaya katmanı."
+    },
+    {
+      "terim": "Mars ikiliği",
+      "tanim": "Mars'ın alçak kuzey ovaları ile 1–3 km daha yüksek güney yaylaları arasındaki, kabuk kalınlığına da yansıyan büyük fark."
+    },
+    {
+      "terim": "Sıcak nokta",
+      "tanim": "Mantodan yükselen sıcak kaya akıntısının kabuğu yerinden besleyerek volkan oluşturduğu yer."
+    },
+    {
+      "terim": "Kabuk gerilmesi",
+      "tanim": "Kabuğun iki yana çekilerek incelmesi ve yarılması; Valles Marineris böyle başladı."
+    },
+    {
+      "terim": "Kuru buz",
+      "tanim": "Donmuş karbondioksit; Mars'ın kutuplarında her kış havadan çökelir."
+    },
+    {
+      "terim": "Katmanlı kutup çökelleri",
+      "tanim": "Mars'ın kutuplarında üst üste birikmiş buz ve toz katmanları; geçmiş iklim değişimlerinin kaydını saklar."
+    },
+    {
+      "terim": "Ölçek yüksekliği",
+      "tanim": "Bir atmosferde basıncın yaklaşık 2,7 kat azaldığı yükseklik farkı; Mars'ta 11 km, Dünya'da 8,5 km."
+    },
+    {
+      "terim": "Optik derinlik",
+      "tanim": "Işığın bir katmandan, örneğin tozlu bir havadan geçerken ne kadar zayıfladığını gösteren sayı; büyüdükçe katman daha opaktır."
+    },
+    {
+      "terim": "Küresel toz fırtınası",
+      "tanim": "Mars'ta bölgesel bir fırtınanın büyüyerek haftalarca bütün gezegeni toz örtüsüyle sarması."
+    },
+    {
+      "terim": "Gök vinci",
+      "tanim": "Bir gezgini roketli bir taşıyıcıdan iplerle yüzeye indiren ve ardından kendini uzağa düşüren iniş sistemi."
+    },
+    {
+      "terim": "Mars göktaşı",
+      "tanim": "Mars'a yapılan bir çarpışmayla uzaya fırlayıp sonunda Dünya'ya düşmüş Mars kayası."
+    },
+    {
+      "terim": "Kabuk manyetizması",
+      "tanim": "Kayaların soğurken eski bir küresel manyetik alanın yönünü içlerinde dondurmasıyla kabukta kalan mıknatıslanma."
+    },
+    {
+      "terim": "Püskürtme",
+      "tanim": "Güneş rüzgârının hızlı iyonlarının üst atmosferdeki atomlara çarpıp onları uzaya fırlatması."
+    },
+    {
+      "terim": "Yarı uydu yörüngesi",
+      "tanim": "Bir aracın, küçük bir uyduyla birlikte gezegeni dolanırken o uydunun çevresinde, ona yakın kalarak hareket ettiği yörünge."
+    },
+    {
+      "terim": "Faz açısı",
+      "tanim": "Fırlatma anında Güneş'ten bakınca Dünya ile hedef gezegen arasındaki açı; Hohmann yoluyla Mars için ~44,3°."
+    },
+    {
+      "terim": "Sievert",
+      "tanim": "Radyasyonun insan dokusu üzerindeki etkisini ölçen doz birimi; 1 sievert 1000 milisievert eder."
+    }
+  ],
+  "defter_notu": [
+    "Mars: 0,107 Dünya kütlesi, R = 3389,5 km, 3934 kg/m³, g ≈ 3,7. Sol 24 sa 39,6 dk; yıl 686,98 g ≈ 669 sol. C/MR² ≈ 0,366.",
+    "Eğiklik 25,19°, e = 0,0935 → günberide %45 fazla ışık, eşitsiz mevsimler. −133 / +27 °C. Eğiklik kaotik 0–60° (Laskar ve Robutel 1993).",
+    "InSight 26.11.2018–21.12.2022, >1300 deprem. Kabuk 42–56 km (Tharsis 90, Hellas 20). Isı üreten elementlerin %50–70'i kabukta.",
+    "Çekirdek: ~1830 → 1650 ± 20 km (Samuel 2023, erimiş silikat katmanı, ~6,5 g/cm³) → ~600 km katı iç çekirdek (Eylül 2025, 23 olay, doğrulanmalı).",
+    "İkilik: kuzey ovaları 1/3, 1–3 km alçak; kabuk 32 / 58 km; kökeni çözülmedi. Olympus Mons 22–27 km, ~5° eğim. Valles Marineris 4000 × 200 × 7 km (Tharsis gerilmesi).",
+    "Kutuplar: kuzey ~1000 km su buzu (1,6 milyon km³); güney ~350 km, 8 m kalıcı CO₂. Her kış atmosferin %12–30'u donar; basınç 4,0–8,7 mbar.",
+    "Hava 0,016 kg/m³, 2,5 × 10¹⁶ kg, H = 11 km. 2018 küresel toz fırtınası τ 5–10 → Opportunity (2004–2018) sustu; Curiosity (nükleer) sürdü.",
+    "Su: Curiosity Gale (2012) göl-akarsu, CHNOPS. D/H → ≥137 m okyanus; kayıp = kutup suyunun 6,5 katı. Mars göktaşları: 277 (2020), EET79001 gazı = Viking.",
+    "MGS 1999: güneyde ~2000 km manyetik şeritler, erken duran dinamo. MAVEN: argonun %65'i püskürtmeyle kaçtı; bağlantı 6.12.2025 koptu, görev 3.6.2026 bitti.",
+    "Phobos 7 sa 39 dk, 1,8 m/yüzyıl, 50 milyon yıl; Deimos ~30 sa. MMX 20.10.2026, örnek 2031. Hohmann 259 g, faz 44,3°, pencere 779,94 g (31.10.2026, 2.12.2028). Karşı konum 19.2.2027, −1,2."
+  ],
+  "sorular": [
+    {
+      "soru": "Mars'ta bir sol neden 24 saat 37 dakika değil de 24 saat 39,6 dakikadır?",
+      "cevap": "24 saat 37 dakika Mars'ın yıldızlara göre dönüşüdür. Mars dönerken Güneş çevresinde de ilerlediği için Güneş'i yeniden tepesine almak için biraz daha dönmesi gerekir; güneş günü (sol) bu yüzden 24,6597 saattir. Dünya'daki yıldız günü ile güneş günü farkının aynısıdır."
+    },
+    {
+      "soru": "Mars'ın eksen eğikliği Dünya'nınkine benzediği hâlde mevsimleri neden eşit uzunlukta değildir?",
+      "cevap": "Mars'ın yörüngesi basıktır (e = 0,0935). Kepler'in ikinci yasasına göre Güneş'e yakınken hızlı, uzakken yavaş gider; bu yüzden yörüngenin farklı bölümlerine düşen mevsimler farklı uzunlukta olur. Güneş ışığı da günberide günötesine göre ~%45 fazladır."
+    },
+    {
+      "soru": "InSight, Mars kabuğunun kalınlığını nasıl ölçtü ve ne buldu?",
+      "cevap": "Mayıs 2022'deki 4,7 büyüklüğündeki depremin yüzey dalgalarını çekim ve yükseklik haritalarıyla birleştirerek. Kim ve ekibine (2023) göre ortalama kalınlık 42–56 km; Tharsis'te ~90 km, Hellas'ta ~20 km."
+    },
+    {
+      "soru": "2023'te Mars'ın çekirdek yarıçapı neden küçültüldü?",
+      "cevap": "Samuel ve ekibi, 18 Eylül 2021'deki bir göktaşı çarpmasının çekirdek sınırında kırınan dalgalarını ve Phobos'un yörünge verilerini kullandı. Mantonun dibinde erimiş bir silikat katmanı buldular; önceki yorumlar bu katmanı çekirdeğin parçası sanmıştı. Yeni yarıçap 1650 ± 20 km, çekirdek daha yoğun (~6,5 g/cm³)."
+    },
+    {
+      "soru": "Çekirdek yarıçapı 1650 km ise Mars'ın hacminin yüzde kaçını kaplar? Dünya ile karşılaştır.",
+      "cevap": "(1650 / 3389,5)³ ≈ 0,487³ ≈ 0,115, yani ~%11,5. Dünya'da (3485 / 6371)³ ≈ 0,164, yani ~%16,4. Mars'ın çekirdeği oransal olarak daha küçüktür; bu, eylemsizlik momentinin (0,366) 0,4'e görece yakın olmasıyla uyumludur."
+    },
+    {
+      "soru": "Olympus Mons neden Dünya'daki volkanlardan çok daha büyüktür?",
+      "cevap": "Mars'ın kabuğu hareket eden levhalara bölünmediği için sıcak noktanın üstündeki kabuk yerinde kalır ve magma hep aynı yere birikir; Dünya'da levha kaydıkça bir volkan zinciri oluşur. Ayrıca düşük çekim volkanların daha büyük olabilmesine izin verir."
+    },
+    {
+      "soru": "Valles Marineris ile Büyük Kanyon'un oluşumu arasındaki fark nedir?",
+      "cevap": "Büyük Kanyon'u Colorado Nehri aşındırarak oydu. Valles Marineris ise ESA'ya göre Tharsis'in yükselmesiyle bağlantılı olarak kabuğun gerilip yarılmasıyla oluştu, sonra aşınmayla genişledi. Boyutları 4000 × 200 km, derinliği 7 km'ye kadar."
+    },
+    {
+      "soru": "Mars'ın kutup başlıkları neden mevsimle büyüyüp küçülür ve bu atmosferi nasıl etkiler?",
+      "cevap": "Atmosfer çoğunlukla CO₂'dir; kış kutbu −133 °C'ye kadar soğuyunca CO₂ kuru buz olarak kutba yağar, baharda yeniden gaza döner. Kaynaklara göre her kış atmosferin %12–30'u donar; yüzey basıncı mevsime göre 4,0–8,7 mbar arasında değişir."
+    },
+    {
+      "soru": "2018 küresel toz fırtınası Opportunity'yi neden sonlandırdı da Curiosity'yi sonlandırmadı?",
+      "cevap": "Optik derinlik 5–10'a çıktı ve Opportunity'nin güneş panellerine ulaşan ışık fırtına öncesinin kırkta birine düştü; piller dolmadı, son temas 10 Haziran 2018. Curiosity enerjisini nükleer bir güç kaynağından aldığı için doğrudan etkilenmedi."
+    },
+    {
+      "soru": "MAVEN, Mars'ın havasının çoğunu kaybettiğini argonla nasıl gösterdi?",
+      "cevap": "Argon soy gazdır; kayalara bağlanamaz, yalnızca uzaya kaçarak kaybolur. Hafif izotop daha kolay kaçtığı için kalan argon ağırlaşır. Üst atmosfer ile yüzeydeki izotop oranlarını karşılaştıran Jakosky ve ekibi (2017), argonun ~%65'inin püskürtmeyle kaybolduğunu buldu; CO₂'nin çoğu da bu yolla gitti."
+    },
+    {
+      "soru": "Phobos neden Mars'tan bakınca batıdan doğar? Hesapla göster.",
+      "cevap": "Phobos 7,654 saatte dolanır, Mars 24,623 saatte döner; Phobos gezegenin dönüşünden hızlıdır, bu yüzden gökte batıdan doğuya ilerler. 1/T = 1/7,654 − 1/24,623 ≈ 0,0900 → T ≈ 11,1 saat: yaklaşık 11 saatte bir batıdan doğar."
+    },
+    {
+      "soru": "Hohmann yoluyla Mars'a gidişte kalkış anında Mars neden Dünya'nın yaklaşık 44° önünde olmalıdır?",
+      "cevap": "Yolculuk ~258,9 gün sürer; Mars bu sürede 360° × 258,9 / 686,98 ≈ 135,7° ilerler. Araç kalkış noktasının 180° karşısına varır; Mars'ın orada olması için 180° − 135,7° = 44,3° önde olması gerekir."
+    },
+    {
+      "soru": "Mars'a gönderilen bir mesajın gecikmesi neden 3 ile 22 dakika arasında değişir?",
+      "cevap": "Mars'ın Dünya'ya uzaklığı 54,6 ile 401,4 milyon km arasında değişir. t = d / c ile 54,6 milyon km / 299.792 km/s ≈ 182 s ≈ 3 dk; 401,4 milyon km için ≈ 1339 s ≈ 22 dk."
+    },
+    {
+      "soru": "19 Şubat 2027 karşı konumu neden “uzak” bir karşı konumdur ve dürbünde ne beklemelisin?",
+      "cevap": "Mars yörüngesinin Güneş'ten uzak kısmında olduğu için uzaklık ~101 milyon km'dir; görünür çap 13,8″, parlaklık −1,2 kadir (en iyi durum −2,94 ve 25,6″: ~5 kat parlak). 7×50 dürbünde Mars yalnızca renkli bir noktadır; yüzey ayrıntısı için teleskop gerekir."
+    }
+  ],
+  "kaynaklar": [
+    {
+      "ad": "NASA NSSDCA: Mars Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html"
+    },
+    {
+      "ad": "ESA: Facts about Mars",
+      "url": "https://www.esa.int/Science_Exploration/Space_Science/Mars_Express/Facts_about_Mars"
+    },
+    {
+      "ad": "Laskar ve Robutel (1993), The chaotic obliquity of the planets, Nature",
+      "url": "https://www.nature.com/nature/journal/v361/n6413/abs/361608a0.html"
+    },
+    {
+      "ad": "Universe Today: Mars has a thick crust (Kim ve ekibi, 2023)",
+      "url": "https://www.universetoday.com/articles/mars-has-a-thick-crust-its-internal-heat-mainly-comes-from-radioactivity"
+    },
+    {
+      "ad": "IPGP: InSight seismic data reveals a molten layer at the base of the Martian mantle (2023)",
+      "url": "https://www.ipgp.fr/en/news-and-agenda/news/insight-seismic-data-reveals-a-molten-layer-at-the-base-of-the-martian-mantle/"
+    },
+    {
+      "ad": "CAS: Seismic detection of a solid inner core in Mars (Eylül 2025)",
+      "url": "https://english.cas.cn/newsroom/research_news/earth/202509/t20250928_1058923.shtml"
+    },
+    {
+      "ad": "The Weather Network: InSight mission ends (2022)",
+      "url": "https://www.theweathernetwork.com/ca/news/article/mars-insight-mission-ends-after-nasa-loses-contact-with-lander"
+    },
+    {
+      "ad": "Wikipedia: Martian dichotomy",
+      "url": "https://en.wikipedia.org/wiki/Martian_dichotomy"
+    },
+    {
+      "ad": "ESA: Mars Express peers into Mars' Grand Canyon (2022)",
+      "url": "https://esa.int/Science_Exploration/Space_Science/Mars_Express/Mars_Express_peers_into_Mars_Grand_Canyon"
+    },
+    {
+      "ad": "WorldAtlas: The largest volcano in the Solar System",
+      "url": "https://www.worldatlas.com/space/the-largest-volcano-in-the-solar-system.html"
+    },
+    {
+      "ad": "Wikipedia: Martian polar ice caps",
+      "url": "https://en.wikipedia.org/wiki/Martian_polar_ice_caps"
+    },
+    {
+      "ad": "Wikipedia: 2018 Mars global dust storm",
+      "url": "https://en.wikipedia.org/wiki/2018_Mars_global_dust_storm"
+    },
+    {
+      "ad": "PBS NewsHour: NASA loses its trailblazing Opportunity (2019)",
+      "url": "https://www.pbs.org/newshour/science/after-a-15-year-odyssey-nasa-loses-its-trailblazing-opportunity"
+    },
+    {
+      "ad": "Space.com: Curiosity rover's 10 biggest moments",
+      "url": "https://www.space.com/37712-mars-rover-curiosity-10-biggest-moments-5-years.html"
+    },
+    {
+      "ad": "Wikipedia: Martian meteorite",
+      "url": "https://en.wikipedia.org/wiki/Martian_meteorite"
+    },
+    {
+      "ad": "Newswise: Mars Global Surveyor crustal magnetism (1999)",
+      "url": "https://newswise.com/articles/mars-update-barren-planet-once-hummed-with-magnetism-leaving-tattoos"
+    },
+    {
+      "ad": "LASP: MAVEN reveals most of Mars' atmosphere was lost to space (2017)",
+      "url": "https://lasp.colorado.edu/maven/2017/03/30/maven-reveals-most-of-mars-atmosphere-was-lost-to-space/"
+    },
+    {
+      "ad": "Wikipedia: MAVEN",
+      "url": "https://en.wikipedia.org/wiki/MAVEN"
+    },
+    {
+      "ad": "NASA Science: Mars moons",
+      "url": "https://science.nasa.gov/mars/moons/"
+    },
+    {
+      "ad": "JAXA: Martian Moons eXploration (MMX)",
+      "url": "https://www.mmx.jaxa.jp/en/"
+    },
+    {
+      "ad": "NASA/TM-2010-216764: Earth-to-Mars Mission Opportunities 2026–2045",
+      "url": "https://ntrs.nasa.gov/citations/20100037210"
+    },
+    {
+      "ad": "Space.com: What to expect from the planets in 2026",
+      "url": "https://space.com/stargazing/what-to-expect-from-the-planets-in-2026-key-dates-and-sky-events"
+    }
+  ]
+}

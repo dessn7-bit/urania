@@ -1,0 +1,58 @@
+[
+  {
+    "id": "d38-1",
+    "soru": "Satürn'ün bir gününün uzunluğunu radyo sinyalinden ölçmek neden zor oldu?",
+    "secenekler": [
+      "Satürn'ün halkaları radyo dalgalarını tamamen engellediği için",
+      "Manyetik ekseni dönme eksenine neredeyse kusursuz hizalı olduğundan alan dönüşü bir 'fener' gibi belli etmediği için",
+      "Satürn hiç radyo ışınımı yaymadığı için",
+      "Satürn Dünya'ya hep aynı yüzünü gösterdiği için"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre Satürn'ün manyetik ekseni dönme eksenine 0,06°'den bile çok daha az eğik. Jüpiter'de 9,4°'lik eğiklik radyo ışınımını dönüşle değiştirir; Satürn'de bu olmaz. Voyager 10:39:23, Cassini 10:36–10:48 buldu; 2019'da halka dalgalarından 10 sa 33 dk 38 sn bulundu.",
+    "ders": "d38",
+    "bolum": 2
+  },
+  {
+    "id": "d38-2",
+    "soru": "Cassini Bölümü'nün iç kenarı neden yaklaşık 117.000 km'dedir?",
+    "secenekler": [
+      "Orada Satürn'ün Roche sınırı bulunduğu için",
+      "Oradaki parçacıklar Mimas'ın her turunda iki tur attığı için (2:1 rezonans); Mimas'ın çekişleri birikir ve malzemeyi seyreltir",
+      "Pan uydusu o bölgeyi süpürdüğü için",
+      "Enceladus'un gayzerleri o bölgeyi boşalttığı için"
+    ],
+    "dogru": 1,
+    "aciklama": "Derste Kepler'in üçüncü yasasıyla hesaplandı: 185.537 km × (1/2)^(2/3) ≈ 116.900 km; tabloya göre Cassini Bölümü 117.500 km'de başlar. Pan ise A halkasındaki Encke Boşluğu'nu açık tutar.",
+    "ders": "d38",
+    "bolum": 10
+  },
+  {
+    "id": "d38-3",
+    "soru": "Hyodo ve ekibinin Aralık 2024 çalışması halkaların yaşı tartışmasına ne ekledi?",
+    "secenekler": [
+      "Halkaların 2017'de oluştuğunu ölçtü",
+      "Benzetimlere göre mikrometeoroitler çarpınca buharlaşıp plazmaya döner ve manyetik alanla uzaklaştırılır; halkalar az kirlendiği için temiz görünmeleri genç olduklarını kanıtlamaz",
+      "Halkaların kütlesinin Mimas'ın 10 katı olduğunu buldu",
+      "Halkaların kayadan yapıldığını gösterdi"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre Cassini'nin düşük kütle ve temizlik ölçümleri 10–100 milyon yıllık genç halkalara işaret ediyordu. Hyodo, Madeira ve Genda'nın benzetimlerinde ~20 km/s'lik mikrometeoroitler buharlaşıp ~10.000 °C'lik plazmaya döner ve Satürn'ün manyetik alanıyla gezegene ya da dışarı savrulur; halkalar 4,5 milyar yaşında olabilir. Bu bir modeldir, tartışma açık.",
+    "ders": "d38",
+    "bolum": 11
+  },
+  {
+    "id": "d38-4",
+    "soru": "Ekim 2026'da İstanbul'dan 7×50 dürbünle Satürn'e bakarsan ne beklemelisin?",
+    "secenekler": [
+      "Halkaları ve Cassini Bölümü'nü açıkça",
+      "Sarımsı bir yıldız gibi bir nokta; halkalar seçilmez, çünkü bunun için ~20× ya da daha fazla büyütme gerekir ve 2026'da halkalar yalnızca 6–9° açık",
+      "Kutup altıgenini",
+      "Büyük Beyaz Leke'yi"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre halkaları ayırmak için 20× ya da üstü gerekir; bir rehbere göre 10×50 bile ancak halkalar geniş açıkken oval bir görüntü verir. Abrams Planetaryumu'na göre halkaların Dünya'ya eğikliği Temmuz 2026'da ~9,2°, Aralık 2026'da ~6,1°. Halkalar için ~30× büyüten 70 mm'lik bir teleskop gerekir; en açık hâl 2032.",
+    "ders": "d38",
+    "bolum": 15
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "d55-1",
+    "soru": "Borde–Guth–Vilenkin teoremine göre hangisi doğrudur?",
+    "secenekler": [
+      "Şişme geçmişe doğru sonsuza uzanabildiği için evrenin başlangıcı yoktur",
+      "Ortalama olarak genişleyen bir evren geçmişe doğru eksiktir; şişen bölgenin geçmiş sınırını anlatmak için şişmenin dışında bir fizik gerekir",
+      "Teorem evrenin yoktan var olduğunu kanıtlar",
+      "Teorem yalnızca büzülen evrenler için geçerlidir"
+    ],
+    "dogru": 1,
+    "aciklama": "2003 tarihli çalışmaya göre şişen ya da yeterince hızlı genişleyen her model geçmişe doğru eksiktir. Teorem evrenin nasıl başladığını söylemez; yalnızca şişmenin başlangıç sorusunu ortadan kaldırmadığını, bir adım geriye taşıdığını gösterir.",
+    "ders": "d55",
+    "bolum": 2
+  },
+  {
+    "id": "d55-2",
+    "soru": "Penrose ve arkadaşlarının 2018'de öne sürdüğü 'Hawking noktaları' için hangisi doğrudur?",
+    "secenekler": [
+      "Bağımsız analizler doğruladı ve konformal döngüsel kozmoloji kanıtlandı",
+      "Penrose Nobel ödüllü olduğu için iddia kesinleşmiş sayılır",
+      "Jow ve Scott (2020) başka yere bakma etkisini hesaba katınca noktaların standart şişme resmiyle uyumlu olduğunu buldu",
+      "Noktalar yalnız WMAP verisinde görüldü, Planck'ta yoktu"
+    ],
+    "dogru": 2,
+    "aciklama": "Noktalar 3–4 derece çaplı sıcak lekeler olarak Planck'ın 70 GHz verilerinde ve WMAP'te gösterildi; yazarlar önceki aeondaki kara deliklerin izi dedi. Bağımsız analiz, çok yere bakılınca böyle lekelerin rastlantıyla beklenebileceğini gösterdi. Bir Nobel ödülü kanıt sayılmaz; etiket: spekülasyon.",
+    "ders": "d55",
+    "bolum": 7
+  },
+  {
+    "id": "d55-3",
+    "soru": "w = −1,5, H0 = 70 km/s/Mpc ve Ωm = 0,3 için Caldwell, Kamionkowski ve Weinberg'in hesabına göre Büyük Yırtılma'ya yaklaşık ne kadar kalır?",
+    "secenekler": [
+      "Yaklaşık 22 milyar yıl",
+      "Yaklaşık 22 milyon yıl",
+      "Yaklaşık 10¹⁰⁰ yıl",
+      "Büyük Yırtılma hiç olmaz, çünkü w < −1"
+    ],
+    "dogru": 0,
+    "aciklama": "t ≈ (2/3) × 1/0,5 × 13,97 / √0,7 ≈ 22 milyar yıl. Bu örnekte Samanyolu sondan yaklaşık 60 milyon yıl, Güneş Sistemi 3 ay, Dünya 30 dakika önce sökülür. w −1'e yaklaştıkça süre uzar; w = −1 ise Büyük Yırtılma olmaz.",
+    "ders": "d55",
+    "bolum": 10
+  },
+  {
+    "id": "d55-4",
+    "soru": "Standart Model hesabına göre (Andreassen, Frost, Schwartz 2018) boşluğumuzun ömrü ve bu hesabın en önemli çekincesi nedir?",
+    "secenekler": [
+      "Yaklaşık 10 milyar yıl; çekince yok",
+      "Yaklaşık 10¹³⁹ yıl, yüzde 95 güvenle 10⁵⁸ yıldan uzun; Standart Model'in ötesindeki yeni fizik sonucu kökten değiştirebilir",
+      "Boşluk kesinlikle kararlıdır; Higgs kütlesi bunu kanıtladı",
+      "LHC çarpışmaları boşluğu her an bozabilir"
+    ],
+    "dogru": 1,
+    "aciklama": "Ölçülen Higgs (~125 GeV) ve üst kuark (~173 GeV) kütleleri boşluğu yarı kararlı gösterir. Hesap Standart Model'in çok yüksek enerjilere kadar değişmeden geçerli olduğunu varsayar; etiket kuram/hipotez. Kozmik ışınlar LHC'den çok daha yüksek enerjili çarpışmalar ürettiği için hızlandırıcılar tehdit değildir.",
+    "ders": "d55",
+    "bolum": 12
+  }
+]
