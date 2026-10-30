@@ -149,7 +149,7 @@
       /* eksen */
       s += S.cizgi(30, ya, 386, ya, { renk: R.soluk, kalin: 1.3 });
       [[1, '1'], [2, '2'], [5, '5'], [10, '10'], [20, '20'], [50, '50'], [100, '100']].forEach(([v, t]) => {
-        s += S.cizgi(X(v), ya, X(v), ya + 5, { renk: R.soluk, kalin: 1 }) + (v === 1 ? S.zeminliYazi(X(v) + 3, ya + 19, t, { boy: 13, hiza: 'middle', renk: R.soluk, zemin: R.zemin }) : S.yazi(Math.min(X(v), 384), ya + 19, t, { boy: 13, hiza: v === 100 ? 'end' : 'middle', renk: R.soluk }));
+        s += S.cizgi(X(v), ya, X(v), ya + 5, { renk: R.soluk, kalin: 1 }) + (v === 1 ? S.zeminliYazi(X(v) + 3, ya + 19, t, { boy: 13, hiza: 'middle', renk: R.soluk }) : S.yazi(Math.min(X(v), 384), ya + 19, t, { boy: 13, hiza: v === 100 ? 'end' : 'middle', renk: R.soluk }));
       });
       /* halkalar */
       s += S.kutu(X(1.3), ya - 7, X(3.5) - X(1.3), 14, { dolgu: R.soluk, renk: 'none', saydam: 0.5 }, 3);
@@ -382,8 +382,8 @@
         s += S.yazi(x + (L + 7) * c, y + (L + 7) * sn + 4.5, 'K', { boy: 13, hiza: 'middle', kalin: true });
         const ly = a === 0 || a === Math.PI ? y + 38 : a < Math.PI ? y - 40 : y + 40;
         const lx = hz === 'end' ? 392 : hz === 'start' ? 8 : x;
-        s += S.zeminliYazi(lx, ly, yil, { boy: 14, kalin: true, hiza: hz, zemin: R.zemin });
-        s += S.zeminliYazi(lx, ly + 16, t, { boy: 13, hiza: hz, renk: R.soluk, zemin: R.zemin });
+        s += S.zeminliYazi(lx, ly, yil, { boy: 14, kalin: true, hiza: hz });
+        s += S.zeminliYazi(lx, ly + 16, t, { boy: 13, hiza: hz, renk: R.soluk });
       });
       /* takvim çizelgesi: 1986–2070 */
       const T = yil => 30 + (yil - 1986) * 340 / 84, yb = 318;
