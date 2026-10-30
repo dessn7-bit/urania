@@ -29,6 +29,7 @@ WF = WebFetch ile bu oturumda açıldı (30 Ekim 2026). "HESAP" satırları pyth
 - Füzyon %0,7 | Quasar (WF); d4 | "the p–p chain in Sun-like stars converts about 0.7%"
 - Yığılma verimi ~%5,7 (ya da %6)–%32 | Quasar (WF) | "between roughly 5.7% (or 6%) and 32%"
 - Üst değer %42 | https://en.wikipedia.org/wiki/Black_hole (WF, d46) | "between 5.7% and 42%"
+- %32 ile %42 farkı: %32 Thorne sınırı (a = 0,998), %42 uç Kerr (a = 1); dönmeyen 0,057 | https://arxiv.org/abs/1110.0687 (Bambi 2011, Phys. Lett. B 705, 5; doğrulayıcı PDF'i açtı) | "η = 0.057 for a nonrotating BH, η = 0.32 for a BH rotating at the Thorne's limit (i.e. a∗ = 0.998) [Thorne 1974, ApJ 191, 507], and η = 0.42 for an extreme BH (i.e. a∗ = 1)". HESAP (BPT ISCO formülü, doğrulayıcı): 0,0572 / 0,321 / 0,421. Thorne sınırının nedeni (diskten yakalanan fotonlardan ters yönlü olanların kesitinin büyük olması) Thorne 1974'ün bilinen sonucudur; birincil makaleyi açamadım, Bambi'nin atfıyla sınırlı.
 - Kuasar gazı tüketince sıradan galaksi olur | Quasar (WF) | "it becomes an ordinary galaxy"
 - Salpeter ve Zeldoviç 1964; Lynden-Bell 1969 | d46 (Supermassive black hole, WF) | —
 - Örnek: L ≈ 1,53 × 10³⁹ W; Ṁ ≈ 1,7 × 10²³ kg/s ≈ 2,7 M☉/yıl; füzyonla ~39 M☉/yıl | HESAP | L☉ = 3,828 × 10²⁶ W (d2)
@@ -36,7 +37,7 @@ WF = WebFetch ile bu oturumda açıldı (30 Ekim 2026). "HESAP" satırları pyth
 ## Bölüm 3 — Eddington
 - L_Edd ≈ 1,26 × 10³⁸ erg/s × M/M☉ = 1,26 × 10³¹ W | https://ned.ipac.caltech.edu/level5/Sept13/Shen/Shen1.html (WF) | "L_Edd ≈ 1.26 × 10³⁸ (M_BH/M☉) erg s⁻¹"
 - 3C 273 kara deliği 886 ± 187 milyon M☉ (yankı haritalama) | 3C 273 (WF) | "886 ± 187 million solar masses, from reverberation mapping"
-- Diskler 10–100 kat aşabilir; ULX için Eddington-üstü model | Wikipedia "Eddington luminosity" yansısı https://en.wikipedia.org/wiki/Eddington%20luminosity (WF) | "Accretion discs may reach 10–100 times the limit"; ULX
+- Diskler 10–100 kat; ULX için Eddington-üstü model; dışarı çıkan parlaklık birkaç L_Edd'de doyar | https://en.wikipedia.org/wiki/Eddington_luminosity (Wikipedia'nın kendisi; ham wikitext doğrulayıcı tarafından curl ile indirildi) | "Accretion discs may exhibit luminosities as high as 10–100 times the Eddington limit without experiencing instabilities"; "Super-Eddington accretion onto stellar-mass black holes is one possible model for ultraluminous X-ray sources"; "The emergent luminosity from such accretion flow saturates at a few times L_Edd due to photon trapping". Eski satırdaki üçüncü taraf yansı kaldırıldı.
 - 2026 simülasyonunda bugün mümkün olandan onlarca kat hızlı büyüme | https://www.sciencedaily.com/releases/2026/09/260917003703.htm (WF) | "dozens of times faster than would be possible today"
 - UHZ1: L_bol ~5 × 10⁴⁵ erg/s; Eddington varsayımıyla ~4 × 10⁷ M☉ | https://arxiv.org/html/2308.02654v3 (WF) | "L_bol ~ 5 × 10⁴⁵ erg s⁻¹"; "assuming accretion at the Eddington rate"
 - Chandra aralığı 10–100 milyon | https://chandra.cfa.harvard.edu/blog/node/861 (WF) | "10 to 100 million suns"
@@ -73,7 +74,7 @@ WF = WebFetch ile bu oturumda açıldı (30 Ekim 2026). "HESAP" satırları pyth
 - Senkrotron ve göreli ışınlama tanımları | açıklama | —
 
 ## Bölüm 8 — Işıktan hızlı yanılsama
-- Tanım; radyo galaksileri, BL Lac, kuasar, blazar | https://www.wikiwand.com/en/articles/Superluminal_motion (WF) | "apparently faster-than-light motion seen in some radio galaxies"
+- Tanım; radyo galaksileri, BL Lac, kuasar, blazar | https://en.wikipedia.org/wiki/Superluminal_motion (Wikipedia'nın kendisi; doğrulayıcı wikitext indirdi, bu bölümdeki 9,6c, 6c, 19°, 43°, 1994 GRS 1915+105, Rees 1966, Gubbay 1968–1970 satırlarının hepsi aynı metinde görüldü) | "the apparently faster-than-light motion seen in some radio galaxies, BL Lac objects, quasars, blazars"
 - Rees 1966 öngörüsü | aynı (WF) | "may appear to a distant observer to have a transverse velocity much greater than the velocity of light"
 - 1968–1970 Gubbay ve ark. VLBI 3C 279 ≥ 2c | aynı (WF) | "at least twice the speed of light"
 - 3C 273 ~9,6c; M87 6c, 19° gereksinimi vs ~43°; GRS 1915+105 1994, 0,5″ haftalar içinde, "microquasar" | aynı (WF) | "up to ~9.6c"; "up to 6c"; "within 19°"; "about 43°"; "microquasar"
@@ -84,7 +85,8 @@ WF = WebFetch ile bu oturumda açıldı (30 Ekim 2026). "HESAP" satırları pyth
 ## Bölüm 9 — Blazarlar
 - 3C 273 türü "Blazar; Sy1" | 3C 273 (WF) | "Blazar; Sy1"
 - IceCube-170922A: 22 Eylül 2017, ~290 TeV; TXS 0506+056 gama ışınında parlıyordu; ilk çok yüksek enerjili gama ışını saptaması; Fermi-LAT, MAGIC vb.; blazarlar yüksek enerjili nötrino kaynağı olabilir | https://www.arxiv.org/abs/1807.08816 (WF) | "About 290 TeV"; "observed to be in a flaring state"; "suggests that blazars may be a source of high-energy neutrinos"
-- Uyarıdan önce aynı yönden nötrino salımı | arXiv:1807.08794 başlığı (WebSearch sonucu) | "Neutrino emission from the direction of the blazar TXS 0506+056 prior to the IceCube-170922A alert"
+- Uyarıdan önce aynı yönden nötrino: Eylül 2014–Mart 2015, 3,5σ | https://arxiv.org/abs/1807.08794 (özet doğrulayıcı tarafından açıldı) | "an excess of high-energy neutrino events ... between September 2014 and March 2015 ... 3.5σ evidence"
+- Rastlantı olasılığı ~3σ | https://arxiv.org/pdf/1807.08816 (doğrulayıcı PDF) | "Chance coincidence of the IceCube-170922A event with the flare of TXS 0506+056 is statistically disfavored at the level of 3σ"; 5σ keşif eşiği genel fizik uzlaşımıdır
 - Nötrino tanımı | d32 | mevcut
 - Mikroblazar IRAS 18293-0941: Science News 5 Ekim 2026; ~35 yıl; 1983 Hollanda–ABD katalog; tek taraflı parlak yapı, "fingerprint of blazars"; Samanyolu içinde; "perfect scale model", hızlı film | https://www.sciencenews.org/article/first-miniature-quasar-earth (WF) | "Nearly 35 years"; "the fingerprint of blazars"; "perfect scale model"
 - Haberler: 2026-10-05-mikroblazar-iras-18293, kesinlik "ön sonuç" | veri/haberler.json | proje dosyası
@@ -96,6 +98,7 @@ WF = WebFetch ile bu oturumda açıldı (30 Ekim 2026). "HESAP" satırları pyth
 - 3C 273 en parlak kuasar; 2,4 milyar ışık yılı parlaklık uzaklığı; ışık ~2 milyar yıl (d7) | 3C 273 (WF); d7 | "2.443 billion light-years"
 - UHZ1 en yüksek z kuasar (Ağustos 2024); eş hareketli uzaklık 31,6–31,7 milyar ışık yılı | Quasar (WF) | "UHZ1, at redshift about 10.1"; "31.6–31.7 billion light-years"
 - J0313–1806 | d46 (Wikipedia, WF) | z = 7,64; 1,6 × 10⁹ M☉
+- GN-z11 z = 10,6, AGN izleri | https://arxiv.org/abs/2305.12492 (Maiolino ve ark., özet doğrulayıcı tarafından açıldı) | "GN-z11, an exceptionally luminous galaxy at z=10.6, revealing the detection of the [NeIV]2423 and CII*1335 transitions (typical of Active Galactic Nuclei, AGN)"
 - Örnek: 1/(1+z) ve 2,7³ ≈ 20 | HESAP
 
 ## Bölüm 11 — Lyman-alfa ormanı
@@ -124,8 +127,10 @@ WF = WebFetch ile bu oturumda açıldı (30 Ekim 2026). "HESAP" satırları pyth
 
 ## Bölüm 14 — İstanbul
 - 3C 273: Başak; +02° 03′ 09″; 12,9 (bir yerde 12,8); 150 mm teleskop | 3C 273 (WF); Quasar (WF) | "+02° 03′ 09″"; "6-inch (150 mm) amateur telescope"; "12.8 in one passage and 12.9 in another"
+- 3C 273 Mart–Temmuz arasında görülür; 6 inç teleskopla gözle | 3C 273 (doğrulayıcı, wikitext) | "visible from March to July"; "bright enough to be observed by eye with a 6 inch amateur telescope". Gök koşulu kaynakta yok; "İstanbul içinden zorlanabilirsin" uyarısı d16'daki şehir sınır kadiri mantığına dayanır (yorum, sayı verilmedi).
+- Uygulama haritası: veri/hedefler.json'da 3C 273 ve M77 yok (doğrulayıcı dosyayı okudu) → ders metni buna göre düzeltildi
 - Dürbün sınırı ~10,8 | d16 (d1, d11) | mevcut
 - Kadir karşılaştırma yöntemi | d15 | mevcut (karşılaştırma yıldızı)
 - M77: Balina; 9,6 kadir; 45 milyon ışık yılı; küçük teleskop; Aralık; Méchain 1780; Seyfert örneği | https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-77 (WF) | "9.6"; "45 million light-years"; "December"; "a prime example of a Seyfert galaxy"
-- M77 dik açıklık −00° 00′ 48″; 47 milyon ışık yılı; tip 2 Seyfert prototipi | https://en.wikipedia.org/wiki/Messier_77 (WF) | "−00° 00′ 47.84″"; "47 million light-years"; "one of the closest and best-studied type 2 Seyfert galaxies"
+- M77 dik açıklık −00° 00′ 48″; tip 2 Seyfert prototipi; V = 8,9; uzaklık 10,72 ± 0,52 Mpc ≈ 35 milyon ışık yılı | https://en.wikipedia.org/wiki/Messier_77 (doğrulayıcı, güncel wikitext) | "dec = −00 00 47.84"; "appmag_v = 8.9"; "dist_ly = 10.72 ± 0.52 Mpc"; "one of the brightest, closest, and best-studied type 2 Seyfert galaxies". DÜZELTME: eski satırdaki "47 milyon ışık yılı" eski bir kopyadan geliyordu; güncel madde 10,72 Mpc (HESAP: × 3,2616 = 35,0 milyon ışık yılı) verir. Ders NASA'nın 45'ini ve Wikipedia'nın 35'ini birlikte veriyor.
 - Örnek: 90 − 41,0 + 2,05 ≈ 51°; M77 ≈ 49°; 10^(0,84) ≈ 6,9 | HESAP
