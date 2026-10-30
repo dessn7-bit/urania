@@ -9,7 +9,7 @@ Kısaltmalar: HR = https://en.wikipedia.org/wiki/Hawking_radiation ; BH = https:
 | İddia | Kaynak URL | Kaynaktaki ifade |
 |---|---|---|
 | Genel görelilik ile kuantum fiziği uyuşmaz; ikisinin birlikte önemli olduğu yerler kara delikler ve Büyük Patlama | d26_kaynak.md | [Ö] d26 "Genel göreliliğin sınırları: kuantum kütleçekim sorunu" satırları |
-| Dört kesinlik düzeyinin adları ve örnekleri (Hawking ışıması = Kuram / hipotez) | arastirma/dersler_v2/YAZIM_KILAVUZU.md (v6) | [Ö] kılavuzdaki tanımlar |
+| Dört kesinlik düzeyinin adları ve örnekleri (Hawking ışıması = Kuram ya da hipotez; TTS eğik çizgiyi "bölü" okuduğu için ünitedeki biçime çevrildi) | arastirma/dersler_v2/YAZIM_KILAVUZU.md (v6) | [Ö] kılavuzdaki tanımlar |
 | Hawking ışıması hiç gözlenmedi | HR | [B] "As of January 2024, none have been detected" (son patlamalar); d16_kaynak.md [Ö] "Such radiation bursts have not yet been detected" |
 
 ## Bölüm 1 — Kara deliklerin termodinamiği
@@ -19,7 +19,7 @@ Kısaltmalar: HR = https://en.wikipedia.org/wiki/Hawking_radiation ; BH = https:
 | Bekenstein 1972: entropi ufuk alanıyla orantılı; 1973: orantı sabiti için sezgisel öneri | BHT | [B] "In 1972 ... black holes should have an entropy proportional to the area of the event horizon" ; "In 1973 ... heuristically suggested the constant of proportionality" |
 | Genelleştirilmiş ikinci yasa | BHT | [B] "The generalized second law of thermodynamics (GSL) is needed to present the second law of thermodynamics as valid" |
 | Kara deliğe atılan gazın entropisi kaybolmuş gibi görünür | d30_kaynak.md | [Ö] d30 "Kara deliklerin entropisi" satırları |
-| Hawking 1972'de Bekenstein'ı reddetti, kara deliklerin hiçbir şey yayamayacağını savundu; Fransa'daki konferansta meslektaşlarıyla öfkeyle itiraz etti | JTA | [B] "maintaining that black holes could not radiate anything" ; "At a conference in France that year, he gathered a few senior colleagues and angrily confronted Bekenstein" |
+| Hawking 1972'de Bekenstein'ı reddetti, kara deliklerin hiçbir şey yayamayacağını savundu; Fransa'daki konferansta meslektaşlarıyla öfkeyle itiraz etti | JTA | [B] "maintaining that black holes could not radiate anything and therefore had no temperature" ; [V5 doğrulama 2026-10-30] yeniden okundu: "At a conference in France that year, Hawking gathered a few colleagues and angrily confronted Bekenstein" (kaynakta "senior" yok; dersteki "kıdemli" silindi) ; "At first he kept the calculation secret, afraid to admit his mistake" |
 | Bardeen, Carter, Hawking 1973 dört yasa; yüzey çekimi ufukta sabit; alan azalmaz | BHT | [B] "proposed by Bardeen, Brandon Carter, and Hawking in 1973" ; zeroth law surface gravity constant ; second law area non-decreasing |
 | Strominger–Vafa: süpersimetrik kara delik entropisini sicim kuramında hesapladı; LQG'de mikrodurumlara geometrik yorum | BHT | [B] "calculated the Bekenstein–Hawking entropy of a supersymmetric black hole in string theory" ; "In loop quantum gravity (LQG) it is possible to associate a geometrical interpretation with the microstates" |
 | [H] Örnek: 1,05 × 10⁷⁷ k (d30) ÷ ln 2 = 1,51 × 10⁷⁷ bit; (4,297 × 10⁶)² = 1,846 × 10¹³; × 1,05 × 10⁷⁷ ≈ 1,94 × 10⁹⁰ k (python: 1,937 × 10⁹⁰); 1 TB = 8 × 10¹² bit; 1,5 × 10⁷⁷ ÷ 8 × 10¹² ≈ 1,9 × 10⁶⁴ | PIN ; d30_kaynak.md | [Ö] d30 örneği 1,05 × 10⁷⁷ ; Pinochet 1,5 × 10⁵⁴ J/K |
@@ -35,7 +35,7 @@ Kısaltmalar: HR = https://en.wikipedia.org/wiki/Hawking_radiation ; BH = https:
 | Hawking ışıması Unruh etkisine ve eşdeğerlik ilkesinin ufka uygulanmasına dayanır | HR | [B] "Hawking radiation is dependent on the Unruh effect and the equivalence principle applied to black-hole horizons" |
 | Planck ötesi sorun; bugün çoğunlukla matematiksel yan ürün sayılıyor | HR | [B] "Hawking's original calculation includes quantum particles where the wavelength becomes shorter than the Planck length" ; "The trans-Planckian problem is nowadays mostly considered a mathematical artifact of horizon calculations" |
 | "Kuramsal olarak çok saygın" (d16 ifadesi) | d16.json | [Ö] d16 "kuramsal olarak çok saygın ama gözlemle henüz doğrulanmamış bir öngörüdür" |
-| [A] "Ufukta ayrılan çift" resminin bir benzetme olduğu; gerçek hesabın alan durumlarını karşılaştırdığı | — | [A] dersin kendi açıklaması; HR de çift resmini yalnızca "vacuum fluctuation" diliyle verir |
+| "Ufukta ayrılan çift" resminin bir benzetme olduğu; gerçek hesabın alan durumlarını karşılaştırdığı | https://math.ucr.edu/home/baez/physics/Relativity/BlackHoles/hawking.html (Physics FAQ, J. Baez 1994, düz. I. Schmelzer 1997) | [V5 doğrulama 2026-10-30] "this argument also does not correspond in any clear way to the actual computation" ; "this heuristic picture" ; "The usual computation involves Bogoliubov transformations" (iki gözlemcinin boşluk durumlarının karşılaştırılması) |
 
 ## Bölüm 3 — Ne kadar sıcak?
 | İddia | Kaynak URL | Kaynaktaki ifade |
@@ -72,7 +72,7 @@ Kısaltmalar: HR = https://en.wikipedia.org/wiki/Hawking_radiation ; BH = https:
 | 10¹¹ M☉ kara delik ~10¹⁰⁰ yıl | d30_kaynak.md | [Ö] d30 "Evrenin ısıl ölümü" satırları |
 | Evrenin yaşı ~1,38 × 10¹⁰ yıl | d8_kaynak.md | [Ö] 13,8 milyar yıl |
 | [H] 1,38e10 ÷ 2,1e67 = 6,57e-58 ; küp kök 8,70e-20 ; × 1,98841e30 = 1,73 × 10¹¹ kg (python tam formülle 1,73 × 10¹¹) ; Sgr A* ömrü 2,1e67 × (4,297e6)³ = 1,67 × 10⁸⁷ yıl ; 5e11 kg için Rs = 7,43 × 10⁻¹⁶ m, T = 2,45 × 10¹¹ K | sabitler.json | [H] |
-| [A] Küp ölçeklemesinin Stefan-Boltzmann ile türetilmesi | — | [A] kaynaklı T ∝ 1/M, A ∝ M² ve d2'deki yasadan |
+| Küp ölçeklemesinin Stefan-Boltzmann ile kaba türetilmesi | HR | [V5 doğrulama 2026-10-30] "By dimensional analysis, the life span of a black hole can be shown to scale as the cube of its initial mass"; ara adımlar (A ∝ M², T ∝ 1/M, güç ∝ A T⁴) kaynaklı ilkelerden |
 
 ## Bölüm 6 — İlkel kara delikler
 | İddia | Kaynak URL | Kaynaktaki ifade |
@@ -94,7 +94,7 @@ Kısaltmalar: HR = https://en.wikipedia.org/wiki/Hawking_radiation ; BH = https:
 | Saf durumun von Neumann entropisi 0, karışık durumunki sonlu; üniter evrim saftan karışığa çeviremez | IP | [B] "A pure state has von Neumann entropy 0. A mixed state has finite entropy ... unitary evolution cannot do that" |
 | Landauer ilkesi, bilginin fiziksel bedeli | d30_kaynak.md | [Ö] |
 | Kuantum kuralları yüz yıldır her sınavı geçti | d27.json | [Ö] d27 "Bu kurallar yüz yıldır her sınavı geçti" |
-| [A] Ansiklopedi yakma benzetmesi ve sınırı | — | [A] dersin kendi benzetmesi |
+| Ansiklopedi yakma benzetmesi ve sınırı | IP | [V5 doğrulama 2026-10-30] yanma benzetmesi kaynakta var: ışınım ısıl görünse de "its fine-grained features encode the precise details of the object that was burnt"; sınır cümlesi dersin kendi açıklaması |
 
 ## Bölüm 8 — Paradoks ve bahis
 | İddia | Kaynak URL | Kaynaktaki ifade |
@@ -115,7 +115,7 @@ Kısaltmalar: HR = https://en.wikipedia.org/wiki/Hawking_radiation ; BH = https:
 | Page 1993, PRL 71, 3743; Page eğrisi, dönüm noktası Page zamanı | DP ; PAGE ; IP | [B] DP "In 1993, he argued that if a black hole starts in a pure quantum state..." ; PAGE DOI 10.1103/PhysRevLett.71.3743 ; IP "Physical Review Letters 71(23), pp. 3743–3746" |
 | Entropi sıfırdan yarı yola dek artar, sonra sıfıra iner | PC | [B] "increasing from zero until near the halfway point of the evaporation, and then decreasing back to zero" |
 | Bilgi başlangıçta çok yavaş ya da dağınık çıkabilir, yaklaşık hesaplarda görünmez | PAGE | [B] "it may come out initially so slowly, or else be so spread out, that it would never show up in an analysis perturbative in M_Planck/M" |
-| [A] Saf bir bütünün iki parçasının dolanıklık entropileri eşittir (standart kuantum bilgi sonucu) | — | [A] doğrulama ajanı bir kaynakla eşleştirmeli (ör. IP Page eğrisi tanımı) |
+| Saf bir bütünün iki parçasının dolanıklık entropileri eşittir | PC | [V5 doğrulama 2026-10-30] "the unitarity constraint S_A = S_Ā" ; Haar ortalamasında S̄_B = S̄_R (denklem 1.1) |
 | [H] Page zamanı ≈ 2,1e67 ÷ 2 ≈ 1,05 × 10⁶⁷ yıl ; ÷ 1,38e10 = 7,6 × 10⁵⁶ ; Sgr A* 1,67e87 ÷ 2 ≈ 8 × 10⁸⁶ | — | [H] |
 
 ## Bölüm 10 — Ateş duvarı
@@ -141,7 +141,7 @@ Kısaltmalar: HR = https://en.wikipedia.org/wiki/Hawking_radiation ; BH = https:
 | Paradoksu "en azından bir ölçüde" çözer; Hawking 2005'te bilginin korunduğunu ilan etti | ADS | [B] "at least to some extent" ; "In 2005, Hawking announced that the correspondence settled the paradox in favor of information conservation" |
 | Fiziksel olmayan boyut sayıları ve süpersimetri | ADS | [B] "the known realizations use unphysical numbers of dimensions and unphysical supersymmetry" |
 | dS/CFT, göksel holografi; merkezi sanı hâlâ sanı | HOL | [B] "celestial holography ... its central conjecture is still a conjecture" |
-| [A] Hologram benzetmesi ve sınırı | — | [A] |
+| Hologram benzetmesi ve sınırı | HOL | [A] benzetme dersin; içerik HOL'deki "encoded on a lower-dimensional boundary" ve entropinin yarıçapın karesiyle sınırlanması cümlelerine dayanır |
 
 ## Bölüm 12 — Adalar ve kopya solucan delikleri
 | İddia | Kaynak URL | Kaynaktaki ifade |
@@ -160,8 +160,8 @@ Kısaltmalar: HR = https://en.wikipedia.org/wiki/Hawking_radiation ; BH = https:
 | Mutlak sıfıra yakın soğutulmuş atom bulutu | NAU | [B] "His team cooled a cloud of gas atoms to near absolute zero" |
 | 2016 Nature Physics "Observation of quantum Hawking radiation and its entanglement in an analogue black hole" | HR | [B] başlık |
 | 2019 Nature 569, 688; yazarlar; tayf ısıl, sıcaklık yüzey çekimiyle; önceki tayf ısıl değildi | MDN ; MDNX | [B] MDN özet: "agrees well with a thermal spectrum, and its temperature is given by the surface gravity" ; "the overall spectrum was not of the thermal form, and no temperature could be ascribed to it" ; MDNX yazar listesi |
-| 8.000 ⁸⁷Rb atomu; 7.400 tekrar; öngörülen 0,35 nK | MDNX | [B] "consisting of 8000 87Rb atoms" ; "The experiment is repeated 7400 times" ; "predicted Hawking temperature of 0.35 nK" (Not: phys.org özeti 0,035 nK aktardı; derste arXiv makalesinin değeri kullanıldı, doğrulama ajanı yayımlanmış sürüme bakmalı) |
-| Leonhardt (Weizmann): tayf Planck değil; ad hoc; bir sigma; keşif ölçütlerinde gözlendiği söylenemez | LEO | [B] "the spectrum is clearly not Planckian" ; "an ad hoc model" ; "the data become insignificant" ; "One cannot claim that quantum Hawking radiation and its entanglement has been observed" |
+| 8.000 ⁸⁷Rb atomu; 7.400 tekrar; öngörülen 0,35 nK | MDNX | [B] "consisting of 8000 87Rb atoms" ; "The experiment is repeated 7400 times" ; "predicted Hawking temperature of 0.35 nK" (Not: phys.org özeti 0,035 nK aktardı) ; [V5 doğrulama 2026-10-30] arXiv v2 (14 Eylül 2018, dergi künyesi "Nature 569, 688-691 (2019)", yayımlanan metnin karşılığı) da "predicted Hawking temperature of 0.35 nK", 8000 atom, 7400 tekrar diyor; Science News 29 Mayıs 2019: "0.35 billionths of a kelvin". phys.org'daki ".035 billionths of a kelvin" tek aykırı değer, büyük olasılıkla yazım hatası. Nature'ın kendi sayfası erişilemedi (istemci hatası); ADS özeti sayı vermiyor. Derste 0,35 nK kaldı. Kaynak: https://www.sciencenews.org/article/first-scientists-took-temperature-sonic-black-hole |
+| Leonhardt (Weizmann): tayf Planck değil; ad hoc; bir sigma; keşif ölçütlerinde gözlendiği söylenemez | LEO | [B] [V5 doğrulama 2026-10-30] yeniden okundu: "Weizmann Institute of Science" ; "the observed spectrum of Hawking radiation is not fully Planckian" ("clearly not" ifadesi doğrulanamadı; dersteki "açıkça" → "tam olarak") ; "taken into account with an ad hoc model" ; "only distinguishable ... for one standard deviation" ; "One cannot claim that quantum Hawking radiation and its entanglement has been observed by the standards of a discovery" |
 | 2010 optik deney tartışmalı | HR | [B] "the results remain debated" |
 | Kısa dalga boylu fizikten bağımsızlık (Planck ötesi) | UNR | [B] "independent of how sound behaves at wavelengths shorter than the healing length" |
 | Gökteki kara deliklerde doğrulamaz | NAU ; PHYS | [B] NAU "this experiment still doesn't confirm the existence of Hawking radiation in astronomical black holes" ; PHYS "the only way to do that will be to develop technology capable of actually measuring the radiation from a real black hole" |
@@ -176,3 +176,7 @@ Kısaltmalar: HR = https://en.wikipedia.org/wiki/Hawking_radiation ; BH = https:
 ## Notlar
 - d46 (süper kütleli kara delikler) bu oturumda klasörde yoktu; sayılar d16 ile tutarlı tutuldu (Sgr A* 4,297 milyon M☉, M87 6,5 milyar M☉, 62 nK, 2,1 × 10⁶⁷ yıl).
 - WebSearch: 15 arama kullanıldı. Kullanılmayan/derse konmayan: KM3NeT olayının enerjisi (aktarım belirsiz), Hogan/Fermilab holografik gürültü sayıları (aktarım belirsiz), Hawking'in 1971 alan teoremi yılı (kaynakta bulunamadı, yıl verilmedi).
+- [V5 doğrulama 2026-10-30] Kesinlik etiketi: "Kuram / hipotez" (ve defter notundaki "Kuram, hipotez") her yerde "Kuram ya da hipotez" yapıldı (19 yer); defter notundaki etiket listesinin eğik çizgileri noktalı virgül oldu. Diğer üç etiket kılavuzdaki biçimde.
+- [V5 doğrulama 2026-10-30] Yeniden okunan kaynaklar: BET (6 Şubat 1997; 21 Temmuz 2004 Dublin; Total Baseball; Thorne "As of 2024 ... not conceded", Preskill'in görüşü "relates to information that fell in at an earlier time"), AMPS (2012-07-13, üç ifade, "burns up"), ADS (1997 sonu, 1 Ocak 1998, 10.000+ atıf 2015, "at least to some extent", "not rigorously proved"), AHMST ve PSSY (ikisi de 27 Kasım 2019), PAGE (18 Haziran 1993, PRL 71, 3743), PC, EV (denklem 2 ve 6, 1,8 × 10¹⁴ g), HAWC, LAT (2018-01-31), BRK (11 Ocak 2024), COR (9 Aralık 2020), JTA, LEO, MDNX v2, IP.
+- [V5 doğrulama 2026-10-30] d46 artık klasörde: Sgr A* 4,3 milyon M☉ (d16'da 4,297), M87 6,5 milyar M☉; d46 Hawking ışıması sayısı vermiyor; çelişki yok. d52'deki 10¹¹ M☉ → 10¹⁰⁰ yıl (d30, d55) d46'daki King üst sınırının (en hızlı dönmede ~2,7 × 10¹¹) içinde.
+- [V5 doğrulama 2026-10-30] python ile yeniden hesaplandı: T(1 M☉) = 6,170 × 10⁻⁸ K; Sgr A* 1,436 × 10⁻¹⁴ K; M87 9,49 × 10⁻¹⁸ K; Dünya 0,0205 K; CMB eşiği 4,50 × 10²² kg (Ay'ın 0,613'ü), Rs 6,69 × 10⁻⁵ m; t_ev(1 M☉) 2,095 × 10⁶⁷ yıl; bugün biten 1,73 × 10¹¹ kg; 5 × 10¹¹ kg için Rs 7,43 × 10⁻¹⁶ m, T 2,45 × 10¹¹ K; Page oranı 7,6 × 10⁵⁶; ses kara deliği 176 M☉, 7,8 × 10⁹. Hepsi tutarlı.

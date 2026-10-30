@@ -33,7 +33,7 @@ Kısaltmalar: FRIEMAN = https://arxiv.org/pdf/0904.1832 ; CCPWP = https://en.wik
 - Gamow: 1956 Scientific American; 1970 My World Line | PT | ilgili ifade
 - Livio 2013 Brilliant Blunders: büyük olasılıkla söylemedi | PT | "concluded Einstein probably never made the statement"
 - Einstein'ın yazılarında birincil kayıt yok; Brunauer 1986 | PT | "lack of any primary record" ; "Stephen Brunauer's 1986 article"
-- Brunauer yalnızca Donanma işleri; savaş sonrası temas; Wheeler 2000 kitap; Alpher 1998 çevrimiçi; aynı Princeton ortamı; büyük olasılıkla söyledi | PT | ilgili ifadeler
+- Brunauer'in anlatımı Gamow'un Donanma ziyaretlerinin sıklığına ilişkin; Gamow sözün bu görüşmelerde söylendiğini iddia etmiyor; 1948 Einstein–Gamow mektubu askerî değil; Wheeler: Taylor ve Wheeler, Exploring Black Holes (2000); Alpher: HASTRO-L iletisi 2 Nisan 1998, "biggest" sözcüğü yok; üç anlatım büyük olasılıkla aynı olay; tam sözcükleri kesinleştirmek zor | https://arxiv.org/pdf/1804.06768 ; PT | "all three reports pertain to the same occasion" ; "very likely that he spoke of the term as his 'biggest blunder' on at least one occasion" ; "difficult to establish for certain that Einstein used those exact words" (denetimde düzeltildi: "yalnızca Donanma" ve "Princeton'daki aynı ortam" kaynakta yoktu)
 - O'Raifeartaigh ve Mitton, Physics in Perspective 20 (2018) 318–341 | https://www.arxiv.org/abs/1804.06768 | "Interrogating the legend of Einstein's 'Biggest Blunder'" ; "probably used that description at least once"
 
 ## Bölüm 4 — Basınç ve w
@@ -52,11 +52,11 @@ Kısaltmalar: FRIEMAN = https://arxiv.org/pdf/0904.1832 ; CCPWP = https://en.wik
 - Örnek: H = 2,183×10⁻¹⁸ s⁻¹; ρc = 8,523×10⁻²⁷; ρΛ = 5,835×10⁻²⁷; 3,49 H atomu; 5,24×10⁻¹⁰ J/m³; 50 m³ → 2,62×10⁻⁸ J | hesap (G ve proton kütlesi NIST; c NIST) | —
 - Proton 0,94 GeV; 3,35 ÷ 0,94 ≈ 3,6 | hesap | —
 - Yerel karanlık madde 0,4 GeV/cm³ = 400.000 GeV/m³; 400.000 ÷ 3,35 ≈ 1,2×10⁵ | proje: d50_kaynak.md (de Salas ve Widmark) + hesap | —
-- 1 kg × 9,8 × 1 m ≈ 10 J | hesap | —
+- 1 kg × 9,8 × 1 m ≈ 10 J; oran 2,62e-8 ÷ 9,8 = 2,7e-9, yani milyarda üç kadar (eski metindeki "milyarda birden az" yanlıştı) | hesap | —
 
 ## Bölüm 6 — Vakum enerjisi
 - Sıfır noktası enerjisi; boşluk enerjisi bilinen alanların toplanmasıyla tahmin edilir | CCPWP | "summing over known quantum fields"
-- Nernst 1916; Lenz 1926 (yarıçap Ay uzaklığından küçük); Pauli 1933; Lemaître 1934; Zeldoviç 1967–68 (~40 basamak) | CCPWP | ilgili satırlar
+- Nernst 1916; Lenz 1926 (yarıçap Ay uzaklığından küçük); Pauli 1933; Lemaître 1934; Zeldoviç 1967–68 (~40 basamak) | CCPWP | "would not reach even to the Moon" ; "forty orders of magnitude bigger" ("ilk kez" kaynakta desteklenmediği için çıkarıldı)
 - Belirsizlik ilkesi | proje: d27 | —
 - Higgs alanı spin 0 (skaler) | proje: d32.json | "Higgs bozonunun spini sıfırdır"
 - Casimir 1948; Bohr ile konuşma; Sparnaay 1958 büyük hatalar; Lamoreaux 1997 ilk doğrudan nicel ölçüm, %5; ~10 nm'de ~1 atm; iki yüksüz iletken levha, birkaç nm, çekim | https://en.wikipedia.org/wiki/Casimir_effect | "Lamoreaux's 1997 experiment ... within 5%" ; "roughly one atmosphere of pressure"
@@ -74,7 +74,7 @@ Kısaltmalar: FRIEMAN = https://arxiv.org/pdf/0904.1832 ; CCPWP = https://en.wik
 ## Bölüm 8 — Kuintesans, fantom, Büyük Yırtılma
 - Ratra–Peebles 1988, Wetterich 1988; ad 1998 Caldwell, Dave, Steinhardt; quinta essentia, Aristoteles; beşinci bileşen; w zamanla değişir; iz süren çözümler CC sorununu kısmen ele alır; fantom w < −1 Büyük Yırtılma | https://en.wikipedia.org/wiki/Quintessence_(physics) | ilgili ifadeler
 - Caldwell, Kamionkowski, Weinberg, PRL 91, 071301 (2003): yoğunluk sonlu sürede sonsuz; galaksiler, Güneş Sistemi, Dünya, atomlar | https://www.arxiv.org/abs/astro-ph/0302506 | "becomes infinite in finite time"
-- w = −3/2, H0 = 70, Ωm = 0,3: ~22 milyar yıl; Samanyolu 60 milyon yıl önce; Güneş Sistemi 3 ay; Dünya 30 dakika | https://ar5iv.labs.arxiv.org/html/astro-ph/0302506 | ilgili değerler
+- w = −3/2, H0 = 70: ~22 milyar yıl; Samanyolu ~60 milyon yıl önce; Dünya Güneş'ten birkaç ay önce koparılır; Dünya ~30 dakika önce parçalanır | https://ar5iv.labs.arxiv.org/html/astro-ph/0302506 | "22 Gyr" ; "roughly 60 million years before" ; "A few months before the end of time, the Earth will be ripped from the Sun" ; "∼30 minutes before the end the Earth will fall apart" (denetimde "3 ay" → "birkaç ay")
 - Örnek: 2⁻³ = 0,125; 2⁰ = 1; 2¹·⁵ = 2,83; 2⁻⁰·⁶ = 0,66 | hesap | —
 - Top benzetmesi | akıl yürütme (benzetme, sınırı metinde) | —
 
@@ -83,7 +83,7 @@ Kısaltmalar: FRIEMAN = https://arxiv.org/pdf/0904.1832 ; CCPWP = https://en.wik
 - Galileon'ların en popüler türü, disformal kuramlar, vektör alanlı modeller, karanlık maddesiz galaksi dinamiği modelleri etkilendi; "a significant fraction—though most definitely not all"; Λ "simplest and most favored" | aynı | ilgili ifadeler
 - Ezquiaga & Zumalacárregui PRL 119, 251304 (2017) ve diğerleri | aynı | atıf listesi
 - TeVeS GW hızıyla tutarsız | https://en.wikipedia.org/wiki/Modified_Newtonian_dynamics | "appears inconsistent with the speed of gravitational waves"
-- Kütleli kütleçekimi GW170817 ile sınırlandı; çok sayıda değiştirilmiş kütleçekimi kuramı dışlandı | ACCWP | "ruled out many modified gravity theories"
+- GW170817 çok sayıda değiştirilmiş kütleçekimi kuramını dışladı | ACCWP | "ruled out many modified gravity theories as alternative explanations to dark energy" (kütleli kütleçekiminin GW170817 ile sınırlandığı sayfada yok; metinden çıkarıldı)
 - Bazı kuramlarda kütleçekim dalgası hızının ışıktan farklı olması | akıl yürütme (APS: eleme hız ölçümüyle yapıldı) | —
 
 ## Bölüm 10 — Azınlık itirazları
@@ -97,7 +97,7 @@ Kısaltmalar: FRIEMAN = https://arxiv.org/pdf/0904.1832 ; CCPWP = https://en.wik
 - w(a) = w0 + wa(1 − a); "accurately represents the behavior of many physically motivated dark energy models"; w0 > −1, wa < 0 | DESI2 | Eq. (9) ; "in the quadrant with w0 > −1 and wa < 0"
 - DESI + CMB 3,1σ; SN ile 2,8–4,2σ; DR1 ~2,5–3,9σ | DESI2 | "3.1σ for the combination of DESI BAO and CMB data" ; "ranges from 2.8 − 4.2σ"
 - 5σ'ya ulaşmadı | proje: d17_kaynak.md (ScienceDaily) | "has not risen to 5 sigma"
-- Efstathiou (Cambridge) 2024/2025: ~0,04 mag kayma; düzeltilince tercih büyük ölçüde kaybolur | https://arxiv.org/html/2408.07175v3 | "evidence for an offset of ~0.04 mag. between low and high redshifts"
+- Efstathiou 2024/2025 (bağlı kurum sayfada görünmediği için metinden çıkarıldı): ~0,04 mag kayma; düzeltilince tercih büyük ölçüde kaybolur | https://arxiv.org/html/2408.07175v3 | "evidence for an offset of ~0.04 mag. between low and high redshifts"
 - Vincenzi ve ark. (DES) Ocak 2025: −0,042 mag yeniden üretildi; analiz iyileştirmeleri ve seçim farkları; sonuçlar doğrulandı; eski yöntemle 3,9σ → 3,3σ | https://arxiv.org/pdf/2501.06664 | "confirm the validity of the published DES-SN5YR results"
 - Ó Colgáin ve ark.: BAO henüz kararlı değil | https://arxiv.org/abs/2504.04417v4 | "has yet to stabilise"
 - Örnek: w = −0,861 + (−0,60)(1 − a); z = 0,5 → −1,061; z = 1 → −1,161; w0 + wa = −1,461; −1 geçişi a = 0,768, z = 0,30 | hesap (UNITE değerleri) | —
@@ -135,4 +135,9 @@ Kısaltmalar: FRIEMAN = https://arxiv.org/pdf/0904.1832 ; CCPWP = https://en.wik
 3. DESI DR2 makalesinde en iyi w0, wa değerleri okunan kısımda yoktu; örnekte Unite değerleri kullanıldı.
 4. Einstein'ın durağan modelinin kararsızlığı (iğne ucunda kalem) kaynakla doğrulanmadığı için metinden çıkarıldı.
 5. Yonsei'nin ülkesi kaynak metninde geçmediği için yazılmadı.
-6. Physics Today yazısının yazarı fetch özetinde açıkça görünmedi; içerik O'Raifeartaigh ve Mitton'un 2018 makalesiyle aynı bulguları anlatıyor, derste ikisi birlikte anıldı.
+6. Physics Today yazısının yazarı Cormac O'Raifeartaigh, 30 Ekim 2018 (denetimde doğrulandı).
+
+## Bağımsız denetim (30 Ekim 2026)
+Yeniden açılan kaynaklar: Nobel 2011 basın bülteni, PT, arXiv 1804.06768 (tam metin), WP Cosmological constant problem, WP Casimir effect, WP Quintessence, ar5iv astro-ph/0302506, APS Physics v10/134, WP Cosmic acceleration, Sci.News (Kasım 2025 ve Haziran 2026), arXiv 2503.14738 (DESI DR2, v3 9 Ekim 2025), arXiv 2501.06664, arXiv 2408.07175v3, arXiv 2609.05053, Scientific American, APS 2026 özeti, arXiv 0904.1832. Örnekler python3 ile yeniden hesaplandı (ρc, ρΛ, z = 0,295/0,632, geriye bakış 3,49/6,10 milyar yıl, Planck yoğunluğu oranı 8,8e122, w0–wa, sigma olasılıkları).
+DESI DR2 2,8–4,2σ değeri d17 ve d55 ile tutarlı. Unite bölümü veri/haberler.json'daki 2026-09-04-supernova-unite-karanlik-enerji haberiyle tutarlı (2.884 SN, 3,1–3,3σ frekansçı, Bayesçi zayıf, hakemsiz ön baskı).
+Kesinlik notu: "Askıda" etiketleri "doğrulanmadı, askıda" kalıbına çevrildi ve fikrin basamağıyla (kuram ya da hipotez) birlikte verildi; "Çözümsüz" ayrı etiketi kaldırıldı, kozmolojik sabit sorunu "güçlü kanıtlı ama açık sorulu" basamağına alındı.

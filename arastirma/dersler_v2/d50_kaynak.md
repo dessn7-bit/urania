@@ -70,7 +70,8 @@ Kısaltmalar: WIMPWP = https://en.wikipedia.org/wiki/Weakly_interacting_massive_
 - LZ 26 Ağustos 2024 açıklama; 280 gün (220 yeni + 60) | BNL | "presented August 26, 2024" ; 280 days
 - 4,2 ± 0,1 ton yıl; 2,2×10⁻⁴⁸ cm² (%90 GD), 40 GeV; PRL 135, 011802 (2025) | https://www.arxiv.org/abs/2410.17036 | "The strongest SI exclusion set is 2.2×10⁻⁴⁸ cm² at the 90% confidence level" ; "both for a mass of 40 GeV/c²" ; "Phys. Rev. Lett. 135, 011802 (2025)"
 - XENONnT 3,1 ton yıl; 1,7×10⁻⁴⁷ cm², 30 GeV | https://arxiv.org/abs/2502.18005v1 | minimum 1.7×10⁻⁴⁷ cm² at 30 GeV/c²
-- UZH duyurusu 24 Kasım 2025 | UZH | haber tarihi 24.11.2025
+- UZH duyurusu 24 Kasım 2025: makalenin PRL'de yayımlanması (sonucun ilk duyurusu değil; arXiv Şubat 2025) | UZH | haber tarihi 24.11.2025; "journal publication" (denetimde düzeltildi, 30 Ekim 2026)
+- LZ 1 Eylül 2026: 220 canlı gün (Mart 2023–Nisan 2024), daha geniş etkileşme türleri; tek olay, 2,6σ; karanlık maddeyse ≥ 200 GeV; en basit WIMP etkileşmesi olamaz; keşif iddiası yok; TeVPA 2026 | https://www.brown.edu/index%2Ephp/news/2026-09-01/lz-dark-matter-results ; https://www.ucl.ac.uk/news/2026/sep/possible-hint-dark-matter-recorded | "a single particle interaction" ; "2.6 sigma" ; "at least 200 GeV/c2" ; "could not have been the simplest type of WIMP interaction" ; "We are not claiming to have seen dark matter" (denetimde eklendi)
 - LZ Aralık 2025: 417 gün; 5,7 ton yıl; Mart 2023–Nisan 2025; 3–9 GeV sinyal yok | thebrighterside (11 Aralık 2025) | "417 high-quality live days" ; "5.7 tonne-years" ; "March 2023 to April 2025" ; "3 to 9 GeV. No WIMP signal was found."
 - Örnek: proton yarıçapı 0,8409 fm | https://en.wikipedia.org/wiki/Proton_radius_puzzle (proje: d31_kaynak.md) | "consensus value of 0.8409(4) fm"
 - Örnek: π r² ≈ 2,22×10⁻²⁶ cm²; oran 10²²; 10⁻²² m² → kenar 10⁻¹¹ m | hesap | π × (0,8409e-13)² = 2,221e-26 ; ÷ 2,2e-48 = 1,01e22
@@ -78,10 +79,11 @@ Kısaltmalar: WIMPWP = https://en.wikipedia.org/wiki/Weakly_interacting_massive_
 
 ## Bölüm 7 — Nötrino sisi, DAMA
 - Nötrino tabanı: duyarlılık en iyi maruziyetin karekökü kadar; <10 GeV Güneş, üstünde atmosferik ve yaygın süpernova nötrinoları | WIMPWP | "sensitivity improves at best as the square root of exposure" ; "Below about 10 GeV/c², the main neutrino background is from the Sun"
-- "Sis" adı | akıl yürütme / alandaki yaygın ad (kaynakta yalnız "neutrino floor"); metinde yalnız "deniyor" diye anıldı | —
+- "Nötrino sisi" adı; taban keskin sınır değil, yeterli veriyle geçilebilir | https://www.arxiv.org/abs/2109.03116 (O'Hare, PRL 127, 251802, 2021) | "some have recently advocated for calling it the 'neutrino fog'" ; "not a hard limit, but can be pushed past with sufficient statistics" (denetimde eklendi)
 - LZ bor-8: 4,5σ; 19 olay; ~20,6 + ~6,6 beklenti; PandaX-4T ve XENONnT ≤3σ | thebrighterside | "4.5 sigma significance" ; "19 events" ; "about 20.6 boron-8 neutrino events and about 6.6 accidental-coincidence events" ; "Prior results ... reached about 3 sigma or less"
 - Sigma tanımı | proje: d32.json | "sigma sayısı arttıkça rastlantı olasılığı hızla küçülür"
 - DAMA/LIBRA yıllık dalgalanma iddiası; COSINE-100 Aralık 2018 Nature; 2021 COSINE-100 ve ANAIS-112 yeniden üretemedi; Ağustos 2022 COSINE-100 DAMA yöntemiyle benzer dalgalanma | WIMPWP | "rules out WIMP–nucleon interactions as the cause" ; 2021 "failed to replicate" ; Aug 2022 "found a similar modulation"
+- 2025: COSINE-100 + ANAIS-112 altışar yıllık veri birleşimi DAMA sinyalini 4,68σ (1–6 keV) ve 3,53σ (2–6 keV) ile dışladı; PRL 135, 121002 (2025) | https://arxiv.org/abs/2503.19559 ; https://physics.aps.org/articles/v18/s117 | "4.68σ and 3.53σ respective exclusions of the DAMA/LIBRA signal" ; "effectively rules out a dark matter origin" ; çalışma asıl nedeni açıklamıyor (denetimde eklendi)
 - Yıllık dalgalanmanın nedeni (Dünya'nın yörünge hareketi) | akıl yürütme | —
 - Dolaylı algılama: gama, nötrino, kozmik ışın; Fermi-LAT 25 uydu galaksi; galaksi merkezi GeV fazlası önerildi | WIMPWP | "using 25 Milky Way satellite galaxies" ; "Galactic Center GeV excess ... proposed as possible WIMP annihilation signals"
 
@@ -100,7 +102,8 @@ Kısaltmalar: WIMPWP = https://en.wikipedia.org/wiki/Weakly_interacting_massive_
 - XENON1T 2020 sinyali XENONnT Temmuz 2022 ile dışlandı; CAST | AXWP | "ruled out by XENONnT observations in July 2022"
 - ADMX veri programı 4,9–6,2 μeV | AXWP | "collecting data at 4.9 to 6.2 μeV/c²"
 - h = 4,135667696×10⁻¹⁵ eV·s | NIST | "Planck constant in eV/Hz 4.135 667 696... e-15"
-- Örnek: 4 μeV → 967 MHz, 0,31 m; 4,54 μeV → 1,098 GHz; 1 μeV → 242 MHz | hesap | 4e-6 ÷ 4,1357e-15 = 9,672e8 ; c ÷ f = 0,310 ; 4,54e-6 ÷ 4,1357e-15 = 1,0978e9 ; 1e-6 ÷ 4,1357e-15 = 2,418e8
+- Örnek: 4 μeV → 967 MHz, 0,31 m; 4,55 μeV → 1,100 GHz; 1 μeV → 242 MHz | hesap | 4e-6 ÷ 4,1357e-15 = 9,672e8 ; c ÷ f = 0,310 ; 4,55e-6 ÷ 4,1357e-15 = 1,1002e9 ; 1e-6 ÷ 4,1357e-15 = 2,418e8
+- 1,10–1,31 GHz = 4,55–5,42 μeV (eski metinde 4,54–5,41; yuvarlama düzeltildi) | hesap | 1,10e9 × 4,13567e-15 = 4,549e-6 ; 1,31e9 × 4,13567e-15 = 5,418e-6
 
 ## Bölüm 9 — Steril nötrino, 3,5 keV
 - Tanım: yalnız kütleçekimi; etkin nötrinolar zayıf etkileşime katılır; karışabilir; keV kütle; doğrulanmadı | https://en.wikipedia.org/wiki/Sterile_neutrino | "interact only through gravity" ; "active neutrinos, which take part in the weak interaction" ; mass "on the keV/c² scale" ; "not been confirmed to exist"
@@ -130,6 +133,7 @@ Kısaltmalar: WIMPWP = https://en.wikipedia.org/wiki/Weakly_interacting_massive_
 - γ ≃ 0,8–1,4 benzetim; gözlem 0–0,5; Flores & Primack 1994, Moore 1994 | BULLOCK | "γ ≃ 0.8–1.4" ; "constant-density cores (γ ≈ 0−0.5)"
 - Too-big-to-fail 2011 | BULLOCK | "the most massive ΛCDM subhalos were systematically too centrally dense"
 - Çözüm yolları: geri besleme kaynaklı çekirdekler (ΛCDM içi); ılık karanlık madde (ΛCDM dışı) | ar5iv 1707.04256 | bölüm başlıkları "feedback-induced cores" ; "modifying linear-theory predictions (such as warm dark matter)"
+- Sales, Wetzel, Fattahi 2022: benzetimler sıradan maddeye dayalı çözümler buldu; iç karanlık madde miktarının çeşitliliği gibi gerilimler sürüyor | https://arxiv.org/abs/2206.05295 | "recent cosmological numerical simulations have pinpointed baryonic solutions to these challenges" ; "remaining tensions, including the diversity of the inner dark-matter content" (denetimde eklendi)
 - Ejderha = Draco | veri/takimyildiz.json | "ad": "Ejderha", "la": "Draco"
 
 ## Bölüm 12 — MOND
@@ -144,8 +148,9 @@ Kısaltmalar: WIMPWP = https://en.wikipedia.org/wiki/Weakly_interacting_massive_
 - Sıkı baryon–karanlık madde ölçekleme ilişkileri az incelenmiş sorun | ar5iv 1707.04256 | "tight baryon-dark matter scaling relations, are less explored"
 - 2023: 200 pc içinde 26.615 geniş çift; < 1 nm/s² Newton'dan sapma, MOND'a uyum; tartışmalı | MONDWP | "26,615 wide binaries within 200 parsecs" ; "accelerations below 1 nm/s²"
 - 1 nm/s² ≈ 8 × a0 | hesap | 1e-9 ÷ 1,2e-10 = 8,3
+- 2023 çalışmasının Chae'ye ait olması; eleştirmenler kalite denetimini sorguladı, yazarlar ek denetimlerin sonucu değiştirmediğini savundu | https://arxiv.org/pdf/2512.19652 ; MONDWP | "Chae (2023, 2024b,a) have found evidence for gravitational anomaly consistent with MOND" ; "caused by poor quality controls" ; "added quality controls do not significantly affect the results" (denetimde eklendi)
 - Banik ve ark. 2024 Newton'u güçlü yeğledi; 19σ iddiası sorgulandı; Saad ve Ting 85 → 57 çift; 2,5σ / 1,5σ; daha büyük örneklem | https://arxiv.org/pdf/2512.19652 | "strong preference for γ = 1" ; "claimed 19σ result has been questioned" ; "57 gravitationally bound systems" ; "about 2.5σ" ; "about 1.5σ"
-- Saad ve Ting 2025 sonu | arXiv numarası 2512 (Aralık 2025) | —
+- Saad ve Ting: ön baskı 22 Aralık 2025 (v3 6 Ekim 2026); 19σ iddiası "subsequent analyses" tarafından sorgulandı; b = 1 için 2,5σ, b = 2 için 1,5σ; daha büyük örneklem çağrısı | https://arxiv.org/abs/2512.19652 | "submitted 2025-12-22" ; "19σ claims that have been questioned by subsequent analyses" ; "would benefit from a larger sample size" (denetimde yeniden açıldı)
 - Örnek: v⁴ = GMa0; 5×10¹⁰ M☉ → 168 km/s; 10¹¹ → 200 km/s; ⁴√2 = 1,19 | hesap | (6,6743e-11 × 9,94e40 × 1,2e-10)^0,25 = 1,680e5 m/s
 
 ## Bölüm 13 — Euclid, Rubin
@@ -167,3 +172,7 @@ Kısaltmalar: WIMPWP = https://en.wikipedia.org/wiki/Weakly_interacting_massive_
 3. Euclid'in zayıf mercek yöntemiyle ilgili ayrıntı ESA basın bülteninde yoktu; yalnızca d17'deki mercek ilkesine gönderildi.
 4. Esra Bulbul'un Türkiye bağlantısı için kaynak aranmadı; derste yalnızca adı geçiyor.
 5. Physics World (wide binaries haberi) bakım sayfası döndürdü; kullanılmadı.
+
+## Bağımsız denetim (30 Ekim 2026)
+Yeniden açılan kaynaklar: arXiv 2410.17036 (LZ 4,2 t·yıl), thebrighterside (LZ Aralık 2025), arXiv 2502.18005 (XENONnT), UZH, Brown ve UCL (LZ Eylül 2026), arXiv 2503.19559 + APS Physics v18/s117 (COSINE+ANAIS), arXiv 2504.07279v2 (ADMX), Science News (ADMX 2020), WP Axion, WP WIMP, arXiv 2510.24560 (XRISM), arXiv 1402.2301 (Bulbul), arXiv 2601.06024 (Carr), arXiv 2012.11477, arXiv 1306.2314, ar5iv 1707.04256, arXiv 2206.05295, arXiv 2109.03116, WP MOND, arXiv 2512.19652, ESA Euclid, ESA DR1 timeline, LAPP Rubin, APS GW170817. Bütün örnekler python3 ile yeniden hesaplandı; tutarlı.
+Kesinlik notu: "doğrulanmadı, askıda" beşinci basamak değil, doğrulanmamış bir sinyale eklenen not olarak tanımlandı; her kullanımda sinyalin dayandığı fikrin basamağı da yazılı.

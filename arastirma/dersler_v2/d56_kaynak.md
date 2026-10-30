@@ -41,7 +41,7 @@ Kısaltmalar: WH = https://en.wikipedia.org/wiki/White_hole ; WO = https://wikiw
 | Frolov–Novikov: az madde düşmesi patlamanın görülmesini engeller | WH | [B] "would be highly 'unstable' in the sense that if any small amount of matter fell towards the horizon ... prevent the explosion from being seen" |
 | Hiçbir gökcismi beyaz delik olarak tanımlanmadı | RH | [B] "So far, no astronomical source has been successfully tagged a white hole." |
 | 2,725 K kozmik arka plan | d30_kaynak.md | [Ö] |
-| [A] Zamanın oku sezgisi (tersine çevrilmiş çöküş olasılık dışı) | d30.json | [A] d30 "Zamanın oku" ve Boltzmann bölümlerinden; kaynakta beyaz delik için açıkça söylenmiyor, derste "sezgi" diye sunuldu |
+| [A] Zamanın oku sezgisi (tersine çevrilmiş çöküş olasılık dışı) | d30.json | [A] d30 "Zamanın oku" ve Boltzmann bölümlerinden; kaynakta beyaz delik için açıkça söylenmiyor. [V5 doğrulama 2026-10-30] kaynak bulunamadığı için dersteki "güçlü bir ipucudur" → "bir ipucu olabilir" diye yumuşatıldı |
 
 ## Bölüm 4 — Kara delikten beyaz deliğe sıçrama
 | İddia | Kaynak URL | Kaynaktaki ifade |
@@ -50,7 +50,7 @@ Kısaltmalar: WH = https://en.wikipedia.org/wiki/White_hole ; WO = https://wikiw
 | Haggard ve Rovelli, 3 Temmuz 2014 arXiv; Phys. Rev. D 92, 104020; sonlu bölge dışında Einstein denklemlerini sağlayan metrik; kuantum etkileri uzun sürede birikir; kara delik beyaz deliğe tünelleyebilir; bilgi bilmecesi tartışmasını kökten değiştirir | HR14 | [B] "Submitted July 3, 2014" ; DOI 10.1103/PhysRevD.92.104020 ; "We show that there is a classical metric satisfying the Einstein equations outside a finite spacetime region" ; "quantum effects can pile up over a long time" ; "A black hole can thus quantum-tunnel into a white hole." ; "This scenario alters radically the discussion on the black hole information puzzle." |
 | Kuantum tünelleme, Güneş | d28_kaynak.md | [Ö] |
 | Rovelli 2018: kuantum etkilerince Einstein denklemlerinin çiğnendiği kısa geçiş bölgesi | WH | [B] "continue across a short transition region where the Einstein equations are violated by quantum effects" |
-| LQG (spin köpüğü) sıçrama süresi için çerçeve sunar | MD | [B] "Loop quantum gravity, in its spinfoam formulation, offers a framework for calculating the bounce time" |
+| LQG (spin köpüğü) sıçrama süresi için çerçeve sunar | MD | [B] [V5 doğrulama 2026-10-30] yeniden okundu: "Loop quantum gravity, in its spinfoam formulation, offers a framework for calculating the bounce time". MD bir derleme değil, tek yazarlı bir makale (arXiv 2024-11-01): dersteki "derlemesine" → "makalesine" |
 | Martin-Dussaud 2024: bilgi küçük beyaz delikte saklanıp geri verilir; sıçrama süresi tahminleri: Haggard–Rovelli ~M², Frolov–Vilkovisky ~M e^M, Christodoulou–D'Ambrosio ~M e^(ξM²); Hawking ~M³ | MD | [B] "presents a plausible trajectory for black holes that circumvents the information loss issue" ; bounce time estimates "about M² (Rovelli and Haggard), Me^M ..., Me^{ξM²} ... Standard Hawking evaporation takes about M³" |
 | Barceló, Carballo-Rubio, Garay: uzun süreli geçişler sağlıksız/kararsız; yalnızca Schwarzschild yarıçapını ışığın kabaca iki kez geçme süresinde olanlar sağlam; aksi hâlde kara delikler kara kalır | BCG | [B] "transitions with long characteristic time scales are pathologically unstable" ; "roughly twice the light-crossing time of the Schwarzschild radius" ; "Otherwise, black holes stay black" |
 | arXiv 1511 → Kasım 2015 | BCG | [A] arXiv numarasından çıkarım (kaynakta tarih yok) |
@@ -90,6 +90,7 @@ Kısaltmalar: WH = https://en.wikipedia.org/wiki/White_hole ; WO = https://wikiw
 | İddia | Kaynak URL | Kaynaktaki ifade |
 |---|---|---|
 | Maldacena ve Susskind, 3 Haziran 2013, "Cool horizons for entangled black holes"; özet cümleleri; AMPS paradokslarını dolanık kara deliklerde kurup çözme | ERE | [B] "Submitted 2013-06-03" ; "two distant black holes are connected through the interior via a wormhole, or Einstein-Rosen bridge" ; "maximally entangled states of two black holes that form a complex EPR pair" ; "similar bridges might be present for more general entangled states" ; "formulate versions of the AMPS(S) paradoxes and resolve them" |
+| ER = EPR kesinlik etiketi ikiye ayrıldı: iki kara delik için ("These solutions can be interpreted as maximally entangled states of two black holes") Kuram ya da hipotez; genel dolanık durumlar ("We suggest that similar bridges might be present for more general entangled states") Spekülasyon | ERE | [V5 doğrulama 2026-10-30] yeniden okundu (2013-06-03). Gerekçe: kılavuzda Spekülasyon "ne gözlemle ne sağlam bir hesapla desteklenen" fikirdir; iki kara delik biçimi AdS/CFT hesaplarıyla desteklenir, d52'deki ada hesapları da aynı düzeyde |
 | Fortschritte der Physik 61, 781 (2013) | https://ui.adsabs.harvard.edu/abs/2013ForPh..61..781M/abstract | [A] ADS bibkodu (arama sonucu); derste dergi adı verilmedi |
 | ER=EPR: dışarı çıkan ve içeri düşen parçacıklar solucan delikleriyle bağlı | FW | [B] "'somehow connected by wormholes,' so they are not independent" |
 | Işıktan hızlı mesaj yok (iletişimsizlik) | d28_kaynak.md | [Ö] |
@@ -98,6 +99,7 @@ Kısaltmalar: WH = https://en.wikipedia.org/wiki/White_hole ; WO = https://wikiw
 ## Bölüm 9 — 2022 Sycamore deneyi
 | İddia | Kaynak URL | Kaynaktaki ifade |
 |---|---|---|
+| [V5 doğrulama 2026-10-30] Crossref (10.1038/s41586-022-05424-3): çevrimiçi 30 Kasım 2022, basılı 1 Aralık 2022, Nature 612, 51–55; derse "30 Kasım'da çevrimiçi, 1 Aralık'ta basılı" yazıldı. Makaleye bağlı tek yayın sonrası not: "Author Correction: Traversable wormhole dynamics on a quantum processor", Nature 640, E32, 4 Nisan 2025 (10.1038/s41586-025-08788-4): Şekil 3b açıklamasına iki ve dört noktalı fonksiyonların "averaged over all fermions" olduğu eklendi. Bir "Editor's Note" bulamadım (Nature sayfası erişilemedi; aramada çıkmadı). Ders bir editör notundan söz etmiyor. | https://www.nature.com/articles/s41586-025-08788-4 | [B] |
 | 1 Aralık 2022 Nature'da yayımlandı; Sycamore; makine öğrenmesiyle "bebek" SYK benzeri model; bir kübit sokulup öbür sistemden çıktı (ışınlama); yalnızca eksi enerji karşılığı uygulanınca imza; gerçek solucan deliği yaratılmadı; kuantum kütleçekimi sınamalarının yerini tutmaz | CAL | [B] "published December 1, 2022, in Nature" ; Sycamore ; "has not created an actual wormhole" ; "does not substitute for direct probes of quantum gravity" ; negative energy |
 | Nature 612, 51–55 (2022); 7 Majorana fermiyonu, 5 değişmeli terim; makine öğrenmesi; üç eleştiri; 15 Şubat 2023 | KSY | [B] özet alıntıları |
 | Protokol 9 kübit kullanır | WEI | [B] "the protocol uses nine qubits" |
@@ -123,14 +125,14 @@ Kısaltmalar: WH = https://en.wikipedia.org/wiki/White_hole ; WO = https://wikiw
 | Hawking 1992: sonlu kozmik sicimlerle CTC yaratılamaz | H92 | [B] "one cannot create closed timelike curves with finite lengths of cosmic string" |
 | d25 ikizler örneği: 10 yıl / 6 yıl | d25.json | [Ö] d25 "İkizler paradoksu" örneği |
 | [H] 10 − 6 = 4 yıl | — | [H] |
-| [A] Boğazın iki ağzın saatlerini içeriden eşitlediği; makine kurulmadan öncesine gidilemeyeceği | WO | [A] MTY düzeneğinin dersteki açıklaması; doğrulama ajanı birincil kaynakla (MTY 1988) eşleştirmeli |
+| Boğazın iki ağzın saatlerini içeriden eşitlediği; makine kurulmadan öncesine gidilemeyeceği | https://en.wikipedia.org/wiki/Wormhole | [V5 doğrulama 2026-10-30] "time dilation causes the end of the wormhole that has been moved to have aged less" ; "synchronized clocks at either end of the wormhole will always remain synchronized" "as seen by an observer passing through the wormhole" ; "it would not be possible to use a wormhole to travel back to a time earlier than when the wormhole was first converted into a time machine" (MTY 1988 birincil metni okunmadı) |
 
 ## Bölüm 12 — Büyükbaba paradoksu
 | İddia | Kaynak URL | Kaynaktaki ifade |
 |---|---|---|
 | Novikov, Rus fizikçi, 1980'lerin ortası; paradoks yaratacak olayın olasılığı sıfır; 1990 makalesi: yalnızca bütünüyle tutarlı çözümler | NOV | [B] "Russian physicist Igor Dmitriyevich Novikov formulated the principle in the mid-1980s" ; "only globally self-consistent solutions can occur" |
 | Polchinski düşünce deneyi; Thorne 1994'te "Polchinski's paradox" adını verdi | NOV | [B] |
-| Echeverria, Klinkhammer, Thorne 1991: "glancing blow", çoklu ve bazen sonsuz çözüm; tutarsız başlangıç koşulu bulamadılar ama kanıtlanmadı | NOV | [B] |
+| Echeverria, Klinkhammer, Thorne 1991: "glancing blow", çoklu çözüm; tutarsız başlangıç koşulu bulamadılar ama kanıtlanmadı. Sonsuz sayıda çözüm: Thorne ve Robert Forward'ın sonraki çalışması | NOV | [B] [V5 doğrulama 2026-10-30] yeniden okundu: sonsuz çözümleri ECK 1991 değil, "later work by Thorne and Robert Forward" gösterdi; ders buna göre düzeltildi |
 | Deutsch 1991 kuantum modeli; Lloyd ölçüm sonrası seçim; Deutsch koşulunun zaman yolculuğunu anlatıp anlatmadığı tartışmalı (Tolksdorf ve Verch) | NOV | [B] |
 | "Kendini geçmişte öldürme" senaryosu (büyükbaba paradoksunun yakın biçimi) | NOV | [B] "traveling back and killing one's younger self" |
 
@@ -163,3 +165,8 @@ Kısaltmalar: WH = https://en.wikipedia.org/wiki/White_hole ; WO = https://wikiw
 - d46 bu oturumda klasörde yoktu; d16 ile tutarlılık korundu.
 - WebSearch: 15 arama kullanıldı.
 - Derse konmayanlar: Kruskal–Szekeres koordinatlarının yılı (kaynakta yok), Contact romanının yılı (kaynakta yok), Eardley 1974 kararsızlık makalesi (Wikipedia Frolov–Novikov'a bağlıyor; Eardley doğrulanamadı), Interstellar'ın Gargantua kütlesi ve dönme değeri (kaynak bulunamadı), GRB 060614'ün İstanbul'dan görünürlüğü (konu dışı).
+- [V5 doğrulama 2026-10-30] Kesinlik etiketi: "Kuram / hipotez" (ve defter notundaki "Kuram, hipotez") her yerde "Kuram ya da hipotez" yapıldı (9 yer); defter notundaki etiket listesinin eğik çizgileri noktalı virgül oldu.
+- [V5 doğrulama 2026-10-30] Yeniden okunan kaynaklar: WH (dört bölge, köprüden geçilemez, Frolov–Novikov kararsızlığı, Rovelli 2018), WO, HR14 (2014-07-03, PRD 92, 104020), BCG, MD (PDF: M², Me^M, Me^{ξM²}, M³), RH (2011-05-13; özette GRB 060614 adı yok, GRB 060614 bağlantısı ES ve GRB'den), GRB (IPFS: z 0,125 ± 0,001; güncel en.wikipedia GRB 060614 sayfasında beyaz delik cümlesi ve kırmızıya kayma artık yok), z = 0,125 için ikinci kaynak Gal-Yam ve ark. 2006 (arXiv astro-ph/0608678: "a z=0.125 galaxy", "The lack of an observed supernova"), YANG (Nature Commun. 6, 7323), MT, ERE, CAL, KSY (2023-02-15; 7 Majorana, 5 terim, üç bulgu), JR, REU (Will Dunham, 30 Kasım 2022), UT, H92 (15 Temmuz 1992; "one cannot create closed timelike curves with finite lengths of cosmic string"), CPC, NOV, PARTY, SPC (29 Aralık 2014), DNGR (CQG 32, 065001), APS.
+- [V5 doğrulama 2026-10-30] Krikalev: UT 2013 "en üretken zaman yolcusu" der; uzayda en uzun toplam süre rekoru bugün başkasında olabilir, ders yalnızca "rekortmenlerinden biri" diyor; değiştirilmedi.
+- [V5 doğrulama 2026-10-30] d46 artık klasörde; d56'yla ortak sayı yok, çelişki yok.
+- [V5 doğrulama 2026-10-30] python: Krikalev 3,30 × 10⁻¹⁰ × 6,941 × 10⁷ s = 0,0229 s; bir yıl için 0,0104 s; Miller 61.362; GPS 4,47 × 10⁻¹⁰; GRB 0,116, 3,23 × 10⁻⁶ yıl, 4,95 × 10¹⁴; γ(0,8c) = 1,667, 10 ÷ γ = 6. Hepsi tutarlı.
