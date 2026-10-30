@@ -1,0 +1,58 @@
+[
+  {
+    "id": "d28-1",
+    "soru": "Beyaz cüceyi kendi kütleçekimine karşı ayakta tutan basınç için hangisi doğrudur?",
+    "secenekler": [
+      "Çekirdekte süren füzyonun ürettiği ısıdan gelir; füzyon bitince cüce çöker",
+      "Pauli ilkesi yüzünden sıkışmış elektronların yüksek enerjili durumlara zorlanmasından gelir ve sıcaklıktan bağımsızdır",
+      "Elektronların ışınım basıncından gelir; beyaz cüce soğudukça büzülür",
+      "Protonların birbirini itmesinden (Coulomb engeli) gelir"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre yozlaşma basıncını 1926'da Fowler açıkladı: Pauli ilkesi aynı duruma ikiden fazla elektron sokulmasına izin vermez, sonraki elektronlar daha hızlı durumlara yerleşmek zorundadır. Bu basınç ısıdan gelmediği için beyaz cüce soğurken büyüklüğünü korur.",
+    "ders": "d28",
+    "bolum": 5
+  },
+  {
+    "id": "d28-2",
+    "soru": "Güneş'in merkezinde tipik ısıl enerji yaklaşık 1,3 keV, iki proton arasındaki Coulomb engeli yaklaşık 550 keV. Güneş neden yine de yanabiliyor?",
+    "secenekler": [
+      "Güneş'in merkezi aslında engeli aşacak kadar, milyarlarca kelvin sıcaktır",
+      "Kütleçekimi protonları engelin üstünden iter",
+      "Protonlar kuantum tünellemesiyle engelin içinden küçük bir olasılıkla sızabilir; tepkimeler yaklaşık 5,9 keV civarında (Gamow tepesi) olur",
+      "Protonlar elektronlarını kaybedince birbirini itmez"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre klasik olarak bu tepkime yıldız sıcaklıklarında neredeyse hiç gerçekleşmezdi (kaba olasılık ~10⁻¹⁷⁷). Kuantum tünellemesi sayesinde protonlar engelin tepesine çıkmadan geçebilir; hızlı protonların azlığıyla tünelleme kolaylığının dengesi Gamow tepesini verir.",
+    "ders": "d28",
+    "bolum": 7
+  },
+  {
+    "id": "d28-3",
+    "soru": "Schrödinger kedi düşünce deneyini (1935) ne amaçla kurdu?",
+    "secenekler": [
+      "Kedilerin gerçekten aynı anda hem canlı hem ölü olabileceğini kanıtlamak için",
+      "Dönemin kuantum yaklaşımı gündelik nesnelere körü körüne uygulanınca çıkan sonucun saçmalığını göstermek için",
+      "Radyoaktif bozunmanın hayvanlar üzerindeki etkisini ölçmek için",
+      "Bilinçli bir gözlemcinin dalga fonksiyonunu çökerttiğini göstermek için"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre Schrödinger, Einstein ile EPR makalesi üzerine yazışırken bu deneyi kurdu ve bu tür durumları “oldukça gülünç vakalar” diye niteledi. Amacı Kopenhag yaklaşımının gündelik nesnelere uygulanınca verdiği sonucun saçmalığını göstermekti.",
+    "ders": "d28",
+    "bolum": 9
+  },
+  {
+    "id": "d28-4",
+    "soru": "Dolanık iki elektrondan biri İstanbul'da, öteki Ankara'da ölçülüyor. Hangisi doğrudur?",
+    "secenekler": [
+      "İstanbul'daki gözlemci eksen seçimiyle Ankara'ya ışıktan hızlı bir mesaj gönderebilir",
+      "Ankara'daki gözlemci kendi sonuçlarında yalnızca rastgele bir dizi görür; ilişki ancak sonuçlar sıradan bir kanaldan karşılaştırılınca ortaya çıkar",
+      "Sonuçlar arasındaki ilişki, eldivenlerin kutulara önceden konması gibi tamamen baştan belirlenmiştir ve Bell testleri bunu doğrulamıştır",
+      "Ölçümler aynı anda yapılmazsa dolanıklık hemen kaybolur"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre iletişimsizlik teoremi, bir taraftaki ölçümün öbür tarafa bilgi aktaramayacağını söyler: Ankara'daki dizinin istatistiği İstanbul'da ne yapılırsa yapılsın değişmez. Bell testleri ise eldiven türü önceden belirlenmiş açıklamaları dışlar.",
+    "ders": "d28",
+    "bolum": 12
+  }
+]

@@ -1,0 +1,562 @@
+{
+  "id": "d28",
+  "unite": "fizik",
+  "yeni": true,
+  "baslik": "Kuantuma Giriş II: Atomlar, Tünelleme ve Dolanıklık",
+  "ozet": "Atomlar neden çökmüyor, periyodik tablo neden böyle dizilmiş, beyaz cüceleri ne ayakta tutuyor, Güneş klasik fiziğe göre neden hiç yanmamalıydı? Bu derste elektron bulutunu, spini, Pauli ilkesini, kuantum tünellemesini, Schrödinger'in kedisinin asıl anlamını, dolanıklığı ve 2022 Nobel'ini kazanan Bell deneylerini, ışıktan hızlı mesajın neden olmadığını ve lazerden MR'a, kuantum bilgisayara kuantum teknolojilerini abartısız biçimde öğreneceksin.",
+  "on_bilgi": [
+    "d27",
+    "d2",
+    "d4",
+    "d6"
+  ],
+  "bolumler": [
+    {
+      "baslik": "Atom neden çökmüyor?",
+      "paragraflar": [
+        "Elindeki bardak, oturduğun sandalye ve kendi bedenin büyük ölçüde boşluktan oluşur. 1911'de Ernest Rutherford'un ekibi, ince altın yaprağa atom altı parçacıklar göndererek atomun artı yükünün çok küçük bir çekirdekte, yarıçapı yaklaşık 10 femtometre, yani 10⁻¹⁴ m olan bir bölgede toplandığını gösterdi. Rutherford'un resmi, minik bir Güneş sistemine benziyordu: ortada artı yüklü ağır bir çekirdek, çevresinde dairesel yollarda dolanan hafif, eksi yüklü elektronlar.",
+        "Bu resim güzeldi ama klasik fiziğe göre imkânsızdı. Klasik elektromanyetizmaya (d33) göre hızlanan, yani yönü ya da hızı değişen her elektrik yükü ışık yayar ve enerji kaybeder. Dairesel yolda dönen bir elektron sürekli yön değiştirir; o hâlde sürekli ışıma yapmalı, enerjisini kaybedip sarmal çizerek çekirdeğe düşmeliydi. Hidrojen atomu üzerine yazılan kaynakların ifadesiyle, elektron böyle sarmal çizseydi bütün atomlar bir anda çökerdi. Oysa atomlar milyarlarca yıldır kararlı. Bir şeyler eksikti.",
+        "Kuantum fiziğinin cevabının özü, d27'de gördüğün belirsizlik ilkesinde saklıdır. Elektronu çekirdeğe ne kadar yaklaştırırsan, onu o kadar dar bir bölgeye hapsetmiş olursun; dar bölgeye hapsedilen bir dalganın momentumu ve dolayısıyla hareket enerjisi büyür. Çekirdeğin çekimi elektronu içeri çeker, hapsolmanın bedeli ise dışarı iter. İkisinin dengelendiği yer, atomun büyüklüğünü belirler. Elektron çekirdeğe düşemez, çünkü düşmek, sonsuz dar bir yere sığmak demektir ve bunun enerji bedeli sonsuzdur.",
+        "Bu dengeden çıkan büyüklüğe Bohr yarıçapı denir ve değeri yaklaşık 5,29 × 10⁻¹¹ m, yani 0,053 nm'dir. Çekirdekle karşılaştırınca atomun ne kadar boş olduğu ortaya çıkar. Ama “boş” sözcüğü de yanıltıcıdır: elektron o hacmin bir noktasında duran küçük bir bilye değil, bütün hacme yayılmış bir olasılık bulutudur. Bu dersin ilk yarısı bu bulutun yapısını, ikinci yarısı kuantumun daha da tuhaf yüzlerini anlatıyor."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Belirsizlikten atomun boyuna",
+        "metin": "1. adım: Elektronu r yarıçaplı bir bölgeye hapsetmek, momentumunu kabaca h-çizgi ÷ r kadar yapar; hareket enerjisi h-çizgi² ÷ (2 × m × r²) olur. h-çizgi = 1,0546 × 10⁻³⁴ J·s, m = 9,109 × 10⁻³¹ kg. r = 5,29 × 10⁻¹¹ m için: (1,0546 × 10⁻³⁴)² ÷ (2 × 9,109 × 10⁻³¹ × 2,80 × 10⁻²¹) ≈ 2,18 × 10⁻¹⁸ J ≈ 13,6 eV. 2. adım: Çekirdeğin çekim enerjisi, ince yapı sabiti α ≈ 0,0073 ile yazılırsa α × h-çizgi × c ÷ r = 0,0073 × 1,0546 × 10⁻³⁴ × 3 × 10⁸ ÷ 5,29 × 10⁻¹¹ ≈ 4,36 × 10⁻¹⁸ J ≈ 27,2 eV, eksi işaretli. 3. adım: Toplam 13,6 − 27,2 = −13,6 eV. Sonuç: d2'de gördüğün hidrojenin −13,6 eV'luk temel enerjisi, belirsizlik ilkesiyle kurulan bu kaba dengeden çıkıyor. Elektronu yarı yarıya yaklaştırırsan hareket enerjisi dört katına, çekim yalnızca iki katına çıkar; denge bozulur ve elektron geri itilir. Çekirdeğin 10⁻¹⁴ m'lik yarıçapıyla oran 5,29 × 10⁻¹¹ ÷ 10⁻¹⁴ ≈ 5.300: çekirdek 1 cm'lik bir bilye olsaydı, elektron bulutu 53 metre ötelere uzanırdı."
+      },
+      "akilda": "Klasik fiziğe göre dönen elektron ışıma yapıp çekirdeğe düşmeliydi. Kuantumda elektronu dar bir yere sıkıştırmanın enerji bedeli çekimi dengeler; atomun büyüklüğü (Bohr yarıçapı, 0,053 nm) bu dengeden çıkar."
+    },
+    {
+      "baslik": "Bohr'un basamakları ve tayf çizgileri",
+      "paragraflar": [
+        "1913'te Danimarkalı fizikçi Niels Bohr, atomun çökmemesini ve hidrojenin tayf çizgilerini aynı anda açıklayan cesur bir model önerdi. İki varsayımı vardı. Birincisi, elektron yalnızca belli yarıçaplardaki yörüngelerde, “durağan durumlarda” bulunabilir ve oradayken ışıma yapmaz. İkincisi, elektron dıştaki bir yörüngeden içtekine atladığında, kaybettiği enerji tek bir ışık paketi olarak salınır. Bohr bu izinli yörüngeleri seçerken Planck sabitini, bugün h-çizgi diye okunan ve h ÷ 2π'ye eşit olan biçiminde, dönme hareketinin, yani açısal momentumun en küçük birimi olarak kullandı.",
+        "Modelin sonuçlarını d2'de ayrıntılı gördün: hidrojenin n'inci düzeyinin enerjisi −13,6 eV ÷ n²'dir ve düzeyler arasındaki atlamalar Lyman, Balmer ve Paschen serilerini verir. Bunu tekrarlamayacağız. Burada asıl önemli olan, Balmer'in 1885'te yalnızca sayılardaki düzene bakarak bulduğu formülün ilk kez bir nedene kavuşmasıdır: tayf çizgileri, atomun içindeki izinli enerji basamaklarının parmak izidir.",
+        "Basamakların gerçek olduğuna dair doğrudan bir kanıt kısa sürede geldi. 1914'te James Franck ve Gustav Hertz, gaz atomlarına elektron çarptırdıklarında elektronların enerjiyi atomlara ancak belli miktarlarda aktarabildiğini gösterdi; bu, ayrık durumların varlığının doğrudan deneysel kanıtıydı. Bohr 1922'de, Franck ile Hertz 1925'te Nobel Fizik Ödülü'nü aldı.",
+        "Bu basamakların gökbilimdeki önemi büyüktür. d5'te yıldızların tayf çizgilerinin farkının esas olarak bileşimden değil sıcaklıktan geldiğini gördün. Kuantum dili bunun nedenini söyler: bir çizginin görünmesi için atomların, çizginin başladığı basamakta yeterince kalabalık olması gerekir ve hangi basamağın ne kadar dolu olduğunu sıcaklık belirler. Örneğin bir yıldızın atmosferinde Balmer soğurma çizgileri, ikinci basamakta oturan hidrojen atomlarının fotonları yutmasıyla oluşur; kabaca söylersek, çok soğuk bir yıldızda bu basamağa çıkmış hidrojen atomu azdır, çok sıcak bir yıldızda ise hidrojenin büyük kısmı iyonlaşmıştır ve basamakta elektron kalmaz. Bohr modelinin de sınırları vardı: yalnızca tek elektronlu atomlarda doğru sonuç veriyordu ve çizgilerin ince yarılmalarını açıklayamıyordu. Tam açıklama, d27'de gördüğün dalga mekaniğiyle geldi."
+      ],
+      "akilda": "Bohr (1913): elektron yalnızca izinli durumlarda bulunur, basamaklar arası atlamada foton salar. Franck–Hertz (1914) basamakları doğrudan gösterdi. Yıldız tayfındaki çizgilerin sıcaklıkla değişmesi, basamakların doluluğundan gelir."
+    },
+    {
+      "baslik": "Elektron bulutu: yörünge değil, orbital",
+      "paragraflar": [
+        "d27'de Schrödinger'in 1926'da yazdığı dalga denklemini gördün. Bu denklem hidrojen atomu için tam olarak çözülebilir ve çözüm, Bohr'un resmini kökünden değiştirir. Elektronun belirli bir yörüngesi yoktur; onun yerine, çekirdeğin çevresinde nerede bulunma olasılığının ne kadar olduğunu gösteren bir dalga fonksiyonu vardır. Bu olasılık dağılımına, eski “yörünge” sözcüğünden ayırmak için orbital denir. Elektron bulutu dediğimiz şey budur.",
+        "Bulutun ilginç bir özelliği var: elektronun herhangi bir uzaklıkta bulunma olasılığı sıfır değildir. En düşük enerjili durumda, yani temel durumda, elektronun en olası uzaklığı tam olarak Bohr yarıçapıdır. Bohr'un yörüngesi böylece tamamen yanlış değil, en olası uzaklığın bir gölgesi olarak yaşamını sürdürür. Ama elektron bazen çok daha yakında, bazen çok daha uzakta bulunabilir; bulutun keskin bir kenarı yoktur.",
+        "Her orbital birkaç sayıyla etiketlenir; bunlara kuantum sayıları denir. Baş kuantum sayısı n, enerjiyi belirler; Bohr'un basamak numarasıdır. İkinci sayı, l harfiyle yazılır ve orbitalin dönme hareketini, dolayısıyla biçimini belirler; bunlar tarihsel nedenlerle harflerle anılır: l = 0 için s, 1 için p, 2 için d. Üçüncü sayı m, bu dönmenin seçilen bir eksene göre yönünü verir. Spinle birlikte dördüncü bir sayı eklenir ve bir elektronun durumu bu dört sayıyla tam olarak betimlenir. Örneğin hidrojenin ikinci enerji düzeyinde bir s ve üç p orbitali, yani dört ayrı durum vardır.",
+        "Bir benzetme: gece bir lambanın çevresinde uçuşan bir pervaneyi uzun pozlamayla fotoğrafladığını düşün. Fotoğrafta pervanenin en çok vakit geçirdiği yerler koyu bir bulut olarak görünür. Orbital buna benzer, ama benzetmenin önemli bir sınırı var: pervanenin her an belirli bir yeri ve izlediği bir yol vardır, elektronun ise yoktur. Elektron bulutu, bir yolun üst üste binmiş izleri değil, ölçüm yapıldığında elektronun nerede bulunacağının olasılık haritasıdır."
+      ],
+      "akilda": "Elektronun yörüngesi yoktur; yerinin olasılık dağılımı vardır: orbital. En olası uzaklık Bohr yarıçapıdır ama elektron her uzaklıkta bulunabilir. Bir elektronun durumu dört kuantum sayısıyla (n, l, m, spin) tam betimlenir."
+    },
+    {
+      "baslik": "Spin: elektronun içindeki pusula",
+      "paragraflar": [
+        "1922'de Frankfurt'ta Otto Stern ile Gerlach, gümüş atomlarından oluşan ince bir demeti düzgün olmayan bir manyetik alandan geçirdi. Atomlar küçük mıknatıslar gibi davranıyorsa, klasik fiziğe göre mıknatıslarının yönleri rastgele olduğu için demet ekranda sürekli bir şerit hâlinde yayılmalıydı. Bunun yerine demet yalnızca iki ayrı lekeye bölündü. Bu deney, Stern–Gerlach deneyi adıyla anılır ve atom ölçeğinde yönlerin bile basamaklı olduğunu gösterdi. Fikir aslında 1916'da Sommerfeld'den gelmişti: Sommerfeld, bir manyetik alanda elektron yörüngelerinin alana göre yalnızca belli açılarda durabileceğini, yani “uzayda kuantumlanma” olduğunu önermişti. Stern ve Gerlach bunu gözle görülür bir biçimde, iki ayrı leke olarak ortaya koydu.",
+        "Bu ikiye bölünmenin kaynağı birkaç yıl sonra anlaşıldı. 1925'te Wolfgang Pauli, elektronun “klasik olarak betimlenemeyen iki değerliliğinden” söz etti; aynı yıl Goudsmit ve Uhlenbeck bunun kaynağının elektronun kendine ait bir özelliği, yarım birimlik spin olduğunu önerdi. Spin, elektronu küçük bir mıknatıs yapar ve bir eksen boyunca ölçüldüğünde yalnızca iki sonuç verebilir; bunlara kısaca “yukarı” ve “aşağı” denir.",
+        "Spin adı İngilizcede “topaç gibi dönme” anlamına gelir, ama benzetme burada çöker. Dönen gerçek bir topacın ekseni her yöne bakabilir ve mıknatıslığı sürekli değerler alabilirdi; Stern–Gerlach deneyi ise yalnızca iki sonuç gösterir. Spin, kütle ya da elektrik yükü gibi parçacığın temel bir özelliğidir; “içinde bir şey dönüyor” diye düşünmek yararlı bir ilk resim olsa da gerçeği anlatmaz.",
+        "Stern, moleküler demet yöntemine katkısı ve protonun manyetik momentini bulması için 1943 Nobel Fizik Ödülü'nü aldı. Spin, bu dersin geri kalanında her yerde karşına çıkacak: periyodik tablonun düzeninde, beyaz cüceleri ayakta tutan basınçta, dolanık parçacık çiftlerinde, hastanedeki MR cihazında ve Samanyolu'nun sarmal kollarını haritalayan 21 cm'lik radyo çizgisinde."
+      ],
+      "akilda": "Stern–Gerlach (1922): gümüş atomu demeti sürekli yayılmak yerine yalnızca ikiye bölündü. Kaynağı elektronun spini (Goudsmit ve Uhlenbeck, 1925): bir eksende yalnızca iki sonuç veren, gerçek dönmeye benzemeyen temel bir özellik."
+    },
+    {
+      "baslik": "Pauli dışlama ilkesi ve periyodik tablo",
+      "paragraflar": [
+        "Bir atomda birden çok elektron varsa neden hepsi en alttaki, en düşük enerjili orbitale yığılmıyor? Cevabı 1925'te Wolfgang Pauli verdi: iki özdeş elektron aynı kuantum durumunda bulunamaz. Buna Pauli dışlama ilkesi denir. Bir atomda bu, iki elektronun dört kuantum sayısının birden aynı olamayacağı anlamına gelir. Her orbital spinleri zıt yönde olmak şartıyla en çok iki elektron alabilir. Pauli bu buluş için 1945 Nobel Fizik Ödülü'nü aldı.",
+        "İlke yalnızca elektronlar için değil, fermiyon denen bütün parçacıklar için geçerlidir; nötronlar ve kuarklar da bu aileye girer. Fotonlar gibi bozon denen parçacıklar ise bu kısıtlamaya uymaz; istedikleri kadar çoğu aynı durumda bulunabilir. Doğa, parçacıkları bu iki büyük aileye ayırır ve iki ailenin davranışı birbirinden çok farklıdır.",
+        "Periyodik tablonun düzeni bu ilkenin doğrudan sonucudur. Birinci enerji düzeyinde yalnızca bir s orbitali vardır; iki elektron alır. Bu yüzden tablonun ilk satırında yalnızca iki element bulunur: hidrojen ve helyum. İkinci düzeyde bir s ve üç p orbitali, toplam dört orbital vardır; sekiz elektron alır ve ikinci satırda lityumdan neona sekiz element vardır. Bohr 1922'deki modelinde 2, 8 ve 18 gibi belli elektron sayılarının kararlı “kapalı kabuklara” karşılık geldiğini fark etmişti; soy gazların elektron sayıları bu kapalı kabuklara denk gelir. Pauli ilkesine giden yolda bir ipucu da Edmund Stoner'dan geldi: Stoner 1924'te, her n değeri için tek elektronlu enerji düzeylerinin sayısının, soy gazların kapalı kabuklarındaki elektron sayısına eşit olduğunu fark etti. Pauli ilkesi bu sayıların neden öyle olduğunu açıkladı. Kabuğu dolu bir atom kimyasal olarak durgundur; dolu bir kabuğun dışında tek başına kalan elektron ise kolayca verilir ya da paylaşılır.",
+        "İlkenin bir sonucu daha var: maddenin kendisinin kararlılığı. Dyson ve Lenard 1967'de, Pauli ilkesi olmasaydı sıradan maddenin çökeceğini gösterdi. Elini masaya bastırdığında elinin masanın içinden geçmemesinin derindeki nedeni, iki cismin elektronlarının aynı durumlara sıkıştırılamamasıdır. Kimyanın bütün çeşitliliği, yaşamın kendisi ve az sonra göreceğin ölü yıldızların dayanıklılığı bu tek cümlelik ilkeye dayanır."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Lityumun üçüncü elektronu nereye gider?",
+        "metin": "1. adım: Helyumun iki elektronu var. İkisi de birinci düzeyin tek orbitaline, 1s'ye, zıt spinlerle girer. Bu orbital artık doludur: helyum kapalı kabuklu bir soy gazdır. 2. adım: Lityumun üç elektronu var. Üçüncü elektron 1s'ye giremez, çünkü orada iki yer de doludur ve aynı dört kuantum sayısını taşıyan iki elektron olamaz. Bir sonraki en düşük enerjili boş durum olan 2s'ye çıkmak zorundadır. 3. adım: İkinci düzeyde 1 s + 3 p = 4 orbital, yani 4 × 2 = 8 yer vardır. Lityumdan başlayarak elektron eklenmeye devam edilince, toplam 2 + 8 = 10 elektronda ikinci kabuk da dolar; bu elektron sayısındaki element yine bir soy gazdır, neon. 4. adım: Lityumun 2s'deki tek elektronu dolu bir kabuğun dışında yalnız kalır, çekirdeğe gevşek bağlıdır ve kolayca verilir. Sonuç: elementlerin kimyasal karakteri, en dıştaki elektronların hangi basamakta ve kaç tane oturduğuna bağlıdır; o yerleşimi Pauli ilkesi belirler."
+      },
+      "akilda": "Pauli dışlama ilkesi (1925): iki özdeş fermiyon aynı kuantum durumunda bulunamaz; her orbitale en çok iki elektron, zıt spinle. Periyodik tablonun 2 ve 8 elementlik ilk satırları ve maddenin çökmemesi buradan gelir. Fotonlar (bozonlar) bu kurala uymaz."
+    },
+    {
+      "baslik": "Yıldızları ayakta tutan kuantum: yozlaşma basıncı",
+      "paragraflar": [
+        "d6'da beyaz cücelerin ısıyla değil, elektronların direnciyle ayakta durduğunu gördün. Şimdi bu direncin nereden geldiğini anlayabiliriz. Bir yıldızın içinde madde aşırı sıkıştığında elektronlar en düşük enerji durumlarını doldurur. Pauli ilkesi aynı duruma ikiden fazla elektron sokulmasına izin vermediği için, sonraki elektronlar giderek daha yüksek enerjili, yani daha hızlı hareket eden durumlara yerleşmek zorundadır. Bu zorunlu hareket, sıcaklıktan bağımsız bir basınç doğurur; buna yozlaşma basıncı denir. Bazı kaynaklar dejenerasyon basıncı der.",
+        "Bu fikrin tarihi kuantum mekaniğiyle yaşıttır. Beyaz cücelerin olağanüstü yoğunluğu 1920'lerde bir bilmeceydi: Arthur Eddington 1927'de Sirius B'nin, bizim tanıdığımız her maddeden yaklaşık 3.000 kat yoğun bir maddeden oluştuğunu vurgulamıştı. Sirius B'nin d6'daki sayılarıyla bunu kendin de hesaplayabilirsin: kütlesi 1,018 Güneş kütlesi, yani yaklaşık 2,02 × 10³⁰ kg; yarıçapı yaklaşık 5.635 km. Hacmi 4/3 × π × (5,635 × 10⁶ m)³ ≈ 7,5 × 10²⁰ m³ eder; kütleyi hacme bölünce ortalama yoğunluk yaklaşık 2,7 × 10⁹ kg/m³, yani santimetreküp başına 2,7 ton çıkar. Bir şeker küpü büyüklüğünde Sirius B maddesi Dünya'da yaklaşık 2,7 ton gelirdi. Bilmeceyi 1926'da R. H. Fowler, yeni kurulan kuantum mekaniğini ve aynı yıl ortaya konan Fermi–Dirac istatistiğini uygulayarak çözdü. Wikipedia'ya göre tipik bir beyaz cücenin ortalama yoğunluğu santimetreküp başına yaklaşık 1 ton, yani metreküpte yaklaşık 10⁹ kg'dır.",
+        "Yozlaşma basıncının ısıyla ilgisi olmaması önemli bir sonuç doğurur. Sıradan bir gaz soğudukça basıncı düşer ve büzülür. Beyaz cüce ise milyarlarca yıl boyunca ısısını uzaya yayarak soğurken (d6) büyüklüğünü korur, çünkü onu ayakta tutan şey sıcaklık değil, elektronların sıkışmaya karşı kuantum direncidir. Aynı ilke nötronlar için de geçerlidir: nötron yıldızlarında kütleçekimine nötronların yozlaşma basıncı karşı koyar.",
+        "Bu direncin bir sınırı da vardır. Beyaz cüce kütle kazandıkça elektronlar daha da sıkışır ve Wikipedia'nın Chandrasekhar sınırı maddesine göre hızları ışık hızına yaklaşır; artık özel görelilik (d25) hesaba katılmalıdır. Bu durumda basınç, yoğunluk arttıkça eskisinden daha yavaş artar ve belli bir kütlenin üstünde kütleçekimini durduramaz hâle gelir. Wilhelm Anderson 1929'da ve Edmund Stoner 1930'da ilk tahminleri yaptı; Subrahmanyan Chandrasekhar 1931'de düzeltilmiş sınırı buldu: karbon-oksijen beyaz cüceler için yaklaşık 1,4 Güneş kütlesi. Sonrasını, yani bu sınırın aşılmasıyla gelen süpernovaları ve nötron yıldızlarını, d6'da gördün."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Beyaz cücedeki elektronlar ne kadar hızlı?",
+        "metin": "1. adım: Yoğunluk 10⁹ kg/m³ olsun. Karbon ve oksijende her iki nükleona (proton ya da nötron) yaklaşık bir elektron düşer; nükleon kütlesi yaklaşık 1,67 × 10⁻²⁷ kg. Elektron sayısı metreküpte 10⁹ ÷ (2 × 1,67 × 10⁻²⁷) ≈ 3,0 × 10³⁵. 2. adım: Bir elektrona düşen ortalama uzunluk, bu sayının küp kökünün tersidir: (3,0 × 10³⁵) üzeri eksi üçte bir ≈ 1,5 × 10⁻¹² m. 3. adım: Belirsizlik ilkesiyle momentum kabaca h-çizgi ÷ Δx = 1,0546 × 10⁻³⁴ ÷ 1,5 × 10⁻¹² ≈ 7,0 × 10⁻²³ kg m/s. 4. adım: Hız ≈ p ÷ m = 7,0 × 10⁻²³ ÷ 9,109 × 10⁻³¹ ≈ 7,7 × 10⁷ m/s, yani ışık hızının yaklaşık %26'sı. Sonuç: beyaz cücenin içindeki elektronlar, sıcaklık sıfıra inse bile, yalnızca sıkışık oldukları için ışık hızının dörtte biri mertebesinde kıpırdar. Yoğunluk arttıkça bu hız ışık hızına yaklaşır; Chandrasekhar sınırının kökü buradadır. Bu bir mertebe tahminidir."
+      },
+      "akilda": "Pauli ilkesi sıkışmış elektronları yüksek hızlara zorlar; bu sıcaklıktan bağımsız yozlaşma basıncı beyaz cüceleri (Fowler, 1926), nötronlarınki nötron yıldızlarını ayakta tutar. Elektron hızları ışık hızına yaklaşınca direnç yetmez: Chandrasekhar sınırı, ~1,4 M☉."
+    },
+    {
+      "baslik": "Duvarın içinden geçmek: kuantum tünellemesi",
+      "paragraflar": [
+        "Bir bisikletle tepeye tırmandığını düşün. Tepenin zirvesine çıkacak kadar hızın yoksa yarı yolda durur, geri kayarsın; tepenin öbür yanına geçmenin klasik fizikte başka yolu yoktur. Fizikçiler böyle bir tepeye enerji engeli der. Kuantum dünyasında durum farklıdır. Parçacığın dalga fonksiyonu engele çarptığında aniden sıfıra inmez; engelin içine doğru hızla sönümlenerek uzanır. Engel yeterince inceyse, dalga fonksiyonunun küçük bir kuyruğu öbür taraftan çıkar. Bu, parçacığın engelin öbür yanında belirme olasılığının sıfır olmadığı anlamına gelir. Buna kuantum tünellemesi denir.",
+        "Tünelleme olasılığı, engelin yüksekliğine ve kalınlığına çok sert bir biçimde bağlıdır: engel biraz kalınlaşınca ya da yükselince olasılık kat kat düşer. Ağır parçacıklar için de olasılık çok daha küçüktür. Bu yüzden tünelleme elektronlar ve protonlar için önemli, futbol topları için önemsizdir. Benzetmenin sınırı şu: ortada gerçek bir tünel yoktur, parçacık engeli “delmez”; yalnızca öbür tarafta bulunma olasılığı sıfırdan farklıdır.",
+        "Tünellemenin ilk büyük başarısı radyoaktiviteyi açıklamak oldu. Bazı ağır çekirdekler kendiliğinden bir alfa parçacığı, yani iki proton ve iki nötrondan oluşan bir helyum çekirdeği fırlatır; buna alfa bozunumu denir. Bilmece şuydu: alfa parçacığının enerjisi, çekirdeğin içinde onu tutan engeli aşmaya yetmiyordu, ama yine de dışarı çıkıyordu. George Gamow 1928'de Göttingen'de bu bilmeceyi tünellemeyle çözdü; Ronald Gurney ve Edward Condon da bağımsız olarak aynı fikre ulaştı, ama Gamow kadar nicel sonuçlar elde edemediler.",
+        "Radyoaktif bozunmanın kendisi, yarılanma ömürleri ve radyoaktif tarihleme ayrıntılı olarak d31'de anlatılıyor. Bizim için şimdilik önemli olan, Gamow'un aynı hesabı tersine çevirmesidir: bir parçacık çekirdekten tünelleyerek çıkabiliyorsa, dışarıdan bir parçacık da tünelleyerek çekirdeğe girebilir. Bu fikir, yıldızların nasıl parladığı sorusunu çözdü."
+      ],
+      "akilda": "Kuantum tünellemesi: dalga fonksiyonu engelin içinde sönümlenerek öbür yana sızar; parçacık klasik olarak aşamayacağı bir engelin ötesinde belirebilir. Olasılık engelin kalınlığı ve yüksekliğiyle sertçe düşer. Gamow 1928'de alfa bozunumunu böyle açıkladı."
+    },
+    {
+      "baslik": "Güneş tünelleme sayesinde parlıyor",
+      "paragraflar": [
+        "d4'te Güneş'in çekirdeğinde iki protonun kaynaşmasıyla başlayan proton-proton zincirini gördün. Protonlar artı yüklüdür ve birbirini iter; bu elektriksel itmenin oluşturduğu engele Coulomb engeli denir. Wikipedia'nın proton-proton zinciri maddesine göre Eddington'ın döneminde Güneş'in sıcaklığı bu engeli aşmak için fazla düşük sanılıyordu. Gerçekten de sayılar ezicidir.",
+        "Yıldızlarda termonükleer tepkimeler üzerine yazılmış bir derleme makaleye göre iki proton arasındaki Coulomb engelinin etkin yüksekliği yaklaşık 550 keV'tur, yani 550 bin elektronvolt. Klasik fiziğe göre iki proton ancak hareket enerjileri bunu aşarsa kaynaşabilirdi. Oysa yaklaşık 10 milyon K sıcaklıkta tipik ısıl enerji yalnızca 0,86 keV'tur; Güneş'in merkezindeki yaklaşık 15,6 milyon K'de bile 1,3 keV civarındadır. Engel, tipik enerjinin yaklaşık 400 katı yüksekliktedir. Aynı derleme klasik olarak bu tepkimenin yıldız sıcaklıklarında neredeyse hiç gerçekleşmeyeceğini yazar.",
+        "Kuantum tünellemesi tabloyu değiştirir. Engelin tepesine çıkmak gerekmez; engele yeterince yaklaşan bir proton, küçük bir olasılıkla içinden sızabilir. Daha hızlı protonlar daha kolay tünelleyerek geçer ama sayıları azdır; yavaş protonlar boldur ama zor geçer. İki etkinin çarpımı belli bir enerjide tepe yapar; buna Gamow tepesi denir. Aynı derlemeye göre engelin yüksekliği, kaynaşan iki çekirdeğin yüklerinin çarpımıyla orantılıdır. Bir proton ile bir karbon çekirdeği arasında bu çarpım 1 × 6 = 6'dır; engel iki proton arasındakinden kabaca birkaç kat yüksektir. d4'te gördüğün CNO döngüsünün yalnızca Güneş'ten biraz daha kütleli, çekirdekleri daha sıcak yıldızlarda baskın hâle gelmesinin kökü buradadır: daha yüksek engelleri tünellemek için daha hızlı protonlar gerekir. Yine aynı derlemeye göre Güneş'in merkezine yakın koşullarda proton-proton tepkimesinin Gamow tepesi yaklaşık 5,9 keV'tadır: ısıl enerjinin birkaç katı, ama engelin yaklaşık yüzde biri. Derleme, kuantum tünelleme olayının anlaşılmasının Atkinson ve Houtermans'ı yıldız enerjisi üzerine çalışmaya yönelttiğini de belirtir.",
+        "Bir incelik: tünelleme kaynaşmayı mümkün kılar, ama hızlı kılmaz. d4'te gördüğün gibi çekirdekteki ortalama bir protonun başka bir protonla kaynaşabilmesi için yaklaşık 9 milyar yıl beklemesi gerekir. Bu yavaşlığın asıl nedeni ilk adımın zayıf çekirdek kuvvetiyle gerçekleşmesidir: d4'te gördüğün gibi iki proton birleşip döteryum oluştururken protonlardan biri, bir pozitron ve bir nötrino salarak nötrona dönüşmek zorundadır ve zayıf kuvvetin işi olan bu dönüşüm son derece nadirdir. Tünelleme kapıyı aralar, zayıf kuvvet kapıdan geçişi yavaşlatır. Bu yavaşlık bizim şansımızdır: Güneş'in yakıtını milyarlarca yıla yaymasını ve Dünya'daki yaşama yetecek kadar uzun süre kararlı parlamasını sağlar."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Klasik fizikle Güneş yanar mıydı?",
+        "metin": "1. adım: Güneş merkezinde T ≈ 1,57 × 10⁷ K. Isıl ölçek k × T = 8,617 × 10⁻⁵ × 1,57 × 10⁷ ≈ 1.350 eV ≈ 1,35 keV. 2. adım: Engel 550 keV; oran 550 ÷ 1,35 ≈ 407. 3. adım: Bir protonun ısıl çarpışmalarla engeli aşacak enerjiye ulaşma olasılığı kabaca e⁻⁴⁰⁷ ile orantılıdır. 407 ÷ 2,303 ≈ 177 olduğundan bu yaklaşık 10⁻¹⁷⁷ eder. 4. adım: Güneş'teki proton sayısı kabaca kütlesinin proton kütlesine bölümü kadardır: 2 × 10³⁰ ÷ 1,67 × 10⁻²⁷ ≈ 1,2 × 10⁵⁷. Bu sayıyı 10⁻¹⁷⁷ ile çarpınca 10⁻¹²⁰ mertebesinde bir sonuç çıkar. Sonuç: klasik fizikte Güneş'in bütün protonları arasında bile engeli aşabilecek tek bir proton bulmayı beklemek anlamsızdır. Güneş'in parlaması, doğrudan kuantum tünellemesinin kanıtıdır. Hesap kabadır; doğru hesap hız dağılımını ve tünelleme olasılığını birlikte kullanır."
+      },
+      "akilda": "İki proton arasındaki Coulomb engeli ~550 keV, Güneş merkezindeki tipik ısıl enerji ~1,3 keV. Klasik olarak füzyon olmazdı; tünelleme sayesinde ~5,9 keV civarında (Gamow tepesi) gerçekleşir. Yavaşlığın asıl nedeni ise zayıf kuvvettir."
+    },
+    {
+      "baslik": "Tünellemenin teknolojisi",
+      "paragraflar": [
+        "Tünelleme yalnızca yıldızlarda değil, elektroniğin içinde de çalışır. 1973 Nobel Fizik Ödülü'nün bir kısmı Leo Esaki ile Ivar Giaever'e, yarı iletkenlerde ve süperiletkenlerde tünelleme olaylarını deneysel olarak keşfetmeleri için; diğer kısmı Brian Josephson'a, bir tünel engelinden geçen süperakımın özelliklerini kuramsal olarak öngörmesi için verildi. Tünelleme böylece bir merak konusu olmaktan çıkıp bir mühendislik aracına dönüştü.",
+        "Belki de en çarpıcı uygulama, taramalı tünelleme mikroskobudur. Adının anlattığı gibi, sivri bir uç incelenen yüzeye çok yaklaştırılır; aralarında dokunma yoktur, ama elektronlar aradaki boşluğu tünelleyerek geçer ve küçük bir akım oluşur. Tünelleme olasılığı uzaklığa çok sert bağlı olduğu için bu akım, uç ile yüzey arasındaki uzaklığın en küçük değişimine bile son derece duyarlıdır. Uç yüzeyin üzerinde gezdirilip akım izlenerek yüzeyin son derece ince bir haritası çıkarılır. Gerd Binnig ve Heinrich Rohrer bu mikroskobu tasarladıkları için 1986 Nobel Fizik Ödülü'nü, ilk elektron mikroskobunu tasarlayan Ernst Ruska ile paylaştı.",
+        "Kalıcı bellekler de tünellemeye dayanır. 1967'de Bell Laboratuvarları'nda D. Kahng ve S. M. Sze, bir transistörün içine elektrik yükü hapsedilebilen “yüzer kapı” fikrini yayımladı; bu, kalıcı bellek aygıtlarının atası oldu. Bugünkü flash belleklerde yüzer kapıya yük yüklemek ve oradan boşaltmak, elektronların çok ince bir yalıtkan oksit tabakasından tünelleyerek geçmesiyle yapılır. Elektrik kesildiğinde bile bilginin silinmemesinin nedeni, yükün bu ince yalıtkan duvarın arkasında hapsolup kalmasıdır.",
+        "Tünellemenin en yeni ödülü 2025'te geldi. Nobel Fizik Ödülü John Clarke, Michel Devoret ve John Martinis'e, bir elektrik devresinde makroskobik kuantum tünellemesini ve enerji kuantumlanmasını keşfettikleri için verildi. Makroskobik sözcüğü burada önemlidir: tünelleyen şey tek bir elektron değil, atom ölçeğinin çok üstündeki bir devrenin bütün olarak davranışıdır. Dersin sonunda göreceğin süperiletken kuantum bilgisayarları da elektrik devrelerinde kuantum davranışından yararlanır."
+      ],
+      "akilda": "Tünelleme teknolojide de çalışır: Esaki, Giaever ve Josephson (Nobel 1973), taramalı tünelleme mikroskobu (Binnig ve Rohrer, Nobel 1986), flash bellek (ince oksitten tünelleme) ve elektrik devrelerinde makroskobik tünelleme (Nobel 2025)."
+    },
+    {
+      "baslik": "Süperpozisyon ve Schrödinger'in kedisi",
+      "paragraflar": [
+        "d27'deki çift yarık deneyinde elektronun dalga fonksiyonu iki yolu birden içeriyordu ve ekrandaki desen ancak iki yolun genlikleri toplanınca açıklanabiliyordu. Bir kuantum sisteminin birden çok olası durumun genliklerinin toplamı olarak bulunabilmesine süperpozisyon denir. Spin için de aynı şey geçerlidir: bir elektronun spini, bir eksene göre “yukarı” ve “aşağı” durumlarının bir süperpozisyonunda olabilir. Ölçüm yapıldığında sonuç ya yukarı ya aşağıdır; hangisinin çıkacağının olasılığını genlikler belirler.",
+        "Süperpozisyon sık sık “parçacık aynı anda iki yerdedir” diye anlatılır. Bu cümle akılda kalıcı ama tam doğru değildir. Daha dikkatli bir söyleyiş şudur: parçacığın, ölçülmeden önce belirli bir yerde olduğunu söylemek, deney sonuçlarıyla uyumlu değildir; durumu, iki seçeneğin genliklerinin birlikte hesaba katılmasını gerektirir. Bu “birlikte hesaba katma” gerçekte neye karşılık gelir? İşte d27'nin sonunda gördüğün yorum tartışması tam burada başlar.",
+        "Erwin Schrödinger 1935'te, Einstein ile EPR makalesi üzerine yazışırken ünlü bir düşünce deneyi kurdu. Bir kedi, çelik bir odaya bir Geiger sayacı ve çok az radyoaktif maddeyle birlikte kapatılır. Bir saat içinde bir atomun bozunma olasılığı yarı yarıyadır. Atom bozunursa sayaç bir çekici tetikler, çekiç bir zehir şişesini kırar ve kedi ölür. Kuantum kurallarını bu düzeneğin tamamına körü körüne uygularsan, bir saat sonra kediyi “canlı” ve “ölü” durumlarının bir süperpozisyonu olarak yazman gerekir.",
+        "Bu deneyin amacı çoğu zaman tersinden anlaşılır. Schrödinger kedilerin gerçekten hem canlı hem ölü olabileceğini savunmuyordu; tam tersine, o dönemin Kopenhag yaklaşımının gündelik nesnelere uygulandığında ne kadar saçma sonuçlar verdiğini göstermek istiyordu. Kendisi bu tür durumları “oldukça gülünç vakalar” diye niteledi. Bugün d27'de gördüğün dekoherans, sıcak ve büyük bir kedinin neden hiçbir zaman girişim gösteren bir süperpozisyonda yakalanamayacağını açıklar: kedi, sayaç ve hava birbiriyle sürekli etkileşir ve yol bilgisini çevreye yayar. Ama ölçümde neden tek bir sonucun gerçekleştiği sorusu hâlâ yorumlar arasında tartışmalıdır."
+      ],
+      "akilda": "Süperpozisyon: kuantum durumunun birden çok seçeneğin genliklerinin toplamı olması. Schrödinger'in kedisi (1935) kedilerin hem ölü hem canlı olduğunu değil, kuantum kurallarını gündelik nesnelere körü körüne uygulamanın saçmalığını göstermek içindi."
+    },
+    {
+      "baslik": "Dolanıklık: iki parçacık, tek hikâye",
+      "paragraflar": [
+        "1935'te Albert Einstein, Boris Podolsky ve Nathan Rosen, kısaca EPR, kuantum mekaniğinin tuhaf bir öngörüsüne dikkat çeken bir makale yayımladı. İki parçacık bir kez etkileştikten sonra, ne kadar uzaklaşırlarsa uzaklaşsınlar, ayrı ayrı betimlenemeyen tek bir kuantum durumu paylaşabilir. Böyle parçacıklara dolanık denir; bu olgunun adı dolanıklıktır. Einstein bu etkileri “uzaktan ürkütücü etki” diye niteledi; ona göre tabloda bir eksik vardı ve sonuçları arkadan belirleyen gizli değişkenler olmalıydı.",
+        "Basit bir örnek düşünelim. Toplam spini sıfır olan bir çift elektron oluştursun ve biri İstanbul'a, öteki Ankara'ya gitsin. İki şehirde aynı eksen boyunca spin ölçülürse her ölçümün sonucu tek başına tamamen rastgeledir: yarı yarıya yukarı ya da aşağı. Ama iki sonuç her seferinde zıttır. İstanbul'daki ölçüm “yukarı” verdiyse Ankara'daki “aşağı” verir.",
+        "İlk bakışta bunda tuhaf bir şey yokmuş gibi görünür. Bir çift eldiveni ayırıp iki ayrı kutuya koyduğunu ve birini Ankara'ya gönderdiğini düşün. Kutunu açıp sol eldiveni görünce, Ankara'dakinin sağ eldiven olduğunu anında bilirsin; ama bunda hiçbir sihir yoktur, çünkü hangi eldivenin nerede olduğu baştan belliydi. Einstein'ın beklentisi de buydu: parçacıklar ayrılırken her biri, hangi ölçümde ne sonuç vereceğini belirleyen gizli bir “talimat listesi” taşıyor olmalıydı. Bu görüşe, her şeyin baştan belirli olduğu ve hiçbir etkinin ışıktan hızlı yayılmadığı anlamında yerel gerçekçilik denir.",
+        "Kuantum mekaniği ise eldiven resmine uymaz. Fark, ölçümün farklı eksenlerde yapılabilmesinden doğar. İki şehirdeki gözlemciler ölçüm eksenlerini birbirinden bağımsız ve rastgele seçerse, sonuçlar arasındaki uyumun ne kadar güçlü olabileceğine eldiven türü her açıklama bir üst sınır koyar. Kuantum mekaniği bu sınırın aşılacağını öngörür. Bu fikri 1964'te John Bell ortaya koydu ve deneyle sınanabilir hâle getirdi. Sınırı veren eşitsizliklere Bell eşitsizliği denir."
+      ],
+      "akilda": "Dolanık parçacıklar ayrı ayrı betimlenemeyen tek bir durumu paylaşır (EPR, 1935). Her bir sonuç rastgeledir ama sonuçlar ilişkilidir. Bell (1964), önceden belirlenmiş “eldiven” türü açıklamaların aşamayacağı bir sınır buldu; kuantum mekaniği bu sınırın aşılacağını öngörür."
+    },
+    {
+      "baslik": "Bell testleri ve 2022 Nobel'i",
+      "paragraflar": [
+        "Bell'in önerisini ilk sınayanlar 1972'de Berkeley'de John Clauser ve Stuart Freedman oldu. Bir atom geçişinden çıkan dolanık foton çiftlerinin kutuplanmalarını ölçtüler ve Bell eşitsizliğinin aşıldığını, yani kuantum mekaniğinin haklı çıktığını buldular. Clauser sonradan kendi deneyinin Einstein'ı haksız çıkarmasına üzüldüğünü anlattı. Ama deneyde açık kapılar vardı; bunlara boşluk denir. Örneğin fotonların hepsi algılanamıyordu, ya da iki ölçüm aleti bir şekilde birbirinden haber alıyor olabilirdi.",
+        "1982'de Paris yakınlarındaki Orsay'da Alain Aspect, fotonlar yoldayken ölçüm ayarlarını değiştiren bir düzenekle önemli bir boşluğu kapattı ve eşitsizliğin yine aşıldığını gördü. 1998'de Innsbruck'ta Anton Zeilinger'in ekibi, ölçüm yönlerini iki bağımsız kuantum rastgele sayı üreteciyle son anda seçti; böylece ışıktan yavaş hiçbir sinyalin bir taraftaki ayarı öbür tarafa zamanında taşıyamayacağı garanti altına alındı. 2015'te Delft Teknoloji Üniversitesi'nde Ronald Hanson'ın ekibi, 1,3 km arayla duran iki elmas parçasının içindeki elektron spinlerini dolanık hâle getirdi ve aynı deneyde başlıca boşlukları birlikte kapatan ilk testlerden birini yayımladı.",
+        "Bell testleri gökbilimle de buluştu. Zeilinger'in grubu 2017'de, ölçüm ayarlarını yüzlerce yıl önce yola çıkmış yıldız ışığının renklerine göre seçti. 2018'de yayımlanan bir “kozmik Bell testi”nde ise ayarlar, milyarlarca yıl önce yayılmış uzak kuasar ışığının dalga boyuna göre anlık olarak belirlendi. Mantık şu: eğer bir gizli düzen ölçüm ayarlarını ve parçacıkları önceden “anlaştırıyorsa”, bunu en az yaklaşık 7,8 milyar yıl önce yapmış olması gerekirdi. Sonuç yine kuantum mekaniğinden yanaydı: eşitsizlik 9,3 standart sapmayla aşıldı.",
+        "2022 Nobel Fizik Ödülü Aspect, Clauser ve Zeilinger'e, dolanık fotonlarla yaptıkları, Bell eşitsizliklerinin aşıldığını gösteren deneyler ve kuantum bilgi biliminin öncülüğü için verildi. Bu deneylerin söylediği şudur: doğa, Einstein'ın umduğu gibi her sonucu baştan belirlenmiş ve yalnızca yerel etkilerle işleyen bir eldiven dünyası değildir. Ama dikkat: bu, ışıktan hızlı bir şeyin gidip geldiği anlamına gelmez. Bir sonraki bölüm bunun nedenini anlatıyor.",
+        "Bell testleri neyi dışladığı konusunda nettir: sonuçları baştan belirleyen ve yalnızca yerel etkilerle işleyen her kuram, yani yerel gerçekçilik, deneylerle çelişir. Ama geriye ne kaldığı konusunda fizikçiler yine anlaşamaz. Kimi “yerellik” varsayımından, kimi ölçülmemiş sonuçların önceden belirli olduğu fikrinden vazgeçmeyi tercih eder; kimi de soruyu farklı kurar. Bu, d27'nin sonunda gördüğün yorum tartışmasının bir başka yüzüdür. Deneyler tartışmayı daraltır, ama henüz bitirmez."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Delft'te ölçümler ne kadar hızlı olmalıydı?",
+        "metin": "1. adım: İki elmas arasında 1,3 km = 1.300 m var. Işık hızı 299.792.458 m/s. 2. adım: Işığın bu yolu alması 1.300 ÷ 299.792.458 ≈ 4,34 × 10⁻⁶ s, yani yaklaşık 4,3 mikrosaniye sürer. 3. adım: Yerellik boşluğunu kapatmak için bir taraftaki ölçüm ayarının seçilmesi ve ölçümün bitmesi, o taraftan çıkan herhangi bir sinyalin öbür tarafa ulaşmasından önce tamamlanmalıdır. Yani her iki tarafta ayar seçimi ile ölçüm, birbirine göre 4,3 mikrosaniyelik pencerenin içinde bitmelidir. Sonuç: iki laboratuvarı birbirinden uzak koymak deneyi zorlaştırmak için değil, ışıktan yavaş hiçbir haberin ölçümlere yetişemeyeceğinden emin olmak içindir. Kuasarlı testte bu fikir uç noktaya taşınır: ayarı seçen ışık milyarlarca yıl yol almıştır."
+      },
+      "akilda": "Clauser (1972), Aspect (1982) ve Zeilinger (1998) Bell eşitsizliğinin aşıldığını gösterdi; 2015'te Delft'te 1,3 km arayla boşluksuz bir test yapıldı; 2018'de ayarlar kuasar ışığıyla seçildi. 2022 Nobel bu deneylere verildi."
+    },
+    {
+      "baslik": "Işıktan hızlı mesaj yok",
+      "paragraflar": [
+        "Dolanıklık duyulunca hemen akla gelen soru şudur: İstanbul'daki ölçüm Ankara'daki sonucu anında belirliyorsa, bunu ışıktan hızlı haberleşme için kullanamaz mıyız? Cevap kesin bir hayırdır ve bu bir teknoloji eksikliği değil, kuramın kendi sonucudur. Fizikçilerin iletişimsizlik teoremi dediği sonuca göre dolanık bir çiftin bir parçası üzerinde yapılan ölçüm, ne kadar uzakta olursa olsun öbür taraftaki gözlemciye hiçbir bilgi aktaramaz.",
+        "Nedeni basittir. Ankara'daki gözlemci kendi ölçümlerine baktığında yalnızca rastgele bir dizi görür: yarı yarıya yukarı, yarı yarıya aşağı. İstanbul'daki gözlemci hangi ekseni seçerse seçsin, hatta hiç ölçüm yapmasa bile, Ankara'daki dizinin istatistiği değişmez. Wikipedia'nın ifadesiyle Ankara'daki gözlemci, İstanbul'dakinin ne yaptığını rastgele bir ölçümden ayırt edemez. İki dizi arasındaki çarpıcı ilişki, ancak iki taraf sonuçlarını sıradan bir yoldan, telefonla ya da internetle, yani ışıktan hızlı olmayan bir kanaldan karşılaştırınca görünür.",
+        "Bu yüzden dolanıklık özel göreliliğin (d25) hız sınırını çiğnemez; nedensellik korunur. “Uzaktan ürkütücü etki” deyimi akılda kalıcıdır, ama bir şeyin bir yerden ötekine gittiği izlenimini verdiği için yanıltıcıdır. Dolanıklıkta taşınan bir sinyal yoktur; ölçüldüğünde, eldivenlerle açıklanamayacak kadar güçlü bir ilişki ortaya çıkar. İlginç bir ayrıntı daha var: d25'te gördüğün eşzamanlılığın göreliliği yüzünden, birbirinden uzak iki ölçümden hangisinin “önce” yapıldığı, bazı durumlarda gözlemciye göre değişir. Kuantum mekaniğinin öngördüğü ilişki ise bu sıralamaya hiç bağlı değildir; İstanbul'u önce sayan gözlemci de Ankara'yı önce sayan gözlemci de aynı istatistiği bulur. “İstanbul Ankara'ya haber yolladı” demek bu yüzden de yanıltıcıdır. Popüler anlatımlarda “kuantum ışınlama” da sık geçer: Zeilinger ve arkadaşları 1997'de bir fotonun kutuplanma durumunu, o durumu öğrenmeden başka bir parçacığa aktardı. Burada aktarılan madde değil, bir kuantum durumudur.",
+        "Dolanıklığın gerçek uygulamaları daha az gösterişli ama önemlidir. En bilineni kuantum şifrelemedir: dolanık çiftlerle paylaşılan bir şifre anahtarı, araya biri girip dinlemeye kalkarsa bozulur ve dinleme fark edilir. Quanta Magazine'in aktardığına göre Çin'in Micius uydusu dolanık foton çiftlerini 1.000 km'den uzun mesafelere dağıttı. Yani dolanıklık mesajı ışıktan hızlı taşımaz, ama mesajın gizli kalıp kalmadığını denetlemeye yardım eder."
+      ],
+      "akilda": "İletişimsizlik teoremi: dolanık çiftin bir yanındaki ölçüm öbür yana bilgi aktaramaz; her taraf yalnızca rastgele sonuç görür, ilişki ancak sonuçlar sıradan yoldan karşılaştırılınca görünür. Göreliliğin hız sınırı çiğnenmez. Uygulama: kuantum şifreleme (Micius, 2016)."
+    },
+    {
+      "baslik": "Lazer, transistör, atom saati: kuantumun gündelik ürünleri",
+      "paragraflar": [
+        "Kuantum fiziğinin en yaygın ürünlerinden biri lazerdir. Kökü Einstein'ın 1917'deki bir makalesine dayanır: Einstein, uyarılmış bir atomun yanından geçen bir fotonun, atomu kendisiyle aynı türden ikinci bir foton salmaya zorlayabileceğini öne sürdü. Buna uyarılmış salma denir. Charles Townes bu ilkeyle çalışan, mikrodalga yükselten maseri 1953'te patentledi; Theodore Maiman 16 Mayıs 1960'ta Hughes Aircraft şirketinde yapay bir yakut kristaliyle ilk çalışan lazeri gerçekleştirdi. Townes, Nikolay Basov ve Aleksandr Prokhorov kuantum elektroniği alanındaki temel çalışmaları için 1964 Nobel Fizik Ödülü'nü aldı.",
+        "Lazer gökbilimin de vazgeçilmez aracıdır. d10'da Apollo astronotlarının Ay'a bıraktığı yansıtıcılara lazer gönderilerek Ay'ın uzaklığının ölçüldüğünü, d12'de büyük teleskopların atmosferin titreşimini düzeltmek için lazerle 90 km yükseklikte yapay yıldız yarattığını, d16'da LIGO'nun 4 km'lik kollarında lazer ışığının gidip geldiğini gördün. LIGO'da kuantum fiziği bir kez daha devrededir: ölçümü sınırlayan gürültülerden biri, boşluğun kuantum dalgalanmalarından gelir. Nisan 2019'da başlayan gözlem döneminden beri LIGO ve Virgo'ya “sıkıştırılmış ışık” denen özel bir kuantum ışığı veriliyor. Optica'nın haberine göre bu, LIGO'nun nötron yıldızı birleşmelerini duyabildiği uzaklığı %12–14 artırıp yaklaşık 400 milyon ışık yılına çıkardı ve beklenen keşif sayısını %40–50 yükseltti.",
+        "Transistör, bütün bilgisayarların ve telefonların yapı taşı, 1940'larda Bell Laboratuvarları'nda geliştirildi. William Shockley, John Bardeen ve Walter Brattain yarı iletkenler üzerine araştırmaları ve transistör etkisini keşfetmeleri için 1956 Nobel Fizik Ödülü'nü paylaştı. Yarı iletkenlerin davranışı, d27'de güneş panelinde gördüğün bant aralığı gibi kuantum kavramlarıyla anlaşılır.",
+        "Atom saatleri de kuantumun ürünüdür. d22'de gördüğün gibi saniye, sezyum-133 atomunun iki enerji basamağı arasındaki geçişe karşılık gelen ışınımın 9.192.631.770 salınımı olarak tanımlanır; bu sayı tanım gereği kesindir. Yani bütün dünyanın zamanı, bir atomun iki kuantum basamağı arasındaki farka bağlıdır. GPS uydularındaki atom saatleri ve onların göreli düzeltmeleri (d26), telefonunun konumunu bulmasını sağlar."
+      ],
+      "akilda": "Lazer Einstein'ın 1917'deki uyarılmış salma fikrinden doğdu; ilk lazer Maiman, 1960. LIGO kuantum gürültüsünü sıkıştırılmış ışıkla azaltır (menzil %12–14 artı). Transistör (Nobel 1956) ve sezyum atom saati (9.192.631.770 Hz) de kuantum ürünleridir."
+    },
+    {
+      "baslik": "Spin gökyüzünde ve hastanede: 21 cm çizgisi ve MR",
+      "paragraflar": [
+        "Hidrojen atomunun en alt enerji düzeyi bile tek bir basamak değildir. Hem proton hem elektron birer spin taşır ve ikisinin spinleri aynı yöne ya da zıt yöne bakabilir. Bu iki durum arasında çok küçük bir enerji farkı vardır: yaklaşık 5,87 mikroelektronvolt. Elektronun spini kendiliğinden ters dönüp atom düşük enerjili duruma geçtiğinde bu fark, frekansı 1.420,405751768 MHz, dalga boyu yaklaşık 21,1 cm olan bir radyo fotonu olarak salınır. d14'te gördüğün 21 cm çizgisi işte budur.",
+        "Bu geçiş akıl almaz derecede yavaştır: tek bir atomun bu fotonu kendiliğinden salması için ortalama yaklaşık 11 milyon yıl beklemesi gerekir. Ama uzayda o kadar çok hidrojen atomu vardır ki toplam sinyal kolayca ölçülür. Çizgiyi 1944'te Hollandalı gökbilimci H. van de Hulst öngördü; 1951'de Harvard Üniversitesi'nde H. I. Ewen ve E. M. Purcell gözledi. 1952'den sonra çizilen nötr hidrojen haritaları, Samanyolu'nun sarmal yapısını ilk kez ortaya çıkardı (d7). Yani galaksimizin biçimini, elektronların spininin ters dönmesinden öğrendik. d14'te gördüğün gibi bu çizginin büyük üstünlüğü, görünür ışığı geçirmeyen toz bulutlarından rahatça geçmesidir. Üstelik gaz bize yaklaşıyor ya da uzaklaşıyorsa çizginin frekansı d2'deki Doppler kaymasıyla biraz değişir; farklı yönlerden gelen çizgilerin kaymaları, gazın nasıl hareket ettiğini ve kolların nerede durduğunu ortaya çıkarır.",
+        "Purcell adı hastanelerde de karşına çıkar. 1945–1946'da Purcell parafinde, Bloch ise suda protonların nükleer manyetik rezonansını, kısaca NMR'yi gözledi. Protonun da spini vardır ve güçlü bir manyetik alana konunca spini alanla aynı ya da zıt yöne yönelir; iki durum arasındaki enerji farkı alanın şiddetiyle orantılıdır. Uygun frekanstaki radyo dalgaları protonları bu iki durum arasında çevirebilir. Bu frekansa Larmor frekansı denir ve proton için her tesla başına yaklaşık 42,58 MHz'dir. Manyetik rezonans görüntüleme, kısaca MR, 1971–1977 arasında Damadian, Lauterbur ve Mansfield'in çalışmalarıyla gelişti.",
+        "MR'ın hidrojene odaklanmasının iki nedeni var: doğadaki hidrojenin %99,985'i bu tek protonlu türdendir ve beden büyük ölçüde su ve yağdan, yani hidrojen içeren moleküllerden oluşur. Bir MR çekiminde vücudundaki milyarlarca kere milyar protonun spini yönlendirilip radyo dalgalarıyla çevrilir ve geri dönerken yaydıkları sinyal dinlenir. Galaksinin haritasını çıkaran fizik ile hastanede dizindeki yırtığı gösteren fizik, aynı kuantum özelliğine, spine dayanır."
+      ],
+      "ornek": {
+        "baslik": "Örnek: MR'ın radyo dalgası ile 21 cm çizgisi",
+        "metin": "1. adım: 1,5 teslalık bir MR'da Larmor frekansı 42,58 × 1,5 ≈ 63,9 MHz. 2. adım: Dalga boyu c ÷ f = 299.792.458 ÷ 63,9 × 10⁶ ≈ 4,7 m. Yani MR, metrelerce uzunluktaki radyo dalgalarıyla çalışır; kaynak, klinik hidrojen görüntülemede tipik olarak 15–80 MHz kullanıldığını belirtir. 3. adım: 21 cm çizgisi 1.420,4 MHz'dir; 1.420,4 ÷ 63,9 ≈ 22, yani yaklaşık 22 kat yüksek frekanslı. 4. adım: 21 cm fotonunun enerjisi 5,87 × 10⁻⁶ eV; görünür bir fotonun (2,25 eV) yaklaşık 2,25 ÷ 5,87 × 10⁻⁶ ≈ 380.000'de biri. Sonuç: spin geçişleri çok küçük enerjilerle olur, bu yüzden radyo dalgalarıyla konuşur. Hem MR hem 21 cm gözlemi, bu küçük farkı çok sayıda proton ya da atomla toplayarak ölçülebilir kılar."
+      },
+      "akilda": "Hidrojenin temel düzeyindeki iki spin durumu arasındaki 5,87 mikroelektronvoltluk fark 21 cm çizgisini verir (öngörü 1944, gözlem 1951); galaksinin sarmal kolları onunla bulundu. MR da proton spinini kullanır: tesla başına ~42,58 MHz."
+    },
+    {
+      "baslik": "Kuantum bilgisayar: abartısız bir bakış",
+      "paragraflar": [
+        "Sıradan bir bilgisayarın en küçük bilgi birimi bittir: 0 ya da 1. Kuantum bilgisayarının birimi kübittir: 0 ve 1 durumlarının bir süperpozisyonunda bulunabilen bir kuantum sistemi, örneğin bir spin ya da süperiletken bir devre. Birçok kübit birbirine dolanık hâle getirilebilir ve hesap, olasılık genliklerinin d27'de gördüğün gibi birbirini güçlendirip söndürmesiyle yürütülür. Doğru tasarlanmış bir algoritmada yanlış cevapların genlikleri birbirini söndürür, doğru cevabınki güçlenir.",
+        "Bu, kuantum bilgisayarın “bütün olasılıkları aynı anda deneyip” her işi hızlandırdığı anlamına gelmez; popüler anlatımların en yaygın yanlışı budur. Bugüne kadar gösterilen hız üstünlükleri belirli, özel seçilmiş sınama görevlerinde; Wikipedia'nın derlemesine göre Willow'da henüz büyük ölçekli bir algoritma ya da ticari bir uygulama çalıştırılmadı. Ayrıca kübitler son derece kırılgandır: d27'de gördüğün dekoherans, çevreyle en küçük etkileşimde bile hesabı bozar. Bu yüzden hataları düzeltmek, alanın en büyük mühendislik sorunudur.",
+        "Bugünkü duruma bir örnek: Google, 9 Aralık 2024'te 105 süperiletken kübitli Willow işlemcisini duyurdu. Şirkete göre Willow, kübit eklendikçe hataların azaldığı, “eşiğin altında” kuantum hata düzeltmesini gösteren ilk çiptir. Willow, rastgele devre örnekleme denen bir sınama görevini 5 dakikada bitirdi; Google bunun en hızlı süper bilgisayarlarla 10²⁵ yıl süreceğini söyledi. Ama bu görev pratik bir işe yaramaz; bir hız yarışı sınavıdır.",
+        "Sınırlar da açık. Wikipedia'nın derlediğine göre Willow'un mantıksal hata oranı döngü başına yaklaşık %0,14'tür; büyük ölçekli kuantum algoritmaları için gereken düzey ise yaklaşık milyonda birdir. Bir Google sözcüsü, bugünkü şifrelemenin dayandığı RSA'yı kırmaktan “en az 10 yıl uzakta” olduklarını söyledi. Kısacası kuantum bilgisayarlar gerçek ve hızla gelişen bir araştırma alanıdır, ama bugün ne her işi daha hızlı yapan sihirli makinelerdir ne de internetin bütün şifrelerini yarın kıracak bir tehdit. Haberlerde “kuantum üstünlüğü” okuduğunda sor: hangi görev, işe yarar mı, hata oranı ne?"
+      ],
+      "akilda": "Kübit, 0 ve 1'in süperpozisyonunda olabilen bir kuantum sistemidir; hesap genliklerin girişimiyle yürür. Kuantum bilgisayar her işi hızlandırmaz. Willow (Aralık 2024, 105 kübit) eşik altı hata düzeltmesi gösterdi ama hata oranı gerekli düzeyin çok üstünde; RSA'yı kırmak en az 10 yıl uzakta."
+    }
+  ],
+  "formuller": [
+    {
+      "ad": "Bohr yarıçapı",
+      "ifade": "a₀ ≈ 5,29 × 10⁻¹¹ m = 0,0529 nm",
+      "aciklama": "Hidrojenin temel durumunda elektronun en olası uzaklığı. Belirsizlik ilkesiyle hapsolma enerjisi (ħ² ÷ 2mr²) ile çekim enerjisinin (α × ħ × c ÷ r) dengesinden kabaca çıkar."
+    },
+    {
+      "ad": "Hidrojen enerji düzeyleri (d2)",
+      "ifade": "E_n = −13,6 eV ÷ n²",
+      "aciklama": "n baş kuantum sayısı (1, 2, 3…). Düzeyler arası farka eşit enerjili foton salınır ya da soğurulur."
+    },
+    {
+      "ad": "Düzey başına durum sayısı (ilk iki düzey)",
+      "ifade": "n = 1: 1 orbital → 2 elektron;  n = 2: 1 s + 3 p = 4 orbital → 8 elektron",
+      "aciklama": "Pauli ilkesine göre her orbital zıt spinli en çok iki elektron alır; periyodik tablonun 2 ve 8 elementlik ilk satırları buradan gelir."
+    },
+    {
+      "ad": "Isıl enerji ve Coulomb engeli",
+      "ifade": "k × T (k ≈ 8,617 × 10⁻⁵ eV/K);  p + p engeli ≈ 550 keV",
+      "aciklama": "Güneş merkezinde k × T ≈ 1,35 keV. Engeli aşma olasılığı klasik olarak kabaca e üzeri eksi (engel ÷ kT); tünelleme sayesinde tepkime ~5,9 keV civarında (Gamow tepesi) olur."
+    },
+    {
+      "ad": "Yozlaşma hızı tahmini",
+      "ifade": "v ≈ ħ ÷ (m × Δx),  Δx ≈ (elektron sayı yoğunluğu) üzeri eksi 1/3",
+      "aciklama": "Sıkışmış elektronların belirsizlik ilkesinden gelen tipik hızı. Beyaz cücede (10⁹ kg/m³) ışık hızının ~%26'sı; mertebe tahminidir."
+    },
+    {
+      "ad": "Larmor frekansı (proton)",
+      "ifade": "f ≈ 42,58 MHz × B (tesla)",
+      "aciklama": "B manyetik alan şiddeti. 1,5 T'da ~64 MHz. MR'da protonların spin durumlarını çeviren radyo frekansı."
+    },
+    {
+      "ad": "21 cm çizgisi",
+      "ifade": "f = 1.420,405751768 MHz;  λ ≈ 21,106 cm;  ΔE ≈ 5,87 × 10⁻⁶ eV",
+      "aciklama": "Nötr hidrojende elektron spininin protona göre ters dönmesiyle salınan foton. Ortalama bekleme süresi ~11 milyon yıl."
+    },
+    {
+      "ad": "Işık yolu süresi (Bell testi)",
+      "ifade": "t = d ÷ c",
+      "aciklama": "d iki ölçüm istasyonu arası uzaklık. Delft 2015: 1.300 m ÷ c ≈ 4,3 mikrosaniye; ölçümler bu pencere içinde bitmelidir."
+    }
+  ],
+  "anahtar_sayilar": [
+    {
+      "deger": "5,29177210544 × 10⁻¹¹ m",
+      "aciklama": "Bohr yarıçapı (hidrojende en olası uzaklık)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/List_of_physical_constants"
+    },
+    {
+      "deger": "~10 fm (10⁻¹⁴ m)",
+      "aciklama": "Rutherford saçılmasının (1911) gösterdiği çekirdek yarıçapı mertebesi",
+      "kaynak_url": "https://arxiv.org/pdf/1006.5719"
+    },
+    {
+      "deger": "1922; 1925",
+      "aciklama": "Stern–Gerlach deneyi (gümüş demeti ikiye bölündü); Pauli dışlama ilkesi ve Goudsmit–Uhlenbeck spini",
+      "kaynak_url": "https://arxiv.org/pdf/1006.5719"
+    },
+    {
+      "deger": "~1 ton/cm³ (10⁹ kg/m³)",
+      "aciklama": "Tipik beyaz cücenin ortalama yoğunluğu; yozlaşma basıncını Fowler 1926'da açıkladı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/White_dwarf"
+    },
+    {
+      "deger": "550 keV; 0,86 keV; 5,9 keV",
+      "aciklama": "p + p Coulomb engeli; 10⁷ K'de tipik ısıl enerji; Güneş merkezinde Gamow tepesi",
+      "kaynak_url": "https://arxiv.org/pdf/astro-ph/0405568"
+    },
+    {
+      "deger": "1,3 km; 21 Ekim 2015",
+      "aciklama": "Delft boşluksuz Bell testi: elmastaki elektron spinleri arası uzaklık; Nature'da çevrim içi yayım",
+      "kaynak_url": "https://qutech.nl/lab/hanson-lab/research-highlights/hanson-lab-loophole-free-bell-test"
+    },
+    {
+      "deger": "≥ ~7,8 milyar yıl; 9,3 standart sapma",
+      "aciklama": "Kuasar ışığıyla ayar seçilen kozmik Bell testi (2018)",
+      "kaynak_url": "https://arxiv.org/abs/1808.05966"
+    },
+    {
+      "deger": "1.420,405751768 MHz; ~11 milyon yıl",
+      "aciklama": "21 cm hidrojen çizgisinin frekansı ve uyarılmış durumun ortalama ömrü",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Hydrogen_line"
+    },
+    {
+      "deger": "42,58 MHz/T",
+      "aciklama": "Protonun Larmor sabiti (MR); klinik hidrojen görüntüleme tipik olarak 15–80 MHz",
+      "kaynak_url": "https://labs.phys.utk.edu/mbreinig/phys222core/modules/m12/nmr.html"
+    },
+    {
+      "deger": "%12–14 menzil, %40–50 keşif",
+      "aciklama": "Sıkıştırılmış ışığın LIGO'ya kazandırdığı artış (O3, 2019)",
+      "kaynak_url": "https://www.optica-opn.org/home/newsroom/2019/december/squeezed_states_expand_horizons_for_ligo_and_virgo/"
+    },
+    {
+      "deger": "105 kübit; %0,14 / döngü",
+      "aciklama": "Google Willow (9 Aralık 2024) ve mantıksal hata oranı; büyük algoritmalar için ~10⁻⁶ gerekir",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Willow_processor"
+    },
+    {
+      "deger": "9.192.631.770 Hz (tam)",
+      "aciklama": "Sezyum-133 aşırı ince geçiş frekansı; saniyenin tanımı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/List_of_physical_constants"
+    }
+  ],
+  "sozluk": [
+    {
+      "terim": "Bohr yarıçapı",
+      "tanim": "Hidrojen atomunun temel durumunda elektronun çekirdekten en olası uzaklığı, yaklaşık 0,053 nm."
+    },
+    {
+      "terim": "orbital",
+      "tanim": "Bir atomdaki elektronun çekirdek çevresinde nerede bulunabileceğini gösteren olasılık dağılımı; klasik yörüngenin kuantumdaki karşılığı."
+    },
+    {
+      "terim": "temel durum",
+      "tanim": "Bir kuantum sisteminin, örneğin bir atomun, alabileceği en düşük enerjili durum."
+    },
+    {
+      "terim": "kuantum sayıları",
+      "tanim": "Bir elektronun atomdaki durumunu tam olarak etiketleyen sayılar: enerji (n), yörünge biçimi (l), yönelim (m) ve spin."
+    },
+    {
+      "terim": "spin",
+      "tanim": "Parçacığın kütle ve yük gibi temel bir özelliği; onu küçük bir mıknatıs yapar ve elektronda bir eksen boyunca yalnızca iki sonuç verir."
+    },
+    {
+      "terim": "Stern–Gerlach deneyi",
+      "tanim": "1922'de gümüş atomu demetinin düzgün olmayan bir manyetik alanda sürekli yayılmak yerine ikiye bölündüğünü gösteren deney."
+    },
+    {
+      "terim": "Pauli dışlama ilkesi",
+      "tanim": "İki özdeş fermiyonun, örneğin iki elektronun, aynı kuantum durumunda bulunamayacağını söyleyen ilke (1925)."
+    },
+    {
+      "terim": "fermiyon",
+      "tanim": "Pauli dışlama ilkesine uyan parçacık; elektron, proton, nötron ve kuarklar bu aileden."
+    },
+    {
+      "terim": "bozon",
+      "tanim": "Pauli dışlama ilkesine uymayan, çoğu aynı durumda bulunabilen parçacık; foton bunun örneği."
+    },
+    {
+      "terim": "yozlaşma basıncı",
+      "tanim": "Pauli ilkesi yüzünden sıkışmış fermiyonların yüksek enerjili durumlara zorlanmasından doğan, sıcaklıktan bağımsız basınç; beyaz cüceleri ve nötron yıldızlarını ayakta tutar."
+    },
+    {
+      "terim": "enerji engeli",
+      "tanim": "Bir parçacığın klasik fizikte, yeterli enerjisi yoksa aşamayacağı bir enerji tepesi."
+    },
+    {
+      "terim": "alfa bozunumu",
+      "tanim": "Ağır bir çekirdeğin iki proton ve iki nötrondan oluşan bir helyum çekirdeği (alfa parçacığı) fırlatması; tünellemeyle açıklanır."
+    },
+    {
+      "terim": "Coulomb engeli",
+      "tanim": "Aynı işaretli yüklü iki çekirdeğin birbirini itmesinden doğan ve kaynaşmalarını engelleyen enerji engeli."
+    },
+    {
+      "terim": "Gamow tepesi",
+      "tanim": "Bir yıldızda füzyon tepkimelerinin en çok gerçekleştiği enerji; hızlı parçacıkların azlığı ile tünelleme kolaylığının dengesinden doğar."
+    },
+    {
+      "terim": "taramalı tünelleme mikroskobu",
+      "tanim": "Sivri bir uç ile yüzey arasında tünelleyen elektron akımını ölçerek yüzeyin atom ölçeğindeki haritasını çıkaran mikroskop."
+    },
+    {
+      "terim": "süperpozisyon",
+      "tanim": "Bir kuantum sisteminin birden çok olası durumun genliklerinin toplamı olarak bulunması."
+    },
+    {
+      "terim": "dolanıklık",
+      "tanim": "İki ya da daha çok parçacığın, aralarındaki uzaklık ne olursa olsun ayrı ayrı betimlenemeyen tek bir kuantum durumunu paylaşması."
+    },
+    {
+      "terim": "yerel gerçekçilik",
+      "tanim": "Ölçüm sonuçlarının önceden belirlenmiş olduğu ve hiçbir etkinin ışıktan hızlı yayılmadığı varsayımı; Bell testleri bunu dışlar."
+    },
+    {
+      "terim": "Bell eşitsizliği",
+      "tanim": "Yerel gerçekçi her açıklamanın, uzak ölçümler arasındaki ilişkiye koyduğu üst sınır; kuantum mekaniği bu sınırın aşılacağını öngörür."
+    },
+    {
+      "terim": "iletişimsizlik teoremi",
+      "tanim": "Dolanık bir çiftin bir parçası üzerindeki ölçümün öbür taraftaki gözlemciye hiçbir bilgi aktaramayacağını söyleyen sonuç."
+    },
+    {
+      "terim": "uyarılmış salma",
+      "tanim": "Uyarılmış bir atomun, yanından geçen bir fotonun etkisiyle onunla aynı türden ikinci bir foton salması; lazerin temeli."
+    },
+    {
+      "terim": "Larmor frekansı",
+      "tanim": "Manyetik alandaki bir spinin iki durumu arasında geçişe yol açan frekans; proton için tesla başına yaklaşık 42,58 MHz."
+    },
+    {
+      "terim": "kübit",
+      "tanim": "Kuantum bilgisayarın temel birimi; 0 ve 1 durumlarının bir süperpozisyonunda bulunabilen kuantum sistemi."
+    }
+  ],
+  "defter_notu": [
+    "Klasik: dönen elektron ışır, çöker. Kuantum: dar yere hapsolmanın bedeli (belirsizlik) çekimi dengeler → Bohr yarıçapı 0,053 nm, −13,6 eV.",
+    "Bohr 1913 (Nobel 1922); Franck–Hertz 1914 basamakları doğrudan gösterdi. Orbital = olasılık bulutu; 4 kuantum sayısı (n, l, m, spin).",
+    "Stern–Gerlach 1922: gümüş demeti 2'ye bölündü. Spin 1/2 (Goudsmit–Uhlenbeck 1925); gerçek dönme değil.",
+    "Pauli 1925: iki fermiyon aynı durumda olamaz. Orbitale 2 elektron → satırlar 2, 8. Dyson–Lenard 1967: Pauli olmasa madde çöker.",
+    "Yozlaşma basıncı (Fowler 1926): sıcaklıktan bağımsız. Beyaz cüce ~1 ton/cm³; elektronlar ~0,26c → Chandrasekhar ~1,4 M☉.",
+    "Tünelleme: Gamow 1928 alfa bozunumu. Güneş: engel 550 keV, kT ≈ 1,35 keV, Gamow tepesi ~5,9 keV. Klasik olasılık ~10⁻¹⁷⁷.",
+    "Teknoloji: Esaki/Giaever/Josephson 1973, STM 1986, flash bellek, makroskobik tünelleme Nobel 2025.",
+    "Schrödinger'in kedisi 1935: saçmalığı göstermek için. Dolanıklık: EPR 1935, Bell 1964, Clauser 1972, Aspect 1982, Delft 2015 (1,3 km), kuasar 2018. Nobel 2022.",
+    "İletişimsizlik: her taraf rastgele görür, ışıktan hızlı mesaj yok. Uygulama: kuantum şifreleme.",
+    "21 cm: spin dönmesi, 1.420,4 MHz, ~11 milyon yıl. MR: 42,58 MHz/T. Willow 2024: 105 kübit, hata %0,14 ≫ 10⁻⁶."
+  ],
+  "sorular": [
+    {
+      "soru": "Klasik fiziğe göre Rutherford atomu neden kararsız olmalıydı?",
+      "cevap": "Dönen elektron sürekli yön değiştirdiği için hızlanan bir yüktür; hızlanan yük ışık yayıp enerji kaybeder. Elektron sarmal çizerek çekirdeğe düşmeli ve bütün atomlar bir anda çökmeliydi."
+    },
+    {
+      "soru": "Kuantum fiziği atomun büyüklüğünü nasıl açıklar?",
+      "cevap": "Elektronu çekirdeğe yaklaştırmak onu daha dar bir bölgeye hapsetmektir; belirsizlik ilkesine göre bu momentumu ve hareket enerjisini artırır. Çekimin kazancıyla hapsolmanın bedelinin dengelendiği uzaklık, yaklaşık Bohr yarıçapı (0,053 nm) çıkar."
+    },
+    {
+      "soru": "Franck–Hertz deneyi neden önemlidir?",
+      "cevap": "1914'te elektronların atomlara enerjiyi ancak belli miktarlarda aktarabildiğini göstererek, atomdaki ayrık enerji durumlarının varlığına doğrudan deneysel kanıt sağladı."
+    },
+    {
+      "soru": "Orbital ile Bohr'un yörüngesi arasındaki fark nedir?",
+      "cevap": "Yörünge belirli bir yol varsayar; orbital ise elektronun nerede bulunabileceğinin olasılık dağılımıdır. Temel durumda en olası uzaklık Bohr yarıçapıdır, ama elektron her uzaklıkta bulunabilir ve belirli bir yolu yoktur."
+    },
+    {
+      "soru": "Stern–Gerlach deneyinde neyi beklerdik, ne gördük?",
+      "cevap": "Klasik olarak atom mıknatıslarının yönleri rastgele olacağı için demetin sürekli bir şerit hâlinde yayılması beklenirdi. Demet yalnızca iki lekeye bölündü; bu, yönelimin bile basamaklı olduğunu ve sonradan elektron spinine bağlandığını gösterdi."
+    },
+    {
+      "soru": "Periyodik tablonun ilk satırında neden iki, ikinci satırında neden sekiz element vardır?",
+      "cevap": "Pauli ilkesine göre her orbital zıt spinli en çok iki elektron alır. Birinci düzeyde tek orbital (s) vardır: 2 elektron. İkinci düzeyde bir s ve üç p, dört orbital vardır: 8 elektron."
+    },
+    {
+      "soru": "Beyaz cüce soğudukça neden büzülmez?",
+      "cevap": "Onu ayakta tutan yozlaşma basıncı sıcaklıktan değil, Pauli ilkesi yüzünden sıkışmış elektronların zorunlu hareketinden gelir. Isı kaybı bu basıncı azaltmaz, bu yüzden boyut korunur."
+    },
+    {
+      "soru": "Güneş'in merkezinde k × T yaklaşık 1,35 keV, iki proton arasındaki Coulomb engeli 550 keV. Füzyon nasıl olabiliyor?",
+      "cevap": "Kuantum tünellemesiyle. Protonlar engelin tepesine çıkmadan, küçük bir olasılıkla içinden sızabilir. Hızlı protonların azlığı ile tünelleme kolaylığının dengesi tepkimeleri yaklaşık 5,9 keV'luk Gamow tepesinde yoğunlaştırır."
+    },
+    {
+      "soru": "Taramalı tünelleme mikroskobu neden tek tek atomları görebilir?",
+      "cevap": "Uç ile yüzey arasındaki tünelleme akımı, olasılık uzaklığa çok sert bağlı olduğu için uzaklıktaki en küçük değişime bile çok duyarlıdır. Uç gezdirilip akım izlenince yüzeyin atom ölçeğindeki haritası çıkar."
+    },
+    {
+      "soru": "Schrödinger kedi düşünce deneyiyle neyi göstermek istedi?",
+      "cevap": "Kedilerin hem canlı hem ölü olabileceğini değil; dönemin kuantum yaklaşımı gündelik nesnelere körü körüne uygulanınca ortaya çıkan sonucun saçmalığını. Kendisi bunları “oldukça gülünç vakalar” diye niteledi."
+    },
+    {
+      "soru": "Dolanık iki parçacığın sonuçlarının hep zıt çıkması neden tek başına ürkütücü değildir, Bell testleri neyi farklı kılar?",
+      "cevap": "Eldiven örneğindeki gibi sonuçlar baştan belirlenmiş olsa da hep zıt çıkardı. Bell, gözlemciler ölçüm eksenlerini bağımsız ve rastgele seçtiğinde önceden belirlenmiş her açıklamanın aşamayacağı bir ilişki sınırı buldu; deneyler bu sınırın aşıldığını gösterdi."
+    },
+    {
+      "soru": "Delft'teki 2015 Bell testinde istasyonlar 1,3 km arayla duruyordu. Işık bu yolu ne kadar sürede alır, bu neden önemli?",
+      "cevap": "1.300 ÷ 299.792.458 ≈ 4,3 mikrosaniye. Ayar seçimi ve ölçüm bu süreden kısa sürede bitince, ışıktan yavaş hiçbir sinyal bir taraftaki ayarı öbür tarafa zamanında taşıyamaz; yerellik boşluğu kapanır."
+    },
+    {
+      "soru": "Dolanıklıkla ışıktan hızlı mesaj gönderilebilir mi?",
+      "cevap": "Hayır. İletişimsizlik teoremine göre her gözlemci yalnızca rastgele bir dizi görür ve öbür tarafın ne yaptığını ayırt edemez. İlişki ancak sonuçlar sıradan, ışıktan hızlı olmayan bir kanaldan karşılaştırılınca görünür."
+    },
+    {
+      "soru": "1,5 teslalık bir MR hangi frekansta çalışır, bu neden radyo dalgasıdır?",
+      "cevap": "42,58 × 1,5 ≈ 64 MHz; dalga boyu yaklaşık 4,7 m. Proton spininin iki durumu arasındaki enerji farkı çok küçük olduğu için ona karşılık gelen fotonlar düşük frekanslı radyo dalgalarıdır."
+    },
+    {
+      "soru": "Willow gibi bir kuantum bilgisayarın haberini okurken hangi soruları sormalısın?",
+      "cevap": "Hangi görev çözüldü ve pratik bir işe yarıyor mu (Willow'un rastgele devre örneklemesi yaramaz), hata oranı ne (Willow döngü başına ~%0,14, gereken ~10⁻⁶), ve iddia her işi hızlandırmak mı yoksa belirli bir problemi mi kapsıyor."
+    }
+  ],
+  "kaynaklar": [
+    {
+      "ad": "Wikipedia, Hydrogen atom",
+      "url": "https://en.wikipedia.org/wiki/Hydrogen_atom"
+    },
+    {
+      "ad": "Britannica, Bohr model",
+      "url": "https://britannica.com/science/Bohr-model"
+    },
+    {
+      "ad": "Fundamental Science and Improvement of the Quality of Life: Space Quantization to MRI (arXiv:1006.5719)",
+      "url": "https://arxiv.org/pdf/1006.5719"
+    },
+    {
+      "ad": "Wikipedia, List of physical constants",
+      "url": "https://en.wikipedia.org/wiki/List_of_physical_constants"
+    },
+    {
+      "ad": "Wikipedia, List of Nobel laureates in Physics",
+      "url": "https://en.wikipedia.org/wiki/List_of_Nobel_laureates_in_Physics"
+    },
+    {
+      "ad": "Wikipedia, Pauli exclusion principle",
+      "url": "https://en.wikipedia.org/wiki/Pauli_exclusion_principle"
+    },
+    {
+      "ad": "Wikipedia, White dwarf",
+      "url": "https://en.wikipedia.org/wiki/White_dwarf"
+    },
+    {
+      "ad": "Wikipedia, George Gamow",
+      "url": "https://en.wikipedia.org/wiki/George_Gamow"
+    },
+    {
+      "ad": "Wikipedia, Proton–proton chain",
+      "url": "https://en.wikipedia.org/wiki/Proton%E2%80%93proton_chain"
+    },
+    {
+      "ad": "Stars as thermonuclear reactors: their fuels and ashes (arXiv:astro-ph/0405568)",
+      "url": "https://arxiv.org/pdf/astro-ph/0405568"
+    },
+    {
+      "ad": "3D InCites, Invention of tunneling-based flash memory",
+      "url": "https://www.3dincites.com/2018/02/invention-tunneling-based-flash-memory/"
+    },
+    {
+      "ad": "Wikipedia, Schrödinger's cat",
+      "url": "https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Schr%C3%B6dinger's_cat"
+    },
+    {
+      "ad": "Quanta Magazine, Pioneering Quantum Physicists Win Nobel Prize in Physics (2022)",
+      "url": "https://www.quantamagazine.org/pioneering-quantum-physicists-win-nobel-prize-in-physics-20221004/"
+    },
+    {
+      "ad": "Physics World, Aspect, Clauser and Zeilinger win the 2022 Nobel Prize for Physics",
+      "url": "https://physicsworld.com/a/alain-aspect-john-clauser-and-anton-zeilinger-win-the-2022-nobel-prize-for-physics/"
+    },
+    {
+      "ad": "QuTech, Loophole-free Bell test – 2015",
+      "url": "https://qutech.nl/lab/hanson-lab/research-highlights/hanson-lab-loophole-free-bell-test"
+    },
+    {
+      "ad": "Rauch ve ark., Cosmic Bell Test Using Random Measurement Settings from High-Redshift Quasars (arXiv:1808.05966)",
+      "url": "https://arxiv.org/abs/1808.05966"
+    },
+    {
+      "ad": "Wikipedia, No-communication theorem",
+      "url": "https://en.wikipedia.org/wiki/No-communication_theorem"
+    },
+    {
+      "ad": "APS News, This Month in Physics History: May 16, 1960 – Maiman builds first working laser",
+      "url": "https://www.aps.org/apsnews/2010/05/physics-history"
+    },
+    {
+      "ad": "Optica OPN, Squeezed States Expand Horizons for LIGO and Virgo",
+      "url": "https://www.optica-opn.org/home/newsroom/2019/december/squeezed_states_expand_horizons_for_ligo_and_virgo/"
+    },
+    {
+      "ad": "Wikipedia, Hydrogen line",
+      "url": "https://en.wikipedia.org/wiki/Hydrogen_line"
+    },
+    {
+      "ad": "University of Tennessee, NMR / Larmor frequency modülü",
+      "url": "https://labs.phys.utk.edu/mbreinig/phys222core/modules/m12/nmr.html"
+    },
+    {
+      "ad": "Wikipedia, Willow processor",
+      "url": "https://en.wikipedia.org/wiki/Willow_processor"
+    }
+  ]
+}
