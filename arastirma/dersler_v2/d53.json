@@ -20,7 +20,7 @@
    ],
    "ornek": {
     "baslik": "Örnek: İki proton arasında elektrik mi, kütleçekim mi?",
-    "metin": "Elektrik kuvveti k × e² ÷ r², kütleçekim kuvveti G × m² ÷ r² ile verilir; ikisi de uzaklığın karesiyle azaldığı için oranları uzaklığa bağlı değildir. NIST'in CODATA 2022 değerleriyle: e = 1,602 × 10⁻¹⁹ C, k = 1 ÷ (4πε₀) ≈ 8,99 × 10⁹, G = 6,674 × 10⁻¹¹, proton kütlesi m = 1,673 × 10⁻²⁷ kg. Pay: 8,99 × 10⁹ × (1,602 × 10⁻¹⁹)² ≈ 2,31 × 10⁻²⁸. Payda: 6,674 × 10⁻¹¹ × (1,673 × 10⁻²⁷)² ≈ 1,87 × 10⁻⁶⁴. Oran ≈ 2,31 × 10⁻²⁸ ÷ 1,87 × 10⁻⁶⁴ ≈ 1,2 × 10³⁶. Sonuç: iki proton arasındaki elektrik itmesi, kütleçekiminden yaklaşık 1,2 × 10³⁶ kat güçlüdür; bu yüzden parçacık deneylerinde kütleçekimi rahatça yok sayılır."
+    "metin": "Elektrik kuvveti k × e² ÷ r², kütleçekim kuvveti G × m² ÷ r² ile verilir; ikisi de uzaklığın karesiyle azaldığı için oranları uzaklığa bağlı değildir. NIST'in CODATA 2022 değerleriyle: e = 1,602 × 10⁻¹⁹ coulomb, k = 1 ÷ (4πε₀) ≈ 8,99 × 10⁹, G = 6,674 × 10⁻¹¹, proton kütlesi m = 1,673 × 10⁻²⁷ kg. Pay: 8,99 × 10⁹ × (1,602 × 10⁻¹⁹)² ≈ 2,31 × 10⁻²⁸. Payda: 6,674 × 10⁻¹¹ × (1,673 × 10⁻²⁷)² ≈ 1,87 × 10⁻⁶⁴. Oran ≈ 2,31 × 10⁻²⁸ ÷ 1,87 × 10⁻⁶⁴ ≈ 1,2 × 10³⁶. Sonuç: iki proton arasındaki elektrik itmesi, kütleçekiminden yaklaşık 1,2 × 10³⁶ kat güçlüdür; bu yüzden parçacık deneylerinde kütleçekimi rahatça yok sayılır."
    },
    "akilda": "Kuantum kütleçekim, kütleçekimini kuantum ilkeleriyle birleştirme çabasıdır. İki kuramın birlikte gerektiği yerler kara delik merkezleri ve Büyük Patlama'nın ilk anıdır. Tam ve sınanmış bir kuram yok; bu dersteki adayların çoğu kuram/hipotez düzeyindedir."
   },
@@ -52,16 +52,16 @@
   {
    "baslik": "Planck enerjisi neden ulaşılmaz?",
    "paragraflar": [
-    "d27 ve d32'de küçük şeyleri görmek için kısa dalga boyuna, kısa dalga boyu için de yüksek enerjiye ihtiyaç olduğunu gördün. Kabaca, bir λ uzunluğunu yoklamak için gereken enerji E ≈ ħc ÷ λ'dır. Buradaki ħc çarpımının NIST'teki kesin değeri 197,327 milyon elektronvolt çarpı femtometredir; bir femtometre 10⁻¹⁵ m'dir. Bu basit bağıntı neden Planck ölçeğine bugün ulaşamadığımızı tek satırda gösterir.",
+    "d27 ve d32'de küçük şeyleri görmek için kısa dalga boyuna, kısa dalga boyu için de yüksek enerjiye ihtiyaç olduğunu gördün. Kabaca, yoklanacak uzunluk ile gereken enerjinin çarpımı sabit bir sayıdır: indirgenmiş Planck sabiti çarpı ışık hızı. NIST'e göre bu çarpımın kesin değeri 197,327 milyon elektronvolt çarpı femtometredir; bir femtometre 10⁻¹⁵ m'dir. Yani gereken enerji, bu sayının yoklanacak uzunluğa bölümüdür. Bu basit bağıntı neden Planck ölçeğine bugün ulaşamadığımızı tek satırda gösterir.",
     "d32'de LHC'nin 2022'de başlayan üçüncü çalışma döneminde 13,6 trilyon elektronvolt çarpışma enerjisine ulaştığını okudun. Bu enerjiyle yoklanabilecek uzunluk yaklaşık 1,5 × 10⁻²⁰ m'dir. Planck uzunluğu ise bunun yaklaşık 10¹⁵ katı küçüktür. Enerji tarafından bakınca da aynı uçurum çıkar: Planck enerjisi, LHC'nin çarpışma enerjisinin yaklaşık 9 × 10¹⁴ katıdır. d26'da “yaklaşık on beş basamak” denen fark budur.",
     "İşin tuhaf yanı, Planck enerjisi gündelik ölçüde büyük bir enerji değildir. Joule'e çevirince yaklaşık 1,96 × 10⁹ J eder. Wikipedia bunu bir otomobilin deposundaki yakıtın yanmasıyla açığa çıkan enerjiye benzetir: 57,2 litre çarpı litre başına 34,2 megajoule. Sorun miktar değil, yoğunluktur: bu enerjinin tek bir parçacığa yüklenmesi gerekir. Doğanın kendi hızlandırıcıları bile uzak kalır: Wikipedia'ya göre 1991'de gözlenen en enerjik kozmik ışın parçacığı yaklaşık 50 J taşıyordu, yani Planck enerjisinin yalnızca 2,5 × 10⁻⁸'i kadar.",
     "Kaba bir hesap uçurumu somutlaştırır. Mıknatıslar aynı güçte kalsaydı, dairesel bir hızlandırıcının ulaşabileceği enerji kabaca halkanın büyüklüğüyle artardı. O zaman 27 km'lik LHC halkasını 9 × 10¹⁴ kat büyütmek gerekirdi: yaklaşık 2,4 × 10¹⁹ m, yani 2.500 ışık yılı. Bu bir tasarım değil, yalnızca ölçeği hissettiren bir düşünce deneyidir. Üstelik Wikipedia'ya göre o enerjilerde çarpışmalar maddeyi daha küçük parçalara ayırmak yerine kara delik üretebilir. Bu yüzden fizikçiler doğrudan yoklamayı değil, küçük etkilerin çok büyük uzaklıklarda ya da çok hassas ölçümlerde birikmesini arıyor. Dersin sonunda bunlara döneceğiz."
    ],
    "ornek": {
     "baslik": "Örnek: Planck uzunluğunu yoklamak için ne kadar enerji gerekir?",
-    "metin": "Bağıntı: E ≈ ħc ÷ λ, ħc = 197,327 MeV × fm. Planck uzunluğu fm cinsinden: 1,616 × 10⁻³⁵ m = 1,616 × 10⁻²⁰ fm. E ≈ 197,327 ÷ 1,616 × 10⁻²⁰ ≈ 1,22 × 10²² MeV = 1,22 × 10¹⁹ milyar elektronvolt; NIST'in Planck enerjisiyle aynı. LHC ile karşılaştır: 1,22 × 10¹⁹ ÷ 13.600 ≈ 9,0 × 10¹⁴. Joule'e çevir: 1,22 × 10¹⁹ × 1,602 × 10⁻¹⁰ J ≈ 1,96 × 10⁹ J; 57,2 L × 34,2 MJ ≈ 1,96 × 10⁹ J. Sonuç: Planck enerjisi bir yakıt deposu kadar enerjiyi tek bir parçacığa yüklemek demektir ve LHC'nin yaklaşık 10¹⁵ katıdır."
+    "metin": "Bağıntı: enerji ≈ 197,327 milyon elektronvolt çarpı femtometre ÷ uzunluk. Planck uzunluğu femtometre cinsinden: 1,616 × 10⁻³⁵ m = 1,616 × 10⁻²⁰ femtometre. Enerji ≈ 197,327 ÷ 1,616 × 10⁻²⁰ ≈ 1,22 × 10²² milyon elektronvolt = 1,22 × 10¹⁹ milyar elektronvolt; NIST'in Planck enerjisiyle aynı. LHC ile karşılaştır: 1,22 × 10¹⁹ ÷ 13.600 ≈ 9,0 × 10¹⁴. Joule'e çevir: 1,22 × 10¹⁹ × 1,602 × 10⁻¹⁰ J ≈ 1,96 × 10⁹ J; 57,2 litre × 34,2 megajoule ≈ 1,96 × 10⁹ J. Sonuç: Planck enerjisi bir yakıt deposu kadar enerjiyi tek bir parçacığa yüklemek demektir ve LHC'nin yaklaşık 10¹⁵ katıdır."
    },
-   "akilda": "Bir uzunluğu yoklamak için gereken enerji kabaca ħc ÷ λ'dır. Planck enerjisi LHC'nin yaklaşık 9 × 10¹⁴ katıdır; joule olarak bir yakıt deposu kadardır ama tek parçacıkta toplanması gerekir. Doğrudan yoklama imkânsıza yakın; umut dolaylı, birikimli etkilerde."
+   "akilda": "Bir uzunluğu yoklamak için gereken enerji kabaca o uzunlukla ters orantılıdır. Planck enerjisi LHC'nin yaklaşık 9 × 10¹⁴ katıdır; joule olarak bir yakıt deposu kadardır ama tek parçacıkta toplanması gerekir. Doğrudan yoklama imkânsıza yakın; umut dolaylı, birikimli etkilerde."
   },
   {
    "baslik": "Graviton: görülmesi neredeyse imkânsız parçacık",
@@ -194,7 +194,7 @@
    ],
    "ornek": {
     "baslik": "Örnek: Masa üstü deneyde kütleçekimi ne kadar zayıf?",
-    "metin": "Newton yasası: F = G × m₁ × m₂ ÷ r². Marletto–Vedral örneği: m₁ = m₂ = 10⁻¹² kg, r = 10⁻⁶ m, G = 6,674 × 10⁻¹¹. F = 6,674 × 10⁻¹¹ × 10⁻¹² × 10⁻¹² ÷ 10⁻¹² = 6,674 × 10⁻²³ N. Karşılaştırma için kütlelerden birinin Dünya'daki ağırlığı: 10⁻¹² × 9,81 ≈ 9,8 × 10⁻¹² N. Oran: 6,7 × 10⁻²³ ÷ 9,8 × 10⁻¹² ≈ 7 × 10⁻¹². Sonuç: iki kütle arasındaki çekim yaklaşık 6,7 × 10⁻²³ N'dur, yani her birinin kendi ağırlığının yaklaşık trilyonda yedisi; deneyin zorluğu buradan gelir."
+    "metin": "Newton yasası: F = G × m₁ × m₂ ÷ r². Marletto–Vedral örneği: m₁ = m₂ = 10⁻¹² kg, r = 10⁻⁶ m, G = 6,674 × 10⁻¹¹. F = 6,674 × 10⁻¹¹ × 10⁻¹² × 10⁻¹² ÷ 10⁻¹² = 6,674 × 10⁻²³ newton. Karşılaştırma için kütlelerden birinin Dünya'daki ağırlığı: 10⁻¹² × 9,81 ≈ 9,8 × 10⁻¹² newton. Oran: 6,7 × 10⁻²³ ÷ 9,8 × 10⁻¹² ≈ 7 × 10⁻¹². Sonuç: iki kütle arasındaki çekim yaklaşık 6,7 × 10⁻²³ newtondur, yani her birinin kendi ağırlığının yaklaşık trilyonda yedisi; deneyin zorluğu buradan gelir."
    },
    "akilda": "Bose ve arkadaşları ile Marletto–Vedral (2017), yalnız kütleçekimiyle etkileşen iki süperpozisyondaki kütlenin dolanmasını önerdi; dolanıklığın gerçekten kuantum kütleçekimi kanıtlayıp kanıtlamayacağı tartışmalı. 2021'de 90 mg'lık bir kürenin kütleçekimi ölçüldü. Adayların hepsi hâlâ kuram/hipotez düzeyinde."
   }
