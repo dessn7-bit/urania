@@ -19,9 +19,11 @@ UNITELER = [
     {'id': 'gezegen_yasam', 'ad': 'Ötegezegenler ve yaşam', 'aciklama': 'Başka yıldızların gezegenleri ve yaşam arayışı.', 'dersler': ['d13', 'd18']},
     # v4 (Ekim 2026): fizik bilmeyen biri için fiziğin büyük fikirleri; astronomiyle bağlantılı
     {'id': 'fizik', 'ad': 'Fiziğin büyük fikirleri', 'aciklama': 'Enerji ve entropi, ışık, görelilik, kuantum, Feynman\'ın ışık kuramı, atom çekirdeği ve parçacıklar; fizik bilmeyen biri için.', 'dersler': ['d30', 'd33', 'd25', 'd26', 'd27', 'd28', 'd29', 'd31', 'd32']},
+    # v6 (30 Ekim 2026, Kaan: "evrenle ilgili teoriler… sicim teorisine kadar, paralel evrenler, beyaz delik"): kuramlar ve olasılıklar
+    {'id': 'kuramlar', 'ad': 'Evrenin büyük soruları: kuramlar ve olasılıklar', 'aciklama': 'Karanlık madde ve karanlık enerji, enflasyon ve çoklu evren, kara deliklerin kuantum yüzü, beyaz delikler ve solucan delikleri, sicim kuramı ve kuantum kütleçekim, evrenin başı ve sonu; neyin kanıtlı neyin spekülasyon olduğu açıkça.', 'dersler': ['d50', 'd51', 'd54', 'd52', 'd56', 'd53', 'd55']},
 ]
 # v3 (Ekim 2026) yeni dersler: taslağı henüz yazılmadıysa atlanır (yazım sürerken derleme kırılmasın)
-YENI_V3 = {'d%d' % n for n in range(20, 50)}   # v3 (d20–d24), v4 fizik (d25–d33), v5 (d34–d49)
+YENI_V3 = {'d%d' % n for n in range(20, 57)}   # v3 (d20–d24), v4 fizik (d25–d33), v5 (d34–d49), v6 kuramlar (d50–d56)
 eski = {d['id']: d for d in json.load(open(os.path.join(K, 'veri/dersler.json'), encoding='utf-8'))['dersler']}
 dersler, kaynak = [], {}
 # Tekrar kartlarının kalıcı kimliği (kid): kartın ilerlemesi bu kimliğe yazılır. İlk atamada eski sıra
