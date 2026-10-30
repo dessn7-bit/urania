@@ -1,82 +1,230 @@
 {
  "rehber": {
-  "ne": "x. Yanıtladığı soru: x?",
+  "ne": "Telefonu ya da fotoğraf makinesini sabit bir üçayakta gökyüzüne çevirdiğinde ne olduğunu canlandırır: Dünya döndüğü için yıldızlar pozlama boyunca kayar ve uzun pozda çizgiye döner. Odak uzaklığını, poz süresini, baktığın yönün dik açıklığını ve üst üste eklenen kare sayısını değiştirip yıldızın kaç piksel kaydığını ve kent göğünde kaç kare gerektiğini görürsün. Yanıtladığı soru: İstanbul'un ışıklı göğünde yıldızları nokta tutan temiz bir fotoğraf nasıl çekilir?",
   "ekran": {
-   "cizim": [],
-   "kontroller": []
+   "cizim": [
+    {
+     "sekil": "halka",
+     "renk": "--pirinc",
+     "zemin": "#1C2638",
+     "ad": "Sol üstteki çerçeve (kadraj)",
+     "ne": "Fotoğrafın tamamı; seçili odak uzaklığında gökte kapladığı açı altında yazar. Zemin kent göğünde daha açık, karanlık gökte siyaha yakın."
+    },
+    {
+     "sekil": "cizgi",
+     "renk": "--yildiz",
+     "ad": "Beyaz noktalar ve yaylar (yıldızlar)",
+     "ne": "Temsilî yıldızlar. Her biri pozlama boyunca gök kutbunun çevresinde dönerek yay çizer; kısa pozda yay noktadan ayırt edilmez. Kareler hizalanmadan birleştirilince yay bütün dizinin süresine uzar."
+    },
+    {
+     "sekil": "halka",
+     "renk": "--pirinc",
+     "ad": "Ortadaki küçük pirinç halka",
+     "ne": "Ölçülen yıldız: dik açıklığı tam seçtiğin δ. Ölçüm kutularındaki kayma bu yıldız içindir."
+    },
+    {
+     "sekil": "cizgi",
+     "renk": "--soluk",
+     "ad": "Küçük artı (gök kutbu)",
+     "ne": "Kadrajın içindeyse kuzey gök kutbu; yaylar onun çevresinde döner."
+    },
+    {
+     "sekil": "alan",
+     "renk": "--yildiz",
+     "ad": "Sağ üstteki ızgara (piksel büyüteci)",
+     "ne": "Ölçülen yıldızın çevresi; her kare bir görüntü pikseli. Açık kareler yıldız ışığının düştüğü pikseller, ne kadar açıksa yıldız orada o kadar uzun kalmış. İz 26 pikseli aşınca ızgara kalkar, yol küçültülerek çizilir."
+    },
+    {
+     "sekil": "cizgi",
+     "renk": "--hedef",
+     "ad": "Alttaki mavi düz çizgi (karanlık gök)",
+     "ne": "Dersteki örnek sönük yıldızın sinyal-gürültü oranı, yığındaki kare sayısına göre; tek karede 14,1. İki eksen de logaritmik olduğu için √N ilişkisi düz bir çizgidir."
+    },
+    {
+     "sekil": "kesik",
+     "renk": "--pirinc",
+     "ad": "Pirinç kesik çizgi (kent göğü)",
+     "ne": "Aynı yıldız kent göğünde: gök parıltısının fotonları gürültüyü artırdığı için tek karede 6,3."
+    },
+    {
+     "sekil": "daire",
+     "renk": "--parsomen",
+     "ad": "Grafikteki krem nokta",
+     "ne": "Seçtiğin kare sayısı ve seçtiğin gökte yığının oranı."
+    }
+   ],
+   "kontroller": [
+    {
+     "sec": "#afOn",
+     "tur": "dugme",
+     "ad": "Hazır ayarlar",
+     "ne": "Telefon ana kamera (24 mm eşdeğeri, 16 sn), aynasız tam kare 24 mm f/2.8 (500 kuralının 20,8 sn'si), 50 mm f/1.8 (10 sn) ve Kutup Yıldızı çevresi (telefon, 30 sn × 100 kare, hizalamadan: yıldız izi)."
+    },
+    {
+     "sec": "#afKamera",
+     "tur": "dugme",
+     "ad": "Fotoğraf makinesi",
+     "ne": "Telefon (12 MP, 4000 piksel genişlik; 35 mm eşdeğeriyle hesaplanır) ya da tam kare (Nikon Z6III: 35,9 mm genişlikte 6048 piksel, piksel aralığı 5,94 µm)."
+    },
+    {
+     "sec": "#afOdak",
+     "tur": "kaydirici",
+     "ad": "Odak uzaklığı",
+     "ne": "35 mm eşdeğeri, 10 ile 200 mm arası (logaritmik). Uzun odak bir pikseli gökte daha küçük bir açıya düşürür: yıldız aynı sürede daha çok piksel kayar."
+    },
+    {
+     "sec": "#afSure",
+     "tur": "kaydirici",
+     "ad": "Bir karenin poz süresi",
+     "ne": "0,5 ile 120 saniye arası (logaritmik)."
+    },
+    {
+     "sec": "#afDek",
+     "tur": "kaydirici",
+     "ad": "Dik açıklık δ",
+     "ne": "Kadrajın ortasındaki yıldızın gök ekvatorundan açısal uzaklığı: 0° ekvator (en hızlı kayan yer), 89,5°'ye kadar (kutba yakın, neredeyse durur). Kutup Yıldızı 89,35°."
+    },
+    {
+     "sec": "#afKare",
+     "tur": "kaydirici",
+     "ad": "Yığındaki kare sayısı N",
+     "ne": "1 ile 400 arası (logaritmik). Gürültü √N kat azalır; toplam süre N × poz süresi."
+    },
+    {
+     "sec": "#afGok",
+     "tur": "secim",
+     "ad": "Gökyüzü",
+     "ne": "Kent ya da karanlık gök: gürültü grafiğinde hangi çizginin seçili olduğunu ve kadrajın zemin rengini belirler."
+    },
+    {
+     "sec": "#afDiyafram",
+     "tur": "secim",
+     "ad": "Diyafram",
+     "ne": "f/1,4 ile f/4 arası; yalnız tam kare makinede NPF kuralına girer. Telefonun diyaframı sabittir (Galaxy S24 ana kamerası f/1,8)."
+    },
+    {
+     "sec": "#afIzli",
+     "tur": "kutu",
+     "ad": "Kareleri hizalamadan üst üste koy",
+     "ne": "İşaretliyse kareler yıldızlara göre hizalanmadan birleşir ve iz bütün dizinin süresince uzar: yıldız izi fotoğrafı. İşaretsizse kareler hizalanır; kayma yalnız bir karenin süresi kadardır."
+    }
+   ]
   },
-  "gercek": "x. y.",
-  "gercekKaynaklar": [],
+  "gercek": "Google, Pixel telefonların gece modunda bir karenin süresini 16 saniyeyle sınırladı: gerçek gece göğü çekimlerinde daha uzun karelerde yıldızlar kısa çizgilere dönüyordu; telefon en çok 15 kareyi hizalayıp ortalıyor. Royal Museums Greenwich yıldız izi için tek uzun poz yerine 30 saniyelik 100 ya da daha fazla kare çekip birleştirmeyi önerir. Ataşehir'den kuzeye, ufkun yaklaşık 41° yukarısındaki Kutup Yıldızı'na çevrilmiş sabit bir telefonla bu deneyi kendin yapabilirsin.",
+  "gercekKaynaklar": [
+   {
+    "ad": "Google Research: Night Sight ile astrofotoğraf (2019)",
+    "url": "https://research.google/blog/astrophotography-with-night-sight-on-pixel-phones/"
+   },
+   {
+    "ad": "Royal Museums Greenwich: How to photograph star trails",
+    "url": "https://www.rmg.co.uk/how-photograph-star-trails"
+   },
+   {
+    "ad": "Wikipedia: Celestial pole",
+    "url": "https://en.wikipedia.org/wiki/Celestial_pole"
+   }
+  ],
   "dersler": [
-   "d24"
+   "d24",
+   "d1"
   ],
   "adimlar": [
    {
-    "yap": "1",
+    "yap": "“Telefon ana kamera”ya bas (24 mm eşdeğeri, 16 sn, gök ekvatoru).",
     "tikla": "#afOn button[data-i=\"0\"]",
     "ayar": {
      "#afGok": "kent"
     },
-    "gozle": "?",
-    "neden": "?"
+    "gozle": "Piksel ölçeği 74,4″ / piksel; yıldız bir pikseli 4,9 sn'de geçiyor; 16 sn'lik karede kayma 3,2 piksel.",
+    "neden": "Bir piksel gökte 206.265 × (34,6 mm / 4000) / 24 ≈ 74,4″ tutar. Gök ekvatorunda gök saniyede 15,04″ kayar (360° / 23,9345 saat): 74,4 / 15,04 ≈ 4,9 sn. Google'ın gece modundaki 16 sn'lik kare sınırı bu telefonda yaklaşık 3 piksellik kaymaya denk gelir."
    },
    {
-    "yap": "2",
+    "yap": "Telefonda poz süresini 500 kuralının değerine, 20,8 sn'ye çıkar.",
     "tikla": "#afOn button[data-i=\"0\"]",
     "ayar": {
      "#afSure": 1.31876
     },
-    "gozle": "?",
-    "neden": "?"
+    "gozle": "Kayma 4,2 piksel; büyüteçte yıldız 4–5 piksellik bir çizgi.",
+    "neden": "500 kuralı: 500 / 24 ≈ 20,8 sn. Bu sürede ekvator yıldızı 20,8 × 15,04 ≈ 313″, yani yaklaşık 4,2 piksel kayar. Kural film ve baskı çağından kalmadır; PhotographyLife'a göre fazla hoşgörülüdür."
    },
    {
-    "yap": "3",
+    "yap": "Telefonda dik açıklığı 80° yap (kutba 10° uzak bir yöne bak).",
     "tikla": "#afOn button[data-i=\"0\"]",
     "ayar": {
      "#afDek": 80
     },
-    "gozle": "?",
-    "neden": "?"
+    "gozle": "Yıldız bir pikseli 28,5 sn'de geçiyor; 16 sn'lik karede kayma 0,6 piksel: yıldız nokta kalıyor.",
+    "neden": "Kayma hızı cos δ ile orantılı: cos 80° ≈ 0,174, yani saniyede yaklaşık 2,6″. Kuzeye bakarken güneye bakarken kullanabileceğinin yaklaşık 6 katı uzun poz verebilirsin."
    },
    {
-    "yap": "4",
+    "yap": "“Aynasız 24 mm f/2.8”e bas.",
     "tikla": "#afOn button[data-i=\"1\"]",
-    "gozle": "?",
-    "neden": "?"
+    "gozle": "Piksel ölçeği 51,0″; 500 kuralının 20,8 sn'si burada 6,1 piksel iz bırakıyor; NPF 11,5 sn diyor.",
+    "neden": "Aynı 24 mm ama 6048 piksellik tam kare sensörün pikseli gökte daha küçük açı tutar, bu yüzden aynı süre daha çok piksel kaydırır. Basit NPF kuralı (35 × N + 30 × p) / f: (35 × 2,8 + 30 × 5,94) / 24 ≈ 11,5 sn. Piksel ve diyaframı hesaba kattığı için 500 kuralından katıdır."
    },
    {
-    "yap": "5",
+    "yap": "“50 mm”ye bas.",
     "tikla": "#afOn button[data-i=\"2\"]",
-    "gozle": "?",
-    "neden": "?"
+    "gozle": "Piksel ölçeği 24,5″; 500 kuralı 10,0 sn (6,1 piksel iz); NPF 4,8 sn; yıldız bir pikseli 1,6 sn'de geçiyor.",
+    "neden": "Odak uzaklığı iki katına çıkınca piksel gökte yarı açı tutar. 500 kuralı süreyi de yarıya indirir, bu yüzden iz yine 6,1 piksel kalır: kural sensöre bakmaz. NPF: (35 × 1,8 + 30 × 5,94) / 50 ≈ 4,8 sn."
    },
    {
-    "yap": "6",
+    "yap": "Telefonda kent göğünde 16 kare yığ.",
     "tikla": "#afOn button[data-i=\"0\"]",
     "ayar": {
      "#afKare": 1.20412,
      "#afGok": "kent"
     },
-    "gozle": "?",
-    "neden": "?"
+    "gozle": "Gürültüde iyileşme 4,0 kat; toplam süre 4 dk 16 sn. Grafikte nokta kent çizgisinde yaklaşık 25'te.",
+    "neden": "Rastgele gürültü kareden kareye değiştiği için ortalamada söner; sinyal-gürültü oranı √16 = 4 kat artar. Dersteki örnekte kentin tek karesi 6,3: 6,3 × 4 ≈ 25. Kentte karanlık göğün tek karesindeki 14,1'e yetişmek için (14,1 / 6,3)² ≈ 5 kare gerekir."
    },
    {
-    "yap": "7",
+    "yap": "“Kutup Yıldızı çevresi”ne bas (30 sn × 100 kare, hizalamadan).",
     "tikla": "#afOn button[data-i=\"3\"]",
-    "gozle": "?",
-    "neden": "?"
+    "gozle": "Toplam süre 50 dk; ortadaki yıldızın yayı 6,9 piksel; kadrajda yıldızlar kutbun çevresinde yaylar çiziyor.",
+    "neden": "50 dakikada gök 15,04 × 50 / 60 ≈ 12,5° döner. Kutup Yıldızı kutba yalnız 0,65° uzak olduğu için yayı kısa: yaklaşık 7 piksel. Kutba uzak yıldızlar aynı açıda daha uzun yay çizer."
    },
    {
-    "yap": "8",
+    "yap": "Kutup ayarında dik açıklığı 0° yap (gök ekvatoru).",
     "tikla": "#afOn button[data-i=\"3\"]",
     "ayar": {
      "#afDek": 0
     },
-    "gozle": "?",
-    "neden": "?"
+    "gozle": "Yıldızın kayması 607 piksel: 4000 piksellik karenin yaklaşık yedide biri.",
+    "neden": "Ekvatordaki yıldız 50 dakikada büyük çember üstünde 12,5° yol alır: 12,5 × 3600 / 74,4 ≈ 607 piksel. Aynı dizide Kutup Yıldızı'nın 7 piksellik kıvrımıyla karşılaştır."
    }
   ],
-  "kaynaklar": []
+  "kaynaklar": [
+   {
+    "ad": "NASA NSSDC: Earth Fact Sheet",
+    "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html"
+   },
+   {
+    "ad": "PhotographyLife: 500 Rule vs NPF Rule",
+    "url": "https://photographylife.com/500-rule-vs-npf-rule"
+   },
+   {
+    "ad": "Light Stalking: NPF rule",
+    "url": "https://www.lightstalking.com/npf-rule/"
+   },
+   {
+    "ad": "Google Research: Night Sight ile astrofotoğraf",
+    "url": "https://research.google/blog/astrophotography-with-night-sight-on-pixel-phones/"
+   },
+   {
+    "ad": "Wikipedia: Signal averaging",
+    "url": "https://en.wikipedia.org/wiki/Signal_averaging"
+   },
+   {
+    "ad": "Nikon: Z6III",
+    "url": "https://imaging.nikon.com/imaging/lineup/mirrorless/z6_3/"
+   },
+   {
+    "ad": "Wikipedia: Pole star",
+    "url": "https://en.wikipedia.org/wiki/Pole_star"
+   }
+  ]
  },
  "veri": {
   "yildizGunu": {

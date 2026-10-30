@@ -126,7 +126,7 @@
     }
     function ciz() {
       const s = st;
-      const { ctx, w, h } = o.kanvas(cv, 0.84);
+      const { ctx, w, h } = o.kanvas(cv, 0.8);
       ctx.clearRect(0, 0, w, h);
       const kam = s.kam;
       const kirmizi = document.documentElement.classList.contains('kirmizi');

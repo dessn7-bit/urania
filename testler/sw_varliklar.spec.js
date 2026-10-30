@@ -30,7 +30,9 @@ test('Durağan başvurular ASSETS\'te: index.html betik/bağlantıları, stil.cs
   for (const m of css.matchAll(/url\(\s*['"]?([^'")]+)['"]?\s*\)/g)) if (!/^(data:|https?:|#)/.test(m[1])) gerekli.add(norm(m[1]));   // #kirmiziSuz: SVG süzgeç başvurusu, dosya değil
   (manifest.icons || []).forEach(i => gerekli.add(norm(i.src)));
   for (const m of js.matchAll(/new Worker\(\s*'([^']+)'/g)) gerekli.add(norm(m[1]));
-  for (const m of js.matchAll(/betikler\(\[([^\]]+)\]/g)) for (const b of m[1].matchAll(/'([^']+)'/g)) gerekli.add(norm(b[1]));
+  for (const m of js.matchAll(/betikler\(\[([^\]]+)\]/g)) for (const b of m[1].matchAll(/'([^']+)'/g)) if (!/\/$|^\.js$/.test(b[1])) gerekli.add(norm(b[1]));
+  /* Modül deneyleri (simulasyon.js hazirla): deney/<kimlik>.js ve veri/deney/<kimlik>.json */
+  fs.readdirSync(path.join(kok, 'deney')).filter(f => f.endsWith('.js')).forEach(f => { gerekli.add('deney/' + f); gerekli.add('veri/deney/' + f.replace(/\.js$/, '.json')); });
   for (const m of js.matchAll(/\b(?:U|Urania)\.veri\('([\w-]+)'\)/g)) gerekli.add('veri/' + m[1] + '.json');
   /* Bilinen ve yalnız gezinmede görülmeyebilecek olanlar ayrıca: örtme işçisi ve tüm fontlar */
   gerekli.add('ortme_isci.js');

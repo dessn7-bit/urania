@@ -58,8 +58,8 @@
         ${o.kaydirici('dbD', 'Ağız çapı D (objektif ya da ayna)', lg(7), lg(300), 'any', lg(50))}
         ${o.kaydirici('dbM', 'Büyütme M', 0, lg(300), 'any', lg(7))}
         ${o.kaydirici('dbAfov', 'Göz merceğinin görünür alanı', 30, 100, 'any', 42.7)}
-        <label class="alan" for="dbGok">Gökyüzü
-          <select id="dbGok">${gokler.map(g => `<option value="${g.id}">${U.kacis(g.ad)}: ${U.kacis(g.uzun)}, çıplak gözle ${U.sayi(g.aralik[0], 1)}–${U.sayi(g.aralik[1], 1)} kadir</option>`).join('')}</select></label>
+        <label class="alan" for="dbGok">Gökyüzü (çıplak gözün sınır kadiri)
+          <select id="dbGok">${gokler.map(g => `<option value="${g.id}">${U.kacis(g.ad)} (Bortle ${g.bortle}: ${U.sayi(g.aralik[0], 1)}–${U.sayi(g.aralik[1], 1)} kadir)</option>`).join('')}</select></label>
         <label class="alan" for="dbGoz">Göz bebeğin karanlıkta (yaşa göre ortalama)
           <select id="dbGoz"><option value="${dRef}">${U.sayi(dRef, 1)} mm (derslerdeki varsayım)</option>${gozT.map(([y, mm]) => `<option value="${mm}">${y} yaş: ${U.sayi(mm, 1)} mm</option>`).join('')}</select></label>
       </div>
@@ -117,9 +117,9 @@
       if (ciplak) p.push('Göz bebeğin karanlıkta en çok yaklaşık 7 mm açılır (yaşla küçülür). Dürbün ya da teleskop bu ağzı büyütür: 50 mm\'lik bir objektif yaklaşık 51 kat ışık toplar.');
       else if (s.bos > 0.005) p.push(`Çıkış göz bebeği (göz merceğinden çıkan ışık demetinin çapı) ${sayi(s.cik, 2)} mm, senin göz bebeğin ${sayi(s.p, 1)} mm: demetin dışı irise çarpar ve ışığın %${sayi(s.bos * 100, 0)}'i boşa gider. Ağzın yalnız ${sayi(s.dEt, 0)} mm'si çalışır; bu alet senin için ${sayi(s.M, 0)}×${sayi(s.dEt, 0)} gibi davranır.`);
       else p.push(`Çıkış göz bebeği (göz merceğinden çıkan ışık demetinin çapı) ${sayi(s.cik, 2)} mm; ${sayi(s.p, 1)} mm'lik göz bebeğine tümüyle girer, ışık boşa gitmez.`);
-      p.push(`Gökyüzü aletten çok kadir götürür: aynı aletle karanlık gökte ${sayi(lmK, 1)}, kent göğünde ${sayi(lmS, 1)} kadir. Aradaki ${sayi(fark, 1)} kadiri aletle kazanmak için ağız çapını ${sayi(katCap, 1)} katına çıkarman gerekirdi. Kentte gök parıltısı yıldızla birlikte toplanır; büyük ağız ikisini birden büyütür.`);
+      p.push(`Gökyüzü aletten çok kadir götürür: aynı ${ciplak ? 'gözle' : 'aletle'} karanlık gökte ${sayi(lmK, 1)}, kent göğünde ${sayi(lmS, 1)} kadir. Aradaki ${sayi(fark, 1)} kadiri aletle kazanmak için ağız çapını ${sayi(katCap, 1)} katına çıkarman gerekirdi. Kentte gök parıltısı yıldızla birlikte toplanır; büyük ağız ikisini birden büyütür.`);
       const yararli = 2 * s.D;
-      if (ciplak) p.push(`Çıplak göz büyütmez: gözün yaklaşık 1′'lik (60″) keskinliği, gökte ayırabildiğin en küçük açıdır. Ülker'in parlak yıldızlarını tek tek görürsün, ama birbirine 1′'den yakın çiftler tek nokta olur.`);
+      if (ciplak) p.push(`Çıplak göz büyütmez: gözün yaklaşık 1′'lik (60″) keskinliği, gökte ayırabildiğin en küçük açıdır. Parlak yıldızları tek tek görürsün, ama birbirine 1′'den yakın çiftler tek nokta olur.`);
       else p.push(`Büyütme ${bFmt(s.M)}×: gerçek alan ${sayi(s.tf, 2)}°. Büyütme ayrıntıyı açmaz, açılmış ayrıntıyı gözüne gösterir: gözün 1′'lik keskinliği gökte ${sayi(s.goz, 1)}″'ye, ağzın kırınım sınırı ${sayi(s.ray, 1)}″ (Rayleigh; Dawes ${sayi(s.daw, 1)}″). ${s.goz > s.ray ? 'Burada sınırı gözün çiziyor; daha çok büyütme daha ince ayrıntı gösterir ama alanı daraltır, demeti inceltir ve elin titremesini de büyütür.' : 'Burada sınırı ağız çiziyor; daha çok büyütme yeni ayrıntı getirmez.'}${s.M > yararli ? ` En yüksek yararlı büyütmeyi (2 × D ≈ ${sayi(yararli, 0)}×) aştın.` : ''}`);
       if (Math.abs(s.D - 50) < 0.5 && Math.abs(s.M - 7) < 0.05) p.push('7×50 neden klasik bir gökyüzü dürbünü? 7,14 mm\'lik demet genç bir gözün gece göz bebeğine denk gelir, 6,4–7°\'lik alan Ülker\'i ve Avcı\'nın kemerini tek bakışta alır ve 7× elde titremeden tutulur (elde pratik sınır yaklaşık 10× sayılır).');
       if (!ciplak) p.push(s.sigar ? `${s.hd.kisa} (${sayi(s.hd.boyut_derece, 2)}°) ${sayi(s.tf, 2)}°'lik alana sığıyor.` : `${s.hd.kisa} (${sayi(s.hd.boyut_derece, 2)}°) ${sayi(s.tf, 2)}°'lik alana sığmıyor: geniş hedefler dürbünün, küçük ve parlak hedefler teleskobun işidir.`);

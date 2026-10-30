@@ -533,7 +533,7 @@
      (gercek), "İlgili dersler" (dersler). Lejanttaki her kontrol data-kontrol ile sayfadaki öğeye bağlıdır (testler
      bunu sayfadaki girdilerle karşılaştırır). Renk örnekleri kanvasla aynı renkte; kırmızı modda kanvas gibi süzülür. */
   function rehberi(id) { return Object.prototype.hasOwnProperty.call(R, id) && R[id] && typeof R[id] === 'object' ? R[id] : {}; }
-  const TUR_AD = { kaydirici: 'Kaydırıcı', dugme: 'Düğme', kutu: 'Onay kutusu' };
+  const TUR_AD = { kaydirici: 'Kaydırıcı', dugme: 'Düğme', kutu: 'Onay kutusu', secim: 'Seçim listesi' };
   const SEKILLER = ['daire', 'halka', 'cizgi', 'kesik', 'kalin', 'alan', 'yazi', 'serit', 'yarim', 'dikey', 'dikey-kesik'];
   /* Yalnız CSS değişkeni adı, #renk ya da rgb()/rgba() geçer: veri style özniteliğine başka bir şey sokamaz */
   function renkDegeri(r) {
