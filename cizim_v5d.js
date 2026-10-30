@@ -120,48 +120,44 @@
 
   /* d45 · bölüm 9: kütle ekseni (Güneş kütlesi, doğrusal 0–5,6). Sınır tahminleri, ölçülen kütleler, kütle boşluğu (2–5). */
   C.ekle('d45-kutle-siniri', {
-    ders: 'd45', bolum: 9, oran: 1.04,
-    baslik: 'Bir nötron yıldızı ne kadar ağır olabilir?',
-    aciklama: 'Yatay eksen Güneş kütlesi cinsinden kütledir. Üstteki çubuklar en büyük kütle için yapılan tahminlerdir: 1939\'da Oppenheimer ve Volkoff\'un 0,7\'si, GW170817 birleşmesinden çıkan 2,01 ile 2,17 arası, 2026 çalışmasının 2,2 ile 2,3 arası, Kalogera ve Baym\'ın 2,2 ile 2,9 arası ve NASA\'nın kabaca 3\'ü. Ortadaki noktalar ölçülmüş nötron yıldızlarıdır; yatay çizgiler belirsizliktir. En ağırları 2\'nin biraz üstündedir; bu yüzden 0,7\'lik ilk sınır yanlış çıktı. Taralı bölge 2 ile 5 arasındaki kütle boşluğudur: burada çok az cisim gözlenmiştir. GW190814\'ün 2,59\'luk cismi bu boşluktadır ve büyük olasılıkla bir kara deliktir; GW170817\'den kalan yaklaşık 2,74\'lük cisim de saniyeler içinde kara deliğe çöktü.',
+    ders: 'd45', bolum: 9, oran: 1.06,
+    baslik: 'Nötron yıldızının kütle sınırı ve kütle boşluğu',
+    aciklama: 'Yatay eksen Güneş kütlesi cinsinden kütledir. Üstteki çubuklar en büyük kütle için yapılan tahminlerdir: 1939\'da Oppenheimer ve Volkoff\'un 0,7\'si, GW170817 birleşmesinden çıkan 2,01 ile 2,17 arası, 2026 çalışmasının 2,2 ile 2,3 arası, Kalogera ve Baym\'ın 2,2 ile 2,9 arası ve NASA\'nın kabaca 3\'ü. Ortadaki noktalar ölçülmüş nötron yıldızlarıdır; yatay çizgiler belirsizliktir. En ağırları 2\'nin biraz üstündedir; bu yüzden 0,7\'lik ilk sınır yanlış çıktı. Gölgeli bölge 2 ile 5 arasındaki kütle boşluğudur: burada çok az cisim gözlenmiştir. GW190814\'ün 2,59\'luk cismi bu boşluktadır ve büyük olasılıkla bir kara deliktir; GW170817\'den kalan yaklaşık 2,74\'lük cisim de saniyeler içinde kara deliğe çöktü.',
     kaynak: [KAYNAK.tov, KAYNAK.notronYildizi, KAYNAK.miller19],
     ciz(S) {
       const R = S.R;
-      const ek = S.eksen({ x: 20, y: 30, w: 362, h: 330 }, { x0: 0, x1: 5.6, y0: 0, y1: 1 }, {
+      const ek = S.eksen({ x: 20, y: 30, w: 362, h: 340 }, { x0: 0, x1: 5.6, y0: 0, y1: 1 }, {
         xIsaret: [[0, '0'], [1, '1'], [2, '2'], [3, '3'], [4, '4'], [5, '5']],
         xAd: 'kütle (Güneş kütlesi)'
       });
       let s = '';
       /* kütle boşluğu */
-      s += S.kutu(ek.X(2), 30, ek.X(5) - ek.X(2), 330, { dolgu: R.vurguSoluk, renk: 'none', saydam: 0.45 });
-      for (let x = ek.X(2) + 8; x < ek.X(5); x += 14) s += S.cizgi(x, 352, x + 10, 342, { renk: R.soluk, kalin: 1 });
-      s += S.zeminliYazi((ek.X(2) + ek.X(5)) / 2 + 30, 336, 'kütle boşluğu: 2–5', { boy: 13, hiza: 'middle', renk: R.metin, kalin: true });
+      s += S.kutu(ek.X(2), 30, ek.X(5) - ek.X(2), 340, { dolgu: R.vurguSoluk, renk: 'none', saydam: 0.4 });
+      s += S.yazi((ek.X(2) + ek.X(5)) / 2, 362, 'kütle boşluğu: 2–5', { boy: 13, hiza: 'middle', renk: R.metin, kalin: true });
       s += ek.svg.replace(/<line[^>]*x1="20" y1="30"[^>]*\/>/, '');
-      const satir = i => 52 + i * 26;
-      const etiket = (x, y, t, o) => S.zeminliYazi(x, y + 5, t, Object.assign({ boy: 13, renk: R.metin }, o));
+      const yz = (x, y, t, o) => S.yazi(x, y + 5, t, Object.assign({ boy: 13, renk: R.metin }, o));
       /* sınır tahminleri: çubuk */
       s += S.yazi(8, 20, 'En büyük kütle tahminleri', { boy: 14, renk: R.metin, kalin: true });
-      const sinir = [[0.7, 0.7, '1939: 0,7 (etkileşimsiz gaz)'], [2.01, 2.17, 'GW170817: 2,01–2,17'], [2.2, 2.3, '2026 çalışması: 2,2–2,3'], [2.2, 2.9, 'Kalogera–Baym 1996: 2,2–2,9'], [3, 3, 'NASA: kabaca 3']];
+      const sinir = [[0.7, 0.7, '1939: 0,7 (etkileşimsiz gaz)'], [2.01, 2.17, 'GW170817: 2,01–2,17'], [2.2, 2.3, '2026 çalışması: 2,2–2,3'], [2.2, 2.9, 'Kalogera–Baym: 2,2–2,9'], [3, 3, 'NASA: kabaca 3']];
       sinir.forEach(([a, b, t], i) => {
-        const y = satir(i), xa = ek.X(a), xb = Math.max(ek.X(b), xa + 5);
+        const y = 48 + i * 25, xa = ek.X(a), xb = Math.max(ek.X(b), xa + 5);
         s += S.kutu(xa, y - 6, xb - xa, 12, { dolgu: R.uyari, renk: R.metin, kalin: 1 }, 2);
-        s += i === 0 ? etiket(xb + 8, y, t, { renk: R.uyari, kalin: true }) : etiket(xb + 8, y, t);
+        s += yz(xb + 8, y, t, i === 0 ? { renk: R.uyari, kalin: true } : {});
       });
       /* ölçülen kütleler: nokta ve hata çubuğu */
-      s += S.yazi(8, satir(5) + 8, 'Ölçülen nötron yıldızları', { boy: 14, renk: R.metin, kalin: true });
+      s += S.yazi(8, 188, 'Ölçülen nötron yıldızları', { boy: 14, renk: R.metin, kalin: true });
       const olcum = [[1.44, 1.29, 1.58, 'J0030+0451 (NICER): 1,44'], [2.01, 1.97, 2.05, 'J0348+0432: 2,01 ± 0,04'], [2.08, 2.01, 2.15, 'J0740+6620: 2,08 ± 0,07'], [2.35, 2.18, 2.52, 'J0952−0607: 2,35 ± 0,17']];
       olcum.forEach(([m, a, b, t], i) => {
-        const y = satir(6.3 + i);
+        const y = 210 + i * 25;
         s += S.cizgi(ek.X(a), y, ek.X(b), y, { renk: R.metin, kalin: 2 }) + S.cizgi(ek.X(a), y - 5, ek.X(a), y + 5, { renk: R.metin, kalin: 1.5 }) + S.cizgi(ek.X(b), y - 5, ek.X(b), y + 5, { renk: R.metin, kalin: 1.5 });
         s += S.daire(ek.X(m), y, 5, { dolgu: R.metin, renk: R.zemin, kalin: 1.5 });
-        s += i === 0 ? etiket(ek.X(a) - 8, y, t, { hiza: 'end' }) : etiket(ek.X(b) + 9, y, t);
+        s += yz(ek.X(b) + 9, y, t);
       });
-      /* boşluktaki cisimler */
-      const by = satir(10.6);
-      s += S.kutu(ek.X(2.59) - 5, by - 5, 10, 10, { dolgu: R.zemin, renk: R.metin, kalin: 1.8 });
-      s += etiket(ek.X(2.59) + 10, by, 'GW190814: 2,59 (büyük olasılıkla kara delik)');
-      const cy = satir(11.6);
-      s += S.kutu(ek.X(2.74) - 5, cy - 5, 10, 10, { dolgu: R.zemin, renk: R.metin, kalin: 1.8 });
-      s += etiket(ek.X(2.74) + 10, cy, 'GW170817 kalıntısı ≈2,74: çöktü');
+      /* boşluktaki cisimler: içi boş kare */
+      [[2.59, 'GW190814: 2,59', 'muhtemelen kara delik', 318], [2.74, 'GW170817 sonrası ≈2,74', 'çöktü: kara delik', 340]].forEach(([m, sol, sag, y]) => {
+        s += S.kutu(ek.X(m) - 5, y - 5, 10, 10, { dolgu: R.zemin, renk: R.metin, kalin: 1.8 });
+        s += yz(ek.X(m) - 10, y, sol, { hiza: 'end', kalin: true }) + yz(ek.X(m) + 10, y, sag);
+      });
       return s;
     }
   });

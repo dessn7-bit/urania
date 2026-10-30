@@ -223,7 +223,7 @@
 
   /* d38 · bölüm 8: ana halkalar, Satürn merkezinden doğrusal ölçekte; altta Kepler'e göre bir tur süreleri. */
   C.ekle('d38-halka-anatomi', {
-    ders: 'd38', bolum: 8, oran: 0.84,
+    ders: 'd38', bolum: 8, oran: 0.82,
     baslik: 'Satürn\'ün halkaları ölçekli: D\'den E\'ye',
     aciklama: 'Yatay eksen Satürn\'ün merkezinden uzaklıktır, bin kilometre olarak ve doğrusal ölçekte. İçten dışa soluk D, C, en yoğun B halkası, 4550 kilometre genişliğindeki seyrek Cassini Bölümü, içinde Encke ve Keeler boşluklarını taşıyan A, ince F, soluk G ve 480.000 kilometreye uzanan E halkası gelir; Mimas 185.537 kilometrededir. Bandın koyuluğu halkanın yoğunluğunu kabaca gösterir. Alttaki sayılar oradaki bir parçacığın bir tur süresidir: C\'nin iç kenarında 5,8, A\'nın dış kenarında 14,3 saat. Yaklaşık 111.700 kilometrede tur süresi Satürn\'ün gününe eşittir; bunun içindeki halkalar gezegenden hızlı, dışındakiler yavaş dolanır.',
     kaynak: [KAYNAK.pdsHalka, KAYNAK.satKart, KAYNAK.jplSaturnGunu],
@@ -244,29 +244,29 @@
       s += S.yazi(392, y0 - 40, '480.000 km\'ye', { boy: 13, hiza: 'end', renk: R.soluk });
       /* Mimas */
       s += S.daire(X(185.537), y0 + h / 2, 4.5, { dolgu: R.ay, renk: R.zemin, kalin: 1 });
-      s += S.yazi(X(185.537), y0 + h + 18, 'Mimas', { boy: 13, hiza: 'end' });
+      s += S.yazi(392, y0 - 26, 'Mimas', { boy: 13, hiza: 'end' });
       /* harfler */
       [['D', 70.7], ['C', 83.2], ['B', 104.7], ['A', 129.4], ['F', 140.2], ['G', 169.6], ['E', 185]].forEach(([t, a]) => {
         s += S.yazi(X(a), y0 - 8, t, { boy: 15, kalin: true, hiza: 'middle' });
       });
-      s += S.cizgi(X(119.8), y0 + h, X(119.8), y0 + h + 8, { renk: R.metin, kalin: 1 });
-      s += S.yazi(X(119.8), y0 + h + 22, 'Cassini Bölümü', { boy: 13, hiza: 'middle' });
-      s += S.cizgi(X(133.584), y0 + h, X(133.584), y0 + h + 30, { renk: R.metin, kalin: 0.8 }) + S.cizgi(X(136.504), y0 + h, X(136.504), y0 + h + 48, { renk: R.metin, kalin: 0.8 });
-      s += S.yazi(X(133.584) + 4, y0 + h + 40, 'Encke', { boy: 13 }) + S.yazi(X(136.504) + 4, y0 + h + 58, 'Keeler', { boy: 13 });
+      s += S.cizgi(X(119.8), y0 + h, X(119.8) - 14, y0 + h + 24, { renk: R.metin, kalin: 1 });
+      s += S.yazi(X(119.8) - 22, y0 + h + 38, 'Cassini Bölümü', { boy: 13, hiza: 'middle' });
+      s += S.yol(`M${n2(X(133.584))},${y0 + h} V${y0 + h + 18} H272`, { renk: R.metin, kalin: 0.8 }) + S.yol(`M${n2(X(136.504))},${y0 + h} V${y0 + h + 38} H272`, { renk: R.metin, kalin: 0.8 });
+      s += S.yazi(276, y0 + h + 22.5, 'Encke Boşluğu', { boy: 13 }) + S.yazi(276, y0 + h + 42.5, 'Keeler Boşluğu', { boy: 13 });
       /* eksen */
       const ya = 214;
       s += S.cizgi(X(60), ya, X(190), ya, { renk: R.soluk, kalin: 1 });
-      [60, 80, 100, 120, 140, 160, 180].forEach(a => { s += S.cizgi(X(a), ya, X(a), ya + 5, { renk: R.soluk, kalin: 1 }) + S.yazi(X(a), ya + 18, a === 180 ? '180 bin km' : String(a), { boy: 13, hiza: a === 180 ? 'end' : 'middle', renk: R.soluk }); });
+      [60, 80, 100, 120, 140, 160, 180].forEach(a => { s += S.cizgi(X(a), ya, X(a), ya + 5, { renk: R.soluk, kalin: 1 }) + S.yazi(X(a), ya + 18, String(a), { boy: 13, hiza: 'middle', renk: R.soluk }); });
       /* bir tur süreleri (Kepler, Mimas'tan ölçeklendi) */
-      s += S.yazi(8, 256, 'Bir tur süresi (Kepler):', { boy: 13, kalin: true });
-      const tur = [[74.491, '5,8 sa', 280, 'middle'], [136.77, '14,3 sa', 280, 'middle'], [185.537, '22,6 sa', 280, 'end'], [111.698, '10,6 sa = Satürn\'ün günü', 302, 'middle']];
-      tur.forEach(([a, t, y, hz]) => {
+      const tur = [[74.491, '5,8 sa', 'middle'], [111.698, '10,6 sa', 'middle'], [136.77, '14,3 sa', 'middle'], [185.537, '22,6 sa', 'end']];
+      tur.forEach(([a, t, hz]) => {
         const x = X(a);
         s += `<polygon points="${n2(x)},${ya - 1} ${n2(x - 4)},${ya - 8} ${n2(x + 4)},${ya - 8}" fill="${R.vurgu}"/>`;
-        s += S.cizgi(x, 236, x, y - 13, { renk: R.vurgu, kalin: 0.8, kesik: '2 2' });
-        s += S.yazi(hz === 'end' ? 392 : x, y, t, { boy: 13, hiza: hz, renk: R.vurgu });
+        s += S.yazi(hz === 'end' ? 392 : x, ya + 40, t, { boy: 13, hiza: hz, renk: R.vurgu, kalin: true });
       });
-      s += S.yazi(8, 328, 'İçeride halkalar Satürn\'ün kendisinden hızlı döner.', { boy: 13, renk: R.soluk });
+      s += S.yazi(X(111.698), ya + 56, '= Satürn\'ün günü', { boy: 13, hiza: 'middle', renk: R.vurgu });
+      s += S.yazi(8, ya + 82, 'Uzaklık bin km. Üçgenler: oradaki bir parçacığın', { boy: 13, renk: R.soluk });
+      s += S.yazi(8, ya + 100, 'bir tur süresi; içeride halkalar Satürn\'den hızlı döner.', { boy: 13, renk: R.soluk });
       return s;
     }
   });
@@ -298,7 +298,7 @@
       });
       /* eksen */
       const ya = y0 + h + 6;
-      [110, 120, 130, 140].forEach(a => { s += S.cizgi(X(a), ya, X(a), ya + 5, { renk: R.soluk, kalin: 1 }) + S.yazi(X(a), ya + 19, tr(a * 1000), { boy: 13, hiza: 'middle', renk: R.soluk }); });
+      [110, 120, 130, 140].forEach(a => { s += S.cizgi(X(a), ya, X(a), ya + 5, { renk: R.soluk, kalin: 1 }) + S.yazi(X(a) - (a === 110 ? 2 : 0), ya + 19, tr(a * 1000), { boy: 13, hiza: a === 110 ? 'start' : 'middle', renk: R.soluk }); });
       s += S.yazi(392, ya + 19, 'km', { boy: 13, hiza: 'end', renk: R.soluk });
       const g = [[1, 'Cassini Bölümü: 117.500–122.050 km, çok seyrek'], [2, 'Encke Boşluğu (322 km): içinde Pan dolanır'],
         [3, 'Keeler Boşluğu (35 km): içinde Daphnis dolanır'], [4, 'F halkası: Prometheus ile Pandora arasında']];
@@ -311,9 +311,9 @@
 
   /* d39 · bölüm 4: Neptün'ün klasik üç katmanlı modeli, yarıçap ölçekli; kesinlik düzeyleri etiketli. */
   C.ekle('d39-ic-yapi', {
-    ders: 'd39', bolum: 4, oran: 1.14,
+    ders: 'd39', bolum: 4, oran: 1.16,
     baslik: 'Bir buz devinin içi: ölçülen, modellenen, tahmin edilen',
-    aciklama: 'Neptün\'ün kesiti, yarıçap ölçekli. En dışta hidrojen-helyum zarfı merkeze giden yolun yüzde 10 ile 20\'si kadar iner; iki kesik çember bu belirsizliği gösterir, dibinde basınç yaklaşık 10 gigapaskaldır. Altında 10 ile 15 Dünya kütlesinde sıcak, elektriği ileten su-amonyak-metan akışkanı vardır. Yaklaşık 7000 kilometre derinden itibaren metanın elmasa ayrışabileceği bir laboratuvar hipotezidir, gezegende ölçülmedi. Taranan iç bölge, en içteki yüzde 30, çekim ölçümlerinin neredeyse ulaşamadığı yerdir; yaklaşık 1,2 Dünya kütlesindeki kaya-metal çekirdeğin boyu modele bağlıdır ve şematik çizildi. Merkezde yaklaşık 700 gigapaskal ve 5400 kelvin olabilir.',
+    aciklama: 'Neptün\'ün kesiti, yarıçap ölçekli. En dışta hidrojen-helyum zarfı merkeze giden yolun yüzde 10 ile 20\'si kadar iner; iki kesik çember bu belirsizliği gösterir, dibinde basınç yaklaşık 10 gigapaskaldır. Altında 10 ile 15 Dünya kütlesinde sıcak, elektriği ileten su-amonyak-metan akışkanı vardır. Yaklaşık 7000 kilometre derinden itibaren metanın elmasa ayrışabileceği bir laboratuvar hipotezidir, gezegende ölçülmedi. Çizgilerle taranmış iç bölge, yani yarıçapın en içteki yüzde 30\'u, çekim ölçümlerinin neredeyse ulaşamadığı yerdir; yaklaşık 1,2 Dünya kütlesindeki kaya-metal çekirdeğin boyu modele bağlıdır ve şematik çizildi. Merkezde yaklaşık 700 gigapaskal ve 5400 kelvin olabilir.',
     kaynak: [KAYNAK.helledFortney, KAYNAK.wikiNeptun, KAYNAK.nepKart, KAYNAK.slac],
     ciz(S) {
       const R = S.R, cx = 200, cy = 172, Rn = 134, Rkm = 24764;
@@ -330,13 +330,13 @@
       });
       /* en iç %30: çekimle neredeyse ölçülmüyor */
       s += S.daire(cx, cy, Rn * 0.3, { dolgu: R.zemin, renk: R.soluk, kalin: 1.2, kesik: '6 4', saydam: 0.75 });
-      for (let i = -3; i <= 3; i++) {
-        const d = i * 9, yy = Math.sqrt(Math.max(0, (Rn * 0.3) ** 2 - d * d));
-        s += S.cizgi(cx + d - yy * 0.5, cy + yy * 0.87, cx + d + yy * 0.5, cy - yy * 0.87, { renk: R.soluk, kalin: 0.8 });
+      for (let i = -4; i <= 4; i++) {
+        const d = i * 8.5, L = Math.sqrt(Math.max(0, (Rn * 0.3 - 2) ** 2 - d * d)), q = Math.SQRT1_2;
+        s += S.cizgi(cx + d * q - L * q, cy + d * q + L * q, cx + d * q + L * q, cy + d * q - L * q, { renk: R.soluk, kalin: 0.8 });
       }
       s += S.daire(cx, cy, Rn * 0.12, { dolgu: R.gezegen, renk: R.metin, kalin: 1, kesik: '3 2' });
       /* işaretler */
-      s += isaret(S, cx + Rn * 0.95, cy - 64, 1) + isaret(S, cx + Rn * 0.5, cy - 70, 2) + isaret(S, cx - Rn * 0.2, cy + Rn * 0.56, 3);
+      s += isaret(S, cx + Rn * 0.925 * Math.cos(0.7), cy - Rn * 0.925 * Math.sin(0.7), 1) + isaret(S, cx - Rn * 0.55 * Math.cos(1.0), cy - Rn * 0.55 * Math.sin(1.0), 2) + isaret(S, cx - Rn * 0.2, cy + Rn * 0.56, 3);
       s += isaret(S, cx + Rn * 0.21, cy + 32, 4) + isaret(S, cx, cy - 30, 5);
       s += S.cizgi(cx, cy - 21.5, cx, cy - Rn * 0.12, { renk: R.metin, kalin: 1 });
       const g = [[1, 'Hidrojen-helyum zarfı: yolun %10–20\'si (model)', R.metin], [2, 'Su-amonyak-metan akışkanı, 10–15 Dünya kütlesi (model)', R.metin],
@@ -382,8 +382,8 @@
         s += S.yazi(x + (L + 7) * c, y + (L + 7) * sn + 4.5, 'K', { boy: 13, hiza: 'middle', kalin: true });
         const ly = a === 0 || a === Math.PI ? y + 38 : a < Math.PI ? y - 40 : y + 40;
         const lx = hz === 'end' ? 392 : hz === 'start' ? 8 : x;
-        s += S.yazi(lx, ly, yil, { boy: 14, kalin: true, hiza: hz });
-        s += S.yazi(lx, ly + 16, t, { boy: 13, hiza: hz, renk: R.soluk });
+        s += S.zeminliYazi(lx, ly, yil, { boy: 14, kalin: true, hiza: hz, zemin: R.zemin });
+        s += S.zeminliYazi(lx, ly + 16, t, { boy: 13, hiza: hz, renk: R.soluk, zemin: R.zemin });
       });
       /* takvim çizelgesi: 1986–2070 */
       const T = yil => 30 + (yil - 1986) * 340 / 84, yb = 318;
@@ -410,7 +410,7 @@
       const ls = [['Jüpiter', 9.4, 0.119, '9,4°', '0,119'], ['Satürn', 0, 0.038, '≈0°', '0,038'], ['Uranüs', 58.6, 0.352, '58,6°', '0,352'], ['Neptün', 46.9, 0.485, '46,9°', '0,485']];
       let s = '';
       ls.forEach(([ad, aci, kay, ta, tk], i) => {
-        const cx = 52 + i * 99, mx = cx + kay * r, a = aci * Math.PI / 180, L = r + 10;
+        const cx = 50 + i * 97, mx = cx + kay * r, a = aci * Math.PI / 180, L = r + 10;
         s += S.yazi(cx, 34, ad, { boy: 14, kalin: true, hiza: 'middle' });
         s += S.daire(cx, cy, r, { dolgu: i < 2 ? R.gezegen : R.mavi, renk: R.metin, kalin: 1.2, saydam: 0.35 });
         s += S.daire(cx, cy, r, { renk: R.metin, kalin: 1.2 });
@@ -433,7 +433,7 @@
   C.ekle('d40-boyutlar', {
     ders: 'd40', bolum: 0, oran: 1.0,
     baslik: 'Büyük uydular aynı ölçekte',
-    aciklama: 'Bütün daireler aynı ölçekte çizildi; sayılar çaptır. Ganymede 5262 ve Titan yaklaşık 5150 kilometreyle Merkür gezegeninden büyüktür, Callisto ondan biraz küçüktür. Io, Europa ve Triton Ay boyundadır ve hepsi Plüton\'dan büyüktür. Satürn\'ün Enceladus\'u ile Uranüs\'ün Miranda\'sı ise yaklaşık 500 kilometreyle küçük birer noktadır. Kesik çizgili daireler uydu değildir: Merkür gezegen, Ay Dünya\'nın uydusu olarak karşılaştırma için, Plüton cüce gezegendir.',
+    aciklama: 'Bütün daireler aynı ölçekte çizildi; sayılar çaptır. Ganymede 5262 ve Titan yaklaşık 5150 kilometreyle Merkür gezegeninden büyüktür, Callisto ondan biraz küçüktür. Io, Europa ve Triton Ay boyundadır ve hepsi Plüton\'dan büyüktür. Satürn\'ün Enceladus\'u ile Uranüs\'ün Miranda\'sı ise yaklaşık 500 kilometreyle küçük birer noktadır. Kesik çizgili daireler karşılaştırma içindir: Merkür bir gezegen, Ay Dünya\'nın uydusu, Plüton bir cüce gezegendir.',
     kaynak: [KAYNAK.jupUydu, KAYNAK.nepUydu, KAYNAK.ayKart, KAYNAK.plutonKart],
     ciz(S) {
       const R = S.R, k = 86 / 5262;
@@ -457,8 +457,8 @@
         ciz(24, y - 5, d, '', '', '', false);
         s += S.yazi(40, y, t, { boy: 13 });
       });
-      s += S.daire(264, 323, 6, { renk: R.metin, kalin: 1.4, kesik: '5 3' }) + S.yazi(278, 328, 'uydu değil', { boy: 13, renk: R.soluk });
-      s += S.daire(264, 347, 6, { dolgu: R.ay, renk: 'none', saydam: 0.75 }) + S.yazi(278, 352, 'uydu', { boy: 13, renk: R.soluk });
+      s += S.daire(250, 323, 6, { renk: R.metin, kalin: 1.4, kesik: '5 3' }) + S.yazi(262, 328, 'karşılaştırma', { boy: 13, renk: R.soluk });
+      s += S.daire(250, 347, 6, { dolgu: R.ay, renk: 'none', saydam: 0.75 }) + S.yazi(262, 352, 'dev gezegen uydusu', { boy: 13, renk: R.soluk });
       s += S.yazi(8, 386, 'Ölçek: tüm daireler aynı; sayılar çap', { boy: 13, renk: R.soluk });
       return s;
     }
@@ -466,7 +466,7 @@
 
   /* d40 · bölüm 1: eylemsizlik momenti çarpanları; nokta grafiği, eksen 0,30'dan başlar. */
   C.ekle('d40-eylemsizlik', {
-    ders: 'd40', bolum: 1, oran: 0.86,
+    ders: 'd40', bolum: 1, oran: 0.88,
     baslik: 'Uydunun içini gösteren sayı: eylemsizlik momenti çarpanı',
     aciklama: 'Her nokta bir uydunun eylemsizlik momenti çarpanıdır. Sağdaki kesik çizgi her yeri aynı yoğunlukta bir küredir, 0,4; değer küçüldükçe ağır malzeme merkezde toplanmıştır. Ganymede 0,3115 ile en solda: tam katmanlaşmış, ağır çekirdeği merkeze çökmüş. Callisto 0,3549: kaya ve buzu büyük ölçüde karışık kalmış. Io 0,378 ile düzgün küreye en yakın olanıdır. Noktalı çizgi Dünya\'dır, 0,3307. Eksen 0,30\'dan başlar, aradaki farklar büyütülmüştür; değerler çekim ölçümünden bir modelle çıkarılmıştır.',
     kaynak: [KAYNAK.eylemsizlik, KAYNAK.wikiGalileo],
