@@ -1,0 +1,521 @@
+{
+  "id": "d29",
+  "unite": "fizik",
+  "yeni": true,
+  "baslik": "Feynman'ın dünyası: ışık ve maddenin tuhaf kuramı",
+  "ozet": "Bir vitrin camı ışığın yaklaşık yüzde 4'ünü yansıtır; peki hangi fotonun yansıyacağına kim karar verir? Bu derste Richard Feynman'ı tanıyacak, ışıkla elektronların kuramı olan kuantum elektrodinamiğini oklarla anlatmayı öğrenecek, aynaların, merceklerin ve serapların bu oklardan nasıl çıktığını görecek, Feynman diyagramlarını okuyacak ve kuramın elektronun mıknatıslığını trilyonda bir düzeyinde nasıl tutturduğunu sayılarla izleyeceksin.",
+  "on_bilgi": [
+    "d2",
+    "d12",
+    "d33",
+    "d27"
+  ],
+  "bolumler": [
+    {
+      "baslik": "Vitrindeki yansıman: küçük bir bilmece",
+      "paragraflar": [
+        "Akşam aydınlık bir dükkânın önünden geçerken camda kendi silik görüntünü görürsün; aynı anda camın arkasındaki rafları da görürsün. Demek ki ışığın çoğu camdan geçiyor, küçük bir kısmı geri dönüyor. Bu küçük kısmın ne kadar olduğu iyi bilinir. Işığın cama dik geldiği durumda sıradan camın tek bir yüzeyi gelen ışığın yaklaşık yüzde 4'ünü geri yansıtır. Bir cam levhanın iki yüzü vardır; ikisi birlikte yaklaşık yüzde 8 eder. Bu yüzden mercek sayısı çok olan dürbünlerde kayıp birikir; d11'de gördüğün kaplamalar tam da bu kaybı azaltmak içindir.",
+        "Işığı bir dalga gibi düşünürsen burada şaşılacak bir şey yok: dalganın küçük bir payı geri döner, büyük payı geçer. Ama d27'de gördüğün gibi ışık tek tek parçacıklar, yani fotonlar halinde gelir. Foton bölünmez: bir algılayıcıya ya bütün olarak varır ya hiç varmaz. Yarım foton yansımaz. O halde her foton ya yansır ya geçer. Peki hangisi yansıyacak? Aynı renkte, aynı yönden gelen fotonların arasında hiçbir fark yoktur. Kuantum fiziği burada tek bir fotonun ne yapacağını söylemez; yalnızca olasılığını verir. Her foton için yansıma olasılığı yaklaşık yüzde 4'tür ve bundan daha kesin bir bilgi yoktur.",
+        "Richard Feynman bu sıradan görünen bilmeceyi, uzman olmayan bir dinleyiciye kuantum kuramını anlatmanın kapısı yaptı. 1979'da halka açık dört konferans verdi; bu konferansların dökümü sonradan “QED: Işık ve Maddenin Tuhaf Kuramı” adlı kitabın dört bölümü oldu. Bu dersin adı o kitaba bir selamdır, ama ders kitaptan alıntı yapmaz. Aynı fikirleri kendi örneklerimizle, kaynaklı sayılarla ve gündelik sözcüklerle anlatacağız. Önce Feynman'ı tanıyacağız, sonra kâğıda oklar çizip bu okların aynayı, merceği ve batan Güneş'in basıklığını nasıl açıkladığını göreceğiz."
+      ],
+      "ornek": {
+        "baslik": "Örnek: 1.000 fotondan kaçı yansır?",
+        "metin": "Bir lambadan cama dik gelen 1.000 foton düşün. Tek yüzeyin yansıtma olasılığı yaklaşık 0,04. Beklenen yansıyan foton sayısı 1.000 × 0,04 = 40. Kalın bir cam levhada iki yüzey birlikte yaklaşık yüzde 8 yansıttığı için beklenen sayı 1.000 × 0,08 = 80 olur. Bu sayılar bir ortalamadır: her denemede tam 40 çıkmaz, birkaç foton aşağı ya da yukarı oynar, çünkü her foton kendi başına ve rastgele davranır. Foton sayısı arttıkça oran yüzde 4'e yaklaşır. Sonuç: tek yüzeyde yaklaşık 40, iki yüzlü levhada yaklaşık 80 foton."
+      },
+      "akilda": "Sıradan cam tek yüzeyinde ışığın yaklaşık yüzde 4'ünü yansıtır. Foton bölünmediği için her foton ya yansır ya geçer; kuantum fiziği yalnızca bunun olasılığını verir."
+    },
+    {
+      "baslik": "Richard Feynman kimdi?",
+      "paragraflar": [
+        "Richard P. Feynman 11 Mayıs 1918'de New York'ta doğdu. Çocukken ailesi kentin Queens bölgesindeki Far Rockaway'e taşındı ve liseyi orada okudu. Lisans derecesini 1939'da Massachusetts Teknoloji Enstitüsü'nden (MIT) aldı; aynı yıl Putnam matematik yarışmasında “Putnam Fellow” unvanını kazandı. Doktorasını 1942'de Princeton Üniversitesi'nde John Archibald Wheeler'ın yanında tamamladı. Tezinin adı “Kuantum Mekaniğinde En Az Etki İlkesi”ydi. Bu ad şimdilik sana bir şey söylemeyebilir; ama dersin ortasında “ışık her yolu dener” fikrine geldiğimizde, Feynman'ın bu tezde attığı temellerin sonradan nasıl büyüdüğünü göreceksin.",
+        "İkinci Dünya Savaşı yıllarında Robert R. Wilson'ın teşvikiyle Los Alamos'taki Manhattan Projesi'ne, yani atom bombasını geliştiren ABD ordusu projesine katıldı. Hans Bethe'nin yönettiği kuramsal bölümde genç bir fizikçiydi; Bethe onu 24 yaşında grup lideri yaptı. Feynman, o yıllarda uzun hesapları elle yapan çalışanlardan, yani “insan hesap makinelerinden” oluşan grubu yönetti. Ayrıca Los Alamos'taki “Su Kaynatıcı” adlı reaktör için nötron hesapları yaptı ve Oak Ridge'de nükleer malzemenin güvenli depolanması için çalıştı.",
+        "Savaştan sonra 1945–1950 arasında Cornell Üniversitesi'nde kuramsal fizik profesörü oldu. 1950'de Pasadena'daki Kaliforniya Teknoloji Enstitüsü'ne (Caltech) geçti ve en bilinen çalışmalarının çoğunu orada yaptı; Nobel Vakfı'nın biyografisine göre unvanı Richard Chace Tolman Kuramsal Fizik Profesörlüğüydü. 1954'te Albert Einstein Ödülü'nü, 1962'de Lawrence Ödülü'nü aldı ve 1965'te Londra'daki Royal Society'nin yabancı üyeliğine seçildi. 15 Şubat 1988'de Los Angeles'ta, 69 yaşında, iki nadir kanser türü nedeniyle öldü.",
+        "Feynman'ın adı fizikçilerin dışında da tanınır. Bunun bir nedeni, kendi anlattıklarından derlenen anı kitaplarıdır; en bilineni “Surely You're Joking, Mr. Feynman!” adını taşır. Bu kitaplarda karşına davul çalan, şakacı bir dâhi çıkar. Anılar keyifli okunur, ama bir insanın kendi hikâyesini anlatması tarihsel belge ile aynı şey değildir. Bu derste o anekdotları tekrarlamayacağız. Bizi ilgilendiren, Feynman'ın fiziğe ve fizik öğretimine bıraktıklarıdır: ışıkla maddenin kuramı, bu kuramı hesaplamak için icat ettiği resimler ve doğaya karşı dürüstlük konusundaki tavrı."
+      ],
+      "akilda": "Feynman 1918'de New York'ta doğdu, 1942'de Princeton'da en az etki ilkesi üzerine doktora yaptı, savaşta Los Alamos'ta çalıştı, 1950'de Caltech'e geçti ve 1988'de öldü."
+    },
+    {
+      "baslik": "Kuantum elektrodinamiği ve 1965 Nobel'i",
+      "paragraflar": [
+        "Önce adı çözelim. Elektrodinamik, elektrik yüklerinin ve onların yarattığı elektrik ve manyetik alanların hareket halindeki davranışını anlatan fiziktir; d33'te Maxwell'in bu alanları birleştirip ışığın bir elektromanyetik dalga olduğunu gösterdiğini görmüştün. Kuantum ise d27 ve d28'de gördüğün, olasılıklarla işleyen küçük ölçekli fiziktir. İkisini birleştiren kurama kuantum elektrodinamiği denir; İngilizce adının baş harfleriyle kısaca QED. Konusu, elektron gibi elektrik yüklü parçacıkların ışıkla, yani fotonlarla nasıl etkileştiğidir. Camın yansıtması, merceğin odaklaması, atomların tayf çizgileri, hepsi bu etkileşimin örnekleridir.",
+        "Gökbilim için QED'in önemi büyüktür, çünkü gökyüzünden bize ulaşan bilginin neredeyse tamamı ışıkla gelir. d2'de gördüğün tayf çizgileri, bir atomdaki elektronun belli bir enerjide foton salması ya da soğurmasıyla oluşur; bu, QED'in en temel olayıdır. Bir bulutsunun kırmızı hidrojen ışığı, Güneş tayfındaki karanlık çizgiler, bir teleskobun aynasının yıldız ışığını yansıtması ve dürbününün merceklerinin onu kırması, hepsi ışık ile elektronların etkileşimidir. QED'in yapmadığı şey de var: yıldızın neden o sıcaklıkta olduğunu kütleçekimi ve çekirdek tepkimeleri belirler; QED ise o yıldızın ışığının nasıl doğduğunu ve bize gelirken neler yaşadığını anlatır.",
+        "Kuramın bugünkü, hesap yapılabilir biçimi 1940'ların sonunda kuruldu; bu dersteki tarihlerin çoğu 1948 ve 1949'dur. Bu iş için 1965 Nobel Fizik Ödülü üç fizikçi arasında bölündü: Sin-Itiro Tomonaga, Julian Schwinger ve Richard Feynman. Feynman'ın payı üçte birdi. Nobel Vakfı gerekçeyi, kuantum elektrodinamiğindeki temel çalışmaları ve bunun parçacık fiziği için derin sonuçları olarak yazar. Ödül sırasında Feynman Caltech'teydi.",
+        "Feynman'ın kendine özgü katkısı iki araçtı. Birincisi, bir durumdan ötekine giden bütün olası yolların hesaba katıldığı “tarihlerin toplamı” yöntemiydi; bugün buna yol integrali denir. İkincisi, karmaşık formülleri küçük çizimlere dönüştüren ve sonradan onun adıyla anılan diyagramlardı. Freeman Dyson 1949'da yayımladığı bir makalede, öteki pek çok katkısının yanında, Feynman'ın kurallarına yeniden normalleştirme denen teknik düzeltmenin pratikte nasıl yapılacağını söyleyen kurallar ekledi. Bu düzeltmenin ayrıntısı bu dersin kapsamı dışında kalıyor.",
+        "Bu derste QED'i iki katmanda göreceğiz. Birinci katman, Feynman'ın uzman olmayanlar için kullandığı ok resmidir: kâğıt, kalem ve biraz sabır yeter. İkinci katman, fizikçilerin gerçek hesaplarda kullandığı Feynman diyagramlarıdır. İkisinin altında aynı fikir yatar: bir olay birçok farklı biçimde gerçekleşebiliyorsa, doğa bütün bu biçimlerin katkısını toplar. Gündelik hayatta gördüğümüz düzenli davranışlar, örneğin aynada açıların eşit olması, bu toplamanın sonucunda kendiliğinden ortaya çıkar."
+      ],
+      "akilda": "QED, elektrik yüklü parçacıkların ışıkla etkileşiminin kuantum kuramıdır. 1965 Nobel'i Tomonaga, Schwinger ve Feynman arasında üçe bölündü; Feynman'ın katkısı yol integrali ve diyagramlardı."
+    },
+    {
+      "baslik": "Olasılık genliği: her olasılığa bir ok",
+      "paragraflar": [
+        "Şimdi oyunun kuralları. Bir olay olabilir ya da olmayabilir; örneğin bir foton camdan yansıyıp gözüne gelebilir. Kuantum kuramı bu olaya bir sayı değil, düzlemde çizilmiş bir ok bağlar. Okun bir uzunluğu ve bir yönü vardır. Fizikçiler bu oka olasılık genliği der. Kural şudur: olayın olasılığı, okun uzunluğunun karesidir. Uzunluğu 1 olan bir ok kesinlik, yani olasılık 1 demektir; uzunluğu 0 olan ok olmayacak bir olayı anlatır. d27'de Max Born'un dalga fonksiyonu için koyduğu kuralı görmüştün; ok resmi bu kuralın çizilmiş halidir.",
+        "Camın tek yüzeyindeki yansımaya dönelim. Yansıma olasılığı yaklaşık 0,04 ise, bu olaya bağlanan okun uzunluğu yaklaşık 0,2'dir, çünkü 0,2'nin karesi 0,04'tür. Neden olasılığı doğrudan kullanmıyoruz da işi oklarla karmaşıklaştırıyoruz? Çünkü az sonra göreceğin gibi, bir olayın birden çok gerçekleşme yolu olduğunda olasılıklar değil oklar toplanır. Ve oklar, olasılıkların asla yapamadığı bir şey yapabilir: birbirini götürebilir.",
+        "Okun yönünü ne belirler? Bunun için bir benzetme kullanalım. Fotonun yanında hayali bir kronometre taşıdığını düşün. Foton yol aldıkça kronometrenin ibresi döner; ışığın dalga boyu kadar yol aldığında ibre tam bir tur atar. Kırmızı ışığın dalga boyu mavininkinden uzun olduğu için kırmızı ışıkta ibre aynı yolda daha az tur atar (dalga boyu için d2). Foton hedefe vardığında ibrenin gösterdiği yön, o yolun okunun yönüdür. Benzetmenin sınırını bil: fotonun içinde gerçek bir saat yoktur. İbre, dalganın evresi denen niceliği, yani dalganın döngüsünün hangi noktasında olduğunu izlemenin kolay bir yoludur.",
+        "Okları toplamak da kolaydır. İki ok varsa ikincisinin kuyruğunu birincisinin ucuna koyarsın; birincinin kuyruğundan ikincinin ucuna çizilen ok, toplamdır. Aynı yöne bakan iki ok uç uca eklenince uzun bir ok çıkar; zıt yöne bakan iki eşit ok ise başladığın noktaya geri döndürür, toplam sıfır olur. İki dalganın üst üste binince güçlenmesine ya da sönmesine girişim denir; ok toplamı girişimin dilidir. d27'deki çift yarık deneyinde ekranda karanlık şeritlerin çıkması da aynı nedene dayanır: o noktalara giden iki yolun okları birbirini götürür."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Uzunluğu 0,2 olan iki ok",
+        "metin": "Bir olayın iki gerçekleşme yolu olsun ve her yolun oku 0,2 uzunlukta olsun. Tek başına her yol 0,2² = 0,04, yani yüzde 4 olasılık verirdi. 1. durum, oklar aynı yöne bakıyor: toplam ok 0,2 + 0,2 = 0,4 uzunlukta, olasılık 0,4² = 0,16, yani yüzde 16. 2. durum, oklar zıt yöne bakıyor: toplam ok 0, olasılık yüzde 0. 3. durum, oklar dik açı yapıyor: toplam ok bir dik üçgenin hipotenüsü, uzunluğu √(0,04 + 0,04) = √0,08 ≈ 0,283, olasılık 0,08, yani yüzde 8. Sonuç: aynı iki yol, okların yönüne göre yüzde 0 ile yüzde 16 arasında bir olasılık verir; olasılıkları basitçe toplasaydın her zaman yüzde 8 bulurdun."
+      },
+      "akilda": "Her olasılığa bir ok (olasılık genliği) bağlanır; olasılık okun uzunluğunun karesidir. Bir olayın birden çok yolu varsa oklar uç uca eklenir ve birbirini güçlendirebilir ya da götürebilir."
+    },
+    {
+      "baslik": "İnce camın sırrı: yüzde 0 ile yüzde 16 arası",
+      "paragraflar": [
+        "Şimdi okları gerçek bir cama uygulayalım. İnce bir cam tabakaya dik gelen bir foton gözüne iki yoldan dönebilir: ön yüzeyden yansıyarak ya da camın içine girip arka yüzeyden yansıyarak. Her iki yolun oku kabaca 0,2 uzunluktadır. Ama arka yüzeyden dönen foton camın içinden iki kez geçer, yani biraz daha uzun yol alır. Onun kronometresi daha çok dönmüştür. Bu yüzden iki okun arasındaki açı camın kalınlığına bağlıdır. İşin içinde, iki yüzeydeki yansımaların okları arasındaki bir işaret farkı gibi ince bir ayrıntı daha vardır, ama sonucu değiştirmez: kalınlığa göre oklar aynı yöne de bakabilir, zıt yöne de.",
+        "Sonuç şaşırtıcıdır. Camın kalınlığını çok az değiştirerek, yansıma olasılığını sıfır ile yüzde 16 arasında gidip gelen bir döngüde gezdirebilirsin. Bu döngünün ortalaması yüzde 8'dir; önceki bölümdeki dik açı durumu tam bu ortalamayı verir. Sıradan bir pencere camı kalındır ve kalınlığı her noktada biraz farklıdır; üstelik gün ışığında pek çok renk birden vardır. Bütün bu farklar ortalamayı çıkarır ve iki yüzeyin birlikte yaklaşık yüzde 8 yansıttığını ölçersin. Gerçekte ışık camın içinde birkaç kez ileri geri de yansıyabilir; bu ek yolların okları küçüktür ve hesabı yalnızca biraz düzeltir.",
+        "Bu ilke, dürbününün ve teleskobunun içinde her gün çalışır. Merceklerin yüzeyine yansıma önleyici kaplama denen çok ince katmanlar sürülür. Katmanın kalınlığı öyle seçilir ki katmanın üst yüzeyinden ve cama değdiği alt yüzeyden yansıyan ışığın okları birbirini mümkün olduğunca götürsün. Klasik kaplama malzemesi magnezyum florürdür; bir yüzeyin yansıtmasını yaklaşık yüzde 4'ten yüzde 1,5'e indirir. Bugünün çok katmanlı kaplamaları yüzey başına yüzde 0,25 ya da daha az yansıtır. Kaplamanın tek bir kalınlığı bütün renkler için mükemmel olamaz; bu yüzden birden çok katman üst üste konur ve kalınlıklar görünür ışığın dalga boyu aralığına göre ayarlanır.",
+        "Bunun gökyüzüne bakan biri için neden önemli olduğunu sayılar söyler. Bir dürbünde ışık, nesnel mercekten göz merceğine dek pek çok hava-cam yüzeyinden geçer. Her yüzeyde kaybolan birkaç yüzde birikir. Geri yansıyan ışık da kaybolmaz; aletin içinde sekerek görüntünün üstüne ince bir pus gibi yayılır ve karşıtlığı düşürür. Sönük bir bulutsuyu ya da dürbünle Andromeda Galaksisi'ni ararken bu pus fark yaratır. Yani dürbününün parlak görüntüsü, kısmen, kalınlığı ışığın dalga boyuna göre ayarlanmış ve oklarını birbirine karşı çalıştıran çok ince katmanların başarısıdır."
+      ],
+      "ornek": {
+        "baslik": "Örnek: 16 yüzeyden geçen ışık",
+        "metin": "Işığın bir dürbünde 16 hava-cam yüzeyinden geçtiğini varsay. 1. kaplamasız: her yüzey yüzde 4 yansıtır, yüzde 96'sı geçer. Geçen pay 0,96¹⁶ ≈ 0,520, yani yaklaşık yüzde 52. 2. magnezyum florür kaplama: her yüzey yüzde 1,5 yansıtır; 0,985¹⁶ ≈ 0,785, yani yaklaşık yüzde 78,5. 3. çok katmanlı kaplama, yüzey başına yüzde 0,25: 0,9975¹⁶ ≈ 0,961, yani yaklaşık yüzde 96. Bu hesap yalnızca yansıma kaybını sayar; camın soğurması gibi öbür kayıpları dışarıda bırakır. Sonuç: kaplama, göze ulaşan ışığı yaklaşık yüzde 52'den yüzde 96'ya çıkarabilir."
+      },
+      "akilda": "İnce bir tabakada ön ve arka yüzeyin okları kalınlığa göre birbirini güçlendirir ya da götürür; yansıma yüzde 0 ile 16 arasında değişir. Yansıma önleyici kaplamalar bu götürmeyi kullanır."
+    },
+    {
+      "baslik": "Işık her yolu dener: ayna",
+      "paragraflar": [
+        "Okulda aynanın kuralını öğrendin: gelme açısı yansıma açısına eşittir. Şimdi bu kuralı oklarla yeniden bulalım. Bir lamba ile gözün arasında uzun, düz bir ayna olsun. Ok resmine göre ışık aynanın tek bir noktasından değil, her noktasından yansıyarak gözüne gelebilir. Aynanın sol ucundan, ortasından, sağ ucundan yansıyan her yol ayrı bir olasılıktır ve her birine bir ok düşer. Okların uzunlukları aşağı yukarı eşittir. Fark, yönlerindedir: her yolun süresi farklıdır, bu yüzden kronometrelerin ibreleri farklı yerlerde durur.",
+        "Aynanın uç taraflarındaki yolları düşün. Orada yansıma noktasını biraz kaydırınca yolun süresi hızla değişir; komşu yolların okları birbirinden epey farklı yönlere bakar. Uç uca eklendiklerinde kendi etrafında dönen bir sarmal çizerler ve toplamları neredeyse sıfıra iner. Aynanın ortasında, açıların eşit olduğu noktanın çevresinde ise durum farklıdır. Orada süre en kısadır ve en kısa sürenin hemen çevresinde süre neredeyse hiç değişmez; bir çukurun dibinde zeminin düz olması gibi. Bu bölgedeki yolların okları hemen hemen aynı yöne bakar ve uç uca eklenip büyük bir toplam ok verir. Işığın neredeyse tamamı “sanki” tek bir yoldan gelmiş gibi görünür.",
+        "Bu fikrin kökleri eskidir. İskenderiyeli Heron, düz aynadan yansıma kuralının, ışığın izlediği yolun toplam uzunluğunun en kısa olması koşulundan çıktığını gösterdi. İbnü'l-Heysem bu ilkeyi kırılmaya genişletti. Pierre de Fermat 1662'de ışığın en kısa sürede alınan yolu izlediğini önerdi; bugün buna Fermat ilkesi denir. Modern biçiminde ilke “en kısa süre” değil “durağan süre” der: yoldaki küçük bir değişiklik süreyi neredeyse değiştirmez. Çoğu zaman bu bir en küçük değerdir, ama şart değildir. Feynman'ın 1948'de tamamladığı yol integrali yöntemi, bütün yolların toplanmasından bu durağan yolun neden öne çıktığını açıklar; fikrin tohumu Paul Dirac'ın 1933 tarihli bir makalesindedir.",
+        "Bir yanlış anlamayı düzeltelim. Işık yola çıkmadan önce bütün yolları düşünüp en hızlısını seçmez. Fermat ilkesi anlatılırken sık kullanılan cankurtaran benzetmesinde de bu sınır vardır: cankurtaran düşünebilir, ışık düşünemez. Ok resminde seçim yapan kimse yoktur; her yolun katkısı toplanır, uzak yolların katkıları birbirini götürür, geriye durağan yolun çevresi kalır. “Işık her yolu dener” sözü de bu toplamayı anlatan bir mecazdır. Bu yolların “gerçekten” yaşanıp yaşanmadığı, d27'de gördüğün yorum tartışmasının bir parçasıdır ve fizikçiler bu konuda anlaşmış değildir. Tartışmasız olan şey, hesabın doğru sonuç vermesidir.",
+        "Okların gerçek olduğunu gösteren güzel bir deney düşünelim. Aynanın kenar bölgesini alıp, oklarının bir yöne bakan dar şeritlerini bırak, öbür yöne bakan şeritlerini kazıyıp siyaha boya. Artık kenarda birbirini götürecek okların yarısı yok; kalanlar aynı yöne bakar ve toplanır. Sonuç: aynanın kenarından, açıların eşit olmadığı bir yönde de parlak bir yansıma gelir. Şeritlerin aralığı belli bir dalga boyuna göre ayarlı olduğu için her renk farklı açıda güçlenir ve ışık renklerine ayrılır. Bu düzeneğin adı kırınım ağıdır ve d2'de gördüğün gibi yıldız tayflarını açan tayfölçerlerin çoğunun kalbindedir."
+      ],
+      "akilda": "Aynanın her noktasından yansıyan yolun bir oku vardır; uç yolların okları birbirini götürür, süresi durağan olan yolun çevresindekiler toplanır. Fermat ilkesi böylece ok toplamından çıkar.",
+      "ornek": {
+        "baslik": "Örnek: Aynanın gerçekten çalışan kısmı ne kadar geniş?",
+        "metin": "Bir lamba ile gözün aynadan 1'er metre yukarıda olduğunu ve aralarında yatayda 2 m bulunduğunu varsay. Işığın rengi yeşil, dalga boyu 550 nm olsun (görünür ışık yaklaşık 380 ile 700 nm arasındadır). 1. adım: tam ortadan yansıyan yol iki eşit parçadır, her biri √(1² + 1²) ≈ 1,41421 m; toplam ≈ 2,828427 m. 2. adım: yansıma noktasını 1 mm kaydırırsan yol yaklaşık 0,00035 mm, yani 354 nm uzar; kronometre ibresi 354 ÷ 550 ≈ 0,64 tur fazla döner. 3. adım: 1 cm kaydırırsan yol 0,035 mm uzar, ibre yaklaşık 64 tur fazla döner. 4. adım: 10 cm kaydırırsan yol yaklaşık 3,5 mm uzar, ibre yaklaşık 6.400 tur fazla döner. Sonuç: yalnızca ortadaki noktanın bir iki milimetre çevresindeki yolların okları aşağı yukarı aynı yöne bakar; daha uzaktakilerin okları hızla döner ve birbirini götürür. Yansıyan ışığın neredeyse tamamı, bu birkaç milimetrelik şeritten geliyormuş gibi davranır."
+      }
+    },
+    {
+      "baslik": "Mercek: bütün yolları eşit süreye getirmek",
+      "paragraflar": [
+        "Işık camda havadakinden yavaş yol alır. Bir maddenin kırma indisi, ışığın boşluktaki hızının o maddedeki hızına oranıdır ve n harfiyle gösterilir. Sıradan cam için n yaklaşık 1,5'tir; demek ki ışık camda saniyede yaklaşık 200.000 km gider. Işık havadan cama eğik girdiğinde yönünün kırılması, Fermat ilkesinin doğrudan sonucudur. Bunu sık kullanılan bir benzetmeyle düşün: kumsalda bir cankurtaran denizde çırpınan birine koşuyor. Kumda hızlı koşar, suda yavaş yüzer. En çabuk ulaşmak için düz çizgiden gitmez; kumda biraz daha fazla koşar, suda daha az yüzer. Yolu kum ile suyun sınırında kırılır.",
+        "Mercek bu fikri bir sanata dönüştürür. Bir noktadan çıkan ışığı başka bir noktada toplamak istiyorsun. Kaynaktan odağa giden yolları düşün: tam ortadan geçen düz yol en kısadır ama merceğin en kalın yerinden geçer, yani camda en çok zaman harcar. Kenardan geçen yol daha uzundur ama camın ince yerinden geçer. Merceğin biçimi öyle ayarlanır ki bütün bu yolların süreleri eşit olsun. Süreler eşitse bütün yolların okları odakta aynı yöne bakar ve dev bir toplam ok oluşur: odak noktası parlar. Odağın biraz yanındaki bir noktaya giden yolların süreleri ise eşit değildir; okları dağılır ve birbirini götürür, orası karanlık kalır.",
+        "Aynalı teleskobun eğri aynası aynı işi camsız yapar: uzaktaki bir yıldızdan gelip aynanın farklı yerlerinden yansıyan yolların odağa varış sürelerini eşitleyecek biçimde eğilmiştir (teleskop türleri için d12). Ok resmi bir sınırı da hemen gösterir. Mercek sonsuz büyük değildir; bu yüzden odağın hemen yanındaki noktalara giden yolların okları da tam olarak birbirini götürmez. Görüntü kusursuz bir nokta değil, küçük bir ışık lekesi olur. Merceğin çapı büyüdükçe bu leke küçülür. d12'de gördüğün kırınım sınırı ve teleskobun ayırma gücü işte bu okların eksik götürüşünün ölçüsüdür.",
+        "Ok resmi merceklerin bilinen bir kusurunu da açıklar. d2'de prizmanın ışığı renklerine ayırdığını görmüştün: camın kırma indisi dalga boyuna bağlıdır, yani cam her rengi biraz farklı yavaşlatır. Bir merceğin biçimi ancak tek bir renk için bütün yolların süresini tam eşitleyebilir. Öbür renklerde süreler biraz kayar ve oklar başka bir noktada toplanır; mavi ile kırmızının odakları ayrılır. d12'de gördüğün renk sapması budur ve mercekli teleskopları etkileyen en büyük sapmadır. Aynada bütün renkler aynı biçimde yansır, bu yüzden renk sapması olmaz; bütün büyük araştırma teleskoplarının aynalı olmasının nedenlerinden biri de budur."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Camın içindeki 5 milimetre",
+        "metin": "Merceğin ortasının 5 mm kalın olduğunu varsay (n = 1,5). Işığın camdaki hızı 299.792 ÷ 1,5 ≈ 199.900 km/s. 1. adım: 5 mm camı geçme süresi 0,005 m ÷ 1,999 × 10⁸ m/s ≈ 2,50 × 10⁻¹¹ s. 2. adım: aynı 5 mm havada 0,005 ÷ 2,998 × 10⁸ ≈ 1,67 × 10⁻¹¹ s sürerdi. 3. adım: fark yaklaşık 0,83 × 10⁻¹¹ s, yani saniyenin yüz milyarda birinden biraz kısa. Işık bu sürede havada yaklaşık 2,5 mm yol alır. Bu yüzden 5 mm cam, süre bakımından havada 5 × 1,5 = 7,5 mm yol gibi sayılır. Sonuç: merceğin kenarından geçen yol, ortadan geçen yoldan geometrik olarak yaklaşık 2,5 mm daha uzun olmalı ki iki yolun süresi eşitlensin ve okları odakta aynı yöne baksın."
+      },
+      "akilda": "Kırma indisi n, ışığın camda kaç kat yavaşladığını söyler (cam için yaklaşık 1,5). Mercek, kaynaktan odağa giden bütün yolların süresini eşitler; böylece okları odakta toplanır."
+    },
+    {
+      "baslik": "Serap, batan Güneş ve kütleçekimsel mercek",
+      "paragraflar": [
+        "Işığın yolunu bükmek için cam gerekmez; hava da yeter. Havanın yoğunluğu yükseklikle değişir ve yoğunluk arttıkça ışığın havadaki hızı azalır, yani kırma indisi artar. Kırma indisi yavaş yavaş değişen bir ortamda ışığın yolu kırık bir çizgi değil, yumuşak bir eğri olur. Fermat ilkesi burada da geçerlidir: ışık, süresi durağan olan eğriyi izler. Yere yakın havada bu bükülme seraplara yol açar. Sıcak bir öğleden sonra yerin hemen üstündeki hava ısındığında ışınlar yukarı doğru kıvrılabilir ve uzaktaki cisimler olduklarından aşağıda görünür. Bükülmenin büyüklüğünü esas olarak yere yakın havadaki sıcaklık farkları belirler.",
+        "Aynı bükülme her akşam Güneş batarken de çalışır. Atmosferik kırılma ufuktaki bir cismi gerçekte olduğundan yaklaşık 34 yay dakikası yukarıda gösterir. Güneş'in görünen çapı da yarım dereceye yakın olduğu için, Güneş'in alt kenarı ufka değiyor gibi göründüğünde gerçek yüksekliği aslında sıfırın altındadır; yani geometrik olarak Güneş çoktan ufkun altına inmeye başlamıştır. Kırılma, Güneş'in alt kenarını üst kenarından daha çok kaldırdığı için ufuktaki Güneş yaklaşık 5 yay dakikası, yani çapının altıda biri kadar basık görünür. Bir akşam Marmara'nın deniz ufkunda batan Güneş'e bakarsan bu basıklığı çıplak gözle fark edebilirsin; yalnızca Güneş tam ufka indiğinde ve ışığı iyice zayıfladığında bak, gün ortasında asla.",
+        "Fermat'nın ilkesi kozmik ölçekte de iş görür. d17'de gördüğün kütleçekimsel mercekte, büyük bir kütlenin çevresinden geçen ışık bükülür ve arkadaki uzak bir kaynağın birden çok görüntüsü oluşabilir. Gökbilimciler Schechter ile Schnittman'ın anlattığı gibi bu görüntüler, fotonun uçuş süresinin durağan olduğu yönlerde belirir: süre bir en küçük, bir en büyük ya da bir eyer noktası olabilir. Görüntülere giden yolların süreleri farklı olduğu için, kaynakta olan bir parlaklık değişimi görüntülere farklı zamanlarda ulaşır. Vitrin camından kütleçekimsel merceğe uzanan bu zincirin her halkasında aynı soru vardır: hangi yolların süresi durağan?"
+      ],
+      "akilda": "Havada kırma indisi yükseklikle değiştiği için ışık eğri yollar izler: seraplar ve ufuktaki yaklaşık 34 yay dakikalık kırılma bundandır. Kütleçekimsel mercekte de görüntüler uçuş süresinin durağan olduğu yönlerde oluşur."
+    },
+    {
+      "baslik": "Feynman diyagramları: hesabın resim dili",
+      "paragraflar": [
+        "Oklar, bir fotonun camdan yansıması gibi basit soruları anlatmaya yeter. Ama elektronların birbirini itmesi ya da bir atomun ışık salması gibi sorularda olası yolların sayısı patlar. Feynman bu karmaşayı düzenlemek için bir çizim dili geliştirdi. Bir Feynman diyagramında bir eksen zamanı, öbürü uzayı gösterir; bazı ders kitaplarında zaman soldan sağa akar, bazılarında aşağıdan yukarı. Elektron gibi parçacıklar üzerinde ok bulunan düz çizgilerle, fotonlar dalgalı çizgilerle çizilir. Çizgilerin birleştiği noktaya köşe denir; köşe bir etkileşimi, örneğin bir elektronun bir foton salmasını ya da soğurmasını gösterir. Her köşede elektrik yükü korunur.",
+        "Bir örnek: iki elektron birbirine yaklaşıyor ve sonra birbirinden uzaklaşıyor. Bunun en basit diyagramında soldan iki elektron çizgisi gelir. Üstteki elektron bir köşede bir foton salar ve yönünü değiştirir; foton dalgalı bir çizgiyle alttaki elektrona gider ve orada soğurulur, alttaki elektron da yön değiştirir. Resim, iki elektronun bir foton alışverişiyle birbirini ittiğini anlatır. Feynman diyagramlarının ilk yayımlandığı yer, Feynman'ın 15 Eylül 1949'da Physical Review'ün 76. cildinde çıkan “Kuantum Elektrodinamiğine Uzay-Zaman Yaklaşımı” makalesidir; ilk diyagram makalenin 772. sayfasında Şekil 1 olarak yer alır.",
+        "Burada önemli bir uyarı gerekir: diyagram, parçacıkların gerçekten izlediği yolun fotoğrafı değildir. Her diyagram, hesaptaki bir terimin, yani toplanacak bir okun özetidir; bir kaynak bunu parçacıklar arasındaki etkileşimleri kavramaya ve hesaplamaya yarayan bir “muhasebe aracı” olarak tanımlar. Bir olayın olasılığını bulmak için, o olayı gerçekleştirebilecek bütün diyagramların katkıları toplanır. Bu, ok resmindeki “bütün yolları topla” fikrinin ta kendisidir. Üstelik diyagramlarda köşelerin zaman sırası önemli değildir; önemli olan, çizgilerin birbirine nasıl bağlandığıdır.",
+        "Sonsuz sayıda diyagram varsa hesap nasıl biter? Cevap, ince yapı sabiti denen küçük bir sayıdadır. Bu sabit, elektron ile ışık arasındaki etkileşimin gücünü ölçer ve birimi yoktur. CODATA 2022 değerine göre tersi yaklaşık 137,036'dır; yani sabitin kendisi yaklaşık 0,0073'tür. QED'in tahminleri bu sabitin artan kuvvetlerine göre sıralanmış bir seri olarak yazılır. Daha çok köşesi olan diyagramlar serinin daha ileri terimlerine katkı verir ve sabit küçük olduğu için bu katkılar hızla küçülür. Fizikçiler en basit diyagramlarla başlar ve istedikleri kesinliğe ulaşana dek terim ekler."
+      ],
+      "akilda": "Feynman diyagramında düz çizgiler elektron gibi parçacıkları, dalgalı çizgiler fotonları, köşeler etkileşimleri gösterir. Diyagram bir yol fotoğrafı değil, hesaptaki bir terimdir; ince yapı sabiti (yaklaşık 1/137) küçük olduğu için seri hızla küçülür."
+    },
+    {
+      "baslik": "Pozitron ve Samanyolu'nun 511 keV ışığı",
+      "paragraflar": [
+        "Feynman diyagramlarında karşı parçacıkların da bir yeri vardır. Elektronun karşı parçacığına pozitron denir; ayrıntısı d32'de. Diyagramlarda karşı parçacık, çizgisinin üzerindeki ok parçacık akışının tersine bakacak biçimde çizilir. Bu bir çizim kuralıdır; pozitronun geçmişe yolculuk ettiği anlamına gelmez. Bir elektron ile bir pozitron karşılaşınca ikisi birden yok olabilir ve yerlerine fotonlar çıkar. Bu olaya yok olma denir. d4'te gördüğün proton-proton zincirinin ilk adımında Güneş'in çekirdeğinde bir pozitron doğar; bu pozitron çevredeki bir elektronla yok olup iki gama ışını fotonu verir. Yani yok olma, şu anda Güneş'in içinde sürekli yaşanan sıradan bir olaydır.",
+        "Yok olmada açığa çıkan enerjiyi d25'teki E = mc² söyler. CODATA 2022'ye göre bir elektronun kütle enerjisi 0,511 MeV, yani 511 kiloelektronvolttur (keV); pozitronunki de aynıdır. Hareketsiz bir elektron ile pozitron yok olduğunda, toplam enerji 1,022 MeV iki fotona eşit paylaşılır ve fotonlar zıt yönlere gider. Her biri 511 keV taşır. d2'de gördüğün gibi görünür ışığın fotonları yaklaşık 1,8 ile 3,3 eV taşır; 511 keV bunun 150 bin ile 280 bin katıdır; bu yüzden bu fotonlar gama ışınıdır. d2'de gördüğün gibi gama ışınları atmosferi geçemez. İstanbul'dan, ne çıplak gözle ne dürbünle görülebilirler; onları ancak uzaydaki aletler yakalar.",
+        "Ve gökyüzü bu fotonlarla doludur. Samanyolu'nun merkez bölgesinden 511 keV enerjisinde güçlü bir gama ışını çizgisi gelir. İlk kez 1972'de Johnson ve arkadaşları tarafından algılandı; Güneş Sistemi dışından algılanan ilk ve en parlak gama ışını çizgisidir. Avrupa Uzay Ajansı'nın INTEGRAL uydusundaki SPI tayfölçeri bu ışımayı ayrıntılı biçimde inceledi. Tahminlere göre galaksimizde saniyede yaklaşık 2 × 10⁴³ pozitron üretilip yok oluyor. Ölçümler, bu pozitronların büyük çoğunluğunun, yaklaşık yüzde 93'ünün, önce bir elektronla kısa ömürlü bir çift olan pozitronyumu oluşturup sonra yok olduğunu gösteriyor. Peki bu kadar pozitron nereden geliyor? Dürüst cevap: bilinmiyor. Bu, gökbilimin açık sorularından biri olarak duruyor."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Samanyolu'nun pozitron ateşi kaç Güneş eder?",
+        "metin": "Saniyede 2 × 10⁴³ yok olma olduğunu ve her yok olmanın 1,022 MeV verdiğini kabul et (elektron ile pozitronun kütle enerjileri toplamı). 1. adım: toplam enerji saniyede 2 × 10⁴³ × 1,022 ≈ 2,04 × 10⁴³ MeV. 2. adım: 1 MeV ≈ 1,602 × 10⁻¹³ J olduğundan güç ≈ 2,04 × 10⁴³ × 1,602 × 10⁻¹³ ≈ 3,3 × 10³⁰ J/s, yani 3,3 × 10³⁰ W. 3. adım: Güneş'in ışıma gücü 3,828 × 10²⁶ W; oran 3,3 × 10³⁰ ÷ 3,828 × 10²⁶ ≈ 8.600. Bu kaba bir hesap: pozitronların ne kadar hareket enerjisiyle doğduğunu ve pozitronyum yoluyla yok olmanın enerjiyi fotonlar arasında farklı paylaştırabileceğini hesaba katmaz. Sonuç: galaksideki pozitron yok olmasının gücü kabaca 8.500 Güneş'in ışığına denk gelir."
+      },
+      "akilda": "Elektron ile pozitron yok olunca durgun halde her biri 511 keV taşıyan iki gama fotonu çıkar. Samanyolu'nun merkezinden gelen 511 keV çizgisi 1972'den beri bilinir; pozitronların kaynağı hâlâ bilinmiyor."
+    },
+    {
+      "baslik": "Elektronun mıknatısı: Dirac'ın 2'si ve Schwinger'in düzeltmesi",
+      "paragraflar": [
+        "Elektron küçük bir mıknatıs gibi davranır: kendine ait bir manyetik momenti, yani bir mıknatıslık gücü ve yönü vardır. Bu mıknatıslık, elektronun kendi içsel dönmesine benzeyen spin denen özelliğiyle bağlantılıdır (spin için d28). İkisi arasındaki oranı bir sayı anlatır: g çarpanı. Paul Dirac 1928'deki denklemiyle elektronun ölçülen manyetik momentini kuramdan elde etmeyi başardı; bu kuramda g tam olarak 2'dir. Uzun süre bu 2, elektronun mıknatıslığının tam cevabı sayıldı.",
+        "1948'de iki şey aynı anda oldu. Julian Schwinger yeni QED'le ilk düzeltmeyi hesapladı: g, 2'den biraz büyük olmalıydı ve fazlalığın oranı ince yapı sabitinin 2π'ye bölümü, yani yaklaşık 0,00116 kadardı. Aynı yıl Kusch ve Foley'nin deneyi bu düzeltmeyi doğruladı. Fizikçiler g'nin 2'den sapan bu küçük kısmına anormal manyetik moment der; yarısı alınmış fazlalık a harfiyle yazılır. “Anormal” sözü yanıltmasın: bu sapma kuramın bir kusuru değil, tersine kuramın en başarılı tahminlerinden biridir.",
+        "Bu düzeltme nereden gelir? Ok diliyle söylersek, elektronun bir mıknatısla etkileşmesinin birden çok yolu vardır. En basit yol Dirac'ın 2'sini verir. Daha karmaşık yollar, yani daha çok köşeli Feynman diyagramları, her biri küçük birer ok ekler. Schwinger'in 0,00116'sı bu eklerin ilki, en büyüğüdür. Sonraki terimler daha da küçüktür ama ölçümler o kadar keskinleşti ki onların da hesaplanması gerekti. Bugün fizikçiler bu seriyi beşinci sıraya kadar hesaplamış durumda; CODATA 2022 raporu bu beşinci sıra katsayısının hesaplanmış değerini de verir ve kuramsal ifadenin kendi göreli belirsizliğini, ince yapı sabitinin belirsizliği hariç, 1,4 × 10⁻¹¹ olarak yazar."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Schwinger'in tek terimi ne kadar yaklaştırır?",
+        "metin": "İnce yapı sabiti α ≈ 1 ÷ 137,036 ≈ 0,0072974. 1. adım: Schwinger düzeltmesi α ÷ 2π ≈ 0,0072974 ÷ 6,2832 ≈ 0,0011614. 2. adım: g ≈ 2 × (1 + 0,0011614) ≈ 2,0023228. 3. adım: ölçülen anormal moment (CODATA 2022) a ≈ 0,0011596522. Tek terimli tahmin ölçümden yaklaşık 0,0000017 fazla; bu fark anormal momentin binde 1,5'i kadar. Sonuç: tek bir diyagram, düzeltmenin yaklaşık yüzde 99,85'ini doğru verir; kalan binde 1,5'i daha karmaşık diyagramlar kapatır."
+      },
+      "akilda": "Dirac kuramında elektronun g çarpanı tam 2'dir. 1948'de Schwinger QED'le ilk düzeltmeyi (yaklaşık 0,00116) hesapladı, Kusch ile Foley ölçtü; ek terimler daha çok köşeli diyagramlardan gelir."
+    },
+    {
+      "baslik": "Trilyonda bir: kuramın en keskin sınavı",
+      "paragraflar": [
+        "Bugün elektronun mıknatıslığı, fizikte en kesin ölçülen niceliklerden biridir. X. Fan, T. G. Myers, B. A. D. Sukra ve G. Gabrielse 2023'te Physical Review Letters'ın 130. cildinde (makale 071801) yeni bir ölçüm yayımladı. Tek bir elektronu bir tuzakta tutup inceleyen bu deney g'nin yarısını 1,00115965218059 olarak buldu; belirsizlik son iki basamakta ± 13, yani yaklaşık trilyonda 0,13. Bu sonuç, 14 yıl boyunca en iyi değer olarak kalan 2008 ölçümünden 2,2 kat daha kesindir ve onunla uyumludur. Makaleye göre Standart Model'in tahmini ölçümle trilyonda bir düzeyinde örtüşüyor.",
+        "Bilimsel sabitlerin önerilen değerlerini belirleyen CODATA'nın 2022 tablosu da benzer bir tablo çizer. Bu tabloda elektronun anormal manyetik momenti 0,00115965218046 olarak verilir ve belirsizliği son iki basamakta ± 18'dir. Elektronun g çarpanı ise −2,00231930436092 olarak yazılır; eksi işareti elektronun yükünün eksi olmasından gelen bir yön kuralıdır, büyüklüğü değiştirmez. CODATA raporu yeni deneyin anormal moment için göreli belirsizliğini 1,1 × 10⁻¹⁰ olarak verir. Bu sayı trilyonda 0,13'ten neden büyük? Çünkü anormal moment, g'nin yarısının yalnızca binde birine yakın küçük bir parçasıdır. Aynı mutlak belirsizlik, bin kat küçük bir sayıya bölününce göreli olarak yaklaşık bin kat büyük görünür: 1,3 × 10⁻¹³ × 1,0012 ÷ 0,0011597 ≈ 1,1 × 10⁻¹⁰.",
+        "Bu kadar kesinlik neden önemli? Ok dilinde düşün: elektronun mıknatıslığına katkı veren her yol, yani her diyagram, toplama küçük bir ok ekler. Diyagramlarda yalnızca elektron ve foton değil, bilinen öbür parçacıklar da ara adımlarda yer alabilir; Fan ve arkadaşlarının yazdığı gibi kuramsal tahmin, QED serisine müon ve tau parçacıklarından gelen katkıları da ekler. Eğer doğada henüz bilmediğimiz bir parçacık varsa, o da kendi küçük okunu eklerdi ve ölçümle tahmin arasında bir fark açılırdı. Bu yüzden trilyonda birlik bir uyum, hem kuramın doğruluğunu sınar hem de bilinmeyen parçacıkların bu ölçüme ne kadar katkı verebileceğine sınır koyar.",
+        "Burada dürüst bir dipnot gerekir. QED'in tahmini, ince yapı sabitinin değerine dayanır; sabiti ise başka deneylerle ölçmek gerekir. En kesin iki ölçüm, biri sezyum atomlarıyla Berkeley'de, öbürü rubidyum atomlarıyla Paris'te yapılmış, birbirinden beklenenden çok farklı çıkıyor: Fan ve arkadaşlarına göre aradaki fark 5,5 standart sapma. Standart sapma, bir ölçümün belirsizliğinin ölçüsüdür; 5,5 kat, tesadüfle açıklanması çok zor bir farktır. Fan ve arkadaşları kendi ölçümlerinden ince yapı sabitinin tersini 137,035999166 olarak çıkarıyor. Bu değer Berkeley sonucundan 3,9, Paris sonucundan 2,1 standart sapma uzak. Yani sınav şu an kuramın kendisiyle değil, ölçümlerin uyuşmazlığıyla sınırlı ve hangi ölçümün nerede yanıldığı henüz bilinmiyor."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Trilyonda 0,13 ne kadar küçük?",
+        "metin": "Dünya ile Ay arasındaki ortalama uzaklık yaklaşık 384.400 km, yani 3,844 × 10⁸ m. Bu uzaklığı Fan ölçümünün göreli belirsizliğiyle, yani 0,13 × 10⁻¹² = 1,3 × 10⁻¹³ ile çarpalım. 1. adım: 3,844 × 10⁸ × 1,3 × 10⁻¹³ ≈ 5,0 × 10⁻⁵ m. 2. adım: 5,0 × 10⁻⁵ m = 0,05 mm. Sonuç: bu kesinlik, Dünya ile Ay arasındaki uzaklığı yaklaşık yirminci milimetre hatayla ölçmeye denk gelir."
+      },
+      "akilda": "2023 ölçümü g'nin yarısını yaklaşık trilyonda 0,13 belirsizlikle verdi ve kuram trilyonda bir düzeyinde uyuyor. Sınavın sınırı ince yapı sabitinin farklı ölçümlerinin birbiriyle uyuşmamasıdır."
+    },
+    {
+      "baslik": "Öğretmen Feynman: Caltech dersleri",
+      "paragraflar": [
+        "Feynman'ın adını fizikçilerin dışına taşıyan şeylerden biri öğretmenliğidir. 1961–1963 arasında Caltech'te lisans öğrencilerine iki yıllık bir fizik dersi verdi; tam dersi yalnızca bir kez anlattı. Mart 1964'te birinci sınıf öğrencilerine bir konuk ders daha verdi. Robert B. Leighton ve Matthew Sands bu dersleri kitaba dönüştürdü ve ortaya üç ciltlik Feynman Fizik Dersleri çıktı. Birinci cilt mekanik, ışıma ve ısıyı, göreliliğin etkileriyle birlikte; ikinci cilt çoğunlukla elektromanyetizmayı ve maddeyi; üçüncü cilt kuantum mekaniğini anlatır. Ciltler 1960'ların ortasında yayımlandı.",
+        "Bu dersler bugün herkese açıktır. Caltech, Michael Gottlieb ile Rudolf Pfeiffer'in yürüttüğü Feynman Lectures web sitesiyle birlikte 2013'te üç cildi ücretsiz çevrimiçi yayımladı: ilk cilt Eylül 2013'te, sonuncusu Aralık 2013'te açıldı. Birinci cildin 26. bölümü, bu derste gördüğün en kısa süre ilkesine ve optiğe ayrılmıştır. Ciltler İngilizcedir; ama içlerindeki çizimler ve düşünce deneyleri, matematiği az olan biri için bile takip edilebilir.",
+        "Dersin başarısı da dürüstçe anlatılmalı. Wikipedia'nın derlediği kaynaklara göre Feynman kendi dersinin bütün öğrencilere ulaşabildiği konusunda karamsardı. Goodstein ve Neugebauer, kayıtlı öğrencilerin derse katılımının zamanla düştüğünü yazdı; Matthew Sands bu iddiaya itiraz etti. Bazı öğrenciler bu kitapları ancak fiziği daha geleneksel kitaplardan öğrendikten sonra değerli bulur; kimine göre kitaplar öğrencilerden çok öğretmenlere yarar. Yani efsane ile gerçek arasında bir fark var: bu dersler ilk öğretim için kusursuz bir araç değil, fiziğe ikinci kez bakanlar için bir hazinedir.",
+        "Feynman'ın halka dönük anlatıcılığı yalnızca kitaplarla sınırlı değildi. Bu dersin başında andığımız 1979 konferansları, fiziğin en zor kuramlarından birini hiç denklem bilmeyen bir dinleyiciye anlatma denemesiydi ve bu dersteki ok resminin kaynağı odur. 1972'de Oersted Madalyası'nı aldı. Bu dersi sen de bir deftere geçirip okları kendi elinle çiziyorsan, onun yöntemine en yakın yoldasın: bir fikri anladığını, onu basit bir resimle başkasına anlatabildiğinde bilirsin."
+      ],
+      "akilda": "Feynman Fizik Dersleri 1961–1963'te Caltech'te verildi, Leighton ve Sands kitaplaştırdı, 2013'ten beri ücretsiz çevrimiçi. Etkisi büyük ama ilk öğretimdeki başarısı tartışmalı."
+    },
+    {
+      "baslik": "Challenger ve buzlu su: doğa kandırılamaz",
+      "paragraflar": [
+        "28 Ocak 1986 sabahı Challenger uzay mekiği, STS-51-L görevi için Kennedy Uzay Merkezi'nden havalandı ve kalkıştan 73 saniye sonra parçalandı. Kazayı bir başkanlık komisyonu soruşturdu; bugün Rogers Komisyonu adıyla bilinir. Feynman komisyonun üyelerinden biriydi. Komisyonun bulduğu doğrudan neden, sağdaki katı yakıtlı roketin arka bağlantı yerini sızdırmaz tutan O-halkalarının görevini yapamamasıydı. O-halkası, iki parçanın birleşim yerine konan lastik bir contadır. Sıcak gazlar contanın yanından sızdı ve dış yakıt deposuna zarar verdi. Komisyona göre sorun bir tasarım kusuruydu ve fırlatma günündeki düşük sıcaklık onu ağırlaştırabiliyordu.",
+        "Fırlatma sabahı hava olağandışı soğuktu; sıcaklık Fahrenheit ölçeğinde 20'li değerlere, yani yaklaşık eksi 7 ile eksi 2 °C arasına inmişti. Şubat 1986'da televizyondan yayımlanan bir oturumda Feynman, O-halkası malzemesinden bir parçayı bir kıskaçla sıkıştırdı ve buzlu suya batırdı. Kıskacı açınca lastik eski biçimine hemen dönmedi; soğukta esnekliğini yitirmişti. Bir bardak buzlu su, soğuğun contaya ne yaptığını herkesin görebileceği biçimde ortaya koydu. Kalkıştan önceki gün katı yakıtlı roketin üreticisindeki mühendislerin soğuk hava ve conta aşınması konusunda NASA'yı uyardıkları da sonradan ortaya çıktı.",
+        "Feynman'ın gözlemleri raporun Ek F'si oldu: “Mekiğin güvenilirliği üzerine kişisel gözlemler”. Wikipedia'ya göre Feynman bu gözlemler rapora konmazsa adını rapordan çektireceğini söyledi. Ek F'de, mekiğin bir uçuşta kaza yapma olasılığına dair tahminlerin kabaca 100'de 1 ile 100.000'de 1 arasında değiştiğini yazar; yüksek riskli tahminler sahada çalışan mühendislerden, çok düşük olanlar yöneticilerden geliyordu. Feynman'ın vardığı sonuç, uçuşların yüzde bir mertebesinde bir kaza olasılığıyla yapıldığı ve yönetimin bunu bin kat düşük gösterdiğiydi. Ek F'nin son cümlesi, birincil metinde doğrulandığı biçimiyle, Türkçede kabaca şöyledir: “Başarılı bir teknoloji için gerçeklik halkla ilişkilerin önüne geçmelidir, çünkü doğa kandırılamaz.” Rapor 9 Haziran 1986'da Başkan Reagan'a sunuldu."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Yüzde 1 ile yüz binde 1 arasındaki fark",
+        "metin": "Her uçuşun kaza olasılığı p ise, N uçuşta en az bir kaza olasılığı 1 − (1 − p)ᴺ olur. 1. mühendis tahmini, p = 0,01 ve N = 100: (0,99)¹⁰⁰ ≈ 0,366, en az bir kaza olasılığı 1 − 0,366 ≈ 0,634, yani yaklaşık yüzde 63. 2. yönetim tahmini, p = 0,00001 ve N = 100: (0,99999)¹⁰⁰ ≈ 0,9990, en az bir kaza olasılığı yaklaşık 0,001, yani binde 1. Sonuç: 100 uçuşluk bir programda iki tahmin, “büyük olasılıkla en az bir kaza” ile “neredeyse hiç kaza yok” arasındaki farktır."
+      },
+      "akilda": "Challenger 28 Ocak 1986'da kalkıştan 73 saniye sonra parçalandı; neden soğukta esnekliğini yitiren O-halkalarıydı. Feynman bunu buzlu suyla gösterdi ve Ek F'de risk tahminleri arasındaki bin katlık farkı yazdı."
+    },
+    {
+      "baslik": "Tuhaf ama doğru: bu dersten ne kalmalı?",
+      "paragraflar": [
+        "Toparlayalım. Doğa, en azından ışık ve elektron söz konusu olduğunda, kesinliklerle değil olasılıklarla konuşur. Her olasılığa bir ok bağlanır; bir olayın birden çok yolu varsa oklar toplanır ve olasılık toplam okun uzunluğunun karesidir. Bu basit kurallardan, okulda ayrı ayrı ezberlenen yasalar çıkar: aynada açıların eşitliği, kırılma, merceğin odağı, ince tabakaların renkleri, kırınım ağının tayfı. Hepsi, süresi durağan olan yolların oklarının toplanıp öbürlerinin birbirini götürmesinin sonucudur. Fermat'nın 1662'deki ilkesi, kuantum kuramının gündelik ölçekteki gölgesi olarak yeniden ortaya çıkar.",
+        "QED'in sınırlarını da bil. Kuram ışıkla elektrik yüklü parçacıkların etkileşimini anlatır; kütleçekimini anlatmaz (d26) ve atom çekirdeğini bir arada tutan kuvvetler de onun konusu değildir (d31, d32). Bugün QED, d32'de göreceğin Standart Model'in bir parçasıdır. Okların “gerçekte” ne olduğu, yani doğanın gerçekten bütün yolları mı denediği yoksa bunun yalnızca bir hesap yöntemi mi olduğu sorusunda fizikçiler anlaşmış değildir. Bu dersin taraf tutmadığı bir tartışmadır. Tartışmasız olan, aynı hesabın camdan galaksiye kadar doğru sonuç vermesidir.",
+        "Son olarak bir yöntem notu. İnternette Feynman'a atfedilen pek çok söz dolaşır ve bunların ne kadarının ona ait olduğunu doğrulamak çoğu zaman zordur. Bu ders Feynman'ın yalnızca bir cümlesini aktardı ve onu da Rogers raporunun birincil metninde kontrol ettikten sonra yaptı. Bu dersten götürebileceğin en iyi alışkanlık belki de budur: bir iddiayı, kimden gelirse gelsin, kaynağına bakarak sınamak.",
+        "Bu hafta kendi gözünle deneyebileceklerin var. Akşam bir vitrine bak ve camda hem yansımanı hem içeriyi gör: yüzde 4'lük oklar orada. Dürbünün varsa mercek yüzeylerine eğik bir açıdan bak; kaplamalı yüzeyler çıplak camdan çok daha az yansıtır. Bir akşam Marmara'nın ufkunda batan Güneş'in basıklığını izle, ama yalnızca ışığı iyice zayıfladığında ve kısa süre. Ve bir kâğıda iki ok çizip uç uca ekle: kuantum elektrodinamiğinin kalbindeki işlemi şimdi sen de yapabiliyorsun."
+      ],
+      "akilda": "Aynanın, merceğin ve kırınım ağının yasaları ok toplamının sonuçlarıdır. QED kütleçekimini ve çekirdek kuvvetlerini kapsamaz; okların gerçek anlamı tartışmalıdır ama hesap doğrudur."
+    }
+  ],
+  "formuller": [
+    {
+      "ad": "Olasılık ve olasılık genliği",
+      "ifade": "P = (toplam okun uzunluğu)²",
+      "aciklama": "P bir olayın olasılığıdır (0 ile 1 arası). Toplam ok, olayın bütün gerçekleşme yollarının oklarının uç uca eklenmesiyle bulunur. Örnek: uzunluğu 0,2 olan tek bir ok P = 0,04, yani yüzde 4 verir. Olasılıklar değil oklar toplanır."
+    },
+    {
+      "ad": "Kırma indisi",
+      "ifade": "n = c ÷ v",
+      "aciklama": "c ışığın boşluktaki hızı (299.792.458 m/s), v ışığın maddedeki hızıdır; n birimsizdir. Sıradan cam için n ≈ 1,5, yani v ≈ 200.000 km/s. Süre bakımından d kalınlığında cam, havada n × d uzunluğunda yol gibi sayılır."
+    },
+    {
+      "ad": "Schwinger düzeltmesiyle elektronun g çarpanı",
+      "ifade": "g ≈ 2 × (1 + α ÷ 2π)",
+      "aciklama": "g elektronun mıknatıslığının spinine oranını anlatan birimsiz sayıdır; Dirac kuramında tam 2'dir. α ince yapı sabitidir (≈ 1/137,036). α ÷ 2π ≈ 0,00116 ilk QED düzeltmesidir; daha kesin değer için daha çok köşeli diyagramların terimleri eklenir."
+    },
+    {
+      "ad": "Yok olma enerjisi",
+      "ifade": "E = 2 × mₑ × c² ≈ 2 × 0,511 MeV = 1,022 MeV",
+      "aciklama": "mₑ elektronun (ve pozitronun) kütlesi, c ışık hızıdır. Hareketsiz bir elektron ile pozitron yok olunca bu enerji zıt yönlere giden iki fotona eşit bölünür; her biri 511 keV taşır."
+    },
+    {
+      "ad": "Tekrarlanan denemelerde en az bir olay",
+      "ifade": "P(en az bir) = 1 − (1 − p)ᴺ",
+      "aciklama": "p tek bir denemede olayın olasılığı, N deneme sayısıdır. Denemelerin birbirinden bağımsız olduğu varsayılır. Örnek: p = 0,01 ve N = 100 için yaklaşık 0,63."
+    }
+  ],
+  "anahtar_sayilar": [
+    {
+      "deger": "yaklaşık %4",
+      "aciklama": "Dik gelen ışıkta sıradan camın tek yüzeyinin yansıttığı pay; iki yüzlü levhada yaklaşık %8.",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Fresnel_equations"
+    },
+    {
+      "deger": "%4 → %1,5 → ≤ %0,25",
+      "aciklama": "Kaplamasız, magnezyum florür kaplı ve çok katmanlı kaplı mercek yüzeyinin yansıtması.",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Binoculars"
+    },
+    {
+      "deger": "11 Mayıs 1918 – 15 Şubat 1988",
+      "aciklama": "Richard P. Feynman'ın doğum (New York) ve ölüm (Los Angeles) tarihleri.",
+      "kaynak_url": "https://www.nobelprize.org/prizes/physics/1965/feynman/facts/"
+    },
+    {
+      "deger": "1965, üçte bir pay",
+      "aciklama": "Feynman'ın Tomonaga ve Schwinger ile paylaştığı Nobel Fizik Ödülü; gerekçe kuantum elektrodinamiğindeki temel çalışmalar.",
+      "kaynak_url": "https://www.nobelprize.org/prizes/physics/1965/feynman/facts/"
+    },
+    {
+      "deger": "1/α = 137,035999177",
+      "aciklama": "İnce yapı sabitinin tersi, CODATA 2022 önerilen değeri (son iki basamakta ± 21).",
+      "kaynak_url": "https://www.physics.nist.gov/cuu/pdf/wall_2022.pdf"
+    },
+    {
+      "deger": "a = 0,00115965218046",
+      "aciklama": "Elektronun anormal manyetik momenti, CODATA 2022 (son iki basamakta ± 18).",
+      "kaynak_url": "https://www.physics.nist.gov/cuu/pdf/wall_2022.pdf"
+    },
+    {
+      "deger": "g/2 = 1,00115965218059, trilyonda 0,13",
+      "aciklama": "Fan ve arkadaşlarının 2023 ölçümü (Physical Review Letters 130, 071801); 2008 değerinden 2,2 kat kesin.",
+      "kaynak_url": "https://arxiv.org/abs/2209.13084"
+    },
+    {
+      "deger": "α/2π ≈ 0,00116",
+      "aciklama": "Schwinger'in 1948'de hesapladığı ilk QED düzeltmesi; aynı yıl Kusch ve Foley'nin deneyiyle doğrulandı.",
+      "kaynak_url": "https://arxiv.org/abs/1811.06974"
+    },
+    {
+      "deger": "511 keV",
+      "aciklama": "Elektronun kütle enerjisi (CODATA 2022: 0,51099895069 MeV); elektron-pozitron yok olmasından çıkan her fotonun enerjisi.",
+      "kaynak_url": "https://www.physics.nist.gov/cuu/pdf/wall_2022.pdf"
+    },
+    {
+      "deger": "yaklaşık 2 × 10⁴³ pozitron/s",
+      "aciklama": "Samanyolu'nda saniyede yok olan pozitron sayısı tahmini; 511 keV çizgisi ilk kez 1972'de algılandı, kaynağı bilinmiyor.",
+      "kaynak_url": "https://www.astro.oma.be/planetarium/cg/files/Prantzos2010.pdf"
+    },
+    {
+      "deger": "100'de 1 ile 100.000'de 1",
+      "aciklama": "Feynman'ın Ek F'de aktardığı, mekik uçuşu başına kaza olasılığı tahminlerinin aralığı (mühendisler ile yönetim).",
+      "kaynak_url": "https://faculty.washington.edu/seattle/physics541/2012-reading/appendix.pdf"
+    },
+    {
+      "deger": "73 saniye",
+      "aciklama": "Challenger'ın 28 Ocak 1986'da kalkıştan parçalanmasına kadar geçen süre.",
+      "kaynak_url": "https://wikiwand.com/en/articles/Rogers_Commission"
+    }
+  ],
+  "sozluk": [
+    {
+      "terim": "kuantum elektrodinamiği",
+      "tanim": "Elektron gibi elektrik yüklü parçacıkların ışıkla, yani fotonlarla etkileşimini anlatan kuantum kuramı; kısaltması QED."
+    },
+    {
+      "terim": "olasılık genliği",
+      "tanim": "Kuantum kuramında bir olaya bağlanan, uzunluğu ve yönü olan ok; olayın olasılığı bu okun uzunluğunun karesidir."
+    },
+    {
+      "terim": "girişim",
+      "tanim": "Aynı olayın farklı yollarına ait dalgaların ya da okların üst üste binerek birbirini güçlendirmesi ya da söndürmesi."
+    },
+    {
+      "terim": "evre",
+      "tanim": "Bir dalganın kendi döngüsünün hangi noktasında olduğunu gösteren nicelik; ok resminde okun yönüne karşılık gelir."
+    },
+    {
+      "terim": "kısmi yansıma",
+      "tanim": "Saydam bir yüzeye gelen ışığın bir kısmının geri dönüp kalanının geçmesi; sıradan camda dik gelişte yaklaşık yüzde 4."
+    },
+    {
+      "terim": "yansıma önleyici kaplama",
+      "tanim": "Mercek yüzeyine sürülen, yansıyan ışıkların birbirini söndürmesi için kalınlığı ayarlanmış çok ince katman ya da katmanlar."
+    },
+    {
+      "terim": "Fermat ilkesi",
+      "tanim": "Işığın iki nokta arasında, süresi yoldaki küçük değişikliklerle neredeyse değişmeyen (durağan) yolu izlediğini söyleyen ilke."
+    },
+    {
+      "terim": "yol integrali",
+      "tanim": "Bir parçacığın bir durumdan ötekine gidebileceği bütün yolların katkılarını toplayarak olasılık genliğini bulan, Feynman'ın 1948'de tamamladığı yöntem."
+    },
+    {
+      "terim": "kırma indisi",
+      "tanim": "Işığın boşluktaki hızının bir maddedeki hızına oranı; sıradan cam için yaklaşık 1,5."
+    },
+    {
+      "terim": "serap",
+      "tanim": "Yere yakın havadaki sıcaklık ve yoğunluk farkları ışığı büktüğü için uzaktaki cisimlerin yerinden farklı görünmesi."
+    },
+    {
+      "terim": "Feynman diyagramı",
+      "tanim": "Parçacık etkileşimlerini çizgiler ve köşelerle gösteren, her biri hesaptaki bir terime karşılık gelen çizim."
+    },
+    {
+      "terim": "köşe",
+      "tanim": "Feynman diyagramında çizgilerin birleştiği, bir elektronun foton salması ya da soğurması gibi bir etkileşimi gösteren nokta."
+    },
+    {
+      "terim": "ince yapı sabiti",
+      "tanim": "Elektron ile ışık arasındaki etkileşimin gücünü ölçen, birimsiz ve yaklaşık 1/137 olan sabit; α ile gösterilir."
+    },
+    {
+      "terim": "pozitron",
+      "tanim": "Elektronun karşı parçacığı; bir elektronla karşılaşınca ikisi yok olup fotonlara dönüşebilir."
+    },
+    {
+      "terim": "yok olma",
+      "tanim": "Bir parçacık ile karşı parçacığının karşılaşıp ortadan kalkması ve enerjilerinin fotonlar gibi başka parçacıklara geçmesi."
+    },
+    {
+      "terim": "pozitronyum",
+      "tanim": "Bir elektron ile bir pozitronun yok olmadan önce kısa süre birlikte oluşturduğu bağlı çift."
+    },
+    {
+      "terim": "g çarpanı",
+      "tanim": "Bir parçacığın mıknatıslığının spinine göre ne kadar güçlü olduğunu anlatan birimsiz sayı; elektron için 2'den biraz büyüktür."
+    },
+    {
+      "terim": "anormal manyetik moment",
+      "tanim": "Elektronun g çarpanının Dirac'ın öngördüğü 2'den sapan küçük kısmı; QED'in en kesin sınandığı nicelik."
+    },
+    {
+      "terim": "O-halkası",
+      "tanim": "İki parçanın birleşim yerini sızdırmaz tutan halka biçimli lastik conta; Challenger kazasında soğukta esnekliğini yitirdi."
+    }
+  ],
+  "defter_notu": [
+    "Cam tek yüzeyde dik gelen ışığın ~%4'ünü yansıtır; iki yüzlü levha ~%8.",
+    "Olasılık = (toplam okun uzunluğu)². Olasılıklar değil OKLAR toplanır; oklar birbirini götürebilir.",
+    "İnce tabaka: ön ve arka yüzeyin okları → yansıma %0 ile %16 arası. Kaplama: %4 → %1,5 (MgF₂) → ≤ %0,25.",
+    "Ayna ve mercek: süresi durağan yolların okları toplanır, öbürleri birbirini götürür (Fermat 1662; Feynman yol integrali 1948).",
+    "Kırma indisi n = c ÷ v; cam ≈ 1,5. Mercek bütün yolların süresini eşitler.",
+    "Feynman diyagramı: düz çizgi elektron, dalgalı çizgi foton, köşe etkileşim. İlk yayın: Physical Review 76, 1949.",
+    "İnce yapı sabiti 1/α ≈ 137,036; Schwinger 1948: g ≈ 2(1 + α/2π), α/2π ≈ 0,00116.",
+    "Fan ve ark. 2023: g/2 = 1,00115965218059, trilyonda 0,13; sınırı α ölçümlerinin uyuşmazlığı.",
+    "e⁻ + e⁺ → 2 foton, her biri 511 keV. Samanyolu merkezinin 511 keV çizgisi 1972'den beri biliniyor, kaynağı bilinmiyor.",
+    "Challenger 28.01.1986: soğukta sertleşen O-halkası; Ek F: risk %1 mertebesi, yönetim tahmini bin kat düşük."
+  ],
+  "sorular": [
+    {
+      "soru": "Sıradan bir camın tek yüzeyi dik gelen ışığın yaklaşık ne kadarını yansıtır ve bu neden tek bir foton için bir bilmecedir?",
+      "cevap": "Yaklaşık yüzde 4'ünü. Foton bölünmediği için her foton ya bütün olarak yansır ya geçer; aynı koşullardaki fotonlar arasında fark olmadığından hangisinin yansıyacağı tahmin edilemez, kuram yalnızca yüzde 4'lük olasılığı verir."
+    },
+    {
+      "soru": "Ok resminde bir olayın olasılığı nasıl bulunur?",
+      "cevap": "Olayın her gerçekleşme yolu için bir ok çizilir, oklar uç uca eklenir; olasılık, toplam okun uzunluğunun karesidir. Örneğin uzunluğu 0,2 olan ok yüzde 4 verir."
+    },
+    {
+      "soru": "Uzunluğu 0,3 olan iki ok (a) aynı yöne, (b) zıt yöne bakıyorsa olasılıklar ne olur?",
+      "cevap": "(a) Toplam ok 0,6, olasılık 0,6² = 0,36, yani yüzde 36. (b) Toplam ok 0, olasılık sıfır. Olasılıklar toplansaydı her iki durumda da 0,09 + 0,09 = 0,18 bulunurdu; farkı yaratan okların yönüdür."
+    },
+    {
+      "soru": "İnce bir cam tabakanın yansıtması neden kalınlığına göre yüzde 0 ile yüzde 16 arasında değişir?",
+      "cevap": "Foton ön yüzeyden ya da arka yüzeyden yansıyabilir; her yolun oku yaklaşık 0,2'dir. Arka yüzeyden dönen yol daha uzun olduğu için oku daha çok döner; kalınlığa göre iki ok aynı yöne bakıp 0,4 (yüzde 16) ya da zıt yöne bakıp 0 verir."
+    },
+    {
+      "soru": "Aynada gelme açısı neden yansıma açısına eşittir? Ok resmiyle açıkla.",
+      "cevap": "Işık aynanın her noktasından yansıyabilir. Uç noktalardan gelen yolların süreleri hızla değiştiği için okları farklı yönlere bakar ve birbirini götürür. Açıların eşit olduğu noktanın çevresinde süre durağandır, oklar aynı yöne bakar ve toplanır."
+    },
+    {
+      "soru": "“Işık en hızlı yolu seçer” sözü neden yanıltıcıdır?",
+      "cevap": "Işık düşünüp seçim yapmaz. Bütün yolların katkıları toplanır, uzak yolların katkıları birbirini götürür. Ayrıca ilke aslında “en kısa” değil “durağan” süreden söz eder; süre bir en küçük değer olmak zorunda değildir."
+    },
+    {
+      "soru": "Merceğin ortası kalın, kenarları ince olduğu halde bütün ışık neden aynı odakta toplanır?",
+      "cevap": "Işık camda yaklaşık 1,5 kat yavaşlar. Ortadan geçen kısa yol camda daha çok zaman harcar, kenardan geçen uzun yol daha az. Mercek biçimi bütün yolların süresini eşitler; okları odakta aynı yöne bakar ve toplanır."
+    },
+    {
+      "soru": "Feynman diyagramındaki düz çizgi, dalgalı çizgi ve köşe neyi gösterir? Diyagram neden bir yol fotoğrafı değildir?",
+      "cevap": "Düz çizgi elektron gibi bir parçacığı, dalgalı çizgi fotonu, köşe bir etkileşimi (foton salma ya da soğurma) gösterir. Diyagram hesaptaki bir terimdir; olasılık bütün olası diyagramların katkıları toplanarak bulunur."
+    },
+    {
+      "soru": "Hareketsiz bir elektron ile pozitron yok olunca kaç foton çıkar ve her birinin enerjisi ne olur? Bu fotonları İstanbul'dan neden göremeyiz?",
+      "cevap": "İki foton çıkar, zıt yönlere gider ve her biri elektronun kütle enerjisi kadar, yaklaşık 511 keV taşır. Bunlar gama ışınıdır ve atmosferi geçemez; ancak INTEGRAL gibi uydular algılayabilir."
+    },
+    {
+      "soru": "Schwinger'in α/2π düzeltmesiyle g yaklaşık kaç olur, ölçülen değerden ne kadar farklıdır?",
+      "cevap": "α/2π ≈ 0,0011614, g ≈ 2 × 1,0011614 ≈ 2,0023228. Ölçülen anormal moment 0,0011597 civarında; tek terim yaklaşık 0,0000017 fazla, yani anormal momentin binde 1,5'i kadar. Kalan farkı daha çok köşeli diyagramlar kapatır."
+    },
+    {
+      "soru": "Elektronun manyetik momentindeki trilyonda birlik uyum, QED'in “kesin doğru” olduğunu gösterir mi?",
+      "cevap": "Kuram ölçümle trilyonda bir düzeyinde uyuyor, bu çok güçlü bir destek. Ama tahmin ince yapı sabitine dayanır ve sezyum ile rubidyum ölçümleri birbirinden 5,5 standart sapma farklı. Bu uyuşmazlık çözülmeden sınav daha da keskinleştirilemez; ayrıca hiçbir deney bir kuramı mutlak olarak kanıtlamaz."
+    },
+    {
+      "soru": "Feynman, Challenger soruşturmasında O-halkası sorununu nasıl gösterdi ve Ek F'de hangi farkı vurguladı?",
+      "cevap": "Televizyondan yayımlanan bir oturumda O-halkası malzemesini kıskaçla sıkıştırıp buzlu suya batırdı; lastik soğukta esnekliğini yitirdi. Ek F'de mühendislerin yaklaşık yüzde 1'lik kaza riski tahminiyle yönetimin yüz binde 1'lik tahmini arasındaki bin katlık farkı vurguladı."
+    }
+  ],
+  "kaynaklar": [
+    {
+      "ad": "Nobel Prize: Richard P. Feynman — Facts",
+      "url": "https://www.nobelprize.org/prizes/physics/1965/feynman/facts/"
+    },
+    {
+      "ad": "Nobel Prize: Richard P. Feynman — Biographical",
+      "url": "https://nobelprize.org/prizes/physics/1965/feynman/biographical/"
+    },
+    {
+      "ad": "Fan, Myers, Sukra, Gabrielse — Measurement of the Electron Magnetic Moment (PRL 130, 071801, 2023; arXiv:2209.13084)",
+      "url": "https://arxiv.org/abs/2209.13084"
+    },
+    {
+      "ad": "NIST — CODATA 2022 Fundamental Physical Constants (wall chart, SP 961)",
+      "url": "https://www.physics.nist.gov/cuu/pdf/wall_2022.pdf"
+    },
+    {
+      "ad": "Mohr ve ark. — CODATA Recommended Values of the Fundamental Physical Constants: 2022 (arXiv:2409.03787)",
+      "url": "https://arxiv.org/pdf/2409.03787"
+    },
+    {
+      "ad": "PDG — e magnetic moment anomaly",
+      "url": "https://pdglive.lbl.gov/view/S003MM"
+    },
+    {
+      "ad": "B. Lee Roberts — The History of the Muon (g-2) Experiments (arXiv:1811.06974)",
+      "url": "https://arxiv.org/abs/1811.06974"
+    },
+    {
+      "ad": "R. P. Feynman — Appendix F: Personal observations on the reliability of the Shuttle (Rogers raporu)",
+      "url": "https://faculty.washington.edu/seattle/physics541/2012-reading/appendix.pdf"
+    },
+    {
+      "ad": "Wikipedia — Fresnel equations",
+      "url": "https://en.wikipedia.org/wiki/Fresnel_equations"
+    },
+    {
+      "ad": "Wikipedia — Fermat's principle",
+      "url": "https://en.wikipedia.org/wiki/Fermat%27s_principle"
+    },
+    {
+      "ad": "Wikipedia — Path integral formulation",
+      "url": "https://en.wikipedia.org/wiki/Path_integral_formulation"
+    },
+    {
+      "ad": "Wikipedia — The Feynman Lectures on Physics",
+      "url": "https://en.wikipedia.org/wiki/The_Feynman_Lectures_on_Physics"
+    },
+    {
+      "ad": "APS News — Feynman Lectures now freely available online (2014)",
+      "url": "https://aps.org/publications/apsnews/201410/feynman.cfm"
+    },
+    {
+      "ad": "Fermilab History — First Published Feynman Diagram, 1949",
+      "url": "https://history.fnal.gov/virtual/feynman_diagram.html"
+    },
+    {
+      "ad": "M. Birse (Manchester) — PHYS 30121 Feynman Diagrams ders notu",
+      "url": "https://www.theory.physics.manchester.ac.uk/~mikeb/lecture/phys30121/feynman.pdf"
+    },
+    {
+      "ad": "Schechter & Schnittman — Basic Elements of Strong Gravitational Lensing (arXiv:2505.22738)",
+      "url": "https://arxiv.org/abs/2505.22738"
+    },
+    {
+      "ad": "Wikipedia — Atmospheric refraction",
+      "url": "https://en.wikipedia.org/wiki/Atmospheric_refraction"
+    },
+    {
+      "ad": "Wikipedia — Binoculars (optik kaplamalar)",
+      "url": "https://en.wikipedia.org/wiki/Binoculars"
+    },
+    {
+      "ad": "The 511 keV emission of electron-positron annihilation in the Milky Way (sunum, Prantzos 2010)",
+      "url": "https://www.astro.oma.be/planetarium/cg/files/Prantzos2010.pdf"
+    },
+    {
+      "ad": "Lonjou ve ark. — SPI observations of positron annihilation radiation (arXiv:astro-ph/0411414)",
+      "url": "https://ar5iv.arxiv.org/html/astro-ph/0411414"
+    },
+    {
+      "ad": "Atomic Archive — Richard Feynman (1918–1988)",
+      "url": "https://www.atomicarchive.com/resources/biographies/feynman.html"
+    },
+    {
+      "ad": "Wikipedia — Rogers Commission Report (Wikiwand)",
+      "url": "https://wikiwand.com/en/articles/Rogers_Commission"
+    },
+    {
+      "ad": "Nautilus — How Richard Feynman Found the Root of the Challenger Disaster (2026)",
+      "url": "https://nautil.us/how-richard-feynman-found-the-root-of-the-challenger-disaster-1264270/"
+    }
+  ]
+}

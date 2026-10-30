@@ -1,0 +1,58 @@
+[
+  {
+    "id": "d29-1",
+    "soru": "Bir olayın iki gerçekleşme yolu var ve her yolun oku 0,2 uzunlukta. Oklar birbirine dik açı yapıyorsa olayın olasılığı yaklaşık kaçtır?",
+    "secenekler": [
+      "Yüzde 4, çünkü her yol yüzde 4 verir ve oklar birbirini etkilemez",
+      "Yüzde 8, çünkü toplam ok √0,08 ≈ 0,283 uzunlukta ve karesi 0,08",
+      "Yüzde 16, çünkü oklar her zaman uç uca eklenip 0,4 verir",
+      "Yüzde 0, çünkü dik oklar birbirini götürür"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre olasılık, toplam okun uzunluğunun karesidir. Dik iki ok bir dik üçgenin kenarlarıdır; toplam ok √(0,04 + 0,04) ≈ 0,283, karesi 0,08. Aynı yöne bakan oklar yüzde 16, zıt yöne bakanlar yüzde 0 verirdi.",
+    "ders": "d29",
+    "bolum": 3
+  },
+  {
+    "id": "d29-2",
+    "soru": "Ok resmine göre düz bir aynada gelme açısının yansıma açısına eşit olmasının nedeni nedir?",
+    "secenekler": [
+      "Işık yola çıkmadan önce bütün yolları hesaplayıp en kısasını seçer",
+      "Işık yalnızca aynanın tam orta noktasından yansıyabilir",
+      "Aynanın her noktasından yansıyan yolların okları toplanır; süresi durağan olan yolun çevresindeki oklar aynı yöne bakıp toplanırken uzak yolların okları birbirini götürür",
+      "Aynanın kenarlarındaki yolların okları daha kısa olduğu için katkıları yoktur"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre ışık aynanın her noktasından yansıyabilir ve okların uzunlukları aşağı yukarı eşittir. Fark yönlerdedir: uç yolların süresi hızla değiştiği için okları dağılır ve birbirini götürür; ortadaki durağan sürenin çevresinde oklar aynı yöne bakar. Işık düşünüp seçim yapmaz.",
+    "ders": "d29",
+    "bolum": 5
+  },
+  {
+    "id": "d29-3",
+    "soru": "Hareketsiz bir elektron ile bir pozitron yok olduğunda ne çıkar ve bu ışık İstanbul'dan neden gözlenemez?",
+    "secenekler": [
+      "Tek bir görünür ışık fotonu çıkar; ışık kirliliği yüzünden görülemez",
+      "Zıt yönlere giden ve her biri yaklaşık 511 keV taşıyan iki gama fotonu çıkar; gama ışınları atmosferi geçemez",
+      "Bir nötrino çiftiyle 1,022 MeV'lik bir foton çıkar; dürbünle görülebilir ama çok sönüktür",
+      "Hiç foton çıkmaz; enerji tümüyle ısıya dönüşür"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre elektronun kütle enerjisi 0,511 MeV'dir (CODATA 2022). Toplam 1,022 MeV iki fotona eşit bölünür; her biri 511 keV taşır. Bunlar gama ışınıdır ve atmosferi geçemez; Samanyolu'nun 511 keV çizgisini INTEGRAL gibi uydular inceler.",
+    "ders": "d29",
+    "bolum": 9
+  },
+  {
+    "id": "d29-4",
+    "soru": "Fan ve arkadaşlarının 2023 ölçümüne göre elektronun manyetik momenti için QED sınavının bugünkü sınırı nedir?",
+    "secenekler": [
+      "Ölçüm yalnızca yüzde 1 kesinlikte yapılabildiği için kuram sınanamaz",
+      "Kuram ölçümle binde bir düzeyinde çelişiyor",
+      "Kuram ölçümle trilyonda bir düzeyinde uyuyor, ama ince yapı sabitinin en kesin iki ölçümü (sezyum ve rubidyum) birbirinden 5,5 standart sapma farklı",
+      "Kuramın hesapları ancak birinci terime kadar yapılabildiği için daha kesin karşılaştırma imkânsız"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre 2023 ölçümü g'nin yarısını yaklaşık trilyonda 0,13 belirsizlikle verdi ve tahmin trilyonda bir düzeyinde uyuyor. Tahmin ince yapı sabitine dayanır; Berkeley (sezyum) ve Paris (rubidyum) ölçümleri 5,5 standart sapma farklı olduğu için sınav bu uyuşmazlıkla sınırlı.",
+    "ders": "d29",
+    "bolum": 11
+  }
+]
