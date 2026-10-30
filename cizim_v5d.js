@@ -61,70 +61,59 @@
   /* ================================================================ d45 ================================================================ */
 
   /* d45 · bölüm 6: dıştan içe katmanlar. Üstte 12 km'lik yarıçap ölçekli (kabuk ≈1 km: makarna ≈1 km derinlikte, bölüm 7);
-     altta kabuğun ilk kilometresi logaritmik derinlikle büyütüldü. Okyanus ve atmosfer sınırları ders aralıklarının içinde
-     seçildi; nötron damlamasının ve iç çekirdeğin sınırı şematik. */
+     altta kabuk büyütüldü, katman genişlikleri şematik (kalınlıklar yazıyla). Dış ve iç çekirdek sınırı şematik. */
   C.ekle('d45-ic-yapi', {
-    ders: 'd45', bolum: 6, oran: 1.0,
+    ders: 'd45', bolum: 6, oran: 0.98,
     baslik: 'Nötron yıldızının içi: yüzeyden merkeze',
-    aciklama: 'Üstteki şerit yüzeyden merkeze yaklaşık 12 kilometrelik yolu ölçekli gösterir: katı kabuk bunun yalnızca ilk kilometresi kadardır, gerisi çekirdektir ve iç çekirdeğin neden yapıldığı bilinmez. Alttaki şerit o ilk kilometreyi büyütür; her çentik on kat derinlik demektir. En dışta milimetrelerle santimetreler kalınlığında bir atmosfer, altında metrelerle onlarca metre derinlikte sıvı gibi bir okyanus, sonra sert kabuk gelir. Nötron damlamasından sonra çekirdeklerin arasını serbest nötronlar doldurur ve yaklaşık bir kilometre derinlikte nükleer makarna başlar. Yoğunluk kabukta metreküp başına yaklaşık bir milyar kilogramdan merkezde 6 ile 8 çarpı 10 üzeri 17 kilograma çıkar; ortalaması bir atom çekirdeğininkiyle aynı mertebededir. Damlamanın ve iç çekirdeğin sınırları şematiktir.',
+    aciklama: 'Üstteki şerit yüzeyden merkeze yaklaşık 12 kilometrelik yolu ölçekli gösterir: katı kabuk bunun yalnızca ilk kilometresi kadardır, gerisi çekirdektir ve iç çekirdeğin neden yapıldığı bilinmez. Alttaki şerit kabuğu büyütür; buradaki genişlikler şematiktir, kalınluklar altlarında yazar. En dışta milimetrelerle santimetreler kalınlığında bir atmosfer, altında metrelerle onlarca metre derinlikte sıvı gibi bir okyanus, sonra sert dış kabuk gelir. Nötron damlamasından sonra iç kabukta çekirdeklerin arasını serbest nötronlar doldurur ve yaklaşık bir kilometre derinlikte nükleer makarna bulunur. Yoğunluk kabukta metreküp başına yaklaşık bir milyar kilogramdan merkezde 6 ile 8 çarpı 10 üzeri 17 kilograma çıkar; ortalaması bir atom çekirdeğininkiyle aynı mertebededir.',
     kaynak: [KAYNAK.notronYildizi, KAYNAK.makarna, KAYNAK.miller19],
     ciz(S) {
       const R = S.R, x0 = 20, x1 = 380;
       let s = '';
       /* --- üst şerit: ölçekli 0–12 km --- */
-      const X = km => x0 + km / 12 * (x1 - x0), y0 = 40, h0 = 34;
+      const X = km => x0 + km / 12 * (x1 - x0), y0 = 44, h0 = 34;
       s += S.yazi(8, 20, 'Ölçekli: yüzeyden merkeze ≈12 km', { boy: 14, renk: R.metin, kalin: true });
-      s += S.kutu(X(0), y0, X(1) - X(0), h0, { dolgu: R.vurguSoluk, renk: R.metin, kalin: 1.2 });
+      s += S.kutu(X(0), y0, X(1) - X(0), h0, { dolgu: R.vurgu, renk: R.metin, kalin: 1.2 });
       s += S.kutu(X(1), y0, X(7) - X(1), h0, { dolgu: R.yuzey2, renk: R.metin, kalin: 1.2 });
       s += S.kutu(X(7), y0, X(12) - X(7), h0, { dolgu: R.yuzey, renk: R.metin, kalin: 1.2 });
       s += S.cizgi(X(7), y0, X(7), y0 + h0, { renk: R.metin, kalin: 1.2, kesik: '4 3' });
       s += S.yazi((X(1) + X(7)) / 2, y0 + 22, 'dış çekirdek', { boy: 13, hiza: 'middle', renk: R.metin });
       s += S.yazi((X(7) + X(12)) / 2, y0 + 22, 'iç çekirdek: ?', { boy: 13, hiza: 'middle', renk: R.metin, kalin: true });
-      [0, 3, 6, 9, 12].forEach(k => { s += S.cizgi(X(k), y0 + h0, X(k), y0 + h0 + 5, { renk: R.soluk, kalin: 1 }) + S.yazi(X(k), y0 + h0 + 19, k + (k === 12 ? ' km' : ''), { boy: 13, hiza: k === 12 ? 'end' : 'middle', renk: R.soluk }); });
-      s += S.yazi(X(0), y0 - 5, 'yüzey', { boy: 13, renk: R.soluk });
-      s += S.yazi(X(12), y0 - 5, 'merkez', { boy: 13, hiza: 'end', renk: R.soluk });
-      /* büyüteç çizgileri: ilk 1 km → alt şerit */
-      const y1 = 150, h1 = 40;
-      s += S.cizgi(X(0), y0 + h0 + 24, x0, y1 - 22, { renk: R.soluk, kalin: 1, kesik: '3 3' });
-      s += S.cizgi(X(1), y0 + h0 + 2, x1, y1 - 22, { renk: R.soluk, kalin: 1, kesik: '3 3' });
-      s += S.yazi(X(1) + 6, y0 + h0 + 32, 'kabuk ≈1 km: aşağıda büyütüldü', { boy: 13, renk: R.vurgu, kalin: true });
-      /* --- alt şerit: ilk 1 km, logaritmik derinlik 1 mm … 1 km --- */
-      const L = m => x0 + (Math.log10(m) + 3) / 6 * (x1 - x0);
-      const bant = (a, b, dolgu, ad, alt) => {
-        let o = S.kutu(L(a), y1, L(b) - L(a), h1, { dolgu, renk: R.metin, kalin: 1 });
-        return o;
-      };
-      s += bant(1e-3, 0.03, R.yuzey, 'atmosfer');
-      s += bant(0.03, 30, R.mavi, 'okyanus');
-      s += bant(30, 1000, R.vurguSoluk, 'kabuk');
-      /* nötron damlaması (yeri şematik) ve makarna */
-      const xd = L(250);
-      s += S.cizgi(xd, y1 - 4, xd, y1 + h1 + 4, { renk: R.metin, kalin: 1.6, kesik: '4 3' });
-      s += S.kutu(L(600), y1, L(1000) - L(600), h1, { dolgu: R.vurgu, renk: R.metin, kalin: 1 });
-      /* bant adları: atmosfer ve okyanus bandın içinde, zeminli */
-      s += S.zeminliYazi((L(1e-3) + L(0.03)) / 2, y1 + 25, 'atmosfer', { boy: 13, hiza: 'middle', renk: R.metin, kalin: true });
-      s += S.zeminliYazi((L(0.03) + L(30)) / 2, y1 + 25, 'okyanus', { boy: 13, hiza: 'middle', renk: R.metin, kalin: true });
-      s += S.zeminliYazi((L(30) + xd) / 2, y1 + 25, 'dış kabuk', { boy: 13, hiza: 'middle', renk: R.metin, kalin: true });
-      /* eksen */
-      const ye = y1 + h1;
-      [[1e-3, '1 mm'], [1e-2, '1 cm'], [0.1, ''], [1, '1 m'], [10, ''], [100, '100 m'], [1000, '1 km']].forEach(([m, t]) => {
-        s += S.cizgi(L(m), ye, L(m), ye + 5, { renk: R.soluk, kalin: 1 });
-        if (t) s += S.yazi(L(m), ye + 19, t, { boy: 13, hiza: m === 1e-3 ? 'start' : m === 1000 ? 'end' : 'middle', renk: R.soluk });
+      [0, 3, 6, 9, 12].forEach(k => { s += S.cizgi(X(k), y0 + h0, X(k), y0 + h0 + 5, { renk: R.soluk, kalin: 1 }) + S.yazi(X(k), y0 + h0 + 19, k + (k === 12 ? ' km' : ''), { boy: 13, hiza: k === 0 ? 'start' : k === 12 ? 'end' : 'middle', renk: R.soluk }); });
+      s += S.yazi(X(0), y0 - 6, 'yüzey', { boy: 13, renk: R.soluk });
+      s += S.yazi(X(12), y0 - 6, 'merkez', { boy: 13, hiza: 'end', renk: R.soluk });
+      /* kabuk → alt şerit oku */
+      s += S.ok(X(0.5), y0 + h0 + 2, X(0.5), 146, { renk: R.vurgu, kalin: 2, boy: 7 });
+      s += S.yazi(X(0.5) + 10, y0 + h0 + 40, 'kabuk ≈1 km: aşağıda büyütüldü', { boy: 13, renk: R.vurgu, kalin: true });
+      /* --- alt şerit: kabuk, şematik genişlik --- */
+      const y1 = 172, h1 = 38, w = (x1 - x0) / 5;
+      const kat = [
+        ['atmosfer', R.yuzey, ['mm–cm']],
+        ['okyanus', R.mavi, ['metreler–', 'onlarca m']],
+        ['dış kabuk', R.vurguSoluk, ['katı, sert']],
+        ['iç kabuk', R.vurguSoluk, ['serbest', 'nötronlar']],
+        ['makarna', R.vurgu, ['≈1 km', 'derinlikte']]
+      ];
+      kat.forEach(([ad, dolgu, alt], i) => {
+        const xa = x0 + i * w;
+        s += S.kutu(xa, y1, w, h1, { dolgu, renk: R.metin, kalin: 1 });
+        s += S.zeminliYazi(xa + w / 2, y1 + 24, ad, { boy: 13, hiza: 'middle', renk: R.metin, kalin: true });
+        alt.forEach((t, j) => { s += S.yazi(xa + w / 2, y1 + h1 + 18 + j * 17, t, { boy: 13, hiza: 'middle', renk: R.soluk }); });
       });
-      s += S.yazi(200, ye + 38, 'derinlik (logaritmik: her çentik 10 kat)', { boy: 13, hiza: 'middle', renk: R.soluk });
-      /* üstte adlar: damlama ve makarna */
-      s += S.yazi(xd - 4, y1 - 8, 'nötron damlaması', { boy: 13, hiza: 'end', renk: R.metin });
-      s += S.yazi(x1, y1 - 8, 'makarna', { boy: 13, hiza: 'end', renk: R.vurgu, kalin: true });
-      s += S.yazi(8, 128, 'İlk kilometre, büyütülmüş:', { boy: 14, renk: R.metin, kalin: true });
+      /* nötron damlaması: dış ve iç kabuk sınırı */
+      const xd = x0 + 3 * w;
+      s += S.cizgi(xd, y1 - 10, xd, y1 + h1 + 2, { renk: R.metin, kalin: 2, kesik: '4 3' });
+      s += S.yazi(xd, y1 - 14, 'nötron damlaması', { boy: 13, hiza: 'middle', renk: R.metin, kalin: true });
+      s += S.yazi(x0, y1 - 14, 'yüzey', { boy: 13, renk: R.soluk });
       /* --- alt bilgi satırları --- */
       const sat = [
         ['yoğunluk: kabukta ≈10⁹ kg/m³', R.metin, true],
         ['merkezde 6–8 × 10¹⁷ kg/m³', R.metin, true],
         ['ortalama 3,7–5,9 × 10¹⁷: atom çekirdeği ≈3 × 10¹⁷', R.vurgu, false],
-        ['basınç: iç kabuk ≈3,2 × 10³¹ Pa → merkez ≈1,6 × 10³⁴ Pa', R.soluk, false]
+        ['basınç: iç kabuk ≈3,2 × 10³¹ → merkez ≈1,6 × 10³⁴ Pa', R.soluk, false]
       ];
-      sat.forEach(([t, r, k], i) => { s += S.yazi(8, 300 + i * 22, t, { boy: 13, renk: r, kalin: k }); });
-      s += S.yazi(392, 392, 'damlama ve iç çekirdek sınırı şematik', { boy: 13, hiza: 'end', renk: R.soluk });
+      sat.forEach(([t, r, k], i) => { s += S.yazi(8, 290 + i * 22, t, { boy: 13, renk: r, kalin: k }); });
+      s += S.yazi(392, 384, 'alt şerit ve çekirdek sınırı şematik', { boy: 13, hiza: 'end', renk: R.soluk });
       return s;
     }
   });
