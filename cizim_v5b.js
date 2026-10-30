@@ -394,7 +394,7 @@
       [1986, 2007, 2028, 2050, 2070].forEach(yil => {
         s += S.cizgi(T(yil), yb + 14, T(yil), yb + 20, { renk: R.soluk, kalin: 1 }) + S.yazi(T(yil), yb + 34, String(yil), { boy: 13, hiza: 'middle', renk: yil === 2070 ? R.soluk : R.metin });
       });
-      s += S.yazi(8, yb + 56, 'gri: güney kutbu aydınlık', { boy: 13, renk: R.soluk });
+      s += S.yazi(8, yb + 56, 'soluk dolgu: güney kutbu aydınlık', { boy: 13, renk: R.soluk });
       return s;
     }
   });
@@ -433,7 +433,7 @@
   C.ekle('d40-boyutlar', {
     ders: 'd40', bolum: 0, oran: 1.0,
     baslik: 'Büyük uydular aynı ölçekte',
-    aciklama: 'Bütün daireler aynı ölçekte çizildi; sayılar çaptır. Ganymede 5262 ve Titan yaklaşık 5150 kilometreyle Merkür gezegeninden büyüktür, Callisto ondan biraz küçüktür. Io, Europa ve Triton Ay boyundadır ve hepsi Plüton\'dan büyüktür. Satürn\'ün Enceladus\'u ile Uranüs\'ün Miranda\'sı ise yaklaşık 500 kilometreyle küçük birer noktadır. Kesik çizgili daireler karşılaştırma içindir: Merkür bir gezegen, Ay Dünya\'nın uydusu, Plüton bir cüce gezegendir.',
+    aciklama: 'Bütün daireler aynı ölçekte çizildi; sayılar çaptır. Ganymede 5262 ve Titan yaklaşık 5150 kilometreyle Merkür gezegeninden büyüktür, Callisto ondan biraz küçüktür. Io ve Europa Ay boyundadır; Triton biraz küçüktür ama o da Plüton\'dan büyüktür. Satürn\'ün Enceladus\'u ile Uranüs\'ün Miranda\'sı ise yaklaşık 500 kilometreyle küçük birer noktadır. Kesik çizgili daireler karşılaştırma içindir: Merkür bir gezegen, Ay Dünya\'nın uydusu, Plüton bir cüce gezegendir.',
     kaynak: [KAYNAK.jupUydu, KAYNAK.nepUydu, KAYNAK.ayKart, KAYNAK.plutonKart],
     ciz(S) {
       const R = S.R, k = 86 / 5262;
