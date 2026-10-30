@@ -1,0 +1,58 @@
+[
+  {
+    "id": "d53-1",
+    "soru": "Planck uzunluğu (NIST CODATA 2022 değeri yaklaşık 1,616 × 10⁻³⁵ m) hakkında derse göre hangisi doğrudur?",
+    "secenekler": [
+      "Doğadaki en küçük uzunluk olduğu deneyle kanıtlanmıştır",
+      "Kuantum kütleçekim etkilerinin önem kazanması beklenen ölçektir; en küçük uzunluk olduğu ise kanıtlanmamış bir varsayımdır",
+      "LHC 2022'de bu ölçeği doğrudan yokladı",
+      "Protonun yarıçapına yaklaşık eşittir"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre Planck birimleri 1899'da doğal bir ölçü sistemi olarak önerildi. Planck uzunluğu kuramlarımızın birlikte çalışmayı bıraktığı ölçeği gösterir; en kısa ölçülebilir uzaklık olabileceği yalnızca bir kuram/hipotezdir. Protondan yaklaşık 5 × 10¹⁹ kat küçüktür ve LHC'nin yoklayabildiğinden yaklaşık 10¹⁵ kat küçüktür.",
+    "ders": "d53",
+    "bolum": 2
+  },
+  {
+    "id": "d53-2",
+    "soru": "Süpersicim kuramı uzay-zamanın kaç boyutlu olmasını gerektirir ve ek boyutları neden görmediğimiz nasıl açıklanır?",
+    "secenekler": [
+      "4 boyut; ek boyut gerekmez",
+      "26 boyut; ek boyutlar karanlık maddedir",
+      "10 boyut; ek boyutların çok küçük kapalı şekillere kıvrıldığı (kompaktlaştırma) ya da evrenimizin bir zar olduğu varsayılır",
+      "11 boyut; ek boyutlar Eöt-Wash deneyinde 30 mikrometre büyüklüğünde ölçüldü"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre bozonik sicim kuramı 26, süpersicim kuramı 10, M-kuramı 11 boyut ister. Ek boyutların küçük şekillere (Calabi–Yau) kıvrıldığı ya da madde ve diğer kuvvetlerin dört boyutlu bir zara bağlı olduğu varsayılır. Eöt-Wash 2020 ek boyut ölçmedi; en büyük ek boyutun yarıçapına 30 mikrometrelik üst sınır koydu.",
+    "ders": "d53",
+    "bolum": 6
+  },
+  {
+    "id": "d53-3",
+    "soru": "Sicim manzarası için sık aktarılan 10⁵⁰⁰ sayısı hakkında hangisi doğrudur?",
+    "secenekler": [
+      "LHC'de sayılmış olası evren sayısıdır",
+      "Ek boyutların biçimi ve akı seçimlerinden gelen, Douglas (2003) ve Ashok–Douglas (2004) çalışmalarına dayanan kaba bir mertebedir; tam sayı bilinmiyor",
+      "Gözlenebilir evrendeki atom sayısının kesin değeridir",
+      "Bütün bu çözümlerin gerçek evrenler olarak var olduğu gözlemle kanıtlanmıştır"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre 10⁵⁰⁰ bir ölçüm değil, kararlıya yakın çözümleri istatistiksel olarak sayan çalışmalara dayanan bir mertebedir; 2015'te tek bir geometri için 10²⁷²·⁰⁰⁰ gibi çok daha büyük bir sayı bulundu. Bütün çözümlerin gerçek evrenler olarak var olduğu fikri spekülasyondur.",
+    "ders": "d53",
+    "bolum": 9
+  },
+  {
+    "id": "d53-4",
+    "soru": "GW170817 birleşmesinde kütleçekim dalgası ile gama ışınları arasındaki 1,74 saniyelik fark kuantum kütleçekim araştırmaları için neden önemlidir?",
+    "secenekler": [
+      "Gravitonların tek tek sayılmasını sağladı",
+      "Sicim kuramını kesin olarak doğruladı",
+      "Kütleçekimi ile ışığın hızlarının, ışık hızının −3 × 10⁻¹⁵ ile +7 × 10⁻¹⁶ katı içinde aynı olduğunu gösterdi ve kütleçekiminde Lorentz değişmezliği bozulmasına çok sıkı sınırlar koydu",
+      "Kütleçekiminin ışıktan 1,74 kat yavaş olduğunu gösterdi"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre ışığın en az 26 megaparseklik yolculuğu yaklaşık 2,7 × 10¹⁵ s sürer; 1,74 s'lik fark bu sürenin yaklaşık 6,5 × 10⁻¹⁶'sıdır. LIGO, Virgo ve Fermi ekipleri hız farkını −3 × 10⁻¹⁵ ile +7 × 10⁻¹⁶ arasına sıkıştırdı. Bu, Lorentz değişmezliğinin bozulmasını öngören bazı modelleri sınar ama hiçbir kuramı kesin doğrulamaz.",
+    "ders": "d53",
+    "bolum": 14
+  }
+]
