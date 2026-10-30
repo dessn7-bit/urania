@@ -248,142 +248,174 @@
     {
       "deger": "0 K = −273,15 °C",
       "aciklama": "Mutlak sıfır",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Kelvin_temperature"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Kelvin_temperature",
+      "kid": "d30n0"
     },
     {
       "deger": "1,380649 × 10⁻²³ J/K (kesin)",
       "aciklama": "Boltzmann sabiti; 20 Mayıs 2019'dan beri kelvinin tanımı",
-      "kaynak_url": "https://physics.nist.gov/cgi-bin/cuu/Value?k"
+      "kaynak_url": "https://physics.nist.gov/cgi-bin/cuu/Value?k",
+      "kid": "d30n1"
     },
     {
       "deger": "4,41 J/kalori (1845) ; bugün 4,1868 J",
       "aciklama": "Joule'ün ısının mekanik eşdeğeri için ilk değeri ve bugünkü değer",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Work_(thermodynamics)"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Work_(thermodynamics)",
+      "kid": "d30n2"
     },
     {
       "deger": "1824",
       "aciklama": "Carnot'nun “Ateşin Hareket Ettirici Gücü Üzerine Düşünceler” denemesi",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Nicolas_L%C3%A9onard_Sadi_Carnot"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Nicolas_L%C3%A9onard_Sadi_Carnot",
+      "kid": "d30n3"
     },
     {
       "deger": "1865",
       "aciklama": "Clausius entropi kavramını tanımladı ve adını koydu",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Rudolf_Clausius"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Rudolf_Clausius",
+      "kid": "d30n4"
     },
     {
       "deger": "yaklaşık 517 m/s",
       "aciklama": "300 K'de azot moleküllerinin karekök ortalama hızı (hesap; kaynakta yaklaşık 500 m/s)",
-      "kaynak_url": "https://www.hunter.cuny.edu/physics/courses/physics110/repository/files/section51/15TheKineticTheoryofGasesRev2.pdf/at_download/file"
+      "kaynak_url": "https://www.hunter.cuny.edu/physics/courses/physics110/repository/files/section51/15TheKineticTheoryofGasesRev2.pdf/at_download/file",
+      "kid": "d30n5"
     },
     {
       "deger": "yaklaşık 3 × 10⁻²¹ J",
       "aciklama": "Oda sıcaklığında (300 K) bir biti silmenin en küçük ısı bedeli (Landauer sınırı)",
-      "kaynak_url": "https://isidore.co/misc/Physics%20papers%20and%20books/Zotero/storage/2TPWPHS8/nature10872.html"
+      "kaynak_url": "https://isidore.co/misc/Physics%20papers%20and%20books/Zotero/storage/2TPWPHS8/nature10872.html",
+      "kid": "d30n6"
     },
     {
       "deger": "254 K",
       "aciklama": "Dünya'nın kara cisim sıcaklığı (gerçek ortalama yüzey sıcaklığı 288 K)",
-      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html"
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html",
+      "kid": "d30n7"
     },
     {
       "deger": "yaklaşık 1,5 × 10⁵⁴ J/K (≈ 10⁷⁷ k)",
       "aciklama": "1 Güneş kütleli kara deliğin Bekenstein-Hawking entropisi",
-      "kaynak_url": "https://arxiv.org/pdf/2410.11851"
+      "kaynak_url": "https://arxiv.org/pdf/2410.11851",
+      "kid": "d30n8"
     },
     {
       "deger": "yaklaşık 10¹⁰⁰ yıl",
       "aciklama": "10¹¹ Güneş kütleli bir kara deliğin Hawking ışımasıyla buharlaşma süresi mertebesi",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Heat_death_of_the_universe"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Heat_death_of_the_universe",
+      "kid": "d30n9"
     }
   ],
   "sozluk": [
     {
       "terim": "enerji",
-      "tanim": "Bir şeyin iş yapabilme, yani hareket ettirebilme ya da ısıtabilme kapasitesi; joule (J) ile ölçülür ve biçim değiştirse de toplamı korunur."
+      "tanim": "Bir şeyin iş yapabilme, yani hareket ettirebilme ya da ısıtabilme kapasitesi; joule (J) ile ölçülür ve biçim değiştirse de toplamı korunur.",
+      "kid": "d30t0"
     },
     {
       "terim": "termodinamik",
-      "tanim": "Isı, iş, sıcaklık ve enerji arasındaki ilişkileri inceleyen, dört temel yasaya dayanan fizik dalı."
+      "tanim": "Isı, iş, sıcaklık ve enerji arasındaki ilişkileri inceleyen, dört temel yasaya dayanan fizik dalı.",
+      "kid": "d30t1"
     },
     {
       "terim": "birinci yasa",
-      "tanim": "Termodinamiğin enerjinin korunumunu söyleyen yasası: enerji yoktan var edilemez, yok da edilemez, yalnızca biçim değiştirir."
+      "tanim": "Termodinamiğin enerjinin korunumunu söyleyen yasası: enerji yoktan var edilemez, yok da edilemez, yalnızca biçim değiştirir.",
+      "kid": "d30t2"
     },
     {
       "terim": "ikinci yasa",
-      "tanim": "Yalıtılmış bir sistemin toplam entropisinin hiçbir zaman azalmadığını, ısının kendiliğinden soğuktan sıcağa geçmediğini söyleyen termodinamik yasası."
+      "tanim": "Yalıtılmış bir sistemin toplam entropisinin hiçbir zaman azalmadığını, ısının kendiliğinden soğuktan sıcağa geçmediğini söyleyen termodinamik yasası.",
+      "kid": "d30t3"
     },
     {
       "terim": "kalorik",
-      "tanim": "On sekizinci ve on dokuzuncu yüzyılda ısının sanıldığı ağırlıksız, görünmez akışkan; Rumford ve Joule'ün deneyleriyle terk edildi."
+      "tanim": "On sekizinci ve on dokuzuncu yüzyılda ısının sanıldığı ağırlıksız, görünmez akışkan; Rumford ve Joule'ün deneyleriyle terk edildi.",
+      "kid": "d30t4"
     },
     {
       "terim": "ısı",
-      "tanim": "Moleküllerin rastgele hareketindeki enerjinin, sıcaklık farkı yüzünden bir cisimden ötekine aktarılması."
+      "tanim": "Moleküllerin rastgele hareketindeki enerjinin, sıcaklık farkı yüzünden bir cisimden ötekine aktarılması.",
+      "kid": "d30t5"
     },
     {
       "terim": "sıcaklık",
-      "tanim": "Bir maddedeki parçacıkların ortalama hareket enerjisinin ölçüsü; bilimde kelvin (K) ile verilir."
+      "tanim": "Bir maddedeki parçacıkların ortalama hareket enerjisinin ölçüsü; bilimde kelvin (K) ile verilir.",
+      "kid": "d30t6"
     },
     {
       "terim": "mutlak sıfır",
-      "tanim": "Aktarılabilir hareket enerjisinin kalmadığı en düşük sıcaklık sınırı: 0 K, yani −273,15 °C."
+      "tanim": "Aktarılabilir hareket enerjisinin kalmadığı en düşük sıcaklık sınırı: 0 K, yani −273,15 °C.",
+      "kid": "d30t7"
     },
     {
       "terim": "Boltzmann sabiti",
-      "tanim": "Sıcaklığı tek bir parçacığın enerjisine çeviren doğa sabiti; kesin değeri 1,380649 × 10⁻²³ J/K'dir ve kelvini tanımlar."
+      "tanim": "Sıcaklığı tek bir parçacığın enerjisine çeviren doğa sabiti; kesin değeri 1,380649 × 10⁻²³ J/K'dir ve kelvini tanımlar.",
+      "kid": "d30t8"
     },
     {
       "terim": "ısıl denge",
-      "tanim": "Birbirine dokunan iki cisim arasında net ısı akışı olmaması durumu; iki cismin sıcaklığı aynıdır."
+      "tanim": "Birbirine dokunan iki cisim arasında net ısı akışı olmaması durumu; iki cismin sıcaklığı aynıdır.",
+      "kid": "d30t9"
     },
     {
       "terim": "ısı makinesi",
-      "tanim": "Isıyı sıcak bir kaynaktan soğuk bir hazneye akıtırken bu akışın bir kısmını işe çeviren düzenek (buhar türbini, araba motoru)."
+      "tanim": "Isıyı sıcak bir kaynaktan soğuk bir hazneye akıtırken bu akışın bir kısmını işe çeviren düzenek (buhar türbini, araba motoru).",
+      "kid": "d30t10"
     },
     {
       "terim": "sürekli devinim makinesi",
-      "tanim": "Yakıtsız iş üreten ya da çevredeki ısıyı tümüyle işe çeviren düşsel makine; birinci ve ikinci yasa bunu yasaklar."
+      "tanim": "Yakıtsız iş üreten ya da çevredeki ısıyı tümüyle işe çeviren düşsel makine; birinci ve ikinci yasa bunu yasaklar.",
+      "kid": "d30t11"
     },
     {
       "terim": "entropi",
-      "tanim": "Bir sistemin genel durumunun kaç farklı ayrıntılı biçimde gerçekleşebileceğinin, yani enerjinin kaç yolla dağılabileceğinin ölçüsü; yalıtılmış sistemde azalmaz."
+      "tanim": "Bir sistemin genel durumunun kaç farklı ayrıntılı biçimde gerçekleşebileceğinin, yani enerjinin kaç yolla dağılabileceğinin ölçüsü; yalıtılmış sistemde azalmaz.",
+      "kid": "d30t12"
     },
     {
       "terim": "makrodurum",
-      "tanim": "Bir sistemin sıcaklık, basınç, hacim gibi kaba ölçümlerle tarif edilen genel durumu."
+      "tanim": "Bir sistemin sıcaklık, basınç, hacim gibi kaba ölçümlerle tarif edilen genel durumu.",
+      "kid": "d30t13"
     },
     {
       "terim": "mikrodurum",
-      "tanim": "Bir sistemdeki her parçacığın tam konumunu ve hızını belirten ayrıntılı durum; bir makrodurum çok sayıda mikrodurumla gerçekleşebilir."
+      "tanim": "Bir sistemdeki her parçacığın tam konumunu ve hızını belirten ayrıntılı durum; bir makrodurum çok sayıda mikrodurumla gerçekleşebilir.",
+      "kid": "d30t14"
     },
     {
       "terim": "Maxwell'in cini",
-      "tanim": "Molekülleri hızlarına göre ayıklayıp ikinci yasayı çiğner gibi görünen düşsel varlık; Maxwell'in 1867–1871 düşünce deneyi."
+      "tanim": "Molekülleri hızlarına göre ayıklayıp ikinci yasayı çiğner gibi görünen düşsel varlık; Maxwell'in 1867–1871 düşünce deneyi.",
+      "kid": "d30t15"
     },
     {
       "terim": "Landauer ilkesi",
-      "tanim": "Bir bit bilgiyi silmenin en az k × T × ln 2 kadar ısı ürettiğini söyleyen ilke (1961)."
+      "tanim": "Bir bit bilgiyi silmenin en az k × T × ln 2 kadar ısı ürettiğini söyleyen ilke (1961).",
+      "kid": "d30t16"
     },
     {
       "terim": "zamanın oku",
-      "tanim": "Zamanın tek yöne aktığı izlenimi; termodinamik ok, yalıtılmış sistemlerde entropinin artmasından gelir."
+      "tanim": "Zamanın tek yöne aktığı izlenimi; termodinamik ok, yalıtılmış sistemlerde entropinin artmasından gelir.",
+      "kid": "d30t17"
     },
     {
       "terim": "negatif ısı sığası",
-      "tanim": "Kütleçekimiyle bir arada duran sistemlerin, enerji kaybettikçe ısınma, enerji kazandıkça soğuma özelliği."
+      "tanim": "Kütleçekimiyle bir arada duran sistemlerin, enerji kaybettikçe ısınma, enerji kazandıkça soğuma özelliği.",
+      "kid": "d30t18"
     },
     {
       "terim": "serbest enerji",
-      "tanim": "Bir sistemdeki enerjinin işe çevrilebilen kısmı; canlılar ve makineler bununla çalışır."
+      "tanim": "Bir sistemdeki enerjinin işe çevrilebilen kısmı; canlılar ve makineler bununla çalışır.",
+      "kid": "d30t19"
     },
     {
       "terim": "Bekenstein-Hawking entropisi",
-      "tanim": "Bir kara deliğin olay ufkunun alanıyla orantılı olan entropisi."
+      "tanim": "Bir kara deliğin olay ufkunun alanıyla orantılı olan entropisi.",
+      "kid": "d30t20"
     },
     {
       "terim": "ısıl ölüm",
-      "tanim": "Evrenin en yüksek entropiye ulaşıp kullanılabilir serbest enerjinin kalmadığı varsayımsal son durumu."
+      "tanim": "Evrenin en yüksek entropiye ulaşıp kullanılabilir serbest enerjinin kalmadığı varsayımsal son durumu.",
+      "kid": "d30t21"
     }
   ],
   "defter_notu": [
@@ -401,55 +433,68 @@
   "sorular": [
     {
       "soru": "Sıcak bir çayın kendiliğinden ısınması enerjinin korunumunu çiğner mi? Peki neden hiç görülmez?",
-      "cevap": "Çiğnemez; odadan çaya ısı geçse de toplam enerji aynı kalır. Görülmemesinin nedeni ikinci yasadır: bu olay toplam entropiyi azaltırdı. Boltzmann'ın diliyle soğumuş durumun mikrodurum sayısı akıl almaz ölçüde fazla olduğu için ters olay pratikte hiç gerçekleşmez."
+      "cevap": "Çiğnemez; odadan çaya ısı geçse de toplam enerji aynı kalır. Görülmemesinin nedeni ikinci yasadır: bu olay toplam entropiyi azaltırdı. Boltzmann'ın diliyle soğumuş durumun mikrodurum sayısı akıl almaz ölçüde fazla olduğu için ters olay pratikte hiç gerçekleşmez.",
+      "kid": "d30s0"
     },
     {
       "soru": "Isı ile sıcaklık arasındaki fark nedir?",
-      "cevap": "Sıcaklık, bir maddedeki parçacıkların ortalama hareket enerjisinin ölçüsüdür. Isı ise sıcaklık farkı yüzünden bir cisimden ötekine akan enerjidir. Büyük ve ılık bir küvette küçük ve kaynar bir çaydanlıktan daha çok ısı enerjisi olabilir ama çaydanlık daha sıcaktır."
+      "cevap": "Sıcaklık, bir maddedeki parçacıkların ortalama hareket enerjisinin ölçüsüdür. Isı ise sıcaklık farkı yüzünden bir cisimden ötekine akan enerjidir. Büyük ve ılık bir küvette küçük ve kaynar bir çaydanlıktan daha çok ısı enerjisi olabilir ama çaydanlık daha sıcaktır.",
+      "kid": "d30s1"
     },
     {
       "soru": "Rumford'un top delme gözlemi kalorik kuramına neden ters düşüyordu?",
-      "cevap": "Delme sürdükçe sürtünme ısısı tükenmiyor, su yaklaşık iki buçuk saatte kaynayabiliyordu. Isı namluda depolanmış sınırlı bir akışkan olsaydı bir noktada bitmesi gerekirdi; Rumford'a göre namluya aktarılan tek şey hareketti."
+      "cevap": "Delme sürdükçe sürtünme ısısı tükenmiyor, su yaklaşık iki buçuk saatte kaynayabiliyordu. Isı namluda depolanmış sınırlı bir akışkan olsaydı bir noktada bitmesi gerekirdi; Rumford'a göre namluya aktarılan tek şey hareketti.",
+      "kid": "d30s2"
     },
     {
       "soru": "Bir buhar türbininde sıcak taraf 600 °C, soğuk taraf 30 °C. En yüksek verim yaklaşık ne olur?",
-      "cevap": "Kelvine çevir: 873 K ve 303 K. η = 1 − 303 ÷ 873 ≈ 1 − 0,347 = 0,653, yani yaklaşık %65. Gerçek makine sürtünme ve kayıplar yüzünden bunun altında kalır."
+      "cevap": "Kelvine çevir: 873 K ve 303 K. η = 1 − 303 ÷ 873 ≈ 1 − 0,347 = 0,653, yani yaklaşık %65. Gerçek makine sürtünme ve kayıplar yüzünden bunun altında kalır.",
+      "kid": "d30s3"
     },
     {
       "soru": "Neden aynı miktarda ısı soğuk bir cisme verildiğinde sıcak bir cisme verildiğinden daha fazla entropi artışı yaratır?",
-      "cevap": "Clausius'un tanımına göre entropi artışı verilen ısının sıcaklığa bölümüdür (Q ÷ T). Payda küçükse bölüm büyük olur. Bu yüzden ısı sıcaktan soğuğa aktığında soğuğun kazancı sıcağın kaybından büyüktür ve toplam entropi artar."
+      "cevap": "Clausius'un tanımına göre entropi artışı verilen ısının sıcaklığa bölümüdür (Q ÷ T). Payda küçükse bölüm büyük olur. Bu yüzden ısı sıcaktan soğuğa aktığında soğuğun kazancı sıcağın kaybından büyüktür ve toplam entropi artar.",
+      "kid": "d30s4"
     },
     {
       "soru": "Dört parayla “iki yazı, iki tura” makrodurumu kaç mikrodurumla gerçekleşir? “Dördü de yazı” kaçla?",
-      "cevap": "Toplam 16 sıralama vardır. İki yazı iki tura 6 sıralamayla (YYTT, YTYT, YTTY, TYYT, TYTY, TTYY), dördü de yazı yalnızca 1 sıralamayla olur. Bu yüzden karışık sonuç daha olasıdır; entropisi daha yüksektir."
+      "cevap": "Toplam 16 sıralama vardır. İki yazı iki tura 6 sıralamayla (YYTT, YTYT, YTTY, TYYT, TYTY, TTYY), dördü de yazı yalnızca 1 sıralamayla olur. Bu yüzden karışık sonuç daha olasıdır; entropisi daha yüksektir.",
+      "kid": "d30s5"
     },
     {
       "soru": "Buzdolabı içini soğuttuğuna göre ikinci yasayı çiğner mi?",
-      "cevap": "Hayır. İkinci yasa yalıtılmış sistemin toplam entropisi içindir. Buzdolabı elektrik enerjisi harcayarak ısıyı içeriden alır ve arkasından mutfağa daha fazla ısı atar; içerideki entropi azalırken mutfaktaki artış daha büyüktür. Clausius'un cümlesindeki “başka bir değişiklik olmadan” kaydı bu bedeli anlatır."
+      "cevap": "Hayır. İkinci yasa yalıtılmış sistemin toplam entropisi içindir. Buzdolabı elektrik enerjisi harcayarak ısıyı içeriden alır ve arkasından mutfağa daha fazla ısı atar; içerideki entropi azalırken mutfaktaki artış daha büyüktür. Clausius'un cümlesindeki “başka bir değişiklik olmadan” kaydı bu bedeli anlatır.",
+      "kid": "d30s6"
     },
     {
       "soru": "Maxwell'in cini ikinci yasayı neden gerçekte çiğneyemez?",
-      "cevap": "Cin molekülleri ayıklamak için onların hızlarını ölçüp kaydetmek, sonra hafızasını silmek zorundadır. Landauer'e göre bir biti silmek en az k × T × ln 2 ısı üretir. Bu ısının çevreye kattığı entropi, cinin ayıklayarak kazandığından az olamaz. 2012'de Bérut ve arkadaşları bu sınırı deneyle ölçtü."
+      "cevap": "Cin molekülleri ayıklamak için onların hızlarını ölçüp kaydetmek, sonra hafızasını silmek zorundadır. Landauer'e göre bir biti silmek en az k × T × ln 2 ısı üretir. Bu ısının çevreye kattığı entropi, cinin ayıklayarak kazandığından az olamaz. 2012'de Bérut ve arkadaşları bu sınırı deneyle ölçtü.",
+      "kid": "d30s7"
     },
     {
       "soru": "Fizik yasaları zamanın yönünü neredeyse hiç umursamıyorsa, zamanın oku nereden gelir?",
-      "cevap": "Çok sayıda parçacığın toplu davranışından, yani entropinin artmasından gelir. Entropinin bugün hâlâ artabilmesi geçmişte daha düşük olmasını gerektirir; okun kökü evrenin ilk anlarındaki düşük entropili durumdur. Bu başlangıç durumunun nedeni henüz bilinmiyor."
+      "cevap": "Çok sayıda parçacığın toplu davranışından, yani entropinin artmasından gelir. Entropinin bugün hâlâ artabilmesi geçmişte daha düşük olmasını gerektirir; okun kökü evrenin ilk anlarındaki düşük entropili durumdur. Bu başlangıç durumunun nedeni henüz bilinmiyor.",
+      "kid": "d30s8"
     },
     {
       "soru": "Bir yıldız ışık yayarak enerji kaybettiğinde neden soğumak yerine ısınır?",
-      "cevap": "Kütleçekimiyle bir arada duran sistemlerin ısı sığası negatiftir. Enerji kaybeden yıldızın basıncı düşer, kütleçekimi onu sıkıştırır, sıkışan gaz kütleçekim enerjisinin bir kısmını hareket enerjisine çevirir ve ısınır. Yıldızın kendini düzelten dengesi bu ilkeye dayanır."
+      "cevap": "Kütleçekimiyle bir arada duran sistemlerin ısı sığası negatiftir. Enerji kaybeden yıldızın basıncı düşer, kütleçekimi onu sıkıştırır, sıkışan gaz kütleçekim enerjisinin bir kısmını hareket enerjisine çevirir ve ısınır. Yıldızın kendini düzelten dengesi bu ilkeye dayanır.",
+      "kid": "d30s9"
     },
     {
       "soru": "Dünya Güneş'ten aldığı kadar enerjiyi uzaya geri veriyorsa, canlılar neyle beslenir?",
-      "cevap": "Enerjinin niteliğindeki farkla. Dünya'ya 5772 K'lik bir yüzeyden gelen az sayıda yüksek enerjili foton girer, yaklaşık 254 K'lik kabaca 20 kat fazla düşük enerjili kızılötesi foton çıkar. Bu, büyük bir entropi artışıdır; canlılar ve hava olayları bu düşük entropi akışını kullanır."
+      "cevap": "Enerjinin niteliğindeki farkla. Dünya'ya 5772 K'lik bir yüzeyden gelen az sayıda yüksek enerjili foton girer, yaklaşık 254 K'lik kabaca 20 kat fazla düşük enerjili kızılötesi foton çıkar. Bu, büyük bir entropi artışıdır; canlılar ve hava olayları bu düşük entropi akışını kullanır.",
+      "kid": "d30s10"
     },
     {
       "soru": "Bir kara deliğin kütlesi iki katına çıkarsa Bekenstein-Hawking entropisi nasıl değişir?",
-      "cevap": "Entropi olay ufkunun alanıyla orantılıdır. Olay ufkunun yarıçapı kütleyle doğru orantılı olduğundan alan kütlenin karesiyle büyür. Kütle iki katına çıkarsa entropi dört katına çıkar."
+      "cevap": "Entropi olay ufkunun alanıyla orantılıdır. Olay ufkunun yarıçapı kütleyle doğru orantılı olduğundan alan kütlenin karesiyle büyür. Kütle iki katına çıkarsa entropi dört katına çıkar.",
+      "kid": "d30s11"
     },
     {
       "soru": "Isıl ölüm, evrenin mutlak sıfıra donması mı demektir?",
-      "cevap": "Hayır. Isıl ölüm, evrenin en yüksek entropiye ulaşıp kullanılabilir serbest enerjinin kalmadığı durumdur; sıcaklık farkı olmadığı için iş yapılamaz. Artı işaretli kozmolojik sabitli bir evrende sıcaklık sıfıra inmez, sıfırdan büyük küçük bir değerde dengelenir."
+      "cevap": "Hayır. Isıl ölüm, evrenin en yüksek entropiye ulaşıp kullanılabilir serbest enerjinin kalmadığı durumdur; sıcaklık farkı olmadığı için iş yapılamaz. Artı işaretli kozmolojik sabitli bir evrende sıcaklık sıfıra inmez, sıfırdan büyük küçük bir değerde dengelenir.",
+      "kid": "d30s12"
     }
   ],
   "kaynaklar": [

@@ -246,155 +246,190 @@
     {
       "deger": "1,602176634 × 10⁻¹⁹ C (kesin)",
       "aciklama": "Temel yük: bir proton ya da elektronun yükü",
-      "kaynak_url": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt"
+      "kaynak_url": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt",
+      "kid": "d33n0"
     },
     {
       "deger": "1785",
       "aciklama": "Coulomb burulma terazisiyle elektrik kuvvetinin ters kare yasasını ölçtü",
-      "kaynak_url": "https://www.aps.org/apsnews/2016/06/coulomb-measures-electric-force"
+      "kaynak_url": "https://www.aps.org/apsnews/2016/06/coulomb-measures-electric-force",
+      "kid": "d33n1"
     },
     {
       "deger": "1820",
       "aciklama": "Ørsted akımın pusula iğnesini saptırdığını gördü",
-      "kaynak_url": "https://nationalmaglab.org/magnet-academy/history-of-electricity-magnetism/timeline/1820-1829/"
+      "kaynak_url": "https://nationalmaglab.org/magnet-academy/history-of-electricity-magnetism/timeline/1820-1829/",
+      "kid": "d33n2"
     },
     {
       "deger": "1831",
       "aciklama": "Faraday elektromanyetik indüksiyonu buldu",
-      "kaynak_url": "https://en.wikipedia.org/wiki/History_of_Maxwell%27s_equations"
+      "kaynak_url": "https://en.wikipedia.org/wiki/History_of_Maxwell%27s_equations",
+      "kid": "d33n3"
     },
     {
       "deger": "yaklaşık 3,107 × 10⁸ m/s",
       "aciklama": "Weber ve Kohlrausch'un (1855'ten itibaren) elektrik ve manyetik birimler arasında ölçtüğü oran",
-      "kaynak_url": "https://en.wikipedia.org/wiki/History_of_Maxwell%27s_equations"
+      "kaynak_url": "https://en.wikipedia.org/wiki/History_of_Maxwell%27s_equations",
+      "kid": "d33n4"
     },
     {
       "deger": "299.792.458 m/s",
       "aciklama": "Işığın boşluktaki hızı (tanım gereği kesin); 1 ÷ √(μ₀ε₀) ile aynı",
-      "kaynak_url": "https://physics.nist.gov/cgi-bin/cuu/Value?c"
+      "kaynak_url": "https://physics.nist.gov/cgi-bin/cuu/Value?c",
+      "kid": "d33n5"
     },
     {
       "deger": "230 V, 50 Hz",
       "aciklama": "Türkiye'de şebeke gerilimi ve frekansı",
-      "kaynak_url": "https://www.worldstandards.eu/electricity/plug-voltage-by-country/turkey/"
+      "kaynak_url": "https://www.worldstandards.eu/electricity/plug-voltage-by-country/turkey/",
+      "kid": "d33n6"
     },
     {
       "deger": "20,5 MHz (≈14,6 m)",
       "aciklama": "Jansky'nin Samanyolu'ndan radyo dalgasını bulduğu frekans (1932)",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Karl_Guthe_Jansky"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Karl_Guthe_Jansky",
+      "kid": "d33n7"
     },
     {
       "deger": "yaklaşık 22–67 μT",
       "aciklama": "Dünya'nın yüzeydeki manyetik alanı (güçlü buzdolabı mıknatısı ~10.000 μT)",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Earth%27s_magnetic_field"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Earth%27s_magnetic_field",
+      "kid": "d33n8"
     },
     {
       "deger": "yaklaşık 780.000 yıl önce",
       "aciklama": "Dünya'nın manyetik alanının son ters dönmesi (Brunhes–Matuyama)",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Earth%27s_magnetic_field"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Earth%27s_magnetic_field",
+      "kid": "d33n9"
     },
     {
       "deger": "1,5 T ya da 3 T",
       "aciklama": "Tıbbi MR cihazlarının çoğunun manyetik alanı",
-      "kaynak_url": "https://radiopaedia.org/articles/58849"
+      "kaynak_url": "https://radiopaedia.org/articles/58849",
+      "kid": "d33n10"
     }
   ],
   "sozluk": [
     {
       "terim": "elektrik yükü",
-      "tanim": "Maddenin elektrik kuvvetini yaratma ve hissetme özelliği; artı ve eksi olmak üzere iki çeşittir, aynılar iter, zıtlar çeker."
+      "tanim": "Maddenin elektrik kuvvetini yaratma ve hissetme özelliği; artı ve eksi olmak üzere iki çeşittir, aynılar iter, zıtlar çeker.",
+      "kid": "d33t0"
     },
     {
       "terim": "temel yük",
-      "tanim": "Serbest parçacıklarda görülen en küçük yük paketi; bir proton ya da elektronun yükü, 1,602176634 × 10⁻¹⁹ coulomb."
+      "tanim": "Serbest parçacıklarda görülen en küçük yük paketi; bir proton ya da elektronun yükü, 1,602176634 × 10⁻¹⁹ coulomb.",
+      "kid": "d33t1"
     },
     {
       "terim": "coulomb",
-      "tanim": "Elektrik yükünün birimi (C); yaklaşık 6,24 × 10¹⁸ elektronun yükü."
+      "tanim": "Elektrik yükünün birimi (C); yaklaşık 6,24 × 10¹⁸ elektronun yükü.",
+      "kid": "d33t2"
     },
     {
       "terim": "Coulomb yasası",
-      "tanim": "İki yük arasındaki kuvvetin yüklerin çarpımıyla doğru, aralarındaki uzaklığın karesiyle ters orantılı olduğunu söyleyen yasa (1785)."
+      "tanim": "İki yük arasındaki kuvvetin yüklerin çarpımıyla doğru, aralarındaki uzaklığın karesiyle ters orantılı olduğunu söyleyen yasa (1785).",
+      "kid": "d33t3"
     },
     {
       "terim": "elektrik alanı",
-      "tanim": "Bir yükün çevresindeki uzayda, oraya konacak başka bir yükün hangi yönde ve ne güçte itileceğini her noktada gösteren durum."
+      "tanim": "Bir yükün çevresindeki uzayda, oraya konacak başka bir yükün hangi yönde ve ne güçte itileceğini her noktada gösteren durum.",
+      "kid": "d33t4"
     },
     {
       "terim": "elektrik akımı",
-      "tanim": "Bir iletkenin kesitinden saniyede geçen yük miktarı; amper (A) ile ölçülür."
+      "tanim": "Bir iletkenin kesitinden saniyede geçen yük miktarı; amper (A) ile ölçülür.",
+      "kid": "d33t5"
     },
     {
       "terim": "gerilim",
-      "tanim": "Yükleri bir devrede iten elektrik “yokuşu”; birim yük başına enerji farkı, volt (V) ile ölçülür."
+      "tanim": "Yükleri bir devrede iten elektrik “yokuşu”; birim yük başına enerji farkı, volt (V) ile ölçülür.",
+      "kid": "d33t6"
     },
     {
       "terim": "alternatif akım",
-      "tanim": "Yönü düzenli aralıklarla ileri geri değişen akım; Türkiye şebekesinde saniyede 50 döngü (50 Hz)."
+      "tanim": "Yönü düzenli aralıklarla ileri geri değişen akım; Türkiye şebekesinde saniyede 50 döngü (50 Hz).",
+      "kid": "d33t7"
     },
     {
       "terim": "manyetik alan",
-      "tanim": "Mıknatısların ve hareket eden yüklerin çevresinde oluşan, başka mıknatıslara ve hareketli yüklere kuvvet uygulayan alan; tesla (T) ile ölçülür."
+      "tanim": "Mıknatısların ve hareket eden yüklerin çevresinde oluşan, başka mıknatıslara ve hareketli yüklere kuvvet uygulayan alan; tesla (T) ile ölçülür.",
+      "kid": "d33t8"
     },
     {
       "terim": "tesla",
-      "tanim": "Manyetik alanın birimi (T); Dünya'nın yüzeydeki alanı birkaç on mikrotesla, bir MR cihazınınki 1,5–3 T'dir."
+      "tanim": "Manyetik alanın birimi (T); Dünya'nın yüzeydeki alanı birkaç on mikrotesla, bir MR cihazınınki 1,5–3 T'dir.",
+      "kid": "d33t9"
     },
     {
       "terim": "elektromıknatıs",
-      "tanim": "İçinden akım geçen bir tel sargısıyla elde edilen, akım kesilince manyetizması kaybolan mıknatıs."
+      "tanim": "İçinden akım geçen bir tel sargısıyla elde edilen, akım kesilince manyetizması kaybolan mıknatıs.",
+      "kid": "d33t10"
     },
     {
       "terim": "elektromanyetik indüksiyon",
-      "tanim": "Değişen bir manyetik alanın bir iletkende gerilim ve akım doğurması; Faraday 1831."
+      "tanim": "Değişen bir manyetik alanın bir iletkende gerilim ve akım doğurması; Faraday 1831.",
+      "kid": "d33t11"
     },
     {
       "terim": "jeneratör",
-      "tanim": "Mıknatıslar ile tel sargılarını birbirine göre döndürerek indüksiyonla elektrik üreten makine."
+      "tanim": "Mıknatıslar ile tel sargılarını birbirine göre döndürerek indüksiyonla elektrik üreten makine.",
+      "kid": "d33t12"
     },
     {
       "terim": "transformatör",
-      "tanim": "Ortak bir demir çekirdeğe sarılmış iki sargıyla alternatif akımın gerilimini yükselten ya da alçaltan aygıt."
+      "tanim": "Ortak bir demir çekirdeğe sarılmış iki sargıyla alternatif akımın gerilimini yükselten ya da alçaltan aygıt.",
+      "kid": "d33t13"
     },
     {
       "terim": "yer değiştirme akımı",
-      "tanim": "Maxwell'in eklediği terim: değişen bir elektrik alanının, manyetik alan yaratma bakımından bir akım gibi davranması."
+      "tanim": "Maxwell'in eklediği terim: değişen bir elektrik alanının, manyetik alan yaratma bakımından bir akım gibi davranması.",
+      "kid": "d33t14"
     },
     {
       "terim": "Maxwell denklemleri",
-      "tanim": "Elektrik ve manyetik alanların yüklerle, akımlarla ve birbirleriyle ilişkisini veren, bugün dört denklemle yazılan kuram."
+      "tanim": "Elektrik ve manyetik alanların yüklerle, akımlarla ve birbirleriyle ilişkisini veren, bugün dört denklemle yazılan kuram.",
+      "kid": "d33t15"
     },
     {
       "terim": "elektromanyetik dalga",
-      "tanim": "Birbirini doğuran değişen elektrik ve manyetik alanlardan oluşan, boşlukta ışık hızıyla ilerleyen dalga; ışık bunun bir örneğidir."
+      "tanim": "Birbirini doğuran değişen elektrik ve manyetik alanlardan oluşan, boşlukta ışık hızıyla ilerleyen dalga; ışık bunun bir örneğidir.",
+      "kid": "d33t16"
     },
     {
       "terim": "sinkrotron ışıması",
-      "tanim": "Işık hızına yakın giden yüklü parçacıkların manyetik alanda yön değiştirirken yaydığı ışınım; kozmik radyo kaynaklarının çoğunun ışığı."
+      "tanim": "Işık hızına yakın giden yüklü parçacıkların manyetik alanda yön değiştirirken yaydığı ışınım; kozmik radyo kaynaklarının çoğunun ışığı.",
+      "kid": "d33t17"
     },
     {
       "terim": "jeodinamo",
-      "tanim": "Dünya'nın sıvı dış çekirdeğindeki iletken demirin hareketiyle manyetik alanı sürekli yeniden üreten düzenek."
+      "tanim": "Dünya'nın sıvı dış çekirdeğindeki iletken demirin hareketiyle manyetik alanı sürekli yeniden üreten düzenek.",
+      "kid": "d33t18"
     },
     {
       "terim": "manyetosfer",
-      "tanim": "Dünya'nın manyetik alanının uzaya uzanan, Güneş rüzgârının yüklü parçacıklarına karşı kalkan olan bölgesi."
+      "tanim": "Dünya'nın manyetik alanının uzaya uzanan, Güneş rüzgârının yüklü parçacıklarına karşı kalkan olan bölgesi.",
+      "kid": "d33t19"
     },
     {
       "terim": "Van Allen kuşakları",
-      "tanim": "Manyetosferin içinde yüksek enerjili yüklü parçacıkların tuzağa düştüğü iki halka biçimli bölge."
+      "tanim": "Manyetosferin içinde yüksek enerjili yüklü parçacıkların tuzağa düştüğü iki halka biçimli bölge.",
+      "kid": "d33t20"
     },
     {
       "terim": "Zeeman olayı",
-      "tanim": "Bir tayf çizgisinin manyetik alan içinde birkaç çizgiye bölünmesi; uzaktaki manyetik alanları ölçmeye yarar."
+      "tanim": "Bir tayf çizgisinin manyetik alan içinde birkaç çizgiye bölünmesi; uzaktaki manyetik alanları ölçmeye yarar.",
+      "kid": "d33t21"
     },
     {
       "terim": "plazma",
-      "tanim": "Atomlarından elektron kopmuş, serbest yüklü parçacıklardan oluşan, manyetik alanlarla güçlü etkileşen gaz."
+      "tanim": "Atomlarından elektron kopmuş, serbest yüklü parçacıklardan oluşan, manyetik alanlarla güçlü etkileşen gaz.",
+      "kid": "d33t22"
     },
     {
       "terim": "esir",
-      "tanim": "On dokuzuncu yüzyılda ışığı taşıdığı varsayılan, bütün uzayı dolduran ortam; ölçümlerle çelişti ve görelilikle terk edildi."
+      "tanim": "On dokuzuncu yüzyılda ışığı taşıdığı varsayılan, bütün uzayı dolduran ortam; ölçümlerle çelişti ve görelilikle terk edildi.",
+      "kid": "d33t23"
     }
   ],
   "defter_notu": [
@@ -412,59 +447,73 @@
   "sorular": [
     {
       "soru": "“Elektrik” kelimesi nereden gelir?",
-      "cevap": "William Gilbert 1600'de “De Magnete” kitabında kehribarla durgun elektriği inceledi. Kehribar Yunancada elektron diye anılır; Gilbert kehribara benzer etki için Latince “electricus” kelimesini kullandı. “Elektrik” buradan gelir."
+      "cevap": "William Gilbert 1600'de “De Magnete” kitabında kehribarla durgun elektriği inceledi. Kehribar Yunancada elektron diye anılır; Gilbert kehribara benzer etki için Latince “electricus” kelimesini kullandı. “Elektrik” buradan gelir.",
+      "kid": "d33s0"
     },
     {
       "soru": "Elektrik kuvveti kütleçekiminden 10³⁹ kat güçlüyse, gezegenlerin hareketini neden kütleçekimi belirler?",
-      "cevap": "Çünkü yükün iki çeşidi vardır ve büyük cisimlerde artı ve eksi yükler neredeyse tam olarak birbirini dengeler; cisim dışarıdan yüksüz görünür. Kütleçekiminde ise eksi kütle yoktur; her parça çeker ve etkiler birikir. Bu yüzden büyük ölçekte kütleçekimi kazanır."
+      "cevap": "Çünkü yükün iki çeşidi vardır ve büyük cisimlerde artı ve eksi yükler neredeyse tam olarak birbirini dengeler; cisim dışarıdan yüksüz görünür. Kütleçekiminde ise eksi kütle yoktur; her parça çeker ve etkiler birikir. Bu yüzden büyük ölçekte kütleçekimi kazanır.",
+      "kid": "d33s1"
     },
     {
       "soru": "İki yük arasındaki uzaklık üç katına çıkarsa aralarındaki kuvvet nasıl değişir?",
-      "cevap": "Coulomb yasasına göre kuvvet uzaklığın karesiyle ters orantılıdır. Uzaklık 3 katına çıkarsa kuvvet 3² = 9'a bölünür, yani dokuzda birine iner."
+      "cevap": "Coulomb yasasına göre kuvvet uzaklığın karesiyle ters orantılıdır. Uzaklık 3 katına çıkarsa kuvvet 3² = 9'a bölünür, yani dokuzda birine iner.",
+      "kid": "d33s2"
     },
     {
       "soru": "2 amperlik bir akımda bir telin kesitinden saniyede kaç elektron geçer?",
-      "cevap": "2 A saniyede 2 coulomb demektir. 1 C ≈ 6,24 × 10¹⁸ elektron olduğundan 2 × 6,24 × 10¹⁸ ≈ 1,25 × 10¹⁹ elektron geçer."
+      "cevap": "2 A saniyede 2 coulomb demektir. 1 C ≈ 6,24 × 10¹⁸ elektron olduğundan 2 × 6,24 × 10¹⁸ ≈ 1,25 × 10¹⁹ elektron geçer.",
+      "kid": "d33s3"
     },
     {
       "soru": "Ørsted 1820'de ne gördü ve bu neden önemliydi?",
-      "cevap": "Bir dersi sırasında akım taşıyan bir telin yakınındaki pusula iğnesinin dönüp tele dik durduğunu gördü. Bu, hareket eden yüklerin manyetik etki yarattığını, yani elektrik ile manyetizma arasında doğrudan bir bağ olduğunu gösteren ilk kesin gözlemdi."
+      "cevap": "Bir dersi sırasında akım taşıyan bir telin yakınındaki pusula iğnesinin dönüp tele dik durduğunu gördü. Bu, hareket eden yüklerin manyetik etki yarattığını, yani elektrik ile manyetizma arasında doğrudan bir bağ olduğunu gösteren ilk kesin gözlemdi.",
+      "kid": "d33s4"
     },
     {
       "soru": "Faraday'ın demir halka deneyinde ikinci sargıda neden yalnızca akım açılıp kapanırken akım oluştu?",
-      "cevap": "Çünkü akımı doğuran manyetik alanın kendisi değil, değişimidir. Birinci sargıdaki akım açılınca ya da kapanınca halkadaki manyetik alan değişir ve ikinci sargıda kısa bir akım doğar. Akım sabit akarken alan değişmez, ikinci sargıda akım olmaz. Bu, elektromanyetik indüksiyondur."
+      "cevap": "Çünkü akımı doğuran manyetik alanın kendisi değil, değişimidir. Birinci sargıdaki akım açılınca ya da kapanınca halkadaki manyetik alan değişir ve ikinci sargıda kısa bir akım doğar. Akım sabit akarken alan değişmez, ikinci sargıda akım olmaz. Bu, elektromanyetik indüksiyondur.",
+      "kid": "d33s5"
     },
     {
       "soru": "Prizdeki akım neden alternatif akımdır?",
-      "cevap": "Çünkü santrallerdeki jeneratörlerde rotor döner. Her turda sargıdan geçen manyetik alan artar, azalır ve ters yönde artar; Faraday yasasına göre akım da bu değişime uyarak yön değiştirir. Türkiye şebekesinde bu, saniyede 50 döngüdür (50 Hz)."
+      "cevap": "Çünkü santrallerdeki jeneratörlerde rotor döner. Her turda sargıdan geçen manyetik alan artar, azalır ve ters yönde artar; Faraday yasasına göre akım da bu değişime uyarak yön değiştirir. Türkiye şebekesinde bu, saniyede 50 döngüdür (50 Hz).",
+      "kid": "d33s6"
     },
     {
       "soru": "Maxwell'in Ampère yasasına eklediği yer değiştirme akımı neyi değiştirdi?",
-      "cevap": "Değişen bir elektrik alanının da manyetik alan yarattığını söyledi. Böylece değişen elektrik ve manyetik alanlar birbirini sırayla doğurarak kaynaktan kopup uzayda ilerleyebilir hâle geldi. Bu, elektromanyetik dalgaları ve onların hızını öngörmeyi mümkün kıldı."
+      "cevap": "Değişen bir elektrik alanının da manyetik alan yarattığını söyledi. Böylece değişen elektrik ve manyetik alanlar birbirini sırayla doğurarak kaynaktan kopup uzayda ilerleyebilir hâle geldi. Bu, elektromanyetik dalgaları ve onların hızını öngörmeyi mümkün kıldı.",
+      "kid": "d33s7"
     },
     {
       "soru": "μ₀ = 1,2566 × 10⁻⁶ ve ε₀ = 8,854 × 10⁻¹² ise elektromanyetik dalganın hızı kaçtır?",
-      "cevap": "c = 1 ÷ √(μ₀ ε₀). Çarpım ≈ 1,1127 × 10⁻¹⁷; karekökü ≈ 3,336 × 10⁻⁹; tersi ≈ 2,998 × 10⁸ m/s. Bu, ışık hızıdır."
+      "cevap": "c = 1 ÷ √(μ₀ ε₀). Çarpım ≈ 1,1127 × 10⁻¹⁷; karekökü ≈ 3,336 × 10⁻⁹; tersi ≈ 2,998 × 10⁸ m/s. Bu, ışık hızıdır.",
+      "kid": "d33s8"
     },
     {
       "soru": "Jansky, sinyalin Güneş'ten değil Samanyolu'ndan geldiğini nasıl anladı?",
-      "cevap": "Sinyal her 23 saat 56 dakikada bir tepe yapıyordu. Bu süre yıldız günüdür, yani Dünya'nın yıldızlara göre dönme süresidir. Güneş'ten gelen bir sinyal 24 saatte bir tekrarlanırdı. Kaynak yıldızlara bağlıydı ve en güçlü olduğu yön Yay takımyıldızındaki Samanyolu merkeziydi."
+      "cevap": "Sinyal her 23 saat 56 dakikada bir tepe yapıyordu. Bu süre yıldız günüdür, yani Dünya'nın yıldızlara göre dönme süresidir. Güneş'ten gelen bir sinyal 24 saatte bir tekrarlanırdı. Kaynak yıldızlara bağlıydı ve en güçlü olduğu yön Yay takımyıldızındaki Samanyolu merkeziydi.",
+      "kid": "d33s9"
     },
     {
       "soru": "Sinkrotron ışıması nedir, gökyüzünde nerede görülür?",
-      "cevap": "Işık hızına yakın giden yüklü parçacıkların manyetik alan çizgileri çevresinde sarmal çizerken, yani sürekli ivmelenirken yaydığı ışınımdır. Gökte ilk kez 1956'da Yengeç Bulutsusu'nda saptandı; bilinen kozmik radyo kaynaklarının çoğu bu ışımayı yayar."
+      "cevap": "Işık hızına yakın giden yüklü parçacıkların manyetik alan çizgileri çevresinde sarmal çizerken, yani sürekli ivmelenirken yaydığı ışınımdır. Gökte ilk kez 1956'da Yengeç Bulutsusu'nda saptandı; bilinen kozmik radyo kaynaklarının çoğu bu ışımayı yayar.",
+      "kid": "d33s10"
     },
     {
       "soru": "Dünya'nın manyetik alanının kaynağı nedir ve sabit midir?",
-      "cevap": "Sıvı demir alaşımlarından oluşan dış çekirdekteki akımlardır; ısının sürdürdüğü bu kendi kendini besleyen düzeneğe jeodinamo denir. Sabit değildir: kuzey manyetik kutbu yılda 40 km'ye varan hızlarla kayar ve alan jeolojik tarihte defalarca ters dönmüştür; son kez yaklaşık 780.000 yıl önce."
+      "cevap": "Sıvı demir alaşımlarından oluşan dış çekirdekteki akımlardır; ısının sürdürdüğü bu kendi kendini besleyen düzeneğe jeodinamo denir. Sabit değildir: kuzey manyetik kutbu yılda 40 km'ye varan hızlarla kayar ve alan jeolojik tarihte defalarca ters dönmüştür; son kez yaklaşık 780.000 yıl önce.",
+      "kid": "d33s11"
     },
     {
       "soru": "Hale, Güneş lekelerinin manyetik olduğunu 1908'de nasıl gösterdi?",
-      "cevap": "Zeeman olayını kullandı: manyetik alan, bir tayf çizgisini birkaç çizgiye böler ve ayrılma alan güçlendikçe büyür. Lekelerden gelen ışığın tayf çizgilerinde bu bölünmeyi görerek lekelerde güçlü manyetik alanlar olduğunu kanıtladı."
+      "cevap": "Zeeman olayını kullandı: manyetik alan, bir tayf çizgisini birkaç çizgiye böler ve ayrılma alan güçlendikçe büyür. Lekelerden gelen ışığın tayf çizgilerinde bu bölünmeyi görerek lekelerde güçlü manyetik alanlar olduğunu kanıtladı.",
+      "kid": "d33s12"
     },
     {
       "soru": "Maxwell'in ışık hızı formülü hangi soruyu doğurdu ve bu soru nereye götürdü?",
-      "cevap": "Formülde ne ışık kaynağının ne de gözlemcinin hızı vardı; hız kime göreydi? Fizikçiler bir esir ortamı varsaydı ama Dünya'nın esire göre hareketini ölçme denemeleri bu fikirle çelişti. Işık hızının herkes için aynı olduğunu kabul etmek Einstein'ın özel görelilik kuramına götürdü (d25)."
+      "cevap": "Formülde ne ışık kaynağının ne de gözlemcinin hızı vardı; hız kime göreydi? Fizikçiler bir esir ortamı varsaydı ama Dünya'nın esire göre hareketini ölçme denemeleri bu fikirle çelişti. Işık hızının herkes için aynı olduğunu kabul etmek Einstein'ın özel görelilik kuramına götürdü (d25).",
+      "kid": "d33s13"
     }
   ],
   "kaynaklar": [

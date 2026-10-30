@@ -264,130 +264,159 @@
     {
       "deger": "299.792.458 m/s (tam)",
       "aciklama": "Işığın boşluktaki hızı; 1983'ten beri metrenin tanımı gereği tam bir sayı.",
-      "kaynak_url": "https://physics.nist.gov/cgi-bin/cuu/Value?c"
+      "kaynak_url": "https://physics.nist.gov/cgi-bin/cuu/Value?c",
+      "kid": "d25n0"
     },
     {
       "deger": "0,4 saçak beklenen, en fazla 0,02 ölçülen",
       "aciklama": "Michelson–Morley deneyi (1887): esir rüzgârından beklenen ve ölçülen girişim saçağı kayması.",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Michelson-Morley"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Michelson-Morley",
+      "kid": "d25n1"
     },
     {
       "deger": "≈ 10⁻¹⁸",
       "aciklama": "2015'e kadar optik deneylerin ışık hızında yöne bağlı bir fark için koyduğu üst sınır (Δc ÷ c).",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Michelson-Morley"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Michelson-Morley",
+      "kid": "d25n2"
     },
     {
       "deger": "2,197 μs",
       "aciklama": "Durgun bir müonun ortalama ömrü.",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Time_dilation"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Time_dilation",
+      "kid": "d25n3"
     },
     {
       "deger": "563 → 412 (beklenen 27) müon/saat",
       "aciklama": "Frisch–Smith (1963): Mount Washington'da (1917 m) ve deniz düzeyinde sayılan müonlar; zaman genişlemesi olmasa beklenen 27; ölçülen çarpan 8,8 ± 0,8.",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Experimental_testing_of_time_dilation"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Experimental_testing_of_time_dilation",
+      "kid": "d25n4"
     },
     {
       "deger": "γ = 29,327 → 64,378 μs",
       "aciklama": "CERN müon depolama halkası (1977): müonların uzayan ömrü; zaman genişlemesi binde 0,9 ± 0,4 doğrulukla doğrulandı.",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Time_dilation"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Time_dilation",
+      "kid": "d25n5"
     },
     {
       "deger": "8,99 × 10¹⁶ J ≈ 21,5 Mt TNT",
       "aciklama": "1 kg kütlenin durgun enerjisi (E = mc²).",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Mass%E2%80%93energy_equivalence"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Mass%E2%80%93energy_equivalence",
+      "kid": "d25n6"
     },
     {
       "deger": "7,2 μs/gün (7.214 ns)",
       "aciklama": "GPS uydu saatlerinin hızları yüzünden (özel görelilik) yerdeki saatlere göre geri kalması.",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Error_analysis_for_the_Global_Positioning_System"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Error_analysis_for_the_Global_Positioning_System",
+      "kid": "d25n7"
     },
     {
       "deger": "6,8 TeV",
       "aciklama": "LHC'de 2022'de protonlara verilen rekor enerji; proton ışıktan saniyede yaklaşık 2,85 m yavaş gider (NIST proton durgun enerjisiyle hesap).",
-      "kaynak_url": "https://universetoday.com/155591/large-hadron-collider-restarts-shooting-protons-at-record-energy-levels"
+      "kaynak_url": "https://universetoday.com/155591/large-hadron-collider-restarts-shooting-protons-at-record-energy-levels",
+      "kid": "d25n8"
     },
     {
       "deger": "≈ 192 km/s (ışık hızının %0,064'ü)",
       "aciklama": "Parker Güneş Sondası'nın Aralık 2024'teki en yüksek hızı (692.000 km/sa); insan yapımı en hızlı cisim.",
-      "kaynak_url": "https://www.jhuapl.edu/news/news-releases/241227-parker-closest-approach"
+      "kaynak_url": "https://www.jhuapl.edu/news/news-releases/241227-parker-closest-approach",
+      "kid": "d25n9"
     }
   ],
   "sozluk": [
     {
       "terim": "özel görelilik",
-      "tanim": "Einstein'ın 1905'te kurduğu, sabit hızla hareket eden gözlemciler için zaman, uzay ve enerjinin nasıl davrandığını ışık hızının herkes için aynı olmasından yola çıkarak anlatan kuram."
+      "tanim": "Einstein'ın 1905'te kurduğu, sabit hızla hareket eden gözlemciler için zaman, uzay ve enerjinin nasıl davrandığını ışık hızının herkes için aynı olmasından yola çıkarak anlatan kuram.",
+      "kid": "d25t0"
     },
     {
       "terim": "görelilik ilkesi",
-      "tanim": "Fizik yasalarının sabit hızla düz çizgide giden bütün gözlemciler için aynı olduğu, bu yüzden böyle bir hareketin içeriden hiçbir deneyle fark edilemeyeceği ilkesi."
+      "tanim": "Fizik yasalarının sabit hızla düz çizgide giden bütün gözlemciler için aynı olduğu, bu yüzden böyle bir hareketin içeriden hiçbir deneyle fark edilemeyeceği ilkesi.",
+      "kid": "d25t1"
     },
     {
       "terim": "eylemsiz çerçeve",
-      "tanim": "Kuvvet etkisinde olmayan bir cismin düz bir çizgide sabit hızla gittiği bakış açısı ya da ölçüm düzeni; duran bir rıhtım da sabit hızla giden bir gemi de böyledir."
+      "tanim": "Kuvvet etkisinde olmayan bir cismin düz bir çizgide sabit hızla gittiği bakış açısı ya da ölçüm düzeni; duran bir rıhtım da sabit hızla giden bir gemi de böyledir.",
+      "kid": "d25t2"
     },
     {
       "terim": "esir",
-      "tanim": "19. yüzyılda ışığın içinde yayıldığı varsayılan, evreni dolduran görünmez ortam; Michelson–Morley deneyi ve özel görelilikten sonra bırakıldı."
+      "tanim": "19. yüzyılda ışığın içinde yayıldığı varsayılan, evreni dolduran görünmez ortam; Michelson–Morley deneyi ve özel görelilikten sonra bırakıldı.",
+      "kid": "d25t3"
     },
     {
       "terim": "girişim saçağı",
-      "tanim": "İki ışık demeti üst üste binince oluşan açık ve koyu çizgiler; demetlerden biri az da olsa geç kalırsa çizgiler kayar."
+      "tanim": "İki ışık demeti üst üste binince oluşan açık ve koyu çizgiler; demetlerden biri az da olsa geç kalırsa çizgiler kayar.",
+      "kid": "d25t4"
     },
     {
       "terim": "eşzamanlılığın göreliliği",
-      "tanim": "Bir gözlemciye göre aynı anda olan iki uzak olayın, ona göre hareket eden başka bir gözlemciye göre farklı anlarda olabilmesi."
+      "tanim": "Bir gözlemciye göre aynı anda olan iki uzak olayın, ona göre hareket eden başka bir gözlemciye göre farklı anlarda olabilmesi.",
+      "kid": "d25t5"
     },
     {
       "terim": "ışık saati",
-      "tanim": "Karşılıklı iki ayna arasında gidip gelen bir ışık atımından oluşan, zaman genişlemesini anlatmak için kullanılan düşünce saati."
+      "tanim": "Karşılıklı iki ayna arasında gidip gelen bir ışık atımından oluşan, zaman genişlemesini anlatmak için kullanılan düşünce saati.",
+      "kid": "d25t6"
     },
     {
       "terim": "zaman genişlemesi",
-      "tanim": "Bir gözlemciye göre hareket eden saatin, o gözlemcinin saatinden daha yavaş işlemesi; özel görelilikte hızdan, genel görelilikte kütleçekiminden doğar."
+      "tanim": "Bir gözlemciye göre hareket eden saatin, o gözlemcinin saatinden daha yavaş işlemesi; özel görelilikte hızdan, genel görelilikte kütleçekiminden doğar.",
+      "kid": "d25t7"
     },
     {
       "terim": "öz zaman",
-      "tanim": "Bir saatin kendi yanında, onunla birlikte hareket eden birinin ölçtüğü süre; bir dünya çizgisi boyunca herkesin üzerinde anlaştığı süredir."
+      "tanim": "Bir saatin kendi yanında, onunla birlikte hareket eden birinin ölçtüğü süre; bir dünya çizgisi boyunca herkesin üzerinde anlaştığı süredir.",
+      "kid": "d25t8"
     },
     {
       "terim": "uzunluk kısalması",
-      "tanim": "Hareket eden bir cismin, hareket yönündeki boyunun, ona göre duran birinin ölçtüğünden kısa ölçülmesi."
+      "tanim": "Hareket eden bir cismin, hareket yönündeki boyunun, ona göre duran birinin ölçtüğünden kısa ölçülmesi.",
+      "kid": "d25t9"
     },
     {
       "terim": "öz uzunluk",
-      "tanim": "Bir cismin, kendisine göre durgun olan birinin ölçtüğü boyu; en uzun ölçülen boy budur."
+      "tanim": "Bir cismin, kendisine göre durgun olan birinin ölçtüğü boyu; en uzun ölçülen boy budur.",
+      "kid": "d25t10"
     },
     {
       "terim": "müon",
-      "tanim": "Elektronun yaklaşık 207 kat ağır, durgunken ortalama 2,2 mikrosaniye yaşayan kararsız kuzeni; kozmik ışınlar atmosferde bol miktarda üretir."
+      "tanim": "Elektronun yaklaşık 207 kat ağır, durgunken ortalama 2,2 mikrosaniye yaşayan kararsız kuzeni; kozmik ışınlar atmosferde bol miktarda üretir.",
+      "kid": "d25t11"
     },
     {
       "terim": "ikizler paradoksu",
-      "tanim": "Uzaya gidip dönen ikizin evde kalandan genç döneceği öngörüsünün çelişkili görünmesi; gezgin ikizin çerçeve değiştirmesi durumu simetrik olmaktan çıkardığı için gerçek bir çelişki yoktur."
+      "tanim": "Uzaya gidip dönen ikizin evde kalandan genç döneceği öngörüsünün çelişkili görünmesi; gezgin ikizin çerçeve değiştirmesi durumu simetrik olmaktan çıkardığı için gerçek bir çelişki yoktur.",
+      "kid": "d25t12"
     },
     {
       "terim": "uzay-zaman",
-      "tanim": "Üç uzay boyutu ile zamanın tek bir dört boyutlu yapı olarak düşünülmesi; Minkowski 1908'de özel göreliliğin dili olarak önerdi."
+      "tanim": "Üç uzay boyutu ile zamanın tek bir dört boyutlu yapı olarak düşünülmesi; Minkowski 1908'de özel göreliliğin dili olarak önerdi.",
+      "kid": "d25t13"
     },
     {
       "terim": "dünya çizgisi",
-      "tanim": "Bir cismin uzay-zamanda izlediği yol, yani onun her anındaki yerlerinin oluşturduğu çizgi."
+      "tanim": "Bir cismin uzay-zamanda izlediği yol, yani onun her anındaki yerlerinin oluşturduğu çizgi.",
+      "kid": "d25t14"
     },
     {
       "terim": "ışık konisi",
-      "tanim": "Bir olaydan ışık hızında yola çıkan sinyallerin uzay-zamanda çizdiği sınır; o olayın etkileyebileceği ve onu etkileyebilecek olayları ayırır."
+      "tanim": "Bir olaydan ışık hızında yola çıkan sinyallerin uzay-zamanda çizdiği sınır; o olayın etkileyebileceği ve onu etkileyebilecek olayları ayırır.",
+      "kid": "d25t15"
     },
     {
       "terim": "durgun enerji",
-      "tanim": "Kütlesi olan bir cismin dururken bile sahip olduğu, E = mc² ile verilen enerji."
+      "tanim": "Kütlesi olan bir cismin dururken bile sahip olduğu, E = mc² ile verilen enerji.",
+      "kid": "d25t16"
     },
     {
       "terim": "elektronvolt",
-      "tanim": "Bir elektronun 1 voltluk gerilimle hızlandırılınca kazandığı enerji; parçacık fiziğinde kullanılan çok küçük bir enerji birimi."
+      "tanim": "Bir elektronun 1 voltluk gerilimle hızlandırılınca kazandığı enerji; parçacık fiziğinde kullanılan çok küçük bir enerji birimi.",
+      "kid": "d25t17"
     },
     {
       "terim": "kütle eksiği",
-      "tanim": "Bir atom çekirdeğinin kütlesinin, onu oluşturan proton ve nötronların ayrı ayrı kütlelerinin toplamından az olması; farkın enerji karşılığı bağlanma enerjisidir."
+      "tanim": "Bir atom çekirdeğinin kütlesinin, onu oluşturan proton ve nötronların ayrı ayrı kütlelerinin toplamından az olması; farkın enerji karşılığı bağlanma enerjisidir.",
+      "kid": "d25t18"
     }
   ],
   "defter_notu": [
@@ -405,51 +434,63 @@
   "sorular": [
     {
       "soru": "Galileo'nun gemisi neyi gösterir?",
-      "cevap": "Sabit hızla, sarsıntısız giden bir geminin kapalı kamarasında yapılan hiçbir deneyin (uçan sinekler, düşen damlalar, yüzen balıklar) geminin hareket ettiğini göstermediğini. Fizik yasaları sabit hızla giden bütün gözlemciler için aynıdır; buna görelilik ilkesi denir."
+      "cevap": "Sabit hızla, sarsıntısız giden bir geminin kapalı kamarasında yapılan hiçbir deneyin (uçan sinekler, düşen damlalar, yüzen balıklar) geminin hareket ettiğini göstermediğini. Fizik yasaları sabit hızla giden bütün gözlemciler için aynıdır; buna görelilik ilkesi denir.",
+      "kid": "d25s0"
     },
     {
       "soru": "Michelson–Morley deneyi neyi aradı, ne buldu?",
-      "cevap": "Dünya esirin içinde hareket ediyorsa oluşması beklenen “esir rüzgârını”, ışığın iki dik kolda gidip gelme süresi farkından aradı. Beklenen kayma yaklaşık 0,4 saçaktı, ölçülen en fazla 0,02 saçak oldu. Işık hızı yöne bağlı değişmiyordu; bugünkü tekrarlar bunu 10⁻¹⁸ düzeyinde doğruluyor."
+      "cevap": "Dünya esirin içinde hareket ediyorsa oluşması beklenen “esir rüzgârını”, ışığın iki dik kolda gidip gelme süresi farkından aradı. Beklenen kayma yaklaşık 0,4 saçaktı, ölçülen en fazla 0,02 saçak oldu. Işık hızı yöne bağlı değişmiyordu; bugünkü tekrarlar bunu 10⁻¹⁸ düzeyinde doğruluyor.",
+      "kid": "d25s1"
     },
     {
       "soru": "Einstein'ın 1905'teki iki varsayımı nedir?",
-      "cevap": "Birincisi: bütün fizik yasaları her eylemsiz çerçevede aynıdır. İkincisi: ışığın boşluktaki hızı, kaynağın hareketinden bağımsızdır. Birlikte, ışık hızını her gözlemcinin aynı c değeri olarak ölçeceğini söylerler."
+      "cevap": "Birincisi: bütün fizik yasaları her eylemsiz çerçevede aynıdır. İkincisi: ışığın boşluktaki hızı, kaynağın hareketinden bağımsızdır. Birlikte, ışık hızını her gözlemcinin aynı c değeri olarak ölçeceğini söylerler.",
+      "kid": "d25s2"
     },
     {
       "soru": "Trendeki yolcu ile raydaki gözlemci iki şimşeğin aynı anda düşüp düşmediği konusunda neden anlaşamaz? Hangisi haklıdır?",
-      "cevap": "Işık ikisi için de aynı hızla gider; tren B'ye doğru gittiği için yolcu B'nin ışığını önce görür ve bu olayları eşzamanlı saymaz. Raydaki gözlemci ise ikisini aynı anda görür. İkisi de kendi çerçevesinde haklıdır; eşzamanlılık göreceli bir kavramdır. Ama birbirinin nedeni olabilecek olayların sırası hiçbir gözlemci için tersine dönmez."
+      "cevap": "Işık ikisi için de aynı hızla gider; tren B'ye doğru gittiği için yolcu B'nin ışığını önce görür ve bu olayları eşzamanlı saymaz. Raydaki gözlemci ise ikisini aynı anda görür. İkisi de kendi çerçevesinde haklıdır; eşzamanlılık göreceli bir kavramdır. Ama birbirinin nedeni olabilecek olayların sırası hiçbir gözlemci için tersine dönmez.",
+      "kid": "d25s3"
     },
     {
       "soru": "Işık hızının %99'uyla giden bir geminin saati, Dünya'dakine göre kaç kat yavaş işler?",
-      "cevap": "γ = 1 ÷ √(1 − 0,99²) = 1 ÷ √0,0199 ≈ 1 ÷ 0,141 ≈ 7,09. Gemideki saat Dünya'dakine göre yaklaşık 7 kat yavaş işler: Dünya'da 7 yıl geçerken gemide yaklaşık 1 yıl geçer."
+      "cevap": "γ = 1 ÷ √(1 − 0,99²) = 1 ÷ √0,0199 ≈ 1 ÷ 0,141 ≈ 7,09. Gemideki saat Dünya'dakine göre yaklaşık 7 kat yavaş işler: Dünya'da 7 yıl geçerken gemide yaklaşık 1 yıl geçer.",
+      "kid": "d25s4"
     },
     {
       "soru": "Atmosferin üst katmanlarında oluşan müonlar, ömürleri 2,2 mikrosaniye olduğu hâlde neden yere ulaşabilir?",
-      "cevap": "Işık hızında bile bir ömürde yalnızca yaklaşık 659 m gidebilirlerdi. Ama ışık hızına çok yakın gittikleri için yerdeki gözlemciye göre saatleri yavaş işler (zaman genişlemesi); müona göre ise atmosferin kalınlığı kısalır (uzunluk kısalması). Frisch ve Smith 1963'te dağ tepesindeki saatte 563 müondan deniz düzeyinde 412'sinin kaldığını ölçtü; göreliliksiz beklenti 27'ydi."
+      "cevap": "Işık hızında bile bir ömürde yalnızca yaklaşık 659 m gidebilirlerdi. Ama ışık hızına çok yakın gittikleri için yerdeki gözlemciye göre saatleri yavaş işler (zaman genişlemesi); müona göre ise atmosferin kalınlığı kısalır (uzunluk kısalması). Frisch ve Smith 1963'te dağ tepesindeki saatte 563 müondan deniz düzeyinde 412'sinin kaldığını ölçtü; göreliliksiz beklenti 27'ydi.",
+      "kid": "d25s5"
     },
     {
       "soru": "İkizler paradoksunda iki ikiz de öbürünün saatini yavaş ölçüyorsa, neden dönüşte yalnızca gezgin ikiz gençtir?",
-      "cevap": "Durum simetrik değildir. Evde kalan ikiz baştan sona tek bir eylemsiz çerçevededir; gezgin ikiz dönüşte başka bir çerçeveye geçer. Uzay-zamanda gezginin dünya çizgisi dolambaçlıdır ve dolambaçlı çizgi boyunca ölçülen öz zaman, düz çizgidekinden kısadır. Asıl neden ivme değil, dünya çizgilerinin uzunluk farkıdır."
+      "cevap": "Durum simetrik değildir. Evde kalan ikiz baştan sona tek bir eylemsiz çerçevededir; gezgin ikiz dönüşte başka bir çerçeveye geçer. Uzay-zamanda gezginin dünya çizgisi dolambaçlıdır ve dolambaçlı çizgi boyunca ölçülen öz zaman, düz çizgidekinden kısadır. Asıl neden ivme değil, dünya çizgilerinin uzunluk farkıdır.",
+      "kid": "d25s6"
     },
     {
       "soru": "Işık hızının %60'ıyla giden bir gemiden, gemiye göre ışık hızının %60'ıyla ileri bir sonda fırlatılıyor. Sondanın Dünya'ya göre hızı nedir?",
-      "cevap": "u = (0,6 + 0,6) ÷ (1 + 0,6 × 0,6) = 1,2 ÷ 1,36 ≈ 0,88 c. Basit toplama 1,2 c verirdi, ama görelilikte hızlar böyle toplanmaz ve sonuç her zaman c'nin altında kalır."
+      "cevap": "u = (0,6 + 0,6) ÷ (1 + 0,6 × 0,6) = 1,2 ÷ 1,36 ≈ 0,88 c. Basit toplama 1,2 c verirdi, ama görelilikte hızlar böyle toplanmaz ve sonuç her zaman c'nin altında kalır.",
+      "kid": "d25s7"
     },
     {
       "soru": "“E = mc², kütlenin enerjiye dönüştüğünü söyler” cümlesindeki eksik nedir?",
-      "cevap": "Enerji her zaman korunur; kütle de enerjinin bir ölçüsüdür. Tepkimelerde parçaların durgun kütlelerinin toplamı azalır ve fark hareket enerjisi ile ışık olarak çıkar. Bu enerji kapalı bir kutuda kalsaydı kutunun kütlesi değişmezdi; kütle, enerji sistemden dışarı kaçınca azalır."
+      "cevap": "Enerji her zaman korunur; kütle de enerjinin bir ölçüsüdür. Tepkimelerde parçaların durgun kütlelerinin toplamı azalır ve fark hareket enerjisi ile ışık olarak çıkar. Bu enerji kapalı bir kutuda kalsaydı kutunun kütlesi değişmezdi; kütle, enerji sistemden dışarı kaçınca azalır.",
+      "kid": "d25s8"
     },
     {
       "soru": "1 gramlık bir kütlenin durgun enerjisi kaç joule'dür?",
-      "cevap": "E = m × c² = 0,001 kg × (2,998 × 10⁸ m/s)² ≈ 0,001 × 8,99 × 10¹⁶ ≈ 9 × 10¹³ J. Bu, 1 kg'ın enerjisinin (yaklaşık 21,5 megaton TNT) binde biri, yani yaklaşık 21,5 kiloton TNT'dir."
+      "cevap": "E = m × c² = 0,001 kg × (2,998 × 10⁸ m/s)² ≈ 0,001 × 8,99 × 10¹⁶ ≈ 9 × 10¹³ J. Bu, 1 kg'ın enerjisinin (yaklaşık 21,5 megaton TNT) binde biri, yani yaklaşık 21,5 kiloton TNT'dir.",
+      "kid": "d25s9"
     },
     {
       "soru": "GPS uydusunun saati yalnızca hızı yüzünden günde ne kadar geri kalır? Bu neden önemlidir?",
-      "cevap": "Uydu saniyede yaklaşık 3.874 m hızla gider; γ − 1 ≈ v² ÷ (2c²) ≈ 8,35 × 10⁻¹¹ ve günde 86.400 saniyeyle yaklaşık 7,2 mikrosaniye eder. GPS uzaklıkları ışığın yol alma süresinden hesapladığı ve ışık bir mikrosaniyede yaklaşık 300 m gittiği için bu fark düzeltilmezse konumlar her gün kilometrelerce kayardı."
+      "cevap": "Uydu saniyede yaklaşık 3.874 m hızla gider; γ − 1 ≈ v² ÷ (2c²) ≈ 8,35 × 10⁻¹¹ ve günde 86.400 saniyeyle yaklaşık 7,2 mikrosaniye eder. GPS uzaklıkları ışığın yol alma süresinden hesapladığı ve ışık bir mikrosaniyede yaklaşık 300 m gittiği için bu fark düzeltilmezse konumlar her gün kilometrelerce kayardı.",
+      "kid": "d25s10"
     },
     {
       "soru": "“Einstein Newton'un yanlış olduğunu kanıtladı” demek doğru mu?",
-      "cevap": "Tam değil. Newton mekaniği, görelilikte γ'nın 1'e çok yakın olduğu yavaş hızların sınır hâlidir. Gündelik hızlarda fark ölçülemeyecek kadar küçük olduğu için mühendisler hâlâ Newton'u kullanır; görelilik ancak ışık hızına yaklaşan hızlarda ya da çok hassas ölçümlerde gereklidir."
+      "cevap": "Tam değil. Newton mekaniği, görelilikte γ'nın 1'e çok yakın olduğu yavaş hızların sınır hâlidir. Gündelik hızlarda fark ölçülemeyecek kadar küçük olduğu için mühendisler hâlâ Newton'u kullanır; görelilik ancak ışık hızına yaklaşan hızlarda ya da çok hassas ölçümlerde gereklidir.",
+      "kid": "d25s11"
     }
   ],
   "kaynaklar": [
