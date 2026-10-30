@@ -1,0 +1,58 @@
+[
+  {
+    "id": "d30-1",
+    "soru": "Boltzmann'ın mezar taşındaki S = k log W formülünde W neyi gösterir?",
+    "secenekler": [
+      "Sistemin toplam enerjisini joule cinsinden",
+      "Aynı genel durumla (makrodurumla) uyumlu ayrıntılı durumların (mikrodurumların) sayısını",
+      "Sistemin yaptığı işi",
+      "Sistemin sıcaklığını kelvin cinsinden"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre W, belli bir makrodurumun kaç farklı mikrodurumla gerçekleşebileceğidir. Sistem kendini neredeyse kesinlikle en çok mikrodurumu olan makrodurumda bulduğu için entropi artar. Örneğin 100 parada “tam 50 yazı” yaklaşık 1,01 × 10²⁹ sıralamayla, “hepsi yazı” yalnızca 1 sıralamayla olur.",
+    "ders": "d30",
+    "bolum": 7
+  },
+  {
+    "id": "d30-2",
+    "soru": "Bir türbine 550 °C'lik buhar giriyor, soğutma suyu 25 °C. Carnot'ya göre en yüksek verim yaklaşık kaçtır?",
+    "secenekler": [
+      "Yaklaşık %95, çünkü 25 ÷ 550 ≈ 0,05",
+      "Yaklaşık %64, çünkü 1 − 298 ÷ 823 ≈ 0,64",
+      "%100, iyi yapılmış bir türbin bütün ısıyı işe çevirebilir",
+      "Yaklaşık %36, çünkü 298 ÷ 823 ≈ 0,36"
+    ],
+    "dogru": 1,
+    "aciklama": "Carnot verimi 1 − T_soğuk ÷ T_sıcak'tır ve sıcaklıklar kelvinle yazılmalıdır: 823 K ve 298 K. 1 − 0,362 ≈ 0,638, yani en fazla yaklaşık %64. 0,36 ise soğuk tarafa atılması zorunlu en küçük paydır. Celsius ile hesaplamak yanlış sonuç verir.",
+    "ders": "d30",
+    "bolum": 5
+  },
+  {
+    "id": "d30-3",
+    "soru": "Dünya Güneş'ten aldığı kadar enerjiyi uzaya geri verdiği hâlde canlıları besleyen nedir?",
+    "secenekler": [
+      "Dünya enerjinin bir kısmını sürekli biriktirir ve giderek ısınır",
+      "Güneş ışığı Dünya'ya kütle taşır",
+      "Az sayıda yüksek enerjili Güneş fotonu girip kabaca 20 kat fazla düşük enerjili kızılötesi foton çıkar; bu düşük entropi akışı kullanılır",
+      "Canlılar ikinci yasanın istisnasıdır ve entropiyi kendiliğinden azaltır"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre giren ışık 5772 K'lik bir yüzeyden, çıkan ışık yaklaşık 254 K'lik bir gezegenden gelir. Foton enerjisi sıcaklıkla orantılı olduğundan çıkan fotonlar foton başına yaklaşık 20 kat düşük enerjili ve sayıca o kadar çoktur. Aynı enerjinin çok daha fazla biçimde dağılması entropi artışıdır; canlılar açık sistemlerdir ve ikinci yasayı çiğnemez.",
+    "ders": "d30",
+    "bolum": 12
+  },
+  {
+    "id": "d30-4",
+    "soru": "Bir yıldız ışık yayarak enerji kaybettiğinde ne olur?",
+    "secenekler": [
+      "Soğur ve genişler, tıpkı ocaktan inen bir tencere gibi",
+      "Büzülür ve ısınır, çünkü kütleçekimiyle bir arada duran sistemlerin ısı sığası negatiftir",
+      "Hiçbir şey değişmez, çünkü enerji korunur",
+      "Hemen kara deliğe dönüşür"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre enerji kaybeden yıldızın basıncı düşer, kütleçekimi onu sıkıştırır ve sıkışan gaz kütleçekim enerjisinin bir kısmını hareket enerjisine çevirerek ısınır. Lynden-Bell'in yazdığı gibi enerji verilen yıldız ise genişler ve soğur. Yıldızın kendini düzelten dengesi bu ilkeye dayanır.",
+    "ders": "d30",
+    "bolum": 11
+  }
+]

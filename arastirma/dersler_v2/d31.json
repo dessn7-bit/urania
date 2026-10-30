@@ -1,0 +1,548 @@
+{
+  "id": "d31",
+  "unite": "fizik",
+  "yeni": true,
+  "baslik": "Atom çekirdeği: füzyon, fisyon ve radyoaktif saatler",
+  "ozet": "Atomun neredeyse bütün kütlesi, onun on binlerce kat küçük çekirdeğinde toplanır. Bu derste çekirdeği neyin bir arada tuttuğunu, neden hafif çekirdekleri birleştirmenin de ağır çekirdekleri bölmenin de enerji verdiğini, Güneş'ten ITER'e ve Akkuyu'ya füzyon ve fisyonun bugünkü durumunu, kararsız çekirdeklerin bozunmasının karbon-14 ve uranyum-kurşun saatlerine nasıl dönüştüğünü ve radyasyon dozunun muz, uçak yolculuğu ve tomografiyle nasıl karşılaştırıldığını öğreneceksin.",
+  "on_bilgi": [
+    "d4",
+    "d6",
+    "d25",
+    "d28"
+  ],
+  "bolumler": [
+    {
+      "baslik": "Atomun kalbi: küçücük ama ağır",
+      "paragraflar": [
+        "Önündeki bardak, elindeki telefon, senin vücudun: hepsi atomlardan yapılmış. d28'de atomun elektron bulutunu gördün. Şimdi o bulutun tam ortasına, atom çekirdeği denen küçücük öze bakacağız. Atom çekirdeği, atomun ortasındaki, artı yüklü ve atomun kütlesinin neredeyse tamamını taşıyan çok küçük bölgedir. Bu derste üç soruya cevap arayacağız: Çekirdeği ne bir arada tutar? Neden bazı çekirdekleri birleştirmek, bazılarını da bölmek enerji verir? Neden bazı çekirdekler kendiliğinden dağılır ve bu dağılma nasıl bir saat gibi kullanılır? Güneş'in ışığı, Akkuyu'daki santral, bir kemiğin yaşı ve Dünya'nın yaşı aynı fiziğe dayanır.",
+        "Çekirdeğin varlığı yüz yıldan biraz önce anlaşıldı. 1909'da Manchester'da ince bir altın yaprakla yapılan Geiger–Marsden deneyinin sonuçlarını Ernest Rutherford 1911'de açıkladı: atomun artı yükü ve kütlesi ortada çok küçük bir bölgede toplanmış olmalıydı. Sözcüğün kendisi daha eskidir; Michael Faraday 1844'te atomun merkez noktası için çekirdek anlamına gelen nucleus sözcüğünü kullanmıştı, bugünkü anlamını ise 1912'de Rutherford önerdi.",
+        "Peki ne kadar küçük? Çekirdekleri ölçmek için femtometre kullanılır; bir femtometre, metrenin katrilyonda biridir (10⁻¹⁵ m). Wikipedia'ya göre çekirdeğin çapı hidrojende yaklaşık 1,70 femtometre, uranyumda yaklaşık 11,7 femtometredir. Bütün atom ise bundan çok büyüktür: atomun çapı, çekirdeğinkinin hidrojende yaklaşık 60.000, uranyumda yaklaşık 27.000 katıdır. Buna rağmen atomun kütlesinin neredeyse tamamı çekirdektedir. Yani madde dediğimiz şey, büyük ölçüde boşluk içinde dolaşan hafif elektronlar ve ortada duran çok yoğun, çok küçük çekirdeklerden oluşur.",
+        "Bu bölümün aklında kalması gereken fikir şu: çekirdek fiziğindeki enerjiler, kimyadaki enerjilerden çok büyüktür, çünkü parçacıklar birbirine akıl almaz derecede yakındır. Bir mumun yanması elektron bulutlarının yeniden düzenlenmesidir; bir yıldızın yanması ise çekirdeklerin yeniden düzenlenmesidir. Aradaki ölçek farkını ders boyunca sayılarla göreceksin."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Çekirdek bir misket olsaydı atom ne büyüklükte olurdu?",
+        "metin": "Çekirdeği 1 cm çaplı bir misket kadar büyüttüğümüzü düşün. 1. adım: Hidrojende atomun çapı çekirdeğinkinin yaklaşık 60.000 katı. Atomun çapı = 60.000 × 1 cm = 60.000 cm = 600 m. 2. adım: Uranyumda oran yaklaşık 27.000. Atomun çapı = 27.000 × 1 cm = 270 m. 3. adım: Yorum: Misket bir futbol sahasının ortasında dursa, hidrojen atomunun dış sınırı sahanın çok dışında, birkaç sokak ötede kalırdı. Sonuç: misket büyüklüğünde bir çekirdeğin atomu, hidrojende yaklaşık 600 m, uranyumda yaklaşık 270 m çapında olurdu."
+      },
+      "akilda": "Atom çekirdeği, atomun on binlerce kat küçük ama neredeyse bütün kütlesini taşıyan özüdür. Rutherford 1911'de keşfetti; çapı 1,7 ile 11,7 femtometre arasındadır."
+    },
+    {
+      "baslik": "Proton ve nötron: çekirdeğin tuğlaları",
+      "paragraflar": [
+        "Çekirdek iki tür parçacıktan yapılır: artı elektrik yükü taşıyan proton ve yüksüz nötron. İkisine birden nükleon denir; nükleon, çekirdeğin yapı taşı olan proton ya da nötron demektir. Nötron diğerlerinden geç bulundu: James Chadwick onu 1932'de keşfetti. Yüksüz olduğu için elektrikle itilip çekilmez; bu yüzden hem fark edilmesi zordu hem de, ileride göreceğin gibi, çekirdeklere kolayca girebilir.",
+        "Bir atomun hangi element olduğunu protonlarının sayısı belirler. Bunu en güzel gösteren tepkimelerden biri havada her gün olur: kozmik ışınların ürettiği bir nötron bir azot-14 çekirdeğine çarpar, çekirdekten bir proton fırlar ve geriye karbon-14 kalır. Proton sayısı bir azaldığı için azot karbona dönüşmüştür. Çekirdekteki toplam nükleon sayısı ise değişmemiştir; tirenin ardındaki 14 sayısı tam olarak budur, yani proton ile nötronların toplamı. Buna kütle numarası denir.",
+        "Aynı elementin farklı sayıda nötron taşıyan türlerine izotop denir. Karbonun çoğu karbon-12'dir; Wikipedia'ya göre karbon atomlarının yaklaşık %1'i karbon-13'tür ve havada her 10¹² karbon-12 atomuna yaklaşık 1,25 karbon-14 atomu düşer. Uranyumda da durum benzer: doğal uranyumun yaklaşık %0,72'si uranyum-235, yaklaşık %99,28'i uranyum-238'dir. İzotoplar kimyasal olarak hemen hemen aynı davranır, çünkü kimyayı elektronlar belirler. Çekirdek fiziğinde ise çok farklı olabilirler: biri kararlıdır, öbürü bozunur; biri santralde yakıt olur, öbürü olmaz.",
+        "Kütlelerden de söz edelim. Fizikçiler parçacık kütlelerini çoğu zaman enerji birimiyle verir, çünkü d25'te gördüğün E = mc² kütleyle enerjiyi birbirine çevirir. Bir elektronvolt, bir elektronun bir voltluk gerilimde kazandığı enerjidir; MeV ise bunun bir milyon katıdır. Bu birimle protonun kütlesi yaklaşık 938 MeV'dir. Bir de şu ayrıntı önemli: serbest bir nötron kararsızdır ve d8'de gördüğün gibi ortalama on beş dakika kadar yaşar; oysa bir çekirdeğin içinde yıllarca, hatta sonsuza dek bozunmadan kalabilir. Bu farkın nedenini bağlanma enerjisi konusunda göreceksin."
+      ],
+      "akilda": "Çekirdek proton ve nötronlardan (nükleonlardan) oluşur. Proton sayısı elementi, toplam nükleon sayısı kütle numarasını belirler; aynı elementin farklı nötron sayılı türleri izotoptur."
+    },
+    {
+      "baslik": "Nükleer kuvvet: protonları bir arada tutan yapıştırıcı",
+      "paragraflar": [
+        "Burada büyük bir bilmece var. Protonların hepsi artı yüklüdür ve aynı yükler birbirini iter. Üstelik çekirdekte birbirlerine bir femtometre kadar yakındırlar; elektriksel itme uzaklık azaldıkça hızla büyüdüğü için bu yakınlıkta itme çok şiddetlidir. Yine de çekirdekler dağılmaz. Demek ki protonları ve nötronları birbirine bağlayan, elektrikten daha güçlü bir çekim vardır. Buna nükleer kuvvet denir: nükleonları kısa mesafede birbirine bağlayan, kuarklar arasındaki güçlü kuvvetin dışarı sızan bir artığı olan çekim.",
+        "Nükleer kuvvetin en ilginç yanı menzilidir. Wikipedia'ya göre iki nükleon arasında yaklaşık 0,8 femtometrede güçlü bir çekim vardır; yaklaşık 0,7 femtometreden daha yakında kuvvet itmeye döner, bu yüzden nükleonlar birbirinin içine geçmez. Uzaklık 2 ile 2,5 femtometreyi aştığında ise kuvvet neredeyse yok olur. Aynı kaynağa göre yaklaşık 1,7 femtometreden yakında nükleer çekim elektriksel itmeden güçlüdür; 2 ile 2,5 femtometrenin ötesinde ise elektriksel itme baskın çıkar.",
+        "Bir benzetme: nükleer kuvvet cırt cırt bant gibidir, mıknatıslar ise elektrik kuvveti gibi. Cırt cırt yalnız değince tutar ama çok sıkı tutar; mıknatıs uzaktan da iter ama daha zayıf. Benzetmenin sınırı şu: nükleonlarda kanca falan yoktur; çekim, d32'de göreceğin gluonların taşıdığı güçlü kuvvetin, renksiz görünen nükleonların dışına sızan zayıf bir izidir. Bu “artık güçlü kuvvet” adı 1970'lerde yerleşti.",
+        "Kısa menzilin önemli bir sonucu var. Büyük bir çekirdekte her nükleon yalnız yakın komşularını çeker; ama her proton, çekirdeğin öbür ucundaki protonları da elektrikle iter, çünkü elektrik kuvvetinin menzili uzundur. Çekirdek büyüdükçe itme birikir, çekim ise birikmez. Bu yüzden çok ağır çekirdekler daha gevşek bağlıdır ve en ağırları kendiliğinden dağılmaya ya da bölünmeye yatkındır. Tarihî bir not: Hideki Yukawa 1934'te bu kuvveti kütleli bir ara parçacığın taşıdığını önerdi; beklenen parçacık, pion, 1947'de kozmik ışın izlerinde bulundu."
+      ],
+      "akilda": "Nükleer kuvvet yaklaşık 1 femtometrede elektriksel itmeyi yenecek kadar güçlüdür ama 2–2,5 femtometrenin ötesinde neredeyse sıfırdır. Bu kısa menzil, ağır çekirdeklerin neden kararsızlaştığını açıklar."
+    },
+    {
+      "baslik": "Bağlanma enerjisi: eksik kütlenin sırrı",
+      "paragraflar": [
+        "Şöyle bir deney düşün. Bir helyum-4 çekirdeğini, yani iki proton ve iki nötronu, son derece hassas bir terazide tartıyorsun. Sonra aynı dört parçacığı tek tek tartıp topluyorsun. Sonuçlar aynı çıkmaz: bütün çekirdek, parçalarının toplamından hafiftir. HyperPhysics'in hesabına göre aradaki fark 0,0304 atomik kütle birimidir. Atomik kütle birimi atom ölçeğinde kullanılan kütle birimidir; bir proton ya da nötron kabaca bir birim tutar. Bu farka kütle eksiği denir.",
+        "Eksik kütle nereye gitti? Cevap d25'teki E = mc² bağıntısında. Dört nükleon birleşip helyum çekirdeğini oluştururken enerji dışarı salınır; sistem enerji kaybettiği için kütlesi de azalır. HyperPhysics'e göre 0,0304 birimlik eksik 28,3 MeV'e karşılık gelir. Bu enerjiye bağlanma enerjisi denir: çekirdeği tekrar ayrı nükleonlarına ayırmak için verilmesi gereken enerji. Bağlanma ne kadar güçlüyse kütle eksiği de o kadar büyüktür.",
+        "Burada sık yapılan bir yanlışı düzeltelim. “Füzyonda kütle enerjiye dönüşür” denir; bu kaba bir özettir. Tepkimeden önce ve sonra proton ile nötronların sayısı aynıdır, hiçbir parçacık yok olmaz. Değişen, parçacıkların birbirine ne kadar sıkı bağlı olduğudur. Sıkı bağlı bir sistemin enerjisi daha düşüktür ve E = mc² bize bu düşük enerjinin teraziye daha hafif bir kütle olarak yansıdığını söyler. Aynı ilke kimyada da geçerlidir, ama orada fark ölçülemeyecek kadar küçüktür.",
+        "Her çekirdek helyum kadar sıkı bağlı değildir. En basit bileşik çekirdek olan döteryum, yani bir proton ile bir nötron, d8'de gördüğün gibi çok gevşek bağlıdır ve kolayca parçalanır. Evrenin ilk dakikalarında çekirdek yapımı bu yüzden bir süre döteryumda tıkandı: oluşan döteryum, sıcak ortamdaki ışınımla hemen yeniden dağılıyordu. Helyum-4 ise olağanüstü sıkı bağlıdır; bu yüzden yıldızlarda da, Büyük Patlama'da da hafif çekirdeklerin varmak istediği güvenli liman odur. Alfa bozunumunda ağır çekirdeklerin tam olarak helyum-4 çekirdeği saçmasının ardında da bu sıkı bağ yatar.",
+        "Çekirdekleri karşılaştırmak için toplam bağlanma enerjisini nükleon sayısına böleriz: nükleon başına bağlanma enerjisi. Bu sayı, bir çekirdekteki ortalama nükleonun ne kadar sıkı tutulduğunu gösterir. Helyum-4 için 28,3 ÷ 4 ≈ 7,1 MeV; demir-56 için HyperPhysics'e göre yaklaşık 8,8 MeV. Bir sonraki bölümde bu sayının elementler boyunca nasıl değiştiğini ve neden bütün yıldız fiziğinin anahtarı olduğunu göreceğiz."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Helyum-4'ün kütle eksiği ne kadar büyük?",
+        "metin": "Veriler: kütle eksiği 0,0304 atomik kütle birimi, karşılık gelen enerji 28,3 MeV (HyperPhysics), bir nükleonun kütle enerjisi kabaca 938 MeV. 1. adım: Bir birimin enerji karşılığı: 28,3 ÷ 0,0304 ≈ 931 MeV. Bir nükleonun yaklaşık 938 MeV olmasıyla uyumlu. 2. adım: Nükleon başına bağlanma enerjisi: 28,3 ÷ 4 ≈ 7,1 MeV. 3. adım: Eksik kütlenin oranı: dört nükleonun kütle enerjisi ≈ 4 × 938 = 3.752 MeV. Oran ≈ 28,3 ÷ 3.752 ≈ 0,0075. Sonuç: helyum-4 çekirdeği parçalarının toplamından yaklaşık %0,75 hafiftir. d4'te Güneş'in kaynaşan kütlenin yaklaşık %0,7'sini enerjiye çevirdiğini görmüştün; sayıların birbirine yakın olması tesadüf değil."
+      },
+      "akilda": "Çekirdek parçalarının toplamından hafiftir; bu kütle eksiği E = mc² ile bağlanma enerjisine karşılık gelir. Helyum-4'te 28,3 MeV, yani nükleon başına yaklaşık 7,1 MeV."
+    },
+    {
+      "baslik": "Demir tepesi: neden iki yoldan da enerji çıkar?",
+      "paragraflar": [
+        "Nükleon başına bağlanma enerjisini bütün çekirdekler için bir grafiğe dökersen tuhaf bir tepe çıkar. HyperPhysics'e göre eğri hafif çekirdeklerde hızla yükselir, demir çevresinde en yüksek noktasına ulaşır ve daha ağır çekirdeklere doğru yavaşça iner. Wikipedia'nın nikel-62 sayfası tepeyi tam olarak verir: nükleon başına en yüksek bağlanma enerjisi nikel-62'nin, 8,7945 MeV; onu 8,7922 MeV ile demir-58 ve 8,7903 MeV ile demir-56 izler. Ders kitaplarında demir-56'nın “en kararlı çekirdek” diye anılması, onun nükleon başına en düşük kütleye sahip olmasından gelir. Fark çok küçüktür; biz bu bölgeye kısaca demir tepesi diyeceğiz.",
+        "Demir tepesi, nükleer enerjinin iki yolunu tek bir resimde açıklar. Tepeye doğru giden her değişim nükleonları daha sıkı bağlar ve aradaki fark enerji olarak açığa çıkar. Hafif tarafta bu, küçük çekirdekleri birleştirmek demektir: füzyon. Ağır tarafta ise büyük bir çekirdeği iki orta boy parçaya bölmek demektir: fisyon. İkisi zıt görünür ama aynı yöne, tepeye doğru gider.",
+        "Bir benzetme: iki yanı yokuş olan bir vadi düşün. Soldan da sağdan da bırakılan top dibe yuvarlanır ve yolda enerji kazanır. Burada vadinin dibi demir tepesidir; grafikte tepe olarak çizilir, çünkü bağlanma enerjisi ne kadar yüksekse sistemin enerjisi o kadar düşüktür. Benzetmenin önemli bir sınırı var: gerçek çekirdekler kendiliğinden yuvarlanmaz. Füzyon için önce protonların elektriksel itmesini aşacak bir zorlama, fisyon için de çoğu zaman çekirdeğe çarpan bir nötron gerekir.",
+        "Yıldızlar bu tepeyi iyi bilir. d6'da kütleli bir yıldızın çekirdeğinin helyumdan silisyuma kadar elementleri sırayla kaynaştırdığını, demire varınca ise yakıtın tükendiğini gördün. Bunun nedeni şimdi açık: tepeden sonra füzyon enerji vermez, tersine enerji yutar. Nikel-62 sayfasına göre süpernovada silisyum yanmasının doğal son ürünü aslında nikel-56'dır; demir-56 sonradan, nikel-56'nın bozunmasıyla oluşur. Bu bozunmanın bir yıldız patlamasının ışığını nasıl beslediğini yarılanma ömrü bölümünde göreceksin."
+      ],
+      "akilda": "Nükleon başına bağlanma enerjisi demir ve nikel çevresinde en yüksektir (nikel-62: 8,79 MeV). Hafif çekirdekleri birleştirmek ve ağır çekirdekleri bölmek, ikisi de bu tepeye yaklaştırdığı için enerji verir."
+    },
+    {
+      "baslik": "Füzyon: hafif çekirdekleri birleştirmek",
+      "paragraflar": [
+        "Füzyonun doğadaki büyük örneği her gün başının üstünde: Güneş. d4'te Güneş'in çekirdeğinde dört protonun bir dizi adımla helyum-4'e dönüştüğünü, her helyum çekirdeği için 26,73 MeV açığa çıktığını ve protonların birbirini iten elektrik engelini kuantum tünellemesiyle aştığını gördün. Bunları tekrar etmeyeceğiz. Burada şunu vurgulayalım: Güneş bu işi çok yavaş yapar. d4'teki sayıya göre çekirdekteki ortalama bir proton, kaynaşmak için yaklaşık 9 milyar yıl bekler. Güneş'i yakan şey hızı değil, devasa kütlesi ve kütleçekiminin bu yakıtı sıkıştırıp tutmasıdır.",
+        "Yeryüzünde 9 milyar yıl bekleyemeyiz. Bu yüzden füzyon araştırmaları en kolay tepkimeye yönelir: döteryum ile trityumun kaynaşması. Döteryum bir proton ve bir nötronlu, trityum ise bir proton ve iki nötronlu hidrojendir; trityum, hidrojenin radyoaktif ağır türüdür. İkisi kaynaşınca bir helyum-4 çekirdeği ve bir serbest nötron çıkar. Wikipedia'ya göre bu tepkime toplam 17,6 MeV verir ve enerjinin yaklaşık %80'ini, 14,1 MeV'i, nötron taşır; geriye kalan yaklaşık 3,5 MeV helyumdadır.",
+        "Bu tepkimenin en düşük çalışma sıcaklığı, aynı kaynağa göre yaklaşık 10⁸ kelvindir, yani yüz milyon derece mertebesi. Bu sıcaklıkta madde plazma hâlindedir: elektronlar atomlardan sökülmüş, çekirdekler ve elektronlar ayrı ayrı dolaşan, elektriği ileten sıcak bir gaz. Trityum doğada hazır bulunmaz; Wikipedia'ya göre lityumu enerjik nötronlarla karşılaştırarak üretilir. Bu yüzden tasarlanan reaktörlerin duvarlarını lityumlu bir üretim örtüsü kaplar ve füzyondan çıkan nötronlar orada yeni trityum yapar.",
+        "Nötronun enerjinin çoğunu taşıması bir mühendislik sorusudur. Plazma elektrik yüklü olduğu için mıknatıslarla tutulabilir; nötron ise yüksüzdür ve mıknatısı umursamadan duvara çarpar. Bu hem iyi hem kötüdür: enerji duvarda ısı olarak toplanır ve trityum üretimine yarar, ama sürekli nötron bombardımanı duvar malzemesini yıpratır. Füzyonun zorluğu yalnız ateşi yakmak değil, ateşin çevresindeki kabı da ayakta tutmaktır."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Bir kilogram yakıttan füzyon mu, fisyon mu daha çok enerji verir?",
+        "metin": "Veriler: döteryum-trityum füzyonu 17,6 MeV verir ve 5 nükleon içerir. Uranyum-235 fisyonu 202,5 MeV verir; uranyum-235'in tam bölünmesi kilogram başına 83,14 terajul eder (Wikipedia). 1. adım: Füzyonda nükleon başına enerji: 17,6 ÷ 5 = 3,52 MeV. 2. adım: Fisyonda nükleon başına enerji: 202,5 ÷ 235 ≈ 0,86 MeV. 3. adım: Oran: 3,52 ÷ 0,86 ≈ 4,1. Kütle kabaca nükleon sayısıyla orantılı olduğu için kilogram başına enerji de yaklaşık 4 kat. 4. adım: Füzyon yakıtı için ≈ 4,1 × 83 ≈ 340 terajul/kg. 5. adım: Kütle eksiği oranı: 17,6 ÷ (5 × 931) ≈ %0,38. Sonuç: aynı kütlede döteryum-trityum yakıtı, uranyum-235'ten yaklaşık 4 kat fazla, kilogram başına yaklaşık 340 terajul enerji verir."
+      },
+      "akilda": "Güneş protonları çok yavaş kaynaştırır; yeryüzünde en kolay yol döteryum ile trityumun füzyonudur: 17,6 MeV, bunun 14,1 MeV'i nötronda, en düşük sıcaklık yaklaşık 10⁸ kelvin."
+    },
+    {
+      "baslik": "Yeryüzünde küçük bir yıldız: ITER ve NIF",
+      "paragraflar": [
+        "Yüz milyon derecelik plazmayı nasıl tutarsın? Hiçbir duvar buna dayanmaz. İki ana yol var. Birincisi, plazmayı güçlü mıknatıslarla duvarlara değdirmeden bir kafeste tutmak. Fransa'da yapımı süren uluslararası ITER deneyi bu yolu izliyor. İkincisi, küçücük bir yakıt kapsülünü lazerlerle her yönden öyle hızlı ezmek ki, kapsül dağılmaya fırsat bulmadan çekirdekleri kaynaşsın. ABD'deki Lawrence Livermore Ulusal Laboratuvarı'nın NIF tesisi bu yolu izliyor.",
+        "Füzyon deneylerinin başarısı çoğu zaman Q ile ölçülür: üretilen füzyon gücünün, plazmayı ısıtmak için verilen güce oranı. Q = 1, verilenin geri alındığı başabaş noktasıdır. ITER'in açıkladığı hedef Q ≥ 10: 50 megavatlık ısıtmayla 500 megavat füzyon ısısı, 400 saniyelik atımlar boyunca. ITER'in 3 Temmuz 2024 tarihli resmî basın özetine göre yeni temel planda araştırma işletmesinin başlangıcı 2034, döteryum-döteryum işletmesi 2035, tam manyetik enerji 2036, döteryum-trityum işletmesi ise 2039'dur. 2016 planındaki 2025 “ilk plazma” hedefi bırakıldı ve döteryum-trityum aşaması yaklaşık dört yıl kaydı. ITER gecikmeleri COVID-19'a, ilk kez yapılan bileşenlerin zorluğuna, bazı ana parçalardaki kalite sorunlarına ve fazla iyimser takvimlere bağlıyor. 30 Ekim 2026'da erişebildiğim en güncel resmî takvim budur.",
+        "NIF'te 192 lazer ışını, santimetre boyunda içi boş bir silindire, onun içindeki karabiber tanesi büyüklüğünde bir yakıt kapsülüne odaklanır. LLNL'nin sayfasına göre 5 Aralık 2022'de hedefe 2,05 megajul lazer enerjisi verildi ve 3,15 megajul füzyon enerjisi alındı; bu, laboratuvarda ilk kez hedefe verilenden fazla füzyon enerjisi elde edilmesiydi ve ateşleme diye anılır. Ateşleme, füzyon tepkimelerinin kendi ısısıyla sürmeye başladığı ve verilen enerjiden fazlasını ürettiği noktadır. Rekor 7 Nisan 2025'te geldi: 2,08 megajulden 8,6 megajul. 20 Haziran 2026'daki on birinci ateşlemede verim yaklaşık 7,9 megajul oldu.",
+        "Bu sonuçları doğru okumak gerekir. NIF'in kazancı bir “hedef kazancıdır”, yani hedefe ulaşan lazer enerjisiyle karşılaştırılır. Bir santral için tesisin bütün harcamasını, lazerleri ya da mıknatısları besleyen elektriği de karşılamak gerekir; LLNL'nin sayfası bu toplam hesabı vermiyor. Elektrik üreten ticari bir füzyon santrali henüz yok. Dürüst özet şu: fizik ilkesi kanıtlandı, mühendislik yolu ise uzun ve takvimleri sık sık kaydı."
+      ],
+      "ornek": {
+        "baslik": "Örnek: NIF ile ITER'in hedef oranlarını karşılaştırmak",
+        "metin": "1. adım: NIF, 5 Aralık 2022: 3,15 ÷ 2,05 ≈ 1,5. Verilen lazer enerjisinin bir buçuk katı füzyon enerjisi. 2. adım: NIF, 7 Nisan 2025: 8,6 ÷ 2,08 ≈ 4,1 (LLNL'nin verdiği hedef kazancı 4,13). 3. adım: ITER hedefi: 500 MW ÷ 50 MW = 10. 4. adım: Fark: NIF bir anlık patlamada enerji ölçer (megajul), ITER ise saniyelerce süren güç hedefler (megavat). 400 saniyelik bir atımda 500 megavat, 500 × 400 = 200.000 megajul füzyon enerjisi demektir. Sonuç: NIF'in rekor oranı yaklaşık 4, ITER'in hedefi 10; ama ITER'in hedefi tek atımda NIF'in rekor veriminin yaklaşık 23.000 katı enerjiye karşılık gelir."
+      },
+      "akilda": "ITER'in resmî takvimi (Temmuz 2024): araştırma işletmesi 2034, döteryum-trityum 2039, hedef Q ≥ 10. NIF 5 Aralık 2022'de ateşlemeye ulaştı, rekor 8,6 megajul (2025); ama elektrik üreten füzyon santrali henüz yok."
+    },
+    {
+      "baslik": "Fisyon: bölünen uranyum",
+      "paragraflar": [
+        "Demir tepesinin öbür yanına geçelim. Aralık 1938'de Otto Hahn ve Fritz Strassmann, nötronla bombardıman edilen uranyumda beklenmedik biçimde çok daha hafif elementler buldu. Ocak 1939'da Lise Meitner ve Otto Robert Frisch bunun kuramsal açıklamasını yaptı: uranyum çekirdeği ikiye bölünüyordu. Bu olaya fisyon denir: ağır bir çekirdeğin iki orta boy çekirdeğe ve birkaç nötrona ayrılması. Uranyum-235'i ise 1935'te Arthur Jeffrey Dempster keşfetmişti.",
+        "Bir uranyum-235 çekirdeğinin bölünmesi Wikipedia'ya göre reaktörün içinde 202,5 MeV ısı bırakır. Bunun büyük kısmı, 169,1 MeV, iki parçanın birbirinden uzaklaşma hareketidir; parçalar elektrikle birbirini iterek ayrılır, çevredeki maddeye çarpıp yavaşlar ve hareketleri ısıya dönüşür. Gerisi anında çıkan gama ışınları, parçaların sonraki beta bozunumları, nötronların hareketi ve yakalanan nötronlardan gelir. Ayrıca yaklaşık 8,8 MeV, reaktörden hiç etkileşmeden kaçan karşıt nötrinolarla gider. d32'de göreceğin gibi, nötrino ilk kez tam da böyle bir reaktörün yanında yakalandı.",
+        "Asıl kritik ayrıntı, bölünmeden çıkan nötronlardır. Wikipedia'ya göre her fisyon genellikle 2,5 ile 3 arası nötron salar. Bu nötronlardan biri başka bir uranyum-235'i bölerse süreç kendini sürdürür: buna zincirleme tepkime denir. Fikri Leó Szilárd 12 Eylül 1933'te, fisyon bulunmadan önce ortaya atmıştı. İlk kendi kendini sürdüren zincirleme tepkimeyi Enrico Fermi'nin ekibi 2 Aralık 1942'de Chicago Pile-1 ile gerçekleştirdi. Her fisyonun ortalama tam olarak bir yeni fisyon doğurduğu duruma kritik denir; reaktörler bu dengede çalışır.",
+        "Bir reaktör nasıl denetlenir? Nötronların çoğu fisyondan hemen çıkar ve ısıl reaktörlerde bir sonraki fisyona yaklaşık 10⁻⁴ saniye içinde ulaşır; yalnız bunlar olsaydı güç, insanın ya da makinenin tepki veremeyeceği hızla değişirdi. Ama nötronların yüzde birinden azı, parçaların bozunmasıyla gecikerek çıkar. Wikipedia'ya göre bütün güç reaktörleri kritikliği bu gecikmeli nötronlara dayandırır; böylece güç değişimleri denetlenebilir yavaşlıkta olur.",
+        "Bir ayrıntı daha, çünkü günlük haberlerde sık geçer. Fisyonun bıraktığı 202,5 MeV'in bir kısmı, yaklaşık 6,5 MeV beta parçacıkları ve 6,3 MeV gecikmeli gama ışınları, anında değil, bölünme parçalarının sonradan geçirdiği radyoaktif bozunmalardan gelir. Parçalar uranyumdan çok daha hafif ama kararsız çekirdeklerdir ve zincirleme tepkime durdurulsa bile bozunmayı sürdürür. Bu yüzden kapatılmış bir reaktörün yakıtı bir süre ısı üretmeye devam eder ve soğutulması gerekir; kullanılmış yakıt da bu parçalar yüzünden radyoaktiftir. Fisyonun fiziği ile nükleer güvenliğin mühendisliği burada birbirine bağlanır."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Fisyonda kütlenin ne kadarı enerji olarak çıkar?",
+        "metin": "Veriler: bir fisyon 202,5 MeV ısı verir. Bölünen sistem uranyum-235 ile ona çarpan nötrondur, toplam 236 nükleon; bir nükleonun kütle enerjisi yaklaşık 931 MeV. 1. adım: Sistemin kütle enerjisi ≈ 236 × 931 ≈ 219.700 MeV. 2. adım: Oran ≈ 202,5 ÷ 219.700 ≈ 0,00092, yani yaklaşık %0,09. 3. adım: Karşılaştır: döteryum-trityum füzyonunda yaklaşık %0,38 (önceki örnek), Güneş'te yaklaşık %0,7 (d4). Sonuç: fisyon kütlenin yaklaşık binde birini, döteryum-trityum füzyonu ise yaklaşık binde dördünü enerjiye çevirir; kilogram başına füzyonun yaklaşık 4 kat fazla enerji vermesinin nedeni de budur."
+      },
+      "akilda": "Uranyum-235 bölünürken 202,5 MeV ısı ve 2,5–3 nötron verir; nötronlar yeni fisyonlar başlatırsa zincirleme tepkime olur (Chicago Pile-1, 1942). Reaktörü denetlenebilir kılan, yüzde birden az olan gecikmeli nötronlardır."
+    },
+    {
+      "baslik": "Nükleer santral ve Akkuyu",
+      "paragraflar": [
+        "Doğal uranyumun yalnız yaklaşık %0,72'si bölünebilen uranyum-235'tir; geri kalanı uranyum-238'dir. Wikipedia'ya göre hafif sulu reaktörler düşük zenginleştirilmiş uranyum kullanmak zorundadır, yani uranyum-235 oranı doğal düzeyin üstüne çıkarılmış ama yüzde 20'nin altında kalmış yakıt. Santral, yakıttaki fisyonların ısısını elektriğe çevirir. Bu ısı muazzamdır: bir kilogram uranyum-235'in tamamen bölünmesi 83,14 terajul eder.",
+        "Türkiye'nin ilk nükleer santrali Akkuyu'da yapılıyor. IAEA'nın haberine göre Türkiye ile Rusya arasındaki yapım ve işletme anlaşması Mayıs 2010'da imzalandı; saha, Ankara'nın yaklaşık 500 km güneyinde Akdeniz kıyısındadır. Toplam 4.800 megavat elektrik gücünde dört VVER ünitesi planlanıyor. Dönemin düzenleyicisi TAEK inşaat lisansını 2 Nisan'da verdi ve 1. ünitenin güvenlikle ilgili ilk betonu ertesi gün döküldü; IAEA'nın PRIS veritabanına dayanan Dünya Nükleer Birliği kaydı bu tarihi 3 Nisan 2018 olarak verir. Aynı kayda göre 1. ünite bir basınçlı su reaktörüdür (VVER V-509), brüt 1.200, net 1.114 megavat elektrik gücündedir.",
+        "Bugünkü durum: IAEA'nın inşaat başlangıcı haberinde işletmenin 2026'da başlaması hedefleniyordu. 30 Ekim 2026'da erişilen PRIS kaynaklı Dünya Nükleer Birliği kaydı 1. üniteyi hâlâ “yapım aşamasında” gösteriyor ve ilk kritiklik ya da şebekeye bağlanma tarihi vermiyor. Ünitenin şebekeye bağlandığını gösteren resmî bir kayıt bulamadım; bu bilgi değişebilir, en güncel durum için IAEA PRIS'e ya da Enerji ve Tabii Kaynaklar Bakanlığı'nın duyurularına bakmak gerekir. Nükleer enerjinin atık ve güvenlik soruları önemli ama ayrı bir dersin konusu; burada yalnız fiziğini anlatıyoruz.",
+        "Doğa da bir kez reaktör kurmuş. Eylül 1972'de Gabon'daki Oklo'da, yaklaşık 2 milyar yıl önce kendiliğinden işlemiş zincirleme tepkimelerin izleri bulundu. Bu nasıl mümkün olmuş? Uranyum-235, uranyum-238'den çok daha hızlı bozunur. Geriye doğru hesaplayınca, 2 milyar yıl önce uranyum-235, doğal uranyumun yaklaşık %3,6'sıydı; bugünkü %0,72'nin beş katı kadar. Yani o dönemde doğal uranyum, bugün santrallere konan düşük zenginleştirilmiş yakıta benziyordu. Hesabın kendisini uranyum saatleri bölümünde göreceksin."
+      ],
+      "ornek": {
+        "baslik": "Örnek: 1.000 megavatlık ısı için günde ne kadar uranyum bölünür?",
+        "metin": "Varsayım: bir reaktörün çekirdeği 1.000 megavat ısı üretiyor (elektrik gücü bundan azdır). Veriler: bir fisyon 202,5 MeV = 3,24 × 10⁻¹¹ jul; tam bölünen uranyum-235 kilogram başına 83,14 terajul (Wikipedia). 1. adım: Saniyedeki fisyon: 10⁹ jul/saniye ÷ 3,24 × 10⁻¹¹ jul ≈ 3,1 × 10¹⁹ fisyon. 2. adım: Bir günlük ısı: 10⁹ × 86.400 ≈ 8,64 × 10¹³ jul. 3. adım: Bölünen kütle: 8,64 × 10¹³ ÷ 8,314 × 10¹³ ≈ 1,04 kg. Sonuç: 1.000 megavatlık ısı için günde yaklaşık 1 kg uranyum-235 bölünür; saniyede otuz milyar kere milyar çekirdek."
+      },
+      "akilda": "Doğal uranyumun %0,72'si uranyum-235'tir; hafif sulu reaktörler düşük zenginleştirilmiş yakıt kullanır. Akkuyu'da 4 × 1.200 megavatlık VVER ünitesi yapılıyor; 1. ünitenin inşaatı 3 Nisan 2018'de başladı ve 30 Ekim 2026'daki PRIS kaynaklı kayıtta hâlâ yapım aşamasında görünüyor."
+    },
+    {
+      "baslik": "Radyoaktivite: kararsız çekirdeğin üç yolu",
+      "paragraflar": [
+        "Bazı çekirdekler bölünmeyi beklemez; kendiliğinden parçacık ya da enerji saçarak başka bir çekirdeğe dönüşür. Buna radyoaktivite denir. 1896'da Henri Becquerel uranyumun radyoaktifliğini keşfetti. 1899'da Rutherford uranyumdan çıkan iki tür ışını ayırdı ve onlara Yunan alfabesinin ilk iki harfiyle alfa ve beta adını verdi; 1900'de Paul Villard üçüncüsünü, gama ışınlarını buldu. Adlar bugün de kullanılıyor, ama artık her birinin ne olduğunu biliyoruz.",
+        "Alfa parçacığı, iki proton ve iki nötrondan oluşan bir helyum çekirdeğidir. Alfa saçan bir çekirdek iki proton kaybettiği için iki basamak hafif bir elemente dönüşür. Çok ağır çekirdekler için bu yaygın bir yoldur, çünkü nükleer kuvvet bölümünde gördüğün gibi büyük çekirdeklerde protonların itmesi birikir. Örneğin uranyum-238, Wikipedia'ya göre 18 üyeli bir bozunma zinciriyle sonunda kararlı kurşun-206'ya dönüşür; uranyum-235'in zinciri ise kurşun-207'de biter. Bu iki zincir az sonra Dünya'nın yaşını ölçmemizi sağlayacak.",
+        "Beta bozunumunda çekirdekten bir elektron ya da onun karşıt parçacığı pozitron fırlar ve yanında görünmeyen bir yol arkadaşı, bir nötrino ya da karşıt nötrino çıkar. Çekirdeğin içinde bir nötron protona ya da bir proton nötrona dönüşmüştür; bu yüzden element bir basamak değişir ama nükleon sayısı değişmez. d8'de serbest nötronun yaklaşık on beş dakikada bozunduğunu gördün; o da bir beta bozunumudur. Kimliği değiştiren bu süreci zayıf kuvvet yönetir; ayrıntısını ve nötrinonun ilginç öyküsünü d32'de göreceksin.",
+        "Gama ışını ise parçacık değil, çekirdekten çıkan çok enerjik ışıktır; d2'deki elektromanyetik tayfın en enerjik ucudur. Bu üç radyasyon türü de atomlardan elektron sökebilecek kadar enerjiktir; bunlara iyonlaştırıcı radyasyon denir ve sağlık etkileri bu yüzden önemlidir. Radyoaktivitenin tıpta güzel bir kullanımı da var: bazı radyoaktif çekirdekler bozunurken pozitron saçar, pozitron vücuttaki bir elektronla karşılaşınca ikisi yok olur ve bir çift gama ışını doğar. PET taraması (pozitron emisyon tomografisi) tam olarak bu gama çiftlerini yakalayarak görüntü oluşturur."
+      ],
+      "akilda": "Radyoaktivite 1896'da Becquerel'le bulundu. Alfa: helyum çekirdeği (element iki basamak değişir). Beta: elektron ya da pozitron ile nötrino (element bir basamak değişir). Gama: çekirdekten çıkan çok enerjik ışık."
+    },
+    {
+      "baslik": "Yarılanma ömrü: çekirdeğin zar atması",
+      "paragraflar": [
+        "Bir radyoaktif çekirdeğin ne zaman bozunacağını hiç kimse söyleyemez. Bu bir ölçüm eksikliği değil, d27 ve d28'de gördüğün kuantum fiziğinin doğasıdır: yalnız olasılık bilinir. Ama çok sayıda çekirdek bir aradayken bu olasılık şaşmaz bir düzene dönüşür. Yarılanma ömrü, bir örnekteki çekirdeklerin yarısının bozunması için geçen süredir. Bir yarılanma ömrü sonra yarısı kalır, iki yarılanma ömrü sonra dörtte biri, üç yarılanma ömrü sonra sekizde biri. Bazı kaynaklarda aynı şeye yarı ömür de denir.",
+        "Bir benzetme: kalabalık bir salonda herkes her dakika bir yazı tura atıyor ve tura gelen salondan çıkıyor. Kimin ne zaman çıkacağını bilemezsin, ama her dakika kalanların yarısının gideceğini kesin bilirsin. Önemli bir ayrıntı: para geçmişi hatırlamaz. Salonda bir saattir oturan biri, yeni gelmiş biriyle aynı şansa sahiptir. Çekirdekler de yaşlanmaz. Benzetmenin sınırı şu: gerçek çekirdekler sırayla zar atmaz, bozunma olasılığı zaman içinde kesintisiz işler ve yazı turadaki gibi her adımda tam yarı yarıya olmak zorunda değildir.",
+        "Yarılanma ömürleri akıl almaz bir yelpazeye yayılır. Nikel-56 için yaklaşık 6 gün, kobalt-56 için 77,3 gün, titanyum-44 için yaklaşık 60 yıl, karbon-14 için yaklaşık 5.700 yıl, uranyum-235 için 704 milyon yıl, uranyum-238 için yaklaşık 4,47 milyar yıldır. Formülle: kalan miktar N = N₀ × (1/2)^(t/T). Burada N₀ başlangıçtaki çekirdek sayısı, t geçen süre, T yarılanma ömrüdür. On yarılanma ömrü sonra (1/2)¹⁰, yani kabaca binde biri kalır.",
+        "Gökyüzü de bu saatlerle çalışır. SN 1987A süpernovasının ışığı Wikipedia'ya göre önce nikel-56'nın kobalt-56'ya bozunmasıyla beslendi; sonraki aylarda parlaklık, kobalt-56'nın demir-56'ya 77,3 günlük yarılanma ömrüyle bozunmasına çok yakın biçimde azaldı. Uzaydaki gama ışını teleskopları kaçan kobalt gama ışınlarını da yakaladı ve böylece enerji kaynağının bu radyoaktif çekirdekler olduğu doğrulandı. Bugün kobalt-56 tamamen tükenmiş durumda ve kalıntının ışığını yaklaşık 60 yıllık yarılanma ömrüyle titanyum-44 besliyor. Bir yıldız patlamasının sönüşü, gökyüzündeki bir radyoaktif saattir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Bir yıl sonra SN 1987A'nın kobaltından ne kalır?",
+        "metin": "Veri: kobalt-56'nın yarılanma ömrü T = 77,3 gün. Soru: 365 gün sonra başlangıçtaki kobalt-56'nın ne kadarı kalır? 1. adım: Kaç yarılanma ömrü geçti? 365 ÷ 77,3 ≈ 4,72. 2. adım: Kalan oran = (1/2)^4,72. Önce (1/2)⁴ = 1/16 ≈ 0,0625; kalan 0,72 için (1/2)^0,72 ≈ 0,61. Çarpım ≈ 0,0625 × 0,61 ≈ 0,038. 3. adım: Yorum: kobaltın ısıttığı ışık da kabaca aynı oranda azalır, çünkü her bozunma yaklaşık aynı enerjiyi bırakır. Sonuç: bir yıl sonra kobalt-56'nın yaklaşık %4'ü kalır; süpernova bu radyoaktif kaynaktan gelen ışığının kabaca yirmi beşte birine iner."
+      },
+      "akilda": "Tek bir çekirdeğin ne zaman bozunacağı bilinemez, ama çok sayıda çekirdeğin yarısı her yarılanma ömründe bozunur: N = N₀ × (1/2)^(t/T). Süpernova ışığının sönüşü bile nikel-56 ve kobalt-56'nın bu saatini izler."
+    },
+    {
+      "baslik": "Karbon-14: canlıların saati",
+      "paragraflar": [
+        "Karbon-14 gökten gelir. Kozmik ışınlar atmosferde nötronlar üretir; bu nötronlar azot-14 çekirdeklerine çarpınca, ilk bölümde gördüğün gibi, karbon-14 ve bir proton oluşur. Wikipedia'ya göre atmosferdeki karbon-14 miktarı en az 100.000 yıl boyunca kabaca sabit kaldı, yaklaşık 70 ton. Bu karbon-14 oksijenle birleşip karbondioksite girer, bitkiler onu fotosentezle alır, hayvanlar bitkileri yer. Böylece her canlının karbonunda havadaki oran, her 10¹² karbon-12 atomuna yaklaşık 1,25 karbon-14 atomu bulunur.",
+        "Canlı ölünce yeni karbon almayı bırakır ve içindeki karbon-14 bozunmaya başlar. Kalan oranı ölçersen ölümden bu yana geçen süreyi bulursun. Yöntemi 1940'ların sonunda Chicago Üniversitesi'nde Willard Libby geliştirdi ve 1960 Nobel Kimya Ödülü'nü aldı. Yarılanma ömrünün ilginç bir öyküsü var: Libby 5.568 yıl kullanmıştı; 1960'ların başında değer 5.730 ± 40 yıla düzeltildi; bugün kabul edilen değer 5.700 ± 30 yıldır. Ama eski sonuçlarla uyum için geleneksel radyokarbon yaşları hâlâ Libby'nin 5.568 yılıyla hesaplanır, sonra düzeltilir.",
+        "Yöntemin sınırları var ve bunları bilmek önemli. Birincisi, karbon-14 azaldıkça ölçmek zorlaşır; Wikipedia'ya göre pratik sınır genellikle 50.000 yıl civarıdır, özel hazırlıkla 60.000, bazen 75.000 yıla uzar. Yani dinozor kemikleri karbon-14 ile tarihlenmez. İkincisi, havadaki oran tam sabit değildi. Bu yüzden radyokarbon yaşları ağaç halkaları gibi yaşı bilinen örneklerle kurulan kalibrasyon eğrileriyle takvim yılına çevrilir; ilk eğriyi 1967'de Hans Suess yayımladı, güncel IntCal eğrisi 2020'den.",
+        "İnsan da bu saati iki kez bozdu. 1950'lerden 1963'e kadar atmosferde yapılan nükleer denemeler havadaki karbon-14'ü neredeyse ikiye katladı; zirve kuzey yarımkürede 1964'te görüldü. Öte yandan 19. yüzyılın sonundan beri yakılan kömür ve petrol, karbon-14'ü çoktan tükenmiş fosil karbonla havayı seyreltti; buna Suess etkisi denir ve Wikipedia'ya göre karbon-14 etkinliğini yaklaşık %3 düşürdü. Bilim insanları bu bozulmaları da ölçüp düzeltmeye katar; bomba zirvesi bugün yakın geçmişteki örnekleri tarihlemek için ayrıca işe yarıyor."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Bir kemik parçası kaç yaşında?",
+        "metin": "Veri: karbon-14'ün yarılanma ömrü yaklaşık 5.700 yıl. Bir kemikte karbon-14 oranı, canlı bir örneğin dörtte biri ölçülüyor. 1. adım: 1/4 = (1/2)², yani 2 yarılanma ömrü geçmiş. 2. adım: Yaş ≈ 2 × 5.700 = 11.400 yıl. 3. adım: Sınır hesabı: 50.000 yıllık bir örnekte kaç yarılanma ömrü geçer? 50.000 ÷ 5.700 ≈ 8,8. Kalan oran ≈ (1/2)^8,8 ≈ 0,0023, yani başlangıçtakinin yaklaşık binde 2'si. Sonuç: dörtte birine inmiş bir örnek yaklaşık 11.400 yaşındadır (kalibrasyon öncesi); 50.000 yılda karbon-14'ün yalnızca binde 2'si kaldığı için yöntem orada sınırına gelir."
+      },
+      "akilda": "Karbon-14 kozmik ışınlarla havada üretilir, canlılara geçer ve ölümden sonra yaklaşık 5.700 yıllık yarılanma ömrüyle azalır. Libby (Nobel 1960) geliştirdi; sınırı yaklaşık 50.000 yıl, sonuçlar kalibrasyon eğrileriyle düzeltilir."
+    },
+    {
+      "baslik": "Uranyum-kurşun saati: Dünya'nın ve göktaşlarının yaşı",
+      "paragraflar": [
+        "Dünya kaç yaşında? 1862'de Lord Kelvin, Dünya'nın erimiş doğup yalnızca ısı iletimiyle soğuduğunu varsayarak 20 ile 400 milyon yıl arasında bir yaş hesapladı; 1897'de bunu 20 ile 40 milyon yıla daralttı. Hesabı radyoaktif ısıyı bilmiyordu. 1903'te George Darwin ve John Joly, radyoaktif bozunmanın sürekli ısı ürettiğini, dolayısıyla Kelvin'in hesabını bozduğunu belirtti. Radyoaktivite bir de saat verdi: Bertram Boltwood 1907'de kurşun ve uranyumdan bazı kayaçlar için 2,2 milyar yıla varan yaşlar buldu.",
+        "Uranyum-kurşun yöntemi iki saati bir arada kullanır. Uranyum-238 yaklaşık 4,47 milyar yıllık yarılanma ömrüyle kurşun-206'ya, uranyum-235 ise 704 milyon yıllık yarılanma ömrüyle kurşun-207'ye dönüşür. Bir kayaçta hem uranyumu hem de ondan doğan kurşunu ölçersen iki ayrı yaş bulursun. İkisi uyuşuyorsa kayaç oluştuğundan beri ne uranyum ne de kurşun kaçırmıştır; uyuşmuyorsa bir şeylerin karıştığını anlarsın. Aynı olayı iki bağımsız saatle ölçmek, bilimde güvenin en sağlam kaynaklarından biridir.",
+        "Dünya'nın kayaçları ise iyi bir saat değildir: gezegen çekirdek, manto ve kabuk diye katmanlaşmış, levha hareketleri ve aşınma bu katmanları defalarca karıştırmıştır. Bu yüzden yaş, göktaşlarından ölçülür; bazı göktaşları Güneş Sistemi'nin ilk diskinden kalmış, o günden beri kapalı kalmış malzemedir (d19). 1956'da Clair Patterson, aralarında Canyon Diablo'nun da bulunduğu göktaşlarından 4,55 ± 0,07 milyar yıl buldu. Bugünkü değer 4,54 ± 0,05 milyar yıldır. Göktaşlarındaki kalsiyum ve alüminyumca zengin kapanımlar, Güneş Sistemi'nin bilinen en eski katıları, 4,5673 ± 0,00016 milyar yaşındadır. Dünya'nın bilinen en eski minerali Batı Avustralya'daki Jack Hills zirkonları en az 4,404 milyar, en yaşlı Ay kayaçları 4,51 milyar yaşındadır.",
+        "Bir sürpriz daha: Kelvin'in atladığı ısı bugün de Dünya'yı ısıtıyor. Wikipedia'ya göre mantodaki uranyum, toryum ve potasyum-40'ın bozunması Dünya'nın iç ısısının ana kaynağı sayılır; bu ısı dış çekirdeği sıvı tutar, manto akıntılarını ve levha hareketlerini sürer. Yani levhaları yerinden oynatan iç ısının önemli bir kısmını, Kelvin'in hesabına giremeyen radyoaktivite sağlıyor."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Dünya doğduğundan beri uranyumun ne kadarı kaldı?",
+        "metin": "Veriler: Dünya'nın yaşı 4,54 milyar yıl; uranyum-238 yarılanma ömrü 4,47 milyar yıl, uranyum-235 için 0,704 milyar yıl. 1. adım: Uranyum-238 için geçen yarılanma ömrü: 4,54 ÷ 4,47 ≈ 1,02. Kalan ≈ (1/2)^1,02 ≈ 0,49, yani yaklaşık yarısı. 2. adım: Uranyum-235 için: 4,54 ÷ 0,704 ≈ 6,45 yarılanma ömrü. Kalan ≈ (1/2)^6,45 ≈ 0,011, yani yaklaşık %1,1. 3. adım: Oklo hesabı: bugün oran uranyum-235 / uranyum-238 = 0,0072. 2 milyar yıl geriye gidince uranyum-235, 2^(2/0,704) ≈ 7,2 kat; uranyum-238, 2^(2/4,47) ≈ 1,36 kat fazladır. Oran ≈ 0,0072 × 7,2 ÷ 1,36 ≈ 0,038; uranyumun yaklaşık %3,6'sı. Sonuç: Dünya'nın başlangıçtaki uranyum-238'inin yaklaşık yarısı, uranyum-235'inin ise yalnız %1'i kadarı kaldı; uranyum-235'in bugün bu kadar seyrek olmasının nedeni budur."
+      },
+      "akilda": "Uranyum-238 kurşun-206'ya (4,47 milyar yıl), uranyum-235 kurşun-207'ye (704 milyon yıl) bozunur; iki saat birbirini denetler. Göktaşlarından Dünya'nın yaşı 4,54 ± 0,05 milyar yıl, en eski katılar 4,5673 milyar yıl."
+    },
+    {
+      "baslik": "Gökyüzünde çekirdek fiziği: İstanbul'dan bakınca",
+      "paragraflar": [
+        "Bu dersin konuları laboratuvarda kalmaz; İstanbul'un göğüne baktığında hepsiyle karşılaşırsın. Gündüz gökteki en parlak cisim bir füzyon reaktörüdür. Güneş'e asla çıplak gözle, dürbünle ya da filtresiz bir aletle bakma; güvenli yolları d4'te gördün. Gece gördüğün yıldızların çoğu da, d5'teki anakol yıldızları gibi, çekirdeklerinde hidrojeni helyuma kaynaştırıyor. d4'e göre Güneş'ten yaklaşık 1,3 kat kütleli yıldızlarda bu iş çoğunlukla CNO döngüsüyle yapılır; yani gökteki parlak, sıcak, kütleli yıldızlarla Güneş, aynı yakıtı farklı tepkime yollarıyla yakar.",
+        "Ay'a 7×50 dürbünle baktığında, ölçülebilen en yaşlıları yaklaşık 4,51 milyar yaşında olan kayaçlara bakıyorsun; bu yaşlar Ay'dan getirilen örneklerin radyometrik tarihlemesinden gelir. Ay'da levha hareketi ve atmosfer olmadığı için kayaçları Dünya'dakiler gibi defalarca karışmamış, eski saatleri daha iyi korunmuştur. Bir müzede gördüğün bir göktaşı parçası ise Dünya'dan bile yaşlı olabilir: bazı göktaşlarındaki kalsiyum ve alüminyumca zengin kapanımlar 4,567 milyar yaşındadır, Güneş Sistemi'nin ilk katılarıdır. d19'daki meteor yağmurlarının parçacıkları ise çoğunlukla yere ulaşmadan atmosferde yanar.",
+        "Başının üstünde şu anda da çekirdek tepkimeleri oluyor. Kozmik ışınların ürettiği nötronlar İstanbul'un havasındaki azot-14'ü de karbon-14'e çeviriyor; içtiğin çayın yaprakları ve senin vücudun bu karbonu taşıyor. Kozmik ışınların bir kısmının kaynağı, Fermi uydusunun 2013 verilerine göre süpernova kalıntılarıdır. Yani bir arkeoloğun karbon-14 saati, uzak bir yıldız patlamasıyla başlayan bir zincirin son halkasıdır. Kozmik ışınların kendisini, atmosferde nasıl çağlayan oluşturduklarını ve yere ulaşan müonları d32'de göreceksin."
+      ],
+      "akilda": "Güneş ve gece yıldızları füzyonla parlar; Ay kayaçları 4,51, en eski göktaşı kapanımları 4,567 milyar yaşındadır. Kozmik ışınlar İstanbul'un havasında da sürekli karbon-14 üretir."
+    },
+    {
+      "baslik": "Radyasyon ve sağlık: doz ne demek?",
+      "paragraflar": [
+        "“Radyasyon” sözcüğü korkutur; oysa radyasyonun içinde doğup yaşıyoruz. Önemli olan ne kadar olduğudur. Sağlık kurumları iyonlaştırıcı radyasyonun vücuda etkisini etkin doz denen bir büyüklükle karşılaştırır. Etkin doz, radyasyonun vücutta bıraktığı enerjiyi, radyasyon türünü ve hangi organların etkilendiğini hesaba katan, sağlık riskini karşılaştırmaya yarayan bir sayıdır. Birimi sievert'tir; gündelik dozlar çok küçük olduğu için çoğunlukla milisievert, yani sievert'in binde biri kullanılır.",
+        "Doğal radyasyondan dünya ortalaması nedir? BM'nin atom radyasyonu bilim komitesi UNSCEAR'ın 2000 raporuna göre kişi başına yılda 2,4 milisievert. Kanada Nükleer Güvenlik Komisyonu'nun 2020 bilgi notu aynı değeri verir ve parçalarını şöyle sıralar: soluduğumuz radon gazından yaklaşık 1,2, toprak ve yapı malzemelerinden yaklaşık 0,5, yiyeceklerden, başta potasyum-40'tan yaklaşık 0,3 milisievert. Kozmik ışınların payı Wikipedia'ya göre ortalama 0,39 milisievert civarındadır. Bunları toplayınca kabaca 2,4 eder.",
+        "Bu ortalama yerden yere çok değişir. Aynı Kanada notuna göre Kanada ortalaması yılda 1,8 milisievert; Hindistan'ın Kerala kıyısında yılda 12,5 milisievert; kuzey İran'ın bazı yerlerinde yerel jeoloji yüzünden yılda 260 milisieverte kadar çıkabiliyor. Yükseklik de önemlidir: kozmik ışın dozu Vancouver'da deniz düzeyinde yılda yaklaşık 0,30 milisievert iken 2.000 m yükseklikteki Lorne Dağı'nın tepesinde yaklaşık 0,84 milisievertdir. Yani dağda yaşamak bile dozu değiştirir.",
+        "Dikkat edersen vücudun kendisi de biraz radyoaktiftir: yediğimiz potasyumun içinde doğal potasyum-40 vardır ve bu iç doz, yılda yaklaşık 0,3 milisievert, kaçınılmazdır. Yüksek dozlar ise gerçekten tehlikelidir. UNSCEAR 2000'e göre bir defada alınan 1.000 milisievertlik doz, hayat boyu kanserden ölüm riskini erkeklerde yaklaşık %9, kadınlarda %13 artırır. Birleşik Krallık'taki tıbbi fizik uzmanları kurumu IPEM'in eğitim kartlarına göre 1.000 milisievert ani radyasyon hastalığı belirtilerinin, 10.000 milisievert ise haftalar içinde ölümün eşiğidir. Yıllık birkaç milisievertlik doğal doz bu sayıların çok altındadır."
+      ],
+      "akilda": "Radyasyonun sağlık etkisi etkin dozla, milisievert biriminde karşılaştırılır. Doğal radyasyonun dünya ortalaması yılda 2,4 milisievert (UNSCEAR); en büyük payı radon alır. Bir defada 1.000 milisievert ciddi bir dozdur."
+    },
+    {
+      "baslik": "Muz, uçak ve tomografi: dozları ölçeklemek",
+      "paragraflar": [
+        "Gündelik örneklere geçelim. IPEM'in kartlarına göre bir muz yemek yaklaşık 0,0001 milisievert doz verir; muz potasyumca zengin olduğu için bu sayı sık sık ölçek birimi gibi kullanılır. Diş röntgeni yaklaşık 0,01, göğüs röntgeni 0,02 milisievertdir. Göğüs röntgeni için ABD Gıda ve İlaç Dairesi'nin (FDA) tablosu da aynı 0,02 değerini verir; iki ayrı kaynak burada uyuşuyor.",
+        "Uçakta doz artar, çünkü atmosferin koruyucu örtüsünün büyük kısmını aşağıda bırakırsın. IPEM'e göre 8 saatlik bir Atlantik aşırı uçuş kozmik ışınlardan yaklaşık 0,08 milisievert verir. Wikipedia'ya göre 12 km yükseklikte kozmik doz deniz düzeyindekinin en az 10 katıdır ve yüksek irtifada uzun hatlarda uçan ekipler yılda 2,2 milisievert kadar fazladan doz alabilir. Kanada'da uçuşların ortalama kişiye katkısı ise yılda yalnız 0,01 milisievert kadardır, çünkü çoğu insan sık uçmaz.",
+        "Tomografi (bilgisayarlı tomografi, BT) en büyük gündelik dozlardan biridir. FDA'nın tablosuna göre bir kafa tomografisi tipik olarak 2,0, bir karın tomografisi 10 milisievert verir. IPEM ise kafa tomografisi için 1,4, tüm vücut tomografisi için 20 milisievert verir. Kafa tomografisinde iki kaynağın farklı olması şaşırtıcı değil: doz cihaza, çekim ayarlarına ve hastaya göre değişir; bu sayılar tipik değerlerdir. Karşılaştırma için IPEM'e göre Birleşik Krallık'ta radyasyon çalışanlarının yıllık doz sınırı 20 milisievertdir.",
+        "Ölçeğin üst ucu da astronomiyle ilgili. IPEM'in kartlarına göre Mars'a gidip dönmek yaklaşık 600 milisievert doz demektir; uçak bölümünde gördüğün gibi atmosferin koruyucu örtüsünü ne kadar geride bırakırsan kozmik ışın dozu o kadar artar, gezegenler arası yolda ise bu örtü hiç yoktur (uzay yolculuğu için d23). Aynı kartlara göre 2011 Fukuşima kazasında acil durum çalışanlarının dozu 100 ile 700 milisievert arasındaydı. 600 ÷ 2,4 = 250 olduğuna göre, bir Mars yolculuğu ortalama bir insanın yaklaşık 250 yılda doğal kaynaklardan alacağı doza eşittir. Bu, astronotların sağlığını korumanın insanlı gezegen yolculuklarında neden ayrı bir dert olduğunu sayıyla gösteriyor.",
+        "Bu sayılardan çıkan ders şu: muz ve uçak dozları doğal fonun yanında küçük, tomografi ise birkaç yıllık doğal doz kadar olabilir. Ama doz tek başına karar ölçütü değildir. Bir tomografinin yararı, örneğin bir kanamayı zamanında görmek, çoğu zaman küçük bir radyasyon riskinden çok daha ağır basar; bunu tartmak hekimin işidir. Bizim için önemli olan, “radyasyon” sözcüğünü duyunca korkmak yerine sayıyı sormak: kaç milisievert?"
+      ],
+      "ornek": {
+        "baslik": "Örnek: Kaç muz bir uçuşa, kaç gün bir tomografiye eşit?",
+        "metin": "Veriler: muz 0,0001; göğüs röntgeni 0,02; 8 saatlik uçuş 0,08 milisievert (IPEM); kafa tomografisi 2,0 (FDA); yıllık doğal doz 2,4 milisievert (UNSCEAR). 1. adım: Uçuş = 0,08 ÷ 0,0001 = 800 muz. Göğüs röntgeni = 0,02 ÷ 0,0001 = 200 muz. 2. adım: Yıllık doğal doz = 2,4 ÷ 0,0001 = 24.000 muz, günde yaklaşık 66 muz. 3. adım: Kafa tomografisi kaç günlük doğal doz? 2,0 ÷ 2,4 × 365 ≈ 304 gün. FDA, ABD için yılda 3 milisievert varsayarak 243 gün verir; IPEM'in 1,4 değeriyle yaklaşık 213 gün çıkar. Sonuç: bir Atlantik uçuşu yaklaşık 800 muz, bir kafa tomografisi ise kabaca 7 ile 10 aylık doğal radyasyon dozuna eşittir."
+      },
+      "akilda": "Muz 0,0001, göğüs röntgeni 0,02, Atlantik uçuşu 0,08, kafa tomografisi 1,4–2,0, karın tomografisi 10 milisievert. Radyasyon haberlerinde ilk soru şudur: kaç milisievert?"
+    }
+  ],
+  "formuller": [
+    {
+      "ad": "Kütle-enerji eşdeğerliği ve bağlanma enerjisi",
+      "ifade": "B = Δm × c²",
+      "aciklama": "B bağlanma enerjisi (jul ya da MeV), Δm kütle eksiği (kg ya da atomik kütle birimi), c ışık hızı (299.792.458 m/s). Pratikte 1 atomik kütle birimi ≈ 931 MeV (HyperPhysics'in helyum-4 hesabından: 28,3 ÷ 0,0304). Her çekirdek için geçerlidir."
+    },
+    {
+      "ad": "Nükleon başına bağlanma enerjisi",
+      "ifade": "b = B / A",
+      "aciklama": "B toplam bağlanma enerjisi (MeV), A kütle numarası (proton + nötron sayısı). Helyum-4 için yaklaşık 7,1 MeV, demir-56 için 8,79 MeV, nikel-62 için 8,79 MeV (en yüksek)."
+    },
+    {
+      "ad": "Radyoaktif bozunma yasası",
+      "ifade": "N = N₀ × (1/2)^(t/T)",
+      "aciklama": "N kalan çekirdek sayısı, N₀ başlangıçtaki sayı, t geçen süre, T yarılanma ömrü (t ile aynı birimde). Çok sayıda çekirdek için geçerlidir; tek bir çekirdeğin ne zaman bozunacağını söylemez."
+    },
+    {
+      "ad": "Yaş hesabı",
+      "ifade": "t = T × log₂(N₀/N)",
+      "aciklama": "Kalan oran N/N₀ ölçülünce geçen süre t bulunur; T yarılanma ömrüdür. Örnek: oran 1/4 ise log₂ 4 = 2, t = 2T. Karbon-14 için T ≈ 5.700 yıl."
+    },
+    {
+      "ad": "Füzyon kazanç oranı",
+      "ifade": "Q = P_füzyon / P_ısıtma",
+      "aciklama": "P_füzyon üretilen füzyon gücü ya da enerjisi, P_ısıtma plazmaya ya da hedefe verilen güç ya da enerji. Q = 1 başabaş; ITER'in hedefi Q ≥ 10 (500 MW / 50 MW). Tesisin toplam elektrik tüketimini içermez."
+    }
+  ],
+  "anahtar_sayilar": [
+    {
+      "deger": "1,70 – 11,7 femtometre; atomdan ~60.000 (H) ve ~27.000 (U) kat küçük",
+      "aciklama": "Çekirdek çapı ve atom çapına oranı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Atomic_nucleus"
+    },
+    {
+      "deger": "28,3 MeV (0,0304 u)",
+      "aciklama": "Helyum-4 çekirdeğinin bağlanma enerjisi ve kütle eksiği",
+      "kaynak_url": "https://hyperphysics.gsu.edu/hbase/NucEne/nucbin.html"
+    },
+    {
+      "deger": "8,7945 MeV (Ni-62), 8,7903 MeV (Fe-56)",
+      "aciklama": "Nükleon başına en yüksek bağlanma enerjileri: demir tepesi",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Nickel-62"
+    },
+    {
+      "deger": "17,6 MeV (nötrona 14,1 MeV)",
+      "aciklama": "Döteryum-trityum füzyonunda açığa çıkan enerji",
+      "kaynak_url": "https://wiki.riteme.site/wiki/Deuterium-tritium"
+    },
+    {
+      "deger": "202,5 MeV; 83,14 terajul/kg",
+      "aciklama": "Bir uranyum-235 fisyonunun reaktörde bıraktığı ısı ve tam bölünmede kilogram başına enerji",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Uranium-235"
+    },
+    {
+      "deger": "2034 / 2039; Q ≥ 10",
+      "aciklama": "ITER'in 2024 temel planında araştırma işletmesi ve döteryum-trityum işletmesi başlangıcı",
+      "kaynak_url": "https://iter.org/sites/default/files/media/2024-07/baseline_press_conference_summary_july-2024_b.pdf"
+    },
+    {
+      "deger": "2,05 → 3,15 megajul (5 Aralık 2022); rekor 8,6 megajul (7 Nisan 2025)",
+      "aciklama": "NIF'te füzyon ateşlemesi ve rekor verim",
+      "kaynak_url": "https://lmf.llnl.gov/science/achieving-fusion-ignition"
+    },
+    {
+      "deger": "4 × 1.200 = 4.800 megavat; inşaat 3 Nisan 2018",
+      "aciklama": "Akkuyu nükleer santralinin planlanan gücü ve 1. ünitenin inşaat başlangıcı (30 Ekim 2026'da yapım aşamasında)",
+      "kaynak_url": "https://world-nuclear.org/nuclear-reactor-database/details/AKKUYU-1"
+    },
+    {
+      "deger": "5.700 ± 30 yıl (Libby: 5.568)",
+      "aciklama": "Karbon-14'ün yarılanma ömrü",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Radiocarbon_dating"
+    },
+    {
+      "deger": "4,54 ± 0,05 milyar yıl; 4,5673 milyar yıl",
+      "aciklama": "Dünya'nın yaşı ve Güneş Sistemi'nin en eski katılarının yaşı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Age_of_Earth"
+    },
+    {
+      "deger": "2,4 milisievert/yıl",
+      "aciklama": "Doğal radyasyondan dünya ortalaması etkin doz",
+      "kaynak_url": "https://unis.unvienna.org/unis/en/pressrels/2000/unscear1.html"
+    },
+    {
+      "deger": "muz 0,0001; uçuş 0,08; kafa BT 1,4–2,0 milisievert",
+      "aciklama": "Gündelik dozlar: bir muz, 8 saatlik Atlantik uçuşu, kafa tomografisi",
+      "kaynak_url": "https://www.ipem.ac.uk/media/exnj51ek/radiation-flash-cards-2019.pdf"
+    }
+  ],
+  "sozluk": [
+    {
+      "terim": "atom çekirdeği",
+      "tanim": "Atomun ortasında, artı yüklü, atom kütlesinin neredeyse tamamını taşıyan ve atomdan on binlerce kat küçük bölge."
+    },
+    {
+      "terim": "femtometre",
+      "tanim": "Metrenin katrilyonda biri (10⁻¹⁵ m); çekirdek boyutlarını ölçmek için kullanılan uzunluk birimi."
+    },
+    {
+      "terim": "nükleon",
+      "tanim": "Çekirdeğin yapı taşı olan proton ya da nötronun ortak adı."
+    },
+    {
+      "terim": "kütle numarası",
+      "tanim": "Bir çekirdekteki proton ve nötronların toplam sayısı; karbon-14'teki 14 gibi."
+    },
+    {
+      "terim": "izotop",
+      "tanim": "Aynı sayıda protona ama farklı sayıda nötrona sahip, aynı elementin farklı çekirdek türü."
+    },
+    {
+      "terim": "nükleer kuvvet",
+      "tanim": "Nükleonları yaklaşık bir femtometre mesafede elektriksel itmeden daha güçlü biçimde birbirine bağlayan, birkaç femtometrenin ötesinde sönen kısa menzilli çekim."
+    },
+    {
+      "terim": "kütle eksiği",
+      "tanim": "Bir çekirdeğin kütlesinin, onu oluşturan proton ve nötronların ayrı ayrı kütlelerinin toplamından az olan kısmı."
+    },
+    {
+      "terim": "bağlanma enerjisi",
+      "tanim": "Bir çekirdeği ayrı proton ve nötronlarına ayırmak için gereken, kütle eksiğine E = mc² ile karşılık gelen enerji."
+    },
+    {
+      "terim": "demir tepesi",
+      "tanim": "Nükleon başına bağlanma enerjisinin en yüksek olduğu demir ve nikel çevresi; ondan hafifler füzyonla, ağırlar fisyonla enerji verir."
+    },
+    {
+      "terim": "trityum",
+      "tanim": "Bir proton ve iki nötronlu, radyoaktif ağır hidrojen; füzyon yakıtı olarak lityumdan üretilir."
+    },
+    {
+      "terim": "plazma",
+      "tanim": "Elektronları atomlardan sökülmüş, çekirdeklerle elektronların ayrı ayrı dolaştığı, elektriği ileten çok sıcak gaz."
+    },
+    {
+      "terim": "ateşleme",
+      "tanim": "Füzyon tepkimelerinin kendi ısısıyla sürmeye başladığı ve hedefe verilenden fazla enerji ürettiği nokta."
+    },
+    {
+      "terim": "fisyon",
+      "tanim": "Ağır bir çekirdeğin, çoğunlukla bir nötron çarpması sonucu, iki orta boy çekirdeğe ve birkaç nötrona bölünmesi."
+    },
+    {
+      "terim": "zincirleme tepkime",
+      "tanim": "Bir fisyondan çıkan nötronların yeni fisyonlar başlatarak sürecin kendi kendini sürdürmesi."
+    },
+    {
+      "terim": "radyoaktivite",
+      "tanim": "Kararsız bir çekirdeğin kendiliğinden parçacık ya da enerji saçarak başka bir çekirdeğe dönüşmesi."
+    },
+    {
+      "terim": "alfa parçacığı",
+      "tanim": "İki proton ve iki nötrondan oluşan helyum çekirdeği; ağır çekirdeklerin bozunurken saçtığı parçacık."
+    },
+    {
+      "terim": "beta bozunumu",
+      "tanim": "Çekirdekte bir nötronun protona ya da bir protonun nötrona dönüşüp bir elektron ya da pozitron ile bir nötrino saçması."
+    },
+    {
+      "terim": "yarılanma ömrü",
+      "tanim": "Bir radyoaktif örnekteki çekirdeklerin yarısının bozunması için geçen süre."
+    },
+    {
+      "terim": "iyonlaştırıcı radyasyon",
+      "tanim": "Atomlardan elektron sökebilecek kadar enerjik radyasyon; alfa, beta, gama ve X ışınları gibi."
+    },
+    {
+      "terim": "etkin doz",
+      "tanim": "Radyasyonun vücutta bıraktığı enerjiyi, türünü ve etkilenen organları hesaba katarak sağlık riskini karşılaştırmaya yarayan doz büyüklüğü."
+    },
+    {
+      "terim": "milisievert",
+      "tanim": "Etkin doz birimi sievert'in binde biri; gündelik radyasyon dozları bu birimle verilir."
+    }
+  ],
+  "defter_notu": [
+    "Çekirdek: 1,7–11,7 femtometre, atomdan 27.000–60.000 kat küçük, kütlenin neredeyse hepsi. Rutherford 1911, nötron Chadwick 1932.",
+    "Nükleer kuvvet: ~0,8 femtometrede güçlü çekim, <0,7 femtometrede itme, >2–2,5 femtometrede sıfır. Ağır çekirdekte itme birikir.",
+    "Kütle eksiği → bağlanma enerjisi (E = mc²). Helyum-4: 0,0304 u = 28,3 MeV, nükleon başına 7,1 MeV. 1 u ≈ 931 MeV.",
+    "Demir tepesi: Ni-62 8,7945, Fe-56 8,7903 MeV/nükleon. Hafif → füzyon, ağır → fisyon; ikisi de tepeye gider.",
+    "Füzyon D-T: 17,6 MeV (nötron 14,1), ~10⁸ kelvin, trityum lityumdan. ITER (2024 planı): 2034 araştırma, 2039 D-T, Q ≥ 10. NIF ateşleme 5.12.2022 (2,05 → 3,15 megajul), rekor 8,6 megajul (2025).",
+    "Fisyon: Hahn-Strassmann 1938, Meitner-Frisch 1939; U-235 202,5 MeV, 2,5–3 nötron; CP-1 2.12.1942; gecikmeli nötron < %1 → denetim.",
+    "Akkuyu: 4 × 1.200 megavat VVER, inşaat 3.4.2018; 30.10.2026'da PRIS kaynaklı kayıtta 1. ünite yapım aşamasında. Oklo: 2 milyar yıl önce doğal reaktör.",
+    "Bozunma: alfa (He çekirdeği), beta (e⁻ ya da e⁺ + nötrino), gama (ışık). N = N₀ × (1/2)^(t/T). SN 1987A: Ni-56 6 gün, Co-56 77,3 gün, Ti-44 ~60 yıl.",
+    "C-14: 5.700 ± 30 yıl, sınır ~50.000 yıl, Libby Nobel 1960. U-238 → Pb-206 (4,47 milyar yıl), U-235 → Pb-207 (704 milyon yıl). Dünya 4,54 ± 0,05 milyar yıl.",
+    "Doz: doğal 2,4 milisievert/yıl (radon 1,2). Muz 0,0001, göğüs röntgeni 0,02, uçuş 0,08, kafa BT 1,4–2,0, karın BT 10; 1.000 milisievert ani etki."
+  ],
+  "sorular": [
+    {
+      "soru": "Atom çekirdeği atomun ne kadarını kaplar, kütlesinin ne kadarını taşır?",
+      "cevap": "Hacmin çok küçük bir kısmını kaplar: atomun çapı çekirdeğinkinin hidrojende yaklaşık 60.000, uranyumda yaklaşık 27.000 katıdır. Buna rağmen atomun kütlesinin neredeyse tamamı çekirdektedir."
+    },
+    {
+      "soru": "Protonlar birbirini ittiği hâlde çekirdek neden dağılmaz?",
+      "cevap": "Nükleonlar arasında yaklaşık 1 femtometre mesafede elektriksel itmeden güçlü olan nükleer kuvvet vardır. Bu kuvvet 2–2,5 femtometrenin ötesinde neredeyse sıfıra iner; bu yüzden yalnız komşu nükleonları bağlar."
+    },
+    {
+      "soru": "Helyum-4 çekirdeği neden onu oluşturan dört nükleonun toplamından hafiftir?",
+      "cevap": "Nükleonlar birleşirken bağlanma enerjisi (28,3 MeV) dışarı salınır. Sistemin enerjisi azaldığı için E = mc² gereği kütlesi de azalır; fark 0,0304 atomik kütle birimidir. Parçacık sayısı değişmez."
+    },
+    {
+      "soru": "Hem füzyonun hem fisyonun enerji vermesi nasıl mümkün olur?",
+      "cevap": "Nükleon başına bağlanma enerjisi demir ve nikel çevresinde en yüksektir. Hafif çekirdekleri birleştirmek de ağır çekirdekleri bölmek de ürünleri bu tepeye yaklaştırır, nükleonlar daha sıkı bağlanır ve fark enerji olarak çıkar."
+    },
+    {
+      "soru": "NIF'in 7 Nisan 2025'teki deneyinde hedef kazancı yaklaşık kaçtır ve bu neden bir santralin başabaş noktası değildir?",
+      "cevap": "8,6 ÷ 2,08 ≈ 4,1 (LLNL: 4,13). Bu oran yalnız hedefe ulaşan lazer enerjisine göredir; lazerleri besleyen elektrik dahil tesisin toplam harcaması hesaba girmez ve elektrik üreten füzyon santrali henüz yoktur."
+    },
+    {
+      "soru": "Bir nükleer reaktörü denetlenebilir kılan nedir?",
+      "cevap": "Fisyon nötronlarının yüzde birden azı parçaların bozunmasıyla gecikerek çıkar. Güç reaktörleri kritikliği bu gecikmeli nötronlara dayandırdığı için güç değişimleri, anında çıkan nötronların 10⁻⁴ saniyelik hızına göre çok yavaş olur ve denetlenebilir."
+    },
+    {
+      "soru": "Akkuyu'nun 1. ünitesi hakkında resmî kaynaklarla doğrulanabilen bilgiler nelerdir?",
+      "cevap": "VVER V-509 tipi basınçlı su reaktörü, brüt 1.200, net 1.114 megavat; inşaatı 3 Nisan 2018'de başladı; santral 4 üniteyle toplam 4.800 megavat olacak. 30 Ekim 2026'da erişilen PRIS kaynaklı kayıtta ünite hâlâ yapım aşamasında görünüyor."
+    },
+    {
+      "soru": "Alfa ve beta bozunumunda element nasıl değişir?",
+      "cevap": "Alfa bozunumunda çekirdek iki proton ve iki nötron kaybeder, element iki basamak hafifler ve kütle numarası 4 azalır. Beta bozunumunda bir nötron protona (ya da tersi) dönüşür; element bir basamak değişir, kütle numarası aynı kalır."
+    },
+    {
+      "soru": "Karbon-14 oranı canlı bir örneğin sekizde birine inmiş bir odun parçası yaklaşık kaç yaşındadır?",
+      "cevap": "1/8 = (1/2)³, yani 3 yarılanma ömrü: 3 × 5.700 ≈ 17.100 yıl (kalibrasyon öncesi radyokarbon yaşı)."
+    },
+    {
+      "soru": "Dünya'nın yaşı neden Dünya kayaçlarından değil göktaşlarından ölçülür?",
+      "cevap": "Dünya katmanlaşmış ve levha hareketleri, aşınma ile kayaçları defalarca karıştırmıştır. Bazı göktaşları Güneş Sistemi'nin ilk diskinden kalmış ve kapalı kalmış malzemedir. Patterson 1956'da göktaşlarından 4,55 ± 0,07 milyar yıl buldu; bugünkü değer 4,54 ± 0,05 milyar yıldır."
+    },
+    {
+      "soru": "Doğal radyasyonun dünya ortalaması nedir ve en büyük payı ne alır?",
+      "cevap": "UNSCEAR'a göre yılda 2,4 milisievert. Kanada Nükleer Güvenlik Komisyonu'nun dökümüne göre en büyük pay yaklaşık 1,2 milisievertle solunan radondur."
+    },
+    {
+      "soru": "Bir kafa tomografisinin dozu için kaynaklar neden farklı değer verir?",
+      "cevap": "FDA 2,0, IPEM 1,4 milisievert verir. Doz cihaza, çekim ayarlarına ve hastaya göre değiştiği için kaynaklar tipik değerler verir; her ikisi de birkaç aylık doğal doz mertebesindedir."
+    }
+  ],
+  "kaynaklar": [
+    {
+      "ad": "Wikipedia, Atomic nucleus",
+      "url": "https://en.wikipedia.org/wiki/Atomic_nucleus"
+    },
+    {
+      "ad": "Wikipedia, Nuclear force",
+      "url": "https://en.wikipedia.org/wiki/Nuclear_force"
+    },
+    {
+      "ad": "HyperPhysics (Georgia State University), Nuclear Binding Energy",
+      "url": "https://hyperphysics.gsu.edu/hbase/NucEne/nucbin.html"
+    },
+    {
+      "ad": "Wikipedia, Nickel-62",
+      "url": "https://en.wikipedia.org/wiki/Nickel-62"
+    },
+    {
+      "ad": "ITER Organization, Baseline press conference summary (3 Temmuz 2024)",
+      "url": "https://iter.org/sites/default/files/media/2024-07/baseline_press_conference_summary_july-2024_b.pdf"
+    },
+    {
+      "ad": "LLNL, Achieving Fusion Ignition (erişim 30 Ekim 2026)",
+      "url": "https://lmf.llnl.gov/science/achieving-fusion-ignition"
+    },
+    {
+      "ad": "Wikipedia, Deuterium–tritium fusion (yansı)",
+      "url": "https://wiki.riteme.site/wiki/Deuterium-tritium"
+    },
+    {
+      "ad": "Wikipedia, Nuclear chain reaction",
+      "url": "https://en.wikipedia.org/wiki/Nuclear_chain_reaction"
+    },
+    {
+      "ad": "Wikipedia, Uranium-235",
+      "url": "https://en.wikipedia.org/wiki/Uranium-235"
+    },
+    {
+      "ad": "Wikipedia, Uranium (IPFS yansısı)",
+      "url": "https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Uranium"
+    },
+    {
+      "ad": "IAEA, Türkiye'nin ilk nükleer santralinin inşaat başlangıcı",
+      "url": "https://iaea.org/node/47311"
+    },
+    {
+      "ad": "World Nuclear Association, Reactor database: AKKUYU-1 (IAEA PRIS verisi; erişim 30 Ekim 2026)",
+      "url": "https://world-nuclear.org/nuclear-reactor-database/details/AKKUYU-1"
+    },
+    {
+      "ad": "Wikipedia, Timeline of particle physics",
+      "url": "https://en.wikipedia.org/wiki/Timeline_of_particle_physics"
+    },
+    {
+      "ad": "Wikipedia, SN 1987A",
+      "url": "https://en.wikipedia.org/wiki/SN_1987A"
+    },
+    {
+      "ad": "Wikipedia, Radiocarbon dating",
+      "url": "https://en.wikipedia.org/wiki/Radiocarbon_dating"
+    },
+    {
+      "ad": "Wikipedia, Age of Earth",
+      "url": "https://en.wikipedia.org/wiki/Age_of_Earth"
+    },
+    {
+      "ad": "Wikipedia, Cosmic ray",
+      "url": "https://en.wikipedia.org/wiki/Cosmic_ray"
+    },
+    {
+      "ad": "Wikipedia, Antiparticle",
+      "url": "https://en.wikipedia.org/wiki/Antiparticle"
+    },
+    {
+      "ad": "UNSCEAR 2000 basın bülteni (BM Viyana, 6 Haziran 2000)",
+      "url": "https://unis.unvienna.org/unis/en/pressrels/2000/unscear1.html"
+    },
+    {
+      "ad": "Canadian Nuclear Safety Commission, Natural Background Radiation (Kasım 2020)",
+      "url": "https://api.cnsc-ccsn.gc.ca/dms/digital-medias/Fact-Sheet-Background-Radiation-eng.pdf/object"
+    },
+    {
+      "ad": "US FDA, What are the Radiation Risks from CT? (arşiv)",
+      "url": "https://webarchive.library.unt.edu/eot2008/20080916140327/http:/www.fda.gov/cdrh/ct/risks.html"
+    },
+    {
+      "ad": "IPEM, Radiation flash cards (2019)",
+      "url": "https://www.ipem.ac.uk/media/exnj51ek/radiation-flash-cards-2019.pdf"
+    },
+    {
+      "ad": "Health Physics Society, Ask the Experts q10788",
+      "url": "https://hps.org/publicinformation/ate/q10788/"
+    }
+  ]
+}

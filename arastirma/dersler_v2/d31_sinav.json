@@ -1,0 +1,58 @@
+[
+  {
+    "id": "d31-1",
+    "soru": "Hem hafif çekirdekleri birleştirmenin (füzyon) hem de ağır çekirdekleri bölmenin (fisyon) enerji vermesinin nedeni nedir?",
+    "secenekler": [
+      "Her iki tepkimede de bazı protonlar yok olup saf enerjiye dönüşür",
+      "Nükleon başına bağlanma enerjisi demir ve nikel çevresinde en yüksektir; iki tepkime de ürünleri bu tepeye yaklaştırıp nükleonları daha sıkı bağlar",
+      "Hafif çekirdekler elektriksel olarak birbirini çeker, ağır çekirdekler ise iter",
+      "Füzyon kütleçekiminden, fisyon ise elektrik kuvvetinden enerji alır; ortak bir nedenleri yoktur"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre nükleon başına bağlanma enerjisi nikel-62'de (8,7945 MeV) ve demir-56 çevresinde en yüksektir. Hafif tarafta birleştirmek, ağır tarafta bölmek ürünleri bu tepeye yaklaştırır; artan bağlanma enerjisi dışarı salınır. Proton ve nötron sayısı değişmez; hiçbir parçacık yok olmaz.",
+    "ders": "d31",
+    "bolum": 4
+  },
+  {
+    "id": "d31-2",
+    "soru": "NIF'te 7 Nisan 2025'te hedefe 2,08 megajul lazer enerjisi verilip 8,6 megajul füzyon enerjisi alındı. Bu sonuç için hangisi doğrudur?",
+    "secenekler": [
+      "Hedef kazancı yaklaşık 4'tür, ama bu oran lazerleri besleyen elektriği içermez; elektrik üreten füzyon santrali henüz yoktur",
+      "Hedef kazancı yaklaşık 4'tür ve bu, tesisin şebekeden çektiğinden fazla elektrik ürettiği anlamına gelir",
+      "Kazanç 1'in altındadır, yani verilen enerji geri alınamamıştır",
+      "Bu deney ITER'in Q ≥ 10 hedefine ulaşıldığını göstermiştir"
+    ],
+    "dogru": 0,
+    "aciklama": "8,6 ÷ 2,08 ≈ 4,1; LLNL hedef kazancını 4,13 olarak verir. Derse göre bu bir hedef kazancıdır, yalnız hedefe ulaşan lazer enerjisiyle karşılaştırılır; tesisin toplam harcaması hesaba girmez. ITER'in Q ≥ 10 hedefi ise 2039'daki döteryum-trityum işletmesiyle sınanacak.",
+    "ders": "d31",
+    "bolum": 6
+  },
+  {
+    "id": "d31-3",
+    "soru": "Bir odun parçasında karbon-14 oranı, canlı bir örnekteki oranın sekizde birine inmiş. Yarılanma ömrü yaklaşık 5.700 yıl ise örnek yaklaşık kaç yaşındadır (kalibrasyon öncesi)?",
+    "secenekler": [
+      "Yaklaşık 5.700 yıl",
+      "Yaklaşık 11.400 yıl",
+      "Yaklaşık 17.100 yıl",
+      "Yaklaşık 45.600 yıl"
+    ],
+    "dogru": 2,
+    "aciklama": "1/8 = (1/2)³, yani üç yarılanma ömrü geçmiştir: 3 × 5.700 ≈ 17.100 yıl. Derse göre yöntemin pratik sınırı yaklaşık 50.000 yıldır ve radyokarbon yaşları ağaç halkalarıyla kurulan kalibrasyon eğrileriyle takvim yılına çevrilir.",
+    "ders": "d31",
+    "bolum": 11
+  },
+  {
+    "id": "d31-4",
+    "soru": "Yıllık doğal radyasyon dozunun dünya ortalaması ve bir kafa tomografisinin tipik dozu hakkında derste verilen değerler hangisidir?",
+    "secenekler": [
+      "Doğal doz yılda 0,0001 milisievert; kafa tomografisi 20 milisievert",
+      "Doğal doz yılda 2,4 milisievert (UNSCEAR); kafa tomografisi 1,4–2,0 milisievert (IPEM ve FDA)",
+      "Doğal doz yılda 260 milisievert; kafa tomografisi 0,02 milisievert",
+      "Doğal doz yılda 20 milisievert; kafa tomografisi 1.000 milisievert"
+    ],
+    "dogru": 1,
+    "aciklama": "UNSCEAR'a göre doğal kaynaklardan dünya ortalaması yılda 2,4 milisievert, en büyük payı yaklaşık 1,2 milisievertle radon alır. Kafa tomografisi için FDA 2,0, IPEM 1,4 milisievert verir; doz cihaza ve ayarlara göre değişir. 2,0 milisievert kabaca 300 günlük doğal doza eşittir.",
+    "ders": "d31",
+    "bolum": 15
+  }
+]

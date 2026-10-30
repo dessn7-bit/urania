@@ -1,0 +1,533 @@
+{
+  "id": "d30",
+  "unite": "fizik",
+  "yeni": true,
+  "baslik": "Enerji, Isı ve Entropi: Yıldızlar ve Zamanın Oku",
+  "ozet": "Sıcak bir çay neden hep soğur da kendiliğinden hiç ısınmaz? Bu derste enerjinin neden kaybolmadığını, ısının aslında titreşen ve koşuşturan moleküller olduğunu, sıcaklığın ve mutlak sıfırın ne anlama geldiğini, termodinamiğin yasalarını ve entropiyi, yani bir durumun kaç farklı biçimde gerçekleşebileceğinin ölçüsünü öğreneceksin. Sonra bu fikirlerle zamanın neden tek yöne aktığını, yıldızların ve canlıların Güneş ışığıyla nasıl beslendiğini, kara deliklerin entropisini ve evrenin uzak geleceğini konuşacağız.",
+  "on_bilgi": [
+    "d2",
+    "d5"
+  ],
+  "bolumler": [
+    {
+      "baslik": "Bir fincan çayın sorusu",
+      "paragraflar": [
+        "Masaya bir bardak sıcak çay koy ve unut. Yarım saat sonra çay oda sıcaklığına inmiş olur. Bunu hepimiz biliriz, ama tersini hiç görmedik: ılık bir çayın kendi kendine ısınıp yeniden buharlar tüttürdüğünü. Oysa enerji açısından ters olay yasak değildir. Odanın havasında, çayı yeniden kaynatmaya yetecek kadar ısı fazlasıyla vardır. Enerji yalnızca bir yerden ötekine geçecekti; hiçbir şey yoktan var olmayacaktı. Peki doğa neden bu yolu hiç seçmiyor?",
+        "Bu sorunun cevabı, fiziğin en derin fikirlerinden birine, entropiye götürür. Entropi kelimesi çoğu zaman “düzensizlik” diye çevrilir. Bu derste bunun eksik bir çeviri olduğunu, asıl anlamının çok daha basit ve çok daha güçlü olduğunu göreceksin: entropi, bir durumun kaç farklı biçimde gerçekleşebileceğini sayar. Çay soğur, çünkü “sıcaklığın odaya yayılmış olması” akıl almaz sayıda farklı biçimde gerçekleşebilir, “sıcaklığın fincanda toplanmış olması” ise çok daha az biçimde.",
+        "Bu basit fikir masadaki fincandan çok daha büyük şeyleri açıklar. Zamanın neden hep ileri aktığını, yani geçmişi hatırlayıp geleceği hatırlamadığımızı. Bir yıldızın enerji kaybettikçe neden ısındığını. Dünya'daki bütün canlıların Güneş'ten aslında enerji değil, düşük entropi aldığını. Kara deliklerin neden evrendeki en büyük entropi depoları olduğunu. Evrenin uzak geleceğinin neden “ısıl ölüm” diye anıldığını. Hepsine sırayla geleceğiz.",
+        "Fizik bilgisi gerekmiyor. Ama yolda birkaç kavramı sağlam kurmamız lazım: enerji, ısı, sıcaklık. Önce enerjinin neden hiç kaybolmadığını, sonra ısının ne olduğunu konuşacağız. Formüller az ve hep önce sözle anlatılacak; her birinin yanında gündelik sayılarla çözülmüş bir örnek olacak. Işığın sıcaklıkla ilişkisini d2'de, yıldızların iç dengesini d5'te gördün; burada o derslerin altındaki ortak fiziğe iniyoruz."
+      ],
+      "akilda": "Enerji yasaları sıcak çayın kendiliğinden ısınmasını yasaklamaz; onu pratikte imkânsız kılan şey entropidir. Entropi bir durumun kaç farklı biçimde gerçekleşebileceğinin ölçüsüdür."
+    },
+    {
+      "baslik": "Enerji nedir, neden korunur?",
+      "paragraflar": [
+        "Enerji, bir şeyin iş yapabilme, yani bir şeyi itip çekip hareket ettirebilme ya da ısıtabilme kapasitesidir. Tek bir biçimi yoktur. Koşan bir köpeğin hareketinde, yüksekteki bir taşın konumunda, ekmeğin içindeki kimyasal bağlarda, telden akan elektrikte, Güneş'ten gelen ışıkta hep aynı şey vardır: enerji. Fizikçiler onu joule (J) denen birimle ölçer. Bir joule küçük bir miktardır: bir elmayı yaklaşık bir metre yukarı kaldırmak için gereken enerji mertebesindedir.",
+        "Enerjinin en önemli özelliği korunmasıdır. Termodinamiğin birinci yasası bunu söyler: enerji yoktan var edilemez, var olan enerji de yok edilemez; yalnızca biçim değiştirir. Bir taş düşerken yükseklikten gelen enerjisi harekete dönüşür. Yere çarptığında hareket durur ama enerji kaybolmaz; çarpma sesine, toprağın ve taşın çok az ısınmasına dağılır. Hesabı yapabilirsen, toplam hep aynı çıkar.",
+        "Bir banka hesabı benzetmesi işe yarar. Para hesaplar arasında dolaşabilir, dövize çevrilebilir, ama sistemin dışından para girmiyorsa toplam değişmez. Benzetmenin sınırı şu: bankada para basılabilir ya da silinebilir, doğada ise birinci yasanın bilinen hiçbir istisnası yoktur. Bu yüzden yakıt almadan sonsuza dek çalışan bir makine, yani birinci türden sürekli devinim makinesi, birinci yasaya göre imkânsızdır.",
+        "Enerji hesabına bazen beklemediğin kalemler de girer. d4'te gördüğün gibi Güneş'in çekirdeğinde dört hidrojen çekirdeği bir helyum çekirdeğine dönüşürken ortaya çıkan helyum, onu oluşturan dört çekirdekten biraz hafiftir. Aradaki küçük kütle farkı E = mc² bağıntısına göre enerji olarak açığa çıkar ve Güneş'i parlatan budur. Yani kütle de enerji defterinde bir hesaptır; birinci yasa ancak bu kalem de eklenince eksiksiz tutar. Bunun neden böyle olduğunu özel görelilik dersinde (d25) göreceksin. Buradaki ders şu: enerjinin korunumu, fizikçilerin yeni bir olgu bulduklarında hesaplarını ona göre genişlettikleri, ama bir kez bile vazgeçmedikleri bir ilkedir.",
+        "Peki öyleyse çay sorunu neden çözülmüyor? Birinci yasa yalnızca hesabın tutmasını ister. Çaydan odaya 1000 joule gitse de, odadan çaya 1000 joule gelse de toplam aynıdır. Yani birinci yasa iki yönü de serbest bırakır. Doğanın yalnız bir yönü seçmesi için ikinci bir kurala ihtiyaç var. O kurala gelmeden önce ısının ne olduğunu anlamamız gerekiyor."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Düşen bir kitabın enerjisi",
+        "metin": "Kütlesi 1 kg olan bir kitap 10 m yüksekten düşsün. Yüksekliğe bağlı enerji E = m × g × h ile bulunur: m kütle (kg), g yer çekimi ivmesi (standart değer 9,80665 m/s²), h yükseklik (m). E = 1 × 9,81 × 10 ≈ 98 J. Hava direncini yok sayarsak bu enerjinin tamamı yere varırken harekete dönüşür. Hareket enerjisi ½ × m × v² olduğundan ½ × 1 × v² = 98, yani v² ≈ 196 ve v ≈ 14 m/s, saatte yaklaşık 50 km. Kitap yere çarpıp durduğunda 98 J kaybolmaz: ses ve ısı olarak çevreye dağılır. Sonuç: yaklaşık 98 joule, biçim değiştirerek korunur."
+      },
+      "akilda": "Enerji biçim değiştirir ama toplamı korunur; bu termodinamiğin birinci yasasıdır. Birinci yasa bir olayın hangi yönde olacağını söylemez."
+    },
+    {
+      "baslik": "Isı nedir? Topların ve çarkların öğrettiği",
+      "paragraflar": [
+        "Isı bugün bize sıradan görünür, ama ne olduğu iki yüzyıl önce tartışmalıydı. Bir zamanlar ısının kalorik denen, ağırlıksız ve görünmez bir akışkan olduğu düşünülüyordu. Sıcak cisimde çok kalorik, soğukta az kalorik vardı; ısınmak, bu akışkanın içeri dolmasıydı. Termodinamiğin öncülerinden Sadi Carnot bile 1824'teki çalışmasında bu fikri kabul ediyordu.",
+        "Kaloriğe ilk ciddi darbeyi bir top fabrikası vurdu. Benjamin Thompson, yani Kont Rumford, Münih'teki tophanede top namlularının delinmesini izlerken sürtünmenin ortaya çıkardığı ısıya dikkat etti. 1798'de yayımladığı çalışmaya göre suya batırdığı bir namluyu delerken suyu yaklaşık iki buçuk saatte kaynatabildi. Delme sürdükçe ısı tükenmiyordu. Rumford'a göre namluya aktarılan tek şey hareketti; tükenmez bir akışkan deposu fikriyle bu bağdaşmıyordu. Çalışması önce düşmanca karşılandı, ama sonradan enerjinin korunumu fikrinin kurulmasına yardım etti.",
+        "Kesin kanıt İngiliz fizikçi James Joule'den geldi. Joule'ün düzeneğinde düşen ağırlıklar bir su kabının içindeki kanatlı çarkı döndürüyor, çark suyu çalkalıyor ve su çok az ısınıyordu. Joule sıcaklık artışının, düşen ağırlıkların yaptığı işle doğru orantılı olduğunu buldu. 1845'te yayımladığı sonuca göre 4,41 joule mekanik iş 1 kalori ısıya karşılık geliyordu. Bugünkü değer 4,1868 joule'dür; Joule'ün ilk ölçümü yalnızca yaklaşık yüzde 5 farklıydı. İngiltere'deki Bilim Müzesi Grubu'nun koleksiyonunda, 1876'da Salford'da yapılmış böyle bir düzenek hâlâ saklanıyor.",
+        "Bu deneylerin sonucu şudur: ısı bir madde değil, bir enerji aktarımıdır. Bir cismin içindeki atom ve moleküller durmadan titreşir, döner, birbirine çarpar. Isı, bu gizli hareketin enerjisinin sıcak bir cisimden soğuk bir cisme geçmesidir. Kaşığı çaya koyduğunda çaydaki hızlı moleküller kaşığın atomlarını daha hızlı titreştirir; kaşığın sapı bu yüzden ısınır. Elini ovuşturduğunda da aynı şey olur: kolunun hareketi, derideki moleküllerin rastgele hareketine dönüşür."
+      ],
+      "akilda": "Isı bir akışkan (kalorik) değil, moleküllerin rastgele hareketindeki enerjinin aktarımıdır. Rumford (1798) sürtünmeyle tükenmeyen ısıyı gösterdi; Joule (1845) mekanik işin ısıya sabit bir oranla dönüştüğünü ölçtü."
+    },
+    {
+      "baslik": "Sıcaklık ve mutlak sıfır",
+      "paragraflar": [
+        "Isı ile sıcaklık aynı şey değildir. Isı, akan enerjidir. Sıcaklık ise bir cisimdeki moleküllerin ortalama olarak ne kadar hızlı koşuşturduğunun ölçüsüdür. Daha kesin söylersek bir maddenin sıcaklığı, parçacıklarının yer değiştirme hareketinin ortalama enerjisiyle doğru orantılıdır. Dolu bir küvetteki ılık suyun içinde, kaynayan bir çaydanlıktakinden çok daha fazla ısı enerjisi olabilir; ama çaydanlık daha sıcaktır, çünkü oradaki moleküller ortalamada daha hızlıdır.",
+        "Bu tanım ilginç bir sonuç doğurur: sıcaklığın bir alt sınırı vardır. Moleküller ne kadar yavaşlayabilir? Aktarılabilir hareket enerjisinin hiç kalmadığı noktaya mutlak sıfır denir. Bu sıcaklık −273,15 °C'dir. Bilim insanlarının sıcaklık ölçeği kelvin (K) bu noktadan başlar: 0 K mutlak sıfırdır ve kelvin ölçeğinin bir derecesi Celsius'un bir derecesine eşittir. Yani 20 °C'lik bir oda yaklaşık 293 K'dir. Kuantum fiziğine göre mutlak sıfırda bile sıfır noktası enerjisi denen ve hiçbir zaman yok edilemeyen küçük bir kıpırtı kalır; tam sıfıra da hiçbir zaman ulaşılamaz.",
+        "Sıcaklığın birimi 2019'da yeniden tanımlandı. 20 Mayıs 2019'dan beri kelvin, Boltzmann sabiti denen bir doğa sabitinin değeri kesin olarak 1,380649 × 10⁻²³ J/K kabul edilerek tanımlanır. Boltzmann sabiti, sıcaklık ile tek bir parçacığın enerjisi arasındaki çeviri katsayısıdır: kelvin cinsinden sıcaklığı bu sayıyla çarparsan, o sıcaklıkta tek bir parçacığa düşen tipik enerjiyi joule olarak bulursun. Sayının bu kadar küçük olması, tek bir molekülün ne kadar küçük olduğunu anlatır.",
+        "Bilim insanlarının kelvini sevmesinin basit bir nedeni var: kelvinde oranlar anlamlıdır. Hava 10 °C'den 20 °C'ye çıktığında “iki kat sıcak” olmaz; kelvine çevirince 283 K'den 293 K'ye, yani yalnızca yaklaşık yüzde 3,5'lik bir artış görürsün. Moleküllerin ortalama hareket enerjisi de bu kadar artar. Buna karşılık 300 K'lik bir gaz, 600 K'ye ısıtılınca moleküllerinin ortalama hareket enerjisi gerçekten iki katına çıkar. Bu derste Carnot verimi ve entropi hesaplarında sıcaklığı hep kelvin olarak kullanmamızın nedeni budur: formüller sıcaklığın sıfırdan, yani mutlak sıfırdan başlamasını ister.",
+        "Gökyüzü de bir termometre koleksiyonudur. d2'de gördüğün gibi yıldızın rengi sıcaklığını ele verir: İstanbul'dan kış göğünde çıplak gözle görebileceğin mavimsi Rigel yaklaşık 12.100 K, turuncu Betelgeuse yaklaşık 3800 K'dir. Güneş'in yüzeyi 5772 K'dir. Büyük Patlama'dan kalan kozmik mikrodalga arka plan ise 2,725 K'dir (d8): mutlak sıfırın yalnızca üç derece kadar üstünde."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Odadaki hava molekülleri ne kadar hızlı?",
+        "metin": "Havanın çoğu azot molekülüdür (N₂). Bir azot molekülünün kütlesi yaklaşık 28 atomik kütle birimidir; bir birim 1,6605 × 10⁻²⁷ kg olduğundan m ≈ 4,65 × 10⁻²⁶ kg. Moleküllerin tipik hızı v ≈ √(3 × k × T ÷ m) ile bulunur; k Boltzmann sabiti (1,380649 × 10⁻²³ J/K), T kelvin cinsinden sıcaklık. Oda için T = 300 K alalım: 3 × 1,380649 × 10⁻²³ × 300 ≈ 1,243 × 10⁻²⁰. Bunu 4,65 × 10⁻²⁶'ya böl: yaklaşık 267.000. Karekök: v ≈ 517 m/s, saatte yaklaşık 1860 km. Kaynaktaki ders notu da oda sıcaklığındaki azot için yaklaşık 500 m/s verir. Aynı molekül kozmik arka planın 2,725 K'inde yalnızca yaklaşık 49 m/s ile giderdi. Sonuç: odada yaklaşık 517 m/s."
+      },
+      "akilda": "Sıcaklık moleküllerin ortalama hareket enerjisinin ölçüsüdür; ısı ise akan enerjidir. Mutlak sıfır 0 K = −273,15 °C'dir ve 2019'dan beri kelvin, Boltzmann sabitinin kesin değeriyle tanımlanır."
+    },
+    {
+      "baslik": "Termodinamiğin dört yasası",
+      "paragraflar": [
+        "Termodinamik, ısı, iş ve enerji arasındaki ilişkileri inceleyen fizik dalıdır. Bütün içeriği dört kısa yasaya sığar. Numaraları biraz tuhaftır, çünkü yasalar bulundukları sırayla değil, mantık sırasıyla dizilmiştir. En temel olanı en son fark edildi ve listenin başına “sıfırıncı” diye kondu; bu adı 1930'larda Ralph Fowler buldu.",
+        "Sıfırıncı yasa termometrenin neden işe yaradığını söyler: iki cisim, üçüncü bir cisimle ayrı ayrı ısıl dengedeyse, birbirleriyle de ısıl dengededir. Isıl denge, iki cisim temas ettiğinde aralarında net ısı akışı olmaması demektir; yani sıcaklıkları aynıdır. Termometre üçüncü cisimdir: hem çaya hem de sütlü kahveye aynı değeri gösteriyorsa, ikisini birbirine dokundurduğunda ısı akmaz.",
+        "Birinci yasayı gördük: enerji korunur. Bir sistemin iç enerjisindeki değişim, ona verilen ısıdan sistemin dışarıya yaptığı işin çıkarılmasına eşittir. İkinci yasa ise yönü belirler. En bilinen biçimini Rudolf Clausius 1854'te yazdı: ısı, aynı anda başka bir değişiklik olmadan, hiçbir zaman soğuk bir cisimden sıcak bir cisme geçemez. Bugünkü dille: kendi hâline bırakılmış, dışarıyla ısı ve madde alışverişi olmayan bir sistemde, yani yalıtılmış sistemde entropi hiçbir zaman azalmaz. Çayın sorusunun cevabı bu yasadır.",
+        "Birinci yasanın bu muhasebe biçimini mutfakta görebilirsin. Ocaktaki kapalı bir tencereye 1000 J ısı verdiğini düşün. Isınan su buharı kapağı biraz kaldırırsa, kapağı kaldırmak için 50 J iş harcanmış olsun (sayılar örnek için seçildi). O zaman tencerenin içindeki suyun ve buharın iç enerjisi, yani moleküllerinin toplam hareket ve bağ enerjisi, 1000 − 50 = 950 J artar. Isı içeri girer, iş dışarı çıkar, aradaki fark içeride kalır. Termik santraldeki kazan, araba motorundaki silindir, hatta bir yıldızın içindeki gaz katmanı da aynı hesabı tutar; yalnızca sayılar değişir.",
+        "Üçüncü yasayı Walther Nernst 1906 ile 1912 arasında ortaya koydu: sıcaklık mutlak sıfıra yaklaşırken bir sistemin entropisi sabit bir değere yaklaşır. Önceki bölümde gördüğün gibi mutlak sıfıra da tam olarak hiçbir zaman ulaşılamaz. İkinci yasa da sürekli devinim makinesinin ikinci türünü, yani çevredeki ısıyı kendiliğinden tümüyle işe çeviren bir makineyi yasaklar. Denizdeki suyun ısısıyla, yakıtsız giden bir gemi düşünülebilir; birinci yasa buna itiraz etmez, ama ikinci yasa eder."
+      ],
+      "akilda": "Sıfırıncı yasa sıcaklığı, birinci yasa enerjinin korunumunu, ikinci yasa olayların yönünü (entropi azalmaz), üçüncü yasa mutlak sıfırın davranışını anlatır."
+    },
+    {
+      "baslik": "Isı makineleri ve Carnot'nun sınırı",
+      "paragraflar": [
+        "Termodinamik buhar makinelerinin çağında doğdu. Fransız mühendis Sadi Carnot, Haziran 1824'te yayımladığı “Ateşin Hareket Ettirici Gücü Üzerine Düşünceler” adlı denemesinde bir ısı makinesinin, yani ısıdan iş üreten bir düzeneğin, en fazla ne kadar verimli olabileceğini sordu. Cevabı şaşırtıcı derecede yalındı: en yüksek verim makinenin ne kadar ustaca yapıldığına ya da hangi maddeyi kullandığına değil, yalnızca ısının aktığı sıcak ve soğuk cisimlerin sıcaklıklarına bağlıdır.",
+        "Carnot'nun fikri, suyun bir yüksekten aşağı inerken çark çevirmesine benzer. Isı makinesi de ısıyı sıcak bir kaynaktan soğuk bir hazneye akıtırken bu akıştan iş çıkarır. Akacak bir yokuş yoksa, yani iki tarafın sıcaklığı aynıysa, ne kadar ısı olursa olsun iş çıkmaz. Sınırı şu formül verir: en yüksek verim = 1 − (soğuk tarafın sıcaklığı ÷ sıcak tarafın sıcaklığı). İki sıcaklık da kelvin cinsinden olmalıdır. Benzetmenin sınırı da şu: Carnot ısıyı akan bir kalorik sanıyordu; bugün ısının enerji olduğunu ve makinede bir kısmının işe dönüşüp akış sırasında “harcandığını” biliyoruz.",
+        "Carnot'nun çalışması yaşarken pek ilgi görmedi; Carnot 1832'de 36 yaşında öldü. Onu unutulmaktan 1834'te Émile Clapeyron'un makalesi kurtardı. Sonra Clausius, Carnot'nun akıl yürütmesini ısının mekanik eşdeğeriyle uyumlu hâle getirdi; William Thomson, yani sonraki adıyla Lord Kelvin ise Carnot'nun çözümlemesini kullanarak bugün kelvin dediğimiz mutlak sıcaklık ölçeğini kurdu.",
+        "Aynı makineyi tersine de çalıştırabilirsin. Dışarıdan iş verirsen, makine ısıyı soğuk taraftan alıp sıcak tarafa pompalar. Buzdolabı ve klima böyle çalışır: elektrikle dönen bir kompresör, içerideki ısıyı dışarıya taşır. Bu, ikinci yasaya aykırı değildir, çünkü ısı kendiliğinden değil, harcanan işin bedeli ödenerek yokuş yukarı çıkarılır. Carnot'nun akıl yürütmesi burada da bir sınır koyar: iki taraf arasındaki sıcaklık farkı büyüdükçe, aynı miktarda ısıyı taşımak için gereken en küçük iş artar. Yazın klimanın en sıcak günlerde zorlanması bu ilkeyle uyumludur.",
+        "Bu sınır bugün hâlâ geçerlidir. Bir termik santral, bir araba motoru ya da bir jet motoru da birer ısı makinesidir ve hiçbiri Carnot sınırını aşamaz. Gerçek makineler sürtünme ve ısı kaçakları yüzünden bu sınırın da altında kalır. Bu yüzden santrallerin soğutma kuleleri ve araba radyatörleri vardır: ısının bir kısmını mutlaka soğuk tarafa atmak zorundasın. Bu, kötü mühendisliğin değil, ikinci yasanın sonucudur."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Bir buhar türbininin aşamayacağı verim",
+        "metin": "Bir türbine 550 °C'lik buhar girsin, soğutma suyu 25 °C olsun (bu sayılar hesap için seçilmiş varsayımlardır). Önce kelvine çevir: 550 + 273 = 823 K, 25 + 273 = 298 K. En yüksek verim = 1 − 298 ÷ 823 = 1 − 0,362 ≈ 0,638. Yani yakıttan gelen ısının en fazla yaklaşık yüzde 64'ü işe çevrilebilir; geri kalan en az yüzde 36 soğuk tarafa atılmak zorundadır. Gerçek bir santral sürtünme ve kayıplar yüzünden bunun da altında kalır. Verimi artırmanın yolu sıcak tarafı daha sıcak ya da soğuk tarafı daha soğuk yapmaktır. Sonuç: en fazla yaklaşık %64."
+      },
+      "akilda": "Bir ısı makinesinin en yüksek verimi yalnızca sıcak ve soğuk tarafın sıcaklıklarına bağlıdır: 1 − T_soğuk ÷ T_sıcak (kelvinle). Carnot bunu 1824'te buldu; hiçbir makine bu sınırı aşamaz."
+    },
+    {
+      "baslik": "Entropi: Clausius'un adını koyduğu büyüklük",
+      "paragraflar": [
+        "Clausius, Carnot'nun sınırını incelerken, ısı akışlarında hep aynı yönde değişen bir büyüklük olduğunu fark etti. 1865'te ona entropi adını verdi. Kelimeyi Yunancada “dönüşüm” anlamına gelen bir kökten türetti ve bilerek “enerji” kelimesine benzetti; ona göre iki büyüklük fiziksel anlamca birbirine çok yakındı. Aynı makaleyi iki cümlelik bir özetle bitirdi: evrenin enerjisi sabittir, evrenin entropisi en büyük değere doğru gider.",
+        "Clausius'un tanımı sıcaklıkla ilgilidir. Bir cisme belli bir sıcaklıkta biraz ısı verirsen, cismin entropisi verilen ısının o sıcaklığa bölümü kadar artar. Isıyı alan cisim soğuksa artış büyük, sıcaksa küçüktür. Sözle: aynı miktarda ısı, soğuk bir cisimde sıcak bir cisimdekinden daha fazla “fark yaratır”. Kalabalık bir düğün salonuna bir kişinin daha girmesi kimsenin dikkatini çekmez; boş bir odaya giren biri ise her şeyi değiştirir. Benzetme yalnızca oranı anlatır; entropi insanların dikkatiyle ilgili değildir.",
+        "Bu tanımla çayın sırrı açılır. Isı sıcak çaydan soğuk odaya geçtiğinde, çayın kaybettiği entropi, odanın kazandığı entropiden küçüktür, çünkü aynı ısı çayda büyük bir sıcaklığa, odada küçük bir sıcaklığa bölünür. Toplam entropi artar. Ters yönde, odadan çaya ısı akması toplam entropiyi azaltırdı. İkinci yasa tam olarak bunu yasaklar. Yani ikinci yasanın Clausius biçimi ile “entropi azalmaz” biçimi aynı şeyin iki söylenişidir.",
+        "Ama bu tanım bir şeyi açıklamaz: neden? Neden doğa toplam entropiyi artıran yolu seçiyor? Clausius'un entropisi bir hesap aracıdır; ölçülür, hesaplanır, ama ne olduğu söylenmez. Cevabı, maddenin atomlardan oluştuğunu ciddiye alan Avusturyalı fizikçi Ludwig Boltzmann verdi. Onun cevabı bütün dersin kalbidir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Çay soğurken entropi ne kadar artar?",
+        "metin": "Çay 350 K'de (yaklaşık 77 °C), oda 293 K'de (yaklaşık 20 °C) olsun ve çaydan odaya 1000 J ısı geçsin. Bu ısı az olduğu için sıcaklıklar bu sırada pek değişmez, diye kabul edelim. Çayın entropi değişimi: −1000 ÷ 350 ≈ −2,857 J/K. Odanın entropi değişimi: +1000 ÷ 293 ≈ +3,413 J/K. Toplam: −2,857 + 3,413 ≈ +0,556 J/K. Toplam artı çıktı, yani bu olay kendiliğinden olabilir. Isı tersine, odadan çaya akmış olsaydı işaretler değişir ve toplam −0,556 J/K olurdu; ikinci yasa buna izin vermez. Sonuç: yaklaşık +0,56 J/K."
+      },
+      "akilda": "Clausius 1865'te entropiyi tanımladı: bir cisme verilen ısının sıcaklığa bölümü kadar entropi artar. Isı sıcaktan soğuğa aktığında toplam entropi artar; tersi yasaktır."
+    },
+    {
+      "baslik": "Boltzmann: entropi, olası durumların sayısıdır",
+      "paragraflar": [
+        "Viyana'daki Merkez Mezarlığı'nda, Zentralfriedhof'ta, bir mezar taşının üstünde kısa bir formül yazar: S = k log W. Mezar Ludwig Boltzmann'ındır ve formül onun 1877'de geliştirdiği fikrin özetidir. S entropidir, k Boltzmann sabitidir, W ise belli bir genel durumun kaç farklı ayrıntılı biçimde gerçekleşebileceğidir. Log, logaritma demektir: çok büyük sayıları küçültüp toplanabilir hâle getiren bir işlem. İlginç bir ayrıntı: Boltzmann formülü bu sabitle yazmadı; k'yi formüle Max Planck'ın Boltzmann'ı okuyuşu yerleştirdi.",
+        "İki kavramı ayırmamız gerekiyor. Makrodurum, bir sistemi kabaca tarif eden bilgidir: “gazın sıcaklığı 20 °C, kabın yarısını dolduruyor” gibi. Mikrodurum ise her bir molekülün tam olarak nerede olduğunu ve ne hızla gittiğini belirten tam ayrıntıdır. Aynı makrodurum çok sayıda farklı mikrodurumla gerçekleşebilir. Odanın sıcaklığı 20 °C iken moleküllerin hangisinin nerede olduğu her an değişir, ama sen fark etmezsin. W, bir makrodurumla uyumlu mikrodurumların sayısıdır.",
+        "Boltzmann'ın fikri şudur: moleküller durmadan çarpışıp karıştığı için sistem bütün mikrodurumları aşağı yukarı eşit sıklıkla dolaşır. O hâlde kendini en çok mikrodurumu olan makrodurumda bulması neredeyse kesindir. Entropinin artması bir yasak ya da bir kuvvet değildir; sayıların ezici üstünlüğüdür. Sıcak çay ile soğuk odanın enerjiyi paylaşabileceği yolların sayısı, enerjinin fincanda toplu kaldığı yolların sayısından akıl almaz ölçüde büyüktür. Çay soğur, çünkü soğumuş durumun sayısız biçimi vardır.",
+        "Formülde neden logaritma var? Çünkü iki ayrı sistemi bir araya getirdiğinde mikrodurum sayıları çarpılır, entropiler ise toplanmalıdır. Birinci kutunun 1000, ikinci kutunun 1000 mikrodurumu varsa, ikisi birlikte 1000 × 1000 = 1.000.000 mikrodurumludur. Logaritma çarpmayı toplamaya çeviren işlemdir: on tabanında log 1000 = 3 ve log 1.000.000 = 6, yani 3 + 3. Böylece iki bardak suyun entropisi bir bardağınkinin iki katı olur, tıpkı kütlede olduğu gibi. Bir başka kazanç da şu: gerçek bir gazda W, 10'un 10²³'üncü kuvveti mertebesinde akıl almaz bir sayıdır; logaritması ise k ile çarpılınca joule bölü kelvin mertebesinde, elle tutulur bir sayıya iner.",
+        "Bu bakış açısı önemli bir dürüstlük de içerir. Boltzmann'a göre ikinci yasa mutlak bir yasak değil, istatistiksel bir kesinliktir. Çayın kendiliğinden ısınması fizik yasalarınca imkânsız değil, yalnızca o kadar olasılık dışıdır ki evrenin bütün ömrü boyunca beklesen bile görmezsin. Entropiyi molekül sayımından çıkaran bu yaklaşıma istatistiksel mekanik denir. Boltzmann 1906'da öldü; formülü bugün mezar taşında okunuyor."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Paralarla entropi saymak",
+        "metin": "Dört madeni para at. Her biri yazı ya da tura gelebilir; olası sıralamaların (mikrodurumların) sayısı 2 × 2 × 2 × 2 = 16. “Dördü de yazı” makrodurumu yalnızca 1 sıralamayla olur. “İki yazı, iki tura” makrodurumu ise 6 farklı sıralamayla olur: YYTT, YTYT, YTTY, TYYT, TYTY, TTYY. Şimdi 100 para düşün. Olası sıralamalar 2¹⁰⁰ ≈ 1,27 × 10³⁰. “Hepsi yazı” bunlardan yalnızca biridir. “Tam 50 yazı” ise yaklaşık 1,01 × 10²⁹ sıralamayla olur, yani bütün olasılıkların yaklaşık %8'i. 40 ile 60 arası yazı gelme olasılığı yaklaşık %96'dır. Bir gazda para yerine 10²³ mertebesinde molekül vardır; dengeden göze görünür bir sapmanın olasılığı sıfıra o kadar yakındır ki pratikte hiç gerçekleşmez. Sonuç: en çok biçimde gerçekleşen makrodurum kazanır."
+      },
+      "akilda": "Boltzmann'a göre S = k log W: entropi, bir makrodurumla uyumlu mikrodurum sayısının logaritmasıdır. Entropi artar, çünkü sistem kendini neredeyse kesinlikle en çok mikrodurumu olan makrodurumda bulur."
+    },
+    {
+      "baslik": "Düzensizlik mi? Yaygın yanlış anlamalar",
+      "paragraflar": [
+        "Entropi çoğu zaman “düzensizlik” diye anlatılır: dağınık oda yüksek entropili, toplu oda düşük entropili. Boltzmann'ın kendisi de entropiyi istatistiksel bir “karışıklık” ölçüsü olarak görüyordu ve benzetme bazen işe yarar. Ama sınırları büyüktür. Odanın dağınıklığı senin gözüne göre bir düzendir; fizik ise yalnızca mikrodurumları sayar. Masadaki kitapların yerleri ile odadaki hava moleküllerinin sayısı karşılaştırılamaz bile: termodinamik entropinin neredeyse tamamı görmediğimiz moleküler hareketlerdedir. Daha güvenilir bir okuma şudur: entropi, enerjinin kaç farklı biçimde dağıtılabileceğinin ölçüsüdür.",
+        "İkinci yanlış anlama, ikinci yasanın her yerde entropinin artmasını şart koştuğudur. Yasa, yalıtılmış bir sistemin toplam entropisi için geçerlidir. Bir parçada entropi azalabilir, yeter ki başka bir yerde daha fazla artsın. Buzdolabı içini soğutur ve içerideki entropiyi azaltır; bunu elektrikle çalışıp arkasındaki ızgaradan mutfağa daha fazla ısı atarak yapar. Clausius'un cümlesindeki “başka bir değişiklik olmadan” kaydı tam olarak budur: ısıyı soğuktan sıcağa taşımak mümkündür, ama bedeli ödenerek.",
+        "Üçüncü yanlış anlama canlılarla ilgilidir: “Hayat düzen kurar, o hâlde ikinci yasayı çiğner.” Çiğnemez. Canlılar açık sistemlerdir; çevreleriyle ısı ve madde alışverişi yaparlar. Böyle bir sistemde entropinin yerel olarak azalması ikinci yasayla tümüyle uyumludur. Bir bitki yaprak açarken, aldığı Güneş ışığını ve yaydığı ısıyı da hesaba katarsan toplam entropi artar. Bunun hesabını aşağıda Güneş ve Dünya için yapacağız.",
+        "Son bir karışıklık da kelimenin kendisiyle ilgilidir. 1948'de Claude Shannon iletişim üzerine çığır açan makalesinde bir mesajın belirsizliğini ölçen bir büyüklük tanımladı ve ona da entropi dedi. Matematiği Boltzmann'ınkine benzer, ama Shannon'ın bilgi entropisi çok daha genel bir kavramdır; ikisi aynı şey sanılarak sık sık karıştırılır. Biraz sonra Maxwell'in cini örneğinde bu iki entropinin gerçekten buluştuğu bir yeri göreceksin."
+      ],
+      "akilda": "Entropi gözle görülen dağınıklık değil, enerjinin dağılabileceği yolların sayısıdır. İkinci yasa yalıtılmış sistemin toplamı için geçerlidir; buzdolabı ve canlılar yerel olarak entropiyi azaltır ama çevrede daha fazlasını artırır."
+    },
+    {
+      "baslik": "Maxwell'in cini ve bilginin bedeli",
+      "paragraflar": [
+        "İkinci yasaya karşı en ünlü meydan okumayı, elektromanyetizmayı birleştiren İskoç fizikçi James Clerk Maxwell yaptı. Fikir ilk kez 1867 dolaylarında Peter Tait'le mektuplaşmasında belirdi, 1871'de “Isı Kuramı” kitabında yayımlandı. Aynı sıcaklıkta gazla dolu, ortasında küçük bir kapak bulunan iki odalı bir kap düşün. Kapağın başında çok küçük, çok becerikli bir varlık duruyor. Hızlı bir molekül sağa doğru gelirse kapağı açıyor, yavaş bir molekül sola gelirse yine açıyor; geri kalan zamanlarda kapalı tutuyor.",
+        "Bir süre sonra sağ oda hızlı moleküllerle dolar ve ısınır, sol oda soğur. Ortada hiç iş harcanmadan bir sıcaklık farkı ortaya çıkmıştır; bu farkla bir makine çalıştırıp bedava iş elde edebilirsin. İkinci yasa çiğnenmiş gibi görünür. Maxwell bu varlığa hiç “cin” demedi; adı 1874'te Nature dergisinde William Thomson'dan, yani Lord Kelvin'den gelir. Maxwell'in cini bir yüzyıl boyunca fizikçileri uğraştırdı.",
+        "Çözümün anahtarı bilgidir. Cinin her molekülün hızını ölçmesi, bunu aklında tutması ve sonra yeni moleküller için hafızasını boşaltması gerekir. Rolf Landauer 1961'de bilginin silinmesinin ısı açığa çıkaran bir süreç olduğunu savundu: bir bitlik bilgiyi silmek, en az k × T × ln 2 kadar ısı üretir. Burada k Boltzmann sabiti, T sıcaklık, ln 2 ise yaklaşık 0,693'tür. Bu sınıra Landauer ilkesi denir. Cinin hafızasını temizlerken çevreye attığı ısı, kazandığı entropinin en az kendisi kadarını geri ödetir. Modern çözümde Leo Szilard, Landauer ve Charles Bennett'in katkısı anılır.",
+        "Fikir 2012'de laboratuvarda sınandı. Antoine Bérut ve Eric Lutz'un da aralarında bulunduğu bir ekip, lazerle oluşturulmuş iki çukurlu bir tuzakta tek bir küçük cam boncuğu tuttu; boncuğun hangi çukurda olduğu 0 ya da 1'i, yani bir biti temsil ediyordu. Bu biti defalarca silip ortaya çıkan ısıyı boncuğun hareketinden hesapladılar. Nature dergisinde yayımlanan sonuca göre silme işlemi yavaşlatıldıkça açığa çıkan ortalama ısı tam Landauer sınırına yaklaşıyordu. Yani bilgi soyut bir şey değildir; fiziksel bir bedeli vardır."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Bir biti silmenin en küçük bedeli",
+        "metin": "Landauer sınırı k × T × ln 2'dir. Oda sıcaklığı için T = 300 K al. k × T = 1,380649 × 10⁻²³ × 300 ≈ 4,142 × 10⁻²¹ J. Bunu ln 2 ≈ 0,693 ile çarp: yaklaşık 2,87 × 10⁻²¹ J. Bérut ve arkadaşlarının makalesi de oda sıcaklığı için yaklaşık 3 × 10⁻²¹ J verir. Bu sayı akıl almaz derecede küçüktür: bir milyar milyar (10¹⁸) biti oda sıcaklığında silmek bile en az yalnızca yaklaşık 0,003 J ısı gerektirir. Sınır, doğanın izin verdiği en düşük değerdir; gerçek bir aygıtın bundan fazla harcaması yasak değildir. Sonuç: bit başına yaklaşık 3 × 10⁻²¹ joule."
+      },
+      "akilda": "Maxwell'in cini molekülleri ayıklayarak ikinci yasayı çiğner gibi görünür. Çözüm: bilgiyi silmenin en az k × T × ln 2 kadar ısı bedeli vardır (Landauer 1961); 2012'de deneyle doğrulandı."
+    },
+    {
+      "baslik": "Zamanın oku: geçmişi neden hatırlarız?",
+      "paragraflar": [
+        "Bir bardağın yere düşüp kırıldığı bir videoyu geriye doğru oynat. Hemen fark edersin: parçalar yerden zıplayıp bir araya geliyor, bardak masaya geri konuyor. Bu sahne hiçbir zaman gerçek olmaz. Ama ilginç olan şu: tek tek çarpışan iki bilardo topunun videosunu geriye oynatsan fark edemezsin; ters sahne de fizik kurallarına uyar. Fiziğin temel yasaları, çok küçük bir istisna dışında, zamanın yönünü umursamaz. İstisna, parçacık fiziğindeki zayıf kuvvetin çok nadir bazı süreçleridir ve zamanın okunu ancak belli belirsiz gösterir.",
+        "O hâlde kırılan bardağın, soğuyan çayın, eriyen buzun tek yönlülüğü nereden geliyor? Cevap entropidir. Tek tek moleküllerin hareketi geri döndürülebilir, ama sayısız molekülün toplu davranışı entropiyi artıran yöne gider. Bu tek yönlülüğe zamanın oku denir. Kavramı 1927'de İngiliz astrofizikçi Arthur Eddington geliştirdi ve 1928'de yayımlanan “Fiziksel Dünyanın Doğası” adlı kitabıyla geniş kitlelere taşıdı. Termodinamik ok, yalıtılmış sistemlerde entropinin zamanla artmasından gelir.",
+        "Bir düşünce deneyi bu fikri keskinleştirir. Soğumuş bir çaydaki ve çevresindeki havadaki her molekülün hızını bir anda tam tersine çevirebildiğini düşün. Fizik yasaları zaman yönünü umursamadığına göre, her molekül geldiği yolu geri izlerdi; ısı odadan çaya toplanır, çay yeniden ısınırdı. Yani ters yönde ilerleyen mikrodurumlar vardır. Ama bunlar sayısız mikrodurum arasında akıl almaz derecede özel, ince ayarlanmış seçimlerdir; en küçük bir dokunuş, tek bir molekülün sapması bu düzeni bozar ve sistem yine çoğunluğun, yani soğumuş hâlin içine düşer. Tek yönlülük yasaların kendisinde değil, başlangıç koşullarının ne kadar özel olduğundadır.",
+        "Başka oklar da sayılır. Kozmolojik ok evrenin genişleme yönünü gösterir (d17). Işınım oku, dalgaların kaynaklarından dışarıya yayılmasıdır: göle taş atınca halkalar dışa doğru gider, kıyıdan merkeze doğru toplanmaz. Psikolojik ok ise bizim bildiğimiz geçmişten bilinmeyen geleceğe doğru akan, belleğimizle ve isteklerimizle bağlantılı zaman duygumuzdur. Nedenin önce, sonucun sonra gelmesi de ayrı bir ok olarak sayılır.",
+        "Asıl derin soru şudur: entropi bugün neden hâlâ artabiliyor? Artabilmesi için geçmişte daha düşük olması gerekir. Geriye doğru gittikçe entropi azalıyorsa, en başta, evrenin ilk anlarında çok düşük olmalıydı. Termodinamik okun evrenin ilk koşullarının bir sonucu olduğu düşünülür. Fizikçi Sean Carroll'un görüşüne göre bütün oklar, Büyük Patlama'ya zamanca görece yakın oluşumuzdan ve o andaki özel, düşük entropili durumdan gelir. Ama evrenin neden böyle düşük entropili bir durumda başladığı henüz bilinmiyor. Fizikçiler bu konuda anlaşamıyor ve bu, kozmolojinin açık sorularından biri olarak duruyor."
+      ],
+      "akilda": "Temel fizik yasaları neredeyse tamamen zaman yönünden bağımsızdır; zamanın oku entropinin artmasından gelir (Eddington 1927). Okun kökü evrenin düşük entropili başlangıcıdır; neden öyle başladığı bilinmiyor."
+    },
+    {
+      "baslik": "Yıldızlar: enerji kaybettikçe ısınan cisimler",
+      "paragraflar": [
+        "Gündelik hayatta enerji kaybeden şey soğur: ocaktan inen tencere, güneşte kalmış taş. Yıldızlar bu kurala uymaz. Kütleçekimiyle bir arada duran sistemlerde tuhaf bir şey olur: enerji kaybeden yıldız büzülür ve ısınır; enerji verilen yıldız ise genişler ve soğur. Cambridge'li gökbilimci Donald Lynden-Bell, astronomların bunu 1800'lerin sonundan beri bildiğini yazar ve Eddington'ın 1926'daki çalışmasına gönderme yapar. Fizikçiler bu duruma negatif ısı sığası der: ısı sığası, bir cismin sıcaklığını bir derece artırmak için gereken enerjidir; yıldızda bu sayı eksidir.",
+        "Nedenini sezgiyle görmek mümkün. Yıldızdaki gaz, kütleçekiminin içe çekişine karşı ancak sıcak ve hızlı olduğu için direnebilir; bu d5'teki hidrostatik dengedir. Yıldız yüzeyinden ışık olarak enerji kaybettiğinde basıncı biraz düşer, kütleçekimi onu biraz sıkıştırır. Sıkışan gaz kütleçekim enerjisinin bir kısmını hareket enerjisine çevirir, yani ısınır. Sonuçta yıldız enerji kaybetmiş ama daha sıcak olmuştur. d5'te gördüğün Kelvin'in hesabı tam da bu mekanizmanın Güneş'i ne kadar parlatabileceğiydi.",
+        "Bu tuhaflık yıldızların ömrünü yönetir. d5'teki termostat benzetmesini hatırla: çekirdekte füzyon hızlanırsa yıldız genişler, soğur ve füzyon yavaşlar; yavaşlarsa yıldız büzülür, ısınır ve füzyon yeniden hızlanır. Bu kendini düzelten dengenin altında negatif ısı sığası yatar. Çekirdeğinde hidrojeni biten bir yıldızın çekirdeğinin büzülüp ısınması da (d5'teki kırmızı dev evresi) aynı ilkeyle anlaşılır.",
+        "Entropi açısından yıldız ne yapar? Sıcak bir yüzeyden, mutlak sıfıra yakın soğuklukta bir boşluğa ışık salar. Gece göğünün karanlık ve soğuk olması (d17) bu akışın şartıdır: soğuk bir hazne olmasaydı Carnot'nun yokuşu da olmazdı. Yıldızlar böylece evrene entropi saçar, ama bunu yaparken çekirdeklerinde düzenli yapılar, yani ağır elementler kurarlar. Lynden-Bell aynı yazısında negatif ısı sığalı bir sistemin büyük bir ısı deposuyla dengeye gelemeyeceğini de belirtir. Bu, kütleçekiminin evrende neden her yeri eşit sıcaklıkta düz bir gaz yerine sıcak yıldızlar ve soğuk boşluklar ürettiğini anlamak için güçlü bir ipucudur."
+      ],
+      "akilda": "Kütleçekimiyle bir arada duran sistemlerin ısı sığası negatiftir: yıldız enerji kaybedince büzülür ve ısınır. Yıldızın kendini düzelten dengesi ve evrelerinin sırası bu ilkeye dayanır."
+    },
+    {
+      "baslik": "Güneş'ten aldığımız şey: enerji değil, düşük entropi",
+      "paragraflar": [
+        "Dünya Güneş'ten her saniye büyük miktarda enerji alır. Ama bu enerjiyi biriktirmez; yaklaşık aynı miktarı uzaya geri yayar. Öyle olmasaydı gezegen sürekli ısınırdı. Peki enerji girdiği kadar çıkıyorsa, canlılar ve hava olayları neyle besleniyor? Cevap, giren ve çıkan enerjinin niteliğindeki farktır. Dünya'ya gelen ışık, yüzeyi 5772 K olan Güneş'ten gelir; d2'deki Wien yasasına göre bu ışığın tepe noktası yaklaşık 500 nm'de, yani görünür ışıktadır. Dünya'nın uzaya geri saldığı ışık ise yaklaşık 254 K'lik bir cismin kızılötesi ışınımıdır.",
+        "d2'den bildiğin gibi bir fotonun tipik enerjisi, onu salan cismin sıcaklığıyla orantılıdır. Güneş fotonu, Dünya'nın saldığı kızılötesi fotondan yaklaşık 20 kat daha enerjilidir. Enerji dengede olduğuna göre Dünya, aldığı her bir Güneş fotonuna karşılık kabaca 20 kızılötesi foton salar. Gökbilimci Eric Chaisson da Dünya'nın geri saldığı kızılötesi fotonların hem daha sayıca çok hem foton başına yaklaşık 20 kat daha düşük enerjili olduğunu vurgular. Az sayıda yüksek enerjili foton girip çok sayıda düşük enerjili foton çıkınca, aynı enerji çok daha fazla biçimde dağılmış olur: entropi büyük ölçüde artar.",
+        "Dünya bu farktan yaşar. Bitkiler düşük entropili Güneş ışığını kullanıp karmaşık şekerler kurar, hayvanlar bitkileri yer, rüzgârlar ve bulutlar sıcaklık farklarıyla döner. Her adımda bir miktar entropi üretilir ve sonunda uzaya kızılötesi ışık olarak atılır. Erwin Schrödinger 1944'teki “Yaşam Nedir?” kitabında canlıların “negatif entropiyle beslendiğini” yazdı; sonraki bir baskıda asıl kaynağın serbest enerji olduğunu ekledi. Serbest enerji, bir sistemdeki enerjinin işe çevrilebilen kısmıdır. Boltzmann ise daha 1875'te canlılar arasındaki yaşam mücadelesini, Güneş'ten soğuk Dünya'ya akan enerjinin sağladığı entropi için bir mücadele olarak tarif etmişti.",
+        "Yani Güneş'e asıl borçlu olduğumuz şey enerjinin miktarı değil, düzenidir. Aynı miktarda enerji, dört bir yandan Dünya'yla aynı sıcaklıkta kızılötesi ışık olarak gelseydi, hiçbir canlıyı besleyemezdi; çünkü akacak bir yokuş olmazdı. İstanbul'da bir yaz günü toprağı ısıtan güneş ışığı, güneş paneline düşen ışık, yediğin ekmek ve geceleyin toprağın gökyüzüne verdiği ısı aynı hikâyenin parçalarıdır: sıcak bir yıldızdan gelen düşük entropi, soğuk uzaya giden yüksek entropi."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Dünya'nın sıcaklık hesabı ve foton oranı",
+        "metin": "Atmosferin tepesinde Güneş'e dik bir metrekareye saniyede 1361 J düşer. Dünya bu ışığın yaklaşık 0,294'ünü geri yansıtır; geri kalanı soğurulur. Gece ve gündüz, kutup ve ekvator ortalamasını almak için 4'e böleriz: 1361 × (1 − 0,294) ÷ 4 ≈ 240 W/m². Dünya bu kadarını kara cisim gibi geri salarsa σ × T⁴ = 240 olmalı (σ = 5,67 × 10⁻⁸, d2'deki Stefan-Boltzmann sabiti). T⁴ = 240 ÷ 5,67 × 10⁻⁸ ≈ 4,23 × 10⁹, dördüncü kökü T ≈ 255 K. NASA'nın verdiği kara cisim sıcaklığı 254 K'dir. Foton oranı: 5772 ÷ 254 ≈ 23. Yani her Güneş fotonuna karşılık yaklaşık 20 kızılötesi foton. Gerçek ortalama yüzey sıcaklığı 288 K'dir; bu fark atmosferden gelir, çünkü hesap havasız bir gezegen içindir. Sonuç: Dünya yaklaşık 255 K'lik bir cisim gibi ışır."
+      },
+      "akilda": "Dünya aldığı kadar enerjiyi geri verir; fark nitelikte: 5772 K'lik az sayıda foton girer, yaklaşık 254 K'lik kabaca 20 kat fazla kızılötesi foton çıkar. Canlılar bu düşük entropi akışıyla beslenir."
+    },
+    {
+      "baslik": "Gökyüzünde termodinamik: İstanbul'dan bakınca",
+      "paragraflar": [
+        "Bu dersteki fikirleri gökyüzünde bir merdiven gibi görebilirsin. d4'e göre Güneş'in çekirdeğinin sıcaklığı yaklaşık 15,7 milyon K'dir. Oradan çıkan enerji ışınım ve konveksiyon bölgelerini geçerek yüzeye ulaşır ve uzaya 5772 K'lik bir yüzeyden ışık olarak çıkar. Bu ışık Dünya'ya gelip yaklaşık 254 K'lik bir gezegenin kızılötesi ışınımına dönüşür ve sonunda 2,725 K'lik bir evrene dağılır. Her basamakta aynı enerji daha düşük bir sıcaklığa iner ve Clausius'un ölçüsüyle entropi büyür. Canlılar, rüzgârlar ve bulutlar bu merdivenin bir basamağına kurulmuş çarklardır.",
+        "Merdivenin en alt basamağı her gece başının üstündedir. d17'de Olbers paradoksunu gördün: evren sonsuz yaşlı ve yıldızlarla dolu olsaydı, gökyüzünün her noktası Güneş'in yüzeyi kadar parlak olmalıydı. Termodinamik açıdan bunun anlamı korkunçtur: böyle bir gökyüzünün altında Dünya da Güneş yüzeyi sıcaklığına ulaşır, sıcaklık farkı kalmaz, hiçbir çark dönmezdi. Balkondan baktığın karanlık gökyüzü, yani evrenin bir başlangıcı olduğu için soğuk kalan uzay, Dünya'daki her canlının ihtiyaç duyduğu soğuk haznedir.",
+        "Yıldızlar da bu gözle okunabilir. d2'de çıplak gözle gördüğün renk farkları birer sıcaklık ölçümüdür: kış akşamı Avcı'da mavimsi Rigel ile turuncu Betelgeuse arasındaki fark yaklaşık 8300 kelvindir. İkisi de evrene sürekli ışık ve entropi saçar, ikisi de bu yüzden enerji kaybeden ama içi ısınmaya devam eden negatif ısı sığalı cisimlerdir. İstanbul'un ışık kirliliğinde bile bu iki yıldız görülür: kentsel bir mahallede çıplak gözün sınırı yaklaşık +3 kadirdir, katalogda Rigel 0,18, Betelgeuse 0,45 kadirdir (d21); ikisine bakarken bir ısı makinesinin iki ucuna değil, aynı yokuştan farklı hızlarla inen iki dereye baktığını düşünebilirsin."
+      ],
+      "akilda": "Güneş'in enerjisi yaklaşık 15,7 milyon K'lik çekirdekten 5772 K'lik yüzeye, 254 K'lik Dünya'ya ve 2,725 K'lik uzaya inen bir merdivendir; her basamakta entropi büyür. Karanlık ve soğuk gece göğü bu akışın vazgeçilmez soğuk haznesidir."
+    },
+    {
+      "baslik": "Kara deliklerin entropisi",
+      "paragraflar": [
+        "Kara delikler entropi için bir bilmece çıkardı. Bir kara deliğe sıcak gazla dolu bir kutu atarsan, gazın entropisi evrenden kaybolmuş gibi görünür; d16'da gördüğün gibi kara delik dışarıdan yalnızca kütle, dönme ve yük ile betimlenir. İkinci yasa böyle kolayca aldatılabilir mi? Jacob Bekenstein, kara deliğin kendisinin de entropisi olması gerektiğini ve bunun olay ufkunun alanıyla orantılı olduğunu önerdi; temel makalesi 1973'te yayımlandı. Stephen Hawking 1974'te kara deliklerin çok zayıf bir ısıl ışınım yayması gerektiğini göstererek bu fikri sağlam bir hesaba bağladı.",
+        "Bugün bu sonuca Bekenstein-Hawking entropisi denir ve formülü sözle şudur: kara deliğin entropisi, olay ufkunun yüzey alanının, Planck alanı denen çok küçük bir alan biriminin dört katına bölümüdür. Planck uzunluğu yaklaşık 1,6 × 10⁻³⁵ metredir; noktadan sonra 34 sıfır gelen bir sayı. Bu kadar küçük bir birimle ölçülünce olay ufkunun alanı akıl almaz bir sayı verir.",
+        "Dikkat çekici olan, entropinin hacimle değil alanla büyümesidir. Gündelik cisimlerde iki kat büyük bir kutu iki kat entropi taşır; kara delikte ise yüzey belirleyicidir. Ayrıca alan kütlenin karesiyle büyüdüğü için, kütlesi iki katına çıkan kara deliğin entropisi dört katına çıkar. Şili'den Jorge Pinochet'nin bir derleme yazısı kara delikleri evrendeki en çok entropi taşıyan cisimler arasında sayar.",
+        "Kara deliğin bir entropisi varsa, bir sıcaklığı da olmalıdır; Hawking ışıması bunu söyler. d16'da gördüğün gibi 1 Güneş kütleli bir kara deliğin bu sıcaklığı yalnızca 62 nanokelvindir; çevresindeki 2,725 K'lik evrenden daha soğuk olduğu için bugün buharlaşmaz. Hawking ışıması hiç gözlenmedi. Yani kara delik termodinamiği kuramsal olarak çok saygın ama deneyle henüz sınanmamış bir yapıdır."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Güneş kütleli bir kara deliğin entropisi",
+        "metin": "Formül: S = k × A ÷ (4 × ℓ²), burada A olay ufkunun alanı, ℓ Planck uzunluğu (1,616 × 10⁻³⁵ m), k Boltzmann sabiti. 1 Güneş kütleli kara deliğin olay ufku yarıçapı yaklaşık 2953 m'dir (d16). Alan A = 4 × π × r² = 4 × 3,1416 × 2953² ≈ 1,096 × 10⁸ m². Planck alanı ℓ² ≈ 2,612 × 10⁻⁷⁰ m²; dört katı 1,045 × 10⁻⁶⁹. Bölüm: 1,096 × 10⁸ ÷ 1,045 × 10⁻⁶⁹ ≈ 1,05 × 10⁷⁷. Yani entropi, Boltzmann sabitinin yaklaşık 10⁷⁷ katıdır; k ile çarpınca S ≈ 1,45 × 10⁵⁴ J/K. Pinochet'nin makalesi aynı kara delik için yaklaşık 1,5 × 10⁵⁴ J/K verir. Sonuç: yaklaşık 10⁷⁷ k."
+      },
+      "akilda": "Kara deliğin entropisi olay ufkunun alanıyla orantılıdır (Bekenstein 1973, Hawking 1974). 1 Güneş kütleli kara delik için yaklaşık 10⁷⁷ k, yani 1,5 × 10⁵⁴ J/K."
+    },
+    {
+      "baslik": "Evrenin ısıl ölümü",
+      "paragraflar": [
+        "İkinci yasa doğru ise, evrenin bütününde entropi hep artıyorsa, bunun bir sonu olmalı mı? Bu soruyu ilk soranlardan biri William Thomson, yani Lord Kelvin'di. 1851'de ısıyı bir mekanik etki biçimi olarak tanımladı, 1852'de “Doğada mekanik enerjinin dağılmasına yönelik evrensel bir eğilim” başlıklı bir yazı yayımladı. Ona göre hareket ve sıcaklık farkları zamanla ısıya dağılıp eşitlenmeye mahkûmdu. Hermann von Helmholtz ve William Rankine bu fikri evrenin bir gün “ısıl ölüme” varacağı biçiminde okudu.",
+        "Isıl ölüm soğuk bir donma değildir, en azından tanım gereği değil. Evrenin en yüksek entropiye ulaştığı, kullanılabilir serbest enerjinin kalmadığı durumdur. Sıcaklık farkı yoksa ısı akmaz; ısı akmazsa iş çıkmaz; iş çıkmazsa ne yıldız yanar ne canlı yaşar ne de bir saat tıkırdar. Bu durumda sıcaklığın mutlak sıfır olması gerekmez; yalnızca her yerde aynı olması yeter.",
+        "Bugünkü kozmolojiye göre bu senaryo, evrenin sonsuza dek genişleyeceği durumla uyumludur. Evrenin geometrisi düzse ya da karanlık enerji artı işaretli bir kozmolojik sabit gibi davranıyorsa, genişleme sürer ve bir ısıl ölüm beklenir. Böyle bir evrende sıcaklık mutlak sıfıra inmez, sıfırdan büyük çok küçük bir değerde dengelenir. Son sahnede kara delikler Hawking ışımasıyla yavaşça buharlaşır: 10¹¹ Güneş kütleli dev bir kara delik yaklaşık 10¹⁰⁰ yıl mertebesinde, 10¹⁴ Güneş kütlesine kadar en büyükleri 10¹⁰⁶ yıla kadar sürede.",
+        "Bu sayılarla ne yapmalı? Önce dürüst olalım: hepsi bugünkü ölçümlerden ve kuramlardan yapılmış en iyi tahminlerdir. d17'de gördüğün gibi karanlık enerjinin zamanla değişip değişmediği henüz kesin değil, ve evrenin sonu bu sorunun cevabına bağlı. Ama ısıl ölüm fikrinin öğrettiği şey ölçekten bağımsızdır. Masadaki çaydan evrenin sonuna kadar her süreç aynı yöne gider: enerji korunur, ama kullanılabilirliği azalır. Bugün yaşadığımız her şey, yıldızlar, rüzgâr, düşünceler, o büyük yokuşun aşağısına akan bir derenin üstündeki çarklardır."
+      ],
+      "akilda": "Isıl ölüm, evrenin en yüksek entropiye ulaşıp serbest enerjinin kalmadığı durumdur (Kelvin 1852). Sonsuza dek genişleyen bir evrende beklenir; ayrıntılar karanlık enerjiye bağlıdır (d17)."
+    }
+  ],
+  "formuller": [
+    {
+      "ad": "Yükseklik ve hareket enerjisi",
+      "ifade": "E = m × g × h ;  E = ½ × m × v²",
+      "aciklama": "m kütle (kg), g yer çekimi ivmesi (standart değer 9,80665 m/s²), h yükseklik (m), v hız (m/s). Enerji joule (J) cinsinden. Sürtünme yoksa düşen cisimde ilki ikincisine dönüşür."
+    },
+    {
+      "ad": "Moleküllerin tipik hızı",
+      "ifade": "v ≈ √(3 × k × T ÷ m)",
+      "aciklama": "k Boltzmann sabiti (1,380649 × 10⁻²³ J/K, kesin), T sıcaklık (K), m bir molekülün kütlesi (kg). Sonuç karekök ortalama hız (m/s). İdeal gaz için geçerlidir."
+    },
+    {
+      "ad": "Carnot verimi",
+      "ifade": "η_en çok = 1 − T_soğuk ÷ T_sıcak",
+      "aciklama": "Bir ısı makinesinin ulaşabileceği en yüksek verim. Sıcaklıklar kelvin cinsinden olmalı. Gerçek makineler bunun altında kalır (Carnot 1824)."
+    },
+    {
+      "ad": "Clausius entropisi",
+      "ifade": "ΔS = Q ÷ T",
+      "aciklama": "Sıcaklığı T (K) olan bir cisme Q (J) kadar ısı verildiğinde entropisinin değişimi (J/K). Q küçükse ve T bu sırada pek değişmiyorsa geçerlidir."
+    },
+    {
+      "ad": "Boltzmann entropisi",
+      "ifade": "S = k × log W",
+      "aciklama": "W, makrodurumla uyumlu mikrodurum sayısı; log doğal logaritma; k Boltzmann sabiti. Boltzmann'ın 1877 fikri; mezar taşında yazılıdır."
+    },
+    {
+      "ad": "Landauer sınırı",
+      "ifade": "Q_en az = k × T × ln 2",
+      "aciklama": "Bir bit bilgiyi T sıcaklığında silmenin üreteceği en az ısı. 300 K'de yaklaşık 3 × 10⁻²¹ J (Landauer 1961; Bérut ve ark. 2012)."
+    },
+    {
+      "ad": "Bekenstein-Hawking entropisi",
+      "ifade": "S = k × A ÷ (4 × ℓ_P²)",
+      "aciklama": "A olay ufkunun alanı (m²), ℓ_P Planck uzunluğu (1,616255 × 10⁻³⁵ m). Eşdeğer biçimi S = k c³ A ÷ (4 G ħ)."
+    }
+  ],
+  "anahtar_sayilar": [
+    {
+      "deger": "0 K = −273,15 °C",
+      "aciklama": "Mutlak sıfır",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Kelvin_temperature"
+    },
+    {
+      "deger": "1,380649 × 10⁻²³ J/K (kesin)",
+      "aciklama": "Boltzmann sabiti; 20 Mayıs 2019'dan beri kelvinin tanımı",
+      "kaynak_url": "https://physics.nist.gov/cgi-bin/cuu/Value?k"
+    },
+    {
+      "deger": "4,41 J/kalori (1845) ; bugün 4,1868 J",
+      "aciklama": "Joule'ün ısının mekanik eşdeğeri için ilk değeri ve bugünkü değer",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Work_(thermodynamics)"
+    },
+    {
+      "deger": "1824",
+      "aciklama": "Carnot'nun “Ateşin Hareket Ettirici Gücü Üzerine Düşünceler” denemesi",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Nicolas_L%C3%A9onard_Sadi_Carnot"
+    },
+    {
+      "deger": "1865",
+      "aciklama": "Clausius entropi kavramını tanımladı ve adını koydu",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Rudolf_Clausius"
+    },
+    {
+      "deger": "yaklaşık 517 m/s",
+      "aciklama": "300 K'de azot moleküllerinin karekök ortalama hızı (hesap; kaynakta yaklaşık 500 m/s)",
+      "kaynak_url": "https://www.hunter.cuny.edu/physics/courses/physics110/repository/files/section51/15TheKineticTheoryofGasesRev2.pdf/at_download/file"
+    },
+    {
+      "deger": "yaklaşık 3 × 10⁻²¹ J",
+      "aciklama": "Oda sıcaklığında (300 K) bir biti silmenin en küçük ısı bedeli (Landauer sınırı)",
+      "kaynak_url": "https://isidore.co/misc/Physics%20papers%20and%20books/Zotero/storage/2TPWPHS8/nature10872.html"
+    },
+    {
+      "deger": "254 K",
+      "aciklama": "Dünya'nın kara cisim sıcaklığı (gerçek ortalama yüzey sıcaklığı 288 K)",
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html"
+    },
+    {
+      "deger": "yaklaşık 1,5 × 10⁵⁴ J/K (≈ 10⁷⁷ k)",
+      "aciklama": "1 Güneş kütleli kara deliğin Bekenstein-Hawking entropisi",
+      "kaynak_url": "https://arxiv.org/pdf/2410.11851"
+    },
+    {
+      "deger": "yaklaşık 10¹⁰⁰ yıl",
+      "aciklama": "10¹¹ Güneş kütleli bir kara deliğin Hawking ışımasıyla buharlaşma süresi mertebesi",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Heat_death_of_the_universe"
+    }
+  ],
+  "sozluk": [
+    {
+      "terim": "enerji",
+      "tanim": "Bir şeyin iş yapabilme, yani hareket ettirebilme ya da ısıtabilme kapasitesi; joule (J) ile ölçülür ve biçim değiştirse de toplamı korunur."
+    },
+    {
+      "terim": "termodinamik",
+      "tanim": "Isı, iş, sıcaklık ve enerji arasındaki ilişkileri inceleyen, dört temel yasaya dayanan fizik dalı."
+    },
+    {
+      "terim": "birinci yasa",
+      "tanim": "Termodinamiğin enerjinin korunumunu söyleyen yasası: enerji yoktan var edilemez, yok da edilemez, yalnızca biçim değiştirir."
+    },
+    {
+      "terim": "ikinci yasa",
+      "tanim": "Yalıtılmış bir sistemin toplam entropisinin hiçbir zaman azalmadığını, ısının kendiliğinden soğuktan sıcağa geçmediğini söyleyen termodinamik yasası."
+    },
+    {
+      "terim": "kalorik",
+      "tanim": "On sekizinci ve on dokuzuncu yüzyılda ısının sanıldığı ağırlıksız, görünmez akışkan; Rumford ve Joule'ün deneyleriyle terk edildi."
+    },
+    {
+      "terim": "ısı",
+      "tanim": "Moleküllerin rastgele hareketindeki enerjinin, sıcaklık farkı yüzünden bir cisimden ötekine aktarılması."
+    },
+    {
+      "terim": "sıcaklık",
+      "tanim": "Bir maddedeki parçacıkların ortalama hareket enerjisinin ölçüsü; bilimde kelvin (K) ile verilir."
+    },
+    {
+      "terim": "mutlak sıfır",
+      "tanim": "Aktarılabilir hareket enerjisinin kalmadığı en düşük sıcaklık sınırı: 0 K, yani −273,15 °C."
+    },
+    {
+      "terim": "Boltzmann sabiti",
+      "tanim": "Sıcaklığı tek bir parçacığın enerjisine çeviren doğa sabiti; kesin değeri 1,380649 × 10⁻²³ J/K'dir ve kelvini tanımlar."
+    },
+    {
+      "terim": "ısıl denge",
+      "tanim": "Birbirine dokunan iki cisim arasında net ısı akışı olmaması durumu; iki cismin sıcaklığı aynıdır."
+    },
+    {
+      "terim": "ısı makinesi",
+      "tanim": "Isıyı sıcak bir kaynaktan soğuk bir hazneye akıtırken bu akışın bir kısmını işe çeviren düzenek (buhar türbini, araba motoru)."
+    },
+    {
+      "terim": "sürekli devinim makinesi",
+      "tanim": "Yakıtsız iş üreten ya da çevredeki ısıyı tümüyle işe çeviren düşsel makine; birinci ve ikinci yasa bunu yasaklar."
+    },
+    {
+      "terim": "entropi",
+      "tanim": "Bir sistemin genel durumunun kaç farklı ayrıntılı biçimde gerçekleşebileceğinin, yani enerjinin kaç yolla dağılabileceğinin ölçüsü; yalıtılmış sistemde azalmaz."
+    },
+    {
+      "terim": "makrodurum",
+      "tanim": "Bir sistemin sıcaklık, basınç, hacim gibi kaba ölçümlerle tarif edilen genel durumu."
+    },
+    {
+      "terim": "mikrodurum",
+      "tanim": "Bir sistemdeki her parçacığın tam konumunu ve hızını belirten ayrıntılı durum; bir makrodurum çok sayıda mikrodurumla gerçekleşebilir."
+    },
+    {
+      "terim": "Maxwell'in cini",
+      "tanim": "Molekülleri hızlarına göre ayıklayıp ikinci yasayı çiğner gibi görünen düşsel varlık; Maxwell'in 1867–1871 düşünce deneyi."
+    },
+    {
+      "terim": "Landauer ilkesi",
+      "tanim": "Bir bit bilgiyi silmenin en az k × T × ln 2 kadar ısı ürettiğini söyleyen ilke (1961)."
+    },
+    {
+      "terim": "zamanın oku",
+      "tanim": "Zamanın tek yöne aktığı izlenimi; termodinamik ok, yalıtılmış sistemlerde entropinin artmasından gelir."
+    },
+    {
+      "terim": "negatif ısı sığası",
+      "tanim": "Kütleçekimiyle bir arada duran sistemlerin, enerji kaybettikçe ısınma, enerji kazandıkça soğuma özelliği."
+    },
+    {
+      "terim": "serbest enerji",
+      "tanim": "Bir sistemdeki enerjinin işe çevrilebilen kısmı; canlılar ve makineler bununla çalışır."
+    },
+    {
+      "terim": "Bekenstein-Hawking entropisi",
+      "tanim": "Bir kara deliğin olay ufkunun alanıyla orantılı olan entropisi."
+    },
+    {
+      "terim": "ısıl ölüm",
+      "tanim": "Evrenin en yüksek entropiye ulaşıp kullanılabilir serbest enerjinin kalmadığı varsayımsal son durumu."
+    }
+  ],
+  "defter_notu": [
+    "Birinci yasa: enerji korunur. İkinci yasa: yalıtılmış sistemde entropi azalmaz. Üçüncü yasa: T → 0 K iken entropi sabite gider. Sıfırıncı yasa: termometre çalışır.",
+    "Isı = akan enerji; sıcaklık = moleküllerin ortalama hareket enerjisi. 0 K = −273,15 °C.",
+    "Rumford 1798 (top delme), Joule 1845 (çark, 4,41 J/kal; bugün 4,1868).",
+    "Carnot 1824: η en çok = 1 − T_soğuk ÷ T_sıcak (kelvinle). 823 K / 298 K → %64.",
+    "Clausius 1865: ΔS = Q ÷ T. Boltzmann 1877: S = k log W (Viyana'da mezar taşında).",
+    "Entropi düzensizlik değil, olası mikrodurum sayısıdır. 100 para: “hepsi yazı” 1 / 1,27 × 10³⁰.",
+    "Landauer: bir bit silmek ≥ k T ln 2 ≈ 3 × 10⁻²¹ J (300 K); 2012'de ölçüldü.",
+    "Dünya: 5772 K'lik foton girer, ~254 K'lik ~20 kat fazla kızılötesi foton çıkar → canlılar düşük entropiyle beslenir.",
+    "Yıldız: negatif ısı sığası → enerji kaybedince büzülür ve ısınır.",
+    "Kara delik entropisi ∝ olay ufku alanı; 1 M☉ ≈ 10⁷⁷ k. Isıl ölüm: serbest enerji kalmaz (Kelvin 1852)."
+  ],
+  "sorular": [
+    {
+      "soru": "Sıcak bir çayın kendiliğinden ısınması enerjinin korunumunu çiğner mi? Peki neden hiç görülmez?",
+      "cevap": "Çiğnemez; odadan çaya ısı geçse de toplam enerji aynı kalır. Görülmemesinin nedeni ikinci yasadır: bu olay toplam entropiyi azaltırdı. Boltzmann'ın diliyle soğumuş durumun mikrodurum sayısı akıl almaz ölçüde fazla olduğu için ters olay pratikte hiç gerçekleşmez."
+    },
+    {
+      "soru": "Isı ile sıcaklık arasındaki fark nedir?",
+      "cevap": "Sıcaklık, bir maddedeki parçacıkların ortalama hareket enerjisinin ölçüsüdür. Isı ise sıcaklık farkı yüzünden bir cisimden ötekine akan enerjidir. Büyük ve ılık bir küvette küçük ve kaynar bir çaydanlıktan daha çok ısı enerjisi olabilir ama çaydanlık daha sıcaktır."
+    },
+    {
+      "soru": "Rumford'un top delme gözlemi kalorik kuramına neden ters düşüyordu?",
+      "cevap": "Delme sürdükçe sürtünme ısısı tükenmiyor, su yaklaşık iki buçuk saatte kaynayabiliyordu. Isı namluda depolanmış sınırlı bir akışkan olsaydı bir noktada bitmesi gerekirdi; Rumford'a göre namluya aktarılan tek şey hareketti."
+    },
+    {
+      "soru": "Bir buhar türbininde sıcak taraf 600 °C, soğuk taraf 30 °C. En yüksek verim yaklaşık ne olur?",
+      "cevap": "Kelvine çevir: 873 K ve 303 K. η = 1 − 303 ÷ 873 ≈ 1 − 0,347 = 0,653, yani yaklaşık %65. Gerçek makine sürtünme ve kayıplar yüzünden bunun altında kalır."
+    },
+    {
+      "soru": "Neden aynı miktarda ısı soğuk bir cisme verildiğinde sıcak bir cisme verildiğinden daha fazla entropi artışı yaratır?",
+      "cevap": "Clausius'un tanımına göre entropi artışı verilen ısının sıcaklığa bölümüdür (Q ÷ T). Payda küçükse bölüm büyük olur. Bu yüzden ısı sıcaktan soğuğa aktığında soğuğun kazancı sıcağın kaybından büyüktür ve toplam entropi artar."
+    },
+    {
+      "soru": "Dört parayla “iki yazı, iki tura” makrodurumu kaç mikrodurumla gerçekleşir? “Dördü de yazı” kaçla?",
+      "cevap": "Toplam 16 sıralama vardır. İki yazı iki tura 6 sıralamayla (YYTT, YTYT, YTTY, TYYT, TYTY, TTYY), dördü de yazı yalnızca 1 sıralamayla olur. Bu yüzden karışık sonuç daha olasıdır; entropisi daha yüksektir."
+    },
+    {
+      "soru": "Buzdolabı içini soğuttuğuna göre ikinci yasayı çiğner mi?",
+      "cevap": "Hayır. İkinci yasa yalıtılmış sistemin toplam entropisi içindir. Buzdolabı elektrik enerjisi harcayarak ısıyı içeriden alır ve arkasından mutfağa daha fazla ısı atar; içerideki entropi azalırken mutfaktaki artış daha büyüktür. Clausius'un cümlesindeki “başka bir değişiklik olmadan” kaydı bu bedeli anlatır."
+    },
+    {
+      "soru": "Maxwell'in cini ikinci yasayı neden gerçekte çiğneyemez?",
+      "cevap": "Cin molekülleri ayıklamak için onların hızlarını ölçüp kaydetmek, sonra hafızasını silmek zorundadır. Landauer'e göre bir biti silmek en az k × T × ln 2 ısı üretir. Bu ısının çevreye kattığı entropi, cinin ayıklayarak kazandığından az olamaz. 2012'de Bérut ve arkadaşları bu sınırı deneyle ölçtü."
+    },
+    {
+      "soru": "Fizik yasaları zamanın yönünü neredeyse hiç umursamıyorsa, zamanın oku nereden gelir?",
+      "cevap": "Çok sayıda parçacığın toplu davranışından, yani entropinin artmasından gelir. Entropinin bugün hâlâ artabilmesi geçmişte daha düşük olmasını gerektirir; okun kökü evrenin ilk anlarındaki düşük entropili durumdur. Bu başlangıç durumunun nedeni henüz bilinmiyor."
+    },
+    {
+      "soru": "Bir yıldız ışık yayarak enerji kaybettiğinde neden soğumak yerine ısınır?",
+      "cevap": "Kütleçekimiyle bir arada duran sistemlerin ısı sığası negatiftir. Enerji kaybeden yıldızın basıncı düşer, kütleçekimi onu sıkıştırır, sıkışan gaz kütleçekim enerjisinin bir kısmını hareket enerjisine çevirir ve ısınır. Yıldızın kendini düzelten dengesi bu ilkeye dayanır."
+    },
+    {
+      "soru": "Dünya Güneş'ten aldığı kadar enerjiyi uzaya geri veriyorsa, canlılar neyle beslenir?",
+      "cevap": "Enerjinin niteliğindeki farkla. Dünya'ya 5772 K'lik bir yüzeyden gelen az sayıda yüksek enerjili foton girer, yaklaşık 254 K'lik kabaca 20 kat fazla düşük enerjili kızılötesi foton çıkar. Bu, büyük bir entropi artışıdır; canlılar ve hava olayları bu düşük entropi akışını kullanır."
+    },
+    {
+      "soru": "Bir kara deliğin kütlesi iki katına çıkarsa Bekenstein-Hawking entropisi nasıl değişir?",
+      "cevap": "Entropi olay ufkunun alanıyla orantılıdır. Olay ufkunun yarıçapı kütleyle doğru orantılı olduğundan alan kütlenin karesiyle büyür. Kütle iki katına çıkarsa entropi dört katına çıkar."
+    },
+    {
+      "soru": "Isıl ölüm, evrenin mutlak sıfıra donması mı demektir?",
+      "cevap": "Hayır. Isıl ölüm, evrenin en yüksek entropiye ulaşıp kullanılabilir serbest enerjinin kalmadığı durumdur; sıcaklık farkı olmadığı için iş yapılamaz. Artı işaretli kozmolojik sabitli bir evrende sıcaklık sıfıra inmez, sıfırdan büyük küçük bir değerde dengelenir."
+    }
+  ],
+  "kaynaklar": [
+    {
+      "ad": "Wikipedia, Laws of thermodynamics",
+      "url": "https://en.wikipedia.org/wiki/Laws_of_thermodynamics"
+    },
+    {
+      "ad": "Wikipedia, Rudolf Clausius",
+      "url": "https://en.wikipedia.org/wiki/Rudolf_Clausius"
+    },
+    {
+      "ad": "Wikipedia, History of entropy",
+      "url": "https://en.wikipedia.org/wiki/History_of_entropy"
+    },
+    {
+      "ad": "Wikipedia, Nicolas Léonard Sadi Carnot",
+      "url": "https://en.wikipedia.org/wiki/Nicolas_L%C3%A9onard_Sadi_Carnot"
+    },
+    {
+      "ad": "Wikipedia, Count Rumford",
+      "url": "https://en.wikipedia.org/wiki/Count_Rumford"
+    },
+    {
+      "ad": "Wikipedia, Work (thermodynamics) — Joule'ün deneyi",
+      "url": "https://en.wikipedia.org/wiki/Work_(thermodynamics)"
+    },
+    {
+      "ad": "Science Museum Group, Mechanical equivalent of heat apparatus",
+      "url": "https://collection.sciencemuseumgroup.org.uk/objects/co2526/mechanical-equivalent-of-heat-apparatus"
+    },
+    {
+      "ad": "Wikipedia, Thermodynamic temperature (Kelvin)",
+      "url": "https://en.wikipedia.org/wiki/Kelvin_temperature"
+    },
+    {
+      "ad": "NIST CODATA 2022 sabitler tablosu",
+      "url": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt"
+    },
+    {
+      "ad": "Atlas Obscura, Boltzmann's Grave",
+      "url": "https://www.atlasobscura.com/places/boltzmanns-grave"
+    },
+    {
+      "ad": "Bérut ve ark., Experimental verification of Landauer's principle, Nature 483 (2012)",
+      "url": "https://isidore.co/misc/Physics%20papers%20and%20books/Zotero/storage/2TPWPHS8/nature10872.html"
+    },
+    {
+      "ad": "Phys.org, Landauer's principle verified (Mart 2012)",
+      "url": "https://phys.org/news/2012-03-landauer-dissipated-memory-erased.html"
+    },
+    {
+      "ad": "Wikipedia, Arrow of time",
+      "url": "https://en.wikipedia.org/wiki/Arrow_of_time"
+    },
+    {
+      "ad": "D. Lynden-Bell, Negative Specific Heat in Astronomy, Physics and Chemistry (arXiv)",
+      "url": "https://arxiv.org/abs/cond-mat/9812172"
+    },
+    {
+      "ad": "E. Chaisson, The Natural Science Underlying Big History (2014, arXiv)",
+      "url": "https://arxiv.org/abs/1406.2730"
+    },
+    {
+      "ad": "Wikipedia, Entropy and life",
+      "url": "https://en.wikipedia.org/wiki/Entropy_and_life"
+    },
+    {
+      "ad": "NASA NSSDCA, Earth Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html"
+    },
+    {
+      "ad": "J. Pinochet, Hawking for everyone (arXiv)",
+      "url": "https://arxiv.org/abs/2410.11851"
+    },
+    {
+      "ad": "Wikipedia, Heat death of the universe",
+      "url": "https://en.wikipedia.org/wiki/Heat_death_of_the_universe"
+    }
+  ]
+}
