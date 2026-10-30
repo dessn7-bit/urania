@@ -1,0 +1,58 @@
+[
+  {
+    "id": "d26-1",
+    "soru": "Uluslararası Uzay İstasyonu'ndaki astronotlar neden süzülür?",
+    "secenekler": [
+      "Yaklaşık 400 km yükseklikte Dünya'nın çekimi tümüyle biter",
+      "İstasyon ve içindeki her şey birlikte sürekli serbest düşüştedir; orada çekim yüzeydekinin yaklaşık %90'ıdır",
+      "Uzay boşluğunda hava olmadığı için kütleçekimi etki edemez",
+      "İstasyonun motorları çekimi dengeleyen bir itme üretir"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre istasyonun yüksekliğinde çekim yüzeydekinin yaklaşık %88–90'ıdır. Astronotlar istasyonla birlikte Dünya'nın çevresinde serbest düştüğü için zemin onları itmez ve ağırlık hissetmezler; ağırlıksızlık, kütleçekiminin yokluğu değildir.",
+    "ders": "d26",
+    "bolum": 4
+  },
+  {
+    "id": "d26-2",
+    "soru": "Merkür'ün günberisi yüzyılda yaklaşık 574 yay saniyesi kayar. Bunun ne kadarı genel görelilikten gelir ve Le Verrier bu farkı nasıl açıklamaya çalışmıştı?",
+    "secenekler": [
+      "Tamamı; Le Verrier hiçbir açıklama önermedi",
+      "Yaklaşık 531 yay saniyesi; Le Verrier bunu Güneş'in basıklığına bağladı",
+      "Yaklaşık 43 yay saniyesi; Le Verrier Merkür'ün içinde Vulkan adlı bir gezegen önerdi",
+      "Yaklaşık 1,75 yay saniyesi; Le Verrier bunu ışığın bükülmesine bağladı"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre bilinen gezegenlerin çekimi kaymanın yaklaşık 531 yay saniyesini açıklar; kalan yaklaşık 43 (bugünkü değer 42,98) yay saniyesini Einstein Kasım 1915'te genel görelilikle hesapladı. Le Verrier, Neptün'ü bulduran başarısına dayanarak Merkür'ün içinde Vulkan adlı bir gezegen önermişti, ama böyle bir gezegen bulunamadı.",
+    "ders": "d26",
+    "bolum": 7
+  },
+  {
+    "id": "d26-3",
+    "soru": "Pound ve Rebka, Harvard'daki kulede 22,5 m'lik yükseklik farkında hangi büyüklükte bir göreli frekans kayması ölçtü?",
+    "secenekler": [
+      "Yaklaşık 2,5 × 10⁻¹⁵; g × h ÷ c² formülünün öngördüğü kadar",
+      "Yaklaşık 2,5 × 10⁻⁵; çıplak gözle renk farkı görülecek kadar",
+      "Yaklaşık 0,4; Michelson–Morley'nin beklediği kadar",
+      "Hiçbir kayma ölçemediler"
+    ],
+    "dogru": 0,
+    "aciklama": "Derse göre g × h ÷ c² = 9,81 × 22,5 ÷ (8,99 × 10¹⁶) ≈ 2,5 × 10⁻¹⁵. Pound ve Rebka (2,56 ± 0,25) × 10⁻¹⁵ ölçtü; öngörüyle yüzde on hata payı içinde uyumlu. 1964'te doğruluk yüzde bire çıkarıldı.",
+    "ders": "d26",
+    "bolum": 10
+  },
+  {
+    "id": "d26-4",
+    "soru": "GPS uydu saatleri için doğru olan hangisidir?",
+    "secenekler": [
+      "Hızları yüzünden günde yaklaşık 38,6 μs ileri giderler; kütleçekimi etkisi yoktur",
+      "Yükseklik etkisi saati günde yaklaşık 45,8 μs hızlandırır, hız etkisi yaklaşık 7,2 μs yavaşlatır; net yaklaşık +38,6 μs",
+      "İki etki birbirini tam olarak götürür, düzeltme gerekmez",
+      "Yükseklik saati yavaşlatır, hız hızlandırır; net yaklaşık −38,6 μs"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre uydular Dünya'nın çekiminden uzakta olduğu için saatleri genel göreliliğe göre günde yaklaşık 45,8 μs hızlı, yörünge hızları yüzünden özel göreliliğe göre yaklaşık 7,2 μs yavaş işler; net etki yaklaşık +38,6 μs. Düzeltilmese hata günde yaklaşık 11 km birikirdi; saatler fabrikada 10,22999999543 MHz'e ayarlanır.",
+    "ders": "d26",
+    "bolum": 11
+  }
+]

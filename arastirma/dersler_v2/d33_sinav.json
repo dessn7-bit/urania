@@ -1,0 +1,58 @@
+[
+  {
+    "id": "d33-1",
+    "soru": "Faraday'ın 29 Ağustos 1831'deki demir halka deneyinde ikinci sargıda ne zaman akım oluştu?",
+    "secenekler": [
+      "Birinci sargıdan sabit akım aktığı sürece kesintisiz",
+      "Yalnızca birinci sargıdaki akım açıldığı ya da kesildiği anda, kısa bir süre",
+      "Hiçbir zaman; demir halka akımı engelledi",
+      "Yalnızca halka ısıtıldığında"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre akımı doğuran manyetik alanın kendisi değil, değişimidir. Birinci sargıdaki akım açılıp kapanınca halkadaki alan değişir ve ikinci sargıda kısa bir akım belirir; akım sabit akarken bir şey olmaz. Buna elektromanyetik indüksiyon denir; jeneratörler ve transformatörler bu ilkeyle çalışır.",
+    "ders": "d33",
+    "bolum": 6
+  },
+  {
+    "id": "d33-2",
+    "soru": "Maxwell'in denklemlerine göre elektromanyetik dalganın hızı neye bağlıdır?",
+    "secenekler": [
+      "Işığı salan kaynağın hızına",
+      "Dalganın frekansına: yüksek frekanslı dalga daha hızlıdır",
+      "Yalnızca boşluğun elektrik ve manyetik sabitlerine: c = 1 ÷ √(μ₀ε₀)",
+      "Dünya'nın Güneş çevresindeki hızına"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre dalganın hızı c = 1 ÷ √(μ₀ε₀) ile verilir ve NIST değerleriyle yaklaşık 2,99792 × 10⁸ m/s çıkar. Formülde ne kaynağın ne de gözlemcinin hızı vardır; bu durum esir sorununa ve özel göreliliğe (d25) götürdü. Weber ve Kohlrausch'un ölçtüğü oran (yaklaşık 3,107 × 10⁸ m/s) bu sabitlerle ilgiliydi.",
+    "ders": "d33",
+    "bolum": 9
+  },
+  {
+    "id": "d33-3",
+    "soru": "Karl Jansky, 20,5 MHz'te duyduğu tıslamanın kaynağının Güneş değil Samanyolu olduğunu nasıl anladı?",
+    "secenekler": [
+      "Sinyal yalnızca geceleri duyuluyordu",
+      "Sinyal her 23 saat 56 dakikada bir, yani yıldız gününe uyarak tepe yapıyordu",
+      "Sinyalin dalga boyu görünür ışık kadar kısaydı",
+      "Sinyal yalnızca Güneş tutulmasında kayboldu"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre sinyal 24 saatte değil 23 saat 56 dakikada bir tekrarlanıyordu; bu, Dünya'nın yıldızlara göre dönme süresidir. Kaynak yıldızlara bağlıydı ve en güçlü olduğu yön Yay takımyıldızındaki Samanyolu merkeziydi. Dalga boyu yaklaşık 14,6 metreydi.",
+    "ders": "d33",
+    "bolum": 11
+  },
+  {
+    "id": "d33-4",
+    "soru": "Elektrik kuvveti kütleçekiminden yaklaşık 10³⁹ kat güçlüyse, gezegenlerin ve yıldızların hareketini neden kütleçekimi belirler?",
+    "secenekler": [
+      "Çünkü elektrik kuvveti uzayın boşluğunda yayılamaz",
+      "Çünkü artı ve eksi yükler büyük cisimlerde birbirini neredeyse tam dengeler, kütleçekiminde ise eksi kütle olmadığı için etkiler birikir",
+      "Çünkü elektrik kuvveti uzaklığın küpüyle azalır",
+      "Çünkü gezegenlerde hiç elektron yoktur"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre elektrik kuvvetinin iki işareti vardır ve sıradan maddede proton ve elektron sayıları neredeyse eşit olduğu için büyük cisimler dışarıya yüksüz görünür. Kütleçekimi hep çeker ve birikir; bu yüzden büyük ölçekte kütleçekimi kazanır. Coulomb yasası da kütleçekimi gibi uzaklığın karesiyle azalır.",
+    "ders": "d33",
+    "bolum": 3
+  }
+]

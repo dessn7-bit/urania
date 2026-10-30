@@ -1,0 +1,58 @@
+[
+  {
+    "id": "d25-1",
+    "soru": "Michelson ve Morley 1887'de esir rüzgârı varsa girişim saçaklarında yaklaşık ne kadar kayma bekliyordu, ne ölçtü?",
+    "secenekler": [
+      "4 saçak beklediler, 4 saçak ölçtüler; esir doğrulandı",
+      "Yaklaşık 0,4 saçak beklediler, en fazla 0,02 saçak ölçtüler",
+      "Hiç kayma beklemediler ama 0,4 saçak ölçtüler",
+      "Yaklaşık 0,02 saçak beklediler, 0,4 saçak ölçtüler"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre 11 metrelik kol, yaklaşık 500 nm dalga boyu ve Dünya'nın 30 km/s'lik yörünge hızıyla beklenen kayma yaklaşık 0,4 saçaktı. Ölçülen en büyük kayma 0,02 saçak, ortalaması 0,01'in de altındaydı; esir rüzgârı bulunamadı.",
+    "ders": "d25",
+    "bolum": 2
+  },
+  {
+    "id": "d25-2",
+    "soru": "Bir gemi 4,24 ışık yılı uzaktaki Proxima Centauri'ye ışık hızının %90'ıyla gidiyor. Hızlanma ve yavaşlama yok sayılırsa yolculuk Dünya'ya göre ve gemideki saate göre yaklaşık ne kadar sürer?",
+    "secenekler": [
+      "Dünya'ya göre 4,24 yıl, gemiye göre 4,24 yıl",
+      "Dünya'ya göre 4,7 yıl, gemiye göre 10,8 yıl",
+      "Dünya'ya göre 4,7 yıl, gemiye göre 2,1 yıl",
+      "Dünya'ya göre 2,1 yıl, gemiye göre 4,7 yıl"
+    ],
+    "dogru": 2,
+    "aciklama": "Dünya'dan bakınca süre uzaklık ÷ hız = 4,24 ÷ 0,9 ≈ 4,71 yıl. Lorentz çarpanı γ = 1 ÷ √(1 − 0,81) ≈ 2,29. Gemideki saatle süre 4,71 ÷ 2,29 ≈ 2,05 yıl. Uygulamadaki Işığa yakın yolculuk deneyi de aynı sayıları verir.",
+    "ders": "d25",
+    "bolum": 6
+  },
+  {
+    "id": "d25-3",
+    "soru": "Frisch ve Smith 1963'te Mount Washington'ın tepesinde saatte yaklaşık 563 müon saydı. Deniz düzeyinde kaç müon ölçtüler ve zaman genişlemesi olmasaydı kaç tane beklenirdi?",
+    "secenekler": [
+      "Yaklaşık 412 ölçüldü; göreliliksiz beklenti yaklaşık 27",
+      "Yaklaşık 27 ölçüldü; göreliliksiz beklenti yaklaşık 412",
+      "Yaklaşık 563 ölçüldü; hiç azalma yoktu",
+      "Hiç müon ölçülmedi; hepsi yolda bozundu"
+    ],
+    "dogru": 0,
+    "aciklama": "Derse göre 1917 m'den deniz düzeyine iniş yaklaşık 6,4 mikrosaniye sürer, bu da durgun ömrün yaklaşık üç katıdır; zaman genişlemesi olmasa yalnızca 27 kadar müon kalmalıydı. Ölçülen yaklaşık 412'ydi ve buradan 8,8 ± 0,8'lik bir zaman genişlemesi çarpanı çıktı.",
+    "ders": "d25",
+    "bolum": 7
+  },
+  {
+    "id": "d25-4",
+    "soru": "Bir çekirdek tepkimesinin tamamı, içinden hiçbir enerjinin kaçamadığı kapalı bir kutuda gerçekleşseydi kutunun toplam kütlesine ne olurdu?",
+    "secenekler": [
+      "Açığa çıkan enerji kadar, E ÷ c² kadar azalırdı",
+      "Değişmezdi; açığa çıkan hareket enerjisi ve ışık da kutunun kütlesine sayılır",
+      "Artardı, çünkü ısınan cisimler ağırlaşır",
+      "Sıfıra inerdi, çünkü kütlenin tamamı enerjiye dönüşür"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre enerji her zaman korunur; tepkimede parçaların durgun kütlelerinin toplamı azalır ama fark hareket enerjisi ve ışık olarak kutunun içinde kalır ve kutunun kütlesine sayılır. Kütle ancak enerji sistemden dışarı kaçınca azalır; “kütle enerjiye dönüşür” ifadesi bu yüzden kaba bir özettir.",
+    "ders": "d25",
+    "bolum": 12
+  }
+]

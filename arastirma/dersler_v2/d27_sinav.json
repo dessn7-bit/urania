@@ -1,0 +1,58 @@
+[
+  {
+    "id": "d27-1",
+    "soru": "Bir metalin iş fonksiyonu 2,3 eV. Bu metale çok parlak 546 nm'lik yeşil ışık ve sönük 365 nm'lik morötesi ışık düşürülüyor. Ne olur?",
+    "secenekler": [
+      "Parlak yeşil ışık daha çok ve daha hızlı elektron koparır, çünkü toplam enerjisi büyüktür",
+      "Yeşil ışık hiç elektron koparamaz; morötesi ışık sönük olsa da yaklaşık 1,1 eV enerjili elektronlar koparır",
+      "İkisi de elektron koparır, ama yeşil ışık bunu belli bir gecikmeyle yapar",
+      "Hiçbiri elektron koparamaz, çünkü elektron koparmak için X ışını gerekir"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre her foton enerjisini tek bir elektrona verir. 546 nm'lik foton yaklaşık 2,27 eV taşır, 2,3 eV'luk bedeli karşılamaz; ışığı parlatmak yalnızca daha çok yetersiz foton göndermektir. 365 nm'lik foton yaklaşık 3,40 eV taşır; en hızlı elektronun enerjisi 3,40 − 2,3 = 1,10 eV olur.",
+    "ders": "d27",
+    "bolum": 3
+  },
+  {
+    "id": "d27-2",
+    "soru": "Tonomura ve arkadaşlarının 1989'daki tek elektron çift yarık kaydı neyi gösterdi?",
+    "secenekler": [
+      "Elektronlar ekrana yayılmış soluk bir dalga olarak ulaşır, nokta bırakmaz",
+      "Elektronlar birbirine çarptığı için girişim deseni oluşur",
+      "Her elektron tek bir nokta bırakır, ama binlercesi biriktikçe girişim deseni ortaya çıkar",
+      "Elektronlar seyrek gönderildiğinde girişim deseni kaybolur ve iki yığın kalır"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre saniyede binden az elektron gönderildi; her biri ekrana tek bir parlak nokta olarak düştü. 8 ve 270 elektronda düzen görülmezken 60.000 elektronda şeritler açıkça çıktı. Elektronlar seyrek geldiği için desen birbirleriyle etkileşmelerinden doğamaz.",
+    "ders": "d27",
+    "bolum": 9
+  },
+  {
+    "id": "d27-3",
+    "soru": "Hackermüller ve arkadaşlarının 2004 deneyinde ısıtılan C70 moleküllerinin girişim desenini ne sildi?",
+    "secenekler": [
+      "Deneycilerin molekülleri bir kamerayla izlemesi",
+      "Moleküllerin yaydığı ve kimsenin yakalamadığı ısıl fotonların yol bilgisini çevreye taşıması",
+      "Isınan moleküllerin parçalanıp atomlarına ayrılması",
+      "Yüksek sıcaklıkta Planck sabitinin değerinin değişmesi"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre moleküller 1000 K'in altındayken girişim kusursuzdu; 3000 K civarında birkaç görünür foton yayınca desen silindi. O fotonları hiçbir insan ya da algılayıcı yakalamadı; yol bilgisini dışarı taşımaları yetti. Kuantumda ölçüm bilinç değil, iz bırakan etkileşimdir.",
+    "ders": "d27",
+    "bolum": 11
+  },
+  {
+    "id": "d27-4",
+    "soru": "Heisenberg belirsizlik ilkesi için hangisi doğrudur?",
+    "secenekler": [
+      "Daha iyi aletlerle konum ve momentum aynı anda istenen kesinlikte ölçülebilir",
+      "Yalnızca bir insan ölçüm yaptığında geçerlidir",
+      "Keskin konum ve keskin momentum taşıyan bir durum zaten yoktur; bu, dalga doğasının sonucudur",
+      "Yalnızca ışık için geçerlidir, elektronlar için geçerli değildir"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre ilke uzun süre ölçümün sistemi dürtmesiyle karıştırıldı, ama bugünkü anlayışa göre aletlerin kusurundan değil kuantum nesnelerinin dalga doğasından gelir: dar bir yere toplanmış dalga birçok dalga boyunun karışımıdır. Δx × Δp ≥ h ÷ (4π).",
+    "ders": "d27",
+    "bolum": 12
+  }
+]
