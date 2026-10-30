@@ -1,0 +1,129 @@
+{
+  "rehber": {
+    "ne": "Bir roketin kütlesini yakıt, gövde ve yük diye ayırıp Tsiolkovsky denklemiyle ne kadar hız değişimi (Δv, delta-v) kazanacağını hesaplar. Motorun verimini (özgül itki), yakıtın payını, aşama sayısını ve yükü değiştirip bu Δv'nin alçak yörüngeye, Mars yoluna ya da Ay'a yetip yetmediğini görürsün. Yanıtladığı soru: Bir roket neden neredeyse tamamen yakıttır ve aşamalar neden işe yarar?",
+    "ekran": {
+      "cizim": [
+        { "sekil": "alan", "renk": "--pirinc", "ad": "Pirinç dolgu (yakıt)", "ne": "Her aşama çubuğunun solundaki pay: o aşamanın yakacağı yakıt. Çubuğun tamamı, aşama ateşlendiği andaki toplam kütledir; bu yüzden her çubuk kendi ölçeğinde çizilir." },
+        { "sekil": "alan", "renk": "--soluk", "ad": "Soluk, çizgili dolgu (gövde)", "ne": "O aşamanın boş deposu ve motorları. Yakıt bitince aşamayla birlikte atılır." },
+        { "sekil": "alan", "renk": "rgba(233,226,208,.18)", "ad": "Çerçeveli açık dolgu (üst aşamalar)", "ne": "Bu aşamanın sırtında taşıdığı üst aşamalar (yakıtlarıyla birlikte). En üst aşamada yoktur." },
+        { "sekil": "alan", "renk": "--parsomen", "ad": "Koyu çerçeveli krem dolgu (yük)", "ne": "Taşınan yük; her çubuğun en sağında, sığarsa üstünde “yük” yazar. Alt aşamalarda çok ince kalır (en az 2 piksel çizilir)." },
+        { "sekil": "kalin", "renk": "--pirinc", "ad": "Alttaki kalın çubuk (Δv)", "ne": "Roketin toplam Δv'si, km/s ölçeğinde. Dilimler aşamaların katkısıdır (pirinç ve açık sarı sırayla, aralarında boşluk). 18 km/s'yi aşarsa ok ucuyla kesilir; değer üstteki yazıda." },
+        { "sekil": "dikey", "renk": "--iyi", "ad": "Düz dikey çizgi (yetişilen hedef)", "ne": "Yerden o hedefe varmak için gereken Δv; roketin Δv'si buna yetiyor." },
+        { "sekil": "dikey-kesik", "renk": "--soluk", "ad": "Kesik dikey çizgi (yetişilemeyen hedef)", "ne": "Roketin Δv'sinin yetmediği hedef. Hedefler: LEO (alçak yörünge), GTO (yerdurgun aktarım yörüngesi), Mars'a aktarım, Ay yüzeyi." },
+        { "sekil": "yazi", "renk": "--soluk", "ad": "Yazılar", "ne": "Aşama satırlarında ateşlemedeki kütle ve o aşamanın Δv'si; altta ölçek (km/s) ve hedef adları." }
+      ],
+      "kontroller": [
+        { "sec": "#rkMotor", "tur": "dugme", "ad": "Motor düğmeleri", "ne": "Gerçek motorların özgül itkisi: Merlin 1D yerde ve boşlukta (Falcon 9'un birinci aşaması), RS-25 (Uzay Mekiği ve SLS, boşlukta), Uzay Mekiği'nin katı yakıtlı iticisi (boşlukta) ve NSTAR iyon motoru. Bütün aşamaların Isp'ini o değere ayarlar; kütlelere dokunmaz." },
+        { "sec": "#rkArac", "tur": "dugme", "ad": "Araç düğmeleri", "ne": "Dersteki iki örnek (tek aşama ve iki aşama, kalkış kütlesi 100 ton) ve kaynaklı kütlelerle basitleştirilmiş Falcon 9 benzeri iki aşamalı roket. Bütün kütleleri ve Isp'leri yükler." },
+        { "sec": "#rkIsp", "tur": "kaydirici", "ad": "Özgül itki (Isp)", "ne": "Motorun verimi, saniye biriminde, 150 ile 5000 arası (logaritmik). Egzoz hızı Isp × g₀'dır; Δv onunla doğru orantılı büyür. Bütün aşamalara aynı değeri verir." },
+        { "sec": "#rkEps", "tur": "kaydirici", "ad": "Aşamanın yakıt payı", "ne": "Her aşamanın kendi kütlesinin (yakıt + gövde) yüzde kaçı yakıt: %50 ile %98 arası. Aşamaların büyüklüğü aynı kalır, yalnız yakıt ile gövde arasındaki bölüşüm değişir." },
+        { "sec": "#rkN", "tur": "kaydirici", "ad": "Aşama sayısı", "ne": "1, 2 ya da 3. Değişince roket o sayıda aşamaya yeniden bölünür: kalkış kütlesi ve yük aynı kalır, her aşamaya aynı kütle oranı düşer." },
+        { "sec": "#rkYuk", "tur": "kaydirici", "ad": "Yük kütlesi", "ne": "0,1 ile 60 ton arası (logaritmik). Roketin aşamaları aynı kalır; yük ağırlaştıkça her aşamanın kütle oranı ve Δv küçülür." }
+      ],
+      "hareket": "Bu deneyde canlandırma yok; çizim kontroller değişince yeniden çizilir."
+    },
+    "gercek": "İstanbul'dan alacakaranlıkta geçerken çıplak gözle görebildiğin Uluslararası Uzay İstasyonu'na giden her araç, bu deneydeki ilk hedef çizgisinin bedelini, yaklaşık 9,4 km/s'yi öder. Doğuya fırlatılan roket Dünya'nın dönüşünden bedava hız alır: ekvatorda yaklaşık 0,465 km/s, İstanbul'un enleminde yaklaşık 0,35 km/s; deney bu katkıyı hesaba katmaz. İyon motorları çok verimlidir ama itkileri küçüktür; NASA'nın NSTAR motoru Deep Space 1 ve Dawn araçlarını uzayda uzun süre çalışarak hızlandırdı.",
+    "gercekKaynaklar": [
+      { "ad": "NASA: Spot the Station", "url": "https://spotthestation.nasa.gov/" },
+      { "ad": "Wikipedia: Delta-v budget", "url": "https://en.wikipedia.org/wiki/Delta-v_budget" },
+      { "ad": "NASA Earth Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html" },
+      { "ad": "Wikipedia: NSTAR", "url": "https://en.wikipedia.org/wiki/NASA_Solar_Technology_Application_Readiness" }
+    ],
+    "dersler": ["d23", "d3"],
+    "adimlar": [
+      {
+        "yap": "“Ders: tek aşama” düğmesine bas.",
+        "tikla": "#rkArac button[data-i=\"0\"]",
+        "gozle": "Δv 9,69 km/s; kalkış kütlesinin %88,4'ü yakıt, kütle oranı 8,62, yük payı %1,6. Alçak yörüngeye (LEO, 9,4 km/s) ancak yetiyor.",
+        "neden": "Dersteki örnek: egzoz hızı 4,5 km/s (Isp ≈ 459 s), 9,7 km/s için kütle oranı e^(9,7/4,5) ≈ 8,6 gerekir; kalkış kütlesinin yalnız %11,6'sı yakıt bittiğinde kalır. Onun da %10'u boş depo ve motor olunca yüke %1,6 kalır."
+      },
+      {
+        "yap": "Aynı roketin Isp'ini 306 s'ye düşür (egzoz hızı 3 km/s), yakıt payını %97,2'ye çıkar.",
+        "tikla": "#rkArac button[data-i=\"0\"]",
+        "ayar": { "#rkIsp": 2.4856, "#rkEps": 0.972 },
+        "gozle": "Δv 9,40 km/s; ama bunun için kalkış kütlesinin %95,6'sı yakıt olmalı, kütle oranı 23,0.",
+        "neden": "Dersin ikinci örneği: egzoz hızı 3 km/s olunca 9,4 km/s için oran e^(9,4/3) ≈ 23 gerekir. Egzoz hızı biraz düştü, gereken yakıt üstel olarak arttı: gövdeye ve yüke kalkış kütlesinin %4,4'ü kalıyor."
+      },
+      {
+        "yap": "“Ders: iki aşama” düğmesine bas.",
+        "tikla": "#rkArac button[data-i=\"1\"]",
+        "gozle": "Aşamalar 5,00 + 4,70 km/s, toplam 9,70 km/s. Yük payı %6,1: tek aşamadaki %1,6'nın yaklaşık 3,8 katı.",
+        "neden": "Birinci aşama yakıtını bitirince kalkış kütlesinin %10'u olan boş gövdesini atıyor; ikinci aşama artık onu hızlandırmak zorunda değil. Ders bu varsayımlarla yükün yaklaşık 4 kat arttığını söyler; tam hesap 6,07 / 1,6 ≈ 3,8."
+      },
+      {
+        "yap": "“Ders: tek aşama”ya bas, sonra aşama sayısını 2 yap.",
+        "tikla": "#rkArac button[data-i=\"0\"]",
+        "ayar": { "#rkN": 2 },
+        "gozle": "Aynı kalkış kütlesi (100 t), aynı yük (1,6 t), aynı motor: Δv 9,69'dan 13,82 km/s'ye çıktı (6,91 + 6,91). Artık Mars'a aktarıma (13,7) bile yetiyor.",
+        "neden": "Roket iki eşit kütle oranlı aşamaya bölündü. Δv aşamaların Δv'lerinin toplamıdır, kütle oranları ise çarpılır: iki kez 4,65 kat oran, tek seferde 8,62 kattan çok daha fazla hız verir, çünkü ikinci aşama ağır boş depoyu taşımaz."
+      },
+      {
+        "yap": "Aşama sayısını 3 yap.",
+        "tikla": "#rkArac button[data-i=\"0\"]",
+        "ayar": { "#rkN": 3 },
+        "gozle": "Δv 15,05 km/s (3 × 5,02): ikinci aşama 4,13 km/s kazandırmıştı, üçüncüsü yalnız 1,23 km/s ekliyor. Ay yüzeyine (15,3) yine de yetmiyor.",
+        "neden": "Aşama eklemenin getirisi azalır; Wikipedia'ya göre gerçek roketlerin nadiren üçten fazla aşama kullanmasının ana nedeni her aşamanın getirdiği ek ağırlık ve karmaşıklıktır."
+      },
+      {
+        "yap": "“Falcon 9 benzeri” düğmesine bas.",
+        "tikla": "#rkArac button[data-i=\"2\"]",
+        "gozle": "Kalkış kütlesi 567,5 t, yük 22,8 t; aşamalar 3,75 + 5,50 = 9,25 km/s. LEO'ya (9,4) 0,15 km/s eksik.",
+        "neden": "Model kaba: aşama kütleleri tahmindir, birinci aşamada Isp'in yerdeki ve boşluktaki değerinin ortası (296,5 s) alındı, Dünya'nın dönüşünün doğuya fırlatmada verdiği birkaç yüz m/s yok sayıldı. Yine de yayımlanan en büyük yük, hedefin hemen yanına düşüyor."
+      },
+      {
+        "yap": "Falcon 9 benzeri roketin yükünü 8,3 tona indir (yayımlanan GTO yükü).",
+        "tikla": "#rkArac button[data-i=\"2\"]",
+        "ayar": { "#rkYuk": 0.919078 },
+        "gozle": "Δv 11,72 km/s (3,95 + 7,77): GTO çizgisine (11,8) çok yakın. İkinci aşamanın kütle oranı 5,01'den 9,74'e çıktı.",
+        "neden": "Yük en çok en üst aşamayı etkiler: 14,5 ton daha hafif yük, ikinci aşamanın yanma sonu kütlesini 26,8 tondan 12,3 tona indirir. Bu yüzden aynı roket GTO'ya, alçak yörüngeye taşıdığının yarısından az yük götürebilir (8,3 / 22,8 ≈ 0,36)."
+      },
+      {
+        "yap": "Falcon 9 benzeri rokete NSTAR iyon motorunun Isp'ini ver (3100 s).",
+        "tikla": "#rkArac button[data-i=\"2\"]",
+        "ayar": { "#rkIsp": 3.491362 },
+        "gozle": "Δv 88,16 km/s: bütün hedefler kâğıt üstünde yetişiliyor. Ama ölçüm kutusu uyarıyor: bu motor yerden kalkamaz.",
+        "neden": "Tsiolkovsky denklemi itkiyi sormaz. NSTAR'ın itkisi en çok 92 mN, yaklaşık 9 gramlık bir cismin ağırlığı; yüzlerce tonluk roketi kaldıramaz. İyon motorları yalnız uzaydaki hafif araçları uzun süre çalışarak hızlandırır."
+      }
+    ],
+    "kaynaklar": [
+      { "ad": "Wikipedia: Tsiolkovsky rocket equation", "url": "https://en.wikipedia.org/wiki/Tsiolkovsky_rocket_equation" },
+      { "ad": "Wikipedia: Delta-v budget", "url": "https://en.wikipedia.org/wiki/Delta-v_budget" },
+      { "ad": "Wikipedia: Multistage rocket", "url": "https://en.wikipedia.org/wiki/Multistage_rocket" },
+      { "ad": "Wikipedia: Falcon 9 Full Thrust", "url": "https://en.wikipedia.org/wiki/Falcon_9_Full_Thrust" },
+      { "ad": "Spaceflight101: Falcon 9 FT", "url": "https://spaceflight101.com/spacerockets/?p=1457" },
+      { "ad": "Patterson ve Benson 2008, NASA/TM-2008-214988 (NEXT ve NSTAR)", "url": "https://ntrs.nasa.gov/api/citations/20080012602/downloads/20080012602.pdf" }
+    ]
+  },
+  "veri": {
+    "kalkis_t": 100,
+    "baslangic": { "asama": 2, "isp": 350, "eps": 0.9, "yuk_t": 2 },
+    "motorlar": [
+      { "ad": "Merlin 1D (yerde)", "isp": 282, "kaynaklar": [{ "ad": "Wikipedia: Falcon 9 Full Thrust", "url": "https://en.wikipedia.org/wiki/Falcon_9_Full_Thrust" }, { "ad": "Spaceflight101: Falcon 9 FT", "url": "https://spaceflight101.com/spacerockets/?p=1457" }] },
+      { "ad": "Merlin 1D (boşlukta)", "isp": 311, "kaynaklar": [{ "ad": "Wikipedia: Falcon 9 Full Thrust", "url": "https://en.wikipedia.org/wiki/Falcon_9_Full_Thrust" }, { "ad": "Spaceflight101: Falcon 9 FT", "url": "https://spaceflight101.com/spacerockets/?p=1457" }] },
+      { "ad": "RS-25 (boşlukta)", "isp": 452, "kaynaklar": [{ "ad": "L3Harris: RS-25", "url": "https://l3harris.com/all-capabilities/rs-25-engine" }, { "ad": "Wikipedia: RS-25", "url": "https://en.wikipedia.org/wiki/RS-25" }] },
+      { "ad": "Katı yakıt (Mekik iticisi)", "isp": 268, "kaynaklar": [{ "ad": "Wikipedia: Space Shuttle Solid Rocket Booster", "url": "https://en.wikipedia.org/wiki/Space_Shuttle_Solid_Rocket_Booster" }] },
+      { "ad": "İyon (NSTAR)", "isp": 3100, "itki_mN": 92, "kaynaklar": [{ "ad": "Patterson ve Benson 2008, NASA/TM-2008-214988", "url": "https://ntrs.nasa.gov/api/citations/20080012602/downloads/20080012602.pdf" }, { "ad": "Wikipedia: NSTAR", "url": "https://en.wikipedia.org/wiki/NASA_Solar_Technology_Application_Readiness" }] }
+    ],
+    "araclar": [
+      { "ad": "Ders: tek aşama", "yuk_t": 1.6, "asamalar": [{ "yakit_t": 88.4, "kuru_t": 10, "isp": 458.8723 }], "not": "Ders 23 örneği: egzoz hızı 4,5 km/s, 9,7 km/s; depo kalkışın %10'u.", "kaynaklar": [{ "ad": "Wikipedia: Tsiolkovsky rocket equation", "url": "https://en.wikipedia.org/wiki/Tsiolkovsky_rocket_equation" }] },
+      { "ad": "Ders: iki aşama", "yuk_t": 6.07, "asamalar": [{ "yakit_t": 67.08, "kuru_t": 10, "isp": 458.8723 }, { "yakit_t": 14.85, "kuru_t": 2, "isp": 458.8723 }], "not": "Ders 23 örneği: 5,0 + 4,7 km/s, gövdeler kalkışın %10'u ve %2'si.", "kaynaklar": [{ "ad": "Wikipedia: Tsiolkovsky rocket equation", "url": "https://en.wikipedia.org/wiki/Tsiolkovsky_rocket_equation" }] },
+      { "ad": "Falcon 9 benzeri", "yuk_t": 22.8, "falcon": true, "asamalar": [{ "yakit_t": 411, "kuru_t": 22.2, "isp": 296.5 }, { "yakit_t": 107.5, "kuru_t": 4.0, "isp": 348 }], "not": "Kuru kütleler tahmin; 1. aşama Isp'i 282 ile 311 s'nin ortası (basitleştirme). Yük: yayımlanan, roket geri kazanılmadan LEO yükü.", "kaynaklar": [{ "ad": "Wikipedia: Falcon 9 Full Thrust", "url": "https://en.wikipedia.org/wiki/Falcon_9_Full_Thrust" }, { "ad": "Spaceflight101: Falcon 9 FT", "url": "https://spaceflight101.com/spacerockets/?p=1457" }] }
+    ],
+    "hedefler": [
+      { "ad": "Alçak yörünge", "kisa": "LEO", "dv_kms": 9.4, "not": "Yerden ISS'nin 300 km'lik ilk yörüngesine; 1,5–2 km/s sürtünme ve çekim kaybı dahil." },
+      { "ad": "Yerdurgun aktarım (GTO)", "kisa": "GTO", "dv_kms": 11.83, "not": "9,4 + 2,43: 300 km dairesel yörüngeden en uzak noktası 35.786 km olan elipse (vis-viva hesabı, eğiklik değişimi yok)." },
+      { "ad": "Mars'a aktarım", "kisa": "Mars", "dv_kms": 13.7, "not": "9,4 + 4,3 (tipik, en küçük değil)." },
+      { "ad": "Ay yüzeyi", "kisa": "Ay", "dv_kms": 15.33, "not": "9,4 + 5,93 (Kennedy enleminden alçak yörüngeden)." }
+    ],
+    "kaynaklar": [
+      { "ad": "Wikipedia: Delta-v budget", "url": "https://en.wikipedia.org/wiki/Delta-v_budget" },
+      { "ad": "Wikipedia: Tsiolkovsky rocket equation", "url": "https://en.wikipedia.org/wiki/Tsiolkovsky_rocket_equation" },
+      { "ad": "Wikipedia: Multistage rocket", "url": "https://en.wikipedia.org/wiki/Multistage_rocket" },
+      { "ad": "Wikipedia: Falcon 9 Full Thrust", "url": "https://en.wikipedia.org/wiki/Falcon_9_Full_Thrust" },
+      { "ad": "Spaceflight101: Falcon 9 FT", "url": "https://spaceflight101.com/spacerockets/?p=1457" },
+      { "ad": "L3Harris: RS-25", "url": "https://l3harris.com/all-capabilities/rs-25-engine" },
+      { "ad": "Wikipedia: Space Shuttle SRB", "url": "https://en.wikipedia.org/wiki/Space_Shuttle_Solid_Rocket_Booster" },
+      { "ad": "NASA/TM-2008-214988 (NSTAR, NEXT)", "url": "https://ntrs.nasa.gov/api/citations/20080012602/downloads/20080012602.pdf" }
+    ]
+  }
+}

@@ -58,7 +58,7 @@ Biçim: iddia | kaynak URL | kaynaktaki ifade (kısa alıntı ya da değer)
 
 ## Bölüm 6 — Yaşanabilir bölge
 - Tanım, Goldilocks; Plüton/Merkür örneği; büyüklük, sıcaklık, yıldız türü rol oynar | https://science.nasa.gov/exoplanets/what-is-the-habitable-zone-or-goldilocks-zone | "not too hot and not too cold for liquid water to exist on the surface"; at Pluto's distance air would largely freeze, at Mercury's water would boil away
-- Kopparapu 2013: 0,99–1,67 AB; Dünya iç kenara yakın | https://en.wikipedia.org/wiki/Habitable_zone | 0.99–1.67 AU; "Earth is at the inner edge of the HZ"
+- [D 30 Ekim 2026] Kopparapu 2013: 0,99–1,70 AB (Wikipedia tablosundaki 1,67 makalenin özetiyle uyuşmuyor; makale esas alındı); Dünya iç kenara yakın | https://pure.psu.edu/en/publications/habitable-zones-around-main-sequence-stars-new-estimates/ | "the water-loss (inner HZ) and maximum greenhouse (outer HZ) limits for our solar system are at 0.99 and 1.70 AU" · Wikipedia HZ: "Earth is at the inner edge of the HZ"
 - Kasting 1993: 0,95–1,37 AB; Zsom 0,38 AB; Pierrehumbert ve Gaidos 10 AB | https://en.wikipedia.org/wiki/Habitable_zone | değerler tablodan
 - Işınım/uzaklık karesi ile ölçekleme | https://en.wikipedia.org/wiki/Habitable_zone | stellar flux and inverse-square law used to extrapolate (karekök formu bu ilkeden türetildi)
 - Kırmızı cüce: gelgit kilidi; patlamalar parlaklığı dakikalarda ikiye katlayıp atmosfer ve suyu sökebilir | https://en.wikipedia.org/wiki/Habitable_zone | tidal locking; flares could double brightness in minutes and strip atmosphere and water

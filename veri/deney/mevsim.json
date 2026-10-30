@@ -1,0 +1,100 @@
+{
+  "rehber": {
+    "ne": "Dünya'nın eğik eksenini, Güneş çevresindeki yerini ve senin enlemini birlikte gösterir: üstte Dünya yörüngesinde ve yandan, altta güneye bakarken Güneş'in o günkü gökteki yolu. Tarihi, enlemi ve eksenin eğikliğini değiştirip öğle Güneşi'nin yüksekliğini, gündüzün süresini ve bir metrekare yere düşen gücü ölçersin. Yanıtladığı soru: Dünya Ocak'ta Güneş'e en yakınken İstanbul'da neden kış yaşanır?",
+    "ekran": {
+      "cizim": [
+        { "sekil": "daire", "renk": "#FFD27A", "ad": "Sol üstteki sarı daire", "ne": "Güneş. Çevresindeki basık elips Dünya'nın yörüngesidir, yukarıdan eğik bakılmış hâli; gerçek yörünge neredeyse daire olduğu için Güneş ortada çizildi. Ölçekli değildir." },
+        { "sekil": "yazi", "renk": "--soluk", "ad": "“Mar”, “Haz”, “Eyl”, “Ara” yazıları", "ne": "Dünya'nın ekinokslarda (Mart, Eylül) ve gündönümlerinde (Haziran, Aralık) yörüngede bulunduğu yerler. Dünya bu sırayla, yukarıdan bakınca saat yönünün tersine dolanır." },
+        { "sekil": "daire", "renk": "#2C5A7A", "ad": "Yörüngedeki mavi nokta ve içinden geçen çubuk", "ne": "Seçili tarihte Dünya. Çubuk dönme ekseni; ucundaki küçük nokta kuzey kutbu. Eksen yıl boyu hep aynı yöne, sağa yatık kalır; ne kadar yatık olduğunu eğiklik kaydırıcısı belirler." },
+        { "sekil": "kesik", "renk": "rgba(255,210,122,.45)", "ad": "Güneş'ten Dünya'ya ince kesik çizgi", "ne": "Güneş ile Dünya arasındaki doğrultu: sağdaki büyük küre bu doğrultuya dik bakılarak çizildi." },
+        { "sekil": "halka", "renk": "--pirinc", "ad": "Yörüngedeki küçük pirinç halka (“günberi”)", "ne": "Günberi: Dünya'nın Güneş'e en yakın olduğu yer (3 Ocak 2026). Sol üst köşedeki aynı halka bunun açıklamasıdır." },
+        { "sekil": "alan", "renk": "#4F7FA0", "zemin": "#13233A", "ad": "Sağ üstteki büyük küre", "ne": "Aynı Dünya, büyütülmüş ve yandan; Güneş solda. Sol yarısı (açık mavi) gündüz, sağ yarısı (koyu) gece." },
+        { "sekil": "cizgi", "renk": "#FFD27A", "ad": "Kürenin solundaki sarı oklar", "ne": "Güneş ışınları; uzaktan geldikleri için birbirine paraleldir." },
+        { "sekil": "kalin", "renk": "--parsomen", "ad": "Küreden taşan krem çubuk (“K” ucu)", "ne": "Dönme ekseni; “K” kuzey kutbu. Bu bakışta eksen, dikeyden Güneş'e doğru tam o günkü dik açıklık kadar yatık görünür: sola yatıksa kuzey yarım küre Güneş'e eğiktir." },
+        { "sekil": "cizgi", "renk": "--parsomen", "ad": "Kürenin ortasından geçen ince krem çizgi", "ne": "Ekvator. Enlem çemberleri bu bakışta yandan görüldüğü için düz çizgi gibidir." },
+        { "sekil": "kesik", "renk": "--pirinc", "ad": "Küredeki kesikli pirinç çizgi", "ne": "Senin enlemin, yani gün boyunca döndüğün çember. Açık (gündüz) yarıya düşen payı ne kadar büyükse gündüz o kadar uzundur." },
+        { "sekil": "daire", "renk": "--pirinc", "ad": "Kesikli çizginin sol ucundaki pirinç nokta", "ne": "Sen, öğle anında: Güneş'e en dönük olduğun an." },
+        { "sekil": "halka", "renk": "#FFD27A", "ad": "Kürenin en solundaki sarı halka", "ne": "Güneş'in tam tepede olduğu nokta. Bu noktanın enlemi Güneş'in dik açıklığıdır; Haziran gündönümünde Yengeç dönencesindedir." },
+        { "sekil": "alan", "renk": "rgba(150,160,178,.10)", "ad": "Alttaki geniş elips (“doğu”, “batı”, “kuzey”, “güney”)", "ne": "Ufkun: düz bir yerde durup güneye baktığını, sahneye arkadan ve biraz yukarıdan bakıldığını düşün. Doğu solda, batı sağda; uzak kenar güney, yakın kenar kuzey. Ortadaki nokta (“sen”) gözlemci." },
+        { "sekil": "kalin", "renk": "#F2C879", "ad": "Kalın sarı yay", "ne": "Güneş'in o gün ufkun üstündeki yolu: doğudan doğar, öğlede en yükseğe çıkar, batıda batar." },
+        { "sekil": "kesik", "renk": "--soluk", "ad": "İnce kesikli devamı", "ne": "Güneş'in yolunun ufkun altında kalan kısmı, yani gece." },
+        { "sekil": "halka", "renk": "--parsomen", "ad": "Ufuk üstündeki iki küçük halka", "ne": "Güneş'in doğduğu ve battığı yerler (Güneş'in merkezi ufukta). Yazın kuzeydoğu ve kuzeybatıya, kışın güneydoğu ve güneybatıya kayarlar." },
+        { "sekil": "daire", "renk": "#FFD27A", "ad": "Yayın tepesindeki sarı nokta (“öğle …°”)", "ne": "Öğle Güneşi ve ufuktan yüksekliği. Güneş gün içinde en yükseğe öğlede, tam güneydeyken çıkar (ekvatorla dönence arasında ve güney yarım kürede kuzeyde de olabilir)." },
+        { "sekil": "dikey-kesik", "renk": "--pirinc", "ad": "Öğle noktasından ufka inen kesik çizgi", "ne": "Öğle Güneşi'nin ufka göre yüksekliği; ölçüm kutusundaki açı." }
+      ],
+      "kontroller": [
+        { "sec": "#msOn", "tur": "dugme", "ad": "Hazır durumlar", "ne": "İstanbul 21 Haziran ve 21 Aralık (gündönümleri), Ekvator (20 Mart ekinoksunda), Kutup dairesi (66,56° kuzey, 21 Haziran) ve Eğiklik 0 (İstanbul, 21 Haziran, eksen dik): tarih, enlem ve eğiklik kaydırıcılarını o duruma getirir." },
+        { "sec": "#msGun", "tur": "kaydirici", "ad": "Tarih", "ne": "2026'nın 1 Ocak'tan 31 Aralık'a her günü. Açılışta bugünün tarihindedir." },
+        { "sec": "#msEnlem", "tur": "kaydirici", "ad": "Enlem", "ne": "Gözlem yerinin ekvatordan uzaklığı, derece: kuzey artı, güney eksi. Açılışta 41,00° (Ataşehir, İstanbul)." },
+        { "sec": "#msEgik", "tur": "kaydirici", "ad": "Eksen eğikliği", "ne": "Dönme ekseninin yörünge düzleminin dikine göre yatıklığı, 0° ile 40° arası. Dünya'nınki 23,44° (NASA). 0°'de mevsim olmaz; büyüdükçe yaz ile kış arasındaki fark büyür." }
+      ],
+      "hareket": "Canlandırma yoktur: kaydırıcıyı ya da düğmeleri değiştirdikçe çizim ve ölçümler hemen güncellenir."
+    },
+    "gercek": "2026'da Haziran gündönümü 21 Haziran saat 11.24'te, Aralık gündönümü 21 Aralık saat 23.50'de (Türkiye saati, USNO). İstanbul'da bir metrelik bir sopanın öğle gölgesi Haziran gündönümünde yaklaşık 32 cm, Aralık gündönümünde yaklaşık 2,1 m olur: kış öğlesinde gölge altı kattan uzundur. Dünya Güneş'e 3 Ocak 2026'da en yakındı, yani tam İstanbul kışının ortasında.",
+    "gercekKaynaklar": [
+      { "ad": "USNO: Earth's Seasons and Apsides 2026", "url": "https://aa.usno.navy.mil/api/seasons?year=2026" },
+      { "ad": "NASA JPL Horizons (Dünya–Güneş uzaklığı)", "url": "https://ssd.jpl.nasa.gov/horizons/" }
+    ],
+    "dersler": ["d1", "d21", "d4"],
+    "adimlar": [
+      { "yap": "“İstanbul 21 Haziran” düğmesine bas.", "tikla": "#msOn button[data-i=\"0\"]",
+        "gozle": "Öğle Güneşi 72,4° (güneyde), gündüz 14 sa 57 dk (kırılma ve disk payıyla 15 sa 8 dk), dik açıklık +23,44°, öğlede bir metrekareye tepedeki Güneş'in %95'i kadar güç düşüyor.", "neden": "Haziran gündönümünde Güneş'in dik açıklığı eğikliğe eşittir: öğle yüksekliği 90° − 41° + 23,44° ≈ 72,4°. Kuzey yarım küre Güneş'e eğik; sağdaki kürede eksen Güneş'e doğru yatık ve kesikli enlem çizginin çoğu gündüz yarısında." },
+      { "yap": "“İstanbul 21 Aralık” düğmesine bas.", "tikla": "#msOn button[data-i=\"1\"]",
+        "gozle": "Öğle Güneşi yalnız 25,6°, gündüz 9 sa 3 dk (kırılmayla 9 sa 13 dk), dik açıklık −23,44°, güç %43. Alttaki yay alçak ve kısa; doğuş ve batış güneye kaymış.", "neden": "Şimdi güney yarım küre Güneş'e eğik: öğle yüksekliği 90° − 41° − 23,44° ≈ 25,6°. Işık yere eğik geldiği için aynı ışık daha geniş bir alana yayılır; yazın öğle gücü kışınkinin 0,95 ÷ 0,43 ≈ 2,2 katı. Gündüz de yaklaşık 6 saat kısa." },
+      { "yap": "İstanbul'da tarihi 3 Ocak yap (eğiklik 23,44°).", "ayar": { "#msGun": 3, "#msEnlem": 41, "#msEgik": 23.44 },
+        "gozle": "Öğle Güneşi 26,2°, gündüz 9 sa 9 dk (kırılmayla 9 sa 19 dk), güç %44. Açıklamada Dünya'nın Güneş'e uzaklığı yaklaşık 147,1 milyon km: yılın en kısa uzaklığı.", "neden": "3 Ocak'ta Dünya Güneş'e en yakındır (günberi), yine de İstanbul'da kış. Uzaklık Temmuz'a göre yalnız %3,4 az, gelen ışık yaklaşık %7 fazla; eğikliğin yarattığı fark ise iki kattan büyük. Mevsimleri uzaklık değil eğiklik belirler." },
+      { "yap": "“Eğiklik 0” düğmesine bas, sonra tarihi 21 Aralık'a (355. gün) çek.", "tikla": "#msOn button[data-i=\"4\"]", "ayar": { "#msGun": 355 },
+        "gozle": "Öğle Güneşi 49,0°, gündüz 12 sa 0 dk (kırılmayla 12 sa 9 dk), dik açıklık 0,00°, güç %75: 21 Haziran'daki değerlerin aynısı. Üstte eksen dik, sağdaki kürede eksen hiç yatık değil.", "neden": "Eksen dik olsaydı Güneş her gün gök ekvatorunun üstünde kalırdı: öğle yüksekliği her gün 90° − enlem, gündüz her yerde 12 saat. Yaz ile kış arasında fark kalmaz; yalnız %3,4'lük uzaklık değişimi kalırdı." },
+      { "yap": "“Ekvator (20 Mart)” düğmesine bas.", "tikla": "#msOn button[data-i=\"2\"]",
+        "gozle": "Öğle Güneşi 89,9°: neredeyse tam tepede. Gündüz 12 sa 0 dk (kırılmayla 12 sa 7 dk), dik açıklık −0,08°, güç %100. Alttaki yay doğudan dimdik yükselip batıya iniyor.", "neden": "Ekinoksta Güneş gök ekvatorunun üstündedir: ekvatorda öğle Güneşi neredeyse tam tepede ve her metrekareye en çok güç düşer. Ekvatorda gündüz yıl boyu 12 saate yakındır; öğle Güneşi yılda iki kez, ekinokslarda tam tepeye gelir." },
+      { "yap": "“Kutup dairesi (21 Haziran)” düğmesine bas.", "tikla": "#msOn button[data-i=\"3\"]",
+        "gozle": "Öğle Güneşi 46,9°, gündüz 23 sa 59 dk; kırılma ve disk payıyla 24 sa (Güneş batmıyor). Alttaki yay gece yarısı kuzey ufkuna değiyor.", "neden": "Kutup dairesinin enlemi 90° − eğiklik: gündönümü gecesi Güneş'in merkezi kuzey ufkuna ancak değer, sonra yeniden yükselir. Kırılma ve Güneş'in diski hesaba katılınca hiç batmaz. Biraz daha kuzeyde Güneş haftalarca batmaz: gece yarısı Güneşi." },
+      { "yap": "İstanbul 21 Haziran'da eğikliği 40°'ye çıkar.", "ayar": { "#msGun": 172, "#msEnlem": 41, "#msEgik": 40 },
+        "gozle": "Dik açıklık +40,00°, öğle Güneşi 89,0° (neredeyse tepede), gündüz 18 sa 15 dk (kırılmayla 18 sa 32 dk), güç %100.", "neden": "Eğiklik büyüdükçe yaz Güneşi daha yükseğe çıkar, gündüz daha uzun sürer; kışın tersi olur. Mevsimlerin şiddetini eğiklik belirler. Dünya'nınki bugün 23,44°; bu açı yaklaşık 41.000 yıllık bir döngüde 2° kadar oynar." }
+    ],
+    "kaynaklar": [
+      { "ad": "NASA Earth Fact Sheet (eğiklik, günberi ve günöte uzaklıkları)", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html" },
+      { "ad": "USNO: Approximate Solar Coordinates", "url": "https://aa.usno.navy.mil/faq/sun_approx" },
+      { "ad": "Wikipedia: Sunrise equation", "url": "https://en.wikipedia.org/wiki/Sunrise_equation" },
+      { "ad": "Wikipedia: Arctic Circle", "url": "https://en.wikipedia.org/wiki/Arctic_Circle" },
+      { "ad": "Wikipedia: Equinox (kırılma 34′, Güneş yarıçapı 16′)", "url": "https://en.wikipedia.org/wiki/Equinox" },
+      { "ad": "NASA JPL Horizons", "url": "https://ssd.jpl.nasa.gov/horizons/" },
+      { "ad": "Wikipedia: Tropic of Cancer", "url": "https://en.wikipedia.org/wiki/Tropic_of_Cancer" }
+    ]
+  },
+  "veri": {
+    "istanbul": { "ad": "Fetih Mahallesi, Ataşehir", "enlem": 41.0, "boylam": 29.08, "not": "Urania'nın varsayılan konumu (uygulama.js VARSAYILAN_KONUM: 41,0046° K, 29,0762° D), iki basamağa yuvarlandı" },
+    "egiklik": { "deger": 23.44, "birim": "derece", "kaynaklar": [{ "ad": "NASA Earth Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html" }] },
+    "kutupDairesi": { "deger": 66.56, "tam": "66°33′51,0″", "kaynaklar": [{ "ad": "Wikipedia: Arctic Circle", "url": "https://en.wikipedia.org/wiki/Arctic_Circle" }] },
+    "gunberi": { "gun": 3, "saat_ut": 17.25, "tarih_metin": "3 Ocak 2026'da, Türkiye saatiyle 20.15'te", "km": 147099894,
+      "kaynaklar": [{ "ad": "USNO: Earth's Seasons and Apsides 2026 (17.15 UT)", "url": "https://aa.usno.navy.mil/api/seasons?year=2026" }, { "ad": "NASA JPL Horizons (uzaklık)", "url": "https://ssd.jpl.nasa.gov/horizons/" }] },
+    "gunote": { "tarih_metin": "6 Temmuz 2026, Türkiye saatiyle 20.30", "km": 152087774,
+      "kaynaklar": [{ "ad": "USNO: Earth's Seasons and Apsides 2026 (17.30 UT)", "url": "https://aa.usno.navy.mil/api/seasons?year=2026" }, { "ad": "NASA JPL Horizons (uzaklık)", "url": "https://ssd.jpl.nasa.gov/horizons/" }] },
+    "kirilma": { "ufuk_yay_dakika": 34, "gunes_yaricap_yay_dakika": 16, "h0_derece": -0.833,
+      "kaynaklar": [{ "ad": "Wikipedia: Equinox", "url": "https://en.wikipedia.org/wiki/Equinox" }, { "ad": "Wikipedia: Sunrise equation", "url": "https://en.wikipedia.org/wiki/Sunrise_equation" }] },
+    "onAyarlar": [
+      { "ad": "İstanbul 21 Haziran", "gun": 172, "enlem": 41.0, "egiklik": 23.44 },
+      { "ad": "İstanbul 21 Aralık", "gun": 355, "enlem": 41.0, "egiklik": 23.44 },
+      { "ad": "Ekvator (20 Mart)", "gun": 79, "enlem": 0, "egiklik": 23.44 },
+      { "ad": "Kutup dairesi (21 Haziran)", "gun": 172, "enlem": 66.56, "egiklik": 23.44 },
+      { "ad": "Eğiklik 0", "gun": 172, "enlem": 41.0, "egiklik": 0 }
+    ],
+    "karsilastirma": {
+      "not": "İstanbul'da gündüz süresi: deneyin ikinci kutusu (kırılma ve disk payıyla) ile başka kaynaklar",
+      "satirlar": [
+        { "tarih": "21 Haziran 2026", "model": "15 sa 7 dk 34 sn", "usno": "05.32–20.39 → 15 sa 7 dk (dakikaya yuvarlı)", "timeanddate_ders_d1": "15 sa 7 dk 50 sn", "astronomy_engine": "15 sa 7 dk 36 sn" },
+        { "tarih": "21 Aralık 2026", "model": "9 sa 13 dk 13 sn", "usno": "08.25–17.38 → 9 sa 13 dk (dakikaya yuvarlı)", "timeanddate_ders_d1": "yaklaşık 9 sa 12 dk 50 sn (15 sa 7 dk 50 sn − 5 sa 55 dk)", "astronomy_engine": "9 sa 13 dk 27 sn" }
+      ],
+      "kaynaklar": [{ "ad": "USNO: Sun and Moon Data for One Day (41,00° K, 29,08° D)", "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-06-21&coords=41.00,29.08&tz=3" }, { "ad": "timeanddate: İstanbul (ders d1'de kayıtlı)", "url": "https://timeanddate.com/sun/@745042" }]
+    },
+    "kaynaklar": [
+      { "ad": "USNO: Approximate Solar Coordinates", "url": "https://aa.usno.navy.mil/faq/sun_approx" },
+      { "ad": "Wikipedia: Sunrise equation", "url": "https://en.wikipedia.org/wiki/Sunrise_equation" },
+      { "ad": "NASA Earth Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html" },
+      { "ad": "USNO: Seasons and Apsides 2026", "url": "https://aa.usno.navy.mil/api/seasons?year=2026" },
+      { "ad": "NASA JPL Horizons", "url": "https://ssd.jpl.nasa.gov/horizons/" },
+      { "ad": "Wikipedia: Equinox", "url": "https://en.wikipedia.org/wiki/Equinox" },
+      { "ad": "Wikipedia: Arctic Circle", "url": "https://en.wikipedia.org/wiki/Arctic_Circle" }
+    ]
+  }
+}

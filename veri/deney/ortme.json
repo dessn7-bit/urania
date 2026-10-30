@@ -1,0 +1,342 @@
+{
+  "rehber": {
+    "ne": "İki yıldızın birbirinin çevresinde dolandığı ve yörüngesini neredeyse yandan gördüğümüz bir çifti canlandırır: yıldızlar sırayla birbirinin önünden geçer, toplam ışık düzenli olarak azalır. Sıcak yıldız örtülünce ışık çok, soğuk yıldız örtülünce az düşer; çukurların derinliği ve süresi iki yıldızın boyunu ve sıcaklığını ele verir. Yanıtladığı soru: Ayrı ayrı göremediğimiz iki yıldızı tek bir ışık noktasının sönüp parlamasından nasıl tanırız?",
+    "ekran": {
+      "cizim": [
+        {
+          "sekil": "daire",
+          "renk": "#C8D6FF",
+          "ad": "Üstteki “1” yazılı daire",
+          "ne": "1. yıldız, Dünya'dan bakınca. Rengi yüzey sıcaklığına göre değişir: sıcak yıldız mavimsi beyaz (Algol A gibi), soğuk yıldız turuncu. Çizimde yerinde sabit tutulur."
+        },
+        {
+          "sekil": "halka",
+          "renk": "--pirinc",
+          "zemin": "#FFC98C",
+          "ad": "Pirinç halkalı “2” yazılı daire",
+          "ne": "2. yıldız (Algol'de soğuk, turuncu Algol B). 1. yıldızın çevresinde dolanır; yaklaşan yıldız öne çizilir. Halka, kırmızı ışık modunda da iki yıldızı ayırmak için."
+        },
+        {
+          "sekil": "kesik",
+          "renk": "--pirinc-soluk",
+          "ad": "Kesik çizgili elips",
+          "ne": "2. yıldızın 1.'ye göre gökteki yolu. Eğiklik 90°'ye yaklaştıkça elips yassılaşır; yörüngeyi tam yandan görünce düz bir çizgiye döner."
+        },
+        {
+          "sekil": "cizgi",
+          "renk": "--parsomen",
+          "ad": "Alttaki krem eğri (ışık eğrisi)",
+          "ne": "İki yıldızın toplam ışığı, bir dönem boyunca; soldan sağa zaman akar. Derin çukur birincil, sığ çukur ikincil tutulma."
+        },
+        {
+          "sekil": "cizgi",
+          "renk": "--cizgi",
+          "ad": "Eğrinin üstündeki ince yatay çizgi",
+          "ne": "Tutulma yokken iki yıldızın tam ışığı (“ışık” yazısının hizası)."
+        },
+        {
+          "sekil": "daire",
+          "renk": "--pirinc",
+          "ad": "Eğrinin üstündeki pirinç nokta ve kesik dikey çizgi",
+          "ne": "Şu an: yukarıdaki konumda gelen toplam ışık. Değeri “Şu anki ışık” kutusunda."
+        },
+        {
+          "sekil": "yazi",
+          "renk": "--soluk",
+          "ad": "Sol alttaki “−%…” yazısı",
+          "ne": "Grafiğin alt kenarının ne kadarlık düşüşe karşılık geldiği. Dikey ölçek en derin çukura göre ayarlanır; gerçek derinliği bu sayıdan ve ölçüm kutularından oku."
+        },
+        {
+          "sekil": "yazi",
+          "renk": "--soluk",
+          "ad": "“birincil” ve “ikincil” yazıları",
+          "ne": "İki kavuşumun yeri: birincilde sıcak yıldız, ikincilde soğuk yıldız örtülür. Tutulma yoksa yazılmaz."
+        }
+      ],
+      "kontroller": [
+        {
+          "sec": "#otOn",
+          "tur": "dugme",
+          "ad": "Örnek düğmeleri",
+          "ne": "Algol (ölçülmüş değerlerle), aynı yıldızlarla kenardan sıyıran bir tutulma, Güneş'in iki ikizi ve tutulmanın hiç olmadığı bir eğiklik: bütün kaydırıcıları o duruma ayarlar."
+        },
+        {
+          "sec": "#otR1",
+          "tur": "kaydirici",
+          "ad": "1. yıldızın yarıçapı",
+          "ne": "Güneş yarıçapı biriminde 0,1 ile 10 arası."
+        },
+        {
+          "sec": "#otT1",
+          "tur": "kaydirici",
+          "ad": "1. yıldızın yüzey sıcaklığı",
+          "ne": "3.000 ile 30.000 K arası. Sıcak yüzey birim alandan çok daha fazla ışık verir; o yıldız örtülünce çukur derinleşir."
+        },
+        {
+          "sec": "#otR2",
+          "tur": "kaydirici",
+          "ad": "2. yıldızın yarıçapı",
+          "ne": "Güneş yarıçapı biriminde 0,1 ile 10 arası."
+        },
+        {
+          "sec": "#otT2",
+          "tur": "kaydirici",
+          "ad": "2. yıldızın yüzey sıcaklığı",
+          "ne": "3.000 ile 30.000 K arası."
+        },
+        {
+          "sec": "#otA",
+          "tur": "kaydirici",
+          "ad": "İki yıldızın arası",
+          "ne": "Merkezler arası uzaklık, Güneş yarıçapı biriminde 2 ile 60 arası (Algol'de yaklaşık 13). Yıldızlar birbirine göre küçüldükçe tutulma kısalır ve gerçekleşmesi için yörüngeyi daha tam yandan görmek gerekir."
+        },
+        {
+          "sec": "#otI",
+          "tur": "kaydirici",
+          "ad": "Eğiklik i",
+          "ne": "Yörünge düzleminin bakış çizgimize göre açısı: 90° tam yandan, daha küçük değerler daha üstten görmek demek. 50 ile 90° arası."
+        },
+        {
+          "sec": "#otP",
+          "tur": "kaydirici",
+          "ad": "Dönem",
+          "ne": "Bir tam dolanımın süresi, 0,3 ile 30 gün arası. Burada yalnız zaman ölçeğini değiştirir: derinlikler aynı kalır, tutulma süresi dönemle orantılı uzar."
+        },
+        {
+          "sec": "#otZaman",
+          "tur": "kaydirici",
+          "azHareket": true,
+          "ad": "Dönem içinde zaman",
+          "ne": "Hareket azaltıldığı için yıldızları dönem boyunca bu kaydırıcıyla sen ilerletirsin."
+        }
+      ],
+      "hareket": "Bir dönem ekranda 12 saniyede geçer; çizim birincil tutulmadan biraz önce başlar. Gerçek süreler ölçüm kutularında."
+    },
+    "gercek": "En ünlü örten çift Algol'dür (β Persei) ve İstanbul'dan çıplak gözle izlenir: her 2 gün 20,8 saatte bir yaklaşık 2,1 kadirden 3,4 kadire söner, tutulma yaklaşık 10 saat sürer. Urania'nın Gökyüzü sekmesindeki “Yaklaşan olaylar” listesi, karanlıkta görülebilecek sıradaki en sönük anları saatiyle verir. Algol'ü Almach (2,1) ve tutulmanın ortasında ε Cassiopeiae (3,3) ile karşılaştırarak birkaç saat içinde sönüşünü kendin görebilirsin. Örten çiftler bugün de yıldızların kütlesini ve yarıçapını en doğru ölçmenin yoludur: Torres ve arkadaşlarının 2010 derlemesindeki 95 çiftin 94'ü örten çiftti.",
+    "gercekKaynaklar": [
+      {
+        "ad": "AAVSO VSX: bet Per (Algol)",
+        "url": "https://vsx.aavso.org/index.php?view=detail.top&oid=26202"
+      },
+      {
+        "ad": "Wikipedia: Algol",
+        "url": "https://en.wikipedia.org/wiki/Algol"
+      },
+      {
+        "ad": "Torres, Andersen ve Giménez 2010 (arXiv)",
+        "url": "https://arxiv.org/abs/0908.2624"
+      }
+    ],
+    "dersler": [
+      "d15",
+      "d1"
+    ],
+    "adimlar": [
+      {
+        "yap": "“Algol” düğmesine bas.",
+        "tikla": "#otOn button[data-i=\"0\"]",
+        "gozle": "Birincil tutulma 1,40 kadir (ışığın %72,5'i kayboluyor), ikincil yalnız 0,015 kadir (%1,4); tutulma 10,1 saat sürüyor.",
+        "neden": "Algol B, Algol A'dan büyük (3,48'e karşı 2,73 Güneş yarıçapı) ama çok daha soğuk (4.500'e karşı 13.000 K). Soğuk B sıcak A'nın önüne geçince çok ışık kaybolur; A, B'nin önüne geçince zaten sönük olan B'nin bir parçası örtülür. Gerçek Algol 2,1'den 3,4 kadire iner (yaklaşık 1,2–1,3 kadir); modeldeki fazlalık, sayılmayan üçüncü yıldız Algol C'nin ışığından gelir."
+      },
+      {
+        "yap": "“Sıyıran tutulma” düğmesine bas (aynı yıldızlar, eğiklik 66°).",
+        "tikla": "#otOn button[data-i=\"1\"]",
+        "gozle": "Birincil tutulma 0,074 kadire (%6,6) düştü, süre 5,5 saate kısaldı; çukur V biçiminde.",
+        "neden": "Yörüngeyi daha eğik görünce yıldızlar gökte birbirinin yalnız kenarından geçer: örtülen alan küçük, örtülü kalınan süre kısa. Sıyıran tutulmalar sığ ve sivri çukurlarıyla tanınır."
+      },
+      {
+        "yap": "“Tutulma yok” düğmesine bas (eğiklik 58°).",
+        "tikla": "#otOn button[data-i=\"3\"]",
+        "gozle": "İki ölçüm kutusu da “tutulma yok” diyor; ışık eğrisi düz.",
+        "neden": "Bu yıldızlar için eğiklik 62,2°'nin altına inince en yakın anda bile gökteki uzaklıkları yarıçaplarının toplamından büyük kalıyor. Çift yıldızların çoğu böyledir: yörüngelerini yandan görmediğimiz için tutulma yapmazlar ve ancak tayflarındaki Doppler kaymasından tanınırlar."
+      },
+      {
+        "yap": "“İki eşit yıldız” düğmesine bas.",
+        "tikla": "#otOn button[data-i=\"2\"]",
+        "gozle": "İki tutulma da 0,75 kadir (%50,0); her biri 4,0 saat sürüyor, dönem 2,590 gün.",
+        "neden": "İki yıldız aynı boyda ve aynı sıcaklıkta: hangisi örtülürse örtülsün aynı ışık kaybolur. Tam ortadan geçerken arkadaki yıldız bir an için tamamen saklanır, yani ışığın yarısı gider: 2,5 × log₁₀(2) ≈ 0,75 kadir. Dönem, Güneş kütleli iki yıldız ve 10 Güneş yarıçaplık ara için Kepler'in üçüncü yasasından hesaplandı."
+      },
+      {
+        "yap": "“Algol”e bas, sonra 2. yıldızın sıcaklığını 13.000 K yap.",
+        "tikla": "#otOn button[data-i=\"0\"]",
+        "ayar": {
+          "#otT2": 4.113943
+        },
+        "gozle": "Birincil ve ikincil tutulma eşitlendi: ikisi de 0,36 kadir (%28,5).",
+        "neden": "İki kavuşumda örtülen alan hep aynıdır; derinlik farkını yalnız yüzey parlaklığı (birim alandan çıkan ışık) yaratır. Sıcaklıklar eşitlenince çukurlar da eşitlenir. Gözlemciler bu yüzden iki çukurun derinlik oranından iki yıldızın sıcaklık oranını çıkarır."
+      },
+      {
+        "yap": "“Algol”e bas, sonra eğikliği 90° yap.",
+        "tikla": "#otOn button[data-i=\"0\"]",
+        "ayar": {
+          "#otI": 90
+        },
+        "gozle": "Birincil tutulma 3,79 kadire (%96,9) derinleşti, ikincil 0,021 kadir (%1,9); çukurun tabanı düzleşti.",
+        "neden": "Tam yandan bakınca büyük B, küçük A'yı bir süre tamamen örter (tam tutulma): o süre boyunca yalnız B'nin ışığı kalır, eğri düz bir tabana iner. Gerçek Algol'de eğiklik yaklaşık 81° olduğu için tutulma kısmidir ve en sönük an kısa sürer."
+      },
+      {
+        "yap": "“Algol”e bas, sonra dönemi 10 gün yap.",
+        "tikla": "#otOn button[data-i=\"0\"]",
+        "ayar": {
+          "#otP": 1
+        },
+        "gozle": "Derinlikler aynı kaldı (1,40 ve 0,015 kadir); tutulma 10,1 saatten 35,3 saate uzadı, yine dönemin %14,7 kadarı.",
+        "neden": "Burada dönem yalnız zamanın ölçeğidir: aynı geometri daha yavaş oynar. Gerçekte dönem yıldızların arası ve kütleleriyle bağlıdır (Kepler III); dönemi ve tutulma süresini ölçmek, yıldızların büyüklüğünü yörüngeye oranla verir."
+      }
+    ],
+    "kaynaklar": [
+      {
+        "ad": "Baron vd. 2012, Algol'ün CHARA görüntüsü (arXiv)",
+        "url": "https://arxiv.org/abs/1205.0754"
+      },
+      {
+        "ad": "Zavala vd. 2010, Algol üçlüsü (arXiv)",
+        "url": "https://arxiv.org/abs/1005.0626"
+      },
+      {
+        "ad": "Kolbas vd. 2015, Algol'ün tayfı (arXiv)",
+        "url": "https://arxiv.org/abs/1506.01254"
+      },
+      {
+        "ad": "AAVSO VSX: bet Per (Algol)",
+        "url": "https://vsx.aavso.org/index.php?view=detail.top&oid=26202"
+      },
+      {
+        "ad": "GCVS: bet Per",
+        "url": "http://www.sai.msu.su/gcvs/cgi-bin/search.cgi?search=bet+Per"
+      }
+    ]
+  },
+  "veri": {
+    "dalga_boyu_nm": 550,
+    "ornekler": [
+      {
+        "ad": "Algol",
+        "r1_rgunes": 2.73,
+        "r2_rgunes": 3.48,
+        "t1_k": 13000,
+        "t2_k": 4500,
+        "a_ab": 0.062,
+        "i_derece": 98.7,
+        "p_gun": 2.867343,
+        "not": "Yarıçaplar, eğiklik ve a: Baron vd. 2012 (CHARA); sıcaklıklar Zavala vd. 2010 (Richards 1993'ten); dönem AAVSO VSX. Kolbas vd. 2015 farklı değerler veriyor: 12.550 K ve 4.900 K, 2,87 ve 3,43 R☉, a = 13,65 R☉.",
+        "kaynaklar": [
+          {
+            "ad": "Baron vd. 2012 (arXiv)",
+            "url": "https://arxiv.org/abs/1205.0754"
+          },
+          {
+            "ad": "Zavala vd. 2010 (arXiv)",
+            "url": "https://arxiv.org/abs/1005.0626"
+          },
+          {
+            "ad": "Wikipedia: Algol",
+            "url": "https://en.wikipedia.org/wiki/Algol"
+          },
+          {
+            "ad": "AAVSO VSX: bet Per",
+            "url": "https://vsx.aavso.org/index.php?view=detail.top&oid=26202"
+          }
+        ]
+      },
+      {
+        "ad": "Sıyıran tutulma",
+        "r1_rgunes": 2.73,
+        "r2_rgunes": 3.48,
+        "t1_k": 13000,
+        "t2_k": 4500,
+        "a_ab": 0.062,
+        "i_derece": 66,
+        "p_gun": 2.867343,
+        "not": "Algol'ün yıldızları, varsayımsal 66° eğiklikle (gerçek Algol 98,7° / 81,3°).",
+        "kaynaklar": [
+          {
+            "ad": "Baron vd. 2012 (arXiv)",
+            "url": "https://arxiv.org/abs/1205.0754"
+          }
+        ]
+      },
+      {
+        "ad": "İki eşit yıldız",
+        "gunes_ikizi": true,
+        "a_rgunes": 10,
+        "i_derece": 90,
+        "toplam_kutle_gunes": 2,
+        "not": "Varsayımsal: Güneş'in iki ikizi (yarıçap, sıcaklık ve kütle fizik.json'daki IAU değerleri), 10 R☉ arayla; dönem Kepler III'ten.",
+        "kaynaklar": [
+          {
+            "ad": "IAU 2015 Resolution B3",
+            "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf"
+          }
+        ]
+      },
+      {
+        "ad": "Tutulma yok",
+        "r1_rgunes": 2.73,
+        "r2_rgunes": 3.48,
+        "t1_k": 13000,
+        "t2_k": 4500,
+        "a_ab": 0.062,
+        "i_derece": 58,
+        "p_gun": 2.867343,
+        "not": "Algol'ün yıldızları, varsayımsal 58° eğiklikle: tutulma sınırı bu değerlerle yaklaşık 62,2°.",
+        "kaynaklar": [
+          {
+            "ad": "Baron vd. 2012 (arXiv)",
+            "url": "https://arxiv.org/abs/1205.0754"
+          }
+        ]
+      }
+    ],
+    "algol": {
+      "kadir_en_parlak_gcvs": 2.12,
+      "kadir_en_sonuk_gcvs": 3.39,
+      "kadir_en_parlak_vsx": 2.09,
+      "kadir_en_sonuk_vsx": 3.3,
+      "ikincil_kadir_vsx": 2.15,
+      "sure_yuzde_vsx": 14,
+      "sure_saat_vsx": 9.63,
+      "ucuncu_dV": 2.92,
+      "kaynaklar": [
+        {
+          "ad": "GCVS: bet Per",
+          "url": "http://www.sai.msu.su/gcvs/cgi-bin/search.cgi?search=bet+Per"
+        },
+        {
+          "ad": "AAVSO VSX: bet Per",
+          "url": "https://vsx.aavso.org/index.php?view=detail.top&oid=26202"
+        },
+        {
+          "ad": "Zavala vd. 2010 (Algol C için ΔV = 2,92; Pan vd. 1993'ten)",
+          "url": "https://arxiv.org/abs/1005.0626"
+        }
+      ]
+    },
+    "kaynaklar": [
+      {
+        "ad": "Baron vd. 2012 (arXiv)",
+        "url": "https://arxiv.org/abs/1205.0754"
+      },
+      {
+        "ad": "Zavala vd. 2010 (arXiv)",
+        "url": "https://arxiv.org/abs/1005.0626"
+      },
+      {
+        "ad": "Kolbas vd. 2015 (arXiv)",
+        "url": "https://arxiv.org/abs/1506.01254"
+      },
+      {
+        "ad": "AAVSO VSX: bet Per",
+        "url": "https://vsx.aavso.org/index.php?view=detail.top&oid=26202"
+      },
+      {
+        "ad": "GCVS: bet Per",
+        "url": "http://www.sai.msu.su/gcvs/cgi-bin/search.cgi?search=bet+Per"
+      },
+      {
+        "ad": "Wikipedia: Algol",
+        "url": "https://en.wikipedia.org/wiki/Algol"
+      }
+    ]
+  }
+}

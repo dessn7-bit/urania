@@ -104,12 +104,12 @@
     }
   });
 
-  /* d13 · bölüm 5: Güneş'in yaşanabilir bölgesi (Kasting 1993: 0,95–1,37; Kopparapu 2013: 0,99–1,67 AB) ve ışınımı 0,25 Güneş olan
-     yıldız için ölçeklenmiş bölge 0,50–0,84 AB (ders örneği). Venüs 0,72 ve Mars 1,52 AB (NASA, d9). Yatay eksen ölçekli. */
+  /* d13 · bölüm 5: Güneş'in yaşanabilir bölgesi (Kasting 1993: 0,95–1,37; Kopparapu 2013: 0,99–1,70 AB) ve ışınımı 0,25 Güneş olan
+     yıldız için ölçeklenmiş bölge 0,50–0,85 AB (ders örneği). Venüs 0,72 ve Mars 1,52 AB (NASA, d9). Yatay eksen ölçekli. */
   C.ekle('d13-yasanabilir-bolge', {
     ders: 'd13', bolum: 6, oran: 0.7,
     baslik: 'Yaşanabilir bölge: modele ve yıldıza göre',
-    aciklama: 'Güneş için iki tahmin: Kasting ve arkadaşları 0,95 ile 1,37 AB, Kopparapu ve arkadaşları 0,99 ile 1,67 AB; Dünya ikisinde de iç kenara yakın. Işınımı Güneş\'in dörtte biri olan bir yıldızda bölge kabaca 0,50 ile 0,84 AB\'ye, yani yıldıza yaklaşır. Yatay eksen ölçeklidir.',
+    aciklama: 'Güneş için iki tahmin: Kasting ve arkadaşları 0,95 ile 1,37 AB, Kopparapu ve arkadaşları 0,99 ile 1,70 AB; Dünya ikisinde de iç kenara yakın. Işınımı Güneş\'in dörtte biri olan bir yıldızda bölge kabaca 0,50 ile 0,85 AB\'ye, yani yıldıza yaklaşır. Yatay eksen ölçeklidir.',
     kaynak: [
       { ad: 'Wikipedia – Habitable zone', url: 'https://en.wikipedia.org/wiki/Habitable_zone' },
       { ad: 'NASA NSSDC – Planetary Fact Sheet', url: 'https://nssdc.gsfc.nasa.gov/planetary/factsheet/' }
@@ -120,8 +120,8 @@
       /* Güneş satırı */
       s += S.yazi(x0 + 16, 34, 'Kasting ve ark. 1993: 0,95–1,37 AB', { boy: 13, renk: R.metin });
       s += S.kutu(X(0.95), 42, X(1.37) - X(0.95), 14, { dolgu: R.mavi, renk: R.mavi, saydam: 0.75 }, 3);
-      s += S.yazi(x0 + 16, 78, 'Kopparapu ve ark. 2013: 0,99–1,67 AB', { boy: 13, renk: R.metin });
-      s += S.kutu(X(0.99), 86, X(1.67) - X(0.99), 14, { dolgu: R.iyi, renk: R.iyi, saydam: 0.75 }, 3);
+      s += S.yazi(x0 + 16, 78, 'Kopparapu ve ark. 2013: 0,99–1,70 AB', { boy: 13, renk: R.metin });
+      s += S.kutu(X(0.99), 86, X(1.70) - X(0.99), 14, { dolgu: R.iyi, renk: R.iyi, saydam: 0.75 }, 3);
       const py = 124;
       s += S.cizgi(x0, py, X(1.8), py, { renk: R.cizgi, kalin: 1 });
       s += S.daire(x0, py, 10, { dolgu: R.gunes, renk: R.gunes });
@@ -136,8 +136,8 @@
       s += S.cizgi(x0, sy, X(1.8), sy, { renk: R.cizgi, kalin: 1 });
       s += S.daire(x0, sy, 6, { dolgu: R.uyari, renk: R.uyari });
       s += S.yazi(x0 + 16, 170, 'Işınımı Güneş\'in 0,25 katı yıldız:', { boy: 13, renk: R.metin });
-      s += S.yazi(x0 + 16, 186, 'bölge ≈ 0,50–0,84 AB', { boy: 13, renk: R.metin });
-      s += S.kutu(X(0.5), sy - 7, X(0.84) - X(0.5), 14, { dolgu: R.iyi, renk: R.iyi, saydam: 0.75 }, 3);
+      s += S.yazi(x0 + 16, 186, 'bölge ≈ 0,50–0,85 AB', { boy: 13, renk: R.metin });
+      s += S.kutu(X(0.5), sy - 7, X(0.85) - X(0.5), 14, { dolgu: R.iyi, renk: R.iyi, saydam: 0.75 }, 3);
       /* eksen */
       const ay = 232;
       s += S.cizgi(x0, ay, X(1.8), ay, { renk: R.soluk, kalin: 1 });

@@ -1,0 +1,113 @@
+{
+  "rehber": {
+    "ne": "Dünya'dan başka bir gezegene en az yakıtla gitmenin yolunu, Hohmann aktarımını üstten canlandırır: araç, bir ucu Dünya'nın, öteki ucu hedef gezegenin yörüngesine değen bir elipsin yarısını dolanır. Kalkış zamanını kaydırıp gezegeni ıskalarsın; yolculuğun süresini, gereken hız değişimini ve fırlatma penceresinin ne sıklıkla açıldığını ölçersin. Yanıtladığı soru: Mars'a neden ancak iki yılda bir fırlatılır ve neden Mars'ın şimdi olduğu yere değil, varınca olacağı yere nişan alınır?",
+    "ekran": {
+      "cizim": [
+        { "sekil": "daire", "renk": "#FFD27A", "ad": "Ortadaki sarı daire", "ne": "Güneş. Çizim üstten bakıştır; gezegenler saat yönünün tersine dolanır." },
+        { "sekil": "cizgi", "renk": "--hedef", "ad": "Mavi ince çember ve mavi nokta", "ne": "Dünya'nın yörüngesi (1 AB) ve Dünya." },
+        { "sekil": "kesik", "renk": "--uyari", "ad": "Turuncu kesik çember ve turuncu nokta", "ne": "Hedef gezegenin yörüngesi ve gezegenin kendisi (ölçekli uzaklık)." },
+        { "sekil": "kalin", "renk": "--pirinc", "ad": "Kalın pirinç yay", "ne": "Aktarım elipsinin aracın izlediği yarısı: kalkış noktasından tam karşıdaki varış noktasına." },
+        { "sekil": "daire", "renk": "--parsomen", "ad": "Küçük krem nokta", "ne": "Uzay aracı. Güneş'e yakınken hızlı, uzakken yavaş gider (Kepler'in ikinci yasası)." },
+        { "sekil": "halka", "renk": "--uyari", "ad": "Turuncu halka", "ne": "Gezegenin, araç varış noktasına ulaştığı anda bulunacağı yer. Tam zamanında kalkışta varış noktasıyla üst üste biner." },
+        { "sekil": "kesik", "renk": "--soluk", "ad": "Güneş'ten çıkan iki kesik çizgi ve açı", "ne": "Kalkış anında Dünya ile gezegen arasındaki açı (faz açısı). Yanındaki sayı kalkıştaki gerçek açı." },
+        { "sekil": "dikey-kesik", "renk": "--uyari", "ad": "Varışta kesik turuncu çizgi", "ne": "Kalkış geciktiyse ya da erken olduysa: araç vardığında gezegenle arasındaki boşluk." },
+        { "sekil": "yazi", "renk": "--soluk", "ad": "Sol üstteki gün sayacı", "ne": "Kalkıştan bu yana geçen gün ve yolculuğun toplam süresi." }
+      ],
+      "kontroller": [
+        { "sec": "#hmHedef", "tur": "dugme", "ad": "Hedef gezegen", "ne": "Venüs, Mars ya da Jüpiter. Yarı büyük eksenler ve dolanım süreleri NASA bilgi sayfalarından." },
+        { "sec": "#hmGecikme", "tur": "kaydirici", "ad": "Kalkış zamanı", "ne": "Kalkışı en uygun andan 120 gün öncesine ya da sonrasına kaydırır. Araç yine aynı elipsi izler ama gezegen varış noktasında olmaz; aradaki uzaklık ölçüm kutusunda." },
+        { "sec": "#hmBasa", "tur": "dugme", "ad": "Baştan oynat", "ne": "Canlandırmayı kalkış anına döndürür." },
+        { "sec": "#hmZaman", "tur": "kaydirici", "azHareket": true, "ad": "Yolculukta zaman", "ne": "Hareket azaltıldığı için aracı kalkıştan varışa bu kaydırıcıyla sen ilerletirsin." }
+      ],
+      "hareket": "Yolculuk ekranda yaklaşık 8 saniyede oynar, varışta 2 saniye durur ve yeniden başlar. Gerçek süre ölçüm kutusunda ve sol üstteki sayaçta."
+    },
+    "gercek": "Bugünlerde Mars penceresi açık: NASA'nın Mars görev tasarımı el kitabına göre bu fırsatın en düşük enerjili kalkış tarihi 31 Ekim 2026, bir sonrakininki 2 Aralık 2028. Pencere, Mars'ın karşı konumundan birkaç ay önce açılır; Mars 19 Şubat 2027'de karşı konumda olacak, o gece İstanbul'dan akşamdan sabaha kadar Aslan takımyıldızında kızılımsı parlak bir nokta olarak görülür. Avrupa'nın Rosalind Franklin gezgini için ESA, Ekim 2028'deki fırlatma fırsatını belirledi.",
+    "gercekKaynaklar": [
+      { "ad": "NASA/TM-2010-216764: Earth-to-Mars Mission Opportunities 2026–2045 (erişim 30 Ekim 2026)", "url": "https://ntrs.nasa.gov/citations/20100037210" },
+      { "ad": "BBC Sky at Night: Mars opposition 2027", "url": "https://skyatnightmagazine.com/advice/skills/mars-opposition" },
+      { "ad": "nakedeyeplanets.com: Mars oppositions", "url": "https://nakedeyeplanets.com/mars-oppositions.htm" },
+      { "ad": "ESA: ExoMars Rosalind Franklin SSS (erişim 30 Ekim 2026)", "url": "https://esa.int/Science_Exploration/Human_and_Robotic_Exploration/Exploration/ExoMars/FAQ_The_rebirth_of_ESA_s_ExoMars_Rosalind_Franklin_mission" }
+    ],
+    "dersler": ["d23", "d3"],
+    "adimlar": [
+      {
+        "yap": "Mars'ı seç, kalkış zamanını 0'a (en uygun an) getir.",
+        "tikla": "#hmHedef button[data-i=\"1\"]",
+        "ayar": { "#hmGecikme": 0 },
+        "gozle": "Yolculuk 258,9 gün (8,5 ay). Kalkışta Mars, Dünya'dan 44,3° önde. Araç varınca Mars tam oradadır: ıska 0 km.",
+        "neden": "Elipsin yarı büyük ekseni Dünya ve Mars yörüngelerinin ortalaması, 1,262 AB; Kepler'in üçüncü yasasıyla yarım tur yaklaşık 259 gün. Mars bu sürede 360° × 258,9 / 687,0 ≈ 135,7° ilerler; 180° karşıya varabilmesi için kalkışta 44,3° önde olmalıdır."
+      },
+      {
+        "yap": "Kalkışı 30 gün geciktir.",
+        "tikla": "#hmHedef button[data-i=\"1\"]",
+        "ayar": { "#hmGecikme": 30 },
+        "gozle": "Araç yine 258,9 günde varış noktasına ulaşıyor, ama Mars henüz gelmemiş: 13,8° geride, yaklaşık 55,0 milyon km uzakta.",
+        "neden": "Dünya Güneş çevresinde Mars'tan hızlı döner (günde 0,99° ile 0,52°). Her gecikme günü Mars'ın Dünya'dan önde olduğu açıyı 0,46° azaltır. Elips aynı kalsa da hedef artık yanlış zamanda yanlış yerde."
+      },
+      {
+        "yap": "Kalkışı 30 gün öne al (−30).",
+        "tikla": "#hmHedef button[data-i=\"1\"]",
+        "ayar": { "#hmGecikme": -30 },
+        "gozle": "Bu kez Mars varış noktasını 13,8° geçmiş; uzaklık yine yaklaşık 55,0 milyon km.",
+        "neden": "Erken kalkınca Mars fazla önde: araç varış noktasına geldiğinde Mars çoktan oradan geçmiştir. Gerçek görevler bu yüzden en uygun günün çevresinde dar bir aralıkta fırlatılır ve yolda küçük düzeltmeler yapar."
+      },
+      {
+        "yap": "Ölçüm kutularından pencere aralığına bak.",
+        "tikla": "#hmHedef button[data-i=\"1\"]",
+        "gozle": "Pencere aralığı 779,9 gün, yaklaşık 25,6 ay.",
+        "neden": "Aynı 44,3°'lik diziliş ancak Dünya Mars'a bir tur bindirdiğinde yeniden gelir: 1 / (1/365,256 − 1/686,980) ≈ 779,9 gün. NASA'nın el kitabı da en ucuz kalkış tarihlerinin her sinodik dönemde, 779,935 günde bir yinelendiğini yazar."
+      },
+      {
+        "yap": "Ölçüm kutularında kalkış ve varıştaki hız farkına bak.",
+        "tikla": "#hmHedef button[data-i=\"1\"]",
+        "gozle": "Kalkışta Güneş'e göre +2,95 km/s, varışta 2,65 km/s; alçak Dünya yörüngesinden (300 km) yapılan ateşleme ise 3,59 km/s.",
+        "neden": "Dünya Güneş çevresinde 29,8 km/s ile gider; aracın elipse girmesi için Güneş'e göre 2,95 km/s daha hızlı olması yeter. Yörüngeden yapılan ateşleme Dünya'nın çekiminden kurtulmayı da içerdiği için büyüktür. Wikipedia'nın tablosu kalkış için 2,93 ve 3,59 km/s verir (yuvarlanmış yarıçaplarla); derste geçen tipik 4,3 km/s en küçük değer değildir."
+      },
+      {
+        "yap": "Venüs'ü seç.",
+        "tikla": "#hmHedef button[data-i=\"0\"]",
+        "ayar": { "#hmGecikme": 0 },
+        "gozle": "Yolculuk 146,1 gün; kalkışta Venüs, Dünya'nın 54,0° gerisinde. Kalkışta Güneş'e göre −2,50 km/s: araç yavaşlıyor.",
+        "neden": "İçe gitmek için araç Dünya'nın dolanma yönünün tersine ateşler, Güneş'e göre yavaşlar ve Güneş'e doğru düşer. Venüs Dünya'dan hızlı döndüğü için kalkışta geride olmalı ki 146 günde yetişsin. Pencere 583,9 günde (19,2 ay) bir açılır."
+      },
+      {
+        "yap": "Jüpiter'i seç.",
+        "tikla": "#hmHedef button[data-i=\"2\"]",
+        "ayar": { "#hmGecikme": 0 },
+        "gozle": "Yolculuk 997,7 gün (2,73 yıl); kalkışta Jüpiter 97,1° önde; kalkışta +8,79 km/s. Pencere 398,9 günde bir.",
+        "neden": "Uzak gezegenler hem yavaş döner hem de uzaktır: pencere sık açılır (Dünya her yıl Jüpiter'i biraz geçer) ama yolculuk uzun ve pahalıdır. Gerçek Jüpiter görevleri bu yüzden kütleçekim yardımı kullanır; derse göre Galileo Venüs'ten bir, Dünya'dan iki itme aldı."
+      }
+    ],
+    "kaynaklar": [
+      { "ad": "NASA Mars Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html" },
+      { "ad": "NASA Earth Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html" },
+      { "ad": "NASA/TM-2010-216764 (sinodik dönem 779,935 gün)", "url": "https://ntrs.nasa.gov/citations/20100037210" },
+      { "ad": "Wikipedia: Hohmann transfer orbit", "url": "https://en.wikipedia.org/wiki/Hohmann_transfer_orbit" },
+      { "ad": "Wikipedia: Delta-v budget", "url": "https://en.wikipedia.org/wiki/Delta-v_budget" }
+    ]
+  },
+  "veri": {
+    "gezegenler": [
+      { "ad": "Venüs", "a_1e6km": 108.210, "donem_gun": 224.701, "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/venusfact.html" },
+      { "ad": "Mars", "a_1e6km": 227.956, "donem_gun": 686.980, "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html" },
+      { "ad": "Jüpiter", "a_1e6km": 778.479, "donem_gun": 4332.589, "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/jupiterfact.html" }
+    ],
+    "dunya": { "ad": "Dünya", "a_1e6km": 149.598, "donem_gun": 365.256, "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html" },
+    "leo_yukseklik_km": 300,
+    "mars_firsatlari": {
+      "not": "En düşük kalkış enerjili (C3) balistik yollar; Dünya'dan 407 km'lik park yörüngesinden. Erişim 30 Ekim 2026.",
+      "ls": [
+        { "kalkis": "2026-10-31", "varis": "2027-08-19", "c3": 9.144, "tur": "II" },
+        { "kalkis": "2028-12-02", "varis": "2029-10-16", "c3": 8.928, "tur": "II" },
+        { "kalkis": "2031-02-23", "varis": "2032-01-09", "c3": 8.237, "tur": "II" }
+      ],
+      "kaynaklar": [{ "ad": "NASA/TM-2010-216764, Tablo 1–4", "url": "https://ntrs.nasa.gov/citations/20100037210" }]
+    },
+    "kaynaklar": [
+      { "ad": "NASA Planetary Fact Sheets", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/" },
+      { "ad": "NASA/TM-2010-216764 (Mars fırsatları 2026–2045)", "url": "https://ntrs.nasa.gov/citations/20100037210" },
+      { "ad": "Wikipedia: Hohmann transfer orbit", "url": "https://en.wikipedia.org/wiki/Hohmann_transfer_orbit" },
+      { "ad": "Wikipedia: Delta-v budget", "url": "https://en.wikipedia.org/wiki/Delta-v_budget" }
+    ]
+  }
+}

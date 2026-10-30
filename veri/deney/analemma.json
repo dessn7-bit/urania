@@ -1,0 +1,97 @@
+{
+  "rehber": {
+    "ne": "Güneş saatinin gösterdiği zaman ile kol saatinin gösterdiği zaman arasındaki farkı, yani zaman denklemini yıl boyunca gösterir. Üstte bu farkın eğrisi ve onu oluşturan iki dalga, altta İstanbul'da her gün aynı saatte Güneş'in gökteki yerlerinin çizdiği sekiz (analemma) var. Yanıtladığı soru: Güneş neden her gün saat tam aynı anda en yükseğe çıkmaz?",
+    "ekran": {
+      "cizim": [
+        { "sekil": "kalin", "renk": "--parsomen", "ad": "Üstteki kalın krem eğri (“toplam”)", "ne": "Zaman denklemi: güneş saati eksi kol saati, dakika olarak. Sıfır çizgisinin üstünde güneş saati önde, altında geride." },
+        { "sekil": "kesik", "renk": "#7FB2E5", "ad": "Uzun kesikli mavi eğri (“basıklık”)", "ne": "Yörüngenin basıklığından gelen pay: yılda bir kez gidip gelen, yaklaşık 7,7 dakikalık dalga. Günberide (3 Ocak) ve günötede (6 Temmuz) sıfırdır." },
+        { "sekil": "kesik", "renk": "--iyi", "ad": "Noktalı yeşil eğri (“eğiklik”)", "ne": "Eksen eğikliğinden gelen pay: yılda iki kez gidip gelen, yaklaşık 9,9 dakikalık dalga. Ekinokslarda ve gündönümlerinde sıfırdır. Kalın eğri bu iki eğrinin toplamıdır." },
+        { "sekil": "cizgi", "renk": "--soluk", "ad": "Sıfır çizgisi ve ince yatay çizgiler", "ne": "Sıfır: güneş saati ile kol saati aynı. İnce çizgiler 5 dakikada bir; soldaki sayılar dakika." },
+        { "sekil": "dikey-kesik", "renk": "--pirinc", "ad": "Dikey kesik çizgi ve pirinç nokta", "ne": "Seçili tarih ve o günkü fark." },
+        { "sekil": "kalin", "renk": "#F2C879", "ad": "Alttaki sarı sekiz (analemma)", "ne": "Kol saati her gün 13:03:41'i (Ataşehir'in yerel ortalama öğlesi) gösterirken Güneş'in güney gökteki yeri: dikeyde ufuktan yüksekliği, yatayda azimutu (kuzeyden doğuya ölçülen yön, 180° tam güney). Yatay ölçek dikeyin yaklaşık 9–10 katı büyütüldü; üstelik yüksekte bir derecelik azimut gökte daha küçük bir açıdır (72°'de yaklaşık üçte biri). Gerçek sekiz çok daha incedir." },
+        { "sekil": "daire", "renk": "#F2C879", "ad": "Sekiz üstündeki küçük noktalar", "ne": "Her ayın 1'i." },
+        { "sekil": "halka", "renk": "--pirinc", "zemin": "#FFD27A", "ad": "Halkalı sarı nokta ve tarihi", "ne": "Seçili günde o saatte Güneş. Güneş saati öndeyken Güneş meridyeni çoktan geçmiştir, batıya (sağa) kayar; gerideyken doğuya (sola)." }
+      ],
+      "kontroller": [
+        { "sec": "#anOn", "tur": "dugme", "ad": "Tarih düğmeleri", "ne": "Zaman denkleminin dört dönüm noktası: 11 Şubat (en geride), 14 Mayıs, 26 Temmuz ve 3 Kasım (en önde). Yalnız tarihi değiştirir." },
+        { "sec": "#anGun", "tur": "kaydirici", "ad": "Tarih", "ne": "2026'nın 1 Ocak'tan 31 Aralık'a her günü. Açılışta bugünün tarihindedir." },
+        { "sec": "#anDaire", "tur": "kutu", "ad": "Yörünge dairesel olsaydı", "ne": "Dünya'nın yörüngesini tam daire yapar: Dünya hep aynı hızla dolanır, basıklık payı sıfırlanır; geriye yalnız eğiklik payı kalır." },
+        { "sec": "#anEgik", "tur": "kutu", "ad": "Eksen eğik olmasaydı", "ne": "Eksen eğikliğini 0° yapar: Güneş hep gök ekvatorunda yürür, eğiklik payı sıfırlanır; mevsimler de kalkar, analemma yatay bir çizgiye iner." }
+      ],
+      "hareket": "Canlandırma yoktur: tarih ya da kutular değişince eğriler, sekiz ve ölçümler hemen güncellenir."
+    },
+    "gercek": "Türkiye 2016'dan beri yıl boyu UTC+3 kullandığı için İstanbul'da (Ataşehir) Güneş tam güneyden 2026'da en erken 3 Kasım'da 12.47'de, en geç 11 Şubat'ta 13.18'de geçer (USNO). Bir sopa dik, gölgenin en kısa olduğu anı ölç; en kısa gölge tam kuzeyi gösterir. Her hafta aynı saatte aynı yerden Güneş'in fotoğrafını çekersen bir yılda kendi analemmanı elde edersin; Güneş'e asla dürbünle ya da filtresiz gözle bakma.",
+    "gercekKaynaklar": [
+      { "ad": "USNO: Sun and Moon Data for One Day (İstanbul, 3 Kasım 2026)", "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-11-03&coords=41.00,29.08&tz=3" },
+      { "ad": "USNO: Sun and Moon Data for One Day (İstanbul, 11 Şubat 2026)", "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-02-11&coords=41.00,29.08&tz=3" },
+      { "ad": "Wikipedia: Time in Turkey (kalıcı UTC+3)", "url": "https://en.wikipedia.org/wiki/Time_in_Turkey" },
+      { "ad": "NASA: Eclipses, göz güvenliği", "url": "https://science.nasa.gov/eclipses/safety/" }
+    ],
+    "dersler": ["d22", "d1"],
+    "adimlar": [
+      { "yap": "“3 Kasım (en önde)” düğmesine bas; kutular kapalı olsun.", "tikla": "#anOn button[data-i=\"3\"]", "ayar": { "#anDaire": false, "#anEgik": false },
+        "gozle": "Güneş saati kol saatinden +16 dk 27 sn önde: basıklık payı +6 dk 45 sn, eğiklik payı +9 dk 42 sn. Gerçek öğle 12:47:14, Güneş o anda 33,9° yüksekte; sekizde en sağda.", "neden": "Kasım başında iki dalga aynı yöne çalışır: eğiklik payı en büyüğüne yakın, basıklık payı da artı. Güneş meridyeni ortalama öğleden yaklaşık 16 dakika önce geçer; analemmada Güneş en sağda (batıda)." },
+      { "yap": "“11 Şubat (en geride)” düğmesine bas.", "tikla": "#anOn button[data-i=\"0\"]", "ayar": { "#anDaire": false, "#anEgik": false },
+        "gozle": "Fark −14 dk 12 sn (basıklık −4 dk 48 sn, eğiklik −9 dk 24 sn). Gerçek öğle 13:17:53, Güneş 35,1° yüksekte; sekizde en solda.", "neden": "Şubat ortasında iki pay da eksi: güneş saati 14 dakikadan fazla geride, Güneş en solda (doğuda). Ders +16 dk 33 sn ve −14 dk 6 sn diyor; bu Wikipedia'nın genel değeri. 2026 hesabı birkaç saniye farklı: uç değerler yıldan yıla biraz oynar." },
+      { "yap": "Tarihi 21 Haziran'a (172. gün) çek.", "ayar": { "#anGun": 172, "#anDaire": false, "#anEgik": false },
+        "gozle": "Fark −1 dk 49 sn: basıklık payı −1 dk 47 sn, eğiklik payı yalnız −1 sn. Gerçek öğle 13:05:29, Güneş 72,4° yüksekte.", "neden": "Gündönümünde eğiklik payı sıfırdan geçer; geriye çoğunlukla basıklık payı kalır. Güneş öğlede 72,4° yükseklikte, sekizin tepesinde: 90° − 41° + 23,44°." },
+      { "yap": "Tarih 3 Kasım (307. gün) iken “Yörünge dairesel olsaydı”yı işaretle.", "ayar": { "#anGun": 307, "#anDaire": true, "#anEgik": false },
+        "gozle": "Fark +9 dk 47 sn, hepsi eğiklikten (basıklık payı 0 sn). Gerçek öğle 12:53:54, Güneş 33,4° yüksekte. Üstte kalın eğri yeşil noktalı eğrinin üstüne biniyor; altta sekizin iki halkası aynı dakikalık sapmayı gösteriyor.", "neden": "Basıklık kalkınca yalnız eğiklik dalgası kalır: yarım yıllık, yaklaşık 9,9 dakika genlikli; sekizin iki halkası aynı dakikalık sapmayı gösterir. Çizimde üstteki halka yine de daha geniş görünür: yüksekteki Güneş için bir dakikalık fark daha büyük bir azimut (yön) değişimi demektir. Gerçek sekizde ise iki dalga üst üste bindiği için bir halka büyük, öteki küçüktür." },
+      { "yap": "Şimdi “Yörünge dairesel olsaydı”yı kaldır, “Eksen eğik olmasaydı”yı işaretle.", "ayar": { "#anGun": 307, "#anDaire": false, "#anEgik": true },
+        "gozle": "Fark +6 dk 45 sn, hepsi basıklıktan (eğiklik payı 0 sn). Gerçek öğle 12:56:56, Güneş 49,0° yüksekte; sekiz yatay bir çizgiye inmiş.", "neden": "Eksen dik olsaydı Güneş hep gök ekvatorunda kalır, öğle yüksekliği her gün 90° − 41° = 49° olurdu. Sekiz yatay bir çizgiye iner; geriye yalnız yörüngenin basıklığından gelen yıllık dalga kalır." },
+      { "yap": "İki kutuyu da işaretle.", "ayar": { "#anGun": 307, "#anDaire": true, "#anEgik": true },
+        "gozle": "Fark 0 sn, iki pay da 0 sn. Gerçek öğle 13:03:41, Güneş 49,0°; analemma tek bir nokta.", "neden": "Dairesel yörünge ve dik eksenle Güneş her gün aynı anda meridyenden geçerdi: güneş saati kol saatine hep uyar, analemma tek bir noktaya iner. Gerçek öğle tam ortalama öğle olur: yalnız boylam farkı kalır." },
+      { "yap": "Kutuları kaldır, tarihi 25 Aralık'a (359. gün) çek.", "ayar": { "#anGun": 359, "#anDaire": false, "#anEgik": false },
+        "gozle": "Fark −1 sn: basıklık payı +1 dk 17 sn, eğiklik payı −1 dk 18 sn; ikisi birbirini neredeyse tam götürüyor. Gerçek öğle 13:03:41, Güneş 25,6° yüksekte.", "neden": "Zaman denklemi yılda dört kez sıfırdan geçer (Wikipedia: yaklaşık 15 Nisan, 13 Haziran, 1 Eylül, 25 Aralık). O günlerde güneş saati kol saatine uyar ve gerçek öğle ortalama öğleye denk gelir; İstanbul'da 13.04 civarı." }
+    ],
+    "kaynaklar": [
+      { "ad": "Wikipedia: Equation of time", "url": "https://en.wikipedia.org/wiki/Equation_of_time" },
+      { "ad": "USNO: Approximate Solar Coordinates", "url": "https://aa.usno.navy.mil/faq/sun_approx" },
+      { "ad": "USNO: Sun and Moon Data for One Day (İstanbul)", "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-12-25&coords=41.00,29.08&tz=3" },
+      { "ad": "NASA Earth Fact Sheet (eğiklik)", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html" }
+    ]
+  },
+  "veri": {
+    "istanbul": { "ad": "Fetih Mahallesi, Ataşehir", "enlem": 41.0, "boylam": 29.08, "not": "Urania'nın varsayılan konumu (uygulama.js VARSAYILAN_KONUM: 41,0046° K, 29,0762° D), iki basamağa yuvarlandı" },
+    "saatDilimi": { "utc_fark": 3, "meridyen_derece": 45, "not": "UTC+3 = 3 × 15° = 45° doğu boylamının ortalama güneş zamanı; Türkiye 8 Eylül 2016'dan beri kalıcı UTC+3",
+      "kaynaklar": [{ "ad": "Wikipedia: Time in Turkey", "url": "https://en.wikipedia.org/wiki/Time_in_Turkey" }] },
+    "onAyarlar": [
+      { "ad": "11 Şubat (en geride)", "gun": 42 },
+      { "ad": "14 Mayıs", "gun": 134 },
+      { "ad": "26 Temmuz", "gun": 207 },
+      { "ad": "3 Kasım (en önde)", "gun": 307 }
+    ],
+    "model2026": { "enBuyuk": "3 Kasım'da +16 dk 27 sn", "enKucuk": "11 Şubat'ta −14 dk 12 sn", "ikinciller": "14 Mayıs'ta +3 dk 38 sn, 26 Temmuz'da −6 dk 34 sn",
+      "astronomyEngine2026": "3 Kasım +16 dk 27 sn, 11 Şubat −14 dk 11 sn (cizim_v3.js d22-zaman-denklemi ile aynı hesap)" },
+    "wikipedia": { "giris": { "enBuyuk": "+16 dk 33 sn (3 Kasım civarı)", "enKucuk": "−14 dk 6 sn (11 Şubat civarı)" },
+      "tablo2000": { "enKucuk": "−14 dk 15 sn, 11 Şubat", "enBuyuk": "+16 dk 25 sn, 3 Kasım", "mayis": "+3 dk 41 sn, 14 Mayıs", "temmuz": "−6 dk 30 sn, 26 Temmuz" },
+      "bilesenGenlik_dk": { "basiklik": 7.66, "egiklik": 9.87 },
+      "sifirlar": "15 Nisan, 13 Haziran, 1 Eylül, 25 Aralık civarı",
+      "kaynaklar": [{ "ad": "Wikipedia: Equation of time", "url": "https://en.wikipedia.org/wiki/Equation_of_time" }] },
+    "dogrulama": {
+      "not": "Gerçek öğle (İstanbul, 41,00° K, 29,08° D, UTC+3): bu model ile USNO'nun güneyden geçiş (Upper Transit) saatleri; USNO dakikaya yuvarlar",
+      "satirlar": [
+        { "tarih": "2026-01-03", "model": "13:08:08", "usno": "13:08" },
+        { "tarih": "2026-02-11", "model": "13:17:53", "usno": "13:18" },
+        { "tarih": "2026-03-20", "model": "13:11:10", "usno": "13:11" },
+        { "tarih": "2026-04-15", "model": "13:03:45", "usno": "13:04" },
+        { "tarih": "2026-05-14", "model": "13:00:03", "usno": "13:00" },
+        { "tarih": "2026-06-13", "model": "13:03:46", "usno": "13:04" },
+        { "tarih": "2026-06-21", "model": "13:05:29", "usno": "13:05" },
+        { "tarih": "2026-07-26", "model": "13:10:14", "usno": "13:10" },
+        { "tarih": "2026-09-01", "model": "13:03:42", "usno": "13:04" },
+        { "tarih": "2026-09-23", "model": "12:56:04", "usno": "12:56" },
+        { "tarih": "2026-11-03", "model": "12:47:14", "usno": "12:47" },
+        { "tarih": "2026-12-21", "model": "13:01:42", "usno": "13:02" },
+        { "tarih": "2026-12-25", "model": "13:03:41", "usno": "13:04" }
+      ],
+      "kaynaklar": [{ "ad": "USNO: Sun and Moon Data for One Day", "url": "https://aa.usno.navy.mil/data/RS_OneDay" }] },
+    "kaynaklar": [
+      { "ad": "USNO: Approximate Solar Coordinates", "url": "https://aa.usno.navy.mil/faq/sun_approx" },
+      { "ad": "Wikipedia: Equation of time", "url": "https://en.wikipedia.org/wiki/Equation_of_time" },
+      { "ad": "USNO: İstanbul güneş verisi (örnek: 3 Kasım 2026)", "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-11-03&coords=41.00,29.08&tz=3" },
+      { "ad": "Wikipedia: Time in Turkey", "url": "https://en.wikipedia.org/wiki/Time_in_Turkey" },
+      { "ad": "Astronomy Engine (Don Cross)", "url": "https://github.com/cosinekitty/astronomy" }
+    ]
+  }
+}

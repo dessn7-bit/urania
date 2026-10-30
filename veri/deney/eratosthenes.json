@@ -1,0 +1,219 @@
+{
+  "rehber": {
+    "ne": "MÖ 3. yüzyılda Eratosthenes'in Dünya'yı yalnız bir sopa, bir gölge ve bir uzaklıkla ölçtüğü yöntemi canlandırır. İki kentte aynı gün öğle vakti dik bir sopanın gölgesinin açısını ölçersin; iki açının farkı, kentlerin Dünya'nın merkezinden görüldüğü açıya eşittir. Bu açı tam turun hangi kesriyse kentler arasındaki uzaklık da çevrenin o kesridir. Yanıtladığı soru: Dünya'nın çevresini evden çıkmadan nasıl ölçebiliriz?",
+    "ekran": {
+      "cizim": [
+        {
+          "sekil": "daire",
+          "renk": "#2C5A7A",
+          "zemin": "#1C3B52",
+          "ad": "Mavi büyük daire",
+          "ne": "Dünya'nın kuzey–güney doğrultusunda kesiti; üst taraf kuzey. Güneş'e bakan sol yarı biraz daha açık. Kentler sol üst kenarda."
+        },
+        {
+          "sekil": "cizgi",
+          "renk": "#FFD27A",
+          "ad": "Soldan gelen sarı çizgiler",
+          "ne": "Güneş ışınları. Güneş çok uzakta olduğu için birbirine paralel gelirler; soluk olanlar genel ışınlar, parlak iki tanesi sopaların ucundan geçip gölgenin ucuna inen ışınlar."
+        },
+        {
+          "sekil": "kalin",
+          "renk": "--parsomen",
+          "ad": "Krem kalın çubuklar",
+          "ne": "İki kentteki dik sopalar (gnomon), yere dik, yani Dünya'nın merkezine doğru. Boyları çizimde abartılıdır. Yanlarında kentin adı yazar."
+        },
+        {
+          "sekil": "kalin",
+          "renk": "#05080D",
+          "ad": "Sopaların dibindeki siyah kalın çizgi",
+          "ne": "Öğle gölgesi: sopanın dibinden kuzeye uzanır. Güneş tam tepedeyse (Syene'de yaz gündönümü öğlesi) gölge yoktur."
+        },
+        {
+          "sekil": "alan",
+          "renk": "rgba(200,164,93,.38)",
+          "ad": "Pirinç renkli iki kama",
+          "ne": "Biri Dünya'nın merkezinde (merkez açısı), biri kuzeydeki sopanın ucunda: ikisi aynı açıdır. Kuzeydeki sopanın ucundaki toplam açı, güneydeki gölge açısı ile bu kamanın toplamıdır."
+        },
+        {
+          "sekil": "kesik",
+          "renk": "--soluk",
+          "ad": "Kesik gri çizgiler ve yaylar",
+          "ne": "Merkezden iki kente uzanan yarıçaplar. Güneydeki kentte de gölge varsa o açı iki sopanın ucunda kesik yayla gösterilir; kuzeydeki sopanın ucundaki kesik çizgi güneydeki sopaya paraleldir."
+        },
+        {
+          "sekil": "kalin",
+          "renk": "--iyi",
+          "ad": "Yüzeydeki yeşil kalın yay ve “… km” yazısı",
+          "ne": "İki kent arasındaki kuzey–güney uzaklığı, Dünya'nın yüzeyi boyunca."
+        },
+        {
+          "sekil": "yazi",
+          "renk": "--soluk",
+          "ad": "Sol alttaki “Ölçekli değil” yazısı",
+          "ne": "Merkez açısı birkaç derece olduğunda çizimde görünmez kalırdı; bu yazı açının çizimde kaç kat büyütüldüğünü söyler. Yazılardaki derece değerleri her zaman gerçektir."
+        }
+      ],
+      "kontroller": [
+        {
+          "sec": "#erOn",
+          "tur": "dugme",
+          "ad": "Örnek düğmeleri",
+          "ne": "Syene–İskenderiye: Eratosthenes'in klasik değerleri (7,2° ve 5000 stadion). İstanbul (Ataşehir)–Denizli: aynı boylamda iki Türk kenti, ekinoks günü öğle değerleriyle. Bugünkü Asvan–İskenderiye: aynı iki kentin bugünkü enlemleri ve gerçek kuzey–güney uzaklığı."
+        },
+        {
+          "sec": "#erGuney",
+          "tur": "kaydirici",
+          "ad": "Güneydeki kentte gölge açısı",
+          "ne": "Öğle vakti dik sopa ile Güneş ışını arasındaki açı, 0 ile 50° arası. 0°: Güneş tam tepede, gölge yok."
+        },
+        {
+          "sec": "#erKuzey",
+          "tur": "kaydirici",
+          "ad": "Kuzeydeki kentte gölge açısı",
+          "ne": "Aynı gün aynı ölçüm, kuzeydeki kentte; 0 ile 60° arası. Kuzeyde Güneş daha alçakta olduğu için gölge daha uzun, açı daha büyüktür."
+        },
+        {
+          "sec": "#erUzak",
+          "tur": "kaydirici",
+          "ad": "Kuzey–güney uzaklığı",
+          "ne": "İki kent arasındaki uzaklığın yalnız kuzey–güney bileşeni, 50 ile 1500 km arası. Karayolu uzaklığı değil, haritada aynı meridyen üzerindeki düz uzaklık."
+        },
+        {
+          "sec": "#erStad",
+          "tur": "secim",
+          "ad": "Stadion uzunluğu",
+          "ne": "Eratosthenes uzaklığı stadion ile ölçtü; bir stadionun kaç metre olduğu bilinmiyor. Kaynaklardaki önerilerden birini seç: Syene–İskenderiye örneğinde 5000 stadion seçtiğin uzunlukla kilometreye çevrilir ve çevre stadion cinsinden de yazılır. Öteki örneklerde uzaklık zaten kilometre olduğu için bu seçim sonucu değiştirmez."
+        }
+      ]
+    },
+    "gercek": "Bu ölçümü kendin yapabilirsin: Ataşehir ile Denizli neredeyse aynı boylamda, aralarındaki kuzey–güney uzaklığı yaklaşık 355 km. Aynı gün, yerel öğlede (gölgenin en kısa olduğu anda) iki kentte de bir sopanın boyunu ve gölgesinin boyunu ölçün; açı = arktanjant(gölge ÷ boy). Gölge açılarının farkı yaklaşık 3,2° çıkmalı; bu küçük açıda 0,1°'lik bir yanılgı sonucu yaklaşık %3 değiştirir, bu yüzden sopayı şakülle dik tutup gölgeyi milimetresine kadar ölçün. Eratosthenes'in kitabı kayıp; yöntemini Kleomedes'in sonradan yazdığı özetten biliyoruz.",
+    "gercekKaynaklar": [
+      { "ad": "Wikipedia: Ataşehir (koordinatlar)", "url": "https://en.wikipedia.org/wiki/Ata%C5%9Fehir" },
+      { "ad": "Wikipedia: Denizli (koordinatlar)", "url": "https://en.wikipedia.org/wiki/Denizli" },
+      { "ad": "Wikipedia: Eratosthenes (Kleomedes'in aktarımı)", "url": "https://en.wikipedia.org/wiki/Eratosthenes" },
+      { "ad": "Wikipedia: World Geodetic System (WGS 84)", "url": "https://en.wikipedia.org/wiki/World_Geodetic_System" }
+    ],
+    "dersler": ["d20", "d1"],
+    "adimlar": [
+      {
+        "yap": "“Syene–İskenderiye (Eratosthenes)” düğmesine bas; stadion 160 m seçili kalsın.",
+        "tikla": "#erOn button[data-i=\"0\"]",
+        "gozle": "Syene'de gölge yok, İskenderiye'de 7,20°. Merkez açısı 7,20° (360° ÷ 50,0); çevre 40.000 km (250.000 stadion), hata %0,02 eksik.",
+        "neden": "7,2° tam turun ellide biri, öyleyse 5000 stadionluk uzaklık da çevrenin ellide biri: 50 × 5000 = 250.000 stadion. Stadionu 160 m alınca sonuç bugünkü kutup çevresine (40.008 km) neredeyse tam oturur; ama bu isabet seçtiğimiz birime bağlı."
+      },
+      {
+        "yap": "Syene–İskenderiye seçiliyken stadionu 185 m (Attika) yap.",
+        "tikla": "#erOn button[data-i=\"0\"]",
+        "ayar": { "#erStad": "185" },
+        "gozle": "Uzaklık 925 km'ye çıktı; çevre 46.250 km (yine 250.000 stadion), hata %15,6 fazla.",
+        "neden": "Açı ve stadion cinsinden sonuç değişmedi; değişen tek şey stadionun bugünkü karşılığı. Paris Gözlemevi'nin sözlüğü en olası aralığı 155–185 m verir: sonuç %3 eksik ile %15 fazla arasında bir yere düşer."
+      },
+      {
+        "yap": "Stadionu 155 m yap (Syene–İskenderiye seçili).",
+        "tikla": "#erOn button[data-i=\"0\"]",
+        "ayar": { "#erStad": "155" },
+        "gozle": "Çevre 38.750 km, hata %3,14 eksik.",
+        "neden": "Aynı ölçüm, başka bir birim varsayımıyla bu kez biraz küçük çıkıyor. “Eratosthenes yüzde birden az hatayla buldu” cümlesi bu yüzden dikkatle kullanılmalı: yöntem kusursuzdu, kesinlik birimin belirsizliğine bağlı."
+      },
+      {
+        "yap": "“Bugünkü Asvan–İskenderiye” düğmesine bas.",
+        "tikla": "#erOn button[data-i=\"2\"]",
+        "gozle": "Merkez açısı 7,11° (360° ÷ 50,6); uzaklık 787,7 km; çevre 39.893 km, hata %0,29 eksik.",
+        "neden": "Bugünkü enlemlerle iki kent arasında 7,2° değil 7,11° var. Syene dönencenin yaklaşık 1° kuzeyinde ve İskenderiye'nin 3° doğusunda; yani Eratosthenes'in iki varsayımı da tam doğru değildi, ama hatalar kısmen birbirini götürdü. Bu örnekte açılar ekinoks öğlesi içindir; iki kentte aynı gün ölçüldüğü sürece fark yine enlem farkına eşittir."
+      },
+      {
+        "yap": "“İstanbul (Ataşehir)–Denizli” düğmesine bas.",
+        "tikla": "#erOn button[data-i=\"1\"]",
+        "gozle": "Ekinoks öğlesinde Denizli'de 37,78°, Ataşehir'de 40,98° (1 m'lik sopanın gölgesi 77,5 cm · 86,9 cm). Merkez açısı 3,20°; çevre 39.968 km, hata %0,10 eksik.",
+        "neden": "İki kent aynı boylamda (29,1° D) ve 3,2° enlem farkıyla 355 km arayla duruyor: 355,3 km × 360 / 3,2 ≈ 39.968 km. Küçük fark, Dünya'nın basıklığından: 39° enlemde bir derece, ortalamadan biraz kısadır."
+      },
+      {
+        "yap": "İstanbul–Denizli örneğinde Ataşehir'deki açıyı 0,1° büyüt (41,08°).",
+        "tikla": "#erOn button[data-i=\"1\"]",
+        "ayar": { "#erKuzey": 41.08333 },
+        "gozle": "Merkez açısı 3,30°; çevre 38.757 km, hata %3,13 eksik.",
+        "neden": "Merkez açısı yalnız 3,2° olduğu için açıdaki 0,1°'lik yanılgı sonucu yaklaşık %3 kaydırır. 1 m'lik bir sopada 0,1°, gölgede yalnızca yaklaşık 3 mm demek: bu deneyde en zor iş sopayı dik tutmak ve gölgenin ucunu keskin ölçmektir."
+      },
+      {
+        "yap": "Güneydeki ve kuzeydeki açıyı eşitle: ikisini de 20° yap.",
+        "ayar": { "#erGuney": 20, "#erKuzey": 20 },
+        "gozle": "Merkez açısı 0,00°; çevre “hesaplanamaz”.",
+        "neden": "Gölgeler eşitse Güneş iki kentte aynı yükseklikte, yani kentler aynı enlemde. Yöntem kuzey–güney farkını kullanır; doğu–batı doğrultusundaki iki kent bu ölçümle Dünya'nın büyüklüğü hakkında hiçbir şey söylemez."
+      }
+    ],
+    "kaynaklar": [
+      { "ad": "Observatoire de Paris: Eratosthenes' method", "url": "https://dictionary.obspm.fr/terms/eratosthenes-method/" },
+      { "ad": "Wikipedia: Eratosthenes", "url": "https://en.wikipedia.org/wiki/Eratosthenes" },
+      { "ad": "Wikipedia: Earth's circumference", "url": "https://en.wikipedia.org/wiki/Earth%27s_circumference" },
+      { "ad": "Wikipedia: Aswan (koordinatlar)", "url": "https://en.wikipedia.org/wiki/Aswan" },
+      { "ad": "Wikipedia: Alexandria (koordinatlar)", "url": "https://en.wikipedia.org/wiki/Alexandria" },
+      { "ad": "Wikipedia: World Geodetic System (WGS 84)", "url": "https://en.wikipedia.org/wiki/World_Geodetic_System" }
+    ]
+  },
+  "veri": {
+    "ornekler": [
+      {
+        "ad": "Syene–İskenderiye (Eratosthenes)",
+        "guney_kent": "Syene",
+        "kuzey_kent": "İskenderiye",
+        "guney_derece": 0,
+        "kuzey_derece": 7.2,
+        "stadion": 5000,
+        "not": "Yaz gündönümü öğlesi; Kleomedes'in aktardığı değerler: 7,2° = çemberin 1/50'si, 5000 stadion.",
+        "kaynaklar": [
+          { "ad": "Wikipedia: Eratosthenes", "url": "https://en.wikipedia.org/wiki/Eratosthenes" },
+          { "ad": "Observatoire de Paris: Eratosthenes' method", "url": "https://dictionary.obspm.fr/terms/eratosthenes-method/" }
+        ]
+      },
+      {
+        "ad": "İstanbul (Ataşehir)–Denizli",
+        "guney_kent": "Denizli",
+        "kuzey_kent": "Ataşehir",
+        "guney_derece": 37.78333,
+        "kuzey_derece": 40.98333,
+        "uzaklik_km": 355.27,
+        "enlem_boylam": { "Ataşehir": [40.98333, 29.12778], "Denizli": [37.78333, 29.09639] },
+        "not": "Gölge açıları ekinoks günü öğlesi içindir (Güneş gök ekvatorundayken öğle gölgesinin açısı enleme eşittir). Kuzey–güney uzaklığı iki enlem arasındaki WGS 84 meridyen yayı (Simpson tümleviyle hesap).",
+        "kaynaklar": [
+          { "ad": "Wikipedia: Ataşehir (40°59′00″K 29°07′40″D)", "url": "https://en.wikipedia.org/wiki/Ata%C5%9Fehir" },
+          { "ad": "Wikipedia: Denizli (37°47′00″K 29°05′47″D)", "url": "https://en.wikipedia.org/wiki/Denizli" },
+          { "ad": "Wikipedia: World Geodetic System (WGS 84)", "url": "https://en.wikipedia.org/wiki/World_Geodetic_System" }
+        ]
+      },
+      {
+        "ad": "Bugünkü Asvan–İskenderiye",
+        "guney_kent": "Asvan",
+        "kuzey_kent": "İskenderiye",
+        "guney_derece": 24.08889,
+        "kuzey_derece": 31.1975,
+        "uzaklik_km": 787.74,
+        "enlem_boylam": { "Asvan": [24.08889, 32.89972], "İskenderiye": [31.1975, 29.8925] },
+        "not": "Gölge açıları ekinoks günü öğlesi içindir. Kuzey–güney uzaklığı WGS 84 meridyen yayı; iki kent arasındaki gerçek (eğik) uzaklık 3° boylam farkı yüzünden daha uzundur.",
+        "kaynaklar": [
+          { "ad": "Wikipedia: Aswan (24°05′20″K 32°53′59″D)", "url": "https://en.wikipedia.org/wiki/Aswan" },
+          { "ad": "Wikipedia: Alexandria (31°11′51″K 29°53′33″D)", "url": "https://en.wikipedia.org/wiki/Alexandria" }
+        ]
+      }
+    ],
+    "stadionlar": [
+      { "m": 155, "ad": "155 m (Paris Gözlemevi aralığının alt ucu)", "kaynaklar": [{ "ad": "Observatoire de Paris: Eratosthenes' method", "url": "https://dictionary.obspm.fr/terms/eratosthenes-method/" }] },
+      { "m": 157.7, "ad": "157,7 m (L. V. Firsov'un önerisi)", "kaynaklar": [{ "ad": "Wikipedia: Earth's circumference", "url": "https://en.wikipedia.org/wiki/Earth%27s_circumference" }] },
+      { "m": 160, "ad": "160 m (Messene stadionu)", "varsayilan": true, "kaynaklar": [{ "ad": "Wikipedia: Eratosthenes", "url": "https://en.wikipedia.org/wiki/Eratosthenes" }] },
+      { "m": 176.4, "ad": "176,4 m (Olimpiya; başka bir kaynakta 191 m)", "kaynaklar": [{ "ad": "Wikipedia: Earth's circumference", "url": "https://en.wikipedia.org/wiki/Earth%27s_circumference" }, { "ad": "Wikipedia: Eratosthenes", "url": "https://en.wikipedia.org/wiki/Eratosthenes" }] },
+      { "m": 185, "ad": "185 m (Attika stadionu)", "kaynaklar": [{ "ad": "Wikipedia: Eratosthenes", "url": "https://en.wikipedia.org/wiki/Eratosthenes" }, { "ad": "Observatoire de Paris: Eratosthenes' method", "url": "https://dictionary.obspm.fr/terms/eratosthenes-method/" }] },
+      { "m": 210, "ad": "210 m (Ptolemaios dönemi)", "kaynaklar": [{ "ad": "Wikipedia: Eratosthenes", "url": "https://en.wikipedia.org/wiki/Eratosthenes" }] }
+    ],
+    "kutup_cevresi": {
+      "km": 40007.863,
+      "not": "Kutuplardan geçen (meridyen) çevre; WGS 84 elipsoidinden (a = 6.378.137 m, 1/f = 298,257223563) hesapla da 40.007,863 km çıkar.",
+      "kaynaklar": [
+        { "ad": "Wikipedia: Earth's circumference", "url": "https://en.wikipedia.org/wiki/Earth%27s_circumference" },
+        { "ad": "Wikipedia: World Geodetic System (WGS 84)", "url": "https://en.wikipedia.org/wiki/World_Geodetic_System" }
+      ]
+    },
+    "wgs84": { "a_m": 6378137, "ters_basiklik": 298.257223563 },
+    "kaynaklar": [
+      { "ad": "NASA Earth Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html" }
+    ]
+  }
+}

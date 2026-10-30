@@ -1,0 +1,411 @@
+{
+  "rehber": {
+    "ne": "Bir yıldızın çevresinde, Dünya benzeri bir gezegenin yüzeyinde sıvı su bulunabilecek kuşağı, yani yaşanabilir bölgeyi çizer. Yıldızı ve gezegenin uzaklığını seçersin; gezegenin ne kadar ışık aldığını, ışığı emip yaydığı denge sıcaklığını ve kuşağın neresinde kaldığını görürsün. Yanıtladığı soru: Bir gezegenin suyunu ne çok sıcak ne çok soğuk tutacak uzaklık, yıldızına göre nasıl değişir?",
+    "ekran": {
+      "cizim": [
+        {
+          "sekil": "daire",
+          "renk": "#FFE8B0",
+          "ad": "Soldaki küçük parlak daire",
+          "ne": "Yıldız, üstten bakınca. Rengi yüzey sıcaklığına göre değişir (soğuk kırmızı cüce turuncu, Güneş sarımsı beyaz)."
+        },
+        {
+          "sekil": "alan",
+          "renk": "--iyi",
+          "ad": "Koyu yeşil kuşak",
+          "ne": "Temkinli yaşanabilir bölge: iç kenarı kaçak sera (okyanuslar buharlaşır), dış kenarı en büyük sera sınırı (karbondioksit artık ısıtamaz). Kenarları düz çizgi."
+        },
+        {
+          "sekil": "kesik",
+          "renk": "--iyi",
+          "ad": "Soluk yeşil kuşaklar ve kesik çizgiler",
+          "ne": "İyimser bölgenin fazladan kısmı: Venüs'ün yakın geçmişte, Mars'ın erken dönemde suyu olabileceği varsayımından gelen sınırlar."
+        },
+        {
+          "sekil": "kesik",
+          "renk": "--soluk",
+          "ad": "Gri kesik çember",
+          "ne": "Gezegenin yörüngesi (dairesel varsayıldı)."
+        },
+        {
+          "sekil": "daire",
+          "renk": "--parsomen",
+          "ad": "Krem nokta",
+          "ne": "Gezegen, yıldıza uzaklığı ölçekli. Altında adı yazar."
+        },
+        {
+          "sekil": "cizgi",
+          "renk": "--soluk",
+          "ad": "Sol alttaki ölçek çubuğu",
+          "ne": "Üst çizimin ölçeği (doğrusal): çubuğun boyu yanında yazan kadar astronomik birim (AB, Dünya–Güneş uzaklığı). Çizim her yıldızda kuşağa göre yeniden ölçeklenir."
+        },
+        {
+          "sekil": "alan",
+          "renk": "--iyi",
+          "ad": "Alttaki şeritte yeşil kutu (“bu yıldız”)",
+          "ne": "Aynı bölge, logaritmik ölçekte: her bölme 10 kat uzaklık (0,01, 0,1, 1, 10 AB). Kırmızı cücenin ve Güneş'in bölgesi böylece yan yana görülür."
+        },
+        {
+          "sekil": "kesik",
+          "renk": "--soluk",
+          "ad": "Alttaki kesik çerçeve (“Güneş”)",
+          "ne": "Karşılaştırma için Güneş'in temkinli bölgesi, aynı logaritmik ölçekte."
+        },
+        {
+          "sekil": "dikey",
+          "renk": "--parsomen",
+          "ad": "Krem dikey çizgi ve üçgen",
+          "ne": "Gezegenin uzaklığı, logaritmik şeritte."
+        }
+      ],
+      "kontroller": [
+        {
+          "sec": "#ybOn",
+          "tur": "dugme",
+          "ad": "Örnek düğmeleri",
+          "ne": "Güneş'le Dünya, Mars ve Venüs; TRAPPIST-1 e; Proxima b; sıcak F türü yıldız Procyon A ve ona 1 AB uzakta varsayımsal bir Dünya: bütün kaydırıcıları ölçülmüş değerlere ayarlar."
+        },
+        {
+          "sec": "#ybL",
+          "tur": "kaydirici",
+          "ad": "Yıldızın ışıma gücü",
+          "ne": "Yıldızın saniyede yaydığı toplam enerji, Güneş'inkine göre: 0,0001 ile 100 kat arası. Bölgenin uzaklığı bunun kareköküyle büyür."
+        },
+        {
+          "sec": "#ybT",
+          "tur": "kaydirici",
+          "ad": "Yıldızın yüzey sıcaklığı",
+          "ne": "2.300 ile 7.500 K arası. Bölgenin sınırlarını biraz kaydırır: soğuk yıldızın kızıl ışığı havada daha az saçılır ve suyla daha çok soğurulur. Formül 2.600–7.200 K için geçerli."
+        },
+        {
+          "sec": "#ybA",
+          "tur": "kaydirici",
+          "ad": "Gezegenin yıldıza uzaklığı",
+          "ne": "0,005 ile 20 AB arası (logaritmik kaydırıcı)."
+        },
+        {
+          "sec": "#ybAlb",
+          "tur": "kaydirici",
+          "ad": "Bond albedosu",
+          "ne": "Gezegenin üstüne düşen bütün ışığın geri yansıyan payı: 0 hepsini emer, 0,9 çoğunu yansıtır. Dünya 0,294, Venüs bulutları yüzünden 0,77. Yalnız denge sıcaklığını değiştirir, bölgenin sınırlarını değil."
+        }
+      ]
+    },
+    "gercek": "Güneş'in yaşanabilir bölgesi bu hesapta yaklaşık 0,95 ile 1,68 AB arasıdır; Dünya içinde, Venüs dışında, Mars ise kenara yakın içeride ama kuru ve donuk. Bu deneydeki sıcak yıldız Procyon'u kış akşamları İstanbul'dan çıplak gözle görebilirsin: Küçük Köpek'in en parlak yıldızı, Güneş'ten yaklaşık 7 kat parlak, yaşanabilir bölgesi 2,4 ile 4,2 AB arası. Bilinen yaşanabilir bölge gezegenlerinin çoğu ise TRAPPIST-1 ve Proxima Centauri gibi çıplak gözle görülmeyen sönük kırmızı cücelerin çevresindedir.",
+    "gercekKaynaklar": [
+      {
+        "ad": "Kopparapu vd. 2014 (arXiv)",
+        "url": "https://arxiv.org/abs/1404.5292"
+      },
+      {
+        "ad": "Wikipedia: Procyon",
+        "url": "https://en.wikipedia.org/wiki/Procyon"
+      },
+      {
+        "ad": "NASA Mars Fact Sheet",
+        "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html"
+      }
+    ],
+    "dersler": [
+      "d13",
+      "d18",
+      "d2"
+    ],
+    "adimlar": [
+      {
+        "yap": "“Güneş + Dünya” düğmesine bas.",
+        "tikla": "#ybOn button[data-i=\"0\"]",
+        "gozle": "Aldığı ışık 1,00 (1.361 W/m²), denge sıcaklığı 255 K (−18 °C); temkinli bölge 0,95 – 1,68 AB, Dünya içinde.",
+        "neden": "Dünya ışığın %29,4'ünü yansıtır, kalanı onu ancak −18 °C'de tutmaya yeter. Gerçek ortalama 288 K (15 °C): aradaki yaklaşık 33 derece sera etkisidir. Denge sıcaklığı bu yüzden yüzey sıcaklığı değil, “havası olmasaydı” sıcaklığıdır."
+      },
+      {
+        "yap": "“Güneş + Dünya”ya bas, sonra albedoyu 0 yap.",
+        "tikla": "#ybOn button[data-i=\"0\"]",
+        "ayar": {
+          "#ybAlb": 0
+        },
+        "gozle": "Denge sıcaklığı 278 K'ye (5 °C) çıktı; bölgenin sınırları değişmedi.",
+        "neden": "Hiç yansıtmayan bir gezegen bütün ışığı emer ve daha sıcak dengeye gelir. Sınırlar ise iklim modelinden gelir: bulutların ve havanın yansıtması o modelin içinde zaten hesaplanmıştır, bu kaydırıcıyla değişmez."
+      },
+      {
+        "yap": "“Güneş + Venüs” düğmesine bas.",
+        "tikla": "#ybOn button[data-i=\"2\"]",
+        "gozle": "Aldığı ışık 1,91 kat, ama denge sıcaklığı 227 K (−47 °C), Dünya'nınkinden düşük; gezegen bölgenin içinde değil (çok sıcak taraf).",
+        "neden": "Venüs'ün bulutları ışığın %77'sini geri yansıtır, bu yüzden denge sıcaklığı düşük çıkar. Oysa NASA'ya göre yüzeyi ortalama 737 K'dir: kalın karbondioksit havası kaçak bir sera etkisi yaratır. Denge sıcaklığına bakıp “Venüs serin” demek tam bir yanılgı olurdu."
+      },
+      {
+        "yap": "“Güneş + Mars” düğmesine bas.",
+        "tikla": "#ybOn button[data-i=\"1\"]",
+        "gozle": "Aldığı ışık 0,43, denge sıcaklığı 210 K (−63 °C); Mars temkinli bölgenin içinde.",
+        "neden": "Bu hesapta bölgenin dış kenarı 1,68 AB, Mars 1,52 AB'de. Ama Mars küçük ve havası çok ince: sera etkisi yok denecek kadar az, yüzeyi kuru ve donuk. Bölgede olmak, gezegenin suyu ve havası olduğu anlamına gelmez."
+      },
+      {
+        "yap": "“TRAPPIST-1 e” düğmesine bas.",
+        "tikla": "#ybOn button[data-i=\"3\"]",
+        "gozle": "Bölge 0,0246 – 0,0498 AB'ye küçüldü; gezegen 0,0293 AB'de, Dünya'nın aldığı ışığın 0,65 katını alıyor, denge sıcaklığı 250 K. Temkinli bölgenin içinde.",
+        "neden": "Yıldız Güneş'ten yaklaşık 1.800 kat sönük; aynı ışığı almak için uzaklık √1.800 ≈ 43 kat küçülmeli. Sonuç: Merkür'ün Güneş'e uzaklığının yaklaşık on üçte biri. Yıldız 2.566 K ile formülün alt sınırı 2.600 K'nin biraz altında; sınırlar yaklaşık. Albedo bilinmediği için 0 alındı."
+      },
+      {
+        "yap": "“Proxima b” düğmesine bas.",
+        "tikla": "#ybOn button[data-i=\"4\"]",
+        "gozle": "Bölge 0,0410 – 0,0813 AB; Proxima b 0,0485 AB'de, 0,66 kat ışık alıyor, denge sıcaklığı 251 K. Temkinli bölgenin içinde.",
+        "neden": "Bize en yakın ötegezegen kırmızı cüce yıldızının bölgesinde. Ama bu kadar yakın bir gezegen büyük olasılıkla yıldıza hep aynı yüzünü döner ve yıldızın patlamaları havasını aşındırabilir; gerçekten yaşanabilir olup olmadığı tartışmalı."
+      },
+      {
+        "yap": "“Procyon A” düğmesine bas.",
+        "tikla": "#ybOn button[data-i=\"5\"]",
+        "gozle": "Bölge 2,40 – 4,17 AB'ye açıldı; 1 AB'deki Dünya 7,05 kat ışık alıyor, denge sıcaklığı 416 K (143 °C): bölgenin içinde değil.",
+        "neden": "Procyon A Güneş'ten yaklaşık 7 kat parlak; bölge √7 ≈ 2,65 kat uzağa kayar. Sıcak yıldızın mavimsi ışığı havada daha çok saçılıp geri döndüğü için sınırlar biraz daha da dışa kayar."
+      },
+      {
+        "yap": "“Procyon A”ya bas, sonra gezegeni 3 AB'ye götür.",
+        "tikla": "#ybOn button[data-i=\"5\"]",
+        "ayar": {
+          "#ybA": 0.4771213
+        },
+        "gozle": "Aldığı ışık 0,78, denge sıcaklığı 240 K (−33 °C); gezegen temkinli bölgenin içinde.",
+        "neden": "Uzaklık 3 katına çıkınca ışık 3² = 9 kat azalır: 7,05 ÷ 9 ≈ 0,78. Yaşanabilir bölgeyi belirleyen uzaklığın kendisi değil, gezegenin aldığı ışık miktarıdır."
+      }
+    ],
+    "kaynaklar": [
+      {
+        "ad": "Kopparapu vd. 2014 (arXiv)",
+        "url": "https://arxiv.org/abs/1404.5292"
+      },
+      {
+        "ad": "Kopparapu vd. 2013 (arXiv)",
+        "url": "https://arxiv.org/abs/1301.6674"
+      },
+      {
+        "ad": "NASA Earth Fact Sheet",
+        "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html"
+      },
+      {
+        "ad": "NASA Venus Fact Sheet",
+        "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/venusfact.html"
+      },
+      {
+        "ad": "NASA Mars Fact Sheet",
+        "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html"
+      },
+      {
+        "ad": "Wikipedia: Greenhouse effect",
+        "url": "https://en.wikipedia.org/wiki/Greenhouse_effect"
+      },
+      {
+        "ad": "Agol vd. 2021, TRAPPIST-1 (arXiv)",
+        "url": "https://arxiv.org/abs/2010.01074"
+      },
+      {
+        "ad": "Anglada-Escudé vd. 2016, Proxima b (arXiv)",
+        "url": "https://arxiv.org/abs/1609.03449"
+      },
+      {
+        "ad": "Wikipedia: Procyon",
+        "url": "https://en.wikipedia.org/wiki/Procyon"
+      },
+      {
+        "ad": "NASA Mercury Fact Sheet",
+        "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/mercuryfact.html"
+      }
+    ]
+  },
+  "veri": {
+    "kopparapu": {
+      "teff_min": 2600,
+      "teff_max": 7200,
+      "sinirlar": [
+        {
+          "anahtar": "venus",
+          "ad": "Yakın geçmişteki Venüs (iyimser iç sınır)",
+          "S0": 1.776,
+          "a": 0.0002136,
+          "b": 2.533e-08,
+          "c": -1.332e-11,
+          "d": -3.097e-15
+        },
+        {
+          "anahtar": "kacak",
+          "ad": "Kaçak sera (temkinli iç sınır, 1 Dünya kütlesi)",
+          "S0": 1.107,
+          "a": 0.0001332,
+          "b": 1.58e-08,
+          "c": -8.308e-12,
+          "d": -1.931e-15
+        },
+        {
+          "anahtar": "maks",
+          "ad": "En büyük sera (temkinli dış sınır)",
+          "S0": 0.356,
+          "a": 6.171e-05,
+          "b": 1.698e-09,
+          "c": -3.198e-12,
+          "d": -5.575e-16
+        },
+        {
+          "anahtar": "mars",
+          "ad": "Erken Mars (iyimser dış sınır)",
+          "S0": 0.32,
+          "a": 5.547e-05,
+          "b": 1.526e-09,
+          "c": -2.874e-12,
+          "d": -5.011e-16
+        }
+      ],
+      "not": "Kopparapu vd. 2014, Tablo 1 (1 Dünya kütlesi); aynı katsayılar yazarın hzcalc.py dosyasında.",
+      "kaynaklar": [
+        {
+          "ad": "Kopparapu vd. 2014 (arXiv)",
+          "url": "https://arxiv.org/abs/1404.5292"
+        },
+        {
+          "ad": "Kopparapu: hzcalc.py",
+          "url": "https://personal.ems.psu.edu/~jfk4/ruk15/planets/hzcalc.py"
+        }
+      ]
+    },
+    "dunya": {
+      "denge_k": 255,
+      "yuzey_k": 288,
+      "venus_denge_k": 226.6,
+      "venus_yuzey_k": 737,
+      "kaynaklar": [
+        {
+          "ad": "Wikipedia: Greenhouse effect (255 K, 288 K)",
+          "url": "https://en.wikipedia.org/wiki/Greenhouse_effect"
+        },
+        {
+          "ad": "NASA Earth Fact Sheet (288 K)",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html"
+        },
+        {
+          "ad": "NASA Venus Fact Sheet (226,6 K; 737 K)",
+          "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/venusfact.html"
+        }
+      ]
+    },
+    "ornekler": [
+      {
+        "ad": "Güneş + Dünya",
+        "yildiz": "gunes",
+        "gezegen_ad": "Dünya",
+        "a_ab": 1.00000011,
+        "albedo": 0.294,
+        "kaynaklar": [
+          {
+            "ad": "NASA Earth Fact Sheet",
+            "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html"
+          }
+        ]
+      },
+      {
+        "ad": "Güneş + Mars",
+        "yildiz": "gunes",
+        "gezegen_ad": "Mars",
+        "a_ab": 1.52366231,
+        "albedo": 0.25,
+        "kaynaklar": [
+          {
+            "ad": "NASA Mars Fact Sheet",
+            "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html"
+          }
+        ]
+      },
+      {
+        "ad": "Güneş + Venüs",
+        "yildiz": "gunes",
+        "gezegen_ad": "Venüs",
+        "a_ab": 0.72333199,
+        "albedo": 0.77,
+        "kaynaklar": [
+          {
+            "ad": "NASA Venus Fact Sheet",
+            "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/venusfact.html"
+          }
+        ]
+      },
+      {
+        "ad": "TRAPPIST-1 e",
+        "yildiz_ad": "TRAPPIST-1",
+        "gezegen_ad": "TRAPPIST-1 e",
+        "l_gunes": 0.000553,
+        "teff_k": 2566,
+        "a_ab": 0.02925,
+        "albedo": 0,
+        "not": "L Ducrot vd. 2020 (Agol vd. 2021'de), Teff ve a Agol vd. 2021. Albedo bilinmiyor; 0 alındı. Wikipedia'nın güncel değeri farklı: 2.325 K (Picos vd. 2026), L = 5,66 × 10⁻⁴ (Davoudi vd. 2024).",
+        "kaynaklar": [
+          {
+            "ad": "Agol vd. 2021 (arXiv)",
+            "url": "https://arxiv.org/abs/2010.01074"
+          }
+        ]
+      },
+      {
+        "ad": "Proxima b",
+        "yildiz_ad": "Proxima Centauri",
+        "gezegen_ad": "Proxima b",
+        "l_gunes": 0.00155,
+        "teff_k": 3050,
+        "a_ab": 0.0485,
+        "albedo": 0,
+        "not": "Anglada-Escudé vd. 2016, Tablo 1. Albedo bilinmiyor; 0 alındı. Wikipedia: L = 0,001567 (Pineda 2021), 2.833 K (Anugu 2026), a = 0,04848 AB.",
+        "kaynaklar": [
+          {
+            "ad": "Anglada-Escudé vd. 2016 (arXiv)",
+            "url": "https://arxiv.org/abs/1609.03449"
+          }
+        ]
+      },
+      {
+        "ad": "Procyon A",
+        "yildiz_ad": "Procyon A",
+        "gezegen_ad": "1 AB'de Dünya",
+        "l_gunes": 7.049,
+        "teff_k": 6582,
+        "a_ab": 1,
+        "albedo": 0.294,
+        "not": "L ve Teff Soubiran vd. 2024 (Wikipedia'da); Kervella vd. 2004: 6.530 K, log L = 0,85. Gezegen varsayımsal: Dünya'nın uzaklığı ve albedosu.",
+        "kaynaklar": [
+          {
+            "ad": "Wikipedia: Procyon",
+            "url": "https://en.wikipedia.org/wiki/Procyon"
+          },
+          {
+            "ad": "Kervella vd. 2004 (arXiv)",
+            "url": "https://arxiv.org/abs/astro-ph/0309148"
+          }
+        ]
+      }
+    ],
+    "kaynaklar": [
+      {
+        "ad": "Kopparapu vd. 2014 (arXiv)",
+        "url": "https://arxiv.org/abs/1404.5292"
+      },
+      {
+        "ad": "Kopparapu vd. 2013 (arXiv)",
+        "url": "https://arxiv.org/abs/1301.6674"
+      },
+      {
+        "ad": "Wikipedia: Planetary equilibrium temperature",
+        "url": "https://en.wikipedia.org/wiki/Planetary_equilibrium_temperature"
+      },
+      {
+        "ad": "NASA gezegen bilgi sayfaları",
+        "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html"
+      },
+      {
+        "ad": "Agol vd. 2021 (arXiv)",
+        "url": "https://arxiv.org/abs/2010.01074"
+      },
+      {
+        "ad": "Anglada-Escudé vd. 2016 (arXiv)",
+        "url": "https://arxiv.org/abs/1609.03449"
+      },
+      {
+        "ad": "Wikipedia: Procyon",
+        "url": "https://en.wikipedia.org/wiki/Procyon"
+      }
+    ]
+  }
+}
