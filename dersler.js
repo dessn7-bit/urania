@@ -80,11 +80,15 @@
   }
   /* Ders içinde deney: bölümün sonunda, basınca açılır (açılmadan döngü çalışmaz) */
   const MINI = {
-    d2: { 5: 'tayf' }, d3: { 1: 'kepler', 8: 'yorunge', 11: 'gelgit' }, d5: { 3: 'yildiz' }, d10: { 0: 'evreler' },
-    d13: { 2: 'gecis' }, d16: { 1: 'karadelik', 3: 'gorelilik' }, d17: { 1: 'hubble' }
+    d1: { 7: 'mevsim' }, d2: { 5: 'tayf' }, d3: { 1: 'kepler', 8: 'yorunge', 11: 'gelgit' }, d5: { 3: 'yildiz' }, d10: { 0: 'evreler' },
+    d11: { 1: 'durbun' }, d13: { 2: 'gecis', 6: 'yasanabilir' }, d15: { 6: 'ortme' }, d16: { 1: 'karadelik', 3: 'gorelilik' },
+    d17: { 1: 'hubble', 3: 'paralaks' }, d20: { 3: 'eratosthenes' }, d22: { 1: 'analemma' }, d23: { 1: 'roket', 7: 'hohmann' },
+    d24: { 7: 'astrofoto' }
   };
   const DENEY_AD = { tayf: 'Tayf ve Doppler', kepler: 'Kepler yasaları', yorunge: 'Yörünge atışı', gelgit: 'Gelgit', yildiz: 'Yıldızın hayatı',
-    evreler: 'Ay evreleri ve tutulmalar', gecis: 'Ötegezegen geçişi', karadelik: 'Kara deliğe yaklaşmak', gorelilik: 'Işığa yakın yolculuk', hubble: 'Genişleyen evren' };
+    evreler: 'Ay evreleri ve tutulmalar', gecis: 'Ötegezegen geçişi', karadelik: 'Kara deliğe yaklaşmak', gorelilik: 'Işığa yakın yolculuk', hubble: 'Genişleyen evren',
+    mevsim: 'Mevsimler ve Güneş\'in yolu', analemma: 'Güneş saati ve zaman denklemi', eratosthenes: 'Dünya\'yı ölçmek', paralaks: 'Yıldızlara uzaklık: paralaks',
+    durbun: 'Dürbün ve teleskop', astrofoto: 'Gökyüzü fotoğrafı', roket: 'Roket denklemi', hohmann: 'Mars\'a yolculuk', yasanabilir: 'Yaşanabilir bölge', ortme: 'Örten çift yıldız' };
   function miniDeney(ders, bolum) {
     const id = (MINI[ders] || {})[bolum];
     if (!id) return '';

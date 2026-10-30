@@ -73,6 +73,8 @@
     /* yıldızlar: [ξ, η (0,1′ birim), V × 10] düz dizi → nesne */
     const yildiz = hedefler.map(h => { const ls = []; for (let i = 0; i < h.y.length; i += 3) ls.push({ x: h.y[i] / 600, y: h.y[i + 1] / 600, m: h.y[i + 2] / 10 }); return ls; });
     let st = {};
+    const bFmt = M => U.sayi(M, M < 10 && Math.abs(M - Math.round(M)) > 0.05 ? 1 : 0);
+    const ciplakMi = (D, M) => M < 1.05 && D <= 7.5;
     function hesapla() {
       const D = Math.pow(10, Number(dS.value)), M = Math.pow(10, Number(mS.value)), afov = Number(aS.value), p = Number(gozS.value);
       const hedefI = Number(hedS.value) || 0;
@@ -87,17 +89,18 @@
       const gor = yildiz[hedefI].filter(s => s.m <= LM && Math.hypot(s.x, s.y) <= r);
       st = { D, M, afov, p, gok, hd, tf, cik, bos, dEt, LM, ray, daw, goz, pen, tam, sigar, gor };
       S('dbDCikti').textContent = U.sayi(D, D < 20 ? 1 : 0) + ' mm';
-      S('dbMCikti').textContent = U.sayi(M, M < 10 && Math.abs(M - Math.round(M)) > 0.05 ? 1 : 0) + '×';
+      S('dbMCikti').textContent = bFmt(M) + '×';
       S('dbAfovCikti').textContent = U.sayi(afov, 1) + '°';
       const oran = H.isikOrani(D, dRef);
       S('dbIsik').textContent = U.sayi(oran, oran < 10 ? 1 : 0) + ' kat (' + U.sayi(H.kadirFarki(oran), 1) + ' kadir)';
-      S('dbCikis').textContent = U.sayi(cik, cik < 10 ? 2 : 0) + ' mm' + (bos > 0.005 ? ' · %' + U.sayi(bos * 100, 0) + ' boşa' : '');
+      const ciplak = ciplakMi(D, M);
+      S('dbCikis').textContent = ciplak ? '— (göz merceği yok)' : U.sayi(cik, cik < 10 ? 2 : 0) + ' mm' + (bos > 0.005 ? ' · %' + U.sayi(bos * 100, 0) + ' boşa' : '');
       S('dbCikis').style.color = bos > 0.005 ? 'var(--uyari)' : '';
-      S('dbAlan').textContent = tf > PENCERE ? U.sayi(tf, 0) + '° (çizimde ' + PENCERE + '°)' : U.sayi(tf, 2) + '°';
+      S('dbAlan').textContent = ciplak ? 'çok geniş (çizimde ' + PENCERE + '°)' : tf > PENCERE ? U.sayi(tf, 0) + '° (çizimde ' + PENCERE + '°)' : U.sayi(tf, 2) + '°';
       S('dbSinir').textContent = U.sayi(LM, 1) + ' kadir';
       const sinir = Math.max(ray, goz);
       S('dbAyirma').textContent = U.sayi(sinir, sinir < 10 ? 1 : 0) + '″ (' + (goz > ray ? 'göz' : 'kırınım') + ')';
-      S('dbSigar').textContent = (sigar ? 'Evet' : 'Hayır') + ': ' + U.sayi(hd.boyut_derece, 2) + '° / ' + U.sayi(tf, tf < 10 ? 2 : 0) + '°';
+      S('dbSigar').textContent = ciplak ? 'Evet: ' + U.sayi(hd.boyut_derece, 2) + '°, gözün alanı çok geniş' : (sigar ? 'Evet' : 'Hayır') + ': ' + U.sayi(hd.boyut_derece, 2) + '° / ' + U.sayi(tf, tf < 10 ? 2 : 0) + '°';
       S('dbSayi').textContent = U.sayi(gor.length, 0) + (LM > tam + 0.05 ? ' (veri ' + U.sayi(tam, 1) + ' kadirde bitiyor)' : '');
       metin();
       ciz();
@@ -107,17 +110,19 @@
       const lmK = H.sinirKadir(gokler[0].nelm, s.D, s.M, s.p, dRef), lmS = H.sinirKadir(gokler[gokler.length - 1].nelm, s.D, s.M, s.p, dRef);
       const fark = lmK - lmS, katCap = Math.pow(10, fark / 5);
       const p = [];
-      const ciplak = s.M < 1.05 && s.D <= 7.5;
+      const ciplak = ciplakMi(s.D, s.M);
       p.push(ciplak
         ? `Çıplak gözle ışığı yalnız göz bebeğin toplar. ${gok.uzun[0].toUpperCase() + gok.uzun.slice(1)} altında en sönük seçebildiğin yıldız yaklaşık ${sayi(s.LM, 1)} kadir.`
         : `${sayi(s.D, 0)} mm'lik ağız, karanlıkta 7 mm açılan göz bebeğinden (${sayi(s.D, 0)} / 7)² ≈ ${sayi(H.isikOrani(s.D, dRef), 0)} kat ışık toplar. Sönük yıldızları gösteren budur, büyütme değil: ${gok.uzun} altında sınır yaklaşık ${sayi(s.LM, 1)} kadir.`);
-      if (s.bos > 0.005) p.push(`Çıkış göz bebeği (göz merceğinden çıkan ışık demetinin çapı) ${sayi(s.cik, 2)} mm, senin göz bebeğin ${sayi(s.p, 1)} mm: demetin dışı irise çarpar ve ışığın %${sayi(s.bos * 100, 0)}'i boşa gider. Ağzın yalnız ${sayi(s.dEt, 0)} mm'si çalışır; bu alet senin için ${sayi(s.M, 0)}×${sayi(s.dEt, 0)} gibi davranır.`);
+      if (ciplak) p.push('Göz bebeğin karanlıkta en çok yaklaşık 7 mm açılır (yaşla küçülür). Dürbün ya da teleskop bu ağzı büyütür: 50 mm\'lik bir objektif yaklaşık 51 kat ışık toplar.');
+      else if (s.bos > 0.005) p.push(`Çıkış göz bebeği (göz merceğinden çıkan ışık demetinin çapı) ${sayi(s.cik, 2)} mm, senin göz bebeğin ${sayi(s.p, 1)} mm: demetin dışı irise çarpar ve ışığın %${sayi(s.bos * 100, 0)}'i boşa gider. Ağzın yalnız ${sayi(s.dEt, 0)} mm'si çalışır; bu alet senin için ${sayi(s.M, 0)}×${sayi(s.dEt, 0)} gibi davranır.`);
       else p.push(`Çıkış göz bebeği (göz merceğinden çıkan ışık demetinin çapı) ${sayi(s.cik, 2)} mm; ${sayi(s.p, 1)} mm'lik göz bebeğine tümüyle girer, ışık boşa gitmez.`);
       p.push(`Gökyüzü aletten çok kadir götürür: aynı aletle karanlık gökte ${sayi(lmK, 1)}, kent göğünde ${sayi(lmS, 1)} kadir. Aradaki ${sayi(fark, 1)} kadiri aletle kazanmak için ağız çapını ${sayi(katCap, 1)} katına çıkarman gerekirdi. Kentte gök parıltısı yıldızla birlikte toplanır; büyük ağız ikisini birden büyütür.`);
       const yararli = 2 * s.D;
-      p.push(`Büyütme ${sayi(s.M, s.M < 10 ? 1 : 0)}×: gerçek alan ${sayi(s.tf, 2)}°. Büyütme ayrıntıyı açmaz, açılmış ayrıntıyı gözüne gösterir: gözün 1′'lik keskinliği gökte ${sayi(s.goz, 1)}″'ye, ağzın kırınım sınırı ${sayi(s.ray, 1)}″ (Rayleigh; Dawes ${sayi(s.daw, 1)}″). ${s.goz > s.ray ? 'Burada sınırı gözün çiziyor; daha çok büyütme daha ince ayrıntı gösterir ama alanı daraltır, demeti inceltir ve elin titremesini de büyütür.' : 'Burada sınırı ağız çiziyor; daha çok büyütme yeni ayrıntı getirmez.'}${s.M > yararli ? ` En yüksek yararlı büyütmeyi (2 × D ≈ ${sayi(yararli, 0)}×) aştın.` : ''}`);
+      if (ciplak) p.push(`Çıplak göz büyütmez: gözün yaklaşık 1′'lik (60″) keskinliği, gökte ayırabildiğin en küçük açıdır. Ülker'in parlak yıldızlarını tek tek görürsün, ama birbirine 1′'den yakın çiftler tek nokta olur.`);
+      else p.push(`Büyütme ${bFmt(s.M)}×: gerçek alan ${sayi(s.tf, 2)}°. Büyütme ayrıntıyı açmaz, açılmış ayrıntıyı gözüne gösterir: gözün 1′'lik keskinliği gökte ${sayi(s.goz, 1)}″'ye, ağzın kırınım sınırı ${sayi(s.ray, 1)}″ (Rayleigh; Dawes ${sayi(s.daw, 1)}″). ${s.goz > s.ray ? 'Burada sınırı gözün çiziyor; daha çok büyütme daha ince ayrıntı gösterir ama alanı daraltır, demeti inceltir ve elin titremesini de büyütür.' : 'Burada sınırı ağız çiziyor; daha çok büyütme yeni ayrıntı getirmez.'}${s.M > yararli ? ` En yüksek yararlı büyütmeyi (2 × D ≈ ${sayi(yararli, 0)}×) aştın.` : ''}`);
       if (Math.abs(s.D - 50) < 0.5 && Math.abs(s.M - 7) < 0.05) p.push('7×50 neden klasik bir gökyüzü dürbünü? 7,14 mm\'lik demet genç bir gözün gece göz bebeğine denk gelir, 6,4–7°\'lik alan Ülker\'i ve Avcı\'nın kemerini tek bakışta alır ve 7× elde titremeden tutulur (elde pratik sınır yaklaşık 10× sayılır).');
-      p.push(s.sigar ? `${s.hd.kisa} (${sayi(s.hd.boyut_derece, 2)}°) ${sayi(s.tf, 2)}°'lik alana sığıyor.` : `${s.hd.kisa} (${sayi(s.hd.boyut_derece, 2)}°) ${sayi(s.tf, 2)}°'lik alana sığmıyor: geniş hedefler dürbünün, küçük ve parlak hedefler teleskobun işidir.`);
+      if (!ciplak) p.push(s.sigar ? `${s.hd.kisa} (${sayi(s.hd.boyut_derece, 2)}°) ${sayi(s.tf, 2)}°'lik alana sığıyor.` : `${s.hd.kisa} (${sayi(s.hd.boyut_derece, 2)}°) ${sayi(s.tf, 2)}°'lik alana sığmıyor: geniş hedefler dürbünün, küçük ve parlak hedefler teleskobun işidir.`);
       if (s.LM > s.tam + 0.05) p.push(`Not: uygulamanın bu alandaki yıldız verisi ${sayi(s.tam, 1)} kadirde bitiyor; gerçekte ${sayi(s.LM, 1)} kadire kadar daha çok yıldız görürdün.`);
       S('dbMetin').innerHTML = p.map(x => '<p>' + U.kacis(x) + '</p>').join('');
     }
