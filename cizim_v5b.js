@@ -45,7 +45,7 @@
 
   /* d37 · bölüm 3: eski "küçük sıkı çekirdek" resmi ile Juno sonrası seyrelmiş çekirdek; dış biçim gerçek basıklıkla (0,065). */
   C.ekle('d37-ic-yapi', {
-    ders: 'd37', bolum: 3, oran: 1.1,
+    ders: 'd37', bolum: 3, oran: 1.13,
     baslik: 'Jüpiter\'in içi: eski resim ve Juno\'dan sonra',
     aciklama: 'Gezegen ortadan ikiye bölündü. Sol yarı eski ders kitabı resmidir: hidrojen ve helyumdan bir zarfın ortasında kaya ve buzdan küçük, sıkı bir çekirdek. Sağ yarı Juno\'nun çekim ölçümlerine uyan modellerdir: ağır elementler merkezden dışa doğru seyrelerek, belki yarıçapın yarısına kadar dağılmıştır; küçük sıkı bir çekirdek henüz dışlanamıyor. İki yarıda da metalik hidrojen merkeze giden yolun yaklaşık üçte birinden içeride başlar. Dış biçim gerçek basıklıkla, katman sınırları ve 3000 kilometrelik jet derinliği ölçekli çizildi; eski çekirdeğin boyu ve seyrelmiş çekirdeğin tonları şematiktir. Merkezde basınç Dünya atmosferinin 50 ile 100 milyon katıdır.',
     kaynak: [KAYNAK.jupKart, KAYNAK.liu],
@@ -64,8 +64,8 @@
       /* sağ: seyrelmiş çekirdek — merkeze doğru koyulaşan halkalar, dış sınırı belirsiz (kesik) */
       [0.5, 0.4, 0.3, 0.2, 0.1].forEach(f => { s += E(f, false, { dolgu: R.gezegen, saydam: 0.2, renk: 'none' }); });
       s += E(0.5, false, { renk: R.gezegen, kalin: 1.3, kesik: '5 4' });
-      s += S.daire(cx, cy, 0.075 * ra, { renk: R.metin, kalin: 1.2, kesik: '3 3' });
-      s += S.yazi(cx + 2, cy + 5, '?', { boy: 14, kalin: true });
+      s += S.yol(`M${cx},${n2(cy - 0.075 * ra)} A${n2(0.075 * ra)},${n2(0.075 * ra)} 0 0 1 ${cx},${n2(cy + 0.075 * ra)}`, { renk: R.metin, kalin: 1.2, kesik: '3 3' });
+      s += S.yazi(cx + 2.5, cy + 5, '?', { boy: 13, kalin: true });
       /* sağ: jet akımları, 3000 km (yarıçapın %4,2'si) */
       const fj = 1 - 3000 / 71492 / 2;
       s += S.yol(`M${cx},${n2(cy - rb * fj)} A${n2(ra * fj)},${n2(rb * fj)} 0 0 1 ${cx},${n2(cy + rb * fj)}`, { renk: R.uyari, kalin: n2(ra * 3000 / 71492), saydam: 0.75 });
@@ -73,7 +73,7 @@
       s += S.elips(cx, cy, ra, rb, { renk: R.metin, kalin: 1.5 });
       s += S.cizgi(cx, cy - rb - 8, cx, cy + rb + 8, { renk: R.metin, kalin: 1.2, kesik: '4 3' });
       /* işaretler */
-      s += isaret(S, cx - ra * 0.84, cy, 1) + isaret(S, cx - ra * 0.42, cy, 2) + isaret(S, cx - 34, cy + 2, 3);
+      s += isaret(S, cx - ra * 0.84, cy, 1) + isaret(S, cx - ra * 0.4, cy - 44, 2) + isaret(S, cx - 34, cy + 2, 3);
       s += S.cizgi(cx - 25.5, cy + 2, cx - ra * 0.14 + 2, cy + 2, { renk: R.metin, kalin: 1 });
       s += isaret(S, cx + ra * 0.33, cy - 26, 4) + isaret(S, cx + 30, cy + 24, 5);
       s += S.cizgi(cx + 22, cy + 18, cx + 9, cy + 8, { renk: R.metin, kalin: 1 });
@@ -91,39 +91,39 @@
 
   /* d37 · bölüm 7: Büyük Kırmızı Leke'nin uzun ekseni yıllara göre (ölçekli) ve yandan kesiti (ölçekli). */
   C.ekle('d37-kirmizi-leke', {
-    ders: 'd37', bolum: 7, oran: 0.94,
+    ders: 'd37', bolum: 7, oran: 0.95,
     baslik: 'Büyük Kırmızı Leke küçülüyor ve çok yassı',
     aciklama: 'Üstteki çubuklar lekenin uzun eksenidir ve aynı ölçekte çizildi. 1879\'da yaklaşık 39.000 kilometre, 1979\'da Dünya çapının iki katı kadar, 2017\'de 16.350, bugün yaklaşık 14.000 kilometre. Kesik dikey çizgi Dünya\'nın çapıdır, 12.756 kilometre: leke artık bir Dünya çapından biraz büyük. Alttaki kesit de ölçeklidir: 14.000 kilometre genişliğindeki leke bulut tepelerinin yalnızca 200 ile 500 kilometre altına iner, onu besleyen jet akımları ise yaklaşık 3000 kilometre derindedir. Bu oranda 28 santimetrelik bir pizza yaklaşık 1 santimetre kalınlıkta olurdu.',
     kaynak: [KAYNAK.earthskyGrs, KAYNAK.jupKart],
     ciz(S) {
-      const R = S.R, x0 = 72, k = 300 / 39000;
+      const R = S.R, x0 = 72, k = 228 / 39000;
       let s = S.yazi(8, 18, 'Uzun eksen (ölçekli)', { boy: 14, kalin: true });
-      const sat = [['1879', 39000, '≈39.000 km', true], ['1979', 25512, '≈25.500 km', true], ['2017', 16350, '16.350 km', false], ['bugün', 14000, '≈14.000 km', false]];
-      sat.forEach(([yil, L, t, ic], i) => {
+      const sat = [['1879', 39000, '≈39.000 km'], ['1979', 25512, '≈25.500 km'], ['2017', 16350, '16.350 km'], ['bugün', 14000, '≈14.000 km']];
+      sat.forEach(([yil, L, t], i) => {
         const y = 36 + i * 32, w = L * k;
         s += S.yazi(x0 - 8, y + 13, yil, { boy: 14, hiza: 'end', kalin: i === 3 });
         s += S.kutu(x0, y, w, 17, { dolgu: R.uyari, renk: 'none', saydam: i === 3 ? 0.9 : 0.55 }, 8);
-        s += ic ? S.zeminliYazi(x0 + w - 10, y + 13, t, { boy: 13, hiza: 'end' }) : S.yazi(x0 + w + 8, y + 13, t, { boy: 13 });
+        s += S.yazi(x0 + w + 8, y + 13, t, { boy: 13 });
       });
       const xd = x0 + 12756 * k;
       s += S.cizgi(xd, 28, xd, 166, { renk: R.metin, kalin: 1.5, kesik: '5 4' });
       s += S.yazi(xd, 182, 'Dünya\'nın çapı: 12.756 km', { boy: 13, hiza: 'middle' });
       /* yandan kesit */
-      const y0 = 236, k2 = 300 / 14000, xa = 50;
+      const y0 = 252, k2 = 300 / 14000, xa = 50;
       s += S.cizgi(8, 204, 392, 204, { renk: R.cizgi, kalin: 1 });
       s += S.yazi(8, 224, 'Yandan kesit (ölçekli)', { boy: 14, kalin: true });
       s += S.cizgi(14, y0, 386, y0, { renk: R.metin, kalin: 1.3 });
-      s += S.yazi(386, y0 - 6, 'bulut tepeleri', { boy: 13, hiza: 'end', renk: R.soluk });
       s += S.yol(`M${xa},${y0} A150,${n2(500 * k2)} 0 0 0 ${xa + 300},${y0} Z`, { dolgu: R.uyari, renk: R.uyari, kalin: 1, saydam: 0.9 });
       s += S.yol(`M${xa},${y0} A150,${n2(200 * k2)} 0 0 0 ${xa + 300},${y0}`, { renk: R.zemin, kalin: 1, kesik: '3 3' });
-      s += S.cizgi(xa + 150, y0 + 500 * k2 + 1, 238, 266, { renk: R.metin, kalin: 1 });
-      s += S.yazi(242, 270, 'derinlik 200–500 km', { boy: 13 });
+      s += S.cizgi(xa + 150, y0 + 500 * k2 + 1, 238, y0 + 30, { renk: R.metin, kalin: 1 });
+      s += S.yazi(242, y0 + 34, 'derinlik 200–500 km', { boy: 13 });
+      s += S.yazi(14, y0 + 30, 'bulut tepeleri', { boy: 13, renk: R.soluk });
       const yj = y0 + 3000 * k2;
       s += S.cizgi(14, yj, 386, yj, { renk: R.mavi, kalin: 1.6, kesik: '7 4' });
       s += S.yazi(14, yj + 18, 'jet akımları: ~3000 km derine iner', { boy: 13, renk: R.mavi });
-      s += S.ok(xa, y0 - 16, xa + 300, y0 - 16, { renk: R.soluk, kalin: 1, boy: 6 }) + S.ok(xa + 300, y0 - 16, xa, y0 - 16, { renk: R.soluk, kalin: 1, boy: 6 });
-      s += S.zeminliYazi(200, y0 - 12, 'genişlik ≈14.000 km', { boy: 13, hiza: 'middle' });
-      s += S.yazi(8, 350, 'Bu oranda 28 cm\'lik bir pizza ~1 cm kalın olurdu.', { boy: 13, renk: R.soluk });
+      s += S.ok(xa, y0 - 10, xa + 300, y0 - 10, { renk: R.soluk, kalin: 1, boy: 6 }) + S.ok(xa + 300, y0 - 10, xa, y0 - 10, { renk: R.soluk, kalin: 1, boy: 6 });
+      s += S.zeminliYazi(200, y0 - 6, 'genişlik ≈14.000 km', { boy: 13, hiza: 'middle' });
+      s += S.yazi(8, 366, 'Bu oranda 28 cm\'lik bir pizza ~1 cm kalın olurdu.', { boy: 13, renk: R.soluk });
       return s;
     }
   });
@@ -149,7 +149,7 @@
       /* eksen */
       s += S.cizgi(30, ya, 386, ya, { renk: R.soluk, kalin: 1.3 });
       [[1, '1'], [2, '2'], [5, '5'], [10, '10'], [20, '20'], [50, '50'], [100, '100']].forEach(([v, t]) => {
-        s += S.cizgi(X(v), ya, X(v), ya + 5, { renk: R.soluk, kalin: 1 }) + S.yazi(Math.min(X(v), 384), ya + 19, t, { boy: 13, hiza: v === 100 ? 'end' : 'middle', renk: R.soluk });
+        s += S.cizgi(X(v), ya, X(v), ya + 5, { renk: R.soluk, kalin: 1 }) + (v === 1 ? S.zeminliYazi(X(v) + 3, ya + 19, t, { boy: 13, hiza: 'middle', renk: R.soluk, zemin: R.zemin }) : S.yazi(Math.min(X(v), 384), ya + 19, t, { boy: 13, hiza: v === 100 ? 'end' : 'middle', renk: R.soluk }));
       });
       /* halkalar */
       s += S.kutu(X(1.3), ya - 7, X(3.5) - X(1.3), 14, { dolgu: R.soluk, renk: 'none', saydam: 0.5 }, 3);
@@ -210,9 +210,9 @@
       /* işaretler */
       s += isaret(S, cx - J[0] * 0.58, cy + 16, 1) + isaret(S, cx + Sa[0] * 0.3, cy + 44, 2);
       s += isaret(S, cx - J[0] * 0.25, cy - 30, 4) + isaret(S, cx + Sa[0] * 0.12, cy - 14, 3);
-      s += isaret(S, cx + Sa[0] * 0.78, cy - 2, 5);
-      s += S.cizgi(cx + Sa[0] * 0.78 - 7, cy - 6, cx + Sa[0] * 0.62, cy - 20, { renk: R.metin, kalin: 1 });
-      s += isaret(S, cx + Sa[0] * 0.98 + 14, cy + Sa[1] * 0.55, 6);
+      s += isaret(S, cx + 64, cy - 78, 5);
+      s += S.cizgi(cx + 62, cy - 69.5, cx + Sa[0] * 0.6 * Math.cos(0.62), cy - Sa[1] * 0.6 * Math.sin(0.62) - 6, { renk: R.metin, kalin: 1 });
+      s += isaret(S, cx + Sa[0] * 0.925, cy, 6) + isaret(S, cx - J[0] * 0.979 * Math.cos(0.5), cy + J[1] * 0.979 * Math.sin(0.5), 6);
       const g = [[1, 'Jüpiter: metalik hidrojen yolun ~1/3\'ünde başlar'], [2, 'Satürn: metalik hidrojen yolun ~yarısında başlar'],
         [3, 'Bulanık çekirdek: çapın ~%60\'ı, ~55 Dünya kütlesi'], [4, 'Seyrelmiş çekirdek (Jüpiter): belki yarıçapın yarısı'],
         [5, 'Helyum yağmuru: güçlü hipotez, ölçülmedi'], [6, 'Rüzgâr derinliği: Jüpiter ~3000, Satürn ~9000 km']];

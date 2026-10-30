@@ -199,7 +199,7 @@
       s += `<polygon points="${dx},${dy - 7} ${dx + 6},${dy} ${dx},${dy + 7} ${dx - 6},${dy}" fill="${R.zemin}" stroke="${R.metin}" stroke-width="2"/>`;
       s += S.zeminliYazi(dx - 10, dy - 4, '2026 ED138', { boy: 13, hiza: 'end', renk: R.metin, kalin: true });
       s += S.zeminliYazi(dx - 10, dy + 13, 'bugün ≈46 AB', { boy: 13, hiza: 'end', renk: R.metin });
-      s += S.yazi(8, 340, 'Eris (67,86 AB, 44°) bu çizimin çok dışında kalır', { boy: 13, renk: R.soluk });
+      s += S.yazi(8, 340, 'Eris (≈67,7 AB, 44°) bu çizimin çok dışında kalır', { boy: 13, renk: R.soluk });
       return s;
     }
   });
@@ -252,7 +252,7 @@
   C.ekle('d42-oort-kabugu', {
     ders: 'd42', bolum: 6, oran: 1.12,
     baslik: 'Oort bulutu yandan: düz bir kuşak değil, Güneş\'i saran küresel bir kabuk',
-    aciklama: 'Güneş Sistemi\'ne yandan bakıyoruz; Güneş ortadadır ve merkezden uzaklık logaritmiktir: alttaki cetvelde her çentik on kat demektir, yani dış halkalar gerçekte çok daha geniştir. Merkeze yakın, iki yana açılan dar kama Kuiper kuşağıdır: 30 ile 50 astronomi birimi arasında, cisimlerinin çoğu gezegenlerin düzleminden 10 dereceden fazla uzaklaşmaz. Noktalı çember heliopozdur, Güneş ışığı oraya yaklaşık 17 saatte varır. Dış halka Oort bulutudur ve her yönü sarar; uzun dönemli kuyruklu yıldızların gökyüzünün her yönünden gelmesi bu yüzdendir. İç kenarı 2.000 ile 5.000, dış kenarı 10.000 ile 100.000 astronomi birimi arasında tahmin edilir; soluk şeritler bu belirsizliktir. Işık iç kenara 10 ile 28 günde varır. Yıldız işareti, yaklaşık 1,3 milyon yıl sonra Güneş\'e yaklaşık 16.000 astronomi birimi yaklaşacak Gliese 710\'dur. Oort bulutu hiç doğrudan görülmedi; noktalar temsilîdir.',
+    aciklama: 'Güneş Sistemi\'ne yandan bakıyoruz; Güneş ortadadır ve merkezden uzaklık logaritmiktir: alttaki cetvelde her çentik on kat demektir, yani dış halkalar gerçekte çok daha geniştir. Merkeze yakın, iki yana açılan dar kama Kuiper kuşağıdır: 30 ile 50 astronomi birimi arasında, cisimlerinin çoğu gezegenlerin düzleminden 10 dereceden fazla uzaklaşmaz. Noktalı çember heliopozdur, Güneş ışığı oraya yaklaşık 17 saatte varır. Dış halka Oort bulutudur ve her yönü sarar; uzun dönemli kuyruklu yıldızların gökyüzünün her yönünden gelmesi bu yüzdendir. İç kenarı 2.000 ile 5.000, dış kenarı 10.000 ile 100.000 astronomi birimi arasında tahmin edilir; soluk şeritler bu belirsizliktir. Işık iç kenara 10 ile 28 günde varır. Yıldız işareti Gliese 710\'dur: yaklaşık 1,3 milyon yıl sonra Güneş\'e, ESA\'ya göre yaklaşık 16.000, daha yeni bir hesaba göre yaklaşık 12.800 astronomi birimi yaklaşacak ve bulutun içinden geçecek. Oort bulutu hiç doğrudan görülmedi; noktalar temsilîdir.',
     kaynak: [KAYNAK.oortNasa, KAYNAK.kuiperNasa, KAYNAK.gaiaGliese],
     ciz(S) {
       const R = S.R, cx = 200, cy = 184, r0 = 12, K = 30, rnd = rastgele(1950);
@@ -278,13 +278,13 @@
       s += kama(1) + kama(-1);
       s += S.cizgi(cx - r(50) - 8, cy, cx + r(50) + 8, cy, { renk: R.soluk, kalin: 1, kesik: '2 3' });
       s += S.daire(cx, cy, 5, { dolgu: R.gunes, renk: R.gunes });
-      /* Gliese 710: 16.000 AB, sol altta */
+      /* Gliese 710: ESA 16.000 AB (2026 hesabı 12.800 AB), sol altta */
       const ga = 214 * rad, gr = r(16000), gx = cx + gr * Math.cos(ga), gy = cy - gr * Math.sin(ga);
       s += `<polygon points="${[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map(i => { const rr = i % 2 ? 3.2 : 8, aa = -Math.PI / 2 + i * Math.PI / 5; return Math.round((gx + rr * Math.cos(aa)) * 10) / 10 + ',' + Math.round((gy + rr * Math.sin(aa)) * 10) / 10; }).join(' ')}" fill="${R.yildiz}" stroke="${R.zemin}" stroke-width="1"/>`;
       s += S.cizgi(gx - 5, gy + 6, 40, 358, { renk: R.soluk, kalin: 1 });
       s += S.yazi(8, 374, 'Gliese 710 yıldızı', { boy: 13, renk: R.metin, kalin: true });
       s += S.yazi(8, 390, '≈1,3 milyon yıl sonra', { boy: 13, renk: R.metin });
-      s += S.yazi(8, 406, '≈16.000 AB\'ye gelecek', { boy: 13, renk: R.metin });
+      s += S.yazi(8, 406, '12.800–16.000 AB\'ye gelecek', { boy: 13, renk: R.metin });
       /* etiketler */
       s += S.yazi(8, 20, 'Oort bulutu (hiç görülmedi)', { boy: 14, renk: R.metin, kalin: true });
       s += S.yazi(8, 38, 'iç kenar 2.000–5.000 AB', { boy: 13, renk: R.metin });
@@ -478,8 +478,8 @@
       const X = ek.X;
       let s = ek.svg.replace(/<line[^>]*x1="14" y1="40"[^>]*\/>/, '');
       [1e3, 1e6, 1e9, 1e12].forEach(v => { s += S.cizgi(X(v), 40, X(v), 296, { renk: R.cizgi, kalin: 1, kesik: '2 4' }); });
-      /* Hiroşima: 500 kt ÷ 29 */
-      const hir = 500 / 29;
+      /* Hiroşima: 500 kt ÷ 30 (ders: Çelyabinsk ≈ Hiroşima'nın 30 katı) */
+      const hir = 500 / 30;
       s += S.cizgi(X(hir), 36, X(hir), 46, { renk: R.soluk, kalin: 1.4, kesik: '6 3' }) + S.cizgi(X(hir), 92, X(hir), 296, { renk: R.soluk, kalin: 1.4, kesik: '6 3' });
       s += S.yazi(X(hir) + 4, 30, 'Hiroşima ≈' + tr(hir) + ' kt', { boy: 13, renk: R.soluk });
       const satir = (y, e1, e2, ad, sik, alt, sekil) => {
