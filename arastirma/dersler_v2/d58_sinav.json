@@ -1,0 +1,58 @@
+[
+  {
+    "id": "d58-1",
+    "soru": "Hidrojeni iyonlaştırmak için gereken 13,6 elektronvolt yaklaşık 157.800 K'ye denk gelir. Evren buna rağmen neden ancak yaklaşık 3000 K'de saydamlaştı?",
+    "secenekler": [
+      "Çünkü o dönemde hidrojen henüz oluşmamıştı",
+      "Çünkü her baryona yaklaşık 1,7 milyar foton düşüyordu; bu kalabalığın içindeki küçük yüksek enerjili kesir bile oluşan atomları hemen yeniden iyonlaştırıyordu",
+      "Çünkü karanlık madde fotonları tutuyordu",
+      "Çünkü 3000 K'de fotonların ortalama enerjisi 13,6 elektronvoltu aşıyordu"
+    ],
+    "dogru": 1,
+    "aciklama": "3000 K'de tipik foton enerjisi yalnızca yaklaşık 0,26 elektronvolttur. Ama fotonlar baryonlardan milyarlarca kat fazla olduğu için, ortalamanın çok üstünde enerjili küçük bir kesir bile atomları bozmaya yetiyordu. Atomlar ancak sıcaklık yaklaşık 3000 K'ye inince kalıcı oldu.",
+    "ders": "d58",
+    "bolum": 5
+  },
+  {
+    "id": "d58-2",
+    "soru": "COBE'nin FIRAS aleti 1990'da neyi gösterdi?",
+    "secenekler": [
+      "Arka plan ışımasının tayfının kusursuz bir kara cisim olduğunu; sapma on binde bir düzeyinde bile yoktu",
+      "Arka plan ışımasında ilksel kütleçekim dalgalarının B kipi izini",
+      "Evrenin düz olduğunu gösteren bir derecelik lekeleri",
+      "Işımanın sıcaklığının 3,5 K olduğunu"
+    ],
+    "dogru": 0,
+    "aciklama": "FIRAS gökyüzünü uydunun içindeki sıcaklığı bilinen bir kara cisimle karşılaştırdı; Nobel Komitesi'ne göre ilk sonuç dokuz dakikalık gözlemden sonra geldi. Wikipedia'ya göre tayf on binde bir düzeyinde sapma göstermedi ve sıcaklık 2,726 K bulundu. Bir derecelik lekeler BOOMERanG'in, 3,5 K Penzias ve Wilson'ın sonucudur.",
+    "ders": "d58",
+    "bolum": 6
+  },
+  {
+    "id": "d58-3",
+    "soru": "Arka plan ışımasının akustik zirvelerinin 1 : 2 : 3 oranında dizilmesi neyi gösterir?",
+    "secenekler": [
+      "Evrenin kapalı ve eğri olduğunu",
+      "Tohum dalgalanmaların adyabatik olduğunu; bu şişmenin öngörüsüdür ve kozmik sicimleri ana açıklama olmaktan çıkarır",
+      "Karanlık enerjinin zamanla değiştiğini",
+      "Işımanın Samanyolu'nun tozundan geldiğini"
+    ],
+    "dogru": 1,
+    "aciklama": "Adyabatik dalgalanmalarda bütün parçacık türleri aynı yerde aynı oranda fazladır ve zirveler 1 : 2 : 3 dizilir; öbür tür 1 : 3 : 5 verirdi. Gözlemler tamamen adyabatik dalgalanmalarla uyumludur.",
+    "ders": "d58",
+    "bolum": 8
+  },
+  {
+    "id": "d58-4",
+    "soru": "Irmak takımyıldızı yönündeki Soğuk Nokta için hangi kesinlik değerlendirmesi doğrudur?",
+    "secenekler": [
+      "Gözlemle kesinleşmiş bir paralel evren izidir",
+      "Yalnızca WMAP aletinin bir hatasıdır; Planck görmedi",
+      "Askıda: Planck da gördüğü için alet hatası değildir, ama rastlantı olasılığı yaklaşık yüzde 1,85'tir ve süper boşluk açıklaması tartışmalıdır; başka evren önerileri spekülasyondur",
+      "Standart modelin kesin olarak çürütüldüğünü gösterir"
+    ],
+    "dogru": 2,
+    "aciklama": "Soğuk Nokta ortalamadan yaklaşık 70 mikrokelvin soğuk; WMAP'in üç yıllık verisiyle rastlantı olasılığı yüzde 1,85 bulundu. Planck 2013'te benzer anlamlılıkla gördü. Süper boşluk açıklaması için 2015, 2017 ve 2021 çalışmaları farklı yönlerde sonuç verdi. Çok sayıda tuhaflık arandığında böyle bir leke rastlantıyla da beklenebilir.",
+    "ders": "d58",
+    "bolum": 14
+  }
+]
