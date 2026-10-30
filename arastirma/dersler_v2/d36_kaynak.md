@@ -20,7 +20,8 @@ Not: "(d9)", "(d18)", "(d23)" işaretli satırlar o derslerde zaten doğrulanmı
 - Phobos ve Deimos boyutları (birkaç on km) | ESA Facts about Mars
 
 ## Bölüm 2 — InSight
-- İniş 26 Kasım 2018, Elysium Planitia; >1300 deprem; son temas 18 Aralık 2022; bitiş 21 Aralık 2022; panellerde toz | https://www.theweathernetwork.com/ca/news/article/mars-insight-mission-ends-after-nasa-loses-contact-with-lander
+- İniş 26 Kasım 2018, Elysium Planitia; >1300 deprem; bitiş 21 Aralık 2022; panellerde toz | https://www.theweathernetwork.com/ca/news/article/mars-insight-mission-ends-after-nasa-loses-contact-with-lander (bu sayfadaki "as of December 18" son temas tarihi değildir)
+- [Doğrulama 30.10.2026] Son temas 15 Aralık 2022; duyuru 21 Aralık 2022; 1319 deprem | https://www.jpl.nasa.gov/news/nasa-retires-insight-mars-lander-mission-after-years-of-science/ | "The last time InSight communicated with Earth was Dec. 15."
 - Mayıs 2022, büyüklük 4,7; kabuk ortalama 42–56 km; Tharsis ~90; Hellas ~20; U, Th, K'nin %50–70'i kabukta; Doyeon Kim (ETH Zürih), GRL 2023; başlık "Mars has a thick crust" | https://www.universetoday.com/articles/mars-has-a-thick-crust-its-internal-heat-mainly-comes-from-radioactivity
 - Göktaşı çarpması sismik kaynak olarak (18 Eylül 2021) | https://www.ipgp.fr/en/news-and-agenda/news/insight-seismic-data-reveals-a-molten-layer-at-the-base-of-the-martian-mantle/
 
@@ -39,6 +40,7 @@ Not: "(d9)", "(d18)", "(d23)" işaretli satırlar o derslerde zaten doğrulanmı
 
 ## Bölüm 5 — Olympus Mons ve Valles Marineris
 - ~25 km, 624 km (NHM); ~27 km, 600 km (NASA afişi) | (d9) https://www.nhm.ac.uk/discover/planet-mars.html ; https://www.nasa.gov/pdf/173749main_Mars_Poster.pdf
+- [Doğrulama 30.10.2026] MOLA: referans yüzeyinden 21,287 km (bilgi kutusu 21,665 km) → "yaklaşık 21–22 km"; Amazonis ovasından zirveye "approaches 26 km"; ~600 km genişlik; yamaç eğimi "only 5%" (~3°); dış kenarda "escarpment, or cliff, up to 8 km"; makale "tallest" der | https://en.wikipedia.org/wiki/Olympus_Mons
 - 22 km; levha hareketi yok → sıcak nokta yerinde, tek dev volkan; düşük çekim; ortalama eğim ~5° | https://www.worldatlas.com/space/the-largest-volcano-in-the-solar-system.html
 - Kalkan volkanı | (d9) NHM
 - 4000 km, 200 km, 7 km'ye kadar; Büyük Kanyon'un ~10 kat uzunu, 20 kat genişi, 5 kat derini; kabuğun gerilmesi, Tharsis yükselmesi; aşınmayla genişleme; koyu kumların kaynağı Tharsis olabilir (Tithonium Chasma); 20 Temmuz 2022 | ESA Mars Express peers into Mars' Grand Canyon
@@ -46,6 +48,7 @@ Not: "(d9)", "(d18)", "(d23)" işaretli satırlar o derslerde zaten doğrulanmı
 
 ## Bölüm 6 — Kutup başlıkları
 - Kuzey ~1000 km, çoğunlukla su buzu, 1,6 milyon km³ (~2 km düz yayılsa), her kış 1,5–2 m kuru buz; güney ~350 km, ~3 km, ~8 m kalıcı CO₂; %25–30 her yıl çökelir; başka çalışma 3–4 trilyon ton = %12–16; Nisan 2011 gömülü CO₂, üç katman, her biri ~30 m su buzu örtülü; hepsi gaza dönse basınç iki katı; eğiklik artınca atmosfere geçer, rüzgâr güçlenir, sıvı su alanı genişler; katmanlı çökeller buzul çağları, ağaç halkası benzetmesi; kuzey katmanlı çökeller ~821.000 km³, Grönland'ın ~%30'u; SHARAD sarmal oluklar katabatik rüzgârlar + Coriolis; MRO radarı kuzey çökelleri; Mars Express 2018 güney başlığı altında tuzlu su işareti | https://en.wikipedia.org/wiki/Martian_polar_ice_caps
+- [Doğrulama 30.10.2026, yeniden çekildi] %25–30 cümlesi maddede ölçüm/çalışma göstermez; %12–16 (3–4 trilyon ton) "16 yıl" boyunca uzay aracı yörüngelerindeki küçük değişimlerden, 2010 Mars-GRAM öngörüsüyle uyumlu → metne "ölçüme dayanan değer düşük olanıdır" eklendi | https://en.wikipedia.org/wiki/Martian_polar_ice_caps
 - Basınç 4,0–8,7 mbar mevsimsel; atmosfer kütlesi ~2,5 × 10¹⁶ kg | NSSDCA Mars
 - Buz erise 20–30 m | (d9) NHM
 
@@ -69,6 +72,7 @@ Not: "(d9)", "(d18)", "(d23)" işaretli satırlar o derslerde zaten doğrulanmı
 ## Bölüm 10 — MGS ve MAVEN
 - MGS fırlatma Kasım 1996, varış Eylül 1997; MAG/ER, 916 yörünge, 62–124 mil (~100–200 km); Science 30 Nisan 1999; doğu-batı şeritler, en uzun ~1240 mil (~2000 km), Terra Sirenum ve Terra Cimmeria; ~4 milyar yıl önce etkin dinamo, erken durdu; okyanus tabanı yayılmasına benzerlik (olasılık); en güçlü sıcak nokta Dünya ekvator alanının ~1/20'si | https://newswise.com/articles/mars-update-barren-planet-once-hummed-with-magnetism-leaving-tattoos
 - MAVEN fırlatma 18 Kasım 2013, yörünge 22 Eylül 2014; Güneş fırtınalarında kayıp artar; 4,2–3,7 milyar yıl önce iklim geçişi; proton kutup ışıkları; röle; bağlantı 6 Aralık 2025 (son telemetri 4 Aralık); Şubat 2026 inceleme kurulu; 3 Haziran 2026 görev sona erdi | https://en.wikipedia.org/wiki/MAVEN
+- [Doğrulama 30.10.2026] NASA: "unexpected loss of signal Dec. 6, 2025, while passing behind the Red Planet"; görev sonu "Declared June 3, 2026"; inceleme kurulu: kurtarılamaz, bilim ve röle görevini yapamaz | https://science.nasa.gov/maven ; ikinci kaynak Smithsonian (son iletim 6 Aralık, kurul Şubat'ta) https://www.smithsonianmag.com/smart-news/nasa-officially-ends-the-maven-mission-months-after-losing-contact-with-the-mars-orbiter-180988897/ . Not: NASA yörüngeye girişi ABD saatiyle 21 Eylül 2014 yazar; UT ile 22 Eylül
 - Argonun ~%65'i kayıp; CO₂'nin çoğu püskürtmeyle (alt sınır); argon kimyasal tepkimeye girmez, kayaya kilitlenmez; iki izotop karşılaştırması; Jakosky; Science 31 Mart 2017; genç Güneş daha güçlü | https://lasp.colorado.edu/maven/2017/03/30/maven-reveals-most-of-mars-atmosphere-was-lost-to-space/
 - Küresel alanını kaybetti, Güneş rüzgârı atmosferi söktü | (d18) d18.json
 
@@ -102,5 +106,6 @@ Not: "(d9)", "(d18)", "(d23)" işaretli satırlar o derslerde zaten doğrulanmı
 - Akşamdan sabaha Aslan'da kızılımsı nokta | veri/deney/hohmann.json "gercek" (BBC Sky at Night kaynaklı)
 - En yakın 54,6 milyon km, 25,6″, en parlak −2,94; ortalama karşı konum 78,34 milyon km, 17,8″, −2,0 | NSSDCA Mars
 - 13,8″; dürbünde yalnız renkli nokta | (d9) d9.json
+- [HESAP 30.10.2026] astronomy-engine 2.1.19: karşı konum 2027-02-19 15:44 UT (uygulama testi 15:50 UT), −1,21 kadir, 101,4 milyon km, 13,8″, Aslan; en yakın 2027-02-20 00:44 UT (İstanbul 03:44) 101,4 milyon km; Mars–Regulus 26 Kasım 00 UT 1,67° kuzeyde; 31 Aralık −0,11 kadir; sonraki karşı konum 2029-03-25 → "yaklaşık 25 ay"
 - Gökyüzü sekmesi: gezegenlerin kadiri, yüksekliği, takımyıldızı, doğuş-batışı | gok.js gezegenlerBuGece
 - Kırmızılık pas | (d9) NHM

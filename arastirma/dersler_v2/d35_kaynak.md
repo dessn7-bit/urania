@@ -36,6 +36,7 @@ Not: "(d9)" işaretli satırlar d9'da zaten doğrulanmış, bu derste yalnızca 
 - Loblu sarplar yüzlerce mil, bir mile kadar yüksek; Victoria Rupes ~500 km; Caloris 1550 km | Merkür lithograph | "hundreds of miles long and up to a mile high"; "nearly 500 km"
 - Byrne & Klimczak, Nature Geoscience, 16 Mart 2014; 5934 yapı; yarıçap 4,6–7 km küçüldü (4 milyar yıl); Mariner 10 tahmini 1–2 km; loblu sarplar bindirme faylarıyla | https://www.eurekalert.org/news-releases/627608 | "4.6 to 7 km"; "5,934"; "Lobate scarps are cliffs caused by thrust faults"
 - Mariner 10 yüzeyin ~%45'i | Merkür lithograph | "about 45 percent"
+- [Doğrulama 30.10.2026] Sarp yüksekliği "yer yer kilometreyi aşan": EurekAlert "nearly 2 miles high"; lithograph "up to a mile high" (eski metindeki "kilometrelerce" abartılıydı)
 - Yüzey her yerde koyu; kabuk lav örtüleri; ilk kabuk ancak çarpışma kazılarında; grafit "a few percent" (100 km'den yakın veriler); S, Cl, Na, K bol; oyuklar uçucu kaybı, yeni, düşük yansıtıcı malzemede | https://theconversation.com/the-more-we-learn-about-mercury-the-weirder-it-seems-55972 | ilgili cümleler (2016)
 - Kökeni: manto kaybı (dev çarpışma/buharlaşma) en yaygın görüş; ince ayar gerekir; uçucu zenginlik çoklu çarpışmayı sınırlar | https://phys.org/news/2018-09-dense-metal-planets-mercury-rare.html | "most widely accepted"; "feasible but difficult"
 
@@ -89,6 +90,7 @@ Not: "(d9)" işaretli satırlar d9'da zaten doğrulanmış, bu derste yalnızca 
 
 ## Bölüm 10 — Maat Mons
 - 15 Mart 2023 JPL haberi; Herrick (UAF), Hensley (JPL); Science; Atla Regio; Şubat → Ekim 1991, sekiz ay; <2,2 km² → iki katı, bozulmuş, lav gölü; ~200 saat elle tarama; VERITAS ekibi; yüksek çözünürlüklü radar | https://www.jpl.nasa.gov/news/nasas-magellan-data-reveals-volcanic-activity-on-venus/
+- [Doğrulama 30.10.2026, yeniden çekildi] Şubat 1991 baca alanı "less than 2.2 square kilometers" (JPL); metin "2,2 km²'den küçüktü" olarak düzeltildi
 - ~4 km²; içi sıvı mı katı mı bilinmiyor; deprem tetikli duvar çökmesi alternatifi; Dünya'da bu ölçek çökmeler püskürmelerle birlikte | https://www.sci.news/space/venus-ongoing-active-volcanism-11747.html
 - VERITAS hedefleri (deformasyon, ısıl ve kimyasal izler) | https://jpl.nasa.gov/missions/veritas
 
@@ -121,11 +123,21 @@ Not: "(d9)" işaretli satırlar d9'da zaten doğrulanmış, bu derste yalnızca 
 - DAVINCI hedef Aralık 2030, sonda Ocak 2033, 99 milyon $; VERITAS yavaş; EnVision 2033'e kadar kalkmalı yoksa ≥3 yıl; Prockter: "challenge getting all three" | https://space.com/space-exploration/missions/nasas-ambitious-decade-of-venus-exploration-may-bank-on-1-probe-not-everything-can-move-forward | 27 Mart 2026
 - EnVision 25 Ocak 2024 onay, 2031 Ariane 6, VenSAR NASA'dan | https://www.esa.int/Science_Exploration/Space_Science/We_re_heading_for_Venus_ESA_approves_Envision
 - VenSAR bütçe riski (Ocak 2026) | https://space.com/astronomy/venus/will-budget-cuts-force-nasa-to-withdraw-from-europes-next-venus-mission
+- [Doğrulama 30.10.2026] Ekim 2026 güncellemesi (kaynak: Ars Technica 14.10.2026, VEXAG sunumu; aşağıdaki üç ikincil haber aynı bilgiyi verir): DAVINCI fırlatma Aralık 2030, sonda inişi 3 Ekim 2032; VERITAS "has funding and is scheduled for launch in November 2032" (Dan Nunes); NASA EnVision radarından çekildi; EnVision fırlatma 2032 | https://ua.news/en/technologies/nasa-zaplanuvalo-zapusk-davinci-na-gruden-2030-roku-ars-technica (15.10.2026) ; https://www.diariobitcoin.com/noticias/nasa-reactiva-sus-misiones-a-venus-y-adelanta-el-lanzamiento-de-davinci/ (15.10.2026) ; https://beyondtmrw.org/article/things-are-finally-looking-up-for-nasa-s-first-missions-to-venus-in-a-generation (15/16.10.2026) ; https://www.digitaltoday.co.kr/en/view/114860/nasa-to-resume-venus-exploration-in-2030s-moves-up-davinci-restarts-veritas (15.10.2026)
+- ESA'nın Avrupa yapımı radarla devam edeceği | yalnız diariobitcoin ("ESA chose to continue with a European-built radar") — TEK KAYNAK, metinde öyle belirtildi
+- JPL VERITAS sayfası fırlatma "TBD" (30.10.2026'da yeniden çekildi) | https://www.jpl.nasa.gov/missions/veritas
+- Not: Mart 2026 Space.com haberindeki "Ocak 2033 sonda" Ekim haberleriyle güncellendi; Wikipedia EnVision (Mayıs 2026 durumu) hâlâ Kasım 2031 ve VenSAR yazıyor, Ekim 2026 haberlerinden eskidir
 
 ## Bölüm 14 — İstanbul'dan gözlem
 - Merkür en çok 27° ya da biraz fazla; Venüs 45°'den fazla; Merkür uzanımda ~yarı aydınlık, ~8″; birkaç on dakika; 20°'de Venüs %6 hilal ~58″, sabit dürbünle; gündüz arama, binanın gölgesi; geçişler 13.11.2032, 7.11.2039, 7.5.2049 | https://www.cambridge.org/turnleft/pages/the_planets/mercury_and_venus
 - Venüs alt kavuşumda ~41,39 milyon km, ~60,0″; çap 9,7–66,1″; en parlak −4,8 | NSSDCA Venüs
-- Galileo 1610 evreler; Ptolemaios modelini dışlar; ~9,9″ (dolu) – ~68″ (yeni); en parlak ~%28 aydınlık hilal | https://en.wikipedia.org/wiki/Phases_of_Venus
+- Galileo 1610 evreler; Ptolemaios modelini dışlar; ~9,9″ (dolu) – ~68″ (yeni); en parlak ~%28 aydınlık hilal | https://en.wikipedia.org/wiki/Phases_of_Venus (30.10.2026 yeniden çekildi; bu görünüm için hesap %24 → metin "%25–28")
+- [HESAP 30.10.2026] astronomy-engine 2.1.19 (node_modules): Venüs alt kavuşumu (göreli boylam 0) 2026-10-24 03:33 UT = İstanbul 06:33; ABD Doğu saatiyle 23 Ekim 23:33 → "23 Ekim" yazan kaynaklar saat dilimi farkı
+- [HESAP] Venüs en parlak: SearchPeakMagnitude 2026-11-27 01:48 UT, −4,87 kadir, %24,4 aydınlık; 20 Kasım–30 Kasım arası fark < 0,03 kadir (Space.com 29 Kasım, d9 25–27 Kasım ile uyumlu)
+- [HESAP] En büyük batı uzanımı 2027-01-03 17:56 UT, 46,95°, %50, 24,9″, −4,57 kadir (EarthSky −4,3 ve 19 UT verir; metinde iki değer birlikte)
+- [HESAP] 7 Kasım üçlüsü (Venüs, Ay %5, Spika): İstanbul'da 04 UT (Güneş −7,7°, Ay 11,8° yükseklikte) en büyük ikili açı ~4,0°; en küçük ~3,0° (11–12 UT, gündüz). New York şafağında (09–10 UT) ~2,45° → Space.com'un 2,5°'i Amerika içindir
+- [HESAP] Kasım–Aralık 2026 İstanbul, sivil şafakta (Güneş −6°): Venüs 3 Kas 6,7°, 13 Kas 18°, 29 Kas 28°, 3 Oca 27,5°; Merkür 13 Kas 9,1° (0,5 kadir), 20 Kas 12,3° (−0,6), 4 Ara 7,4° (−0,6); Merkür en büyük batı uzanımı 2026-11-20 23:36 UT, 19,6° — 2026'nın sabah görünümleri içinde en yüksek (Nis 4,5°, Ağu 9,7°)
+- [HESAP] Venüs üst kavuşumu 2027-08-11; 1 Haziran 2027 sivil şafakta yükseklik 3,8° → "Haziran'a kadar, ama ufka çok yakın"
 - Alt kavuşum 23 Ekim 2026 | https://whenthecurveslineup.com/2026/10/14/2026-october-23-venus-changes-from-evening-star-to-morning-star/
 - Alt kavuşum 24 Ekim 2026; en büyük batı uzanımı 3 Ocak 2027 19 UT, ~47°, %50, 24,76″, −4,3; sabah göğünde ~Haziran 2027'ye kadar | https://earthsky.org/astronomy-essentials/venus-before-sunrise-greatest-elongation/
 - Venüs sabah göğü 3 Kasım–31 Aralık; en parlak 29 Kasım; hilal sabit dürbünle Kasım'ın çoğu; 7 Kasım Venüs, hilal Ay, Spika 2,5° içinde; Merkür sabahı 13 Kasım–4 Aralık | Space.com 2026 planets

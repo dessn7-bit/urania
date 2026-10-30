@@ -15,12 +15,12 @@ Biçim: iddia | kaynak URL | kaynaktaki ifade (kısa alıntı ya da değer). "(W
 | İddia | Kaynak URL | Kaynaktaki ifade |
 |---|---|---|
 | IAU 24 Ağustos 2006 Prag, üç koşul | https://iauarchive.eso.org/news/pressreleases/detail/iau0603/ | (d19) Resolution 5A; (a) orbit around the Sun, (b) nearly round shape, (c) cleared the neighbourhood |
-| 16 Ağustos 2006 taslağı: Ceres, Charon, Eris gezegen olacaktı; ~12 aday daha | https://en.wikipedia.org/wiki/Plutoed | draft "would have led to three celestial bodies being recognized as planets": Ceres, Charon, Eris; "a further twelve bodies" possible candidates (WebFetch özeti) |
+| 16 Ağustos 2006 taslağı: Ceres, Charon, Eris gezegen olacaktı; ~12 aday daha | https://en.wikipedia.org/wiki/IAU_definition_of_planet | draft "would have led to three celestial bodies being recognized as planets": Ceres, Charon, Eris; "a further twelve bodies" possible candidates (WebFetch özeti) |
 | 6A: Plüton cüce gezegen, Neptün ötesi cisimlerin yeni sınıfının ilk örneği | https://iauarchive.eso.org/news/pressreleases/detail/iau0603/ | (d19) Resolution 6A |
 | Soter ölçütü: cismin kütlesi / bölgeyi paylaşan öteki cisimlerin toplam kütlesi; 100'ü aşan cisim gezegen | https://en.wikipedia.org/wiki/Clearing_the_neighbourhood | "Soter's discriminant µ" ; "regarded as a planet if µ > 100" (WebFetch özeti; özet harf eşlemesini karıştırdı, derste oran yönü tanımın amacına göre yazıldı) |
-| Oylama son gün; 424 astronom iddiası; ~9.000 üye; %5'ten az | https://en.wikipedia.org/wiki/Plutoed | "only 424 astronomers were present for the vote" (iddia olarak); "9000-strong"; vote taken on the final day (WebFetch özeti) |
+| Oylama son gün; 424 astronom iddiası; ~9.000 üye; %5'ten az | https://en.wikipedia.org/wiki/IAU_definition_of_planet | "only 424 astronomers were present for the vote" (iddia olarak); "9000-strong"; vote taken on the final day (WebFetch özeti) |
 | Dilekçe; Stern imzacılar arasında; tanım konuma bağlı; Dünya Jüpiter–Satürn arasında gezegen sayılmazdı; 150 AB ötesinde Neptün boyutu cisim de | https://blogs.nature.com/blog/after-the-iau-its-not-over-yet/ | 12 signatories incl. Mark Sykes, S. Alan Stern; "An Earth orbiting between Jupiter's and Saturn's orbits could not be a planet"; "A Neptune-sized object beyond 150 AU could not be a planet" (WebFetch özeti) |
-| Stern: Dünya, Mars, Jüpiter, Neptün bölgelerini tam temizlemedi; karşı görüş: kütleçekimiyle hâkimler | https://en.wikipedia.org/wiki/Plutoed | Stern argued Earth, Mars, Jupiter, Neptune have not fully cleared; others: major planets dominate orbital zones (WebFetch özeti) |
+| Stern: Dünya, Mars, Jüpiter, Neptün bölgelerini tam temizlemedi; karşı görüş: kütleçekimiyle hâkimler | https://en.wikipedia.org/wiki/IAU_definition_of_planet | Stern argued Earth, Mars, Jupiter, Neptune have not fully cleared; others: major planets dominate orbital zones (WebFetch özeti) |
 | Plütoid, 11 Haziran 2008; Plüton, Haumea, Makemake, Eris | aynı | "On June 11, 2008, the IAU announced ... 'plutoids'" (WebFetch özeti) |
 
 ## Bölüm 2 — Plüton'un bulunuşu
@@ -58,11 +58,11 @@ Biçim: iddia | kaynak URL | kaynaktaki ifade (kısa alıntı ya da değer). "(W
 | Fırlatma 19 Ocak 2006, Atlas V, Cape Canaveral; ~16,26 km/s, Dünya'dan fırlatılan en hızlı (ortalama) | https://wikiwand.com/EN/New_Horizons | "January 19, 2006 ... Atlas V" ; "About 16.26 km/s"; "the fastest (average speed with respect to Earth) human-made object ever launched from Earth" |
 | 14 Temmuz 2015 11:49:57 UTC, 12.500 km | aynı | "July 14, 2015, 11:49:57 UTC, at 12,500 km above the surface" |
 | 3.462 günlük yolculuk | https://en.wikipedia.org/wiki/Pluto | "after a 3,462-day journey" |
-| Dawn ~4 ay önce Ceres yörüngesinde | https://science.nasa.gov/ceres | "about four months before New Horizons flew past Pluto on July 14, 2015" |
+| Dawn ~4 ay önce (6 Mart 2015) Ceres yörüngesinde | https://en.wikipedia.org/wiki/Dawn_(spacecraft) | "It entered orbit around Ceres on March 6, 2015" (doğrulama 30.10.2026); 4 ay = hesap. science.nasa.gov/ceres sayfası bu tarihleri artık vermiyor |
 | Son veri 25 Ekim 2016; ~50 milyar bit (6,25 GB) | https://en.wikipedia.org/wiki/Pluto | "The final data arrived on October 25, 2016: about 50 billion bits (6.25 GB)" |
 | Gerçek renkli fotoğraf 35.445 km'den | aynı | "35,445 km for the July 14, 2015 true-color image" |
 | Arrokoth 1 Ocak 2019 05:33 UTC, 3.500 km | https://wikiwand.com/EN/New_Horizons | "January 1, 2019, 05:33:00 UTC, at 3,500 km" |
-| Temmuz 2024'te 59,3 AB; güç 245 W | aynı | "59.3 AU ... as of July 2024"; "245 watts" |
+| Nisan 2026'da 64,5 AB; güç fırlatmada 245,7 W, 2019'da ~190 W | https://en.wikipedia.org/wiki/New_Horizons | "64.45 AU" (April 2026); "As of January 2019, the power output of the RTG is about 190 watts"; 245.7 W at launch (doğrulama 30.10.2026; eski '245 W, Temmuz 2024' yanlıştı: 245,7 W fırlatma değeri) |
 | Yılda ~500 milyon km; ikinci uzatılmış görevde 54–75 AB; Ekim 2023 planı; çıkış 2028–2029 | https://newhorizons.jhuapl.edu/Kuiper-Belt-and-Beyond/Kuiper-Belt-and-Beyond.php | "about 300 million miles per year"; 54–75 AU; "2028 or 2029" (WebFetch özeti) |
 | Veri hızı ~1,2 kbit/s (469 gün) | (hesap) | 50 × 10⁹ / (469 × 86.400) |
 
@@ -87,7 +87,7 @@ Biçim: iddia | kaynak URL | kaynaktaki ifade (kısa alıntı ya da değer). "(W
 | Yarıçap 1.188 km; kütle 0,01303 × 10²⁴ kg; yoğunluk 1.854 kg/m³; g 0,62; kurtulma 1,21 km/s | https://nssdc.gsfc.nasa.gov/planetary/factsheet/plutofact.html | Volumetric mean radius 1188; Mass 0.01303; Mean density 1854; Surface gravity 0.62; Escape velocity 1.21 |
 | Wikipedia yoğunluk 1,853 ± 0,004; farklılaşmış, kayalık çekirdek, buzlu manto; çekirdek ~1.700 km, ~%70 | https://en.wikipedia.org/wiki/Pluto | (WebFetch özeti) |
 | Brown Üniv. 2016: ≥100 km okyanus; 100–180 km sıvı katman; Haziran 2020 geçmiş okyanus kanıtı | aynı | (WebFetch özeti) |
-| Atmosfer %99 N₂, %0,5 CH₄, %0,05 CO; basınç ~13 mikrobar (NASA) | https://nssdc.gsfc.nasa.gov/planetary/factsheet/plutofact.html | "99% Nitrogen (N2), 0.5% Methane (CH4), 0.05% Carbon Monoxide"; "~13 microbar" |
+| Atmosfer %99 N₂, %0,5 CH₄, %0,05 CO; basınç ~13 mikrobar (NASA); 10–13 mikrobar = Dünya basıncının (~1 bar) yaklaşık yüz binde biri (hesap; eski 'yüz binde birinden az' ifadesi 13 μbar için yanlıştı) | https://nssdc.gsfc.nasa.gov/planetary/factsheet/plutofact.html | "99% Nitrogen (N2), 0.5% Methane (CH4), 0.05% Carbon Monoxide"; "~13 microbar" |
 | Basınç ~1 Pa (10 mikrobar); ~20 pus katmanı 150 km'ye; üst atmosfer ~70 K (beklenen ~100 K); yüzey 33–55 K, ort. 44 K | https://en.wikipedia.org/wiki/Pluto | (WebFetch özeti) |
 | NASA yüzey sıcaklığı 24–38 K | https://nssdc.gsfc.nasa.gov/planetary/factsheet/plutofact.html | "Surface temperature 24–38 K" |
 | Temmuz 2019 örtülmesi: 2016'dan beri %20 düşüş; 2026 çalışması: 2015–2021 sabit, 2022 düşüş | https://en.wikipedia.org/wiki/Pluto | (WebFetch özeti) |
@@ -113,7 +113,7 @@ Biçim: iddia | kaynak URL | kaynaktaki ifade (kısa alıntı ya da değer). "(W
 | %27 daha ağır (Caltech); Dysnomia'dan | https://thisis.caltech.edu/news/dwarf-planet-known-eris-more-massive-pluto-new-data-shows-1293 | (d19) 27 percent more massive |
 | Kasım 2010 örtülmesi, Sicardy, Nature; 2.326 ± 12 km; yoğunluk 2,52; albedo 0,96; Plüton atmosferi örtülmeyle doğrudan kenar ölçümünü engeller; kırağı açıklaması | https://m.phys.org/news/2011-10-faraway-eris-pluto-twin-dwarf.html | "2326 kilometres, with an accuracy of 12 kilometres"; "visible albedo of 0.96"; "2.52 grams per cm^3"; "nitrogen or methane atmosphere condensing as frost" |
 | Wikipedia yoğunluk 2,43; yüzey ~30–56 K; metan buzu Gemini Kuzey, 25 Ocak 2005 | https://en.wikipedia.org/wiki/Eris_(dwarf_planet) | (WebFetch özeti) |
-| a 67,864 AB; q 38,271; Q 97,457; i 44,04°; e 0,436; P 559,07 yıl | aynı | (WebFetch özeti) |
+| a ~67,7 AB; q ~38,1; Q ~97,5; i 44°; P ~558 yıl | aynı | infobox (30.10.2026): a 67.69 AU, q 38.1 AU, Q 97.49 AU, i 44.18°, P 558.4 yıl (barisentrik), 560.7 (yıldızıl); eski 67,864/38,271/97,457 değerleri güncel sayfada yok, ders güncellendi. Kepler: 67,7^1,5 ≈ 557 yıl (hesap) |
 | Dağınık diskin bilinen en büyük üyesi | https://science.nasa.gov/solar-system/kuiper-belt/facts/ | "Eris is the largest known member" (WebFetch özeti) |
 | Yoğunluk ≈ 2.519 kg/m³; Plüton'un 1,36 katı | (hesap) | — |
 
@@ -137,12 +137,12 @@ Biçim: iddia | kaynak URL | kaynaktaki ifade (kısa alıntı ya da değer). "(W
 |---|---|---|
 | 1801 Piazzi; 965 × 961 × 891 km; 9,393 × 10²⁰ kg; %39 | (d19) https://nssdc.gsfc.nasa.gov/planetary/factsheet/asteroidfact.html ; https://en.wikipedia.org/wiki/Asteroid_belt | d19 kaynak tablosu |
 | Dawn fırlatma 27 Eylül 2007; Ceres yörüngesi 6 Mart 2015 | https://science.nasa.gov/ceres | "Sept. 27, 2007"; "March 6, 2015" |
-| Görev sonu: NASA 1 Kasım 2018 duyurusu | https://en.wikipedia.org/wiki/Occator_(crater) | cited NASA article "NASA's Dawn Mission to Asteroid Belt Comes to End", 1 November 2018 (WebFetch özeti) |
+| Görev sonu: NASA 1 Kasım 2018 duyurusu; fırlatma 27 Eylül 2007; Ceres 6 Mart 2015 | https://www.jpl.nasa.gov/news/nasas-dawn-mission-to-asteroid-belt-comes-to-end ; https://en.wikipedia.org/wiki/Dawn_(spacecraft) | JPL haberi Nov. 1, 2018; "On November 1, 2018, NASA announced that Dawn had depleted its hydrazine"; "Launch date: September 27, 2007" (doğrulama 30.10.2026) |
 | Dawn 3,5 yıldan uzun yörüngede | (hesap) | 6 Mart 2015 → 1 Kasım 2018 |
-| Occator 92 km, 4 km derin; Cerealia Facula, 3 km/340 m kubbe; Vinalia Faculae; Haziran 2016 çoğunlukla sodyum karbonat | https://en.wikipedia.org/wiki/Occator_(crater) | "92 kilometres"; "4 km"; "mostly sodium carbonate" (WebFetch özeti) |
+| Occator 92 km, 3 km derin; Cerealia Facula, 3 km/340 m kubbe; Vinalia Faculae; Haziran 2016 çoğunlukla sodyum karbonat | https://en.wikipedia.org/wiki/Occator_(crater) | infobox "92 kilometres", derinlik 3 km (eski satırdaki '4 km' sayfada yok; derste 3 km'ye düzeltildi); "A small dome ... 3 km across and about 340 meters height"; "mostly sodium carbonate" (doğrulama 30.10.2026) |
 | ~20 milyon yıl; tuzlar hidratlı → yakın zamanda; ~40 km derinde, yüzlerce mil genişlikte salamura; üç makale; Cerealia tuzlarının çoğu çarpmanın erittiği sığ katmandan; Raymond: çatlaklar derin rezervuara ulaşabilir | https://newatlas.com/space/reservoir-salty-water-found-ceres-dwarf-planet | "roughly 20 million years ago"; "25 miles (40 km) deep and hundreds of miles wide"; "the impact also created large fractures that could reach the deep, long-lived reservoir" |
 | Ahuna Mons 4 km yüksek, 17 km geniş; en yüksek dağ; sodyum karbonat | https://www.jpl.nasa.gov/images/pia21919-ahuna-mons | "2.5 miles (4 kilometers) high"; "11 miles (17 kilometers) wide" |
-| Karşı konum 7 Ocak 2027, +6,8 kadir, İkizler, δ +29°56', 1,6268 AB | https://hemel.waarnemen.com/planetoiden/2027-01__Ceres__oppositie.html | "7 januari 2027"; "+6.8m"; "Tweelingen"; "+29°56’14”"; "1.6268 AE" |
+| Karşı konum 7 Ocak 2027, +6,8 kadir, İkizler, δ +29°56', 1,6268 AB | https://hemel.waarnemen.com/planetoiden/2027-01__Ceres__oppositie.html ; https://ssd.jpl.nasa.gov/api/horizons.api (1 Ceres, JPL#48) | "7 januari 2027"; "+6.8m"; "Tweelingen"; "+29°56’14”"; "1.6268 AE". Bağımsız sağlama (Horizons + astronomy-engine Güneş boylamı): karşı konum 7 Ocak 2027 ~18 UT; 7 Ocak 00 UT: δ +29°54', V 6,79, Δ 1,627 AB, takımyıldız Gem |
 | Kent çıplak göz ~3, banliyö ~4; dürbün +4,3 kadir | (d9, d11) | d9: "kentsel bir gökte ... +3, banliyöde +4"; d11: "yaklaşık 4,3 kadir" |
 | Yoğunluk ≈ 2.170 kg/m³; h ≈ 79°; Plüton ~1.300 kat sönük | (hesap) | — |
 
@@ -153,7 +153,7 @@ Biçim: iddia | kaynak URL | kaynaktaki ifade (kısa alıntı ya da değer). "(W
 | Edgeworth 1943; Kuiper 1951 (Plüton'u çok kütleli sandı → kuşak olmazdı); Fernández 1980 35–50 AB; Jewitt & Luu 30 Ağustos 1992, 1992 QB1 → Albion | https://en.wikipedia.org/wiki/Kuiper_belt | (WebFetch özeti) "there would not be a Kuiper belt today" |
 | Klasik ~42–48 AB, gözlenenlerin ~üçte ikisi; soğuk: e < 0,1, i ≲ 10°, 44–44,5 AB çekirdek; sıcak: i 30°'ye kadar, ~30 kat kütleli | aynı | (WebFetch özeti) |
 | Plütinolar 39,4 AB, ~200; 1:2 ~47,7 AB; ana gövde 39,5–48 AB; Kuiper uçurumu ~50 AB, modeller 2 kat artış bekliyordu, nedeni bilinmiyor | aynı | (WebFetch özeti) |
-| Ortalama eğiklik 1,86°; ~10°'ye kadar | aynı | "up to about 10° from the ecliptic. The mean inclination is 1.86°" |
+| Kuşağın ortalama düzlemi tutuluma 1,86° eğik; ~10°'ye kadar | aynı | "inclined to the ecliptic by 1.86 degrees" (kuşağın ortalama konumu; tek tek cisimlerin ortalama eğikliği değil, ders buna göre düzeltildi); "as much as ten degrees outside the ecliptic plane" (doğrulama 30.10.2026) |
 | Simit biçimli kalın disk; kaya, su, amonyak, metan buzları | https://science.nasa.gov/solar-system/kuiper-belt/facts/ | "puffed-up disk or donut"; rock, water ice, ammonia, methane (WebFetch özeti) |
 | Çarpışan KBO parçaları → Jüpiter ailesi, ≤20 yıl; sık geçiş → söner | aynı | "loop around in 20 years or less"; "exhaust their volatile ices, leaving them dormant" (WebFetch özeti) |
 | Dağınık disk ~1.000 AB (NASA), Eris en büyük; kısa dönemli kuyruklu yıldızların en olası kaynağı (Wikipedia) | aynı + https://en.wikipedia.org/wiki/Kuiper_belt | "nearly 1,000 AU"; "most likely source of short-period comets" |
@@ -177,7 +177,7 @@ Biçim: iddia | kaynak URL | kaynaktaki ifade (kısa alıntı ya da değer). "(W
 | q 76,19 AB; Q 937 AB; a 506 AB; P ~11.390 yıl; 2026'da 83 AB; günberi ~18 Temmuz 2076 (Horizons 2021), 9 Mart 2076, 14 Aralık 2075 | aynı | (WebFetch özeti) |
 | NASA günöte ~1.200 AB | https://science.nasa.gov/solar-system/kuiper-belt/facts/ | "Sedna's perihelion is 76 AU and its aphelion is about 1,200 AU" |
 | Çap 906 km (ısıl), 1.025 ± 135 km (örtülme); Mars kadar kırmızı; kadir 20,8 | https://en.wikipedia.org/wiki/Sedna_(dwarf_planet) | (WebFetch özeti) |
-| İç Oort bulutu cismi (Brown); IAU yalnız TNO; sednoid; 2012 VP113 q ~80 AB; Leleākūhonua q 65 AB, ~40.000 yıl | aynı | (WebFetch özeti) |
+| İç Oort bulutu cismi (Brown); Küçük Gezegen Merkezi yalnız TNO olarak listeler (Wikipedia: "The Minor Planet Center lists it only as a trans-Neptunian object"; IAU tanınmış listesi 2006'dan beri değişmedi; eski satırdaki 'IAU' düzeltildi); sednoid; 2012 VP113 q ~80 AB; Leleākūhonua q 65 AB, ~40.000 yıl | aynı | (WebFetch özeti) |
 | Köken: küme yıldızı; Morbidelli–Levison ilk ~100 milyon yılda ~800 AB; Batygin–Brown ~6 Dünya kütleli gezegen; küme; yakalanma | aynı | (WebFetch özeti) |
 | Görev çalışmaları: 2011 → 24,48 yıl, Jüpiter yardımı, 2033/2046; 2025 → füzyon 10 yıl, güneş yelkeni 7 yıl | aynı | (WebFetch özeti) |
 | P ≈ 11.380 yıl; ışık oranı ~151 | (hesap) | — |
@@ -187,7 +187,7 @@ Biçim: iddia | kaynak URL | kaynaktaki ifade (kısa alıntı ya da değer). "(W
 | İddia | Kaynak URL | Kaynaktaki ifade |
 |---|---|---|
 | 2016 Brown & Batygin, Sedna dahil 6 cisim; 5–10 Dünya kütlesi; ~550 AB, 400–800 AB; sonra 14 cisim; dik yörüngeler; ters dolanan kentorlar; Batygin 2024 5 sigma | https://www.astronomy.com/science/does-planet-nine-exist/ | (WebFetch özeti) "incompatible with this data at the five-sigma level" |
-| Lawler (OSSOS) ve DES: dört cisim, rastgele dağılımla uyumlu; gözlem yanlılığı; alternatifler (geçen yıldız, düzensiz disk, galaktik gelgit, Mars boyutlu gezegen) | aynı | "Our data for these most extreme objects is completely consistent with a random distribution" |
+| Lawler (OSSOS) ve DES: her biri dört cisim ("each only found four ETNOs"), rastgele dağılımla uyumlu; gözlem yanlılığı; alternatifler (geçen yıldız, düzensiz disk, galaktik gelgit, Mars boyutlu gezegen) | aynı | "Our data for these most extreme objects is completely consistent with a random distribution" |
 | Pan-STARRS araması olası konumların %78'ini eledi; Rubin 8,4 m, en büyük dijital kamera, güney göğü üç gecede bir; Brown: görmeli, kümelenme sorusunu kapatır | aynı | (WebFetch özeti) |
 | Kentorların konumu (dev gezegenler arası) | https://en.wikipedia.org/wiki/Comet_nucleus | centaurs listed among bodies; Chiron Satürn–Uranüs arası (d19) |
 | ED138: Holman (CfA), Napier yazılımı, 13 Ekim; MPC duyurusu 27 Ekim 2026; 46 AB; 30 gözlem/20 gece 4 Mart–11 Temmuz 2026; DECam 2016'ya; ~25° eğik, sıcak klasik; 600–1.500 km; kızılötesi gerekli; Nisan'da ~380 yeni TNO | https://www6.slac.stanford.edu/news/2026-10-27-nsf-doe-vera-c-rubin-observatory-reveals-its-first-dwarf-planet-candidate-our-solar | (WebFetch özeti) "the team estimates that its size is between 600 and 1500 kilometers" |
