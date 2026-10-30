@@ -60,7 +60,7 @@ Arama: d37 için 12 WebSearch (dilute core; GRS yaşı; GRS derinliği; manyetos
 | [P] Güneş'ten aldığının ~2 katı enerji yayar | https://www.britannica.com/place/Jupiter-planet/The-interior | d9_kaynak: "radiate about twice as much energy as it receives from the Sun" |
 | [W] Kelvin-Helmholtz: soğuma iç basıncı düşürür, büzülme, ısınma | https://en.wikipedia.org/wiki/Kelvin%E2%80%93Helmholtz_mechanism | "The cooling causes the internal pressure to drop" |
 | [W] Büzülme 2 cm/yıl (Caltech, haber) | https://www.inkl.com/news/jupiter-is-shrinking-and-used-to-be-twice-as-big-mind-boggling-study-reveals | "currently shrinking by about 2 centimeters per year, according to Caltech" |
-| [W] AYRILIK: Irwin 2009: ~1 mm/yıl, iç ısı akısı 7,485 W/m²; 2 cm "açıkça fazla" | KH Wikipedia sayfası | "only 1 mm/year ... 7.485 W/m²"; "clearly too high" |
+| [ESKİ, v5 düzeltti: "2 cm açıkça fazla" sözü ders kitabının değil eski Wikipedia sürümünün kendi sesi; güncel sayfada yok] [W] AYRILIK: Irwin 2009: ~1 mm/yıl, iç ısı akısı 7,485 W/m²; 2 cm "açıkça fazla" | KH Wikipedia sayfası | "only 1 mm/year ... 7.485 W/m²"; "clearly too high" |
 | [W] Batygin–Adams (Nature Astronomy): bulutsu dağılınca 2–2,5 kat büyük; alan ~50 kat güçlü; Amalthea ve Thebe yörüngeleri | inkl haberi | "2 to 2.5 times the current size"; "about 50 times stronger than today"; "orbits of Jupiter's moons Amalthea and Thebe" — yayın yılı haberde yok, derse yazılmadı |
 | [P] 4,6 milyar yıl | d9 anahtar sayı | "~4,6 milyar yıl" |
 | [H] 5,20² = 27,0; 1361 / 27,0 = 50,3 | — | hesap |
@@ -140,10 +140,10 @@ Arama: d37 için 12 WebSearch (dilute core; GRS yaşı; GRS derinliği; manyetos
 | [W] Galileo 18 Ekim 1989 fırlatma, 7 Aralık 1995 varış, 21 Eylül 2003 Europa'yı korumak için; Europa okyanus kanıtı, Io volkanizması, Ganymede alanı | https://www.jpl.nasa.gov/missions/galileo/ | "launched on October 18, 1989"; "arrived ... on December 7, 1995"; "to prevent an unwanted impact with Europa" |
 | [W] Juno 5 Ağustos 2011 fırlatma | Juno legacy (Galileo sondası sayfası) | "August 5, 2011 launch of Juno" |
 | [P] Juno 4 Temmuz 2016 PDT / 5 Temmuz UTC; amaç köken ve evrim | https://www.jpl.nasa.gov/news/nasas-juno-spacecraft-in-orbit-around-mighty-jupiter/ | d9_kaynak satır 126–127 |
-| [W] 33 tur için tasarlandı | https://www.downtoearth.org.in/science-technology/junos-last-orbit-nasas-jupiter-mission-set-to-end-next-month | "Originally designed for 33 orbits" |
+| [ESKİ, v5 dersten çıkardı: Wikipedia 37 tur der; yerine NASA görev sayfası] [W] 33 tur için tasarlandı | https://www.downtoearth.org.in/science-technology/junos-last-orbit-nasas-jupiter-mission-set-to-end-next-month | "Originally designed for 33 orbits" |
 | [W] Uzatma 30 Eylül 2025'e kadar; 2026 bütçe önerisinde sıfır; kapanma; NASA söyleyemiyor (6 Ekim 2025) | https://www.space.com/space-exploration/missions/nasas-juno-probe-orbiting-jupiter-may-have-come-to-an-end-but-no-one-can-confirm?sfnsn=mo | "through Sept. 30, 2025"; "zeroed-out"; "unable to say whether Juno is still operating" |
-| [W] Mart 2026: hâlâ etkin, gelecek bütçeye bağlı | https://news.flalingo.com/article/nasa-s-juno-probe-faces-cancellation-despite-groundbreaking-jupiter-discoveries-mn5z2vih | "continues to yield extraordinary scientific discoveries" (25 Mart 2026; zayıf kaynak, derste "bir haber" diye anıldı) |
-| BULAMADIM: Ekim 2026 itibarıyla Juno'nun durumunu söyleyen resmî NASA açıklaması | — | derste "askıda" denildi |
+| [ESKİ, v5 yerine NASA/JPL kaynağı koydu] [W] Mart 2026: hâlâ etkin, gelecek bütçeye bağlı | https://news.flalingo.com/article/nasa-s-juno-probe-faces-cancellation-despite-groundbreaking-jupiter-discoveries-mn5z2vih | "continues to yield extraordinary scientific discoveries" (25 Mart 2026; zayıf kaynak, derste "bir haber" diye anıldı) |
+| BULAMADIM (v5 yeniden aradı, hâlâ yok): Ekim 2026 itibarıyla Juno'nun durumunu söyleyen resmî NASA açıklaması | — | derste "askıda" denildi |
 | [P] Europa Clipper 14 Ekim 2024 | https://science.nasa.gov/jupiter | d9_kaynak satır 128 |
 
 ## Bölüm 14 — Açık sorular
@@ -159,3 +159,39 @@ Bu bölüm yukarıdaki satırların özetidir; yeni olgu yok. Sánchez-Lavega'n�
 | [P] Dolunay 1896″ | https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html | d1/d10 kaynak |
 | [H] 206.265 × 139.822 / 652e6 = 44,23″ (ekvator çapıyla 45,2″); 652e6/299.792 = 2175 s = 36,2 dk; 1896/44,2 = 42,9; 44,2 × 7 = 309″; 50,1 × 7 = 351″ < 1896″; 11 Şubat 2027 + 398,88 g = 15–16 Mart 2028 (tahmin); 360/11,862 = 30,3° | — | hesap |
 | [P] Dürbün ve teleskop deneyi; Gökyüzü sekmesi | dersler.js DENEY_AD | "durbun: 'Dürbün ve teleskop'" |
+
+## Bağımsız doğrulama (v5, 2026-10-30)
+
+[DOĞ] = doğrulama ajanı bu oturumda WebFetch ile okudu; [H] = python3 hesabı.
+
+| İddia | Kaynak URL | Kaynaktaki ifade / hesap |
+|---|---|---|
+| [DOĞ] NSSDCA Jüpiter satırlarının hepsi (kütle, hacim, yarıçaplar, 1326, 25,92, 59,5, 0,343, 50,26, 109,9, 0,254, J2 14.736, basıklık 0,06487, 9,9250 sa, 3,13°, 398,88 g, 30,5–50,1″, >>1000 bar, 165 K, 0,16 kg/m³, 27 km, 150/40 m/s, bileşim, 4,30 G·Rj³, 9,4°, 0,119 Rj, 4,0–13,0 G) | https://nssdc.gsfc.nasa.gov/planetary/factsheet/jupiterfact.html | alıntılar birebir tuttu |
+| [H] DÜZELTME: 24,79 ile 25,92 farkı dönüşün savurmasından değil, yarıçap farkından: ikisi de GM/R²; 25,92 × (69.911/71.492)² = 24,79 | — | hesap; JPL GM/R_ekv² = 126.686.534/71.492² = 24,79 (savurma katılmamış) |
+| [DOĞ] Bulut tepesindeki alan Dünya'nınkinin 16–54 katı; 1000 Dünya sığar; BKL "300 yıldan uzun" (sayfa hâlâ böyle diyor) | https://science.nasa.gov/jupiter/jupiter-facts/ | "16 to 54 times as powerful as that of the Earth" |
+| [DOĞ] DÜZELTME: Büzülme ~1 mm/yıl, Irwin 2009 (güncel Wikipedia); "clearly too high" ifadesi eski sürümde makalenin kendi sesi, ders kitabına ait değil | https://en.wikipedia.org/wiki/Kelvin%E2%80%93Helmholtz_mechanism | "approximately 1 mm/year"; "7.485 W/m2" |
+| [DOĞ] 2 cm/yıl (Caltech'e atfen); Batygin–Adams Nature Astronomy, 2–2,5 kat, ~50 kat alan, Amalthea ve Thebe | https://www.inkl.com/news/jupiter-is-shrinking-and-used-to-be-twice-as-big-mind-boggling-study-reveals | "shrinking by about 2 centimeters per year" |
+| [H] Fizik sağlaması: L = 4πR² × 7,5 W/m² ≈ 4,6×10¹⁷ W; dR/dt ≈ L / (0,3 GM²/R²) ≈ 1 mm/yıl — ölçülen ısı akısı 1 mm ile uyumlu | — | kaba virial hesap (derse yazılmadı) |
+| [DOĞ] Helled ve ark.: yarıçapın onlarca yüzdesi, belki yarısından fazlası; ~%30 kütle, ~100 M⊕, kötü tanımlı; küçük sıkı çekirdek dışlanamaz; He ve Ne azalması, He hâl değişimi; "unprecedented accuracy" | https://arxiv.org/pdf/2202.10041 | birebir tuttu |
+| [DOĞ] Liu ve ark. Nature 572, 14 Ağustos 2019: 10 ile birkaç on M⊕; yarıçapın yarısına yakın; kafa kafaya çarpışma; milyarlarca yıl | https://www.nature.com/articles/s41586-019-1470-2 | "ten to a few tens of Earth masses"; "nearly half of Jupiter's radius" |
+| [DOĞ] Galileo sondası helyum kütle payı 0,234 ± 0,005, ilk değerden "slightly lower"; neon Güneş'in 0,10'u; sıcak noktalar bulutsuz; bulutlar amonyak 0,6–0,9, NH₄SH 1–2, su 3–7 bar | https://en.wikipedia.org/wiki/Atmosphere_of_Jupiter | "slightly lower than the Solar System's primordial value"; "severe depletion of neon" |
+| [DOĞ] Juno eski sayfası: 200 km, beklenenden az su, Güneş'e benzer helyum, az neon | https://www.missionjuno.swri.edu:443/legacy/atmospheric-sciences_galileo | birebir tuttu (süreyi "58 minutes" diye yuvarlar) |
+| [DOĞ] Sánchez-Lavega ve ark., GRL (EurekAlert 17 Haz 2024; EarthSky 16 Haz): Kalıcı Leke 1665–1713; 1831 ve sonrası; "at least 190 years"; 1879'da 39.000 km; bugün 14.000 km; rüzgâr kararsızlığı | https://www.eurekalert.org/news-releases/1048686 | "It was not until 1831 and later years" |
+| [DOĞ] EarthSky: 450 km/sa; renk amonyak buzu + morötesi; Creti 1711 "1st depiction ... as red"; Elger 1881; öncül leke | https://earthsky.org/space/jupiters-great-red-spot-is-190-years-old/ | DÜZELTME: Creti'nin 1711 tablosu, 2024 sonucuna göre Kalıcı Leke'yi gösterir; ders buna göre yazıldı |
+| [DOĞ] CNN 2021: 200–500 km, UUİ benzetmesi, 1979'da iki Dünya çapı, ≥1/3 küçülme, jetler ~3000 km, 8 Ferrel benzeri hücre, ≥30 kat derin, 8 ve 5 siklon | https://edition.cnn.com/2021/10/28/world/juno-jupiter-nasa-great-red-spot-scn/index.html | birebir tuttu |
+| [DOĞ] DÜZELTME: Juno sitesi manyetosfer için hem 5,3 milyon km hem ~21 milyon km verir; "150 kat Jüpiter, ~15 kat Güneş" ikincisine uyar (21e6/142.984 = 147; 21e6/1,39e6 = 15) | https://www.missionjuno.swri.edu/jupiter/magnetosphere/ | "About 5.3 million kilometers ... wide on average"; "about 21 million kilometers (12 million miles) wide" |
+| [DOĞ] Magnetosphere of Jupiter: 45–100 RJ; ~20.000 kat moment (girişte ~18.000); 4,170 G; 1000 kg/s; 10–100 TW; 1955 DAM; Pioneer 10 Aralık 1973, 2,9 RJ; dolunayın 5 katı | https://en.wikipedia.org/wiki/Magnetosphere_of_Jupiter | birebir tuttu (URL düzeltildi; eski Io_plasma_torus yönlendirmesiydi) |
+| [DOĞ] SL9 keşif: Wikipedia 24 Mart 1993 gecesi, 46 cm Schmidt; ön görüntüler 15, 17, 19 Mart; Jüpiter'in çevresinde dolanıyordu; güney yarıküreye çarptı; ~60 km/s | https://en.wikipedia.org/wiki/Comet_Shoemaker%E2%80%93Levy_9 | "found on the night of March 24, 1993"; "had been captured by Jupiter and was orbiting the planet" |
+| [DOĞ] Britannica: 25 Mart 1993; 8 Temmuz 1992, 0,31 RJ ≈ 22.100 km bulut tepesinin üstünde; 21 parça; 1,6 km; G 350–600 m, ≥48 milyar ton TNT; 221.000 km/sa | https://www.britannica.com/print/article/687804 | birebir tuttu. NOT: Wikipedia yakın geçişi 7 Temmuz, "40.000 km'nin biraz üstü" verir; derste Britannica tutuldu |
+| [DOĞ] NASA SL9: "Mar. 18, 1993" fotoğrafı; 1,5–2 km; 300 milyon atom bombası; 2000–3000 km, 30.000–40.000 °C; ilk kez; H-He dışı elementler | https://science.nasa.gov/solar-system/comets/p-shoemaker-levy-9 | 18 Mart başka kaynakta doğrulanamadı → derste "doğrulayamadım". NASA'nın element cümlesine "bugünkü atmosfer için" yorumu eklendi (iç kısımdaki ağır elementler oluşumdan, bölüm 3) |
+| [DOĞ] Horner ve Jones: 10⁵ cisim, 10 milyon yıl, 0,01–2,00 MJ, zirve ~0,20 MJ, Jüpiter ≈ 0,05 MJ kalkanı, SPC benzer, "under serious question" | https://arxiv.org/pdf/0806.2795 | birebir tuttu |
+| [DOĞ] Juno: NASA görev sayfası "Active Mission", son güncelleme 4 Temmuz 2026; ana görev başta 2017'de bitecekti, sonra Temmuz 2021, sonra 2025 | https://science.nasa.gov/mission/juno/ | "Active Mission"; "NASA extended its stay to 2025" |
+| [DOĞ] JPL PIA26751: Thebe görüntüsü 1 Mayıs 2026 yakın geçişi, yayın 4 Mayıs 2026 | https://www.jpl.nasa.gov/images/pia26751-nasas-juno-misson-captures-jupiter-moon-thebe/ | "during a close pass on May 1, 2026" |
+| [DOĞ] NASA blog 3 Haziran 2026 (Juno kozmik ışın sonucu) | https://science.nasa.gov/blogs/science-news/2026/06/03/nasas-juno-reveals-new-insights-into-cosmic-ray-origins/ | tarih URL'den |
+| Wikipedia: ikinci uzatma Ekim 2025'te başladı, ~Eylül 2028'e kadar; NASA kaynağıyla doğrulanamadı, derse yazılmadı | https://en.wikipedia.org/wiki/Juno_(spacecraft) | "began in October 2025 with a planned three-year duration" |
+| BULAMADIM: Temmuz–Ekim 2026 arası Juno'nun durumunu ya da görev bitişini söyleyen NASA açıklaması (2 arama) | — | derste "askıda" |
+| [DOĞ] EarthSky karşı konum: 11 Şub 2027 00.21 UTC, Aslan, −2,5, 44,2″, 10 Şub 652 milyon km, 36 ışık dk, dürbünde "bright disk" ve uydular (kuşaklardan söz etmiyor); 4. en parlak | https://earthsky.org/astronomy-essentials/jupiter-at-opposition/ | birebir tuttu |
+| [P] DÜZELTME: Jüpiter "yıl sonuna kadar sabah göğünde" değil; Urania hesabı (gok.js): 29 Eki doğuş 01.26, 31 Ara 21.27; Aslan'a 23 Eyl ~16 UT | d9_kaynak.md v3 [GOK] satırları | d9 ile tutarlı hâle getirildi |
+| [P] Yüksek büyütmeli dürbün bir iki kuşak gösterebilir → 7×50 için "bonus" (soru 13 cevabı d11 ile hizalandı) | https://en.wikipedia.org/wiki/Binoculars | "High-power binoculars can sometimes show one or two cloud belts" |
+| [H] Bütün örnekler yeniden hesaplandı: 1321; 45.259 km/sa; 0,0649; 1047; 50,27; 8,26; 3,06/1,28/1,10; 172 km/yıl; 0,036; 19.790; 5,90/9,39/14,97/26,33; 1,29/3,50; 61,4; 22.163; 44,23″; 36,2 dk; 42,9; 309″; 15 Mart 2028; 30,3° | — | hepsi tuttu |
+| Sözlük çakışması: "Sıcak nokta" tanımı d36 (volkan), d37 (Jüpiter), d48 (radyo galaksisi) anlamlarını kapsayacak biçimde genişletildi. "Ölçek yüksekliği" tanımı zaten atmosfer ve galaksi diskini kapsıyor | — | NOT: müfredat sırasında d36 d37'den önce; sozluk_yap.py ilk dersin tanımını tutar → d36'nın daha dar tanımları kazanır (d36 bu görevin dışında) |

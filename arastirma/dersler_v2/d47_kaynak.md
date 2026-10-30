@@ -219,3 +219,31 @@ Kısaltmalar: MW = https://en.wikipedia.org/wiki/Milky_Way ; GC = https://en.wik
 5. "Sausage" adının nereden geldiği (hız uzayındaki görünüm) kaynakta açıklanmadığı için derste anlatılmadı.
 6. Trumpler'in bulgusunun yılı kaynakta (WP Kapteyn) verilmediği için derste yıl yazılmadı.
 7. Sözlükteki tanımlar kendi cümlelerimizdir; "ölçek yüksekliği" ve "metal bolluğu" tanımları [K].
+
+## Bağımsız doğrulama (v5, 2026-10-30)
+[D] = doğrulayıcı bu oturumda açtı (WebFetch, Wikipedia API vikimetni ya da pdftotext).
+| İddia / düzeltme | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| DÜZELTME (tarih): Gaia DR4 "2026'da bekleniyor, yayımlandığı doğrulanmadı" → 2 Aralık 2026; DR5 en erken 2030 sonu; ders yazılırken (Ekim 2026) DR4 çıkmamıştı | https://www.cosmos.esa.int/web/gaia/release [D] | "Gaia DR4 (based on 66 months of data) 2 December 2026" ; "Gaia DR5 (based on the complete 10.5 years of extended mission data) not before the end of 2030" |
+| Doğrulandı: fırlatma, gözlem sonu, ~2 milyar, >3 trilyon; DR4 5,5 yıl | ESAG [D] | "Launched on 19 December 2013" ; "about two billion stars and other objects" ; "more than three trillion observations" ; DR4 "the mission's first 5.5 years" |
+| DÜZELTME (kavram): 2019 çalışmasının 1,54×10¹²'si 39,5 kpc içindeki kütle değil, uzatılmış virial (toplam) kütledir; 39,5 kpc içinde ölçülen 0,42×10¹². Toplam kütleler arasında 7,5 kat, aynı yarıçapta ~2 kat fark (2,06×10¹¹ toplam ≤ 39,5 kpc içi) | https://arxiv.org/abs/1804.11348 [D] | "M(< 39.5 kpc) = 0.42^{+0.07}_{-0.06} 10^{12} M_⊙" ; "M_virial = 1.54^{+0.75}_{-0.44} 10^{12} M_⊙" ; Wikipedia (MW) bunu "1.54×10^12 solar masses within a radius of about 39.5 kpc" diye birleştiriyor |
+| [H] 1,54e12/2,06e11 = 7,48 ; 4,2e11/2,06e11 = 2,04 | python3 | |
+| Doğrulandı: Jiao 2023 Kepler düşüşü ~19–26,5 kpc, 19,5–26,5 arası ~30 km/s, düz eğri 3σ ile reddedildi, 2,06 (+0,24 −0,13)×10¹¹, üst sınır 5,4×10¹¹; yazarlar Jiao, Hammer, Wang, Wang, Amram, Chemin, Yang | https://arxiv.org/abs/2309.00048 [D] | "rejected with a significance of 3σ" ; "a strict, unsurpassable, limit of 5.4 × 10^11 M⊙" |
+| EK (kesinlik): 3σ ≈ şans olasılığı %0,27 (iki yönlü normal dağılım, [H]); 5σ keşif eşiği d17'de kaynaklı; sistematikler için WANG "the systematic uncertainties will be dominant" | d17.json [Ö] ; WANG [D] | |
+| Doğrulandı: Wang 2020 yedi yöntem ailesi, iki kat dağılım | WANG [D] | "We group the various methods into seven broad classes" ; "measurements in the last two decades show a factor of two scatters" |
+| TUTARLILIK: galaktik yıl — WP metni 240 milyon yıl, WP bilgi kutusu 212 milyon yıl (d7 212'yi "Wikipedia" diye veriyor); derste ikisi de belirtildi | MW vikimetni [D] | "about 240 million years to complete one orbit" ; bilgi kutusu "Sun's Galactic rotation period = 212 Myr" |
+| Doğrulandı: GRAVITY 2019 R0 | https://arxiv.org/abs/1904.05721 [D] | "8178 +- 13(stat.) +- 22(sys.) pc" ; [H] 8178 × 3,2616 = 26.673 ışık yılı |
+| Doğrulandı: Bailer-Jones R0 6,7–9,6 kpc, hız 195–255 km/s, 200–265 Myr, 66,2 ± 3,4 Myr, 8–35 pc, 7 ± 1 ve 9 ± 1 km/s | BJ (PDF) [D] | aynı ifadeler (satır 2178–2246) |
+| Doğrulandı: WP 25.000–28.000 ly, 220 km/s, 18–20 tur, 1/1250, Deneb ~90°, 5–30 pc, 2.000 pc Kahraman, 0,88 trilyon (Bobylev ve Baykova 2023), 30° genişlik, 30 takımyıldız, Arabacı, 63°/60°, saman ve Kuşlar Yolu, Biruni, Tusi, 1610, 1755, 1785, 1960'lar çubuk tahmini, Sbc, 1–5 kpc ve 10–50°, RR Lyrae, Kraken, %40, yeşil vadi, sıcak gaz 1–2,5 milyon K ve kayıp baryon, 511 keV, 640 ışık yılı Parkes, yaş sayıları, 20,2 mag, +5,1/+6,1, Bortle ≤4 | MW vikimetni (API) [D] | ilgili cümleler okundu |
+| DÜZELTME (aritmetik): 0,12 mas = 3,4×10⁻⁸ derece; "milyarda birkaç derece" → "yüz milyonda birkaç derece" | [H] | 0,000122 / 3600 = 3,40×10⁻⁸ |
+| DÜZELTME (kıyas): merkezdeki ~960 AB aralık "Oort bulutu ölçeğinde" → Oort bulutunun 2000–5000 AB'lik iç kenarından kısa | d19.json / d19_kaynak.md [Ö] (NASA Oort cloud facts) | iç kenar 2,000–5,000 AU |
+| DÜZELTME (görünürlük): +5,1 sınır kadiri Bortle 4'e eşit değil; d1 tablosunda 5,1–5,5 sınıf 6'dır (Samanyolu yalnız başucunda). Özet, soru 14 ve Bölüm 15 buna göre: "+5,1 alt sınır; rahat görmek için Bortle ≤4" | d1_kaynak.md [Ö] (WP Bortle scale) ; MW [D] | "6 Bright suburban sky 5.1 – 5.5 ... Milky Way visible only near the zenith" ; "It should be visible if the limiting magnitude is approximately +5.1 or better" ; "Bortle 4 or lower" |
+| Doğrulandı: İstanbul'dan merkez en fazla ~20° (90 − 41 − 29); İstanbul için Bortle sınıfı iddiası derste yok | d7 [Ö] ; MW bilgi kutusu Sgr A* dek. −29° [D] | |
+| Doğrulandı: Spitzer GLIMPSE 16 Ağustos 2005, ~30 milyon, 27.000 ly, 7.000 ly daha uzun, ~45°, Benjamin alıntısı | UW [D] | "some 30 million stars" ; "7,000 light years longer than previously believed" |
+| Doğrulandı: Fermi baloncukları | FERMI [D] | "Each lobe is 25,000 light-years tall" ; "extend 50,000 light-years" ; "100 degrees" ; "a few million years old" |
+| Doğrulandı: Radcliffe Dalgası | RAD [D] | "nine thousand light-years" ; "five hundred light-years" ; "three million solar masses" |
+| Doğrulandı: Kavli 2026 (olay 2026 ortası sonrası; birincil kavliprize.org sayfası izin isteği yanıtsız kaldığı için açılamadı) | NTU [D] | "awarded to Vasily Belokurov, Amina Helmi and Rodrigo Ibata" ; "repeated, violent mergers" ; "Rodrigo Ibata, in 1994, discovered that the Sagittarius dwarf galaxy is still being merged" |
+| Doğrulandı: Erkal–Belokurov 6 cüce, >1,24×10¹¹, fazla tahmin uyarısı ; Feuillet −1,17, hafif ters, 10 Gyr, 10^8,85–9,85 | EB [D] ; FEU [D] | "strong evidence of dwarf galaxy group infall" ; "this lower bound may be overestimated" ; "centered at [Fe/H] = −1.17 dex" |
+| Doğrulandı: Türkiye %80 (2012→2019), sabit bölgeler | TJAA (PDF) [D] | "2019 yılında Türkiye'den uzaya salınan toplam enerji 2012 yılına göre %80 artmıştır" |
+| Örnek hesapları yeniden yapıldı (toz 1,585/6,31/2,51; 112 ve 228 milyon yıl; 41/20 tur; 19,6/23/17,4; 3,5 salınım; 523,6/8,18 pc³; 2,0 pc; M = 2,19/2,98/2,22×10¹¹; 8,2×10⁷; 0,0046 pc = 957 AB; 42,8°; 0,068; 7,1×10⁸–7,1×10⁹; 0,11/0,21/0,60; %4–11) | [H] python3 | hepsi doğru |
+| "Tekboynuz" denetim uyarısı yanlış pozitif; değiştirilmedi | — | |

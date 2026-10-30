@@ -83,8 +83,7 @@
       s += S.zeminliYazi(ax - 6, ay + 38, '48,8 AB', { boy: 13, hiza: 'end', renk: R.metin, kalin: true });
       /* etiketler */
       s += S.zeminliYazi(gx, gy - nep * k - 8, 'Neptün: 30,2 AB (düz)', { boy: 13, hiza: 'middle', renk: R.mavi, kalin: true });
-      const [lx, ly] = nokta(-118);
-      s += S.zeminliYazi(lx + 6, ly + 18, 'Plüton (kesikli)', { boy: 13, renk: R.metin, kalin: true });
+      s += S.yazi(392, 290, 'Plüton (kesikli)', { boy: 13, hiza: 'end', renk: R.metin, kalin: true });
       const [ix, iy] = nokta(nuIc + 4);
       s += S.cizgi(ix - 2, iy - 2, 14, 36, { renk: R.uyari, kalin: 1 });
       s += S.yazi(8, 30, 'Neptün\'ün içinde', { boy: 13, renk: R.uyari, kalin: true });
@@ -97,13 +96,13 @@
         let o = S.yazi(8, y + 5, ad, { boy: 13, renk: R.metin, kalin: true });
         for (let i = 0; i < n; i++) {
           const a1 = X(i * P), a2 = Math.min(X((i + 1) * P), x0 + w + 2);
-          o += S.kutu(a1 + 1, y - 7, a2 - a1 - 2, 14, { dolgu: r, renk: R.metin, kalin: 1 }, 3);
-          o += S.zeminliYazi((a1 + a2) / 2, y + 5, (i + 1) + '. tur', { boy: 13, hiza: 'middle', renk: R.metin, zemin: R.zemin });
+          o += S.kutu(a1 + 1.5, y - 9, a2 - a1 - 3, 18, { renk: r, kalin: 2 }, 4);
+          o += S.yazi((a1 + a2) / 2, y + 5, (i + 1) + '. tur', { boy: 13, hiza: 'middle', renk: R.metin });
         }
         return o;
       };
       s += serit(yN, 3, T / 3, 'Neptün', R.mavi);
-      s += serit(yP, 2, 247.94, 'Plüton', R.vurguSoluk);
+      s += serit(yP, 2, 247.94, 'Plüton', R.vurgu);
       s += S.yazi(x0 + w, yP + 26, '2 × 247,94 ≈ 3 × 165 yıl', { boy: 13, hiza: 'end', renk: R.soluk });
       return s;
     }
@@ -113,7 +112,7 @@
   C.ekle('d41-boyutlar', {
     ders: 'd41', bolum: 8, oran: 0.9,
     baslik: 'Buzlu dünyalar aynı ölçekte: boyları ve yoğunlukları',
-    aciklama: 'Bütün cisimler aynı ölçekte çizildi; altlarında çapları ve gram bölü santimetreküp cinsinden ortalama yoğunlukları var. Dolgu ne kadar belirginse yoğunluk o kadar yüksektir, yani cisim o kadar çok kaya içerir. Plüton 2.376 kilometredir, Eris 2.326 kilometreyle biraz küçüktür ama daha yoğundur: kütlesi Plüton\'unkinden yüzde 27 fazladır. Haumea hızlı dönüşü yüzünden uzun bir elipsoittir; en uzun ve en kısa ekseni çizildi. Makemake ile Sedna\'nın yoğunluğu henüz bilinmiyor, bu yüzden içleri boş ve kesikli çizgilidir; Sedna\'nın çapı da iki yöntemle 906 ile 1.025 kilometre arasında çıkar. Ceres asteroit kuşağındadır. New Horizons\'ın ziyaret ettiği Arrokoth yalnızca 36 kilometredir ve bu ölçekte bir noktadan ibarettir.',
+    aciklama: 'Bütün cisimler aynı ölçekte çizildi; altlarında çapları ve gram bölü santimetreküp cinsinden ortalama yoğunlukları var. Dolgu ne kadar belirginse yoğunluk o kadar yüksektir, yani cisim o kadar çok kaya içerir. Plüton 2.376 kilometredir, Eris 2.326 kilometreyle biraz küçüktür ama daha yoğundur: kütlesi Plüton\'unkinden yüzde 27 fazladır. Haumea hızlı dönüşü yüzünden uzun bir elipsoittir; en uzun ve en kısa ekseni çizildi. Makemake ile Sedna\'nın yoğunluğu henüz bilinmiyor, bu yüzden içleri boş ve kesikli çizgilidir; Sedna\'nın çapı da iki yöntemle 906 ile 1.025 kilometre arasında çıkar. Ceres asteroit kuşağındadır. New Horizons\'ın ziyaret ettiği Arrokoth yalnızca 36 kilometredir; bu ölçekte sağ üst köşedeki bir noktadan ibarettir.',
     kaynak: [KAYNAK.plutoNasa, KAYNAK.erisPhys, KAYNAK.erisWiki, KAYNAK.haumea, KAYNAK.makemake, KAYNAK.ceres, KAYNAK.sedna, KAYNAK.arrokoth],
     ciz(S) {
       const R = S.R, k = 0.042;                                     // birim / km
@@ -132,22 +131,20 @@
         return o;
       };
       let s = '';
-      s += S.yazi(8, 18, 'aynı ölçek · alt satır: yoğunluk (g/cm³)', { boy: 13, renk: R.soluk });
+      s += S.yazi(8, 18, 'aynı ölçek · yoğunluk g/cm³', { boy: 13, renk: R.soluk });
       const y1 = 84, y2 = 250;
       s += cisim(64, y1, 'Plüton', 2376, 2376, '2.376 km', 1.854);
       s += cisim(192, y1, 'Eris', 2326, 2326, '2.326 km', 2.52);
       s += S.yazi(192, y1 + 117, '(yeni değer 2,43)', { boy: 13, hiza: 'middle', renk: R.soluk });
       s += cisim(322, y1, 'Haumea', 2322, 1026, '2.322 × 1.026 km', 2.05);
-      s += cisim(46, y2, 'Makemake', 1400, 1400, '≈1.400 km', null);
-      s += cisim(128, y2, 'Charon', 1212, 1212, '1.212 km', 1.70);
+      s += cisim(50, y2, 'Makemake', 1400, 1400, '≈1.400 km', null);
+      s += cisim(146, y2, 'Charon', 1212, 1212, '1.212 km', 1.70);
       /* Sedna: 906 (ısıl) ve 1025 (örtülme) km */
-      s += cisim(210, y2, 'Sedna', 1025, 1025, '906–1.025 km', null, S.daire(210, y2, 906 * k / 2, { renk: R.metin, kalin: 1, kesik: '2 2' }));
-      s += cisim(290, y2, 'Ceres', 965, 891, '965 × 891 km', 2.17);
-      s += S.daire(362, y2, 1.4, { dolgu: R.metin, renk: 'none' });
-      s += S.cizgi(362, y2 - 6, 362, y2 - 26, { renk: R.soluk, kalin: 1 });
-      s += S.yazi(362, y2 - 32, 'nokta', { boy: 13, hiza: 'middle', renk: R.soluk });
-      s += S.yazi(362, y2 + 66, 'Arrokoth', { boy: 14, hiza: 'middle', renk: R.metin, kalin: true });
-      s += S.yazi(362, y2 + 83, '36 km', { boy: 13, hiza: 'middle', renk: R.metin });
+      s += cisim(246, y2, 'Sedna', 1025, 1025, '906–1.025 km', null, S.daire(246, y2, 906 * k / 2, { renk: R.metin, kalin: 1, kesik: '2 2' }));
+      s += cisim(344, y2, 'Ceres', 965, 891, '965 × 891 km', 2.17);
+      /* Arrokoth: 36 km → 1,5 birim, nokta */
+      s += S.yazi(380, 18, 'Arrokoth, 36 km:', { boy: 13, hiza: 'end', renk: R.metin, kalin: true });
+      s += S.daire(388, 13, 1.5, { dolgu: R.metin, renk: 'none' });
       return s;
     }
   });
@@ -160,10 +157,10 @@
     kaynak: [KAYNAK.kuiperWiki, KAYNAK.kuiperNasa, KAYNAK.plutoNasa, KAYNAK.rubin],
     ciz(S) {
       const R = S.R;
-      const ek = S.eksen({ x: 48, y: 44, w: 330, h: 218 }, { x0: 29, x1: 55, y0: 0, y1: 36 }, {
+      const ek = S.eksen({ x: 58, y: 44, w: 324, h: 218 }, { x0: 29, x1: 55, y0: 0, y1: 36 }, {
         xIsaret: [[30, '30'], [35, '35'], [40, '40'], [45, '45'], [50, '50'], [55, '55']],
         yIsaret: [[0, '0°'], [10, '10°'], [20, '20°'], [30, '30°']],
-        xAd: 'Güneş\'e ortalama uzaklık (AB)', yAd: 'eğiklik', yAdUzak: 38
+        xAd: 'Güneş\'e ortalama uzaklık (AB)', yAd: 'eğiklik', yAdUzak: 46
       });
       const X = ek.X, Y = ek.Y;
       let s = '';
@@ -186,13 +183,13 @@
       s += S.cizgi(X(39.5), yb, X(48), yb, { renk: R.metin, kalin: 1.2 }) + S.cizgi(X(39.5), yb, X(39.5), yb + 6, { renk: R.metin, kalin: 1.2 }) + S.cizgi(X(48), yb, X(48), yb + 6, { renk: R.metin, kalin: 1.2 });
       s += S.yazi((X(39.5) + X(48)) / 2, yb - 7, 'ana gövde 39,5–48 AB', { boy: 13, hiza: 'middle', renk: R.metin });
       /* sol açıklamalar */
-      s += S.yazi(56, Y(31), 'plütinolar (≈200)', { boy: 13, renk: R.mavi });
-      s += S.yazi(56, Y(26), 'sıcak klasik:', { boy: 13, renk: R.metin, kalin: true });
-      s += S.yazi(56, Y(26) + 16, 'eğiklik ≤ 30°', { boy: 13, renk: R.metin });
-      s += S.cizgi(152, Y(26) + 4, X(42) - 2, Y(24), { renk: R.soluk, kalin: 1 });
-      s += S.yazi(56, Y(9.5), 'soğuk klasik:', { boy: 13, renk: R.metin, kalin: true });
-      s += S.yazi(56, Y(9.5) + 16, 'eğiklik ≤ 10°', { boy: 13, renk: R.metin });
-      s += S.cizgi(150, Y(9.5) + 4, X(42) - 2, Y(6), { renk: R.soluk, kalin: 1 });
+      s += S.yazi(66, Y(31), 'plütinolar (≈200)', { boy: 13, renk: R.mavi });
+      s += S.yazi(66, Y(26), 'sıcak klasik:', { boy: 13, renk: R.metin, kalin: true });
+      s += S.yazi(66, Y(26) + 16, 'eğiklik ≤ 30°', { boy: 13, renk: R.metin });
+      s += S.cizgi(162, Y(26) + 4, X(42) - 2, Y(24), { renk: R.soluk, kalin: 1 });
+      s += S.yazi(66, Y(9.5), 'soğuk klasik:', { boy: 13, renk: R.metin, kalin: true });
+      s += S.yazi(66, Y(9.5) + 16, 'eğiklik ≤ 10°', { boy: 13, renk: R.metin });
+      s += S.cizgi(160, Y(9.5) + 4, X(42) - 2, Y(6), { renk: R.soluk, kalin: 1 });
       /* Neptün, Plüton, 2026 ED138 */
       s += S.daire(X(30.2), Y(0), 6, { dolgu: R.mavi, renk: R.zemin, kalin: 1.5 });
       s += S.yazi(X(30.2) + 2, Y(0) - 12, 'Neptün', { boy: 13, renk: R.mavi, kalin: true });
@@ -211,7 +208,7 @@
 
   /* d42 · bölüm 1: 67P'nin hacmi 100 kareye bölündü: %73 boşluk, kalan 27'nin hacimce 2'si toz, 1'i buz → 18 ve 9. */
   C.ekle('d42-67p-gozenek', {
-    ders: 'd42', bolum: 1, oran: 0.8,
+    ders: 'd42', bolum: 1, oran: 0.74,
     baslik: '67P\'nin çekirdeği: dörtte üçü boşluk olan buzlu bir toz yığını',
     aciklama: 'Soldaki 100 kare, Rosetta\'nın incelediği 67P çekirdeğinin hacmini temsil eder. Rosetta\'nın çekim ölçümüne göre hacmin yüzde 72 ile 74\'ü boşluktur; burada 73 kare boş bırakıldı ve içlerinde yalnızca küçük birer nokta var. Kalan 27 karenin hacimce yaklaşık üçte ikisi toz, üçte biri buzdur: 18 dolu kare toz, içinde çarpı olan 9 kare buzdur. Kütlece toz buzdan yaklaşık dört kat fazladır. Karelerin yerleri rastgele seçildi; ölçümler çekirdeğin içinin büyük ölçekte türdeş olduğunu, büyük mağaralar içermediğini gösterir. Sağdaki çubuklar ortalama yoğunluğu karşılaştırır: 67P metreküp başına 533 kilogramdır, suyun 1.000 kilogramlık yoğunluğunun neredeyse yarısı. Bu yüzden kirli kartopu yerine buzlu toz yığını demek daha doğrudur.',
     kaynak: [KAYNAK.patzold, KAYNAK.jorda],
@@ -237,14 +234,14 @@
       const bx = 196, bw = 180, by = 70, K = bw / 1000;
       s += S.yazi(bx, 24, 'ortalama yoğunluk', { boy: 14, renk: R.metin, kalin: true });
       s += S.yazi(bx, 42, '(kg/m³)', { boy: 13, renk: R.soluk });
-      s += S.kutu(bx, by, 1000 * K, 22, { dolgu: R.mavi, saydam: 0.45, renk: R.mavi, kalin: 1.2 }, 2);
-      s += S.zeminliYazi(bx + 6, by + 16, 'su: 1.000', { boy: 13, renk: R.metin, kalin: true });
-      s += S.kutu(bx, by + 34, 533 * K, 22, { dolgu: R.metin, renk: 'none' }, 2);
-      s += S.yazi(bx + 533 * K + 6, by + 50, '67P: 533', { boy: 13, renk: R.metin, kalin: true });
-      s += S.yazi(bx, by + 84, 'sudan neredeyse 2 kat hafif', { boy: 13, renk: R.vurgu, kalin: true });
-      s += S.yazi(bx, by + 116, 'boşluk %72–74', { boy: 13, renk: R.metin });
-      s += S.yazi(bx, by + 134, 'hacimce: toz ≈ 2 × buz', { boy: 13, renk: R.metin });
-      s += S.yazi(bx, by + 152, 'kütlece: toz ≈ 4 × buz', { boy: 13, renk: R.metin });
+      s += S.yazi(bx, by - 4, 'su: 1.000', { boy: 13, renk: R.metin, kalin: true });
+      s += S.kutu(bx, by + 2, 1000 * K, 18, { dolgu: R.mavi, saydam: 0.35, renk: R.mavi, kalin: 1.4 }, 2);
+      s += S.yazi(bx, by + 40, '67P: 533', { boy: 13, renk: R.metin, kalin: true });
+      s += S.kutu(bx, by + 46, 533 * K, 18, { dolgu: R.metin, renk: 'none' }, 2);
+      s += S.yazi(bx, by + 90, 'sudan neredeyse 2 kat hafif', { boy: 13, renk: R.vurgu, kalin: true });
+      s += S.yazi(bx, by + 118, 'boşluk %72–74', { boy: 13, renk: R.metin });
+      s += S.yazi(bx, by + 136, 'hacimce: toz ≈ 2 × buz', { boy: 13, renk: R.metin });
+      s += S.yazi(bx, by + 154, 'kütlece: toz ≈ 4 × buz', { boy: 13, renk: R.metin });
       s += S.yazi(bx, by + 184, 'çekirdek 4,34 × 2,60 × 2,12 km', { boy: 13, renk: R.soluk });
       s += S.yazi(bx, by + 202, 'kare yerleri temsilî', { boy: 13, renk: R.soluk });
       return s;
@@ -295,9 +292,10 @@
       s += S.yazi(392, 38, '10.000–100.000 AB', { boy: 13, hiza: 'end', renk: R.metin });
       s += S.cizgi(330, 44, cx + r(60000) * Math.cos(45 * rad), cy - r(60000) * Math.sin(45 * rad), { renk: R.soluk, kalin: 1 });
       s += S.cizgi(70, 44, cx + r(3500) * Math.cos(135 * rad), cy - r(3500) * Math.sin(135 * rad), { renk: R.soluk, kalin: 1 });
-      s += S.zeminliYazi(cx + r(50) + 12, cy - 10, 'Kuiper kuşağı', { boy: 13, renk: R.vurgu, kalin: true });
-      s += S.zeminliYazi(cx + r(50) + 12, cy + 22, '30–50 AB, ±10°', { boy: 13, renk: R.vurgu });
-      s += S.zeminliYazi(cx, cy - r(hp) - 6, 'heliopoz ≈17 ışık saati', { boy: 13, hiza: 'middle', renk: R.mavi, kalin: true });
+      s += S.yazi(cx, cy + 34, 'Kuiper kuşağı', { boy: 13, hiza: 'middle', renk: R.vurgu, kalin: true });
+      s += S.yazi(cx, cy + 51, '30–50 AB, ±10°', { boy: 13, hiza: 'middle', renk: R.vurgu });
+      s += S.yazi(cx, cy - r(hp) - 7, 'heliopoz', { boy: 13, hiza: 'middle', renk: R.mavi, kalin: true });
+      s += S.yazi(cx, cy - r(hp) + 19, '≈17 ışık saati', { boy: 13, hiza: 'middle', renk: R.mavi });
       /* cetvel: merkezden sağa yarıçap */
       const yc = 384, ux = au => cx + r(au);
       s += S.cizgi(cx, yc, ux(100000), yc, { renk: R.soluk, kalin: 1.2 });
@@ -379,7 +377,7 @@
       /* parlak uçuş: 50 km → 18 km */
       const a = [X(0.04), Y(50)], b = [X(0.46), Y(18)];
       s += S.cizgi(a[0], a[1], b[0], b[1], { renk: R.gunes, kalin: 6, uc: 'round' });
-      s += S.zeminliYazi(X(0.04) + 6, Y(47.5), '≥11 km/s ile girer', { boy: 13, renk: R.metin, kalin: true });
+      s += S.yazi(X(0.04) + 20, Y(47.6), '≥11 km/s ile girer', { boy: 13, renk: R.metin, kalin: true });
       s += S.zeminliYazi(X(0.27) + 12, Y(36.5), 'parlak uçuş: ablasyon', { boy: 13, renk: R.gunes, kalin: true });
       s += S.daire(b[0], b[1], 6, { dolgu: R.zemin, renk: R.metin, kalin: 2 });
       s += S.zeminliYazi(b[0] + 12, b[1] - 2, 'söndü: 18 km, 3,3 km/s', { boy: 13, renk: R.metin, kalin: true });
@@ -406,7 +404,8 @@
       s += S.yazi(X(0.02), Y(0) + 22, 'yer', { boy: 13, renk: R.soluk });
       /* füzyon kabuğu kesiti */
       const fx = 360, fy = 66;
-      s += S.daire(fx, fy, 24, { dolgu: R.yuzey2, renk: R.metin, kalin: 4 });
+      s += S.daire(fx, fy, 24, { dolgu: R.soluk, saydam: 0.45, renk: 'none' }) + S.daire(fx, fy, 24, { renk: R.metin, kalin: 4 });
+      s += S.yazi(fx - 32, fy + 5, 'taş kesiti', { boy: 13, hiza: 'end', renk: R.soluk });
       s += S.yazi(392, fy + 42, 'füzyon kabuğu:', { boy: 13, hiza: 'end', renk: R.metin, kalin: true });
       s += S.yazi(392, fy + 58, 'birkaç mm; içi soğuk', { boy: 13, hiza: 'end', renk: R.metin });
       s += S.yazi(392, 366, 'yatay uzaklık ölçeksiz', { boy: 13, hiza: 'end', renk: R.soluk });
@@ -418,7 +417,7 @@
   C.ekle('d43-ana-cisim', {
     ders: 'd43', bolum: 5, oran: 1.04,
     baslik: 'Göktaşı aileleri: parçalanmış bir gezegenciğin dilimleri',
-    aciklama: 'Üstteki kesit bir zamanlar erimiş ve katmanlaşmış bir gezegenciktir: ağır demir-nikel merkeze çökerek çekirdeği, hafif kaya da çevresinde mantoyu ve kabuğu oluşturmuştur. Böyle bir cisim parçalanınca kabuğundan akondritler, çekirdeğinden demir göktaşları, çekirdekle manto arasındaki sınırdan taş-demirler, örneğin palasitler gelir. Alttaki cisim hiç erimemiştir; içindeki küçük daireler kondrüllerdir ve bu cisimlerden kondritler gelir. Sayılar Haziran 2012\'ye kadar düşerken görülmüş 1.062 göktaşından: 915\'i, yani yaklaşık yüzde 86\'sı kondrit, 86\'sı yaklaşık yüzde 8 ile akondrit, 49\'u yüzde 4,6 ile demir, 11\'i yüzde 1 ile taş-demir. Çizim şematiktir, katmanların kalınlıkları ölçekli değildir.',
+    aciklama: 'Üstteki kesit bir zamanlar erimiş ve katmanlaşmış bir gezegenciktir: ağır demir-nikel merkeze çökerek çekirdeği, hafif kaya da çevresinde mantoyu ve kabuğu oluşturmuştur. Böyle bir cisim parçalanınca kabuğundan akondritler, çekirdeğinden demir göktaşları, çekirdekle manto arasındaki sınırdan taş-demirler, örneğin palasitler gelir. Çekirdekteki çapraz çizgiler, demir göktaşlarında görülen Widmanstätten desenini simgeler. Alttaki cisim hiç erimemiştir; içindeki küçük daireler kondrüllerdir ve bu cisimlerden kondritler gelir. Sayılar Haziran 2012\'ye kadar düşerken görülmüş 1.062 göktaşından: 915\'i, yani yaklaşık yüzde 86\'sı kondrit, 86\'sı yaklaşık yüzde 8 ile akondrit, 49\'u yüzde 4,6 ile demir, 11\'i yüzde 1 ile taş-demir. Çizim şematiktir, katmanların kalınlıkları ölçekli değildir.',
     kaynak: [KAYNAK.dusus, KAYNAK.widman],
     ciz(S) {
       const R = S.R, cx = 124, cy = 150, rnd = rastgele(1969);
@@ -481,15 +480,15 @@
       [1e3, 1e6, 1e9, 1e12].forEach(v => { s += S.cizgi(X(v), 40, X(v), 296, { renk: R.cizgi, kalin: 1, kesik: '2 4' }); });
       /* Hiroşima: 500 kt ÷ 29 */
       const hir = 500 / 29;
-      s += S.cizgi(X(hir), 30, X(hir), 296, { renk: R.soluk, kalin: 1.4, kesik: '6 3' });
+      s += S.cizgi(X(hir), 36, X(hir), 46, { renk: R.soluk, kalin: 1.4, kesik: '6 3' }) + S.cizgi(X(hir), 92, X(hir), 296, { renk: R.soluk, kalin: 1.4, kesik: '6 3' });
       s += S.yazi(X(hir) + 4, 30, 'Hiroşima ≈' + tr(hir) + ' kt', { boy: 13, renk: R.soluk });
       const satir = (y, e1, e2, ad, sik, alt, sekil) => {
         const x1 = X(e1), x2 = Math.max(X(e2), x1 + 10);
-        let o = S.kutu(x1, y - 9, x2 - x1, 18, sekil === 'yer' ? { dolgu: R.uyari, renk: R.metin, kalin: 1.2 } : { dolgu: R.vurguSoluk, renk: R.metin, kalin: 1.2 }, 4);
+        let o = S.kutu(x1, y - 9, x2 - x1, 18, sekil === 'yer' ? { dolgu: R.uyari, renk: R.metin, kalin: 1.2 } : { renk: R.metin, kalin: 2 }, 4);
         const sag = x2 < 250, tx = sag ? x2 + 8 : x1 - 8, h = sag ? 'start' : 'end';
-        o += S.zeminliYazi(tx, y - 2, ad, { boy: 13, hiza: h, renk: R.metin, kalin: true, zemin: R.zemin });
-        o += S.zeminliYazi(tx, y + 15, sik, { boy: 13, hiza: h, renk: R.vurgu, kalin: true, zemin: R.zemin });
-        if (alt) o += S.zeminliYazi(tx, y + 31, alt, { boy: 13, hiza: h, renk: R.soluk, zemin: R.zemin });
+        o += S.yazi(tx, y - 2, ad, { boy: 13, hiza: h, renk: R.metin, kalin: true });
+        o += S.yazi(tx, y + 15, sik, { boy: 13, hiza: h, renk: R.vurgu, kalin: true });
+        if (alt) o += S.yazi(tx, y + 31, alt, { boy: 13, hiza: h, renk: R.soluk });
         return o;
       };
       s += satir(64, 4, 6, 'havada patlama ≈5 kt', 'yılda bir', '');

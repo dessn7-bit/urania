@@ -439,3 +439,15 @@ Kaynak türü: [W] = bu oturumda WebSearch sonucu ya da proje URL'si WebFetch il
 | [DOĞ] Kalkan volkanı tanımı; Olympus Mons | https://en.wikipedia.org/wiki/Shield_volcano | "named for its low profile" ; "eruption of highly fluid (low viscosity) lava" ; "including Olympus Mons on Mars" |
 | [DOĞ] Yeniden okunan diğer kaynaklar (alıntılar tuttu): NASA Merkür ve Venüs litografileri, Jüpiter litografisi (arşiv), Planetary Society Merkür, NHM Mars, NASA Mars uyduları, NASA Uranüs, NASA Triton, CNES Satürn, Sky at Night halka düzlemi, Britannica Jüpiter içi, Toronto AST221 L18, JPL VERITAS, NASA Dünya içi, Wikipedia Binoculars ve Apparent magnitude | (yukarıdaki satırlar) | — |
 | DÜZELTME: "Aynı rehbere göre ... hilal" cümlesi Space.com cümlesinden sonra geldiği için yanlış kaynağı gösteriyordu → "Cambridge rehberine göre" | — | — |
+
+## d37/d38 ile çakışma düzeltmeleri (v5, 2026-10-30)
+
+Yalnız yanlış ya da yanıltıcı cümleler değiştirildi; başlık ve kid alanlarına dokunulmadı.
+
+| İddia | Kaynak URL | Kaynaktaki ifade / hesap |
+|---|---|---|
+| [DOĞ] DÜZELTME (bölüm 8, BKL yaşı): Juno sitesinin "en az 250 yıl"ı kesin bilgi gibi veriliyordu; 2024 çalışmasına göre bugünkü leke 1831'den beri izleniyor, Cassini'nin 1665–1713 Kalıcı Leke'si değil | https://www.eurekalert.org/news-releases/1048686 | "It was not until 1831 and later years that scientists once more observed a clear, oval structure"; "at least 190 years" |
+| [DOĞ] DÜZELTME (bölüm 9, "20.000 kat"): sayı manyetik moment; bulut tepesindeki alan 4–13 G (Dünya ~0,31 G); NASA'nın bugünkü sayfası 16–54 kat der. Aynı hata akilda, anahtar sayı açıklaması ve defter notunda da düzeltildi | https://science.nasa.gov/jupiter/jupiter-facts/ ; https://nssdc.gsfc.nasa.gov/planetary/factsheet/jupiterfact.html | "16 to 54 times as powerful as that of the Earth"; "Surface (1 Rj) field strength: 4.0 - 13.0 Gauss"; [H] (4,30/0,306) × (71.492/6378,137)³ = 19.790 |
+| [DOĞ] DÜZELTME (bölüm 8, Satürn günü): 10 sa 39 dk eski Voyager değeri; 2019 halka sismolojisi 10 sa 33 dk 38 sn. Anahtar sayıdaki JPL tablo değeri (10,66 sa) tablo olarak doğru, değiştirilmedi | https://www.jpl.nasa.gov/news/scientists-finally-know-what-time-it-is-on-saturn/ | "It's 10 hours, 33 minutes and 38 seconds"; "10:39:23" |
+| [DOĞ] DEĞİŞMEDİ (rüzgâr 1800 km/sa): NASA Satürn sayfası 500 m/s (= 1800 km/sa), Wikipedia Voyager 500 m/s; NSSDCA 400 m/s (1440 km/sa). d9 cümlesi doğru; fark d38'de açıklandı | https://science.nasa.gov/saturn/facts/ ; https://en.wikipedia.org/wiki/Saturn | "500 meters per second"; "500 m/s (1,800 km/h)" |
+| [DOĞ] DÜZELTME (bölüm 10, 282.000 km): Sky at Night "spread over 282,000km"; sayı uçtan uca çap (2 × 140.612 = 281.224 km, F halkası dış kenarı). "Genişliğe yayılır" → "uçtan uca ... yayılır". Örnekteki "28 m eninde kâğıt" oranı doğru, değiştirilmedi | https://pds-rings.seti.org/saturn/saturn_rings_table.html | F halkası 139.826–140.612 km |
