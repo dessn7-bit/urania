@@ -93,6 +93,7 @@ Biçim: iddia | kaynak URL | kaynaktaki ifade (kısa alıntı ya da değer). "(W
 |---|---|---|
 | Bozulma yörüngeyi değiştirip Güneş'e gönderir | (d19) https://science.nasa.gov/solar-system/oort-cloud/facts | d19 kaynak tablosu |
 | Gliese 710: Güneş'in %60'ı kütle; ~1,3 milyon yıl; 2,3 trilyon km (~16.000 AB); Oort bulutunun içinden; yavaş; kuyruklu yıldız sağanakları | https://www.esa.int/Science_Exploration/Space_Science/Gaia/Close_encounters_of_the_stellar_kind | "a mass of 60% that of our Sun"; "2.3 trillion km"; "about 16 000 Earth–Sun distances"; "showers of comets" |
+| Gliese 710 daha yeni hesap: ~1,34 milyon yıl, ~12.800 AB; ders aralığı 13.000–16.000 AB | https://en.wikipedia.org/wiki/Gliese_710 | "Fernandez-Puig et al., 2026 (arXiv:2605.16496)": 1.3446 ± 0.0022 Myr; 0.0621 ± 0.0023 pc (12,810 ± 470 AU); kütle 0.595 M☉ (doğrulama 30.10.2026; tek kaynak, ön baskı → derste 'daha yeni bir hesap' diye verildi) |
 | 97 yıldız 150 trilyon km içinde; milyon yılda ~550; ~20'si 30 trilyon km'den yakın; Gaia ilk veri yayını; 31 Ağustos 2017 | aynı | (WebFetch özeti) |
 | 15.400 AB; 0,24 ışık yılı; düşüş ~358.000 yıl | (hesap) | — |
 
@@ -144,8 +145,10 @@ Biçim: iddia | kaynak URL | kaynaktaki ifade (kısa alıntı ya da değer). "(W
 |---|---|---|
 | Hale-Bopp: 23 Temmuz 1995, Hale ve Bopp ayrı ayrı; 7,2 AB; günberi 1 Nisan 1997, 0,914 AB; Dünya 22 Mart 1997, 1,315 AB; −1,8 kadir; Sirius'tan sonra en parlak; 569 gün; önceki rekor 1811, ~9 ay; çekirdek 60 km | https://en.wikipedia.org/wiki/Comet_Hale%E2%80%93Bopp | (WebFetch özeti) |
 | Güneş'e/Dünya'ya çok yaklaşmadan büyük çekirdek sayesinde parlak | https://astronomy.com/science/fizzle-or-sizzle | (WebFetch özeti) |
+| Hale-Bopp çekirdeği: Wikipedia 60 ± 20 km, Astronomy ~40 km | https://en.wikipedia.org/wiki/Comet_Hale%E2%80%93Bopp ; https://astronomy.com/science/fizzle-or-sizzle | "60 ± 20 km"; Astronomy: "about 40 kilometers across" (doğrulama 30.10.2026; kaynaklar ayrışıyor, derste ikisi de verildi) |
 | NEOWISE: 27 Mart 2020; günberi 3 Temmuz 0,29 AB; Dünya 23 Temmuz 0,69 AB; ~1 kadir; çekirdek ~5 km; Temmuz boyunca karanlık gökte çıplak göz; KB ufuk, Büyük Kepçe altı; 45° K kuzeyinde bütün gece; 30 Temmuz ~5 kadir, kent yakını dürbün; dönem ~4.500 → ~6.800 yıl | https://en.wikipedia.org/wiki/Comet_NEOWISE | (WebFetch özeti) |
-| Tsuchinshan-ATLAS: Mor Dağ 9 Ocak 2023; ATLAS G. Afrika 22 Şubat 2023 (7,3 AB); günberi 27 Eylül 2024, 0,39 AB; Dünya 12 Ekim 2024, ~0,47 AB (~71 milyon km); Sekanina parçalanma öngörüsü, sağ kaldı; 1 Ekim ~2 kadir; ileri saçılma 7 kadire kadar, 9,4 Ekim −4 üstü öngörü; dönem: gelişte milyonlarca yıl, gidişte hafif hiperbolik | https://wiki.riteme.site/wiki/C/2023_A3 | (WebFetch özeti) |
+| Tsuchinshan-ATLAS: Mor Dağ 9 Ocak 2023; ATLAS G. Afrika 22 Şubat 2023 (7,3 AB); günberi 27 Eylül 2024, 0,39 AB; Dünya 12 Ekim 2024, ~0,47 AB (~71 milyon km); Sekanina parçalanma öngörüsü, sağ kaldı; 1 Ekim ~2 kadir; ileri saçılma 7 kadire kadar, 9,4 Ekim −4 üstü öngörü; dönem: gelişte milyonlarca yıl, gidişte hafif hiperbolik | https://en.wikipedia.org/wiki/C/2023_A3_(Tsuchinshan%E2%80%93ATLAS) | (WebFetch özeti) |
+| Düzeltme (orijinal Wikipedia, 30.10.2026): ileri saçılma 7 değil "almost 6 magnitudes"; öngörü "peak at over −4 on 9 October"; gerçek tepe COBS −4,9 (9 Ekim); dönem sayfada verilmiyor, gelişte "weakly bound", gidişte "weakly hyperbolic" | https://en.wikipedia.org/wiki/C/2023_A3_(Tsuchinshan%E2%80%93ATLAS) | ders buna göre düzeltildi; 'milyonlarca yıllık' ifadesi kaldırıldı |
 | Ekim ortası – Kasım başı K yarıküre, batı ufku; 71 milyon km; ~80.000 yıllık yörünge | https://amp.cnn.com/cnn/2024/10/09/science/comet-tsuchinshan-atlas-earth | "will be visible to those in the Northern Hemisphere in mid-October through early November"; "around 80,000 years" |
 
 ## Bölüm 13 — Parlaklık tahminleri
@@ -166,6 +169,7 @@ Biçim: iddia | kaynak URL | kaynaktaki ifade (kısa alıntı ya da değer). "(W
 | Borisov: Ağustos 2019 sonu (29/30), amatör Gennadiy Borisov, Kırım (MARGO, Nauchnij), 0,65 m kendi yapımı; e 3,36; ~32 km/s; günberi 8 Aralık 2019, 2,007 AB; çekirdek ≤0,4 km; Şubat–Mart 2020 patlama, kütlenin ~%0,1'i | https://en.wikipedia.org/wiki/2I/Borisov | (WebFetch özeti) |
 | 3I/ATLAS: 1 Temmuz 2025 ATLAS Şili | https://science.nasa.gov/blogs/planetary-defense/2025/07/02/nasa-discovers-interstellar-comet-moving-through-solar-system/ | "July 1, 2025" (WebFetch özeti) |
 | e 6,141; 58 km/s; günberi 29 Ekim 2025, 1,36 AB (NASA blog: ~30 Ekim, 1,4 AB); Dünya 19 Aralık 2025, 1,798 AB; çekirdek muhtemelen <1 km; Mars 3 Ekim 2025, 0,194 AB; Jüpiter 16 Mart 2026, 0,358 AB, Juice koma + toz ve iyon kuyrukları; yaş 7,6–14 (Hopkins) / 3–11 milyar yıl; Loeb önerisi, genel kanı kuyruklu yıldız; Webb CO₂, su, CO; VLT nikel 20 Temmuz 2025, demir yok; Nisan 2026 19,9 kadir; ESA ~5 milyon km; Hubble izleyecek | https://en.wikipedia.org/wiki/3I/ATLAS | (WebFetch özeti) |
+| 3I/ATLAS düzeltme: çekirdek Hubble 0,32–5,6 km, kütleçekim dışı ivmeden 0,520–0,748 km; Juice 4 Kasım 2025'te 0,428 AB'den gözledi (Jüpiter geçişinde değil) | https://en.wikipedia.org/wiki/3I/ATLAS | (doğrulama 30.10.2026) 'büyük olasılıkla 1 km'den küçük' ve 'Juice koma + toz ve iyon kuyrukları' ifadeleri orijinal sayfada doğrulanamadı, ders yumuşatıldı |
 | Yolculuk süreleri 11.400 / 9.400 / 5.200 yıl; 4,2 ışık yılı ≈ 22.000 yıl | (hesap) | 1 ışık yılı ≈ 9,46 × 10¹² km; en yakın sistem yaklaşık 4,2 ışık yılı (d13: Proxima Centauri 4,2; d17: 4,25; d25: 4,24 ışık yılı) |
 
 ## Bölüm 15 — İstanbul'dan gözlem ve gelecek

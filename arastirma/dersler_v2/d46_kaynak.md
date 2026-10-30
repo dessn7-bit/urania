@@ -4,6 +4,7 @@ Biçim: iddia | kaynak URL | kaynaktaki ifade (kısa alıntı ya da değer)
 WF = WebFetch ile bu oturumda açıldı (30 Ekim 2026). "HESAP" satırları python3 ile yeniden yapıldı. "(dNN)" işaretli sayılar mevcut derslerden alındı; tutarlılık için oradaki değer kullanıldı.
 
 ## Bölüm 0 — Her büyük galaksinin kalbinde bir dev
+- Aralık üst ucu "birkaç × 10¹⁰" yapıldı (eski "10¹⁰" dersin kendi 3,6 × 10¹⁰ ve 4,07 × 10¹⁰ örnekleriyle çelişiyordu) | Supermassive black hole: "hundreds of thousands, or millions to billions" | doğrulayıcı düzeltmesi
 - Kütle aralığı yüz binlerce–milyarlarca M☉; klasik alt sınır 10⁵ M☉; neredeyse her büyük galakside | https://en.wikipedia.org/wiki/Supermassive_black_hole (WF) | "hundreds of thousands to billions of solar masses"; "above 10⁵ M☉"; "almost every large galaxy"
 - Schmidt 1963, 3C 273 | aynı sayfa (WF) + d7 | 1963: Schmidt identified redshifted hydrogen lines of 3C 273
 - Salpeter ve Zeldoviç 1964: düşen madde, ~10⁸ M☉ | aynı sayfa (WF) | "1964: Salpeter and Zeldovich proposed..."; "about 10⁸ M☉ was needed"
@@ -40,9 +41,10 @@ WF = WebFetch ile bu oturumda açıldı (30 Ekim 2026). "HESAP" satırları pyth
 - S2 ~16 yıl, 120 AB, ~1400 Rs; Sgr A* 4,3 milyon | d16 (GRAVITY 2018; Wikipedia) | mevcut d16 değerleri
 - VLTI dört 8 m teleskop, tek teleskobun 15 katı ayırma gücü; GRAVITY → GRAVITY+ | https://www.eso.org/public/news/eso2612/ (WF) | "combining light from four 8-metre telescopes"; "15 times the spatial resolution"
 - S301: 8,7 yıl; 1,78 milyar km; ~12 AB; Güneş–Satürn'den %20 uzak; ~25.000 km/s; %8'den fazla c | aynı (WF) | "taking just 8.7 years"; "1.78 billion km"; "about 20% farther than Sun-Saturn"; "over 8% of the speed of light"
-- 2017'den beri izleniyor; son en yakın geçiş 2023 başı; Betelgeuse'den ~2 milyar kat sönük | aynı (WF) | "tracked since 2017"; "last closest approach in early 2023"; "two billion times fainter than Betelgeuse"
+- DÜZELTME (doğrulayıcı): ilk görüş 2023 baharı, yörünge geçmişi eski verilerde 2017'ye kadar izlendi; "izleme 2017'den beri" yanlıştı | eso2612 (doğrulayıcı curl) | "managed to catch a first glimpse of the new star in spring 2023"; "could also trace S301's orbital history back to 2017"
+- 2017'ye kadar geri izlendi; son en yakın geçiş 2023 başı; Betelgeuse'den ~2 milyar kat sönük | aynı (WF) | "tracked since 2017"; "last closest approach in early 2023"; "two billion times fainter than Betelgeuse"
 - Dönen kara delik uzay-zamanı sürükler; yakın ve hızlı dönende güçlü | aynı (WF) | frame dragging nitel anlatım
-- En az iki tam tur; ~10 yıl içinde ölçüm; sonraki geçiş 2031; MICADO/ELT | aynı (WF) | "Observing at least two complete orbits of S301"; "within about 10 years"; 2031
+- En az iki tam tur; ~10 yıl içinde ölçüm; sonraki geçiş 2031; MICADO/ELT (akilda'daki "2030'ların ilk yarısı" yazarın çıkarımıydı, ESO'nun "next 10 years" ifadesiyle değiştirildi) | aynı (doğrulayıcı curl ile yeniden açtı) | "Observing at least two complete orbits of S301"; "within about 10 years"; 2031
 - Haberler: 2026-08-19-s301-sgra-donus | veri/haberler.json | proje dosyası
 - Sgr A* çevresinde ışık hızının ~%30'uyla dönen sıcak noktalar | Supermassive black hole (WF) | "hot spots orbit at about 30% of light speed"
 - Örnek: a ≈ 688 AB; S2 a ≈ 1.030 AB; e ≈ 0,983; v ≈ 25.200 km/s; ~140 Rs | HESAP | Kepler a³ = M P²; vis-viva
@@ -52,6 +54,7 @@ WF = WebFetch ile bu oturumda açıldı (30 Ekim 2026). "HESAP" satırları pyth
 - Sgr A*'ın dönmesi bekleniyor, değer yok | eso2612 (WF) | "astronomers predict Sgr A* spins"; no numerical spin value
 - ISCO: aynı yönde içe, en hızlıda ufka kadar; ters yönde dışa | https://en.wikipedia.org/wiki/Black_hole (WF) | "moved inwards for particles orbiting in the same direction"; "can be as close as at the event horizon itself"; outwards for retrograde
 - Ergosfer: yerinde durmanın imkânsız olduğu bölge; Penrose süreciyle dönme enerjisi | aynı (WF) | "the region of spacetime in which it is impossible to stay still"; Penrose process
+- Verim %5,7–%42 (dönmeye göre); %32 = Thorne sınırı a = 0,998 | https://arxiv.org/abs/1110.0687 (Bambi 2011, Phys. Lett. B 705, 5; doğrulayıcı PDF'i açtı) | "η = 0.057 for a nonrotating BH, η = 0.32 for a BH rotating at the Thorne's limit (i.e. a∗ = 0.998) [Thorne 1974, ApJ 191, 507], and η = 0.42 for an extreme BH (i.e. a∗ = 1)". HESAP (Bardeen–Press–Teukolsky ISCO formülü, doğrulayıcı): a = 0 → 0,0572; a = 0,998 → 0,321; a → 1 → 0,421; ters yönde a = −1 → 0,038.
 - Verim %5,7–%42; enerjinin ~%90'ı 20 kara delik yarıçapı içinde | aynı (WF) | "between 5.7% and 42% of its mass will have been converted to energy"; "About 90% of this energy is released within 20 black hole radii"
 - Füzyon ~%0,7 | d4; ayrıca https://en.wikipedia.org/wiki/Quasar (WF) | "the p–p chain in Sun-like stars converts about 0.7%"
 - Ortalama verim ~0,1 | https://ned.ipac.caltech.edu/level5/Sept13/Shen/Shen1.html (WF) | "average of ε ~ 0.1"
@@ -81,15 +84,16 @@ WF = WebFetch ile bu oturumda açıldı (30 Ekim 2026). "HESAP" satırları pyth
 
 ## Bölüm 8 — Eddington ve Salpeter
 - Büyüme: hızlı yığılma dönemleri (AGN/kuasar) ve birleşmeler | Supermassive black hole (WF) | "Most mass growth is thought to occur in rapid accretion episodes ... plus mergers"
-- Eddington: dışa ışınım = içe kütleçekim; fotonlar elektronları, elektronlar protonları sürükler; Arthur Eddington | Wikipedia "Eddington luminosity" yansısı https://en.wikipedia.org/wiki/Eddington%20luminosity (WF) | "Radiation pushes on electrons, which drag protons along"; "Named after Sir Arthur Eddington"
+- Eddington: dışa ışınım = içe kütleçekim; ışınım elektronları iter, yük ayrılmasından doğan elektrik alanı protonları sürükler; Arthur Eddington | https://en.wikipedia.org/wiki/Eddington_luminosity (Wikipedia'nın kendisi; ham wikitext curl ile indirildi, doğrulayıcı 30 Ekim 2026) | "the radiation pressure acts on electrons, which are driven away from the center ... a slight charge separation and therefore a radially directed electric field, acting to lift the positive charges"; "Originally, Sir Arthur Eddington took only the electron scattering into account"
 - L_Edd ≈ 1,26 × 10³⁸ (M/M☉) erg/s = 1,26 × 10³¹ W | https://ned.ipac.caltech.edu/level5/Sept13/Shen/Shen1.html (WF) | "L_Edd ≈ 1.26 × 10³⁸ (M_BH/M☉) erg s⁻¹"
-- ≈ 3,2 × 10⁴ L☉ / M☉; sınır kesin değil; ULX için Eddington-üstü model; diskler 10–100 kat aşabilir | cavac yansısı (WF) | "≈ 3.2 × 10⁴ (M/M☉) L☉"; "not a strict limit"; ULX; "Accretion discs may reach 10–100 times the limit"
+- ≈ 3,2 × 10⁴ L☉ / M☉; sınır kesin değil; ULX için Eddington-üstü model; diskler 10–100 kat; Eddington üstü beslenmede dışarı çıkan parlaklık birkaç L_Edd'de doyar | https://en.wikipedia.org/wiki/Eddington_luminosity (doğrulayıcı, wikitext) | "= 3.2×10^4 (M/M☉)"; "The Eddington limit is not a strict limit on the luminosity of a stellar object"; "Super-Eddington accretion onto stellar-mass black holes is one possible model for ultraluminous X-ray sources"; "Accretion discs may exhibit luminosities as high as 10–100 times the Eddington limit without experiencing instabilities"; "The emergent luminosity from such accretion flow saturates at a few times L_Edd due to photon trapping". NOT: eski satırlardaki üçüncü taraf Wikipedia yansısı kaldırıldı; dersteki her Eddington ifadesi artık asıl Wikipedia metniyle karşılaştırıldı.
 - Salpeter zamanı t ≈ 4,5 × 10⁸ yıl × ε/[λ(1−ε)]; bir e-kat | Shen (WF) | "t_e ≈ 4.5 × 10⁸ (ε / [λ(1−ε)]) yr"; "grows by one e-fold"
 - ε = 0,1 → 50 milyon yıl; ε = 0,42 → ~330 milyon yıl | HESAP | 4,5e8 × 0,1/0,9; 4,5e8 × 0,42/0,58 = 3,26e8
 - Örnek: ln(10⁷) ≈ 16,1 → ~806 milyon yıl | HESAP
 
 ## Bölüm 9 — Tohum sorunu
 - J0313–1806: Ocak 2021; z = 7,6423; (1,6 ± 0,4) × 10⁹ M☉; Eridanus (Irmak) | https://en.wikipedia.org/wiki/QSO_J0313%E2%88%921806 (WF) | "7.6423 ± 0.0013"; "January 2021"; "(1.6 ± 0.4) × 10⁹"; Eridanus
+- Keşif makalesi: ~670 milyon yıl | https://arxiv.org/abs/2101.03179 (Wang ve ark. 2021, özet doğrulayıcı tarafından açıldı) | "just ∼670 million years after the Big Bang"; "7.6423 ± 0.0013"; "(1.6±0.4)×10^9 M☉". HESAP (doğrulayıcı): H0 = 70, Ωm = 0,3 → 669 milyon yıl; Planck 2018 → 678 milyon yıl. Wikipedia'daki "~600" kaba yuvarlamadır; ders 680 ve makalenin 670'ini birlikte veriyor.
 - z = 7,64'te evrenin yaşı ≈ 678 milyon yıl | HESAP: düz ΛCDM, H0 = 67,4, Ωm = 0,315 (Planck 2018, d17) | 0,678 Gyr. Not: Wikipedia sayfası "yaklaşık 600 milyon yıl" diyor (WF özeti); ders kendi hesabını (≈680) veriyor.
 - z > 6 parlak kuasarlar (L ≳ 10⁴⁷ erg/s) ilk milyar yılda > 10⁹ M☉ gerektirir | Shen (WF) | "Luminous quasars (L_bol ≳ 10⁴⁷ erg s⁻¹) at z > 6 imply SMBHs above 10⁹ M☉ within the first billion years"
 - 10⁴⁰ W ÷ 1,26 × 10³¹ ≈ 8 × 10⁸ M☉ | HESAP | 7,9 × 10⁸
@@ -118,11 +122,17 @@ WF = WebFetch ile bu oturumda açıldı (30 Ekim 2026). "HESAP" satırları pyth
 ## Bölüm 12 — Çiftler ve son parsek
 - Galaksi birleşmeleri | d7 | mevcut
 - Son parsek sorunu: etkileşim yoksa ~parsekte takılır, Hubble zamanında birleşmeyebilir; çözümler: gaz bulutları ("massive perturbers"), asimetrik çekirdekte basık yörüngeli yıldızlar; parsek altında kütleçekim dalgası baskın | https://ar5iv.labs.arxiv.org/html/2104.12901 (WF) | "may then never coalesce within a Hubble time"; "Below about a parsec, gravitational-wave emission dominates"
+- OJ 287 tartışması: Ekim 2022'de öngörülen büyük parlama görülmedi; ölçekleme ilişkileriyle ~10⁸ M☉ | https://arxiv.org/abs/2302.11646 (Komossa ve ark. 2023, özet doğrulayıcı tarafından açıldı) | "The predicted outburst was not detected"; "we estimate a SMBH mass of OJ 287 of 10^8 M_sun"
+- OJ 287 karşı görüş: Ekim 2022 etkinliği gelgit parlaması, M = (18,35 ± 0,05) × 10⁹ | https://arxiv.org/abs/2609.04998 (Valtonen ve ark., Eylül 2026, özet doğrulayıcı tarafından açıldı) | "the October 2022 flare fits the expectations for a tidal flare and thus supports the earlier determination of the mass"; Wikipedia OJ 287: "A 2026 study interpreted the October 2022 activity as a tidal flare"
+- 38°/tur ve 1,8 × 10¹⁰ (dönme 0,38) + 1,5 × 10⁸ doğrulayıcı tarafından PDF'te görüldü: "∆Φ=38 deg/orbit"
 - OJ 287: ~12 yılda ikiz tepeler; 1,8 × 10¹⁰ (dönme 0,38) + 1,5 × 10⁸; ~38° presesyon; z = 0,306; 2015 ve 2019 parlamaları; diski iki kez geçme; aday; eğik/yalpalayan disk alternatifi | aynı (WF) | "every ∼12 years"; "1.8×10¹⁰"; "1.5×10⁸"; "38°"; "0.306"; "2015 and 2019"; "one of the best candidates"
 - NANOGrav, LISA 2035, milyonlarca M☉ birleşmeleri | d16; https://www.esa.int/Science_Exploration/Space_Science/Capturing_the_ripples_of_spacetime_LISA_gets_go-ahead (WF) | "millions of times more massive than the Sun"; 2035
 
 ## Bölüm 13 — En büyükler
 - Kozmik At Nalı: 36 milyar M☉; ~5 milyar ışık yılı; Aslan; SDSS J1148+1930; mercek + yıldız kinematiği; MNRAS 7 Ağustos 2025; Carlos Melo, Thomas Collett (Portsmouth); "top 10 ... quite possibly the most massive"; uyuyan; kuramsal üst sınıra yakın; diğer yöntemler dolaylı ve belirsiz | https://www.sci.news/astronomy/cosmic-horseshoe-black-hole-14122.html (WF) | "36 billion solar masses"; "About 5 billion light-years away, in the constellation Leo"; "amongst the top 10"; "dormant"; "indirect and have quite large uncertainties"
+- Kozmik At Nalı belirsizliği: log M = 10,56 (+0,07/−0,08) ± 0,12 (sistematik); 5σ saptama | https://arxiv.org/abs/2502.13788 (Melo-Carrillo ve ark. 2025, özet doğrulayıcı tarafından açıldı) | "log10(M_BH/M☉) = 10.56+0.07−0.08 ± (0.12)sys". HESAP: 10^10,56 = 3,63 × 10¹⁰; 10^10,63 − 10^10,56 ≈ +6,3 × 10⁹ … Wikipedia Cosmic Horseshoe: "36.31 +5.50 −6.25 billion"; 10^0,12 ≈ 1,32 → sistematik ~%30
+- TON 618 iki tahmin: Hβ (Shemmer 2004) 66 milyar; C IV (Ge ve ark. 2019) 40,7 milyar | https://en.wikipedia.org/wiki/TON_618 (doğrulayıcı, wikitext) | "variously reported as 40.7 billion ... or 66 billion"
+- NGC 4889 belirsizliği +3,5/−1,3 × 10¹⁰ | Supermassive black hole (doğrulayıcı, wikitext) | "{{val|2.1|3.5|1.3|e=10}}"
 - TON 618 ~4,07 × 10¹⁰ (dolaylı, büyük belirsizlik); NGC 4889 ~2,1 × 10¹⁰; OJ 287 18,348 milyar; UMBH > 5 milyar terimi yaygın değil | Supermassive black hole (WF) | "TON 618: about 4.07×10¹⁰"; "subject to substantial uncertainty"; "NGC 4889: about 2.1×10¹⁰"; "a term not widely used"
 - King 2016 ~5 × 10¹⁰; 10¹⁰ üstünde büyüme yavaşlar; en hızlı dönmede ~2,7 × 10¹¹; 2020 "stupendously large" > 10¹¹ | Supermassive black hole (WF) | "about 5×10¹⁰ M☉ for typical parameters (King 2016)"; "2.7×10¹¹"; "stupendously large"
 - Örnek: Rs ≈ 711 AB; Neptün 30 AB (d9); M87 yoğunluğu 0,44 kg/m³ (d16); hava 1,2 kg/m³ (d16) → 0,014 kg/m³ | HESAP | 1,063 × 10¹¹ km
@@ -130,6 +140,8 @@ WF = WebFetch ile bu oturumda açıldı (30 Ekim 2026). "HESAP" satırları pyth
 ## Bölüm 14 — İstanbul'dan
 - Sgr A* İstanbul'da ~20°, M87 8,6 kadir ve ~61° | d16 | mevcut
 - Andromeda 3,44 kadir, 2,5 milyon ışık yılı, çıplak göz | d7 | mevcut defter notu
+- M106 NASA: 9,1 kadir, küçük teleskopla bulunabilir, en iyi Mayıs | https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-106 (doğrulayıcı curl) | "apparent magnitude of 9.1 and can be spotted with a small telescope. It is best observed during May"
+- Uygulama haritası: veri/hedefler.json'daki 26 hedeften yalnız M31 bu derstekiler arasında; M106, M87 yok (doğrulayıcı dosyayı okudu) → ders metni buna göre düzeltildi
 - Andromeda kara deliği 1,4 (+0,65/−0,45) × 10⁸ M☉ | Supermassive black hole (WF) | "1.4(+0.65/−0.45)×10⁸ M☉"
 - M106: Av Köpekleri; 8,4 kadir; +47° 18′; 23,7 ± 1,5 milyon ışık yılı; (3,9 ± 0,1) × 10⁷; 2. tip Seyfert; dürbün görünürlüğü sayfada yok | https://en.wikipedia.org/wiki/Messier_106 (WF) | "8.4 (V)"; "+47° 18′ 14″"; "23.7 ± 1.5 million light-years"; "Type 2 Seyfert"
 - Andromeda kara deliği Sgr A*'ın ~30 katı | HESAP | 1,4e8 ÷ 4,3e6 ≈ 33
