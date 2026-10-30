@@ -1,0 +1,58 @@
+[
+  {
+    "id": "d52-1",
+    "soru": "Galaksimizin merkezindeki Sgr A* (yaklaşık 4,3 milyon Güneş kütlesi) için Hawking sıcaklığı yaklaşık ne kadardır?",
+    "secenekler": [
+      "Yaklaşık 62 nanokelvin",
+      "Yaklaşık 2,7 kelvin",
+      "Yaklaşık 1,4 × 10⁻¹⁴ kelvin",
+      "Yaklaşık 0,02 kelvin"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre T ≈ 6,17 × 10⁻⁸ K × (M☉ ÷ M). 6,17 × 10⁻⁸ ÷ 4,297 × 10⁶ ≈ 1,44 × 10⁻¹⁴ K. 62 nanokelvin 1 Güneş kütleli, 0,02 K Dünya kütleli kara deliğin sıcaklığıdır; 2,7 K kozmik arka planınkidir.",
+    "ders": "d52",
+    "bolum": 3
+  },
+  {
+    "id": "d52-2",
+    "soru": "Bir kara deliğin bugün net olarak küçülebilmesi, yani kozmik mikrodalga arka plandan (2,725 K) sıcak olması için kütlesi yaklaşık ne olmalıdır?",
+    "secenekler": [
+      "Birkaç Güneş kütlesinden az",
+      "Ay kütlesinin yaklaşık yüzde 61'inden az",
+      "Dünya kütlesinden az",
+      "Herhangi bir kütle olabilir; bütün kara delikler bugün küçülür"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre 2,725 K'lik Hawking sıcaklığı yaklaşık 4,5 × 10²² kg'a, yani Ay kütlesinin yaklaşık yüzde 61'ine karşılık gelir. Bundan ağır kara delikler, bilinen bütün kara delikler dahil, bugün arka plandan kazandıkları kütleyle büyür.",
+    "ders": "d52",
+    "bolum": 4
+  },
+  {
+    "id": "d52-3",
+    "soru": "Don Page'in 1993 çalışmasına göre buharlaşma üniterse Hawking ışımasının dolanıklık entropisi zamanla nasıl değişmelidir?",
+    "secenekler": [
+      "Kara delik bitene kadar hep artmalı ve büyük bir değerde kalmalı",
+      "Baştan sona sıfır kalmalı",
+      "Sıfırdan başlayıp kabaca buharlaşmanın yarı yoluna kadar artmalı, sonra yeniden sıfıra inmeli",
+      "Önce azalmalı, sonra artmalı"
+    ],
+    "dogru": 2,
+    "aciklama": "Page eğrisinde entropi sıfırdan başlar, kabaca yarı yolda (Page zamanı) döner ve kara delik bitince sıfıra iner. Hep artan eğri Hawking'in özgün hesabının verdiği eğridir.",
+    "ders": "d52",
+    "bolum": 9
+  },
+  {
+    "id": "d52-4",
+    "soru": "Steinhauer'in ekibinin Bose-Einstein yoğuşmasındaki ses kara deliği deneyleri için hangisi doğrudur?",
+    "secenekler": [
+      "Gökteki kara deliklerin Hawking ışımasını kesin olarak kanıtladı",
+      "Ses ufku olan bir kuantum sisteminde Hawking benzeri ısıl ışınım bildirdi ama kütleçekimini ve gerçek kara delikleri sınamaz",
+      "Bilgi paradoksunu deneysel olarak çözdü",
+      "Hiçbir sonuç alamadı ve bırakıldı"
+    ],
+    "dogru": 1,
+    "aciklama": "2019 deneyinde tayf ısıl bir tayfla uyuştu ve sıcaklık ufkun yüzey çekimiyle belirlendi (yaklaşık 0,35 nanokelvin). Ama düzenekte kütleçekimi yoktur; ders, bunun gökteki Hawking ışımasını doğrulamadığını ve 2016 sonucunun Leonhardt tarafından eleştirildiğini anlatır.",
+    "ders": "d52",
+    "bolum": 13
+  }
+]

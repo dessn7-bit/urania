@@ -1,0 +1,58 @@
+[
+  {
+    "id": "d56-1",
+    "soru": "Bir yıldızın çöküşüyle doğan gerçek bir kara delikte, Schwarzschild çözümünün tam haritasındaki hangi bölgeler bulunmaz?",
+    "secenekler": [
+      "Dış evren ve kara delik içi",
+      "Beyaz delik içi ve ikinci dış bölge",
+      "Yalnızca olay ufku",
+      "Dört bölgenin hepsi bulunur"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre tam harita ebedî, boş bir kara deliği anlatır. Çöken yıldızın maddesi hesaba katılınca beyaz delik bölgesi ve ikinci dış bölge ortadan kalkar; dış evren ve kara delik içi kalır.",
+    "ders": "d56",
+    "bolum": 1
+  },
+  {
+    "id": "d56-2",
+    "soru": "2022'de Google'ın Sycamore işlemcisinde yapılan “solucan deliği” deneyi için hangisi doğrudur?",
+    "secenekler": [
+      "Uzay-zamanda küçük ama gerçek bir solucan deliği açıldı",
+      "Holografik olarak bir solucan deliğine eşlenebilen bir kuantum ışınlama protokolü çalıştırıldı; gerçek bir solucan deliği yaratılmadı",
+      "Bir kara delik laboratuvarda üretildi",
+      "Işıktan hızlı bir mesaj gönderildi"
+    ],
+    "dogru": 1,
+    "aciklama": "Makine öğrenmesiyle basitleştirilmiş SYK benzeri bir modelde ışınlama yapıldı ve sonuç solucan deliği diliyle yorumlandı. Caltech ve Reuters fiziksel uzayda bir yarık yaratılmadığını vurguladı; Kobrin, Schuster ve Yao modelin kütleçekimi benzeri davranışını sorguladı.",
+    "ders": "d56",
+    "bolum": 9
+  },
+  {
+    "id": "d56-3",
+    "soru": "Kozmonot Sergei Krikalev uzayda toplam 803 günden fazla kalarak yaklaşık ne kadar “geleceğe yolculuk” yaptı?",
+    "secenekler": [
+      "Yaklaşık 0,02 saniye",
+      "Yaklaşık 2 saat",
+      "Yaklaşık 1 gün",
+      "Hiç; zaman genişlemesi yalnızca ışık hızına yakın hızlarda olur"
+    ],
+    "dogru": 0,
+    "aciklama": "Saniyede yaklaşık 7,7 km hızla zaman genişlemesi kesri yaklaşık v² ÷ (2c²) ≈ 3,3 × 10⁻¹⁰'dur; 803,4 gün ≈ 6,94 × 10⁷ s ile çarpınca yaklaşık 0,02 s çıkar. Kaynak da 0,02 saniye verir.",
+    "ders": "d56",
+    "bolum": 10
+  },
+  {
+    "id": "d56-4",
+    "soru": "Bir solucan deliği ağzı ışık hızının %80'iyle 4 ışık yılı öteye gidip dönerse (evde 10 yıl, yolculukta 6 yıl geçer), düzenek kaç yıl geçmişe götüren bir zaman makinesi olur?",
+    "secenekler": [
+      "6 yıl",
+      "10 yıl",
+      "4 yıl",
+      "16 yıl"
+    ],
+    "dogru": 2,
+    "aciklama": "Boğaz iki ağzın saatlerini içeriden eşitler; dışarıdaki takvimde aralarında 10 − 6 = 4 yıl fark birikir. Bu yüzden düzenek 4 yıl geriye götürür; bu hesap geçilebilir solucan deliği ve egzotik madde varsayımına dayanır.",
+    "ders": "d56",
+    "bolum": 11
+  }
+]
