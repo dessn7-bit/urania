@@ -74,7 +74,7 @@ Not: Tüm satırlar bu oturumda (30 Ekim 2026) WebFetch ile açılan sayfalardan
 - L = L₀/γ; yalnız hareket yönünde; müon çerçevesinde atmosfer kısalır | https://en.wikipedia.org/wiki/Length_contraction | "Length contraction is only measured in the direction in which the body is travelling"; muon example
 - Doğrudan ölçüm zor; ağır iyonlar "pancake"; manyetizma göreli kısalmayla açıklanır | aynı | "Magnetic forces are caused by relativistic contraction when electrons are moving relative to atomic nuclei"
 - Penrose–Terrell: fotoğrafta kısalma görünmez, dönmüş görünür | aynı | "moving objects generally do not appear length contracted on a photograph"
-- Örnek: 1917/8,8 = 218 m; 218/(0,99c) = 0,73 μs | hesap
+- Örnek: 1917/8,8 = 218 m; 218/(0,995c) = 0,73 μs | hesap (hız Frisch–Smith'in 0,995c'si; doğrulamada 0,99'dan düzeltildi)
 
 ## Bölüm 9 — Uzay-zaman
 - 21 Eylül 1908, Köln, Minkowski; uzay ve zaman gölgeye dönüşecek, birlikleri bağımsız gerçeklik | https://mathshistory.st-andrews.ac.uk/Miscellaneous/messages/09-21/ ve https://en.wikisource.org/wiki/Translation:Space_and_Time | "Henceforth space by itself, and time by itself, are doomed to fade away into mere shadows"; Cologne, 21 September 1908
@@ -87,19 +87,19 @@ Not: Tüm satırlar bu oturumda (30 Ekim 2026) WebFetch ile açılan sayfalardan
 ## Bölüm 10 — İkizler paradoksu
 - Einstein 1905: kapalı yolda dolaştırılan saat geri kalır, "peculiar" | https://en.wikipedia.org/wiki/Twin_paradox | Einstein called the result "peculiar"
 - Langevin 1911: γ = 100 (~%99,995), bir yıl gidiş, dönüşte 200 yıl geçmiş | aynı | "Lorentz factor of γ = 100"; "200 years have passed on Earth"
-- Çözüm: Dünya ikizi tek eylemsiz çerçeve, gezgin iki çerçeve; ivme esas değil (bayrak yarışı) | aynı + https://en.wikipedia.org/wiki/Time_dilation | "the situation is not symmetric"; relay version
+- Çözüm: Dünya ikizi tek eylemsiz çerçeve, gezgin iki çerçeve; ivme esas değil (bayrak yarışı) | aynı (Twin paradox: relay version, "the issue is how long the world-lines are, not how bent") + https://en.wikipedia.org/wiki/Time_dilation | "The twin staying on Earth is in a single inertial frame, and the traveling twin is in two different inertial frames" [Doğrulama: bayrak yarışı Time dilation'da değil, Twin paradox sayfasında]
 - Örnek 0,8c, 4 ışık yılı: 10 yıl / 6 yıl | https://en.wikipedia.org/wiki/Twin_paradox | "10 years by Earth clocks and 6 years by the ship's clocks"
 - 1971 uçak deneyi d26'da | https://en.wikipedia.org/wiki/Time_dilation (Hafele–Keating)
 
 ## Bölüm 11 — Hız sınırı
-- u = (u′ + v)/(1 + u′v/c²); küçük hızda u′ + v; c + v = c | https://physics.it.com/relativity/velocity-addition | "u = (u′ + v) / (1 + u′v/c²)"; "c+v=c for every v"
+- u = (u′ + v)/(1 + u′v/c²); küçük hızda u′ + v; c + v = c | https://en.wikipedia.org/wiki/Velocity-addition_formula (doğrulamada wikitext indirildi) | "u_x = (u_x' + v)/(1 + v u_x'/c²)"; "not noticeable at low velocities"; u′ = c koyunca u = c cebirle (hesap). [Doğrulama: physics.it.com zayıf kaynak olduğu için değiştirildi]
 - 0,5c + 0,5c = 0,8c | hesap
 - Fizeau 1851, akan su; Laue 1907 göreli toplama ile açıkladı | https://en.wikipedia.org/wiki/Fizeau_experiment | "Fresnel drag coefficient can be explained as a natural consequence of the relativistic formula"
 - Kütleli cismi c'ye çıkarmak sonsuz enerji | https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Speed_of_light | "would take an infinite amount of energy"
 - Toplam enerji = γmc² | https://en.wikipedia.org/wiki/Mass%E2%80%93energy_equivalence | "can be rewritten as E = γmc2"
 - LHC 27 km, 6,8 TeV (2022) | https://universetoday.com/155591/large-hadron-collider-restarts-shooting-protons-at-record-energy-levels | "record energy level of 6.8 tera electronvolts"; "27-kilometer-round"
 - Proton durgun enerjisi 938,272 MeV | https://physics.nist.gov/cuu/Constants/Table/allascii.txt | "938.272 089 43 MeV"
-- Örnek: γ ≈ 7.247; 1 − v/c ≈ 9,5e-9; ≈ 2,85 m/s | hesap
+- Örnek: γ ≈ 7.247; 1 − v/c ≈ 9,5e-9; ≈ 2,85 m/s | hesap (2,85 m/s = 10,3 km/sa: yürüyüş değil hafif koşu; doğrulamada düzeltildi)
 - Elektronvolt tanımı | akıl yürütme (tanım; d4'te MeV kullanıldı)
 
 ## Bölüm 12 — E = mc²

@@ -30,7 +30,7 @@ Not: Tüm satırlar bu oturumda (30 Ekim 2026) WebFetch ile açılan sayfalardan
 - İlke bozulursa kuram eksik olurdu | akıl yürütme
 
 ## Bölüm 4 — Ağırlıksızlık
-- ISS ~250 mil (~400 km); çekim yüzeyin ~%90'ı; sürekli serbest düşüş; ~17.500 mil/sa (~28.000 km/sa) | https://bgr.com/2005601/is-there-zero-gravity-iss-microgravity-explained | "roughly 90%"; "continuous free fall"; "around 17,500 mph"
+- ISS ~250 mil (~400 km); çekim yüzeyin ~%90'ı; serbest düşüş; ~17.500 mil/sa (~28.000 km/sa) | https://www.nasa.gov/learning-resources/for-kids-and-students/what-is-microgravity-grades-5-8/ | "between 200 and 250 miles"; "Earth's gravity is about 90 percent of what it is on the planet's surface"; "because they are in free fall"; "17,500 miles per hour" [Doğrulama: BGR yerine NASA; 400 km aralığın üst ucu]
 - Örnek: (6.357/6.757)² ≈ 0,885; 8,7 m/s² | hesap
 - Yörüngede düşüş, d3 | d3 kaynakları
 - Asansör hafifleme/ağırlaşma | akıl yürütme
@@ -49,7 +49,7 @@ Not: Tüm satırlar bu oturumda (30 Ekim 2026) WebFetch ile açılan sayfalardan
 
 ## Bölüm 7 — Merkür
 - Toplam 574,10 ± 0,65; gezegenler 531,63 ± 0,69; GR 42,98 ± 0,04 ″/yüzyıl; Le Verrier 1859'da 38″ | https://webarchive.library.unt.edu/web/20141206100325/http://en.wikipedia.org/wiki/Tests_of_general_relativity | değerler sayfada
-- 1850'ler Le Verrier; Neptün 1846 öngörülen yerde; Vulkan; 1878 tutulma gözlemi doğrulanmadı; Vulkanoid aramalarında ~6 km'den büyük yok; 1915 Einstein 43″ | https://briankoberlein.com/post/planet-that-never-was/ | "it wasn't until the 1850s"; "discovered in 1846 exactly where Le Verrier predicted"; Watson and Swift 1878; "none larger than about 6 km"
+- 1850'ler Le Verrier (gezegenlerin açıklayamadığı fazlalık; 531″ bugünkü değer, Le Verrier'in değil — doğrulamada düzeltildi); Neptün 1846 öngörülen yerde; Vulkan; 1878 tutulma gözlemi doğrulanmadı; Vulkanoid aramalarında ~6 km'den büyük yok; 1915 Einstein 43″ | https://briankoberlein.com/post/planet-that-never-was/ | "it wasn't until the 1850s"; "discovered in 1846 exactly where Le Verrier predicted"; Watson and Swift 1878; "none larger than about 6 km"
 - Newton açıklayamadı, 43″ fark | https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation | "a discrepancy of 43 arcseconds per century"
 - Merkür dolanım 87,969 gün | https://nssdc.gsfc.nasa.gov/planetary/factsheet/mercuryfact.html | "87.969"
 - S2 tur başına ~12 yay dakikası | d16_kaynak.md (ESO/GRAVITY 2020)
@@ -60,6 +60,7 @@ Not: Tüm satırlar bu oturumda (30 Ekim 2026) WebFetch ile açılan sayfalardan
 
 ## Bölüm 8 — Işığın bükülmesi ve 1919
 - Soldner 1801 (yayın 1804) Newton hesabı | Tests of general relativity (arşiv) | "Soldner calculated Newtonian deflection in 1801 (published 1804)"
+- Brovary bugün Ukrayna'da (Kyiv Oblast) | https://en.wikipedia.org/wiki/Brovary | "City in Kyiv Oblast, Ukraine" (wikitext; 1914'te Rus İmparatorluğu)
 - 1911 Einstein önerisi; Lick 1914 Brovary (Rusya), bulut, savaş başladı | https://www.lickobservatory.org/explore/historical-resources/the-lick-observatory-eclipse-expeditions-general-relativity-and-the-bending-of-starlight/ | August 1914 Brovary; "Clouds prevent any photographic plates"; WWI broke out
 - 1,75″ GR, 0,87″ Newton | https://arxiv.org/pdf/2010.13744 | "1.75 arcsec at the Sun's limb"; Newtonian "half that, 0.87"
 - 29 Mayıs 1919; Sobral ve Príncipe; Sobral 4 inç 1,98 ± 0,12; Príncipe 1,61 ± 0,30; 6 Kasım 1919 ortak toplantı; 7 Kasım basın | aynı | değerler ve tarihler sayfada
@@ -71,11 +72,11 @@ Not: Tüm satırlar bu oturumda (30 Ekim 2026) WebFetch ile açılan sayfalardan
 - Sobral astrografı 0,93″; görüntüler dağınık/odak dışı, selostat aynasının eşitsiz ısınması | https://arxiv.org/pdf/2010.13744 | "diffused and apparently out of focus"; "uneven heating of the coelostat mirror"
 - Earman & Glymour 1980; Collins & Pinch, The Golem | aynı
 - Harvey 1979 yeniden ölçüm, Einstein yüzüncü yılı; konumlar güvenilir | aynı | "re-measured and re-analysed most of the plates in 1979"
-- 2020 inceleme: Earman–Glymour dağılım ile ortalama belirsizliğini karıştırdı; Príncipe plakları kayıp | aynı
+- 2020 inceleme (Gilmore & Tausch-Pebody, Notes Rec. R. Soc.): Earman–Glymour dağılım ile ortalama belirsizliğini karıştırdı; "The original 1919 analysis is statistically robust"; Príncipe plakları kayıp | aynı. Earman–Glymour iddiası: atılan veri eşit geçerli, sonuç desteklenmiyor, "[Eddington's] bias showed in his treatment of the evidence" [Doğrulama: "tek başına kesin kanıt sayılmazdı" kaynağın sonucuyla çeliştiği için yumuşatıldı]
 - 1922 Wallal, Trumpler, "excellent agreement" | Lick sayfası
 - VLBI %0,03; Shapiro 1964; Merkür/Venüs radar %5; Cassini %0,002 | Tests of general relativity (arşiv) | "0.03% level"; "5% level"; "0.002% level"
 - 29 Mart 2006 tam tutulma Türkiye: Side 3:45, Konya 3:37, Antalya 3:15 | https://en.wikipedia.org/wiki/Solar_eclipse_of_March_29,_2006 | tablo değerleri
-- 2 Ağustos 2027 İstanbul parçalı %59, maksimum 12:39 | https://orbitalradar.com/eclipse/2027-august-2/istanbul | "59%"; "12:39 GMT+3"
+- 2 Ağustos 2027 İstanbul parçalı %59, maksimum 12:39 | https://nationaleclipse.com/cities/lists/2027-partial-solar-eclipse-cities.html | Istanbul "12:39:12 PM TRT", "59.3%" (ikinci kaynak: https://orbitalradar.com/eclipse/2027-august-2/istanbul "59%")
 - Güneş'e filtresiz bakma | d4 (güvenli Güneş gözlemi)
 
 ## Bölüm 10 — Kütleçekimsel kırmızıya kayma
@@ -91,7 +92,7 @@ Not: Tüm satırlar bu oturumda (30 Ekim 2026) WebFetch ile açılan sayfalardan
 - Konum için zaman, uydu konumu, gecikme; bit dizisi karşılaştırma; efemeris 30 s'de bir | https://en.wikipedia.org/wiki/Error_analysis_for_the_Global_Positioning_System | "requires the current time, the position of the satellite and the measured delay"; "transmitted every 30 seconds"
 - 20.184 km, 3.874 m/s; −7.214 ns; +45.850 ns; net +38.640 ns; ~11,4 km/gün; 10,22999999543 MHz; Sagnac yüzlerce ns, onlarca m; eliptik yörünge etkisi navigasyon denklemlerinde düzeltilir | aynı | değerler ve ifadeler sayfada
 - Winterberg 1955 öneri | aynı | "proposed by Friedwardt Winterberg in 1955"
-- Örnek: 0,00000000457/10,23 = 4,47e-10; × 86.400 = 38,6 μs; × c = 11,6 km | hesap
+- Örnek: 0,00000000457/10,23 = 4,47e-10; × 86.400 = 38,6 μs; × c = 11,6 km | hesap. Wikipedia "roughly 11.4 km/day" ile 38,6 μs'yi aynı yerde verir; 38 μs × c = 11,39 km, yani fark büyük olasılıkla yuvarlama (doğrulama çıkarımı)
 
 ## Bölüm 12 — Hafele–Keating
 - 1971; doğu −59 ± 10 ns (öngörü −40 ± 23), batı +273 ± 7 (öngörü +275 ± 21); ABD Deniz Gözlemevi zaman ölçeği | https://en.wikipedia.org/wiki/Time_dilation | değerler sayfada
@@ -105,13 +106,15 @@ Not: Tüm satırlar bu oturumda (30 Ekim 2026) WebFetch ile açılan sayfalardan
 - Einstein halkası tanımı | akıl yürütme (geometri)
 
 ## Bölüm 14 — Dönen Dünya, kara delikler, dalgalar
+- Gravity Probe B yörünge 642 km kutupsal, kılavuz IM Pegasi | https://en.wikipedia.org/wiki/Gravity_Probe_B | "crossing directly over the poles"; perigee 641, apogee 645 km, "642 km"; "IM Pegasi" (arXiv özeti bunları içermiyor)
 - Gravity Probe B 20 Nisan 2004; 642 km kutupsal; IM Pegasi; jeodezik −6.601,8 ± 18,3 (öngörü −6.606,1) mas/yıl; çerçeve sürüklenmesi −37,2 ± 7,2 (öngörü −39,2) | https://arxiv.org/pdf/1105.3456 | değerler özet ve girişte
 - Çerçeve sürüklenmesi ~%19 hata | Tests of general relativity (arşiv) | "about 19% error"
 - Schwarzschild 1916, S2, EHT, GW150914 (14 Eylül 2015), GW170817 | d16_kaynak.md
 - Hulse–Taylor 1974 keşif, 1993 Nobel, yörünge küçülmesi | Tests of general relativity (arşiv) ve d16_kaynak.md
 
 ## Bölüm 15 — Sınırlar
-- GR ile kuantum yüksek enerjide uyumsuz; renormalize edilemez sonsuzluklar; tekillikler (kara delik merkezi, Büyük Patlama); Planck enerjisi ~10¹⁹ GeV, en güçlü hızlandırıcının ~15 basamak üstü; sicim kuramı (graviton benzeri), döngü kuantum kütleçekimi; deneysel veri yok | https://physics.it.com/dictionary/quantum-gravity | "mutually incompatible at high energy"; "the absence of experimental data"
+- GR ile kuantum birleşmiyor; renormalize edilemez; tekillikler (kara delik içi, Büyük Patlama) GR'nin çöküşü; sicim kuramında graviton; döngü kuantum kütleçekiminde Planck uzunluğunda taneli uzay; deneysel veri yok | https://en.wikipedia.org/wiki/Quantum_gravity | "no theory has yet proven successful"; "gravity is perturbatively nonrenormalizable"; "the gravitational singularities inside black holes"; "signal the collapse of the general theory of relativity"; "one mode will always correspond to a graviton"; "a granular structure of space at the Planck length"; "lack experimental data which could distinguish between the competing theories" [Doğrulama: physics.it.com yerine; LQG'nin "pürüzsüz uzay-zamana dönmekte zorlanır" iddiası kaynaksız kaldığı için çıkarıldı]
+- Planck enerjisi ≈ 1,22e19 GeV | https://physics.nist.gov/cuu/Constants/Table/allascii.txt | "Planck mass energy equivalent in GeV 1.220 890 e19"; LHC 13,6 TeV = 1,36e4 GeV ile oran ≈ 9e14 → ~15 basamak (hesap)
 - Planck uzunluğu 1,616255e-35 m, Planck zamanı 5,391247e-44 s | https://physics.nist.gov/cuu/Constants/Table/allascii.txt | değerler tabloda
 - Karanlık madde/enerji tartışması | d17 ("Karanlık madde mi, değişen kütleçekimi mi?" bölümü)
 - MICROSCOPE, EHT, kütleçekim dalgası sınamaları | bölüm 3 kaynakları ve d16_kaynak.md

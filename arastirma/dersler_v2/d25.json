@@ -16,7 +16,7 @@
         "Saatte 100 km giden bir trenin içinde, trenin gittiği yöne doğru saatte 5 km yürüdüğünü düşün. Raydaki biri senin hızını saatte 105 km ölçer. Hızlar toplanır; bu, hayatın her gün doğruladığı bir kural gibi görünür. Bu derste bu kuralın ışık için neden çöktüğünü ve çöküşün zaman ile uzay hakkındaki düşüncemizi nasıl değiştirdiğini göreceksin.",
         "Önce sayıyı tanıyalım. Işığın boşluktaki hızı saniyede tam 299.792.458 metredir; kısaca c harfiyle gösterilir. Bu sayının tam olmasının nedeni, 1983'ten beri metrenin ışıkla tanımlanmasıdır: bir metre, ışığın boşlukta saniyenin 299.792.458'de birinde aldığı yoldur. Yani ışık hızı artık ölçülen değil, tanımlanan bir sayıdır. Günlük ölçekte bu hız akıl almaz: ışık Ay'dan bize yaklaşık 1,3 saniyede, Güneş'ten yaklaşık 8,3 dakikada gelir. Işığın sonsuz hızlı olmadığını ilk gösteren, 1676'da Jüpiter'in uydusu Io'nun hareketlerini inceleyen Ole Rømer'di; ışığın Dünya'nın yörüngesinin çapını yaklaşık 22 dakikada geçtiğini tahmin etmişti.",
         "d33'te Maxwell'in denklemlerinden ışığın hızının bir hesap sonucu olarak çıktığını gördün. Ama o hesap bir soruyu açık bıraktı: bu hız neye göre? Ses havada, su dalgası suda ilerler. 19. yüzyıl fizikçileri ışığın da evreni dolduran görünmez bir ortamda ilerlediğini düşündü ve bu ortama esir (eter) dedi. Esir varsa Maxwell'in hızı esire göre hız olmalıydı; esirin içinde koşan Dünya'dan bakınca ışık bir yönde hızlı, öbür yönde yavaş görünmeliydi. Bu dersin hikâyesi, bu beklentinin çöküşüdür.",
-        "Bir ad notu: özel görelilik, Einstein'ın 1905'te kurduğu, sabit hızla ve düz çizgide hareket eden gözlemcilerin dünyasını anlatan kuramdır. Kuramın “özel” sözcüğü bu sınırlamadan gelir. İvmeyi ve kütleçekimini de kapsayan daha genel kuram, yani genel görelilik, bir sonraki dersin (d26) konusudur.",
+        "Bir ad notu: özel görelilik, Einstein'ın 1905'te kurduğu, sabit hızla ve düz çizgide hareket eden gözlemcilerin bakış açısından kurulmuş kuramdır. Kuramın “özel” sözcüğü bu sınırlamadan gelir. Kütleçekimini de kapsayan daha genel kuram, yani genel görelilik, bir sonraki dersin (d26) konusudur.",
         "Bu ders yalnızca bir düşünce oyunu değil, gökyüzünü okumanın bir aracıdır. Atmosferimize her an yağan kozmik ışın parçacıkları, Güneş'in nasıl parladığı, telefonundaki konum sistemi, kara deliklerin çevresi ve evrenin genişlemesi, hep burada kuracağımız fikirlerle anlaşılır. Formüller kısa tutuldu; her birini önce sözle, sonra gündelik sayılarla göreceksin. Lise matematiğinden yalnızca kare, karekök ve Pisagor teoremi yeterli."
       ],
       "akilda": "Işığın boşluktaki hızı c = 299.792.458 m/s'dir ve 1983'ten beri tanım gereği tamdır. 19. yüzyılda ışığın esir denen bir ortamda yayıldığı ve hızının esire göre ölçülmesi gerektiği düşünülüyordu."
@@ -119,7 +119,7 @@
       ],
       "ornek": {
         "baslik": "Örnek: Müona göre Mount Washington",
-        "metin": "Dağın öz uzunluğu (yükseklik farkı) L₀ = 1917 m, Frisch–Smith'in ölçtüğü çarpan γ ≈ 8,8. 1. adım: Müona göre yükseklik L = 1917 ÷ 8,8 ≈ 218 m. 2. adım: Müon bu yolu ışık hızının yaklaşık %99'uyla alır: 218 ÷ (0,99 × 299.792.458) ≈ 7,3 × 10⁻⁷ s, yani yaklaşık 0,73 mikrosaniye. 3. adım: Yerdeki gözlemcinin hesabında müonun saatinde geçen süre de 6,4 ÷ 8,8 ≈ 0,73 mikrosaniyeydi. Sonuç: müon için dağ yaklaşık 218 m'ye kısalır ve iniş 0,73 mikrosaniye sürer; zaman genişlemesi ile uzunluk kısalması aynı sonucu iki farklı bakış açısından verir."
+        "metin": "Dağın öz uzunluğu (yükseklik farkı) L₀ = 1917 m, Frisch–Smith'in ölçtüğü çarpan γ ≈ 8,8. 1. adım: Müona göre yükseklik L = 1917 ÷ 8,8 ≈ 218 m. 2. adım: Müon bu yolu ışık hızının yaklaşık %99,5'iyle alır: 218 ÷ (0,995 × 299.792.458) ≈ 7,3 × 10⁻⁷ s, yani yaklaşık 0,73 mikrosaniye. 3. adım: Yerdeki gözlemcinin hesabında müonun saatinde geçen süre de 6,4 ÷ 8,8 ≈ 0,73 mikrosaniyeydi. Sonuç: müon için dağ yaklaşık 218 m'ye kısalır ve iniş 0,73 mikrosaniye sürer; zaman genişlemesi ile uzunluk kısalması aynı sonucu iki farklı bakış açısından verir."
       },
       "akilda": "Hareket eden cisim hareket yönünde kısa ölçülür: L = L₀ ÷ γ. Yerden bakınca müonun saati yavaşlar, müondan bakınca dağ kısalır; iki anlatım aynı ölçülebilir sonucu verir."
     },
@@ -162,7 +162,7 @@
       ],
       "ornek": {
         "baslik": "Örnek: LHC'deki bir proton ışıktan ne kadar yavaş?",
-        "metin": "Protonun durgun enerjisi NIST'e göre 938,272 MeV (milyon elektronvolt), LHC'deki enerjisi 6,8 TeV = 6.800.000 MeV. 1. adım: γ = toplam enerji ÷ durgun enerji = 6.800.000 ÷ 938,272 ≈ 7.247. 2. adım: γ çok büyükken 1 − v ÷ c ≈ 1 ÷ (2 × γ²) yaklaşımı iyi çalışır. γ² ≈ 5,25 × 10⁷; 1 ÷ (2 × 5,25 × 10⁷) ≈ 9,5 × 10⁻⁹. 3. adım: 9,5 × 10⁻⁹ × 299.792.458 m/s ≈ 2,85 m/s. Sonuç: proton ışık hızının yaklaşık %99,99999905'iyle gider; ışığın gerisinde kaldığı hız saniyede yaklaşık 2,85 metre, yani saatte 10 km kadar, tempolu bir yürüyüş hızıdır."
+        "metin": "Protonun durgun enerjisi NIST'e göre 938,272 MeV (milyon elektronvolt), LHC'deki enerjisi 6,8 TeV = 6.800.000 MeV. 1. adım: γ = toplam enerji ÷ durgun enerji = 6.800.000 ÷ 938,272 ≈ 7.247. 2. adım: γ çok büyükken 1 − v ÷ c ≈ 1 ÷ (2 × γ²) yaklaşımı iyi çalışır. γ² ≈ 5,25 × 10⁷; 1 ÷ (2 × 5,25 × 10⁷) ≈ 9,5 × 10⁻⁹. 3. adım: 9,5 × 10⁻⁹ × 299.792.458 m/s ≈ 2,85 m/s. Sonuç: proton ışık hızının yaklaşık %99,99999905'iyle gider; ışığın gerisinde kaldığı hız saniyede yaklaşık 2,85 metre, yani saatte 10 km kadar, hafif bir koşu hızıdır."
       },
       "akilda": "Görelilikte hızlar u = (u′ + v) ÷ (1 + u′v ÷ c²) ile toplanır; ışık hızına bir şey eklenemez. Kütleli bir cismi c'ye çıkarmak sonsuz enerji isterdi; LHC'deki protonlar bile ışıktan saniyede yaklaşık 2,85 m yavaştır."
     },
@@ -559,8 +559,8 @@
       "url": "https://en.wikipedia.org/wiki/Fizeau_experiment"
     },
     {
-      "ad": "physics.it.com: Relativistic velocity addition",
-      "url": "https://physics.it.com/relativity/velocity-addition"
+      "ad": "Wikipedia: Velocity-addition formula",
+      "url": "https://en.wikipedia.org/wiki/Velocity-addition_formula"
     },
     {
       "ad": "Wikipedia: Mass–energy equivalence",

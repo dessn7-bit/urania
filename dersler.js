@@ -388,7 +388,7 @@
     el = kok;
     el.innerHTML = '<p class="bos">Dersler yükleniyor…</p>';
     /* Çizimler ayrı yüklenir; yüklenemezse dersler çizimsiz açılır */
-    const cizim = U.betikler(['./cizim.js', './cizim_gokyuzu.js', './cizim_gunes_sistemi.js', './cizim_yildizlar.js', './cizim_gezegen_yasam.js', './cizim_evren.js', './cizim_v3.js', './cizim_v4a.js', './cizim_v4b.js']).catch(e => console.warn(e.message));
+    const cizim = U.betikler(['./cizim.js', './cizim_gokyuzu.js', './cizim_gunes_sistemi.js', './cizim_yildizlar.js', './cizim_gezegen_yasam.js', './cizim_evren.js', './cizim_v3.js', './cizim_v4a.js', './cizim_v4b.js', './cizim_v4c.js']).catch(e => console.warn(e.message));
     try {
       const sozluk = window.Sozluk ? Sozluk.yukle().catch(e => console.warn('Sözlük yüklenemedi: ' + e.message)) : null;
       [D] = await Promise.all([U.veri('dersler'), cizim, sozluk]);

@@ -51,7 +51,7 @@ Not: "(d2/d8/d12/d24 doğrulanmış)" işaretli satırlar ilgili dersin kaynak t
 - Becquerel 1839'da 19 yaşında fotovoltaik etkiyi keşfetti | https://www.epfl.ch/about/campus/wp-content/uploads/2021/06/HIM21_Wyrsch-Nicolas_Photovoltaic-devices.pdf | "discovered (in 1839, at the age of 19) the photovoltaic effect"
 - c-Si bant aralığı 1,12 eV | aynı | "c-Si (crystalline Silicon), Eg = 1.12 eV"
 - Bant aralığından düşük fotonlar soğurulmaz; fazlası ısıya gider | aynı | "Photons with energy less than the band gap are not absorbed"; "Photon energy in excess of band gap is lost to thermalization"
-- Shockley–Queisser tavanı %33,7 (AM1.5) | aynı | "Maximum : 33.7% for AM1.5"
+- Shockley–Queisser tavanı %33,7 (AM1.5); tek eklemli Si için %29,4 | aynı | "Shockley-Queisser limit for single cell : 33.7%"; "Maximum efficiency for single-junction Si: 29.4%" (denetimde eklendi, 2026-10-30 yeniden açıldı)
 - Örnek hesap: 1239,84/1,12 = 1107 nm; 1239,84/550 = 2,254 eV; 2,25 − 1,12 = 1,13 (≈%50); 1239,84/700 = 1,771; 0,65 eV (%37) | HESAP
 - CCD, Boyle ve Smith 2009 Nobel "imaging semiconductor circuit – the CCD sensor" | https://en.wikipedia.org/wiki/List_of_Nobel_laureates_in_Physics | gerekçe
 - CCD %90 ya da fazlası kaydeder | d12 (doğrulanmış)
@@ -66,7 +66,7 @@ Not: "(d2/d8/d12/d24 doğrulanmış)" işaretli satırlar ilgili dersin kaynak t
 - IKAROS, JAXA, 21 Mayıs 2010, 14×14 m (196 m²) / ~200 m²; ilk gezegenlerarası güneş yelkenli araç, güneş yelkeniyle uçmayı başaran ilk araç | aynı | "world's first interplanetary solar sail spacecraft"; "was the first spacecraft to succeed in solar sail flight"
 - LightSail 2, 25 Haziran 2019, güneş yelkeniyle itişi gösterdi | aynı | "successfully demonstrated propulsion by solar sail"
 - Kepler kuyrukların Güneş'ten uzağa baktığını gördü, nedeninin Güneş olduğunu ileri sürdü | aynı | "observed that comet tails point away from the Sun and suggested that the Sun caused the effect"
-- Örnek hesap: 9,08e-6 × 196 = 1,78e-3 N; /9,81 = 1,81e-4 kg; tek foton p = 6,626e-34/5,5e-7 = 1,20e-27 | HESAP
+- Örnek hesap (denetimde 'pirinç tanesi' karşılaştırması kaynaksız ve ~7 kat yanlış olduğu için çıkarıldı): 9,08e-6 × 196 = 1,78e-3 N; /9,81 = 1,81e-4 kg; tek foton p = 6,626e-34/5,5e-7 = 1,20e-27 | HESAP
 
 ## Bölüm 6 — Yıldız ışığını foton foton saymak
 - Çubuklar ~120 milyon, koniler ~6 milyon; çubuklar ~500 nm'ye en duyarlı; foveadan uzakta yoğun | https://cosmosmagazine.com/science/biology/humans-can-see-a-single-photon-at-a-time | "Rods outnumber cones by roughly 120 million to six million"; "away from the fovea"; "about 500 nm"
@@ -77,7 +77,7 @@ Not: "(d2/d8/d12/d24 doğrulanmış)" işaretli satırlar ilgili dersin kaynak t
 - Vega Yaz Üçgeni'nde | d21 (doğrulanmış)
 - 5 kadir = 100 kat | d1 (doğrulanmış)
 - Göz kuantum verimliliği yüzde birkaç, CCD ~%90 | d12 (doğrulanmış)
-- Örnek hesap: 948 × 10 = 9480/nm; π × 0,35² = 0,385 cm²; 9480 × 0,385 = 3650; 10^2,4 = 251,2; 3650/251 = 14,5; ×100 nm ≈ 1450 (100 nm bant genişliği VARSAYIM); (50/7)² = 51,0 | HESAP
+- Örnek hesap: 948 × 10 = 9480/nm; π × 0,35² = 0,385 cm²; 9480 × 0,385 = 3650; 10^2,4 = 251,2; 3650/251 = 14,5; ×100 nm ≈ 1450 (100 nm bant genişliği VARSAYIM); (50/7)² = 51,0; 1450 × 51 ≈ 74.000 | HESAP (denetimde yeniden hesaplandı; metindeki 'birkaç bin' → 'bin beş yüz kadar' düzeltildi)
 
 ## Bölüm 7 — de Broglie
 - de Broglie tezi 1924'te sunuldu, Ocak 1925'te yayımlandı ("Recherches sur la Théorie des Quanta") | https://arxiv.org/pdf/1606.00190 | "presented in early 1924"; "published in January 1925" (Davisson–Germer sayfası: "He proposed in 1924")
@@ -98,7 +98,7 @@ Not: "(d2/d8/d12/d24 doğrulanmış)" işaretli satırlar ilgili dersin kaynak t
 ## Bölüm 9 — Elektronlar tek tek
 - Jönsson 1961 Tübingen, beş yarığa kadar | https://physicsworld.com/a/the-double-slit-experiment/ | "In 1961 he performed the first actual double-slit experiment with electrons ... up to five slits"
 - Merli, Missiroli, Pozzi 1974 Bologna; AJP 1976; film 1976 Brüksel festivalinde ödül | aynı | "first double-slit experiment with single electrons in 1974"; "American Journal of Physics in 1976"; "1976 International Festival on Scientific Cinematography in Brussels"
-- Tonomura ve ark. 1989, Hitachi; <1000 elektron/s; >20 dakika; kareler 8, 270, 2.000, 60.000 | aynı | "fewer than 1,000 electrons per second"; "more than 20 minutes"; "8, 270, 2,000, and 60,000 electrons"
+- Tonomura ve ark. 1989, Hitachi; elektron biprizması; <1000 elektron/s; >20 dakika; kareler 8, 270, 2.000, 60.000 | aynı | "an electron biprism"; "fewer than 1000 electrons per second"; "more than 20 minutes"; "(a) 8 electrons; (b) 270 electrons; (c) 2000 electrons; (d) 60,000" (denetimde yeniden açıldı)
 - Künye: Tonomura, Endo, Matsuda, Kawasaki, Ezawa, Am. J. Phys. 57, 117 (1989) | https://stovneng.folk.ntnu.no/TFY4215_2022/artikler/tonomura_1989.pdf | künye
 - Crease 2002 Physics World anketi; tek elektron çift yarık ilk onda | physicsworld (yukarıda) | "ranked among the top 10"
 - C60 1999 Nature, Zeilinger grubu Viyana; 720 akb; λ = 2,8 pm; ~900 K fırın; 100 nm silisyum nitrür ağ; ~1 m | https://arxiv.org/pdf/1211.3493 | "720 atomic units"; "λ = 2.8 pm"; "about 900 K"; "100 nm period"; "1 meter"
@@ -111,6 +111,7 @@ Not: "(d2/d8/d12/d24 doğrulanmış)" işaretli satırlar ilgili dersin kaynak t
 - Dalga fonksiyonunun modülünün karesi olasılık yoğunluğu (Born 1926) | https://en.wikipedia.org/wiki/Wave_function | "the squared modulus of a wave function that depends upon position is the probability density"
 - Dalga fonksiyonu doğrudan ölçülemez | aynı | "only its relative phase and relative magnitude can be measured"
 - Born 1954 Nobel "statistical interpretation of the wavefunction" (Bothe ile) | Nobel listesi + https://www.britannica.com/biography/Max-Born | gerekçe; "shared the Nobel Prize for Physics in 1954 with Walther Bothe"
+- Genlikler aslında karmaşık sayı | https://en.wikipedia.org/wiki/Wave_function | "Wave functions are complex-valued."
 - Örnek: genlik toplama (a + a)² = 4a², (a − a)² = 0, ortalama 2P | HESAP/kavramsal
 
 ## Bölüm 11 — Ölçüm
@@ -119,6 +120,7 @@ Not: "(d2/d8/d12/d24 doğrulanmış)" işaretli satırlar ilgili dersin kaynak t
 - Dekoherans: sistemin çevresiyle etkileşimi | aynı | "the interaction of a quantum system with its environment"
 - Gazla doldurulunca saçak görünürlüğü üstel azalır | https://arxiv.org/pdf/1211.3493 | "saw an exponential decrease of the observed fringe visibility"
 - Ölçüm = gözlemciden bağımsız her etkileşim | https://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq.ipfs.4everland.io/wiki/Gabor_limit.html (Uncertainty principle) | "any interaction between classical and quantum objects regardless of any observer"
+- Bilinç görüşü: London ve Bauer (1939), Wigner (1960'lar); Wigner sonra uzaklaştı; azınlık görüşü (2011 anketinde 33 kişiden 2'si) | https://en.wikipedia.org/wiki/Von_Neumann%E2%80%93Wigner_interpretation | "consciousness is postulated to be necessary for the completion of the process of quantum measurement"; Wigner "shifted" (denetimde eklendi: eski metin 'tarafların hiçbiri bilince ihtiyaç duymaz' diyordu, bu fazla genel idi)
 - Bilinç gerektiren bir rol kaynakta yok | https://arxiv.org/pdf/1211.3493 (derlemede bilinçli gözlemci rolü geçmez); yorumlar için CERN Courier
 - Ölçüm problemi hâlâ tartışılıyor | https://cerncourier.com/a/the-measurement-problem-measured/ | "physicists still disagree on what quantum mechanics actually means"
 
@@ -148,3 +150,8 @@ Not: "(d2/d8/d12/d24 doğrulanmış)" işaretli satırlar ilgili dersin kaynak t
 - Sözlük tanımları kendi sözlerimizle, ilgili bölüm satırlarındaki kaynaklara dayanır.
 - Soru 6 hesabı: 100 eV → 1,602e-17 J; √(2 × 9,109e-31 × 1,602e-17) = 5,40e-24; λ = 1,23e-10 m | HESAP
 - Soru 5 hesabı: 1239,84/1500 = 0,83 eV | HESAP
+
+## Denetim (2026-10-30, bağımsız doğrulayıcı)
+- Yeniden açılan kaynaklar: physicsworld çift yarık (Tonomura, Jönsson, Merli, Crease, Young), ar5iv Hackermüller (<1000 K kusursuz, ~3000 K birkaç görünür foton, fotonlar algılanmadı), Quantum Insider ve CERN Courier (anket sayıları), Cosmos (Tinsley), APS Millikan, arXiv 1606.00190 (Planck 14.12.1900, Einstein 17.3.1905, Compton Eki 1922, de Broglie, Schrödinger 27.1.1926, Born 25.6.1926), Nobel listesi (tüm gerekçeler), arXiv 1211.3493 (C60, gaz dekoheransı, 3e-10 mbar), EurekAlert 2019, Davisson–Germer, Solar sail, Caltech 948 foton, EPFL.
+- Belirsizlik bölümü: "ölçemediğimiz şey, olmayan bir şeydir" yoruma bağlı (Bohm mekaniğinde parçacığın kesin konumu vardır) → "kuramda ... dalga fonksiyonu yoktur; sınır kuramın kendisinden gelir" (yorum tarafsızlığı).
+- Fotoelektrik benzetmesi "ışık para üstü vermez" fiziksel olarak yanlış yönlendiriyordu (artan enerji elektronun hareket enerjisi olur) → düzeltildi.

@@ -10,7 +10,8 @@ Not: "(dNN doğrulanmış)" işaretli satırlar ilgili dersin kaynak tablosunda 
 - Belirsizlik ilkesi ve dar bölgeye hapsolma | d27 (doğrulanmış)
 - Bohr yarıçapı 5,29177210544 × 10⁻¹¹ m; ħ = 1,054571817 × 10⁻³⁴ J·s; elektron kütlesi 9,1093837139 × 10⁻³¹ kg; ince yapı sabiti 0,0072973525643 | https://en.wikipedia.org/wiki/List_of_physical_constants | değerler
 - Hidrojen temel enerjisi −13,6 eV | d2 (doğrulanmış)
-- Örnek: (1,0546e-34)²/(2 × 9,109e-31 × (5,29e-11)²) = 2,18e-18 J = 13,6 eV; α ħ c / r = 2,307e-28/5,29e-11 = 4,36e-18 J = 27,2 eV; toplam −13,6 eV; 5,29e-11/1e-14 ≈ 5300; 1 cm × 5300 = 53 m | HESAP (kaba virial dengesi; KAVRAMSAL)
+- Örnek: (1,0546e-34)²/(2 × 9,109e-31 × (5,29e-11)²) = 2,18e-18 J = 13,6 eV; α ħ c / r = 2,307e-28/5,29e-11 = 4,36e-18 J = 27,2 eV; toplam −13,6 eV | HESAP (kaba virial dengesi; KAVRAMSAL)
+- Proton yarıçapı ~0,84 fm | https://en.wikipedia.org/wiki/Proton_radius_puzzle | "the Particle Data Group reports a consensus value of 0.8409(4) fm". HESAP: 5,29e-11/0,84e-15 ≈ 63.000; 1 cm → 630 m. (Denetim: eski metin hidrojen atomunu 10 fm'lik altın çekirdeğiyle karşılaştırıyordu → farklı cisim hatası, düzeltildi.)
 
 ## Bölüm 1 — Bohr'un basamakları
 - Bohr 1913, Danimarkalı; durağan yörüngeler; yalnız iç yörüngeye inerken ışık salınır, enerjisi kaybedilen enerjiye eşit | https://britannica.com/science/Bohr-model | "1913, when Danish physicist Niels Bohr proposed the model"; varsayımlar
@@ -27,7 +28,7 @@ Not: "(dNN doğrulanmış)" işaretli satırlar ilgili dersin kaynak tablosunda 
 - Hidrojen için Schrödinger denklemi tam analitik çözüm verir | https://en.wikipedia.org/wiki/Hydrogen_atom | "yields exact analytical answers for the nonrelativistic hydrogen atom"
 - Elektron her yarıçapta bulunabilir; en olası yarıçap Bohr yarıçapı | aynı | "there is a finite probability that the electron may be found at any radius"; Bohr yörüngesi "corresponds to the most probable radius"
 - s, p, d harfleri (l = 0, 1, 2); n enerji, l açısal momentum büyüklüğü, m izdüşüm; spinle dördüncü sayı; dört sayı durumu tam betimler | aynı | "s means ℓ = 0, p means ℓ = 1, d means ℓ = 2"; "described fully by four quantum numbers"
-- İkinci düzeyde bir s, üç p (4 durum) | aynı | ikinci düzey "one state of one type and three of another"
+- İkinci düzeyde bir s, üç p (4 orbital; spinle 8 durum) | aynı | ikinci düzey "one state of one type and three of another"; 4 × 2 = 8 HESAP (denetim: metin aynı paragrafta spini dördüncü sayı sayıp sonra '4 durum' diyordu, tutarsızdı)
 - Pervane benzetmesi ve sınırı | yazarın benzetmesi
 
 ## Bölüm 3 — Spin
@@ -59,6 +60,7 @@ Not: "(dNN doğrulanmış)" işaretli satırlar ilgili dersin kaynak tablosunda 
 - Sirius B 1,018 M☉, yarıçap ~5.635 km | d6 (doğrulanmış)
 - Paragraf hesabı: 1,018 × 1,988e30 = 2,02e30 kg; 4,18879 × (5,635e6)³ = 7,50e20 m³; yoğunluk 2,70e9 kg/m³ | HESAP
 - Örnek: 1e9/(2 × 1,67e-27) = 2,99e35 m⁻³; üzeri −1/3 = 1,49e-12 m; 1,0546e-34/1,5e-12 = 7,0e-23; /9,109e-31 = 7,7e7 m/s = 0,26c | HESAP (mertebe tahmini)
+- Beyaz cüce Fermi enerjisi ~0,3 MeV | https://en.wikipedia.org/wiki/Fermi_energy | "Their Fermi energy is about 0.3 MeV" (beyaz cüceler). HESAP: γ = 1 + 0,3/0,511 = 1,587; β = √(1 − 1/γ²) = 0,78. (Denetim: tam Fermi momentumu ħ(3π²n)^(1/3) bu yoğunlukta ~0,62c verir; 0,26c alt tahmin olduğu metinde belirtildi.)
 
 ## Bölüm 6 — Tünelleme
 - Kavramsal anlatım (dalga fonksiyonunun engel içinde sönümlenmesi) | https://en.wikipedia.org/wiki/Proton%E2%80%93proton_chain | "proton wavefunctions can pass through the repulsive barrier" (yeniden anlatım); KAVRAMSAL
@@ -78,7 +80,7 @@ Not: "(dNN doğrulanmış)" işaretli satırlar ilgili dersin kaynak tablosunda 
 ## Bölüm 8 — Tünelleme teknolojisi
 - 1973 Nobel Esaki, Giaever (deneysel tünelleme, yarı iletken/süperiletken), Josephson (tünel engelinden süperakım) | https://en.wikipedia.org/wiki/List_of_Nobel_laureates_in_Physics | gerekçeler
 - 1986 Nobel Binnig ve Rohrer taramalı tünelleme mikroskobu; Ruska elektron mikroskobu | aynı | gerekçeler
-- STM çalışma ilkesi (uç–yüzey arası tünelleme akımı, uzaklığa sert bağlılık) | KAVRAMSAL (adından ve tünellemenin uzaklık bağımlılığından); atom ölçeği iddiası yazılmadı
+- STM çalışma ilkesi, tek tek atomların görüntülenmesi (sözlük ve soru 9'da geçiyor) | https://en.wikipedia.org/wiki/Scanning_tunneling_microscope | "Tunneling current is exponentially dependent on the separation of the sample and the tip"; "individual atoms can routinely be imaged and manipulated" (denetimde eklendi)
 - Kahng ve Sze Temmuz 1967 Bell Labs yüzer kapı; ilk yüzer kapılı kalıcı bellek; Fowler-Nordheim tünellemesi ince oksitten yük taşır; NAND flash'ın temeli | https://www.3dincites.com/2018/02/invention-tunneling-based-flash-memory/ | "The first floating gate nonvolatile memory device"; tünelleme açıklaması
 - 2025 Nobel Clarke, Devoret, Martinis "macroscopic quantum mechanical tunnelling and energy quantisation in an electric circuit" | Nobel listesi | gerekçe
 
@@ -108,6 +110,7 @@ Not: "(dNN doğrulanmış)" işaretli satırlar ilgili dersin kaynak tablosunda 
 - İlişkinin ancak karşılaştırmayla görünmesi | KAVRAMSAL (her tarafın rastgele görmesinden)
 - Eşzamanlılığın göreliliği | d25 gönderme; sıralamadan bağımsızlık KAVRAMSAL
 - 1997 Zeilinger kuantum ışınlama: kutuplanma durumunu, durumu öğrenmeden başka parçacığa aktardı | Quanta | "transferring a photon's polarization state to another particle without learning that state"
+- Işınlama klasik kanal gerektirir, ışıktan hızlı değildir | https://en.wikipedia.org/wiki/Quantum_teleportation | "Because classical information needs to be sent, quantum teleportation cannot occur faster than the speed of light." (denetimde eklendi)
 - Micius uydusu dolanık foton çiftlerini 1.000 km'den uzağa dağıttı; dinlenince bozulan kuantum anahtarı | Quanta | "distributed entangled photon pairs over more than 1,000 km"
 
 ## Bölüm 13 — Lazer, transistör, atom saati
@@ -124,15 +127,23 @@ Not: "(dNN doğrulanmış)" işaretli satırlar ilgili dersin kaynak tablosunda 
 - Spin dönmesi, aşırı ince düzeyler; 1420,405751768 MHz; 21,106 cm; 5,8743 µeV; ömür ~11 milyon yıl; van de Hulst 1944; Purcell ve Ewen 1951 Harvard; 1952 sonrası haritalar sarmal yapı | https://en.wikipedia.org/wiki/Hydrogen_line | değerler ve alıntılar (ad baş harfleri: "E. M. Purcell and H. I. Ewen"; d7'de Harold Ewen, Edward Purcell)
 - Toz bulutlarından geçer | d14 (doğrulanmış)
 - Doppler | d2 (doğrulanmış); kolların hız haritası KAVRAMSAL
-- 1945–46 Purcell (parafin) ve Bloch (su) protonların NMR'si; MRI 1971–1977 Damadian, Lauterbur, Mansfield | https://arxiv.org/pdf/1006.5719 | alıntılar. Not: 21 cm'deki E. M. Purcell ile NMR'deki Purcell'in aynı kişi olduğu iki kaynakta açıkça yazmıyor; metin bunu kesin olarak iddia etmiyor.
+- 1945–46 Purcell (parafin) ve Bloch (su) protonların NMR'si; MRI 1971–1977 Damadian, Lauterbur, Mansfield | https://arxiv.org/pdf/1006.5719 | alıntılar. Not (denetim): aynı kişi olduğu doğrulandı | https://en.wikipedia.org/wiki/Edward_Mills_Purcell | "shared the 1952 Nobel Prize in Physics with Felix Bloch for his independent discovery (published 1946) of nuclear magnetic resonance (NMR) in liquids and in solids"; "the first to detect radio emissions from neutral galactic hydrogen (the famous 21 cm line)". Metin artık açıkça 'aynı Purcell' ve 1952 Nobel diyor.
 - Proton 42,58 MHz/T; 1,5 T yaygın; klinik 15–80 MHz; hidrojen %99,985; beden yağ ve su | https://labs.phys.utk.edu/mbreinig/phys222core/modules/m12/nmr.html | "g = 42.58 MHz/T"; "1.5 Tesla"; "15 to 80 MHz"; "99.985%"; "primarily fat and water"
 - Örnek: 42,58 × 1,5 = 63,87 MHz; 299.792.458/63,87e6 = 4,69 m; 1420,4/63,9 = 22,2; 2,25/5,87e-6 = 383.000 | HESAP
 
 ## Bölüm 15 — Kuantum bilgisayar
 - Kübit, girişimle hesap | KAVRAMSAL (d27 genlik toplama)
-- Willow: Google Quantum AI, 9 Aralık 2024, Nature + blog; 105 süperiletken transmon kübit; "below threshold" hata düzeltmesi; rastgele devre örnekleme 5 dakika vs 10²⁵ yıl; büyük ölçekli algoritma/ticari uygulama yok; mantıksal hata ~%0,14/döngü, gerekli ~10⁻⁶; Google: RSA'dan "at least 10 years out" | https://en.wikipedia.org/wiki/Willow_processor | değerler ve alıntılar
+- Willow (denetimde 2026-10-30 yeniden açıldı; '10⁻⁶ gerekli' ve 'büyük algoritma/ticari uygulama gösterilmedi' Wikipedia'da eleştirmenlere atfediliyor, metinde de öyle atfedildi; sayfada Ekim 2025 'Quantum Echoes' duyurusu var, metinde yok): Google Quantum AI, 9 Aralık 2024, Nature + blog; 105 süperiletken transmon kübit; "below threshold" hata düzeltmesi; rastgele devre örnekleme 5 dakika vs 10²⁵ yıl; büyük ölçekli algoritma/ticari uygulama yok; mantıksal hata ~%0,14/döngü, gerekli ~10⁻⁶; Google: RSA'dan "at least 10 years out" | https://en.wikipedia.org/wiki/Willow_processor | değerler ve alıntılar
 - Dekoherans | d27 (doğrulanmış)
 
 ## Sözlük, sorular
 - Tanımlar kendi sözlerimizle, yukarıdaki satırlara dayanır.
 - Soru hesapları: 42,58 × 1,5 ≈ 64 MHz; 1300/c ≈ 4,3 µs | HESAP
+
+## Denetim (2026-10-30, bağımsız doğrulayıcı)
+- Yeniden açılan kaynaklar: arXiv astro-ph/0405568 (A. Ray; 550 keV, 0,86 keV, 15,6 milyon K, E0 = 5,9 keV T6 = 15, "virtually absent", Atkinson–Houtermans), arXiv 1808.05966, QuTech, Willow, Hydrogen line, E. M. Purcell, arXiv 1006.5719 (10 fm, Sommerfeld, Stern–Gerlach, Pauli, parafin/su, MRI 1971–77), Nobel listesi (2025 dahil), Quanta 2022 (Clauser, Aspect, 2017 yıldız ışığı, 1997, Micius 2016), APS lazer (Townes 1953 patent, Maiman 16.5.1960), White dwarf, Optica LIGO.
+- Gamow tepesi HESAP: 1,22 × (Z1²Z2² μ T6²)^(1/3) keV, μ = 0,5, T6 = 15 → 5,89 keV (kaynakla aynı); T6 = 15,7 → 6,07 keV.
+- Süperpozisyon: "parçacığın ölçülmeden önce belirli bir yerde olduğunu söylemek deneylerle uyumlu değildir" yoruma bağlıydı (Bohm mekaniği buna uyar) → "sıradan bilye gibi düşünmek deneyleri açıklamaz" (yorum tarafsızlığı).
+- Pauli: "aynı duruma ikiden fazla elektron" → "aynı hareket durumuna zıt spinli ikiden fazla" (aynı kuantum durumunda yalnız bir elektron olur); d28_sinav d28-1 açıklaması da düzeltildi.
+- Şeker küpü (~1 cm³ değil) → "bir santimetreküplük".
+- Flash: NOR türünde yazma sıcak taşıyıcıyla yapılır; "bugünkü flash belleklerde" → "bugünkü yaygın flash belleklerde" (yumuşatma).
