@@ -4,11 +4,11 @@
     "soru": "Depremden yaklaşık 103°'den uzak istasyonlara S dalgası ulaşmaması ne gösterir?",
     "secenekler": [
       "Mantonun tamamen boş olduğunu",
-      "Dış çekirdeğin sıvı olduğunu, çünkü S dalgaları yalnızca katılardan geçebilir",
       "Kabuğun her yerde aynı kalınlıkta olduğunu",
+      "Dış çekirdeğin sıvı olduğunu, çünkü S dalgaları yalnızca katılardan geçebilir",
       "İç çekirdeğin sıvı olduğunu"
     ],
-    "dogru": 1,
+    "dogru": 2,
     "aciklama": "S dalgaları kayma dalgalarıdır ve sıvılardan geçemez. Dünya'nın öbür yarısına giden yollar çekirdekten geçtiği için orada S dalgası kaydedilmemesi dış çekirdeğin sıvı olduğunu gösterir (Jeffreys 1926). Katı iç çekirdeği ise Lehmann, P gölgesindeki zayıf dalgalardan çıkardı.",
     "ders": "d44",
     "bolum": 3
@@ -17,12 +17,12 @@
     "id": "d44-2",
     "soru": "Kuzey Anadolu Fayı nasıl bir faydır ve kayma hızı ne kadardır?",
     "secenekler": [
-      "Ters fay; yılda yaklaşık 2 m",
       "Sağ yanal doğrultu atımlı fay; GPS'e göre yılda yaklaşık 22 ± 7 mm",
+      "Ters fay; yılda yaklaşık 2 m",
       "Ölü bir fay; hiç hareket etmiyor",
       "Okyanus ortası sırt; yılda yaklaşık 1,7 cm açılıyor"
     ],
-    "dogru": 1,
+    "dogru": 0,
     "aciklama": "Yaklaşık 1200 km uzunluğundaki Kuzey Anadolu Fayı'nda iki blok fay boyunca yatay olarak yan yana kayar (sağ yanal doğrultu atımlı). EEFIT raporundaki GPS tahmini yılda 22 ± 7 mm'dir. 1,7 cm/yıl ise Orta Atlantik Sırtı'nın güneydeki yayılma hızıdır.",
     "ders": "d44",
     "bolum": 6
@@ -32,11 +32,11 @@
     "soru": "Stratosferde yükseldikçe sıcaklığın artmasının nedeni nedir?",
     "secenekler": [
       "Güneş'e daha yakın olunması",
-      "Ozon tabakasının Güneş'in morötesi ışığını soğurup ısıya çevirmesi",
       "Meteorların orada yanması",
-      "Su buharının orada yoğunlaşması"
+      "Su buharının orada yoğunlaşması",
+      "Ozon tabakasının Güneş'in morötesi ışığını soğurup ısıya çevirmesi"
     ],
-    "dogru": 1,
+    "dogru": 3,
     "aciklama": "UCAR'a göre ozon molekülleri yüksek enerjili morötesi ışığı soğurur ve bu enerjiyi ısıya çevirir; bu yüzden stratosferde, troposferin tersine, yukarı çıktıkça hava ısınır. Meteorların çoğu daha yukarıda, mezosferde yanar.",
     "ders": "d44",
     "bolum": 9
