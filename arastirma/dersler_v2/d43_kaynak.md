@@ -51,15 +51,15 @@ Kısaltmalar: SM = https://www.smithsonianmag.com/smart-news/1803-rain-rocks-hel
 |---|---|---|
 | [B] 15 Şubat 2013, 09.20 yerel | CHT | "15 February 2013, 09:20 YEKT (UTC+06:00)" |
 | [B] 19,16 ± 0,15 km/s; NASA en parlak an 18,6 km/s | CHM | "19.16 ± 0.15 km/s" ; NASA's peak-brightness figure about 18.6 km/s |
-| [B] Çap 17–20 m; kütle ilk tahmin 12.000–13.000 t, NASA son 10.000 t | CHM | "About 17–20 m" ; "Initial estimate of 12,000–13,000 tonnes. NASA's final estimate is 10,000 tonnes" |
+| [B][D] Çap 17–20 m; NASA kütle ilk 7.700 t, son 10.000 t (DOĞRULAMA: canlı Wikipedia'da "12.000–13.000 t ilk tahmin" yok; IPFS yansısı eski sürüm) | https://en.wikipedia.org/wiki/Chelyabinsk_meteor | "has revised the mass several times from an initial 7700 tonnes, until reaching a final estimate of 10000 tonnes" ; "17 to 20 m" |
 | [B] Göktaşı maddesi: 18 m, 9.100 t | CHT | "approximately 18 m" ; "about 9,100 t" |
-| [B] ~500 kiloton, Hiroşima'nın ~29 katı; 200–470 kt, iki kat belirsizlik | CHM | "About 500 kilotons of TNT" ; "about 29 times the energy released from the atomic bomb detonated at Hiroshima" ; "Other estimates range from 200 kt to 460–470 kt, with uncertainty of up to a factor of two" |
-| [B] Güneş'ten 30 kat parlak | CHM | "momentarily 30 times brighter than the Sun" |
+| [B][D] ~500 kiloton (girişte 400–500), Hiroşima'nın ~30 katı (DOĞRULAMA: canlı maddede "approximately 30 times"); 200 ve 460–470 kt, iki kat belirsizlik | https://en.wikipedia.org/wiki/Chelyabinsk_meteor | "About 500 kilotons of TNT" ; "about 29 times the energy released from the atomic bomb detonated at Hiroshima" ; "Other estimates range from 200 kt to 460–470 kt, with uncertainty of up to a factor of two" |
+| [D] Bir an Güneş'ten parlak (DOĞRULAMA: "30 kat" canlı maddede yok, kaldırıldı) | https://en.wikipedia.org/wiki/Chelyabinsk_meteor | "briefly brighter than the Sun" |
 | [B] En parlak an 29,7 km; NASA ilk hesap 23,3 km | CHM | "About 29.7 km at peak brightness. NASA's earlier estimate was 23.3 km." |
 | [B] Nature çalışması: 30–45 km'de parçalandı; ~12.000 t; 19 m | SD | "broke apart at about 30 to 45 kilometres" ; "12,000 tonnes" ; "19 metres" |
-| [B] 1.491 başvuru, 311 çocuk, 112 hastaneye yatış, ölüm yok; 7.200'den fazla bina, altı kent | CHM | "1,491 people sought medical attention, including 311 children. 112 were hospitalised. No deaths were reported." ; "Over 7,200 across six cities" |
+| [B][D] 1.491 başvuru, 112 hastaneye yatış; 7.200'den fazla bina, altı kent (DOĞRULAMA: "311 çocuk" canlı maddede yok, kaldırıldı) | https://en.wikipedia.org/wiki/Chelyabinsk_meteor | "1,491 people sought medical attention, including 311 children. 112 were hospitalised. No deaths were reported." ; "Over 7,200 across six cities" |
 | [Ö] NASA: 1.600'den fazla yaralı; 23 km; 518 km² | d19_kaynak.md (NFA) | "Over 1,600 people were hurt" ; "14 miles (23 kilometers)" ; "200 square miles (518 square kilometers)" |
-| [B] Science anketi: dışarıdaki 25 kişi UV ile güneş yanığı | SD | "25 people who were outside sunburned by the meteor's ultraviolet light" |
+| [B][D] Science'ta yayımlanan anket: dışarıdaki 25 kişi UV ile güneş yanığı; Wikipedia 20 kişi | SD ; https://en.wikipedia.org/wiki/Chelyabinsk_meteor | "25 people who were outside at the time said they received sunburns" ; "Twenty people reported ultraviolet burns similar to sunburn" |
 | [B] CTBTO 20 istasyon, Antarktika 15.000 km; en büyük infrases; Dünya'yı birden fazla dolandı | CHM | "Detected by 20 CTBTO monitoring stations, including one in Antarctica about 15,000 km away. It was the largest infrasound event ... circled the globe more than once." |
 | [B] Radyant Güneş'e yakın, önceden görülmedi | CHM | "Its radiant was close to the Sun, so it was not seen before entry." |
 | [B] LL5 sıradan kondrit; toplam ~1.000 kg | CHT | "LL5 ordinary chondrite" ; "approximately 1,000 kg" |
@@ -72,15 +72,15 @@ Kısaltmalar: SM = https://www.smithsonianmag.com/smart-news/1803-rain-rocks-hel
 | İddia | Kaynak | Kaynaktaki ifade |
 |---|---|---|
 | [B] 30 Haziran 1908, ~07.14 yerel; Podkamennaya Tunguska havzası | TUN | "30 June 1908 ... about 7:14 local time" ; "Podkamennaya Tunguska River basin" |
-| [B] ~2.150 km²; 80 milyon abartı (1933, ~8.000 km²); 2008 makalesi 60 milyon / ~2.000 km² | TUN | "About 2,150 km²" ; "considered an overestimate" ; 1933 estimate ~8,000 km² ; "a 2008 article gave 60 million over about 2,000 km²" |
+| [B][D] ~2.150 km²; 80 milyon abartı (1934 Whipple makalesinin aktardığı Banerji yorumu, ~8.000 km²); 2008 Scientific American yazısı 60 milyon / ~2.000 km² (DOĞRULAMA: 1933 → 1934) | TUN | "devastated nearly 2150 km2" ; "a 1934 paper by Whipple ... 80 million trees over an area of 8000 km2" ; "Another Scientific American article published during the centennial reported a figure of 60 million trees felled over the same area" |
 | [B] Kelebek deseni ~70 km kanat, ~55 km gövde | TUN | "wingspan of about 70 km and a body length of about 55 km" |
 | [B] Kulik 1921 ulaşamadı; 1927 vardı, krater yok; ~8 km ayakta dalsız ağaçlar; bataklıkta kütük | TUN | "first expedition was in 1921" ; "reached the epicenter in 1927 ... found none" ; "roughly 8 km zone where trees were scorched and stripped of branches but still standing" ; "found a tree stump at its bottom" |
-| [B] Yükseklik 5–10 km; bazı 2013 modelleri 10–14 km | TUN | "5–10 km" ; "Some 2013 models suggest 10–14 km" |
+| [B][D] Yükseklik 5–10 km; bazı bilgisayar modelleri 10–14 km (DOĞRULAMA: "2013" yılı canlı maddede bu modele bağlanmıyor, kaldırıldı) | TUN | "exploded between 5–10 km" ; "exploding at 6-9 mi altitude" (≈10–14 km) |
 | [B] 50–60 m taşsı; 2020 modeli 200 m'ye kadar demir; enerji 3–30 Mt | TUN | "50–60 m diameter meteoroid" ; "A 2020 model suggested an iron asteroid up to 200 m" ; "3–30 Mt TNT" |
 | [Ö] NASA: ~37 m | d19_kaynak.md (NFA) | "about 120 feet (37 meters) across" |
 | [B] En az üç Evenk ölümü | TUN | "At least three Evenks" |
-| [B] Whipple 1930, Kresák 1978 Encke, Sekanina 1983, Farinella 2001 %83/%17 | TUN | aynı ifadeler |
-| [B] Çeko Gölü 7–8 km; 2007 Bologna; 2017 Rus çalışması ≥280 yıl | TUN | aynı ifadeler |
+| [B][D] F. J. W. Whipple (İngiliz meteorolog; Fred Whipple değil) 1930'lar, Kresák 1978 Encke, Sekanina 1983, Farinella 2001 %83 | TUN | "In 1934, the British meteorologist and mathematician F. J. W. Whipple suggested that the Tunguska body was a small comet" (eski sürümde 1930; derste "1930'lar") |
+| [B][D] Çeko Gölü ~8 km kuzeydoğu; Haziran 2007 Bologna, ~10 m parça; 2017 Rus çalışması ≥280 yıl | TUN | "approximately 8 km northeast of the epicenter" ; "In June 2007, scientists from the University of Bologna" ; "at least 280 such annual varves" |
 | [B] Shoemaker ~300 yılda bir; yeni tahmin ~1.000 yılda bir; 5 kt yılda bir | TUN | "Tunguska-sized events about once every 300 years" ; "about once every thousand years, and about 5 kt air bursts roughly once per year" |
 | [H] 3/0,5 = 6; 30/0,5 = 60 | — | hesap |
 
@@ -90,12 +90,12 @@ Kısaltmalar: SM = https://www.smithsonianmag.com/smart-news/1803-rain-rocks-hel
 |---|---|---|
 | [B] Düşüş/buluntu tanımı | WMO | "Falls are meteorites recovered after being observed ... Finds are all other recovered meteorites." |
 | [B] Buluntular düşüşlerden ~30 kat fazla; yanlılık nedenleri | MFS | "finds outnumber falls by about 30 to 1" ; easier to find, weather faster, irons collected, valuable types favored |
-| [B] 1.102 düşüş (Haziran 2012'ye kadar); OC 792 (H 339, L 371, LL 82) %79; karbonlu 44 %4,4; enstatit 16 %1,6; HED 61 ~%6,1; demir 49 / 1.062 %4,6; taş-demir 11 (4 palasit, 7 mezosiderit) %1; Mars 5; Ay 0 | MFS | tablo (WebFetch özeti), "current through June 9, 2012" |
+| [B][D] 1.102 düşüş (Haziran 2012'ye kadar); OC 802 (H 339, H/L 1, L 371, L/LL 9, LL 82) %80,0 (DOĞRULAMA: 792/%79 ara grupları dışarıda bırakıyordu; kaynağın sınıf toplamı "Ordinary: 80.0%", 1.003 içinde); karbonlu 44 %4,4; enstatit 16 %1,6; HED 61 ~%6,1; demir 49 / 1.062 %4,6; taş-demir 11 (4 palasit, 7 mezosiderit) %1; Mars 5; Ay 0 | MFS | tablo (WebFetch özeti), "current through June 9, 2012" |
 | [B] Eski derleme: kondrit %86, akondrit %8, demir %5, taş-demir %1 | WMO | "Chondrites: about 86% of falls" ; "Achondrites: about 8%" ; "Iron meteorites: about 5%" ; "Stony-iron meteorites: about 1%" |
 | [B] Kondrül: uzayda serbestçe yüzerken erimiş gibi görünen silikat taneleri | WMO | "appear to have been melted while they were free-floating objects in space" |
 | [B] Kondritler en eski ve ilkel malzemeler; asteroit kuşağında büyük cisme dönüşmemiş | WMO (ikinci okuma) | "some of the oldest and most primitive materials in the solar system" ; "material from the asteroid belt that never coalesced into large bodies" |
 | [B] Bazı kondritler amino asit dahil organik madde | WMO (ikinci okuma) | "Certain types of chondrites also contain small amounts of organic matter, including amino acids." |
-| [B] Murchison: 28 Eylül 1969, Victoria; >100 kg; CM2; 2010: 70 amino asit / ~14.000 bileşik; SiC ~7 milyar yıl, kaynak tutarsız | MUR | "28 September 1969" ; "Over 100 kg" ; "CM2" ; "70 amino acids among about 14,000 molecular compounds" ; "up to about 7 billion years" ; "3 ± 2 billion years older" |
+| [B][D] Murchison: 28 Eylül 1969, Victoria; ~100 kg (TKW); 2010: 70 amino asit / 14.000 bileşik; SiC ~7 milyar yıl, Güneş Sistemi'nden ~2,5 milyar yıl eski | MUR | "Fall_date = 28 September 1969" ; "TKW = 100 kg" ; "identified 14,000 molecular compounds, including 70 amino acids" ; "determined to be 7 billion years old, about 2.5 billion years older than the 4.54-billion-year age of the Earth" |
 | [B] Akondritlerde kondrül yok; bazıları volkanik kayaçlara benzer; katmanlaşmış gezegenciklerin kabuğu | WMO (ikinci okuma) | "similar to terrestrial igneous rocks" ; lack chondrules ; "crustal material of differentiated planetesimals" |
 | [B] Demirlerin çoğu erimiş gezegenciklerin çekirdeklerinden | WMO | "most iron meteorites are thought to come from the cores of once-molten planetesimals" (özet) |
 | [B] Taş-demir: metal + silikat; palasitler çekirdek üstü sınır bölgesi | WMO (ikinci okuma) | "a mixture of iron-nickel metal and silicate minerals" ; "originated in the boundary zone above the core regions" |
@@ -150,11 +150,11 @@ Kısaltmalar: SM = https://www.smithsonianmag.com/smart-news/1803-rain-rocks-hel
 
 | İddia | Kaynak | Kaynaktaki ifade |
 |---|---|---|
-| [B] Domanitch 1907 Bursa L5; Bursa 1946 L6; ikisi de gözlenmiş düşüş; 39 yıl arayla | ASU | "L5 ordinary chondrite" ; "1907 in Bursa" ; "L6" ; "1946 ... 39 years after Domanitch" ; witnessed falls |
+| [B][D] Domanitch 1907 Bursa L5; Bursa 1946 L6; ikisi de gözlenmiş düşüş; 39 yıl arayla. İkinci kaynak (Domanitch, L5, Bursa ili Orhaneli): https://zh.mindat.org/locentry-1111557.html. MetBull veritabanı robots/Cloudflare nedeniyle açılamadı. "Parçaları kısa süre sonra toplandı" kaynakta yok, kaldırıldı | ASU | "L5 ordinary chondrite" ; "1907 in Bursa" ; "L6" ; "1946 ... 39 years after Domanitch" ; witnessed falls |
 | [B] Akyumak: 2 Ağustos 1981 15.30–16.00; 45–50 kg; IVA; 18 kg Elazığ'daki üniversitede; MB 68; Doğu Anadolu | AKY | "Fell 2 August 1981, 1530-1600 hr" ; "between 45 and 50 kg" ; "18 kg held at Elazig University" ; "Akyumak village, East Anatolia" |
 | [B] Turgut: Konya, Nisan 1999, çiftçi Cemil Günay, 152 kg, ana kütle 140 kg bulanda; MB 103 | TUR | aynı |
-| [B] Sarıçiçek: 2 Eylül 2015 ~23.10 yerel (~20:06 UTC); MB'ye 22 Şubat 2016; konsorsiyum Ozan Ünsalan (İstanbul Üniv.); NASA uyduları; ~40 km parçalanma; İÜ Mühendislik Fak. Jeoloji Müzesi; sayfa makine çevirisi | KAR | "from around 23:10 hours" ; "~20:06 UTC" ; "February 22, 2016" ; "Ozan Ünsalan (Istanbul University) leads the Sarıçiçek Meteorite Consortium" ; "broke up at roughly 40 km" ; "Geological Museum of Istanbul University's Faculty of Engineering" |
-| [B] 343 taş; ilk belgelenmiş howardit düşüşü; ~1 m meteoroit; 22 ± 2 milyon yıl; Antionia 16,7 km; 12–14 milyon yıl regolit maruziyeti; MAPS 54(5) 2019; Ünsalan ve Jenniskens yazarlar arasında | SAR | "343 documented stones" ; "the first documented howardite fall" ; "~1 m sized" ; "22 ± 2 Ma" ; "16.7 km diameter 'Antionia' crater" ; "12–14 Ma in a regolith" ; "vol. 54, no. 5, pp. 953–1008, May 2019" |
+| [B][D] Sarıçiçek: 2 Eylül 2015, 20:10:30 UT = 23.10 yerel (MB 105 özeti: https://www.meteoritestudies.com/meteorites/view/62806/sariiek/ "2015 Sept 2 at 20:10:30 UT", "HED achondrite (Howardite)", MB no. 105); MB onayı Şubat 2016 (karmaka 22 Şubat; derste yalnız ay verildi); konsorsiyum Ozan Ünsalan (İstanbul Üniv.); NASA uyduları; ~40 km parçalanma; İÜ Mühendislik Fak. Jeoloji Müzesi; sayfa makine çevirisi | KAR | "from around 23:10 hours" ; "~20:06 UTC" ; "February 22, 2016" ; "Ozan Ünsalan (Istanbul University) leads the Sarıçiçek Meteorite Consortium" ; "broke up at roughly 40 km" ; "Geological Museum of Istanbul University's Faculty of Engineering" |
+| [B][D] 343 taş; ilk belgelenmiş howardit düşüşü; ~1 m meteoroit; 22 ± 2 milyon yıl; Antionia 16,7 km (bağlantı yaş eşleşmesine dayanır: "The 16.7 km diameter Antionia impact crater on Vesta was formed on terrain of the same age as given by the 4He retention age of Sariçiçek" — derste "olası doğum yeri" diye yumuşatıldı); 12–14 milyon yıl regolit maruziyeti; MAPS 54(5) 2019; Ünsalan ve Jenniskens yazarlar arasında | SAR | "343 documented stones" ; "the first documented howardite fall" ; "~1 m sized" ; "22 ± 2 Ma" ; "16.7 km diameter 'Antionia' crater" ; "12–14 Ma in a regolith" ; "vol. 54, no. 5, pp. 953–1008, May 2019" |
 | [Ö] Vesta en parlak asteroit | d19.json | "Vesta aynı zamanda gökte en parlak görünen asteroittir" |
 
 ## Bölüm 10 — Krater
@@ -196,7 +196,7 @@ Kısaltmalar: SM = https://www.smithsonianmag.com/smart-news/1803-rain-rocks-hel
 | [B] 5 kt yılda bir; Tunguska 300–1.000 yılda bir | TUN | yukarıdaki satır |
 | [B] 20 m ~60 yılda bir | CHM | yukarıdaki satır |
 | [Ö] Hera 7 Ekim 2024 fırlatma | d19_kaynak.md | ESA |
-| [B] Şubat–Mart 2026 manevra, üç yanma + düzeltme, dört hafta, 123 kg hidrazin, 367 m/s; Kasım 2026 varış; en az 6 ay; Milani ve Juventas; ~1 km'den krater incelemesi; Dimorphos ~170 m; Ekim 2026'dan hassas yanmalar; haber tarihi 25 Mart 2026 | HERA | aynı (özet) |
+| [B][D] Şubat–Mart 2026 manevra, üç yanma + düzeltme, dört hafta, 123 kg hidrazin, 367 m/s (ikinci kaynak https://en.wikipedia.org/wiki/Hera_(space_mission): "In March 2026, Hera successfully performed its second deep-space maneuver, burning 123 kg of hydrazine and changing its velocity by 367 m/s"; varış hâlâ "November 2026"); Wikipedia Hera maddesi Dimorphos ~151 m; Kasım 2026 varış; en az 6 ay; Milani ve Juventas; ~1 km'den krater incelemesi; Dimorphos ~170 m; Ekim 2026'dan hassas yanmalar; haber tarihi 25 Mart 2026 | HERA | aynı (özet) |
 | [Ö] Dimorphos ~160 m; Apophis 13 Nisan 2029, ~32.000 km, çıplak göz | d19_kaynak.md | aynı |
 | [H] P ≈ 1 − e^(−80/60) ≈ 0,74 (Poisson varsayımı) | — | hesap |
 
@@ -208,14 +208,17 @@ Kısaltmalar: SM = https://www.smithsonianmag.com/smart-news/1803-rain-rocks-hel
 | [H] Çok yerden gözlemle yol/yörünge hesabı | DF | dark-flight analizi yörünge (bright-flight) verisinden başlar |
 | [B] Füzyon kabuğu, regmaglipt; demir ~3,5 kat, taş ~1,5 kat ağır; mıknatıs, ipe asılı mıknatıs; metal benekler; iz testi (manyetit siyah-gri, hematit kırmızı-kahverengi, göktaşı genellikle iz bırakmaz); cüruf ve öğütme bilyeleri; nikel; kuvars; kabarcık/gözenek → volkanik | MSFC | aynı (özet) |
 | [B] Kaynak temizleme konusunda bir şey söylemiyor | MSFC | "The page does not give advice on handling the specimen or on whether to clean it." (özet) |
-| — Türkiye'de göktaşlarının yasal durumu: kaynak bulunamadı, derste "bulamadık" denildi | — | — |
+| [D] Türk hukukunda göktaşlarına özgü düzenleme yok; mülkiyet TMK taşınır mülkiyeti hükümleriyle (m.762–777) değerlendirilmeli — bir hukukçunun görüşü | https://dergipark.org.tr/tr/pub/auhfd/article/637424 (Karauz 2019, AÜHFD 68(2), 445–478) | "Bu konu hakkında, Türk Hukukunda bir düzenleme bulunmadığı gibi, henüz bir inceleme de yapılmamıştır." ; "4271 sayılı Türk Medenî Kanununun taşınır mülkiyetine ilişkin hükümleri (m.762-777) çerçevesinde" |
 | [Ö] Kentte çıplak göz sınırı ~4 kadir; meteor takvimi | d19.json | aynı |
 | [H] 400 g × 1,5 = 600 g; × 3,5 = 1.400 g | — | hesap |
 
 ## Notlar (kaynaklar arası farklar, derste belirtildi)
-- Çelyabinsk: kütle 9.100 / 10.000 / 12.000–13.000 t; yaralı 1.491 (Wikipedia) / >1.600 (NASA) / ~1.200 (SpaceDaily); yükseklik 23,3 / 29,7 / 30–45 km; Çebarkul parçası 654 / 540 kg.
+- Çelyabinsk: kütle 9.100 (göktaşı maddesi) / 10.000 (NASA son; ilk 7.700) / ~12.000 t (Nature, SpaceDaily); yaralı 1.491 (Wikipedia) / >1.600 (NASA) / ~1.200 (SpaceDaily); yükseklik 23,3 / 29,7 / 30–45 km; Çebarkul parçası 654 / 540 kg.
 - Tunguska boyu: NASA 37 m, Wikipedia 50–60 m (2020 modeli 200 m'ye kadar).
 - Krater sayısı: NASA ~190, Dünya Çarpma Veritabanı 196 (Ağustos 2026).
 - ALH84001 kopma yaşı: ana metin ~17 milyon yıl, Mars göktaşları tablosu 15,0 ± 0,8 milyon yıl.
-- Dimorphos: d19 ~160 m, Space.com ~170 m.
+- Dimorphos: d19 ~160 m, Space.com ~170 m, Wikipedia Hera maddesi ~151 m.
+
+## Doğrulama turu (2026-10-30)
+[D] = bağımsız doğrulamada canlı kaynakla (Wikipedia ham metni, arXiv/ADS özeti, yayıncı sayfası) yeniden okundu. Chelyabinsk için yazarın kullandığı IPFS yansısı eski sürüm çıktı; sayılar canlı en.wikipedia.org maddesine göre düzeltildi. Hesaplar (Venüs/bolit, Murrili, Çelyabinsk enerjisi, U-238/U-235, kurtulma enerjisi, Poisson, Chicxulub) python3 ile yeniden yapıldı; hepsi tuttu (802/1.003 ≈ 0,80 güncellendi).
 - CAI: 4.567,30 ± 0,16 ve 4.568,3 ± 0,7 milyon yıl.
