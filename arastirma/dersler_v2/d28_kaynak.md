@@ -86,7 +86,7 @@ Not: "(dNN doğrulanmış)" işaretli satırlar ilgili dersin kaynak tablosunda 
 
 ## Bölüm 9 — Süperpozisyon ve kedi
 - Süperpozisyon tanımı (genliklerin toplamı) | d27 (Born kuralı, doğrulanmış); KAVRAMSAL
-- Schrödinger 1935, Einstein ile EPR makalesini tartışırken; düzenek (çelik oda, Geiger sayacı, az radyoaktif madde, bir saatte yarı yarıya, çekiç, hidrosiyanik asit şişesi); amaç Kopenhag yorumunun sorunlarını göstermek; "quite ridiculous cases" | https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Schr%C3%B6dinger's_cat | alıntılar
+- Schrödinger 1935, Einstein ile EPR makalesini tartışırken; düzenek (çelik oda, Geiger sayacı, az radyoaktif madde, bir saatte yarı yarıya, çekiç, hidrosiyanik asit şişesi); amaç Kopenhag yorumunun sorunlarını göstermek; "quite ridiculous cases" | https://en.wikipedia.org/wiki/Schr%C3%B6dinger's_cat | alıntılar
 - Dekoherans | d27 (doğrulanmış)
 
 ## Bölüm 10 — Dolanıklık

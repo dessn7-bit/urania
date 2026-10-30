@@ -411,6 +411,288 @@
     "bolum": 5
    },
    {
+    "id": "d22-1",
+    "soru": "İstanbul'da (yaklaşık 28,96° D) Türkiye Saati UTC+3 iken ortalama Güneş meridyenden yaklaşık saat kaçta geçer ve neden?",
+    "secenekler": [
+     "Tam 12:00'de, çünkü saat dilimleri her kentin öğlesine göre ayarlanır",
+     "Yaklaşık 13:04'te, çünkü İstanbul'un yerel ortalama zamanı UTC'den yalnızca yaklaşık 1 sa 56 dk ileride, saat ise 3 saat ileride",
+     "Yaklaşık 11:04'te, çünkü İstanbul 45° meridyeninin doğusundadır",
+     "Yaklaşık 14:00'te, çünkü yaz saati her yıl Mart'ta bir saat ileri alınır"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre her derece boylam 4 dakikadır: 28,955° × 4 dk ≈ 1 sa 55 dk 49 sn. Saat UTC'den 3 saat ileri olduğundan ortalama öğle 12:00 + 3 sa − 1 sa 55,8 dk ≈ 13:04 olur. timeanddate'in Haziran 2025 tablosunda zaman denkleminin sıfır olduğu 13 Haziran'da Güneş'in geçişi 13:04.",
+    "ders": "d22",
+    "bolum": 3
+   },
+   {
+    "id": "d22-2",
+    "soru": "Güneş saati 3 Kasım civarında kol saatinden yaklaşık 16,5 dakika ileridedir. Bu farkın (zaman denkleminin) iki nedeni hangisidir?",
+    "secenekler": [
+     "Atmosferik kırılma ve ışık kirliliği",
+     "Dünya'nın yörüngesinin basıklığı ve ekseninin tutuluma eğikliği",
+     "Artık saniyeler ve saat dilimleri",
+     "Ay'ın kütleçekimi ve presesyon"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre zaman denklemi iki dalganın toplamıdır: yörünge basıklığından gelen yaklaşık 7,66 dakikalık yıllık bileşen ve eksen eğikliğinden gelen yaklaşık 9,87 dakikalık yarım yıllık bileşen. İkisi birlikte Kasım başında yaklaşık +16 dk 33 sn, Şubat ortasında yaklaşık −14 dk 6 sn verir.",
+    "ders": "d22",
+    "bolum": 1
+   },
+   {
+    "id": "d22-3",
+    "soru": "Ağırlıklar ve Ölçüler Genel Konferansı'nın (CGPM) 15 Ekim 2026'daki 5 numaralı kararı artık saniye için ne öngörüyor?",
+    "secenekler": [
+     "Her yıl sonunda bir artık saniye eklenmesini",
+     "Artık saniyelerin 2100'e kadar sürmesini",
+     "20 Mayıs 2027'den itibaren UTC'nin kesintisiz olmasını ve UT1 ile farkının en çok 3.600 saniyeye kadar büyüyebilmesini",
+     "UTC'nin kaldırılıp yerine UT1'in yasal saat yapılmasını"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre 28. CGPM, 5 numaralı kararla sürekli UTC'nin 20 Mayıs 2027'de yürürlüğe gireceğine ve UT1 ile UTC farkının en çok 3.600 saniye (1 saat) olacağına karar verdi. 1972–2016 arasında 27 artık saniye eklenmişti; sonuncusu 31 Aralık 2016'daydı.",
+    "ders": "d22",
+    "bolum": 6
+   },
+   {
+    "id": "d22-4",
+    "soru": "698 sayılı yasa (kabul 26 Aralık 1925) Türkiye'de takvimde neyi değiştirdi?",
+    "secenekler": [
+     "Hicri takvimi tamamen yasakladı",
+     "Ay ve günleri ilk kez Gregoryen takvime uydurdu; 13 gün atlandı",
+     "Yıl sayımını değiştirdi: 31 Kânunuevvel 1341'in ertesi günü 1 Ocak 1926 oldu; Hicri takvim özel durumlarda kaldı",
+     "Türkiye'yi UTC+3 saat dilimine geçirdi"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre ay-gün eşitlemesi 1917'de 13 gün atlanarak yapılmıştı. 698 sayılı yasa ise uluslararası takvim mebdeini kabul etti: 1341 yılı Kânunuevvel'inin 31. gününü izleyen gün 1 Ocak 1926'dır. Üçüncü madde Hicri kameri takvimin özel durumlarda kullanılmasını sürdürdü ve kameri ay başlarını rasathaneye bıraktı.",
+    "ders": "d22",
+    "bolum": 11
+   },
+   {
+    "id": "d34-1",
+    "soru": "Hayashi'nin disk modelinde sıcaklık T = 280 ÷ √r kuralıyla düşer (T kelvin, r AB). Su 170 K'de donuyorsa kar çizgisi yaklaşık nerededir?",
+    "secenekler": [
+     "Yaklaşık 1,6 AB, çünkü 280 ÷ 170 ≈ 1,6",
+     "Yaklaşık 2,7 AB, çünkü (280 ÷ 170)² ≈ 2,7",
+     "Yaklaşık 5,2 AB, Jüpiter'in tam yerinde",
+     "Yaklaşık 0,6 AB, çünkü 170 ÷ 280 ≈ 0,6"
+    ],
+    "dogru": 1,
+    "aciklama": "√r = 280 ÷ T olduğundan r = (280 ÷ 170)² ≈ 1,647² ≈ 2,71 AB. Bu, Wikipedia'nın Hayashi'ye (1981) atfettiği 2,7 AB ile aynıdır. Donma sıcaklığı 150 K alınırsa sonuç yaklaşık 3,5 AB olur; kaynakların farklı değer vermesinin bir nedeni budur.",
+    "ders": "d34",
+    "bolum": 4
+   },
+   {
+    "id": "d34-2",
+    "soru": "Kruijer ve arkadaşlarının (2017) demir göktaşı izotoplarına dayanan çalışmasına göre Jüpiter hakkında ne söylenebilir?",
+    "secenekler": [
+     "Jüpiter en son oluşan gezegendir; Satürn'den sonra doğmuştur",
+     "Jüpiter başka bir yıldızdan yakalanmış bir gezegendir",
+     "Jüpiter'in çekirdeği hiç oluşmadı; gaz doğrudan çöktü",
+     "Jüpiter'in çekirdeği ilk 1 milyon yılda yaklaşık 20 Dünya kütlesine ulaştı ve iç ile dış disk malzemesini ayıran bir duvar oldu"
+    ],
+    "dogru": 3,
+    "aciklama": "Tungsten ve molibden izotopları iki ayrı malzeme deposu gösterir; bu depolar ~1 milyon yıldan 3–4 milyon yıla kadar karışmadı. Yazarlara göre aradaki duvar, çekirdeği ilk 1 milyon yılda ~20, 3–4 milyon yılda ≥50 Dünya kütlesine ulaşan Jüpiter'di; bu yüzden en yaşlı gezegen sayılır.",
+    "ders": "d34",
+    "bolum": 7
+   },
+   {
+    "id": "d34-3",
+    "soru": "Geç Ağır Bombardıman fikrine yöneltilen eleştirilerden biri hangisidir?",
+    "secenekler": [
+     "Apollo'nun getirdiği erimiş kayaçların çoğunun tek bir çarpmadan (Imbrium) gelmiş olabilmesi; bu yüzden yaşların tek tarihte toplanması bir yanılsama olabilir",
+     "Ay'da hiç çarpma krateri bulunmaması",
+     "Ay kayalarının 1 milyar yıldan genç olması",
+     "Nice modelinin dev gezegenlerin hiç göç etmediğini kanıtlaması"
+    ],
+    "dogru": 0,
+    "aciklama": "Ay'ın düşük çekiminde enkaz uzağa savrulur; pek çok bilim insanı Apollo örneklerinin büyük kısmının Imbrium çarpmasından geldiğinden şüphelenir. Ay göktaşlarındaki eriyik yaşları da 2,5–3,9 milyar yıla yayılır. Ayrıca erken dev gezegen dengesizliği kanıtları Nice modelini geç bir yağmurun nedeni olmaktan çıkarır. Uzlaşma yoktur.",
+    "ders": "d34",
+    "bolum": 10
+   },
+   {
+    "id": "d34-4",
+    "soru": "67P kuyruklu yıldızında Rosetta'nın ölçtüğü D/H oranı Dünya'nın suyu tartışmasını nasıl etkiledi?",
+    "secenekler": [
+     "Oran Dünya'nınkiyle tıpatıp aynı çıktı; suyun kuyruklu yıldızlardan geldiği kanıtlandı",
+     "67P'de hiç su bulunamadı",
+     "Oran Dünya suyununkinin üç katından fazla çıktı; asteroitlerin ya da Dünya'nın kendi yapı malzemesinin daha büyük pay taşıdığı modeller güçlendi",
+     "Oran, Dünya'nın suyunun Güneş rüzgârından geldiğini gösterdi"
+    ],
+    "dogru": 2,
+    "aciklama": "ROSINA aleti (Aralık 2014) Dünya suyununkinin üç katından fazla bir D/H oranı ölçtü. Dünya'nın suyu büyük ölçüde böyle kuyruklu yıldızlardan gelseydi oran daha yüksek olurdu. Suca zengin göktaşlarının oranı ise Dünya'nınkiyle genel olarak uyumludur; 2020'deki enstatit kondrit çalışması da yerel kökeni destekler. Konu hâlâ tartışmalıdır.",
+    "ders": "d34",
+    "bolum": 12
+   },
+   {
+    "id": "d35-1",
+    "soru": "MESSENGER'ın verileriyle Merkür'ün çekirdeği hakkında 2019'da ne bulundu?",
+    "secenekler": [
+     "Merkür'ün hiç metal çekirdeği olmadığı",
+     "Çekirdeğin tamamen sıvı olduğu",
+     "Çekirdeğin içinde, çekirdeğin yaklaşık yarısı büyüklüğünde katı bir iç çekirdek olduğu",
+     "Çekirdeğin gezegen hacminin yalnızca %15'i olduğu"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre Genova'nın ekibi Nisan 2019'da MESSENGER'ın radyo izleme verileriyle çekim alanını inceledi ve yaklaşık 2000 km çaplı, çekirdeğin yaklaşık yarısı büyüklüğünde katı bir iç çekirdek bildirdi. 2007'deki librasyon ölçümleri ise çekirdeğin bir kısmının eriyik olduğunu göstermişti. %15, Dünya'nın çekirdeğinin hacim payıdır.",
+    "ders": "d35",
+    "bolum": 2
+   },
+   {
+    "id": "d35-2",
+    "soru": "Merkür'de bir güneş günü (gün doğumundan gün doğumuna) yaklaşık ne kadar sürer?",
+    "secenekler": [
+     "58,6 Dünya günü, dönüş süresi kadar",
+     "88 Dünya günü, bir Merkür yılı kadar",
+     "Yaklaşık 176 Dünya günü, yani iki Merkür yılı",
+     "24 saat, Dünya'daki gibi"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre Merkür iki turda üç kez döner (3:2 rezonans). Dönüş ve dolanma aynı yönde olduğu için 1/S = 1/58,646 − 1/87,969 ile S ≈ 175,9 gün çıkar; NASA 175,94 gün verir. Bu, iki Merkür yılı ya da üç dönüşe eşittir.",
+    "ders": "d35",
+    "bolum": 5
+   },
+   {
+    "id": "d35-3",
+    "soru": "Venüs, Dünya'dan daha az güneş enerjisi soğurduğu hâlde yüzeyi neden 737 K'dir?",
+    "secenekler": [
+     "Güneş'e Merkür'den daha yakın olduğu için",
+     "İçindeki radyoaktif elementler yüzeyi ısıttığı için",
+     "92 barlık karbondioksit atmosferi yüzeyin yaydığı ısıyı hapsettiği için; sera etkisi yaklaşık 510 K ekler",
+     "Bulutları güneş ışığının tamamını soğurduğu için"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre Venüs'ün Bond albedosu 0,77'dir; parlak bulutlar ışığın çoğunu yansıtır ve kara cisim sıcaklığı yalnızca 226,6 K'dir. Ama kalın CO₂ atmosferi yüzeyden kaçan kızılötesi ısıyı tutar: 737 − 226,6 ≈ 510 K'lik bir sera ısınması. Dünya'da bu fark yalnızca 34 K'dir. Venüs Güneş'e Merkür'den daha uzaktır.",
+    "ders": "d35",
+    "bolum": 11
+   },
+   {
+    "id": "d35-4",
+    "soru": "Maat Mons yakınındaki volkan bacasıyla ilgili 2023 bulgusu için hangisi doğrudur?",
+    "secenekler": [
+     "Bir iniş aracı püskürmeyi yerinde fotoğrafladı",
+     "Magellan'ın 1991'de sekiz ay arayla çektiği radar görüntülerinde baca büyüyüp biçim değiştirdi; en iyi açıklama püskürme, ama duvar çökmesi dışlanamıyor",
+     "Venus Express bacadan yükselen lavı kızılötesinde canlı izledi",
+     "Bulgu, Venüs'te volkan olmadığını kanıtladı"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre Herrick ve Hensley, Magellan'ın Şubat ve Ekim 1991 görüntülerini karşılaştırdı: baca yaklaşık 2,2 km²'den 4 km²'ye büyüdü, biçimi bozuldu ve neredeyse ağzına kadar doldu. Modellere göre en iyi açıklama püskürmedir; ancak depremle tetiklenen bir duvar çökmesi de mümkündür, bu yüzden güçlü ama kesin olmayan bir kanıttır.",
+    "ders": "d35",
+    "bolum": 10
+   },
+   {
+    "id": "d36-1",
+    "soru": "Samuel ve ekibinin Ekim 2023'te yayımladığı çalışma, Mars'ın çekirdeği hakkındaki resmi nasıl değiştirdi?",
+    "secenekler": [
+     "Mars'ın hiç çekirdeği olmadığını gösterdi",
+     "Mantonun dibinde erimiş bir silikat katmanı buldu; metal çekirdeğin yarıçapını yaklaşık 1650 km'ye indirdi ve çekirdeğin daha yoğun olduğunu gösterdi",
+     "Çekirdeğin yarıçapını 3000 km'ye çıkardı",
+     "Çekirdeğin tamamen katı olduğunu kesin olarak kanıtladı"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre ekip, 18 Eylül 2021'deki bir göktaşı çarpmasının çekirdek sınırında kırınan dalgalarını ve Phobos'un yörünge verilerini kullandı. Önceki yorumların çekirdeğin parçası sandığı sıvı kaya katmanını ayırınca çekirdek yarıçapı 1650 ± 20 km'ye indi ve yoğunluğu yaklaşık 6,5 g/cm³ çıktı. Katı iç çekirdek iddiası ise 2025'te ayrı bir çalışmadan geldi ve doğrulanmayı bekliyor.",
+    "ders": "d36",
+    "bolum": 3
+   },
+   {
+    "id": "d36-2",
+    "soru": "Olympus Mons'un Dünya'daki volkanlardan çok daha büyük olmasının derste verilen nedenleri nelerdir?",
+    "secenekler": [
+     "Mars'ın daha sıcak bir çekirdeği ve daha kalın bir atmosferi olması",
+     "Mars'ta levha hareketi olmadığı için sıcak noktanın hep aynı yeri beslemesi ve düşük çekim",
+     "Mars'ın Güneş'e daha yakın olması",
+     "Olympus Mons'un aslında bir çarpma krateri olması"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre Mars'ın kabuğu hareket eden levhalara bölünmediği için sıcak noktanın üstündeki kabuk yerinde kalır ve magma hep aynı yerde birikir; Dünya'da ise levha kaydıkça bir volkan zinciri oluşur. Düşük çekim de volkanların daha büyük olabilmesine izin verir. Volkanın ortalama eğimi yalnızca yaklaşık 5°'dir.",
+    "ders": "d36",
+    "bolum": 5
+   },
+   {
+    "id": "d36-3",
+    "soru": "MAVEN, Mars'ın atmosferinin büyük kısmını uzaya kaybettiğini hangi ölçümle gösterdi?",
+    "secenekler": [
+     "Kutup başlıklarının kalınlığını ölçerek",
+     "Üst atmosfer ile yüzeydeki argon izotoplarını karşılaştırarak; argonun yaklaşık %65'inin kaybolduğunu buldu",
+     "Mars göktaşlarındaki fosilleri inceleyerek",
+     "Phobos'un yörüngesindeki değişimi ölçerek"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre argon soy gazdır; kayalara bağlanamaz, yalnızca uzaya kaçarak kaybolabilir. Hafif izotop daha kolay kaçtığı için kalan argon ağırlaşır. Jakosky ve ekibi (2017) bu farktan argonun yaklaşık %65'inin, Güneş rüzgârının püskürtmesiyle uzaya kaçtığını hesapladı; karbondioksitin çoğu da bu yolla kaybolmuştur.",
+    "ders": "d36",
+    "bolum": 10
+   },
+   {
+    "id": "d36-4",
+    "soru": "19 Şubat 2027 karşı konumunda Mars için hangisi doğrudur?",
+    "secenekler": [
+     "Mars en yakın olası uzaklıkta, 54,6 milyon km'de olacak ve dürbünde kutup başlığı seçilecek",
+     "Uzak bir karşı konum: ~101 milyon km, 13,8 yay saniyesi, −1,2 kadir; en iyi durumdan yaklaşık 5 kat sönük ve dürbünde yalnızca renkli bir nokta",
+     "Mars yalnızca gün doğumundan hemen önce kısa bir süre görülebilecek",
+     "Mars Akrep takımyıldızında olacak"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre Mars bu kez yörüngesinin Güneş'ten uzak kısmında olduğu için yaklaşık 101 milyon km'ye kadar yaklaşacak; görünür çapı 13,8 yay saniyesi, parlaklığı −1,2 kadir olacak. En parlak olası değer −2,94 kadir olduğundan fark 1,74 kadir, yani yaklaşık 5 kattır. Karşı konumda Mars akşamdan sabaha kadar Aslan takımyıldızında görülür; yüzey ayrıntısı için teleskop gerekir.",
+    "ders": "d36",
+    "bolum": 14
+   },
+   {
+    "id": "d44-1",
+    "soru": "Depremden yaklaşık 103°'den uzak istasyonlara S dalgası ulaşmaması ne gösterir?",
+    "secenekler": [
+     "Mantonun tamamen boş olduğunu",
+     "Kabuğun her yerde aynı kalınlıkta olduğunu",
+     "Dış çekirdeğin sıvı olduğunu, çünkü S dalgaları yalnızca katılardan geçebilir",
+     "İç çekirdeğin sıvı olduğunu"
+    ],
+    "dogru": 2,
+    "aciklama": "S dalgaları kayma dalgalarıdır ve sıvılardan geçemez. Dünya'nın öbür yarısına giden yollar çekirdekten geçtiği için orada S dalgası kaydedilmemesi dış çekirdeğin sıvı olduğunu gösterir (Jeffreys 1926). Katı iç çekirdeği ise Lehmann, P gölgesindeki zayıf dalgalardan çıkardı.",
+    "ders": "d44",
+    "bolum": 3
+   },
+   {
+    "id": "d44-2",
+    "soru": "Kuzey Anadolu Fayı nasıl bir faydır ve kayma hızı ne kadardır?",
+    "secenekler": [
+     "Sağ yanal doğrultu atımlı fay; GPS'e göre yılda yaklaşık 22 ± 7 mm",
+     "Ters fay; yılda yaklaşık 2 m",
+     "Ölü bir fay; hiç hareket etmiyor",
+     "Okyanus ortası sırt; yılda yaklaşık 1,7 cm açılıyor"
+    ],
+    "dogru": 0,
+    "aciklama": "Yaklaşık 1200 km uzunluğundaki Kuzey Anadolu Fayı'nda iki blok fay boyunca yatay olarak yan yana kayar (sağ yanal doğrultu atımlı). EEFIT raporundaki GPS tahmini yılda 22 ± 7 mm'dir. 1,7 cm/yıl ise Orta Atlantik Sırtı'nın güneydeki yayılma hızıdır.",
+    "ders": "d44",
+    "bolum": 6
+   },
+   {
+    "id": "d44-3",
+    "soru": "Stratosferde yükseldikçe sıcaklığın artmasının nedeni nedir?",
+    "secenekler": [
+     "Güneş'e daha yakın olunması",
+     "Meteorların orada yanması",
+     "Su buharının orada yoğunlaşması",
+     "Ozon tabakasının Güneş'in morötesi ışığını soğurup ısıya çevirmesi"
+    ],
+    "dogru": 3,
+    "aciklama": "UCAR'a göre ozon molekülleri yüksek enerjili morötesi ışığı soğurur ve bu enerjiyi ısıya çevirir; bu yüzden stratosferde, troposferin tersine, yukarı çıktıkça hava ısınır. Meteorların çoğu daha yukarıda, mezosferde yanar.",
+    "ders": "d44",
+    "bolum": 9
+   },
+   {
+    "id": "d44-4",
+    "soru": "Atmosferi olmasaydı Dünya'nın ortalama sıcaklığı yaklaşık 255 K olurdu; gerçek ortalama 288 K'dir. Aradaki fark neyle ilgilidir?",
+    "secenekler": [
+     "Dünya'nın iç çekirdeğinden yüzeye gelen ısıyla",
+     "Sera etkisiyle: bazı gazlar yüzeyin kızılötesi ışınımının bir kısmını soğurup yeniden yayar",
+     "Ay'ın gelgit ısıtmasıyla",
+     "Dünya'nın Güneş'e her yıl yaklaşmasıyla"
+    ],
+    "dogru": 1,
+    "aciklama": "33 K'lik fark sera etkisinin ölçüsüdür. Yüzey metrekare başına ortalama ~398 W ışır, uzaya ise ~239 W ulaşır; aradaki kısım atmosferde tutulup kısmen yüzeye geri yayılır. Su buharı ve karbondioksit başlıca sera gazlarıdır.",
+    "ders": "d44",
+    "bolum": 11
+   }
+  ],
+  "kucuk_cisimler": [
+   {
     "id": "gunes_sistemi-10",
     "soru": "Güneş'ten uzaklaşmakta olan bir kuyruklu yıldızın kuyruğu hangi yöne bakar?",
     "secenekler": [
@@ -509,60 +791,172 @@
     "bolum": 13
    },
    {
-    "id": "d22-1",
-    "soru": "İstanbul'da (yaklaşık 28,96° D) Türkiye Saati UTC+3 iken ortalama Güneş meridyenden yaklaşık saat kaçta geçer ve neden?",
+    "id": "d41-1",
+    "soru": "New Horizons, Plüton'daki Sputnik Planitia ovasında tek bir krater bile göremedi. Bu en iyi nasıl açıklanır?",
     "secenekler": [
-     "Tam 12:00'de, çünkü saat dilimleri her kentin öğlesine göre ayarlanır",
-     "Yaklaşık 13:04'te, çünkü İstanbul'un yerel ortalama zamanı UTC'den yalnızca yaklaşık 1 sa 56 dk ileride, saat ise 3 saat ileride",
-     "Yaklaşık 11:04'te, çünkü İstanbul 45° meridyeninin doğusundadır",
-     "Yaklaşık 14:00'te, çünkü yaz saati her yıl Mart'ta bir saat ileri alınır"
+     "Plüton'a hiç gök taşı çarpmadığı için",
+     "Ovanın azot buzu yavaş bir konveksiyonla sürekli yenilendiği ve yüzeyin çok genç olduğu için",
+     "New Horizons ovayı çok uzaktan, kraterleri seçemeyecek bir çözünürlükle görüntülediği için",
+     "Kraterler kalın bir atmosferin altında gizlendiği için"
     ],
     "dogru": 1,
-    "aciklama": "Derse göre her derece boylam 4 dakikadır: 28,955° × 4 dk ≈ 1 sa 55 dk 49 sn. Saat UTC'den 3 saat ileri olduğundan ortalama öğle 12:00 + 3 sa − 1 sa 55,8 dk ≈ 13:04 olur. timeanddate'in Haziran 2025 tablosunda zaman denkleminin sıfır olduğu 13 Haziran'da Güneş'in geçişi 13:04.",
-    "ders": "d22",
-    "bolum": 3
+    "aciklama": "Derse göre ovanın 20–30 km'lik çokgen hücreleri, yılda yaklaşık 2 cm hızla dönen azot buzu konveksiyonudur. Yüzey bu yüzden genç kalır: tahminler 10 milyon yıldan genç, yaklaşık 1 milyon yıl, en yenisi yaklaşık 180.000 yıl.",
+    "ders": "d41",
+    "bolum": 5
    },
    {
-    "id": "d22-2",
-    "soru": "Güneş saati 3 Kasım civarında kol saatinden yaklaşık 16,5 dakika ileridedir. Bu farkın (zaman denkleminin) iki nedeni hangisidir?",
+    "id": "d41-2",
+    "soru": "Charon'un yörüngesinden (a = 19.596 km, P = 6,3872 gün) Newton'un formülüyle yaklaşık 1,46 × 10²² kg bulunur. Bu sayı neyin kütlesidir?",
     "secenekler": [
-     "Atmosferik kırılma ve ışık kirliliği",
-     "Dünya'nın yörüngesinin basıklığı ve ekseninin tutuluma eğikliği",
-     "Artık saniyeler ve saat dilimleri",
-     "Ay'ın kütleçekimi ve presesyon"
+     "Yalnızca Plüton'un",
+     "Yalnızca Charon'un",
+     "Plüton ile Charon'un toplamının",
+     "Plüton'un beş uydusunun toplamının"
+    ],
+    "dogru": 2,
+    "aciklama": "Formül birbirini dolanan iki cismin toplam kütlesini verir. NASA'nın değerleri 1,303 × 10²² (Plüton) ve 0,159 × 10²² kg (Charon) toplanınca aynı sonuç çıkar. Charon ağır olduğu için ortak kütle merkezi Plüton'un dışındadır.",
+    "ders": "d41",
+    "bolum": 7
+   },
+   {
+    "id": "d41-3",
+    "soru": "Ceres'teki Occator kraterinin parlak lekeleri (faküla) için Dawn'ın bulguları neyi gösterir?",
+    "secenekler": [
+     "Taze su buzu kaplı, yeni oluşmuş kraterlerdir",
+     "Yüzeye yükselen tuzlu sıvının bıraktığı, çoğunlukla sodyum karbonattan oluşan tuz birikintileridir",
+     "Güneş ışığını yansıtan metal parçalarıdır",
+     "Ceres'e düşen buzlu bir kuyruklu yıldızın kalıntısıdır"
     ],
     "dogru": 1,
-    "aciklama": "Derse göre zaman denklemi iki dalganın toplamıdır: yörünge basıklığından gelen yaklaşık 7,66 dakikalık yıllık bileşen ve eksen eğikliğinden gelen yaklaşık 9,87 dakikalık yarım yıllık bileşen. İkisi birlikte Kasım başında yaklaşık +16 dk 33 sn, Şubat ortasında yaklaşık −14 dk 6 sn verir.",
-    "ders": "d22",
+    "aciklama": "Haziran 2016 çalışmasına göre parlak madde çoğunlukla sodyum karbonattır. Cerealia'daki tuzlar hâlâ su taşır, yani yakın zamanda yüzeye çıkmıştır. Çekim ölçümleri yaklaşık 40 km derinde geniş bir salamura rezervuarı gösterdi.",
+    "ders": "d41",
+    "bolum": 10
+   },
+   {
+    "id": "d41-4",
+    "soru": "Rubin Gözlemevi'nin bulduğu 2026 ED138'in çapı neden 600 ile 1.500 km gibi geniş bir aralıkta veriliyor?",
+    "secenekler": [
+     "Cisim düzensiz biçimli olduğu için en kısa ve en uzun ekseni verilmiş",
+     "Uzaklığı bilinmediği için",
+     "Yüzeyinin ışığı ne kadar yansıttığı (albedo) bilinmediği için; aynı parlaklık albedoya göre farklı çaplara karşılık gelir",
+     "Rubin'in görüntüleri bulanık olduğu için"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre aynı parlaklıkta çap albedonun kareköküyle ters orantılıdır. 2,5 katlık çap aralığı 6,25 katlık bir albedo aralığına karşılık gelir. Çapı kızılötesi gözlemler daraltacak.",
+    "ders": "d41",
+    "bolum": 14
+   },
+   {
+    "id": "d42-1",
+    "soru": "Rosetta, 67P çekirdeğinin ortalama yoğunluğunu yaklaşık 533 kg/m³ ölçtü. Bu sonuç en iyi nasıl yorumlanır?",
+    "secenekler": [
+     "Çekirdek neredeyse saf, sıkı su buzundan oluşur",
+     "Çekirdek, hacminin yaklaşık dörtte üçü boş olan, kütlece tozu buzdan fazla, çok gözenekli bir yapıdır",
+     "Çekirdeğin içinde büyük bir mağara vardır",
+     "Çekirdek demir ve nikelden oluşur"
+    ],
+    "dogru": 1,
+    "aciklama": "Pätzold ve ekibine göre gözeneklilik %72–74'tür, kütlece toz buzdan yaklaşık dört kat fazladır ve iç yapı büyük ölçekte türdeştir, büyük boşluk yoktur. Bu, 'kirli kartopu'ndan çok gevşek, buzlu bir toz yığınıdır.",
+    "ders": "d42",
     "bolum": 1
    },
    {
-    "id": "d22-3",
-    "soru": "Ağırlıklar ve Ölçüler Genel Konferansı'nın (CGPM) 15 Ekim 2026'daki 5 numaralı kararı artık saniye için ne öngörüyor?",
+    "id": "d42-2",
+    "soru": "Bir kuyruklu yıldızın iyon kuyruğu neden Güneş'in tam tersine düz bir çizgi hâlinde uzanır?",
     "secenekler": [
-     "Her yıl sonunda bir artık saniye eklenmesini",
-     "Artık saniyelerin 2100'e kadar sürmesini",
-     "20 Mayıs 2027'den itibaren UTC'nin kesintisiz olmasını ve UT1 ile farkının en çok 3.600 saniyeye kadar büyüyebilmesini",
-     "UTC'nin kaldırılıp yerine UT1'in yasal saat yapılmasını"
+     "Çünkü iyonlar kuyruklu yıldızın yörüngesinde geride kalır",
+     "Çünkü iyonlar Güneş rüzgârının manyetik alan çizgilerini izler ve rüzgâr kuyruklu yıldızdan çok daha hızlıdır",
+     "Çünkü Dünya'nın manyetik alanı onu çeker",
+     "Çünkü iyonlar toz taneciklerinden daha ağırdır"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre iyon kuyruğu yörüngeyi değil, Güneş rüzgârının taşıdığı manyetik alan çizgilerini izler; rüzgâr 400–800 km/s ile akar. Toz kuyruğu ise yörüngede geride kaldığı için kavislenir.",
+    "ders": "d42",
+    "bolum": 4
+   },
+   {
+    "id": "d42-3",
+    "soru": "Oort bulutunun varlığı hakkındaki bilgimiz hangisine dayanır?",
+    "secenekler": [
+     "Hubble Uzay Teleskobu'nun buluttaki cisimleri doğrudan görüntülemesine",
+     "Voyager 1'in buluta girip ölçüm yapmasına",
+     "Uzun dönemli kuyruklu yıldızların her yönden gelmesinden ve yörüngelerinden yapılan çıkarıma",
+     "Radyo teleskoplarla ölçülen sıcaklığına"
     ],
     "dogru": 2,
-    "aciklama": "Derse göre 28. CGPM, 5 numaralı kararla sürekli UTC'nin 20 Mayıs 2027'de yürürlüğe gireceğine ve UT1 ile UTC farkının en çok 3.600 saniye (1 saat) olacağına karar verdi. 1972–2016 arasında 27 artık saniye eklenmişti; sonuncusu 31 Aralık 2016'daydı.",
-    "ders": "d22",
+    "aciklama": "Oort 1950'de uzun dönemli kuyruklu yıldızların gezegen düzleminden değil her yönden gelmesini küresel bir bulutla açıkladı. Bulut hiç doğrudan gözlenmedi; NASA ona 'kuramsal' der. Voyager 1 ona ancak yaklaşık 300 yıl sonra girecek.",
+    "ders": "d42",
     "bolum": 6
    },
    {
-    "id": "d22-4",
-    "soru": "698 sayılı yasa (kabul 26 Aralık 1925) Türkiye'de takvimde neyi değiştirdi?",
+    "id": "d42-4",
+    "soru": "Astronomy dergisine göre 1973'te 'yüzyılın kuyruklu yıldızı' diye duyurulan Kohoutek neden hayal kırıklığı yarattı?",
     "secenekler": [
-     "Hicri takvimi tamamen yasakladı",
-     "Ay ve günleri ilk kez Gregoryen takvime uydurdu; 13 gün atlandı",
-     "Yıl sayımını değiştirdi: 31 Kânunuevvel 1341'in ertesi günü 1 Ocak 1926 oldu; Hicri takvim özel durumlarda kaldı",
-     "Türkiye'yi UTC+3 saat dilimine geçirdi"
+     "Güneş'e yaklaşırken tamamen parçalandığı için",
+     "Tahminler parlaklaşma üssünü (n) gerçekçi olmayan yükseklikte, 4 civarında kabul ettiği; kuyruklu yıldız ise sıradan bir hızla (n ≈ 2,5) parladığı için",
+     "Dünya'nın öbür yarıküresinden görüldüğü için",
+     "Ay ışığı onu gölgede bıraktığı için"
+    ],
+    "dogru": 1,
+    "aciklama": "Formül m = H + 5 log Δ + 2,5 n log r'de n = 4 varsayımı uzun dönemli kuyruklu yıldızların parlaklığını fazla tahmin ettirir. Derse göre Kohoutek'te yanlış olan kuyruklu yıldız değil, tahminlerdi.",
+    "ders": "d42",
+    "bolum": 13
+   },
+   {
+    "id": "d43-1",
+    "soru": "Bir ateş topunun söndüğü noktanın tam altında göktaşı aramak neden çoğu zaman sonuç vermez?",
+    "secenekler": [
+     "Çünkü göktaşları yere çarpınca buharlaşır ve iz bırakmaz",
+     "Çünkü parlak uçuş tipik olarak 20–30 km yükseklikte biter; sonraki karanlık uçuşta taşı yüksek irtifa rüzgârları birkaç kilometre sürükleyebilir ve parçalar uzun bir saçılma alanına dağılır",
+     "Çünkü göktaşları yere hep çok sıcak düşüp toprağın derinine gömülür",
+     "Çünkü ateş topları yalnız gündüz görülür ve konumları bilinemez"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre (Towner ve ark. 2022) parlak uçuş tipik olarak 20–30 km'de biter; ardından gelen karanlık uçuşta jet akımları düşüş noktasını birkaç kilometre kaydırabilir. Bu yüzden yörünge ve rüzgâr modelleriyle arama alanı hesaplanır. NASA'ya göre göktaşlarının çoğu yere soğuk düşer.",
+    "ders": "d43",
+    "bolum": 2
+   },
+   {
+    "id": "d43-2",
+    "soru": "Müze koleksiyonlarındaki buluntularda demir göktaşları çok kalabalık görünür. Gözlenmiş düşüşlere göre demirlerin gerçek payı yaklaşık ne kadardır ve fark neden doğar?",
+    "secenekler": [
+     "Yaklaşık %50; çünkü Dünya'ya düşen cisimlerin yarısı gezegencik çekirdeğidir",
+     "Yaklaşık %4,6; demirler kolay fark edildiği, yavaş aşındığı ve tarih boyunca toplandığı için buluntularda fazla görünür",
+     "Yaklaşık %79; çünkü sıradan kondritlerin çoğu aslında demirdir",
+     "Yaklaşık %0,5; çünkü demir göktaşları yalnız Mars'tan gelir"
+    ],
+    "dogru": 1,
+    "aciklama": "Haziran 2012'ye kadar kayıtlı düşüşlerde ana türüne göre sınıflanmış 1.062 düşüşün 49'u demirdir (yaklaşık %4,6); sıradan kondritler yaklaşık %79'dur. Buluntular yanlıdır: demirler sıradan kayaya benzemez, ağırdır, yavaş aşınır ve işe yarar diye toplanmıştır.",
+    "ders": "d43",
+    "bolum": 5
+   },
+   {
+    "id": "d43-3",
+    "soru": "Güneş Sistemi'nin yaşı için en sık kullanılan 4.567,30 ± 0,16 milyon yıllık değer nereden gelir?",
+    "secenekler": [
+     "Dünya'nın en yaşlı kayaçlarından, Jack Hills zirkonlarından",
+     "Ay'dan getirilen Apollo örneklerinden",
+     "Karbonlu kondritlerdeki kalsiyum-alüminyumca zengin kapsamların (CAI) kurşun-kurşun yaşından",
+     "Güneş'in parlaklığının yıldız modelleriyle karşılaştırılmasından"
     ],
     "dogru": 2,
-    "aciklama": "Derse göre ay-gün eşitlemesi 1917'de 13 gün atlanarak yapılmıştı. 698 sayılı yasa ise uluslararası takvim mebdeini kabul etti: 1341 yılı Kânunuevvel'inin 31. gününü izleyen gün 1 Ocak 1926'dır. Üçüncü madde Hicri kameri takvimin özel durumlarda kullanılmasını sürdürdü ve kameri ay başlarını rasathaneye bıraktı.",
-    "ders": "d22",
-    "bolum": 11
+    "aciklama": "Derse göre CV grubu kondritlerden dört CAI'nin kurşun-kurşun yaşlarının ortalaması 4.567,30 ± 0,16 milyon yıldır ve gezegen oluşumunun sıfır anı olarak kullanılır. Dünya kendini yenilediği için en yaşlı Dünya mineralleri (Jack Hills zirkonları) yalnız en az 4,404 milyar yaşındadır.",
+    "ders": "d43",
+    "bolum": 7
+   },
+   {
+    "id": "d43-4",
+    "soru": "2 Eylül 2015'te Bingöl'e düşen Sarıçiçek göktaşı için hangisi doğrudur?",
+    "secenekler": [
+     "Bir demir göktaşıdır ve tek parça hâlinde bulunmuştur",
+     "Mars'tan geldiği, içindeki gazların Viking ölçümlerine benzemesinden anlaşılmıştır",
+     "Belgelenmiş ilk howardit düşüşüdür; 343 taş kayda geçmiştir ve Vesta'daki Antionia kraterinden yaklaşık 22 milyon yıl önce fırlatıldığı hesaplanmıştır",
+     "Türkiye'ye düşen ilk ve tek göktaşıdır"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre 2019'da Meteoritics and Planetary Science'ta yayımlanan Sarıçiçek Konsorsiyumu makalesi onu belgelenmiş ilk howardit düşüşü olarak tanımlar; 343 taş belgelendi. Yaklaşık 1 metrelik meteoroit 22 ± 2 milyon yıl önce Vesta'daki 16,7 km'lik Antionia kraterinden fırlatıldı. Türkiye'ye daha önce de göktaşı düştü (Domanitch 1907, Bursa 1946, Akyumak 1981).",
+    "ders": "d43",
+    "bolum": 9
    }
   ],
   "yildizlar": [
@@ -677,7 +1071,9 @@
     "aciklama": "Derse göre kütle toplamı, Güneş kütlesi cinsinden a³ ÷ P² ile bulunur (a astronomik birim, P yıl). 8 × 8 × 8 = 512, 16 × 16 = 256; 512 ÷ 256 = 2. Bu, tek bir yıldızın değil, iki yıldızın toplam kütlesidir.",
     "ders": "d15",
     "bolum": 5
-   },
+   }
+  ],
+  "yildiz_olum": [
    {
     "id": "yildizlar-09",
     "soru": "Bir beyaz cüceyi kendi ağırlığı altında çökmekten ne korur?",
@@ -733,6 +1129,514 @@
     "aciklama": "Derse göre GW170817 iki nötron yıldızının birleşmesiydi ve hem kütleçekim dalgasıyla hem ışıkla gözlenen ilk olay oldu. İlk kara delik birleşmesi GW150914'tü; iki sinyalin yaklaşık iki saniye arayla gelmesi dalgaların ışıkla aynı hızda yayıldığını gösterir.",
     "ders": "d16",
     "bolum": 11
+   },
+   {
+    "id": "d45-1",
+    "soru": "Jocelyn Bell'in 1967'de bulduğu atan radyo kaynağının uzaylı sinyali olmadığına ekibin kanaat getirmesinde en çok ne etkili oldu?",
+    "secenekler": [
+     "Sinyalin her gün farklı bir saatte gelmesi",
+     "21 Aralık 1967'de gökyüzünün başka bir yerinde aynı türden ikinci bir atan kaynağın bulunması",
+     "Hewish'in sinyali hemen bir nötron yıldızı olarak tanımlaması",
+     "Sinyalin görünür ışıkta da görülmesi"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre Bell 21 Aralık 1967'de ikinci bir atarca buldu; gökyüzünün farklı köşelerinde aynı yöntemle sinyal gönderen iki uygarlık olması akla yatkın değildi. Hewish önce sinyali insan yapımı parazit sanmıştı; görünür ışıkta atan ilk atarca 1969'da Yengeç'te bulundu.",
+    "ders": "d45",
+    "bolum": 1
+   },
+   {
+    "id": "d45-2",
+    "soru": "Periyodu 1 saniye, periyot türevi 10⁻¹⁵ olan bir atarcanın karakteristik yaşı yaklaşık ne kadardır? (1 yıl ≈ 3,156 × 10⁷ s)",
+    "secenekler": [
+     "Yaklaşık 16.000 yıl",
+     "Yaklaşık 1,6 milyon yıl",
+     "Yaklaşık 16 milyon yıl",
+     "Yaklaşık 16 milyar yıl"
+    ],
+    "dogru": 2,
+    "aciklama": "Karakteristik yaş = periyot / (2 × periyot türevi) = 1 / (2 × 10⁻¹⁵) = 5 × 10¹⁴ s; 5 × 10¹⁴ / 3,156 × 10⁷ ≈ 1,6 × 10⁷ yıl, yani yaklaşık 16 milyon yıl. Derste vurgulandığı gibi bu, çok hızlı başlangıç dönüşü ve basit manyetik frenleme varsayan bir tahmindir; Yengeç'te tahmin (1.280 yıl) gerçek yaştan (972 yıl) yaklaşık %30 fazladır.",
+    "ders": "d45",
+    "bolum": 4
+   },
+   {
+    "id": "d45-3",
+    "soru": "NASA'nın NICER aleti bir nötron yıldızının yarıçapını nasıl ölçer?",
+    "secenekler": [
+     "Yıldızın diskini doğrudan fotoğraflayıp çapını ölçerek",
+     "Manyetik kutuplardaki sıcak lekelerden gelen X ışını atımlarının biçiminden; ışığın güçlü çekimde bükülmesi atım biçimini sıkılığa bağlı olarak değiştirir",
+     "Yıldızın tayfındaki demir çizgilerinin genişliğinden",
+     "Yıldızın önünden geçen bir gezegenin gölgesinden"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre NICER her X ışını fotonunun varış anını ölçer; sıcak lekeler yıldız döndükçe görünüp kaybolur ve ışığın bükülmesi bu süreleri değiştirir. Atım biçiminden sıkılık (G × M / R c²) ve kütle, onlardan yarıçap çıkar. PSR J0030+0451 için 1,44 M☉ ve 13,02 km bulundu.",
+    "ders": "d45",
+    "bolum": 10
+   },
+   {
+    "id": "d45-4",
+    "soru": "Hulse–Taylor atarcası (PSR B1913+16) genel görelilik için neden önemlidir?",
+    "secenekler": [
+     "Kütleçekim dalgalarını doğrudan yakalayan ilk dedektördür",
+     "Yörüngesi kütleçekim dalgalarıyla enerji kaybının öngördüğü hızda küçülür: periyot her yıl 76,5 mikrosaniye kısalır ve gözlenen/öngörülen oranı 0,9983 ± 0,0016'dır",
+     "Bilinen en ağır nötron yıldızıdır ve TOV sınırını aşar",
+     "Çevresinde Güneş Sistemi dışındaki ilk gezegenler bulunmuştur"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre 1974'te Arecibo'da bulunan sistemde yörünge yılda yaklaşık 3,5 m küçülür; Weisberg ve Huang'ın 2016 sonucuna göre gözlenen küçülmenin kuramın öngörüsüne oranı 0,9983 ± 0,0016'dır. Bu, kütleçekim dalgalarının dolaylı kanıtıdır ve 1993 Nobel'ini getirdi. İlk ötegezegenler ise PSR B1257+12'nin çevresinde bulundu (1992).",
+    "ders": "d45",
+    "bolum": 13
+   },
+   {
+    "id": "d46-1",
+    "soru": "S301 yıldızı Sgr A*'ın çevresinde 8,7 yılda dolanıyor ve ~12 AB'ye kadar yaklaşıyor. Gökbilimciler bu yıldızla öncelikle neyi ölçmeyi umuyor?",
+    "secenekler": [
+     "Kara deliğin elektrik yükünü",
+     "Kara deliğin dönmesini, yörüngedeki çerçeve sürüklenmesinin yarattığı kaymadan",
+     "Samanyolu'nun merkeze uzaklığını, yıldızın ıraklığından",
+     "Kara deliğin Hawking sıcaklığını"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre dönen kara delik çevresindeki uzay-zamanı sürükler (Lense–Thirring etkisi) ve yakın yörüngelerin yönünü yavaşça çevirir. ESO'ya göre bunu ölçmek için S301'in en az iki tam turu gerekiyor; sonraki en yakın geçiş 2031'de.",
+    "ders": "d46",
+    "bolum": 3
+   },
+   {
+    "id": "d46-2",
+    "soru": "M–σ ilişkisi neden şaşırtıcı bulunur?",
+    "secenekler": [
+     "Çünkü kara deliğin kütleçekimi şişkinlikteki uzak yıldızları neredeyse hiç etkilemediği hâlde kütlesi onların hız dağılımıyla sıkı biçimde ilişkilidir",
+     "Çünkü yalnızca Samanyolu için geçerlidir",
+     "Çünkü kara delik kütlesi galaksi diskinin büyüklüğüyle tam orantılıdır",
+     "Çünkü hız dağılımı arttıkça kara delik kütlesi azalır"
+    ],
+    "dogru": 0,
+    "aciklama": "Kara deliğin çekimi yalnızca çok yakın çevresinde baskındır; şişkinlik yıldızları binlerce ışık yılı uzaktadır. Yine de kütle, hız dağılımının yaklaşık dördüncü-beşinci kuvvetiyle artar. Kormendy ve Ho'ya göre kara delikler disklerle ise ilişkili değildir.",
+    "ders": "d46",
+    "bolum": 6
+   },
+   {
+    "id": "d46-3",
+    "soru": "Eddington sınırında ε = 0,1 ile beslenen bir kara delik kütlesini her 50 milyon yılda e katına çıkarır. 100 Güneş kütleli bir tohum için z = 7,64'teki J0313–1806'nın 1,6 milyar M☉'lik kara deliği neden sorun yaratır?",
+    "secenekler": [
+     "Çünkü o çağda Eddington sınırı yoktu",
+     "Çünkü gereken yaklaşık 16,6 e-katlanma ~830 milyon yıl sürer; bu, evrenin o anki ~680 milyon yıllık yaşından uzundur",
+     "Çünkü 100 Güneş kütleli kara delikler hiç madde yutamaz",
+     "Çünkü kara delik o kadar büyükse kuasar görünmez olurdu"
+    ],
+    "dogru": 1,
+    "aciklama": "Büyüme 1,6 × 10⁷ kat; ln(1,6 × 10⁷) ≈ 16,6 Salpeter zamanı × 50 milyon yıl ≈ 830 milyon yıl. Kesintisiz beslenseydi bile yetişemezdi; bu yüzden 10⁵ M☉ civarında ağır tohumlar ya da Eddington'u aşan büyüme dönemleri tartışılıyor.",
+    "ders": "d46",
+    "bolum": 9
+   },
+   {
+    "id": "d46-4",
+    "soru": "Yaklaşık 10⁹ Güneş kütleli, dönmeyen bir kara deliğin yanına Güneş benzeri bir yıldız düşerse ne beklenir?",
+    "secenekler": [
+     "Yıldız parçalanır ve aylarca süren parlak bir gelgit yırtılma olayı görülür",
+     "Yıldız kara delikten sekip geri fırlatılır",
+     "Yıldız parçalanmadan, parlama görülmeden olay ufkunun içine girer, çünkü kara delik Hills kütlesinden ağırdır",
+     "Yıldız bir nötron yıldızına dönüşür"
+    ],
+    "dogru": 2,
+    "aciklama": "Gelgit yarıçapı kütlenin küp köküyle, olay ufku kütleyle doğru orantılı büyür. Güneş benzeri bir yıldız için iki yarıçap yaklaşık 10⁸ M☉'de eşitlenir (Hills kütlesi); dönmeyen ve daha ağır bir kara delikte yıldız parçalanacağı noktaya varmadan ufka girer.",
+    "ders": "d46",
+    "bolum": 11
+   }
+  ],
+  "samanyolu": [
+   {
+    "id": "evren-01",
+    "soru": "Hubble'ın ayar çatalı diyagramı için hangisi doğrudur?",
+    "secenekler": [
+     "Eliptik galaksiler zamanla sarmal galaksilere dönüşür",
+     "Bir evrim sırası değildir; galaksiler çatal boyunca birinden ötekine sırayla dönüşmez",
+     "Sarmal galaksiler yaşlanınca eliptik olur; erken tür adı bu yüzden verilmiştir",
+     "Samanyolu çatalda çubuksuz bir sarmal olarak yer alır"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre erken ve geç tür adları yanlış bir evrim inancına yol açmıştır; Hubble böyle bir yorum kastetmediğini açıkça belirtmişti. NASA'ya göre Samanyolu çubuklu sarmaldır.",
+    "ders": "d7",
+    "bolum": 4
+   },
+   {
+    "id": "evren-02",
+    "soru": "İstanbul'dan (41° kuzey) hangisini kendi gözünle ya da dürbünle görebilirsin?",
+    "secenekler": [
+     "Büyük Macellan Bulutu",
+     "Küçük Macellan Bulutu",
+     "Galaksimizin merkezindeki kara delik Sgr A*",
+     "Andromeda Galaksisi; ışıklı bir semtte dürbün işini kolaylaştırır"
+    ],
+    "dogru": 3,
+    "aciklama": "Derse göre Macellan Bulutları yaklaşık 20° ve 15° kuzey enleminin kuzeyinden görülmez; kara deliğin kendisi ise ışık yaymaz. Andromeda İstanbul'un göğündedir; ışığı geniş bir alana yayıldığı için ışıklı semtlerde dürbün işini kolaylaştırır.",
+    "ders": "d7",
+    "bolum": 5
+   },
+   {
+    "id": "evren-03",
+    "soru": "Aktif bir galaksinin parlak çekirdeğinin enerjisi nereden gelir?",
+    "secenekler": [
+     "Merkezdeki dev kara deliğe düşen gazın oluşturduğu, ısınıp parlayan yığılma diskinden",
+     "Çekirdekte aynı anda patlayan milyarlarca süpernovadan",
+     "Kara deliğin olay ufkunun içinden kaçan ışıktan",
+     "Galaksideki karanlık maddenin yanmasından"
+    ],
+    "dogru": 0,
+    "aciklama": "Derse göre enerjinin kaynağı merkezdeki dev kara deliktir: içeri düşen gaz kara deliğin çevresinde bir yığılma diski oluşturur, disk kütleçekimi ve sürtünmeyle çok ısınır ve parlak ışıma yapar.",
+    "ders": "d7",
+    "bolum": 9
+   },
+   {
+    "id": "evren-04",
+    "soru": "Samanyolu ile Andromeda bir gün birleşirse ne olması beklenir?",
+    "secenekler": [
+     "Yıldızların çoğu bilardo topları gibi birbirine çarpar",
+     "Gaz bulutları da yıldızlar gibi birbirinin içinden etkilenmeden geçer",
+     "Yıldızlar neredeyse hiç çarpışmaz; gaz ise sıkışıp yıldız doğumunu tetikleyebilir",
+     "Güneş Sistemi kesin olarak yok olur"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre yıldızların arası inanılmaz boştur; yıldızlar birbirinin yanından geçer ama kütleçekimleri yörüngelerini değiştirir. Gaz ise birbirine çarpıp yavaşlar ve yıldız doğumunu tetikleyebilir.",
+    "ders": "d7",
+    "bolum": 7
+   },
+   {
+    "id": "d47-1",
+    "soru": "Kapteyn'in 1922 modeli Güneş'i galaksinin merkezine yaklaşık 2.000 ışık yılı uzağa koydu. Bu yanılgının asıl nedeni neydi?",
+    "secenekler": [
+     "Yıldızlararası tozun ışığı söndürdüğü bilinmiyordu; düzlem boyunca her yönde görüş aynı uzaklıkta kesildiği için Güneş ortada sanıldı",
+     "Kapteyn yalnız güney yarımküreden gözlem yapabiliyordu",
+     "O yıllarda teleskoplar yıldızları ayırt edemiyordu",
+     "Kapteyn yıldızların hareketlerini hesaba katmayı unuttu"
+    ],
+    "dogru": 0,
+    "aciklama": "Derse göre model düzlemden uzak yönlerde çalıştı ama düzlemin içinde, yıldızlararası sönükleşme bilinmediği için çöktü. Trumpler kızarmanın sanılandan çok büyük olduğunu gösterince galaksi ~100.000 ışık yılına büyüdü, Güneş merkezden ~30.000 ışık yılı uzağa taşındı.",
+    "ders": "d47",
+    "bolum": 1
+   },
+   {
+    "id": "d47-2",
+    "soru": "Kızılötesi taramalar Kalkan–Erboğa kolunda beklenenden yaklaşık yüzde 30 fazla kırmızı dev bulurken Yay–Karina kolunda fazlalık bulmadı. Bundan ne sonuç çıkarıldı?",
+    "secenekler": [
+     "Samanyolu'nun hiç sarmal kolu yoktur",
+     "Yay–Karina kolu yakın zamanda yok olmuştur",
+     "Yaşlı yıldızlarda yalnız iki ana kol (Kahraman ve Kalkan–Erboğa) belirgindir; gaz ve genç yıldızlar ise dört kola uyar",
+     "Kırmızı devler yalnız galaksinin merkezinde bulunur"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre yaşlı yıldızlarda iki, gazda ve genç yıldızlarda dört kol görünüyor; Aralık 2013'te genç yıldızların dört kollu tabloya uyduğu bulundu. Bu farkın nedeni belirsiz.",
+    "ders": "d47",
+    "bolum": 7
+   },
+   {
+    "id": "d47-3",
+    "soru": "Jiao ve arkadaşları (2023) Gaia DR3 ile Samanyolu'nun dönme hızının 19,5–26,5 kiloparsek arasında yaklaşık 30 km/s düştüğünü buldu. Bu sonucun anlamı nedir?",
+    "secenekler": [
+     "Samanyolu'nda hiç karanlık madde olmadığı kesinleşti",
+     "Bu yarıçaplar arasına neredeyse yeni kütle eklenmiyor; toplam kütle yaklaşık 2,06×10¹¹ M☉ çıkıyor, önceki bazı tahminlerden 7 kattan fazla düşük",
+     "Galaksinin dış kısmı ters yönde dönüyor",
+     "Güneş'in yörünge hızı 30 km/s'ye düştü"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre bu bir Kepler düşüşüdür ve toplam kütle 2,06×10¹¹ M☉ (üst sınır 5,4×10¹¹) bulundu; 2019'daki bir çalışma 1,54×10¹² vermişti. 2,06×10¹¹ bile yıldız kütlesinin üç dört katı olduğu için karanlık madde ortadan kalkmaz; konu tartışmalıdır.",
+    "ders": "d47",
+    "bolum": 10
+   },
+   {
+    "id": "d47-4",
+    "soru": "Samanyolu kuşağını İstanbul çevresinden görmek için hangisi derste verilen koşullardan biri değildir?",
+    "secenekler": [
+     "Gözlerin yaklaşık 30 dakika karanlığa alışması",
+     "Bortle 4 ya da daha karanlık bir gök",
+     "Yeniay çevresindeki yaklaşık beş günlük pencere",
+     "Dolunay gecesini seçmek, çünkü Ay ışığı kuşağı belirginleştirir"
+    ],
+    "dogru": 3,
+    "aciklama": "Derse göre Ay ışığı ve kent ışığı düşük yüzey parlaklıklı kuşağı siler; gök yay saniyesi karesi başına ~20,2 kadirden karanlık olmalı. Ayrıca galaksi merkezi İstanbul'dan en fazla ~20° yükseldiği için açık bir güney ufku gerekir.",
+    "ders": "d47",
+    "bolum": 15
+   },
+   {
+    "id": "d48-1",
+    "soru": "Antonucci ve Miller 1985'te tip 2 Seyfert NGC 1068'in (M77) yalnızca kutuplanmış ışığına baktı. Ne buldular ve bu neyi gösterdi?",
+    "secenekler": [
+     "Hiç tayf çizgisi bulmadılar; galaksinin aktif çekirdeği yoktu",
+     "Kutuplanmış ışıkta sıradan bir tip 1 tayfı (geniş çizgiler) gördüler; geniş çizgi bölgesi tozlu bir simidin arkasında gizliydi ve elektronlar ışığı ayna gibi saçıyordu",
+     "Galaksinin bize yaklaştığını gösteren maviye kayma buldular",
+     "Jetin ışıktan hızlı hareket ettiğini buldular"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre opak, tozlu simit merkezi doğrudan görmemizi engelliyor, simidin üstündeki elektronlardan saçılan ve bu yüzden kutuplanan ışık ise bize gizli tip 1 tayfını taşıyordu. Bu, tür farkının büyük ölçüde bakış açısından geldiğini söyleyen birleşik modelin temel kanıtıdır.",
+    "ders": "d48",
+    "bolum": 6
+   },
+   {
+    "id": "d48-2",
+    "soru": "Bir kuasarın parlaklığı yaklaşık 3 günde belirgin biçimde değişiyor. Bu, ışığı yayan bölge hakkında ne söyler?",
+    "secenekler": [
+     "Bölge en fazla yaklaşık 3 ışık günü (≈ 520 AB) büyüklüğünde olabilir",
+     "Bölge en az 3 ışık yılı büyüklüğünde olmalıdır",
+     "Değişim süresinin boyutla ilgisi yoktur",
+     "Bölge tam olarak galaksinin boyundadır"
+    ],
+    "dogru": 0,
+    "aciklama": "Bölgenin uzak kenarından gelen ışık, bölgenin boyunu ışığın geçme süresi kadar geç gelir; bu yüzden t sürede değişen bir kaynak c × t'den büyük olamaz. 3 ışık günü ≈ 7,8 × 10¹⁰ km ≈ 520 AB, 3C 273'ün olay ufkunun yaklaşık 30 katı.",
+    "ders": "d48",
+    "bolum": 4
+   },
+   {
+    "id": "d48-3",
+    "soru": "Bazı kuasar jetlerinde madde düğümlerinin gökte ışıktan birkaç kat hızlı ilerlediği ölçülür. Bunun açıklaması nedir?",
+    "secenekler": [
+     "Jetlerde madde gerçekten ışıktan hızlı gider",
+     "Radyo teleskopların saatleri yanlış ayarlıdır",
+     "Düğüm ışığa yakın hızla neredeyse bize doğru geldiği için sonraki ışıkları daha kısa yol alır; iki görüntü gerçek süreden çok kısa arayla gelir ve yan kayma bu kısa süreye bölününce ışıktan hızlı görünür",
+     "Kütleçekimsel mercek görüntüyü büyütür"
+    ],
+    "dogru": 2,
+    "aciklama": "Rees 1966'da öngördü. Derste β = 0,99 ve 8° açıyla 10 yıllık hareketin ışıkları ~0,2 yıl arayla gelir ve 1,38 ışık yıllık yan kayma ~7c'lik görünür hız verir; gerçek hız ışıktan küçüktür.",
+    "ders": "d48",
+    "bolum": 8
+   },
+   {
+    "id": "d48-4",
+    "soru": "3C 273 (12,9 kadir) İstanbul'dan 7×50 dürbünle görülebilir mi?",
+    "secenekler": [
+     "Evet, şehir merkezinden bile kolayca",
+     "Hayır; çok karanlık gökte bile dürbünün sınırı ~10,8 kadir, 3C 273 ondan ~2 kadir (yaklaşık 7 kat) sönük; ~150 mm'lik bir teleskop gerekir",
+     "Evet, ama yalnızca ufkun altındayken",
+     "Hayır, çünkü 3C 273 güney yarıküresinden hiç yükselmez"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre 3C 273 İstanbul'da meridyende ~51°'ye yükselir, ama 12,9 − 10,8 = 2,1 kadir, yani 10^(0,4 × 2,1) ≈ 6,9 kat sönüktür. Wikipedia 150 mm'lik amatör teleskopla görülebileceğini yazar.",
+    "ders": "d48",
+    "bolum": 14
+   },
+   {
+    "id": "d49-1",
+    "soru": "Kahn ve Woltjer'in 1959'daki zamanlama argümanı Yerel Grup'un kütlesini neye dayanarak tahmin etti?",
+    "secenekler": [
+     "Andromeda'nın parlaklığından yıldız sayısını hesaplayarak",
+     "Samanyolu ile Andromeda'nın Büyük Patlama'dan bu yana uzaklaşıp geri dönerek bugünkü uzaklık ve yaklaşma hızına ulaşması için gereken kütleyi hesaplayarak",
+     "Yerel Grup'taki sıcak gazın X-ışınlarını ölçerek",
+     "Arka plan ışımasındaki Sunyaev–Zeldovich gölgesini ölçerek"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre iki galaksinin aynı yerden çıkıp önce uzaklaştığı, sonra kendi çekimleriyle geri döndüğü varsayıldı ve görünenin en az on katı kütle bulundu. Bugünkü zamanlama kütlesi ~5×10¹² M☉ olup başka yöntemlerden büyük çıkıyor; konu tartışmalı.",
+    "ders": "d49",
+    "bolum": 1
+   },
+   {
+    "id": "d49-2",
+    "soru": "Bir galaksi kümesi Sunyaev–Zeldovich etkisiyle nasıl fark edilir?",
+    "secenekler": [
+     "Kümenin galaksileri radyo dalgalarında yanıp söner",
+     "Küme, arka plan ışımasında her frekansta eşit derecede parlak görünür",
+     "Arka plan ışımasının fotonları küme gazının elektronlarından enerji kazandığı için küme düşük frekansta sönük, yüksek frekansta parlak görünür; ~217 GHz'de etki sıfırdır",
+     "Kümenin kütlesi arka plandaki galaksileri yay biçiminde büker"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre bu ters Compton saçılmasıdır; etkinin büyüklüğü görüş doğrultusu boyunca gaz basıncına bağlıdır ve kütlenin iyi bir göstergesidir. Planck'ın 2015 kataloğu 1653 tespit, 1203 doğrulanmış küme içerir. Son seçenek kütleçekimsel mercektir.",
+    "ders": "d49",
+    "bolum": 6
+   },
+   {
+    "id": "d49-3",
+    "soru": "Cautun ve arkadaşlarının 2014 benzetim çözümlemesine göre bugünkü evrende hangi ifade doğrudur?",
+    "secenekler": [
+     "Boşluklar hacmin yaklaşık %78'ini kaplar ama maddenin yalnız ~%15'ini taşır; lifler ise maddenin ~%50'sini hacmin ~%6'sında taşır",
+     "Maddenin çoğu boşluklardadır",
+     "Kümeler hacmin yarısını kaplar",
+     "Duvarlar ve lifler aynı yoğunluktadır"
+    ],
+    "dogru": 0,
+    "aciklama": "Derse göre lifler %50, duvarlar %25, boşluklar %15, kümeler %10 kütle taşır; hacimde boşluklar %78, duvarlar %18, lifler %6'dır. Madde boşluklardan duvarlara, oradan liflerle kümelere akar.",
+    "ders": "d49",
+    "bolum": 10
+   },
+   {
+    "id": "d49-4",
+    "soru": "Baryon akustik salınım cetveli saydamlaşma anında yaklaşık 0,14 megaparsek yarıçaplıydı. Bugün neden yaklaşık 150 megaparsektir?",
+    "secenekler": [
+     "Ses dalgaları bugün hâlâ yayılmaya devam ettiği için",
+     "Galaksiler kabuğun içine düşüp onu şişirdiği için",
+     "Ölçümler yanlış olduğu için",
+     "Evren o zamandan (z = 1089) beri yaklaşık 1090 kat genişlediği için"
+    ],
+    "dogru": 3,
+    "aciklama": "Derse göre dalgalar ışık maddeden ayrılınca dondu; o zamandan beri uzunluklar 1 + z = 1090 kat büyüdü: 0,14 × 1090 ≈ 153 Mpc, yani ~490 milyon ışık yılı. İşaret 2005'te SDSS ve 2dF taramalarında bulundu.",
+    "ders": "d49",
+    "bolum": 14
+   }
+  ],
+  "evren": [
+   {
+    "id": "evren-05",
+    "soru": "Büyük Patlama için hangisi doğrudur?",
+    "secenekler": [
+     "Her yerde aynı anda olan bir genişlemedir; evrenin bir merkezi ya da kenarı yoktur",
+     "Boş uzayın ortasında tek bir noktada patlayan bir bombadır",
+     "Galaksiler uzayın içinde ortak bir merkezden dışarı doğru koşar",
+     "Kuram, evrenin ilk durumunun nereden geldiğini kesin olarak açıklar"
+    ],
+    "dogru": 0,
+    "aciklama": "Derse göre Büyük Patlama tek bir noktanın çevresine doğru bir patlama değildir; genişleme her yerde olur. Kuram, evrenin nasıl başladığını değil, sıcak ve yoğun bir hâlden nasıl evrildiğini anlatır.",
+    "ders": "d8",
+    "bolum": 0
+   },
+   {
+    "id": "evren-06",
+    "soru": "Evren yaklaşık 380.000 yaşındayken, yeniden birleşme denen anda ne oldu?",
+    "secenekler": [
+     "İlk yıldızlar yandı ve karanlık çağ sona erdi",
+     "Kuarklar birleşip proton ve nötronları oluşturdu",
+     "İlk helyum çekirdekleri oluştu",
+     "Elektronlar ve protonlar nötr atomlar oluşturdu; evren ışığa saydam oldu"
+    ],
+    "dogru": 3,
+    "aciklama": "Derse göre serbest elektronlar ışığı sürekli saçtığı için evren saydam değildi; sıcaklık yaklaşık 3000 kelvine düşünce nötr atomlar oluştu ve ışık serbest kaldı. O anın ışığını bugün kozmik mikrodalga arka plan ışıması olarak görüyoruz.",
+    "ders": "d8",
+    "bolum": 5
+   },
+   {
+    "id": "evren-07",
+    "soru": "Kırmızıya kayması z = 4 olan bir galaksinin ışığı yola çıktığında kozmik mikrodalga arka plan ışımasının sıcaklığı yaklaşık kaç kelvindi? (Bugünkü değer 2,725 K)",
+    "secenekler": [
+     "Yaklaşık 10,9 K",
+     "Yaklaşık 13,6 K",
+     "Yaklaşık 0,55 K",
+     "Yaklaşık 2,7 K, yani bugünkü kadar"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre T(z) = T0 × (1 + z) ilişkisi geçerlidir: 2,725 × (1 + 4) = 2,725 × 5 ≈ 13,6 K. Geçmişte evren daha küçük olduğu için ışıma daha sıcaktı.",
+    "ders": "d8",
+    "bolum": 5
+   },
+   {
+    "id": "evren-08",
+    "soru": "İlk yıldız kuşağı neden neredeyse yalnızca hidrojen ve helyumdan yapılmış olmalıydı?",
+    "secenekler": [
+     "Ağır elementler o sırada vardı ama ilk yıldızların kütleçekiminden kaçtı",
+     "Karanlık madde ağır elementleri yuttu",
+     "Büyük Patlama yalnızca hafif çekirdekler üretti; ağır elementler sonra yıldızlarda oluştu",
+     "Ağır elementler yalnızca karanlık çağda, yıldızlardan önce oluştu"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre ilk yaklaşık 20 dakikada yalnızca helyum, döteryum, trityum ve lityum gibi hafif çekirdekler oluştu, sonra sıcaklık ve yoğunluk füzyon için fazla düştü. Karbon, oksijen ve demirin neredeyse tamamı çok sonra yıldızlarda üretildi.",
+    "ders": "d8",
+    "bolum": 4
+   },
+   {
+    "id": "evren-09",
+    "soru": "Iraklık açısı 0,05 yay saniyesi olan bir yıldız ne kadar uzaktadır? (1 parsek ≈ 3,26 ışık yılı)",
+    "secenekler": [
+     "20 parsek, yaklaşık 65 ışık yılı",
+     "0,05 parsek",
+     "20 parsek, yaklaşık 6,1 ışık yılı",
+     "200 parsek, yaklaşık 650 ışık yılı"
+    ],
+    "dogru": 0,
+    "aciklama": "Derse göre uzaklık parsek cinsinden d = 1 / p ile bulunur: 1 ÷ 0,05 = 20 parsek. Işık yılına çevirmek için çarparsın: 20 × 3,26 ≈ 65 ışık yılı.",
+    "ders": "d17",
+    "bolum": 3
+   },
+   {
+    "id": "evren-10",
+    "soru": "Bir galaksi saniyede 13.480 km hızla bizden uzaklaşıyor. H0 = 67,4 km/s/Mpc alırsan uzaklığı yaklaşık kaç megaparsektir?",
+    "secenekler": [
+     "Yaklaşık 0,005 megaparsek",
+     "Yaklaşık 908.552 megaparsek",
+     "Yaklaşık 20 megaparsek",
+     "Yaklaşık 200 megaparsek"
+    ],
+    "dogru": 3,
+    "aciklama": "Hubble-Lemaître yasası v = H0 × d olduğundan d = v ÷ H0: 13.480 ÷ 67,4 = 200 megaparsek. Derse göre H0 bir kez bilinince yakın sayılabilecek galaksilerin uzaklığı kırmızıya kaymadan bulunabilir.",
+    "ders": "d17",
+    "bolum": 1
+   },
+   {
+    "id": "evren-11",
+    "soru": "Sarmal galaksilerde dönme eğrilerinin, şişkinliğin dışında düz olması neyi gösterir?",
+    "secenekler": [
+     "Galaksinin merkezinde hiç kütle bulunmadığını",
+     "Görünmeyen bir kütle, yani karanlık madde bulunduğunu",
+     "Dış yıldızların iç yıldızlardan daha yavaş döndüğünü",
+     "Karanlık enerjinin yıldızları galaksinin dışına ittiğini"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre kütle görünen yıldızlarla bitseydi dıştaki yıldızlar daha yavaş dönmeliydi; oysa Rubin ve Ford yıldızların çoğunun kabaca aynı hızla döndüğünü buldu. Bu, kütlenin uzaklıkla birlikte arttığını ve görünmeyen bir kütle olduğunu gösterir.",
+    "ders": "d17",
+    "bolum": 6
+   },
+   {
+    "id": "evren-12",
+    "soru": "Mermi Kümesi neden karanlık madde için güçlü bir kanıt sayılır?",
+    "secenekler": [
+     "Kümede karanlık madde parçacıkları ilk kez doğrudan yakalandı",
+     "Karanlık maddenin kendisi X-ışınlarıyla görüntülendi",
+     "Mercekle ölçülen kütlenin çoğu, X-ışınıyla görülen gazdan ayrı yerde duruyor",
+     "Kümedeki yıldızların hepsi çarpışıp söndü"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre çarpışan iki kümede sıcak gaz X-ışınlarıyla görüldü ve sürüklenmeyle yavaşladı; toplam kütlenin yeri ise kütleçekimsel mercek etkisinden ölçüldü. Karanlık madde yavaşlamadığı için kütlenin çoğu gazdan ayrı duruyor.",
+    "ders": "d17",
+    "bolum": 7
+   },
+   {
+    "id": "d20-1",
+    "soru": "Eratosthenes, İskenderiye'deki gölge açısını çemberin ellide biri (7,2°) buldu ve iki kent arasını yaklaşık 5000 stadion aldı. Sonucunun bugünkü kilometre karşılığı neden kesin söylenemez?",
+    "secenekler": [
+     "Çünkü stadionun bugünkü uzunluğu kesin bilinmiyor ve tahminler yaklaşık 155 ile 185 metre arasında değişiyor",
+     "Çünkü Eratosthenes açıyı ölçmeyi unuttu ve sonucu tahmin etti",
+     "Çünkü Syene'de yaz gündönümünde de uzun bir gölge oluşuyordu",
+     "Çünkü Eratosthenes Dünya'nın düz olduğunu varsayıyordu"
+    ],
+    "dogru": 0,
+    "aciklama": "Derse göre yöntem doğrudur: 50 × 5000 = 250.000 stadion. Ama stadionun metre karşılığı tartışmalıdır; Wikipedia 155–160 m ile hatayı −%2,4 ile +%0,8, Paris Gözlemevi sözlüğü 155–185 m ile −%3 ile +%15 arasında verir.",
+    "ders": "d20",
+    "bolum": 3
+   },
+   {
+    "id": "d20-2",
+    "soru": "Hipparkhos, Spica'nın sonbahar noktasına uzaklığını Timokharis'in 8° değerine karşı 6° buldu. Bu fark ona neyi gösterdi?",
+    "secenekler": [
+     "Spica'nın Dünya'ya hızla yaklaştığını",
+     "Ekinoks noktalarının yıldızlara göre yavaşça kaydığını, yani presesyonu",
+     "Timokharis'in aletinin bozuk olduğunu",
+     "Dünya'nın Güneş'in çevresinde dolandığını"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre yıldızlar birbirine göre kaymadığı için değişen, ölçümün başlangıç noktası olan ekinoks noktalarıydı. Hipparkhos bu kaymayı yılda en az yüzde bir derece olarak verdi; gerçek değer 72 yılda bir derecedir. Bu olaya presesyon denir.",
+    "ders": "d20",
+    "bolum": 5
+   },
+   {
+    "id": "d20-3",
+    "soru": "Takiyüddin'in İstanbul Rasathanesi'nde kullandığı gözlem saatinin saniyeyi göstermesi neden önemliydi?",
+    "secenekler": [
+     "Saray törenlerinin başlama anını duyurmak için",
+     "Kuyruklu yıldızların hızını ölçmek için",
+     "Sağ açıklık yıldızın meridyenden geçiş zamanıyla ölçüldüğü için; gök küresi saniyede yaklaşık 15 yay saniyesi döner",
+     "Ay tutulmalarının süresini kısaltmak için"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre Takiyüddin üç kadranlı (saat, dakika, saniye) saatini yıldızların sağ açıklığını ölçmek için kullandı. Gök küresi yaklaşık 86.164 saniyede 360° döndüğünden 1 saniye zaman yaklaşık 15″ yaya karşılık gelir; 1 yay dakikası kesinlik için saatin 4 saniyeden iyi olması gerekir.",
+    "ders": "d20",
+    "bolum": 10
+   },
+   {
+    "id": "d20-4",
+    "soru": "Tycho Brahe 1572'deki yeni yıldızın ve 1577 kuyruklu yıldızının Ay'ın ötesinde olduğunu hangi gözlemle gösterdi?",
+    "secenekler": [
+     "Teleskopla bakıp yüzeylerini inceleyerek",
+     "Renklerini Ay'ın rengiyle karşılaştırarak",
+     "Ölçülebilir bir ıraklık (paralaks) bulamayarak",
+     "Parlaklıklarının her gece arttığını görerek"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre Ay gibi yakın bir cisim yıldızlara göre kayardı; Tycho iki cisimde de ölçülebilir ıraklık bulamadı, bu yüzden Ay'ın ötesinde olmaları gerekiyordu. Tycho teleskop kullanmadı; çıplak göz aletleriyle yaklaşık 1 yay dakikası kesinliğe ulaştı.",
+    "ders": "d20",
+    "bolum": 12
    }
   ],
   "gezegen_yasam": [
@@ -903,232 +1807,6 @@
     "aciklama": "Derse göre ekstremofiller olası yaşam yerlerinin listesini genişletir ama orada yaşam olduğunu kanıtlamaz. Bir canlının uzayda bir süre hayatta kalması, orada yaşayıp çoğalabileceği anlamına gelmez.",
     "ders": "d18",
     "bolum": 4
-   }
-  ],
-  "evren": [
-   {
-    "id": "evren-01",
-    "soru": "Hubble'ın ayar çatalı diyagramı için hangisi doğrudur?",
-    "secenekler": [
-     "Eliptik galaksiler zamanla sarmal galaksilere dönüşür",
-     "Bir evrim sırası değildir; galaksiler çatal boyunca birinden ötekine sırayla dönüşmez",
-     "Sarmal galaksiler yaşlanınca eliptik olur; erken tür adı bu yüzden verilmiştir",
-     "Samanyolu çatalda çubuksuz bir sarmal olarak yer alır"
-    ],
-    "dogru": 1,
-    "aciklama": "Derse göre erken ve geç tür adları yanlış bir evrim inancına yol açmıştır; Hubble böyle bir yorum kastetmediğini açıkça belirtmişti. NASA'ya göre Samanyolu çubuklu sarmaldır.",
-    "ders": "d7",
-    "bolum": 4
-   },
-   {
-    "id": "evren-02",
-    "soru": "İstanbul'dan (41° kuzey) hangisini kendi gözünle ya da dürbünle görebilirsin?",
-    "secenekler": [
-     "Büyük Macellan Bulutu",
-     "Küçük Macellan Bulutu",
-     "Galaksimizin merkezindeki kara delik Sgr A*",
-     "Andromeda Galaksisi; ışıklı bir semtte dürbün işini kolaylaştırır"
-    ],
-    "dogru": 3,
-    "aciklama": "Derse göre Macellan Bulutları yaklaşık 20° ve 15° kuzey enleminin kuzeyinden görülmez; kara deliğin kendisi ise ışık yaymaz. Andromeda İstanbul'un göğündedir; ışığı geniş bir alana yayıldığı için ışıklı semtlerde dürbün işini kolaylaştırır.",
-    "ders": "d7",
-    "bolum": 5
-   },
-   {
-    "id": "evren-03",
-    "soru": "Aktif bir galaksinin parlak çekirdeğinin enerjisi nereden gelir?",
-    "secenekler": [
-     "Merkezdeki dev kara deliğe düşen gazın oluşturduğu, ısınıp parlayan yığılma diskinden",
-     "Çekirdekte aynı anda patlayan milyarlarca süpernovadan",
-     "Kara deliğin olay ufkunun içinden kaçan ışıktan",
-     "Galaksideki karanlık maddenin yanmasından"
-    ],
-    "dogru": 0,
-    "aciklama": "Derse göre enerjinin kaynağı merkezdeki dev kara deliktir: içeri düşen gaz kara deliğin çevresinde bir yığılma diski oluşturur, disk kütleçekimi ve sürtünmeyle çok ısınır ve parlak ışıma yapar.",
-    "ders": "d7",
-    "bolum": 9
-   },
-   {
-    "id": "evren-04",
-    "soru": "Samanyolu ile Andromeda bir gün birleşirse ne olması beklenir?",
-    "secenekler": [
-     "Yıldızların çoğu bilardo topları gibi birbirine çarpar",
-     "Gaz bulutları da yıldızlar gibi birbirinin içinden etkilenmeden geçer",
-     "Yıldızlar neredeyse hiç çarpışmaz; gaz ise sıkışıp yıldız doğumunu tetikleyebilir",
-     "Güneş Sistemi kesin olarak yok olur"
-    ],
-    "dogru": 2,
-    "aciklama": "Derse göre yıldızların arası inanılmaz boştur; yıldızlar birbirinin yanından geçer ama kütleçekimleri yörüngelerini değiştirir. Gaz ise birbirine çarpıp yavaşlar ve yıldız doğumunu tetikleyebilir.",
-    "ders": "d7",
-    "bolum": 7
-   },
-   {
-    "id": "evren-05",
-    "soru": "Büyük Patlama için hangisi doğrudur?",
-    "secenekler": [
-     "Her yerde aynı anda olan bir genişlemedir; evrenin bir merkezi ya da kenarı yoktur",
-     "Boş uzayın ortasında tek bir noktada patlayan bir bombadır",
-     "Galaksiler uzayın içinde ortak bir merkezden dışarı doğru koşar",
-     "Kuram, evrenin ilk durumunun nereden geldiğini kesin olarak açıklar"
-    ],
-    "dogru": 0,
-    "aciklama": "Derse göre Büyük Patlama tek bir noktanın çevresine doğru bir patlama değildir; genişleme her yerde olur. Kuram, evrenin nasıl başladığını değil, sıcak ve yoğun bir hâlden nasıl evrildiğini anlatır.",
-    "ders": "d8",
-    "bolum": 0
-   },
-   {
-    "id": "evren-06",
-    "soru": "Evren yaklaşık 380.000 yaşındayken, yeniden birleşme denen anda ne oldu?",
-    "secenekler": [
-     "İlk yıldızlar yandı ve karanlık çağ sona erdi",
-     "Kuarklar birleşip proton ve nötronları oluşturdu",
-     "İlk helyum çekirdekleri oluştu",
-     "Elektronlar ve protonlar nötr atomlar oluşturdu; evren ışığa saydam oldu"
-    ],
-    "dogru": 3,
-    "aciklama": "Derse göre serbest elektronlar ışığı sürekli saçtığı için evren saydam değildi; sıcaklık yaklaşık 3000 kelvine düşünce nötr atomlar oluştu ve ışık serbest kaldı. O anın ışığını bugün kozmik mikrodalga arka plan ışıması olarak görüyoruz.",
-    "ders": "d8",
-    "bolum": 5
-   },
-   {
-    "id": "evren-07",
-    "soru": "Kırmızıya kayması z = 4 olan bir galaksinin ışığı yola çıktığında kozmik mikrodalga arka plan ışımasının sıcaklığı yaklaşık kaç kelvindi? (Bugünkü değer 2,725 K)",
-    "secenekler": [
-     "Yaklaşık 10,9 K",
-     "Yaklaşık 13,6 K",
-     "Yaklaşık 0,55 K",
-     "Yaklaşık 2,7 K, yani bugünkü kadar"
-    ],
-    "dogru": 1,
-    "aciklama": "Derse göre T(z) = T0 × (1 + z) ilişkisi geçerlidir: 2,725 × (1 + 4) = 2,725 × 5 ≈ 13,6 K. Geçmişte evren daha küçük olduğu için ışıma daha sıcaktı.",
-    "ders": "d8",
-    "bolum": 5
-   },
-   {
-    "id": "evren-08",
-    "soru": "İlk yıldız kuşağı neden neredeyse yalnızca hidrojen ve helyumdan yapılmış olmalıydı?",
-    "secenekler": [
-     "Ağır elementler o sırada vardı ama ilk yıldızların kütleçekiminden kaçtı",
-     "Karanlık madde ağır elementleri yuttu",
-     "Büyük Patlama yalnızca hafif çekirdekler üretti; ağır elementler sonra yıldızlarda oluştu",
-     "Ağır elementler yalnızca karanlık çağda, yıldızlardan önce oluştu"
-    ],
-    "dogru": 2,
-    "aciklama": "Derse göre ilk yaklaşık 20 dakikada yalnızca helyum, döteryum, trityum ve lityum gibi hafif çekirdekler oluştu, sonra sıcaklık ve yoğunluk füzyon için fazla düştü. Karbon, oksijen ve demirin neredeyse tamamı çok sonra yıldızlarda üretildi.",
-    "ders": "d8",
-    "bolum": 4
-   },
-   {
-    "id": "evren-09",
-    "soru": "Iraklık açısı 0,05 yay saniyesi olan bir yıldız ne kadar uzaktadır? (1 parsek ≈ 3,26 ışık yılı)",
-    "secenekler": [
-     "20 parsek, yaklaşık 65 ışık yılı",
-     "0,05 parsek",
-     "20 parsek, yaklaşık 6,1 ışık yılı",
-     "200 parsek, yaklaşık 650 ışık yılı"
-    ],
-    "dogru": 0,
-    "aciklama": "Derse göre uzaklık parsek cinsinden d = 1 / p ile bulunur: 1 ÷ 0,05 = 20 parsek. Işık yılına çevirmek için çarparsın: 20 × 3,26 ≈ 65 ışık yılı.",
-    "ders": "d17",
-    "bolum": 3
-   },
-   {
-    "id": "evren-10",
-    "soru": "Bir galaksi saniyede 13.480 km hızla bizden uzaklaşıyor. H0 = 67,4 km/s/Mpc alırsan uzaklığı yaklaşık kaç megaparsektir?",
-    "secenekler": [
-     "Yaklaşık 0,005 megaparsek",
-     "Yaklaşık 908.552 megaparsek",
-     "Yaklaşık 20 megaparsek",
-     "Yaklaşık 200 megaparsek"
-    ],
-    "dogru": 3,
-    "aciklama": "Hubble-Lemaître yasası v = H0 × d olduğundan d = v ÷ H0: 13.480 ÷ 67,4 = 200 megaparsek. Derse göre H0 bir kez bilinince yakın sayılabilecek galaksilerin uzaklığı kırmızıya kaymadan bulunabilir.",
-    "ders": "d17",
-    "bolum": 1
-   },
-   {
-    "id": "evren-11",
-    "soru": "Sarmal galaksilerde dönme eğrilerinin, şişkinliğin dışında düz olması neyi gösterir?",
-    "secenekler": [
-     "Galaksinin merkezinde hiç kütle bulunmadığını",
-     "Görünmeyen bir kütle, yani karanlık madde bulunduğunu",
-     "Dış yıldızların iç yıldızlardan daha yavaş döndüğünü",
-     "Karanlık enerjinin yıldızları galaksinin dışına ittiğini"
-    ],
-    "dogru": 1,
-    "aciklama": "Derse göre kütle görünen yıldızlarla bitseydi dıştaki yıldızlar daha yavaş dönmeliydi; oysa Rubin ve Ford yıldızların çoğunun kabaca aynı hızla döndüğünü buldu. Bu, kütlenin uzaklıkla birlikte arttığını ve görünmeyen bir kütle olduğunu gösterir.",
-    "ders": "d17",
-    "bolum": 6
-   },
-   {
-    "id": "evren-12",
-    "soru": "Mermi Kümesi neden karanlık madde için güçlü bir kanıt sayılır?",
-    "secenekler": [
-     "Kümede karanlık madde parçacıkları ilk kez doğrudan yakalandı",
-     "Karanlık maddenin kendisi X-ışınlarıyla görüntülendi",
-     "Mercekle ölçülen kütlenin çoğu, X-ışınıyla görülen gazdan ayrı yerde duruyor",
-     "Kümedeki yıldızların hepsi çarpışıp söndü"
-    ],
-    "dogru": 2,
-    "aciklama": "Derse göre çarpışan iki kümede sıcak gaz X-ışınlarıyla görüldü ve sürüklenmeyle yavaşladı; toplam kütlenin yeri ise kütleçekimsel mercek etkisinden ölçüldü. Karanlık madde yavaşlamadığı için kütlenin çoğu gazdan ayrı duruyor.",
-    "ders": "d17",
-    "bolum": 7
-   },
-   {
-    "id": "d20-1",
-    "soru": "Eratosthenes, İskenderiye'deki gölge açısını çemberin ellide biri (7,2°) buldu ve iki kent arasını yaklaşık 5000 stadion aldı. Sonucunun bugünkü kilometre karşılığı neden kesin söylenemez?",
-    "secenekler": [
-     "Çünkü stadionun bugünkü uzunluğu kesin bilinmiyor ve tahminler yaklaşık 155 ile 185 metre arasında değişiyor",
-     "Çünkü Eratosthenes açıyı ölçmeyi unuttu ve sonucu tahmin etti",
-     "Çünkü Syene'de yaz gündönümünde de uzun bir gölge oluşuyordu",
-     "Çünkü Eratosthenes Dünya'nın düz olduğunu varsayıyordu"
-    ],
-    "dogru": 0,
-    "aciklama": "Derse göre yöntem doğrudur: 50 × 5000 = 250.000 stadion. Ama stadionun metre karşılığı tartışmalıdır; Wikipedia 155–160 m ile hatayı −%2,4 ile +%0,8, Paris Gözlemevi sözlüğü 155–185 m ile −%3 ile +%15 arasında verir.",
-    "ders": "d20",
-    "bolum": 3
-   },
-   {
-    "id": "d20-2",
-    "soru": "Hipparkhos, Spica'nın sonbahar noktasına uzaklığını Timokharis'in 8° değerine karşı 6° buldu. Bu fark ona neyi gösterdi?",
-    "secenekler": [
-     "Spica'nın Dünya'ya hızla yaklaştığını",
-     "Ekinoks noktalarının yıldızlara göre yavaşça kaydığını, yani presesyonu",
-     "Timokharis'in aletinin bozuk olduğunu",
-     "Dünya'nın Güneş'in çevresinde dolandığını"
-    ],
-    "dogru": 1,
-    "aciklama": "Derse göre yıldızlar birbirine göre kaymadığı için değişen, ölçümün başlangıç noktası olan ekinoks noktalarıydı. Hipparkhos bu kaymayı yılda en az yüzde bir derece olarak verdi; gerçek değer 72 yılda bir derecedir. Bu olaya presesyon denir.",
-    "ders": "d20",
-    "bolum": 5
-   },
-   {
-    "id": "d20-3",
-    "soru": "Takiyüddin'in İstanbul Rasathanesi'nde kullandığı gözlem saatinin saniyeyi göstermesi neden önemliydi?",
-    "secenekler": [
-     "Saray törenlerinin başlama anını duyurmak için",
-     "Kuyruklu yıldızların hızını ölçmek için",
-     "Sağ açıklık yıldızın meridyenden geçiş zamanıyla ölçüldüğü için; gök küresi saniyede yaklaşık 15 yay saniyesi döner",
-     "Ay tutulmalarının süresini kısaltmak için"
-    ],
-    "dogru": 2,
-    "aciklama": "Derse göre Takiyüddin üç kadranlı (saat, dakika, saniye) saatini yıldızların sağ açıklığını ölçmek için kullandı. Gök küresi yaklaşık 86.164 saniyede 360° döndüğünden 1 saniye zaman yaklaşık 15″ yaya karşılık gelir; 1 yay dakikası kesinlik için saatin 4 saniyeden iyi olması gerekir.",
-    "ders": "d20",
-    "bolum": 10
-   },
-   {
-    "id": "d20-4",
-    "soru": "Tycho Brahe 1572'deki yeni yıldızın ve 1577 kuyruklu yıldızının Ay'ın ötesinde olduğunu hangi gözlemle gösterdi?",
-    "secenekler": [
-     "Teleskopla bakıp yüzeylerini inceleyerek",
-     "Renklerini Ay'ın rengiyle karşılaştırarak",
-     "Ölçülebilir bir ıraklık (paralaks) bulamayarak",
-     "Parlaklıklarının her gece arttığını görerek"
-    ],
-    "dogru": 2,
-    "aciklama": "Derse göre Ay gibi yakın bir cisim yıldızlara göre kayardı; Tycho iki cisimde de ölçülebilir ıraklık bulamadı, bu yüzden Ay'ın ötesinde olmaları gerekiyordu. Tycho teleskop kullanmadı; çıplak göz aletleriyle yaklaşık 1 yay dakikası kesinliğe ulaştı.",
-    "ders": "d20",
-    "bolum": 12
    }
   ],
   "fizik": [
@@ -1635,6 +2313,626 @@
     "aciklama": "Derse göre elektrik kuvvetinin iki işareti vardır ve sıradan maddede proton ve elektron sayıları neredeyse eşit olduğu için büyük cisimler dışarıya yüksüz görünür. Kütleçekimi hep çeker ve birikir; bu yüzden büyük ölçekte kütleçekimi kazanır. Coulomb yasası da kütleçekimi gibi uzaklığın karesiyle azalır.",
     "ders": "d33",
     "bolum": 3
+   }
+  ],
+  "dev_gezegenler": [
+   {
+    "id": "d37-1",
+    "soru": "Juno'nun çekim ölçümleri Jüpiter'in çekirdeği hakkında ne gösterdi?",
+    "secenekler": [
+     "Merkezde Dünya büyüklüğünde, keskin sınırlı bir kaya-buz topu olduğunu kesinleştirdi",
+     "Ölçümlere uyan birçok modelde ağır elementlerin merkezden dışa seyrelerek yarıçapın belki yarısına kadar yayıldığını",
+     "Jüpiter'in merkezinde hiç ağır element bulunmadığını",
+     "Çekirdeğin tamamen metalik helyumdan oluştuğunu"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre Juno'nun ölçtüğü çekim alanına uyan modellerin birçoğunda sıkı bir çekirdek yok; ağır elementler seyrelmiş bir çekirdek bölgesine, Helled ve meslektaşlarına göre belki yarıçapın yarısına kadar yayılmış (Liu ve ekibine göre 10 ile birkaç on Dünya kütlesi). İçeride küçük, sıkı bir çekirdek kesin dışlanmadı; bu yapının nasıl oluştuğu tartışmalı.",
+    "ders": "d37",
+    "bolum": 3
+   },
+   {
+    "id": "d37-2",
+    "soru": "2024'te yayımlanan çalışmaya göre Büyük Kırmızı Leke ile Cassini'nin 1665'te gördüğü 'Kalıcı Leke' arasındaki ilişki nedir?",
+    "secenekler": [
+     "İkisi aynı fırtınadır; leke 360 yıldır kesintisiz izleniyor",
+     "Kalıcı Leke 1713'ten sonra kayboldu; bugünkü leke 1831'de kaydedildi, yani 190 yaşından büyük ama Cassini'nin lekesi değil",
+     "Kalıcı Leke Satürn'deydi, Jüpiter'de değil",
+     "Büyük Kırmızı Leke 1979'da Voyager'lar geçerken oluştu"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre Sánchez-Lavega ve ekibi (Geophysical Research Letters, Haziran 2024) bugünkü lekenin Kalıcı Leke olmasını 'pek olası' bulmadı: Kalıcı Leke 1713'e kadar izlenip kayboldu, aynı enlemde yeni bir leke 1831'de kaydedildi. Leke 1879'da ~39.000 km iken bugün ~14.000 km'dir.",
+    "ders": "d37",
+    "bolum": 7
+   },
+   {
+    "id": "d37-3",
+    "soru": "Shoemaker-Levy 9 kuyruklu yıldızı neden 21 parçaya bölündü?",
+    "secenekler": [
+     "Güneş'e çok yaklaşıp buzları kaynadığı için",
+     "Bir asteroitle çarpıştığı için",
+     "Temmuz 1992'de Jüpiter'e Roche sınırının içinden geçtiği ve gelgit kuvveti onu bir arada tutan kendi çekiminden büyük olduğu için",
+     "Jüpiter'in manyetik alanı onu elektrikle parçaladığı için"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre kuyruklu yıldız 8 Temmuz 1992'de Jüpiter'in bulut tepelerinin yaklaşık 22.100 km üstünden geçti. Yakın yanının uzak yanından çok daha güçlü çekilmesi, yani gelgit kuvveti, zayıf kendi çekimini yendi; buna Roche sınırı denir. Parçalar 16–22 Temmuz 1994'te yaklaşık 61 km/s hızla çarptı.",
+    "ders": "d37",
+    "bolum": 11
+   },
+   {
+    "id": "d37-4",
+    "soru": "Jüpiter'in manyetik alanı için verilen '20.000 kat' sayısı neyi anlatır?",
+    "secenekler": [
+     "Bulut tepelerinde ölçülen alan şiddetinin Dünya yüzeyindekinin 20.000 katı olduğunu",
+     "Manyetik momentin, yani alan şiddeti ile yarıçapın küpünün çarpımıyla orantılı toplam büyüklüğün Dünya'nınkinin ~20.000 katı olduğunu",
+     "Manyetosferin Dünya'nınkinden 20.000 kat uzun kuyruğu olduğunu",
+     "Kutup ışıklarının Dünya'dakilerden 20.000 kat parlak olduğunu"
+    ],
+    "dogru": 1,
+    "aciklama": "Derste NASA'nın dipol değerleriyle hesaplandı: (4,30 / 0,306) × (71.492 / 6378)³ ≈ 19.800. Bulut tepelerindeki alan şiddeti ise 4–13 gauss, yani Dünya'nın ekvatorundaki ~0,31 gauss'un onlarca katıdır; farkı Jüpiter'in büyüklüğü yaratır.",
+    "ders": "d37",
+    "bolum": 8
+   },
+   {
+    "id": "d38-1",
+    "soru": "Satürn'ün bir gününün uzunluğunu radyo sinyalinden ölçmek neden zor oldu?",
+    "secenekler": [
+     "Satürn'ün halkaları radyo dalgalarını tamamen engellediği için",
+     "Manyetik ekseni dönme eksenine neredeyse kusursuz hizalı olduğundan alan dönüşü bir 'fener' gibi belli etmediği için",
+     "Satürn hiç radyo ışınımı yaymadığı için",
+     "Satürn Dünya'ya hep aynı yüzünü gösterdiği için"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre Satürn'ün manyetik ekseni dönme eksenine 0,06°'den bile çok daha az eğik. Jüpiter'de 9,4°'lik eğiklik radyo ışınımını dönüşle değiştirir; Satürn'de bu olmaz. Voyager 10:39:23, Cassini 10:36–10:48 buldu; 2019'da halka dalgalarından 10 sa 33 dk 38 sn bulundu.",
+    "ders": "d38",
+    "bolum": 2
+   },
+   {
+    "id": "d38-2",
+    "soru": "Cassini Bölümü'nün iç kenarı neden yaklaşık 117.000 km'dedir?",
+    "secenekler": [
+     "Orada Satürn'ün Roche sınırı bulunduğu için",
+     "Oradaki parçacıklar Mimas'ın her turunda iki tur attığı için (2:1 rezonans); Mimas'ın çekişleri birikir ve malzemeyi seyreltir",
+     "Pan uydusu o bölgeyi süpürdüğü için",
+     "Enceladus'un gayzerleri o bölgeyi boşalttığı için"
+    ],
+    "dogru": 1,
+    "aciklama": "Derste Kepler'in üçüncü yasasıyla hesaplandı: 185.537 km × (1/2)^(2/3) ≈ 116.900 km; tabloya göre Cassini Bölümü 117.500 km'de başlar. Pan ise A halkasındaki Encke Boşluğu'nu açık tutar.",
+    "ders": "d38",
+    "bolum": 10
+   },
+   {
+    "id": "d38-3",
+    "soru": "Hyodo ve ekibinin Aralık 2024 çalışması halkaların yaşı tartışmasına ne ekledi?",
+    "secenekler": [
+     "Halkaların 2017'de oluştuğunu ölçtü",
+     "Benzetimlere göre mikrometeoroitler çarpınca buharlaşıp plazmaya döner ve manyetik alanla uzaklaştırılır; halkalar az kirlendiği için temiz görünmeleri genç olduklarını kanıtlamaz",
+     "Halkaların kütlesinin Mimas'ın 10 katı olduğunu buldu",
+     "Halkaların kayadan yapıldığını gösterdi"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre Cassini'nin düşük kütle ve temizlik ölçümleri 10–100 milyon yıllık genç halkalara işaret ediyordu. Hyodo, Madeira ve Genda'nın benzetimlerinde ~20 km/s'lik mikrometeoroitler buharlaşıp ~10.000 °C'lik plazmaya döner ve Satürn'ün manyetik alanıyla gezegene ya da dışarı savrulur; halkalar 4,5 milyar yaşında olabilir. Bu bir modeldir, tartışma açık.",
+    "ders": "d38",
+    "bolum": 11
+   },
+   {
+    "id": "d38-4",
+    "soru": "Ekim 2026'da İstanbul'dan 7×50 dürbünle Satürn'e bakarsan ne beklemelisin?",
+    "secenekler": [
+     "Halkaları ve Cassini Bölümü'nü açıkça",
+     "Sarımsı bir yıldız gibi bir nokta; halkalar seçilmez, çünkü bunun için ~20× ya da daha fazla büyütme gerekir ve 2026'da halkalar yalnızca 6–9° açık",
+     "Kutup altıgenini",
+     "Büyük Beyaz Leke'yi"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre halkaları ayırmak için 20× ya da üstü gerekir; bir rehbere göre 10×50 bile ancak halkalar geniş açıkken oval bir görüntü verir. Abrams Planetaryumu'na göre halkaların Dünya'ya eğikliği Temmuz 2026'da ~9,2°, Aralık 2026'da ~6,1°. Halkalar için ~30× büyüten 70 mm'lik bir teleskop gerekir; en açık hâl 2032.",
+    "ders": "d38",
+    "bolum": 15
+   },
+   {
+    "id": "d39-1",
+    "soru": "Le Verrier'nin hesabı Neptün'ün yerini hangi gözlemden yola çıkarak buldu?",
+    "secenekler": [
+     "Neptün'ün Güneş'in önünden geçişinden",
+     "Uranüs'ün yörüngesindeki, Newton yasasının açıklayamadığı sapmalardan",
+     "Triton'un parlaklık değişimlerinden",
+     "Jüpiter'in uydularının tutulma saatlerinden"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre Bouvard'ın 1821 tablolarından sapan Uranüs gözlemleri (pertürbasyonlar) bilinmeyen bir gezegenin çekimine işaret ediyordu. Le Verrier ve Adams bu sapmalardan yeri hesapladı; Galle 23 Eylül 1846'da Le Verrier'nin noktasından 1° uzakta buldu.",
+    "ders": "d39",
+    "bolum": 2
+   },
+   {
+    "id": "d39-2",
+    "soru": "Laboratuvardaki 'elmas yağmuru' deneyleri tam olarak neyi gösterdi?",
+    "secenekler": [
+     "Neptün'ün içinde milyonlarca kıratlık elmasların ölçüldüğünü",
+     "Voyager 2'nin elmas parçacıklarına çarptığını",
+     "Lazer şokuyla sıkıştırılan polistiren ve PET plastiğinde nanometre boyunda elmasların oluştuğunu",
+     "Uranüs'ün halkalarının elmastan yapıldığını"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre 2017'de polistiren, 2022'de PET plastiği lazerle şoklanıp X-ışınıyla izlendiğinde birkaç nanometrelik elmaslar oluştu. Bu, benzer koşullarda karbonun elmasa dönüşebildiğini gösterir; gezegenlerin içinde doğrudan ölçülmedi.",
+    "ders": "d39",
+    "bolum": 5
+   },
+   {
+    "id": "d39-3",
+    "soru": "Neptün Güneş'ten aldığının yaklaşık kaç katı enerjiyi uzaya yayar ve bu ne anlama gelir?",
+    "secenekler": [
+     "Yaklaşık 2,6 katını; güçlü bir iç ısısı vardır",
+     "Tam 1 katını; iç ısısı yoktur",
+     "Yaklaşık 0,5 katını; enerji biriktirir",
+     "Yaklaşık 10 katını; içinde füzyon vardır"
+    ],
+    "dogru": 0,
+    "aciklama": "Derse göre Neptün aldığının ~2,61 katını yayar; içten gelen akı metrekare başına ~0,43 W'tır. Uranüs ise Voyager verisiyle yalnızca ~1,1 kat; 2025 modelleri ~%15 fazlalık buldu.",
+    "ders": "d39",
+    "bolum": 6
+   },
+   {
+    "id": "d39-4",
+    "soru": "Uranüs'ün manyetik alanının eğikliğinin yan yatmış eksenden kaynaklanmadığını hangi gözlem gösterdi?",
+    "secenekler": [
+     "Uranüs'ün halkalarının 1977'de keşfi",
+     "Hubble'ın 2025 dönme ölçümü",
+     "Neptün'ün renginin 2024'te yeniden hesaplanması",
+     "Voyager 2'nin, ekseni normal eğiklikteki Neptün'ün alanını da benzer biçimde eğik ve kaymış bulması"
+    ],
+    "dogru": 3,
+    "aciklama": "Derse göre Neptün'ün ekseni 28,32° eğik olduğu hâlde manyetik ekseni 46,9° yatık ve merkezden kayıktır. Bu yüzden tuhaf geometri iç akışlara, ince ve iletken bir kabuktaki dinamoya bağlanır.",
+    "ders": "d39",
+    "bolum": 10
+   },
+   {
+    "id": "d40-1",
+    "soru": "Io, Europa ve Ganymede'nin dolanma süreleri 1:2:4 oranındadır. Bu rezonansın Io için en önemli sonucu nedir?",
+    "secenekler": [
+     "Io'nun yörüngesini eliptik tutarak değişen gelgit çekimiyle sürekli ısınmasını sağlar",
+     "Io'yu Jüpiter'in gölgesinden hiç çıkarmaz",
+     "Io'nun kendi manyetik alanını üretir",
+     "Io'nun buz kabuğunu kalınlaştırır"
+    ],
+    "dogru": 0,
+    "aciklama": "Derse göre rezonans yörüngeleri hafifçe eliptik kalmaya zorlar; Io Jüpiter'e yaklaşıp uzaklaştıkça sıkışıp gevşer ve bu gelgit ısınması volkanlarını besler. Jüpiter'in Io'daki gelgit ivmesi, Ay'ın Dünya'dakinin yaklaşık 5600 katıdır.",
+    "ders": "d40",
+    "bolum": 2
+   },
+   {
+    "id": "d40-2",
+    "soru": "Galileo aracının manyetometresinin Europa ve Callisto çevresinde ölçtüğü indüklenmiş manyetik alanlar en iyi neyle açıklanır?",
+    "secenekler": [
+     "Uyduların demir çekirdeklerinin dinamo etkisiyle",
+     "Yüzeyin hemen altındaki iletken tuzlu su katmanlarıyla",
+     "Güneş rüzgârının uydu yüzeylerine çarpmasıyla",
+     "Uyduların kalın buz kabuklarının mıknatıslanmasıyla"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre Jüpiter'in dönen alanı uydularda sürekli değişir; değişen alan yalnızca iletken bir maddede akım ve ikincil alan doğurur. Khurana ve arkadaşlarına (1998) göre en olası iletken, tuzlu sıvı su okyanuslarıdır.",
+    "ders": "d40",
+    "bolum": 1
+   },
+   {
+    "id": "d40-3",
+    "soru": "Petricca ve arkadaşlarının 2025 çalışması Titan'ın içi hakkında ne öne sürdü?",
+    "secenekler": [
+     "Titan'ın tamamen kaya olduğunu",
+     "Titan'ın metan okyanusunun yüzeyin 1000 km altında olduğunu",
+     "Küresel bir su okyanusu yerine kalın buzun altında çamursu bir katman ve su cepleri bulunduğunu",
+     "Titan'ın içinin Io gibi erimiş kayadan oluştuğunu"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre Titan'ın biçim değişikliği Satürn'ün en güçlü çekiminin yaklaşık 15 saat gerisinden geliyor ve içeride harcanan enerji küresel bir okyanus için fazla. Model: 150 km'den kalın buzun altında çamursu bir karışım ve erimiş su cepleri. Sonuç kesin değil.",
+    "ders": "d40",
+    "bolum": 8
+   },
+   {
+    "id": "d40-4",
+    "soru": "Triton'un Neptün'ün yanında doğmayıp sonradan yakalandığı neden düşünülür?",
+    "secenekler": [
+     "Çünkü Neptün'ün halkalarının içinde dolanır",
+     "Çünkü gezegenin dönüşünün tersine dolanan tek büyük uydudur",
+     "Çünkü Güneş Sistemi'nin en sıcak uydusudur",
+     "Çünkü yüzeyi tamamen kraterlerle kaplıdır"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre Triton 157,3° eğiklikle ters yönde dolanır; gezegenle birlikte bir diskte doğan uydular gezegenle aynı yönde dolanır. Bu yüzden Triton'un Kuiper kuşağından gelip yakalandığı düşünülür.",
+    "ders": "d40",
+    "bolum": 12
+   }
+  ],
+  "kuramlar": [
+   {
+    "id": "d50-1",
+    "soru": "Bu ünitenin kesinlik ölçeğine göre “karanlık madde WIMP'lerden oluşur” iddiası hangi basamaktadır?",
+    "secenekler": [
+     "Gözlemle kesinleşmiş",
+     "Güçlü kanıtlı ama açık sorulu",
+     "Kuram ya da hipotez",
+     "Bilim kurgu"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre karanlık maddenin kütleçekim etkisi gözlemle kesinleşmiştir, ama tek tek aday parçacıklar, WIMP dahil, kuram ya da hipotez basamağındadır: matematiksel olarak tutarlıdırlar ama hiçbir WIMP araması başarılı olmadı.",
+    "ders": "d50",
+    "bolum": 0
+   },
+   {
+    "id": "d50-2",
+    "soru": "LZ ve XENONnT gibi ksenon dedektörleri bir WIMP'i nasıl yakalamayı umar?",
+    "secenekler": [
+     "WIMP'in yaydığı görünür ışığı teleskopla görerek",
+     "WIMP'in bir ksenon çekirdeğine çarpıp onu itmesinden doğan küçük ışık ve yük sinyalini kaydederek",
+     "WIMP'i güçlü bir mıknatısta mikrodalga fotonuna dönüştürerek",
+     "WIMP'in Dünya'nın yörüngesini değiştirmesini ölçerek"
+    ],
+    "dogru": 1,
+    "aciklama": "Doğrudan algılamada umut, bir WIMP'in ksenon çekirdeğine vurup onu hareket ettirmesidir; dedektör bu çekirdek geri tepmesinin ürettiği ışığı ve elektronları kaydeder. Mıknatısta mikrodalgaya dönüştürme aksiyon aramasının (ADMX) yöntemidir.",
+    "ders": "d50",
+    "bolum": 6
+   },
+   {
+    "id": "d50-3",
+    "soru": "ADMX 1,10 GHz frekansında bir aksiyon sinyali arıyor. Bu yaklaşık hangi aksiyon kütlesine karşılık gelir? (h = 4,1357×10⁻¹⁵ eV·s)",
+    "secenekler": [
+     "Yaklaşık 4,5 μeV",
+     "Yaklaşık 4,5 eV",
+     "Yaklaşık 100 GeV",
+     "Yaklaşık 7,1 keV"
+    ],
+    "dogru": 0,
+    "aciklama": "m c² = h × f = 4,1357×10⁻¹⁵ × 1,10×10⁹ ≈ 4,5×10⁻⁶ eV, yani yaklaşık 4,5 μeV. Bu, ADMX'in 2025 makalesindeki 4,54 μeV ile uyumludur. 100 GeV tipik WIMP kütlesi, 7,1 keV ise 3,5 keV çizgisinin steril nötrino yorumudur.",
+    "ders": "d50",
+    "bolum": 8
+   },
+   {
+    "id": "d50-4",
+    "soru": "İlkel kara deliklerin karanlık maddenin tamamı olabilmesi için hâlâ açık kalan tek kütle penceresi hangisidir?",
+    "secenekler": [
+     "Yıldız kütleleri, LIGO'nun duyduğu 10–100 Güneş kütlesi",
+     "Güneş kütlesinin 10⁻¹⁷ ile 10⁻¹⁰ katı arası, asteroit kütleleri",
+     "10⁹ ile 10¹⁷ gram arası",
+     "Milyonlarca Güneş kütlesi, galaksi merkezlerindeki kara delikler"
+    ],
+    "dogru": 1,
+    "aciklama": "Carr ve arkadaşlarının 2026 derlemesine göre tek sağlam sınırı olmayan bölge asteroit kütleli penceredir (10⁻¹⁷–10⁻¹⁰ Güneş kütlesi). 10⁹–10¹⁷ gram arası Hawking buharlaşmasıyla, yıldız kütleleri LIGO'nun birleşme hızıyla sınırlanır.",
+    "ders": "d50",
+    "bolum": 10
+   },
+   {
+    "id": "d51-1",
+    "soru": "Bir bileşenin genişlemeyi hızlandırabilmesi için durum denklemi parametresi w hangi koşulu sağlamalıdır?",
+    "secenekler": [
+     "w = 0 olmalı, sıradan madde gibi",
+     "w = 1/3 olmalı, ışınım gibi",
+     "w < −1/3 olmalı",
+     "w > 1 olmalı"
+    ],
+    "dogru": 2,
+    "aciklama": "Frieman'ın notlarına göre ivme denkleminde her bileşen ρ + 3p kadar etki eder; w < −1/3 olan bir bileşen baskın olunca bu toplam eksiye döner ve genişleme hızlanır. Kozmolojik sabit için w = −1'dir.",
+    "ders": "d51",
+    "bolum": 4
+   },
+   {
+    "id": "d51-2",
+    "soru": "Einstein'ın kozmolojik sabiti “en büyük hatası” diye andığı anekdotu hakkında derste anlatılan son durum hangisidir?",
+    "secenekler": [
+     "Einstein bunu 1917 makalesinde kendi eliyle yazmıştır",
+     "Anekdotun tek kaynağı Gamow'dur ve kesin olarak uydurmadır",
+     "Livio 2013'te kuşkuyla baktı; O'Raifeartaigh ve Mitton 2018'de Wheeler ve Alpher'in tanıklıklarıyla büyük olasılıkla doğru olduğunu savundu",
+     "Einstein sabiti hiçbir zaman bırakmadı"
+    ],
+    "dogru": 2,
+    "aciklama": "Anekdotu Gamow 1956 ve 1970'te aktardı; Livio 2013'te Einstein'ın büyük olasılıkla söylemediğini düşündü. O'Raifeartaigh ve Mitton, Wheeler ve Alpher'in de benzer sözü aktardığını göstererek büyük olasılıkla doğru olduğunu savundu; yine de Einstein'ın kaleminden bir belge yok.",
+    "ders": "d51",
+    "bolum": 3
+   },
+   {
+    "id": "d51-3",
+    "soru": "Sık anılan “10¹²⁰ sorunu” sayısı hakkında hangisi doğrudur?",
+    "secenekler": [
+     "Kesin olarak ölçülmüş bir değerdir, tartışması yoktur",
+     "Planck ölçeğinde kesilen kaba bir tahminden gelir; Lorentz değişmezliğini koruyan hesaplar farkı yaklaşık 55–56 basamağa indirir, ama sorun yine de kalır",
+     "Casimir deneyi bu farkı ortadan kaldırmıştır",
+     "Fark yalnızca 2 kattır, yuvarlama hatasıdır"
+    ],
+    "dogru": 1,
+    "aciklama": "Planck kesmesiyle boşluk enerjisi ölçülen karanlık enerjiden yaklaşık 10¹²⁰–10¹²³ kat büyük çıkar. Bu kesme Lorentz değişmezliğini bozar; Martin 2012 gibi düzgün hesaplar farkı yaklaşık 55 basamağa indirir. 10⁵⁵ kat da dev bir uyuşmazlıktır ve çözümü bilinmiyor.",
+    "ders": "d51",
+    "bolum": 7
+   },
+   {
+    "id": "d51-4",
+    "soru": "DESI'nin zamanla değişen karanlık enerji işareti için derste hangi kesinlik etiketi kullanılıyor ve neden?",
+    "secenekler": [
+     "Gözlemle kesinleşmiş, çünkü 5 sigmayı geçti",
+     "Askıda bir ön sonuç, çünkü 2,8–4,2 sigma arasında kaldı ve süpernova sistematikleri tartışılıyor",
+     "Spekülasyon, çünkü hiç veri yok",
+     "Çürütüldü, çünkü Unite çalışması tersini buldu"
+    ],
+    "dogru": 1,
+    "aciklama": "DESI DR2 süpernovalarla birlikte 2,8–4,2 sigma, arka plan ışımasıyla 3,1 sigma veriyor; keşif eşiği olan 5 sigmaya ulaşılmadı. Efstathiou'nun 0,04 kadirlik kayma itirazı gibi sistematik tartışmalar sürüyor. Unite ön baskısı da aynı yönü 3,1–3,3 sigma ile gösteriyor; bu yüzden işaret askıda.",
+    "ders": "d51",
+    "bolum": 11
+   },
+   {
+    "id": "d52-1",
+    "soru": "Galaksimizin merkezindeki Sgr A* (yaklaşık 4,3 milyon Güneş kütlesi) için Hawking sıcaklığı yaklaşık ne kadardır?",
+    "secenekler": [
+     "Yaklaşık 62 nanokelvin",
+     "Yaklaşık 2,7 kelvin",
+     "Yaklaşık 1,4 × 10⁻¹⁴ kelvin",
+     "Yaklaşık 0,02 kelvin"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre T ≈ 6,17 × 10⁻⁸ K × (M☉ ÷ M). 6,17 × 10⁻⁸ ÷ 4,297 × 10⁶ ≈ 1,44 × 10⁻¹⁴ K. 62 nanokelvin 1 Güneş kütleli, 0,02 K Dünya kütleli kara deliğin sıcaklığıdır; 2,7 K kozmik arka planınkidir.",
+    "ders": "d52",
+    "bolum": 3
+   },
+   {
+    "id": "d52-2",
+    "soru": "Bir kara deliğin bugün net olarak küçülebilmesi, yani kozmik mikrodalga arka plandan (2,725 K) sıcak olması için kütlesi yaklaşık ne olmalıdır?",
+    "secenekler": [
+     "Birkaç Güneş kütlesinden az",
+     "Ay kütlesinin yaklaşık yüzde 61'inden az",
+     "Dünya kütlesinden az",
+     "Herhangi bir kütle olabilir; bütün kara delikler bugün küçülür"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre 2,725 K'lik Hawking sıcaklığı yaklaşık 4,5 × 10²² kg'a, yani Ay kütlesinin yaklaşık yüzde 61'ine karşılık gelir. Bundan ağır kara delikler, bilinen bütün kara delikler dahil, bugün arka plandan kazandıkları kütleyle büyür.",
+    "ders": "d52",
+    "bolum": 4
+   },
+   {
+    "id": "d52-3",
+    "soru": "Don Page'in 1993 çalışmasına göre buharlaşma üniterse Hawking ışımasının dolanıklık entropisi zamanla nasıl değişmelidir?",
+    "secenekler": [
+     "Kara delik bitene kadar hep artmalı ve büyük bir değerde kalmalı",
+     "Baştan sona sıfır kalmalı",
+     "Sıfırdan başlayıp kabaca buharlaşmanın yarı yoluna kadar artmalı, sonra yeniden sıfıra inmeli",
+     "Önce azalmalı, sonra artmalı"
+    ],
+    "dogru": 2,
+    "aciklama": "Page eğrisinde entropi sıfırdan başlar, kabaca yarı yolda (Page zamanı) döner ve kara delik bitince sıfıra iner. Hep artan eğri Hawking'in özgün hesabının verdiği eğridir.",
+    "ders": "d52",
+    "bolum": 9
+   },
+   {
+    "id": "d52-4",
+    "soru": "Steinhauer'in ekibinin Bose-Einstein yoğuşmasındaki ses kara deliği deneyleri için hangisi doğrudur?",
+    "secenekler": [
+     "Gökteki kara deliklerin Hawking ışımasını kesin olarak kanıtladı",
+     "Ses ufku olan bir kuantum sisteminde Hawking benzeri ısıl ışınım bildirdi ama kütleçekimini ve gerçek kara delikleri sınamaz",
+     "Bilgi paradoksunu deneysel olarak çözdü",
+     "Hiçbir sonuç alamadı ve bırakıldı"
+    ],
+    "dogru": 1,
+    "aciklama": "2019 deneyinde tayf ısıl bir tayfla uyuştu ve sıcaklık ufkun yüzey çekimiyle belirlendi (yaklaşık 0,35 nanokelvin). Ama düzenekte kütleçekimi yoktur; ders, bunun gökteki Hawking ışımasını doğrulamadığını ve 2016 sonucunun Leonhardt tarafından eleştirildiğini anlatır.",
+    "ders": "d52",
+    "bolum": 13
+   },
+   {
+    "id": "d53-1",
+    "soru": "Planck uzunluğu (NIST CODATA 2022 değeri yaklaşık 1,616 × 10⁻³⁵ m) hakkında derse göre hangisi doğrudur?",
+    "secenekler": [
+     "Doğadaki en küçük uzunluk olduğu deneyle kanıtlanmıştır",
+     "Kuantum kütleçekim etkilerinin önem kazanması beklenen ölçektir; en küçük uzunluk olduğu ise kanıtlanmamış bir varsayımdır",
+     "LHC 2022'de bu ölçeği doğrudan yokladı",
+     "Protonun yarıçapına yaklaşık eşittir"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre Planck birimleri 1899'da doğal bir ölçü sistemi olarak önerildi. Planck uzunluğu kuramlarımızın birlikte çalışmayı bıraktığı ölçeği gösterir; en kısa ölçülebilir uzaklık olabileceği yalnızca bir kuram ya da hipotezdir. Protondan yaklaşık 5 × 10¹⁹ kat küçüktür ve LHC'nin yoklayabildiğinden yaklaşık 10¹⁵ kat küçüktür.",
+    "ders": "d53",
+    "bolum": 2
+   },
+   {
+    "id": "d53-2",
+    "soru": "Süpersicim kuramı uzay-zamanın kaç boyutlu olmasını gerektirir ve ek boyutları neden görmediğimiz nasıl açıklanır?",
+    "secenekler": [
+     "4 boyut; ek boyut gerekmez",
+     "26 boyut; ek boyutlar karanlık maddedir",
+     "10 boyut; ek boyutların çok küçük kapalı şekillere kıvrıldığı (kompaktlaştırma) ya da evrenimizin bir zar olduğu varsayılır",
+     "11 boyut; ek boyutlar Eöt-Wash deneyinde 30 mikrometre büyüklüğünde ölçüldü"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre bozonik sicim kuramı 26, süpersicim kuramı 10, M-kuramı 11 boyut ister. Ek boyutların küçük şekillere (Calabi–Yau) kıvrıldığı ya da madde ve diğer kuvvetlerin dört boyutlu bir zara bağlı olduğu varsayılır. Eöt-Wash 2020 ek boyut ölçmedi; en büyük ek boyutun yarıçapına 30 mikrometrelik üst sınır koydu.",
+    "ders": "d53",
+    "bolum": 6
+   },
+   {
+    "id": "d53-3",
+    "soru": "Sicim manzarası için sık aktarılan 10⁵⁰⁰ sayısı hakkında hangisi doğrudur?",
+    "secenekler": [
+     "LHC'de sayılmış olası evren sayısıdır",
+     "Ek boyutların biçimi ve akı seçimlerinden gelen, Douglas (2003) ve Ashok–Douglas (2004) çalışmalarına dayanan kaba bir mertebedir; tam sayı bilinmiyor",
+     "Gözlenebilir evrendeki atom sayısının kesin değeridir",
+     "Bütün bu çözümlerin gerçek evrenler olarak var olduğu gözlemle kanıtlanmıştır"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre 10⁵⁰⁰ bir ölçüm değil, kararlıya yakın çözümleri istatistiksel olarak sayan çalışmalara dayanan bir mertebedir; 2015'te tek bir geometri için 10²⁷²⁰⁰⁰ gibi çok daha büyük bir sayı bulundu. Bütün çözümlerin gerçek evrenler olarak var olduğu fikri spekülasyondur.",
+    "ders": "d53",
+    "bolum": 9
+   },
+   {
+    "id": "d53-4",
+    "soru": "GW170817 birleşmesinde kütleçekim dalgası ile gama ışınları arasındaki 1,74 saniyelik fark kuantum kütleçekim araştırmaları için neden önemlidir?",
+    "secenekler": [
+     "Gravitonların tek tek sayılmasını sağladı",
+     "Sicim kuramını kesin olarak doğruladı",
+     "Kütleçekimi ile ışığın hızlarının, ışık hızının −3 × 10⁻¹⁵ ile +7 × 10⁻¹⁶ katı içinde aynı olduğunu gösterdi ve kütleçekiminde Lorentz değişmezliği bozulmasına çok sıkı sınırlar koydu",
+     "Kütleçekiminin ışıktan 1,74 kat yavaş olduğunu gösterdi"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre ışığın en az 26 megaparseklik yolculuğu yaklaşık 2,7 × 10¹⁵ s sürer; 1,74 s'lik fark bu sürenin yaklaşık 6,5 × 10⁻¹⁶'sıdır. LIGO, Virgo ve Fermi ekipleri hız farkını −3 × 10⁻¹⁵ ile +7 × 10⁻¹⁶ arasına sıkıştırdı. Bu, Lorentz değişmezliğinin bozulmasını öngören bazı modelleri sınar ama hiçbir kuramı kesin doğrulamaz.",
+    "ders": "d53",
+    "bolum": 14
+   },
+   {
+    "id": "d54-1",
+    "soru": "BICEP2 ekibinin 17 Mart 2014'te ilksel kütleçekim dalgalarına bağladığı B kipi işaretinin büyük kısmının aslında nereden geldiği anlaşıldı?",
+    "secenekler": [
+     "Teleskobun kendi elektronik gürültüsünden",
+     "Samanyolu'ndaki hizalanmış toz tanelerinin kutuplanmış ışımasından",
+     "Dünya atmosferindeki su buharından",
+     "Gerçekten ilksel kütleçekim dalgalarından; sonuç daha sonra doğrulandı"
+    ],
+    "dogru": 1,
+    "aciklama": "Planck'ın tozun baskın olduğu 353 gigahertzlik haritası BICEP2/Keck'in 150 gigahertzlik verileriyle güçlü biçimde ilişkili çıktı. Şubat 2015 ortak analizi sağlam bir kanıt bulamadı ve r < 0,12 sınırını verdi; bugünkü sınır r < 0,036.",
+    "ders": "d54",
+    "bolum": 8
+   },
+   {
+    "id": "d54-2",
+    "soru": "Planck 2018'in ölçtüğü spektral indeks n_s = 0,9649 ± 0,0042 için hangisi doğrudur?",
+    "secenekler": [
+     "Değer tam 1'dir; bütün ölçekler eşit güçtedir",
+     "Değer 1'den yaklaşık 8 sigma küçüktür; bu şişmenin genel beklentisiyle uyumludur",
+     "Değer şişmeyi kesin olarak yanlışlamıştır",
+     "Değer yalnızca galaktik tozdan kaynaklanır"
+    ],
+    "dogru": 1,
+    "aciklama": "(1 − 0,9649) / 0,0042 ≈ 8,4 sigma. En basit şişme modelleri n_s'nin 0,92 ile 0,98 arasında, yani 1'den biraz küçük olmasını öngörür. ACT'nin 2025 birleşik değeri 0,974 ± 0,003 de 1'in altındadır.",
+    "ders": "d54",
+    "bolum": 6
+   },
+   {
+    "id": "d54-3",
+    "soru": "Derse göre kozmik şişme ile çoklu evren arasındaki ilişki hangisidir?",
+    "secenekler": [
+     "Şişmeyi kabul eden herkes çoklu evreni de kabul etmek zorundadır",
+     "Planck şişmeyi doğrulayınca başka baloncuk evrenlerin varlığı da gözlemle kesinleşti",
+     "Şişmenin doğrulanan öngörüleri ayrı bir basamaktır; sonsuz şişme bazı modellerin sonucudur (kuram ya da hipotez), başka baloncukların varlığı ise spekülasyondur",
+     "Çoklu evren gözlemle kesinleşmiştir, şişme ise spekülasyondur"
+    ],
+    "dogru": 2,
+    "aciklama": "Düzlük, n_s ve Gauss dağılımlı dalgalanmalar şişmeyi destekler (güçlü kanıtlı ama açık sorulu). Sonsuz şişme yalnız bazı modellerden çıkar ve hiçbir baloncuk gözlenmedi; 2011 baloncuk çarpışması araması da bir şey bulmadı.",
+    "ders": "d54",
+    "bolum": 14
+   },
+   {
+    "id": "d54-4",
+    "soru": "Everett'in çok dünyalar yorumuna göre hangisi doğrudur?",
+    "secenekler": [
+     "Dalga fonksiyonu her ölçümde çöker ve tek bir dünya kalır",
+     "İnsan bilinci hangi dalın gerçekleşeceğini seçer",
+     "Dalga fonksiyonu hiç çökmez; dekoherans sonuçları birbirleriyle haberleşmeyen dallara ayırır",
+     "Dallar arasında yolculuk yapılabildiği deneyle gösterilmiştir"
+    ],
+    "dogru": 2,
+    "aciklama": "Everett (1957) evrenin dalga fonksiyonunu gerçek sayar ve çökme varsaymaz; 'çok dünyalar' adını 1970'lerde DeWitt verdi. Dallar arasında bilgi geçmez ve yorum bugünkü deneylerde öteki yorumlarla aynı sonuçları verir; kesinlik etiketi kuram ya da hipotez.",
+    "ders": "d54",
+    "bolum": 11
+   },
+   {
+    "id": "d55-1",
+    "soru": "Borde–Guth–Vilenkin teoremine göre hangisi doğrudur?",
+    "secenekler": [
+     "Şişme geçmişe doğru sonsuza uzanabildiği için evrenin başlangıcı yoktur",
+     "Ortalama olarak genişleyen bir evren geçmişe doğru eksiktir; şişen bölgenin geçmiş sınırını anlatmak için şişmenin dışında bir fizik gerekir",
+     "Teorem evrenin yoktan var olduğunu kanıtlar",
+     "Teorem yalnızca büzülen evrenler için geçerlidir"
+    ],
+    "dogru": 1,
+    "aciklama": "2003 tarihli çalışmaya göre şişen ya da yeterince hızlı genişleyen her model geçmişe doğru eksiktir. Teorem evrenin nasıl başladığını söylemez; yalnızca şişmenin başlangıç sorusunu ortadan kaldırmadığını, bir adım geriye taşıdığını gösterir.",
+    "ders": "d55",
+    "bolum": 2
+   },
+   {
+    "id": "d55-2",
+    "soru": "Penrose ve arkadaşlarının 2018'de öne sürdüğü 'Hawking noktaları' için hangisi doğrudur?",
+    "secenekler": [
+     "Bağımsız analizler doğruladı ve konformal döngüsel kozmoloji kanıtlandı",
+     "Penrose Nobel ödüllü olduğu için iddia kesinleşmiş sayılır",
+     "Jow ve Scott (2020) başka yere bakma etkisini hesaba katınca noktaların standart şişme resmiyle uyumlu olduğunu buldu",
+     "Noktalar yalnız WMAP verisinde görüldü, Planck'ta yoktu"
+    ],
+    "dogru": 2,
+    "aciklama": "Noktalar 3–4 derece çaplı sıcak lekeler olarak Planck'ın 70 GHz verilerinde ve WMAP'te gösterildi; yazarlar önceki aeondaki kara deliklerin izi dedi. Bağımsız analiz, çok yere bakılınca böyle lekelerin rastlantıyla beklenebileceğini gösterdi. Bir Nobel ödülü kanıt sayılmaz; etiket: spekülasyon.",
+    "ders": "d55",
+    "bolum": 7
+   },
+   {
+    "id": "d55-3",
+    "soru": "w = −1,5, H0 = 70 km/s/Mpc ve Ωm = 0,3 için Caldwell, Kamionkowski ve Weinberg'in hesabına göre Büyük Yırtılma'ya yaklaşık ne kadar kalır?",
+    "secenekler": [
+     "Yaklaşık 22 milyar yıl",
+     "Yaklaşık 22 milyon yıl",
+     "Yaklaşık 10¹⁰⁰ yıl",
+     "Büyük Yırtılma hiç olmaz, çünkü w < −1"
+    ],
+    "dogru": 0,
+    "aciklama": "t ≈ (2/3) × 1/0,5 × 13,97 / √0,7 ≈ 22 milyar yıl. Bu örnekte Samanyolu sondan yaklaşık 60 milyon yıl, Güneş Sistemi 3 ay, Dünya 30 dakika önce sökülür. w −1'e yaklaştıkça süre uzar; w = −1 ise Büyük Yırtılma olmaz.",
+    "ders": "d55",
+    "bolum": 10
+   },
+   {
+    "id": "d55-4",
+    "soru": "Standart Model hesabına göre (Andreassen, Frost, Schwartz 2018) boşluğumuzun ömrü ve bu hesabın en önemli çekincesi nedir?",
+    "secenekler": [
+     "Yaklaşık 10 milyar yıl; çekince yok",
+     "Yaklaşık 10¹³⁹ yıl, yüzde 95 güvenle 10⁵⁸ yıldan uzun; Standart Model'in ötesindeki yeni fizik sonucu kökten değiştirebilir",
+     "Boşluk kesinlikle kararlıdır; Higgs kütlesi bunu kanıtladı",
+     "LHC çarpışmaları boşluğu her an bozabilir"
+    ],
+    "dogru": 1,
+    "aciklama": "Ölçülen Higgs (~125 GeV) ve üst kuark (~173 GeV) kütleleri boşluğu yarı kararlı gösterir. Hesap Standart Model'in çok yüksek enerjilere kadar değişmeden geçerli olduğunu varsayar; etiket kuram ya da hipotez. Kozmik ışınlar LHC'den çok daha yüksek enerjili çarpışmalar ürettiği için hızlandırıcılar tehdit değildir.",
+    "ders": "d55",
+    "bolum": 12
+   },
+   {
+    "id": "d56-1",
+    "soru": "Bir yıldızın çöküşüyle doğan gerçek bir kara delikte, Schwarzschild çözümünün tam haritasındaki hangi bölgeler bulunmaz?",
+    "secenekler": [
+     "Dış evren ve kara delik içi",
+     "Beyaz delik içi ve ikinci dış bölge",
+     "Yalnızca olay ufku",
+     "Dört bölgenin hepsi bulunur"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre tam harita ebedî, boş bir kara deliği anlatır. Çöken yıldızın maddesi hesaba katılınca beyaz delik bölgesi ve ikinci dış bölge ortadan kalkar; dış evren ve kara delik içi kalır.",
+    "ders": "d56",
+    "bolum": 1
+   },
+   {
+    "id": "d56-2",
+    "soru": "2022'de Google'ın Sycamore işlemcisinde yapılan “solucan deliği” deneyi için hangisi doğrudur?",
+    "secenekler": [
+     "Uzay-zamanda küçük ama gerçek bir solucan deliği açıldı",
+     "Holografik olarak bir solucan deliğine eşlenebilen bir kuantum ışınlama protokolü çalıştırıldı; gerçek bir solucan deliği yaratılmadı",
+     "Bir kara delik laboratuvarda üretildi",
+     "Işıktan hızlı bir mesaj gönderildi"
+    ],
+    "dogru": 1,
+    "aciklama": "Makine öğrenmesiyle basitleştirilmiş SYK benzeri bir modelde ışınlama yapıldı ve sonuç solucan deliği diliyle yorumlandı. Caltech ve Reuters fiziksel uzayda bir yarık yaratılmadığını vurguladı; Kobrin, Schuster ve Yao modelin kütleçekimi benzeri davranışını sorguladı.",
+    "ders": "d56",
+    "bolum": 9
+   },
+   {
+    "id": "d56-3",
+    "soru": "Kozmonot Sergei Krikalev uzayda toplam 803 günden fazla kalarak yaklaşık ne kadar “geleceğe yolculuk” yaptı?",
+    "secenekler": [
+     "Yaklaşık 0,02 saniye",
+     "Yaklaşık 2 saat",
+     "Yaklaşık 1 gün",
+     "Hiç; zaman genişlemesi yalnızca ışık hızına yakın hızlarda olur"
+    ],
+    "dogru": 0,
+    "aciklama": "Saniyede yaklaşık 7,7 km hızla zaman genişlemesi kesri yaklaşık v² ÷ (2c²) ≈ 3,3 × 10⁻¹⁰'dur; 803,4 gün ≈ 6,94 × 10⁷ s ile çarpınca yaklaşık 0,02 s çıkar. Kaynak da 0,02 saniye verir.",
+    "ders": "d56",
+    "bolum": 10
+   },
+   {
+    "id": "d56-4",
+    "soru": "Bir solucan deliği ağzı ışık hızının %80'iyle 4 ışık yılı öteye gidip dönerse (evde 10 yıl, yolculukta 6 yıl geçer), düzenek kaç yıl geçmişe götüren bir zaman makinesi olur?",
+    "secenekler": [
+     "6 yıl",
+     "10 yıl",
+     "4 yıl",
+     "16 yıl"
+    ],
+    "dogru": 2,
+    "aciklama": "Boğaz iki ağzın saatlerini içeriden eşitler; dışarıdaki takvimde aralarında 10 − 6 = 4 yıl fark birikir. Bu yüzden düzenek 4 yıl geriye götürür; bu hesap geçilebilir solucan deliği ve egzotik madde varsayımına dayanır.",
+    "ders": "d56",
+    "bolum": 11
    }
   ]
  }

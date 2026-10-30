@@ -41,7 +41,7 @@ Biçim: iddia | kaynak URL | kaynaktaki ifade (kısa alıntı ya da değer). "(W
 
 | İddia | Kaynak URL | Kaynaktaki ifade |
 |---|---|---|
-| Koma Güneş'ten büyük olabilir | https://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq.ipfs.4everland.io/wiki/Comet_tail.html | "the coma can be larger than the Sun" (WebFetch özeti) |
+| Koma Güneş'ten büyük olabilir | https://en.wikipedia.org/wiki/Comet_tail | "the coma can be larger than the Sun" (WebFetch özeti) |
 | Koma geçici atmosfer; yüz binlerce km; kuyruk milyonlarca km | (d19) https://science.nasa.gov/solar-system/comets ; https://esa.int/ESA_Multimedia/Images/2023/11/Structure_of_a_comet | "many millions of kilometres" |
 | Hidrojen zarfı: su buharının parçalanmasından nötr H; yalnız morötesi; atmosferden geçemez | https://esa.int/ESA_Multimedia/Images/2023/11/Structure_of_a_comet | (WebFetch özeti) |
 | CO/su ortalama %4; Borisov %35–105 | https://en.wikipedia.org/wiki/2I/Borisov | "35–105%"; "the average ratio of 4% for Solar System comets" |
@@ -51,12 +51,12 @@ Biçim: iddia | kaynak URL | kaynaktaki ifade (kısa alıntı ya da değer). "(W
 
 | İddia | Kaynak URL | Kaynaktaki ifade |
 |---|---|---|
-| Işınım basıncı ve Güneş rüzgârı tozu iter; toz yörüngede geride kalır, kavislenir; toz yansıtarak parlar | https://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq.ipfs.4everland.io/wiki/Comet_tail.html | "Radiation pressure from the Sun, along with the solar wind"; "left behind in the comet's orbit" (WebFetch özeti) |
+| Işınım basıncı ve Güneş rüzgârı tozu iter; toz yörüngede geride kalır, kavislenir; toz yansıtarak parlar | https://en.wikipedia.org/wiki/Comet_tail | "Radiation pressure from the Sun, along with the solar wind"; "left behind in the comet's orbit" (WebFetch özeti) |
 | Morötesi ışık elektron koparır; manyetik alan çizgileri bükülür; iyon kuyruğu alan çizgilerini izler | aynı | "follows the magnetic field lines rather than an orbital trajectory" |
 | İyon kuyruğu tam Güneş tersi; mavi CO⁺ (görünürde verimli tek iyon); ana iyon H₂O⁺ | https://arxiv.org/pdf/2211.03868 | "the blue ion tail is exactly anti-sunward"; "fluorescence of CO+ ions"; "the main ion produced is H2O+" |
 | Biermann 1951 ilk; Parker 1958; hızlı rüzgâr 400–800 km/s | aynı | Biermann "was the first to suggest then that there is a flow of ionised particles from the Sun"; "|V_SW| = 400-800 km s-1" |
 | ICE: 21P'den 4 × 10⁶ km'de kuyruklu yıldız iyonları | aynı | "ions of cometary origin were observed up to 4 × 10^6 km from 21P's nucleus" |
-| İyon kuyrukları 3,8 AB (570 milyon km) | https://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq.ipfs.4everland.io/wiki/Comet_tail.html | "3.8 AU (570 Gm)" |
+| İyon kuyrukları 3,8 AB (570 milyon km) | https://en.wikipedia.org/wiki/Comet_tail | "3.8 AU (570 Gm)" |
 | Kuyruk kopması; Encke 20 Nisan 2007 KKA, STEREO; McNaught 26 Mayıs 2010 | aynı | (WebFetch özeti) |
 | Karşı kuyruk: geride kalan toz, bakış geometrisi | aynı | (WebFetch özeti) |
 | Hale-Bopp sodyum kuyruğu, ~0,33 AB, özel süzgeç, üçüncü tür | https://en.wikipedia.org/wiki/Comet_Hale%E2%80%93Bopp | "It extends about 0.33 AU"; "third type of tail" |

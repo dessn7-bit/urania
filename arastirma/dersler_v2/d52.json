@@ -4,7 +4,12 @@
   "yeni": true,
   "baslik": "Kara Deliklerin Kuantum Yüzü: Hawking Işıması ve Bilgi Paradoksu",
   "ozet": "Kuantum fiziği kara deliğin kenarına taşınınca kara delik bir sıcaklık ve entropi kazanır, çok yavaş da olsa ışır ve buharlaşır. Bu derste Hawking ışımasını sayılarla hesaplayacak, buharlaşmanın neden fiziğin en temel kurallarından biriyle, bilginin korunmasıyla çatıştığını, Page eğrisini, ateş duvarı tartışmasını, holografik ilkeyi, 2019'un “ada” hesaplarını ve laboratuvardaki ses kara deliklerini öğreneceksin. Her fikrin ne kadar sağlam olduğunu dört kesinlik düzeyiyle ayıracağız.",
-  "on_bilgi": ["d16", "d30", "d28", "d50"],
+  "on_bilgi": [
+    "d16",
+    "d30",
+    "d28",
+    "d50"
+  ],
   "bolumler": [
     {
       "baslik": "Kara delik neden bir kuantum sorusu?",
@@ -214,83 +219,186 @@
     {
       "deger": "6,17 × 10⁻⁸ K × (M☉ ÷ M); 1 M☉ için ~62 nanokelvin",
       "aciklama": "Hawking sıcaklığı ve Güneş kütleli kara deliğin sıcaklığı",
-      "kaynak_url": "https://arxiv.org/pdf/2411.09081"
+      "kaynak_url": "https://arxiv.org/pdf/2411.09081",
+      "kid": "d52n0"
     },
     {
       "deger": "2,1 × 10⁶⁷ yıl × (M ÷ M☉)³",
       "aciklama": "Yalnız foton yayıldığı varsayımıyla buharlaşma süresi",
-      "kaynak_url": "https://arxiv.org/pdf/2411.09081"
+      "kaynak_url": "https://arxiv.org/pdf/2411.09081",
+      "kid": "d52n1"
     },
     {
       "deger": "~4,5 × 10²² kg (Ay kütlesinin ~%61'i)",
       "aciklama": "Hawking sıcaklığı 2,725 K olan kara deliğin kütlesi (hesap); bundan ağır kara delikler bugün büyür",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Black_hole"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Black_hole",
+      "kid": "d52n2"
     },
     {
       "deger": "~5 × 10¹⁴ g (5 × 10¹¹ kg)",
       "aciklama": "Bugün buharlaşması biten ilkel kara deliklerin ilk kütlesi (bütün parçacık türleriyle)",
-      "kaynak_url": "https://ar5iv.labs.arxiv.org/html/1911.04356"
+      "kaynak_url": "https://ar5iv.labs.arxiv.org/html/1911.04356",
+      "kid": "d52n3"
     },
     {
       "deger": "< 3.400 (HAWC), < 7.200 (Fermi-LAT) parsek küp başına yılda; %99 güven",
       "aciklama": "Yakın çevremizde ilkel kara delik buharlaşma patlaması sıklığına üst sınırlar; hiç patlama saptanmadı",
-      "kaynak_url": "https://ar5iv.labs.arxiv.org/html/1911.04356"
+      "kaynak_url": "https://ar5iv.labs.arxiv.org/html/1911.04356",
+      "kid": "d52n4"
     },
     {
       "deger": "Nature Mart 1974; CMP Ağustos 1975; PRD 1976",
       "aciklama": "Hawking ışımasının ilk duyurusu, ayrıntılı hesabı ve bilgi paradoksu makalesi",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Hawking_radiation"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Hawking_radiation",
+      "kid": "d52n5"
     },
     {
       "deger": "6 Şubat 1997; 21 Temmuz 2004",
       "aciklama": "Thorne–Hawking–Preskill bahsinin imza tarihi ve Hawking'in kabulü (Dublin)",
-      "kaynak_url": "https://en.wikipedia.org/wiki/Thorne%E2%80%93Hawking%E2%80%93Preskill_bet"
+      "kaynak_url": "https://en.wikipedia.org/wiki/Thorne%E2%80%93Hawking%E2%80%93Preskill_bet",
+      "kid": "d52n6"
     },
     {
       "deger": "1993 (Page); 13 Temmuz 2012 (AMPS)",
       "aciklama": "Page eğrisi makalesi ve ateş duvarı makalesi",
-      "kaynak_url": "https://arxiv.org/abs/1207.3123"
+      "kaynak_url": "https://arxiv.org/abs/1207.3123",
+      "kid": "d52n7"
     },
     {
       "deger": "1997 sonu; 10.000'den fazla atıf (2015)",
       "aciklama": "Maldacena'nın AdS/CFT önerisi; yüksek enerji fiziğinin en çok atıf alan makalesi",
-      "kaynak_url": "https://en.wikipedia.org/wiki/AdS/CFT_correspondence"
+      "kaynak_url": "https://en.wikipedia.org/wiki/AdS/CFT_correspondence",
+      "kid": "d52n8"
     },
     {
       "deger": "8.000 atom; 7.400 tekrar; ~0,35 nanokelvin",
       "aciklama": "2019 ses kara deliği deneyi (rubidyum-87 Bose-Einstein yoğuşması): atom sayısı, tekrar sayısı, öngörülen Hawking sıcaklığı",
-      "kaynak_url": "https://arxiv.org/pdf/1809.00913v1"
+      "kaynak_url": "https://arxiv.org/pdf/1809.00913v1",
+      "kid": "d52n9"
     },
     {
       "deger": "~1,05 × 10⁷⁷ k ≈ 1,5 × 10⁷⁷ bit",
       "aciklama": "1 M☉'lik kara deliğin Bekenstein-Hawking entropisi (d30) ve bit karşılığı",
-      "kaynak_url": "https://arxiv.org/pdf/2410.11851"
+      "kaynak_url": "https://arxiv.org/pdf/2410.11851",
+      "kid": "d52n10"
     }
   ],
   "sozluk": [
-    { "terim": "genelleştirilmiş ikinci yasa", "tanim": "Sıradan maddenin entropisiyle kara deliklerin entropisinin toplamının hiçbir zaman azalmadığını söyleyen genişletilmiş termodinamik kuralı." },
-    { "terim": "Hawking sıcaklığı", "tanim": "Kuantum etkileri yüzünden bir kara deliğin ışımasına karşılık gelen, kütleyle ters orantılı sıcaklık; 1 Güneş kütlesi için yaklaşık 62 nanokelvin." },
-    { "terim": "kuantum alan kuramı", "tanim": "Parçacıkları, uzaya yayılmış alanların kuantumlu titreşimleri olarak anlatan fizik kuramı." },
-    { "terim": "Planck ötesi sorun", "tanim": "Hawking'in hesabında, geriye doğru izlenince dalga boyu Planck uzunluğundan kısa olan parçacıkların yer almasından doğan kaygı." },
-    { "terim": "eksi ısı sığası", "tanim": "Bir cismin enerji kaybettikçe soğumak yerine ısınması; kara delikler ve yıldızlar böyle davranır." },
-    { "terim": "ilkel kara delik", "tanim": "Yıldız çöküşünden değil, evrenin ilk anlarındaki yoğunluk dalgalanmalarından oluşmuş olabileceği düşünülen, henüz gözlenmemiş kara delik." },
-    { "terim": "üniterlik", "tanim": "Kuantum durumlarının zaman içinde bilgiyi yok etmeyen, geçmişi ve geleceği tek biçimde belirleyen bir kurala göre değişmesi." },
-    { "terim": "saf durum", "tanim": "Tam olarak belirli tek bir kuantum durumu; entropisi sıfırdır." },
-    { "terim": "karışık durum", "tanim": "Bir sistemin hangi kuantum durumunda olduğunun yalnızca olasılıklarla bilinebildiği, entropisi sıfırdan büyük durum." },
-    { "terim": "dolanıklık entropisi", "tanim": "Dolanık bir bütünün bir parçasına tek başına bakınca görülen belirsizliğin ölçüsü." },
-    { "terim": "bilgi paradoksu", "tanim": "Kara deliğin tamamen ısıl ışınımla buharlaşmasının, kuantum kurallarının istediği bilgi korunumuyla çelişmesi sorunu." },
-    { "terim": "kalıntı", "tanim": "Buharlaşmanın sonunda geriye kalıp bilgiyi saklayabileceği öne sürülen, varlığı kanıtlanmamış küçük cisim." },
-    { "terim": "Page eğrisi", "tanim": "Buharlaşma üniterse Hawking ışımasının dolanıklık entropisinin önce artıp sonra yeniden sıfıra inmesi gerektiğini gösteren eğri." },
-    { "terim": "Page zamanı", "tanim": "Page eğrisinin artıştan düşüşe döndüğü an; kabaca buharlaşmanın yarı yolu." },
-    { "terim": "kara delik tamamlayıcılığı", "tanim": "Dışarıdaki ve içeri düşen gözlemcinin kara delik hakkındaki farklı anlatılarının, kimse ikisini birden doğrulayamadığı için çelişmediğini savunan öneri." },
-    { "terim": "ateş duvarı", "tanim": "Bilginin korunması için olay ufkunda içeri düşeni yakacak yüksek enerjili bir parçacık katmanı bulunması gerektiğini söyleyen tartışmalı öneri." },
-    { "terim": "holografik ilke", "tanim": "Bir uzay bölgesinin bilgisinin, o bölgenin sınır yüzeyine kodlanmış gibi düşünülebileceğini söyleyen kuramsal ilke." },
-    { "terim": "AdS/CFT eşlemesi", "tanim": "Eksi kozmolojik sabitli kütleçekimli bir evrenin, sınırındaki kütleçekimsiz bir kuantum alan kuramına eşdeğer olduğunu söyleyen, kanıtlanmamış ama güçlü desteklenen sanı." },
-    { "terim": "anti-de Sitter", "tanim": "Kozmolojik sabiti eksi olan, ne genişleyen ne büzülen kuramsal evren modeli; bizim evrenimiz böyle değildir." },
-    { "terim": "kopya solucan delikleri", "tanim": "Entropi hesabında bir sistemin kopyalarını birbirine bağlayan ve Page eğrisini veren kuramsal uzay-zaman geometrileri." },
-    { "terim": "ada", "tanim": "2019 hesaplarında, Page zamanından sonra Hawking ışımasına ait sayılması gereken kara delik içi bölge." },
-    { "terim": "ses ufku", "tanim": "Bir akışkanın hızının ses hızını aştığı ve sesin geri dönemediği, olay ufkunun laboratuvardaki benzeri." },
-    { "terim": "Bose-Einstein yoğuşması", "tanim": "Mutlak sıfıra çok yakın soğutulmuş atomların hep birlikte tek bir kuantum durumu gibi davrandığı gaz." }
+    {
+      "terim": "genelleştirilmiş ikinci yasa",
+      "tanim": "Sıradan maddenin entropisiyle kara deliklerin entropisinin toplamının hiçbir zaman azalmadığını söyleyen genişletilmiş termodinamik kuralı.",
+      "kid": "d52t0"
+    },
+    {
+      "terim": "Hawking sıcaklığı",
+      "tanim": "Kuantum etkileri yüzünden bir kara deliğin ışımasına karşılık gelen, kütleyle ters orantılı sıcaklık; 1 Güneş kütlesi için yaklaşık 62 nanokelvin.",
+      "kid": "d52t1"
+    },
+    {
+      "terim": "kuantum alan kuramı",
+      "tanim": "Parçacıkları, uzaya yayılmış alanların kuantumlu titreşimleri olarak anlatan fizik kuramı.",
+      "kid": "d52t2"
+    },
+    {
+      "terim": "Planck ötesi sorun",
+      "tanim": "Hawking'in hesabında, geriye doğru izlenince dalga boyu Planck uzunluğundan kısa olan parçacıkların yer almasından doğan kaygı.",
+      "kid": "d52t3"
+    },
+    {
+      "terim": "eksi ısı sığası",
+      "tanim": "Bir cismin enerji kaybettikçe soğumak yerine ısınması; kara delikler ve yıldızlar böyle davranır.",
+      "kid": "d52t4"
+    },
+    {
+      "terim": "ilkel kara delik",
+      "tanim": "Yıldız çöküşünden değil, evrenin ilk anlarındaki yoğunluk dalgalanmalarından oluşmuş olabileceği düşünülen, henüz gözlenmemiş kara delik.",
+      "kid": "d52t5"
+    },
+    {
+      "terim": "üniterlik",
+      "tanim": "Kuantum durumlarının zaman içinde bilgiyi yok etmeyen, geçmişi ve geleceği tek biçimde belirleyen bir kurala göre değişmesi.",
+      "kid": "d52t6"
+    },
+    {
+      "terim": "saf durum",
+      "tanim": "Tam olarak belirli tek bir kuantum durumu; entropisi sıfırdır.",
+      "kid": "d52t7"
+    },
+    {
+      "terim": "karışık durum",
+      "tanim": "Bir sistemin hangi kuantum durumunda olduğunun yalnızca olasılıklarla bilinebildiği, entropisi sıfırdan büyük durum.",
+      "kid": "d52t8"
+    },
+    {
+      "terim": "dolanıklık entropisi",
+      "tanim": "Dolanık bir bütünün bir parçasına tek başına bakınca görülen belirsizliğin ölçüsü.",
+      "kid": "d52t9"
+    },
+    {
+      "terim": "bilgi paradoksu",
+      "tanim": "Kara deliğin tamamen ısıl ışınımla buharlaşmasının, kuantum kurallarının istediği bilgi korunumuyla çelişmesi sorunu.",
+      "kid": "d52t10"
+    },
+    {
+      "terim": "kalıntı",
+      "tanim": "Buharlaşmanın sonunda geriye kalıp bilgiyi saklayabileceği öne sürülen, varlığı kanıtlanmamış küçük cisim.",
+      "kid": "d52t11"
+    },
+    {
+      "terim": "Page eğrisi",
+      "tanim": "Buharlaşma üniterse Hawking ışımasının dolanıklık entropisinin önce artıp sonra yeniden sıfıra inmesi gerektiğini gösteren eğri.",
+      "kid": "d52t12"
+    },
+    {
+      "terim": "Page zamanı",
+      "tanim": "Page eğrisinin artıştan düşüşe döndüğü an; kabaca buharlaşmanın yarı yolu.",
+      "kid": "d52t13"
+    },
+    {
+      "terim": "kara delik tamamlayıcılığı",
+      "tanim": "Dışarıdaki ve içeri düşen gözlemcinin kara delik hakkındaki farklı anlatılarının, kimse ikisini birden doğrulayamadığı için çelişmediğini savunan öneri.",
+      "kid": "d52t14"
+    },
+    {
+      "terim": "ateş duvarı",
+      "tanim": "Bilginin korunması için olay ufkunda içeri düşeni yakacak yüksek enerjili bir parçacık katmanı bulunması gerektiğini söyleyen tartışmalı öneri.",
+      "kid": "d52t15"
+    },
+    {
+      "terim": "holografik ilke",
+      "tanim": "Bir uzay bölgesinin bilgisinin, o bölgenin sınır yüzeyine kodlanmış gibi düşünülebileceğini söyleyen kuramsal ilke.",
+      "kid": "d52t16"
+    },
+    {
+      "terim": "AdS/CFT eşlemesi",
+      "tanim": "Eksi kozmolojik sabitli kütleçekimli bir evrenin, sınırındaki kütleçekimsiz bir kuantum alan kuramına eşdeğer olduğunu söyleyen, kanıtlanmamış ama güçlü desteklenen sanı.",
+      "kid": "d52t17"
+    },
+    {
+      "terim": "anti-de Sitter",
+      "tanim": "Kozmolojik sabiti eksi olan, ne genişleyen ne büzülen kuramsal evren modeli; bizim evrenimiz böyle değildir.",
+      "kid": "d52t18"
+    },
+    {
+      "terim": "kopya solucan delikleri",
+      "tanim": "Entropi hesabında bir sistemin kopyalarını birbirine bağlayan ve Page eğrisini veren kuramsal uzay-zaman geometrileri.",
+      "kid": "d52t19"
+    },
+    {
+      "terim": "ada",
+      "tanim": "2019 hesaplarında, Page zamanından sonra Hawking ışımasına ait sayılması gereken kara delik içi bölge.",
+      "kid": "d52t20"
+    },
+    {
+      "terim": "ses ufku",
+      "tanim": "Bir akışkanın hızının ses hızını aştığı ve sesin geri dönemediği, olay ufkunun laboratuvardaki benzeri.",
+      "kid": "d52t21"
+    },
+    {
+      "terim": "Bose-Einstein yoğuşması",
+      "tanim": "Mutlak sıfıra çok yakın soğutulmuş atomların hep birlikte tek bir kuantum durumu gibi davrandığı gaz.",
+      "kid": "d52t22"
+    }
   ],
   "defter_notu": [
     "Dört kesinlik düzeyi: Gözlemle kesinleşmiş / Güçlü kanıtlı ama açık sorulu / Kuram, hipotez / Spekülasyon. Hawking ışıması: Kuram, hipotez.",
@@ -306,84 +414,189 @@
   "sorular": [
     {
       "soru": "Bekenstein kara deliklerin entropisi olması gerektiğini neden düşündü?",
-      "cevap": "Kara deliğe sıcak gaz atılınca gazın entropisi evrenden silinmiş gibi görünüyor ve ikinci yasa aldatılıyordu. Kara deliğin ufuk alanı hiç küçülmediği için entropi gibi davranıyordu; Bekenstein kara deliğe alanla orantılı bir entropi vererek toplam entropinin yine artmasını sağladı (genelleştirilmiş ikinci yasa)."
+      "cevap": "Kara deliğe sıcak gaz atılınca gazın entropisi evrenden silinmiş gibi görünüyor ve ikinci yasa aldatılıyordu. Kara deliğin ufuk alanı hiç küçülmediği için entropi gibi davranıyordu; Bekenstein kara deliğe alanla orantılı bir entropi vererek toplam entropinin yine artmasını sağladı (genelleştirilmiş ikinci yasa).",
+      "kid": "d52s0"
     },
     {
       "soru": "10 Güneş kütleli bir kara deliğin Hawking sıcaklığı yaklaşık kaç kelvindir? Bu kara delik bugün küçülür mü?",
-      "cevap": "T ≈ 6,17 × 10⁻⁸ ÷ 10 ≈ 6,2 × 10⁻⁹ K, yani yaklaşık 6 nanokelvin. Kozmik arka plan 2,725 K olduğundan kara delik yaydığından çok daha fazlasını soğurur; küçülmez, büyür."
+      "cevap": "T ≈ 6,17 × 10⁻⁸ ÷ 10 ≈ 6,2 × 10⁻⁹ K, yani yaklaşık 6 nanokelvin. Kozmik arka plan 2,725 K olduğundan kara delik yaydığından çok daha fazlasını soğurur; küçülmez, büyür.",
+      "kid": "d52s1"
     },
     {
       "soru": "Bir kara delik ışıyıp kütle kaybettikçe neden soğumak yerine ısınır ve bu neye yol açar?",
-      "cevap": "Hawking sıcaklığı kütleyle ters orantılıdır; kütle azalınca sıcaklık artar (eksi ısı sığası). Sıcaklık artınca ışıma hızlanır, kütle daha hızlı azalır; süreç kendini hızlandırır ve kuram doğruysa bir gama ışını parlamasıyla biter."
+      "cevap": "Hawking sıcaklığı kütleyle ters orantılıdır; kütle azalınca sıcaklık artar (eksi ısı sığası). Sıcaklık artınca ışıma hızlanır, kütle daha hızlı azalır; süreç kendini hızlandırır ve kuram doğruysa bir gama ışını parlamasıyla biter.",
+      "kid": "d52s2"
     },
     {
       "soru": "Bir kara deliğin kütlesi iki katına çıkarsa buharlaşma süresi kaç katına çıkar? Neden?",
-      "cevap": "Sekiz katına (2³). Işıma gücü yaklaşık 1 ÷ M² ile orantılıdır (alan M² ile büyür, sıcaklığın dördüncü kuvveti M⁻⁴ ile küçülür); ömür kütle ÷ güç olduğu için M³ ile orantılıdır."
+      "cevap": "Sekiz katına (2³). Işıma gücü yaklaşık 1 ÷ M² ile orantılıdır (alan M² ile büyür, sıcaklığın dördüncü kuvveti M⁻⁴ ile küçülür); ömür kütle ÷ güç olduğu için M³ ile orantılıdır.",
+      "kid": "d52s3"
     },
     {
       "soru": "Fermi ve HAWC neden ilkel kara delikleri arıyor ve şimdiye kadar ne buldular?",
-      "cevap": "Evrenin yaşı içinde buharlaşmasını bitirebilecek kara delikler ancak birkaç yüz milyar kilogramlık ilkel kara delikler olabilir; bunların son anları kısa gama ışını parlamaları olarak görülmelidir. Ocak 2024 itibarıyla hiçbiri saptanmadı; yalnızca sıklıklarına üst sınırlar konabildi (HAWC: yılda parsek küp başına 3.400'den az)."
+      "cevap": "Evrenin yaşı içinde buharlaşmasını bitirebilecek kara delikler ancak birkaç yüz milyar kilogramlık ilkel kara delikler olabilir; bunların son anları kısa gama ışını parlamaları olarak görülmelidir. Ocak 2024 itibarıyla hiçbiri saptanmadı; yalnızca sıklıklarına üst sınırlar konabildi (HAWC: yılda parsek küp başına 3.400'den az).",
+      "kid": "d52s4"
     },
     {
       "soru": "Bilgi paradoksunu iki üç cümleyle anlat.",
-      "cevap": "Hawking ışıması tam ısıldır ve içeri ne düştüğünü taşımaz. Kara delik tamamen buharlaşırsa, saf bir durumdan başlayan sistem karışık bir ısıl ışınıma dönüşür; bu, kuantum mekaniğinin üniterlik kuralını, yani bilginin yok olmamasını çiğner. Ya kuantum kuralları kara deliklerde değişir ya da Hawking'in yaklaşık hesabı bir şeyi kaçırır."
+      "cevap": "Hawking ışıması tam ısıldır ve içeri ne düştüğünü taşımaz. Kara delik tamamen buharlaşırsa, saf bir durumdan başlayan sistem karışık bir ısıl ışınıma dönüşür; bu, kuantum mekaniğinin üniterlik kuralını, yani bilginin yok olmamasını çiğner. Ya kuantum kuralları kara deliklerde değişir ya da Hawking'in yaklaşık hesabı bir şeyi kaçırır.",
+      "kid": "d52s5"
     },
     {
       "soru": "Page eğrisi neyi gösterir ve Hawking'in hesabından nerede ayrılır?",
-      "cevap": "Buharlaşma üniterse ışınımın dolanıklık entropisi sıfırdan başlayıp kabaca buharlaşmanın yarı yoluna (Page zamanı) kadar artmalı, sonra yeniden sıfıra inmelidir. Hawking'in hesabında ise entropi sona kadar hep artar. İki eğri Page zamanına kadar benzer, sonra ayrılır."
+      "cevap": "Buharlaşma üniterse ışınımın dolanıklık entropisi sıfırdan başlayıp kabaca buharlaşmanın yarı yoluna (Page zamanı) kadar artmalı, sonra yeniden sıfıra inmelidir. Hawking'in hesabında ise entropi sona kadar hep artar. İki eğri Page zamanına kadar benzer, sonra ayrılır.",
+      "kid": "d52s6"
     },
     {
       "soru": "AMPS ateş duvarı argümanı hangi üç ifadenin birlikte doğru olamayacağını söyler?",
-      "cevap": "(1) Hawking ışıması saf durumdadır, bilgi korunur; (2) bilgi ufkun yakınından yayılır ve ufuktan biraz uzakta bildiğimiz fizik geçerlidir; (3) içeri düşen gözlemci ufukta olağandışı bir şey görmez. Dolanıklığın tekeşliliği yüzünden üçü birden tutmaz; en tutucu seçenek ufukta bir ateş duvarıdır."
+      "cevap": "(1) Hawking ışıması saf durumdadır, bilgi korunur; (2) bilgi ufkun yakınından yayılır ve ufuktan biraz uzakta bildiğimiz fizik geçerlidir; (3) içeri düşen gözlemci ufukta olağandışı bir şey görmez. Dolanıklığın tekeşliliği yüzünden üçü birden tutmaz; en tutucu seçenek ufukta bir ateş duvarıdır.",
+      "kid": "d52s7"
     },
     {
       "soru": "AdS/CFT bilgi paradoksu için neden önemli, ama neden onu bizim evrenimiz için tam çözmüş sayılmaz?",
-      "cevap": "Kütleçekimli AdS evrenini sınırdaki sıradan, üniter bir kuantum kuramına eşdeğer kıldığı için içerideki kara deliğin buharlaşması da üniter olmalıdır; bu bilginin korunmasını destekler. Ama AdS'nin kozmolojik sabiti eksidir, bizim evrenimizinki artıdır; eşleme de kanıtlanmamış bir sanıdır ve bilinen örnekleri fiziksel olmayan boyut sayıları ve süpersimetri kullanır."
+      "cevap": "Kütleçekimli AdS evrenini sınırdaki sıradan, üniter bir kuantum kuramına eşdeğer kıldığı için içerideki kara deliğin buharlaşması da üniter olmalıdır; bu bilginin korunmasını destekler. Ama AdS'nin kozmolojik sabiti eksidir, bizim evrenimizinki artıdır; eşleme de kanıtlanmamış bir sanıdır ve bilinen örnekleri fiziksel olmayan boyut sayıları ve süpersimetri kullanır.",
+      "kid": "d52s8"
     },
     {
       "soru": "2019'un ada hesapları neyi başardı, neyi başarmadı?",
-      "cevap": "Kopya solucan delikleri denen yeni geometrileri hesaba katarak Page eğrisini kütleçekimi hesabının içinden elde etti. Ama bunu iki boyutlu ve AdS'ye dayanan oyuncak modellerde yaptı ve bilginin hangi fiziksel süreçle dışarı çıktığını göstermedi; yazarlardan Hartman çalışmanın paradoksun yalnızca bir köşesini çözdüğünü söylüyor."
+      "cevap": "Kopya solucan delikleri denen yeni geometrileri hesaba katarak Page eğrisini kütleçekimi hesabının içinden elde etti. Ama bunu iki boyutlu ve AdS'ye dayanan oyuncak modellerde yaptı ve bilginin hangi fiziksel süreçle dışarı çıktığını göstermedi; yazarlardan Hartman çalışmanın paradoksun yalnızca bir köşesini çözdüğünü söylüyor.",
+      "kid": "d52s9"
     },
     {
       "soru": "Steinhauer'in ses kara deliği deneyi Hawking ışımasını kanıtladı mı?",
-      "cevap": "Hayır. Ufku olan bir kuantum sisteminde Hawking'in mekanizmasıyla ısıl ve eşli bir ışınım doğabildiğini gösterdi (2019'da öngörülen sıcaklık ~0,35 nanokelvin). Ama düzenekte kütleçekimi yoktur; gökteki kara deliklerde Hawking ışımasını doğrulamaz. 2016 sonucu Leonhardt tarafından ayrıntılı biçimde eleştirildi."
+      "cevap": "Hayır. Ufku olan bir kuantum sisteminde Hawking'in mekanizmasıyla ısıl ve eşli bir ışınım doğabildiğini gösterdi (2019'da öngörülen sıcaklık ~0,35 nanokelvin). Ama düzenekte kütleçekimi yoktur; gökteki kara deliklerde Hawking ışımasını doğrulamaz. 2016 sonucu Leonhardt tarafından ayrıntılı biçimde eleştirildi.",
+      "kid": "d52s10"
     },
     {
       "soru": "Bu dersteki şu iddiaları kesinlik düzeylerine yerleştir: ilkel kara delikler, ateş duvarı, kara deliklerin var olması, ses kara deliklerinde Hawking benzeri ışıma.",
-      "cevap": "Kara deliklerin var olması: Gözlemle kesinleşmiş. Ses kara deliklerinde Hawking benzeri ışıma: Güçlü kanıtlı ama açık sorulu. İlkel kara delikler: Kuram / hipotez. Ateş duvarının gerçekten var olması: Spekülasyon."
+      "cevap": "Kara deliklerin var olması: Gözlemle kesinleşmiş. Ses kara deliklerinde Hawking benzeri ışıma: Güçlü kanıtlı ama açık sorulu. İlkel kara delikler: Kuram / hipotez. Ateş duvarının gerçekten var olması: Spekülasyon.",
+      "kid": "d52s11"
     }
   ],
   "kaynaklar": [
-    { "ad": "Wikipedia, Hawking radiation", "url": "https://en.wikipedia.org/wiki/Hawking_radiation" },
-    { "ad": "Wikipedia, Black hole", "url": "https://en.wikipedia.org/wiki/Black_hole" },
-    { "ad": "Wikipedia, Black hole thermodynamics", "url": "https://en.wikipedia.org/wiki/Black_hole_thermodynamics" },
-    { "ad": "JTA, Stephen Hawking boycotted Israel, but an Israeli academic inspired one of his biggest discoveries (14 Mart 2018)", "url": "https://www.jta.org/2018/03/14/obituaries/stephen-hawking-boycotted-israel-israeli-academic-inspired-one-biggest-discoveries" },
-    { "ad": "Hawking radiation from non-evaporating primordial black holes… (arXiv:2411.09081)", "url": "https://arxiv.org/pdf/2411.09081" },
-    { "ad": "HAWC Collaboration, Constraining the Local Burst Rate Density of Primordial Black Holes with HAWC (arXiv:1911.04356)", "url": "https://ar5iv.labs.arxiv.org/html/1911.04356" },
-    { "ad": "Fermi-LAT Collaboration 2018, Search for Gamma-Ray Emission from Local Primordial Black Holes (arXiv:1802.00100)", "url": "https://arxiv.org/abs/1802.00100v1" },
-    { "ad": "Wikipedia, Black hole information paradox", "url": "https://en.wikipedia.org/wiki/Hawking_paradox" },
-    { "ad": "Wikipedia, Thorne–Hawking–Preskill bet", "url": "https://en.wikipedia.org/wiki/Thorne%E2%80%93Hawking%E2%80%93Preskill_bet" },
-    { "ad": "Wikipedia, Don Page (physicist)", "url": "https://en.wikipedia.org/wiki/Don_Page_(physicist)" },
-    { "ad": "Page 1993, Information in Black Hole Radiation (PRL 71, 3743; arXiv:hep-th/9306083)", "url": "https://arxiv.org/abs/hep-th/9306083" },
-    { "ad": "A dynamical mechanism for the Page curve from quantum chaos (arXiv:2002.05734)", "url": "https://arxiv.org/pdf/2002.05734" },
-    { "ad": "Wikipedia, Black hole complementarity", "url": "https://en.wikipedia.org/wiki/Black_hole_complementarity" },
-    { "ad": "Susskind, Thorlacius, Uglum 1993, The Stretched Horizon and Black Hole Complementarity (arXiv:hep-th/9306069)", "url": "https://arxiv.org/abs/hep-th/9306069" },
-    { "ad": "Almheiri, Marolf, Polchinski, Sully 2012, Black Holes: Complementarity or Firewalls? (arXiv:1207.3123)", "url": "https://arxiv.org/abs/1207.3123" },
-    { "ad": "Wikipedia, Firewall (physics)", "url": "https://en.wikipedia.org/wiki/Firewall_(physics)" },
-    { "ad": "IAS, Ahmed Almheiri: From the UAE to Firewalls", "url": "https://www.ias.edu/node/201536" },
-    { "ad": "Wikipedia, Holographic principle", "url": "https://en.wikipedia.org/wiki/Holographic_principle" },
-    { "ad": "Wikipedia, AdS/CFT correspondence", "url": "https://en.wikipedia.org/wiki/AdS/CFT_correspondence" },
-    { "ad": "Almheiri, Hartman, Maldacena, Shaghoulian, Tajdini 2019, Replica Wormholes and the Entropy of Hawking Radiation (arXiv:1911.12333)", "url": "https://arxiv.org/abs/1911.12333v2" },
-    { "ad": "Penington, Shenker, Stanford, Yang 2019, Replica wormholes and the black hole interior (arXiv:1911.11977)", "url": "https://arxiv.org/abs/1911.11977v2" },
-    { "ad": "Cornell Chronicle, Hartman ve kopya solucan delikleri (Aralık 2020)", "url": "https://news.cornell.edu/node/320627" },
-    { "ad": "UC Berkeley Physics, ‘Islands’ poking out of black holes may solve the information paradox", "url": "https://physics.berkeley.edu/news/%E2%80%98islands%E2%80%99-poking-out-black-holes-may-solve-information-paradox" },
-    { "ad": "Unruh 2016, Experimental black hole evaporation (Physics Today)", "url": "https://physicstoday.aip.org/opinion/experimental-black-hole-evaporation" },
-    { "ad": "Muñoz de Nova, Golubkov, Kolobov, Steinhauer 2019, Observation of thermal Hawking radiation and its temperature in an analogue black hole (Nature 569, 688; ADS)", "url": "https://ui.adsabs.harvard.edu/abs/2019Natur.569..688M/abstract" },
-    { "ad": "Aynı makalenin arXiv sürümü (arXiv:1809.00913)", "url": "https://arxiv.org/pdf/1809.00913v1" },
-    { "ad": "Leonhardt, Questioning the recent observation of quantum Hawking radiation (arXiv:1609.03803)", "url": "https://arxiv.org/pdf/1609.03803" },
-    { "ad": "Nautilus, Benchtop Black Holes Help Physicists Glimpse the Quantum Universe (2016)", "url": "https://nautil.us/benchtop-black-holes-help-physicists-glimpse-the-quantum-universe-236111/" },
-    { "ad": "phys.org, Thermal Hawking radiation in an analog black hole (Mayıs 2019)", "url": "https://phys.org/news/2019-05-thermal-analog-black-hole-hawking.html" },
-    { "ad": "Pinochet, Black hole entropy (arXiv:2410.11851)", "url": "https://arxiv.org/pdf/2410.11851" },
-    { "ad": "NASA, Moon Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html" }
+    {
+      "ad": "Wikipedia, Hawking radiation",
+      "url": "https://en.wikipedia.org/wiki/Hawking_radiation"
+    },
+    {
+      "ad": "Wikipedia, Black hole",
+      "url": "https://en.wikipedia.org/wiki/Black_hole"
+    },
+    {
+      "ad": "Wikipedia, Black hole thermodynamics",
+      "url": "https://en.wikipedia.org/wiki/Black_hole_thermodynamics"
+    },
+    {
+      "ad": "JTA, Stephen Hawking boycotted Israel, but an Israeli academic inspired one of his biggest discoveries (14 Mart 2018)",
+      "url": "https://www.jta.org/2018/03/14/obituaries/stephen-hawking-boycotted-israel-israeli-academic-inspired-one-biggest-discoveries"
+    },
+    {
+      "ad": "Hawking radiation from non-evaporating primordial black holes… (arXiv:2411.09081)",
+      "url": "https://arxiv.org/pdf/2411.09081"
+    },
+    {
+      "ad": "HAWC Collaboration, Constraining the Local Burst Rate Density of Primordial Black Holes with HAWC (arXiv:1911.04356)",
+      "url": "https://ar5iv.labs.arxiv.org/html/1911.04356"
+    },
+    {
+      "ad": "Fermi-LAT Collaboration 2018, Search for Gamma-Ray Emission from Local Primordial Black Holes (arXiv:1802.00100)",
+      "url": "https://arxiv.org/abs/1802.00100v1"
+    },
+    {
+      "ad": "Wikipedia, Black hole information paradox",
+      "url": "https://en.wikipedia.org/wiki/Hawking_paradox"
+    },
+    {
+      "ad": "Wikipedia, Thorne–Hawking–Preskill bet",
+      "url": "https://en.wikipedia.org/wiki/Thorne%E2%80%93Hawking%E2%80%93Preskill_bet"
+    },
+    {
+      "ad": "Wikipedia, Don Page (physicist)",
+      "url": "https://en.wikipedia.org/wiki/Don_Page_(physicist)"
+    },
+    {
+      "ad": "Page 1993, Information in Black Hole Radiation (PRL 71, 3743; arXiv:hep-th/9306083)",
+      "url": "https://arxiv.org/abs/hep-th/9306083"
+    },
+    {
+      "ad": "A dynamical mechanism for the Page curve from quantum chaos (arXiv:2002.05734)",
+      "url": "https://arxiv.org/pdf/2002.05734"
+    },
+    {
+      "ad": "Wikipedia, Black hole complementarity",
+      "url": "https://en.wikipedia.org/wiki/Black_hole_complementarity"
+    },
+    {
+      "ad": "Susskind, Thorlacius, Uglum 1993, The Stretched Horizon and Black Hole Complementarity (arXiv:hep-th/9306069)",
+      "url": "https://arxiv.org/abs/hep-th/9306069"
+    },
+    {
+      "ad": "Almheiri, Marolf, Polchinski, Sully 2012, Black Holes: Complementarity or Firewalls? (arXiv:1207.3123)",
+      "url": "https://arxiv.org/abs/1207.3123"
+    },
+    {
+      "ad": "Wikipedia, Firewall (physics)",
+      "url": "https://en.wikipedia.org/wiki/Firewall_(physics)"
+    },
+    {
+      "ad": "IAS, Ahmed Almheiri: From the UAE to Firewalls",
+      "url": "https://www.ias.edu/node/201536"
+    },
+    {
+      "ad": "Wikipedia, Holographic principle",
+      "url": "https://en.wikipedia.org/wiki/Holographic_principle"
+    },
+    {
+      "ad": "Wikipedia, AdS/CFT correspondence",
+      "url": "https://en.wikipedia.org/wiki/AdS/CFT_correspondence"
+    },
+    {
+      "ad": "Almheiri, Hartman, Maldacena, Shaghoulian, Tajdini 2019, Replica Wormholes and the Entropy of Hawking Radiation (arXiv:1911.12333)",
+      "url": "https://arxiv.org/abs/1911.12333v2"
+    },
+    {
+      "ad": "Penington, Shenker, Stanford, Yang 2019, Replica wormholes and the black hole interior (arXiv:1911.11977)",
+      "url": "https://arxiv.org/abs/1911.11977v2"
+    },
+    {
+      "ad": "Cornell Chronicle, Hartman ve kopya solucan delikleri (Aralık 2020)",
+      "url": "https://news.cornell.edu/node/320627"
+    },
+    {
+      "ad": "UC Berkeley Physics, ‘Islands’ poking out of black holes may solve the information paradox",
+      "url": "https://physics.berkeley.edu/news/%E2%80%98islands%E2%80%99-poking-out-black-holes-may-solve-information-paradox"
+    },
+    {
+      "ad": "Unruh 2016, Experimental black hole evaporation (Physics Today)",
+      "url": "https://physicstoday.aip.org/opinion/experimental-black-hole-evaporation"
+    },
+    {
+      "ad": "Muñoz de Nova, Golubkov, Kolobov, Steinhauer 2019, Observation of thermal Hawking radiation and its temperature in an analogue black hole (Nature 569, 688; ADS)",
+      "url": "https://ui.adsabs.harvard.edu/abs/2019Natur.569..688M/abstract"
+    },
+    {
+      "ad": "Aynı makalenin arXiv sürümü (arXiv:1809.00913)",
+      "url": "https://arxiv.org/pdf/1809.00913v1"
+    },
+    {
+      "ad": "Leonhardt, Questioning the recent observation of quantum Hawking radiation (arXiv:1609.03803)",
+      "url": "https://arxiv.org/pdf/1609.03803"
+    },
+    {
+      "ad": "Nautilus, Benchtop Black Holes Help Physicists Glimpse the Quantum Universe (2016)",
+      "url": "https://nautil.us/benchtop-black-holes-help-physicists-glimpse-the-quantum-universe-236111/"
+    },
+    {
+      "ad": "phys.org, Thermal Hawking radiation in an analog black hole (Mayıs 2019)",
+      "url": "https://phys.org/news/2019-05-thermal-analog-black-hole-hawking.html"
+    },
+    {
+      "ad": "Pinochet, Black hole entropy (arXiv:2410.11851)",
+      "url": "https://arxiv.org/pdf/2410.11851"
+    },
+    {
+      "ad": "NASA, Moon Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html"
+    }
   ]
 }

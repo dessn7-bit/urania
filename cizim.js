@@ -6,7 +6,7 @@
    "aciklama" şeklin sözlü anlatımıdır: ekranda alt yazıdır, sesli okumada ve ekran okuyucuda okunur (SVG gizlidir).
    Çizimdeki her sayı dersin kendi (kaynaklı) metninden ya da kaynak listesindeki sayfadan gelir; çizim ölçeksizse
    alt yazıda söylenir. Dosyalar: cizim.js (altyapı), cizim_gokyuzu.js, cizim_gunes_sistemi.js, cizim_yildizlar.js,
-   cizim_gezegen_yasam.js, cizim_evren.js (üniteler), cizim_v3.js (d20–d24), cizim_v4a.js, cizim_v4b.js ve cizim_v4c.js (fizik ünitesi, d25–d33). */
+   cizim_gezegen_yasam.js, cizim_evren.js (üniteler), cizim_v3.js (d20–d24), cizim_v4a.js, cizim_v4b.js ve cizim_v4c.js (fizik ünitesi, d25–d33), cizim_v5a–d.js (ayrıntılı konu dersleri d34–d49), cizim_v6.js (kuramlar d50–d56). */
 (function () {
   'use strict';
   const kayit = {};

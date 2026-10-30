@@ -1,613 +1,667 @@
 {
- "id": "d49",
- "unite": "samanyolu",
- "yeni": true,
- "baslik": "Galaksi Kümeleri ve Kozmik Ağ",
- "ozet": "Yerel Grup'tan Başak'a, Berenis'in Saçı Kümesi'nden Laniakea'ya uzanan yapıları ve onları nasıl tarttığımızı öğreneceksin: galaksi hızları, X-ışınında parlayan sıcak gaz, arka plan ışımasındaki Sunyaev–Zeldovich gölgesi ve kütleçekimsel mercek. Sonra lifler, duvarlar ve boşluklardan oluşan kozmik ağa, onu üreten benzetimlere, kayıp baryonlara, baryon akustik salınımlarına ve DESI ile Euclid haritalarına geçeceğiz.",
- "on_bilgi": [
-  "d47",
-  "d7"
- ],
- "bolumler": [
-  {
-   "baslik": "Galaksiler de sürü halinde yaşar",
-   "paragraflar": [
-    "Yıldızlar galaksilerde toplanır; galaksiler de yalnız yaşamaz. d7'de göreceğin gibi onlarca galaksiden oluşan topluluklara grup, yüzlerce ya da binlerce galaksiyi kütleçekimiyle bir arada tutan, araları sıcak gazla dolu topluluklara küme, grupları ve kümeleri içine alan daha büyük yapılara üstküme denir. Samanyolu Yerel Grup'un üyesidir, Yerel Grup Başak Kümesi'nin çevresindeki yapının bir parçasıdır, o da Laniakea adlı daha büyük bir bölgenin içindedir.",
-    "Ama en büyük ölçekte bu basamaklar bile yetersiz kalır. Galaksilerin üç boyutlu haritaları, evrenin kümelerin düğüm, uzun galaksi şeritlerinin lif, geniş galaksi yaprakların duvar olduğu ve aralarında dev boşlukların bulunduğu bir ağa benzediğini gösterir. Buna kozmik ağ denir. Bu derste önce kendi grubumuzu ve kümeleri tartmayı öğreneceğiz: galaksilerin hızlarından, kümeleri dolduran sıcak gazdan, bu gazın kozmik mikrodalga arka plan ışımasına düşürdüğü gölgeden ve ışığı büken kütleçekimsel mercekten. Sonra ağın kendisine geçeceğiz: nasıl haritalandığı, nasıl oluştuğu, bilgisayarda nasıl yeniden üretildiği ve kayıp sıradan maddenin bir bölümünün nerede saklandığı.",
-    "Bir uyarı: bu ölçeklerdeki sayıların çoğu dolaylı ölçümlerden gelir ve kaynaklar arasında çoğu zaman farklıdır. Yapıların sınırları bile tanıma bağlıdır; bir üstkümenin nerede bittiği konusunda gökbilimciler henüz anlaşamıyor. Bu derste sayıları verirken nereden geldiklerini ve ne kadar güvenilir olduklarını da söyleyeceğiz."
-   ],
-   "akilda": "Galaksiler gruplar, kümeler ve üstkümeler halinde toplanır; en büyük ölçekte kümeler düğüm, lifler ve duvarlar bağlantı olan, aralarında boşluklar bulunan bir kozmik ağ oluşturur."
-  },
-  {
-   "baslik": "Yerel Grup'u tartmak: zamanlama argümanı",
-   "paragraflar": [
-    "Wikipedia'ya göre Yerel Grup, iki uçlu bir halter biçimindedir: bir uçta Samanyolu ve uyduları, öbür uçta Andromeda ve uyduları. İki uç yaklaşık 800 kiloparsek ayrıdır ve saniyede yaklaşık 123 km hızla birbirine yaklaşır. Grubun ağırlık merkezi Samanyolu'ndan yaklaşık 450 kiloparsek uzaktadır, yani Andromeda'ya daha yakındır; bu da Andromeda'nın daha kütleli olabileceğini düşündürür. Toplam kütle 2×10¹² Güneş kütlesi mertebesindedir ve merkezden 1 megaparsek içinde bilinen 134 üye vardır, çoğu cüce galaksidir. Grup, Yerel Levha denen daha büyük bir yapının içindedir.",
-    "Bir grubun sınırı nasıl çizilir? Evren genişlerken uzaktaki galaksiler bizden uzaklaşır; grubun kütleçekimi ise yakındakileri bu genel akıştan koparıp geri çeker. İkisinin dengelendiği sınıra sıfır hız yüzeyi denir. Wikipedia'ya göre NGC 3109 ve komşularından oluşan Antlia–Sextans grubu büyük olasılıkla bu yüzeyin dışında kalır, yani Yerel Grup'a bağlı değildir; ama Samanyolu ve Andromeda birleşip kütle yoğunlaştıkça yüzeyin genişlemesiyle bu durum değişebilir.",
-    "1959'da F. D. Kahn ve L. Woltjer grubu zekice bir yolla tarttı. Louis Strigari'nin 2025 derlemesine göre şu basit varsayımları yaptılar: grubun kütlesi Samanyolu ile Andromeda'da toplanmıştır, ikisi neredeyse düz bir çizgide birbirine yaklaşmaktadır ve Büyük Patlama sırasında aynı yerden çıkıp önce uzaklaşmış, sonra kendi çekimleriyle durup geri dönmüşlerdir. Evrenin yaşı içinde bugünkü uzaklığa ve yaklaşma hızına ulaşmak için ne kadar kütle gerektiğini hesapladılar ve galaksilerde görünenin en az on katı görünmeyen madde buldular. Bunu karanlık madde olarak değil, galaksiler arası gaz ve toz olarak yorumladılar; geriye bakınca karanlık maddenin ilk ipuçlarından biriydi. Bu yöntem zamanlama argümanı diye anılır.",
-    "Hesap bugün de kullanılıyor ve hâlâ tartışmalı. Strigari'ye göre Andromeda'nın yan hızının ölçülmesi ve kozmolojik sabitin katkısı, zamanlama kütlesini yaklaşık 5×10¹² Güneş kütlesine çıkarır. Bu değer, Samanyolu ile Andromeda'nın halelerinin toplamından ve başka yöntemlerle bulunan grup kütlelerinden büyük çıkma eğilimindedir. Farkın nedeni bilinmiyor; yazar daha kesin hız ölçümlerinin bu farkı, gruptaki karanlık maddeyi ve hatta yerel kozmolojik değerleri aydınlatabileceğini yazar. Büyük Macellan Bulutu gibi kütleli uyduların etkisi de hesabı karmaşıklaştırıyor.",
-    "Grubun üçüncü büyük üyesi Üçgen Galaksisi'nin kütlesi Wikipedia'ya göre yaklaşık 5×10¹⁰ Güneş kütlesidir. Andromeda'nın uydusu olup olmadığı belli değildir; ikisi arasında yaklaşık 750.000 ışık yılı vardır ve 2 ile 4 milyar yıl önce yaşanan yakın bir geçişin Andromeda'nın diskinde yıldız oluşumunu tetiklediği düşünülür. Balıklar cücesi Andromeda ile Üçgen'e eşit uzaklıktadır ve hangisinin uydusu olduğu bilinmez. Aynı kaynağa göre grup erken evrende daha dağınıktı: Büyük Patlama'dan 700 milyon yıl sonra yaklaşık 7 megaparseklik bir alana yayılmış olduğu düşünülür. Yani bugünkü sıkı mahalle, milyarlarca yıl boyunca kendi kütleçekimiyle büzülerek oluştu."
-   ],
-   "ornek": {
-    "baslik": "Örnek: Andromeda bize bağlı mı?",
-    "metin": "İki cisim kütleçekimiyle bağlıysa aralarındaki bağıl hız, o uzaklıktaki kurtulma hızından küçük olmalıdır: v(kurtulma) = √(2 × G × M / r). M = 2×10¹² Güneş kütlesi = 2×10¹² × 1,988×10³⁰ ≈ 3,98×10⁴² kg. r = 800 kiloparsek = 800.000 × 3,0857×10¹⁶ m ≈ 2,47×10²² m. 2 × 6,674×10⁻¹¹ × 3,98×10⁴² / 2,47×10²² ≈ 2,15×10¹⁰ m²/s²; karekök ≈ 1,47×10⁵ m/s, yani yaklaşık 147 km/s. Ölçülen yaklaşma hızı 123 km/s bundan küçük; yani bu kaba hesapla iki galaksi birbirine bağlıdır. Hesap kütleyi iki noktada toplanmış sayar ve yan hızı yok sayar; zamanlama argümanı bunu evrenin yaşıyla birleştirerek kütleyi tersinden bulur. Birim: km/s."
-   },
-   "akilda": "Yerel Grup, ~800 kiloparsek arayla yaklaşan iki uçlu bir haltere benzer; toplam kütle ~2×10¹² M☉. Kahn ve Woltjer (1959) zamanlama argümanıyla görünenin en az on katı kütle buldu; bugünkü zamanlama kütlesi ~5×10¹² M☉ ve öteki yöntemlerden büyük."
-  },
-  {
-   "baslik": "Başak'a düşüş ve Yerel Levha",
-   "paragraflar": [
-    "Yerel Grup yalnız değildir; bir sonraki büyük komşusu Başak Kümesi'dir. d7'de göreceğin gibi Başak Kümesi yaklaşık 1300, belki 2000'e kadar galaksi içerir ve merkezi yaklaşık 53,8 milyon ışık yılı, yani 16,5 megaparsek uzaktadır. Wikipedia'nın Samanyolu maddesine göre Yerel Grup ile Başak Kümesi evrenin genişlemesiyle birbirinden saniyede yaklaşık 967 km hızla uzaklaşır. Ama bu, maddenin kullandığı 16,8 megaparseklik uzaklıkta beklenenden azdır, çünkü kümenin kütleçekimi bizi kendine doğru çeker. Yani genişleme bizi Başak'tan uzaklaştırırken kütleçekimi bu kaçışı frenliyor. Aynı kaynağa göre Yerel Grup, merkezi Başak Kümesi yakınlarında olan Yerel Üstküme'nin parçasıdır. d7'ye göre kümenin kütlesi, merkezinden 8 dereceye kadar yaklaşık 1,2×10¹⁵ Güneş kütlesidir; yani Yerel Grup'un bütün kütlesinin yüzlerce katı bir kütle, bizi 16 megaparsek öteden çekiyor.",
-    "Bu tür sapmalara tuhaf hız denir: bir galaksinin evrenin düzenli genişlemesinden, yani Hubble akışından ayrılan kendi hareketi. Hubble akışında uzaklaşma hızı uzaklıkla orantılıdır (Hubble–Lemaître yasası, d17). Tuhaf hızlar küçük görünür, ama haritacılık için altın değerindedir: bir bölgedeki galaksilerin hepsi aynı noktaya doğru sapıyorsa orada görünmeyen bir kütle vardır. d7'de değinilen Laniakea üstkümesi tam olarak bu yolla, galaksilerin tuhaf hızlarının haritası çıkarılarak tanımlandı. Hubble sabitinin kesin değeri de tartışmalı olduğu için (Hubble gerilimi, d17) bu sapmanın büyüklüğü de kullanılan değere göre değişir."
-   ],
-   "ornek": {
-    "baslik": "Örnek: Başak bizi ne kadar frenliyor?",
-    "metin": "Hubble akışında beklenen hız v = H0 × d. d = 16,8 megaparsek. H0 = 67,4 km/s/Mpc (Planck, d17) ile v ≈ 67,4 × 16,8 ≈ 1132 km/s; H0 = 73 km/s/Mpc (Sefeid merdiveni, d17) ile v ≈ 73 × 16,8 ≈ 1226 km/s. Gözlenen 967 km/s. Fark: 1132 − 967 ≈ 165 km/s ya da 1226 − 967 ≈ 259 km/s. Yani Başak Kümesi'nin kütleçekimi, Yerel Grup'un ondan kaçış hızını saniyede kabaca 150 ile 250 km arasında azaltıyor. Sonucun Hubble sabitine bu kadar duyarlı olması, tuhaf hız ölçümlerinin neden zor olduğunu gösterir. Birim: km/s."
-   },
-   "akilda": "Yerel Grup ile Başak Kümesi ~967 km/s hızla uzaklaşır; bu, Hubble akışının öngördüğünden azdır, çünkü Başak'ın kütleçekimi bizi çeker. Hubble akışından sapmalara tuhaf hız denir ve görünmeyen kütleyi haritalamaya yarar."
-  },
-  {
-   "baslik": "Galaksi kümeleri: Berenis'in Saçı örneği",
-   "paragraflar": [
-    "İyi incelenmiş zengin kümelerden biri Berenis'in Saçı Kümesi'dir; kataloglardaki adı Abell 1656'dır. Wikipedia'ya göre 1000'den fazla tanımlanmış galaksi içerir ve ortalama uzaklığı 99 megaparsek, yani yaklaşık 321 milyon ışık yılıdır. Gökbilim yazınında ilk fark edilen kümelerdendir: William Herschel 1785'te gözle not etmiş, Max Wolf 1901'de fotoğrafla taramıştır. Kümenin tam büyüklüğü ancak 1950'lerde Palomar Gözlemevi'ndeki çalışmalarla anlaşıldı. Küme yalnız da değildir: Aslan Kümesi (Abell 1367) ile birlikte Berenis'in Saçı Üstkümesi'ni oluşturan iki büyük kümeden biridir.",
-    "Kümenin merkezine iki dev eliptik galaksi, NGC 4874 ve NGC 4889, egemendir. Bu zenginlikteki kümelerde olağan olduğu gibi galaksilerin büyük çoğunluğu eliptik ve lentiküler galaksilerdir; az sayıdaki sarmalın çoğu kümenin dış kenarlarına yakındır. Bazı üyeleri ultra yaygın galaksi olarak sınıflanmıştır. Bu dağılım rastlantı değildir: d7'de göreceğin gibi küme ortamı galaksileri değiştirir ve kümelerin kenarlarındaki sarmalların bir bölümü yıldız üretimini bırakmış kırmızı sarmallardır.",
-    "Berenis'in Saçı Kümesi gökte Samanyolu'nun kuzey kutbunun birkaç derece yakınındadır. Bu, gözlem için şanslı bir konumdur: galaksimizin diskine dik bakarız ve d47'de gördüğün toz perdesi en ince yerindedir. Tersine, diskin içinden bakılan yönlerde toz ve yıldızlar uzak galaksileri gizler; gökyüzünün bu bölgesine kaçınma bölgesi denir. Wikipedia'nın Laniakea maddesine göre bazı kümeler ve gruplar tam bu bölgenin arkasında kaldığı için bilinen sayılar gerçeğinden az olabilir."
-   ],
-   "akilda": "Berenis'in Saçı Kümesi (Abell 1656) ~99 megaparsek uzakta, 1000'den fazla galaksili zengin bir kümedir; merkezinde iki dev eliptik vardır, üyelerinin çoğu eliptik ve lentikülerdir. Samanyolu diskinin arkasındaki kaçınma bölgesi bazı yapıları gizler."
-  },
-  {
-   "baslik": "Zwicky'nin hızları ve kümeyi tartmak",
-   "paragraflar": [
-    "Bir kümenin kütlesini ölçmenin ilk yolu, içindeki galaksilerin ne kadar hızlı hareket ettiğine bakmaktır. Mantık şudur: küme dağılmadan bir arada duruyorsa, galaksilerin hızları kümenin kütleçekiminin tutabileceği kadar olmalıdır. Hızlar ne kadar büyükse onları tutmak için o kadar çok kütle gerekir. Hızların dağınıklığına hız dağılımı denir ve σ (sigma) ile gösterilir; tayftaki Doppler kaymasından (d2) her galaksinin bize göre hızı ölçülür, ortalamadan sapmaların büyüklüğü σ'yı verir.",
-    "d17'de göreceğin gibi Fritz Zwicky 1933'te Berenis'in Saçı Kümesi'ndeki sekiz galaksinin hızlarından yaklaşık 1019 ± 360 km/s'lik beklenmedik ölçüde büyük bir hız dağılımı çıkardı ve ışık veren maddenin tutabileceğinden çok daha fazla kütle gerektiğini savundu. Sidney van den Bergh'in 1999 tarihli tarih makalesine göre Zwicky'nin yalnız sekiz galaksiden bulduğu değer, Colless ve Dunn'ın 1996'da ölçtüğü 1082 km/s'lik modern değerle iyi uyuşur. Zwicky'nin abarttığı şey hız değil, o dönemin çok büyük Hubble sabitini (558 km/s/Mpc) kullandığı için kütle–ışık oranıydı. Wikipedia'ya göre bugün Berenis'in Saçı Kümesi'nin kütlesinin yaklaşık yüzde 90'ının karanlık madde olduğu düşünülür. Aynı tarih makalesine göre Smith 1936'da Başak Kümesi'nin de beklenmedik ölçüde kütleli göründüğünü buldu; yani sorun tek bir kümeye özgü değildi.",
-    "Bu yöntemin bir zayıflığı var: küme gerçekten dengede mi? Yakın zamanda bir başka kümeyle çarpışmış ya da hâlâ madde toplayan bir kümede galaksilerin hızları dengeyi yansıtmaz ve kütle yanlış çıkar. Bu yüzden gökbilimciler kümeyi birbirinden bağımsız başka yollarla da tartar: kümeyi dolduran sıcak gazın X-ışınlarıyla, bu gazın arka plan ışımasına bıraktığı izle ve kütleçekimsel mercekle. Yöntemler uyuşursa sonuca güven artar; uyuşmazsa küme hakkında yeni bir şey öğrenilir."
-   ],
-   "ornek": {
-    "baslik": "Örnek: Berenis'in Saçı'nı kabaca tartmak",
-    "metin": "Kaba bir mertebe hesabı için d17'deki M ≈ v² × r / G biçimini hız dağılımıyla kullan; çarpan modele göre birkaç kat değişebilir. Wikipedia'ya göre kümenin yaklaşık 800 galaksisi gökte 100 × 100 yay dakikalık bir alandadır. Yarısı 50 yay dakikası, yani 50 / 60 ≈ 0,833° ≈ 0,01454 radyan. 99 megaparsek uzaklıkta bu, 99 × 0,01454 ≈ 1,44 megaparsek eder: R ≈ 1,44 × 3,0857×10²² m ≈ 4,44×10²² m. σ = 1082 km/s = 1,082×10⁶ m/s. M ≈ (1,082×10⁶)² × 4,44×10²² / 6,674×10⁻¹¹ ≈ 7,79×10⁴⁴ kg ≈ 3,9×10¹⁴ Güneş kütlesi. Zengin kümeler için verilen 10¹⁵ Güneş kütlesi mertebesiyle aynı büyüklüktedir. Sonuç: hız dağılımı bir kümenin yüzlerce Samanyolu ağırlığında olduğunu gösterir; birim Güneş kütlesi."
-   },
-   "akilda": "Kümeyi galaksilerin hız dağılımından tartarız: hızlar büyükse kütle büyüktür. Zwicky'nin 1933'te sekiz galaksiden bulduğu ~1019 km/s, modern 1082 km/s ile uyuşur; Berenis'in Saçı kütlesinin ~%90'ı karanlık maddedir. Yöntem kümenin dengede olduğunu varsayar."
-  },
-  {
-   "baslik": "Galaksilerin arasındaki sıcak gaz",
-   "paragraflar": [
-    "Kümelerdeki galaksilerin arası boş değildir. Cavaliere ve Lapi'nin 2013 tarihli derlemesine göre 1971'den beri binlerce kümenin X-ışını gözlemleri, karanlık madde halelerinin derin kütleçekim çukurlarını dolduran büyük miktarda sıcak sıradan madde ortaya çıkardı. Bu küme içi gazın sıcaklığı 10⁸ kelvin mertebesinde, ortalama yoğunluğu ise litre başına yaklaşık 1 parçacıktır. Yazarlara göre kütlesi 10¹⁵ Güneş kütleli bir kümede bu gaz 10¹⁴ Güneş kütlesi kadar tutar. Bu kadar sıcak bir gazda elektronlar atomlardan kopmuştur; gaz, evrendeki en iyi proton–elektron plazması olarak anılır. d7'de Başak Kümesi için verilen 30 milyon kelvin de aynı mertebededir.",
-    "Gaz neden bu kadar sıcak? Kümenin kütleçekim çukuruna düşen gaz hızlanır ve çarpışmalarla bu hareket enerjisi ısıya dönüşür. Derlemeye göre gaz, karanlık madde çukurunda kabaca hidrostatik dengededir: içe çeken kütleçekimini dışa iten gaz basıncı dengeler (aynı denge yıldızları da ayakta tutar, d5). Dışarıdan düşen galaksiler arası gaz, kümenin sınırında süpersonik akışın yarattığı şok dalgalarında ısınır. Bu yüzden X-ışını teleskopları gazın sıcaklığını ve yoğunluğunun merkezden uzaklıkla nasıl değiştiğini ölçünce, gazı yerinde tutmak için gereken toplam kütleyi de hesaplayabilir. Bu, kümeyi tartmanın ikinci bağımsız yoludur.",
-    "Berenis'in Saçı Kümesi bu alanın öncülerindendir. Wikipedia'ya göre küme yönünde genişlemiş bir X-ışını kaynağı 1966'dan önce bir balon uçuşuyla bildirildi; sonra Uhuru uydusu kümenin merkezine yakın güçlü bir X-ışını kaynağı gördü. Kaynağın ışıma gücü saniyede 2,6×10⁴⁴ erg ölçüldü ve yaklaşık 45 yay dakikası genişliğe yayılıyordu; bu kadar geniş olması, ışımanın tek bir galaksiden gelmediğini gösteriyordu. Gonzalez ve arkadaşlarının 2007 çalışmasına göre ise kümeler büyüdükçe kütlenin içinde X-ışını gazının payı artar, yıldızların payı azalır; daha kütleli ortamlarda gaz yıldıza daha az verimli dönüşür.",
-    "Küme gazı durgun bir göl değildir. Cavaliere ve Lapi'nin derlemesine göre merkezde gaz ışıyarak soğurken aktif galaksi çekirdeklerinden ve birleşmelerden gelen aralıklı enerji onu yeniden ısıtır. Dışarıdan düşen galaksi grupları gazı derinden sarsar; benzer kütleli bir başka kümeyle çarpışma ise dengeyi tamamen bozabilir. Bu olaylar sırasında hızlandırılan elektronlar sinkrotron ışımasıyla geniş bir radyo ışıması üretir (sinkrotron ışıması d33'te). Yani X-ışını gaz haritaları ve radyo gözlemleri birlikte, bir kümenin geçmişte nasıl çarpıştığını okumayı sağlar."
-   ],
-   "ornek": {
-    "baslik": "Örnek: Küme gazı ne kadar seyrek?",
-    "metin": "Litre başına 1 parçacık, metreküp başına 1000 parçacık demektir (1 m³ = 1000 litre). Astronomy dergisinin aktardığına göre galaksiler arası liflerdeki ılık-sıcak gazın ortalama yoğunluğu metreküp başına yaklaşık 10 parçacıktır. Oran: 1000 / 10 = 100; yani küme içi gaz, kümeleri birbirine bağlayan liflerdeki gazdan yaklaşık 100 kat yoğundur, ama yine de metreküpte yalnızca bin parçacık içeren son derece seyrek bir ortamdır. Kütle payı: 10¹⁴ / 10¹⁵ = 0,1, yani bu gaz kümenin toplam kütlesinin yaklaşık yüzde 10'udur. Birimler: parçacık/m³ ve oran."
-   },
-   "akilda": "Kümelerde galaksilerin arası 10⁸ K mertebesinde, litrede ~1 parçacıklık seyrek bir plazmayla doludur; 10¹⁵ M☉'lik bir kümede bu gaz ~10¹⁴ M☉ tutar ve X-ışınlarında parlar. Gazın sıcaklığı ve dağılımı kümenin kütlesini verir."
-  },
-  {
-   "baslik": "Sunyaev–Zeldovich etkisi: kümenin arka plan ışımasındaki gölgesi",
-   "paragraflar": [
-    "Kümeleri bulmanın üçüncü yolu, kendi ışıklarına hiç bakmadan, içlerinden geçen eski ışıktan fark etmektir. Kozmik mikrodalga arka plan ışıması (d8) her yönden gelir. Bu ışığın fotonları bir kümenin içinden geçerken sıcak gazın hızlı elektronlarına çarpar ve onlardan enerji kapar; buna ters Compton saçılması denir. Sunyaev ile Zeldovich'in 1969 ve 1970'te öngördüğü bu olaya Sunyaev–Zeldovich etkisi denir.",
-    "Planck iş birliğinin 2013 makalesine göre etkinin imzası belirgindir: arka plan ışımasının düşük frekanslı bölümünde parlaklık sıcaklığı azalır, yüksek frekanslı kuyruğunda artar; yaklaşık 217 gigahertzte etki sıfırdır. Yani küme, düşük frekansta arka plan ışımasında soğuk bir gölge gibi, yüksek frekansta sıcak bir leke gibi görünür. Etkinin büyüklüğü, görüş doğrultusu boyunca gazın basıncının toplamıyla belirlenir; gözlemler ve benzetimler bunun kümenin kütlesinin çok iyi bir göstergesi olduğunu düşündürür.",
-    "Planck uydusu bu yolla bütün gökyüzünü taradı. Planck'ın 2015'te yayımlanan ikinci Sunyaev–Zeldovich kataloğu 1653 tespit içerir; bunların 1203'ü başka verilerle doğrulanmış kümelerdir ve kataloğun saflığı en az yüzde 83'tür. Bu, binden fazla doğrulanmış küme içeren ilk Sunyaev–Zeldovich seçimli taramaydı. Yöntemin bir yararı da, X-ışını taramalarında neredeyse hiç görünmeyen, X-ışınında sönük bazı yakın kümeleri ortaya çıkarmasıdır.",
-    "Planck yalnız değildir: Güney Kutbu Teleskobu (SPT) ve Atacama Kozmoloji Teleskobu (ACT) da büyük Sunyaev–Zeldovich küme örnekleri yayımladı. Planck'ın 2013 makalesine göre Planck'ın bu frekanslardaki ayırma gücü 5 ile 10 yay dakikası, ötekilerinki yaklaşık 1 yay dakikasıdır, ama Planck bütün gökyüzünü kapsar; bu yüzden Planck genellikle daha büyük, daha kütleli ve daha yakın kümeleri bulur, yer teleskopları ise daha küçük ve uzak olanları. Makale, kozmolojik sonuçlardaki belirsizliğe en çok kümelerin özellikleri hakkındaki eksik bilgimizin katkı yaptığını da vurgular. Planck'ın 2013 kozmoloji makalesi, bu kümelerden seçilmiş 189'unun sayısının kırmızıya kaymayla değişiminden evrenin parametrelerini sınadı: belirli bir kütlenin üstündeki kümelerin zamanla ne kadar çoğaldığı, maddenin ne kadar topaklaştığına bağlıdır."
-   ],
-   "ornek": {
-    "baslik": "Örnek: 217 gigahertz hangi dalga boyu?",
-    "metin": "Dalga boyu = ışık hızı / frekans (d2). c = 299.792.458 m/s, f = 217 GHz = 2,17×10¹¹ Hz. λ = 299.792.458 / 2,17×10¹¹ ≈ 1,38×10⁻³ m, yani yaklaşık 1,38 milimetre. Bu, milimetre dalgaları bölgesidir. Etki 1,38 mm'den uzun dalgalarda (217 GHz'den düşük frekansta) bir azalma, kısa dalgalarda bir artış olarak görülür. Bu yüzden birkaç frekansta birden ölçüm yapan Planck gibi aletler kümeyi öteki kaynaklardan ayırabilir. Birim: milimetre."
-   },
-   "akilda": "Arka plan ışımasının fotonları küme gazının elektronlarından enerji kapar (Sunyaev–Zeldovich, 1969–1970): küme düşük frekansta gölge, ~217 GHz'de görünmez, yüksekte parlak leke olur. Planck 2015 kataloğu: 1653 tespit, 1203 doğrulanmış küme."
-  },
-  {
-   "baslik": "Kütleçekimsel mercekle tartmak",
-   "paragraflar": [
-    "d17'de kütlenin ışığın yolunu büktüğünü ve buna kütleçekimsel mercek dendiğini göreceksin. Kümeler, evrendeki en güçlü merceklerdir. Kümenin arkasındaki uzak bir galaksinin ışığı kümenin kütlesi tarafından saptırılır; galaksinin görüntüsü uzayıp yay biçimine girebilir, büyütülebilir, hatta birden çok kopyaya bölünebilir. Buna güçlü mercek denir. Daha uzaktaki galaksilerin hepsinin görüntüsü de çok az, gözle seçilemeyecek kadar basıklaşır; bu küçük bozulmalar binlerce galaksi üzerinden istatistikle ölçülünce kümenin kütle haritası çıkar. Buna zayıf mercek denir. İkisinin de büyük üstünlüğü, kütlenin ışık verip vermemesine bakmamasıdır.",
-    "Kümelerin güçlü mercek olabildiğinin ilk kanıtlarından biri Abell 370 kümesinden geldi. Richard ve arkadaşlarının 2009 makalesine göre 1987'de bu kümede bulunan dev yay, kümenin arkasındaki bir galaksinin uzatılmış görüntüsüydü. Küme kırmızıya kaymada z = 0,375'te, arkadaki galaksi z = 0,725'tedir. Hubble'ın onarımdan sonraki yeni kameralarıyla çekilen görüntüler bu yayın beş görüntülük karmaşık bir yapı olduğunu ve toplamda 32 ± 4 kat büyütüldüğünü gösterdi; on ayrı arka plan galaksisinin birden çok görüntüsü bulundu.",
-    "Bu görüntülerin yeri kümenin kütlesini verir. Arka plandaki kaynaklar z = 2'de olsaydı ortalama Einstein yarıçapı, yani mercek görüntülerinin dizildiği halkanın açısal yarıçapı, 39 ± 2 yay saniyesi olurdu. Bu yarıçapın içindeki kütle 2,82 ± 0,15×10¹⁴ Güneş kütlesi, merkezin 250 kiloparseklik çevresindeki kütle ise 3,8 ± 0,2×10¹⁴ Güneş kütlesi çıktı. Sonuç, Subaru teleskobunun zayıf mercek ölçümleriyle uyuşuyordu. Kütle dağılımı iki tepeliydi ve karanlık madde, X-ışını gazı ve yıldızlar arasında çok küçük bir kayma vardı; hızlar da eklenince Abell 370'in görüş doğrultumuz boyunca birleşen eşit kütleli iki küme olduğu anlaşıldı. Kütlenin gazdan belirgin biçimde ayrıldığı çarpışan küme örneği olan Mermi Kümesi'ni d17'de bulacaksın.",
-    "Mercek bir tartı olmanın yanında doğal bir teleskoptur da. Richard ve arkadaşlarına göre Abell 370'in Einstein yarıçapının çok büyük olması, onu güçlü büyütme sayesinde çok yüksek kırmızıya kaymalı, yani çok uzak ve erken galaksileri aramak için en iyi kümelerden biri yapar. Az önce gördüğün dev yay da 32 kat büyütülmüş bir galaksiydi. Kümenin arkasındaki sönük bir galaksi böyle büyütülünce, teleskobun tek başına seçemeyeceği ayrıntılar görünür hale gelir; teleskop, önündeki kümenin kütlesini kendi merceğine ekler."
-   ],
-   "ornek": {
-    "baslik": "Örnek: Abell 370'in merceği ne büyüklükte?",
-    "metin": "Einstein yarıçapı 39 yay saniyesi. Dolunayın çapı yaklaşık 1896 yay saniyesidir (d7). Oran: 39 / 1896 ≈ 0,021; yani mercek halkasının yarıçapı dolunay çapının yaklaşık elliden biri kadardır, çıplak gözle görülemeyecek kadar küçük. İçindeki kütle 2,82×10¹⁴ Güneş kütlesi; bunu yaklaşık 10¹² Güneş kütlesi kabul edilen Samanyolu'yla karşılaştırırsan 2,82×10¹⁴ / 10¹² ≈ 280 eder. Yani gökte dolunayın elliden biri kadar bir alanın içinde yaklaşık 280 Samanyolu kütlesi var. Birimler: yay saniyesi ve Güneş kütlesi."
-   },
-   "akilda": "Kümeler arkadaki galaksilerin ışığını büker: güçlü mercek yaylar ve çoklu görüntüler, zayıf mercek istatistiksel küçük bozulmalar üretir. Abell 370'in 1987'deki dev yayı ilk kanıtlardandı; Einstein yarıçapı 39″, içindeki kütle 2,8×10¹⁴ M☉."
-  },
-  {
-   "baslik": "Bir kümenin kütle bütçesi",
-   "paragraflar": [
-    "Üç bağımsız tartı yöntemi bir araya gelince bir kümenin içinde ne olduğu görülür. Wikipedia'ya göre Berenis'in Saçı Kümesi'nin kütlesinin yaklaşık yüzde 90'ı karanlık maddedir. Cavaliere ve Lapi'nin sayılarına göre küme içi sıcak gaz toplam kütlenin kabaca onda biridir. Galaksilerdeki yıldızlar ise daha da küçük bir paydır. Yani galaksi kümesi denen şeyin kütlesinde galaksilerin payı en küçüğüdür; küme aslında sıcak gaz ve karanlık maddeden oluşan bir çukura serpiştirilmiş galaksilerdir.",
-    "Yıldızların bir kısmı galaksilerin dışında bile durur. Gonzalez ve arkadaşlarının 2007 çalışması, galaksilerden koparılıp küme içinde serbestçe dolaşan yıldızların yaydığı küme içi ışığı da hesaba kattı. Kümenin en parlak merkez galaksisi ile bu küme içi ışık birlikte, belirli bir yarıçapın içinde toplam yıldız ışığının ortalama yüzde 33 ile 40'ını veriyordu. Daha şaşırtıcı olanı, büyük bir merkez galaksi ve küme içi ışık bileşeni taşıyan düşük kütleli grupların da bulunmasıydı: galaksiler arası serbest yıldızların oluşması için dev bir küme ortamı gerekmiyor. Aynı çalışmaya göre 6×10¹³ ile 10¹⁵ Güneş kütlesi arasındaki sistemlerde sıradan maddenin kütle payı sabittir; görünmeyen ek bir sıradan madde bileşeni için zorlayıcı bir kanıt yoktur.",
-    "Bu sayı evrenin geneliyle karşılaştırılabilir. Gonzalez ve arkadaşları kümelerde buldukları sıradan madde payını WMAP uydusunun evren için verdiği değerle karşılaştırdı: küme değeri biraz düşüktü, ama fark gözlem belirsizlikleri ve benzetimlerin öngördüğü, kümenin iç bölgesinden bir miktar sıradan madde kaybı kadardı. Yani kümeler evrenin genel madde karışımını büyük ölçüde yansıtır. Bu, kozmolojinin bağımsız bir sağlamasıdır; aşağıdaki örnekte d17'deki Planck değerleriyle kendin karşılaştırabilirsin."
-   ],
-   "ornek": {
-    "baslik": "Örnek: Evrende sıradan maddenin payı ne kadar?",
-    "metin": "d17'deki Planck 2018 değerleri: sıradan madde Ωb ≈ 0,0493, toplam madde Ωm ≈ 0,315. Sıradan maddenin maddeye oranı: 0,0493 / 0,315 ≈ 0,157, yani yaklaşık yüzde 15,7. Aynı sonucu Ωb h² = 0,02237 ve Ωc h² = 0,1200 ile de bulursun: 0,02237 / (0,02237 + 0,1200) ≈ 0,157. Bir zengin kümede gaz kabaca yüzde 10, yıldızlar da birkaç yüzde ise toplam sıradan madde yüzde 15 dolayına çıkar ve evrensel değere yaklaşır. Gonzalez ve arkadaşları kendi kümelerinde biraz daha düşük bir pay buldu ama farkı gözlem belirsizlikleri ve benzetimlerin öngördüğü küçük kayıplar içinde değerlendirdi. Birim: oran."
-   },
-   "akilda": "Bir zengin kümede kütlenin ~%90'ı karanlık madde, ~%10'u sıcak gaz, yıldızlar daha az; yıldız ışığının %33–40'ı merkez galaksi ve galaksiler arası yıldızlardan gelir. Kümelerdeki sıradan madde payı evren ortalamasına yakındır."
-  },
-  {
-   "baslik": "Laniakea, Büyük Çekici ve Dipol İtici",
-   "paragraflar": [
-    "d7'de tanıyacağın Laniakea üstkümesi, 2014'te Brent Tully, Hélène Courtois, Yehuda Hoffman ve Daniel Pomarède'nin galaksilerin tuhaf hızlarını haritalayarak tanımladığı bölgedir; makaleye göre çapı yaklaşık 160 megaparsek, kütlesi yaklaşık 10¹⁷ Güneş kütlesidir. Wikipedia'ya göre Samanyolu'yla birlikte yaklaşık 100.000 galaksiyi barındırır ve 300 ile 500 bilinen küme ve grup içerir; gerçek sayı daha büyük olabilir, çünkü bazıları kaçınma bölgesinin arkasındadır. Yeni tanıma göre üstküme, içindeki galaksilerin hareketlerinin ortak bir merkeze doğru aktığı bir çekim havzasıdır. Bu odak noktasına Büyük Çekici denir ve gökte Cetvel takımyıldızı yönündedir. Wikipedia'ya göre Laniakea, daha önce ayrı tanımlanan Başak üstkümesini ve Suyılanı–Erboğa üstkümesini kendi uzantıları olarak içine alır; en kütleli kümeleri arasında Başak, Suyılanı, Erboğa, Ocak, Irmak, Yılancı ve Cetvel kümeleri sayılır.",
-    "Laniakea'nın kütleçekimiyle bağlı bir yapı olmadığını da bilmek gerekir: Wikipedia'ya göre karanlık enerji onu gelecekte parçalayacaktır. Tanım da tartışmalıdır; sonraki çalışmaların bir kısmı üstküme adını geleneksel olarak yüksek yoğunluklu bölgelere saklayıp Laniakea gibi havzalara koza ya da su bölümü havzası gibi adlar verdi, bazıları ise üstküme sözcüğünü hiç kullanmadı. Gökbilimciler arasında üstkümenin kabul görmüş tek bir tanımı yok.",
-    "Peki biz ne kadar hızlı ve nereye gidiyoruz? Sayı, neye göre ölçtüğüne bağlıdır. d8'e göre Güneş, kozmik mikrodalga arka plan ışımasına göre saniyede yaklaşık 370 km hızla gider. Wikipedia'ya göre Samanyolu'nun bütünü bu ışımaya göre saniyede 552 ± 6 km hızla, Suyılanı takımyıldızının ortası yakınlarına doğru gider; farkın kaynağı, Güneş'in galaksi merkezi çevresindeki kendi dönüşüdür; iki hız farklı yönlere baktığı için vektör olarak toplanır. ScienceDaily'nin 2017 haberine göre Samanyolu ile Andromeda, yani Yerel Grup'un iki büyük galaksisi, genişleyen evrene göre saniyede yaklaşık 630 km hızla hareket eder.",
-    "Bu hareketi ne yaratıyor? Hoffman, Pomarède, Tully ve Courtois'nın 2017'de Nature Astronomy'de yayımlanan çalışmasına göre iki etki birlikte çalışır: iki düzineden fazla zengin kümeden oluşan Shapley Yoğunlaşması bizi kendine çeker, daha önce tanımlanmamış, galaksilerce çok fakir geniş bir düşük yoğunluklu bölge de bizi iter. Bu itici bölgeye Dipol İtici adı verildi. Yazarlara göre bulunduğumuz yerde çekme ile itme kabaca eşit önemdedir. Boş bölge aslında itmez; yalnız çevresine göre daha az çeker, bu yüzden madde ondan uzaklaşıyormuş gibi görünür."
-   ],
-   "ornek": {
-    "baslik": "Örnek: Saniyede 630 km ne demek?",
-    "metin": "Bir yılda: 630 km/s × 3,156×10⁷ s ≈ 1,99×10¹⁰ km. Bir astronomik birim 1,496×10⁸ km olduğundan bu ≈ 133 AB eder; yani Yerel Grup her yıl Güneş–Dünya uzaklığının 133 katı yol alır. Işık hızına oranı: 630 / 299.792 ≈ 0,0021. Bir milyon yılda ışık bir milyon ışık yılı gittiğine göre Yerel Grup bir milyon yılda 0,0021 × 1.000.000 ≈ 2100 ışık yılı yol alır. Laniakea'nın 160 megaparseklik, yaklaşık 520 milyon ışık yıllık çapıyla karşılaştırınca bu hızla bile üstkümeyi geçmek yüz milyarlarca yıl sürerdi. Birimler: AB/yıl ve ışık yılı/milyon yıl."
-   },
-   "akilda": "Laniakea (2014): ~160 megaparseklik, ~100.000 galaksili bir çekim havzası; odağı Cetvel yönündeki Büyük Çekici; bağlı değildir ve tanımı tartışmalıdır. Güneş arka plan ışımasına göre ~370, Samanyolu ~552, Yerel Grup ~630 km/s hızla gider; bunu Shapley'nin çekmesi ve Dipol İtici'nin itmesi birlikte yaratır."
-  },
-  {
-   "baslik": "Kozmik ağ: duvarlar ve lifler",
-   "paragraflar": [
-    "Galaksilerin üç boyutlu dağılımını görmek için her birinin uzaklığını bilmek gerekir. Gökbilimciler bunun için galaksinin tayfındaki kırmızıya kaymayı ölçer ve Hubble–Lemaître yasasıyla uzaklığa çevirir; buna kırmızıya kayma taraması denir. Wikipedia'ya göre bu iş için ilk girişim olan Harvard–Smithsonian Astrofizik Merkezi taraması 1977'de başladı ve ilk evresi 1982'de tamamlandı. John Huchra ve Margaret Geller'in 1985'te başlattığı ikinci tarama, 1995'e kadar kuzey gökyüzündeki 18.000 parlak galaksinin kırmızıya kaymasını ölçtü. Sonuç şaşırtıcıydı: galaksiler düzgün dağılmamıştı, boş bölgelerin çevresindeki yüzeylerde toplanmıştı.",
-    "Bu taramanın 1989'da ortaya çıkardığı yapı Büyük Duvar adını aldı. Wikipedia'nın aktardığı bir betimlemeye göre bu yapı yaklaşık 300 milyon ışık yılı genişliğinde, 15 milyon ışık yılı kalınlığında ve en az 500 milyon ışık yılı boyunca uzanır. Ne kadar uzadığı bilinmiyor, çünkü bir bölümü Samanyolu'nun diskinin arkasında, kaçınma bölgesinde kalır.",
-    "20 Ekim 2003'te Princeton Üniversitesi'nden J. Richard Gott ile Mario Jurić ve arkadaşları, Sloan Dijital Gökyüzü Taraması verisinde daha da büyük bir yapı duyurdu: yaklaşık 1,37 milyar ışık yılı uzunluğundaki, bizden yaklaşık bir milyar ışık yılı uzaktaki Sloan Büyük Duvarı. Wikipedia'ya göre CfA2 Büyük Duvarı'ndan 1,8 ile 2,7 kat uzundur, gözlenebilir evrenin çapının yaklaşık altmışta biri kadardır ve en zengini SCl 126 olan birkaç üstküme içerir. 2011'de bunun tek bir yapı değil, rastlantıyla aynı doğrultuya düşmüş üç yapı olabileceği öne sürüldü. Aynı kaynak Sloan Büyük Duvarı'ndan da büyük olduğu öne sürülen birkaç yapı sayar; bunların arasında büyük kuasar grupları ve Herkül–Kuzeytacı Büyük Duvarı denen bir galaksi lifi vardır. Bu kadar büyük yapıların gerçekten tek parça olup olmadığı, Sloan Büyük Duvarı örneğinde olduğu gibi, istatistikle dikkatle sınanması gereken bir sorudur.",
-    "Ağın parçaları kütle ve hacim bakımından çok farklı paylara sahiptir. Cautun ve arkadaşlarının 2014'teki büyük benzetim çözümlemesine göre bugün evrendeki maddenin yarısı liflerde, yüzde 25'i duvarlarda, yüzde 15'i boşluklarda, yüzde 10'u küme bölgelerindedir. Hacimde tablo tersine döner: boşluklar hacmin yüzde 78'ini, duvarlar yüzde 18'ini, lifler yalnızca yüzde 6'sını kaplar; kümelerin hacmi önemsizdir. Madde boşluklardan duvarlara, oradan liflerle kümelere, yani ağın düğümlerine doğru akar. Aynı çalışma kütleli kümeleri birbirine köprüleyen, 100 megaparsekten uzun, neredeyse düz lifler de buldu."
-   ],
-   "ornek": {
-    "baslik": "Örnek: Lifler ne kadar yoğun?",
-    "metin": "Cautun ve arkadaşlarına göre lifler maddenin yüzde 50'sini hacmin yüzde 6'sında taşır. Ortalama yoğunluğun kaç katı olduklarını kabaca bulmak için kütle payını hacim payına böl: 0,50 / 0,06 ≈ 8,3. Boşluklar için 0,15 / 0,78 ≈ 0,19; yani boşluklar ortalamanın yaklaşık beşte biri yoğunluktadır. Çalışmanın kendi hesabı da boşlukların ortalama yoğunluğunu ortalamanın 0,2 katı, liflerin bugünkü yoğunluk fazlasını ortalamanın yaklaşık 10 katı mertebesinde verir; kaba oranlarımız bunlarla uyumludur. Duvarlar için 0,25 / 0,18 ≈ 1,4, yani ortalamaya yakın. Birim: ortalama yoğunluğun katı."
-   },
-   "akilda": "Kırmızıya kayma taramaları (CfA 1977, CfA2 1985–1995) galaksilerin boşlukları saran yüzeylerde toplandığını gösterdi: Büyük Duvar (1989), Sloan Büyük Duvarı (2003, ~1,37 milyar ışık yılı; tek yapı olup olmadığı tartışmalı). Lifler maddenin yarısını taşır ama hacmin %6'sını kaplar; boşluklar hacmin %78'idir."
-  },
-  {
-   "baslik": "Boşluklar: Çoban Boşluğu",
-   "paragraflar": [
-    "Ağın en büyük hacmini kaplayan boşluklar tamamen boş değildir, yalnızca çok seyrektir. Bilinen en büyük boşluklardan biri, Çoban takımyıldızı yönündeki Çoban Boşluğu'dur. Wikipedia'ya göre 1981'de Robert Kirshner tarafından, evrenin büyük ölçekli yapısını haritalamak için yapılan bir kırmızıya kayma taramasında bulundu. Kabaca küre biçimlidir, yarıçapı 62 megaparsek, yani yaklaşık 200 milyon ışık yılıdır ve merkezi bizden yaklaşık 700 milyon ışık yılı uzaktadır. Popüler kaynaklar çapını çoğu zaman 330 milyon ışık yılı olarak verir; boşluğun sınırı tanıma bağlı olduğu için sayılar kaynaktan kaynağa değişir.",
-    "Boşluk yalnız 60 galaksi içerir; bu büyüklükte sıradan bir bölgede yaklaşık 2000 galaksi beklenirdi. Bu yüzden süper boşluk diye anılır. Yine de Wikipedia'ya göre varlığı standart kozmoloji modeliyle, yani ΛCDM ile çelişmez: daha küçük boşlukların birleşmesiyle oluştuğu düşünülür ve bu, merkezinden geçen kabaca silindir biçimli bir bölgedeki az sayıdaki galaksiyi de açıklayabilir. Kenarında Herkül üstkümeleri, arkasında Kuzeytacı üstkümesi bulunur. Abell 1749 ve Abell 2022 kümeleri boşluğun hemen dışındadır.",
-    "Boşlukların bilimsel değeri büyüktür. van de Weygaert'in 2016 derlemesine göre boşluklar kozmik ağın temel bileşenlerinden biridir ve evrenin genel parametrelerinin en temiz ölçülerinden birini sağlar; biçimleri ve evrimleri karanlık enerjinin doğasına çok duyarlıdır, içlerindeki galaksiler de karanlık maddenin niteliğine ışık tutar. Boşlukların içi, el değmemiş bir ortam olduğu için çevrenin galaksi evrimine etkisini sınamak için de iyi bir laboratuvardır."
-   ],
-   "ornek": {
-    "baslik": "Örnek: Çoban Boşluğu ne kadar boş?",
-    "metin": "Beklenen 2000 galaksi yerine 60 galaksi: 60 / 2000 = 0,03, yani yalnızca yüzde 3. Hacmi: yarıçap 62 megaparsekse V = 4/3 × π × 62³ ≈ 4/3 × 3,1416 × 238.328 ≈ 998.000 megaparsek küp, yani yaklaşık bir milyon megaparsek küp. Bu hacme 60 galaksi düşünce galaksi başına yaklaşık 998.000 / 60 ≈ 16.600 megaparsek küp düşer; bir galaksinin komşusuna ortalama uzaklığı kabaca bu hacmin küp kökü, yani yaklaşık 25 megaparsek, 80 milyon ışık yılı mertebesindedir. Karşılaştır: Samanyolu'nun en yakın büyük komşusu Andromeda 2,5 milyon ışık yılı uzaktadır. Birimler: oran ve megaparsek."
-   },
-   "akilda": "Çoban Boşluğu (1981, Kirshner): yarıçapı ~62 megaparsek, ~700 milyon ışık yılı uzakta; beklenen ~2000 yerine yalnız 60 galaksi. ΛCDM ile çelişmez, küçük boşlukların birleşmesiyle oluşmuş olabilir. Boşluklar karanlık enerji ve karanlık madde için temiz bir laboratuvardır."
-  },
-  {
-   "baslik": "Ağ nasıl oluştu? Evreni bilgisayarda büyütmek",
-   "paragraflar": [
-    "Bu dev yapıların tohumları evrenin ilk anlarındadır. d8'de göreceğin kozmik mikrodalga arka plan ışıması, evrenin o zamanki yoğunluk farklarını gösterir. Wikipedia'nın baryon akustik salınımları maddesine göre WMAP haritası bu farkların milyonda 10 düzeyinde olduğu, neredeyse düzgün bir evren gösterir; oysa bugün galaksiler evrenin ortalama yoğunluğundan bir milyon kat yoğundur.",
-    "Yaygın görüşe göre evren aşağıdan yukarıya kuruldu: biraz yoğun bölgeler çevrelerinden daha çok madde çekti ve farklar büyüdü. Karanlık madde bu büyümenin iskeletini oluşturur; Büyük Duvar gibi yapılar karanlık maddenin ağ biçimli dizilerini izler ve sıradan madde onların üzerinde toplanır. Cautun ve arkadaşlarına göre erken evrene ince ve çok sayıda lif egemendi; zamanla bunlar birleşerek bugünkü daha az ama çok daha kütleli yapılara dönüştü. Büyük Duvar keşfedildiğinde gökbilimcileri şaşırtmıştı, çünkü Wikipedia'nın CfA taraması maddesine göre boyutu, evrenin başından beri kütleçekimsel çöküşle oluşabilecek olandan büyük görünüyordu. O zamandan beri bu tür üstkümeler, evrenin ilk anlarındaki şişme döneminde doğan kuantum dalgalanmalarının büyümüş izleri olarak anlatılır (ilk anlar d8'de).",
-    "Bu süreci kâğıt kalemle izlemek pratikte olanaksızdır; gökbilimciler onu bilgisayarda büyütür. Virgo Consortium'un 2005'te Volker Springel ve arkadaşlarıyla Nature'da yayımladığı Millennium Benzetimi bunun dönüm noktasıydı: 10 milyardan fazla parçacık, yani 2160³ parçacık, her biri yaklaşık bir milyar Güneş kütlesi karanlık maddeyi temsil ediyordu. Kenarı yaklaşık 2 milyar ışık yılı olan bir küpte yaklaşık 20 milyon galaksi üretildi. Hesap Garching'deki Max Planck Astrofizik Enstitüsü'nde 512 işlemcili bir kümede 28 gün, toplam yaklaşık 343.000 işlemci saati sürdü. 2009'daki Millennium-II aynı sayıda parçacığı kenarı yaklaşık 400 milyon ışık yılı olan daha küçük bir küpe koydu; her parçacık 6,9 milyon Güneş kütlesiydi. 2010'daki Millennium-XXL ise kenarı 13 milyar ışık yılını aşan bir küpü, her biri yaklaşık 7 milyar Güneş kütlesi olan parçacıklarla doldurdu. Küçük kutu ayrıntı, büyük kutu ise nadir dev yapıları yakalamak içindir.",
-    "Millennium'un parçacıkları yalnız karanlık maddeyi temsil ediyordu. IllustrisTNG projesi bir adım öteye gitti. 2018 sonunda bütün verisi açılan bu benzetimler karanlık maddeyi, kozmik gazı, yıldızları ve süper kütleli kara delikleri, manyetik alanlarla birlikte, erken evrenden bugüne kendi içinde tutarlı biçimde çözer. Üç ana benzetimin adı, kutularının kenar uzunluğunu megaparsek cinsinden verir: TNG50, TNG100 ve TNG300. Açık veri yaklaşık 1,1 petabayttır.",
-    "Bu benzetimler gözlemle karşılaştırılabilecek öngörüler üretir. Haider ve arkadaşlarının önceki Illustris benzetimi üzerine 2016 çalışmasına göre bugün karanlık maddenin yüzde 49'u ve sıradan maddenin yüzde 23'ü halelerde, karanlık maddenin yüzde 45'i ve sıradan maddenin yüzde 46'sı liflerde bulunur; sıradan maddenin yüzde 31'i ise boşluklardadır ve çoğu oraya aktif galaksi çekirdeklerinin geri beslemesiyle itilmiştir. Sıcaklık ve yoğunluğa göre sınıflanınca sıradan maddenin yüzde 17,8'i yoğunlaşmış halde, yüzde 21,6'sı soğuk ve yaygın gazda, yüzde 53,9'u ise aşağıda göreceğin ılık-sıcak gazdadır. Yazarlar bu benzetimdeki geri beslemenin büyük haleler için fazla güçlü olduğunu, bu yüzden boşluklardaki payı büyük olasılıkla abarttıklarını kendileri not eder."
-   ],
-   "ornek": {
-    "baslik": "Örnek: Millennium kutusunda ne kadar kütle var?",
-    "metin": "Parçacık sayısı 2160³ = 2160 × 2160 × 2160 = 10.077.696.000, yani yaklaşık 1,01×10¹⁰. Her biri yaklaşık 10⁹ Güneş kütlesi temsil ettiğine göre toplam karanlık madde ≈ 1,01×10¹⁰ × 10⁹ ≈ 10¹⁹ Güneş kütlesi. Samanyolu'nun ~10¹² Güneş kütlesiyle karşılaştırınca bu, yaklaşık 10 milyon Samanyolu kütlesi eder. Laniakea'nın ~10¹⁷ Güneş kütlesiyle karşılaştırınca kutu kabaca 100 Laniakea kütlesi taşır. Bir parçacığın bir milyar Güneş kütlesi olması, Samanyolu büyüklüğünde bir halenin yalnızca bin kadar parçacıkla temsil edildiği anlamına gelir; bu yüzden küçük galaksilerin ayrıntısı bu benzetimde görülemez. Birim: Güneş kütlesi."
-   },
-   "akilda": "Ağ, arka plan ışımasındaki milyonda 10'luk farkların karanlık madde iskeleti üzerinde büyümesiyle oluştu. Millennium (2005): 2160³ ≈ 10 milyar parçacık, ~2 milyar ışık yılı küp, ~20 milyon galaksi. IllustrisTNG (TNG50/100/300): gaz, yıldız, kara delik ve manyetik alanlarla."
-  },
-  {
-   "baslik": "Kayıp baryonlar: ağın sıcak gazı",
-   "paragraflar": [
-    "Evrendeki sıradan maddenin, gökbilimcilerin diliyle baryonların, toplam miktarını Planck ölçümlerinden ve ilk çekirdeklerin bolluğundan biliyoruz (d17). Ama yakın evrende yıldızları, galaksilerdeki gazı ve kümelerdeki sıcak gazı toplayınca bu miktarın tamamı çıkmaz. Wikipedia'nın Samanyolu maddesi, birkaç milyar yaşındaki evrende sıradan maddenin karanlık maddenin altıda biri kadar olduğunu, ama bugünkü yakın galaksilerde bu baryonların yalnız yaklaşık yarısının hesaba katılabildiğini yazar. Eksik kısma kayıp baryonlar denir. d47'de gördüğün Samanyolu'nun sıcak gaz halesi bunların bir bölümü olabilir. O halenin kütlesinin gözlemlere göre neredeyse galaksinin kendi kütlesi kadar olduğunu hatırla; doğrulanırsa, Wikipedia'ya göre Samanyolu çevresindeki kayıp baryonların kimliği bu gaz olabilir.",
-    "Benzetimler kayıp baryonların çoğunun nerede olduğunu öngörür: galaksiler arası liflerde, milyonlarca derece sıcaklıkta ama çok seyrek bir gaz halinde. Buna ılık-sıcak galaksiler arası ortam denir. Haider ve arkadaşlarının Illustris çözümlemesine göre baryonların yüzde 53,9'u bu durumdadır. Böyle bir gaz çok az ışık yaydığı için onu görmek son derece zordur. Astronomy dergisinin aktardığına göre bu ortamın ortalama yoğunluğu metreküp başına yalnızca yaklaşık 10 parçacıktır.",
-    "Kasım 2024'te Astronomy & Astrophysics'te yayımlanan bir çalışma bu gazı yakalamaya yaklaştı. Astronomy dergisinin haberine göre Max Planck Dünya Dışı Fizik Enstitüsü'nden Xiaoyuan Zhang ve Esra Bulbul'un da aralarında bulunduğu ekip, eROSITA X-ışını teleskobunun verisinde kümeleri birbirine bağlayan yaklaşık 8000 gaz lifinin sinyalini üst üste ekledi. Bazıları 65 milyon ışık yılına uzanan bu liflerde gaz yaklaşık 5,6 milyon santigrat derecedeydi. Ekip, bu ortamın evrendeki kayıp sıradan maddenin yaklaşık yüzde 20'sini açıklayabileceğini tahmin etti, ama belirsizliğin büyük olduğunu vurguladı. Yani kayıp baryonların izi bulunmaya başladı, hesap henüz kapanmadı."
-   ],
-   "akilda": "Yakın evrende sayılan sıradan madde, beklenenin ancak yaklaşık yarısıdır. Benzetimlere göre eksik baryonların çoğu liflerdeki milyonlarca derecelik seyrek gazdadır (Illustris: %53,9). eROSITA 2024: ~8000 lif üst üste eklenerek bu gazın kayıp maddenin ~%20'sini açıklayabileceği bulundu; belirsizlik büyük."
-  },
-  {
-   "baslik": "Ağın cetveli: baryon akustik salınımları ve büyük haritalar",
-   "paragraflar": [
-    "d8'de göreceğin gibi erken evrenin sıcak plazmasında kütleçekimi ile ışığın basıncı birbirine karşı koyarak ses dalgalarına benzer salınımlar yarattı. Wikipedia'ya göre bu dalgalar ışık hızının yarısından biraz fazla bir hızla yayıldı. Evren yaklaşık 379.000 yaşındayken, kırmızıya kayma z = 1089'da, plazma soğuyup nötr atomlar oluşunca ışık maddeden ayrıldı, basınç kalktı ve dalgalar oldukları yerde dondu. O anda her yoğunluk tohumunun çevresinde yaklaşık 0,14 megaparsek yarıçaplı bir sıradan madde kabuğu kalmıştı. Evren o zamandan beri genişlediği için bu ölçek bugün yaklaşık 150 megaparsek, yani 490 milyon ışık yılıdır. Sonuç: galaksi çiftleri arasında bu uzaklık başka uzaklıklara göre biraz daha sık görülür.",
-    "Bu ölçeğe baryon akustik salınımları cetveli denir. Tek bir kabuk gözle seçilemez, çünkü evrende üst üste binmiş sayısız kabuk vardır; havuza atılan çok sayıda çakıl taşının dalgaları gibi. İşaret ancak çok sayıda galaksinin aralıkları istatistikle çözümlenince ortaya çıkar. Sloan Dijital Gökyüzü Taraması ekibi bunu 2005'te 3816 derece karelik bir alandaki 46.748 parlak kırmızı galaksiyle, z = 0,47'ye kadar yaptı; aynı yıl 2dF taraması da işareti bildirdi. Cetvelin bugünkü uzunluğu kozmik arka plan ışımasından da çok hassas ölçüldüğü için, farklı zamanlardaki uzunluğu evrenin genişleme tarihini ve karanlık enerjiyi sınar. 2023'te bir ekip, Çoban üstkümesini, Sloan Büyük Duvarı'nı, CfA2 Büyük Duvarı'nı ve Herkül üstkümelerini içeren tek bir dev kabuk bulduğunu öne sürdü ve ona Ho'oleilana adını verdi; bu iddia henüz yerleşmiş değildir.",
-    "Bugünün haritacıları çok daha büyük ölçekte çalışıyor. DESI'nin, yani Karanlık Enerji Tayf Aleti'nin 19 Mart 2025'te herkese açtığı ilk veri sürümü 18,7 milyon cismin kırmızıya kaymasını içerir: 13,1 milyon galaksi, 1,6 milyon kuasar ve 4 milyon yıldız. Aynı gün açıklanan ve ilk üç yılın, birinci sürümün iki katından fazla verisine dayanan baryon akustik salınımı sonuçları, karanlık enerjinin zamanla değiştiğine dair ipuçlarını güçlendirdi; d17'ye göre bu ipuçlarının anlamlılığı veri birleşimine göre 2,8 ile 4,2 sigma arasındadır ve keşif sayılan 5 sigmaya ulaşmamıştır. d17'nin kaynaklarına göre DESI, Arizona'daki Kitt Peak'te 4 metrelik Mayall Teleskobu'na takılıdır ve üç yıllık harita yaklaşık 15 milyon galaksi ve kuasarla evrenin son 11 milyar yılını kapsar. ESA'nın Euclid uzay teleskobu 1 Temmuz 2023'te fırlatıldı, asıl taramasına 14 Şubat 2024'te başladı ve ilk hızlı veri sürümünü 19 Mart 2025'te yayımladı; ilk büyük veri sürümü 2027 ortası için planlanıyor."
-   ],
-   "ornek": {
-    "baslik": "Örnek: Donmuş kabuk ne kadar büyüdü?",
-    "metin": "Saydamlaşma anında kabuğun yarıçapı yaklaşık 0,14 megaparsek, kırmızıya kayma z = 1089. Evren o zamandan beri 1 + z = 1090 kat genişledi (d17). Bugünkü yarıçap ≈ 0,14 × 1090 ≈ 153 megaparsek. Kaynakta verilen yaklaşık 150 megaparsekle uyuşur. Işık yılına çevirmek için 1 parsek ≈ 3,2616 ışık yılı: 150 megaparsek ≈ 150 × 3,2616 ≈ 489 milyon ışık yılı, yani kaynaktaki 490 milyon ışık yılı. Karşılaştır: bu bir yarıçaptır, yani kabuğun çapı yaklaşık 300 megaparsektir; Laniakea'nın çapı ise yaklaşık 160 megaparsektir. Tek bir donmuş ses dalgası kabuğu, bütün üstkümemizden büyüktür. Birim: megaparsek."
-   },
-   "akilda": "Erken evrenin donmuş ses dalgaları galaksilerin dağılımına ~150 megaparseklik (490 milyon ışık yılı) bir cetvel bıraktı; SDSS ve 2dF 2005'te buldu. DESI DR1 (Mart 2025): 18,7 milyon cisim; DR2 karanlık enerjinin değişebileceği ipucunu güçlendirdi (5σ değil). Euclid 2023'te fırlatıldı, DR1 2027 ortası."
-  },
-  {
-   "baslik": "İstanbul'dan kümelere bakmak",
-   "paragraflar": [
-    "Bu dersteki yapıların çoğu dürbünle görülmez, ama nerede olduklarını bilmek gökyüzüne bakışını değiştirir. Yerel Grup'un iki üyesi İstanbul göğündedir: d7'de göreceğin gibi Andromeda karanlık bir gökte çıplak gözle görülür, Üçgen Galaksisi ise ancak çok karanlık bir gökte aranabilir. Grubun öbür ucundaki Samanyolu'na zaten içinden bakıyorsun (d47). Sonbaharda Andromeda'ya baktığında Yerel Grup halterinin öbür ucunu görürsün: ışığı yaklaşık 2,5 milyon yıl önce yola çıktı ve galaksinin kendisi bize yaklaşıyor. Hız için kaynaklar arasında küçük bir fark var: d7, Wikipedia'nın çarpışma maddesinden yaklaşık 110 km/s, bu ders Yerel Grup maddesinden yaklaşık 123 km/s kullanıyor. Zamanlama argümanının iki ucundan biri, gökte gözle görebileceğin bir lekedir.",
-    "d7'ye göre Başak Kümesi'nin çekirdeğine yakın Markarian Zinciri en iyi mart ile haziran arasında görülür; iyi görmek için 75–200 mm'lik bir teleskop gerekir ve 7×50 dürbün büyük olasılıkla yetmez. Berenis'in Saçı Kümesi daha da zordur: Wikipedia'ya göre en parlak on sarmal galaksisinin parlaklığı 12 ile 14 kadirdir ve ancak 20 santimetreden büyük amatör teleskoplarla gözlenebilir. Yani bu kümeyi 7×50 dürbünle göremezsin; ama Berenis'in Saçı'na baktığında, bakışının Samanyolu'nun kuzey kutbuna, yani tozun en ince olduğu yöne doğru gittiğini, ve 321 milyon ışık yılı ötede binden fazla galaksinin bulunduğunu bilirsin.",
-    "Kaçınma bölgesini de gökyüzünde görebilirsin: d47'de anlatılan Samanyolu kuşağının kendisi odur. Kuşak boyunca uzak galaksiler toz ve yıldızlar yüzünden gizlenir; Wikipedia'ya göre Laniakea'nın bazı kümeleri de bu bölgenin arkasında kaldığı için bilinmeyebilir. Uygulamanın Gökyüzü sekmesinde Başak'ın, Berenis'in Saçı'nın ve Andromeda'nın o gece ne zaman en yükseğe çıktığına bakabilirsin."
-   ],
-   "akilda": "Yerel Grup'tan Andromeda ve Üçgen İstanbul göğünde aranabilir. Başak ve Berenis'in Saçı kümeleri ilkbaharda yükselir ama teleskop ister: Berenis'in Saçı'nın en parlak sarmalları 12–14 kadirdir, 20 cm'den büyük teleskop gerekir. Samanyolu kuşağı kaçınma bölgesidir."
-  }
- ],
- "formuller": [
-  {
-   "ad": "Kurtulma hızı (iki galaksi bağlı mı?)",
-   "ifade": "v = √(2 × G × M / r)",
-   "aciklama": "v kurtulma hızı (m/s), G = 6,674×10⁻¹¹ m³/(kg·s²), M toplam kütle (kg), r aradaki uzaklık (m). Bağıl hız bundan küçükse sistem kütleçekimiyle bağlıdır; kütle noktasal sayılır, yan hız yok sayılır."
-  },
-  {
-   "ad": "Hız dağılımından kaba küme kütlesi",
-   "ifade": "M ≈ σ² × R / G",
-   "aciklama": "σ galaksilerin hız dağılımı (m/s), R kümenin yarıçapı (m). Kümenin dengede olduğu varsayılır; yalnız mertebe verir, sayısal çarpan modele göre birkaç kat değişir."
-  },
-  {
-   "ad": "Hubble akışı ve tuhaf hız",
-   "ifade": "v(gözlenen) = H0 × d + v(tuhaf)",
-   "aciklama": "H0 Hubble sabiti (km/s/Mpc), d uzaklık (Mpc), v(tuhaf) galaksinin genişlemeden bağımsız kendi hızının görüş doğrultusundaki bileşeni (km/s). Yerel Grup–Başak için v(tuhaf) negatiftir: kütleçekimi kaçışı frenler."
-  },
-  {
-   "ad": "Frekanstan dalga boyuna",
-   "ifade": "λ = c / f",
-   "aciklama": "λ dalga boyu (m), c ışık hızı (299.792.458 m/s), f frekans (Hz). Sunyaev–Zeldovich etkisinin sıfır noktası 217 GHz ≈ 1,38 mm."
-  },
-  {
-   "ad": "Genişlemeyle büyüyen uzunluk",
-   "ifade": "L(bugün) = L(o zaman) × (1 + z)",
-   "aciklama": "z o zamanın kırmızıya kayması. Saydamlaşmada z = 1089: 0,14 Mpc × 1090 ≈ 150 Mpc (baryon akustik salınım cetveli)."
-  },
-  {
-   "ad": "Ortalama yoğunluğa göre kat",
-   "ifade": "yoğunluk / ortalama ≈ kütle payı / hacim payı",
-   "aciklama": "Bir bileşenin (lif, duvar, boşluk) taşıdığı madde payının kapladığı hacim payına oranı; lifler için 0,50 / 0,06 ≈ 8."
-  }
- ],
- "anahtar_sayilar": [
-  {
-   "deger": "~800 kiloparsek; ~123 km/s; ~2×10¹² M☉; 134 üye",
-   "aciklama": "Yerel Grup: iki ucun uzaklığı, yaklaşma hızı, toplam kütle, 1 megaparsek içindeki bilinen üye sayısı",
-   "kaynak_url": "https://en.wikipedia.org/wiki/Local_Group"
-  },
-  {
-   "deger": "1959; ≥10 kat; ~5×10¹² M☉",
-   "aciklama": "Kahn ve Woltjer'in zamanlama argümanı, buldukları görünmeyen kütle katı ve bugünkü zamanlama kütlesi (Strigari 2025)",
-   "kaynak_url": "https://arxiv.org/abs/2508.18061"
-  },
-  {
-   "deger": "967 km/s; 16,8 megaparsek",
-   "aciklama": "Yerel Grup ile Başak Kümesi'nin birbirinden uzaklaşma hızı ve uzaklık; Hubble akışından az",
-   "kaynak_url": "https://en.wikipedia.org/wiki/Milky_Way"
-  },
-  {
-   "deger": ">1000 galaksi; 99 megaparsek (321 milyon ışık yılı); kütlenin ~%90'ı karanlık madde",
-   "aciklama": "Berenis'in Saçı Kümesi (Abell 1656)",
-   "kaynak_url": "https://en.wikipedia.org/wiki/Coma_Cluster"
-  },
-  {
-   "deger": "1019 ± 360 km/s (1933, 8 galaksi); 1082 km/s (1996)",
-   "aciklama": "Berenis'in Saçı Kümesi'nin hız dağılımı: Zwicky ve modern değer",
-   "kaynak_url": "https://arxiv.org/abs/astro-ph/9904251"
-  },
-  {
-   "deger": "~10⁸ K; ~1 parçacık/litre; 10¹⁵ M☉'lik kümede ~10¹⁴ M☉ gaz",
-   "aciklama": "Küme içi sıcak gaz (Cavaliere ve Lapi 2013)",
-   "kaynak_url": "https://arxiv.org/abs/1308.6673"
-  },
-  {
-   "deger": "1653 tespit; 1203 doğrulanmış küme; ~217 GHz sıfır noktası",
-   "aciklama": "Planck'ın ikinci Sunyaev–Zeldovich kataloğu (2015) ve etkinin frekans imzası",
-   "kaynak_url": "https://arxiv.org/abs/1502.01598"
-  },
-  {
-   "deger": "1987; Einstein yarıçapı 39 ± 2″; 2,82 ± 0,15×10¹⁴ M☉; büyütme 32 ± 4",
-   "aciklama": "Abell 370'in dev yayı ve mercekten ölçülen kütle (Richard ve ark. 2009)",
-   "kaynak_url": "https://arxiv.org/abs/0910.5553"
-  },
-  {
-   "deger": "~160 megaparsek; ~10¹⁷ M☉; ~100.000 galaksi",
-   "aciklama": "Laniakea üstkümesi (2014)",
-   "kaynak_url": "https://en.wikipedia.org/wiki/Laniakea_Supercluster"
-  },
-  {
-   "deger": "~630 km/s (Yerel Grup, 2017); 552 ± 6 km/s (Samanyolu, arka plan ışımasına göre)",
-   "aciklama": "Hızımız; Shapley Yoğunlaşması çeker, Dipol İtici iter",
-   "kaynak_url": "https://www.sciencedaily.com/releases/2017/01/170130110921.htm"
-  },
-  {
-   "deger": "lifler %50 kütle / %6 hacim; boşluklar %15 / %78; duvarlar %25 / %18; kümeler %10 kütle",
-   "aciklama": "Kozmik ağın bileşenleri (Cautun ve ark. 2014 benzetim çözümlemesi)",
-   "kaynak_url": "https://arxiv.org/abs/1401.7866"
-  },
-  {
-   "deger": "1981; yarıçap 62 megaparsek; 60 galaksi (beklenen ~2000); ~700 milyon ışık yılı",
-   "aciklama": "Çoban Boşluğu",
-   "kaynak_url": "https://en.wikipedia.org/wiki/Bo%C3%B6tes_Void"
-  },
-  {
-   "deger": "2160³ ≈ 10 milyar parçacık; ~2 milyar ışık yılı küp; ~20 milyon galaksi (2005)",
-   "aciklama": "Millennium Benzetimi",
-   "kaynak_url": "https://en.wikipedia.org/wiki/Millennium_Run"
-  },
-  {
-   "deger": "~150 megaparsek (~490 milyon ışık yılı); 2005",
-   "aciklama": "Baryon akustik salınım cetvelinin bugünkü uzunluğu ve ilk tespit yılı",
-   "kaynak_url": "https://en.wikipedia.org/wiki/Baryon_acoustic_oscillations"
-  },
-  {
-   "deger": "18,7 milyon cisim: 13,1 milyon galaksi, 1,6 milyon kuasar, 4 milyon yıldız (19 Mart 2025)",
-   "aciklama": "DESI'nin ilk açık veri sürümü",
-   "kaynak_url": "https://www.desi.lbl.gov/2025/03/19/desi-dr2-results-march-19-guide/"
-  },
-  {
-   "deger": "~8000 lif; ≤65 milyon ışık yılı; ~5,6 milyon °C; kayıp baryonların ~%20'si",
-   "aciklama": "eROSITA ile liflerdeki ılık-sıcak gaz (Kasım 2024)",
-   "kaynak_url": "https://www.astronomy.com/science/scientists-discover-significant-missing-matter-in-the-gas-between-galaxy-clusters/"
-  }
- ],
- "sozluk": [
-  {
-   "terim": "kozmik ağ",
-   "tanim": "Kümelerin düğüm, liflerin ve duvarların bağlantı olduğu, aralarında dev boşluklar bulunan, evrenin en büyük ölçekli yapısı."
-  },
-  {
-   "terim": "sıfır hız yüzeyi",
-   "tanim": "Bir galaksi grubunun çekiminin evrenin genişlemesini tam dengelediği, grubun kütleçekimsel sınırını belirleyen yüzey."
-  },
-  {
-   "terim": "zamanlama argümanı",
-   "tanim": "Samanyolu ile Andromeda'nın Büyük Patlama'dan bu yana uzaklaşıp geri dönmesi için gereken kütleden Yerel Grup'u tartma yöntemi."
-  },
-  {
-   "terim": "Yerel Levha",
-   "tanim": "Yerel Grup'un içinde bulunduğu, onu kapsayan daha büyük yerel yapı."
-  },
-  {
-   "terim": "tuhaf hız",
-   "tanim": "Bir galaksinin evrenin düzenli genişlemesinden, yani Hubble akışından bağımsız olan kendi hareketi."
-  },
-  {
-   "terim": "Hubble akışı",
-   "tanim": "Galaksilerin evrenin genişlemesi yüzünden uzaklıklarıyla orantılı hızla birbirinden uzaklaşması."
-  },
-  {
-   "terim": "hız dağılımı",
-   "tanim": "Bir kümedeki galaksilerin hızlarının ortalama etrafındaki yayılımı; kümenin kütlesinin ölçüsü (σ)."
-  },
-  {
-   "terim": "küme içi gaz",
-   "tanim": "Galaksi kümelerindeki galaksilerin arasını dolduran, 10⁷–10⁸ kelvin mertebesinde, X-ışını yayan seyrek plazma."
-  },
-  {
-   "terim": "ters Compton saçılması",
-   "tanim": "Düşük enerjili bir fotonun hızlı bir elektrona çarpıp ondan enerji kazanması."
-  },
-  {
-   "terim": "Sunyaev–Zeldovich etkisi",
-   "tanim": "Kozmik arka plan ışımasının küme gazındaki elektronlardan enerji kazanması yüzünden kümenin yönünde düşük frekansta sönük, yüksek frekansta parlak görünmesi."
-  },
-  {
-   "terim": "güçlü mercek",
-   "tanim": "Bir kütlenin arkadaki kaynağın görüntüsünü belirgin yaylara, halkalara ya da çoklu görüntülere dönüştürdüğü kütleçekimsel mercek durumu."
-  },
-  {
-   "terim": "zayıf mercek",
-   "tanim": "Arkadaki galaksilerin görüntülerinin tek tek seçilemeyecek kadar az bozulduğu, ancak istatistikle ölçülebilen kütleçekimsel mercek etkisi."
-  },
-  {
-   "terim": "Einstein yarıçapı",
-   "tanim": "Bir kütleçekimsel merceğin görüntülerinin dizildiği halkanın gökteki açısal yarıçapı; içindeki kütleyi verir."
-  },
-  {
-   "terim": "küme içi ışık",
-   "tanim": "Galaksilerden koparılıp küme içinde serbestçe dolaşan yıldızların yaydığı soluk ışık."
-  },
-  {
-   "terim": "Büyük Çekici",
-   "tanim": "Laniakea'daki galaksilerin hareketlerinin yöneldiği, Cetvel takımyıldızı yönündeki kütleçekim odağı."
-  },
-  {
-   "terim": "Dipol İtici",
-   "tanim": "Galaksilerce çok fakir olduğu için çevresine göre az çeken ve Yerel Grup'u kendisinden uzaklaşıyormuş gibi hareket ettiren geniş düşük yoğunluklu bölge."
-  },
-  {
-   "terim": "çekim havzası",
-   "tanim": "İçindeki galaksilerin tuhaf hızlarının ortak bir odağa aktığı bölge; Laniakea'nın tanımı."
-  },
-  {
-   "terim": "kaçınma bölgesi",
-   "tanim": "Samanyolu diskindeki toz ve yıldızlar yüzünden arkasındaki galaksilerin zor görüldüğü gökyüzü bölgesi."
-  },
-  {
-   "terim": "kırmızıya kayma taraması",
-   "tanim": "Çok sayıda galaksinin kırmızıya kaymasını ölçüp uzaklığa çevirerek üç boyutlu harita çıkaran tarama."
-  },
-  {
-   "terim": "kozmik boşluk",
-   "tanim": "Ortalamanın çok altında yoğunluğa sahip, çok az galaksi içeren dev bölge; Çoban Boşluğu örnektir."
-  },
-  {
-   "terim": "ılık-sıcak galaksiler arası ortam",
-   "tanim": "Galaksiler arası liflerde bulunan, milyonlarca derece sıcaklıkta, metreküpte ortalama yaklaşık 10 parçacıklık seyrek gaz; kayıp baryonların başlıca adayı."
-  },
-  {
-   "terim": "kayıp baryonlar",
-   "tanim": "Evrende bulunması gerektiği bilinen ama yakın evrende yıldız ve görünür gaz olarak sayılamayan sıradan madde."
-  },
-  {
-   "terim": "sayısal benzetim",
-   "tanim": "Maddenin kütleçekimi ve fiziği altında nasıl evrildiğini bilgisayarda çok sayıda parçacık ya da hücreyle hesaplayan model."
-  }
- ],
- "defter_notu": [
-  "Hiyerarşi: grup (onlarca galaksi) → küme (yüzlerce–binlerce) → üstküme → kozmik ağ (düğüm = küme, lif, duvar, boşluk).",
-  "Yerel Grup: iki uçlu halter, ~800 kpc, ~123 km/s yaklaşma, ~2×10¹² M☉. Zamanlama argümanı (Kahn–Woltjer 1959): ≥10 kat görünmeyen kütle; bugün ~5×10¹² M☉ (tartışmalı).",
-  "Başak: Yerel Grup'tan 967 km/s uzaklaşır, Hubble akışından az → Başak bizi çeker (tuhaf hız).",
-  "Kümeyi tartmanın 4 yolu: hız dağılımı (Zwicky 1933; Berenis'in Saçı σ ≈ 1082 km/s), X-ışını gazı (10⁸ K, litrede 1 parçacık), Sunyaev–Zeldovich (217 GHz sıfır; Planck 1653 tespit), mercek (Abell 370, 1987; 39″, 2,8×10¹⁴ M☉).",
-  "Küme bütçesi: ~%90 karanlık madde, ~%10 sıcak gaz, birkaç % yıldız; evrensel sıradan madde payı Ωb/Ωm ≈ 0,157.",
-  "Laniakea (2014): ~160 Mpc, ~10¹⁷ M☉, ~100.000 galaksi, Büyük Çekici (Cetvel yönü); bağlı değil. Hız: Güneş 370, Samanyolu 552, Yerel Grup ~630 km/s; Shapley çeker + Dipol İtici iter (2017).",
-  "Ağ: CfA2 Büyük Duvar 1989; Sloan Büyük Duvarı 2003 (~1,37 milyar ışık yılı, tek yapı mı tartışmalı). Lifler %50 kütle/%6 hacim; boşluklar %15/%78.",
-  "Çoban Boşluğu 1981: yarıçap 62 Mpc, 60 galaksi (beklenen ~2000), ΛCDM ile uyumlu.",
-  "Benzetimler: Millennium 2005 (2160³ parçacık, ~2 milyar ışık yılı küp); IllustrisTNG (TNG50/100/300). Kayıp baryonlar: liflerde ılık-sıcak gaz; eROSITA 2024 ~%20.",
-  "BAO cetveli: 0,14 Mpc × 1090 ≈ 150 Mpc (490 milyon ışık yılı); SDSS ve 2dF 2005. DESI DR1 2025: 18,7 milyon cisim. Euclid: 1 Temmuz 2023, DR1 2027 ortası."
- ],
- "sorular": [
-  {
-   "soru": "Kahn ve Woltjer 1959'da Yerel Grup'un kütlesini nasıl tahmin etti?",
-   "cevap": "Samanyolu ile Andromeda'nın Büyük Patlama'da aynı yerden çıkıp önce uzaklaştığını, sonra kendi çekimleriyle durup bugün neredeyse düz bir çizgide yaklaştığını varsaydılar. Bunun evrenin yaşı içinde olması için gereken kütleyi hesapladılar ve görünenin en az on katı buldular. Bu zamanlama argümanıdır."
-  },
-  {
-   "soru": "Andromeda 800 kiloparsek uzakta ve grup kütlesi 2×10¹² M☉ ise 123 km/s'lik yaklaşma hızı iki galaksinin bağlı olduğunu gösterir mi?",
-   "cevap": "Evet, kaba hesapla. Kurtulma hızı √(2GM/r) ≈ 147 km/s çıkar; ölçülen bağıl hız 123 km/s bundan küçüktür. Hesap kütleyi noktasal sayar ve yan hızı yok sayar."
-  },
-  {
-   "soru": "Yerel Grup ile Başak Kümesi'nin 967 km/s'lik uzaklaşma hızı neden Hubble akışının beklediğinden azdır?",
-   "cevap": "Başak Kümesi'nin kütleçekimi Yerel Grup'u kendine doğru çeker ve genişlemeyle oluşan kaçışı frenler. H0 = 67,4 ile beklenen ~1132, 73 ile ~1226 km/s; fark kabaca 150–250 km/s'lik bir tuhaf hızdır."
-  },
-  {
-   "soru": "Zwicky'nin 1933 sonucunda abartılı olan neydi, doğru çıkan neydi?",
-   "cevap": "Sekiz galaksiden bulduğu ~1019 km/s'lik hız dağılımı, modern 1082 km/s ile uyuşur. Abartı, o dönemin çok büyük Hubble sabiti yüzünden uzaklık ve dolayısıyla kütle–ışık oranındaydı; 400 katlık fazlalık düzeltilince ~50 kat olur, ama yine de görünmeyen kütle gerekir (d17)."
-  },
-  {
-   "soru": "Küme içi gazın sıcaklığı ve yoğunluğu nedir, neden X-ışınında görülür?",
-   "cevap": "Sıcaklığı 10⁸ K mertebesinde, yoğunluğu litre başına yaklaşık 1 parçacıktır. Bu kadar sıcak bir gaz ışımasını ağırlıkla X-ışınlarında yapar; X-ışınları atmosferden geçmediği için uydu gözlemevleri gerekir."
-  },
-  {
-   "soru": "Sunyaev–Zeldovich etkisinde bir küme neden düşük frekansta gölge, yüksek frekansta parlak leke gibi görünür?",
-   "cevap": "Arka plan ışımasının fotonları küme gazının hızlı elektronlarından enerji kazanır (ters Compton saçılması). Fotonlar daha yüksek enerjilere, yani daha yüksek frekanslara kayar: düşük frekansta foton azalır, yüksek frekansta artar; yaklaşık 217 GHz'de etki sıfırdır."
-  },
-  {
-   "soru": "Abell 370'in 1987'de bulunan dev yayı neyin kanıtıydı?",
-   "cevap": "Kütleli galaksi kümelerinin, arkadaki galaksilerin ışığını belirgin yaylara bükecek kadar yoğun olduğunun, yani güçlü kütleçekimsel mercek olabildiklerinin ilk kanıtlarındandı. Yay, z = 0,725'teki bir galaksinin büyütülmüş görüntüsüydü."
-  },
-  {
-   "soru": "Bir zengin kümenin kütlesinin büyük kısmı nedir?",
-   "cevap": "Karanlık maddedir; Berenis'in Saçı için yaklaşık yüzde 90. Sıcak gaz yaklaşık yüzde 10, galaksilerdeki ve galaksiler arasındaki yıldızlar ise daha küçük bir paydır."
-  },
-  {
-   "soru": "Laniakea neden geleneksel anlamda bir üstküme sayılmayabilir?",
-   "cevap": "Çünkü yoğunluğa göre değil, galaksilerin tuhaf hızlarının ortak bir odağa aktığı çekim havzası olarak tanımlandı ve kütleçekimiyle bağlı değildir; karanlık enerji onu gelecekte dağıtacaktır. Bazı çalışmalar bu tür yapılara koza ya da su bölümü havzası der."
-  },
-  {
-   "soru": "Dipol İtici gerçekten itiyor mu?",
-   "cevap": "Hayır. Galaksilerce çok fakir bir bölge çevresine göre daha az çeker; bu yüzden çevresindeki galaksiler, bizim Yerel Grup dahil, ondan uzaklaşıyormuş gibi hareket eder. 2017 çalışmasına göre bulunduğumuz yerde Shapley'nin çekmesi ve bu itme kabaca eşit önemdedir."
-  },
-  {
-   "soru": "Kozmik ağda madde ve hacim nasıl dağılmıştır?",
-   "cevap": "Cautun ve arkadaşlarına göre maddenin yarısı liflerde, yüzde 25'i duvarlarda, yüzde 15'i boşluklarda, yüzde 10'u kümelerdedir. Hacmin ise yüzde 78'i boşluk, yüzde 18'i duvar, yalnız yüzde 6'sı liftir."
-  },
-  {
-   "soru": "Çoban Boşluğu standart kozmolojiyle çelişir mi?",
-   "cevap": "Wikipedia'ya göre hayır. Beklenen ~2000 yerine 60 galaksi içermesine rağmen, daha küçük boşlukların birleşmesiyle oluştuğu düşünülür ve ΛCDM ile uyumludur."
-  },
-  {
-   "soru": "Kayıp baryonlar nerede olabilir ve 2024'te ne bulundu?",
-   "cevap": "Benzetimlere göre büyük kısmı galaksiler arası liflerdeki milyonlarca derecelik seyrek gazdadır. eROSITA verisinde ~8000 lifin sinyali üst üste eklenince bu gaz görüldü; ekip, kayıp maddenin yaklaşık yüzde 20'sini açıklayabileceğini ama belirsizliğin büyük olduğunu söyledi."
-  },
-  {
-   "soru": "Baryon akustik salınımları cetveli nasıl oluştu ve bugün ne uzunluktadır?",
-   "cevap": "Erken evrenin plazmasındaki ses dalgaları, evren ~379.000 yaşındayken ışık maddeden ayrılınca dondu; o anda kabuk yarıçapı ~0,14 Mpc'ydi. Evren 1090 kat genişlediği için bugün ~150 Mpc, yani ~490 milyon ışık yılıdır."
-  },
-  {
-   "soru": "Berenis'in Saçı Kümesi'ni 7×50 dürbünle görebilir misin?",
-   "cevap": "Hayır. Wikipedia'ya göre en parlak sarmal galaksileri 12–14 kadirdir ve 20 cm'den büyük amatör teleskoplarla gözlenebilir. Ama kümenin Samanyolu'nun kuzey kutbuna yakın olduğunu, yani tozun en ince olduğu yöne baktığını bilerek o bölgeye bakabilirsin."
-  }
- ],
- "kaynaklar": [
-  {
-   "ad": "Wikipedia, Local Group",
-   "url": "https://en.wikipedia.org/wiki/Local_Group"
-  },
-  {
-   "ad": "Strigari (2025), Timing Mass of the Local Group, arXiv:2508.18061",
-   "url": "https://arxiv.org/abs/2508.18061"
-  },
-  {
-   "ad": "Wikipedia, Milky Way",
-   "url": "https://en.wikipedia.org/wiki/Milky_Way"
-  },
-  {
-   "ad": "Wikipedia, Coma Cluster",
-   "url": "https://en.wikipedia.org/wiki/Coma_Cluster"
-  },
-  {
-   "ad": "van den Bergh (1999), The early history of dark matter, arXiv:astro-ph/9904251",
-   "url": "https://arxiv.org/abs/astro-ph/9904251"
-  },
-  {
-   "ad": "Cavaliere ve Lapi (2013), The Astrophysics of the Intracluster Plasma, arXiv:1308.6673",
-   "url": "https://arxiv.org/abs/1308.6673"
-  },
-  {
-   "ad": "Gonzalez, Zaritsky ve Zabludoff (2007), A Census of Baryons in Galaxy Clusters and Groups, arXiv:0705.1726",
-   "url": "https://arxiv.org/abs/0705.1726"
-  },
-  {
-   "ad": "Planck Collaboration (2013), Planck 2013 results XX: Cosmology from Sunyaev–Zeldovich cluster counts, arXiv:1303.5080",
-   "url": "https://arxiv.org/abs/1303.5080"
-  },
-  {
-   "ad": "Planck Collaboration (2015), The Second Planck Catalogue of Sunyaev–Zeldovich Sources, arXiv:1502.01598",
-   "url": "https://arxiv.org/abs/1502.01598"
-  },
-  {
-   "ad": "Richard ve ark. (2009), Abell 370 revisited, arXiv:0910.5553",
-   "url": "https://arxiv.org/abs/0910.5553"
-  },
-  {
-   "ad": "Wikipedia, Laniakea Supercluster",
-   "url": "https://en.wikipedia.org/wiki/Laniakea_Supercluster"
-  },
-  {
-   "ad": "Tully ve ark. (2014), The Laniakea supercluster of galaxies, arXiv:1409.0880",
-   "url": "https://arxiv.org/pdf/1409.0880"
-  },
-  {
-   "ad": "ScienceDaily (2017), Dipole Repeller (Hoffman ve ark., Nature Astronomy)",
-   "url": "https://www.sciencedaily.com/releases/2017/01/170130110921.htm"
-  },
-  {
-   "ad": "Wikipedia, CfA Redshift Survey",
-   "url": "https://en.wikipedia.org/wiki/CfA_Redshift_Survey"
-  },
-  {
-   "ad": "Wikipedia, CfA2 Great Wall",
-   "url": "https://en.wikipedia.org/wiki/CfA2_Great_Wall"
-  },
-  {
-   "ad": "Wikipedia, Sloan Great Wall",
-   "url": "https://en.wikipedia.org/wiki/Sloan_Great_Wall"
-  },
-  {
-   "ad": "Cautun ve ark. (2014), Evolution of the cosmic web, arXiv:1401.7866",
-   "url": "https://arxiv.org/abs/1401.7866"
-  },
-  {
-   "ad": "Wikipedia, Boötes Void",
-   "url": "https://en.wikipedia.org/wiki/Bo%C3%B6tes_Void"
-  },
-  {
-   "ad": "BBC Science Focus, The Boötes void",
-   "url": "https://www.sciencefocus.com/space/bootes-void"
-  },
-  {
-   "ad": "van de Weygaert (2016), Voids and the Cosmic Web, arXiv:1611.01222",
-   "url": "https://arxiv.org/abs/1611.01222"
-  },
-  {
-   "ad": "Wikipedia, Millennium Run",
-   "url": "https://en.wikipedia.org/wiki/Millennium_Run"
-  },
-  {
-   "ad": "Virgo Consortium (2005), The Millennium Simulation",
-   "url": "https://virgo.dur.ac.uk/2005/06/02/Millennium/"
-  },
-  {
-   "ad": "Nelson ve ark. (2018), The IllustrisTNG Simulations: Public Data Release, arXiv:1812.05609",
-   "url": "https://arxiv.org/abs/1812.05609"
-  },
-  {
-   "ad": "Haider ve ark. (2016), Large-scale mass distribution in the Illustris simulation, arXiv:1508.01525",
-   "url": "https://arxiv.org/abs/1508.01525"
-  },
-  {
-   "ad": "Astronomy (2024), Scientists discover significant missing matter in the gas between galaxy clusters",
-   "url": "https://www.astronomy.com/science/scientists-discover-significant-missing-matter-in-the-gas-between-galaxy-clusters/"
-  },
-  {
-   "ad": "Wikipedia, Baryon acoustic oscillations",
-   "url": "https://en.wikipedia.org/wiki/Baryon_acoustic_oscillations"
-  },
-  {
-   "ad": "DESI (2025), DR2 results guide",
-   "url": "https://www.desi.lbl.gov/2025/03/19/desi-dr2-results-march-19-guide/"
-  },
-  {
-   "ad": "ScienceDaily (2025), DESI karanlık enerji sonuçları",
-   "url": "https://www.sciencedaily.com/releases/2025/03/250320214311.htm"
-  },
-  {
-   "ad": "ESA Euclid, Timeline",
-   "url": "https://www.cosmos.esa.int/web/euclid/timeline"
-  }
- ]
+  "id": "d49",
+  "unite": "samanyolu",
+  "yeni": true,
+  "baslik": "Galaksi Kümeleri ve Kozmik Ağ",
+  "ozet": "Yerel Grup'tan Başak'a, Berenis'in Saçı Kümesi'nden Laniakea'ya uzanan yapıları ve onları nasıl tarttığımızı öğreneceksin: galaksi hızları, X-ışınında parlayan sıcak gaz, arka plan ışımasındaki Sunyaev–Zeldovich gölgesi ve kütleçekimsel mercek. Sonra lifler, duvarlar ve boşluklardan oluşan kozmik ağa, onu üreten benzetimlere, kayıp baryonlara, baryon akustik salınımlarına ve DESI ile Euclid haritalarına geçeceğiz.",
+  "on_bilgi": [
+    "d47",
+    "d7"
+  ],
+  "bolumler": [
+    {
+      "baslik": "Galaksiler de sürü halinde yaşar",
+      "paragraflar": [
+        "Yıldızlar galaksilerde toplanır; galaksiler de yalnız yaşamaz. d7'de göreceğin gibi onlarca galaksiden oluşan topluluklara grup, yüzlerce ya da binlerce galaksiyi kütleçekimiyle bir arada tutan, araları sıcak gazla dolu topluluklara küme, grupları ve kümeleri içine alan daha büyük yapılara üstküme denir. Samanyolu Yerel Grup'un üyesidir, Yerel Grup Başak Kümesi'nin çevresindeki yapının bir parçasıdır, o da Laniakea adlı daha büyük bir bölgenin içindedir.",
+        "Ama en büyük ölçekte bu basamaklar bile yetersiz kalır. Galaksilerin üç boyutlu haritaları, evrenin kümelerin düğüm, uzun galaksi şeritlerinin lif, geniş galaksi yaprakların duvar olduğu ve aralarında dev boşlukların bulunduğu bir ağa benzediğini gösterir. Buna kozmik ağ denir. Bu derste önce kendi grubumuzu ve kümeleri tartmayı öğreneceğiz: galaksilerin hızlarından, kümeleri dolduran sıcak gazdan, bu gazın kozmik mikrodalga arka plan ışımasına düşürdüğü gölgeden ve ışığı büken kütleçekimsel mercekten. Sonra ağın kendisine geçeceğiz: nasıl haritalandığı, nasıl oluştuğu, bilgisayarda nasıl yeniden üretildiği ve kayıp sıradan maddenin bir bölümünün nerede saklandığı.",
+        "Bir uyarı: bu ölçeklerdeki sayıların çoğu dolaylı ölçümlerden gelir ve kaynaklar arasında çoğu zaman farklıdır. Yapıların sınırları bile tanıma bağlıdır; bir üstkümenin nerede bittiği konusunda gökbilimciler henüz anlaşamıyor. Bu derste sayıları verirken nereden geldiklerini ve ne kadar güvenilir olduklarını da söyleyeceğiz."
+      ],
+      "akilda": "Galaksiler gruplar, kümeler ve üstkümeler halinde toplanır; en büyük ölçekte kümeler düğüm, lifler ve duvarlar bağlantı olan, aralarında boşluklar bulunan bir kozmik ağ oluşturur."
+    },
+    {
+      "baslik": "Yerel Grup'u tartmak: zamanlama argümanı",
+      "paragraflar": [
+        "Wikipedia'ya göre Yerel Grup, iki uçlu bir halter biçimindedir: bir uçta Samanyolu ve uyduları, öbür uçta Andromeda ve uyduları. İki uç yaklaşık 800 kiloparsek ayrıdır ve saniyede yaklaşık 123 km hızla birbirine yaklaşır. Grubun ağırlık merkezi Samanyolu'ndan yaklaşık 450 kiloparsek uzaktadır, yani Andromeda'ya daha yakındır; bu da Andromeda'nın daha kütleli olabileceğini düşündürür. Toplam kütle 2×10¹² Güneş kütlesi mertebesindedir ve merkezden 1 megaparsek içinde bilinen 134 üye vardır, çoğu cüce galaksidir. Grup, Yerel Levha denen daha büyük bir yapının içindedir.",
+        "Bir grubun sınırı nasıl çizilir? Evren genişlerken uzaktaki galaksiler bizden uzaklaşır; grubun kütleçekimi ise yakındakileri bu genel akıştan koparıp geri çeker. İkisinin dengelendiği sınıra sıfır hız yüzeyi denir. Wikipedia'ya göre NGC 3109 ve komşularından oluşan Antlia–Sextans grubu büyük olasılıkla bu yüzeyin dışında kalır, yani Yerel Grup'a bağlı değildir; ama Samanyolu ve Andromeda birleşip kütle yoğunlaştıkça yüzeyin genişlemesiyle bu durum değişebilir.",
+        "1959'da F. D. Kahn ve L. Woltjer grubu zekice bir yolla tarttı. Louis Strigari'nin 2025 derlemesine göre şu basit varsayımları yaptılar: grubun kütlesi Samanyolu ile Andromeda'da toplanmıştır, ikisi neredeyse düz bir çizgide birbirine yaklaşmaktadır ve Büyük Patlama sırasında aynı yerden çıkıp önce uzaklaşmış, sonra kendi çekimleriyle durup geri dönmüşlerdir. Evrenin yaşı içinde bugünkü uzaklığa ve yaklaşma hızına ulaşmak için ne kadar kütle gerektiğini hesapladılar ve galaksilerde görünenin en az on katı görünmeyen madde buldular. Bunu karanlık madde olarak değil, galaksiler arası gaz ve toz olarak yorumladılar; geriye bakınca karanlık maddenin ilk ipuçlarından biriydi. Bu yöntem zamanlama argümanı diye anılır.",
+        "Hesap bugün de kullanılıyor ve hâlâ tartışmalı. Strigari'ye göre Andromeda'nın yan hızının ölçülmesi ve kozmolojik sabitin katkısı, zamanlama kütlesini yaklaşık 5×10¹² Güneş kütlesine çıkarır. Bu değer, Samanyolu ile Andromeda'nın halelerinin toplamından ve başka yöntemlerle bulunan grup kütlelerinden büyük çıkma eğilimindedir. Farkın nedeni bilinmiyor; yazar daha kesin hız ölçümlerinin bu farkı, gruptaki karanlık maddeyi ve hatta yerel kozmolojik değerleri aydınlatabileceğini yazar. Büyük Macellan Bulutu gibi kütleli uyduların etkisi de hesabı karmaşıklaştırıyor.",
+        "Grubun üçüncü büyük üyesi Üçgen Galaksisi'nin kütlesi Wikipedia'ya göre yaklaşık 5×10¹⁰ Güneş kütlesidir. Andromeda'nın uydusu olup olmadığı belli değildir; ikisi arasında yaklaşık 750.000 ışık yılı vardır ve 2 ile 4 milyar yıl önce yaşanan yakın bir geçişin Andromeda'nın diskinde yıldız oluşumunu tetiklediği düşünülür. Balıklar cücesi Andromeda ile Üçgen'e eşit uzaklıktadır ve hangisinin uydusu olduğu bilinmez. Aynı kaynağa göre grup erken evrende daha dağınıktı: Büyük Patlama'dan 700 milyon yıl sonra yaklaşık 7 megaparseklik bir alana yayılmış olduğu düşünülür. Yani bugünkü sıkı mahalle, milyarlarca yıl boyunca kendi kütleçekimiyle büzülerek oluştu."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Andromeda bize bağlı mı?",
+        "metin": "İki cisim kütleçekimiyle bağlıysa aralarındaki bağıl hız, o uzaklıktaki kurtulma hızından küçük olmalıdır: v(kurtulma) = √(2 × G × M / r). M = 2×10¹² Güneş kütlesi = 2×10¹² × 1,988×10³⁰ ≈ 3,98×10⁴² kg. r = 800 kiloparsek = 800.000 × 3,0857×10¹⁶ m ≈ 2,47×10²² m. 2 × 6,674×10⁻¹¹ × 3,98×10⁴² / 2,47×10²² ≈ 2,15×10¹⁰ m²/s²; karekök ≈ 1,47×10⁵ m/s, yani yaklaşık 147 km/s. Ölçülen yaklaşma hızı 123 km/s bundan küçük; yani bu kaba hesapla iki galaksi birbirine bağlıdır. Hesap kütleyi iki noktada toplanmış sayar ve yan hızı yok sayar; zamanlama argümanı bunu evrenin yaşıyla birleştirerek kütleyi tersinden bulur. Birim: km/s."
+      },
+      "akilda": "Yerel Grup, ~800 kiloparsek arayla yaklaşan iki uçlu bir haltere benzer; toplam kütle ~2×10¹² M☉. Kahn ve Woltjer (1959) zamanlama argümanıyla görünenin en az on katı kütle buldu; bugünkü zamanlama kütlesi ~5×10¹² M☉ ve öteki yöntemlerden büyük."
+    },
+    {
+      "baslik": "Başak'a düşüş ve Yerel Levha",
+      "paragraflar": [
+        "Yerel Grup yalnız değildir; bir sonraki büyük komşusu Başak Kümesi'dir. d7'de göreceğin gibi Başak Kümesi yaklaşık 1300, belki 2000'e kadar galaksi içerir ve merkezi yaklaşık 53,8 milyon ışık yılı, yani 16,5 megaparsek uzaktadır. Wikipedia'nın Samanyolu maddesine göre Yerel Grup ile Başak Kümesi evrenin genişlemesiyle birbirinden saniyede yaklaşık 967 km hızla uzaklaşır. Ama bu, maddenin kullandığı 16,8 megaparseklik uzaklıkta beklenenden azdır, çünkü kümenin kütleçekimi bizi kendine doğru çeker. Yani genişleme bizi Başak'tan uzaklaştırırken kütleçekimi bu kaçışı frenliyor. Aynı kaynağa göre Yerel Grup, merkezi Başak Kümesi yakınlarında olan Yerel Üstküme'nin parçasıdır. d7'ye göre kümenin kütlesi, merkezinden 8 dereceye kadar yaklaşık 1,2×10¹⁵ Güneş kütlesidir; yani Yerel Grup'un bütün kütlesinin yüzlerce katı bir kütle, bizi 16 megaparsek öteden çekiyor.",
+        "Bu tür sapmalara tuhaf hız denir: bir galaksinin evrenin düzenli genişlemesinden, yani Hubble akışından ayrılan kendi hareketi. Hubble akışında uzaklaşma hızı uzaklıkla orantılıdır (Hubble–Lemaître yasası, d17). Tuhaf hızlar küçük görünür, ama haritacılık için altın değerindedir: bir bölgedeki galaksilerin hepsi aynı noktaya doğru sapıyorsa orada görünmeyen bir kütle vardır. d7'de değinilen Laniakea üstkümesi tam olarak bu yolla, galaksilerin tuhaf hızlarının haritası çıkarılarak tanımlandı. Hubble sabitinin kesin değeri de tartışmalı olduğu için (Hubble gerilimi, d17) bu sapmanın büyüklüğü de kullanılan değere göre değişir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Başak bizi ne kadar frenliyor?",
+        "metin": "Hubble akışında beklenen hız v = H0 × d. d = 16,8 megaparsek. H0 = 67,4 km/s/Mpc (Planck, d17) ile v ≈ 67,4 × 16,8 ≈ 1132 km/s; H0 = 73 km/s/Mpc (Sefeid merdiveni, d17) ile v ≈ 73 × 16,8 ≈ 1226 km/s. Gözlenen 967 km/s. Fark: 1132 − 967 ≈ 165 km/s ya da 1226 − 967 ≈ 259 km/s. Yani Başak Kümesi'nin kütleçekimi, Yerel Grup'un ondan kaçış hızını saniyede kabaca 150 ile 250 km arasında azaltıyor. Sonucun Hubble sabitine bu kadar duyarlı olması, tuhaf hız ölçümlerinin neden zor olduğunu gösterir. Birim: km/s."
+      },
+      "akilda": "Yerel Grup ile Başak Kümesi ~967 km/s hızla uzaklaşır; bu, Hubble akışının öngördüğünden azdır, çünkü Başak'ın kütleçekimi bizi çeker. Hubble akışından sapmalara tuhaf hız denir ve görünmeyen kütleyi haritalamaya yarar."
+    },
+    {
+      "baslik": "Galaksi kümeleri: Berenis'in Saçı örneği",
+      "paragraflar": [
+        "İyi incelenmiş zengin kümelerden biri Berenis'in Saçı Kümesi'dir; kataloglardaki adı Abell 1656'dır. Wikipedia'ya göre 1000'den fazla tanımlanmış galaksi içerir ve ortalama uzaklığı 99 megaparsek, yani yaklaşık 321 milyon ışık yılıdır. Gökbilim yazınında ilk fark edilen kümelerdendir: William Herschel 1785'te gözle not etmiş, Max Wolf 1901'de fotoğrafla taramıştır. Kümenin tam büyüklüğü ancak 1950'lerde Palomar Gözlemevi'ndeki çalışmalarla anlaşıldı. Küme yalnız da değildir: Aslan Kümesi (Abell 1367) ile birlikte Berenis'in Saçı Üstkümesi'ni oluşturan iki büyük kümeden biridir.",
+        "Kümenin merkezine iki dev eliptik galaksi, NGC 4874 ve NGC 4889, egemendir. Bu zenginlikteki kümelerde olağan olduğu gibi galaksilerin büyük çoğunluğu eliptik ve lentiküler galaksilerdir; az sayıdaki sarmalın çoğu kümenin dış kenarlarına yakındır. Bazı üyeleri ultra yaygın galaksi olarak sınıflanmıştır. Bu dağılım rastlantı değildir: d7'de göreceğin gibi küme ortamı galaksileri değiştirir ve kümelerin kenarlarındaki sarmalların bir bölümü yıldız üretimini bırakmış kırmızı sarmallardır.",
+        "Berenis'in Saçı Kümesi gökte Samanyolu'nun kuzey kutbunun birkaç derece yakınındadır. Bu, gözlem için şanslı bir konumdur: galaksimizin diskine dik bakarız ve d47'de gördüğün toz perdesi en ince yerindedir. Tersine, diskin içinden bakılan yönlerde toz ve yıldızlar uzak galaksileri gizler; gökyüzünün bu bölgesine kaçınma bölgesi denir. Wikipedia'nın Laniakea maddesine göre bazı kümeler ve gruplar tam bu bölgenin arkasında kaldığı için bilinen sayılar gerçeğinden az olabilir."
+      ],
+      "akilda": "Berenis'in Saçı Kümesi (Abell 1656) ~99 megaparsek uzakta, 1000'den fazla galaksili zengin bir kümedir; merkezinde iki dev eliptik vardır, üyelerinin çoğu eliptik ve lentikülerdir. Samanyolu diskinin arkasındaki kaçınma bölgesi bazı yapıları gizler."
+    },
+    {
+      "baslik": "Zwicky'nin hızları ve kümeyi tartmak",
+      "paragraflar": [
+        "Bir kümenin kütlesini ölçmenin ilk yolu, içindeki galaksilerin ne kadar hızlı hareket ettiğine bakmaktır. Mantık şudur: küme dağılmadan bir arada duruyorsa, galaksilerin hızları kümenin kütleçekiminin tutabileceği kadar olmalıdır. Hızlar ne kadar büyükse onları tutmak için o kadar çok kütle gerekir. Hızların dağınıklığına hız dağılımı denir ve σ (sigma) ile gösterilir; tayftaki Doppler kaymasından (d2) her galaksinin bize göre hızı ölçülür, ortalamadan sapmaların büyüklüğü σ'yı verir.",
+        "d17'de göreceğin gibi Fritz Zwicky 1933'te Berenis'in Saçı Kümesi'ndeki sekiz galaksinin hızlarından yaklaşık 1019 ± 360 km/s'lik beklenmedik ölçüde büyük bir hız dağılımı çıkardı ve ışık veren maddenin tutabileceğinden çok daha fazla kütle gerektiğini savundu. Sidney van den Bergh'in 1999 tarihli tarih makalesine göre Zwicky'nin yalnız sekiz galaksiden bulduğu değer, Colless ve Dunn'ın 1996'da ölçtüğü 1082 km/s'lik modern değerle iyi uyuşur. Zwicky'nin abarttığı şey hız değil, o dönemin çok büyük Hubble sabitini (558 km/s/Mpc) kullandığı için kütle–ışık oranıydı. Wikipedia'ya göre bugün Berenis'in Saçı Kümesi'nin kütlesinin yaklaşık yüzde 90'ının karanlık madde olduğu düşünülür. Aynı tarih makalesine göre Smith 1936'da Başak Kümesi'nin de beklenmedik ölçüde kütleli göründüğünü buldu; yani sorun tek bir kümeye özgü değildi.",
+        "Bu yöntemin bir zayıflığı var: küme gerçekten dengede mi? Yakın zamanda bir başka kümeyle çarpışmış ya da hâlâ madde toplayan bir kümede galaksilerin hızları dengeyi yansıtmaz ve kütle yanlış çıkar. Bu yüzden gökbilimciler kümeyi birbirinden bağımsız başka yollarla da tartar: kümeyi dolduran sıcak gazın X-ışınlarıyla, bu gazın arka plan ışımasına bıraktığı izle ve kütleçekimsel mercekle. Yöntemler uyuşursa sonuca güven artar; uyuşmazsa küme hakkında yeni bir şey öğrenilir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Berenis'in Saçı'nı kabaca tartmak",
+        "metin": "Kaba bir mertebe hesabı için d17'deki M ≈ v² × r / G biçimini hız dağılımıyla kullan; çarpan modele göre birkaç kat değişebilir. Wikipedia'ya göre kümenin yaklaşık 800 galaksisi gökte 100 × 100 yay dakikalık bir alandadır. Yarısı 50 yay dakikası, yani 50 / 60 ≈ 0,833° ≈ 0,01454 radyan. 99 megaparsek uzaklıkta bu, 99 × 0,01454 ≈ 1,44 megaparsek eder: R ≈ 1,44 × 3,0857×10²² m ≈ 4,44×10²² m. σ = 1082 km/s = 1,082×10⁶ m/s. M ≈ (1,082×10⁶)² × 4,44×10²² / 6,674×10⁻¹¹ ≈ 7,79×10⁴⁴ kg ≈ 3,9×10¹⁴ Güneş kütlesi. Zengin kümeler için verilen 10¹⁵ Güneş kütlesi mertebesiyle aynı büyüklüktedir. Sonuç: hız dağılımı bir kümenin yüzlerce Samanyolu ağırlığında olduğunu gösterir; birim Güneş kütlesi."
+      },
+      "akilda": "Kümeyi galaksilerin hız dağılımından tartarız: hızlar büyükse kütle büyüktür. Zwicky'nin 1933'te sekiz galaksiden bulduğu ~1019 km/s, modern 1082 km/s ile uyuşur; Berenis'in Saçı kütlesinin ~%90'ı karanlık maddedir. Yöntem kümenin dengede olduğunu varsayar."
+    },
+    {
+      "baslik": "Galaksilerin arasındaki sıcak gaz",
+      "paragraflar": [
+        "Kümelerdeki galaksilerin arası boş değildir. Cavaliere ve Lapi'nin 2013 tarihli derlemesine göre 1971'den beri binlerce kümenin X-ışını gözlemleri, karanlık madde halelerinin derin kütleçekim çukurlarını dolduran büyük miktarda sıcak sıradan madde ortaya çıkardı. Bu küme içi gazın sıcaklığı 10⁸ kelvin mertebesinde, ortalama yoğunluğu ise litre başına yaklaşık 1 parçacıktır. Yazarlara göre kütlesi 10¹⁵ Güneş kütleli bir kümede bu gaz 10¹⁴ Güneş kütlesi kadar tutar. Bu kadar sıcak bir gazda elektronlar atomlardan kopmuştur; gaz, evrendeki en iyi proton–elektron plazması olarak anılır. d7'de Başak Kümesi için verilen 30 milyon kelvin de aynı mertebededir.",
+        "Gaz neden bu kadar sıcak? Kümenin kütleçekim çukuruna düşen gaz hızlanır ve çarpışmalarla bu hareket enerjisi ısıya dönüşür. Derlemeye göre gaz, karanlık madde çukurunda kabaca hidrostatik dengededir: içe çeken kütleçekimini dışa iten gaz basıncı dengeler (aynı denge yıldızları da ayakta tutar, d5). Dışarıdan düşen galaksiler arası gaz, kümenin sınırında süpersonik akışın yarattığı şok dalgalarında ısınır. Bu yüzden X-ışını teleskopları gazın sıcaklığını ve yoğunluğunun merkezden uzaklıkla nasıl değiştiğini ölçünce, gazı yerinde tutmak için gereken toplam kütleyi de hesaplayabilir. Bu, kümeyi tartmanın ikinci bağımsız yoludur.",
+        "Berenis'in Saçı Kümesi bu alanın öncülerindendir. Wikipedia'ya göre küme yönünde genişlemiş bir X-ışını kaynağı 1966'dan önce bir balon uçuşuyla bildirildi; sonra Uhuru uydusu kümenin merkezine yakın güçlü bir X-ışını kaynağı gördü. Kaynağın ışıma gücü saniyede 2,6×10⁴⁴ erg ölçüldü ve yaklaşık 45 yay dakikası genişliğe yayılıyordu; bu kadar geniş olması, ışımanın tek bir galaksiden gelmediğini gösteriyordu. Gonzalez ve arkadaşlarının 2007 çalışmasına göre ise kümeler büyüdükçe kütlenin içinde X-ışını gazının payı artar, yıldızların payı azalır; daha kütleli ortamlarda gaz yıldıza daha az verimli dönüşür.",
+        "Küme gazı durgun bir göl değildir. Cavaliere ve Lapi'nin derlemesine göre merkezde gaz ışıyarak soğurken aktif galaksi çekirdeklerinden ve birleşmelerden gelen aralıklı enerji onu yeniden ısıtır. Dışarıdan düşen galaksi grupları gazı derinden sarsar; benzer kütleli bir başka kümeyle çarpışma ise dengeyi tamamen bozabilir. Bu olaylar sırasında hızlandırılan elektronlar sinkrotron ışımasıyla geniş bir radyo ışıması üretir (sinkrotron ışıması d33'te). Yani X-ışını gaz haritaları ve radyo gözlemleri birlikte, bir kümenin geçmişte nasıl çarpıştığını okumayı sağlar."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Küme gazı ne kadar seyrek?",
+        "metin": "Litre başına 1 parçacık, metreküp başına 1000 parçacık demektir (1 m³ = 1000 litre). Astronomy dergisinin aktardığına göre galaksiler arası liflerdeki ılık-sıcak gazın ortalama yoğunluğu metreküp başına yaklaşık 10 parçacıktır. Oran: 1000 / 10 = 100; yani küme içi gaz, kümeleri birbirine bağlayan liflerdeki gazdan yaklaşık 100 kat yoğundur, ama yine de metreküpte yalnızca bin parçacık içeren son derece seyrek bir ortamdır. Kütle payı: 10¹⁴ / 10¹⁵ = 0,1, yani bu gaz kümenin toplam kütlesinin yaklaşık yüzde 10'udur. Birimler: parçacık/m³ ve oran."
+      },
+      "akilda": "Kümelerde galaksilerin arası 10⁸ K mertebesinde, litrede ~1 parçacıklık seyrek bir plazmayla doludur; 10¹⁵ M☉'lik bir kümede bu gaz ~10¹⁴ M☉ tutar ve X-ışınlarında parlar. Gazın sıcaklığı ve dağılımı kümenin kütlesini verir."
+    },
+    {
+      "baslik": "Sunyaev–Zeldovich etkisi: kümenin arka plan ışımasındaki gölgesi",
+      "paragraflar": [
+        "Kümeleri bulmanın üçüncü yolu, kendi ışıklarına hiç bakmadan, içlerinden geçen eski ışıktan fark etmektir. Kozmik mikrodalga arka plan ışıması (d8) her yönden gelir. Bu ışığın fotonları bir kümenin içinden geçerken sıcak gazın hızlı elektronlarına çarpar ve onlardan enerji kapar; buna ters Compton saçılması denir. Sunyaev ile Zeldovich'in 1969 ve 1970'te öngördüğü bu olaya Sunyaev–Zeldovich etkisi denir.",
+        "Planck iş birliğinin 2013 makalesine göre etkinin imzası belirgindir: arka plan ışımasının düşük frekanslı bölümünde parlaklık sıcaklığı azalır, yüksek frekanslı kuyruğunda artar; yaklaşık 217 gigahertzte etki sıfırdır. Yani küme, düşük frekansta arka plan ışımasında soğuk bir gölge gibi, yüksek frekansta sıcak bir leke gibi görünür. Etkinin büyüklüğü, görüş doğrultusu boyunca gazın basıncının toplamıyla belirlenir; gözlemler ve benzetimler bunun kümenin kütlesinin çok iyi bir göstergesi olduğunu düşündürür.",
+        "Planck uydusu bu yolla bütün gökyüzünü taradı. Planck'ın 2015'te yayımlanan ikinci Sunyaev–Zeldovich kataloğu 1653 tespit içerir; bunların 1203'ü başka verilerle doğrulanmış kümelerdir ve kataloğun saflığı en az yüzde 83'tür. Bu, binden fazla doğrulanmış küme içeren ilk Sunyaev–Zeldovich seçimli taramaydı. Yöntemin bir yararı da, X-ışını taramalarında neredeyse hiç görünmeyen, X-ışınında sönük bazı yakın kümeleri ortaya çıkarmasıdır.",
+        "Planck yalnız değildir: Güney Kutbu Teleskobu (SPT) ve Atacama Kozmoloji Teleskobu (ACT) da büyük Sunyaev–Zeldovich küme örnekleri yayımladı. Planck'ın 2013 makalesine göre Planck'ın bu frekanslardaki ayırma gücü 5 ile 10 yay dakikası, ötekilerinki yaklaşık 1 yay dakikasıdır, ama Planck bütün gökyüzünü kapsar; bu yüzden Planck genellikle daha büyük, daha kütleli ve daha yakın kümeleri bulur, yer teleskopları ise daha küçük ve uzak olanları. Makale, kozmolojik sonuçlardaki belirsizliğe en çok kümelerin özellikleri hakkındaki eksik bilgimizin katkı yaptığını da vurgular. Planck'ın 2013 kozmoloji makalesi, bu kümelerden seçilmiş 189'unun sayısının kırmızıya kaymayla değişiminden evrenin parametrelerini sınadı: belirli bir kütlenin üstündeki kümelerin zamanla ne kadar çoğaldığı, maddenin ne kadar topaklaştığına bağlıdır."
+      ],
+      "ornek": {
+        "baslik": "Örnek: 217 gigahertz hangi dalga boyu?",
+        "metin": "Dalga boyu = ışık hızı / frekans (d2). c = 299.792.458 m/s, f = 217 GHz = 2,17×10¹¹ Hz. λ = 299.792.458 / 2,17×10¹¹ ≈ 1,38×10⁻³ m, yani yaklaşık 1,38 milimetre. Bu, milimetre dalgaları bölgesidir. Etki 1,38 mm'den uzun dalgalarda (217 GHz'den düşük frekansta) bir azalma, kısa dalgalarda bir artış olarak görülür. Bu yüzden birkaç frekansta birden ölçüm yapan Planck gibi aletler kümeyi öteki kaynaklardan ayırabilir. Birim: milimetre."
+      },
+      "akilda": "Arka plan ışımasının fotonları küme gazının elektronlarından enerji kapar (Sunyaev–Zeldovich, 1969–1970): küme düşük frekansta gölge, ~217 GHz'de görünmez, yüksekte parlak leke olur. Planck 2015 kataloğu: 1653 tespit, 1203 doğrulanmış küme."
+    },
+    {
+      "baslik": "Kütleçekimsel mercekle tartmak",
+      "paragraflar": [
+        "d17'de kütlenin ışığın yolunu büktüğünü ve buna kütleçekimsel mercek dendiğini göreceksin. Kümeler, evrendeki en güçlü merceklerdir. Kümenin arkasındaki uzak bir galaksinin ışığı kümenin kütlesi tarafından saptırılır; galaksinin görüntüsü uzayıp yay biçimine girebilir, büyütülebilir, hatta birden çok kopyaya bölünebilir. Buna güçlü mercek denir. Daha uzaktaki galaksilerin hepsinin görüntüsü de çok az, gözle seçilemeyecek kadar basıklaşır; bu küçük bozulmalar binlerce galaksi üzerinden istatistikle ölçülünce kümenin kütle haritası çıkar. Buna zayıf mercek denir. İkisinin de büyük üstünlüğü, kütlenin ışık verip vermemesine bakmamasıdır.",
+        "Kümelerin güçlü mercek olabildiğinin ilk kanıtlarından biri Abell 370 kümesinden geldi. Richard ve arkadaşlarının 2009 makalesine göre 1987'de bu kümede bulunan dev yay, kümenin arkasındaki bir galaksinin uzatılmış görüntüsüydü. Küme kırmızıya kaymada z = 0,375'te, arkadaki galaksi z = 0,725'tedir. Hubble'ın onarımdan sonraki yeni kameralarıyla çekilen görüntüler bu yayın beş görüntülük karmaşık bir yapı olduğunu ve toplamda 32 ± 4 kat büyütüldüğünü gösterdi; on ayrı arka plan galaksisinin birden çok görüntüsü bulundu.",
+        "Bu görüntülerin yeri kümenin kütlesini verir. Arka plandaki kaynaklar z = 2'de olsaydı ortalama Einstein yarıçapı, yani mercek görüntülerinin dizildiği halkanın açısal yarıçapı, 39 ± 2 yay saniyesi olurdu. Bu yarıçapın içindeki kütle 2,82 ± 0,15×10¹⁴ Güneş kütlesi, merkezin 250 kiloparseklik çevresindeki kütle ise 3,8 ± 0,2×10¹⁴ Güneş kütlesi çıktı. Sonuç, Subaru teleskobunun zayıf mercek ölçümleriyle uyuşuyordu. Kütle dağılımı iki tepeliydi ve karanlık madde, X-ışını gazı ve yıldızlar arasında çok küçük bir kayma vardı; hızlar da eklenince Abell 370'in görüş doğrultumuz boyunca birleşen eşit kütleli iki küme olduğu anlaşıldı. Kütlenin gazdan belirgin biçimde ayrıldığı çarpışan küme örneği olan Mermi Kümesi'ni d17'de bulacaksın.",
+        "Mercek bir tartı olmanın yanında doğal bir teleskoptur da. Richard ve arkadaşlarına göre Abell 370'in Einstein yarıçapının çok büyük olması, onu güçlü büyütme sayesinde çok yüksek kırmızıya kaymalı, yani çok uzak ve erken galaksileri aramak için en iyi kümelerden biri yapar. Az önce gördüğün dev yay da 32 kat büyütülmüş bir galaksiydi. Kümenin arkasındaki sönük bir galaksi böyle büyütülünce, teleskobun tek başına seçemeyeceği ayrıntılar görünür hale gelir; teleskop, önündeki kümenin kütlesini kendi merceğine ekler."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Abell 370'in merceği ne büyüklükte?",
+        "metin": "Einstein yarıçapı 39 yay saniyesi. Dolunayın çapı yaklaşık 1896 yay saniyesidir (d7). Oran: 39 / 1896 ≈ 0,021; yani mercek halkasının yarıçapı dolunay çapının yaklaşık elliden biri kadardır, çıplak gözle görülemeyecek kadar küçük. İçindeki kütle 2,82×10¹⁴ Güneş kütlesi; bunu yaklaşık 10¹² Güneş kütlesi kabul edilen Samanyolu'yla karşılaştırırsan 2,82×10¹⁴ / 10¹² ≈ 280 eder. Yani gökte dolunayın elliden biri kadar bir alanın içinde yaklaşık 280 Samanyolu kütlesi var. Birimler: yay saniyesi ve Güneş kütlesi."
+      },
+      "akilda": "Kümeler arkadaki galaksilerin ışığını büker: güçlü mercek yaylar ve çoklu görüntüler, zayıf mercek istatistiksel küçük bozulmalar üretir. Abell 370'in 1987'deki dev yayı ilk kanıtlardandı; Einstein yarıçapı 39″, içindeki kütle 2,8×10¹⁴ M☉."
+    },
+    {
+      "baslik": "Bir kümenin kütle bütçesi",
+      "paragraflar": [
+        "Üç bağımsız tartı yöntemi bir araya gelince bir kümenin içinde ne olduğu görülür. Wikipedia'ya göre Berenis'in Saçı Kümesi'nin kütlesinin yaklaşık yüzde 90'ı karanlık maddedir. Cavaliere ve Lapi'nin sayılarına göre küme içi sıcak gaz toplam kütlenin kabaca onda biridir. Galaksilerdeki yıldızlar ise daha da küçük bir paydır. Yani galaksi kümesi denen şeyin kütlesinde galaksilerin payı en küçüğüdür; küme aslında sıcak gaz ve karanlık maddeden oluşan bir çukura serpiştirilmiş galaksilerdir.",
+        "Yıldızların bir kısmı galaksilerin dışında bile durur. Gonzalez ve arkadaşlarının 2007 çalışması, galaksilerden koparılıp küme içinde serbestçe dolaşan yıldızların yaydığı küme içi ışığı da hesaba kattı. Kümenin en parlak merkez galaksisi ile bu küme içi ışık birlikte, belirli bir yarıçapın içinde toplam yıldız ışığının ortalama yüzde 33 ile 40'ını veriyordu. Daha şaşırtıcı olanı, büyük bir merkez galaksi ve küme içi ışık bileşeni taşıyan düşük kütleli grupların da bulunmasıydı: galaksiler arası serbest yıldızların oluşması için dev bir küme ortamı gerekmiyor. Aynı çalışmaya göre 6×10¹³ ile 10¹⁵ Güneş kütlesi arasındaki sistemlerde sıradan maddenin kütle payı sabittir; görünmeyen ek bir sıradan madde bileşeni için zorlayıcı bir kanıt yoktur.",
+        "Bu sayı evrenin geneliyle karşılaştırılabilir. Gonzalez ve arkadaşları kümelerde buldukları sıradan madde payını WMAP uydusunun evren için verdiği değerle karşılaştırdı: küme değeri biraz düşüktü, ama fark gözlem belirsizlikleri ve benzetimlerin öngördüğü, kümenin iç bölgesinden bir miktar sıradan madde kaybı kadardı. Yani kümeler evrenin genel madde karışımını büyük ölçüde yansıtır. Bu, kozmolojinin bağımsız bir sağlamasıdır; aşağıdaki örnekte d17'deki Planck değerleriyle kendin karşılaştırabilirsin."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Evrende sıradan maddenin payı ne kadar?",
+        "metin": "d17'deki Planck 2018 değerleri: sıradan madde Ωb ≈ 0,0493, toplam madde Ωm ≈ 0,315. Sıradan maddenin maddeye oranı: 0,0493 / 0,315 ≈ 0,157, yani yaklaşık yüzde 15,7. Aynı sonucu Ωb h² = 0,02237 ve Ωc h² = 0,1200 ile de bulursun: 0,02237 / (0,02237 + 0,1200) ≈ 0,157. Bir zengin kümede gaz kabaca yüzde 10, yıldızlar da birkaç yüzde ise toplam sıradan madde yüzde 15 dolayına çıkar ve evrensel değere yaklaşır. Gonzalez ve arkadaşları kendi kümelerinde biraz daha düşük bir pay buldu ama farkı gözlem belirsizlikleri ve benzetimlerin öngördüğü küçük kayıplar içinde değerlendirdi. Birim: oran."
+      },
+      "akilda": "Bir zengin kümede kütlenin ~%90'ı karanlık madde, ~%10'u sıcak gaz, yıldızlar daha az; yıldız ışığının %33–40'ı merkez galaksi ve galaksiler arası yıldızlardan gelir. Kümelerdeki sıradan madde payı evren ortalamasına yakındır."
+    },
+    {
+      "baslik": "Laniakea, Büyük Çekici ve Dipol İtici",
+      "paragraflar": [
+        "d7'de tanıyacağın Laniakea üstkümesi, 2014'te Brent Tully, Hélène Courtois, Yehuda Hoffman ve Daniel Pomarède'nin galaksilerin tuhaf hızlarını haritalayarak tanımladığı bölgedir; makaleye göre çapı yaklaşık 160 megaparsek, kütlesi yaklaşık 10¹⁷ Güneş kütlesidir. Wikipedia'ya göre Samanyolu'yla birlikte yaklaşık 100.000 galaksiyi barındırır ve 300 ile 500 bilinen küme ve grup içerir; gerçek sayı daha büyük olabilir, çünkü bazıları kaçınma bölgesinin arkasındadır. Yeni tanıma göre üstküme, içindeki galaksilerin hareketlerinin ortak bir merkeze doğru aktığı bir çekim havzasıdır. Bu odak noktasına Büyük Çekici denir ve gökte Cetvel takımyıldızı yönündedir. Wikipedia'ya göre Laniakea, daha önce ayrı tanımlanan Başak üstkümesini ve Suyılanı–Erboğa üstkümesini kendi uzantıları olarak içine alır; en kütleli kümeleri arasında Başak, Suyılanı, Erboğa, Ocak, Irmak, Yılancı ve Cetvel kümeleri sayılır.",
+        "Laniakea'nın kütleçekimiyle bağlı bir yapı olmadığını da bilmek gerekir: Wikipedia'ya göre karanlık enerji onu gelecekte parçalayacaktır. Tanım da tartışmalıdır; sonraki çalışmaların bir kısmı üstküme adını geleneksel olarak yüksek yoğunluklu bölgelere saklayıp Laniakea gibi havzalara koza ya da su bölümü havzası gibi adlar verdi, bazıları ise üstküme sözcüğünü hiç kullanmadı. Gökbilimciler arasında üstkümenin kabul görmüş tek bir tanımı yok.",
+        "Peki biz ne kadar hızlı ve nereye gidiyoruz? Sayı, neye göre ölçtüğüne bağlıdır. d8'e göre Güneş, kozmik mikrodalga arka plan ışımasına göre saniyede yaklaşık 370 km hızla gider. Wikipedia'ya göre Samanyolu'nun bütünü bu ışımaya göre saniyede 552 ± 6 km hızla, Suyılanı takımyıldızının ortası yakınlarına doğru gider; farkın kaynağı, Güneş'in galaksi merkezi çevresindeki kendi dönüşüdür; iki hız farklı yönlere baktığı için vektör olarak toplanır. ScienceDaily'nin 2017 haberine göre Samanyolu ile Andromeda, yani Yerel Grup'un iki büyük galaksisi, genişleyen evrene göre saniyede yaklaşık 630 km hızla hareket eder.",
+        "Bu hareketi ne yaratıyor? Hoffman, Pomarède, Tully ve Courtois'nın 2017'de Nature Astronomy'de yayımlanan çalışmasına göre iki etki birlikte çalışır: iki düzineden fazla zengin kümeden oluşan Shapley Yoğunlaşması bizi kendine çeker, daha önce tanımlanmamış, galaksilerce çok fakir geniş bir düşük yoğunluklu bölge de bizi iter. Bu itici bölgeye Dipol İtici adı verildi. Yazarlara göre bulunduğumuz yerde çekme ile itme kabaca eşit önemdedir. Boş bölge aslında itmez; yalnız çevresine göre daha az çeker, bu yüzden madde ondan uzaklaşıyormuş gibi görünür."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Saniyede 630 km ne demek?",
+        "metin": "Bir yılda: 630 km/s × 3,156×10⁷ s ≈ 1,99×10¹⁰ km. Bir astronomik birim 1,496×10⁸ km olduğundan bu ≈ 133 AB eder; yani Yerel Grup her yıl Güneş–Dünya uzaklığının 133 katı yol alır. Işık hızına oranı: 630 / 299.792 ≈ 0,0021. Bir milyon yılda ışık bir milyon ışık yılı gittiğine göre Yerel Grup bir milyon yılda 0,0021 × 1.000.000 ≈ 2100 ışık yılı yol alır. Laniakea'nın 160 megaparseklik, yaklaşık 520 milyon ışık yıllık çapıyla karşılaştırınca bu hızla bile üstkümeyi geçmek yüz milyarlarca yıl sürerdi. Birimler: AB/yıl ve ışık yılı/milyon yıl."
+      },
+      "akilda": "Laniakea (2014): ~160 megaparseklik, ~100.000 galaksili bir çekim havzası; odağı Cetvel yönündeki Büyük Çekici; bağlı değildir ve tanımı tartışmalıdır. Güneş arka plan ışımasına göre ~370, Samanyolu ~552, Yerel Grup ~630 km/s hızla gider; bunu Shapley'nin çekmesi ve Dipol İtici'nin itmesi birlikte yaratır."
+    },
+    {
+      "baslik": "Kozmik ağ: duvarlar ve lifler",
+      "paragraflar": [
+        "Galaksilerin üç boyutlu dağılımını görmek için her birinin uzaklığını bilmek gerekir. Gökbilimciler bunun için galaksinin tayfındaki kırmızıya kaymayı ölçer ve Hubble–Lemaître yasasıyla uzaklığa çevirir; buna kırmızıya kayma taraması denir. Wikipedia'ya göre bu iş için ilk girişim olan Harvard–Smithsonian Astrofizik Merkezi taraması 1977'de başladı ve ilk evresi 1982'de tamamlandı. John Huchra ve Margaret Geller'in 1985'te başlattığı ikinci tarama, 1995'e kadar kuzey gökyüzündeki 18.000 parlak galaksinin kırmızıya kaymasını ölçtü. Sonuç şaşırtıcıydı: galaksiler düzgün dağılmamıştı, boş bölgelerin çevresindeki yüzeylerde toplanmıştı.",
+        "Bu taramanın 1989'da ortaya çıkardığı yapı Büyük Duvar adını aldı. Wikipedia'nın aktardığı bir betimlemeye göre bu yapı yaklaşık 300 milyon ışık yılı genişliğinde, 15 milyon ışık yılı kalınlığında ve en az 500 milyon ışık yılı boyunca uzanır. Ne kadar uzadığı bilinmiyor, çünkü bir bölümü Samanyolu'nun diskinin arkasında, kaçınma bölgesinde kalır.",
+        "20 Ekim 2003'te Princeton Üniversitesi'nden J. Richard Gott ile Mario Jurić ve arkadaşları, Sloan Dijital Gökyüzü Taraması verisinde daha da büyük bir yapı duyurdu: yaklaşık 1,37 milyar ışık yılı uzunluğundaki, bizden yaklaşık bir milyar ışık yılı uzaktaki Sloan Büyük Duvarı. Wikipedia'ya göre CfA2 Büyük Duvarı'ndan 1,8 ile 2,7 kat uzundur, gözlenebilir evrenin çapının yaklaşık altmışta biri kadardır ve en zengini SCl 126 olan birkaç üstküme içerir. 2011'de bunun tek bir yapı değil, rastlantıyla aynı doğrultuya düşmüş üç yapı olabileceği öne sürüldü. Aynı kaynak Sloan Büyük Duvarı'ndan da büyük olduğu öne sürülen birkaç yapı sayar; bunların arasında büyük kuasar grupları ve Herkül–Kuzeytacı Büyük Duvarı denen bir galaksi lifi vardır. Bu kadar büyük yapıların gerçekten tek parça olup olmadığı, Sloan Büyük Duvarı örneğinde olduğu gibi, istatistikle dikkatle sınanması gereken bir sorudur.",
+        "Ağın parçaları kütle ve hacim bakımından çok farklı paylara sahiptir. Cautun ve arkadaşlarının 2014'teki büyük benzetim çözümlemesine göre bugün evrendeki maddenin yarısı liflerde, yüzde 25'i duvarlarda, yüzde 15'i boşluklarda, yüzde 10'u küme bölgelerindedir. Hacimde tablo tersine döner: boşluklar hacmin yüzde 78'ini, duvarlar yüzde 18'ini, lifler yalnızca yüzde 6'sını kaplar; kümelerin hacmi önemsizdir. Madde boşluklardan duvarlara, oradan liflerle kümelere, yani ağın düğümlerine doğru akar. Aynı çalışma kütleli kümeleri birbirine köprüleyen, 100 megaparsekten uzun, neredeyse düz lifler de buldu."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Lifler ne kadar yoğun?",
+        "metin": "Cautun ve arkadaşlarına göre lifler maddenin yüzde 50'sini hacmin yüzde 6'sında taşır. Ortalama yoğunluğun kaç katı olduklarını kabaca bulmak için kütle payını hacim payına böl: 0,50 / 0,06 ≈ 8,3. Boşluklar için 0,15 / 0,78 ≈ 0,19; yani boşluklar ortalamanın yaklaşık beşte biri yoğunluktadır. Çalışmanın kendi hesabı da boşlukların ortalama yoğunluğunu ortalamanın 0,2 katı, liflerin bugünkü yoğunluk fazlasını ortalamanın yaklaşık 10 katı mertebesinde verir; kaba oranlarımız bunlarla uyumludur. Duvarlar için 0,25 / 0,18 ≈ 1,4, yani ortalamaya yakın. Birim: ortalama yoğunluğun katı."
+      },
+      "akilda": "Kırmızıya kayma taramaları (CfA 1977, CfA2 1985–1995) galaksilerin boşlukları saran yüzeylerde toplandığını gösterdi: Büyük Duvar (1989), Sloan Büyük Duvarı (2003, ~1,37 milyar ışık yılı; tek yapı olup olmadığı tartışmalı). Lifler maddenin yarısını taşır ama hacmin %6'sını kaplar; boşluklar hacmin %78'idir."
+    },
+    {
+      "baslik": "Boşluklar: Çoban Boşluğu",
+      "paragraflar": [
+        "Ağın en büyük hacmini kaplayan boşluklar tamamen boş değildir, yalnızca çok seyrektir. Bilinen en büyük boşluklardan biri, Çoban takımyıldızı yönündeki Çoban Boşluğu'dur. Wikipedia'ya göre 1981'de Robert Kirshner tarafından, evrenin büyük ölçekli yapısını haritalamak için yapılan bir kırmızıya kayma taramasında bulundu. Kabaca küre biçimlidir, yarıçapı 62 megaparsek, yani yaklaşık 200 milyon ışık yılıdır ve merkezi bizden yaklaşık 700 milyon ışık yılı uzaktadır. Popüler kaynaklar çapını çoğu zaman 330 milyon ışık yılı olarak verir; boşluğun sınırı tanıma bağlı olduğu için sayılar kaynaktan kaynağa değişir.",
+        "Boşluk yalnız 60 galaksi içerir; bu büyüklükte sıradan bir bölgede yaklaşık 2000 galaksi beklenirdi. Bu yüzden süper boşluk diye anılır. Yine de Wikipedia'ya göre varlığı standart kozmoloji modeliyle, yani ΛCDM ile çelişmez: daha küçük boşlukların birleşmesiyle oluştuğu düşünülür ve bu, merkezinden geçen kabaca silindir biçimli bir bölgedeki az sayıdaki galaksiyi de açıklayabilir. Kenarında Herkül üstkümeleri, arkasında Kuzeytacı üstkümesi bulunur. Abell 1749 ve Abell 2022 kümeleri boşluğun hemen dışındadır.",
+        "Boşlukların bilimsel değeri büyüktür. van de Weygaert'in 2016 derlemesine göre boşluklar kozmik ağın temel bileşenlerinden biridir ve evrenin genel parametrelerinin en temiz ölçülerinden birini sağlar; biçimleri ve evrimleri karanlık enerjinin doğasına çok duyarlıdır, içlerindeki galaksiler de karanlık maddenin niteliğine ışık tutar. Boşlukların içi, el değmemiş bir ortam olduğu için çevrenin galaksi evrimine etkisini sınamak için de iyi bir laboratuvardır."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Çoban Boşluğu ne kadar boş?",
+        "metin": "Beklenen 2000 galaksi yerine 60 galaksi: 60 / 2000 = 0,03, yani yalnızca yüzde 3. Hacmi: yarıçap 62 megaparsekse V = 4/3 × π × 62³ ≈ 4/3 × 3,1416 × 238.328 ≈ 998.000 megaparsek küp, yani yaklaşık bir milyon megaparsek küp. Bu hacme 60 galaksi düşünce galaksi başına yaklaşık 998.000 / 60 ≈ 16.600 megaparsek küp düşer; bir galaksinin komşusuna ortalama uzaklığı kabaca bu hacmin küp kökü, yani yaklaşık 25 megaparsek, 80 milyon ışık yılı mertebesindedir. Karşılaştır: Samanyolu'nun en yakın büyük komşusu Andromeda 2,5 milyon ışık yılı uzaktadır. Birimler: oran ve megaparsek."
+      },
+      "akilda": "Çoban Boşluğu (1981, Kirshner): yarıçapı ~62 megaparsek, ~700 milyon ışık yılı uzakta; beklenen ~2000 yerine yalnız 60 galaksi. ΛCDM ile çelişmez, küçük boşlukların birleşmesiyle oluşmuş olabilir. Boşluklar karanlık enerji ve karanlık madde için temiz bir laboratuvardır."
+    },
+    {
+      "baslik": "Ağ nasıl oluştu? Evreni bilgisayarda büyütmek",
+      "paragraflar": [
+        "Bu dev yapıların tohumları evrenin ilk anlarındadır. d8'de göreceğin kozmik mikrodalga arka plan ışıması, evrenin o zamanki yoğunluk farklarını gösterir. Wikipedia'nın baryon akustik salınımları maddesine göre WMAP haritası bu farkların milyonda 10 düzeyinde olduğu, neredeyse düzgün bir evren gösterir; oysa bugün galaksiler evrenin ortalama yoğunluğundan bir milyon kat yoğundur.",
+        "Yaygın görüşe göre evren aşağıdan yukarıya kuruldu: biraz yoğun bölgeler çevrelerinden daha çok madde çekti ve farklar büyüdü. Karanlık madde bu büyümenin iskeletini oluşturur; Büyük Duvar gibi yapılar karanlık maddenin ağ biçimli dizilerini izler ve sıradan madde onların üzerinde toplanır. Cautun ve arkadaşlarına göre erken evrene ince ve çok sayıda lif egemendi; zamanla bunlar birleşerek bugünkü daha az ama çok daha kütleli yapılara dönüştü. Büyük Duvar keşfedildiğinde gökbilimcileri şaşırtmıştı, çünkü Wikipedia'nın CfA taraması maddesine göre boyutu, evrenin başından beri kütleçekimsel çöküşle oluşabilecek olandan büyük görünüyordu. O zamandan beri bu tür üstkümeler, evrenin ilk anlarındaki şişme döneminde doğan kuantum dalgalanmalarının büyümüş izleri olarak anlatılır (ilk anlar d8'de).",
+        "Bu süreci kâğıt kalemle izlemek pratikte olanaksızdır; gökbilimciler onu bilgisayarda büyütür. Virgo Consortium'un 2005'te Volker Springel ve arkadaşlarıyla Nature'da yayımladığı Millennium Benzetimi bunun dönüm noktasıydı: 10 milyardan fazla parçacık, yani 2160³ parçacık, her biri yaklaşık bir milyar Güneş kütlesi karanlık maddeyi temsil ediyordu. Kenarı yaklaşık 2 milyar ışık yılı olan bir küpte yaklaşık 20 milyon galaksi üretildi. Hesap Garching'deki Max Planck Astrofizik Enstitüsü'nde 512 işlemcili bir kümede 28 gün, toplam yaklaşık 343.000 işlemci saati sürdü. 2009'daki Millennium-II aynı sayıda parçacığı kenarı yaklaşık 400 milyon ışık yılı olan daha küçük bir küpe koydu; her parçacık 6,9 milyon Güneş kütlesiydi. 2010'daki Millennium-XXL ise kenarı 13 milyar ışık yılını aşan bir küpü, her biri yaklaşık 7 milyar Güneş kütlesi olan parçacıklarla doldurdu. Küçük kutu ayrıntı, büyük kutu ise nadir dev yapıları yakalamak içindir.",
+        "Millennium'un parçacıkları yalnız karanlık maddeyi temsil ediyordu. IllustrisTNG projesi bir adım öteye gitti. 2018 sonunda bütün verisi açılan bu benzetimler karanlık maddeyi, kozmik gazı, yıldızları ve süper kütleli kara delikleri, manyetik alanlarla birlikte, erken evrenden bugüne kendi içinde tutarlı biçimde çözer. Üç ana benzetimin adı, kutularının kenar uzunluğunu megaparsek cinsinden verir: TNG50, TNG100 ve TNG300. Açık veri yaklaşık 1,1 petabayttır.",
+        "Bu benzetimler gözlemle karşılaştırılabilecek öngörüler üretir. Haider ve arkadaşlarının önceki Illustris benzetimi üzerine 2016 çalışmasına göre bugün karanlık maddenin yüzde 49'u ve sıradan maddenin yüzde 23'ü halelerde, karanlık maddenin yüzde 45'i ve sıradan maddenin yüzde 46'sı liflerde bulunur; sıradan maddenin yüzde 31'i ise boşluklardadır ve çoğu oraya aktif galaksi çekirdeklerinin geri beslemesiyle itilmiştir. Sıcaklık ve yoğunluğa göre sınıflanınca sıradan maddenin yüzde 17,8'i yoğunlaşmış halde, yüzde 21,6'sı soğuk ve yaygın gazda, yüzde 53,9'u ise aşağıda göreceğin ılık-sıcak gazdadır. Yazarlar bu benzetimdeki geri beslemenin büyük haleler için fazla güçlü olduğunu, bu yüzden boşluklardaki payı büyük olasılıkla abarttıklarını kendileri not eder."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Millennium kutusunda ne kadar kütle var?",
+        "metin": "Parçacık sayısı 2160³ = 2160 × 2160 × 2160 = 10.077.696.000, yani yaklaşık 1,01×10¹⁰. Her biri yaklaşık 10⁹ Güneş kütlesi temsil ettiğine göre toplam karanlık madde ≈ 1,01×10¹⁰ × 10⁹ ≈ 10¹⁹ Güneş kütlesi. Samanyolu'nun ~10¹² Güneş kütlesiyle karşılaştırınca bu, yaklaşık 10 milyon Samanyolu kütlesi eder. Laniakea'nın ~10¹⁷ Güneş kütlesiyle karşılaştırınca kutu kabaca 100 Laniakea kütlesi taşır. Bir parçacığın bir milyar Güneş kütlesi olması, Samanyolu büyüklüğünde bir halenin yalnızca bin kadar parçacıkla temsil edildiği anlamına gelir; bu yüzden küçük galaksilerin ayrıntısı bu benzetimde görülemez. Birim: Güneş kütlesi."
+      },
+      "akilda": "Ağ, arka plan ışımasındaki milyonda 10'luk farkların karanlık madde iskeleti üzerinde büyümesiyle oluştu. Millennium (2005): 2160³ ≈ 10 milyar parçacık, ~2 milyar ışık yılı küp, ~20 milyon galaksi. IllustrisTNG (TNG50/100/300): gaz, yıldız, kara delik ve manyetik alanlarla."
+    },
+    {
+      "baslik": "Kayıp baryonlar: ağın sıcak gazı",
+      "paragraflar": [
+        "Evrendeki sıradan maddenin, gökbilimcilerin diliyle baryonların, toplam miktarını Planck ölçümlerinden ve ilk çekirdeklerin bolluğundan biliyoruz (d17). Ama yakın evrende yıldızları, galaksilerdeki gazı ve kümelerdeki sıcak gazı toplayınca bu miktarın tamamı çıkmaz. Wikipedia'nın Samanyolu maddesi, birkaç milyar yaşındaki evrende sıradan maddenin karanlık maddenin altıda biri kadar olduğunu, ama bugünkü yakın galaksilerde bu baryonların yalnız yaklaşık yarısının hesaba katılabildiğini yazar. Eksik kısma kayıp baryonlar denir. d47'de gördüğün Samanyolu'nun sıcak gaz halesi bunların bir bölümü olabilir. O halenin kütlesinin gözlemlere göre neredeyse galaksinin kendi kütlesi kadar olduğunu hatırla; doğrulanırsa, Wikipedia'ya göre Samanyolu çevresindeki kayıp baryonların kimliği bu gaz olabilir.",
+        "Benzetimler kayıp baryonların çoğunun nerede olduğunu öngörür: galaksiler arası liflerde, milyonlarca derece sıcaklıkta ama çok seyrek bir gaz halinde. Buna ılık-sıcak galaksiler arası ortam denir. Haider ve arkadaşlarının Illustris çözümlemesine göre baryonların yüzde 53,9'u bu durumdadır. Böyle bir gaz çok az ışık yaydığı için onu görmek son derece zordur. Astronomy dergisinin aktardığına göre bu ortamın ortalama yoğunluğu metreküp başına yalnızca yaklaşık 10 parçacıktır.",
+        "Kasım 2024'te Astronomy & Astrophysics'te yayımlanan bir çalışma bu gazı yakalamaya yaklaştı. Astronomy dergisinin haberine göre Max Planck Dünya Dışı Fizik Enstitüsü'nden Xiaoyuan Zhang ve Esra Bulbul'un da aralarında bulunduğu ekip, eROSITA X-ışını teleskobunun verisinde kümeleri birbirine bağlayan yaklaşık 8000 gaz lifinin sinyalini üst üste ekledi. Bazıları 65 milyon ışık yılına uzanan bu liflerde gaz yaklaşık 5,6 milyon santigrat derecedeydi. Ekip, bu ortamın evrendeki kayıp sıradan maddenin yaklaşık yüzde 20'sini açıklayabileceğini tahmin etti, ama belirsizliğin büyük olduğunu vurguladı. Yani kayıp baryonların izi bulunmaya başladı, hesap henüz kapanmadı."
+      ],
+      "akilda": "Yakın evrende sayılan sıradan madde, beklenenin ancak yaklaşık yarısıdır. Benzetimlere göre eksik baryonların çoğu liflerdeki milyonlarca derecelik seyrek gazdadır (Illustris: %53,9). eROSITA 2024: ~8000 lif üst üste eklenerek bu gazın kayıp maddenin ~%20'sini açıklayabileceği bulundu; belirsizlik büyük."
+    },
+    {
+      "baslik": "Ağın cetveli: baryon akustik salınımları ve büyük haritalar",
+      "paragraflar": [
+        "d8'de göreceğin gibi erken evrenin sıcak plazmasında kütleçekimi ile ışığın basıncı birbirine karşı koyarak ses dalgalarına benzer salınımlar yarattı. Wikipedia'ya göre bu dalgalar ışık hızının yarısından biraz fazla bir hızla yayıldı. Evren yaklaşık 379.000 yaşındayken, kırmızıya kayma z = 1089'da, plazma soğuyup nötr atomlar oluşunca ışık maddeden ayrıldı, basınç kalktı ve dalgalar oldukları yerde dondu. O anda her yoğunluk tohumunun çevresinde yaklaşık 0,14 megaparsek yarıçaplı bir sıradan madde kabuğu kalmıştı. Evren o zamandan beri genişlediği için bu ölçek bugün yaklaşık 150 megaparsek, yani 490 milyon ışık yılıdır. Sonuç: galaksi çiftleri arasında bu uzaklık başka uzaklıklara göre biraz daha sık görülür.",
+        "Bu ölçeğe baryon akustik salınımları cetveli denir. Tek bir kabuk gözle seçilemez, çünkü evrende üst üste binmiş sayısız kabuk vardır; havuza atılan çok sayıda çakıl taşının dalgaları gibi. İşaret ancak çok sayıda galaksinin aralıkları istatistikle çözümlenince ortaya çıkar. Sloan Dijital Gökyüzü Taraması ekibi bunu 2005'te 3816 derece karelik bir alandaki 46.748 parlak kırmızı galaksiyle, z = 0,47'ye kadar yaptı; aynı yıl 2dF taraması da işareti bildirdi. Cetvelin bugünkü uzunluğu kozmik arka plan ışımasından da çok hassas ölçüldüğü için, farklı zamanlardaki uzunluğu evrenin genişleme tarihini ve karanlık enerjiyi sınar. 2023'te bir ekip, Çoban üstkümesini, Sloan Büyük Duvarı'nı, CfA2 Büyük Duvarı'nı ve Herkül üstkümelerini içeren tek bir dev kabuk bulduğunu öne sürdü ve ona Ho'oleilana adını verdi; bu iddia henüz yerleşmiş değildir.",
+        "Bugünün haritacıları çok daha büyük ölçekte çalışıyor. DESI'nin, yani Karanlık Enerji Tayf Aleti'nin 19 Mart 2025'te herkese açtığı ilk veri sürümü 18,7 milyon cismin kırmızıya kaymasını içerir: 13,1 milyon galaksi, 1,6 milyon kuasar ve 4 milyon yıldız. Aynı gün açıklanan ve ilk üç yılın, birinci sürümün iki katından fazla verisine dayanan baryon akustik salınımı sonuçları, karanlık enerjinin zamanla değiştiğine dair ipuçlarını güçlendirdi; d17'ye göre bu ipuçlarının anlamlılığı veri birleşimine göre 2,8 ile 4,2 sigma arasındadır ve keşif sayılan 5 sigmaya ulaşmamıştır. d17'nin kaynaklarına göre DESI, Arizona'daki Kitt Peak'te 4 metrelik Mayall Teleskobu'na takılıdır ve üç yıllık harita yaklaşık 15 milyon galaksi ve kuasarla evrenin son 11 milyar yılını kapsar. ESA'nın Euclid uzay teleskobu 1 Temmuz 2023'te fırlatıldı, asıl taramasına 14 Şubat 2024'te başladı ve ilk hızlı veri sürümünü 19 Mart 2025'te yayımladı; ilk büyük veri sürümü 2027 ortası için planlanıyor."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Donmuş kabuk ne kadar büyüdü?",
+        "metin": "Saydamlaşma anında kabuğun yarıçapı yaklaşık 0,14 megaparsek, kırmızıya kayma z = 1089. Evren o zamandan beri 1 + z = 1090 kat genişledi (d17). Bugünkü yarıçap ≈ 0,14 × 1090 ≈ 153 megaparsek. Kaynakta verilen yaklaşık 150 megaparsekle uyuşur. Işık yılına çevirmek için 1 parsek ≈ 3,2616 ışık yılı: 150 megaparsek ≈ 150 × 3,2616 ≈ 489 milyon ışık yılı, yani kaynaktaki 490 milyon ışık yılı. Karşılaştır: bu bir yarıçaptır, yani kabuğun çapı yaklaşık 300 megaparsektir; Laniakea'nın çapı ise yaklaşık 160 megaparsektir. Tek bir donmuş ses dalgası kabuğu, bütün üstkümemizden büyüktür. Birim: megaparsek."
+      },
+      "akilda": "Erken evrenin donmuş ses dalgaları galaksilerin dağılımına ~150 megaparseklik (490 milyon ışık yılı) bir cetvel bıraktı; SDSS ve 2dF 2005'te buldu. DESI DR1 (Mart 2025): 18,7 milyon cisim; DR2 karanlık enerjinin değişebileceği ipucunu güçlendirdi (5σ değil). Euclid 2023'te fırlatıldı, DR1 2027 ortası."
+    },
+    {
+      "baslik": "İstanbul'dan kümelere bakmak",
+      "paragraflar": [
+        "Bu dersteki yapıların çoğu dürbünle görülmez, ama nerede olduklarını bilmek gökyüzüne bakışını değiştirir. Yerel Grup'un iki üyesi İstanbul göğündedir: d7'de göreceğin gibi Andromeda karanlık bir gökte çıplak gözle görülür, Üçgen Galaksisi ise ancak çok karanlık bir gökte aranabilir. Grubun öbür ucundaki Samanyolu'na zaten içinden bakıyorsun (d47). Sonbaharda Andromeda'ya baktığında Yerel Grup halterinin öbür ucunu görürsün: ışığı yaklaşık 2,5 milyon yıl önce yola çıktı ve galaksinin kendisi bize yaklaşıyor. Hız için kaynaklar arasında küçük bir fark var: d7, Wikipedia'nın çarpışma maddesinden yaklaşık 110 km/s, bu ders Yerel Grup maddesinden yaklaşık 123 km/s kullanıyor. Zamanlama argümanının iki ucundan biri, gökte gözle görebileceğin bir lekedir.",
+        "d7'ye göre Başak Kümesi'nin çekirdeğine yakın Markarian Zinciri en iyi mart ile haziran arasında görülür; iyi görmek için 75–200 mm'lik bir teleskop gerekir ve 7×50 dürbün büyük olasılıkla yetmez. Berenis'in Saçı Kümesi daha da zordur: Wikipedia'ya göre en parlak on sarmal galaksisinin parlaklığı 12 ile 14 kadirdir ve ancak 20 santimetreden büyük amatör teleskoplarla gözlenebilir. Yani bu kümeyi 7×50 dürbünle göremezsin; ama Berenis'in Saçı'na baktığında, bakışının Samanyolu'nun kuzey kutbuna, yani tozun en ince olduğu yöne doğru gittiğini, ve 321 milyon ışık yılı ötede binden fazla galaksinin bulunduğunu bilirsin.",
+        "Kaçınma bölgesini de gökyüzünde görebilirsin: d47'de anlatılan Samanyolu kuşağının kendisi odur. Kuşak boyunca uzak galaksiler toz ve yıldızlar yüzünden gizlenir; Wikipedia'ya göre Laniakea'nın bazı kümeleri de bu bölgenin arkasında kaldığı için bilinmeyebilir. Uygulamanın Gökyüzü sekmesinde Başak'ın, Berenis'in Saçı'nın ve Andromeda'nın o gece ne zaman en yükseğe çıktığına bakabilirsin."
+      ],
+      "akilda": "Yerel Grup'tan Andromeda ve Üçgen İstanbul göğünde aranabilir. Başak ve Berenis'in Saçı kümeleri ilkbaharda yükselir ama teleskop ister: Berenis'in Saçı'nın en parlak sarmalları 12–14 kadirdir, 20 cm'den büyük teleskop gerekir. Samanyolu kuşağı kaçınma bölgesidir."
+    }
+  ],
+  "formuller": [
+    {
+      "ad": "Kurtulma hızı (iki galaksi bağlı mı?)",
+      "ifade": "v = √(2 × G × M / r)",
+      "aciklama": "v kurtulma hızı (m/s), G = 6,674×10⁻¹¹ m³/(kg·s²), M toplam kütle (kg), r aradaki uzaklık (m). Bağıl hız bundan küçükse sistem kütleçekimiyle bağlıdır; kütle noktasal sayılır, yan hız yok sayılır."
+    },
+    {
+      "ad": "Hız dağılımından kaba küme kütlesi",
+      "ifade": "M ≈ σ² × R / G",
+      "aciklama": "σ galaksilerin hız dağılımı (m/s), R kümenin yarıçapı (m). Kümenin dengede olduğu varsayılır; yalnız mertebe verir, sayısal çarpan modele göre birkaç kat değişir."
+    },
+    {
+      "ad": "Hubble akışı ve tuhaf hız",
+      "ifade": "v(gözlenen) = H0 × d + v(tuhaf)",
+      "aciklama": "H0 Hubble sabiti (km/s/Mpc), d uzaklık (Mpc), v(tuhaf) galaksinin genişlemeden bağımsız kendi hızının görüş doğrultusundaki bileşeni (km/s). Yerel Grup–Başak için v(tuhaf) negatiftir: kütleçekimi kaçışı frenler."
+    },
+    {
+      "ad": "Frekanstan dalga boyuna",
+      "ifade": "λ = c / f",
+      "aciklama": "λ dalga boyu (m), c ışık hızı (299.792.458 m/s), f frekans (Hz). Sunyaev–Zeldovich etkisinin sıfır noktası 217 GHz ≈ 1,38 mm."
+    },
+    {
+      "ad": "Genişlemeyle büyüyen uzunluk",
+      "ifade": "L(bugün) = L(o zaman) × (1 + z)",
+      "aciklama": "z o zamanın kırmızıya kayması. Saydamlaşmada z = 1089: 0,14 Mpc × 1090 ≈ 150 Mpc (baryon akustik salınım cetveli)."
+    },
+    {
+      "ad": "Ortalama yoğunluğa göre kat",
+      "ifade": "yoğunluk / ortalama ≈ kütle payı / hacim payı",
+      "aciklama": "Bir bileşenin (lif, duvar, boşluk) taşıdığı madde payının kapladığı hacim payına oranı; lifler için 0,50 / 0,06 ≈ 8."
+    }
+  ],
+  "anahtar_sayilar": [
+    {
+      "deger": "~800 kiloparsek; ~123 km/s; ~2×10¹² M☉; 134 üye",
+      "aciklama": "Yerel Grup: iki ucun uzaklığı, yaklaşma hızı, toplam kütle, 1 megaparsek içindeki bilinen üye sayısı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Local_Group",
+      "kid": "d49n0"
+    },
+    {
+      "deger": "1959; ≥10 kat; ~5×10¹² M☉",
+      "aciklama": "Kahn ve Woltjer'in zamanlama argümanı, buldukları görünmeyen kütle katı ve bugünkü zamanlama kütlesi (Strigari 2025)",
+      "kaynak_url": "https://arxiv.org/abs/2508.18061",
+      "kid": "d49n1"
+    },
+    {
+      "deger": "967 km/s; 16,8 megaparsek",
+      "aciklama": "Yerel Grup ile Başak Kümesi'nin birbirinden uzaklaşma hızı ve uzaklık; Hubble akışından az",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Milky_Way",
+      "kid": "d49n2"
+    },
+    {
+      "deger": ">1000 galaksi; 99 megaparsek (321 milyon ışık yılı); kütlenin ~%90'ı karanlık madde",
+      "aciklama": "Berenis'in Saçı Kümesi (Abell 1656)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Coma_Cluster",
+      "kid": "d49n3"
+    },
+    {
+      "deger": "1019 ± 360 km/s (1933, 8 galaksi); 1082 km/s (1996)",
+      "aciklama": "Berenis'in Saçı Kümesi'nin hız dağılımı: Zwicky ve modern değer",
+      "kaynak_url": "https://arxiv.org/abs/astro-ph/9904251",
+      "kid": "d49n4"
+    },
+    {
+      "deger": "~10⁸ K; ~1 parçacık/litre; 10¹⁵ M☉'lik kümede ~10¹⁴ M☉ gaz",
+      "aciklama": "Küme içi sıcak gaz (Cavaliere ve Lapi 2013)",
+      "kaynak_url": "https://arxiv.org/abs/1308.6673",
+      "kid": "d49n5"
+    },
+    {
+      "deger": "1653 tespit; 1203 doğrulanmış küme; ~217 GHz sıfır noktası",
+      "aciklama": "Planck'ın ikinci Sunyaev–Zeldovich kataloğu (2015) ve etkinin frekans imzası",
+      "kaynak_url": "https://arxiv.org/abs/1502.01598",
+      "kid": "d49n6"
+    },
+    {
+      "deger": "1987; Einstein yarıçapı 39 ± 2″; 2,82 ± 0,15×10¹⁴ M☉; büyütme 32 ± 4",
+      "aciklama": "Abell 370'in dev yayı ve mercekten ölçülen kütle (Richard ve ark. 2009)",
+      "kaynak_url": "https://arxiv.org/abs/0910.5553",
+      "kid": "d49n7"
+    },
+    {
+      "deger": "~160 megaparsek; ~10¹⁷ M☉; ~100.000 galaksi",
+      "aciklama": "Laniakea üstkümesi (2014)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Laniakea_Supercluster",
+      "kid": "d49n8"
+    },
+    {
+      "deger": "~630 km/s (Yerel Grup, 2017); 552 ± 6 km/s (Samanyolu, arka plan ışımasına göre)",
+      "aciklama": "Hızımız; Shapley Yoğunlaşması çeker, Dipol İtici iter",
+      "kaynak_url": "https://www.sciencedaily.com/releases/2017/01/170130110921.htm",
+      "kid": "d49n9"
+    },
+    {
+      "deger": "lifler %50 kütle / %6 hacim; boşluklar %15 / %78; duvarlar %25 / %18; kümeler %10 kütle",
+      "aciklama": "Kozmik ağın bileşenleri (Cautun ve ark. 2014 benzetim çözümlemesi)",
+      "kaynak_url": "https://arxiv.org/abs/1401.7866",
+      "kid": "d49n10"
+    },
+    {
+      "deger": "1981; yarıçap 62 megaparsek; 60 galaksi (beklenen ~2000); ~700 milyon ışık yılı",
+      "aciklama": "Çoban Boşluğu",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Bo%C3%B6tes_Void",
+      "kid": "d49n11"
+    },
+    {
+      "deger": "2160³ ≈ 10 milyar parçacık; ~2 milyar ışık yılı küp; ~20 milyon galaksi (2005)",
+      "aciklama": "Millennium Benzetimi",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Millennium_Run",
+      "kid": "d49n12"
+    },
+    {
+      "deger": "~150 megaparsek (~490 milyon ışık yılı); 2005",
+      "aciklama": "Baryon akustik salınım cetvelinin bugünkü uzunluğu ve ilk tespit yılı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Baryon_acoustic_oscillations",
+      "kid": "d49n13"
+    },
+    {
+      "deger": "18,7 milyon cisim: 13,1 milyon galaksi, 1,6 milyon kuasar, 4 milyon yıldız (19 Mart 2025)",
+      "aciklama": "DESI'nin ilk açık veri sürümü",
+      "kaynak_url": "https://www.desi.lbl.gov/2025/03/19/desi-dr2-results-march-19-guide/",
+      "kid": "d49n14"
+    },
+    {
+      "deger": "~8000 lif; ≤65 milyon ışık yılı; ~5,6 milyon °C; kayıp baryonların ~%20'si",
+      "aciklama": "eROSITA ile liflerdeki ılık-sıcak gaz (Kasım 2024)",
+      "kaynak_url": "https://www.astronomy.com/science/scientists-discover-significant-missing-matter-in-the-gas-between-galaxy-clusters/",
+      "kid": "d49n15"
+    }
+  ],
+  "sozluk": [
+    {
+      "terim": "kozmik ağ",
+      "tanim": "Kümelerin düğüm, liflerin ve duvarların bağlantı olduğu, aralarında dev boşluklar bulunan, evrenin en büyük ölçekli yapısı.",
+      "kid": "d49t0"
+    },
+    {
+      "terim": "sıfır hız yüzeyi",
+      "tanim": "Bir galaksi grubunun çekiminin evrenin genişlemesini tam dengelediği, grubun kütleçekimsel sınırını belirleyen yüzey.",
+      "kid": "d49t1"
+    },
+    {
+      "terim": "zamanlama argümanı",
+      "tanim": "Samanyolu ile Andromeda'nın Büyük Patlama'dan bu yana uzaklaşıp geri dönmesi için gereken kütleden Yerel Grup'u tartma yöntemi.",
+      "kid": "d49t2"
+    },
+    {
+      "terim": "Yerel Levha",
+      "tanim": "Yerel Grup'un içinde bulunduğu, onu kapsayan daha büyük yerel yapı.",
+      "kid": "d49t3"
+    },
+    {
+      "terim": "tuhaf hız",
+      "tanim": "Bir galaksinin evrenin düzenli genişlemesinden, yani Hubble akışından bağımsız olan kendi hareketi.",
+      "kid": "d49t4"
+    },
+    {
+      "terim": "Hubble akışı",
+      "tanim": "Galaksilerin evrenin genişlemesi yüzünden uzaklıklarıyla orantılı hızla birbirinden uzaklaşması.",
+      "kid": "d49t5"
+    },
+    {
+      "terim": "hız dağılımı",
+      "tanim": "Bir kümedeki galaksilerin hızlarının ortalama etrafındaki yayılımı; kümenin kütlesinin ölçüsü (σ).",
+      "kid": "d49t6"
+    },
+    {
+      "terim": "küme içi gaz",
+      "tanim": "Galaksi kümelerindeki galaksilerin arasını dolduran, 10⁷–10⁸ kelvin mertebesinde, X-ışını yayan seyrek plazma.",
+      "kid": "d49t7"
+    },
+    {
+      "terim": "ters Compton saçılması",
+      "tanim": "Düşük enerjili bir fotonun hızlı bir elektrona çarpıp ondan enerji kazanması.",
+      "kid": "d49t8"
+    },
+    {
+      "terim": "Sunyaev–Zeldovich etkisi",
+      "tanim": "Kozmik arka plan ışımasının küme gazındaki elektronlardan enerji kazanması yüzünden kümenin yönünde düşük frekansta sönük, yüksek frekansta parlak görünmesi.",
+      "kid": "d49t9"
+    },
+    {
+      "terim": "güçlü mercek",
+      "tanim": "Bir kütlenin arkadaki kaynağın görüntüsünü belirgin yaylara, halkalara ya da çoklu görüntülere dönüştürdüğü kütleçekimsel mercek durumu.",
+      "kid": "d49t10"
+    },
+    {
+      "terim": "zayıf mercek",
+      "tanim": "Arkadaki galaksilerin görüntülerinin tek tek seçilemeyecek kadar az bozulduğu, ancak istatistikle ölçülebilen kütleçekimsel mercek etkisi.",
+      "kid": "d49t11"
+    },
+    {
+      "terim": "Einstein yarıçapı",
+      "tanim": "Bir kütleçekimsel merceğin görüntülerinin dizildiği halkanın gökteki açısal yarıçapı; içindeki kütleyi verir.",
+      "kid": "d49t12"
+    },
+    {
+      "terim": "küme içi ışık",
+      "tanim": "Galaksilerden koparılıp küme içinde serbestçe dolaşan yıldızların yaydığı soluk ışık.",
+      "kid": "d49t13"
+    },
+    {
+      "terim": "Büyük Çekici",
+      "tanim": "Laniakea'daki galaksilerin hareketlerinin yöneldiği, Cetvel takımyıldızı yönündeki kütleçekim odağı.",
+      "kid": "d49t14"
+    },
+    {
+      "terim": "Dipol İtici",
+      "tanim": "Galaksilerce çok fakir olduğu için çevresine göre az çeken ve Yerel Grup'u kendisinden uzaklaşıyormuş gibi hareket ettiren geniş düşük yoğunluklu bölge.",
+      "kid": "d49t15"
+    },
+    {
+      "terim": "çekim havzası",
+      "tanim": "İçindeki galaksilerin tuhaf hızlarının ortak bir odağa aktığı bölge; Laniakea'nın tanımı.",
+      "kid": "d49t16"
+    },
+    {
+      "terim": "kaçınma bölgesi",
+      "tanim": "Samanyolu diskindeki toz ve yıldızlar yüzünden arkasındaki galaksilerin zor görüldüğü gökyüzü bölgesi.",
+      "kid": "d49t17"
+    },
+    {
+      "terim": "kırmızıya kayma taraması",
+      "tanim": "Çok sayıda galaksinin kırmızıya kaymasını ölçüp uzaklığa çevirerek üç boyutlu harita çıkaran tarama.",
+      "kid": "d49t18"
+    },
+    {
+      "terim": "kozmik boşluk",
+      "tanim": "Ortalamanın çok altında yoğunluğa sahip, çok az galaksi içeren dev bölge; Çoban Boşluğu örnektir.",
+      "kid": "d49t19"
+    },
+    {
+      "terim": "ılık-sıcak galaksiler arası ortam",
+      "tanim": "Galaksiler arası liflerde bulunan, milyonlarca derece sıcaklıkta, metreküpte ortalama yaklaşık 10 parçacıklık seyrek gaz; kayıp baryonların başlıca adayı.",
+      "kid": "d49t20"
+    },
+    {
+      "terim": "kayıp baryonlar",
+      "tanim": "Evrende bulunması gerektiği bilinen ama yakın evrende yıldız ve görünür gaz olarak sayılamayan sıradan madde.",
+      "kid": "d49t21"
+    },
+    {
+      "terim": "sayısal benzetim",
+      "tanim": "Maddenin kütleçekimi ve fiziği altında nasıl evrildiğini bilgisayarda çok sayıda parçacık ya da hücreyle hesaplayan model.",
+      "kid": "d49t22"
+    }
+  ],
+  "defter_notu": [
+    "Hiyerarşi: grup (onlarca galaksi) → küme (yüzlerce–binlerce) → üstküme → kozmik ağ (düğüm = küme, lif, duvar, boşluk).",
+    "Yerel Grup: iki uçlu halter, ~800 kpc, ~123 km/s yaklaşma, ~2×10¹² M☉. Zamanlama argümanı (Kahn–Woltjer 1959): ≥10 kat görünmeyen kütle; bugün ~5×10¹² M☉ (tartışmalı).",
+    "Başak: Yerel Grup'tan 967 km/s uzaklaşır, Hubble akışından az → Başak bizi çeker (tuhaf hız).",
+    "Kümeyi tartmanın 4 yolu: hız dağılımı (Zwicky 1933; Berenis'in Saçı σ ≈ 1082 km/s), X-ışını gazı (10⁸ K, litrede 1 parçacık), Sunyaev–Zeldovich (217 GHz sıfır; Planck 1653 tespit), mercek (Abell 370, 1987; 39″, 2,8×10¹⁴ M☉).",
+    "Küme bütçesi: ~%90 karanlık madde, ~%10 sıcak gaz, birkaç % yıldız; evrensel sıradan madde payı Ωb/Ωm ≈ 0,157.",
+    "Laniakea (2014): ~160 Mpc, ~10¹⁷ M☉, ~100.000 galaksi, Büyük Çekici (Cetvel yönü); bağlı değil. Hız: Güneş 370, Samanyolu 552, Yerel Grup ~630 km/s; Shapley çeker + Dipol İtici iter (2017).",
+    "Ağ: CfA2 Büyük Duvar 1989; Sloan Büyük Duvarı 2003 (~1,37 milyar ışık yılı, tek yapı mı tartışmalı). Lifler %50 kütle/%6 hacim; boşluklar %15/%78.",
+    "Çoban Boşluğu 1981: yarıçap 62 Mpc, 60 galaksi (beklenen ~2000), ΛCDM ile uyumlu.",
+    "Benzetimler: Millennium 2005 (2160³ parçacık, ~2 milyar ışık yılı küp); IllustrisTNG (TNG50/100/300). Kayıp baryonlar: liflerde ılık-sıcak gaz; eROSITA 2024 ~%20.",
+    "BAO cetveli: 0,14 Mpc × 1090 ≈ 150 Mpc (490 milyon ışık yılı); SDSS ve 2dF 2005. DESI DR1 2025: 18,7 milyon cisim. Euclid: 1 Temmuz 2023, DR1 2027 ortası."
+  ],
+  "sorular": [
+    {
+      "soru": "Kahn ve Woltjer 1959'da Yerel Grup'un kütlesini nasıl tahmin etti?",
+      "cevap": "Samanyolu ile Andromeda'nın Büyük Patlama'da aynı yerden çıkıp önce uzaklaştığını, sonra kendi çekimleriyle durup bugün neredeyse düz bir çizgide yaklaştığını varsaydılar. Bunun evrenin yaşı içinde olması için gereken kütleyi hesapladılar ve görünenin en az on katı buldular. Bu zamanlama argümanıdır.",
+      "kid": "d49s0"
+    },
+    {
+      "soru": "Andromeda 800 kiloparsek uzakta ve grup kütlesi 2×10¹² M☉ ise 123 km/s'lik yaklaşma hızı iki galaksinin bağlı olduğunu gösterir mi?",
+      "cevap": "Evet, kaba hesapla. Kurtulma hızı √(2GM/r) ≈ 147 km/s çıkar; ölçülen bağıl hız 123 km/s bundan küçüktür. Hesap kütleyi noktasal sayar ve yan hızı yok sayar.",
+      "kid": "d49s1"
+    },
+    {
+      "soru": "Yerel Grup ile Başak Kümesi'nin 967 km/s'lik uzaklaşma hızı neden Hubble akışının beklediğinden azdır?",
+      "cevap": "Başak Kümesi'nin kütleçekimi Yerel Grup'u kendine doğru çeker ve genişlemeyle oluşan kaçışı frenler. H0 = 67,4 ile beklenen ~1132, 73 ile ~1226 km/s; fark kabaca 150–250 km/s'lik bir tuhaf hızdır.",
+      "kid": "d49s2"
+    },
+    {
+      "soru": "Zwicky'nin 1933 sonucunda abartılı olan neydi, doğru çıkan neydi?",
+      "cevap": "Sekiz galaksiden bulduğu ~1019 km/s'lik hız dağılımı, modern 1082 km/s ile uyuşur. Abartı, o dönemin çok büyük Hubble sabiti yüzünden uzaklık ve dolayısıyla kütle–ışık oranındaydı; 400 katlık fazlalık düzeltilince ~50 kat olur, ama yine de görünmeyen kütle gerekir (d17).",
+      "kid": "d49s3"
+    },
+    {
+      "soru": "Küme içi gazın sıcaklığı ve yoğunluğu nedir, neden X-ışınında görülür?",
+      "cevap": "Sıcaklığı 10⁸ K mertebesinde, yoğunluğu litre başına yaklaşık 1 parçacıktır. Bu kadar sıcak bir gaz ışımasını ağırlıkla X-ışınlarında yapar; X-ışınları atmosferden geçmediği için uydu gözlemevleri gerekir.",
+      "kid": "d49s4"
+    },
+    {
+      "soru": "Sunyaev–Zeldovich etkisinde bir küme neden düşük frekansta gölge, yüksek frekansta parlak leke gibi görünür?",
+      "cevap": "Arka plan ışımasının fotonları küme gazının hızlı elektronlarından enerji kazanır (ters Compton saçılması). Fotonlar daha yüksek enerjilere, yani daha yüksek frekanslara kayar: düşük frekansta foton azalır, yüksek frekansta artar; yaklaşık 217 GHz'de etki sıfırdır.",
+      "kid": "d49s5"
+    },
+    {
+      "soru": "Abell 370'in 1987'de bulunan dev yayı neyin kanıtıydı?",
+      "cevap": "Kütleli galaksi kümelerinin, arkadaki galaksilerin ışığını belirgin yaylara bükecek kadar yoğun olduğunun, yani güçlü kütleçekimsel mercek olabildiklerinin ilk kanıtlarındandı. Yay, z = 0,725'teki bir galaksinin büyütülmüş görüntüsüydü.",
+      "kid": "d49s6"
+    },
+    {
+      "soru": "Bir zengin kümenin kütlesinin büyük kısmı nedir?",
+      "cevap": "Karanlık maddedir; Berenis'in Saçı için yaklaşık yüzde 90. Sıcak gaz yaklaşık yüzde 10, galaksilerdeki ve galaksiler arasındaki yıldızlar ise daha küçük bir paydır.",
+      "kid": "d49s7"
+    },
+    {
+      "soru": "Laniakea neden geleneksel anlamda bir üstküme sayılmayabilir?",
+      "cevap": "Çünkü yoğunluğa göre değil, galaksilerin tuhaf hızlarının ortak bir odağa aktığı çekim havzası olarak tanımlandı ve kütleçekimiyle bağlı değildir; karanlık enerji onu gelecekte dağıtacaktır. Bazı çalışmalar bu tür yapılara koza ya da su bölümü havzası der.",
+      "kid": "d49s8"
+    },
+    {
+      "soru": "Dipol İtici gerçekten itiyor mu?",
+      "cevap": "Hayır. Galaksilerce çok fakir bir bölge çevresine göre daha az çeker; bu yüzden çevresindeki galaksiler, bizim Yerel Grup dahil, ondan uzaklaşıyormuş gibi hareket eder. 2017 çalışmasına göre bulunduğumuz yerde Shapley'nin çekmesi ve bu itme kabaca eşit önemdedir.",
+      "kid": "d49s9"
+    },
+    {
+      "soru": "Kozmik ağda madde ve hacim nasıl dağılmıştır?",
+      "cevap": "Cautun ve arkadaşlarına göre maddenin yarısı liflerde, yüzde 25'i duvarlarda, yüzde 15'i boşluklarda, yüzde 10'u kümelerdedir. Hacmin ise yüzde 78'i boşluk, yüzde 18'i duvar, yalnız yüzde 6'sı liftir.",
+      "kid": "d49s10"
+    },
+    {
+      "soru": "Çoban Boşluğu standart kozmolojiyle çelişir mi?",
+      "cevap": "Wikipedia'ya göre hayır. Beklenen ~2000 yerine 60 galaksi içermesine rağmen, daha küçük boşlukların birleşmesiyle oluştuğu düşünülür ve ΛCDM ile uyumludur.",
+      "kid": "d49s11"
+    },
+    {
+      "soru": "Kayıp baryonlar nerede olabilir ve 2024'te ne bulundu?",
+      "cevap": "Benzetimlere göre büyük kısmı galaksiler arası liflerdeki milyonlarca derecelik seyrek gazdadır. eROSITA verisinde ~8000 lifin sinyali üst üste eklenince bu gaz görüldü; ekip, kayıp maddenin yaklaşık yüzde 20'sini açıklayabileceğini ama belirsizliğin büyük olduğunu söyledi.",
+      "kid": "d49s12"
+    },
+    {
+      "soru": "Baryon akustik salınımları cetveli nasıl oluştu ve bugün ne uzunluktadır?",
+      "cevap": "Erken evrenin plazmasındaki ses dalgaları, evren ~379.000 yaşındayken ışık maddeden ayrılınca dondu; o anda kabuk yarıçapı ~0,14 Mpc'ydi. Evren 1090 kat genişlediği için bugün ~150 Mpc, yani ~490 milyon ışık yılıdır.",
+      "kid": "d49s13"
+    },
+    {
+      "soru": "Berenis'in Saçı Kümesi'ni 7×50 dürbünle görebilir misin?",
+      "cevap": "Hayır. Wikipedia'ya göre en parlak sarmal galaksileri 12–14 kadirdir ve 20 cm'den büyük amatör teleskoplarla gözlenebilir. Ama kümenin Samanyolu'nun kuzey kutbuna yakın olduğunu, yani tozun en ince olduğu yöne baktığını bilerek o bölgeye bakabilirsin.",
+      "kid": "d49s14"
+    }
+  ],
+  "kaynaklar": [
+    {
+      "ad": "Wikipedia, Local Group",
+      "url": "https://en.wikipedia.org/wiki/Local_Group"
+    },
+    {
+      "ad": "Strigari (2025), Timing Mass of the Local Group, arXiv:2508.18061",
+      "url": "https://arxiv.org/abs/2508.18061"
+    },
+    {
+      "ad": "Wikipedia, Milky Way",
+      "url": "https://en.wikipedia.org/wiki/Milky_Way"
+    },
+    {
+      "ad": "Wikipedia, Coma Cluster",
+      "url": "https://en.wikipedia.org/wiki/Coma_Cluster"
+    },
+    {
+      "ad": "van den Bergh (1999), The early history of dark matter, arXiv:astro-ph/9904251",
+      "url": "https://arxiv.org/abs/astro-ph/9904251"
+    },
+    {
+      "ad": "Cavaliere ve Lapi (2013), The Astrophysics of the Intracluster Plasma, arXiv:1308.6673",
+      "url": "https://arxiv.org/abs/1308.6673"
+    },
+    {
+      "ad": "Gonzalez, Zaritsky ve Zabludoff (2007), A Census of Baryons in Galaxy Clusters and Groups, arXiv:0705.1726",
+      "url": "https://arxiv.org/abs/0705.1726"
+    },
+    {
+      "ad": "Planck Collaboration (2013), Planck 2013 results XX: Cosmology from Sunyaev–Zeldovich cluster counts, arXiv:1303.5080",
+      "url": "https://arxiv.org/abs/1303.5080"
+    },
+    {
+      "ad": "Planck Collaboration (2015), The Second Planck Catalogue of Sunyaev–Zeldovich Sources, arXiv:1502.01598",
+      "url": "https://arxiv.org/abs/1502.01598"
+    },
+    {
+      "ad": "Richard ve ark. (2009), Abell 370 revisited, arXiv:0910.5553",
+      "url": "https://arxiv.org/abs/0910.5553"
+    },
+    {
+      "ad": "Wikipedia, Laniakea Supercluster",
+      "url": "https://en.wikipedia.org/wiki/Laniakea_Supercluster"
+    },
+    {
+      "ad": "Tully ve ark. (2014), The Laniakea supercluster of galaxies, arXiv:1409.0880",
+      "url": "https://arxiv.org/pdf/1409.0880"
+    },
+    {
+      "ad": "ScienceDaily (2017), Dipole Repeller (Hoffman ve ark., Nature Astronomy)",
+      "url": "https://www.sciencedaily.com/releases/2017/01/170130110921.htm"
+    },
+    {
+      "ad": "Wikipedia, CfA Redshift Survey",
+      "url": "https://en.wikipedia.org/wiki/CfA_Redshift_Survey"
+    },
+    {
+      "ad": "Wikipedia, CfA2 Great Wall",
+      "url": "https://en.wikipedia.org/wiki/CfA2_Great_Wall"
+    },
+    {
+      "ad": "Wikipedia, Sloan Great Wall",
+      "url": "https://en.wikipedia.org/wiki/Sloan_Great_Wall"
+    },
+    {
+      "ad": "Cautun ve ark. (2014), Evolution of the cosmic web, arXiv:1401.7866",
+      "url": "https://arxiv.org/abs/1401.7866"
+    },
+    {
+      "ad": "Wikipedia, Boötes Void",
+      "url": "https://en.wikipedia.org/wiki/Bo%C3%B6tes_Void"
+    },
+    {
+      "ad": "BBC Science Focus, The Boötes void",
+      "url": "https://www.sciencefocus.com/space/bootes-void"
+    },
+    {
+      "ad": "van de Weygaert (2016), Voids and the Cosmic Web, arXiv:1611.01222",
+      "url": "https://arxiv.org/abs/1611.01222"
+    },
+    {
+      "ad": "Wikipedia, Millennium Run",
+      "url": "https://en.wikipedia.org/wiki/Millennium_Run"
+    },
+    {
+      "ad": "Virgo Consortium (2005), The Millennium Simulation",
+      "url": "https://virgo.dur.ac.uk/2005/06/02/Millennium/"
+    },
+    {
+      "ad": "Nelson ve ark. (2018), The IllustrisTNG Simulations: Public Data Release, arXiv:1812.05609",
+      "url": "https://arxiv.org/abs/1812.05609"
+    },
+    {
+      "ad": "Haider ve ark. (2016), Large-scale mass distribution in the Illustris simulation, arXiv:1508.01525",
+      "url": "https://arxiv.org/abs/1508.01525"
+    },
+    {
+      "ad": "Astronomy (2024), Scientists discover significant missing matter in the gas between galaxy clusters",
+      "url": "https://www.astronomy.com/science/scientists-discover-significant-missing-matter-in-the-gas-between-galaxy-clusters/"
+    },
+    {
+      "ad": "Wikipedia, Baryon acoustic oscillations",
+      "url": "https://en.wikipedia.org/wiki/Baryon_acoustic_oscillations"
+    },
+    {
+      "ad": "DESI (2025), DR2 results guide",
+      "url": "https://www.desi.lbl.gov/2025/03/19/desi-dr2-results-march-19-guide/"
+    },
+    {
+      "ad": "ScienceDaily (2025), DESI karanlık enerji sonuçları",
+      "url": "https://www.sciencedaily.com/releases/2025/03/250320214311.htm"
+    },
+    {
+      "ad": "ESA Euclid, Timeline",
+      "url": "https://www.cosmos.esa.int/web/euclid/timeline"
+    }
+  ]
 }

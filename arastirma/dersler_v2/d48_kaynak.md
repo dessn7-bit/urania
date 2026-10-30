@@ -36,7 +36,7 @@ WF = WebFetch ile bu oturumda açıldı (30 Ekim 2026). "HESAP" satırları pyth
 ## Bölüm 3 — Eddington
 - L_Edd ≈ 1,26 × 10³⁸ erg/s × M/M☉ = 1,26 × 10³¹ W | https://ned.ipac.caltech.edu/level5/Sept13/Shen/Shen1.html (WF) | "L_Edd ≈ 1.26 × 10³⁸ (M_BH/M☉) erg s⁻¹"
 - 3C 273 kara deliği 886 ± 187 milyon M☉ (yankı haritalama) | 3C 273 (WF) | "886 ± 187 million solar masses, from reverberation mapping"
-- Diskler 10–100 kat aşabilir; ULX için Eddington-üstü model | Wikipedia "Eddington luminosity" yansısı https://cavac.at/cavacopedia/Eddington%20luminosity (WF) | "Accretion discs may reach 10–100 times the limit"; ULX
+- Diskler 10–100 kat aşabilir; ULX için Eddington-üstü model | Wikipedia "Eddington luminosity" yansısı https://en.wikipedia.org/wiki/Eddington%20luminosity (WF) | "Accretion discs may reach 10–100 times the limit"; ULX
 - 2026 simülasyonunda bugün mümkün olandan onlarca kat hızlı büyüme | https://www.sciencedaily.com/releases/2026/09/260917003703.htm (WF) | "dozens of times faster than would be possible today"
 - UHZ1: L_bol ~5 × 10⁴⁵ erg/s; Eddington varsayımıyla ~4 × 10⁷ M☉ | https://arxiv.org/html/2308.02654v3 (WF) | "L_bol ~ 5 × 10⁴⁵ erg s⁻¹"; "assuming accretion at the Eddington rate"
 - Chandra aralığı 10–100 milyon | https://chandra.cfa.harvard.edu/blog/node/861 (WF) | "10 to 100 million suns"
@@ -127,5 +127,5 @@ WF = WebFetch ile bu oturumda açıldı (30 Ekim 2026). "HESAP" satırları pyth
 - Dürbün sınırı ~10,8 | d16 (d1, d11) | mevcut
 - Kadir karşılaştırma yöntemi | d15 | mevcut (karşılaştırma yıldızı)
 - M77: Balina; 9,6 kadir; 45 milyon ışık yılı; küçük teleskop; Aralık; Méchain 1780; Seyfert örneği | https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-77 (WF) | "9.6"; "45 million light-years"; "December"; "a prime example of a Seyfert galaxy"
-- M77 dik açıklık −00° 00′ 48″; 47 milyon ışık yılı; tip 2 Seyfert prototipi | https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Messier_77 (WF) | "−00° 00′ 47.84″"; "47 million light-years"; "one of the closest and best-studied type 2 Seyfert galaxies"
+- M77 dik açıklık −00° 00′ 48″; 47 milyon ışık yılı; tip 2 Seyfert prototipi | https://en.wikipedia.org/wiki/Messier_77 (WF) | "−00° 00′ 47.84″"; "47 million light-years"; "one of the closest and best-studied type 2 Seyfert galaxies"
 - Örnek: 90 − 41,0 + 2,05 ≈ 51°; M77 ≈ 49°; 10^(0,84) ≈ 6,9 | HESAP

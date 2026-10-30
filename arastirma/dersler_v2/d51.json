@@ -4,7 +4,12 @@
   "yeni": true,
   "baslik": "Karanlık Enerji: Evreni Hızlandıran Bilinmeyen",
   "ozet": "Evrenin genişlemesinin hızlandığını nereden bildiğimizi kısaca hatırlayıp asıl sorulara geçeceksin: Einstein'ın kozmolojik sabiti ve “en büyük hata” anekdotunun aslı, boşluğun enerjisi ve fiziğin en büyük uyuşmazlığı sayılan 10¹²⁰ sorunu, kuintesans ve değişen karanlık enerji fikri, DESI'nin ve 2.884 süpernovalık yeni çalışmanın işaretleri. Her iddianın kesinliğini d50'de öğrendiğin ölçekle etiketleyeceğiz.",
-  "on_bilgi": ["d17", "d50", "d26", "d30"],
+  "on_bilgi": [
+    "d17",
+    "d50",
+    "d26",
+    "d30"
+  ],
   "bolumler": [
     {
       "baslik": "Hızlanan evren: kısa bir hatırlatma",
@@ -181,52 +186,234 @@
     }
   ],
   "formuller": [
-    { "ad": "Durum denklemi parametresi", "ifade": "w = p ÷ ρ", "aciklama": "p basınç, ρ enerji yoğunluğu (aynı birimle, c² dahil). Madde w = 0, ışınım w = 1/3, kozmolojik sabit w = −1. w < −1/3 olan bileşen genişlemeyi hızlandırır." },
-    { "ad": "Yoğunluğun genişlemeyle değişimi", "ifade": "ρ ∝ a^(−3(1 + w))", "aciklama": "a ölçek çarpanı (bugün 1). Madde a⁻³ ile seyrelir; kozmolojik sabit sabit kalır; w < −1 (fantom) yoğunlaşır. w sabitken geçerli." },
-    { "ad": "Madde ile karanlık enerjinin eşitlendiği kırmızıya kayma", "ifade": "(1 + z)³ = ΩΛ ÷ Ωm", "aciklama": "Kozmolojik sabit varsayımıyla. Planck 2018 (Ωm = 0,3153, ΩΛ = 0,6847): z ≈ 0,30. Hızlanmanın başlangıcı için sağ taraf iki katına çıkar: z ≈ 0,63." },
-    { "ad": "Kritik yoğunluk ve karanlık enerji yoğunluğu", "ifade": "ρc = 3H² ÷ (8πG);  ρΛ = ΩΛ × ρc", "aciklama": "H saniyenin tersi cinsinden Hubble parametresi, G = 6,674×10⁻¹¹ m³/(kg·s²). H0 = 67,36 için ρc ≈ 8,5×10⁻²⁷ kg/m³, ρΛ ≈ 5,8×10⁻²⁷ kg/m³ ≈ 5,2×10⁻¹⁰ J/m³." },
-    { "ad": "Planck yoğunluğu (kaba boşluk enerjisi tahmini)", "ifade": "ρP ≈ mP ÷ lP³", "aciklama": "mP Planck kütlesi (2,176×10⁻⁸ kg), lP Planck uzunluğu (1,616×10⁻³⁵ m). ≈ 5×10⁹⁶ kg/m³; ölçülen ρΛ'dan yaklaşık 10¹²³ kat büyük. Yalnızca büyüklük tahmini." },
-    { "ad": "Değişen karanlık enerji tarifi (w0–wa)", "ifade": "w(a) = w0 + wa × (1 − a)", "aciklama": "w0 bugünkü değer, wa geçmişe doğru değişim, a = 1 ÷ (1 + z). Kozmolojik sabit: w0 = −1, wa = 0. DESI ve Unite w0 > −1, wa < 0 bölgesini yeğliyor." },
-    { "ad": "Başka yere bakma etkisi", "ifade": "P(en az bir) = 1 − (1 − p)ⁿ", "aciklama": "p tek bir analizde şans sapması olasılığı, n bağımsız analiz sayısı. 3 sigma (p ≈ 0,00135) ve n = 20 için ≈ 0,027." }
+    {
+      "ad": "Durum denklemi parametresi",
+      "ifade": "w = p ÷ ρ",
+      "aciklama": "p basınç, ρ enerji yoğunluğu (aynı birimle, c² dahil). Madde w = 0, ışınım w = 1/3, kozmolojik sabit w = −1. w < −1/3 olan bileşen genişlemeyi hızlandırır."
+    },
+    {
+      "ad": "Yoğunluğun genişlemeyle değişimi",
+      "ifade": "ρ ∝ a^(−3(1 + w))",
+      "aciklama": "a ölçek çarpanı (bugün 1). Madde a⁻³ ile seyrelir; kozmolojik sabit sabit kalır; w < −1 (fantom) yoğunlaşır. w sabitken geçerli."
+    },
+    {
+      "ad": "Madde ile karanlık enerjinin eşitlendiği kırmızıya kayma",
+      "ifade": "(1 + z)³ = ΩΛ ÷ Ωm",
+      "aciklama": "Kozmolojik sabit varsayımıyla. Planck 2018 (Ωm = 0,3153, ΩΛ = 0,6847): z ≈ 0,30. Hızlanmanın başlangıcı için sağ taraf iki katına çıkar: z ≈ 0,63."
+    },
+    {
+      "ad": "Kritik yoğunluk ve karanlık enerji yoğunluğu",
+      "ifade": "ρc = 3H² ÷ (8πG);  ρΛ = ΩΛ × ρc",
+      "aciklama": "H saniyenin tersi cinsinden Hubble parametresi, G = 6,674×10⁻¹¹ m³/(kg·s²). H0 = 67,36 için ρc ≈ 8,5×10⁻²⁷ kg/m³, ρΛ ≈ 5,8×10⁻²⁷ kg/m³ ≈ 5,2×10⁻¹⁰ J/m³."
+    },
+    {
+      "ad": "Planck yoğunluğu (kaba boşluk enerjisi tahmini)",
+      "ifade": "ρP ≈ mP ÷ lP³",
+      "aciklama": "mP Planck kütlesi (2,176×10⁻⁸ kg), lP Planck uzunluğu (1,616×10⁻³⁵ m). ≈ 5×10⁹⁶ kg/m³; ölçülen ρΛ'dan yaklaşık 10¹²³ kat büyük. Yalnızca büyüklük tahmini."
+    },
+    {
+      "ad": "Değişen karanlık enerji tarifi (w0–wa)",
+      "ifade": "w(a) = w0 + wa × (1 − a)",
+      "aciklama": "w0 bugünkü değer, wa geçmişe doğru değişim, a = 1 ÷ (1 + z). Kozmolojik sabit: w0 = −1, wa = 0. DESI ve Unite w0 > −1, wa < 0 bölgesini yeğliyor."
+    },
+    {
+      "ad": "Başka yere bakma etkisi",
+      "ifade": "P(en az bir) = 1 − (1 − p)ⁿ",
+      "aciklama": "p tek bir analizde şans sapması olasılığı, n bağımsız analiz sayısı. 3 sigma (p ≈ 0,00135) ve n = 20 için ≈ 0,027."
+    }
   ],
   "anahtar_sayilar": [
-    { "deger": "1998; > 50 süpernova; Nobel 2011", "aciklama": "Hızlanan genişlemenin keşfi", "kaynak_url": "https://www.nobelprize.org/prizes/physics/2011/press-release/" },
-    { "deger": "ΩΛ = 0,6847; Ωm = 0,3153", "aciklama": "Planck 2018: karanlık enerji ve madde payı", "kaynak_url": "https://arxiv.org/pdf/1807.06209v4" },
-    { "deger": "1917; 1931; 1945", "aciklama": "Einstein'ın kozmolojik sabiti eklemesi, bırakması ve kitabına ek yazması", "kaynak_url": "https://physicstoday.aip.org/opinion/investigating-the-legend-of-einsteins-biggest-blunder" },
-    { "deger": "1956; 1970; 2013; 2018", "aciklama": "Gamow'un anlatımları, Livio'nun kuşkusu, O'Raifeartaigh ve Mitton'un incelemesi", "kaynak_url": "https://www.arxiv.org/abs/1804.06768" },
-    { "deger": "≈ 5,96×10⁻²⁷ kg/m³ ≈ 5,4×10⁻¹⁰ J/m³", "aciklama": "Ölçülen boşluk (karanlık enerji) yoğunluğu, Planck 2015", "kaynak_url": "https://en.wikipedia.org/wiki/Cosmological_constant_problem" },
-    { "deger": "50–122 basamak; Martin 2012 ≈ 55", "aciklama": "Boşluk enerjisi tahmini ile ölçüm arasındaki fark, yönteme göre", "kaynak_url": "https://en.wikipedia.org/wiki/Cosmological_constant_problem" },
-    { "deger": "1948; 1997; %5", "aciklama": "Casimir'in öngörüsü ve Lamoreaux'nun ölçümünün kuramla uyumu", "kaynak_url": "https://en.wikipedia.org/wiki/Casimir_effect" },
-    { "deger": "1988; 1998", "aciklama": "Kuintesans fikri (Ratra–Peebles, Wetterich) ve adının konması (Caldwell, Dave, Steinhardt)", "kaynak_url": "https://en.wikipedia.org/wiki/Quintessence_(physics)" },
-    { "deger": "w = −1,5 → ≈ 22 milyar yıl", "aciklama": "Caldwell, Kamionkowski ve Weinberg'in örneğinde Büyük Yırtılma'ya kalan süre", "kaynak_url": "https://ar5iv.labs.arxiv.org/html/astro-ph/0302506" },
-    { "deger": "10¹⁵'te bir", "aciklama": "GW170817: kütleçekim dalgası ile ışık hızı arasındaki farkın üst sınırı", "kaynak_url": "https://physics.aps.org/articles/v10/134" },
-    { "deger": "3,1σ (DESI + CMB); 2,8–4,2σ (+ süpernova)", "aciklama": "DESI DR2: değişen karanlık enerjinin kozmolojik sabite tercihi", "kaynak_url": "https://arxiv.org/pdf/2503.14738" },
-    { "deger": "2.884 süpernova; w0 = −0,861; wa = −0,60; 3,1–3,3σ", "aciklama": "Supernovae Unite ön baskısı (Eylül 2026)", "kaynak_url": "https://arxiv.org/abs/2609.05053" },
-    { "deger": "≈ 0,04 kadir; 3,9σ → 3,3σ", "aciklama": "Efstathiou'nun süpernova kayması itirazı ve DES ekibinin duyarlılık sınaması", "kaynak_url": "https://arxiv.org/pdf/2501.06664" },
-    { "deger": "≈ 3,5 milyonda bir", "aciklama": "5 sigmalık bir sonucun şans eseri çıkma olasılığı", "kaynak_url": "https://www.scientificamerican.com/blog/observations/five-sigmawhats-that/" }
+    {
+      "deger": "1998; > 50 süpernova; Nobel 2011",
+      "aciklama": "Hızlanan genişlemenin keşfi",
+      "kaynak_url": "https://www.nobelprize.org/prizes/physics/2011/press-release/",
+      "kid": "d51n0"
+    },
+    {
+      "deger": "ΩΛ = 0,6847; Ωm = 0,3153",
+      "aciklama": "Planck 2018: karanlık enerji ve madde payı",
+      "kaynak_url": "https://arxiv.org/pdf/1807.06209v4",
+      "kid": "d51n1"
+    },
+    {
+      "deger": "1917; 1931; 1945",
+      "aciklama": "Einstein'ın kozmolojik sabiti eklemesi, bırakması ve kitabına ek yazması",
+      "kaynak_url": "https://physicstoday.aip.org/opinion/investigating-the-legend-of-einsteins-biggest-blunder",
+      "kid": "d51n2"
+    },
+    {
+      "deger": "1956; 1970; 2013; 2018",
+      "aciklama": "Gamow'un anlatımları, Livio'nun kuşkusu, O'Raifeartaigh ve Mitton'un incelemesi",
+      "kaynak_url": "https://www.arxiv.org/abs/1804.06768",
+      "kid": "d51n3"
+    },
+    {
+      "deger": "≈ 5,96×10⁻²⁷ kg/m³ ≈ 5,4×10⁻¹⁰ J/m³",
+      "aciklama": "Ölçülen boşluk (karanlık enerji) yoğunluğu, Planck 2015",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Cosmological_constant_problem",
+      "kid": "d51n4"
+    },
+    {
+      "deger": "50–122 basamak; Martin 2012 ≈ 55",
+      "aciklama": "Boşluk enerjisi tahmini ile ölçüm arasındaki fark, yönteme göre",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Cosmological_constant_problem",
+      "kid": "d51n5"
+    },
+    {
+      "deger": "1948; 1997; %5",
+      "aciklama": "Casimir'in öngörüsü ve Lamoreaux'nun ölçümünün kuramla uyumu",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Casimir_effect",
+      "kid": "d51n6"
+    },
+    {
+      "deger": "1988; 1998",
+      "aciklama": "Kuintesans fikri (Ratra–Peebles, Wetterich) ve adının konması (Caldwell, Dave, Steinhardt)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Quintessence_(physics)",
+      "kid": "d51n7"
+    },
+    {
+      "deger": "w = −1,5 → ≈ 22 milyar yıl",
+      "aciklama": "Caldwell, Kamionkowski ve Weinberg'in örneğinde Büyük Yırtılma'ya kalan süre",
+      "kaynak_url": "https://ar5iv.labs.arxiv.org/html/astro-ph/0302506",
+      "kid": "d51n8"
+    },
+    {
+      "deger": "10¹⁵'te bir",
+      "aciklama": "GW170817: kütleçekim dalgası ile ışık hızı arasındaki farkın üst sınırı",
+      "kaynak_url": "https://physics.aps.org/articles/v10/134",
+      "kid": "d51n9"
+    },
+    {
+      "deger": "3,1σ (DESI + CMB); 2,8–4,2σ (+ süpernova)",
+      "aciklama": "DESI DR2: değişen karanlık enerjinin kozmolojik sabite tercihi",
+      "kaynak_url": "https://arxiv.org/pdf/2503.14738",
+      "kid": "d51n10"
+    },
+    {
+      "deger": "2.884 süpernova; w0 = −0,861; wa = −0,60; 3,1–3,3σ",
+      "aciklama": "Supernovae Unite ön baskısı (Eylül 2026)",
+      "kaynak_url": "https://arxiv.org/abs/2609.05053",
+      "kid": "d51n11"
+    },
+    {
+      "deger": "≈ 0,04 kadir; 3,9σ → 3,3σ",
+      "aciklama": "Efstathiou'nun süpernova kayması itirazı ve DES ekibinin duyarlılık sınaması",
+      "kaynak_url": "https://arxiv.org/pdf/2501.06664",
+      "kid": "d51n12"
+    },
+    {
+      "deger": "≈ 3,5 milyonda bir",
+      "aciklama": "5 sigmalık bir sonucun şans eseri çıkma olasılığı",
+      "kaynak_url": "https://www.scientificamerican.com/blog/observations/five-sigmawhats-that/",
+      "kid": "d51n13"
+    }
   ],
   "sozluk": [
-    { "terim": "hızlanan genişleme", "tanim": "Evrendeki bağlı olmayan cisimler arasındaki uzaklıkların giderek artan bir hızla büyümesi; 1998'de uzak süpernovalarla keşfedildi." },
-    { "terim": "durağan evren", "tanim": "Genişlemeyen ve büzülmeyen, Einstein'ın 1917'de kozmolojik sabitle kurduğu evren modeli." },
-    { "terim": "durum denklemi parametresi", "tanim": "Bir bileşenin basıncının enerji yoğunluğuna oranı, w ile gösterilir; madde için 0, kozmolojik sabit için −1." },
-    { "terim": "eksi basınç", "tanim": "Genel görelilikte kütleçekimine itici katkı yapan, karanlık enerjiye özgü basınç türü." },
-    { "terim": "çakışma sorunu", "tanim": "Karanlık enerji ile madde yoğunluklarının tam da bizim yaşadığımız çağda aynı düzeyde olmasının rastlantı olup olmadığı sorusu." },
-    { "terim": "vakum enerjisi", "tanim": "Kuantum alanlarının boşlukta bile sahip olduğu, uzayın kendi özelliği sayılan ve genişlemeyle seyrelmeyen enerji." },
-    { "terim": "sıfır noktası enerjisi", "tanim": "Bir kuantum sisteminin en düşük enerjili durumunda bile sahip olduğu, sıfıra inemeyen enerji." },
-    { "terim": "Casimir etkisi", "tanim": "Boşlukta birbirine çok yakın duran iki yüksüz iletken levhanın kuantum etkileri yüzünden birbirini çekmesi." },
-    { "terim": "kozmolojik sabit sorunu", "tanim": "Kuantum kuramının boşluk enerjisi için verdiği kaba tahminin ölçülen karanlık enerjiden onlarca basamak büyük çıkması bulmacası." },
-    { "terim": "kesme noktası", "tanim": "Sonsuz çıkan bir toplamın, bilinen fiziğin geçerliliğinden emin olunmayan kısa dalga boylarında bilerek durdurulduğu sınır." },
-    { "terim": "Lorentz değişmezliği", "tanim": "Fizik yasalarının sabit hızla hareket eden bütün gözlemciler için aynı kalması; özel göreliliğin temel simetrisi." },
-    { "terim": "skaler alan", "tanim": "Uzayın her noktasında yönsüz tek bir sayıyla tanımlanan alan; Higgs alanı ve kuintesans örnektir." },
-    { "terim": "kuintesans", "tanim": "Karanlık enerjinin, uzayı dolduran ve zamanla yavaşça değişen bir skaler alan olduğunu öne süren hipotez." },
-    { "terim": "fantom enerji", "tanim": "Durum denklemi parametresi −1'den küçük olan, evren genişledikçe yoğunlaşan varsayımsal karanlık enerji." },
-    { "terim": "Büyük Yırtılma", "tanim": "Fantom enerjinin sonsuza giden yoğunluğunun galaksileri, gezegenleri ve sonunda atomları parçaladığı varsayımsal evren sonu." },
-    { "terim": "değiştirilmiş kütleçekimi", "tanim": "Hızlanmayı ya da karanlık maddeyi yeni bir bileşen yerine kütleçekimi yasasındaki bir değişiklikle açıklamaya çalışan kuramlar." },
-    { "terim": "w0–wa modeli", "tanim": "Karanlık enerjinin w değerini bugünkü değer ve geçmişe doğru değişim olmak üzere iki sayıyla tarif eden yaygın model." },
-    { "terim": "ön baskı", "tanim": "Hakem değerlendirmesinden geçmeden, örneğin arXiv'de yayımlanan bilimsel makale." },
-    { "terim": "Bayesçi kanıt", "tanim": "İki modeli verilere uyumları kadar karmaşıklıklarını da hesaba katarak karşılaştıran, fazladan parametreye ceza kesen istatistik ölçüsü." },
-    { "terim": "başka yere bakma etkisi", "tanim": "Çok sayıda yerde ya da yöntemle arama yapıldığında şans eseri büyük bir sapma bulma olasılığının artması." },
-    { "terim": "sistematik hata", "tanim": "Ölçüm aletinden ya da çözümleme yönteminden gelen, tekrarla azalmayan ve hep aynı yöne iten hata." }
+    {
+      "terim": "hızlanan genişleme",
+      "tanim": "Evrendeki bağlı olmayan cisimler arasındaki uzaklıkların giderek artan bir hızla büyümesi; 1998'de uzak süpernovalarla keşfedildi.",
+      "kid": "d51t0"
+    },
+    {
+      "terim": "durağan evren",
+      "tanim": "Genişlemeyen ve büzülmeyen, Einstein'ın 1917'de kozmolojik sabitle kurduğu evren modeli.",
+      "kid": "d51t1"
+    },
+    {
+      "terim": "durum denklemi parametresi",
+      "tanim": "Bir bileşenin basıncının enerji yoğunluğuna oranı, w ile gösterilir; madde için 0, kozmolojik sabit için −1.",
+      "kid": "d51t2"
+    },
+    {
+      "terim": "eksi basınç",
+      "tanim": "Genel görelilikte kütleçekimine itici katkı yapan, karanlık enerjiye özgü basınç türü.",
+      "kid": "d51t3"
+    },
+    {
+      "terim": "çakışma sorunu",
+      "tanim": "Karanlık enerji ile madde yoğunluklarının tam da bizim yaşadığımız çağda aynı düzeyde olmasının rastlantı olup olmadığı sorusu.",
+      "kid": "d51t4"
+    },
+    {
+      "terim": "vakum enerjisi",
+      "tanim": "Kuantum alanlarının boşlukta bile sahip olduğu, uzayın kendi özelliği sayılan ve genişlemeyle seyrelmeyen enerji.",
+      "kid": "d51t5"
+    },
+    {
+      "terim": "sıfır noktası enerjisi",
+      "tanim": "Bir kuantum sisteminin en düşük enerjili durumunda bile sahip olduğu, sıfıra inemeyen enerji.",
+      "kid": "d51t6"
+    },
+    {
+      "terim": "Casimir etkisi",
+      "tanim": "Boşlukta birbirine çok yakın duran iki yüksüz iletken levhanın kuantum etkileri yüzünden birbirini çekmesi.",
+      "kid": "d51t7"
+    },
+    {
+      "terim": "kozmolojik sabit sorunu",
+      "tanim": "Kuantum kuramının boşluk enerjisi için verdiği kaba tahminin ölçülen karanlık enerjiden onlarca basamak büyük çıkması bulmacası.",
+      "kid": "d51t8"
+    },
+    {
+      "terim": "kesme noktası",
+      "tanim": "Sonsuz çıkan bir toplamın, bilinen fiziğin geçerliliğinden emin olunmayan kısa dalga boylarında bilerek durdurulduğu sınır.",
+      "kid": "d51t9"
+    },
+    {
+      "terim": "Lorentz değişmezliği",
+      "tanim": "Fizik yasalarının sabit hızla hareket eden bütün gözlemciler için aynı kalması; özel göreliliğin temel simetrisi.",
+      "kid": "d51t10"
+    },
+    {
+      "terim": "skaler alan",
+      "tanim": "Uzayın her noktasında yönsüz tek bir sayıyla tanımlanan alan; Higgs alanı ve kuintesans örnektir.",
+      "kid": "d51t11"
+    },
+    {
+      "terim": "kuintesans",
+      "tanim": "Karanlık enerjinin, uzayı dolduran ve zamanla yavaşça değişen bir skaler alan olduğunu öne süren hipotez.",
+      "kid": "d51t12"
+    },
+    {
+      "terim": "fantom enerji",
+      "tanim": "Durum denklemi parametresi −1'den küçük olan, evren genişledikçe yoğunlaşan varsayımsal karanlık enerji.",
+      "kid": "d51t13"
+    },
+    {
+      "terim": "Büyük Yırtılma",
+      "tanim": "Fantom enerjinin sonsuza giden yoğunluğunun galaksileri, gezegenleri ve sonunda atomları parçaladığı varsayımsal evren sonu.",
+      "kid": "d51t14"
+    },
+    {
+      "terim": "değiştirilmiş kütleçekimi",
+      "tanim": "Hızlanmayı ya da karanlık maddeyi yeni bir bileşen yerine kütleçekimi yasasındaki bir değişiklikle açıklamaya çalışan kuramlar.",
+      "kid": "d51t15"
+    },
+    {
+      "terim": "w0–wa modeli",
+      "tanim": "Karanlık enerjinin w değerini bugünkü değer ve geçmişe doğru değişim olmak üzere iki sayıyla tarif eden yaygın model.",
+      "kid": "d51t16"
+    },
+    {
+      "terim": "ön baskı",
+      "tanim": "Hakem değerlendirmesinden geçmeden, örneğin arXiv'de yayımlanan bilimsel makale.",
+      "kid": "d51t17"
+    },
+    {
+      "terim": "Bayesçi kanıt",
+      "tanim": "İki modeli verilere uyumları kadar karmaşıklıklarını da hesaba katarak karşılaştıran, fazladan parametreye ceza kesen istatistik ölçüsü.",
+      "kid": "d51t18"
+    },
+    {
+      "terim": "başka yere bakma etkisi",
+      "tanim": "Çok sayıda yerde ya da yöntemle arama yapıldığında şans eseri büyük bir sapma bulma olasılığının artması.",
+      "kid": "d51t19"
+    },
+    {
+      "terim": "sistematik hata",
+      "tanim": "Ölçüm aletinden ya da çözümleme yönteminden gelen, tekrarla azalmayan ve hep aynı yöne iten hata.",
+      "kid": "d51t20"
+    }
   ],
   "defter_notu": [
     "Hızlanma (1998, Nobel 2011): gözlemle kesinleşmiş sayılır. Karanlık enerjinin varlığı: güçlü kanıtlı ama açık sorulu.",
@@ -241,44 +428,169 @@
     "5σ ≈ 3,5 milyonda bir; 3σ yalnız kanıt eşiği. Başka yere bakma + sistematik hata."
   ],
   "sorular": [
-    { "soru": "Hızlanan genişleme ile karanlık enerjinin varlığı kesinlik ölçeğinde neden farklı basamaklara konuyor?", "cevap": "Hızlanma birden çok bağımsız yöntemle (süpernova, BAO, CMB + madde miktarı, kümeler) doğrulanan bir gözlemdir; gözlemle kesinleşmiş sayılır. Onu bir enerji bileşeninin, karanlık enerjinin sürdüğü ise güçlü kanıtlıdır ama bu bileşenin ne olduğu, hatta değiştirilmiş kütleçekimi gibi alternatifler açık sorudur." },
-    { "soru": "Süpernovalara hiç bakmadan karanlık enerjinin varlığına nasıl ulaşılır?", "cevap": "Arka plan ışımasındaki lekelerin boyutu uzayın düz olduğunu, yani toplam yoğunluk oranının 1 olduğunu gösterir. Madde (sıradan + karanlık) ise yalnızca ≈ 0,315 eder. Geriye kalan ≈ 0,685 madde olmayan bir bileşen olmalıdır." },
-    { "soru": "Einstein kozmolojik sabiti neden ekledi, neden bıraktı?", "cevap": "1917'de evrenin durağan olduğu sanılıyordu ve kütleçekimi durağan bir evreni çökertirdi; Λ bu çekimi dengelemek için eklendi. 1920'lerde Friedmann ve Lemaître genişleyen modeller önerdi, 1929'da Hubble ilişkiyi buldu; Einstein 1931'de genişleyen modeli benimseyip sabiti gereksiz bularak bıraktı." },
-    { "soru": "Einstein'ın “en büyük hata” sözü hakkında iki tarafın gerekçeleri nedir?", "cevap": "Kuşkucular (Livio 2013): Einstein'ın kendi yazılarında böyle bir ifade yok ve Gamow'un güvenilirliği sorgulandı. Lehtekiler (O'Raifeartaigh ve Mitton 2018): Wheeler ve Alpher de benzer sözü aktarmış, söz Einstein'ın sabiti reddeden yazılarıyla uyumlu; büyük olasılıkla en az bir kez söylendi. Ama Einstein'ın kaleminden bir belge yok." },
-    { "soru": "Evren 3 kat büyüdüğünde madde yoğunluğu ve kozmolojik sabitin yoğunluğu kaç katına iner?", "cevap": "Madde (w = 0): 3⁻³ = 1/27 katına iner. Kozmolojik sabit (w = −1): 3⁰ = 1, değişmez." },
-    { "soru": "w = −0,5 olan bir bileşen genişlemeyi hızlandırabilir mi? Yoğunluğu evren iki kat büyüyünce ne olur?", "cevap": "Evet; w < −1/3 olduğu için baskın hâle gelince hızlandırır. Yoğunluk a^(−3 × 0,5) = a^(−1,5) ile değişir: 2^(−1,5) ≈ 0,35 katına iner." },
-    { "soru": "Casimir etkisi boşluk enerjisinin gerçek olduğunu kanıtlar mı?", "cevap": "Etkinin kendisi gerçektir ve 1997'de Lamoreaux tarafından yüzde 5 içinde ölçüldü. Ama Jaffe 2005'te kuvvetin sıfır noktası enerjisine başvurmadan, yükler ve akımlar arasındaki göreli bir van der Waals kuvveti olarak hesaplanabileceğini gösterdi; bu yüzden boşluk enerjisinin kütleçekimi yaptığının kanıtı sayılmaz." },
-    { "soru": "10¹²⁰ sayısı neden tartışmalıdır, sorun yine de neden ortadan kalkmaz?", "cevap": "Sayı Planck ölçeğinde kesilen kaba bir tahminden gelir ve bu kesme Lorentz değişmezliğini bozar; bu simetriyi koruyan hesaplar farkı yaklaşık 55–56 basamağa indirir. Ama 10⁵⁵ kat da dev bir uyuşmazlıktır ve neden ölçülen değerin bu kadar küçük ama sıfır olmadığı açıklanamamaktadır." },
-    { "soru": "Fantom enerji nedir ve neden Büyük Yırtılma'ya götürür?", "cevap": "w'si −1'den küçük karanlık enerjidir. Yoğunluğu a^(−3(1+w)) ile değiştiği için üs artı olur ve evren genişledikçe yoğunlaşır; Caldwell ve arkadaşlarına göre yoğunluk sonlu sürede sonsuza ulaşıp galaksileri, gezegenleri ve atomları parçalar (w = −1,5 için ≈ 22 milyar yıl)." },
-    { "soru": "GW170817 karanlık enerji kuramlarını nasıl eledi?", "cevap": "130 milyon ışık yılı ötedeki birleşmeden kütleçekim dalgaları ve gama ışınları en çok 2 saniye arayla geldi; iki hızın 10¹⁵'te bir duyarlılıkla aynı olduğu anlaşıldı. Kütleçekim dalgalarının hızını değiştiren birçok değiştirilmiş kütleçekimi modeli (Galileon türleri vb.) böylece dışlandı ya da çok sınırlandı." },
-    { "soru": "w0 = −0,9 ve wa = −0,3 ise z = 1'de w kaçtır? Bu değer −1'in hangi tarafında?", "cevap": "z = 1'de a = 0,5, 1 − a = 0,5. w = −0,9 + (−0,3 × 0,5) = −1,05. −1'in altında, yani o çağda fantom gibi." },
-    { "soru": "Son ve Lee'nin 2025 iddiası nedir, Wiseman ve arkadaşları 2026'da neyi eleştirdi?", "cevap": "Son ve Lee, Ia süpernovalarının parlaklığının ata yıldızın yaşına bağlı olduğunu ve düzeltilince evrenin artık hızlanmadığını savundu. Wiseman, Riess ve arkadaşları, galaksi yaşının patlayan yıldızın yaşına eşit varsayıldığını ve standart ev sahibi kütle düzeltmesinin yapılmadığını yazarak bunun yöntem hatası olduğunu ve hızlanmanın sürdüğünü gösterdi." },
-    { "soru": "Unite çalışmasında frekansçı yöntem 3,1–3,3 sigma verirken Bayesçi kanıt neden yalnızca zayıf bir tercih gösteriyor olabilir?", "cevap": "Bayesçi kanıt, modelleri karmaşıklıklarıyla birlikte karşılaştırır ve fazladan parametresi (w0, wa) olan modele ceza keser; frekansçı anlamlılık bu cezayı aynı biçimde içermez. Bu yüzden aynı veri iki yöntemle farklı güçte bir tercih verebilir." },
-    { "soru": "Birbirinden bağımsız 50 analizde en az birinde 3 sigmalık (p ≈ 0,00135) şans sapması çıkma olasılığı yaklaşık kaçtır?", "cevap": "1 − (1 − 0,00135)⁵⁰ ≈ 1 − 0,935 ≈ 0,065, yani yaklaşık yüzde 6,5." }
+    {
+      "soru": "Hızlanan genişleme ile karanlık enerjinin varlığı kesinlik ölçeğinde neden farklı basamaklara konuyor?",
+      "cevap": "Hızlanma birden çok bağımsız yöntemle (süpernova, BAO, CMB + madde miktarı, kümeler) doğrulanan bir gözlemdir; gözlemle kesinleşmiş sayılır. Onu bir enerji bileşeninin, karanlık enerjinin sürdüğü ise güçlü kanıtlıdır ama bu bileşenin ne olduğu, hatta değiştirilmiş kütleçekimi gibi alternatifler açık sorudur.",
+      "kid": "d51s0"
+    },
+    {
+      "soru": "Süpernovalara hiç bakmadan karanlık enerjinin varlığına nasıl ulaşılır?",
+      "cevap": "Arka plan ışımasındaki lekelerin boyutu uzayın düz olduğunu, yani toplam yoğunluk oranının 1 olduğunu gösterir. Madde (sıradan + karanlık) ise yalnızca ≈ 0,315 eder. Geriye kalan ≈ 0,685 madde olmayan bir bileşen olmalıdır.",
+      "kid": "d51s1"
+    },
+    {
+      "soru": "Einstein kozmolojik sabiti neden ekledi, neden bıraktı?",
+      "cevap": "1917'de evrenin durağan olduğu sanılıyordu ve kütleçekimi durağan bir evreni çökertirdi; Λ bu çekimi dengelemek için eklendi. 1920'lerde Friedmann ve Lemaître genişleyen modeller önerdi, 1929'da Hubble ilişkiyi buldu; Einstein 1931'de genişleyen modeli benimseyip sabiti gereksiz bularak bıraktı.",
+      "kid": "d51s2"
+    },
+    {
+      "soru": "Einstein'ın “en büyük hata” sözü hakkında iki tarafın gerekçeleri nedir?",
+      "cevap": "Kuşkucular (Livio 2013): Einstein'ın kendi yazılarında böyle bir ifade yok ve Gamow'un güvenilirliği sorgulandı. Lehtekiler (O'Raifeartaigh ve Mitton 2018): Wheeler ve Alpher de benzer sözü aktarmış, söz Einstein'ın sabiti reddeden yazılarıyla uyumlu; büyük olasılıkla en az bir kez söylendi. Ama Einstein'ın kaleminden bir belge yok.",
+      "kid": "d51s3"
+    },
+    {
+      "soru": "Evren 3 kat büyüdüğünde madde yoğunluğu ve kozmolojik sabitin yoğunluğu kaç katına iner?",
+      "cevap": "Madde (w = 0): 3⁻³ = 1/27 katına iner. Kozmolojik sabit (w = −1): 3⁰ = 1, değişmez.",
+      "kid": "d51s4"
+    },
+    {
+      "soru": "w = −0,5 olan bir bileşen genişlemeyi hızlandırabilir mi? Yoğunluğu evren iki kat büyüyünce ne olur?",
+      "cevap": "Evet; w < −1/3 olduğu için baskın hâle gelince hızlandırır. Yoğunluk a^(−3 × 0,5) = a^(−1,5) ile değişir: 2^(−1,5) ≈ 0,35 katına iner.",
+      "kid": "d51s5"
+    },
+    {
+      "soru": "Casimir etkisi boşluk enerjisinin gerçek olduğunu kanıtlar mı?",
+      "cevap": "Etkinin kendisi gerçektir ve 1997'de Lamoreaux tarafından yüzde 5 içinde ölçüldü. Ama Jaffe 2005'te kuvvetin sıfır noktası enerjisine başvurmadan, yükler ve akımlar arasındaki göreli bir van der Waals kuvveti olarak hesaplanabileceğini gösterdi; bu yüzden boşluk enerjisinin kütleçekimi yaptığının kanıtı sayılmaz.",
+      "kid": "d51s6"
+    },
+    {
+      "soru": "10¹²⁰ sayısı neden tartışmalıdır, sorun yine de neden ortadan kalkmaz?",
+      "cevap": "Sayı Planck ölçeğinde kesilen kaba bir tahminden gelir ve bu kesme Lorentz değişmezliğini bozar; bu simetriyi koruyan hesaplar farkı yaklaşık 55–56 basamağa indirir. Ama 10⁵⁵ kat da dev bir uyuşmazlıktır ve neden ölçülen değerin bu kadar küçük ama sıfır olmadığı açıklanamamaktadır.",
+      "kid": "d51s7"
+    },
+    {
+      "soru": "Fantom enerji nedir ve neden Büyük Yırtılma'ya götürür?",
+      "cevap": "w'si −1'den küçük karanlık enerjidir. Yoğunluğu a^(−3(1+w)) ile değiştiği için üs artı olur ve evren genişledikçe yoğunlaşır; Caldwell ve arkadaşlarına göre yoğunluk sonlu sürede sonsuza ulaşıp galaksileri, gezegenleri ve atomları parçalar (w = −1,5 için ≈ 22 milyar yıl).",
+      "kid": "d51s8"
+    },
+    {
+      "soru": "GW170817 karanlık enerji kuramlarını nasıl eledi?",
+      "cevap": "130 milyon ışık yılı ötedeki birleşmeden kütleçekim dalgaları ve gama ışınları en çok 2 saniye arayla geldi; iki hızın 10¹⁵'te bir duyarlılıkla aynı olduğu anlaşıldı. Kütleçekim dalgalarının hızını değiştiren birçok değiştirilmiş kütleçekimi modeli (Galileon türleri vb.) böylece dışlandı ya da çok sınırlandı.",
+      "kid": "d51s9"
+    },
+    {
+      "soru": "w0 = −0,9 ve wa = −0,3 ise z = 1'de w kaçtır? Bu değer −1'in hangi tarafında?",
+      "cevap": "z = 1'de a = 0,5, 1 − a = 0,5. w = −0,9 + (−0,3 × 0,5) = −1,05. −1'in altında, yani o çağda fantom gibi.",
+      "kid": "d51s10"
+    },
+    {
+      "soru": "Son ve Lee'nin 2025 iddiası nedir, Wiseman ve arkadaşları 2026'da neyi eleştirdi?",
+      "cevap": "Son ve Lee, Ia süpernovalarının parlaklığının ata yıldızın yaşına bağlı olduğunu ve düzeltilince evrenin artık hızlanmadığını savundu. Wiseman, Riess ve arkadaşları, galaksi yaşının patlayan yıldızın yaşına eşit varsayıldığını ve standart ev sahibi kütle düzeltmesinin yapılmadığını yazarak bunun yöntem hatası olduğunu ve hızlanmanın sürdüğünü gösterdi.",
+      "kid": "d51s11"
+    },
+    {
+      "soru": "Unite çalışmasında frekansçı yöntem 3,1–3,3 sigma verirken Bayesçi kanıt neden yalnızca zayıf bir tercih gösteriyor olabilir?",
+      "cevap": "Bayesçi kanıt, modelleri karmaşıklıklarıyla birlikte karşılaştırır ve fazladan parametresi (w0, wa) olan modele ceza keser; frekansçı anlamlılık bu cezayı aynı biçimde içermez. Bu yüzden aynı veri iki yöntemle farklı güçte bir tercih verebilir.",
+      "kid": "d51s12"
+    },
+    {
+      "soru": "Birbirinden bağımsız 50 analizde en az birinde 3 sigmalık (p ≈ 0,00135) şans sapması çıkma olasılığı yaklaşık kaçtır?",
+      "cevap": "1 − (1 − 0,00135)⁵⁰ ≈ 1 − 0,935 ≈ 0,065, yani yaklaşık yüzde 6,5.",
+      "kid": "d51s13"
+    }
   ],
   "kaynaklar": [
-    { "ad": "Nobel Vakfı: 2011 Nobel Fizik Ödülü basın bülteni", "url": "https://www.nobelprize.org/prizes/physics/2011/press-release/" },
-    { "ad": "Planck İşbirliği: Planck 2018 results VI. Cosmological parameters", "url": "https://arxiv.org/pdf/1807.06209v4" },
-    { "ad": "Frieman: Lectures on Dark Energy and Cosmic Acceleration", "url": "https://arxiv.org/pdf/0904.1832" },
-    { "ad": "Physics Today (O'Raifeartaigh): Investigating the legend of Einstein's biggest blunder", "url": "https://physicstoday.aip.org/opinion/investigating-the-legend-of-einsteins-biggest-blunder" },
-    { "ad": "O'Raifeartaigh ve Mitton (2018): Interrogating the legend of Einstein's “Biggest Blunder”", "url": "https://www.arxiv.org/abs/1804.06768" },
-    { "ad": "Wikipedia: Cosmological constant problem", "url": "https://en.wikipedia.org/wiki/Cosmological_constant_problem" },
-    { "ad": "Martin (2012): Everything you always wanted to know about the cosmological constant problem", "url": "https://arxiv.org/abs/1205.3365" },
-    { "ad": "Wikipedia: Casimir effect", "url": "https://en.wikipedia.org/wiki/Casimir_effect" },
-    { "ad": "Jaffe (2005): The Casimir Effect and the Quantum Vacuum", "url": "https://arxiv.org/abs/hep-th/0503158" },
-    { "ad": "Wikipedia: Quintessence (physics)", "url": "https://en.wikipedia.org/wiki/Quintessence_(physics)" },
-    { "ad": "Caldwell, Kamionkowski ve Weinberg (2003): Phantom Energy and Cosmic Doomsday", "url": "https://ar5iv.labs.arxiv.org/html/astro-ph/0302506" },
-    { "ad": "APS Physics (Schmidt): GW170817 ve karanlık enerji", "url": "https://physics.aps.org/articles/v10/134" },
-    { "ad": "Wikipedia: Accelerating expansion of the universe", "url": "https://en.wikipedia.org/wiki/Cosmic_acceleration" },
-    { "ad": "Sci.News: Our Universe Has Already Entered Decelerating Phase, Study Suggests (Kasım 2025)", "url": "https://www.sci.news/astronomy/decelerating-universe-14336.html" },
-    { "ad": "Sci.News: New Supernova Study Confirms Universe's Expansion is Still Accelerating (Haziran 2026)", "url": "https://www.sci.news/astronomy/universes-accelerating-expansion-14851.html" },
-    { "ad": "DESI İşbirliği: DESI DR2 Results II: Measurements of BAO and Cosmological Constraints", "url": "https://arxiv.org/pdf/2503.14738" },
-    { "ad": "Efstathiou: Evolving Dark Energy or Supernovae Systematics?", "url": "https://arxiv.org/html/2408.07175v3" },
-    { "ad": "Vincenzi ve ark. (DES, 2025): Comparing the DES-SN5YR and Pantheon+ SN cosmology analyses", "url": "https://arxiv.org/pdf/2501.06664" },
-    { "ad": "Ó Colgáin ve ark.: How much has DESI dark energy evolved since DR1?", "url": "https://arxiv.org/abs/2504.04417v4" },
-    { "ad": "Camilleri ve ark. (2026, ön baskı): Supernovae Unite: Combining Pantheon+ and DES-SN5YR", "url": "https://arxiv.org/abs/2609.05053" },
-    { "ad": "Scientific American: 5 Sigma What's That?", "url": "https://www.scientificamerican.com/blog/observations/five-sigmawhats-that/" },
-    { "ad": "APS 2026 toplantısı özeti: DESI: Overview and the Latest Cosmological Results", "url": "https://meetings-archive.aps.org/smt/2026/apr-w79/1/" },
-    { "ad": "NIST CODATA sabitleri", "url": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt" }
+    {
+      "ad": "Nobel Vakfı: 2011 Nobel Fizik Ödülü basın bülteni",
+      "url": "https://www.nobelprize.org/prizes/physics/2011/press-release/"
+    },
+    {
+      "ad": "Planck İşbirliği: Planck 2018 results VI. Cosmological parameters",
+      "url": "https://arxiv.org/pdf/1807.06209v4"
+    },
+    {
+      "ad": "Frieman: Lectures on Dark Energy and Cosmic Acceleration",
+      "url": "https://arxiv.org/pdf/0904.1832"
+    },
+    {
+      "ad": "Physics Today (O'Raifeartaigh): Investigating the legend of Einstein's biggest blunder",
+      "url": "https://physicstoday.aip.org/opinion/investigating-the-legend-of-einsteins-biggest-blunder"
+    },
+    {
+      "ad": "O'Raifeartaigh ve Mitton (2018): Interrogating the legend of Einstein's “Biggest Blunder”",
+      "url": "https://www.arxiv.org/abs/1804.06768"
+    },
+    {
+      "ad": "Wikipedia: Cosmological constant problem",
+      "url": "https://en.wikipedia.org/wiki/Cosmological_constant_problem"
+    },
+    {
+      "ad": "Martin (2012): Everything you always wanted to know about the cosmological constant problem",
+      "url": "https://arxiv.org/abs/1205.3365"
+    },
+    {
+      "ad": "Wikipedia: Casimir effect",
+      "url": "https://en.wikipedia.org/wiki/Casimir_effect"
+    },
+    {
+      "ad": "Jaffe (2005): The Casimir Effect and the Quantum Vacuum",
+      "url": "https://arxiv.org/abs/hep-th/0503158"
+    },
+    {
+      "ad": "Wikipedia: Quintessence (physics)",
+      "url": "https://en.wikipedia.org/wiki/Quintessence_(physics)"
+    },
+    {
+      "ad": "Caldwell, Kamionkowski ve Weinberg (2003): Phantom Energy and Cosmic Doomsday",
+      "url": "https://ar5iv.labs.arxiv.org/html/astro-ph/0302506"
+    },
+    {
+      "ad": "APS Physics (Schmidt): GW170817 ve karanlık enerji",
+      "url": "https://physics.aps.org/articles/v10/134"
+    },
+    {
+      "ad": "Wikipedia: Accelerating expansion of the universe",
+      "url": "https://en.wikipedia.org/wiki/Cosmic_acceleration"
+    },
+    {
+      "ad": "Sci.News: Our Universe Has Already Entered Decelerating Phase, Study Suggests (Kasım 2025)",
+      "url": "https://www.sci.news/astronomy/decelerating-universe-14336.html"
+    },
+    {
+      "ad": "Sci.News: New Supernova Study Confirms Universe's Expansion is Still Accelerating (Haziran 2026)",
+      "url": "https://www.sci.news/astronomy/universes-accelerating-expansion-14851.html"
+    },
+    {
+      "ad": "DESI İşbirliği: DESI DR2 Results II: Measurements of BAO and Cosmological Constraints",
+      "url": "https://arxiv.org/pdf/2503.14738"
+    },
+    {
+      "ad": "Efstathiou: Evolving Dark Energy or Supernovae Systematics?",
+      "url": "https://arxiv.org/html/2408.07175v3"
+    },
+    {
+      "ad": "Vincenzi ve ark. (DES, 2025): Comparing the DES-SN5YR and Pantheon+ SN cosmology analyses",
+      "url": "https://arxiv.org/pdf/2501.06664"
+    },
+    {
+      "ad": "Ó Colgáin ve ark.: How much has DESI dark energy evolved since DR1?",
+      "url": "https://arxiv.org/abs/2504.04417v4"
+    },
+    {
+      "ad": "Camilleri ve ark. (2026, ön baskı): Supernovae Unite: Combining Pantheon+ and DES-SN5YR",
+      "url": "https://arxiv.org/abs/2609.05053"
+    },
+    {
+      "ad": "Scientific American: 5 Sigma What's That?",
+      "url": "https://www.scientificamerican.com/blog/observations/five-sigmawhats-that/"
+    },
+    {
+      "ad": "APS 2026 toplantısı özeti: DESI: Overview and the Latest Cosmological Results",
+      "url": "https://meetings-archive.aps.org/smt/2026/apr-w79/1/"
+    },
+    {
+      "ad": "NIST CODATA sabitleri",
+      "url": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt"
+    }
   ]
 }

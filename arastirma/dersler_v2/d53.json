@@ -1,626 +1,677 @@
 {
- "id": "d53",
- "unite": "kuramlar",
- "yeni": true,
- "baslik": "Kuantum Kütleçekim ve Sicim Kuramı: Fiziğin Kayıp Parçası",
- "ozet": "Genel görelilik ile kuantum fiziği kendi alanlarında her sınavı geçti, ama birbirleriyle birleşmiyor. Bu derste nedenini, sorunun ortaya çıktığı Planck ölçeklerini (NIST değerleriyle), sicim kuramını, ek boyutları, süpersimetriyi, M-kuramını ve 10⁵⁰⁰ çözümlü manzarayı, döngü kuantum kütleçekimini ve diğer adayları öğreneceksin. Sicim kuramının test edilebilirliği üzerine süren tartışmayı iki tarafın kaynaklı sesleriyle dinleyecek, gökyüzünden ve laboratuvar masasından gelen ilk deneysel ipuçlarına bakacaksın. Her iddianın kesinlik etiketi açıkça söyleniyor.",
- "on_bilgi": [
-  "d26",
-  "d28",
-  "d32"
- ],
- "bolumler": [
-  {
-   "baslik": "İki dev kuram, tek evren",
-   "paragraflar": [
-    "d26'nın son bölümünde genel göreliliğin ölçülebilen her sınavı geçtiğini, ama kuantum fiziğiyle uyuşmadığını gördün. d28 ve d32'de de kuantum dünyasının atomları, parçacıkları ve üç temel kuvveti ne kadar iyi anlattığını okudun. Bu ders o iki dev kuramın arasındaki çatlağa bakıyor. Kuantum kütleçekim, kütleçekimini kuantum mekaniğinin ilkeleriyle tek bir tutarlı kurama bağlamaya çalışan kuramsal fizik alanının adıdır. Dört temel kuvvetten elektromanyetizma, güçlü ve zayıf kuvvet kuantum alan kuramıyla anlatılır; kütleçekimi bu çerçeveye tam olarak oturtulamamış tek kuvvettir.",
-    "Peki bu çatlak neden günlük hayatta hiç hissedilmez? Çünkü iki kuramın birlikte gerektiği yerler çok uçtadır. Atom ölçeğinde kütleçekimi akıl almayacak kadar zayıftır; aşağıdaki örnekte iki proton arasındaki elektrik itmesinin kütleçekiminden yaklaşık 10³⁶ kat güçlü olduğunu hesaplayacaksın. Gezegen ve galaksi ölçeğinde ise kuantum etkileri ortalamada silinir. İkisinin birden önemli olduğu yerler, kara deliklerin merkezi ve Büyük Patlama'nın ilk anıdır. Wikipedia'nın kuantum kütleçekim maddesi de alanın tam bu ortamlarla ilgilendiğini yazar: kara deliklerin çevresi ve evrenin ilk anları.",
-    "Bu ünitede her önemli iddiaya, d50'de tanıdığın dört kesinlik etiketinden birini takıyoruz: gözlemle kesinleşmiş, güçlü kanıtlı ama açık sorulu, kuram ya da hipotez ve spekülasyon. Bu derste pek çok fikir üçüncü basamakta, kuram ya da hipotez düzeyinde duracak. Nedeni basit: Wikipedia'ya göre bugün tam ve tutarlı bir kuantum kütleçekim kuramı yok ve aday kuramların öngörülerini deneyle sınamanın bir yolu henüz bulunamadı. Bir fikrin popüler olması ya da ünlü fizikçilerce savunulması onu kanıtlanmış yapmaz. Bunu ders boyunca, iki tarafın da sesini duyarak göreceksin.",
-    "Yol haritamız şöyle: önce iki kuramın neden birleşmediğini ve sorunun hangi ölçekte ortaya çıktığını, yani Planck ölçeklerini göreceğiz. Sonra en çok çalışılan iki adayı, sicim kuramını ve döngü kuantum kütleçekimini, ardından daha küçük ama ciddi yaklaşımları tanıyacağız. Dersin en önemli bölümlerinden ikisi, sicim kuramının test edilebilirliği üzerine süren tartışmaya ayrıldı. En sonda da gökyüzünden ve laboratuvar masasından gelen ilk deneysel ipuçlarına bakacağız."
-   ],
-   "ornek": {
-    "baslik": "Örnek: İki proton arasında elektrik mi, kütleçekim mi?",
-    "metin": "Elektrik kuvveti k × e² ÷ r², kütleçekim kuvveti G × m² ÷ r² ile verilir; ikisi de uzaklığın karesiyle azaldığı için oranları uzaklığa bağlı değildir. NIST'in CODATA 2022 değerleriyle: e = 1,602 × 10⁻¹⁹ coulomb, k = 1 ÷ (4πε₀) ≈ 8,99 × 10⁹, G = 6,674 × 10⁻¹¹, proton kütlesi m = 1,673 × 10⁻²⁷ kg. Pay: 8,99 × 10⁹ × (1,602 × 10⁻¹⁹)² ≈ 2,31 × 10⁻²⁸. Payda: 6,674 × 10⁻¹¹ × (1,673 × 10⁻²⁷)² ≈ 1,87 × 10⁻⁶⁴. Oran ≈ 2,31 × 10⁻²⁸ ÷ 1,87 × 10⁻⁶⁴ ≈ 1,2 × 10³⁶. Sonuç: iki proton arasındaki elektrik itmesi, kütleçekiminden yaklaşık 1,2 × 10³⁶ kat güçlüdür; bu yüzden parçacık deneylerinde kütleçekimi rahatça yok sayılır."
-   },
-   "akilda": "Kuantum kütleçekim, kütleçekimini kuantum ilkeleriyle birleştirme çabasıdır. İki kuramın birlikte gerektiği yerler kara delik merkezleri ve Büyük Patlama'nın ilk anıdır. Tam ve sınanmış bir kuram yok; bu dersteki adayların çoğu kuram ya da hipotez düzeyindedir."
-  },
-  {
-   "baslik": "Neden birleşmiyorlar? Sonsuzluklar ve sahne sorunu",
-   "paragraflar": [
-    "d29'da kuantum elektrodinamiğini, yani QED'i, tanımıştın. Bu tür kuramların hesaplarında sonsuz sonuçlar belirir ve bunlarla başa çıkmanın yoluna renormalizasyon denir: sonsuz çıkan katkılar, sayısı sonlu ve ölçülebilen birkaç büyüklüğe soğurulur. Wikipedia'ya göre QED'de bunlar belli bir enerjide ölçülen elektron yükü ve kütlesidir. Bu birkaç sayıyı deneyden bir kez aldıktan sonra kuram her şeyi öngörebilir. Kütleçekimini de aynı yoldan kuantumlaştırmayı denediğinde iş bozulur. Wikipedia'ya göre kütleçekimi bu anlamda renormalize edilemez: kuramı tanımlamak için sonsuz sayıda bağımsız parametre gerekir ve her birini sabitlemek için sonsuz sayıda deney yapman gerekirdi.",
-    "Graviton maddesi sorunu Feynman diyagramlarıyla anlatır: tek döngülü diyagramlar düzgün davranır, ama en az iki döngülü diyagramlar yok edilemeyen sonsuzluklar verir. Bir benzetme: bir yemek tarifinin her yeni malzemesi için ayrı bir tadım yapman gerekseydi ve malzeme listesi hiç bitmeseydi, tarif hiçbir şeyi önceden söyleyemezdi. Benzetmenin sınırı şu: sorun malzeme bolluğu değil, yüksek enerjide her bir bilinmeyen parametrenin sonuca karışmaya başlamasıdır. Dikkat: bu bir gözlem değil, hesapla gösterilmiş matematiksel bir sonuçtur.",
-    "Ama alçak enerjide durum o kadar kötü değil. Efektif alan kuramı denen yaklaşımda, yüksek enerjide önemli olan bilinmeyen terimler çok büyük bir enerji ölçeğiyle bastırıldığı için yok sayılabilir ve kuram alçak enerjide öngörü yapabilir. Wikipedia bunun iki örneğini verir: iki kütle arasındaki Newton çekimine gelen çok küçük kuantum düzeltmesi ve kara delik entropisi formülüne gelen düzeltmeler. Yani kuantum fiziği ile kütleçekimi gündelik enerjilerde birlikte kullanılabilir; sorun, enerji Planck ölçeğine yaklaştıkça bütün bilinmeyenlerin aynı anda önem kazanmasıdır. Wikipedia iki kaçış yolu sayar: kütleçekiminin çok yüksek enerjide sabit bir noktaya oturması, ya da parametreleri sınırlayan yeni bir simetri. İlki asimptotik güvenlik, ikincisi sicim kuramının yoludur.",
-    "İkinci sorun daha kavramsaldır. Kuantum alan kuramında uzay-zaman sabit bir sahnedir; parçacıklar bu sahnede oynayan oyunculardır. Genel görelilikte ise sahne de oyuncudur: madde uzay-zamanı eğer, eğri uzay-zaman maddenin nasıl hareket edeceğini belirler. Bu özelliğe arka plan bağımsızlığı denir. Tiyatro benzetmesinin sınırı da burada: gerçek bir sahne oyunculardan etkilenip şekil değiştirmez, uzay-zaman ise değiştirir. Wikipedia ilginç bir sonuca dikkat çeker: kuantum kütleçekimde geometri de kuantum nesnesi olduğu için, iki noktanın birbirini etkileyip etkileyemeyeceği bile bir süperpozisyon içinde olabilir. Bu da kuantum alan kuramının dayandığı yerellik ilkesini sarsar.",
-    "Üçüncü sorun zamanın kendisidir. Kuantum mekaniğinde zaman, dışarıdan işleyen ve durumların içinde değiştiği bağımsız bir parametredir. Genel görelilikte ise zaman da dinamiktir; d26'da yükseklikle saatlerin farklı işlediğini, GPS'in buna göre düzeltildiğini gördün. Wikipedia bu çatışmaya zaman sorunu adını verir. İki kuramın da kendi alanında doğru olduğu gözlemle kesinleşmiş durumda; sorun, ikisinin dilinin birbirine çevrilememesidir."
-   ],
-   "akilda": "Kütleçekimi alışılmış yoldan kuantumlaştırılınca renormalize edilemez: yüksek enerjide sonsuz sayıda bilinmeyen parametre gerekir. Alçak enerjide efektif alan kuramı olarak çalışır. Ayrıca genel görelilikte uzay-zaman sabit bir sahne değil, dinamik bir oyuncudur ve zamanın anlamı iki kuramda farklıdır."
-  },
-  {
-   "baslik": "Planck ölçekleri: doğanın kendi cetveli",
-   "paragraflar": [
-    "Metre ve saniye insan yapımı birimlerdir. 1899'da Max Planck, yalnızca doğanın evrensel sabitlerinden, yani ışık hızı c, kütleçekim sabiti G, Planck sabiti ve Boltzmann sabitinden kurulan bir birim sistemi önerdi. Bugün bunlara Planck birimleri denir. Wikipedia'ya göre Planck'ın amacı yalnızca evrensel ve doğal bir ölçme yolu bulmaktı; bu birimlere özel bir fiziksel anlam yüklemiyordu. 1950'lerde Lev Landau ve Oskar Klein gibi fizikçiler bu ölçeklerin kuantum alan kuramının geçerlilik sınırına işaret ettiğini ileri sürdü. John Wheeler da 1955'te uzay-zamanın kuantum dalgalanmalarının bu ölçekte önem kazanacağını önerdi.",
-    "NIST'in yayımladığı CODATA 2022 değerleri şöyle. Planck uzunluğu 1,616255 × 10⁻³⁵ m, Planck zamanı 5,391247 × 10⁻⁴⁴ s, Planck kütlesi 2,176434 × 10⁻⁸ kg, Planck enerjisi 1,220890 × 10¹⁹ milyar elektronvolt, Planck sıcaklığı 1,416784 × 10³² K. Hepsinin göreli belirsizliği yaklaşık 1,1 × 10⁻⁵'tir. Bu belirsizlik G'den gelir: NIST'e göre G'nin göreli belirsizliği 2,2 × 10⁻⁵'tir, Planck birimleri G'nin karekökünü içerdiği için bu belirsizlik yarıya iner. G, temel sabitler arasında en az hassas ölçülenlerden biridir.",
-    "Bu sayıların ilginç bir uyumu var: Planck zamanı, ışığın bir Planck uzunluğunu geçmesi için gereken süredir; 5,39 × 10⁻⁴⁴ s ile ışık hızını çarparsan yine 1,616 × 10⁻³⁵ m bulursun. Hepsi uç değildir: Wikipedia'ya göre Planck kütlesi yaklaşık 22 mikrogramdır, yani parçacıklara göre dev ama canlıların kütle aralığında. Planck sıcaklığının ötesini ise bilinen hiçbir fizik modeli anlatamaz. d8'deki Planck çağı da evrenin ilk yaklaşık 10⁻⁴³ saniyesini anlatır; bu dönem için elimizde doğrulanmış bir kuram yoktur.",
-    "Sık duyulan bir iddiayı burada düzeltelim: Planck uzunluğunun doğadaki en küçük uzunluk olduğu kanıtlanmış değildir. Wikipedia'ya göre 1950'lerden beri uzay-zamanın bu ölçekte bir köpüğe dönüşebileceği, ölçülebilecek en kısa uzaklığın Planck uzunluğu olabileceği öne sürülüyor, çünkü daha kısa uzaklıkları yoklamak için gereken enerji bir kara delik yaratabilir. Bunun kesinlik etiketi kuram ya da hipotez, köpük resminin kendisi ise spekülasyondur. Hatta büyük ek boyutlu kuramlarda gerçek, temel Planck uzunluğu G'den hesaplanan değerden farklı çıkabilir. Kesin olan şu: bu ölçek, bugünkü kuramlarımızın birlikte çalışmayı bıraktığı yeri gösterir."
-   ],
-   "ornek": {
-    "baslik": "Örnek: Planck uzunluğu ne kadar küçük?",
-    "metin": "NIST'e göre protonun yük yarıçapı 8,4075 × 10⁻¹⁶ m, Planck uzunluğu 1,616 × 10⁻³⁵ m. Oran: 8,41 × 10⁻¹⁶ ÷ 1,616 × 10⁻³⁵ ≈ 5,2 × 10¹⁹. Karşılaştırma için 1,7 m boyunda bir insan protondan 1,7 ÷ 8,41 × 10⁻¹⁶ ≈ 2,0 × 10¹⁵ kat büyüktür. Yani proton Planck uzunluğuna göre, insanın protona göre olduğundan 5,2 × 10¹⁹ ÷ 2,0 × 10¹⁵ ≈ 26.000 kat daha büyüktür. Sonuç: Planck uzunluğu protondan yaklaşık 5 × 10¹⁹ kat küçüktür; Wikipedia'nın “proton çapının yaklaşık 10⁻²⁰ katı” ifadesiyle uyumlu."
-   },
-   "akilda": "Planck birimleri yalnız c, G ve Planck sabitinden kurulur (1899). NIST CODATA 2022: uzunluk 1,616255 × 10⁻³⁵ m, zaman 5,391247 × 10⁻⁴⁴ s, kütle 2,176434 × 10⁻⁸ kg, enerji 1,22 × 10¹⁹ milyar elektronvolt. Planck uzunluğunun en küçük uzunluk olduğu kanıtlanmadı."
-  },
-  {
-   "baslik": "Planck enerjisi neden ulaşılmaz?",
-   "paragraflar": [
-    "d27 ve d32'de küçük şeyleri görmek için kısa dalga boyuna, kısa dalga boyu için de yüksek enerjiye ihtiyaç olduğunu gördün. Kabaca, yoklanacak uzunluk ile gereken enerjinin çarpımı sabit bir sayıdır: indirgenmiş Planck sabiti çarpı ışık hızı. NIST'e göre bu çarpımın kesin değeri 197,327 milyon elektronvolt çarpı femtometredir; bir femtometre 10⁻¹⁵ m'dir. Yani gereken enerji, bu sayının yoklanacak uzunluğa bölümüdür. Bu basit bağıntı neden Planck ölçeğine bugün ulaşamadığımızı tek satırda gösterir.",
-    "d32'de LHC'nin 2022'de başlayan üçüncü çalışma döneminde 13,6 trilyon elektronvolt çarpışma enerjisine ulaştığını okudun. Bu enerjiyle yoklanabilecek uzunluk yaklaşık 1,5 × 10⁻²⁰ m'dir. Planck uzunluğu ise bunun yaklaşık 10¹⁵ katı küçüktür. Enerji tarafından bakınca da aynı uçurum çıkar: Planck enerjisi, LHC'nin çarpışma enerjisinin yaklaşık 9 × 10¹⁴ katıdır. d26'da “yaklaşık on beş basamak” denen fark budur.",
-    "İşin tuhaf yanı, Planck enerjisi gündelik ölçüde büyük bir enerji değildir. Joule'e çevirince yaklaşık 1,96 × 10⁹ J eder. Wikipedia bunu bir otomobilin deposundaki yakıtın yanmasıyla açığa çıkan enerjiye benzetir: 57,2 litre çarpı litre başına 34,2 megajoule. Sorun miktar değil, yoğunluktur: bu enerjinin tek bir parçacığa yüklenmesi gerekir. Doğanın kendi hızlandırıcıları bile uzak kalır: Wikipedia'ya göre 1991'de gözlenen en enerjik kozmik ışın parçacığı yaklaşık 50 J taşıyordu, yani Planck enerjisinin yalnızca 2,5 × 10⁻⁸'i kadar.",
-    "Kaba bir hesap uçurumu somutlaştırır. Mıknatıslar aynı güçte kalsaydı, dairesel bir hızlandırıcının ulaşabileceği enerji kabaca halkanın büyüklüğüyle artardı. O zaman 27 km'lik LHC halkasını 9 × 10¹⁴ kat büyütmek gerekirdi: yaklaşık 2,4 × 10¹⁹ m, yani 2.500 ışık yılı. Bu bir tasarım değil, yalnızca ölçeği hissettiren bir düşünce deneyidir. Üstelik Wikipedia'ya göre o enerjilerde çarpışmalar maddeyi daha küçük parçalara ayırmak yerine kara delik üretebilir. Bu yüzden fizikçiler doğrudan yoklamayı değil, küçük etkilerin çok büyük uzaklıklarda ya da çok hassas ölçümlerde birikmesini arıyor. Dersin sonunda bunlara döneceğiz."
-   ],
-   "ornek": {
-    "baslik": "Örnek: Planck uzunluğunu yoklamak için ne kadar enerji gerekir?",
-    "metin": "Bağıntı: enerji ≈ 197,327 milyon elektronvolt çarpı femtometre ÷ uzunluk. Planck uzunluğu femtometre cinsinden: 1,616 × 10⁻³⁵ m = 1,616 × 10⁻²⁰ femtometre. Enerji ≈ 197,327 ÷ 1,616 × 10⁻²⁰ ≈ 1,22 × 10²² milyon elektronvolt = 1,22 × 10¹⁹ milyar elektronvolt; NIST'in Planck enerjisiyle aynı. LHC ile karşılaştır: 1,22 × 10¹⁹ ÷ 13.600 ≈ 9,0 × 10¹⁴. Joule'e çevir: 1,22 × 10¹⁹ × 1,602 × 10⁻¹⁰ J ≈ 1,96 × 10⁹ J; 57,2 litre × 34,2 megajoule ≈ 1,96 × 10⁹ J. Sonuç: Planck enerjisi bir yakıt deposu kadar enerjiyi tek bir parçacığa yüklemek demektir ve LHC'nin yaklaşık 10¹⁵ katıdır."
-   },
-   "akilda": "Bir uzunluğu yoklamak için gereken enerji kabaca o uzunlukla ters orantılıdır. Planck enerjisi LHC'nin yaklaşık 9 × 10¹⁴ katıdır; joule olarak bir yakıt deposu kadardır ama tek parçacıkta toplanması gerekir. Doğrudan yoklama imkânsıza yakın; umut dolaylı, birikimli etkilerde."
-  },
-  {
-   "baslik": "Graviton: görülmesi neredeyse imkânsız parçacık",
-   "paragraflar": [
-    "d32'de kuvvetlerin taşıyıcı parçacıklarla anlatıldığını gördün: foton, gluon, W ve Z. Kütleçekimi için öngörülen taşıyıcıya graviton denir. Wikipedia'ya göre terim 1934'te Sovyet fizikçiler Dmitriy Blokhintsev ve Fyodor Galperin tarafından kondu. Graviton varsa kütlesiz olmalıdır, çünkü kütleçekimi çok uzun menzillidir ve ışık hızıyla yayılır. Spini de 2 olmalıdır, çünkü kütleçekiminin kaynağı yalnız kütle değil, enerji ve momentumun tamamıdır; elektromanyetizmanın spini 1 olan fotonundan farkı buradan gelir. Gravitonun varlığının kesinlik etiketi kuram ya da hipotezdir: kuramsal olarak çok doğal, gözlemsel olarak yok.",
-    "Tek bir gravitonu yakalamak neden bu kadar zor? Wikipedia çarpıcı bir hesap aktarır: Jüpiter kütlesinde, yüzde yüz verimli bir dedektör bir nötron yıldızının yakın yörüngesine konsa bile, en elverişli koşullarda on yılda bir graviton görmesi beklenir. Sorun gravitonların maddeyle son derece zayıf etkileşmesidir. Bu yüzden tek tek gravitonları yakalamak hiçbir doğa yasasına aykırı olmasa da makul hiçbir dedektörle mümkün görünmüyor.",
-    "LIGO ve Virgo'nun kütleçekim dalgalarını yakalaması (d16) gravitonları görmek anlamına gelmez. Bir radyo anteni de radyo dalgasını ölçer, tek tek fotonları saymaz. Ama dalgalar gravitonun özelliklerine sınır koyar. Graviton kütleli olsaydı dalgalar ışıktan yavaş yayılırdı. Wikipedia'ya göre kütleçekim dalgası gözlemlerinden çıkan üst sınır, graviton kütlesi için 7,7 × 10⁻²³ elektronvolttur; Cassini ve MESSENGER'ın gezegen yörüngesi ölçümleri de 3,16 × 10⁻²³ elektronvolt gibi benzer bir sınır verir. Kütleçekim dalgalarının varlığı gözlemle kesinleşmiş, gravitonun kütlesiz olduğu ise bu ölçümlerin duyarlılığı içinde tutarlıdır."
-   ],
-   "akilda": "Graviton, kütleçekimini taşıması beklenen kütlesiz, spini 2 olan varsayımsal parçacıktır; kesinlik etiketi kuram ya da hipotez. Tek bir gravitonu yakalamak makul hiçbir dedektörle mümkün görünmüyor. Kütleçekim dalgaları graviton kütlesinin 7,7 × 10⁻²³ elektronvoltun altında olduğunu gösterir."
-  },
-  {
-   "baslik": "Sicim kuramı: noktaların yerine titreşen teller",
-   "paragraflar": [
-    "Sicim kuramının temel fikri basittir: parçacıklar sıfır boyutlu noktalar değil, tek boyutlu küçük sicimlerdir. Wikipedia'ya göre bu sicimlerin boyunun Planck uzunluğu, yani yaklaşık 10⁻³⁵ m düzeyinde olduğu varsayılır. Laboratuvar ölçeğinden bakınca bir sicim noktadan ayırt edilemez. Ama sicimin hangi biçimde titreştiği, onun hangi parçacık olarak göründüğünü, yani kütlesini ve yükünü belirler. Gitar teli benzetmesi buradan gelir: aynı tel farklı titreşimlerle farklı notalar çıkarır. Benzetmenin sınırı: gitar teli var olan bir uzayda titreşir ve notalar kulağımıza ulaşan ses dalgalarıdır; sicim kuramında ise parçacığın kendisi titreşim biçimidir ve hesap kuantum kurallarıyla yapılır.",
-    "Kuramın hikâyesi bir kazayla başlar. Wikipedia'ya göre sicim kuramı 1960'ların sonunda güçlü kuvvetin, yani protonları ve nötronları oluşturan parçacıkların kuramı olarak doğdu. 1969–1970'te Yoichiro Nambu, Holger Bech Nielsen ve Leonard Susskind formüllerin titreşen sicimlerle anlatılabileceğini fark etti. Ama güçlü kuvvet için kuantum renk dinamiği kazandı. 1974'te Tamiaki Yoneya ve ondan bağımsız olarak John Schwarz ile Joël Scherk, bütün sicim kuramlarında kütlesiz, spini 2 olan bir titreşim olduğunu, yani bir graviton bulunduğunu gördü. Schwarz ve Scherk cesur bir adım atıp sicim kuramının hadronların değil kütleçekiminin kuramı olduğunu önerdi. Kütleçekimi istenmeden, kendiliğinden gelmişti.",
-    "Sonraki on yıl kuram az ilgi gördü. 1984'te Michael Green ve John Schwarz, kuramın tutarlılığını tehdit eden bir anomali hesabında daha önce gözden kaçmış bir katkı buldu. Edward Witten bu hesapla sicim kuramının tutarlı bir kütleçekim kuramı olduğuna ikna oldu ve 1984–1986 arasında yüzlerce fizikçi alana girdi; buna birinci süpersicim devrimi denir. Süpersicim kuramı, hem kuvvet taşıyan bozonları hem madde parçacıkları olan fermiyonları içeren ve süpersimetriyi barındıran sicim kuramıdır. Wikipedia'ya göre beş sürümü vardır: tip I, tip IIA, tip IIB ve iki heterotik kuram.",
-    "Kuramın bugünkü durumu dürüstçe şöyle özetlenebilir. Wikipedia'ya göre sicim kuramının her koşulda geçerli, tam bir tanımı yoktur; hesaplar çoğunlukla küçük etkileşimler varsayan yaklaşık yöntemlerle yapılır. Gravitonu kendiliğinden içermesi ve matematiksel tutarlılığın çok sıkı koşullar koyması, onu birçok kuramcının gözünde en güçlü aday yapar. Ama bu nitelikler doğanın gerçekten sicimlerden yapıldığını göstermez. Sicim kuramının kesinlik etiketi açıkça kuram ya da hipotezdir: matematiksel olarak zengin, gözlemle henüz desteklenmemiş."
-   ],
-   "akilda": "Sicim kuramında parçacıklar Planck uzunluğu boyunda titreşen sicimlerdir; titreşim biçimi parçacığın türünü belirler. 1960'larda güçlü kuvvet kuramı olarak doğdu, 1974'te içinde graviton bulundu, 1984'te birinci süpersicim devrimi başladı. Kesinlik: kuram ya da hipotez."
-  },
-  {
-   "baslik": "Fazladan boyutlar: neden görmüyoruz?",
-   "paragraflar": [
-    "Sicim kuramlarının matematiksel tutarlılığı, bildiğimiz dört boyuttan fazlasını gerektirir. Wikipedia'ya göre ilk sicim kuramı olan bozonik sicim kuramında uzay-zaman 26 boyutlu, süpersicim kuramında 10 boyutlu, M-kuramında 11 boyutludur. Fazladan boyut, bildiğimiz üç uzay ve bir zaman boyutuna ek olarak varsayılan ve günlük hayatta fark edilmeyen boyutlardır. Fikir sicim kuramından eskidir. Theodor Kaluza 1919'da Einstein'a gönderdiği makalede, beş boyutlu bir uzay-zamanda kütleçekimi ile elektromanyetizmanın tek bir kuramda birleştiğini gösterdi; makale 1921'de yayımlandı. 1926'da Oskar Klein beşinci boyutun yaklaşık 10⁻³⁰ cm yarıçaplı küçük bir çembere kıvrılmış olabileceğini önerdi.",
-    "Kıvrılmış bir boyutu neden fark etmeyiz? Wikipedia'nın kullandığı benzetme bir bahçe hortumudur. Uzaktan bakınca hortum tek boyutlu bir çizgi gibi görünür; yaklaşınca çevresinin de bir boyut olduğunu fark edersin. Hortumun yüzeyindeki bir karınca iki boyutta dolaşır. Ek boyutların bu biçimde çok küçük kapalı şekillere kıvrılmasına kompaktlaştırma denir. Benzetmenin sınırı: hortumun çevresi hâlâ bizim üç boyutlu uzayımızın içindedir, oysa ek boyutlar uzayımızın dışında, kendi başına yönlerdir. Süpersicim kuramında gerçekçi bir model için altı ek boyutun, matematikçiler Eugenio Calabi ve Shing-Tung Yau'nun adını taşıyan Calabi–Yau uzayı denen özel bir biçimde olması gerekir.",
-    "Bir başka seçenek zar dünyası senaryosudur. Bu resimde gözlenebilir evrenimiz, daha çok boyutlu bir uzayın içindeki dört boyutlu bir yüzeydir. Madde ve diğer kuvvetler bu yüzeye bağlıdır, kütleçekimi ise bütün boyutlara yayılabilir. Wikipedia'ya göre bu, kütleçekiminin neden bu kadar zayıf olduğuna doğal bir açıklama sunar. 1998'de Nima Arkani-Hamed, Savas Dimopoulos ve Gia Dvali, büyük ek boyutlar modeli denen ve ek boyutların sanıldığından çok daha büyük olabileceğini varsayan bir model önerdi. Bu durumda LHC'de kayıp enerji ya da mikroskobik kara delikler görülebilirdi; Wikipedia'ya göre LHC'den şimdiye kadar belirleyici bir sonuç çıkmadı.",
-    "Büyük ek boyutlar masa üstünde de aranıyor. Ek boyutlar yeterince büyük olsaydı, kütleçekimi kısa uzaklıklarda Newton'un ters kare yasasından sapardı. Seattle'daki Washington Üniversitesi'nin Eöt-Wash grubu, Lee, Adelberger ve arkadaşları, 2020'de yayımlanan deneylerinde kütleçekimini 52 mikrometre ile 3 mm arasındaki uzaklıklarda ölçtü. Newton yasası verilere iyi uydu. Ekibe göre en büyük ek boyutun yarıçapı 30 mikrometreden küçük olmalıdır. Kesinlik etiketi: ek boyutlar kuram ya da hipotez düzeyindedir; lehlerinde hiçbir deneysel kanıt yok, sadece giderek daralan sınırlar var."
-   ],
-   "ornek": {
-    "baslik": "Örnek: Kaç boyut gizli ve ne kadar yer var?",
-    "metin": "Süpersicim kuramı 10 boyut ister; bildiğimiz 4 boyut düşülünce 10 − 4 = 6 gizli boyut kalır. M-kuramında 11 − 4 = 7. Şimdi deneysel sınırın ne kadar geniş bir aralık bıraktığına bak: Eöt-Wash'a göre en büyük ek boyutun yarıçapı 30 mikrometreden, yani 3 × 10⁻⁵ m'den küçük. Sicim kuramının doğal ölçeği ise Planck uzunluğu, 1,6 × 10⁻³⁵ m. Oran: 3 × 10⁻⁵ ÷ 1,6 × 10⁻³⁵ ≈ 1,9 × 10³⁰. Sonuç: deneyler ek boyutları 30 mikrometrenin altına itti, ama kuramın beklediği ölçeğe kadar hâlâ yaklaşık 30 basamaklık bir aralık var; bu yüzden ek boyutların görülmemesi kuramı yanlışlamaz."
-   },
-   "akilda": "Bozonik sicim 26, süpersicim 10, M-kuramı 11 boyut ister. Ek boyutların küçük şekillere kıvrıldığı (kompaktlaştırma, Calabi–Yau) ya da evrenimizin bir zar olduğu varsayılır. Eöt-Wash 2020: en büyük ek boyut 30 mikrometreden küçük. Kanıt yok; kesinlik kuram ya da hipotez."
-  },
-  {
-   "baslik": "Süpersimetri ve LHC'nin sessizliği",
-   "paragraflar": [
-    "Süpersimetri, her bozona bir fermiyon, her fermiyona da bir bozon eş öngören kuramsal simetridir. Elektronun eşi bir bozon, fotonun eşi bir fermiyon olurdu. Wikipedia'ya göre kuantum alan kuramındaki biçimi 1971–1972'de birbirinden bağımsız birkaç grup tarafından ortaya kondu; 1974'te Julius Wess ve Bruno Zumino kuramın önemli özelliklerini ortaya koydu, adı da aynı yıl Abdus Salam ve John Strathdee'nin kullanımıyla yerleşti. Standart Model'in ilk gerçekçi süpersimetrik sürümünü 1977'de Pierre Fayet önerdi. Süpersicim kuramı süpersimetriyi bir düzeyde gerektirir; bu yüzden süpersimetrinin bulunması sicim kuramı için güçlü bir ipucu sayılacaktı.",
-    "Fizikçiler süpersimetriyi LHC'nin enerjilerinde bekliyordu, çünkü iki soruna birden çare olabilirdi. Birincisi hiyerarşi sorunu: kuantum düzeltmeleri Higgs bozonunun kütlesini Planck ölçeğine doğru şişirmeye çalışır; süpersimetrik eşlerin katkıları bu düzeltmeleri kendiliğinden götürürdü. İkincisi karanlık madde: bazı modellerde en hafif süpersimetrik parçacık kararlıdır ve d50'deki WIMP adaylarından biri olabilir. Wikipedia'ya göre LHC'den önce, 2009'da yapılan model hesapları süpersimetrik eşlerin bir kısmını 500 ile 800 milyar elektronvolt arasında gösteriyordu.",
-    "Sonuç: LHC Higgs bozonunu buldu (d32), süpersimetriyi bulamadı. CMS deneyinin ikinci çalışma döneminin tamamını, 13 trilyon elektronvoltluk çarpışmaları özetleyen 2025 tarihli bir derlemeye göre Standart Model öngörülerinden anlamlı bir sapma gözlenmedi. Bazı aramalarda gluino denen süpersimetrik eşin 2,46 trilyon elektronvolta kadar olan kütleleri dışlandı; bu sınırlar varsayılan modele bağlıdır. Wikipedia'ya göre yaklaşık 125 milyar elektronvoltluk Higgs kütlesi en basit süpersimetrik model için görece büyüktür. Bir zamanlar süpersimetrinin coşkulu destekçisi olan Mikhail Shifman bile kuramcıları yeni fikirler aramaya çağırdı.",
-    "Bu sessizlik neyi gösterir? İki tarafı da dinleyelim. George Ellis ve Joe Silk, 2014'te Nature'da yazdıkları yazıda süpersimetrik eşlerin bulunamamasını sicim kuramının sınanabilir öngörülerinin başarısızlığına örnek olarak sayar. Öte yandan Wikipedia'ya göre süpersimetri daha yüksek enerjilerde kırılmış olabilir ve bazı fizikçiler sicim manzarasının süpersimetri kırılmasını büyük değerlere doğru çektiğini savunur. Yani LHC sonucu sicim kuramını yanlışlamaz, ama beklenen en güçlü ipucunu ortadan kaldırmıştır. Kesinlik etiketi: süpersimetri kuram ya da hipotez. d32'de gördüğün gibi LHC Temmuz 2026'dan beri Uzun Kapanma 3'te; Yüksek Parlaklıklı LHC'nin 2030'da çalışması planlanıyor."
-   ],
-   "akilda": "Süpersimetri her bozona bir fermiyon eş öngörür; hiyerarşi sorununu çözeceği ve karanlık madde adayı vereceği için LHC'de bekleniyordu. LHC hiçbir süpersimetrik eş bulmadı. Bu sicim kuramını yanlışlamaz ama en güçlü beklenen ipucu gelmedi. Kesinlik: kuram ya da hipotez."
-  },
-  {
-   "baslik": "M-kuramı ve kara deliğin sayılan durumları",
-   "paragraflar": [
-    "1990'ların başında fizikçilerin elinde beş farklı süpersicim kuramı vardı ve hangisinin doğru olduğu belli değildi. 1995'te Güney Kaliforniya Üniversitesi'ndeki yıllık sicim kuramı konferansında Edward Witten, bu beş kuramın aslında 11 boyutlu tek bir kuramın farklı sınır durumları olduğunu öne sürdü. Bu kurama M-kuramı denir ve duyuru, ikinci süpersicim devrimi denen yoğun bir çalışma dönemini başlattı. Wikipedia'ya göre Witten'a göre M harfi zevke göre “sihir”, “gizem” ya da “zar” anlamına gelebilir; asıl anlamına kuramın tam biçimi bilindiğinde karar verilecektir.",
-    "Bu son cümle önemli: Wikipedia'ya göre M-kuramının tam bir formülasyonu bilinmiyor. Bilinen, alçak enerjide 11 boyutlu süper kütleçekim denen kurama yaklaşması ve iki ile beş boyutlu nesneler içermesidir. Bu çok boyutlu nesnelere zar denir: nokta sıfır boyutlu, sicim tek boyutlu, zar ise daha çok boyutlu bir nesnedir. 1990'larda Joseph Polchinski, açık sicimlerin uçlarının üzerinde durduğu D-zarları denen nesnelerin kuramda zorunlu olduğunu gösterdi.",
-    "D-zarları sicim kuramının en çok övülen sonuçlarından birine yol açtı. d30'da kara deliğin entropisinin olay ufkunun alanıyla orantılı olduğunu (Bekenstein, Hawking) gördün; ama bu entropinin hangi iç durumları saydığı bilinmiyordu. 1996'da Andrew Strominger ve Cumrun Vafa, belirli D-zarı düzenlerinin iç durumlarını sayarak Bekenstein–Hawking formülünü sicim kuramından türetti. Dürüst olmak gerekirse, hesapladıkları kara delikler gerçek gökbilimsel kara deliklerden çok farklıydı: Wikipedia'ya göre yalnızca belirli bir yük için olabilecek en küçük kütleye sahip uç kara delikleri, üstelik beş boyutlu ve gerçekte gözlenmeyen bir süpersimetriye sahip bir uzay-zamanda ele aldılar. Destekçiler bunu kuramın iç tutarlılığının güçlü bir işareti sayar; eleştirenler gerçek evrenle bağının zayıf olduğunu söyler.",
-    "İkinci büyük sonuç, 1997'de Juan Maldacena'nın önerdiği AdS/CFT eşlemesidir: belirli bir eğri uzaydaki sicim kuramı, o uzayın sınırında yaşayan kütleçekimsiz bir kuantum alan kuramına denktir. Wikipedia'ya göre makale 2015'e kadar 10.000'den fazla atıf aldı ve yüksek enerji fiziğinin en çok atıf alan makalesi oldu. Ayrıntısını d52'de, kara deliklerin bilgi paradoksuyla birlikte göreceksin. Bir uyarı: Wikipedia'ya göre bu eşlemelerde kullanılan kuramlar genellikle gerçek dünyanın uygulanabilir modelleri değildir. Kesinlik etiketi: M-kuramı kuram ya da hipotez düzeyindedir."
-   ],
-   "akilda": "Witten 1995'te beş süpersicim kuramının 11 boyutlu tek bir M-kuramının sınırları olduğunu önerdi; tam formülasyonu bilinmiyor. Strominger ve Vafa 1996'da uç, süpersimetrik kara deliklerin entropisini sicim kuramıyla saydı. AdS/CFT 1997'de geldi (d52). Kesinlik: kuram ya da hipotez."
-  },
-  {
-   "baslik": "Manzara sorunu: 10⁵⁰⁰ olası çözüm",
-   "paragraflar": [
-    "Altı ek boyutun hangi biçimde kıvrıldığı ve bu kıvrımlardan geçen alanların, fizikçilerin akı dediği değerlerinin nasıl seçildiği, dört boyutta hangi parçacıkları ve kuvvetleri göreceğimizi belirler. Her seçim, kendi parçacıkları ve fizik sabitleri olan ayrı bir taban durumu, yani ayrı bir olası evren verir. Bu çözümlerin bütününe sicim manzarası denir. Wikipedia'ya göre terim evrim biyolojisindeki uyum manzarası fikrinden gelir; kozmolojide ilk Lee Smolin 1997'de kullandı, sicim kuramına Leonard Susskind taşıdı.",
-    "Ünlü 10⁵⁰⁰ sayısının dayanağı nedir? Wikipedia'ya göre kararlıya yakın çözümlerin sayısı tam olarak bilinmiyor; sık aktarılan 10⁵⁰⁰ mertebesindeki tahminler Michael Douglas'ın 2003 tarihli istatistik çalışmasına ve Ashok ile Douglas'ın 2004'te yayımlanan akı çözümlerini sayma çalışmasına dayanır. Sayının kaynağı, Calabi–Yau biçimlerinin ve akı değerlerinin çok sayıda bağımsız seçeneği olmasıdır. Yani 10⁵⁰⁰ bir ölçüm değil, kabaca sayılmış bir mertebedir. Hatta Washington Taylor ve Yi-Nan Wang 2015'te tek bir geometri için 10²⁷²⁰⁰⁰ gibi çok daha büyük bir sayı buldu. Bu tür sayıların kesinlik etiketi kuram ya da hipotezdir.",
-    "Sorun açık: bu kadar çok çözüm varsa kuram neyi öngörür? Columbia Üniversitesi matematik bölümünde öğretim görevlisi olan Peter Woit'e göre 10⁵⁰⁰ çözüm, kuramdan bir şey öngörme umudunu büyük olasılıkla yok eder, çünkü gözlemle uyumlu olanlar arasında bile neredeyse her sonucu verecek kadar çok çözüm kalır. Öteki taraf bunu bir erdem olarak görür. Steven Weinberg 1987'de, kozmolojik sabit çok büyük olsaydı galaksilerin ve dolayısıyla gözlemcilerin oluşamayacağını savunmuştu. Susskind'e göre manzaradaki çözümler büyük bir çoklu evrende gerçekten var olan evrenlerdir ve biz yaşama izin veren birindeyiz. Bütün çözümlerin gerçek evrenler olarak var olduğu fikri spekülasyondur; çoklu evren tartışmasının tamamı d54'ün konusu.",
-    "Manzaranın bir de bataklığı var. Cumrun Vafa'nın başlattığı programa göre, kendi içinde tutarlı görünen birçok kuram kuantum kütleçekimle bağdaşmaz; bu kuramların oluşturduğu kümeye bataklık denir. 25 Haziran 2018'de Georges Obied, Hirosi Ooguri, Lev Spodyneiko ve Vafa, kararlı ve pozitif enerjili, yani bizimki gibi hızlanarak genişleyen bir evrenin sicim kuramında bulunamayabileceğini öne sürdü. Doğruysa karanlık enerji zamanla zayıflamalıdır. Quanta'ya göre Eva Silverstein bu varsayımın “büyük olasılıkla yanlış” olduğunu düşünüyor; 2003 tarihli KKLT modelinin ortak yazarı Shamit Kachru da modelinden ciddi bir kuşkusu olmadığını söylüyor. Karanlık enerjinin zamanla değişip değişmediği sorusu bu yüzden d51'deki ölçümlerle doğrudan ilgili."
-   ],
-   "ornek": {
-    "baslik": "Örnek: 10⁵⁰⁰ ne kadar büyük?",
-    "metin": "Karşılaştırma için evrenin yaşını Planck zamanı biriminde sayalım. Evrenin yaşı 13,8 milyar yıl (d8). Bir yıl yaklaşık 3,156 × 10⁷ s; yaş ≈ 13,8 × 10⁹ × 3,156 × 10⁷ ≈ 4,36 × 10¹⁷ s. Planck zamanı 5,39 × 10⁻⁴⁴ s. Geçen Planck zamanı sayısı ≈ 4,36 × 10¹⁷ ÷ 5,39 × 10⁻⁴⁴ ≈ 8 × 10⁶⁰. Büyük Patlama'dan bu yana geçen her Planck anına ayrı bir çözüm düşse bile yalnızca yaklaşık 10⁶¹ çözüm incelenmiş olurdu. 10⁵⁰⁰ ÷ 10⁶¹ = 10⁴³⁹. Sonuç: 10⁵⁰⁰, evrenin bütün tarihindeki Planck anlarının sayısından 10⁴³⁹ kat büyüktür; tek tek incelenebilecek bir küme değildir."
-   },
-   "akilda": "Ek boyutların biçimi ve akı seçimleri çok sayıda olası çözüm verir: sicim manzarası. 10⁵⁰⁰ ölçüm değil, Douglas (2003) ve Ashok–Douglas (2004) çalışmalarına dayanan kaba bir mertebedir. Eleştirenler öngörü gücünü yitirdiğini, savunanlar antropik bir açıklama sunduğunu söyler. Bataklık varsayımı (2018) tartışmalıdır."
-  },
-  {
-   "baslik": "Döngü kuantum kütleçekimi: uzayın atomları",
-   "paragraflar": [
-    "Sicim kuramı bütün kuvvetleri tek çatıda toplamak ister. Döngü kuantum kütleçekimi daha mütevazı ama daha radikal bir yol seçer: genel göreliliğin ana dersini, uzay-zamanın kendisinin dinamik bir alan olduğunu ciddiye alır ve doğrudan geometriyi kuantumlaştırmaya çalışır. Ek boyut ya da süpersimetri gerektirmez, bütün kuvvetleri birleştirmeyi de hedeflemez. Wikipedia'ya göre hikâye 1986'da Abhay Ashtekar'ın genel göreliliği, diğer kuvvetlerin kuramlarına benzeyen yeni değişkenlerle yeniden yazmasıyla başladı. Kısa süre sonra Ted Jacobson ve Lee Smolin kuantum kütleçekim denkleminin döngülerle etiketlenen çözümleri olduğunu fark etti; Carlo Rovelli ve Smolin bu çözümlerden arka plandan bağımsız bir kuram kurdu.",
-    "Kuramın en ünlü sonucu 1994'te geldi: Rovelli ve Smolin, alanı ve hacmi temsil eden kuantum operatörlerinin, yani ölçülebilir büyüklüklere karşılık gelen matematiksel nesnelerin, yalnızca kesikli değerler alabildiğini gösterdi. Yani alan ve hacim, enerji gibi paket paket gelir; uzayın Planck ölçeğinde taneli bir yapısı vardır. Bu kuantum durumları, Roger Penrose'un daha önce soyut olarak tanımladığı spin ağlarıyla etiketlenir. Spin ağı, kenarları spin değerleriyle etiketlenmiş ve uzayın kendisinin kuantum durumunu betimleyen bir çizgedir; uzayda yaşayan bir alanı değil, uzayın kendisini anlatır. Wikipedia'nın benzetmesi bir tişört kumaşıdır: uzaktan pürüzsüz bir yüzey, yakından birbirine bağlı iplikler. Zaman içindeki evrime de spin köpüğü denir.",
-    "Destekçiler ve eleştirenler bu kuramı da tartışır. Wikipedia'ya göre Rovelli, 2003 tarihli bir yazısında kuramın dört boyutta ve süpersimetri olmadan kurulmasını, bugünkü deneylerle uyumlu en tutumlu açıklama olduğu için bir güç sayar. Sicim kuramcıları ise kendi kuramlarının genel göreliliği ve kuantum alan kuramını uygun sınırlarda yeniden ürettiğini, döngü kuramının bunda zorlandığını hatırlatır. Wikipedia'ya göre döngü kuantum kütleçekiminden genel göreliliğe giden yarı klasik sınırın var olduğu henüz gösterilemedi; dolayısıyla kuram genel göreliliğin öngörülerini bile henüz yeniden üretmiş değil. Maddeyi kurama katmak da zor.",
-    "Kuramın en çok bilinen uygulaması döngü kuantum kozmolojisidir. Wikipedia'ya göre bu basitleştirilmiş modellerde Büyük Patlama tekilliği ortadan kalkar ve yerini bir Büyük Sıçrama alır: evren önce büzülüp sonra yeniden genişler. d55 ve d56 bu fikre dönecek. Dünyada yaklaşık 30 araştırma grubu bu programda çalışıyor. Kesinlik etiketleri: döngü kuantum kütleçekimi kuram ya da hipotez, evrenimizin gerçekten bir sıçramayla başladığı ise spekülasyondur. Wikipedia'nın uyarısını da ekleyelim: kuramın, Standart Model'in ya da genel göreliliğin vermediği ve gözlenmiş tek bir öngörüsü yok; bu sorun bugünkü bütün kuantum kütleçekim adaylarında ortaktır."
-   ],
-   "akilda": "Döngü kuantum kütleçekimi geometriyi doğrudan kuantumlaştırır: alan ve hacim kesiklidir (Rovelli–Smolin 1994), uzayın durumu spin ağlarıyla anlatılır. Ek boyut ve süpersimetri gerektirmez. Genel göreliliğe giden sınır henüz gösterilmedi. Kesinlik: kuram ya da hipotez; Büyük Sıçrama spekülasyon."
-  },
-  {
-   "baslik": "Başka yollar: nedensel kümeler, asimptotik güvenlik, üçgenler",
-   "paragraflar": [
-    "Sicim ve döngü kuramları en çok çalışılanlardır ama tek adaylar değildir. Wikipedia'ya göre yaklaşımlar, genel görelilikten ve kuantum kuramından hangi özellikleri olduğu gibi koruyup hangilerini değiştirdiklerine göre ayrılır. Bu bölümde üç tanesine kısaca bakacağız. Hepsinin kesinlik etiketi aynıdır: kuram ya da hipotez. Hiçbirinin lehine deneysel kanıt yok ve hiçbiri ötekileri dışlayacak bir sonuç vermiş değil.",
-    "Nedensel küme yaklaşımına göre uzay-zaman temelde kesiklidir: bir olaylar kümesidir ve bu olaylar arasındaki tek temel ilişki, hangisinin hangisini etkileyebileceği, yani neden-sonuç sırasıdır. Programın kurucusu Rafael Sorkin'dir; temel makale Bombelli, Lee, Meyer ve Sorkin imzasıyla 1987'de “Nedensel küme olarak uzay-zaman” başlığıyla yayımlandı. Sorkin'in sloganı “Düzen artı Sayı eşittir Geometri”dir: sıra ilişkisi uzay-zamanın biçimini, bir bölgedeki olay sayısı da hacmini verir. Wikipedia'ya göre bu yaklaşım uzay-zamanı kesikli yaparken yerel Lorentz değişmezliğini korur.",
-    "Asimptotik güvenlik ise başka bir soru sorar: belki kütleçekimi alışılmış anlamda renormalize edilemez ama yine de iyi tanımlıdır. Steven Weinberg 1976'da, çok yüksek enerjide kütleçekiminin etkileşim güçlerinin sıfıra gitmek yerine sonlu bir sabit noktaya yaklaşabileceğini önerdi. Böyle olursa sonsuzluklar ortaya çıkmaz ve kuram yalnız birkaç ölçülebilir parametreyle öngörü yapabilir. 1996'da Martin Reuter bu fikri hesaplanabilir bir denkleme bağladı. Wikipedia'ya göre basitleştirilmiş hesaplarda böyle bir sabit noktanın varlığına dair kanıtlar birikiyor, ama kesin bir matematiksel ispat yok.",
-    "Nedensel dinamik üçgenleme, Renate Loll, Jan Ambjørn ve Jerzy Jurkiewicz'in yaklaşımıdır. Uzay-zamanı minik, düz, dört boyutlu üçgen benzeri yapı taşlarından yapıştırır ve bütün olası yapıştırmaları toplar; tek kural, zamanın yönünün her yerde tutarlı kalmasıdır. Wikipedia'ya göre büyük ölçekte bu hesaplardan bildiğimiz dört boyutlu uzay-zamana benzeyen bir yapı çıkıyor, Planck ölçeğine yaklaşıldıkça ise uzay-zaman iki boyutlu gibi davranıyor; bu bulgu asimptotik güvenlik hesaplarıyla da uyumlu. Wikipedia değişmeli olmayan geometri ve twistör kuramı gibi başka yaklaşımları da sayar. Bu çeşitlilik, alanın henüz bir kazanan seçmediğinin dürüst bir göstergesidir."
-   ],
-   "akilda": "Nedensel kümeler (Sorkin, 1987): uzay-zaman neden-sonuç sırasıyla bağlı kesikli olaylardır. Asimptotik güvenlik (Weinberg 1976, Reuter 1996): kütleçekimi yüksek enerjide bir sabit noktaya oturursa iyi tanımlı olabilir. Nedensel dinamik üçgenleme: büyük ölçekte 4, Planck ölçeğinde 2 boyut. Hepsi kuram ya da hipotez."
-  },
-  {
-   "baslik": "Test edilebilirlik tartışması: eleştirenler ne diyor?",
-   "paragraflar": [
-    "Bilim felsefecisi Karl Popper'a göre bir kuramın bilimsel sayılması için yanlışlanabilir olması gerekir: yanlışlanabilirlik, kuramı çürütebilecek bir gözlemin en azından ilke olarak tanımlanabilmesidir. Kuantum kütleçekim adaylarının hiçbiri bugün bu anlamda sınanamadığı için, fizikte yıllardır süren bir tartışma var: deneysel desteği olmayan bir kurama ne kadar güvenilebilir? Bu bölüm eleştirenlerin, bir sonraki bölüm savunanların sesini veriyor. Ders taraf tutmuyor; iki tarafın da en güçlü argümanlarını kaynaklarıyla aktarıyor.",
-    "Eleştirinin en etkili metinlerinden biri, George Ellis ve Joe Silk'in 2014'te Nature'da yayımladığı yazıdır. Yazarlara göre bazı fizikçiler spekülatif kuramları deneysel sınamadan muaf tutmak istiyor ve bu bilimi zayıflatır. Popper'ın ölçütü hâlâ geçerlidir; bir kuram savunucusuna sorulacak temel soru, onu yanlış olduğuna ikna edecek gözlemin ne olacağıdır. Ellis ve Silk, sicim kuramının görülemeyecek kadar küçük ek boyutlara dayandığını, süpersimetrik eşlerin LHC'de bulunamadığını yazar ve kuramı birleşik bir kurama dair bir senet gibi tanımlar. Kuramın gücünün olasılık hesaplarıyla, yeni gözlem olmadan desteklenebileceği fikrini ise “kale direklerini oynatmak” diye niteler.",
-    "2006'da iki kitap tartışmayı geniş kitlelere taşıdı. Peter Woit'in kitabının adı, Wolfgang Pauli'ye atfedilen “yanlış bile değil” sözünden gelir; Woit bu sözü yanlışlanamaz anlamında kullanır. Woit'e göre manzaradaki çözüm bolluğu kuramı boşaltır ve sicim kuramının aşırı popülerliği kısmen akademideki kaynak rekabetinden doğar. Lee Smolin'in The Trouble with Physics kitabı, sicim kuramının yeni ve sınanabilir bir öngörüsü olmadığını, arka plan bağımsızlığını yakalayamadığını ve ABD'de fiziğin temel araştırmalarında neredeyse tekel kurduğunu savunur. Smolin adil bir not da düşer: sicim kuramı güçlü ve iyi gerekçeli bir fikirdir ve gerçeğin bir parçası çıkabilir; asıl soru başka yaklaşımlara neden yeterince emek verilmediğidir.",
-    "Döngü kuantum kütleçekiminin kurucularından Carlo Rovelli, 2016'da yayımladığı bir yazıda deneysel olmayan kanıtlara fazla yaslanmanın bilimin güvenilirliğini zayıflatacağını ve sicim kuramının bu tehlikenin iyi bir örneği olduğunu savundu. Kuantum kütleçekim üzerinde çalışmış fizikçi Sabine Hossenfelder de fizikçilerin kuram seçerken açıkça söylenmeyen estetik ölçütlere dayandığını ileri sürer. Burada dürüst bir not gerekir: eleştirenlerin bir kısmı, Smolin ve Rovelli gibi, rakip yaklaşımlar üzerinde çalışır. Bu argümanlarını geçersiz kılmaz, ama savunanlar için söylenen “ilgi çatışması” uyarısı onlar için de geçerlidir."
-   ],
-   "akilda": "Eleştirenler (Ellis ve Silk 2014, Woit ve Smolin 2006, Rovelli 2016) Popper'ın yanlışlanabilirlik ölçütünü savunur: sınanabilir öngörüsü olmayan kuram deneyden muaf tutulamaz. Manzara öngörü gücünü boşaltır, araştırmada çeşitlilik gerekir. Bazı eleştirenler rakip yaklaşımlar üzerinde çalışır."
-  },
-  {
-   "baslik": "Test edilebilirlik tartışması: savunanlar ne diyor?",
-   "paragraflar": [
-    "Savunanların ilk argümanı, temel fizik sorularına sicim kuramı kadar başarılı bir alternatif olmadığıdır. Nobel ödüllü David Gross 1987'deki bir söyleşide, insanların bu alana gelmesinin en önemli nedeninin ortada başka iyi bir fikir olmaması olduğunu söylemişti. Eleştirenler aynı sözü aleyhte kullanır; Gross ise bunu bir rakibin yokluğu olarak görür. 2015'teki Münih toplantısında da açılış konuşmasında sicim kuramını savundu ve iyi bir alternatif olmadığını vurguladı. Bir izleyicinin aktarımına göre sicim kuramını ve çoklu evreni kuramdan çok “çerçeve” olarak tanımlamanın daha doğru olacağını söyledi.",
-    "Felsefi savunmayı en sistemli biçimde, Münih toplantısının düzenleyicilerinden Richard Dawid kurdu. Cambridge University Press'in 2013'te yayımladığı kitabında, kuramcıların deney yokken bir kurama neden güvendiğini inceler ve buna deneysel olmayan kuram değerlendirmesi der. Jeroen van Dongen'in özetine göre Dawid'in üç argümanı vardır. Alternatifsizlik argümanı: bütün temel etkileşimleri tutarlı biçimde birleştiren başka uygun bir kuram yoktur. Üst-tümevarım argümanı: sicim kuramı, geçmişte sonradan deneyle doğrulanmış kuramlar örnek alınarak kurulmuştur. Beklenmedik açıklama argümanı: kuram, kurulurken hedeflemediği olguları açıklar; kara delik entropisinin sayılması bunun örneğidir.",
-    "Sicim kuramının öncülerinden Joseph Polchinski, Ellis ve Silk'e 2016'da yazılı bir yanıt verdi. Kuramın başarıları olarak ikilikleri, D-zarlarını, kara delik entropisinin nicel anlaşılmasını ve AdS/CFT'yi sayar. Kendi kabaca yaptığı olasılık hesabında sicim kuramının doğru olma olasılığını yaklaşık yüzde 98,5, çoklu evreninkini yaklaşık yüzde 94 bulur; ama hemen bu hesabın tartışmanın yüzde biri bile olmadığını ekler. “Deneysel olmayan doğrulama” deyiminden de rahatsızdır ve fiziğin yolun sonuna geldiğini söylemek için çok erken olduğunu yazar. Bizim ölçütümüzle şunu not edelim: kişisel bir olasılık tahmini, ne kadar dürüst olursa olsun, kanıt değildir.",
-    "Tartışma, Ellis ve Silk'in çağrısının ardından 7–9 Aralık 2015'te Münih'teki Ludwig Maximilian Üniversitesi'nde yapılan “Bir kurama neden güvenmeli?” toplantısında yüz yüze sürdü. Konuşmacılar arasında Ellis, Silk, Gross, Rovelli, Dawid ve Hossenfelder vardı; Hossenfelder'in aktarımına göre Polchinski son anda katılamadı. Toplantıda Gordon Kane sicim kuramının Higgs kütlesini öngördüğünü savundu; Gross bu iddianın geniş kabul görmediğini söyledi. Toplantı bir uzlaşmayla bitmedi. Ama iki tarafın ortak bir noktası var: son hakem deneydir. Ayrıldıkları yer, deney gelene kadar bir kurama ne kadar güvenilebileceğidir. Kesinlik etiketi açısından tablo değişmiyor: sicim kuramı kuram ya da hipotez."
-   ],
-   "akilda": "Savunanlar: başka iyi alternatif yok (Gross), deney yokken de kurama güvenmenin akılcı yolları var (Dawid 2013: alternatifsizlik, üst-tümevarım, beklenmedik açıklama), kuramın somut başarıları var (Polchinski 2016). Münih 2015 toplantısı uzlaşmasız bitti; iki taraf da son hakemin deney olduğunu kabul ediyor."
-  },
-  {
-   "baslik": "Gökyüzü laboratuvar olunca: dolaylı sınamalar",
-   "paragraflar": [
-    "Planck enerjisine çıkamıyorsak kuantum kütleçekimi nasıl sınanır? Wikipedia'ya göre 2000'lerden beri giderek büyüyen bir alan, kuantum kütleçekim fenomenolojisi, tam da bunu araştırıyor. Fikir şu: tek bir parçacıkta fark edilemeyecek kadar küçük bir etki, milyarlarca ışık yılı boyunca birikirse ölçülebilir hâle gelebilir. En çok aranan etkilerden biri Lorentz değişmezliğinin bozulmasıdır. Lorentz değişmezliği, fizik yasalarının birbirine göre sabit hızla hareket eden bütün gözlemciler için aynı olması ilkesidir; d25'te ışık hızının herkes için aynı olması bunun bir sonucuydu. Bazı kuantum kütleçekim modellerinde uzayın taneli yapısı, ışığın hızını foton enerjisine çok az bağlı kılabilir.",
-    "Gama ışını patlamaları bu iş için idealdir: çok uzaktadırlar ve çok farklı enerjilerde fotonları neredeyse aynı anda yollarlar. Fermi uzay teleskobu, 10 Mayıs 2009'daki kısa GRB 090510 patlamasında ilk saniye içinde 31 milyar elektronvoltluk bir foton yakaladı. Ekibe göre bu foton, bu tür modellerde etkinin ortaya çıktığı kütle ölçeğinin Planck kütlesinin belirgin biçimde üstünde olmasını gerektiriyor. ESA'nın INTEGRAL uydusu da 19 Aralık 2004'teki, en az 300 milyon ışık yılı uzaktaki GRB 041219A patlamasında farklı enerjilerdeki ışığın kutuplanmasını karşılaştırdı ve fark bulmadı. ESA'nın 2011 duyurusuna göre bu, uzayda bir taneciklik varsa 10⁻⁴⁸ m ya da daha küçük olması gerektiği anlamına gelir.",
-    "Bu sonuçları doğru okumak önemli. ESA'nın duyurusunda ekip lideri Philippe Laurent sonucun bazı sicim kuramlarını ve döngü kuantum kütleçekim kuramlarını dışlayacağını söyler. Bu iddia yalnız uzayın taneciğinin ışığın kutuplanmasını enerjiye bağlı olarak döndürdüğünü öngören modeller için geçerlidir; ana kuramların kendisini çürütmez. Kesin olan, bu basit etkilerin Planck ölçeğinde beklenen büyüklükte olmadığıdır. Bu sınırlar gözlemle kesinleşmiş ölçümlerdir; yorumları ise modele bağlıdır.",
-    "En temiz sınama 17 Ağustos 2017'de geldi. d16'da gördüğün GW170817 birleşmesinin kütleçekim dalgası ile gama ışını patlaması GRB 170817A arasında 1,74 ± 0,05 saniye vardı. LIGO, Virgo ve Fermi ekipleri bu ölçümden kütleçekiminin hızı ile ışık hızı arasındaki farkın ışık hızının −3 × 10⁻¹⁵ ile +7 × 10⁻¹⁶ katı arasında olduğunu çıkardı ve kütleçekiminde Lorentz değişmezliğinin bozulmasına önceki sınırlardan çok daha sıkı sınırlar koydu. Aşağıdaki örnekte bu inanılmaz duyarlılığın nereden geldiğini kendin göreceksin."
-   ],
-   "ornek": {
-    "baslik": "Örnek: GW170817'den kütleçekimin hızını sınamak",
-    "metin": "Ekip temkinli davranıp kaynağa uzaklığın alt sınırını, 26 megaparseki kullandı. 1 parsek ≈ 3,086 × 10¹⁶ m, yani 26 Mpc ≈ 26 × 10⁶ × 3,086 × 10¹⁶ ≈ 8,0 × 10²³ m. Işığın bu yolu alma süresi: 8,0 × 10²³ ÷ 3,0 × 10⁸ ≈ 2,7 × 10¹⁵ s, yani yaklaşık 85 milyon yıl (gerçek uzaklık daha büyük; d16'daki yaklaşık 130 milyon yıl). Gözlenen gecikme 1,74 s. Oran: 1,74 ÷ 2,7 × 10¹⁵ ≈ 6,5 × 10⁻¹⁶. Ekip iki sinyalin aynı anda çıktığını varsayınca bütün gecikmeyi hız farkına yazar; +7 × 10⁻¹⁶ sınırı bu mertebededir. Alt sınır için gama ışınlarının 10 saniye geç çıktığını varsayar: (1,74 − 10) ÷ 2,7 × 10¹⁵ ≈ −3,1 × 10⁻¹⁵. Sonuç: kütleçekimi ile ışığın hızı, en az 10¹⁵'te birkaç parça duyarlılıkla aynıdır."
-   },
-   "akilda": "Küçük kuantum kütleçekim etkileri kozmik uzaklıklarda birikebilir. Fermi (GRB 090510) ve INTEGRAL (GRB 041219A) ışık hızının enerjiye bağlı olmadığını büyük duyarlılıkla gösterdi; yorumlar modele bağlıdır. GW170817: kütleçekimi ile ışığın hız farkı ışık hızının −3 × 10⁻¹⁵ ile +7 × 10⁻¹⁶ katı arasında."
-  },
-  {
-   "baslik": "Masa üstünde kuantum kütleçekim ve bugünkü durum",
-   "paragraflar": [
-    "Kuantum kütleçekimi sınamanın belki de en akıllıca yolu Planck enerjisine çıkmak değil, kütleçekiminin kuantum davranışı gösterip gösteremeyeceğini sormaktır. 2017'de Physical Review Letters'ta birbirinden bağımsız iki öneri yayımlandı: biri Sougato Bose ve arkadaşlarından (University College London), öteki Chiara Marletto ve Vlatko Vedral'dan (Oxford). d28'de dolanıklığı görmüştün. Öneriye göre iki küçük kütlenin her biri iki konumun süperpozisyonuna konur ve birbirleriyle yalnız kütleçekimiyle etkileşir. Sonunda kütleler dolanık çıkarsa, yazarlara göre bu dolanıklığı taşıyan kütleçekim alanının kendisi de kuantum olmalıdır, çünkü iki kuantum sistemini dolanık yapabilen aracı kuantum olmalıdır.",
-    "Sayılar deneyin ne kadar zor olduğunu gösterir. Marletto ve Vedral, 10⁻¹² kg kütleli iki mekanik salınıcının yaklaşık 1 mikrometre uzaklıkta, yaklaşık bir mikrosaniye etkileşmesini örnek alır. Physics World'ün aktarımına göre iki ekip de başarının garanti olmadığını kabul eder: Casimir ve van der Waals gibi çok daha güçlü kuvvetler kütleçekimini taklit edebilir; dolanıklık görülmemesi kütleçekiminin klasik olduğunu kanıtlamaz; görülmesi de rakip kuantum kütleçekim kuramları arasında seçim yapmaz. Eleştiri de var: Eduardo Martín-Martínez ve T. Rick Perche 2022'de, böyle bir dolanıklığın klasik, yerel bir alanla da açıklanabileceğini, deneyin yalnız kütleçekiminin bir kuantum kanalı taşıdığını gösterebileceğini savundu.",
-    "Bu arada kütleçekimini ölçebildiğimiz en küçük kaynaklar da küçülüyor. 2021'de Nature'da yayımlanan bir deneyde Viyana Üniversitesi'nden Tobias Westphal, Markus Aspelmeyer ve arkadaşları, 2 mm çaplı, 90 mg kütleli bir altın kürenin kütleçekimini, Cavendish'in 1797 burulma terazisinin küçük bir sürümüyle ölçtü; bu, aşağı yukarı bir uğur böceğinin kütlesi. Ekip sıradaki adım olarak binlerce kat hafif kütleleri hedefliyor. Kuantum süperpozisyonundaki bir kaynağın kütleçekimini ölçmeye giden yol hâlâ uzun.",
-    "Toparlayalım. Gözlemle kesinleşmiş olanlar: genel görelilik ve kuantum fiziği kendi alanlarında, kütleçekim dalgaları ve bu derste gördüğün bütün deneysel sınırlar. Güçlü kanıtlı ama açık sorulu: kuantum kütleçekim etkilerinin bugünkü ölçümlerde, Planck ölçeğinden beklenen basit biçimleriyle görünmediği; bütün dolaylı sınamalar bunu destekliyor, ama Planck ölçeğinde ne olduğu açık bir soru. Etiketi kuram ya da hipotez olanlar: graviton, sicim kuramı, ek boyutlar, süpersimetri, M-kuramı, döngü kuantum kütleçekimi ve diğer yaklaşımlar. Spekülasyon: manzaradaki bütün çözümlerin gerçek evrenler olması, Planck ölçeğinde uzay-zaman köpüğü, Büyük Sıçrama. İstanbul'dan baktığın gökyüzünde bu soruların izi doğrudan görünmez; ama uzaktaki patlamalardan gelen ışık ve kütleçekim dalgaları, sorunun cevabına bugün en yakın tanıklardır."
-   ],
-   "ornek": {
-    "baslik": "Örnek: Masa üstü deneyde kütleçekimi ne kadar zayıf?",
-    "metin": "Newton yasası: F = G × m₁ × m₂ ÷ r². Marletto–Vedral örneği: m₁ = m₂ = 10⁻¹² kg, r = 10⁻⁶ m, G = 6,674 × 10⁻¹¹. F = 6,674 × 10⁻¹¹ × 10⁻¹² × 10⁻¹² ÷ 10⁻¹² = 6,674 × 10⁻²³ newton. Karşılaştırma için kütlelerden birinin Dünya'daki ağırlığı: 10⁻¹² × 9,81 ≈ 9,8 × 10⁻¹² newton. Oran: 6,7 × 10⁻²³ ÷ 9,8 × 10⁻¹² ≈ 7 × 10⁻¹². Sonuç: iki kütle arasındaki çekim yaklaşık 6,7 × 10⁻²³ newtondur, yani her birinin kendi ağırlığının yaklaşık trilyonda yedisi; deneyin zorluğu buradan gelir."
-   },
-   "akilda": "Bose ve arkadaşları ile Marletto–Vedral (2017), yalnız kütleçekimiyle etkileşen iki süperpozisyondaki kütlenin dolanmasını önerdi; dolanıklığın gerçekten kuantum kütleçekimi kanıtlayıp kanıtlamayacağı tartışmalı. 2021'de 90 mg'lık bir kürenin kütleçekimi ölçüldü. Adayların hepsi hâlâ kuram ya da hipotez düzeyinde."
-  }
- ],
- "formuller": [
-  {
-   "ad": "Planck uzunluğu",
-   "ifade": "ℓP = √(ħ × G ÷ c³)",
-   "aciklama": "ħ indirgenmiş Planck sabiti (1,0546 × 10⁻³⁴ J·s), G kütleçekim sabiti (6,6743 × 10⁻¹¹ m³ kg⁻¹ s⁻²), c ışık hızı (299.792.458 m/s). Sonuç metre cinsinden: 1,616255 × 10⁻³⁵ m (NIST CODATA 2022). Kuantum kütleçekim etkilerinin önemli olması beklenen ölçeği gösterir; en küçük uzunluk olduğu kanıtlanmış değildir."
-  },
-  {
-   "ad": "Planck zamanı",
-   "ifade": "tP = ℓP ÷ c",
-   "aciklama": "Işığın bir Planck uzunluğunu geçme süresi. 1,616 × 10⁻³⁵ m ÷ 2,998 × 10⁸ m/s ≈ 5,39 × 10⁻⁴⁴ s (NIST: 5,391247 × 10⁻⁴⁴ s)."
-  },
-  {
-   "ad": "Planck enerjisi",
-   "ifade": "EP = √(ħ × c⁵ ÷ G)",
-   "aciklama": "Planck kütlesinin enerji karşılığı: 1,220890 × 10¹⁹ GeV ≈ 1,96 × 10⁹ J (NIST CODATA 2022). Bu enerjinin tek bir parçacıkta toplanması gerekir; LHC'nin 13,6 TeV'lik çarpışma enerjisinin yaklaşık 9 × 10¹⁴ katıdır."
-  },
-  {
-   "ad": "Yoklanan uzunluk ile enerji",
-   "ifade": "E ≈ ħc ÷ λ",
-   "aciklama": "λ yoklanmak istenen uzunluk, E gereken enerji. ħc = 197,327 MeV·fm (NIST, kesin değer); 1 fm = 10⁻¹⁵ m. Kaba bir mertebe ilişkisidir; λ = ℓP için E ≈ 1,22 × 10¹⁹ GeV verir."
-  },
-  {
-   "ad": "Newton'un kütleçekim yasası",
-   "ifade": "F = G × m₁ × m₂ ÷ r²",
-   "aciklama": "m₁, m₂ kütleler (kg), r aralarındaki uzaklık (m), F newton cinsinden kuvvet. Masa üstü deneylerde küçük kütleler arasındaki çekimi tahmin etmek için kullanılır; 10⁻¹² kg'lık iki kütle 1 μm arayla ≈ 6,7 × 10⁻²³ N."
-  },
-  {
-   "ad": "Kütleçekimin hızını sınamak",
-   "ifade": "Δv ÷ c ≈ Δt ÷ (d ÷ c)",
-   "aciklama": "Δt iki sinyal arasındaki gecikme (s), d kaynağa uzaklık (m), d ÷ c ışığın yolculuk süresi. GW170817 için Δt = 1,74 s, d ≥ 26 Mpc ≈ 8,0 × 10²³ m; Δv ÷ c ≈ 6,5 × 10⁻¹⁶. Sinyallerin aynı anda çıktığı varsayımıyla geçerlidir."
-  }
- ],
- "anahtar_sayilar": [
-  {
-   "deger": "1,616255 × 10⁻³⁵ m",
-   "aciklama": "Planck uzunluğu (CODATA 2022, göreli belirsizlik 1,1 × 10⁻⁵); protonun yük yarıçapından yaklaşık 5 × 10¹⁹ kat küçük.",
-   "kaynak_url": "https://physics.nist.gov/cgi-bin/cuu/Value?plkl"
-  },
-  {
-   "deger": "5,391247 × 10⁻⁴⁴ s",
-   "aciklama": "Planck zamanı: ışığın bir Planck uzunluğunu geçme süresi.",
-   "kaynak_url": "https://physics.nist.gov/cgi-bin/cuu/Value?plkt"
-  },
-  {
-   "deger": "1,220890 × 10¹⁹ GeV",
-   "aciklama": "Planck enerjisi (Planck kütlesinin enerji karşılığı); yaklaşık 1,96 × 10⁹ J, LHC'nin 13,6 TeV'lik çarpışma enerjisinin yaklaşık 9 × 10¹⁴ katı.",
-   "kaynak_url": "https://physics.nist.gov/cgi-bin/cuu/Value?plkmc2gev"
-  },
-  {
-   "deger": "2,176434 × 10⁻⁸ kg",
-   "aciklama": "Planck kütlesi, yaklaşık 22 mikrogram: parçacıklara göre dev, canlıların kütle aralığında.",
-   "kaynak_url": "https://physics.nist.gov/cgi-bin/cuu/Value?plkm"
-  },
-  {
-   "deger": "26, 10, 11",
-   "aciklama": "Uzay-zamanın boyut sayısı: bozonik sicim kuramında 26, süpersicim kuramında 10, M-kuramında 11.",
-   "kaynak_url": "https://en.wikipedia.org/wiki/String_theory"
-  },
-  {
-   "deger": "10⁵⁰⁰",
-   "aciklama": "Sicim manzarasındaki kararlıya yakın çözüm sayısı için sık aktarılan mertebe (Douglas 2003; Ashok ve Douglas 2004); tam sayı bilinmiyor, 2015'te tek bir geometri için 10²⁷²⁰⁰⁰ bulundu.",
-   "kaynak_url": "https://en.wikipedia.org/wiki/String_theory_landscape"
-  },
-  {
-   "deger": "30 μm",
-   "aciklama": "Eöt-Wash deneyine (2020; 52 μm ile 3 mm arası ölçümler) göre en büyük ek boyutun yarıçapının üst sınırı.",
-   "kaynak_url": "https://arxiv.org/pdf/2002.11761"
-  },
-  {
-   "deger": "−3 × 10⁻¹⁵ ile +7 × 10⁻¹⁶",
-   "aciklama": "GW170817 ve GRB 170817A'dan (1,74 ± 0,05 s gecikme) çıkan, kütleçekimi ile ışık hızı arasındaki farkın ışık hızına oranı için sınırlar.",
-   "kaynak_url": "https://research.birmingham.ac.uk/en/publications/gravitational-waves-and-gamma-rays-from-a-binary-neutron-star-mer/"
-  },
-  {
-   "deger": "7,7 × 10⁻²³ eV",
-   "aciklama": "Kütleçekim dalgası gözlemlerinden graviton kütlesine konan üst sınır.",
-   "kaynak_url": "https://en.wikipedia.org/wiki/Graviton"
-  },
-  {
-   "deger": "10⁻⁴⁸ m",
-   "aciklama": "INTEGRAL'in GRB 041219A kutuplanma ölçümünden (ESA, 2011) uzayın olası taneciklik ölçeği için çıkardığı üst sınır; yorumu modele bağlı.",
-   "kaynak_url": "https://www.esa.int/Science_Exploration/Space_Science/Integral_challenges_physics_beyond_Einstein"
-  },
-  {
-   "deger": "2,46 TeV",
-   "aciklama": "CMS'nin ikinci çalışma dönemi aramalarından birinde gluino kütlesi için dışlanan üst değer; süpersimetriden iz bulunamadı, sınırlar modele bağlı.",
-   "kaynak_url": "https://arxiv.org/pdf/2510.17971"
-  },
-  {
-   "deger": "1,2 × 10³⁶",
-   "aciklama": "İki proton arasındaki elektrik itmesinin kütleçekimine oranı (NIST CODATA 2022 sabitleriyle hesap).",
-   "kaynak_url": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt"
-  }
- ],
- "sozluk": [
-  {
-   "terim": "kuantum kütleçekim",
-   "tanim": "Kütleçekimini kuantum mekaniğinin ilkeleriyle tek bir tutarlı kuramda anlatmaya çalışan, henüz tamamlanmamış kuramsal fizik alanı."
-  },
-  {
-   "terim": "renormalizasyon",
-   "tanim": "Kuantum alan kuramlarının hesaplarında çıkan sonsuzlukları, sayısı sonlu ve deneyle ölçülen birkaç büyüklüğe soğurarak kuramı öngörü yapabilir hâle getirme yöntemi."
-  },
-  {
-   "terim": "efektif alan kuramı",
-   "tanim": "Yalnız belli bir enerjinin altında geçerli olan ve bilinmeyen yüksek enerji ayrıntılarını yok sayarak yine de doğru öngörü yapan yaklaşık kuram."
-  },
-  {
-   "terim": "arka plan bağımsızlığı",
-   "tanim": "Bir kuramın sabit, önceden verilmiş bir uzay-zaman sahnesi varsaymaması; genel görelilikte uzay-zamanın kendisinin dinamik olması."
-  },
-  {
-   "terim": "Planck uzunluğu",
-   "tanim": "Işık hızı, kütleçekim sabiti ve Planck sabitinden kurulan, yaklaşık 1,6 × 10⁻³⁵ m'lik ve kuantum kütleçekim etkilerinin önem kazanması beklenen uzunluk ölçeği."
-  },
-  {
-   "terim": "Planck zamanı",
-   "tanim": "Işığın bir Planck uzunluğunu geçmesi için gereken, yaklaşık 5,4 × 10⁻⁴⁴ s'lik süre."
-  },
-  {
-   "terim": "Planck enerjisi",
-   "tanim": "Planck kütlesinin enerji karşılığı olan, yaklaşık 1,22 × 10¹⁹ GeV'lik ve bugünkü hızlandırıcıların çok ötesindeki enerji ölçeği."
-  },
-  {
-   "terim": "graviton",
-   "tanim": "Kütleçekimini taşıması beklenen, kütlesiz ve spini 2 olan, hiç gözlenmemiş varsayımsal parçacık."
-  },
-  {
-   "terim": "sicim kuramı",
-   "tanim": "Temel parçacıkları nokta yerine Planck ölçeğinde titreşen tek boyutlu sicimler olarak anlatan ve içinde kendiliğinden graviton bulunan aday kuram."
-  },
-  {
-   "terim": "süpersicim kuramı",
-   "tanim": "Hem bozonları hem fermiyonları içeren, süpersimetriyi barındıran ve 10 boyutlu uzay-zaman gerektiren sicim kuramı."
-  },
-  {
-   "terim": "fazladan boyut",
-   "tanim": "Bildiğimiz üç uzay ve bir zaman boyutuna ek olarak bazı kuramların varsaydığı, günlük hayatta fark edilmeyen boyut."
-  },
-  {
-   "terim": "kompaktlaştırma",
-   "tanim": "Fazladan boyutların çok küçük kapalı şekillere kıvrılarak uzay-zamanın etkin olarak daha az boyutlu görünmesini sağlayan yöntem."
-  },
-  {
-   "terim": "Calabi–Yau uzayı",
-   "tanim": "Süpersicim kuramında altı ek boyutun kıvrıldığı varsayılan, adını Eugenio Calabi ve Shing-Tung Yau'dan alan özel geometrik biçim."
-  },
-  {
-   "terim": "süpersimetri",
-   "tanim": "Her bozona bir fermiyon, her fermiyona bir bozon eş öngören ve LHC'de iz bulunamamış kuramsal simetri."
-  },
-  {
-   "terim": "M-kuramı",
-   "tanim": "Beş süpersicim kuramını aynı 11 boyutlu kuramın farklı sınır durumları olarak birleştirdiği varsayılan ve tam formülasyonu bilinmeyen kuram."
-  },
-  {
-   "terim": "zar",
-   "tanim": "Sicim kuramında noktayı ve sicimi daha çok boyuta genelleyen, uzay-zamanda hareket edebilen çok boyutlu nesne."
-  },
-  {
-   "terim": "sicim manzarası",
-   "tanim": "Ek boyutların biçimine ve alan seçimlerine göre sicim kuramının verdiği, sayısı çoğu kez 10⁵⁰⁰ mertebesinde tahmin edilen olası çözümlerin bütünü."
-  },
-  {
-   "terim": "bataklık",
-   "tanim": "Kendi içinde tutarlı görünen ama kuantum kütleçekimle bağdaşmadığı varsayılan alçak enerji kuramlarının kümesi."
-  },
-  {
-   "terim": "döngü kuantum kütleçekimi",
-   "tanim": "Genel göreliliği doğrudan kuantumlaştırarak alanın ve hacmin kesikli olduğu, uzayın Planck ölçeğinde taneli olduğu sonucuna varan aday kuram."
-  },
-  {
-   "terim": "spin ağı",
-   "tanim": "Döngü kuantum kütleçekiminde uzayın kendisinin kuantum durumunu betimleyen, kenarları spin değerleriyle etiketlenmiş çizge."
-  },
-  {
-   "terim": "nedensel küme",
-   "tanim": "Uzay-zamanı yalnız neden-sonuç sırasıyla birbirine bağlı kesikli olaylar kümesi olarak gören kuantum kütleçekim yaklaşımı."
-  },
-  {
-   "terim": "asimptotik güvenlik",
-   "tanim": "Kütleçekiminin etkileşim güçlerinin çok yüksek enerjide sonlu bir sabit noktaya yaklaşarak sonsuzluklardan kurtulabileceği varsayımı."
-  },
-  {
-   "terim": "yanlışlanabilirlik",
-   "tanim": "Bir kuramı çürütebilecek bir gözlemin en azından ilke olarak tanımlanabilmesi; Popper'ın bilimsellik ölçütü."
-  },
-  {
-   "terim": "deneysel olmayan kuram değerlendirmesi",
-   "tanim": "Deney sonucu yokken bir kurama güveni alternatifsizlik, geçmiş başarılar ve beklenmedik açıklamalar gibi argümanlarla tartma yaklaşımı; Richard Dawid'in savunduğu görüş."
-  },
-  {
-   "terim": "Lorentz değişmezliği",
-   "tanim": "Fizik yasalarının birbirine göre sabit hızla hareket eden bütün gözlemciler için aynı olması ilkesi."
-  }
- ],
- "defter_notu": [
-  "Kuantum kütleçekim: kütleçekimi + kuantum. Gerektiği yer: kara delik merkezi, Büyük Patlama'nın ilk anı. Tam ve sınanmış kuram yok.",
-  "Sorunlar: kütleçekimi renormalize edilemez (sonsuz parametre); uzay-zaman sahne değil oyuncu; zamanın anlamı farklı.",
-  "Planck (NIST CODATA 2022): uzunluk 1,616 × 10⁻³⁵ m, zaman 5,39 × 10⁻⁴⁴ s, kütle 21,8 μg, enerji 1,22 × 10¹⁹ GeV ≈ 9 × 10¹⁴ × LHC.",
-  "Graviton: kütlesiz, spin 2, görülmedi; kütlesi < 7,7 × 10⁻²³ eV (kütleçekim dalgaları).",
-  "Sicim kuramı: titreşen sicimler, graviton kendiliğinden; 26 / 10 / 11 boyut; Calabi–Yau; Eöt-Wash 2020: ek boyut < 30 μm.",
-  "Süpersimetri LHC'de yok; M-kuramı (Witten 1995) tam formülasyonsuz; Strominger–Vafa 1996 kara delik entropisi.",
-  "Manzara 10⁵⁰⁰: ölçüm değil, kaba sayım (Douglas 2003, Ashok–Douglas 2004). Bataklık 2018: tartışmalı.",
-  "Döngü kuantum kütleçekimi: alan ve hacim kesikli (1994), spin ağları; GR sınırı henüz gösterilmedi. Diğerleri: nedensel kümeler, asimptotik güvenlik, nedensel dinamik üçgenleme.",
-  "Tartışma: Ellis–Silk 2014, Woit ve Smolin 2006, Rovelli 2016 ↔ Gross, Dawid 2013, Polchinski 2016; Münih 7–9 Aralık 2015. Son hakem deney.",
-  "İpuçları: GW170817 hız farkı −3 × 10⁻¹⁵ ile +7 × 10⁻¹⁶; Fermi GRB 090510; INTEGRAL 10⁻⁴⁸ m; masa üstü dolanıklık önerileri (2017)."
- ],
- "sorular": [
-  {
-   "soru": "Kuantum kütleçekime hangi ortamlarda ihtiyaç duyulur ve neden günlük hayatta bu ihtiyaç hissedilmez?",
-   "cevap": "Kütleçekiminin de kuantum etkilerinin de birlikte önemli olduğu yerlerde: kara deliklerin merkezinde ve Büyük Patlama'nın ilk anında. Günlük hayatta atom ölçeğinde kütleçekimi çok zayıftır (iki proton arasında elektrik itmesinin yaklaşık 10³⁶'da biri), büyük ölçekte ise kuantum etkileri ortalamada silinir."
-  },
-  {
-   "soru": "“Kütleçekimi renormalize edilemez” ne demek? Bu, kütleçekimin kuantum düzeyinde hiç hesaplanamayacağı anlamına mı gelir?",
-   "cevap": "Alışılmış yoldan kuantumlaştırıldığında kuramı tanımlamak için sonsuz sayıda bağımsız parametre gerekir; her biri için deney yapılamayacağı için yüksek enerjide öngörü kalmaz. Ama alçak enerjide kütleçekimi efektif alan kuramı olarak kullanılabilir; örneğin Newton çekimine gelen küçük kuantum düzeltmesi hesaplanabilir. Sorun Planck ölçeğine yaklaştıkça ortaya çıkar."
-  },
-  {
-   "soru": "Proton yarıçapı (NIST: 8,41 × 10⁻¹⁶ m) Planck uzunluğunun (1,616 × 10⁻³⁵ m) kaç katıdır?",
-   "cevap": "8,41 × 10⁻¹⁶ ÷ 1,616 × 10⁻³⁵ ≈ 5,2 × 10¹⁹. Proton, Planck uzunluğundan yaklaşık 5 × 10¹⁹ kat büyüktür; insanın protondan büyüklüğü ise yalnızca yaklaşık 2 × 10¹⁵ kattır."
-  },
-  {
-   "soru": "Planck uzunluğunun doğadaki en küçük uzunluk olduğu kanıtlanmış mıdır?",
-   "cevap": "Hayır. 1950'lerden beri uzay-zamanın bu ölçekte köpüğe dönüşebileceği ve ölçülebilecek en kısa uzaklığın bu olabileceği öne sürülüyor, ama bu kuram ya da hipotez (köpük resmi ise spekülasyon) düzeyindedir. Planck birimleri ilk önerildiğinde yalnız doğal bir ölçü sistemiydi."
-  },
-  {
-   "soru": "LHC'nin 13,6 TeV çarpışma enerjisi Planck enerjisinin ne kadarıdır? Planck enerjisini joule olarak gündelik bir şeyle karşılaştır.",
-   "cevap": "1,22 × 10¹⁹ GeV ÷ 13.600 GeV ≈ 9 × 10¹⁴; LHC Planck enerjisinin yaklaşık 10⁻¹⁵'i kadardır. Planck enerjisi ≈ 1,96 × 10⁹ J, bir otomobil deposundaki yakıtın (57,2 L × 34,2 MJ) yanma enerjisi kadardır; zor olan bunu tek bir parçacıkta toplamaktır."
-  },
-  {
-   "soru": "LIGO kütleçekim dalgalarını yakaladığına göre gravitonlar da gözlenmiş olmaz mı?",
-   "cevap": "Hayır. LIGO dalgayı ölçer, tek tek gravitonları değil; bir radyo antenin tek tek fotonları saymaması gibi. Tek bir graviton yakalamak makul hiçbir dedektörle mümkün görünmüyor (Jüpiter kütleli bir dedektör bile on yılda bir). Ama dalgalar graviton kütlesine 7,7 × 10⁻²³ eV'luk üst sınır koyar."
-  },
-  {
-   "soru": "Sicim kuramı neden ilk ortaya çıktığında kütleçekim kuramı değildi ve nasıl kütleçekim kuramına dönüştü?",
-   "cevap": "1960'ların sonunda güçlü kuvvetin kuramı olarak doğdu; o iş için kuantum renk dinamiği kazandı. 1974'te Yoneya ile Schwarz ve Scherk, bütün sicim kuramlarında kütlesiz, spini 2 olan bir titreşim, yani graviton bulunduğunu fark etti; Schwarz ve Scherk kuramın kütleçekim kuramı olduğunu önerdi."
-  },
-  {
-   "soru": "Ek boyutları neden görmüyoruz ve deneyler bu konuda ne söylüyor?",
-   "cevap": "Ek boyutların çok küçük kapalı şekillere kıvrıldığı (kompaktlaştırma, Calabi–Yau) ya da madde ve diğer kuvvetlerin dört boyutlu bir zara bağlı olduğu varsayılır. Eöt-Wash 2020 deneyi Newton yasasını 52 μm'ye kadar doğruladı ve en büyük ek boyutun yarıçapını 30 μm'nin altına itti. LHC'den belirleyici bir işaret gelmedi. Ek boyutlar kuram ya da hipotez düzeyindedir."
-  },
-  {
-   "soru": "Süpersimetrinin LHC'de bulunamaması sicim kuramını yanlışladı mı?",
-   "cevap": "Hayır, ama beklenen en güçlü ipucu gelmedi. Süpersicim kuramı süpersimetriyi bir düzeyde gerektirir; süpersimetri LHC enerjilerinin üstünde kırılmış olabilir. Ellis ve Silk bunu sınanabilir öngörülerin başarısızlığı sayar; savunanlar kuramın süpersimetrinin enerjisini kesin öngörmediğini söyler."
-  },
-  {
-   "soru": "10⁵⁰⁰ sayısı nereden geliyor ve neden hem eleştiri hem savunma konusu?",
-   "cevap": "Ek boyutların biçimi ve akı değerleri için çok sayıda bağımsız seçenek olmasından; Douglas (2003) ve Ashok ile Douglas (2004) gibi istatistik sayımlara dayanan kaba bir mertebedir, ölçüm değildir. Woit'e göre bu kadar çözüm kuramın öngörü gücünü yok eder; Susskind ve Weinberg çizgisindekiler ise küçük kozmolojik sabite antropik bir açıklama sunduğunu savunur."
-  },
-  {
-   "soru": "Döngü kuantum kütleçekiminin sicim kuramından temel farkları nelerdir ve en büyük açığı nedir?",
-   "cevap": "Ek boyut ve süpersimetri gerektirmez, bütün kuvvetleri birleştirmeyi hedeflemez; geometriyi doğrudan kuantumlaştırır ve alan ile hacmin kesikli olduğunu bulur (Rovelli–Smolin 1994). En büyük açığı, genel göreliliğe giden yarı klasik sınırın henüz gösterilememiş olmasıdır; bu yüzden genel göreliliğin öngörülerini bile henüz yeniden üretmiş değildir."
-  },
-  {
-   "soru": "Dawid'in deneysel olmayan kuram değerlendirmesi hangi üç argümana dayanır ve eleştirenler buna ne der?",
-   "cevap": "Alternatifsizlik (başka uygun birleşik kuram yok), üst-tümevarım (kuram geçmişte doğrulanmış kuramlar örnek alınarak kuruldu) ve beklenmedik açıklama (kara delik entropisi gibi hedeflenmemiş olguları açıklıyor). Ellis ve Silk buna “kale direklerini oynatmak” der; Rovelli deneysel olmayan kanıtlara fazla yaslanmanın bilimin güvenilirliğini zayıflatacağını savunur."
-  },
-  {
-   "soru": "GW170817'de kütleçekim dalgası ile gama ışınları arasında 1,74 s vardı ve kaynak en az 26 Mpc uzaktaydı. Hız farkı için kabaca nasıl bir sınır çıkar?",
-   "cevap": "26 Mpc ≈ 8,0 × 10²³ m; ışığın yolculuğu ≈ 2,7 × 10¹⁵ s. 1,74 ÷ 2,7 × 10¹⁵ ≈ 6,5 × 10⁻¹⁶. Ekip benzer hesapla farkın ışık hızının −3 × 10⁻¹⁵ ile +7 × 10⁻¹⁶ katı arasında olduğunu buldu; alt sınır gama ışınlarının 10 s geç çıktığı varsayımından gelir."
-  },
-  {
-   "soru": "Bose ve arkadaşları ile Marletto ve Vedral'ın 2017 önerisi neyi sınamak istiyor ve neden tartışmalı?",
-   "cevap": "Süperpozisyondaki iki küçük kütle yalnız kütleçekimiyle etkileşip dolanık çıkarsa, yazarlara göre kütleçekim alanı kuantum olmalıdır. Martín-Martínez ve Perche (2022) bu dolanıklığın klasik, yerel bir alanla da açıklanabileceğini savunur. Ayrıca Casimir gibi güçlü kuvvetler etkiyi taklit edebilir ve sonuç rakip kuramlar arasında seçim yapmaz."
-  }
- ],
- "kaynaklar": [
-  {
-   "ad": "NIST CODATA 2022: Planck uzunluğu",
-   "url": "https://physics.nist.gov/cgi-bin/cuu/Value?plkl"
-  },
-  {
-   "ad": "NIST CODATA 2022: Planck zamanı",
-   "url": "https://physics.nist.gov/cgi-bin/cuu/Value?plkt"
-  },
-  {
-   "ad": "NIST CODATA 2022: Planck kütlesinin enerji karşılığı (GeV)",
-   "url": "https://physics.nist.gov/cgi-bin/cuu/Value?plkmc2gev"
-  },
-  {
-   "ad": "NIST CODATA 2022: tüm sabitler listesi",
-   "url": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt"
-  },
-  {
-   "ad": "Wikipedia: Quantum gravity",
-   "url": "https://en.wikipedia.org/wiki/Quantum_gravity"
-  },
-  {
-   "ad": "Wikipedia: Planck units",
-   "url": "https://en.wikipedia.org/wiki/Planck_units"
-  },
-  {
-   "ad": "Wikipedia: Graviton",
-   "url": "https://en.wikipedia.org/wiki/Graviton"
-  },
-  {
-   "ad": "Wikipedia: String theory",
-   "url": "https://en.wikipedia.org/wiki/String_theory"
-  },
-  {
-   "ad": "Wikipedia: Kaluza–Klein theory",
-   "url": "https://en.wikipedia.org/wiki/Kaluza%E2%80%93Klein_theory"
-  },
-  {
-   "ad": "Wikipedia: Large extra dimensions",
-   "url": "https://en.wikipedia.org/wiki/Large_extra_dimensions"
-  },
-  {
-   "ad": "Lee, Adelberger ve diğ. (2020): ters kare yasasının 52 μm'ye kadar testi, arXiv 2002.11761",
-   "url": "https://arxiv.org/pdf/2002.11761"
-  },
-  {
-   "ad": "Wikipedia: Supersymmetry",
-   "url": "https://en.wikipedia.org/wiki/Supersymmetry"
-  },
-  {
-   "ad": "Sekmen: CMS ikinci çalışma dönemi süpersimetri aramaları derlemesi, arXiv 2510.17971",
-   "url": "https://arxiv.org/pdf/2510.17971"
-  },
-  {
-   "ad": "Wikipedia: M-theory",
-   "url": "https://en.wikipedia.org/wiki/M-theory"
-  },
-  {
-   "ad": "Wikipedia: AdS/CFT correspondence",
-   "url": "https://en.wikipedia.org/wiki/AdS/CFT_correspondence"
-  },
-  {
-   "ad": "Wikipedia: String theory landscape",
-   "url": "https://en.wikipedia.org/wiki/String_theory_landscape"
-  },
-  {
-   "ad": "Wikipedia: Swampland (physics)",
-   "url": "https://en.wikipedia.org/wiki/Swampland_(physics)"
-  },
-  {
-   "ad": "Quanta Magazine (2018): Dark energy may be incompatible with string theory",
-   "url": "https://www.quantamagazine.org/dark-energy-may-be-incompatible-with-string-theory-20180809/"
-  },
-  {
-   "ad": "Wikipedia: Loop quantum gravity",
-   "url": "https://en.wikipedia.org/wiki/Loop_quantum_gravity"
-  },
-  {
-   "ad": "Wikipedia: Causal sets",
-   "url": "https://en.wikipedia.org/wiki/Causal_sets"
-  },
-  {
-   "ad": "Wikipedia: Asymptotic safety",
-   "url": "https://en.wikipedia.org/wiki/Asymptotic_safety"
-  },
-  {
-   "ad": "Wikipedia: Causal dynamical triangulation",
-   "url": "https://en.wikipedia.org/wiki/Causal_dynamical_triangulation"
-  },
-  {
-   "ad": "Ellis ve Silk (2014), Nature: Scientific method: Defend the integrity of physics",
-   "url": "https://www.nature.com/news/scientific-method-defend-the-integrity-of-physics-1.16535"
-  },
-  {
-   "ad": "Wikipedia: Not even wrong",
-   "url": "https://en.wikipedia.org/wiki/Not_even_wrong"
-  },
-  {
-   "ad": "Wikipedia: The Trouble with Physics",
-   "url": "https://en.wikipedia.org/wiki/The_Trouble_with_Physics"
-  },
-  {
-   "ad": "Rovelli (2016): The dangers of non-empirical confirmation, arXiv 1609.01966",
-   "url": "https://arxiv.org/abs/1609.01966v1"
-  },
-  {
-   "ad": "van Dongen: String theory, Einstein, and the identity of physics (Dawid'in üç argümanı), arXiv 2105.14342",
-   "url": "https://arxiv.org/pdf/2105.14342"
-  },
-  {
-   "ad": "Polchinski (2016): Why trust a theory? Some further remarks, arXiv 1601.06145",
-   "url": "https://arxiv.org/pdf/1601.06145"
-  },
-  {
-   "ad": "Why Trust a Theory? (LMU Münih, 7–9 Aralık 2015) çağrı metni",
-   "url": "https://listbox.elte.hu/pipermail/philphys/2015q2/000655.html"
-  },
-  {
-   "ad": "Hossenfelder: Münih toplantısı izlenimleri (Big Think)",
-   "url": "https://bigthink.com/starts-with-a-bang/why-trust-a-theory/"
-  },
-  {
-   "ad": "Graham Farmelo: Why trust a theory?",
-   "url": "https://grahamfarmelo.com/?p=1293"
-  },
-  {
-   "ad": "LIGO, Virgo, Fermi, INTEGRAL (2017): GW170817 ve GRB 170817A, ApJL",
-   "url": "https://research.birmingham.ac.uk/en/publications/gravitational-waves-and-gamma-rays-from-a-binary-neutron-star-mer/"
-  },
-  {
-   "ad": "GW170817 ve GRB 170817A makalesinin tam metni (NSF PAR)",
-   "url": "https://par.nsf.gov/servlets/purl/10057807"
-  },
-  {
-   "ad": "Fermi LAT: GRB 090510 ile özel göreliliğin sınanması, arXiv 0908.1832",
-   "url": "https://arxiv.org/abs/0908.1832v1"
-  },
-  {
-   "ad": "ESA (2011): Integral challenges physics beyond Einstein",
-   "url": "https://www.esa.int/Science_Exploration/Space_Science/Integral_challenges_physics_beyond_Einstein"
-  },
-  {
-   "ad": "Marletto ve Vedral (2017): kütleçekimin oluşturduğu dolanıklık, arXiv 1707.06036",
-   "url": "https://arxiv.org/pdf/1707.06036"
-  },
-  {
-   "ad": "Physics World (2018): Quantum gravity could be probed by entangled masses",
-   "url": "https://physicsworld.com/a/quantum-gravity-could-be-probed-by-entangled-masses/"
-  },
-  {
-   "ad": "Martín-Martínez ve Perche (2022): What gravity mediated entanglement can really tell us, arXiv 2208.09489",
-   "url": "https://arxiv.org/pdf/2208.09489v2"
-  },
-  {
-   "ad": "ScienceDaily (2021): Westphal ve diğ., miligram ölçekli kütlelerin kütleçekimi",
-   "url": "https://sciencedaily.com/releases/2021/03/210310122602.htm"
-  }
- ]
+  "id": "d53",
+  "unite": "kuramlar",
+  "yeni": true,
+  "baslik": "Kuantum Kütleçekim ve Sicim Kuramı: Fiziğin Kayıp Parçası",
+  "ozet": "Genel görelilik ile kuantum fiziği kendi alanlarında her sınavı geçti, ama birbirleriyle birleşmiyor. Bu derste nedenini, sorunun ortaya çıktığı Planck ölçeklerini (NIST değerleriyle), sicim kuramını, ek boyutları, süpersimetriyi, M-kuramını ve 10⁵⁰⁰ çözümlü manzarayı, döngü kuantum kütleçekimini ve diğer adayları öğreneceksin. Sicim kuramının test edilebilirliği üzerine süren tartışmayı iki tarafın kaynaklı sesleriyle dinleyecek, gökyüzünden ve laboratuvar masasından gelen ilk deneysel ipuçlarına bakacaksın. Her iddianın kesinlik etiketi açıkça söyleniyor.",
+  "on_bilgi": [
+    "d26",
+    "d28",
+    "d32"
+  ],
+  "bolumler": [
+    {
+      "baslik": "İki dev kuram, tek evren",
+      "paragraflar": [
+        "d26'nın son bölümünde genel göreliliğin ölçülebilen her sınavı geçtiğini, ama kuantum fiziğiyle uyuşmadığını gördün. d28 ve d32'de de kuantum dünyasının atomları, parçacıkları ve üç temel kuvveti ne kadar iyi anlattığını okudun. Bu ders o iki dev kuramın arasındaki çatlağa bakıyor. Kuantum kütleçekim, kütleçekimini kuantum mekaniğinin ilkeleriyle tek bir tutarlı kurama bağlamaya çalışan kuramsal fizik alanının adıdır. Dört temel kuvvetten elektromanyetizma, güçlü ve zayıf kuvvet kuantum alan kuramıyla anlatılır; kütleçekimi bu çerçeveye tam olarak oturtulamamış tek kuvvettir.",
+        "Peki bu çatlak neden günlük hayatta hiç hissedilmez? Çünkü iki kuramın birlikte gerektiği yerler çok uçtadır. Atom ölçeğinde kütleçekimi akıl almayacak kadar zayıftır; aşağıdaki örnekte iki proton arasındaki elektrik itmesinin kütleçekiminden yaklaşık 10³⁶ kat güçlü olduğunu hesaplayacaksın. Gezegen ve galaksi ölçeğinde ise kuantum etkileri ortalamada silinir. İkisinin birden önemli olduğu yerler, kara deliklerin merkezi ve Büyük Patlama'nın ilk anıdır. Wikipedia'nın kuantum kütleçekim maddesi de alanın tam bu ortamlarla ilgilendiğini yazar: kara deliklerin çevresi ve evrenin ilk anları.",
+        "Bu ünitede her önemli iddiaya, d50'de tanıdığın dört kesinlik etiketinden birini takıyoruz: gözlemle kesinleşmiş, güçlü kanıtlı ama açık sorulu, kuram ya da hipotez ve spekülasyon. Bu derste pek çok fikir üçüncü basamakta, kuram ya da hipotez düzeyinde duracak. Nedeni basit: Wikipedia'ya göre bugün tam ve tutarlı bir kuantum kütleçekim kuramı yok ve aday kuramların öngörülerini deneyle sınamanın bir yolu henüz bulunamadı. Bir fikrin popüler olması ya da ünlü fizikçilerce savunulması onu kanıtlanmış yapmaz. Bunu ders boyunca, iki tarafın da sesini duyarak göreceksin.",
+        "Yol haritamız şöyle: önce iki kuramın neden birleşmediğini ve sorunun hangi ölçekte ortaya çıktığını, yani Planck ölçeklerini göreceğiz. Sonra en çok çalışılan iki adayı, sicim kuramını ve döngü kuantum kütleçekimini, ardından daha küçük ama ciddi yaklaşımları tanıyacağız. Dersin en önemli bölümlerinden ikisi, sicim kuramının test edilebilirliği üzerine süren tartışmaya ayrıldı. En sonda da gökyüzünden ve laboratuvar masasından gelen ilk deneysel ipuçlarına bakacağız."
+      ],
+      "ornek": {
+        "baslik": "Örnek: İki proton arasında elektrik mi, kütleçekim mi?",
+        "metin": "Elektrik kuvveti k × e² ÷ r², kütleçekim kuvveti G × m² ÷ r² ile verilir; ikisi de uzaklığın karesiyle azaldığı için oranları uzaklığa bağlı değildir. NIST'in CODATA 2022 değerleriyle: e = 1,602 × 10⁻¹⁹ coulomb, k = 1 ÷ (4πε₀) ≈ 8,99 × 10⁹, G = 6,674 × 10⁻¹¹, proton kütlesi m = 1,673 × 10⁻²⁷ kg. Pay: 8,99 × 10⁹ × (1,602 × 10⁻¹⁹)² ≈ 2,31 × 10⁻²⁸. Payda: 6,674 × 10⁻¹¹ × (1,673 × 10⁻²⁷)² ≈ 1,87 × 10⁻⁶⁴. Oran ≈ 2,31 × 10⁻²⁸ ÷ 1,87 × 10⁻⁶⁴ ≈ 1,2 × 10³⁶. Sonuç: iki proton arasındaki elektrik itmesi, kütleçekiminden yaklaşık 1,2 × 10³⁶ kat güçlüdür; bu yüzden parçacık deneylerinde kütleçekimi rahatça yok sayılır."
+      },
+      "akilda": "Kuantum kütleçekim, kütleçekimini kuantum ilkeleriyle birleştirme çabasıdır. İki kuramın birlikte gerektiği yerler kara delik merkezleri ve Büyük Patlama'nın ilk anıdır. Tam ve sınanmış bir kuram yok; bu dersteki adayların çoğu kuram ya da hipotez düzeyindedir."
+    },
+    {
+      "baslik": "Neden birleşmiyorlar? Sonsuzluklar ve sahne sorunu",
+      "paragraflar": [
+        "d29'da kuantum elektrodinamiğini, yani QED'i, tanımıştın. Bu tür kuramların hesaplarında sonsuz sonuçlar belirir ve bunlarla başa çıkmanın yoluna renormalizasyon denir: sonsuz çıkan katkılar, sayısı sonlu ve ölçülebilen birkaç büyüklüğe soğurulur. Wikipedia'ya göre QED'de bunlar belli bir enerjide ölçülen elektron yükü ve kütlesidir. Bu birkaç sayıyı deneyden bir kez aldıktan sonra kuram her şeyi öngörebilir. Kütleçekimini de aynı yoldan kuantumlaştırmayı denediğinde iş bozulur. Wikipedia'ya göre kütleçekimi bu anlamda renormalize edilemez: kuramı tanımlamak için sonsuz sayıda bağımsız parametre gerekir ve her birini sabitlemek için sonsuz sayıda deney yapman gerekirdi.",
+        "Graviton maddesi sorunu Feynman diyagramlarıyla anlatır: tek döngülü diyagramlar düzgün davranır, ama en az iki döngülü diyagramlar yok edilemeyen sonsuzluklar verir. Bir benzetme: bir yemek tarifinin her yeni malzemesi için ayrı bir tadım yapman gerekseydi ve malzeme listesi hiç bitmeseydi, tarif hiçbir şeyi önceden söyleyemezdi. Benzetmenin sınırı şu: sorun malzeme bolluğu değil, yüksek enerjide her bir bilinmeyen parametrenin sonuca karışmaya başlamasıdır. Dikkat: bu bir gözlem değil, hesapla gösterilmiş matematiksel bir sonuçtur.",
+        "Ama alçak enerjide durum o kadar kötü değil. Efektif alan kuramı denen yaklaşımda, yüksek enerjide önemli olan bilinmeyen terimler çok büyük bir enerji ölçeğiyle bastırıldığı için yok sayılabilir ve kuram alçak enerjide öngörü yapabilir. Wikipedia bunun iki örneğini verir: iki kütle arasındaki Newton çekimine gelen çok küçük kuantum düzeltmesi ve kara delik entropisi formülüne gelen düzeltmeler. Yani kuantum fiziği ile kütleçekimi gündelik enerjilerde birlikte kullanılabilir; sorun, enerji Planck ölçeğine yaklaştıkça bütün bilinmeyenlerin aynı anda önem kazanmasıdır. Wikipedia iki kaçış yolu sayar: kütleçekiminin çok yüksek enerjide sabit bir noktaya oturması, ya da parametreleri sınırlayan yeni bir simetri. İlki asimptotik güvenlik, ikincisi sicim kuramının yoludur.",
+        "İkinci sorun daha kavramsaldır. Kuantum alan kuramında uzay-zaman sabit bir sahnedir; parçacıklar bu sahnede oynayan oyunculardır. Genel görelilikte ise sahne de oyuncudur: madde uzay-zamanı eğer, eğri uzay-zaman maddenin nasıl hareket edeceğini belirler. Bu özelliğe arka plan bağımsızlığı denir. Tiyatro benzetmesinin sınırı da burada: gerçek bir sahne oyunculardan etkilenip şekil değiştirmez, uzay-zaman ise değiştirir. Wikipedia ilginç bir sonuca dikkat çeker: kuantum kütleçekimde geometri de kuantum nesnesi olduğu için, iki noktanın birbirini etkileyip etkileyemeyeceği bile bir süperpozisyon içinde olabilir. Bu da kuantum alan kuramının dayandığı yerellik ilkesini sarsar.",
+        "Üçüncü sorun zamanın kendisidir. Kuantum mekaniğinde zaman, dışarıdan işleyen ve durumların içinde değiştiği bağımsız bir parametredir. Genel görelilikte ise zaman da dinamiktir; d26'da yükseklikle saatlerin farklı işlediğini, GPS'in buna göre düzeltildiğini gördün. Wikipedia bu çatışmaya zaman sorunu adını verir. İki kuramın da kendi alanında doğru olduğu gözlemle kesinleşmiş durumda; sorun, ikisinin dilinin birbirine çevrilememesidir."
+      ],
+      "akilda": "Kütleçekimi alışılmış yoldan kuantumlaştırılınca renormalize edilemez: yüksek enerjide sonsuz sayıda bilinmeyen parametre gerekir. Alçak enerjide efektif alan kuramı olarak çalışır. Ayrıca genel görelilikte uzay-zaman sabit bir sahne değil, dinamik bir oyuncudur ve zamanın anlamı iki kuramda farklıdır."
+    },
+    {
+      "baslik": "Planck ölçekleri: doğanın kendi cetveli",
+      "paragraflar": [
+        "Metre ve saniye insan yapımı birimlerdir. 1899'da Max Planck, yalnızca doğanın evrensel sabitlerinden, yani ışık hızı c, kütleçekim sabiti G, Planck sabiti ve Boltzmann sabitinden kurulan bir birim sistemi önerdi. Bugün bunlara Planck birimleri denir. Wikipedia'ya göre Planck'ın amacı yalnızca evrensel ve doğal bir ölçme yolu bulmaktı; bu birimlere özel bir fiziksel anlam yüklemiyordu. 1950'lerde Lev Landau ve Oskar Klein gibi fizikçiler bu ölçeklerin kuantum alan kuramının geçerlilik sınırına işaret ettiğini ileri sürdü. John Wheeler da 1955'te uzay-zamanın kuantum dalgalanmalarının bu ölçekte önem kazanacağını önerdi.",
+        "NIST'in yayımladığı CODATA 2022 değerleri şöyle. Planck uzunluğu 1,616255 × 10⁻³⁵ m, Planck zamanı 5,391247 × 10⁻⁴⁴ s, Planck kütlesi 2,176434 × 10⁻⁸ kg, Planck enerjisi 1,220890 × 10¹⁹ milyar elektronvolt, Planck sıcaklığı 1,416784 × 10³² K. Hepsinin göreli belirsizliği yaklaşık 1,1 × 10⁻⁵'tir. Bu belirsizlik G'den gelir: NIST'e göre G'nin göreli belirsizliği 2,2 × 10⁻⁵'tir, Planck birimleri G'nin karekökünü içerdiği için bu belirsizlik yarıya iner. G, temel sabitler arasında en az hassas ölçülenlerden biridir.",
+        "Bu sayıların ilginç bir uyumu var: Planck zamanı, ışığın bir Planck uzunluğunu geçmesi için gereken süredir; 5,39 × 10⁻⁴⁴ s ile ışık hızını çarparsan yine 1,616 × 10⁻³⁵ m bulursun. Hepsi uç değildir: Wikipedia'ya göre Planck kütlesi yaklaşık 22 mikrogramdır, yani parçacıklara göre dev ama canlıların kütle aralığında. Planck sıcaklığının ötesini ise bilinen hiçbir fizik modeli anlatamaz. d8'deki Planck çağı da evrenin ilk yaklaşık 10⁻⁴³ saniyesini anlatır; bu dönem için elimizde doğrulanmış bir kuram yoktur.",
+        "Sık duyulan bir iddiayı burada düzeltelim: Planck uzunluğunun doğadaki en küçük uzunluk olduğu kanıtlanmış değildir. Wikipedia'ya göre 1950'lerden beri uzay-zamanın bu ölçekte bir köpüğe dönüşebileceği, ölçülebilecek en kısa uzaklığın Planck uzunluğu olabileceği öne sürülüyor, çünkü daha kısa uzaklıkları yoklamak için gereken enerji bir kara delik yaratabilir. Bunun kesinlik etiketi kuram ya da hipotez, köpük resminin kendisi ise spekülasyondur. Hatta büyük ek boyutlu kuramlarda gerçek, temel Planck uzunluğu G'den hesaplanan değerden farklı çıkabilir. Kesin olan şu: bu ölçek, bugünkü kuramlarımızın birlikte çalışmayı bıraktığı yeri gösterir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Planck uzunluğu ne kadar küçük?",
+        "metin": "NIST'e göre protonun yük yarıçapı 8,4075 × 10⁻¹⁶ m, Planck uzunluğu 1,616 × 10⁻³⁵ m. Oran: 8,41 × 10⁻¹⁶ ÷ 1,616 × 10⁻³⁵ ≈ 5,2 × 10¹⁹. Karşılaştırma için 1,7 m boyunda bir insan protondan 1,7 ÷ 8,41 × 10⁻¹⁶ ≈ 2,0 × 10¹⁵ kat büyüktür. Yani proton Planck uzunluğuna göre, insanın protona göre olduğundan 5,2 × 10¹⁹ ÷ 2,0 × 10¹⁵ ≈ 26.000 kat daha büyüktür. Sonuç: Planck uzunluğu protondan yaklaşık 5 × 10¹⁹ kat küçüktür; Wikipedia'nın “proton çapının yaklaşık 10⁻²⁰ katı” ifadesiyle uyumlu."
+      },
+      "akilda": "Planck birimleri yalnız c, G ve Planck sabitinden kurulur (1899). NIST CODATA 2022: uzunluk 1,616255 × 10⁻³⁵ m, zaman 5,391247 × 10⁻⁴⁴ s, kütle 2,176434 × 10⁻⁸ kg, enerji 1,22 × 10¹⁹ milyar elektronvolt. Planck uzunluğunun en küçük uzunluk olduğu kanıtlanmadı."
+    },
+    {
+      "baslik": "Planck enerjisi neden ulaşılmaz?",
+      "paragraflar": [
+        "d27 ve d32'de küçük şeyleri görmek için kısa dalga boyuna, kısa dalga boyu için de yüksek enerjiye ihtiyaç olduğunu gördün. Kabaca, yoklanacak uzunluk ile gereken enerjinin çarpımı sabit bir sayıdır: indirgenmiş Planck sabiti çarpı ışık hızı. NIST'e göre bu çarpımın kesin değeri 197,327 milyon elektronvolt çarpı femtometredir; bir femtometre 10⁻¹⁵ m'dir. Yani gereken enerji, bu sayının yoklanacak uzunluğa bölümüdür. Bu basit bağıntı neden Planck ölçeğine bugün ulaşamadığımızı tek satırda gösterir.",
+        "d32'de LHC'nin 2022'de başlayan üçüncü çalışma döneminde 13,6 trilyon elektronvolt çarpışma enerjisine ulaştığını okudun. Bu enerjiyle yoklanabilecek uzunluk yaklaşık 1,5 × 10⁻²⁰ m'dir. Planck uzunluğu ise bunun yaklaşık 10¹⁵ katı küçüktür. Enerji tarafından bakınca da aynı uçurum çıkar: Planck enerjisi, LHC'nin çarpışma enerjisinin yaklaşık 9 × 10¹⁴ katıdır. d26'da “yaklaşık on beş basamak” denen fark budur.",
+        "İşin tuhaf yanı, Planck enerjisi gündelik ölçüde büyük bir enerji değildir. Joule'e çevirince yaklaşık 1,96 × 10⁹ J eder. Wikipedia bunu bir otomobilin deposundaki yakıtın yanmasıyla açığa çıkan enerjiye benzetir: 57,2 litre çarpı litre başına 34,2 megajoule. Sorun miktar değil, yoğunluktur: bu enerjinin tek bir parçacığa yüklenmesi gerekir. Doğanın kendi hızlandırıcıları bile uzak kalır: Wikipedia'ya göre 1991'de gözlenen en enerjik kozmik ışın parçacığı yaklaşık 50 J taşıyordu, yani Planck enerjisinin yalnızca 2,5 × 10⁻⁸'i kadar.",
+        "Kaba bir hesap uçurumu somutlaştırır. Mıknatıslar aynı güçte kalsaydı, dairesel bir hızlandırıcının ulaşabileceği enerji kabaca halkanın büyüklüğüyle artardı. O zaman 27 km'lik LHC halkasını 9 × 10¹⁴ kat büyütmek gerekirdi: yaklaşık 2,4 × 10¹⁹ m, yani 2.500 ışık yılı. Bu bir tasarım değil, yalnızca ölçeği hissettiren bir düşünce deneyidir. Üstelik Wikipedia'ya göre o enerjilerde çarpışmalar maddeyi daha küçük parçalara ayırmak yerine kara delik üretebilir. Bu yüzden fizikçiler doğrudan yoklamayı değil, küçük etkilerin çok büyük uzaklıklarda ya da çok hassas ölçümlerde birikmesini arıyor. Dersin sonunda bunlara döneceğiz."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Planck uzunluğunu yoklamak için ne kadar enerji gerekir?",
+        "metin": "Bağıntı: enerji ≈ 197,327 milyon elektronvolt çarpı femtometre ÷ uzunluk. Planck uzunluğu femtometre cinsinden: 1,616 × 10⁻³⁵ m = 1,616 × 10⁻²⁰ femtometre. Enerji ≈ 197,327 ÷ 1,616 × 10⁻²⁰ ≈ 1,22 × 10²² milyon elektronvolt = 1,22 × 10¹⁹ milyar elektronvolt; NIST'in Planck enerjisiyle aynı. LHC ile karşılaştır: 1,22 × 10¹⁹ ÷ 13.600 ≈ 9,0 × 10¹⁴. Joule'e çevir: 1,22 × 10¹⁹ × 1,602 × 10⁻¹⁰ J ≈ 1,96 × 10⁹ J; 57,2 litre × 34,2 megajoule ≈ 1,96 × 10⁹ J. Sonuç: Planck enerjisi bir yakıt deposu kadar enerjiyi tek bir parçacığa yüklemek demektir ve LHC'nin yaklaşık 10¹⁵ katıdır."
+      },
+      "akilda": "Bir uzunluğu yoklamak için gereken enerji kabaca o uzunlukla ters orantılıdır. Planck enerjisi LHC'nin yaklaşık 9 × 10¹⁴ katıdır; joule olarak bir yakıt deposu kadardır ama tek parçacıkta toplanması gerekir. Doğrudan yoklama imkânsıza yakın; umut dolaylı, birikimli etkilerde."
+    },
+    {
+      "baslik": "Graviton: görülmesi neredeyse imkânsız parçacık",
+      "paragraflar": [
+        "d32'de kuvvetlerin taşıyıcı parçacıklarla anlatıldığını gördün: foton, gluon, W ve Z. Kütleçekimi için öngörülen taşıyıcıya graviton denir. Wikipedia'ya göre terim 1934'te Sovyet fizikçiler Dmitriy Blokhintsev ve Fyodor Galperin tarafından kondu. Graviton varsa kütlesiz olmalıdır, çünkü kütleçekimi çok uzun menzillidir ve ışık hızıyla yayılır. Spini de 2 olmalıdır, çünkü kütleçekiminin kaynağı yalnız kütle değil, enerji ve momentumun tamamıdır; elektromanyetizmanın spini 1 olan fotonundan farkı buradan gelir. Gravitonun varlığının kesinlik etiketi kuram ya da hipotezdir: kuramsal olarak çok doğal, gözlemsel olarak yok.",
+        "Tek bir gravitonu yakalamak neden bu kadar zor? Wikipedia çarpıcı bir hesap aktarır: Jüpiter kütlesinde, yüzde yüz verimli bir dedektör bir nötron yıldızının yakın yörüngesine konsa bile, en elverişli koşullarda on yılda bir graviton görmesi beklenir. Sorun gravitonların maddeyle son derece zayıf etkileşmesidir. Bu yüzden tek tek gravitonları yakalamak hiçbir doğa yasasına aykırı olmasa da makul hiçbir dedektörle mümkün görünmüyor.",
+        "LIGO ve Virgo'nun kütleçekim dalgalarını yakalaması (d16) gravitonları görmek anlamına gelmez. Bir radyo anteni de radyo dalgasını ölçer, tek tek fotonları saymaz. Ama dalgalar gravitonun özelliklerine sınır koyar. Graviton kütleli olsaydı dalgalar ışıktan yavaş yayılırdı. Wikipedia'ya göre kütleçekim dalgası gözlemlerinden çıkan üst sınır, graviton kütlesi için 7,7 × 10⁻²³ elektronvolttur; Cassini ve MESSENGER'ın gezegen yörüngesi ölçümleri de 3,16 × 10⁻²³ elektronvolt gibi benzer bir sınır verir. Kütleçekim dalgalarının varlığı gözlemle kesinleşmiş, gravitonun kütlesiz olduğu ise bu ölçümlerin duyarlılığı içinde tutarlıdır."
+      ],
+      "akilda": "Graviton, kütleçekimini taşıması beklenen kütlesiz, spini 2 olan varsayımsal parçacıktır; kesinlik etiketi kuram ya da hipotez. Tek bir gravitonu yakalamak makul hiçbir dedektörle mümkün görünmüyor. Kütleçekim dalgaları graviton kütlesinin 7,7 × 10⁻²³ elektronvoltun altında olduğunu gösterir."
+    },
+    {
+      "baslik": "Sicim kuramı: noktaların yerine titreşen teller",
+      "paragraflar": [
+        "Sicim kuramının temel fikri basittir: parçacıklar sıfır boyutlu noktalar değil, tek boyutlu küçük sicimlerdir. Wikipedia'ya göre bu sicimlerin boyunun Planck uzunluğu, yani yaklaşık 10⁻³⁵ m düzeyinde olduğu varsayılır. Laboratuvar ölçeğinden bakınca bir sicim noktadan ayırt edilemez. Ama sicimin hangi biçimde titreştiği, onun hangi parçacık olarak göründüğünü, yani kütlesini ve yükünü belirler. Gitar teli benzetmesi buradan gelir: aynı tel farklı titreşimlerle farklı notalar çıkarır. Benzetmenin sınırı: gitar teli var olan bir uzayda titreşir ve notalar kulağımıza ulaşan ses dalgalarıdır; sicim kuramında ise parçacığın kendisi titreşim biçimidir ve hesap kuantum kurallarıyla yapılır.",
+        "Kuramın hikâyesi bir kazayla başlar. Wikipedia'ya göre sicim kuramı 1960'ların sonunda güçlü kuvvetin, yani protonları ve nötronları oluşturan parçacıkların kuramı olarak doğdu. 1969–1970'te Yoichiro Nambu, Holger Bech Nielsen ve Leonard Susskind formüllerin titreşen sicimlerle anlatılabileceğini fark etti. Ama güçlü kuvvet için kuantum renk dinamiği kazandı. 1974'te Tamiaki Yoneya ve ondan bağımsız olarak John Schwarz ile Joël Scherk, bütün sicim kuramlarında kütlesiz, spini 2 olan bir titreşim olduğunu, yani bir graviton bulunduğunu gördü. Schwarz ve Scherk cesur bir adım atıp sicim kuramının hadronların değil kütleçekiminin kuramı olduğunu önerdi. Kütleçekimi istenmeden, kendiliğinden gelmişti.",
+        "Sonraki on yıl kuram az ilgi gördü. 1984'te Michael Green ve John Schwarz, kuramın tutarlılığını tehdit eden bir anomali hesabında daha önce gözden kaçmış bir katkı buldu. Edward Witten bu hesapla sicim kuramının tutarlı bir kütleçekim kuramı olduğuna ikna oldu ve 1984–1986 arasında yüzlerce fizikçi alana girdi; buna birinci süpersicim devrimi denir. Süpersicim kuramı, hem kuvvet taşıyan bozonları hem madde parçacıkları olan fermiyonları içeren ve süpersimetriyi barındıran sicim kuramıdır. Wikipedia'ya göre beş sürümü vardır: tip I, tip IIA, tip IIB ve iki heterotik kuram.",
+        "Kuramın bugünkü durumu dürüstçe şöyle özetlenebilir. Wikipedia'ya göre sicim kuramının her koşulda geçerli, tam bir tanımı yoktur; hesaplar çoğunlukla küçük etkileşimler varsayan yaklaşık yöntemlerle yapılır. Gravitonu kendiliğinden içermesi ve matematiksel tutarlılığın çok sıkı koşullar koyması, onu birçok kuramcının gözünde en güçlü aday yapar. Ama bu nitelikler doğanın gerçekten sicimlerden yapıldığını göstermez. Sicim kuramının kesinlik etiketi açıkça kuram ya da hipotezdir: matematiksel olarak zengin, gözlemle henüz desteklenmemiş."
+      ],
+      "akilda": "Sicim kuramında parçacıklar Planck uzunluğu boyunda titreşen sicimlerdir; titreşim biçimi parçacığın türünü belirler. 1960'larda güçlü kuvvet kuramı olarak doğdu, 1974'te içinde graviton bulundu, 1984'te birinci süpersicim devrimi başladı. Kesinlik: kuram ya da hipotez."
+    },
+    {
+      "baslik": "Fazladan boyutlar: neden görmüyoruz?",
+      "paragraflar": [
+        "Sicim kuramlarının matematiksel tutarlılığı, bildiğimiz dört boyuttan fazlasını gerektirir. Wikipedia'ya göre ilk sicim kuramı olan bozonik sicim kuramında uzay-zaman 26 boyutlu, süpersicim kuramında 10 boyutlu, M-kuramında 11 boyutludur. Fazladan boyut, bildiğimiz üç uzay ve bir zaman boyutuna ek olarak varsayılan ve günlük hayatta fark edilmeyen boyutlardır. Fikir sicim kuramından eskidir. Theodor Kaluza 1919'da Einstein'a gönderdiği makalede, beş boyutlu bir uzay-zamanda kütleçekimi ile elektromanyetizmanın tek bir kuramda birleştiğini gösterdi; makale 1921'de yayımlandı. 1926'da Oskar Klein beşinci boyutun yaklaşık 10⁻³⁰ cm yarıçaplı küçük bir çembere kıvrılmış olabileceğini önerdi.",
+        "Kıvrılmış bir boyutu neden fark etmeyiz? Wikipedia'nın kullandığı benzetme bir bahçe hortumudur. Uzaktan bakınca hortum tek boyutlu bir çizgi gibi görünür; yaklaşınca çevresinin de bir boyut olduğunu fark edersin. Hortumun yüzeyindeki bir karınca iki boyutta dolaşır. Ek boyutların bu biçimde çok küçük kapalı şekillere kıvrılmasına kompaktlaştırma denir. Benzetmenin sınırı: hortumun çevresi hâlâ bizim üç boyutlu uzayımızın içindedir, oysa ek boyutlar uzayımızın dışında, kendi başına yönlerdir. Süpersicim kuramında gerçekçi bir model için altı ek boyutun, matematikçiler Eugenio Calabi ve Shing-Tung Yau'nun adını taşıyan Calabi–Yau uzayı denen özel bir biçimde olması gerekir.",
+        "Bir başka seçenek zar dünyası senaryosudur. Bu resimde gözlenebilir evrenimiz, daha çok boyutlu bir uzayın içindeki dört boyutlu bir yüzeydir. Madde ve diğer kuvvetler bu yüzeye bağlıdır, kütleçekimi ise bütün boyutlara yayılabilir. Wikipedia'ya göre bu, kütleçekiminin neden bu kadar zayıf olduğuna doğal bir açıklama sunar. 1998'de Nima Arkani-Hamed, Savas Dimopoulos ve Gia Dvali, büyük ek boyutlar modeli denen ve ek boyutların sanıldığından çok daha büyük olabileceğini varsayan bir model önerdi. Bu durumda LHC'de kayıp enerji ya da mikroskobik kara delikler görülebilirdi; Wikipedia'ya göre LHC'den şimdiye kadar belirleyici bir sonuç çıkmadı.",
+        "Büyük ek boyutlar masa üstünde de aranıyor. Ek boyutlar yeterince büyük olsaydı, kütleçekimi kısa uzaklıklarda Newton'un ters kare yasasından sapardı. Seattle'daki Washington Üniversitesi'nin Eöt-Wash grubu, Lee, Adelberger ve arkadaşları, 2020'de yayımlanan deneylerinde kütleçekimini 52 mikrometre ile 3 mm arasındaki uzaklıklarda ölçtü. Newton yasası verilere iyi uydu. Ekibe göre en büyük ek boyutun yarıçapı 30 mikrometreden küçük olmalıdır. Kesinlik etiketi: ek boyutlar kuram ya da hipotez düzeyindedir; lehlerinde hiçbir deneysel kanıt yok, sadece giderek daralan sınırlar var."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Kaç boyut gizli ve ne kadar yer var?",
+        "metin": "Süpersicim kuramı 10 boyut ister; bildiğimiz 4 boyut düşülünce 10 − 4 = 6 gizli boyut kalır. M-kuramında 11 − 4 = 7. Şimdi deneysel sınırın ne kadar geniş bir aralık bıraktığına bak: Eöt-Wash'a göre en büyük ek boyutun yarıçapı 30 mikrometreden, yani 3 × 10⁻⁵ m'den küçük. Sicim kuramının doğal ölçeği ise Planck uzunluğu, 1,6 × 10⁻³⁵ m. Oran: 3 × 10⁻⁵ ÷ 1,6 × 10⁻³⁵ ≈ 1,9 × 10³⁰. Sonuç: deneyler ek boyutları 30 mikrometrenin altına itti, ama kuramın beklediği ölçeğe kadar hâlâ yaklaşık 30 basamaklık bir aralık var; bu yüzden ek boyutların görülmemesi kuramı yanlışlamaz."
+      },
+      "akilda": "Bozonik sicim 26, süpersicim 10, M-kuramı 11 boyut ister. Ek boyutların küçük şekillere kıvrıldığı (kompaktlaştırma, Calabi–Yau) ya da evrenimizin bir zar olduğu varsayılır. Eöt-Wash 2020: en büyük ek boyut 30 mikrometreden küçük. Kanıt yok; kesinlik kuram ya da hipotez."
+    },
+    {
+      "baslik": "Süpersimetri ve LHC'nin sessizliği",
+      "paragraflar": [
+        "Süpersimetri, her bozona bir fermiyon, her fermiyona da bir bozon eş öngören kuramsal simetridir. Elektronun eşi bir bozon, fotonun eşi bir fermiyon olurdu. Wikipedia'ya göre kuantum alan kuramındaki biçimi 1971–1972'de birbirinden bağımsız birkaç grup tarafından ortaya kondu; 1974'te Julius Wess ve Bruno Zumino kuramın önemli özelliklerini ortaya koydu, adı da aynı yıl Abdus Salam ve John Strathdee'nin kullanımıyla yerleşti. Standart Model'in ilk gerçekçi süpersimetrik sürümünü 1977'de Pierre Fayet önerdi. Süpersicim kuramı süpersimetriyi bir düzeyde gerektirir; bu yüzden süpersimetrinin bulunması sicim kuramı için güçlü bir ipucu sayılacaktı.",
+        "Fizikçiler süpersimetriyi LHC'nin enerjilerinde bekliyordu, çünkü iki soruna birden çare olabilirdi. Birincisi hiyerarşi sorunu: kuantum düzeltmeleri Higgs bozonunun kütlesini Planck ölçeğine doğru şişirmeye çalışır; süpersimetrik eşlerin katkıları bu düzeltmeleri kendiliğinden götürürdü. İkincisi karanlık madde: bazı modellerde en hafif süpersimetrik parçacık kararlıdır ve d50'deki WIMP adaylarından biri olabilir. Wikipedia'ya göre LHC'den önce, 2009'da yapılan model hesapları süpersimetrik eşlerin bir kısmını 500 ile 800 milyar elektronvolt arasında gösteriyordu.",
+        "Sonuç: LHC Higgs bozonunu buldu (d32), süpersimetriyi bulamadı. CMS deneyinin ikinci çalışma döneminin tamamını, 13 trilyon elektronvoltluk çarpışmaları özetleyen 2025 tarihli bir derlemeye göre Standart Model öngörülerinden anlamlı bir sapma gözlenmedi. Bazı aramalarda gluino denen süpersimetrik eşin 2,46 trilyon elektronvolta kadar olan kütleleri dışlandı; bu sınırlar varsayılan modele bağlıdır. Wikipedia'ya göre yaklaşık 125 milyar elektronvoltluk Higgs kütlesi en basit süpersimetrik model için görece büyüktür. Bir zamanlar süpersimetrinin coşkulu destekçisi olan Mikhail Shifman bile kuramcıları yeni fikirler aramaya çağırdı.",
+        "Bu sessizlik neyi gösterir? İki tarafı da dinleyelim. George Ellis ve Joe Silk, 2014'te Nature'da yazdıkları yazıda süpersimetrik eşlerin bulunamamasını sicim kuramının sınanabilir öngörülerinin başarısızlığına örnek olarak sayar. Öte yandan Wikipedia'ya göre süpersimetri daha yüksek enerjilerde kırılmış olabilir ve bazı fizikçiler sicim manzarasının süpersimetri kırılmasını büyük değerlere doğru çektiğini savunur. Yani LHC sonucu sicim kuramını yanlışlamaz, ama beklenen en güçlü ipucunu ortadan kaldırmıştır. Kesinlik etiketi: süpersimetri kuram ya da hipotez. d32'de gördüğün gibi LHC Temmuz 2026'dan beri Uzun Kapanma 3'te; Yüksek Parlaklıklı LHC'nin 2030'da çalışması planlanıyor."
+      ],
+      "akilda": "Süpersimetri her bozona bir fermiyon eş öngörür; hiyerarşi sorununu çözeceği ve karanlık madde adayı vereceği için LHC'de bekleniyordu. LHC hiçbir süpersimetrik eş bulmadı. Bu sicim kuramını yanlışlamaz ama en güçlü beklenen ipucu gelmedi. Kesinlik: kuram ya da hipotez."
+    },
+    {
+      "baslik": "M-kuramı ve kara deliğin sayılan durumları",
+      "paragraflar": [
+        "1990'ların başında fizikçilerin elinde beş farklı süpersicim kuramı vardı ve hangisinin doğru olduğu belli değildi. 1995'te Güney Kaliforniya Üniversitesi'ndeki yıllık sicim kuramı konferansında Edward Witten, bu beş kuramın aslında 11 boyutlu tek bir kuramın farklı sınır durumları olduğunu öne sürdü. Bu kurama M-kuramı denir ve duyuru, ikinci süpersicim devrimi denen yoğun bir çalışma dönemini başlattı. Wikipedia'ya göre Witten'a göre M harfi zevke göre “sihir”, “gizem” ya da “zar” anlamına gelebilir; asıl anlamına kuramın tam biçimi bilindiğinde karar verilecektir.",
+        "Bu son cümle önemli: Wikipedia'ya göre M-kuramının tam bir formülasyonu bilinmiyor. Bilinen, alçak enerjide 11 boyutlu süper kütleçekim denen kurama yaklaşması ve iki ile beş boyutlu nesneler içermesidir. Bu çok boyutlu nesnelere zar denir: nokta sıfır boyutlu, sicim tek boyutlu, zar ise daha çok boyutlu bir nesnedir. 1990'larda Joseph Polchinski, açık sicimlerin uçlarının üzerinde durduğu D-zarları denen nesnelerin kuramda zorunlu olduğunu gösterdi.",
+        "D-zarları sicim kuramının en çok övülen sonuçlarından birine yol açtı. d30'da kara deliğin entropisinin olay ufkunun alanıyla orantılı olduğunu (Bekenstein, Hawking) gördün; ama bu entropinin hangi iç durumları saydığı bilinmiyordu. 1996'da Andrew Strominger ve Cumrun Vafa, belirli D-zarı düzenlerinin iç durumlarını sayarak Bekenstein–Hawking formülünü sicim kuramından türetti. Dürüst olmak gerekirse, hesapladıkları kara delikler gerçek gökbilimsel kara deliklerden çok farklıydı: Wikipedia'ya göre yalnızca belirli bir yük için olabilecek en küçük kütleye sahip uç kara delikleri, üstelik beş boyutlu ve gerçekte gözlenmeyen bir süpersimetriye sahip bir uzay-zamanda ele aldılar. Destekçiler bunu kuramın iç tutarlılığının güçlü bir işareti sayar; eleştirenler gerçek evrenle bağının zayıf olduğunu söyler.",
+        "İkinci büyük sonuç, 1997'de Juan Maldacena'nın önerdiği AdS/CFT eşlemesidir: belirli bir eğri uzaydaki sicim kuramı, o uzayın sınırında yaşayan kütleçekimsiz bir kuantum alan kuramına denktir. Wikipedia'ya göre makale 2015'e kadar 10.000'den fazla atıf aldı ve yüksek enerji fiziğinin en çok atıf alan makalesi oldu. Ayrıntısını d52'de, kara deliklerin bilgi paradoksuyla birlikte göreceksin. Bir uyarı: Wikipedia'ya göre bu eşlemelerde kullanılan kuramlar genellikle gerçek dünyanın uygulanabilir modelleri değildir. Kesinlik etiketi: M-kuramı kuram ya da hipotez düzeyindedir."
+      ],
+      "akilda": "Witten 1995'te beş süpersicim kuramının 11 boyutlu tek bir M-kuramının sınırları olduğunu önerdi; tam formülasyonu bilinmiyor. Strominger ve Vafa 1996'da uç, süpersimetrik kara deliklerin entropisini sicim kuramıyla saydı. AdS/CFT 1997'de geldi (d52). Kesinlik: kuram ya da hipotez."
+    },
+    {
+      "baslik": "Manzara sorunu: 10⁵⁰⁰ olası çözüm",
+      "paragraflar": [
+        "Altı ek boyutun hangi biçimde kıvrıldığı ve bu kıvrımlardan geçen alanların, fizikçilerin akı dediği değerlerinin nasıl seçildiği, dört boyutta hangi parçacıkları ve kuvvetleri göreceğimizi belirler. Her seçim, kendi parçacıkları ve fizik sabitleri olan ayrı bir taban durumu, yani ayrı bir olası evren verir. Bu çözümlerin bütününe sicim manzarası denir. Wikipedia'ya göre terim evrim biyolojisindeki uyum manzarası fikrinden gelir; kozmolojide ilk Lee Smolin 1997'de kullandı, sicim kuramına Leonard Susskind taşıdı.",
+        "Ünlü 10⁵⁰⁰ sayısının dayanağı nedir? Wikipedia'ya göre kararlıya yakın çözümlerin sayısı tam olarak bilinmiyor; sık aktarılan 10⁵⁰⁰ mertebesindeki tahminler Michael Douglas'ın 2003 tarihli istatistik çalışmasına ve Ashok ile Douglas'ın 2004'te yayımlanan akı çözümlerini sayma çalışmasına dayanır. Sayının kaynağı, Calabi–Yau biçimlerinin ve akı değerlerinin çok sayıda bağımsız seçeneği olmasıdır. Yani 10⁵⁰⁰ bir ölçüm değil, kabaca sayılmış bir mertebedir. Hatta Washington Taylor ve Yi-Nan Wang 2015'te tek bir geometri için 10²⁷²⁰⁰⁰ gibi çok daha büyük bir sayı buldu. Bu tür sayıların kesinlik etiketi kuram ya da hipotezdir.",
+        "Sorun açık: bu kadar çok çözüm varsa kuram neyi öngörür? Columbia Üniversitesi matematik bölümünde öğretim görevlisi olan Peter Woit'e göre 10⁵⁰⁰ çözüm, kuramdan bir şey öngörme umudunu büyük olasılıkla yok eder, çünkü gözlemle uyumlu olanlar arasında bile neredeyse her sonucu verecek kadar çok çözüm kalır. Öteki taraf bunu bir erdem olarak görür. Steven Weinberg 1987'de, kozmolojik sabit çok büyük olsaydı galaksilerin ve dolayısıyla gözlemcilerin oluşamayacağını savunmuştu. Susskind'e göre manzaradaki çözümler büyük bir çoklu evrende gerçekten var olan evrenlerdir ve biz yaşama izin veren birindeyiz. Bütün çözümlerin gerçek evrenler olarak var olduğu fikri spekülasyondur; çoklu evren tartışmasının tamamı d54'ün konusu.",
+        "Manzaranın bir de bataklığı var. Cumrun Vafa'nın başlattığı programa göre, kendi içinde tutarlı görünen birçok kuram kuantum kütleçekimle bağdaşmaz; bu kuramların oluşturduğu kümeye bataklık denir. 25 Haziran 2018'de Georges Obied, Hirosi Ooguri, Lev Spodyneiko ve Vafa, kararlı ve pozitif enerjili, yani bizimki gibi hızlanarak genişleyen bir evrenin sicim kuramında bulunamayabileceğini öne sürdü. Doğruysa karanlık enerji zamanla zayıflamalıdır. Quanta'ya göre Eva Silverstein bu varsayımın “büyük olasılıkla yanlış” olduğunu düşünüyor; 2003 tarihli KKLT modelinin ortak yazarı Shamit Kachru da modelinden ciddi bir kuşkusu olmadığını söylüyor. Karanlık enerjinin zamanla değişip değişmediği sorusu bu yüzden d51'deki ölçümlerle doğrudan ilgili."
+      ],
+      "ornek": {
+        "baslik": "Örnek: 10⁵⁰⁰ ne kadar büyük?",
+        "metin": "Karşılaştırma için evrenin yaşını Planck zamanı biriminde sayalım. Evrenin yaşı 13,8 milyar yıl (d8). Bir yıl yaklaşık 3,156 × 10⁷ s; yaş ≈ 13,8 × 10⁹ × 3,156 × 10⁷ ≈ 4,36 × 10¹⁷ s. Planck zamanı 5,39 × 10⁻⁴⁴ s. Geçen Planck zamanı sayısı ≈ 4,36 × 10¹⁷ ÷ 5,39 × 10⁻⁴⁴ ≈ 8 × 10⁶⁰. Büyük Patlama'dan bu yana geçen her Planck anına ayrı bir çözüm düşse bile yalnızca yaklaşık 10⁶¹ çözüm incelenmiş olurdu. 10⁵⁰⁰ ÷ 10⁶¹ = 10⁴³⁹. Sonuç: 10⁵⁰⁰, evrenin bütün tarihindeki Planck anlarının sayısından 10⁴³⁹ kat büyüktür; tek tek incelenebilecek bir küme değildir."
+      },
+      "akilda": "Ek boyutların biçimi ve akı seçimleri çok sayıda olası çözüm verir: sicim manzarası. 10⁵⁰⁰ ölçüm değil, Douglas (2003) ve Ashok–Douglas (2004) çalışmalarına dayanan kaba bir mertebedir. Eleştirenler öngörü gücünü yitirdiğini, savunanlar antropik bir açıklama sunduğunu söyler. Bataklık varsayımı (2018) tartışmalıdır."
+    },
+    {
+      "baslik": "Döngü kuantum kütleçekimi: uzayın atomları",
+      "paragraflar": [
+        "Sicim kuramı bütün kuvvetleri tek çatıda toplamak ister. Döngü kuantum kütleçekimi daha mütevazı ama daha radikal bir yol seçer: genel göreliliğin ana dersini, uzay-zamanın kendisinin dinamik bir alan olduğunu ciddiye alır ve doğrudan geometriyi kuantumlaştırmaya çalışır. Ek boyut ya da süpersimetri gerektirmez, bütün kuvvetleri birleştirmeyi de hedeflemez. Wikipedia'ya göre hikâye 1986'da Abhay Ashtekar'ın genel göreliliği, diğer kuvvetlerin kuramlarına benzeyen yeni değişkenlerle yeniden yazmasıyla başladı. Kısa süre sonra Ted Jacobson ve Lee Smolin kuantum kütleçekim denkleminin döngülerle etiketlenen çözümleri olduğunu fark etti; Carlo Rovelli ve Smolin bu çözümlerden arka plandan bağımsız bir kuram kurdu.",
+        "Kuramın en ünlü sonucu 1994'te geldi: Rovelli ve Smolin, alanı ve hacmi temsil eden kuantum operatörlerinin, yani ölçülebilir büyüklüklere karşılık gelen matematiksel nesnelerin, yalnızca kesikli değerler alabildiğini gösterdi. Yani alan ve hacim, enerji gibi paket paket gelir; uzayın Planck ölçeğinde taneli bir yapısı vardır. Bu kuantum durumları, Roger Penrose'un daha önce soyut olarak tanımladığı spin ağlarıyla etiketlenir. Spin ağı, kenarları spin değerleriyle etiketlenmiş ve uzayın kendisinin kuantum durumunu betimleyen bir çizgedir; uzayda yaşayan bir alanı değil, uzayın kendisini anlatır. Wikipedia'nın benzetmesi bir tişört kumaşıdır: uzaktan pürüzsüz bir yüzey, yakından birbirine bağlı iplikler. Zaman içindeki evrime de spin köpüğü denir.",
+        "Destekçiler ve eleştirenler bu kuramı da tartışır. Wikipedia'ya göre Rovelli, 2003 tarihli bir yazısında kuramın dört boyutta ve süpersimetri olmadan kurulmasını, bugünkü deneylerle uyumlu en tutumlu açıklama olduğu için bir güç sayar. Sicim kuramcıları ise kendi kuramlarının genel göreliliği ve kuantum alan kuramını uygun sınırlarda yeniden ürettiğini, döngü kuramının bunda zorlandığını hatırlatır. Wikipedia'ya göre döngü kuantum kütleçekiminden genel göreliliğe giden yarı klasik sınırın var olduğu henüz gösterilemedi; dolayısıyla kuram genel göreliliğin öngörülerini bile henüz yeniden üretmiş değil. Maddeyi kurama katmak da zor.",
+        "Kuramın en çok bilinen uygulaması döngü kuantum kozmolojisidir. Wikipedia'ya göre bu basitleştirilmiş modellerde Büyük Patlama tekilliği ortadan kalkar ve yerini bir Büyük Sıçrama alır: evren önce büzülüp sonra yeniden genişler. d55 ve d56 bu fikre dönecek. Dünyada yaklaşık 30 araştırma grubu bu programda çalışıyor. Kesinlik etiketleri: döngü kuantum kütleçekimi kuram ya da hipotez, evrenimizin gerçekten bir sıçramayla başladığı ise spekülasyondur. Wikipedia'nın uyarısını da ekleyelim: kuramın, Standart Model'in ya da genel göreliliğin vermediği ve gözlenmiş tek bir öngörüsü yok; bu sorun bugünkü bütün kuantum kütleçekim adaylarında ortaktır."
+      ],
+      "akilda": "Döngü kuantum kütleçekimi geometriyi doğrudan kuantumlaştırır: alan ve hacim kesiklidir (Rovelli–Smolin 1994), uzayın durumu spin ağlarıyla anlatılır. Ek boyut ve süpersimetri gerektirmez. Genel göreliliğe giden sınır henüz gösterilmedi. Kesinlik: kuram ya da hipotez; Büyük Sıçrama spekülasyon."
+    },
+    {
+      "baslik": "Başka yollar: nedensel kümeler, asimptotik güvenlik, üçgenler",
+      "paragraflar": [
+        "Sicim ve döngü kuramları en çok çalışılanlardır ama tek adaylar değildir. Wikipedia'ya göre yaklaşımlar, genel görelilikten ve kuantum kuramından hangi özellikleri olduğu gibi koruyup hangilerini değiştirdiklerine göre ayrılır. Bu bölümde üç tanesine kısaca bakacağız. Hepsinin kesinlik etiketi aynıdır: kuram ya da hipotez. Hiçbirinin lehine deneysel kanıt yok ve hiçbiri ötekileri dışlayacak bir sonuç vermiş değil.",
+        "Nedensel küme yaklaşımına göre uzay-zaman temelde kesiklidir: bir olaylar kümesidir ve bu olaylar arasındaki tek temel ilişki, hangisinin hangisini etkileyebileceği, yani neden-sonuç sırasıdır. Programın kurucusu Rafael Sorkin'dir; temel makale Bombelli, Lee, Meyer ve Sorkin imzasıyla 1987'de “Nedensel küme olarak uzay-zaman” başlığıyla yayımlandı. Sorkin'in sloganı “Düzen artı Sayı eşittir Geometri”dir: sıra ilişkisi uzay-zamanın biçimini, bir bölgedeki olay sayısı da hacmini verir. Wikipedia'ya göre bu yaklaşım uzay-zamanı kesikli yaparken yerel Lorentz değişmezliğini korur.",
+        "Asimptotik güvenlik ise başka bir soru sorar: belki kütleçekimi alışılmış anlamda renormalize edilemez ama yine de iyi tanımlıdır. Steven Weinberg 1976'da, çok yüksek enerjide kütleçekiminin etkileşim güçlerinin sıfıra gitmek yerine sonlu bir sabit noktaya yaklaşabileceğini önerdi. Böyle olursa sonsuzluklar ortaya çıkmaz ve kuram yalnız birkaç ölçülebilir parametreyle öngörü yapabilir. 1996'da Martin Reuter bu fikri hesaplanabilir bir denkleme bağladı. Wikipedia'ya göre basitleştirilmiş hesaplarda böyle bir sabit noktanın varlığına dair kanıtlar birikiyor, ama kesin bir matematiksel ispat yok.",
+        "Nedensel dinamik üçgenleme, Renate Loll, Jan Ambjørn ve Jerzy Jurkiewicz'in yaklaşımıdır. Uzay-zamanı minik, düz, dört boyutlu üçgen benzeri yapı taşlarından yapıştırır ve bütün olası yapıştırmaları toplar; tek kural, zamanın yönünün her yerde tutarlı kalmasıdır. Wikipedia'ya göre büyük ölçekte bu hesaplardan bildiğimiz dört boyutlu uzay-zamana benzeyen bir yapı çıkıyor, Planck ölçeğine yaklaşıldıkça ise uzay-zaman iki boyutlu gibi davranıyor; bu bulgu asimptotik güvenlik hesaplarıyla da uyumlu. Wikipedia değişmeli olmayan geometri ve twistör kuramı gibi başka yaklaşımları da sayar. Bu çeşitlilik, alanın henüz bir kazanan seçmediğinin dürüst bir göstergesidir."
+      ],
+      "akilda": "Nedensel kümeler (Sorkin, 1987): uzay-zaman neden-sonuç sırasıyla bağlı kesikli olaylardır. Asimptotik güvenlik (Weinberg 1976, Reuter 1996): kütleçekimi yüksek enerjide bir sabit noktaya oturursa iyi tanımlı olabilir. Nedensel dinamik üçgenleme: büyük ölçekte 4, Planck ölçeğinde 2 boyut. Hepsi kuram ya da hipotez."
+    },
+    {
+      "baslik": "Test edilebilirlik tartışması: eleştirenler ne diyor?",
+      "paragraflar": [
+        "Bilim felsefecisi Karl Popper'a göre bir kuramın bilimsel sayılması için yanlışlanabilir olması gerekir: yanlışlanabilirlik, kuramı çürütebilecek bir gözlemin en azından ilke olarak tanımlanabilmesidir. Kuantum kütleçekim adaylarının hiçbiri bugün bu anlamda sınanamadığı için, fizikte yıllardır süren bir tartışma var: deneysel desteği olmayan bir kurama ne kadar güvenilebilir? Bu bölüm eleştirenlerin, bir sonraki bölüm savunanların sesini veriyor. Ders taraf tutmuyor; iki tarafın da en güçlü argümanlarını kaynaklarıyla aktarıyor.",
+        "Eleştirinin en etkili metinlerinden biri, George Ellis ve Joe Silk'in 2014'te Nature'da yayımladığı yazıdır. Yazarlara göre bazı fizikçiler spekülatif kuramları deneysel sınamadan muaf tutmak istiyor ve bu bilimi zayıflatır. Popper'ın ölçütü hâlâ geçerlidir; bir kuram savunucusuna sorulacak temel soru, onu yanlış olduğuna ikna edecek gözlemin ne olacağıdır. Ellis ve Silk, sicim kuramının görülemeyecek kadar küçük ek boyutlara dayandığını, süpersimetrik eşlerin LHC'de bulunamadığını yazar ve kuramı birleşik bir kurama dair bir senet gibi tanımlar. Kuramın gücünün olasılık hesaplarıyla, yeni gözlem olmadan desteklenebileceği fikrini ise “kale direklerini oynatmak” diye niteler.",
+        "2006'da iki kitap tartışmayı geniş kitlelere taşıdı. Peter Woit'in kitabının adı, Wolfgang Pauli'ye atfedilen “yanlış bile değil” sözünden gelir; Woit bu sözü yanlışlanamaz anlamında kullanır. Woit'e göre manzaradaki çözüm bolluğu kuramı boşaltır ve sicim kuramının aşırı popülerliği kısmen akademideki kaynak rekabetinden doğar. Lee Smolin'in The Trouble with Physics kitabı, sicim kuramının yeni ve sınanabilir bir öngörüsü olmadığını, arka plan bağımsızlığını yakalayamadığını ve ABD'de fiziğin temel araştırmalarında neredeyse tekel kurduğunu savunur. Smolin adil bir not da düşer: sicim kuramı güçlü ve iyi gerekçeli bir fikirdir ve gerçeğin bir parçası çıkabilir; asıl soru başka yaklaşımlara neden yeterince emek verilmediğidir.",
+        "Döngü kuantum kütleçekiminin kurucularından Carlo Rovelli, 2016'da yayımladığı bir yazıda deneysel olmayan kanıtlara fazla yaslanmanın bilimin güvenilirliğini zayıflatacağını ve sicim kuramının bu tehlikenin iyi bir örneği olduğunu savundu. Kuantum kütleçekim üzerinde çalışmış fizikçi Sabine Hossenfelder de fizikçilerin kuram seçerken açıkça söylenmeyen estetik ölçütlere dayandığını ileri sürer. Burada dürüst bir not gerekir: eleştirenlerin bir kısmı, Smolin ve Rovelli gibi, rakip yaklaşımlar üzerinde çalışır. Bu argümanlarını geçersiz kılmaz, ama savunanlar için söylenen “ilgi çatışması” uyarısı onlar için de geçerlidir."
+      ],
+      "akilda": "Eleştirenler (Ellis ve Silk 2014, Woit ve Smolin 2006, Rovelli 2016) Popper'ın yanlışlanabilirlik ölçütünü savunur: sınanabilir öngörüsü olmayan kuram deneyden muaf tutulamaz. Manzara öngörü gücünü boşaltır, araştırmada çeşitlilik gerekir. Bazı eleştirenler rakip yaklaşımlar üzerinde çalışır."
+    },
+    {
+      "baslik": "Test edilebilirlik tartışması: savunanlar ne diyor?",
+      "paragraflar": [
+        "Savunanların ilk argümanı, temel fizik sorularına sicim kuramı kadar başarılı bir alternatif olmadığıdır. Nobel ödüllü David Gross 1987'deki bir söyleşide, insanların bu alana gelmesinin en önemli nedeninin ortada başka iyi bir fikir olmaması olduğunu söylemişti. Eleştirenler aynı sözü aleyhte kullanır; Gross ise bunu bir rakibin yokluğu olarak görür. 2015'teki Münih toplantısında da açılış konuşmasında sicim kuramını savundu ve iyi bir alternatif olmadığını vurguladı. Bir izleyicinin aktarımına göre sicim kuramını ve çoklu evreni kuramdan çok “çerçeve” olarak tanımlamanın daha doğru olacağını söyledi.",
+        "Felsefi savunmayı en sistemli biçimde, Münih toplantısının düzenleyicilerinden Richard Dawid kurdu. Cambridge University Press'in 2013'te yayımladığı kitabında, kuramcıların deney yokken bir kurama neden güvendiğini inceler ve buna deneysel olmayan kuram değerlendirmesi der. Jeroen van Dongen'in özetine göre Dawid'in üç argümanı vardır. Alternatifsizlik argümanı: bütün temel etkileşimleri tutarlı biçimde birleştiren başka uygun bir kuram yoktur. Üst-tümevarım argümanı: sicim kuramı, geçmişte sonradan deneyle doğrulanmış kuramlar örnek alınarak kurulmuştur. Beklenmedik açıklama argümanı: kuram, kurulurken hedeflemediği olguları açıklar; kara delik entropisinin sayılması bunun örneğidir.",
+        "Sicim kuramının öncülerinden Joseph Polchinski, Ellis ve Silk'e 2016'da yazılı bir yanıt verdi. Kuramın başarıları olarak ikilikleri, D-zarlarını, kara delik entropisinin nicel anlaşılmasını ve AdS/CFT'yi sayar. Kendi kabaca yaptığı olasılık hesabında sicim kuramının doğru olma olasılığını yaklaşık yüzde 98,5, çoklu evreninkini yaklaşık yüzde 94 bulur; ama hemen bu hesabın tartışmanın yüzde biri bile olmadığını ekler. “Deneysel olmayan doğrulama” deyiminden de rahatsızdır ve fiziğin yolun sonuna geldiğini söylemek için çok erken olduğunu yazar. Bizim ölçütümüzle şunu not edelim: kişisel bir olasılık tahmini, ne kadar dürüst olursa olsun, kanıt değildir.",
+        "Tartışma, Ellis ve Silk'in çağrısının ardından 7–9 Aralık 2015'te Münih'teki Ludwig Maximilian Üniversitesi'nde yapılan “Bir kurama neden güvenmeli?” toplantısında yüz yüze sürdü. Konuşmacılar arasında Ellis, Silk, Gross, Rovelli, Dawid ve Hossenfelder vardı; Hossenfelder'in aktarımına göre Polchinski son anda katılamadı. Toplantıda Gordon Kane sicim kuramının Higgs kütlesini öngördüğünü savundu; Gross bu iddianın geniş kabul görmediğini söyledi. Toplantı bir uzlaşmayla bitmedi. Ama iki tarafın ortak bir noktası var: son hakem deneydir. Ayrıldıkları yer, deney gelene kadar bir kurama ne kadar güvenilebileceğidir. Kesinlik etiketi açısından tablo değişmiyor: sicim kuramı kuram ya da hipotez."
+      ],
+      "akilda": "Savunanlar: başka iyi alternatif yok (Gross), deney yokken de kurama güvenmenin akılcı yolları var (Dawid 2013: alternatifsizlik, üst-tümevarım, beklenmedik açıklama), kuramın somut başarıları var (Polchinski 2016). Münih 2015 toplantısı uzlaşmasız bitti; iki taraf da son hakemin deney olduğunu kabul ediyor."
+    },
+    {
+      "baslik": "Gökyüzü laboratuvar olunca: dolaylı sınamalar",
+      "paragraflar": [
+        "Planck enerjisine çıkamıyorsak kuantum kütleçekimi nasıl sınanır? Wikipedia'ya göre 2000'lerden beri giderek büyüyen bir alan, kuantum kütleçekim fenomenolojisi, tam da bunu araştırıyor. Fikir şu: tek bir parçacıkta fark edilemeyecek kadar küçük bir etki, milyarlarca ışık yılı boyunca birikirse ölçülebilir hâle gelebilir. En çok aranan etkilerden biri Lorentz değişmezliğinin bozulmasıdır. Lorentz değişmezliği, fizik yasalarının birbirine göre sabit hızla hareket eden bütün gözlemciler için aynı olması ilkesidir; d25'te ışık hızının herkes için aynı olması bunun bir sonucuydu. Bazı kuantum kütleçekim modellerinde uzayın taneli yapısı, ışığın hızını foton enerjisine çok az bağlı kılabilir.",
+        "Gama ışını patlamaları bu iş için idealdir: çok uzaktadırlar ve çok farklı enerjilerde fotonları neredeyse aynı anda yollarlar. Fermi uzay teleskobu, 10 Mayıs 2009'daki kısa GRB 090510 patlamasında ilk saniye içinde 31 milyar elektronvoltluk bir foton yakaladı. Ekibe göre bu foton, bu tür modellerde etkinin ortaya çıktığı kütle ölçeğinin Planck kütlesinin belirgin biçimde üstünde olmasını gerektiriyor. ESA'nın INTEGRAL uydusu da 19 Aralık 2004'teki, en az 300 milyon ışık yılı uzaktaki GRB 041219A patlamasında farklı enerjilerdeki ışığın kutuplanmasını karşılaştırdı ve fark bulmadı. ESA'nın 2011 duyurusuna göre bu, uzayda bir taneciklik varsa 10⁻⁴⁸ m ya da daha küçük olması gerektiği anlamına gelir.",
+        "Bu sonuçları doğru okumak önemli. ESA'nın duyurusunda ekip lideri Philippe Laurent sonucun bazı sicim kuramlarını ve döngü kuantum kütleçekim kuramlarını dışlayacağını söyler. Bu iddia yalnız uzayın taneciğinin ışığın kutuplanmasını enerjiye bağlı olarak döndürdüğünü öngören modeller için geçerlidir; ana kuramların kendisini çürütmez. Kesin olan, bu basit etkilerin Planck ölçeğinde beklenen büyüklükte olmadığıdır. Bu sınırlar gözlemle kesinleşmiş ölçümlerdir; yorumları ise modele bağlıdır.",
+        "En temiz sınama 17 Ağustos 2017'de geldi. d16'da gördüğün GW170817 birleşmesinin kütleçekim dalgası ile gama ışını patlaması GRB 170817A arasında 1,74 ± 0,05 saniye vardı. LIGO, Virgo ve Fermi ekipleri bu ölçümden kütleçekiminin hızı ile ışık hızı arasındaki farkın ışık hızının −3 × 10⁻¹⁵ ile +7 × 10⁻¹⁶ katı arasında olduğunu çıkardı ve kütleçekiminde Lorentz değişmezliğinin bozulmasına önceki sınırlardan çok daha sıkı sınırlar koydu. Aşağıdaki örnekte bu inanılmaz duyarlılığın nereden geldiğini kendin göreceksin."
+      ],
+      "ornek": {
+        "baslik": "Örnek: GW170817'den kütleçekimin hızını sınamak",
+        "metin": "Ekip temkinli davranıp kaynağa uzaklığın alt sınırını, 26 megaparseki kullandı. 1 parsek ≈ 3,086 × 10¹⁶ m, yani 26 Mpc ≈ 26 × 10⁶ × 3,086 × 10¹⁶ ≈ 8,0 × 10²³ m. Işığın bu yolu alma süresi: 8,0 × 10²³ ÷ 3,0 × 10⁸ ≈ 2,7 × 10¹⁵ s, yani yaklaşık 85 milyon yıl (gerçek uzaklık daha büyük; d16'daki yaklaşık 130 milyon yıl). Gözlenen gecikme 1,74 s. Oran: 1,74 ÷ 2,7 × 10¹⁵ ≈ 6,5 × 10⁻¹⁶. Ekip iki sinyalin aynı anda çıktığını varsayınca bütün gecikmeyi hız farkına yazar; +7 × 10⁻¹⁶ sınırı bu mertebededir. Alt sınır için gama ışınlarının 10 saniye geç çıktığını varsayar: (1,74 − 10) ÷ 2,7 × 10¹⁵ ≈ −3,1 × 10⁻¹⁵. Sonuç: kütleçekimi ile ışığın hızı, en az 10¹⁵'te birkaç parça duyarlılıkla aynıdır."
+      },
+      "akilda": "Küçük kuantum kütleçekim etkileri kozmik uzaklıklarda birikebilir. Fermi (GRB 090510) ve INTEGRAL (GRB 041219A) ışık hızının enerjiye bağlı olmadığını büyük duyarlılıkla gösterdi; yorumlar modele bağlıdır. GW170817: kütleçekimi ile ışığın hız farkı ışık hızının −3 × 10⁻¹⁵ ile +7 × 10⁻¹⁶ katı arasında."
+    },
+    {
+      "baslik": "Masa üstünde kuantum kütleçekim ve bugünkü durum",
+      "paragraflar": [
+        "Kuantum kütleçekimi sınamanın belki de en akıllıca yolu Planck enerjisine çıkmak değil, kütleçekiminin kuantum davranışı gösterip gösteremeyeceğini sormaktır. 2017'de Physical Review Letters'ta birbirinden bağımsız iki öneri yayımlandı: biri Sougato Bose ve arkadaşlarından (University College London), öteki Chiara Marletto ve Vlatko Vedral'dan (Oxford). d28'de dolanıklığı görmüştün. Öneriye göre iki küçük kütlenin her biri iki konumun süperpozisyonuna konur ve birbirleriyle yalnız kütleçekimiyle etkileşir. Sonunda kütleler dolanık çıkarsa, yazarlara göre bu dolanıklığı taşıyan kütleçekim alanının kendisi de kuantum olmalıdır, çünkü iki kuantum sistemini dolanık yapabilen aracı kuantum olmalıdır.",
+        "Sayılar deneyin ne kadar zor olduğunu gösterir. Marletto ve Vedral, 10⁻¹² kg kütleli iki mekanik salınıcının yaklaşık 1 mikrometre uzaklıkta, yaklaşık bir mikrosaniye etkileşmesini örnek alır. Physics World'ün aktarımına göre iki ekip de başarının garanti olmadığını kabul eder: Casimir ve van der Waals gibi çok daha güçlü kuvvetler kütleçekimini taklit edebilir; dolanıklık görülmemesi kütleçekiminin klasik olduğunu kanıtlamaz; görülmesi de rakip kuantum kütleçekim kuramları arasında seçim yapmaz. Eleştiri de var: Eduardo Martín-Martínez ve T. Rick Perche 2022'de, böyle bir dolanıklığın klasik, yerel bir alanla da açıklanabileceğini, deneyin yalnız kütleçekiminin bir kuantum kanalı taşıdığını gösterebileceğini savundu.",
+        "Bu arada kütleçekimini ölçebildiğimiz en küçük kaynaklar da küçülüyor. 2021'de Nature'da yayımlanan bir deneyde Viyana Üniversitesi'nden Tobias Westphal, Markus Aspelmeyer ve arkadaşları, 2 mm çaplı, 90 mg kütleli bir altın kürenin kütleçekimini, Cavendish'in 1797 burulma terazisinin küçük bir sürümüyle ölçtü; bu, aşağı yukarı bir uğur böceğinin kütlesi. Ekip sıradaki adım olarak binlerce kat hafif kütleleri hedefliyor. Kuantum süperpozisyonundaki bir kaynağın kütleçekimini ölçmeye giden yol hâlâ uzun.",
+        "Toparlayalım. Gözlemle kesinleşmiş olanlar: genel görelilik ve kuantum fiziği kendi alanlarında, kütleçekim dalgaları ve bu derste gördüğün bütün deneysel sınırlar. Güçlü kanıtlı ama açık sorulu: kuantum kütleçekim etkilerinin bugünkü ölçümlerde, Planck ölçeğinden beklenen basit biçimleriyle görünmediği; bütün dolaylı sınamalar bunu destekliyor, ama Planck ölçeğinde ne olduğu açık bir soru. Etiketi kuram ya da hipotez olanlar: graviton, sicim kuramı, ek boyutlar, süpersimetri, M-kuramı, döngü kuantum kütleçekimi ve diğer yaklaşımlar. Spekülasyon: manzaradaki bütün çözümlerin gerçek evrenler olması, Planck ölçeğinde uzay-zaman köpüğü, Büyük Sıçrama. İstanbul'dan baktığın gökyüzünde bu soruların izi doğrudan görünmez; ama uzaktaki patlamalardan gelen ışık ve kütleçekim dalgaları, sorunun cevabına bugün en yakın tanıklardır."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Masa üstü deneyde kütleçekimi ne kadar zayıf?",
+        "metin": "Newton yasası: F = G × m₁ × m₂ ÷ r². Marletto–Vedral örneği: m₁ = m₂ = 10⁻¹² kg, r = 10⁻⁶ m, G = 6,674 × 10⁻¹¹. F = 6,674 × 10⁻¹¹ × 10⁻¹² × 10⁻¹² ÷ 10⁻¹² = 6,674 × 10⁻²³ newton. Karşılaştırma için kütlelerden birinin Dünya'daki ağırlığı: 10⁻¹² × 9,81 ≈ 9,8 × 10⁻¹² newton. Oran: 6,7 × 10⁻²³ ÷ 9,8 × 10⁻¹² ≈ 7 × 10⁻¹². Sonuç: iki kütle arasındaki çekim yaklaşık 6,7 × 10⁻²³ newtondur, yani her birinin kendi ağırlığının yaklaşık trilyonda yedisi; deneyin zorluğu buradan gelir."
+      },
+      "akilda": "Bose ve arkadaşları ile Marletto–Vedral (2017), yalnız kütleçekimiyle etkileşen iki süperpozisyondaki kütlenin dolanmasını önerdi; dolanıklığın gerçekten kuantum kütleçekimi kanıtlayıp kanıtlamayacağı tartışmalı. 2021'de 90 mg'lık bir kürenin kütleçekimi ölçüldü. Adayların hepsi hâlâ kuram ya da hipotez düzeyinde."
+    }
+  ],
+  "formuller": [
+    {
+      "ad": "Planck uzunluğu",
+      "ifade": "ℓP = √(ħ × G ÷ c³)",
+      "aciklama": "ħ indirgenmiş Planck sabiti (1,0546 × 10⁻³⁴ J·s), G kütleçekim sabiti (6,6743 × 10⁻¹¹ m³ kg⁻¹ s⁻²), c ışık hızı (299.792.458 m/s). Sonuç metre cinsinden: 1,616255 × 10⁻³⁵ m (NIST CODATA 2022). Kuantum kütleçekim etkilerinin önemli olması beklenen ölçeği gösterir; en küçük uzunluk olduğu kanıtlanmış değildir."
+    },
+    {
+      "ad": "Planck zamanı",
+      "ifade": "tP = ℓP ÷ c",
+      "aciklama": "Işığın bir Planck uzunluğunu geçme süresi. 1,616 × 10⁻³⁵ m ÷ 2,998 × 10⁸ m/s ≈ 5,39 × 10⁻⁴⁴ s (NIST: 5,391247 × 10⁻⁴⁴ s)."
+    },
+    {
+      "ad": "Planck enerjisi",
+      "ifade": "EP = √(ħ × c⁵ ÷ G)",
+      "aciklama": "Planck kütlesinin enerji karşılığı: 1,220890 × 10¹⁹ GeV ≈ 1,96 × 10⁹ J (NIST CODATA 2022). Bu enerjinin tek bir parçacıkta toplanması gerekir; LHC'nin 13,6 TeV'lik çarpışma enerjisinin yaklaşık 9 × 10¹⁴ katıdır."
+    },
+    {
+      "ad": "Yoklanan uzunluk ile enerji",
+      "ifade": "E ≈ ħc ÷ λ",
+      "aciklama": "λ yoklanmak istenen uzunluk, E gereken enerji. ħc = 197,327 MeV·fm (NIST, kesin değer); 1 fm = 10⁻¹⁵ m. Kaba bir mertebe ilişkisidir; λ = ℓP için E ≈ 1,22 × 10¹⁹ GeV verir."
+    },
+    {
+      "ad": "Newton'un kütleçekim yasası",
+      "ifade": "F = G × m₁ × m₂ ÷ r²",
+      "aciklama": "m₁, m₂ kütleler (kg), r aralarındaki uzaklık (m), F newton cinsinden kuvvet. Masa üstü deneylerde küçük kütleler arasındaki çekimi tahmin etmek için kullanılır; 10⁻¹² kg'lık iki kütle 1 μm arayla ≈ 6,7 × 10⁻²³ N."
+    },
+    {
+      "ad": "Kütleçekimin hızını sınamak",
+      "ifade": "Δv ÷ c ≈ Δt ÷ (d ÷ c)",
+      "aciklama": "Δt iki sinyal arasındaki gecikme (s), d kaynağa uzaklık (m), d ÷ c ışığın yolculuk süresi. GW170817 için Δt = 1,74 s, d ≥ 26 Mpc ≈ 8,0 × 10²³ m; Δv ÷ c ≈ 6,5 × 10⁻¹⁶. Sinyallerin aynı anda çıktığı varsayımıyla geçerlidir."
+    }
+  ],
+  "anahtar_sayilar": [
+    {
+      "deger": "1,616255 × 10⁻³⁵ m",
+      "aciklama": "Planck uzunluğu (CODATA 2022, göreli belirsizlik 1,1 × 10⁻⁵); protonun yük yarıçapından yaklaşık 5 × 10¹⁹ kat küçük.",
+      "kaynak_url": "https://physics.nist.gov/cgi-bin/cuu/Value?plkl",
+      "kid": "d53n0"
+    },
+    {
+      "deger": "5,391247 × 10⁻⁴⁴ s",
+      "aciklama": "Planck zamanı: ışığın bir Planck uzunluğunu geçme süresi.",
+      "kaynak_url": "https://physics.nist.gov/cgi-bin/cuu/Value?plkt",
+      "kid": "d53n1"
+    },
+    {
+      "deger": "1,220890 × 10¹⁹ GeV",
+      "aciklama": "Planck enerjisi (Planck kütlesinin enerji karşılığı); yaklaşık 1,96 × 10⁹ J, LHC'nin 13,6 TeV'lik çarpışma enerjisinin yaklaşık 9 × 10¹⁴ katı.",
+      "kaynak_url": "https://physics.nist.gov/cgi-bin/cuu/Value?plkmc2gev",
+      "kid": "d53n2"
+    },
+    {
+      "deger": "2,176434 × 10⁻⁸ kg",
+      "aciklama": "Planck kütlesi, yaklaşık 22 mikrogram: parçacıklara göre dev, canlıların kütle aralığında.",
+      "kaynak_url": "https://physics.nist.gov/cgi-bin/cuu/Value?plkm",
+      "kid": "d53n3"
+    },
+    {
+      "deger": "26, 10, 11",
+      "aciklama": "Uzay-zamanın boyut sayısı: bozonik sicim kuramında 26, süpersicim kuramında 10, M-kuramında 11.",
+      "kaynak_url": "https://en.wikipedia.org/wiki/String_theory",
+      "kid": "d53n4"
+    },
+    {
+      "deger": "10⁵⁰⁰",
+      "aciklama": "Sicim manzarasındaki kararlıya yakın çözüm sayısı için sık aktarılan mertebe (Douglas 2003; Ashok ve Douglas 2004); tam sayı bilinmiyor, 2015'te tek bir geometri için 10²⁷²⁰⁰⁰ bulundu.",
+      "kaynak_url": "https://en.wikipedia.org/wiki/String_theory_landscape",
+      "kid": "d53n5"
+    },
+    {
+      "deger": "30 μm",
+      "aciklama": "Eöt-Wash deneyine (2020; 52 μm ile 3 mm arası ölçümler) göre en büyük ek boyutun yarıçapının üst sınırı.",
+      "kaynak_url": "https://arxiv.org/pdf/2002.11761",
+      "kid": "d53n6"
+    },
+    {
+      "deger": "−3 × 10⁻¹⁵ ile +7 × 10⁻¹⁶",
+      "aciklama": "GW170817 ve GRB 170817A'dan (1,74 ± 0,05 s gecikme) çıkan, kütleçekimi ile ışık hızı arasındaki farkın ışık hızına oranı için sınırlar.",
+      "kaynak_url": "https://research.birmingham.ac.uk/en/publications/gravitational-waves-and-gamma-rays-from-a-binary-neutron-star-mer/",
+      "kid": "d53n7"
+    },
+    {
+      "deger": "7,7 × 10⁻²³ eV",
+      "aciklama": "Kütleçekim dalgası gözlemlerinden graviton kütlesine konan üst sınır.",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Graviton",
+      "kid": "d53n8"
+    },
+    {
+      "deger": "10⁻⁴⁸ m",
+      "aciklama": "INTEGRAL'in GRB 041219A kutuplanma ölçümünden (ESA, 2011) uzayın olası taneciklik ölçeği için çıkardığı üst sınır; yorumu modele bağlı.",
+      "kaynak_url": "https://www.esa.int/Science_Exploration/Space_Science/Integral_challenges_physics_beyond_Einstein",
+      "kid": "d53n9"
+    },
+    {
+      "deger": "2,46 TeV",
+      "aciklama": "CMS'nin ikinci çalışma dönemi aramalarından birinde gluino kütlesi için dışlanan üst değer; süpersimetriden iz bulunamadı, sınırlar modele bağlı.",
+      "kaynak_url": "https://arxiv.org/pdf/2510.17971",
+      "kid": "d53n10"
+    },
+    {
+      "deger": "1,2 × 10³⁶",
+      "aciklama": "İki proton arasındaki elektrik itmesinin kütleçekimine oranı (NIST CODATA 2022 sabitleriyle hesap).",
+      "kaynak_url": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt",
+      "kid": "d53n11"
+    }
+  ],
+  "sozluk": [
+    {
+      "terim": "kuantum kütleçekim",
+      "tanim": "Kütleçekimini kuantum mekaniğinin ilkeleriyle tek bir tutarlı kuramda anlatmaya çalışan, henüz tamamlanmamış kuramsal fizik alanı.",
+      "kid": "d53t0"
+    },
+    {
+      "terim": "renormalizasyon",
+      "tanim": "Kuantum alan kuramlarının hesaplarında çıkan sonsuzlukları, sayısı sonlu ve deneyle ölçülen birkaç büyüklüğe soğurarak kuramı öngörü yapabilir hâle getirme yöntemi.",
+      "kid": "d53t1"
+    },
+    {
+      "terim": "efektif alan kuramı",
+      "tanim": "Yalnız belli bir enerjinin altında geçerli olan ve bilinmeyen yüksek enerji ayrıntılarını yok sayarak yine de doğru öngörü yapan yaklaşık kuram.",
+      "kid": "d53t2"
+    },
+    {
+      "terim": "arka plan bağımsızlığı",
+      "tanim": "Bir kuramın sabit, önceden verilmiş bir uzay-zaman sahnesi varsaymaması; genel görelilikte uzay-zamanın kendisinin dinamik olması.",
+      "kid": "d53t3"
+    },
+    {
+      "terim": "Planck uzunluğu",
+      "tanim": "Işık hızı, kütleçekim sabiti ve Planck sabitinden kurulan, yaklaşık 1,6 × 10⁻³⁵ m'lik ve kuantum kütleçekim etkilerinin önem kazanması beklenen uzunluk ölçeği.",
+      "kid": "d53t4"
+    },
+    {
+      "terim": "Planck zamanı",
+      "tanim": "Işığın bir Planck uzunluğunu geçmesi için gereken, yaklaşık 5,4 × 10⁻⁴⁴ s'lik süre.",
+      "kid": "d53t5"
+    },
+    {
+      "terim": "Planck enerjisi",
+      "tanim": "Planck kütlesinin enerji karşılığı olan, yaklaşık 1,22 × 10¹⁹ GeV'lik ve bugünkü hızlandırıcıların çok ötesindeki enerji ölçeği.",
+      "kid": "d53t6"
+    },
+    {
+      "terim": "graviton",
+      "tanim": "Kütleçekimini taşıması beklenen, kütlesiz ve spini 2 olan, hiç gözlenmemiş varsayımsal parçacık.",
+      "kid": "d53t7"
+    },
+    {
+      "terim": "sicim kuramı",
+      "tanim": "Temel parçacıkları nokta yerine Planck ölçeğinde titreşen tek boyutlu sicimler olarak anlatan ve içinde kendiliğinden graviton bulunan aday kuram.",
+      "kid": "d53t8"
+    },
+    {
+      "terim": "süpersicim kuramı",
+      "tanim": "Hem bozonları hem fermiyonları içeren, süpersimetriyi barındıran ve 10 boyutlu uzay-zaman gerektiren sicim kuramı.",
+      "kid": "d53t9"
+    },
+    {
+      "terim": "fazladan boyut",
+      "tanim": "Bildiğimiz üç uzay ve bir zaman boyutuna ek olarak bazı kuramların varsaydığı, günlük hayatta fark edilmeyen boyut.",
+      "kid": "d53t10"
+    },
+    {
+      "terim": "kompaktlaştırma",
+      "tanim": "Fazladan boyutların çok küçük kapalı şekillere kıvrılarak uzay-zamanın etkin olarak daha az boyutlu görünmesini sağlayan yöntem.",
+      "kid": "d53t11"
+    },
+    {
+      "terim": "Calabi–Yau uzayı",
+      "tanim": "Süpersicim kuramında altı ek boyutun kıvrıldığı varsayılan, adını Eugenio Calabi ve Shing-Tung Yau'dan alan özel geometrik biçim.",
+      "kid": "d53t12"
+    },
+    {
+      "terim": "süpersimetri",
+      "tanim": "Her bozona bir fermiyon, her fermiyona bir bozon eş öngören ve LHC'de iz bulunamamış kuramsal simetri.",
+      "kid": "d53t13"
+    },
+    {
+      "terim": "M-kuramı",
+      "tanim": "Beş süpersicim kuramını aynı 11 boyutlu kuramın farklı sınır durumları olarak birleştirdiği varsayılan ve tam formülasyonu bilinmeyen kuram.",
+      "kid": "d53t14"
+    },
+    {
+      "terim": "zar",
+      "tanim": "Sicim kuramında noktayı ve sicimi daha çok boyuta genelleyen, uzay-zamanda hareket edebilen çok boyutlu nesne.",
+      "kid": "d53t15"
+    },
+    {
+      "terim": "sicim manzarası",
+      "tanim": "Ek boyutların biçimine ve alan seçimlerine göre sicim kuramının verdiği, sayısı çoğu kez 10⁵⁰⁰ mertebesinde tahmin edilen olası çözümlerin bütünü.",
+      "kid": "d53t16"
+    },
+    {
+      "terim": "bataklık",
+      "tanim": "Kendi içinde tutarlı görünen ama kuantum kütleçekimle bağdaşmadığı varsayılan alçak enerji kuramlarının kümesi.",
+      "kid": "d53t17"
+    },
+    {
+      "terim": "döngü kuantum kütleçekimi",
+      "tanim": "Genel göreliliği doğrudan kuantumlaştırarak alanın ve hacmin kesikli olduğu, uzayın Planck ölçeğinde taneli olduğu sonucuna varan aday kuram.",
+      "kid": "d53t18"
+    },
+    {
+      "terim": "spin ağı",
+      "tanim": "Döngü kuantum kütleçekiminde uzayın kendisinin kuantum durumunu betimleyen, kenarları spin değerleriyle etiketlenmiş çizge.",
+      "kid": "d53t19"
+    },
+    {
+      "terim": "nedensel küme",
+      "tanim": "Uzay-zamanı yalnız neden-sonuç sırasıyla birbirine bağlı kesikli olaylar kümesi olarak gören kuantum kütleçekim yaklaşımı.",
+      "kid": "d53t20"
+    },
+    {
+      "terim": "asimptotik güvenlik",
+      "tanim": "Kütleçekiminin etkileşim güçlerinin çok yüksek enerjide sonlu bir sabit noktaya yaklaşarak sonsuzluklardan kurtulabileceği varsayımı.",
+      "kid": "d53t21"
+    },
+    {
+      "terim": "yanlışlanabilirlik",
+      "tanim": "Bir kuramı çürütebilecek bir gözlemin en azından ilke olarak tanımlanabilmesi; Popper'ın bilimsellik ölçütü.",
+      "kid": "d53t22"
+    },
+    {
+      "terim": "deneysel olmayan kuram değerlendirmesi",
+      "tanim": "Deney sonucu yokken bir kurama güveni alternatifsizlik, geçmiş başarılar ve beklenmedik açıklamalar gibi argümanlarla tartma yaklaşımı; Richard Dawid'in savunduğu görüş.",
+      "kid": "d53t23"
+    },
+    {
+      "terim": "Lorentz değişmezliği",
+      "tanim": "Fizik yasalarının birbirine göre sabit hızla hareket eden bütün gözlemciler için aynı olması ilkesi.",
+      "kid": "d53t24"
+    }
+  ],
+  "defter_notu": [
+    "Kuantum kütleçekim: kütleçekimi + kuantum. Gerektiği yer: kara delik merkezi, Büyük Patlama'nın ilk anı. Tam ve sınanmış kuram yok.",
+    "Sorunlar: kütleçekimi renormalize edilemez (sonsuz parametre); uzay-zaman sahne değil oyuncu; zamanın anlamı farklı.",
+    "Planck (NIST CODATA 2022): uzunluk 1,616 × 10⁻³⁵ m, zaman 5,39 × 10⁻⁴⁴ s, kütle 21,8 μg, enerji 1,22 × 10¹⁹ GeV ≈ 9 × 10¹⁴ × LHC.",
+    "Graviton: kütlesiz, spin 2, görülmedi; kütlesi < 7,7 × 10⁻²³ eV (kütleçekim dalgaları).",
+    "Sicim kuramı: titreşen sicimler, graviton kendiliğinden; 26 / 10 / 11 boyut; Calabi–Yau; Eöt-Wash 2020: ek boyut < 30 μm.",
+    "Süpersimetri LHC'de yok; M-kuramı (Witten 1995) tam formülasyonsuz; Strominger–Vafa 1996 kara delik entropisi.",
+    "Manzara 10⁵⁰⁰: ölçüm değil, kaba sayım (Douglas 2003, Ashok–Douglas 2004). Bataklık 2018: tartışmalı.",
+    "Döngü kuantum kütleçekimi: alan ve hacim kesikli (1994), spin ağları; GR sınırı henüz gösterilmedi. Diğerleri: nedensel kümeler, asimptotik güvenlik, nedensel dinamik üçgenleme.",
+    "Tartışma: Ellis–Silk 2014, Woit ve Smolin 2006, Rovelli 2016 ↔ Gross, Dawid 2013, Polchinski 2016; Münih 7–9 Aralık 2015. Son hakem deney.",
+    "İpuçları: GW170817 hız farkı −3 × 10⁻¹⁵ ile +7 × 10⁻¹⁶; Fermi GRB 090510; INTEGRAL 10⁻⁴⁸ m; masa üstü dolanıklık önerileri (2017)."
+  ],
+  "sorular": [
+    {
+      "soru": "Kuantum kütleçekime hangi ortamlarda ihtiyaç duyulur ve neden günlük hayatta bu ihtiyaç hissedilmez?",
+      "cevap": "Kütleçekiminin de kuantum etkilerinin de birlikte önemli olduğu yerlerde: kara deliklerin merkezinde ve Büyük Patlama'nın ilk anında. Günlük hayatta atom ölçeğinde kütleçekimi çok zayıftır (iki proton arasında elektrik itmesinin yaklaşık 10³⁶'da biri), büyük ölçekte ise kuantum etkileri ortalamada silinir.",
+      "kid": "d53s0"
+    },
+    {
+      "soru": "“Kütleçekimi renormalize edilemez” ne demek? Bu, kütleçekimin kuantum düzeyinde hiç hesaplanamayacağı anlamına mı gelir?",
+      "cevap": "Alışılmış yoldan kuantumlaştırıldığında kuramı tanımlamak için sonsuz sayıda bağımsız parametre gerekir; her biri için deney yapılamayacağı için yüksek enerjide öngörü kalmaz. Ama alçak enerjide kütleçekimi efektif alan kuramı olarak kullanılabilir; örneğin Newton çekimine gelen küçük kuantum düzeltmesi hesaplanabilir. Sorun Planck ölçeğine yaklaştıkça ortaya çıkar.",
+      "kid": "d53s1"
+    },
+    {
+      "soru": "Proton yarıçapı (NIST: 8,41 × 10⁻¹⁶ m) Planck uzunluğunun (1,616 × 10⁻³⁵ m) kaç katıdır?",
+      "cevap": "8,41 × 10⁻¹⁶ ÷ 1,616 × 10⁻³⁵ ≈ 5,2 × 10¹⁹. Proton, Planck uzunluğundan yaklaşık 5 × 10¹⁹ kat büyüktür; insanın protondan büyüklüğü ise yalnızca yaklaşık 2 × 10¹⁵ kattır.",
+      "kid": "d53s2"
+    },
+    {
+      "soru": "Planck uzunluğunun doğadaki en küçük uzunluk olduğu kanıtlanmış mıdır?",
+      "cevap": "Hayır. 1950'lerden beri uzay-zamanın bu ölçekte köpüğe dönüşebileceği ve ölçülebilecek en kısa uzaklığın bu olabileceği öne sürülüyor, ama bu kuram ya da hipotez (köpük resmi ise spekülasyon) düzeyindedir. Planck birimleri ilk önerildiğinde yalnız doğal bir ölçü sistemiydi.",
+      "kid": "d53s3"
+    },
+    {
+      "soru": "LHC'nin 13,6 TeV çarpışma enerjisi Planck enerjisinin ne kadarıdır? Planck enerjisini joule olarak gündelik bir şeyle karşılaştır.",
+      "cevap": "1,22 × 10¹⁹ GeV ÷ 13.600 GeV ≈ 9 × 10¹⁴; LHC Planck enerjisinin yaklaşık 10⁻¹⁵'i kadardır. Planck enerjisi ≈ 1,96 × 10⁹ J, bir otomobil deposundaki yakıtın (57,2 L × 34,2 MJ) yanma enerjisi kadardır; zor olan bunu tek bir parçacıkta toplamaktır.",
+      "kid": "d53s4"
+    },
+    {
+      "soru": "LIGO kütleçekim dalgalarını yakaladığına göre gravitonlar da gözlenmiş olmaz mı?",
+      "cevap": "Hayır. LIGO dalgayı ölçer, tek tek gravitonları değil; bir radyo antenin tek tek fotonları saymaması gibi. Tek bir graviton yakalamak makul hiçbir dedektörle mümkün görünmüyor (Jüpiter kütleli bir dedektör bile on yılda bir). Ama dalgalar graviton kütlesine 7,7 × 10⁻²³ eV'luk üst sınır koyar.",
+      "kid": "d53s5"
+    },
+    {
+      "soru": "Sicim kuramı neden ilk ortaya çıktığında kütleçekim kuramı değildi ve nasıl kütleçekim kuramına dönüştü?",
+      "cevap": "1960'ların sonunda güçlü kuvvetin kuramı olarak doğdu; o iş için kuantum renk dinamiği kazandı. 1974'te Yoneya ile Schwarz ve Scherk, bütün sicim kuramlarında kütlesiz, spini 2 olan bir titreşim, yani graviton bulunduğunu fark etti; Schwarz ve Scherk kuramın kütleçekim kuramı olduğunu önerdi.",
+      "kid": "d53s6"
+    },
+    {
+      "soru": "Ek boyutları neden görmüyoruz ve deneyler bu konuda ne söylüyor?",
+      "cevap": "Ek boyutların çok küçük kapalı şekillere kıvrıldığı (kompaktlaştırma, Calabi–Yau) ya da madde ve diğer kuvvetlerin dört boyutlu bir zara bağlı olduğu varsayılır. Eöt-Wash 2020 deneyi Newton yasasını 52 μm'ye kadar doğruladı ve en büyük ek boyutun yarıçapını 30 μm'nin altına itti. LHC'den belirleyici bir işaret gelmedi. Ek boyutlar kuram ya da hipotez düzeyindedir.",
+      "kid": "d53s7"
+    },
+    {
+      "soru": "Süpersimetrinin LHC'de bulunamaması sicim kuramını yanlışladı mı?",
+      "cevap": "Hayır, ama beklenen en güçlü ipucu gelmedi. Süpersicim kuramı süpersimetriyi bir düzeyde gerektirir; süpersimetri LHC enerjilerinin üstünde kırılmış olabilir. Ellis ve Silk bunu sınanabilir öngörülerin başarısızlığı sayar; savunanlar kuramın süpersimetrinin enerjisini kesin öngörmediğini söyler.",
+      "kid": "d53s8"
+    },
+    {
+      "soru": "10⁵⁰⁰ sayısı nereden geliyor ve neden hem eleştiri hem savunma konusu?",
+      "cevap": "Ek boyutların biçimi ve akı değerleri için çok sayıda bağımsız seçenek olmasından; Douglas (2003) ve Ashok ile Douglas (2004) gibi istatistik sayımlara dayanan kaba bir mertebedir, ölçüm değildir. Woit'e göre bu kadar çözüm kuramın öngörü gücünü yok eder; Susskind ve Weinberg çizgisindekiler ise küçük kozmolojik sabite antropik bir açıklama sunduğunu savunur.",
+      "kid": "d53s9"
+    },
+    {
+      "soru": "Döngü kuantum kütleçekiminin sicim kuramından temel farkları nelerdir ve en büyük açığı nedir?",
+      "cevap": "Ek boyut ve süpersimetri gerektirmez, bütün kuvvetleri birleştirmeyi hedeflemez; geometriyi doğrudan kuantumlaştırır ve alan ile hacmin kesikli olduğunu bulur (Rovelli–Smolin 1994). En büyük açığı, genel göreliliğe giden yarı klasik sınırın henüz gösterilememiş olmasıdır; bu yüzden genel göreliliğin öngörülerini bile henüz yeniden üretmiş değildir.",
+      "kid": "d53s10"
+    },
+    {
+      "soru": "Dawid'in deneysel olmayan kuram değerlendirmesi hangi üç argümana dayanır ve eleştirenler buna ne der?",
+      "cevap": "Alternatifsizlik (başka uygun birleşik kuram yok), üst-tümevarım (kuram geçmişte doğrulanmış kuramlar örnek alınarak kuruldu) ve beklenmedik açıklama (kara delik entropisi gibi hedeflenmemiş olguları açıklıyor). Ellis ve Silk buna “kale direklerini oynatmak” der; Rovelli deneysel olmayan kanıtlara fazla yaslanmanın bilimin güvenilirliğini zayıflatacağını savunur.",
+      "kid": "d53s11"
+    },
+    {
+      "soru": "GW170817'de kütleçekim dalgası ile gama ışınları arasında 1,74 s vardı ve kaynak en az 26 Mpc uzaktaydı. Hız farkı için kabaca nasıl bir sınır çıkar?",
+      "cevap": "26 Mpc ≈ 8,0 × 10²³ m; ışığın yolculuğu ≈ 2,7 × 10¹⁵ s. 1,74 ÷ 2,7 × 10¹⁵ ≈ 6,5 × 10⁻¹⁶. Ekip benzer hesapla farkın ışık hızının −3 × 10⁻¹⁵ ile +7 × 10⁻¹⁶ katı arasında olduğunu buldu; alt sınır gama ışınlarının 10 s geç çıktığı varsayımından gelir.",
+      "kid": "d53s12"
+    },
+    {
+      "soru": "Bose ve arkadaşları ile Marletto ve Vedral'ın 2017 önerisi neyi sınamak istiyor ve neden tartışmalı?",
+      "cevap": "Süperpozisyondaki iki küçük kütle yalnız kütleçekimiyle etkileşip dolanık çıkarsa, yazarlara göre kütleçekim alanı kuantum olmalıdır. Martín-Martínez ve Perche (2022) bu dolanıklığın klasik, yerel bir alanla da açıklanabileceğini savunur. Ayrıca Casimir gibi güçlü kuvvetler etkiyi taklit edebilir ve sonuç rakip kuramlar arasında seçim yapmaz.",
+      "kid": "d53s13"
+    }
+  ],
+  "kaynaklar": [
+    {
+      "ad": "NIST CODATA 2022: Planck uzunluğu",
+      "url": "https://physics.nist.gov/cgi-bin/cuu/Value?plkl"
+    },
+    {
+      "ad": "NIST CODATA 2022: Planck zamanı",
+      "url": "https://physics.nist.gov/cgi-bin/cuu/Value?plkt"
+    },
+    {
+      "ad": "NIST CODATA 2022: Planck kütlesinin enerji karşılığı (GeV)",
+      "url": "https://physics.nist.gov/cgi-bin/cuu/Value?plkmc2gev"
+    },
+    {
+      "ad": "NIST CODATA 2022: tüm sabitler listesi",
+      "url": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt"
+    },
+    {
+      "ad": "Wikipedia: Quantum gravity",
+      "url": "https://en.wikipedia.org/wiki/Quantum_gravity"
+    },
+    {
+      "ad": "Wikipedia: Planck units",
+      "url": "https://en.wikipedia.org/wiki/Planck_units"
+    },
+    {
+      "ad": "Wikipedia: Graviton",
+      "url": "https://en.wikipedia.org/wiki/Graviton"
+    },
+    {
+      "ad": "Wikipedia: String theory",
+      "url": "https://en.wikipedia.org/wiki/String_theory"
+    },
+    {
+      "ad": "Wikipedia: Kaluza–Klein theory",
+      "url": "https://en.wikipedia.org/wiki/Kaluza%E2%80%93Klein_theory"
+    },
+    {
+      "ad": "Wikipedia: Large extra dimensions",
+      "url": "https://en.wikipedia.org/wiki/Large_extra_dimensions"
+    },
+    {
+      "ad": "Lee, Adelberger ve diğ. (2020): ters kare yasasının 52 μm'ye kadar testi, arXiv 2002.11761",
+      "url": "https://arxiv.org/pdf/2002.11761"
+    },
+    {
+      "ad": "Wikipedia: Supersymmetry",
+      "url": "https://en.wikipedia.org/wiki/Supersymmetry"
+    },
+    {
+      "ad": "Sekmen: CMS ikinci çalışma dönemi süpersimetri aramaları derlemesi, arXiv 2510.17971",
+      "url": "https://arxiv.org/pdf/2510.17971"
+    },
+    {
+      "ad": "Wikipedia: M-theory",
+      "url": "https://en.wikipedia.org/wiki/M-theory"
+    },
+    {
+      "ad": "Wikipedia: AdS/CFT correspondence",
+      "url": "https://en.wikipedia.org/wiki/AdS/CFT_correspondence"
+    },
+    {
+      "ad": "Wikipedia: String theory landscape",
+      "url": "https://en.wikipedia.org/wiki/String_theory_landscape"
+    },
+    {
+      "ad": "Wikipedia: Swampland (physics)",
+      "url": "https://en.wikipedia.org/wiki/Swampland_(physics)"
+    },
+    {
+      "ad": "Quanta Magazine (2018): Dark energy may be incompatible with string theory",
+      "url": "https://www.quantamagazine.org/dark-energy-may-be-incompatible-with-string-theory-20180809/"
+    },
+    {
+      "ad": "Wikipedia: Loop quantum gravity",
+      "url": "https://en.wikipedia.org/wiki/Loop_quantum_gravity"
+    },
+    {
+      "ad": "Wikipedia: Causal sets",
+      "url": "https://en.wikipedia.org/wiki/Causal_sets"
+    },
+    {
+      "ad": "Wikipedia: Asymptotic safety",
+      "url": "https://en.wikipedia.org/wiki/Asymptotic_safety"
+    },
+    {
+      "ad": "Wikipedia: Causal dynamical triangulation",
+      "url": "https://en.wikipedia.org/wiki/Causal_dynamical_triangulation"
+    },
+    {
+      "ad": "Ellis ve Silk (2014), Nature: Scientific method: Defend the integrity of physics",
+      "url": "https://www.nature.com/news/scientific-method-defend-the-integrity-of-physics-1.16535"
+    },
+    {
+      "ad": "Wikipedia: Not even wrong",
+      "url": "https://en.wikipedia.org/wiki/Not_even_wrong"
+    },
+    {
+      "ad": "Wikipedia: The Trouble with Physics",
+      "url": "https://en.wikipedia.org/wiki/The_Trouble_with_Physics"
+    },
+    {
+      "ad": "Rovelli (2016): The dangers of non-empirical confirmation, arXiv 1609.01966",
+      "url": "https://arxiv.org/abs/1609.01966v1"
+    },
+    {
+      "ad": "van Dongen: String theory, Einstein, and the identity of physics (Dawid'in üç argümanı), arXiv 2105.14342",
+      "url": "https://arxiv.org/pdf/2105.14342"
+    },
+    {
+      "ad": "Polchinski (2016): Why trust a theory? Some further remarks, arXiv 1601.06145",
+      "url": "https://arxiv.org/pdf/1601.06145"
+    },
+    {
+      "ad": "Why Trust a Theory? (LMU Münih, 7–9 Aralık 2015) çağrı metni",
+      "url": "https://listbox.elte.hu/pipermail/philphys/2015q2/000655.html"
+    },
+    {
+      "ad": "Hossenfelder: Münih toplantısı izlenimleri (Big Think)",
+      "url": "https://bigthink.com/starts-with-a-bang/why-trust-a-theory/"
+    },
+    {
+      "ad": "Graham Farmelo: Why trust a theory?",
+      "url": "https://grahamfarmelo.com/?p=1293"
+    },
+    {
+      "ad": "LIGO, Virgo, Fermi, INTEGRAL (2017): GW170817 ve GRB 170817A, ApJL",
+      "url": "https://research.birmingham.ac.uk/en/publications/gravitational-waves-and-gamma-rays-from-a-binary-neutron-star-mer/"
+    },
+    {
+      "ad": "GW170817 ve GRB 170817A makalesinin tam metni (NSF PAR)",
+      "url": "https://par.nsf.gov/servlets/purl/10057807"
+    },
+    {
+      "ad": "Fermi LAT: GRB 090510 ile özel göreliliğin sınanması, arXiv 0908.1832",
+      "url": "https://arxiv.org/abs/0908.1832v1"
+    },
+    {
+      "ad": "ESA (2011): Integral challenges physics beyond Einstein",
+      "url": "https://www.esa.int/Science_Exploration/Space_Science/Integral_challenges_physics_beyond_Einstein"
+    },
+    {
+      "ad": "Marletto ve Vedral (2017): kütleçekimin oluşturduğu dolanıklık, arXiv 1707.06036",
+      "url": "https://arxiv.org/pdf/1707.06036"
+    },
+    {
+      "ad": "Physics World (2018): Quantum gravity could be probed by entangled masses",
+      "url": "https://physicsworld.com/a/quantum-gravity-could-be-probed-by-entangled-masses/"
+    },
+    {
+      "ad": "Martín-Martínez ve Perche (2022): What gravity mediated entanglement can really tell us, arXiv 2208.09489",
+      "url": "https://arxiv.org/pdf/2208.09489v2"
+    },
+    {
+      "ad": "ScienceDaily (2021): Westphal ve diğ., miligram ölçekli kütlelerin kütleçekimi",
+      "url": "https://sciencedaily.com/releases/2021/03/210310122602.htm"
+    }
+  ]
 }

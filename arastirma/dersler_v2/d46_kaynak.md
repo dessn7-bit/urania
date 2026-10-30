@@ -81,7 +81,7 @@ WF = WebFetch ile bu oturumda açıldı (30 Ekim 2026). "HESAP" satırları pyth
 
 ## Bölüm 8 — Eddington ve Salpeter
 - Büyüme: hızlı yığılma dönemleri (AGN/kuasar) ve birleşmeler | Supermassive black hole (WF) | "Most mass growth is thought to occur in rapid accretion episodes ... plus mergers"
-- Eddington: dışa ışınım = içe kütleçekim; fotonlar elektronları, elektronlar protonları sürükler; Arthur Eddington | Wikipedia "Eddington luminosity" yansısı https://cavac.at/cavacopedia/Eddington%20luminosity (WF) | "Radiation pushes on electrons, which drag protons along"; "Named after Sir Arthur Eddington"
+- Eddington: dışa ışınım = içe kütleçekim; fotonlar elektronları, elektronlar protonları sürükler; Arthur Eddington | Wikipedia "Eddington luminosity" yansısı https://en.wikipedia.org/wiki/Eddington%20luminosity (WF) | "Radiation pushes on electrons, which drag protons along"; "Named after Sir Arthur Eddington"
 - L_Edd ≈ 1,26 × 10³⁸ (M/M☉) erg/s = 1,26 × 10³¹ W | https://ned.ipac.caltech.edu/level5/Sept13/Shen/Shen1.html (WF) | "L_Edd ≈ 1.26 × 10³⁸ (M_BH/M☉) erg s⁻¹"
 - ≈ 3,2 × 10⁴ L☉ / M☉; sınır kesin değil; ULX için Eddington-üstü model; diskler 10–100 kat aşabilir | cavac yansısı (WF) | "≈ 3.2 × 10⁴ (M/M☉) L☉"; "not a strict limit"; ULX; "Accretion discs may reach 10–100 times the limit"
 - Salpeter zamanı t ≈ 4,5 × 10⁸ yıl × ε/[λ(1−ε)]; bir e-kat | Shen (WF) | "t_e ≈ 4.5 × 10⁸ (ε / [λ(1−ε)]) yr"; "grows by one e-fold"

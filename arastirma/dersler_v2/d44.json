@@ -4,7 +4,12 @@
   "yeni": true,
   "baslik": "Dünya: Bir Gezegen Olarak",
   "ozet": "Üzerinde yaşadığımız gezegeni bir gezegen bilimcinin gözüyle, merkezinden uzaya kadar inceliyoruz. Bu derste Dünya'nın içini deprem dalgalarıyla nasıl gördüğümüzü (Inge Lehmann ve iç çekirdek), levha tektoniğini ve Kuzey Anadolu Fayı'nı, manyetik alanı üreten dinamoyu ve kayan kutupları, atmosferin katmanlarını ve bileşimini, sera etkisinin 255 K'yi nasıl 288 K'ye çıkardığını, okyanusları ve Voyager 1'in Soluk Mavi Nokta fotoğrafını öğreneceksin.",
-  "on_bilgi": ["d2", "d3", "d34", "d9"],
+  "on_bilgi": [
+    "d2",
+    "d3",
+    "d34",
+    "d9"
+  ],
   "bolumler": [
     {
       "baslik": "Bir gezegenin kimlik kartı",
@@ -206,53 +211,241 @@
     }
   ],
   "formuller": [
-    { "ad": "Kütleçekimden kütle", "ifade": "M = g × R² ÷ G", "aciklama": "M: Dünya'nın kütlesi (kg), g: yüzey çekim ivmesi (m/s²), R: yarıçap (m), G = 6,674 × 10⁻¹¹ m³ kg⁻¹ s⁻² (d3). Dünya için ≈ 5,97 × 10²⁴ kg." },
-    { "ad": "Ortalama yoğunluk", "ifade": "ρ = M ÷ V, V = (4/3) × π × R³", "aciklama": "ρ: yoğunluk (kg/m³), V: hacim (m³). Dünya için ≈ 5513 kg/m³. Küre varsayar (d9)." },
-    { "ad": "Yay uzunluğu", "ifade": "s = 2 × π × R × (θ ÷ 360°)", "aciklama": "s: yeryüzünde iki nokta arasındaki yol (km), R: Dünya yarıçapı (6371 km), θ: merkezden bakınca aradaki açı (derece). 103° için ≈ 11.450 km." },
-    { "ad": "Basınç ve yükseklik (kaba model)", "ifade": "P = P₀ × e^(−h ÷ H)", "aciklama": "P: h yüksekliğindeki basınç, P₀: yer basıncı (1014 milibar), H: ölçek yüksekliği (8,5 km), e ≈ 2,718. Sıcaklığın sabit olduğunu varsayar; büyüklük mertebesi için." },
-    { "ad": "Stefan–Boltzmann yasası", "ifade": "j = σ × T⁴", "aciklama": "j: metrekare başına yayılan güç (W/m²), σ = 5,67 × 10⁻⁸ W/(m² K⁴), T: sıcaklık (K) (d2). 288 K için ≈ 390, 255 K için ≈ 240 W/m²." },
-    { "ad": "Biriken kayma", "ifade": "süre = kayma ÷ kayma hızı", "aciklama": "Kayma (mm) ve hız (mm/yıl) aynı birimde olmalı. Yalnızca ölçek fikri verir; depremler düzenli tekrarlanmaz." }
+    {
+      "ad": "Kütleçekimden kütle",
+      "ifade": "M = g × R² ÷ G",
+      "aciklama": "M: Dünya'nın kütlesi (kg), g: yüzey çekim ivmesi (m/s²), R: yarıçap (m), G = 6,674 × 10⁻¹¹ m³ kg⁻¹ s⁻² (d3). Dünya için ≈ 5,97 × 10²⁴ kg."
+    },
+    {
+      "ad": "Ortalama yoğunluk",
+      "ifade": "ρ = M ÷ V, V = (4/3) × π × R³",
+      "aciklama": "ρ: yoğunluk (kg/m³), V: hacim (m³). Dünya için ≈ 5513 kg/m³. Küre varsayar (d9)."
+    },
+    {
+      "ad": "Yay uzunluğu",
+      "ifade": "s = 2 × π × R × (θ ÷ 360°)",
+      "aciklama": "s: yeryüzünde iki nokta arasındaki yol (km), R: Dünya yarıçapı (6371 km), θ: merkezden bakınca aradaki açı (derece). 103° için ≈ 11.450 km."
+    },
+    {
+      "ad": "Basınç ve yükseklik (kaba model)",
+      "ifade": "P = P₀ × e^(−h ÷ H)",
+      "aciklama": "P: h yüksekliğindeki basınç, P₀: yer basıncı (1014 milibar), H: ölçek yüksekliği (8,5 km), e ≈ 2,718. Sıcaklığın sabit olduğunu varsayar; büyüklük mertebesi için."
+    },
+    {
+      "ad": "Stefan–Boltzmann yasası",
+      "ifade": "j = σ × T⁴",
+      "aciklama": "j: metrekare başına yayılan güç (W/m²), σ = 5,67 × 10⁻⁸ W/(m² K⁴), T: sıcaklık (K) (d2). 288 K için ≈ 390, 255 K için ≈ 240 W/m²."
+    },
+    {
+      "ad": "Biriken kayma",
+      "ifade": "süre = kayma ÷ kayma hızı",
+      "aciklama": "Kayma (mm) ve hız (mm/yıl) aynı birimde olmalı. Yalnızca ölçek fikri verir; depremler düzenli tekrarlanmaz."
+    }
   ],
   "anahtar_sayilar": [
-    { "deger": "5,9722 × 10²⁴ kg; 6371 km (ekvator 6378,137, kutup 6356,752); 5513 kg/m³", "aciklama": "Dünya'nın kütlesi, yarıçapları ve ortalama yoğunluğu", "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html" },
-    { "deger": "0,3308 (düzgün küre 0,4)", "aciklama": "Dünya'nın eylemsizlik momenti çarpanı", "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html" },
-    { "deger": "103°; 103°–143°", "aciklama": "S dalgası gölgesinin başladığı uzaklık ve P gölge bölgesi", "kaynak_url": "https://csmgeo.csm.jmu.edu/geollab/baedke/gsci115/earthinterior.html" },
-    { "deger": "Eylül 1936, makale P′; 1929 Yeni Zelanda depremi", "aciklama": "Inge Lehmann'ın iç çekirdek önerisi", "kaynak_url": "https://aps.org/publications/apsnews/202309/history.cfm" },
-    { "deger": "1221 km; %0,69 hacim; 330–360 GPa; ~13 g/cm³", "aciklama": "İç çekirdeğin yarıçapı, hacim payı, basıncı ve yoğunluğu", "kaynak_url": "https://www.wikiwand.com/en/Inner_core" },
-    { "deger": "6000 ± 500 °C; ~3,3 milyon atmosfer", "aciklama": "İç ve dış çekirdek sınırında sıcaklık ve basınç (Anzellini ve ark. 2013)", "kaynak_url": "https://www.esrf.fr/news/general/Earth-Center-Hotter" },
-    { "deger": "~1200 km; 22 ± 7 mm/yıl", "aciklama": "Kuzey Anadolu Fayı'nın uzunluğu ve GPS'e dayalı kayma hızı", "kaynak_url": "https://cires1.colorado.edu/~bilham/Izmit_EEFIT_REPORT.htm" },
-    { "deger": "17 Ağustos 1999, 03.01; Mw 7,6; 17.127–18.373 ölü", "aciklama": "İzmit (Kocaeli) depremi", "kaynak_url": "https://en.wikipedia.org/wiki/1999_%C4%B0zmit_earthquake" },
-    { "deger": "%62 ± 15 (30 yıl), %32 ± 12 (10 yıl)", "aciklama": "Parsons ve ark. (2000): büyük İstanbul bölgesinde güçlü sarsıntı olasılığı", "kaynak_url": "https://web.itu.edu.tr/barka/pubs/ist_haz2/ist_seismhaz.html" },
-    { "deger": "0,24–0,66 gauss (24–66 mikrotesla); dipol ~11° eğik", "aciklama": "Yüzeyde manyetik alan şiddeti (NASA) ve dipol eğikliği (Wikipedia)", "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html" },
-    { "deger": "~780.000 yıl; ~41.000 yıl; ~%6 / yüzyıl", "aciklama": "Son tersinme (Brunhes–Matuyama), Laschamp gezintisi, dipol zayıflaması", "kaynak_url": "https://en.wikipedia.org/wiki/Earth%27s_magnetic_field" },
-    { "deger": "~10 · ~50 · ~85 · 500–1000 km; Kármán çizgisi 100 km", "aciklama": "Troposfer, stratosfer, mezosfer ve termosferin üst sınırları", "kaynak_url": "https://scied.ucar.edu/learning-zone/atmosphere/layers-earths-atmosphere" },
-    { "deger": "%78,08 N₂ · %20,95 O₂ · 9340 ppm Ar · 420 ppm CO₂", "aciklama": "Kuru havanın hacimce bileşimi (NASA)", "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html" },
-    { "deger": "255 K → 288 K (33 K); 398 W/m² yüzey, 239 W/m² uzaya", "aciklama": "Sera etkisinin sıcaklık ve enerji akışı ölçüleri", "kaynak_url": "https://en.wikipedia.org/wiki/Greenhouse_effect" },
-    { "deger": "%70,8; 3682 m; 10.935 m", "aciklama": "Okyanusun kapladığı yüzey, ortalama derinlik, Challenger Derinliği", "kaynak_url": "https://oceanservice.noaa.gov/facts/oceandepth.html" },
-    { "deger": "14 Şubat 1990; ~6 milyar km; 0,12 piksel", "aciklama": "Soluk Mavi Nokta fotoğrafı (Voyager 1)", "kaynak_url": "https://science.nasa.gov/photojournal/solar-system-portrait-earth-as-pale-blue-dot" }
+    {
+      "deger": "5,9722 × 10²⁴ kg; 6371 km (ekvator 6378,137, kutup 6356,752); 5513 kg/m³",
+      "aciklama": "Dünya'nın kütlesi, yarıçapları ve ortalama yoğunluğu",
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html",
+      "kid": "d44n0"
+    },
+    {
+      "deger": "0,3308 (düzgün küre 0,4)",
+      "aciklama": "Dünya'nın eylemsizlik momenti çarpanı",
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html",
+      "kid": "d44n1"
+    },
+    {
+      "deger": "103°; 103°–143°",
+      "aciklama": "S dalgası gölgesinin başladığı uzaklık ve P gölge bölgesi",
+      "kaynak_url": "https://csmgeo.csm.jmu.edu/geollab/baedke/gsci115/earthinterior.html",
+      "kid": "d44n2"
+    },
+    {
+      "deger": "Eylül 1936, makale P′; 1929 Yeni Zelanda depremi",
+      "aciklama": "Inge Lehmann'ın iç çekirdek önerisi",
+      "kaynak_url": "https://aps.org/publications/apsnews/202309/history.cfm",
+      "kid": "d44n3"
+    },
+    {
+      "deger": "1221 km; %0,69 hacim; 330–360 GPa; ~13 g/cm³",
+      "aciklama": "İç çekirdeğin yarıçapı, hacim payı, basıncı ve yoğunluğu",
+      "kaynak_url": "https://www.wikiwand.com/en/Inner_core",
+      "kid": "d44n4"
+    },
+    {
+      "deger": "6000 ± 500 °C; ~3,3 milyon atmosfer",
+      "aciklama": "İç ve dış çekirdek sınırında sıcaklık ve basınç (Anzellini ve ark. 2013)",
+      "kaynak_url": "https://www.esrf.fr/news/general/Earth-Center-Hotter",
+      "kid": "d44n5"
+    },
+    {
+      "deger": "~1200 km; 22 ± 7 mm/yıl",
+      "aciklama": "Kuzey Anadolu Fayı'nın uzunluğu ve GPS'e dayalı kayma hızı",
+      "kaynak_url": "https://cires1.colorado.edu/~bilham/Izmit_EEFIT_REPORT.htm",
+      "kid": "d44n6"
+    },
+    {
+      "deger": "17 Ağustos 1999, 03.01; Mw 7,6; 17.127–18.373 ölü",
+      "aciklama": "İzmit (Kocaeli) depremi",
+      "kaynak_url": "https://en.wikipedia.org/wiki/1999_%C4%B0zmit_earthquake",
+      "kid": "d44n7"
+    },
+    {
+      "deger": "%62 ± 15 (30 yıl), %32 ± 12 (10 yıl)",
+      "aciklama": "Parsons ve ark. (2000): büyük İstanbul bölgesinde güçlü sarsıntı olasılığı",
+      "kaynak_url": "https://web.itu.edu.tr/barka/pubs/ist_haz2/ist_seismhaz.html",
+      "kid": "d44n8"
+    },
+    {
+      "deger": "0,24–0,66 gauss (24–66 mikrotesla); dipol ~11° eğik",
+      "aciklama": "Yüzeyde manyetik alan şiddeti (NASA) ve dipol eğikliği (Wikipedia)",
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html",
+      "kid": "d44n9"
+    },
+    {
+      "deger": "~780.000 yıl; ~41.000 yıl; ~%6 / yüzyıl",
+      "aciklama": "Son tersinme (Brunhes–Matuyama), Laschamp gezintisi, dipol zayıflaması",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Earth%27s_magnetic_field",
+      "kid": "d44n10"
+    },
+    {
+      "deger": "~10 · ~50 · ~85 · 500–1000 km; Kármán çizgisi 100 km",
+      "aciklama": "Troposfer, stratosfer, mezosfer ve termosferin üst sınırları",
+      "kaynak_url": "https://scied.ucar.edu/learning-zone/atmosphere/layers-earths-atmosphere",
+      "kid": "d44n11"
+    },
+    {
+      "deger": "%78,08 N₂ · %20,95 O₂ · 9340 ppm Ar · 420 ppm CO₂",
+      "aciklama": "Kuru havanın hacimce bileşimi (NASA)",
+      "kaynak_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html",
+      "kid": "d44n12"
+    },
+    {
+      "deger": "255 K → 288 K (33 K); 398 W/m² yüzey, 239 W/m² uzaya",
+      "aciklama": "Sera etkisinin sıcaklık ve enerji akışı ölçüleri",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Greenhouse_effect",
+      "kid": "d44n13"
+    },
+    {
+      "deger": "%70,8; 3682 m; 10.935 m",
+      "aciklama": "Okyanusun kapladığı yüzey, ortalama derinlik, Challenger Derinliği",
+      "kaynak_url": "https://oceanservice.noaa.gov/facts/oceandepth.html",
+      "kid": "d44n14"
+    },
+    {
+      "deger": "14 Şubat 1990; ~6 milyar km; 0,12 piksel",
+      "aciklama": "Soluk Mavi Nokta fotoğrafı (Voyager 1)",
+      "kaynak_url": "https://science.nasa.gov/photojournal/solar-system-portrait-earth-as-pale-blue-dot",
+      "kid": "d44n15"
+    }
   ],
   "sozluk": [
-    { "terim": "sismik dalga", "tanim": "Bir depremde ya da patlamada kayaların kırılmasıyla doğup Dünya'nın içinde ve yüzeyinde yayılan titreşim." },
-    { "terim": "P dalgası", "tanim": "Katılardan, sıvılardan ve gazlardan geçebilen, sıkışma biçimindeki sismik dalga." },
-    { "terim": "S dalgası", "tanim": "Maddeyi yana kaydırarak ilerleyen ve yalnızca katılardan geçebilen sismik dalga." },
-    { "terim": "Moho süreksizliği", "tanim": "Yer kabuğu ile manto arasında, sismik dalgaların birden hızlandığı sınır." },
-    { "terim": "gölge bölgesi", "tanim": "Bir depremin belirli dalgalarının Dünya'nın içindeki bir katman yüzünden ulaşamadığı ya da çok zayıf ulaştığı yüzey kuşağı." },
-    { "terim": "astenosfer", "tanim": "Mantonun yaklaşık 100–250 km derinliklerinde, kayaların erime noktasına yakın olduğu ve sismik dalgaların yavaşladığı katman." },
-    { "terim": "dış çekirdek", "tanim": "Manto ile iç çekirdek arasında, çoğunlukla sıvı demirden oluşan ve manyetik alanı üreten katman." },
-    { "terim": "iç çekirdek", "tanim": "Dünya'nın merkezindeki, yarıçapı yaklaşık 1221 km olan katı demir–nikel küre." },
-    { "terim": "levha tektoniği", "tanim": "Dünya'nın sert dış kabuğunun birbirine göre hareket eden büyük levhalara bölünmüş olduğunu anlatan kuram." },
-    { "terim": "deniz tabanı yayılması", "tanim": "Okyanus ortası sırtlarda yeni kabuğun oluşup iki yana doğru uzaklaşması." },
-    { "terim": "doğrultu atımlı fay", "tanim": "İki kaya bloğunun fay boyunca yatay olarak yan yana kaydığı fay." },
-    { "terim": "sismik boşluk", "tanim": "Etkin bir fayın, uzun süredir büyük bir depremle kırılmamış ve gerilim biriktiren bölümü." },
-    { "terim": "manyetik sapma", "tanim": "Pusulanın gösterdiği manyetik kuzey ile coğrafi kuzey arasındaki açı." },
-    { "terim": "jeomanyetik gezinti", "tanim": "Dünya'nın manyetik alanının tam tersine dönmeden kısa süre büyük ölçüde sapması." },
-    { "terim": "troposfer", "tanim": "Atmosferin yerden yaklaşık 10 km'ye kadar uzanan, hava olaylarının geçtiği ve yükseldikçe soğuyan en alt katmanı." },
-    { "terim": "stratosfer", "tanim": "Troposferin üstünde yaklaşık 50 km'ye kadar uzanan, ozon tabakasını barındıran ve yükseldikçe ısınan katman." },
-    { "terim": "ozon tabakası", "tanim": "Stratosferde Güneş'in morötesi ışığını soğuran ozonca zengin bölge." },
-    { "terim": "mezosfer", "tanim": "Stratosferin üstünde yaklaşık 85 km'ye kadar uzanan, meteorların çoğunun yandığı en soğuk atmosfer katmanı." },
-    { "terim": "termosfer", "tanim": "Mezosferin üstünde 500–1000 km'ye kadar uzanan, çok seyrek ama çok sıcak, uyduların ve kutup ışıklarının bulunduğu katman." },
-    { "terim": "Kármán çizgisi", "tanim": "Atmosfer ile uzay arasında yaklaşık sınır olarak kullanılan, deniz seviyesinden yaklaşık 100 km yükseklik." },
-    { "terim": "siyanobakteriler", "tanim": "Fotosentez yapan ilk canlılar olarak bilinen, mavi-yeşil algler de denen bakteriler." }
+    {
+      "terim": "sismik dalga",
+      "tanim": "Bir depremde ya da patlamada kayaların kırılmasıyla doğup Dünya'nın içinde ve yüzeyinde yayılan titreşim.",
+      "kid": "d44t0"
+    },
+    {
+      "terim": "P dalgası",
+      "tanim": "Katılardan, sıvılardan ve gazlardan geçebilen, sıkışma biçimindeki sismik dalga.",
+      "kid": "d44t1"
+    },
+    {
+      "terim": "S dalgası",
+      "tanim": "Maddeyi yana kaydırarak ilerleyen ve yalnızca katılardan geçebilen sismik dalga.",
+      "kid": "d44t2"
+    },
+    {
+      "terim": "Moho süreksizliği",
+      "tanim": "Yer kabuğu ile manto arasında, sismik dalgaların birden hızlandığı sınır.",
+      "kid": "d44t3"
+    },
+    {
+      "terim": "gölge bölgesi",
+      "tanim": "Bir depremin belirli dalgalarının Dünya'nın içindeki bir katman yüzünden ulaşamadığı ya da çok zayıf ulaştığı yüzey kuşağı.",
+      "kid": "d44t4"
+    },
+    {
+      "terim": "astenosfer",
+      "tanim": "Mantonun yaklaşık 100–250 km derinliklerinde, kayaların erime noktasına yakın olduğu ve sismik dalgaların yavaşladığı katman.",
+      "kid": "d44t5"
+    },
+    {
+      "terim": "dış çekirdek",
+      "tanim": "Manto ile iç çekirdek arasında, çoğunlukla sıvı demirden oluşan ve manyetik alanı üreten katman.",
+      "kid": "d44t6"
+    },
+    {
+      "terim": "iç çekirdek",
+      "tanim": "Dünya'nın merkezindeki, yarıçapı yaklaşık 1221 km olan katı demir–nikel küre.",
+      "kid": "d44t7"
+    },
+    {
+      "terim": "levha tektoniği",
+      "tanim": "Dünya'nın sert dış kabuğunun birbirine göre hareket eden büyük levhalara bölünmüş olduğunu anlatan kuram.",
+      "kid": "d44t8"
+    },
+    {
+      "terim": "deniz tabanı yayılması",
+      "tanim": "Okyanus ortası sırtlarda yeni kabuğun oluşup iki yana doğru uzaklaşması.",
+      "kid": "d44t9"
+    },
+    {
+      "terim": "doğrultu atımlı fay",
+      "tanim": "İki kaya bloğunun fay boyunca yatay olarak yan yana kaydığı fay.",
+      "kid": "d44t10"
+    },
+    {
+      "terim": "sismik boşluk",
+      "tanim": "Etkin bir fayın, uzun süredir büyük bir depremle kırılmamış ve gerilim biriktiren bölümü.",
+      "kid": "d44t11"
+    },
+    {
+      "terim": "manyetik sapma",
+      "tanim": "Pusulanın gösterdiği manyetik kuzey ile coğrafi kuzey arasındaki açı.",
+      "kid": "d44t12"
+    },
+    {
+      "terim": "jeomanyetik gezinti",
+      "tanim": "Dünya'nın manyetik alanının tam tersine dönmeden kısa süre büyük ölçüde sapması.",
+      "kid": "d44t13"
+    },
+    {
+      "terim": "troposfer",
+      "tanim": "Atmosferin yerden yaklaşık 10 km'ye kadar uzanan, hava olaylarının geçtiği ve yükseldikçe soğuyan en alt katmanı.",
+      "kid": "d44t14"
+    },
+    {
+      "terim": "stratosfer",
+      "tanim": "Troposferin üstünde yaklaşık 50 km'ye kadar uzanan, ozon tabakasını barındıran ve yükseldikçe ısınan katman.",
+      "kid": "d44t15"
+    },
+    {
+      "terim": "ozon tabakası",
+      "tanim": "Stratosferde Güneş'in morötesi ışığını soğuran ozonca zengin bölge.",
+      "kid": "d44t16"
+    },
+    {
+      "terim": "mezosfer",
+      "tanim": "Stratosferin üstünde yaklaşık 85 km'ye kadar uzanan, meteorların çoğunun yandığı en soğuk atmosfer katmanı.",
+      "kid": "d44t17"
+    },
+    {
+      "terim": "termosfer",
+      "tanim": "Mezosferin üstünde 500–1000 km'ye kadar uzanan, çok seyrek ama çok sıcak, uyduların ve kutup ışıklarının bulunduğu katman.",
+      "kid": "d44t18"
+    },
+    {
+      "terim": "Kármán çizgisi",
+      "tanim": "Atmosfer ile uzay arasında yaklaşık sınır olarak kullanılan, deniz seviyesinden yaklaşık 100 km yükseklik.",
+      "kid": "d44t19"
+    },
+    {
+      "terim": "siyanobakteriler",
+      "tanim": "Fotosentez yapan ilk canlılar olarak bilinen, mavi-yeşil algler de denen bakteriler.",
+      "kid": "d44t20"
+    }
   ],
   "defter_notu": [
     "Dünya: 5,97 × 10²⁴ kg; R = 6371 km (ekvator +21 km); ρ = 5,51 g/cm³ (en yoğun); g ≈ 9,82; eylemsizlik çarpanı 0,3308 < 0,4 → içi ağır.",
@@ -267,47 +460,180 @@
     "Sera: 255 → 288 K; yüzey 398, uzaya 239 W/m². Okyanus %70,8, ort. 3682 m. Soluk Mavi Nokta 14.02.1990, 0,12 piksel."
   ],
   "sorular": [
-    { "soru": "Dünya'nın eylemsizlik momenti çarpanı 0,3308'dir. Her yeri aynı yoğunlukta bir kürede bu değer 0,4 olurdu. Bu fark ne anlatır?", "cevap": "Kütle merkeze doğru yoğunlaşmıştır: Dünya içi dışından ağır bir küredir. Bu, merkezde yoğun bir demir çekirdek olduğuyla uyumludur; iç çekirdeğin yoğunluğu ~13 g/cm³ ile ortalamanın (5,51) iki katından fazladır." },
-    { "soru": "S dalgalarının depremden ~103°'nin ötesine ulaşamaması neden dış çekirdeğin sıvı olduğunu gösterir?", "cevap": "S dalgaları kayma dalgalarıdır ve yalnızca katılardan (ya da çok ağdalı sıvılardan) geçebilir. Dünya'nın öbür yarısına giden yollar çekirdekten geçtiği için bu dalgaların orada hiç kaydedilmemesi, çekirdeğin (dış kısmının) sıvı olduğunu gösterir." },
-    { "soru": "Inge Lehmann iç çekirdeği hangi gözlemden çıkardı?", "cevap": "1929 Yeni Zelanda depreminin kayıtlarında, sıvı bir çekirdeğin oluşturması gereken P gölge bölgesinde (103°–143°) olmaması gereken P dalgaları vardı. Lehmann 1936'daki P′ makalesinde bunları sıvı çekirdeğin içindeki katı bir iç çekirdekle açıkladı." },
-    { "soru": "Dünya'nın yarıçapı 6371 km, iç çekirdeğinki 1221 km. İç çekirdek hacmin yüzde kaçıdır?", "cevap": "(1221 ÷ 6371)³ ≈ 0,1917³ ≈ 0,0070, yani yaklaşık %0,7. Wikipedia %0,69 verir. Yarıçapın %19'u, hacmin yalnızca yüzde birinden azına karşılık gelir." },
-    { "soru": "Okyanus tabanındaki manyetik şeritler hem levha tektoniğinin hem manyetik tersinmelerin kanıtıdır. Nasıl?", "cevap": "Sırtta katılaşan kaya o anki alanın yönünü kaydeder ve yana itilir. Alan tersine döndükçe ters mıknatıslanmış yeni bir şerit başlar. Sırtın iki yanındaki simetrik şeritler hem kabuğun sırttan iki yana yayıldığını (deniz tabanı yayılması) hem de alanın geçmişte defalarca yön değiştirdiğini gösterir." },
-    { "soru": "Kuzey Anadolu Fayı yılda 22 mm kayıyor. 1999 İzmit depreminde ortalama 3 m kayma ölçüldü. Bu kayma kabaca kaç yıllık birikime denk gelir ve bu sayı neden bir deprem tahmini değildir?", "cevap": "3000 ÷ 22 ≈ 136 yıl (hızın belirsizliğiyle ~100–200 yıl). Ama depremler düzenli tekrarlanmaz, kaymanın bir kısmı depremsiz boşalabilir ve fayın bölümleri farklı davranır; hesap yalnızca ölçek fikri verir." },
-    { "soru": "Dünya'nın manyetik alanı nerede ve nasıl üretilir?", "cevap": "Sıvı dış çekirdekte, jeodinamo ile: elektriği ileten sıvı demir, çekirdeğin mantoya ısı kaybetmesi ve iç çekirdek büyürken bırakılan hafif elementlerle konveksiyon yapar; Dünya'nın dönmesi (Coriolis) akışı düzenler. Hareketli iletken akışkan akım, akım da manyetik alan üretir." },
-    { "soru": "Manyetik alanın yüzyılda yaklaşık %6 zayıflaması, yakında bir tersinme olacağı anlamına gelir mi?", "cevap": "Hayır, bundan çıkarılamaz. Tersinmeler neredeyse rastgele, aralar 100.000 yıldan kısa ile 50 milyon yıl arasında değişmiş; alan geçmişte güçlenip zayıflamıştır. Zayıflama ölçülen bir olgudur, ama bir tersinme tarihi vermez." },
-    { "soru": "Stratosferde neden yükseldikçe sıcaklık artar?", "cevap": "Ozon tabakası stratosferdedir; ozon molekülleri Güneş'in yüksek enerjili morötesi ışığını soğurup ısıya çevirir. Bu yüzden troposferin tersine stratosferde yukarı çıktıkça hava ısınır." },
-    { "soru": "Ölçek yüksekliği 8,5 km ise 17 km yükseklikte basınç yer basıncının kabaca ne kadarıdır?", "cevap": "17 ÷ 8,5 = 2 ölçek yüksekliği; e⁻² ≈ 0,135. Yani yaklaşık %13,5; 1014 milibar için ≈ 137 milibar. Model kabadır çünkü sıcaklık yükseklikle değişir." },
-    { "soru": "Sera etkisi olmasaydı Dünya'nın ortalama sıcaklığı ne olurdu? Bu fark nasıl ölçülür?", "cevap": "Yaklaşık 255 K (−18 °C; NASA 254 K) olurdu; gerçek ortalama 288 K (15 °C). 33 K'lik fark sera etkisinin ölçüsüdür. Enerji akışında: yüzey ~398 W/m² ışırken uzaya ~239 W/m² gider; aradaki kısım atmosferde tutulup kısmen yüzeye geri döner." },
-    { "soru": "Havamızdaki oksijen nereden geldi?", "cevap": "Fotosentezden. NASA'ya göre yaklaşık 2,4 milyar yıl önce fotosentezin yan ürünü olarak oksijen atmosferin önemli bir bileşeni oldu; ilk fotosentezciler siyanobakterilerdi. Bugün de okyanus fotosentezi atmosferdeki oksijenin yarısını üretir." },
-    { "soru": "Soluk Mavi Nokta fotoğrafında Dünya neden 0,12 piksel kadar küçüktü? Görünür açısını hesapla.", "cevap": "Voyager 1 yaklaşık 6 milyar km uzaktaydı. Açı ≈ 12.742 km ÷ 6 × 10⁹ km ≈ 2,1 × 10⁻⁶ radyan ≈ 0,44 yay saniyesi; bu, kameranın bir pikselinin kapsadığı açıdan çok küçüktü." }
+    {
+      "soru": "Dünya'nın eylemsizlik momenti çarpanı 0,3308'dir. Her yeri aynı yoğunlukta bir kürede bu değer 0,4 olurdu. Bu fark ne anlatır?",
+      "cevap": "Kütle merkeze doğru yoğunlaşmıştır: Dünya içi dışından ağır bir küredir. Bu, merkezde yoğun bir demir çekirdek olduğuyla uyumludur; iç çekirdeğin yoğunluğu ~13 g/cm³ ile ortalamanın (5,51) iki katından fazladır.",
+      "kid": "d44s0"
+    },
+    {
+      "soru": "S dalgalarının depremden ~103°'nin ötesine ulaşamaması neden dış çekirdeğin sıvı olduğunu gösterir?",
+      "cevap": "S dalgaları kayma dalgalarıdır ve yalnızca katılardan (ya da çok ağdalı sıvılardan) geçebilir. Dünya'nın öbür yarısına giden yollar çekirdekten geçtiği için bu dalgaların orada hiç kaydedilmemesi, çekirdeğin (dış kısmının) sıvı olduğunu gösterir.",
+      "kid": "d44s1"
+    },
+    {
+      "soru": "Inge Lehmann iç çekirdeği hangi gözlemden çıkardı?",
+      "cevap": "1929 Yeni Zelanda depreminin kayıtlarında, sıvı bir çekirdeğin oluşturması gereken P gölge bölgesinde (103°–143°) olmaması gereken P dalgaları vardı. Lehmann 1936'daki P′ makalesinde bunları sıvı çekirdeğin içindeki katı bir iç çekirdekle açıkladı.",
+      "kid": "d44s2"
+    },
+    {
+      "soru": "Dünya'nın yarıçapı 6371 km, iç çekirdeğinki 1221 km. İç çekirdek hacmin yüzde kaçıdır?",
+      "cevap": "(1221 ÷ 6371)³ ≈ 0,1917³ ≈ 0,0070, yani yaklaşık %0,7. Wikipedia %0,69 verir. Yarıçapın %19'u, hacmin yalnızca yüzde birinden azına karşılık gelir.",
+      "kid": "d44s3"
+    },
+    {
+      "soru": "Okyanus tabanındaki manyetik şeritler hem levha tektoniğinin hem manyetik tersinmelerin kanıtıdır. Nasıl?",
+      "cevap": "Sırtta katılaşan kaya o anki alanın yönünü kaydeder ve yana itilir. Alan tersine döndükçe ters mıknatıslanmış yeni bir şerit başlar. Sırtın iki yanındaki simetrik şeritler hem kabuğun sırttan iki yana yayıldığını (deniz tabanı yayılması) hem de alanın geçmişte defalarca yön değiştirdiğini gösterir.",
+      "kid": "d44s4"
+    },
+    {
+      "soru": "Kuzey Anadolu Fayı yılda 22 mm kayıyor. 1999 İzmit depreminde ortalama 3 m kayma ölçüldü. Bu kayma kabaca kaç yıllık birikime denk gelir ve bu sayı neden bir deprem tahmini değildir?",
+      "cevap": "3000 ÷ 22 ≈ 136 yıl (hızın belirsizliğiyle ~100–200 yıl). Ama depremler düzenli tekrarlanmaz, kaymanın bir kısmı depremsiz boşalabilir ve fayın bölümleri farklı davranır; hesap yalnızca ölçek fikri verir.",
+      "kid": "d44s5"
+    },
+    {
+      "soru": "Dünya'nın manyetik alanı nerede ve nasıl üretilir?",
+      "cevap": "Sıvı dış çekirdekte, jeodinamo ile: elektriği ileten sıvı demir, çekirdeğin mantoya ısı kaybetmesi ve iç çekirdek büyürken bırakılan hafif elementlerle konveksiyon yapar; Dünya'nın dönmesi (Coriolis) akışı düzenler. Hareketli iletken akışkan akım, akım da manyetik alan üretir.",
+      "kid": "d44s6"
+    },
+    {
+      "soru": "Manyetik alanın yüzyılda yaklaşık %6 zayıflaması, yakında bir tersinme olacağı anlamına gelir mi?",
+      "cevap": "Hayır, bundan çıkarılamaz. Tersinmeler neredeyse rastgele, aralar 100.000 yıldan kısa ile 50 milyon yıl arasında değişmiş; alan geçmişte güçlenip zayıflamıştır. Zayıflama ölçülen bir olgudur, ama bir tersinme tarihi vermez.",
+      "kid": "d44s7"
+    },
+    {
+      "soru": "Stratosferde neden yükseldikçe sıcaklık artar?",
+      "cevap": "Ozon tabakası stratosferdedir; ozon molekülleri Güneş'in yüksek enerjili morötesi ışığını soğurup ısıya çevirir. Bu yüzden troposferin tersine stratosferde yukarı çıktıkça hava ısınır.",
+      "kid": "d44s8"
+    },
+    {
+      "soru": "Ölçek yüksekliği 8,5 km ise 17 km yükseklikte basınç yer basıncının kabaca ne kadarıdır?",
+      "cevap": "17 ÷ 8,5 = 2 ölçek yüksekliği; e⁻² ≈ 0,135. Yani yaklaşık %13,5; 1014 milibar için ≈ 137 milibar. Model kabadır çünkü sıcaklık yükseklikle değişir.",
+      "kid": "d44s9"
+    },
+    {
+      "soru": "Sera etkisi olmasaydı Dünya'nın ortalama sıcaklığı ne olurdu? Bu fark nasıl ölçülür?",
+      "cevap": "Yaklaşık 255 K (−18 °C; NASA 254 K) olurdu; gerçek ortalama 288 K (15 °C). 33 K'lik fark sera etkisinin ölçüsüdür. Enerji akışında: yüzey ~398 W/m² ışırken uzaya ~239 W/m² gider; aradaki kısım atmosferde tutulup kısmen yüzeye geri döner.",
+      "kid": "d44s10"
+    },
+    {
+      "soru": "Havamızdaki oksijen nereden geldi?",
+      "cevap": "Fotosentezden. NASA'ya göre yaklaşık 2,4 milyar yıl önce fotosentezin yan ürünü olarak oksijen atmosferin önemli bir bileşeni oldu; ilk fotosentezciler siyanobakterilerdi. Bugün de okyanus fotosentezi atmosferdeki oksijenin yarısını üretir.",
+      "kid": "d44s11"
+    },
+    {
+      "soru": "Soluk Mavi Nokta fotoğrafında Dünya neden 0,12 piksel kadar küçüktü? Görünür açısını hesapla.",
+      "cevap": "Voyager 1 yaklaşık 6 milyar km uzaktaydı. Açı ≈ 12.742 km ÷ 6 × 10⁹ km ≈ 2,1 × 10⁻⁶ radyan ≈ 0,44 yay saniyesi; bu, kameranın bir pikselinin kapsadığı açıdan çok küçüktü.",
+      "kid": "d44s12"
+    }
   ],
   "kaynaklar": [
-    { "ad": "NASA NSSDCA – Earth Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html" },
-    { "ad": "APS News – This Month in Physics History: Inge Lehmann (Eylül 2023)", "url": "https://aps.org/publications/apsnews/202309/history.cfm" },
-    { "ad": "AMNH – Inge Lehmann: Discoverer of the Earth's Inner Core", "url": "https://www.amnh.org/learn-teach/curriculum-collections/earth-inside-and-out/inge-lehmann-discoverer-of-the-earth-s-inner-core" },
-    { "ad": "James Madison University – The Interior of the Earth (GSCI 115)", "url": "https://csmgeo.csm.jmu.edu/geollab/baedke/gsci115/earthinterior.html" },
-    { "ad": "EBSCO Research Starters – Oldham and Mohorovičić Determine the Earth's Interior Structure", "url": "https://www.ebsco.com/research-starters/earth-and-atmospheric-sciences/oldham-and-mohorovicic-determine-earths-interior" },
-    { "ad": "Wikipedia (Wikiwand) – Earth's inner core", "url": "https://www.wikiwand.com/en/Inner_core" },
-    { "ad": "ESRF – Earth's centre 1000 degrees hotter than previously thought (2013)", "url": "https://www.esrf.fr/news/general/Earth-Center-Hotter" },
-    { "ad": "USGS – How fast do tectonic plates move?", "url": "https://www.usgs.gov/faqs/how-fast-do-tectonic-plates-move" },
-    { "ad": "USGS – This Dynamic Earth: Developing the theory", "url": "https://pubs.usgs.gov/gip/dynamic/developing.html" },
-    { "ad": "University of Wisconsin CIMSS – Plate tectonics concepts", "url": "https://cimss.ssec.wisc.edu/sage/geology/lesson2/concepts.html" },
-    { "ad": "EEFIT – Izmit (Turkey) Earthquake Report (CIRES, Colorado)", "url": "https://cires1.colorado.edu/~bilham/Izmit_EEFIT_REPORT.htm" },
-    { "ad": "Wikipedia – 1999 İzmit earthquake", "url": "https://en.wikipedia.org/wiki/1999_%C4%B0zmit_earthquake" },
-    { "ad": "Parsons, Barka, Toda, Stein, Dieterich (2000) – Istanbul seismic hazard (İTÜ)", "url": "https://web.itu.edu.tr/barka/pubs/ist_haz2/ist_seismhaz.html" },
-    { "ad": "BGS – The Earth's magnetic field: an overview", "url": "http://www.geomag.bgs.ac.uk/education/earthmag.html" },
-    { "ad": "Wikipedia – Earth's magnetic field", "url": "https://en.wikipedia.org/wiki/Earth%27s_magnetic_field" },
-    { "ad": "Deguen & Lasbleis (2019) – Fluid dynamics of Earth's core (arXiv 1905.10416)", "url": "https://arxiv.org/pdf/1905.10416" },
-    { "ad": "NOAA NCEI – Magnetic Declination", "url": "https://www.ncei.noaa.gov/products/magnetic-declination" },
-    { "ad": "UCAR Center for Science Education – Layers of Earth's Atmosphere", "url": "https://scied.ucar.edu/learning-zone/atmosphere/layers-earths-atmosphere" },
-    { "ad": "NASA Astrobiology – Revisiting Earth's oxygenation 2.4 billion years ago", "url": "https://astrobiology.nasa.gov/news/revisiting-earths-oxygenation-24-billion-years-ago/" },
-    { "ad": "Wikipedia – Greenhouse effect", "url": "https://en.wikipedia.org/wiki/Greenhouse_effect" },
-    { "ad": "NOAA Ocean Service – How deep is the ocean?", "url": "https://oceanservice.noaa.gov/facts/oceandepth.html" },
-    { "ad": "NOAA Ocean Exploration – How deep is the ocean?", "url": "https://Oceanexplorer.noaa.gov/facts/ocean-depth.html" },
-    { "ad": "Wikipedia (Wikiwand) – Ocean", "url": "https://wikiwand.com/en/ocean" },
-    { "ad": "Wikipedia – Habitable zone", "url": "https://en.wikipedia.org/wiki/Habitable_zone" },
-    { "ad": "NASA Photojournal – Solar System Portrait: Earth as Pale Blue Dot", "url": "https://science.nasa.gov/photojournal/solar-system-portrait-earth-as-pale-blue-dot" },
-    { "ad": "NASA – Moon viewing tips", "url": "https://science.nasa.gov/moon/viewing-tips/" },
-    { "ad": "NASA – Moon phases", "url": "https://science.nasa.gov/moon/moon-phases/" }
+    {
+      "ad": "NASA NSSDCA – Earth Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html"
+    },
+    {
+      "ad": "APS News – This Month in Physics History: Inge Lehmann (Eylül 2023)",
+      "url": "https://aps.org/publications/apsnews/202309/history.cfm"
+    },
+    {
+      "ad": "AMNH – Inge Lehmann: Discoverer of the Earth's Inner Core",
+      "url": "https://www.amnh.org/learn-teach/curriculum-collections/earth-inside-and-out/inge-lehmann-discoverer-of-the-earth-s-inner-core"
+    },
+    {
+      "ad": "James Madison University – The Interior of the Earth (GSCI 115)",
+      "url": "https://csmgeo.csm.jmu.edu/geollab/baedke/gsci115/earthinterior.html"
+    },
+    {
+      "ad": "EBSCO Research Starters – Oldham and Mohorovičić Determine the Earth's Interior Structure",
+      "url": "https://www.ebsco.com/research-starters/earth-and-atmospheric-sciences/oldham-and-mohorovicic-determine-earths-interior"
+    },
+    {
+      "ad": "Wikipedia (Wikiwand) – Earth's inner core",
+      "url": "https://www.wikiwand.com/en/Inner_core"
+    },
+    {
+      "ad": "ESRF – Earth's centre 1000 degrees hotter than previously thought (2013)",
+      "url": "https://www.esrf.fr/news/general/Earth-Center-Hotter"
+    },
+    {
+      "ad": "USGS – How fast do tectonic plates move?",
+      "url": "https://www.usgs.gov/faqs/how-fast-do-tectonic-plates-move"
+    },
+    {
+      "ad": "USGS – This Dynamic Earth: Developing the theory",
+      "url": "https://pubs.usgs.gov/gip/dynamic/developing.html"
+    },
+    {
+      "ad": "University of Wisconsin CIMSS – Plate tectonics concepts",
+      "url": "https://cimss.ssec.wisc.edu/sage/geology/lesson2/concepts.html"
+    },
+    {
+      "ad": "EEFIT – Izmit (Turkey) Earthquake Report (CIRES, Colorado)",
+      "url": "https://cires1.colorado.edu/~bilham/Izmit_EEFIT_REPORT.htm"
+    },
+    {
+      "ad": "Wikipedia – 1999 İzmit earthquake",
+      "url": "https://en.wikipedia.org/wiki/1999_%C4%B0zmit_earthquake"
+    },
+    {
+      "ad": "Parsons, Barka, Toda, Stein, Dieterich (2000) – Istanbul seismic hazard (İTÜ)",
+      "url": "https://web.itu.edu.tr/barka/pubs/ist_haz2/ist_seismhaz.html"
+    },
+    {
+      "ad": "BGS – The Earth's magnetic field: an overview",
+      "url": "http://www.geomag.bgs.ac.uk/education/earthmag.html"
+    },
+    {
+      "ad": "Wikipedia – Earth's magnetic field",
+      "url": "https://en.wikipedia.org/wiki/Earth%27s_magnetic_field"
+    },
+    {
+      "ad": "Deguen & Lasbleis (2019) – Fluid dynamics of Earth's core (arXiv 1905.10416)",
+      "url": "https://arxiv.org/pdf/1905.10416"
+    },
+    {
+      "ad": "NOAA NCEI – Magnetic Declination",
+      "url": "https://www.ncei.noaa.gov/products/magnetic-declination"
+    },
+    {
+      "ad": "UCAR Center for Science Education – Layers of Earth's Atmosphere",
+      "url": "https://scied.ucar.edu/learning-zone/atmosphere/layers-earths-atmosphere"
+    },
+    {
+      "ad": "NASA Astrobiology – Revisiting Earth's oxygenation 2.4 billion years ago",
+      "url": "https://astrobiology.nasa.gov/news/revisiting-earths-oxygenation-24-billion-years-ago/"
+    },
+    {
+      "ad": "Wikipedia – Greenhouse effect",
+      "url": "https://en.wikipedia.org/wiki/Greenhouse_effect"
+    },
+    {
+      "ad": "NOAA Ocean Service – How deep is the ocean?",
+      "url": "https://oceanservice.noaa.gov/facts/oceandepth.html"
+    },
+    {
+      "ad": "NOAA Ocean Exploration – How deep is the ocean?",
+      "url": "https://Oceanexplorer.noaa.gov/facts/ocean-depth.html"
+    },
+    {
+      "ad": "Wikipedia (Wikiwand) – Ocean",
+      "url": "https://wikiwand.com/en/ocean"
+    },
+    {
+      "ad": "Wikipedia – Habitable zone",
+      "url": "https://en.wikipedia.org/wiki/Habitable_zone"
+    },
+    {
+      "ad": "NASA Photojournal – Solar System Portrait: Earth as Pale Blue Dot",
+      "url": "https://science.nasa.gov/photojournal/solar-system-portrait-earth-as-pale-blue-dot"
+    },
+    {
+      "ad": "NASA – Moon viewing tips",
+      "url": "https://science.nasa.gov/moon/viewing-tips/"
+    },
+    {
+      "ad": "NASA – Moon phases",
+      "url": "https://science.nasa.gov/moon/moon-phases/"
+    }
   ]
 }

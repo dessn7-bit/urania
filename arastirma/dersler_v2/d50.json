@@ -4,7 +4,11 @@
   "yeni": true,
   "baslik": "Karanlık Madde: Adaylar ve Aramalar",
   "ozet": "Önce bu ünitenin pusulası olan dört basamaklı kesinlik ölçeğini öğreneceksin. Sonra karanlık maddenin kanıtlarını kısaca toplayıp asıl soruya geçeceğiz: bu görünmeyen kütle ne olabilir? WIMP'lerden aksiyonlara, steril nötrinolardan ilkel kara deliklere kadar adayları, onları arayan yeraltı dedektörlerini, MOND tartışmasını ve Euclid ile Rubin'den beklentileri, her iddianın ne kadar kesin olduğunu söyleyerek inceleyeceğiz.",
-  "on_bilgi": ["d17", "d7", "d32"],
+  "on_bilgi": [
+    "d17",
+    "d7",
+    "d32"
+  ],
   "bolumler": [
     {
       "baslik": "Bu ünitenin pusulası: kesinlik ölçeği",
@@ -179,54 +183,242 @@
     }
   ],
   "formuller": [
-    { "ad": "Kütleyi enerji birimiyle anmak", "ifade": "m = E ÷ c²;  1 GeV/c² ≈ 1,783×10⁻²⁷ kg", "aciklama": "E enerji (elektronvolt ya da joule), c ışık hızı. Parçacık fizikçileri kütleyi GeV ya da eV ile verir; 1 eV'lik kütle 1,783×10⁻³⁶ kg'dır (NIST). Proton ≈ 0,94 GeV." },
-    { "ad": "Parçacık akısı", "ifade": "Φ = n × v", "aciklama": "n birim hacimdeki parçacık sayısı (bölü cm³), v hız (cm/s), Φ bir santimetrekareden saniyede geçen parçacık sayısı. Yerel karanlık madde için n = yoğunluk ÷ parçacık kütlesi." },
-    { "ad": "Aksiyonun dönüştüğü fotonun frekansı", "ifade": "f = m c² ÷ h", "aciklama": "m aksiyon kütlesi (eV cinsinden kütle enerjisi), h Planck sabiti = 4,1357×10⁻¹⁵ eV·s, f hertz. 1 μeV ≈ 242 MHz; ADMX kovuğu bu frekansa ayarlanır." },
-    { "ad": "Schwarzschild yarıçapı", "ifade": "r = 2 G M ÷ c²", "aciklama": "G = 6,674×10⁻¹¹ m³/(kg·s²), M kütle (kg), c = 2,998×10⁸ m/s, r metre. Güneş kütlesi için ≈ 2,95 km; kütleyle doğru orantılı (d16)." },
-    { "ad": "Derin MOND ve baryonik Tully–Fisher", "ifade": "v⁴ = G × M × a0", "aciklama": "v düz dönme eğrisinin hızı (m/s), M galaksideki görünen (baryonik) kütle (kg), a0 ≈ 1,2×10⁻¹⁰ m/s². Yalnızca ivmenin a0'dan çok küçük olduğu dış bölgelerde geçerli MOND öngörüsü." },
-    { "ad": "Nötrino tabanında duyarlılık", "ifade": "duyarlılık ∝ √(maruziyet)", "aciklama": "Maruziyet = dedektör kütlesi × çalışma süresi (ton yıl). Nötrino arka planı baskın olunca duyarlılık en iyi durumda maruziyetin karekökü kadar artar: iki kat duyarlılık için dört kat maruziyet." },
-    { "ad": "Karanlık madde halesinin yoğunluk profili", "ifade": "ρ ∝ r^(−γ)", "aciklama": "ρ yoğunluk, r merkeze uzaklık. Yalnız karanlık madde benzetimleri merkezde γ ≈ 0,8–1,4 (sivri merkez), birçok cüce galaksi gözlemi γ ≈ 0–0,5 (çekirdek) verir." }
+    {
+      "ad": "Kütleyi enerji birimiyle anmak",
+      "ifade": "m = E ÷ c²;  1 GeV/c² ≈ 1,783×10⁻²⁷ kg",
+      "aciklama": "E enerji (elektronvolt ya da joule), c ışık hızı. Parçacık fizikçileri kütleyi GeV ya da eV ile verir; 1 eV'lik kütle 1,783×10⁻³⁶ kg'dır (NIST). Proton ≈ 0,94 GeV."
+    },
+    {
+      "ad": "Parçacık akısı",
+      "ifade": "Φ = n × v",
+      "aciklama": "n birim hacimdeki parçacık sayısı (bölü cm³), v hız (cm/s), Φ bir santimetrekareden saniyede geçen parçacık sayısı. Yerel karanlık madde için n = yoğunluk ÷ parçacık kütlesi."
+    },
+    {
+      "ad": "Aksiyonun dönüştüğü fotonun frekansı",
+      "ifade": "f = m c² ÷ h",
+      "aciklama": "m aksiyon kütlesi (eV cinsinden kütle enerjisi), h Planck sabiti = 4,1357×10⁻¹⁵ eV·s, f hertz. 1 μeV ≈ 242 MHz; ADMX kovuğu bu frekansa ayarlanır."
+    },
+    {
+      "ad": "Schwarzschild yarıçapı",
+      "ifade": "r = 2 G M ÷ c²",
+      "aciklama": "G = 6,674×10⁻¹¹ m³/(kg·s²), M kütle (kg), c = 2,998×10⁸ m/s, r metre. Güneş kütlesi için ≈ 2,95 km; kütleyle doğru orantılı (d16)."
+    },
+    {
+      "ad": "Derin MOND ve baryonik Tully–Fisher",
+      "ifade": "v⁴ = G × M × a0",
+      "aciklama": "v düz dönme eğrisinin hızı (m/s), M galaksideki görünen (baryonik) kütle (kg), a0 ≈ 1,2×10⁻¹⁰ m/s². Yalnızca ivmenin a0'dan çok küçük olduğu dış bölgelerde geçerli MOND öngörüsü."
+    },
+    {
+      "ad": "Nötrino tabanında duyarlılık",
+      "ifade": "duyarlılık ∝ √(maruziyet)",
+      "aciklama": "Maruziyet = dedektör kütlesi × çalışma süresi (ton yıl). Nötrino arka planı baskın olunca duyarlılık en iyi durumda maruziyetin karekökü kadar artar: iki kat duyarlılık için dört kat maruziyet."
+    },
+    {
+      "ad": "Karanlık madde halesinin yoğunluk profili",
+      "ifade": "ρ ∝ r^(−γ)",
+      "aciklama": "ρ yoğunluk, r merkeze uzaklık. Yalnız karanlık madde benzetimleri merkezde γ ≈ 0,8–1,4 (sivri merkez), birçok cüce galaksi gözlemi γ ≈ 0–0,5 (çekirdek) verir."
+    }
   ],
   "anahtar_sayilar": [
-    { "deger": "0,4–0,6 GeV/cm³ (yerel); 0,3–0,5 GeV/cm³ (küresel)", "aciklama": "Güneş'in çevresindeki karanlık madde yoğunluğu (de Salas ve Widmark 2020)", "kaynak_url": "https://arxiv.org/abs/2012.11477" },
-    { "deger": "2,2×10⁻⁴⁸ cm² (40 GeV); 4,2 ton yıl; 280 gün", "aciklama": "LZ'nin WIMP-nükleon etkileşme kesiti için en güçlü sınırı (PRL 2025)", "kaynak_url": "https://www.arxiv.org/abs/2410.17036" },
-    { "deger": "1,7×10⁻⁴⁷ cm² (30 GeV); 3,1 ton yıl", "aciklama": "XENONnT'nin ilk iki bilim turundan WIMP sınırı", "kaynak_url": "https://arxiv.org/abs/2502.18005v1" },
-    { "deger": "4,5 sigma; 19 olay; 417 gün", "aciklama": "LZ'nin Güneş'ten gelen bor-8 nötrinolarını görmesi (Aralık 2025)", "kaynak_url": "https://www.thebrighterside.news/post/lz-detector-marks-a-new-era-in-the-search-for-light-dark-matter-and-neutrinos" },
-    { "deger": "≈ 3×10⁻²⁶ cm³/s; ≈ 100 GeV", "aciklama": "WIMP mucizesi: doğru kalıntı miktarı için gereken yok olma hızı ve buna uyan kütle", "kaynak_url": "https://en.wikipedia.org/wiki/Weakly_interacting_massive_particle" },
-    { "deger": "1977; 1978; 1983", "aciklama": "Peccei–Quinn düzeneği; Weinberg ve Wilczek'in aksiyonu; Sikivie'nin haloskop yöntemi", "kaynak_url": "https://en.wikipedia.org/wiki/Axion" },
-    { "deger": "1,10–1,31 GHz ≈ 4,54–5,41 μeV; 7,6 T", "aciklama": "ADMX'in 2023–2024 turunda KSVZ aksiyonlarını dışladığı aralık ve mıknatıs alanı", "kaynak_url": "https://arxiv.org/html/2504.07279v2" },
-    { "deger": "3,55 keV; 73 küme; 7,1 keV", "aciklama": "Bulbul ve arkadaşlarının 2014 çizgisi ve steril nötrino yorumu", "kaynak_url": "https://www.arxiv.org/abs/1402.2301" },
-    { "deger": "10⁻¹⁷–10⁻¹⁰ M☉", "aciklama": "İlkel kara deliklerin karanlık maddenin tamamı olabileceği tek açık pencere (asteroit kütleleri)", "kaynak_url": "https://arxiv.org/pdf/2601.06024" },
-    { "deger": "> 3,3 keV (2013); > 4,35 keV (2015)", "aciklama": "Lyman-alfa ormanından ılık karanlık madde parçacığının kütle alt sınırı", "kaynak_url": "https://arxiv.org/abs/1306.2314" },
-    { "deger": "≈ 50 uydu; binlerce alt hale", "aciklama": "Samanyolu'nun bilinen uydu galaksileri ve benzetimlerin öngördüğü alt haleler", "kaynak_url": "https://ned.ipac.caltech.edu/level5/Sept18/Bullock/Bullock2.html" },
-    { "deger": "1 Temmuz 2023; 29 Haziran 2026", "aciklama": "Euclid'in fırlatılışı ve Rubin'in on yıllık LSST taramasının başlangıcı", "kaynak_url": "https://m.esa.int/Newsroom/Press_Releases/ESA_s_Euclid_lifts_off_on_quest_to_unravel_the_cosmic_mystery_of_dark_matter_and_dark_energy" }
+    {
+      "deger": "0,4–0,6 GeV/cm³ (yerel); 0,3–0,5 GeV/cm³ (küresel)",
+      "aciklama": "Güneş'in çevresindeki karanlık madde yoğunluğu (de Salas ve Widmark 2020)",
+      "kaynak_url": "https://arxiv.org/abs/2012.11477",
+      "kid": "d50n0"
+    },
+    {
+      "deger": "2,2×10⁻⁴⁸ cm² (40 GeV); 4,2 ton yıl; 280 gün",
+      "aciklama": "LZ'nin WIMP-nükleon etkileşme kesiti için en güçlü sınırı (PRL 2025)",
+      "kaynak_url": "https://www.arxiv.org/abs/2410.17036",
+      "kid": "d50n1"
+    },
+    {
+      "deger": "1,7×10⁻⁴⁷ cm² (30 GeV); 3,1 ton yıl",
+      "aciklama": "XENONnT'nin ilk iki bilim turundan WIMP sınırı",
+      "kaynak_url": "https://arxiv.org/abs/2502.18005v1",
+      "kid": "d50n2"
+    },
+    {
+      "deger": "4,5 sigma; 19 olay; 417 gün",
+      "aciklama": "LZ'nin Güneş'ten gelen bor-8 nötrinolarını görmesi (Aralık 2025)",
+      "kaynak_url": "https://www.thebrighterside.news/post/lz-detector-marks-a-new-era-in-the-search-for-light-dark-matter-and-neutrinos",
+      "kid": "d50n3"
+    },
+    {
+      "deger": "≈ 3×10⁻²⁶ cm³/s; ≈ 100 GeV",
+      "aciklama": "WIMP mucizesi: doğru kalıntı miktarı için gereken yok olma hızı ve buna uyan kütle",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Weakly_interacting_massive_particle",
+      "kid": "d50n4"
+    },
+    {
+      "deger": "1977; 1978; 1983",
+      "aciklama": "Peccei–Quinn düzeneği; Weinberg ve Wilczek'in aksiyonu; Sikivie'nin haloskop yöntemi",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Axion",
+      "kid": "d50n5"
+    },
+    {
+      "deger": "1,10–1,31 GHz ≈ 4,54–5,41 μeV; 7,6 T",
+      "aciklama": "ADMX'in 2023–2024 turunda KSVZ aksiyonlarını dışladığı aralık ve mıknatıs alanı",
+      "kaynak_url": "https://arxiv.org/html/2504.07279v2",
+      "kid": "d50n6"
+    },
+    {
+      "deger": "3,55 keV; 73 küme; 7,1 keV",
+      "aciklama": "Bulbul ve arkadaşlarının 2014 çizgisi ve steril nötrino yorumu",
+      "kaynak_url": "https://www.arxiv.org/abs/1402.2301",
+      "kid": "d50n7"
+    },
+    {
+      "deger": "10⁻¹⁷–10⁻¹⁰ M☉",
+      "aciklama": "İlkel kara deliklerin karanlık maddenin tamamı olabileceği tek açık pencere (asteroit kütleleri)",
+      "kaynak_url": "https://arxiv.org/pdf/2601.06024",
+      "kid": "d50n8"
+    },
+    {
+      "deger": "> 3,3 keV (2013); > 4,35 keV (2015)",
+      "aciklama": "Lyman-alfa ormanından ılık karanlık madde parçacığının kütle alt sınırı",
+      "kaynak_url": "https://arxiv.org/abs/1306.2314",
+      "kid": "d50n9"
+    },
+    {
+      "deger": "≈ 50 uydu; binlerce alt hale",
+      "aciklama": "Samanyolu'nun bilinen uydu galaksileri ve benzetimlerin öngördüğü alt haleler",
+      "kaynak_url": "https://ned.ipac.caltech.edu/level5/Sept18/Bullock/Bullock2.html",
+      "kid": "d50n10"
+    },
+    {
+      "deger": "1 Temmuz 2023; 29 Haziran 2026",
+      "aciklama": "Euclid'in fırlatılışı ve Rubin'in on yıllık LSST taramasının başlangıcı",
+      "kaynak_url": "https://m.esa.int/Newsroom/Press_Releases/ESA_s_Euclid_lifts_off_on_quest_to_unravel_the_cosmic_mystery_of_dark_matter_and_dark_energy",
+      "kid": "d50n11"
+    }
   ],
   "sozluk": [
-    { "terim": "kesinlik ölçeği", "tanim": "Bir bilimsel iddianın ne kadar sağlam olduğunu dört basamakla (gözlemle kesinleşmiş, güçlü kanıtlı ama açık sorulu, kuram ya da hipotez, spekülasyon) gösteren, bu ünitede kullanılan etiket sistemi." },
-    { "terim": "karanlık madde halesi", "tanim": "Bir galaksiyi saran, yıldız diskinden çok daha geniş ve kütlesinin büyük kısmını taşıyan görünmeyen karanlık madde bulutu." },
-    { "terim": "serbest akış", "tanim": "Hızlı karanlık madde parçacıklarının oluşmaya çalışan küçük yoğunluk topaklarından kaçıp onları dağıtması." },
-    { "terim": "sıcak karanlık madde", "tanim": "Yapılar oluşurken ışık hızına yakın hareket eden karanlık madde; hafif nötrinolar örnektir ve ana bileşen olamaz." },
-    { "terim": "soğuk karanlık madde", "tanim": "Yapı oluşumu sırasında hızı yok denecek kadar küçük olan, standart kozmoloji modelinin varsaydığı karanlık madde." },
-    { "terim": "ılık karanlık madde", "tanim": "Hızı sıcak ile soğuk arasında olan, büyük ölçekte soğuk gibi davranıp cüce galaksi ölçeğindeki yapıları bastıran karanlık madde." },
-    { "terim": "Lyman-alfa ormanı", "tanim": "Uzak bir kuasarın tayfında, ışığın yol üstündeki galaksilerarası hidrojenden geçerken bıraktığı sık soğurma çizgileri." },
-    { "terim": "WIMP", "tanim": "Zayıf etkileşen kütleli parçacık; kütleçekimi ve zayıf kuvvet düzeyinde ya da daha zayıf bir kuvvetle etkileştiği varsayılan karanlık madde adayı ailesi." },
-    { "terim": "WIMP mucizesi", "tanim": "Yaklaşık 100 GeV'lik, zayıf kuvvetle etkileşen bir parçacığın erken evrenden kalan miktarının bugünkü karanlık madde miktarına kendiliğinden uyması." },
-    { "terim": "doğrudan algılama", "tanim": "Karanlık madde parçacığının bir dedektördeki atom çekirdeğine çarpıp onu itmesini yakalamaya çalışan arama yöntemi." },
-    { "terim": "çekirdek geri tepmesi", "tanim": "Bir parçacığın çarpmasıyla atom çekirdeğinin itilmesi; ksenon dedektörlerinde küçük bir ışık ve yük sinyali üretir." },
-    { "terim": "etkileşme kesiti", "tanim": "İki parçacığın etkileşme olasılığını bir hedefin alanı gibi gösteren, santimetrekareyle ölçülen büyüklük." },
-    { "terim": "maruziyet", "tanim": "Bir dedektörün hedef kütlesi ile çalışma süresinin çarpımı; ton yıl birimiyle verilir." },
-    { "terim": "nötrino tabanı", "tanim": "Nötrinoların çekirdeklere çarpmasının karanlık madde sinyalini taklit ettiği, duyarlılığın yalnızca maruziyetin karekökü kadar arttığı bölge; nötrino sisi de denir." },
-    { "terim": "dolaylı algılama", "tanim": "Karanlık madde parçacıklarının yok olmasından ya da bozunmasından çıkabilecek gama ışınlarını, nötrinoları ya da kozmik ışınları arayan yöntem." },
-    { "terim": "aksiyon", "tanim": "Güçlü CP sorununu çözmek için önerilen, çok hafif varsayımsal parçacık; karanlık madde adayıdır." },
-    { "terim": "güçlü CP sorunu", "tanim": "Güçlü kuvvetin denklemlerinde madde ile karşıt maddeyi farklı gösterebilecek bir terimin neden neredeyse tam sıfır olduğu bulmacası." },
-    { "terim": "haloskop", "tanim": "Galaksinin halesinden geçen aksiyonları güçlü bir manyetik alanda fotona dönüştürüp yakalamaya çalışan dedektör; ADMX buna örnektir." },
-    { "terim": "steril nötrino", "tanim": "Yalnızca kütleçekimiyle etkileştiği, sıradan nötrinolarla az miktarda karışabildiği varsayılan nötrino türü." },
-    { "terim": "ilkel kara delik", "tanim": "Yıldız çöküşünden değil, evrenin ilk anlarındaki yoğun bölgelerin doğrudan çökmesinden oluştuğu varsayılan kara delik." },
-    { "terim": "kayıp uydular sorunu", "tanim": "Benzetimlerin Samanyolu çevresinde öngördüğü binlerce küçük alt haleye karşılık çok daha az uydu galaksi görülmesi." },
-    { "terim": "sivri merkez", "tanim": "Benzetimlerdeki karanlık madde halelerinde yoğunluğun merkeze doğru dik biçimde artması; gözlenen çekirdeklerle çelişir." },
-    { "terim": "baryonik Tully–Fisher ilişkisi", "tanim": "Bir galaksinin dönüş hızının dördüncü kuvvetinin, galaksideki görünen maddenin kütlesiyle orantılı olması." },
-    { "terim": "geniş çift yıldız", "tanim": "Birbirinden binlerce astronomik birim uzakta, çok küçük ivmelerle birbirinin çevresinde dolanan yıldız çifti; MOND sınavında kullanılır." },
-    { "terim": "kör analiz", "tanim": "Araştırmacıların bilinçsiz yanlılığı önlemek için çözümleme yöntemini sinyal bölgesine bakmadan ya da sahte sinyallerle gizlenmiş veriyle sabitlemesi." }
+    {
+      "terim": "kesinlik ölçeği",
+      "tanim": "Bir bilimsel iddianın ne kadar sağlam olduğunu dört basamakla (gözlemle kesinleşmiş, güçlü kanıtlı ama açık sorulu, kuram ya da hipotez, spekülasyon) gösteren, bu ünitede kullanılan etiket sistemi.",
+      "kid": "d50t0"
+    },
+    {
+      "terim": "karanlık madde halesi",
+      "tanim": "Bir galaksiyi saran, yıldız diskinden çok daha geniş ve kütlesinin büyük kısmını taşıyan görünmeyen karanlık madde bulutu.",
+      "kid": "d50t1"
+    },
+    {
+      "terim": "serbest akış",
+      "tanim": "Hızlı karanlık madde parçacıklarının oluşmaya çalışan küçük yoğunluk topaklarından kaçıp onları dağıtması.",
+      "kid": "d50t2"
+    },
+    {
+      "terim": "sıcak karanlık madde",
+      "tanim": "Yapılar oluşurken ışık hızına yakın hareket eden karanlık madde; hafif nötrinolar örnektir ve ana bileşen olamaz.",
+      "kid": "d50t3"
+    },
+    {
+      "terim": "soğuk karanlık madde",
+      "tanim": "Yapı oluşumu sırasında hızı yok denecek kadar küçük olan, standart kozmoloji modelinin varsaydığı karanlık madde.",
+      "kid": "d50t4"
+    },
+    {
+      "terim": "ılık karanlık madde",
+      "tanim": "Hızı sıcak ile soğuk arasında olan, büyük ölçekte soğuk gibi davranıp cüce galaksi ölçeğindeki yapıları bastıran karanlık madde.",
+      "kid": "d50t5"
+    },
+    {
+      "terim": "Lyman-alfa ormanı",
+      "tanim": "Uzak bir kuasarın tayfında, ışığın yol üstündeki galaksilerarası hidrojenden geçerken bıraktığı sık soğurma çizgileri.",
+      "kid": "d50t6"
+    },
+    {
+      "terim": "WIMP",
+      "tanim": "Zayıf etkileşen kütleli parçacık; kütleçekimi ve zayıf kuvvet düzeyinde ya da daha zayıf bir kuvvetle etkileştiği varsayılan karanlık madde adayı ailesi.",
+      "kid": "d50t7"
+    },
+    {
+      "terim": "WIMP mucizesi",
+      "tanim": "Yaklaşık 100 GeV'lik, zayıf kuvvetle etkileşen bir parçacığın erken evrenden kalan miktarının bugünkü karanlık madde miktarına kendiliğinden uyması.",
+      "kid": "d50t8"
+    },
+    {
+      "terim": "doğrudan algılama",
+      "tanim": "Karanlık madde parçacığının bir dedektördeki atom çekirdeğine çarpıp onu itmesini yakalamaya çalışan arama yöntemi.",
+      "kid": "d50t9"
+    },
+    {
+      "terim": "çekirdek geri tepmesi",
+      "tanim": "Bir parçacığın çarpmasıyla atom çekirdeğinin itilmesi; ksenon dedektörlerinde küçük bir ışık ve yük sinyali üretir.",
+      "kid": "d50t10"
+    },
+    {
+      "terim": "etkileşme kesiti",
+      "tanim": "İki parçacığın etkileşme olasılığını bir hedefin alanı gibi gösteren, santimetrekareyle ölçülen büyüklük.",
+      "kid": "d50t11"
+    },
+    {
+      "terim": "maruziyet",
+      "tanim": "Bir dedektörün hedef kütlesi ile çalışma süresinin çarpımı; ton yıl birimiyle verilir.",
+      "kid": "d50t12"
+    },
+    {
+      "terim": "nötrino tabanı",
+      "tanim": "Nötrinoların çekirdeklere çarpmasının karanlık madde sinyalini taklit ettiği, duyarlılığın yalnızca maruziyetin karekökü kadar arttığı bölge; nötrino sisi de denir.",
+      "kid": "d50t13"
+    },
+    {
+      "terim": "dolaylı algılama",
+      "tanim": "Karanlık madde parçacıklarının yok olmasından ya da bozunmasından çıkabilecek gama ışınlarını, nötrinoları ya da kozmik ışınları arayan yöntem.",
+      "kid": "d50t14"
+    },
+    {
+      "terim": "aksiyon",
+      "tanim": "Güçlü CP sorununu çözmek için önerilen, çok hafif varsayımsal parçacık; karanlık madde adayıdır.",
+      "kid": "d50t15"
+    },
+    {
+      "terim": "güçlü CP sorunu",
+      "tanim": "Güçlü kuvvetin denklemlerinde madde ile karşıt maddeyi farklı gösterebilecek bir terimin neden neredeyse tam sıfır olduğu bulmacası.",
+      "kid": "d50t16"
+    },
+    {
+      "terim": "haloskop",
+      "tanim": "Galaksinin halesinden geçen aksiyonları güçlü bir manyetik alanda fotona dönüştürüp yakalamaya çalışan dedektör; ADMX buna örnektir.",
+      "kid": "d50t17"
+    },
+    {
+      "terim": "steril nötrino",
+      "tanim": "Yalnızca kütleçekimiyle etkileştiği, sıradan nötrinolarla az miktarda karışabildiği varsayılan nötrino türü.",
+      "kid": "d50t18"
+    },
+    {
+      "terim": "ilkel kara delik",
+      "tanim": "Yıldız çöküşünden değil, evrenin ilk anlarındaki yoğun bölgelerin doğrudan çökmesinden oluştuğu varsayılan kara delik.",
+      "kid": "d50t19"
+    },
+    {
+      "terim": "kayıp uydular sorunu",
+      "tanim": "Benzetimlerin Samanyolu çevresinde öngördüğü binlerce küçük alt haleye karşılık çok daha az uydu galaksi görülmesi.",
+      "kid": "d50t20"
+    },
+    {
+      "terim": "sivri merkez",
+      "tanim": "Benzetimlerdeki karanlık madde halelerinde yoğunluğun merkeze doğru dik biçimde artması; gözlenen çekirdeklerle çelişir.",
+      "kid": "d50t21"
+    },
+    {
+      "terim": "baryonik Tully–Fisher ilişkisi",
+      "tanim": "Bir galaksinin dönüş hızının dördüncü kuvvetinin, galaksideki görünen maddenin kütlesiyle orantılı olması.",
+      "kid": "d50t22"
+    },
+    {
+      "terim": "geniş çift yıldız",
+      "tanim": "Birbirinden binlerce astronomik birim uzakta, çok küçük ivmelerle birbirinin çevresinde dolanan yıldız çifti; MOND sınavında kullanılır.",
+      "kid": "d50t23"
+    },
+    {
+      "terim": "kör analiz",
+      "tanim": "Araştırmacıların bilinçsiz yanlılığı önlemek için çözümleme yöntemini sinyal bölgesine bakmadan ya da sahte sinyallerle gizlenmiş veriyle sabitlemesi.",
+      "kid": "d50t24"
+    }
   ],
   "defter_notu": [
     "Kesinlik ölçeği: gözlemle kesinleşmiş → güçlü kanıtlı ama açık sorulu → kuram ya da hipotez → spekülasyon. Popülerlik kanıt değildir.",
@@ -241,45 +433,172 @@
     "Euclid (1 Temmuz 2023), Rubin LSST (29 Haziran 2026): karanlık maddenin mercek haritaları geliyor."
   ],
   "sorular": [
-    { "soru": "Kesinlik ölçeğinin dört basamağını sırayla say ve her birine bu dersten bir örnek ver.", "cevap": "Gözlemle kesinleşmiş: karanlık maddenin kütleçekim etkisi. Güçlü kanıtlı ama açık sorulu: bu etkinin görünmeyen, soğuk bir maddeden gelmesi. Kuram ya da hipotez: WIMP, aksiyon, steril nötrino, ilkel kara delik, MOND. Spekülasyon: bu derste bu basamağa konan bir karanlık madde fikri yok; ünitenin ilerisinde çoklu evrenin bazı türleri gibi örnekler var." },
-    { "soru": "Ünlü bir fizikçinin bir fikri savunması o fikri ölçekte yukarı taşır mı? Neden?", "cevap": "Hayır. Ölçekte yer değiştirmeyi yalnızca gözlem ve deney sağlar. Higgs bozonu 1964'te öngörüldü ama ancak 2012'de beş sigmayla bulununca gözlemle kesinleşmiş basamağa çıktı." },
-    { "soru": "Karanlık maddenin nötrinolardan oluşamamasının iki nedeni nedir?", "cevap": "Nötrinolar ışık hızına yakın hareket eden sıcak karanlık maddedir; galaksileri oluşturacak kadar erken topaklanamazlar ve erken evrendeki kuasarlarla çelişirler. Ayrıca Planck'a göre kütleleri toplamı 0,12 eV'den küçüktür; karanlık madde miktarı için çok azdır." },
-    { "soru": "Yerel karanlık madde yoğunluğu santimetreküpte 0,3 GeV ise ve karanlık madde 30 GeV'lik WIMP'lerden oluşuyorsa, bir litrede kaç WIMP vardır?", "cevap": "Santimetreküpte 0,3 ÷ 30 = 0,01 parçacık. Bir litre 1000 cm³ olduğundan 0,01 × 1000 = 10 WIMP. (Varsayıma dayalı bir hesap; WIMP'ler bulunmadı.)" },
-    { "soru": "WIMP mucizesi nedir ve neden “mucize” denmiştir?", "cevap": "Erken evrende oluşup yok olan bir parçacığın donmuş kalıntı miktarının bugünkü karanlık maddeye eşit olması için gereken yok olma hızı (≈ 3×10⁻²⁶ cm³/s), yaklaşık 100 GeV'lik, zayıf kuvvetle etkileşen bir parçacığın beklenen hızına kabaca eşittir. Parçacık fiziğinin zaten beklediği bir parçacığın kozmolojinin istediği miktarı kendiliğinden vermesi rastlantısal göründüğü için bu adı aldı." },
-    { "soru": "LZ ve XENONnT gibi dedektörler neden yerin altına kurulur ve verilerini neden “tuzlar”?", "cevap": "Yerin altında dedektör kozmik ışınlardan korunur; parçalar da radyasyonu azaltmak için çok temiz seçilir. Tuzlama (sahte WIMP sinyalleri karıştırma) ve kör analiz, araştırmacıların bulmak istedikleri şeyi gürültüde görmelerini, yani bilinçsiz yanlılığı önler." },
-    { "soru": "Nötrino tabanında bir deneyin duyarlılığını 3 kat artırmak için maruziyeti kaç kat büyütmek gerekir?", "cevap": "Duyarlılık maruziyetin karekökü kadar artar; 3 kat duyarlılık için 3² = 9 kat maruziyet gerekir." },
-    { "soru": "ADMX 2,0 GHz'de bir sinyal arıyor. Bu hangi aksiyon kütlesine karşılık gelir?", "cevap": "m c² = h × f = 4,1357×10⁻¹⁵ eV·s × 2,0×10⁹ Hz ≈ 8,3×10⁻⁶ eV, yani yaklaşık 8,3 μeV." },
-    { "soru": "3,5 keV çizgisinin hikâyesi hangi kesinlik basamağında duruyor ve neden?", "cevap": "Askıda, doğrulanmamış bir sinyal. 2014'te 73 kümede bulundu ama Hitomi Kahraman Kümesi'nde onu dışladı, XRISM 2025'te on kümede görmedi; yine de XRISM'in sınırı ilk iddiayı tam sınamak için yaklaşık 5 kat yetersiz. Ayrıca kükürt atomlarıyla ilgili sıradan bir açıklama da önerildi." },
-    { "soru": "İlkel kara deliklerin karanlık maddenin tamamı olabilmesi için hangi kütle penceresi kaldı ve bu pencere neden sıkışmıştır?", "cevap": "Güneş kütlesinin 10⁻¹⁷ ile 10⁻¹⁰ katı, yani asteroit kütleleri. Daha hafifler Hawking ışımasıyla buharlaşıp iz bırakırdı, daha ağırlar mikromercek taramalarında görülürdü; yıldız kütleliler de LIGO'nun birleşme hızıyla sınırlanır." },
-    { "soru": "Görünen kütlesi 10¹¹ Güneş kütlesi olan bir galaksinin dış bölgelerinde MOND'a göre dönüş hızı yaklaşık kaçtır?", "cevap": "v⁴ = G M a0 = 6,674×10⁻¹¹ × 1,988×10⁴¹ × 1,2×10⁻¹⁰ ≈ 1,59×10²¹. Dördüncü kök ≈ 2,0×10⁵ m/s, yani yaklaşık 200 km/s." },
-    { "soru": "MOND'un azınlıkta kalmasının ve buna rağmen tartışılmaya devam etmesinin birer nedenini yaz.", "cevap": "Azınlıkta: galaksi kümelerinde ve Mermi Kümesi'nde kütle açığı kalır, arka plan ışımasının desenlerini açıklamakta zorlanır, TeVeS gibi göreli sürümler GW170817'nin kütleçekim dalgası hızı ölçümüyle çelişir. Tartışılıyor: baryonik Tully–Fisher ilişkisini sade biçimde öngörür ve geniş çift yıldız testleri henüz çelişkili sonuçlar veriyor." },
-    { "soru": "Kayıp uydular sorunu nedir ve son yirmi yılda neden küçüldü?", "cevap": "Benzetimler Samanyolu halesinde binlerce alt hale öngörürken çok daha az uydu galaksi biliniyordu. SDSS ve DES gibi taramalar çok sönük cüceler buldu; bugün yaklaşık 50 uydu biliniyor ve yeniden iyonlaşmanın küçük alt halelerde yıldız oluşumunu bastırması gibi açıklamalar öneriliyor." }
+    {
+      "soru": "Kesinlik ölçeğinin dört basamağını sırayla say ve her birine bu dersten bir örnek ver.",
+      "cevap": "Gözlemle kesinleşmiş: karanlık maddenin kütleçekim etkisi. Güçlü kanıtlı ama açık sorulu: bu etkinin görünmeyen, soğuk bir maddeden gelmesi. Kuram ya da hipotez: WIMP, aksiyon, steril nötrino, ilkel kara delik, MOND. Spekülasyon: bu derste bu basamağa konan bir karanlık madde fikri yok; ünitenin ilerisinde çoklu evrenin bazı türleri gibi örnekler var.",
+      "kid": "d50s0"
+    },
+    {
+      "soru": "Ünlü bir fizikçinin bir fikri savunması o fikri ölçekte yukarı taşır mı? Neden?",
+      "cevap": "Hayır. Ölçekte yer değiştirmeyi yalnızca gözlem ve deney sağlar. Higgs bozonu 1964'te öngörüldü ama ancak 2012'de beş sigmayla bulununca gözlemle kesinleşmiş basamağa çıktı.",
+      "kid": "d50s1"
+    },
+    {
+      "soru": "Karanlık maddenin nötrinolardan oluşamamasının iki nedeni nedir?",
+      "cevap": "Nötrinolar ışık hızına yakın hareket eden sıcak karanlık maddedir; galaksileri oluşturacak kadar erken topaklanamazlar ve erken evrendeki kuasarlarla çelişirler. Ayrıca Planck'a göre kütleleri toplamı 0,12 eV'den küçüktür; karanlık madde miktarı için çok azdır.",
+      "kid": "d50s2"
+    },
+    {
+      "soru": "Yerel karanlık madde yoğunluğu santimetreküpte 0,3 GeV ise ve karanlık madde 30 GeV'lik WIMP'lerden oluşuyorsa, bir litrede kaç WIMP vardır?",
+      "cevap": "Santimetreküpte 0,3 ÷ 30 = 0,01 parçacık. Bir litre 1000 cm³ olduğundan 0,01 × 1000 = 10 WIMP. (Varsayıma dayalı bir hesap; WIMP'ler bulunmadı.)",
+      "kid": "d50s3"
+    },
+    {
+      "soru": "WIMP mucizesi nedir ve neden “mucize” denmiştir?",
+      "cevap": "Erken evrende oluşup yok olan bir parçacığın donmuş kalıntı miktarının bugünkü karanlık maddeye eşit olması için gereken yok olma hızı (≈ 3×10⁻²⁶ cm³/s), yaklaşık 100 GeV'lik, zayıf kuvvetle etkileşen bir parçacığın beklenen hızına kabaca eşittir. Parçacık fiziğinin zaten beklediği bir parçacığın kozmolojinin istediği miktarı kendiliğinden vermesi rastlantısal göründüğü için bu adı aldı.",
+      "kid": "d50s4"
+    },
+    {
+      "soru": "LZ ve XENONnT gibi dedektörler neden yerin altına kurulur ve verilerini neden “tuzlar”?",
+      "cevap": "Yerin altında dedektör kozmik ışınlardan korunur; parçalar da radyasyonu azaltmak için çok temiz seçilir. Tuzlama (sahte WIMP sinyalleri karıştırma) ve kör analiz, araştırmacıların bulmak istedikleri şeyi gürültüde görmelerini, yani bilinçsiz yanlılığı önler.",
+      "kid": "d50s5"
+    },
+    {
+      "soru": "Nötrino tabanında bir deneyin duyarlılığını 3 kat artırmak için maruziyeti kaç kat büyütmek gerekir?",
+      "cevap": "Duyarlılık maruziyetin karekökü kadar artar; 3 kat duyarlılık için 3² = 9 kat maruziyet gerekir.",
+      "kid": "d50s6"
+    },
+    {
+      "soru": "ADMX 2,0 GHz'de bir sinyal arıyor. Bu hangi aksiyon kütlesine karşılık gelir?",
+      "cevap": "m c² = h × f = 4,1357×10⁻¹⁵ eV·s × 2,0×10⁹ Hz ≈ 8,3×10⁻⁶ eV, yani yaklaşık 8,3 μeV.",
+      "kid": "d50s7"
+    },
+    {
+      "soru": "3,5 keV çizgisinin hikâyesi hangi kesinlik basamağında duruyor ve neden?",
+      "cevap": "Askıda, doğrulanmamış bir sinyal. 2014'te 73 kümede bulundu ama Hitomi Kahraman Kümesi'nde onu dışladı, XRISM 2025'te on kümede görmedi; yine de XRISM'in sınırı ilk iddiayı tam sınamak için yaklaşık 5 kat yetersiz. Ayrıca kükürt atomlarıyla ilgili sıradan bir açıklama da önerildi.",
+      "kid": "d50s8"
+    },
+    {
+      "soru": "İlkel kara deliklerin karanlık maddenin tamamı olabilmesi için hangi kütle penceresi kaldı ve bu pencere neden sıkışmıştır?",
+      "cevap": "Güneş kütlesinin 10⁻¹⁷ ile 10⁻¹⁰ katı, yani asteroit kütleleri. Daha hafifler Hawking ışımasıyla buharlaşıp iz bırakırdı, daha ağırlar mikromercek taramalarında görülürdü; yıldız kütleliler de LIGO'nun birleşme hızıyla sınırlanır.",
+      "kid": "d50s9"
+    },
+    {
+      "soru": "Görünen kütlesi 10¹¹ Güneş kütlesi olan bir galaksinin dış bölgelerinde MOND'a göre dönüş hızı yaklaşık kaçtır?",
+      "cevap": "v⁴ = G M a0 = 6,674×10⁻¹¹ × 1,988×10⁴¹ × 1,2×10⁻¹⁰ ≈ 1,59×10²¹. Dördüncü kök ≈ 2,0×10⁵ m/s, yani yaklaşık 200 km/s.",
+      "kid": "d50s10"
+    },
+    {
+      "soru": "MOND'un azınlıkta kalmasının ve buna rağmen tartışılmaya devam etmesinin birer nedenini yaz.",
+      "cevap": "Azınlıkta: galaksi kümelerinde ve Mermi Kümesi'nde kütle açığı kalır, arka plan ışımasının desenlerini açıklamakta zorlanır, TeVeS gibi göreli sürümler GW170817'nin kütleçekim dalgası hızı ölçümüyle çelişir. Tartışılıyor: baryonik Tully–Fisher ilişkisini sade biçimde öngörür ve geniş çift yıldız testleri henüz çelişkili sonuçlar veriyor.",
+      "kid": "d50s11"
+    },
+    {
+      "soru": "Kayıp uydular sorunu nedir ve son yirmi yılda neden küçüldü?",
+      "cevap": "Benzetimler Samanyolu halesinde binlerce alt hale öngörürken çok daha az uydu galaksi biliniyordu. SDSS ve DES gibi taramalar çok sönük cüceler buldu; bugün yaklaşık 50 uydu biliniyor ve yeniden iyonlaşmanın küçük alt halelerde yıldız oluşumunu bastırması gibi açıklamalar öneriliyor.",
+      "kid": "d50s12"
+    }
   ],
   "kaynaklar": [
-    { "ad": "de Salas ve Widmark (2020): Dark matter local density determination", "url": "https://arxiv.org/abs/2012.11477" },
-    { "ad": "LZ İşbirliği: Dark Matter Search Results from 4.2 Tonne-Years of Exposure (PRL 135, 011802)", "url": "https://www.arxiv.org/abs/2410.17036" },
-    { "ad": "Brookhaven Ulusal Laboratuvarı: LZ Experiment Sets New Record in Search for Dark Matter (2024)", "url": "https://www.bnl.gov/newsroom/news.php?a=122051" },
-    { "ad": "The Brighter Side: LZ detector marks a new era in the search for light dark matter and neutrinos (Aralık 2025)", "url": "https://www.thebrighterside.news/post/lz-detector-marks-a-new-era-in-the-search-for-light-dark-matter-and-neutrinos" },
-    { "ad": "XENON İşbirliği: WIMP Dark Matter Search using a 3.1 Tonne-Year Exposure of XENONnT", "url": "https://arxiv.org/abs/2502.18005v1" },
-    { "ad": "Zürih Üniversitesi: XENONnT WIMP makalesi duyurusu (Kasım 2025)", "url": "https://www.physik.uzh.ch/en/groups/baudis/News/2025/XENONnT_SR0SR1WIMPpaper.html" },
-    { "ad": "Wikipedia: Weakly interacting massive particle", "url": "https://en.wikipedia.org/wiki/Weakly_interacting_massive_particle" },
-    { "ad": "Wikipedia: Axion", "url": "https://en.wikipedia.org/wiki/Axion" },
-    { "ad": "ADMX İşbirliği: Search for Axion Dark Matter from 1.1 to 1.3 GHz with ADMX (2025)", "url": "https://arxiv.org/html/2504.07279v2" },
-    { "ad": "Science News: Physicists have narrowed the mass range for hypothetical dark matter axions (2020)", "url": "https://www.sciencenews.org/article/physicists-have-narrowed-the-mass-range-for-hypothetical-dark-matter-axions" },
-    { "ad": "Bulbul ve ark. (2014): Detection of an Unidentified Emission Line in the Stacked X-ray Spectrum of Galaxy Clusters", "url": "https://www.arxiv.org/abs/1402.2301" },
-    { "ad": "XRISM İşbirliği (2025): XRISM constraints on unidentified X-ray emission lines, including the 3.5 keV line", "url": "https://arxiv.org/pdf/2510.24560" },
-    { "ad": "Wikipedia: Sterile neutrino", "url": "https://en.wikipedia.org/wiki/Sterile_neutrino" },
-    { "ad": "Carr ve ark. (2026): Primordial black holes: constraints, potential evidence and prospects", "url": "https://arxiv.org/pdf/2601.06024" },
-    { "ad": "Bullock ve Boylan-Kolchin (2017): Small-Scale Challenges to the ΛCDM Paradigm", "url": "https://ned.ipac.caltech.edu/level5/Sept18/Bullock/Bullock2.html" },
-    { "ad": "Viel ve ark. (2013): Warm Dark Matter as a solution to the small scale crisis", "url": "https://arxiv.org/abs/1306.2314" },
-    { "ad": "Baur ve ark. (2015): Lyman-alpha Forests cool Warm Dark Matter", "url": "https://www.arxiv.org/pdf/1512.01981v1" },
-    { "ad": "Wikipedia: Modified Newtonian dynamics", "url": "https://en.wikipedia.org/wiki/Modified_Newtonian_dynamics" },
-    { "ad": "Saad ve Ting: High-Precision Differential Radial Velocities of C3PO Wide Binaries: A Test of MOND", "url": "https://arxiv.org/pdf/2512.19652" },
-    { "ad": "APS Physics (Schmidt): GW170817 ve karanlık enerji kuramları", "url": "https://physics.aps.org/articles/v10/134" },
-    { "ad": "ESA: Euclid lifts off on quest to unravel the cosmic mystery of dark matter and dark energy (2023)", "url": "https://m.esa.int/Newsroom/Press_Releases/ESA_s_Euclid_lifts_off_on_quest_to_unravel_the_cosmic_mystery_of_dark_matter_and_dark_energy" },
-    { "ad": "ESA Euclid: DR1 Timeline", "url": "https://www.cosmos.esa.int/web/euclid/dr1-timeline" },
-    { "ad": "LAPP/CNRS: Vera C. Rubin Observatory begins the largest cosmic film ever made (Temmuz 2026)", "url": "https://www.lapp.in2p3.fr/en/2026-07-science-en-10092" },
-    { "ad": "NIST CODATA sabitleri", "url": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt" },
-    { "ad": "NASA: Dark Matter & Dark Energy", "url": "https://science.nasa.gov/universe/dark-matter-dark-energy/" }
+    {
+      "ad": "de Salas ve Widmark (2020): Dark matter local density determination",
+      "url": "https://arxiv.org/abs/2012.11477"
+    },
+    {
+      "ad": "LZ İşbirliği: Dark Matter Search Results from 4.2 Tonne-Years of Exposure (PRL 135, 011802)",
+      "url": "https://www.arxiv.org/abs/2410.17036"
+    },
+    {
+      "ad": "Brookhaven Ulusal Laboratuvarı: LZ Experiment Sets New Record in Search for Dark Matter (2024)",
+      "url": "https://www.bnl.gov/newsroom/news.php?a=122051"
+    },
+    {
+      "ad": "The Brighter Side: LZ detector marks a new era in the search for light dark matter and neutrinos (Aralık 2025)",
+      "url": "https://www.thebrighterside.news/post/lz-detector-marks-a-new-era-in-the-search-for-light-dark-matter-and-neutrinos"
+    },
+    {
+      "ad": "XENON İşbirliği: WIMP Dark Matter Search using a 3.1 Tonne-Year Exposure of XENONnT",
+      "url": "https://arxiv.org/abs/2502.18005v1"
+    },
+    {
+      "ad": "Zürih Üniversitesi: XENONnT WIMP makalesi duyurusu (Kasım 2025)",
+      "url": "https://www.physik.uzh.ch/en/groups/baudis/News/2025/XENONnT_SR0SR1WIMPpaper.html"
+    },
+    {
+      "ad": "Wikipedia: Weakly interacting massive particle",
+      "url": "https://en.wikipedia.org/wiki/Weakly_interacting_massive_particle"
+    },
+    {
+      "ad": "Wikipedia: Axion",
+      "url": "https://en.wikipedia.org/wiki/Axion"
+    },
+    {
+      "ad": "ADMX İşbirliği: Search for Axion Dark Matter from 1.1 to 1.3 GHz with ADMX (2025)",
+      "url": "https://arxiv.org/html/2504.07279v2"
+    },
+    {
+      "ad": "Science News: Physicists have narrowed the mass range for hypothetical dark matter axions (2020)",
+      "url": "https://www.sciencenews.org/article/physicists-have-narrowed-the-mass-range-for-hypothetical-dark-matter-axions"
+    },
+    {
+      "ad": "Bulbul ve ark. (2014): Detection of an Unidentified Emission Line in the Stacked X-ray Spectrum of Galaxy Clusters",
+      "url": "https://www.arxiv.org/abs/1402.2301"
+    },
+    {
+      "ad": "XRISM İşbirliği (2025): XRISM constraints on unidentified X-ray emission lines, including the 3.5 keV line",
+      "url": "https://arxiv.org/pdf/2510.24560"
+    },
+    {
+      "ad": "Wikipedia: Sterile neutrino",
+      "url": "https://en.wikipedia.org/wiki/Sterile_neutrino"
+    },
+    {
+      "ad": "Carr ve ark. (2026): Primordial black holes: constraints, potential evidence and prospects",
+      "url": "https://arxiv.org/pdf/2601.06024"
+    },
+    {
+      "ad": "Bullock ve Boylan-Kolchin (2017): Small-Scale Challenges to the ΛCDM Paradigm",
+      "url": "https://ned.ipac.caltech.edu/level5/Sept18/Bullock/Bullock2.html"
+    },
+    {
+      "ad": "Viel ve ark. (2013): Warm Dark Matter as a solution to the small scale crisis",
+      "url": "https://arxiv.org/abs/1306.2314"
+    },
+    {
+      "ad": "Baur ve ark. (2015): Lyman-alpha Forests cool Warm Dark Matter",
+      "url": "https://www.arxiv.org/pdf/1512.01981v1"
+    },
+    {
+      "ad": "Wikipedia: Modified Newtonian dynamics",
+      "url": "https://en.wikipedia.org/wiki/Modified_Newtonian_dynamics"
+    },
+    {
+      "ad": "Saad ve Ting: High-Precision Differential Radial Velocities of C3PO Wide Binaries: A Test of MOND",
+      "url": "https://arxiv.org/pdf/2512.19652"
+    },
+    {
+      "ad": "APS Physics (Schmidt): GW170817 ve karanlık enerji kuramları",
+      "url": "https://physics.aps.org/articles/v10/134"
+    },
+    {
+      "ad": "ESA: Euclid lifts off on quest to unravel the cosmic mystery of dark matter and dark energy (2023)",
+      "url": "https://m.esa.int/Newsroom/Press_Releases/ESA_s_Euclid_lifts_off_on_quest_to_unravel_the_cosmic_mystery_of_dark_matter_and_dark_energy"
+    },
+    {
+      "ad": "ESA Euclid: DR1 Timeline",
+      "url": "https://www.cosmos.esa.int/web/euclid/dr1-timeline"
+    },
+    {
+      "ad": "LAPP/CNRS: Vera C. Rubin Observatory begins the largest cosmic film ever made (Temmuz 2026)",
+      "url": "https://www.lapp.in2p3.fr/en/2026-07-science-en-10092"
+    },
+    {
+      "ad": "NIST CODATA sabitleri",
+      "url": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt"
+    },
+    {
+      "ad": "NASA: Dark Matter & Dark Energy",
+      "url": "https://science.nasa.gov/universe/dark-matter-dark-energy/"
+    }
   ]
 }

@@ -15,12 +15,12 @@ Biçim: iddia | kaynak URL | kaynaktaki ifade (kısa alıntı ya da değer). "(W
 | İddia | Kaynak URL | Kaynaktaki ifade |
 |---|---|---|
 | IAU 24 Ağustos 2006 Prag, üç koşul | https://iauarchive.eso.org/news/pressreleases/detail/iau0603/ | (d19) Resolution 5A; (a) orbit around the Sun, (b) nearly round shape, (c) cleared the neighbourhood |
-| 16 Ağustos 2006 taslağı: Ceres, Charon, Eris gezegen olacaktı; ~12 aday daha | https://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq.ipfs.4everland.io/wiki/Plutoed.html | draft "would have led to three celestial bodies being recognized as planets": Ceres, Charon, Eris; "a further twelve bodies" possible candidates (WebFetch özeti) |
+| 16 Ağustos 2006 taslağı: Ceres, Charon, Eris gezegen olacaktı; ~12 aday daha | https://en.wikipedia.org/wiki/Plutoed | draft "would have led to three celestial bodies being recognized as planets": Ceres, Charon, Eris; "a further twelve bodies" possible candidates (WebFetch özeti) |
 | 6A: Plüton cüce gezegen, Neptün ötesi cisimlerin yeni sınıfının ilk örneği | https://iauarchive.eso.org/news/pressreleases/detail/iau0603/ | (d19) Resolution 6A |
-| Soter ölçütü: cismin kütlesi / bölgeyi paylaşan öteki cisimlerin toplam kütlesi; 100'ü aşan cisim gezegen | https://cavac.at/cavacopedia/Clearing_the_neighbourhood | "Soter's discriminant µ" ; "regarded as a planet if µ > 100" (WebFetch özeti; özet harf eşlemesini karıştırdı, derste oran yönü tanımın amacına göre yazıldı) |
-| Oylama son gün; 424 astronom iddiası; ~9.000 üye; %5'ten az | https://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq.ipfs.4everland.io/wiki/Plutoed.html | "only 424 astronomers were present for the vote" (iddia olarak); "9000-strong"; vote taken on the final day (WebFetch özeti) |
+| Soter ölçütü: cismin kütlesi / bölgeyi paylaşan öteki cisimlerin toplam kütlesi; 100'ü aşan cisim gezegen | https://en.wikipedia.org/wiki/Clearing_the_neighbourhood | "Soter's discriminant µ" ; "regarded as a planet if µ > 100" (WebFetch özeti; özet harf eşlemesini karıştırdı, derste oran yönü tanımın amacına göre yazıldı) |
+| Oylama son gün; 424 astronom iddiası; ~9.000 üye; %5'ten az | https://en.wikipedia.org/wiki/Plutoed | "only 424 astronomers were present for the vote" (iddia olarak); "9000-strong"; vote taken on the final day (WebFetch özeti) |
 | Dilekçe; Stern imzacılar arasında; tanım konuma bağlı; Dünya Jüpiter–Satürn arasında gezegen sayılmazdı; 150 AB ötesinde Neptün boyutu cisim de | https://blogs.nature.com/blog/after-the-iau-its-not-over-yet/ | 12 signatories incl. Mark Sykes, S. Alan Stern; "An Earth orbiting between Jupiter's and Saturn's orbits could not be a planet"; "A Neptune-sized object beyond 150 AU could not be a planet" (WebFetch özeti) |
-| Stern: Dünya, Mars, Jüpiter, Neptün bölgelerini tam temizlemedi; karşı görüş: kütleçekimiyle hâkimler | https://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq.ipfs.4everland.io/wiki/Plutoed.html | Stern argued Earth, Mars, Jupiter, Neptune have not fully cleared; others: major planets dominate orbital zones (WebFetch özeti) |
+| Stern: Dünya, Mars, Jüpiter, Neptün bölgelerini tam temizlemedi; karşı görüş: kütleçekimiyle hâkimler | https://en.wikipedia.org/wiki/Plutoed | Stern argued Earth, Mars, Jupiter, Neptune have not fully cleared; others: major planets dominate orbital zones (WebFetch özeti) |
 | Plütoid, 11 Haziran 2008; Plüton, Haumea, Makemake, Eris | aynı | "On June 11, 2008, the IAU announced ... 'plutoids'" (WebFetch özeti) |
 
 ## Bölüm 2 — Plüton'un bulunuşu
@@ -107,12 +107,12 @@ Biçim: iddia | kaynak URL | kaynaktaki ifade (kısa alıntı ya da değer). "(W
 
 | İddia | Kaynak URL | Kaynaktaki ifade |
 |---|---|---|
-| Keşif 5 Ocak 2005 (Brown, Trujillo, Rabinowitz; Palomar 2003 verisi); duyuru 29 Temmuz 2005; 'Xena'; ad 13 Eylül 2006 | https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Eris_(dwarf_planet) | (WebFetch özeti) |
+| Keşif 5 Ocak 2005 (Brown, Trujillo, Rabinowitz; Palomar 2003 verisi); duyuru 29 Temmuz 2005; 'Xena'; ad 13 Eylül 2006 | https://en.wikipedia.org/wiki/Eris_(dwarf_planet) | (WebFetch özeti) |
 | Dysnomia 10 Eylül 2005 (Keck uyarlamalı optik); P 15,774 gün | aynı | (WebFetch özeti) |
 | Kütle 1,66 × 10²² kg | aynı | "1.66 × 10²² kg" |
 | %27 daha ağır (Caltech); Dysnomia'dan | https://thisis.caltech.edu/news/dwarf-planet-known-eris-more-massive-pluto-new-data-shows-1293 | (d19) 27 percent more massive |
 | Kasım 2010 örtülmesi, Sicardy, Nature; 2.326 ± 12 km; yoğunluk 2,52; albedo 0,96; Plüton atmosferi örtülmeyle doğrudan kenar ölçümünü engeller; kırağı açıklaması | https://m.phys.org/news/2011-10-faraway-eris-pluto-twin-dwarf.html | "2326 kilometres, with an accuracy of 12 kilometres"; "visible albedo of 0.96"; "2.52 grams per cm^3"; "nitrogen or methane atmosphere condensing as frost" |
-| Wikipedia yoğunluk 2,43; yüzey ~30–56 K; metan buzu Gemini Kuzey, 25 Ocak 2005 | https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Eris_(dwarf_planet) | (WebFetch özeti) |
+| Wikipedia yoğunluk 2,43; yüzey ~30–56 K; metan buzu Gemini Kuzey, 25 Ocak 2005 | https://en.wikipedia.org/wiki/Eris_(dwarf_planet) | (WebFetch özeti) |
 | a 67,864 AB; q 38,271; Q 97,457; i 44,04°; e 0,436; P 559,07 yıl | aynı | (WebFetch özeti) |
 | Dağınık diskin bilinen en büyük üyesi | https://science.nasa.gov/solar-system/kuiper-belt/facts/ | "Eris is the largest known member" (WebFetch özeti) |
 | Yoğunluk ≈ 2.519 kg/m³; Plüton'un 1,36 katı | (hesap) | — |
@@ -137,9 +137,9 @@ Biçim: iddia | kaynak URL | kaynaktaki ifade (kısa alıntı ya da değer). "(W
 |---|---|---|
 | 1801 Piazzi; 965 × 961 × 891 km; 9,393 × 10²⁰ kg; %39 | (d19) https://nssdc.gsfc.nasa.gov/planetary/factsheet/asteroidfact.html ; https://en.wikipedia.org/wiki/Asteroid_belt | d19 kaynak tablosu |
 | Dawn fırlatma 27 Eylül 2007; Ceres yörüngesi 6 Mart 2015 | https://science.nasa.gov/ceres | "Sept. 27, 2007"; "March 6, 2015" |
-| Görev sonu: NASA 1 Kasım 2018 duyurusu | https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Occator_(crater) | cited NASA article "NASA's Dawn Mission to Asteroid Belt Comes to End", 1 November 2018 (WebFetch özeti) |
+| Görev sonu: NASA 1 Kasım 2018 duyurusu | https://en.wikipedia.org/wiki/Occator_(crater) | cited NASA article "NASA's Dawn Mission to Asteroid Belt Comes to End", 1 November 2018 (WebFetch özeti) |
 | Dawn 3,5 yıldan uzun yörüngede | (hesap) | 6 Mart 2015 → 1 Kasım 2018 |
-| Occator 92 km, 4 km derin; Cerealia Facula, 3 km/340 m kubbe; Vinalia Faculae; Haziran 2016 çoğunlukla sodyum karbonat | https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Occator_(crater) | "92 kilometres"; "4 km"; "mostly sodium carbonate" (WebFetch özeti) |
+| Occator 92 km, 4 km derin; Cerealia Facula, 3 km/340 m kubbe; Vinalia Faculae; Haziran 2016 çoğunlukla sodyum karbonat | https://en.wikipedia.org/wiki/Occator_(crater) | "92 kilometres"; "4 km"; "mostly sodium carbonate" (WebFetch özeti) |
 | ~20 milyon yıl; tuzlar hidratlı → yakın zamanda; ~40 km derinde, yüzlerce mil genişlikte salamura; üç makale; Cerealia tuzlarının çoğu çarpmanın erittiği sığ katmandan; Raymond: çatlaklar derin rezervuara ulaşabilir | https://newatlas.com/space/reservoir-salty-water-found-ceres-dwarf-planet | "roughly 20 million years ago"; "25 miles (40 km) deep and hundreds of miles wide"; "the impact also created large fractures that could reach the deep, long-lived reservoir" |
 | Ahuna Mons 4 km yüksek, 17 km geniş; en yüksek dağ; sodyum karbonat | https://www.jpl.nasa.gov/images/pia21919-ahuna-mons | "2.5 miles (4 kilometers) high"; "11 miles (17 kilometers) wide" |
 | Karşı konum 7 Ocak 2027, +6,8 kadir, İkizler, δ +29°56', 1,6268 AB | https://hemel.waarnemen.com/planetoiden/2027-01__Ceres__oppositie.html | "7 januari 2027"; "+6.8m"; "Tweelingen"; "+29°56’14”"; "1.6268 AE" |

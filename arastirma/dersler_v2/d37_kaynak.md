@@ -58,7 +58,7 @@ Arama: d37 için 12 WebSearch (dilute core; GRS yaşı; GRS derinliği; manyetos
 ## Bölüm 4 — Kendi ısısı
 | [W] Güneş akısı 50,26 W/m²; kara cisim sıcaklığı 109,9 K; Bond albedosu 0,343 | jupiterfact.html | "Solar irradiance 50.26 W/m²; Black-body temperature 109.9 K; Bond albedo 0.343" |
 | [P] Güneş'ten aldığının ~2 katı enerji yayar | https://www.britannica.com/place/Jupiter-planet/The-interior | d9_kaynak: "radiate about twice as much energy as it receives from the Sun" |
-| [W] Kelvin-Helmholtz: soğuma iç basıncı düşürür, büzülme, ısınma | https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Kelvin%E2%80%93Helmholtz_mechanism | "The cooling causes the internal pressure to drop" |
+| [W] Kelvin-Helmholtz: soğuma iç basıncı düşürür, büzülme, ısınma | https://en.wikipedia.org/wiki/Kelvin%E2%80%93Helmholtz_mechanism | "The cooling causes the internal pressure to drop" |
 | [W] Büzülme 2 cm/yıl (Caltech, haber) | https://www.inkl.com/news/jupiter-is-shrinking-and-used-to-be-twice-as-big-mind-boggling-study-reveals | "currently shrinking by about 2 centimeters per year, according to Caltech" |
 | [W] AYRILIK: Irwin 2009: ~1 mm/yıl, iç ısı akısı 7,485 W/m²; 2 cm "açıkça fazla" | KH Wikipedia sayfası | "only 1 mm/year ... 7.485 W/m²"; "clearly too high" |
 | [W] Batygin–Adams (Nature Astronomy): bulutsu dağılınca 2–2,5 kat büyük; alan ~50 kat güçlü; Amalthea ve Thebe yörüngeleri | inkl haberi | "2 to 2.5 times the current size"; "about 50 times stronger than today"; "orbits of Jupiter's moons Amalthea and Thebe" — yayın yılı haberde yok, derse yazılmadı |

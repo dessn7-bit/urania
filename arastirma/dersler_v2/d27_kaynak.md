@@ -82,7 +82,7 @@ Not: "(d2/d8/d12/d24 doğrulanmış)" işaretli satırlar ilgili dersin kaynak t
 ## Bölüm 7 — de Broglie
 - de Broglie tezi 1924'te sunuldu, Ocak 1925'te yayımlandı ("Recherches sur la Théorie des Quanta") | https://arxiv.org/pdf/1606.00190 | "presented in early 1924"; "published in January 1925" (Davisson–Germer sayfası: "He proposed in 1924")
 - de Broglie 1929 Nobel "wave nature of electrons" | https://en.wikipedia.org/wiki/List_of_Nobel_laureates_in_Physics | gerekçe
-- Davisson ve Germer, Western Electric (sonra Bell Labs), 1923–27, nikel, hava sızıntısı, oksit, ısıtma → büyük tek kristal bölgeler | https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Davisson%E2%80%93Germer_experiment | "a 1923-27 experiment"; "a crystal of nickel metal"; oksit ve ısıtma anlatımı
+- Davisson ve Germer, Western Electric (sonra Bell Labs), 1923–27, nikel, hava sızıntısı, oksit, ısıtma → büyük tek kristal bölgeler | https://en.wikipedia.org/wiki/Davisson%E2%80%93Germer_experiment | "a 1923-27 experiment"; "a crystal of nickel metal"; oksit ve ısıtma anlatımı
 - 54 V / 54 eV, θ = 50°, öngörü 0,167 nm, ölçüm 0,165 nm | aynı | "54 eV"; "θ = 50°"; "0.167 nm"; "0.165 nm"
 - G.P. Thomson metal filmlerle bağımsız; 1937 Nobel paylaşıldı | aynı + Nobel listesi | "Davisson and Thomson shared the Nobel Prize in Physics in 1937"
 - Ayırma gücü dalga boyuyla sınırlı | d12 (doğrulanmış, kırınım sınırı)
@@ -119,13 +119,13 @@ Not: "(d2/d8/d12/d24 doğrulanmış)" işaretli satırlar ilgili dersin kaynak t
 - Isıl fotonlar yol bilgisini çevreye taşır | aynı | "transmit (partial) which-path information to the environment"
 - Dekoherans: sistemin çevresiyle etkileşimi | aynı | "the interaction of a quantum system with its environment"
 - Gazla doldurulunca saçak görünürlüğü üstel azalır | https://arxiv.org/pdf/1211.3493 | "saw an exponential decrease of the observed fringe visibility"
-- Ölçüm = gözlemciden bağımsız her etkileşim | https://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq.ipfs.4everland.io/wiki/Gabor_limit.html (Uncertainty principle) | "any interaction between classical and quantum objects regardless of any observer"
+- Ölçüm = gözlemciden bağımsız her etkileşim | https://en.wikipedia.org/wiki/Gabor_limit (Uncertainty principle) | "any interaction between classical and quantum objects regardless of any observer"
 - Bilinç görüşü: London ve Bauer (1939), Wigner (1960'lar); Wigner sonra uzaklaştı; azınlık görüşü (2011 anketinde 33 kişiden 2'si) | https://en.wikipedia.org/wiki/Von_Neumann%E2%80%93Wigner_interpretation | "consciousness is postulated to be necessary for the completion of the process of quantum measurement"; Wigner "shifted" (denetimde eklendi: eski metin 'tarafların hiçbiri bilince ihtiyaç duymaz' diyordu, bu fazla genel idi)
 - Bilinç gerektiren bir rol kaynakta yok | https://arxiv.org/pdf/1211.3493 (derlemede bilinçli gözlemci rolü geçmez); yorumlar için CERN Courier
 - Ölçüm problemi hâlâ tartışılıyor | https://cerncourier.com/a/the-measurement-problem-measured/ | "physicists still disagree on what quantum mechanics actually means"
 
 ## Bölüm 12 — Belirsizlik ilkesi
-- Heisenberg 1927; Kennard aynı yıl σxσp ≥ ħ/2; Weyl 1928 | https://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq.ipfs.4everland.io/wiki/Gabor_limit.html | "introduced the principle in 1927"; "Earle Kennard derived the standard-deviation form ... later that year"
+- Heisenberg 1927; Kennard aynı yıl σxσp ≥ ħ/2; Weyl 1928 | https://en.wikipedia.org/wiki/Gabor_limit | "introduced the principle in 1927"; "Earle Kennard derived the standard-deviation form ... later that year"
 - Gözlemci etkisiyle karıştırıldı; Heisenberg böyle bir açıklama önerdi; temel özellik, teknoloji sınırı değil | aynı | "a fundamental property of quantum systems"
 - Bütün dalga sistemlerinde; Fourier eşlenikleri | aynı | "A nonzero function and its Fourier transform cannot both be sharply localized"
 - ħ = 1,054571817 × 10⁻³⁴ J·s | https://en.wikipedia.org/wiki/Planck_constant

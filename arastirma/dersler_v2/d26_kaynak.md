@@ -100,7 +100,7 @@ Not: Tüm satırlar bu oturumda (30 Ekim 2026) WebFetch ile açılan sayfalardan
 - Doğu/batı farkının açıklaması | akıl yürütme (d25 hız etkisi + bu dersteki yükseklik etkisi)
 
 ## Bölüm 13 — Kütleçekimsel mercek
-- 1979; Walsh, Carswell, Weymann; Kitt Peak 2,1 m; Büyük Ayı; 6″; mercek galaksi 3,7 milyar ışık yılı; 417 ± 3 gün; ilk merceklenmiş cisim | https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Twin_Quasar | "the first identified gravitationally lensed object"
+- 1979; Walsh, Carswell, Weymann; Kitt Peak 2,1 m; Büyük Ayı; 6″; mercek galaksi 3,7 milyar ışık yılı; 417 ± 3 gün; ilk merceklenmiş cisim | https://en.wikipedia.org/wiki/Twin_Quasar | "the first identified gravitationally lensed object"
 - Mermi Kümesi, karanlık madde haritası | d17_kaynak.md
 - Mikromercek | d13
 - Einstein halkası tanımı | akıl yürütme (geometri)

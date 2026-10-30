@@ -17,7 +17,7 @@ Not: "(hesap)" satırları derste verilen kaynaklı sayılardan yapılan aritmet
 - n + azot-14 → karbon-14 + p, kozmik ışın nötronları | https://en.wikipedia.org/wiki/Radiocarbon_dating | "n + ¹⁴N → ¹⁴C + p"
 - Karbon atomlarının ~%1'i C-13; C-14/C-12 ≈ 1,25 / 10¹² | aynı sayfa | "About 1% of carbon atoms are ¹³C"; "1.25 parts of ¹⁴C per 10¹² parts of ¹²C"
 - Doğal uranyumun %0,72'si U-235 | https://en.wikipedia.org/wiki/Uranium-235 | "about 0.72% of natural uranium"
-- U-238 %99,28 | https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Uranium | "uranium-238 (99.28% natural abundance)"
+- U-238 %99,28 | https://en.wikipedia.org/wiki/Uranium | "uranium-238 (99.28% natural abundance)"
 - Proton kütlesi ~938 MeV | https://en.wikipedia.org/wiki/Quark | "a proton's roughly 938 MeV/c²"
 - Serbest nötron ortalama ömrü ~15 dakika | (d8) https://en.wikipedia.org/wiki/Big_Bang_nucleosynthesis | d8 metni
 - Elektronvolt tanımı (1 V gerilimde bir elektronun kazandığı enerji) ve MeV = 10⁶ eV | https://en.wikipedia.org/wiki/Electronvolt | "kinetic energy gained by a single electron" accelerated through one volt; "exact value 1.602176634×10−19 J" (denetçi, 30.10.2026; NIST CODATA sayfası bozuk istek hatası verdi)
@@ -97,7 +97,7 @@ Not: "(hesap)" satırları derste verilen kaynaklı sayılardan yapılan aritmet
 ## Bölüm 9 — Radyoaktivite
 - Becquerel 1896; Rutherford 1899 alfa ve beta; Villard 1900 gama | https://en.wikipedia.org/wiki/Timeline_of_particle_physics | ilgili satırlar
 - Alfa parçacığı = helyum çekirdeği | https://en.wikipedia.org/wiki/Cosmic_ray | "alpha particles (helium nuclei)"
-- U-238 18 üyeli zincirle kurşun-206'ya | https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Uranium | "uranium series, which has 18 members, into lead-206"
+- U-238 18 üyeli zincirle kurşun-206'ya | https://en.wikipedia.org/wiki/Uranium | "uranium series, which has 18 members, into lead-206"
 - U-235 zinciri kurşun-207'de biter | https://en.wikipedia.org/wiki/Uranium-235 | "final end product, lead-207"
 - Beta bozunumunda pozitron ile birlikte görünmeyen parçacık (Pauli) | https://physics.aps.org/story/v19/st13 | "emitted with a positron in radioactive beta decay"
 - Doğal radyoaktif bozunmadan pozitronlar; pozitron-elektron yok oluşu gama çiftleri; PET | https://en.wikipedia.org/wiki/Antiparticle | "producing pairs of gamma rays"; "exploited in positron emission tomography"
@@ -130,7 +130,7 @@ Not: "(hesap)" satırları derste verilen kaynaklı sayılardan yapılan aritmet
 - CAI 4,5673 ± 0,00016 milyar yıl | aynı sayfa | "4.5673 ± 0.00016"
 - Jack Hills zirkon ≥ 4,404 milyar yıl | aynı sayfa | "at least 4.404 billion years old"
 - Ay kayaçları en çok 4,51 milyar; levha hareketi ve atmosfer yok | aynı sayfa | "maximum of 4.51 billion years"
-- U-238 yarılanma ömrü ~4,47 milyar yıl | https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Uranium | "about 4.47 billion years"
+- U-238 yarılanma ömrü ~4,47 milyar yıl | https://en.wikipedia.org/wiki/Uranium | "about 4.47 billion years"
 - U, Th, K-40 bozunması mantoda ana ısı kaynağı; sıvı dış çekirdek, manto konveksiyonu, levha hareketleri | aynı sayfa | "main source of heat"
 - İki saatin uyuşmasının kapalı sistem denetimi olması | yöntemin mantığından akıl yürütme
 - Örnek: (1/2)^1,02 ≈ 0,49; (1/2)^6,45 ≈ 0,011; Oklo oranı ≈ 0,038 | (hesap)

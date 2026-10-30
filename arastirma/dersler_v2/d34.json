@@ -4,7 +4,10 @@
   "yeni": true,
   "baslik": "Güneş Sistemi'nin Doğuşu: Bir Toz Diskinden Sekiz Gezegene",
   "ozet": "Güneş ve gezegenler 4,6 milyar yıl önce dönen bir gaz ve toz diskinden doğdu. Bu derste bulutsu fikrinin Kant ve Laplace'tan bugüne nasıl geliştiğini, kar çizgisinin kayalık ve dev gezegenleri nasıl ayırdığını, tozun nasıl gezegene dönüştüğünü, gezegenlerin neden yer değiştirmiş olabileceğini (Grand Tack ve Nice modelleri), Geç Ağır Bombardıman tartışmasını, göktaşlarındaki radyoaktif saatlerle 4,567 milyar yıllık yaşın nasıl ölçüldüğünü ve Dünya'nın suyunun kökeni sorusunu öğreneceksin.",
-  "on_bilgi": ["d3", "d21"],
+  "on_bilgi": [
+    "d3",
+    "d21"
+  ],
   "bolumler": [
     {
       "baslik": "Düzenin içindeki ipucu",
@@ -184,48 +187,212 @@
     }
   ],
   "formuller": [
-    { "ad": "Disk sıcaklığı (Hayashi modeli)", "ifade": "T = 280 K × (r / 1 AB)^(−1/2)", "aciklama": "T: diskin o noktadaki sıcaklığı (K), r: Güneş'e uzaklık (AB). Doğrudan ısınan ince bir disk varsayar; kalın gerçek diskler için kaba bir yaklaşımdır. 1 AB'de 280 K, 4 AB'de 140 K." },
-    { "ad": "Kar çizgisinin yeri", "ifade": "r = (280 ÷ T_don)²", "aciklama": "r: kar çizgisinin uzaklığı (AB), T_don: suyun diskte donduğu sıcaklık (K). T_don = 170 K için r ≈ 2,7 AB; 150 K için ≈ 3,5 AB. Yalnızca Hayashi kuralı geçerliyse." },
-    { "ad": "Radyoaktif bozunma", "ifade": "N ÷ N₀ = (1/2)^(t ÷ T½)", "aciklama": "N₀: başlangıçtaki atom sayısı, N: t süre sonra kalan, T½: yarılanma ömrü (t ile aynı birimde). Alüminyum-26 için T½ ≈ 0,7 milyon yıl, uranyum-238 için 4,47 milyar yıl, hafniyum-182 için 9 milyon yıl." },
-    { "ad": "Kepler'in üçüncü yasası", "ifade": "P² = a³", "aciklama": "P: dolanma süresi (yıl), a: yarı büyük eksen (AB); Güneş çevresindeki cisimler için (d3). Rezonans hesabında dönem oranı = (a₂ ÷ a₁)^1,5." },
-    { "ad": "Açıdan uzunluğa", "ifade": "uzunluk (AB) ≈ açı (yay saniyesi) × uzaklık (parsek)", "aciklama": "Küçük açılar için geçerlidir. 1 parsek ≈ 3,26 ışık yılı. HL Tauri: 0,035 × 138 ≈ 4,8 AB." }
+    {
+      "ad": "Disk sıcaklığı (Hayashi modeli)",
+      "ifade": "T = 280 K × (r / 1 AB)^(−1/2)",
+      "aciklama": "T: diskin o noktadaki sıcaklığı (K), r: Güneş'e uzaklık (AB). Doğrudan ısınan ince bir disk varsayar; kalın gerçek diskler için kaba bir yaklaşımdır. 1 AB'de 280 K, 4 AB'de 140 K."
+    },
+    {
+      "ad": "Kar çizgisinin yeri",
+      "ifade": "r = (280 ÷ T_don)²",
+      "aciklama": "r: kar çizgisinin uzaklığı (AB), T_don: suyun diskte donduğu sıcaklık (K). T_don = 170 K için r ≈ 2,7 AB; 150 K için ≈ 3,5 AB. Yalnızca Hayashi kuralı geçerliyse."
+    },
+    {
+      "ad": "Radyoaktif bozunma",
+      "ifade": "N ÷ N₀ = (1/2)^(t ÷ T½)",
+      "aciklama": "N₀: başlangıçtaki atom sayısı, N: t süre sonra kalan, T½: yarılanma ömrü (t ile aynı birimde). Alüminyum-26 için T½ ≈ 0,7 milyon yıl, uranyum-238 için 4,47 milyar yıl, hafniyum-182 için 9 milyon yıl."
+    },
+    {
+      "ad": "Kepler'in üçüncü yasası",
+      "ifade": "P² = a³",
+      "aciklama": "P: dolanma süresi (yıl), a: yarı büyük eksen (AB); Güneş çevresindeki cisimler için (d3). Rezonans hesabında dönem oranı = (a₂ ÷ a₁)^1,5."
+    },
+    {
+      "ad": "Açıdan uzunluğa",
+      "ifade": "uzunluk (AB) ≈ açı (yay saniyesi) × uzaklık (parsek)",
+      "aciklama": "Küçük açılar için geçerlidir. 1 parsek ≈ 3,26 ışık yılı. HL Tauri: 0,035 × 138 ≈ 4,8 AB."
+    }
   ],
   "anahtar_sayilar": [
-    { "deger": "4.567,30 ± 0,16 milyon yıl; kondrüller ~3 milyon yıl boyunca", "aciklama": "En eski katıların (CAI) yaşı ve kondrül oluşum süresi (2012, U-düzeltmeli Pb-Pb)", "kaynak_url": "https://phys.org/news/2012-11-technique-date-cais-chondrules.amp" },
-    { "deger": "4,54 ± 0,05 milyar yıl; 4,404 milyar yıl", "aciklama": "Dünya'nın yaşı ve en yaşlı Dünya minerali (Jack Hills zirkonu)", "kaynak_url": "https://en.wikipedia.org/wiki/Age_of_Earth" },
-    { "deger": "%99,86 kütle; ~%1–2 açısal momentum", "aciklama": "Güneş'in Güneş Sistemi'ndeki payları (kaynaklar %1 ve %2 verir)", "kaynak_url": "https://en.wikipedia.org/wiki/Solar_System" },
-    { "deger": "170 K, 2,7 AB (Hayashi 1981); 1 AB'de 280 K", "aciklama": "Kar çizgisinin sıcaklığı ve uzaklığı; disk sıcaklık kuralının başlangıç değeri", "kaynak_url": "https://en.wikipedia.org/wiki/Frost_line_(astrophysics)" },
-    { "deger": "~10 Jüpiter kütlesi (~0,01 M☉); gazın ≥%85'i kayıp", "aciklama": "En küçük kütleli güneş bulutsusu ve kaybolan gaz payı", "kaynak_url": "https://www.astro.utoronto.ca/~mhvk/AST221/L18/L18.pdf" },
-    { "deger": "450 ışık yılı; ≤1 milyon yaş; 15 km; ~35 mili yay saniyesi", "aciklama": "ALMA'nın HL Tauri gözlemi (6 Kasım 2014): uzaklık, yıldızın yaşı, en uzun anten aralığı, ayırma gücü", "kaynak_url": "https://messenger.eso.org/public/news/eso1436" },
-    { "deger": "~20 Dünya kütlesi (1 milyon yıl); ≥50 (3–4 milyon yıl)", "aciklama": "Jüpiter çekirdeğinin büyümesi (Kruijer ve ark. 2017)", "kaynak_url": "https://phys.org/news/2017-06-evidence-jupiter-oldest-planet-solar.html" },
-    { "deger": "Mars 2–4 milyon yıl; Dünya 50–100 milyon yıl", "aciklama": "Oluşum süreleri (Dauphas ve Pourmand 2011, Hf-W)", "kaynak_url": "https://news.uchicago.edu/story/mars-rapid-formation-stunted-growth" },
-    { "deger": "3,5 → 1,5 → 5,2 AB", "aciklama": "Grand Tack modelinde Jüpiter'in yolculuğu (model)", "kaynak_url": "https://en.wikipedia.org/wiki/Grand_tack_hypothesis" },
-    { "deger": "5,5–17 AB; ~35 Dünya kütlesi; ~600 milyon yıl", "aciklama": "Nice modelinin başlangıcı: devlerin yerleri, gezegencik diski, özgün modelde dengesizlik zamanı", "kaynak_url": "https://en.wikipedia.org/wiki/Nice_model" },
-    { "deger": "~0,7 milyon yıl; 4,47 milyar yıl", "aciklama": "Alüminyum-26 ve uranyum-238'in yarılanma ömürleri", "kaynak_url": "https://www.astro.utoronto.ca/~mhvk/AST221/L18/L18.pdf" },
-    { "deger": "Dünya suyunun 3 katından fazla", "aciklama": "67P kuyruklu yıldızındaki D/H oranı (Rosetta ROSINA, Aralık 2014)", "kaynak_url": "https://spaceflightnow.com/?p=1907" }
+    {
+      "deger": "4.567,30 ± 0,16 milyon yıl; kondrüller ~3 milyon yıl boyunca",
+      "aciklama": "En eski katıların (CAI) yaşı ve kondrül oluşum süresi (2012, U-düzeltmeli Pb-Pb)",
+      "kaynak_url": "https://phys.org/news/2012-11-technique-date-cais-chondrules.amp",
+      "kid": "d34n0"
+    },
+    {
+      "deger": "4,54 ± 0,05 milyar yıl; 4,404 milyar yıl",
+      "aciklama": "Dünya'nın yaşı ve en yaşlı Dünya minerali (Jack Hills zirkonu)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Age_of_Earth",
+      "kid": "d34n1"
+    },
+    {
+      "deger": "%99,86 kütle; ~%1–2 açısal momentum",
+      "aciklama": "Güneş'in Güneş Sistemi'ndeki payları (kaynaklar %1 ve %2 verir)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Solar_System",
+      "kid": "d34n2"
+    },
+    {
+      "deger": "170 K, 2,7 AB (Hayashi 1981); 1 AB'de 280 K",
+      "aciklama": "Kar çizgisinin sıcaklığı ve uzaklığı; disk sıcaklık kuralının başlangıç değeri",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Frost_line_(astrophysics)",
+      "kid": "d34n3"
+    },
+    {
+      "deger": "~10 Jüpiter kütlesi (~0,01 M☉); gazın ≥%85'i kayıp",
+      "aciklama": "En küçük kütleli güneş bulutsusu ve kaybolan gaz payı",
+      "kaynak_url": "https://www.astro.utoronto.ca/~mhvk/AST221/L18/L18.pdf",
+      "kid": "d34n4"
+    },
+    {
+      "deger": "450 ışık yılı; ≤1 milyon yaş; 15 km; ~35 mili yay saniyesi",
+      "aciklama": "ALMA'nın HL Tauri gözlemi (6 Kasım 2014): uzaklık, yıldızın yaşı, en uzun anten aralığı, ayırma gücü",
+      "kaynak_url": "https://messenger.eso.org/public/news/eso1436",
+      "kid": "d34n5"
+    },
+    {
+      "deger": "~20 Dünya kütlesi (1 milyon yıl); ≥50 (3–4 milyon yıl)",
+      "aciklama": "Jüpiter çekirdeğinin büyümesi (Kruijer ve ark. 2017)",
+      "kaynak_url": "https://phys.org/news/2017-06-evidence-jupiter-oldest-planet-solar.html",
+      "kid": "d34n6"
+    },
+    {
+      "deger": "Mars 2–4 milyon yıl; Dünya 50–100 milyon yıl",
+      "aciklama": "Oluşum süreleri (Dauphas ve Pourmand 2011, Hf-W)",
+      "kaynak_url": "https://news.uchicago.edu/story/mars-rapid-formation-stunted-growth",
+      "kid": "d34n7"
+    },
+    {
+      "deger": "3,5 → 1,5 → 5,2 AB",
+      "aciklama": "Grand Tack modelinde Jüpiter'in yolculuğu (model)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Grand_tack_hypothesis",
+      "kid": "d34n8"
+    },
+    {
+      "deger": "5,5–17 AB; ~35 Dünya kütlesi; ~600 milyon yıl",
+      "aciklama": "Nice modelinin başlangıcı: devlerin yerleri, gezegencik diski, özgün modelde dengesizlik zamanı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Nice_model",
+      "kid": "d34n9"
+    },
+    {
+      "deger": "~0,7 milyon yıl; 4,47 milyar yıl",
+      "aciklama": "Alüminyum-26 ve uranyum-238'in yarılanma ömürleri",
+      "kaynak_url": "https://www.astro.utoronto.ca/~mhvk/AST221/L18/L18.pdf",
+      "kid": "d34n10"
+    },
+    {
+      "deger": "Dünya suyunun 3 katından fazla",
+      "aciklama": "67P kuyruklu yıldızındaki D/H oranı (Rosetta ROSINA, Aralık 2014)",
+      "kaynak_url": "https://spaceflightnow.com/?p=1907",
+      "kid": "d34n11"
+    }
   ],
   "sozluk": [
-    { "terim": "bulutsu varsayımı", "tanim": "Güneş'in ve gezegenlerin dönen, yassılaşan bir gaz ve toz bulutundan doğduğunu söyleyen, kökleri Kant ve Laplace'a uzanan açıklama." },
-    { "terim": "güneş bulutsusu", "tanim": "Genç Güneş'i çevreleyen ve gezegenlerin hammaddesini taşıyan gaz ve toz diski." },
-    { "terim": "en küçük kütleli güneş bulutsusu", "tanim": "Bugünkü gezegenlere eksik hidrojen ve helyum geri eklenerek kurulan, gerçek diskin en az ne kadar ağır olduğunu gösteren model disk." },
-    { "terim": "gezegencik", "tanim": "Gezegenlerin yapı taşı olan, kilometre ya da daha büyük ölçekli katı cisim." },
-    { "terim": "gezegen embriyosu", "tanim": "Gezegenciklerin birleşmesiyle oluşan ve çarpışmalarla gezegene dönüşecek büyük ara cisim." },
-    { "terim": "sekme engeli", "tanim": "Büyüyen toz topaklarının çarpışınca yapışmak yerine sekmesi yüzünden büyümenin takılması." },
-    { "terim": "metre engeli", "tanim": "Metre boyundaki cisimlerin gazın karşı rüzgârıyla hızla yıldıza düşmesi yüzünden gezegen oluşumunun önüne çıkan sorun." },
-    { "terim": "akış kararsızlığı", "tanim": "Diskteki katı parçaların gazla etkileşip kendiliğinden kalabalık kümeler oluşturması ve bu kümelerin çökerek doğrudan büyük gezegencikler yapması." },
-    { "terim": "çakıl birikimi", "tanim": "Büyük bir cismin diskteki santimetrelik çakılları süpürerek hızla büyümesi." },
-    { "terim": "kaçak büyüme", "tanim": "Büyük cisimlerin daha güçlü çektikleri için küçüklerden daha hızlı büyüdüğü gezegen oluşum evresi." },
-    { "terim": "çekirdek birikimi", "tanim": "Önce kaya ve buzdan bir çekirdeğin büyüyüp, belirli bir kütleyi geçince çevresindeki gazı hızla toplayarak dev gezegen olduğu oluşum yolu." },
-    { "terim": "gezegen göçü", "tanim": "Bir gezegenin gaz diskiyle ya da küçük cisimlerle çekim alışverişi sonucu yörüngesinin içe ya da dışa kayması." },
-    { "terim": "yörünge rezonansı", "tanim": "İki cismin dolanma sürelerinin 1:2 gibi basit bir tam sayı oranında olması ve bu yüzden birbirlerini düzenli aralıklarla aynı noktalarda etkilemesi." },
-    { "terim": "Grand Tack", "tanim": "Jüpiter'in önce 1,5 AB'ye kadar içe göçüp Satürn'le rezonansa girdikten sonra dışa döndüğünü öne süren gezegen oluşum modeli." },
-    { "terim": "Nice modeli", "tanim": "Dev gezegenlerin sıkışık bir düzenden başlayıp bir rezonans geçişiyle dengesizleştiğini ve bugünkü yerlerine dağıldığını öne süren model." },
-    { "terim": "Geç Ağır Bombardıman", "tanim": "Yaklaşık 4,1–3,8 milyar yıl önce iç gezegenlere çarpan cisim sayısının birden arttığı varsayılan, varlığı tartışmalı dönem." },
-    { "terim": "kondrit", "tanim": "Erimeden kalmış, içinde kondrüller ve en eski katıları taşıyan ilkel taşlı göktaşı." },
-    { "terim": "kondrül", "tanim": "Kondritlerin içinde bulunan, erken diskte erimiş ve hızla soğumuş küçük taneler." },
-    { "terim": "CAI", "tanim": "Kalsiyum ve alüminyum bakımından zengin kapanım; göktaşlarında bulunan ve Güneş Sistemi'nde oluşmuş ilk katı parçalar." },
-    { "terim": "D/H oranı", "tanim": "Bir su ya da gaz örneğindeki döteryumun sıradan hidrojene oranı; suyun kökenini izlemekte parmak izi gibi kullanılır." },
-    { "terim": "zodyak ışığı", "tanim": "Tutulum düzlemindeki gezegenlerarası tozun Güneş ışığını saçmasıyla, karanlık gökte alacakaranlık sonrası ya da şafak öncesi görülen soluk üçgen parıltı." }
+    {
+      "terim": "bulutsu varsayımı",
+      "tanim": "Güneş'in ve gezegenlerin dönen, yassılaşan bir gaz ve toz bulutundan doğduğunu söyleyen, kökleri Kant ve Laplace'a uzanan açıklama.",
+      "kid": "d34t0"
+    },
+    {
+      "terim": "güneş bulutsusu",
+      "tanim": "Genç Güneş'i çevreleyen ve gezegenlerin hammaddesini taşıyan gaz ve toz diski.",
+      "kid": "d34t1"
+    },
+    {
+      "terim": "en küçük kütleli güneş bulutsusu",
+      "tanim": "Bugünkü gezegenlere eksik hidrojen ve helyum geri eklenerek kurulan, gerçek diskin en az ne kadar ağır olduğunu gösteren model disk.",
+      "kid": "d34t2"
+    },
+    {
+      "terim": "gezegencik",
+      "tanim": "Gezegenlerin yapı taşı olan, kilometre ya da daha büyük ölçekli katı cisim.",
+      "kid": "d34t3"
+    },
+    {
+      "terim": "gezegen embriyosu",
+      "tanim": "Gezegenciklerin birleşmesiyle oluşan ve çarpışmalarla gezegene dönüşecek büyük ara cisim.",
+      "kid": "d34t4"
+    },
+    {
+      "terim": "sekme engeli",
+      "tanim": "Büyüyen toz topaklarının çarpışınca yapışmak yerine sekmesi yüzünden büyümenin takılması.",
+      "kid": "d34t5"
+    },
+    {
+      "terim": "metre engeli",
+      "tanim": "Metre boyundaki cisimlerin gazın karşı rüzgârıyla hızla yıldıza düşmesi yüzünden gezegen oluşumunun önüne çıkan sorun.",
+      "kid": "d34t6"
+    },
+    {
+      "terim": "akış kararsızlığı",
+      "tanim": "Diskteki katı parçaların gazla etkileşip kendiliğinden kalabalık kümeler oluşturması ve bu kümelerin çökerek doğrudan büyük gezegencikler yapması.",
+      "kid": "d34t7"
+    },
+    {
+      "terim": "çakıl birikimi",
+      "tanim": "Büyük bir cismin diskteki santimetrelik çakılları süpürerek hızla büyümesi.",
+      "kid": "d34t8"
+    },
+    {
+      "terim": "kaçak büyüme",
+      "tanim": "Büyük cisimlerin daha güçlü çektikleri için küçüklerden daha hızlı büyüdüğü gezegen oluşum evresi.",
+      "kid": "d34t9"
+    },
+    {
+      "terim": "çekirdek birikimi",
+      "tanim": "Önce kaya ve buzdan bir çekirdeğin büyüyüp, belirli bir kütleyi geçince çevresindeki gazı hızla toplayarak dev gezegen olduğu oluşum yolu.",
+      "kid": "d34t10"
+    },
+    {
+      "terim": "gezegen göçü",
+      "tanim": "Bir gezegenin gaz diskiyle ya da küçük cisimlerle çekim alışverişi sonucu yörüngesinin içe ya da dışa kayması.",
+      "kid": "d34t11"
+    },
+    {
+      "terim": "yörünge rezonansı",
+      "tanim": "İki cismin dolanma sürelerinin 1:2 gibi basit bir tam sayı oranında olması ve bu yüzden birbirlerini düzenli aralıklarla aynı noktalarda etkilemesi.",
+      "kid": "d34t12"
+    },
+    {
+      "terim": "Grand Tack",
+      "tanim": "Jüpiter'in önce 1,5 AB'ye kadar içe göçüp Satürn'le rezonansa girdikten sonra dışa döndüğünü öne süren gezegen oluşum modeli.",
+      "kid": "d34t13"
+    },
+    {
+      "terim": "Nice modeli",
+      "tanim": "Dev gezegenlerin sıkışık bir düzenden başlayıp bir rezonans geçişiyle dengesizleştiğini ve bugünkü yerlerine dağıldığını öne süren model.",
+      "kid": "d34t14"
+    },
+    {
+      "terim": "Geç Ağır Bombardıman",
+      "tanim": "Yaklaşık 4,1–3,8 milyar yıl önce iç gezegenlere çarpan cisim sayısının birden arttığı varsayılan, varlığı tartışmalı dönem.",
+      "kid": "d34t15"
+    },
+    {
+      "terim": "kondrit",
+      "tanim": "Erimeden kalmış, içinde kondrüller ve en eski katıları taşıyan ilkel taşlı göktaşı.",
+      "kid": "d34t16"
+    },
+    {
+      "terim": "kondrül",
+      "tanim": "Kondritlerin içinde bulunan, erken diskte erimiş ve hızla soğumuş küçük taneler.",
+      "kid": "d34t17"
+    },
+    {
+      "terim": "CAI",
+      "tanim": "Kalsiyum ve alüminyum bakımından zengin kapanım; göktaşlarında bulunan ve Güneş Sistemi'nde oluşmuş ilk katı parçalar.",
+      "kid": "d34t18"
+    },
+    {
+      "terim": "D/H oranı",
+      "tanim": "Bir su ya da gaz örneğindeki döteryumun sıradan hidrojene oranı; suyun kökenini izlemekte parmak izi gibi kullanılır.",
+      "kid": "d34t19"
+    },
+    {
+      "terim": "zodyak ışığı",
+      "tanim": "Tutulum düzlemindeki gezegenlerarası tozun Güneş ışığını saçmasıyla, karanlık gökte alacakaranlık sonrası ya da şafak öncesi görülen soluk üçgen parıltı.",
+      "kid": "d34t20"
+    }
   ],
   "defter_notu": [
     "Düzen = doğum belgesi: gezegenler aynı yönde, aynı düzlemde. Güneş kütlenin %99,86'sı, açısal momentumun %1–2'si.",
@@ -240,45 +407,171 @@
     "Su: Dünya kütlesinin ~%0,023'ü. 67P D/H > 3 kat; enstatit kondritler ≥3 okyanus suyu verebilir. Köken açık soru."
   ],
   "sorular": [
-    { "soru": "Gezegenlerin aynı yönde ve neredeyse aynı düzlemde dolanması oluşum hakkında ne söyler?", "cevap": "Hepsinin tek yönde dönen yassı bir diskten doğduğunu. Rastgele yakalanmış cisimler farklı yönlerde ve farklı eğikliklerde dolanırdı; gökte gezegenlerin tutulum boyunca dizilmesi bu diskin bugünkü izidir." },
-    { "soru": "Bulutsu varsayımı 1900 civarında neden gözden düştü, sonra nasıl geri döndü?", "cevap": "Çöken bir bulutta dönmenin büyük kısmı merkezde toplanmalıydı, oysa Güneş kütlenin %99,86'sını taşırken açısal momentumun yalnızca %1–2'sini taşıyor (Moulton 1900). Yirminci yüzyılın ikinci yarısında manyetik bağın dönmeyi Güneş'ten diske aktarabileceği önerildi, Safronov da katı cisimlerin birikimini hesapladı; 1980'lerde güneş bulutsusu disk modeli olarak geri döndü." },
-    { "soru": "Hayashi kuralına (T = 280 ÷ √r) göre suyun 160 K'de donduğunu varsayarsan kar çizgisi kaç AB'dedir?", "cevap": "r = (280 ÷ 160)² = 1,75² ≈ 3,06 AB. Bu, 170 K için bulunan 2,7 AB ile 150 K için bulunan 3,5 AB arasındadır; donma sıcaklığındaki küçük belirsizlik kar çizgisinin yerini belirgin biçimde kaydırır." },
-    { "soru": "Kar çizgisinin dışında dev gezegenlerin oluşmasını kolaylaştıran şey nedir?", "cevap": "Su ve öteki buzlar katılaştığı için katı malzeme yaklaşık beş kat artar. Daha çok katı, daha hızlı büyüyen ve daha ağır çekirdekler demektir; çekirdek 5–20 Dünya kütlesine (kaynağa göre) ulaşınca gazı hızla toplayıp dev gezegene dönüşür." },
-    { "soru": "Metre engeli nedir ve akış kararsızlığı bu engeli nasıl aşar?", "cevap": "Gaz basınç desteği yüzünden ~50 m/s yavaş döner; metrelik katılar bu karşı rüzgârla enerji kaybedip 1 AB'de ~1000 yılda yıldıza düşer. Akış kararsızlığında katılar kendiliğinden yoğun kümeler oluşturur, küme kendi çekimiyle çöker ve doğrudan büyük asteroit boyunda gezegencikler oluşur; tehlikeli boylar atlanır." },
-    { "soru": "Alüminyum-26'nın yarılanma ömrü 0,7 milyon yıl. 2,1 milyon yıl sonra başlangıçtaki miktarın ne kadarı kalır?", "cevap": "2,1 ÷ 0,7 = 3 yarılanma ömrü; (1/2)³ = 1/8, yani yaklaşık %12,5 kalır. Bu yüzden erken doğan gezegencikler bu ısıtıcıyla eriyebilirken birkaç milyon yıl sonra doğanlar aynı ısıyı alamaz." },
-    { "soru": "Jüpiter'in Güneş Sistemi'nin en yaşlı gezegeni olduğunu nereden biliyoruz?", "cevap": "Kruijer ve arkadaşları (2017) demir göktaşlarındaki tungsten ve molibden izotoplarının iki ayrı depodan geldiğini ve bu depoların yaklaşık 1 milyon yıldan 3–4 milyon yıla kadar karışmadığını buldu. Aralarındaki duvar, ilk 1 milyon yılda ~20 Dünya kütlesine ulaşıp diskte boşluk açan Jüpiter olarak yorumlanır." },
-    { "soru": "Grand Tack modeli küçük Mars'ı nasıl açıklar? Neden 'model' diyoruz?", "cevap": "Jüpiter 1,5 AB'ye kadar içe göçünce gezegencik diskini yaklaşık 1 AB'de kesip Mars bölgesini boşaltır; Mars'ı büyütecek malzeme kalmaz. Bu bir bilgisayar senaryosudur: hangi rezonansın işlediği konusunda bile kaynaklar tutarsız, gaz birikimini hesaba katmıyor ve küçük Mars'ın başka açıklamaları da var." },
-    { "soru": "Nice modelinde Jüpiter–Satürn 1:2 rezonansı ne anlama gelir? Bugün aralarındaki dönem oranı nedir?", "cevap": "Satürn'ün bir turuna Jüpiter'in tam iki tur atması; bu geçiş yörüngeleri basıklaştırıp dengesizliği tetikler. Bugün oran 29,4 ÷ 11,86 ≈ 2,5'tir; yani ikili bir zamanlar 1:2'den geçmiş ve sonra açılmış olmalıdır (modele göre)." },
-    { "soru": "Geç Ağır Bombardıman'a yöneltilen iki eleştiriyi açıkla.", "cevap": "Birincisi örnek yanlılığı: Apollo'nun getirdiği erimiş kayaçların çoğu tek bir çarpmadan (Imbrium) gelmiş olabilir, Ay göktaşlarının eriyik yaşları ise 2,5–3,9 milyar yıla yayılır. İkincisi dinamik: Patroclus–Menoetius ikilisi gibi kanıtlar dev gezegen dengesizliğinin oluşumdan sonraki ilk 100 milyon yılda yaşandığını düşündürür; o zaman Nice modeli geç bir yağmurun nedeni olamaz." },
-    { "soru": "CAI'lerin yaşı ile Dünya'nın yaşı neden farklı verilir?", "cevap": "CAI'ler diskte oluşan ilk katılardır: 4.567,30 ± 0,16 milyon yıl. Dünya ise embriyoların çarpışmasıyla on milyonlarca yıl sonra tamamlandı; yaşı 4,54 ± 0,05 milyar yıl olarak verilir. İlki Güneş Sistemi'nin başlangıcını, ikincisi gezegenin oluşumunu tarihler." },
-    { "soru": "67P kuyruklu yıldızının D/H ölçümü Dünya'nın suyu tartışmasında neden önemliydi?", "cevap": "Rosetta'nın ROSINA aleti 67P'de Dünya suyunun üç katından fazla bir D/H oranı ölçtü. Dünya'nın suyu büyük ölçüde böyle kuyruklu yıldızlardan gelseydi oran daha yüksek olurdu; bu yüzden bulgu, asteroitlerin ya da Dünya'nın kendi yapı malzemesinin (enstatit kondrit benzeri) daha büyük pay taşıdığı modelleri güçlendirdi." }
+    {
+      "soru": "Gezegenlerin aynı yönde ve neredeyse aynı düzlemde dolanması oluşum hakkında ne söyler?",
+      "cevap": "Hepsinin tek yönde dönen yassı bir diskten doğduğunu. Rastgele yakalanmış cisimler farklı yönlerde ve farklı eğikliklerde dolanırdı; gökte gezegenlerin tutulum boyunca dizilmesi bu diskin bugünkü izidir.",
+      "kid": "d34s0"
+    },
+    {
+      "soru": "Bulutsu varsayımı 1900 civarında neden gözden düştü, sonra nasıl geri döndü?",
+      "cevap": "Çöken bir bulutta dönmenin büyük kısmı merkezde toplanmalıydı, oysa Güneş kütlenin %99,86'sını taşırken açısal momentumun yalnızca %1–2'sini taşıyor (Moulton 1900). Yirminci yüzyılın ikinci yarısında manyetik bağın dönmeyi Güneş'ten diske aktarabileceği önerildi, Safronov da katı cisimlerin birikimini hesapladı; 1980'lerde güneş bulutsusu disk modeli olarak geri döndü.",
+      "kid": "d34s1"
+    },
+    {
+      "soru": "Hayashi kuralına (T = 280 ÷ √r) göre suyun 160 K'de donduğunu varsayarsan kar çizgisi kaç AB'dedir?",
+      "cevap": "r = (280 ÷ 160)² = 1,75² ≈ 3,06 AB. Bu, 170 K için bulunan 2,7 AB ile 150 K için bulunan 3,5 AB arasındadır; donma sıcaklığındaki küçük belirsizlik kar çizgisinin yerini belirgin biçimde kaydırır.",
+      "kid": "d34s2"
+    },
+    {
+      "soru": "Kar çizgisinin dışında dev gezegenlerin oluşmasını kolaylaştıran şey nedir?",
+      "cevap": "Su ve öteki buzlar katılaştığı için katı malzeme yaklaşık beş kat artar. Daha çok katı, daha hızlı büyüyen ve daha ağır çekirdekler demektir; çekirdek 5–20 Dünya kütlesine (kaynağa göre) ulaşınca gazı hızla toplayıp dev gezegene dönüşür.",
+      "kid": "d34s3"
+    },
+    {
+      "soru": "Metre engeli nedir ve akış kararsızlığı bu engeli nasıl aşar?",
+      "cevap": "Gaz basınç desteği yüzünden ~50 m/s yavaş döner; metrelik katılar bu karşı rüzgârla enerji kaybedip 1 AB'de ~1000 yılda yıldıza düşer. Akış kararsızlığında katılar kendiliğinden yoğun kümeler oluşturur, küme kendi çekimiyle çöker ve doğrudan büyük asteroit boyunda gezegencikler oluşur; tehlikeli boylar atlanır.",
+      "kid": "d34s4"
+    },
+    {
+      "soru": "Alüminyum-26'nın yarılanma ömrü 0,7 milyon yıl. 2,1 milyon yıl sonra başlangıçtaki miktarın ne kadarı kalır?",
+      "cevap": "2,1 ÷ 0,7 = 3 yarılanma ömrü; (1/2)³ = 1/8, yani yaklaşık %12,5 kalır. Bu yüzden erken doğan gezegencikler bu ısıtıcıyla eriyebilirken birkaç milyon yıl sonra doğanlar aynı ısıyı alamaz.",
+      "kid": "d34s5"
+    },
+    {
+      "soru": "Jüpiter'in Güneş Sistemi'nin en yaşlı gezegeni olduğunu nereden biliyoruz?",
+      "cevap": "Kruijer ve arkadaşları (2017) demir göktaşlarındaki tungsten ve molibden izotoplarının iki ayrı depodan geldiğini ve bu depoların yaklaşık 1 milyon yıldan 3–4 milyon yıla kadar karışmadığını buldu. Aralarındaki duvar, ilk 1 milyon yılda ~20 Dünya kütlesine ulaşıp diskte boşluk açan Jüpiter olarak yorumlanır.",
+      "kid": "d34s6"
+    },
+    {
+      "soru": "Grand Tack modeli küçük Mars'ı nasıl açıklar? Neden 'model' diyoruz?",
+      "cevap": "Jüpiter 1,5 AB'ye kadar içe göçünce gezegencik diskini yaklaşık 1 AB'de kesip Mars bölgesini boşaltır; Mars'ı büyütecek malzeme kalmaz. Bu bir bilgisayar senaryosudur: hangi rezonansın işlediği konusunda bile kaynaklar tutarsız, gaz birikimini hesaba katmıyor ve küçük Mars'ın başka açıklamaları da var.",
+      "kid": "d34s7"
+    },
+    {
+      "soru": "Nice modelinde Jüpiter–Satürn 1:2 rezonansı ne anlama gelir? Bugün aralarındaki dönem oranı nedir?",
+      "cevap": "Satürn'ün bir turuna Jüpiter'in tam iki tur atması; bu geçiş yörüngeleri basıklaştırıp dengesizliği tetikler. Bugün oran 29,4 ÷ 11,86 ≈ 2,5'tir; yani ikili bir zamanlar 1:2'den geçmiş ve sonra açılmış olmalıdır (modele göre).",
+      "kid": "d34s8"
+    },
+    {
+      "soru": "Geç Ağır Bombardıman'a yöneltilen iki eleştiriyi açıkla.",
+      "cevap": "Birincisi örnek yanlılığı: Apollo'nun getirdiği erimiş kayaçların çoğu tek bir çarpmadan (Imbrium) gelmiş olabilir, Ay göktaşlarının eriyik yaşları ise 2,5–3,9 milyar yıla yayılır. İkincisi dinamik: Patroclus–Menoetius ikilisi gibi kanıtlar dev gezegen dengesizliğinin oluşumdan sonraki ilk 100 milyon yılda yaşandığını düşündürür; o zaman Nice modeli geç bir yağmurun nedeni olamaz.",
+      "kid": "d34s9"
+    },
+    {
+      "soru": "CAI'lerin yaşı ile Dünya'nın yaşı neden farklı verilir?",
+      "cevap": "CAI'ler diskte oluşan ilk katılardır: 4.567,30 ± 0,16 milyon yıl. Dünya ise embriyoların çarpışmasıyla on milyonlarca yıl sonra tamamlandı; yaşı 4,54 ± 0,05 milyar yıl olarak verilir. İlki Güneş Sistemi'nin başlangıcını, ikincisi gezegenin oluşumunu tarihler.",
+      "kid": "d34s10"
+    },
+    {
+      "soru": "67P kuyruklu yıldızının D/H ölçümü Dünya'nın suyu tartışmasında neden önemliydi?",
+      "cevap": "Rosetta'nın ROSINA aleti 67P'de Dünya suyunun üç katından fazla bir D/H oranı ölçtü. Dünya'nın suyu büyük ölçüde böyle kuyruklu yıldızlardan gelseydi oran daha yüksek olurdu; bu yüzden bulgu, asteroitlerin ya da Dünya'nın kendi yapı malzemesinin (enstatit kondrit benzeri) daha büyük pay taşıdığı modelleri güçlendirdi.",
+      "kid": "d34s11"
+    }
   ],
   "kaynaklar": [
-    { "ad": "Wikipedia – Nebular hypothesis", "url": "https://en.wikipedia.org/wiki/Nebular_hypothesis" },
-    { "ad": "Wikipedia – History of Solar System formation and evolution hypotheses", "url": "https://en.wikipedia.org/wiki/History_of_Solar_System_formation_and_evolution_hypotheses" },
-    { "ad": "Wikipedia – Solar System", "url": "https://en.wikipedia.org/wiki/Solar_System" },
-    { "ad": "Wikipedia – Frost line (astrophysics)", "url": "https://en.wikipedia.org/wiki/Frost_line_(astrophysics)" },
-    { "ad": "University of Toronto AST221 – Lecture 18 (planet formation)", "url": "https://www.astro.utoronto.ca/~mhvk/AST221/L18/L18.pdf" },
-    { "ad": "arXiv 1708.03360 – Disk evolution and the fate of water", "url": "https://arxiv.org/pdf/1708.03360" },
-    { "ad": "ESO – eso1436: Birth of Planets Revealed in Astonishing Detail in ALMA's Best Image Ever", "url": "https://messenger.eso.org/public/news/eso1436" },
-    { "ad": "ESO – eso1436a görüntü sayfası", "url": "https://messenger.eso.org/public/images/eso1436a" },
-    { "ad": "Wikipedia – Streaming instability", "url": "https://en.wikipedia.org/wiki/Streaming_instability" },
-    { "ad": "Sky & Telescope – New Horizons Reveals Full Picture of Arrokoth", "url": "https://skyandtelescope.org/astronomy-news/new-horizons-reveals-full-picture-of-arrokoth-and-how-planets-form/" },
-    { "ad": "UChicago News – For Mars, rapid formation stunted growth (2011)", "url": "https://news.uchicago.edu/story/mars-rapid-formation-stunted-growth" },
-    { "ad": "Phys.org – Evidence that Jupiter is the oldest planet (2017)", "url": "https://phys.org/news/2017-06-evidence-jupiter-oldest-planet-solar.html" },
-    { "ad": "Lee, Papanastassiou, Wasserburg (1977) – Aluminum-26 in the early solar system (Caltech)", "url": "https://authors.library.caltech.edu/records/kerdw-92g33" },
-    { "ad": "ScienceNordic – Different supernovae formed our early Solar System (2013)", "url": "https://www.sciencenordic.com/astronomy-denmark-light/different-supernovae-formed-our-early-solar-system/1386962" },
-    { "ad": "Wikipedia – Grand tack hypothesis", "url": "https://en.wikipedia.org/wiki/Grand_tack_hypothesis" },
-    { "ad": "Wikipedia – Nice model", "url": "https://en.wikipedia.org/wiki/Nice_model" },
-    { "ad": "Wikipedia – Late Heavy Bombardment", "url": "https://en.wikipedia.org/wiki/Late_Heavy_Bombardment" },
-    { "ad": "Morbidelli ve ark. – The timeline of the Lunar bombardment, revisited (arXiv 1801.03756)", "url": "https://arxiv.org/pdf/1801.03756" },
-    { "ad": "Astronomy – Cataclysm in the early solar system (Şubat 2020)", "url": "https://astronomy.com/science/cataclysm-in-the-early-solar-system" },
-    { "ad": "Phys.org – Researchers use new technique to date CAIs and chondrules (2012)", "url": "https://phys.org/news/2012-11-technique-date-cais-chondrules.amp" },
-    { "ad": "Wikipedia – Age of Earth", "url": "https://en.wikipedia.org/wiki/Age_of_Earth" },
-    { "ad": "Scientific American – Rosetta Pours Cold Water on the Cometary Origins of Earth's Oceans", "url": "https://www.scientificamerican.com/blog/observations/rosetta-pours-cold-water-on-the-cometary-origins-of-earth-s-oceans" },
-    { "ad": "Spaceflight Now – Rosetta raises questions on how water got to Earth (2014)", "url": "https://spaceflightnow.com/?p=1907" },
-    { "ad": "Piani ve ark. (2020) – Earth's water may have been inherited from material similar to enstatite chondrite meteorites, Science (ADS)", "url": "https://ui.adsabs.harvard.edu/abs/2020Sci...369.1110P" },
-    { "ad": "NASA NSSDCA – Earth Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html" },
-    { "ad": "Science Notes – What Is the Zodiacal Light? When and How to See It", "url": "https://sciencenotes.org/what-is-the-zodiacal-light-when-and-how-to-see-it/" }
+    {
+      "ad": "Wikipedia – Nebular hypothesis",
+      "url": "https://en.wikipedia.org/wiki/Nebular_hypothesis"
+    },
+    {
+      "ad": "Wikipedia – History of Solar System formation and evolution hypotheses",
+      "url": "https://en.wikipedia.org/wiki/History_of_Solar_System_formation_and_evolution_hypotheses"
+    },
+    {
+      "ad": "Wikipedia – Solar System",
+      "url": "https://en.wikipedia.org/wiki/Solar_System"
+    },
+    {
+      "ad": "Wikipedia – Frost line (astrophysics)",
+      "url": "https://en.wikipedia.org/wiki/Frost_line_(astrophysics)"
+    },
+    {
+      "ad": "University of Toronto AST221 – Lecture 18 (planet formation)",
+      "url": "https://www.astro.utoronto.ca/~mhvk/AST221/L18/L18.pdf"
+    },
+    {
+      "ad": "arXiv 1708.03360 – Disk evolution and the fate of water",
+      "url": "https://arxiv.org/pdf/1708.03360"
+    },
+    {
+      "ad": "ESO – eso1436: Birth of Planets Revealed in Astonishing Detail in ALMA's Best Image Ever",
+      "url": "https://messenger.eso.org/public/news/eso1436"
+    },
+    {
+      "ad": "ESO – eso1436a görüntü sayfası",
+      "url": "https://messenger.eso.org/public/images/eso1436a"
+    },
+    {
+      "ad": "Wikipedia – Streaming instability",
+      "url": "https://en.wikipedia.org/wiki/Streaming_instability"
+    },
+    {
+      "ad": "Sky & Telescope – New Horizons Reveals Full Picture of Arrokoth",
+      "url": "https://skyandtelescope.org/astronomy-news/new-horizons-reveals-full-picture-of-arrokoth-and-how-planets-form/"
+    },
+    {
+      "ad": "UChicago News – For Mars, rapid formation stunted growth (2011)",
+      "url": "https://news.uchicago.edu/story/mars-rapid-formation-stunted-growth"
+    },
+    {
+      "ad": "Phys.org – Evidence that Jupiter is the oldest planet (2017)",
+      "url": "https://phys.org/news/2017-06-evidence-jupiter-oldest-planet-solar.html"
+    },
+    {
+      "ad": "Lee, Papanastassiou, Wasserburg (1977) – Aluminum-26 in the early solar system (Caltech)",
+      "url": "https://authors.library.caltech.edu/records/kerdw-92g33"
+    },
+    {
+      "ad": "ScienceNordic – Different supernovae formed our early Solar System (2013)",
+      "url": "https://www.sciencenordic.com/astronomy-denmark-light/different-supernovae-formed-our-early-solar-system/1386962"
+    },
+    {
+      "ad": "Wikipedia – Grand tack hypothesis",
+      "url": "https://en.wikipedia.org/wiki/Grand_tack_hypothesis"
+    },
+    {
+      "ad": "Wikipedia – Nice model",
+      "url": "https://en.wikipedia.org/wiki/Nice_model"
+    },
+    {
+      "ad": "Wikipedia – Late Heavy Bombardment",
+      "url": "https://en.wikipedia.org/wiki/Late_Heavy_Bombardment"
+    },
+    {
+      "ad": "Morbidelli ve ark. – The timeline of the Lunar bombardment, revisited (arXiv 1801.03756)",
+      "url": "https://arxiv.org/pdf/1801.03756"
+    },
+    {
+      "ad": "Astronomy – Cataclysm in the early solar system (Şubat 2020)",
+      "url": "https://astronomy.com/science/cataclysm-in-the-early-solar-system"
+    },
+    {
+      "ad": "Phys.org – Researchers use new technique to date CAIs and chondrules (2012)",
+      "url": "https://phys.org/news/2012-11-technique-date-cais-chondrules.amp"
+    },
+    {
+      "ad": "Wikipedia – Age of Earth",
+      "url": "https://en.wikipedia.org/wiki/Age_of_Earth"
+    },
+    {
+      "ad": "Scientific American – Rosetta Pours Cold Water on the Cometary Origins of Earth's Oceans",
+      "url": "https://www.scientificamerican.com/blog/observations/rosetta-pours-cold-water-on-the-cometary-origins-of-earth-s-oceans"
+    },
+    {
+      "ad": "Spaceflight Now – Rosetta raises questions on how water got to Earth (2014)",
+      "url": "https://spaceflightnow.com/?p=1907"
+    },
+    {
+      "ad": "Piani ve ark. (2020) – Earth's water may have been inherited from material similar to enstatite chondrite meteorites, Science (ADS)",
+      "url": "https://ui.adsabs.harvard.edu/abs/2020Sci...369.1110P"
+    },
+    {
+      "ad": "NASA NSSDCA – Earth Fact Sheet",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html"
+    },
+    {
+      "ad": "Science Notes – What Is the Zodiacal Light? When and How to See It",
+      "url": "https://sciencenotes.org/what-is-the-zodiacal-light-when-and-how-to-see-it/"
+    }
   ]
 }

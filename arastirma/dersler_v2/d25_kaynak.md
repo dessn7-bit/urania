@@ -5,7 +5,7 @@ Not: Tüm satırlar bu oturumda (30 Ekim 2026) WebFetch ile açılan sayfalardan
 
 ## Bölüm 0 — Işık hızı sorunu
 - c = 299.792.458 m/s, tam | https://physics.nist.gov/cuu/Constants/Table/allascii.txt | "speed of light in vacuum 299 792 458 (exact) m s^-1"
-- 1983'ten beri metre ışıkla tanımlı; metre = ışığın 1/299.792.458 s'de aldığı yol | https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Speed_of_light | "Its exact value is defined as 299792458 metres per second"; metre since 1983 = distance light travels in 1/299792458 s
+- 1983'ten beri metre ışıkla tanımlı; metre = ışığın 1/299.792.458 s'de aldığı yol | https://en.wikipedia.org/wiki/Speed_of_light | "Its exact value is defined as 299792458 metres per second"; metre since 1983 = distance light travels in 1/299792458 s
 - Ay'dan ~1,3 s, Güneş'ten ~8,3 dk | aynı sayfa | "about 1.3 seconds" (Moon); "about 8.3 minutes" (Sun, 1 AU)
 - Rømer 1676, Io; yörünge çapını ~22 dk | aynı sayfa | Rømer first showed finite speed studying Io; "about 22 minutes to cross the diameter of Earth's orbit"
 - Esir varsayımı ve Maxwell hızının "neye göre" sorusu | https://en.wikipedia.org/wiki/Michelson-Morley | deneyin amacı esire göre hareketi (aether wind) saptamaktı
@@ -38,7 +38,7 @@ Not: Tüm satırlar bu oturumda (30 Ekim 2026) WebFetch ile açılan sayfalardan
 
 ## Bölüm 4 — Eşzamanlılık
 - Tren ve şimşek düşünce deneyi; A, B, M; trendeki gözlemci B'yi önce görür; "Events which are simultaneous with reference to the embankment are not simultaneous with respect to the train"; "Every reference-body ... has its own particular time" | https://philosophie.ens.fr/IMG/EGS%20Einstein%20relativity%208-9.pdf | Relativity: The Special and General Theory (İng. çev. 1920), bölüm 8–9
-- Işıktan hızlı bilgi/enerji nedenselliği bozar | https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Speed_of_light | "impossible for information or energy to travel faster than c" ... causality violated
+- Işıktan hızlı bilgi/enerji nedenselliği bozar | https://en.wikipedia.org/wiki/Speed_of_light | "impossible for information or energy to travel faster than c" ... causality violated
 - Gündelik hızlarda farkın çok küçük olması | akıl yürütme (γ ≈ 1; bölüm 6'daki sayılar)
 
 ## Bölüm 5 — Işık saati
@@ -48,7 +48,7 @@ Not: Tüm satırlar bu oturumda (30 Ekim 2026) WebFetch ile açılan sayfalardan
 - Örnek 3-4-5 üçgeni: c·t = 3,75 m, t = 12,5 ns, γ(0,6) = 1,25 | hesap
 
 ## Bölüm 6 — Lorentz çarpanı
-- γ = 2 (%86,6), γ = 10 (%99,5), c'ye yaklaşınca sınırsız | https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Speed_of_light | "γ = 2 at 86.6% of c and γ = 10 at 99.5% of c"
+- γ = 2 (%86,6), γ = 10 (%99,5), c'ye yaklaşınca sınırsız | https://en.wikipedia.org/wiki/Speed_of_light | "γ = 2 at 86.6% of c and γ = 10 at 99.5% of c"
 - γ değerleri %50 ≈ 1,15; %90 ≈ 2,29; %99 ≈ 7,1; %99,99 ≈ 71 | veri/deney_rehber.json "gorelilik" adımları (Wikipedia Time dilation kaynaklı) + hesap; %10 → 1,005 hesap
 - Uçak 250 m/s: γ − 1 ≈ 3,5e-13 | hesap (küçük hız yaklaşımı)
 - Parker: Aralık 2024, 692.000 km/sa ≈ 192 km/s, ışık hızının ≈ %0,064'ü | https://www.jhuapl.edu/news/news-releases/241227-parker-closest-approach (deney_rehber.json kaynağı) | deney metni: "saatte 692.000 km ... ışık hızının yalnız yaklaşık %0,064'ü"
@@ -81,7 +81,7 @@ Not: Tüm satırlar bu oturumda (30 Ekim 2026) WebFetch ile açılan sayfalardan
 - Dünya çizgisi (world-line), dünya noktası | https://en.wikisource.org/wiki/Translation:Space_and_Time | "a curve in the world, the world-line"
 - Öz zaman = dünya çizgisinin "uzunluğu"; düz çizgi en uzun | https://en.wikipedia.org/wiki/Twin_paradox | "the issue is how long the world-lines are, not how bent"
 - √(Δt² − Δx²) = Δt/γ özdeşliği | hesap (cebir; örnekte gösterildi)
-- Işık konisi ve nedensellik | https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Speed_of_light | bilgi c'den hızlı gidemez, nedensellik
+- Işık konisi ve nedensellik | https://en.wikipedia.org/wiki/Speed_of_light | bilgi c'den hızlı gidemez, nedensellik
 - Galata Köprüsü olay örneği | akıl yürütme (örnek)
 
 ## Bölüm 10 — İkizler paradoksu
@@ -95,7 +95,7 @@ Not: Tüm satırlar bu oturumda (30 Ekim 2026) WebFetch ile açılan sayfalardan
 - u = (u′ + v)/(1 + u′v/c²); küçük hızda u′ + v; c + v = c | https://en.wikipedia.org/wiki/Velocity-addition_formula (doğrulamada wikitext indirildi) | "u_x = (u_x' + v)/(1 + v u_x'/c²)"; "not noticeable at low velocities"; u′ = c koyunca u = c cebirle (hesap). [Doğrulama: physics.it.com zayıf kaynak olduğu için değiştirildi]
 - 0,5c + 0,5c = 0,8c | hesap
 - Fizeau 1851, akan su; Laue 1907 göreli toplama ile açıkladı | https://en.wikipedia.org/wiki/Fizeau_experiment | "Fresnel drag coefficient can be explained as a natural consequence of the relativistic formula"
-- Kütleli cismi c'ye çıkarmak sonsuz enerji | https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Speed_of_light | "would take an infinite amount of energy"
+- Kütleli cismi c'ye çıkarmak sonsuz enerji | https://en.wikipedia.org/wiki/Speed_of_light | "would take an infinite amount of energy"
 - Toplam enerji = γmc² | https://en.wikipedia.org/wiki/Mass%E2%80%93energy_equivalence | "can be rewritten as E = γmc2"
 - LHC 27 km, 6,8 TeV (2022) | https://universetoday.com/155591/large-hadron-collider-restarts-shooting-protons-at-record-energy-levels | "record energy level of 6.8 tera electronvolts"; "27-kilometer-round"
 - Proton durgun enerjisi 938,272 MeV | https://physics.nist.gov/cuu/Constants/Table/allascii.txt | "938.272 089 43 MeV"
