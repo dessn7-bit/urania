@@ -1,0 +1,541 @@
+{
+  "id": "d32",
+  "unite": "fizik",
+  "yeni": true,
+  "baslik": "Parçacıklar ve Standart Model: evrenin yapı taşları",
+  "ozet": "Atom çekirdeğinin içinde kuarklar, kuarkların arasında gluonlar, çevrede elektron ve kuzenleri var. Bu derste maddenin bugün bilinen en küçük parçalarını, dört temel kuvveti ve onları taşıyan parçacıkları, Higgs alanını ve 2012'deki keşfi, her şeyin içinden geçen nötrinoları, karşıt maddeyi, uzaydan gelen kozmik ışınları ve Standart Model'in hâlâ açıklayamadığı soruları öğreneceksin.",
+  "on_bilgi": [
+    "d8",
+    "d25",
+    "d29",
+    "d31"
+  ],
+  "bolumler": [
+    {
+      "baslik": "Atomdan kuarka: iç içe kutular",
+      "paragraflar": [
+        "Bir bardak çayı düşün. Çay su moleküllerinden, moleküller atomlardan, atomlar bir elektron bulutu ve küçücük bir çekirdekten oluşur (d28, d31). Çekirdek proton ve nötronlardan yapılmıştır. Peki proton neyden yapılmıştır? Bu soruyu sormak, iç içe geçmiş kutuları tek tek açmaya benzer. Bu derste son kutuya, bugün bildiğimiz en küçük parçalara geleceğiz ve fizikçilerin onları düzenlediği tabloya, Standart Model'e bakacağız.",
+        "Kutuların açılışı bir yüzyıldan uzun sürdü. 1897'de J. J. Thomson elektronu buldu. 1911'de Rutherford çekirdeği keşfetti, 1932'de James Chadwick nötronu. 1932'de bir an için iş bitmiş gibiydi: proton, nötron ve elektronla bütün atomlar açıklanabiliyordu. Ama aynı yıl kozmik ışınlarda pozitron bulundu, 1936'da müon, 1947'de pion. Sonraki on yıllarda yeni parçacıklar birbirini izledi. Düzen ancak bu parçacıkların çoğunun daha küçük parçalardan yapıldığı anlaşılınca geri geldi.",
+        "Temel parçacık, bildiğimiz kadarıyla daha küçük parçalardan oluşmayan parçacıktır. “Bildiğimiz kadarıyla” sözü önemli: bir zamanlar proton da temel sanılıyordu. Bugünkü tabloya göre 12 madde parçacığı, 4 tür kuvvet taşıyıcısı ve Higgs bozonu var; toplam 17. CERN'in özetine göre madde parçacıkları altışar üyeli iki aileye ayrılır: kuarklar ve leptonlar. Bu derste bunları tek tek tanıyacağız.",
+        "Ölçeği d31'den hatırla: hidrojen çekirdeği, yani tek bir proton, yaklaşık 1,7 femtometre çapındadır; atomun kendisi bunun yaklaşık 60.000 katı. SLAC'ın 1968 deneyleri protonun içinde bundan da küçük, nokta gibi davranan nesneler gösterdi. Standart Model'de de kuarkların ve elektronun bir iç yapısı yoktur. “Temel” sözcüğünün deneysel anlamı budur: şimdiye kadar hiçbir deney onların daha küçük parçalardan yapıldığını göstermedi.",
+        "Bir birim notu. Parçacık fizikçileri kütleleri enerji birimiyle verir, çünkü d25'teki E = mc² ikisini birbirine çevirir. Elektronvolt, bir elektronun bir voltluk gerilimde kazandığı enerjidir. MeV bunun milyon, “milyar elektronvolt” (GeV) milyar, “trilyon elektronvolt” (TeV) trilyon katıdır. Bu birimle elektron yaklaşık 0,511 MeV, proton yaklaşık 938 MeV gelir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: 938 MeV kaç kilogram eder?",
+        "metin": "Veriler: d31'deki fisyon verisine göre 202,5 MeV = 3,24 × 10⁻¹¹ jul; ışık hızı c = 299.792.458 m/s. 1. adım: 1 MeV = 3,24 × 10⁻¹¹ ÷ 202,5 ≈ 1,60 × 10⁻¹³ jul. 2. adım: Protonun kütle enerjisi = 938 × 1,60 × 10⁻¹³ ≈ 1,50 × 10⁻¹⁰ jul. 3. adım: m = E ÷ c² = 1,50 × 10⁻¹⁰ ÷ (3,0 × 10⁸)² = 1,50 × 10⁻¹⁰ ÷ 9,0 × 10¹⁶ ≈ 1,67 × 10⁻²⁷ kg. Sonuç: 938 MeV, yaklaşık 1,67 × 10⁻²⁷ kg eder; yani bir kilogramda yaklaşık 6 × 10²⁶ proton kütlesi vardır."
+      },
+      "akilda": "Madde → molekül → atom → çekirdek → proton ve nötron → kuark. Bugünkü tabloda 17 temel parçacık var: 12 madde parçacığı (6 kuark, 6 lepton), 4 tür kuvvet taşıyıcısı ve Higgs bozonu."
+    },
+    {
+      "baslik": "Kuarklar: protonun içindeki üçlü",
+      "paragraflar": [
+        "1964'te Murray Gell-Mann ve George Zweig birbirinden habersiz aynı fikre vardı: proton, nötron ve o yıllarda bulunan pek çok parçacık, daha küçük parçalardan yapılmış olmalıydı. Gell-Mann bu parçalara kuark adını verdi; sözcüğü James Joyce'un 1939 tarihli Finnegans Wake romanındaki “Three quarks for Muster Mark!” dizesinden aldı. Kuark, protonları ve nötronları oluşturan temel parçacıktır.",
+        "Kuarkların en şaşırtıcı yanı elektrik yükleridir: kesirlidir. Yukarı, tılsımlı ve üst kuarklar elektronun yükünün +2/3'ünü, aşağı, garip ve alt kuarklar −1/3'ünü taşır. Wikipedia'ya göre proton iki yukarı ve bir aşağı kuarktan, nötron ise iki aşağı ve bir yukarı kuarktan oluşur. Topla: protonda 2/3 + 2/3 − 1/3 = +1, nötronda 2/3 − 1/3 − 1/3 = 0. Hesap tutuyor. Kuarklardan yapılan parçacıklara hadron denir; üç kuarklılara baryon, bir kuark ile bir karşıt kuarktan oluşanlara mezon denir. Proton ve nötron birer baryondur.",
+        "Kuarklar yalnızca bir kâğıt üstü fikir miydi? 1968'de ABD'deki SLAC hızlandırıcısında çok enerjik elektronlar protonlara gönderildi. Sonuçlar 1969'da yayımlandı ve protonun içinde nokta gibi küçük nesneler bulunduğunu gösterdi; bu, Rutherford'un çekirdeği bulduğu deneyin bir kat daha içerideki tekrarı gibiydi. Jerome Friedman, Henry Kendall ve Richard Taylor bu çalışmayla 1990 Nobel Fizik Ödülü'nü aldı.",
+        "Kuarkların altı türü, fizikçilerin deyişiyle altı “çeşnisi” var ve bulunuşları yıllar sürdü: tılsımlı kuark Kasım 1974'te J-psi parçacığının içinde, alt kuark 1977'de Fermilab'da Leon Lederman'ın ekibiyle, en ağırı üst kuark ise 1995'te Fermilab'da CDF ve DØ deneylerince, 18 yıllık bir aramanın sonunda bulundu. Üst kuarkın kütlesi yaklaşık 173 milyar elektronvolttur.",
+        "Garip kuarkın varlığı da Wikipedia'ya göre aynı SLAC saçılma deneyleriyle dolaylı olarak doğrulandı. Kuarkların kütleleri arasında uçurumlar var: yukarı ve aşağı kuarklar birkaç MeV mertebesindeyken üst kuark yaklaşık 173.000 MeV'dir; yani tek bir üst kuark, yaklaşık 184 protonun toplam kütlesi kadar ağırdır. Üstelik bu ağırlığa rağmen iç yapısı olmayan, nokta gibi bir parçacık sayılır. Kütlenin “içerideki madde miktarı” olmadığını, bir sonraki bölümlerde protonun kendisinde de göreceksin."
+      ],
+      "akilda": "Kuarkı 1964'te Gell-Mann ve Zweig önerdi; SLAC 1968'de protonun içinde gördü (Nobel 1990). Proton = iki yukarı + bir aşağı, nötron = iki aşağı + bir yukarı kuark. Altı çeşni var; sonuncusu, üst kuark, 1995'te bulundu."
+    },
+    {
+      "baslik": "Hapsolmuş kuarklar ve gluonlar",
+      "paragraflar": [
+        "Hiç kimse tek başına bir kuark görmedi. Wikipedia'nın ifadesiyle kuarklar asla yalnız bulunmaz; ya hadronların içindedir ya da çok sıcak bir kuark-gluon çorbasında. Buna renk hapsi denir. Neden? Kuarkları bir arada tutan güçlü kuvvet, alışık olduğumuz kuvvetlerin tersine davranır: kuarklar birbirinden uzaklaştıkça aradaki bağ zayıflamaz, güçlenir.",
+        "Güçlü kuvvetin yükü elektrik yükü gibi tek tür değildir, üç türdür. Fizikçiler bunlara keyfî olarak kırmızı, yeşil ve mavi der. Buradaki “renk” sözcüğü yalnız bir ad; kuarkların gerçek bir rengi yoktur. Kuvveti taşıyan parçacıklara gluon denir. Gluonun ilginç bir özelliği var: Wikipedia'ya göre her gluon bir renk ve bir karşıt renk taşır. Yani gluonlar, elektrik yükü taşımayan fotonların aksine, kendi aralarında da etkileşir. Wikipedia'ya göre sekiz farklı gluon vardır ve kütlesizdirler. Gluonun varlığı 1979'da DESY laboratuvarında, çarpışmalardan çıkan üç parçacık demetinde dolaylı olarak görüldü.",
+        "Bir kuarkı zorla çekip koparmaya çalışırsan ne olur? Wikipedia'ya göre belli bir enerji eşiğinin üstünde kuark ile karşıt kuark çiftleri oluşur. Harcadığın enerji yeni parçacıklara dönüşür ve sonunda elinde tek bir kuark değil, yeni hadronlar kalır. Benzetme olarak bir lastik bandı düşün: gerdikçe direnci artar ve kopunca iki yeni uç oluşur. Benzetmenin sınırı şu: lastik bant kopunca eski malzemenin iki parçası kalır, kuarkta ise kopma noktasında E = mc² ile yepyeni parçacıklar yaratılır.",
+        "Güçlü kuvvetin bir artığı da d31'de çekirdeği bir arada tutan nükleer kuvvettir. Proton ve nötronun renkleri dışarıdan bakınca birbirini dengeler, ama bu denge kusursuz değildir; kuark ve gluonların bir kısmı kısa mesafede komşu nükleona sızar. Yani Güneş'in yanmasından Akkuyu'daki fisyona kadar bütün çekirdek fiziği, bu derin kuvvetin dışarı taşan küçük bir yankısıdır."
+      ],
+      "akilda": "Kuarklar renk hapsi yüzünden asla yalnız bulunmaz; aralarındaki güçlü kuvvet uzaklıkla güçlenir. Güçlü kuvveti üç tür renk yüküyle sekiz kütlesiz gluon taşır; gluonlar kendi aralarında da etkileşir."
+    },
+    {
+      "baslik": "Protonun kütlesi nereden gelir?",
+      "paragraflar": [
+        "Şimdi şaşırtıcı bir sorunun zamanı. Proton üç kuarktan yapılmışsa, kütlesi üç kuarkın kütlelerinin toplamı mıdır? Hayır. Wikipedia'ya göre protonun üç kuarkı protonun yaklaşık 938 MeV'lik kütlesine yalnızca yaklaşık 9 MeV katar, yani yüzde bir kadar. Geri kalan yüzde doksan dokuz, büyük ölçüde kuarkları hapseden gluon alanının enerjisinden gelir.",
+        "Bunu d25'teki E = mc² ile düşün. Bir kutunun içine hapsedilmiş enerji, kutunun kütlesine eklenir. Protonun içinde kuarkları bağlayan güçlü alan büyük bir enerji taşır; bu enerji, dışarıdan bakınca protonun kütlesi olarak görünür. Yani elindeki bir taşın ağırlığının neredeyse tamamı, aslında protonların ve nötronların içine hapsedilmiş alan enerjisidir.",
+        "Burada yaygın bir yanlışı düzeltelim. Sık sık “Higgs alanı her şeye kütlesini verir” denir. CERN'e göre Brout-Englert-Higgs mekanizması temel parçacıkların kütlesinin kökenini açıklar: elektronun, kuarkların, W ve Z bozonlarının kütlesini. Ama senin kütlenin neredeyse tamamı proton ve nötronlardadır ve onların kütlesinin de yalnızca yüzde biri kadarı kuark kütlelerinden gelir. Higgs alanı ortadan kalksaydı dünya bambaşka olurdu, örneğin elektronlar kütlesiz kalırdı; ama vücudunun kütlesinin büyük kısmı Higgs'ten değil, güçlü kuvvetin enerjisinden gelir.",
+        "Elektronun payı ise çok küçüktür: elektron yaklaşık 0,511 MeV, proton yaklaşık 938 MeV. Oran 938 ÷ 0,511 ≈ 1.836. Bir hidrojen atomunda kütlenin yaklaşık iki binde biri elektronda, gerisi protondadır. d31'de atom kütlesinin neredeyse tamamının çekirdekte olduğunu görmüştün; işte nedeni."
+      ],
+      "ornek": {
+        "baslik": "Örnek: 70 kg'lık bir insanın kütlesinin ne kadarı kuarkların kendi kütlesidir?",
+        "metin": "Varsayım: vücut kütlesinin neredeyse tamamı proton ve nötronlardadır (elektronlar her nükleon için en fazla yaklaşık 1/1.836 katkı verir). Veri: protonda kuark kütleleri ≈ 9 MeV, toplam ≈ 938 MeV; nötron için de oran kabaca aynı kabul edilir. 1. adım: Oran ≈ 9 ÷ 938 ≈ 0,0096, yaklaşık %1. 2. adım: 70 kg × 0,0096 ≈ 0,67 kg. 3. adım: Elektronların payı en fazla 70 ÷ 1.836 ≈ 0,04 kg. Sonuç: 70 kg'lık bir insanın yalnızca yaklaşık 0,7 kg'ı kuarkların kendi kütlesidir; yaklaşık 69 kg, protonların ve nötronların içinde hapsolmuş güçlü kuvvet enerjisinden gelir."
+      },
+      "akilda": "Protonun kütlesinin yalnız yaklaşık %1'i kuarkların kütlesidir; gerisi büyük ölçüde gluon alanının enerjisidir. Higgs alanı temel parçacıklara kütle verir, ama senin kütlenin çoğu güçlü kuvvetten gelir."
+    },
+    {
+      "baslik": "Leptonlar: elektron ve ağır kuzenleri",
+      "paragraflar": [
+        "Madde parçacıklarının ikinci ailesi leptonlardır. Lepton, güçlü kuvvetle etkileşmeyen temel madde parçacığıdır: Wikipedia'ya göre leptonlar renk yükü taşımaz ve güçlü etkileşime karşılık vermez. Bu yüzden kuarklar gibi hapsolmaz, tek başlarına dolaşabilirler. Altı lepton vardır: elektron, müon ve tau ile her birinin nötrinosu. Elektron, müon ve tau −1 elektrik yükü taşır, nötrinolar yüksüzdür.",
+        "Müon ve tau, elektronun ağır kuzenleri gibidir: aynı yük, benzer davranış, çok farklı kütle. Wikipedia'ya göre elektron 0,511 MeV, müon 105,7 MeV, tau 1,78 milyar elektronvolttur. Müonu Carl Anderson 1936'da kozmik ışınları incelerken buldu; 1937'de Seth Neddermeyer ile birlikte yapılan bulut odası ölçümleri keşfi pekiştirdi. Müonlar kararsızdır ve kısa sürede bozunur; d25'te kozmik ışınların atmosferde ürettiği müonların yere ulaşabilmesinin özel göreliliğin zaman genişlemesiyle nasıl açıklandığını görmüştün.",
+        "Nötrinoların da üç türü var. Elektron nötrinosu 1956'da yakalandı. 1962'de Leon Lederman, müon nötrinosunun elektron nötrinosundan farklı bir parçacık olduğunu gösterdi. Tau nötrinosunun ilk doğrudan kanıtı ise 2000'de Fermilab'dan geldi. Nötrinoları birkaç bölüm sonra ayrıca ele alacağız.",
+        "Kuarklar ve leptonlar birlikte üç kuşak oluşturur. CERN'e göre birinci kuşak en hafif ve en kararlı olanıdır; daha ağır kuşakların parçacıkları hızla daha kararlı parçacıklara bozunur. Bu yüzden çevrendeki bütün kararlı madde birinci kuşaktan yapılmıştır: yukarı ve aşağı kuarklar, elektron, elektron nötrinosu. Müonlar, taular, garip ve tılsımlı kuarklar ancak kozmik ışın çarpışmalarında ya da hızlandırıcılarda kısa bir süre görünür. Doğanın neden tam üç kuşak yaptığını ve kütlelerin neden bu kadar farklı olduğunu kimse bilmiyor; CERN bunu Standart Model'in açık soruları arasında sayar."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Elektronun kuzenleri ne kadar ağır?",
+        "metin": "Veriler: elektron 0,511 MeV, müon 105,7 MeV, tau 1,78 milyar elektronvolt = 1.780 MeV, proton 938 MeV. 1. adım: Müon ÷ elektron = 105,7 ÷ 0,511 ≈ 207. 2. adım: Tau ÷ elektron = 1.780 ÷ 0,511 ≈ 3.480. 3. adım: Tau ÷ proton = 1.780 ÷ 938 ≈ 1,9. Sonuç: müon elektrondan yaklaşık 207, tau yaklaşık 3.480 kat ağırdır; tau bir protonun neredeyse iki katı kütlededir ama yine de iç yapısı olmayan temel bir parçacık sayılır."
+      },
+      "akilda": "Leptonlar güçlü kuvveti hissetmez: elektron, müon, tau (−1 yük) ve üç nötrino (yüksüz). Müon elektrondan ~207, tau ~3.480 kat ağır. Kararlı maddenin hepsi birinci kuşaktandır; neden üç kuşak olduğu bilinmiyor."
+    },
+    {
+      "baslik": "Dört temel kuvvet ve taşıyıcıları",
+      "paragraflar": [
+        "Yere düşen elma, mıknatısa yapışan toplu iğne, Güneş'in yanması, çekirdeğin bir arada durması. CERN'e göre evrendeki bütün etkileşimler dört temel kuvvete indirgenir: kütleçekimi, elektromanyetizma, zayıf kuvvet ve güçlü kuvvet. Kütleçekimi en zayıfıdır ama menzili sonsuzdur. Elektromanyetizmanın menzili de sonsuzdur ve kütleçekiminden çok güçlüdür. Zayıf ve güçlü kuvvetlerin menzili çok kısadır, yalnız atom altı ölçekte etkilidirler. Güçlü kuvvet dördünün en güçlüsüdür; zayıf kuvvet güçlü ve elektromanyetik kuvvetten zayıf, ama kütleçekiminden çok daha güçlüdür.",
+        "Kuantum fiziğinde kuvvet, parçacıklar arasında başka parçacıkların alınıp verilmesiyle anlatılır. Bunlara taşıyıcı parçacık ya da kuvvet taşıyıcısı denir. CERN'e göre elektromanyetizmayı foton, güçlü kuvveti gluon, zayıf kuvveti W ve Z bozonları taşır. Kütleçekimini taşıması beklenen parçacığa graviton denir, ama graviton hiç gözlenmedi. d29'daki Feynman diyagramlarında parçacıklar arasındaki dalgalı çizgiler işte bu taşıyıcılardı.",
+        "Sık kullanılan bir benzetme: buz üstünde iki patenci birbirine ağır bir top atarsa, atan da yakalayan da geri itilir; böylece top alışverişi bir itme kuvveti gibi görünür. Bu resim itmeyi sezgisel kılar ama iki yerde çöker. Birincisi çekimi açıklayamaz; top atarak birini kendine çekemezsin. İkincisi gerçek taşıyıcılar küçük toplar değil, kuantum alanlarının dalgalanmalarıdır ve d29'da gördüğün gibi hesap olasılık genlikleriyle yapılır. Benzetmeyi “kuvvet bir şeyin alınıp verilmesidir” fikrine giriş olarak kullan, fazlası için değil.",
+        "Menzil ile kütle arasında güzel bir bağ var. Wikipedia'ya göre foton kütlesizdir ve elektromanyetizmanın menzili sonsuzdur; W ve Z bozonları ise çok ağırdır ve bu yüksek kütle zayıf kuvvetin menzilini sınırlar. Kabaca, ağır bir taşıyıcı “uzağa gidemez”. Gluonlar kütlesiz olduğu hâlde güçlü kuvvetin menzili kısadır; bunun nedeni kütle değil, önceki bölümde gördüğün renk hapsidir. Bir başka not: Wikipedia'ya göre kuarklar, dört kuvvetin hepsiyle etkileşen bilinen tek temel parçacıklardır."
+      ],
+      "akilda": "Dört temel kuvvet: kütleçekimi, elektromanyetizma, zayıf, güçlü. Taşıyıcıları: foton, W ve Z, gluon; graviton öngörülüyor ama gözlenmedi. Kütlesiz foton sonsuz menzil, ağır W ve Z kısa menzil demektir."
+    },
+    {
+      "baslik": "Zayıf kuvvet: W ve Z bozonları",
+      "paragraflar": [
+        "Zayıf kuvvet adının hakkını vermez gibi görünür, ama o olmasa Güneş yanmazdı. d4'te Güneş'in proton-proton zincirinin ilk adımının zayıf kuvvetle gerçekleştiğini ve bu yüzden çok yavaş olduğunu gördün. d31'deki beta bozunumu da zayıf kuvvetin işidir: bir nötron protona dönüşür, bir elektron ve bir karşıt nötrino çıkar. Zayıf kuvvetin özelliği, parçacıkların kimliğini değiştirebilmesidir. Nötron iki aşağı ve bir yukarı, proton iki yukarı ve bir aşağı kuarktan oluştuğuna göre, nötronun protona dönüşmesi kuark diliyle bir aşağı kuarkın yukarı kuarka dönüşmesidir.",
+        "1967'de Steven Weinberg ve Abdus Salam'ın çalışmalarıyla elektromanyetizma ile zayıf kuvvet tek bir kuramda, elektrozayıf kuramda birleştirildi. CERN'e göre Z bozonunun dolaylı kanıtı 1973'te geldi. Doğrudan keşif için daha büyük bir makine gerekiyordu.",
+        "1983'te CERN'deki UA1 ve UA2 deneyleri önce Ocak'ta W bozonunun, birkaç ay sonra Mayıs'ta Z bozonunun izlerini yakaladı. Carlo Rubbia ve Simon van der Meer bu çalışmayla 1984 Nobel Fizik Ödülü'nü aldı. Wikipedia'ya göre W bozonunun kütlesi 80,377 ± 0,012, Z bozonununki 91,1876 ± 0,0021 milyar elektronvolttur. W, +1 ya da −1 elektrik yükü taşır, Z yüksüzdür. İkisi de son derece kısa ömürlüdür: yarı ömürleri yaklaşık 3 × 10⁻²⁵ saniyedir.",
+        "Bu sayıların büyüklüğünü hissetmek için protonla karşılaştır: W, bir protonun yaklaşık 86 katı, Z yaklaşık 97 katı ağırdır. Böyle ağır parçacıkları yaratmak için çok yüksek çarpışma enerjileri gerekir; W ve Z'nin 1983'e kadar beklemesinin nedeni budur. Önceki bölümde gördüğün gibi aynı ağır kütle, zayıf kuvvetin menzilinin neden bu kadar kısa olduğunu da açıklar."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Bir Z bozonu bozunmadan ne kadar yol alabilir?",
+        "metin": "Veriler: yarı ömür yaklaşık 3 × 10⁻²⁵ saniye; hiçbir şey ışıktan hızlı gidemez, c = 3,0 × 10⁸ m/s. 1. adım: En fazla yol ≈ c × süre = 3,0 × 10⁸ × 3 × 10⁻²⁵ = 9 × 10⁻¹⁷ m. 2. adım: Femtometreye çevir: 1 femtometre = 10⁻¹⁵ m, yani 9 × 10⁻¹⁷ m = 0,09 femtometre. 3. adım: Karşılaştır: d31'e göre hidrojen çekirdeğinin, yani bir protonun çapı yaklaşık 1,7 femtometre. 0,09 ÷ 1,7 ≈ 0,05. Sonuç: bir Z bozonu ışık hızında gitse bile bozunmadan önce bir protonun çapının yirmide biri kadar yol alabilir; bu yüzden dedektörler onu değil, bozunma ürünlerini görür."
+      },
+      "akilda": "Zayıf kuvvet parçacıkların kimliğini değiştirir (beta bozunumu, Güneş'in ilk adımı). Elektrozayıf kuram 1967; W ve Z 1983'te CERN'de bulundu (Nobel 1984): 80,4 ve 91,2 milyar elektronvolt, ömürleri ~10⁻²⁵ saniye."
+    },
+    {
+      "baslik": "Higgs alanı ve 2012 keşfi",
+      "paragraflar": [
+        "Elektrozayıf kuramda foton kütlesizdir, W ve Z ise çok ağırdır. Bu kütleler, ve elektronun ya da kuarkların kütleleri, nereden geliyor? 1964'te François Englert, Robert Brout, Peter Higgs ve onlardan bağımsız olarak Gerald Guralnik, C. R. Hagen ve Tom Kibble bir çözüm önerdi: bütün evreni dolduran bir alan, bugün Higgs alanı denen kuantum alanı. Parçacıklar bu alanla ne kadar güçlü etkileşirse o kadar kütleli olur. Higgs alanının parçacık olarak kendini gösteren biçimine Higgs bozonu denir.",
+        "Popüler bir benzetme: bir partiye ünlü biri girer, insanlar çevresine toplanır ve salonda zor ilerler; tanınmayan biri ise rahatça yürür. Benzetmenin sınırı önemli: kalabalık sürtünme gibi davranır, hareket edeni yavaşlatır ve enerji kaybettirir. Higgs alanı öyle değildir; sabit hızla giden bir parçacığı yavaşlatmaz, onun hızlanmaya ne kadar direndiğini, yani kütlesini belirler. Benzetme yalnızca “herkes alanla aynı derecede etkileşmez” fikri için iyidir.",
+        "Bozonu bulmak 48 yıl sürdü. 4 Temmuz 2012'de CERN'de ATLAS ve CMS deneyleri, yaklaşık 125 milyar elektronvoltta yeni bir parçacık bulduklarını duyurdu. Sonuç beş sigma düzeyindeydi. İki deneyde birlikte yaklaşık 6.000 kişi çalışıyordu. İpuçları özellikle iki fotona ve dört leptona bozunan olaylardan geldi. Bugünkü değer Wikipedia'ya göre 125,09 ± 0,24 milyar elektronvolttur. Higgs bozonunun spini sıfırdır; bu özelliğe sahip bilinen tek temel parçacıktır. Englert ve Higgs, 8 Ekim 2013'te açıklanan Nobel Fizik Ödülü'nü paylaştı.",
+        "O günün arka planı da ilginç. CERN'in anlatımına göre LHC 2010'dan beri yüksek enerjili çarpışmalar yapıyordu ve Nisan 2012'de yeniden çalıştırılmıştı. Sunumlar 4 Temmuz sabahı saat dokuzda başladı; ATLAS'ın o dönemki sözcüsü Fabiola Gianotti beş sigmalık anlamlılığı salona duyurdu. Aynı yazıya göre Higgs bozonu 48 yıl önce öngörülmüştü. Yani 1964'te kâğıt üstünde yazılan bir denklemin ürünü, yarım asır sonra 27 km'lik bir makinede ve binlerce kişinin emeğiyle ölçülebilir bir parçacığa dönüştü.",
+        "“Beş sigma” ne demek? Sigma, bir ölçümün rastlantısal bir dalgalanma olma olasılığını anlatmanın bir yoludur; sigma sayısı arttıkça rastlantı olasılığı hızla küçülür. Muon g-2 deneyi üzerine Wikipedia sayfasına göre 4,2 sigmalık bir sonucun yalnızca istatistik dalgalanmadan doğma olasılığı yaklaşık 40.000'de birdir. Parçacık fiziğinde “keşif” denebilmesi için beş sigma eşiği aranır. Yani 2012'deki duyuru bir tahmin değil, bu sıkı ölçütü geçmiş bir sonuçtu."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Higgs bozonu ne kadar ağır?",
+        "metin": "Veriler: Higgs 125,09 milyar elektronvolt = 125.090 MeV; proton 938 MeV; elektron 0,511 MeV; üst kuark yaklaşık 173.000 MeV. 1. adım: Higgs ÷ proton = 125.090 ÷ 938 ≈ 133. 2. adım: Higgs ÷ elektron = 125.090 ÷ 0,511 ≈ 245.000. 3. adım: Üst kuark ÷ Higgs = 173 ÷ 125 ≈ 1,4. Sonuç: Higgs bozonu yaklaşık 133 proton ağırlığındadır; bilinen temel parçacıklar arasında ondan ağır olan yalnız üst kuarktır, o da yaklaşık 1,4 kat."
+      },
+      "akilda": "Higgs alanı 1964'te önerildi; temel parçacıklara kütle verir. Higgs bozonu 4 Temmuz 2012'de ATLAS ve CMS'te beş sigmayla bulundu: ~125 milyar elektronvolt, spin sıfır. Nobel 2013: Englert ve Higgs."
+    },
+    {
+      "baslik": "Standart Model: 17 parçacıklık tarif",
+      "paragraflar": [
+        "Şimdiye kadar gördüklerimizi bir tabloda toplayalım. Standart Model, bilinen temel parçacıkları ve kütleçekimi dışındaki üç kuvveti tek bir kuramda birleştiren, CERN'e göre 1970'lerin başında geliştirilen ve Wikipedia'ya göre 1970'lerin ortasında son biçimini alan kuramdır. Tabloyu sesli okumak için şöyle düşün: solda madde, sağda kuvvet.",
+        "Solda 12 madde parçacığı var, hepsi fermiyon: maddeyi oluşturan, ikisi aynı durumda bulunamayan parçacıklar (d28'deki Pauli ilkesi). Bunlar üç kuşak hâlinde dizilir. Birinci kuşak: yukarı ve aşağı kuark, elektron ve elektron nötrinosu. İkinci kuşak: tılsımlı ve garip kuark, müon ve müon nötrinosu. Üçüncü kuşak: üst ve alt kuark, tau ve tau nötrinosu. Her kuşak bir öncekinin daha ağır bir kopyası gibidir.",
+        "Sağda kuvvet taşıyıcıları var, hepsi bozon: kuvvetleri taşıyan ya da Higgs gibi bir alanın parçacığı olan parçacıklar. Foton, gluon, W ve Z dört tür taşıyıcıdır; ortada da Higgs bozonu durur. 12 + 4 + 1 = 17. Bu tablo kimyadaki periyodik tablonun parçacık fiziğindeki karşılığı gibidir; sınırı şu ki periyodik tablodaki elementler daha küçük parçalardan yapılmıştır, Standart Model'deki parçacıklar ise bildiğimiz kadarıyla yapılmamıştır.",
+        "Kuramın gücü öngörülerinden gelir. Z bozonu önce kuramdan çıktı, 1973'te dolaylı, 1983'te doğrudan görüldü. Üst kuark 18 yıl arandı ve 1995'te bulundu. Higgs bozonu 1964'te önerildi, 48 yıl sonra 2012'de bulundu. Kuram her seferinde aranacak şeyin özelliklerini önceden söyledi. Bu, bilimin en sağlam sınavıdır: yalnız bilineni açıklamak değil, bilinmeyeni doğru öngörmek.",
+        "Kuramın bir parçası, ışık ile elektronların etkileşimini anlatan kuantum elektrodinamiği, d29'da gördüğün gibi fizikte en hassas doğrulanmış öngörülerden bazılarını verir. Muon g-2 deneyi de müonun manyetik özelliğini milyarda 127 parça hassasiyetle ölçtü ve bu sayı Standart Model hesaplarıyla karşılaştırıldı; öykünün sonunu son bölümde göreceksin. Bu kadar hassas sınavlardan geçen bir kuramın eksiklerini aramak, bugün parçacık fiziğinin ana uğraşlarından biridir."
+      ],
+      "akilda": "Standart Model (1970'ler): 12 fermiyon (6 kuark, 6 lepton, üç kuşak) + 4 tür taşıyıcı bozon (foton, gluon, W, Z) + Higgs = 17 parçacık. Z, üst kuark ve Higgs önce öngörüldü, sonra bulundu."
+    },
+    {
+      "baslik": "Parçacık hızlandırıcıları ve LHC",
+      "paragraflar": [
+        "Neden parçacıkları bu kadar hızlandırıyoruz? İki nedenle. Birincisi, d27'de gördüğün gibi parçacıkların dalga boyu enerjileri arttıkça kısalır; daha küçük şeyleri görmek için daha kısa dalga boyu, yani daha yüksek enerji gerekir. İkincisi, d25'teki E = mc² gereği ağır bir parçacık yaratmak için çarpışmada en az onun kütle enerjisi kadar enerji bulunmalıdır. 125 milyar elektronvoltluk bir Higgs bozonu ancak bundan çok daha enerjik çarpışmalarda ortaya çıkabilir.",
+        "Bugün dünyanın en büyük hızlandırıcısı CERN'deki Büyük Hadron Çarpıştırıcısı LHC'dir. CERN'in bilgi sayfasına göre çevresi yaklaşık 26.659 m, yani 27 km'lik bir halka; yerin yaklaşık 100 m altında bir tünelde durur. Protonları yörüngede tutan 15 m uzunluğundaki 1.232 bükücü mıknatıs, −271,3 °C'ye, 1,9 kelvine soğutulur. 2022'de başlayan üçüncü çalışma döneminde çarpışma enerjisi 13,6 trilyon elektronvolttu. Her demette başlangıçta yaklaşık 1,6 × 10¹¹ proton bulunur, protonlar saniyede 11.245 tur atar ve ATLAS ile CMS'te saniyede yaklaşık 1,5 milyar çarpışma olur.",
+        "LHC şu anda çalışmıyor; bu bir arıza değil, planlı bir yenileme. CERN'in Ekim 2024'te yayımladığı güncel takvime göre LHC için Uzun Kapanma 3 Temmuz 2026 başında başlayacak, Yüksek Parlaklıklı LHC ise Haziran 2030'da çalışmaya başlayacaktı. CERN'in 29 Haziran 2026 tarihli basın duyurusunun başlığı da LHC'ye veda edilip Uzun Kapanma 3'e girildiğini bildiriyor. 30 Ekim 2026 itibarıyla LHC bu kapanmadadır; aynı takvime göre ön hızlandırıcılar Eylül 2026'da büyük bir çalışma programına başlayacak ve 2028'de kademeli olarak yeniden çalışmaya geçecekti.",
+        "Türkiye de bu işin içinde. CERN Courier'in haberine göre Türkiye 6 Mayıs 2015'te CERN'in ortak üye devleti oldu; anlaşma bir yıl önce imzalanmıştı."
+      ],
+      "ornek": {
+        "baslik": "Örnek: LHC'deki bir proton ışık hızına ne kadar yakın gider?",
+        "metin": "Veriler: 13,6 trilyon elektronvoltluk çarpışma iki proton demetinin buluşmasıdır, yani her proton 6,8 trilyon elektronvolt taşır; protonun durgun kütle enerjisi 938 MeV; halka 26.659 m; c = 299.792.458 m/s. 1. adım: d25'teki Lorentz çarpanı γ = toplam enerji ÷ durgun enerji = 6.800.000 ÷ 938 ≈ 7.250. 2. adım: γ çok büyükken hız açığı yaklaşık 1 ÷ (2γ²) = 1 ÷ (2 × 5,26 × 10⁷) ≈ 9,5 × 10⁻⁹. Yani hız ≈ 0,9999999905 c. 3. adım: Bir tur süresi ≈ 26.659 ÷ 299.792.458 ≈ 8,89 × 10⁻⁵ saniye. Saniyedeki tur ≈ 1 ÷ 8,89 × 10⁻⁵ ≈ 11.245. Sonuç: proton ışık hızının yaklaşık 0,9999999905'i ile gider ve saniyede 11.245 tur atar; bu, CERN'in verdiği tur sayısıyla birebir uyuşur."
+      },
+      "akilda": "LHC: 27 km halka, 100 m yerin altında, 1,9 kelvinde 1.232 mıknatıs, 13,6 trilyon elektronvolt (2022). Temmuz 2026'dan beri Uzun Kapanma 3'te; Yüksek Parlaklıklı LHC Haziran 2030 hedefli. Türkiye 6 Mayıs 2015'ten beri ortak üye."
+    },
+    {
+      "baslik": "Parçacıkları nasıl görüyoruz?",
+      "paragraflar": [
+        "Bu dersteki parçacıkların hiçbirini gözle göremeyiz. Peki “bulundu” derken neyi kastediyoruz? Cevap, parçacıkların maddeyle etkileşirken bıraktığı izlerdir. Anderson'un 1932'deki bulut odası güzel bir örnek: içinden yüklü bir parçacık geçince arkasında fotoğraflanabilen bir iz kalır. APS'nin anlattığına göre Anderson odayı büyük bir elektromıknatısın içine koymuştu; mıknatıs izleri yay biçiminde büküyor, bükülmenin yönü yükün işaretini, eğriliği de parçacığın momentumunu veriyordu. Odanın ortasındaki kurşun levha ise parçacığı yavaşlatarak hangi yöne gittiğini ele veriyordu.",
+        "Bugünkü dedektörler aynı fikrin dev ve elektronik hâlidir: ATLAS ve CMS gibi deneyler parçacıkların bıraktığı izleri ve enerjileri elektronik olarak kaydeder, bilgisayarlar da bunları birleştirip olayı yeniden kurar. Kısa ömürlü bir parçacık doğrudan görülmez; Z bozonu örneğinde hesapladığın gibi bir protonun çapından kısa bir yol alıp bozunur. Fizikçiler bozunma ürünlerini, örneğin iki fotonu ya da dört leptonu ölçer, onların enerjilerinden ve yönlerinden geriye doğru ana parçacığın kütlesini hesaplar. Higgs bozonu 2012'de tam olarak böyle, iki foton ve dört lepton kanallarında, belli bir kütlede beklenenden fazla olay birikmesiyle bulundu.",
+        "Bu, samanlıkta iğne aramaktır. CERN'e göre ATLAS ve CMS'te saniyede yaklaşık 1,5 milyar çarpışma olur ve aranan olayların çok küçük bir kısmı ilginçtir. Bu yüzden keşifler istatistikle yapılır: tek bir olay hiçbir şey kanıtlamaz, belli bir kütlede beklenen arka plandan fazla olayın birikmesi ve bu fazlalığın beş sigma düzeyine ulaşması gerekir. Nötrinolarda iş daha da zordur: Cowan ve Reines, bir pozitronun ve kısa bir gecikmeyle bir nötronun izini birlikte arayarak, yani iki imzanın art arda gelmesini şart koşarak, saatte yalnızca 3 olayı arka plandan ayırabildi."
+      ],
+      "akilda": "Parçacıkları izlerinden tanırız: mıknatısta bükülen yol yükü ve momentumu verir. Kısa ömürlü parçacıklar bozunma ürünlerinden geriye doğru hesaplanır; keşif, belli bir kütlede beş sigmalık olay fazlalığıdır."
+    },
+    {
+      "baslik": "Nötrinolar: her şeyin içinden geçen hayaletler",
+      "paragraflar": [
+        "1930'da Wolfgang Pauli, beta bozunumunda pozitronla birlikte görünmeyen bir parçacığın daha çıktığını önerdi. Enrico Fermi ona sonradan nötrino adını verdi. Nötrino, elektrik yükü olmayan, kütlesi son derece küçük, yalnız zayıf kuvvet ve kütleçekimiyle etkileşen bir leptondur. Wikipedia'ya göre bu yüzden nötrinoların hareketini yalnız zayıf etkileşim ve kütleçekimi etkiler ve onları gözlemek zordur.",
+        "Nötrinoların ne kadar az etkileştiğini d4'teki bir sayı iyi anlatır: Dünya'nın her santimetrekaresinden saniyede onlarca milyar Güneş nötrinosu geçer; şu anda başparmağının tırnağından da geçiyorlar ve sen hiçbir şey hissetmiyorsun. Bu kadar az etkileştikleri için gece de durum pek değişmez: Güneş ufkun altındayken nötrinoları Dünya'nın içinden geçip İstanbul'a ayağının altından gelir. d6'da gördüğün gibi SN 1987A süpernovasının nötrinoları da ışıktan önce dedektörlere ulaşmıştı; nötrinolar bir yıldızın çöken çekirdeğinden bile engelsiz kaçabilir.",
+        "Görmek 26 yıl sürdü. Frederick Reines ve Clyde Cowan, ABD'deki Savannah River nükleer reaktörünün yanına 300 litrelik bir su tankı koydu. d31'de bir fisyonun 8,8 MeV'ini reaktörden kaçan karşıt nötrinoların götürdüğünü görmüştün; işte o karşıt nötrinolardan biri arada bir sudaki bir protona çarpıp bir nötron ve bir pozitron üretiyordu. Ekip pozitronun ve kısa bir gecikmeyle nötronun izini birlikte arayarak saatte yaklaşık 3 nötrino saydı ve sonucu 1956'da Science dergisinde yayımladı. Reines 1995 Nobel Fizik Ödülü'nü paylaştı; Cowan 1974'te ölmüştü.",
+        "Güneş'ten gelen nötrinoların öyküsünü d4'te gördün: Ray Davis'in deneyi beklenenin üçte birini buldu, çözüm nötrinoların yolda tür değiştirmesi, yani nötrino salınımı çıktı ve bu iş 2002 ve 2015 Nobel ödüllerini getirdi. 1998'de Japonya'daki Süper-Kamiokande dedektörü nötrino salınımına dair kanıt bildirdi. Salınımın önemli bir sonucu var: tür değiştirebilmek için nötrinoların kütlesi olmalı. Oysa Standart Model'in klasik biçiminde nötrinolar kütlesizdir. Bu, kuramın ilk açık çatlaklarından biridir.",
+        "Peki kütleleri ne kadar? Bilmiyoruz, ama üst sınır giderek iniyor. KATRIN deneyi, trityumun beta bozunumunda çıkan elektronların enerjisini 70 m uzunluğundaki bir düzenekte son derece hassas ölçüyor. Karlsruhe Teknoloji Enstitüsü'nün 11 Nisan 2025 tarihli duyurusuna göre 2019–2021 arasındaki yaklaşık 250 günlük veriyle nötrino kütlesi 0,45 elektronvolttan küçük bulundu; sonuç Science'ta yayımlandı. Bu, nötrinonun elektrondan en az bir milyon kat hafif olduğu anlamına gelir. Ölçümlerin 2025 sonuna kadar süreceği duyurulmuştu; daha yeni bir sonucu bu derste kaynaklı olarak veremiyoruz."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Nötrino elektrondan en az kaç kat hafif?",
+        "metin": "Veriler: elektron 0,511 MeV = 511.000 elektronvolt; KATRIN'in üst sınırı 0,45 elektronvolt. 1. adım: Oran = 511.000 ÷ 0,45 ≈ 1.136.000. 2. adım: Bu bir üst sınır olduğu için gerçek nötrino kütlesi daha küçük olabilir; oran o zaman daha da büyür. 3. adım: Karşılaştır: proton elektrondan yaklaşık 1.836 kat ağır. Elektron ile nötrino arasındaki uçurum, proton ile elektron arasındakinden yaklaşık 600 kat büyük. Sonuç: nötrino elektrondan en az yaklaşık 1,1 milyon kat hafiftir; KIT'in “en az bir milyon kat” ifadesiyle uyumlu."
+      },
+      "akilda": "Nötrinoyu Pauli 1930'da önerdi, Cowan ve Reines 1956'da bir reaktörün yanında yakaladı (Nobel 1995). Üç türü var ve salınım yaptıkları için kütleleri var; KATRIN'e göre (2025) 0,45 elektronvolttan küçük."
+    },
+    {
+      "baslik": "Karşıt madde: aynadaki ikiz",
+      "paragraflar": [
+        "1928'de Paul Dirac şaşırtıcı bir sonuca vardı: Einstein'ın göreliliği kuantum fiziğiyle birlikte düşünülünce, her parçacığın kütlesi aynı ama elektrik yükü ters olan bir karşıt parçacığı olmalıydı. Karşıt madde, bu karşıt parçacıklardan oluşan maddedir. Fikir çok cesurdu, ama doğa onu çabuk doğruladı.",
+        "Ağustos 1932'de Carl Anderson, kozmik ışınları incelediği bulut odasında bir iz fotoğrafladı. Bulut odası, içinden geçen yüklü parçacıkların sis damlacıklarından bir iz bıraktığı bir dedektördür. Anderson odaya güçlü bir mıknatıs ve ortasına bir kurşun levha koymuştu. Mıknatıs izi büküyor, bükülmenin yönü yükün işaretini veriyordu; kurşundan geçen parçacık enerji kaybettiği için hangi yöne gittiği de anlaşılıyordu. İz, elektron kütlesinde ama artı yüklü bir parçacığa aitti: pozitron. Anderson 1936 Nobel Fizik Ödülü'nü 31 yaşında aldı. Sonraki yorumlara göre pozitron, bir gama ışınının bir elektron-pozitron çiftine dönüşmesiyle doğmuştu: enerjiden madde.",
+        "Diğer karşıt parçacıklar da geldi: karşıt proton ve karşıt nötron 1955'te Berkeley'de Emilio Segrè ve Owen Chamberlain tarafından bulundu. Bugün karşıt protonlar ve pozitronlar elektromanyetik tuzaklarda bir araya getirilerek bütün karşıt atomlar yapılabiliyor. Bazı parçacıklar ise kendi karşıtıdır; foton bunun örneğidir. Bir parçacık karşıtıyla karşılaşınca ikisi yok olur ve enerjileri başka parçacıklara, örneğin gama ışını çiftlerine dönüşür. d31'de gördüğün PET taraması bu yok oluşun gama çiftlerini kullanır.",
+        "Karşıt madde yukarı mı düşer? Kulağa şaka gibi gelse de bu, deneyle sınanması gereken ciddi bir soruydu. CERN'deki ALPHA işbirliği, dikey bir düzenek olan ALPHA-g ile karşıt hidrojen atomlarını bir tuzakta tutup tuzağın üst ve alt ucunu dengeli biçimde açtı. ABD Ulusal Bilim Vakfı'nın 27 Eylül 2023 tarihli haberine göre atomların yaklaşık %80'i tuzağın altında yok oldu: karşıt madde de aşağı düşüyordu. Sonuç Nature dergisinde yayımlandı. Aşağı düşme hızının sıradan maddeyle tam olarak aynı olup olmadığı ise daha hassas ölçümlerin konusu."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Bir gram madde ile bir gram karşıt madde yok olsa ne kadar enerji çıkar?",
+        "metin": "Veriler: E = mc², c = 2,998 × 10⁸ m/s; uranyum-235'in tam bölünmesi kilogram başına 83,14 terajul (d31). 1. adım: Yok olan toplam kütle 1 g + 1 g = 0,002 kg. 2. adım: E = 0,002 × (2,998 × 10⁸)² ≈ 0,002 × 8,99 × 10¹⁶ ≈ 1,8 × 10¹⁴ jul. 3. adım: Gram başına: 1,8 × 10¹⁴ ÷ 2 = 9,0 × 10¹³ jul. 4. adım: Bir gram uranyum-235'in fisyonu: 83,14 × 10¹² ÷ 1.000 ≈ 8,3 × 10¹⁰ jul. Oran ≈ 9,0 × 10¹³ ÷ 8,3 × 10¹⁰ ≈ 1.080. Sonuç: yok olma, gram başına fisyondan yaklaşık bin kat fazla enerji verir; bütün kütle enerjiye gider, fisyonda ise yalnız binde biri kadarı. Ama elimizde gramlarca karşıt madde yoktur; bu hesap bir yakıt önerisi değil, E = mc²'nin sınırını gösteren bir ölçektir."
+      },
+      "akilda": "Dirac 1928'de karşıt parçacıkları öngördü; Anderson 1932'de pozitronu buldu (Nobel 1936), karşıt proton 1955'te geldi. Parçacık ile karşıtı yok olup gama ışınlarına dönüşür (PET). ALPHA-g 2023: karşıt madde de aşağı düşer."
+    },
+    {
+      "baslik": "Evrenin ilk anları ve kazanan madde",
+      "paragraflar": [
+        "Parçacık fiziği ile evrenin tarihi aynı hikâyenin iki yüzüdür. d8'de evrenin geçmişte daha sıcak olduğunu gördün. Sıcaklık, parçacıkların ortalama enerjisi demektir; yeterince geriye gidersen evrenin her yeri, bugün ancak hızlandırıcılarda ulaşılan enerjilerle dolu bir çarpışma alanına döner. Bu yüzden LHC'de yapılan bir ölçüm, aynı zamanda evrenin ilk saniyelerinin fiziğini sınar.",
+        "d8'deki zaman çizelgesine göre kuark çağı şişmeden yaklaşık 10⁻¹² saniye sonra başladı ve 10⁻⁵ saniyeye kadar sürdü. O dönemde kuarklar ve gluonlar, bu derste gördüğün renk hapsine uğramadan sıcak bir çorba hâlinde dolaşıyordu; Wikipedia'nın kuark sayfası da kuarkların hadronların dışında yalnız kuark-gluon plazmasında bulunabildiğini yazar. Yaklaşık 10⁻⁵ saniyede, sıcaklık 10¹² kelvin civarına inince kuarklar bir araya gelip protonları ve nötronları oluşturdu. Bugün vücudundaki her protonun kütlesinin yüzde doksan dokuzu, o anda hapsolan gluon alanı enerjisidir.",
+        "Yaklaşık 1 saniyede, d8'e göre sıcaklık 10¹⁰ kelvine inince nötrinolar maddeyle etkileşmeyi bıraktı ve serbestçe yol almaya başladı; bu dersteki nötrinoların ne kadar az etkileştiğini düşününce şaşırtıcı değil. Birkaç dakika sonra ise d31'deki nükleer kuvvet devreye girdi ve ilk hafif çekirdekler oluştu. Madde fazlalığı, karanlık maddenin kökeni ve şişmeyi neyin sürdüğü ise d8'de de vurgulandığı gibi hâlâ bilinmiyor; üçü de Standart Model'in açıklayamadıkları listesinde yer alır.",
+        "Anderson'un pozitronunda gördüğün gibi, bir gama ışını maddeye dönüştüğünde parçacık ile karşıt parçacık çift hâlinde doğar. O hâlde evrenin başında da madde ve karşıt madde eşit miktarda oluşmuş olmalıydı; eşit olsalardı birbirlerini yok eder ve geriye yalnız ışık kalırdı. Oysa biz buradayız. d8'de gördüğün gibi ilk anlarda her on milyar çifte bir fazla madde parçacığı düştü; galaksiler, yıldızlar ve sen o küçük fazlalıktan yapıldın. Soru şu: bu fazlalık nereden geldi?",
+        "Cevabın bir parçası, madde ile karşıt maddenin her zaman tam ayna gibi davranmaması olabilir. Fizikçiler bu farka CP bozumu der: bir süreç ile onun karşıt madde karşılığının biraz farklı oranlarda gerçekleşmesi. 24 Mart 2025'te CERN'deki LHCb deneyi, ilk kez baryonlarda, yani proton ailesinden parçacıklarda açık bir CP bozumu gözlediğini duyurdu.",
+        "LHCb, bir yukarı, bir aşağı ve bir alt kuarktan oluşan Λb baryonunun ve karşıtının bir proton, bir kaon ve iki pion'a bozunmasını inceledi. CERN'e göre 80.000'den fazla bozunma gerekti; iki bozunma oranı arasındaki fark %2,45, belirsizliği yaklaşık %0,47 ve sonucun anlamlılığı 5,2 sigmaydı. Makale 16 Temmuz 2025'te Nature'da yayımlandı.",
+        "Ama bu soruyu çözmedi. CERN'in aynı duyurusuna göre Standart Model'in öngördüğü CP bozumu, evrendeki madde fazlalığını açıklamak için çok çok azdır. Yani ya bilinmeyen yeni CP bozumu kaynakları var ya da hikâyenin başka bir parçası eksik. CERN de Standart Model sayfasında Büyük Patlama'dan sonra karşıt maddeye ne olduğunu açık bir soru olarak sorar. Bu, fiziğin bugün cevabını bilmediği en büyük sorulardan biridir."
+      ],
+      "akilda": "Evrenin ilk anları dev bir çarpıştırıcıydı: ~10⁻⁵ saniyede kuarklar protonlara ve nötronlara hapsoldu, ~1 saniyede nötrinolar serbest kaldı (d8). Her on milyar çifte bir fazla madde parçacığı kaldı; LHCb 2025'te baryonlarda ilk CP bozumunu gördü ama Standart Model'in CP bozumu bu fazlalığı açıklamaya yetmez."
+    },
+    {
+      "baslik": "Kozmik ışınlar: uzaydan gelen doğal hızlandırıcı",
+      "paragraflar": [
+        "1912'de Victor Hess, havadaki iyonlaşmayı ölçen aletlerini bir balonla 5.300 metreye çıkardı. O yükseklikte iyonlaşma, yerdekinin yaklaşık iki katıydı. Radyasyonun bir kısmı yerden değil, yukarıdan geliyor olmalıydı. Hess bu buluşla 1936 Nobel Fizik Ödülü'nü aldı. Kozmik ışın, uzaydan Dünya'ya ulaşan çok enerjik parçacıkların ortak adıdır; “ışın” denir ama çoğu ışık değil, atom çekirdeğidir. Wikipedia'ya göre yaklaşık %90'ı proton, %9'u alfa parçacığı yani helyum çekirdeği, %1'i daha ağır çekirdeklerdir; bu oranlar enerjiye göre değişir.",
+        "Bir kozmik ışın protonu atmosferin üst katmanlarında bir hava çekirdeğine çarpınca yeni parçacıklar doğar, onlar da başka çekirdeklere çarpar ve aşağı doğru genişleyen bir parçacık çağlayanı oluşur. Buna hava sağanağı denir. 1937'de Pierre Auger, birbirinden uzak sayaçların aynı anda tetiklendiğini görerek bu çağlayanları fark etti. Wikipedia'ya göre ikincil parçacıklar ilk parçacığın yolundan yaklaşık bir derece içinde kalır. Bunların bir kısmı müonlardır ve yere kadar ulaşır: kabaca kafan büyüklüğünde bir hacimden saniyede yaklaşık bir müon geçer. Şu anda İstanbul'da, odanda da öyle. d31'deki karbon-14'ü üreten nötronlar da bu sağanaklardan gelir.",
+        "Kozmik ışınlar bir zamanlar parçacık fiziğinin tek büyük laboratuvarıydı. Pozitron, müon ve pion, hızlandırıcılardan önce kozmik ışınlarda bulundu. Doğanın hızlandırıcısı hâlâ bizimkinden çok güçlü: Wikipedia'ya göre en enerjik kozmik ışınlar 3 × 10²⁰ elektronvolta yaklaşır, yaklaşık 50 jul. Bu, tek bir atom altı parçacıkta saatte 90 km hızla giden bir beyzbol topunun hareket enerjisi demektir.",
+        "Kozmik ışınlar senin hayatına da dokunur. d31'de gördüğün gibi doğal radyasyon dozunun ortalama yılda 0,39 milisievertlik kısmı kozmik ışınlardan gelir; Wikipedia'ya göre 12 km yükseklikte bu doz deniz düzeyindekinin en az 10 katıdır, bu yüzden pilotlar ve kabin ekipleri fazladan doz alır. Atmosferdeki yaklaşık 70 tonluk karbon-14 de kozmik ışınların ürünüdür; arkeologların radyokarbon saati, uzaydan gelen bu parçacıklar sayesinde kurulur. Yani bir müzedeki mumyanın yaşı ile Samanyolu'ndaki bir süpernova kalıntısı arasında, kozmik ışınlardan geçen bir bağ vardır.",
+        "Bu parçacıkları ne hızlandırıyor? Kısmen biliyoruz. Wikipedia'ya göre Fermi uydusunun 2013 verileri, süpernova patlamalarının kozmik ışın kaynaklarından biri olduğu biçiminde yorumlandı; d6'da gördüğün süpernova kalıntıları burada da karşımıza çıkıyor. Ama aynı kaynağa göre süpernovalar bütün kozmik ışınları üretmez; aktif galaksi çekirdekleri de (d7) kozmik ışın üretiyor görünür. En enerjik olanların tam kaynağı hâlâ araştırılıyor."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Doğanın hızlandırıcısı LHC'yi kaç kat geçiyor?",
+        "metin": "Veriler: en enerjik kozmik ışınlar yaklaşık 3 × 10²⁰ elektronvolt; 1 elektronvolt = 1,60 × 10⁻¹⁹ jul (bu dersin ilk örneğinden); LHC'de bir proton 6,8 trilyon elektronvolt = 6,8 × 10¹² elektronvolt. 1. adım: Jule çevir: 3 × 10²⁰ × 1,60 × 10⁻¹⁹ = 48 jul, yani yaklaşık 50 jul (Wikipedia ile uyumlu). 2. adım: Oran: 3 × 10²⁰ ÷ 6,8 × 10¹² ≈ 4,4 × 10⁷. Sonuç: tek bir en enerjik kozmik ışın parçacığı, LHC'deki bir protondan yaklaşık 44 milyon kat fazla enerji taşır; 48 jul, saatte 90 km hızla giden bir beyzbol topunun enerjisi mertebesindedir ama tek bir atom altı parçacığa yığılmıştır."
+      },
+      "akilda": "Kozmik ışınları 1912'de Hess balonla buldu (Nobel 1936); ~%90 proton. Atmosferde hava sağanakları oluşturur; yere ulaşan müonlar her saniye içinden geçer. En enerjikleri ~3 × 10²⁰ elektronvolt (~50 jul); kaynaklarından biri süpernova kalıntıları."
+    },
+    {
+      "baslik": "Standart Model'in açıklayamadıkları",
+      "paragraflar": [
+        "Standart Model insanlığın en iyi sınanmış kuramlarından biridir, ama eksik olduğunu biliyoruz. İlk eksik kütleçekimidir. CERN'e göre kütleçekimi Standart Model'de yoktur; kuantum kuramı ile genel görelilik bugüne kadar matematiksel olarak bağdaştırılamadı. Parçacık ölçeğinde kütleçekimi önemsiz kaldığı için model yine de iyi çalışır. Kara deliklerin içi ya da evrenin ilk anı gibi iki kuramın da gerektiği yerlerde ise elimizde doğrulanmış bir kuram yok (d16, d26).",
+        "İkinci eksik karanlık madde ve karanlık enerjidir. d17'de galaksilerin dönüşünden ve kütleçekimsel mercekten gelen karanlık madde kanıtlarını gördün. Wikipedia'ya göre Standart Model'de karanlık madde olabilecek uygun bir parçacık yoktur; evrenin hızlanan genişlemesini, yani karanlık enerjiyi de açıklamaz. Evrendeki enerjinin büyük kısmı bu tablonun dışında kalıyor.",
+        "Üçüncüsü bu derste karşılaştıklarımız: nötrinoların kütlesi (klasik model kütlesiz der, salınım kütle gerektirir), madde ile karşıt madde arasındaki dengesizlik (modelin CP bozumu yetmez) ve CERN'in açık sorular arasında saydığı, neden üç kuşak olduğu ve kütlelerin neden bu kadar geniş bir aralığa yayıldığı. Elektron ile üst kuark arasında yaklaşık 340.000 kat fark var ve kimse nedenini bilmiyor.",
+        "Bir de kapanmış gibi görünen bir çatlak var. Müonun manyetik özelliğini ölçen Muon g-2 deneyi 2021'de kuramdan 4,2 sigmalık bir sapma bildirdi ve yeni fizik heyecanı yarattı. Deneyin son sonucu 3 Haziran 2025'te milyarda 127 parçalık hassasiyetle açıklandı. Illinois Üniversitesi'nin haberine göre bilgisayarla yapılan yeni kuramsal hesaplar ölçüme daha yakın çıktı ve yeni fizik iddiasını zayıflattı; kuramcılar kalan farkı anlamaya çalışıyor. Wikipedia'ya göre Nisan 2026'da Nature'da yayımlanan bir makale aradaki farkı yalnız 0,5 sigma olarak verir. Ders şu: büyük bir sapma her zaman yeni fizik değildir; bazen hesabın kendisi düzeltilir. Sıradaki büyük adım, 2030'da çalışmaya başlaması planlanan Yüksek Parlaklıklı LHC ve nötrino, karanlık madde deneyleridir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Temel parçacıkların kütle aralığı ne kadar geniş?",
+        "metin": "Veriler: elektron 0,511 MeV; üst kuark yaklaşık 173 milyar elektronvolt = 173.000 MeV; nötrino üst sınırı 0,45 elektronvolt = 0,00000045 MeV. 1. adım: Üst kuark ÷ elektron = 173.000 ÷ 0,511 ≈ 339.000. 2. adım: Üst kuark ÷ nötrino üst sınırı = 173 × 10⁹ ÷ 0,45 ≈ 3,8 × 10¹¹. 3. adım: Yani en hafif bilinen kütleli parçacık ile en ağırı arasında en az yaklaşık 400 milyar kat var. Sonuç: Standart Model bu kütleleri ölçülmüş sayılar olarak içine alır ama neden böyle olduklarını söylemez; elektron ile üst kuark arasında ~340.000, nötrino ile üst kuark arasında en az ~400 milyar kat fark vardır."
+      },
+      "akilda": "Standart Model kütleçekimini, karanlık maddeyi, karanlık enerjiyi, nötrino kütlesini, madde fazlalığını ve üç kuşağın nedenini açıklamaz. Muon g-2 sapması yeni hesaplarla büyük ölçüde kapandı; büyük bir sapma her zaman yeni fizik değildir."
+    }
+  ],
+  "formuller": [
+    {
+      "ad": "Kütle-enerji eşdeğerliği",
+      "ifade": "E = mc²",
+      "aciklama": "E enerji (jul), m kütle (kg), c ışık hızı (299.792.458 m/s). Parçacık kütleleri bu yüzden enerji birimiyle verilir: 1 MeV ≈ 1,60 × 10⁻¹³ jul; proton 938 MeV ≈ 1,67 × 10⁻²⁷ kg."
+    },
+    {
+      "ad": "Kuark yüklerinden hadron yükü",
+      "ifade": "Q = Σ q",
+      "aciklama": "Q hadronun elektrik yükü (elektron yükü biriminde), q her kuarkın yükü: yukarı +2/3, aşağı −1/3. Proton (yukarı, yukarı, aşağı) = +1; nötron (yukarı, aşağı, aşağı) = 0."
+    },
+    {
+      "ad": "Lorentz çarpanı (enerjiden)",
+      "ifade": "γ = E / (mc²)",
+      "aciklama": "E parçacığın toplam enerjisi, mc² durgun kütle enerjisi. γ çok büyükken hız açığı 1 − v/c ≈ 1/(2γ²). LHC'de 6,8 trilyon elektronvoltluk proton için γ ≈ 7.250."
+    },
+    {
+      "ad": "En fazla yol",
+      "ifade": "d ≈ c × t",
+      "aciklama": "d bozunmadan önce alınabilecek en fazla yol (m), t ömür (s). Ömrü 3 × 10⁻²⁵ saniye olan Z bozonu için d ≈ 9 × 10⁻¹⁷ m. Göreli zaman genişlemesi hesaba katılmamış kaba bir üst sınırdır."
+    },
+    {
+      "ad": "Elektronvolt-jul çevirisi",
+      "ifade": "1 eV ≈ 1,60 × 10⁻¹⁹ J",
+      "aciklama": "Elektronvolt (eV) parçacık enerjisi birimi, J jul. d31'deki fisyon verisinden (202,5 MeV = 3,24 × 10⁻¹¹ J) çıkar. 3 × 10²⁰ eV ≈ 48 J."
+    }
+  ],
+  "anahtar_sayilar": [
+    {
+      "deger": "17 (12 fermiyon + 4 tür taşıyıcı + Higgs)",
+      "aciklama": "Standart Model'deki temel parçacık sayısı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Standard_model"
+    },
+    {
+      "deger": "~9 MeV / ~938 MeV (~%1)",
+      "aciklama": "Protonun kütlesinde üç kuarkın kendi kütlelerinin payı",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Quark"
+    },
+    {
+      "deger": "0,511 MeV; 105,7 MeV; 1,78 milyar elektronvolt",
+      "aciklama": "Elektron, müon ve tau kütleleri",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Standard_model"
+    },
+    {
+      "deger": "80,377 ve 91,1876 milyar elektronvolt",
+      "aciklama": "W ve Z bozonlarının kütleleri (1983'te CERN'de bulundu, Nobel 1984)",
+      "kaynak_url": "https://www.wikiwand.com/en/Z-boson"
+    },
+    {
+      "deger": "4 Temmuz 2012; ~125 milyar elektronvolt; 5 sigma",
+      "aciklama": "Higgs bozonunun ATLAS ve CMS'te keşfinin duyurusu",
+      "kaynak_url": "https://home.cern/news/series/cern70/cern70-announcing-higgs-boson-discovery"
+    },
+    {
+      "deger": "26.659 m; 13,6 trilyon elektronvolt; 1,9 kelvin; 11.245 tur/s",
+      "aciklama": "LHC'nin çevresi, üçüncü dönem çarpışma enerjisi, mıknatıs sıcaklığı ve tur sayısı",
+      "kaynak_url": "https://home.cern/resources/faqs/facts-and-fi"
+    },
+    {
+      "deger": "Temmuz 2026 → Haziran 2030",
+      "aciklama": "LHC Uzun Kapanma 3'ün başlangıcı ve Yüksek Parlaklıklı LHC'nin planlanan başlangıcı",
+      "kaynak_url": "https://home.cern/updated-schedule-cerns-accelerators"
+    },
+    {
+      "deger": "6 Mayıs 2015",
+      "aciklama": "Türkiye'nin CERN ortak üye devleti olduğu tarih",
+      "kaynak_url": "https://cerncourier.com/a/turkey-becomes-associate-member-state-of-cern/"
+    },
+    {
+      "deger": "< 0,45 elektronvolt",
+      "aciklama": "KATRIN'in nötrino kütlesi üst sınırı (Science, Nisan 2025)",
+      "kaynak_url": "https://www.kit.edu/kit/english/pi_2025_029_astroparticle-physics-neutrinos-weigh-less-than-0-45-electronvolts.php"
+    },
+    {
+      "deger": "%2,45 ± %0,47; 5,2 sigma",
+      "aciklama": "LHCb'nin baryonlarda ilk kez gözlediği CP bozumu (2025)",
+      "kaynak_url": "https://home.cern/news/news/physics/new-piece-matter-antimatter-puzzle"
+    },
+    {
+      "deger": "~%90 proton, ~%9 alfa, ~%1 ağır çekirdek; en çok ~3 × 10²⁰ elektronvolt",
+      "aciklama": "Kozmik ışınların bileşimi ve en yüksek enerjileri",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Cosmic_ray"
+    }
+  ],
+  "sozluk": [
+    {
+      "terim": "temel parçacık",
+      "tanim": "Bildiğimiz kadarıyla daha küçük parçalardan oluşmayan parçacık; elektron, kuarklar ve foton gibi."
+    },
+    {
+      "terim": "hadron",
+      "tanim": "Kuarklardan oluşan bileşik parçacık; üç kuarklı baryonlar ve kuark ile karşıt kuarklı mezonlar."
+    },
+    {
+      "terim": "baryon",
+      "tanim": "Proton ve nötron gibi üç kuarktan oluşan hadron."
+    },
+    {
+      "terim": "mezon",
+      "tanim": "Bir kuark ile bir karşıt kuarktan oluşan kısa ömürlü hadron; pion ve kaon gibi."
+    },
+    {
+      "terim": "gluon",
+      "tanim": "Kuarklar arasındaki güçlü kuvveti taşıyan, kendisi de renk yükü taşıyan kütlesiz parçacık."
+    },
+    {
+      "terim": "renk hapsi",
+      "tanim": "Kuarkların aralarındaki güçlü kuvvet uzaklıkla güçlendiği için hiçbir zaman tek başına bulunamayıp hep hadronların içinde kalması."
+    },
+    {
+      "terim": "lepton",
+      "tanim": "Güçlü kuvvetle etkileşmeyen temel madde parçacığı: elektron, müon, tau ve üç nötrino."
+    },
+    {
+      "terim": "müon",
+      "tanim": "Elektronun yaklaşık 207 kat ağır, kararsız kuzeni olan yüklü lepton; kozmik ışınların yere ulaşan ürünlerindendir."
+    },
+    {
+      "terim": "kuşak",
+      "tanim": "Standart Model'de iki kuark ve iki leptondan oluşan, birbirinin giderek ağırlaşan kopyası gibi duran üç gruptan her biri."
+    },
+    {
+      "terim": "fermiyon",
+      "tanim": "Maddeyi oluşturan, ikisi aynı kuantum durumunda bulunamayan parçacık; kuarklar ve leptonlar."
+    },
+    {
+      "terim": "bozon",
+      "tanim": "Standart Model'de kuvvetleri taşıyan ya da bir alanın parçacığı olan parçacık türü; foton, gluon, W, Z ve Higgs."
+    },
+    {
+      "terim": "taşıyıcı parçacık",
+      "tanim": "Bir temel kuvveti parçacıklar arasında ileten parçacık; elektromanyetizma için foton, güçlü kuvvet için gluon gibi."
+    },
+    {
+      "terim": "graviton",
+      "tanim": "Kütleçekimini taşıması beklenen ama hiç gözlenmemiş varsayımsal parçacık."
+    },
+    {
+      "terim": "W ve Z bozonları",
+      "tanim": "Zayıf kuvveti taşıyan, protondan yaklaşık 86 ve 97 kat ağır, çok kısa ömürlü parçacıklar."
+    },
+    {
+      "terim": "elektrozayıf kuram",
+      "tanim": "Elektromanyetizma ile zayıf kuvveti tek bir kuramda birleştiren, 1960'ların sonunda kurulan kuram."
+    },
+    {
+      "terim": "Higgs alanı",
+      "tanim": "Bütün evreni dolduran ve temel parçacıklara onunla etkileşme güçlerine göre kütle veren kuantum alanı."
+    },
+    {
+      "terim": "Higgs bozonu",
+      "tanim": "Higgs alanının parçacık olarak görünen biçimi; 2012'de yaklaşık 125 milyar elektronvoltta bulundu."
+    },
+    {
+      "terim": "Standart Model",
+      "tanim": "Bilinen 17 temel parçacığı ve kütleçekimi dışındaki üç temel kuvveti tek bir kuramda toplayan parçacık fiziği kuramı."
+    },
+    {
+      "terim": "pozitron",
+      "tanim": "Elektronun karşıt parçacığı: aynı kütlede, artı yüklü."
+    },
+    {
+      "terim": "CP bozumu",
+      "tanim": "Bir süreç ile onun karşıt madde karşılığının biraz farklı oranlarda gerçekleşmesi; madde-karşıt madde dengesizliğinin olası kaynaklarından biri."
+    },
+    {
+      "terim": "hava sağanağı",
+      "tanim": "Bir kozmik ışın parçacığının atmosferde bir çekirdeğe çarpmasıyla başlayan ve aşağı doğru genişleyen ikincil parçacık çağlayanı."
+    },
+    {
+      "terim": "sigma",
+      "tanim": "Bir ölçüm sonucunun rastlantısal dalgalanma olma olasılığını anlatan ölçü; parçacık fiziğinde keşif için beş sigma aranır."
+    }
+  ],
+  "defter_notu": [
+    "Elektron 1897 (Thomson), çekirdek 1911, nötron 1932; pozitron 1932, müon 1936, pion 1947 kozmik ışınlarda. Bugün 17 temel parçacık.",
+    "Kuark: Gell-Mann ve Zweig 1964, SLAC 1968 (Nobel 1990). Yukarı +2/3, aşağı −1/3. Proton = yukarı yukarı aşağı, nötron = aşağı aşağı yukarı. Üst kuark 1995, ~173 milyar elektronvolt.",
+    "Renk hapsi: üç renk, sekiz kütlesiz gluon; kuarklar asla yalnız değil. Protonun kütlesinin yalnız ~%1'i (9 / 938 MeV) kuark kütlesi; gerisi güçlü kuvvet enerjisi.",
+    "Leptonlar: elektron 0,511, müon 105,7 MeV, tau 1,78 milyar elektronvolt + 3 nötrino. Üç kuşak; kararlı madde birinci kuşak; neden üç, bilinmiyor.",
+    "Dört kuvvet: kütleçekimi (graviton gözlenmedi), elektromanyetizma (foton), zayıf (W, Z), güçlü (gluon). Kütlesiz taşıyıcı → uzun menzil; ağır W ve Z → kısa menzil.",
+    "W ve Z: 1983 CERN UA1/UA2, Nobel 1984; 80,4 ve 91,2 milyar elektronvolt; ömür ~3 × 10⁻²⁵ s. Elektrozayıf kuram 1967.",
+    "Higgs: 1964 önerildi; 4 Temmuz 2012 ATLAS ve CMS, ~125 milyar elektronvolt, 5 sigma; spin 0; Nobel 2013 Englert ve Higgs.",
+    "LHC: 26.659 m, 100 m derinde, 1.232 mıknatıs 1,9 K, 13,6 trilyon elektronvolt. Uzun Kapanma 3 Temmuz 2026, Yüksek Parlaklıklı LHC Haziran 2030. Türkiye ortak üye 6.5.2015.",
+    "Nötrino: Pauli 1930, Cowan ve Reines 1956 (Nobel 1995), salınım → kütle; KATRIN < 0,45 elektronvolt (2025). Karşıt madde: Dirac 1928, Anderson 1932, ALPHA-g 2023 aşağı düşer; LHCb 2025 baryon CP bozumu 5,2 sigma.",
+    "Kozmik ışın: Hess 1912, 5.300 m (Nobel 1936); ~%90 proton; en çok ~3 × 10²⁰ eV ≈ 50 J. Açıklanamayanlar: kütleçekimi, karanlık madde ve enerji, nötrino kütlesi, madde fazlalığı, üç kuşak."
+  ],
+  "sorular": [
+    {
+      "soru": "Standart Model'de kaç temel parçacık vardır ve nasıl gruplanır?",
+      "cevap": "17: 12 madde parçacığı (6 kuark, 6 lepton, üç kuşak hâlinde), 4 tür kuvvet taşıyıcısı (foton, gluon, W, Z) ve Higgs bozonu."
+    },
+    {
+      "soru": "Protonun ve nötronun elektrik yükü kuark yüklerinden nasıl çıkar?",
+      "cevap": "Yukarı kuark +2/3, aşağı kuark −1/3 yük taşır. Proton (iki yukarı, bir aşağı): 2/3 + 2/3 − 1/3 = +1. Nötron (iki aşağı, bir yukarı): 2/3 − 1/3 − 1/3 = 0."
+    },
+    {
+      "soru": "Neden hiç kimse tek başına bir kuark görmemiştir?",
+      "cevap": "Renk hapsi yüzünden: kuarklar arasındaki güçlü kuvvet uzaklıkla güçlenir. Kuarkları ayırmak için harcanan enerji belli bir eşikten sonra yeni kuark-karşıt kuark çiftleri yaratır ve elde yeni hadronlar kalır."
+    },
+    {
+      "soru": "“Higgs alanı her şeye kütlesini verir” cümlesi neden eksiktir?",
+      "cevap": "Higgs alanı temel parçacıkların (elektron, kuarklar, W, Z) kütlesini açıklar. Ama protonun kütlesinin yalnızca yaklaşık %1'i kuark kütlelerindendir; gerisi güçlü kuvvetin hapsettiği enerjidir. Vücut kütlesinin çoğu bu yüzden Higgs'ten değil güçlü kuvvetten gelir."
+    },
+    {
+      "soru": "Dört temel kuvvet ve taşıyıcıları nelerdir?",
+      "cevap": "Güçlü kuvvet: gluon. Elektromanyetizma: foton. Zayıf kuvvet: W ve Z bozonları. Kütleçekimi: graviton öngörülüyor ama gözlenmedi; kütleçekimi Standart Model'de yoktur."
+    },
+    {
+      "soru": "Zayıf kuvvetin menzili neden çok kısadır?",
+      "cevap": "Taşıyıcıları W ve Z bozonları çok ağırdır (80,4 ve 91,2 milyar elektronvolt); yüksek kütle menzili sınırlar. Kütlesiz foton ise elektromanyetizmaya sonsuz menzil verir."
+    },
+    {
+      "soru": "Higgs bozonunun keşfi ne zaman, nerede ve hangi güvenle duyuruldu?",
+      "cevap": "4 Temmuz 2012'de CERN'de ATLAS ve CMS deneyleri, yaklaşık 125 milyar elektronvoltta yeni bir parçacığı beş sigma düzeyinde duyurdu. Parçacık 1964'te öngörülmüştü; Englert ve Higgs 2013 Nobel'ini aldı."
+    },
+    {
+      "soru": "LHC'de 6,8 trilyon elektronvoltluk bir proton için Lorentz çarpanı yaklaşık kaçtır?",
+      "cevap": "γ = 6.800.000 MeV ÷ 938 MeV ≈ 7.250. Hız açığı yaklaşık 1/(2γ²) ≈ 9,5 × 10⁻⁹; proton ışık hızının yaklaşık 0,9999999905'i ile gider."
+    },
+    {
+      "soru": "Nötrino salınımı neden Standart Model için bir sorundur?",
+      "cevap": "Nötrinoların tür değiştirebilmesi kütleli olmalarını gerektirir. Standart Model'in klasik biçiminde ise nötrinolar kütlesizdir. KATRIN'e göre kütle 0,45 elektronvolttan küçüktür ama sıfır değildir."
+    },
+    {
+      "soru": "ALPHA-g deneyi neyi gösterdi?",
+      "cevap": "CERN'de karşıt hidrojen atomları dikey bir tuzakta tutulup tuzağın iki ucu dengeli açıldığında atomların yaklaşık %80'i altta yok oldu: karşıt madde de aşağı düşer (Nature, Eylül 2023)."
+    },
+    {
+      "soru": "LHCb'nin 2025 sonucu madde-karşıt madde bilmecesini çözdü mü?",
+      "cevap": "Hayır. Baryonlarda ilk kez CP bozumu gözlendi (%2,45 fark, 5,2 sigma), ama CERN'e göre Standart Model'in öngördüğü CP bozumu evrendeki madde fazlalığını açıklamak için çok azdır; yeni kaynaklar gerekir."
+    },
+    {
+      "soru": "Victor Hess kozmik ışınları nasıl keşfetti?",
+      "cevap": "1912'de iyonlaşma ölçen aletlerini balonla 5.300 metreye çıkardı; iyonlaşma azalmak yerine yerdekinin yaklaşık iki katına çıktı. Radyasyonun yukarıdan, uzaydan geldiğini gösterdi ve 1936 Nobel'ini aldı."
+    },
+    {
+      "soru": "Standart Model'in açıklayamadığı beş konuyu say.",
+      "cevap": "Kütleçekimi, karanlık madde, karanlık enerji, nötrino kütleleri, madde ile karşıt madde arasındaki dengesizlik; ayrıca neden üç kuşak olduğu ve kütlelerin neden bu kadar farklı olduğu."
+    }
+  ],
+  "kaynaklar": [
+    {
+      "ad": "CERN, Le Modèle standard (Standart Model)",
+      "url": "https://home.cern/fr/science/physics/standard-model/"
+    },
+    {
+      "ad": "Wikipedia, Standard Model",
+      "url": "https://en.wikipedia.org/wiki/Standard_model"
+    },
+    {
+      "ad": "Wikipedia, Quark",
+      "url": "https://en.wikipedia.org/wiki/Quark"
+    },
+    {
+      "ad": "Wikipedia, Timeline of particle physics",
+      "url": "https://en.wikipedia.org/wiki/Timeline_of_particle_physics"
+    },
+    {
+      "ad": "Wikipedia, W and Z bosons (Wikiwand)",
+      "url": "https://www.wikiwand.com/en/Z-boson"
+    },
+    {
+      "ad": "CERN, CERN70: Announcing the Higgs boson discovery",
+      "url": "https://home.cern/news/series/cern70/cern70-announcing-higgs-boson-discovery"
+    },
+    {
+      "ad": "CERN, The Large Hadron Collider: facts and figures",
+      "url": "https://home.cern/resources/faqs/facts-and-fi"
+    },
+    {
+      "ad": "CERN, Updated schedule for CERN's accelerators (4 Ekim 2024)",
+      "url": "https://home.cern/updated-schedule-cerns-accelerators"
+    },
+    {
+      "ad": "CERN basın duyurusu, CERN bids farewell to the LHC and enters Long Shutdown 3 (AlphaGalileo, 29 Haziran 2026)",
+      "url": "https://www.alphagalileo.org/en-gb/Item-Display/ItemId/274796"
+    },
+    {
+      "ad": "CERN Courier, Turkey becomes associate member state of CERN (2 Haziran 2015)",
+      "url": "https://cerncourier.com/a/turkey-becomes-associate-member-state-of-cern/"
+    },
+    {
+      "ad": "APS Physics, Focus: Neutrino detection (Cowan ve Reines)",
+      "url": "https://physics.aps.org/story/v19/st13"
+    },
+    {
+      "ad": "KIT basın duyurusu 029/2025, Neutrinos weigh less than 0.45 electronvolts",
+      "url": "https://www.kit.edu/kit/english/pi_2025_029_astroparticle-physics-neutrinos-weigh-less-than-0-45-electronvolts.php"
+    },
+    {
+      "ad": "APS News, August 1932: Discovery of the Positron",
+      "url": "https://www.aps.org/apsnews/2004/08/discovery-positron-1932"
+    },
+    {
+      "ad": "Wikipedia, Antiparticle",
+      "url": "https://en.wikipedia.org/wiki/Antiparticle"
+    },
+    {
+      "ad": "NSF, Down goes antimatter! (27 Eylül 2023)",
+      "url": "https://www.nsf.gov/science-matters/down-goes-antimatter-gravitys-effect-matters-elusive-twin"
+    },
+    {
+      "ad": "CERN, A new piece in the matter–antimatter puzzle (25 Mart 2025)",
+      "url": "https://home.cern/news/news/physics/new-piece-matter-antimatter-puzzle"
+    },
+    {
+      "ad": "Wikipedia, Cosmic ray",
+      "url": "https://en.wikipedia.org/wiki/Cosmic_ray"
+    },
+    {
+      "ad": "Wikipedia, Muon g-2",
+      "url": "https://en.wikipedia.org/wiki/Muon_g-2"
+    },
+    {
+      "ad": "University of Illinois Physics, Muon g-2 final result (3 Haziran 2025)",
+      "url": "https://physics.illinois.edu/news/muon_g-2_final-result"
+    }
+  ]
+}

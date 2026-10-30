@@ -1,0 +1,540 @@
+{
+  "id": "d33",
+  "unite": "fizik",
+  "yeni": true,
+  "baslik": "Elektrik, Manyetizma ve Işık: Maxwell'in Birleştirmesi",
+  "ozet": "Kehribarın tüy çekmesi, pusulanın kuzeyi göstermesi ve yıldız ışığı aynı olgunun üç yüzüdür. Bu derste elektrik yükünü ve alan fikrini, akımın nasıl mıknatıs yarattığını, Faraday'ın değişen manyetizmadan akım elde etmesini ve bunun prizdeki elektriğe nasıl dönüştüğünü öğreneceksin. Sonra Maxwell'in bu yasaları birleştirip kâğıt üzerinde ışığın hızını hesapladığını, radyo astronominin doğuşunu, Dünya'nın manyetik kalkanını ve Güneş lekelerinin manyetizmasını göreceksin; ders, bir sonraki derse, görelilik kuramına açılan bir soruyla bitiyor.",
+  "on_bilgi": [
+    "d2",
+    "d4",
+    "d30"
+  ],
+  "bolumler": [
+    {
+      "baslik": "Kehribardan prize: görünmez bir kuvvet",
+      "paragraflar": [
+        "Kuru bir kış gününde kazağını çıkarırken çıtırtılar duyarsın, kapı koluna dokununca parmağına küçük bir kıvılcım atlar. Buzdolabının kapağındaki mıknatıs düşmeden durur, pusulanın iğnesi hep aynı yöne döner. Bunların hepsi görünmeyen bir kuvvetin işidir. Bu derste bu kuvvetin iki yüzünün, elektrik ile manyetizmanın aslında tek bir şey olduğunu ve bu tek şeyin ışığın kendisi olduğunu göreceksin.",
+        "Hikâyenin adı eski bir taştan gelir. İngiliz bilim insanı William Gilbert 1600'de yayımladığı “De Magnete” (Mıknatıs Üzerine) adlı kitabında kehribarla durgun elektriği inceledi. Kehribar Yunancada “elektron” diye anılır; Gilbert bu yüzden kehribara benzeyen etki için Latince “electricus” kelimesini kullandı. Bugünkü “elektrik” kelimesi oradan gelir. Aynı kitapta Gilbert, küçük küre biçimli mıknatıslarla yaptığı deneylerden Dünya'nın kendisinin de bir mıknatıs olduğu sonucuna vardı; pusulanın kuzeyi göstermesinin nedeni buydu.",
+        "Gilbert'ten iki yüzyıl sonra bile elektrik ve manyetizma iki ayrı konu sayılıyordu. Biri kehribarın, kıvılcımların ve yıldırımların, öteki mıknatısların ve pusulaların dünyasıydı. 1820 ile 1865 arasında bu iki dünya adım adım birleşti ve sonunda James Clerk Maxwell, bu birleşik kuramdan ışığın hızını hesapladı. Bu ders o yolculuğu izliyor.",
+        "Bu yolculuk gündelik hayatını da kurdu. Türkiye'de prizden 230 volt ve 50 hertz elektrik gelir. Dünyada elektriğin çoğu, Faraday'ın 1831'de bulduğu ilkeyle çalışan dev jeneratörlerde üretilir. Mikrodalga fırın, MR cihazı, radyo, cep telefonu ve radyo teleskopları da aynı denklemlerin çocuklarıdır. Işığın ne olduğunu ve tayfı d2'de gördün; burada ışığın neden var olduğunu soruyoruz. Isı ve enerji kavramları için d30'u okumuş olman işini kolaylaştırır."
+      ],
+      "akilda": "Elektrik ve manyetizma tek bir olgunun iki yüzüdür ve ışık bu olgunun dalgasıdır. “Elektrik” kelimesi Gilbert'in 1600'de kehribar (Yunanca elektron) için kullandığı “electricus”tan gelir."
+    },
+    {
+      "baslik": "Elektrik yükü: artı, eksi ve en küçük paket",
+      "paragraflar": [
+        "Elektriğin temelinde elektrik yükü, kısaca yük denen bir özellik vardır. Yük, maddenin elektrik kuvvetini hissetme ve yaratma yeteneğidir; tıpkı kütlenin kütleçekimini hissetme ve yaratma yeteneği olması gibi. Ama kütleden önemli bir farkı var: iki çeşit yük vardır, artı ve eksi. Aynı işaretli yükler birbirini iter, zıt işaretli yükler birbirini çeker. Kütleçekiminde ise yalnızca çekme vardır; eksi kütle bilinmez.",
+        "Gündelik maddede yükü taşıyan iki parçacık vardır. Atomun merkezindeki protonlar artı, çevresindeki elektronlar eksi yüklüdür ve bir protonun yükü bir elektronunkine tam olarak eşit, işareti zıttır. Normal bir atomda proton ve elektron sayısı eşit olduğu için atom dışarıya yüksüz görünür. Kazağını çıkarırken olan şey, sürtünmeyle bazı elektronların bir yüzeyden ötekine geçmesidir: biri elektron fazlası yüzünden eksi, öteki elektron eksiği yüzünden artı yüklenir. Kapı koluna dokununca atlayan kıvılcım, bu dengesizliğin bir anda düzelmesidir.",
+        "Yükün en küçük bir paketi vardır: temel yük. Bir protonun ya da bir elektronun yükü bu kadardır ve değeri tanım gereği kesin olarak 1,602176634 × 10⁻¹⁹ coulombdur. Coulomb (C), yükün birimidir. Bu sayı, gündelik yüklerin ne kadar çok elektron içerdiğini gösterir: 1 coulomb, yaklaşık 6,24 milyar milyar elektronun yüküdür.",
+        "Kazak örneğinde dikkat et: yeni yük yaratılmadı, yalnızca elektronlar bir yüzeyden ötekine taşındı. Kazağın eksi yükü, elektron kaybeden yüzeyin artı yüküyle birebir eşleşir. Bu, d30'daki enerji muhasebesine benzer bir hesap düzenidir: elektronları saymak, yükü saymaktır. Bir sonraki bölümde iki yükün birbirine ne kadar kuvvet uyguladığını ve bu kuvvetin uzaydan nasıl iletildiğini göreceğiz."
+      ],
+      "akilda": "Yükün iki çeşidi vardır: aynılar iter, zıtlar çeker. En küçük paket temel yüktür (1,602176634 × 10⁻¹⁹ C, kesin); 1 C yaklaşık 6,24 × 10¹⁸ elektron demektir."
+    },
+    {
+      "baslik": "Coulomb yasası ve alan fikri",
+      "paragraflar": [
+        "İki yük birbirini ne kadar güçlü iter ya da çeker? Fransız mühendis Charles-Augustin de Coulomb bunu 1785'te çok hassas bir aletle ölçtü. Burulma terazisi denen düzenekte ince bir gümüş, bakır ya da ipek telin ucuna bir iğne astı; iğnenin bir ucunda yüklü küçük bir top vardı. İkinci bir yüklü topu yaklaştırdığında iğne döndü ve tel burkuldu. Telin ne kadar burkulduğundan kuvveti, topların arasındaki uzaklıkla birlikte ölçtü.",
+        "Coulomb'un bulduğu kural, kütleçekim yasasına çok benzer: iki yük arasındaki kuvvet, yüklerin çarpımıyla doğru, aralarındaki uzaklığın karesiyle ters orantılıdır. Uzaklığı iki katına çıkarırsan kuvvet dörtte bire iner; d2'deki ışığın ters kare yasasını ve d3'teki kütleçekimini hatırla. Formülle F = k × q₁ × q₂ ÷ r². Burada q₁ ve q₂ yükler (coulomb), r aralarındaki uzaklık (metre), k ise Coulomb sabitidir ve yaklaşık 8,99 × 10⁹ N·m²/C² değerindedir. Bu sabit, iki tane 1 coulombluk yükü 1 metre aralıkla koyarsan aralarında yaklaşık 9 milyar newtonluk bir kuvvet olacağını söyler: bir coulomb, gündelik ölçekte devasa bir yüktür.",
+        "Coulomb'un ölçümünün inceliği, kuvvetleri doğrudan tartmak yerine bir telin burulmasına çevirmesindeydi. İnce bir tel çok küçük bir kuvvetle bile ölçülebilir bir açı kadar döner; açı ne kadar büyükse kuvvet o kadar büyüktür. Coulomb aynı işaretli yükler için itmenin, topların merkezleri arasındaki uzaklığın karesiyle ters orantılı olduğunu yazdı. Sonucu, salınan bir iğne ve yüklü içi boş bir küre kullanan ikinci, bağımsız bir yöntemle de doğruladı ve zıt yüklerin çekiminin de aynı kurala uyduğunu buldu. İki ayrı yöntemin aynı sonucu vermesi, bir ölçümün güvenilirliği için bugün de aranan şeydir.",
+        "Coulomb yasası bir şeyi açıkta bırakır: bir yük, uzaktaki ötekini nasıl “bilir”? Aradaki boşlukta ne olur? İngiliz deneyci Michael Faraday buna resimli bir cevap verdi. Ona göre her yük çevresindeki uzayı değiştirir; uzayın her noktasında oraya konacak bir yükün ne kadar ve hangi yönde itileceğini anlatan bir durum oluşur. Buna elektrik alanı denir. Faraday bunu yüklerden çıkıp uzaya yayılan kuvvet çizgileriyle hayal etti; matematikten çok resimlerle düşünen bir bilim insanıydı.",
+        "Alan fikri ilk başta yalnızca kullanışlı bir çizim gibi görünür. Bu dersin sonunda ise alanın gerçek bir şey olduğunu, enerji taşıdığını ve kaynağından kopup uzayda ışık hızıyla yol alabildiğini göreceksin. Haritadaki rüzgâr okları benzetmesi işe yarar: her noktada rüzgârın yönünü ve gücünü gösterirler. Benzetmenin sınırı şu: rüzgâr havanın kendisidir, elektrik alanı ise boşlukta da var olur; onu taşıyan bir hava yoktur."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Elektrik kuvveti kütleçekiminden ne kadar güçlü?",
+        "metin": "Bir elektron ile bir protonu düşün. Elektrik kuvveti F_e = k × e² ÷ r², kütleçekimi F_g = G × m_e × m_p ÷ r². İkisinde de r² olduğu için oranları uzaklıktan bağımsızdır: F_e ÷ F_g = k × e² ÷ (G × m_e × m_p). Değerler: k ≈ 8,988 × 10⁹, e = 1,602 × 10⁻¹⁹ C, G = 6,674 × 10⁻¹¹, elektronun kütlesi m_e = 9,109 × 10⁻³¹ kg, protonunki m_p = 1,673 × 10⁻²⁷ kg. Pay: 8,988 × 10⁹ × 2,567 × 10⁻³⁸ ≈ 2,307 × 10⁻²⁸. Payda: 6,674 × 10⁻¹¹ × 9,109 × 10⁻³¹ × 1,673 × 10⁻²⁷ ≈ 1,017 × 10⁻⁶⁷. Oran ≈ 2,27 × 10³⁹. Sonuç: bir atomun içinde elektrik kuvveti kütleçekiminden yaklaşık 10³⁹ kat güçlüdür."
+      },
+      "akilda": "Coulomb (1785): iki yük arasındaki kuvvet yüklerin çarpımıyla doğru, uzaklığın karesiyle ters orantılıdır. Faraday'ın alan fikri: yük çevresindeki uzayı değiştirir, kuvvet bu alan aracılığıyla iletilir."
+    },
+    {
+      "baslik": "Bu kadar güçlüyse neden fark etmiyoruz?",
+      "paragraflar": [
+        "Bir önceki örnek bir soru doğurur. Elektrik kuvveti kütleçekiminden 10³⁹ kat güçlüyse, gezegenleri, yıldızları ve galaksileri neden kütleçekimi yönetiyor? Cevap, yükün iki çeşit olmasındadır. Kütleçekiminde her parça her parçayı çeker; kütleler birikir, Dünya kadar kütle muazzam bir çekim yaratır. Elektrikte ise artılar ve eksiler birbirini dengeler. Bir taşın içindeki milyarlarca milyar proton, neredeyse tam aynı sayıda elektronla örtülüdür; dışarıdan bakan bir yük için taş yüksüz gibidir.",
+        "Bu dengeyi bozmak çok kolay değildir, çünkü dengesizlik kendini düzeltmeye çalışır. Fazla eksi yüklü bir bölge çevresindeki artıları çeker, onlar gelip dengeyi kurar. Kapı kolundaki kıvılcım tam olarak budur. Bu yüzden gökyüzündeki büyük cisimler pratikte yüksüzdür ve büyük ölçekte geriye yalnızca hep aynı yönde çeken, birikip büyüyen kütleçekimi kalır.",
+        "Ama küçük ölçekte durum tersine döner. Atomların birbirine bağlanması, yani kimya, artı yüklü çekirdeklerle eksi yüklü elektronlar arasındaki elektrik çekimine dayanır. Bir önceki örnekte gördüğün 10³⁹'luk fark burada işe yarar: iki atom arasındaki kütleçekimi, onları bir arada tutan elektrik kuvvetinin yanında hesaba bile girmez. Kâğıdın yırtılmaya direnmesi, bir ipin gerilmesi, yediğin ekmeğin kimyası atomlar ve moleküller arasındaki bu kuvvetlerle ilgilidir; ayrıntının bir kısmı kuantum fiziğini de gerektirir (d28).",
+        "Gökyüzünde de elektrik büsbütün kaybolmaz. Atomlarından elektron kopmuş, yüklü parçacıklardan oluşan gaza plazma denir. d4'te gördüğün koronal kütle atımları, Güneş'ten uzaya fırlatılan plazma ve manyetik alan bulutlarıdır. Plazma bütün olarak yüksüz olsa da içindeki yükler serbestçe hareket edebildiği için manyetik alanlarla çok güçlü etkileşir. Dersin sonunda Güneş lekelerinde ve kutup ışıklarında bunu göreceksin."
+      ],
+      "akilda": "Elektrik kuvveti çok güçlüdür ama artı ve eksi yükler birbirini dengelediği için büyük cisimler yüksüz görünür; büyük ölçekte kütleçekimi kazanır. Gündelik kuvvetlerin neredeyse tamamı atomlar arası elektrik kuvvetleridir."
+    },
+    {
+      "baslik": "Akım: yolda giden yük",
+      "paragraflar": [
+        "Yük bir yerde durursa durgun elektrik, hareket ederse akım olur. Elektrik akımı, bir telin herhangi bir kesitinden saniyede geçen yük miktarıdır. Birimi amperdir: saniyede 1 coulomb geçiyorsa akım 1 amperdir (A). Bakır bir telde akımı taşıyan, metalin atomlarına sıkı bağlı olmayan serbest elektronlardır. Bir su borusu benzetmesi işe yarar: akım, borudan saniyede geçen su miktarına benzer.",
+        "Suyu borudan geçiren bir basınç farkıdır. Elektrikte buna gerilim ya da voltaj denir ve volt (V) ile ölçülür. Gerilim, yükü itmeye hazır bir “elektrik yokuşu”dur: her coulomb yük bu yokuştan inerken belli bir enerji bırakır. Türkiye'deki prizlerin gerilimi 230 volttur. Alman fizikçi Georg Ohm 1827'de yayımladığı çalışmada akım, gerilim ve telin akıma karşı koyma derecesi, yani direnç arasındaki ilişkiyi ortaya koydu; bu ilişki bugün Ohm yasası diye bilinir.",
+        "Gerilim ile akımı çarparsan gücü, yani saniyede aktarılan enerjiyi bulursun: güç (watt) = gerilim (volt) × akım (amper). 1 watt, saniyede 1 joule demektir; d30'daki enerji birimini hatırla. Bir örnek: 2000 watt yazan bir su ısıtıcısını 230 voltluk prize taktığında çektiği akım yaklaşık 2000 ÷ 230 ≈ 8,7 amperdir (2000 W örnek için seçilmiş bir değer). Bu ısıtıcı her saniye 2000 joule elektrik enerjisini suyun moleküllerinin hareketine, yani ısıya çevirir. Telden geçen yüklerin enerjisi, telin direnci yüzünden atomların titreşimine dönüşür; ısıtıcının, ütünün ve eski tip akkor ampulün çalışma ilkesi budur.",
+        "Benzetmenin sınırı var. Düğmeye basınca lambanın hemen yanması için santraldeki ya da pildeki elektronların lambaya kadar koşması gerekmez; tel zaten elektronlarla doludur ve itme, yani elektrik alanı, tel boyunca çok hızlı yayılır. Ağzına kadar dolu uzun bir boruyu düşün: bir uçtan bir damla daha ittiğinde öbür uçtan hemen bir damla dökülür, ama itilen damla oraya varmamıştır.",
+        "Akımın bir yönü vardır ve bu yön değişebilir. Pil, akımı hep aynı yönde iten bir kaynaktır; buna doğru akım denir. Evindeki prizden gelen akım ise yön değiştirir: Türkiye'de saniyede 50 kez ileri geri gider gelir, bu yüzden frekansı 50 hertzdir. Bu tür akıma alternatif akım denir. Neden böyle olduğunu, Faraday'ın keşfini ve jeneratörleri gördüğümüzde anlayacaksın."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Telefonu şarj eden akımda kaç elektron var?",
+        "metin": "Telefonunu 1 amperlik bir akımla şarj ettiğini düşün. 1 A, saniyede 1 coulomb yük demektir. Bir elektronun yükü 1,602176634 × 10⁻¹⁹ C olduğundan 1 coulombda 1 ÷ 1,602176634 × 10⁻¹⁹ ≈ 6,24 × 10¹⁸ elektron vardır. Yani kablonun her kesitinden saniyede yaklaşık 6,24 milyar milyar elektron geçer. Bir saatlik şarj 3600 saniyedir: 3600 × 6,24 × 10¹⁸ ≈ 2,2 × 10²² elektron. Bu kadar çok parçacığın taşıdığı toplam yük yine yalnızca 3600 coulombdur. Sonuç: 1 amper saniyede yaklaşık 6,24 × 10¹⁸ elektrondur."
+      },
+      "akilda": "Akım, saniyede geçen yüktür (1 A = 1 C/s); gerilim, yükü iten elektrik yokuşudur (volt). Türkiye'de priz 230 V ve 50 Hz alternatif akımdır."
+    },
+    {
+      "baslik": "Ørsted'in pusulası: akım mıknatıs yaratır",
+      "paragraflar": [
+        "1820'de Danimarkalı fizikçi Hans Christian Ørsted bir dersi sırasında beklenmedik bir şey gördü: akım taşıyan bir telin yakınındaki pusula iğnesi döndü ve tele dik durdu. Yani hareket eden yükler, mıknatısların hissettiği bir etki yaratıyordu. Elektrik ile manyetizma arasındaki doğrudan bağı gösteren bu gözlem, aynı yıl içinde ardı ardına yeni deneyleri tetikledi.",
+        "Aynı yıl André-Marie Ampère, içlerinden akım geçen iki paralel telin, akımlar aynı yöndeyse birbirini çektiğini, zıt yöndeyse ittiğini gösterdi. Mıknatıs hiç yoktu; yalnızca hareket eden yükler vardı. Yine 1820'de François Arago, akım taşıyan bakır bir telin çevresine serpilen mıknatıslanmamış demir tozlarının telin çevresinde halkalar oluşturduğunu, akım kesilince dağıldığını gördü. Akımın çevresinde, telin etrafında dönen bir manyetik alan vardı. Manyetik alan, mıknatısların ve hareket eden yüklerin hissettiği kuvvetin uzaydaki haritasıdır.",
+        "Bu keşifler hemen teknolojiye dönüştü. Faraday 1821'de elektrikle dönme hareketi elde etti ve ilkel bir elektrik motoru kurdu. William Sturgeon 1825'te ilk kullanışlı elektromıknatısı gösterdi; kendi ağırlığının 20 katını taşıyabiliyordu. Elektrik motorlarının temel fikri budur: akım manyetik alan yaratır, manyetik alanlar birbirini iter ve çeker, bu itme ve çekme dönme hareketine çevrilir.",
+        "Manyetik alanın gücü tesla (T) ile ölçülür. Dünya'nın yüzeydeki manyetik alanı yaklaşık 22 ile 67 mikrotesla arasındadır; bir mikrotesla teslanın milyonda biridir. Güçlü bir buzdolabı mıknatısı yaklaşık 10.000 mikrotesla, yani 0,01 tesladır. Hastanelerdeki MR cihazlarının çoğu 1,5 ya da 3 tesla kullanır. Arada, aynı birimle ölçülen ama birbirinden on binlerce kat farklı alanlar var; bir sonraki örnek bu farkları sayıyla gösteriyor."
+      ],
+      "ornek": {
+        "baslik": "Örnek: MR, buzdolabı mıknatısı ve Dünya",
+        "metin": "Dünya'nın yüzeydeki alanı için orta bir değer alalım: 50 mikrotesla, yani 50 × 10⁻⁶ T = 5 × 10⁻⁵ T. Buzdolabı mıknatısı 0,01 T: 0,01 ÷ 5 × 10⁻⁵ = 200 kat güçlü. 1,5 teslalık bir MR: 1,5 ÷ 5 × 10⁻⁵ = 30.000 kat; 3 teslalık bir MR: 60.000 kat. Radiopaedia da Dünya'nın alanını MR mıknatıslarından yaklaşık beş basamak, yani yüz bin kat mertebesinde zayıf diye anlatır. Sonuç: MR'ın alanı Dünya'nınkinin on binlerce katıdır."
+      },
+      "akilda": "Ørsted (1820): akım pusulayı saptırır, yani hareket eden yük manyetik alan yaratır. Ampère, Arago, Faraday (1821 motor) ve Sturgeon (1825 elektromıknatıs) bunu izledi. Dünya ~22–67 μT, MR 1,5–3 T."
+    },
+    {
+      "baslik": "Faraday'ın keşfi: değişim akım doğurur",
+      "paragraflar": [
+        "Akım manyetizma yaratıyorsa, manyetizma da akım yaratabilir mi? Ørsted'in keşfinden sonra bu soru doğaldı. Kaynaklara göre 29 Ağustos 1831'de Faraday, bir demir halkanın iki yanına iki ayrı tel sargısı doladı. Birinci sargıdaki akımı açtığı ya da kestiği anda ikinci sargıda kısa bir akım belirdi. Akım sürekli akarken ikinci sargıda hiçbir şey olmuyordu.",
+        "Anahtar kelime değişimdi. Manyetik alanın kendisi akım doğurmuyordu; değişen manyetik alan doğuruyordu. Birkaç hafta içinde Faraday bunu daha yalın bir biçimde gösterdi: bir çubuk mıknatısı tel sargısının içine ittiğinde akım oluşuyordu. Halka deneyinin dersine göre mıknatıs hareketsiz kaldığında alan değişmez ve akım da doğmaz. Bu olaya elektromanyetik indüksiyon denir. Mıknatısı ne kadar hızlı hareket ettirirsen, yani alan ne kadar hızlı değişirse, akımı iten gerilim o kadar büyük olur.",
+        "Faraday aynı yıl ilk sürekli akım üreten aleti de yaptı: iki mıknatıs kutbunun arasında dönen bakır bir disk. Disk döndükçe sürekli bir akım çıkıyordu. Bu alet, bugün dünyanın elektriğini üreten jeneratörlerin atasıdır. Faraday'ın düşünce biçimi de önemlidir: matematikle değil, uzaya yayılan çizgilerle düşündü. Ona göre mıknatısın kuvvet çizgileri bir telin içinden ne kadar hızlı geçer ya da değişirse, telde o kadar akım doğuyordu.",
+        "İndüksiyon bugünkü elektrik düzeninin temelidir. Gerilimi yükseltip alçaltan dönüştürücüler, yani transformatörler, ortak bir demir çekirdek üzerine sarılmış iki sargıdır; yapıları Faraday'ın demir halkasına çok benzer. Birinci sargıdaki değişen akım çekirdekte değişen bir manyetik alan, o da ikinci sargıda akım doğurur. Halka deneyinin dersi burada da geçerlidir: sabit akımla bu düzenek çalışmaz, değişen akım gerekir. Faraday'ın 1831'de bir laboratuvar masasında gördüğü kısa kıpırtı, bugün bütün şebekelerin işleyiş ilkesidir."
+      ],
+      "akilda": "Faraday (1831): değişen manyetik alan bir telde akım doğurur; buna elektromanyetik indüksiyon denir. Sabit alan akım doğurmaz, değişim doğurur. Bakır disk ilk jeneratördür."
+    },
+    {
+      "baslik": "Jeneratörler ve İstanbul'un prizi",
+      "paragraflar": [
+        "Bir jeneratör, Faraday'ın keşfini büyük ölçekte tekrarlar. ABD Enerji Bilgi İdaresi'nin anlatımıyla, Faraday'ın 1831'de bulduğu ilke, yani bir mıknatısı tel sargısının içinde hareket ettirmenin telde akım doğurması, jeneratörlerin çoğunun temelidir. Bugünkü büyük jeneratörlerde kalıcı mıknatıs yerine elektromıknatıslar kullanılır: dönen bir parça, yani rotor, sabit sargıların, yani statorun içinde döner ve sargılarda akım doğar.",
+        "Rotoru döndürecek bir şey gerekir. Aynı kaynağa göre ABD'de ve dünyada elektriğin çoğu, bir türbin kullanan santrallerde üretilir. Türbin, su, buhar ya da yanma gazları gibi akan bir akışkanın döndürdüğü bir çarktır ve jeneratörün rotoruna bağlıdır. Barajda düşen su, yakıtla kaynatılan suyun buharı, rüzgâr santralinde rüzgâr bu çarkı çevirir; kaynağa göre 2022'de ABD'de elektriğin yaklaşık %42'si buhar türbinlerinden, yaklaşık %10'u rüzgâr türbinlerinden geldi. d30'daki dil ile: buhar santralleri birer ısı makinesidir ve Carnot sınırına tabidir. Önemli bir istisna güneş panelleridir: ışığı türbinsiz, doğrudan elektriğe çevirirler.",
+        "Prizdeki akımın yön değiştirmesi buradan gelir. Rotor her tur attığında mıknatısın bir kutbu sargının önünden bir gelir bir gider; sargıdan geçen manyetik alan önce artar, sonra azalır, sonra ters yönde artar. Faraday yasasına göre akım da bu değişime uyarak ileri geri gider. Türkiye'nin şebekesi 50 hertzdir: akım saniyede 50 kez tam bir ileri geri döngü yapar.",
+        "Alternatif akımın bir avantajı da bir önceki bölümde gördüğün transformatörlerle çalışabilmesidir: transformatör değişen akım ister, prizdeki akım da zaten sürekli değişir. Böylece elektrik bir gerilimde üretilip başka bir gerilimde kullanılabilir. Bundan sonraki adım daha da şaşırtıcıdır: değişen akımlar ve alanlar, hiçbir telin olmadığı boşlukta bile birbirini doğurarak ilerleyebilir. Bunu ilk anlayan Maxwell'di."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Prizin dalgası ne kadar uzun?",
+        "metin": "Türkiye'de şebeke frekansı f = 50 Hz. Bir tam döngünün süresi 1 ÷ 50 = 0,02 saniye, yani 20 milisaniye. Değişen bir akım elektromanyetik dalga da yayabilir; bu dalga ışık hızıyla, c = 299.792.458 m/s ile gider. d2'deki f = c ÷ λ bağıntısından dalga boyu λ = c ÷ f = 299.792.458 ÷ 50 ≈ 5.996.000 m, yani yaklaşık 6000 km. Bu, Dünya'nın yarıçapına (yaklaşık 6371 km) yakın bir uzunluktur. Sonuç: 50 Hz'lik dalganın boyu yaklaşık 6000 km."
+      },
+      "akilda": "Jeneratörlerin çoğu Faraday ilkesiyle çalışır: türbinle dönen rotor sargılarda akım doğurur. Dönme yüzünden akım yön değiştirir; Türkiye'de 50 Hz. Güneş panelleri türbinsiz istisnadır."
+    },
+    {
+      "baslik": "Maxwell'in eksik parçası",
+      "paragraflar": [
+        "1860'lara gelindiğinde ellerde birkaç ayrı kural vardı. Yükler elektrik alanı yaratır (Coulomb). Akımlar manyetik alan yaratır (Ørsted, Ampère). Değişen manyetik alan elektrik alanı, dolayısıyla akım yaratır (Faraday). İskoç fizikçi James Clerk Maxwell, Faraday'ın resimli düşüncesini matematiğe çevirmeye girişti. 1861–1862'de yayımladığı “Fiziksel Kuvvet Çizgileri Üzerine” makalelerinde kurallarda bir asimetri buldu ve onu düzeltti.",
+        "Asimetri şuydu: değişen manyetik alan elektrik alanı doğuruyorsa, değişen elektrik alanı da manyetik alan doğurmalı değil miydi? Maxwell, Ampère'in kuralına yeni bir terim ekledi. Bu terime yer değiştirme akımı denir: içinden hiçbir yük akmasa bile değişen bir elektrik alanı, manyetik alan yaratması bakımından bir akım gibi davranır. Bu tek ekleme, aşağıda göreceğin gibi, fiziğin en büyük sonuçlarından birine kapı açtı.",
+        "Maxwell'in ekine neden ihtiyaç olduğunu bir düşünce deneyiyle görebilirsin. Bir telin ortasını kesip uçlarına birbirine bakan iki metal levha bağla; buna kondansatör denir. Teli bir pile bağladığında yükler levhalarda birikirken telde kısa bir süre akım akar, ama levhaların arasındaki boşluktan hiçbir yük geçmez. Ampère'in eski kuralına göre telin çevresinde manyetik alan olmalı, iki levhanın arasında ise olmamalıydı; kural, nereye bakıldığına göre iki farklı cevap veriyordu. Maxwell'in çözümünde levhaların arasındaki boşlukta biriken yükler yüzünden değişen bir elektrik alanı vardır ve bu değişim, manyetik alan açısından telde akan akımın yerini tutar. Böylece kural her yerde tutarlı hâle gelir.",
+        "Maxwell'in kuramı bugün dört denklemle yazılır; sözle şöyle özetlenebilir. Bir: elektrik yükleri elektrik alanının kaynağıdır; alan artı yüklerden çıkar, eksi yüklerde biter. İki: manyetik alan için böyle bir kaynak yoktur; artı ya da eksi yükün karşılığı olan tek başına bir manyetik kutup bu denklemlerde yer almaz, manyetik alan çizgileri hep kapalı döngüler çizer. Üç: değişen bir manyetik alan çevresinde dönen bir elektrik alanı yaratır (Faraday). Dört: akımlar ve değişen elektrik alanları çevrelerinde dönen bir manyetik alan yaratır (Ampère ve Maxwell'in eki).",
+        "Maxwell'in kendi yazımı bu kadar derli toplu değildi. 1865'te yayımlanan makalesinde yirmi denklem vardı. Bunları bugün bildiğimiz dört denkleme indiren, 1884'te Oliver Heaviside oldu; Josiah Willard Gibbs ve Heinrich Hertz de bu sadeleştirmeye katkıda bulundu. Yani “Maxwell denklemleri” dediğimiz biçim, aslında birkaç kişinin ortak eseridir."
+      ],
+      "akilda": "Maxwell, değişen elektrik alanının da manyetik alan yarattığını ekledi (yer değiştirme akımı). Elektromanyetizma dört denkleme sığar: yükler elektrik alanı yaratır; tek manyetik kutup yoktur; değişen manyetik alan elektrik alanı yaratır; akım ve değişen elektrik alanı manyetik alan yaratır."
+    },
+    {
+      "baslik": "Hesaptan çıkan ışık hızı",
+      "paragraflar": [
+        "Maxwell'in ekinin büyük sonucu şudur: değişen bir elektrik alanı manyetik alan, değişen bir manyetik alan da elektrik alanı doğuruyorsa, ikisi birbirini sonsuza dek doğurarak uzayda ilerleyebilir. Kaynağından kopmuş, kendi kendini taşıyan bir dalga: elektromanyetik dalga. d2'de ışığı tam böyle tarif ettik. Maxwell'in denklemleri bu dalganın hızını da verir ve bu hız yalnızca iki sayıya bağlıdır: elektrik kuvvetinin boşluktaki gücünü belirleyen bir sabit ile manyetik kuvvetin boşluktaki gücünü belirleyen başka bir sabit.",
+        "Bu iki sabitin oranı daha önce, ışıkla hiç ilgisi olmayan deneylerle ölçülmüştü. Wilhelm Weber ile Rudolf Kohlrausch 1855'te başlayan çalışmalarında, yükü elektrik yoluyla ve manyetik yoluyla ölçen iki birim sistemi arasındaki oranı buldular. Bu oranın birimi hız birimiydi ve değeri yaklaşık saniyede 3,107 × 10⁸ metreydi. Bu, o zamana kadar ölçülmüş ışık hızlarına çok yakındı, ama Weber ile Kohlrausch bu bağı kurmadı.",
+        "Maxwell 1861'in sonunda bu sonuçlara baktı, kendi kuramına uygun biçime çevirdi ve onları ışık hızıyla ilişkilendirdi. Vardığı sonuç, ışığın elektromanyetik bir ışınım olduğuydu. Bu sonucu 1864'te Royal Society'ye gönderdiği ve aynı yılın 8 Aralık'ında okunan, 1865'te yayımlanan “Elektromanyetik Alanın Dinamik Kuramı” makalesinde açıkça yazdı: ışık, elektromanyetik yasalara uyarak alan içinde yayılan elektromanyetik bir bozulmadır.",
+        "Bunun ne kadar şaşırtıcı olduğunu düşün. Kehribar, pusula ve tel sargılarıyla yapılan masa üstü deneylerden, hiç ışık kullanmadan, ışığın hızı çıkmıştı. Görünür ışık, d2'de gördüğün bütün tayf, radyo dalgasından gama ışınına kadar, aynı denklemlerin çözümleriydi. Kuramın deneysel doğrulaması 1887'de geldi: Alman fizikçi Heinrich Hertz, Maxwell'in öngördüğü dalgaları laboratuvarda üretip algıladı ve bu radyo dalgalarının ışık hızıyla yol aldığını gösterdi (d2).",
+        "Bu birleşmenin gökbilime etkisi de büyüktür. Bir yıldızdan gelen ışığı tayfına ayırdığında (d2), aslında o yıldızın atmosferindeki yüklü parçacıkların, elektronların ve iyonların, nasıl salındığını okuyorsun. Gökyüzüne radyo teleskopuyla, kızılötesi kamerayla ya da X ışını uydusuyla bakmak, aynı denklemlerin farklı frekanslardaki çözümlerini dinlemektir. Maxwell'den önce gökbilim yalnızca gözün gördüğü dar dilimle yetiniyordu; Maxwell'den sonra görülmeyen ışığın da var olduğu, hatta var olmak zorunda olduğu anlaşıldı. Hertz'in radyo dalgaları bunun ilk kanıtı, bir sonraki bölümün konusu olan radyo astronomi ise onun gökyüzüne uzanan devamıdır."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Masa üstü sabitlerden ışık hızını hesaplamak",
+        "metin": "Maxwell denklemlerinde dalganın hızı c = 1 ÷ √(μ₀ × ε₀) olarak çıkar. ε₀ boşluğun elektrik geçirgenliğidir ve elektrik kuvvetinin gücünü belirler: NIST'e göre 8,8541878188 × 10⁻¹² F/m. μ₀ boşluğun manyetik geçirgenliğidir ve manyetik kuvvetin gücünü belirler: 1,25663706127 × 10⁻⁶ N/A². Çarpım: 1,25663706127 × 10⁻⁶ × 8,8541878188 × 10⁻¹² ≈ 1,11265 × 10⁻¹⁷. Karekök: yaklaşık 3,33564 × 10⁻⁹. Bunun tersi: 1 ÷ 3,33564 × 10⁻⁹ ≈ 2,99792 × 10⁸ m/s. Işık hızının tanımlı değeri 299.792.458 m/s ile virgülden sonra beş basamağa kadar aynı. Weber ile Kohlrausch'un 3,107 × 10⁸ değeri bundan yaklaşık %3,6 fazlaydı. Sonuç: c ≈ 299.792 km/s, hiç ışık ölçmeden."
+      },
+      "akilda": "Maxwell'in denklemleri kendi kendini taşıyan bir elektromanyetik dalga öngörür; hızı c = 1 ÷ √(μ₀ε₀), yani yaklaşık 299.792 km/s. Maxwell 1861'de bunu Weber–Kohlrausch ölçümüyle ışık hızına bağladı, 1865'te ışığın elektromanyetik olduğunu yazdı; Hertz 1887'de doğruladı."
+    },
+    {
+      "baslik": "Işık nasıl doğar: salınan yükler ve mikrodalgalar",
+      "paragraflar": [
+        "Maxwell'in kuramı ışığın nereden geldiğini de söyler. Sabit duran bir yük yalnızca durgun bir elektrik alanı yaratır. Sabit hızla giden bir yük buna bir manyetik alan ekler. Ama bir yükü ileri geri sallarsan, çevresindeki alan da sürekli değişir; değişen elektrik alanı değişen manyetik alan, o da değişen elektrik alanı doğurur ve bu değişim dışarıya doğru ışık hızıyla yayılır. Bir radyo vericisinin anteni, içindeki elektronları belli bir frekansta ileri geri sallayan bir teldir; yaydığı dalganın frekansı bu sallanmanın frekansıdır.",
+        "Bir göl benzetmesi faydalıdır. Suya parmağını bir kez batırırsan tek bir halka yayılır. Parmağını düzenli olarak batırıp çıkarırsan, halkalar art arda yayılır ve aralarındaki uzaklık ne kadar hızlı salladığına bağlıdır. Elektromanyetik dalgada da sallanma ne kadar hızlıysa dalga boyu o kadar kısadır. Benzetmenin sınırı: su dalgası suyun kendisinin hareketidir, elektromanyetik dalga ise boşlukta da yol alır; taşıyıcı bir ortama ihtiyacı yoktur (d2).",
+        "Radyon da aynı ilkenin tersini kullanır. Vericiden gelen dalganın elektrik alanı, alıcının antenindeki elektronları kendi frekansında ileri geri sallar; bu çok küçük salınım, devrelerde güçlendirilip sese çevrilir. Verici yükleri sallayıp dalga yapar, alıcı dalgadan yük sallanması geri elde eder. Hertz'in 1887'deki çalışması da böyle bir çiftti: d2'deki NASA anlatımına göre Maxwell'in kuramını radyo dalgalarını hem üretmeye hem de algılamaya uyguladı. Gökbilimcilerin radyo teleskopları da, Jansky'nin anteni gibi, uzayda bir yerde sallanmış yüklerin dalgalarıyla kendi antenlerindeki elektronları sallayan dev alıcılardır.",
+        "Aynı ilke tersinden de çalışır: elektromanyetik dalga yüklü parçacıkları sallar. Mikrodalga fırın bunun mutfaktaki örneğidir. Fırın yaklaşık 2,45 gigahertz frekanslı mikrodalgalarla çalışır. Su molekülünün bir ucu biraz artı, öbür ucu biraz eksi yüklüdür. Dalganın elektrik alanı saniyede milyarlarca kez yön değiştirdikçe su molekülleri ona uymak için döner, yan yana moleküllerle sürtünür ve bu hareket ısıya dönüşür. d30'daki dille: düzenli bir dalga enerjisi, moleküllerin düzensiz hareketine, yani ısıya dönüşür.",
+        "Cep telefonun, radyo ve televizyon vericileri aynı şeyi yapar: yükleri sallar ve dalga salar. Aradaki fark yalnızca sallanmanın hızıdır; bu yüzden aynı ailenin farklı bantlarındadırlar. Tayfın tamamını d2'de gördün; burada önemli olan, tayfın her bandının sallanan yüklerden doğduğudur. Gökyüzünde de böyledir: bir sonraki bölümde, uzayda sallanan yüklerin bize yolladığı radyo dalgalarına bakıyoruz."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Mikrodalga fırının dalga boyu",
+        "metin": "Mikrodalga fırının frekansı yaklaşık f = 2,45 GHz = 2,45 × 10⁹ Hz. Dalga boyu λ = c ÷ f = 299.792.458 ÷ 2,45 × 10⁹ ≈ 0,122 m, yani yaklaşık 12 cm. Bu, d2'deki tayfta mikrodalga bandına düşer. Karşılaştırma: 50 Hz'lik şebeke dalgası yaklaşık 6000 km, görünür ışık ise yaklaşık 380–700 nanometredir; mikrodalga ikisinin arasında, ama görünür ışıktan yaklaşık iki yüz bin kat uzundur (0,122 m ÷ 550 × 10⁻⁹ m ≈ 220.000). Sonuç: fırının dalgası yaklaşık 12 cm."
+      },
+      "akilda": "İleri geri sallanan yükler elektromanyetik dalga salar; dalganın frekansı sallanmanın frekansıdır. Tersine, dalga da yükleri sallar: mikrodalga fırın 2,45 GHz'lik (≈12 cm) dalgayla su moleküllerini döndürüp ısıtır."
+    },
+    {
+      "baslik": "Gökten gelen parazit: radyo astronominin doğuşu",
+      "paragraflar": [
+        "1930'ların başında ABD'deki Bell Laboratuvarları'nda çalışan mühendis Karl Jansky'ye pratik bir görev verildi: okyanus ötesi radyo telefon görüşmelerini bozabilecek parazitlerin kaynaklarını bulmak. Jansky 20,5 megahertzte, yani yaklaşık 14,6 metre dalga boyunda çalışan, yaklaşık 30 metre genişliğinde bir anten kurdu. Anteni dört eski Ford Model T tekerleği üstüne oturtmuştu, böylece her yöne döndürebiliyordu. Çevresindekiler ona “Jansky'nin atlıkarıncası” dedi.",
+        "Parazitlerin arasında açıklanamayan, sürekli bir tıslama vardı. Jansky dikkatle ölçünce bu sinyalin her gün 23 saat 56 dakikada bir tepe yaptığını gördü; tepe noktalarından biri 16 Eylül 1932 akşamı saat 19.10'du. Bu süre, d1'den hatırlayacağın yıldız günüdür: Dünya'nın yıldızlara göre bir kez dönme süresi. Sinyal Güneş'ten gelseydi tepe 24 saatte bir tekrarlanırdı. Kaynak yıldızların arasındaydı: Samanyolu'nun merkezi, Yay takımyıldızı yönü. Jansky keşfini Nisan 1933'te duyurdu, ana makalesi Ekim 1933'te yayımlandı. Bugün radyo kaynaklarının akı yoğunluğu birimine onun anısına jansky denir.",
+        "1937'de radyo mühendisi Grote Reber, Illinois'deki evinin bahçesine bir radyo teleskobu kurdu ve göğün radyo dalgalarıyla ilk sistemli taramasını yaptı. Radyo teleskopların gelişimini d12'de, nötr hidrojenin 21 cm çizgisini d2'de gördün. Burada şu soruyu soralım: gökte hangi yükler, ne yüzden sallanıyor da radyo dalgası yayıyor?",
+        "Cevaplardan biri sinkrotron ışımasıdır: ışık hızına yakın hızlarda giden yüklü parçacıklar manyetik alan çizgilerinin çevresinde sarmal çizerek döndüklerinde, yani sürekli yön değiştirerek ivmelendiklerinde yaydıkları ışınım. Adını parçacık hızlandırıcılarından alır; ilk kez 1947'de General Electric'in Schenectady'deki 70 MeV'lik elektron sinkrotronunda teknisyen Floyd Haber tarafından gözlendi. Gökte ilk kez 1956'da Jan Hendrik Oort ve Theodore Walraven tarafından Yengeç Bulutsusu'nda saptandı; birkaç ay sonra Geoffrey Burbidge onu M87 galaksisinin jetinde buldu. Bilinen kozmik radyo kaynaklarının çoğu sinkrotron ışıması yayar. 1054 süpernovasının kalıntısı olan Yengeç Bulutsusu'nda (d6) merkezdeki nötron yıldızının hızlandırdığı parçacıklar bulutsunun manyetik alan çizgileri çevresinde sarmal çizerek ışır.",
+        "Sinkrotron ışımasının bir imzası da vardır: kutuplanmıştır. Kutuplanma, ışığın elektrik alanının rastgele değil, belli bir doğrultuda titreşmesi demektir. Kaynağa göre sinkrotron ışıması, parçacığın hareket düzleminden bakıldığında doğrusal kutuplanmıştır ve Yengeç Bulutsusu'nun yüksek enerjili ışığında bu kutuplanma ölçülmüştür. Bu, gökbilimciler için değerli bir ipucudur: kutuplanmış radyo ışığı gören bir gökbilimci, kaynağında manyetik alanların ve ışık hızına yakın giden yüklerin bulunduğunu düşünür. Maxwell'in denklemleri böylece binlerce ışık yılı ötedeki görünmez manyetik alanları okumanın aracı olur."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Jansky'nin sinyali neden Güneş'ten değildi?",
+        "metin": "Güneş'e göre bir tam dönüş, yani güneş günü 24 saattir. Yıldızlara göre bir tam dönüş, yani yıldız günü yaklaşık 23 saat 56 dakikadır (d1). Fark günde yaklaşık 4 dakikadır. Jansky'nin sinyali her gün 4 dakika erken tepe yapıyorsa, bir ayda yaklaşık 30 × 4 = 120 dakika, yani 2 saat kayar; bir yılda 365 × 4 ≈ 1460 dakika, yaklaşık bir tam gün kayarak yeniden aynı saate döner. Güneş'ten gelen bir sinyal ise her gün aynı saatte tepe yapardı. Ayrıca dalga boyu: λ = c ÷ f = 299.792.458 ÷ 20,5 × 10⁶ ≈ 14,6 m. Sonuç: 23 saat 56 dakikalık tekrar, kaynağın yıldızlara bağlı olduğunu, yani Güneş Sistemi'nin dışında olduğunu gösterir."
+      },
+      "akilda": "Jansky (1932–1933) 20,5 MHz'te (14,6 m) Samanyolu'nun merkezinden gelen radyo dalgalarını buldu; 23 sa 56 dk'lık tekrar kaynağın yıldızlara bağlı olduğunu gösterdi. Kozmik radyo kaynaklarının çoğu sinkrotron ışıması, yani manyetik alanda sarmal çizen hızlı yüklerin ışığıdır."
+    },
+    {
+      "baslik": "Dünya bir mıknatıs: pusula, dinamo ve kalkan",
+      "paragraflar": [
+        "Gilbert 1600'de Dünya'nın bir mıknatıs olduğunu söylediğinde, nedenini bilmiyordu. Bugün bunun Dünya'nın derinliklerindeki elektrik akımlarından geldiğine inanılır. Dünya'nın dış çekirdeği sıvı demir ve nikel karışımıdır. Çekirdekten kaçan ısı bu iletken sıvıyı kaynayan bir tencere gibi karıştırır. İletken bir sıvının bir manyetik alan içinde hareket etmesi, Faraday'ın ilkesine göre akımlar doğurur; bu akımlar da Ørsted'in ilkesine göre manyetik alanı besler. Kendi kendini sürdüren bu düzeneğe jeodinamo denir. Bunu doğrudan gözleyemeyiz, çünkü dış çekirdek binlerce kilometre derindedir; bu yüzden kaynakların dili de “inanılır” biçimindedir.",
+        "Bu mıknatıs sabit değildir. Dünya'nın yüzeydeki manyetik alanı yere göre yaklaşık 22 ile 67 mikrotesla arasında değişir. Kuzey manyetik kutbu yerinde durmaz; yılda 40 kilometreye varan hareketler gözlenmiştir ve bu kayma 1900'lerin başından beri hızlanmıştır. Daha da çarpıcısı, alanın yönü jeolojik tarih boyunca defalarca tamamen ters dönmüştür. Son ters dönme, Brunhes–Matuyama dönmesi, yaklaşık 780.000 yıl önce oldu.",
+        "Pusulayla yön bulurken bunu hesaba katmak gerekir. Pusula manyetik kuzeyi gösterir, coğrafi kuzeyi değil; aradaki açıya manyetik sapma denir ve yere ve zamana göre değişir. İstanbul için güncel değeri ABD'nin NOAA kurumunun hesaplayıcılarından öğrenebilirsin; bu derste bir sayı vermiyoruz, çünkü değer her yıl biraz değişir. Gökyüzünde Kutup Yıldızı'nı bulduğun bir gecede (d1), pusulanın iğnesini Kutup Yıldızı'nın yönüyle karşılaştırarak bu farkı kendin görebilirsin.",
+        "Dünya'nın manyetik alanının en önemli işi bir kalkan olmaktır. Alanın uzaya uzanan bölgesine manyetosfer denir. Manyetosfer, Güneş rüzgârının yüklü parçacıklarının atmosferi aşındırmasına karşı Dünya'yı korur. Yengeç Bulutsusu'nda gördüğün gibi yüklü parçacıklar manyetik alan çizgilerinin çevresinde sarmal çizer; bu yüzden bir manyetik alan, yüklü parçacıkları saptırabilir ya da tuzağa düşürebilir. Manyetosferin içinde, yüksek enerjili parçacıkların tuzağa düştüğü iki halka biçimli bölge vardır: Van Allen kuşakları. İç kuşak Dünya yarıçapının yaklaşık 1–2, dış kuşak 4–7 katı uzaklıkta uzanır.",
+        "Kalkanın neyi durdurduğunu en iyi, kalkanın zorlandığı günler gösterir. d4'te gördüğün gibi NASA'ya göre uzay havası, yani Güneş'ten gelen parçacık ve alan fırtınaları, radyo ve GPS gibi iletişim ve konum sistemlerini, elektrik şebekelerini, uyduları ve astronotları etkileyebilir. Burada da bu dersin iki ilkesi iş başındadır. Fırtına Dünya'nın manyetik alanını hızla sarstığında, Faraday'ın kuralına göre uzun iletken hatlarda istenmeyen akımlar doğabilir; yüklü parçacıklar ise uyduların elektroniğine çarpar. Yani prizdeki elektriği üreten indüksiyon, gökten gelen bir fırtınada şebekenin başına dert de açabilir."
+      ],
+      "akilda": "Dünya'nın manyetik alanı sıvı dış çekirdekteki akımlardan doğar (jeodinamo); yüzeyde ~22–67 μT'dir, kutbu kayar ve son kez ~780.000 yıl önce ters döndü. Manyetosfer Güneş rüzgârına karşı kalkandır; Van Allen kuşakları parçacıkları tuzağa düşürür."
+    },
+    {
+      "baslik": "Gökteki manyetizma: kutup ışıkları ve Güneş lekeleri",
+      "paragraflar": [
+        "Kalkan kusursuz değildir ve bu kusurun en güzel sonucu kutup ışıklarıdır. d4'te ayrıntısını gördün: Güneş rüzgârı ve koronal kütle atımları manyetosfere çarpınca orada enerji birikir, bu enerjinin bir kısmı serbest kalır ve yüklü parçacıkları atmosfere doğru fırlatır. Parçacıklar manyetik alan çizgileri boyunca kaydıkları için, alan çizgilerinin atmosfere girdiği kutup bölgelerinin çevresinde toplanır. Atmosferdeki oksijen ve azot atomlarına çarpıp onları uyarırlar; uyarılan atomlar fazla enerjiyi ışık olarak verir.",
+        "Kutup ışıkları bu derste konuştuğumuz bütün fiziği bir arada gösterir: Güneş'teki plazmanın manyetik alanları, Dünya'nın jeodinamosu, yüklü parçacıkların alan çizgileri çevresinde dönmesi ve atomlardan ışık salınması. d4'te gördüğün gibi Kasım 2023'te kutup ışıkları Türkiye'nin Marmara ve Karadeniz kıyılarından görüldü ve fotoğraflandı. Bu, güçlü bir jeomanyetik fırtınada manyetik alan çizgileri boyunca inen parçacıkların bizim enlemlerimize kadar ulaşabildiğini gösterir.",
+        "Güneş'in kendisi de bir mıknatıstır, hem de çok karmaşık bir mıknatıs. 1908'de Amerikalı gökbilimci George Ellery Hale, Güneş lekelerinde güçlü ve yoğunlaşmış manyetik alanlar olduğunu kanıtladı. Bunu bir tayf çizgisinin manyetik alan içinde birkaç çizgiye bölünmesine, yani Zeeman olayına bakarak yaptı: çizgiler ne kadar ayrılırsa alan o kadar güçlüdür. Böylece d2'deki tayf çizgileri, uzaktaki bir manyetik alanı ölçen bir alete dönüştü. Hale'in polarite yasası, Güneş'in büyük ölçekli manyetik alanının ortalama 11 yılda bir yön değiştirdiğini, yani tam manyetik döngünün bunun iki katı sürdüğünü gösterir.",
+        "Sayılar ilginçtir. d4'e göre bir Güneş lekesinde manyetik alan tipik olarak 3000 gauss, yani 0,3 tesladır. Dünya'nın yüzeydeki alanı ise yaklaşık 0,25–0,65 gauss. Yani bir leke, Dünya'nın alanının birkaç bin katı güçlüdür; MR cihazının alanının ise yaklaşık beşte biri ile onda biri arasında. Lekelerin karanlık görünmesinin nedeni de manyetizmadır: d4'teki NASA açıklamasına göre yoğunlaşan manyetik alan çizgileri alttan gelen ısı akışını engeller. Hale'in çalışması, d4'teki 11 yıllık leke döngüsünün aslında Güneş'in manyetizmasıyla iç içe bir döngü olduğunu gösterdi; Dünya'nın manyetik alanı gibi Güneş'inki de zaman içinde yön değiştirir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Güneş lekesi Dünya'dan kaç kat güçlü bir mıknatıs?",
+        "metin": "Bir Güneş lekesinin alanı yaklaşık 3000 gauss (d4). Dünya'nın alanının 0,25–0,65 G ve 25.000–65.000 nanotesla olarak verilmesinden 1 G = 100 mikrotesla = 0,0001 T çıkar; bu yüzden 3000 G = 0,3 T. Dünya'nın yüzeydeki alanı 0,25–0,65 G. Oran: 3000 ÷ 0,65 ≈ 4600 ile 3000 ÷ 0,25 = 12.000 arası. MR ile karşılaştırma: 0,3 ÷ 1,5 = 0,2 ve 0,3 ÷ 3 = 0,1, yani lekenin alanı bir MR mıknatısının beşte biri ile onda biri kadar. Ama leke Dünya büyüklüğünde olabilir, MR ise bir oda büyüklüğündedir. Sonuç: bir leke Dünya'nın alanından kabaca 5000 ile 12.000 kat güçlüdür."
+      },
+      "akilda": "Kutup ışıkları, manyetik alan çizgileri boyunca kutuplara yönelen yüklü parçacıkların atmosferi uyarmasıdır (d4). Hale 1908'de Zeeman olayıyla Güneş lekelerindeki manyetik alanı ölçtü; lekeler yaklaşık 3000 G (0,3 T) güçlüdür."
+    },
+    {
+      "baslik": "İstanbul'dan elektromanyetizmayı izlemek",
+      "paragraflar": [
+        "Bu dersin konusunu gökyüzünde kendi gözünle de izleyebilirsin. En kolayı pusuladır. Açık bir gecede Kutup Yıldızı'nı bul (d1); gök kutbuna bir dereceden daha yakın olduğu için coğrafi kuzeyi neredeyse tam gösterir. Elindeki pusulanın iğnesini bu yönle karşılaştır. Aradaki küçük açı, manyetik sapmadır: Dünya'nın sıvı çekirdeğindeki akımların yarattığı mıknatısın kutbu ile Dünya'nın dönme ekseni aynı yerde değildir. Bu küçük açı, Gilbert'in 1600'de sezdiği dev mıknatısın İstanbul'daki izidir.",
+        "İkinci hedef Güneş lekeleridir, ama yalnızca güvenli bir yöntemle. d4'e göre bazı büyük lekeler, koruyucu güneş gözlüğü (tutulma gözlüğü) takıldığında büyütmeden de görülebilir; Güneş'e asla korumasız gözle ya da korumasız dürbünle bakma. Gördüğün her koyu leke, Hale'in 1908'de ölçtüğü gibi yaklaşık 3000 gaussluk, yani Dünya'nınkinin binlerce katı güçlü bir manyetik alanın yüzeyde kesildiği yerdir. Lekeleri günden güne çizersen Güneş'in döndüğünü de görürsün (d4).",
+        "Gece göğünde sinkrotron ışığı yayan kaynaklara da bakabilirsin. Boğa takımyıldızındaki Yengeç Bulutsusu, yani M1, d6'ya göre 8,4 kadirdir; NASA'ya göre küçük bir teleskopla görülebilir ve en iyi ocak ayında gözlenir. Gördüğün soluk leke, 1054'te patlayan bir yıldızın kalıntısıdır ve ışığının önemli bir kısmı manyetik alan çizgileri çevresinde sarmal çizen hızlı parçacıklardan gelir. Başak'taki M87 galaksisi d16'ya göre 8,6 kadirdir ve 6 cm açıklıklı küçük bir teleskopla görülebilir; Burbidge'in 1956'da sinkrotron ışığı bulduğu jet onun merkezindedir, ama küçük bir teleskopla jetin kendisi görülmez.",
+        "Son olarak yazın güneye bak. Jansky'nin 1932'de “duyduğu” Samanyolu merkezi Yay takımyıldızındadır. d16'ya göre bu yön İstanbul'da en fazla yaklaşık 20° yüksekliğe çıkar ve güney ufkuna yakın kalır. Orada gözle gördüğün yıldız bulutlarının arkasından, toz bulutlarını rahatça aşan radyo dalgaları gelir; gözün onları göremez ama Jansky'nin anteni duydu. Kasım 2023'teki gibi güçlü bir jeomanyetik fırtınada kuzey ufkunu da izle: d4'te gördüğün gibi o gece kutup ışıkları Marmara ve Karadeniz kıyılarından görüldü."
+      ],
+      "akilda": "İstanbul'dan pusulayı Kutup Yıldızı'yla karşılaştırarak manyetik sapmayı, tutulma gözlüğüyle Güneş lekelerini, küçük teleskopla M1 ve M87 gibi sinkrotron kaynaklarını görebilir, yazın güneyde Jansky'nin radyo kaynağı olan Samanyolu merkezine bakabilirsin."
+    },
+    {
+      "baslik": "Işığın hızı kime göre? Göreliliğe köprü",
+      "paragraflar": [
+        "Maxwell'in başarısı bir bilmeceyi de beraberinde getirdi. Denklemlerden çıkan ışık hızı, c = 1 ÷ √(μ₀ε₀), iki sabitten oluşur. Bu formülde ne ışığı salan lambanın hızı vardır ne de onu ölçen kişinin hızı. Peki bu hız kime göredir? Gündelik hayatta hızlar hep bir şeye göredir: tramvayda yürüyen birinin hızı, tramvaydaki yolcuya göre başka, kaldırımdaki birine göre başkadır. Işık için de aynısı geçerli olmalı gibi görünür.",
+        "On dokuzuncu yüzyıl fizikçilerinin cevabı bir ortamdı. Ses havada, su dalgası suda ilerliyorsa, ışık da bir şeyin içinde ilerlemeliydi. Maxwell'in ilk denklemleri de ışığın, ışık taşıyıcı esir denen ve bütün uzayı dolduran varsayımsal bir ortamda ilerlediğini kabul ediyordu. O hâlde c, esire göre hız olmalıydı ve Dünya bu esirin içinde Güneş'in çevresinde dolanırken, farklı yönlerde ışığın hızını biraz farklı ölçmeliydik.",
+        "Ama Dünya'nın esire göre hareketini yakalamak için yapılan ölçümler bu fikirle çelişti. En ünlüsü Michelson–Morley deneyidir ve onu bir sonraki derste, d25'te ayrıntısıyla göreceksin. Sonuç şaşırtıcıydı: ışığın hızı, kim ölçerse ölçsün, nasıl hareket ederse etsin hep aynı çıkıyordu. Bunu ciddiye almak, zamanın ve uzunluğun gözlemciye göre değişmesini kabul etmek demekti. Albert Einstein'ın özel görelilik kuramı tam olarak buydu ve çıkış noktası Maxwell'in denklemleriyle hareket fiziği arasındaki bu çelişkiydi.",
+        "Bugün bu hikâye bir tanıma dönüşmüş durumda. d2'de gördüğün gibi 1983'ten beri metre, ışığın boşlukta 1/299.792.458 saniyede aldığı yol olarak tanımlanır; ışık hızı artık ölçülen değil, tanım gereği kesin bir sayıdır. Kehribardan başlayan yol, evrenin hız sınırına ve uzay-zamanın yapısına varıyor. Bu dersin denklemleri, bir sonraki derste zamanın kendisini esnetecek."
+      ],
+      "akilda": "Maxwell'in ışık hızı formülünde ne kaynağın ne gözlemcinin hızı vardır. Esir fikri bunu açıklamaya çalıştı ama ölçümlerle çelişti; çözüm Einstein'ın özel göreliliğidir (d25)."
+    }
+  ],
+  "formuller": [
+    {
+      "ad": "Coulomb yasası",
+      "ifade": "F = k × q₁ × q₂ ÷ r²",
+      "aciklama": "F kuvvet (N), q₁ ve q₂ yükler (C), r uzaklık (m), k = 1 ÷ (4π ε₀) ≈ 8,988 × 10⁹ N·m²/C². Artı sonuç itme, eksi sonuç çekme. Noktasal ve durgun yükler için."
+    },
+    {
+      "ad": "Akım",
+      "ifade": "I = Q ÷ t",
+      "aciklama": "I akım (A), Q geçen yük (C), t süre (s). 1 A = saniyede 1 C ≈ 6,24 × 10¹⁸ elektron."
+    },
+    {
+      "ad": "Temel yük",
+      "ifade": "e = 1,602176634 × 10⁻¹⁹ C (kesin)",
+      "aciklama": "Proton ve elektronun yükünün büyüklüğü; 2019'dan beri SI'da tanım gereği kesin (NIST CODATA)."
+    },
+    {
+      "ad": "Elektromanyetik dalganın hızı",
+      "ifade": "c = 1 ÷ √(μ₀ × ε₀)",
+      "aciklama": "μ₀ boşluğun manyetik geçirgenliği (1,25663706127 × 10⁻⁶ N/A²), ε₀ boşluğun elektrik geçirgenliği (8,8541878188 × 10⁻¹² F/m). Sonuç c ≈ 299.792.458 m/s."
+    },
+    {
+      "ad": "Frekans ve dalga boyu",
+      "ifade": "λ = c ÷ f",
+      "aciklama": "λ dalga boyu (m), f frekans (Hz), c ışık hızı. 50 Hz → ~6000 km; 2,45 GHz → ~12 cm; 20,5 MHz → ~14,6 m (d2)."
+    },
+    {
+      "ad": "Elektrik ile kütleçekim oranı",
+      "ifade": "F_e ÷ F_g = k e² ÷ (G m_e m_p) ≈ 2,3 × 10³⁹",
+      "aciklama": "Elektron ile proton arasında; uzaklıktan bağımsızdır çünkü iki kuvvet de uzaklığın karesiyle azalır."
+    }
+  ],
+  "anahtar_sayilar": [
+    {
+      "deger": "1,602176634 × 10⁻¹⁹ C (kesin)",
+      "aciklama": "Temel yük: bir proton ya da elektronun yükü",
+      "kaynak_url": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt"
+    },
+    {
+      "deger": "1785",
+      "aciklama": "Coulomb burulma terazisiyle elektrik kuvvetinin ters kare yasasını ölçtü",
+      "kaynak_url": "https://www.aps.org/apsnews/2016/06/coulomb-measures-electric-force"
+    },
+    {
+      "deger": "1820",
+      "aciklama": "Ørsted akımın pusula iğnesini saptırdığını gördü",
+      "kaynak_url": "https://nationalmaglab.org/magnet-academy/history-of-electricity-magnetism/timeline/1820-1829/"
+    },
+    {
+      "deger": "1831",
+      "aciklama": "Faraday elektromanyetik indüksiyonu buldu",
+      "kaynak_url": "https://en.wikipedia.org/wiki/History_of_Maxwell%27s_equations"
+    },
+    {
+      "deger": "yaklaşık 3,107 × 10⁸ m/s",
+      "aciklama": "Weber ve Kohlrausch'un (1855'ten itibaren) elektrik ve manyetik birimler arasında ölçtüğü oran",
+      "kaynak_url": "https://en.wikipedia.org/wiki/History_of_Maxwell%27s_equations"
+    },
+    {
+      "deger": "299.792.458 m/s",
+      "aciklama": "Işığın boşluktaki hızı (tanım gereği kesin); 1 ÷ √(μ₀ε₀) ile aynı",
+      "kaynak_url": "https://physics.nist.gov/cgi-bin/cuu/Value?c"
+    },
+    {
+      "deger": "230 V, 50 Hz",
+      "aciklama": "Türkiye'de şebeke gerilimi ve frekansı",
+      "kaynak_url": "https://www.worldstandards.eu/electricity/plug-voltage-by-country/turkey/"
+    },
+    {
+      "deger": "20,5 MHz (≈14,6 m)",
+      "aciklama": "Jansky'nin Samanyolu'ndan radyo dalgasını bulduğu frekans (1932)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Karl_Guthe_Jansky"
+    },
+    {
+      "deger": "yaklaşık 22–67 μT",
+      "aciklama": "Dünya'nın yüzeydeki manyetik alanı (güçlü buzdolabı mıknatısı ~10.000 μT)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Earth%27s_magnetic_field"
+    },
+    {
+      "deger": "yaklaşık 780.000 yıl önce",
+      "aciklama": "Dünya'nın manyetik alanının son ters dönmesi (Brunhes–Matuyama)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Earth%27s_magnetic_field"
+    },
+    {
+      "deger": "1,5 T ya da 3 T",
+      "aciklama": "Tıbbi MR cihazlarının çoğunun manyetik alanı",
+      "kaynak_url": "https://radiopaedia.org/articles/58849"
+    }
+  ],
+  "sozluk": [
+    {
+      "terim": "elektrik yükü",
+      "tanim": "Maddenin elektrik kuvvetini yaratma ve hissetme özelliği; artı ve eksi olmak üzere iki çeşittir, aynılar iter, zıtlar çeker."
+    },
+    {
+      "terim": "temel yük",
+      "tanim": "Serbest parçacıklarda görülen en küçük yük paketi; bir proton ya da elektronun yükü, 1,602176634 × 10⁻¹⁹ coulomb."
+    },
+    {
+      "terim": "coulomb",
+      "tanim": "Elektrik yükünün birimi (C); yaklaşık 6,24 × 10¹⁸ elektronun yükü."
+    },
+    {
+      "terim": "Coulomb yasası",
+      "tanim": "İki yük arasındaki kuvvetin yüklerin çarpımıyla doğru, aralarındaki uzaklığın karesiyle ters orantılı olduğunu söyleyen yasa (1785)."
+    },
+    {
+      "terim": "elektrik alanı",
+      "tanim": "Bir yükün çevresindeki uzayda, oraya konacak başka bir yükün hangi yönde ve ne güçte itileceğini her noktada gösteren durum."
+    },
+    {
+      "terim": "elektrik akımı",
+      "tanim": "Bir iletkenin kesitinden saniyede geçen yük miktarı; amper (A) ile ölçülür."
+    },
+    {
+      "terim": "gerilim",
+      "tanim": "Yükleri bir devrede iten elektrik “yokuşu”; birim yük başına enerji farkı, volt (V) ile ölçülür."
+    },
+    {
+      "terim": "alternatif akım",
+      "tanim": "Yönü düzenli aralıklarla ileri geri değişen akım; Türkiye şebekesinde saniyede 50 döngü (50 Hz)."
+    },
+    {
+      "terim": "manyetik alan",
+      "tanim": "Mıknatısların ve hareket eden yüklerin çevresinde oluşan, başka mıknatıslara ve hareketli yüklere kuvvet uygulayan alan; tesla (T) ile ölçülür."
+    },
+    {
+      "terim": "tesla",
+      "tanim": "Manyetik alanın birimi (T); Dünya'nın yüzeydeki alanı birkaç on mikrotesla, bir MR cihazınınki 1,5–3 T'dir."
+    },
+    {
+      "terim": "elektromıknatıs",
+      "tanim": "İçinden akım geçen bir tel sargısıyla elde edilen, akım kesilince manyetizması kaybolan mıknatıs."
+    },
+    {
+      "terim": "elektromanyetik indüksiyon",
+      "tanim": "Değişen bir manyetik alanın bir iletkende gerilim ve akım doğurması; Faraday 1831."
+    },
+    {
+      "terim": "jeneratör",
+      "tanim": "Mıknatıslar ile tel sargılarını birbirine göre döndürerek indüksiyonla elektrik üreten makine."
+    },
+    {
+      "terim": "transformatör",
+      "tanim": "Ortak bir demir çekirdeğe sarılmış iki sargıyla alternatif akımın gerilimini yükselten ya da alçaltan aygıt."
+    },
+    {
+      "terim": "yer değiştirme akımı",
+      "tanim": "Maxwell'in eklediği terim: değişen bir elektrik alanının, manyetik alan yaratma bakımından bir akım gibi davranması."
+    },
+    {
+      "terim": "Maxwell denklemleri",
+      "tanim": "Elektrik ve manyetik alanların yüklerle, akımlarla ve birbirleriyle ilişkisini veren, bugün dört denklemle yazılan kuram."
+    },
+    {
+      "terim": "elektromanyetik dalga",
+      "tanim": "Birbirini doğuran değişen elektrik ve manyetik alanlardan oluşan, boşlukta ışık hızıyla ilerleyen dalga; ışık bunun bir örneğidir."
+    },
+    {
+      "terim": "sinkrotron ışıması",
+      "tanim": "Işık hızına yakın giden yüklü parçacıkların manyetik alanda yön değiştirirken yaydığı ışınım; kozmik radyo kaynaklarının çoğunun ışığı."
+    },
+    {
+      "terim": "jeodinamo",
+      "tanim": "Dünya'nın sıvı dış çekirdeğindeki iletken demirin hareketiyle manyetik alanı sürekli yeniden üreten düzenek."
+    },
+    {
+      "terim": "manyetosfer",
+      "tanim": "Dünya'nın manyetik alanının uzaya uzanan, Güneş rüzgârının yüklü parçacıklarına karşı kalkan olan bölgesi."
+    },
+    {
+      "terim": "Van Allen kuşakları",
+      "tanim": "Manyetosferin içinde yüksek enerjili yüklü parçacıkların tuzağa düştüğü iki halka biçimli bölge."
+    },
+    {
+      "terim": "Zeeman olayı",
+      "tanim": "Bir tayf çizgisinin manyetik alan içinde birkaç çizgiye bölünmesi; uzaktaki manyetik alanları ölçmeye yarar."
+    },
+    {
+      "terim": "plazma",
+      "tanim": "Atomlarından elektron kopmuş, serbest yüklü parçacıklardan oluşan, manyetik alanlarla güçlü etkileşen gaz."
+    },
+    {
+      "terim": "esir",
+      "tanim": "On dokuzuncu yüzyılda ışığı taşıdığı varsayılan, bütün uzayı dolduran ortam; ölçümlerle çelişti ve görelilikle terk edildi."
+    }
+  ],
+  "defter_notu": [
+    "Yük: aynılar iter, zıtlar çeker. e = 1,602176634 × 10⁻¹⁹ C; 1 C ≈ 6,24 × 10¹⁸ elektron.",
+    "Coulomb 1785: F = k q₁ q₂ / r². Elektrik / kütleçekim (elektron-proton) ≈ 2,3 × 10³⁹.",
+    "Ørsted 1820: akım → manyetik alan. Faraday 1831: değişen manyetik alan → akım (indüksiyon).",
+    "Jeneratör: türbin rotoru döndürür → alternatif akım. Türkiye: 230 V, 50 Hz.",
+    "Maxwell: değişen elektrik alanı → manyetik alan (yer değiştirme akımı). 4 denklem (Heaviside 1884).",
+    "c = 1 / √(μ₀ε₀) ≈ 299.792 km/s. Weber–Kohlrausch 3,107 × 10⁸. Maxwell 1865: ışık elektromanyetiktir. Hertz 1887.",
+    "Sallanan yük dalga salar. Mikrodalga fırın 2,45 GHz ≈ 12 cm.",
+    "Jansky 1932: 20,5 MHz, 23 sa 56 dk tekrar → Samanyolu merkezi (Yay). Kozmik radyo çoğunlukla sinkrotron.",
+    "Dünya alanı ~22–67 μT, jeodinamo, son ters dönme ~780.000 yıl önce. Leke ~3000 G (Hale 1908, Zeeman).",
+    "Işık hızı formülünde gözlemcinin hızı yok → esir sorunu → özel görelilik (d25)."
+  ],
+  "sorular": [
+    {
+      "soru": "“Elektrik” kelimesi nereden gelir?",
+      "cevap": "William Gilbert 1600'de “De Magnete” kitabında kehribarla durgun elektriği inceledi. Kehribar Yunancada elektron diye anılır; Gilbert kehribara benzer etki için Latince “electricus” kelimesini kullandı. “Elektrik” buradan gelir."
+    },
+    {
+      "soru": "Elektrik kuvveti kütleçekiminden 10³⁹ kat güçlüyse, gezegenlerin hareketini neden kütleçekimi belirler?",
+      "cevap": "Çünkü yükün iki çeşidi vardır ve büyük cisimlerde artı ve eksi yükler neredeyse tam olarak birbirini dengeler; cisim dışarıdan yüksüz görünür. Kütleçekiminde ise eksi kütle yoktur; her parça çeker ve etkiler birikir. Bu yüzden büyük ölçekte kütleçekimi kazanır."
+    },
+    {
+      "soru": "İki yük arasındaki uzaklık üç katına çıkarsa aralarındaki kuvvet nasıl değişir?",
+      "cevap": "Coulomb yasasına göre kuvvet uzaklığın karesiyle ters orantılıdır. Uzaklık 3 katına çıkarsa kuvvet 3² = 9'a bölünür, yani dokuzda birine iner."
+    },
+    {
+      "soru": "2 amperlik bir akımda bir telin kesitinden saniyede kaç elektron geçer?",
+      "cevap": "2 A saniyede 2 coulomb demektir. 1 C ≈ 6,24 × 10¹⁸ elektron olduğundan 2 × 6,24 × 10¹⁸ ≈ 1,25 × 10¹⁹ elektron geçer."
+    },
+    {
+      "soru": "Ørsted 1820'de ne gördü ve bu neden önemliydi?",
+      "cevap": "Bir dersi sırasında akım taşıyan bir telin yakınındaki pusula iğnesinin dönüp tele dik durduğunu gördü. Bu, hareket eden yüklerin manyetik etki yarattığını, yani elektrik ile manyetizma arasında doğrudan bir bağ olduğunu gösteren ilk kesin gözlemdi."
+    },
+    {
+      "soru": "Faraday'ın demir halka deneyinde ikinci sargıda neden yalnızca akım açılıp kapanırken akım oluştu?",
+      "cevap": "Çünkü akımı doğuran manyetik alanın kendisi değil, değişimidir. Birinci sargıdaki akım açılınca ya da kapanınca halkadaki manyetik alan değişir ve ikinci sargıda kısa bir akım doğar. Akım sabit akarken alan değişmez, ikinci sargıda akım olmaz. Bu, elektromanyetik indüksiyondur."
+    },
+    {
+      "soru": "Prizdeki akım neden alternatif akımdır?",
+      "cevap": "Çünkü santrallerdeki jeneratörlerde rotor döner. Her turda sargıdan geçen manyetik alan artar, azalır ve ters yönde artar; Faraday yasasına göre akım da bu değişime uyarak yön değiştirir. Türkiye şebekesinde bu, saniyede 50 döngüdür (50 Hz)."
+    },
+    {
+      "soru": "Maxwell'in Ampère yasasına eklediği yer değiştirme akımı neyi değiştirdi?",
+      "cevap": "Değişen bir elektrik alanının da manyetik alan yarattığını söyledi. Böylece değişen elektrik ve manyetik alanlar birbirini sırayla doğurarak kaynaktan kopup uzayda ilerleyebilir hâle geldi. Bu, elektromanyetik dalgaları ve onların hızını öngörmeyi mümkün kıldı."
+    },
+    {
+      "soru": "μ₀ = 1,2566 × 10⁻⁶ ve ε₀ = 8,854 × 10⁻¹² ise elektromanyetik dalganın hızı kaçtır?",
+      "cevap": "c = 1 ÷ √(μ₀ ε₀). Çarpım ≈ 1,1127 × 10⁻¹⁷; karekökü ≈ 3,336 × 10⁻⁹; tersi ≈ 2,998 × 10⁸ m/s. Bu, ışık hızıdır."
+    },
+    {
+      "soru": "Jansky, sinyalin Güneş'ten değil Samanyolu'ndan geldiğini nasıl anladı?",
+      "cevap": "Sinyal her 23 saat 56 dakikada bir tepe yapıyordu. Bu süre yıldız günüdür, yani Dünya'nın yıldızlara göre dönme süresidir. Güneş'ten gelen bir sinyal 24 saatte bir tekrarlanırdı. Kaynak yıldızlara bağlıydı ve en güçlü olduğu yön Yay takımyıldızındaki Samanyolu merkeziydi."
+    },
+    {
+      "soru": "Sinkrotron ışıması nedir, gökyüzünde nerede görülür?",
+      "cevap": "Işık hızına yakın giden yüklü parçacıkların manyetik alan çizgileri çevresinde sarmal çizerken, yani sürekli ivmelenirken yaydığı ışınımdır. Gökte ilk kez 1956'da Yengeç Bulutsusu'nda saptandı; bilinen kozmik radyo kaynaklarının çoğu bu ışımayı yayar."
+    },
+    {
+      "soru": "Dünya'nın manyetik alanının kaynağı nedir ve sabit midir?",
+      "cevap": "Sıvı demir ve nikelden oluşan dış çekirdekteki akımlardır; ısının sürdürdüğü bu kendi kendini besleyen düzeneğe jeodinamo denir. Sabit değildir: kuzey manyetik kutbu yılda 40 km'ye varan hızlarla kayar ve alan jeolojik tarihte defalarca ters dönmüştür; son kez yaklaşık 780.000 yıl önce."
+    },
+    {
+      "soru": "Hale, Güneş lekelerinin manyetik olduğunu 1908'de nasıl gösterdi?",
+      "cevap": "Zeeman olayını kullandı: manyetik alan, bir tayf çizgisini birkaç çizgiye böler ve ayrılma alan güçlendikçe büyür. Lekelerden gelen ışığın tayf çizgilerinde bu bölünmeyi görerek lekelerde güçlü manyetik alanlar olduğunu kanıtladı."
+    },
+    {
+      "soru": "Maxwell'in ışık hızı formülü hangi soruyu doğurdu ve bu soru nereye götürdü?",
+      "cevap": "Formülde ne ışık kaynağının ne de gözlemcinin hızı vardı; hız kime göreydi? Fizikçiler bir esir ortamı varsaydı ama Dünya'nın esire göre hareketini ölçme denemeleri bu fikirle çelişti. Işık hızının herkes için aynı olduğunu kabul etmek Einstein'ın özel görelilik kuramına götürdü (d25)."
+    }
+  ],
+  "kaynaklar": [
+    {
+      "ad": "Wikipedia, History of Maxwell's equations",
+      "url": "https://en.wikipedia.org/wiki/History_of_Maxwell%27s_equations"
+    },
+    {
+      "ad": "Wikipedia, A Dynamical Theory of the Electromagnetic Field",
+      "url": "https://en.wikipedia.org/wiki/A_Dynamical_Theory_of_the_Electromagnetic_Field"
+    },
+    {
+      "ad": "APS News, June 1785: Coulomb Measures the Electric Force",
+      "url": "https://www.aps.org/apsnews/2016/06/coulomb-measures-electric-force"
+    },
+    {
+      "ad": "National MagLab, Elektrik ve manyetizma tarihi 1820–1829",
+      "url": "https://nationalmaglab.org/magnet-academy/history-of-electricity-magnetism/timeline/1820-1829/"
+    },
+    {
+      "ad": "Wikipedia, William Gilbert (physicist)",
+      "url": "https://en.wikipedia.org/wiki/William_Gilbert_(physicist)"
+    },
+    {
+      "ad": "NIST CODATA 2022 sabitler tablosu",
+      "url": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt"
+    },
+    {
+      "ad": "U.S. EIA, How electricity is generated",
+      "url": "https://www.eia.gov/energyexplained/electricity/how-electricity-is-generated.php"
+    },
+    {
+      "ad": "WorldStandards, Turkey plug and voltage",
+      "url": "https://www.worldstandards.eu/electricity/plug-voltage-by-country/turkey/"
+    },
+    {
+      "ad": "Wikipedia, Karl Guthe Jansky",
+      "url": "https://en.wikipedia.org/wiki/Karl_Guthe_Jansky"
+    },
+    {
+      "ad": "Wikipedia, Synchrotron radiation",
+      "url": "https://en.wikipedia.org/wiki/Synchrotron_radiation"
+    },
+    {
+      "ad": "Chandra X-ray Observatory, Crab Nebula",
+      "url": "https://chandra.harvard.edu/photo/0052/what.html"
+    },
+    {
+      "ad": "Wikipedia, Earth's magnetic field",
+      "url": "https://en.wikipedia.org/wiki/Earth%27s_magnetic_field"
+    },
+    {
+      "ad": "HAO/UCAR, George Ellery Hale (1868–1938)",
+      "url": "https://www2.hao.ucar.edu/education/scientists/george-ellery-hale-1868-1938"
+    },
+    {
+      "ad": "Radiopaedia, Tesla (SI unit)",
+      "url": "https://radiopaedia.org/articles/58849"
+    },
+    {
+      "ad": "Universe Today, How do microwaves work?",
+      "url": "https://www.universetoday.com/articles/how-do-microwaves-work"
+    },
+    {
+      "ad": "Historical Physicists: Michael Faraday",
+      "url": "https://brendanjameslynskey.github.io/Historical_Physicists/Faraday"
+    },
+    {
+      "ad": "NASA Science, Anatomy of an Electromagnetic Wave",
+      "url": "https://science.nasa.gov/ems/02_anatomy/"
+    }
+  ]
+}

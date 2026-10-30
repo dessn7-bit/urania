@@ -1,0 +1,58 @@
+[
+  {
+    "id": "d32-1",
+    "soru": "Protonun yaklaşık 938 MeV'lik kütlesinin ne kadarı üç kuarkın kendi kütlelerinden gelir?",
+    "secenekler": [
+      "Neredeyse tamamı; gluonlar kütlesiz olduğu için başka katkı yoktur",
+      "Yaklaşık yarısı; diğer yarısı elektronlardan gelir",
+      "Yalnız yaklaşık %1'i (~9 MeV); gerisi büyük ölçüde gluon alanının enerjisidir",
+      "Hiçbiri; protonun bütün kütlesini doğrudan Higgs bozonu verir"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre üç kuark protona yalnızca yaklaşık 9 MeV katar, yani %1 kadar. Geri kalanı, kuarkları hapseden gluon alanının enerjisidir ve E = mc² gereği kütle olarak görünür. Higgs alanı temel parçacıkların kütlesini açıklar, ama vücut kütlesinin çoğu güçlü kuvvetin enerjisinden gelir.",
+    "ders": "d32",
+    "bolum": 3
+  },
+  {
+    "id": "d32-2",
+    "soru": "Zayıf kuvvetin menzili neden çok kısadır?",
+    "secenekler": [
+      "Çünkü taşıyıcısı olan gluonlar renk hapsine uğrar",
+      "Çünkü taşıyıcıları W ve Z bozonları çok ağırdır (yaklaşık 80 ve 91 milyar elektronvolt) ve yüksek kütle menzili sınırlar",
+      "Çünkü zayıf kuvvetin taşıyıcısı graviton henüz gözlenmemiştir",
+      "Çünkü zayıf kuvvet yalnız nötrinolar arasında etkilidir"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre kütlesiz foton elektromanyetizmaya sonsuz menzil verir; W ve Z bozonları ise protondan yaklaşık 86 ve 97 kat ağırdır ve bu kütle zayıf kuvvetin menzilini sınırlar. Ömürleri yaklaşık 3 × 10⁻²⁵ saniyedir. Güçlü kuvvetin kısa menzili ise kütleden değil renk hapsinden gelir.",
+    "ders": "d32",
+    "bolum": 5
+  },
+  {
+    "id": "d32-3",
+    "soru": "LHC'de 6,8 trilyon elektronvolt enerjili bir proton için (durgun kütle enerjisi 938 MeV) Lorentz çarpanı yaklaşık kaçtır?",
+    "secenekler": [
+      "Yaklaşık 7,2",
+      "Yaklaşık 725",
+      "Yaklaşık 7.250",
+      "Yaklaşık 13,6 milyon"
+    ],
+    "dogru": 2,
+    "aciklama": "γ = toplam enerji ÷ durgun enerji = 6.800.000 MeV ÷ 938 MeV ≈ 7.250. Hız açığı yaklaşık 1/(2γ²) ≈ 9,5 × 10⁻⁹, yani proton ışık hızının yaklaşık 0,9999999905'iyle gider; 26.659 m'lik halkayı saniyede yaklaşık 11.245 kez dolaşır, CERN'in verdiği sayıyla aynı.",
+    "ders": "d32",
+    "bolum": 9
+  },
+  {
+    "id": "d32-4",
+    "soru": "KATRIN deneyinin 2025'te açıkladığı sonuç hangisidir?",
+    "secenekler": [
+      "Nötrinoların kütlesiz olduğu kesin olarak kanıtlandı",
+      "Nötrino kütlesi 0,45 elektronvolttan küçüktür; yani nötrino elektrondan en az yaklaşık bir milyon kat hafiftir",
+      "Nötrinonun kütlesi tam olarak 0,45 elektronvolt ölçüldü",
+      "Nötrinolar elektrondan ağırdır ama çok yavaş hareket eder"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre KATRIN trityumun beta bozunumundaki elektronların enerjisini ölçerek nötrino kütlesi için 0,45 elektronvoltluk bir üst sınır koydu (Science, Nisan 2025). 511.000 ÷ 0,45 ≈ 1,1 milyon. Nötrino salınımı kütlenin sıfır olmadığını gösterir; kesin değer hâlâ bilinmiyor.",
+    "ders": "d32",
+    "bolum": 11
+  }
+]
