@@ -23,13 +23,19 @@
     nepUydu: { ad: 'NASA NSSDCA: Neptunian Satellite Fact Sheet', url: 'https://nssdc.gsfc.nasa.gov/planetary/factsheet/neptuniansatfact.html' },
     liu: { ad: 'Liu ve ark. 2019, Nature (seyrelmiş çekirdek)', url: 'https://link.springer.com/article/10.1038/s41586-019-1470-2' },
     earthskyGrs: { ad: 'EarthSky: Great Red Spot is 190 years old', url: 'https://earthsky.org/space/jupiters-great-red-spot-is-190-years-old/' },
-    ioTorus: { ad: 'Wikipedia: Io plasma torus', url: 'https://en.wikipedia.org/wiki/Io_plasma_torus' },
+    jupManyetosfer: { ad: 'Wikipedia: Magnetosphere of Jupiter', url: 'https://en.wikipedia.org/wiki/Magnetosphere_of_Jupiter' },
+    jplHalka: { ad: 'JPL (1998, arşiv): Jüpiter\'in halkaları', url: 'https://webarchive.library.unt.edu/eot2008/20090119091727/http:/www.jpl.nasa.gov/news/releases/98/glrings.html' },
+    britSL9: { ad: 'Britannica: Comet Shoemaker-Levy 9', url: 'https://www.britannica.com/print/article/687804' },
+    cnnJuno: { ad: 'CNN (2021): Juno ve Büyük Kırmızı Leke\'nin derinliği', url: 'https://edition.cnn.com/2021/10/28/world/juno-jupiter-nasa-great-red-spot-scn/index.html' },
+    nasaGrs2017: { ad: 'NASA Photojournal: Great Red Spot (2017)', url: 'https://science.nasa.gov/photojournal/jupiters-great-red-spot-swallows-earth' },
+    britSaturnIc: { ad: 'Britannica: Saturn, the interior', url: 'https://www.britannica.com/place/Saturn-planet/The-interior' },
+    sciNewsCassini: { ad: 'Sci.News: Cassini\'nin son yörüngeleri (Iess ve ark. 2019)', url: 'https://www.sci.news/space/saturns-ring-system-07295.html' },
     caltechHalka: { ad: 'Caltech: Saturn makes waves in its own rings', url: 'https://www.astro.caltech.edu/news/saturn-makes-waves-in-its-own-rings' },
     pdsHalka: { ad: 'NASA PDS Ring-Moon Systems Node: Saturn rings table', url: 'https://pds-rings.seti.org:443/saturn/saturn_rings_table.html' },
     jplSaturnGunu: { ad: 'JPL: Scientists finally know what time it is on Saturn', url: 'https://www.jpl.nasa.gov/news/scientists-finally-know-what-time-it-is-on-saturn/' },
     helledFortney: { ad: 'Helled ve Fortney 2020 (arXiv:2007.10783)', url: 'https://arxiv.org/pdf/2007.10783' },
     wikiNeptun: { ad: 'Wikipedia: Neptune', url: 'https://en.wikipedia.org/wiki/Neptune' },
-    slac: { ad: 'SLAC: diamond rain', url: 'https://www6.slac.stanford.edu/news/2022-09-02-diamond-rain-giant-ice-planets-could-be-more-common-previously-thought' },
+    slac: { ad: 'SLAC: diamond rain', url: 'https://www6.slac.stanford.edu/news/2022-09-02-diamond-rain-giant-icy-planets-could-be-more-common' },
     esaHubbleUranus: { ad: 'ESA/Hubble: Uranüs\'ün dönme süresi (heic2503)', url: 'https://esahubble.org/news/heic2503/' },
     eylemsizlik: { ad: 'Wikipedia: Moment of inertia factor', url: 'https://en.wikipedia.org/wiki/Moment_of_inertia_factor' },
     wikiGalileo: { ad: 'Wikipedia: Galilean moons', url: 'https://en.wikipedia.org/wiki/Galilean_moons' }
@@ -94,7 +100,7 @@
     ders: 'd37', bolum: 7, oran: 0.95,
     baslik: 'Büyük Kırmızı Leke küçülüyor ve çok yassı',
     aciklama: 'Üstteki çubuklar lekenin uzun eksenidir ve aynı ölçekte çizildi. 1879\'da yaklaşık 39.000 kilometre, 1979\'da Dünya çapının iki katı kadar, 2017\'de 16.350, bugün yaklaşık 14.000 kilometre. Kesik dikey çizgi Dünya\'nın çapıdır, 12.756 kilometre: leke artık bir Dünya çapından biraz büyük. Alttaki kesit de ölçeklidir: 14.000 kilometre genişliğindeki leke bulut tepelerinin yalnızca 200 ile 500 kilometre altına iner, onu besleyen jet akımları ise yaklaşık 3000 kilometre derindedir. Bu oranda 28 santimetrelik bir pizza yaklaşık 1 santimetre kalınlıkta olurdu.',
-    kaynak: [KAYNAK.earthskyGrs, KAYNAK.jupKart],
+    kaynak: [KAYNAK.earthskyGrs, KAYNAK.cnnJuno, KAYNAK.nasaGrs2017],
     ciz(S) {
       const R = S.R, x0 = 72, k = 228 / 39000;
       let s = S.yazi(8, 18, 'Uzun eksen (ölçekli)', { boy: 14, kalin: true });
@@ -133,7 +139,7 @@
     ders: 'd37', bolum: 10, oran: 0.8,
     baslik: 'Halkalardan manyetopoza: Jüpiter\'in çevresi',
     aciklama: 'Yatay eksen Jüpiter\'in merkezinden uzaklıktır, Jüpiter yarıçapı biriminde ve logaritmik: her büyük çentik bir öncekinin iki ya da iki buçuk katıdır. Shoemaker-Levy 9 1992\'de 1,31 yarıçapta parçalandı; halkalar 1,3 ile 3,5 arasındadır, Pioneer 10 2,9\'a kadar yaklaştı. Galileo uyduları Io 5,9, Europa 9,4, Ganymede 15,0 ve Callisto 26,3 yarıçaptadır. Güneş yönündeki manyetopoz koşullara göre 45 ile 100 yarıçap arasında durur: dört uydunun dördü de manyetosferin derinliklerinde dolanır.',
-    kaynak: [KAYNAK.jupKart, KAYNAK.jupUydu, KAYNAK.ioTorus],
+    kaynak: [KAYNAK.jupManyetosfer, KAYNAK.jplHalka, KAYNAK.britSL9, KAYNAK.jupUydu],
     ciz(S) {
       const R = S.R, ya = 200, X = r => 30 + 175 * Math.log10(r);
       let s = '';
@@ -183,7 +189,7 @@
     ders: 'd38', bolum: 4, oran: 1.1,
     baslik: 'Jüpiter ile Satürn\'ün içi yan yana',
     aciklama: 'Solda Jüpiter\'in, sağda Satürn\'ün yarısı aynı ölçekte ve gerçek basıklıklarıyla çizildi: Satürn hem küçük hem daha basıktır. Metalik hidrojen Jüpiter\'de merkeze giden yolun yaklaşık üçte birinde, Satürn\'de yaklaşık yarısında başlar. Halka sismolojisine göre Satürn\'ün bulanık çekirdeği çapının yaklaşık yüzde 60\'ına yayılır ve yaklaşık 55 Dünya kütlesidir; 17 Dünya kütlesi kadarı buz ve kayadır. Jüpiter\'in seyrelmiş çekirdeği belki yarıçapının yarısına uzanır. Rüzgârlar Jüpiter\'de yaklaşık 3000, Satürn\'de yaklaşık 9000 kilometre derine iner; bu bantlar ölçeklidir. Helyum yağmuru damlaları ise güçlü ama doğrulanmamış bir hipotezin şematik gösterimidir.',
-    kaynak: [KAYNAK.satKart, KAYNAK.jupKart, KAYNAK.caltechHalka],
+    kaynak: [KAYNAK.satKart, KAYNAK.jupKart, KAYNAK.britSaturnIc, KAYNAK.caltechHalka, KAYNAK.sciNewsCassini],
     ciz(S) {
       const R = S.R, cx = 200, cy = 170, k = 140 / 71492;
       const J = [71492 * k, 66854 * k], Sa = [60268 * k, 54364 * k];
@@ -313,7 +319,7 @@
   C.ekle('d39-ic-yapi', {
     ders: 'd39', bolum: 4, oran: 1.16,
     baslik: 'Bir buz devinin içi: ölçülen, modellenen, tahmin edilen',
-    aciklama: 'Neptün\'ün kesiti, yarıçap ölçekli. En dışta hidrojen-helyum zarfı merkeze giden yolun yüzde 10 ile 20\'si kadar iner; iki kesik çember bu belirsizliği gösterir, dibinde basınç yaklaşık 10 gigapaskaldır. Altında 10 ile 15 Dünya kütlesinde sıcak, elektriği ileten su-amonyak-metan akışkanı vardır. Yaklaşık 7000 kilometre derinden itibaren metanın elmasa ayrışabileceği bir laboratuvar hipotezidir, gezegende ölçülmedi. Çizgilerle taranmış iç bölge, yani yarıçapın en içteki yüzde 30\'u, çekim ölçümlerinin neredeyse ulaşamadığı yerdir; yaklaşık 1,2 Dünya kütlesindeki kaya-metal çekirdeğin boyu modele bağlıdır ve şematik çizildi. Merkezde yaklaşık 700 gigapaskal ve 5400 kelvin olabilir.',
+    aciklama: 'Neptün\'ün kesiti, yarıçap ölçekli. En dıştaki hidrojen-helyum atmosferi merkeze giden yolun belki yüzde 10 ile 20\'si kadar iner; iki kesik çember bu belirsizliği gösterir, dibinde basınç yaklaşık 10 gigapaskaldır. Altında 10 ile 15 Dünya kütlesinde sıcak, elektriği ileten su-amonyak-metan akışkanı vardır. Yaklaşık 7000 kilometre derinden itibaren metanın elmasa ayrışabileceği bir laboratuvar hipotezidir, gezegende ölçülmedi. Çizgilerle taranmış iç bölge, yani yarıçapın en içteki yüzde 30\'u, çekim ölçümlerinin neredeyse ulaşamadığı yerdir; yaklaşık 1,2 Dünya kütlesindeki kaya-metal çekirdeğin boyu modele bağlıdır ve şematik çizildi. Merkezde yaklaşık 700 gigapaskal ve 5400 kelvin olabilir.',
     kaynak: [KAYNAK.helledFortney, KAYNAK.wikiNeptun, KAYNAK.nepKart, KAYNAK.slac],
     ciz(S) {
       const R = S.R, cx = 200, cy = 172, Rn = 134, Rkm = 24764;
@@ -339,7 +345,7 @@
       s += isaret(S, cx + Rn * 0.925 * Math.cos(0.7), cy - Rn * 0.925 * Math.sin(0.7), 1) + isaret(S, cx - Rn * 0.55 * Math.cos(1.0), cy - Rn * 0.55 * Math.sin(1.0), 2) + isaret(S, cx - Rn * 0.2, cy + Rn * 0.56, 3);
       s += isaret(S, cx + Rn * 0.21, cy + 32, 4) + isaret(S, cx, cy - 30, 5);
       s += S.cizgi(cx, cy - 21.5, cx, cy - Rn * 0.12, { renk: R.metin, kalin: 1 });
-      const g = [[1, 'Hidrojen-helyum zarfı: yolun %10–20\'si (model)', R.metin], [2, 'Su-amonyak-metan akışkanı, 10–15 Dünya kütlesi (model)', R.metin],
+      const g = [[1, 'Hidrojen-helyum atmosferi: yolun %10–20\'si (model)', R.metin], [2, 'Su-amonyak-metan akışkanı, 10–15 Dünya kütlesi (model)', R.metin],
         [3, 'Elmas yağmuru, ~7000 km altı: laboratuvar hipotezi', R.vurgu], [4, 'En iç %30: çekim ölçümleri neredeyse ulaşmıyor', R.soluk],
         [5, 'Çekirdek ~1,2 Dünya kütlesi (boyu şematik)', R.metin]];
       g.forEach(([no, t, r], i) => { s += madde(S, 6, 330 + i * 20, no, t, r); });

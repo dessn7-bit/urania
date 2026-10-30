@@ -256,7 +256,7 @@
   C.ekle('d46-gelgit-hills', {
     ders: 'd46', bolum: 11, oran: 0.96,
     baslik: 'Gelgit yarıçapı ile olay ufku yarışı: Hills kütlesi',
-    aciklama: 'Güneş benzeri bir yıldız için hesaplandı; iki eksen de logaritmiktir ve dikey eksen astronomik birim cinsindendir. Kalın çizgi gelgit yarıçapıdır: yıldız bundan içeri girerse parçalanır. Kara delik bin kat ağırlaşınca bu yarıçap yalnızca on kat büyür. Kesikli çizgi olay ufkudur ve kütleyle doğru orantılı, yani çok daha dik büyür. İki çizgi yaklaşık 110 milyon Güneş kütlesinde kesişir: Hills kütlesi. Soldaki kara deliklerde yıldız ufka varmadan parçalanır ve aylarca süren bir parlama görülür; Sgr A* ve 2011 olayındaki milyon Güneş kütleli kara delik buradadır. Sağdakiler yıldızı parçalamadan bütün yutar, parlama olmaz. Göreli hesap ve dönme bu sınırı biraz kaydırır.',
+    aciklama: 'Güneş benzeri bir yıldız için hesaplandı; iki eksen de logaritmiktir ve dikey eksen astronomik birim cinsindendir. Kalın çizgi gelgit yarıçapıdır: yıldız bundan içeri girerse parçalanır. Kara delik bin kat ağırlaşınca bu yarıçap yalnızca on kat büyür. Kesikli çizgi olay ufkudur ve kütleyle doğru orantılı, yani çok daha dik büyür. İki çizgi yaklaşık 110 milyon Güneş kütlesinde kesişir: Hills kütlesi, dersin dediği gibi kabaca 10 üzeri 8. Soldaki kara deliklerde yıldız ufka varmadan parçalanır ve aylarca süren bir parlama görülür; Sgr A* ve 2011 olayındaki milyon Güneş kütleli kara delik buradadır. Sağdakiler yıldızı parçalamadan bütün yutar, parlama olmaz. Göreli hesap ve dönme bu sınırı biraz kaydırır.',
     kaynak: [KAYNAK.tde, KAYNAK.stone, KAYNAK.schwarzschild, KAYNAK.nasaGunes],
     ciz(S) {
       const R = S.R, rt = M => R_GUNES * Math.cbrt(M) / AB, rs = M => RS_KM * M / AB;
@@ -274,28 +274,28 @@
       s += S.fonk(ek, rs, 1e5, 1e10, 60, { renk: R.metin, kalin: 2.2, kesik: '8 4' }, true);
       s += S.cizgi(ek.X(MH), 30, ek.X(MH), 280, { renk: R.metin, kalin: 1, kesik: '3 3' });
       s += S.daire(ek.X(MH), ek.Y(rt(MH)), 5.5, { dolgu: R.metin, renk: R.zemin, kalin: 1.5 });
-      s += S.zeminliYazi(ek.X(MH) + 8, ek.Y(rt(MH)) + 20, 'Hills kütlesi ≈' + tr(MH / 1e6, 0) + ' milyon', { boy: 13, renk: R.metin, kalin: true });
+      const yz = (x, y, t, o) => S.yazi(x, y, t, Object.assign({ boy: 13, renk: R.metin }, o));
+      s += yz(ek.X(MH) + 8, 172, 'Hills kütlesi', { kalin: true }) + yz(ek.X(MH) + 8, 190, '≈' + tr(MH / 1e8, 1) + ' × 10⁸');
       /* eğri adları */
-      s += S.zeminliYazi(ek.X(2e5), ek.Y(rt(2e5)) - 10, 'gelgit yarıçapı', { boy: 13, renk: R.vurgu, kalin: true });
-      s += S.zeminliYazi(ek.X(1.2e6), ek.Y(rs(1.2e6)) + 18, 'olay ufku (kesikli)', { boy: 13, renk: R.metin });
+      s += yz(70, 130, 'gelgit yarıçapı', { renk: R.vurgu, kalin: true });
+      s += yz(140, 250, 'olay ufku', {});
       /* bölgeler */
-      s += S.zeminliYazi(ek.X(1.3e5), 50, 'yıldız parçalanır: parlama', { boy: 13, renk: R.vurgu, kalin: true });
-      s += S.zeminliYazi(376, 270, 'bütün yutulur', { boy: 13, hiza: 'end', renk: R.metin, kalin: true });
+      s += yz(70, 50, 'yıldız parçalanır: parlama', { renk: R.vurgu, kalin: true });
+      s += yz(376, 250, 'bütün yutulur:', { hiza: 'end', kalin: true }) + yz(376, 268, 'parlama yok', { hiza: 'end' });
       /* Sgr A* ve 2011 olayı */
-      [[4.3e6, 'Sgr A*'], [1e6, '2011 olayı']].forEach(([m, t], i) => {
-        const x = ek.X(m), y = ek.Y(rt(m));
-        s += S.kutu(x - 4, y - 4, 8, 8, { dolgu: R.zemin, renk: R.metin, kalin: 1.6 });
-        s += S.yazi(x + (i ? -6 : 6), y + 20, t, { boy: 13, hiza: i ? 'end' : 'start', renk: R.metin });
-      });
-      s += S.yazi(8, 340, 'Güneş benzeri yıldız: yarıçap 695.700 km', { boy: 13, renk: R.soluk });
-      s += S.yazi(8, 358, 'gelgit: × 10 kütle → × 2,15 yarıçap; ufuk: × 10 → × 10', { boy: 13, renk: R.soluk });
+      const m1 = [4.3e6, 'Sgr A*'], m2 = [1e6, '2011 olayı'];
+      [m1, m2].forEach(([m]) => { const x = ek.X(m), y = ek.Y(rt(m)); s += S.kutu(x - 4, y - 4, 8, 8, { dolgu: R.zemin, renk: R.metin, kalin: 1.6 }); });
+      s += yz(ek.X(m1[0]) + 2, ek.Y(rt(m1[0])) - 12, m1[1], {});
+      s += yz(ek.X(m2[0]), ek.Y(rt(m2[0])) + 22, m2[1], { hiza: 'middle' });
+      s += S.yazi(8, 348, 'Güneş benzeri yıldız: yarıçap 695.700 km', { boy: 13, renk: R.soluk });
+      s += S.yazi(8, 368, 'gelgit: × 10 kütle → × 2,15 yarıçap; ufuk: × 10 → × 10', { boy: 13, renk: R.soluk });
       return s;
     }
   });
 
   /* d46 · bölüm 13: kara delik kütle merdiveni (log). Değerler ders metninden; yöntem satırın yanında. */
   C.ekle('d46-kutle-merdiveni', {
-    ders: 'd46', bolum: 13, oran: 1.02,
+    ders: 'd46', bolum: 13, oran: 1.06,
     baslik: 'Milyonlardan on milyarlara: dev kara deliklerin kütleleri ve tartma yolları',
     aciklama: 'Yatay eksen Güneş kütlesi cinsinden, logaritmik: her çentik on kat. Her satır bu dersteki bir kara deliktir; altında hangi yöntemle tartıldığı yazar. Samanyolu\'nun Sgr A*\'ı yaklaşık 4,3 milyon, maserle tartılan M106 yaklaşık 39 milyon, Andromeda yaklaşık 140 milyon, yankı haritalamayla tartılan NGC 5548 yaklaşık 260 milyon Güneş kütlesidir. M87 için iki nokta vardır: 1994\'te gazdan 2,4 milyar, 2019\'da EHT\'den 6,5 milyar; aynı kara delik için yöntemler iki üç kat ayrışır. En sağda on milyarlar: OJ 287\'nin modeldeki ana kara deliği 18, Kozmik At Nalı 36, TON 618 yaklaşık 41 milyar. İçi boş işaretler dolaylı ve belirsizliği büyük tahminlerdir. Kesikli çizgi King\'in hesapladığı yaklaşık 50 milyarlık doğal üst sınırdır.',
     kaynak: [KAYNAK.smbh, KAYNAK.eso2612, KAYNAK.m106, KAYNAK.ngc5548, KAYNAK.oj287, KAYNAK.atNali],
@@ -303,7 +303,7 @@
       const R = S.R;
       const ek = S.eksen({ x: 14, y: 26, w: 370, h: 340 }, { x0: 1e6, x1: 1e11, y0: 0, y1: 1 }, {
         logX: true,
-        xIsaret: [[1e6, '1 milyon'], [1e7, on(7)], [1e8, on(8)], [1e9, '1 milyar'], [1e10, on(10)], [1e11, on(11)]],
+        xIsaret: [[1e6, on(6)], [1e7, on(7)], [1e8, on(8)], [1e9, on(9)], [1e10, on(10)], [1e11, on(11)]],
         xAd: 'kütle (Güneş kütlesi, logaritmik)'
       });
       let s = ek.svg.replace(/<line[^>]*x1="14" y1="26"[^>]*\/>/, '');
@@ -337,7 +337,7 @@
 
   /* d47 · bölüm 1: Kapteyn Evreni (1922) ile toz düzeltmesinden sonraki galaksi, aynı ölçekte (yandan, kalınlıklar şematik). */
   C.ekle('d47-kapteyn', {
-    ders: 'd47', bolum: 1, oran: 0.86,
+    ders: 'd47', bolum: 1, oran: 0.9,
     baslik: 'Toz bizi yanılttı: Kapteyn\'in galaksisi ve gerçeği',
     aciklama: 'İki galaksi aynı ölçekte, yandan çizildi; kalınlıklar şematiktir. Üstte Kapteyn\'in 1922 modeli: yaklaşık 40.000 ışık yılı büyüklüğünde, Güneş merkeze yalnızca yaklaşık 2000 ışık yılı uzakta. Altta yıldızlararası tozun ışığı söndürdüğü hesaba katıldıktan sonraki tablo: galaksi yaklaşık 100.000 ışık yılına büyür, Güneş merkezden yaklaşık 30.000 ışık yılı uzağa taşınır; bugünkü GRAVITY ölçümü yaklaşık 26.700 ışık yılıdır. Altta kesikli çizilen mercek, Kapteyn\'in modelinin Güneş\'in çevresine konmuş hâlidir: sisli ormandaki gibi, toz her yönde görüşü aşağı yukarı aynı uzaklıkta keser ve kendini merkezde sanırsın. Bu son karşılaştırma ders metnindeki sis benzetmesinin çizimidir.',
     kaynak: [KAYNAK.kapteyn, KAYNAK.samanyolu],
@@ -361,7 +361,7 @@
       s += S.elips(cx, y2, 50000 * k, 18, { dolgu: R.yildiz, renk: R.metin, kalin: 1, saydam: 0.55 });
       s += S.elips(cx, y2, 9000 * k, 11, { dolgu: R.yildiz, renk: 'none', saydam: 0.6 });
       s += S.cizgi(cx, y2 - 30, cx, y2 + 30, { renk: R.soluk, kalin: 1, kesik: '2 3' });
-      s += S.yazi(cx + 4, y2 - 34, 'merkez', { boy: 13, renk: R.soluk });
+      s += S.yazi(cx + 6, y2 - 26, 'merkez', { boy: 13, renk: R.soluk });
       const xg = cx - 30000 * k, xb = cx - 26700 * k;
       /* Kapteyn merceği Güneş'in çevresinde (yorum) */
       s += S.elips(xg + 2000 * k, y2, 20000 * k, 15, { renk: R.vurgu, kalin: 2, kesik: '6 4' });
@@ -372,8 +372,9 @@
       s += S.ok(cx, yo, xg, yo, { renk: R.metin, kalin: 1.2, boy: 6 });
       s += S.zeminliYazi((cx + xg) / 2, yo + 18, 'Güneş: ≈30.000 ışık yılı', { boy: 13, hiza: 'middle', renk: R.metin, kalin: true });
       s += S.yazi((cx + xg) / 2, yo + 36, 'bugün GRAVITY: ≈26.700 (kısa çizgi)', { boy: 13, hiza: 'middle', renk: R.soluk });
-      s += S.zeminliYazi(xg + 2000 * k + 20000 * k + 6, y2 - 22, 'kesikli: tozun izin verdiği görüş', { boy: 13, renk: R.vurgu, kalin: true });
-      s += S.yazi(392, 336, 'yatay ölçekli, kalınlıklar şematik', { boy: 13, hiza: 'end', renk: R.soluk });
+      s += S.yazi(8, yo + 62, 'kesikli mercek: tozun izin verdiği görüş', { boy: 13, renk: R.vurgu, kalin: true });
+      s += S.yazi(8, yo + 80, '(Kapteyn\'in modeli, Güneş\'in çevresinde)', { boy: 13, renk: R.vurgu });
+      s += S.yazi(392, yo + 110, 'yatay ölçekli, kalınlıklar şematik', { boy: 13, hiza: 'end', renk: R.soluk });
       return s;
     }
   });
@@ -405,16 +406,16 @@
       /* etiketler */
       const etk = (x1, y1, x2, y2, t, o) => S.cizgi(x1, y1, x2, y2, { renk: R.soluk, kalin: 1 }) + S.zeminliYazi(x2 + (o && o.hiza === 'end' ? -3 : 3), y2 + (y2 < y1 ? -2 : 13), t, Object.assign({ boy: 13, renk: R.metin }, o));
       s += etk(xg, cy - 5, xg - 16, cy - 46, 'Güneş', { hiza: 'end', kalin: true });
-      s += etk(cx + 30000 * k, cy + 1, cx + 30000 * k + 8, cy + 46, 'ince disk ≤1500 ışık yılı', { hiza: 'end', kalin: true });
+      s += etk(cx + 30000 * k, cy + 1, cx + 30000 * k + 8, cy + 76, 'ince disk ≤1500 ışık yılı', { hiza: 'end', kalin: true });
       s += etk(cx + 34000 * k, cy - 3260 * k + 2, cx + 34000 * k + 10, cy - 44, 'kalın disk ±1000 parsek', { hiza: 'end' });
-      s += etk(cx, cy - 10000 * k * 0.75, cx + 20, cy - 66, 'şişkinlik ≈10.000 ışık yılı', {});
+      s += S.cizgi(cx, cy + 10000 * k * 0.75, cx, cy + 42, { renk: R.soluk, kalin: 1 }) + S.zeminliYazi(cx, cy + 56, 'şişkinlik ≈10.000 ışık yılı', { boy: 13, hiza: 'middle', renk: R.metin });
       s += S.zeminliYazi(cx, 14, 'hale ve küresel kümeler: 200.000 ışık yılının', { boy: 13, hiza: 'middle', renk: R.soluk });
       s += S.zeminliYazi(cx, 31, 'ötesine uzanır (çizime sığmaz)', { boy: 13, hiza: 'middle', renk: R.soluk });
       /* ölçek */
       const yo = 340;
       s += S.ok(cx, yo, cx - rx, yo, { renk: R.soluk, kalin: 1, boy: 7 }) + S.ok(cx, yo, cx + rx, yo, { renk: R.soluk, kalin: 1, boy: 7 });
       s += S.zeminliYazi(cx, yo + 20, '≈87.400 ışık yılı (D25 çapı)', { boy: 13, hiza: 'middle', renk: R.soluk });
-      s += S.yazi(8, 376, 'yatay ve dikey ölçek aynı; şişkinliğin biçimi şematik', { boy: 13, renk: R.soluk });
+      s += S.yazi(8, 376, 'yatay ve dikey ölçek aynı; şişkinlik ve hale şematik', { boy: 13, renk: R.soluk });
       return s;
     }
   });
@@ -424,7 +425,7 @@
   C.ekle('d47-donme-egrisi', {
     ders: 'd47', bolum: 10, oran: 0.94,
     baslik: 'Dönme eğrisi: düz kalan hız ve dış kenardaki düşüş',
-    aciklama: 'Yatay eksen merkeze uzaklık, kiloparsek cinsinden; dikey eksen yıldızların ve gazın dönme hızıdır. Taralı bant gözlenen hızdır: geniş bir aralıkta saniyede yaklaşık 200 ile 220 kilometrede düz kalır, Güneş de bu banttadır. Kesikli eğri kaba bir hesaptır: yalnız görünen yıldızlar ve gaz olsaydı ve kütlenin hepsi içeride toplansaydı hız dışa doğru Kepler yasasıyla düşerdi; dış kenarda saniyede 110 kilometreye inerdi. Gözlenen hızın bu kadar yüksek kalması görünmeyen kütleye işaret eder. Kalın eğri Gaia verisiyle 2023\'te bulunan düşüştür: 19,5 ile 26,5 kiloparsek arasında yaklaşık 30 kilometre. Bu düşüşü 206 milyar Güneş kütlesi verir; bu, 2019 tahmininin yedide birinden azdır, ama yine de yıldızların toplam kütlesinin üç dört katıdır.',
+    aciklama: 'Yatay eksen merkeze uzaklık, kiloparsek cinsinden; dikey eksen yıldızların ve gazın dönme hızıdır. Dolgulu bant gözlenen hızdır: geniş bir aralıkta saniyede yaklaşık 200 ile 220 kilometrede düz kalır, Güneş de bu banttadır. Kesikli eğri kaba bir hesaptır: yalnız görünen yıldızlar ve gaz olsaydı ve kütlenin hepsi içeride toplansaydı hız dışa doğru Kepler yasasıyla düşerdi; dış kenarda saniyede 110 kilometreye inerdi. Gözlenen hızın bu kadar yüksek kalması görünmeyen kütleye işaret eder. Kalın eğri Gaia verisiyle 2023\'te bulunan düşüştür: 19,5 ile 26,5 kiloparsek arasında yaklaşık 30 kilometre. Bu düşüşü 206 milyar Güneş kütlesi verir; bu, 2019 tahmininin yedide birinden azdır, ama yine de yıldızların toplam kütlesinin üç dört katıdır.',
     kaynak: [KAYNAK.jiao, KAYNAK.donmeEgrisi, KAYNAK.samanyolu],
     ciz(S) {
       const R = S.R, v = (M, r) => Math.sqrt(GM * M / (r * KPC)) / 1000;
@@ -441,13 +442,14 @@
       s += S.fonk(ek, r => v(Mj, r), 19.5, 26.5, 40, { renk: R.vurgu, kalin: 3.4 });
       /* Güneş */
       s += S.daire(ek.X(8.178), ek.Y(210), 5, { dolgu: R.gunes, renk: R.zemin, kalin: 1.5 });
-      s += S.zeminliYazi(ek.X(8.178) - 8, ek.Y(210) - 12, 'Güneş', { boy: 13, hiza: 'end', renk: R.metin, kalin: true });
+      s += S.yazi(ek.X(8.178), ek.Y(222), 'Güneş', { boy: 13, hiza: 'middle', renk: R.metin, kalin: true });
       /* etiketler */
-      s += S.zeminliYazi(ek.X(6), ek.Y(242), 'gözlenen: ≈200–220 km/s', { boy: 13, renk: R.vurgu, kalin: true });
-      s += S.zeminliYazi(ek.X(19.6), ek.Y(242), 'Gaia 2023: ≈30 km/s düşüş', { boy: 13, renk: R.vurgu });
-      s += S.cizgi(ek.X(23), ek.Y(232), ek.X(23), ek.Y(v(Mj, 23)) - 5, { renk: R.vurgu, kalin: 1 });
-      s += S.zeminliYazi(ek.X(29.6), ek.Y(v(Mg, 29)) - 14, 'yalnız yıldız + gaz', { boy: 13, hiza: 'end', renk: R.metin });
-      s += S.zeminliYazi(ek.X(29.6), ek.Y(v(Mg, 29)) + 3, 'olsaydı (kaba hesap)', { boy: 13, hiza: 'end', renk: R.metin });
+      const yz = (x, y, t, o) => S.yazi(x, y, t, Object.assign({ boy: 13, renk: R.metin }, o));
+      s += yz(ek.X(5), ek.Y(252), 'gözlenen: ≈200–220 km/s', { renk: R.vurgu, kalin: true });
+      s += S.cizgi(ek.X(24), ek.Y(v(Mj, 24)) + 4, ek.X(24), ek.Y(150) - 12, { renk: R.vurgu, kalin: 1 });
+      s += yz(ek.X(30), ek.Y(150), 'Gaia 2023: ≈30 km/s düşüş', { hiza: 'end', renk: R.vurgu, kalin: true });
+      s += yz(ek.X(10.5), ek.Y(98), 'kesikli: yalnız yıldız + gaz', {});
+      s += yz(ek.X(10.5), ek.Y(98) + 18, 'olsaydı (kaba hesap)', {});
       s += S.yazi(8, 330, 'toplam kütle: 2,06 × 10¹¹ (2023) ile 1,54 × 10¹² (2019)', { boy: 13, renk: R.metin, kalin: true });
       s += S.yazi(8, 348, 'iki tahmin arasında 7 kattan fazla fark', { boy: 13, renk: R.soluk });
       s += S.yazi(8, 366, 'yıldızların toplamı: 4,6–6,4 × 10¹⁰ Güneş kütlesi', { boy: 13, renk: R.soluk });
@@ -459,7 +461,7 @@
 
   /* d48 · bölüm 6: birleşik model, şematik kesit. Gözlemci yönleri: kenardan (tip 2), eğik (tip 1), jet ekseninden (blazar). */
   C.ekle('d48-birlesik-model', {
-    ders: 'd48', bolum: 6, oran: 1.04,
+    ders: 'd48', bolum: 6, oran: 0.98,
     baslik: 'Birleşik model: aynı canavar, farklı açılar',
     aciklama: 'Ölçeksiz bir kesit. Ortada kara delik ve onu besleyen ince yığılma diski var; çevresindeki küçük bulutlar hızla dönen geniş çizgi bölgesidir. Onu, kesitte iki yanda görünen kalın ve tozlu bir simit sarar. Simidin açık bıraktığı iki koni boyunca daha uzaktaki, yavaş hareket eden büyük bulutlar dar çizgi bölgesini oluşturur; eksen boyunca jetler fırlar. Simide kenardan bakan gözlemci merkezi göremez, yalnız dar çizgileri görür: tip 2. Eğik bakan, simidin üstünden merkezi ve geniş çizgileri de görür: tip 1. Jetin namlusuna bakan blazar görür. Noktalı yol Antonucci ile Miller\'in aynasıdır: merkezin ışığı simidin üstündeki elektronlardan saçılıp kutuplanmış olarak kenardaki gözlemciye ulaşır.',
     kaynak: [KAYNAK.shields, KAYNAK.seyfert],
@@ -468,13 +470,13 @@
       let s = '';
       /* jetler */
       s += `<polygon points="${cx - 4},${cy - 12} ${cx + 4},${cy - 12} ${cx + 13},${cy - 190} ${cx - 13},${cy - 190}" fill="${R.vurgu}" opacity="0.55"/>`;
-      s += `<polygon points="${cx - 4},${cy + 12} ${cx + 4},${cy + 12} ${cx + 13},${cy + 150} ${cx - 13},${cy + 150}" fill="${R.vurgu}" opacity="0.55"/>`;
+      s += `<polygon points="${cx - 4},${cy + 12} ${cx + 4},${cy + 12} ${cx + 12},${cy + 140} ${cx - 12},${cy + 140}" fill="${R.vurgu}" opacity="0.55"/>`;
       /* iyonlaşma konileri (kesik kenar) */
       [[-1], [1]].forEach(([y]) => {
         s += S.cizgi(cx, cy, cx - 110, cy + y * 130, { renk: R.soluk, kalin: 1, kesik: '3 4' }) + S.cizgi(cx, cy, cx + 110, cy + y * 130, { renk: R.soluk, kalin: 1, kesik: '3 4' });
       });
       /* dar çizgi bulutları */
-      [[-62, -100], [52, -112], [-20, -128], [70, -78], [-60, 96], [48, 110], [10, 122], [-24, 84]].forEach(([dx, dy]) => { s += S.daire(cx + dx, cy + dy, 7, { dolgu: R.yuzey2, renk: R.metin, kalin: 1.2 }); });
+      [[-40, -100], [52, -112], [-14, -130], [70, -78], [-60, 96], [48, 110], [10, 118], [-24, 84]].forEach(([dx, dy]) => { s += S.daire(cx + dx, cy + dy, 7, { dolgu: R.yuzey2, renk: R.metin, kalin: 1.2 }); });
       /* simit */
       [-1, 1].forEach(y => { s += S.elips(cx + y * 70, cy, 40, 28, { dolgu: R.yuzey2, renk: R.metin, kalin: 2 }); });
       s += S.elips(cx - 70, cy, 22, 14, { renk: R.metin, kalin: 1, kesik: '2 3' }) + S.elips(cx + 70, cy, 22, 14, { renk: R.metin, kalin: 1, kesik: '2 3' });
@@ -495,16 +497,16 @@
       s += S.cizgi(cx - 116, cy, cx - 36, cy, { renk: R.metin, kalin: 1, kesik: '2 4' });
       s += goz(24, cy, 'tip 2', 'yalnız dar çizgiler', { tx: 8, ty: cy + 34 });
       /* eğik: tip 1 */
-      const ex = 40, ey = 64;
-      s += S.ok(ex + 12, ey + 9, cx - 22, cy - 18, { renk: R.metin, kalin: 1.6, boy: 7 });
-      s += goz(ex, ey, 'tip 1', 'geniş + dar çizgiler', { tx: 8, ty: ey - 30 });
+      const ex = 124, ey = 60;
+      s += S.ok(ex + 5, ey + 9, cx - 20, cy - 20, { renk: R.metin, kalin: 1.6, boy: 7 });
+      s += goz(ex, ey, 'tip 1', 'geniş + dar çizgiler', { tx: 8, ty: 18 });
       /* jet ekseni: blazar */
       s += goz(cx, 10, 'blazar', 'jete önden', { tx: cx + 18, ty: 14 });
       /* Antonucci–Miller aynası: merkez → elektron bulutu → kenardaki gözlemci */
-      const ax = cx - 36, ay = cy - 78;
-      s += S.yol(`M${cx - 3},${cy - 8} L${ax},${ay} L${48},${cy - 8}`, { renk: R.mavi, kalin: 1.8, kesik: '2 3' });
+      const ax = 90, ay = 140;
+      s += S.yol(`M${cx - 4},${cy - 7} L${ax},${ay} L${44},${cy - 8}`, { renk: R.mavi, kalin: 1.8, kesik: '2 3' });
       s += S.daire(ax, ay, 5, { dolgu: R.mavi, renk: R.zemin, kalin: 1 });
-      s += S.zeminliYazi(ax - 8, ay - 10, 'elektron aynası', { boy: 13, hiza: 'end', renk: R.mavi, kalin: true });
+      s += S.yazi(8, ay - 14, 'elektron aynası', { boy: 13, renk: R.mavi, kalin: true });
       /* sağdaki adlar */
       const ad = (x1, y1, y2, t) => S.cizgi(x1, y1, 300, y2, { renk: R.soluk, kalin: 1 }) + S.zeminliYazi(304, y2 + 5, t, { boy: 13, renk: R.metin });
       s += ad(cx + 108, cy + 6, cy + 46, 'tozlu simit');
@@ -513,7 +515,7 @@
       s += S.zeminliYazi(304, 150, 'bulutları', { boy: 13, renk: R.metin });
       s += ad(cx + 22, cy + 12, cy + 92, 'geniş çizgi');
       s += S.zeminliYazi(304, cy + 114, 'bölgesi', { boy: 13, renk: R.metin });
-      s += S.yazi(392, 410, 'ölçeksiz', { boy: 13, hiza: 'end', renk: R.soluk });
+      s += S.yazi(392, 386, 'ölçeksiz', { boy: 13, hiza: 'end', renk: R.soluk });
       return s;
     }
   });
@@ -521,9 +523,9 @@
   /* d48 · bölüm 5: boyut merdiveni, ışık günü (log). 3C 273 olay ufku r_s = 2GM/c², M = 8,86 × 10⁸; Neptün 4,495 × 10⁹ km;
      NGC 5548 15,6 ışık günü; geniş çizgi bölgesi 0,1–1 pc; NGC 1068 dar çizgi > 1000 ışık yılı; 3C 273 jeti 200.000 ışık yılı. */
   C.ekle('d48-boyut-merdiveni', {
-    ders: 'd48', bolum: 5, oran: 0.96,
+    ders: 'd48', bolum: 5, oran: 1.0,
     baslik: 'Bir aktif çekirdeğin katmanları: ışık saatlerinden yüz binlerce ışık yılına',
-    aciklama: 'Yatay eksen ışık günü cinsinden ve logaritmiktir: her çentik yüz kat. 3C 273\'ün yaklaşık 890 milyon Güneş kütleli kara deliğinin olay ufku yaklaşık 17 astronomik birim, yani 0,1 ışık günüdür; Neptün\'ün yörüngesiyle aynı mertebede. NGC 5548\'in geniş çizgi bölgesi yankı haritalamaya göre 15,6 ışık günü ötededir; geniş çizgi bölgeleri galaksiden galaksiye 0,1 ile 1 parsek arasında değişir. NGC 1068\'in dar çizgi bölgesi bin ışık yılını aşar. 3C 273\'ün jeti ise yaklaşık 200.000 ışık yılı uzunluğundadır. Böylece aynı canavarın parçaları olay ufkundan jetin ucuna kadar yaklaşık bir milyar kat büyüklük aralığına yayılır.',
+    aciklama: 'Yatay eksen ışık günü cinsinden ve logaritmiktir: her çentik yüz kat. 3C 273\'ün yaklaşık 890 milyon Güneş kütleli kara deliğinin olay ufku yaklaşık 17 astronomik birim, yani 0,1 ışık günüdür; Neptün\'ün yörüngesiyle aynı mertebede. NGC 5548\'in geniş çizgi bölgesi yankı haritalamaya göre 15,6 ışık günü ötededir; geniş çizgi bölgeleri galaksiden galaksiye 0,1 ile 1 parsek arasında değişir. NGC 1068\'in dar çizgi bölgesi bin ışık yılını aşar. 3C 273\'ün jeti ise yaklaşık 200.000 ışık yılı uzunluğundadır. Böylece aynı canavarın parçaları olay ufkundan jetin ucuna kadar yaklaşık 700 milyon kat büyüklük aralığına yayılır.',
     kaynak: [KAYNAK.seyfert, KAYNAK.k3c273, KAYNAK.ngc5548, KAYNAK.schwarzschild, KAYNAK.nasaNeptun],
     ciz(S) {
       const R = S.R, PC_LD = 3.2616 * 365.25, LY = 365.25;
@@ -557,7 +559,7 @@
         s += S.zeminliYazi(tx, y + 5, ad, { boy: 13, hiza: sol ? 'end' : 'start', renk: R.metin, kalin: true });
         s += S.zeminliYazi(tx, y + 22, alt, { boy: 13, hiza: sol ? 'end' : 'start', renk: R.soluk });
       });
-      s += S.yazi(8, 390, '1 ışık günü ≈ 173 AB ≈ 2,59 × 10¹⁰ km', { boy: 13, renk: R.soluk });
+      s += S.yazi(8, 394, '1 ışık günü ≈ 173 AB ≈ 2,59 × 10¹⁰ km', { boy: 13, renk: R.soluk });
       return s;
     }
   });
