@@ -73,28 +73,28 @@
         xAd: 'Güneş\'e uzaklık (AB)', yAd: 'disk sıcaklığı (K)', yAdUzak: 44
       });
       const r170 = Math.pow(280 / 170, 2), r150 = Math.pow(280 / 150, 2);
-      let s = '';
+      let s = ek.svg;
       /* kar çizgisinin ötesi: hafif gölge */
       s += S.kutu(ek.X(r170), 64, ek.X(6) - ek.X(r170), 194, { dolgu: R.mavi, renk: 'none', saydam: 0.07 });
       /* suyun donma şeridi */
       s += S.kutu(ek.X(0.4), ek.Y(170), ek.X(6) - ek.X(0.4), ek.Y(150) - ek.Y(170), { dolgu: R.mavi, renk: 'none', saydam: 0.3 });
-      s += S.yazi(64, ek.Y(170) - 6, 'su donar: 150–170 K', { boy: 13, renk: R.mavi });
+      s += S.yazi(376, ek.Y(170) - 6, 'su donar: 150–170 K', { boy: 13, hiza: 'end', renk: R.mavi });
       /* kesişme dikeyleri */
-      [[r170, '2,7 AB', 'end'], [r150, '3,5 AB', 'start']].forEach(([r, t, h]) => {
+      [[r170, '2,7 AB', 'end'], [r150, '3,5 AB', 'end']].forEach(([r, t, h]) => {
         s += S.cizgi(ek.X(r), ek.Y(170) - 2, ek.X(r), ek.Y(0), { renk: R.mavi, kalin: 1.2, kesik: '4 3' });
-        s += S.yazi(ek.X(r) + (h === 'end' ? -4 : 4), ek.Y(170) - 6, t, { boy: 13, hiza: h, renk: R.metin, kalin: true });
+        s += S.yazi(ek.X(r) + (h === 'end' ? -4 : 4), ek.Y(0) - 6, t, { boy: 13, hiza: h, renk: R.metin, kalin: true });
       });
       /* sıcaklık eğrisi */
       s += S.fonk(ek, T, 0.4, 6, 120, { renk: R.vurgu, kalin: 2.6 });
-      [[1, '1 AB: 280 K', 8, -4], [4, '4 AB: 140 K', 6, 22]].forEach(([r, t, dx, dy]) => {
+      [[1, '1 AB: 280 K', 8, -4], [4, '4 AB: 140 K', 8, 18]].forEach(([r, t, dx, dy]) => {
         s += S.daire(ek.X(r), ek.Y(T(r)), 4, { dolgu: R.vurgu, renk: 'none' });
         s += S.zeminliYazi(ek.X(r) + dx, ek.Y(T(r)) + dy, t, { boy: 13, renk: R.metin });
       });
       s += S.yazi(376, 86, 'kaya ancak ≈1300 K\'de erir', { boy: 13, hiza: 'end', renk: R.soluk });
-      s += S.yazi(64, 222, 'su buhar; yalnız kaya', { boy: 13, renk: R.metin });
-      s += S.yazi(64, 238, 've metal taneler katı', { boy: 13, renk: R.metin });
-      s += S.yazi(ek.X(r150) + 6, 232, 'buz da katı:', { boy: 13, renk: R.metin });
-      s += S.yazi(ek.X(r150) + 6, 248, 'katı ≈5 kat bol', { boy: 13, renk: R.metin });
+      s += S.yazi(64, 214, 'su buhar; yalnız kaya', { boy: 13, renk: R.metin });
+      s += S.yazi(64, 230, 've metal taneler katı', { boy: 13, renk: R.metin });
+      s += S.yazi(ek.X(r150) + 6, 234, 'buz da katı:', { boy: 13, renk: R.metin });
+      s += S.yazi(ek.X(r150) + 6, 250, 'katı ≈5 kat bol', { boy: 13, renk: R.metin });
       /* üst şerit: kaynakların aralığı ve taneler */
       const b1 = ek.X(2.7), b2 = ek.X(5);
       s += S.yazi((b1 + b2) / 2 - 20, 14, 'kaynakların kar çizgisi aralığı: 2,7–5 AB', { boy: 13, hiza: 'middle', renk: R.soluk });
@@ -111,7 +111,7 @@
 
   /* d34 · bölüm 5: tozdan gezegen çekirdeğine büyüme basamakları (Toronto notları), logaritmik boy ekseni. */
   C.ekle('d34-buyume-merdiveni', {
-    ders: 'd34', bolum: 5, oran: 0.7,
+    ders: 'd34', bolum: 5, oran: 0.78,
     baslik: 'Tozdan gezegen çekirdeğine: metre engeli ve onu atlayan yol',
     aciklama: 'Yatay eksen cismin boyudur ve logaritmiktir: her büyük çentik bin kat. Basamaklar ders metnindeki sıradır: mikrometrelik toz yaklaşık 10 üzeri eksi 15 kilogram, santimetrelik çakıl 1 gram, kilometrelik gezegencik 10 üzeri 12 kilogram, 100 kilometrelik embriyo 10 üzeri 18 kilogram, 1000 kilometrelik çekirdek 10 üzeri 21 kilogram. Toz birkaç bin yılda yapışarak santimetreye büyür. Metre dolayındaki taralı kuşak metre engelidir: bu boydaki cisimler karşıdan esen gaz rüzgârıyla 1 AB\'de yaklaşık bin yılda Güneş\'e düşer. Üstteki büyük ok bugün en çok konuşulan çözümdür: akış kararsızlığında çakıl kümeleri kendi çekimiyle çöker ve tehlikeli boylar atlanarak doğrudan 1 ile 100 kilometrelik gezegencikler oluşur. Sonrasını kütleçekim yönetir.',
     kaynak: [KAYNAK.toronto, KAYNAK.akis, KAYNAK.bulutsu],
@@ -121,37 +121,36 @@
       /* metre engeli kuşağı */
       const e1 = X(0.1), e2 = X(10);
       s += S.kutu(e1, 112, e2 - e1, ay - 112, { dolgu: R.uyari, renk: R.uyari, kalin: 1, saydam: 0.22 });
-      for (let x = e1 + 4; x < e2; x += 9) s += S.cizgi(x, ay - 2, x + 6, 114, { renk: R.uyari, kalin: 1, saydam: 0.6 });
-      s += S.zeminliYazi((e1 + e2) / 2, 128, 'metre engeli', { boy: 13, hiza: 'middle', renk: R.metin, kalin: true });
-      s += S.zeminliYazi((e1 + e2) / 2, 146, '≈1000 yılda', { boy: 13, hiza: 'middle', renk: R.metin });
-      s += S.zeminliYazi((e1 + e2) / 2, 164, 'Güneş\'e düşer', { boy: 13, hiza: 'middle', renk: R.metin });
+      for (let x = e1 + 4; x < e2 - 6; x += 9) s += S.cizgi(x, ay - 2, x + 6, 114, { renk: R.uyari, kalin: 1, saydam: 0.5 });
+      s += S.zeminliYazi((e1 + e2) / 2 + 4, 136, '≈1000 yılda', { boy: 13, hiza: 'middle', renk: R.metin });
+      s += S.zeminliYazi((e1 + e2) / 2 + 4, 154, 'Güneş\'e düşer', { boy: 13, hiza: 'middle', renk: R.metin });
+      s += S.yazi((e1 + e2) / 2 + 10, 104, 'metre engeli', { boy: 13, hiza: 'middle', renk: R.metin, kalin: true });
       /* eksen */
       s += S.cizgi(30, ay, 370, ay, { renk: R.soluk, kalin: 1.5 });
       [[1e-6, '1 µm'], [1e-3, '1 mm'], [1, '1 m'], [1e3, '1 km'], [1e6, '1000 km']].forEach(([m, t], i) => {
         s += S.cizgi(X(m), ay, X(m), ay + 6, { renk: R.soluk, kalin: 1 }) + S.yazi(X(m), ay + 22, t, { boy: 13, hiza: i === 0 ? 'start' : i === 4 ? 'end' : 'middle', renk: R.soluk });
       });
-      s += S.yazi(200, ay + 44, 'cismin boyu (logaritmik)', { boy: 14, hiza: 'middle', renk: R.soluk });
+      s += S.yazi(130, ay + 44, 'cismin boyu (logaritmik)', { boy: 14, hiza: 'middle', renk: R.soluk });
       /* basamaklar: [boy m, ad, kütle, yazı y, hizalama] */
-      const bas = [[1e-6, 'toz', '10⁻¹⁵ kg', 184, 'start'], [1e-2, 'çakıl', '1 g', 184, 'middle'], [1e3, 'gezegencik', '10¹² kg', 184, 'middle'], [1e5, 'embriyo', '10¹⁸ kg', 142, 'middle'], [1e6, 'çekirdek', '10²¹ kg', 102, 'end']];
+      const bas = [[1e-6, 'toz', '10⁻¹⁵ kg', 184, 'start'], [1e-2, 'çakıl', '1 g', 184, 'middle'], [1e3, 'gezegencik', '10¹² kg', 184, 'middle'], [1e5, 'embriyo', '10¹⁸ kg', 250, 'middle'], [1e6, 'çekirdek', '10²¹ kg', 284, 'end']];
       bas.forEach(([m, ad, k, y, h]) => {
         const x = X(m);
-        if (y < 170) s += S.cizgi(x, y + 20, x, ay - 6, { renk: R.soluk, kalin: 1 });
+        const lx = h === 'start' ? x - 2 : h === 'end' ? x + 4 : x, alt = y > ay;
         s += S.daire(x, ay, 5, { dolgu: R.metin, renk: 'none' });
-        s += S.yazi(h === 'start' ? x - 2 : x, y - 14, ad, { boy: 13, hiza: h, renk: R.metin, kalin: true });
-        s += S.yazi(h === 'start' ? x - 2 : x, y, k, { boy: 13, hiza: h, renk: R.soluk });
+        s += S.yazi(lx, alt ? y : y - 14, ad, { boy: 13, hiza: h, renk: R.metin, kalin: true });
+        s += S.yazi(lx, alt ? y + 16 : y, k, { boy: 13, hiza: h, renk: R.soluk });
       });
       /* yapışma oku */
       s += S.ok(X(1e-5), 152, X(3e-3), 152, { renk: R.iyi, kalin: 2, boy: 8 });
       s += S.yazi(34, 120, 'yapışarak, birkaç', { boy: 13, renk: R.iyi });
       s += S.yazi(34, 136, 'bin yılda cm\'ye', { boy: 13, renk: R.iyi });
       /* akış kararsızlığı sıçrayışı: çakıldan 1–100 km'ye */
-      const x0 = X(1e-2), xg = X(1e4);
-      s += S.yol(`M${x0},164 Q${(x0 + xg) / 2},-46 ${xg},${ay - 30}`, { renk: R.vurgu, kalin: 2.4 });
-      s += `<polygon points="${xg},${ay - 24} ${xg - 7},${ay - 36} ${xg + 4},${ay - 37}" fill="${R.vurgu}"/>`;
+      const x0 = X(1e-2), xg = X(3e4);
+      s += S.yol(`M${x0},164 C${x0},40 ${xg},40 ${xg},${ay - 34}`, { renk: R.vurgu, kalin: 2.4 });
+      s += `<polygon points="${xg},${ay - 24} ${xg - 5},${ay - 36} ${xg + 5},${ay - 36}" fill="${R.vurgu}"/>`;
       s += S.yol(`M${X(1e3)},${ay - 12} L${X(1e3)},${ay - 18} L${X(1e5)},${ay - 18} L${X(1e5)},${ay - 12}`, { renk: R.vurgu, kalin: 1.4 });
-      s += S.yazi(222, 18, 'akış kararsızlığı: çakıl kümesi çöker,', { boy: 13, hiza: 'middle', renk: R.vurgu, kalin: true });
-      s += S.yazi(222, 34, 'doğrudan 1–100 km\'lik gezegencik', { boy: 13, hiza: 'middle', renk: R.vurgu });
-      s += S.yazi(392, ay + 44, '→ sonra kütleçekim', { boy: 13, hiza: 'end', renk: R.soluk });
+      s += S.yazi(214, 18, 'akış kararsızlığı: çakıl kümesi çöker,', { boy: 13, hiza: 'middle', renk: R.vurgu, kalin: true });
+      s += S.yazi(214, 34, 'doğrudan 1–100 km\'lik gezegencik', { boy: 13, hiza: 'middle', renk: R.vurgu });
       return s;
     }
   });
@@ -305,12 +304,12 @@
       s += S.yazi(28, 178, 'Manto', { boy: 15, renk: R.metin, kalin: true });
       s += S.yazi(28, 196, 'katı kaya, ≈2890 km', { boy: 13, renk: R.metin });
       s += S.yazi(28, 212, 'derine kadar', { boy: 13, renk: R.metin });
-      s += S.yazi(26, 286, 'Dış çekirdek', { boy: 14, renk: R.metin, kalin: true });
-      s += S.yazi(26, 302, 'sıvı demir', { boy: 13, renk: R.metin });
-      s += S.yazi(52, 318, '≈2260 km kalın', { boy: 13, renk: R.metin });
+      s += S.yazi(26, 278, 'Dış çekirdek', { boy: 14, renk: R.metin, kalin: true });
+      s += S.yazi(26, 294, 'sıvı demir,', { boy: 13, renk: R.metin });
+      s += S.yazi(30, 310, '2260 km kalın', { boy: 13, renk: R.metin });
       /* iç çekirdek: sağ sütun, kılavuz çizgiyle */
       const sx = 262;
-      s += S.yol(`M${cx + ri - 10},${cy - 12} L${sx - 8},${cy - 52} L${sx - 4},${cy - 52}`, { renk: R.metin, kalin: 1 });
+      s += S.yol(`M${cx + ri - 10},${cy - 12} L${sx - 8},${cy - 104} L${sx - 4},${cy - 104}`, { renk: R.metin, kalin: 1 });
       [['İç çekirdek (katı)', true], ['yarıçap 1221 km', false], ['merkezde ≈13 g/cm³', false], ['330–360 GPa', false], ['sınırda 6000 ± 500 °C', false]].forEach(([t, b], i) => {
         s += S.yazi(sx, cy - 100 + i * 16, t, { boy: 13, renk: R.metin, kalin: b });
       });
@@ -323,7 +322,7 @@
       const bx = 236, by = 8, bw = 160, d0 = 46, kk = 0.36, D = km => d0 + km * kk;
       s += S.kutu(bx, by, bw, D(300) + 6 - by, { dolgu: R.yuzey, renk: R.soluk, kalin: 1 }, 4);
       s += S.cizgi(bx, D(0), cx + 2, cy - Rd, { renk: R.soluk, kalin: 1, kesik: '3 3' });
-      s += S.yazi(bx + bw / 2, by + 15, 'üstteki 300 km, büyütülmüş', { boy: 13, hiza: 'middle', renk: R.soluk });
+      s += S.yazi(bx + bw / 2, by + 15, 'üst 300 km, büyütülmüş', { boy: 13, hiza: 'middle', renk: R.soluk });
       const ox = bx + 38, kx = bx + 100, cw = 54;
       s += S.kutu(ox, D(0), cw, D(300) - D(0), { dolgu: R.vurguSoluk, renk: 'none', saydam: 0.55 });
       s += S.kutu(kx, D(0), cw, D(300) - D(0), { dolgu: R.vurguSoluk, renk: 'none', saydam: 0.55 });
@@ -332,8 +331,8 @@
       s += S.kutu(ox, D(100), kx + cw - ox, D(250) - D(100), { dolgu: R.gezegen, renk: R.metin, kalin: 0.8, kesik: '3 3', saydam: 0.35 });
       s += S.yazi(ox + cw / 2, D(0) - 4, 'okyanus', { boy: 13, hiza: 'middle', renk: R.metin });
       s += S.yazi(kx + cw / 2, D(0) - 4, 'kıta', { boy: 13, hiza: 'middle', renk: R.metin });
-      s += S.yazi(ox + cw / 2, D(28), '5–10 km', { boy: 13, hiza: 'middle', renk: R.metin });
-      s += S.yazi(kx + cw / 2, D(28) + 8, '≈35 km', { boy: 13, hiza: 'middle', renk: R.metin });
+      s += S.yazi(ox + cw / 2, D(62), '5–10 km', { boy: 13, hiza: 'middle', renk: R.metin });
+      s += S.yazi(kx + cw / 2, D(62), '≈35 km', { boy: 13, hiza: 'middle', renk: R.metin });
       s += S.zeminliYazi((ox + kx + cw) / 2, D(160), 'astenosfer', { boy: 13, hiza: 'middle', renk: R.metin, kalin: true });
       s += S.zeminliYazi((ox + kx + cw) / 2, D(160) + 17, '100–250 km', { boy: 13, hiza: 'middle', renk: R.metin });
       [[0, '0'], [100, '100'], [200, '200'], [300, '300']].forEach(([km, t]) => s += S.yazi(ox - 5, D(km) + 4, t, { boy: 13, hiza: 'end', renk: R.soluk }));
@@ -365,7 +364,7 @@
       s += sat(98, 'Termosfer', true) + sat(114, '500–2000 °C, çok seyrek', false) + sat(130, 'kutup ışıkları', false);
       s += sat((Y(50) + Y(85)) / 2 + 5, 'Mezosfer · tepesi ≈ −90 °C', true);
       s += sat(Y(50) + 22, 'Stratosfer', true) + sat(Y(50) + 39, 'ozon tabakası', false) + sat(Y(50) + 55, 'yükseldikçe ısınır', false);
-      s += sat(Y(10) + 26, 'Troposfer', true) + sat(Y(10) + 43, 'hava olayları', false) + sat(Y(10) + 59, 'su buharının %99\'u', false) + sat(Y(10) + 75, 'yükseldikçe soğur', false);
+      s += sat(Y(10) + 19, 'Troposfer', true) + sat(Y(10) + 44, 'hava olayları', false) + sat(Y(10) + 60, 'su buharının %99\'u', false) + sat(Y(10) + 76, 'yükseldikçe soğur', false);
       /* işaretler */
       s += S.cizgi(x0, Y(420), x1 + 4, Y(420), { renk: R.vurgu, kalin: 1.5, kesik: '6 3' });
       s += S.daire(x1 - 20, Y(420), 4, { dolgu: R.vurgu, renk: 'none' });
@@ -388,7 +387,7 @@
 
   /* d35 · bölüm 2: Merkür, Venüs, Dünya aynı ölçekte yarım dilimler; altta eylemsizlik momenti çarpanı. */
   C.ekle('d35-ic-yapilar', {
-    ders: 'd35', bolum: 2, oran: 0.84,
+    ders: 'd35', bolum: 2, oran: 0.9,
     baslik: 'Üç kayalık gezegenin içi aynı ölçekte',
     aciklama: 'Üç yarım dilim aynı ölçekte çizildi. Merkür\'ün 2440 kilometrelik yarıçapının yaklaşık 2000 kilometresi metal çekirdektir: çekirdek hacmin yaklaşık yüzde 55\'i, üstünde yalnızca yaklaşık 400 kilometrelik kaya kalır. Kesikli iç daire 2019\'da bildirilen, yaklaşık 2000 kilometre çaplı katı iç çekirdektir. Venüs\'ün çekirdeği yaklaşık 3000 kilometre yarıçaplıdır ama kaba bir tahmindir; katı mı sıvı mı bilinmiyor, soru işareti bunun için. Dünya\'da 3485 kilometrelik çekirdek hacmin yüzde 16\'sıdır. Alttaki çizgi eylemsizlik momenti çarpanıdır: 0,4 her yeri aynı yoğunlukta bir küredir, değer küçüldükçe ağır malzeme merkezde toplanır. Dünya 0,3307, Venüs 0,337 artı eksi 0,024, Merkür 0,346, Ay 0,393.',
     kaynak: [KAYNAK.nasaMerkur, KAYNAK.merkurKart, KAYNAK.earthskyMerkur, KAYNAK.venusKart, KAYNAK.margot, KAYNAK.nasaDunya, KAYNAK.eylemsizlik],
@@ -412,11 +411,11 @@
       s += S.yazi(4, 16, 'aynı ölçek; açık renk kaya, koyu renk metal çekirdek', { boy: 13, renk: R.soluk });
       /* eylemsizlik momenti çarpanı */
       const ay = 290, X = v => 40 + (v - 0.30) / 0.11 * 340;
-      s += S.yazi(4, 232, 'eylemsizlik momenti çarpanı', { boy: 14, renk: R.metin, kalin: true });
+      s += S.yazi(4, 228, 'eylemsizlik momenti çarpanı', { boy: 14, renk: R.metin, kalin: true });
       s += S.cizgi(X(0.30), ay, X(0.41), ay, { renk: R.soluk, kalin: 1.2 });
       [0.30, 0.32, 0.34, 0.36, 0.38, 0.40].forEach(v => s += S.cizgi(X(v), ay, X(v), ay + 5, { renk: R.soluk, kalin: 1 }) + S.yazi(X(v), ay + 19, tr(v, 2), { boy: 13, hiza: 'middle', renk: R.soluk }));
-      s += S.cizgi(X(0.4), ay - 44, X(0.4), ay, { renk: R.metin, kalin: 1.2, kesik: '4 3' });
-      s += S.yazi(X(0.4) + 4, ay - 46, 'düzgün küre 0,4', { boy: 13, hiza: 'end', renk: R.metin });
+      s += S.cizgi(X(0.4), ay - 56, X(0.4), ay, { renk: R.metin, kalin: 1.2, kesik: '4 3' });
+      s += S.yazi(X(0.4) + 4, ay - 60, 'düzgün küre 0,4', { boy: 13, hiza: 'end', renk: R.metin });
       /* Venüs hata çubuğu */
       s += S.cizgi(X(0.313), ay - 8, X(0.361), ay - 8, { renk: R.metin, kalin: 1.4 });
       [0.313, 0.361].forEach(v => s += S.cizgi(X(v), ay - 12, X(v), ay - 4, { renk: R.metin, kalin: 1.4 }));
@@ -424,29 +423,29 @@
       s += S.daire(X(0.3307), ay, 5, { dolgu: R.metin, renk: 'none' });
       s += S.daire(X(0.346), ay, 5, { dolgu: R.vurgu, renk: 'none' });
       s += S.daire(X(0.393), ay, 5, { dolgu: R.ay, renk: R.metin, kalin: 1 });
-      s += S.yazi(X(0.3307) - 6, ay - 22, 'Dünya 0,3307', { boy: 13, hiza: 'end', renk: R.metin });
-      s += S.yazi(X(0.337), ay - 30, 'Venüs 0,337 ± 0,024', { boy: 13, hiza: 'middle', renk: R.metin });
-      s += S.yazi(X(0.346) + 8, ay - 14, 'Merkür 0,346', { boy: 13, renk: R.vurgu, kalin: true });
-      s += S.yazi(X(0.393) - 4, ay + 38, 'Ay 0,393', { boy: 13, hiza: 'end', renk: R.metin });
-      s += S.yazi(X(0.30), ay + 38, '← ağır malzeme merkezde', { boy: 13, renk: R.soluk });
+      s += S.yazi(X(0.3307), ay + 38, 'Dünya 0,3307', { boy: 13, hiza: 'middle', renk: R.metin });
+      s += S.yazi(X(0.337), ay - 20, 'Venüs 0,337 ± 0,024', { boy: 13, hiza: 'middle', renk: R.metin });
+      s += S.cizgi(X(0.346) + 3, ay - 4, X(0.361) + 10, ay - 30, { renk: R.vurgu, kalin: 1 });
+      s += S.yazi(X(0.361) + 12, ay - 32, 'Merkür 0,346', { boy: 13, renk: R.vurgu, kalin: true });
+      s += S.yazi(X(0.393), ay + 38, 'Ay 0,393', { boy: 13, hiza: 'middle', renk: R.metin });
+      s += S.yazi(X(0.30), ay + 58, '← küçük değer: ağır malzeme merkezde', { boy: 13, renk: R.soluk });
       return s;
     }
   });
 
   /* d35 · bölüm 5: 3:2 dönme-dolanma rezonansı. Yörünge ölçekli (e = 0,2056), konumlar Kepler denklemiyle 11 günde bir. */
   C.ekle('d35-uc-iki', {
-    ders: 'd35', bolum: 5, oran: 0.86,
+    ders: 'd35', bolum: 5, oran: 0.9,
     baslik: 'Merkür\'ün 3:2 dansı: bir güneş günü iki yıl sürer',
     aciklama: 'Merkür\'ün basık yörüngesi ölçekli çizildi; gezegen her 11 günde bir gösterildi, günberi sağdadır. Her gezegenin aydınlık yarısı Güneş\'e bakar. Üçgenler yüzeyde sabit bir noktadır: dolu üçgen ilk yılda, boş üçgen 88 gün sonra, ikinci yılda aynı yerde nerede olduğunu gösterir. Merkür kendi ekseninde 58,6 günde döner, Güneş\'i 88 günde dolanır; bir yılda bir buçuk tur döndüğü için ikinci yılda nokta hep karşı yöne bakar. Sıfırıncı gün günberide tam öğle olan nokta, 88. günde aynı yerde gece yarısındadır; öğleye ancak 176. günde, iki yıl ve üç dönüş sonra döner. Merkür\'de bir güneş günü bu yüzden yaklaşık 176 Dünya günüdür.',
     kaynak: [KAYNAK.nasaMerkur, KAYNAK.merkurKart],
     ciz(S) {
-      const R = S.R, e = 0.2056, a = 128, b = a * Math.sqrt(1 - e * e), cx = 176, cy = 172, gx = cx + a * e, Py = 87.969, Pd = 58.646, rg = 10;
+      const R = S.R, e = 0.2056, a = 112, b = a * Math.sqrt(1 - e * e), cx = 196, cy = 150, gx = cx + a * e, Py = 87.969, Pd = 58.646, rg = 10;
       let s = '';
       s += S.elips(cx, cy, a, b, { renk: R.soluk, kalin: 1.4 });
       s += S.daire(gx, cy, 12, { dolgu: R.gunes, renk: 'none' });
       s += S.yazi(gx, cy + 30, 'Güneş', { boy: 13, hiza: 'middle', renk: R.metin, kalin: true });
       /* dolanma yönü */
-      s += S.ok(cx - 24, cy - b - 0.5, cx - 44, cy - b + 1.5, { renk: R.soluk, kalin: 1.5, boy: 8 });
       const ucgen = (x, y, aci, dolu) => {
         const u = [Math.cos(aci), -Math.sin(aci)], v = [-u[1], u[0]], t = [x + u[0] * (rg + 7), y + u[1] * (rg + 7)];
         const p1 = [x + u[0] * (rg - 1) + v[0] * 4.5, y + u[1] * (rg - 1) + v[1] * 4.5], p2 = [x + u[0] * (rg - 1) - v[0] * 4.5, y + u[1] * (rg - 1) - v[1] * 4.5];
@@ -464,23 +463,21 @@
         const th = Math.PI + 2 * Math.PI * t / Pd;
         s += ucgen(x, y, th, true) + ucgen(x, y, th + 2 * Math.PI * Py / Pd, false);
         /* gün etiketi: dışa doğru */
-        const dx = x - cx, dy = y - cy, L = Math.hypot(dx, dy), lx = x + dx / L * 34, ly = y + dy / L * 30;
+        const dx = x - cx, dy = y - cy, L = Math.hypot(dx, dy), lx = x + dx / L * 26, ly = y + dy / L * 26;
         const g = Math.round(t), h = Math.abs(dx / L) < 0.35 ? 'middle' : dx > 0 ? 'start' : 'end';
         s += S.yazi(lx + (h === 'start' ? -8 : h === 'end' ? 8 : 0), ly + 5, g + ' · ' + (g + 88), { boy: 13, hiza: h, renk: R.metin });
       }
       /* açıklama yazıları */
-      s += S.yazi(cx - 6, cy - 36, '1 dönüş: 58,6 gün', { boy: 13, hiza: 'middle', renk: R.metin });
-      s += S.yazi(cx - 6, cy - 20, '1 yıl: 88,0 gün', { boy: 13, hiza: 'middle', renk: R.metin });
-      s += S.yazi(cx - 6, cy - 4, '2 yıl = 3 dönüş', { boy: 13, hiza: 'middle', renk: R.vurgu, kalin: true });
-      s += S.yazi(cx - 6, cy + 54, 'güneş günü ≈176 gün', { boy: 13, hiza: 'middle', renk: R.vurgu, kalin: true });
-      s += S.yazi(396, cy - 26, 'günberi: 0. gün', { boy: 13, hiza: 'end', renk: R.metin });
-      s += S.yazi(396, cy - 10, 'öğle, 88. gün', { boy: 13, hiza: 'end', renk: R.metin });
-      s += S.yazi(396, cy + 6, 'gece yarısı', { boy: 13, hiza: 'end', renk: R.metin });
+      s += S.yazi(gx - 20, cy - 36, 'dönüş 58,6 gün', { boy: 13, hiza: 'end', renk: R.metin });
+      s += S.yazi(gx - 20, cy - 20, 'yıl 88,0 gün', { boy: 13, hiza: 'end', renk: R.metin });
+      s += S.yazi(gx - 20, cy - 4, '2 yıl = 3 dönüş', { boy: 13, hiza: 'end', renk: R.vurgu, kalin: true });
+      s += S.yazi(cx, cy + 54, 'güneş günü ≈176 gün', { boy: 13, hiza: 'middle', renk: R.vurgu, kalin: true });
       /* gösterge */
-      const gy = 326;
-      s += ucgen(14, gy - 14, Math.PI / 2, true).replace(/fill="[^"]*"/, `fill="${R.metin}"`) + S.yazi(34, gy, 'dolu: 1. yıl (gün 0–77)', { boy: 13, renk: R.metin });
-      s += ucgen(206, gy - 14, Math.PI / 2, false) + S.yazi(226, gy, 'boş: 2. yıl (88–165)', { boy: 13, renk: R.metin });
+      const gy = 320, isaret = (x, dolu) => `<polygon points="${x},${gy - 13} ${x - 6},${gy - 2} ${x + 6},${gy - 2}" fill="${dolu ? R.metin : R.zemin}" stroke="${R.metin}" stroke-width="1.3"/>`;
+      s += isaret(12, true) + S.yazi(24, gy, 'dolu: 1. yıl (gün 0–77)', { boy: 13, renk: R.metin });
+      s += isaret(214, false) + S.yazi(226, gy, 'boş: 2. yıl (88–165)', { boy: 13, renk: R.metin });
       s += S.yazi(4, gy + 18, 'sayılar: o konuma 1. ve 2. yılda varılan gün', { boy: 13, renk: R.soluk });
+      s += S.yazi(4, gy + 36, 'günberide 0. gün öğle, 88. gün gece yarısı', { boy: 13, renk: R.soluk });
       return s;
     }
   });
@@ -560,7 +557,7 @@
       });
       s += S.yazi(4, 16, 'Mars, yarıçap 3389,5 km; üçü aynı ölçek', { boy: 13, renk: R.soluk });
       /* hacim payı */
-      const X = p => 150 + p / 60 * 236, y0 = 214;
+      const X = p => 150 + p / 60 * 200, y0 = 214;
       s += S.yazi(4, y0 - 12, 'çekirdeğin hacim payı', { boy: 14, renk: R.metin, kalin: true });
       [['Mars, eski (1830 km)', 15.7, '%15,7'], ['Mars, 2023 (1650 km)', 11.5, '%11,5'], ['Dünya (3485 km)', 16.4, '%16,4'], ['Merkür (≈2000 km)', 55, '≈%55']].forEach(([ad, p, t], i) => {
         const y = y0 + 8 + i * 22;
@@ -574,12 +571,12 @@
 
   /* d36 · bölüm 5: Olympus Mons ve Valles Marineris kesitleri; üstte gerçek ölçek, altta dikey 10 kat. Biçim yaklaşık. */
   C.ekle('d36-olympus', {
-    ders: 'd36', bolum: 5, oran: 0.8,
+    ders: 'd36', bolum: 5, oran: 0.84,
     baslik: 'Olympus Mons ve Valles Marineris: gerçek ölçekte yassı',
     aciklama: 'Üstteki kesitler gerçek ölçekte, yatay ve dikey aynı oranda çizildi: 624 kilometre genişliğinde ve yaklaşık 25 kilometre yüksekliğindeki Olympus Mons ince bir tümsek gibi kalır; 200 kilometre genişliğinde ve 7 kilometreye kadar derin Valles Marineris de neredeyse bir çizgidir. Alttaki aynı kesitler dikeyde 10 kat abartıldı. Biçim yaklaşıktır: volkanın kenarında 8 kilometreye varan dik bir kayalık, sonra zirveye yaklaşık 3 derecelik yayvan yamaçlar. Kaba bir koni hesabı ortalama eğimi 4,6 derece verir, kaynaklar yaklaşık 5 der. Tepesine yürüyen biri tırmandığını zor fark ederdi.',
     kaynak: [KAYNAK.worldatlas, KAYNAK.olympus, KAYNAK.vallesESA],
     ciz(S) {
-      const R = S.R, k = 0.4, x0 = 42, ow = 624 * k, vx = x0 + ow + 24, vw = 200 * k;
+      const R = S.R, k = 0.38, x0 = 50, ow = 624 * k, vx = x0 + ow + 20, vw = 200 * k;
       const ciz = (by, d) => {
         const H = km => by - km * k * d;
         let t = '';
@@ -593,7 +590,7 @@
       s += S.yazi(4, 18, 'gerçek ölçek (yatay = dikey)', { boy: 14, renk: R.metin, kalin: true });
       s += ciz(b1, 1);
       s += S.yazi(x0 + ow / 2, b1 - 18, 'Olympus Mons', { boy: 13, hiza: 'middle', renk: R.metin });
-      s += S.yazi(vx + vw / 2, b1 + 22, 'Valles Marineris', { boy: 13, hiza: 'middle', renk: R.metin });
+      s += S.yazi(396, b1 + 22, 'Valles Marineris', { boy: 13, hiza: 'end', renk: R.metin });
       s += S.cizgi(x0, b1 + 14, x0 + 100 * k, b1 + 14, { renk: R.metin, kalin: 2 }) + S.yazi(x0 + 100 * k + 6, b1 + 19, '100 km', { boy: 13, renk: R.soluk });
       /* alt: dikey 10 kat */
       const b2 = 246, d = 10, H = km => b2 - km * k * d;
@@ -605,9 +602,9 @@
       s += S.zeminliYazi(x0 + 8, H(14) + 16, '8 km kayalık', { boy: 13, renk: R.metin });
       s += S.zeminliYazi(x0 + ow * 0.74, H(12), 'yamaç ≈3°', { boy: 13, hiza: 'middle', renk: R.metin });
       s += S.yazi(x0 + ow / 2, b2 + 20, '624 km genişlik · ortalama eğim ≈5°', { boy: 13, hiza: 'middle', renk: R.metin });
-      s += S.yazi(vx + vw / 2, H(-7) + 20, '7 km', { boy: 13, hiza: 'middle', renk: R.metin, kalin: true });
+      s += S.yazi(vx + vw / 2, H(-7) - 8, '7 km', { boy: 13, hiza: 'middle', renk: R.metin, kalin: true });
       s += S.yazi(vx + vw / 2, b2 - 8, '200 km', { boy: 13, hiza: 'middle', renk: R.metin });
-      s += S.yazi(396, 306, 'Valles Marineris: 4000 km uzun', { boy: 13, hiza: 'end', renk: R.soluk });
+      s += S.yazi(396, 302, 'Valles Marineris: 4000 km uzun', { boy: 13, hiza: 'end', renk: R.soluk });
       return s;
     }
   });
@@ -635,9 +632,9 @@
       s += S.ok(px - 8 * Math.cos(pa), py + 8 * Math.sin(pa), cx + (rP - 26) * Math.cos(pa), cy - (rP - 26) * Math.sin(pa), { renk: R.uyari, kalin: 2, boy: 7 });
       s += S.zeminliYazi(px + 10, py - 6, 'Phobos', { boy: 13, renk: R.metin, kalin: true });
       /* Deimos */
-      const da = 145 * rad, dxp = cx + rD * Math.cos(da), dyp = cy - rD * Math.sin(da);
+      const da = 215 * rad, dxp = cx + rD * Math.cos(da), dyp = cy - rD * Math.sin(da);
       s += S.daire(dxp, dyp, 4.5, { dolgu: R.metin, renk: R.zemin, kalin: 1.5 });
-      s += S.zeminliYazi(dxp + 10, dyp + 18, 'Deimos', { boy: 13, renk: R.metin, kalin: true });
+      s += S.zeminliYazi(dxp + 10, dyp + 20, 'Deimos', { boy: 13, renk: R.metin, kalin: true });
       /* dolanma yönü okları (saat yönünün tersi) */
       [[rP, 120], [rD, 60]].forEach(([r, aci]) => { const b = aci * rad, c = (aci + 9) * rad; s += S.ok(cx + r * Math.cos(b), cy - r * Math.sin(b), cx + r * Math.cos(c), cy - r * Math.sin(c), { renk: R.metin, kalin: 1.6, boy: 7 }); });
       /* halka içi yazılar */

@@ -146,7 +146,7 @@
       });
       /* ölçülen kütleler: nokta ve hata çubuğu */
       s += S.yazi(8, 188, 'Ölçülen nötron yıldızları', { boy: 14, renk: R.metin, kalin: true });
-      const olcum = [[1.44, 1.29, 1.58, 'J0030+0451 (NICER): 1,44'], [2.01, 1.97, 2.05, 'J0348+0432: 2,01 ± 0,04'], [2.08, 2.01, 2.15, 'J0740+6620: 2,08 ± 0,07'], [2.35, 2.18, 2.52, 'J0952−0607: 2,35 ± 0,17']];
+      const olcum = [[1.44, 1.30, 1.59, 'J0030+0451 (NICER): 1,44'], [2.01, 1.97, 2.05, 'J0348+0432: 2,01 ± 0,04'], [2.08, 2.01, 2.15, 'J0740+6620: 2,08 ± 0,07'], [2.35, 2.18, 2.52, 'J0952−0607: 2,35 ± 0,17']];
       olcum.forEach(([m, a, b, t], i) => {
         const y = 210 + i * 25;
         s += S.cizgi(ek.X(a), y, ek.X(b), y, { renk: R.metin, kalin: 2 }) + S.cizgi(ek.X(a), y - 5, ek.X(a), y + 5, { renk: R.metin, kalin: 1.5 }) + S.cizgi(ek.X(b), y - 5, ek.X(b), y + 5, { renk: R.metin, kalin: 1.5 });
@@ -297,7 +297,7 @@
   C.ekle('d46-kutle-merdiveni', {
     ders: 'd46', bolum: 13, oran: 1.06,
     baslik: 'Milyonlardan on milyarlara: dev kara deliklerin kütleleri ve tartma yolları',
-    aciklama: 'Yatay eksen Güneş kütlesi cinsinden, logaritmik: her çentik on kat. Her satır bu dersteki bir kara deliktir; altında hangi yöntemle tartıldığı yazar. Samanyolu\'nun Sgr A*\'ı yaklaşık 4,3 milyon, maserle tartılan M106 yaklaşık 39 milyon, Andromeda yaklaşık 140 milyon, yankı haritalamayla tartılan NGC 5548 yaklaşık 260 milyon Güneş kütlesidir. M87 için iki nokta vardır: 1994\'te gazdan 2,4 milyar, 2019\'da EHT\'den 6,5 milyar; aynı kara delik için yöntemler iki üç kat ayrışır. En sağda on milyarlar: OJ 287\'nin modeldeki ana kara deliği 18, Kozmik At Nalı 36, TON 618 yaklaşık 41 milyar. İçi boş işaretler dolaylı ve belirsizliği büyük tahminlerdir. Kesikli çizgi King\'in hesapladığı yaklaşık 50 milyarlık doğal üst sınırdır.',
+    aciklama: 'Yatay eksen Güneş kütlesi cinsinden, logaritmik: her çentik on kat. Her satır bu dersteki bir kara deliktir; altında hangi yöntemle tartıldığı yazar. Samanyolu\'nun Sgr A*\'ı yaklaşık 4,3 milyon, maserle tartılan M106 yaklaşık 39 milyon, Andromeda yaklaşık 140 milyon, yankı haritalamayla tartılan NGC 5548 yaklaşık 260 milyon Güneş kütlesidir. M87 için iki nokta vardır: 1994\'te gazdan 2,4 milyar, 2019\'da EHT\'den 6,5 milyar; aynı kara delik için yöntemler iki üç kat ayrışır. En sağda on milyarlar: OJ 287\'nin tartışmalı modeldeki ana kara deliği 18, Kozmik At Nalı 36 milyar; TON 618 için iki tayf çizgisinden iki tahmin vardır, yaklaşık 41 ve 66 milyar. İçi boş işaretler dolaylı ve belirsizliği büyük tahminlerdir. Kesikli çizgi King\'in hesapladığı yaklaşık 50 milyarlık doğal üst sınırdır.',
     kaynak: [KAYNAK.smbh, KAYNAK.eso2612, KAYNAK.m106, KAYNAK.ngc5548, KAYNAK.oj287, KAYNAK.atNali],
     ciz(S) {
       const R = S.R;
@@ -316,16 +316,16 @@
         [[1.4e8], [0.95e8, 2.05e8], 'Andromeda: 140 milyon', 'yıldız hareketleri', true],
         [[2.58e8], [1.46e8, 3.7e8], 'NGC 5548: 260 milyon', 'yankı haritalama (±%43)', true],
         [[2.4e9, 6.5e9], null, 'M87: 2,4 ve 6,5 milyar', 'gaz 1994 · EHT 2019', true],
-        [[1.8e10], null, 'OJ 287: 18 milyar', 'çift modeli', false],
-        [[3.6e10], null, 'Kozmik At Nalı: 36 milyar', 'mercek + yıldız hızları', true],
-        [[4.07e10], null, 'TON 618: ≈41 milyar', 'çizgi genişliği, belirsiz', false]
+        [[1.8e10], null, 'OJ 287: 18 milyar', 'çift modeli, tartışmalı', false],
+        [[3.6e10], [2.97e10, 4.15e10], 'Kozmik At Nalı: 36 milyar', 'mercek + yıldız hızları', true],
+        [[4.07e10, 6.6e10], null, 'TON 618: 41–66 milyar', 'çizgi genişliği (C IV, Hβ)', false]
       ];
       sat.forEach(([ms, hata, ad, yon, dogrudan], i) => {
         const y = 52 + i * 38, xs = ms.map(m => ek.X(m));
         if (hata) s += S.cizgi(ek.X(hata[0]), y, ek.X(hata[1]), y, { renk: R.metin, kalin: 2 }) + S.cizgi(ek.X(hata[0]), y - 5, ek.X(hata[0]), y + 5, { renk: R.metin, kalin: 1.4 }) + S.cizgi(ek.X(hata[1]), y - 5, ek.X(hata[1]), y + 5, { renk: R.metin, kalin: 1.4 });
         if (xs.length > 1) s += S.cizgi(xs[0], y, xs[1], y, { renk: R.metin, kalin: 1.4, kesik: '3 3' });
         xs.forEach(x => { s += S.daire(x, y, 6, dogrudan ? { dolgu: R.vurgu, renk: R.zemin, kalin: 1.5 } : { dolgu: R.zemin, renk: R.vurgu, kalin: 2.2 }); });
-        const sag = xs[xs.length - 1] < 230, tx = sag ? Math.max(...xs) + (hata ? Math.max(0, ek.X(hata[1]) - Math.max(...xs)) : 0) + 11 : Math.min(...xs) - 11;
+        const uc = hata ? xs.concat([ek.X(hata[0]), ek.X(hata[1])]) : xs, sag = xs[xs.length - 1] < 230, tx = sag ? Math.max(...uc) + 11 : Math.min(...uc) - 11;
         s += S.zeminliYazi(tx, y + 4, ad, { boy: 13, hiza: sag ? 'start' : 'end', renk: R.metin, kalin: true });
         s += S.zeminliYazi(tx, y + 21, yon, { boy: 13, hiza: sag ? 'start' : 'end', renk: R.soluk });
       });
@@ -568,7 +568,7 @@
   C.ekle('d48-isiktan-hizli', {
     ders: 'd48', bolum: 8, oran: 0.98,
     baslik: 'Işıktan hızlı yanılsama: görünen hız bakış açısına bağlıdır',
-    aciklama: 'Yatay eksen düğümün hareketi ile bizim bakış doğrultumuz arasındaki açıdır; dikey eksen gökte görünen yanal hızın ışık hızına oranı. Eğriler dersteki formülden hesaplandı. Kesikli yatay çizginin üstü ışıktan hızlı görünür. Işık hızının yüzde 99\'uyla giden bir düğüm 8 derecelik açıda yaklaşık 7 kat ışık hızıyla gidiyormuş gibi görünür, ama aynı düğüm 60 derecede yavaş görünür. Işık hızının yüzde 90\'ında etki zayıftır. Noktalı eğri, hızın ışık hızına sınırsız yaklaştığı uçtur: hiçbir düğüm onun üstüne çıkamaz. M87\'de görülen 6 kat bu yüzden açının 19 dereceden küçük olmasını ister; oysa başka kanıtların söylediği 43 derecede sınır yaklaşık 2,5\'tir. 3C 273\'teki 9,6 katı ise ışık hızının yaklaşık yüzde 99,5\'ini gerektirir.',
+    aciklama: 'Yatay eksen düğümün hareketi ile bizim bakış doğrultumuz arasındaki açıdır; dikey eksen gökte görünen yanal hızın ışık hızına oranı. Eğriler dersteki formülden hesaplandı. Kesikli yatay çizginin üstü ışıktan hızlı görünür. Işık hızının yüzde 99\'uyla giden bir düğüm 8 derecelik açıda yaklaşık 7 kat ışık hızıyla gidiyormuş gibi görünür, ama açı büyüdükçe görünen hız düşer: 60 derecede yaklaşık 1,7 kat. Işık hızının yüzde 90\'ında etki zayıftır. Noktalı eğri, hızın ışık hızına sınırsız yaklaştığı uçtur: hiçbir düğüm onun üstüne çıkamaz. M87\'de görülen 6 kat bu yüzden açının 19 dereceden küçük olmasını ister; oysa başka kanıtların söylediği 43 derecede sınır yaklaşık 2,5\'tir. 3C 273\'teki 9,6 katı ise ışık hızının yaklaşık yüzde 99,5\'ini gerektirir.',
     kaynak: [KAYNAK.isiktanHizli, KAYNAK.k3c273],
     ciz(S) {
       const R = S.R, rad = Math.PI / 180, bg = (b, t) => b * Math.sin(t * rad) / (1 - b * Math.cos(t * rad));
@@ -579,7 +579,6 @@
       });
       let s = ek.svg;
       s += S.cizgi(ek.X(0), ek.Y(1), ek.X(90), ek.Y(1), { renk: R.uyari, kalin: 1.6, kesik: '6 4' });
-      s += S.zeminliYazi(ek.X(89), ek.Y(1) - 6, 'ışık hızı', { boy: 13, hiza: 'end', renk: R.uyari, kalin: true });
       s += S.fonk(ek, t => { const y = 1 / Math.tan(t * rad / 2); return y <= 12 ? y : NaN; }, 9.5, 90, 160, { renk: R.metin, kalin: 1.8, kesik: '2 4' });
       s += S.fonk(ek, t => bg(0.9, t), 0, 90, 180, { renk: R.soluk, kalin: 2 });
       s += S.fonk(ek, t => bg(0.99, t), 0, 90, 360, { renk: R.vurgu, kalin: 3 });
@@ -593,9 +592,9 @@
         s += S.kutu(ek.X(t) - 4.5, ek.Y(y) - 4.5, 9, 9, { dolgu: R.zemin, renk: R.metin, kalin: 1.8 });
         s += S.zeminliYazi(ek.X(t) + 9, ek.Y(y) - (i ? 10 : 4), m, { boy: 13, renk: R.metin });
       });
-      s += S.zeminliYazi(ek.X(60), ek.Y(bg(0.99, 60)) + 22, 'hız: %99 c', { boy: 13, renk: R.vurgu, kalin: true });
-      s += S.zeminliYazi(ek.X(68), ek.Y(bg(0.9, 68)) + 26, '%90 c', { boy: 13, renk: R.soluk, kalin: true });
-      s += S.zeminliYazi(ek.X(35), ek.Y(5), 'noktalı: c\'ye sınırsız yakın', { boy: 13, renk: R.metin });
+      s += S.yazi(ek.X(30), ek.Y(0.4), 'kesikli: ışık hızı', { boy: 13, renk: R.uyari, kalin: true });
+      s += S.yazi(ek.X(26), ek.Y(bg(0.9, 26)) - 9, 'hız: %90 c', { boy: 13, hiza: 'middle', renk: R.soluk, kalin: true });
+      s += S.yazi(ek.X(35), ek.Y(5), 'noktalı: c\'ye sınırsız yakın', { boy: 13, renk: R.metin });
       s += S.yazi(8, 376, 'görünen hız = β sin θ ÷ (1 − β cos θ)', { boy: 13, renk: R.soluk });
       return s;
     }
@@ -613,7 +612,7 @@
       const R = S.R;
       const ek = S.eksen({ x: 14, y: 24, w: 368, h: 316 }, { x0: 1e4, x1: 1e10, y0: 0, y1: 1 }, {
         logX: true,
-        xIsaret: [[1e4, on(4)], [1e5, on(5)], [1e6, '1 milyon'], [1e7, on(7)], [1e8, on(8)], [1e9, '1 milyar'], [1e10, on(10)]],
+        xIsaret: [[1e4, on(4)], [1e5, on(5)], [1e6, on(6)], [1e7, on(7)], [1e8, on(8)], [1e9, on(9)], [1e10, on(10)]],
         xAd: 'ışık yılı (logaritmik)'
       });
       let s = ek.svg.replace(/<line[^>]*x1="14" y1="24"[^>]*\/>/, '');
@@ -622,7 +621,7 @@
         [800e3 * 3.2616, 'Samanyolu–Andromeda', '≈2,6 milyon (800 kpc)'],
         [53.8e6, 'Başak Kümesi\'ne uzaklık', '53,8 milyon'],
         [62e6 * 3.2616, 'Çoban Boşluğu yarıçapı', '≈200 milyon (62 Mpc)'],
-        [490e6, 'BAO cetveli', '≈490 milyon (150 Mpc)'],
+        [490e6, 'akustik cetvel (BAO)', '≈490 milyon (150 Mpc)'],
         [500e6, 'Büyük Duvar', 'en az 500 milyon'],
         [160e6 * 3.2616, 'Laniakea çapı', '≈520 milyon (160 Mpc)'],
         [1.37e9, 'Sloan Büyük Duvarı', '1,37 milyar'],
@@ -644,7 +643,7 @@
      hacim boşluk 78, duvar 18, lif 6, küme ≈0. Hacim sütunu yuvarlama yüzünden 102'ye ölçeklendi. */
   C.ekle('d49-pay-hacim', {
     ders: 'd49', bolum: 10, oran: 1.0,
-    baslik: 'Kozmik ağ: madde nerede, hacim nerede?',
+    baslik: 'Kozmik ağ: madde liflerde, hacim boşluklarda',
     aciklama: 'Soldaki sütun evrendeki maddenin, sağdaki hacmin bileşenlere bölünüşüdür; aradaki şeritler aynı bileşeni birleştirir. Maddenin yarısı liflerde, yüzde 25\'i duvarlarda, yüzde 15\'i boşluklarda, yüzde 10\'u küme bölgelerindedir. Hacimde tablo tersine döner: boşluklar yüzde 78\'ini, duvarlar yüzde 18\'ini, lifler yalnızca yüzde 6\'sını kaplar; kümelerin hacmi önemsizdir, bu yüzden şeridi sağda bir çizgiye iner. Kütle payının hacim payına bölümü yoğunluğu verir: lifler ortalamadan yaklaşık 8 kat yoğun, duvarlar kabaca ortalama, boşluklar ortalamanın beşte biri kadardır. Hacim yüzdelerinin toplamı yuvarlama yüzünden 102 eder.',
     kaynak: [KAYNAK.cautun],
     ciz(S) {
@@ -664,7 +663,7 @@
         s += S.kutu(xl, ym, w, hm, { renk: R.metin, kalin: 1 });
         if (hh > 0.5) s += S.kutu(xr, yh, w, hh, { renk: R.metin, kalin: 1 });
         s += S.yazi(xl - 8, ym + hm / 2 + 5, '%' + m, { boy: 13, hiza: 'end', renk: R.metin, kalin: true });
-        s += S.yazi(xr + w + 8, yh + Math.max(hh, 0) / 2 + 5 + (i === 0 ? -4 : 0), h ? '%' + h : '≈0', { boy: 13, renk: R.metin, kalin: true });
+        s += S.yazi(xr + w + 8, i === 0 ? ust - 4 : yh + hh / 2 + 5 + (i === 1 ? 4 : 0), h ? '%' + h : '≈0', { boy: 13, renk: R.metin, kalin: true });
         /* bileşen adı şeridin ortasında */
         const mx = (xl + w + xr) / 2, my = (ym + hm / 2 + yh + hh / 2) / 2;
         s += S.zeminliYazi(mx, my + 5, ad, { boy: 13, hiza: 'middle', renk: R.metin, kalin: true });
@@ -709,12 +708,12 @@
       s += S.fonk(ek, nu => b(nu) / bmax * 1.05, 2, 700, 200, { renk: R.soluk, kalin: 1.8, kesik: '2 4' });
       s += S.fonk(ek, nu => g(nu) / gmax, 1, 700, 280, { renk: R.metin, kalin: 3 });
       s += S.daire(ek.X(217.5), y0, 5, { dolgu: R.metin, renk: R.zemin, kalin: 1.5 });
-      s += S.zeminliYazi(ek.X(217.5) + 4, y0 + 22, '≈217 GHz: etki sıfır', { boy: 13, hiza: 'middle', renk: R.metin, kalin: true });
-      s += S.zeminliYazi(ek.X(130), ek.Y(-0.85), 'gölge: arka plan sönük', { boy: 13, hiza: 'middle', renk: R.mavi, kalin: true });
-      s += S.zeminliYazi(ek.X(470), ek.Y(0.95), 'leke: arka plan parlak', { boy: 13, hiza: 'middle', renk: R.vurgu, kalin: true });
-      s += S.zeminliYazi(ek.X(560), ek.Y(0.35), 'noktalı: arka plan', { boy: 13, hiza: 'middle', renk: R.soluk });
-      s += S.zeminliYazi(ek.X(560), ek.Y(0.35) + 17, 'ışımasının tayfı', { boy: 13, hiza: 'middle', renk: R.soluk });
-      s += S.yazi(8, 352, 'T = 2,725 K; biçim hesap, yükseklik göreli', { boy: 13, renk: R.soluk });
+      const yz = (x, y, t, o) => S.yazi(x, y, t, Object.assign({ boy: 13, renk: R.metin }, o));
+      s += yz(ek.X(228), y0 + 20, '≈217 GHz: etki sıfır', { kalin: true });
+      s += yz(ek.X(130), ek.Y(-0.82), 'gölge: arka plan sönük', { hiza: 'middle', renk: R.mavi, kalin: true });
+      s += yz(ek.X(400), ek.Y(1.06), 'leke: arka plan parlak', { hiza: 'middle', renk: R.vurgu, kalin: true });
+      s += S.yazi(8, 340, 'noktalı: arka plan ışımasının tayfı (ayrı ölçek)', { boy: 13, renk: R.soluk });
+      s += S.yazi(8, 360, 'T = 2,725 K; biçim hesap, yükseklik göreli', { boy: 13, renk: R.soluk });
       return s;
     }
   });
