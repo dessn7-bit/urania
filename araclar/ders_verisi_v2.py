@@ -12,9 +12,11 @@ UNITELER = [
     {'id': 'yildizlar', 'ad': 'Yıldızlar', 'aciklama': 'Güneş\'ten başlayıp yıldızların doğumu, hayatı ve ölümü.', 'dersler': ['d4', 'd14', 'd5', 'd15', 'd6', 'd16']},
     {'id': 'gezegen_yasam', 'ad': 'Ötegezegenler ve yaşam', 'aciklama': 'Başka yıldızların gezegenleri ve yaşam arayışı.', 'dersler': ['d13', 'd18']},
     {'id': 'evren', 'ad': 'Galaksiler ve evren', 'aciklama': 'Samanyolu\'ndan evrenin tarihine ve geleceğine; sonunda astronominin kendi tarihi.', 'dersler': ['d7', 'd8', 'd17', 'd20']},   # d20 tarih: kapanış dersi (Kepler/Newton için d3 önce okunmuş olur)
+    # v4 (Ekim 2026): fizik bilmeyen biri için fiziğin büyük fikirleri; astronomiyle bağlantılı
+    {'id': 'fizik', 'ad': 'Fiziğin büyük fikirleri', 'aciklama': 'Enerji ve entropi, ışık, görelilik, kuantum, Feynman\'ın ışık kuramı, atom çekirdeği ve parçacıklar; fizik bilmeyen biri için.', 'dersler': ['d30', 'd33', 'd25', 'd26', 'd27', 'd28', 'd29', 'd31', 'd32']},
 ]
 # v3 (Ekim 2026) yeni dersler: taslağı henüz yazılmadıysa atlanır (yazım sürerken derleme kırılmasın)
-YENI_V3 = {'d20', 'd21', 'd22', 'd23', 'd24'}
+YENI_V3 = {'d20', 'd21', 'd22', 'd23', 'd24', 'd25', 'd26', 'd27', 'd28', 'd29', 'd30', 'd31', 'd32', 'd33'}
 eski = {d['id']: d for d in json.load(open(os.path.join(K, 'veri/dersler.json'), encoding='utf-8'))['dersler']}
 dersler, kaynak = [], {}
 # Tekrar kartlarının kalıcı kimliği (kid): kartın ilerlemesi bu kimliğe yazılır. İlk atamada eski sıra
