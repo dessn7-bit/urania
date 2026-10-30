@@ -202,6 +202,7 @@
     t = t.replace(/\s?∝\s?/g, ' orantılıdır ');
     t = t.replace(/\s?≤\s?/g, ' küçük ya da eşittir ');
     t = t.replace(/\s?≥\s?/g, ' büyük ya da eşittir ');
+    t = t.replace(/\s?≫\s?/g, ' çok büyüktür ').replace(/\s?≪\s?/g, ' çok küçüktür ');
     t = t.replace(/\s?→\s?/g, ', yani ');
     t = t.replace(/\s=\s|=/g, ' eşittir ');
     /* Kuyruklu yıldız adı "109P/Swift-Tuttle": eğik çizgi okunmaz */

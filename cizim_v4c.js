@@ -110,7 +110,7 @@
 
   /* d27 · bölüm 3: Millikan tipi deney; cıva çizgileri ve iş fonksiyonu 2,3 eV olan varsayımsal metal (dersin örneği). */
   C.ekle('d27-fotoelektrik', {
-    ders: 'd27', bolum: 3, oran: 0.8,
+    ders: 'd27', bolum: 3, oran: 0.92,
     baslik: 'Fotoelektrik olay: durdurma gerilimi frekansla düz bir çizgi çizer',
     aciklama: 'Dersin örneğindeki iş fonksiyonu 2,3 elektronvolt olan metal ve cıva lambasının üç çizgisi. Yatay eksen ışığın frekansı, dikey eksen en hızlı elektronu durdurmak için gereken gerilimdir. 546,1 nanometrelik yeşil ışığın foton enerjisi 2,27 elektronvolttur, bedeli karşılamaz: lamba ne kadar parlak olursa olsun elektron çıkmaz, bu yüzden içi boş daire sıfırda durur. Eşik yaklaşık 539 nanometrededir. 365 nanometrede 1,10 volt, 253,5 nanometrede 2,59 volt gerekir. Noktalar düz bir çizgi üstündedir ve çizginin eğimi Planck sabitinin elektron yüküne bölümüdür; Millikan h\'yi böyle ölçtü. Işığın parlaklığı bu çizgiyi değiştirmez.',
     kaynak: [KAYNAK.quarknet, KAYNAK.millikanAps, KAYNAK.planckSabiti],
@@ -137,12 +137,12 @@
           s += S.zeminliYazi(x - 10, y - 10, t, { boy: 13, hiza: 'end', renk: R.metin, kalin: true });
         }
       });
-      s += S.zeminliYazi(64, ek.Y(0) - 38, 'yeşil 546,1 nm:', { boy: 13, renk: R.uyari, kalin: true });
-      s += S.zeminliYazi(64, ek.Y(0) - 20, 'elektron yok', { boy: 13, renk: R.uyari, kalin: true });
-      s += S.yazi(64, 50, 'metal: iş fonksiyonu 2,3 eV', { boy: 13, renk: R.soluk });
-      s += S.yazi(378, 190, 'eğim = h ÷ e', { boy: 13, hiza: 'end', renk: R.vurgu, kalin: true });
-      s += S.yazi(378, 208, 'Planck sabitini verir', { boy: 13, hiza: 'end', renk: R.vurgu });
-      s += S.yazi(378, 226, 'parlaklık eğriyi değiştirmez', { boy: 13, hiza: 'end', renk: R.soluk });
+      s += S.yazi(64, ek.Y(0.95), 'yeşil 546,1 nm:', { boy: 13, renk: R.uyari, kalin: true });
+      s += S.yazi(64, ek.Y(0.75), 'elektron yok', { boy: 13, renk: R.uyari, kalin: true });
+      s += S.cizgi(96, ek.Y(0.75) + 5, ek.X(CI / 546.1e-9 / 1e14) - 3, ek.Y(0) - 7, { renk: R.uyari, kalin: 1 });
+      s += S.yazi(8, 316, 'eğim = h ÷ e: Planck sabitini verir', { boy: 13, renk: R.vurgu, kalin: true });
+      s += S.yazi(8, 334, 'ışığın parlaklığı çizgiyi değiştirmez', { boy: 13, renk: R.metin });
+      s += S.yazi(8, 352, 'metal: iş fonksiyonu 2,3 eV (varsayımsal)', { boy: 13, renk: R.soluk });
       return s;
     }
   });
@@ -483,13 +483,13 @@
       s += S.fonk(ek, f => c / f, 1, 1e16, 60, { renk: R.vurgu, kalin: 2.6 }, true);
       const nok = [[50, '50 Hz şebeke: ≈6000 km', '', 'start'], [20.5e6, 'Jansky 20,5 MHz', '14,6 m', 'start'], [2.45e9, 'mikrodalga fırın', '2,45 GHz: ≈12 cm', 'start'], [c / 550e-9, 'yeşil ışık 550 nm', '', 'end']];
       nok.forEach(([f, t, t2, h]) => {
-        const x = ek.X(f), y = ek.Y(c / f), tx = h === 'end' ? x - 4 : x + 14, ty = h === 'end' ? y - 14 : t2 ? y - 13 : y + 5;
+        const x = ek.X(f), y = ek.Y(c / f), tx = h === 'end' ? x - 16 : x + 14, ty = h === 'end' ? y + 6 : t2 ? y - 13 : y + 5;
         s += S.daire(x, y, 5.5, { dolgu: R.metin, renk: R.zemin, kalin: 1.5 });
         s += S.yazi(tx, ty, t, { boy: 13, hiza: h, renk: R.metin, kalin: true });
         if (t2) s += S.yazi(tx, ty + 17, t2, { boy: 13, hiza: h, renk: R.metin });
       });
-      s += S.yazi(84, 272, 'c = 1 ÷ √(μ₀ε₀) ≈ ' + tr(c / 1000) + ' km/s', { boy: 13, renk: R.vurgu, kalin: true });
-      s += S.yazi(84, 288, 'frekans × dalga boyu = c', { boy: 13, renk: R.metin });
+      s += S.yazi(84, 236, 'c = 1 ÷ √(μ₀ε₀) ≈ ' + tr(c / 1000) + ' km/s', { boy: 13, renk: R.vurgu, kalin: true });
+      s += S.yazi(84, 254, 'frekans × dalga boyu = c', { boy: 13, renk: R.metin });
       return s;
     }
   });
