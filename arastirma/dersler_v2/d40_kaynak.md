@@ -228,3 +228,19 @@ Kısaltmalar:
 3. Çıkarılan / yazılmayan: Herschel krateri için sayısal çap (kaynak açılmadı); Callisto okyanusunun nasıl sıvı kaldığına dair tuz/amonyak açıklaması (kaynaksız, çıkarıldı); Laplace adının kökeni (kaynaksız, çıkarıldı); Europa Clipper'ın Aralık 2026 Dünya geçişi (birincil kaynak açılmadı).
 4. Tek cümlelik genel tanımlar (gayzer, Roche sınırı, farklılaşma, düzenli/düzensiz uydu) sözlük amaçlıdır; düzensiz uydu tanımı USF'deki ters yönlü, çok eğik dış uydu satırlarına dayanır.
 5. Yaşam/astrobiyoloji ayrıntıları (Enceladus'ta hidrojen ve fosfat, Europa'nın yaşanabilirliği, Dragonfly görev ayrıntısı) bilerek d18'e bırakıldı; d18 gezegen_yasam ünitesinde, sırada sonra geldiği için on_bilgi'ye yazılmadı, metinde "18. ders" diye anıldı.
+
+## Doğrulama turu (30 Ekim 2026, bağımsız denetçi)
+- Uydu sayıları: Satürn sayfası "293 confirmed moons in its orbit as of August 2026" (yeniden açıldı); Jüpiter sayfası tarih vermez ("115 moons ... officially recognized") → derste "Ağustos 2026 güncellemesi, Ekim 2026'da bakıldı" denildi
+- Titan katmanları: NASA sayfası "five primary layers" der ama yalnız dört iç katman sayar → derste "beş" sözü kaldırıldı | NT (yeniden açıldı)
+- Titan iç yapısı: SDT (Nature 17 Aralık, ~15 saat gecikme, 2008 savı, bal) ve PT (150 km+ kabuk, Atlas Okyanusu hacmi, son 100 milyon yıl, Dragonfly buz depremleri) yeniden açıldı, doğrulandı; NASA sayfası hâlâ okyanus diyor → ders iki görüşü de veriyor
+- Miranda: V2 "came closest to any object so far" = 1986'ya kadarki en yakın geçiş; Neptün geçişi (4800 km) daha yakın → derste "o güne dek" denildi
+- Juice: ESA "flew just 8640 km above the Indian Ocean" (yüzeyden yükseklik), 20°, +3,5 km/s, Ocak 2029 son Dünya geçişi (yeniden açıldı)
+- Ganymede kutup ışığı 6°/2° satırı NG'de yok; anahtar sayının kaynak_url'si BBC arşivine çevrildi | BBC (geomet.uni-koeln.de) | "rocking by six degrees" ; "two degrees" ; 12 March 2015
+- Triton 28 milyar yıl atfı | WT kaynakçası | Wang, K., Zhang, H., Li, Y., Qiao, L. (18 Şubat 2025), "A Plausible Minimum Value of the Neptunian Tidal Dissipation Factor Estimated from Triton's Astrometric Observations", Solar System Research 59(1), 6–15. Makalenin kendisi açılmadı; değer Wikipedia aktarımıdır.
+- Chyba 1989 özeti yeniden açıldı: 3,6 Gyr (durum 1, nominal), 1,4 Gyr (durum 2'den durum 1'e geçişten sonra) doğrulandı
+- Triton gayzerleri azot ve toz | https://en.wikipedia.org/wiki/Geyser ; WT | "active eruptions of nitrogen and dust" ; "geyser-like eruptions of nitrogen gas or water and entrained dust"
+- Gayzer tanımı | https://en.wikipedia.org/wiki/Geyser | "a spring with an intermittent water discharge ejected turbulently and accompanied by steam" ; Enceladus "Plumes of water vapour, together with ice particles"
+- Roche sınırı tanımı | https://en.wikipedia.org/wiki/Roche_limit | "the distance from a celestial body within which a second celestial body, held together only by its own force of gravity, will disintegrate because the first body's tidal forces exceed the second body's self-gravitation"
+- Etkin dünyalar: NASA Triton sayfası Triton, Io, Venüs; Wikipedia Enceladus'u da sayar → 12. bölüme tek cümle eklendi
+- [GOK] Jüpiter karşı konumu 11 Şub 2027 00.28 UT (İstanbul 03.28; d9/d3 "10–11 Şubat" ile uyumlu), Aslan; doğuş 15 Eki 02.08, 30 Ara 21.32 İstanbul; Satürn karşı konumu 4 Eki 2026, Kasım–Aralık Balina — derste yazılanlarla uyumlu
+- Uranüs uydu yoğunlukları USF 1,20–1,66 (Miranda en düşük) ve Triton 157,345° — kaynak satırlarıyla uyumlu
