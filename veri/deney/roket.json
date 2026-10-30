@@ -41,7 +41,7 @@
         "yap": "Aynı roketin Isp'ini 306 s'ye düşür (egzoz hızı 3 km/s), yakıt payını %97,2'ye çıkar.",
         "tikla": "#rkArac button[data-i=\"0\"]",
         "ayar": { "#rkIsp": 2.4856, "#rkEps": 0.972 },
-        "gozle": "Δv 9,40 km/s; ama bunun için kalkış kütlesinin %95,6'sı yakıt olmalı, kütle oranı 23,0.",
+        "gozle": "Δv 9,40 km/s; ama bunun için kalkış kütlesinin %95,6'sı yakıt olmalı, kütle oranı 22,96 (≈ 23).",
         "neden": "Dersin ikinci örneği: egzoz hızı 3 km/s olunca 9,4 km/s için oran e^(9,4/3) ≈ 23 gerekir. Egzoz hızı biraz düştü, gereken yakıt üstel olarak arttı: gövdeye ve yüke kalkış kütlesinin %4,4'ü kalıyor."
       },
       {

@@ -1,0 +1,228 @@
+{
+ "rehber": {
+  "ne": "x. Yanıtladığı soru: x?",
+  "ekran": {
+   "cizim": [],
+   "kontroller": []
+  },
+  "gercek": "x. y.",
+  "gercekKaynaklar": [],
+  "dersler": [
+   "d24"
+  ],
+  "adimlar": [
+   {
+    "yap": "1",
+    "tikla": "#afOn button[data-i=\"0\"]",
+    "ayar": {
+     "#afGok": "kent"
+    },
+    "gozle": "?",
+    "neden": "?"
+   },
+   {
+    "yap": "2",
+    "tikla": "#afOn button[data-i=\"0\"]",
+    "ayar": {
+     "#afSure": 1.31876
+    },
+    "gozle": "?",
+    "neden": "?"
+   },
+   {
+    "yap": "3",
+    "tikla": "#afOn button[data-i=\"0\"]",
+    "ayar": {
+     "#afDek": 80
+    },
+    "gozle": "?",
+    "neden": "?"
+   },
+   {
+    "yap": "4",
+    "tikla": "#afOn button[data-i=\"1\"]",
+    "gozle": "?",
+    "neden": "?"
+   },
+   {
+    "yap": "5",
+    "tikla": "#afOn button[data-i=\"2\"]",
+    "gozle": "?",
+    "neden": "?"
+   },
+   {
+    "yap": "6",
+    "tikla": "#afOn button[data-i=\"0\"]",
+    "ayar": {
+     "#afKare": 1.20412,
+     "#afGok": "kent"
+    },
+    "gozle": "?",
+    "neden": "?"
+   },
+   {
+    "yap": "7",
+    "tikla": "#afOn button[data-i=\"3\"]",
+    "gozle": "?",
+    "neden": "?"
+   },
+   {
+    "yap": "8",
+    "tikla": "#afOn button[data-i=\"3\"]",
+    "ayar": {
+     "#afDek": 0
+    },
+    "gozle": "?",
+    "neden": "?"
+   }
+  ],
+  "kaynaklar": []
+ },
+ "veri": {
+  "yildizGunu": {
+   "saat": 23.9345,
+   "kaynak": "NASA NSSDC Earth Fact Sheet",
+   "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html"
+  },
+  "kameralar": [
+   {
+    "id": "telefon",
+    "ad": "Telefon 12 MP",
+    "en_mm": 34.616,
+    "en_px": 4000,
+    "boy_px": 3000,
+    "npf": false,
+    "not": "Dersin varsayımı: 24 mm eşdeğeri, 4000 × 3000 piksel. en_mm = 43,27 × 0,8 (4:3 karede eşdeğer sensör eni); piksel genişliği de eşdeğer: 34,616 / 4000 mm."
+   },
+   {
+    "id": "tamkare",
+    "ad": "Tam kare 24,5 MP",
+    "en_mm": 35.9,
+    "en_px": 6048,
+    "boy_px": 4032,
+    "npf": true,
+    "not": "Nikon Z6III: 35,9 × 23,9 mm sensör, 6048 × 4032 piksel (Large); piksel aralığı 35,9 / 6048 mm ≈ 5,94 µm."
+   }
+  ],
+  "diyaframlar": [
+   1.4,
+   1.8,
+   2,
+   2.8,
+   4
+  ],
+  "onayarlar": [
+   {
+    "ad": "Telefon ana kamera",
+    "kamera": "telefon",
+    "f": 24,
+    "N": 1.8,
+    "t": 16,
+    "dek": 0,
+    "kare": 1,
+    "izli": false,
+    "not": "16 sn: Google'ın gece modunda bir karenin üst sınırı. f/1.8 ve 24 mm: Galaxy S24 ana kamerası (GSMArena)."
+   },
+   {
+    "ad": "Aynasız 24 mm f/2.8",
+    "kamera": "tamkare",
+    "f": 24,
+    "N": 2.8,
+    "t": 20.8333,
+    "dek": 0,
+    "kare": 1,
+    "izli": false,
+    "not": "Süre 500 kuralından: 500 / 24 ≈ 20,8 sn."
+   },
+   {
+    "ad": "50 mm",
+    "kamera": "tamkare",
+    "f": 50,
+    "N": 1.8,
+    "t": 10,
+    "dek": 0,
+    "kare": 1,
+    "izli": false,
+    "not": "Süre 500 kuralından: 500 / 50 = 10 sn (PhotographyLife örneği)."
+   },
+   {
+    "ad": "Kutup Yıldızı çevresi",
+    "kamera": "telefon",
+    "f": 24,
+    "N": 1.8,
+    "t": 30,
+    "dek": 89.35,
+    "kare": 100,
+    "izli": true,
+    "gok": "kent",
+    "not": "RMG: 30 saniyelik 100 ya da daha fazla kare. Kutup Yıldızı'nın 2022'deki ortalama dik açıklığı 89,35° (Wikipedia: Pole star)."
+   }
+  ],
+  "gurultu": {
+   "yildiz": 400,
+   "gok": {
+    "karanlik": 400,
+    "kent": 3600
+   },
+   "not": "Dersin (d24, Görüntü yığınlama) uydurma örneği: yöntemi göstermek için seçilmiş foton sayıları."
+  },
+  "kaynaklar": [
+   {
+    "ad": "NASA NSSDC: Earth Fact Sheet (yıldız günü 23,9345 saat)",
+    "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html"
+   },
+   {
+    "ad": "Wikipedia: 35 mm equivalent focal length",
+    "url": "https://en.wikipedia.org/wiki/35_mm_equivalent_focal_length"
+   },
+   {
+    "ad": "GSMArena: Galaxy S24 incelemesi (ana kamera)",
+    "url": "https://m.gsmarena.com/samsung_galaxy_s24-review-2663p5.php"
+   },
+   {
+    "ad": "OPCUG: Cell Phone Photography 2026 (piksel birleştirme)",
+    "url": "https://opcug.ca/Photography/CellPhonePhotography2026.pdf"
+   },
+   {
+    "ad": "Nikon: Z6III teknik özellikleri",
+    "url": "https://imaging.nikon.com/imaging/lineup/mirrorless/z6_3/"
+   },
+   {
+    "ad": "PhotographyLife: 500 Rule vs NPF Rule",
+    "url": "https://photographylife.com/500-rule-vs-npf-rule"
+   },
+   {
+    "ad": "Light Stalking: NPF rule",
+    "url": "https://www.lightstalking.com/npf-rule/"
+   },
+   {
+    "ad": "PetaPixel: The NPF rule (2017)",
+    "url": "https://petapixel.com/2017/04/07/npf-rule-formula-sharp-star-photos-every-time"
+   },
+   {
+    "ad": "Google Research: Night Sight ile astrofotoğraf (2019)",
+    "url": "https://research.google/blog/astrophotography-with-night-sight-on-pixel-phones/"
+   },
+   {
+    "ad": "Wikipedia: Signal averaging (√N)",
+    "url": "https://en.wikipedia.org/wiki/Signal_averaging"
+   },
+   {
+    "ad": "Jerry Lodriguss: Signals and Noise",
+    "url": "https://astropix.com/books/BGDA/CHAPTER8/801.HTM"
+   },
+   {
+    "ad": "Royal Museums Greenwich: How to photograph star trails",
+    "url": "https://www.rmg.co.uk/how-photograph-star-trails"
+   },
+   {
+    "ad": "PhotographyTalk: Light pollution in astrophotography",
+    "url": "https://www.photographytalk.com/light-pollution-and-how-to-work-around-it-in-astrophotography/"
+   },
+   {
+    "ad": "Wikipedia: Pole star (Kutup Yıldızı 89,35°, 2022)",
+    "url": "https://en.wikipedia.org/wiki/Pole_star"
+   }
+  ]
+ }
+}

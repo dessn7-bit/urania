@@ -42,9 +42,9 @@
       <div class="cip-grup" id="erOn">${orn.map((x, i) => `<button type="button" class="dugme" data-i="${i}" aria-pressed="${i === 0}">${U.kacis(x.ad)}</button>`).join('')}</div>
       <div class="sahne"><canvas id="erKanvas"></canvas></div>
       <div class="kontroller">
-        ${o.kaydirici('erGuney', 'Güneydeki kentte öğle gölgesinin açısı (sopayla arası)', 0, 50, 0.01, 0)}
-        ${o.kaydirici('erKuzey', 'Kuzeydeki kentte öğle gölgesinin açısı (sopayla arası)', 0, 60, 0.01, 7.2)}
-        ${o.kaydirici('erUzak', 'İki kent arasındaki kuzey–güney uzaklığı', 50, 1500, 0.01, 800)}
+        ${o.kaydirici('erGuney', 'Güneydeki kentte öğle gölgesinin açısı (sopayla arası)', 0, 50, 'any', 0)}
+        ${o.kaydirici('erKuzey', 'Kuzeydeki kentte öğle gölgesinin açısı (sopayla arası)', 0, 60, 'any', 7.2)}
+        ${o.kaydirici('erUzak', 'İki kent arasındaki kuzey–güney uzaklığı', 50, 1500, 'any', 800)}
         <div class="alan"><label for="erStad">Stadion kaç metre? (antik uzunluk birimi; tarihçiler anlaşamıyor)</label>
           <select id="erStad">${stad.map((s, i) => `<option value="${s.m}"${i === ilkStad ? ' selected' : ''}>${U.kacis(s.ad)}</option>`).join('')}</select></div>
       </div>

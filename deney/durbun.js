@@ -53,11 +53,13 @@
       <div class="cip-grup" id="dbOn">${on.map((x, i) => `<button type="button" class="dugme" data-i="${i}">${U.kacis(x.ad)}</button>`).join('')}</div>
       <div class="sahne"><canvas id="dbKanvas"></canvas></div>
       <div class="kontroller">
-        <div class="cip-grup" id="dbHedef" role="group" aria-label="Hedef">${hedefler.map((x, i) => `<button type="button" class="dugme" data-i="${i}" aria-pressed="${i === 0}">${U.kacis(x.ad)}</button>`).join('')}</div>
+        <label class="alan" for="dbHedef">Hedef
+          <select id="dbHedef">${hedefler.map((x, i) => `<option value="${i}">${U.kacis(x.ad)} (${U.sayi(x.boyut_derece, 2)}°)</option>`).join('')}</select></label>
         ${o.kaydirici('dbD', 'Ağız çapı D (objektif ya da ayna)', lg(7), lg(300), 'any', lg(50))}
         ${o.kaydirici('dbM', 'Büyütme M', 0, lg(300), 'any', lg(7))}
         ${o.kaydirici('dbAfov', 'Göz merceğinin görünür alanı', 30, 100, 'any', 42.7)}
-        <div class="cip-grup" id="dbGok" role="group" aria-label="Gökyüzü">${gokler.map((g, i) => `<button type="button" class="dugme" data-g="${g.id}" aria-pressed="${i === 0}">${U.kacis(g.ad)} gök</button>`).join('')}</div>
+        <label class="alan" for="dbGok">Gökyüzü
+          <select id="dbGok">${gokler.map(g => `<option value="${g.id}">${U.kacis(g.ad)}: ${U.kacis(g.uzun)}, çıplak gözle ${U.sayi(g.aralik[0], 1)}–${U.sayi(g.aralik[1], 1)} kadir</option>`).join('')}</select></label>
         <label class="alan" for="dbGoz">Göz bebeğin karanlıkta (yaşa göre ortalama)
           <select id="dbGoz"><option value="${dRef}">${U.sayi(dRef, 1)} mm (derslerdeki varsayım)</option>${gozT.map(([y, mm]) => `<option value="${mm}">${y} yaş: ${U.sayi(mm, 1)} mm</option>`).join('')}</select></label>
       </div>
@@ -66,14 +68,15 @@
       <p class="kaynak">Varsayımlar: sınır kadir = çıplak gözün o gökteki sınırı (Bortle ölçeği, aralığın ortası) + 2,5 · log((etkin çap / 7 mm)²). Bu kaba bir tahmindir: büyütmenin gök zeminini karartması, cam kayıpları, iki gözle bakmak, havanın durgunluğu ve deneyim hesaba katılmadı; Bortle tablosundaki 32 cm'lik ayna bu modelden 0,4–0,9 kadir daha sönüğe iner. Gerçek alan ISO 14132-1 formülüyle; ayırma sınırı 550 nm'de Rayleigh ve Dawes, gözün ayırma gücü 1′. Yıldızlar: 6 kadire kadar uygulamanın kataloğu, daha sönükler Gaia DR3 (G kadiri renge göre V'ye çevrildi); kuzey yukarıda, doğu solda (teleskop görüntüyü ters çevirebilir). Kaynaklar: ${link(V.onayarKaynaklar.concat(V.gozBebegi.kaynaklar, V.gokKaynaklar, ay.kaynaklar, V.sinirKadir.kaynaklar, V.yildizKaynaklar))}</p>`;
     const cv = kap.querySelector('#dbKanvas');
     const S = id => kap.querySelector('#' + id);
-    const dS = S('dbD'), mS = S('dbM'), aS = S('dbAfov'), gozS = S('dbGoz');
-    let hedefI = 0, gokId = gokler[0].id, onI = null;
+    const dS = S('dbD'), mS = S('dbM'), aS = S('dbAfov'), gozS = S('dbGoz'), hedS = S('dbHedef'), gokS = S('dbGok');
+    let onI = null;
     /* yıldızlar: [ξ, η (0,1′ birim), V × 10] düz dizi → nesne */
     const yildiz = hedefler.map(h => { const ls = []; for (let i = 0; i < h.y.length; i += 3) ls.push({ x: h.y[i] / 600, y: h.y[i + 1] / 600, m: h.y[i + 2] / 10 }); return ls; });
     let st = {};
     function hesapla() {
       const D = Math.pow(10, Number(dS.value)), M = Math.pow(10, Number(mS.value)), afov = Number(aS.value), p = Number(gozS.value);
-      const gok = gokler.find(g => g.id === gokId), hd = hedefler[hedefI];
+      const hedefI = Number(hedS.value) || 0;
+      const gok = gokler.find(g => g.id === gokS.value) || gokler[0], hd = hedefler[hedefI];
       const tf = H.gercekAlan(afov, M);
       const cik = H.cikis(D, M), bos = H.bosa(D, M, p), dEt = H.etkinCap(D, M, p);
       const LM = H.sinirKadir(gok.nelm, D, M, p, dRef);
@@ -177,20 +180,8 @@
     }
     function elle() { if (onI != null) { onI = null; kap.querySelectorAll('#dbOn button').forEach(b => b.setAttribute('aria-pressed', 'false')); } hesapla(); }
     [dS, mS, aS].forEach(g => g.addEventListener('input', elle));
-    gozS.addEventListener('change', hesapla); gozS.addEventListener('input', hesapla);
     S('dbOn').addEventListener('click', e => { const b = e.target.closest('button'); if (b) onAyar(Number(b.dataset.i)); });
-    S('dbHedef').addEventListener('click', e => {
-      const b = e.target.closest('button'); if (!b) return;
-      hedefI = Number(b.dataset.i);
-      kap.querySelectorAll('#dbHedef button').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
-      hesapla();
-    });
-    S('dbGok').addEventListener('click', e => {
-      const b = e.target.closest('button'); if (!b) return;
-      gokId = b.dataset.g;
-      kap.querySelectorAll('#dbGok button').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
-      hesapla();
-    });
+    [gozS, hedS, gokS].forEach(g => { g.addEventListener('change', hesapla); g.addEventListener('input', hesapla); });
     window.addEventListener('resize', ciz); document.addEventListener('urania:tema', ciz);
     onAyar(1);
     return { durdur() { window.removeEventListener('resize', ciz); document.removeEventListener('urania:tema', ciz); } };

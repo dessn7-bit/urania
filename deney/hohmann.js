@@ -94,7 +94,7 @@
       const { g, tGun, fazAci, d, isk, A, leo, kurtul } = st;
       const ilerleme = 360 * tGun / g.donem_gun;
       const once = fazAci >= 0;
-      let p1 = `<p>Araç ${U.sayi(tGun, 0)} günde elipsin yarısını dolanır ve Güneş'in öbür yanına varır. Bu sürede ${g.ad} kendi yörüngesinde ${U.sayi(ilerleme, 1)}° ilerler. Araç vardığında ${g.ad}'${ekE(g.ad)} da orada olması için kalkış anında Dünya'dan ${U.sayi(Math.abs(fazAci), 1)}° ${once ? 'önde' : 'geride'} olmalıdır. Yani gezegenin şimdi olduğu yere değil, ${U.sayi(tGun, 0)} gün sonra olacağı yere nişan alırsın: uçan bir kuşa taş atan biri de kuşun önüne atar. Bu diziliş ancak ${U.sayi(st.sin, 0)} günde bir yinelenir (sinodik dönem); pencereyi kaçıran bekler.</p>`;
+      let p1 = `<p>Araç ${U.sayi(tGun, 0)} günde elipsin yarısını dolanır ve Güneş'in öbür yanına varır. Bu sürede ${g.ad} kendi yörüngesinde ${U.sayi(ilerleme, 1)}° ilerler. Araç vardığında ${g.ad}'${ekE(g.ad)} ${/[ıu]/.test(ekE(g.ad)) ? 'da' : 'de'} orada olması için kalkış anında Dünya'dan ${U.sayi(Math.abs(fazAci), 1)}° ${once ? 'önde' : 'geride'} olmalıdır. Yani gezegenin şimdi olduğu yere değil, ${U.sayi(tGun, 0)} gün sonra olacağı yere nişan alırsın: uçan bir kuşa taş atan biri de kuşun önüne atar. Bu diziliş ancak ${U.sayi(st.sin, 0)} günde bir yinelenir (sinodik dönem); pencereyi kaçıran bekler.</p>`;
       let p2;
       if (d === 0) p2 = `<p>Kalkış tam zamanında: araç ile ${g.ad} varış noktasında buluşuyor.</p>`;
       else {
@@ -159,7 +159,7 @@
       /* ıska çizgisi (varışta) */
       if (faz >= 1 && d !== 0) {
         const [kx, ky] = P(r2, Math.PI);
-        ctx.save(); ctx.setLineDash([4, 3]); ctx.strokeStyle = o.renk('--uyari'); ctx.lineWidth = 1.4;
+        ctx.save(); ctx.setLineDash([4, 3]); ctx.strokeStyle = o.renk('--parsomen'); ctx.lineWidth = 2;
         ctx.beginPath(); ctx.moveTo(kx, ky); ctx.lineTo(gx, gy); ctx.stroke(); ctx.restore();
       }
       ctx.beginPath(); ctx.arc(dx, dy, 5.5, 0, IKI_PI); ctx.fillStyle = o.renk('--hedef'); ctx.fill();
@@ -181,7 +181,7 @@
       /* gün sayacı */
       ctx.font = `600 ${fs + 1}px Plex, sans-serif`; ctx.textAlign = 'left'; ctx.fillStyle = o.renk('--parsomen');
       o.etiket(ctx, faz >= 1 ? 'Varış: ' + U.sayi(st.tGun, 0) + '. gün' : U.sayi(t, 0) + '. gün / ' + U.sayi(st.tGun, 0), 8, fs + 6);
-      if (faz >= 1 && d !== 0) { ctx.font = `500 ${fs}px Plex, sans-serif`; ctx.fillStyle = o.renk('--uyari'); o.etiket(ctx, 'ıska: ' + U.sayi(st.isk.uzaklik / 1e9, 0) + ' milyon km', 8, 2 * fs + 12); }
+      if (faz >= 1 && d !== 0) { ctx.font = `500 ${fs}px Plex, sans-serif`; ctx.fillStyle = o.renk('--uyari'); o.etiket(ctx, 'ıska: ' + U.sayi(st.isk.uzaklik / 1e9, 0) + ' milyon km', 8, h - 7); }
     }
     function yaz(e, m) { if (e && e.textContent !== m) e.textContent = m; }
 

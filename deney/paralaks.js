@@ -100,12 +100,12 @@
         const c = S('prZamanCikti'), m = U.sayi(faz * 12, 1) + ' ay';
         if (c && c.textContent !== m) c.textContent = m;
       }
-      const { ctx, w, h } = o.kanvas(cv, 0.78);
+      const { ctx, w, h } = o.kanvas(cv, 0.8);
       const kir = document.documentElement.classList.contains('kirmizi');
       ctx.clearRect(0, 0, w, h);
-      const hT = h * 0.6, cx = w / 2, yB = 24;
-      const rO = Math.min(w * 0.15, hT * 0.17), yS = hT - rO - 16;
-      const Dmin = rO * 1.7, Dmax = yS - yB - 26;
+      const hT = h * 0.66, cx = w / 2, yB = 24;
+      const rO = Math.min(w * 0.12, hT * 0.12), yS = hT - rO - 18;
+      const Dmin = rO * 1.4, Dmax = yS - yB - 22;
       const f = (Number(uS.value) - DMIN) / (DMAX - DMIN);
       const Dc = Dmin + (Dmax - Dmin) * Math.max(0, Math.min(1, f));
       const sx = cx, sy = yS - Dc;
@@ -128,16 +128,15 @@
       ctx.beginPath(); ctx.moveTo(cx, yS); ctx.lineTo(sx, sy); ctx.stroke();
       ctx.strokeStyle = o.renk('--pirinc'); ctx.beginPath(); ctx.moveTo(cx, yS); ctx.lineTo(ax, yS); ctx.stroke();
       ctx.beginPath(); ctx.arc(cx, yS, 7, 0, IKI_PI); ctx.fillStyle = '#FFD27A'; ctx.fill();
-      ctx.fillStyle = o.renk('--soluk'); ctx.font = '500 12px Plex, sans-serif'; ctx.textAlign = 'center';
-      o.etiket(ctx, 'Güneş', cx, yS + 22);
-      o.etiket(ctx, '1 AB', (cx + ax) / 2, yS - 6);
+      ctx.fillStyle = o.renk('--soluk'); ctx.font = '500 12px Plex, sans-serif'; ctx.textAlign = 'left';
+      o.etiket(ctx, 'Güneş', cx + 10, yS + 19);
+      ctx.textAlign = 'center';
+      o.etiket(ctx, '1 AB', (cx + ax) / 2 - 4, yS + 17);
       [[ax, 'A'], [bx, 'B']].forEach(([x0, ad]) => {
         ctx.beginPath(); ctx.arc(x0, yS, 4.5, 0, IKI_PI); ctx.strokeStyle = o.renk('--parsomen'); ctx.lineWidth = 1.3; ctx.stroke();
         ctx.fillStyle = o.renk('--parsomen'); ctx.font = '600 12px Plex, sans-serif'; ctx.textAlign = x0 < cx ? 'right' : 'left';
-        o.etiket(ctx, ad, x0 + (x0 < cx ? -9 : 9), yS + 4);
+        o.etiket(ctx, ad === 'B' ? 'B (6 ay sonra)' : ad, x0 + (x0 < cx ? -9 : 9), yS + 4);
       });
-      ctx.fillStyle = o.renk('--soluk'); ctx.font = '500 11px Plex, sans-serif'; ctx.textAlign = 'left';
-      o.etiket(ctx, 'B: 6 ay sonra', bx + 9, yS + 19);
       /* Dünya şu an ve bakış doğrusu */
       const ex = cx - rO * Math.cos(IKI_PI * faz), ey = yS + rO * Math.sin(IKI_PI * faz);
       const [lx, ly] = uzat(ex, ey);
@@ -146,11 +145,11 @@
       ctx.beginPath(); ctx.arc(ex, ey, 5, 0, IKI_PI); ctx.fillStyle = kir ? '#B03020' : '#6FA8DC'; ctx.fill();
       ctx.strokeStyle = o.renk('--parsomen'); ctx.lineWidth = 1; ctx.stroke();
       /* ıraklık açısı p: yıldızda, Güneş'e ve A'ya giden doğrular arasında */
-      const aSun = Math.PI / 2, aA = Math.atan2(yS - sy, ax - sx), rp = Math.min(28, Dc * 0.35);
-      ctx.beginPath(); ctx.moveTo(sx, sy); ctx.arc(sx, sy, rp, aA, aSun); ctx.closePath();
+      const aSun = Math.PI / 2, aA = Math.atan2(yS - sy, ax - sx), rp = Math.min(30, Dc * 0.7);
+      ctx.beginPath(); ctx.moveTo(sx, sy); ctx.arc(sx, sy, rp, aSun, aA); ctx.closePath();
       ctx.fillStyle = 'rgba(200,164,93,.38)'; ctx.fill(); ctx.strokeStyle = o.renk('--pirinc'); ctx.lineWidth = 1; ctx.stroke();
       ctx.fillStyle = o.renk('--pirinc'); ctx.font = 'italic 600 13px Plex, sans-serif'; ctx.textAlign = 'right';
-      o.etiket(ctx, 'p', sx - rp * 0.25 - 3, sy + rp + 12);
+      o.etiket(ctx, 'p', sx - rp * Math.cos(aA) * -1 - 4 - rp * 0.35, sy + rp * 0.85);
       /* yakın yıldız: halkalı */
       ctx.beginPath(); ctx.arc(sx, sy, 5, 0, IKI_PI); ctx.fillStyle = o.renk('--yildiz'); ctx.fill();
       ctx.beginPath(); ctx.arc(sx, sy, 9, 0, IKI_PI); ctx.strokeStyle = o.renk('--yildiz'); ctx.lineWidth = 1.2; ctx.stroke();

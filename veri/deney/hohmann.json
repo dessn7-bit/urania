@@ -10,8 +10,8 @@
         { "sekil": "daire", "renk": "--parsomen", "ad": "Küçük krem nokta", "ne": "Uzay aracı. Güneş'e yakınken hızlı, uzakken yavaş gider (Kepler'in ikinci yasası)." },
         { "sekil": "halka", "renk": "--uyari", "ad": "Turuncu halka", "ne": "Gezegenin, araç varış noktasına ulaştığı anda bulunacağı yer. Tam zamanında kalkışta varış noktasıyla üst üste biner." },
         { "sekil": "kesik", "renk": "--soluk", "ad": "Güneş'ten çıkan iki kesik çizgi ve açı", "ne": "Kalkış anında Dünya ile gezegen arasındaki açı (faz açısı). Yanındaki sayı kalkıştaki gerçek açı." },
-        { "sekil": "dikey-kesik", "renk": "--uyari", "ad": "Varışta kesik turuncu çizgi", "ne": "Kalkış geciktiyse ya da erken olduysa: araç vardığında gezegenle arasındaki boşluk." },
-        { "sekil": "yazi", "renk": "--soluk", "ad": "Sol üstteki gün sayacı", "ne": "Kalkıştan bu yana geçen gün ve yolculuğun toplam süresi." }
+        { "sekil": "kesik", "renk": "--parsomen", "ad": "Varışta kalın kesik krem çizgi", "ne": "Kalkış geç ya da erken olduysa: araç vardığında gezegenle arasındaki boşluk; uzaklık sol altta (ıska) ve ölçüm kutusunda." },
+        { "sekil": "yazi", "renk": "--soluk", "ad": "Sol üstteki gün sayacı", "ne": "Kalkıştan bu yana geçen gün ve yolculuğun toplam süresi; varışta “Varış”. Gezegen ıskalandıysa sol altta uzaklık yazar." }
       ],
       "kontroller": [
         { "sec": "#hmHedef", "tur": "dugme", "ad": "Hedef gezegen", "ne": "Venüs, Mars ya da Jüpiter. Yarı büyük eksenler ve dolanım süreleri NASA bilgi sayfalarından." },
