@@ -612,6 +612,8 @@
     const kullanilir = window.innerHeight - ustB - altB;
     const uygun = s.getBoundingClientRect().height <= kullanilir * 0.55;
     kap.style.setProperty('--yapis-ust', Math.round(ustB) + 'px');
+    kap.style.setProperty('--yapis-alt', Math.round(ustB + (uygun ? s.getBoundingClientRect().height : 0)) + 'px');
+    kap.style.setProperty('--alt-cubuk', Math.round(altB) + 'px');
     s.classList.toggle('yapiskan', uygun);
   }
 
@@ -621,7 +623,7 @@
     const bitti = U.diziOku('rehber_' + id);
     return `<section class="rehber" aria-labelledby="dnDeneBas">
       <h2 id="dnDeneBas">Neler dene</h2>
-      <p class="dn-ipucu">“Uygula” kontrolleri o adıma ayarlar; sonra “Ne görmelisin, neden?” kısmını aç.</p>
+      <p class="dn-ipucu">“Uygula” kontrolleri o adıma ayarlar ve “Ne görmelisin, neden?” kısmını açar; kendin de deneyebilirsin.</p>
       <ol class="rehber-adim">${r.adimlar.map((a, i) => `<li data-i="${i}"${bitti.indexOf(i) >= 0 ? ' class="yapildi"' : ''}>
         <p class="rh-yap"><b>Yap:</b> ${U.kacis(a.yap)}${a.ayar || a.tikla ? ` <button type="button" class="bag rh-uygula" data-i="${i}" aria-label="${i + 1}. adımı uygula">Uygula</button>` : ''}</p>
         <details class="rh-ac"${bitti.indexOf(i) >= 0 ? ' open' : ''}><summary>Ne görmelisin, neden?</summary>
@@ -644,8 +646,11 @@
     if (li) { li.classList.add('yapildi'); const d = li.querySelector('details'); if (d) d.open = true; }
     const bitti = U.diziOku('rehber_' + id);
     if (bitti.indexOf(i) < 0) { bitti.push(i); U.yaz('rehber_' + id, bitti); }
-    const sahne = kap.querySelector('.sahne');
-    if (sahne && !sahne.classList.contains('yapiskan') && sahne.scrollIntoView) sahne.scrollIntoView({ block: 'nearest', behavior: azHareket ? 'auto' : 'smooth' });
+    /* Kanvas yapışkansa sonuç zaten görünür: yalnız açılan "Gözle / Neden" metni ekranın altında kalmasın
+       (scroll-margin: üstte yapışkan kanvas, altta sekme çubuğu). Değilse kanvasa kaydırılır. */
+    const sahne = kap.querySelector('.sahne'), davran = azHareket ? 'auto' : 'smooth';
+    if (sahne && sahne.classList.contains('yapiskan')) { if (li && li.scrollIntoView) li.scrollIntoView({ block: 'nearest', behavior: davran }); }
+    else if (sahne && sahne.scrollIntoView) sahne.scrollIntoView({ block: 'nearest', behavior: davran });
   }
 
   let acilis = 0;

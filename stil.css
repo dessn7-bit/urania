@@ -302,6 +302,7 @@ html.kirmizi .sahne { background: #000; }
    en çok %55'ini kaplıyorsa). Altından kayan metin görünmesin diye zemin opak, alt kenarda gölge var. */
 .sahne.yapiskan { position: sticky; top: var(--yapis-ust, 56px); z-index: 6; box-shadow: 0 10px 14px -10px rgba(0, 0, 0, .75); }
 .dn-ek { margin-top: 4px; }
+.dn-ek .rehber-adim li { scroll-margin-top: calc(var(--yapis-alt, 56px) + 8px); scroll-margin-bottom: calc(var(--alt-cubuk, 0px) + 12px); }
 .kontrol label { display: flex; justify-content: space-between; gap: 12px; font-size: 14px; color: var(--soluk); }
 /* En az genişlik: değer kısalıp uzadıkça ("0°" → "90°") etiket bir ile iki satır arasında gidip gelmesin (kaydırıcı zıplıyordu) */
 .kontrol label output { color: var(--parsomen); font-weight: 600; white-space: nowrap; flex: none; min-width: 3em; text-align: right; }
