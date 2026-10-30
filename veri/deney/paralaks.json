@@ -1,0 +1,245 @@
+{
+  "rehber": {
+    "ne": "Dünya Güneş'in çevresinde dolanırken yakın bir yıldıza her mevsim biraz farklı bir yerden bakar; bu yüzden yakın yıldız çok uzaktaki yıldızların önünde yılda bir kez küçük bir gidip gelme yapar. Bu kaymanın yarısına ıraklık (paralaks) açısı denir ve yıldızın uzaklığını hiçbir varsayım gerektirmeden, yalnız geometriyle verir. Yanıtladığı soru: Yıldızların ne kadar uzakta olduğunu nasıl ölçeriz?",
+    "ekran": {
+      "cizim": [
+        {
+          "sekil": "daire",
+          "renk": "--yildiz",
+          "ad": "En üstteki küçük noktalar (“uzak yıldızlar”)",
+          "ne": "Çok uzaktaki arka plan yıldızları. O kadar uzaktırlar ki Dünya'nın yer değiştirmesiyle kıpırdamazlar; yakın yıldızın kaymasını bunlara göre ölçeriz."
+        },
+        {
+          "sekil": "daire",
+          "renk": "#FFD27A",
+          "ad": "Ortadaki sarı daire ve çevresindeki ince çember",
+          "ne": "Güneş ve Dünya'nın yörüngesi, yukarıdan bakışla. Güneş'ten sola giden pirinç çizgi yörüngenin yarıçapı: 1 AB."
+        },
+        {
+          "sekil": "halka",
+          "renk": "--parsomen",
+          "ad": "“A” ve “B” halkaları",
+          "ne": "Dünya'nın yörüngede altı ay arayla bulunduğu iki karşıt nokta: yıldıza en farklı iki doğrultudan buralardan bakılır."
+        },
+        {
+          "sekil": "kesik",
+          "renk": "--soluk",
+          "ad": "A'dan ve B'den çıkan kesik çizgiler",
+          "ne": "İki bakış doğrultusu. Yıldızdan geçip uzak yıldızlara uzanırlar; uzak yıldızların önünde farklı yerlere düşmeleri kaymanın kendisidir."
+        },
+        {
+          "sekil": "daire",
+          "renk": "#6FA8DC",
+          "ad": "Mavi nokta ve ondan çıkan pirinç çizgi",
+          "ne": "Dünya'nın şu anki yeri ve oradan yıldıza bakış doğrultusu. Yıl ilerledikçe çizgi uzak yıldızların önünde bir o yana bir bu yana kayar."
+        },
+        {
+          "sekil": "halka",
+          "renk": "--yildiz",
+          "ad": "Halkalı parlak nokta",
+          "ne": "Uzaklığını ölçtüğümüz yakın yıldız. Uzaklık kaydırıcısıyla yukarı aşağı gider; uzaklaştıkça bakış doğruları birbirine yaklaşır."
+        },
+        {
+          "sekil": "alan",
+          "renk": "rgba(200,164,93,.38)",
+          "ad": "Yıldızın altındaki pirinç kama ve “p”",
+          "ne": "Iraklık açısı: yıldızdan bakınca Güneş ile A arasındaki 1 AB'lik uzaklığın göründüğü açı. Altı ayda gökteki toplam kayma bunun iki katı."
+        },
+        {
+          "sekil": "kesik",
+          "renk": "--soluk",
+          "ad": "Alt bölüm (“Gökte görünüş”)",
+          "ne": "Aynı yılın Dünya'dan görünüşü: halkalı yıldız arka plan yıldızlarının önünde kesik çizgi boyunca gidip gelir. Uçlardaki küçük dik çizgiler A'dan ve B'den bakınca gördüğün yerler. Sağ alttaki yazı iki uç arasındaki gerçek açıyı (2p) verir."
+        },
+        {
+          "sekil": "yazi",
+          "renk": "--soluk",
+          "ad": "Sol ortadaki “Ölçekli değil” yazısı",
+          "ne": "Çizimdeki açının gerçek açıdan kaç kat büyük çizildiği. Gerçek açılar o kadar küçüktür ki ölçekli bir çizimde iki bakış doğrusu üst üste binerdi."
+        }
+      ],
+      "kontroller": [
+        {
+          "sec": "#prOn",
+          "tur": "dugme",
+          "ad": "Örnek yıldızlar",
+          "ne": "Proxima Centauri (en yakın yıldız), 61 Cygni (ıraklığı ilk ölçülen yıldız), Sirius, Vega ve Gaia'nın ölçebildiği sınıra yakın uzak bir yıldız: uzaklık kaydırıcısını o yıldızın ölçülmüş ıraklığına ayarlar."
+        },
+        {
+          "sec": "#prUzak",
+          "tur": "kaydirici",
+          "ad": "Yıldızın uzaklığı",
+          "ne": "1 parsekten yaklaşık 31.600 parseğe kadar, logaritmik: kaydırıcının her eşit adımı uzaklığı aynı oranda büyütür. Yanında parsek cinsinden değer yazar; ışık yılı ölçüm kutusunda."
+        },
+        {
+          "sec": "#prZaman",
+          "tur": "kaydirici",
+          "azHareket": true,
+          "ad": "Yılın zamanı",
+          "ne": "Hareket azaltıldığı için Dünya'yı yörüngede bu kaydırıcıyla sen ilerletirsin: 0, Dünya A'dayken; yarısı (6 ay) B'deyken."
+        }
+      ],
+      "hareket": "Dünya yörüngeyi ekranda 12 saniyede bir dolanır; alt bölümde yıldız aynı sürede bir kez gidip gelir."
+    },
+    "gercek": "İnsanlığın uzaklığını ilk ölçtüğü yıldızlardan 61 Cygni, Kuğu takımyıldızında 5,2 ve 6,1 kadirlik bir çift: İstanbul'da 7×50 dürbününle bulabilirsin, ama kaymasını göremezsin. Gözün yaklaşık 1 yay dakikası (60″) ayırır; dürbünün 7 kat büyütmesiyle bu gökte yaklaşık 8,6 yay saniyesi eder, 61 Cygni'nin ıraklığı ise yalnız 0,29 yay saniyesi. Üstelik kent göğünde havanın titreşimi yıldız görüntüsünü 1 yay saniyesinden fazla bulandırır; bu kayma ancak teleskop, kamera ve aylarca süren dikkatli ölçümle ya da uzaydan ölçülür. En yakın yıldız Proxima Centauri ise güney göğünde olduğu için yalnız yaklaşık 27° kuzey enleminin güneyinden görülür; İstanbul'dan hiç doğmaz.",
+    "gercekKaynaklar": [
+      { "ad": "Wikipedia: 61 Cygni", "url": "https://en.wikipedia.org/wiki/61_Cygni" },
+      { "ad": "Wikipedia: Naked eye (gözün ayırma gücü)", "url": "https://en.wikipedia.org/wiki/Naked_eye" },
+      { "ad": "Wikipedia: Astronomical seeing", "url": "https://en.wikipedia.org/wiki/Astronomical_seeing" },
+      { "ad": "Wikipedia: Proxima Centauri", "url": "https://en.wikipedia.org/wiki/Proxima_Centauri" }
+    ],
+    "dersler": ["d17", "d5", "d11", "d12"],
+    "adimlar": [
+      {
+        "yap": "“Proxima Centauri” düğmesine bas.",
+        "tikla": "#prOn button[data-i=\"0\"]",
+        "gozle": "Iraklık 0,7681 yay saniyesi (768,1 mas); uzaklık 1,302 parsek, 4,25 ışık yılı, 268.551 AB. Bu açı, 1 liranın 7,0 km öteden göründüğü açı kadar.",
+        "neden": "En yakın yıldızın bile ıraklığı 1 yay saniyesinin altında: 1 yay saniyesi bir derecenin 3600'de biri. d = 1 / p = 1 / 0,7681 ≈ 1,302 parsek. Yıldızlar Güneş Sistemi'nin ölçülerine göre akıl almaz uzaktadır."
+      },
+      {
+        "yap": "Uzaklığı tam 1 parseğe getir (kaydırıcıyı en sola çek).",
+        "ayar": { "#prUzak": 0 },
+        "gozle": "Iraklık 1,0000 yay saniyesi; 3,26 ışık yılı, 206.265 AB.",
+        "neden": "Parsek tam bu demek: ıraklığı 1 yay saniyesi olan yıldızın uzaklığı (adı da “paralaks” ve “saniye”den gelir). 1 AB'lik bir uzunluğun 1 yay saniyesi açıyla göründüğü uzaklık 648.000/π ≈ 206.265 AB'dir. Bu kadar yakında bilinen bir yıldız yok."
+      },
+      {
+        "yap": "“61 Cygni” düğmesine bas.",
+        "tikla": "#prOn button[data-i=\"1\"]",
+        "gozle": "Iraklık 0,2860 yay saniyesi (286,0 mas); 3,497 parsek, 11,40 ışık yılı. 1 lira 19 km öteden.",
+        "neden": "Bu, Gaia'nın 61 Cygni A için ölçtüğü değer. Giuseppe Piazzi bu yıldızın gökte yıllar içinde hızla yer değiştirdiğini (büyük öz hareketini) göstermişti; hızlı hareket yıldızın yakın olabileceğine işaret ediyordu."
+      },
+      {
+        "yap": "Uzaklığı Bessel'in 1838'de bulduğu değere getir (0,3136 yay saniyesi).",
+        "ayar": { "#prUzak": 0.503624 },
+        "gozle": "Iraklık 0,3136 yay saniyesi (313,6 mas); 3,189 parsek, 10,40 ışık yılı.",
+        "neden": "Friedrich Bessel, Fraunhofer'in yaptığı bir heliometreyle 1837–1838'de ölçüp 1838'de 313,6 ± 13,6 mas yayımladı. Bugünkü değerle fark yaklaşık %10: ilk ölçüm için çok iyi bir sonuç."
+      },
+      {
+        "yap": "Uzaklığı 100 parseğe çıkar.",
+        "ayar": { "#prUzak": 2 },
+        "gozle": "Iraklık 10,00 miliyay saniyesi (mas), yani 0,01 yay saniyesi; “Kim ölçebilir?” kutusunda “Yerden de ölçülür”. 1 lira 539 km öteden.",
+        "neden": "ESA ve Las Cumbres Gözlemevi'ne göre yerden 0,01 yay saniyesinden küçük ıraklıkları doğru ölçmek çok zordur; yerdeki teleskoplar bu yüzden ancak yaklaşık 100 parseğe kadar uzanır. Biraz daha uzağa git: kutu “Yalnız uzaydan” der."
+      },
+      {
+        "yap": "“Gaia sınırı” düğmesine bas.",
+        "tikla": "#prOn button[data-i=\"4\"]",
+        "gozle": "Iraklık 0,100 miliyay saniyesi; 10.000 parsek, 32.616 ışık yılı. 1 lira 53.938 km öteden. “Gaia bile zorlanır (hata %20–30)”.",
+        "neden": "Gaia'nın en iyi ölçtüğü parlak yıldızlarda (G < 15 kadir) ıraklık hatası 0,02–0,03 mas. 0,1 mas'lık bir açıda bu, açının beşte biri ile üçte biri arasında bir belirsizlik demektir. Sönük yıldızlarda hata daha büyük: G = 17'de 0,07 mas."
+      },
+      {
+        "yap": "“Vega” düğmesine bas ve alt bölümde yıldızın gidip gelmesini izle.",
+        "tikla": "#prOn button[data-i=\"3\"]",
+        "gozle": "Iraklık 0,1302 yay saniyesi (130,2 mas); 7,679 parsek, 25,04 ışık yılı. Yıldız Proxima'dakinden daha dar bir çizgide gidip geliyor.",
+        "neden": "Uzaklık 6 kat artınca açı 6 kat küçülür. Vega'nın ıraklığını 1837'de Friedrich von Struve de ölçmeye çalışmıştı; bugünkü değer Hipparcos uydusunun yeniden indirgenmiş verisinden (van Leeuwen 2007)."
+      }
+    ],
+    "kaynaklar": [
+      { "ad": "Wikipedia: Proxima Centauri", "url": "https://en.wikipedia.org/wiki/Proxima_Centauri" },
+      { "ad": "Wikipedia: 61 Cygni", "url": "https://en.wikipedia.org/wiki/61_Cygni" },
+      { "ad": "Wikipedia: Stellar parallax", "url": "https://en.wikipedia.org/wiki/Stellar_parallax" },
+      { "ad": "ESA: Stellar distances", "url": "https://sci.esa.int/web/education/-/35616-stellar-distances" },
+      { "ad": "Las Cumbres Observatory: Parallax and distance measurement", "url": "https://lco.global/spacebook/parallax-and-distance-measurement" },
+      { "ad": "Gaia Collaboration (2021), Gaia EDR3 özeti, A&A 649, A1, Tablo 3", "url": "https://www.aanda.org/articles/aa/full_html/2021/05/aa39657-20/T3.html" },
+      { "ad": "Reid & Menten, The First Stellar Parallaxes Revisited (arXiv:2009.11913)", "url": "https://arxiv.org/abs/2009.11913" }
+    ]
+  },
+  "veri": {
+    "ornekler": [
+      {
+        "ad": "Proxima Centauri",
+        "kisa": "Proxima",
+        "iraklik_mas": 768.0665,
+        "hata_mas": 0.0499,
+        "olcum": "Gaia DR3",
+        "not": "Proxima Centauri en yakın yıldız: Gaia DR3'e göre ıraklığı 768,07 ± 0,05 mas. Görünür parlaklığı 10,4–11,1 kadir, yani çıplak gözle görülmeyecek kadar sönük; güney göğünde olduğu için yalnız yaklaşık 27° kuzey enleminin güneyinden görülür, İstanbul'dan görünmez.",
+        "kaynaklar": [
+          { "ad": "Wikipedia: Proxima Centauri (Gaia DR3)", "url": "https://en.wikipedia.org/wiki/Proxima_Centauri" },
+          { "ad": "Wikipedia: Stellar parallax (0,7685 ± 0,0002″)", "url": "https://en.wikipedia.org/wiki/Stellar_parallax" }
+        ]
+      },
+      {
+        "ad": "61 Cygni",
+        "kisa": "61 Cygni",
+        "iraklik_mas": 285.9949,
+        "hata_mas": 0.0599,
+        "olcum": "61 Cygni A, Wikipedia bilgi kutusu (Gaia değeri)",
+        "bessel_1838_mas": 313.6,
+        "bessel_1838_hata_mas": 13.6,
+        "not": "Iraklığı ilk ölçülen yıldızlardan: Friedrich Bessel 1837–1838 gözlemleriyle 1838'de 313,6 ± 13,6 mas (yaklaşık 10,4 ışık yılı) buldu. Bugün 61 Cygni A için 285,99 mas veriliyor; kaynaklarda 287,18 mas da geçer (kaynaklar biraz farklı değerler veriyor). Kuğu takımyıldızında 5,2 ve 6,1 kadirlik bir çift.",
+        "kaynaklar": [
+          { "ad": "Wikipedia: 61 Cygni", "url": "https://en.wikipedia.org/wiki/61_Cygni" },
+          { "ad": "Reid & Menten, The First Stellar Parallaxes Revisited (arXiv:2009.11913)", "url": "https://arxiv.org/abs/2009.11913" }
+        ]
+      },
+      {
+        "ad": "Sirius",
+        "kisa": "Sirius",
+        "iraklik_mas": 378.9,
+        "hata_mas": 1.4,
+        "olcum": "Wikipedia bilgi kutusu",
+        "not": "Sirius gece göğünün en parlak yıldızı (−1,46 kadir): ıraklığı 378,9 ± 1,4 mas, yani 2,64 parsek, 8,6 ışık yılı. Hipparcos verisi (van Leeuwen 2007) de 2,64 ± 0,01 parsek verir. Bu kadar parlak görünmesinin bir nedeni bu yakınlık.",
+        "kaynaklar": [
+          { "ad": "Wikipedia: Sirius", "url": "https://en.wikipedia.org/wiki/Sirius" },
+          { "ad": "arXiv:2411.03267, Sirius ikilisi (2,64 ± 0,01 pc, van Leeuwen 2007)", "url": "https://arxiv.org/html/2411.03267v1" }
+        ]
+      },
+      {
+        "ad": "Vega",
+        "kisa": "Vega",
+        "iraklik_mas": 130.23,
+        "hata_mas": 0.36,
+        "olcum": "Hipparcos, van Leeuwen 2007",
+        "not": "Vega'nın ıraklığı 130,23 ± 0,36 mas (Hipparcos verisinin yeniden indirgenmesi, van Leeuwen 2007): 7,68 parsek, 25 ışık yılı. Friedrich von Struve 1837'de Vega için 0,125 ± 0,055 yay saniyesi önermişti; 1840'ta bunu 0,261 ± 0,025 yay saniyesine büyüttü; bugünkü değer ilk tahminine çok daha yakın.",
+        "kaynaklar": [
+          { "ad": "Wikipedia: Vega", "url": "https://en.wikipedia.org/wiki/Vega" },
+          { "ad": "Reid & Menten, The First Stellar Parallaxes Revisited (arXiv:2009.11913)", "url": "https://arxiv.org/abs/2009.11913" }
+        ]
+      },
+      {
+        "ad": "Gaia sınırı (0,1 mas)",
+        "kisa": "uzak yıldız",
+        "iraklik_mas": 0.1,
+        "olcum": "örnek değer",
+        "not": "Bu bir örnek yıldız: 0,1 mas'lık ıraklık 10.000 parsek, yani yaklaşık 32.600 ışık yılı demek. Gaia'nın parlak yıldızlarda (G < 15) ıraklık hatası 0,02–0,03 mas, G = 17'de 0,07 mas, G = 20'de 0,5 mas; bu uzaklıkta ölçüm ancak kabaca bir tahmindir.",
+        "kaynaklar": [
+          { "ad": "Gaia Collaboration (2021), Gaia EDR3 özeti, A&A 649, A1, Tablo 3", "url": "https://www.aanda.org/articles/aa/full_html/2021/05/aa39657-20/T3.html" }
+        ]
+      }
+    ],
+    "madeni_para": {
+      "ad": "1 Türk lirası (2009'dan beri)",
+      "cap_mm": 26.15,
+      "kaynaklar": [
+        { "ad": "Wikipedia: Coins of Turkey (1 lira, 26,15 mm)", "url": "https://en.wikipedia.org/wiki/Coins_of_Turkey" },
+        { "ad": "Numista: Türkiye 1 lira 2009–2022 (26,15 mm)", "url": "https://en.numista.com/6163" }
+      ]
+    },
+    "gaia": {
+      "sigma_mas_alt": 0.02,
+      "sigma_mas_ust": 0.03,
+      "not": "Gaia EDR3/DR3 (aynı astrometri), 5 parametreli çözüm: G < 15 için 0,02–0,03 mas; G = 17: 0,07; G = 20: 0,5; G = 21: 1,3 mas.",
+      "kaynaklar": [
+        { "ad": "Gaia Collaboration (2021), Gaia EDR3 özeti, A&A 649, A1, Tablo 3", "url": "https://www.aanda.org/articles/aa/full_html/2021/05/aa39657-20/T3.html" }
+      ]
+    },
+    "yer_siniri": {
+      "p_ys": 0.01,
+      "not": "Yerden 0,01 yay saniyesinden küçük ıraklıkları doğru ölçmek çok zor: yaklaşık 100 parsek.",
+      "kaynaklar": [
+        { "ad": "ESA: Stellar distances", "url": "https://sci.esa.int/web/education/-/35616-stellar-distances" },
+        { "ad": "Las Cumbres Observatory: Parallax and distance measurement", "url": "https://lco.global/spacebook/parallax-and-distance-measurement" }
+      ]
+    },
+    "durbun": {
+      "ys": 8.6,
+      "not": "Gözün ayırma gücü yaklaşık 1′ = 60″; 7 kat büyütmeyle gökte 60 / 7 ≈ 8,6″ (d12 dersindeki hesap).",
+      "kaynaklar": [
+        { "ad": "Wikipedia: Naked eye (≈ 1′)", "url": "https://en.wikipedia.org/wiki/Naked_eye" },
+        { "ad": "Wikipedia: Astronomical seeing", "url": "https://en.wikipedia.org/wiki/Astronomical_seeing" }
+      ]
+    },
+    "kaynaklar": [
+      { "ad": "Wikipedia: Stellar parallax", "url": "https://en.wikipedia.org/wiki/Stellar_parallax" }
+    ]
+  }
+}

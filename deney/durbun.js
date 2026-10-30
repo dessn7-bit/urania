@@ -127,7 +127,7 @@
       const R = Math.min(h * 0.45, w * 0.31), cx = R + 10, cy = h / 2;
       const olc = R / (s.pen / 2);          // piksel / derece
       ctx.save();
-      ctx.beginPath(); ctx.arc(cx, cy, R, 0, IKI_PI); ctx.fillStyle = kir ? '#000' : s.gok.zemin; ctx.fill(); ctx.clip();
+      ctx.beginPath(); ctx.arc(cx, cy, R, 0, IKI_PI); ctx.fillStyle = s.gok.zemin; ctx.fill(); ctx.clip();
       /* hedefin boyu: kesik halka */
       const hd = s.hd, hx = cx - hd.merkez[0] * olc, hy = cy - hd.merkez[1] * olc, hr = hd.boyut_derece / 2 * olc;
       ctx.save(); ctx.setLineDash([4, 5]); ctx.strokeStyle = o.renk('--hedef'); ctx.lineWidth = 1.2;
