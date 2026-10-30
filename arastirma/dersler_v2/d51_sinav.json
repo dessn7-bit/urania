@@ -1,0 +1,58 @@
+[
+  {
+    "id": "d51-1",
+    "soru": "Bir bileşenin genişlemeyi hızlandırabilmesi için durum denklemi parametresi w hangi koşulu sağlamalıdır?",
+    "secenekler": [
+      "w = 0 olmalı, sıradan madde gibi",
+      "w = 1/3 olmalı, ışınım gibi",
+      "w < −1/3 olmalı",
+      "w > 1 olmalı"
+    ],
+    "dogru": 2,
+    "aciklama": "Frieman'ın notlarına göre ivme denkleminde her bileşen ρ + 3p kadar etki eder; w < −1/3 olan bir bileşen baskın olunca bu toplam eksiye döner ve genişleme hızlanır. Kozmolojik sabit için w = −1'dir.",
+    "ders": "d51",
+    "bolum": 4
+  },
+  {
+    "id": "d51-2",
+    "soru": "Einstein'ın kozmolojik sabiti “en büyük hatası” diye andığı anekdotu hakkında derste anlatılan son durum hangisidir?",
+    "secenekler": [
+      "Einstein bunu 1917 makalesinde kendi eliyle yazmıştır",
+      "Anekdotun tek kaynağı Gamow'dur ve kesin olarak uydurmadır",
+      "Livio 2013'te kuşkuyla baktı; O'Raifeartaigh ve Mitton 2018'de Wheeler ve Alpher'in tanıklıklarıyla büyük olasılıkla doğru olduğunu savundu",
+      "Einstein sabiti hiçbir zaman bırakmadı"
+    ],
+    "dogru": 2,
+    "aciklama": "Anekdotu Gamow 1956 ve 1970'te aktardı; Livio 2013'te Einstein'ın büyük olasılıkla söylemediğini düşündü. O'Raifeartaigh ve Mitton, Wheeler ve Alpher'in de benzer sözü aktardığını göstererek büyük olasılıkla doğru olduğunu savundu; yine de Einstein'ın kaleminden bir belge yok.",
+    "ders": "d51",
+    "bolum": 3
+  },
+  {
+    "id": "d51-3",
+    "soru": "Sık anılan “10¹²⁰ sorunu” sayısı hakkında hangisi doğrudur?",
+    "secenekler": [
+      "Kesin olarak ölçülmüş bir değerdir, tartışması yoktur",
+      "Planck ölçeğinde kesilen kaba bir tahminden gelir; Lorentz değişmezliğini koruyan hesaplar farkı yaklaşık 55–56 basamağa indirir, ama sorun yine de kalır",
+      "Casimir deneyi bu farkı ortadan kaldırmıştır",
+      "Fark yalnızca 2 kattır, yuvarlama hatasıdır"
+    ],
+    "dogru": 1,
+    "aciklama": "Planck kesmesiyle boşluk enerjisi ölçülen karanlık enerjiden yaklaşık 10¹²⁰–10¹²³ kat büyük çıkar. Bu kesme Lorentz değişmezliğini bozar; Martin 2012 gibi düzgün hesaplar farkı yaklaşık 55 basamağa indirir. 10⁵⁵ kat da dev bir uyuşmazlıktır ve çözümü bilinmiyor.",
+    "ders": "d51",
+    "bolum": 7
+  },
+  {
+    "id": "d51-4",
+    "soru": "DESI'nin zamanla değişen karanlık enerji işareti için derste hangi kesinlik etiketi kullanılıyor ve neden?",
+    "secenekler": [
+      "Gözlemle kesinleşmiş, çünkü 5 sigmayı geçti",
+      "Askıda bir ön sonuç, çünkü 2,8–4,2 sigma arasında kaldı ve süpernova sistematikleri tartışılıyor",
+      "Spekülasyon, çünkü hiç veri yok",
+      "Çürütüldü, çünkü Unite çalışması tersini buldu"
+    ],
+    "dogru": 1,
+    "aciklama": "DESI DR2 süpernovalarla birlikte 2,8–4,2 sigma, arka plan ışımasıyla 3,1 sigma veriyor; keşif eşiği olan 5 sigmaya ulaşılmadı. Efstathiou'nun 0,04 kadirlik kayma itirazı gibi sistematik tartışmalar sürüyor. Unite ön baskısı da aynı yönü 3,1–3,3 sigma ile gösteriyor; bu yüzden işaret askıda.",
+    "ders": "d51",
+    "bolum": 11
+  }
+]
