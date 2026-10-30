@@ -55,7 +55,7 @@ test('Veri: her haber eksiksiz, kaynaklı (en az iki https kaynak), tarihli; kim
 const SAHTE = {
   guncelleme: '2026-10-30',
   haberler: [
-    { id: '2026-10-20-ornek-kesif', tarih: '2026-10-20', eklenme: '2026-10-30', tur: 'haber', baslik: 'Örnek keşif başlığı', ozet: ['Birinci paragraf: Güneş ve galaksi sözcükleri geçer.', 'İkinci paragraf yalnız açılınca görünür.'], neden_onemli: 'Çünkü örnek.', istanbul: 'Dürbünle bakılabilir.', ilgili_dersler: ['d4'], kaynaklar: [{ ad: 'Kaynak A', url: 'https://example.org/a', tarih: '2026-10-20' }, { ad: 'Kaynak B', url: 'https://example.org/b' }] },
+    { id: '2026-10-20-ornek-kesif', tarih: '2026-10-20', eklenme: '2026-10-30', tur: 'haber', baslik: 'Örnek keşif başlığı', ozet: ['Birinci paragraf: Güneş ve galaksi sözcükleri geçer.', 'İkinci paragraf yalnız açılınca görünür.'], neden_onemli: 'Çünkü örnek.', istanbul: 'Dürbünle bakılabilir.', gorsel: { dosya: 'img/haber/2026-10-20-ornek-kesif.jpg', alt: 'Örnek görsel', aciklama: 'Gözlem verisinden işlenmiş görüntü.', kredi: 'ESO', lisans: 'CC BY 4.0', kaynak_url: 'https://www.eso.org/public/images/' }, ilgili_dersler: ['d4'], kaynaklar: [{ ad: 'Kaynak A', url: 'https://example.org/a', tarih: '2026-10-20' }, { ad: 'Kaynak B', url: 'https://example.org/b' }] },
     { id: '2026-09-15-ornek-makale', tarih: '2026-09-15', eklenme: '2026-10-23', tur: 'arastirma', kesinlik: 'ön sonuç', baslik: 'Örnek makale başlığı', ozet: ['Makale paragrafı.', 'Devamı.'], neden_onemli: 'Ölçüm.', makale: { baslik: 'A paper', yazarlar: 'Soyad vd.', dergi: 'arXiv ön baskı', url: 'https://arxiv.org/abs/0000.00000' }, ilgili_dersler: [], kaynaklar: [{ ad: 'arXiv', url: 'https://arxiv.org/abs/0000.00000' }, { ad: 'Haber', url: 'https://example.org/c' }] },
     { id: '2026-10-25-ornek-gorev', tarih: '2026-10-25', eklenme: '2026-10-30', tur: 'gorev', baslik: 'Örnek görev', ozet: ['Görev paragrafı.'], neden_onemli: 'Görev.', kaynaklar: [{ ad: 'A', url: 'https://example.org/d' }, { ad: 'B', url: 'https://example.org/e' }] }
   ]
@@ -65,6 +65,8 @@ async function kur(page, ls) {
   page.on('pageerror', e => page.hatalar.push(String(e)));
   await disAgiKes(page);
   await page.route('**/veri/haberler.json', r => r.fulfill({ json: SAHTE }));
+  /* 1×1 JPEG: görsel testleri için (içerikten bağımsız) */
+  await page.route('**/img/haber/*.jpg', r => r.fulfill({ contentType: 'image/jpeg', body: Buffer.from('/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/wAALCAABAAEBAREA/8QAFAABAAAAAAAAAAAAAAAAAAAACf/EABQQAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQEAAD8AKp//2Q==', 'base64') }));
   await page.addInitScript(e => { localStorage.setItem('urania_konumOto', 'false'); Object.entries(e || {}).forEach(([a, v]) => localStorage.setItem('urania_' + a, v)); }, ls || {});
 }
 test.afterEach(async ({ page }) => { expect(page.hatalar || []).toEqual([]); });
@@ -93,6 +95,14 @@ test('Liste: en yeni üstte, aylara göre gruplu; tür süzgeci; ön sonuç roze
   await expect(a.getByText('İkinci paragraf')).toBeVisible();
   await expect(a.locator('summary')).toHaveText('Kapat');
   await expect(a.locator('.hb-istanbul')).toContainText("İstanbul'dan");
+  /* görsel: başlığın altında, yerel dosya, alt metni, açıklaması ve kredisi/lisansı var; öteki haberlerde görsel yok */
+  const g = a.locator('figure.hb-gorsel');
+  await expect(g.locator('img')).toHaveAttribute('src', './img/haber/2026-10-20-ornek-kesif.jpg');
+  await expect(g.locator('img')).toHaveAttribute('alt', 'Örnek görsel');
+  await expect(g.locator('figcaption')).toContainText('Gözlem verisinden');
+  await expect(g.locator('.hb-kredi a')).toHaveText('ESO');
+  await expect(g.locator('.hb-kredi')).toContainText('CC BY 4.0');
+  await expect(page.locator('figure.hb-gorsel')).toHaveCount(1);
   await expect(a.locator('.kaynak a')).toHaveCount(2);
   await expect(a.locator('.hb-ders a')).toHaveAttribute('href', '#ders/d4');
   await expect(a.locator('.hb-ses')).not.toBeEmpty();
