@@ -1,0 +1,58 @@
+[
+  {
+    "id": "d48-1",
+    "soru": "Antonucci ve Miller 1985'te tip 2 Seyfert NGC 1068'in (M77) yalnızca kutuplanmış ışığına baktı. Ne buldular ve bu neyi gösterdi?",
+    "secenekler": [
+      "Hiç tayf çizgisi bulmadılar; galaksinin aktif çekirdeği yoktu",
+      "Kutuplanmış ışıkta sıradan bir tip 1 tayfı (geniş çizgiler) gördüler; geniş çizgi bölgesi tozlu bir simidin arkasında gizliydi ve elektronlar ışığı ayna gibi saçıyordu",
+      "Galaksinin bize yaklaştığını gösteren maviye kayma buldular",
+      "Jetin ışıktan hızlı hareket ettiğini buldular"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre opak, tozlu simit merkezi doğrudan görmemizi engelliyor, simidin üstündeki elektronlardan saçılan ve bu yüzden kutuplanan ışık ise bize gizli tip 1 tayfını taşıyordu. Bu, tür farkının büyük ölçüde bakış açısından geldiğini söyleyen birleşik modelin temel kanıtıdır.",
+    "ders": "d48",
+    "bolum": 6
+  },
+  {
+    "id": "d48-2",
+    "soru": "Bir kuasarın parlaklığı yaklaşık 3 günde belirgin biçimde değişiyor. Bu, ışığı yayan bölge hakkında ne söyler?",
+    "secenekler": [
+      "Bölge en fazla yaklaşık 3 ışık günü (≈ 520 AB) büyüklüğünde olabilir",
+      "Bölge en az 3 ışık yılı büyüklüğünde olmalıdır",
+      "Değişim süresinin boyutla ilgisi yoktur",
+      "Bölge tam olarak galaksinin boyundadır"
+    ],
+    "dogru": 0,
+    "aciklama": "Bölgenin uzak kenarından gelen ışık, bölgenin boyunu ışığın geçme süresi kadar geç gelir; bu yüzden t sürede değişen bir kaynak c × t'den büyük olamaz. 3 ışık günü ≈ 7,8 × 10¹⁰ km ≈ 520 AB, 3C 273'ün olay ufkunun yaklaşık 30 katı.",
+    "ders": "d48",
+    "bolum": 4
+  },
+  {
+    "id": "d48-3",
+    "soru": "Bazı kuasar jetlerinde madde düğümlerinin gökte ışıktan birkaç kat hızlı ilerlediği ölçülür. Bunun açıklaması nedir?",
+    "secenekler": [
+      "Jetlerde madde gerçekten ışıktan hızlı gider",
+      "Radyo teleskopların saatleri yanlış ayarlıdır",
+      "Düğüm ışığa yakın hızla neredeyse bize doğru geldiği için sonraki ışıkları daha kısa yol alır; iki görüntü gerçek süreden çok kısa arayla gelir ve yan kayma bu kısa süreye bölününce ışıktan hızlı görünür",
+      "Kütleçekimsel mercek görüntüyü büyütür"
+    ],
+    "dogru": 2,
+    "aciklama": "Rees 1966'da öngördü. Derste β = 0,99 ve 8° açıyla 10 yıllık hareketin ışıkları ~0,2 yıl arayla gelir ve 1,38 ışık yıllık yan kayma ~7c'lik görünür hız verir; gerçek hız ışıktan küçüktür.",
+    "ders": "d48",
+    "bolum": 8
+  },
+  {
+    "id": "d48-4",
+    "soru": "3C 273 (12,9 kadir) İstanbul'dan 7×50 dürbünle görülebilir mi?",
+    "secenekler": [
+      "Evet, şehir merkezinden bile kolayca",
+      "Hayır; çok karanlık gökte bile dürbünün sınırı ~10,8 kadir, 3C 273 ondan ~2 kadir (yaklaşık 7 kat) sönük; ~150 mm'lik bir teleskop gerekir",
+      "Evet, ama yalnızca ufkun altındayken",
+      "Hayır, çünkü 3C 273 güney yarıküresinden hiç yükselmez"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre 3C 273 İstanbul'da meridyende ~51°'ye yükselir, ama 12,9 − 10,8 = 2,1 kadir, yani 10^(0,4 × 2,1) ≈ 6,9 kat sönüktür. Wikipedia 150 mm'lik amatör teleskopla görülebileceğini yazar.",
+    "ders": "d48",
+    "bolum": 14
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "d36-1",
+    "soru": "Samuel ve ekibinin Ekim 2023'te yayımladığı çalışma, Mars'ın çekirdeği hakkındaki resmi nasıl değiştirdi?",
+    "secenekler": [
+      "Mars'ın hiç çekirdeği olmadığını gösterdi",
+      "Mantonun dibinde erimiş bir silikat katmanı buldu; metal çekirdeğin yarıçapını yaklaşık 1650 km'ye indirdi ve çekirdeğin daha yoğun olduğunu gösterdi",
+      "Çekirdeğin yarıçapını 3000 km'ye çıkardı",
+      "Çekirdeğin tamamen katı olduğunu kesin olarak kanıtladı"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre ekip, 18 Eylül 2021'deki bir göktaşı çarpmasının çekirdek sınırında kırınan dalgalarını ve Phobos'un yörünge verilerini kullandı. Önceki yorumların çekirdeğin parçası sandığı sıvı kaya katmanını ayırınca çekirdek yarıçapı 1650 ± 20 km'ye indi ve yoğunluğu yaklaşık 6,5 g/cm³ çıktı. Katı iç çekirdek iddiası ise 2025'te ayrı bir çalışmadan geldi ve doğrulanmayı bekliyor.",
+    "ders": "d36",
+    "bolum": 3
+  },
+  {
+    "id": "d36-2",
+    "soru": "Olympus Mons'un Dünya'daki volkanlardan çok daha büyük olmasının derste verilen nedenleri nelerdir?",
+    "secenekler": [
+      "Mars'ın daha sıcak bir çekirdeği ve daha kalın bir atmosferi olması",
+      "Mars'ta levha hareketi olmadığı için sıcak noktanın hep aynı yeri beslemesi ve düşük çekim",
+      "Mars'ın Güneş'e daha yakın olması",
+      "Olympus Mons'un aslında bir çarpma krateri olması"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre Mars'ın kabuğu hareket eden levhalara bölünmediği için sıcak noktanın üstündeki kabuk yerinde kalır ve magma hep aynı yerde birikir; Dünya'da ise levha kaydıkça bir volkan zinciri oluşur. Düşük çekim de volkanların daha büyük olabilmesine izin verir. Volkanın ortalama eğimi yalnızca yaklaşık 5°'dir.",
+    "ders": "d36",
+    "bolum": 5
+  },
+  {
+    "id": "d36-3",
+    "soru": "MAVEN, Mars'ın atmosferinin büyük kısmını uzaya kaybettiğini hangi ölçümle gösterdi?",
+    "secenekler": [
+      "Kutup başlıklarının kalınlığını ölçerek",
+      "Üst atmosfer ile yüzeydeki argon izotoplarını karşılaştırarak; argonun yaklaşık %65'inin kaybolduğunu buldu",
+      "Mars göktaşlarındaki fosilleri inceleyerek",
+      "Phobos'un yörüngesindeki değişimi ölçerek"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre argon soy gazdır; kayalara bağlanamaz, yalnızca uzaya kaçarak kaybolabilir. Hafif izotop daha kolay kaçtığı için kalan argon ağırlaşır. Jakosky ve ekibi (2017) bu farktan argonun yaklaşık %65'inin, Güneş rüzgârının püskürtmesiyle uzaya kaçtığını hesapladı; karbondioksitin çoğu da bu yolla kaybolmuştur.",
+    "ders": "d36",
+    "bolum": 10
+  },
+  {
+    "id": "d36-4",
+    "soru": "19 Şubat 2027 karşı konumunda Mars için hangisi doğrudur?",
+    "secenekler": [
+      "Mars en yakın olası uzaklıkta, 54,6 milyon km'de olacak ve dürbünde kutup başlığı seçilecek",
+      "Uzak bir karşı konum: ~101 milyon km, 13,8 yay saniyesi, −1,2 kadir; en iyi durumdan yaklaşık 5 kat sönük ve dürbünde yalnızca renkli bir nokta",
+      "Mars yalnızca gün doğumundan hemen önce kısa bir süre görülebilecek",
+      "Mars Akrep takımyıldızında olacak"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre Mars bu kez yörüngesinin Güneş'ten uzak kısmında olduğu için yaklaşık 101 milyon km'ye kadar yaklaşacak; görünür çapı 13,8 yay saniyesi, parlaklığı −1,2 kadir olacak. En parlak olası değer −2,94 kadir olduğundan fark 1,74 kadir, yani yaklaşık 5 kattır. Karşı konumda Mars akşamdan sabaha kadar Aslan takımyıldızında görülür; yüzey ayrıntısı için teleskop gerekir.",
+    "ders": "d36",
+    "bolum": 14
+  }
+]
