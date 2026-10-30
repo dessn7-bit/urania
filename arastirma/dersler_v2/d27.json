@@ -1,0 +1,541 @@
+{
+  "id": "d27",
+  "unite": "fizik",
+  "yeni": true,
+  "baslik": "Kuantuma Giriş I: Işık ve Madde, Dalga mı Parçacık mı?",
+  "ozet": "Işık bazen dalga, bazen paket paket gelen parçacıklar gibi davranır; elektronlar ve dev moleküller de öyle. Bu derste Planck'ın enerji paketlerini, fotoelektrik olayı ve güneş panelini, maddenin dalga boyunu, tek tek elektronlarla yapılan çift yarık deneyini, dalga fonksiyonunun olasılık anlamını, ölçümün neden bilinç değil etkileşim olduğunu ve belirsizlik ilkesini öğreneceksin.",
+  "on_bilgi": [
+    "d2",
+    "d33"
+  ],
+  "bolumler": [
+    {
+      "baslik": "1900: Fizik bitti sanılırken",
+      "paragraflar": [
+        "Telefonunun kamerası, çatıdaki güneş paneli, hastanedeki MR cihazı ve yıldızların neden parladığı: bunların hepsi bu dersin ve bir sonrakinin konusu olan kuantum fiziğine dayanır. Fizikte kuantum, “paket, porsiyon” anlamında kullanılır: bazı şeyler sürekli bir akış gibi değil, belli büyüklükte parçalar hâlinde gelir. Bu fikir ilk duyulduğunda kimseyi heyecanlandırmadı; fiziğin büyük resmi zaten tamamlanmış gibi görünüyordu. Newton'un mekaniği gezegenlerin yolunu, Maxwell'in elektromanyetizması ışığın ne olduğunu (d33) açıklıyordu. WorldAtlas'ın aktardığına göre Albert Michelson 1894'te fiziğin büyük ilkelerinin çoğunun artık sağlam biçimde kurulduğunu söylemişti.",
+        "Ama küçük görünen birkaç pürüz vardı. Bunlardan biri, d2'den tanıdığın kara cisim ışımasıydı: ısıtılan bir cisim, yalnızca sıcaklığına bağlı belli bir renk dağılımıyla ışır ve sıcaklık arttıkça bu dağılımın tepesi maviye kayar. Berlin'deki Fizik-Teknik Devlet Enstitüsü'nde deneyciler bu dağılımı çok hassas ölçüyordu. Ekim 1900'de, uzun dalga boylarında, o zamanın en iyi formülü olan Wien yasasından sapmalar bildirdiler. Yani ölçüm, kuramın önüne geçmişti.",
+        "Kuramcılar elindeki en sağlam araçla, ısı fiziğinin eş bölüşüm ilkesiyle bir tahmin yaptı. Bu ilke kabaca şunu söyler: ısı enerjisi, bir cismin titreşebileceği her biçime eşit pay olarak dağılır. Kara cismin içindeki ışık da sayısız titreşim biçiminden oluşur ve dalga boyu kısaldıkça bu biçimlerin sayısı hızla artar. Lord Rayleigh'nin, sonra James Jeans'in yazdığı formül uzun dalga boylarında, yani kızılötesinde gözlemle iyi uyuşuyordu. Kısa dalga boylarına gidildikçe ise öngörülen ışınım sınırsız büyüyordu.",
+        "Bu sonucun ne kadar saçma olduğunu düşün: kuram doğru olsaydı, ısınmış her fırının, hatta bir mum alevinin bile sonsuz miktarda morötesi ve X ışını yayması gerekirdi. Gerçekte ise d2'de gördüğün tayf eğrisi tepe noktasından sonra kısa dalga boylarına doğru yeniden düşer. Bu çıkmaza sonradan morötesi felaketi adı verildi; adı 1911'de fizikçi Paul Ehrenfest koydu. Planck sabiti üzerine yazılan kaynaklara göre 1905'te hem Rayleigh ile Jeans hem de bağımsız olarak Einstein, klasik elektromanyetizmanın gözlenen tayfı açıklayamayacağını gösterdi. Sorun hesap hatası değildi; kuramın kendisinde bir eksik vardı."
+      ],
+      "akilda": "1900'de ölçülen kara cisim tayfı, klasik fiziğin öngörüsüyle uyuşmuyordu: kuram kısa dalga boylarında sonsuz ışınım bekliyordu (morötesi felaketi), oysa gerçek eğri düşer."
+    },
+    {
+      "baslik": "Planck'ın çaresiz hamlesi: enerji paket paket",
+      "paragraflar": [
+        "14 Aralık 1900'de Max Planck, Alman Fizik Derneği'nde kara cisim tayfının tamamına uyan bir formül sundu. Formülü elde etmek için tuhaf bir varsayım yapmıştı: ışık yayan ve soğuran küçük titreşkenler, enerjiyi istedikleri miktarda değil, yalnızca belli büyüklükteki paketler hâlinde alıp verebilir. Bir paketin büyüklüğü E = h × f ile verilir. Burada f titreşimin frekansı, yani saniyedeki salınım sayısıdır; h ise Planck'ın ortaya koyduğu yeni bir doğa sabitidir. Paket büyüklüğü frekansla orantılıdır: frekans iki katına çıkarsa paket de iki katına çıkar.",
+        "Bu varsayım felaketi nasıl önler? Belli bir sıcaklıkta her titreşim biçiminin “bütçesi” kabaca aynıdır. Uzun dalga boylu, yani düşük frekanslı biçimlerde paketler küçüktür; bu bütçeyle rahatça alınıp verilir. Kısa dalga boylu biçimlerde ise tek bir paket bile bütçeyi kat kat aşar; böyle bir biçimin paket kazanma olasılığı çok küçülür ve o biçimler neredeyse hiç ışımaz. Böylece eğri kısa dalga boylarında kendiliğinden düşer. Benzetme olarak, yalnızca koli koli satış yapan bir toptancı düşün: cebinde 50 lira varken kolisi 5.000 lira olan mala neredeyse hiç el süremezsin. Benzetmenin sınırı şu: fizikte bu bir yasak değil, bir olasılıktır; büyük paket ara sıra yine de oluşur, ama çok nadiren.",
+        "İşin ilginç yanı, Planck'ın bu fikre kendisinin de pek inanmamasıdır. Sonraki yıllarda bu varsayımı “tamamen biçimsel” bir adım olarak gördüğünü, üzerinde fazla düşünmediğini anlattı; istatistiksel yönteme başvurmasını ise bir çaresizlik hamlesi diye andı. 2024'te yayımlanan bir tarih çalışmasına göre Planck enerjiyi paketlere bölmeyi, titreşkenlerin entropisini (d30) hesaplayabilmek için bir matematik hilesi olarak görüyordu, doğanın gerçek bir özelliği olarak değil. Yine de 1918 Nobel Fizik Ödülü ona tam olarak bu buluş için, “enerji kuantumlarını keşfi” gerekçesiyle verildi.",
+        "h'nin değeri çok küçüktür: 6,62607015 × 10⁻³⁴ joule saniye. Bu sayı artık ölçülen değil, tanımlanan bir sayıdır; uluslararası birim sistemi kilogramı, h'yi tam bu değere sabitleyerek tanımlar. h'nin bu kadar küçük olması, gündelik hayatta enerjinin paket paket geldiğini neden hiç fark etmediğimizi de açıklar: tek bir paket, bir bardak çayın ısısının yanında akıl almaz ölçüde küçüktür. Kuantumun izleri ancak atomlar ve ışığın tek tek parçaları düzeyinde belirginleşir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Güneş'in yüzeyinde bir paketin “fiyatı”",
+        "metin": "Isının bir titreşim biçimine düşen tipik payı kabaca k × T'dir; k Boltzmann sabitidir ve elektronvolt cinsinden yaklaşık 8,617 × 10⁻⁵ eV/K eder. Güneş'in yüzeyi için T = 5772 K (d2): k × T ≈ 8,617 × 10⁻⁵ × 5772 ≈ 0,497 eV. 1. adım: Foton enerjisi için kısayol E (eV) ≈ 1239,84 ÷ dalga boyu (nm). 1000 nm'lik kızılötesi paket 1,24 eV'tur, yani bütçenin yaklaşık 2,5 katı. 100 nm'lik morötesi paket 12,4 eV'tur, bütçenin yaklaşık 25 katı. 2. adım: Bir biçimin bu kadar enerjiyi bir anda kazanma olasılığı kabaca e üzeri eksi (paket ÷ bütçe) ile azalır. e⁻²·⁵ ≈ 0,082, e⁻²⁵ ≈ 1,4 × 10⁻¹¹. 3. adım: Oran 0,082 ÷ 1,4 × 10⁻¹¹ ≈ 6 × 10⁹. Sonuç: Güneş sıcaklığında morötesi paketler kızılötesine göre milyarlarca kat daha zor oluşur; Güneş tayfının kısa dalga ucunda sönmesinin nedeni budur. Bu kaba bir tahmindir; tam hesap Planck'ın formülüyle yapılır."
+      },
+      "akilda": "Planck, titreşkenlerin enerjiyi E = h × f büyüklüğünde paketlerle alıp verdiğini varsaydı; yüksek frekanslı paketler pahalı olduğu için nadiren oluşur ve felaket ortadan kalkar. Planck bunu önce bir hesap hilesi sandı."
+    },
+    {
+      "baslik": "Fotoelektrik olay: ışık tek tek vurur",
+      "paragraflar": [
+        "d2'de fotoelektrik olayı kısaca gördün: ışık düşen bir metal yüzeyden elektron kopar ve kopan elektronların enerjisi ışığın parlaklığına değil, rengine yani frekansına bağlıdır. Belli bir eşik frekansın altında ise ışık ne kadar parlak olursa olsun tek bir elektron bile kopmaz. Şimdi bunun neden devrim sayıldığına bakalım. Işık bir dalga olsaydı, parlak ışık daha güçlü bir dalga demek olurdu ve elektronları daha sert sarsmalıydı. Kırmızı ama çok parlak bir ışık, mor ama sönük bir ışıktan daha etkili olmalıydı. Deney tam tersini söylüyordu.",
+        "Albert Einstein 17 Mart 1905'te gönderdiği makalede Planck'tan bir adım öteye gitti: yalnızca titreşkenler değil, ışığın kendisi de paketlerden oluşur. Her paket, bugünkü adıyla her foton, enerjisini tek bir elektrona bütünüyle verir. Elektronun metalden çıkabilmesi için önce bir “çıkış bedeli” ödemesi gerekir; buna iş fonksiyonu denir ve metalden metale değişir. Geriye kalan enerji, elektronun hareket enerjisi olur: en hızlı elektronun enerjisi = h × f − iş fonksiyonu. Foton bedeli karşılamıyorsa elektron çıkamaz; ışığı parlatmak yalnızca daha fazla sayıda yetersiz foton göndermek demektir. Işık para üstü vermez, ama taksit de kabul etmez.",
+        "Bu denklemi sınayan kişi, ona inanmayan biriydi. Amerikalı fizikçi Robert Millikan 1905'te başladığı ölçümleri 1916'da Physical Review'da yayımladı. Elektronları durdurmak için gereken elektrik gerilimini, yani durdurma gerilimini farklı renklerde ölçtü. Metal yüzeyleri havasız bir tüpün içinde dönen bir bıçakla kazıyarak temiz tuttu; kendisi buna “vakumda makine atölyesi” diyordu. Sonuçta Einstein'ın denklemi doğrulandı ve Millikan h'yi yaklaşık %0,5 hassasiyetle 6,57 × 10⁻³⁴ joule saniye olarak buldu; bugünkü değerden yalnızca yaklaşık %0,8 farklı.",
+        "Millikan sonuçlarını yayımladığı yıl bile Einstein'ın ışık paketleri fikrini sağlam bir kurama dayanmayan, “gözü kara” bir varsayım olarak niteliyordu. Nobel konuşmasında deneyinin, kendi beklentisine rağmen, denklemin ilk doğrudan kanıtı olduğunu söyledi. Bilimin iyi işlediği bir an: veri, deneycinin tercihine ağır bastı. Einstein 1921 Nobel Fizik Ödülü'nü “fotoelektrik olayın yasasını keşfi” için, Millikan 1923 Nobel Ödülü'nü kısmen bu çalışma için aldı. Ödüllerin gerekçesinde görelilik kuramının değil, fotoelektrik olayın geçmesi de dikkat çekicidir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Millikan'ın cıva çizgileriyle bir fotoelektrik deneyi",
+        "metin": "Millikan'ın düzeneğinde cıva lambasının tayf çizgileri kullanılır; bunlardan üçü 546,1 nm, 365,0 nm ve 253,5 nm'dir. İş fonksiyonu 2,3 eV olan varsayımsal bir metal alalım. 1. adım: Foton enerjileri E ≈ 1239,84 ÷ λ: 546,1 nm için 2,27 eV; 365,0 nm için 3,40 eV; 253,5 nm için 4,89 eV. 2. adım: 546,1 nm'lik yeşil foton 2,3 eV'luk bedeli karşılamaz; lamba ne kadar parlak olursa olsun elektron çıkmaz. 3. adım: 365,0 nm için en hızlı elektronun enerjisi 3,40 − 2,3 = 1,10 eV, durdurma gerilimi 1,10 volt; 253,5 nm için 4,89 − 2,3 = 2,59 eV, yani 2,59 volt. 4. adım: Bu iki çizginin frekansları 8,21 × 10¹⁴ ve 11,83 × 10¹⁴ Hz. Enerji farkı 1,49 eV, yani 2,39 × 10⁻¹⁹ joule; frekans farkı 3,62 × 10¹⁴ Hz. Oran 2,39 × 10⁻¹⁹ ÷ 3,62 × 10¹⁴ ≈ 6,6 × 10⁻³⁴ joule saniye. Sonuç: durdurma geriliminin frekansla değişim hızı doğrudan h'yi verir; Millikan h'yi böyle ölçtü."
+      },
+      "akilda": "Foton enerjisini tek bir elektrona verir; elektron önce iş fonksiyonunu öder, kalan enerjiyle çıkar. Millikan 1916'da, inanmadığı bu denklemi doğruladı ve h'yi ölçtü."
+    },
+    {
+      "baslik": "Güneş paneli, kamera ve göz: fotonu yakalayan aletler",
+      "paragraflar": [
+        "Fotoelektrik olayın yakın bir akrabası her gün çatılarda çalışıyor. Edmond Becquerel 1839'da, henüz 19 yaşındayken, ışığın bazı malzemelerde elektrik gerilimi oluşturduğunu keşfetti; buna fotovoltaik etki denir. Güneş panelinde elektron malzemeden dışarı fırlamaz; foton onu, atomlara bağlı olduğu durumdan malzemenin içinde serbestçe dolaşabildiği duruma çıkarır. Bu iki durum arasında, elektronun bulunamayacağı bir enerji boşluğu vardır; buna bant aralığı denir. Bant aralığı, güneş panelinin iş fonksiyonu gibidir: bu bedeli ödeyemeyen foton işe yaramaz.",
+        "Panellerin çoğunda kullanılan kristal silisyumun bant aralığı 1,12 eV'tur. Bundan daha az enerjili fotonlar silisyumda soğurulmaz, içinden geçip gider. Daha enerjili fotonlar ise elektronu serbest bırakır ama fazla enerjileri boşa gider: elektron kısa sürede bant aralığının kıyısına “yuvarlanır” ve fazlalığı ısı olarak bırakır. Bu iki kayıp yüzünden tek katmanlı bir güneş pilinin verimi için kuramsal bir tavan vardır. Shockley ve Queisser'in adıyla anılan bu sınır, standart güneş ışığı için yaklaşık %33,7'dir. Yani bir güneş panelinin verimini belirleyen şey, ışığın paket paket gelmesidir.",
+        "Aynı fikir gökbilimin en önemli aletinde de çalışır. Yük bağlaşımlı aygıt, kısaca CCD, ışığı pikseller hâlinde elektrik yüküne çeviren yarı iletken bir algılayıcıdır; her piksel, üzerine düşen fotonların kopardığı elektronları biriktirir. Willard Boyle ve George Smith bu buluş için 2009 Nobel Fizik Ödülü'nü paylaştı. d12'de gördüğün gibi CCD'ler gelen ışığın %90'ını ya da daha fazlasını kaydedebilir. Bir gökbilimci uzak bir galaksinin görüntüsüne baktığında aslında bir foton sayımına bakar: her pikselde kaç foton yakalandığının haritasına.",
+        "Bunun bir sonucu da var: ışık paketler hâlinde geldiği için çok sönük bir kaynağın görüntüsü kaçınılmaz olarak “karıncalı” olur. Yağmur damlalarının bir kaldırımı rastgele ıslatması gibi, fotonlar da piksellere rastgele düşer ve az fotonla çekilen görüntüde bu rastgelelik göze batar. Gökyüzü fotoğrafçılarının uzun pozlama yapması ve görüntüleri üst üste yığması (d24) bu kuantum gürültüsünü bastırmanın yoludur."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Silisyum hangi ışığı kullanabilir?",
+        "metin": "1. adım: Bant aralığını karşılayan en uzun dalga boyu λ ≈ 1239,84 ÷ 1,12 ≈ 1107 nm. Yani silisyum yaklaşık 1100 nm'den uzun dalga boylu kızılötesi fotonları kullanamaz. 2. adım: 550 nm'lik yeşil bir foton 1239,84 ÷ 550 ≈ 2,25 eV taşır. Bunun 1,12 eV'u elektronu serbest bırakır, 2,25 − 1,12 = 1,13 eV ısı olur; fotonun enerjisinin yaklaşık yarısı kaybolur. 3. adım: 700 nm'lik kırmızı foton 1,77 eV taşır; kaybı 1,77 − 1,12 = 0,65 eV, yani yaklaşık %37. Sonuç: silisyum kırmızıya yakın fotonları mavi fotonlardan daha verimli kullanır, 1107 nm'nin ötesini ise hiç kullanamaz."
+      },
+      "akilda": "Güneş panelinde foton, elektronu silisyumun 1,12 eV'luk bant aralığının üstüne çıkarır; daha zayıf foton işe yaramaz, fazla enerji ısıya gider. CCD algılayıcılar da gökyüzünü foton foton sayar."
+    },
+    {
+      "baslik": "Işık da iter: fotonun momentumu",
+      "paragraflar": [
+        "Bir bilardo topu başka bir topa çarptığında ona hem enerji hem de itme aktarır. Fizikte bu itme miktarına momentum denir; kütle ile hızın çarpımıdır. Fotonun kütlesi yoktur, ama yine de momentum taşır. Bunun en açık kanıtını Amerikalı fizikçi Arthur Compton verdi. Compton, bugün adıyla anılan saçılma olayını Ekim 1922'de bildirdi; 1923'te olay, Einstein'ın foton kavramına dayanılarak, yani ışık paketlerinin elektronlarla çarpıştığı düşünülerek açıklandı. Bu açıklama, ışığın parçacık yanına önemli bir destek oldu. Compton 1927 Nobel Fizik Ödülü'nü “adıyla anılan olayın keşfi” için aldı.",
+        "Bir fotonun momentumu, dalga boyuyla ters orantılıdır: p = h ÷ λ. Aynı şey enerjiyle de yazılabilir: p = E ÷ c. Yani kısa dalga boylu, enerjik fotonlar daha sert iter. Tek bir fotonun itişi elbette hissedilmez; ama Güneş her saniye yüzeyden akıl almaz sayıda foton gönderir. Wikipedia'nın güneş yelkeni maddesine göre Dünya'nın uzaklığında, Güneş ışığını tümüyle yansıtan bir yüzeyin her metrekaresine düşen kuvvet yaklaşık 9,08 mikronewtondur. Işığı yansıtmayıp yutan bir yüzeyde bu değer yarıya, 4,54 mikronewtona iner; çünkü geri seken foton yönünü tersine çevirdiği için iki kat itme aktarır.",
+        "Bu küçük kuvvet uzayda gerçek bir motor olabilir, çünkü orada sürtünme yoktur ve kuvvet aylarca kesintisiz etkir. Japon uzay ajansı JAXA 21 Mayıs 2010'da IKAROS adlı aracı fırlattı. Aracın yaklaşık 200 m²'lik, 14 × 14 metrelik kare bir yelkeni vardı ve Wikipedia'ya göre güneş yelkeniyle uçmayı başaran ilk araç, dünyanın ilk gezegenlerarası güneş yelkenli uzay aracı oldu. 25 Haziran 2019'da fırlatılan LightSail 2 de yörüngede güneş yelkeniyle itiş sağlanabildiğini gösterdi.",
+        "Işığın bir yüzeye uyguladığı bu basınca ışınım basıncı denir. Fikrin kökü eskidir: Wikipedia'ya göre Johannes Kepler kuyruklu yıldızların kuyruklarının Güneş'ten uzağa baktığını görmüş ve bunun nedeninin Güneş olduğunu ileri sürmüştü (kuyrukları d19'da gördün). Kepler'in döneminde ışığın itebileceği düşüncesi yalnızca bir sezgiydi; bugün güneş yelkenleri onu mühendisliğe çevirdi. Bir dalganın, yani ışığın, bir bilardo topu gibi itebilmesi, kuantum dünyasının “dalga mı parçacık mı” sorusunun ilk ipuçlarından biridir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: IKAROS'u Güneş ışığı ne kadar iter?",
+        "metin": "1. adım: Yelkenin tam yansıtıcı olduğunu ve Güneş'e dik durduğunu varsay. Metrekare başına kuvvet 9,08 mikronewton = 9,08 × 10⁻⁶ newton. 2. adım: Alan 196 m² ise toplam kuvvet 9,08 × 10⁻⁶ × 196 ≈ 1,78 × 10⁻³ newton, yani yaklaşık 1,8 milinewton. 3. adım: Bu kuvveti tanıdık bir şeye çevir: yerçekimi ivmesi 9,81 m/s² olduğuna göre 1,78 × 10⁻³ ÷ 9,81 ≈ 1,8 × 10⁻⁴ kg, yani yaklaşık 0,18 gramlık bir cismin ağırlığı. Sonuç: koca bir yelkeni iten kuvvet, avucundaki bir pirinç tanesinin ağırlığı mertebesindedir; ama uzayda bu kuvvet hiç durmadan etkidiği için zamanla hıza dönüşür. Gerçek yelken tam yansıtıcı değildir, bu yüzden gerçek kuvvet biraz daha azdır."
+      },
+      "akilda": "Fotonun kütlesi yoktur ama momentumu vardır: p = h ÷ λ. Compton 1922'de bunu X ışınlarıyla gösterdi; Dünya uzaklığında güneş ışığı yansıtıcı bir yelkeni metrekare başına yaklaşık 9 mikronewton iter."
+    },
+    {
+      "baslik": "Yıldız ışığını foton foton saymak",
+      "paragraflar": [
+        "Gözün de bir foton sayacıdır. Retinada iki tür ışık algılayıcı hücre vardır: renkleri ayırt eden koniler ve loş ışıkta çalışan çubuklar. Cosmos dergisinin aktardığına göre çubuklar konilerden çok daha kalabalıktır, kabaca 120 milyona 6 milyon, ve en çok 500 nm civarındaki mavimsi yeşil ışığa duyarlıdırlar. Çubuklar retinanın tam merkezinde değil, çevresinde yoğunlaşır; bu yüzden loş bir yıldız, görüntüsü gözünün tam ortasına değil biraz yanına düştüğünde daha kolay seçilebilir.",
+        "Peki göz tek bir fotonu fark edebilir mi? Jonathan Tinsley ve arkadaşları bu soruyu Nature Communications'ta yayımlanan bir çalışmada, tek tek foton üretebilen bir kuantum ışık kaynağıyla sınadı. Üç gönüllü her denemede iki seçenekten birini işaretledi; rastgele tahmin %50 başarı verirdi. 30.767 denemede doğru cevap oranı %51,6 çıktı. Bu, rastgele tahminin %50'sinin ancak biraz üstündedir; yazarların kendisi de sonucu “şansın hemen üstünde” diye niteledi, ama deneme sayısı çok büyük olduğu için istatistiksel olarak anlamlı buldu. Bir fotonu fark eden kişinin sonraki 10 saniyede doğru cevap oranı %56'ya çıktı; görme sistemi bir an için “hassaslaşmış” gibiydi. Örneklem yalnızca üç kişiydi; bu yüzden sonuç ilginç ama herkese genellenecek kesin bir bulgu sayılmamalı.",
+        "Gökyüzünde sayılar nasıl? Kadir ölçeğinin sıfır noktasındaki bir yıldızın (d1'de gördüğün gibi Vega +0,03 kadirdir), yeşil ışıkta, 555,6 nm civarında, her santimetrekareye saniyede ve her angströmlük dalga boyu aralığına yaklaşık 948 foton gönderdiği hesaplanır; bir angström nanometrenin onda biridir. Kadir ölçeğinde 5 kadirlik fark 100 kat parlaklık farkı demektir. Bu iki bilgiyle, çıplak gözün karanlık bir gökte seçebildiği sınıra yakın 6. kadirden bir yıldızın gözüne saniyede kaç foton gönderdiğini kabaca hesaplayabilirsin."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Sönük bir yıldızdan gözüne kaç foton gelir?",
+        "metin": "1. adım: Sıfır kadirlik yıldızın akısı 948 foton/(cm² × s × Å), yani nanometre başına 9.480. 2. adım: Karanlığa alışmış göz bebeği yaklaşık 7 mm çaplı olsun. Alanı π × 0,35² ≈ 0,385 cm². Sıfır kadirlik yıldızdan göze nanometre başına saniyede 9.480 × 0,385 ≈ 3.650 foton girer. 3. adım: 6 kadir, 100 üzeri (6 ÷ 5) ≈ 251 kat sönük demektir: 3.650 ÷ 251 ≈ 14,5 foton/s, nanometre başına. 4. adım: Gözün işine yarayan bandı kabaca 100 nm genişliğinde varsayarsak (kaba bir varsayım), saniyede yaklaşık 1.500 foton eder; atmosferdeki kayıplar bunu biraz azaltır. 5. adım: 7×50 dürbünün 50 mm'lik merceği göz bebeğinden (50 ÷ 7)² ≈ 51 kat fazla alan toplar; aynı yıldızdan saniyede on binlerce foton gelir. Sonuç: 6. kadirden bir yıldızın ışığı, saniyede yalnızca birkaç bin fotonluk ince bir yağmurdur; dürbün bu yağmuru elli kat sıklaştırır."
+      },
+      "akilda": "Göz loş ışıkta çubuk hücreleriyle çalışır; bir deneyde tek fotonu şansın biraz üstünde (%51,6) fark etti. Sıfır kadirlik bir yıldız yeşilde santimetrekareye saniyede ve angström başına yaklaşık 948 foton gönderir."
+    },
+    {
+      "baslik": "de Broglie: madde de dalgalanır mı?",
+      "paragraflar": [
+        "Buraya kadar ışığın, yani bir dalganın, parçacık gibi davrandığını gördük. Fransız fizikçi Louis de Broglie 1924'te sunduğu doktora tezinde tersini sordu: madde parçacıkları da dalga gibi davranabilir mi? Önerisi basitti: momentumu p olan her parçacığa bir dalga boyu eşlik eder ve bu dalga boyu λ = h ÷ p'dir. Buna de Broglie dalga boyu denir. Momentum kütle çarpı hız olduğundan, ağır ya da hızlı cisimlerin dalga boyu çok kısadır. Tez Ocak 1925'te yayımlandı; de Broglie 1929 Nobel Fizik Ödülü'nü “elektronların dalga doğasını keşfi” için aldı.",
+        "Fikrin sınavı, bir kazayla geldi. Clinton Davisson ve Lester Germer, sonradan Bell Laboratuvarları adını alacak olan Western Electric'te 1923–1927 arasında elektronları nikel bir hedefe gönderiyordu. Bir gün vakum odasına hava sızdı ve nikelin yüzeyinde bir oksit tabakası oluştu. Tabakayı gidermek için hedefi ısıttıklarında nikel, büyük ve düzenli kristal bölgeler kazandı. Bundan sonra elektronlar kristalden belli yönlerde yoğunlaşarak saçılmaya başladı; tıpkı ışığın bir kırınım ağından renk renk ayrılması gibi. Bir dalganın düzenli bir yapıdan geçerken ya da yansırken belli yönlerde güçlenip belli yönlerde sönmesine kırınım denir.",
+        "En güçlü yansıma, 54 voltla hızlandırılmış, yani 54 eV hareket enerjili elektronlarda, 50°'lik açıda görüldü. de Broglie formülü bu elektronlar için 0,167 nm'lik bir dalga boyu öngörür; kristal kırınımının ölçümünden çıkan değer 0,165 nm'dir. Aynı yıllarda İngiliz fizikçi George Paget Thomson elektronları ince metal filmlerden geçirerek bağımsız olarak aynı sonuca ulaştı. Davisson ile Thomson 1937 Nobel Fizik Ödülü'nü paylaştı. Elektron, artık hem parçacık sayılabilen hem de kırınıma uğrayan bir şeydi.",
+        "Bu keşif hemen işe de yaradı. d12'de bir teleskobun ince ayrıntıları ayırma gücünün kullandığı dalga boyuyla sınırlandığını görmüştün; aynı sınır mikroskoplar için de geçerlidir. Görünür ışığın dalga boyu birkaç yüz nanometreyken, hızlandırılmış elektronların dalga boyu bunun binde biri kadar kısa olabilir. Elektron mikroskobu bu sayede ışık mikroskobunun seçemeyeceği kadar ince ayrıntıları görüntüleyebilir. Ernst Ruska, ilk elektron mikroskobunu tasarladığı için 1986 Nobel Fizik Ödülü'nü (taramalı tünelleme mikroskobunu tasarlayan Binnig ve Rohrer ile) paylaştı; bu ikinci mikroskobu d28'de göreceksin."
+      ],
+      "ornek": {
+        "baslik": "Örnek: 54 eV'luk bir elektronun dalga boyu",
+        "metin": "1. adım: Enerjiyi joule'e çevir: 54 × 1,602 × 10⁻¹⁹ ≈ 8,65 × 10⁻¹⁸ J. 2. adım: Yavaş bir parçacıkta hareket enerjisi p² ÷ (2m) olduğundan p = √(2 × m × E). Elektronun kütlesi 9,109 × 10⁻³¹ kg: p = √(2 × 9,109 × 10⁻³¹ × 8,65 × 10⁻¹⁸) = √(1,576 × 10⁻⁴⁷) ≈ 3,97 × 10⁻²⁴ kg m/s. 3. adım: λ = h ÷ p = 6,626 × 10⁻³⁴ ÷ 3,97 × 10⁻²⁴ ≈ 1,67 × 10⁻¹⁰ m. Sonuç: 0,167 nm. Bu, nikel kristalindeki atom sıralarının arasındaki uzaklıkla aynı mertebededir; kırınımın görülebilmesinin nedeni de budur. Görünür ışıktan yaklaşık 3.000 kat kısadır."
+      },
+      "akilda": "de Broglie'ye göre her parçacığın bir dalga boyu vardır: λ = h ÷ p. Davisson ve Germer 54 eV'luk elektronların nikel kristalinden kırınımını ölçtü; öngörü 0,167 nm, ölçüm 0,165 nm."
+    },
+    {
+      "baslik": "Çift yarık: toplar, su dalgaları ve ışık",
+      "paragraflar": [
+        "Kuantum fiziğinin bütün tuhaflığını tek bir düzenekte görmek istersen, çift yarık deneyine bak. Düzenek basit: önünde iki ince yarık açılmış bir levha ve arkasında bir ekran. Önce bu düzeneğe tenis topları attığını düşün. Toplar ya bir yarıktan ya ötekinden geçer; ekranda iki yarığın tam arkasında iki yığın birikir. Bir yarığı kapatırsan yığınlardan biri kaybolur, ötekisi değişmez. İki yarık açıkken gördüğün şey, iki tek yarık sonucunun toplamıdır. Parçacıklardan beklediğimiz davranış budur.",
+        "Şimdi aynı düzeneği bir su havuzunda kur ve tek yönden dalga gönder. Her yarık, kendi halka halka yayılan dalgasının kaynağı olur. Ekranın bazı noktalarına iki dalganın tepeleri aynı anda ulaşır ve birbirini güçlendirir; bazı noktalarına ise birinin tepesi ötekinin çukuruyla buluşur ve dalgalar birbirini söndürür. Sonuçta ekranda iki yığın değil, güçlü ve durgun şeritlerin sırayla dizildiği bir desen oluşur. Dalgaların birbirini güçlendirmesine ya da söndürmesine girişim, bu şeritli görüntüye de girişim deseni denir. Şeritlerin arasındaki uzaklık dalga boyuna bağlıdır: uzun dalgalar geniş, kısa dalgalar sık şeritler verir.",
+        "Thomas Young ışıkla bu deneyi 1800'lerin ilk on yılında yaptı ve 1807'de yayımladı; sık anılan 1801 tarihinin kesin olmadığı belirtilir. Işıkla da şeritler çıktı. Bu, ışığın dalga olduğunun en güçlü kanıtlarından biri oldu ve yüzyıl boyunca sağlam kaldı. Burada bir çelişkiye geldik: fotoelektrik olay ve Compton saçılması ışığın paketler hâlinde geldiğini söylüyor, Young'ın deneyi ise ışığın iki yarıktan birden geçen bir dalga gibi davrandığını. Hangisi doğru?",
+        "Kuantum fiziğinin cevabı, ikisinin de doğru olduğu ama farklı soruların cevabı olduğudur. Işık ve madde ekrana hep tek tek, nokta nokta ulaşır; bu parçacık yanıdır. Ama bu noktaların nereye düşeceğini belirleyen şey, iki yolun birden hesaba katıldığı bir dalgadır; bu da dalga yanıdır. Bu cümle şimdilik soyut gelebilir. Bir sonraki bölümde bunu en çarpıcı biçimde gösteren deneye, elektronların tek tek gönderildiği çift yarık deneyine bakacağız."
+      ],
+      "akilda": "Toplar iki yarıktan iki yığın verir, dalgalar ise birbirini güçlendirip söndürerek şeritli bir girişim deseni verir. Young ışıkla şeritleri gördü; ama fotoelektrik olay ışığın paket paket geldiğini söylüyordu."
+    },
+    {
+      "baslik": "Elektronlar tek tek geçerken",
+      "paragraflar": [
+        "Elektronlarla gerçek bir çift yarık deneyini ilk kez 1961'de Tübingen'de Claus Jönsson yaptı; beş yarığa kadar girişim gördü. Ama asıl şaşırtıcı soru, elektronlar teker teker gönderilince ne olacağıydı. 1974'te Bologna'da Pier Giorgio Merli, GianFranco Missiroli ve Giulio Pozzi bunu yaptı; sonuçları 1976'da American Journal of Physics'te yayımlandı ve çektikleri “Elektron Girişimi” filmi aynı yıl Brüksel'deki bir bilim filmi festivalinde ödül aldı. 1989'da Japonya'da Hitachi'den Akira Tonomura ve arkadaşları deneyi, tek elektronların birikerek girişim desenini oluşturduğunu adım adım gösteren bir kayıtla tekrarladı.",
+        "Tonomura'nın ekibi elektron akımını o kadar zayıf tuttu ki saniyede binden az elektron gönderildi. Her elektron ekrana tek bir parlak nokta olarak, görünüşte rastgele bir yere düştü. 8 elektronluk ilk karede hiçbir düzen yoktu; 270 elektronda noktalar hâlâ dağınıktı; 2.000 elektronda belli belirsiz şeritler sezilmeye başladı; 60.000 elektronda ise girişim deseni açıkça ortaya çıktı. Desenin oluşması 20 dakikadan uzun sürdü, tıpkı uzun pozlamalı bir fotoğraf gibi.",
+        "Bunun neden bu kadar şaşırtıcı olduğunu düşün. Her elektron tek bir nokta bırakıyor, yani bir parçacık gibi varıyor. Ama binlerce elektronun toplamı, iki yarıktan birden geçen bir dalganın deseni. Elektronlar seyrek gönderildiği için desen, elektronların birbirine çarpmasından ya da birbiriyle etkileşmesinden doğamaz; her elektronun kendi hikâyesinde iki yarık da hesaba katılmış olmalı. Robert Crease'in 2002'de Physics World okurlarına sorduğu “fizikteki en güzel deney hangisi?” anketinde tek elektronlu çift yarık deneyi ilk ona girdi.",
+        "Peki bu, yalnızca elektron gibi hafif parçacıklara özgü mü? Değil. Viyana'da Anton Zeilinger'in grubu 1999'da Nature'da, 60 karbon atomundan oluşan C60 moleküllerinin girişim yaptığını bildirdi. Bu moleküllerin kütlesi 720 atomik kütle birimidir ve de Broglie dalga boyları yaklaşık 2,8 pikometre, yani 0,0028 nm'ydi. Markus Arndt ve Basel'deki ortakları 2019'da Nature Physics'te rekoru yaklaşık 2.000 atomlu, kütlesi 25.000 atomik kütle biriminden büyük moleküllere taşıdı; bunun için 2 metre uzunluğunda özel bir madde dalgası girişimölçeri kurdular. Bu moleküllerin dalga boyu bir hidrojen atomunun çapının yaklaşık binde biri kadardı."
+      ],
+      "akilda": "Elektronlar tek tek gönderildiğinde her biri bir nokta bırakır, ama binlercesi birikince girişim deseni çıkar (Tonomura, 1989). Aynı şey 2.000 atomlu moleküllerde bile görüldü (2019)."
+    },
+    {
+      "baslik": "Dalga fonksiyonu: dalgalanan şey olasılık",
+      "paragraflar": [
+        "Elektronun dalgası tam olarak neyin dalgasıdır? Erwin Schrödinger'in dalga mekaniği üzerine ilk makalesi dergiye 27 Ocak 1926'da ulaştı; aynı yılın ilk yarısında beş makalelik bir dizi yayımladı. Denklemi, bir parçacığın dalgasının zamanla nasıl değiştiğini anlatıyordu. Bu dalgaya dalga fonksiyonu denir ve çoğu zaman Yunan harfi ψ (psi) ile gösterilir. Schrödinger ile Paul Dirac, “atom kuramının yeni ve verimli biçimlerini” buldukları için 1933 Nobel Fizik Ödülü'nü paylaştı.",
+        "Dalga fonksiyonunun anlamını Max Born verdi. Born'un 25 Haziran 1926'da dergiye ulaşan makalesine göre dalga fonksiyonu bir maddenin yayılmış hâli değil, bir olasılık aracıdır: belli bir yerde dalga fonksiyonunun büyüklüğünün karesi, parçacığı orada bulma olasılığını verir. Buna Born kuralı denir. Elektron ekrana vardığında tek bir noktada belirir; dalga fonksiyonunun büyük olduğu yerlerde sık, küçük olduğu yerlerde seyrek, sıfır olduğu yerlerde hiç. Tonomura'nın desenindeki her nokta tek bir zar atışıdır, şeritler de zarın hangi yüzlerinin daha sık geldiğini gösterir. Born bu çalışma için, çok sonra, 1954 Nobel Fizik Ödülü'nü aldı.",
+        "Bu fikrin en tuhaf yanı şudur: olasılıklar değil, dalga fonksiyonunun kendisi toplanır. Dalga fonksiyonunun değerlerine olasılık genliği denir ve genlikler, su dalgalarının tepeleri ve çukurları gibi artı ya da eksi olabilir. İki yol birden açıkken iki genlik toplanır, sonra karesi alınır. Genlikler aynı yöndeyse güçlenir, zıt yöndeyse birbirini söndürür. Hava durumu haritasında “yağmur olasılığı %70” gibi bir sayı birbirini söndüremez; kuantum genlikleri söndürebilir. Benzetmenin sınırı da tam buradadır.",
+        "Dalga fonksiyonunun kendisi doğrudan ölçülemez; yalnızca onun öngördüğü olasılıklar, çok sayıda tekrarlanan deneyin istatistiğinde görülür. Kuantum fiziği bu yüzden tek bir elektronun nereye düşeceğini söyleyemez, ama milyonlarcasının hangi desende toplanacağını olağanüstü bir kesinlikle söyler. Bu belirsizlik bilgimizin eksikliğinden mi, yoksa doğanın kendisinden mi kaynaklanır? Bu soru, dersin sonundaki yorum tartışmasının kalbidir."
+      ],
+      "ornek": {
+        "baslik": "Örnek: İki yarık neden dört kat parlak şerit verir?",
+        "metin": "Ekranda bir nokta seç. Yalnız A yarığı açıkken bu noktaya ulaşan genlik a olsun; olasılık a²'ye orantılıdır, buna P diyelim. Yalnız B açıkken de genlik a, olasılık P olsun. 1. adım: Parçacıklar gibi düşünseydik iki yarık açıkken olasılık P + P = 2P olurdu. 2. adım: Kuantumda genlikler toplanır. Parlak şeritte iki genlik aynı yöndedir: (a + a)² = 4a², yani 4P. 3. adım: Karanlık şeritte genlikler zıttır: (a − a)² = 0, yani elektron hiç gelmez; oysa tek yarık açıkken oraya elektron düşüyordu. 4. adım: Ekranın tamamında ortalama alınca parlak şeritlerin fazlası karanlık şeritlerin eksiğini tam karşılar ve ortalama yine 2P olur. Sonuç: girişim elektronları yok etmez ya da çoğaltmaz, yalnızca nereye düşeceklerini yeniden dağıtır. İkinci yarığı açmak bazı noktalara düşen elektron sayısını sıfıra indirebilir."
+      },
+      "akilda": "Dalga fonksiyonu bir olasılık aracıdır: değerinin karesi, parçacığı orada bulma olasılığını verir (Born, 1926). Olasılıklar değil genlikler toplanır; genlikler birbirini söndürebildiği için karanlık şeritler oluşur."
+    },
+    {
+      "baslik": "Ölçmek ne demek? Bilinç değil, etkileşim",
+      "paragraflar": [
+        "Çift yarık deneyinin en çok anlatılan kısmı şudur: elektronun hangi yarıktan geçtiğini öğrenmeye çalışırsan girişim deseni kaybolur ve ekranda iki yığın kalır. Bu doğrudur. Ama popüler anlatımlarda çoğu zaman yanlış bir sonuca bağlanır: sanki elektron “izlendiğini anlar” ya da bir insanın bilinci sonucu değiştirir. Deneyler başka bir şey söyler. Desenin kaybolması için kimsenin bakması gerekmez; gereken tek şey, elektronun hangi yoldan geçtiğine dair bir izin evrenin herhangi bir yerinde kalmasıdır. Buna yol bilgisi denir.",
+        "Bunun en güzel gösterilerinden biri yine Viyana'dan geldi. Lucia Hackermüller ve arkadaşları 2004'te Nature'da, C70 moleküllerini girişimölçere girmeden önce lazerlerle ısıttıkları bir deneyi yayımladı. Moleküller yaklaşık 1000 K'in altındayken girişim deseni kusursuzdu. Sıcaklık 3000 K civarına çıktığında moleküller yolda birkaç görünür ışık fotonu yayma olasılığı kazandı ve desen giderek silindi. O fotonları hiçbir insan, hiçbir algılayıcı yakalamadı; düzeneğin duvarlarında kayboldular. Ama her foton, molekülün nereden geçtiğine dair kısmi bir bilgiyi dışarı taşıdı ve bu yeterliydi. Molekül, kızgın bir demirin ışıması gibi sıradan bir ısıl ışıma yaparak kendi dalga davranışını yitirdi.",
+        "Aynı grup girişimölçeri gazla doldurduğunda da benzer bir sonuç gördü: moleküllerin gaz molekülleriyle çarpışma olasılığı arttıkça şeritlerin belirginliği üstel olarak azaldı. Yani kuantum fiziğinde “ölçüm”, bir insanın gözlemi değil, kuantum sisteminin çevresiyle bir iz bırakacak biçimde etkileşmesidir. Bir hava molekülünün çarpması da bir ölçümdür. Kuantum davranışının çevreyle etkileşim yüzünden silinmesine dekoherans denir; Türkçede “eş evreliliğin bozulması” diye de anılır.",
+        "Dekoherans, girişimin neden kaybolduğunu iyi açıklar ve deneylerle desteklenir. Ama dürüst olmak gerekirse her şeyi çözmez: bir ölçümün sonunda neden tek bir sonuç gördüğümüz, yani elektronun neden şurada değil de burada belirdiği sorusu, “ölçüm problemi” adıyla hâlâ tartışılır. Bu tartışmanın tarafları da bilinç gerektiren bir açıklamaya ihtiyaç duymaz; dersin son bölümünde göreceğin yorumların hiçbiri, bir insan zihninin ölçüm sonucunu fiziksel olarak yarattığını savunmaz. Kısacası: “gözlemci” fizikte bir ölçüm aleti, bir foton ya da bir gaz molekülü olabilir; zihin gerekmez."
+      ],
+      "akilda": "Girişim deseni, yol bilgisi çevrede herhangi bir iz bıraktığında kaybolur; kimsenin bakması gerekmez. Isıtılan C70 molekülleri yaydıkları fotonlar yüzünden girişimini yitirdi (2004). Kuantumda ölçüm bilinç değil, etkileşimdir."
+    },
+    {
+      "baslik": "Heisenberg belirsizlik ilkesi: bilmemek değil, olmamak",
+      "paragraflar": [
+        "Kuantum fiziğinin en ünlü cümlelerinden biri, Alman fizikçi Werner Heisenberg'in 1927'de ortaya attığı belirsizlik ilkesidir. Aynı yıl Earle Kennard ilkenin bugün kullanılan biçimini türetti: bir parçacığın konumundaki yayılma ile momentumundaki yayılmanın çarpımı, h ÷ (4π)'den küçük olamaz. h ÷ (2π) büyüklüğüne indirgenmiş Planck sabiti denir ve değeri yaklaşık 1,055 × 10⁻³⁴ joule saniyedir; sınır onun yarısıdır. Sözle: bir parçacığın yerini ne kadar dar bir bölgeye sıkıştırırsan, hızı o kadar geniş bir aralığa yayılır. İkisini birden keskin yapamazsın.",
+        "İlke çoğu zaman “ölçerken parçacığı dürtüyoruz, o yüzden tam ölçemiyoruz” diye anlatılır. Heisenberg de ilk açıklamasında böyle bir dürtme örneği kullanmıştı; bu yüzden ilke uzun süre ölçümün sistemi bozmasıyla karıştırıldı. Bugünkü anlayış farklıdır: belirsizlik ilkesi aletlerimizin kusurundan değil, kuantum nesnelerinin dalga doğasından gelir. Keskin bir konumu ve keskin bir momentumu aynı anda taşıyan bir durum zaten yoktur; ölçemediğimiz şey, olmayan bir şeydir.",
+        "Bunu bir müzik benzetmesiyle sezebilirsin. Uzun süre çalan saf bir nota, kesin bir perdeye, yani kesin bir frekansa sahiptir; ama ne zaman çaldığı sorusunun keskin bir cevabı yoktur, çünkü uzun süre boyunca hep oradadır. Kısa bir el çırpması ise zamanda keskindir, ama belirli bir perdesi yoktur; birçok frekansın karışımıdır. Her dalga için bu takas geçerlidir: dalga ne kadar dar bir yere toplanırsa, onu oluşturmak için o kadar çok farklı dalga boyu gerekir. Parçacığın dalga boyu de Broglie bağıntısıyla momentumuna bağlı olduğu için, dalga boyundaki yayılma momentumdaki yayılma demektir.",
+        "Heisenberg 1932 Nobel Fizik Ödülü'nü “kuantum mekaniğini yaratması” için aldı. Belirsizlik ilkesinin sonuçları da şaşırtıcıdır: bir elektronu küçük bir bölgeye hapsetmek, onu kaçınılmaz olarak hızlı hareket ettirmek demektir. Atomların neden belli bir büyüklüğü olduğu ve neden çökmediği, beyaz cücelerin neden ayakta kaldığı (d6) bu fikre dayanır; bunları bir sonraki derste, d28'de göreceksin."
+      ],
+      "ornek": {
+        "baslik": "Örnek: Atomdaki elektron ve bir boncuk",
+        "metin": "Sınır: Δx × Δp ≥ h ÷ (4π) ≈ 5,27 × 10⁻³⁵ joule saniye. 1. adım (elektron): Elektronu bir atom büyüklüğüne, Δx ≈ 1 × 10⁻¹⁰ m'ye hapset. Δp ≥ 5,27 × 10⁻³⁵ ÷ 1 × 10⁻¹⁰ ≈ 5,27 × 10⁻²⁵ kg m/s. Hız yayılması Δv = Δp ÷ m = 5,27 × 10⁻²⁵ ÷ 9,109 × 10⁻³¹ ≈ 5,8 × 10⁵ m/s, yani saniyede yaklaşık 580 km. 2. adım (boncuk): 1 gramlık (10⁻³ kg) bir boncuğun yerini bir mikrometreye (10⁻⁶ m) kadar bilelim. Δp ≥ 5,27 × 10⁻³⁵ ÷ 10⁻⁶ = 5,27 × 10⁻²⁹ kg m/s; Δv ≥ 5,27 × 10⁻²⁹ ÷ 10⁻³ ≈ 5 × 10⁻²⁶ m/s. Sonuç: atomdaki elektron saniyede yüzlerce kilometrelik bir hız belirsizliğiyle kıpırdamak zorundadır; boncuğun belirsizliği ise ölçülemeyecek kadar küçüktür. Fark, kütlenin ve uzunluğun ölçeğinden gelir."
+      },
+      "akilda": "Belirsizlik ilkesine göre konum ve momentum yayılmalarının çarpımı h ÷ (4π)'den küçük olamaz. Bu bir ölçüm kusuru değil, dalga doğasının sonucudur: keskin konum ve keskin momentum aynı anda yoktur."
+    },
+    {
+      "baslik": "Kuantum neden gündelik hayatta görünmez?",
+      "paragraflar": [
+        "Elektronlar ve moleküller girişim yapıyorsa, neden kapıdan geçen bir insan ya da bir futbol topu yapmıyor? İki ayrı neden var. Birincisi h'nin küçüklüğü. de Broglie dalga boyu h ÷ (kütle × hız) olduğu için gündelik cisimlerin dalga boyu gülünç derecede kısadır. Kuantum girişimini ölçen Viyana grubunun bir derlemesinde de vurgulandığı gibi, büyük bir cismin de Broglie dalga boyu o kadar küçüktür ki kuantum doğası gözlenemez: hiçbir yarık ya da ağ o kadar ince şeritleri ayırt edemez.",
+        "İkinci neden dekoherans. Büyük bir cisim her an çevresiyle etkileşir: hava molekülleri ona çarpar, kendisi ısıl ışıma yapar, üzerine ışık düşer. Az önce gördüğün gibi her etkileşim bir yol bilgisi bırakır ve girişimi siler. Aynı derleme, virüs büyüklüğünde bir cismin girişiminin gaz çarpışmalarıyla bozulmaması için basıncın milibarın yaklaşık 3 × 10⁻¹⁰ katının altında olması gerektiğini hesaplar. Bu, deniz düzeyindeki hava basıncının kabaca bir trilyonda birinden daha düşük bir boşluktur. Masanın üzerindeki çay bardağı ise saniyede sayısız kez hava molekülleriyle “ölçülür”.",
+        "Bu, kuantum fiziğinin gündelik hayatla ilgisiz olduğu anlamına gelmez; tam tersine her şeyin altında o yatar. Maddenin çökmeden durabilmesi, kimya, güneş panelleri, bilgisayar çiplerindeki transistörler ve Güneş'in yanması kuantum kurallarıyla anlaşılır; bunların çoğunu d28'de göreceksin. Görünmeyen yalnızca girişim ve süperpozisyon gibi “tuhaf” yüzüdür; çünkü büyük ve sıcak cisimlerde bu yüz anında silinir.",
+        "Buradan bir uyarı da çıkar. “Kuantum” sözcüğü son yıllarda reklamlarda ve kişisel gelişim kitaplarında sıkça kullanılıyor: kuantum şifa, kuantum su, düşüncenin gerçekliği kuantumla değiştirmesi gibi. Bu derste gördüğün deneylerin hiçbiri böyle bir şeyi desteklemez. Kuantum etkileri ölçülebilir, tekrarlanabilir ve çoğu zaman çok küçük, çok soğuk ya da çok yalıtılmış sistemlerde ortaya çıkar. Bir ürün “kuantum” etiketiyle satılıyorsa, ilk sorulacak soru şudur: hangi deney, hangi ölçüm?"
+      ],
+      "ornek": {
+        "baslik": "Örnek: Yürüyen bir insanın dalga boyu",
+        "metin": "1. adım: 70 kg'lık bir insan saniyede 1,4 metre hızla yürüsün. Momentum p = 70 × 1,4 = 98 kg m/s. 2. adım: λ = h ÷ p = 6,626 × 10⁻³⁴ ÷ 98 ≈ 6,8 × 10⁻³⁶ m. 3. adım: Karşılaştır: C60 molekülünün dalga boyu 2,8 × 10⁻¹² m idi. Oran 2,8 × 10⁻¹² ÷ 6,8 × 10⁻³⁶ ≈ 4 × 10²³. Sonuç: yürüyen bir insanın dalga boyu, girişimi ölçülmüş bir molekülünkinden yaklaşık 10²³ kat küçüktür. Böyle bir dalganın şeritlerini ayıracak bir düzenek düşünülemez; üstelik insan, havayla ve ışıkla sürekli etkileştiği için girişim zaten silinirdi."
+      },
+      "akilda": "Gündelik cisimlerde kuantum tuhaflığı görünmez: de Broglie dalga boyları çok kısadır ve çevreyle sürekli etkileşim (dekoherans) girişimi anında siler. Ama kimyadan güneş paneline her şeyin altında kuantum vardır."
+    },
+    {
+      "baslik": "Yorumlar: fizikçiler neyi tartışıyor?",
+      "paragraflar": [
+        "Kuantum mekaniğinin hesap kuralları konusunda fizikçiler anlaşır: dalga fonksiyonu nasıl hesaplanır, Born kuralı olasılıkları nasıl verir, deney sonuçları nasıl öngörülür. Bu kurallar yüz yıldır her sınavı geçti. Anlaşamadıkları şey, bu kuralların gerçeklik hakkında ne söylediğidir. Dalga fonksiyonu gerçek bir şey mi, yoksa yalnızca bilgimizin bir özeti mi? Ölçümde gerçekten bir “çökme” olur mu? Bu sorulara verilen farklı cevaplara kuantum mekaniğinin yorumları denir.",
+        "Başlıcaları şöyle özetlenebilir. Kopenhag yorumu, kuramı ölçüm sonuçlarının olasılıklarını veren bir araç olarak görür ve ölçümler arasında “gerçekte ne olduğu” sorusunu anlamlı saymaz. Bilgi temelli (epistemik) yorumlar ve bunların bir türü olan QBism, dalga fonksiyonunu dünyanın kendisi değil, bir gözlemcinin bilgisinin ya da beklentilerinin özeti sayar. Everett'in adıyla anılan çok dünyalar yorumuna göre dalga fonksiyonu hiç çökmez; her olası sonuç gerçekleşir ve evren dallara ayrılır. Bohm mekaniği ya da pilot dalga kuramı, parçacıkların her an kesin bir konumu olduğunu ve onları bir dalganın yönlendirdiğini söyler. Kendiliğinden çökme modelleri ise dalga fonksiyonunun fiziksel bir süreçle kendiliğinden çöktüğünü varsayar.",
+        "Bu tartışmanın bugünkü durumunu ölçen bir anket var. Nature dergisi 2025'te 15.000'den fazla araştırmacıyı davet etti ve 1.100'den fazlası yanıt verdi. The Quantum Insider'ın aktardığına göre katılımcıların %36'sı Kopenhag yorumunu, yaklaşık %17'si bilgi temelli yorumları, %15'i çok dünyaları, %7'si Bohm mekaniğini seçti. Daha da ilginci, yalnızca %24'ü tercih ettiği yorumun doğru olduğunu söyleyecek kadar emindi; CERN Courier'e göre çoğu katılımcı kendi tercihini yeterli bir yer tutucu ya da kullanışlı bir düşünme aracı olarak görüyordu. Kuantum ile klasik dünya arasında keskin bir sınır olup olmadığı sorusunda da katılımcılar aşağı yukarı ikiye bölündü.",
+        "Bu ders bu yorumlar arasında taraf tutmuyor, çünkü fizik topluluğu da tutmuyor. Bir kitapta ya da videoda bunlardan biri kesin gerçek gibi anlatılıyorsa temkinli ol. Ortak noktaları da önemli: bu yorumların hiçbiri, insan bilincinin ölçüm sonucunu fiziksel olarak yarattığını savunmaz ve hepsi laboratuvarda aynı ölçülmüş sonuçlarla uyumlu olmak zorundadır. Bir sonraki derste, d28'de, bu tuhaf kuralların atomları nasıl kurduğunu, yıldızları nasıl ayakta tuttuğunu ve Güneş'i nasıl yaktığını göreceksin."
+      ],
+      "akilda": "Fizikçiler kuantum hesap kurallarında anlaşır ama anlamlarında anlaşamaz: Kopenhag, bilgi temelli yorumlar, çok dünyalar, Bohm mekaniği, kendiliğinden çökme. 2025 Nature anketinde en yaygın tercih Kopenhag (%36), ama yalnız %24'ü kendi yorumundan emin."
+    }
+  ],
+  "formuller": [
+    {
+      "ad": "Planck–Einstein bağıntısı (foton enerjisi)",
+      "ifade": "E = h × f = h × c ÷ λ;  E (eV) ≈ 1239,84 ÷ λ (nm)",
+      "aciklama": "E bir paketin (fotonun) enerjisi (J ya da eV), h Planck sabiti 6,62607015 × 10⁻³⁴ J·s (tam), f frekans (Hz), c ışık hızı, λ dalga boyu. Kısayol, h × c'nin elektronvolt nanometre cinsinden değeridir."
+    },
+    {
+      "ad": "Fotoelektrik denklem",
+      "ifade": "K_en büyük = h × f − W",
+      "aciklama": "K_en büyük çıkan en hızlı elektronun hareket enerjisi, W metalin iş fonksiyonu (elektronun çıkış bedeli). h × f < W ise ışık ne kadar parlak olursa olsun elektron çıkmaz. Durdurma gerilimi (volt) = K_en büyük (eV)."
+    },
+    {
+      "ad": "Fotonun momentumu",
+      "ifade": "p = h ÷ λ = E ÷ c",
+      "aciklama": "p momentum (kg m/s). Kütlesiz foton da momentum taşır; Compton saçılmasını ve ışınım basıncını açıklar. Yansıyan foton iki kat itme aktarır."
+    },
+    {
+      "ad": "de Broglie dalga boyu",
+      "ifade": "λ = h ÷ p = h ÷ (m × v);  yavaş parçacıkta p = √(2 × m × E)",
+      "aciklama": "m kütle (kg), v hız (m/s), E hareket enerjisi (J). Işık hızına yakın hızlarda göreli momentum kullanılır (d25)."
+    },
+    {
+      "ad": "Born kuralı",
+      "ifade": "olasılık yoğunluğu = (dalga fonksiyonunun büyüklüğü)², |ψ|²",
+      "aciklama": "ψ dalga fonksiyonu. Genlikler önce toplanır, sonra karesi alınır; bu yüzden iki yolun genlikleri birbirini söndürebilir (girişim)."
+    },
+    {
+      "ad": "Heisenberg belirsizlik ilkesi (Kennard biçimi)",
+      "ifade": "Δx × Δp ≥ ħ ÷ 2 = h ÷ (4π)",
+      "aciklama": "Δx konumdaki, Δp momentumdaki yayılma (standart sapma). ħ = h ÷ 2π ≈ 1,0546 × 10⁻³⁴ J·s indirgenmiş Planck sabiti. Bir ölçüm kusuru değil, dalga doğasının sonucudur."
+    },
+    {
+      "ad": "Isıl enerji ölçeği",
+      "ifade": "k × T;  k ≈ 8,617 × 10⁻⁵ eV/K",
+      "aciklama": "k Boltzmann sabiti (1,380649 × 10⁻²³ J/K, tam), T sıcaklık (K). Bir paketin enerjisi k × T'nin çok üstündeyse o paketin ısıyla oluşma olasılığı kabaca e üzeri eksi (E ÷ kT) ile düşer."
+    }
+  ],
+  "anahtar_sayilar": [
+    {
+      "deger": "6,62607015 × 10⁻³⁴ J·s (tam)",
+      "aciklama": "Planck sabiti h; SI kilogramı bu değeri sabitleyerek tanımlar. ħ = h/2π ≈ 1,054571817 × 10⁻³⁴ J·s",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Planck_constant"
+    },
+    {
+      "deger": "14 Aralık 1900",
+      "aciklama": "Planck kuantum varsayımına dayanan ışınım yasasını Alman Fizik Derneği'nde sundu",
+      "kaynak_url": "https://arxiv.org/pdf/1606.00190"
+    },
+    {
+      "deger": "6,57 × 10⁻²⁷ erg·s (±%0,5)",
+      "aciklama": "Millikan'ın 1916 fotoelektrik ölçümünden bulduğu Planck sabiti (6,57 × 10⁻³⁴ J·s)",
+      "kaynak_url": "https://physics.aps.org/story/v3/st23"
+    },
+    {
+      "deger": "1,12 eV; %33,7",
+      "aciklama": "Kristal silisyumun bant aralığı ve tek eklemli güneş pilinin kuramsal verim tavanı (Shockley–Queisser, AM1.5)",
+      "kaynak_url": "https://www.epfl.ch/about/campus/wp-content/uploads/2021/06/HIM21_Wyrsch-Nicolas_Photovoltaic-devices.pdf"
+    },
+    {
+      "deger": "9,08 mikronewton/m²",
+      "aciklama": "1 AB'de tam yansıtıcı bir güneş yelkenine ışınım basıncı (yutan yüzeyde 4,54)",
+      "kaynak_url": "https://en.wikipedia.org/wiki/Solar_sail"
+    },
+    {
+      "deger": "948 foton/(cm² s Å)",
+      "aciklama": "Sıfır kadirlik (Vega ölçekli) bir yıldızın 5556 Å'daki foton akısı",
+      "kaynak_url": "https://sites.astro.caltech.edu/~george/ay124/2009/Ay124_Lec02.pdf"
+    },
+    {
+      "deger": "%51,6 (30.767 deneme)",
+      "aciklama": "Tek foton algılama deneyinde üç gönüllünün toplam doğru cevap oranı",
+      "kaynak_url": "https://cosmosmagazine.com/science/biology/humans-can-see-a-single-photon-at-a-time"
+    },
+    {
+      "deger": "54 eV, 50°; 0,167 nm öngörü, 0,165 nm ölçüm",
+      "aciklama": "Davisson–Germer elektron kırınımı",
+      "kaynak_url": "https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Davisson%E2%80%93Germer_experiment"
+    },
+    {
+      "deger": "8 → 270 → 2.000 → 60.000 elektron",
+      "aciklama": "Tonomura (1989) tek elektron çift yarık kayıtlarındaki kareler; desen 20 dakikadan uzun sürede oluştu",
+      "kaynak_url": "https://physicsworld.com/a/the-double-slit-experiment/"
+    },
+    {
+      "deger": "~2.000 atom, >25.000 atomik kütle birimi",
+      "aciklama": "2019'da girişimi gösterilen en büyük moleküller (Fein ve ark., Nature Physics)",
+      "kaynak_url": "https://www.eurekalert.org/news-releases/545338"
+    },
+    {
+      "deger": "<1000 K kusursuz; ~3000 K silinir",
+      "aciklama": "Isıtılan C70 moleküllerinde girişim deseninin sıcaklıkla kaybolması (Hackermüller ve ark. 2004)",
+      "kaynak_url": "https://ar5iv.arxiv.org/html/quant-ph/0402146"
+    },
+    {
+      "deger": "%36 / %17 / %15 / %7; %24 emin",
+      "aciklama": "2025 Nature anketi: Kopenhag / bilgi temelli / çok dünyalar / Bohm; tercihinin doğru olduğundan emin olanlar",
+      "kaynak_url": "https://thequantuminsider.com/2025/08/02/a-century-into-quantum-mechanics-physicists-still-cant-agree-what-it-means-nature-survey-shows/"
+    }
+  ],
+  "sozluk": [
+    {
+      "terim": "kuantum",
+      "tanim": "Bazı fiziksel büyüklüklerin sürekli değil, belli büyüklükte paketler hâlinde alınıp verilmesi; bu paketlerin her biri."
+    },
+    {
+      "terim": "morötesi felaketi",
+      "tanim": "Klasik fiziğin, ısınan bir cismin kısa dalga boylarında sınırsız ışınım yayması gerektiği yolundaki yanlış öngörüsü; adını 1911'de Ehrenfest koydu."
+    },
+    {
+      "terim": "eş bölüşüm ilkesi",
+      "tanim": "Klasik ısı fiziğinde ısı enerjisinin bir sistemin her titreşim ya da hareket biçimine eşit pay olarak dağıldığını söyleyen ilke."
+    },
+    {
+      "terim": "iş fonksiyonu",
+      "tanim": "Bir elektronu bir metalin yüzeyinden koparıp dışarı çıkarmak için gereken en küçük enerji."
+    },
+    {
+      "terim": "durdurma gerilimi",
+      "tanim": "Fotoelektrik olayda en hızlı elektronları da durdurmaya yeten ters elektrik gerilimi; değeri elektronların en büyük hareket enerjisini verir."
+    },
+    {
+      "terim": "fotovoltaik etki",
+      "tanim": "Işığın bir malzemede, özellikle yarı iletkenlerde, doğrudan elektrik gerilimi ve akımı oluşturması; güneş panellerinin çalışma ilkesi."
+    },
+    {
+      "terim": "bant aralığı",
+      "tanim": "Bir yarı iletkende elektronun atomlara bağlı olduğu enerji durumlarıyla serbestçe dolaşabildiği durumlar arasındaki, elektronun bulunamadığı enerji boşluğu."
+    },
+    {
+      "terim": "ışınım basıncı",
+      "tanim": "Fotonların momentum taşıdığı için çarptıkları yüzeye uyguladığı itme kuvvetinin birim alana düşen payı."
+    },
+    {
+      "terim": "de Broglie dalga boyu",
+      "tanim": "Bir parçacığa eşlik eden dalganın boyu; Planck sabitinin parçacığın momentumuna bölümüdür (λ = h ÷ p)."
+    },
+    {
+      "terim": "kırınım",
+      "tanim": "Bir dalganın bir engelin kenarından ya da düzenli bir yapıdan geçerken yayılıp belli yönlerde güçlenmesi, belli yönlerde sönmesi."
+    },
+    {
+      "terim": "girişim",
+      "tanim": "İki ya da daha çok dalganın üst üste binince bazı yerlerde birbirini güçlendirmesi, bazı yerlerde söndürmesi."
+    },
+    {
+      "terim": "girişim deseni",
+      "tanim": "Girişim sonucu bir ekranda oluşan, parlak ve karanlık şeritlerin sırayla dizildiği görüntü."
+    },
+    {
+      "terim": "dalga fonksiyonu",
+      "tanim": "Bir kuantum sisteminin durumunu anlatan, zamanla Schrödinger denklemine göre değişen ve karesi olasılık veren matematiksel nicelik; ψ ile gösterilir."
+    },
+    {
+      "terim": "Born kuralı",
+      "tanim": "Dalga fonksiyonunun bir yerdeki büyüklüğünün karesinin, parçacığı orada bulma olasılığını verdiğini söyleyen kural (1926)."
+    },
+    {
+      "terim": "olasılık genliği",
+      "tanim": "Dalga fonksiyonunun değeri; artı ya da eksi olabilir, genlikler toplanıp karesi alınınca olasılık çıkar."
+    },
+    {
+      "terim": "yol bilgisi",
+      "tanim": "Bir parçacığın birden çok olası yoldan hangisini izlediğine dair evrende kalan herhangi bir iz; varsa girişim kaybolur."
+    },
+    {
+      "terim": "dekoherans",
+      "tanim": "Bir kuantum sisteminin çevresiyle etkileşerek girişim gibi kuantum davranışlarını yitirmesi; eş evreliliğin bozulması."
+    },
+    {
+      "terim": "belirsizlik ilkesi",
+      "tanim": "Bir parçacığın konumu ile momentumunun aynı anda keskin değerler taşıyamayacağını, yayılmalarının çarpımının h ÷ 4π'den küçük olamayacağını söyleyen ilke."
+    },
+    {
+      "terim": "indirgenmiş Planck sabiti",
+      "tanim": "Planck sabitinin 2π'ye bölümü, ħ ≈ 1,055 × 10⁻³⁴ J·s; kuantum formüllerinde sık geçer."
+    },
+    {
+      "terim": "Kopenhag yorumu",
+      "tanim": "Kuantum kuramını ölçüm sonuçlarının olasılıklarını veren bir araç olarak gören ve ölçümler arasında ne olduğunu sormayı anlamlı saymayan yorum."
+    },
+    {
+      "terim": "çok dünyalar yorumu",
+      "tanim": "Dalga fonksiyonunun hiç çökmediğini, her olası ölçüm sonucunun evrenin ayrı bir dalında gerçekleştiğini savunan yorum (Everett)."
+    },
+    {
+      "terim": "pilot dalga kuramı",
+      "tanim": "Parçacıkların her an kesin bir konumu olduğunu ve onları dalga fonksiyonunun yönlendirdiğini savunan yorum; Bohm mekaniği de denir."
+    }
+  ],
+  "defter_notu": [
+    "Morötesi felaketi: klasik fizik kısa dalga boylarında sonsuz ışınım bekliyordu. Planck 14 Aralık 1900: enerji paket paket, E = h × f. Nobel 1918.",
+    "h = 6,62607015 × 10⁻³⁴ J·s (tam). Kısayol: E (eV) ≈ 1239,84 ÷ λ (nm).",
+    "Fotoelektrik: K_en büyük = hf − W. Einstein 1905 (Nobel 1921). Millikan 1916 inanmadan doğruladı, h'yi %0,5 ile ölçtü.",
+    "Silisyum bant aralığı 1,12 eV → 1107 nm'den uzun ışık işe yaramaz; tek eklem tavanı %33,7.",
+    "Foton momentumu p = h/λ (Compton 1922–23). 1 AB'de yelken: 9,08 mikronewton/m². IKAROS 2010.",
+    "de Broglie λ = h/p (1924). Davisson–Germer: 54 eV → 0,167 nm öngörü, 0,165 ölçüm (Nobel 1937).",
+    "Tek tek elektronlar da girişim deseni kurar (Merli 1974, Tonomura 1989). C60 1999, ~2.000 atom 2019.",
+    "Born 1926: olasılık = genliğin karesi. Genlikler toplanır, birbirini söndürebilir.",
+    "Ölçüm = iz bırakan etkileşim, bilinç değil. Isıtılmış C70 foton yayınca girişim silinir (2004). Dekoherans.",
+    "Belirsizlik: Δx × Δp ≥ h/4π. Ölçüm kusuru değil, dalga doğası. Yorumlar tartışmalı: Kopenhag %36, %24 emin (Nature 2025)."
+  ],
+  "sorular": [
+    {
+      "soru": "Morötesi felaketi neydi ve Planck bunu nasıl ortadan kaldırdı?",
+      "cevap": "Klasik fizik, ısıyı her titreşim biçimine eşit paylaştırdığı için kısa dalga boylarında sınırsız ışınım öngörüyordu. Planck enerjinin E = h × f büyüklüğünde paketlerle alınıp verildiğini varsaydı; yüksek frekansta paket çok büyük olduğu için o biçimler nadiren uyarılır ve eğri düşer."
+    },
+    {
+      "soru": "Çok parlak kırmızı ışık bir metalden elektron koparamıyor ama sönük mor ışık koparıyor. Neden?",
+      "cevap": "Her foton enerjisini tek bir elektrona verir. Kırmızı fotonun enerjisi (h × f) iş fonksiyonundan küçükse, ışığı parlatmak yalnızca daha çok yetersiz foton göndermek demektir. Mor fotonun enerjisi eşiği aşar; sayıları az olsa da her biri bir elektron koparabilir."
+    },
+    {
+      "soru": "İş fonksiyonu 2,3 eV olan bir metale 365 nm'lik ışık düşüyor. Durdurma gerilimi kaç volttur?",
+      "cevap": "Foton enerjisi ≈ 1239,84 ÷ 365 ≈ 3,40 eV. En hızlı elektronun enerjisi 3,40 − 2,3 = 1,10 eV, yani durdurma gerilimi yaklaşık 1,1 volttur."
+    },
+    {
+      "soru": "Millikan'ın 1916 deneyi neden bilim tarihinde öğretici bir örnek sayılır?",
+      "cevap": "Millikan Einstein'ın ışık paketleri fikrine inanmıyordu ve onu çürütmeyi ya da en azından sınamayı bekliyordu; ama ölçümleri denklemi doğruladı ve h'yi %0,5 hassasiyetle verdi. Kendisi de Nobel konuşmasında sonucun beklentisine aykırı olduğunu söyledi: veri, tercihe ağır bastı."
+    },
+    {
+      "soru": "Silisyum güneş pili neden 1500 nm'lik kızılötesi ışığı kullanamaz?",
+      "cevap": "1500 nm'lik fotonun enerjisi 1239,84 ÷ 1500 ≈ 0,83 eV'tur; silisyumun 1,12 eV'luk bant aralığından küçüktür. Foton elektronu serbest bırakamaz ve soğurulmadan geçer. Sınır dalga boyu yaklaşık 1107 nm'dir."
+    },
+    {
+      "soru": "100 eV'luk bir elektronun de Broglie dalga boyu yaklaşık ne kadardır?",
+      "cevap": "E = 100 × 1,602 × 10⁻¹⁹ = 1,602 × 10⁻¹⁷ J; p = √(2 × 9,109 × 10⁻³¹ × 1,602 × 10⁻¹⁷) ≈ 5,40 × 10⁻²⁴ kg m/s; λ = 6,626 × 10⁻³⁴ ÷ 5,40 × 10⁻²⁴ ≈ 1,23 × 10⁻¹⁰ m ≈ 0,123 nm."
+    },
+    {
+      "soru": "Tonomura'nın deneyinde elektronlar tek tek geliyorsa girişim deseni nasıl oluşur?",
+      "cevap": "Her elektron ekrana tek bir nokta olarak düşer, ama nereye düşeceğinin olasılığını iki yolun genliklerinin toplandığı dalga fonksiyonu belirler. Binlerce nokta biriktikçe bu olasılık dağılımı, yani girişim deseni ortaya çıkar. Elektronlar seyrek geldiği için desen elektronların birbiriyle etkileşmesinden doğmaz."
+    },
+    {
+      "soru": "İkinci yarığı açmak ekranın bir noktasına düşen elektron sayısını nasıl azaltabilir?",
+      "cevap": "Kuantumda olasılıklar değil genlikler toplanır. O noktada iki yarıktan gelen genlikler zıt yöndeyse (a − a)² = 0 olur ve oraya hiç elektron düşmez; tek yarık açıkken ise a² kadar düşüyordu."
+    },
+    {
+      "soru": "“Elektron izlendiğini anlayınca davranışını değiştirir” cümlesi neden yanıltıcıdır?",
+      "cevap": "Girişimin kaybolması için insan gözlemcisi gerekmez; yol bilgisini taşıyan herhangi bir etkileşim, örneğin bir gaz çarpışması ya da kimsenin yakalamadığı bir ısıl foton yeterlidir. Hackermüller ve arkadaşlarının ısıtılmış C70 deneyi bunu gösterdi. Kuantumda ölçüm, iz bırakan fiziksel etkileşimdir."
+    },
+    {
+      "soru": "Belirsizlik ilkesi neden aletlerimizin yetersizliği değildir?",
+      "cevap": "Çünkü kuantum nesneleri dalga gibi davranır ve bir dalga aynı anda hem dar bir yere toplanıp hem de tek bir dalga boyuna sahip olamaz. Keskin konum ve keskin momentum taşıyan bir durum yoktur; sınır doğanın kendisinden gelir, ölçüm tekniğinden değil."
+    },
+    {
+      "soru": "Bir elektron 0,1 nm'lik bir bölgeye hapsedilirse hızındaki belirsizlik en az ne kadar olur?",
+      "cevap": "Δp ≥ 5,27 × 10⁻³⁵ ÷ 1 × 10⁻¹⁰ ≈ 5,3 × 10⁻²⁵ kg m/s; Δv = Δp ÷ 9,109 × 10⁻³¹ ≈ 5,8 × 10⁵ m/s, yani saniyede yaklaşık 580 km."
+    },
+    {
+      "soru": "Futbol topu neden iki yarıktan girişim deseni oluşturmaz? İki neden söyle.",
+      "cevap": "Birincisi, kütlesi büyük olduğu için de Broglie dalga boyu akıl almaz derecede kısadır; şeritler ayırt edilemez. İkincisi, hava molekülleri ve ısıl ışıma yoluyla çevresiyle sürekli etkileşir; bu dekoherans yol bilgisini dışarı taşır ve girişimi siler."
+    },
+    {
+      "soru": "Kuantum mekaniğinin yorumları konusunda fizikçiler arasında bir uzlaşma var mı?",
+      "cevap": "Hayır. Hesap kurallarında anlaşırlar ama anlamında anlaşamazlar. 2025 Nature anketinde Kopenhag %36 ile en yaygın tercih oldu; bilgi temelli yorumlar yaklaşık %17, çok dünyalar %15, Bohm mekaniği %7. Yalnızca %24'ü tercih ettiği yorumun doğru olduğundan emindi."
+    }
+  ],
+  "kaynaklar": [
+    {
+      "ad": "Wikipedia, Planck constant",
+      "url": "https://en.wikipedia.org/wiki/Planck_constant"
+    },
+    {
+      "ad": "Wikipedia, List of Nobel laureates in Physics",
+      "url": "https://en.wikipedia.org/wiki/List_of_Nobel_laureates_in_Physics"
+    },
+    {
+      "ad": "The Development of Elementary Quantum Theory from 1900 to 1927 (arXiv:1606.00190)",
+      "url": "https://arxiv.org/pdf/1606.00190"
+    },
+    {
+      "ad": "arXiv:2402.03405, Planck ve morötesi felaketi üzerine tarih çalışması",
+      "url": "https://arxiv.org/html/2402.03405v1"
+    },
+    {
+      "ad": "APS Physics, Focus: Robert Millikan and the photoelectric effect",
+      "url": "https://physics.aps.org/story/v3/st23"
+    },
+    {
+      "ad": "QuarkNet, Robert Millikan photoelectric analysis (cıva çizgileri)",
+      "url": "https://quarknet.org/sites/default/files/MillikanPhotoelectricAnalysis.pdf"
+    },
+    {
+      "ad": "EPFL, N. Wyrsch, Photovoltaic devices (ders notları)",
+      "url": "https://www.epfl.ch/about/campus/wp-content/uploads/2021/06/HIM21_Wyrsch-Nicolas_Photovoltaic-devices.pdf"
+    },
+    {
+      "ad": "Wikipedia, Solar sail",
+      "url": "https://en.wikipedia.org/wiki/Solar_sail"
+    },
+    {
+      "ad": "Caltech Ay124 ders notu 2, kadir sistemi ve foton akısı",
+      "url": "https://sites.astro.caltech.edu/~george/ay124/2009/Ay124_Lec02.pdf"
+    },
+    {
+      "ad": "Francis Crick Institute, Direct detection of a single photon by humans (Tinsley ve ark., Nature Communications 7, 12172)",
+      "url": "https://www.crick.ac.uk/research/publications/direct-detection-of-a-single-photon-by-humans"
+    },
+    {
+      "ad": "Cosmos, Humans can see a single photon at a time",
+      "url": "https://cosmosmagazine.com/science/biology/humans-can-see-a-single-photon-at-a-time"
+    },
+    {
+      "ad": "Wikipedia, Davisson–Germer experiment",
+      "url": "https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Davisson%E2%80%93Germer_experiment"
+    },
+    {
+      "ad": "Physics World, The double-slit experiment",
+      "url": "https://physicsworld.com/a/the-double-slit-experiment/"
+    },
+    {
+      "ad": "Tonomura ve ark. 1989, American Journal of Physics 57, 117 (künye)",
+      "url": "https://stovneng.folk.ntnu.no/TFY4215_2022/artikler/tonomura_1989.pdf"
+    },
+    {
+      "ad": "Juffmann, Sezer, Ulbricht, Arndt ve ark., Quantum interference of molecules (arXiv:1211.3493)",
+      "url": "https://arxiv.org/pdf/1211.3493"
+    },
+    {
+      "ad": "EurekAlert, 2,000 atoms in two places at once (Fein ve ark. 2019)",
+      "url": "https://www.eurekalert.org/news-releases/545338"
+    },
+    {
+      "ad": "Hackermüller ve ark., Decoherence of matter waves by thermal emission of radiation (Nature 427, 711)",
+      "url": "https://ar5iv.arxiv.org/html/quant-ph/0402146"
+    },
+    {
+      "ad": "Wikipedia, Wave function",
+      "url": "https://en.wikipedia.org/wiki/Wave_function"
+    },
+    {
+      "ad": "Britannica, Max Born",
+      "url": "https://www.britannica.com/biography/Max-Born"
+    },
+    {
+      "ad": "Wikipedia, Uncertainty principle",
+      "url": "https://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq.ipfs.4everland.io/wiki/Gabor_limit.html"
+    },
+    {
+      "ad": "Wikipedia, List of physical constants",
+      "url": "https://en.wikipedia.org/wiki/List_of_physical_constants"
+    },
+    {
+      "ad": "The Quantum Insider, Nature 2025 kuantum yorumları anketi",
+      "url": "https://thequantuminsider.com/2025/08/02/a-century-into-quantum-mechanics-physicists-still-cant-agree-what-it-means-nature-survey-shows/"
+    },
+    {
+      "ad": "CERN Courier, The measurement problem, measured",
+      "url": "https://cerncourier.com/a/the-measurement-problem-measured/"
+    },
+    {
+      "ad": "WorldAtlas, How a catastrophe led to the discovery of quantum mechanics",
+      "url": "https://www.worldatlas.com/science/how-a-catastrophe-led-to-the-discovery-of-quantum-mechanics.html"
+    }
+  ]
+}
