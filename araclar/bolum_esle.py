@@ -20,6 +20,7 @@ for yol in glob.glob(os.path.join(K, 'cizim_*.js')):
     s = open(yol, encoding='utf-8').read()
     def r(m):
         global degisen
+        if (m.group(1), int(m.group(2))) not in esle: return m.group(0)   # önceki başlık dosyasında olmayan (yeni) ders: dizin olduğu gibi kalır
         y = esle[(m.group(1), int(m.group(2)))]
         if y != int(m.group(2)): degisen += 1
         return f"ders: '{m.group(1)}', bolum: {y}"
@@ -29,7 +30,7 @@ yol = os.path.join(K, 'dersler.js'); s = open(yol, encoding='utf-8').read()
 m = re.search(r"const MINI = \{(.*?)\};", s, re.S)
 def mini(mm):
     ders, ic = mm.group(1), mm.group(2)
-    return ders + ': { ' + ', '.join(f"{esle[(ders, int(a))]}: {b}" for a, b in re.findall(r"(\d+): ('[a-z]+')", ic)) + ' }'
+    return ders + ': { ' + ', '.join(f"{esle.get((ders, int(a)), int(a))}: {b}" for a, b in re.findall(r"(\d+): ('[a-z]+')", ic)) + ' }'
 yeni_mini = re.sub(r"(d\d+): \{([^}]*)\}", mini, m.group(1))
 s = s[:m.start(1)] + yeni_mini + s[m.end(1):]; open(yol, 'w', encoding='utf-8').write(s)
 yol = os.path.join(K, 'veri/sinavlar.json'); S = json.load(open(yol, encoding='utf-8'))

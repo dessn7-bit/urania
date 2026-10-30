@@ -173,7 +173,7 @@ test('9: yanlış türde depo değerleri (dersBitti, sinavSonuc, sinavYanlis, ka
   await depo(page, { dersBitti: 'null', sinavSonuc: '{"gokyuzu":5}', sinavYanlis: '"x"', kartlar: '"abc"' });
   await page.reload();
   await expect(page.locator('.ders-liste li').first()).toBeVisible();
-  await expect(page.locator('.sinav-giris')).toHaveCount(5);
+  await expect(page.locator('.sinav-giris')).toHaveCount(6);
   await page.goto('/index.html#ders/d1');
   await expect(page.locator('#dsBitir')).toHaveText('Okudum');
   await depo(page, { dersBitti: '"abc"' });
