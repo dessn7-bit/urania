@@ -66,7 +66,7 @@ test('Ders içi deney: d3\'te Kepler deneyi açılır, ölçer, kapanır; başka
 
 test('Ünite sınavı: 20 soruluk havuzdan 15 soru (her dersten en az biri), yanlış cevap açıklama gösterir, sonuç kaydedilir, yanlışlar karta düşer', async ({ page }) => {
   await page.goto('/index.html#ders');
-  await expect(page.locator('.sinav-giris')).toHaveCount(6);
+  await expect(page.locator('.sinav-giris')).toHaveCount(11);
   await expect(page.locator('.sinav-giris').first()).toContainText('15 soru (20 soruluk havuzdan)');
   await page.goto('/index.html#ders/sinav/gokyuzu');
   const [sorular, uniteDers] = await page.evaluate(() => Promise.all([fetch('veri/sinavlar.json').then(r => r.json()).then(j => j.uniteler.gokyuzu), fetch('veri/dersler.json').then(r => r.json()).then(j => j.uniteler.find(u => u.id === 'gokyuzu').dersler)]));
