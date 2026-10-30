@@ -56,7 +56,7 @@
         <div class="cip-grup" id="dbHedef" role="group" aria-label="Hedef">${hedefler.map((x, i) => `<button type="button" class="dugme" data-i="${i}" aria-pressed="${i === 0}">${U.kacis(x.ad)}</button>`).join('')}</div>
         ${o.kaydirici('dbD', 'Ağız çapı D (objektif ya da ayna)', lg(7), lg(300), 'any', lg(50))}
         ${o.kaydirici('dbM', 'Büyütme M', 0, lg(300), 'any', lg(7))}
-        ${o.kaydirici('dbAfov', 'Göz merceğinin görünür alanı', 30, 100, 0.1, 42.7)}
+        ${o.kaydirici('dbAfov', 'Göz merceğinin görünür alanı', 30, 100, 'any', 42.7)}
         <div class="cip-grup" id="dbGok" role="group" aria-label="Gökyüzü">${gokler.map((g, i) => `<button type="button" class="dugme" data-g="${g.id}" aria-pressed="${i === 0}">${U.kacis(g.ad)} gök</button>`).join('')}</div>
         <label class="alan" for="dbGoz">Göz bebeğin karanlıkta (yaşa göre ortalama)
           <select id="dbGoz"><option value="${dRef}">${U.sayi(dRef, 1)} mm (derslerdeki varsayım)</option>${gozT.map(([y, mm]) => `<option value="${mm}">${y} yaş: ${U.sayi(mm, 1)} mm</option>`).join('')}</select></label>
@@ -84,7 +84,7 @@
       const gor = yildiz[hedefI].filter(s => s.m <= LM && Math.hypot(s.x, s.y) <= r);
       st = { D, M, afov, p, gok, hd, tf, cik, bos, dEt, LM, ray, daw, goz, pen, tam, sigar, gor };
       S('dbDCikti').textContent = U.sayi(D, D < 20 ? 1 : 0) + ' mm';
-      S('dbMCikti').textContent = U.sayi(M, M < 10 ? 1 : 0) + '×';
+      S('dbMCikti').textContent = U.sayi(M, M < 10 && Math.abs(M - Math.round(M)) > 0.05 ? 1 : 0) + '×';
       S('dbAfovCikti').textContent = U.sayi(afov, 1) + '°';
       const oran = H.isikOrani(D, dRef);
       S('dbIsik').textContent = U.sayi(oran, oran < 10 ? 1 : 0) + ' kat (' + U.sayi(H.kadirFarki(oran), 1) + ' kadir)';
