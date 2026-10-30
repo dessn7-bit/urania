@@ -142,8 +142,8 @@ Not: "(dNN doğrulanmış)" işaretli satırlar ilgili dersin kaynak tablosunda 
 
 ## Denetim (2026-10-30, bağımsız doğrulayıcı)
 - Yeniden açılan kaynaklar: arXiv astro-ph/0405568 (A. Ray; 550 keV, 0,86 keV, 15,6 milyon K, E0 = 5,9 keV T6 = 15, "virtually absent", Atkinson–Houtermans), arXiv 1808.05966, QuTech, Willow, Hydrogen line, E. M. Purcell, arXiv 1006.5719 (10 fm, Sommerfeld, Stern–Gerlach, Pauli, parafin/su, MRI 1971–77), Nobel listesi (2025 dahil), Quanta 2022 (Clauser, Aspect, 2017 yıldız ışığı, 1997, Micius 2016), APS lazer (Townes 1953 patent, Maiman 16.5.1960), White dwarf, Optica LIGO.
-- Gamow tepesi HESAP: 1,22 × (Z1²Z2² μ T6²)^(1/3) keV, μ = 0,5, T6 = 15 → 5,89 keV (kaynakla aynı); T6 = 15,7 → 6,07 keV.
+- Gamow tepesi kontrol HESABI (ders kitabı yaklaşık formülü, yalnız kaynağın 5,9 keV değerini sınamak için): 1,22 × (Z1²Z2² μ T6²)^(1/3) keV, μ = 0,5, T6 = 15 → 5,89 keV (kaynakla aynı); T6 = 15,7 → 6,07 keV.
 - Süperpozisyon: "parçacığın ölçülmeden önce belirli bir yerde olduğunu söylemek deneylerle uyumlu değildir" yoruma bağlıydı (Bohm mekaniği buna uyar) → "sıradan bilye gibi düşünmek deneyleri açıklamaz" (yorum tarafsızlığı).
 - Pauli: "aynı duruma ikiden fazla elektron" → "aynı hareket durumuna zıt spinli ikiden fazla" (aynı kuantum durumunda yalnız bir elektron olur); d28_sinav d28-1 açıklaması da düzeltildi.
 - Şeker küpü (~1 cm³ değil) → "bir santimetreküplük".
-- Flash: NOR türünde yazma sıcak taşıyıcıyla yapılır; "bugünkü flash belleklerde" → "bugünkü yaygın flash belleklerde" (yumuşatma).
+- Flash: kaynak (3D InCites) tünellemeyi NAND flash'ın temeli olarak anlatıyor, bütün flash türleri için demiyor; "bugünkü flash belleklerde" → "bugünkü yaygın flash belleklerde" (yumuşatma).
