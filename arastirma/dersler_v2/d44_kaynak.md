@@ -51,7 +51,7 @@ Kısaltmalar: EF = https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.htm
 | [B] Jeffreys 1939 ikna; Birch 1952 katı, kristal demir | APS | "Jeffreys was convinced in 1939" ; "In 1952, Francis Birch concluded the inner core is solid, probably crystalline iron." |
 | [B] 1970 duyarlı sismograflar yansıyan dalga | AMNH | "confirmed in 1970, when more sensitive seismographs detected waves reflecting off the solid core" |
 | [B] Katılık 1971'de doğrulandı; iç çekirdekten S dalgası 2005 | IC | "Confirmed in 1971. Shear waves passing through the inner core were reported in 2005." |
-| [B] Lehmann 1888–1993, 105 yaşında; Lehmann süreksizliği | AMNH | born 1888, died 1993, "lived to be 105" ; "Lehmann Discontinuity" |
+| [B] DOĞRULAMA DÜZELTMESİ: Lehmann 13 Mayıs 1888 – 21 Şubat 1993, 104 yaşında (AMNH'nin '105'i yanlış); AMNH iç–dış çekirdek sınırına Lehmann süreksizliği der, Wikipedia bu adı çoğunlukla 190–250 km'deki üst manto sınırı için kullanır | APS ; https://en.wikipedia.org/wiki/Inge_Lehmann ; https://en.wikipedia.org/wiki/Earth%27s_inner_core ; AMNH | APS: born 1888, died 1993 at 104 ; Wiki: "aged 104" ; "depths between 190 and 250 km" ; inner core: "sometimes called the 'Lehmann discontinuity'", name "usually refers to a different discontinuity" ; AMNH: "what has come to be called the Lehmann Discontinuity" |
 | [H] 2π × 6371 = 40.030 km; × 103/360 = 11.453; × 143/360 = 15.901; fark 4.448 km | — | python3 |
 
 ## Bölüm 4 — Katman katman Dünya
@@ -95,9 +95,14 @@ Kısaltmalar: EF = https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.htm
 | [B] 17 Ağustos 1999, 03.01 yerel; Mw 7,6; 35–45 s; ölü 17.127–18.373; bazı kaynaklar çok daha yüksek; kırık >125 km; Düzce 12 Kasım | IZM | "03:01 local time" ; "moment magnitude 7.6" ; "35–45 seconds" ; "17,127–18,373 dead" ; "closer to 45,000" (bazı kaynaklar) ; "over 125 km" ; 1999 Düzce, November 12 |
 | [B] Ortalama kayma 3 m, en çok 4,4 m | EEF | "mean slip is 3 m with a maximum slip of 4.4 m" |
 | [B] Marmara segmentine gerilim; ~150 km deniz altı sismik boşluk | IZM | "increased stress on the Marmara segment" ; "150 km (93 mi) long submarine seismic gap below the Sea of Marmara" |
-| [B] %62 ± 15 (30 yıl), %32 ± 12 (10 yıl); 2000 | PAR | "We find a 62±15% probability (one standard deviation) of strong shaking during the next 30 years" ; 32±12% for the next decade |
+| [B] DOĞRULAMA: Parsons ve ark. 2000, Science 288(5466) 661–665: %62 ± 15 güçlü sarsıntı, 30 yıl; pencere Mayıs 2000–2030 (kitap bölümü); güçlü sarsıntı = MMI VIII | https://pubs.usgs.gov/publication/70022614 ; PAR | "We find a 62 ± 15% probability (one standard deviation) of strong shaking during the next 30 years" ; PAR: "over the next 30 yr (May 2000-2030)" |
+| [B] Parsons 2004 (JGR): 2004–2034, İstanbul 30 yıllık M≥7 olasılığı Poisson %21, zaman bağımlılığı ve gerilim aktarımıyla %41 ± 14 | https://www.usgs.gov/node/113336 | "The 30 year Poisson probability at Istanbul is 21%," ; "the addition of time dependence and stress transfer raises it to 41 ± 14%." |
+| [B] Murru ve ark. 2016 (JGR): İstanbul'da 30 yılda M>7,3 Poisson %35, zaman bağımlılığı + gerilim aktarımıyla %47 | https://www.usgs.gov/publications/m7-earthquake-rupture-forecast-and-time-dependent-probability-sea-marmara-region | "aggregated 30-yr Poisson probability of M >7.3 earthquakes at Istanbul of 35%, which increases to 47%" |
+| [B] 23 Nisan 2025 Mw 6,2, İstanbul'un ~60 km batısı, Marmara; güney bölüm 7,4'e varan depreme yetecek enerji biriktirmiş | https://www.gfz.de/en/press/news/details/erdbeben-der-staerke-62-und-53-bei-istanbul | "earthquake with magnitude Mw 6.2" ; "around 60 kilometres west of Istanbul in the Sea of Marmara" ; "enough energy stored to cause an earthquake with a magnitude of up to 7.4" |
+| [B] İkinci kaynak: Temblor, 2025 depremi M 6,2 ve Parsons 2004 %41 ± 14 (2004–2034) | https://temblor.net/earthquake-insights/a-magnitude-6-2-quake-strikes-the-marmara-fault-at-site-of-large-historic-earthquakes-near-istanbul-16755/ | "estimated a 41±14% probability of a magnitude 7 or greater Marmara Fault earthquake affecting Istanbul" |
+| [B] Deprem tahmin edilemez; yalnızca olasılık hesaplanır | https://www.usgs.gov/faqs/can-you-predict-earthquakes?page=1 | "Neither the USGS nor any other scientists have ever predicted a major earthquake." ; "USGS scientists can only calculate the probability that a significant earthquake will occur" |
 | [H] 3000/22 = 136; 3000/29 = 103; 3000/15 = 200 yıl | — | python3 |
-| Not: AFAD ve Kandilli'ye yalnızca yönlendirme yapıldı; onlardan iddia alınmadı | — | — |
+| Not: AFAD (afad.gov.tr) ve Kandilli'ye yalnızca yönlendirme yapıldı; onlardan sayısal iddia alınmadı. afad.gov.tr hazırlık sayfası WebFetch izin zaman aşımı yüzünden açılamadı | — | — |
 | Erişilemeyen: https://rock.geosociety.org/net/gsatoday/archive/10/1/article/i1052-5173-10-1-1.htm (izin isteği zaman aşımı; yeniden denenmedi) | — | — |
 
 ## Bölüm 7 — Dinamo
@@ -191,7 +196,7 @@ Kısaltmalar: EF = https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.htm
 | İddia | Kaynak URL | Kaynaktaki ifade |
 |---|---|---|
 | [B] 14 Şubat 1990, Voyager 1; aile portresi, 60 kare; saçılmış ışık huzmesinin ortasında; 0,12 piksel hilal; ~6 milyar km (3,7 milyar mil) ve "more than 4 billion miles"; ecliptic'in ~32° üstü; Sagan'ın kitabına ad | PBD | "on Feb. 14, 1990, by NASA's Voyager 1" ; "a total of 60 frames" ; "Earth lies right in the center of one of the scattered light rays" ; "Earth was a crescent only 0.12 pixels in size" ; 3.7 billion miles (6 billion km) ; "more than 4 billion miles from Earth" ; 32 degrees above the ecliptic |
-| [Ö] Dünya ışığı; Ay'dan Dünya neredeyse dolun; dürbünle karanlık kısım bazen soluk parlar | d10_kaynak.md (https://science.nasa.gov/moon/moon-phases/ ; https://science.nasa.gov/moon/viewing-tips/) | "the Sun's light reflecting off Earth's surface onto the face of the Moon" ; "you can also sometimes see the dark portion of the Moon glowing faintly" |
+| [Ö]/[B] Dünya ışığı; Ay'dan Dünya neredeyse dolun; hilal evresinde karanlık kısım bazen soluk parlar (dürbün ifadesi kaynakta yok, metinden çıkarıldı) | d10_kaynak.md ; https://science.nasa.gov/moon/viewing-tips/ | "you can also sometimes see the dark portion of the Moon glowing faintly in the sunlight that reflects off Earth" |
 | [Ö] Ay tutulması Dünya'nın gölgesi | d10.json | — |
 | [Ö] Gökyüzü sekmesindeki Uzay istasyonları ve uydular listesi 5 günlük geçişleri hesaplar | d23.json | d23 metni |
 | [Ö] Görüş için 1 yay saniyesi iyi değer; kentte daha kötü | d12.json | d12 metni |

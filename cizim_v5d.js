@@ -168,21 +168,20 @@
   C.ekle('d45-hulse-taylor', {
     ders: 'd45', bolum: 13, oran: 0.98,
     baslik: 'Hulse–Taylor çifti: iki nötron yıldızı Güneş boyunda bir alanda dolanır',
-    aciklama: 'İki yıldızın ortak kütle merkezi çevresindeki yolları ölçekli çizildi; kesikli büyük daire aynı ölçekte Güneş\'tir. Atarca ile eşinin kütleleri neredeyse eşit olduğu için yolları neredeyse aynı büyüklükte, birbirinin aynası iki elipstir. Çizimde iki yıldız da en yakın noktadadır: aralarında yaklaşık 746.600 kilometre, yani Güneş\'in yarıçapı kadar uzaklık vardır. En uzak noktada aralık 3,15 milyon kilometreye çıkar. Bir tur 7,75 saat sürer. Yörüngenin en yakın noktası her yıl yaklaşık 4,2 derece döner; kütleçekim dalgaları yörüngeyi her yıl yaklaşık 3,5 metre küçültür ve iki yıldız yaklaşık 300 milyon yıl sonra birleşecek.',
+    aciklama: 'İki yıldızın ortak kütle merkezi çevresindeki yolları ölçekli çizildi; dolgulu, kesikli büyük daire aynı ölçekte Güneş\'tir. Atarca ile eşinin kütleleri neredeyse eşit olduğu için yolları neredeyse aynı büyüklükte, birbirinin aynası iki elipstir. Düz çizgi atarcanın, noktalı çizgi eşinin yoludur. Çizimde iki yıldız da en yakın noktadadır: aralarında yaklaşık 746.600 kilometre, yani Güneş\'in yarıçapı kadar uzaklık vardır. En uzak noktada aralık 3,15 milyon kilometreye çıkar. Bir tur 7,75 saat sürer. Yörüngenin en yakın noktası her yıl yaklaşık 4,2 derece döner; kütleçekim dalgaları yörüngeyi her yıl yaklaşık 3,5 metre küçültür ve iki yıldız yaklaşık 300 milyon yıl sonra birleşecek.',
     kaynak: [KAYNAK.hulseTaylor, KAYNAK.nasaGunes],
     ciz(S) {
       const R = S.R, rp = 746600, ra = 3.15e6, a = (rp + ra) / 2, e = (ra - rp) / (ra + rp);
       const mp = 1.441, mc = 1.387, ap = a * mc / (mp + mc), ac = a * mp / (mp + mc);
-      const k = 340 / (ap * (1 + e) + ac * (1 + e)), cx = 30 + ap * (1 + e) * k, cy = 150;
+      const k = 340 / (ap * (1 + e) + ac * (1 + e)), cx = 30 + ap * (1 + e) * k, cy = 162;
       let s = '';
       /* Güneş, ölçekli */
       s += S.daire(cx, cy, R_GUNES * k, { dolgu: R.gunes, renk: R.gunes, kalin: 1.6, saydam: 0.18 });
       s += S.daire(cx, cy, R_GUNES * k, { renk: R.gunes, kalin: 1.6, kesik: '6 4' });
-      s += S.zeminliYazi(cx, cy - R_GUNES * k - 8, 'Güneş, aynı ölçekte', { boy: 13, hiza: 'middle', renk: R.metin });
       /* yörüngeler: atarca (periastron sağda), eş (periastron solda); elips merkezleri odaktan ae kadar kayık */
       const bp = ap * Math.sqrt(1 - e * e), bc = ac * Math.sqrt(1 - e * e);
       s += S.elips(cx - ap * e * k, cy, ap * k, bp * k, { renk: R.metin, kalin: 2.2 });
-      s += S.elips(cx + ac * e * k, cy, ac * k, bc * k, { renk: R.metin, kalin: 1.6, kesik: '7 4' });
+      s += S.elips(cx + ac * e * k, cy, ac * k, bc * k, { renk: R.metin, kalin: 2, kesik: '2 4' });
       /* kütle merkezi */
       s += S.cizgi(cx - 5, cy - 5, cx + 5, cy + 5, { renk: R.metin, kalin: 1.5 }) + S.cizgi(cx - 5, cy + 5, cx + 5, cy - 5, { renk: R.metin, kalin: 1.5 });
       /* yıldızlar en yakın noktada */
@@ -195,15 +194,16 @@
       s += S.ok((xc + xp) / 2, ya, xc + 1, ya, { renk: R.vurgu, kalin: 1.6, boy: 6 }) + S.ok((xc + xp) / 2, ya, xp - 1, ya, { renk: R.vurgu, kalin: 1.6, boy: 6 });
       s += S.zeminliYazi((xc + xp) / 2, ya + 20, '746.600 km', { boy: 13, hiza: 'middle', renk: R.vurgu, kalin: true });
       /* etiketler */
-      s += S.yazi(xp + 8, cy - 10, 'atarca 1,441', { boy: 13, renk: R.metin, kalin: true });
+      s += S.zeminliYazi(xp + 9, cy - 10, 'atarca 1,441', { boy: 13, renk: R.metin, kalin: true });
       s += S.zeminliYazi(xc - 8, cy - 10, 'eş 1,387', { boy: 13, hiza: 'end', renk: R.metin, kalin: true });
-      s += S.yazi(8, 20, 'kalın: atarcanın yolu · kesikli: eşin yolu', { boy: 13, renk: R.soluk });
+      s += S.yazi(8, 20, 'düz çizgi: atarcanın yolu · noktalı: eşin yolu', { boy: 13, renk: R.soluk });
+      s += S.yazi(8, 40, 'dolgulu kesikli daire: Güneş, aynı ölçekte', { boy: 13, renk: R.gunes });
       /* en uzak aralık, alt ölçek */
       const yb = cy + bc * k + 26, xl = cx - ap * (1 + e) * k, xr = cx + ac * (1 + e) * k;
       s += S.ok((xl + xr) / 2, yb, xl, yb, { renk: R.soluk, kalin: 1.2, boy: 6 }) + S.ok((xl + xr) / 2, yb, xr, yb, { renk: R.soluk, kalin: 1.2, boy: 6 });
       s += S.zeminliYazi((xl + xr) / 2, yb + 20, 'en uzak aralık: 3,15 milyon km', { boy: 13, hiza: 'middle', renk: R.metin });
-      const satir = ['1 tur: 7,75 saat (dış merkezlik 0,617)', 'en yakın nokta yılda ≈4,2° döner', 'yörünge yılda ≈3,5 m küçülür: ≈300 milyon yılda birleşme'];
-      satir.forEach((t, i) => { s += S.yazi(8, yb + 52 + i * 20, t, { boy: 13, renk: i === 2 ? R.vurgu : R.metin, kalin: i === 2 }); });
+      const satir = ['kütleler Güneş kütlesi; 1 tur: 7,75 saat', 'en yakın nokta yılda ≈4,2° döner', 'yörünge yılda ≈3,5 m küçülür: ≈300 milyon yılda birleşme'];
+      satir.forEach((t, i) => { s += S.yazi(8, yb + 50 + i * 20, t, { boy: 13, renk: i === 2 ? R.vurgu : R.metin, kalin: i === 2 }); });
       return s;
     }
   });

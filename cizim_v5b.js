@@ -244,15 +244,15 @@
       s += S.yazi(392, y0 - 40, '480.000 km\'ye', { boy: 13, hiza: 'end', renk: R.soluk });
       /* Mimas */
       s += S.daire(X(185.537), y0 + h / 2, 4.5, { dolgu: R.ay, renk: R.zemin, kalin: 1 });
-      s += S.yazi(392, y0 - 26, 'Mimas', { boy: 13, hiza: 'end' });
+      s += S.yazi(392, y0 + h + 18, 'Mimas', { boy: 13, hiza: 'end' });
       /* harfler */
       [['D', 70.7], ['C', 83.2], ['B', 104.7], ['A', 129.4], ['F', 140.2], ['G', 169.6], ['E', 185]].forEach(([t, a]) => {
         s += S.yazi(X(a), y0 - 8, t, { boy: 15, kalin: true, hiza: 'middle' });
       });
       s += S.cizgi(X(119.8), y0 + h, X(119.8) - 14, y0 + h + 24, { renk: R.metin, kalin: 1 });
       s += S.yazi(X(119.8) - 22, y0 + h + 38, 'Cassini Bölümü', { boy: 13, hiza: 'middle' });
-      s += S.yol(`M${n2(X(133.584))},${y0 + h} V${y0 + h + 18} H272`, { renk: R.metin, kalin: 0.8 }) + S.yol(`M${n2(X(136.504))},${y0 + h} V${y0 + h + 38} H272`, { renk: R.metin, kalin: 0.8 });
-      s += S.yazi(276, y0 + h + 22.5, 'Encke Boşluğu', { boy: 13 }) + S.yazi(276, y0 + h + 42.5, 'Keeler Boşluğu', { boy: 13 });
+      s += S.yol(`M${n2(X(133.584))},${y0 + h} V${y0 + h + 18} H262`, { renk: R.metin, kalin: 0.8 }) + S.yol(`M${n2(X(136.504))},${y0 + h} V${y0 + h + 38} H262`, { renk: R.metin, kalin: 0.8 });
+      s += S.yazi(265, y0 + h + 22.5, 'Encke Boşluğu', { boy: 13 }) + S.yazi(265, y0 + h + 42.5, 'Keeler Boşluğu', { boy: 13 });
       /* eksen */
       const ya = 214;
       s += S.cizgi(X(60), ya, X(190), ya, { renk: R.soluk, kalin: 1 });

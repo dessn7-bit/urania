@@ -92,6 +92,7 @@ Kısaltmalar: NEB = https://en.wikipedia.org/wiki/Nebular_hypothesis ; HIS = htt
 | [B] Kaçak büyüme (runaway growth) terimi | SI | onset of "runaway growth can be delayed until planetesimals reach radii of 100 km" |
 | [B] Birleşme evresi 10–100 milyon yıl; sınırlı sayıda Dünya boyutunda cisim | NEB | "lasts for 10 to 100 million years, is the formation of a limited number of Earth-sized bodies" |
 | [Ö] Ay ~4,51 milyar yıl önce, Güneş Sistemi'nin başlangıcından ~50 milyon yıl sonra (Theia) | d10.json | d10 metni |
+| Not (doğrulama): dev çarpışma d10'da varsayım olarak sunulur; d34'te iki cümle 'varsayıma göre' diye yumuşatıldı | d10.json | "dev çarpışma bir varsayımdır" |
 | [B] Hf-182 → W-182, yarılanma 9 milyon yıl; Mars 2–4 milyon yıl, 2 milyon yılda yarı boy; Dünya 50–100 milyon yıl; yolda kalmış embriyo; Dauphas & Pourmand, Nature 2011 | MARS | "Mars formed in as little as 2 to 4 million years" ; Earth "took 50 to 100 million years" ; half-life 9 million years ; "Mars is a stranded planetary embryo..." |
 | [B] Toronto: Dünya ~10 milyon yıl içinde, Ay ~30 milyon yıl içinde | TOR | "Earth formed within about 10 million years ... The Moon formed within about 30 million years" |
 | [B] Al-26 yarılanma ~0,7 milyon yıl | TOR | "aluminum-26 about 0.7 million years" |
@@ -120,7 +121,7 @@ Kısaltmalar: NEB = https://en.wikipedia.org/wiki/Nebular_hypothesis ; HIS = htt
 | [B] Walsh ve ark. 2011 Nature; Jüpiter ~3,5 AB'de oluştu, 1,5 AB'ye indi, Satürn rezonansı, 5,2 AB'ye döndü | GT | "Jupiter underwent a two-phase migration after its formation, migrating inward to 1.5 AU before reversing course" ; formed near 3.5 AU ; ended at 5.2 AU |
 | [B] Disk 1,0 AB'de kesilir → küçük Mars | GT | "The planetesimal disk is truncated at 1.0 AU by Jupiter's migration, limiting the material available to form Mars." |
 | [B] Kuşak: kayalık iç + ilkel buzlu dış cisimler karışır, kütle küçük | GT | mixed, excited belt with small total mass (WebFetch özeti) |
-| [B] Sayfa tutarsız: 2:3 / 3:2 tehlikeli / 2:1 daha olası; 2:1 basıklığı 2–3 kat; gaz birikimini yok sayar | GT | "2:3 mean-motion resonance" ; 3:2 capture dangerous ; 2:1 over-excites eccentricities 2–3 times ; "ignores the ongoing accretion of gas" |
+| [B] DOĞRULAMA DÜZELTMESİ: Walsh ve ark. 2:3 yakalanması (3:2 ile aynı rezonans; eski metindeki 'sayfa tutarsız' yorumu yanlıştı); sonraki çalışmalar 3:2'yi olası bulmadı, gereken gaz yoğunluğu 'especially dangerous'; 2:1 yakalanması daha olası; bazı disk koşulları basıklığı 2–3 kat yapar; gaz birikimini yok sayar | GT | "captured in a 2:3 mean-motion resonance" ; "unlikely to establish a 3:2 mean-motion resonance" ; "is especially dangerous for the survival of the two planets" ; "capture in a 2:1 mean-motion resonance" ; "to values between two and three times as large as their actual values" ; "ignores the ongoing accretion of gas" |
 | [B] Alternatifler: seyrek bölge, çakıl birikimi verimsizliği, yolda kalmış embriyo, erken dengesizlik | GT | listed alternatives (WebFetch özeti) |
 | [Ö] Mars kütlesi Dünya'nın %10,7'si; 687 gün | d9.json | — |
 | [Ö] Asteroitlerin toplam kütlesi Ay'ınkinden az | d9.json | NASA |
