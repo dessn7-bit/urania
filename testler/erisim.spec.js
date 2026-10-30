@@ -439,7 +439,7 @@ test('17: çok dar görünümde (206 ve 180 px) sayfa yatay taşmaz, üst bar te
       expect(r.sw, w + ' ' + ekran).toBeLessThanOrEqual(r.cw);
       expect(r.ust, w + ' ' + ekran + ' üst bar').toBeLessThan(60);
       expect(r.altSag, w + ' ' + ekran + ' alt menü').toBeLessThanOrEqual(r.cw + 0.5);
-      expect(r.adlar).toEqual(['Gökyüzü', 'Deneyler', 'Dersler', 'Defter', 'Hesap']);   // yazılar görsel gizli olsa da ad kalır
+      expect(r.adlar).toEqual(['Gökyüzü', 'Deneyler', 'Dersler', 'Defter', 'Hesap', 'Haberler']);   // yazılar görsel gizli olsa da ad kalır
     }
   }
   await expect(page.getByRole('button', { name: 'Kırmızı ışık' })).toBeVisible();
