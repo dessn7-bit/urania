@@ -1,0 +1,490 @@
+[
+ {
+  "id": "2026-10-23-swift-gorevi-sona-erdi",
+  "tarih": "2026-10-23",
+  "eklenme": "2026-10-30",
+  "tur": "gorev",
+  "baslik": "Swift gözlemevi 22 yıl sonra emekli oldu; kurtarma girişimi sonuç vermedi",
+  "ozet": [
+   "NASA, 23 Ekim 2026'da Neil Gehrels Swift Gözlemevi'nin bilim görevini sonlandırdığını açıkladı. Uydunun son gözlemi 20 Ekim'de yapıldı. Swift artık yeryüzünden 275 kilometreden daha alçakta dolanıyor; bu yükseklikte atmosferin ince ama etkili sürtünmesi, teleskopların bir hedefe kıpırdamadan bakmasını engelliyor. NASA, uydunun önümüzdeki birkaç hafta içinde atmosfere girmesini bekliyor. Yalnızca iki yıl çalışması planlanan gözlemevi, bu sürenin on katından uzun hizmet verdi.",
+   "Swift, 20 Kasım 2004'te fırlatıldı ve gama ışını patlamalarını yakalamak için tasarlanmıştı. Gama ışını, ışığın en yüksek enerjili biçimidir; gama ışını patlamaları da evrendeki en güçlü patlamalardır. Ama bu patlamalar o kadar çabuk gelip geçer ki büyük teleskopları zamanında o yöne çevirmek mümkün olmuyordu. Swift'in işi, bir patlamayı fark edip yerini belirlemek, konumu dünyadaki öteki gözlemevlerine iletmek ve patlamadan geriye kalan, hızla sönen ışıma (art ışıma) kaybolmadan kendi X-ışını ve morötesi/görünür ışık teleskoplarını o noktaya çevirmekti. Görev ekibine göre bu dönüş genellikle yaklaşık bir dakika sürüyordu.",
+   "Bu hız, özellikle en parlak anına iki saniyeden kısa sürede ulaşan “kısa” gama ışını patlamalarında belirleyici oldu. Swift'ten önce bu patlamaların art ışımasını yakalamak mümkün olmamıştı. Mayıs 2005'te Swift, yalnızca 0,03 saniye süren GRB 050509B patlamasına yetişip 11 X-ışını fotonu topladı; bu, art ışıması görülen ilk kısa patlamaydı. Gözlemler, kısa patlamaların büyük olasılıkla iki nötron yıldızının birleşmesinden doğduğunu söyleyen kuramları destekledi. Nötron yıldızı, kütlesi Güneş'inkine yakın olduğu hâlde bir kent büyüklüğüne sıkışmış ölü bir yıldız çekirdeğidir.",
+   "Swift zamanla çok yönlü bir araca dönüştü. Gökbilimciler beklenmedik bir olay için birkaç dakika içinde gözlem isteyebiliyor, uydu günde 75'e kadar ayrı hedefe bakacak biçimde programlanabiliyordu. NASA'nın verdiği rakamlara göre Swift 2.000'den fazla gama ışını patlaması ve 1.400'ü aşkın süpernova (yıldız patlaması) gözledi; kara deliklerin parçaladığı yıldızları, etkin galaksileri, asteroitleri ve kuyruklu yıldızları izledi, bütün gökyüzünü X-ışınında taradı. Verileri yaklaşık 7.000 bilimsel makalede kullanıldı. Herkese açık arşiv yaklaşık 12 terabayt tutuyor ve 1,5 milyonu aşkın morötesi/görünür ışık görüntüsü içeriyor.",
+   "Sonu getiren, Güneş etkinliği oldu. SpacePolicyOnline'ın aktardığına göre Güneş etkinliğinin artması uyduya etki eden sürtünmeyi yükseltti ve Swift'in yörüngesi beklenenden hızlı alçaldı. NASA, aracı başlangıçtaki yaklaşık 600 kilometrelik yörüngesine geri çıkarmak için Katalyst Space şirketiyle 30 milyon dolarlık bir sözleşme imzaladı. Swift yörüngede bakım için tasarlanmamıştı ve üzerinde tutamak yoktu. Plan, şirketin robotik LINK aracının Swift'e yanaşması, üç kıskacından en az biriyle tutunabileceği bir yer bulması ve iki-üç ay içinde iticileriyle onu yukarı taşımasıydı.",
+   "LINK, 3 Temmuz 2026'da Pasifik'teki Kwajalein Adası'ndan kalkan bir uçağın altından bırakılan Pegasus XL roketiyle fırlatıldı. Ancak yön denetimi sorunları yüzünden birden çok eksen etrafında takla atmaya başladı. Ekip bu dönüşü saniyede 9 dereceden 5 Ağustos'ta 1,47 dereceye kadar yavaşlattı ve 11 Ağustos'ta yeni yazılım yükledi; yine de 19 Ağustos'ta NASA ile Katalyst, yörünge yükseltmesinin mümkün olmadığını açıkladı. LINK Eylül sonunda atmosfere girdi. NASA'nın başındaki Jared Isaacman, sonucun umdukları gibi olmadığını ama hızlı davranıp hesaplı risk almanın doğru olduğunu söyledi.",
+   "NASA, Swift'in bıraktığı boşluğu şimdilik mevcut uzay teleskoplarıyla doldurmaya çalışacağını, ani kozmik olaylara hızlı yanıt için yörüngeye çabuk çıkabilen ticari çözümleri ve yeni görevleri incelediğini belirtiyor. Swift'in yaklaşık 22 yıllık arşivi ise on yıllar boyunca yeni keşiflere kaynak olmaya devam edecek."
+  ],
+  "neden_onemli": "Ani patlamaları yakalayıp birden çok dalga boyunda dakikalar içinde izleyebilen eşsiz bir gözlemevi kapandı ve yerini dolduracak bir araç henüz yok. Başarısız kurtarma girişimi de yörüngedeki bir bilim uydusuna robotik bakım yapma fikrinin ilk düşük maliyetli denemelerinden biriydi.",
+  "kesinlik": "kesin",
+  "ilgili_dersler": [
+   "d12",
+   "d6",
+   "d23"
+  ],
+  "kaynaklar": [
+   {
+    "ad": "NASA: NASA's Swift Mission Ends, Leaves Behind Scientific Bonanza",
+    "url": "https://science.nasa.gov/missions/swift/nasas-swift-mission-ends/",
+    "tarih": "2026-10-23"
+   },
+   {
+    "ad": "SpacePolicyOnline: No-Go for Katalyst's Reboost of NASA's Swift Observatory",
+    "url": "https://spacepolicyonline.com/news/no-go-for-katalysts-reboost-of-nasas-swift-observatory/",
+    "tarih": "2026-08-19"
+   },
+   {
+    "ad": "Live Science: NASA's Swift observatory ends 22-year mission",
+    "url": "https://www.livescience.com/space/space-exploration/nasas-swift-observatory-ends-22-year-mission-to-study-the-most-powerful-explosions-since-the-big-bang",
+    "tarih": "2026-10-26"
+   },
+   {
+    "ad": "Associated Press (ClickOrlando): Private spacecraft falls back to Earth after failing to rescue aging NASA telescope",
+    "url": "https://www.clickorlando.com/tech/2026/09/25/private-spacecraft-falls-back-to-earth-after-failing-to-rescue-aging-nasa-telescope/",
+    "tarih": "2026-09-25"
+   }
+  ],
+  "gorsel": {
+   "dosya": "img/haber/2026-10-23-swift-gorevi-sona-erdi.jpg",
+   "alt": "Altın renkli yalıtım örtüsüyle kaplı, yanlarında güneş panelleri bulunan Swift uydusu, bulutlarla kaplı Dünya'nın üzerinde süzülüyor.",
+   "aciklama": "Sanatçı çizimi: Swift Gözlemevi Dünya yörüngesinde. Gerçek bir fotoğraf değil; NASA'nın kavramsal görsel ekibinin hazırladığı bir canlandırma.",
+   "kredi": "NASA's Goddard Space Flight Center Conceptual Image Lab",
+   "lisans": "Kamu malı (NASA)",
+   "kaynak_url": "https://science.nasa.gov/missions/swift/nasas-swift-mission-ends/"
+  }
+ },
+ {
+  "id": "2026-10-08-psr-j0435-uclu-sistem",
+  "tarih": "2026-10-08",
+  "eklenme": "2026-10-30",
+  "tur": "arastirma",
+  "baslik": "Pulsar, beyaz cüce ve Güneş benzeri bir yıldız: süpernovadan sağ çıkmış ender bir üçlü",
+  "ozet": [
+   "Çin'deki dev FAST radyo teleskobuyla bulunan PSR J0435+3233 adlı pulsarın yalnız olmadığı anlaşıldı. Pulsar 8 günde bir yakınındaki bir beyaz cüceyle dolanıyor; bu sıkı ikili de 73,5 yılda bir, uzaktaki Güneş benzeri üçüncü bir yıldızla birlikte ortak bir merkezin çevresinde dönüyor. Çok hızlı dönen pulsarların böyle üçlü sistemlerde bulunması son derece ender; yalnızca birkaç örnek biliniyor. Üstelik iki ayrı ekip birbirinden bağımsız olarak aynı sonuca ulaştı.",
+   "Pulsar, büyük kütleli bir yıldızın süpernova patlamasıyla ölmesinden geriye kalan, çok hızlı dönen bir nötron yıldızıdır; bir deniz feneri gibi her dönüşte bir radyo atımı yollar. Bu atımlar o kadar düzenlidir ki gökbilimciler pulsarları kozmik saat gibi kullanır. PSR J0435+3233, FAST ile yürütülen bir taramada bulundu ve 3,2 milisaniyede bir, yani saniyede 300'den fazla kez dönüyor; bu türe “milisaniye pulsarı” deniyor. Pulsarın bir tuhaflığı vardı: dönüşü, galaksimizdeki öteki milisaniye pulsarlarından kabaca 100 kat hızlı yavaşlıyor gibi görünüyordu ve yörüngesinin özellikleri de hızla değişiyordu.",
+   "Çin Bilimler Akademisi Ulusal Astronomi Gözlemevleri'nden Z. L. Yang ve ekibi, 8 Ekim'de The Astrophysical Journal Letters'ta yayımlanan çalışmada pulsarın verilerini geniş bir arşivle birleştirdi: FAST'in 4,9 yıllık radyo ölçümleri, Fermi uzay teleskobunun 16,7 yıllık gama ışını verisi, Gaia uydusunun konum ölçümleri ve optik/kızılötesi gökyüzü taramaları. Pulsar bir saat gibi davrandığı için atımların varış zamanındaki küçük, yavaş kaymalar görünmeyen bir cismin çekimini ele veriyor. Ekip bu kaymaları, beyaz cücenin kütleçekiminin radyo atımlarını yolda hafifçe geciktirmesiyle (Shapiro gecikmesi) ve Gaia verisiyle birlikte modelledi.",
+   "Sonuçlara göre pulsar ile beyaz cüce neredeyse kusursuz bir çember üzerinde 8,0 günde bir dolanıyor. Üçüncü üye, kütlesi 0,98 ± 0,12 Güneş kütlesi olarak hesaplanan G türü bir altdev; yani ömrünün olgunluk evresini bitirip şişmeye başlamış, Güneş benzeri bir yıldız. Sistem bizden yaklaşık 2,1 kiloparsek, kabaca 6.800 ışık yılı uzakta. Dış yörünge oldukça basık (dışmerkezlik 0,598) ve bir turu 73,5 yıl sürüyor. İki yörüngenin birbirine göre eğimi için veriler iki çözüme izin veriyor: yaklaşık 85° (neredeyse dik) ya da yaklaşık 54°. Hangi çözüm doğruysa ona göre pulsarın kütlesi 1,16 ya da 1,34 Güneş kütlesi çıkıyor.",
+   "Paulo Freire ve arkadaşları da Astronomy & Astrophysics dergisinde yayımlanmak üzere kabul edilen bağımsız bir çalışmada sistemin üçlü olduğunu gösterdi. Bu ekibe göre pulsarın şaşırtıcı hızda yavaşlıyormuş gibi görünmesi bir yanılsama: üçüncü yıldızın çekimi ikiliyi ivmelendirdiği için ölçülen değer şişiyor. Gerçek yavaşlama en az 100 kat küçük ve öteki milisaniye pulsarlarıyla uyumlu. Yang'ın ekibi, iki çalışmanın ayrıntılarda farklı olsa da birbirini doğruladığını yazıyor. Yine de bir fark var: Freire'nin ekibi üçüncü yıldızı, çekirdeğinde hâlâ hidrojen yakan, yaklaşık 1,2 Güneş kütleli F türü bir yıldız olarak yorumluyor. Yıldızın tayfının ölçülmesi ve konum ölçümlerinin sürmesi bu soruyu netleştirecek.",
+   "Sistem bir yıldız kümesinde değil, galaksinin seyrek bir bölgesinde. Bu yüzden Yang ve ekibi üç yıldızın doğuştan beri birlikte olduğunu düşünüyor. Üçlünün en ağır üyesi 10 milyon yıldan kısa sürede ömrünü tamamlayıp patlamış ve pulsarı doğurmuş olmalı. AAS Nova'nın aktardığına göre, patlama yeni doğan nötron yıldızına hiç “tekme” vermemiş olsa bile sistemin dağılmadan kalma olasılığı yalnızca yüzde 35. Bundan sonrası daha sakin geçecek: sistem uzun vadede kararlı; dış yıldız da zamanla beyaz cüceye dönüşecek ve geriye bir nötron yıldızı ile iki beyaz cüce kalacak.",
+   "Benzer sistemler çok az. Örneğin PSR J0337+1715 iki beyaz cüceli bir üçlüdür ve Einstein'ın kütleçekim kuramını sınamakta kullanılmıştır. Freire'nin ekibi, PSR J0435+3233'ün uzun süre izlenmesinin “güçlü eşdeğerlik ilkesi” testinde, yani kütleçekimin nötron yıldızı gibi kendi çekimi çok güçlü cisimleri de öteki cisimler gibi çekip çekmediği sorusunda, J0337+1715'ten de sıkı bir sınır verebileceğini belirtiyor."
+  ],
+  "neden_onemli": "Bir süpernova patlamasından sağ çıkmış ender bir üçlü sistem; üçlü yıldızların nasıl evrildiğini ve kütleçekim kuramını sınamak için doğal bir laboratuvar. İki bağımsız ekibin aynı sonuca varması bulguyu güçlendiriyor.",
+  "kesinlik": "kesin",
+  "ilgili_dersler": [
+   "d45",
+   "d15",
+   "d6"
+  ],
+  "makale": {
+   "baslik": "The PSR J0435+3233 Triple System",
+   "yazarlar": "Yang vd.",
+   "dergi": "The Astrophysical Journal Letters",
+   "url": "https://doi.org/10.3847/2041-8213/aeaa29"
+  },
+  "kaynaklar": [
+   {
+    "ad": "ApJL: Yang vd., The PSR J0435+3233 Triple System",
+    "url": "https://doi.org/10.3847/2041-8213/aeaa29",
+    "tarih": "2026-10-08"
+   },
+   {
+    "ad": "arXiv (tam metin): Yang vd., The PSR J0435+3233 Triple System",
+    "url": "https://arxiv.org/abs/2608.01227",
+    "tarih": "2026-10-09"
+   },
+   {
+    "ad": "AAS Nova: A Pulsar in a Rare Triple System",
+    "url": "https://aasnova.org/2026/10/09/a-pulsar-in-a-rare-triple-system/",
+    "tarih": "2026-10-09"
+   },
+   {
+    "ad": "arXiv: Freire vd., On the triple nature of the PSR J0435+3233 system (A&A'da yayımlanmak üzere kabul edildi)",
+    "url": "https://arxiv.org/abs/2607.27462",
+    "tarih": "2026-07-29"
+   }
+  ]
+ },
+ {
+  "id": "2026-10-05-hs0209-ikinci-kusak-gezegen",
+  "tarih": "2026-10-05",
+  "eklenme": "2026-10-30",
+  "tur": "arastirma",
+  "baslik": "Ölü bir yıldızın küllerinden doğmuş olabilecek bir gezegen adayı",
+  "ozet": [
+   "Hubble Uzay Teleskobu'nun 1999'da kaydettiği bir ölçüm, 27 yıl sonra ilginç bir sır verdi. HS 0209+0832 adlı beyaz cücenin atmosferinde niyobyum gibi demirden ağır elementler bol miktarda bulunuyor. Warwick Üniversitesi'nden Jamie Williams ve ekibine göre en makul açıklama, yıldızın ölürken savurduğu malzemeden oluşmuş “ikinci kuşak” bir dev gezegen. Gezegen doğrudan görülmedi; şimdilik güçlü bir aday.",
+   "Beyaz cüce, Güneş gibi bir yıldızın yakıtını bitirip dış katmanlarını uzaya saçtıktan sonra geriye kalan, sıcak ve yoğun çekirdektir. Dünya ve Güneş Sistemi'nin öteki gezegenleri “birinci kuşak” gezegenlerdir: Güneş doğarken artakalan malzemeden oluştular. İkinci kuşak gezegen ise yıldız öldükten sonra, onun dışarı attığı maddeden oluşan bir dünya olurdu. Birçok beyaz cücenin atmosferinde, parçalayıp yuttukları asteroit ve gezegen kırıntılarının izi görülür. Bu “kirlilik” şimdiye dek genellikle Güneş Sistemi'ndeki kayalık cisimlere benzedi; yani silisyum ve demir ağırlıklıydı.",
+   "Hubble'ın 1999'daki gözleminde, yıldız ışığının renklerine ayrılmış hâli olan tayfta yaklaşık 100 tanımlanamayan iz vardı. Her element ışığı belli renklerde soğurur; bu yüzden tayftaki karanlık çizgiler bir tür kimyasal parmak izidir. Doktora öğrencisi Williams, güncellenmiş atom verileriyle eski kayıtlara döndü ve bu izlerin birçoğunun niyobyuma ait olduğunu buldu. Ekipten Boris Gänsicke, niyobyumun o güne dek incelenen hiçbir beyaz cücede bildirilmediğini söylüyor. Bulgu, NASA'nın artık çalışmayan FUSE uydusunun arşiv verisiyle de doğrulandı.",
+   "Yıldızın atmosferinde çinko, bakır ve niyobyum çok fazla; kaya yapan silisyum ve demir ise çok az. 5 Ekim'de Nature Astronomy'de yayımlanan makaleye göre belirleyici iz, “s-süreci” elementlerinin bolluğu. S-süreci, atom çekirdeklerinin yavaş yavaş nötron yakalayarak ağırlaştığı bir süreçtir ve yıldızın ömrünün sonundaki dev evresinde işler. Ekipten Nicholas Stone'un anlatımıyla bu elementler yıldız çekirdeklerindeki sıradan füzyonla oluşmaz, yalnızca ölmekte olan yıldızların içinde kısa süre beliren olağan dışı koşullarda üretilir. Ekip, yıldızın dev evresinde dışarı attığı bu zenginleşmiş malzemenin bir kısmının bir gaz devinde toplandığını öne sürüyor.",
+   "İkinci ipucu NASA'nın TESS uydusundan geldi. Yıldızı dört ay izleyen TESS, parlaklıkta 4,399 ± 0,026 günde bir tekrarlanan, yaklaşık binde 1,2 genlikli küçük bir dalgalanma yakaladı. NASA'ya göre bu, yıldıza yaklaşık 6 milyon kilometre uzakta, yani Merkür'ün Güneş'e uzaklığından çok daha yakında dolanan bir gezegene işaret ediyor. Ekip adayın Jüpiter boyutlarında, atmosferini hızla kaybeden bir gaz devi olduğunu tahmin ediyor: genç ve hâlâ çok sıcak olan beyaz cüce gezegenin dış katmanlarını buharlaştırıyor, kuyruklu yıldız benzeri bir kuyruk oluşuyor ve bu gaz sonunda yıldızın üzerine yağıyor. Yıldızın atmosferindeki helyum ve kayaç elementlerinin yokluğu da bu tabloya uyuyor. Dalgalanma, gezegenin gece ve gündüz yüzleri arasındaki sıcaklık farkından ya da yıldızın önünden geçen bu kuyruktan kaynaklanıyor olabilir.",
+   "Sonuç kesin değil. Williams gezegenin “en makul açıklama” olduğunu söylüyor, ama başka neyin bu tabloyu yaratabileceğinden emin olmadıklarını da kabul ediyor. Doğrulanırsa, gezegen oluşumunun yalnızca bir yıldızın doğuşunda değil, ölümünden sonra da yaşanabildiği somut olarak gösterilmiş olacak. Williams önümüzdeki yıllarda Hubble ile bu tür sistemlerin nasıl oluştuğunu, ne kadar yaygın olduğunu ve nasıl evrildiğini araştırmayı planlıyor."
+  ],
+  "neden_onemli": "Doğrulanırsa, gezegenlerin yalnızca yıldız gençken değil, yıldızın ömrünün sonunda savurduğu malzemeden de oluşabildiğinin ilk somut örneği olacak.",
+  "kesinlik": "ön sonuç",
+  "ilgili_dersler": [
+   "d6",
+   "d13",
+   "d2"
+  ],
+  "makale": {
+   "baslik": "Discovery of a second-generation planet candidate accreting onto a white dwarf",
+   "yazarlar": "Williams vd.",
+   "dergi": "Nature Astronomy",
+   "url": "https://doi.org/10.1038/s41550-026-02983-7"
+  },
+  "kaynaklar": [
+   {
+    "ad": "Nature Astronomy: Williams vd., Discovery of a second-generation planet candidate accreting onto a white dwarf",
+    "url": "https://doi.org/10.1038/s41550-026-02983-7",
+    "tarih": "2026-10-05"
+   },
+   {
+    "ad": "NASA: Suspected Second-Generation Planet Solves NASA Hubble Cold Case",
+    "url": "https://science.nasa.gov/missions/hubble/suspected-second-generation-planet-solves-nasa-hubble-cold-case/",
+    "tarih": "2026-10-05"
+   },
+   {
+    "ad": "arXiv (makalenin ön baskısı): Williams vd.",
+    "url": "https://arxiv.org/abs/2610.07161",
+    "tarih": "2026-10-05"
+   },
+   {
+    "ad": "Science News: A 'phoenix' planet was born from the ashes of its dead star",
+    "url": "https://www.sciencenews.org/article/baby-planet-from-dead-star-phoenix",
+    "tarih": "2026-10-05"
+   }
+  ],
+  "gorsel": {
+   "dosya": "img/haber/2026-10-05-hs0209-ikinci-kusak-gezegen.jpg",
+   "alt": "Solda parlak bir beyaz cüce ve onu çevreleyen ince, mavimsi bir disk; sağda gölgede kalmış koyu bir gaz devi gezegen ve arkasında uzanan soluk bir gaz kuyruğu.",
+   "aciklama": "Sanatçı çizimi: HS 0209+0832 beyaz cücesi ve olası ikinci kuşak gaz devi. Gezegen hiç görüntülenmedi; çizim, Hubble'ın ölçtüğü kimyasal izler için önerilen açıklamayı canlandırıyor. Ölçek gerçekçi değil.",
+   "kredi": "Artwork: NASA, ESA, Leah Hustak (STScI)",
+   "lisans": "Kamu malı (NASA)",
+   "kaynak_url": "https://science.nasa.gov/asset/hubble/hs-02090832-system-artists-concept/"
+  }
+ },
+ {
+  "id": "2026-09-28-starship-ilk-yorunge",
+  "tarih": "2026-09-28",
+  "eklenme": "2026-10-30",
+  "tur": "gorev",
+  "baslik": "Starship ilk kez yörüngeye çıktı ve 26 Starlink uydusu bıraktı",
+  "ozet": [
+   "SpaceX'in dev roketi Starship, 28 Eylül 2026'daki 14. test uçuşunda ilk kez yörüngeye ulaştı ve 26 Starlink internet uydusunu bıraktı. Starship ilk kez gerçek, hizmete girecek uydular taşımış oldu. Roketin üst kademesi kalkıştan yaklaşık üç saat sonra Hawaii'nin kuzeyinde Pasifik Okyanusu'na denetimli biçimde indi.",
+   "Starship yaklaşık 124 metre boyunda ve iki kademeden oluşuyor. Kademe, yakıtı bitince ayrılan roket bölümüdür. Alttaki Super Heavy itici kademesi 33 Raptor motoruyla, Spaceflight Now'a göre NASA'nın SLS roketinin yaklaşık iki katı itki üretiyor. Üstte altı motorlu, kendisi de bir uzay aracı olan “Ship” (gemi) yer alıyor. SpaceX'in verilerine göre roket yörüngeye 100 tonu aşkın yük taşıyabiliyor ve iki kademesi de defalarca kullanılmak üzere tasarlandı. Önceki 13 uçuş yörünge altıydı: araç yörüngede kalacak hıza ulaşmadan geri dönüyordu. Bu uçuş, aracın üçüncü sürümünün (V3) üçüncü uçuşuydu.",
+   "Kalkış, Teksas'ın güneyindeki Starbase üssünden Türkiye saatiyle 15.50 sularında gerçekleşti. Tırmanış sırasında geminin altı motorundan biri erken durdu. SpaceX sözcüsü Dan Huot bir an yörünge denemesinden vazgeçildiğini duyurdu, ancak uçuş ekibi aracın öteki açılardan sağlıklı olduğuna karar verip devam etti. Kalkıştan yaklaşık 25 dakika sonra gemi tek bir Raptor motorunu kısa süre ateşleyerek yörüngeye girdi; Spaceflight Now'a göre yükseklik yaklaşık 290 kilometreydi.",
+   "Super Heavy de kendi görevini tamamladı. Bir motoru tırmanışta, görünüşe göre bir başkası da geri dönüş ateşlemesinde erken kapansa da kalkıştan yaklaşık yedi dakika sonra Meksika Körfezi'ne, kıyıdan birkaç mil açıkta dik ve denetimli biçimde indi. SpaceX itici kademeyi daha önce fırlatma kulesinin kollarıyla havada yakalamayı başarmıştı, ama şimdilik güvenlik önlemi olarak denize indirmeyi tercih ediyor.",
+   "Uçuşun asıl hedefi uyduları bırakmaktı. Spaceflight Now'a göre üçüncü nesil Starlink uydularının her biri önceki nesilden on kat kapasiteye sahip. Bunlardan üçünde kamera vardı ve uydular ayrıldıktan sonra geminin ısı kalkanını görüntüledi. Isı kalkanı, aracın atmosfere dönüşte oluşan aşırı ısıya dayanmasını sağlayan koruyucu kaplamadır; SpaceX mühendisleri bu görüntülerle kalkanı geliştirmeyi umuyor.",
+   "Plan, geminin altı tur atıp kalkıştan 9 saat 50 dakika sonra Şili açıklarına inmesiydi. Ancak uydular bırakıldıktan sonra uçuş ekibi görevi yaklaşık yedi saat kısalttı. Gemi kalkıştan yaklaşık 2 saat 40 dakika sonra atmosfere girdi, karnı önde ve kanatçıklarıyla dengesini koruyarak alçaldı, sonra üç motorunu yeniden ateşleyip dik konuma geçti ve kalkıştan 3 saat 8 dakika sonra suya indi. Önceki okyanus inişlerinde olduğu gibi gemi ardından devrildi ve kalan yakıtın tutuşmasıyla patladı.",
+   "Starship'in tam kullanılabilir bir taşıyıcı olması için hâlâ önemli adımlar var. Geminin kuleyle yakalanması henüz denenmedi. Ay ve Mars görevleri, gemiye yörüngede yakıt aktarmak için çok sayıda “tanker” fırlatmayı gerektiriyor; yörüngede yakıt aktarımı henüz gösterilmedi. NASA, Starship'i Artemis programında astronotları Ay'a indirecek araçlardan biri olarak seçti, Blue Origin'in iniş aracını da destekliyor. Spaceflight Now'a göre gelecek yıl planlanan Artemis III görevinde dört astronot, alçak Dünya yörüngesinde iki şirketin prototip iniş araçlarına kenetlenmeyi deneyecek. İnsan taşımadan önce geminin yaşam destek sistemleriyle donatılması ve pek çok kez başarıyla uçması da gerekiyor."
+  ],
+  "neden_onemli": "Yörüngeye ulaşmak ve gerçek yük bırakmak, Starship'in kullanılabilir bir taşıyıcı roket olması yolunda temel bir adım. Uzayda yakıt aktarımı ve geminin yakalanması gibi kritik testler ise hâlâ önde.",
+  "kesinlik": "kesin",
+  "ilgili_dersler": [
+   "d23"
+  ],
+  "kaynaklar": [
+   {
+    "ad": "Space.com: SpaceX launches Starship into orbit for 1st time",
+    "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-starship-megarocket-flight-14-orbital-launch-success",
+    "tarih": "2026-09-28"
+   },
+   {
+    "ad": "Spaceflight Now: Starship returns to Earth; rocket splashes down north of Hawaii after three-hour flight",
+    "url": "https://spaceflightnow.com/2026/09/28/starship-returns-to-earth-rocket-splashes-down-north-of-hawaii-after-three-hour-flight/",
+    "tarih": "2026-09-28"
+   }
+  ]
+ },
+ {
+  "id": "2026-09-21-gunes-sistemi-omru-batygin",
+  "tarih": "2026-09-21",
+  "eklenme": "2026-10-30",
+  "tur": "arastirma",
+  "baslik": "Güneş ölürken dış gezegenlerin düzeni de dağılabilir",
+  "ozet": [
+   "Güneş Sistemi'nin dış gezegenleri, yani Jüpiter, Satürn, Uranüs ve Neptün, sanılandan çok daha kısa ömürlü bir düzene sahip olabilir. Caltech'ten Konstantin Batygin, Jim Fuller ve Fred Adams'ın bilgisayar benzetimlerine göre Güneş ömrünün sonunda kütlesini düzgün bir akışla değil binlerce ayrı püskürmeyle kaybederse, dev gezegenlerin yörüngeleri büyük olasılıkla Güneş beyaz cüceye dönüştükten sonraki yaklaşık bir milyar yıl içinde birbirine girip dağılıyor. Önceki tahmin 10¹⁸ yıl, yani milyar kere milyar yıldı.",
+   "Gezegen yörüngelerinin kararlılığı gök mekaniğinin en eski sorularından; Newton bile Güneş ile Jüpiter arasındaki çekim etkileşiminin sistemi zamanla bozacağından kuşkulanmıştı. Bugün iç gezegenler için yanıt büyük ölçüde biliniyor: Merkür'ün yörüngesinin, Güneş çekirdeğinde hidrojen yaktığı uzun olgunluk evresini (ana dizi) bitirmeden bozulma olasılığı yaklaşık yüzde 1. Dış gezegenler ise çok daha güvende sayılıyordu. Kendi aralarındaki çekim etkileşimleri düzeni ancak 10¹⁸ yıl gibi akıl almaz bir sürede bozabilirdi; Güneş'in kütle kaybı ve yakından geçen yıldızlar hesaba katıldığında bile düzenin 30 ile 100 milyar yıl dayanacağı düşünülüyordu.",
+   "Güneş, ilerde kızıl dev olarak şiştiği evrelerde kütlesinin yaklaşık yüzde 46'sını kaybedecek. Kızıl dev, yakıtı azalan bir yıldızın şişip yüzeyi soğuyarak devleştiği evredir. Güneş'in çekimi zayıfladıkça gezegenlerin yörüngeleri de yaklaşık iki katına genişleyecek. Önceki çalışmalar bu kaybı yavaş ve pürüzsüz bir rüzgâr gibi modelledi; o durumda yörüngeler genişlese de düzen bozulmuyor. Batygin ve ekibi bu varsayımın gözlemlerle çeliştiğini savunuyor: Gaia uydusunun geniş çift yıldız ölçümleri, yeni doğan beyaz cücelerin saniyede yaklaşık 0,75 kilometrelik bir “tekme” yiyerek savrulduğunu gösteriyor. Bunun en yalın açıklaması, kızıl devin dış zarfını ayrı ayrı, rastgele yönlere fırlatılan parçalar hâlinde kaybetmesi.",
+   "Her püskürme Güneş'i ters yöne doğru küçük bir itişle sarsar. Ekibin temel senaryosunda her parça bir Güneş kütlesinin on binde biri ağırlığında; bu, Güneş'in ölürken yaklaşık 4.600 kez itilmesi demek. Tipik itiş saniyede yaklaşık 7 metrelik bir hız değişimi. Tek başına önemsiz olan bu itişler rastgele anlarda geldiği için birikiyor ve gezegen yörüngelerini sarhoş yürüyüşüne benzer biçimde rastgele kaydırıyor. Ekip, REBOUND adlı yörünge hesaplama yazılımıyla farklı parça büyüklükleri için 672 ayrı senaryoyu 3 milyar yıl boyunca izledi.",
+   "Sonuçlar parça büyüklüğüne sıkı sıkıya bağlı. Çok küçük parçalarda gezegenler pürüzsüz kütle kaybındaki gibi sakin kalıyor. Orta büyüklükte Jüpiter–Satürn ve Uranüs–Neptün çiftleri yaklaşık yüzde 20 olasılıkla rezonansa, yani dolanım sürelerinin küçük tam sayıların oranına kilitlendiği bir düzene giriyor; ama bu düzen de onları korumuyor. Gözlenen tekmelerle uyumlu temel senaryoda ise yörüngeler daha kızıl dev evresinde kesişmeye başlayabiliyor. Benzetimlerin yaklaşık yüzde 40'ında sistem beyaz cüce oluşmadan dağılıyor ya da gezegenler şiddetle saçılıyor; yaklaşık yüzde 90'ı 3 milyar yıl içinde çöküyor. Örneklerden birinde Satürn, beyaz cüce oluştuktan sonraki 2,5 milyon yıl içinde sistemden fırlatılıyor; başkalarında Neptün yüz milyonlarca yıl ya da bir milyar yılı aşkın süre sonra kaçıyor.",
+   "Bu bir gözlem değil, benzetim çalışması. Sonuçlar, Güneş'in zarfını ne kadar iri parçalarla atacağına dair varsayıma bağlı ve bu büyüklük henüz iyi bilinmiyor. Gezegen hareketleri kaotik olduğu için tek tek senaryolar kehanet değil, olasılık veriyor. Çalışma Dünya'nın akıbetini değil yalnızca dış gezegenleri inceliyor. Ekip aynı mekanizmanın beyaz cüceye dönüşecek hemen her yıldızın gezegenleri için geçerli olabileceğini öne sürüyor: bu, genç beyaz cücelerin yakınında başıboş gezegenler oluşmasını ve beyaz cücelerin atmosferinde görülen gezegen “kirliliği”nin zamanlamasını açıklayabilir."
+  ],
+  "neden_onemli": "Güneş Sistemi'nin uzak geleceğine dair yerleşik bir tahmini yaklaşık milyar kat kısaltıyor ve bir yıldızın ölürken kütlesini nasıl kaybettiğinin, gezegenlerinin kaderi için belirleyici olabileceğini gösteriyor.",
+  "kesinlik": "ön sonuç",
+  "ilgili_dersler": [
+   "d5",
+   "d6",
+   "d3"
+  ],
+  "makale": {
+   "baslik": "Terminal Instability of the Solar System Triggered by Stochastic Solar Mass Loss",
+   "yazarlar": "Batygin vd.",
+   "dergi": "The Astrophysical Journal Letters",
+   "url": "https://doi.org/10.3847/2041-8213/aea290"
+  },
+  "kaynaklar": [
+   {
+    "ad": "ApJL: Batygin vd., Terminal Instability of the Solar System Triggered by Stochastic Solar Mass Loss",
+    "url": "https://doi.org/10.3847/2041-8213/aea290",
+    "tarih": "2026-09-21"
+   },
+   {
+    "ad": "arXiv (tam metin): Batygin, Fuller, Adams",
+    "url": "https://arxiv.org/abs/2609.12494",
+    "tarih": "2026-09-11"
+   },
+   {
+    "ad": "AAS Nova: The Solar System Has a New Life Expectancy, and It's a Billion Times Shorter",
+    "url": "https://aasnova.org/2026/09/30/the-solar-system-has-a-new-life-expectancy-and-its-a-billion-times-shorter/",
+    "tarih": "2026-09-30"
+   }
+  ]
+ },
+ {
+  "id": "2026-09-16-kucuk-kirmizi-noktalar-simulasyon",
+  "tarih": "2026-09-16",
+  "eklenme": "2026-10-30",
+  "tur": "arastirma",
+  "baslik": "Webb'in gizemli “küçük kırmızı noktaları” hızla büyüyen kara delik tohumları olabilir",
+  "ozet": [
+   "James Webb Uzay Teleskobu'nun iki büyük bilmecesi tek bir öyküde birleşebilir. Max Planck Astrofizik Enstitüsü'nden Sunmyon Chon ve ekibinin süper bilgisayar benzetimlerine göre, erken evrende görülen ve “küçük kırmızı noktalar” diye anılan gizemli cisimler, olağan dışı hızla büyüyen genç kara delikler olabilir. Aynı benzetimler, Webb'in bulduğu ve galaksilerine göre fazla ağır kalan kara deliklerin nasıl bu kadar çabuk oluştuğunu da açıklamaya aday.",
+   "Küçük kırmızı noktalar (İngilizce kısaltmasıyla LRD), Webb çalışmaya başladıktan kısa süre sonra fark edildi: gökyüzünde çok küçük görünen, yoğun ve çok kırmızı ışıklı cisimler. Webb taramalarına göre Büyük Patlama'dan yaklaşık 600 milyon yıl sonra çok sayıda ortaya çıkıyor, 1,5 milyar yıl civarında ise hızla azalıyorlar. Bazılarının tayfında, yani ışığın renklere ayrılmış hâlinde, geniş hidrojen çizgileri görülüyor; bu da merkezlerinde gaz yutan kara delikler bulunduğunu düşündürüyor. Öte yandan Webb, Güneş'in milyonlarca hatta milyarlarca katı kütleli kara deliklerin Büyük Patlama'dan 600 milyon yıl bile geçmeden var olduğunu gösterdi. Bunların nasıl bu kadar hızlı büyüdüğü uzun süredir açıklanamıyor.",
+   "Chon ve arkadaşları, Japonya Ulusal Astronomi Gözlemevi'nin (NAOJ) ATERUI III süper bilgisayarında, gazın, kütleçekimin ve ışınımın birbirini nasıl etkilediğini birlikte izleyen evren benzetimleri yürüttü. Benzetim, galaksilerin yoğun toplandığı bir bölgede başlıyor, giderek yakınlaşıyor ve tek tek gaz bulutlarına kadar iniyor. Sonuçlar 16 Eylül'de Nature dergisinde yayımlandı.",
+   "Benzetimdeki ilk kritik adım şu: komşu galaksilerden gelen güçlü morötesi ışık, bazı gaz bulutlarında çok sayıda küçük yıldızın oluşmasını engelliyor. Gaz bunun yerine tek bir dev yıldızda toplanıyor; en büyüğü yaklaşık 2 milyon yılda Güneş'in yaklaşık 400.000 katı kütleye ulaşıyor. Bu “süper kütleli yıldız” kendi üzerine çöktüğünde Güneş'in yaklaşık bir milyon katı kütleli bir kara delik tohumu oluşuyor. Bu, kuramsal beklentilerin yaklaşık on katı.",
+   "İkinci adımda tohumun çevresinde yoğun, ışığı geçirmeyen bir gaz diski oluşuyor. Normalde bir kara deliğin beslenme hızının bir üst sınırı vardır: Eddington sınırı denen bu noktada, düşen gazın yaydığı ışığın dışa itişi kütleçekimin içe çekişini dengeler. Ama bu yoğun diskte ışık dışarı kaçamadan gazla birlikte içeri sürükleniyor; kara delik bir milyon yıldan kısa bir süre boyunca bu sınırın birkaç ile birkaç on katı hızla beslenebiliyor. Diskteki serbest elektronların ışığı saçması, LRD'lerde görülenlere benzer geniş hidrojen çizgileri üretiyor. Kara delik böylece, evren henüz çok gençken Güneş'in yaklaşık 30 milyon katı kütleye ulaşıyor.",
+   "Araştırmacılara göre LRD'ler, ağır tohumların bu kısa ve gazla örtülü büyüme evresi olabilir; benzetimde bu evre birkaç yüz bin yıl sürüyor. Benzetimden çıkan bu tür kara delikli galaksilerin sayısı da gözlenen LRD sayısıyla uyumlu. Space.com'un aktardığına göre benzetimler aslında LRD'leri açıklamak için tasarlanmamıştı; benzerlik kendiliğinden ortaya çıktı.",
+   "Ancak konu kapanmış değil. LRD'lerin evren 1,5 milyar yaşına geldiğinde neden ortadan kaybolduğu hâlâ yanıtlanamıyor. Benzetim tek bir yoğun bölgeyi izliyor ve süper kütleli yıldızların ömrü gibi bazı girdiler belirsiz. LRD'lerin ne olduğuna dair birbiriyle yarışan başka açıklamalar da var; bu yüzden sonuç güçlü ama tartışmalı bir aday olarak görülmeli."
+  ],
+  "neden_onemli": "Webb'in iki büyük bilmecesini, erken evrendeki aşırı ağır kara delikleri ve küçük kırmızı noktaları, tek bir senaryoda birleştiriyor. Doğruysa bugünkü dev kara deliklerin nasıl bu kadar hızlı büyüdüğüne dair önemli bir parça.",
+  "kesinlik": "tartışmalı",
+  "ilgili_dersler": [
+   "d46",
+   "d8",
+   "d16"
+  ],
+  "makale": {
+   "baslik": "Overmassive black holes and little red dots naturally form in simulations",
+   "yazarlar": "Chon vd.",
+   "dergi": "Nature",
+   "url": "https://doi.org/10.1038/s41586-026-10985-8"
+  },
+  "kaynaklar": [
+   {
+    "ad": "Nature: Chon vd., Overmassive black holes and little red dots naturally form in simulations",
+    "url": "https://doi.org/10.1038/s41586-026-10985-8",
+    "tarih": "2026-09-16"
+   },
+   {
+    "ad": "NAOJ: Japanese Supercomputer Explains Webb's Little Red Dots",
+    "url": "https://www.nao.ac.jp/en/news/science/2026/20260917-cfca.html",
+    "tarih": "2026-09-17"
+   },
+   {
+    "ad": "arXiv (tam metin): Chon vd.",
+    "url": "https://arxiv.org/abs/2601.04955",
+    "tarih": "2026-01-08"
+   },
+   {
+    "ad": "Space.com: The James Webb Space Telescope's mysterious Little Red Dots may be overfeeding black holes",
+    "url": "https://www.space.com/astronomy/black-holes/the-james-webb-space-telescopes-mysterious-little-red-dots-may-be-overfeeding-black-holes",
+    "tarih": "2026-09-29"
+   },
+   {
+    "ad": "AAS Nova: Seeing Red: New Constraints on Origin of JWST's Little Red Dots",
+    "url": "https://aasnova.org/2026/10/26/seeing-red-new-constraints-on-origin-of-jwsts-little-red-dots/",
+    "tarih": "2026-10-26"
+   }
+  ],
+  "gorsel": {
+   "dosya": "img/haber/2026-09-16-kucuk-kirmizi-noktalar-simulasyon.jpg",
+   "alt": "Altı karelik bir mozaik; her karenin ortasında siyah zemin üzerinde sarı-beyaz çekirdekli, kırmızı ve bulanık küçük bir nokta, köşelerinde kaynak adı ve kırmızıya kayma değeri yazıyor.",
+   "aciklama": "Gerçek gözlem: Webb'in NIRCam kamerasıyla farklı taramalarda görüntülenen altı “küçük kırmızı nokta”. Köşedeki z değeri kırmızıya kaymadır; büyüdükçe cisim daha uzak ve daha eski. Bu görüntüler habere konu olan benzetimden değil, benzetimin açıklamaya çalıştığı gerçek cisimlerden.",
+   "kredi": "NASA, ESA, CSA, STScI, D. Kocevski (Colby College)",
+   "lisans": "CC BY 4.0",
+   "kaynak_url": "https://esawebb.org/images/littlereddots/"
+  }
+ },
+ {
+  "id": "2026-09-09-lbt-ilksel-helyum",
+  "tarih": "2026-09-09",
+  "eklenme": "2026-10-30",
+  "tur": "arastirma",
+  "baslik": "Büyük Patlama'nın ilk dakikalarından kalan helyum, rekor hassasiyetle ölçüldü",
+  "ozet": [
+   "Evrendeki helyumun büyük kısmı Büyük Patlama'dan sonraki ilk dakikalarda oluştu. Gökbilimciler bu “ilksel” helyumun miktarını şimdiye kadarki en yüksek hassasiyetle ölçtü: Büyük Patlama'dan çıkan sıradan maddenin kütlece yaklaşık yüzde 24,6'sı. Sonuç, evrenin ilk dakikalarına ait kuramla ve Büyük Patlama'dan kalan ışımanın ölçümleriyle çok iyi uyuşuyor; bilinmeyen yeni parçacıklara da sıkı bir sınır koyuyor.",
+   "Büyük Patlama'dan sonraki ilk dakikalarda evren, hidrojenin bir kısmını helyuma dönüştüren dev bir nükleer fırın gibiydi. Bu sürece Büyük Patlama çekirdek sentezi denir. Ne kadar helyum oluştuğu o anki koşullara bağlıdır: ortamdaki hafif parçacık türlerinin sayısına ve serbest bir nötronun ne kadar yaşadığına. Burada nötrinolar önemli rol oynar. Nötrinolar maddeyle neredeyse hiç etkileşmeyen, çok hafif parçacıklardır ve parçacık fiziğinin Standart Model'ine göre üç türleri vardır. Bu yüzden ilksel helyumu çok hassas ölçmek, hem kuramı sınamanın hem de bilinmeyen parçacıkların izini aramanın bir yolu.",
+   "Zorluk şu: yıldızlar milyarlarca yıldır kendi helyumlarını üretiyor. Ohio State Üniversitesi'nin açıklamasına göre bugünkü helyumun yaklaşık yüzde 90'ı Büyük Patlama'dan, yüzde 10'u yıldızlardan geliyor. Gökbilimciler bu yüzden, yıldızların henüz pek az ağır element ürettiği küçük galaksilere bakıyor; gökbilimde helyumdan ağır bütün elementlere “metal” dendiği için bunlara “metalce fakir” galaksiler deniyor. Ölçümler bu galaksilerdeki HII bölgelerinde yapılıyor: genç ve sıcak yıldızların morötesi ışığıyla iyonlaşıp parlayan hidrojen bulutları.",
+   "Minnesota, Ohio State, Gonzaga ve başka üniversitelerden araştırmacıların yürüttüğü LBT Yp Projesi, Arizona'daki iki ikiz aynalı Büyük Binoküler Teleskop'u (LBT) kullandı. Focus.it'e göre gözlemler 130 saat sürdü. Ohio State'te tasarlanan MODS tayfçekerleri her bulutta 10'dan fazla helyum ve 15 hidrojen çizgisini aynı anda kaydetti; LUCI aleti ise 48 hedefin kızılötesi tayfını aldı. Kızılötesindeki bir helyum çizgisi gazın yoğunluğuna duyarlı olduğu için sıcaklıkla yoğunluğu birbirinden ayırmaya yardım ediyor. Bu çizgileri birlikte çözümlemek, önceki çalışmalarda gözden kaçan küçük ölçüm hatalarını yakalamayı sağladı.",
+   "Serinin dördüncü makalesinde Erik Aver ve ekibi 54 bölgeyi aynı yöntemle inceledi, sorun çıkarabilecekleri ayıkladı ve ağır element oranı en düşük, sinyali en güçlü 15 bölgenin ağırlıklı ortalamasını aldı. Bu galaksilerden biri, yaklaşık 59 milyon ışık yılı uzaktaki cüce galaksi I Zwicky 18. Sonuç: ilksel helyumun kütle oranı 0,2458 ± 0,0013. Belirsizlik yalnızca yüzde 0,5; önceki ölçümlerde yaklaşık yüzde 2'ydi. Kuram ise, Planck uydusunun Büyük Patlama'dan yaklaşık 400.000 yıl sonra salınan ışımadan (kozmik mikrodalga arka plan ışıması) çıkardığı madde yoğunluğunu kullanarak 0,2467 ± 0,0002 öngörüyor. Birbirinden tamamen bağımsız yollardan gelen iki değer uyumlu.",
+   "Serinin beşinci makalesi bu ölçümden hafif nötrino türlerinin sayısını 2,925 ± 0,082 buldu; yani üçle uyumlu. Başka bir ekibin henüz hakem denetiminden geçmemiş bir çalışması (Loverde ve arkadaşları) ölçümün sonuçlarını inceledi. Buna göre yeni değer, evrenin genişleme hızına ilişkin ölçümler arasındaki uyuşmazlığı (Hubble gerilimi) gidermek için önerilen yeni fizik modellerinin çoğunu, ama hepsini değil, dışlıyor. Aynı çalışma, laboratuvarda iki farklı yöntemle ölçülen nötron ömürleri arasındaki tartışmada, helyumdan çıkarılan değerin “şişe” deneyleriyle uyumlu olduğunu, “ışın” deneylerinin değerinin ise 2,4 standart sapma altında kaldığını buldu.",
+   "Ekip yeni metalce fakir galaksiler bulup aynı teknikleri onlara uygulamayı sürdürmeyi planlıyor; Ohio State'ten Richard Pogge bunun yıllar alacağını söylüyor. DESI gibi büyük gökyüzü taramalarının arşivlerinin bu aramada yardımcı olması bekleniyor."
+  ],
+  "neden_onemli": "Evrenin ilk dakikaları ile yaklaşık 400.000 yıl sonrası arasındaki fiziğin tutarlı olduğunu bağımsız bir yoldan doğruluyor ve bilinmeyen yeni parçacıklara sıkı bir sınır koyuyor.",
+  "kesinlik": "kesin",
+  "ilgili_dersler": [
+   "d8",
+   "d17",
+   "d32"
+  ],
+  "makale": {
+   "baslik": "The LBT Yp Project. IV. A New Value of the Primordial Helium Abundance",
+   "yazarlar": "Aver vd.",
+   "dergi": "The Astrophysical Journal",
+   "url": "https://doi.org/10.3847/1538-4357/ae879b"
+  },
+  "kaynaklar": [
+   {
+    "ad": "ApJ: Aver vd., The LBT Yp Project. IV. A New Value of the Primordial Helium Abundance",
+    "url": "https://doi.org/10.3847/1538-4357/ae879b",
+    "tarih": "2026-09-09"
+   },
+   {
+    "ad": "ApJ: Yeh vd., The LBT Yp Project. V (nötrino türü sayısı)",
+    "url": "https://doi.org/10.3847/1538-4357/ae879c",
+    "tarih": "2026-09-09"
+   },
+   {
+    "ad": "arXiv: Weller vd., The LBT Yp Project III: LUCI Spectra of Metal-Poor Nebulae",
+    "url": "https://arxiv.org/abs/2601.22237",
+    "tarih": "2026-01-29"
+   },
+   {
+    "ad": "Ohio State News: Using helium, astronomers blow certainty into early Big Bang conditions",
+    "url": "https://news.osu.edu/using-helium-astronomers-blow-certainty-into-early-big-bang-conditions/",
+    "tarih": "2026-09-09"
+   },
+   {
+    "ad": "Focus.it: Cosa accadde nei primi cinque minuti dopo il Big Bang? Misurata la quantità di elio primordiale",
+    "url": "https://www.focus.it/scienza/spazio/cosa-accadde-nei-primi-cinque-minuti-dopo-il-big-bang-misurata-la-quantita-di-elio-primordiale",
+    "tarih": "2026-10-23"
+   },
+   {
+    "ad": "arXiv ön baskı: Loverde, Saravanan, Weiner, Big Bang For Your Helium Buck",
+    "url": "https://arxiv.org/abs/2609.13140",
+    "tarih": "2026-09-11"
+   }
+  ],
+  "gorsel": {
+   "dosya": "img/haber/2026-09-09-lbt-ilksel-helyum.jpg",
+   "alt": "Karanlık bir arka planda, çevresi mavi gaz ipliksileriyle sarılmış parlak beyaz-mavi bir yıldız kümesi ve sol üstte daha küçük, dağınık mavi bir yıldız topluluğu; çevrede çok sayıda uzak, turuncu galaksi.",
+   "aciklama": "Gerçek gözlem: Hubble Uzay Teleskobu'nun çektiği cüce galaksi I Zwicky 18, ölçüm örneğindeki metalce fakir galaksilerden biri. Ortadaki mavi-beyaz düğümler yoğun yıldız oluşum bölgeleri; çevredeki mavi iplikler, genç ve sıcak yıldızların morötesi ışığıyla ısınan gaz. Helyum ölçümü bu fotoğraftan değil, LBT'nin aldığı tayflardan yapıldı.",
+   "kredi": "NASA, ESA, and A. Aloisi (European Space Agency and Space Telescope Science Institute)",
+   "lisans": "CC BY 4.0",
+   "kaynak_url": "https://esahubble.org/images/heic0716a/"
+  }
+ },
+ {
+  "id": "2026-08-30-roman-firlatildi",
+  "tarih": "2026-08-30",
+  "eklenme": "2026-10-30",
+  "tur": "gorev",
+  "baslik": "Roman Uzay Teleskobu fırlatıldı: Hubble'dan 100 kat geniş bakış, 22 yıla yetebilecek yakıt",
+  "ozet": [
+   "NASA'nın Nancy Grace Roman Uzay Teleskobu, 30 Ağustos 2026'da Türkiye saatiyle 14.26'da Florida'daki Kennedy Uzay Merkezi'nden SpaceX'in Falcon Heavy roketiyle fırlatıldı. Kalkıştan 31 dakika sonra roketten ayrılan teleskop, yaklaşık 1,6 milyon kilometre uzaktaki Güneş–Dünya L2 noktasına doğru yola çıktı. Roman'ın her görüntüsü Hubble kadar keskin, ama yaklaşık 100 kat geniş bir gökyüzü alanını kapsayacak. İlk haftalar da iyi geçti: teleskobun yakıtı artık en az 22 yıla yetecek gibi görünüyor.",
+   "Teleskop, NASA'nın ilk baş gökbilimcisi Nancy Grace Roman'ın adını taşıyor. Uzaya bir teleskop gönderilmesini savunan ve Hubble'ın hayata geçmesinde öncü rol oynayan Roman, bu yüzden “Hubble'ın annesi” diye anılıyordu. Teleskobun geliştirilmesi on yılı aşkın sürdü ve Space.com'a göre yaklaşık 4 milyar dolara mal oldu. Hedefi olan L2, Güneş ve Dünya'nın çekimlerinin dengelendiği özel noktalardan biri. Orada Güneş, Dünya ve Ay hep teleskobun arkasında kaldığı için, hassas aletler onlardan yansıyan ışıktan korunabiliyor.",
+   "Roman'ın ana aleti olan Geniş Alan Aleti (WFI), 18 dedektörlü, 300 megapiksellik bir kızılötesi kamera. Tek bir karesi, dolunayın gökyüzünde kapladığı alandan daha büyük bir bölgeyi görüntüleyecek; teleskop her gün bir terabaytı aşkın veri gönderecek. Roman ayrıca uzayda kullanılacak ilk etkin koronagrafı taşıyor. Koronagraf, bir yıldızın göz alıcı ışığını maskeler ve şekil değiştirebilen aynalarla bastırarak yanındaki sönük gezegenlerin yansıttığı ışığı görmeyi sağlayan bir alettir; Roman'dakinin görevi bu teknolojileri uzayda sınamak.",
+   "Bilim hedefleri geniş: milyarlarca galaksiyi haritalayarak evrenin genişlemesini hızlandıran ve doğası bilinmeyen karanlık enerjiyi ve görünmeyen karanlık maddenin dağılımını incelemek, ötegezegen aramak. Roman'ın kıdemli bilimcisi Julie McEnery'ye göre Samanyolu taraması yaklaşık 20 milyar yıldız içerecek; bu, bugüne kadarki en büyük gök cismi kataloğu olacak. Live Science, Roman'ın verilerinin bilinen ötegezegen sayısını 6.000'in üzerinden 100.000'in üzerine çıkarabileceğini aktarıyor.",
+   "Fırlatmadan sonra iyi haberler geldi. 31 Ağustos'taki ilk rota düzeltme ateşlemesi yüzde 99'un üzerinde isabetle yapıldı ve ayrılan 200 kilogram yakıt yerine yalnızca 18 kilogram kadar harcadı. Teleskop planlanandan hafif çıktığı için (hesaplarda 9.800 kilogram varsayılmıştı, gerçek kütle 8.056 kilogram) yakıt tankları fırlatmadan önce tamamen doldurulabilmişti. Roman beş yıllık ana görev ve beş yıllık uzatma için, yani toplam 10 yıla göre tasarlanmıştı. NASA Goddard Uzay Uçuş Merkezi'nin müdürü Jamie Dunn'a göre teleskopta artık en az 22 yıllık bilim çalışmasına yetecek yakıt var.",
+   "11 Eylül'de ekip, dedektörleri eksi 143 °C'ye kadar soğutup Geniş Alan Aleti'ni çalıştırdı. İlk test görüntüsünde yıldızlar odak dışı, halka biçimli lekeler olarak görünüyor; dedektörler henüz fırlatma konumunda olduğu için bu bekleniyordu. Koronagrafın bütün parçalarıyla da iletişim kuruldu. Sırada teleskobun odaklanması, ince yönlendirme sisteminin devreye alınması ve ayarlar var. NASA'ya göre Roman, fırlatmadan yaklaşık 100 gün sonra, Aralık başında L2'deki son yörüngesine girecek; ilk bilim görüntülerinin 2027'nin başında yayımlanması bekleniyor."
+  ],
+  "neden_onemli": "Roman, gökyüzünün geniş bölgelerini tek seferde tarayabildiği için karanlık enerji ve ötegezegen araştırmalarında büyük ölçekli bir veri dönemi başlatıyor; yakıt tasarrufu da bu dönemin planlanandan çok uzun sürebileceği anlamına geliyor.",
+  "kesinlik": "kesin",
+  "ilgili_dersler": [
+   "d12",
+   "d51",
+   "d13"
+  ],
+  "kaynaklar": [
+   {
+    "ad": "NASA: NASA's Roman Space Telescope Launches",
+    "url": "https://science.nasa.gov/blogs/roman/2026/08/30/nasas-roman-space-telescope-launches/",
+    "tarih": "2026-08-30"
+   },
+   {
+    "ad": "NASA: Fuel Savings Double Potential Lifetime for NASA's Roman Mission",
+    "url": "https://science.nasa.gov/blogs/roman/2026/09/14/fuel-savings-double-potential-lifetime-for-nasas-roman-mission/",
+    "tarih": "2026-09-14"
+   },
+   {
+    "ad": "NASA: NASA Activates Roman's Primary Instrument, Checks Out Coronagraph",
+    "url": "https://science.nasa.gov/blogs/roman/2026/09/15/nasa-activates-romans-primary-instrument-checks-out-coronagraph/",
+    "tarih": "2026-09-15"
+   },
+   {
+    "ad": "Space.com: NASA's Roman Space Telescope soars to the stars on a SpaceX Falcon Heavy rocket",
+    "url": "https://www.space.com/space-exploration/launches-spacecraft/nasa-roman-space-telescope-launch-success-on-a-spacex-falcon-heavy-rocket-spectacular-launch-video",
+    "tarih": "2026-08-30"
+   },
+   {
+    "ad": "Live Science: Stars turn neon-green in first test image from NASA's Roman telescope",
+    "url": "https://livescience.com/space/astronomy/we-are-on-our-way-to-groundbreaking-science-stars-turn-neon-green-in-first-test-image-from-nasas-roman-telescope-space-photo-of-the-week",
+    "tarih": "2026-09-20"
+   }
+  ],
+  "gorsel": {
+   "dosya": "img/haber/2026-08-30-roman-firlatildi.jpg",
+   "alt": "Altın renkli, puslu bir gökyüzünde kocaman parlak Güneş diskinin önünden yükselen ince bir roket ve arkasında aşağı doğru uzanan duman izi.",
+   "aciklama": "Gerçek fotoğraf: Roman'ı taşıyan Falcon Heavy, 30 Ağustos 2026'daki kalkışta Kennedy Uzay Merkezi'nden bakıldığında Güneş'in önünden geçiyor.",
+   "kredi": "NASA/John Kraus",
+   "lisans": "Kamu malı (NASA)",
+   "kaynak_url": "https://images.nasa.gov/details/NHQ20260830_admin_0002"
+  }
+ },
+ {
+  "id": "2026-08-19-s301-sgra-donus",
+  "tarih": "2026-08-19",
+  "eklenme": "2026-10-30",
+  "tur": "arastirma",
+  "baslik": "Samanyolu'nun en hızlı yıldızı, merkezdeki kara deliğin dönüşünü ele verebilir",
+  "ozet": [
+   "Avrupa Güney Gözlemevi'nin (ESO) Şili'deki Çok Büyük Teleskop İnterferometresi (VLTI) ile çalışan GRAVITY+ ekibi, galaksimizin merkezindeki kara deliğin çevresinde S301 adlı bir yıldız buldu. Yıldız kara deliğin çevresini 8,7 yılda bir dolanıyor ve en yakın noktada saniyede yaklaşık 25.000 kilometreye, yani ışık hızının yüzde 8'inden fazlasına ulaşıyor. Bu, onu Samanyolu'nun bilinen en hızlı yıldızı yapıyor. Daha da önemlisi S301, bir kara deliğin kendi ekseni etrafında ne hızla döndüğünü doğrudan ölçmek için kullanılabilecek ilk yıldız.",
+   "Samanyolu'nun merkezinde, Güneş'in yaklaşık 4,3 milyon katı kütleli, Sagittarius A* (Yay A*) adlı süper kütleli bir kara delik var. Gökbilimciler onlarca yıldır çevresindeki “S yıldızları”nın yörüngelerini izliyor. Bu ölçümler kara deliğin kütlesini yüzde birden iyi bir hassasiyetle belirledi ve Einstein'ın genel görelilik kuramının öngördüğü bazı etkileri doğruladı: güçlü çekimden çıkan ışığın kızıla kayması ve yörüngenin kendi düzleminde yavaşça dönmesi. Bu çalışmaları yürüten ekibin kurucularından Reinhard Genzel, Nobel ödülü sahibi.",
+   "Dönen bir kara deliğin izini görmek ise çok daha zor. Genel göreliliğe göre dönen bir kara delik, çevresindeki uzay-zamanı da kendisiyle birlikte sürükler ve büker. Lense–Thirring etkisi denen bu olay, yakındaki yörüngelerin yönünü yavaş yavaş değiştirir. Etki şimdiye kadar ölçülenlerden çok daha küçük; görülebilmesi için yıldızın kara deliğe çok sokulması ve çok hızlı hareket etmesi gerekiyor. S301 tam böyle bir yıldız: en yakın noktada kara deliğe 1,78 milyar kilometreye, yani Dünya–Güneş uzaklığının yaklaşık 12 katına kadar yaklaşıyor. Bu, Satürn'ün Güneş'e uzaklığından yalnızca yüzde 20 kadar fazla.",
+   "Yıldızı bulmak kolay olmadı: S301 gökyüzünde Betelgeuse'ten (Avcı takımyıldızındaki turuncu yıldız) yaklaşık iki milyar kat sönük görünüyor. İnterferometri, birkaç teleskobun ışığını birleştirip onları tek bir dev teleskop gibi çalıştırma tekniğidir. VLTI dört adet 8 metrelik teleskobu birleştirerek, tek bir 8 metrelik teleskobun 15 katı ayırma gücüne sahip “sanal” bir teleskop oluşturuyor. Ekip S301'i ilk kez 2023 baharında gördü, sonra eski verilerde izini 2017'ye kadar sürdü; yıldız kara deliğe en son 2023 başında en çok yaklaşmıştı. Sonuçlar 19 Ağustos'ta Nature dergisinde yayımlandı.",
+   "Kara deliğe bu kadar yakın bir yerde yıldız oluşamayacağı için S301 başka bir yerden gelmiş olmalı. Ekibe göre yörüngesinin çok basık olması, onun bir çift yıldızın üyesi olduğunu ve çiftin kara deliğin gelgit kuvvetleriyle parçalandığını düşündürüyor (Hills mekanizması). Bu süreçte S301 kara deliğe yakalanırken eşi büyük bir hızla fırlatılmış ve büyük olasılıkla galaksiden kaçmış olmalı.",
+   "Dönüş ölçümü henüz yapılmadı. Bunun için yıldızın en az iki tam turunu izlemek gerekiyor; bir sonraki en yakın geçiş 2031'de. Ekip, GRAVITY+ ve ESO'nun yapımı süren Aşırı Büyük Teleskobu'ndaki (ELT) MICADO aletiyle yapılacak izlemelerle kara deliğin dönüşünü önümüzdeki 10 yıl içinde ölçmeyi umuyor. Science News'in aktardığına göre kara deliklerin dönüşü bugün çoğunlukla modellere dayanan dolaylı yöntemlerle tahmin ediliyor. S301 ise bunu doğrudan bir yıldızın hareketinden ölçme ve Einstein'ın kuramını yeni bir yoldan sınama fırsatı sunuyor."
+  ],
+  "neden_onemli": "Kara deliklerin dönüş hızı bugün çoğunlukla modellere dayanan dolaylı yöntemlerle tahmin ediliyor. S301, Samanyolu'nun kara deliğinin dönüşünü bir yıldızın hareketinden doğrudan ölçmenin yolunu açabilir.",
+  "kesinlik": "kesin",
+  "ilgili_dersler": [
+   "d46",
+   "d26",
+   "d47"
+  ],
+  "makale": {
+   "baslik": "Discovery of a star sensitive to the spin of Sgr A*",
+   "yazarlar": "GRAVITY+ İşbirliği (Abd El Dayem vd.)",
+   "dergi": "Nature",
+   "url": "https://doi.org/10.1038/s41586-026-10894-w"
+  },
+  "kaynaklar": [
+   {
+    "ad": "ESO: Milky Way's fastest star orbits our supermassive black hole so closely it feels its spin (eso2612)",
+    "url": "https://www.eso.org/public/news/eso2612/",
+    "tarih": "2026-08-19"
+   },
+   {
+    "ad": "Nature: GRAVITY+ İşbirliği, Discovery of a star sensitive to the spin of Sgr A*",
+    "url": "https://doi.org/10.1038/s41586-026-10894-w",
+    "tarih": "2026-08-19"
+   },
+   {
+    "ad": "arXiv (ön baskı): GRAVITY+ İşbirliği",
+    "url": "https://arxiv.org/abs/2607.12664",
+    "tarih": "2026-07-14"
+   },
+   {
+    "ad": "Science News: A record-breaking star could reveal how the Milky Way's giant black hole spins",
+    "url": "https://www.sciencenews.org/article/record-breaking-star-black-hole-spin",
+    "tarih": "2026-08-19"
+   }
+  ],
+  "gorsel": {
+   "dosya": "img/haber/2026-08-19-s301-sgra-donus.jpg",
+   "alt": "Yan yana dört siyah kare; her birinde SgrA* etiketli parlak bir nokta, çevresinde turuncu yıldızlar ve S301'in beyaz bir elipsle çizilmiş yörüngesi; karelerin üstünde 2021'den 2025'e tarihler, altta ölçek için Neptün'ün yörüngesini gösteren küçük bir çember.",
+   "aciklama": "İşlenmiş gözlem verisi: VLTI'deki GRAVITY aletiyle 2021, 2023, 2024 ve 2025'te alınmış görüntülerde S301 ve öteki yıldızlar Sagittarius A*'nın çevresinde. Yıldızlar gerçek ölçümlerden; beyaz elips ise hesaplanmış yörünge (düz çizgi kat edilen, kesikli çizgi kalan yol). Alttaki küçük çember, karşılaştırma için Neptün'ün yörüngesinin büyüklüğü.",
+   "kredi": "ESO/GRAVITY collaboration",
+   "lisans": "CC BY 4.0",
+   "kaynak_url": "https://www.eso.org/public/images/eso2612a/"
+  }
+ }
+]
