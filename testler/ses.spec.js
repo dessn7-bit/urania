@@ -349,25 +349,25 @@ async function yonVer(page, alpha, beta, gamma) {
 test('(k) Dersten derse: kutu işaretliyse ders bitince sonrakine geçer ve kendiliğinden okur; işaretsizse durur', async ({ page }) => {
   await sahteOrtam(page);
   await dersAc(page, 'd9');
-  await page.locator('#dsSurekli').check();
+  await page.locator('#dsSurekli').check();   // ünite sırasında d9'dan sonra d44 (Dünya) gelir
   await cubuk(page).locator('[data-so="dinle"]').click();
   for (let i = 0; i < 600 && await durumu(page); i++) await page.evaluate(() => window.__sahteSes.bitir());
-  await expect(page).toHaveURL(/#ders\/d10$/);
-  await expect.poll(() => konusmalar(page).then(k => k[k.length - 1]), { timeout: 5000 }).toMatch(/^Ders \d+: Ay: /);
+  await expect(page).toHaveURL(/#ders\/d44$/);
+  await expect.poll(() => konusmalar(page).then(k => k[k.length - 1]), { timeout: 5000 }).toMatch(/^Ders \d+: Dünya: /);
   expect((await durumu(page)).durum).toBe('oynuyor');
   /* işaret kaldırılınca sonda durur */
   await page.locator('#dsSurekli').uncheck();
   for (let i = 0; i < 600 && await durumu(page); i++) await page.evaluate(() => window.__sahteSes.bitir());
-  /* Olumlu koşul: d10'un okuması gerçekten SONA ERDİ (durdurulmadı); geçiş kararı (bitince) bu anda eşzamanlı
-     verilir. Sonra: adres d10'da kaldı, sonraki derse devam bayrağı yazılmadı ve yeni okuma başlamadı. */
+  /* Olumlu koşul: d44'ün okuması gerçekten SONA ERDİ (durdurulmadı); geçiş kararı (bitince) bu anda eşzamanlı
+     verilir. Sonra: adres d44'te kaldı, sonraki derse devam bayrağı yazılmadı ve yeni okuma başlamadı. */
   expect(await durumu(page)).toBe(null);
   /* Son bitiş olayı (ardından "ekran kilidi bırakıldı" gibi kayıtlar gelebilir) "durdu" değil "sona erdi" olmalı */
   expect((await olaylar(page)).filter(o => /^(sona erdi|durdu)/.test(o)).slice(-1)[0]).toMatch(/^sona erdi/);
   const sonSay = await say(page);
-  expect(await page.evaluate(() => [location.hash, sessionStorage.getItem('urania_sesDevam')])).toEqual(['#ders/d10', null]);
-  await expect(page.locator('article.ders h1')).toContainText('Ay');
+  expect(await page.evaluate(() => [location.hash, sessionStorage.getItem('urania_sesDevam')])).toEqual(['#ders/d44', null]);
+  await expect(page.locator('article.ders h1')).toContainText('Dünya');
   expect(await say(page)).toBe(sonSay);
-  await expect(page).toHaveURL(/#ders\/d10$/);
+  await expect(page).toHaveURL(/#ders\/d44$/);
 });
 
 test('(g) Gökyüzü: "Bu geceyi dinle" özeti, bulut cümlesini ve planı okur; "Gördüm, deftere yaz" okunmaz', async ({ page }) => {

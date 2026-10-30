@@ -237,6 +237,10 @@
     /* "−%2,4 ile +%0,8" → "eksi yüzde 2,4 ile artı yüzde 0,8"; saat dilimi "UTC+3" → "UTC artı 3" */
     t = t.replace(/(^|[\s(])([+−])(?=yüzde)/g, (m, o, i) => o + (i === '+' ? 'artı ' : 'eksi '));
     t = t.replace(/\b(UTC|GMT)([+−-])(\d)/g, (m, z, i, n) => z + (i === '+' ? ' artı ' : ' eksi ') + n);
+    /* Son süzgeç: kalan karşılaştırma ve işaretler (katalog adları "J0952−0607", "(1+z)", "…−1", |x|) */
+    t = t.replace(/\s?≠\s?/g, ' eşit değildir ');
+    t = t.replace(/\|([^|\n]{1,40})\|/g, ' mutlak değer ($1) ');
+    t = t.replace(/\s?−\s?/g, ' eksi ').replace(/(\S)\+(\S)/g, '$1 artı $2').replace(/(^|\s)\+(?=\S)/g, '$1artı ');
     return t.replace(/\s+/g, ' ').replace(/\s([,.;:!?)])/g, '$1').replace(/\(\s/g, '(').trim();
   }
 
