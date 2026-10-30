@@ -212,7 +212,7 @@
 
   /* d46 · bölüm 9: Eddington sınırında üstel büyüme M = M₀ e^(t/t_S); t_S = 4,5 × 10⁸ yıl × ε / (1 − ε) (λ = 1). */
   C.ekle('d46-tohum-buyume', {
-    ders: 'd46', bolum: 9, oran: 0.98,
+    ders: 'd46', bolum: 9, oran: 1.08,
     baslik: 'Tohum sorunu: hafif tohum zamanında yetişemez',
     aciklama: 'Dikey eksen kara deliğin kütlesi, logaritmik: her çentik yüz kat. Yatay eksen tohum doğduktan sonra geçen süredir. Eğriler Eddington sınırında kesintisiz beslenen kara deliklerdir. Verim yüzde 10 iken kütle her 50 milyon yılda e katına çıkar. 100 Güneş kütleli hafif tohum 1,6 milyar Güneş kütlesine ancak yaklaşık 830 milyon yılda ulaşır; oysa J0313–1806 kuasarının ışığı yola çıktığında evren yalnızca yaklaşık 680 milyon yaşındaydı ve tohum Büyük Patlama\'yla aynı anda doğamaz. 100 bin Güneş kütleli ağır tohum aynı kütleye yaklaşık 480 milyon yılda varır. Noktalı eğri ağır tohumun hızlı dönen, verimi yüzde 42 olan hâlidir: ışığa giden kütle kara deliğe eklenmediği için çok daha yavaş büyür.',
     kaynak: [KAYNAK.shen, KAYNAK.j0313, KAYNAK.smbh],
@@ -224,32 +224,30 @@
         yIsaret: [[100, on(2)], [1e4, on(4)], [1e6, on(6)], [1e8, on(8)], [1e10, on(10)]],
         xAd: 'tohumdan sonra geçen süre (milyon yıl)', yAd: 'kütle (Güneş kütlesi)', yAdUzak: 46
       });
-      let s = '';
-      /* evrenin yaşı çizgisi */
-      s += S.kutu(ek.X(680), 30, ek.X(900) - ek.X(680), 236, { dolgu: R.uyari, renk: 'none', saydam: 0.12 });
-      s += ek.svg;
+      let s = ek.svg;
+      /* evrenin yaşı ve hedef kütle */
       s += S.cizgi(ek.X(680), 30, ek.X(680), 266, { renk: R.uyari, kalin: 2, kesik: '6 4' });
-      /* hedef kütle */
       s += S.cizgi(ek.X(0), ek.Y(1.6e9), ek.X(900), ek.Y(1.6e9), { renk: R.metin, kalin: 1, kesik: '3 3' });
-      s += S.zeminliYazi(ek.X(10), ek.Y(1.6e9) - 6, 'J0313–1806: 1,6 milyar', { boy: 13, renk: R.metin, kalin: true });
       const egri = (M0, eps, o) => S.fonk(ek, t => { const M = M0 * Math.exp(t / ts(eps)); return M <= 1e10 ? M : NaN; }, 0, 900, 200, o);
-      s += egri(100, 0.1, { renk: R.vurgu, kalin: 3 });
-      s += egri(1e5, 0.1, { renk: R.metin, kalin: 2.4, kesik: '8 4' });
-      s += egri(1e5, 0.42, { renk: R.mavi, kalin: 2.4, kesik: '2 4' });
+      const st = [[100, 0.1, { renk: R.vurgu, kalin: 3 }], [1e5, 0.1, { renk: R.metin, kalin: 2.4, kesik: '8 4' }], [1e5, 0.42, { renk: R.mavi, kalin: 2.6, kesik: '2 4' }]];
+      st.forEach(([M0, eps, o]) => { s += egri(M0, eps, o); });
       /* kesişmeler */
       const tH = ts(0.1) * Math.log(1.6e9 / 100), tA = ts(0.1) * Math.log(1.6e9 / 1e5);
       s += S.daire(ek.X(tH), ek.Y(1.6e9), 5, { dolgu: R.vurgu, renk: R.zemin, kalin: 1.5 });
       s += S.daire(ek.X(tA), ek.Y(1.6e9), 5, { dolgu: R.metin, renk: R.zemin, kalin: 1.5 });
-      /* etiketler */
-      s += S.zeminliYazi(ek.X(470), ek.Y(3e3), 'hafif tohum: 100', { boy: 13, renk: R.vurgu, kalin: true });
-      s += S.zeminliYazi(ek.X(470), ek.Y(3e3) + 17, 'yetişme ≈' + tr(tH) + ' milyon yıl', { boy: 13, renk: R.vurgu });
-      s += S.zeminliYazi(ek.X(tA) - 8, ek.Y(1.6e9) + 22, 'ağır tohum: ≈' + tr(Math.round(tA / 10) * 10), { boy: 13, hiza: 'end', renk: R.metin, kalin: true });
-      s += S.zeminliYazi(ek.X(250), ek.Y(1e5) - 16, 'ağır, ε = 0,1 (kesikli)', { boy: 13, renk: R.metin });
-      s += S.zeminliYazi(ek.X(470), ek.Y(2.2e6) + 4, 'ağır, ε = 0,42 (noktalı)', { boy: 13, renk: R.mavi });
-      s += S.zeminliYazi(ek.X(680) - 6, 48, 'evren 680 milyon yaşında', { boy: 13, hiza: 'end', renk: R.uyari, kalin: true });
-      s += S.yazi(8, 344, 'Eddington sınırında beslenme: kütle her', { boy: 13, renk: R.soluk });
-      s += S.yazi(8, 362, tr(ts(0.1)) + ' milyon yılda (ε = 0,1) e ≈ 2,718 katına çıkar', { boy: 13, renk: R.soluk });
-      s += S.yazi(8, 380, 'ε = 0,42 ile bu süre ≈' + tr(Math.round(ts(0.42) / 10) * 10) + ' milyon yıl', { boy: 13, renk: R.mavi });
+      s += S.yazi(ek.X(tH), ek.Y(1.6e9) - 11, '≈' + tr(Math.round(tH / 10) * 10), { boy: 13, hiza: 'middle', renk: R.vurgu, kalin: true });
+      s += S.yazi(ek.X(tA), ek.Y(1.6e9) - 11, '≈' + tr(Math.round(tA / 10) * 10), { boy: 13, hiza: 'middle', renk: R.metin, kalin: true });
+      s += S.yazi(ek.X(5), ek.Y(1.6e9) - 6, 'J0313–1806', { boy: 13, renk: R.metin, kalin: true });
+      s += S.yazi(ek.X(680) - 6, 258, 'evren 680 milyon yaşında', { boy: 13, hiza: 'end', renk: R.uyari, kalin: true });
+      /* açıklama: çizgi örnekleri */
+      const ad = [['hafif tohum: 100 Güneş kütlesi, ε = 0,1', 0], ['ağır tohum: 100 bin, ε = 0,1', 1], ['ağır tohum: 100 bin, ε = 0,42 (hızlı dönen)', 2]];
+      ad.forEach(([t, i]) => {
+        const y = 330 + i * 20, o = st[i][2];
+        s += S.cizgi(8, y - 5, 38, y - 5, Object.assign({}, o, { kalin: Math.min(o.kalin, 2.6) }));
+        s += S.yazi(46, y, t, { boy: 13, renk: o.renk, kalin: i === 0 });
+      });
+      s += S.yazi(8, 400, 'hedef: 1,6 milyar Güneş kütlesi (kesikli yatay)', { boy: 13, renk: R.metin });
+      s += S.yazi(8, 420, 'ε = 0,1: her ' + tr(ts(0.1)) + ', ε = 0,42: her ≈' + tr(Math.round(ts(0.42) / 10) * 10) + ' milyon yılda e katı', { boy: 13, renk: R.soluk });
       return s;
     }
   });
