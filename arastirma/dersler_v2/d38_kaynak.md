@@ -2,7 +2,7 @@
 
 Biçim: iddia | kaynak URL | kaynaktaki ifade (kısa alıntı ya da değer; WebFetch özetinin aktardığı metin)
 Türler: [W] bu oturumda WebFetch ile okundu; [P] proje dosyasında (d3, d9, d11, d37) daha önce doğrulanmış satır; [H] python3 ile hesap; ÇIKARIM = kaynak ifadesinden mantıkla çıkan cümle.
-Arama: d38 için 14 WebSearch (halka tablosu; halka kütlesi; Hyodo 2024; halka yağmuru; altıgen; Mankovich çekirdek; gün uzunluğu; helyum yağmuru; Büyük Final; halka tarihi; ekinoks/Büyük Beyaz Leke; dürbünle Satürn; ayrıca d37 aramalarından gelen ortak kaynaklar). İzin/yönlendirme sorunu: news.berkeley.edu (yönlendirme döngüsü, kullanılmadı).
+Arama: d38 için 12 WebSearch (halka tablosu; halka kütlesi; Hyodo 2024; halka yağmuru; altıgen; Mankovich çekirdek; gün uzunluğu; helyum yağmuru; Büyük Final; halka tarihi; ekinoks/Büyük Beyaz Leke; dürbünle Satürn). İzin/yönlendirme sorunu: news.berkeley.edu (yönlendirme döngüsü, kullanılmadı).
 
 ## Bölüm 0 — Sayılarla Satürn
 | [W] Kütle 568,32 × 10²⁴ kg; hacim 82.713 × 10¹⁰ km³; ekvator 60.268, kutup 54.364, ortalama 58.232 km; yoğunluk 687 kg/m³ | https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturnfact.html | "Mass 568.32 × 10²⁴ kg; Volume 82,713 × 10¹⁰ km³; Equatorial radius 60,268 km; Polar radius 54,364 km; Volumetric mean radius 58,232 km; Mean density 687 kg/m³" |
