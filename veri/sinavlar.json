@@ -602,7 +602,7 @@
      "Olympus Mons'un aslında bir çarpma krateri olması"
     ],
     "dogru": 1,
-    "aciklama": "Derse göre Mars'ın kabuğu hareket eden levhalara bölünmediği için sıcak noktanın üstündeki kabuk yerinde kalır ve magma hep aynı yerde birikir; Dünya'da ise levha kaydıkça bir volkan zinciri oluşur. Düşük çekim de volkanların daha büyük olabilmesine izin verir. Volkanın ortalama eğimi yalnızca yaklaşık 5°'dir.",
+    "aciklama": "Derse göre Mars'ın kabuğu hareket eden levhalara bölünmediği için sıcak noktanın üstündeki kabuk yerinde kalır ve magma hep aynı yerde birikir; Dünya'da ise levha kaydıkça bir volkan zinciri oluşur. Düşük çekim de volkanların daha büyük olabilmesine izin verir. Volkanın ortalama eğimi yalnızca yaklaşık 3–5°'dir.",
     "ders": "d36",
     "bolum": 5
    },
@@ -689,6 +689,232 @@
     "aciklama": "33 K'lik fark sera etkisinin ölçüsüdür. Yüzey metrekare başına ortalama ~398 W ışır, uzaya ise ~239 W ulaşır; aradaki kısım atmosferde tutulup kısmen yüzeye geri yayılır. Su buharı ve karbondioksit başlıca sera gazlarıdır.",
     "ders": "d44",
     "bolum": 11
+   }
+  ],
+  "dev_gezegenler": [
+   {
+    "id": "d37-1",
+    "soru": "Juno'nun çekim ölçümleri Jüpiter'in çekirdeği hakkında ne gösterdi?",
+    "secenekler": [
+     "Merkezde Dünya büyüklüğünde, keskin sınırlı bir kaya-buz topu olduğunu kesinleştirdi",
+     "Ölçümlere uyan birçok modelde ağır elementlerin merkezden dışa seyrelerek yarıçapın belki yarısına kadar yayıldığını",
+     "Jüpiter'in merkezinde hiç ağır element bulunmadığını",
+     "Çekirdeğin tamamen metalik helyumdan oluştuğunu"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre Juno'nun ölçtüğü çekim alanına uyan modellerin birçoğunda sıkı bir çekirdek yok; ağır elementler seyrelmiş bir çekirdek bölgesine, Helled ve meslektaşlarına göre belki yarıçapın yarısına kadar yayılmış (Liu ve ekibine göre 10 ile birkaç on Dünya kütlesi). İçeride küçük, sıkı bir çekirdek kesin dışlanmadı; bu yapının nasıl oluştuğu tartışmalı.",
+    "ders": "d37",
+    "bolum": 3
+   },
+   {
+    "id": "d37-2",
+    "soru": "2024'te yayımlanan çalışmaya göre Büyük Kırmızı Leke ile Cassini'nin 1665'te gördüğü 'Kalıcı Leke' arasındaki ilişki nedir?",
+    "secenekler": [
+     "İkisi aynı fırtınadır; leke 360 yıldır kesintisiz izleniyor",
+     "Kalıcı Leke 1713'ten sonra kayboldu; bugünkü leke 1831'de kaydedildi, yani 190 yaşından büyük ama Cassini'nin lekesi değil",
+     "Kalıcı Leke Satürn'deydi, Jüpiter'de değil",
+     "Büyük Kırmızı Leke 1979'da Voyager'lar geçerken oluştu"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre Sánchez-Lavega ve ekibi (Geophysical Research Letters, Haziran 2024) bugünkü lekenin Kalıcı Leke olmasını 'pek olası' bulmadı: Kalıcı Leke 1713'e kadar izlenip kayboldu, aynı enlemde yeni bir leke 1831'de kaydedildi. Leke 1879'da ~39.000 km iken bugün ~14.000 km'dir.",
+    "ders": "d37",
+    "bolum": 7
+   },
+   {
+    "id": "d37-3",
+    "soru": "Shoemaker-Levy 9 kuyruklu yıldızı neden 21 parçaya bölündü?",
+    "secenekler": [
+     "Güneş'e çok yaklaşıp buzları kaynadığı için",
+     "Bir asteroitle çarpıştığı için",
+     "Temmuz 1992'de Jüpiter'e Roche sınırının içinden geçtiği ve gelgit kuvveti onu bir arada tutan kendi çekiminden büyük olduğu için",
+     "Jüpiter'in manyetik alanı onu elektrikle parçaladığı için"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre kuyruklu yıldız 8 Temmuz 1992'de Jüpiter'in bulut tepelerinin yaklaşık 22.100 km üstünden geçti. Yakın yanının uzak yanından çok daha güçlü çekilmesi, yani gelgit kuvveti, zayıf kendi çekimini yendi; buna Roche sınırı denir. Parçalar 16–22 Temmuz 1994'te yaklaşık 61 km/s hızla çarptı.",
+    "ders": "d37",
+    "bolum": 11
+   },
+   {
+    "id": "d37-4",
+    "soru": "Jüpiter'in manyetik alanı için verilen '20.000 kat' sayısı neyi anlatır?",
+    "secenekler": [
+     "Bulut tepelerinde ölçülen alan şiddetinin Dünya yüzeyindekinin 20.000 katı olduğunu",
+     "Manyetik momentin, yani alan şiddeti ile yarıçapın küpünün çarpımıyla orantılı toplam büyüklüğün Dünya'nınkinin ~20.000 katı olduğunu",
+     "Manyetosferin Dünya'nınkinden 20.000 kat uzun kuyruğu olduğunu",
+     "Kutup ışıklarının Dünya'dakilerden 20.000 kat parlak olduğunu"
+    ],
+    "dogru": 1,
+    "aciklama": "Derste NASA'nın dipol değerleriyle hesaplandı: (4,30 / 0,306) × (71.492 / 6378)³ ≈ 19.800. Bulut tepelerindeki alan şiddeti ise 4–13 gauss, yani Dünya'nın ekvatorundaki ~0,31 gauss'un onlarca katıdır; farkı Jüpiter'in büyüklüğü yaratır.",
+    "ders": "d37",
+    "bolum": 8
+   },
+   {
+    "id": "d38-1",
+    "soru": "Satürn'ün bir gününün uzunluğunu radyo sinyalinden ölçmek neden zor oldu?",
+    "secenekler": [
+     "Satürn'ün halkaları radyo dalgalarını tamamen engellediği için",
+     "Manyetik ekseni dönme eksenine neredeyse kusursuz hizalı olduğundan alan dönüşü bir 'fener' gibi belli etmediği için",
+     "Satürn hiç radyo ışınımı yaymadığı için",
+     "Satürn Dünya'ya hep aynı yüzünü gösterdiği için"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre Satürn'ün manyetik ekseni dönme eksenine 0,06°'den bile çok daha az eğik. Jüpiter'de 9,4°'lik eğiklik radyo ışınımını dönüşle değiştirir; Satürn'de bu olmaz. Voyager 10:39:23 buldu, Cassini'nin radyo dönemi ~10:45:45'e kaydı, tahminler 10:36–10:48 arasında dağıldı; 2019'da halka dalgalarından 10 sa 33 dk 38 sn bulundu.",
+    "ders": "d38",
+    "bolum": 2
+   },
+   {
+    "id": "d38-2",
+    "soru": "Cassini Bölümü'nün iç kenarı neden yaklaşık 117.000 km'dedir?",
+    "secenekler": [
+     "Orada Satürn'ün Roche sınırı bulunduğu için",
+     "Oradaki parçacıklar Mimas'ın her turunda iki tur attığı için (2:1 rezonans); Mimas'ın çekişleri birikir ve malzemeyi seyreltir",
+     "Pan uydusu o bölgeyi süpürdüğü için",
+     "Enceladus'un gayzerleri o bölgeyi boşalttığı için"
+    ],
+    "dogru": 1,
+    "aciklama": "Derste Kepler'in üçüncü yasasıyla hesaplandı: 185.537 km × (1/2)^(2/3) ≈ 116.900 km; tabloya göre Cassini Bölümü 117.500 km'de başlar. Pan ise A halkasındaki Encke Boşluğu'nu açık tutar.",
+    "ders": "d38",
+    "bolum": 10
+   },
+   {
+    "id": "d38-3",
+    "soru": "Hyodo ve ekibinin Aralık 2024 çalışması halkaların yaşı tartışmasına ne ekledi?",
+    "secenekler": [
+     "Halkaların 2017'de oluştuğunu ölçtü",
+     "Benzetimlere göre mikrometeoroitler çarpınca buharlaşıp plazmaya döner ve manyetik alanla uzaklaştırılır; halkalar az kirlendiği için temiz görünmeleri genç olduklarını kanıtlamaz",
+     "Halkaların kütlesinin Mimas'ın 10 katı olduğunu buldu",
+     "Halkaların kayadan yapıldığını gösterdi"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre Cassini'nin düşük kütle ve temizlik ölçümleri 10–100 milyon yıllık genç halkalara işaret ediyordu. Hyodo, Madeira ve Genda'nın benzetimlerinde ~20 km/s'lik mikrometeoroitler buharlaşıp ~10.000 °C'lik plazmaya döner ve Satürn'ün manyetik alanıyla gezegene ya da dışarı savrulur; halkalar 4,5 milyar yaşında olabilir. Bu bir modeldir, tartışma açık.",
+    "ders": "d38",
+    "bolum": 11
+   },
+   {
+    "id": "d38-4",
+    "soru": "Ekim 2026'da İstanbul'dan 7×50 dürbünle Satürn'e bakarsan ne beklemelisin?",
+    "secenekler": [
+     "Halkaları ve Cassini Bölümü'nü açıkça",
+     "Sarımsı bir yıldız gibi bir nokta; halkalar seçilmez, çünkü bunun için ~20× ya da daha fazla büyütme gerekir ve 2026'da halkalar yalnızca 6–9° açık",
+     "Kutup altıgenini",
+     "Büyük Beyaz Leke'yi"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre halkaları ayırmak için 20× ya da üstü gerekir; bir rehbere göre 10×50 bile ancak halkalar geniş açıkken oval bir görüntü verir. Abrams Planetaryumu'na göre halkaların Dünya'ya eğikliği Temmuz 2026'da ~9,2°, Aralık 2026'da ~6,1°. Halkalar için ~30× büyüten 70 mm'lik bir teleskop gerekir; en açık hâl 2032.",
+    "ders": "d38",
+    "bolum": 15
+   },
+   {
+    "id": "d39-1",
+    "soru": "Le Verrier'nin hesabı Neptün'ün yerini hangi gözlemden yola çıkarak buldu?",
+    "secenekler": [
+     "Neptün'ün Güneş'in önünden geçişinden",
+     "Uranüs'ün yörüngesindeki, Newton yasasının açıklayamadığı sapmalardan",
+     "Triton'un parlaklık değişimlerinden",
+     "Jüpiter'in uydularının tutulma saatlerinden"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre Bouvard'ın 1821 tablolarından sapan Uranüs gözlemleri (pertürbasyonlar) bilinmeyen bir gezegenin çekimine işaret ediyordu. Le Verrier ve Adams bu sapmalardan yeri hesapladı; Galle 23 Eylül 1846'da Le Verrier'nin noktasından 1° uzakta buldu.",
+    "ders": "d39",
+    "bolum": 2
+   },
+   {
+    "id": "d39-2",
+    "soru": "Laboratuvardaki 'elmas yağmuru' deneyleri tam olarak neyi gösterdi?",
+    "secenekler": [
+     "Neptün'ün içinde milyonlarca kıratlık elmasların ölçüldüğünü",
+     "Voyager 2'nin elmas parçacıklarına çarptığını",
+     "Lazer şokuyla sıkıştırılan polistiren ve PET plastiğinde nanometre boyunda elmasların oluştuğunu",
+     "Uranüs'ün halkalarının elmastan yapıldığını"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre 2017'de polistiren, 2022'de PET plastiği lazerle şoklanıp X-ışınıyla izlendiğinde birkaç nanometrelik elmaslar oluştu. Bu, benzer koşullarda karbonun elmasa dönüşebildiğini gösterir; gezegenlerin içinde doğrudan ölçülmedi.",
+    "ders": "d39",
+    "bolum": 5
+   },
+   {
+    "id": "d39-3",
+    "soru": "Neptün Güneş'ten aldığının yaklaşık kaç katı enerjiyi uzaya yayar ve bu ne anlama gelir?",
+    "secenekler": [
+     "Yaklaşık 2,6 katını; güçlü bir iç ısısı vardır",
+     "Tam 1 katını; iç ısısı yoktur",
+     "Yaklaşık 0,5 katını; enerji biriktirir",
+     "Yaklaşık 10 katını; içinde füzyon vardır"
+    ],
+    "dogru": 0,
+    "aciklama": "Derse göre Neptün aldığının ~2,61 katını yayar; içten gelen akı metrekare başına ~0,43 W'tır. Uranüs ise Voyager verisiyle yalnızca ~1,1 kat; 2025 modelleri ~%15 fazlalık buldu.",
+    "ders": "d39",
+    "bolum": 6
+   },
+   {
+    "id": "d39-4",
+    "soru": "Uranüs'ün manyetik alanının eğikliğinin yan yatmış eksenden kaynaklanmadığını hangi gözlem gösterdi?",
+    "secenekler": [
+     "Uranüs'ün halkalarının 1977'de keşfi",
+     "Hubble'ın 2025 dönme ölçümü",
+     "Neptün'ün renginin 2024'te yeniden hesaplanması",
+     "Voyager 2'nin, ekseni normal eğiklikteki Neptün'ün alanını da benzer biçimde eğik ve kaymış bulması"
+    ],
+    "dogru": 3,
+    "aciklama": "Derse göre Neptün'ün ekseni 28,32° eğik olduğu hâlde manyetik ekseni 46,9° yatık ve merkezden kayıktır. Bu yüzden tuhaf geometri iç akışlara, ince ve iletken bir kabuktaki dinamoya bağlanır.",
+    "ders": "d39",
+    "bolum": 10
+   },
+   {
+    "id": "d40-1",
+    "soru": "Io, Europa ve Ganymede'nin dolanma süreleri 1:2:4 oranındadır. Bu rezonansın Io için en önemli sonucu nedir?",
+    "secenekler": [
+     "Io'nun yörüngesini eliptik tutarak değişen gelgit çekimiyle sürekli ısınmasını sağlar",
+     "Io'yu Jüpiter'in gölgesinden hiç çıkarmaz",
+     "Io'nun kendi manyetik alanını üretir",
+     "Io'nun buz kabuğunu kalınlaştırır"
+    ],
+    "dogru": 0,
+    "aciklama": "Derse göre rezonans yörüngeleri hafifçe eliptik kalmaya zorlar; Io Jüpiter'e yaklaşıp uzaklaştıkça sıkışıp gevşer ve bu gelgit ısınması volkanlarını besler. Jüpiter'in Io'daki gelgit ivmesi, Ay'ın Dünya'dakinin yaklaşık 5600 katıdır.",
+    "ders": "d40",
+    "bolum": 2
+   },
+   {
+    "id": "d40-2",
+    "soru": "Galileo aracının manyetometresinin Europa ve Callisto çevresinde ölçtüğü indüklenmiş manyetik alanlar en iyi neyle açıklanır?",
+    "secenekler": [
+     "Uyduların demir çekirdeklerinin dinamo etkisiyle",
+     "Yüzeyin hemen altındaki iletken tuzlu su katmanlarıyla",
+     "Güneş rüzgârının uydu yüzeylerine çarpmasıyla",
+     "Uyduların kalın buz kabuklarının mıknatıslanmasıyla"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre Jüpiter'in dönen alanı uydularda sürekli değişir; değişen alan yalnızca iletken bir maddede akım ve ikincil alan doğurur. Khurana ve arkadaşlarına (1998) göre en olası iletken, tuzlu sıvı su okyanuslarıdır.",
+    "ders": "d40",
+    "bolum": 1
+   },
+   {
+    "id": "d40-3",
+    "soru": "Petricca ve arkadaşlarının 2025 çalışması Titan'ın içi hakkında ne öne sürdü?",
+    "secenekler": [
+     "Titan'ın tamamen kaya olduğunu",
+     "Titan'ın metan okyanusunun yüzeyin 1000 km altında olduğunu",
+     "Küresel bir su okyanusu yerine kalın buzun altında çamursu bir katman ve su cepleri bulunduğunu",
+     "Titan'ın içinin Io gibi erimiş kayadan oluştuğunu"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre Titan'ın biçim değişikliği Satürn'ün en güçlü çekiminin yaklaşık 15 saat gerisinden geliyor ve içeride harcanan enerji küresel bir okyanus için fazla. Model: 150 km'den kalın buzun altında çamursu bir karışım ve erimiş su cepleri. Sonuç kesin değil.",
+    "ders": "d40",
+    "bolum": 8
+   },
+   {
+    "id": "d40-4",
+    "soru": "Triton'un Neptün'ün yanında doğmayıp sonradan yakalandığı neden düşünülür?",
+    "secenekler": [
+     "Çünkü Neptün'ün halkalarının içinde dolanır",
+     "Çünkü gezegenin dönüşünün tersine dolanan tek büyük uydudur",
+     "Çünkü Güneş Sistemi'nin en sıcak uydusudur",
+     "Çünkü yüzeyi tamamen kraterlerle kaplıdır"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre Triton 157,3° eğiklikle ters yönde dolanır; gezegenle birlikte bir diskte doğan uydular gezegenle aynı yönde dolanır. Bu yüzden Triton'un Kuiper kuşağından gelip yakalandığı düşünülür.",
+    "ders": "d40",
+    "bolum": 12
    }
   ],
   "kucuk_cisimler": [
@@ -922,11 +1148,11 @@
     "secenekler": [
      "Yaklaşık %50; çünkü Dünya'ya düşen cisimlerin yarısı gezegencik çekirdeğidir",
      "Yaklaşık %4,6; demirler kolay fark edildiği, yavaş aşındığı ve tarih boyunca toplandığı için buluntularda fazla görünür",
-     "Yaklaşık %79; çünkü sıradan kondritlerin çoğu aslında demirdir",
+     "Yaklaşık %80; çünkü sıradan kondritlerin çoğu aslında demirdir",
      "Yaklaşık %0,5; çünkü demir göktaşları yalnız Mars'tan gelir"
     ],
     "dogru": 1,
-    "aciklama": "Haziran 2012'ye kadar kayıtlı düşüşlerde ana türüne göre sınıflanmış 1.062 düşüşün 49'u demirdir (yaklaşık %4,6); sıradan kondritler yaklaşık %79'dur. Buluntular yanlıdır: demirler sıradan kayaya benzemez, ağırdır, yavaş aşınır ve işe yarar diye toplanmıştır.",
+    "aciklama": "Haziran 2012'ye kadar kayıtlı düşüşlerde ana türüne göre sınıflanmış 1.062 düşüşün 49'u demirdir (yaklaşık %4,6); sıradan kondritler yaklaşık %80'dir. Buluntular yanlıdır: demirler sıradan kayaya benzemez, ağırdır, yavaş aşınır ve işe yarar diye toplanmıştır.",
     "ders": "d43",
     "bolum": 5
    },
@@ -954,7 +1180,7 @@
      "Türkiye'ye düşen ilk ve tek göktaşıdır"
     ],
     "dogru": 2,
-    "aciklama": "Derse göre 2019'da Meteoritics and Planetary Science'ta yayımlanan Sarıçiçek Konsorsiyumu makalesi onu belgelenmiş ilk howardit düşüşü olarak tanımlar; 343 taş belgelendi. Yaklaşık 1 metrelik meteoroit 22 ± 2 milyon yıl önce Vesta'daki 16,7 km'lik Antionia kraterinden fırlatıldı. Türkiye'ye daha önce de göktaşı düştü (Domanitch 1907, Bursa 1946, Akyumak 1981).",
+    "aciklama": "Derse göre 2019'da Meteoritics and Planetary Science'ta yayımlanan Sarıçiçek Konsorsiyumu makalesi onu belgelenmiş ilk howardit düşüşü olarak tanımlar; 343 taş belgelendi. Makaleye göre yaklaşık 1 metrelik meteoroit 22 ± 2 milyon yıl önce, büyük olasılıkla Vesta'daki 16,7 km'lik Antionia kraterinden fırlatıldı. Türkiye'ye daha önce de göktaşı düştü (Domanitch 1907, Bursa 1946, Akyumak 1981).",
     "ders": "d43",
     "bolum": 9
    }
@@ -1338,7 +1564,7 @@
      "Güneş'in yörünge hızı 30 km/s'ye düştü"
     ],
     "dogru": 1,
-    "aciklama": "Derse göre bu bir Kepler düşüşüdür ve toplam kütle 2,06×10¹¹ M☉ (üst sınır 5,4×10¹¹) bulundu; 2019'daki bir çalışma 1,54×10¹² vermişti. 2,06×10¹¹ bile yıldız kütlesinin üç dört katı olduğu için karanlık madde ortadan kalkmaz; konu tartışmalıdır.",
+    "aciklama": "Derse göre bu bir Kepler düşüşüdür ve toplam kütle 2,06×10¹¹ M☉ (üst sınır 5,4×10¹¹) bulundu; 2019'daki bir çalışma toplam kütleyi 1,54×10¹² olarak tahmin etmişti; aynı yarıçapta fark yaklaşık 2 kattır. 2,06×10¹¹ bile yıldız kütlesinin üç dört katı olduğu için karanlık madde ortadan kalkmaz; konu tartışmalıdır.",
     "ders": "d47",
     "bolum": 10
    },
@@ -2315,232 +2541,6 @@
     "bolum": 3
    }
   ],
-  "dev_gezegenler": [
-   {
-    "id": "d37-1",
-    "soru": "Juno'nun çekim ölçümleri Jüpiter'in çekirdeği hakkında ne gösterdi?",
-    "secenekler": [
-     "Merkezde Dünya büyüklüğünde, keskin sınırlı bir kaya-buz topu olduğunu kesinleştirdi",
-     "Ölçümlere uyan birçok modelde ağır elementlerin merkezden dışa seyrelerek yarıçapın belki yarısına kadar yayıldığını",
-     "Jüpiter'in merkezinde hiç ağır element bulunmadığını",
-     "Çekirdeğin tamamen metalik helyumdan oluştuğunu"
-    ],
-    "dogru": 1,
-    "aciklama": "Derse göre Juno'nun ölçtüğü çekim alanına uyan modellerin birçoğunda sıkı bir çekirdek yok; ağır elementler seyrelmiş bir çekirdek bölgesine, Helled ve meslektaşlarına göre belki yarıçapın yarısına kadar yayılmış (Liu ve ekibine göre 10 ile birkaç on Dünya kütlesi). İçeride küçük, sıkı bir çekirdek kesin dışlanmadı; bu yapının nasıl oluştuğu tartışmalı.",
-    "ders": "d37",
-    "bolum": 3
-   },
-   {
-    "id": "d37-2",
-    "soru": "2024'te yayımlanan çalışmaya göre Büyük Kırmızı Leke ile Cassini'nin 1665'te gördüğü 'Kalıcı Leke' arasındaki ilişki nedir?",
-    "secenekler": [
-     "İkisi aynı fırtınadır; leke 360 yıldır kesintisiz izleniyor",
-     "Kalıcı Leke 1713'ten sonra kayboldu; bugünkü leke 1831'de kaydedildi, yani 190 yaşından büyük ama Cassini'nin lekesi değil",
-     "Kalıcı Leke Satürn'deydi, Jüpiter'de değil",
-     "Büyük Kırmızı Leke 1979'da Voyager'lar geçerken oluştu"
-    ],
-    "dogru": 1,
-    "aciklama": "Derse göre Sánchez-Lavega ve ekibi (Geophysical Research Letters, Haziran 2024) bugünkü lekenin Kalıcı Leke olmasını 'pek olası' bulmadı: Kalıcı Leke 1713'e kadar izlenip kayboldu, aynı enlemde yeni bir leke 1831'de kaydedildi. Leke 1879'da ~39.000 km iken bugün ~14.000 km'dir.",
-    "ders": "d37",
-    "bolum": 7
-   },
-   {
-    "id": "d37-3",
-    "soru": "Shoemaker-Levy 9 kuyruklu yıldızı neden 21 parçaya bölündü?",
-    "secenekler": [
-     "Güneş'e çok yaklaşıp buzları kaynadığı için",
-     "Bir asteroitle çarpıştığı için",
-     "Temmuz 1992'de Jüpiter'e Roche sınırının içinden geçtiği ve gelgit kuvveti onu bir arada tutan kendi çekiminden büyük olduğu için",
-     "Jüpiter'in manyetik alanı onu elektrikle parçaladığı için"
-    ],
-    "dogru": 2,
-    "aciklama": "Derse göre kuyruklu yıldız 8 Temmuz 1992'de Jüpiter'in bulut tepelerinin yaklaşık 22.100 km üstünden geçti. Yakın yanının uzak yanından çok daha güçlü çekilmesi, yani gelgit kuvveti, zayıf kendi çekimini yendi; buna Roche sınırı denir. Parçalar 16–22 Temmuz 1994'te yaklaşık 61 km/s hızla çarptı.",
-    "ders": "d37",
-    "bolum": 11
-   },
-   {
-    "id": "d37-4",
-    "soru": "Jüpiter'in manyetik alanı için verilen '20.000 kat' sayısı neyi anlatır?",
-    "secenekler": [
-     "Bulut tepelerinde ölçülen alan şiddetinin Dünya yüzeyindekinin 20.000 katı olduğunu",
-     "Manyetik momentin, yani alan şiddeti ile yarıçapın küpünün çarpımıyla orantılı toplam büyüklüğün Dünya'nınkinin ~20.000 katı olduğunu",
-     "Manyetosferin Dünya'nınkinden 20.000 kat uzun kuyruğu olduğunu",
-     "Kutup ışıklarının Dünya'dakilerden 20.000 kat parlak olduğunu"
-    ],
-    "dogru": 1,
-    "aciklama": "Derste NASA'nın dipol değerleriyle hesaplandı: (4,30 / 0,306) × (71.492 / 6378)³ ≈ 19.800. Bulut tepelerindeki alan şiddeti ise 4–13 gauss, yani Dünya'nın ekvatorundaki ~0,31 gauss'un onlarca katıdır; farkı Jüpiter'in büyüklüğü yaratır.",
-    "ders": "d37",
-    "bolum": 8
-   },
-   {
-    "id": "d38-1",
-    "soru": "Satürn'ün bir gününün uzunluğunu radyo sinyalinden ölçmek neden zor oldu?",
-    "secenekler": [
-     "Satürn'ün halkaları radyo dalgalarını tamamen engellediği için",
-     "Manyetik ekseni dönme eksenine neredeyse kusursuz hizalı olduğundan alan dönüşü bir 'fener' gibi belli etmediği için",
-     "Satürn hiç radyo ışınımı yaymadığı için",
-     "Satürn Dünya'ya hep aynı yüzünü gösterdiği için"
-    ],
-    "dogru": 1,
-    "aciklama": "Derse göre Satürn'ün manyetik ekseni dönme eksenine 0,06°'den bile çok daha az eğik. Jüpiter'de 9,4°'lik eğiklik radyo ışınımını dönüşle değiştirir; Satürn'de bu olmaz. Voyager 10:39:23, Cassini 10:36–10:48 buldu; 2019'da halka dalgalarından 10 sa 33 dk 38 sn bulundu.",
-    "ders": "d38",
-    "bolum": 2
-   },
-   {
-    "id": "d38-2",
-    "soru": "Cassini Bölümü'nün iç kenarı neden yaklaşık 117.000 km'dedir?",
-    "secenekler": [
-     "Orada Satürn'ün Roche sınırı bulunduğu için",
-     "Oradaki parçacıklar Mimas'ın her turunda iki tur attığı için (2:1 rezonans); Mimas'ın çekişleri birikir ve malzemeyi seyreltir",
-     "Pan uydusu o bölgeyi süpürdüğü için",
-     "Enceladus'un gayzerleri o bölgeyi boşalttığı için"
-    ],
-    "dogru": 1,
-    "aciklama": "Derste Kepler'in üçüncü yasasıyla hesaplandı: 185.537 km × (1/2)^(2/3) ≈ 116.900 km; tabloya göre Cassini Bölümü 117.500 km'de başlar. Pan ise A halkasındaki Encke Boşluğu'nu açık tutar.",
-    "ders": "d38",
-    "bolum": 10
-   },
-   {
-    "id": "d38-3",
-    "soru": "Hyodo ve ekibinin Aralık 2024 çalışması halkaların yaşı tartışmasına ne ekledi?",
-    "secenekler": [
-     "Halkaların 2017'de oluştuğunu ölçtü",
-     "Benzetimlere göre mikrometeoroitler çarpınca buharlaşıp plazmaya döner ve manyetik alanla uzaklaştırılır; halkalar az kirlendiği için temiz görünmeleri genç olduklarını kanıtlamaz",
-     "Halkaların kütlesinin Mimas'ın 10 katı olduğunu buldu",
-     "Halkaların kayadan yapıldığını gösterdi"
-    ],
-    "dogru": 1,
-    "aciklama": "Derse göre Cassini'nin düşük kütle ve temizlik ölçümleri 10–100 milyon yıllık genç halkalara işaret ediyordu. Hyodo, Madeira ve Genda'nın benzetimlerinde ~20 km/s'lik mikrometeoroitler buharlaşıp ~10.000 °C'lik plazmaya döner ve Satürn'ün manyetik alanıyla gezegene ya da dışarı savrulur; halkalar 4,5 milyar yaşında olabilir. Bu bir modeldir, tartışma açık.",
-    "ders": "d38",
-    "bolum": 11
-   },
-   {
-    "id": "d38-4",
-    "soru": "Ekim 2026'da İstanbul'dan 7×50 dürbünle Satürn'e bakarsan ne beklemelisin?",
-    "secenekler": [
-     "Halkaları ve Cassini Bölümü'nü açıkça",
-     "Sarımsı bir yıldız gibi bir nokta; halkalar seçilmez, çünkü bunun için ~20× ya da daha fazla büyütme gerekir ve 2026'da halkalar yalnızca 6–9° açık",
-     "Kutup altıgenini",
-     "Büyük Beyaz Leke'yi"
-    ],
-    "dogru": 1,
-    "aciklama": "Derse göre halkaları ayırmak için 20× ya da üstü gerekir; bir rehbere göre 10×50 bile ancak halkalar geniş açıkken oval bir görüntü verir. Abrams Planetaryumu'na göre halkaların Dünya'ya eğikliği Temmuz 2026'da ~9,2°, Aralık 2026'da ~6,1°. Halkalar için ~30× büyüten 70 mm'lik bir teleskop gerekir; en açık hâl 2032.",
-    "ders": "d38",
-    "bolum": 15
-   },
-   {
-    "id": "d39-1",
-    "soru": "Le Verrier'nin hesabı Neptün'ün yerini hangi gözlemden yola çıkarak buldu?",
-    "secenekler": [
-     "Neptün'ün Güneş'in önünden geçişinden",
-     "Uranüs'ün yörüngesindeki, Newton yasasının açıklayamadığı sapmalardan",
-     "Triton'un parlaklık değişimlerinden",
-     "Jüpiter'in uydularının tutulma saatlerinden"
-    ],
-    "dogru": 1,
-    "aciklama": "Derse göre Bouvard'ın 1821 tablolarından sapan Uranüs gözlemleri (pertürbasyonlar) bilinmeyen bir gezegenin çekimine işaret ediyordu. Le Verrier ve Adams bu sapmalardan yeri hesapladı; Galle 23 Eylül 1846'da Le Verrier'nin noktasından 1° uzakta buldu.",
-    "ders": "d39",
-    "bolum": 2
-   },
-   {
-    "id": "d39-2",
-    "soru": "Laboratuvardaki 'elmas yağmuru' deneyleri tam olarak neyi gösterdi?",
-    "secenekler": [
-     "Neptün'ün içinde milyonlarca kıratlık elmasların ölçüldüğünü",
-     "Voyager 2'nin elmas parçacıklarına çarptığını",
-     "Lazer şokuyla sıkıştırılan polistiren ve PET plastiğinde nanometre boyunda elmasların oluştuğunu",
-     "Uranüs'ün halkalarının elmastan yapıldığını"
-    ],
-    "dogru": 2,
-    "aciklama": "Derse göre 2017'de polistiren, 2022'de PET plastiği lazerle şoklanıp X-ışınıyla izlendiğinde birkaç nanometrelik elmaslar oluştu. Bu, benzer koşullarda karbonun elmasa dönüşebildiğini gösterir; gezegenlerin içinde doğrudan ölçülmedi.",
-    "ders": "d39",
-    "bolum": 5
-   },
-   {
-    "id": "d39-3",
-    "soru": "Neptün Güneş'ten aldığının yaklaşık kaç katı enerjiyi uzaya yayar ve bu ne anlama gelir?",
-    "secenekler": [
-     "Yaklaşık 2,6 katını; güçlü bir iç ısısı vardır",
-     "Tam 1 katını; iç ısısı yoktur",
-     "Yaklaşık 0,5 katını; enerji biriktirir",
-     "Yaklaşık 10 katını; içinde füzyon vardır"
-    ],
-    "dogru": 0,
-    "aciklama": "Derse göre Neptün aldığının ~2,61 katını yayar; içten gelen akı metrekare başına ~0,43 W'tır. Uranüs ise Voyager verisiyle yalnızca ~1,1 kat; 2025 modelleri ~%15 fazlalık buldu.",
-    "ders": "d39",
-    "bolum": 6
-   },
-   {
-    "id": "d39-4",
-    "soru": "Uranüs'ün manyetik alanının eğikliğinin yan yatmış eksenden kaynaklanmadığını hangi gözlem gösterdi?",
-    "secenekler": [
-     "Uranüs'ün halkalarının 1977'de keşfi",
-     "Hubble'ın 2025 dönme ölçümü",
-     "Neptün'ün renginin 2024'te yeniden hesaplanması",
-     "Voyager 2'nin, ekseni normal eğiklikteki Neptün'ün alanını da benzer biçimde eğik ve kaymış bulması"
-    ],
-    "dogru": 3,
-    "aciklama": "Derse göre Neptün'ün ekseni 28,32° eğik olduğu hâlde manyetik ekseni 46,9° yatık ve merkezden kayıktır. Bu yüzden tuhaf geometri iç akışlara, ince ve iletken bir kabuktaki dinamoya bağlanır.",
-    "ders": "d39",
-    "bolum": 10
-   },
-   {
-    "id": "d40-1",
-    "soru": "Io, Europa ve Ganymede'nin dolanma süreleri 1:2:4 oranındadır. Bu rezonansın Io için en önemli sonucu nedir?",
-    "secenekler": [
-     "Io'nun yörüngesini eliptik tutarak değişen gelgit çekimiyle sürekli ısınmasını sağlar",
-     "Io'yu Jüpiter'in gölgesinden hiç çıkarmaz",
-     "Io'nun kendi manyetik alanını üretir",
-     "Io'nun buz kabuğunu kalınlaştırır"
-    ],
-    "dogru": 0,
-    "aciklama": "Derse göre rezonans yörüngeleri hafifçe eliptik kalmaya zorlar; Io Jüpiter'e yaklaşıp uzaklaştıkça sıkışıp gevşer ve bu gelgit ısınması volkanlarını besler. Jüpiter'in Io'daki gelgit ivmesi, Ay'ın Dünya'dakinin yaklaşık 5600 katıdır.",
-    "ders": "d40",
-    "bolum": 2
-   },
-   {
-    "id": "d40-2",
-    "soru": "Galileo aracının manyetometresinin Europa ve Callisto çevresinde ölçtüğü indüklenmiş manyetik alanlar en iyi neyle açıklanır?",
-    "secenekler": [
-     "Uyduların demir çekirdeklerinin dinamo etkisiyle",
-     "Yüzeyin hemen altındaki iletken tuzlu su katmanlarıyla",
-     "Güneş rüzgârının uydu yüzeylerine çarpmasıyla",
-     "Uyduların kalın buz kabuklarının mıknatıslanmasıyla"
-    ],
-    "dogru": 1,
-    "aciklama": "Derse göre Jüpiter'in dönen alanı uydularda sürekli değişir; değişen alan yalnızca iletken bir maddede akım ve ikincil alan doğurur. Khurana ve arkadaşlarına (1998) göre en olası iletken, tuzlu sıvı su okyanuslarıdır.",
-    "ders": "d40",
-    "bolum": 1
-   },
-   {
-    "id": "d40-3",
-    "soru": "Petricca ve arkadaşlarının 2025 çalışması Titan'ın içi hakkında ne öne sürdü?",
-    "secenekler": [
-     "Titan'ın tamamen kaya olduğunu",
-     "Titan'ın metan okyanusunun yüzeyin 1000 km altında olduğunu",
-     "Küresel bir su okyanusu yerine kalın buzun altında çamursu bir katman ve su cepleri bulunduğunu",
-     "Titan'ın içinin Io gibi erimiş kayadan oluştuğunu"
-    ],
-    "dogru": 2,
-    "aciklama": "Derse göre Titan'ın biçim değişikliği Satürn'ün en güçlü çekiminin yaklaşık 15 saat gerisinden geliyor ve içeride harcanan enerji küresel bir okyanus için fazla. Model: 150 km'den kalın buzun altında çamursu bir karışım ve erimiş su cepleri. Sonuç kesin değil.",
-    "ders": "d40",
-    "bolum": 8
-   },
-   {
-    "id": "d40-4",
-    "soru": "Triton'un Neptün'ün yanında doğmayıp sonradan yakalandığı neden düşünülür?",
-    "secenekler": [
-     "Çünkü Neptün'ün halkalarının içinde dolanır",
-     "Çünkü gezegenin dönüşünün tersine dolanan tek büyük uydudur",
-     "Çünkü Güneş Sistemi'nin en sıcak uydusudur",
-     "Çünkü yüzeyi tamamen kraterlerle kaplıdır"
-    ],
-    "dogru": 1,
-    "aciklama": "Derse göre Triton 157,3° eğiklikle ters yönde dolanır; gezegenle birlikte bir diskte doğan uydular gezegenle aynı yönde dolanır. Bu yüzden Triton'un Kuiper kuşağından gelip yakalandığı düşünülür.",
-    "ders": "d40",
-    "bolum": 12
-   }
-  ],
   "kuramlar": [
    {
     "id": "d50-1",
@@ -2549,7 +2549,7 @@
      "Gözlemle kesinleşmiş",
      "Güçlü kanıtlı ama açık sorulu",
      "Kuram ya da hipotez",
-     "Bilim kurgu"
+     "Spekülasyon"
     ],
     "dogru": 2,
     "aciklama": "Derse göre karanlık maddenin kütleçekim etkisi gözlemle kesinleşmiştir, ama tek tek aday parçacıklar, WIMP dahil, kuram ya da hipotez basamağındadır: matematiksel olarak tutarlıdırlar ama hiçbir WIMP araması başarılı olmadı.",
@@ -2580,7 +2580,7 @@
      "Yaklaşık 7,1 keV"
     ],
     "dogru": 0,
-    "aciklama": "m c² = h × f = 4,1357×10⁻¹⁵ × 1,10×10⁹ ≈ 4,5×10⁻⁶ eV, yani yaklaşık 4,5 μeV. Bu, ADMX'in 2025 makalesindeki 4,54 μeV ile uyumludur. 100 GeV tipik WIMP kütlesi, 7,1 keV ise 3,5 keV çizgisinin steril nötrino yorumudur.",
+    "aciklama": "m c² = h × f = 4,1357×10⁻¹⁵ × 1,10×10⁹ ≈ 4,5×10⁻⁶ eV, yani yaklaşık 4,5 μeV. Bu, ADMX'in 2025 makalesindeki 4,55 μeV ile uyumludur. 100 GeV tipik WIMP kütlesi, 7,1 keV ise 3,5 keV çizgisinin steril nötrino yorumudur.",
     "ders": "d50",
     "bolum": 8
    },
@@ -2645,12 +2645,12 @@
     "soru": "DESI'nin zamanla değişen karanlık enerji işareti için derste hangi kesinlik etiketi kullanılıyor ve neden?",
     "secenekler": [
      "Gözlemle kesinleşmiş, çünkü 5 sigmayı geçti",
-     "Askıda bir ön sonuç, çünkü 2,8–4,2 sigma arasında kaldı ve süpernova sistematikleri tartışılıyor",
+     "Doğrulanmadı, askıda: bir ön sonuç, çünkü 2,8–4,2 sigma arasında kaldı ve süpernova sistematikleri tartışılıyor",
      "Spekülasyon, çünkü hiç veri yok",
      "Çürütüldü, çünkü Unite çalışması tersini buldu"
     ],
     "dogru": 1,
-    "aciklama": "DESI DR2 süpernovalarla birlikte 2,8–4,2 sigma, arka plan ışımasıyla 3,1 sigma veriyor; keşif eşiği olan 5 sigmaya ulaşılmadı. Efstathiou'nun 0,04 kadirlik kayma itirazı gibi sistematik tartışmalar sürüyor. Unite ön baskısı da aynı yönü 3,1–3,3 sigma ile gösteriyor; bu yüzden işaret askıda.",
+    "aciklama": "DESI DR2 süpernovalarla birlikte 2,8–4,2 sigma, arka plan ışımasıyla 3,1 sigma veriyor; keşif eşiği olan 5 sigmaya ulaşılmadı. Efstathiou'nun 0,04 kadirlik kayma itirazı gibi sistematik tartışmalar sürüyor. Unite ön baskısı da aynı yönü 3,1–3,3 sigma ile gösteriyor; bu yüzden işaret doğrulanmadı, askıda; değişen karanlık enerji fikri ise kuram ya da hipotez basamağında.",
     "ders": "d51",
     "bolum": 11
    },
@@ -2743,12 +2743,12 @@
     "soru": "Sicim manzarası için sık aktarılan 10⁵⁰⁰ sayısı hakkında hangisi doğrudur?",
     "secenekler": [
      "LHC'de sayılmış olası evren sayısıdır",
-     "Ek boyutların biçimi ve akı seçimlerinden gelen, Douglas (2003) ve Ashok–Douglas (2004) çalışmalarına dayanan kaba bir mertebedir; tam sayı bilinmiyor",
+     "Ek boyutların biçimi ve akı seçimlerinden gelen, Ashok–Douglas (2004) sayma formülüne ve Douglas–Kachru (2006) tahminine dayanan kaba bir mertebedir; tam sayı bilinmiyor",
      "Gözlenebilir evrendeki atom sayısının kesin değeridir",
      "Bütün bu çözümlerin gerçek evrenler olarak var olduğu gözlemle kanıtlanmıştır"
     ],
     "dogru": 1,
-    "aciklama": "Derse göre 10⁵⁰⁰ bir ölçüm değil, kararlıya yakın çözümleri istatistiksel olarak sayan çalışmalara dayanan bir mertebedir; 2015'te tek bir geometri için 10²⁷²⁰⁰⁰ gibi çok daha büyük bir sayı bulundu. Bütün çözümlerin gerçek evrenler olarak var olduğu fikri spekülasyondur.",
+    "aciklama": "Derse göre 10⁵⁰⁰ bir ölçüm değil, sayma formülünün birkaç örnek geometriye uygulanmasından genellenmiş bir mertebedir; 2015'te tek bir geometri için 10²⁷²⁰⁰⁰ gibi çok daha büyük bir sayı bulundu. Bütün çözümlerin gerçek evrenler olarak var olduğu fikri spekülasyondur.",
     "ders": "d53",
     "bolum": 9
    },
@@ -2762,7 +2762,7 @@
      "Kütleçekiminin ışıktan 1,74 kat yavaş olduğunu gösterdi"
     ],
     "dogru": 2,
-    "aciklama": "Derse göre ışığın en az 26 megaparseklik yolculuğu yaklaşık 2,7 × 10¹⁵ s sürer; 1,74 s'lik fark bu sürenin yaklaşık 6,5 × 10⁻¹⁶'sıdır. LIGO, Virgo ve Fermi ekipleri hız farkını −3 × 10⁻¹⁵ ile +7 × 10⁻¹⁶ arasına sıkıştırdı. Bu, Lorentz değişmezliğinin bozulmasını öngören bazı modelleri sınar ama hiçbir kuramı kesin doğrulamaz.",
+    "aciklama": "Derse göre ışığın en az 26 megaparseklik yolculuğu yaklaşık 2,7 × 10¹⁵ s sürer; 1,74 s'lik fark bu sürenin yaklaşık 6,5 × 10⁻¹⁶'sıdır. LIGO, Virgo, Fermi ve INTEGRAL ekipleri hız farkını −3 × 10⁻¹⁵ ile +7 × 10⁻¹⁶ arasına sıkıştırdı. Bu, Lorentz değişmezliğinin bozulmasını öngören bazı modelleri sınar ama hiçbir kuramı kesin doğrulamaz.",
     "ders": "d53",
     "bolum": 14
    },
@@ -2846,7 +2846,7 @@
      "Noktalar yalnız WMAP verisinde görüldü, Planck'ta yoktu"
     ],
     "dogru": 2,
-    "aciklama": "Noktalar 3–4 derece çaplı sıcak lekeler olarak Planck'ın 70 GHz verilerinde ve WMAP'te gösterildi; yazarlar önceki aeondaki kara deliklerin izi dedi. Bağımsız analiz, çok yere bakılınca böyle lekelerin rastlantıyla beklenebileceğini gösterdi. Bir Nobel ödülü kanıt sayılmaz; etiket: spekülasyon.",
+    "aciklama": "Noktalar 3–4 derece çaplı sıcak lekeler olarak Planck'ın 70 GHz verilerinde ve WMAP'te gösterildi; yazarlar önceki aeondaki kara deliklerin izi dedi. Bağımsız analiz, çok yere bakılınca fazlalığın yüzde 87 güvene indiğini, yani böyle lekelerin rastlantıyla beklenebileceğini gösterdi; 2024 analizi de kanıt bulmadı. Bir Nobel ödülü kanıt sayılmaz; etiket: spekülasyon.",
     "ders": "d55",
     "bolum": 7
    },
@@ -2869,12 +2869,12 @@
     "soru": "Standart Model hesabına göre (Andreassen, Frost, Schwartz 2018) boşluğumuzun ömrü ve bu hesabın en önemli çekincesi nedir?",
     "secenekler": [
      "Yaklaşık 10 milyar yıl; çekince yok",
-     "Yaklaşık 10¹³⁹ yıl, yüzde 95 güvenle 10⁵⁸ yıldan uzun; Standart Model'in ötesindeki yeni fizik sonucu kökten değiştirebilir",
+     "Son sürüme göre yaklaşık 10¹⁶¹ yıl, yüzde 95 güvenle 10⁶⁵ yıldan uzun; Standart Model'in ötesindeki yeni fizik sonucu kökten değiştirebilir",
      "Boşluk kesinlikle kararlıdır; Higgs kütlesi bunu kanıtladı",
      "LHC çarpışmaları boşluğu her an bozabilir"
     ],
     "dogru": 1,
-    "aciklama": "Ölçülen Higgs (~125 GeV) ve üst kuark (~173 GeV) kütleleri boşluğu yarı kararlı gösterir. Hesap Standart Model'in çok yüksek enerjilere kadar değişmeden geçerli olduğunu varsayar; etiket kuram ya da hipotez. Kozmik ışınlar LHC'den çok daha yüksek enerjili çarpışmalar ürettiği için hızlandırıcılar tehdit değildir.",
+    "aciklama": "Ölçülen Higgs (~125 GeV) ve üst kuark (~173 GeV) kütleleri boşluğu yarı kararlı gösterir. Makalenin ilk sürümleri 10¹³⁹ yıl ve > 10⁵⁸ yıl veriyordu; Mayıs 2018'deki son sürümde sayılar güncellendi. Hesap Standart Model'in çok yüksek enerjilere kadar değişmeden geçerli olduğunu varsayar; etiket kuram ya da hipotez. Kozmik ışınlar LHC'den çok daha yüksek enerjili çarpışmalar ürettiği için hızlandırıcılar tehdit değildir.",
     "ders": "d55",
     "bolum": 12
    },
