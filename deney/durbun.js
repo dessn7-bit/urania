@@ -134,9 +134,10 @@
       ctx.beginPath(); ctx.arc(hx, hy, hr, 0, IKI_PI); ctx.stroke(); ctx.restore();
       /* yıldızlar: parlak olan büyük; sınıra yakın olan küçük ve soluk */
       ctx.fillStyle = o.renk('--yildiz');
+      const yk = Math.max(0.6, Math.min(1, R / 140));      // dar kanvasta yıldızlar da küçülür (kalabalık görünmesin)
       for (let i = s.gor.length - 1; i >= 0; i--) {
         const y = s.gor[i], fark = s.LM - y.m;
-        const r = Math.max(0.6, Math.min(4.2, 0.6 + 0.42 * fark));
+        const r = Math.max(0.55, Math.min(4.2, 0.6 + 0.42 * fark) * yk);
         ctx.globalAlpha = Math.max(0.35, Math.min(1, 0.35 + 0.16 * fark));
         ctx.beginPath(); ctx.arc(cx - y.x * olc, cy - y.y * olc, r, 0, IKI_PI); ctx.fill();
       }
