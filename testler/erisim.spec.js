@@ -174,7 +174,7 @@ test('4: Tab ile gezinirken odak yapışkan üst barın ve sabit alt menünün a
   for (let i = 0; i < 30; i++) {
     await page.keyboard.press('Tab');
     const r = await page.evaluate(() => {
-      const e = document.activeElement; if (!e || e.closest('.ust, .alt-sekmeler')) return null;
+      const e = document.activeElement; if (!e || e === document.body || e.closest('.ust, .alt-sekmeler')) return null;   // sayfanın sonuna gelinince odak gövdeye döner
       const b = e.getBoundingClientRect(), u = document.querySelector('.ust').getBoundingClientRect(), a = document.querySelector('.alt-sekmeler').getBoundingClientRect();
       return { ad: (e.textContent || '').trim().slice(0, 30), ust: b.top - u.bottom, alt: a.top - b.bottom };
     });

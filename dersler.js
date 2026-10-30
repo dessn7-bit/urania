@@ -47,6 +47,14 @@
     return Math.max(1, Math.round(k / 180));   // ~180 kelime/dk okuma
   }
 
+  /* Üniteler katlanır: açık olanlar hatırlanır; hiç kayıt yoksa okunmamış ilk dersin ünitesi açık başlar */
+  function uniteAcikMi(u, ls, b) {
+    const kayit = U.oku('acikUnite', null);
+    if (Array.isArray(kayit)) return kayit.indexOf(u.id) >= 0;
+    const sira = sirali(), ilk = sira.find(x => !b[x.id]);
+    return ilk ? u.dersler.indexOf(ilk.id) >= 0 : u === D.uniteler[0];
+  }
+  function acikUniteleriYaz() { U.yaz('acikUnite', [...el.querySelectorAll('details.unite[open]')].map(d => d.dataset.unite)); }
   function liste() {
     gomuluDurdur();
     if (sinavOturum && sinavOturum.kaydedildi) sinavOturum = null;   // bitmiş sınava listeden yeniden girilince yeni sınav
@@ -61,13 +69,20 @@
       <p class="alt-baslik">Gökyüzünü okumaktan evrenin tarihine, sırayla. ${sayi ? `${sira.length} dersin ${sayi} tanesini bitirdin.` : 'Her dersin sonunda çözülmüş örnekler, sözlük, deftere notlar ve kendini sınama soruları var.'}</p>
       <a class="sozluk-giris" href="#ders/sozluk"><b>Astro sözlük</b><span>${window.Sozluk && Sozluk.sayi() ? Sozluk.sayi() + ' terim' : 'Terimler'}: ara, dokun, öğren. Derslerde altı noktalı çizili sözcüklere dokununca da açılır.</span></a>
       ${kartKutu}
-      ${(D.uniteler || [{ ad: '', dersler: sira.map(x => x.id) }]).map(u => {
+      ${D.uniteler ? `<p class="unite-yonet"><button type="button" class="bag" id="dsHepsiAc">Hepsini aç</button> · <button type="button" class="bag" id="dsHepsiKapa">Hepsini kapat</button></p>` : ''}
+      ${(D.uniteler || [{ ad: '', dersler: sira.map(x => x.id) }]).map((u, ui) => {
         const ls = u.dersler.map(id => sira.find(x => x.id === id)).filter(Boolean);
-        return `${u.ad ? `<h2 class="unite-bas">${U.kacis(u.ad)}</h2>${u.aciklama ? `<p class="soluk kucuk unite-acik">${U.kacis(u.aciklama)}</p>` : ''}` : ''}
-        <ol class="ders-liste">${ls.map(x => { const i = sira.indexOf(x); return `<li><a href="#ders/${x.id}">
+        if (!ls.length) return '';
+        const ol = `<ol class="ders-liste">${ls.map(x => { const i = sira.indexOf(x); return `<li><a href="#ders/${x.id}">
           <span class="no">${i + 1}</span><span class="bas">${U.kacis(x.baslik)}${x.yeni ? ' <span class="rozet">yeni</span>' : ''}</span>
           <span class="durum${b[x.id] ? ' bitti' : ''}">${b[x.id] ? 'okundu' : dakika(x) + ' dk'}</span>
           <span class="oz">${U.kacis(x.ozet)}</span></a></li>`; }).join('')}</ol>${u.id ? sinavGiris(u) : ''}`;
+        if (!u.ad) return ol;
+        const okunan = ls.filter(x => b[x.id]).length;
+        return `<details class="unite" data-unite="${U.kacis(u.id)}"${uniteAcikMi(u, ls, b) ? ' open' : ''}>
+          <summary><span class="unite-no">${ui + 1}</span><span class="unite-ic"><h2 class="unite-bas">${U.kacis(u.ad)}</h2>${u.aciklama ? `<span class="unite-acik">${U.kacis(u.aciklama)}</span>` : ''}
+            <span class="unite-ilerleme"><span class="cubuk" aria-hidden="true"><i style="width:${Math.round(okunan / ls.length * 100)}%"></i></span>${ls.length} ders · ${okunan ? okunan + ' okundu' : 'başlanmadı'}</span></span></summary>
+          ${ol}</details>`;
       }).join('')}
       <p class="kaynak">${U.kacis(D.not || '')}</p>`;
   }
@@ -386,6 +401,14 @@
 
   async function ilk(kok) {
     el = kok;
+    /* Ünite katlanırları: açılıp kapanınca hatırlanır; "Hepsini aç / kapat" */
+    el.addEventListener('toggle', e => { if (e.target.matches && e.target.matches('details.unite')) acikUniteleriYaz(); }, true);
+    el.addEventListener('click', e => {
+      const t = e.target.closest('#dsHepsiAc, #dsHepsiKapa'); if (!t) return;
+      const ac = t.id === 'dsHepsiAc';
+      el.querySelectorAll('details.unite').forEach(d => { d.open = ac; });
+      acikUniteleriYaz();
+    });
     el.innerHTML = '<p class="bos">Dersler yükleniyor…</p>';
     /* Çizimler ayrı yüklenir; yüklenemezse dersler çizimsiz açılır */
     const cizim = U.betikler(['./cizim.js', './cizim_gokyuzu.js', './cizim_gunes_sistemi.js', './cizim_yildizlar.js', './cizim_gezegen_yasam.js', './cizim_evren.js', './cizim_v3.js', './cizim_v4a.js', './cizim_v4b.js', './cizim_v4c.js']).catch(e => console.warn(e.message));
