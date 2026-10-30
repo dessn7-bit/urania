@@ -11,8 +11,6 @@
     s[0] = s[0].replace(/\B(?=(\d{3})+(?!\d))/g, '.');
     return (x < 0 ? '−' : '') + s.join(',');
   };
-  /* Yazı genişliği kestirimi (Plex ~0,52 em) */
-  const gen = (t, boy) => String(t).length * (boy || 13) * 0.52;
   /* Çeyrek ya da yarım daire dilimi: merkez (x,y), yarıçap r, açılar derece (matematik yönü) */
   const dilim = (x, y, r, a1, a2) => {
     const p = a => [x + r * Math.cos(a * rad), y - r * Math.sin(a * rad)];
