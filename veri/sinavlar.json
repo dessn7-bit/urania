@@ -1130,6 +1130,512 @@
     "ders": "d20",
     "bolum": 12
    }
+  ],
+  "fizik": [
+   {
+    "id": "d25-1",
+    "soru": "Michelson ve Morley 1887'de esir rüzgârı varsa girişim saçaklarında yaklaşık ne kadar kayma bekliyordu, ne ölçtü?",
+    "secenekler": [
+     "4 saçak beklediler, 4 saçak ölçtüler; esir doğrulandı",
+     "Yaklaşık 0,4 saçak beklediler, en fazla 0,02 saçak ölçtüler",
+     "Hiç kayma beklemediler ama 0,4 saçak ölçtüler",
+     "Yaklaşık 0,02 saçak beklediler, 0,4 saçak ölçtüler"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre 11 metrelik kol, yaklaşık 500 nm dalga boyu ve Dünya'nın 30 km/s'lik yörünge hızıyla beklenen kayma yaklaşık 0,4 saçaktı. Ölçülen en büyük kayma 0,02 saçak, ortalaması 0,01'in de altındaydı; esir rüzgârı bulunamadı.",
+    "ders": "d25",
+    "bolum": 2
+   },
+   {
+    "id": "d25-2",
+    "soru": "Bir gemi 4,24 ışık yılı uzaktaki Proxima Centauri'ye ışık hızının %90'ıyla gidiyor. Hızlanma ve yavaşlama yok sayılırsa yolculuk Dünya'ya göre ve gemideki saate göre yaklaşık ne kadar sürer?",
+    "secenekler": [
+     "Dünya'ya göre 4,24 yıl, gemiye göre 4,24 yıl",
+     "Dünya'ya göre 4,7 yıl, gemiye göre 10,8 yıl",
+     "Dünya'ya göre 4,7 yıl, gemiye göre 2,1 yıl",
+     "Dünya'ya göre 2,1 yıl, gemiye göre 4,7 yıl"
+    ],
+    "dogru": 2,
+    "aciklama": "Dünya'dan bakınca süre uzaklık ÷ hız = 4,24 ÷ 0,9 ≈ 4,71 yıl. Lorentz çarpanı γ = 1 ÷ √(1 − 0,81) ≈ 2,29. Gemideki saatle süre 4,71 ÷ 2,29 ≈ 2,05 yıl. Uygulamadaki Işığa yakın yolculuk deneyi de aynı sayıları verir.",
+    "ders": "d25",
+    "bolum": 6
+   },
+   {
+    "id": "d25-3",
+    "soru": "Frisch ve Smith 1963'te Mount Washington'ın tepesinde saatte yaklaşık 563 müon saydı. Deniz düzeyinde kaç müon ölçtüler ve zaman genişlemesi olmasaydı kaç tane beklenirdi?",
+    "secenekler": [
+     "Yaklaşık 412 ölçüldü; göreliliksiz beklenti yaklaşık 27",
+     "Yaklaşık 27 ölçüldü; göreliliksiz beklenti yaklaşık 412",
+     "Yaklaşık 563 ölçüldü; hiç azalma yoktu",
+     "Hiç müon ölçülmedi; hepsi yolda bozundu"
+    ],
+    "dogru": 0,
+    "aciklama": "Derse göre 1917 m'den deniz düzeyine iniş yaklaşık 6,4 mikrosaniye sürer, bu da durgun ömrün yaklaşık üç katıdır; zaman genişlemesi olmasa yalnızca 27 kadar müon kalmalıydı. Ölçülen yaklaşık 412'ydi ve buradan 8,8 ± 0,8'lik bir zaman genişlemesi çarpanı çıktı.",
+    "ders": "d25",
+    "bolum": 7
+   },
+   {
+    "id": "d25-4",
+    "soru": "Bir çekirdek tepkimesinin tamamı, içinden hiçbir enerjinin kaçamadığı kapalı bir kutuda gerçekleşseydi kutunun toplam kütlesine ne olurdu?",
+    "secenekler": [
+     "Açığa çıkan enerji kadar, E ÷ c² kadar azalırdı",
+     "Değişmezdi; açığa çıkan hareket enerjisi ve ışık da kutunun kütlesine sayılır",
+     "Artardı, çünkü ısınan cisimler ağırlaşır",
+     "Sıfıra inerdi, çünkü kütlenin tamamı enerjiye dönüşür"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre enerji her zaman korunur; tepkimede parçaların durgun kütlelerinin toplamı azalır ama fark hareket enerjisi ve ışık olarak kutunun içinde kalır ve kutunun kütlesine sayılır. Kütle ancak enerji sistemden dışarı kaçınca azalır; “kütle enerjiye dönüşür” ifadesi bu yüzden kaba bir özettir.",
+    "ders": "d25",
+    "bolum": 12
+   },
+   {
+    "id": "d26-1",
+    "soru": "Uluslararası Uzay İstasyonu'ndaki astronotlar neden süzülür?",
+    "secenekler": [
+     "Yaklaşık 400 km yükseklikte Dünya'nın çekimi tümüyle biter",
+     "İstasyon ve içindeki her şey birlikte sürekli serbest düşüştedir; orada çekim yüzeydekinin yaklaşık %90'ıdır",
+     "Uzay boşluğunda hava olmadığı için kütleçekimi etki edemez",
+     "İstasyonun motorları çekimi dengeleyen bir itme üretir"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre istasyonun yüksekliğinde çekim yüzeydekinin yaklaşık %88–90'ıdır. Astronotlar istasyonla birlikte Dünya'nın çevresinde serbest düştüğü için zemin onları itmez ve ağırlık hissetmezler; ağırlıksızlık, kütleçekiminin yokluğu değildir.",
+    "ders": "d26",
+    "bolum": 4
+   },
+   {
+    "id": "d26-2",
+    "soru": "Merkür'ün günberisi yüzyılda yaklaşık 574 yay saniyesi kayar. Bunun ne kadarı genel görelilikten gelir ve Le Verrier bu farkı nasıl açıklamaya çalışmıştı?",
+    "secenekler": [
+     "Tamamı; Le Verrier hiçbir açıklama önermedi",
+     "Yaklaşık 531 yay saniyesi; Le Verrier bunu Güneş'in basıklığına bağladı",
+     "Yaklaşık 43 yay saniyesi; Le Verrier Merkür'ün içinde Vulkan adlı bir gezegen önerdi",
+     "Yaklaşık 1,75 yay saniyesi; Le Verrier bunu ışığın bükülmesine bağladı"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre bilinen gezegenlerin çekimi kaymanın yaklaşık 531 yay saniyesini açıklar; kalan yaklaşık 43 (bugünkü değer 42,98) yay saniyesini Einstein Kasım 1915'te genel görelilikle hesapladı. Le Verrier, Neptün'ü bulduran başarısına dayanarak Merkür'ün içinde Vulkan adlı bir gezegen önermişti, ama böyle bir gezegen bulunamadı.",
+    "ders": "d26",
+    "bolum": 7
+   },
+   {
+    "id": "d26-3",
+    "soru": "Pound ve Rebka, Harvard'daki kulede 22,5 m'lik yükseklik farkında hangi büyüklükte bir göreli frekans kayması ölçtü?",
+    "secenekler": [
+     "Yaklaşık 2,5 × 10⁻¹⁵; g × h ÷ c² formülünün öngördüğü kadar",
+     "Yaklaşık 2,5 × 10⁻⁵; çıplak gözle renk farkı görülecek kadar",
+     "Yaklaşık 0,4; Michelson–Morley'nin beklediği kadar",
+     "Hiçbir kayma ölçemediler"
+    ],
+    "dogru": 0,
+    "aciklama": "Derse göre g × h ÷ c² = 9,81 × 22,5 ÷ (8,99 × 10¹⁶) ≈ 2,5 × 10⁻¹⁵. Pound ve Rebka (2,56 ± 0,25) × 10⁻¹⁵ ölçtü; öngörüyle yüzde on hata payı içinde uyumlu. 1964'te doğruluk yüzde bire çıkarıldı.",
+    "ders": "d26",
+    "bolum": 10
+   },
+   {
+    "id": "d26-4",
+    "soru": "GPS uydu saatleri için doğru olan hangisidir?",
+    "secenekler": [
+     "Hızları yüzünden günde yaklaşık 38,6 μs ileri giderler; kütleçekimi etkisi yoktur",
+     "Yükseklik etkisi saati günde yaklaşık 45,8 μs hızlandırır, hız etkisi yaklaşık 7,2 μs yavaşlatır; net yaklaşık +38,6 μs",
+     "İki etki birbirini tam olarak götürür, düzeltme gerekmez",
+     "Yükseklik saati yavaşlatır, hız hızlandırır; net yaklaşık −38,6 μs"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre uydular Dünya'nın çekiminden uzakta olduğu için saatleri genel göreliliğe göre günde yaklaşık 45,8 μs hızlı, yörünge hızları yüzünden özel göreliliğe göre yaklaşık 7,2 μs yavaş işler; net etki yaklaşık +38,6 μs. Düzeltilmese hata günde yaklaşık 11 km birikirdi; saatler fabrikada 10,22999999543 MHz'e ayarlanır.",
+    "ders": "d26",
+    "bolum": 11
+   },
+   {
+    "id": "d27-1",
+    "soru": "Bir metalin iş fonksiyonu 2,3 eV. Bu metale çok parlak 546 nm'lik yeşil ışık ve sönük 365 nm'lik morötesi ışık düşürülüyor. Ne olur?",
+    "secenekler": [
+     "Parlak yeşil ışık daha çok ve daha hızlı elektron koparır, çünkü toplam enerjisi büyüktür",
+     "Yeşil ışık hiç elektron koparamaz; morötesi ışık sönük olsa da yaklaşık 1,1 eV enerjili elektronlar koparır",
+     "İkisi de elektron koparır, ama yeşil ışık bunu belli bir gecikmeyle yapar",
+     "Hiçbiri elektron koparamaz, çünkü elektron koparmak için X ışını gerekir"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre her foton enerjisini tek bir elektrona verir. 546 nm'lik foton yaklaşık 2,27 eV taşır, 2,3 eV'luk bedeli karşılamaz; ışığı parlatmak yalnızca daha çok yetersiz foton göndermektir. 365 nm'lik foton yaklaşık 3,40 eV taşır; en hızlı elektronun enerjisi 3,40 − 2,3 = 1,10 eV olur.",
+    "ders": "d27",
+    "bolum": 3
+   },
+   {
+    "id": "d27-2",
+    "soru": "Tonomura ve arkadaşlarının 1989'daki tek elektron çift yarık kaydı neyi gösterdi?",
+    "secenekler": [
+     "Elektronlar ekrana yayılmış soluk bir dalga olarak ulaşır, nokta bırakmaz",
+     "Elektronlar birbirine çarptığı için girişim deseni oluşur",
+     "Her elektron tek bir nokta bırakır, ama binlercesi biriktikçe girişim deseni ortaya çıkar",
+     "Elektronlar seyrek gönderildiğinde girişim deseni kaybolur ve iki yığın kalır"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre saniyede binden az elektron gönderildi; her biri ekrana tek bir parlak nokta olarak düştü. 8 ve 270 elektronda düzen görülmezken 60.000 elektronda şeritler açıkça çıktı. Elektronlar seyrek geldiği için desen birbirleriyle etkileşmelerinden doğamaz.",
+    "ders": "d27",
+    "bolum": 9
+   },
+   {
+    "id": "d27-3",
+    "soru": "Hackermüller ve arkadaşlarının 2004 deneyinde ısıtılan C70 moleküllerinin girişim desenini ne sildi?",
+    "secenekler": [
+     "Deneycilerin molekülleri bir kamerayla izlemesi",
+     "Moleküllerin yaydığı ve kimsenin yakalamadığı ısıl fotonların yol bilgisini çevreye taşıması",
+     "Isınan moleküllerin parçalanıp atomlarına ayrılması",
+     "Yüksek sıcaklıkta Planck sabitinin değerinin değişmesi"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre moleküller 1000 K'in altındayken girişim kusursuzdu; 3000 K civarında birkaç görünür foton yayınca desen silindi. O fotonları hiçbir insan ya da algılayıcı yakalamadı; yol bilgisini dışarı taşımaları yetti. Kuantumda ölçüm bilinç değil, iz bırakan etkileşimdir.",
+    "ders": "d27",
+    "bolum": 11
+   },
+   {
+    "id": "d27-4",
+    "soru": "Heisenberg belirsizlik ilkesi için hangisi doğrudur?",
+    "secenekler": [
+     "Daha iyi aletlerle konum ve momentum aynı anda istenen kesinlikte ölçülebilir",
+     "Yalnızca bir insan ölçüm yaptığında geçerlidir",
+     "Keskin konum ve keskin momentum taşıyan bir durum zaten yoktur; bu, dalga doğasının sonucudur",
+     "Yalnızca ışık için geçerlidir, elektronlar için geçerli değildir"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre ilke uzun süre ölçümün sistemi dürtmesiyle karıştırıldı, ama bugünkü anlayışa göre aletlerin kusurundan değil kuantum nesnelerinin dalga doğasından gelir: dar bir yere toplanmış dalga birçok dalga boyunun karışımıdır. Δx × Δp ≥ h ÷ (4π).",
+    "ders": "d27",
+    "bolum": 12
+   },
+   {
+    "id": "d28-1",
+    "soru": "Beyaz cüceyi kendi kütleçekimine karşı ayakta tutan basınç için hangisi doğrudur?",
+    "secenekler": [
+     "Çekirdekte süren füzyonun ürettiği ısıdan gelir; füzyon bitince cüce çöker",
+     "Pauli ilkesi yüzünden sıkışmış elektronların yüksek enerjili durumlara zorlanmasından gelir ve sıcaklıktan bağımsızdır",
+     "Elektronların ışınım basıncından gelir; beyaz cüce soğudukça büzülür",
+     "Protonların birbirini itmesinden (Coulomb engeli) gelir"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre yozlaşma basıncını 1926'da Fowler açıkladı: Pauli ilkesi aynı duruma ikiden fazla elektron sokulmasına izin vermez, sonraki elektronlar daha hızlı durumlara yerleşmek zorundadır. Bu basınç ısıdan gelmediği için beyaz cüce soğurken büyüklüğünü korur.",
+    "ders": "d28",
+    "bolum": 5
+   },
+   {
+    "id": "d28-2",
+    "soru": "Güneş'in merkezinde tipik ısıl enerji yaklaşık 1,3 keV, iki proton arasındaki Coulomb engeli yaklaşık 550 keV. Güneş neden yine de yanabiliyor?",
+    "secenekler": [
+     "Güneş'in merkezi aslında engeli aşacak kadar, milyarlarca kelvin sıcaktır",
+     "Kütleçekimi protonları engelin üstünden iter",
+     "Protonlar kuantum tünellemesiyle engelin içinden küçük bir olasılıkla sızabilir; tepkimeler yaklaşık 5,9 keV civarında (Gamow tepesi) olur",
+     "Protonlar elektronlarını kaybedince birbirini itmez"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre klasik olarak bu tepkime yıldız sıcaklıklarında neredeyse hiç gerçekleşmezdi (kaba olasılık ~10⁻¹⁷⁷). Kuantum tünellemesi sayesinde protonlar engelin tepesine çıkmadan geçebilir; hızlı protonların azlığıyla tünelleme kolaylığının dengesi Gamow tepesini verir.",
+    "ders": "d28",
+    "bolum": 7
+   },
+   {
+    "id": "d28-3",
+    "soru": "Schrödinger kedi düşünce deneyini (1935) ne amaçla kurdu?",
+    "secenekler": [
+     "Kedilerin gerçekten aynı anda hem canlı hem ölü olabileceğini kanıtlamak için",
+     "Dönemin kuantum yaklaşımı gündelik nesnelere körü körüne uygulanınca çıkan sonucun saçmalığını göstermek için",
+     "Radyoaktif bozunmanın hayvanlar üzerindeki etkisini ölçmek için",
+     "Bilinçli bir gözlemcinin dalga fonksiyonunu çökerttiğini göstermek için"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre Schrödinger, Einstein ile EPR makalesi üzerine yazışırken bu deneyi kurdu ve bu tür durumları “oldukça gülünç vakalar” diye niteledi. Amacı Kopenhag yaklaşımının gündelik nesnelere uygulanınca verdiği sonucun saçmalığını göstermekti.",
+    "ders": "d28",
+    "bolum": 9
+   },
+   {
+    "id": "d28-4",
+    "soru": "Dolanık iki elektrondan biri İstanbul'da, öteki Ankara'da ölçülüyor. Hangisi doğrudur?",
+    "secenekler": [
+     "İstanbul'daki gözlemci eksen seçimiyle Ankara'ya ışıktan hızlı bir mesaj gönderebilir",
+     "Ankara'daki gözlemci kendi sonuçlarında yalnızca rastgele bir dizi görür; ilişki ancak sonuçlar sıradan bir kanaldan karşılaştırılınca ortaya çıkar",
+     "Sonuçlar arasındaki ilişki, eldivenlerin kutulara önceden konması gibi tamamen baştan belirlenmiştir ve Bell testleri bunu doğrulamıştır",
+     "Ölçümler aynı anda yapılmazsa dolanıklık hemen kaybolur"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre iletişimsizlik teoremi, bir taraftaki ölçümün öbür tarafa bilgi aktaramayacağını söyler: Ankara'daki dizinin istatistiği İstanbul'da ne yapılırsa yapılsın değişmez. Bell testleri ise eldiven türü önceden belirlenmiş açıklamaları dışlar.",
+    "ders": "d28",
+    "bolum": 12
+   },
+   {
+    "id": "d29-1",
+    "soru": "Bir olayın iki gerçekleşme yolu var ve her yolun oku 0,2 uzunlukta. Oklar birbirine dik açı yapıyorsa olayın olasılığı yaklaşık kaçtır?",
+    "secenekler": [
+     "Yüzde 4, çünkü her yol yüzde 4 verir ve oklar birbirini etkilemez",
+     "Yüzde 8, çünkü toplam ok √0,08 ≈ 0,283 uzunlukta ve karesi 0,08",
+     "Yüzde 16, çünkü oklar her zaman uç uca eklenip 0,4 verir",
+     "Yüzde 0, çünkü dik oklar birbirini götürür"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre olasılık, toplam okun uzunluğunun karesidir. Dik iki ok bir dik üçgenin kenarlarıdır; toplam ok √(0,04 + 0,04) ≈ 0,283, karesi 0,08. Aynı yöne bakan oklar yüzde 16, zıt yöne bakanlar yüzde 0 verirdi.",
+    "ders": "d29",
+    "bolum": 3
+   },
+   {
+    "id": "d29-2",
+    "soru": "Ok resmine göre düz bir aynada gelme açısının yansıma açısına eşit olmasının nedeni nedir?",
+    "secenekler": [
+     "Işık yola çıkmadan önce bütün yolları hesaplayıp en kısasını seçer",
+     "Işık yalnızca aynanın tam orta noktasından yansıyabilir",
+     "Aynanın her noktasından yansıyan yolların okları toplanır; süresi durağan olan yolun çevresindeki oklar aynı yöne bakıp toplanırken uzak yolların okları birbirini götürür",
+     "Aynanın kenarlarındaki yolların okları daha kısa olduğu için katkıları yoktur"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre ışık aynanın her noktasından yansıyabilir ve okların uzunlukları aşağı yukarı eşittir. Fark yönlerdedir: uç yolların süresi hızla değiştiği için okları dağılır ve birbirini götürür; ortadaki durağan sürenin çevresinde oklar aynı yöne bakar. Işık düşünüp seçim yapmaz.",
+    "ders": "d29",
+    "bolum": 5
+   },
+   {
+    "id": "d29-3",
+    "soru": "Hareketsiz bir elektron ile bir pozitron yok olduğunda ne çıkar ve bu ışık İstanbul'dan neden gözlenemez?",
+    "secenekler": [
+     "Tek bir görünür ışık fotonu çıkar; ışık kirliliği yüzünden görülemez",
+     "Zıt yönlere giden ve her biri yaklaşık 511 keV taşıyan iki gama fotonu çıkar; gama ışınları atmosferi geçemez",
+     "Bir nötrino çiftiyle 1,022 MeV'lik bir foton çıkar; dürbünle görülebilir ama çok sönüktür",
+     "Hiç foton çıkmaz; enerji tümüyle ısıya dönüşür"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre elektronun kütle enerjisi 0,511 MeV'dir (CODATA 2022). Toplam 1,022 MeV iki fotona eşit bölünür; her biri 511 keV taşır. Bunlar gama ışınıdır ve atmosferi geçemez; Samanyolu'nun 511 keV çizgisini INTEGRAL gibi uydular inceler.",
+    "ders": "d29",
+    "bolum": 9
+   },
+   {
+    "id": "d29-4",
+    "soru": "Fan ve arkadaşlarının 2023 ölçümüne göre elektronun manyetik momenti için QED sınavının bugünkü sınırı nedir?",
+    "secenekler": [
+     "Ölçüm yalnızca yüzde 1 kesinlikte yapılabildiği için kuram sınanamaz",
+     "Kuram ölçümle binde bir düzeyinde çelişiyor",
+     "Kuram ölçümle trilyonda bir düzeyinde uyuyor, ama ince yapı sabitinin en kesin iki ölçümü (sezyum ve rubidyum) birbirinden 5,5 standart sapma farklı",
+     "Kuramın hesapları ancak birinci terime kadar yapılabildiği için daha kesin karşılaştırma imkânsız"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre 2023 ölçümü g'nin yarısını yaklaşık trilyonda 0,13 belirsizlikle verdi ve tahmin trilyonda bir düzeyinde uyuyor. Tahmin ince yapı sabitine dayanır; Berkeley (sezyum) ve Paris (rubidyum) ölçümleri 5,5 standart sapma farklı olduğu için sınav bu uyuşmazlıkla sınırlı.",
+    "ders": "d29",
+    "bolum": 11
+   },
+   {
+    "id": "d30-1",
+    "soru": "Boltzmann'ın mezar taşındaki S = k log W formülünde W neyi gösterir?",
+    "secenekler": [
+     "Sistemin toplam enerjisini joule cinsinden",
+     "Aynı genel durumla (makrodurumla) uyumlu ayrıntılı durumların (mikrodurumların) sayısını",
+     "Sistemin yaptığı işi",
+     "Sistemin sıcaklığını kelvin cinsinden"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre W, belli bir makrodurumun kaç farklı mikrodurumla gerçekleşebileceğidir. Sistem kendini neredeyse kesinlikle en çok mikrodurumu olan makrodurumda bulduğu için entropi artar. Örneğin 100 parada “tam 50 yazı” yaklaşık 1,01 × 10²⁹ sıralamayla, “hepsi yazı” yalnızca 1 sıralamayla olur.",
+    "ders": "d30",
+    "bolum": 7
+   },
+   {
+    "id": "d30-2",
+    "soru": "Bir türbine 550 °C'lik buhar giriyor, soğutma suyu 25 °C. Carnot'ya göre en yüksek verim yaklaşık kaçtır?",
+    "secenekler": [
+     "Yaklaşık %95, çünkü 25 ÷ 550 ≈ 0,05",
+     "Yaklaşık %64, çünkü 1 − 298 ÷ 823 ≈ 0,64",
+     "%100, iyi yapılmış bir türbin bütün ısıyı işe çevirebilir",
+     "Yaklaşık %36, çünkü 298 ÷ 823 ≈ 0,36"
+    ],
+    "dogru": 1,
+    "aciklama": "Carnot verimi 1 − T_soğuk ÷ T_sıcak'tır ve sıcaklıklar kelvinle yazılmalıdır: 823 K ve 298 K. 1 − 0,362 ≈ 0,638, yani en fazla yaklaşık %64. 0,36 ise soğuk tarafa atılması zorunlu en küçük paydır. Celsius ile hesaplamak yanlış sonuç verir.",
+    "ders": "d30",
+    "bolum": 5
+   },
+   {
+    "id": "d30-3",
+    "soru": "Dünya Güneş'ten aldığı kadar enerjiyi uzaya geri verdiği hâlde canlıları besleyen nedir?",
+    "secenekler": [
+     "Dünya enerjinin bir kısmını sürekli biriktirir ve giderek ısınır",
+     "Güneş ışığı Dünya'ya kütle taşır",
+     "Az sayıda yüksek enerjili Güneş fotonu girip kabaca 20 kat fazla düşük enerjili kızılötesi foton çıkar; bu düşük entropi akışı kullanılır",
+     "Canlılar ikinci yasanın istisnasıdır ve entropiyi kendiliğinden azaltır"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre giren ışık 5772 K'lik bir yüzeyden, çıkan ışık yaklaşık 254 K'lik bir gezegenden gelir. Foton enerjisi sıcaklıkla orantılı olduğundan çıkan fotonlar foton başına yaklaşık 20 kat düşük enerjili ve sayıca o kadar çoktur. Aynı enerjinin çok daha fazla biçimde dağılması entropi artışıdır; canlılar açık sistemlerdir ve ikinci yasayı çiğnemez.",
+    "ders": "d30",
+    "bolum": 12
+   },
+   {
+    "id": "d30-4",
+    "soru": "Bir yıldız ışık yayarak enerji kaybettiğinde ne olur?",
+    "secenekler": [
+     "Soğur ve genişler, tıpkı ocaktan inen bir tencere gibi",
+     "Büzülür ve ısınır, çünkü kütleçekimiyle bir arada duran sistemlerin ısı sığası negatiftir",
+     "Hiçbir şey değişmez, çünkü enerji korunur",
+     "Hemen kara deliğe dönüşür"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre enerji kaybeden yıldızın basıncı düşer, kütleçekimi onu sıkıştırır ve sıkışan gaz kütleçekim enerjisinin bir kısmını hareket enerjisine çevirerek ısınır. Lynden-Bell'in yazdığı gibi enerji verilen yıldız ise genişler ve soğur. Yıldızın kendini düzelten dengesi bu ilkeye dayanır.",
+    "ders": "d30",
+    "bolum": 11
+   },
+   {
+    "id": "d31-1",
+    "soru": "Hem hafif çekirdekleri birleştirmenin (füzyon) hem de ağır çekirdekleri bölmenin (fisyon) enerji vermesinin nedeni nedir?",
+    "secenekler": [
+     "Her iki tepkimede de bazı protonlar yok olup saf enerjiye dönüşür",
+     "Nükleon başına bağlanma enerjisi demir ve nikel çevresinde en yüksektir; iki tepkime de ürünleri bu tepeye yaklaştırıp nükleonları daha sıkı bağlar",
+     "Hafif çekirdekler elektriksel olarak birbirini çeker, ağır çekirdekler ise iter",
+     "Füzyon kütleçekiminden, fisyon ise elektrik kuvvetinden enerji alır; ortak bir nedenleri yoktur"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre nükleon başına bağlanma enerjisi nikel-62'de (8,7945 MeV) ve demir-56 çevresinde en yüksektir. Hafif tarafta birleştirmek, ağır tarafta bölmek ürünleri bu tepeye yaklaştırır; artan bağlanma enerjisi dışarı salınır. Proton ve nötron sayısı değişmez; hiçbir parçacık yok olmaz.",
+    "ders": "d31",
+    "bolum": 4
+   },
+   {
+    "id": "d31-2",
+    "soru": "NIF'te 7 Nisan 2025'te hedefe 2,08 megajul lazer enerjisi verilip 8,6 megajul füzyon enerjisi alındı. Bu sonuç için hangisi doğrudur?",
+    "secenekler": [
+     "Hedef kazancı yaklaşık 4'tür, ama bu oran lazerleri besleyen elektriği içermez; elektrik üreten füzyon santrali henüz yoktur",
+     "Hedef kazancı yaklaşık 4'tür ve bu, tesisin şebekeden çektiğinden fazla elektrik ürettiği anlamına gelir",
+     "Kazanç 1'in altındadır, yani verilen enerji geri alınamamıştır",
+     "Bu deney ITER'in Q ≥ 10 hedefine ulaşıldığını göstermiştir"
+    ],
+    "dogru": 0,
+    "aciklama": "8,6 ÷ 2,08 ≈ 4,1; LLNL hedef kazancını 4,13 olarak verir. Derse göre bu bir hedef kazancıdır, yalnız hedefe ulaşan lazer enerjisiyle karşılaştırılır; tesisin toplam harcaması hesaba girmez. ITER'in Q ≥ 10 hedefi ise 2039'daki döteryum-trityum işletmesiyle sınanacak.",
+    "ders": "d31",
+    "bolum": 6
+   },
+   {
+    "id": "d31-3",
+    "soru": "Bir odun parçasında karbon-14 oranı, canlı bir örnekteki oranın sekizde birine inmiş. Yarılanma ömrü yaklaşık 5.700 yıl ise örnek yaklaşık kaç yaşındadır (kalibrasyon öncesi)?",
+    "secenekler": [
+     "Yaklaşık 5.700 yıl",
+     "Yaklaşık 11.400 yıl",
+     "Yaklaşık 17.100 yıl",
+     "Yaklaşık 45.600 yıl"
+    ],
+    "dogru": 2,
+    "aciklama": "1/8 = (1/2)³, yani üç yarılanma ömrü geçmiştir: 3 × 5.700 ≈ 17.100 yıl. Derse göre yöntemin pratik sınırı yaklaşık 50.000 yıldır ve radyokarbon yaşları ağaç halkalarıyla kurulan kalibrasyon eğrileriyle takvim yılına çevrilir.",
+    "ders": "d31",
+    "bolum": 11
+   },
+   {
+    "id": "d31-4",
+    "soru": "Yıllık doğal radyasyon dozunun dünya ortalaması ve bir kafa tomografisinin tipik dozu hakkında derste verilen değerler hangisidir?",
+    "secenekler": [
+     "Doğal doz yılda 0,0001 milisievert; kafa tomografisi 20 milisievert",
+     "Doğal doz yılda 2,4 milisievert (UNSCEAR); kafa tomografisi 1,4–2,0 milisievert (IPEM ve FDA)",
+     "Doğal doz yılda 260 milisievert; kafa tomografisi 0,02 milisievert",
+     "Doğal doz yılda 20 milisievert; kafa tomografisi 1.000 milisievert"
+    ],
+    "dogru": 1,
+    "aciklama": "UNSCEAR'a göre doğal kaynaklardan dünya ortalaması yılda 2,4 milisievert, en büyük payı yaklaşık 1,2 milisievertle radon alır. Kafa tomografisi için FDA 2,0, IPEM 1,4 milisievert verir; doz cihaza ve ayarlara göre değişir. 2,0 milisievert kabaca 300 günlük doğal doza eşittir.",
+    "ders": "d31",
+    "bolum": 15
+   },
+   {
+    "id": "d32-1",
+    "soru": "Protonun yaklaşık 938 MeV'lik kütlesinin ne kadarı üç kuarkın kendi kütlelerinden gelir?",
+    "secenekler": [
+     "Neredeyse tamamı; gluonlar kütlesiz olduğu için başka katkı yoktur",
+     "Yaklaşık yarısı; diğer yarısı elektronlardan gelir",
+     "Yalnız yaklaşık %1'i (~9 MeV); gerisi büyük ölçüde gluon alanının enerjisidir",
+     "Hiçbiri; protonun bütün kütlesini doğrudan Higgs bozonu verir"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre üç kuark protona yalnızca yaklaşık 9 MeV katar, yani %1 kadar. Geri kalanı, kuarkları hapseden gluon alanının enerjisidir ve E = mc² gereği kütle olarak görünür. Higgs alanı temel parçacıkların kütlesini açıklar, ama vücut kütlesinin çoğu güçlü kuvvetin enerjisinden gelir.",
+    "ders": "d32",
+    "bolum": 3
+   },
+   {
+    "id": "d32-2",
+    "soru": "Zayıf kuvvetin menzili neden çok kısadır?",
+    "secenekler": [
+     "Çünkü taşıyıcısı olan gluonlar renk hapsine uğrar",
+     "Çünkü taşıyıcıları W ve Z bozonları çok ağırdır (yaklaşık 80 ve 91 milyar elektronvolt) ve yüksek kütle menzili sınırlar",
+     "Çünkü zayıf kuvvetin taşıyıcısı graviton henüz gözlenmemiştir",
+     "Çünkü zayıf kuvvet yalnız nötrinolar arasında etkilidir"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre kütlesiz foton elektromanyetizmaya sonsuz menzil verir; W ve Z bozonları ise protondan yaklaşık 86 ve 97 kat ağırdır ve bu kütle zayıf kuvvetin menzilini sınırlar. Ömürleri yaklaşık 3 × 10⁻²⁵ saniyedir. Güçlü kuvvetin kısa menzili ise kütleden değil renk hapsinden gelir.",
+    "ders": "d32",
+    "bolum": 5
+   },
+   {
+    "id": "d32-3",
+    "soru": "LHC'de 6,8 trilyon elektronvolt enerjili bir proton için (durgun kütle enerjisi 938 MeV) Lorentz çarpanı yaklaşık kaçtır?",
+    "secenekler": [
+     "Yaklaşık 7,2",
+     "Yaklaşık 725",
+     "Yaklaşık 7.250",
+     "Yaklaşık 13,6 milyon"
+    ],
+    "dogru": 2,
+    "aciklama": "γ = toplam enerji ÷ durgun enerji = 6.800.000 MeV ÷ 938 MeV ≈ 7.250. Hız açığı yaklaşık 1/(2γ²) ≈ 9,5 × 10⁻⁹, yani proton ışık hızının yaklaşık 0,9999999905'iyle gider; 26.659 m'lik halkayı saniyede yaklaşık 11.245 kez dolaşır, CERN'in verdiği sayıyla aynı.",
+    "ders": "d32",
+    "bolum": 9
+   },
+   {
+    "id": "d32-4",
+    "soru": "KATRIN deneyinin 2025'te açıkladığı sonuç hangisidir?",
+    "secenekler": [
+     "Nötrinoların kütlesiz olduğu kesin olarak kanıtlandı",
+     "Nötrino kütlesi 0,45 elektronvolttan küçüktür; yani nötrino elektrondan en az yaklaşık bir milyon kat hafiftir",
+     "Nötrinonun kütlesi tam olarak 0,45 elektronvolt ölçüldü",
+     "Nötrinolar elektrondan ağırdır ama çok yavaş hareket eder"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre KATRIN trityumun beta bozunumundaki elektronların enerjisini ölçerek nötrino kütlesi için 0,45 elektronvoltluk bir üst sınır koydu (Science, Nisan 2025). 511.000 ÷ 0,45 ≈ 1,1 milyon. Nötrino salınımı kütlenin sıfır olmadığını gösterir; kesin değer hâlâ bilinmiyor.",
+    "ders": "d32",
+    "bolum": 11
+   },
+   {
+    "id": "d33-1",
+    "soru": "Faraday'ın 29 Ağustos 1831'deki demir halka deneyinde ikinci sargıda ne zaman akım oluştu?",
+    "secenekler": [
+     "Birinci sargıdan sabit akım aktığı sürece kesintisiz",
+     "Yalnızca birinci sargıdaki akım açıldığı ya da kesildiği anda, kısa bir süre",
+     "Hiçbir zaman; demir halka akımı engelledi",
+     "Yalnızca halka ısıtıldığında"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre akımı doğuran manyetik alanın kendisi değil, değişimidir. Birinci sargıdaki akım açılıp kapanınca halkadaki alan değişir ve ikinci sargıda kısa bir akım belirir; akım sabit akarken bir şey olmaz. Buna elektromanyetik indüksiyon denir; jeneratörler ve transformatörler bu ilkeyle çalışır.",
+    "ders": "d33",
+    "bolum": 6
+   },
+   {
+    "id": "d33-2",
+    "soru": "Maxwell'in denklemlerine göre elektromanyetik dalganın hızı neye bağlıdır?",
+    "secenekler": [
+     "Işığı salan kaynağın hızına",
+     "Dalganın frekansına: yüksek frekanslı dalga daha hızlıdır",
+     "Yalnızca boşluğun elektrik ve manyetik sabitlerine: c = 1 ÷ √(μ₀ε₀)",
+     "Dünya'nın Güneş çevresindeki hızına"
+    ],
+    "dogru": 2,
+    "aciklama": "Derse göre dalganın hızı c = 1 ÷ √(μ₀ε₀) ile verilir ve NIST değerleriyle yaklaşık 2,99792 × 10⁸ m/s çıkar. Formülde ne kaynağın ne de gözlemcinin hızı vardır; bu durum esir sorununa ve özel göreliliğe (d25) götürdü. Weber ve Kohlrausch'un ölçtüğü oran (yaklaşık 3,107 × 10⁸ m/s) bu sabitlerle ilgiliydi.",
+    "ders": "d33",
+    "bolum": 9
+   },
+   {
+    "id": "d33-3",
+    "soru": "Karl Jansky, 20,5 MHz'te duyduğu tıslamanın kaynağının Güneş değil Samanyolu olduğunu nasıl anladı?",
+    "secenekler": [
+     "Sinyal yalnızca geceleri duyuluyordu",
+     "Sinyal her 23 saat 56 dakikada bir, yani yıldız gününe uyarak tepe yapıyordu",
+     "Sinyalin dalga boyu görünür ışık kadar kısaydı",
+     "Sinyal yalnızca Güneş tutulmasında kayboldu"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre sinyal 24 saatte değil 23 saat 56 dakikada bir tekrarlanıyordu; bu, Dünya'nın yıldızlara göre dönme süresidir. Kaynak yıldızlara bağlıydı ve en güçlü olduğu yön Yay takımyıldızındaki Samanyolu merkeziydi. Dalga boyu yaklaşık 14,6 metreydi.",
+    "ders": "d33",
+    "bolum": 11
+   },
+   {
+    "id": "d33-4",
+    "soru": "Elektrik kuvveti kütleçekiminden yaklaşık 10³⁹ kat güçlüyse, gezegenlerin ve yıldızların hareketini neden kütleçekimi belirler?",
+    "secenekler": [
+     "Çünkü elektrik kuvveti uzayın boşluğunda yayılamaz",
+     "Çünkü artı ve eksi yükler büyük cisimlerde birbirini neredeyse tam dengeler, kütleçekiminde ise eksi kütle olmadığı için etkiler birikir",
+     "Çünkü elektrik kuvveti uzaklığın küpüyle azalır",
+     "Çünkü gezegenlerde hiç elektron yoktur"
+    ],
+    "dogru": 1,
+    "aciklama": "Derse göre elektrik kuvvetinin iki işareti vardır ve sıradan maddede proton ve elektron sayıları neredeyse eşit olduğu için büyük cisimler dışarıya yüksüz görünür. Kütleçekimi hep çeker ve birikir; bu yüzden büyük ölçekte kütleçekimi kazanır. Coulomb yasası da kütleçekimi gibi uzaklığın karesiyle azalır.",
+    "ders": "d33",
+    "bolum": 3
+   }
   ]
  }
 }
