@@ -239,6 +239,7 @@
     t = t.replace(/\b(UTC|GMT)([+−-])(\d)/g, (m, z, i, n) => z + (i === '+' ? ' artı ' : ' eksi ') + n);
     /* Son süzgeç: kalan karşılaştırma ve işaretler (katalog adları "J0952−0607", "(1+z)", "…−1", |x|) */
     t = t.replace(/\s?≠\s?/g, ' eşit değildir ');
+    t = t.replace(/\s?↑/g, ' artar').replace(/\s?↓/g, ' azalır');
     t = t.replace(/\|([^|\n]{1,40})\|/g, ' mutlak değer ($1) ');
     t = t.replace(/\s?−\s?/g, ' eksi ').replace(/(\S)\+(\S)/g, '$1 artı $2').replace(/(^|\s)\+(?=\S)/g, '$1artı ');
     return t.replace(/\s+/g, ' ').replace(/\s([,.;:!?)])/g, '$1').replace(/\(\s/g, '(').trim();

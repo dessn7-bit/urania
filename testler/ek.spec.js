@@ -170,12 +170,12 @@ test('İnceleme bulguları: sınav adresi doğrudan açılır; ders bağlantıs�
   await expect(page.locator('h1')).toHaveText(/^Ünite sınavı: \S/);   // h1 ünite adını da içerir (erişilebilirlik bulgusu 13)
   await page.locator('.sinav-secenek button').first().click();
   await page.locator('#snSonraki').click();
-  await expect(page.locator('.kucuk.soluk').first()).toContainText('Soru 2 / 12');   // evren ünitesinde 12 soru (havuz 15'ten küçük: hepsi sorulur)
+  await expect(page.locator('.kucuk.soluk').first()).toContainText('Soru 2 / 15');   // evren ünitesinde 20 soruluk havuz → sınav 15 soru
   const soru2 = await page.locator('#snSoru').innerText();
   await page.goto('/index.html#ders/d7');
   await page.goBack();
   await expect(page.locator('#snSoru')).toHaveText(soru2);
-  for (let i = 1; i < 12; i++) { await page.locator('.sinav-secenek button').first().click(); await page.locator('#snSonraki').click(); }
+  for (let i = 1; i < 15; i++) { await page.locator('.sinav-secenek button').first().click(); await page.locator('#snSonraki').click(); }
   await expect(page.locator('.sinav-puan')).toBeVisible();
   await page.goto('/index.html#gok');
   await page.goBack();
