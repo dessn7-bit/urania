@@ -1,0 +1,58 @@
+[
+  {
+    "id": "d44-1",
+    "soru": "Depremden yaklaşık 103°'den uzak istasyonlara S dalgası ulaşmaması ne gösterir?",
+    "secenekler": [
+      "Mantonun tamamen boş olduğunu",
+      "Dış çekirdeğin sıvı olduğunu, çünkü S dalgaları yalnızca katılardan geçebilir",
+      "Kabuğun her yerde aynı kalınlıkta olduğunu",
+      "İç çekirdeğin sıvı olduğunu"
+    ],
+    "dogru": 1,
+    "aciklama": "S dalgaları kayma dalgalarıdır ve sıvılardan geçemez. Dünya'nın öbür yarısına giden yollar çekirdekten geçtiği için orada S dalgası kaydedilmemesi dış çekirdeğin sıvı olduğunu gösterir (Jeffreys 1926). Katı iç çekirdeği ise Lehmann, P gölgesindeki zayıf dalgalardan çıkardı.",
+    "ders": "d44",
+    "bolum": 3
+  },
+  {
+    "id": "d44-2",
+    "soru": "Kuzey Anadolu Fayı nasıl bir faydır ve kayma hızı ne kadardır?",
+    "secenekler": [
+      "Ters fay; yılda yaklaşık 2 m",
+      "Sağ yanal doğrultu atımlı fay; GPS'e göre yılda yaklaşık 22 ± 7 mm",
+      "Ölü bir fay; hiç hareket etmiyor",
+      "Okyanus ortası sırt; yılda yaklaşık 1,7 cm açılıyor"
+    ],
+    "dogru": 1,
+    "aciklama": "Yaklaşık 1200 km uzunluğundaki Kuzey Anadolu Fayı'nda iki blok fay boyunca yatay olarak yan yana kayar (sağ yanal doğrultu atımlı). EEFIT raporundaki GPS tahmini yılda 22 ± 7 mm'dir. 1,7 cm/yıl ise Orta Atlantik Sırtı'nın güneydeki yayılma hızıdır.",
+    "ders": "d44",
+    "bolum": 6
+  },
+  {
+    "id": "d44-3",
+    "soru": "Stratosferde yükseldikçe sıcaklığın artmasının nedeni nedir?",
+    "secenekler": [
+      "Güneş'e daha yakın olunması",
+      "Ozon tabakasının Güneş'in morötesi ışığını soğurup ısıya çevirmesi",
+      "Meteorların orada yanması",
+      "Su buharının orada yoğunlaşması"
+    ],
+    "dogru": 1,
+    "aciklama": "UCAR'a göre ozon molekülleri yüksek enerjili morötesi ışığı soğurur ve bu enerjiyi ısıya çevirir; bu yüzden stratosferde, troposferin tersine, yukarı çıktıkça hava ısınır. Meteorların çoğu daha yukarıda, mezosferde yanar.",
+    "ders": "d44",
+    "bolum": 9
+  },
+  {
+    "id": "d44-4",
+    "soru": "Atmosferi olmasaydı Dünya'nın ortalama sıcaklığı yaklaşık 255 K olurdu; gerçek ortalama 288 K'dir. Aradaki fark neyle ilgilidir?",
+    "secenekler": [
+      "Dünya'nın iç çekirdeğinden yüzeye gelen ısıyla",
+      "Sera etkisiyle: bazı gazlar yüzeyin kızılötesi ışınımının bir kısmını soğurup yeniden yayar",
+      "Ay'ın gelgit ısıtmasıyla",
+      "Dünya'nın Güneş'e her yıl yaklaşmasıyla"
+    ],
+    "dogru": 1,
+    "aciklama": "33 K'lik fark sera etkisinin ölçüsüdür. Yüzey metrekare başına ortalama ~398 W ışır, uzaya ise ~239 W ulaşır; aradaki kısım atmosferde tutulup kısmen yüzeye geri yayılır. Su buharı ve karbondioksit başlıca sera gazlarıdır.",
+    "ders": "d44",
+    "bolum": 11
+  }
+]

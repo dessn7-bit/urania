@@ -1,0 +1,58 @@
+[
+  {
+    "id": "d34-1",
+    "soru": "Hayashi'nin disk modelinde sıcaklık T = 280 ÷ √r kuralıyla düşer (T kelvin, r AB). Su 170 K'de donuyorsa kar çizgisi yaklaşık nerededir?",
+    "secenekler": [
+      "Yaklaşık 1,6 AB, çünkü 280 ÷ 170 ≈ 1,6",
+      "Yaklaşık 2,7 AB, çünkü (280 ÷ 170)² ≈ 2,7",
+      "Yaklaşık 5,2 AB, Jüpiter'in tam yerinde",
+      "Yaklaşık 0,6 AB, çünkü 170 ÷ 280 ≈ 0,6"
+    ],
+    "dogru": 1,
+    "aciklama": "√r = 280 ÷ T olduğundan r = (280 ÷ 170)² ≈ 1,647² ≈ 2,71 AB. Bu, Wikipedia'nın Hayashi'ye (1981) atfettiği 2,7 AB ile aynıdır. Donma sıcaklığı 150 K alınırsa sonuç yaklaşık 3,5 AB olur; kaynakların farklı değer vermesinin bir nedeni budur.",
+    "ders": "d34",
+    "bolum": 4
+  },
+  {
+    "id": "d34-2",
+    "soru": "Kruijer ve arkadaşlarının (2017) demir göktaşı izotoplarına dayanan çalışmasına göre Jüpiter hakkında ne söylenebilir?",
+    "secenekler": [
+      "Jüpiter en son oluşan gezegendir; Satürn'den sonra doğmuştur",
+      "Jüpiter'in çekirdeği ilk 1 milyon yılda yaklaşık 20 Dünya kütlesine ulaştı ve iç ile dış disk malzemesini ayıran bir duvar oldu",
+      "Jüpiter başka bir yıldızdan yakalanmış bir gezegendir",
+      "Jüpiter'in çekirdeği hiç oluşmadı; gaz doğrudan çöktü"
+    ],
+    "dogru": 1,
+    "aciklama": "Tungsten ve molibden izotopları iki ayrı malzeme deposu gösterir; bu depolar ~1 milyon yıldan 3–4 milyon yıla kadar karışmadı. Yazarlara göre aradaki duvar, çekirdeği ilk 1 milyon yılda ~20, 3–4 milyon yılda ≥50 Dünya kütlesine ulaşan Jüpiter'di; bu yüzden en yaşlı gezegen sayılır.",
+    "ders": "d34",
+    "bolum": 7
+  },
+  {
+    "id": "d34-3",
+    "soru": "Geç Ağır Bombardıman fikrine yöneltilen eleştirilerden biri hangisidir?",
+    "secenekler": [
+      "Ay'da hiç çarpma krateri bulunmaması",
+      "Apollo'nun getirdiği erimiş kayaçların çoğunun tek bir çarpmadan (Imbrium) gelmiş olabilmesi; bu yüzden yaşların tek tarihte toplanması bir yanılsama olabilir",
+      "Ay kayalarının 1 milyar yıldan genç olması",
+      "Nice modelinin dev gezegenlerin hiç göç etmediğini kanıtlaması"
+    ],
+    "dogru": 1,
+    "aciklama": "Ay'ın düşük çekiminde enkaz uzağa savrulur; pek çok bilim insanı Apollo örneklerinin büyük kısmının Imbrium çarpmasından geldiğinden şüphelenir. Ay göktaşlarındaki eriyik yaşları da 2,5–3,9 milyar yıla yayılır. Ayrıca erken dev gezegen dengesizliği kanıtları Nice modelini geç bir yağmurun nedeni olmaktan çıkarır. Uzlaşma yoktur.",
+    "ders": "d34",
+    "bolum": 10
+  },
+  {
+    "id": "d34-4",
+    "soru": "67P kuyruklu yıldızında Rosetta'nın ölçtüğü D/H oranı Dünya'nın suyu tartışmasını nasıl etkiledi?",
+    "secenekler": [
+      "Oran Dünya'nınkiyle tıpatıp aynı çıktı; suyun kuyruklu yıldızlardan geldiği kanıtlandı",
+      "Oran Dünya suyununkinin üç katından fazla çıktı; asteroitlerin ya da Dünya'nın kendi yapı malzemesinin daha büyük pay taşıdığı modeller güçlendi",
+      "67P'de hiç su bulunamadı",
+      "Oran, Dünya'nın suyunun Güneş rüzgârından geldiğini gösterdi"
+    ],
+    "dogru": 1,
+    "aciklama": "ROSINA aleti (Aralık 2014) Dünya suyununkinin üç katından fazla bir D/H oranı ölçtü. Dünya'nın suyu büyük ölçüde böyle kuyruklu yıldızlardan gelseydi oran daha yüksek olurdu. Suca zengin göktaşlarının oranı ise Dünya'nınkiyle genel olarak uyumludur; 2020'deki enstatit kondrit çalışması da yerel kökeni destekler. Konu hâlâ tartışmalıdır.",
+    "ders": "d34",
+    "bolum": 12
+  }
+]
