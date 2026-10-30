@@ -10,7 +10,7 @@ Kısaltmalar: HAW = https://www.hawking.org.uk/in-words/lectures/the-beginning-o
 | 13,8 milyar yıl; sıcak yoğun hâlden evrim; üç kanıt | d8_kaynak.md | [Ö] |
 | Hızlanma 1998; karanlık enerjinin ne olduğu bilinmiyor | d17_kaynak.md | [Ö] |
 | ~100 milyar yıl ötesinde bilim insanları daha az emin | d17_kaynak.md (CHRON) | [Ö] "~100 milyar yıl" satırı |
-| Dört kesinlik etiketi | YAZIM_KILAVUZU.md (v6) | etiket adları aynen; "kuram/hipotez" okunuş için boşluksuz |
+| Dört kesinlik etiketi | YAZIM_KILAVUZU.md (v6) | etiket adları aynen; üçüncü etiket d50 ile aynı biçimde "kuram ya da hipotez" (okunus.js "Kuram / hipotez"i "bölü" okuyor) |
 
 ## Bölüm 1 — Büyük Patlama'dan önce ne vardı?
 | İddia | Kaynak URL | Kaynaktaki ifade |
@@ -177,7 +177,7 @@ Kısaltmalar: HAW = https://www.hawking.org.uk/in-words/lectures/the-beginning-o
 | 150 milyar yıl | FUT | [B] |
 
 ## Notlar
-1. Etiketler dersin değerlendirmesidir; kaynaklar etiket vermez. Isıl ölüm "kuram/hipotez" (bugünkü verilerin en doğrudan uzantısı), Büyük Çöküş'ün 20 milyar yıl sonra gelmesi "spekülasyon" olarak verildi.
+1. Etiketler dersin değerlendirmesidir; kaynaklar etiket vermez. Isıl ölüm "kuram ya da hipotez" (bugünkü verilerin en doğrudan uzantısı), Büyük Çöküş'ün 20 milyar yıl sonra gelmesi "spekülasyon" olarak verildi.
 2. "Future of an expanding universe" maddesi en.wikipedia.org yerine aramada çıkan IPFS kopyasından okundu (en.wikipedia URL'si aramada çıkmadı). Doğrulama ajanı canlı Wikipedia sayfasıyla karşılaştırmalı. Bu maddede 150 milyar yıl Krauss & Starkman (2000)'e atfediliyor.
 3. Hartle–Hawking tartışmasında 2017 yanıt makalelerinin yazar adları okunmadı; derste yalnız başlıklarıyla anıldı.
 4. d16'daki "1 M☉ için 10⁶⁷ yıldan uzun" ile kütlenin küpü ölçeklemesi bu derste kullanılmadı; 10¹⁴ M☉ için 10¹⁰⁶ değeri d30 ve Wikipedia ile aynı bırakıldı.

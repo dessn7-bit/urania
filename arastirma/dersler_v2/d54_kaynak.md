@@ -180,7 +180,7 @@ Kısaltmalar: INF = https://en.wikipedia.org/wiki/Cosmic_inflation ; HOR = https
 | Odada her cm³'te ~411 foton | d8_kaynak.md | [Ö] |
 
 ## Notlar
-1. Kesinlik etiketleri dersin kendi değerlendirmesidir; kaynaklar etiket vermez. Etiket adları YAZIM_KILAVUZU v6'dan. "kuram/hipotez" metinde küçük harf ve boşluksuz yazıldı: okunus.js "Kuram / hipotez"i "bölü" diye okuyor, "kuram/hipotez"i "kuram ya da hipotez" diye okuyor.
+1. Kesinlik etiketleri dersin kendi değerlendirmesidir; kaynaklar etiket vermez. Etiket adları YAZIM_KILAVUZU v6'dan. Üçüncü etiket metinde, d50 ile aynı biçimde "kuram ya da hipotez" diye yazıldı: okunus.js kılavuzdaki "Kuram / hipotez" yazımını "bölü" diye okuyor.
 2. Wikipedia'nın kozmik şişme maddesi şişme süresini "en az 10⁻³⁵ s" diye, ufuk sorunu maddesi "yaklaşık 10⁻³² s" diye veriyor; derste d8 ile tutarlı olsun diye Chronology_of_the_universe'ün 10⁻³³–10⁻³² s ve "en az 10²⁶ kat" değerleri kullanıldı.
 3. Tegmark'ın sayısı arXiv sürümünde 10^(10^29) m; Scientific American sürümünde 10^(10^28) m geçtiği biliniyor ama okunmadı; derste arXiv değeri kullanıldı.
 4. Starobinsky modelinin r ve n_s öngörüsü, ACT sonrası hangi modellerin zorlandığı kaynağa bağlanamadığı için derse yazılmadı ("tartışılıyor" denildi).
