@@ -875,3 +875,11 @@ html.kirmizi .sz-harf { border-color: var(--girdi-kenar); }
 .sekmeler a.yeni-var::before { top: 2px; right: 4px; }
 
 @media (max-width: 260px) { details.unite > summary { grid-template-columns: minmax(0, 1fr) 14px; } .unite-no { display: none; } details.unite > summary::after { grid-column: 2; } }
+
+/* Haber görseli: kartın başlığından sonra; yükseklik sınırlı, kırpılmaz (contain); kredi ve lisans altta */
+.hb-gorsel { margin: 4px 0 12px; }
+.hb-gorsel img { display: block; width: 100%; height: auto; max-height: 340px; object-fit: contain; background: #05090f; border-radius: var(--r); border: 1px solid var(--cizgi); }
+.hb-gorsel figcaption { margin-top: 6px; font-size: 13px; line-height: 1.45; color: var(--soluk); }
+.hb-kredi { display: block; margin-top: 2px; font-size: 12px; }
+.hb-gorsel img.yok { display: none; }
+html.kirmizi .hb-gorsel img { filter: url(#kirmiziSuz); }

@@ -28,8 +28,17 @@ test('Veri: her haber eksiksiz, kaynaklı (en az iki https kaynak), tarihli; kim
     expect(h.baslik && h.baslik.length <= 110, ad + ' başlık').toBeTruthy();
     expect(Array.isArray(h.ozet) && h.ozet.length >= 1, ad + ' özet').toBe(true);
     const k = kelime(h.ozet.join(' '));
-    expect(k, ad + ' özet kelime').toBeGreaterThanOrEqual(80);
-    expect(k, ad + ' özet kelime').toBeLessThanOrEqual(340);
+    expect(k, ad + ' özet kelime').toBeGreaterThanOrEqual(300);   // v2 (30 Ekim 2026): haberler doğru düzgün anlatılır
+    expect(k, ad + ' özet kelime').toBeLessThanOrEqual(800);
+    if (h.gorsel) {
+      const g = h.gorsel;
+      expect(g.dosya, ad + ' görsel').toBe('img/haber/' + h.id + '.jpg');
+      expect(fs.existsSync(path.join(kok, g.dosya)), ad + ' görsel dosyası').toBe(true);
+      expect(fs.statSync(path.join(kok, g.dosya)).size, ad + ' görsel boyutu').toBeLessThanOrEqual(260000);
+      expect(g.alt && g.aciklama && g.kredi && g.lisans, ad + ' görsel bilgisi').toBeTruthy();
+      expect(g.kaynak_url, ad).toMatch(/^https:\/\//);
+      expect(g.kaynak_url + g.kredi, ad + ' yasak görsel kaynağı').not.toMatch(/apnews|reuters|gettyimages|afp\.com|nature\.com|science\.org/i);
+    }
     expect(h.neden_onemli, ad + ' neden önemli').toBeTruthy();
     if (h.kesinlik) expect(['kesin', 'ön sonuç', 'tartışmalı'], ad).toContain(h.kesinlik);
     expect(h.kaynaklar.length, ad + ' kaynak').toBeGreaterThanOrEqual(2);

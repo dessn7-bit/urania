@@ -39,6 +39,14 @@
   }
   let dersAdlari = {};
 
+  /* Görsel: yalnız serbest lisanslı resmî görseller, yerel kopya (img/haber/<kimlik>.jpg; CSP img-src 'self').
+     Resim altında ne olduğu (gerçek gözlem mi, sanatçı çizimi mi) ve kredi/lisans yazar. Yüklenemezse figür gizlenir. */
+  function gorselHtml(h) {
+    const g = h.gorsel;
+    if (!g || typeof g.dosya !== 'string' || !/^img\/haber\/[a-z0-9-]+\.jpg$/.test(g.dosya)) return '';
+    return `<figure class="hb-gorsel"><img src="./${g.dosya}" alt="${U.kacis(g.alt || '')}" loading="lazy" decoding="async">
+      <figcaption>${g.aciklama ? `<span class="okunur">${U.kacis(g.aciklama)}</span> ` : ''}<span class="hb-kredi">Görsel: ${g.kaynak_url ? `<a href="${U.guvenliUrl(g.kaynak_url)}" target="_blank" rel="noopener">${U.kacis(g.kredi || 'kaynak')}</a>` : U.kacis(g.kredi || '')}${g.lisans ? ' · ' + U.kacis(g.lisans) : ''}</span></figcaption></figure>`;
+  }
   function kartHtml(h, son) {
     const tur = TUR[h.tur] || TUR.haber;
     const p = Array.isArray(h.ozet) ? h.ozet : [String(h.ozet || '')];
@@ -47,6 +55,7 @@
     return `<article class="haber" id="h-${U.kacis(h.id)}" data-id="${U.kacis(h.id)}" data-tur="${U.kacis(h.tur)}">
       <p class="hb-ust"><span class="rozet">${U.kacis(tur.ad)}</span>${kes}${yeniMi(h, son) ? '<span class="rozet iyi">Yeni</span>' : ''}<time datetime="${U.kacis(h.tarih)}">${U.kacis(gun(h.tarih))}</time></p>
       <h2 class="okunur">${U.kacis(h.baslik)}</h2>
+      ${gorselHtml(h)}
       <p class="hb-giris okunur">${U.kacis(p[0] || '')}</p>
       <details class="hb-ac">
         <summary><span class="hb-ac-yazi">Devamını oku</span></summary>
@@ -124,6 +133,7 @@
       const b = e.target.closest('.hb-filtre button'); if (!b) return;
       U.yaz('haberFiltre', b.dataset.f); ciz();
     });
+    el.addEventListener('error', e => { const t = e.target; if (t && t.matches && t.matches('.hb-gorsel img')) t.closest('figure').hidden = true; }, true);   // çevrimdışı ya da eksik görsel
     el.addEventListener('toggle', e => { const art = e.target.closest && e.target.closest('article.haber'); if (art && e.target.matches('details.hb-ac')) acildi(art); }, true);
     ciz();
     goster(el, location.hash.split('/').slice(1).join('/'));
