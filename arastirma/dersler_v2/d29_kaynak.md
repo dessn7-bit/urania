@@ -13,7 +13,7 @@ Kısaltmalar: NBF = https://www.nobelprize.org/prizes/physics/1965/feynman/facts
 | [B] Dik gelişte camın tek yüzeyi ~%4, levhanın iki yüzü ~%8 | FRE | "the power reflectance at normal incidence can be seen to be about 4%" ; "or 8% accounting for both sides of a glass pane." |
 | [Ö] Çok yüzeyli dürbünde kayıp birikir (d11) | BIN | d11_kaynak.md: "At 16 air to optical glass surfaces passes, a 4% reflection loss theoretically means a 52% light transmission" |
 | Foton bölünmez, algılayıcıya bütün olarak varır; tek foton için yalnız olasılık | d27 (aynı ünite) ; PI | PI: "The probability amplitude is given by adding together the contributions of all paths" (genlik → olasılık); fotonun bölünmezliği d27'nin konusu, burada yalnız gönderme |
-| [B] 1979'da dört halka açık konferans (Douglas Robb Memorial Lectures); QED kitabının dört bölümü bunların dökümü | WFA | "the four chapters of the book QED: The Strange Theory of Light and Matter are transcripts" ; Douglas Robb Memorial Lectures, 1979 |
+| [B] 1979 Auckland konferansları; 1983 UCLA'da dört konferans; kitap 1985'te bunlardan uyarlandı (DOĞRULAMA: eski "1979 konferanslarının dökümü" ifadesi güncel kaynakla çelişiyordu, düzeltildi) | https://en.wikipedia.org/wiki/QED:_The_Strange_Theory_of_Light_and_Matter | "based on Feynman's delivery of the first Alix G. Mautner Memorial Lecture series for the general public at the University of California, Los Angeles (UCLA) in 1983" ; "originally given as the Sir Douglas Robb lectures at the University of Auckland" ... "in 1979" ; "an adaptation for the general reader of four lectures" ; "first published in 1985 by the Princeton University Press" |
 | [H] Örnek: 1.000 × 0,04 = 40 ; 1.000 × 0,08 = 80 | — | hesap |
 
 ## Bölüm 1 — Richard Feynman kimdi?
@@ -28,9 +28,9 @@ Kısaltmalar: NBF = https://www.nobelprize.org/prizes/physics/1965/feynman/facts
 | [B] Robert R. Wilson'ın teşviki; Manhattan Projesi Los Alamos'ta atom bombası projesi; Bethe'nin kuramsal bölümü; insan hesap makineleri grubu | WFA | Wilson encouraged him ; "the wartime U.S. Army project at Los Alamos developing the atomic bomb" ; junior physicist in Hans Bethe's theoretical division, ran its computation group of human computers |
 | [B] Bethe 24 yaşında grup lideri yaptı; Water Boiler nötron hesapları; Oak Ridge depolama güvenliği | AA | Bethe made the 24-year-old Feynman a group leader ; neutron equations for the Los Alamos "Water Boiler" reactor ; Oak Ridge material storage safety procedures |
 | [B] Cornell 1945–1950; Caltech 1950'den; Richard Chace Tolman Professor | NBB | "Professor of Theoretical Physics, Cornell University (1945–1950)" ; Caltech 1950– ; "Richard Chace Tolman Professor of Theoretical Physics" |
-| [B] En bilinen çalışmalarının çoğu Caltech'te | AA | joined Caltech "where he did much of his best-known work" (WebFetch özeti) |
+| [B] En iyi çalışmalarının çoğu Caltech'te (DOĞRULAMA: kaynakta "best-known" değil) | AA | "did much of his best work" |
 | [B] Einstein Ödülü 1954, Lawrence Ödülü 1962, Royal Society yabancı üye 1965 | NBB | "Albert Einstein Award (1954, Princeton)" ; "Lawrence Award (1962)" ; foreign member of the Royal Society elected 1965 |
-| [B] 15 Şubat 1988, Los Angeles, 69 yaş, iki nadir kanser | NBF ; WFA ; AA | "Died: 15 February 1988, Los Angeles" ; aged 69, "two rare forms of cancer" ; AA: "several rare forms of cancer" (sayı farkı: derste WFA'daki "iki" kullanıldı) |
+| [B] 15 Şubat 1988, Los Angeles, 69 yaş; son on yılında iki ayrı kanser (DOĞRULAMA: "kanser nedeniyle öldü" kaldırıldı; güncel Wikipedia doğrudan ölüm nedenini ülser kaynaklı böbrek yetmezliği olarak veriyor, AA "several" diyor) | NBF ; https://en.wikipedia.org/wiki/Richard_Feynman ; AA | "Died: 15 February 1988, Los Angeles, CA, USA" ; WP: 1978 "diagnosed with liposarcoma, a rare form of cancer" ; 1986 "doctors discovered another cancer, Waldenström macroglobulinemia" ; "A ruptured duodenal ulcer caused kidney failure" ; AA: "from several rare forms of cancer" |
 | [B] Anı kitabı "Surely You're Joking, Mr. Feynman!" | AA | kitap listesinde |
 | [B] Davul çalması | WFA | drumming at Los Alamos, frigideira in Brazil, drum photo in the Lectures foreword (WebFetch özeti) |
 
@@ -63,7 +63,7 @@ Kısaltmalar: NBF = https://www.nobelprize.org/prizes/physics/1965/feynman/facts
 | İddia | Kaynak URL | Kaynaktaki ifade |
 |---|---|---|
 | [B] Paralel yüzeyler arasında çoklu yansımalar birbiriyle girişir | FRE | "When light makes multiple reflections between two or more parallel surfaces, the multiple beams of light generally interfere with one another" |
-| [H] İki ok 0,2 → %0 ile %16 arası; ortalama %8, FRE'nin iki yüz değeriyle uyumlu | FRE | hesap; FRE "8% accounting for both sides" |
+| [H] İki ok 0,2 → %0 ile %16 arası; ortalama %8, FRE'nin iki yüz değeriyle uyumlu; çoklu yansımalarla tam hesap (Airy, r = 0,2): en yüksek 4r²/(1+r²)² ≈ %14,8 → derste "yaklaşık yüzde 15" | FRE | hesap (python3); FRE "8% accounting for both sides" ; "the multiple beams of light generally interfere with one another" |
 | [B] Kaplamalar girişimle çalışır, çok ince katmanlar, kalınlık görünür dalga boylarına ayarlı, yıkıcı girişim | BIN | "Anti-reflective interference coatings reduce light lost at every optical surface" ; "very thin layers of materials" ; "the layer thickness is adapted to the range of wavelengths in the visible spectrum" ; "to promote optimal destructive interference" |
 | [B] Çok katman daha geniş dalga boyu/açı aralığı | BIN | "Reflection can be further reduced over a wider range of wavelengths and angles by using several superimposed layers" |
 | [B][Ö] MgF₂ %4 → %1,5; çok katmanlı ≤ %0,25; 16 yüzey %52 / %78,5 | BIN | "reduces reflected light from about 4% to 1.5%" ; "reflect only 0.25% or less" ; "52% light transmission ... 78.5%" |
@@ -131,20 +131,20 @@ Kısaltmalar: NBF = https://www.nobelprize.org/prizes/physics/1965/feynman/facts
 
 | İddia | Kaynak URL | Kaynaktaki ifade |
 |---|---|---|
-| [B] Karşı parçacık oku ters çizilir; pozitron elektronun karşı parçacığı | BIR | arrows point "backwards for their antiparticles" ; kaynak pozitronu adıyla anmıyor — "elektronun karşı parçacığı" tanımı d32'ye bırakıldı, doğrulama ajanı bakmalı |
+| [B] Karşı parçacık oku ters çizilir; pozitron elektronun karşı parçacığı | BIR ; https://en.wikipedia.org/wiki/Positron | BIR: "backwards for their antiparticles" ; Positron: "It is the antiparticle ... of the electron" ; "produce pairs of 511 keV photons" (doğrulama ajanı okudu) |
 | [H] Ters ok bir çizim kuralı, geçmişe yolculuk değil | BIR | arrows "point in the direction of particle flow" — gösterim kuralı |
 | [B] pp zincirinin ilk adımında pozitron; elektronla yok olup iki gama ışını | PP | "converting into a neutron by emitting a positron and an electron neutrino" ; "The positron will annihilate with an electron from the environment into two gamma rays." |
 | [B] Elektronun kütle enerjisi 0,51099895069 MeV | WALL | "0.510 998 950 69(16) MeV" |
 | [H] Durgun çiftte 1,022 MeV iki fotona eşit, zıt yönlü, her biri 511 keV (enerji ve momentum korunumu) | WALL ; PP | hesap; PP "two gamma rays" |
-| [Ö][H] Görünür foton 1,8–3,3 eV (d2) → 511.000 / 3,3 ≈ 155.000 ; / 1,8 ≈ 284.000 | d2.json | "700 nm'lik kırmızı foton yaklaşık 1,8 eV, 380 nm'lik mor foton yaklaşık 3,3 eV" |
+| [Ö][H] Görünür foton 1,8–3,3 eV (d2) → 511.000 / 3,3 ≈ 155.000 ; / 1,8 ≈ 284.000 (derste "yaklaşık 155 bin ile 285 bin") | d2.json | "700 nm'lik kırmızı foton yaklaşık 1,8 eV, 380 nm'lik mor foton yaklaşık 3,3 eV" |
 | [Ö] Gama ışınları atmosferi geçemez (atmosfer pencereleri) | d2 | d2 atmosfer penceresi bölümü |
-| [B] İlk algılama Johnson ve ark. 1972; Güneş Sistemi dışından ilk ve en parlak gama çizgisi | PRA | Johnson et al. 1972 ; "First (and brightest) γ-ray line detected outside the solar system" |
-| [B] Üretim hızı ~2 × 10⁴³ e⁺/s (bulge 1,2, disk 0,8) | PRA | "~2. 1043 e+ s-1" (kararlı durum üretim hızı) |
-| [B] Pozitronyum oranı 0,93 (Kinzer ve ark. 2001) | PRA | "(Fraction F = 0.93)" |
+| [B] İlk işaret Johnson ve ark. 1972 (balon), kesin tanımlama Leventhal ve ark. 1978; Güneş Sistemi dışından ilk ve en parlak gama çizgisi | PRA ; https://arxiv.org/pdf/1009.4620 (Prantzos ve ark. 2011, Rev. Mod. Phys.) | PRA: "First (and brightest) γ-ray line detected outside the solar system" ; RMP: "(Johnson et al., 1972). It was unambiguously identified a few years later with high resolution Ge detectors (Leventhal et al., 1978)" |
+| [B] Üretim hızı ~2 × 10⁴³ e⁺/s | PRA ; RMP (yukarıda) | PRA metni bozuk ("~2. 1043"); RMP: "∼2 10^43 e+ s−1 (Sec. II.B.3)" ; "the total Galactic e+ annihilation rate is at least Ṅe+ ∼2 10^43 s−1" |
+| [B] Pozitronyum oranı %93–97 (DOĞRULAMA: tek değer %93 yerine aralık) | PRA ; RMP | PRA: "(Fraction F = 0.93)" ; RMP: "fP s ≈0.97±0.03" ; "0.94±0.04 (Harris et al., 1998)" ; "fps =0.967" |
 | [B] Kaynağı bilinmiyor | PRA | "remains unknown at present" |
 | [B] SPI, ESA INTEGRAL'in iki ana aletinden biri; yok olma ışımasını inceledi | LON | "The Spectrometer for INTEGRAL (SPI) is one of the two main instruments on board the ESA INTEGRAL mission." |
 | [B] Güneş ışıma gücü 382,8 × 10²⁴ J/s | SUN | "Luminosity (1024 J/s) \| 382.8" |
-| [H] Örnek: 2 × 10⁴³ × 1,022 MeV × 1,602 × 10⁻¹³ J/MeV ≈ 3,27 × 10³⁰ W ; ÷ 3,828 × 10²⁶ ≈ 8.550 | WALL (e = 1,602176634 × 10⁻¹⁹ C kesin) | python3 |
+| [H] Örnek: 2 × 10⁴³ × 1,022 MeV × 1,602 × 10⁻¹³ J/MeV ≈ 3,27 × 10³⁰ W ; ÷ 3,828 × 10²⁶ ≈ 8.550 (DOĞRULAMA: derste 3,3 / 8.600 / 8.500 tutarsızdı, 3,27 / 8.550 yapıldı) | WALL (e = 1,602176634 × 10⁻¹⁹ C kesin) | python3 |
 | [B] Pozitronyum yok olması sürekli (continuum) ışıma da verir → derste yalnız "enerjiyi farklı paylaştırabilir" denildi | LON | "an indication of positronium continuum emission" |
 
 ## Bölüm 10 — Elektronun mıknatısı
@@ -178,7 +178,7 @@ Kısaltmalar: NBF = https://www.nobelprize.org/prizes/physics/1965/feynman/facts
 | [B] α ölçümleri 5,5σ uyuşmuyor; Fan değeri Berkeley Cs'den 3,9σ, Paris Rb'den 2,1σ; α⁻¹ = 137,035 999 166(15) | FAN | "disagree by 5.5 σ" ; 3.9 / 2.1 standard deviations ; "α⁻¹ = 137.035 999 166 (15) [0.11 ppb]" |
 | [B] PDG ortalaması (bilgi): 1159,65218062(12) × 10⁻⁶ | PDG | "1159.65218062 ± 0.00000012" (derste kullanılmadı) |
 | [Ö] Dünya–Ay ortalama uzaklık 384.400 km | https://science.nasa.gov/moon/facts/ | d10_kaynak.md: "384,400 kilometers" |
-| [H] 3,844 × 10⁸ × 1,3 × 10⁻¹³ ≈ 5,0 × 10⁻⁵ m = 0,05 mm | — | python3 |
+| [H] 3,844 × 10⁸ × 1,3 × 10⁻¹³ ≈ 5,0 × 10⁻⁵ m = 0,05 mm = milimetrenin yirmide biri (DOĞRULAMA: "yirminci milimetre" ifadesi düzeltildi) | — | python3 |
 
 ## Bölüm 12 — Öğretmen Feynman
 
@@ -189,7 +189,7 @@ Kısaltmalar: NBF = https://www.nobelprize.org/prizes/physics/1965/feynman/facts
 | [B] Leighton ve Sands; üç cilt; cilt konuları | FLP ; WFA | Robert B. Leighton and Matthew Sands ; Vol I "mechanics, radiation, and heat, including relativistic effects" ; Vol II "mainly electromagnetism and matter" ; Vol III "quantum mechanics" |
 | [B] Ciltler 1964 ve 1966'da (derste "1960'ların ortası") | FLP | "The three volumes appeared in 1964 and 1966" (özet) |
 | [B] 2013 Caltech + Feynman Lectures Website ücretsiz; Gottlieb ve Pfeiffer; Eylül–Aralık 2013 | FLP ; APS | "In 2013, Caltech ... made the book freely available online" ; first volume September 2013, last December 2013 ; operated by Michael Gottlieb and Rudolf Pfeiffer |
-| [A] Birinci cilt 26. bölüm: "Optics: The Principle of Least Time" | arama sonucu: https://lastminutelecture-study.pages.dev/books/the-feynman-lectures-on-physics-volume-1/chapters/optics-the-principle-of-least-time/ | başlık "Chapter 26: Optics – The Principle of Least Time" (sayfa açılmadı; doğrulama ajanı feynmanlectures.caltech.edu içindekiler sayfasından bakmalı) |
+| [B] Birinci cilt 26. bölüm: "Optics: The Principle of Least Time" (doğrulama ajanı birincil sayfada okudu) | https://www.feynmanlectures.caltech.edu/I_26.html ; FLP | bölüm 26: "Optics: The Principle of Least Time" ; FLP bölüm listesi: "Optics: The principle of least time" |
 | [B] Feynman karamsar; Goodstein ve Neugebauer katılım düştü dedi, Sands itiraz etti; geleneksel kitaplardan sonra değerli; öğretmenlere daha yararlı | FLP | Feynman "pessimistic" ; Goodstein and Neugebauer claimed attendance dropped, Sands contested ; more valuable after traditional texts ; more useful to teachers |
 | [B] Oersted Madalyası 1972 | WFA | Oersted Medal 1972 |
 
@@ -201,13 +201,13 @@ Kısaltmalar: NBF = https://www.nobelprize.org/prizes/physics/1965/feynman/facts
 | [B] STS-51-L; kalkıştan 73 saniye sonra | RC | "73 seconds after liftoff" ; STS-51-L |
 | [B] Neden: sağ katı yakıtlı roketin arka bağlantısındaki O-halkaları; sıcak gaz dış depoya zarar; tasarım kusuru, düşük sıcaklık ağırlaştırabilir | RC | O-rings sealing the aft field joint on the right solid rocket booster ; hot gases damaged the external tank ; design flaw worsened by low temperatures |
 | [B] Başkanlık komisyonu | APF | "Report of the Presidential Commission on the Space Shuttle" |
-| [B] Sabah sıcaklığı Fahrenheit 20'ler | NAU | temperatures "dipped to the 20s" |
-| [H] 20–29 °F ≈ −6,7 ile −1,7 °C | — | (F − 32) × 5/9 |
-| [B] Şubat 1986 oturumu; televizyondan yayın; kıskaç; buzlu su; esneklik kaybı | NAU ; RC ; WFA | "February 1986 hearing" ; "televised hearing" ; clamp, ice water ; "grew rigid in the glass" ; lost resilience |
+| [B] Sabah sıcaklığı donma noktasının altında, Fahrenheit 20'ler | NAU ; https://en.wikipedia.org/wiki/Rogers_Commission_Report | NAU: "morning temperatures dipped to the 20s" ; WP: "below freezing at 28 to 29 °F" |
+| [H] (DOĞRULAMA) "−7 ile −2 °C" aralığı kaldırıldı: ölçülmüş aralık değil, "20'ler"in çevrimiydi; iki kaynak farklı değer veriyor | — | — |
+| [B] Şubat 1986 oturumu; televizyondan yayın; kıskaç; buzlu su; esneklik kaybı | NAU ; RC ; WFA ; https://en.wikipedia.org/wiki/Rogers_Commission_Report (kıskaç: "a sample of the material in a clamp and immersing it in a glass of ice water") | "February 1986 hearing" ; "televised hearing" ; clamp, ice water ; "grew rigid in the glass" ; lost resilience |
 | [B] Üretici mühendisleri kalkıştan önceki gün NASA'yı uyardı | NAU | engineers from the solid rocket booster manufacturer warned NASA the day before launch about frigid temperatures and O-ring erosion |
 | [B] Ek F başlığı | APF | "Appendix F - Personal observations on the reliability of the Shuttle" |
 | [B] Ek F'yi koymazlarsa adını çektirme tehdidi | RC | threatened to have his name removed unless included (WebFetch özeti) |
-| [B] Tahminler 1/100 – 1/100.000; yüksek değerler mühendislerden, düşükler yönetimden; sonuç yüzde bir mertebesi, yönetim bin kat düşük | APF | "range from roughly 1 in 100 to 1 in 100,000" ; "a chance of failure of the order of a percent" ; management thousand times lower |
+| [B] Tahminler 1/100 – 1/100.000; yüksek değerler mühendislerden, düşükler yönetimden; sonuç yüzde bir mertebesi, yönetim bin kat düşük sayıyor (DOĞRULAMA: "düşük gösterdi" → "düşük saydı"; kaynak "claims to believe" diyor ve iki olası neden sayıyor) | APF (pdftotext ile okundu) | "range from roughly 1 in 100 to 1 in 100,000" ; "a chance of failure of the order of a percent" ; management thousand times lower |
 | [B] Son cümle (birincil metin, Türkçeye çevrildi) | APF | "For a successful technology, reality must take precedence over public relations, for nature cannot be fooled." |
 | [B] Rapor 9 Haziran 1986, Reagan'a | RC | "June 9, 1986" |
 | [H] Örnek: 1 − 0,99¹⁰⁰ ≈ 0,634 ; 1 − 0,99999¹⁰⁰ ≈ 0,0010 | — | python3 |
@@ -221,10 +221,15 @@ Kısaltmalar: NBF = https://www.nobelprize.org/prizes/physics/1965/feynman/facts
 | Gözlem önerileri (vitrin, dürbün kaplaması, Marmara günbatımı) | bölüm 0, 4, 7 satırları | yukarıdaki kaynaklara dayanır |
 
 ## Bulunamayan / bilinçli olarak dışarıda bırakılanlar
-- QED kitabının yayım yılı: kaynakta doğrulanmadı (WFA yalnız 1979 konferans tarihini veriyor) → derste yayım yılı yok.
-- Douglas Robb konferanslarının yeri: kaynakta açık değil → derste yer yok.
+- QED kitabının yayım yılı ve konferans yerleri: doğrulama turunda QED kitabı Wikipedia sayfasından eklendi (1985; Auckland 1979; UCLA 1983).
 - Feynman'ın Nobel konuşmasının başlığı: açılan sayfalarda yok → derste yok.
 - Feynman–Stueckelberg yorumu (pozitron = zamanda geri giden elektron): kaynak bulunamadı → yalnız "çizim kuralı" denildi.
 - Yeniden normalleştirmenin tanımı: kaynaklı bir tanım bulunamadı → yalnız adı ve Dyson'ın katkısı anıldı, sözlüğe alınmadı.
 - Feynman'a atfedilen öteki ünlü sözler: birincil kaynakta doğrulanmadı → kullanılmadı.
 - Sabun köpüğü renkleri: kaynak açılmadı → derste yok.
+
+## Doğrulama turu (2026-10-30, bağımsız ajan)
+- Birincil metinden (pdftotext) okunanlar: FAN (g/2, 0,13 ppt, 2,2 kat, 14 yıl, "consistent with", 1 part in 10^12, müon/tau, 5,5σ, Cs Berkeley / Rb Paris, 3,9σ / 2,1σ, α⁻¹ = 137,035 999 166(15)); COD (α⁻¹ = 137,035 999 177(21); a_e = 1,159 652 180 46(18) × 10⁻³; g_e = −2,002 319 304 360 92(36); mₑc² = 0,510 998 950 69(16) MeV; 1,1 × 10⁻¹⁰; 6,08(16); 1,4 × 10⁻¹¹); APF (başlık, 1/100–1/100.000, "order of a percent", "thousand times less", son cümle "For a successful technology, reality must take precedence over public relations, for nature cannot be fooled." hem epigraf hem son paragraf); ROB (Dirac 1928, α/2π = 0,00116…, Kusch–Foley Phys. Rev. 74, 250, 1948); SS (min/maks/eyer cümlesi).
+- WALL (NIST duvar tablosu) bu turda 502 verdi; aynı değerler COD tablosunda okundu, anahtar_sayilar kaynak_url'leri COD'a çevrildi.
+- WebFetch ile yeniden okunanlar: NBF, NBB, AA, FRE, BIN, FER, PI, AR, FNAL, APS, RC, NAU, PRA, BIR, PP, FLP, Positron, Feynman WP, QED kitabı WP, Rogers Commission Report WP.
+- Tüm örnek hesaplar python3 ile yeniden yapıldı.
