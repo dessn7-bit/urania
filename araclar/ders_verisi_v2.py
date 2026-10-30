@@ -8,15 +8,20 @@ from ders_denetim import denetle
 
 UNITELER = [
     {'id': 'gokyuzu', 'ad': 'Gökyüzünü okumak', 'aciklama': 'Gökte yön bulmak, ışığın dili, dürbün, takımyıldızlar, teleskop ve gökyüzü fotoğrafı.', 'dersler': ['d1', 'd2', 'd11', 'd21', 'd12', 'd24']},
-    {'id': 'gunes_sistemi', 'ad': 'Güneş Sistemi', 'aciklama': 'Kütleçekim, gezegenler, Ay, zaman ve takvim, küçük cisimler ve uzaya çıkmak.', 'dersler': ['d3', 'd9', 'd10', 'd22', 'd19', 'd23']},
-    {'id': 'yildizlar', 'ad': 'Yıldızlar', 'aciklama': 'Güneş\'ten başlayıp yıldızların doğumu, hayatı ve ölümü.', 'dersler': ['d4', 'd14', 'd5', 'd15', 'd6', 'd16']},
+    # v5 (30 Ekim 2026, Kaan: "Güneş Sistemi, Samanyolu, kara delikler, nötron yıldızları, kuasarlar… detaylı"): Güneş Sistemi üç üniteye bölündü
+    {'id': 'gunes_sistemi', 'ad': 'Güneş Sistemi I: Dünya, Ay ve kayalık gezegenler', 'aciklama': 'Kütleçekim, Güneş Sistemi\'nin doğuşu, Dünya, Ay, zaman ve takvim, Merkür, Venüs ve Mars.', 'dersler': ['d3', 'd34', 'd9', 'd44', 'd10', 'd22', 'd35', 'd36']},
+    {'id': 'dev_gezegenler', 'ad': 'Güneş Sistemi II: dev gezegenler ve uyduları', 'aciklama': 'Jüpiter, Satürn ve halkaları, Uranüs ve Neptün; buzlu okyanuslu uydular.', 'dersler': ['d37', 'd38', 'd39', 'd40']},
+    {'id': 'kucuk_cisimler', 'ad': 'Güneş Sistemi III: küçük cisimler ve uzay yolculuğu', 'aciklama': 'Cüce gezegenler ve Kuiper kuşağı, asteroitler, kuyruklu yıldızlar, meteorlar ve göktaşları; uzaya çıkmak.', 'dersler': ['d41', 'd19', 'd42', 'd43', 'd23']},
+    {'id': 'yildizlar', 'ad': 'Yıldızlar', 'aciklama': 'Güneş\'ten başlayıp yıldızların doğumu, hayatı, kümeleri ve çiftleri.', 'dersler': ['d4', 'd14', 'd5', 'd15']},
+    {'id': 'yildiz_olum', 'ad': 'Yıldız ölümleri ve uç nesneler', 'aciklama': 'Beyaz cüceler ve süpernovalar, nötron yıldızları ve pulsarlar, kara delikler, süper kütleli kara delikler.', 'dersler': ['d6', 'd45', 'd16', 'd46']},
+    {'id': 'samanyolu', 'ad': 'Samanyolu ve galaksiler', 'aciklama': 'Evimiz Samanyolu, galaksi türleri, kuasarlar ve aktif galaksiler, galaksi kümeleri ve kozmik ağ.', 'dersler': ['d47', 'd7', 'd48', 'd49']},
+    {'id': 'evren', 'ad': 'Evren', 'aciklama': 'Evrenin tarihi ve kozmoloji; sonunda astronominin kendi tarihi.', 'dersler': ['d8', 'd17', 'd20']},
     {'id': 'gezegen_yasam', 'ad': 'Ötegezegenler ve yaşam', 'aciklama': 'Başka yıldızların gezegenleri ve yaşam arayışı.', 'dersler': ['d13', 'd18']},
-    {'id': 'evren', 'ad': 'Galaksiler ve evren', 'aciklama': 'Samanyolu\'ndan evrenin tarihine ve geleceğine; sonunda astronominin kendi tarihi.', 'dersler': ['d7', 'd8', 'd17', 'd20']},   # d20 tarih: kapanış dersi (Kepler/Newton için d3 önce okunmuş olur)
     # v4 (Ekim 2026): fizik bilmeyen biri için fiziğin büyük fikirleri; astronomiyle bağlantılı
     {'id': 'fizik', 'ad': 'Fiziğin büyük fikirleri', 'aciklama': 'Enerji ve entropi, ışık, görelilik, kuantum, Feynman\'ın ışık kuramı, atom çekirdeği ve parçacıklar; fizik bilmeyen biri için.', 'dersler': ['d30', 'd33', 'd25', 'd26', 'd27', 'd28', 'd29', 'd31', 'd32']},
 ]
 # v3 (Ekim 2026) yeni dersler: taslağı henüz yazılmadıysa atlanır (yazım sürerken derleme kırılmasın)
-YENI_V3 = {'d20', 'd21', 'd22', 'd23', 'd24', 'd25', 'd26', 'd27', 'd28', 'd29', 'd30', 'd31', 'd32', 'd33'}
+YENI_V3 = {'d%d' % n for n in range(20, 50)}   # v3 (d20–d24), v4 fizik (d25–d33), v5 (d34–d49)
 eski = {d['id']: d for d in json.load(open(os.path.join(K, 'veri/dersler.json'), encoding='utf-8'))['dersler']}
 dersler, kaynak = [], {}
 # Tekrar kartlarının kalıcı kimliği (kid): kartın ilerlemesi bu kimliğe yazılır. İlk atamada eski sıra
@@ -87,6 +92,15 @@ json.dump(out, open(os.path.join(K, 'veri/dersler.json'), 'w', encoding='utf-8')
 # Yeni derslerin ünite sınavı soruları (dNN_sinav.json) veri/sinavlar.json'a: aynı id'li soru güncellenir
 syol = os.path.join(K, 'veri/sinavlar.json'); S = json.load(open(syol, encoding='utf-8'))
 unite_of = {i: u['id'] for u in UNITELER for i in u['dersler']}
+# Ünite düzeni değişince eski soruların ünitesi de dersine göre güncellenir; boş kalan ünite silinir
+for u in list(S['uniteler']):
+    kalan = []
+    for q in S['uniteler'][u]:
+        hedef_u = unite_of.get(q.get('ders'), u)
+        if hedef_u == u: kalan.append(q)
+        else: S['uniteler'].setdefault(hedef_u, []).append(q)
+    S['uniteler'][u] = kalan
+S['uniteler'] = {u['id']: S['uniteler'].get(u['id'], []) for u in UNITELER if S['uniteler'].get(u['id'])}
 for i in sorted(YENI_V3 & set(kaynak)):
     yol = os.path.join(V2, i + '_sinav.json')
     if not os.path.exists(yol): print('NOT: sınav sorusu yok:', i); continue
