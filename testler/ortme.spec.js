@@ -2,7 +2,8 @@
 /* Ay örtmeleri ve Algol: bağımsız kaynaklarla karşılaştırma (Node, tarayıcısız).
    - IOTA-ES (Avrupa örtme listesi): 2026-12-21 Frankfurt (50,1 K 8,65 D), ZC541 = 20 Tau (Maia):
      kayboluş 23:10:28 UT, beliriş 23:21:34 UT — https://www.iota-es.de/moon.html
-   - Skyfield 1.55 + JPL DE421 + Hipparcos (görünen konumlar, k = 0,2725076), Fetih Mah. 41,0046 K 29,0762 D 0 m.
+   - Skyfield 1.x + JPL DE421 + Hipparcos (görünen konumlar, k = 0,2725076), İstanbul 41,0 K 29,1 D 0 m (ilçe düzeyine
+     yuvarlanmış konum; referans 7 Kasım 2026'da aynı yöntemle yeniden hesaplandı, eski konumdaki değerleri 1 sn içinde yeniden üretti).
    - Algol: Sky & Telescope hesaplayıcısı (Rochester Astronomy Club alıntısı) 2026-07-24 01:41 UT ve
      2026-08-13 03:21 UT; VarAstro gözlem #107713, 2025-02-25 en sönük 19:12 ya da 19:46 UT (iki çözüm).
    Ayrıntı: arastirma/algol_ortme_kaynaklar.md */
@@ -22,13 +23,13 @@ test('IOTA-ES Frankfurt: Maia (20 Tau) örtmesi ±40 sn', () => {
 });
 
 test('Skyfield/DE421 ile İstanbul örtmeleri ±10 sn (ΔT IERS Bulletin A ile)', () => {
-  const gzl = Gok.gozlemci(41.0046, 29.0762, 0);
+  const gzl = Gok.gozlemci(41.0, 29.1, 0);
   const ref = [
-    [17531, '2026-12-21T23:21:31Z', '2026-12-21T23:46:12Z'],
-    [49637, '2027-02-20T20:02:13Z', '2027-02-20T21:05:44Z'],
-    [92855, '2027-05-23T23:20:09Z', '2027-05-24T00:51:35Z'],
-    [32246, '2027-09-24T03:08:35Z', '2027-09-24T03:37:46Z'],
-    [42911, '2027-09-26T02:35:40Z', '2027-09-26T03:17:36Z']
+    [17531, '2026-12-21T23:21:33Z', '2026-12-21T23:46:15Z'],
+    [49637, '2027-02-20T20:02:15Z', '2027-02-20T21:05:48Z'],
+    [92855, '2027-05-23T23:20:12Z', '2027-05-24T00:51:39Z'],
+    [32246, '2027-09-24T03:08:40Z', '2027-09-24T03:37:48Z'],
+    [42911, '2027-09-26T02:35:40Z', '2027-09-26T03:17:39Z']
   ];
   ref.forEach(([hip, g, c]) => {
     const ls = Ortme.ortmeler(YILDIZ, gzl, new Date(new Date(g).getTime() - 12 * 3600e3), 1);
@@ -56,7 +57,7 @@ test('Gezegen örtmeleri Skyfield/DE421 ile ±45 sn (Astronomy Engine gezegen ko
 test('Örtme kenarı: 21 Aralık Taygeta karanlık kenarda kaybolur, aydınlık kenarda belirir (büyüyen Ay, %93)', () => {
   /* Ay yıldızlara göre doğuya ilerler; büyürken Güneş batısında kalır, aydınlık kenar batıdadır.
      Öndeki (doğu) kenar karanlıktır: yıldız oradan girer. Dolunay 24 Aralık 01:29 UT. */
-  const ls = Ortme.ortmeler(YILDIZ, Gok.gozlemci(41.0046, 29.0762, 0), new Date('2026-12-21T12:00:00Z'), 1);
+  const ls = Ortme.ortmeler(YILDIZ, Gok.gozlemci(41.0, 29.1, 0), new Date('2026-12-21T12:00:00Z'), 1);
   const o = ls.find(x => x.hedef.hip === 17531);
   expect(o.buyuyen).toBe(true);
   expect(o.girisBilgi.aydinlik).toBe(false);

@@ -133,7 +133,7 @@ Kaynak: IOTA-ES "Occultation prediction for Frankfurt, Germany – E. Longitude 
 
 ### 2.1 in-the-sky.org – İstanbul konumu (41.01°K; 28.95°D) – parlak cisim örtmeleri
 
-Yöntem: `https://in-the-sky.org/search.php?ordernews=asc&feed=occultations&...&town=745044` ile 2026-11-01 – 2027-12-31 arası tüm "Lunar Occultations" olayları (42 olay) listelendi; her olay sayfası `&town=745044` ile (konum satırı "İstanbul (41.01°N; 28.95°E)") 3 sn aralıkla indirildi. Bot engeli bu oturumda gelmedi. Yazar: Dominic Ford. Not: Fetih Mahallesi (29.0762°D) ile in-the-sky İstanbul noktası arasında ~10 km fark var.
+Yöntem: `https://in-the-sky.org/search.php?ordernews=asc&feed=occultations&...&town=745044` ile 2026-11-01 – 2027-12-31 arası tüm "Lunar Occultations" olayları (42 olay) listelendi; her olay sayfası `&town=745044` ile (konum satırı "İstanbul (41.01°N; 28.95°E)") 3 sn aralıkla indirildi. Bot engeli bu oturumda gelmedi. Yazar: Dominic Ford. Not: İstanbul (29.1°D) ile in-the-sky İstanbul noktası arasında ~10 km fark var.
 
 **İstanbul'dan görünür olanlar (2 olay):**
 

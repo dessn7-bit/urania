@@ -1,6 +1,6 @@
 # Uydu parlaklığı: standart mag → anlık mag, Heavens-Above referans değerleri, Starlink trenleri
 
-Gözlemci: Fetih Mahallesi, İstanbul — 41.0046°K, 29.0762°D, 0 m, UTC+3.
+Gözlemci: İstanbul — 41,0°K, 29,1°D (ilçe düzeyine yuvarlanmış; gizlilik, 7 Kasım 2026: Ekim 2026 tabloları ~2 km ötedeki asıl nokta için alındı, sayılar değiştirilmedi), 0 m, UTC+3.
 Erişim tarihi (tüm kaynaklar): 2026-10-27. Heavens-Above ve arXiv/satobs sayfaları `curl` ile ham indirildi; birkaç sayfa WebFetch ile okundu (belirtildi).
 "Kendi test" yazan satırlar kaynak değil; indirilen veriler üzerinde yapılan hesaptır (Skyfield 1.55 + de421).
 CelesTrak'a bu oturumda hiç istek atılmadı: testte bugün önceki oturumda CATNR ile alınmış TLE'ler kullanıldı (`uydu_kaynaklar.md` §1; epokları Heavens-Above sayfalarındaki epoklarla aynı: ISS 27 Ekim, CSS 26 Ekim).
@@ -91,17 +91,17 @@ m = m_std + 5·log10(d/1000) − 2.5·log10[ 2·(1 − φ/π) ]     (φ radyan; 
 
 ---
 
-## 2. Heavens-Above referans değerleri (Fetih, UTC+3)
+## 2. Heavens-Above referans değerleri (İstanbul, UTC+3)
 
-URL kalıbı (çalışıyor, sayfa başlığı "Fetih (41.0046°N, 29.0762°E)", "(UTC +03:00)"):
-- Özet: `https://www.heavens-above.com/PassSummary.aspx?satid=<NORAD>&lat=41.0046&lng=29.0762&loc=Fetih&alt=0&tz=UCTm3`
-- Detay: `https://www.heavens-above.com/passdetails.aspx?lat=41.0046&lng=29.0762&loc=Fetih&alt=0&tz=UCTm3&cul=en&satid=<NORAD>&mjd=<MJD>&type=V` (MJD özet sayfasındaki tarih bağlantısından alınıyor)
+URL kalıbı (çalışıyor; sayfa başlığında yer adı ve koordinat görünür, "(UTC +03:00)"; adresler yuvarlanmış konumla yazıldı):
+- Özet: `https://www.heavens-above.com/PassSummary.aspx?satid=<NORAD>&lat=41.0&lng=29.1&loc=Istanbul&alt=0&tz=UCTm3`
+- Detay: `https://www.heavens-above.com/passdetails.aspx?lat=41.0&lng=29.1&loc=Istanbul&alt=0&tz=UCTm3&cul=en&satid=<NORAD>&mjd=<MJD>&type=V` (MJD özet sayfasındaki tarih bağlantısından alınıyor)
 - Arama dönemi: 27 Ekim 2026 00:00 – 06 Kasım 2026 00:00; "visible only". Sayfa saati 18:33:51 (27 Ekim 06:06 ISS geçişi geçmişte kaldı ama listede).
 - Ham HTML: `/home/claude/urania/arastirma/heavens_above/` (ha_iss_passsummary.html, ha_css_passsummary.html, ha_passdetails_*.html, ha_satinfo_*.html, ha_faq.html, ha_starlink*.html, ha_main.html)
 - Not: özetteki "Brightness" = "Highest point" anındaki mag (detay sayfalarıyla karşılaştırıldı).
 
 ### 2.1 ISS (25544) — yörünge "415 x 424 km, 51.6° (Epoch: 27 October)"
-Kaynak: https://www.heavens-above.com/PassSummary.aspx?satid=25544&lat=41.0046&lng=29.0762&loc=Fetih&alt=0&tz=UCTm3
+Kaynak: https://www.heavens-above.com/PassSummary.aspx?satid=25544&lat=41.0&lng=29.1&loc=Istanbul&alt=0&tz=UCTm3
 
 | Tarih | Mag | Başlangıç (saat, yük., az.) | En yüksek | Bitiş |
 |---|---|---|---|---|
@@ -121,7 +121,7 @@ Kaynak: https://www.heavens-above.com/PassSummary.aspx?satid=25544&lat=41.0046&l
 | 5 Kas | −0.9 | 05:30:06 12° SSE | 05:30:06 12° SSE | 05:30:25 10° SSE |
 
 ### 2.2 Tiangong / CSS (48274) — "382 x 386 km, 41.5° (Epoch: 26 October)"
-Kaynak: https://www.heavens-above.com/PassSummary.aspx?satid=48274&lat=41.0046&lng=29.0762&loc=Fetih&alt=0&tz=UCTm3
+Kaynak: https://www.heavens-above.com/PassSummary.aspx?satid=48274&lat=41.0&lng=29.1&loc=Istanbul&alt=0&tz=UCTm3
 
 | Tarih | Mag | Başlangıç | En yüksek | Bitiş |
 |---|---|---|---|---|

@@ -1,0 +1,24 @@
+{
+  "result": [
+    {
+      "date": 2026.8192,
+      "elevation": 0,
+      "declination": 6.08942,
+      "alt_info": " Warning: The height validity of the geomagnetic components is dependent on the geomagnetic activity level. For more information see (https://www.ncei.noaa.gov/products/world-magnetic-model/accuracy-limitations-error-model) ",
+      "latitude": 41,
+      "declination_sv": 0.0489,
+      "declination_uncertainty": 0.33942,
+      "longitude": 29.1
+    }
+  ],
+  "model": "WMM-2025",
+  "units": {
+    "elevation": "km",
+    "declination": "degrees",
+    "declination_sv": "degrees",
+    "latitude": "degrees",
+    "declination_uncertainty": "degrees",
+    "longitude": "degrees"
+  },
+  "version": "1.2.1"
+}

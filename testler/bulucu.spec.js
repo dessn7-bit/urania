@@ -10,7 +10,7 @@ const TY = require('../veri/takimyildiz.json');
 const HEDEF = require('../veri/hedefler.json').hedefler;
 
 const ZAMAN = '2026-10-28T21:00:00+03:00';
-const KONUM = { ad: 'Fetih Mah.', enlem: 41.0046, boylam: 29.0762, yukseklik: 20, oto: false, saatDilimi: 'Europe/Istanbul' };
+const KONUM = { ad: 'İstanbul', enlem: 41.0, boylam: 29.1, yukseklik: 20, oto: false, saatDilimi: 'Europe/Istanbul' };
 
 async function kur(page, s) {
   s = s || {};
@@ -36,7 +36,7 @@ async function ac(page, id) {
     if (!d) { d = document.createElement('button'); d.id = 'testAcan'; d.textContent = 'Bul'; document.body.prepend(d); }
     d.focus();
     const h = (await Urania.veri('hedefler')).hedefler.find(x => x.id === id);
-    await Bulucu.ac(h, { zaman: new Date(zaman), gzl: Gok.gozlemci(41.0046, 29.0762, 20) });
+    await Bulucu.ac(h, { zaman: new Date(zaman), gzl: Gok.gozlemci(41.0, 29.1, 20) });
   }, [id, ZAMAN]);
   await page.waitForSelector('#bulucuPanel[open] svg.bulucu-svg');
 }
@@ -45,7 +45,7 @@ test.afterEach(async ({ page }) => { expect(page.hatalar || []).toEqual([]); });
 
 test.describe('İzdüşüm (Node)', () => {
   const veri = { yildizlar: YILDIZ, takimyildizlar: TY };
-  const gzl = Gok.gozlemci(41.0046, 29.0762, 20);
+  const gzl = Gok.gozlemci(41.0, 29.1, 20);
   for (const id of ['M31', 'M45', 'M13', 'M42', 'M27', 'Albireo']) {
     test(id + ': başlangıç–hedef uzaklığı haritada gerçek açısal ayrımla aynı (%1)', () => {
       const h = HEDEF.find(x => x.id === id);

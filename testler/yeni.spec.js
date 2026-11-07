@@ -84,7 +84,7 @@ test('Uydular: ISS ve Tiangong geçişleri birlikte; Starlink dizisi notuyla', a
   /* Skyfield (uydu.spec.js): Tiangong 28 Ekim 16:37 UT (19:37) doğar, tepe 80,7° */
   await expect(ul.locator('li', { hasText: 'Tiangong · 28 Ekim' }).first()).toContainText('en çok 81°');
   await expect(ul.locator('li', { hasText: 'ISS' }).first()).toBeVisible();
-  /* Fikstürdeki tek dizi (2026-242, 27 uydu, 266 km) Fetih'ten 3 gün içinde görünür geçiş yapmıyor: geçişlerin
+  /* Fikstürdeki tek dizi (2026-242, 27 uydu, 266 km) İstanbul'dan (41,0 K 29,1 D) 3 gün içinde görünür geçiş yapmıyor: geçişlerin
      tepesi 10–19° ve hepsi gölgede ya da gündüz (uydu.js gecisler ile hesaplandı). Liste çizildikten sonra satır yok. */
   await expect(ul.locator('li', { hasText: 'Starlink' })).toHaveCount(0);
 });

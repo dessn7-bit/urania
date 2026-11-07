@@ -1,0 +1,1230 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<meta http-equiv="Expires" content="-1"/>
+<link href="https://terim.tuba.gov.tr/ATS/css/web.css" rel="stylesheet" type="text/css"/>
+
+<link href="https://terim.tuba.gov.tr/ATS/css/ui/jquery-ui-1.8.5.custom.css" rel="stylesheet" type="text/css"/>
+
+<script type="text/javascript" src="https://terim.tuba.gov.tr/ATS/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="https://terim.tuba.gov.tr/ATS/js/jquery-ui-1.8.js"></script>
+
+<script type="text/javascript" src="https://terim.tuba.gov.tr/ATS/js/jquery_delay.js"></script>
+<script type="text/javascript" src="https://terim.tuba.gov.tr/ATS/js/jscroller-0.4.js"></script>
+
+<script type="text/javascript" src="https://terim.tuba.gov.tr/ATS/js/keyboard.js" charset="UTF-8"></script>
+<link rel="stylesheet" type="text/css" href="https://terim.tuba.gov.tr/ATS/css/keyboard.css"/>
+
+
+<script type="text/javascript" src="https://terim.tuba.gov.tr/ATS/highslide/highslide-with-html.js"></script>
+<link rel="stylesheet" type="text/css" href="https://terim.tuba.gov.tr/ATS/highslide/highslide.css" />
+
+
+<!--
+<link rel="stylesheet" href="https://terim.tuba.gov.tr/ATS/css/pagination.css" />
+<script type="text/javascript" src="https://terim.tuba.gov.tr/ATS/js/jquery.pagination.js"></script>
+--
+<!--
+<script type="text/javascript" src="https://terim.tuba.gov.tr/ATS/js/dom-drag.js"></script>
+-->
+<script>
+function setCookie(c_name,value,exdays)
+{
+	var exdate=new Date();
+	exdate.setDate(exdate.getDate() + exdays);
+	var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+	document.cookie=c_name + "=" + c_value;
+}
+
+function getCookie(c_name)
+{
+	var i,x,y,ARRcookies=document.cookie.split(";");
+	for (i=0;i<ARRcookies.length;i++)
+	{
+	  x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+	  y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+	  x=x.replace(/^\s+|\s+$/g,"");
+	  if (x==c_name)
+	    {
+	    return unescape(y);
+	    }
+	  }
+}
+
+function sayfaDegistirSonraki()
+{
+	var sonraki = parseInt(gecerli_sayfa) + 1;
+	gecerli_sayfa = sonraki;
+	
+	for (var i=0; i<500; i++)
+	{
+		$('div#sayfa_'+i).hide();
+		$('span#sayfa_secim_'+i).removeClass('bd_sayfalandirma_secilmis');
+		$('span#sayfa_secim_'+i).addClass('bd_sayfalandirma');
+	}
+	
+	$('div#sayfa_'+sonraki).show();
+	$('span#sayfa_secim_'+sonraki).removeClass('bd_sayfalandirma');
+	$('span#sayfa_secim_'+sonraki).addClass('bd_sayfalandirma_secilmis');
+}
+
+function dyr_sayfaDegistirSonraki()
+{
+	var sonraki = parseInt(gecerli_sayfa) + 1;
+	gecerli_sayfa = sonraki;
+	
+	for (var i=0; i<500; i++)
+	{
+		$('div#sayfa_'+i).hide();
+		$('span#dyr_sayfa_secim_'+i).removeClass('dyr_sayfalandirma_secilmis');
+		$('span#dyr_sayfa_secim_'+i).addClass('dyr_sayfalandirma');
+	}
+	
+	$('div#sayfa_'+sonraki).show();
+	$('span#dyr_sayfa_secim_'+sonraki).removeClass('dyr_sayfalandirma');
+	$('span#dyr_sayfa_secim_'+sonraki).addClass('dyr_sayfalandirma_secilmis');
+}
+
+function bd_makalesec(bd_secilen_makale_id){
+	href="https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/w_bilim_dili/"+bd_secilen_makale_id;
+	window.parent.location=href;
+}
+
+function ConfirmDialog(title,message){
+	
+    $('<div></div>').appendTo('body')
+                    .html('<div style="font-size:12px; vertical-align:middle;"><br>'+message+'</div>')
+                    .dialog({
+                        modal: true,
+                        title: '<b style="color:#FFFFFF;">'+title+'</b>',
+                        zIndex: 10000,
+                        autoOpen: true,
+                        width: 'auto',
+                        resizable: false,
+                        buttons: {
+                            'Üye Girişi': function () {
+                                js_getUrl('w_anasayfa/w_uye_girisi/uye-girisi');
+                            },
+                            'Üye Ol': function () {
+                                js_getUrl('w_anasayfa/w_uye_ol/uye-ol');
+                            }
+                        },
+                        close: function (event, ui) {
+                            $(this).remove();
+                        }
+                    });
+};
+
+</script>
+
+<script type="text/javascript">
+
+//We wrap all the code in an object so that it doesn't interfere with any other code
+var scroller = {
+  init:   function() {
+/*
+    //collect the variables
+    scroller.docH = document.getElementById("content").offsetHeight;
+    scroller.contH = document.getElementById("container").offsetHeight;
+    scroller.scrollAreaH = document.getElementById("scrollArea").offsetHeight;
+      
+    //calculate height of scroller and resize the scroller div
+    //(however, we make sure that it isn't to small for long pages)
+    scroller.scrollH = (scroller.contH * scroller.scrollAreaH) / scroller.docH;
+    //if(scroller.scrollH < 15) scroller.scrollH = 15;
+    document.getElementById("scroller").style.height = Math.round(scroller.scrollH) + "px";
+    
+    //what is the effective scroll distance once the scoller's height has been taken into account
+    scroller.scrollDist = Math.round(scroller.scrollAreaH-scroller.scrollH);
+    
+    //make the scroller div draggable
+    Drag.init(document.getElementById("scroller"),null,0,0,-1,scroller.scrollDist);
+    
+    //add ondrag function
+    document.getElementById("scroller").onDrag = function (x,y) {
+      var scrollY = parseInt(document.getElementById("scroller").style.top);
+      var docY = 0 - (scrollY * (scroller.docH - scroller.contH) / scroller.scrollDist);
+      document.getElementById("content").style.top = docY + "px";
+    }
+    */
+  }
+}
+
+onload = scroller.init;
+</script>
+
+<title>TÜBA-Türkçe Bilim Terimleri Sözlüğü</title>
+<style>
+	/*CONTENT TOP*/
+	#menucontainer #content_top {width:100%; clear:both; }
+	#menucontainer #content_top #js_top_menu {width:900px; }
+
+</style>
+<script type="text/javascript">
+
+function js_getUrl(setUrl){
+	var url="https://terim.tuba.gov.tr/ATS/index.php/"+setUrl;
+	window.location.replace(url);
+}
+</script>
+<script type="text/javascript">
+hs.graphicsDir = 'https://terim.tuba.gov.tr/ATS/highslide/graphics/';
+hs.outlineType = 'rounded-white';
+hs.wrapperClassName = 'draggable-header';
+
+$(function(){
+   $('.input1').focus(function(){
+		$(this).css({'border-color':'#ff6606','color':'#444444'});
+   }).blur(function(){
+        $(this).css({'border-color':'#c9c9c9','color':'#444444'});
+   }) 
+})
+
+
+function js_aramaYap(){
+	 
+    var value = $('#srch_txt').attr('value');
+    var value_array = value.split('');   
+    var count=0;   
+    for (i=0; i<value_array.length; i++)
+    {
+    	if (value_array[i]!=' ')
+    	{
+    		count++;
+    	}
+    }
+
+	var where = $('#srch_where').attr('value');
+	
+	if( (count<2) ){
+		alert('En az 2 karakter girmelisiniz!');
+	
+	} else if( (value=="ing") || (value=="ing.") || (value=="alm") || (value=="alm.") || (value=="fr") || (value=="fr.") ){
+		alert('Yabanci dil kisaltmasi ile arama yapamazsiniz!');
+	
+	} else {
+		$('#form_search_bar').submit();
+	
+	}
+}
+</script>
+
+
+<script>
+
+function capitalizeSentences() {
+	var capText = document.getElementById("ad_soyad").value;
+	var allCaps = true;
+	var capLock = true;
+	if(capLock == 1 || capLock == true){
+		capText = capText.toLowerCase();
+	}
+	if(allCaps == 1 || allCaps == true){
+	
+	capText = capText.replace(/\n/g,". [-<br>-] ");
+	var wordSplit = ' ';
+	
+	}else{
+	capText = capText.replace(/\.\n/g,".[-<br>-]. ");
+	capText = capText.replace(/\.\s\n/g,". [-<br>-]. ");
+	var wordSplit = '. ';
+	}
+	
+	var wordArray = capText.split(wordSplit);
+	
+	var numWords = wordArray.length;
+	
+	for(x=0;x<numWords;x++) {
+	
+		wordArray[x] = wordArray[x].replace(wordArray[x].charAt(0),wordArray[x].charAt(0).toUpperCase());
+		
+		if(allCaps == 1 || allCaps == true){
+				if(x==0) {
+					capText = wordArray[x]+" ";
+				}else if(x != numWords -1){
+					capText = capText+wordArray[x]+" ";
+				}else if(x == numWords -1){
+					capText = capText+wordArray[x];
+				}
+		}else{
+				if(x==0) {
+					capText = wordArray[x]+". ";
+				}else if(x != numWords -1){
+					capText = capText+wordArray[x]+". ";
+				}else if(x == numWords -1){
+					capText = capText+wordArray[x];
+				}
+		
+		}
+		
+		
+	}
+	
+	if(allCaps == 1 || allCaps == true){
+	
+	capText = capText.replace(/\.\s\[-<br>-\]\s/g,"\n");
+	capText = capText.replace(/\.\s\[-<br>-\]/g,"\n");
+	
+	
+	}else{
+	capText = capText.replace(/\[-<br>-\]\.\s/g,"\n");
+	}
+	
+	capText = capText.replace(/\si\s/g," I ");      	
+	document.getElementById("ad_soyad").value = capText;
+
+}
+</script>
+
+</head>
+<body>
+<!-- Head Style -->
+<div style="width:%100; height:5px; background-color:#a20016; border-bottom:1px #f7f7f7 solid"></div>
+<!-- /Head Style -->
+<div style="background-color:#fff; width:930px; margin:auto;">
+<!-- TOP MENU -->
+	<div id="menucontainer">
+		<div id="content_top">
+			<div align="center" style="width:100%">
+				<div align="left" style="width:900px">
+				<link href="https://terim.tuba.gov.tr/ATS/css/top_menu.css" rel="stylesheet" type="text/css"/>
+<div id="menu">
+	<ul><li><a href='https://terim.tuba.gov.tr/'>Anasayfa</a></li></ul><ul><li><a href='#'>Hakkımızda<span style='background-image:url(https://terim.tuba.gov.tr/ATS//img/web/white_arrow.gif); margin-left:2px; background-repeat:no-repeat; background-position:right; text-decoration:none; '>&nbsp;&nbsp;</span></a><ul style='width:210px;'><li><a href='#'>Proje Hakkında<span style='background-image:url(https://terim.tuba.gov.tr/ATS//img/web/white_arrow1.gif); background-repeat:no-repeat; background-position:right; text-decoration:none; padding-left:10px;'>&nbsp;&nbsp;</span></a><ul style='width:210px;'><li><a href='https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/w_cmanager/48/22/'>Bilim Dili</a></li><li><a href='https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/w_cmanager/49/22/'>Amaç</a></li><li><a href='https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/w_cmanager/50/22/'>Süreç</a></li></ul></li><li><a href='https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/w_cmanager/24/19/'>Yürütme Kurulu Üyeleri</a></li><li><a href='http://www.tubaterim.gov.tr/ATS/index.php/w_anasayfa/w_hakkimizda/7/duyurular/'>Duyurular</a></li></ul></li></ul><ul><li><a href='#'>Sözlükler<span style='background-image:url(https://terim.tuba.gov.tr/ATS//img/web/white_arrow.gif); margin-left:2px; background-repeat:no-repeat; background-position:right; text-decoration:none; '>&nbsp;&nbsp;</span></a><ul style='width:210px;'><li><a href='#'>Sosyal Bilimler Terimleri Sözlüğü<span style='background-image:url(https://terim.tuba.gov.tr/ATS//img/web/white_arrow1.gif); background-repeat:no-repeat; background-position:right; text-decoration:none; padding-left:10px;'>&nbsp;&nbsp;</span></a><ul style='width:210px;'><li><a href='https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/w_cmanager/13/12/'>Genel Bilgi</a></li><li><a href='https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/w_cmanager/14/12/'>Alanlar</a></li><li><a href='https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/w_cmanager/30/12/'>Sözlük Kullanımı</a></li><li><a href='https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/w_cmanager/31/12/'>Sözlük Üzerine</a></li><li><a href='https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/w_cmanager/32/12/'>Oluşturulma Süreci</a></li><li><a href='https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/w_cmanager/33/12/'>Kısaltmalar</a></li><li><a href='#'>Katkıda Bulunanlar<span style='background-image:url(https://terim.tuba.gov.tr/ATS//img/web/white_arrow1.gif); background-repeat:no-repeat; background-position:right; text-decoration:none; padding-left:10px;'>&nbsp;&nbsp;</span></a><ul style='width:210px;'><li><a href='https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/w_cmanager/51/34/'>Alan Uzmanları</a></li><li><a href='https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/w_cmanager/52/34/'>Yayına Hazırlayanlar</a></li><li><a href='https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/w_cmanager/53/34/'>Görüş Alınanlar</a></li><li><a href='https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/w_cmanager/54/34/'>Yabancı Dil Uzmanları</a></li></ul></li><li><a href='https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/w_cmanager/35/12/'>Kaynaklar</a></li></ul></li><li><a href='#'>Doğa Bilimleri Terimleri Sözlüğü<span style='background-image:url(https://terim.tuba.gov.tr/ATS//img/web/white_arrow1.gif); background-repeat:no-repeat; background-position:right; text-decoration:none; padding-left:10px;'>&nbsp;&nbsp;</span></a><ul style='width:210px;'><li><a href='https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/w_cmanager/36/27/'>Genel Bilgi</a></li><li><a href='https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/w_cmanager/37/27/'>Alanlar</a></li><li><a href='https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/w_cmanager/38/27/'>Katkıda Bulunanlar</a></li><li><a href='https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/w_cmanager/39/27/'>Kaynaklar</a></li></ul></li><li><a href='#'>Sağlık Bilimleri Terimleri Sözlüğü<span style='background-image:url(https://terim.tuba.gov.tr/ATS//img/web/white_arrow1.gif); background-repeat:no-repeat; background-position:right; text-decoration:none; padding-left:10px;'>&nbsp;&nbsp;</span></a><ul style='width:210px;'><li><a href='https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/w_cmanager/44/29/'>Genel Bilgi</a></li><li><a href='https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/w_cmanager/45/29/'>Alanlar</a></li><li><a href='https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/w_cmanager/46/29/'>Katkıda Bulunanlar</a></li><li><a href='https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/w_cmanager/47/29/'>Kaynaklar</a></li></ul></li><li><a href='#'>Mühendislik Terimleri Sözlüğü<span style='background-image:url(https://terim.tuba.gov.tr/ATS//img/web/white_arrow1.gif); background-repeat:no-repeat; background-position:right; text-decoration:none; padding-left:10px;'>&nbsp;&nbsp;</span></a><ul style='width:210px;'><li><a href='https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/w_cmanager/40/28/'>Genel Bilgi</a></li><li><a href='https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/w_cmanager/41/28/'>Alanlar</a></li><li><a href='https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/w_cmanager/62/28/'>Katkıda Bulunanlar</a></li><li><a href='https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/w_cmanager/43/28/'>Kaynaklar</a></li></ul></li></ul></li></ul><ul><li><a href='https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/w_cmanager/15/-1/'>Atatürk ve Bilim Dili</a></li></ul><ul><li><a href='https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/w_iletisim/iletisim/'>İletişim</a></li></ul><ul></ul>
+	 
+
+    <ul style="width:280px; display:block; text-align:right; float:right;">
+        			 	<a style="float:right" class="link_uye_ol" href="https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/w_uye_ol/uye-ol">Üye Ol</a>
+			 	<a style="float:right" class="link_uye_girisi" href="https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/w_uye_girisi/uye-girisi">Üye Girişi</a>
+          
+    </ul>
+</div>				</div>
+			</div>
+		</div>
+	</div>
+<!-- /TOP MENU -->
+<!-- TOP IMAGE And USER -->
+<!-- TOP IMAGE And USER -->
+<header>
+	<div id="header-left">
+		<div id="logo"><a href="https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa" title="Home"><img src="https://terim.tuba.gov.tr/ATS/img/web/submenu/logo.png" alt="Ana Sayfa" /></a></div>
+	</div>
+	<div id="header-right">
+	    <a class="tile tile-iletisim" href="https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/w_iletisim/iletisim/"><img src="https://terim.tuba.gov.tr/ATS/img/web/submenu/tile-iletisim.png" alt="İletişim" width="40"/><span class="tile-title">İletişim</span></a>
+                <a class="tile tile-sozluk" href="https://satis.tuba.gov.tr/tueba-tuerkce-bilim-terimleri-soezluegue-dizisi" target="_blank"><img src="https://terim.tuba.gov.tr/ATS/img/web/submenu/esatis.png" alt="Üye Girişi" width="40"/><span class="tile-title">Sözlük Satış</span></a>	
+	    <a class="tile tile-duyuru" href="https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/w_announces"><img src="https://terim.tuba.gov.tr/ATS/img/web/submenu/tile-duyurular.png" alt="Duyurular" width="40"/><span class="tile-title">Duyurular</span></a>
+	    <a class="tile tile-ataturk" href="https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/w_cmanager/15/-1/"><img src="https://terim.tuba.gov.tr/ATS/img/web/submenu/tile-ataturk.png" alt="Atatürk ve Bilim Dili" width="40"/><span style="text-align:right" class="tile-title">Atatürk ve Bilim Dili</span></a>
+	    <a class="tile tile-sozlukler" href="https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/w_cmanager/13/12/"><img src="https://terim.tuba.gov.tr/ATS/img/web/submenu/tile-sozlukler.png" alt="sozlukler" width="40"/><span class="tile-title">Sözlükler</span></a>
+		<a class="tile tile-hakkimizda" href="https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/w_cmanager/48/22/"><img src="https://terim.tuba.gov.tr/ATS/img/web/submenu/tile-tb.png" alt="Hakkımızda" width="40" style="margin: 12px 0px 0px 8px !important;"/><span class="tile-title">Hakkımızda</span></a>
+	</div>
+</header>
+<style type="text/css">
+
+#content {
+    left: 5px;
+    position: relative;
+    width: 140px;
+
+}
+#container {
+    /*background: none repeat scroll 0 0 #EEEEEE;*/
+    /*border: 1px solid #666666;*/
+    float: left;
+    height: 450px;
+    left: -4px;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    width: 140px;
+}
+
+#scrollArea {
+    /*border: 1px solid #666666;*/
+    float: left;
+    height: 450px;
+    left: 140px;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    width: 5px;
+}
+
+#scroller {
+    /*background: none repeat scroll 0 0 #AAAAAA;*/
+    background: none repeat scroll 0 0 #dedede;
+    /*border-bottom: 1px solid #666666;
+    border-top: 1px solid #666666;*/
+    position: relative;
+    top: -1px;
+    width: 5px;
+
+}
+</style>
+<link rel="stylesheet" type="text/css" href="https://terim.tuba.gov.tr/ATS/js/autocomplete/style.css"/>
+
+<script type="text/javascript" src="https://terim.tuba.gov.tr/ATS/js/searchengine/lib/autosuggest/bsn.AutoSuggest_2.1.3.js"></script>	
+<link rel="stylesheet" href="https://terim.tuba.gov.tr/ATS/js/searchengine/lib/autosuggest/autosuggest_inquisitor.css" type="text/css" media="screen" charset="utf-8">
+
+<link href="https://terim.tuba.gov.tr/ATS/js/keypad/jquery.keypad.css" rel="stylesheet">
+<script src="https://terim.tuba.gov.tr/ATS/js/keypad/jquery.plugin.js"></script>
+<script src="https://terim.tuba.gov.tr/ATS/js/keypad/jquery.keypad.js"></script>
+
+<link href="https://terim.tuba.gov.tr/ATS/js/ytload/ytLoad.jquery.css" rel="stylesheet" type="text/css">
+<script src="https://terim.tuba.gov.tr/ATS/js/ytload/jquery.transit.js"></script>
+<script src="https://terim.tuba.gov.tr/ATS/js/ytload/ytLoad.jquery.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://terim.tuba.gov.tr/ATS/js/qtip/jquery.qtip.min.css"/>
+<script type="text/javascript" src="https://terim.tuba.gov.tr/ATS/js/qtip/jquery.qtip.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://terim.tuba.gov.tr/ATS/js/jquery.multiselect/jquery.multiselect.css"/>
+<script type="text/javascript" src="https://terim.tuba.gov.tr/ATS/js/jquery.multiselect/jquery.multiselect.js"></script>
+
+<script type="text/javascript" src="https://terim.tuba.gov.tr/ATS/js/jquery.twbsPagination.min.js"></script>
+
+<style>
+#as_ul small {
+	display:none;
+}
+
+#search_options {
+	background: url('https://terim.tuba.gov.tr/ATS/img/web/setting.png') no-repeat center; 
+	width:30px; 
+	height:30px; 
+	position:absolute; 
+	display:inline; 
+	margin:7px 0px 0px 5px; 
+	cursor:pointer; 
+	z-index:3;
+}
+
+#search_options:hover {
+	opacity: 0.4;
+}
+
+.ui-state-default a:hover {
+	 text-decoration:underline !important;
+}
+
+.ui-state-active a:hover {
+	 text-decoration:none !important;
+}
+
+#reset-selection {
+	font-size:11px;
+	cursor:pointer;
+	color:red;
+}
+
+#reset-selection:hover {
+	text-decoration:underline;
+}
+
+.terim_bars {
+	padding:2px;
+}
+
+.terim_bars:hover {
+	background-color:#e2e2e2
+}
+</style>
+<script>
+$(function () {
+	$("#tabs-min").tabs();
+	$("#tabs-min").css('display','block');
+	$('#autocomplete-ajax').keypad({
+		closeText: 'Kapat',
+		keypadOnly: false, 
+	    layout: ['ğüşıöç', 'ÄäÖöÜüß','éèëìîïòôùàâç',$.keypad.CLOSE],
+	    prompt: 'Semboller',
+	    showAnim:'fadeIn',
+		showOn: 'button', 
+	    buttonImageOnly: true, 
+	    buttonImage: 'https://terim.tuba.gov.tr/ATS/js/keypad/keypad_g.gif',
+	    keypadClass: 'TubaKeypad'
+	});
+	$("#autocomplete-ajax").focus();
+    bindQtip();
+});
+
+
+function reset_selection() {
+	$("[id=sozlukler_options]").prop('checked', true);
+	$("[id=diller_options]").prop('checked', true);
+	$("[id=relational_search_options]").prop('checked', false);
+}
+
+function sayfaDegistir(sayfa) {
+	
+	var sayfa;
+	for (var i=0; i<500; i++) {
+		$('div#sayfa_'+i).hide();
+
+		$('span#sayfa_secim_'+i).removeClass('w_secilen_sayfalama_eleman_secilmis');
+		$('span#sayfa_secim_'+i).addClass('w_secilen_sayfalama_eleman');
+	}
+	$('div#sayfa_'+sayfa).show();
+	$('span#sayfa_secim_'+sayfa).removeClass('w_secilen_sayfalama_eleman');
+	$('span#sayfa_secim_'+sayfa).addClass('w_secilen_sayfalama_eleman_secilmis');
+}
+
+//terimListeAcKapat();
+function terimListeAcKapat() {
+	$(this).delay(500,function(){
+		$('div#w_secilen_terim').html('<div class="loading" style="position:absolute; text-align:center; vertical-align:top;"><img src="https://terim.tuba.gov.tr/ATS/img/panel/icon/loadingKullaniciAlani.gif"><br>Terimler yükleniyor, lütfen bekleyiniz...</div>'); 
+		$.ajax({
+			type:'POST',
+			url:'https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/w_secilenler/'+ new Date().getTime(),
+			success: function(sonuc){ $('div#w_secilen_terim').html(sonuc); }
+		})
+	});
+}
+
+function terimTanimGetir(srch_txt) {
+	var srch_txt;
+	$('#terimListe').slideDown(300).fadeIn(400);
+	//$(window).scrollTop('760');
+	$(this).delay(500,function(){
+		$('div#w_secilen_terim_tiklanan').html('<div class="loading" style="position:absolute;text-align:center; vertical-align:top;"><img src="https://terim.tuba.gov.tr/ATS/img/panel/icon/loadingKullaniciAlani.gif"><br>Terimler yükleniyor, lütfen bekleyiniz...</div><br><br>'); 
+	
+		$.ajax({
+			type:'POST',
+			url:'https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/get_secilen_aramaSonucu/'+ new Date().getTime(),
+			data: 'srch_txt='+srch_txt,
+			success: function(sonuc){ $('div#w_secilen_terim_tiklanan').html(sonuc); }
+		})
+	
+	});	
+}
+
+function w_secilen_sozluk(sozluk_id, div_id) {
+	var sozluk_id;
+	//Secilen sozlugun alanlari listelenmeli
+	$(".alanlar").slideUp(300).fadeOut(400);
+	$('#w_secilen_alan_'+sozluk_id).slideDown(300).fadeIn(400);
+
+	$("#w_secilen_dil_"+sozluk_id).slideUp(300).fadeOut(400);
+	$("#w_secilen_harf").slideUp(300).fadeOut(400);
+
+	//$("#w_secilen_terim").slideUp(300).fadeOut(400);
+	$("#w_secilen_terim").html("<div align='center'>Lütfen alan seçiniz</div>");
+	
+	/*Set Hidden Value*/
+	$('#w_secilen_sozluk').val(sozluk_id);
+	
+	$('a',".w_secilen_sozluk").css('color','#333333');
+	$('a','#'+sozluk_id+'_ts').css('color','#0bafb6');
+
+}
+
+function w_secilen_alan(alan_id) {
+	var alan_id;
+	parts=alan_id.split("_");
+
+	$('a',".w_secilen_harf").css('color','#333333');
+	$('a',".w_secilen_dil").css('color','#333333');
+	$("#w_secilen_dil_"+$('#w_secilen_sozluk').val()).slideUp(300).fadeOut(400);
+	$("#w_secilen_harf").slideUp(300).fadeOut(400);
+	//$("#w_secilen_terim").slideUp(300).fadeOut(400);
+	$("#w_secilen_terim").html("<div align='center'>Lütfen dil seçiniz</div>");
+	/*set alan id*/
+	$('#w_secilen_alan').val(parts[1]);
+	
+	if(parts[0]=='') $('#w_secilen_dil_32').slideDown(300).fadeIn(400); else $('#w_secilen_dil_23').slideDown(300).fadeIn(400); 
+	
+	$('a',".w_secilen_alan").css('color','#333333');
+	$('a','#'+alan_id).css('color','#0bafb6');
+}
+
+function w_secilen_dil(dil) {
+	sozluk_id=$('#w_secilen_sozluk').val();
+	alan_id=$('#w_secilen_alan').val();
+
+	$('a',".w_secilen_harf").css('color','#333333');
+
+	$('#w_secilen_harf_tr').hide();
+	$('#w_secilen_harf_alm').hide();
+	$('#w_secilen_harf_fr').hide();
+	$('#w_secilen_harf_ing').hide();
+	if(dil=="alm2tr") { 
+		$('#w_secilen_harf_alm').slideDown(300).fadeIn(400);
+	} else if(dil=="fr2tr") {
+		$('#w_secilen_harf_fr').slideDown(300).fadeIn(400);
+	} else if(dil=="ing2tr") {
+		$('#w_secilen_harf_ing').slideDown(300).fadeIn(400);
+	} else { 
+		$('#w_secilen_harf_tr').slideDown(300).fadeIn(400); 
+	}
+
+	//$("#w_secilen_terim").slideUp(300).fadeOut(400);
+	$("#w_secilen_terim").html("<div align='center'>Lütfen harf seçiniz</div>");
+	$(this).delay(500,function(){
+		$.ajax({
+			type:'POST',
+			url:'https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/w_secilenler/'+ new Date().getTime(),
+			data: 'secilen_sozluk='+sozluk_id+'&'+'secilen_alan='+alan_id+'&'+'secilen_dil='+dil,
+			success: function(sonuc){ /*$('div#w_secilen_terim').html(sonuc);*/ }
+		})
+	});
+
+	$('a',".w_secilen_dil").css('color','#333333');
+	$('a','#'+dil+'_'+sozluk_id).css('color','#0bafb6');
+}
+
+function w_secilen_harf(harf) {
+	var harf;
+	$('#w_secilen_terim').slideDown(300).fadeIn(400);
+	$(this).delay(500,function(){
+		$('div#w_secilen_terim').html('<div class="loading" style="text-align:center; vertical-align:top; margin-top:20px;"><img src="https://terim.tuba.gov.tr/ATS/img/panel/icon/loadingKullaniciAlani.gif"><br>Terimler yükleniyor, lütfen bekleyiniz...</div>'); 
+		$.ajax({
+			type:'POST',
+			url:'https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/w_secilenler/'+ new Date().getTime(),
+			data: 'secilen_harf='+harf,
+			success: function(sonuc){ $('div#w_secilen_terim').html(sonuc); }
+		})
+	});
+	$('a',".w_secilen_harf").css('color','#333333');
+	$('a',".w_secilen_harf_secilmis").css('color','#333333');
+	
+	$('a','#'+harf).css('color','#0bafb6');	
+}
+
+function bindQtip(){
+   $('.terim_qtip').each(function() {
+       $(this).qtip({
+          content: {
+              text: function(event, api) {
+                  $.ajax({
+                      url: api.elements.target.attr('rel') // Use href attribute as URL
+                  })
+                  .then(function(content) {
+                      // Set the tooltip content upon successful retrieval
+                      api.set('content.text', content);
+                  }, function(xhr, status, error) {
+                      // Upon failure... set the tooltip content to error
+                      api.set('content.text', status + ': ' + error);
+                  });
+      
+                  return 'Loading...'; // Set some initial text
+              },
+       		  title: function(event, api) {
+				return "<span class='qtipheader'>"+api.elements.target.attr('title')+"</span>";
+              },
+          },
+          style: 'qtip-light',
+          show: {
+              delay: 300
+          },
+          hide: {
+        	  fixed: true,
+              delay: 400
+          }
+       });
+   });
+}
+</script>
+<div class="tabs-layer1">
+	<div class="tabs-layer2">
+		<div id="tabs-min" style="display:none">
+			<ul>
+				<li><a href="#tabs-1">Terim Ara</a></li>
+				<li><a href="#tabs-2">Terim Listele</a></li>
+			</ul>
+			<div id="tabs-1">
+			
+			<p>					
+				<div class="autocomplete">
+
+				
+					<div class="spinner" id="suggest_preload">
+					  <div class="rect1"></div>
+					  <div class="rect2"></div>
+					  <div class="rect3"></div>
+					  <div class="rect4"></div>
+					  <div class="rect5"></div>
+					</div>
+					
+					<form method="get" action="https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/search/" id="suggest_form">
+						<span id="search_options" show="0"></span>
+						<input type="text" name="q" id="autocomplete-ajax" placeholder="Terim yazınız"/>
+						
+						<div class="search_button_b">
+							<button id="search_button">
+								<span class="search_button_icon"></span>
+							</button>
+						</div>
+						<div class="search_setting_bar">
+						    <input type="radio" name="arama_options" id="arama_options" value="1"/><label>tam sözcük</label>
+						    <input type="radio" name="arama_options" id="arama_options" value="2"/><label>... ile başlayan</label>
+						    <input type="radio" name="arama_options" id="arama_options" value="3"/><label>... ile biten</label>
+						    <input type="radio" name="arama_options" id="arama_options" value="4"/><label>içerisinde geçen</label>
+						</div>
+						
+						<div class="search_options-response" id="search_options-response">
+							<div class="search_sozlukler">
+								<span style="font-weight:bold; font-size:13px;">Sözlükler</span>
+								<input type="hidden" name="szl" id="szl_hidden">
+																	<div><input type="checkbox" id="sozlukler_options" value="38" /><label>Doğa Bilimleri Terimleri Sözlüğü</label></div>
+																	<div><input type="checkbox" id="sozlukler_options" value="39" /><label>Mühendislik Terimleri Sözlüğü</label></div>
+																	<div><input type="checkbox" id="sozlukler_options" value="37" /><label>Sosyal Bilimler Terimleri Sözlüğü</label></div>
+												
+							</div>
+							<div class="search_diller">
+								<span style="font-weight:bold; font-size:13px;">Yabancı Diller</span>
+								<input type="hidden" name="lng" id="lng_hidden">
+																	<div><input type="checkbox" id="diller_options"  value="1" /><label>Almanca</label></div>
+																	<div><input type="checkbox" id="diller_options"  value="2" /><label>Fransızca</label></div>
+																	<div><input type="checkbox" id="diller_options"  value="3" /><label>İngilizce</label></div>
+													
+							</div>
+							<div class="search_diller">
+								<span style="font-weight:bold; font-size:13px;">Arama</span>
+								<input type="hidden" name="relational_search" id="relational_search_hidden">
+								<div><input type="checkbox" id="relational_search_options"  value="111" /><label>Benzer Sonuçları Getir.</label></div>				
+							</div>
+							<div align="right"><span id="reset-selection" onclick="reset_selection()">Seçimi Sıfırla</span></div>
+						</div>		
+					</form>
+					<!-- Init AutoSuggest -->
+					<script type="text/javascript">
+
+					$("#autocomplete-ajax").on("click", function() {
+						if ($("#search_options").attr('show') =='1') {
+							$("#search_options").attr('show','0');
+							$("#search_options-response").hide();
+						}		
+					});
+					
+					function get_search_options(group) {
+						var values = $('input:[checkbox,radio]:checked[id='+group+']').map(function () {
+							  return this.value;
+							}).get();
+						return values.join(',');
+					}
+
+					function set_suggest_sozluk(szl) {
+						if(szl!="") {
+							var szla = szl.split(",");
+							$.each(szla, function(index, value){
+								$('input[value="'+value+'"]').prop("checked", true);
+							});
+						} else {
+							$('input[value="23"]').prop("checked", true);
+							$('input[value="32"]').prop("checked", true);
+						}
+					}
+					
+					function set_suggest_dil(dil) {
+						if(dil!="") {
+							var dila = dil.split(",");
+							$.each(dila, function(index, value){
+								$('input[value="'+value+'"]').prop("checked", true);
+							});
+						} else {
+							$('input[value="1"]').prop("checked", true);
+							$('input[value="2"]').prop("checked", true);
+							$('input[value="3"]').prop("checked", true);
+						}
+					}
+					
+					function set_suggest_kondisyon(kondisyon) {
+						if(kondisyon!="") {
+							$('input[name=arama_options][value="'+kondisyon+'"]').prop("checked", true);
+						} else {
+							$('input[name=arama_options][value="2"]').prop("checked", true);
+						}
+					}
+					
+					function set_suggest_arama(arama) {
+						if(arama!="") {
+							var aramaa = arama.split(",");
+							$.each(aramaa, function(index, value){
+								$('input[value="'+value+'"]').prop("checked", true);
+							});
+						} else {
+							$('input[value="111"]').prop("checked", false);
+						}
+					}
+
+					/** Init autosuggest on Search Input **/
+					jQuery(function() {
+						set_suggest_sozluk('37,38,39');
+						set_suggest_dil('1,2,3');
+						set_suggest_kondisyon('1');
+						set_suggest_arama('');
+						$("#autocomplete-ajax").val('conjunction');
+						
+						$('#suggest_form').bind('submit', function() {
+							$("#szl_hidden").val(get_search_options('sozlukler_options'));
+							$("#lng_hidden").val(get_search_options('diller_options'));
+							$("#cond_hidden").val(get_search_options('arama_options'));
+							$("#relational_search_hidden").val(get_search_options('relational_search_options'));
+						});
+						
+						$("#search_button").on('click',function(){
+							$("#szl_hidden").val(get_search_options('sozlukler_options'));
+							$("#lng_hidden").val(get_search_options('diller_options'));
+							$("#cond_hidden").val(get_search_options('arama_options'));
+							$("#relational_search_hidden").val(get_search_options('relational_search_options'));
+							$("#suggest_form").submit();
+						});
+						
+						$("#search_options").on('click',function(){
+							if ($(this).attr('show') =='0') {
+								$("#search_options-response").show();
+								$(this).attr('show','1');
+							} else {
+								$(this).attr('show','0');
+								$("#search_options-response").hide();
+							}					
+						});
+
+						
+						var options = {
+							script: function (input) {
+								var input = $("#autocomplete-ajax").val();
+								var szl = get_search_options('sozlukler_options');
+								var dil = get_search_options('diller_options');
+								var ara = get_search_options('arama_options');
+								return "https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/suggest/"+input+"|"+szl+"|"+dil+"|"+ara+"/";
+							},
+							json:true,						// Returned response type
+							shownoresults:true,				// If disable, display nothing if no results
+							noresults:"Terim Bulunamadı",			// String displayed when no results
+							maxresults:40,					// Max num results displayed
+							cache:false,					// To enable cache
+							minchars:2,						// Start AJAX request with at leat 2 chars
+							timeout:100000,					// AutoHide in XX ms
+							delay:20,
+							callback: function (obj) { 		// Callback after click or selection
+								//$("#suggest_preload").show();
+								//var szl_trm = obj.id.split("_");
+								//window.location.href = 'https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/tanim/'+szl_trm[0]+'/'+szl_trm[1];
+								$("#search_button").trigger("click");
+							}
+						};
+
+						var as_json = new bsn.AutoSuggest('autocomplete-ajax', options);
+					});
+					</script>
+				</div>
+			</p>
+			</div>
+			<div id="tabs-2" style="padding: 0px;">
+				<div id="terimListe" class="CSSTableGenerator">
+					<table >
+							<tr>
+								<td width="16%" style="padding:3px;">Sözlük</td>
+								<td width="13%" style="padding:3px;">Alan</td>
+								<td width="11%" style="padding:3px;">Yabancı Dil</td>
+								<td width="6%" style="padding:3px;">Harf</td>
+								<td style="padding:3px;">Terim Listesi</td>
+							</tr>
+							<tr>
+								<td style="text-align:left; vertical-align: top; border-right: 1px solid #dddddd;">
+									<div class="list-group">									
+																			<div class="w_secilen_sozluk " onclick="w_secilen_sozluk('38','38_ts');" id="38_ts">
+											<a class="list-group-item">Doğa Bilimleri Terimleri </a>
+										</div>
+																			<div class="w_secilen_sozluk " onclick="w_secilen_sozluk('39','39_ts');" id="39_ts">
+											<a class="list-group-item">Mühendislik Terimleri </a>
+										</div>
+																			<div class="w_secilen_sozluk " onclick="w_secilen_sozluk('37','37_ts');" id="37_ts">
+											<a class="list-group-item">Sosyal Bilimler Terimleri </a>
+										</div>
+																		</div>
+								
+								</td>
+								<td style="text-align:left; vertical-align: top; border-right: 1px solid #dddddd;">
+									<div class="list-group">	
+																																
+											<div class="alanlar" id="w_secilen_alan_38" style="display:none">
+																										<div class="w_secilen_alan" onclick="w_secilen_alan('38_294');" id="38_294"><a class="list-group-item">Astronomi</a></div>
+																										<div class="w_secilen_alan" onclick="w_secilen_alan('38_288');" id="38_288"><a class="list-group-item">Fizik</a></div>
+																										<div class="w_secilen_alan" onclick="w_secilen_alan('38_293');" id="38_293"><a class="list-group-item">Matematik</a></div>
+																							</div>
+																																											
+											<div class="alanlar" id="w_secilen_alan_39" style="display:none">
+																										<div class="w_secilen_alan" onclick="w_secilen_alan('39_303');" id="39_303"><a class="list-group-item">Bilişim</a></div>
+																										<div class="w_secilen_alan" onclick="w_secilen_alan('39_308');" id="39_308"><a class="list-group-item">Biyomühendislik</a></div>
+																										<div class="w_secilen_alan" onclick="w_secilen_alan('39_313');" id="39_313"><a class="list-group-item">Çevre</a></div>
+																										<div class="w_secilen_alan" onclick="w_secilen_alan('39_295');" id="39_295"><a class="list-group-item">Denizcilik</a></div>
+																										<div class="w_secilen_alan" onclick="w_secilen_alan('39_312');" id="39_312"><a class="list-group-item">Deri</a></div>
+																										<div class="w_secilen_alan" onclick="w_secilen_alan('39_307');" id="39_307"><a class="list-group-item">Elektrik - Elektronik</a></div>
+																										<div class="w_secilen_alan" onclick="w_secilen_alan('39_299');" id="39_299"><a class="list-group-item">Endüstri</a></div>
+																										<div class="w_secilen_alan" onclick="w_secilen_alan('39_300');" id="39_300"><a class="list-group-item">Enerji</a></div>
+																										<div class="w_secilen_alan" onclick="w_secilen_alan('39_317');" id="39_317"><a class="list-group-item">Geomatik</a></div>
+																										<div class="w_secilen_alan" onclick="w_secilen_alan('39_314');" id="39_314"><a class="list-group-item">Gıda</a></div>
+																										<div class="w_secilen_alan" onclick="w_secilen_alan('39_298');" id="39_298"><a class="list-group-item">İnşaat</a></div>
+																										<div class="w_secilen_alan" onclick="w_secilen_alan('39_318');" id="39_318"><a class="list-group-item">İstatistik</a></div>
+																										<div class="w_secilen_alan" onclick="w_secilen_alan('39_297');" id="39_297"><a class="list-group-item">Kimya</a></div>
+																										<div class="w_secilen_alan" onclick="w_secilen_alan('39_316');" id="39_316"><a class="list-group-item">Maden</a></div>
+																										<div class="w_secilen_alan" onclick="w_secilen_alan('39_304');" id="39_304"><a class="list-group-item">Makine</a></div>
+																										<div class="w_secilen_alan" onclick="w_secilen_alan('39_310');" id="39_310"><a class="list-group-item">Malzeme</a></div>
+																										<div class="w_secilen_alan" onclick="w_secilen_alan('39_301');" id="39_301"><a class="list-group-item">Meteoroloji</a></div>
+																										<div class="w_secilen_alan" onclick="w_secilen_alan('39_305');" id="39_305"><a class="list-group-item">Mühendislik</a></div>
+																										<div class="w_secilen_alan" onclick="w_secilen_alan('39_302');" id="39_302"><a class="list-group-item">Orman</a></div>
+																										<div class="w_secilen_alan" onclick="w_secilen_alan('39_311');" id="39_311"><a class="list-group-item">Tarım</a></div>
+																										<div class="w_secilen_alan" onclick="w_secilen_alan('39_309');" id="39_309"><a class="list-group-item">Tekstil</a></div>
+																										<div class="w_secilen_alan" onclick="w_secilen_alan('39_306');" id="39_306"><a class="list-group-item">Uçak - Uzay</a></div>
+																										<div class="w_secilen_alan" onclick="w_secilen_alan('39_296');" id="39_296"><a class="list-group-item">Yerbilim</a></div>
+																							</div>
+																																											
+											<div class="alanlar" id="w_secilen_alan_37" style="display:none">
+																										<div class="w_secilen_alan" onclick="w_secilen_alan('37_287');" id="37_287"><a class="list-group-item">Sosyal</a></div>
+																							</div>
+																														</div>
+								</td>
+								<td style="text-align:left; vertical-align: top; text-align: center; border-right: 1px solid #dddddd;">
+									<input type="hidden" id="w_secilen_sozluk" value="" />
+									<input type="hidden" id="w_secilen_alan" value="" />
+									<div class="alanlar" id="w_secilen_dil_23" style="display:none">
+										<div class="w_secilen_dil" onclick="w_secilen_dil('tr');" id="tr_23"><a class="list-group-item">Türkçe</a></div>
+										<div class="w_secilen_dil" onclick="w_secilen_dil('tr2alm');" id="tr2alm_23"><a class="list-group-item">Türkçe-Almanca</a></div>
+										<div class="w_secilen_dil" onclick="w_secilen_dil('tr2fr');" id="tr2fr_23"><a class="list-group-item">Türkçe-Fransızca</a></div>
+										<div class="w_secilen_dil" onclick="w_secilen_dil('tr2ing');" id="tr2ing_23"><a class="list-group-item">Türkçe-İngilizce</a></div>
+										<div class="w_secilen_dil" onclick="w_secilen_dil('alm2tr');" id="alm2tr_23"><a class="list-group-item">Almanca-Türkçe</a></div>
+										<div class="w_secilen_dil" onclick="w_secilen_dil('fr2tr');" id="fr2tr_23"><a class="list-group-item">Fransızca-Türkçe</a></div>
+										<div class="w_secilen_dil" onclick="w_secilen_dil('ing2tr');" id="ing2tr_23"><a class="list-group-item">İngilizce-Türkçe</a></div>
+									</div>
+									<div class="alanlar" id="w_secilen_dil_32" style="display:none">
+										<div class="w_secilen_dil" onclick="w_secilen_dil('tr');" id="tr_32"><a class="list-group-item">Türkçe</a></div>
+									</div>
+								</td>
+								<td style="text-align:left; vertical-align: top; text-align: center; border-right: 1px solid #dddddd;">
+									<div class="list-group" >
+										<div id="w_secilen_harf_tr" style="display: none;">
+											<div class="w_secilen_harf" onclick="w_secilen_harf('A');" id="A"><a class="list-group-item" >A</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('B');" id="B"><a class="list-group-item" >B</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('C');" id="C"><a class="list-group-item" >C</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('C2');" id="C2"><a class="list-group-item" >Ç</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('D');" id="D"><a class="list-group-item" >D</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('E');" id="E"><a class="list-group-item" >E</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('F');" id="F"><a class="list-group-item" >F</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('G');" id="G"><a class="list-group-item" >G</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('H');" id="H"><a class="list-group-item" >H</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('I');" id="I"><a class="list-group-item" >I</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('I2');" id="I2"><a class="list-group-item" >İ</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('J');" id="J"><a class="list-group-item" >J</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('K');" id="K"><a class="list-group-item" >K</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('L');" id="L"><a class="list-group-item" >L</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('M');" id="M"><a class="list-group-item" >M</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('N');" id="N"><a class="list-group-item" >N</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('O');" id="O"><a class="list-group-item" >O</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('O2');" id="O2"><a class="list-group-item" >Ö</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('P');" id="P"><a class="list-group-item" >P</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('R');" id="R"><a class="list-group-item" >R</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('S');" id="S"><a class="list-group-item" >S</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('S2');" id="S2"><a class="list-group-item" >Ş</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('T');" id="T"><a class="list-group-item" >T</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('U');" id="U"><a class="list-group-item" >U</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('U2');" id="U2"><a class="list-group-item" >Ü</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('V');" id="V"><a class="list-group-item" >V</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('Y');" id="Y"><a class="list-group-item" >Y</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('Z');" id="Z"><a class="list-group-item" >Z</a></div>
+										</div>
+										<div id="w_secilen_harf_alm" style="display: none;">
+											<div class="w_secilen_harf" onclick="w_secilen_harf('A');" id="A"><a class="list-group-item" >A</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('Ä');" id="Ä"><a class="list-group-item" >Ä</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('B');" id="B"><a class="list-group-item" >B</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('C');" id="C"><a class="list-group-item" >C</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('D');" id="D"><a class="list-group-item" >D</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('E');" id="E"><a class="list-group-item" >E</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('F');" id="F"><a class="list-group-item" >F</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('G');" id="G"><a class="list-group-item" >G</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('H');" id="H"><a class="list-group-item" >H</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('I');" id="I"><a class="list-group-item" >I</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('J');" id="J"><a class="list-group-item" >J</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('K');" id="K"><a class="list-group-item" >K</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('L');" id="L"><a class="list-group-item" >L</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('M');" id="M"><a class="list-group-item" >M</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('N');" id="N"><a class="list-group-item" >N</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('O');" id="O"><a class="list-group-item" >O</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('Ö');" id="Ö"><a class="list-group-item" >Ö</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('P');" id="P"><a class="list-group-item" >P</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('Q');" id="P"><a class="list-group-item" >Q</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('R');" id="R"><a class="list-group-item" >R</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('S');" id="S"><a class="list-group-item" >S</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('T');" id="T"><a class="list-group-item" >T</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('U');" id="U"><a class="list-group-item" >U</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('Ü');" id="Ü"><a class="list-group-item" >Ü</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('V');" id="V"><a class="list-group-item" >V</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('W');" id="W"><a class="list-group-item" >W</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('X');" id="X"><a class="list-group-item" >X</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('Y');" id="Y"><a class="list-group-item" >Y</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('Z');" id="Z"><a class="list-group-item" >Z</a></div>
+										</div>
+										<div id="w_secilen_harf_fr" style="display: none;">
+											<div class="w_secilen_harf" onclick="w_secilen_harf('A');" id="A"><a class="list-group-item" >A</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('æ');" id="æ"><a class="list-group-item" >æ</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('B');" id="B"><a class="list-group-item" >B</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('C');" id="C"><a class="list-group-item" >C</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('D');" id="D"><a class="list-group-item" >D</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('E');" id="E"><a class="list-group-item" >E</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('è');" id="è"><a class="list-group-item" >è</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('é');" id="é"><a class="list-group-item" >é</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('F');" id="F"><a class="list-group-item" >F</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('G');" id="G"><a class="list-group-item" >G</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('H');" id="H"><a class="list-group-item" >H</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('I');" id="I"><a class="list-group-item" >I</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('J');" id="J"><a class="list-group-item" >J</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('K');" id="K"><a class="list-group-item" >K</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('L');" id="L"><a class="list-group-item" >L</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('M');" id="M"><a class="list-group-item" >M</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('N');" id="N"><a class="list-group-item" >N</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('O');" id="O"><a class="list-group-item" >O</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('œ');" id="œ"><a class="list-group-item" >œ</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('P');" id="P"><a class="list-group-item" >P</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('Q');" id="P"><a class="list-group-item" >Q</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('R');" id="R"><a class="list-group-item" >R</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('S');" id="S"><a class="list-group-item" >S</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('T');" id="T"><a class="list-group-item" >T</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('U');" id="U"><a class="list-group-item" >U</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('V');" id="V"><a class="list-group-item" >V</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('W');" id="W"><a class="list-group-item" >W</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('X');" id="X"><a class="list-group-item" >X</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('Y');" id="Y"><a class="list-group-item" >Y</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('Z');" id="Z"><a class="list-group-item" >Z</a></div>
+										</div>
+										<div id="w_secilen_harf_ing" style="display: none;">
+											<div class="w_secilen_harf" onclick="w_secilen_harf('A');" id="A"><a class="list-group-item" >A</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('B');" id="B"><a class="list-group-item" >B</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('C');" id="C"><a class="list-group-item" >C</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('D');" id="D"><a class="list-group-item" >D</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('E');" id="E"><a class="list-group-item" >E</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('F');" id="F"><a class="list-group-item" >F</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('G');" id="G"><a class="list-group-item" >G</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('H');" id="H"><a class="list-group-item" >H</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('I');" id="I"><a class="list-group-item" >I</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('J');" id="J"><a class="list-group-item" >J</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('K');" id="K"><a class="list-group-item" >K</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('L');" id="L"><a class="list-group-item" >L</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('M');" id="M"><a class="list-group-item" >M</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('N');" id="N"><a class="list-group-item" >N</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('O');" id="O"><a class="list-group-item" >O</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('P');" id="P"><a class="list-group-item" >P</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('Q');" id="P"><a class="list-group-item" >Q</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('R');" id="R"><a class="list-group-item" >R</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('S');" id="S"><a class="list-group-item" >S</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('T');" id="T"><a class="list-group-item" >T</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('U');" id="U"><a class="list-group-item" >U</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('V');" id="V"><a class="list-group-item" >V</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('W');" id="W"><a class="list-group-item" >W</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('X');" id="X"><a class="list-group-item" >X</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('Y');" id="Y"><a class="list-group-item" >Y</a></div>
+											<div class="w_secilen_harf" onclick="w_secilen_harf('Z');" id="Z"><a class="list-group-item" >Z</a></div>
+										</div>
+									</div>
+								</td>
+								<td style="text-align:left; vertical-align: top; padding:5px;">
+									<div id="w_secilen_terim"><div align="center">Lütfen Sözlük Seçiniz</div></div>
+								</td>
+							</tr>
+					</table>
+
+					<div style="border-top: 1px solid #dedede;">
+						<div id="w_secilen_terim_tiklanan" style="margin-left: 100px;text-align: left;width: 650px;"></div>
+					</div>		
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+</script>
+
+	
+<!-- MAIN -->
+<div id="main_content" style="min-height:480px; margin-bottom:30px;">
+	<div id="arama_sonucu_container">
+		<h2 style="color: #888;font-size: 12px;text-align: right;">Toplam Kayıt : <U>6</U></h2>
+    	<div class="title6" style="text-align: center;">Arama Sonucu</div>
+		    
+			        <div class="arama_sonucu_content_tumu">
+			            <div class="sonuc_terim"><b>kavuşum</b> <span class="sozluk_kisa_tanim">(doğa.)</span><br /></div>
+			            <div>
+			            	<div>  <i>(Alm. Konjunktion, f; Fr. conjonction, f; İng. conjunction)</i> <b><i>ast. </i></b> 1. Bir g&ouml;zlem noktasına g&ouml;re iki g&ouml;kcisminin g&ouml;kk&uuml;re &uuml;zerindeki&nbsp;g&ouml;r&uuml;nt&uuml;lerinin birbirine en fazla yaklaştığı andaki konumları. 2. Yer'den bakıldığında bir Güneş Sistemi üyesinin uzanım açısının 0<sup>0</sup> olduğu andaki yani Güneş Sistemi üyesinin gözlemciye göre Güneş ile aynı hizada bulunduğu andaki konumu.</div>
+				            								<div class="yorum_link" onclick="ConfirmDialog('Dikkat','Terime yorum yapabilmeniz için üye olmanız gerekmektedir.<br>Eğer sisteme daha önceden üye olduysanız, lütfen üye girişi yapınız.');"><img src="https://terim.tuba.gov.tr/ATS//img/web/comment.png"/>Yorum ekle</div>
+											            <div id="yorum_container_282136" class="yorum_container">
+								<div class="yorum_text">Lütfen bu terim ile ilgili yorumunuzu aşağıdaki alana yazınız.</div>
+				                <div id="yorum_snc_282136"></div>
+				                <textarea id="yorum_input_282136" class="input11"></textarea>
+				                <input onclick="js_yorum_ekle(282136)" type="button" class="yorum_button" value="Gönder" />
+					      	</div>
+						</div>
+			        </div>
+            <div class="title6" style="text-align: center; margin-top:20px;">İlgili Sonuçlar</div>    	        <div class="arama_sonucu_content_tumu">
+	            <div class="sonuc_terim" style="cursor:pointer" onclick="js_sonuc_tanim(295078)"><b>alt kavuşum</b> <span class="sozluk_kisa_tanim">(doğa.)</span><br /></div>
+	            <div class="sonuc_tanim" id="sonuc_tanim_295078">
+			        <div>  <i>(Alm. untere Konjunktion, f; Fr. conjonction inférieure, f; İng. inferior conjunction)</i> <b><i>ast. </i></b>G&uuml;neş etrafındaki y&ouml;r&uuml;ngesi Yer'in y&ouml;r&uuml;ngesinden daha i&ccedil;eride yer alan Merk&uuml;r ve Ven&uuml;s gezegenlerinin, bir doğru &uuml;zerinde Yer-gezegen-G&uuml;neş sıralamasına&nbsp; gelmeleri; eşanlam: içkavuşum.</div>
+		            						<div class="yorum_link" onclick="ConfirmDialog('Dikkat','Terime yorum yapabilmeniz için üye olmanız gerekmektedir.<br>Eğer sisteme daha önceden üye olduysanız, lütfen üye girişi yapınız.');"><img src="https://terim.tuba.gov.tr/ATS//img/web/comment.png"/>Yorum ekle</div>
+							            <div id="yorum_container_295078" class="yorum_container">
+						<div class="yorum_text">Lütfen bu terim ile ilgili yorumunuzu aşağıdaki alana yazınız.</div>
+		                <div id="yorum_snc_295078"></div>
+		                <textarea id="yorum_input_295078" class="input11"></textarea>
+		                <input onclick="js_yorum_ekle(295078)" type="button" class="yorum_button" value="Gönder" />
+			      	</div>
+				</div>
+	        </div>
+		        <div class="arama_sonucu_content_tumu">
+	            <div class="sonuc_terim" style="cursor:pointer" onclick="js_sonuc_tanim(241323)"><b>birletim</b> <span class="sozluk_kisa_tanim">(müh.)</span><br /></div>
+	            <div class="sonuc_tanim" id="sonuc_tanim_241323">
+			        <div>  <i>(Alm. logische Und-funktion; logische UND-Verknüpfung; logische Konjunktion, f; Fr. opération ET; conjonction logique, f; multiplication logique, f; İng. AND operation; logical AND; logical conjunction; logical product)</i> <b><i>blşm. </i></b>Ancak b&uuml;t&uuml;n bağımsız değişkenleri doğru olduğunda sonucun da doğru olduğu mantık işlemi; eşanlam: mantıksal çarpım.</div>
+		            						<div class="yorum_link" onclick="ConfirmDialog('Dikkat','Terime yorum yapabilmeniz için üye olmanız gerekmektedir.<br>Eğer sisteme daha önceden üye olduysanız, lütfen üye girişi yapınız.');"><img src="https://terim.tuba.gov.tr/ATS//img/web/comment.png"/>Yorum ekle</div>
+							            <div id="yorum_container_241323" class="yorum_container">
+						<div class="yorum_text">Lütfen bu terim ile ilgili yorumunuzu aşağıdaki alana yazınız.</div>
+		                <div id="yorum_snc_241323"></div>
+		                <textarea id="yorum_input_241323" class="input11"></textarea>
+		                <input onclick="js_yorum_ekle(241323)" type="button" class="yorum_button" value="Gönder" />
+			      	</div>
+				</div>
+	        </div>
+		        <div class="arama_sonucu_content_tumu">
+	            <div class="sonuc_terim" style="cursor:pointer" onclick="js_sonuc_tanim(282967)"><b>üst kavuşum</b> <span class="sozluk_kisa_tanim">(doğa.)</span><br /></div>
+	            <div class="sonuc_tanim" id="sonuc_tanim_282967">
+			        <div>  <i>(Alm. Oberkonjunktion, f; Fr. conjonction supérieur, f; İng. superior conjunction)</i> <b><i>ast. </i></b>G&uuml;neş etrafındaki y&ouml;r&uuml;ngesi Yer'in y&ouml;r&uuml;ngesinden daha i&ccedil;eride yer alan Merk&uuml;r ve Ven&uuml;s gezegenlerinin, bir doğru &uuml;zerinde Yer-G&uuml;neş-gezegen sıralamasına gelmeleri.</div>
+		            						<div class="yorum_link" onclick="ConfirmDialog('Dikkat','Terime yorum yapabilmeniz için üye olmanız gerekmektedir.<br>Eğer sisteme daha önceden üye olduysanız, lütfen üye girişi yapınız.');"><img src="https://terim.tuba.gov.tr/ATS//img/web/comment.png"/>Yorum ekle</div>
+							            <div id="yorum_container_282967" class="yorum_container">
+						<div class="yorum_text">Lütfen bu terim ile ilgili yorumunuzu aşağıdaki alana yazınız.</div>
+		                <div id="yorum_snc_282967"></div>
+		                <textarea id="yorum_input_282967" class="input11"></textarea>
+		                <input onclick="js_yorum_ekle(282967)" type="button" class="yorum_button" value="Gönder" />
+			      	</div>
+				</div>
+	        </div>
+		        <div class="arama_sonucu_content_tumu">
+	            <div class="sonuc_terim" style="cursor:pointer" onclick="js_sonuc_tanim(293055)"><b>ve bağlacı</b> <span class="sozluk_kisa_tanim">(doğa.)</span><br /></div>
+	            <div class="sonuc_tanim" id="sonuc_tanim_293055">
+			        <div>  <i>(Alm. logische Konjunktion, f; Fr. conjonction logique, f; İng. AND operation; logical AND; logical conjunction; logical product)</i> <b><i>mat. </i></b>p ile q önermeleri için her ikisi doğru ise doğru, önermelerden biri ya da her ikisi yanlış ise yanlış olan p ∧q bileşik önermesini oluşturan ∧ simgesi.</div>
+		            						<div class="yorum_link" onclick="ConfirmDialog('Dikkat','Terime yorum yapabilmeniz için üye olmanız gerekmektedir.<br>Eğer sisteme daha önceden üye olduysanız, lütfen üye girişi yapınız.');"><img src="https://terim.tuba.gov.tr/ATS//img/web/comment.png"/>Yorum ekle</div>
+							            <div id="yorum_container_293055" class="yorum_container">
+						<div class="yorum_text">Lütfen bu terim ile ilgili yorumunuzu aşağıdaki alana yazınız.</div>
+		                <div id="yorum_snc_293055"></div>
+		                <textarea id="yorum_input_293055" class="input11"></textarea>
+		                <input onclick="js_yorum_ekle(293055)" type="button" class="yorum_button" value="Gönder" />
+			      	</div>
+				</div>
+	        </div>
+		        <div class="arama_sonucu_content_tumu">
+	            <div class="sonuc_terim" style="cursor:pointer" onclick="js_sonuc_tanim(241507)"><b>VE bağlacı</b> <span class="sozluk_kisa_tanim">(müh.)</span><br /></div>
+	            <div class="sonuc_tanim" id="sonuc_tanim_241507">
+			        <div>  <i>(Alm. logische Konjunktion, f; logische Und-funktion, f; logische UND-Verknüpfung, f; Fr. opération ET; conjonction logique, f; multiplication logique, f; İng. AND operation; logical AND; logical conjunction; logical product)</i> <b><i>blşm. </i></b>P ile q önermeleri için her ikisi doğru ise doğru, önermelerden biri ya da her ikisi yanlış ise yanlış olan p ∧q bileşik önermesini oluşturan ∧ simgesi; eşanlam: mantıksal çarpım.</div>
+		            						<div class="yorum_link" onclick="ConfirmDialog('Dikkat','Terime yorum yapabilmeniz için üye olmanız gerekmektedir.<br>Eğer sisteme daha önceden üye olduysanız, lütfen üye girişi yapınız.');"><img src="https://terim.tuba.gov.tr/ATS//img/web/comment.png"/>Yorum ekle</div>
+							            <div id="yorum_container_241507" class="yorum_container">
+						<div class="yorum_text">Lütfen bu terim ile ilgili yorumunuzu aşağıdaki alana yazınız.</div>
+		                <div id="yorum_snc_241507"></div>
+		                <textarea id="yorum_input_241507" class="input11"></textarea>
+		                <input onclick="js_yorum_ekle(241507)" type="button" class="yorum_button" value="Gönder" />
+			      	</div>
+				</div>
+	        </div>
+	           </div>
+</div>
+
+<script>
+$("#autocomplete-ajax").val('conjunction');
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    
+        js_sonuc_tanim();
+        
+    $('.yorum_container').hide();
+    $('#tanim_ekle').hide();
+    
+})
+
+function createCookie(name,value,days) {
+if (days) {
+	        var date = new Date();
+	        date.setTime(date.getTime()+(days*24*60*60*1000));
+	        var expires = "; expires="+date.toGMTString();
+	}
+	else var expires = "";
+	document.cookie = name+"="+value+expires+"; path=/";
+}
+
+function readCookie(name) {
+	var nameEQ = name + "=";
+	var ca = document.cookie.split(';');
+	for(var i=0;i < ca.length;i++) {
+	        var c = ca[i];
+	        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+	        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+	}
+	return null;
+}
+
+function eraseCookie(name) {
+	createCookie(name,"",-1);
+}
+
+
+function js_sonuc_tanim(id){
+    $('.sonuc_tanim').hide();
+	$('#sonuc_tanim_'+id).show();
+}
+
+function js_yorum_goster(id){
+    //$('.yorum_container').hide();
+    $('#yorum_container_'+id).slideToggle();
+}
+
+function js_yorum_ekle(id){
+    var yorum = jQuery.trim($('#yorum_input_'+id).attr("value"));
+    if(yorum==""){
+        alert("Lütfen yorumunuzu yazınız!");
+    } else {
+        $.ajax({
+            type:'POST',
+            url:'https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/w_yorum_ekle/'+id,
+            data:'yorum='+yorum,
+            success: function(sonuc){ $('#yorum_snc_'+id).html(sonuc); $('#yorum_input_'+id).attr("value","") }
+        
+        });
+    }
+}
+
+function js_terim_ekle1(){
+    
+    $.ajax({
+            type:'POST',
+            url:'https://terim.tuba.gov.tr/ATS/index.php/w_anasayfa/w_aramaSonucuEkle/conjunction'  ,
+            data:'',
+            success: function(sonuc){ $('#terim_snc1').html('<p style="color:#CC0000; font-weight:bold;">Terim öneriniz kaydedilmiştir.</p>');}//
+        
+        });
+    }
+
+ 
+function js_terim_hayır1(){
+    
+    $('#terim_snc1').html('<p style="color:#CC0000; font-weight:bold;">Terim ile ilgili işlem yapılmamıştır.</p>');
+        
+}
+
+</script>
+
+<div class="sitefooter">
+	<div class="sfleft">
+		<img src="https://terim.tuba.gov.tr/ATS/img/web/tuba_logo.png" style="margin: 10px; float: left;">
+		<div style="width: 300px; float:left; margin-top: 10px;">
+			<span style="font-weight:bold">TÜBA - TÜRKİYE BİLİMLER AKADEMİSİ BAŞKANLIK</span><br>
+			Vedat Dalokay Caddesi No: 112<br>
+			06670 Çankaya - Ankara
+		</div>
+		<div style="clear:both"></div>
+		<div style="margin: 10px 20px;">
+		© 2013 TÜRKİYE BİLİMLER AKADEMİSİ. Her hakkı saklıdır.
+		</div>
+	</div>
+	<div class="sfright">
+		<div><img src="https://terim.tuba.gov.tr/ATS/img/web/phone.png"><span>(312) 442 29 03 (pbx)</span></div>
+		<div><img src="https://terim.tuba.gov.tr/ATS/img/web/fax.png"><span>(312) 442 72 36 | 442 23 58 | 442 64 91</span></div>
+		<div><img src="https://terim.tuba.gov.tr/ATS/img/web/email.png"><span>bilimterimleri@tuba.gov.tr</span></div>
+	</div>
+</div>
+<br/>
+<div class="clear"></div>
+</body>
+</html>

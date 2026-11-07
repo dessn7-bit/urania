@@ -19,7 +19,7 @@ Erişim: 2026-10-30. "Hesap" yazan satırlar kaynak değil: kaynaktaki formülle
 | Bileşen genlikleri modelde 7,66 ve 9,86 dk (hesap) | — | python3: max |4(q − L)| = 7,662 dk, max |4(L − RA)| = 9,863 dk |
 | UTC+3 = 45° doğu boylamının saati (hesap) | — | 3 sa × 15°/sa = 45° |
 | Türkiye 8 Eylül 2016'dan beri yıl boyu UTC+3 | https://en.wikipedia.org/wiki/Time_in_Turkey | "In Turkey, time is given by UTC+03:00 year-round."; "TRT was adopted by the Turkish Government on 8 September 2016." (ders d22: Bakanlar Kurulu Kararı 2016/9154; alomaliye.com sayfası bu oturumda açılamadı) |
-| Konum 41,00° K, 29,08° D (Fetih Mahallesi, Ataşehir) | /home/claude/urania/uygulama.js (yerel) | `VARSAYILAN_KONUM = { ad: 'Fetih Mahallesi, Ataşehir', enlem: 41.0046, boylam: 29.0762 …}` |
+| Konum 41,0° K, 29,1° D (İstanbul, ilçe düzeyi) | uygulama.js (yerel) | `VARSAYILAN_KONUM = { ad: 'İstanbul', enlem: 41.0, boylam: 29.1 …}` (7 Kasım 2026'da yuvarlandı; veri/deney/*.json 'istanbul' kaydı aynı değere çekildi) |
 | Ortalama öğle 13:03:41; fark 63,68 dk = 63 dk 41 sn (hesap) | — | (45 − 29,08) × 4 dk = 15,92 × 4 = 63,68 dk; ders d22 (28,955° D için): "yaklaşık 13:04" |
 | Gök küresi saatte 15°, dakikada 0,25° | — | Ders d22: "Güneş saatte 15° yol aldığına göre bir dakikalık fark 0,25° eder" |
 | USNO İstanbul güneyden geçiş 2026 (41,00° K, 29,08° D, UTC+3) — İKİNCİ KAYNAKLA DOĞRULAMA | https://aa.usno.navy.mil/api/rstt/oneday?date=2026-11-03&coords=41.00,29.08&tz=3 (tarih değiştirilerek) | `"phen": "Upper Transit"`: 3 Oca 13:08 · 11 Şub 13:18 · 20 Mar 13:11 · 15 Nis 13:04 · 14 May 13:00 · 13 Haz 13:04 · 21 Haz 13:05 · 26 Tem 13:10 · 1 Eyl 13:04 · 23 Eyl 12:56 · 3 Kas 12:47 · 21 Ara 13:02 · 25 Ara 13:04 |
