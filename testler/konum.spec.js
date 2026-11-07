@@ -59,7 +59,7 @@ test.describe('izin yok', () => {
   test('İzin verilmezse varsayılan yer kullanılır ve sebebi yazar', async ({ page, context }) => {
     await context.clearPermissions();
     await page.goto('/index.html#gok');
-    await expect(page.locator('#gkKonum')).toContainText('Fetih Mahallesi');
+    await expect(page.locator('#gkKonum')).toContainText('İstanbul');
     await expect(page.locator('#gkKonum')).toContainText(/konum izni yok|konum alınamadı/);
     await expect(page.locator('#gkGezegen li')).toHaveCount(7);
   });

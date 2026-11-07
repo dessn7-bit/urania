@@ -1,8 +1,8 @@
 'use strict';
 /* "Gökyüzüne bak" (AR) testleri. Yön olayları W3C DeviceOrientation anlamıyla üretilir:
    β=90° telefon dik (arka kamera ufka bakar), α saat yönünün TERSİNE artar (α=90° → batı).
-   Pusula manyetik kuzeye göre kabul edilir; Fetih Mah. (Ataşehir) için WMM-2025 sapması +6,09° (Kadıköy +6,08°) (NOAA
-   hesaplayıcısıyla aynı: ngdc.noaa.gov/geomag-web, 2026-10-27) eklenir. */
+   Pusula manyetik kuzeye göre kabul edilir; İstanbul (41,0 K 29,1 D) için WMM-2025 sapması +6,09° (NOAA hesaplayıcısı
+   ngdc.noaa.gov/geomag-web, 2026-10-27 için 6,08942°; yanıt arastirma/noaa_wmm_41.0_29.1_2026-10-27.json), Kadıköy +6,08° eklenir. */
 const { test, expect } = require('@playwright/test');
 const { celestrak } = require('./yardim');
 
@@ -116,13 +116,13 @@ test('Bul: aranan cisme yön tarifi verilir', async ({ page }) => {
 
 test.describe('ISS', () => {
   test('Geçiş sırasında telefonu ISS\'e tutunca nişangâhta görünür; yolu çizilir', async ({ page }) => {
-    /* 2026-10-30 03:58:00 UT, Fetih Mah.: ISS yükseklik 33,92°, azimut 312,77°, ışıkta
-       (uydu.js ile Skyfield aynı değeri verdi). */
+    /* 2026-10-30 03:58:00 UT, İstanbul 41,0 K 29,1 D: ISS yükseklik 33,82°, azimut 312,69°, ışıkta
+       (Skyfield 1.x + DE421, fikstürdeki OMM ile; 7 Kasım 2026'da yeniden hesaplandı). */
     await celestrak(page);
     await page.clock.setFixedTime(new Date('2026-10-30T03:58:00Z'));
     await page.goto('/index.html#ar');
     await page.waitForTimeout(600);
-    await yonVer(page, ((6.09 - 312.77) % 360 + 360) % 360, 90 + 33.92, 0);
+    await yonVer(page, ((6.09 - 312.69) % 360 + 360) % 360, 90 + 33.82, 0);
     await expect(page.locator('#arMerkez b')).toHaveText('Uzay İstasyonu (ISS)');
     await expect(page.locator('#arMerkez')).toContainText('Güneş ışığı alıyor');
     const yol = await page.evaluate(() => window.UraniaAR.st.uyduGecis && window.UraniaAR.st.uyduGecis[0] && window.UraniaAR.st.uyduGecis[0].yol.length);

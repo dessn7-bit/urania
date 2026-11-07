@@ -5,7 +5,7 @@ from datetime import datetime, timedelta, timezone
 ts = load.timescale()
 eph = load('/tmp/claude-0/-home-claude/56988ba9-8a4f-55a3-b598-a36da9c3de82/scratchpad/de421.bsp')
 sun, earth = eph['sun'], eph['earth']
-obs = wgs84.latlon(41.0046, 29.0762, 0)
+obs = wgs84.latlon(41.0, 29.1, 0)   # gizlilik: ilçe düzeyi (7 Kasım 2026); Ekim 2026 çalıştırmaları ~2 km ötedeki asıl noktayla yapıldı
 
 # TLEs fetched earlier today (recorded in uydu_kaynaklar.md); epochs match HA pages (ISS 27 Oct, CSS 26 Oct)
 TLE = {

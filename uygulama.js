@@ -41,9 +41,10 @@
   }
   function sil(anahtar) { try { localStorage.removeItem(DEPO_ONEK + anahtar); } catch (e) { /* depo yok */ } }
 
-  /* Varsayılan konum: Fetih Mahallesi, Ataşehir — OpenStreetMap (Nominatim) mahalle merkezi
-     41.0046423, 29.0762052. Kullanıcı GPS ya da elle değiştirebilir. */
-  const VARSAYILAN_KONUM = { ad: 'Fetih Mahallesi, Ataşehir', enlem: 41.0046, boylam: 29.0762, yukseklik: 20, saatDilimi: 'Europe/Istanbul' };
+  /* Varsayılan konum: İstanbul, ilçe düzeyine yuvarlanmış (41,0° K, 29,1° D; tek ondalık ≈ 10 km). Depo herkese açık
+     olduğundan daha ince bir konum yazılmaz (gizlilik, 7 Kasım 2026). Kullanıcı GPS ya da elle değiştirebilir;
+     telefonda kayıtlı konum ve GPS her zaman önceliklidir, bu değer yalnız ikisi de yokken kullanılır. */
+  const VARSAYILAN_KONUM = { ad: 'İstanbul', enlem: 41.0, boylam: 29.1, yukseklik: 20, saatDilimi: 'Europe/Istanbul' };
   const dilimSonuc = new Map();   // Map: "constructor" gibi adlar nesne prototipine takılmasın
   function gecerliDilim(z) {
     if (typeof z !== 'string') return false;

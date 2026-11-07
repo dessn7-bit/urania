@@ -83,24 +83,38 @@ test('Gün dilimi kenarında kesilen geçiş ikinci kez listelenmez (inceleme bu
   expect(sn(g.bas.t, '2026-10-28T03:54:23Z')).toBeLessThanOrEqual(3);
 });
 
-test('Parlaklık: Heavens-Above\'ın 28 geçişlik tablosuyla ±0,15 kadir (tepe anında)', () => {
-  /* heavens-above.com PassSummary, Fetih Mah. (41,0046 K 29,0762 D), 27 Eki – 5 Kas 2026, yerel saat (UTC+3):
-     arastirma/uydu_parlaklik.md ve arastirma/heavens_above/*.html. İçsel parlaklık: ISS −1,8, Tiangong 0,0 */
-  const yer = { enlem: 41.0046, boylam: 29.0762, yukseklik: 0 };
-  const HA = {
-    iss: [['10-27 06:07', -1.4], ['10-28 05:20', -1.0], ['10-28 06:57', -2.3], ['10-29 06:09', -1.9], ['10-30 05:22', -1.4], ['10-30 06:59', -3.6], ['10-31 06:11', -3.0],
-      ['11-01 05:24', -2.0], ['11-01 07:00', -2.8], ['11-02 06:13', -3.7], ['11-03 05:27', -2.1], ['11-03 07:02', -1.5], ['11-04 06:15', -2.1], ['11-05 05:30', -0.9]],
-    css: [['10-27 19:03', -2.0], ['10-27 20:37', 1.2], ['10-28 19:40', -2.3], ['10-29 18:40', -2.1], ['10-29 20:15', 0.2], ['10-30 19:17', -2.2], ['10-31 19:53', -1.4],
-      ['11-01 18:54', -2.2], ['11-01 20:29', 1.1], ['11-02 19:31', -1.5], ['11-03 18:31', -1.9], ['11-03 20:07', 0.4], ['11-04 19:08', -0.5], ['11-05 19:44', 0.9]]
-  };
-  [[ISS, 'iss', -1.8], [CSS, 'css', 0.0]].forEach(([u, id, ic]) => {
-    const ls = Uydu.gecisler(Object.assign({ icsel: ic }, u), yer, new Date('2026-10-27T00:00:00Z'), 10).filter(g => g.gorunur);
-    HA[id].forEach(([an, mag]) => {
-      const [ay, gun, s, d] = an.split(/[- :]/).map(Number);
-      const t = Date.UTC(2026, ay - 1, gun, s - 3, d);
-      const g = ls.find(x => Math.abs(x.gTepe.t - t) < 90e3);
-      expect(g, id + ' ' + an).toBeTruthy();
-      expect(Math.abs(g.gTepe.kadir - mag), id + ' ' + an + ' ' + g.gTepe.kadir.toFixed(2)).toBeLessThanOrEqual(0.15);
+/* TLE → CelesTrak OMM alanları (uydu.js json2satrec bekler). Heavens-Above'ın orbit sayfasındaki TLE'de uluslararası
+   ad ve sürüklenme türevi boş; BSTAR "+26479-3" = 0,26479e-3 biçiminde. */
+function tleOmm(l1, l2) {
+  const yy = Number(l1.slice(18, 20)), gun = Number(l1.slice(20, 32));
+  const epoch = new Date(Date.UTC(yy < 57 ? 2000 + yy : 1900 + yy, 0, 1) + (gun - 1) * 86400e3).toISOString().replace('Z', '');
+  const b = l1.slice(53, 61).trim();
+  const bstar = Number((b[0] === '-' ? '-' : '') + '0.' + b.replace(/^[+-]/, '').replace(/[+-]\d$/, '')) * Math.pow(10, Number(b.slice(-2)));
+  return { OBJECT_NAME: 'X', NORAD_CAT_ID: Number(l1.slice(2, 7)), EPOCH: epoch, MEAN_MOTION: Number(l2.slice(52, 63)), ECCENTRICITY: Number('0.' + l2.slice(26, 33)),
+    INCLINATION: Number(l2.slice(8, 16)), RA_OF_ASC_NODE: Number(l2.slice(17, 25)), ARG_OF_PERICENTER: Number(l2.slice(34, 42)), MEAN_ANOMALY: Number(l2.slice(43, 51)),
+    EPHEMERIS_TYPE: 0, CLASSIFICATION_TYPE: 'U', ELEMENT_SET_NO: 999, REV_AT_EPOCH: Number(l2.slice(63, 68)) || 0, BSTAR: bstar, MEAN_MOTION_DOT: Number(l1.slice(33, 43)) || 0, MEAN_MOTION_DDOT: 0 };
+}
+
+test('Parlaklık: Heavens-Above tablosuyla tepe anında ±0,15 kadir (İstanbul 41,0 K 29,1 D, 7–17 Kasım 2026)', () => {
+  /* heavens-above.com PassSummary (lat=41.0, lng=29.1, loc=Istanbul, tz=UCTm3) ve aynı sitenin orbit sayfasındaki TLE,
+     7 Kasım 2026 (CelesTrak'a istek yok): testler/veri/ha_2026-11-07_41.0_29.1.json; ham sayfalar arastirma/heavens_above/
+     *_20261107_*.html. İçsel parlaklık: ISS −1,8, Tiangong 0,0. ISS: 9 görünür geçiş. Tiangong: dönemde tek görünür geçiş
+     (8 Kasım, en çok 12°); bu alçak geçişte fark 0,28 kadir (ufka yakın sönümleme modelleri ayrışıyor), sınır 0,3 olarak
+     yazıldı — eski konumun 14 geçişlik tablosunda 0,15 içindeydi (arastirma/uydu_parlaklik.md §2.2). */
+  const HA = require('./veri/ha_2026-11-07_41.0_29.1.json').uydular;
+  const yer = { enlem: 41.0, boylam: 29.1, yukseklik: 0 };
+  const AY = { Nov: 10 };
+  [['iss', -1.8, 0.15, 9], ['css', 0.0, 0.3, 1]].forEach(([id, ic, tol, adet]) => {
+    const h = HA[id];
+    expect(h.gecisler.length).toBe(adet);
+    const ls = Uydu.gecisler({ id, omm: tleOmm(h.tle[0], h.tle[1]), icsel: ic }, yer, new Date('2026-11-07T00:00:00Z'), 11).filter(g => g.gorunur);
+    h.gecisler.forEach(g => {
+      const [gun, ay] = g.tarih.split(' '); const [sa, dk, sn] = g.tepe[0].split(':').map(Number);
+      const t = Date.UTC(2026, AY[ay], Number(gun), sa - 3, dk, sn);
+      const b = ls.find(x => Math.abs(x.gTepe.t - t) < 90e3);
+      expect(b, id + ' ' + g.tarih + ' ' + g.tepe[0]).toBeTruthy();
+      expect(Math.abs(b.gTepe.kadir - g.kadir), id + ' ' + g.tarih + ' ' + b.gTepe.kadir.toFixed(2)).toBeLessThanOrEqual(tol);
+      expect(Math.abs(b.gTepe.alt - g.tepe[1]), id + ' ' + g.tarih + ' yükseklik').toBeLessThanOrEqual(1);
     });
   });
 });

@@ -46,7 +46,8 @@ test('Gökyüzü bölümleri ilk açılışta kapalı, başlıkta özet; açıl�
   await page.goto('/index.html#gok');
   await expect(page.locator('#gkOzet_gezegen')).toContainText('Satürn');
   await expect(page.locator('#gkOzet_meteor')).toContainText('etkin:');
-  await expect(page.locator('#gkOzet_olay')).toContainText('sıradaki: Algol en sönük · 7 Kasım');
+  /* v42: kavuşumlar da olay listesinde; 1–2 Kasım 2026 gecesi sıradaki olay Ay–Mars kavuşumu (gok.js kavusumlar: en yakın an 2 Kas 13:39 UT, buradan en iyi görüş 2 Kas 06:59 TSİ) */
+  await expect(page.locator('#gkOzet_olay')).toContainText('sıradaki: Ay ile Mars kavuşumu · 2 Kasım');
   await expect(page.locator('#gkGezegen')).toBeHidden();
   await expect(page.locator('#gkPlan')).toBeVisible();   // plan hep açık
   const s = page.locator('details[data-kat="gezegen"] > summary');

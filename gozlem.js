@@ -142,7 +142,7 @@
             <p class="soluk kucuk">Bu yerin ışık kirliliğine göre bir kez ayarla; harita, plan ve listeler hemen değişir.</p>
           </div>
           <div class="cip-grup" style="justify-content:space-between">
-            <button type="button" class="dugme" id="gkKSifirla">Varsayılana dön (Fetih Mah.)</button>
+            <button type="button" class="dugme" id="gkKSifirla">Varsayılana dön (İstanbul)</button>
             <span class="cip-grup"><button type="button" class="dugme" id="gkKVazgec">Vazgeç</button><button value="kaydet" class="dugme dolu" id="gkKKaydet">Kaydet</button></span>
           </div>
         </form>
@@ -208,8 +208,9 @@
       }, 0);
       setTimeout(() => {
         if (sira !== geceSira) return;
-        durum.olaylar = G.olaylar(baz, gzl, 120);
+        durum.olaylar = G.olaylar(baz, gzl, 120, { hedefler: durum.veri.hedefler, yildizlar: durum.veri.yildizlar });
         olayYaz();
+        planYaz();   // kavuşumlar plana da düşer
       }, 0);
     }, 0);
   }
@@ -514,15 +515,37 @@
     }
     return `<button type="button" class="bag takvim-bag" data-takvim="${takvimNo}">Takvime ekle</button>`;
   }
-  /* Yaklaşan olaylar: gök olayları (evreler, karşı konum, uzanım, gündönümü, Mira) + Algol'ün sıradaki iki görülebilir
-     minimumu + buradan dürbünle izlenebilecek Ay örtmeleri, tek listede zamana göre. Algol ve örtmeler eskiden ayrı
-     bölümlerdi; ikisi de seyrek ve plana zaten düşüyor, ayrı başlık sayfayı uzatıyordu. */
+  /* Kavuşum satırının metni: tamamı hesaptan (gok.js kavusumlar), sabit sayı yok. Ekranda ve takvim açıklamasında
+     aynı metin; sesli okuma planda (planYaz). */
+  function kavusumMetni(o) {
+    const g = o.gorus, e = o.enYakin;
+    const yer = `${U.derece(g.alt)} yükseklikte, ${YON_DE[G.yon(g.az)]}`;
+    const sigar = g.ayrim <= G.DURBUN_ALANI ? ' 7×50 dürbünün alanına birlikte sığarlar.' : '';
+    if (g.canli) return `En yakın anı buradan görülür: ${U.ek(U.saat(g.zaman), 'de')} aralarında ${U.sayi(g.ayrim, 1)}°, ${yer}.${sigar}`;
+    return `En yakın an ${U.gunHafta(e.zaman)} ${U.saat(e.zaman)} (aralarında ${U.sayi(e.ayrim, 1)}°; o anda buradan ufkun altında ya da gündüz). ` +
+      `Buradan en iyi ${U.gunHafta(g.zaman)} ${U.ek(U.saat(g.zaman), 'de')}: aralarında ${U.sayi(g.ayrim, 1)}°, ${yer}.${sigar}`;
+  }
+  function kavusumSatir(o) {
+    const metin = kavusumMetni(o);
+    /* "çok yakın": en küçük ayrım 1° ve altı (gok.js). Görüş anında ayrım daha büyükse rozet bunu söyler. */
+    const rozet = o.cokYakin ? ` <span class="rozet iyi">${o.gorus.ayrim <= G.KAVUSUM_COK_YAKIN ? 'çok yakın' : 'en yakın anda çok yakın'}</span>` : '';
+    return `<li class="olay-kavusum"><span class="ad">${U.kacis(o.baslik)}${rozet}</span><span class="sag">${U.gun(o.zaman)}</span><span class="alt">${U.kacis(metin)}<br>${U.gunHafta(o.zaman)}, ${U.saat(o.zaman)} · ${takvimBag({ baslik: o.baslik + (o.cokYakin ? ' (çok yakın)' : ''), bas: new Date(o.zaman.getTime() - 15 * 60e3), son: new Date(o.zaman.getTime() + 30 * 60e3), aciklama: metin + ' (Urania, ' + U.konum().ad + ')' })}</span></li>`;
+  }
+  /* Yaklaşan olaylar: gök olayları (evreler, karşı konum, uzanım, gündönümü, Mira, kavuşumlar) + Algol'ün sıradaki iki
+     görülebilir minimumu + buradan dürbünle izlenebilecek Ay örtmeleri, tek listede zamana göre. Algol ve örtmeler eskiden
+     ayrı bölümlerdi; ikisi de seyrek ve plana zaten düşüyor, ayrı başlık sayfayı uzatıyordu.
+     Ay'ın gezegeni örtmesi listedeyse aynı Ay–gezegen yaklaşması kavuşum olarak ikinci kez yazılmaz. */
+  /* Liste ufku: kavuşumlar dışındaki ilk 12 gök olayının sonuncusuna kadar (eskiden olduğu gibi); kavuşumlar, Algol ve
+     örtmeler bu ufka kadar eklenir (kavuşumlar sık olduğu için satır sayısına dahil edilmez; ufuk kısalmaz). */
+  const OLAY_SATIR = 12;
   function olayYaz() {
     const ul = el && el.querySelector('#gkOlay'); if (!ul) return;
     if (!durum.olaylar) { ul.innerHTML = '<li><span class="bos">Hesaplanıyor…</span></li>'; return; }
-    const satirlar = durum.olaylar.slice(0, 12).map(o => ({ zaman: o.zaman, html: `<li${o.gorunur === false ? ' class="sonuk"' : ''}><span class="ad">${U.kacis(o.baslik)}</span><span class="sag">${U.gun(o.zaman)}</span><span class="alt">${o.not ? U.kacis(o.not) + '<br>' : ''}${U.gunHafta(o.zaman)}, ${U.saat(o.zaman)} · ${takvimBag({ baslik: o.baslik, bas: o.zaman, aciklama: (o.not || '') + ' (Urania, ' + U.konum().ad + ')' })}</span></li>` }));
-    const son = satirlar.length ? satirlar[satirlar.length - 1].zaman : null;
-    const ek = algolSatirlar().concat(ortmeSatirlar()).filter(x => !son || durum.olaylar.length <= 12 || x.zaman <= son);
+    const olaylar = durum.olaylar.filter(o => o.tur !== 'kavusum' || !G.kavusumOrtmeyleAyni(o, durum.ortmeler));
+    const temel = olaylar.filter(o => o.tur !== 'kavusum');
+    const son = temel.length > OLAY_SATIR ? temel[OLAY_SATIR - 1].zaman : null;
+    const satirlar = olaylar.filter(o => !son || o.zaman <= son).map(o => ({ zaman: o.zaman, html: o.tur === 'kavusum' ? kavusumSatir(o) : `<li${o.gorunur === false ? ' class="sonuk"' : ''}><span class="ad">${U.kacis(o.baslik)}</span><span class="sag">${U.gun(o.zaman)}</span><span class="alt">${o.not ? U.kacis(o.not) + '<br>' : ''}${U.gunHafta(o.zaman)}, ${U.saat(o.zaman)} · ${takvimBag({ baslik: o.baslik, bas: o.zaman, aciklama: (o.not || '') + ' (Urania, ' + U.konum().ad + ')' })}</span></li>` }));
+    const ek = algolSatirlar().concat(ortmeSatirlar()).filter(x => !son || x.zaman <= son);
     ul.innerHTML = satirlar.concat(ek).sort((a, b) => a.zaman - b.zaman).map(x => x.html).join('');
   }
 
@@ -750,6 +773,7 @@
     const ol = el && el.querySelector('#gkPlan'); if (!ol || !durum.gece) return;
     const p = Plan.olustur({ gzl: durum.gzl, gece: durum.gece, hedefDurum: durum.hedefDurum, gezegenGece: durum.gezegenGece, ay: durum.ayGece,
       limitKadir: durum.limitKadir, hava: durum.havaSaatler, uyduGecisleri: durum.uyduGecisleri, algol: durum.algolGece, ortmeler: durum.ortmeler, meteorDurum: durum.meteorDurum,
+      kavusumlar: durum.olaylar ? durum.olaylar.filter(o => o.tur === 'kavusum') : null,
       simdi: durum.gun ? null : new Date(Math.floor(Date.now() / 300e3) * 300e3) });
     durum.plan = p;
     const dugme = el.querySelector('#gkPlanDugme');
@@ -786,11 +810,16 @@
       } else if (m.tur === 'meteor') {
         ne = `Radyant en yüksekte; geniş bir gök alanına çıplak gözle bak.`;
         ek = defterBag(m.anahtar, m.zaman);
+      } else if (m.tur === 'kavusum') {
+        const k = m.kavusum, g = k.gorus;
+        ne = `Aralarında ${U.sayi(g.ayrim, 1)}°${k.cokYakin && g.ayrim <= G.KAVUSUM_COK_YAKIN ? ' (çok yakın)' : ''}` + (g.ayrim <= G.DURBUN_ALANI ? '; 7×50 dürbünün alanına birlikte sığarlar.' : '.') + (g.canli ? '' : ` En yakın an ${U.saat(k.enYakin.zaman)} (${U.sayi(k.enYakin.ayrim, 1)}°), o anda buradan görülmez.`);
       }
       const bulut = m.bulut != null ? `<span class="rozet${m.bulut >= 70 ? ' uyari' : (m.bulut < 30 ? ' iyi' : '')}">bulut %${Math.round(m.bulut)}</span>` : '';
       const bilgi = [m.tur === 'uydu' ? '' : yon, ne].filter(Boolean).join(' · ');
       /* Sesli okuma metni (ham veriden; ekrandaki kaçışlı metinden değil) */
-      const neDuz = m.tur === 'hedef' ? `${m.hedef.turAd}, ${tdAd(m.hedef.takimyildiz)} takımyıldızında.` : ne;
+      const neDuz = m.tur === 'hedef' ? `${m.hedef.turAd}, ${tdAd(m.hedef.takimyildiz)} takımyıldızında.`
+        : m.tur === 'kavusum' ? `${m.kavusum.adlar[0]} ile ${m.kavusum.adlar[1]} arasında ${U.sayi(m.kavusum.gorus.ayrim, 1)} derece${m.kavusum.cokYakin && m.kavusum.gorus.ayrim <= G.KAVUSUM_COK_YAKIN ? ', çok yakın' : ''}.` + (m.kavusum.gorus.ayrim <= G.DURBUN_ALANI ? ' Dürbünün alanına birlikte sığarlar.' : '')
+        : ne;
       const yer = m.tur === 'uydu' ? '' : `${Math.round(m.alt)} derece yükseklikte, ${YON_DE[G.yon(m.az)]}.`;
       const ses = cumleBirlestir([`Saat ${U.saat(m.zaman)}`, m.ad, yer, neDuz, m.bulut != null ? `Bulut yüzde ${Math.round(m.bulut)}` : '']);
       return `<li class="plan-${m.tur} okunur" data-ses="${U.kacis(ses)}"><span class="saat">${U.saat(m.zaman)}</span><span class="ad">${U.kacis(m.ad)}${bulut}</span><span class="alt">${bilgi}${ek}</span></li>`;

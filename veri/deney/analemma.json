@@ -52,7 +52,7 @@
     ]
   },
   "veri": {
-    "istanbul": { "ad": "Fetih Mahallesi, Ataşehir", "enlem": 41.0, "boylam": 29.08, "not": "Urania'nın varsayılan konumu (uygulama.js VARSAYILAN_KONUM: 41,0046° K, 29,0762° D), iki basamağa yuvarlandı" },
+    "istanbul": { "ad": "İstanbul", "enlem": 41.0, "boylam": 29.08, "not": "İstanbul Anadolu yakası, ilçe düzeyi (iki basamak); bu deneyin USNO kaynakları bu koordinatla alındı. Uygulamanın varsayılan konumu 7 Kasım 2026'dan beri 41,0° K, 29,1° D (uygulama.js VARSAYILAN_KONUM)" },
     "saatDilimi": { "utc_fark": 3, "meridyen_derece": 45, "not": "UTC+3 = 3 × 15° = 45° doğu boylamının ortalama güneş zamanı; Türkiye 8 Eylül 2016'dan beri kalıcı UTC+3",
       "kaynaklar": [{ "ad": "Wikipedia: Time in Turkey", "url": "https://en.wikipedia.org/wiki/Time_in_Turkey" }] },
     "onAyarlar": [

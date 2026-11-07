@@ -444,8 +444,159 @@
     return Object.assign({ son, sonraki, faz, parlak, ad: 'Mira' }, MIRA);
   }
 
+  /* ---- Kavuşumlar: iki cismin gökte yakın görünmesi ----
+     Terim: TÜBA Türkçe Bilim Terimleri Sözlüğü, "kavuşum" (astronomi): "Bir gözlem noktasına göre iki gökcisminin gökküre
+     üzerindeki görüntülerinin birbirine en fazla yaklaştığı andaki konumları" (terim.tuba.gov.tr, 7 Kasım 2026); TDK Güncel
+     Türkçe Sözlük "kavuşum" (gök bilimi). Ayrıntı: arastirma/kavusum_kaynak.md.
+     Çiftler: Ay ile beş çıplak göz gezegeni; bu gezegenlerin kendi aralarında; bir gezegenle Ülker (M45), Arıkovanı (M44)
+     ya da 1,5 kadirden parlak bir yıldız (veri/hedefler.json, veri/yildizlar.json).
+     Ölçüt: yer merkezli görünen ayrımın (GeoVector: ışık süresi ve aberasyon düzeltmeli, AngleBetween) en küçük olduğu an;
+     eşik 7×50 dürbünün görüş alanı DURBUN_ALANI (bulucu.js aynı değeri kullanır); 1° ve altı "çok yakın".
+     Arama: önce kaba tarama (Ay'lı çiftlerde 1 saat, ötekilerde 6 saat), sonra yerel en küçüğün çevresinde A.Search ile
+     ayrımın değişim hızının eksiden artıya geçtiği an (1 sn hassasiyet). JPL Horizons ile karşılaştırıldı: testler/kavusum.spec.js. */
+  /* 7×50 dürbünün gerçek görüş alanı (derece): üretici belgelerinde 6,4–6,97° (Nikon Action EX 7×50 CF 6,4°; Celestron
+     Cometron 7×50 6,6°; Bresser 7×50 Travel 6,97° — adresler bulucu.js'teki notta, 28.10.2026). Temkinli olarak en küçüğü:
+     bulucu dairesi gerçek alandan büyük çizilmez, kavuşumda iki cisim bu alana birlikte sığar. Tek kaynak burası;
+     bulucu.js aynı değeri buradan alır. */
+  const DURBUN_ALANI = 6.4;
+  const KAVUSUM_GEZEGENLERI = ['Mercury', 'Venus', 'Mars', 'Jupiter', 'Saturn'];
+  const KAVUSUM_COK_YAKIN = 1;
+  const KAVUSUM_EN_PARLAK = 1.5;      // kadir; bu değer ve altı
+  const KAVUSUM_KUMELER = ['M45', 'M44'];
+  /* Sabit hedefler: {id, ad, ra, dec, kadir} (J2000 derece). veri: { hedefler: hedefler.json'daki dizi, yildizlar: yildizlar.json } */
+  function kavusumSabitleri(veri) {
+    const ls = [];
+    if (!veri) return ls;
+    (veri.hedefler || []).forEach(h => { if (KAVUSUM_KUMELER.indexOf(h.id) >= 0) ls.push({ id: 'hedef:' + h.id, ad: h.ad, kisa: h.kisa || h.id, ra: h.ra, dec: h.dec, kadir: h.kadir }); });
+    if (veri.yildizlar && veri.yildizlar.y) {
+      veri.yildizlar.y.forEach((y, i) => {
+        if (y[2] <= KAVUSUM_EN_PARLAK) ls.push({ id: 'yildiz:' + i, ad: (veri.yildizlar.adlar && veri.yildizlar.adlar[String(i)]) || ('Yıldız ' + i), ra: y[0], dec: y[1], kadir: y[2] });
+      });
+    }
+    return ls;
+  }
+  function kavusumAdi(c) { return typeof c === 'string' ? TR_AD[c] : c.ad; }
+  /* Yer merkezli görünen yön (EQJ birim yönü değil, AU cinsinden vektör; AngleBetween yönü kullanır).
+     Sabit hedef için Astronomy Engine'in kullanıcı yıldızı (DefineStar: ışık süresi, aberasyon; 1000 ıy varsayılan uzaklık). */
+  function kavusumVektor(c, t) {
+    if (typeof c === 'string') return A.GeoVector(c, t, true);
+    A.DefineStar('Star1', c.ra / 15, c.dec, 1000);
+    return A.GeoVector('Star1', t, true);
+  }
+  function kavusumAyrim(a, b, t) { return A.AngleBetween(kavusumVektor(a, t), kavusumVektor(b, t)); }
+  function kavusumAltAz(c, t, gzl) {
+    if (typeof c === 'string') { const h = cisimAltAz(c, t, gzl); return { alt: h.alt, az: h.az }; }
+    return sabitAltAz(c.ra, c.dec, t, gzl);
+  }
+  /* Buradan en iyi görüş anı: en yakın anın ±1 günü içinde, 5 dakika adımla, iki cisim de ≥10° yükseklikte ve Güneş ≤ −6°.
+     Geçerli anlar kesintisiz pencerelere ayrılır; en yakın ana en yakın pencere seçilir (an pencerenin içindeyse o pencere).
+     Pencere içinde Ay'lı çiftte ayrımın en küçük olduğu an (Ay saatte ~0,5° ilerler), öteki çiftlerde ikisinin de en yüksek
+     olduğu an (alçak olanın yüksekliği en büyük; gezegenlerin ayrımı bir gecede ancak birkaç dakika yay değişir); pencerede
+     Güneş'in −12°'nin altında olduğu anlar varsa seçim onlar arasından yapılır (alacakaranlık kenarına takılmasın).
+     Döndürür: { zaman, ayrim, a: {alt, az}, b: {alt, az}, canli } ya da null (koşullar hiç sağlanmıyorsa). */
+  function kavusumGorus(a, b, enYakin, gzl, secenek) {
+    const sec = Object.assign({ minYuk: 10, gunesSinir: -6, adimDk: 5, yarimGun: 1 }, secenek || {});
+    const ADIM = sec.adimDk * 60e3;
+    const ayli = a === 'Moon' || b === 'Moon';
+    const bas = enYakin.getTime() - sec.yarimGun * 86400e3, son = enYakin.getTime() + sec.yarimGun * 86400e3;
+    const pencereler = []; let p = null;
+    for (let ms = bas; ms <= son; ms += ADIM) {
+      const t = new Date(ms);
+      let ka = null, kb = null;
+      const gunes = cisimAltAz('Sun', t, gzl).alt;
+      let ok = gunes <= sec.gunesSinir;
+      if (ok) { ka = kavusumAltAz(a, t, gzl); ok = ka.alt >= sec.minYuk; }
+      if (ok) { kb = kavusumAltAz(b, t, gzl); ok = kb.alt >= sec.minYuk; }
+      if (!ok) continue;
+      const an = { t, ka, kb, gunes };
+      if (p && ms - p.son <= ADIM) { p.anlar.push(an); p.son = ms; } else { p = { bas: ms, son: ms, anlar: [an] }; pencereler.push(p); }
+    }
+    if (!pencereler.length) return null;
+    const uzak = w => (enYakin >= w.bas && enYakin <= w.son) ? 0 : Math.min(Math.abs(enYakin - w.bas), Math.abs(enYakin - w.son));
+    pencereler.sort((x, y) => uzak(x) - uzak(y));
+    const w = pencereler[0];
+    let sec2;
+    if (ayli) sec2 = w.anlar.map(x => Object.assign({ ayrim: kavusumAyrim(a, b, x.t) }, x)).sort((x, y) => x.ayrim - y.ayrim)[0];
+    else {
+      const karanlik = w.anlar.filter(x => x.gunes <= -12);
+      sec2 = (karanlik.length ? karanlik : w.anlar).slice().sort((x, y) => Math.min(y.ka.alt, y.kb.alt) - Math.min(x.ka.alt, x.kb.alt))[0];
+      sec2.ayrim = kavusumAyrim(a, b, sec2.t);
+    }
+    return { zaman: sec2.t, ayrim: sec2.ayrim, a: sec2.ka, b: sec2.kb, canli: uzak(w) === 0 };
+  }
+  /* Ortalama azimut (çember üzerinde) */
+  function azOrta(a, b) { const d = ((b - a + 540) % 360) - 180; return ((a + d / 2) % 360 + 360) % 360; }
+  /* Tüm kavuşumlar: zaman'dan gunSayisi gün ileriye. gzl verilirse her olaya buradan görüş (gorus) eklenir.
+     Döndürülen olay: { tur: 'kavusum', cisimler: [a, b], adlar, ayli, gezegen (Ay'lı çiftte), enYakin: {zaman, ayrim},
+       cokYakin, gorus, gorunur, zaman (görüş anı; yoksa en yakın an), baslik } */
+  function kavusumlar(zaman, gunSayisi, veri, gzl, secenek) {
+    const sec = Object.assign({ esik: DURBUN_ALANI }, secenek || {});
+    const t0 = A.MakeTime(zaman);
+    const gun = gunSayisi || 120;
+    const sabit = kavusumSabitleri(veri);
+    const ciftler = [];
+    KAVUSUM_GEZEGENLERI.forEach(p => ciftler.push(['Moon', p]));
+    for (let i = 0; i < KAVUSUM_GEZEGENLERI.length; i++) for (let j = i + 1; j < KAVUSUM_GEZEGENLERI.length; j++) ciftler.push([KAVUSUM_GEZEGENLERI[i], KAVUSUM_GEZEGENLERI[j]]);
+    KAVUSUM_GEZEGENLERI.forEach(p => sabit.forEach(s => ciftler.push([p, s])));
+    /* Kaba tarama: saatlik yer merkezli vektörler bir kez hesaplanır; sabit hedefler için J2000 yönü yeter
+       (aberasyon ≤ 20″, ince aramada hesaba katılır) */
+    const nSa = gun * 24;
+    const vek = {};
+    ['Moon'].concat(KAVUSUM_GEZEGENLERI).forEach(c => { vek[c] = new Array(nSa + 1); });
+    for (let h = 0; h <= nSa; h++) {
+      const t = t0.AddDays(h / 24);
+      vek.Moon[h] = A.GeoVector('Moon', t, true);
+      KAVUSUM_GEZEGENLERI.forEach(c => { vek[c][h] = A.GeoVector(c, t, true); });
+    }
+    const sabitV = {};
+    sabit.forEach(s => { sabitV[s.id] = A.VectorFromSphere(new A.Spherical(s.dec, s.ra, 1), t0); });
+    const v = (c, h) => typeof c === 'string' ? vek[c][h] : sabitV[c.id];
+    const sonuc = [];
+    ciftler.forEach(c => {
+      const ayli = c[0] === 'Moon' || c[1] === 'Moon';
+      const adimSa = ayli ? 1 : 6;
+      let s0 = null, s1 = null, h1 = -1;   // s0: iki önceki, s1: önceki örnek
+      for (let h = 0; h <= nSa; h += adimSa) {
+        const s = A.AngleBetween(v(c[0], h), v(c[1], h));
+        if (s1 != null && s0 != null && s1 <= s0 && s1 <= s && s1 < sec.esik + 1) {
+          /* Yerel en küçük h1'de: [h1 − adım, h1 + adım] aralığında ayrımın türevi eksiden artıya geçer */
+          const t1 = t0.AddDays((h1 - adimSa) / 24), t2 = t0.AddDays((h1 + adimSa) / 24);
+          const d = (ayli ? 1 : 10) / 1440;
+          const g = t => kavusumAyrim(c[0], c[1], t.AddDays(d)) - kavusumAyrim(c[0], c[1], t.AddDays(-d));
+          let tm = null;
+          try { if (g(t1) < 0 && g(t2) > 0) tm = A.Search(g, t1, t2, { dt_tolerance_seconds: 1 }); } catch (hata) { tm = null; }
+          const kaba = !tm;
+          if (!tm) tm = t0.AddDays(h1 / 24);
+          const ayrim = kavusumAyrim(c[0], c[1], tm);
+          if (ayrim <= sec.esik) {
+            const enYakin = { zaman: tm.date, ayrim, kaba };
+            const o = { tur: 'kavusum', cisimler: c, adlar: [kavusumAdi(c[0]), kavusumAdi(c[1])], ayli,
+              gezegen: ayli ? (c[0] === 'Moon' ? c[1] : c[0]) : null, enYakin, cokYakin: ayrim <= KAVUSUM_COK_YAKIN, gorus: null, gorunur: null };
+            o.baslik = o.adlar[0] + ' ile ' + o.adlar[1] + ' kavuşumu';
+            if (gzl) {
+              const gr = kavusumGorus(c[0], c[1], tm.date, gzl, sec);
+              /* Görüş anındaki ayrım dürbün alanını aşıyorsa olay buradan "yakın görünmüyor" demektir */
+              o.gorus = gr && gr.ayrim <= sec.esik ? Object.assign(gr, { alt: Math.min(gr.a.alt, gr.b.alt), az: azOrta(gr.a.az, gr.b.az) }) : null;
+              o.gorunur = !!o.gorus;
+            }
+            o.zaman = o.gorus ? o.gorus.zaman : enYakin.zaman;
+            sonuc.push(o);
+          }
+        }
+        s0 = s1; s1 = s; h1 = h;
+      }
+    });
+    return sonuc.sort((x, y) => x.enYakin.zaman - y.enYakin.zaman);
+  }
+  /* Aynı olay iki kez listelenmesin: Ay'ın gezegeni örtmesi (ortme.js) zaten listedeyse Ay–gezegen kavuşumu düşer.
+     ortmeler: gozlem.js'nin buradan görünür saydığı örtmeler ({hedef: {gezegen}, giris, cikis}). */
+  function kavusumOrtmeyleAyni(k, ortmeler) {
+    if (!k.ayli || !ortmeler || !ortmeler.length) return false;
+    return ortmeler.some(o => o.hedef && o.hedef.gezegen === k.gezegen && Math.abs((o.giris || o.cikis) - k.enYakin.zaman) < 12 * 3600e3);
+  }
+
   /* ---- Yaklaşan olaylar ---- */
-  function olaylar(zaman, gzl, gunSayisi) {
+  function olaylar(zaman, gzl, gunSayisi, veri) {
     const son = new Date(zaman.getTime() + (gunSayisi || 120) * 86400e3);
     const ls = [];
     ayCeyrekleri(zaman, Math.ceil((gunSayisi || 120) / 7.38) + 2).forEach(q => {
@@ -499,6 +650,8 @@
       const t = karsiKonum(c, tarih(A.SearchRelativeLongitude(c, 0, zaman)));
       if (t) ls.push({ tur: 'gezegen', zaman: t, baslik: TR_AD[c] + ' karşı konumda', not: 'Bütün gece görünür, yılın en parlak ve en yakın hâli.' });
     });
+    /* Kavuşumlar: yalnız buradan görülebilenler (görüş anı listede; en yakın an olayın içinde) */
+    kavusumlar(zaman, gunSayisi || 120, veri, gzl).forEach(k => { if (k.gorunur) ls.push(k); });
     return ls.filter(o => o.zaman && o.zaman >= zaman && o.zaman <= son).sort((a, b) => a.zaman - b.zaman);
   }
 
@@ -531,10 +684,11 @@
   }
 
   const Gok = {
-    A, DER, GEZEGENLER, TR_AD, YON_UZUN,
+    A, DER, GEZEGENLER, TR_AD, YON_UZUN, DURBUN_ALANI, KAVUSUM_GEZEGENLERI, KAVUSUM_COK_YAKIN,
     gozlemci, yon, ufukMatrisi, birimVektor, ufkaCevir, sabitAltAz, cisimAltAz, takimyildiz,
     yerelOgle, geceAraligi, ayDurumu, ayCeyrekleri, evreAdi, enYuksek, ornekler, enYuksekSabit, gezegenlerBuGece, hedeflerBuGece,
-    meteorDurumu, meteorTakvimi, miraDurumu, gunesBoylamJ2000, aktifMi, olaylar, gezegenKadir, jupiterUydulari, jupiterYaricap
+    meteorDurumu, meteorTakvimi, miraDurumu, gunesBoylamJ2000, aktifMi, olaylar, gezegenKadir, jupiterUydulari, jupiterYaricap,
+    kavusumlar, kavusumSabitleri, kavusumAyrim, kavusumGorus, kavusumOrtmeyleAyni, azOrta
   };
   if (typeof module !== 'undefined' && module.exports) module.exports = Gok;
   else kok.Gok = Gok;

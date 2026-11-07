@@ -1,0 +1,2733 @@
+{
+  "endpoint": "/v2/conjunctions",
+  "computed_at": "2026-08-01T00:00:00.000Z",
+  "query": {
+    "start": "2026-11-01T00:00:00.000Z",
+    "end": "2027-11-30T00:00:00.000Z",
+    "mode": "range",
+    "resolved_from": "start",
+    "latitude": null,
+    "longitude": null,
+    "elevation_m": 0,
+    "tz": "UTC",
+    "utc_offset_seconds": 0,
+    "utc_offset_iso": "+00:00",
+    "is_dst": false,
+    "timezone_source": "default",
+    "time_format": "iso",
+    "format": "json",
+    "shape": "nested",
+    "precision": 6,
+    "pretty": 1,
+    "verbosity": "full",
+    "bodies": [
+      "Moon",
+      "Mercury",
+      "Venus",
+      "Mars",
+      "Jupiter",
+      "Saturn"
+    ],
+    "pairs": null,
+    "max_separation_deg": 6.4,
+    "min_elongation_deg": 0,
+    "kind": "all",
+    "frame": "apparent",
+    "step": "6h",
+    "sort": "time",
+    "ignored": []
+  },
+  "data": {
+    "window": {
+      "start": "2026-11-01T00:00:00.000Z",
+      "end": "2027-11-30T00:00:00.000Z",
+      "measured_from": "start",
+      "length_days": 394
+    },
+    "pairs_searched": [
+      {
+        "a": "Moon",
+        "b": "Mercury"
+      },
+      {
+        "a": "Moon",
+        "b": "Venus"
+      },
+      {
+        "a": "Moon",
+        "b": "Mars"
+      },
+      {
+        "a": "Moon",
+        "b": "Jupiter"
+      },
+      {
+        "a": "Moon",
+        "b": "Saturn"
+      },
+      {
+        "a": "Mercury",
+        "b": "Venus"
+      },
+      {
+        "a": "Mercury",
+        "b": "Mars"
+      },
+      {
+        "a": "Mercury",
+        "b": "Jupiter"
+      },
+      {
+        "a": "Mercury",
+        "b": "Saturn"
+      },
+      {
+        "a": "Venus",
+        "b": "Mars"
+      },
+      {
+        "a": "Venus",
+        "b": "Jupiter"
+      },
+      {
+        "a": "Venus",
+        "b": "Saturn"
+      },
+      {
+        "a": "Mars",
+        "b": "Jupiter"
+      },
+      {
+        "a": "Mars",
+        "b": "Saturn"
+      },
+      {
+        "a": "Jupiter",
+        "b": "Saturn"
+      }
+    ],
+    "pair_count": 15,
+    "origin": "geocentric",
+    "frame": "apparent",
+    "approach_count": 66,
+    "filtered_out_count": 0,
+    "scan": {
+      "stride": "6h",
+      "samples_evaluated": 23670,
+      "refinement": "golden section to a one-second bracket",
+      "padded_by": "one stride beyond each end of the window, so an approach at the very edge is still found; minima falling outside the window are discarded",
+      "note": "Two minima closer together than the stride may be reported as one. Reduce step to separate them."
+    },
+    "approaches": [
+      {
+        "kind": "conjunction",
+        "label": "Moon and Mars in conjunction, 0.97 deg apart",
+        "instant": "2026-11-02T13:39:09.242Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 0.965781,
+        "value_unit": "deg",
+        "days_from_query": 1.568857,
+        "pair": {
+          "a": "Moon",
+          "b": "Mars"
+        },
+        "separation_deg": 0.965781,
+        "separation_arcmin": 57.946837,
+        "position_angle_of_b_from_a_deg": 23.544056,
+        "ecliptic_longitude_difference_deg": 0.089033,
+        "ecliptic_latitude_difference_deg": 0.96167,
+        "longitude_conjunction_instant": "2026-11-02T13:48:50.898Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -9.694268,
+        "elongation_from_sun_deg": 80.828173,
+        "elongation_direction": "morning",
+        "observability": "morning_sky",
+        "observability_label": "Morning sky, before dawn",
+        "magnitudes": {
+          "a": -9.8,
+          "b": 0.9
+        },
+        "combined_apparent_note": "At 57.9 arcmin the pair is a close naked-eye pairing and fits in most binoculars.",
+        "sky_separation_deg": 0.965781,
+        "longitude_conjunction_instants": [
+          "2026-11-02T13:48:50.898Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": false,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Jupiter in conjunction, 0.48 deg apart",
+        "instant": "2026-11-02T22:45:54.948Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 0.484156,
+        "value_unit": "deg",
+        "days_from_query": 1.948553,
+        "pair": {
+          "a": "Moon",
+          "b": "Jupiter"
+        },
+        "separation_deg": 0.484156,
+        "separation_arcmin": 29.04937,
+        "position_angle_of_b_from_a_deg": 24.567767,
+        "ecliptic_longitude_difference_deg": 0.04311,
+        "ecliptic_latitude_difference_deg": 0.482233,
+        "longitude_conjunction_instant": "2026-11-02T22:50:30.566Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -4.593637,
+        "elongation_from_sun_deg": 76.014442,
+        "elongation_direction": "morning",
+        "observability": "morning_sky",
+        "observability_label": "Morning sky, before dawn",
+        "magnitudes": {
+          "a": -9.6,
+          "b": -2
+        },
+        "combined_apparent_note": "At 29.0 arcmin the pair fits inside a single low-power telescope field.",
+        "sky_separation_deg": 0.484156,
+        "longitude_conjunction_instants": [
+          "2026-11-02T22:50:30.566Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": false,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Venus in conjunction, 0.95 deg apart",
+        "instant": "2026-11-07T10:42:24.670Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 0.950283,
+        "value_unit": "deg",
+        "days_from_query": 6.446119,
+        "pair": {
+          "a": "Moon",
+          "b": "Venus"
+        },
+        "separation_deg": 0.950283,
+        "separation_arcmin": 57.017,
+        "position_angle_of_b_from_a_deg": 25.735341,
+        "ecliptic_longitude_difference_deg": 0.062627,
+        "ecliptic_latitude_difference_deg": 0.948226,
+        "longitude_conjunction_instant": "2026-11-07T10:49:20.952Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -6.938028,
+        "elongation_from_sun_deg": 21.748065,
+        "elongation_direction": "morning",
+        "observability": "morning_sky",
+        "observability_label": "Morning sky, before dawn",
+        "magnitudes": {
+          "a": -6.1,
+          "b": -4.5
+        },
+        "combined_apparent_note": "At 57.0 arcmin the pair is a close naked-eye pairing and fits in most binoculars.",
+        "sky_separation_deg": 0.950283,
+        "longitude_conjunction_instants": [
+          "2026-11-07T10:49:20.952Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": true,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Mercury in conjunction, 5.65 deg apart",
+        "instant": "2026-11-08T12:32:41.325Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 5.652784,
+        "value_unit": "deg",
+        "days_from_query": 7.522701,
+        "pair": {
+          "a": "Moon",
+          "b": "Mercury"
+        },
+        "separation_deg": 5.652784,
+        "separation_arcmin": 339.167026,
+        "position_angle_of_b_from_a_deg": 22.261886,
+        "ecliptic_longitude_difference_deg": 0.273576,
+        "ecliptic_latitude_difference_deg": 5.646172,
+        "longitude_conjunction_instant": "2026-11-08T13:01:53.058Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -29.195552,
+        "elongation_from_sun_deg": 10.009942,
+        "elongation_direction": "morning",
+        "observability": "glare",
+        "observability_label": "Lost in the Sun's glare",
+        "magnitudes": {
+          "a": -4.9,
+          "b": 2.9
+        },
+        "combined_apparent_note": "At 5.65 deg the pair is a wide pairing, but it sits only 10.0 deg from the Sun and is lost in the glare. Sweeping for it with a telescope or binocular risks putting the Sun in the field, so it is not an observing target.",
+        "sky_separation_deg": 5.652784,
+        "longitude_conjunction_instants": [
+          "2026-11-08T13:01:53.058Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": true,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Mars and Jupiter in conjunction, 1.19 deg apart",
+        "instant": "2026-11-16T02:03:11.596Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 1.193722,
+        "value_unit": "deg",
+        "days_from_query": 15.085551,
+        "pair": {
+          "a": "Mars",
+          "b": "Jupiter"
+        },
+        "separation_deg": 1.193722,
+        "separation_arcmin": 71.623343,
+        "position_angle_of_b_from_a_deg": 196.752654,
+        "ecliptic_longitude_difference_deg": 0.065311,
+        "ecliptic_latitude_difference_deg": -1.191935,
+        "longitude_conjunction_instant": "2026-11-16T06:22:05.105Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -258.891816,
+        "elongation_from_sun_deg": 87.916713,
+        "elongation_direction": "morning",
+        "observability": "morning_sky",
+        "observability_label": "Morning sky, before dawn",
+        "magnitudes": {
+          "a": 0.7,
+          "b": -2.1
+        },
+        "combined_apparent_note": "At 71.6 arcmin the pair is a close naked-eye pairing and fits in most binoculars.",
+        "href": "https://www.cyclecalcs.com/conjunctions/mars-jupiter.html",
+        "sky_separation_deg": 1.193722,
+        "longitude_conjunction_instants": [
+          "2026-11-16T06:22:05.105Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": null,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Saturn in conjunction, 6.06 deg apart",
+        "instant": "2026-11-20T20:03:05.210Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 6.060006,
+        "value_unit": "deg",
+        "days_from_query": 19.835477,
+        "pair": {
+          "a": "Moon",
+          "b": "Saturn"
+        },
+        "separation_deg": 6.060006,
+        "separation_arcmin": 363.600349,
+        "position_angle_of_b_from_a_deg": 152.994834,
+        "ecliptic_longitude_difference_deg": 0.385986,
+        "ecliptic_latitude_difference_deg": -6.047713,
+        "longitude_conjunction_instant": "2026-11-20T20:44:03.603Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -40.973213,
+        "elongation_from_sun_deg": 129.30796,
+        "elongation_direction": "evening",
+        "observability": "evening_sky",
+        "observability_label": "Evening sky, after dusk",
+        "magnitudes": {
+          "a": -11.4,
+          "b": 0.5
+        },
+        "combined_apparent_note": "At 6.06 deg the pair is an obvious naked-eye pairing but too wide for a telescope field.",
+        "sky_separation_deg": 6.060006,
+        "longitude_conjunction_instants": [
+          "2026-11-20T20:44:03.603Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": false,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Jupiter in conjunction, 1.05 deg apart",
+        "instant": "2026-11-30T08:25:05.082Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 1.052359,
+        "value_unit": "deg",
+        "days_from_query": 29.350753,
+        "pair": {
+          "a": "Moon",
+          "b": "Jupiter"
+        },
+        "separation_deg": 1.052359,
+        "separation_arcmin": 63.141524,
+        "position_angle_of_b_from_a_deg": 24.96664,
+        "ecliptic_longitude_difference_deg": 0.093084,
+        "ecliptic_latitude_difference_deg": 1.048234,
+        "longitude_conjunction_instant": "2026-11-30T08:34:47.804Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -9.712028,
+        "elongation_from_sun_deg": 101.464455,
+        "elongation_direction": "morning",
+        "observability": "morning_sky",
+        "observability_label": "Morning sky, before dawn",
+        "magnitudes": {
+          "a": -10.6,
+          "b": -2.2
+        },
+        "combined_apparent_note": "At 63.1 arcmin the pair is a close naked-eye pairing and fits in most binoculars.",
+        "sky_separation_deg": 1.052359,
+        "longitude_conjunction_instants": [
+          "2026-11-30T08:34:47.804Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": false,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Mars in conjunction, 3.00 deg apart",
+        "instant": "2026-11-30T16:55:06.969Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 2.995621,
+        "value_unit": "deg",
+        "days_from_query": 29.704942,
+        "pair": {
+          "a": "Moon",
+          "b": "Mars"
+        },
+        "separation_deg": 2.995621,
+        "separation_arcmin": 179.737275,
+        "position_angle_of_b_from_a_deg": 26.079101,
+        "ecliptic_longitude_difference_deg": 0.274685,
+        "ecliptic_latitude_difference_deg": 2.983006,
+        "longitude_conjunction_instant": "2026-11-30T17:24:46.633Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -29.661069,
+        "elongation_from_sun_deg": 96.942977,
+        "elongation_direction": "morning",
+        "observability": "morning_sky",
+        "observability_label": "Morning sky, before dawn",
+        "magnitudes": {
+          "a": -10.5,
+          "b": 0.5
+        },
+        "combined_apparent_note": "At 3.00 deg the pair is an obvious naked-eye pairing but too wide for a telescope field.",
+        "sky_separation_deg": 2.995621,
+        "longitude_conjunction_instants": [
+          "2026-11-30T17:24:46.633Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": false,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Mercury in conjunction, 5.70 deg apart",
+        "instant": "2026-12-07T19:49:51.240Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 5.700382,
+        "value_unit": "deg",
+        "days_from_query": 36.826288,
+        "pair": {
+          "a": "Moon",
+          "b": "Mercury"
+        },
+        "separation_deg": 5.700382,
+        "separation_arcmin": 342.022941,
+        "position_angle_of_b_from_a_deg": 10.198233,
+        "ecliptic_longitude_difference_deg": -0.157766,
+        "ecliptic_latitude_difference_deg": 5.698204,
+        "longitude_conjunction_instant": "2026-12-07T19:28:23.919Z",
+        "minimum_offset_from_longitude_conjunction_minutes": 21.455352,
+        "elongation_from_sun_deg": 14.210687,
+        "elongation_direction": "morning",
+        "observability": "glare",
+        "observability_label": "Lost in the Sun's glare",
+        "magnitudes": {
+          "a": -5.3,
+          "b": -0.6
+        },
+        "combined_apparent_note": "At 5.70 deg the pair is a wide pairing, but it sits only 14.2 deg from the Sun and is lost in the glare. Sweeping for it with a telescope or binocular risks putting the Sun in the field, so it is not an observing target.",
+        "sky_separation_deg": 5.700382,
+        "longitude_conjunction_instants": [
+          "2026-12-07T19:28:23.919Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": true,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Saturn in conjunction, 6.17 deg apart",
+        "instant": "2026-12-18T04:37:39.626Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 6.171641,
+        "value_unit": "deg",
+        "days_from_query": 47.19282,
+        "pair": {
+          "a": "Moon",
+          "b": "Saturn"
+        },
+        "separation_deg": 6.171641,
+        "separation_arcmin": 370.298481,
+        "position_angle_of_b_from_a_deg": 153.04956,
+        "ecliptic_longitude_difference_deg": 0.384777,
+        "ecliptic_latitude_difference_deg": -6.159648,
+        "longitude_conjunction_instant": "2026-12-18T05:20:00.434Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -42.346792,
+        "elongation_from_sun_deg": 101.308801,
+        "elongation_direction": "evening",
+        "observability": "evening_sky",
+        "observability_label": "Evening sky, after dusk",
+        "magnitudes": {
+          "a": -10.6,
+          "b": 0.7
+        },
+        "combined_apparent_note": "At 6.17 deg the pair is an obvious naked-eye pairing but too wide for a telescope field.",
+        "sky_separation_deg": 6.171641,
+        "longitude_conjunction_instants": [
+          "2026-12-18T05:20:00.434Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": false,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Jupiter in conjunction, 1.38 deg apart",
+        "instant": "2026-12-27T16:26:08.564Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 1.380051,
+        "value_unit": "deg",
+        "days_from_query": 56.684821,
+        "pair": {
+          "a": "Moon",
+          "b": "Jupiter"
+        },
+        "separation_deg": 1.380051,
+        "separation_arcmin": 82.803058,
+        "position_angle_of_b_from_a_deg": 24.987611,
+        "ecliptic_longitude_difference_deg": 0.123551,
+        "ecliptic_latitude_difference_deg": 1.37451,
+        "longitude_conjunction_instant": "2026-12-27T16:38:28.752Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -12.336462,
+        "elongation_from_sun_deg": 129.37021,
+        "elongation_direction": "morning",
+        "observability": "morning_sky",
+        "observability_label": "Morning sky, before dawn",
+        "magnitudes": {
+          "a": -11.5,
+          "b": -2.4
+        },
+        "combined_apparent_note": "At 82.8 arcmin the pair is a close naked-eye pairing and fits in most binoculars.",
+        "sky_separation_deg": 1.380051,
+        "longitude_conjunction_instants": [
+          "2026-12-27T16:38:28.752Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": false,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Mars in conjunction, 4.74 deg apart",
+        "instant": "2026-12-28T13:29:22.436Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 4.736685,
+        "value_unit": "deg",
+        "days_from_query": 57.562065,
+        "pair": {
+          "a": "Moon",
+          "b": "Mars"
+        },
+        "separation_deg": 4.736685,
+        "separation_arcmin": 284.201125,
+        "position_angle_of_b_from_a_deg": 27.073238,
+        "ecliptic_longitude_difference_deg": 0.422608,
+        "ecliptic_latitude_difference_deg": 4.71781,
+        "longitude_conjunction_instant": "2026-12-28T14:13:23.578Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -44.019034,
+        "elongation_from_sun_deg": 117.81472,
+        "elongation_direction": "morning",
+        "observability": "morning_sky",
+        "observability_label": "Morning sky, before dawn",
+        "magnitudes": {
+          "a": -11.2,
+          "b": -0.1
+        },
+        "combined_apparent_note": "At 4.74 deg the pair is an obvious naked-eye pairing but too wide for a telescope field.",
+        "sky_separation_deg": 4.736685,
+        "longitude_conjunction_instants": [
+          "2026-12-28T14:13:23.578Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": false,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Mercury in conjunction, 0.48 deg apart",
+        "instant": "2027-01-08T05:17:29.013Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 0.475726,
+        "value_unit": "deg",
+        "days_from_query": 68.220475,
+        "pair": {
+          "a": "Moon",
+          "b": "Mercury"
+        },
+        "separation_deg": 0.475726,
+        "separation_arcmin": 28.543572,
+        "position_angle_of_b_from_a_deg": 345.305101,
+        "ecliptic_longitude_difference_deg": -0.045011,
+        "ecliptic_latitude_difference_deg": 0.473595,
+        "longitude_conjunction_instant": "2027-01-08T05:11:06.635Z",
+        "minimum_offset_from_longitude_conjunction_minutes": 6.372972,
+        "elongation_from_sun_deg": 4.7301,
+        "elongation_direction": "evening",
+        "observability": "glare",
+        "observability_label": "Lost in the Sun's glare",
+        "magnitudes": {
+          "a": -4.3,
+          "b": -1.2
+        },
+        "combined_apparent_note": "At 28.5 arcmin the pair is close, but it sits only 4.7 deg from the Sun and is lost in the glare. Sweeping for it with a telescope or binocular risks putting the Sun in the field, so it is not an observing target.",
+        "sky_separation_deg": 0.475726,
+        "longitude_conjunction_instants": [
+          "2027-01-08T05:11:06.635Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": true,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Saturn in conjunction, 6.31 deg apart",
+        "instant": "2027-01-14T13:31:20.555Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 6.308525,
+        "value_unit": "deg",
+        "days_from_query": 74.563432,
+        "pair": {
+          "a": "Moon",
+          "b": "Saturn"
+        },
+        "separation_deg": 6.308525,
+        "separation_arcmin": 378.511513,
+        "position_angle_of_b_from_a_deg": 153.138533,
+        "ecliptic_longitude_difference_deg": 0.386842,
+        "ecliptic_latitude_difference_deg": -6.296667,
+        "longitude_conjunction_instant": "2027-01-14T14:15:04.977Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -43.740372,
+        "elongation_from_sun_deg": 74.500499,
+        "elongation_direction": "evening",
+        "observability": "evening_sky",
+        "observability_label": "Evening sky, after dusk",
+        "magnitudes": {
+          "a": -9.5,
+          "b": 0.7
+        },
+        "combined_apparent_note": "At 6.31 deg the pair is an obvious naked-eye pairing but too wide for a telescope field.",
+        "sky_separation_deg": 6.308525,
+        "longitude_conjunction_instants": [
+          "2027-01-14T14:15:04.977Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": false,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Jupiter in conjunction, 1.36 deg apart",
+        "instant": "2027-01-23T23:21:25.667Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 1.355342,
+        "value_unit": "deg",
+        "days_from_query": 83.973214,
+        "pair": {
+          "a": "Moon",
+          "b": "Jupiter"
+        },
+        "separation_deg": 1.355342,
+        "separation_arcmin": 81.320523,
+        "position_angle_of_b_from_a_deg": 24.580936,
+        "ecliptic_longitude_difference_deg": 0.123589,
+        "ecliptic_latitude_difference_deg": 1.349696,
+        "longitude_conjunction_instant": "2027-01-23T23:33:19.247Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -11.892994,
+        "elongation_from_sun_deg": 159.504968,
+        "elongation_direction": "morning",
+        "observability": "most_of_night",
+        "observability_label": "Up most of the night",
+        "magnitudes": {
+          "a": -12.4,
+          "b": -2.5
+        },
+        "combined_apparent_note": "At 81.3 arcmin the pair is a close naked-eye pairing and fits in most binoculars.",
+        "sky_separation_deg": 1.355342,
+        "longitude_conjunction_instants": [
+          "2027-01-23T23:33:19.247Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": false,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Mars in conjunction, 5.75 deg apart",
+        "instant": "2027-01-24T22:49:50.928Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 5.745291,
+        "value_unit": "deg",
+        "days_from_query": 84.951284,
+        "pair": {
+          "a": "Moon",
+          "b": "Mars"
+        },
+        "separation_deg": 5.745291,
+        "separation_arcmin": 344.717468,
+        "position_angle_of_b_from_a_deg": 26.963444,
+        "ecliptic_longitude_difference_deg": 0.50811,
+        "ecliptic_latitude_difference_deg": 5.722808,
+        "longitude_conjunction_instant": "2027-01-24T23:39:45.465Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -49.908956,
+        "elongation_from_sun_deg": 146.119504,
+        "elongation_direction": "morning",
+        "observability": "most_of_night",
+        "observability_label": "Up most of the night",
+        "magnitudes": {
+          "a": -12,
+          "b": -0.7
+        },
+        "combined_apparent_note": "At 5.75 deg the pair is an obvious naked-eye pairing but too wide for a telescope field.",
+        "sky_separation_deg": 5.745291,
+        "longitude_conjunction_instants": [
+          "2027-01-24T23:39:45.465Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": false,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Mercury in conjunction, 0.32 deg apart",
+        "instant": "2027-02-08T03:55:22.373Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 0.318298,
+        "value_unit": "deg",
+        "days_from_query": 99.163453,
+        "pair": {
+          "a": "Moon",
+          "b": "Mercury"
+        },
+        "separation_deg": 0.318298,
+        "separation_arcmin": 19.097863,
+        "position_angle_of_b_from_a_deg": 334.611852,
+        "ecliptic_longitude_difference_deg": -0.021628,
+        "ecliptic_latitude_difference_deg": 0.317563,
+        "longitude_conjunction_instant": "2027-02-08T03:52:45.829Z",
+        "minimum_offset_from_longitude_conjunction_minutes": 2.609075,
+        "elongation_from_sun_deg": 16.693191,
+        "elongation_direction": "evening",
+        "observability": "evening_sky",
+        "observability_label": "Evening sky, after dusk",
+        "magnitudes": {
+          "a": -5.6,
+          "b": 0.2
+        },
+        "combined_apparent_note": "At 19.1 arcmin the pair fits inside a single low-power telescope field.",
+        "sky_separation_deg": 0.318298,
+        "longitude_conjunction_instants": [
+          "2027-02-08T03:52:45.829Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": true,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Saturn in conjunction, 6.40 deg apart",
+        "instant": "2027-02-10T23:14:12.439Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 6.396104,
+        "value_unit": "deg",
+        "days_from_query": 101.9682,
+        "pair": {
+          "a": "Moon",
+          "b": "Saturn"
+        },
+        "separation_deg": 6.396104,
+        "separation_arcmin": 383.766248,
+        "position_angle_of_b_from_a_deg": 153.367195,
+        "ecliptic_longitude_difference_deg": 0.378137,
+        "ecliptic_latitude_difference_deg": -6.384931,
+        "longitude_conjunction_instant": "2027-02-10T23:57:06.105Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -42.894431,
+        "elongation_from_sun_deg": 48.936949,
+        "elongation_direction": "evening",
+        "observability": "evening_sky",
+        "observability_label": "Evening sky, after dusk",
+        "magnitudes": {
+          "a": -8.1,
+          "b": 0.7
+        },
+        "combined_apparent_note": "At 6.40 deg the pair is an obvious naked-eye pairing but too wide for a telescope field.",
+        "sky_separation_deg": 6.396104,
+        "longitude_conjunction_instants": [
+          "2027-02-10T23:57:06.105Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": false,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Jupiter in conjunction, 1.09 deg apart",
+        "instant": "2027-02-20T04:57:40.289Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 1.086394,
+        "value_unit": "deg",
+        "days_from_query": 111.206716,
+        "pair": {
+          "a": "Moon",
+          "b": "Jupiter"
+        },
+        "separation_deg": 1.086394,
+        "separation_arcmin": 65.183624,
+        "position_angle_of_b_from_a_deg": 23.79782,
+        "ecliptic_longitude_difference_deg": 0.099325,
+        "ecliptic_latitude_difference_deg": 1.081844,
+        "longitude_conjunction_instant": "2027-02-20T05:07:13.388Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -9.551649,
+        "elongation_from_sun_deg": 169.416162,
+        "elongation_direction": "evening",
+        "observability": "most_of_night",
+        "observability_label": "Up most of the night",
+        "magnitudes": {
+          "a": -12.6,
+          "b": -2.5
+        },
+        "combined_apparent_note": "At 65.2 arcmin the pair is a close naked-eye pairing and fits in most binoculars.",
+        "sky_separation_deg": 1.086394,
+        "longitude_conjunction_instants": [
+          "2027-02-20T05:07:13.388Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": false,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Mars in conjunction, 5.33 deg apart",
+        "instant": "2027-02-20T19:43:11.191Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 5.330579,
+        "value_unit": "deg",
+        "days_from_query": 111.821657,
+        "pair": {
+          "a": "Moon",
+          "b": "Mars"
+        },
+        "separation_deg": 5.330579,
+        "separation_arcmin": 319.834741,
+        "position_angle_of_b_from_a_deg": 25.536716,
+        "ecliptic_longitude_difference_deg": 0.469827,
+        "ecliptic_latitude_difference_deg": 5.309869,
+        "longitude_conjunction_instant": "2027-02-20T20:27:51.356Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -44.669418,
+        "elongation_from_sun_deg": 177.731529,
+        "elongation_direction": "evening",
+        "observability": "most_of_night",
+        "observability_label": "Up most of the night",
+        "magnitudes": {
+          "a": -12.8,
+          "b": -1.2
+        },
+        "combined_apparent_note": "At 5.33 deg the pair is an obvious naked-eye pairing but too wide for a telescope field.",
+        "sky_separation_deg": 5.330579,
+        "longitude_conjunction_instants": [
+          "2027-02-20T20:27:51.356Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": false,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Venus in conjunction, 1.99 deg apart",
+        "instant": "2027-03-04T20:33:19.729Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 1.989887,
+        "value_unit": "deg",
+        "days_from_query": 123.856478,
+        "pair": {
+          "a": "Moon",
+          "b": "Venus"
+        },
+        "separation_deg": 1.989887,
+        "separation_arcmin": 119.393194,
+        "position_angle_of_b_from_a_deg": 340.145515,
+        "ecliptic_longitude_difference_deg": -0.206043,
+        "ecliptic_latitude_difference_deg": 1.979192,
+        "longitude_conjunction_instant": "2027-03-04T20:05:36.121Z",
+        "minimum_offset_from_longitude_conjunction_minutes": 27.726808,
+        "elongation_from_sun_deg": 39.5914,
+        "elongation_direction": "morning",
+        "observability": "morning_sky",
+        "observability_label": "Morning sky, before dawn",
+        "magnitudes": {
+          "a": -7.4,
+          "b": -4.1
+        },
+        "combined_apparent_note": "At 119.4 arcmin the pair is a close naked-eye pairing and fits in most binoculars.",
+        "sky_separation_deg": 1.989887,
+        "longitude_conjunction_instants": [
+          "2027-03-04T20:05:36.121Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": false,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Mercury in conjunction, 1.11 deg apart",
+        "instant": "2027-03-06T06:32:04.775Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 1.107191,
+        "value_unit": "deg",
+        "days_from_query": 125.272277,
+        "pair": {
+          "a": "Moon",
+          "b": "Mercury"
+        },
+        "separation_deg": 1.107191,
+        "separation_arcmin": 66.431461,
+        "position_angle_of_b_from_a_deg": 334.839279,
+        "ecliptic_longitude_difference_deg": -0.124236,
+        "ecliptic_latitude_difference_deg": 1.1002,
+        "longitude_conjunction_instant": "2027-03-06T06:16:56.853Z",
+        "minimum_offset_from_longitude_conjunction_minutes": 15.132034,
+        "elongation_from_sun_deg": 24.015328,
+        "elongation_direction": "morning",
+        "observability": "morning_sky",
+        "observability_label": "Morning sky, before dawn",
+        "magnitudes": {
+          "a": -6.2,
+          "b": 0.6
+        },
+        "combined_apparent_note": "At 66.4 arcmin the pair is a close naked-eye pairing and fits in most binoculars.",
+        "sky_separation_deg": 1.107191,
+        "longitude_conjunction_instants": [
+          "2027-03-06T06:16:56.853Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": true,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Jupiter in conjunction, 0.87 deg apart",
+        "instant": "2027-03-19T09:26:00.706Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 0.868011,
+        "value_unit": "deg",
+        "days_from_query": 138.393064,
+        "pair": {
+          "a": "Moon",
+          "b": "Jupiter"
+        },
+        "separation_deg": 0.868011,
+        "separation_arcmin": 52.080652,
+        "position_angle_of_b_from_a_deg": 22.998112,
+        "ecliptic_longitude_difference_deg": 0.078051,
+        "ecliptic_latitude_difference_deg": 0.864495,
+        "longitude_conjunction_instant": "2027-03-19T09:33:45.506Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -7.746672,
+        "elongation_from_sun_deg": 139.316545,
+        "elongation_direction": "evening",
+        "observability": "most_of_night",
+        "observability_label": "Up most of the night",
+        "magnitudes": {
+          "a": -11.8,
+          "b": -2.4
+        },
+        "combined_apparent_note": "At 52.1 arcmin the pair is a close naked-eye pairing and fits in most binoculars.",
+        "sky_separation_deg": 0.868011,
+        "longitude_conjunction_instants": [
+          "2027-03-19T09:33:45.506Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": false,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Mars in conjunction, 3.89 deg apart",
+        "instant": "2027-03-19T15:43:06.709Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 3.89168,
+        "value_unit": "deg",
+        "days_from_query": 138.654939,
+        "pair": {
+          "a": "Moon",
+          "b": "Mars"
+        },
+        "separation_deg": 3.89168,
+        "separation_arcmin": 233.500803,
+        "position_angle_of_b_from_a_deg": 23.739741,
+        "ecliptic_longitude_difference_deg": 0.337928,
+        "ecliptic_latitude_difference_deg": 3.877001,
+        "longitude_conjunction_instant": "2027-03-19T16:16:26.921Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -33.336867,
+        "elongation_from_sun_deg": 142.835974,
+        "elongation_direction": "evening",
+        "observability": "most_of_night",
+        "observability_label": "Up most of the night",
+        "magnitudes": {
+          "a": -11.9,
+          "b": -0.7
+        },
+        "combined_apparent_note": "At 3.89 deg the pair is an obvious naked-eye pairing but too wide for a telescope field.",
+        "sky_separation_deg": 3.89168,
+        "longitude_conjunction_instants": [
+          "2027-03-19T16:16:26.921Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": false,
+          "b": null
+        }
+      },
+      {
+        "kind": "close_approach",
+        "label": "Mars and Jupiter 4.29 deg apart",
+        "instant": "2027-03-31T05:29:57.707Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 4.292561,
+        "value_unit": "deg",
+        "days_from_query": 150.22914,
+        "pair": {
+          "a": "Mars",
+          "b": "Jupiter"
+        },
+        "separation_deg": 4.292561,
+        "separation_arcmin": 257.55367,
+        "position_angle_of_b_from_a_deg": 257.937672,
+        "ecliptic_longitude_difference_deg": -3.680362,
+        "ecliptic_latitude_difference_deg": -2.214029,
+        "longitude_conjunction_instant": null,
+        "minimum_offset_from_longitude_conjunction_minutes": null,
+        "elongation_from_sun_deg": 130.57742,
+        "elongation_direction": "evening",
+        "observability": "evening_sky",
+        "observability_label": "Evening sky, after dusk",
+        "magnitudes": {
+          "a": -0.4,
+          "b": -2.3
+        },
+        "combined_apparent_note": "At 4.29 deg the pair is an obvious naked-eye pairing but too wide for a telescope field.",
+        "href": "https://www.cyclecalcs.com/conjunctions/mars-jupiter.html",
+        "sky_separation_deg": 4.292561,
+        "longitude_conjunction_instants": [],
+        "magnitudes_extrapolated": {
+          "a": null,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Venus in conjunction, 2.92 deg apart",
+        "instant": "2027-04-04T03:33:26.289Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 2.920576,
+        "value_unit": "deg",
+        "days_from_query": 154.148221,
+        "pair": {
+          "a": "Moon",
+          "b": "Venus"
+        },
+        "separation_deg": 2.920576,
+        "separation_arcmin": 175.234551,
+        "position_angle_of_b_from_a_deg": 152.401882,
+        "ecliptic_longitude_difference_deg": 0.278511,
+        "ecliptic_latitude_difference_deg": -2.907269,
+        "longitude_conjunction_instant": "2027-04-04T04:09:08.654Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -35.706085,
+        "elongation_from_sun_deg": 33.851617,
+        "elongation_direction": "morning",
+        "observability": "morning_sky",
+        "observability_label": "Morning sky, before dawn",
+        "magnitudes": {
+          "a": -7,
+          "b": -3.9
+        },
+        "combined_apparent_note": "At 2.92 deg the pair is an obvious naked-eye pairing but too wide for a telescope field.",
+        "sky_separation_deg": 2.920576,
+        "longitude_conjunction_instants": [
+          "2027-04-04T04:09:08.654Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": false,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Mercury in conjunction, 5.33 deg apart",
+        "instant": "2027-04-05T04:23:41.887Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 5.33173,
+        "value_unit": "deg",
+        "days_from_query": 155.183124,
+        "pair": {
+          "a": "Moon",
+          "b": "Mercury"
+        },
+        "separation_deg": 5.33173,
+        "separation_arcmin": 319.903823,
+        "position_angle_of_b_from_a_deg": 151.886706,
+        "ecliptic_longitude_difference_deg": 0.449769,
+        "ecliptic_latitude_difference_deg": -5.31274,
+        "longitude_conjunction_instant": "2027-04-05T05:21:42.370Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -58.008044,
+        "elongation_from_sun_deg": 21.979172,
+        "elongation_direction": "morning",
+        "observability": "morning_sky",
+        "observability_label": "Morning sky, before dawn",
+        "magnitudes": {
+          "a": -6.1,
+          "b": -0.2
+        },
+        "combined_apparent_note": "At 5.33 deg the pair is an obvious naked-eye pairing but too wide for a telescope field.",
+        "sky_separation_deg": 5.33173,
+        "longitude_conjunction_instants": [
+          "2027-04-05T05:21:42.370Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": true,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Jupiter in conjunction, 0.92 deg apart",
+        "instant": "2027-04-15T14:19:06.363Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 0.916012,
+        "value_unit": "deg",
+        "days_from_query": 165.596601,
+        "pair": {
+          "a": "Moon",
+          "b": "Jupiter"
+        },
+        "separation_deg": 0.916012,
+        "separation_arcmin": 54.960717,
+        "position_angle_of_b_from_a_deg": 22.649565,
+        "ecliptic_longitude_difference_deg": 0.080936,
+        "ecliptic_latitude_difference_deg": 0.91243,
+        "longitude_conjunction_instant": "2027-04-15T14:27:23.579Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -8.286934,
+        "elongation_from_sun_deg": 111.526464,
+        "elongation_direction": "evening",
+        "observability": "evening_sky",
+        "observability_label": "Evening sky, after dusk",
+        "magnitudes": {
+          "a": -10.9,
+          "b": -2.2
+        },
+        "combined_apparent_note": "At 55.0 arcmin the pair is a close naked-eye pairing and fits in most binoculars.",
+        "sky_separation_deg": 0.916012,
+        "longitude_conjunction_instants": [
+          "2027-04-15T14:27:23.579Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": false,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Mars in conjunction, 2.98 deg apart",
+        "instant": "2027-04-15T22:44:08.669Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 2.980642,
+        "value_unit": "deg",
+        "days_from_query": 165.947323,
+        "pair": {
+          "a": "Moon",
+          "b": "Mars"
+        },
+        "separation_deg": 2.980642,
+        "separation_arcmin": 178.838494,
+        "position_angle_of_b_from_a_deg": 23.769014,
+        "ecliptic_longitude_difference_deg": 0.258293,
+        "ecliptic_latitude_difference_deg": 2.969436,
+        "longitude_conjunction_instant": "2027-04-15T23:10:54.746Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -26.76795,
+        "elongation_from_sun_deg": 116.115211,
+        "elongation_direction": "evening",
+        "observability": "evening_sky",
+        "observability_label": "Evening sky, after dusk",
+        "magnitudes": {
+          "a": -11.1,
+          "b": 0
+        },
+        "combined_apparent_note": "At 2.98 deg the pair is an obvious naked-eye pairing but too wide for a telescope field.",
+        "sky_separation_deg": 2.980642,
+        "longitude_conjunction_instants": [
+          "2027-04-15T23:10:54.746Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": false,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Mercury and Saturn in conjunction, 0.56 deg apart",
+        "instant": "2027-04-19T12:34:07.515Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 0.562627,
+        "value_unit": "deg",
+        "days_from_query": 169.523698,
+        "pair": {
+          "a": "Mercury",
+          "b": "Saturn"
+        },
+        "separation_deg": 0.562627,
+        "separation_arcmin": 33.75761,
+        "position_angle_of_b_from_a_deg": 154.217361,
+        "ecliptic_longitude_difference_deg": 0.035181,
+        "ecliptic_latitude_difference_deg": -0.561527,
+        "longitude_conjunction_instant": "2027-04-19T13:01:55.371Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -27.797608,
+        "elongation_from_sun_deg": 10.25962,
+        "elongation_direction": "morning",
+        "observability": "glare",
+        "observability_label": "Lost in the Sun's glare",
+        "magnitudes": {
+          "a": -1.1,
+          "b": 0.5
+        },
+        "combined_apparent_note": "At 33.8 arcmin the pair is close, but it sits only 10.3 deg from the Sun and is lost in the glare. Sweeping for it with a telescope or binocular risks putting the Sun in the field, so it is not an observing target.",
+        "sky_separation_deg": 0.562627,
+        "longitude_conjunction_instants": [
+          "2027-04-19T13:01:55.371Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": null,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Venus in conjunction, 6.03 deg apart",
+        "instant": "2027-05-04T08:44:18.029Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 6.033649,
+        "value_unit": "deg",
+        "days_from_query": 184.364098,
+        "pair": {
+          "a": "Moon",
+          "b": "Venus"
+        },
+        "separation_deg": 6.033649,
+        "separation_arcmin": 362.018956,
+        "position_angle_of_b_from_a_deg": 154.503746,
+        "ecliptic_longitude_difference_deg": 0.285459,
+        "ecliptic_latitude_difference_deg": -6.026903,
+        "longitude_conjunction_instant": "2027-05-04T09:18:08.195Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -33.836095,
+        "elongation_from_sun_deg": 27.066196,
+        "elongation_direction": "morning",
+        "observability": "morning_sky",
+        "observability_label": "Morning sky, before dawn",
+        "magnitudes": {
+          "a": -6.6,
+          "b": -3.8
+        },
+        "combined_apparent_note": "At 6.03 deg the pair is an obvious naked-eye pairing but too wide for a telescope field.",
+        "sky_separation_deg": 6.033649,
+        "longitude_conjunction_instants": [
+          "2027-05-04T09:18:08.195Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": true,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Mercury in conjunction, 3.79 deg apart",
+        "instant": "2027-05-07T04:49:27.407Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 3.790507,
+        "value_unit": "deg",
+        "days_from_query": 187.201012,
+        "pair": {
+          "a": "Moon",
+          "b": "Mercury"
+        },
+        "separation_deg": 3.790507,
+        "separation_arcmin": 227.430406,
+        "position_angle_of_b_from_a_deg": 167.803183,
+        "ecliptic_longitude_difference_deg": -0.119657,
+        "ecliptic_latitude_difference_deg": -3.788624,
+        "longitude_conjunction_instant": "2027-05-07T04:35:19.121Z",
+        "minimum_offset_from_longitude_conjunction_minutes": 14.138098,
+        "elongation_from_sun_deg": 10.980976,
+        "elongation_direction": "evening",
+        "observability": "glare",
+        "observability_label": "Lost in the Sun's glare",
+        "magnitudes": {
+          "a": -5.1,
+          "b": -1.4
+        },
+        "combined_apparent_note": "At 3.79 deg the pair is a wide pairing, but it sits only 11.0 deg from the Sun and is lost in the glare. Sweeping for it with a telescope or binocular risks putting the Sun in the field, so it is not an observing target.",
+        "sky_separation_deg": 3.790507,
+        "longitude_conjunction_instants": [
+          "2027-05-07T04:35:19.121Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": true,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Venus and Saturn in conjunction, 0.60 deg apart",
+        "instant": "2027-05-07T18:40:47.821Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 0.604085,
+        "value_unit": "deg",
+        "days_from_query": 187.778331,
+        "pair": {
+          "a": "Venus",
+          "b": "Saturn"
+        },
+        "separation_deg": 0.604085,
+        "separation_arcmin": 36.245129,
+        "position_angle_of_b_from_a_deg": 157.82586,
+        "ecliptic_longitude_difference_deg": 0.002875,
+        "ecliptic_latitude_difference_deg": -0.604079,
+        "longitude_conjunction_instant": "2027-05-07T18:44:34.300Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -3.774646,
+        "elongation_from_sun_deg": 25.663211,
+        "elongation_direction": "morning",
+        "observability": "morning_sky",
+        "observability_label": "Morning sky, before dawn",
+        "magnitudes": {
+          "a": -3.8,
+          "b": 0.5
+        },
+        "combined_apparent_note": "At 36.2 arcmin the pair is a close naked-eye pairing and fits in most binoculars.",
+        "href": "https://www.cyclecalcs.com/conjunctions/venus-saturn.html",
+        "sky_separation_deg": 0.604085,
+        "longitude_conjunction_instants": [
+          "2027-05-07T18:44:34.300Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": null,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Jupiter in conjunction, 1.23 deg apart",
+        "instant": "2027-05-12T21:52:33.267Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 1.233546,
+        "value_unit": "deg",
+        "days_from_query": 192.911496,
+        "pair": {
+          "a": "Moon",
+          "b": "Jupiter"
+        },
+        "separation_deg": 1.233546,
+        "separation_arcmin": 74.012753,
+        "position_angle_of_b_from_a_deg": 22.955977,
+        "ecliptic_longitude_difference_deg": 0.108855,
+        "ecliptic_latitude_difference_deg": 1.228734,
+        "longitude_conjunction_instant": "2027-05-12T22:03:46.451Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -11.219739,
+        "elongation_from_sun_deg": 86.26653,
+        "elongation_direction": "evening",
+        "observability": "evening_sky",
+        "observability_label": "Evening sky, after dusk",
+        "magnitudes": {
+          "a": -10,
+          "b": -2.1
+        },
+        "combined_apparent_note": "At 74.0 arcmin the pair is a close naked-eye pairing and fits in most binoculars.",
+        "sky_separation_deg": 1.233546,
+        "longitude_conjunction_instants": [
+          "2027-05-12T22:03:46.451Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": false,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Mars in conjunction, 2.98 deg apart",
+        "instant": "2027-05-13T17:04:47.806Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 2.976997,
+        "value_unit": "deg",
+        "days_from_query": 193.711664,
+        "pair": {
+          "a": "Moon",
+          "b": "Mars"
+        },
+        "separation_deg": 2.976997,
+        "separation_arcmin": 178.619827,
+        "position_angle_of_b_from_a_deg": 25.288091,
+        "ecliptic_longitude_difference_deg": 0.254638,
+        "ecliptic_latitude_difference_deg": 2.96609,
+        "longitude_conjunction_instant": "2027-05-13T17:31:51.205Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -27.056656,
+        "elongation_from_sun_deg": 96.685999,
+        "elongation_direction": "evening",
+        "observability": "evening_sky",
+        "observability_label": "Evening sky, after dusk",
+        "magnitudes": {
+          "a": -10.4,
+          "b": 0.5
+        },
+        "combined_apparent_note": "At 2.98 deg the pair is an obvious naked-eye pairing but too wide for a telescope field.",
+        "sky_separation_deg": 2.976997,
+        "longitude_conjunction_instants": [
+          "2027-05-13T17:31:51.205Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": false,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Venus in conjunction, 6.16 deg apart",
+        "instant": "2027-06-03T10:36:37.791Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 6.16374,
+        "value_unit": "deg",
+        "days_from_query": 214.442104,
+        "pair": {
+          "a": "Moon",
+          "b": "Venus"
+        },
+        "separation_deg": 6.16374,
+        "separation_arcmin": 369.824385,
+        "position_angle_of_b_from_a_deg": 166.342837,
+        "ecliptic_longitude_difference_deg": -0.123148,
+        "ecliptic_latitude_difference_deg": -6.162512,
+        "longitude_conjunction_instant": "2027-06-03T10:23:06.289Z",
+        "minimum_offset_from_longitude_conjunction_minutes": 13.525031,
+        "elongation_from_sun_deg": 19.350792,
+        "elongation_direction": "morning",
+        "observability": "morning_sky",
+        "observability_label": "Morning sky, before dawn",
+        "magnitudes": {
+          "a": -5.9,
+          "b": -3.8
+        },
+        "combined_apparent_note": "At 6.16 deg the pair is an obvious naked-eye pairing but too wide for a telescope field.",
+        "sky_separation_deg": 6.16374,
+        "longitude_conjunction_instants": [
+          "2027-06-03T10:23:06.289Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": true,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Mercury in conjunction, 2.71 deg apart",
+        "instant": "2027-06-06T06:55:59.653Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 2.705496,
+        "value_unit": "deg",
+        "days_from_query": 217.288885,
+        "pair": {
+          "a": "Moon",
+          "b": "Mercury"
+        },
+        "separation_deg": 2.705496,
+        "separation_arcmin": 162.329745,
+        "position_angle_of_b_from_a_deg": 185.792829,
+        "ecliptic_longitude_difference_deg": -0.15295,
+        "ecliptic_latitude_difference_deg": -2.701174,
+        "longitude_conjunction_instant": "2027-06-06T06:40:50.304Z",
+        "minimum_offset_from_longitude_conjunction_minutes": 15.155808,
+        "elongation_from_sun_deg": 20.59589,
+        "elongation_direction": "evening",
+        "observability": "evening_sky",
+        "observability_label": "Evening sky, after dusk",
+        "magnitudes": {
+          "a": -6.1,
+          "b": 1.5
+        },
+        "combined_apparent_note": "At 2.71 deg the pair is an obvious naked-eye pairing but too wide for a telescope field.",
+        "sky_separation_deg": 2.705496,
+        "longitude_conjunction_instants": [
+          "2027-06-06T06:40:50.304Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": true,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Jupiter in conjunction, 1.71 deg apart",
+        "instant": "2027-06-09T09:35:24.824Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 1.707815,
+        "value_unit": "deg",
+        "days_from_query": 220.399593,
+        "pair": {
+          "a": "Moon",
+          "b": "Jupiter"
+        },
+        "separation_deg": 1.707815,
+        "separation_arcmin": 102.46891,
+        "position_angle_of_b_from_a_deg": 23.775711,
+        "ecliptic_longitude_difference_deg": 0.152205,
+        "ecliptic_latitude_difference_deg": 1.70102,
+        "longitude_conjunction_instant": "2027-06-09T09:50:50.731Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -15.43178,
+        "elongation_from_sun_deg": 63.075135,
+        "elongation_direction": "evening",
+        "observability": "evening_sky",
+        "observability_label": "Evening sky, after dusk",
+        "magnitudes": {
+          "a": -9,
+          "b": -1.9
+        },
+        "combined_apparent_note": "At 102.5 arcmin the pair is a close naked-eye pairing and fits in most binoculars.",
+        "sky_separation_deg": 1.707815,
+        "longitude_conjunction_instants": [
+          "2027-06-09T09:50:50.731Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": false,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Mars in conjunction, 3.52 deg apart",
+        "instant": "2027-06-10T19:34:09.919Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 3.518863,
+        "value_unit": "deg",
+        "days_from_query": 221.815393,
+        "pair": {
+          "a": "Moon",
+          "b": "Mars"
+        },
+        "separation_deg": 3.518863,
+        "separation_arcmin": 211.131785,
+        "position_angle_of_b_from_a_deg": 26.818151,
+        "ecliptic_longitude_difference_deg": 0.280552,
+        "ecliptic_latitude_difference_deg": 3.507667,
+        "longitude_conjunction_instant": "2027-06-10T20:04:11.886Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -30.032784,
+        "elongation_from_sun_deg": 81.755436,
+        "elongation_direction": "evening",
+        "observability": "evening_sky",
+        "observability_label": "Evening sky, after dusk",
+        "magnitudes": {
+          "a": -9.8,
+          "b": 0.9
+        },
+        "combined_apparent_note": "At 3.52 deg the pair is an obvious naked-eye pairing but too wide for a telescope field.",
+        "sky_separation_deg": 3.518863,
+        "longitude_conjunction_instants": [
+          "2027-06-10T20:04:11.886Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": false,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Mercury and Venus in conjunction, 4.55 deg apart",
+        "instant": "2027-07-01T07:53:55.371Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 4.554886,
+        "value_unit": "deg",
+        "days_from_query": 242.329113,
+        "pair": {
+          "a": "Mercury",
+          "b": "Venus"
+        },
+        "separation_deg": 4.554886,
+        "separation_arcmin": 273.293132,
+        "position_angle_of_b_from_a_deg": 357.981854,
+        "ecliptic_longitude_difference_deg": -0.09168,
+        "ecliptic_latitude_difference_deg": 4.553965,
+        "longitude_conjunction_instant": "2027-07-01T09:22:45.619Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -88.83747,
+        "elongation_from_sun_deg": 12.26385,
+        "elongation_direction": "morning",
+        "observability": "glare",
+        "observability_label": "Lost in the Sun's glare",
+        "magnitudes": {
+          "a": 3.3,
+          "b": -3.9
+        },
+        "combined_apparent_note": "At 4.55 deg the pair is a wide pairing, but it sits only 12.3 deg from the Sun and is lost in the glare. Sweeping for it with a telescope or binocular risks putting the Sun in the field, so it is not an observing target.",
+        "sky_separation_deg": 4.554886,
+        "longitude_conjunction_instants": [
+          "2027-07-01T09:22:45.619Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": null,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Venus in conjunction, 3.50 deg apart",
+        "instant": "2027-07-03T08:58:33.320Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 3.496488,
+        "value_unit": "deg",
+        "days_from_query": 244.373997,
+        "pair": {
+          "a": "Moon",
+          "b": "Venus"
+        },
+        "separation_deg": 3.496488,
+        "separation_arcmin": 209.789252,
+        "position_angle_of_b_from_a_deg": 184.724028,
+        "ecliptic_longitude_difference_deg": -0.270808,
+        "ecliptic_latitude_difference_deg": -3.485997,
+        "longitude_conjunction_instant": "2027-07-03T08:30:14.037Z",
+        "minimum_offset_from_longitude_conjunction_minutes": 28.321382,
+        "elongation_from_sun_deg": 11.148627,
+        "elongation_direction": "morning",
+        "observability": "glare",
+        "observability_label": "Lost in the Sun's glare",
+        "magnitudes": {
+          "a": -5.2,
+          "b": -3.9
+        },
+        "combined_apparent_note": "At 3.50 deg the pair is a wide pairing, but it sits only 11.1 deg from the Sun and is lost in the glare. Sweeping for it with a telescope or binocular risks putting the Sun in the field, so it is not an observing target.",
+        "sky_separation_deg": 3.496488,
+        "longitude_conjunction_instants": [
+          "2027-07-03T08:30:14.037Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": true,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Jupiter in conjunction, 2.23 deg apart",
+        "instant": "2027-07-07T01:29:02.445Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 2.227977,
+        "value_unit": "deg",
+        "days_from_query": 248.061834,
+        "pair": {
+          "a": "Moon",
+          "b": "Jupiter"
+        },
+        "separation_deg": 2.227977,
+        "separation_arcmin": 133.678623,
+        "position_angle_of_b_from_a_deg": 24.821397,
+        "ecliptic_longitude_difference_deg": 0.199563,
+        "ecliptic_latitude_difference_deg": 2.219023,
+        "longitude_conjunction_instant": "2027-07-07T01:48:47.720Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -19.754579,
+        "elongation_from_sun_deg": 41.302474,
+        "elongation_direction": "evening",
+        "observability": "evening_sky",
+        "observability_label": "Evening sky, after dusk",
+        "magnitudes": {
+          "a": -7.7,
+          "b": -1.8
+        },
+        "combined_apparent_note": "At 2.23 deg the pair is an obvious naked-eye pairing but too wide for a telescope field.",
+        "sky_separation_deg": 2.227977,
+        "longitude_conjunction_instants": [
+          "2027-07-07T01:48:47.720Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": false,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Mars in conjunction, 4.21 deg apart",
+        "instant": "2027-07-09T04:00:14.061Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 4.210993,
+        "value_unit": "deg",
+        "days_from_query": 250.166829,
+        "pair": {
+          "a": "Moon",
+          "b": "Mars"
+        },
+        "separation_deg": 4.210993,
+        "separation_arcmin": 252.659597,
+        "position_angle_of_b_from_a_deg": 27.217948,
+        "ecliptic_longitude_difference_deg": 0.280214,
+        "ecliptic_latitude_difference_deg": 4.201671,
+        "longitude_conjunction_instant": "2027-07-09T04:30:18.945Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -30.081406,
+        "elongation_from_sun_deg": 69.5734,
+        "elongation_direction": "evening",
+        "observability": "evening_sky",
+        "observability_label": "Evening sky, after dusk",
+        "magnitudes": {
+          "a": -9.3,
+          "b": 1.1
+        },
+        "combined_apparent_note": "At 4.21 deg the pair is an obvious naked-eye pairing but too wide for a telescope field.",
+        "sky_separation_deg": 4.210993,
+        "longitude_conjunction_instants": [
+          "2027-07-09T04:30:18.945Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": false,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Mercury in conjunction, 0.29 deg apart",
+        "instant": "2027-08-01T15:57:37.468Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 0.286748,
+        "value_unit": "deg",
+        "days_from_query": 273.665017,
+        "pair": {
+          "a": "Moon",
+          "b": "Mercury"
+        },
+        "separation_deg": 0.286748,
+        "separation_arcmin": 17.204879,
+        "position_angle_of_b_from_a_deg": 198.34497,
+        "ecliptic_longitude_difference_deg": -0.032879,
+        "ecliptic_latitude_difference_deg": -0.284857,
+        "longitude_conjunction_instant": "2027-08-01T15:54:01.590Z",
+        "minimum_offset_from_longitude_conjunction_minutes": 3.597966,
+        "elongation_from_sun_deg": 10.812438,
+        "elongation_direction": "morning",
+        "observability": "glare",
+        "observability_label": "Lost in the Sun's glare",
+        "magnitudes": {
+          "a": -5.2,
+          "b": -1.3
+        },
+        "combined_apparent_note": "At 17.2 arcmin the pair is close, but it sits only 10.8 deg from the Sun and is lost in the glare. Sweeping for it with a telescope or binocular risks putting the Sun in the field, so it is not an observing target.",
+        "sky_separation_deg": 0.286748,
+        "longitude_conjunction_instants": [
+          "2027-08-01T15:54:01.590Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": true,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Venus in conjunction, 0.60 deg apart",
+        "instant": "2027-08-02T05:25:45.009Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 0.604135,
+        "value_unit": "deg",
+        "days_from_query": 274.226215,
+        "pair": {
+          "a": "Moon",
+          "b": "Venus"
+        },
+        "separation_deg": 0.604135,
+        "separation_arcmin": 36.248094,
+        "position_angle_of_b_from_a_deg": 20.499321,
+        "ecliptic_longitude_difference_deg": 0.0616,
+        "ecliptic_latitude_difference_deg": 0.600987,
+        "longitude_conjunction_instant": "2027-08-02T05:32:06.257Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -6.354136,
+        "elongation_from_sun_deg": 2.794391,
+        "elongation_direction": "morning",
+        "observability": "glare",
+        "observability_label": "Lost in the Sun's glare",
+        "magnitudes": {
+          "a": -4.3,
+          "b": -4
+        },
+        "combined_apparent_note": "At 36.2 arcmin the pair is close, but it sits only 2.8 deg from the Sun and is lost in the glare. Sweeping for it with a telescope or binocular risks putting the Sun in the field, so it is not an observing target.",
+        "sky_separation_deg": 0.604135,
+        "longitude_conjunction_instants": [
+          "2027-08-02T05:32:06.257Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": true,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Jupiter in conjunction, 2.74 deg apart",
+        "instant": "2027-08-03T20:26:11.698Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 2.738709,
+        "value_unit": "deg",
+        "days_from_query": 275.851524,
+        "pair": {
+          "a": "Moon",
+          "b": "Jupiter"
+        },
+        "separation_deg": 2.738709,
+        "separation_arcmin": 164.322524,
+        "position_angle_of_b_from_a_deg": 25.794733,
+        "ecliptic_longitude_difference_deg": 0.240736,
+        "ecliptic_latitude_difference_deg": 2.72811,
+        "longitude_conjunction_instant": "2027-08-03T20:49:38.773Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -23.451252,
+        "elongation_from_sun_deg": 20.344465,
+        "elongation_direction": "evening",
+        "observability": "evening_sky",
+        "observability_label": "Evening sky, after dusk",
+        "magnitudes": {
+          "a": -6.1,
+          "b": -1.7
+        },
+        "combined_apparent_note": "At 2.74 deg the pair is an obvious naked-eye pairing but too wide for a telescope field.",
+        "sky_separation_deg": 2.738709,
+        "longitude_conjunction_instants": [
+          "2027-08-03T20:49:38.773Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": true,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Mars in conjunction, 4.73 deg apart",
+        "instant": "2027-08-06T17:09:32.433Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 4.734486,
+        "value_unit": "deg",
+        "days_from_query": 278.714959,
+        "pair": {
+          "a": "Moon",
+          "b": "Mars"
+        },
+        "separation_deg": 4.734486,
+        "separation_arcmin": 284.069147,
+        "position_angle_of_b_from_a_deg": 25.694763,
+        "ecliptic_longitude_difference_deg": 0.211999,
+        "ecliptic_latitude_difference_deg": 4.729747,
+        "longitude_conjunction_instant": "2027-08-06T17:32:28.679Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -22.937437,
+        "elongation_from_sun_deg": 59.179424,
+        "elongation_direction": "evening",
+        "observability": "evening_sky",
+        "observability_label": "Evening sky, after dusk",
+        "magnitudes": {
+          "a": -8.8,
+          "b": 1.3
+        },
+        "combined_apparent_note": "At 4.73 deg the pair is an obvious naked-eye pairing but too wide for a telescope field.",
+        "sky_separation_deg": 4.734486,
+        "longitude_conjunction_instants": [
+          "2027-08-06T17:32:28.679Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": false,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Mercury and Venus in conjunction, 0.51 deg apart",
+        "instant": "2027-08-11T06:26:41.257Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 0.510256,
+        "value_unit": "deg",
+        "days_from_query": 283.268533,
+        "pair": {
+          "a": "Mercury",
+          "b": "Venus"
+        },
+        "separation_deg": 0.510256,
+        "separation_arcmin": 30.615332,
+        "position_angle_of_b_from_a_deg": 197.856104,
+        "ecliptic_longitude_difference_deg": 0.001841,
+        "ecliptic_latitude_difference_deg": -0.510252,
+        "longitude_conjunction_instant": "2027-08-11T06:29:57.465Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -3.27013,
+        "elongation_from_sun_deg": 1.754125,
+        "elongation_direction": "morning",
+        "observability": "glare",
+        "observability_label": "Lost in the Sun's glare",
+        "magnitudes": {
+          "a": -2.1,
+          "b": -4
+        },
+        "combined_apparent_note": "At 30.6 arcmin the pair is close, but it sits only 1.8 deg from the Sun and is lost in the glare. Sweeping for it with a telescope or binocular risks putting the Sun in the field, so it is not an observing target.",
+        "sky_separation_deg": 0.510256,
+        "longitude_conjunction_instants": [
+          "2027-08-11T06:29:57.465Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": null,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Mercury and Jupiter in conjunction, 0.62 deg apart",
+        "instant": "2027-08-19T23:07:50.358Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 0.623546,
+        "value_unit": "deg",
+        "days_from_query": 291.963777,
+        "pair": {
+          "a": "Mercury",
+          "b": "Jupiter"
+        },
+        "separation_deg": 0.623546,
+        "separation_arcmin": 37.412755,
+        "position_angle_of_b_from_a_deg": 203.795769,
+        "ecliptic_longitude_difference_deg": -0.023973,
+        "ecliptic_latitude_difference_deg": -0.623085,
+        "longitude_conjunction_instant": "2027-08-19T22:46:56.611Z",
+        "minimum_offset_from_longitude_conjunction_minutes": 20.895787,
+        "elongation_from_sun_deg": 8.646064,
+        "elongation_direction": "evening",
+        "observability": "glare",
+        "observability_label": "Lost in the Sun's glare",
+        "magnitudes": {
+          "a": -1.1,
+          "b": -1.7
+        },
+        "combined_apparent_note": "At 37.4 arcmin the pair is close, but it sits only 8.6 deg from the Sun and is lost in the glare. Sweeping for it with a telescope or binocular risks putting the Sun in the field, so it is not an observing target.",
+        "sky_separation_deg": 0.623546,
+        "longitude_conjunction_instants": [
+          "2027-08-19T22:46:56.611Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": null,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Venus and Jupiter in conjunction, 0.50 deg apart",
+        "instant": "2027-08-26T02:57:07.804Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 0.495117,
+        "value_unit": "deg",
+        "days_from_query": 298.123007,
+        "pair": {
+          "a": "Venus",
+          "b": "Jupiter"
+        },
+        "separation_deg": 0.495117,
+        "separation_arcmin": 29.707022,
+        "position_angle_of_b_from_a_deg": 201.577507,
+        "ecliptic_longitude_difference_deg": 0.001752,
+        "ecliptic_latitude_difference_deg": -0.495114,
+        "longitude_conjunction_instant": "2027-08-26T02:59:35.915Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -2.468509,
+        "elongation_from_sun_deg": 4.13224,
+        "elongation_direction": "evening",
+        "observability": "glare",
+        "observability_label": "Lost in the Sun's glare",
+        "magnitudes": {
+          "a": -3.9,
+          "b": -1.7
+        },
+        "combined_apparent_note": "At 29.7 arcmin the pair is close, but it sits only 4.1 deg from the Sun and is lost in the glare. Sweeping for it with a telescope or binocular risks putting the Sun in the field, so it is not an observing target.",
+        "href": "https://www.cyclecalcs.com/conjunctions/venus-jupiter.html",
+        "sky_separation_deg": 0.495117,
+        "longitude_conjunction_instants": [
+          "2027-08-26T02:59:35.915Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": null,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Jupiter in conjunction, 3.24 deg apart",
+        "instant": "2027-08-31T16:43:54.390Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 3.242751,
+        "value_unit": "deg",
+        "days_from_query": 303.697157,
+        "pair": {
+          "a": "Moon",
+          "b": "Jupiter"
+        },
+        "separation_deg": 3.242751,
+        "separation_arcmin": 194.565047,
+        "position_angle_of_b_from_a_deg": 26.481712,
+        "ecliptic_longitude_difference_deg": 0.269507,
+        "ecliptic_latitude_difference_deg": 3.231537,
+        "longitude_conjunction_instant": "2027-08-31T17:10:10.957Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -26.276118,
+        "elongation_from_sun_deg": 2.378201,
+        "elongation_direction": "morning",
+        "observability": "glare",
+        "observability_label": "Lost in the Sun's glare",
+        "magnitudes": {
+          "a": -4.2,
+          "b": -1.7
+        },
+        "combined_apparent_note": "At 3.24 deg the pair is a wide pairing, but it sits only 2.4 deg from the Sun and is lost in the glare. Sweeping for it with a telescope or binocular risks putting the Sun in the field, so it is not an observing target.",
+        "sky_separation_deg": 3.242751,
+        "longitude_conjunction_instants": [
+          "2027-08-31T17:10:10.957Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": true,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Venus in conjunction, 4.23 deg apart",
+        "instant": "2027-09-01T02:32:54.186Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 4.231498,
+        "value_unit": "deg",
+        "days_from_query": 304.106183,
+        "pair": {
+          "a": "Moon",
+          "b": "Venus"
+        },
+        "separation_deg": 4.231498,
+        "separation_arcmin": 253.889882,
+        "position_angle_of_b_from_a_deg": 27.298249,
+        "ecliptic_longitude_difference_deg": 0.35467,
+        "ecliptic_latitude_difference_deg": 4.216617,
+        "longitude_conjunction_instant": "2027-09-01T03:10:14.170Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -37.333063,
+        "elongation_from_sun_deg": 5.872507,
+        "elongation_direction": "evening",
+        "observability": "glare",
+        "observability_label": "Lost in the Sun's glare",
+        "magnitudes": {
+          "a": -4.6,
+          "b": -3.9
+        },
+        "combined_apparent_note": "At 4.23 deg the pair is a wide pairing, but it sits only 5.9 deg from the Sun and is lost in the glare. Sweeping for it with a telescope or binocular risks putting the Sun in the field, so it is not an observing target.",
+        "sky_separation_deg": 4.231498,
+        "longitude_conjunction_instants": [
+          "2027-09-01T03:10:14.170Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": true,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Mercury in conjunction, 4.02 deg apart",
+        "instant": "2027-09-02T01:01:54.009Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 4.018316,
+        "value_unit": "deg",
+        "days_from_query": 305.042986,
+        "pair": {
+          "a": "Moon",
+          "b": "Mercury"
+        },
+        "separation_deg": 4.018316,
+        "separation_arcmin": 241.098957,
+        "position_angle_of_b_from_a_deg": 26.938583,
+        "ecliptic_longitude_difference_deg": 0.24522,
+        "ecliptic_latitude_difference_deg": 4.010837,
+        "longitude_conjunction_instant": "2027-09-02T01:28:50.447Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -26.940641,
+        "elongation_from_sun_deg": 18.512045,
+        "elongation_direction": "evening",
+        "observability": "evening_sky",
+        "observability_label": "Evening sky, after dusk",
+        "magnitudes": {
+          "a": -5.9,
+          "b": -0.3
+        },
+        "combined_apparent_note": "At 4.02 deg the pair is an obvious naked-eye pairing but too wide for a telescope field.",
+        "sky_separation_deg": 4.018316,
+        "longitude_conjunction_instants": [
+          "2027-09-02T01:28:50.447Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": true,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Mars in conjunction, 4.84 deg apart",
+        "instant": "2027-09-04T10:17:46.698Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 4.841804,
+        "value_unit": "deg",
+        "days_from_query": 307.429013,
+        "pair": {
+          "a": "Moon",
+          "b": "Mars"
+        },
+        "separation_deg": 4.841804,
+        "separation_arcmin": 290.508238,
+        "position_angle_of_b_from_a_deg": 21.622096,
+        "ecliptic_longitude_difference_deg": 0.073133,
+        "ecliptic_latitude_difference_deg": 4.841253,
+        "longitude_conjunction_instant": "2027-09-04T10:25:50.382Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -8.0614,
+        "elongation_from_sun_deg": 49.982781,
+        "elongation_direction": "evening",
+        "observability": "evening_sky",
+        "observability_label": "Evening sky, after dusk",
+        "magnitudes": {
+          "a": -8.2,
+          "b": 1.3
+        },
+        "combined_apparent_note": "At 4.84 deg the pair is an obvious naked-eye pairing but too wide for a telescope field.",
+        "sky_separation_deg": 4.841804,
+        "longitude_conjunction_instants": [
+          "2027-09-04T10:25:50.382Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": false,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Jupiter in conjunction, 3.77 deg apart",
+        "instant": "2027-09-28T12:26:31.599Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 3.772577,
+        "value_unit": "deg",
+        "days_from_query": 331.518421,
+        "pair": {
+          "a": "Moon",
+          "b": "Jupiter"
+        },
+        "separation_deg": 3.772577,
+        "separation_arcmin": 226.354592,
+        "position_angle_of_b_from_a_deg": 26.802513,
+        "ecliptic_longitude_difference_deg": 0.28489,
+        "ecliptic_latitude_difference_deg": 3.761811,
+        "longitude_conjunction_instant": "2027-09-28T12:54:49.404Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -28.296751,
+        "elongation_from_sun_deg": 21.870619,
+        "elongation_direction": "morning",
+        "observability": "morning_sky",
+        "observability_label": "Morning sky, before dawn",
+        "magnitudes": {
+          "a": -6.2,
+          "b": -1.7
+        },
+        "combined_apparent_note": "At 3.77 deg the pair is an obvious naked-eye pairing but too wide for a telescope field.",
+        "sky_separation_deg": 3.772577,
+        "longitude_conjunction_instants": [
+          "2027-09-28T12:54:49.404Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": true,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Venus in conjunction, 5.70 deg apart",
+        "instant": "2027-10-01T02:33:12.253Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 5.70349,
+        "value_unit": "deg",
+        "days_from_query": 334.106392,
+        "pair": {
+          "a": "Moon",
+          "b": "Venus"
+        },
+        "separation_deg": 5.70349,
+        "separation_arcmin": 342.20941,
+        "position_angle_of_b_from_a_deg": 24.012668,
+        "ecliptic_longitude_difference_deg": 0.164116,
+        "ecliptic_latitude_difference_deg": 5.701133,
+        "longitude_conjunction_instant": "2027-10-01T02:51:25.240Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -18.216453,
+        "elongation_from_sun_deg": 14.183588,
+        "elongation_direction": "evening",
+        "observability": "glare",
+        "observability_label": "Lost in the Sun's glare",
+        "magnitudes": {
+          "a": -5.5,
+          "b": -3.9
+        },
+        "combined_apparent_note": "At 5.70 deg the pair is a wide pairing, but it sits only 14.2 deg from the Sun and is lost in the glare. Sweeping for it with a telescope or binocular risks putting the Sun in the field, so it is not an observing target.",
+        "sky_separation_deg": 5.70349,
+        "longitude_conjunction_instants": [
+          "2027-10-01T02:51:25.240Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": true,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Mercury in conjunction, 1.65 deg apart",
+        "instant": "2027-10-01T23:21:06.351Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 1.646072,
+        "value_unit": "deg",
+        "days_from_query": 334.97299,
+        "pair": {
+          "a": "Moon",
+          "b": "Mercury"
+        },
+        "separation_deg": 1.646072,
+        "separation_arcmin": 98.764313,
+        "position_angle_of_b_from_a_deg": 20.72448,
+        "ecliptic_longitude_difference_deg": 0.009545,
+        "ecliptic_latitude_difference_deg": 1.646044,
+        "longitude_conjunction_instant": "2027-10-01T23:22:08.149Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -1.02997,
+        "elongation_from_sun_deg": 25.173146,
+        "elongation_direction": "evening",
+        "observability": "evening_sky",
+        "observability_label": "Evening sky, after dusk",
+        "magnitudes": {
+          "a": -6.5,
+          "b": 0.2
+        },
+        "combined_apparent_note": "At 98.8 arcmin the pair is a close naked-eye pairing and fits in most binoculars.",
+        "sky_separation_deg": 1.646072,
+        "longitude_conjunction_instants": [
+          "2027-10-01T23:22:08.149Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": true,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Mars in conjunction, 4.36 deg apart",
+        "instant": "2027-10-03T06:52:10.058Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 4.364835,
+        "value_unit": "deg",
+        "days_from_query": 336.286228,
+        "pair": {
+          "a": "Moon",
+          "b": "Mars"
+        },
+        "separation_deg": 4.364835,
+        "separation_arcmin": 261.8901,
+        "position_angle_of_b_from_a_deg": 14.580957,
+        "ecliptic_longitude_difference_deg": -0.085622,
+        "ecliptic_latitude_difference_deg": 4.363998,
+        "longitude_conjunction_instant": "2027-10-03T06:42:25.809Z",
+        "minimum_offset_from_longitude_conjunction_minutes": 9.737491,
+        "elongation_from_sun_deg": 41.551269,
+        "elongation_direction": "evening",
+        "observability": "evening_sky",
+        "observability_label": "Evening sky, after dusk",
+        "magnitudes": {
+          "a": -7.7,
+          "b": 1.4
+        },
+        "combined_apparent_note": "At 4.36 deg the pair is an obvious naked-eye pairing but too wide for a telescope field.",
+        "sky_separation_deg": 4.364835,
+        "longitude_conjunction_instants": [
+          "2027-10-03T06:42:25.809Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": false,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Mercury and Venus in conjunction, 3.78 deg apart",
+        "instant": "2027-10-11T14:15:03.740Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 3.78323,
+        "value_unit": "deg",
+        "days_from_query": 344.593793,
+        "pair": {
+          "a": "Mercury",
+          "b": "Venus"
+        },
+        "separation_deg": 3.78323,
+        "separation_arcmin": 226.993814,
+        "position_angle_of_b_from_a_deg": 25.266825,
+        "ecliptic_longitude_difference_deg": 0.342469,
+        "ecliptic_latitude_difference_deg": 3.767712,
+        "longitude_conjunction_instant": "2027-10-11T09:33:12.770Z",
+        "minimum_offset_from_longitude_conjunction_minutes": 281.849496,
+        "elongation_from_sun_deg": 16.193636,
+        "elongation_direction": "evening",
+        "observability": "evening_sky",
+        "observability_label": "Evening sky, after dusk",
+        "magnitudes": {
+          "a": 1.5,
+          "b": -3.8
+        },
+        "combined_apparent_note": "At 3.78 deg the pair is an obvious naked-eye pairing but too wide for a telescope field.",
+        "sky_separation_deg": 3.78323,
+        "longitude_conjunction_instants": [
+          "2027-10-11T09:33:12.770Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": null,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Jupiter in conjunction, 4.35 deg apart",
+        "instant": "2027-10-26T05:46:34.895Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 4.345949,
+        "value_unit": "deg",
+        "days_from_query": 359.240682,
+        "pair": {
+          "a": "Moon",
+          "b": "Jupiter"
+        },
+        "separation_deg": 4.345949,
+        "separation_arcmin": 260.756941,
+        "position_angle_of_b_from_a_deg": 26.815281,
+        "ecliptic_longitude_difference_deg": 0.290128,
+        "ecliptic_latitude_difference_deg": 4.336263,
+        "longitude_conjunction_instant": "2027-10-26T06:16:13.242Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -29.639124,
+        "elongation_from_sun_deg": 43.72898,
+        "elongation_direction": "morning",
+        "observability": "morning_sky",
+        "observability_label": "Morning sky, before dawn",
+        "magnitudes": {
+          "a": -7.9,
+          "b": -1.8
+        },
+        "combined_apparent_note": "At 4.35 deg the pair is an obvious naked-eye pairing but too wide for a telescope field.",
+        "sky_separation_deg": 4.345949,
+        "longitude_conjunction_instants": [
+          "2027-10-26T06:16:13.242Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": false,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Mercury in conjunction, 6.10 deg apart",
+        "instant": "2027-10-28T08:36:59.665Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 6.103097,
+        "value_unit": "deg",
+        "days_from_query": 361.359024,
+        "pair": {
+          "a": "Moon",
+          "b": "Mercury"
+        },
+        "separation_deg": 6.103097,
+        "separation_arcmin": 366.185822,
+        "position_angle_of_b_from_a_deg": 25.033525,
+        "ecliptic_longitude_difference_deg": 0.259722,
+        "ecliptic_latitude_difference_deg": 6.097578,
+        "longitude_conjunction_instant": "2027-10-28T09:03:29.123Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -26.490963,
+        "elongation_from_sun_deg": 16.329689,
+        "elongation_direction": "morning",
+        "observability": "morning_sky",
+        "observability_label": "Morning sky, before dawn",
+        "magnitudes": {
+          "a": -5.7,
+          "b": 0.6
+        },
+        "combined_apparent_note": "At 6.10 deg the pair is an obvious naked-eye pairing but too wide for a telescope field.",
+        "sky_separation_deg": 6.103097,
+        "longitude_conjunction_instants": [
+          "2027-10-28T09:03:29.123Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": true,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Venus in conjunction, 4.34 deg apart",
+        "instant": "2027-10-31T06:21:02.112Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 4.335246,
+        "value_unit": "deg",
+        "days_from_query": 364.264608,
+        "pair": {
+          "a": "Moon",
+          "b": "Venus"
+        },
+        "separation_deg": 4.335246,
+        "separation_arcmin": 260.114736,
+        "position_angle_of_b_from_a_deg": 10.76178,
+        "ecliptic_longitude_difference_deg": -0.173189,
+        "ecliptic_latitude_difference_deg": 4.331793,
+        "longitude_conjunction_instant": "2027-10-31T06:00:15.277Z",
+        "minimum_offset_from_longitude_conjunction_minutes": 20.780582,
+        "elongation_from_sun_deg": 21.74501,
+        "elongation_direction": "evening",
+        "observability": "evening_sky",
+        "observability_label": "Evening sky, after dusk",
+        "magnitudes": {
+          "a": -6.1,
+          "b": -3.8
+        },
+        "combined_apparent_note": "At 4.34 deg the pair is an obvious naked-eye pairing but too wide for a telescope field.",
+        "sky_separation_deg": 4.335246,
+        "longitude_conjunction_instants": [
+          "2027-10-31T06:00:15.277Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": true,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Mars in conjunction, 3.24 deg apart",
+        "instant": "2027-11-01T06:22:04.364Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 3.240954,
+        "value_unit": "deg",
+        "days_from_query": 365.265328,
+        "pair": {
+          "a": "Moon",
+          "b": "Mars"
+        },
+        "separation_deg": 3.240954,
+        "separation_arcmin": 194.457266,
+        "position_angle_of_b_from_a_deg": 4.79216,
+        "ecliptic_longitude_difference_deg": -0.175906,
+        "ecliptic_latitude_difference_deg": 3.236187,
+        "longitude_conjunction_instant": "2027-11-01T06:01:13.681Z",
+        "minimum_offset_from_longitude_conjunction_minutes": 20.844719,
+        "elongation_from_sun_deg": 33.558229,
+        "elongation_direction": "evening",
+        "observability": "evening_sky",
+        "observability_label": "Evening sky, after dusk",
+        "magnitudes": {
+          "a": -7.1,
+          "b": 1.3
+        },
+        "combined_apparent_note": "At 3.24 deg the pair is an obvious naked-eye pairing but too wide for a telescope field.",
+        "sky_separation_deg": 3.240954,
+        "longitude_conjunction_instants": [
+          "2027-11-01T06:01:13.681Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": false,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Jupiter in conjunction, 4.93 deg apart",
+        "instant": "2027-11-22T19:35:46.699Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 4.925186,
+        "value_unit": "deg",
+        "days_from_query": 386.816513,
+        "pair": {
+          "a": "Moon",
+          "b": "Jupiter"
+        },
+        "separation_deg": 4.925186,
+        "separation_arcmin": 295.511151,
+        "position_angle_of_b_from_a_deg": 26.672521,
+        "ecliptic_longitude_difference_deg": 0.291282,
+        "ecliptic_latitude_difference_deg": 4.916575,
+        "longitude_conjunction_instant": "2027-11-22T20:06:09.572Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -30.381224,
+        "elongation_from_sun_deg": 66.864595,
+        "elongation_direction": "morning",
+        "observability": "morning_sky",
+        "observability_label": "Morning sky, before dawn",
+        "magnitudes": {
+          "a": -9.2,
+          "b": -1.9
+        },
+        "combined_apparent_note": "At 4.93 deg the pair is an obvious naked-eye pairing but too wide for a telescope field.",
+        "sky_separation_deg": 4.925186,
+        "longitude_conjunction_instants": [
+          "2027-11-22T20:06:09.572Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": false,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Venus and Mars in conjunction, 0.31 deg apart",
+        "instant": "2027-11-25T00:39:52.629Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 0.309702,
+        "value_unit": "deg",
+        "days_from_query": 389.027692,
+        "pair": {
+          "a": "Venus",
+          "b": "Mars"
+        },
+        "separation_deg": 0.309702,
+        "separation_arcmin": 18.582114,
+        "position_angle_of_b_from_a_deg": 3.702877,
+        "ecliptic_longitude_difference_deg": 0.018623,
+        "ecliptic_latitude_difference_deg": 0.309142,
+        "longitude_conjunction_instant": "2027-11-25T01:35:20.781Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -55.4692,
+        "elongation_from_sun_deg": 26.94355,
+        "elongation_direction": "evening",
+        "observability": "evening_sky",
+        "observability_label": "Evening sky, after dusk",
+        "magnitudes": {
+          "a": -3.9,
+          "b": 1.3
+        },
+        "combined_apparent_note": "At 18.6 arcmin the pair fits inside a single low-power telescope field.",
+        "href": "https://www.cyclecalcs.com/conjunctions/venus-mars.html",
+        "sky_separation_deg": 0.309702,
+        "longitude_conjunction_instants": [
+          "2027-11-25T01:35:20.781Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": null,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Moon and Mercury in conjunction, 5.06 deg apart",
+        "instant": "2027-11-27T11:52:44.204Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 5.057049,
+        "value_unit": "deg",
+        "days_from_query": 391.494956,
+        "pair": {
+          "a": "Moon",
+          "b": "Mercury"
+        },
+        "separation_deg": 5.057049,
+        "separation_arcmin": 303.422955,
+        "position_angle_of_b_from_a_deg": 10.819047,
+        "ecliptic_longitude_difference_deg": -0.24965,
+        "ecliptic_latitude_difference_deg": 5.050896,
+        "longitude_conjunction_instant": "2027-11-27T11:21:42.626Z",
+        "minimum_offset_from_longitude_conjunction_minutes": 31.026298,
+        "elongation_from_sun_deg": 9.086889,
+        "elongation_direction": "morning",
+        "observability": "glare",
+        "observability_label": "Lost in the Sun's glare",
+        "magnitudes": {
+          "a": -4.9,
+          "b": -0.9
+        },
+        "combined_apparent_note": "At 5.06 deg the pair is a wide pairing, but it sits only 9.1 deg from the Sun and is lost in the glare. Sweeping for it with a telescope or binocular risks putting the Sun in the field, so it is not an observing target.",
+        "sky_separation_deg": 5.057049,
+        "longitude_conjunction_instants": [
+          "2027-11-27T11:21:42.626Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": true,
+          "b": null
+        }
+      }
+    ]
+  },
+  "warnings": [
+    {
+      "code": "no_search_result",
+      "message": "3 of the 15 pairs had no approach inside 6.4 deg in this window: Mercury-Mars, Mars-Saturn, Jupiter-Saturn.",
+      "field": "approaches",
+      "value": null
+    }
+  ],
+  "links": {
+    "self": "https://www.cyclecalcs.com/v2/conjunctions?bodies=moon%2Cmercury%2Cvenus%2Cmars%2Cjupiter%2Csaturn&end=2027-11-30&frame=apparent&limit=500&max_separation_deg=6.4&pretty=1&sort=time&start=2026-11-01",
+    "docs": "https://www.cyclecalcs.com/api/reference.html#conjunctions",
+    "spec": "https://www.cyclecalcs.com/v2/openapi.json",
+    "page": "https://www.cyclecalcs.com/conjunctions/",
+    "related": [
+      {
+        "rel": "endpoint",
+        "title": "Separation between Moon and Mercury across this window",
+        "href": "https://www.cyclecalcs.com/v2/separation?a=moon&b=mercury&start=2026-11-01&end=2027-11-30"
+      },
+      {
+        "rel": "endpoint",
+        "title": "All eight planets at one instant",
+        "href": "https://www.cyclecalcs.com/v2/planet-board"
+      }
+    ]
+  },
+  "meta": {
+    "api_version": "2",
+    "contract_version": "2.7.0",
+    "engine": {
+      "name": "Astronomy Engine",
+      "license": "MIT",
+      "author": "Don Cross",
+      "version": "2.1.19",
+      "version_source": "upstream_sha256_match",
+      "sha256": "068f1445ed0c636c94818fe6d20d7d125120e605e0bab9fc4675c3d531be5ad7",
+      "vendored": true,
+      "credit": "astronomy-engine (MIT, Copyright (c) 2019-2023 Don Cross)"
+    },
+    "tzdb": "2026e",
+    "rights": "unrestricted",
+    "attribution": {
+      "required": false,
+      "text": "Computed by CycleCalcs (cyclecalcs.com) with the MIT-licensed Astronomy Engine. Positional astronomy only.",
+      "sources": []
+    },
+    "notice_url": "https://www.cyclecalcs.com/methodology.html#data-sources",
+    "cache": {
+      "class": "fixed_instant",
+      "deterministic": true
+    },
+    "accuracy": {
+      "statement": "Positions are arcminute class for the Sun, Moon and planets across 1700 to 2200, degrading toward the ends of that window.",
+      "residuals_url": "https://www.cyclecalcs.com/api/accuracy.html"
+    },
+    "time": {
+      "scale_of_input": "UTC",
+      "ut1_source": "assumed equal to UTC: a time you give is read as UT1, and UT1 minus UTC stays under 0.9 s",
+      "delta_t_seconds": 69.2,
+      "delta_t_model": "IERS, Espenak-Meeus"
+    },
+    "frames": {
+      "equatorial_of_date": "true equator and equinox of date (EQD), nutation applied",
+      "ecliptic": "true ecliptic and equinox of date (ECT)"
+    },
+    "corrections": {
+      "aberration": true,
+      "light_travel_time": true,
+      "nutation": true,
+      "topocentric_parallax": false,
+      "proper_motion": false,
+      "polar_motion": false,
+      "light_deflection": false
+    },
+    "conventions": {
+      "coincidence_rule": "basin",
+      "coincidence_rule_note": "A separation minimum is a conjunction when the apparent geocentric ecliptic longitudes of the two bodies are equal at some instant in its basin, the span between the separation maxima either side of it, searched no further than 180 days either way at a 1-day stride (0.25 day with the Moon). Every such crossing is listed in longitude_conjunction_instants and the nearest is longitude_conjunction_instant. A minimum whose basin holds no crossing is a close_approach.",
+      "basin_cap_days": 180,
+      "basin_stride_days": 1,
+      "basin_stride_days_with_moon": 0.25,
+      "coincidence_tolerance_hours": 24,
+      "coincidence_tolerance_note": "Retired in contract 2.1.0 and kept only so existing readers do not break: it no longer affects any row. It was the window around a minimum inside which a longitude crossing had to fall, and it misclassified slow pairs and pairs near a station, whose least separation can fall days or weeks from the crossing. See coincidence_rule.",
+      "minimum_precision_seconds": 1,
+      "separation_arcmin_note": "separation_arcmin is separation_deg times 60 and carries no independent measurement.",
+      "sky_separation_note": "sky_separation_deg is the true angle between the two apparent directions at the instant. It equals separation_deg except with frame=ecliptic, where separation_deg is the longitude difference alone and sky_separation_deg is geocentric, even with a location, the same origin as the longitude test and ecliptic_latitude_difference_deg. label and combined_apparent_note always describe the sky separation."
+    },
+    "method": {
+      "search": "The separation is sampled on the requested stride, every local minimum is bracketed on the SIGN OF ITS SLOPE, and each bracket is refined by golden section to a one-second window. max_separation_deg filters the result and never enters the search, so lowering it cannot move or invent a minimum.",
+      "frame": "Separation is the true angle between the two apparent directions.",
+      "longitudes": "Every longitude is the apparent geocentric ecliptic longitude of date that /v2/positions reports: light time and aberration applied, true ecliptic and equinox of date.",
+      "shared_module": "Every search runs through netlify/lib/v2/stations.mjs, the same module /v2/separation uses, so the two endpoints cannot report different instants for the same event."
+    },
+    "budget": {
+      "engine_calls": 56816
+    }
+  },
+  "attribution": "Computed by CycleCalcs (cyclecalcs.com) with the MIT-licensed Astronomy Engine. Positional astronomy only.",
+  "docs": "https://www.cyclecalcs.com/api/reference.html#conjunctions"
+}

@@ -8,7 +8,7 @@ const { test, expect } = require('@playwright/test');
 const { celestrak } = require('./yardim');
 
 const SABIT_AN = new Date('2026-10-27T21:00:00+03:00');
-const KONUM = { ad: 'Fetih Mahallesi, Ataşehir', enlem: 41.0046, boylam: 29.0762, yukseklik: 20, oto: false, saatDilimi: 'Europe/Istanbul' };
+const KONUM = { ad: 'İstanbul', enlem: 41.0, boylam: 29.1, yukseklik: 20, oto: false, saatDilimi: 'Europe/Istanbul' };
 const KAYIT = { id: 'a1', zaman: '2026-10-27T18:00:00.000Z', cisim: { anahtar: 'cisim:Moon', ad: 'Ay' }, alet: '7×50 dürbün', kosul: 'Berrak', not: 'Kraterler net.',
   konum: { ad: 'Kadıköy', enlem: 40.99, boylam: 29.03, yukseklik: 0 }, otomatik: { ayOran: 50 } };
 
@@ -27,7 +27,7 @@ function sahteHava() {
 test.beforeEach(async ({ page }) => {
   await page.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
   await page.route('**/api.open-meteo.com/**', r => r.fulfill({ json: sahteHava() }));
-  await page.route('**/nominatim.openstreetmap.org/**', r => r.fulfill({ json: { address: { suburb: 'Fetih Mahallesi', town: 'Ataşehir' } } }));
+  await page.route('**/nominatim.openstreetmap.org/**', r => r.fulfill({ json: { address: { city: 'İstanbul' } } }));
   await celestrak(page);
   page.hatalar = [];
   page.on('pageerror', e => page.hatalar.push(String(e)));

@@ -219,7 +219,7 @@ test.describe('İnceleme düzeltmeleri (defter)', () => {
 
   test('Düzenlerken eski bulut/yağış değerleri korunur', async ({ page }) => {
     await page.goto('/index.html#defter');
-    await page.evaluate(() => localStorage.setItem('urania_defter', JSON.stringify([{ id: 'eski1', zaman: '2026-10-01T19:00:00.000Z', cisim: { anahtar: 'cisim:Moon', ad: 'Ay' }, alet: '7×50 dürbün', kosul: 'Berrak', not: '', konum: { ad: 'Fetih Mahallesi, Ataşehir', enlem: 41.0046, boylam: 29.0762, yukseklik: 20 }, otomatik: { ayOran: 50, bulut: 12, yagisOl: 5 } }])));
+    await page.evaluate(() => localStorage.setItem('urania_defter', JSON.stringify([{ id: 'eski1', zaman: '2026-10-01T19:00:00.000Z', cisim: { anahtar: 'cisim:Moon', ad: 'Ay' }, alet: '7×50 dürbün', kosul: 'Berrak', not: '', konum: { ad: 'İstanbul', enlem: 41.0, boylam: 29.1, yukseklik: 20 }, otomatik: { ayOran: 50, bulut: 12, yagisOl: 5 } }])));
     await page.reload();
     await page.locator('#dfListe button[data-is="duzenle"]').click();
     await page.locator('#dfNot').fill('Not eklendi');

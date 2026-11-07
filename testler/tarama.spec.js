@@ -51,7 +51,7 @@ for (const k of KONUMLAR) {
 
 test('Tarama: dar ekran (320 px), kırmızı mod, hava servisi hata veriyor', async ({ page }) => {
   await page.setViewportSize({ width: 320, height: 640 });
-  await hazirla(page, { ad: 'Fetih', enlem: 41.0046, boylam: 29.0762, saatDilimi: 'Europe/Istanbul' }, '2026-10-27T18:00:00Z', { havaHata: true });
+  await hazirla(page, { ad: 'İstanbul', enlem: 41.0, boylam: 29.1, saatDilimi: 'Europe/Istanbul' }, '2026-10-27T18:00:00Z', { havaHata: true });
   await page.addInitScript(() => localStorage.setItem('urania_kirmizi', 'true'));
   await bolumleriGez(page);
   for (const h of ['#gok', '#hesap', '#defter', '#ders/d11']) {
@@ -65,7 +65,7 @@ test('Tarama: dar ekran (320 px), kırmızı mod, hava servisi hata veriyor', as
 
 test('Tarama: geniş ekran (1440 px) ve gökyüzüne bak', async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 900 });
-  await hazirla(page, { ad: 'Fetih', enlem: 41.0046, boylam: 29.0762, saatDilimi: 'Europe/Istanbul' }, '2026-10-30T03:58:00Z');
+  await hazirla(page, { ad: 'İstanbul', enlem: 41.0, boylam: 29.1, saatDilimi: 'Europe/Istanbul' }, '2026-10-30T03:58:00Z');
   await bolumleriGez(page);
   await page.goto('/index.html#ar');
   await page.waitForTimeout(2000);

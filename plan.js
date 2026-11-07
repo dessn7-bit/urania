@@ -1,7 +1,7 @@
 /* plan.js — "Bu gecenin planı": gecenin cisimlerini en iyi görülecekleri saate göre sıralar.
    Ölçütler: yükseklik (alçakta hava kalınlaşır), bulut tahmini (o saatin bulut oranı),
    Ay (ışığı sönük bulutsu ve galaksileri bastırır) ve saati belli olaylar (uydu geçişi,
-   Algol'ün en sönük anı, Ay örtmesi, meteor radyantının en yüksek anı).
+   Algol'ün en sönük anı, Ay örtmesi, kavuşumun buradan en iyi görüş anı, meteor radyantının en yüksek anı).
    Puanlar sıralama içindir, birer ölçüm değildir. DOM'a dokunmaz. */
 (function (kok) {
   'use strict';
@@ -21,7 +21,7 @@
   function acikCarpan(b) { return b == null ? 1 : 1 - 0.85 * b / 100; }
   function irtifaCarpan(alt, min) { return alt < min ? 0 : Math.sin(alt * DER); }
 
-  /* g: { gzl, gece, hedefDurum, gezegenGece, ay, limitKadir, hava, uyduGecisleri, algol, ortmeler, meteorDurum, simdi }
+  /* g: { gzl, gece, hedefDurum, gezegenGece, ay, limitKadir, hava, uyduGecisleri, algol, ortmeler, kavusumlar, meteorDurum, simdi }
      simdi verilirse (canlı mod) plan geçmiş saatlerden değil şimdiden başlar. */
   function olustur(g) {
     const gece = g.gece;
@@ -101,6 +101,11 @@
         const b = o[k + 'Bilgi'];
         if (o[k] && b && b.gorunur && b.iyi !== false && icinde(o[k])) maddeler.push({ tur: 'ortme', sabit: true, zaman: o[k], ad: o.ad + (k === 'giris' ? ': Ay\'ın arkasına giriyor' : ': Ay\'ın arkasından çıkıyor'), ortme: o, kenar: b, alt: b.alt, az: b.az, bulut: bulutBul(g.hava, o[k]) });
       });
+    });
+    /* Kavuşumlar (gok.js kavusumlar): buradan en iyi görüş anında. Ay'ın gezegeni örtmesi zaten listedeyse ikinci kez yazılmaz. */
+    (g.kavusumlar || []).forEach(k => {
+      if (!k.gorus || !icinde(k.gorus.zaman) || Gok.kavusumOrtmeyleAyni(k, g.ortmeler)) return;
+      maddeler.push({ tur: 'kavusum', sabit: true, zaman: k.gorus.zaman, ad: k.baslik, kavusum: k, alt: k.gorus.alt, az: k.gorus.az, bulut: bulutBul(g.hava, k.gorus.zaman) });
     });
     (g.meteorDurum || []).filter(m => m.aktif && m.radyantTepe && m.radyantTepe.alt >= 25 && Math.abs(m.gunFark) <= 3 && icinde(m.radyantTepe.zaman))
       .slice(0, 1).forEach(m => {

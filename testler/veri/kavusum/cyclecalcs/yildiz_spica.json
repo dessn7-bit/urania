@@ -1,0 +1,411 @@
+{
+  "endpoint": "/v2/conjunctions",
+  "computed_at": "2026-08-01T00:00:00.000Z",
+  "query": {
+    "start": "2026-11-01T00:00:00.000Z",
+    "end": "2027-11-30T00:00:00.000Z",
+    "mode": "range",
+    "resolved_from": "start",
+    "latitude": null,
+    "longitude": null,
+    "elevation_m": 0,
+    "tz": "UTC",
+    "utc_offset_seconds": 0,
+    "utc_offset_iso": "+00:00",
+    "is_dst": false,
+    "timezone_source": "default",
+    "time_format": "iso",
+    "format": "json",
+    "shape": "nested",
+    "precision": 6,
+    "pretty": 1,
+    "verbosity": "full",
+    "bodies": null,
+    "pairs": [
+      "mercury-star:spica",
+      "venus-star:spica",
+      "mars-star:spica",
+      "jupiter-star:spica",
+      "saturn-star:spica"
+    ],
+    "max_separation_deg": 6.4,
+    "min_elongation_deg": 0,
+    "kind": "all",
+    "frame": "apparent",
+    "step": "6h",
+    "sort": "time",
+    "ignored": []
+  },
+  "data": {
+    "window": {
+      "start": "2026-11-01T00:00:00.000Z",
+      "end": "2027-11-30T00:00:00.000Z",
+      "measured_from": "start",
+      "length_days": 394
+    },
+    "pairs_searched": [
+      {
+        "a": "Mercury",
+        "b": "Spica"
+      },
+      {
+        "a": "Venus",
+        "b": "Spica"
+      },
+      {
+        "a": "Mars",
+        "b": "Spica"
+      },
+      {
+        "a": "Jupiter",
+        "b": "Spica"
+      },
+      {
+        "a": "Saturn",
+        "b": "Spica"
+      }
+    ],
+    "pair_count": 5,
+    "origin": "geocentric",
+    "frame": "apparent",
+    "approach_count": 6,
+    "filtered_out_count": 0,
+    "scan": {
+      "stride": "6h",
+      "samples_evaluated": 7890,
+      "refinement": "golden section to a one-second bracket",
+      "padded_by": "one stride beyond each end of the window, so an approach at the very edge is still found; minima falling outside the window are discarded",
+      "note": "Two minima closer together than the stride may be reported as one. Reduce step to separate them."
+    },
+    "approaches": [
+      {
+        "kind": "conjunction",
+        "label": "Venus and Spica in conjunction, 1.16 deg apart",
+        "instant": "2026-11-09T11:14:46.967Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 1.16254,
+        "value_unit": "deg",
+        "days_from_query": 8.468599,
+        "pair": {
+          "a": "Venus",
+          "b": "Spica"
+        },
+        "separation_deg": 1.16254,
+        "separation_arcmin": 69.752388,
+        "position_angle_of_b_from_a_deg": 75.104008,
+        "ecliptic_longitude_difference_deg": 0.931509,
+        "ecliptic_latitude_difference_deg": 0.696655,
+        "longitude_conjunction_instant": "2026-11-05T20:48:43.036Z",
+        "minimum_offset_from_longitude_conjunction_minutes": 5186.065509,
+        "elongation_from_sun_deg": 23.933633,
+        "elongation_direction": "morning",
+        "observability": "morning_sky",
+        "observability_label": "Morning sky, before dawn",
+        "magnitudes": {
+          "a": -4.6,
+          "b": 1
+        },
+        "combined_apparent_note": "At 69.8 arcmin the pair is a close naked-eye pairing and fits in most binoculars.",
+        "sky_separation_deg": 1.16254,
+        "longitude_conjunction_instants": [
+          "2026-11-05T20:48:43.036Z",
+          "2026-11-22T10:24:45.852Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": null,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Mars and Spica in conjunction, 1.89 deg apart",
+        "instant": "2027-08-24T05:02:00.206Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 1.891127,
+        "value_unit": "deg",
+        "days_from_query": 296.209725,
+        "pair": {
+          "a": "Mars",
+          "b": "Spica"
+        },
+        "separation_deg": 1.891127,
+        "separation_arcmin": 113.467612,
+        "position_angle_of_b_from_a_deg": 202.709015,
+        "ecliptic_longitude_difference_deg": -0.037449,
+        "ecliptic_latitude_difference_deg": -1.890756,
+        "longitude_conjunction_instant": "2027-08-24T03:37:43.560Z",
+        "minimum_offset_from_longitude_conjunction_minutes": 84.277438,
+        "elongation_from_sun_deg": 53.430189,
+        "elongation_direction": "evening",
+        "observability": "evening_sky",
+        "observability_label": "Evening sky, after dusk",
+        "magnitudes": {
+          "a": 1.3,
+          "b": 1
+        },
+        "combined_apparent_note": "At 113.5 arcmin the pair is a close naked-eye pairing and fits in most binoculars.",
+        "sky_separation_deg": 1.891127,
+        "longitude_conjunction_instants": [
+          "2027-08-24T03:37:43.560Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": null,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Mercury and Spica in conjunction, 0.30 deg apart",
+        "instant": "2027-09-21T11:38:36.549Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 0.304747,
+        "value_unit": "deg",
+        "days_from_query": 324.485145,
+        "pair": {
+          "a": "Mercury",
+          "b": "Spica"
+        },
+        "separation_deg": 0.304747,
+        "separation_arcmin": 18.284796,
+        "position_angle_of_b_from_a_deg": 28.204583,
+        "ecliptic_longitude_difference_deg": 0.034349,
+        "ecliptic_latitude_difference_deg": 0.302807,
+        "longitude_conjunction_instant": "2027-09-21T12:23:30.819Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -44.9045,
+        "elongation_from_sun_deg": 26.019125,
+        "elongation_direction": "evening",
+        "observability": "evening_sky",
+        "observability_label": "Evening sky, after dusk",
+        "magnitudes": {
+          "a": 0,
+          "b": 1
+        },
+        "combined_apparent_note": "At 18.3 arcmin the pair fits inside a single low-power telescope field.",
+        "sky_separation_deg": 0.304747,
+        "longitude_conjunction_instants": [
+          "2027-09-21T12:23:30.819Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": null,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Venus and Spica in conjunction, 2.87 deg apart",
+        "instant": "2027-10-03T13:58:31.847Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 2.865103,
+        "value_unit": "deg",
+        "days_from_query": 336.582313,
+        "pair": {
+          "a": "Venus",
+          "b": "Spica"
+        },
+        "separation_deg": 2.865103,
+        "separation_arcmin": 171.906198,
+        "position_angle_of_b_from_a_deg": 203.051676,
+        "ecliptic_longitude_difference_deg": -0.077026,
+        "ecliptic_latitude_difference_deg": -2.864068,
+        "longitude_conjunction_instant": "2027-10-03T12:29:16.922Z",
+        "minimum_offset_from_longitude_conjunction_minutes": 89.248753,
+        "elongation_from_sun_deg": 14.185446,
+        "elongation_direction": "evening",
+        "observability": "glare",
+        "observability_label": "Lost in the Sun's glare",
+        "magnitudes": {
+          "a": -3.9,
+          "b": 1
+        },
+        "combined_apparent_note": "At 2.87 deg the pair is a wide pairing, but it sits only 14.2 deg from the Sun and is lost in the glare. Sweeping for it with a telescope or binocular risks putting the Sun in the field, so it is not an observing target.",
+        "sky_separation_deg": 2.865103,
+        "longitude_conjunction_instants": [
+          "2027-10-03T12:29:16.922Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": null,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Mercury and Spica in conjunction, 1.18 deg apart",
+        "instant": "2027-10-20T20:30:13.647Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 1.179095,
+        "value_unit": "deg",
+        "days_from_query": 353.854325,
+        "pair": {
+          "a": "Mercury",
+          "b": "Spica"
+        },
+        "separation_deg": 1.179095,
+        "separation_arcmin": 70.745719,
+        "position_angle_of_b_from_a_deg": 217.757845,
+        "ecliptic_longitude_difference_deg": -0.32873,
+        "ecliptic_latitude_difference_deg": -1.132378,
+        "longitude_conjunction_instant": "2027-10-21T03:11:46.081Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -401.540569,
+        "elongation_from_sun_deg": 2.821029,
+        "elongation_direction": "morning",
+        "observability": "glare",
+        "observability_label": "Lost in the Sun's glare",
+        "magnitudes": {
+          "a": 5.5,
+          "b": 1
+        },
+        "combined_apparent_note": "At 70.7 arcmin the pair is close, but it sits only 2.8 deg from the Sun and is lost in the glare. Sweeping for it with a telescope or binocular risks putting the Sun in the field, so it is not an observing target.",
+        "sky_separation_deg": 1.179095,
+        "longitude_conjunction_instants": [
+          "2027-10-21T03:11:46.081Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": null,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Mercury and Spica in conjunction, 4.27 deg apart",
+        "instant": "2027-11-05T09:59:08.953Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 4.267441,
+        "value_unit": "deg",
+        "days_from_query": 369.416076,
+        "pair": {
+          "a": "Mercury",
+          "b": "Spica"
+        },
+        "separation_deg": 4.267441,
+        "separation_arcmin": 256.046445,
+        "position_angle_of_b_from_a_deg": 200.698983,
+        "ecliptic_longitude_difference_deg": 0.056655,
+        "ecliptic_latitude_difference_deg": -4.267065,
+        "longitude_conjunction_instant": "2027-11-05T11:12:52.389Z",
+        "minimum_offset_from_longitude_conjunction_minutes": -73.72394,
+        "elongation_from_sun_deg": 18.712854,
+        "elongation_direction": "morning",
+        "observability": "morning_sky",
+        "observability_label": "Morning sky, before dawn",
+        "magnitudes": {
+          "a": -0.7,
+          "b": 1
+        },
+        "combined_apparent_note": "At 4.27 deg the pair is an obvious naked-eye pairing but too wide for a telescope field.",
+        "sky_separation_deg": 4.267441,
+        "longitude_conjunction_instants": [
+          "2027-11-05T11:12:52.389Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": null,
+          "b": null
+        }
+      }
+    ]
+  },
+  "warnings": [
+    {
+      "code": "no_search_result",
+      "message": "2 of the 5 pairs had no approach inside 6.4 deg in this window: Jupiter-Spica, Saturn-Spica.",
+      "field": "approaches",
+      "value": null
+    }
+  ],
+  "links": {
+    "self": "https://www.cyclecalcs.com/v2/conjunctions?end=2027-11-30&frame=apparent&limit=500&max_separation_deg=6.4&pairs=mercury-star%3Aspica%2Cvenus-star%3Aspica%2Cmars-star%3Aspica%2Cjupiter-star%3Aspica%2Csaturn-star%3Aspica&pretty=1&sort=time&start=2026-11-01",
+    "docs": "https://www.cyclecalcs.com/api/reference.html#conjunctions",
+    "spec": "https://www.cyclecalcs.com/v2/openapi.json",
+    "page": "https://www.cyclecalcs.com/conjunctions/",
+    "related": [
+      {
+        "rel": "endpoint",
+        "title": "Separation between Mercury and star:spica across this window",
+        "href": "https://www.cyclecalcs.com/v2/separation?a=mercury&b=star%3Aspica&start=2026-11-01&end=2027-11-30"
+      },
+      {
+        "rel": "endpoint",
+        "title": "All eight planets at one instant",
+        "href": "https://www.cyclecalcs.com/v2/planet-board"
+      }
+    ]
+  },
+  "meta": {
+    "api_version": "2",
+    "contract_version": "2.7.0",
+    "engine": {
+      "name": "Astronomy Engine",
+      "license": "MIT",
+      "author": "Don Cross",
+      "version": "2.1.19",
+      "version_source": "upstream_sha256_match",
+      "sha256": "068f1445ed0c636c94818fe6d20d7d125120e605e0bab9fc4675c3d531be5ad7",
+      "vendored": true,
+      "credit": "astronomy-engine (MIT, Copyright (c) 2019-2023 Don Cross)"
+    },
+    "tzdb": "2026e",
+    "rights": "unrestricted",
+    "attribution": {
+      "required": false,
+      "text": "Computed by CycleCalcs (cyclecalcs.com) with the MIT-licensed Astronomy Engine. Positional astronomy only.",
+      "sources": []
+    },
+    "notice_url": "https://www.cyclecalcs.com/methodology.html#data-sources",
+    "cache": {
+      "class": "fixed_instant",
+      "deterministic": true
+    },
+    "accuracy": {
+      "statement": "Positions are arcminute class for the Sun, Moon and planets across 1700 to 2200, degrading toward the ends of that window.",
+      "residuals_url": "https://www.cyclecalcs.com/api/accuracy.html"
+    },
+    "time": {
+      "scale_of_input": "UTC",
+      "ut1_source": "assumed equal to UTC: a time you give is read as UT1, and UT1 minus UTC stays under 0.9 s",
+      "delta_t_seconds": 69.2,
+      "delta_t_model": "IERS, Espenak-Meeus"
+    },
+    "frames": {
+      "equatorial_of_date": "true equator and equinox of date (EQD), nutation applied",
+      "ecliptic": "true ecliptic and equinox of date (ECT)"
+    },
+    "corrections": {
+      "aberration": true,
+      "light_travel_time": true,
+      "nutation": true,
+      "topocentric_parallax": false,
+      "proper_motion": true,
+      "polar_motion": false,
+      "light_deflection": false,
+      "scope_note": "A named star starts from its Bright Star Catalog place at epoch J2000.0 and is moved to the requested instant by its catalog proper motion, parallax and radial velocity. A fixed target then takes the same final steps as a Solar System body: annual parallax, annual aberration, and precession and nutation to the equinox of date. Light-travel time is applied to the Solar System bodies only, because a catalog place is already the direction its light arrives from. proper_motion describes the named stars only."
+    },
+    "conventions": {
+      "coincidence_rule": "basin",
+      "coincidence_rule_note": "A separation minimum is a conjunction when the apparent geocentric ecliptic longitudes of the two bodies are equal at some instant in its basin, the span between the separation maxima either side of it, searched no further than 180 days either way at a 1-day stride (0.25 day with the Moon). Every such crossing is listed in longitude_conjunction_instants and the nearest is longitude_conjunction_instant. A minimum whose basin holds no crossing is a close_approach.",
+      "basin_cap_days": 180,
+      "basin_stride_days": 1,
+      "basin_stride_days_with_moon": 0.25,
+      "coincidence_tolerance_hours": 24,
+      "coincidence_tolerance_note": "Retired in contract 2.1.0 and kept only so existing readers do not break: it no longer affects any row. It was the window around a minimum inside which a longitude crossing had to fall, and it misclassified slow pairs and pairs near a station, whose least separation can fall days or weeks from the crossing. See coincidence_rule.",
+      "minimum_precision_seconds": 1,
+      "separation_arcmin_note": "separation_arcmin is separation_deg times 60 and carries no independent measurement.",
+      "sky_separation_note": "sky_separation_deg is the true angle between the two apparent directions at the instant. It equals separation_deg except with frame=ecliptic, where separation_deg is the longitude difference alone and sky_separation_deg is geocentric, even with a location, the same origin as the longitude test and ecliptic_latitude_difference_deg. label and combined_apparent_note always describe the sky separation."
+    },
+    "method": {
+      "search": "The separation is sampled on the requested stride, every local minimum is bracketed on the SIGN OF ITS SLOPE, and each bracket is refined by golden section to a one-second window. max_separation_deg filters the result and never enters the search, so lowering it cannot move or invent a minimum.",
+      "frame": "Separation is the true angle between the two apparent directions.",
+      "longitudes": "Every longitude is the apparent geocentric ecliptic longitude of date that /v2/positions reports: light time and aberration applied, true ecliptic and equinox of date.",
+      "shared_module": "Every search runs through netlify/lib/v2/stations.mjs, the same module /v2/separation uses, so the two endpoints cannot report different instants for the same event."
+    },
+    "budget": {
+      "engine_calls": 17344
+    }
+  },
+  "attribution": "Computed by CycleCalcs (cyclecalcs.com) with the MIT-licensed Astronomy Engine. Positional astronomy only.",
+  "docs": "https://www.cyclecalcs.com/api/reference.html#conjunctions"
+}

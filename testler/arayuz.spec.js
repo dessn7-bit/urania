@@ -41,7 +41,7 @@ test('Gökyüzü: levha çizilir, özet ve listeler dolar', async ({ page }) => 
 test('Gökyüzü: saat kaydırıcısı levhayı ve saati değiştirir', async ({ page }) => {
   await page.goto('/index.html#gok');
   await expect(page.locator('#gkSaat')).toContainText('21:00');
-  /* Kaydırıcı gözlemcinin güneş öğlesinden (Fetih Mah., Ataşehir: 13:00 TSİ'ye yuvarlanır) başlar: +14 sa = 03:00 */
+  /* Kaydırıcı gözlemcinin güneş öğlesinden (İstanbul 29,1° D: 10:04 UT → tam saate yuvarlanınca 13:00 TSİ) başlar: +14 sa = 03:00 */
   await page.locator('#gkKaydir').fill('840');
   await expect(page.locator('#gkSaat')).toContainText('03:00');
   await page.locator('#gkSimdi').click();
@@ -145,7 +145,7 @@ test('Telefon genişliğinde yatay kaydırma yok', async ({ page }) => {
 test('İnceleme düzeltmeleri: bozuk konum kaydı uygulamayı düşürmez', async ({ page }) => {
   await page.addInitScript(() => localStorage.setItem('urania_konum', JSON.stringify({ ad: 'x' })));
   await page.goto('/index.html#gok');
-  await expect(page.locator('#gkKonum')).toContainText('Fetih Mahallesi');
+  await expect(page.locator('#gkKonum')).toContainText('İstanbul');
   await expect(page.locator('#gkGezegen li')).toHaveCount(7);
 });
 
@@ -212,7 +212,7 @@ test('Tanı ekranı: rapor oluşur, yön olayı sayılır, kopyalanır', async (
   await expect(page.locator('#tnPusula')).toContainText('330°');
   await page.locator('#tnYenile').click();
   await expect(page.locator('#tnRapor')).toContainText('olay 5');
-  await expect(page.locator('#tnRapor')).toContainText('KONUM: Fetih Mahallesi');
+  await expect(page.locator('#tnRapor')).toContainText('KONUM: İstanbul');
   await page.locator('#tnKopyala').click();
   await expect(page.locator('#tnDurum')).toContainText('Kopyalandı');
   const pano = await page.evaluate(() => navigator.clipboard.readText());

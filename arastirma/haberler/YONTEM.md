@@ -1,6 +1,6 @@
 # Urania "Haberler" sekmesi — haber ekleme yöntemi
 
-This is the standing procedure for adding astronomy news to Urania. The first set was written on 30 October 2026, and a weekly scheduled task follows this file. Kaan reads Turkish and is a curious adult with no physics background. He lives in Istanbul (Fetih Mahallesi, Ataşehir) and owns 7×50 binoculars.
+This is the standing procedure for adding astronomy news to Urania. The first set was written on 30 October 2026, and a weekly scheduled task follows this file. Kaan reads Turkish and is a curious adult with no physics background. He lives in Istanbul (Anatolian side; the app stores the location only at district level, 41.0 N 29.1 E) and owns 7×50 binoculars.
 
 ## Where the data lives
 `veri/haberler.json`:

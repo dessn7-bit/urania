@@ -19,7 +19,7 @@
        https://www.bresser.com/p/bresser-7x50-travel-binoculars-1250752
      Kaynaklar 6,4–7,0° arasında ayrışıyor; temkinli olarak en küçüğü (6,4°) kullanılır: adımlar kısa kalır,
      haritadaki daire gerçek alandan büyük çizilmez (alanı daha geniş bir dürbünde hedef rahatça girer). */
-  const DURBUN_ALANI = 6.4;
+  const DURBUN_ALANI = G.DURBUN_ALANI;   // 6,4 — tek kaynak gok.js (kavuşum eşiği de aynı değer)
   const YILDIZ_SINIR = 6;      // haritaya çizilen en sönük yıldız (kadir)
   const BASAMAK_SINIR = 5;     // ara basamak yıldızı: şehir/banliyö gökünde dürbünle hemen seçilen yıldızlar
   const YAKIN = 16;            // başlangıç yıldızı için "yakın" sayılan uzaklık (°)

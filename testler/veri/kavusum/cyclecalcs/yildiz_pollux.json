@@ -1,0 +1,258 @@
+{
+  "endpoint": "/v2/conjunctions",
+  "computed_at": "2026-08-01T00:00:00.000Z",
+  "query": {
+    "start": "2026-11-01T00:00:00.000Z",
+    "end": "2027-11-30T00:00:00.000Z",
+    "mode": "range",
+    "resolved_from": "start",
+    "latitude": null,
+    "longitude": null,
+    "elevation_m": 0,
+    "tz": "UTC",
+    "utc_offset_seconds": 0,
+    "utc_offset_iso": "+00:00",
+    "is_dst": false,
+    "timezone_source": "default",
+    "time_format": "iso",
+    "format": "json",
+    "shape": "nested",
+    "precision": 6,
+    "pretty": 1,
+    "verbosity": "full",
+    "bodies": null,
+    "pairs": [
+      "mercury-star:pollux",
+      "venus-star:pollux",
+      "mars-star:pollux",
+      "jupiter-star:pollux",
+      "saturn-star:pollux"
+    ],
+    "max_separation_deg": 6.4,
+    "min_elongation_deg": 0,
+    "kind": "all",
+    "frame": "apparent",
+    "step": "6h",
+    "sort": "time",
+    "ignored": []
+  },
+  "data": {
+    "window": {
+      "start": "2026-11-01T00:00:00.000Z",
+      "end": "2027-11-30T00:00:00.000Z",
+      "measured_from": "start",
+      "length_days": 394
+    },
+    "pairs_searched": [
+      {
+        "a": "Mercury",
+        "b": "Pollux"
+      },
+      {
+        "a": "Venus",
+        "b": "Pollux"
+      },
+      {
+        "a": "Mars",
+        "b": "Pollux"
+      },
+      {
+        "a": "Jupiter",
+        "b": "Pollux"
+      },
+      {
+        "a": "Saturn",
+        "b": "Pollux"
+      }
+    ],
+    "pair_count": 5,
+    "origin": "geocentric",
+    "frame": "apparent",
+    "approach_count": 2,
+    "filtered_out_count": 0,
+    "scan": {
+      "stride": "6h",
+      "samples_evaluated": 7890,
+      "refinement": "golden section to a one-second bracket",
+      "padded_by": "one stride beyond each end of the window, so an approach at the very edge is still found; minima falling outside the window are discarded",
+      "note": "Two minima closer together than the stride may be reported as one. Reduce step to separate them."
+    },
+    "approaches": [
+      {
+        "kind": "conjunction",
+        "label": "Venus and Pollux in conjunction, 6.00 deg apart",
+        "instant": "2027-07-22T10:51:59.121Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 6.004933,
+        "value_unit": "deg",
+        "days_from_query": 263.452768,
+        "pair": {
+          "a": "Venus",
+          "b": "Pollux"
+        },
+        "separation_deg": 6.004933,
+        "separation_arcmin": 360.295978,
+        "position_angle_of_b_from_a_deg": 8.341497,
+        "ecliptic_longitude_difference_deg": -0.170045,
+        "ecliptic_latitude_difference_deg": 6.002537,
+        "longitude_conjunction_instant": "2027-07-22T07:32:49.732Z",
+        "minimum_offset_from_longitude_conjunction_minutes": 199.156488,
+        "elongation_from_sun_deg": 5.711591,
+        "elongation_direction": "morning",
+        "observability": "glare",
+        "observability_label": "Lost in the Sun's glare",
+        "magnitudes": {
+          "a": -3.9,
+          "b": 1.1
+        },
+        "combined_apparent_note": "At 6.00 deg the pair is a wide pairing, but it sits only 5.7 deg from the Sun and is lost in the glare. Sweeping for it with a telescope or binocular risks putting the Sun in the field, so it is not an observing target.",
+        "sky_separation_deg": 6.004933,
+        "longitude_conjunction_instants": [
+          "2027-07-22T07:32:49.732Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": null,
+          "b": null
+        }
+      },
+      {
+        "kind": "conjunction",
+        "label": "Mercury and Pollux in conjunction, 6.15 deg apart",
+        "instant": "2027-07-30T11:57:45.966Z",
+        "instant_precision_seconds": 1,
+        "body": null,
+        "value_deg": 6.15453,
+        "value_unit": "deg",
+        "days_from_query": 271.498449,
+        "pair": {
+          "a": "Mercury",
+          "b": "Pollux"
+        },
+        "separation_deg": 6.15453,
+        "separation_arcmin": 369.271822,
+        "position_angle_of_b_from_a_deg": 4.842938,
+        "ecliptic_longitude_difference_deg": -0.566721,
+        "ecliptic_latitude_difference_deg": 6.128512,
+        "longitude_conjunction_instant": "2027-07-30T04:51:46.754Z",
+        "minimum_offset_from_longitude_conjunction_minutes": 425.986866,
+        "elongation_from_sun_deg": 12.97208,
+        "elongation_direction": "morning",
+        "observability": "glare",
+        "observability_label": "Lost in the Sun's glare",
+        "magnitudes": {
+          "a": -1.2,
+          "b": 1.1
+        },
+        "combined_apparent_note": "At 6.15 deg the pair is a wide pairing, but it sits only 13.0 deg from the Sun and is lost in the glare. Sweeping for it with a telescope or binocular risks putting the Sun in the field, so it is not an observing target.",
+        "sky_separation_deg": 6.15453,
+        "longitude_conjunction_instants": [
+          "2027-07-30T04:51:46.754Z"
+        ],
+        "magnitudes_extrapolated": {
+          "a": null,
+          "b": null
+        }
+      }
+    ]
+  },
+  "warnings": [
+    {
+      "code": "no_search_result",
+      "message": "3 of the 5 pairs had no approach inside 6.4 deg in this window: Mars-Pollux, Jupiter-Pollux, Saturn-Pollux.",
+      "field": "approaches",
+      "value": null
+    }
+  ],
+  "links": {
+    "self": "https://www.cyclecalcs.com/v2/conjunctions?end=2027-11-30&frame=apparent&limit=500&max_separation_deg=6.4&pairs=mercury-star%3Apollux%2Cvenus-star%3Apollux%2Cmars-star%3Apollux%2Cjupiter-star%3Apollux%2Csaturn-star%3Apollux&pretty=1&sort=time&start=2026-11-01",
+    "docs": "https://www.cyclecalcs.com/api/reference.html#conjunctions",
+    "spec": "https://www.cyclecalcs.com/v2/openapi.json",
+    "page": "https://www.cyclecalcs.com/conjunctions/",
+    "related": [
+      {
+        "rel": "endpoint",
+        "title": "Separation between Mercury and star:pollux across this window",
+        "href": "https://www.cyclecalcs.com/v2/separation?a=mercury&b=star%3Apollux&start=2026-11-01&end=2027-11-30"
+      },
+      {
+        "rel": "endpoint",
+        "title": "All eight planets at one instant",
+        "href": "https://www.cyclecalcs.com/v2/planet-board"
+      }
+    ]
+  },
+  "meta": {
+    "api_version": "2",
+    "contract_version": "2.7.0",
+    "engine": {
+      "name": "Astronomy Engine",
+      "license": "MIT",
+      "author": "Don Cross",
+      "version": "2.1.19",
+      "version_source": "upstream_sha256_match",
+      "sha256": "068f1445ed0c636c94818fe6d20d7d125120e605e0bab9fc4675c3d531be5ad7",
+      "vendored": true,
+      "credit": "astronomy-engine (MIT, Copyright (c) 2019-2023 Don Cross)"
+    },
+    "tzdb": "2026e",
+    "rights": "unrestricted",
+    "attribution": {
+      "required": false,
+      "text": "Computed by CycleCalcs (cyclecalcs.com) with the MIT-licensed Astronomy Engine. Positional astronomy only.",
+      "sources": []
+    },
+    "notice_url": "https://www.cyclecalcs.com/methodology.html#data-sources",
+    "cache": {
+      "class": "fixed_instant",
+      "deterministic": true
+    },
+    "accuracy": {
+      "statement": "Positions are arcminute class for the Sun, Moon and planets across 1700 to 2200, degrading toward the ends of that window.",
+      "residuals_url": "https://www.cyclecalcs.com/api/accuracy.html"
+    },
+    "time": {
+      "scale_of_input": "UTC",
+      "ut1_source": "assumed equal to UTC: a time you give is read as UT1, and UT1 minus UTC stays under 0.9 s",
+      "delta_t_seconds": 69.2,
+      "delta_t_model": "IERS, Espenak-Meeus"
+    },
+    "frames": {
+      "equatorial_of_date": "true equator and equinox of date (EQD), nutation applied",
+      "ecliptic": "true ecliptic and equinox of date (ECT)"
+    },
+    "corrections": {
+      "aberration": true,
+      "light_travel_time": true,
+      "nutation": true,
+      "topocentric_parallax": false,
+      "proper_motion": true,
+      "polar_motion": false,
+      "light_deflection": false,
+      "scope_note": "A named star starts from its Bright Star Catalog place at epoch J2000.0 and is moved to the requested instant by its catalog proper motion, parallax and radial velocity. A fixed target then takes the same final steps as a Solar System body: annual parallax, annual aberration, and precession and nutation to the equinox of date. Light-travel time is applied to the Solar System bodies only, because a catalog place is already the direction its light arrives from. proper_motion describes the named stars only."
+    },
+    "conventions": {
+      "coincidence_rule": "basin",
+      "coincidence_rule_note": "A separation minimum is a conjunction when the apparent geocentric ecliptic longitudes of the two bodies are equal at some instant in its basin, the span between the separation maxima either side of it, searched no further than 180 days either way at a 1-day stride (0.25 day with the Moon). Every such crossing is listed in longitude_conjunction_instants and the nearest is longitude_conjunction_instant. A minimum whose basin holds no crossing is a close_approach.",
+      "basin_cap_days": 180,
+      "basin_stride_days": 1,
+      "basin_stride_days_with_moon": 0.25,
+      "coincidence_tolerance_hours": 24,
+      "coincidence_tolerance_note": "Retired in contract 2.1.0 and kept only so existing readers do not break: it no longer affects any row. It was the window around a minimum inside which a longitude crossing had to fall, and it misclassified slow pairs and pairs near a station, whose least separation can fall days or weeks from the crossing. See coincidence_rule.",
+      "minimum_precision_seconds": 1,
+      "separation_arcmin_note": "separation_arcmin is separation_deg times 60 and carries no independent measurement.",
+      "sky_separation_note": "sky_separation_deg is the true angle between the two apparent directions at the instant. It equals separation_deg except with frame=ecliptic, where separation_deg is the longitude difference alone and sky_separation_deg is geocentric, even with a location, the same origin as the longitude test and ecliptic_latitude_difference_deg. label and combined_apparent_note always describe the sky separation."
+    },
+    "method": {
+      "search": "The separation is sampled on the requested stride, every local minimum is bracketed on the SIGN OF ITS SLOPE, and each bracket is refined by golden section to a one-second window. max_separation_deg filters the result and never enters the search, so lowering it cannot move or invent a minimum.",
+      "frame": "Separation is the true angle between the two apparent directions.",
+      "longitudes": "Every longitude is the apparent geocentric ecliptic longitude of date that /v2/positions reports: light time and aberration applied, true ecliptic and equinox of date.",
+      "shared_module": "Every search runs through netlify/lib/v2/stations.mjs, the same module /v2/separation uses, so the two endpoints cannot report different instants for the same event."
+    },
+    "budget": {
+      "engine_calls": 16446
+    }
+  },
+  "attribution": "Computed by CycleCalcs (cyclecalcs.com) with the MIT-licensed Astronomy Engine. Positional astronomy only.",
+  "docs": "https://www.cyclecalcs.com/api/reference.html#conjunctions"
+}

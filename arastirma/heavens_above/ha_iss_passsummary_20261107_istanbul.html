@@ -1,0 +1,311 @@
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><title>
+	ISS - Visible Passes
+</title><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="description" content="Satellite predictions and other astronomical data customised for your location." /><link href="css/ha.css" rel="stylesheet" type="text/css" /><link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon" /><link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon" />
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="/scripts/standard.min.js"></script>
+	<script type="text/javascript">
+		function updateLocalTime(utc) {
+			var localdiff = parseInt($('#utcOffset').val());
+			var local_now = new Date(utc.getTime() + localdiff);
+			$('#spanTime').text(formatTime(local_now));
+		}
+
+		$(function () {
+			onClockTick = updateLocalTime;
+			startClock();
+		});
+	</script>
+	
+	</head>
+<body>
+	<form name="aspnetForm" method="post" action="/PassSummary.aspx?satid=25544&amp;lat=41.0&amp;lng=29.1&amp;loc=Istanbul&amp;alt=0&amp;tz=UCTm3" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A11B5251" />
+</div>
+	<input type="hidden" name="utcOffset" id="utcOffset" value="10800000" />
+	<table border="0" style="margin-left: auto; margin-right: auto; border-style: none">
+		<tr>
+			<td>
+				<a id="ctl00_hyperlinkLogo" href="./?lat=41.0&amp;lng=29.1&amp;loc=Istanbul&amp;alt=0&amp;tz=UCTm3&amp;cul=en" style="display:inline-block;border-style:None;"><img src="//heavens-above.com/images/LogoNew.png" alt="" style="border-width:0px;" /></a>
+			</td>
+			<td>
+				
+					<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5668297076217155" crossorigin="anonymous"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-5668297076217155" data-ad-slot="5479771053"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+				
+			</td>
+			<td>
+				<table class="userTable">
+					<tr>
+						<td>
+							User:
+						</td>
+						<td>
+							anonymous&nbsp;&nbsp;&nbsp;<a href="/login.aspx">Login</a>
+						</td>
+					</tr>
+					<tr class="lightrow">
+						<td>
+							Location:
+						</td>
+						<td>
+							<a id="ctl00_linkObservationSite" href="SelectLocation.aspx?lat=41.0&amp;lng=29.1&amp;loc=Istanbul&amp;alt=0&amp;tz=UCTm3&amp;cul=en">Istanbul</a>
+							
+						</td>
+					</tr>
+					<tr class="lightrow">
+						<td colspan="2" align="center">
+							(<a id="ctl00_linkLatLong" href="SelectLocation.aspx?lat=41.0&amp;lng=29.1&amp;loc=Istanbul&amp;alt=0&amp;tz=UCTm3&amp;cul=en">41.0000°N, 29.1000°E</a>)
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Time:
+						</td>
+						<td>
+							<span id="spanTime">
+								22:30:24</span>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" align="center">
+							(UTC<span id="ctl00_lblTZ">+03:00</span>)
+						</td>
+					</tr>
+					<tr class="lightrow">
+						<td>
+							Language:
+						</td>
+						<td>
+							<select name="ctl00$ddlCulture" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ddlCulture\&#39;,\&#39;\&#39;)&#39;, 0)" id="ctl00_ddlCulture">
+	<option value="ar">العربية</option>
+	<option value="ca">Catal&#224;</option>
+	<option value="cs">Čeština</option>
+	<option value="da">Dansk</option>
+	<option value="de">Deutsch</option>
+	<option value="el">Ελληνικά</option>
+	<option selected="selected" value="en">English</option>
+	<option value="eo">Esperanto</option>
+	<option value="es">Espa&#241;ol</option>
+	<option value="eu">Euskara</option>
+	<option value="fi">Suomi</option>
+	<option value="fr">Fran&#231;ais</option>
+	<option value="gl">Galego</option>
+	<option value="he">עברית</option>
+	<option value="hr">Hrvatski</option>
+	<option value="hu">Magyar</option>
+	<option value="it">Italiano</option>
+	<option value="ja">日本語</option>
+	<option value="lt">Lietuvių</option>
+	<option value="nl">Nederlands</option>
+	<option value="pl">Polski</option>
+	<option value="pt">Portugu&#234;s brasileiro</option>
+	<option value="pt-PT">Portugu&#234;s de Portugal</option>
+	<option value="ro">Rom&#226;nă</option>
+	<option value="ru">Русский</option>
+	<option value="sk">Slovenčina</option>
+	<option value="sl">Slovenščina</option>
+	<option value="sv">Svenska</option>
+	<option value="ta">தமிழ்</option>
+	<option value="th">ไทย</option>
+	<option value="tr">T&#252;rk&#231;e</option>
+	<option value="uk">Українська</option>
+	<option value="zh">简体中文</option>
+	<option value="zh-CHT">繁體中文</option>
+
+</select>
+						</td>
+					</tr>
+					
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<hr />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" valign="top">
+				<table width="100%">
+					<tr>
+						<td align="left">
+							<span id="ctl00_lblTitle" class="pagehead">ISS - Visible Passes</span>
+						</td>
+						<td align="right" class="navbar">
+							
+							<span id="ctl00_lblNavBar"><a href="/?lat=41.0&lng=29.1&loc=Istanbul&alt=0&tz=UCTm3&cul=en" title="Go to home page">Home</a> | <a href="/satinfo.aspx?satid=25544&lat=41.0&lng=29.1&loc=Istanbul&alt=0&tz=UCTm3&cul=en" title="Show information about this satellite">Info.</a> | <a href="/orbit.aspx?satid=25544&lat=41.0&lng=29.1&loc=Istanbul&alt=0&tz=UCTm3&cul=en" title="Show orbit of this satellite">Orbit</a> | <a href="/CloseEncounters.aspx?satid=25544&lat=41.0&lng=29.1&loc=Istanbul&alt=0&tz=UCTm3&cul=en" title="Show upcoming close encounters with other orbiting objects">Close encounters</a></span>
+						</td>
+					</tr>
+				</table>
+				<p />
+				
+	<input type="hidden" name="ctl00$cph1$hidStartUtc" id="ctl00_cph1_hidStartUtc" value="639296766247982357" />
+	<table>
+		<tr>
+			<td class="userinfo">
+				Search period start:
+			</td>
+			<td class="userinfo">
+				<span id="ctl00_cph1_lblSearchStart">07 November 2026 00:00</span>
+			</td>
+			<td class="userinfo" rowspan="2">
+				<input type="submit" name="ctl00$cph1$btnPrev" value="&lt;" id="ctl00_cph1_btnPrev" title="show previous search period" />
+				<input type="submit" name="ctl00$cph1$btnNext" value=">" id="ctl00_cph1_btnNext" title="show next search period" />
+			</td>
+		</tr>
+		<tr>
+			<td class="userinfo">
+				Search period end:
+			</td>
+			<td class="userinfo">
+				<span id="ctl00_cph1_lblSearchEnd">17 November 2026 00:00</span>
+			</td>
+		</tr>
+		<tr>
+			<td class="userinfo">
+				<a id="ctl00_cph1_hlOrbit" title="Show orbit of this satellite" href="orbit.aspx?satid=25544&amp;lat=41.0&amp;lng=29.1&amp;loc=Istanbul&amp;alt=0&amp;tz=UCTm3&amp;cul=en">Orbit:</a>
+			</td>
+			<td class="userinfo" colspan="2">
+				<span id="ctl00_cph1_lblOrbit">414 x 424 km, 51.6° (Epoch: 7 November)</span>
+			</td>
+		</tr>
+	</table>
+	<p>
+		Passes to include:
+		<input id="ctl00_cph1_radioVisible" type="radio" name="ctl00$cph1$visible" value="radioVisible" checked="checked" /><label for="ctl00_cph1_radioVisible">visible only</label>
+		<input id="ctl00_cph1_radioAll" type="radio" name="ctl00$cph1$visible" value="radioAll" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$cph1$radioAll\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="ctl00_cph1_radioAll">all</label>
+	</p>
+	<p><span id="ctl00_cph1_lblMessage" class="userinfo">Click on the date to get a star chart and other pass details.</span></p>
+	<p />
+	
+	<table class="standardTable">
+	<thead>
+		<tr>
+			<td align="center" rowspan="2" valign="middle">
+				Date
+			</td>
+			<td align="center">
+				Brightness
+			</td>
+			<td align="center" valign="top" colspan="3">
+				Start
+			</td>
+			<td align="center" colspan="3">
+				Highest point
+			</td>
+			<td align="center" colspan="3">
+				End
+			</td>
+			<td align="center" rowspan="2" valign="middle">
+				Pass type
+			</td>
+		</tr>
+		<tr>
+			<td align="center">
+				(mag)
+			</td>
+			<td align="center">
+				Time
+			</td>
+			<td>
+				Alt.
+			</td>
+			<td>
+				Az.
+			</td>
+			<td align="center">
+				Time
+			</td>
+			<td>
+				Alt.
+			</td>
+			<td>
+				Az.
+			</td>
+			<td align="center">
+				Time
+			</td>
+			<td>
+				Alt.
+			</td>
+			<td>
+				Az.
+			</td>
+		</tr>
+		</thead>
+		<tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=41.0&lng=29.1&loc=Istanbul&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61354.6993854393&type=V'"><td><a href="passdetails.aspx?lat=41.0&lng=29.1&loc=Istanbul&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61354.6993854393&type=V" title="show pass details">10 Nov</a></td><td align="center">-2.1</td><td>19:45:18</td><td align="center">10°</td><td>SSW</td><td>19:47:06</td><td align="center">27°</td><td>SSW</td><td>19:47:06</td><td align="center">27°</td><td>SSW</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=41.0&lng=29.1&loc=Istanbul&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61355.6672644815&type=V'"><td><a href="passdetails.aspx?lat=41.0&lng=29.1&loc=Istanbul&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61355.6672644815&type=V" title="show pass details">11 Nov</a></td><td align="center">-2.6</td><td>18:58:00</td><td align="center">10°</td><td>SSW</td><td>19:00:51</td><td align="center">27°</td><td>SE</td><td>19:01:40</td><td align="center">24°</td><td>ESE</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=41.0&lng=29.1&loc=Istanbul&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61355.7323900397&type=V'"><td><a href="passdetails.aspx?lat=41.0&lng=29.1&loc=Istanbul&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61355.7323900397&type=V" title="show pass details">11 Nov</a></td><td align="center">-0.3</td><td>20:34:24</td><td align="center">10°</td><td>W</td><td>20:34:38</td><td align="center">12°</td><td>W</td><td>20:34:38</td><td align="center">12°</td><td>W</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=41.0&lng=29.1&loc=Istanbul&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61356.7007479191&type=V'"><td><a href="passdetails.aspx?lat=41.0&lng=29.1&loc=Istanbul&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61356.7007479191&type=V" title="show pass details">12 Nov</a></td><td align="center">-2.9</td><td>19:46:23</td><td align="center">10°</td><td>WSW</td><td>19:49:04</td><td align="center">48°</td><td>W</td><td>19:49:04</td><td align="center">48°</td><td>W</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=41.0&lng=29.1&loc=Istanbul&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61357.6679496629&type=V'"><td><a href="passdetails.aspx?lat=41.0&lng=29.1&loc=Istanbul&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61357.6679496629&type=V" title="show pass details">13 Nov</a></td><td align="center">-3.9</td><td>18:58:31</td><td align="center">10°</td><td>SW</td><td>19:01:50</td><td align="center">82°</td><td>SE</td><td>19:03:24</td><td align="center">29°</td><td>ENE</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=41.0&lng=29.1&loc=Istanbul&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61358.7017830653&type=V'"><td><a href="passdetails.aspx?lat=41.0&lng=29.1&loc=Istanbul&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61358.7017830653&type=V" title="show pass details">14 Nov</a></td><td align="center">-1.9</td><td>19:48:02</td><td align="center">10°</td><td>W</td><td>19:50:34</td><td align="center">26°</td><td>NW</td><td>19:50:34</td><td align="center">26°</td><td>NW</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=41.0&lng=29.1&loc=Istanbul&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61359.6687169772&type=V'"><td><a href="passdetails.aspx?lat=41.0&lng=29.1&loc=Istanbul&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61359.6687169772&type=V" title="show pass details">15 Nov</a></td><td align="center">-2.7</td><td>18:59:47</td><td align="center">10°</td><td>W</td><td>19:02:57</td><td align="center">38°</td><td>NNW</td><td>19:04:41</td><td align="center">21°</td><td>NNE</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=41.0&lng=29.1&loc=Istanbul&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61360.6354012&type=V'"><td><a href="passdetails.aspx?lat=41.0&lng=29.1&loc=Istanbul&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61360.6354012&type=V" title="show pass details">16 Nov</a></td><td align="center">-3.4</td><td>18:11:40</td><td align="center">10°</td><td>WSW</td><td>18:14:58</td><td align="center">61°</td><td>NNW</td><td>18:18:17</td><td align="center">10°</td><td>NE</td><td>visible</td></tr><tr class="clickableRow" onclick="window.location='passdetails.aspx?lat=41.0&lng=29.1&loc=Istanbul&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61360.7025588061&type=V'"><td><a href="passdetails.aspx?lat=41.0&lng=29.1&loc=Istanbul&alt=0&tz=UCTm3&cul=en&satid=25544&mjd=61360.7025588061&type=V" title="show pass details">16 Nov</a></td><td align="center">-1.3</td><td>19:49:58</td><td align="center">10°</td><td>WNW</td><td>19:51:41</td><td align="center">16°</td><td>NNW</td><td>19:51:41</td><td align="center">16°</td><td>NNW</td><td>visible</td></tr>
+	</table>
+	
+
+				&nbsp;
+				<p />
+				<table style="border-top: 1px solid black;">
+					<tr>
+						<td valign="top" style="width: 100px">
+							<a href="https://twitter.com/heavensabovecom?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-screen-name="false" data-show-count="false">Follow @heavensabovecom</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+							<!--<a id="ctl00_linkDonate" title="Make a donation to help with the running costs of Heavens-Above" href="Donate2.aspx"><img title="Make a donation to help with the running costs of Heavens-Above" src="//heavens-above.com/images/btn_donate_SM.gif" alt="" style="border-width:0px;" /></a>-->
+						</td>
+						<td valign="top">
+							<div class="footer">
+								Developed and maintained by <a href="mailto:Chris.Peat@heavens-above.com">Chris Peat</a>, <a href="https://heavens-above.de">Heavens-Above GmbH</a>. Please read the <a href="faq.aspx">FAQ</a> before sending e-mail. <a href="Imprint.aspx">Imprint</a>.
+								</div>
+						</td>
+						<td>
+							<a href="http://www.dlr.de/rb/en/" target="_blank">
+								<img src="//heavens-above.com/images/dlrhost.gif" align="left" border="0" alt="DLR" /></a>
+						</td>
+					</tr>
+				</table>
+			</td>
+			<td rowspan="1" valign="top">
+				<p />
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5668297076217155" crossorigin="anonymous"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-5668297076217155" data-ad-slot="7480853211"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+					<p />
+					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display: inline-block; width: 336px; height: 280px" data-ad-client="ca-pub-5668297076217155" data-ad-slot="7480853211"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+			</td>
+		</tr>
+	</table>
+	</form>
+    <script src="//tags.onscroll.com/608ff96c-526d-43c0-92d3-5faa546bc80e/tag.min.js" async defer></script>
+</body>
+</html>
