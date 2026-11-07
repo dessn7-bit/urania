@@ -1,6 +1,189 @@
 {
- "guncelleme": "2026-10-31",
+ "guncelleme": "2026-11-07",
  "haberler": [
+  {
+   "id": "2026-11-05-iss-son-gunes-paneli",
+   "tarih": "2026-11-05",
+   "eklenme": "2026-11-07",
+   "tur": "gorev",
+   "baslik": "Uzay İstasyonu'nun güç yükseltmesi tamamlandı: sekizinci ve son yeni güneş paneli açıldı",
+   "ozet": [
+    "Uluslararası Uzay İstasyonu'nda (ISS) 2021'den beri süren büyük bir elektrik yenilemesi 5 Kasım 2026'da bitti. NASA astronotu Anil Menon ile Kanada Uzay Ajansı astronotu Joshua Kutryk, yaklaşık 7 saat süren bir uzay yürüyüşünde istasyonun sekizinci ve son \"açılır-yuvarlanır güneş paneli\"ni (İngilizce kısaltmasıyla iROSA) yerine takıp açtı. NASA'ya göre bu yenilemeyle istasyonun elektrik üretme kapasitesi yaklaşık 160 kilovattan yaklaşık 215 kilovata çıktı.",
+    "Neden yeni panel gerekti? İstasyonun asıl güneş kanatları 2000 ile 2009 arasında gönderilmişti ve 15 yıl çalışacak biçimde tasarlanmıştı. Tasarım ömrünü aşan bu kanatların ürettiği elektrik zamanla azalmaya başlamıştı. Çözüm, eski kanatları sökmek yerine önlerine daha küçük ama daha verimli yeni paneller eklemek oldu. Space.com'un aktardığına göre Menon, yeni panellerin eskilerin yarısı büyüklüğünde olduğunu ama çok daha fazla güç verdiğini söyledi.",
+    "Bu panellerin ilginç bir özelliği, açılmak için motor kullanmamaları. Her biri yaklaşık 340 kg ağırlığında ve fırlatılırken bir halı gibi sarılı duruyor. Astronotlar paneli yerine sabitleyip kilidini açınca, karbon bileşik malzemeden yapılmış iki uzun kolun içinde depolanmış esneklik enerjisi paneli yaklaşık 10 dakikada kendi kendine açıyor; panel açıldığında yaklaşık 19 metre uzunluğa ulaşıyor.",
+    "5 Kasım'daki yürüyüş Türkiye saatiyle 16.36'da başladı ve 23.35'te bitti (6 saat 59 dakika). Panel, istasyonun ana omurgası olan \"kafes kiriş\"in sağ ucundaki 3B güç kanalına takıldı. Burası istasyonun robot kolunun yetişemediği bir uç olduğu için astronotlar paneli ayak bağlantıları arasında elden ele aktararak taşıdı. Bir de küçük bir aksilik yaşandı: kablolar bağlandıktan sonra ölçülen akım, beklenenin yalnızca yarısıydı. Ekip, istasyonun Dünya'nın gölgesine girmesini bekleyip bağlantıları kontrol etti; yerden gelen ölçümler düzelince panelin açılmasına izin verildi.",
+    "Son çift panel 13 Ekim'de bir Falcon 9 roketiyle, bir Kargo Dragon aracının arka bölmesinde istasyona gönderilmişti. Yedinci panel 29 Ekim'deki yürüyüşte takılmıştı. NASA'nın verdiği sayılara göre bu yürüyüş, istasyonun kurulumu, bakımı ve yükseltmesi için yapılan 286. uzay yürüyüşüydü. Yükseltme çalışmaları Şubat 2021'de hazırlık yürüyüşleriyle başlamış, ilk yeni panel Haziran 2021'de açılmıştı; o günden bu yana sekiz paneli yerleştirmek ve güç donanımını hazırlamak için toplam 18 uzay yürüyüşü yapıldı.",
+    "Bu yatırım neden şimdi? İstasyonun 2030'un sonunda emekliye ayrılıp denetimli biçimde atmosfere indirilmesi planlanıyor. Yeni paneller, kalan yıllarda bilim deneylerine ve istasyonun sistemlerine yetecek elektriği güvenceye alıyor."
+   ],
+   "neden_onemli": "Yaşlanan güneş kanatları yüzünden azalan elektrik, istasyonun son yıllarında bilim çalışmalarını kısıtlayabilirdi; yükseltme, kapasiteyi yaklaşık 215 kilovata çıkararak bu sorunu çözdü.",
+   "kesinlik": "kesin",
+   "ilgili_dersler": [
+    "d23",
+    "d4"
+   ],
+   "kaynaklar": [
+    {
+     "ad": "NASA Space Station Blog: Spacewalkers Install Final Roll-Out Solar Array",
+     "url": "https://www.nasa.gov/blogs/spacestation/2026/11/05/spacewalkers-install-final-roll-out-solar-array/",
+     "tarih": "2026-11-05"
+    },
+    {
+     "ad": "Space.com: 'We got it done!' Spacewalking astronauts finish installing next-gen ISS solar arrays",
+     "url": "https://www.space.com/space-exploration/international-space-station/we-got-it-done-spacewalking-astronauts-finish-installing-next-gen-iss-solar-arrays",
+     "tarih": "2026-11-05"
+    },
+    {
+     "ad": "Spaceflight Now: NASA nears end of space station solar array upgrade with Oct. 29 and Nov. 5 spacewalks",
+     "url": "https://spaceflightnow.com/2026/10/28/nasa-nears-end-of-space-station-solar-array-upgrade-with-oct-29-and-nov-5-spacewalks/",
+     "tarih": "2026-10-28"
+    }
+   ],
+   "gorsel": {
+    "dosya": "img/haber/2026-11-05-iss-son-gunes-paneli.jpg",
+    "alt": "Uzay İstasyonu'ndan çekilmiş fotoğrafta, mavi Dünya ve beyaz bulutlar önünde uzanan koyu renkli, ince açılır güneş panelleri ve bunları taşıyan kafes yapısı görülüyor.",
+    "aciklama": "Gerçek fotoğraf: 18 Mart 2026'daki bir hazırlık uzay yürüyüşü sırasında çekilmiş, İstasyon'daki bir çift açılır-yuvarlanır güneş paneli (iROSA). Bu fotoğraf 5 Kasım'da takılan son paneli değil, daha önce takılmış panelleri gösteriyor.",
+    "kredi": "NASA/Jessica Meir",
+    "lisans": "Kamu malı (NASA)",
+    "kaynak_url": "https://images.nasa.gov/details/iss074e0403068"
+   }
+  },
+  {
+   "id": "2026-11-04-swift-atmosfere-girdi",
+   "tarih": "2026-11-04",
+   "eklenme": "2026-11-07",
+   "tur": "gorev",
+   "baslik": "Swift gözlemevi Sumatra üzerinde atmosfere girdi: 22 yıllık bir görevin son anı",
+   "ozet": [
+    "NASA'nın Neil Gehrels Swift Gözlemevi 4 Kasım 2026'da Dünya atmosferine girerek görevini kesin olarak bitirdi. ABD Uzay Kuvvetleri'nin verilerine göre giriş, Türkiye saatiyle 15.39'da (12.39 UTC) Endonezya'nın kuzey Sumatra bölgesi üzerinde, yaklaşık 3,4° kuzey enlemi ve 98,6° doğu boylamında gerçekleşti. Yaklaşık 1.450 kg ağırlığındaki aracın büyük bölümünün sürtünmeyle ısınıp yandığı düşünülüyor; NASA, düşen bir parçanın birine zarar verme olasılığını önceden 2.100'de 1 olarak hesaplamıştı. Herhangi bir hasar ya da yaralanma bildirilmedi.",
+    "Swift neden düştü? Alçak yörüngedeki uydular, en üst atmosferin çok seyrek havasıyla sürtünür ve yavaş yavaş yükseklik kaybeder. Swift'in bu düşüşe karşı koyacak kendi roket motoru yoktu. Live Science'ın aktardığına göre Güneş'in son dönemdeki yüksek etkinliği sürtünmeyi artırarak düşüşü hızlandırdı. Urania'da daha önce anlattığımız gibi bilim gözlemleri 20 Ekim'de sona ermişti.",
+    "Aracı kurtarmak için alışılmadık bir girişim de yapılmıştı. NASA, Eylül 2025'te Katalyst Space şirketine, Swift'i yakalayıp daha yüksek bir yörüngeye itecek robotik bir araç için yaklaşık 30 milyon dolarlık bir sözleşme verdi. Şirketin LINK adlı aracı 3 Temmuz 2026'da fırlatıldı, ancak itki sistemi ve aracın yönünü koruyan tepki tekerlekleriyle ilgili sorunlar yüzünden Swift'e ulaşamadı; Space.com'a göre LINK'in kendisi de 25 Eylül'de atmosfere girdi. NASA Astrofizik Bölümü direktörü Shawn Domagal-Goldman bu girişimi \"yüksek riskli, yüksek getirili\" bir görev olarak nitelendirdi.",
+    "Swift Kasım 2004'te, iki yıllık bir görev için fırlatılmıştı ama yaklaşık 22 yıl çalıştı. Asıl hedefi \"gama ışını patlamaları\"ydı: Evrendeki en güçlü patlamalar olan bu olaylar, çok büyük kütleli bir yıldızın çöküşünden ya da nötron yıldızı gibi çok yoğun iki cismin birleşmesinden doğar. Swift'in üç teleskobu farklı türde ışığı (gama ışınları, X ışınları ve morötesi/görünür ışık) gözlüyordu. Bir patlamayı yakaladığında kendini hızla o yöne çevirip dünyadaki gözlemevlerini uyarabiliyordu. Görevin baş bilim insanı S. Bradley Cenko, bir patlamanın yerini bulup görüntülemenin Swift için genellikle yaklaşık bir dakika sürdüğünü söylüyor.",
+    "Space.com'un aktardığına göre Swift 2.000'den fazla gama ışını patlaması ve 1.400 süpernova gözledi; NASA'nın tahminine göre gözlemleri yaklaşık 7.000 bilimsel makaleye katkı sağladı. Zamanla kara deliklerle beslenen etkin galaksilerden, X ışınında parlayan yıldızlara, kuyruklu yıldızlara ve asteroitlere kadar çok geniş bir alanda kullanıldı.",
+    "Swift'in kaybı, gökyüzünde aniden beliren olaylara hızla tepki verme kapasitesinde bir boşluk bırakıyor. Hikâye, alçak yörüngedeki teleskopların ömrünün yalnızca donanımla değil, yörüngeyle de sınırlı olduğunu hatırlatıyor; NASA'nın Hubble için ticari bakım ya da yörünge yükseltme seçeneklerini araştırması da aynı sorundan kaynaklanıyor."
+   ],
+   "neden_onemli": "Swift, 22 yıl boyunca evrendeki en güçlü ve en kısa süreli patlamaları dakikalar içinde yakalayan başlıca gözlemevlerinden biriydi; kaybı bu alanda bir boşluk bırakıyor.",
+   "kesinlik": "kesin",
+   "ilgili_dersler": [
+    "d6",
+    "d16",
+    "d23"
+   ],
+   "kaynaklar": [
+    {
+     "ad": "NASA Science Swift Blog: NASA's Swift Observatory to Re-enter Atmosphere (4 Kasım güncellemesi)",
+     "url": "https://science.nasa.gov/blogs/swift/2026/11/02/",
+     "tarih": "2026-11-04"
+    },
+    {
+     "ad": "Space.com: NASA's Swift space telescope crashes back to Earth after failed rescue attempt",
+     "url": "https://space.com/space-exploration/missions/nasa-swift-space-telescope-crashes-to-earth",
+     "tarih": "2026-11-05"
+    },
+    {
+     "ad": "Live Science: Swift has fallen: NASA's 22-year-old space telescope burns up over Sumatra",
+     "url": "https://www.livescience.com/space/astronomy/swift-has-fallen-nasas-22-year-old-space-telescope-burns-up-over-sumatra",
+     "tarih": "2026-11-04"
+    }
+   ],
+   "gorsel": {
+    "dosya": "img/haber/2026-11-04-swift-atmosfere-girdi.jpg",
+    "alt": "Gece ışıklandırılmış fırlatma rampasında beyaz burunlu, mavi gövdeli Delta II roketi ve yanında üzerinde Swift logosu bulunan servis kulesi.",
+    "aciklama": "Gerçek fotoğraf (Kasım 2004): Swift'i uzaya taşıyacak Delta II roketi, Cape Canaveral'daki 17A rampasında fırlatmaya hazır. Swift, roketin üstündeki beyaz burun kaplamasının içinde.",
+    "kredi": "NASA",
+    "lisans": "Kamu malı (NASA)",
+    "kaynak_url": "https://images.nasa.gov/details/04pd2341"
+   }
+  },
+  {
+   "id": "2026-11-04-mars-alba-mons-hcl",
+   "tarih": "2026-11-04",
+   "eklenme": "2026-11-07",
+   "tur": "arastirma",
+   "baslik": "Mars'ın dev yanardağı Alba Mons'taki çatlaklardan volkanik bir gaz sızıyor olabilir",
+   "ozet": [
+    "Mars'ın jeolojik olarak hâlâ canlı olup olmadığı uzun süredir tartışılıyor. 4 Kasım 2026'da Science Advances dergisinde yayımlanan bir çalışma, bu tartışmaya yeni bir ipucu ekledi: Avrupa Uzay Ajansı'nın (ESA) ExoMars İz Gaz Yörünge Aracı (TGO), Mars'ın en geniş yanardağı Alba Mons'un çevresinde, Dünya'da volkanik gazlar arasında bulunan hidrojen klorürü (HCl) tekrar tekrar algıladı. Araştırmacılar bu gazın yeraltındaki magmadan, yani erimiş kayadan gelmiş olabileceğini öne sürüyor; ama kendileri de sonucu bir kanıt değil, \"olası bir işaret\" olarak sunuyor.",
+    "Ölçüm nasıl yapıldı? TGO'daki Atmosfer Kimyası Paketi (ACS) adlı cihaz, araç Mars'ın arkasına geçerken Güneş ışığının gezegenin atmosferinden süzülerek gelişini izliyor. Her gaz, ışığın belirli renklerini (dalga boylarını) yutar; tayfta bu \"parmak izlerini\" arayarak havada milyarda birkaç parça düzeyindeki çok küçük gaz miktarları bile ölçülebiliyor. HCl, Mars'ta ilk kez 2021'de bu cihazla bulunmuştu; o zaman gezegen genelinde, toz fırtınalarıyla birlikte ortaya çıkıp kaybolduğu görülmüştü ve tozla atmosfer arasındaki kimyasal alışverişle açıklanmıştı.",
+    "Yeni olan şey, gazın bu kez beklenmedik bir yerde ve zamanda görülmesi. Ekibin 2025'teki bir bilim toplantısında sunduğu özete göre HCl, Mars'ın Güneş'ten en uzak olduğu dönemde, yani kuzey yarımkürede yaz mevsiminde ve havanın tozsuz olduğu zamanlarda, Alba Mons'un kuzeyinde birkaç kez algılandı. Gaz havaya iyi karışmamıştı ve kısa süre kalıyordu; bu da yakında, yerel bir kaynak olduğunu düşündürüyor. Aynı dönemde başka enlemlerde yapılan çok sayıda ölçümde ise HCl görülmedi.",
+    "Ekip ardından yörüngedeki kameralarla (CaSSIS, HiRISE ve CTX) gazın algılandığı bölgelerin altına baktı. Burada onlarca ile yüzlerce çatlaktan oluşan dizler buldular: Her biri bir metreden dar ama yüzlerce metre uzunluğunda. Çatlaklar buzla dolu yüzey katmanını kesiyor ve araştırmacılara göre büyük olasılıkla bir milyon yıldan genç. Bazılarının çevresinde, yeraltından yükselen ve kimyasal olarak değişmiş sıvıların izi olabilecek açık ve koyu renkli birikintiler var. Önerilen senaryoda kışın donan yüzey çatlakları tıkıyor, mevsim ısınınca biriken gaz dışarı sızıyor.",
+    "Çalışmanın eş baş yazarlarından Daniel Mège (Polonya Bilimler Akademisi Uzay Araştırmaları Merkezi), Reuters'a HCl'nin en olası kaynağının volkanik sızıntı olduğunu söyledi. Diğer eş baş yazar Alexander Trokhimovskiy (Rusya Bilimler Akademisi Uzay Araştırmaları Enstitüsü) de bunun, gezegenin iç kısmının magma etkinliğini sürdürecek kadar ısıyı hâlâ koruyabileceğini düşündürdüğünü belirtiyor.",
+    "Ancak temkinli olmak için güçlü nedenler var. Algılamalar az sayıda ve bazıları ölçüm sınırına yakın. Dünya'daki yanardağlarda HCl küçük bir bileşendir; püskürmenin daha tipik işareti olan kükürt dioksit Mars'ta görülmedi. HCl, eski klorlu minerallerin yeraltı suyu ya da buzla tepkimesi gibi magma gerektirmeyen yollarla da oluşabilir. NASA'nın InSight aracının sismometresi de Alba Mons'tan gelen ikna edici bir magma sinyali kaydetmemişti. Ekipte yer alan Oxford Üniversitesi'nden Kevin Olsen ise, National Geographic'e kaynağın doğasının bilinmediğini söylüyor. Doğrulama için daha ayrıntılı atmosfer haritaları ve aynı bölgede başka gazların aranması gerekiyor."
+   ],
+   "neden_onemli": "Doğrulanırsa Mars'ın bugün de yeraltında sıcak ve etkin bölgeler barındırdığını gösterir; bu tür sıcak ve nemli yeraltı ortamları, mikrobik yaşam aramasında ilk bakılacak yerler arasında.",
+   "kesinlik": "tartışmalı",
+   "ilgili_dersler": [
+    "d36",
+    "d2",
+    "d18"
+   ],
+   "makale": {
+    "baslik": "Enigmatic HCl detections as a potential signature of igneous activity on Mars",
+    "yazarlar": "Mège, Trokhimovskiy vd.",
+    "dergi": "Science Advances",
+    "url": "https://www.science.org/doi/10.1126/sciadv.aeb9422"
+   },
+   "kaynaklar": [
+    {
+     "ad": "EPSC-DPS 2025 özeti (Mège, Trokhimovskiy, Korablev, Olsen vd.): On HCl in the Martian atmosphere during northern summers",
+     "url": "https://meetingorganizer.copernicus.org/EPSC-DPS2025/EPSC-DPS2025-985.html",
+     "tarih": "2025-09-07"
+    },
+    {
+     "ad": "National Geographic: Something Weird is Seeping Out of Mars",
+     "url": "https://www.nationalgeographic.com/science/article/mars-volcano-gas-hydrogen-chloride",
+     "tarih": "2026-11-04"
+    },
+    {
+     "ad": "EarthSky: Active volcanoes on Mars? Noxious gas discovery says — maybe",
+     "url": "https://earthsky.org/space/active-volcanoes-on-mars-hydrogen-chloride-trace-gas-orbiter/",
+     "tarih": "2026-11-06"
+    },
+    {
+     "ad": "Reuters (Will Dunham), WHBL üzerinden: Mars volkanik gaz haberi",
+     "url": "https://whbl.com/?p=1024245",
+     "tarih": "2026-11-04"
+    }
+   ]
+  },
+  {
+   "id": "2026-11-04-flip-gizli-otegezegen",
+   "tarih": "2026-11-04",
+   "eklenme": "2026-11-07",
+   "tur": "arastirma",
+   "baslik": "Yıldızın parıltısını \"dijital ikizle\" silmek: Webb verisinde gözden kaçan dev gezegen ortaya çıktı",
+   "ozet": [
+    "Bir ötegezegeni (Güneş dışındaki bir yıldızın çevresindeki gezegeni) doğrudan fotoğraflamak, bir deniz fenerinin yanındaki ateş böceğini görmeye benzer: Gezegen, yıldızından yüz binlerce hatta milyonlarca kat sönüktür. 4 Kasım 2026'da Nature dergisinde yayımlanan bir çalışmada Northwestern Üniversitesi, Caltech, MIT ve Uzay Teleskobu Bilim Enstitüsü'nden (STScI) araştırmacılar, bu parıltıyı çok daha iyi silen FLIP adlı bir yöntem tanıttı. Yöntem, James Webb Uzay Teleskobu'nun iki yıllık verisinde, önceki analizin göremediği bilinen bir dev gezegeni ortaya çıkardı.",
+    "Sorun nereden kaynaklanıyor? Yıldızın ışığı teleskobun optiğinde saçılarak görüntüye yayılır ve gezegeni boğan lekeli bir parıltı deseni oluşturur. Standart yöntemler bu deseni başka görüntülerden tahmin edip çıkarır. Fakat teleskobun optiği nanometre (metrenin milyarda biri) düzeyinde bile oynadığında desen değişir ve tahmin bozulur. Makalenin başlığındaki \"teleskop kararlılık sınırı\" bu duruma işaret ediyor.",
+    "FLIP (Fizik Temelli Gezegen Görüntüleme Öğrenmesi) farklı bir yol izliyor. Ekip, Webb'in NIRCam kamerasının fizik yasalarına dayanan bir \"dijital ikizini\", yani bilgisayardaki ayrıntılı bir benzetimini kurdu. Ardından aynalardaki ve optikteki milyonlarca olası küçük kusuru ayarlayarak, bu benzetimin ürettiği yıldız parıltısını gerçek görüntüyle eşleştirdi ve sonra çıkardı. Bu ayarlama için yapay zekâ eğitiminde kullanılan matematiksel eniyileme araçlarından yararlanıldı, ama araştırmacıların vurguladığına göre gezegeni bulan bir yapay zekâ değil; gezegenler, fiziksel model çıkarıldıktan sonra kalan ışıkta aranıyor. Baş yazar Rodrigo Ferrer-Chavez, yıldız parıltısını tahmin etmesi için makine öğrenmesi modelleri eğitmeyi ilk denediğinde bunun işe yaramadığını anlatıyor.",
+    "Sınamada ekip, gezegenleri bilinen iki yıldıza (HIP 65426 ve 51 Eridani) ve bilinen gezegeni olmayan bir yıldıza (TYC 5899) ait Webb verilerini kullandı. FLIP, hedefe bağlı olarak sönük gezegenlere karşı duyarlılığı 2 ile 15 kat artırdı. En dikkat çekici sonuç 51 Eridani b'den geldi: Bu dev gezegen daha önce yerdeki teleskoplarla bulunmuştu, ama Webb'in 4,3 mikrometre dalga boyundaki görüntüsünde, standart yöntemle yapılan 2025 tarihli analizde görülememişti. Bunun bir nedeni, gezegenin atmosferindeki karbondioksitin tam bu dalga boyunda ışığı yutarak gezegeni daha da sönük göstermesi. FLIP, aynı veride gezegeni istatistiksel olarak güvenilir sayılan \"5 sigma\" düzeyinin üzerinde algıladı.",
+    "Çalışmanın ortak yazarı Jason Wang, yeni teknikle ilk kez teleskop kararlılık sınırının ötesine geçtiklerini söylüyor. Katie Bouman (Caltech) da hesaplamanın teleskobun kendi sınırlamalarını aşmaya yardım edebildiğini vurguluyor. Yöntemin bir artısı, donanım değişikliği gerektirmemesi: Arşivdeki eski gözlemlere uygulanarak orada saklanmış başka gezegenler aranabilir.",
+    "Sınırlar da var. Yöntem şimdilik yalnızca Webb'in NIRCam kamerasında ve birkaç hedefte gösterildi; başka teleskoplarda ne kadar işe yarayacağı henüz sınanmadı. Dünya benzeri bir gezegeni görüntülemek, yıldızından yaklaşık 10 milyar kat sönük bir cismi seçmeyi gerektiriyor; bu, bugünkü başarının çok ötesinde. Ekip, yöntemi Roman Uzay Teleskobu'na, yer teleskoplarına ve NASA'nın önerdiği Yaşanabilir Dünyalar Gözlemevi gibi gelecekteki görevlere uyarlamayı hedefliyor; böyle bir yaklaşım, kararsızlığı tamamen ortadan kaldırmak yerine onu hesaplamayla düzeltmenin yolunu açabilir."
+   ],
+   "neden_onemli": "Yeni teleskop yapmadan, mevcut verilerden 2–15 kat daha sönük gezegenleri seçmeyi mümkün kılıyor; gelecekte Dünya benzeri gezegenleri görüntülemeye yönelik görevlerin tasarımını da etkileyebilir.",
+   "kesinlik": "kesin",
+   "ilgili_dersler": [
+    "d13",
+    "d12",
+    "d2"
+   ],
+   "makale": {
+    "baslik": "Imaging exoplanets below the telescope stability limit",
+    "yazarlar": "Ferrer-Chavez, Bouman, Wang vd.",
+    "dergi": "Nature",
+    "url": "https://www.nature.com/articles/s41586-026-11213-z"
+   },
+   "kaynaklar": [
+    {
+     "ad": "Caltech: Erasing the Stars to Find Exoplanets",
+     "url": "https://www.caltech.edu/about/news/erasing-the-stars-to-find-exoplanets",
+     "tarih": "2026-11-04"
+    },
+    {
+     "ad": "Northwestern Üniversitesi (EurekAlert!): Hidden planet emerges from the glare",
+     "url": "https://www.eurekalert.org/news-releases/1150080",
+     "tarih": "2026-11-04"
+    }
+   ]
+  },
   {
    "id": "2026-10-30-hubble-ticari-bakim",
    "tarih": "2026-10-30",
@@ -32,6 +215,52 @@
      "tarih": "2026-10-30"
     }
    ]
+  },
+  {
+   "id": "2026-10-29-voyager-1-isik-gunu",
+   "tarih": "2026-10-29",
+   "eklenme": "2026-11-07",
+   "tur": "gorev",
+   "baslik": "Voyager 1, 18 Kasım'da Dünya'dan bir ışık günü uzaklığa ulaşan ilk araç olacak",
+   "ozet": [
+    "1977'de fırlatılan Voyager 1, 18 Kasım 2026'da insan yapımı hiçbir cismin ulaşmadığı bir eşiği geçecek: Dünya'dan bir \"ışık günü\" uzaklık. Bu, ışığın bir günde aldığı yol demek; NASA'ya göre yaklaşık 25,89 milyar kilometre. Başka bir deyişle Dünya'dan gönderilen bir radyo mesajı Voyager 1'e 24 saatte varacak, yanıtın geri gelmesi de 24 saat daha sürecek. Voyager proje yöneticisi Suzanne Dodd bunu şöyle özetliyor: Mesajını gönderirsin, eve gidersin ve yanıt için iki gün beklersin.",
+    "EarthSky'ın aktardığı NASA hesabına göre eşik, Türkiye saatiyle 18 Kasım sabahı yaklaşık 09.16'da aşılacak. Bir ışık günü, Dünya ile Güneş arasındaki ortalama uzaklığın (1 astronomi birimi) yaklaşık 173 katına denk geliyor. Araç saatte yaklaşık 61.000 kilometre hızla yol alıyor. NASA, bu anın araç için fiziksel bir değişiklik anlamına gelmediğini, kat edilen yolu simgeleyen bir dönüm noktası olduğunu belirtiyor. İkiz araç Voyager 2 daha yavaş ve farklı bir yönde ilerlediği için aynı eşiğe ancak Kasım 2035'te ulaşacak.",
+    "Bu yolculuğun en büyük sorunu enerji. Voyager'lar elektriklerini, plütonyumun radyoaktif bozunmasından çıkan ısıyı elektriğe çeviren üreteçlerden alıyor. Plütonyum azaldıkça her araç yılda yaklaşık 4 vat güç kaybediyor. Voyager 1 on bilim cihazıyla yola çıkmıştı; enerji tasarrufu için son yıllarda bunlardan ikisi daha kapatıldı. Eylül 2026'nın başında mühendisler, ekibin \"Büyük Patlama\" adını verdiği bir işlem yaptı: Aracı yeterince sıcak tutmaya yarayan üç aygıt aynı anda kapatılıp yerlerine daha az güç çeken yedekleri açıldı. Isının araç içinde dengeli dağılması gerektiği için değişikliklerin aynı anda yapılması gerekiyordu. Aynı işlem yaklaşık altı hafta önce Voyager 2'de denenmişti. NASA'ya göre bu olmasaydı, bir bilim cihazının daha 2027 yazında kapatılması gerekebilirdi.",
+    "Ekim ayında ise beklenmedik bir sessizlik yaşandı. NASA'nın Derin Uzay Ağı'ndaki büyük antenler, 18 ve 19 Ekim'de 24 saat arayla yapılan iki planlı denemede araçtan sinyal alamadı. Sinyal 20 Ekim'de, yerden bir müdahale gerekmeden geri geldi. Ekip, aracın yönünü ayarlayan küçük roket iticilerinden bir grubun devre dışı kaldığını ve yedek grubun otomatik olarak devreye girdiğini buldu; bunun büyük olasılıkla aracın kendini koruma yazılımının bir tepkisi olduğu düşünülüyor. Asıl neden hâlâ araştırılıyor. Görev müdürü Kareem Badaruddin, aracın böyle bir davranışı ilk kez gösterdiğini ve görevin bu aşamasında beklenmedik olana hazırlıklı olmak gerektiğini söylüyor.",
+    "Bir ışık günü eşiği, insan yapımı bir aracın ne kadar uzağa gidebildiğini ve elli yıla yakın süredir çalışan bir makinenin ne kadar dikkatle idare edildiğini gösteriyor."
+   ],
+   "neden_onemli": "Voyager 1, yıldızlararası uzayı doğrudan ölçen iki araçtan biri; her enerji tasarrufu, insanlığın bu uzak bölgeden veri almaya devam edeceği süreyi uzatıyor.",
+   "kesinlik": "kesin",
+   "ilgili_dersler": [
+    "d23",
+    "d9",
+    "d31"
+   ],
+   "kaynaklar": [
+    {
+     "ad": "NASA/JPL: NASA's Voyager 1 Conserves Power, Resolves Brief Communications Pause",
+     "url": "https://science.nasa.gov/?p=1506274",
+     "tarih": "2026-10-29"
+    },
+    {
+     "ad": "EarthSky: Voyager 1 will be 1 light-day from Earth on November 17–18, 2026",
+     "url": "https://earthsky.org/space/voyager-1-1-light-day-from-earth-november-17-18-2026/",
+     "tarih": "2026-06-26"
+    },
+    {
+     "ad": "IFLScience: NASA's Voyager 1 resumes communications after glitch, weeks away from 1 light-day milestone",
+     "url": "https://iflscience.com/nasas-voyager-1-resumes-communications-after-glitch-weeks-away-from-1-light-day-milestone-85072",
+     "tarih": "2026-10-30"
+    }
+   ],
+   "gorsel": {
+    "dosya": "img/haber/2026-10-29-voyager-1-isik-gunu.jpg",
+    "alt": "Yıldızlı siyah bir arka plan önünde büyük beyaz çanak anteni ve uzun kollarıyla Voyager uzay aracı.",
+    "aciklama": "Sanatçı çizimi: Voyager uzay aracı yıldızların önünde. Büyük çanak, Dünya ile haberleşen yüksek kazançlı anten; uzun kollar bilim cihazlarını ve güç üreteçlerini taşıyor.",
+    "kredi": "NASA/JPL-Caltech",
+    "lisans": "Kamu malı (NASA)",
+    "kaynak_url": "https://images.nasa.gov/details/PIA17049"
+   }
   },
   {
    "id": "2026-10-29-teghaza-001-mars-goktasi",
@@ -132,6 +361,55 @@
     "lisans": "Kamu malı (NASA)",
     "kaynak_url": "https://science.nasa.gov/asset/hubble/cats-head-nebula-webb-nircam-image/"
    }
+  },
+  {
+   "id": "2026-10-28-betelgeuse-eslik-eden-iz",
+   "tarih": "2026-10-28",
+   "eklenme": "2026-11-07",
+   "tur": "arastirma",
+   "baslik": "Betelgeuse'ün atmosferinde gizli eşinin izi: yıldız, eşin konumuna göre yumurta biçimine giriyor",
+   "ozet": [
+    "Avcı (Orion) takımyıldızının omzundaki kırmızı süperdev yıldız Betelgeuse'ün, yakınında dolanan ve doğrudan görülemeyen küçük bir eşi olduğu birkaç yıldır öne sürülüyor. The Astronomical Journal'da yayımlanan yeni bir çalışma, bu eşin yıldızın dış atmosferini nasıl etkilediğine dair radyo gözlemleriyle yeni bir ipucu sunuyor. MIT Haystack Gözlemevi'nden Lynn Matthews'ün yönettiği ekip, Betelgeuse'ün atmosferinin, eşin yıldıza göre konumuyla bağlantılı biçimde hafifçe uzayıp yuvarlaklaştığını buldu.",
+    "Betelgeuse bize yaklaşık 650 ışık yılı uzakta. Kütlesi Güneş'in yaklaşık 14 katı, çapı ise 640 katından fazla. Böyle bir yıldız, yaşamının sonuna yaklaşmış bir \"kırmızı süperdev\"dir ve ileride süpernova olarak patlaması bekleniyor. 2019–2020'deki \"Büyük Sönükleşme\"de yıldız, yüz yılı aşkın sürede görülen en sönük düzeyine inmişti; bu olay, yıldızın dışarı attığı gaz ve tozla açıklanmıştı. Yeni ölçümler, atmosferin o dönemden bu yana büyük ölçüde toparlandığını da gösteriyor.",
+    "Eş nereden biliniyor? Betelgeuse'ün parlaklığı, yaklaşık 425 günlük tanıdık bir titreşimin yanında, yaklaşık 2.100 günlük (5,7 yıl kadar) daha uzun bir döngüyle de değişiyor. 2024'te bu uzun döngünün, yıldızın etrafında dolanan küçük bir eşten kaynaklanabileceği öne sürüldü; 2026'da başka gözlemler bu fikri güçlendirdi. Eşe Siwarha (\"onun bileziği\") adı verildi. Siwarha'nın Betelgeuse'ün yarıçapının yaklaşık 2,3 katı uzaklıkta, yani yıldızın kabarık dış atmosferinin içinde dolandığı düşünülüyor.",
+    "Ekip, 2021–2026 arasında ABD'deki Karl G. Jansky Çok Büyük Dizisi (VLA) ve Şili'deki ALMA radyo teleskoplarıyla 22 ile 485 gigahertz arasındaki yedi farklı frekansta gözlem yaptı. Bu, işin püf noktası: Her frekans, atmosferin farklı derinliğinden gelen ışımayı görür; böylece katmanları soğan gibi soyarak atmosferin yapısı yeniden kurulabiliyor. Ölçümlere göre yıldızın birkaç yarıçap dışındaki gaz yaklaşık 3.500 kelvin sıcaklıkta; yüzeye daha yakın bir katmanda ise sıcaklık 2.200 kelvin dolayına düşüyor. Bu, görünür yüzey ile daha dıştaki sıcak katman arasında soğuk bir kuşak olduğunu doğruluyor.",
+    "Asıl ilginç sonuç biçimle ilgili. Ekip, atmosferin ne kadar basık ya da uzamış göründüğünü (basıklığını) farklı tarihlerde ölçüp eşin tahmin edilen konumuyla karşılaştırdı. Siwarha yıldızdan en uzak göründüğü noktalardayken Betelgeuse daha uzamış, eş yıldızın önünden ya da arkasından geçerken daha yuvarlak görünüyor. Araştırmacılar bunu, eşin atmosfer içinde ilerlerken gazı itip çekmesiyle, adeta bir dümen suyu bırakmasıyla açıklıyor.",
+    "Bu sonuç kesin değil ve yazarlar bunu açıkça söylüyor. Ölçülen basıklık küçük (çoğunlukla yüzde 10'un altında) ve bağıntı yalnızca birkaç gözlem tarihine dayanıyor; farklı frekanslarda uzamanın yönü de tutarlı değil. Siwarha'nın kendisi bu radyo verilerinde görülemeyecek kadar sönük, yani etkisi yalnızca dolaylı olarak çıkarılıyor. Ekip, yörüngenin daha fazla noktasında, özellikle az gözlenmiş frekanslarda yeni ölçümlerin gerektiğini belirtiyor; planlanan Yeni Nesil Çok Büyük Dizi (ngVLA) bu izlemeyi kolaylaştırabilir."
+   ],
+   "neden_onemli": "Betelgeuse, patlamaya en yakın parlak yıldızlardan biri; eşinin atmosferini nasıl etkilediğini anlamak, yıldızın tuhaf parlaklık değişimlerini ve kütle kaybını açıklamaya yardım edebilir.",
+   "kesinlik": "ön sonuç",
+   "ilgili_dersler": [
+    "d15",
+    "d5",
+    "d12"
+   ],
+   "makale": {
+    "baslik": "New Spatially Resolved Observations of Betelgeuse from the VLA and ALMA: Evidence for Atmospheric Perturbations from a Close Companion",
+    "yazarlar": "Matthews, Dupree, Richards, Dent",
+    "dergi": "The Astronomical Journal (arXiv ön baskısı: 2608.02847)",
+    "url": "https://arxiv.org/pdf/2608.02847"
+   },
+   "kaynaklar": [
+    {
+     "ad": "arXiv: Matthews vd., New Spatially Resolved Observations of Betelgeuse from the VLA and ALMA",
+     "url": "https://arxiv.org/pdf/2608.02847"
+    },
+    {
+     "ad": "Space.com: Betelgeuse is haunted by a cosmic poltergeist tormenting the doomed star's atmosphere",
+     "url": "https://www.space.com/astronomy/stars/betelgeuse-is-haunted-by-a-cosmic-poltergeist-tormenting-the-doomed-stars-atmosphere",
+     "tarih": "2026-10-31"
+    },
+    {
+     "ad": "Universe Today: Betelgeuse Is Disturbed by Its Companion Star",
+     "url": "https://www.universetoday.com/articles/betelgeuse-is-disturbed-by-its-companion-star",
+     "tarih": "2026-10-28"
+    },
+    {
+     "ad": "ScienceDaily (NRAO/ALMA): A hidden star is plowing through Betelgeuse's atmosphere",
+     "url": "https://www.sciencedaily.com/releases/2026/11/261103003149.htm",
+     "tarih": "2026-11-03"
+    }
+   ]
   },
   {
    "id": "2026-10-28-lucy-truva-bolgesi",
