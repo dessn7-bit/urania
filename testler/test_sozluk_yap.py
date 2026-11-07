@@ -83,6 +83,38 @@ class Birlestirme(unittest.TestCase):
         self.assertEqual(t['dersler'], ['d7'])              # d5'teki "hale" sayılmaz
         self.assertTrue(any('Yok böyle' in u for u in self.uyarilar))
 
+    def test_ozel_ad_ve_isaretleme_yok(self):
+        ek = {'ayarlar': [{'terim': 'Sol', 'ozel': True}, {'terim': 'günberi', 'isaretleme': False}]}
+        s = self.yap([ders('d36', [{'terim': 'Sol', 'tanim': 'Mars günü.'}], 'Bir Sol uzunluğu'),
+                      ders('d5', [], 'Yolda sola dön, sola kay.'),
+                      ders('d1', [{'terim': 'günberi', 'tanim': "Dünya'nın günberisi."}], 'günberi ocakta'),
+                      ders('d3', [{'terim': 'Günberi / günöte', 'tanim': 'Genel tanım.'}], 'Merkür günberide')], ek)
+        sol = self.bul(s, 'Sol')
+        self.assertTrue(sol['ozel'])
+        self.assertEqual(sol['dersler'], ['d36'])          # "sola" sayılmaz
+        g = self.bul(s, 'günberi')
+        self.assertEqual(g['desen'], [])                   # sözlükte durur, metinde işaretlenmez
+        self.assertEqual(self.bul(s, 'Günberi / günöte')['dersler'], ['d1', 'd3'])
+
+    def test_es_anlamli_baska_kaydin_adiysa_birlesir(self):
+        # A3-14: Hubble yasası (eş: Hubble–Lemaître yasası) ile ayrı "Hubble–Lemaître yasası" kaydı tek madde olur
+        ek = {'terimler': [{'terim': 'Hubble yasası', 'tanim': 'Elle tanım.', 'esanlam': ['Hubble–Lemaître yasası']}],
+              'ayarlar': [{'terim': 'fantom enerji', 'esanlam': ['hayalet enerji']}]}
+        s = self.yap([ders('d57', [{'terim': 'Hubble–Lemaître yasası', 'tanim': 'Ders tanımı.'}], 'Hubble–Lemaître yasası'),
+                      ders('d51', [{'terim': 'fantom enerji', 'tanim': 'w < −1.'}]),
+                      ders('d55', [{'terim': 'hayalet enerji', 'tanim': 'Başka yazım.'}], 'hayalet enerji')], ek)
+        ad = [t['terim'] for t in s['terimler']]
+        self.assertEqual(ad, ['fantom enerji', 'Hubble yasası'])
+        h = self.bul(s, 'Hubble yasası')
+        self.assertEqual(h['tanim'], 'Elle tanım.')
+        self.assertEqual(h['tanimli'], ['d57'])
+        self.assertIn('d57', h['dersler'])
+        f = self.bul(s, 'fantom enerji')
+        self.assertEqual(f['esanlam'], ['hayalet enerji'])
+        self.assertEqual(f['tanimli'], ['d51', 'd55'])
+        self.assertIn('d55', f['dersler'])
+        self.assertFalse(self.uyarilar)
+
     def test_turkce_siralama_ve_tekil_kimlik(self):
         s = self.yap([ders('d1', [{'terim': t, 'tanim': 'x'} for t in ['Çift yıldız', 'Cüce', 'Işık yılı', 'İyon', 'Ufuk', 'Ülker', 'Kara delik', 'Karadelik', 'Ğ']])])
         ad = [t['terim'] for t in s['terimler']]
@@ -117,6 +149,23 @@ class Desen(unittest.TestCase):
         r = self.eslesen([('Evre', [], ['evren']), ('Nova', [], []), ('Kadir', [], [])],
                          "Süpernova bir nova değil; evren ile evreleri ayır. Kadir'in ölçeği, kadirsiz.")
         self.assertEqual(r, [('Nova', 'nova'), ('Evre', 'evreleri'), ('Kadir', "Kadir'in"), ('Kadir', 'kadirsiz')])
+
+    def test_ek_dilbilgisi_baska_sozcugu_almaz(self):
+        # A3-08: terimden sonra yalnız Türkçe ekler; "Sol" soluk değil, "ada" aday değil, "zar" zarar değil
+        r = self.eslesen([('Sol', [], []), ('ada', [], []), ('zar', [], []), ('durak', [], []), ('köşe', [], []), ('MOND', [], []),
+                          ('Frekans', [], [])],
+                         'Soluk leke, aday ve Adams; zarar, zarif zarf; durağan; köşegen; Monday; Frekansçı. '
+                         "Sol'ün süresi; adası, adalarda; zarın; durağı, duraklar; köşesinde; MOND'a göre; frekansı")
+        self.assertEqual(r, [('Sol', "Sol'ün"), ('ada', 'adası'), ('ada', 'adalarda'), ('zar', 'zarın'), ('durak', 'durağı'),
+                             ('durak', 'duraklar'), ('köşe', 'köşesinde'), ('MOND', "MOND'a"), ('Frekans', 'frekansı')])
+
+    def test_ek_dilbilgisi_tamlama_ve_iyelik(self):
+        r = self.eslesen([('Kütleçekim dalgası', [], []), ('Yörünge düzlemi', [], []), ('yay saniyesi', [], []), ('Galaksi', [], []),
+                          ('halka yayı', [], []), ('yoğunluk dalgası', [], []), ('yok olma', [], [])],
+                         'kütleçekim dalgalarının, yörünge düzlemini, 0,1 yay saniyelik açı, galaksimizin diski; '
+                         'halka halka yayılan, yoğunluk dalgalanması, yok olmaz')
+        self.assertEqual(r, [('Kütleçekim dalgası', 'kütleçekim dalgalarının'), ('Yörünge düzlemi', 'yörünge düzlemini'),
+                             ('yay saniyesi', 'yay saniyelik'), ('Galaksi', 'galaksimizin')])
 
     def test_desen_js_ile_uyumlu(self):
         # JavaScript u bayrağında geçersiz kaçışlar (\- \' \ ) olmamalı

@@ -5,7 +5,7 @@
       "cizim": [
         { "sekil": "kalin", "renk": "--parsomen", "ad": "Üstteki kalın krem eğri (“toplam”)", "ne": "Zaman denklemi: güneş saati eksi kol saati, dakika olarak. Sıfır çizgisinin üstünde güneş saati önde, altında geride." },
         { "sekil": "kesik", "renk": "#7FB2E5", "ad": "Uzun kesikli mavi eğri (“basıklık”)", "ne": "Yörüngenin basıklığından gelen pay: yılda bir kez gidip gelen, yaklaşık 7,7 dakikalık dalga. Günberide (3 Ocak) ve günötede (6 Temmuz) sıfırdır." },
-        { "sekil": "kesik", "renk": "--iyi", "ad": "Noktalı yeşil eğri (“eğiklik”)", "ne": "Eksen eğikliğinden gelen pay: yılda iki kez gidip gelen, yaklaşık 9,9 dakikalık dalga. Ekinokslarda ve gündönümlerinde sıfırdır. Kalın eğri bu iki eğrinin toplamıdır." },
+        { "sekil": "kesik", "renk": "--iyi", "ad": "Noktalı yeşil eğri (“eğiklik”)", "ne": "Eksen eğikliğinden gelen pay: yılda iki kez gidip gelen, yaklaşık 9,9 dakikalık dalga. Ekinokslarda ve gün dönümlerinde sıfırdır. Kalın eğri bu iki eğrinin toplamıdır." },
         { "sekil": "cizgi", "renk": "--soluk", "ad": "Sıfır çizgisi ve ince yatay çizgiler", "ne": "Sıfır: güneş saati ile kol saati aynı. İnce çizgiler 5 dakikada bir; soldaki sayılar dakika." },
         { "sekil": "dikey-kesik", "renk": "--pirinc", "ad": "Dikey kesik çizgi ve pirinç nokta", "ne": "Seçili tarih ve o günkü fark." },
         { "sekil": "kalin", "renk": "#F2C879", "ad": "Alttaki sarı sekiz (analemma)", "ne": "Kol saati her gün 13:03:41'i (Ataşehir'in yerel ortalama öğlesi) gösterirken Güneş'in güney gökteki yeri: dikeyde ufuktan yüksekliği, yatayda azimutu (kuzeyden doğuya ölçülen yön, 180° tam güney). Yatay ölçek dikeyin yaklaşık 9–10 katı büyütüldü; üstelik yüksekte bir derecelik azimut gökte daha küçük bir açıdır (72°'de yaklaşık üçte biri). Gerçek sekiz çok daha incedir." },
@@ -34,7 +34,7 @@
       { "yap": "“11 Şubat (en geride)” düğmesine bas.", "tikla": "#anOn button[data-i=\"0\"]", "ayar": { "#anDaire": false, "#anEgik": false },
         "gozle": "Fark −14 dk 12 sn (basıklık −4 dk 48 sn, eğiklik −9 dk 24 sn). Gerçek öğle 13:17:53, Güneş 35,1° yüksekte; sekizde en solda.", "neden": "Şubat ortasında iki pay da eksi: güneş saati 14 dakikadan fazla geride, Güneş en solda (doğuda). Ders +16 dk 33 sn ve −14 dk 6 sn diyor; bu Wikipedia'nın genel değeri. 2026 hesabı birkaç saniye farklı: uç değerler yıldan yıla biraz oynar." },
       { "yap": "Tarihi 21 Haziran'a (172. gün) çek.", "ayar": { "#anGun": 172, "#anDaire": false, "#anEgik": false },
-        "gozle": "Fark −1 dk 49 sn: basıklık payı −1 dk 47 sn, eğiklik payı yalnız −1 sn. Gerçek öğle 13:05:29, Güneş 72,4° yüksekte.", "neden": "Gündönümünde eğiklik payı sıfırdan geçer; geriye çoğunlukla basıklık payı kalır. Güneş öğlede 72,4° yükseklikte, sekizin tepesinde: 90° − 41° + 23,44°." },
+        "gozle": "Fark −1 dk 49 sn: basıklık payı −1 dk 47 sn, eğiklik payı yalnız −1 sn. Gerçek öğle 13:05:29, Güneş 72,4° yüksekte.", "neden": "Gün dönümünde eğiklik payı sıfırdan geçer; geriye çoğunlukla basıklık payı kalır. Güneş öğlede 72,4° yükseklikte, sekizin tepesinde: 90° − 41° + 23,44°." },
       { "yap": "Tarih 3 Kasım (307. gün) iken “Yörünge dairesel olsaydı”yı işaretle.", "ayar": { "#anGun": 307, "#anDaire": true, "#anEgik": false },
         "gozle": "Fark +9 dk 47 sn, hepsi eğiklikten (basıklık payı 0 sn). Gerçek öğle 12:53:54, Güneş 33,4° yüksekte. Üstte kalın eğri yeşil noktalı eğrinin üstüne biniyor; altta sekizin iki halkası aynı dakikalık sapmayı gösteriyor.", "neden": "Basıklık kalkınca yalnız eğiklik dalgası kalır: yarım yıllık, yaklaşık 9,9 dakika genlikli; sekizin iki halkası aynı dakikalık sapmayı gösterir. Çizimde üstteki halka yine de daha geniş görünür: yüksekteki Güneş için bir dakikalık fark daha büyük bir azimut (yön) değişimi demektir. Gerçek sekizde ise iki dalga üst üste bindiği için bir halka büyük, öteki küçüktür." },
       { "yap": "Şimdi “Yörünge dairesel olsaydı”yı kaldır, “Eksen eğik olmasaydı”yı işaretle.", "ayar": { "#anGun": 307, "#anDaire": false, "#anEgik": true },
@@ -62,7 +62,7 @@
       { "ad": "3 Kasım (en önde)", "gun": 307 }
     ],
     "model2026": { "enBuyuk": "3 Kasım'da +16 dk 27 sn", "enKucuk": "11 Şubat'ta −14 dk 12 sn", "ikinciller": "14 Mayıs'ta +3 dk 38 sn, 26 Temmuz'da −6 dk 34 sn",
-      "astronomyEngine2026": "3 Kasım +16 dk 27 sn, 11 Şubat −14 dk 11 sn (cizim_v3.js d22-zaman-denklemi ile aynı hesap)" },
+      "astronomyEngine2026": "3 Kasım +16 dk 27 sn, 11 Şubat −14 dk 11 sn (12. dersin zaman denklemi çizimiyle aynı hesap)" },
     "wikipedia": { "giris": { "enBuyuk": "+16 dk 33 sn (3 Kasım civarı)", "enKucuk": "−14 dk 6 sn (11 Şubat civarı)" },
       "tablo2000": { "enKucuk": "−14 dk 15 sn, 11 Şubat", "enBuyuk": "+16 dk 25 sn, 3 Kasım", "mayis": "+3 dk 41 sn, 14 Mayıs", "temmuz": "−6 dk 30 sn, 26 Temmuz" },
       "bilesenGenlik_dk": { "basiklik": 7.66, "egiklik": 9.87 },

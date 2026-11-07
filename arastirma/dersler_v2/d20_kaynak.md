@@ -52,7 +52,7 @@ Kısaltmalar: WP = en.wikipedia.org/wiki/...; TDV = https://islamansiklopedisi.o
 
 | İddia | Kaynak URL | Kaynaktaki ifade |
 |---|---|---|
-| [B] Yaklaşık MÖ 276–194 | https://dictionary.obspm.fr/terms/eratosthenes-method/ | Eratosthenes c. 276-194 B.C. |
+| [B] Yaklaşık MÖ 276–194 | https://web.archive.org/web/20260520195955/https://dictionary.obspm.fr/terms/eratosthenes-method/ | Eratosthenes c. 276-194 B.C. |
 | [B] Syene'de gündönümü öğlesinde gölge yok; İskenderiye'de 7,2° = 1/50 | aynı ; WP Earth's circumference | obspm: shadow angle 1/50 of 360°, 7.2° ; WP: "about 7°, or 1/50th the circumference of a circle" |
 | [B] ~5000 stadion; 250.000 stadion | obspm | "about 5,000 stadia apart" ; 250,000 stadia |
 | [B] 252.000 stadion; bazı tarihçiler sayıyı kolaylık için değiştirdi | WP Earth's circumference | "estimated that the meridian has a length of 252,000 stadia" ; some historians think he changed the number |
@@ -336,3 +336,4 @@ Yeniden açılıp doğrulanan (değişiklik gerekmeyen) başlıca satırlar: WP 
 Askıda: Tycho'ya Ven'in verildiği gün (23 Mayıs 1576) yalnız UCAR'da; WP yalnız "1576" der. Hipparkhos kataloğu için MÖ 129 değeri bu turda yeniden görülemedi (Museo Galileo açılamadı); derste "bazı kaynaklara göre" diye duruyor.
 
 Sınav (d20_sinav.json): dört sorunun doğru cevabı ders metninden çıkıyor; bolum indeksleri (3 Eratosthenes, 5 Hipparkhos, 10 Takiyüddin, 12 Tycho) doğru. Değişiklik gerekmedi.
+| Bağlantı (2026-11-08 denetim düzeltmesi): obspm Eratosthenes sayfası artık açılmıyor (A5-03); Internet Archive kopyasına çevrildi, alıntılar kopyada yeniden okundu ("about 5,000 stadia apart") | https://web.archive.org/web/20260520195955/https://dictionary.obspm.fr/terms/eratosthenes-method/ | — |

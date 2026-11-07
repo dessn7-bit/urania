@@ -44,11 +44,11 @@ Not: Tüm satırlar bu oturumda (30 Ekim 2026) WebFetch ile açılan sayfalardan
 ## Bölüm 6 — Lastik çarşaf
 - Gündelik çekim esas olarak zaman eğriliği; ışık hızına yakın cisimlerde zaman eğriliği bükülmenin yalnız yarısı, kalanı uzay eğriliği | https://van.physics.illinois.edu/ask/listing/2775 | "such 'curved time' effects account for only half the gravitational curvature of their paths"; "The rest requires curved space"
 - Eğrilik başka boyuta başvurmadan içeriden tanımlanabilir | https://courses.grainger.illinois.edu/PHYS419/sp2021/l13.pdf | curvature can be defined "with no reference to some other dimensions"
-- Bükülme Newton'un iki katı; Einstein 1911 değeri tam değerin yarısı | https://arxiv.org/pdf/2010.13744 (1,75 / 0,87) ve https://webarchive.library.unt.edu/web/20141206100325/http://en.wikipedia.org/wiki/Tests_of_general_relativity ("Einstein's 1911 value was half")
+- Bükülme Newton'un iki katı; Einstein 1911 değeri tam değerin yarısı | https://arxiv.org/pdf/2010.13744 (1,75 / 0,87) ve https://en.wikipedia.org/w/index.php?title=Tests_of_general_relativity&oldid=632962940 ("Einstein's 1911 value was half")
 - Çarşafın çekimi çekimle açıklaması | akıl yürütme
 
 ## Bölüm 7 — Merkür
-- Toplam 574,10 ± 0,65; gezegenler 531,63 ± 0,69; GR 42,98 ± 0,04 ″/yüzyıl; Le Verrier 1859'da 38″ | https://webarchive.library.unt.edu/web/20141206100325/http://en.wikipedia.org/wiki/Tests_of_general_relativity | değerler sayfada
+- Toplam 574,10 ± 0,65; gezegenler 531,63 ± 0,69; GR 42,98 ± 0,04 ″/yüzyıl; Le Verrier 1859'da 38″ | https://en.wikipedia.org/w/index.php?title=Tests_of_general_relativity&oldid=632962940 | değerler sayfada
 - 1850'ler Le Verrier (gezegenlerin açıklayamadığı fazlalık; 531″ bugünkü değer, Le Verrier'in değil — doğrulamada düzeltildi); Neptün 1846 öngörülen yerde; Vulkan; 1878 tutulma gözlemi doğrulanmadı; Vulkanoid aramalarında ~6 km'den büyük yok; 1915 Einstein 43″ | https://briankoberlein.com/post/planet-that-never-was/ | "it wasn't until the 1850s"; "discovered in 1846 exactly where Le Verrier predicted"; Watson and Swift 1878; "none larger than about 6 km"
 - Newton açıklayamadı, 43″ fark | https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation | "a discrepancy of 43 arcseconds per century"
 - Merkür dolanım 87,969 gün | https://nssdc.gsfc.nasa.gov/planetary/factsheet/mercuryfact.html | "87.969"
@@ -118,3 +118,4 @@ Not: Tüm satırlar bu oturumda (30 Ekim 2026) WebFetch ile açılan sayfalardan
 - Planck uzunluğu 1,616255e-35 m, Planck zamanı 5,391247e-44 s | https://physics.nist.gov/cuu/Constants/Table/allascii.txt | değerler tabloda
 - Karanlık madde/enerji tartışması | d17 ("Karanlık madde mi, değişen kütleçekimi mi?" bölümü)
 - MICROSCOPE, EHT, kütleçekim dalgası sınamaları | bölüm 3 kaynakları ve d16_kaynak.md
+- 2026-11-08 denetim düzeltmesi (A5-05): Wikipedia'nın UNT web arşivi kopyası (2014) en.wikipedia.org kalıcı sürüm bağlantısına çevrildi (oldid=632962940, 8 Kasım 2014). Canlı sayfada 531,63 ± 0,69 ve 42,98 ± 0,04 yok (tablo 532,3035 ve 42,980 ± 0,001 veriyor); bu yüzden dersin dayandığı sürüm bağlandı. Kalıcı sürümde: "531.63 ±0.69", "42.98 ±0.04", "574.10±0.65", "by 38". Değerler değişmedi.

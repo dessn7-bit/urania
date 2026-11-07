@@ -6,7 +6,23 @@
   let F = null;          // fizik.json
   let el = null;
   let aktif = null;      // çalışan deney (durdur() için)
-  const azHareket = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  /* "Hareketi azalt" uygulama açıkken de değişebilir: değer canlı tutulur, açık tam sayfa deney yeniden kurulur
+     (zaman kaydırıcıları ve lejanttaki satırlar kuruluşta seçilir). */
+  const hareketSorgu = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : null;
+  let azHareket = !!(hareketSorgu && hareketSorgu.matches);
+  function hareketDegisti() {
+    const yeni = !!(hareketSorgu && hareketSorgu.matches);
+    if (yeni === azHareket) return;
+    azHareket = yeni;
+    const kap = el && el.querySelector('#deneyKap');
+    if (kap && kap.isConnected && kap.dataset.deney && kurucu(kap.dataset.deney)) {
+      const y = window.scrollY; deneyKur(kap.dataset.deney); window.scrollTo(0, y);
+    }
+  }
+  if (hareketSorgu) {
+    if (hareketSorgu.addEventListener) hareketSorgu.addEventListener('change', hareketDegisti);
+    else if (hareketSorgu.addListener) hareketSorgu.addListener(hareketDegisti);
+  }
 
   /* Deney listesi: gruplu; yeni deneyler deneyler2.js'ten (window.UraniaDeneyEk) gelir */
   const DENEYLER = [
@@ -232,7 +248,7 @@
         <div class="cip-grup"><button type="button" class="dugme" id="yoDaire">Dairesel hız</button><button type="button" class="dugme" id="yoKac">Kurtulma hızı</button><button type="button" class="dugme" id="yoTekrar">Yeniden at</button></div>
       </div>
       ${olcumler([['yoV', 'Atış hızı'], ['yoVd', 'Dairesel yörünge hızı'], ['yoVk', 'Kurtulma hızı'], ['yoSonuc', 'Sonuç'], ['yoP', 'Dolanım süresi'], ['yoApo', 'En uzak / en yakın nokta']])}
-      <div class="deney-metin"><p>Dairesel hız v = √(GM/r), kurtulma hızı bunun √2 katıdır: v = √(2GM/r). Yükseldikçe ikisi de azalır, dolanım süresi uzar (Kepler'in üçüncü yasası). Yaklaşık 35 800 km yükseklikte dolanım bir yıldız gününe eşitlenir: yer eşzamanlı yörünge.</p></div>
+      <div class="deney-metin"><p>Dairesel hız v = √(GM/r), kurtulma hızı bunun √2 katıdır: v = √(2GM/r). Yükseldikçe ikisi de azalır, dolanım süresi uzar (Kepler'in üçüncü yasası). Yaklaşık 35.800 km yükseklikte dolanım bir yıldız gününe eşitlenir: yer eşzamanlı yörünge. Bu yörünge ekvatorun tam üstündeyse uydu gökte yerinde durur: yerdurgun yörünge.</p></div>
       ${kaynakSatiri(['GM_dunya', 'R_dunya'])}`;
     const cv = kap.querySelector('#yoKanvas');
     const yS = kap.querySelector('#yoYuk'), hS = kap.querySelector('#yoHiz');
@@ -307,12 +323,12 @@
       ctx.beginPath();
       let ilk = true;
       for (let k = 0; k <= 720; k++) {
-        const th = k / 720 * Math.PI * 2;      // ν: gerçek anomali, atış noktası enberi/öteberi
+        const th = k / 720 * Math.PI * 2;      // ν: gerçek anomali, atış noktası enberi/enöte
         const den = 1 + st.e * Math.cos(th);
         if (den <= 0.02) { ilk = true; continue; }
         const r = st.p / den;
         if (r > st.olcek * 3) { ilk = true; continue; }
-        /* atış noktası ν=0 (v0>vd: enberi) ya da ν=π (v0<vd: öteberi); atış tepeden sola */
+        /* atış noktası ν=0 (v0>vd: enberi) ya da ν=π (v0<vd: enöte); atış tepeden sola */
         const faz = st.v0 >= st.vd ? 0 : Math.PI;
         const a = Math.PI / 2 + (th - faz);
         const x = cx + Math.cos(a) * r * s, y = cy - Math.sin(a) * r * s;
@@ -393,7 +409,7 @@
       kap.querySelector('#hrR').textContent = U.sayi(R, R < 10 ? 2 : 1) + ' R☉';
       kap.querySelector('#hrOmur').textContent = omur >= 1e9 ? U.sayi(omur / 1e9, omur < 1e10 ? 2 : 0) + ' milyar yıl' : U.sayi(omur / 1e6, omur < 1e7 ? 1 : 0) + ' milyon yıl';
       kap.querySelector('#hrSon').textContent = son ? son.son : '—';
-      kap.querySelector('#hrMetin').innerHTML = `<p>${U.sayi(m, m < 1 ? 2 : (m < 10 ? 1 : 0))} Güneş kütleli bir yıldız ${L > 0.9 && L < 1.1 ? "Güneş'le neredeyse aynı parlaklıkta" : "Güneş'ten " + (L >= 1 ? U.bilimsel(L, 2) + ' kat parlak' : U.bilimsel(1 / L, 2) + ' kat sönük')}. Yakıtı kütlesiyle, harcama hızı ışıma gücüyle orantılı: bu yüzden ${m > 1.05 ? 'büyük yıldızlar fazla yakıtlarını çok daha hızlı yakar ve kısa yaşar.' : (m < 0.95 ? 'küçük yıldızlar yakıtını çok yavaş harcar ve Güneş\'ten çok uzun yaşar.' : 'Güneş kütlesindeki bir yıldız anakolda yaklaşık 10 milyar yıl kalır; daha ağırlar daha kısa, daha hafifler daha uzun yaşar.')}</p>`;
+      kap.querySelector('#hrMetin').innerHTML = `<p>${U.sayi(m, m < 1 ? 2 : (m < 10 ? 1 : 0))} Güneş kütleli bir yıldız ${L > 0.9 && L < 1.1 ? "Güneş'le neredeyse aynı parlaklıkta" : "Güneş'ten " + (L >= 1 ? U.bilimsel(L, 2) + ' kat parlak' : U.bilimsel(1 / L, 2) + ' kat sönük')}. Yakıtı kütlesiyle, harcama hızı ışıma gücüyle orantılı: bu yüzden ${m > 1.05 ? 'büyük yıldızlar fazla yakıtlarını çok daha hızlı yakar ve kısa yaşar.' : (m < 0.95 ? 'küçük yıldızlar yakıtlarını çok yavaş harcar ve Güneş\'ten çok uzun yaşar.' : 'Güneş kütlesindeki bir yıldız anakolda yaklaşık 10 milyar yıl kalır; daha ağırlar daha kısa, daha hafifler daha uzun yaşar.')}</p>`;
       ciz();
     }
     function ciz() {
@@ -510,7 +526,7 @@
 
   const KURUCU = { karadelik, yorunge, yildiz, gorelilik };
   /* Yeni deneyler (deneyler2.js) ortak yardımcılarla kurulur */
-  function ortak(kok, id) { return { F, U, R, veri: MODUL_VERI[id] || null, kanvas, etiket, kaydirici, olcumler, kaynakSatiri, dongu: ciz => dongu(ciz, kok), renk, deger, azHareket, el: () => el }; }
+  function ortak(kok, id) { return { F, U, R, veri: MODUL_VERI[id] || null, kanvas, etiket, kaydirici, olcumler, kaynakSatiri, dongu: ciz => dongu(ciz, kok), renk, deger, get azHareket() { return azHareket; }, el: () => el }; }
   /* Modül deneyleri (deney/<kimlik>.js + veri/deney/<kimlik>.json) yalnız açılınca yüklenir. JSON'da "rehber"
      (açıklamalar ve Neler dene) ve "veri" (deneyin kaynaklı sayıları) vardır. */
   const MODUL_VERI = {};

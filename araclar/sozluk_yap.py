@@ -135,8 +135,17 @@ def desenler(bicim, haric):
     kok = bilesik_kok(sozcukler[-1]) if len(sozcukler) > 1 else None
     if kok:
         duz = ' '.join(sozcukler[:-1] + [kok])
-        cikti.append([on + kac(kok) + 'l', len(duz) + 1])
+        # çoğul tamlama (lekeleri, yılları): kök + "l" ileri bakışla; "l" eke kalır (lar/ler ek dilbilgisinde)
+        cikti.append([on + kac(kok) + '(?=l)', len(duz) + 1])
     return cikti
+
+
+# Terimden sonra gelebilecek ekler (denetim A3-08). Eskiden her harf dizisi kabul ediliyordu ("Sol" → soluk,
+# "ada" → aday, "evre" → evren, "zar" → zarar, "durak" → durağan). Artık yalnız Türkçe çekim ekleri ve -lIk, -lI,
+# -sIz, -sAl, -CA yapım ekleri: çoğul, iyelik (1. çoğul ve 3. kişi), durum ekleri, ilgi, -ki, ek-fiil (-DIr, -(y)DI,
+# -(y)sA, -(y)ken, -(y)mIş). Python re ve JavaScript (u) aynı biçimi okur; sozluk.js'teki EK_DESEN ile birebir aynı.
+EK_DESEN = ('(?:l[ae]r|s?[ıiuü]n?|y[ıiuü]n?|n[ıiuü]|n?[ıiuü]n|[ıiuü]?m[ıiuü]z|[yn]?[ae]|n?[dt][ae]n?|y?l[ae]|k[ıi]'
+            '|l[ıiuü]k|l[ıiuü]|s[ıiuü]z|s[ae]l|[dt][ıiuü]r|y?[dt][ıiuü]|y?s[ae]|y?ken|y?m[ıiuü]ş|[cç][ae])*')
 
 
 def bicimler(t):
@@ -166,7 +175,7 @@ def birlesik_ifade(terimler):
         for d, u in t['desen']:
             alt.append((u, d, i))
     alt.sort(key=lambda x: -x[0])
-    kaynak = r'(?<![^\W_])(?:' + '|'.join('(' + d + ')' for _, d, _ in alt) + r")((?:'" + HARF + '+|' + HARF + r'*))(?![^\W_])'
+    kaynak = r'(?<![^\W_])(?:' + '|'.join('(' + d + ')' for _, d, _ in alt) + r")((?:'" + HARF + '+|' + EK_DESEN + r'))(?![^\W_])'
     return re.compile(kaynak), [i for _, _, i in alt]
 
 
@@ -182,6 +191,16 @@ def ders_metni(d):
     return '\n'.join(x for x in p if x)
 
 
+def esles_kosul(t, govde):
+    """buyuk: terim metinde bütünüyle büyük harfle (MOND, RAW, ISO); ozel: baş harfi büyük özel ad (Sol ≠ sola).
+    sozluk.js isaretleHemen ile aynı kural."""
+    if t.get('buyuk') and govde != govde.upper():
+        return False
+    if t.get('ozel') and not (govde[:1] and govde[:1] == govde[:1].upper() and govde[:1] != govde[:1].lower()):
+        return False
+    return True
+
+
 def gecenler(terimler, dersler):
     """Her terimin hangi derslerin metninde geçtiği (sozluk.js'in işaretleyeceği biçimlerle)."""
     ifade, sira = birlesik_ifade(terimler)
@@ -195,10 +214,8 @@ def gecenler(terimler, dersler):
             t = terimler[i]
             if t.get('yalniz') and d['id'] not in t['yalniz']:
                 continue
-            if t.get('buyuk'):
-                govde = asil[m.start():m.start() + len(m.group(g))]
-                if govde != govde.upper():
-                    continue
+            if not esles_kosul(t, asil[m.start():m.start() + len(m.group(g))]):
+                continue
             gecti[i].add(d['id'])
     return gecti
 
@@ -230,7 +247,7 @@ def yap(D, EK, uyari=None):
         if a not in dizin:
             dizin[a] = len(terimler)
             terimler.append({'terim': None, 'tanim': '', 'esanlam': [], 'bicim': [], 'haric': [], 'yalniz': [],
-                             'buyuk': False, 'tanimli': [], 'kaynak': [], 'elle': False})
+                             'buyuk': False, 'ozel': False, 'isaretleme': True, 'tanimli': [], 'kaynak': [], 'elle': False})
         return terimler[dizin[a]]
 
     # (a) derslerin sözlükleri, müfredat sırasıyla: ilk dersin tanımı kalır
@@ -267,6 +284,9 @@ def yap(D, EK, uyari=None):
         ekle_tekil(t['haric'], e.get('haric', []))
         ekle_tekil(t['yalniz'], e.get('yalniz', []))
         t['buyuk'] = t['buyuk'] or bool(e.get('buyuk'))
+        t['ozel'] = t['ozel'] or bool(e.get('ozel'))
+        if e.get('isaretleme') is False:
+            t['isaretleme'] = False
         ekle_tekil(t['kaynak'], [{'ad': k['ad'], 'url': k['url']} for k in e.get('kaynak', []) if k.get('url')])
 
     # (c) ders terimlerine ayarlar (tanımı değiştirmez)
@@ -281,16 +301,38 @@ def yap(D, EK, uyari=None):
         ekle_tekil(t['haric'], e.get('haric', []))
         ekle_tekil(t['yalniz'], e.get('yalniz', []))
         t['buyuk'] = t['buyuk'] or bool(e.get('buyuk'))
+        t['ozel'] = t['ozel'] or bool(e.get('ozel'))
+        if e.get('isaretleme') is False:
+            t['isaretleme'] = False
         ekle_tekil(t['kaynak'], [{'ad': k['ad'], 'url': k['url']} for k in e.get('kaynak', []) if k.get('url')])
 
     terimler = [t for t in terimler if t['terim'] and t['tanim']]
+    # çift kayıt (A3-14): bir terimin eş anlamlısı başka bir terimin adıysa ikincisi birinciye katılır
+    # (Hubble yasası ← Hubble–Lemaître yasası, fantom enerji ← hayalet enerji); eşit uzunlukta desen
+    # paylaşan iki kayıttan biri hiç işaretlenmiyordu
+    adla = {anahtar(t['terim']): t for t in terimler}
+    katilan = set()
+    for t in terimler:
+        if id(t) in katilan:
+            continue
+        for e in list(t['esanlam']):
+            u = adla.get(anahtar(e))
+            if u is None or u is t or id(u) in katilan:
+                continue
+            ekle_tekil(t['tanimli'], u['tanimli'])
+            ekle_tekil(t['esanlam'], [x for x in u['esanlam'] if anahtar(x) != anahtar(t['terim'])])
+            for a in ('bicim', 'haric', 'kaynak'):
+                ekle_tekil(t[a], u[a])
+            katilan.add(id(u))
+    terimler = [t for t in terimler if id(t) not in katilan]
     # eş anlamlı başka bir terimin adıyla çakışıyorsa söyle (işaretlemede uzun olan kazanır)
     adlar = {anahtar(t['terim']) for t in terimler}
     for t in terimler:
         for e in t['esanlam']:
             if anahtar(e) in adlar and anahtar(e) != anahtar(t['terim']):
                 uyar('eş anlamlı başka bir terimin adı: ' + t['terim'] + ' / ' + e)
-        t['desen'] = [d for b in bicimler(t) for d in desenler(b, t['haric'])]
+        # isaretleme: false → sözlükte durur, metinde işaretlenmez (günberi: d1'in Dünya'ya özgü tanımı; genel kayıt işaretlenir)
+        t['desen'] = [d for b in bicimler(t) for d in desenler(b, t['haric'])] if t['isaretleme'] else []
 
     # derslerde geçtiği yerler
     gecti = gecenler(terimler, dersler)
@@ -314,6 +356,8 @@ def yap(D, EK, uyari=None):
             o['yalniz'] = t['yalniz']
         if t['buyuk']:
             o['buyuk'] = True
+        if t['ozel']:
+            o['ozel'] = True
         cikti.append(o)
     return {
         'kaynak': 'Derslerin sözlük bölümleri (veri/dersler.json) ve elle seçilmiş, kaynaklı ek terimler '

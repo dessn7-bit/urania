@@ -28,6 +28,36 @@ Okur: meraklı bir yetişkin (Kaan; Türk, İstanbul, astronomiye meraklı, lise
   "kaynaklar": [ { "ad": "...", "url": "https://..." } ]          // ≥6
 }
 
+## Göndermeler ve terimler (denetim 2026-10-30, araçlar turu 2026-11-08) — bütün dersler için geçerli
+
+### Başka derse gönderme: biçim
+- Kaynakta başka ders DOSYA KİMLİĞİYLE anılır; derleyici (araclar/ders_verisi_v2.py `numarala`) okurun gördüğü sıra numarasına
+  çevirir. Kullanılabilen biçimler: "d9'da", "d3'teki", "d4'ten", "d12'ye", "d3'ü", "d6'nın", "d2'yle", "d30'dakilerle",
+  ek almadan "(d20)", "d42 anlatıyor", zincirler "d2 ve d3'ü", "(d11, d12)", "d1, d2 ve d3'te"; ayrıca "9. derste",
+  "4. ve 11. dersler", "1., 2. ve 3. derslerde" (kaynakta "N. ders" = dN dosyası). Çıktı: "5. derse göre", "(40. ders)",
+  "2. ve 7. dersleri", "(3. ve 5. dersler)".
+- Kesme işareti şart ("d5'te"; "d5te" gönderme sayılmaz). Tanınan ekler hâl ekleridir (-de/-te, -den/-ten, -e/-ye, -i/-u/-ü,
+  -in/-nin, -le/-yle) ve "-deki…"; başka ek ("d5'tir", "d5'ken") tanınmaz: derleme HATA verir, cümleyi değiştir.
+- Bağlantı ve kimlikler çevrilmez: "#ders/d12", "cz-d41-…", id / kid / url / kaynak_url / on_bilgi alanları.
+- Derleme sonunda okura giden ya da sesli okunan metinde "dNN" kalırsa HATA (testler/derleme.spec.js de arar).
+
+### Gönderme zamanı
+- Okur dersleri UYGULAMADAKİ SIRAYLA okur (sıra: araclar/ders_verisi_v2.py UNITELER; aşağıdaki ünite listeleri eski olabilir,
+  geçerli olan UNITELER'dir). Sırada ÖNCE gelen derse geçmiş anlatımla ("d9'da gördüğün gibi", "hatırla", "konusuydu",
+  "biliyorsun"), SONRA gelen derse gelecek anlatımla ("d16'da göreceksin", "dönecek") gönderilir; tersi yazılmaz.
+  Zamansız anlatım ("ayrıntısı d8'de", "d31 anlatıyor", "d8'de anlatılan") her iki yöne de uyar.
+- Sonra gelen derste anlatılan bir bilgiye dayanmak gerekiyorsa o sayıyı ya da tanımı bu derste kısaca ver ve "ayrıntısı d8'de"
+  diye gönder.
+- Denetim: `python araclar/gonderme_denetim.py` (testler/gonderme.spec.js). Bir yanlış alarmı istisna yapmak için betikteki
+  IZIN listesine dosya + hedef + sözcük + metin parçası ve GEREKÇE yaz; geniş istisna yazma.
+
+### Terimler (TÜBA Türkçe Bilim Terimleri Sözlüğü; Kaan kararı)
+- "atarca": her derste ilk geçtiği yerde bir kez "atarca (pulsar)", sonra hep "atarca" (atarcalar, milisaniye atarcası…).
+  Özel adlardaki İngilizce "pulsar" (makale adı, "PSR") kalır.
+- "anakol" (anakol yıldızı), "ana dizi" değil. "fantom enerji", "hayalet enerji" değil. M8: "Deniz Kulağı Bulutsusu"
+  (veri/hedefler.json), "Lagün Bulutsusu" değil. Kozmik "şişme" (ilk geçişte "şişme (enflasyon)").
+- Yazım: "hâl" (durum), "dâhil" (içinde); belirli tarihte ay adı büyük harf ("30 Ekim 2026"), değilse küçük ("ekimde").
+
 ## Anlatım kuralları
 - "Sen" diye hitap et (siz değil). Kısa, net cümleler. Her yeni terimi ilk geçtiği yerde tanımla.
 - Her bölüm: önce gündelik bir bağlam ya da soru, sonra kavram, sonra "neden önemli". Benzetme kullan ama benzetme fiziği yanlış anlatmasın; sınırını söyle.
@@ -64,10 +94,10 @@ Okur: meraklı bir yetişkin (Kaan; Türk, İstanbul, astronomiye meraklı, lise
 - d14 (YENİ) Yıldızlararası ortam ve yıldız doğumu: gaz ve toz, bulutsu türleri (salma, yansıma, karanlık), moleküler bulutlar, Jeans çöküşü (sözel), protoyıldız, T Tauri, öngezegen diskleri, Orion Bulutsusu örneği, yıldız oluşum hızı.
 - d5 Yıldızların hayatı: tayf sınıfları, Hertzsprung-Russell diyagramı, anakol, kütle-ışınım ilişkisi, ömür, yıldızın içi dengesi (hidrostatik denge), kırmızı dev evresi.
 - d15 (YENİ) Kümeler, çift ve değişen yıldızlar: açık ve küresel kümeler, küme H-R diyagramı ve yaş tayini (dönüm noktası), çift yıldızlar (görsel, tayfsal, örten) ve kütle ölçümü, Algol, değişen yıldız türleri (Sefeidler kısaca; uzaklık ölçümü d17'de), Mira.
-- d6 Yıldızların ölümü: düşük kütleli yıldızın sonu (gezegenimsi bulutsu, beyaz cüce, Chandrasekhar sınırı), büyük kütleli yıldızın sonu (demir çekirdek, çöküş süpernovası), Ia süpernovaları, nötron yıldızları ve pulsarlar, ağır elementlerin kökeni (nükleosentez, kilonova), kara deliğin oluşumu (ayrıntı d16'da).
+- d6 Yıldızların ölümü: düşük kütleli yıldızın sonu (gezegenimsi bulutsu, beyaz cüce, Chandrasekhar sınırı), büyük kütleli yıldızın sonu (demir çekirdek, çöküş süpernovası), Ia süpernovaları, nötron yıldızları ve atarcalar, ağır elementlerin kökeni (nükleosentez, kilonova), kara deliğin oluşumu (ayrıntı d16'da).
 - d16 (YENİ) Kara delikler ve kütleçekim dalgaları: olay ufku ve Schwarzschild yarıçapı, zaman genişlemesi ve gelgit (sözel), yıldız kütleli ve süper kütleli kara delikler, Sgr A* (yıldız yörüngeleri, Nobel 2020), M87* ve Sgr A* görüntüleri (EHT), kütleçekim dalgaları, LIGO/Virgo, GW150914, GW170817.
 Ünite gezegen_yasam (Ötegezegenler ve yaşam):
-- d13 (YENİ) Ötegezegenler: ilk keşifler (1992 pulsar gezegenleri, 1995 51 Pegasi b), yöntemler (geçiş, dikine hız, doğrudan görüntüleme, mikromercek, astrometri), bugünkü sayılar (NASA Exoplanet Archive), gezegen türleri (sıcak Jüpiter, süper Dünya, mini Neptün), yaşanabilir bölge, TRAPPIST-1, JWST ile atmosfer ölçümü.
+- d13 (YENİ) Ötegezegenler: ilk keşifler (1992 atarca gezegenleri, 1995 51 Pegasi b), yöntemler (geçiş, dikine hız, doğrudan görüntüleme, mikromercek, astrometri), bugünkü sayılar (NASA Exoplanet Archive), gezegen türleri (sıcak Jüpiter, süper Dünya, mini Neptün), yaşanabilir bölge, TRAPPIST-1, JWST ile atmosfer ölçümü.
 - d18 (YENİ) Astrobiyoloji: yaşamın gereksinimleri (sıvı su, enerji, karbon kimyası), Dünya'da yaşamın erken izleri, aşırı ortam canlıları, Mars (geçmiş su, Perseverance), Europa ve Enceladus (yeraltı okyanusları), Titan, biyoimzalar, Drake denklemi, Fermi paradoksu, SETI.
 Ünite evren (Galaksiler ve evren):
 - d7 Galaksiler: Samanyolu'nun yapısı ve bizim yerimiz, galaksi türleri (Hubble çatalı), Yerel Grup, Andromeda ile gelecekteki birleşme, galaksi çarpışmaları, aktif galaksi çekirdekleri ve kuasarlar, galaksi kümeleri.
@@ -139,9 +169,10 @@ Bu bölüm yukarıdakilerle çelişirse bu bölüm geçerli. Mevcut genel dersle
 - yildizlar: d4, d14, d5, d15
 - yildiz_olum: d6, d45, d16, d46
 - samanyolu: d47, d7, d48, d49
-- evren: d8, d17, d20
+- evren: d57, d58, d8, d17, d20 (v7)
 - gezegen_yasam: d13, d18
 - fizik: d30, d33, d25, d26, d27, d28, d29, d31, d32
+- kuramlar (v6): d50, d51, d54, d52, d56, d53, d55
 on_bilgi yalnız bu sırada ÖNCE gelen derslere işaret eder (test bunu denetler). Fizik ünitesi en sonda: fizik derslerine "daha ayrıntısı için" diye gönderme yapılabilir ama on_bilgi'ye yazılmaz.
 
 ### Her ders (4.500–6.000 kelime, 10–16 bölüm, "yeni": true, dNN_sinav.json 4 soru)
@@ -158,7 +189,7 @@ Ortak beklenti: yapı (iç katmanlar, çekirdek, manto, kabuk / atmosfer katmanl
 - d41 Cüce gezegenler ve Kuiper kuşağı: Plüton (New Horizons 2015, Sputnik Planitia azot buzulları, Charon), 2006 IAU tanımı ve tartışması, Eris, Haumea, Makemake, Ceres (Dawn, parlak tuz lekeleri), Arrokoth (2019), Kuiper kuşağı ve dağınık disk, ayrık cisimler (Sedna), "Dokuzuncu Gezegen" hipotezi (kanıtsız, tartışmalı; Rubin Gözlemevi'nin rolü), haberlerdeki 2026 ED138'e gönderme yapmak serbest (Haberler sekmesi).
 - d42 Kuyruklu yıldızlar ve Oort bulutu: çekirdek yapısı ("kirli kartopu" → "buzlu kir topu"), koma, iki kuyruk (toz ve iyon) ve neden Güneş'ten uzağa baktıkları, kısa/uzun dönemli kuyruklu yıldızlar, Oort bulutu (varsayım, doğrudan görülmedi), Halley (1986 Giotto; 2061), Rosetta ve 67P (2014–2016, Philae), ünlü parlak kuyruklu yıldızlar (Hale-Bopp, NEOWISE 2020, Tsuchinshan-ATLAS 2024: kaynaklı), yıldızlararası ziyaretçiler ('Oumuamua, 2I/Borisov, 3I/ATLAS), kuyruklu yıldız parlaklık tahminlerinin neden tutmadığı, İstanbul'dan gözlem.
 - d43 Meteorlar ve göktaşları: meteoroid–meteor–göktaşı farkı, meteor yağmurları ve kuyruklu yıldız kaynakları (d19'daki listeyi tekrarlama), ateş topları, Çelyabinsk 2013, Tunguska 1908, göktaşı türleri (kondrit, akondrit, demir), göktaşlarından Güneş Sistemi'nin yaşı, Mars ve Ay göktaşları, Türkiye'deki göktaşları (yalnız kaynaklı; ör. Meteoritical Bulletin kayıtları), krater bilimi (Chicxulub ve dinozorlar, kanıtlarıyla), gezegen savunması (DART 2022, Hera, Apophis 2029 — d19 ile tutarlı), göktaşı bulursan ne yapmalı.
-- d45 Nötron yıldızları ve pulsarlar: d6'dan sonra derinleşme. Jocelyn Bell'in 1967 keşfi ve Nobel tartışması (kaynaklı), pulsar mekanizması (deniz feneri), milisaniye pulsarları, Yengeç pulsarı, nötron yıldızının iç yapısı (kabuk, "nükleer makarna", çekirdek bilinmezi), kütle sınırı, magnetarlar ve 2004 SGR 1806-20 patlaması, Hulse–Taylor çift pulsarı (1993 Nobel, kütleçekim dalgası kanıtı), NICER ölçümleri, pulsar zamanlama dizileri (NANOGrav 2023 kütleçekim dalgası arka planı: kesinlik düzeyiyle), hızlı radyo patlamaları bağı (tartışmalı).
+- d45 Nötron yıldızları ve atarcalar (pulsarlar): d6'dan sonra derinleşme. Jocelyn Bell'in 1967 keşfi ve Nobel tartışması (kaynaklı), atarca mekanizması (deniz feneri), milisaniye atarcaları, Yengeç atarcası, nötron yıldızının iç yapısı (kabuk, "nükleer makarna", çekirdek bilinmezi), kütle sınırı, magnetarlar ve 2004 SGR 1806-20 patlaması, Hulse–Taylor çift atarcası (1993 Nobel, kütleçekim dalgası kanıtı), NICER ölçümleri, atarca zamanlama dizileri (NANOGrav 2023 kütleçekim dalgası arka planı: kesinlik düzeyiyle), hızlı radyo patlamaları bağı (tartışmalı).
 - d46 Süper kütleli kara delikler: Yay A* (S2 yıldızı, 2020 Nobel Genzel–Ghez; d16'ya gönder, tekrarlama), M87* ve Sgr A* görüntüleri (EHT 2019, 2022), kara delik kütlesi–galaksi ilişkisi (M–σ), nasıl büyüdükleri ve erken evrende neden bu kadar büyük oldukları (JWST'nin bulguları; tartışmalı), gelgit yırtılma olayları, kara delik birleşmeleri ve LISA, en büyük kara delikler (ölçüm belirsizlikleriyle), S301 haberine bağ (Haberler sekmesi).
 - d47 Samanyolu: evimiz olan galaksi: Samanyolu'nu içeriden haritalamak (Herschel, Kapteyn, Shapley, Gaia), yapı (çubuklu sarmal, disk, şişkinlik, hale, kollar), boyut ve yıldız sayısı (belirsizlikleriyle), Güneş'in yeri ve yörüngesi (galaktik yıl), dönme eğrisi ve karanlık madde (d17'ye gönder), Fermi baloncukları, galaktik merkez (d46'ya gönder), uydu galaksiler ve Macellan Bulutları, Gaia-Enceladus birleşmesi, Andromeda ile gelecekteki çarpışma (2025 yeniden hesabıyla belirsizlik — kaynaklı), İstanbul'dan Samanyolu'nu görmek (ışık kirliliği, Bortle; nereye gitmeli — yalnız genel kaynaklı bilgi).
 - d48 Kuasarlar ve aktif galaksiler: 3C 273 ve Maarten Schmidt 1963, kuasar = beslenen süper kütleli kara delik, birikim diski ve parlaklık (Eddington sınırı), jetler ve süperluminal yanılsama, birleşik model (Seyfert, blazar, radyo galaksi), en uzak kuasarlar, kuasarlarla evreni ölçmek (Lyman-alfa ormanı), geri besleme ve galaksi evrimi, 3C 273'ü amatör teleskopla görmek (kadir kaynaklı; 7×50 için gerçekçi ol), JWST'nin "küçük kırmızı noktaları" (Haberler sekmesine bağ; tartışmalı).

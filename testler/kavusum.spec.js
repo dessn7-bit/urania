@@ -81,6 +81,92 @@ test.describe('JPL Horizons ile en yakın an ve ayrım (6 olay; ±0,02°, ±30 d
   });
 });
 
+/* ---- En iyi görüş anı: karanlık yüksekliğe tercih edilir (−18° → −12° → −6°) ----
+   Güneş yüksekliği gok.js'ten değil, node_modules'taki Astronomy Engine'den (kırılmalı, gok.js cisimAltAz ile aynı ölçü);
+   gezegen yükseklikleri Horizons'un görünen RA/Dec'inden (yer merkezli; gezegende paralaks ihmal edilebilir). */
+const AE = require('astronomy-engine');
+const AE_IST = new AE.Observer(41.0, 29.1, 20);
+function aeGunes(t, gz) { const e = AE.Equator(AE.Body.Sun, t, gz || AE_IST, true, true); return AE.Horizon(t, gz || AE_IST, e.ra, e.dec, 'normal').altitude; }
+function aeCisim(c, t, gz) {
+  let ad = c;
+  if (typeof c !== 'string') { AE.DefineStar(AE.Body.Star2, c.ra / 15, c.dec, 1000); ad = AE.Body.Star2; }   // sabit hedef (J2000)
+  const e = AE.Equator(ad, t, gz, true, true); return AE.Horizon(t, gz, e.ra, e.dec, 'normal').altitude;
+}
+function horizonsAlt(dosya, t) {
+  const r = horizonsOku(dosya).find(x => Math.abs(x.zaman - t) < 30e3);
+  expect(r, 'Horizons satırı ' + new Date(t).toISOString()).toBeTruthy();
+  return AE.Horizon(new Date(t), AE_IST, r.ra / 15, r.dec, 'normal').altitude;
+}
+/* Bağımsız pencere: ±1 gün, 5 dk adım, iki cisim ≥10° ve Güneş ≤ −6°; görüş anını içeren kesintisiz pencerede Güneş'in en alçağı */
+function pencereEnAlcakGunes(k, gz) {
+  const e = k.enYakin.zaman.getTime(), g = k.gorus.zaman.getTime();
+  const ok = t => { const d = new Date(t); return aeGunes(d, gz) <= -6 && k.cisimler.every(c => aeCisim(c, d, gz) >= 10); };
+  expect(ok(g), 'görüş anı koşulları sağlıyor').toBe(true);
+  let bas = g, son = g;
+  while (bas - 5 * 60e3 >= e - 86400e3 && ok(bas - 5 * 60e3)) bas -= 5 * 60e3;
+  while (son + 5 * 60e3 <= e + 86400e3 && ok(son + 5 * 60e3)) son += 5 * 60e3;
+  let en = 90;
+  for (let t = bas; t <= son; t += 5 * 60e3) en = Math.min(en, aeGunes(new Date(t), gz));
+  return en;
+}
+
+test('Mars–Jüpiter 16 Kasım 2026 (İstanbul): en yakın an 05.03 TSİ tam karanlıkta; en iyi görüş anı da tam karanlıkta (Horizons)', () => {
+  const ref = horizonsEnYakin('mars_jupiter_20261116');
+  /* Horizons: en yakın an 02:04:50 UT (05.04 TSİ); o anda iki gezegen ≈50° yükseklikte, Güneş −31° */
+  const altM = horizonsAlt('mars_jupiter_20261116_a.txt', Math.round(ref.zaman / 60e3) * 60e3);
+  const altJ = horizonsAlt('mars_jupiter_20261116_b.txt', Math.round(ref.zaman / 60e3) * 60e3);
+  expect(altM).toBeGreaterThan(45); expect(altJ).toBeGreaterThan(45);
+  expect(aeGunes(new Date(ref.zaman))).toBeLessThan(-18);
+  const k = G.kavusumlar(new Date('2026-11-13T00:00:00Z'), 7, null, IST).find(x => x.cisimler.indexOf('Mars') >= 0 && x.cisimler.indexOf('Jupiter') >= 0);
+  expect(Math.abs(k.enYakin.zaman - ref.zaman) / 60e3).toBeLessThanOrEqual(3);
+  /* Eski seçim (yalnız Güneş ≤ −12°, en yüksek an) 06.43 TSİ'yi veriyordu: Güneş −12,6°. Şimdi tam karanlık şart. */
+  expect(k.gorus.karanlikEsik).toBe(-18);
+  expect(aeGunes(k.gorus.zaman), 'görüş anında Güneş (AE)').toBeLessThanOrEqual(-18);
+  expect(k.gorus.zaman < new Date('2026-11-16T03:43:00Z')).toBe(true);
+  /* Görüş anında iki gezegen de en yakın andakinden alçak değil (tam karanlık içinde en yüksek an seçilir) ve Horizons'la ≥10° */
+  const t = Math.round(k.gorus.zaman / 60e3) * 60e3;
+  const gM = horizonsAlt('mars_jupiter_20261116_a.txt', t), gJ = horizonsAlt('mars_jupiter_20261116_b.txt', t);
+  expect(Math.min(gM, gJ)).toBeGreaterThanOrEqual(Math.min(altM, altJ) - 0.5);
+  expect(Math.abs(Math.min(gM, gJ) - k.gorus.alt)).toBeLessThan(0.2);
+});
+
+test('Görüş anı seçimi (gorusAniSec): −18° varsa yükseklikten önce o; yoksa −12°; o da yoksa −6°', () => {
+  const an = (dk, gunes, altA, altB) => ({ t: new Date(Date.UTC(2026, 10, 16, 0, dk)), gunes, ka: { alt: altA }, kb: { alt: altB } });
+  const ayrim = () => 1;
+  /* Tam karanlık an alçakta (20°), alacakaranlıktaki an yüksekte (60°): tam karanlık seçilir */
+  let s = G.gorusAniSec([an(0, -25, 20, 22), an(10, -19, 30, 31), an(20, -13, 60, 61), an(30, -7, 70, 70)], false, ayrim);
+  expect(s.esik).toBe(-18); expect(s.gunes).toBe(-19);
+  /* −18° yok: −12°'nin altındaki anlar arasından en yüksek */
+  s = G.gorusAniSec([an(0, -16, 20, 22), an(10, -12.5, 30, 31), an(20, -9, 60, 61)], false, ayrim);
+  expect(s.esik).toBe(-12); expect(s.gunes).toBe(-12.5);
+  /* −12° de yok: −6° anlar */
+  s = G.gorusAniSec([an(0, -11, 20, 22), an(10, -8, 30, 31), an(20, -6.5, 60, 61)], false, ayrim);
+  expect(s.esik).toBe(-6); expect(s.gunes).toBe(-6.5);
+  /* Ay'lı çift: aynı basamak içinde ayrımın en küçük olduğu an */
+  s = G.gorusAniSec([an(0, -20, 20, 22), an(10, -19, 30, 31), an(20, -10, 60, 61)], true, t => t.getUTCMinutes() === 0 ? 2 : t.getUTCMinutes() === 10 ? 1.5 : 0.5);
+  expect(s.esik).toBe(-18); expect(s.gunes).toBe(-19); expect(s.ayrim).toBe(1.5);
+  expect(G.GORUS_KARANLIK).toEqual([-18, -12, -6]);
+});
+
+test('−12° basamağı (gerçek olay): Ay–Jüpiter 12 Mayıs 2027, 55,0 K 12,0 D — pencerede tam karanlık yok', () => {
+  const gzl = G.gozlemci(55.0, 12.0, 0), gz = new AE.Observer(55.0, 12.0, 0);
+  const k = G.kavusumlar(new Date('2027-05-09T00:00:00Z'), 7, null, gzl).find(x => x.ayli && x.gezegen === 'Jupiter');
+  expect(k && k.gorunur).toBe(true);
+  expect(k.gorus.karanlikEsik).toBe(-12);
+  const g = aeGunes(k.gorus.zaman, gz);
+  expect(g).toBeLessThanOrEqual(-12); expect(g).toBeGreaterThan(-18);
+  expect(pencereEnAlcakGunes(k, gz), 'pencerede Güneş −18°\'ye inmiyor').toBeGreaterThan(-18);
+});
+
+test('−6° basamağı (gerçek olay): Venüs–Spica 9 Kasım 2026, İstanbul — pencerede Güneş −12°\'ye inmiyor', () => {
+  const k = G.kavusumlar(new Date('2026-11-06T00:00:00Z'), 7, VERI, IST).find(x => x.adlar.indexOf('Venüs') >= 0 && x.adlar.indexOf('Spica') >= 0);
+  expect(k && k.gorunur).toBe(true);
+  expect(k.gorus.karanlikEsik).toBe(-6);
+  const g = aeGunes(k.gorus.zaman);
+  expect(g).toBeLessThanOrEqual(-6); expect(g).toBeGreaterThan(-12);
+  expect(pencereEnAlcakGunes(k, AE_IST), 'pencerede Güneş −12° altına inmiyor').toBeGreaterThan(-12);
+});
+
 /* ---- CycleCalcs ---- */
 const CC_AD = { Moon: 'Ay', Mercury: 'Merkür', Venus: 'Venüs', Mars: 'Mars', Jupiter: 'Jüpiter', Saturn: 'Satürn', Alcyone: 'Ülker' };
 function cyclecalcs() {
@@ -225,6 +311,14 @@ test.describe('Arayüz', () => {
     await expect(olay).toContainText(Math.round(k.gorus.alt) + '°');
     await expect(olay).toContainText('7×50 dürbünün alanına birlikte sığarlar');
     await expect(olay.locator('.takvim-bag')).toHaveText('Takvime ekle');
+    /* Metin önce en yakın anın saatini söyler (05.03 TSİ), sonra en iyi görüş anını; görüş anında gök tam karanlık */
+    const sa = t => new Intl.DateTimeFormat('tr-TR', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Istanbul' }).format(t);
+    expect(sa(k.enYakin.zaman)).toBe('05:03');
+    const metin = (await olay.locator('.alt').innerText()).replace(/\s+/g, ' ');
+    expect(metin).toMatch(new RegExp('^En yakın an [^:]*' + sa(k.enYakin.zaman) + ':'));
+    expect(metin.indexOf(sa(k.enYakin.zaman))).toBeLessThan(metin.indexOf(sa(k.gorus.zaman)));
+    expect(metin).toContain('Buradan en iyi ' + sa(k.gorus.zaman));
+    expect(metin).toContain('gök tam karanlık');
     /* Plan: kavuşum maddesi görüş saatinde (yerel saat), sesli metinde ayrım "derece" sözüyle */
     const madde = page.locator('#gkPlan li.plan-kavusum');
     await expect(madde).toHaveCount(1, { timeout: 20000 });

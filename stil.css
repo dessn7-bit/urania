@@ -555,7 +555,8 @@ details.unite > summary { list-style: none; cursor: pointer; display: grid; grid
 details.unite > summary::-webkit-details-marker { display: none; }
 details.unite > summary::after { content: ''; grid-column: 3; grid-row: 1; width: 9px; height: 9px; margin-top: 12px; border-right: 2px solid var(--pirinc); border-bottom: 2px solid var(--pirinc); transform: rotate(45deg); transition: transform .15s; }
 details.unite[open] > summary::after { transform: rotate(-135deg); margin-top: 16px; }
-.unite-no { font: italic 400 30px/1.1 var(--serif); color: var(--pirinc-soluk, var(--soluk)); }
+/* Ünite numarası okunur metin: yarı saydam kenar rengi (--pirinc-soluk) 1,86:1 / kırmızıda 1,22:1 kalıyordu; büyük metin için ≥ 3:1 (A4-11) */
+.unite-no { font: italic 400 30px/1.1 var(--serif); color: var(--soluk); }
 .unite-ic { display: grid; gap: 4px; min-width: 0; }
 details.unite .unite-bas { margin: 0; font: 400 22px/1.25 var(--serif); }
 details.unite .unite-acik { margin: 0; color: var(--soluk); font-size: 14px; }
@@ -679,7 +680,7 @@ html.kirmizi { scrollbar-color: var(--soluk) var(--gece); }
 /* Gökyüzü: plan başlığı da katlanır bölümler gibi ince çizgiyle başlar (bölümler arası tek ritim) */
 #b-gok h2.plan-bas { margin-top: 32px; padding-top: 18px; border-top: 1px solid var(--cizgi); }
 /* "Gördüm, deftere yaz" her maddede tekrarlanıyor: alt çizgi ince ve soluk, odakta/üstünde tam renk */
-.defter-bag a { text-decoration-color: var(--pirinc-soluk); text-underline-offset: 3px; }
+.defter-bag a { text-decoration-color: var(--pirinc-soluk); text-underline-offset: 3px; display: inline-block; padding: 3px 0; }   /* dokunma hedefi ≥ 24 px, yanındaki düğmelerle aynı (A4-12) */
 .defter-bag a:hover, .defter-bag a:focus-visible, html.kirmizi .defter-bag a { text-decoration-color: currentColor; }   /* kırmızı modda bağlantı rengi yazıya çok yakın: alt çizgi tam kalır */
 
 /* Gökyüzü: tek satırlık karar ("Bu gece gözlem: iyi") — sayfanın ilk cevabı. Seviye yazıyla da söylenir, renk yalnız destek. */

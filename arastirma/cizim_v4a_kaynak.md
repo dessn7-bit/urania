@@ -33,6 +33,7 @@ Tarih: 2026-10-30. Her satır: değer | nereden | hesap.
 | değer | nereden | hesap |
 |---|---|---|
 | d31-baglanma-egrisi (bölüm 4): eğri, A = 2 … 240 | AME2020 | her A için ölçülmüş (# ile işaretli tahmin olmayan) çekirdekler arasında en yüksek B/A; keV ÷ 1000 = MeV, 3 ondalık |
+| d31-baglanma-egrisi (2026-11-08) | anlatım "en yüksek nokta nikel-62 ile demir-56" → "nikel-62; demir-58 ve demir-56 hemen ardından" (çizimin kendi verisinde A=58 8,792 > A=56 8,790) | Ders d31 bölüm 4: "nikel-62'nin, 8,7945 MeV; onu 8,7922 MeV ile demir-58 ve 8,7903 MeV ile demir-56 izler" |
 | döteryum (H-2) 1,11 MeV | AME2020 | 1112,2831 keV |
 | helyum-4 7,07 MeV | AME2020; Ders bölüm 3 (HyperPhysics: 28,3 ÷ 4 ≈ 7,1) | 7073,9156 keV |
 | nikel-62 8,79 MeV | AME2020 (8794,5555 keV); Ders bölüm 4 (Wikipedia Nickel-62: 8,7945) | — |

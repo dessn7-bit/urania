@@ -2,6 +2,13 @@
 /* Zaman uç durumları (2. hata avı): yaz saati geçişi, yanlış cihaz saati, geçmiş tarih, konum dilimi.
    Ağ isteği atılmaz: dış istekler sahte yanıtla ya da kesilerek karşılanır. */
 const { test, expect } = require('@playwright/test');
+
+/* Sayfa hatası (yakalanmamış istisna) her tarayıcı testinde denetlenir (denetim A7-06) */
+test.beforeEach(async ({ page }) => {
+  page.hatalar = [];
+  page.on('pageerror', e => page.hatalar.push(String(e)));
+});
+test.afterEach(async ({ page }) => { expect(page.hatalar || []).toEqual([]); });
 const { ISTASYON, SON30 } = require('./yardim');
 const G = require('../gok.js');
 

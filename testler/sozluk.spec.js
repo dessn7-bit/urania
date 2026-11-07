@@ -249,3 +249,28 @@ test('sesli okuma metni değişmez: işaretlemeden önce ve sonra .okunur innerT
   expect(r.pEsit).toBe(true);
   expect(r.tcEsit).toBe(true);
 });
+
+/* Denetim A3-08 / A3-09: terimden sonra yalnız Türkçe ekler gelir; kısa terim başka sözcüğün içinde eşleşmez.
+   Gerçek veri yeniden üretilmeden de sınansın diye küçük bir sozluk.json sunulur (desenler sozluk_yap.py biçiminde). */
+test('ek dilbilgisi: "Sol" soluk, "ada" aday, "zar" zarar değil; özel ad koşulu, yalnız ve çoğul tamlama', async ({ page }) => {
+  const terim = (t, kimlik, desen, ek) => Object.assign({ terim: t, kimlik, tanim: t + ' tanımı.', esanlam: [], dersler: [], kaynak: [], tanimli: [], desen }, ek || {});
+  const veri = { kaynak: 'deneme', ders_adlari: {}, terimler: [
+    terim('Sol', 'sol', [['sol', 3]], { ozel: true }),
+    terim('ada', 'ada', [['ada', 3]]),
+    terim('zar', 'zar', [['zar', 3]]),
+    terim('durak', 'durak', [['dura(?:k|ğ(?=[aeıioöuü]))', 5]]),
+    terim('kuşak', 'kusak', [['kuşa(?:k|ğ(?=[aeıioöuü]))', 5]], { yalniz: ['d32'] }),
+    terim('Işık yılı', 'isik-yili', [['ışık\\s+yılı', 9], ['ışık\\s+yıl(?=l)', 9]])
+  ] };
+  await page.route('**/veri/sozluk.json', r => r.fulfill({ contentType: 'application/json', body: JSON.stringify(veri) }));
+  await page.goto('/index.html#ders/d5');
+  await expect(page.locator('article.ders h1')).toBeVisible();
+  const isaretle = (h, s) => page.evaluate(async ([h, s]) => {
+    const k = document.createElement('div'); k.innerHTML = h; document.querySelector('#b-ders').appendChild(k);
+    await window.Sozluk.isaretle(k, s);
+    return [...k.querySelectorAll('button.terim')].map(b => b.textContent);
+  }, [h, s || null]);
+  expect(await isaretle('<p>Soluk leke, sola dön; aday ve Adams; zarar, zarif zarf; durağan bir kuşak.</p>')).toEqual([]);
+  expect(await isaretle("<p>Bir Sol'ün süresi; adası; zarın; durağı; ışık yıllarınca.</p>")).toEqual(["Sol'ün", 'adası', 'zarın', 'durağı', 'ışık yıllarınca']);
+  expect(await isaretle('<p>Parçacık kuşağı.</p>', { ders: 'd32' })).toEqual(['kuşağı']);
+});

@@ -120,13 +120,48 @@
     g.sivilBas = g.sivilSon ? icinde(tarih(A.SearchAltitude('Sun', gzl, +1, g.sivilSon, 1, -6))) : null;
     if (g.astroSon && !g.astroBas) g.astroSon = null;      // eşiğin altına inip çıkışı bu gece değilse yok say
     if (g.sivilSon && !g.sivilBas) g.sivilSon = null;
-    /* Karanlık pencere: astronomik gece varsa o; yoksa (yaz ortası yüksek enlem)
-       denizci, o da yoksa sivil alacakaranlık. */
-    g.karanlikBas = g.astroSon || g.denizciSon || g.sivilSon || batis;
-    g.karanlikSon = g.astroBas || (g.denizciSon ? icinde(tarih(A.SearchAltitude('Sun', gzl, +1, g.denizciSon, 1, -12))) : null) || g.sivilBas || dogus;
+    /* Güneş'in bu pencerede en yüksek ve en alçak konumu (kırılmasız, SearchAltitude ile aynı ölçü): üst geçiş öğleye
+       yakın (±1 saat), alt geçiş öğleden ≈12 saat sonra. Geçiş anları yerine eşiklere göre karar vermek için:
+       yüksek enlemde Güneş gün boyu bir eşiğin altında kalabilir (kutup gecesi) ya da hiç inmeyebilir (kutup günü). */
+    const gAlt = t => { const e = A.Equator('Sun', t, gzl, true, true); return A.Horizon(t, gzl, e.ra, e.dec).altitude; };
+    const ust = tarih(A.SearchHourAngle('Sun', gzl, 0, new Date(ogle.getTime() - 12 * 3600e3)).time);
+    const alc = tarih(A.SearchHourAngle('Sun', gzl, 12, ogle).time);
+    const ust2 = tarih(A.SearchHourAngle('Sun', gzl, 0, alc).time);   // ertesi üst geçiş (öğle yuvarlanınca pencerenin sonuna düşebilir)
+    const pencerede = t => t && t.getTime() >= ogle.getTime() && t.getTime() <= sinir;
+    g.gunesEnYuksek = Math.max(gAlt(ogle), gAlt(new Date(sinir)), pencerede(ust) ? gAlt(ust) : -90, pencerede(ust2) ? gAlt(ust2) : -90);
+    g.gunesEnAlcak = Math.min(gAlt(ogle), gAlt(new Date(sinir)), pencerede(alc) ? gAlt(alc) : 90);
+    /* Güneş'in esik'in altında kaldığı aralık: hiç inmiyorsa null, gün boyu altındaysa bütün pencere (öğleden öğleye). */
+    const altBas = pencerede(ust) && ust > ogle ? ust : ogle;
+    const pencere = esik => {
+      if (g.gunesEnAlcak >= esik) return null;
+      if (g.gunesEnYuksek < esik) return { bas: ogle, son: new Date(sinir), tumGun: true };
+      const bas = gAlt(altBas) < esik ? altBas : icinde(tarih(A.SearchAltitude('Sun', gzl, -1, altBas, 1, esik)));
+      if (!bas) return null;
+      const son = icinde(tarih(A.SearchAltitude('Sun', gzl, +1, bas, 1, esik))) || new Date(sinir);
+      return { bas, son, tumGun: false };
+    };
+    const astro = pencere(-18), denizci = pencere(-12), sivil = pencere(-6);
+    /* Karanlık pencere: astronomik gece (Güneş −18°'nin altında) varsa o; yoksa (yaz ortası yüksek enlem)
+       denizci (−12°), o da yoksa sivil (−6°); Güneş −6°'ye de inmiyorsa batıştan doğuşa. Kutup gecesinde
+       Güneş gün boyu eşiğin altındaysa pencere bütün gündür. */
+    const en = astro || denizci || sivil;
+    g.karanlikDuzey = astro ? 'astro' : denizci ? 'denizci' : sivil ? 'sivil' : null;
+    g.karanlikBas = en ? en.bas : batis;
+    g.karanlikSon = en ? en.son : dogus;
+    g.karanlikTumGun = !!(en && en.tumGun);
     if (g.karanlikBas && g.karanlikSon && g.karanlikSon <= g.karanlikBas) { g.karanlikBas = null; g.karanlikSon = null; }
-    /* Gök sivil alacakaranlığın ötesine hiç geçmiyorsa derin gök hedefleri için karanlık yok */
-    g.karanlikYok = !g.sivilSon;
+    /* Tam (astronomik) karanlık: geçiş anları olmasa da (kutup gecesi) pencere */
+    g.tamKaranlikBas = astro ? astro.bas : null;
+    g.tamKaranlikSon = astro ? astro.son : null;
+    /* Gök −6°'nin ötesine hiç geçmiyorsa (kutup günü, beyaz geceler) derin gök hedefleri için karanlık yok.
+       Güneş gün boyu −6°'nin altındaysa (derin kutup gecesi) karanlık VAR: bütün gün sürer. */
+    g.karanlikYok = !sivil;
+    g.kutupGunu = !batis && !dogus && g.gunesEnYuksek > 0;
+    g.kutupGecesi = !batis && !dogus && g.gunesEnYuksek <= 0;
+    /* Gece (gezegenler, bulut tahmini): Güneş −6°'nin altında; yoksa batıştan doğuşa; Güneş hiç doğmuyorsa bütün gün */
+    if (g.kutupGecesi) { g.geceBas = ogle; g.geceSon = new Date(sinir); }
+    else if (sivil) { g.geceBas = sivil.bas; g.geceSon = sivil.son; }
+    else { g.geceBas = batis; g.geceSon = dogus; }
     return g;
   }
 
@@ -248,10 +283,8 @@
   function gezegenlerBuGece(gun, gzl, gece) {
     const simdi = new Date(gun);
     /* Gezegenler parlak: sivil alacakaranlık sonundan başlangıcına kadar bakılır. */
-    let bas = gece.sivilSon || gece.batis;
-    let son = gece.sivilBas || gece.dogus;
-    /* Kutup gecesi (Güneş hiç doğmuyor): bütün gün */
-    if (!gece.batis && !gece.dogus && cisimAltAz('Sun', gece.ogle, gzl).alt < 0) { bas = gece.ogle; son = new Date(gece.ogle.getTime() + 86400e3); }
+    /* Kutup gecesinde (Güneş hiç doğmuyor) bütün gün; geceAraligi geceBas/geceSon */
+    const bas = gece.geceBas, son = gece.geceSon;
     return GEZEGENLER.map(c => {
       const k = cisimAltAz(c, simdi, gzl);
       const tepe = enYuksek(d => cisimAltAz(c, d, gzl), bas, son, 10);
@@ -490,10 +523,11 @@
   }
   /* Buradan en iyi görüş anı: en yakın anın ±1 günü içinde, 5 dakika adımla, iki cisim de ≥10° yükseklikte ve Güneş ≤ −6°.
      Geçerli anlar kesintisiz pencerelere ayrılır; en yakın ana en yakın pencere seçilir (an pencerenin içindeyse o pencere).
-     Pencere içinde Ay'lı çiftte ayrımın en küçük olduğu an (Ay saatte ~0,5° ilerler), öteki çiftlerde ikisinin de en yüksek
-     olduğu an (alçak olanın yüksekliği en büyük; gezegenlerin ayrımı bir gecede ancak birkaç dakika yay değişir); pencerede
-     Güneş'in −12°'nin altında olduğu anlar varsa seçim onlar arasından yapılır (alacakaranlık kenarına takılmasın).
-     Döndürür: { zaman, ayrim, a: {alt, az}, b: {alt, az}, canli } ya da null (koşullar hiç sağlanmıyorsa). */
+     Pencere içinde seçim gorusAniSec ile: önce karanlık (Güneş ≤ −18°, yoksa ≤ −12°, yoksa ≤ −6° anlar), sonra Ay'lı
+     çiftte ayrımın en küçük olduğu an (Ay saatte ~0,5° ilerler), öteki çiftlerde ikisinin de en yüksek olduğu an (alçak
+     olanın yüksekliği en büyük; gezegenlerin ayrımı bir gecede ancak birkaç dakika yay değişir).
+     Döndürür: { zaman, ayrim, a: {alt, az}, b: {alt, az}, gunes, karanlikEsik (−18/−12/−6), canli } ya da null
+     (koşullar hiç sağlanmıyorsa). canli: en yakın an seçilen pencerenin içinde (o anda buradan görülür). */
   function kavusumGorus(a, b, enYakin, gzl, secenek) {
     const sec = Object.assign({ minYuk: 10, gunesSinir: -6, adimDk: 5, yarimGun: 1 }, secenek || {});
     const ADIM = sec.adimDk * 60e3;
@@ -515,14 +549,28 @@
     const uzak = w => (enYakin >= w.bas && enYakin <= w.son) ? 0 : Math.min(Math.abs(enYakin - w.bas), Math.abs(enYakin - w.son));
     pencereler.sort((x, y) => uzak(x) - uzak(y));
     const w = pencereler[0];
-    let sec2;
-    if (ayli) sec2 = w.anlar.map(x => Object.assign({ ayrim: kavusumAyrim(a, b, x.t) }, x)).sort((x, y) => x.ayrim - y.ayrim)[0];
-    else {
-      const karanlik = w.anlar.filter(x => x.gunes <= -12);
-      sec2 = (karanlik.length ? karanlik : w.anlar).slice().sort((x, y) => Math.min(y.ka.alt, y.kb.alt) - Math.min(x.ka.alt, x.kb.alt))[0];
-      sec2.ayrim = kavusumAyrim(a, b, sec2.t);
+    const sec2 = gorusAniSec(w.anlar, ayli, t => kavusumAyrim(a, b, t));
+    return { zaman: sec2.t, ayrim: sec2.ayrim, a: sec2.ka, b: sec2.kb, gunes: sec2.gunes, karanlikEsik: sec2.esik, canli: uzak(w) === 0 };
+  }
+  /* Pencere içinde görüş anının seçimi. Karanlık yüksekliğe tercih edilir: önce tam karanlık (Güneş ≤ −18°) anlar;
+     pencerede hiç yoksa Güneş ≤ −12°, o da yoksa ≤ −6° anlar (pencere zaten ≤ −6° ve iki cisim ≥ 10° olan anlardan
+     oluşur). Seçilen küme içinde Ay'lı çiftte ayrımın en küçük olduğu an, öteki çiftlerde alçak olanın en yüksek olduğu an.
+     anlar: [{ t, ka: {alt}, kb: {alt}, gunes }]; ayrimFn(t) ayrımı verir. Döndürür: seçilen an + { ayrim, esik }. */
+  const GORUS_KARANLIK = [-18, -12, -6];
+  function gorusAniSec(anlar, ayli, ayrimFn) {
+    let esik = null, kume = anlar;
+    for (const e of GORUS_KARANLIK) {
+      const k = anlar.filter(x => x.gunes <= e);
+      if (k.length) { esik = e; kume = k; break; }
     }
-    return { zaman: sec2.t, ayrim: sec2.ayrim, a: sec2.ka, b: sec2.kb, canli: uzak(w) === 0 };
+    let sec;
+    if (ayli) sec = kume.map(x => Object.assign({ ayrim: ayrimFn(x.t) }, x)).sort((x, y) => x.ayrim - y.ayrim)[0];
+    else {
+      sec = Object.assign({}, kume.slice().sort((x, y) => Math.min(y.ka.alt, y.kb.alt) - Math.min(x.ka.alt, x.kb.alt))[0]);
+      sec.ayrim = ayrimFn(sec.t);
+    }
+    sec.esik = esik;
+    return sec;
   }
   /* Ortalama azimut (çember üzerinde) */
   function azOrta(a, b) { const d = ((b - a + 540) % 360) - 180; return ((a + d / 2) % 360 + 360) % 360; }
@@ -639,7 +687,7 @@
     const yil = zaman.getFullYear();
     [yil, yil + 1].forEach(y => {
       const s = A.Seasons(y);
-      [['mar_equinox', 'İlkbahar ekinoksu'], ['jun_solstice', 'Yaz gündönümü'], ['sep_equinox', 'Sonbahar ekinoksu'], ['dec_solstice', 'Kış gündönümü']]
+      [['mar_equinox', 'İlkbahar ekinoksu'], ['jun_solstice', 'Yaz gün dönümü'], ['sep_equinox', 'Sonbahar ekinoksu'], ['dec_solstice', 'Kış gün dönümü']]
         .forEach(([k, ad]) => ls.push({ tur: 'mevsim', zaman: tarih(s[k]), baslik: ad }));
     });
     ['Mercury', 'Venus'].forEach(c => {
@@ -688,7 +736,7 @@
     gozlemci, yon, ufukMatrisi, birimVektor, ufkaCevir, sabitAltAz, cisimAltAz, takimyildiz,
     yerelOgle, geceAraligi, ayDurumu, ayCeyrekleri, evreAdi, enYuksek, ornekler, enYuksekSabit, gezegenlerBuGece, hedeflerBuGece,
     meteorDurumu, meteorTakvimi, miraDurumu, gunesBoylamJ2000, aktifMi, olaylar, gezegenKadir, jupiterUydulari, jupiterYaricap,
-    kavusumlar, kavusumSabitleri, kavusumAyrim, kavusumGorus, kavusumOrtmeyleAyni, azOrta
+    kavusumlar, kavusumSabitleri, kavusumAyrim, kavusumGorus, gorusAniSec, GORUS_KARANLIK, kavusumOrtmeyleAyni, azOrta
   };
   if (typeof module !== 'undefined' && module.exports) module.exports = Gok;
   else kok.Gok = Gok;

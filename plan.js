@@ -25,13 +25,13 @@
      simdi verilirse (canlı mod) plan geçmiş saatlerden değil şimdiden başlar. */
   function olustur(g) {
     const gece = g.gece;
-    let S = gece.sivilSon || gece.batis;
-    const E = gece.sivilBas || gece.dogus;
-    if (!S || !E || E <= S) {
-      /* Batış yoksa: öğlen Güneş ufkun üstündeyse kutup günü, altındaysa kutup gecesi */
-      const neden = gece.batis ? 'karanlik-yok' : (Gok.cisimAltAz('Sun', gece.ogle, g.gzl).alt > 0 ? 'gunes-batmiyor' : 'gunes-dogmuyor');
-      return { maddeler: [], neden };
-    }
+    /* Kutup gecesinde (Güneş hiç doğmuyor) gece bütün gün sürer; plan, gece ile gündüzün değiştiği yerler için
+       hazırlanır (gozlem.js 'gunes-dogmuyor' metni), dürbün ve gezegen listeleri yine o geceyi gösterir. */
+    if (gece.kutupGunu) return { maddeler: [], neden: 'gunes-batmiyor' };
+    if (gece.kutupGecesi) return { maddeler: [], neden: 'gunes-dogmuyor' };
+    let S = gece.geceBas;
+    const E = gece.geceSon;
+    if (!S || !E || E <= S) return { maddeler: [], neden: 'karanlik-yok' };
     const KB = gece.karanlikBas || S, KS = gece.karanlikSon || E;
     if (g.simdi && g.simdi > S) {
       if (g.simdi >= E) return { maddeler: [], neden: 'gece-bitti' };

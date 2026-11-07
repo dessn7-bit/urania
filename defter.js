@@ -53,10 +53,16 @@
 
   /* Kayıt anındaki gök durumu */
   function otomatik(cisim, zaman, k) {
-    const gzl = G.gozlemci(k.enlem, k.boylam, k.yukseklik || 0);
-    const ay = G.ayDurumu(zaman, gzl);
-    const o = { ayOran: Math.round(ay.oran * 100), ayEvre: ay.ad, ayAlt: Math.round(ay.alt) };
+    /* Gözlemci/Ay hesabı da try içinde: bozuk konum kaydı (sayı olmayan yükseklik gibi) "Kaydet"i sessizce
+       düşürmesin; gök durumu olmadan da kayıt yapılır (denetim A4-01) */
+    let gzl = null;
+    const o = {};
     try {
+      gzl = G.gozlemci(k.enlem, k.boylam, Number.isFinite(k.yukseklik) ? k.yukseklik : 0);
+      const ay = G.ayDurumu(zaman, gzl);
+      Object.assign(o, { ayOran: Math.round(ay.oran * 100), ayEvre: ay.ad, ayAlt: Math.round(ay.alt) });
+    } catch (e) { gzl = null; }
+    if (gzl) try {
       if (cisim && (cisim.anahtar.startsWith('cisim:') || cisim.cisimAd)) {
         const p = G.cisimAltAz(cisim.cisimAd || cisim.anahtar.slice(6), zaman, gzl); o.alt = Math.round(p.alt); o.az = Math.round(p.az);
       } else if (cisim && cisim.ra != null) {
@@ -93,13 +99,21 @@
     if (o.hour === 24) o.hour = 0;
     return o;
   }
+  /* Date.UTC 0–99 yıllarını 1900–1999 sayar ("0050" → 1950); yıl ayrıca kurulur (denetim A4-07) */
+  function utc(y, ay, g, sa, dk, sn) {
+    const d = new Date(0);
+    d.setUTCFullYear(y, ay, g); d.setUTCHours(sa, dk, sn || 0, 0);
+    return d.getTime();
+  }
   /* z diliminin d anındaki UTC farkı (ms) */
   function ofset(d, z) {
     const p = parcalar(d, z);
-    return Date.UTC(p.year, p.month - 1, p.day, p.hour, p.minute, p.second) - Math.floor(d.getTime() / 1000) * 1000;
+    return utc(p.year, p.month - 1, p.day, p.hour, p.minute, p.second) - Math.floor(d.getTime() / 1000) * 1000;
   }
   function yerelGirdi(d, z) {
-    const p = parcalar(dkYuvarla(d), z), s = n => String(n).padStart(2, '0');
+    /* Dakikaya yerel saatte yuvarlanır: yerel ortalama zamanlı eski yıllarda (İstanbul 1910 öncesi +01:55:52) ofset
+       saniyeli; UTC'de yuvarlamak 22:00'yi 21:59 gösteriyordu */
+    const p = parcalar(new Date(Math.floor(d.getTime() / 1000) * 1000 + 30e3), z), s = n => String(n).padStart(2, '0');
     return String(p.year).padStart(4, '0') + '-' + s(p.month) + '-' + s(p.day) + 'T' + s(p.hour) + ':' + s(p.minute);
   }
   /* "2026-10-27T22:00" → z dilimindeki o duvar saatinin anı */
@@ -107,7 +121,7 @@
   function girdiOku(str, z) {
     const m = /^(\d{4,})-(\d{2})-(\d{2})T(\d{2}):(\d{2})/.exec(str || '');
     if (!m) return new Date(NaN);
-    const duvar = Date.UTC(+m[1], +m[2] - 1, +m[3], +m[4], +m[5]);
+    const duvar = utc(+m[1], +m[2] - 1, +m[3], +m[4], +m[5]);
     let t = duvar - ofset(new Date(duvar), z);
     t = duvar - ofset(new Date(t), z);       // yaz saati geçişinde ikinci tahmin
     return new Date(t);
@@ -338,9 +352,11 @@
     setTimeout(() => URL.revokeObjectURL(a.href), 2000);
     yedekDurum(ls.length + ' kayıt indirildi.');
   }
-  /* Yedekten gelen kayıt sıkı denetlenir; metinler zaten her yerde kaçışlanır */
+  /* Yedekten gelen kayıt sıkı denetlenir; metinler zaten her yerde kaçışlanır.
+     Zaman ISO 8601 olmalı: tarayıcının gevşek ayrıştırması "1" gibi değeri 2001 yılı sayıyordu (denetim A4-08). */
+  const ZAMAN_ISO = /^\d{4,}-\d{2}-\d{2}T\d{2}:\d{2}/;
   function gecerliKayit(k) {
-    return !!(k && typeof k === 'object' && KIMLIK.test(k.id) && metinMi(k.zaman, 40) && !isNaN(new Date(k.zaman)) &&
+    return !!(k && typeof k === 'object' && KIMLIK.test(k.id) && metinMi(k.zaman, 40) && ZAMAN_ISO.test(k.zaman) && !isNaN(new Date(k.zaman)) &&
       k.cisim && metinMi(k.cisim.anahtar, 120) && metinMi(k.cisim.ad, 120) &&
       metinMi(k.alet, 40) && metinMi(k.kosul, 40) && (k.not == null || metinMi(k.not, 2000)) &&
       k.konum && typeof k.konum.ad === 'string' && sayiMi(k.konum.enlem) && sayiMi(k.konum.boylam) &&

@@ -21,7 +21,7 @@
     minkowski: { ad: 'Wikisource: Minkowski, Space and Time', url: 'https://en.wikisource.org/wiki/Translation:Space_and_Time' },
     elma: { ad: 'arXiv 0903.3768: Einstein\'s Apple', url: 'https://arxiv.org/pdf/0903.3768' },
     mikroG: { ad: 'NASA: What Is Microgravity?', url: 'https://www.nasa.gov/learning-resources/for-kids-and-students/what-is-microgravity-grades-5-8/' },
-    gr: { ad: 'Wikipedia (arşiv): Tests of general relativity', url: 'https://webarchive.library.unt.edu/web/20141206100325/http://en.wikipedia.org/wiki/Tests_of_general_relativity' },
+    gr: { ad: 'Wikipedia (Kasım 2014 sürümü): Tests of general relativity', url: 'https://en.wikipedia.org/w/index.php?title=Tests_of_general_relativity&oldid=632962940' },
     caltech: { ad: 'Caltech Einstein Papers Project: Merkür\'ün açıklaması', url: 'https://einstein.caltech.edu/news/one-hundred-years-of-einsteins-field-equations-and-of-the-explanation-of-mercurys-perihelion' },
     merkur: { ad: 'NASA Mercury Fact Sheet', url: 'https://nssdc.gsfc.nasa.gov/planetary/factsheet/mercuryfact.html' },
     gps: { ad: 'Wikipedia: Error analysis for the GPS', url: 'https://en.wikipedia.org/wiki/Error_analysis_for_the_Global_Positioning_System' }
@@ -255,7 +255,7 @@
       const R = S.R, gx = 200, gy = 150, a = 84, e = 0.55;           // şematik yörünge: a ve e abartılı
       const c = a * e, b = a * Math.sqrt(1 - e * e);
       let s = '';
-      /* üç tur: günberi yönü 200°, 225°, 250° (matematik yönü; çizimde abartılı adımlar) */
+      /* üç tur: günberi yönü 190°, 225°, 260° (matematik yönü; çizimde abartılı adımlar) */
       const yonler = [190, 225, 260];
       yonler.forEach((y, i) => {
         const ux = Math.cos(y * rad), uy = -Math.sin(y * rad);

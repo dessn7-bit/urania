@@ -140,7 +140,8 @@
   }
   function goster(kok, param) {
     if (!V) return;
-    if (param) ac(decodeURIComponent(param));
+    /* Bozuk % dizisi (#haber/%E0%A4) bölümü hata kutusuna düşürmesin; haber açılmaz, liste görünür (A4-10) */
+    if (param) { let id = null; try { id = decodeURIComponent(param); } catch (e) { id = null; } if (id) ac(id); }
     /* Bu ziyaret görüldü: "Yeni" rozetleri sayfada kalır, bir sonraki ziyarette kalkar; sekmedeki nokta hemen söner */
     if (V.guncelleme && sonZiyaret() !== V.guncelleme) U.yaz('haberSon', V.guncelleme);   // ilk ziyarette hiçbir şey "yeni" sayılmaz
     noktaGuncelle();

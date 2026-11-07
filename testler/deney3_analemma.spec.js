@@ -9,6 +9,30 @@ test.beforeEach(async ({ page }) => {
 });
 test.afterEach(async ({ page }) => { expect(page.hatalar).toEqual([]); });
 
+/* Tema olayından sonra kanvas gerçekten yeniden çizildi mi (denetim A7-07). Kırmızı modda ekrandaki kırmızılığı CSS süzgeci
+   (stil.css: html.kirmizi .sahne canvas) verir, bu yüzden ekran görüntüsü yeniden çizimi ayırt etmez. Kanvas TAMPONU ise
+   yalnız yeniden çizilince değişir (renkler --pirinc gibi tema değişkenlerinden ve kırmızı dallardan gelir). Ölçü:
+   sınıf değişince tampon aynı kalır (kendiliğinden çizen döngü yok), urania:tema olayından sonra değişir. */
+async function kanvasOzet(page, secici) {
+  return page.locator(secici).evaluate(c => {
+    const d = c.getContext('2d').getImageData(0, 0, c.width, c.height).data; let h = 0, dolu = 0;
+    for (let i = 0; i < d.length; i += 4) {
+      h = (h * 31 + d[i] * 7 + d[i + 1] * 3 + d[i + 2]) >>> 0;
+      if (Math.max(d[i], d[i + 1], d[i + 2]) > 20) dolu++;
+    }
+    return h + ':' + dolu;
+  });
+}
+async function temaYenidenCizer(page, secici) {
+  const once = await kanvasOzet(page, secici);
+  expect(+once.split(':')[1], 'kanvas boş değil').toBeGreaterThan(100);
+  await page.evaluate(() => document.documentElement.classList.add('kirmizi'));
+  await page.waitForTimeout(300);
+  expect(await kanvasOzet(page, secici), 'olay gelmeden kanvas kendiliğinden değişmez').toBe(once);
+  await page.evaluate(() => document.dispatchEvent(new CustomEvent('urania:tema')));
+  await expect.poll(() => kanvasOzet(page, secici), { message: 'urania:tema olayından sonra kanvas yeniden çizilmeli' }).not.toBe(once);
+}
+
 async function ac(page) {
   await page.goto('/index.html#deney/analemma');
   await expect(page.locator('#anFark')).not.toHaveText('—');
@@ -100,6 +124,6 @@ test('Analemma: dar ekranda (320 px) yatay taşma yok; kırmızı modda çizer',
   }
   const oran = await page.locator('#anKanvas').evaluate(c => c.getBoundingClientRect().height / c.getBoundingClientRect().width);
   expect(oran).toBeGreaterThanOrEqual(0.55); expect(oran).toBeLessThanOrEqual(0.8);
-  await page.evaluate(() => { document.documentElement.classList.add('kirmizi'); document.dispatchEvent(new CustomEvent('urania:tema')); });
+  await temaYenidenCizer(page, '#anKanvas');
   await expect(page.locator('#anFark')).not.toHaveText('—');
 });

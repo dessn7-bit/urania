@@ -325,12 +325,13 @@ test('17: kırmızı modda ana ve ikincil metin siyah zeminde en az 4,5:1, yaln�
   }
 });
 
-test('18: hiçbir dersin ön bilgisi ders sırasında kendisinden sonra gelmez', async ({ page }) => {
+test('18: hiçbir dersin ön bilgisi ders sırasında kendisinden sonra gelmez (var olmayan ders ve dersin kendisi de olmaz)', async ({ page }) => {
   await page.goto('/index.html#ders');
   const ileri = await page.evaluate(async () => {
     const D = await fetch('veri/dersler.json').then(r => r.json());
     const sira = D.uniteler.flatMap(u => u.dersler);
-    return D.dersler.flatMap(x => (x.on_bilgi || []).filter(o => sira.indexOf(o) > sira.indexOf(x.id)).map(o => x.id + '→' + o));
+    /* kılavuz: on_bilgi yalnız sırada ÖNCE gelen derse; indexOf −1 (olmayan ders) ve eşit (kendisi) de ihlal */
+    return D.dersler.flatMap(x => (x.on_bilgi || []).filter(o => { const i = sira.indexOf(o); return i < 0 || i >= sira.indexOf(x.id); }).map(o => x.id + '→' + o));
   });
   expect(ileri).toEqual([]);
 });

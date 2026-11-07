@@ -84,6 +84,8 @@ Hesaplar cizim_v5c.js içinde tarayıcıda yapılır; aşağıdaki sayılar ayn�
 | d43-siklik (bölüm 12) | ≈5 kt havada patlama yılda bir | Ders d43 bölüm 4 ve 12 |
 | d43-siklik | Çelyabinsk ≈20 m, ≈500 kt (başka tahminler 200–470 kt), 60 yılda bir | Ders d43 bölüm 3 ve 12 |
 | d43-siklik | Hiroşima ≈17 kt | hesap: 500 kt ÷ 30 = 16,7 kt (Ders d43 bölüm 3: Çelyabinsk Hiroşima'nın yaklaşık 30 katı) |
+| d43-siklik (2026-11-08 düzeltildi) | başka tahminler çizgisi ve anlatım 200–500 kt → 200–470 kt (kod yorumu ve bu not zaten 470 diyordu) | Ders d43 bölüm 3: "başka tahminlerin 200 ile 470 kiloton arasında değiştiğini"; https://en.wikipedia.org/wiki/Chelyabinsk_meteor |
+| d43-ana-cisim (2026-11-08 düzeltildi) | "1.062 gözlenmiş düşüş" → "1.102 gözlenmiş düşüşün ana türüne göre sınıflanmış 1.062'si" (oranlar aynı) | Ders d43 bölüm 5: "kayıtlı 1.102 gözlenmiş düşüş … ana türüne göre sınıflanmış 1.062 düşüşün 49'u"; https://en.wikipedia.org/wiki/Meteorite_fall_statistics (malzeme tablosu "Total 1102", sınıf tablosu "Total 1062") |
 | d43-siklik | "5 kt, Hiroşima'nın üçte biri" (açıklama) | hesap: 5 ÷ 16,7 = 0,30 |
 | d43-siklik | Tunguska 3–30 Mt, 300–1.000 yılda bir | Ders d43 bölüm 4 ve 12 |
 | d43-siklik | Chicxulub ≈10 km, 10²³–10²⁵ J | Ders d43 bölüm 11 |

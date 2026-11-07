@@ -3,6 +3,8 @@
    örtme dilim sınırı, dokunma önceliği. Dış istek yok: CelesTrak fikstürü ya da sahte yanıt. */
 const { test, expect } = require('@playwright/test');
 const { ISTASYON, SON30 } = require('./yardim');
+/* A7-06: hata dinleyicisi kurulan her testte sayfa hatası kalmamalı */
+test.afterEach(async ({ page }) => { if (page.hatalar) expect(page.hatalar).toEqual([]); });
 
 async function kur(page, ek) {
   await page.route('**/celestrak.org/**', r => { const u = r.request().url(); return r.fulfill({ json: /stations/.test(u) ? ISTASYON : SON30 }); });

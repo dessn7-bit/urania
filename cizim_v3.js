@@ -276,7 +276,7 @@
   C.ekle('d21-kutup-atlama', {
     ders: 'd21', bolum: 8, oran: 0.9,
     baslik: 'Göstergeç yıldızlardan Kutup Yıldızı\'na ve Kraliçe\'ye',
-    aciklama: 'Gökyüzü 15 Ekim saat 22.00\'de İstanbul\'dan kuzeye bakarken göründüğü gibi döndürüldü: Büyük Kepçe aşağıda, ufka yakın; Kraliçe yukarıda. Kepçenin ağzındaki Merak\'tan Dubhe\'ye çizgi çek: aralık 5,4 derece. Bu aralığı yaklaşık beş kez uzatınca, 28,7 derece ötede, yaklaşık üç yumrukta Kutup Yıldızı\'na varırsın. Aynı yönde 32,8 derece daha gidince Kraliçe\'nin Schedar yıldızındasın. Açılar uygulamanın yıldız kataloğundan hesaplandı; izdüşüm kutup çevresinde açıları korur, kenarlarda boylar yüzde birkaç büyür.',
+    aciklama: 'Gökyüzü 15 Ekim saat 22.00\'de İstanbul\'dan kuzeye bakarken göründüğü gibi döndürüldü: Büyük Kepçe aşağıda, ufka yakın; Kraliçe yukarıda. Kepçenin ağzındaki Merak\'tan Dubhe\'ye çizgi çek: aralık 5,4 derece. Bu aralığı yaklaşık beş kez uzatınca, 28,7 derece ötede, yaklaşık üç yumrukta Kutup Yıldızı\'na varırsın. Aynı yönde 32,8 derece daha gidince Kraliçe\'nin Schedar yıldızındasın. Açılar uygulamanın yıldız kataloğundan hesaplandı; izdüşüm kutup çevresinde açıları korur, kenarlarda boylar büyür: çizilen yıldızlarda yüzde 5 (Segin) ile 14 (Alkaid) arası.',
     kaynak: [KAYNAK.polaris, KAYNAK.wgsn, KAYNAK.astronomyEngine],
     ciz(S) {
       const R = S.R, cx = 200, cy = 178, k = 232, lst = 338.28;
@@ -394,7 +394,7 @@
       s += S.yazi(E2[0] + 20, E2[1] + 10, 'fazladan dönüş:', { boy: 13, renk: R.uyari, kalin: true });
       s += S.yazi(E2[0] + 20, E2[1] + 28, '≈' + tr(gunAci, 3) + '° ≈ 3 dk 56 sn', { boy: 13, renk: R.uyari });
       /* uzak yıldız yönü */
-      s += S.yazi(8, 22, '← uzak yıldızın yönü: iki sarı ok paralel', { boy: 13, renk: R.vurgu });
+      s += S.yazi(8, 22, '← uzak yıldızın yönü: iki kalın düz ok paralel', { boy: 13, renk: R.vurgu });
       /* özet */
       s += S.yazi(8, 262, 'yıldız günü: 23 sa 56 dk 4 sn', { boy: 13, renk: R.metin });
       s += S.yazi(8, 280, '+ ' + tr(fark, 2) + ' dk fazladan dönüş', { boy: 13, renk: R.uyari });

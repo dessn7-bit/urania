@@ -59,9 +59,10 @@ def denetle(yol):
         js = "const {okunus}=require(process.argv[1]);const d=require(process.argv[2]);const t=d.bolumler.flatMap(b=>[b.baslik,...b.paragraflar,b.akilda||'',...(b.ornek?[b.ornek.baslik,b.ornek.metin]:[])]).map(okunus).join(' ');const k=[...t].filter(c=>!/[\\p{L}\\p{N}\\s.,;:!?()'\"’‘“”…%\\-–—]/u.test(c));console.log(JSON.stringify([...new Set(k)]));"
         argv = [os.path.abspath(os.path.join(K, 'okunus.js')), os.path.abspath(yol)]
         def node(kod):
-            r = subprocess.run(['node', '-e', kod, *argv], capture_output=True, text=True, timeout=30)
-            if r.returncode != 0 or not r.stdout.strip():
-                raise RuntimeError(f'node çıkış kodu {r.returncode}: {(r.stderr or r.stdout).strip()[-300:]}')
+            # Node çıktısı UTF-8'dir; kodlama verilmezse Windows'ta cp1254 diye çözülür: sembol bozuk görünür ya da okuma çöker (A7-04)
+            r = subprocess.run(['node', '-e', kod, *argv], capture_output=True, encoding='utf-8', errors='replace', timeout=30)
+            if r.returncode != 0 or not (r.stdout or '').strip():
+                raise RuntimeError(f'node çıkış kodu {r.returncode}: {((r.stderr or r.stdout) or "").strip()[-300:]}')
             return json.loads(r.stdout.strip())
         kalan = node(js)
         if kalan: uyarilar.append(f'sesli okumada karşılığı olmayan semboller: {kalan} (kelimeyle yaz ya da Claude\'a bildir)')
@@ -73,9 +74,30 @@ def denetle(yol):
         o2 = node(js2)
         if o2.get('ek'): uyarilar.append(f'sesli okumada açılmayan ekli birim: {o2["ek"][:8]} (okunus.js birim listesine ekle)')
         if o2.get('yd'): uyarilar.append(f'birimli eğik çizgi "ya da" okunuyor: {o2["yd"][:8]} (okunus.js birim listesine ekle)')
-    except Exception as e:
-        uyarilar.append(f'okunuş denetimi çalışmadı: {e}')
+    except FileNotFoundError as e:   # makinede node yok: denetim yapılamadı (ders düşürülmez)
+        uyarilar.append(f'okunuş denetimi çalışmadı (node bulunamadı): {e}')
+    except Exception as e:           # node çalıştı ama çöktü / boş çıktı verdi: sessizce geçilmez
+        hatalar.append(f'okunuş denetimi çalışmadı: {e}')
+    # on_bilgi yalnız sırada ÖNCE gelen derse (YAZIM_KILAVUZU.md; testler/defter_ders.spec.js 18 ile aynı kural)
+    s = sira()
+    if s and d.get('id') in s:
+        for o in d.get('on_bilgi') or []:
+            if o not in s: hatalar.append(f'on_bilgi: {o} ders sırasında yok')
+            elif s[o] >= s[d['id']]: hatalar.append(f'on_bilgi: {o} sırada bu dersten sonra ({s[o]}. ≥ {s[d["id"]]}.); yalnız önce gelen derse')
     return hatalar, uyarilar
+
+_SIRA = None
+def sira():
+    """ders kimliği → uygulamadaki sıra (ders_verisi_v2.py UNITELER; içe aktarmadan, metinden okunur)"""
+    global _SIRA
+    if _SIRA is None:
+        import ast
+        try:
+            m = re.search(r'^UNITELER = (\[.*?^\])', open(os.path.join(K, 'araclar', 'ders_verisi_v2.py'), encoding='utf-8').read(), re.S | re.M)
+            _SIRA = {i: n + 1 for n, i in enumerate(i for u in ast.literal_eval(m.group(1)) for i in u['dersler'])}
+        except Exception:
+            _SIRA = {}
+    return _SIRA
 
 if __name__ == '__main__':
     ids = sys.argv[1:] or sorted(f[:-5] for f in os.listdir(D) if re.match(r'd\d+\.json$', f))

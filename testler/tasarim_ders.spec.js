@@ -6,7 +6,17 @@ const { disAgiKes } = require('./yardim');
 
 const KONUM = { ad: 'Kadıköy', enlem: 40.99, boylam: 29.03, yukseklik: 0, oto: false, saatDilimi: 'Europe/Istanbul' };
 const SABIT_AN = new Date('2026-10-28T20:30:00+03:00');
-const DERSLER = ['d1', 'd2', 'd11', 'd12', 'd3', 'd9', 'd10', 'd19', 'd4', 'd14', 'd5', 'd15', 'd6', 'd16', 'd13', 'd18', 'd7', 'd8', 'd17'];
+/* 58 dersin HEPSİ (denetim A7-05: eskiden sabit listede yalnız d1–d19 vardı); ünite ünite ayrı testlerde gezilir */
+const VERI = require('../veri/dersler.json');
+const UNITELER = VERI.uniteler.map(u => [u.id, u.dersler]);
+const DERSLER = UNITELER.flatMap(([, ds]) => ds);
+
+/* Sayfa hatası (yakalanmamış istisna) her testte denetlenir (A7-06) */
+test.beforeEach(async ({ page }) => {
+  page.hatalar = [];
+  page.on('pageerror', e => page.hatalar.push(String(e)));
+});
+test.afterEach(async ({ page }) => { expect(page.hatalar).toEqual([]); });
 
 async function kur(page, secenek) {
   const s = Object.assign({ kirmizi: false, ses: false }, secenek || {});
@@ -50,13 +60,18 @@ async function cizimOlc(page) {
   }));
 }
 
-test('Ders çizimleri 360 px telefonda: yazı ≥ 10 px, SVG dışına taşmıyor, yazılar üst üste binmiyor', async ({ page }) => {
-  test.setTimeout(90000);
+test('Ders listesi bütün dersleri kapsıyor (ölçülen ders sayısı veriyle aynı)', () => {
+  expect(DERSLER.length).toBe(VERI.dersler.length);
+  expect(DERSLER.length).toBeGreaterThanOrEqual(58);
+});
+
+for (const [unite, dersler] of UNITELER) test(`Ders çizimleri 360 px telefonda (${unite}): yazı ≥ 10 px, SVG dışına taşmıyor, yazılar üst üste binmiyor`, async ({ page }) => {
+  test.setTimeout(120000);
   await page.setViewportSize({ width: 360, height: 800 });
   await kur(page);
   const kotu = [];
   let sayi = 0;
-  for (const d of DERSLER) {
+  for (const d of dersler) {
     await page.goto('/index.html#ders/' + d);
     await expect(page.locator('article.ders h1')).toBeVisible();
     await page.evaluate(() => document.fonts.ready);
@@ -65,7 +80,7 @@ test('Ders çizimleri 360 px telefonda: yazı ≥ 10 px, SVG dışına taşmıyo
       if (c.kucuk.length || c.kesik.length || c.cakisma.length) kotu.push(JSON.stringify(c));
     }
   }
-  expect(sayi, 'ölçülen çizim').toBeGreaterThan(50);
+  expect(sayi, 'ölçülen çizim').toBeGreaterThanOrEqual(dersler.length);   // her derste en az bir çizim
   expect(kotu).toEqual([]);
 });
 
@@ -166,12 +181,13 @@ test('Dersler: dinle çubuğu, hız seçimi, "Tüm dersler" ve "Sesli tekrar" do
   expect(await boy('#b-ders .geri')).toBeGreaterThanOrEqual(40);
 });
 
-for (const [w, kirmizi] of [[320, false], [360, true]]) {
-  test(`Ders sayfaları ${w} px'te yatay taşmıyor${kirmizi ? ' (kırmızı mod)' : ''}`, async ({ page }) => {
-    test.setTimeout(90000);
+for (const [w, kirmizi] of [[320, false], [360, true]]) for (const [unite, dersler] of [['genel', []], ...UNITELER]) {
+  test(`Ders sayfaları ${w} px'te yatay taşmıyor${kirmizi ? ' (kırmızı mod)' : ''} (${unite})`, async ({ page }) => {
+    test.setTimeout(120000);
     await page.setViewportSize({ width: w, height: 700 });
     await kur(page, { kirmizi });
-    for (const r of ['ders', 'ders/kartlar/hepsi', 'ders/sinav/gokyuzu', ...DERSLER.map(d => 'ders/' + d)]) {
+    const yollar = unite === 'genel' ? ['ders', 'ders/kartlar/hepsi', ...UNITELER.map(([u]) => 'ders/sinav/' + u)] : dersler.map(d => 'ders/' + d);
+    for (const r of yollar) {
       await page.goto('/index.html#' + r);
       await expect(page.locator('#b-ders h1').first()).toBeVisible();
       const t = await page.evaluate(() => {

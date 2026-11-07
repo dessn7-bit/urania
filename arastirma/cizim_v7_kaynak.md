@@ -66,6 +66,7 @@ Kesinlik çizgileri (çerçeve ve çizgi biçimiyle, renge dayanmaz): düz kalı
 | üst eksen 2 mm, 1 mm, 0,5 mm | hesap | ν = c / λ: 149,9; 299,8; 599,6 GHz |
 | "doğadaki en hassas ölçülmüş kara cisim tayfı", "on binde bir sapma yok" | Ders bölüm 6 (Wikipedia Big Bang) | — |
 | d58-guc-tayfi (bölüm 8): 83 ölçüm noktası ℓ = 47,7–2499, Dℓ ve ±σ | PB dosyası (Dℓ = ℓ(ℓ+1)Cℓ/2π, μK²) | yuvarlandı; σ ≤ 6 olan noktalarda çubuk çizilmedi (noktadan küçük) |
+| d58-guc-tayfi (2026-11-08) | anlatım "ikincisinin üçüncüye göre alçaklığı sıradan maddeyi" → "tek ve çift sıradaki zirvelerin oranı, yani ikincinin komşularına göre alçaklığı" (dersin çerçevesi; sayı değişmedi) | Ders d58 bölüm 8: "İkinci zirve, daha doğrusu tek ve çift sıradaki zirvelerin oranı, sıradan maddenin yoğunluğunu verir" |
 | en iyi uyum eğrisi | TEO dosyası, TT sütunu; ℓ = 2–29 her biri, 30–2500 arası 5'er | — |
 | 1., 2., 3. zirve ℓ = 220, 537, 814 (Dℓ = 5730, 2594, 2542 μK²) | TEO dosyasında yerel en büyükler | komşu ℓ'lerden büyük olan değerler |
 | üst eksen: açı ≈ 180° / ℓ (90°, 10°, 1°, 0,1° ↔ ℓ = 2, 18, 180, 1800) | Silk 2002, arXiv:astro-ph/0212305, giriş: "ℓ ≈ 180°/θ" | 180 / ℓ |

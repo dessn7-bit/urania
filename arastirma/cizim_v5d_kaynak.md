@@ -28,8 +28,9 @@ Ortak sabitler:
 | d45-kutle-siniri (bölüm 9) | 0,7 (1939) | Ders d45 bölüm 0 ve 9 |
 | d45-kutle-siniri | 2,01–2,17 (GW170817); 2,2–2,3 (2026); 2,2–2,9 (Kalogera–Baym 1996); kabaca 3 (NASA) | Ders d45 bölüm 9 |
 | d45-kutle-siniri | J0030+0451: 1,44 (+0,15/−0,14) → çubuk 1,30–1,59 | Ders d45 bölüm 10 (düzeltilmiş metin) |
-| d45-kutle-siniri | J0348+0432 2,01 ± 0,04; J0740+6620 2,08 ± 0,07; J0952−0607 2,35 ± 0,17 | Ders d45 bölüm 9 |
-| d45-kutle-siniri | GW190814 2,59 (büyük olasılıkla kara delik); GW170817 kalıntısı ≈2,74 (çöktü) | Ders d45 bölüm 9 |
+| d45-kutle-siniri | J0348+0432 1,806 ± 0,037 (2024; 2026-11-08 düzeltildi: 2,01 ± 0,04 → 1,806 ± 0,037, nokta 1,769–1,843); J0740+6620 2,08 ± 0,07; J0952−0607 2,35 ± 0,17 | Ders d45 bölüm 9; https://arxiv.org/abs/2412.02850: "we determine a pulsar mass of 1.806(37) M☉" |
+| d45-kutle-siniri | GW170817 kalıntısı ≈2,74: "5 ile 10 saniye içinde kara deliğe çöktüğü düşünülüyor" (2026-11-08: kesin "çöktü" ifadesi dersin çekincesine uyduruldu) | Ders d45 bölüm 9 |
+| d45-kutle-siniri | GW190814 2,59 (büyük olasılıkla kara delik); GW170817 kalıntısı ≈2,74 (çöktüğü düşünülüyor) | Ders d45 bölüm 9 |
 | d45-kutle-siniri | kütle boşluğu 2–5 | Ders d45 bölüm 9 |
 | d45-hulse-taylor (bölüm 13) | en yakın 746.600 km, en uzak 3,15 milyon km | Ders d45 bölüm 13 |
 | d45-hulse-taylor | a = (746.600 + 3.150.000) ÷ 2 = 1.948.300 km; e = (3.150.000 − 746.600) ÷ (3.150.000 + 746.600) = 0,6168 | hesap; ders 0,617 der |
@@ -75,6 +76,7 @@ Ortak sabitler:
 | d47-anatomi | ince disk kalınlığı 700–1500 ışık yılı (çizimde 1500) | Ders d47 bölüm 4; Wikipedia Milky Way tablosu 718–1470 ışık yılı (https://en.wikipedia.org/wiki/Milky_Way) |
 | d47-anatomi | kalın disk ölçek yüksekliği ≈1000 pc = 3262 ışık yılı (çizgi ±1 ölçek yüksekliği) | Ders d47 bölüm 4 (Freeman derlemesi) |
 | d47-anatomi | şişkinlik: merkezin çevresindeki ≈10.000 ışık yılı (yarıçap olarak çizildi; biçim şematik) | Ders d47 bölüm 4; Wikipedia: "The stars in the innermost 10,000 light-years form a bulge" |
+| d47-anatomi (2026-11-08) | "genişliğinin altmışta birinden az" → "yaklaşık altmışta biri" | hesap: 87.400 ÷ 1500 = 58,3 (1500 > 87.400 ÷ 60 = 1457) |
 | d47-anatomi | küresel kümeler 200.000 ışık yılının ötesine (PAL 4, AM 1) | Ders d47 bölüm 4 |
 | d47-anatomi | Güneş merkezden 26.700 ışık yılı; düzlemin 5–30 pc üstünde | Ders d47 bölüm 8 |
 | d47-anatomi | ölçek: 87.400 ışık yılı = 340 birim, yatay ve dikey aynı | çizim kararı |
@@ -82,6 +84,7 @@ Ortak sabitler:
 | d47-donme-egrisi | Gaia 2023 düşüşü: 19,5–26,5 kpc arasında ≈30 km/s; M = 2,06 × 10¹¹ | Ders d47 bölüm 10; Jiao ve ark. 2023 özeti (https://arxiv.org/abs/2309.00048) mutlak hız vermez, yalnız düşüşü verir |
 | d47-donme-egrisi | Gaia eğrisi v = √(GM ÷ r), M = 2,06 × 10¹¹: 19,5 kpc'de 213,2, 26,5 kpc'de 182,8 km/s; fark 30,3 km/s | hesap (Ders d47 formül M = v² r ÷ G'nin tersi); düşüş dersle uyuşur |
 | d47-donme-egrisi | "yalnız yıldız + gaz" eğrisi: M = 6,43 × 10¹⁰ × 1,15 = 7,39 × 10¹⁰ (yıldızların üst değeri + gazın üst payı %15), v = √(GM ÷ r): 8,178 kpc'de 197, 26,5 kpc'de 110 km/s | Ders d47 bölüm 6 (yıldız kütlesi, gaz payı); hesap. Kaba: bütün kütle merkezde sayıldı, açıklamada yazar |
+| d47-donme-egrisi (2026-11-08) | anlatım "dış kenarda 110 km/s" → "Gaia ölçümlerinin bittiği 26,5 kpc'de 110, eksenin sonunda 30 kpc'de 103 km/s" | hesap: v = √(GM ÷ r), M = 7,39 × 10¹⁰, G = 4,30091 × 10⁻⁶ kpc (km/s)² / M☉: 26,5 kpc → 109,5; 30 kpc → 103,0 (node) |
 | d47-donme-egrisi | Güneş 8,178 kpc, ≈210 km/s (200–220 bandının ortası) | Ders d47 bölüm 8 |
 | d47-donme-egrisi | 1,54 × 10¹² (2019); 7 kattan fazla fark; yıldızlar 4,6–6,4 × 10¹⁰ | Ders d47 bölüm 10 ve 6 |
 

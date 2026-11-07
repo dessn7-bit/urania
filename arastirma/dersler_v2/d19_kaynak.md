@@ -219,7 +219,7 @@ Ders 2.239 → 5.073 kelimeye çıkarıldı; 6 yeni bölüm eklendi, eski 8 böl
 | Aynı formül (ikinci kaynak) | https://neo.ssa.esa.int/definitions-assumptions | D = 1.329 × 10⁶ × p^(-1/2) × 10^(-0.2H) metre (WebFetch özeti) |
 | Formül küre, düzgün yüzey varsayar | https://cneos.jpl.nasa.gov/tools/ast_size_est.html | spherical object with a uniform surface (WebFetch özeti) |
 | CNEOS tablosu H = 22: 0,11 km (0,25), 0,24 km (0,05), 0,14 km (0,15) | https://cneos.jpl.nasa.gov/tools/ast_size_est.html | tablo satırı H = 22.0: 0.098 / 0.11 / 0.12 / 0.14 / 0.17 / 0.24 (albedo 0.30…0.05) |
-| Halley çekirdeği albedo ~0,04, kömür gibi | https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/1P/Halley | "Halley's albedo, for instance, is about 0.04" ; kömür kadar, "pitch black" (WebFetch özeti) |
+| Halley çekirdeği albedo ~0,04, kömür gibi | https://en.wikipedia.org/wiki/Halley%27s_Comet | "Halley's albedo, for instance, is about 0.04" ; kömür kadar, "pitch black" (WebFetch özeti) |
 | PHA 140 m = H ≤ 22 eşiği albedo varsayımıyla | https://cneos.jpl.nasa.gov/about/neo_groups.html | "an absolute magnitude (H) of 22.0 or less" ; ~140 m (%14 albedo varsayımı) (önceki satır) |
 | Daha iyi boy: radar, yıldız örtmesi, termal kızılötesi, uzay aracı | https://neo.ssa.esa.int/definitions-assumptions | radar, stellar occultations, thermal infrared, spacecraft missions (WebFetch özeti) |
 
@@ -261,14 +261,14 @@ Ders 2.239 → 5.073 kelimeye çıkarıldı; 6 yeni bölüm eklendi, eski 8 böl
 
 | İddia | Kaynak URL | Kaynaktaki ifade |
 |---|---|---|
-| Halley'nin dönemi 72–80 yıl arasında değişir | https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/1P/Halley | period "has since been found to vary between 72 and 80 years" |
-| 1705 Edmond Halley aynı kuyruklu yıldız olduğunu anladı; 1758 dönüşünü öngördü; 25 Aralık 1758'de doğrulandı; İngiliz gökbilimci | https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/1P/Halley | "it was not until 1705 that the English astronomer Edmond Halley understood" ; "predicted its return for 1758" ; confirmed 25 December 1758 (WebFetch özeti) |
+| Halley'nin dönemi 72–80 yıl arasında değişir | https://en.wikipedia.org/wiki/Halley%27s_Comet | period "has since been found to vary between 72 and 80 years" |
+| 1705 Edmond Halley aynı kuyruklu yıldız olduğunu anladı; 1758 dönüşünü öngördü; 25 Aralık 1758'de doğrulandı; İngiliz gökbilimci | https://en.wikipedia.org/wiki/Halley%27s_Comet | "it was not until 1705 that the English astronomer Edmond Halley understood" ; "predicted its return for 1758" ; confirmed 25 December 1758 (WebFetch özeti) |
 | Giotto 14 Mart 1986, 596 km; çekirdek ~16 × 8 × 8 km | https://nssdc.gsfc.nasa.gov/imgcat/html/object_page/gio_hmc01814.html | "Closest approach occurred 14 March 1986 at 00:03:02 UT at a distance of 596 km." ; "The nucleus is about 16 x 8 x 8 km in size." |
-| Albedo ~0,04, kömür | https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/1P/Halley | "Halley's albedo, for instance, is about 0.04" |
+| Albedo ~0,04, kömür | https://en.wikipedia.org/wiki/Halley%27s_Comet | "Halley's albedo, for instance, is about 0.04" |
 | Rosetta: fırlatma 2 Mart 2004; varış 6 Ağustos 2014; Philae 12 Kasım 2014 ilk kuyruklu yıldız inişi; bitiş 30 Eylül 2016 kontrollü iniş | https://www.esa.int/Enabling_Support/Operations/Rosetta | "to 2 March 2004" ; "The spacecraft arrived at the comet on 6 August 2014." ; "Rosetta's Philae lander made the first-ever landing on a comet." ; "The mission ended in a controlled landing on the comet's surface on 30 September 2016." (Philae tarihi 12 Kasım 2014: WebFetch özeti) |
 | Rosetta iki yıldan fazla yanında kaldı | — | HESAP: 6.8.2014 → 30.9.2016 = 2,15 yıl |
-| Sıradaki günberi 28 Temmuz 2061; son günberi 8/9 Şubat 1986 | https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/1P/Halley | "The next perihelion of Halley's Comet is predicted for 28 July 2061." ; infobox "8 February 1986", tablo 9 Şubat |
-| Eta Kova (Mayıs başı) ve Avcı (Ekim sonu) Halley'den | https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/1P/Halley | "Halley is associated with two meteor showers: the Eta Aquariids in early May, and the Orionids in late October." |
+| Sıradaki günberi 28 Temmuz 2061; son günberi 8/9 Şubat 1986 | https://en.wikipedia.org/wiki/Halley%27s_Comet | "The next perihelion of Halley's Comet is predicted for 28 July 2061." ; infobox "8 February 1986", tablo 9 Şubat |
+| Eta Kova (Mayıs başı) ve Avcı (Ekim sonu) Halley'den | https://en.wikipedia.org/wiki/Halley%27s_Comet | "Halley is associated with two meteor showers: the Eta Aquariids in early May, and the Orionids in late October." |
 | Aynı (ikinci kaynak) | https://ssd.jpl.nasa.gov/sb/meteor_streams.html | ETA "1P/Halley" ; ORI "1P/Halley" |
 | ISON (C/2012 S1) Oort bulutundan; Güneş'e yakın parçalandı; Siding Spring (C/2013 A1) Mars yakınından sağ geçti | https://science.nasa.gov/solar-system/oort-cloud/facts | "Two recent examples are comets C/2012 S1 (ISON) and C/2013 A1 Siding Spring." ; ISON broke apart near the Sun; Siding Spring survived a close pass by Mars (WebFetch özeti) |
 

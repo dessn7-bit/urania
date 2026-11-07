@@ -30,6 +30,16 @@
   const ASCII = { 'ç': 'c', 'ğ': 'g', 'ı': 'i', 'ö': 'o', 'ş': 's', 'ü': 'u' };
   const aramaBicim = s => kucukHarf(s).replace(/[çğıöşü]/g, c => ASCII[c]).replace(/\s+/g, ' ').trim();
 
+  /* Terimden sonra yalnız Türkçe çekim ekleri (ve -lIk, -lI, -sIz, -sAl, -CA) gelebilir; başka harf gelirse
+     sözcük başkadır ("Sol" ≠ soluk, "ada" ≠ aday, "zar" ≠ zarar; denetim A3-08). sozluk_yap.py EK_DESEN ile birebir aynı. */
+  const EK_DESEN = '(?:l[ae]r|s?[ıiuü]n?|y[ıiuü]n?|n[ıiuü]|n?[ıiuü]n|[ıiuü]?m[ıiuü]z|[yn]?[ae]|n?[dt][ae]n?|y?l[ae]|k[ıi]' +
+    '|l[ıiuü]k|l[ıiuü]|s[ıiuü]z|s[ae]l|[dt][ıiuü]r|y?[dt][ıiuü]|y?s[ae]|y?ken|y?m[ıiuü]ş|[cç][ae])*';
+  /* buyuk: bütünüyle büyük harf (MOND, ISO); ozel: baş harfi büyük özel ad (Sol ≠ sola). sozluk_yap.py esles_kosul ile aynı. */
+  function kosulUyar(t, govde) {
+    if (t.buyuk && govde !== govde.toLocaleUpperCase('tr-TR')) return false;
+    if (t.ozel && !(govde[0] && govde[0] !== govde[0].toLocaleLowerCase('tr-TR'))) return false;
+    return true;
+  }
   function hazirla(d) {
     V = d;
     kimlikle.clear(); adla.clear();
@@ -42,7 +52,7 @@
     alt.sort((a, b) => b.uzunluk - a.uzunluk);   // uzun terim önce ("beyaz cüce" "cüce"den önce)
     SIRA = alt.map(a => a.i);
     try {
-      IFADE = new RegExp("(?<![\\p{L}\\p{N}])(?:" + alt.map(a => '(' + a.desen + ')').join('|') + ")(?:'\\p{L}+|\\p{L}*)(?![\\p{L}\\p{N}])", 'gu');
+      IFADE = new RegExp("(?<![\\p{L}\\p{N}])(?:" + alt.map(a => '(' + a.desen + ')').join('|') + ")(?:'\\p{L}+|" + EK_DESEN + ")(?![\\p{L}\\p{N}])", 'gu');
     } catch (e) { console.warn('Sözlük deseni kurulamadı: ' + e.message); IFADE = null; }
   }
   function yukle() {
@@ -84,7 +94,7 @@
         const t = V.terimler[SIRA[g - 1]];
         if (!t || kullanildi.has(t.kimlik)) continue;
         if (t.yalniz && !(ders && t.yalniz.indexOf(ders) >= 0)) continue;
-        if (t.buyuk) { const govde = asil.substr(m.index, m[g].length); if (govde !== govde.toLocaleUpperCase('tr-TR')) continue; }
+        if (!kosulUyar(t, asil.substr(m.index, m[g].length))) continue;
         kullanildi.add(t.kimlik);
         bulunan.push({ bas: m.index, son: m.index + m[0].length, t });
       }

@@ -275,16 +275,16 @@
   }
 
   /* ---- Metin ve listeler ---- */
-  function ayAydinlatirMi() {
+  /* Ay karanlık saatlerde (yarım saat adımla) ufkun 5°'den fazla üstüne çıkıyor mu */
+  function ayKaranliktaYukarida() {
     const g = durum.gece;
     if (!g.karanlikBas || !g.karanlikSon) return false;
-    const ay = durum.ayGece;
-    if (ay.oran < 0.4) return false;
     for (let t = g.karanlikBas.getTime(); t <= g.karanlikSon.getTime(); t += 30 * 60e3) {
       if (G.cisimAltAz('Moon', new Date(t), durum.gzl).alt > 5) return true;
     }
     return false;
   }
+  function ayAydinlatirMi() { return durum.ayGece.oran >= 0.4 && ayKaranliktaYukarida(); }
 
   /* Özet satırları: solda küçük etiket (Güneş, Ay, Gezegenler, Meteor), sağda göz atılacak kısa veri.
      Sesli okuma ve ekran okuyucu için tam cümle data-ses'te (Ses.metinAl önce onu okur). */
@@ -311,12 +311,17 @@
       else if (oz.ort >= 70) { seviye = 'kotu'; bulut = `çoğunlukla kapalı (bulut ortalama %${Math.round(oz.ort)})`; }
       else { seviye = 'idare'; bulut = `parçalı bulutlu (ortalama %${Math.round(oz.ort)}), uzun açık dönem yok`; }
       if (oz.yagis && oz.yagis.riskli && oz.yagis.riskli.length >= Math.ceil(n / 2)) { seviye = 'kotu'; bulut += '; yağış riski yüksek'; }
-    } else bulut = oz === 'hata' ? 'bulut tahmini alınamadı' : oz === 'yok' ? 'bulut tahmini yok (yalnız önümüzdeki 3 gün)' : 'bulut tahmini bekleniyor';
+    } else bulut = oz === 'hata' ? 'bulut tahmini alınamadı' : oz === 'gece-yok' ? (g.kutupGunu ? 'Güneş bu gece batmıyor (kutup günü)' : 'bu gece gök kararmıyor')
+      : oz === 'yok' ? 'bulut tahmini yok (yalnız önümüzdeki 3 gün)' : 'bulut tahmini bekleniyor';
     let karanlik = '';
-    if (!(g.batis && g.astroSon)) { karanlik = 'tam karanlık yok'; if (seviye === 'iyi') seviye = 'idare'; }
+    /* Tam karanlık = Güneş −18°'nin altında (geceAraligi karanlikDuzey); kutup gecesinde batış olmasa da olabilir */
+    if (g.karanlikDuzey !== 'astro') { karanlik = oz === 'gece-yok' ? '' : 'tam karanlık yok'; if (seviye === 'iyi') seviye = 'idare'; }
     const ayYuzde = Math.round(ay.oran * 100);
+    const ayYukarida = ayKaranliktaYukarida();
     const ayNot = ayAydinlatirMi() ? `Ay %${ayYuzde}: sönük bulutsu ve galaksiler zor, gezegen ve kümeler için sorun yok`
-      : ay.oran < 0.25 ? 'Ay ışığı yok denecek kadar az' : 'Ay karanlık saatlerde alçakta ya da ufkun altında';
+      : ay.oran < 0.25 ? 'Ay ışığı yok denecek kadar az'
+      : ayYukarida ? `Ay %${ayYuzde}, karanlık saatlerde gökte; ışığı zayıf`
+      : 'Ay karanlık saatlerde alçakta ya da ufkun altında';
     const ad = { iyi: 'iyi', idare: 'idare eder', kotu: 'kötü' }[seviye];
     const gerekce = [bulut, karanlik, ayNot].filter(Boolean).join(' · ');
     k.className = 'karar' + (seviye ? ' karar-' + seviye : '');
@@ -326,19 +331,28 @@
   function ozetYaz() {
     const g = durum.gece, ay = durum.ayGece;
     const s = [];
-    if (g.batis && g.astroSon) {
+    const tamVar = g.karanlikDuzey === 'astro';
+    if (g.batis && tamVar) {
       s.push({ et: 'Güneş',
-        gor: [parca('batış ' + kalin(U.saat(g.batis))), parca('tam karanlık ' + kalin(U.saat(g.astroSon) + '–' + U.saat(g.astroBas)))].concat(g.dogus ? [parca('doğuş ' + kalin(U.saat(g.dogus)))] : []).join('&nbsp;· '),
-        ses: `Güneş ${U.ek(U.saat(g.batis), 'de')} batıyor; gökyüzü ${U.ek(U.saat(g.astroSon), 'de')} tam kararıyor ve ${U.ek(U.saat(g.astroBas), 'e')} kadar karanlık kalıyor.` + (g.dogus ? ` Güneş ${U.ek(U.saat(g.dogus), 'de')} doğuyor.` : '') });
+        gor: [parca('batış ' + kalin(U.saat(g.batis))), parca('tam karanlık ' + kalin(U.saat(g.tamKaranlikBas) + '–' + U.saat(g.tamKaranlikSon)))].concat(g.dogus ? [parca('doğuş ' + kalin(U.saat(g.dogus)))] : []).join('&nbsp;· '),
+        ses: `Güneş ${U.ek(U.saat(g.batis), 'de')} batıyor; gökyüzü ${U.ek(U.saat(g.tamKaranlikBas), 'de')} tam kararıyor ve ${U.ek(U.saat(g.tamKaranlikSon), 'e')} kadar karanlık kalıyor.` + (g.dogus ? ` Güneş ${U.ek(U.saat(g.dogus), 'de')} doğuyor.` : '') });
     } else if (g.batis) {
       s.push({ et: 'Güneş', gor: `batış ${kalin(U.saat(g.batis))} · <span class="oz-not">bu gece tam karanlık olmuyor; Güneş ufkun yeterince altına inmiyor.</span>`,
         ses: `Güneş ${U.ek(U.saat(g.batis), 'de')} batıyor ama bu gece tam karanlık olmuyor; Güneş ufkun yeterince altına inmiyor.` });
-    } else {
-      /* Kutup günü / kutup gecesi: öğleden sonraki 36 saatte batış yok */
-      const ogleAlt = G.cisimAltAz('Sun', g.ogle, durum.gzl).alt;
-      const c = ogleAlt > 0 ? 'Güneş bugün batmıyor (kutup günü); gökyüzü hiç kararmayacak.' :
-        'Güneş bugün doğmuyor (kutup gecesi); ' + (ogleAlt > -6 ? 'öğle çevresinde gök alacakaranlıkla aydınlanır, günün geri kalanı karanlık.' : ogleAlt > -18 ? 'öğle çevresinde hafif bir alacakaranlık olur, günün geri kalanı karanlık.' : 'karanlık gün boyu sürüyor.');
+    } else if (g.kutupGunu) {
+      const c = 'Güneş bugün batmıyor (kutup günü); gökyüzü hiç kararmayacak.';
       s.push({ et: 'Güneş', gor: c.replace(/^Güneş bugün/, 'bugün'), ses: c });
+    } else {
+      /* Kutup gecesi: Güneş öğleden ertesi öğleye hiç doğmuyor. Tam karanlık (Güneş −18°'nin altında) gün boyu,
+         gecenin bir bölümünde ya da hiç olmayabilir: geceAraligi tamKaranlikBas/Son ve gunesEnYuksek */
+      const ogleNot = g.gunesEnYuksek > -6 ? 'öğle çevresinde gök alacakaranlıkla aydınlanır' : 'öğle çevresinde hafif bir alacakaranlık olur';
+      let gor, ses;
+      if (tamVar && g.karanlikTumGun) { gor = 'bugün doğmuyor (kutup gecesi); tam karanlık gün boyu sürüyor.'; ses = 'Güneş bugün doğmuyor (kutup gecesi); tam karanlık gün boyu sürüyor.'; }
+      else if (tamVar) {
+        gor = `bugün doğmuyor (kutup gecesi)&nbsp;· ${parca('tam karanlık ' + kalin(U.saat(g.tamKaranlikBas) + '–' + U.saat(g.tamKaranlikSon)))}<span class="oz-not">${ogleNot.replace(/^ö/, 'Ö')}.</span>`;
+        ses = `Güneş bugün doğmuyor (kutup gecesi); gökyüzü ${U.ek(U.saat(g.tamKaranlikBas), 'de')} tam kararıyor ve ${U.ek(U.saat(g.tamKaranlikSon), 'e')} kadar karanlık kalıyor; ${ogleNot}.`;
+      } else { gor = 'bugün doğmuyor (kutup gecesi); gök gün boyu alacakaranlıkta, tam karanlık olmuyor.'; ses = 'Güneş bugün doğmuyor (kutup gecesi); gök gün boyu alacakaranlıkta, tam karanlık olmuyor.'; }
+      s.push({ et: 'Güneş', gor, ses });
     }
     let ayCumle = `Ay: ${ay.ad}, %${Math.round(ay.oran * 100)} aydınlık`;
     const sirali = [[ay.dogus, 'doğuyor', 'doğuş'], [ay.batis, 'batıyor', 'batış']].filter(x => x[0]).sort((a, b) => a[0] - b[0]);
@@ -372,11 +386,13 @@
     const ul = el.querySelector('#gkGezegen');
     ul.innerHTML = durum.gezegenGece.map(p => {
       const td = U.kacis(tdAd(p.takimyildiz));
-      const dogBat = [p.dogus ? 'doğuş ' + U.saat(p.dogus) : null, p.batis ? 'batış ' + U.saat(p.batis) : null].filter(Boolean).join(' · ');
+      /* Doğuş ve batış yoksa (yüksek enlemde çevrekutupsal) gezegen bu gece hiç batmıyor; görünürse bunu söyle */
+      const dogBat = [p.dogus ? 'doğuş ' + U.saat(p.dogus) : null, p.batis ? 'batış ' + U.saat(p.batis) : null].filter(Boolean).join(' · ') ||
+        (p.gorunur ? 'bu gece batmıyor' : '');
       const arac = p.kadir <= durum.limitKadir ? '<span class="rozet iyi">çıplak göz</span>' : (p.kadir <= 9 ? '<span class="rozet">dürbün</span>' : '<span class="rozet">teleskop</span>');
       if (!p.gorunur) {
-        const g = durum.gece, kutupGunu = !g.batis && G.cisimAltAz('Sun', g.ogle, durum.gzl).alt > 0;
-        const neden = p.gunesAcisi < 18 ? `Güneş'e çok yakın (${U.derece(p.gunesAcisi)})` : kutupGunu ? 'Güneş bu gece batmıyor' : (g.sivilSon || !g.batis ? 'karanlıkta ufka yakın kalıyor' : 'gök kararmıyor ve alacakaranlıkta ufka yakın kalıyor');
+        const g = durum.gece;
+        const neden = p.gunesAcisi < 18 ? `Güneş'e çok yakın (${U.derece(p.gunesAcisi)})` : g.kutupGunu ? 'Güneş bu gece batmıyor' : (!g.karanlikYok || !g.batis ? 'karanlıkta ufka yakın kalıyor' : 'gök kararmıyor ve alacakaranlıkta ufka yakın kalıyor');
         const ev = (p.cisim === 'Mercury' || p.cisim === 'Venus') ? ` %${Math.round(A.Illumination(p.cisim, durum.gece.ogle).phase_fraction * 100)} aydınlık.` : '';
         return `<li class="sonuk"><span class="ad">${p.ad}</span><span class="sag">${U.kadir(p.kadir)} kadir</span><span class="alt">Bu gece uygun değil: ${neden}. ${td} takımyıldızında.${ev}</span></li>`;
       }
@@ -387,7 +403,7 @@
       if (p.cisim === 'Mercury' || p.cisim === 'Venus') ek = ` · %${Math.round(isik.phase_fraction * 100)} aydınlık`;
       if (p.cisim === 'Saturn' && isik.ring_tilt != null) ek = ` · halkalar ${U.sayi(Math.abs(isik.ring_tilt), 1)}° açık (en fazla ≈27°; 0'a yakınken kenardan görünür)`;
       return `<li><span class="ad">${p.ad}${arac}</span><span class="sag">en iyi ${U.saat(t.zaman)} · ${U.derece(t.alt)} ${G.yon(t.az)}</span>
-        <span class="alt">${U.kadir(p.kadir)} kadir · ${td} takımyıldızında · ${dogBat}${ek}${p.cisim === 'Jupiter' ? jupiterSema(t.zaman) : ''}${defterBag('cisim:' + p.cisim, t.zaman)}</span></li>`;
+        <span class="alt">${U.kadir(p.kadir)} kadir · ${td} takımyıldızında${dogBat ? ' · ' + dogBat : ''}${ek}${p.cisim === 'Jupiter' ? jupiterSema(t.zaman) : ''}${defterBag('cisim:' + p.cisim, t.zaman)}</span></li>`;
     }).join('');
   }
 
@@ -521,9 +537,18 @@
     const g = o.gorus, e = o.enYakin;
     const yer = `${U.derece(g.alt)} yükseklikte, ${YON_DE[G.yon(g.az)]}`;
     const sigar = g.ayrim <= G.DURBUN_ALANI ? ' 7×50 dürbünün alanına birlikte sığarlar.' : '';
-    if (g.canli) return `En yakın anı buradan görülür: ${U.ek(U.saat(g.zaman), 'de')} aralarında ${U.sayi(g.ayrim, 1)}°, ${yer}.${sigar}`;
-    return `En yakın an ${U.gunHafta(e.zaman)} ${U.saat(e.zaman)} (aralarında ${U.sayi(e.ayrim, 1)}°; o anda buradan ufkun altında ya da gündüz). ` +
-      `Buradan en iyi ${U.gunHafta(g.zaman)} ${U.ek(U.saat(g.zaman), 'de')}: aralarında ${U.sayi(g.ayrim, 1)}°, ${yer}.${sigar}`;
+    /* Önce her zaman en yakın anın saati; sonra buradan en iyi görüş anı (gok.js kavusumGorus: tam karanlık yüksekliğe
+       tercih edilir; yoksa Güneş −12°, sonra −6°) ve o andaki gök */
+    const gok = kavusumGok(g.gunes);
+    const ilk = `En yakın an ${U.gunHafta(e.zaman)} ${U.saat(e.zaman)}: aralarında ${U.sayi(e.ayrim, 1)}°` +
+      (g.canli ? '; o anda buradan görülür.' : '; o anda buradan ufkun altında ya da gündüz.');
+    if (g.canli && Math.abs(g.zaman - e.zaman) < 5 * 60e3) return `${ilk.slice(0, -1)}, ${yer}, ${gok}.${sigar}`;
+    return `${ilk} Buradan en iyi ${g.canli ? '' : U.gunHafta(g.zaman) + ' '}${U.ek(U.saat(g.zaman), 'de')}: aralarında ${U.sayi(g.ayrim, 1)}°, ${yer}, ${gok}.${sigar}`;
+  }
+  /* Görüş anında gök: Güneş −18°'nin altında tam karanlık; −12°'nin altında neredeyse karanlık; üstünde alacakaranlık */
+  function kavusumGok(gunes) {
+    if (gunes == null || gunes <= -18) return 'gök tam karanlık';
+    return (gunes <= -12 ? 'gök neredeyse karanlık' : 'alacakaranlıkta') + ` (Güneş ufkun ${U.derece(-gunes)} altında)`;
   }
   function kavusumSatir(o) {
     const metin = kavusumMetni(o);
@@ -531,7 +556,7 @@
     const rozet = o.cokYakin ? ` <span class="rozet iyi">${o.gorus.ayrim <= G.KAVUSUM_COK_YAKIN ? 'çok yakın' : 'en yakın anda çok yakın'}</span>` : '';
     return `<li class="olay-kavusum"><span class="ad">${U.kacis(o.baslik)}${rozet}</span><span class="sag">${U.gun(o.zaman)}</span><span class="alt">${U.kacis(metin)}<br>${U.gunHafta(o.zaman)}, ${U.saat(o.zaman)} · ${takvimBag({ baslik: o.baslik + (o.cokYakin ? ' (çok yakın)' : ''), bas: new Date(o.zaman.getTime() - 15 * 60e3), son: new Date(o.zaman.getTime() + 30 * 60e3), aciklama: metin + ' (Urania, ' + U.konum().ad + ')' })}</span></li>`;
   }
-  /* Yaklaşan olaylar: gök olayları (evreler, karşı konum, uzanım, gündönümü, Mira, kavuşumlar) + Algol'ün sıradaki iki
+  /* Yaklaşan olaylar: gök olayları (evreler, karşı konum, uzanım, gün dönümü, Mira, kavuşumlar) + Algol'ün sıradaki iki
      görülebilir minimumu + buradan dürbünle izlenebilecek Ay örtmeleri, tek listede zamana göre. Algol ve örtmeler eskiden
      ayrı bölümlerdi; ikisi de seyrek ve plana zaten düşüyor, ayrı başlık sayfayı uzatıyordu.
      Ay'ın gezegeni örtmesi listedeyse aynı Ay–gezegen yaklaşması kavuşum olarak ikinci kez yazılmaz. */
@@ -812,7 +837,10 @@
         ek = defterBag(m.anahtar, m.zaman);
       } else if (m.tur === 'kavusum') {
         const k = m.kavusum, g = k.gorus;
-        ne = `Aralarında ${U.sayi(g.ayrim, 1)}°${k.cokYakin && g.ayrim <= G.KAVUSUM_COK_YAKIN ? ' (çok yakın)' : ''}` + (g.ayrim <= G.DURBUN_ALANI ? '; 7×50 dürbünün alanına birlikte sığarlar.' : '.') + (g.canli ? '' : ` En yakın an ${U.saat(k.enYakin.zaman)} (${U.sayi(k.enYakin.ayrim, 1)}°), o anda buradan görülmez.`);
+        /* Önce en yakın an (kavusumMetni ile aynı sıra); plan maddesinin saati görüş anıdır */
+        const ayniAn = g.canli && Math.abs(g.zaman - k.enYakin.zaman) < 5 * 60e3;
+        const bas = ayniAn ? 'En yakın an: aralarında' : `En yakın an ${U.saat(k.enYakin.zaman)} (${U.sayi(k.enYakin.ayrim, 1)}°)${g.canli ? '' : ', o anda buradan görülmez'}. Bu saatte aralarında`;
+        ne = `${bas} ${U.sayi(g.ayrim, 1)}°${k.cokYakin && g.ayrim <= G.KAVUSUM_COK_YAKIN ? ' (çok yakın)' : ''}` + (g.ayrim <= G.DURBUN_ALANI ? '; 7×50 dürbünün alanına birlikte sığarlar.' : '.');
       }
       const bulut = m.bulut != null ? `<span class="rozet${m.bulut >= 70 ? ' uyari' : (m.bulut < 30 ? ' iyi' : '')}">bulut %${Math.round(m.bulut)}</span>` : '';
       const bilgi = [m.tur === 'uydu' ? '' : yon, ne].filter(Boolean).join(' · ');
@@ -863,11 +891,13 @@
   async function havaYaz() {
     const kap = el.querySelector('#gkHava');
     const g = durum.gece;
-    const bas = g.sivilSon || g.batis, son = g.sivilBas || g.dogus;
+    /* Gece: Güneş −6°'nin altında (kutup gecesinde bütün gün); yoksa batıştan doğuşa (geceAraligi geceBas/geceSon) */
+    const bas = g.geceBas, son = g.geceSon;
     /* Sıra numarası ve eski veri her çağrıda sıfırlanır: önceki gecenin isteği geç gelirse yazılmasın */
     const sira = ++havaSira;
     durum.havaSaatler = null; durum.havaZaman = Date.now(); durum.havaOzet = null;
-    if (!bas || !son) { kap.innerHTML = ''; durum.havaOzet = 'yok'; kararYaz(); return; }
+    /* Gece hiç yoksa (kutup günü) bulut tahmininin yokluğu "3 gün" sınırından değil: ayrı durum */
+    if (!bas || !son) { kap.innerHTML = ''; durum.havaOzet = 'gece-yok'; kararYaz(); return; }
     const k = U.konum();
     kap.innerHTML = '<p class="soluk kucuk">Bulut tahmini alınıyor…</p>';
     let h;

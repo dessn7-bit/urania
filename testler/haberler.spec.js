@@ -28,8 +28,11 @@ test('Veri: her haber eksiksiz, kaynaklı (en az iki https kaynak), tarihli; kim
     expect(h.baslik && h.baslik.length <= 110, ad + ' başlık').toBeTruthy();
     expect(Array.isArray(h.ozet) && h.ozet.length >= 1, ad + ' özet').toBe(true);
     const k = kelime(h.ozet.join(' '));
-    expect(k, ad + ' özet kelime').toBeGreaterThanOrEqual(300);   // v2 (30 Ekim 2026): haberler doğru düzgün anlatılır
-    expect(k, ad + ' özet kelime').toBeLessThanOrEqual(800);
+    /* arastirma/haberler/YONTEM.md (v2, 30 Ekim 2026: "350–700 words in total, 4–8 paragraphs") */
+    expect(k, ad + ' özet kelime').toBeGreaterThanOrEqual(350);
+    expect(k, ad + ' özet kelime').toBeLessThanOrEqual(700);
+    expect(h.ozet.length, ad + ' paragraf sayısı').toBeGreaterThanOrEqual(4);
+    expect(h.ozet.length, ad + ' paragraf sayısı').toBeLessThanOrEqual(8);
     if (h.gorsel) {
       const g = h.gorsel;
       expect(g.dosya, ad + ' görsel').toBe('img/haber/' + h.id + '.jpg');
@@ -38,6 +41,10 @@ test('Veri: her haber eksiksiz, kaynaklı (en az iki https kaynak), tarihli; kim
       expect(g.alt && g.aciklama && g.kredi && g.lisans, ad + ' görsel bilgisi').toBeTruthy();
       expect(g.kaynak_url, ad).toMatch(/^https:\/\//);
       expect(g.kaynak_url + g.kredi, ad + ' yasak görsel kaynağı').not.toMatch(/apnews|reuters|gettyimages|afp\.com|nature\.com|science\.org/i);
+      /* YONTEM.md "Images": yalnız resmî, özgür lisanslı kurum görselleri (NASA, ESA/Webb, ESA/Hubble, ESO, NOIRLab, IAU, Rubin,
+         ESA; JAXA/CNSA koşullu). İzin listesi: görselin resmî sayfasının alan adı bunlardan biri olmalı. */
+      expect(new URL(g.kaynak_url).hostname, ad + ' görsel kaynağı izin listesinde değil').toMatch(
+        /(^|\.)(nasa\.gov|esa\.int|esawebb\.org|esahubble\.org|eso\.org|noirlab\.edu|iau\.org|rubinobservatory\.org|jaxa\.jp|cnsa\.gov\.cn)$/);
     }
     expect(h.neden_onemli, ad + ' neden önemli').toBeTruthy();
     if (h.kesinlik) expect(['kesin', 'ön sonuç', 'tartışmalı'], ad).toContain(h.kesinlik);

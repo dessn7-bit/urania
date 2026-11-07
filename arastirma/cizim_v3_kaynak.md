@@ -49,6 +49,7 @@ Bölüm dizinleri `python3 araclar/ders_verisi_v2.py` sonrası veri/dersler.json
 | d21-kutup-atlama | Merak–Dubhe 5,37°, Dubhe–Polaris 28,71°, Polaris–Schedar 32,81° | hesap: katalogdan küresel açı; ders bölüm 8 örneğiyle aynı (5,4 / 28,7 / 32,8) |
 | d21-kutup-atlama | dönüş: 15 Ekim 2026 22:00 TRT İstanbul (41,01° K, 28,955° D) yerel yıldız zamanı 22,5519 sa = 338,28° | AE `SiderealTime` + boylam/15; denetim: o an Dubhe yüksekliği 12,9° (ders bölüm 8: "15 Ekim'de kuzeyde 13°"), Schedar 64,0° (ders: 64°) |
 | d21-kutup-atlama | 10° ≈ yumruk | ders bölüm 8 (d11) |
+| d21-kutup-atlama | kenarda boy büyümesi "yüzde birkaç" → "yüzde 5 (Segin) ile 14 (Alkaid) arası" (2026-11-08) | hesap: kutup merkezli stereografik izdüşümde yerel ölçek çarpanı sec²((90° − δ)/2); çizilen 13 yıldızda 1,000 (Polaris) … 1,055 (Segin) … 1,137 (Alkaid); node |
 | d21-kutup-atlama | izdüşüm kutup merkezli stereografik; kenarda boy büyümesi yüzde birkaç (30°'de sec²15° ≈ 1,07) | hesap; açıklamada söylendi |
 | d21-arcturus-spica (bölüm 10) | Alkaid–Arcturus 30,66°, Arcturus–Spica 32,79° | hesap: katalog; ders bölüm 10 (30,7 / 32,8) |
 | d21-arcturus-spica | Arcturus −0,05, Spica 0,98 kadir; oran ≈ 2,6 | Katalog; ders bölüm 10 örneği |
@@ -68,7 +69,7 @@ Bölüm dizinleri `python3 araclar/ders_verisi_v2.py` sonrası veri/dersler.json
 | d22-zaman-denklemi | genlikler 7,66 ve 9,87 dk | ders bölüm 1 (Wikipedia) |
 | d22-analemma (bölüm 2) | İstanbul 41,01° K, 28,955° D; yerel ortalama öğle 10:04:11 UT = 13:04 TRT | ders bölüm 3 (28,955°; 13:04); enlem d1 çiziminden (Wikipedia: Istanbul) |
 | d22-analemma | 2026, 5 günde bir Güneş'in yüksekliği ve doğu-batı açısı (asin(cos h × sin(A − 180°))), kırılmasız | AE `Equator` + `Horizon` (refraction yok) |
-| d22-analemma | en yüksek 72,42° (21 Haz), en alçak 25,55° (21 Ara), boy ≈ 47°, en ≈ 7,4° (−3,44° 11 Şub … +3,97° 3 Kas) | AE hesabı; ders bölüm 2 (72,4 / 25,6 / 47°) — ders 25,6 yazıyor, hesap 25,55 → çizimde 25,5 |
+| d22-analemma | en yüksek 72,42° (21 Haz), en alçak 25,55° (21 Ara), boy ≈ 47°, en ≈ 7,4° (−3,44° 11 Şub … +3,97° 3 Kas) | AE hesabı; ders bölüm 2 (72,4 / 25,6 / 47°) — ders 25,6 yazıyor, hesap 25,55 → çizimde 25,6 (2026-11-08: not etiketle eşitlendi; etiket zaten 25,6) |
 | d22-analemma | sağdaki kopya yatayda 4 kat büyütüldü | çizim kararı; çizimde ve açıklamada yazılı |
 
 ## d23 · Uzaya çıkmak

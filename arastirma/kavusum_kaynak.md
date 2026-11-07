@@ -27,9 +27,18 @@ TÜBA ve TDK kaynaklarıyla eklendi; eski Wikipedia tanımı kaynak olarak kald�
   bulununca `A.Search` ile ayrımın değişim hızının (f(t+δ) − f(t−δ), δ = 1 dk Ay'lı / 10 dk öteki) eksiden artıya geçtiği an,
   1 sn hassasiyet. 120 gün ≈ 1 sn (Node).
 - Yerel görünürlük (gok.js `kavusumGorus`): en yakın anın ±1 günü, 5 dk adım; iki cisim ≥ 10° yükseklikte ve Güneş ≤ −6°.
-  Geçerli anlar pencerelere ayrılır; en yakın ana en yakın pencere seçilir. Pencere içinde Ay'lı çiftte ayrımın en küçük
-  olduğu an; öteki çiftlerde ikisinin de en yüksek olduğu an (Güneş ≤ −12° anlar varsa onlar arasından). Görüş anındaki
+  Geçerli anlar pencerelere ayrılır; en yakın ana en yakın pencere seçilir. Pencere içinde karanlık yüksekliğe tercih edilir
+  (`gorusAniSec`, v43): önce tam karanlık anlar (Güneş ≤ −18°); pencerede yoksa Güneş ≤ −12°, o da yoksa ≤ −6° anlar.
+  Seçilen küme içinde Ay'lı çiftte ayrımın en küçük olduğu an; öteki çiftlerde ikisinin de en yüksek olduğu an. Görüş anındaki
   ayrım 6,4°'yi aşıyorsa olay buradan "yakın görünmüyor" sayılır ve listeye girmez.
+- Metin (gozlem.js `kavusumMetni`, v43): her zaman önce en yakın anın günü ve saati, sonra buradan en iyi görüş anı ve o andaki
+  gök ("gök tam karanlık" / "gök neredeyse karanlık" / "alacakaranlıkta", Güneş'in ufkun kaç derece altında olduğu).
+- v43 düzeltmesi (Kaan'ın örneği): Mars–Jüpiter 16.11.2026, İstanbul. En yakın an uygulamada 05.03 TSİ (Horizons 02:04:50 UT = 05.04,8 TSİ; fark testte 3 dakika toleransla kabul; o anda
+  iki gezegen ≈50° yükseklikte, Güneş −31°, tam karanlık). Eski kural (Güneş ≤ −12° anlar arasında en yüksek) 06.43 TSİ'yi
+  öneriyordu: Güneş −12,5° (görevde −12,6° yazıyordu; Astronomy Engine, kırılmalı), gök tam kararmış değil. Yeni kural 06.13 TSİ'yi verir: Güneş −18,1°, iki gezegen ≈59°.
+  Denetim: testler/kavusum.spec.js (Güneş yüksekliği node_modules Astronomy Engine'den, gezegen yükseklikleri Horizons
+  RA/Dec'inden). −12° basamağı örneği: Ay–Jüpiter 12.05.2027, 55,0 K 12,0 D (pencerede Güneş −18°'ye inmiyor);
+  −6° basamağı örneği: Venüs–Spica 09.11.2026, İstanbul (Güneş −6,8°; pencerede −12°'ye inmiyor).
 - Gösterim: Gökyüzü ▸ Yaklaşan olaylar (ayrım, yön, yükseklik; "çok yakın" rozeti; Takvime ekle .ics), Bu gecenin planı
   (görüş saatinde; sesli okuma metni aynı sayılardan), hiçbir sayı sabit yazılmaz. Ay'ın gezegeni örtmesi (ortme.js)
   listedeyse aynı Ay–gezegen yaklaşması kavuşum olarak ikinci kez yazılmaz (`kavusumOrtmeyleAyni`).
@@ -79,52 +88,53 @@ Sonuç (testler/kavusum.spec.js):
 
 ## 5. Kasım 2026 – Mayıs 2027 kavuşum listesi (İstanbul 41,0 K 29,1 D; saatler TSİ)
 
-Hesap: gok.js `kavusumlar(2026-11-01, 212 gün)`; "buradan" sütunu `kavusumGorus` kuralıyla. "Görülmez" satırlar uygulamada listelenmez.
+Hesap: gok.js `kavusumlar(2026-11-01, 212 gün)`; "buradan" sütunu `kavusumGorus` kuralıyla (v43: karanlık yüksekliğe tercih
+edilir; tablo bu kuralla yeniden üretildi). "Görülmez" satırlar uygulamada listelenmez.
 
 | En yakın an (TSİ) | Olay | Ayrım | Buradan |
 |---|---|---|---|
-| 02.11.2026 16:39 | Ay ile Mars kavuşumu (çok yakın) | 0,97° | en iyi görüş 02.11.2026 06:59: 5,46°, 64° yükseklikte, güney |
-| 03.11.2026 01:45 | Ay ile Jüpiter kavuşumu (çok yakın) | 0,48° | en iyi görüş 03.11.2026 02:15: 0,56°, 10° yükseklikte, doğu |
-| 07.11.2026 13:42 | Ay ile Venüs kavuşumu (çok yakın) | 0,95° | en iyi görüş 07.11.2026 07:07: 3,70°, 11° yükseklikte, güneydoğu |
+| 02.11.2026 16:39 | Ay ile Mars kavuşumu (çok yakın) | 0,97° | en iyi görüş 02.11.2026 05:59: 6,00°, 56° yükseklikte, güneydoğu, tam karanlık |
+| 03.11.2026 01:45 | Ay ile Jüpiter kavuşumu (çok yakın) | 0,48° | en iyi görüş 03.11.2026 02:15: 0,56°, 10° yükseklikte, doğu, tam karanlık |
+| 07.11.2026 13:42 | Ay ile Venüs kavuşumu (çok yakın) | 0,95° | en iyi görüş 07.11.2026 07:07: 3,70°, 11° yükseklikte, güneydoğu, Güneş −6,3° |
 | 08.11.2026 15:32 | Ay ile Merkür kavuşumu | 5,65° | görülmez (ufkun altında ya da gündüz; görülebilir anlarda ayrım 6,4°'den büyük ya da Güneş'e yakın) |
-| 09.11.2026 14:16 | Venüs ile Spica kavuşumu | 1,16° | en iyi görüş 09.11.2026 07:06: 1,17°, 12° yükseklikte, güneydoğu |
-| 16.11.2026 05:03 | Mars ile Jüpiter kavuşumu | 1,19° | görülür (en yakın anda): 1,19°, 62° yükseklikte, güney |
-| 20.11.2026 23:03 | Ay ile Satürn kavuşumu | 6,06° | görülür (en yakın anda): 6,06°, 46° yükseklikte, güneybatı |
-| 26.11.2026 08:23 | Mars ile Regulus kavuşumu | 1,72° | en iyi görüş 26.11.2026 06:53: 1,72°, 61° yükseklikte, güney |
-| 30.11.2026 11:25 | Ay ile Jüpiter kavuşumu | 1,05° | en iyi görüş 30.11.2026 07:30: 2,50°, 57° yükseklikte, güneybatı |
-| 30.11.2026 19:55 | Ay ile Mars kavuşumu | 3,00° | en iyi görüş 01.12.2026 01:20: 4,25°, 11° yükseklikte, doğu |
+| 09.11.2026 14:16 | Venüs ile Spica kavuşumu | 1,16° | en iyi görüş 09.11.2026 07:06: 1,17°, 12° yükseklikte, güneydoğu, Güneş −6,8° |
+| 16.11.2026 05:03 | Mars ile Jüpiter kavuşumu | 1,19° | en yakın anda görülür; en iyi görüş 16.11.2026 06:13: 1,19°, 59° yükseklikte, güneydoğu, tam karanlık |
+| 20.11.2026 23:03 | Ay ile Satürn kavuşumu | 6,06° | en yakın anda görülür; en iyi görüş 20.11.2026 23:03: 6,06°, 46° yükseklikte, güneybatı, tam karanlık |
+| 26.11.2026 08:23 | Mars ile Regulus kavuşumu | 1,72° | en iyi görüş 26.11.2026 06:18: 1,72°, 60° yükseklikte, güney, tam karanlık |
+| 30.11.2026 11:25 | Ay ile Jüpiter kavuşumu | 1,05° | en iyi görüş 30.11.2026 06:25: 3,08°, 62° yükseklikte, güney, tam karanlık |
+| 30.11.2026 19:55 | Ay ile Mars kavuşumu | 3,00° | en iyi görüş 01.12.2026 01:20: 4,25°, 11° yükseklikte, doğu, tam karanlık |
 | 07.12.2026 22:49 | Ay ile Merkür kavuşumu | 5,70° | görülmez (ufkun altında ya da gündüz; görülebilir anlarda ayrım 6,4°'den büyük ya da Güneş'e yakın) |
-| 12.12.2026 23:10 | Jüpiter ile Regulus kavuşumu | 3,21° | en iyi görüş 13.12.2026 05:45: 3,21°, 61° yükseklikte, güney |
+| 12.12.2026 23:10 | Jüpiter ile Regulus kavuşumu | 3,21° | en iyi görüş 13.12.2026 05:45: 3,21°, 61° yükseklikte, güney, tam karanlık |
 | 13.12.2026 08:25 | Merkür ile Antares kavuşumu | 4,67° | görülmez (ufkun altında ya da gündüz; görülebilir anlarda ayrım 6,4°'den büyük ya da Güneş'e yakın) |
 | 18.12.2026 07:37 | Ay ile Satürn kavuşumu | 6,17° | görülmez (ufkun altında ya da gündüz; görülebilir anlarda ayrım 6,4°'den büyük ya da Güneş'e yakın) |
-| 27.12.2026 19:26 | Ay ile Jüpiter kavuşumu | 1,38° | en iyi görüş 27.12.2026 23:01: 2,56°, 10° yükseklikte, doğu |
+| 27.12.2026 19:26 | Ay ile Jüpiter kavuşumu | 1,38° | en iyi görüş 27.12.2026 23:01: 2,56°, 10° yükseklikte, doğu, tam karanlık |
 | 28.12.2026 16:29 | Ay ile Mars kavuşumu | 4,74° | görülmez (ufkun altında ya da gündüz; görülebilir anlarda ayrım 6,4°'den büyük ya da Güneş'e yakın) |
 | 08.01.2027 08:17 | Ay ile Merkür kavuşumu (çok yakın) | 0,48° | görülmez (ufkun altında ya da gündüz; görülebilir anlarda ayrım 6,4°'den büyük ya da Güneş'e yakın) |
 | 14.01.2027 16:31 | Ay ile Satürn kavuşumu | 6,31° | görülmez (ufkun altında ya da gündüz; görülebilir anlarda ayrım 6,4°'den büyük ya da Güneş'e yakın) |
-| 24.01.2027 02:21 | Ay ile Jüpiter kavuşumu | 1,36° | görülür (en yakın anda): 1,36°, 61° yükseklikte, güney |
-| 25.01.2027 01:49 | Ay ile Mars kavuşumu | 5,75° | görülür (en yakın anda): 5,75°, 49° yükseklikte, güneydoğu |
+| 24.01.2027 02:21 | Ay ile Jüpiter kavuşumu | 1,36° | en yakın anda görülür; en iyi görüş 24.01.2027 02:21: 1,36°, 61° yükseklikte, güney, tam karanlık |
+| 25.01.2027 01:49 | Ay ile Mars kavuşumu | 5,75° | en yakın anda görülür; en iyi görüş 25.01.2027 01:49: 5,75°, 49° yükseklikte, güneydoğu, tam karanlık |
 | 08.02.2027 06:55 | Ay ile Merkür kavuşumu (çok yakın) | 0,32° | görülmez (ufkun altında ya da gündüz; görülebilir anlarda ayrım 6,4°'den büyük ya da Güneş'e yakın) |
 | 11.02.2027 02:14 | Ay ile Satürn kavuşumu | 6,40° | görülmez (ufkun altında ya da gündüz; görülebilir anlarda ayrım 6,4°'den büyük ya da Güneş'e yakın) |
-| 20.02.2027 07:57 | Ay ile Jüpiter kavuşumu | 1,09° | en iyi görüş 20.02.2027 06:22: 1,47°, 11° yükseklikte, batı |
-| 20.02.2027 22:43 | Ay ile Mars kavuşumu | 5,33° | görülür (en yakın anda): 5,33°, 45° yükseklikte, güneydoğu |
-| 21.02.2027 09:20 | Mars ile Regulus kavuşumu | 3,99° | en iyi görüş 21.02.2027 01:10: 3,99°, 61° yükseklikte, güney |
+| 20.02.2027 07:57 | Ay ile Jüpiter kavuşumu | 1,09° | en iyi görüş 20.02.2027 06:12: 1,54°, 13° yükseklikte, batı, tam karanlık |
+| 20.02.2027 22:43 | Ay ile Mars kavuşumu | 5,33° | en yakın anda görülür; en iyi görüş 20.02.2027 22:43: 5,33°, 45° yükseklikte, güneydoğu, tam karanlık |
+| 21.02.2027 09:20 | Mars ile Regulus kavuşumu | 3,99° | en iyi görüş 21.02.2027 01:10: 3,99°, 61° yükseklikte, güney, tam karanlık |
 | 04.03.2027 23:33 | Ay ile Venüs kavuşumu | 1,99° | görülmez (ufkun altında ya da gündüz; görülebilir anlarda ayrım 6,4°'den büyük ya da Güneş'e yakın) |
 | 06.03.2027 09:32 | Ay ile Merkür kavuşumu | 1,11° | görülmez (ufkun altında ya da gündüz; görülebilir anlarda ayrım 6,4°'den büyük ya da Güneş'e yakın) |
-| 19.03.2027 12:26 | Ay ile Jüpiter kavuşumu (çok yakın) | 0,87° | en iyi görüş 19.03.2027 19:46: 4,53°, 40° yükseklikte, doğu |
-| 19.03.2027 18:43 | Ay ile Mars kavuşumu | 3,89° | en iyi görüş 19.03.2027 19:48: 3,95°, 41° yükseklikte, doğu |
-| 31.03.2027 08:29 | Mars ile Jüpiter kavuşumu | 4,29° | en iyi görüş 30.03.2027 21:49: 4,29°, 66° yükseklikte, güney |
+| 19.03.2027 12:26 | Ay ile Jüpiter kavuşumu (çok yakın) | 0,87° | en iyi görüş 19.03.2027 20:51: 5,18°, 51° yükseklikte, güneydoğu, tam karanlık |
+| 19.03.2027 18:43 | Ay ile Mars kavuşumu | 3,89° | en iyi görüş 19.03.2027 20:53: 4,11°, 51° yükseklikte, güneydoğu, tam karanlık |
+| 31.03.2027 08:29 | Mars ile Jüpiter kavuşumu | 4,29° | en iyi görüş 30.03.2027 21:49: 4,29°, 66° yükseklikte, güney, tam karanlık |
 | 04.04.2027 06:33 | Ay ile Venüs kavuşumu | 2,92° | görülmez (ufkun altında ya da gündüz; görülebilir anlarda ayrım 6,4°'den büyük ya da Güneş'e yakın) |
 | 05.04.2027 07:23 | Ay ile Merkür kavuşumu | 5,33° | görülmez (ufkun altında ya da gündüz; görülebilir anlarda ayrım 6,4°'den büyük ya da Güneş'e yakın) |
-| 15.04.2027 17:19 | Ay ile Jüpiter kavuşumu (çok yakın) | 0,92° | en iyi görüş 15.04.2027 20:19: 1,99°, 63° yükseklikte, güney |
-| 16.04.2027 01:44 | Ay ile Mars kavuşumu | 2,98° | görülür (en yakın anda): 2,98°, 23° yükseklikte, batı |
+| 15.04.2027 17:19 | Ay ile Jüpiter kavuşumu (çok yakın) | 0,92° | en iyi görüş 15.04.2027 21:29: 2,62°, 62° yükseklikte, güney, tam karanlık |
+| 16.04.2027 01:44 | Ay ile Mars kavuşumu | 2,98° | en yakın anda görülür; en iyi görüş 16.04.2027 01:44: 2,98°, 23° yükseklikte, batı, tam karanlık |
 | 19.04.2027 15:34 | Merkür ile Satürn kavuşumu (çok yakın) | 0,56° | görülmez (ufkun altında ya da gündüz; görülebilir anlarda ayrım 6,4°'den büyük ya da Güneş'e yakın) |
 | 04.05.2027 11:44 | Ay ile Venüs kavuşumu | 6,03° | görülmez (ufkun altında ya da gündüz; görülebilir anlarda ayrım 6,4°'den büyük ya da Güneş'e yakın) |
 | 07.05.2027 07:49 | Ay ile Merkür kavuşumu | 3,79° | görülmez (ufkun altında ya da gündüz; görülebilir anlarda ayrım 6,4°'den büyük ya da Güneş'e yakın) |
 | 07.05.2027 21:40 | Venüs ile Satürn kavuşumu (çok yakın) | 0,60° | görülmez (ufkun altında ya da gündüz; görülebilir anlarda ayrım 6,4°'den büyük ya da Güneş'e yakın) |
 | 09.05.2027 08:49 | Merkür ile Ülker kavuşumu | 2,67° | görülmez (ufkun altında ya da gündüz; görülebilir anlarda ayrım 6,4°'den büyük ya da Güneş'e yakın) |
-| 13.05.2027 00:52 | Ay ile Jüpiter kavuşumu | 1,23° | görülür (en yakın anda): 1,23°, 11° yükseklikte, batı |
-| 13.05.2027 20:04 | Ay ile Mars kavuşumu | 2,98° | en iyi görüş 13.05.2027 20:49: 3,01°, 56° yükseklikte, güneybatı |
-| 15.05.2027 13:28 | Mars ile Regulus kavuşumu | 1,23° | en iyi görüş 15.05.2027 21:28: 1,24°, 52° yükseklikte, güneybatı |
+| 13.05.2027 00:52 | Ay ile Jüpiter kavuşumu | 1,23° | en yakın anda görülür; en iyi görüş 13.05.2027 00:52: 1,23°, 11° yükseklikte, batı, tam karanlık |
+| 13.05.2027 20:04 | Ay ile Mars kavuşumu | 2,98° | en iyi görüş 13.05.2027 22:09: 3,20°, 45° yükseklikte, güneybatı, tam karanlık |
+| 15.05.2027 13:28 | Mars ile Regulus kavuşumu | 1,23° | en iyi görüş 15.05.2027 22:13: 1,24°, 46° yükseklikte, güneybatı, tam karanlık |
 
 ## 6. Yeniden alınan konum referansları (gizlilik, ev konumunun ilçe düzeyine yuvarlanması)
 

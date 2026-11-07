@@ -55,13 +55,13 @@ Biçim: iddia | kaynak URL | kaynaktaki ifade (kısa alıntı ya da değer). "(W
 
 | İddia | Kaynak URL | Kaynaktaki ifade |
 |---|---|---|
-| Fırlatma 19 Ocak 2006, Atlas V, Cape Canaveral; ~16,26 km/s, Dünya'dan fırlatılan en hızlı (ortalama) | https://wikiwand.com/EN/New_Horizons | "January 19, 2006 ... Atlas V" ; "About 16.26 km/s"; "the fastest (average speed with respect to Earth) human-made object ever launched from Earth" |
+| Fırlatma 19 Ocak 2006, Atlas V, Cape Canaveral; ~16,26 km/s, Dünya'dan fırlatılan en hızlı (ortalama) | https://en.wikipedia.org/wiki/New_Horizons | "January 19, 2006 ... Atlas V" ; "About 16.26 km/s"; "the fastest (average speed with respect to Earth) human-made object ever launched from Earth" |
 | 14 Temmuz 2015 11:49:57 UTC, 12.500 km | aynı | "July 14, 2015, 11:49:57 UTC, at 12,500 km above the surface" |
 | 3.462 günlük yolculuk | https://en.wikipedia.org/wiki/Pluto | "after a 3,462-day journey" |
 | Dawn ~4 ay önce (6 Mart 2015) Ceres yörüngesinde | https://en.wikipedia.org/wiki/Dawn_(spacecraft) | "It entered orbit around Ceres on March 6, 2015" (doğrulama 30.10.2026); 4 ay = hesap. science.nasa.gov/ceres sayfası bu tarihleri artık vermiyor |
 | Son veri 25 Ekim 2016; ~50 milyar bit (6,25 GB) | https://en.wikipedia.org/wiki/Pluto | "The final data arrived on October 25, 2016: about 50 billion bits (6.25 GB)" |
 | Gerçek renkli fotoğraf 35.445 km'den | aynı | "35,445 km for the July 14, 2015 true-color image" |
-| Arrokoth 1 Ocak 2019 05:33 UTC, 3.500 km | https://wikiwand.com/EN/New_Horizons | "January 1, 2019, 05:33:00 UTC, at 3,500 km" |
+| Arrokoth 1 Ocak 2019 05:33 UTC, 3.500 km | https://en.wikipedia.org/wiki/New_Horizons | "January 1, 2019, 05:33:00 UTC, at 3,500 km" |
 | Nisan 2026'da 64,5 AB; güç fırlatmada 245,7 W, 2019'da ~190 W | https://en.wikipedia.org/wiki/New_Horizons | "64.45 AU" (April 2026); "As of January 2019, the power output of the RTG is about 190 watts"; 245.7 W at launch (doğrulama 30.10.2026; eski '245 W, Temmuz 2024' yanlıştı: 245,7 W fırlatma değeri) |
 | Yılda ~500 milyon km; ikinci uzatılmış görevde 54–75 AB; Ekim 2023 planı; çıkış 2028–2029 | https://newhorizons.jhuapl.edu/Kuiper-Belt-and-Beyond/Kuiper-Belt-and-Beyond.php | "about 300 million miles per year"; 54–75 AU; "2028 or 2029" (WebFetch özeti) |
 | Veri hızı ~1,2 kbit/s (469 gün) | (hesap) | 50 × 10⁹ / (469 × 86.400) |

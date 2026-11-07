@@ -14,7 +14,7 @@
     kutleOrani(dv, ve) { return Math.exp(dv / ve); },
     yakitPayi(dv, ve) { return 1 - Math.exp(-dv / ve); },
     /* Kısıtlı aşamalandırma: N özdeş aşama (aynı Isp, aynı yakıt payı eps), her aşamanın kütle oranı eşit.
-       M0: kalkış kütlesi (yük dahil), yuk: yük. Dönen dizi alttan üste [{yakit, kuru, isp}] */
+       M0: kalkış kütlesi (yük dâhil), yuk: yük. Dönen dizi alttan üste [{yakit, kuru, isp}] */
     esitAsamalar(M0, yuk, N, eps, isp) {
       const r = Math.pow(M0 / yuk, 1 / N), ls = [];
       for (let i = 0; i < N; i++) {

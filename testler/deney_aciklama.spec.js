@@ -175,8 +175,7 @@ test('Azaltılmış harekette zaman kaydırıcıları da lejantta', async ({ pag
     expect(k.eksik, id).toEqual([]);
     expect(k.fazla, id).toEqual([]);
   }
-  /* hareket azaltılmamışken zaman kaydırıcısı yok, lejantta da yok */
-  await page.emulateMedia({ reducedMotion: 'no-preference' });
+  /* hareket azaltılmamışken zaman kaydırıcısının olmadığı bir sonraki testte sınanır */
 });
 
 test('Hareket azaltılmamışken lejantta zaman kaydırıcısı yok', async ({ page }) => {

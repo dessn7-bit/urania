@@ -2,7 +2,7 @@
 /* Testler için en küçük statik sunucu (bağımlılıksız). */
 const http = require('http'), fs = require('fs'), path = require('path');
 const KOK = path.join(__dirname, '..');
-const TUR = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.json': 'application/json; charset=utf-8', '.png': 'image/png', '.woff2': 'font/woff2' };
+const TUR = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.json': 'application/json; charset=utf-8', '.png': 'image/png', '.jpg': 'image/jpeg', '.woff2': 'font/woff2' };
 http.createServer((req, res) => {
   let p;
   try { p = decodeURIComponent(req.url.split('?')[0]); }

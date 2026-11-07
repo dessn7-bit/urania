@@ -90,7 +90,7 @@
       { "ad": "Wikipedia: Delta-v budget", "url": "https://en.wikipedia.org/wiki/Delta-v_budget" },
       { "ad": "Wikipedia: Multistage rocket", "url": "https://en.wikipedia.org/wiki/Multistage_rocket" },
       { "ad": "Wikipedia: Falcon 9 Full Thrust", "url": "https://en.wikipedia.org/wiki/Falcon_9_Full_Thrust" },
-      { "ad": "Spaceflight101: Falcon 9 FT", "url": "https://spaceflight101.com/spacerockets/?p=1457" },
+      { "ad": "Spaceflight101: Falcon 9 FT (arşiv kopyası)", "url": "https://web.archive.org/web/20240726010028/https://spaceflight101.com/spacerockets/falcon-9-ft/" },
       { "ad": "Patterson ve Benson 2008, NASA/TM-2008-214988 (NEXT ve NSTAR)", "url": "https://ntrs.nasa.gov/api/citations/20080012602/downloads/20080012602.pdf" }
     ]
   },
@@ -98,8 +98,8 @@
     "kalkis_t": 100,
     "baslangic": { "asama": 2, "isp": 350, "eps": 0.9, "yuk_t": 2 },
     "motorlar": [
-      { "ad": "Merlin 1D (yerde)", "isp": 282, "kaynaklar": [{ "ad": "Wikipedia: Falcon 9 Full Thrust", "url": "https://en.wikipedia.org/wiki/Falcon_9_Full_Thrust" }, { "ad": "Spaceflight101: Falcon 9 FT", "url": "https://spaceflight101.com/spacerockets/?p=1457" }] },
-      { "ad": "Merlin 1D (boşlukta)", "isp": 311, "kaynaklar": [{ "ad": "Wikipedia: Falcon 9 Full Thrust", "url": "https://en.wikipedia.org/wiki/Falcon_9_Full_Thrust" }, { "ad": "Spaceflight101: Falcon 9 FT", "url": "https://spaceflight101.com/spacerockets/?p=1457" }] },
+      { "ad": "Merlin 1D (yerde)", "isp": 282, "kaynaklar": [{ "ad": "Wikipedia: Falcon 9 Full Thrust", "url": "https://en.wikipedia.org/wiki/Falcon_9_Full_Thrust" }, { "ad": "Spaceflight101: Falcon 9 FT (arşiv kopyası)", "url": "https://web.archive.org/web/20240726010028/https://spaceflight101.com/spacerockets/falcon-9-ft/" }] },
+      { "ad": "Merlin 1D (boşlukta)", "isp": 311, "kaynaklar": [{ "ad": "Wikipedia: Falcon 9 Full Thrust", "url": "https://en.wikipedia.org/wiki/Falcon_9_Full_Thrust" }, { "ad": "Spaceflight101: Falcon 9 FT (arşiv kopyası)", "url": "https://web.archive.org/web/20240726010028/https://spaceflight101.com/spacerockets/falcon-9-ft/" }] },
       { "ad": "RS-25 (boşlukta)", "isp": 452, "kaynaklar": [{ "ad": "L3Harris: RS-25", "url": "https://l3harris.com/all-capabilities/rs-25-engine" }, { "ad": "Wikipedia: RS-25", "url": "https://en.wikipedia.org/wiki/RS-25" }] },
       { "ad": "Katı yakıt (Mekik iticisi)", "isp": 268, "kaynaklar": [{ "ad": "Wikipedia: Space Shuttle Solid Rocket Booster", "url": "https://en.wikipedia.org/wiki/Space_Shuttle_Solid_Rocket_Booster" }] },
       { "ad": "İyon (NSTAR)", "isp": 3100, "itki_mN": 92, "kaynaklar": [{ "ad": "Patterson ve Benson 2008, NASA/TM-2008-214988", "url": "https://ntrs.nasa.gov/api/citations/20080012602/downloads/20080012602.pdf" }, { "ad": "Wikipedia: NSTAR", "url": "https://en.wikipedia.org/wiki/NASA_Solar_Technology_Application_Readiness" }] }
@@ -107,10 +107,10 @@
     "araclar": [
       { "ad": "Ders: tek aşama", "yuk_t": 1.6, "asamalar": [{ "yakit_t": 88.4, "kuru_t": 10, "isp": 458.8723 }], "not": "Ders 23 örneği: egzoz hızı 4,5 km/s, 9,7 km/s; depo kalkışın %10'u.", "kaynaklar": [{ "ad": "Wikipedia: Tsiolkovsky rocket equation", "url": "https://en.wikipedia.org/wiki/Tsiolkovsky_rocket_equation" }] },
       { "ad": "Ders: iki aşama", "yuk_t": 6.07, "asamalar": [{ "yakit_t": 67.08, "kuru_t": 10, "isp": 458.8723 }, { "yakit_t": 14.85, "kuru_t": 2, "isp": 458.8723 }], "not": "Ders 23 örneği: 5,0 + 4,7 km/s, gövdeler kalkışın %10'u ve %2'si.", "kaynaklar": [{ "ad": "Wikipedia: Tsiolkovsky rocket equation", "url": "https://en.wikipedia.org/wiki/Tsiolkovsky_rocket_equation" }] },
-      { "ad": "Falcon 9 benzeri", "yuk_t": 22.8, "falcon": true, "asamalar": [{ "yakit_t": 411, "kuru_t": 22.2, "isp": 296.5 }, { "yakit_t": 107.5, "kuru_t": 4.0, "isp": 348 }], "not": "Kuru kütleler tahmin; 1. aşama Isp'i 282 ile 311 s'nin ortası (basitleştirme). Yük: yayımlanan, roket geri kazanılmadan LEO yükü.", "kaynaklar": [{ "ad": "Wikipedia: Falcon 9 Full Thrust", "url": "https://en.wikipedia.org/wiki/Falcon_9_Full_Thrust" }, { "ad": "Spaceflight101: Falcon 9 FT", "url": "https://spaceflight101.com/spacerockets/?p=1457" }] }
+      { "ad": "Falcon 9 benzeri", "yuk_t": 22.8, "falcon": true, "asamalar": [{ "yakit_t": 411, "kuru_t": 22.2, "isp": 296.5 }, { "yakit_t": 107.5, "kuru_t": 4.0, "isp": 348 }], "not": "Kuru kütleler tahmin; 1. aşama Isp'i 282 ile 311 s'nin ortası (basitleştirme). Yük: yayımlanan, roket geri kazanılmadan LEO yükü.", "kaynaklar": [{ "ad": "Wikipedia: Falcon 9 Full Thrust", "url": "https://en.wikipedia.org/wiki/Falcon_9_Full_Thrust" }, { "ad": "Spaceflight101: Falcon 9 FT (arşiv kopyası)", "url": "https://web.archive.org/web/20240726010028/https://spaceflight101.com/spacerockets/falcon-9-ft/" }] }
     ],
     "hedefler": [
-      { "ad": "Alçak yörünge", "kisa": "LEO", "dv_kms": 9.4, "not": "Yerden ISS'nin 300 km'lik ilk yörüngesine; 1,5–2 km/s sürtünme ve çekim kaybı dahil." },
+      { "ad": "Alçak yörünge", "kisa": "LEO", "dv_kms": 9.4, "not": "Yerden ISS'nin 300 km'lik ilk yörüngesine; 1,5–2 km/s sürtünme ve çekim kaybı dâhil." },
       { "ad": "Yerdurgun aktarım (GTO)", "kisa": "GTO", "dv_kms": 11.83, "not": "9,4 + 2,43: 300 km dairesel yörüngeden en uzak noktası 35.786 km olan elipse (vis-viva hesabı, eğiklik değişimi yok)." },
       { "ad": "Mars'a aktarım", "kisa": "Mars", "dv_kms": 13.7, "not": "9,4 + 4,3 (tipik, en küçük değil)." },
       { "ad": "Ay yüzeyi", "kisa": "Ay", "dv_kms": 15.33, "not": "9,4 + 5,93 (Kennedy enleminden alçak yörüngeden)." }
@@ -120,7 +120,7 @@
       { "ad": "Wikipedia: Tsiolkovsky rocket equation", "url": "https://en.wikipedia.org/wiki/Tsiolkovsky_rocket_equation" },
       { "ad": "Wikipedia: Multistage rocket", "url": "https://en.wikipedia.org/wiki/Multistage_rocket" },
       { "ad": "Wikipedia: Falcon 9 Full Thrust", "url": "https://en.wikipedia.org/wiki/Falcon_9_Full_Thrust" },
-      { "ad": "Spaceflight101: Falcon 9 FT", "url": "https://spaceflight101.com/spacerockets/?p=1457" },
+      { "ad": "Spaceflight101: Falcon 9 FT (arşiv kopyası)", "url": "https://web.archive.org/web/20240726010028/https://spaceflight101.com/spacerockets/falcon-9-ft/" },
       { "ad": "L3Harris: RS-25", "url": "https://l3harris.com/all-capabilities/rs-25-engine" },
       { "ad": "Wikipedia: Space Shuttle SRB", "url": "https://en.wikipedia.org/wiki/Space_Shuttle_Solid_Rocket_Booster" },
       { "ad": "NASA/TM-2008-214988 (NSTAR, NEXT)", "url": "https://ntrs.nasa.gov/api/citations/20080012602/downloads/20080012602.pdf" }

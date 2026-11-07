@@ -81,6 +81,7 @@ Tarih: 2026-10-30. Her satır: değer | nereden | hesap.
 | ikinci yılda işaret karşı yöne | hesap | 360° × 87,969/58,646 = 539,99° ≈ 180° (+1 tur) |
 | gün etiketleri 0·88, 11·99 … 77·165 | hesap | k × 11,0 ve + 88, tam sayıya yuvarlandı |
 | d35-sera (bölüm 11): Merkür gece −180 °C = 93 K, gündüz 590–725 K | Ders bölüm 4 ve 6 (NASA NSSDCA, d9) | −180 + 273,15 = 93,15 |
+| d35-sera (2026-11-08) | Merkür'ün 93 K'lik gece değeri dolu daireden (gösterge: "gerçek ortalama") kareye alındı, göstergeye "kare: gece en düşük sıcaklığı" eklendi; değer aynı | Ders d35 bölüm 4 ve 6 (gece en düşük −180 °C) |
 | Merkür'e gelen 9082,7 ≈9083 W/m² | Ders bölüm 0 | — |
 | Venüs: gelen 2601,3, albedo 0,77, soğurulan ≈598 W/m², 226,6 K → 737 K, +510 K, 92 bar | Ders bölüm 0, 11 ve örneği (NASA) | (1 − 0,77) × 2601,3 = 598; 737 − 226,6 = 510,4 |
 | Dünya: gelen 1361, soğurulan ≈961 W/m², 254,0 K → 288 K, +34 K | Ders bölüm 11 örneği (NASA) | (1 − 0,294) × 1361 = 961; 288 − 254 = 34 |

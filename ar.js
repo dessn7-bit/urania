@@ -22,6 +22,7 @@
     sonOlay: 0,
     manyetik: true,           // α manyetik kuzeye göre mi (sapma düzeltmesi uygulanır)
     sapma: 0,                 // manyetik sapma (°, doğu +) — WMM-2025
+    wmmEski: false,           // model süresi doldu: sapma son geçerli tarihten (wmmSapma)
     kal: kalOku(), // kullanıcı hizalaması (°)
     az0: 180, alt0: 30,       // dokunma modunda bakış yönü
     gorus: 62,                // dikey görüş açısı (°), iki parmakla değişir
@@ -31,6 +32,23 @@
     zaman: null,
     nesneler: null            // saniyede bir yenilenen ENU vektörleri
   };
+
+  /* ---------- Manyetik sapma (WMM) ----------
+     lib/geomag.min.js WMM-2025 katsayılarını taşır; model 13.11.2029 03:00 UT'de biter (kütüphanedeki end_date) ve
+     sonrası için hata atar. Sapma o zaman 0 yapılırsa pusula sessizce kayar (İstanbul'da ≈6°). Bunun yerine son geçerli
+     anın sapması kullanılır ve kullanıcı uyarılır (yıllık değişim İstanbul'da ≈0,05°: NOAA declination_sv). */
+  const WMM_BITIS = Date.UTC(2029, 10, 13, 3, 0, 0);
+  const WMM_SON_GECERLI = new Date(WMM_BITIS - 60e3);
+  const WMM_UYARI = 'Manyetik model eskidi (WMM-2025, 13 Kasım 2029\'a kadar geçerli): sapma o tarihteki değerle düzeltildi, pusula birkaç derece kayabilir. Gerekirse "Hizala"yı kullan.';
+  function wmmSapma(enlem, boylam, an) {
+    const G2 = window.Geomag;
+    if (!G2) return { sapma: 0, eski: false };
+    const t = an ? new Date(an) : new Date();
+    if (t.getTime() < WMM_BITIS) {
+      try { return { sapma: G2.sapma(enlem, boylam, t), eski: false }; } catch (h) { return { sapma: 0, eski: false }; }
+    }
+    try { return { sapma: G2.sapma(enlem, boylam, WMM_SON_GECERLI), eski: true }; } catch (h) { return { sapma: 0, eski: true }; }
+  }
 
   /* ---------- Matematik ---------- */
   function eulerdenMatris(a, b, g) {
@@ -137,7 +155,13 @@
   };
 
   /* iOS: izin isteği doğrudan bir dokunuşla tetiklenmeli; bu yüzden "Pusulayı aç" düğmesi gösterilir */
-  function izinGerekli() { return typeof DeviceOrientationEvent !== 'undefined' && typeof DeviceOrientationEvent.requestPermission === 'function'; }
+  /* İzin düğmesi yalnız iOS/iPadOS Safari'de: orada 'deviceorientationabsolute' yok ve olay ancak izinle gelir.
+     Chromium (Android, masaüstü) da requestPermission tanımlar ama izin istemeden mutlak olay yollar; algılayıcısız
+     masaüstünde düğme "izin verilmedi" diye yanıltıyordu (denetim A1-07). */
+  function izinGerekli() {
+    return typeof DeviceOrientationEvent !== 'undefined' && typeof DeviceOrientationEvent.requestPermission === 'function' &&
+      !('ondeviceorientationabsolute' in window);
+  }
   const IZIN_RED = 'Yön algılayıcı izni verilmedi; parmağınla sürükleyerek gezebilirsin.';
   async function izinIste() {
     const pd = el.querySelector('#arPusula');
@@ -260,8 +284,11 @@
     /* Manyetik sapma konuma bağlı: GPS ilk konumu sonradan gelirse yeniden hesaplanır */
     const sapmaYer = k.enlem.toFixed(1) + '|' + k.boylam.toFixed(1);
     if ((!st.sapmaHesaplandi || st.sapmaYer !== sapmaYer) && window.Geomag) {
-      try { st.sapma = window.Geomag.sapma(k.enlem, k.boylam, an); } catch (h) { st.sapma = 0; }
+      const s = wmmSapma(k.enlem, k.boylam, an);
+      const eskiDegisti = s.eski !== st.wmmEski;
+      st.sapma = s.sapma; st.wmmEski = s.eski;
       st.sapmaHesaplandi = true; st.sapmaYer = sapmaYer;
+      if (eskiDegisti && st.mod === 'algilayici') durumYaz();
     }
   }
 
@@ -721,15 +748,17 @@
 
   function durumYaz(mesaj) {
     const d = el.querySelector('#arDurum');
-    let m = mesaj;
+    let m = mesaj, kalici = false;
     if (!m) {
       if (st.mod === 'algilayici') m = st.manyetik ? 'Telefonu gökyüzüne tut. Pusula manyetik sapmaya göre düzeltildi (' + (st.sapma >= 0 ? '+' : '−') + U.sayi(Math.abs(st.sapma), 1) + '°).' : 'Telefonu gökyüzüne tut. Bu cihaz kuzeyi bildirmiyor: bir kez "Hizala"ya bas.';
       else if (st.mod === 'dokunma') m = 'Parmağınla sürükle, iki parmakla yakınlaştır.';
       else m = 'Yön algılayıcıları başlatılıyor…';
+      /* Manyetik model eskidiyse (pusula sapması son geçerli tarihten) uyarı pusula kullanıldıkça kalır */
+      if (st.wmmEski && st.mod !== 'dokunma' && st.manyetik) { m += ' ' + WMM_UYARI; kalici = true; }
     }
     d.textContent = m;
     d.hidden = false;
-    clearTimeout(d._t); d._t = setTimeout(() => { d.hidden = true; }, 7000);
+    clearTimeout(d._t); if (!kalici) d._t = setTimeout(() => { d.hidden = true; }, 7000);
   }
 
   /* ---------- Açılış / kapanış ---------- */
@@ -876,5 +905,5 @@
     if (dz > -0.02) return null;
     return { x: (dx * cA - dy * sA) / -dz, y: (dx * sA + dy * cA) / -dz }; // merkeze göre, y yukarı pozitif
   }
-  window.UraniaAR = { st, eulerdenMatris, bakisYonu, enu, yansitTest, tarifHesapla };
+  window.UraniaAR = { st, eulerdenMatris, bakisYonu, enu, yansitTest, tarifHesapla, wmmSapma, WMM_BITIS, WMM_SON_GECERLI };
 })();

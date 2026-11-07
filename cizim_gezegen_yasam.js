@@ -104,7 +104,7 @@
     }
   });
 
-  /* d13 · bölüm 5: Güneş'in yaşanabilir bölgesi (Kasting 1993: 0,95–1,37; Kopparapu 2013: 0,99–1,70 AB) ve ışınımı 0,25 Güneş olan
+  /* d13 · bölüm 6: Güneş'in yaşanabilir bölgesi (Kasting 1993: 0,95–1,37; Kopparapu 2013: 0,99–1,70 AB) ve ışınımı 0,25 Güneş olan
      yıldız için ölçeklenmiş bölge 0,50–0,85 AB (ders örneği). Venüs 0,72 ve Mars 1,52 AB (NASA, d9). Yatay eksen ölçekli. */
   C.ekle('d13-yasanabilir-bolge', {
     ders: 'd13', bolum: 6, oran: 0.7,
@@ -191,7 +191,7 @@
     }
   });
 
-  /* d18 · bölüm 5: yeraltı okyanusları. Çaplar ölçekli (3.122, 504, 5.149 km; ders). Kalınlık/derinlik tahminleri kaynaklarıyla:
+  /* d18 · bölüm 7: yeraltı okyanusları. Çaplar ölçekli (3.122, 504, 5.149 km; ders). Kalınlık/derinlik tahminleri kaynaklarıyla:
      Europa buz ≈29 km (Juno, dış katman; SwRI 2026), okyanus 50–100 (NASA afişi) ve 60–150 km (JPL); Enceladus 2014 güney: buz 30–40,
      okyanus ≈10 km (bölgesel; Astronomy); Park ve ark. 2024 ortalama: buz 27–33, okyanus 21–26 km; Titan okyanusa ≈100 km (NASA afişi). */
   C.ekle('d18-okyanus-dunyalari', {
@@ -262,7 +262,7 @@
     }
   });
 
-  /* d18 · bölüm 8: Drake denkleminin yedi çarpanı; 1961 tahminleri ve bugün (ders metni). Tablo biçiminde, ölçeksiz. */
+  /* d18 · bölüm 11: Drake denkleminin yedi çarpanı; 1961 tahminleri ve bugün (ders metni). Tablo biçiminde, ölçeksiz. */
   C.ekle('d18-drake', {
     ders: 'd18', bolum: 11, oran: 0.79,
     baslik: 'Drake denklemi: ölçülenler ve bilinmeyenler',

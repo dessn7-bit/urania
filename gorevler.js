@@ -25,8 +25,8 @@
 
   /* Bu gece karanlıkta (gezegen ve Ay için alacakaranlıktan itibaren) en yüksek konum */
   function buGece(k, gzl, gece) {
-    let bas = k.cisim ? (gece.sivilSon || gece.batis) : gece.karanlikBas;
-    const son = k.cisim ? (gece.sivilBas || gece.dogus) : gece.karanlikSon;
+    let bas = k.cisim ? gece.geceBas : gece.karanlikBas;
+    const son = k.cisim ? gece.geceSon : gece.karanlikSon;
     if (!bas || !son) return null;
     if (Date.now() > bas.getTime() && Date.now() < son.getTime()) bas = new Date();   // gece yarısından sonra bakana geçmiş saat gösterme
     let en = null;
@@ -50,7 +50,7 @@
   function ayAraligi(ls) {
     if (!ls || !ls.length) return '';
     if (ls.length === 12) return 'yıl boyu';
-    /* ardışık ayları (Aralık→Ocak dahil) aralık olarak yaz */
+    /* ardışık ayları (Aralık→Ocak dâhil) aralık olarak yaz */
     const v = new Set(ls);
     return [...v].filter(a => !v.has((a + 11) % 12)).sort((a, b) => a - b).map(s => {
       let e = s; while (v.has((e + 1) % 12)) e = (e + 1) % 12;

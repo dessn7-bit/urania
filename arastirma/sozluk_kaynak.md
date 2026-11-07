@@ -223,6 +223,20 @@ Wikipedia ikincil kaynak olarak kullanıldı; mümkün olan terimlerde NASA, NOA
 |---|---|---|
 | Başucu (+ zenit) | https://en.wikipedia.org/wiki/Horizontal_coordinate_system | "The pole of the upper hemisphere is called the zenith" |
 | Meteor (+ kayan yıldız) | https://science.nasa.gov/solar-system/meteors-meteorites/facts/ | "This is also when we refer to them as "shooting stars."" |
+| Atarca (+ pulsar) | TÜBA Türkçe Bilim Terimleri Sözlüğü (proje terim kararı, ORTAK.md 2026-11) | "atarca" ana terim; "pulsar" eş anlamlı |
+| Anakol (+ ana dizi) | TÜBA Türkçe Bilim Terimleri Sözlüğü (proje terim kararı, ORTAK.md 2026-11) | "anakol" ana terim; "ana dizi" eş anlamlı (metinde kullanılmaz, aramada bulunur) |
+| fantom enerji (+ hayalet enerji) | TÜBA Türkçe Bilim Terimleri Sözlüğü (proje terim kararı, ORTAK.md 2026-11) | "fantom enerji" ana terim; d55'in "hayalet enerji" kaydı bu maddeye katılır |
+
+## Denetim 2026-10-30 düzeltmeleri (A3-08, A3-09, A3-14)
+
+| Terim | Kaynak | Kaynaktaki ifade |
+|---|---|---|
+| Deniz Kulağı Bulutsusu (+ Lagün Bulutsusu), yeni terim | https://en.wikipedia.org/wiki/Lagoon_Nebula | "is a giant emission nebula with an H II region located in the constellation Sagittarius" |
+| Deniz Kulağı Bulutsusu | https://en.wikipedia.org/wiki/Lagoon_Nebula | "one of only two star-forming nebulae faintly visible to the naked eye from mid-northern latitudes" |
+
+- Ad: Gökyüzü sekmesindeki katalog adı (veri/hedefler.json, M8 "Deniz Kulağı Bulutsusu"); "Lagün Bulutsusu" eş anlamlı (ORTAK.md).
+- Tanım değeri değişmedi; yalnız işaretleme ayarları: Metal yalnız gökbilim anlamıyla kullanan derslerde (d5, d6, d8, d46, d47, d57) ve "metalisite" eş anlamlısı çıkarıldı (ayrı Metalisite kaydı var); Lorentz çarpanı tek başına "Lorentz" ile eşleşmez; Sol (özel ad, d36), ada (d52), zar (d53, d55), evre (d29), köşe (d29), durak (d24), kuşak (d32), MOND (d17, d50, d51, büyük harf), ISO (d24, büyük harf), RAW (büyük harf), yok olma (d29, d32, d50), bataklık (d53), sıkılık (d45) kendi derslerine kısıtlandı; d1'in Dünya'ya özgü "günberi" kaydı metinde işaretlenmez, "günberi" genel "Günberi / günöte" kaydına gider.
+- Eşleşme: terimden sonra yalnız Türkçe çekim ekleri kabul edilir (araclar/sozluk_yap.py EK_DESEN = sozluk.js EK_DESEN).
 
 ## Erişilemeyen kaynaklar
 

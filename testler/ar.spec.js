@@ -310,6 +310,18 @@ test('A10: hızlı kapat-aç: eski oturumun zamanlayıcısı yeni oturumu erken 
   expect(await page.evaluate(() => window.__gecis)).toBeGreaterThanOrEqual(1400);
 });
 
+test('A1-07 (denetim 2026-10-30): Chromium requestPermission tanımlasa da algılayıcısız masaüstünde "Pusulayı aç" çıkmaz; durum "yanıt vermedi" der', async ({ page }) => {
+  /* Chromium 153: DeviceOrientationEvent.requestPermission var VE 'ondeviceorientationabsolute' var (iOS'ta yok) */
+  await page.addInitScript(() => { if (typeof DeviceOrientationEvent.requestPermission !== 'function') DeviceOrientationEvent.requestPermission = () => Promise.resolve('denied'); });
+  await page.goto('/index.html#ar');
+  expect(await page.evaluate(() => typeof DeviceOrientationEvent.requestPermission === 'function' && 'ondeviceorientationabsolute' in window)).toBe(true);
+  await page.clock.runFor(2500);
+  const d = await arDurum(page);
+  expect(d.dugme).toBe(false);
+  expect(d.mod).toBe('dokunma');
+  expect(d.mesaj).toBe('Bu cihazda yön algılayıcısı yanıt vermedi; parmağınla sürükleyerek gezebilirsin.');
+});
+
 test.describe('iOS izin akışı (A6, A11)', () => {
   test('A11: izin reddedilince düğme gizlenir, red mesajı korunur, sürükleme çalışır', async ({ page }) => {
     await ios(page, 'denied');

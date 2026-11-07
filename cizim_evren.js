@@ -64,7 +64,7 @@
     }
   });
 
-  /* d7 · bölüm 3: Hubble ayar çatalı, şematik. Eliptik basıklığı E = 10 × (1 − b/a): E3 → b/a = 0,7; E7 → 0,3 (Swinburne COSMOS). */
+  /* d7 · bölüm 4: Hubble ayar çatalı, şematik. Eliptik basıklığı E = 10 × (1 − b/a): E3 → b/a = 0,7; E7 → 0,3 (Swinburne COSMOS). */
   C.ekle('d7-hubble-catal', {
     ders: 'd7', bolum: 4, oran: 0.68,
     baslik: 'Hubble\'ın ayar çatalı',
@@ -120,7 +120,7 @@
     }
   });
 
-  /* d7 · bölüm 4: Yerel Grup, Samanyolu'ndan uzaklıklar tek doğru üzerinde (gökteki yönler farklı). Uzaklık ve çaplar ölçekli:
+  /* d7 · bölüm 5: Yerel Grup, Samanyolu'ndan uzaklıklar tek doğru üzerinde (gökteki yönler farklı). Uzaklık ve çaplar ölçekli:
      Andromeda 2,5 milyon (çap 152.000), Üçgen 2,88 milyon (çap 61.100), Samanyolu çapı ≈100.000; Macellan Bulutları 160–200 bin (boyları şematik). */
   C.ekle('d7-yerel-grup', {
     ders: 'd7', bolum: 5, oran: 0.52,
@@ -163,7 +163,7 @@
 
   /* ===================== d8 · Evrenin tarihi ===================== */
 
-  /* d8 · bölüm 2: zaman çizelgesi, logaritmik zaman ekseni (saniye). 1 yıl = 3,156×10⁷ s (ders). Değerler ders metninden. */
+  /* d8 · bölüm 3: zaman çizelgesi, logaritmik zaman ekseni (saniye). 1 yıl = 3,156×10⁷ s (ders). Değerler ders metninden. */
   C.ekle('d8-zaman-cizelgesi', {
     ders: 'd8', bolum: 3, oran: 1.14,
     baslik: 'Evrenin zaman çizelgesi (logaritmik)',
@@ -204,7 +204,7 @@
     }
   });
 
-  /* d8 · bölüm 4: arka plan ışımasının sıcaklığı T = T0 × (1 + z), T0 = 2,725 K (ders). Log-log, hesaplanmış. */
+  /* d8 · bölüm 5: arka plan ışımasının sıcaklığı T = T0 × (1 + z), T0 = 2,725 K (ders). Log-log, hesaplanmış. */
   C.ekle('d8-arka-plan-sicaklik', {
     ders: 'd8', bolum: 5, oran: 0.69,
     baslik: 'Evren büyüdükçe arka plan ışıması soğur',
@@ -235,7 +235,7 @@
 
   /* ===================== d17 · Kozmoloji ===================== */
 
-  /* d17 · bölüm 3: uzaklık merdiveni. Üst uçlar ders metninden (Astronomy.com): ıraklık birkaç on bin, Sefeid ≈50 milyon, Ia ≈10 milyar ışık yılı ve ötesi.
+  /* d17 · bölüm 4: uzaklık merdiveni. Üst uçlar ders metninden (Astronomy.com): ıraklık birkaç on bin, Sefeid ≈50 milyon, Ia ≈10 milyar ışık yılı ve ötesi.
      Çubukların başlangıçları ve örtüşmeleri şematik. Başvuru çizgileri: Samanyolu ≈100.000 (d7), Andromeda 2,5 milyon, Başak ≈50 milyon. */
   C.ekle('d17-uzaklik-merdiveni', {
     ders: 'd17', bolum: 4, oran: 0.7,
@@ -278,7 +278,7 @@
     }
   });
 
-  /* d17 · bölüm 7: evrenin bileşimi, Planck 2018 (ders örneğinde hesaplanan yüzdeler: 4,9 / 26,4 / 68,5). */
+  /* d17 · bölüm 10: evrenin bileşimi, Planck 2018 (ders örneğinde hesaplanan yüzdeler: 4,9 / 26,4 / 68,5). */
   C.ekle('d17-bilesim', {
     ders: 'd17', bolum: 10, oran: 0.64,
     baslik: 'Evrenin bileşimi: Planck 2018',
@@ -315,7 +315,7 @@
     }
   });
 
-  /* d17 · bölüm 8: Hubble diyagramı, v = H0 × d; Planck 2018 67,4 ve SH0ES 2022 73,04 km/s/Mpc (ders). 100 Mpc'de 6740 ve 7304 km/s (hesap). */
+  /* d17 · bölüm 12: Hubble diyagramı, v = H0 × d; Planck 2018 67,4 ve SH0ES 2022 73,04 km/s/Mpc (ders). 100 Mpc'de 6740 ve 7304 km/s (hesap). */
   C.ekle('d17-hubble-diyagrami', {
     ders: 'd17', bolum: 12, oran: 0.68,
     baslik: 'Hubble diyagramı: iki eğim, iki sonuç',

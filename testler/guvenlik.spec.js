@@ -29,13 +29,18 @@ async function kur(page, depo) {
   }, [KONUM, depo]);
 }
 
+/* Sayfa hatası her testte denetlenir (testin içinde ayrıca bakmayanlar da: ICS, depo dolu) */
+test.afterEach(async ({ page }) => { expect(page.hatalar).toEqual([]); });
+
 test('CSP var, satır içi betik yok; uygulama CSP altında açılır', async ({ page }) => {
   await page.route('**/api.open-meteo.com/**', r => r.abort());
   await kur(page);
   const html = fs.readFileSync(path.join(__dirname, '..', 'index.html'), 'utf8');
   expect(html).toContain('Content-Security-Policy');
-  expect(html).not.toMatch(/<script>(?!\s*<\/script>)/);
-  expect(html).not.toMatch(/\son[a-z]+="/);
+  /* src'siz her <script> (type'lı olanlar da: <script type="text/javascript">…) ve tırnaklı ya da tırnaksız her on…=
+     olay işleyicisi (onclick='…', onload=x; yalnız etiket içinde aranır, düz metinde değil) */
+  expect(html).not.toMatch(/<script\b(?![^>]*\bsrc\s*=)[^>]*>\s*\S/i);
+  expect(html).not.toMatch(/<[a-z][^>]*\son[a-z]+\s*=/i);
   await page.goto('/index.html#gok');
   await expect(page.locator('#gkOzet p').first()).toBeVisible();
   expect(page.hatalar).toEqual([]);

@@ -70,11 +70,11 @@
     tegmark: { ad: 'Tegmark 2003, Parallel Universes', url: 'https://ar5iv.labs.arxiv.org/html/astro-ph/0302131' },
     gelecek: { ad: 'Wikipedia: Future of an expanding universe', url: 'https://en.wikipedia.org/wiki/Future_of_an_expanding_universe' },
     isilOlum: { ad: 'Wikipedia: Heat death of the universe', url: 'https://en.wikipedia.org/wiki/Heat_death_of_the_universe' },
-    andreassen: { ad: 'Andreassen, Frost, Schwartz 2018 (arXiv:1707.08124)', url: 'https://arxiv.org/abs/1707.08124v2' },
+    andreassen: { ad: 'Andreassen, Frost, Schwartz 2018 (arXiv:1707.08124, son sürüm v4)', url: 'https://arxiv.org/pdf/1707.08124v4' },
     caldwell: { ad: 'Caldwell, Kamionkowski, Weinberg 2003', url: 'https://ar5iv.labs.arxiv.org/html/astro-ph/0302506' },
     cornell: { ad: 'Cornell Chronicle 2025: 33 milyar yıl ve Büyük Çöküş', url: 'https://news.cornell.edu/node/331616' },
     beyazDelik: { ad: 'Wikipedia: White hole', url: 'https://en.wikipedia.org/wiki/White_hole' },
-    solucan: { ad: 'Wikipedia: Wormhole', url: 'https://wikiwand.com/en/Wormhole' },
+    solucan: { ad: 'Wikipedia: Wormhole', url: 'https://en.wikipedia.org/wiki/Wormhole' },
     morris: { ad: 'Morris ve Thorne 1988', url: 'https://www.osti.gov/biblio/5435651' },
     krikalev: { ad: 'Universe Today 2013: Krikalev', url: 'https://www.universetoday.com/105650/cosmonaut-sergei-krikalev-the-worlds-most-prolific-time-traveler' },
     zamanGen: { ad: 'Wikipedia: Time dilation (CERN müonları)', url: 'https://en.wikipedia.org/wiki/Time_dilation' },
@@ -686,26 +686,26 @@
   C.ekle('d55-gelecek-takvimi', {
     ders: 'd55', bolum: 8, oran: 1.42,
     baslik: 'Uzak geleceğin takvimi: logaritmik bir zaman çizelgesi',
-    aciklama: "Zaman yukarıdan aşağı akar ve eksen logaritmiktir: her çentik 10 üzeri 20 kat. Bugün evren 13,8 milyar yaşında. Yaklaşık 150 milyar yılda Yerel Üstküme dışındaki galaksiler ufkun ardına geçer, 2 trilyon yılda ışıkları görülemez olur. Kırmızı cüceler yaklaşık 10 üzeri 13 yılda söner, yıldız oluşumu 10 üzeri 14 yılda biter: bütün bunlar çizelgenin en üstündeki ince dilime sığar. Sonra 10 üzeri 40 yıla kadar yozlaşmış çağ gelir; proton bozunuyorsa yarılanma ömrü en az 10 üzeri 34 yıldır. 10 üzeri 40 ile 10 üzeri 100 yıl arası kara delik çağıdır; en büyükleri 10 üzeri 106 yıla dek buharlaşır. Vakum bozunması için Standart Model hesabı yaklaşık 10 üzeri 139 yıl, yüzde 95 alt sınır 10 üzeri 58 yıl verir. Proton bozunmuyorsa demir yıldızlar 10 üzeri 1500 yılda oluşur, çizelgenin çok dışında. Hepsi bugünkü fiziğin ve sabit karanlık enerjinin sürdüğü varsayımına dayanır: kuram ya da hipotez.",
+    aciklama: "Zaman yukarıdan aşağı akar ve eksen logaritmiktir: her çentik 10 üzeri 20 kat. Bugün evren 13,8 milyar yaşında. Yaklaşık 150 milyar yılda Yerel Üstküme dışındaki galaksiler ufkun ardına geçer, 2 trilyon yılda ışıkları görülemez olur. Kırmızı cüceler yaklaşık 10 üzeri 13 yılda söner, yıldız oluşumu 10 üzeri 14 yılda biter: bütün bunlar çizelgenin en üstündeki ince dilime sığar. Sonra 10 üzeri 40 yıla kadar yozlaşmış çağ gelir; proton bozunuyorsa yarılanma ömrü en az 10 üzeri 34 yıldır. 10 üzeri 43 ile 10 üzeri 100 yıl arası kara delik çağıdır; en büyükleri 10 üzeri 106 yıla dek buharlaşır, sonra karanlık çağ başlar. Vakum bozunması için Standart Model hesabının son sürümü yaklaşık 10 üzeri 161 yıl verir; yüzde 95 güvenle ömür 10 üzeri 65 yıldan uzundur. Proton bozunmuyorsa demir yıldızlar 10 üzeri 1500 yılda oluşur, çizelgenin çok dışında. Hepsi bugünkü fiziğin ve sabit karanlık enerjinin sürdüğü varsayımına dayanır. Kesinlik: yıldızların yakıtını bitirip sönmesi, yıldız fiziğine dayanan güçlü kanıtlı bir öngörüdür; proton bozunması, kara deliklerin buharlaşması ve vakum bozunması kuram ya da hipotezdir.",
     kaynak: [KAYNAK.gelecek, KAYNAK.isilOlum, KAYNAK.andreassen],
     ciz(S) {
-      const R = S.R, ax = 78, Y = l => 44 + (l - 10) / 130 * 430;
+      const R = S.R, ax = 78, Y = l => 44 + (l - 10) / 160 * 430;
       let s = '';
-      /* çağ şeritleri */
-      const cag = [[10.14, 14, { dolgu: R.vurgu, renk: 'none' }], [14, 40, { dolgu: R.vurguSoluk, renk: R.metin, kalin: 1 }], [40, 100, { dolgu: R.soluk, renk: 'none', saydam: 0.55 }], [100, 140, { renk: R.metin, kalin: 1.2, kesik: '3 3' }]];
+      /* çağ şeritleri: yıldızlar (bugün–10¹⁴), yozlaşmış çağ 10¹⁴–10⁴⁰, kara delik çağı 10⁴³–10¹⁰⁰ (ders bölüm 8 ve 9), karanlık çağ 10¹⁰⁰ sonrası */
+      const cag = [[10.14, 14, { dolgu: R.vurgu, renk: 'none' }], [14, 40, { dolgu: R.vurguSoluk, renk: R.metin, kalin: 1 }], [43, 100, { dolgu: R.soluk, renk: 'none', saydam: 0.55 }], [100, 170, { renk: R.metin, kalin: 1.2, kesik: '3 3' }]];
       cag.forEach(([a, b, o]) => s += S.kutu(ax + 4, Y(a), 9, Y(b) - Y(a), o, 2));
-      s += S.cizgi(ax, Y(10), ax, Y(140), { renk: R.soluk, kalin: 1.5 });
-      [20, 40, 60, 80, 100, 120, 140].forEach(l => {
+      s += S.cizgi(ax, Y(10), ax, Y(170), { renk: R.soluk, kalin: 1.5 });
+      [20, 40, 60, 80, 100, 120, 140, 160].forEach(l => {
         s += S.cizgi(ax - 5, Y(l), ax, Y(l), { renk: R.soluk, kalin: 1 });
         s += S.yazi(ax - 8, Y(l) + 4, on(l), { boy: 13, hiza: 'end', renk: R.soluk });
       });
-      [[27, 'yozlaşmış çağ'], [70, 'kara delik çağı'], [120, 'karanlık çağ']].forEach(([l, t]) => s += S.yazi(20, Y(l), t, { boy: 13, hiza: 'middle', renk: R.soluk, yan: -90, italik: true }));
+      [[27, 'yozlaşmış çağ'], [71.5, 'kara delik çağı'], [135, 'karanlık çağ']].forEach(([l, t]) => s += S.yazi(20, Y(l), t, { boy: 13, hiza: 'middle', renk: R.soluk, yan: -90, italik: true }));
       s += S.yazi(8, 22, 'yıl', { boy: 13, renk: R.soluk });
       const olay = [
         [10.14, 'bugün: 13,8 milyar yıl', 30, true], [11.18, '150 milyar yıl: uzak galaksiler ufukta', 48], [12.3, '2 trilyon yıl: ışıkları görülemez', 66],
-        [13, '10¹³ yıl: kırmızı cüceler söner', 84], [14, '10¹⁴ yıl: yıldız oluşumu biter', 102], [34, '≥ 10³⁴ yıl: proton bozunursa (hipotez)', 150],
-        [40, '10⁴⁰ yıl: yozlaşmış çağ biter', 172], [58, '10⁵⁸ yıl: vakum bozunması, %95 alt sınır', 230],
-        [100, '10¹⁰⁰ yıl: dev kara delikler buharlaşır', 371], [106, '10¹⁰⁶ yıl: en büyükleri de biter', 392], [139, '10¹³⁹ yıl: vakum bozunması, SM tahmini', 474]
+        [13, '10¹³ yıl: kırmızı cüceler söner', 84], [14, '10¹⁴ yıl: yıldız oluşumu biter', 102], [34, '≥ 10³⁴ yıl: proton bozunursa (hipotez)', 124],
+        [40, '10⁴⁰ yıl: yozlaşmış çağ biter', 144], [43, '10⁴³ yıl: kara delik çağı başlar', 164], [65, '10⁶⁵ yıl: vakum bozunması, %95 alt sınır', 205],
+        [100, '10¹⁰⁰ yıl: dev kara delikler buharlaşır', 290], [106, '10¹⁰⁶ yıl: en büyükleri de biter', 310], [161, '10¹⁶¹ yıl: vakum bozunması, SM tahmini', 454]
       ];
       olay.forEach(([l, t, yl, k]) => {
         const y = Y(l);
@@ -713,9 +713,11 @@
         s += S.yol(`M${ax + 15},${y} L112,${yl - 4}`, { renk: R.soluk, kalin: 1 });
         s += S.yazi(116, yl, t, { boy: 13, renk: R.metin, kalin: !!k });
       });
-      s += S.ok(ax, Y(140) + 2, ax, Y(140) + 24, { renk: R.metin, kalin: 1.5, boy: 7 });
-      s += S.yazi(ax + 10, Y(140) + 32, '10¹⁵⁰⁰ yıl: demir yıldızlar (çok dışarıda)', { boy: 13, renk: R.metin });
-      s += etiket(S, 200, 552, 'Kesinlik: kuram ya da hipotez', 'kuram', { hiza: 'middle' });
+      s += S.ok(ax, Y(170) + 2, ax, Y(170) + 24, { renk: R.metin, kalin: 1.5, boy: 7 });
+      s += S.yazi(ax + 10, Y(170) + 32, '10¹⁵⁰⁰ yıl: demir yıldızlar (çok dışarıda)', { boy: 13, renk: R.metin });
+      /* kesinlik (ders bölüm 8 ve 14): yıldızların sönmesi güçlü kanıtlı; proton, kara delik buharlaşması, vakum kuram ya da hipotez */
+      s += etiket(S, 200, 532, 'Güçlü kanıtlı: yıldızların sönmesi', 'guclu', { hiza: 'middle' });
+      s += etiket(S, 200, 558, 'Kuram ya da hipotez: proton, kara delik, vakum', 'kuram', { hiza: 'middle' });
       return s;
     }
   });
@@ -808,17 +810,25 @@
 
   /* ================================================================ d56 ================================================================ */
 
-  /* d56 · bölüm 1: Kruskal–Szekeres haritası, kavramsal; ufuklar 45°, tekillikler T² − X² = 1 */
+  /* d56 · bölüm 1: Kruskal–Szekeres haritası, kavramsal; ufuklar 45°, tekillikler T² − X² = 1.
+     Dünya çizgileri [X, T]: ufuklar ışık yoludur (eğim tam 1); gözlemci ve beyaz delikten çıkan zamansıdır (eğim > 1).
+     Beyaz delik oku (0,42; −1,02) → (0,92; −0,32): ΔT/ΔX = 0,70/0,50 = 1,4 (≈ 54,5°); III'te başlar (−√(1+X²) < T < −|X|), I'de biter (X > |T|).
+     Gözlemcinin ok ucu Bézier eğrisinin uçtaki teğeti boyunca: 2(g3 − g2) = (−0,35; 0,58), eğim 1,66. */
+  const KRUSKAL_DC = {
+    ufuklar: [[[-1.45, -1.45], [1.45, 1.45]], [[-1.45, 1.45], [1.45, -1.45]]],
+    gozlemci: [[0.66, -0.55], [0.6, 0.45], [0.25, 1.03]],
+    gozlemciOk: [0.3025, 0.943],
+    beyazDelik: [[0.42, -1.02], [0.92, -0.32]]
+  };
   C.ekle('d56-schwarzschild-haritasi', {
-    ders: 'd56', bolum: 1, oran: 0.98,
+    ders: 'd56', bolum: 1, oran: 0.98, dunyaCizgileri: KRUSKAL_DC,
     baslik: "Schwarzschild çözümünün bütün haritası: dört bölge",
     aciklama: "Bu kavramsal bir çizimdir: Kruskal ve Szekeres'in haritasıdır, zaman yukarı doğru akar ve ışık 45 derecelik çizgilerle yol alır. Çapraz iki çizgi olay ufuklarıdır, üstteki ve alttaki kalın kesikli eğriler tekilliklerdir. Sağdaki birinci bölge bizim dış evrenimizdir: gözlemle kesinleşmiş. Üstteki ikinci bölge kara deliğin içidir; girilir ama çıkılmaz, ince oklu eğri ufku geçip tekilliğe düşen bir gözlemcidir. Alttaki üçüncü bölge beyaz deliğin içidir: içinden her şey dışarı çıkar ama girilemez. Soldaki dördüncü bölge ikinci bir dış bölgedir. Yatay noktalı çizgi bir anlık kesittir; iki dış bölgeyi birleştiren Einstein-Rosen köprüsü burada görünür. Üçüncü ve dördüncü bölgeler yalnız ebedî, boş bir kara delikte vardır; çökmeyle doğan gerçek kara deliklerde kalkar. Beyaz deliklerin ve ikinci evrenin gerçekte var olması spekülasyondur.",
     kaynak: [KAYNAK.beyazDelik, KAYNAK.solucan],
     ciz(S) {
       const R = S.R, cx = 200, cy = 198, u = 104, P = (X, T) => [cx + X * u, cy - T * u];
       let s = '';
-      const a = P(-1.45, -1.45), b = P(1.45, 1.45), c = P(-1.45, 1.45), d = P(1.45, -1.45);
-      s += S.cizgi(a[0], a[1], b[0], b[1], { renk: R.metin, kalin: 2 }) + S.cizgi(c[0], c[1], d[0], d[1], { renk: R.metin, kalin: 2 });
+      KRUSKAL_DC.ufuklar.forEach(([p, q]) => { const a = P(p[0], p[1]), b = P(q[0], q[1]); s += S.cizgi(a[0], a[1], b[0], b[1], { renk: R.metin, kalin: 2 }); });
       [1, -1].forEach(sg => {
         const ls = []; for (let X = -1.04; X <= 1.0401; X += 0.04) ls.push(P(X, sg * Math.sqrt(1 + X * X)));
         s += S.egri(ls, { renk: R.metin, kalin: 4, kesik: '6 4' });
@@ -832,12 +842,16 @@
       s += bolge(0, 0.86, ['II', 'kara delik içi']);
       s += bolge(0, -0.58, ['III', 'beyaz delik içi']);
       s += S.zeminliYazi(cx, cy + 22, 'Einstein-Rosen köprüsü (bir an)', { boy: 13, hiza: 'middle', renk: R.metin });
-      /* düşen gözlemci: I'den II'ye */
-      const g1 = P(0.66, -0.55), g2 = P(0.6, 0.45), g3 = P(0.25, 1.03);
+      /* Dünya çizgileri (X, T birimiyle; iki eksen aynı ölçekte, bu yüzden ekrandaki açı koordinattaki açıdır): zamansı yollar
+         her yerde |ΔT/ΔX| > 1 (45°'den dik), ışık yolları tam 1. Değerler kayıtta da durur (dunyaCizgileri), test eğimleri denetler. */
+      const DC = KRUSKAL_DC;
+      /* düşen gözlemci: I'den II'ye (ikinci dereceden Bézier; teğeti her yerde 45°'den dik) */
+      const [g1, g2, g3] = DC.gozlemci.map(p => P(p[0], p[1]));
       s += S.yol(`M${g1[0]},${g1[1]} Q${g2[0]},${g2[1]} ${g3[0]},${g3[1]}`, { renk: R.vurgu, kalin: 2 });
-      s += S.ok(P(0.33, 0.95)[0], P(0.33, 0.95)[1], g3[0], g3[1], { renk: R.vurgu, kalin: 2, boy: 8 });
-      /* beyaz delikten çıkan */
-      const w1 = P(0.15, -1.0), w2 = P(1.05, -0.38);
+      const ou = P(DC.gozlemciOk[0], DC.gozlemciOk[1]);
+      s += S.ok(ou[0], ou[1], g3[0], g3[1], { renk: R.vurgu, kalin: 2, boy: 8 });
+      /* beyaz delikten çıkan: III'ten I'e, zamansı (ışık konisinin içinde) */
+      const w1 = P(DC.beyazDelik[0][0], DC.beyazDelik[0][1]), w2 = P(DC.beyazDelik[1][0], DC.beyazDelik[1][1]);
       s += S.ok(w1[0], w1[1], w2[0], w2[1], { renk: R.metin, kalin: 1.5, boy: 7, kesik: '5 3' });
       s += S.ok(16, 372, 16, 330, { renk: R.soluk, kalin: 1.2, boy: 6 }) + S.ok(16, 372, 58, 372, { renk: R.soluk, kalin: 1.2, boy: 6 });
       s += S.yazi(22, 334, 'zaman', { boy: 13, renk: R.soluk }) + S.yazi(62, 376, 'uzay', { boy: 13, renk: R.soluk });
@@ -883,7 +897,7 @@
   C.ekle('d56-gelecege-yolculuk', {
     ders: 'd56', bolum: 10, oran: 0.8,
     baslik: 'Geleceğe yolculuk: bir yıllık yolculuğun kazancı',
-    aciklama: "Çubuklar, kendi saatine göre bir yıl yolculuk eden birinin döndüğünde Dünya'ya göre ne kadar ileride olacağını gösterir; eksen logaritmiktir. Uluslararası Uzay İstasyonu'nun saniyede 7,7 kilometrelik hızında kazanç yalnızca yaklaşık 0,01 saniyedir; Krikalev 803 günde yaklaşık 0,02 saniye ileri gitti. CERN'de 1977'de çember üstünde döndürülen müonların Lorentz çarpanı 29,3'tü ve ömürleri bu kadar uzun ölçüldü: o hızda bir yıl, Dünya'da yaklaşık 29 yıl eder, yani yaklaşık 28 yıl ileri. Kesikli çubuk Interstellar filmindeki Miller gezegenidir: orada bir saat Dünya'da yedi yıl eder, bir yıl ise yaklaşık 61 bin yıl; bu ancak çok hızlı dönen bir kara delikle mümkün olan, filmin seçtiği bir durumdur. Hız ve kütleçekiminin zamanı yavaşlattığı gözlemle kesinleşmiştir.",
+    aciklama: "Çubuklar, kendi saatine göre bir yıl yolculuk eden birinin döndüğünde Dünya'ya göre ne kadar ileride olacağını gösterir; eksen logaritmiktir. Uluslararası Uzay İstasyonu'nun saniyede 7,7 kilometrelik hızında kazanç yalnızca yaklaşık 0,01 saniyedir; Krikalev 803 günde yaklaşık 0,02 saniye ileri gitti. CERN'de 1977'de çember üstünde döndürülen müonların Lorentz çarpanı 29,3'tü ve ömürleri bu kadar uzun ölçüldü: o hızda bir yıl, Dünya'da yaklaşık 29 yıl eder, yani yaklaşık 28 yıl ileri. Kesikli çubuk Interstellar filmindeki Miller gezegenidir: orada bir saat Dünya'da yedi yıl eder, bir yıl ise yaklaşık 61 bin yıl; bu ancak çok hızlı dönen bir kara delikle mümkün olan, filmin seçtiği aşırı bir durumdur: fizik yasalarıyla uyumlu, kesinlik basamağı kuram ya da hipotez. Hız ve kütleçekiminin zamanı yavaşlattığı gözlemle kesinleşmiştir.",
     kaynak: [KAYNAK.krikalev, KAYNAK.zamanGen, KAYNAK.interstellar],
     ciz(S) {
       const R = S.R, X = l => 124 + (l + 3) / 16 * 258, yil = 3.15576e7;
@@ -891,7 +905,7 @@
       const satir = [
         [L10(7700 * 7700 / (2 * 299792458 * 299792458) * yil), 'ISS hızı', '7,7 km/s', '≈ 0,01 s', 'Krikalev 803 günde: ≈ 0,02 s', 'dolu'],
         [L10(28.327 * yil), 'CERN müonları', 'γ = 29,3', '≈ 28 yıl', 'ölçüldü: CERN 1977', 'dolu'],
-        [L10((7 * 365.25 * 24 - 1) * yil), 'Miller gezegeni', '(film)', '≈ 61.000 yıl', 'kurgu: çok hızlı dönen kara delik ister', 'bos']
+        [L10((7 * 365.25 * 24 - 1) * yil), 'Miller gezegeni', '(film)', '≈ 61.000 yıl', 'aşırı ama mümkün: çok hızlı dönen delik', 'bos']
       ];
       satir.forEach(([l, a1, a2, deger, alt, tur], i) => {
         const y = 40 + i * 62;

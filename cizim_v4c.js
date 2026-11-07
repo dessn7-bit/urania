@@ -155,7 +155,7 @@
     kaynak: [KAYNAK.tonomura, KAYNAK.physicsWorld],
     ciz(S) {
       const R = S.R, rnd = rastgele(1989);
-      /* dağılım: şerit aralığı 1/6 kare genişliği, geniş zarf */
+      /* dağılım: şerit aralığı 1/7 kare genişliği (cos² dönemi), geniş zarf */
       const yog = u => { const z = Math.exp(-Math.pow((u - 0.5) / 0.3, 2)); return z * Math.pow(Math.cos(Math.PI * (u - 0.5) * 7), 2); };
       const ornek = () => { for (;;) { const u = rnd(), v = rnd(); if (v < yog(u)) return u; } };
       const kare = [[8, 12, 30], [270, 206, 30], [2000, 12, 196], [60000, 206, 196]], w = 182, h = 132;
@@ -244,8 +244,10 @@
         const T = 1 / Math.pow(Math.cosh(ka), 2), A = 22, a0 = 150, a1 = a0 + ka * 34, yE = y0;          // yE: parçacık enerjisi çizgisi
         let o = '';
         /* engel */
-        o += S.kutu(a0, y0 - 54, a1 - a0, 54 + 30, { dolgu: R.yuzey2, renk: R.metin, kalin: 1.4 });
-        o += S.yazi((a0 + a1) / 2, y0 - 60, ad, { boy: 13, hiza: 'middle', renk: R.metin, kalin: true });
+        /* enerji sıfırı y0 + 30, parçacık enerjisi y0 (30 birim), engel tepesi y0 − 30: engel yüksekliği enerjinin tam 2 katı (60 ÷ 30) */
+        o += S.cizgi(14, y0 + 30, 392, y0 + 30, { renk: R.soluk, kalin: 1.2 });
+        o += S.kutu(a0, y0 - 30, a1 - a0, 60, { dolgu: R.yuzey2, renk: R.metin, kalin: 1.4 });
+        o += S.yazi((a0 + a1) / 2, y0 - 36, ad, { boy: 13, hiza: 'middle', renk: R.metin, kalin: true });
         o += S.cizgi(14, yE, 392, yE, { renk: R.soluk, kalin: 1, kesik: '3 4' });
         /* gelen dalga */
         const ls = [];
@@ -266,7 +268,7 @@
       const a = sira(140, 1.5, 'ince engel'), b = sira(294, 3, 'iki kat kalın engel');
       s += a.o + b.o;
       s += S.yazi(16, 22, 'kesikli çizgi: parçacığın enerjisi', { boy: 13, renk: R.soluk });
-      s += S.yazi(16, 40, 'engel yüksekliği: enerjinin 2 katı', { boy: 13, renk: R.soluk });
+      s += S.yazi(16, 40, 'engel yüksekliği: enerjinin 2 katı (düz alt çizgi: sıfır)', { boy: 13, renk: R.soluk });
       s += S.yazi(200, 384, 'kalınlık 2 kat → olasılık ≈ ' + tr(a.T / b.T) + ' kat az', { boy: 13, hiza: 'middle', renk: R.vurgu, kalin: true });
       return s;
     }
@@ -319,7 +321,7 @@
       const ek = S.eksen({ x: 56, y: 24, w: 324, h: 226 }, { x0: 298, x1: 1300, y0: 0, y1: 1 }, {
         xIsaret: [[298, '298'], [500, '500'], [700, '700'], [900, '900'], [1100, '1100'], [1300, '1300']],
         yIsaret: [[0, '%0'], [0.25, '%25'], [0.5, '%50'], [0.75, '%75'], [1, '%100']],
-        xAd: 'sıcak tarafın sıcaklığı (K)', yAd: 'en yüksek verim', yAdUzak: 46
+        xAd: 'sıcak tarafın sıcaklığı (K)', yAd: 'en yüksek verim', yAdUzak: 42
       });
       let s = '';
       /* alt ve üst alanlar */

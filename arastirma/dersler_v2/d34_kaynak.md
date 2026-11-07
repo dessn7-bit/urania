@@ -177,7 +177,7 @@ Kısaltmalar: NEB = https://en.wikipedia.org/wiki/Nebular_hypothesis ; HIS = htt
 ## Bölüm 12 — Dünya'nın suyu
 | İddia | Kaynak URL | Kaynaktaki ifade |
 |---|---|---|
-| [Ö] Yüzeyin büyük kısmı okyanus (%70,8) | d44 / https://wikiwand.com/en/ocean | "about 70.8% of Earth" [B] |
+| [Ö] Yüzeyin büyük kısmı okyanus (%70,8) | d44 / https://en.wikipedia.org/wiki/Ocean | "about 70.8% of Earth" [B] |
 | [B] Su küresi 1,4 × 10²¹ kg; Dünya 5,9722 × 10²⁴ kg | EF | "Total mass of hydrosphere (kg): 1.4 x 10²¹" ; "Mass (10²⁴ kg): 5.9722" |
 | [B] Suyun karasal gezegenlere ulaşması belirsiz | WAT | "the possible delivery of water to terrestrial planets" remain uncertain |
 | [B] Dünya suyunda her 10.000 molekülden ~3'ü döteryumlu; Oort kuyruklu yıldızları (~bir düzine) ~2 kat; Hartley 2 (Herschel 2011, Kuiper kökenli, Jüpiter rezonansı) Dünya'ya benzer; suca zengin göktaşları "broadly consistent" | SCI | "About three in every 10,000 water molecules contain deuterium" ; "a D/H ratio about twice that of terrestrial water" ; Hartley 2 mirrored Earth's seas ; "broadly consistent" |

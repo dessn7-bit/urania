@@ -59,12 +59,13 @@ test('Kepler: Jüpiter düğmesi P ≈ 11,9 yıl verir; rehber Merkür adımı u
   await expect(page.locator('.rehber-adim li[data-i="1"]')).toHaveClass(/yapildi/);
 });
 
-test('Gelgit: dördünde ölü gelgit, yeni Ay\'da kabarma', async ({ page }) => {
+test('Gelgit: dördünde küçük gelgit, yeni ayda büyük gelgit; ölçüm kutusunun adı rehberdeki gibi "Durum"', async ({ page }) => {
   await page.goto('/index.html#deney/gelgit');
-  await expect(page.locator('#ggDurum')).toHaveText('Yeni Ay: kabarma gelgiti');
+  await expect(page.locator('#ggDurum')).toHaveText('Yeni ay: büyük gelgit');
+  await expect(page.locator('#deneyKap dl.olcumler')).toContainText('Durum');
   await expect(page.locator('#ggOran')).toHaveText('0,46');
   await page.locator('.rh-uygula[data-i="1"]').click();
-  await expect(page.locator('#ggDurum')).toHaveText('Dördün: ölü gelgit');
+  await expect(page.locator('#ggDurum')).toHaveText('Dördün: küçük gelgit');
   await page.locator('.rh-uygula[data-i="4"]').click();
   await expect(page.locator('#ggGunes')).not.toBeChecked();
 });
@@ -122,4 +123,41 @@ test('Dar ekranda (320 px) yeni deneyler taşmaz', async ({ page }) => {
     const tasma = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
     expect(tasma, id).toBeLessThanOrEqual(0);
   }
+});
+
+/* Denetim 2026-10-30 (alan 2) düzeltmeleri */
+test('Kepler: Plüton (e = 0,2488, NASA Pluto Fact Sheet) en yakın noktası 29,659 AB, rehberdeki 29,7 ile uyuşur', async ({ page }) => {
+  await page.goto('/index.html#deney/kepler');
+  await page.locator('#kpOn button[data-i="6"]').click();
+  await expect(page.locator('#kpQ')).toContainText('29,659');
+});
+
+test('Tayf: çok küçük hızda kayma "−0,00000" yazmaz, değeri 10⁻⁶ ile verir', async ({ page }) => {
+  await page.goto('/index.html#deney/tayf');
+  const v = page.locator('#tyV');
+  await v.evaluate(g => { g.value = -0.02; g.dispatchEvent(new Event('input', { bubbles: true })); });
+  await expect(page.locator('#tyKayma')).toContainText('maviye yok denecek kadar az');
+  await expect(page.locator('#tyKayma')).toContainText('× 10⁻⁶');
+  await expect(page.locator('#tyKayma')).not.toContainText('0,00000');
+  await v.evaluate(g => { g.value = 0.4642; g.dispatchEvent(new Event('input', { bubbles: true })); });
+  await expect(page.locator('#tyKayma')).toContainText(' nm (z = ');
+});
+
+test('Geçiş: rehberin 7. adımı dolanımı tam 4 katına (1.461 gün) çıkarır', async ({ page }) => {
+  await page.goto('/index.html#deney/gecis');
+  await page.locator('.rh-uygula[data-i="6"]').click();
+  await expect(page.locator('#gcPCikti')).toHaveText('1.461,0 gün');
+  await expect(page.locator('#gcSure')).toContainText('20,79');
+  await expect(page.locator('#gcA')).toContainText('2,5198');
+});
+
+test('Hareketi azalt uygulama açıkken açılınca açık deney yeniden kurulur (zaman kaydırıcısı gelir)', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'no-preference' });
+  await page.goto('/index.html#deney/kepler');
+  await expect(page.locator('#kpA')).toBeVisible();
+  await expect(page.locator('#kpZaman')).toHaveCount(0);
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await expect(page.locator('#kpZaman')).toHaveCount(1);
+  await page.emulateMedia({ reducedMotion: 'no-preference' });
+  await expect(page.locator('#kpZaman')).toHaveCount(0);
 });

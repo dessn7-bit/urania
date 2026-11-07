@@ -1287,8 +1287,7 @@
    "terim": "Metal",
    "tanim": "Gökbilimde helyumdan ağır bütün elementlere metal denir; bir yıldızdaki oranlarına metallik (metalisite) denir. Gündelik anlamından çok daha geniştir.",
    "esanlam": [
-    "metallik",
-    "metalisite"
+    "metallik"
    ],
    "kaynak": [
     {
@@ -1296,6 +1295,14 @@
      "url": "https://en.wikipedia.org/wiki/Main_sequence",
      "alinti": "This is the abundance of heavier-than-helium elements present in the star. (metallicity)"
     }
+   ],
+   "yalniz": [
+    "d5",
+    "d6",
+    "d8",
+    "d46",
+    "d47",
+    "d57"
    ]
   },
   {
@@ -1883,7 +1890,7 @@
    "terim": "Lorentz çarpanı",
    "tanim": "Özel görelilikte zaman genişlemesinin büyüklüğünü veren katsayı (γ); cismin hızına ve ışık hızına bağlıdır.",
    "bicim": [
-    "lorentz"
+    "lorentz faktörü"
    ],
    "kaynak": [
     {
@@ -2079,6 +2086,25 @@
      "url": "https://en.wikipedia.org/wiki/Radio_galaxy"
     }
    ]
+  },
+  {
+   "terim": "Deniz Kulağı Bulutsusu",
+   "tanim": "Yay takımyıldızındaki büyük salma bulutsusu, Messier kataloğunda M8; içinde yıldızların doğduğu bir H II bölgesi barındırır. Orta kuzey enlemlerinden çıplak gözle sönükçe görülebilen iki yıldız oluşum bulutsusundan biridir.",
+   "esanlam": [
+    "Lagün Bulutsusu"
+   ],
+   "kaynak": [
+    {
+     "ad": "Wikipedia: Lagoon Nebula",
+     "url": "https://en.wikipedia.org/wiki/Lagoon_Nebula",
+     "alinti": "is a giant emission nebula with an H II region located in the constellation Sagittarius"
+    },
+    {
+     "ad": "Wikipedia: Lagoon Nebula",
+     "url": "https://en.wikipedia.org/wiki/Lagoon_Nebula",
+     "alinti": "one of only two star-forming nebulae faintly visible to the naked eye from mid-northern latitudes"
+    }
+   ]
   }
  ],
  "ayarlar": [
@@ -2176,6 +2202,134 @@
   {
    "terim": "CHNOPS",
    "buyuk": true
+  },
+  {
+   "terim": "Atarca",
+   "esanlam": [
+    "pulsar"
+   ]
+  },
+  {
+   "terim": "Anakol",
+   "esanlam": [
+    "ana dizi"
+   ]
+  },
+  {
+   "terim": "fantom enerji",
+   "esanlam": [
+    "hayalet enerji"
+   ]
+  },
+  {
+   "terim": "Sol",
+   "yalniz": [
+    "d36"
+   ],
+   "ozel": true
+  },
+  {
+   "terim": "ada",
+   "yalniz": [
+    "d52"
+   ]
+  },
+  {
+   "terim": "zar",
+   "yalniz": [
+    "d53",
+    "d55"
+   ]
+  },
+  {
+   "terim": "evre",
+   "yalniz": [
+    "d29"
+   ],
+   "haric": [
+    "evren",
+    "evrensel"
+   ]
+  },
+  {
+   "terim": "köşe",
+   "yalniz": [
+    "d29"
+   ],
+   "haric": [
+    "köşegen"
+   ]
+  },
+  {
+   "terim": "durak",
+   "yalniz": [
+    "d24"
+   ],
+   "haric": [
+    "durağan"
+   ]
+  },
+  {
+   "terim": "kuşak",
+   "yalniz": [
+    "d32"
+   ]
+  },
+  {
+   "terim": "MOND",
+   "yalniz": [
+    "d17",
+    "d50",
+    "d51"
+   ],
+   "buyuk": true
+  },
+  {
+   "terim": "RAW",
+   "buyuk": true
+  },
+  {
+   "terim": "ISO",
+   "yalniz": [
+    "d24"
+   ],
+   "buyuk": true
+  },
+  {
+   "terim": "orbital",
+   "haric": [
+    "orbitalradar"
+   ]
+  },
+  {
+   "terim": "Şişme",
+   "haric": [
+    "şişmesinden"
+   ]
+  },
+  {
+   "terim": "yok olma",
+   "yalniz": [
+    "d29",
+    "d32",
+    "d50"
+   ]
+  },
+  {
+   "terim": "bataklık",
+   "yalniz": [
+    "d53"
+   ]
+  },
+  {
+   "terim": "sıkılık",
+   "yalniz": [
+    "d45"
+   ]
+  },
+  {
+   "terim": "günberi",
+   "isaretleme": false
   }
  ]
 }

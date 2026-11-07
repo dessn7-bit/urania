@@ -50,7 +50,7 @@
      "sekil": "daire",
      "renk": "--parsomen",
      "ad": "Grafikteki krem nokta",
-     "ne": "Seçtiğin kare sayısı ve seçtiğin gökte yığının oranı."
+     "ne": "Seçtiğin kare sayısı ve seçtiğin gökte yığının sinyal-gürültü oranı."
     }
    ],
    "kontroller": [
@@ -58,13 +58,13 @@
      "sec": "#afOn",
      "tur": "dugme",
      "ad": "Hazır ayarlar",
-     "ne": "Telefon ana kamera (24 mm eşdeğeri, 16 sn), aynasız tam kare 24 mm f/2.8 (500 kuralının 20,8 sn'si), 50 mm f/1.8 (10 sn) ve Kutup Yıldızı çevresi (telefon, 30 sn × 100 kare, hizalamadan: yıldız izi)."
+     "ne": "Telefon ana kamera (24 mm eşdeğeri, 16 sn), aynasız tam kare 24 mm f/2,8 (500 kuralının 20,8 sn'si), 50 mm f/1,8 (10 sn) ve Kutup Yıldızı çevresi (telefon, 30 sn × 100 kare, hizalamadan: yıldız izi)."
     },
     {
      "sec": "#afKamera",
      "tur": "dugme",
      "ad": "Fotoğraf makinesi",
-     "ne": "Telefon (12 MP, 4000 piksel genişlik; 35 mm eşdeğeriyle hesaplanır) ya da tam kare (Nikon Z6III: 35,9 mm genişlikte 6048 piksel, piksel aralığı 5,94 µm)."
+     "ne": "Telefon (12 MP, 4.000 piksel genişlik; 35 mm eşdeğeriyle hesaplanır) ya da tam kare (Nikon Z6III: 35,9 mm genişlikte 6.048 piksel, piksel aralığı 5,94 µm)."
     },
     {
      "sec": "#afOdak",
@@ -158,10 +158,10 @@
     "neden": "Kayma hızı cos δ ile orantılı: cos 80° ≈ 0,174, yani saniyede yaklaşık 2,6″. Kuzeye bakarken güneye bakarken kullanabileceğinin yaklaşık 6 katı uzun poz verebilirsin."
    },
    {
-    "yap": "“Aynasız 24 mm f/2.8”e bas.",
+    "yap": "“Aynasız 24 mm f/2,8”e bas.",
     "tikla": "#afOn button[data-i=\"1\"]",
     "gozle": "Piksel ölçeği 51,0″; 500 kuralının 20,8 sn'si burada 6,1 piksel iz bırakıyor; NPF 11,5 sn diyor.",
-    "neden": "Aynı 24 mm ama 6048 piksellik tam kare sensörün pikseli gökte daha küçük açı tutar, bu yüzden aynı süre daha çok piksel kaydırır. Basit NPF kuralı (35 × N + 30 × p) / f: (35 × 2,8 + 30 × 5,94) / 24 ≈ 11,5 sn. Piksel ve diyaframı hesaba kattığı için 500 kuralından katıdır."
+    "neden": "Aynı 24 mm ama 6.048 piksellik tam kare sensörün pikseli gökte daha küçük açı tutar, bu yüzden aynı süre daha çok piksel kaydırır. Basit NPF kuralı (35 × N + 30 × p) / f: (35 × 2,8 + 30 × 5,94) / 24 ≈ 11,5 sn. Piksel ve diyaframı hesaba kattığı için 500 kuralından katıdır."
    },
    {
     "yap": "“50 mm”ye bas.",
@@ -191,7 +191,7 @@
     "ayar": {
      "#afDek": 0
     },
-    "gozle": "Yıldızın kayması 607 piksel: 4000 piksellik karenin yaklaşık yedide biri.",
+    "gozle": "Yıldızın kayması 607 piksel: 4.000 piksellik karenin yaklaşık yedide biri.",
     "neden": "Ekvatordaki yıldız 50 dakikada büyük çember üstünde 12,5° yol alır: 12,5 × 3600 / 74,4 ≈ 607 piksel. Aynı dizide Kutup Yıldızı'nın 7 piksellik kıvrımıyla karşılaştır."
    }
   ],
@@ -240,7 +240,7 @@
     "en_px": 4000,
     "boy_px": 3000,
     "npf": false,
-    "not": "Dersin varsayımı: 24 mm eşdeğeri, 4000 × 3000 piksel. en_mm = 43,27 × 0,8 (4:3 karede eşdeğer sensör eni); piksel genişliği de eşdeğer: 34,616 / 4000 mm."
+    "not": "Dersin varsayımı: 24 mm eşdeğeri, 4.000 × 3.000 piksel. en_mm = 43,27 × 0,8 (4:3 karede eşdeğer sensör eni); piksel genişliği de eşdeğer: 34,616 / 4.000 mm."
    },
    {
     "id": "tamkare",
@@ -249,7 +249,7 @@
     "en_px": 6048,
     "boy_px": 4032,
     "npf": true,
-    "not": "Nikon Z6III: 35,9 × 23,9 mm sensör, 6048 × 4032 piksel (Large); piksel aralığı 35,9 / 6048 mm ≈ 5,94 µm."
+    "not": "Nikon Z6III: 35,9 × 23,9 mm sensör, 6.048 × 4.032 piksel (Large); piksel aralığı 35,9 / 6.048 mm ≈ 5,94 µm."
    }
   ],
   "diyaframlar": [
@@ -269,10 +269,10 @@
     "dek": 0,
     "kare": 1,
     "izli": false,
-    "not": "16 sn: Google'ın gece modunda bir karenin üst sınırı. f/1.8 ve 24 mm: Galaxy S24 ana kamerası (GSMArena)."
+    "not": "16 sn: Google'ın gece modunda bir karenin üst sınırı. f/1,8 ve 24 mm: Galaxy S24 ana kamerası (GSMArena)."
    },
    {
-    "ad": "Aynasız 24 mm f/2.8",
+    "ad": "Aynasız 24 mm f/2,8",
     "kamera": "tamkare",
     "f": 24,
     "N": 2.8,
@@ -312,7 +312,7 @@
     "karanlik": 400,
     "kent": 3600
    },
-   "not": "Dersin (d24, Görüntü yığınlama) uydurma örneği: yöntemi göstermek için seçilmiş foton sayıları."
+   "not": "Dersin (6. ders, Görüntü yığınlama) uydurma örneği: yöntemi göstermek için seçilmiş foton sayıları."
   },
   "kaynaklar": [
    {

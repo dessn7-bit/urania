@@ -56,14 +56,23 @@ test('Uygulama gezilirken yüklenen her aynı kökenli dosya ASSETS\'te', async 
   await page.clock.install({ time: new Date('2026-10-27T21:00:00+03:00') });
   const rotalar = [
     ['gok', '#gkOzet p'], ['ders/d1', 'article.ders h1'], ['deney/kepler', '.sahne canvas'], ['hesap', '#b-hesap:not([hidden])'],
-    ['defter', '#dfListe'], ['defter/gorevler', '.bolum:not([hidden])'], ['tani', '.bolum:not([hidden])'], ['ar', '#arKanvas']
+    ['defter', '#dfListe'], ['defter/gorevler', '.bolum:not([hidden])'], ['tani', '.bolum:not([hidden])'], ['ar', '#arKanvas'],
+    ['haber', '.hb-gorsel img']   // A4-02: haber görselleri de gezilsin (ASSETS'te değil, ayrı görsel önbelleğinde; aşağıda)
   ];
   for (const [r, hazir] of rotalar) {
     await page.goto('/index.html#' + r);
     await expect(page.locator(hazir).first(), r).toBeAttached();
+    /* Haber görseli tembel yüklenir: ilki gerçekten gelene kadar bekle (yük altında networkidle erken düşebiliyor) */
+    if (r === 'haber') await expect.poll(() => page.locator(hazir).first().evaluate(x => x.complete && x.naturalWidth > 0), { timeout: 10000 }).toBe(true);
     await page.waitForLoadState('networkidle');
   }
   /* Gezinmenin gerçekten dosya yüklediğini doğrula (boş küme her şeyi geçirirdi) */
   ['index.html', 'stil.css', 'uygulama.js', 'cizim.js', 'veri/dersler.json', 'veri/yildizlar.json'].forEach(f => expect(yuklenen, f).toContain(f));
-  expect([...yuklenen].filter(u => !VARLIK.has(u)).sort()).toEqual([]);
+  /* Haber görselleri bilerek ASSETS dışında: sw.js onları sürümsüz 'urania-haber-gorsel' önbelleğine alır
+     (testler/haber_gorsel_onbellek.spec.js). Burada yalnız o desene uydukları denetlenir. */
+  const GORSEL_YOL = new RegExp(SW.match(/const GORSEL_YOL = \/(.+)\/;/)[1]);
+  const gorseller = [...yuklenen].filter(u => /^img\/haber\//.test(u));
+  expect(gorseller.length, 'haber görseli yüklendi').toBeGreaterThan(0);
+  gorseller.forEach(u => expect(GORSEL_YOL.test('/' + u), u).toBe(true));
+  expect([...yuklenen].filter(u => !VARLIK.has(u) && !gorseller.includes(u)).sort()).toEqual([]);
 });

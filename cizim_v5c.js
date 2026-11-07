@@ -160,7 +160,7 @@
       const ek = S.eksen({ x: 58, y: 44, w: 324, h: 218 }, { x0: 29, x1: 55, y0: 0, y1: 36 }, {
         xIsaret: [[30, '30'], [35, '35'], [40, '40'], [45, '45'], [50, '50'], [55, '55']],
         yIsaret: [[0, '0°'], [10, '10°'], [20, '20°'], [30, '30°']],
-        xAd: 'Güneş\'e ortalama uzaklık (AB)', yAd: 'eğiklik', yAdUzak: 46
+        xAd: 'Güneş\'e ortalama uzaklık (AB)', yAd: 'eğiklik', yAdUzak: 44
       });
       const X = ek.X, Y = ek.Y;
       let s = '';
@@ -366,7 +366,7 @@
       const R = S.R;
       const ek = S.eksen({ x: 46, y: 18, w: 336, h: 300 }, { x0: 0, x1: 1, y0: 0, y1: 50 }, {
         yIsaret: [[0, '0'], [10, '10'], [20, '20'], [30, '30'], [40, '40'], [50, '50']],
-        yAd: 'yükseklik (km)', yAdUzak: 34
+        yAd: 'yükseklik (km)', yAdUzak: 32
       });
       const X = ek.X, Y = ek.Y;
       let s = '';
@@ -413,11 +413,11 @@
     }
   });
 
-  /* d43 · bölüm 5: katmanlaşmış gezegenciğin kesiti ve göktaşı aileleri; düşüş sayıları 1.062 düşüşlük tablodan. Şematik. */
+  /* d43 · bölüm 5: katmanlaşmış gezegenciğin kesiti ve göktaşı aileleri; düşüş sayıları 1.102 gözlenmiş düşüşün ana türüne göre sınıflanmış 1.062'sinin tablosundan. Şematik. */
   C.ekle('d43-ana-cisim', {
     ders: 'd43', bolum: 5, oran: 1.04,
     baslik: 'Göktaşı aileleri: parçalanmış bir gezegenciğin dilimleri',
-    aciklama: 'Üstteki kesit bir zamanlar erimiş ve katmanlaşmış bir gezegenciktir: ağır demir-nikel merkeze çökerek çekirdeği, hafif kaya da çevresinde mantoyu ve kabuğu oluşturmuştur. Böyle bir cisim parçalanınca kabuğundan akondritler, çekirdeğinden demir göktaşları, çekirdekle manto arasındaki sınırdan taş-demirler, örneğin palasitler gelir. Çekirdekteki çapraz çizgiler, demir göktaşlarında görülen Widmanstätten desenini simgeler. Alttaki cisim hiç erimemiştir; içindeki küçük daireler kondrüllerdir ve bu cisimlerden kondritler gelir. Sayılar Haziran 2012\'ye kadar düşerken görülmüş 1.062 göktaşından: 915\'i, yani yaklaşık yüzde 86\'sı kondrit, 86\'sı yaklaşık yüzde 8 ile akondrit, 49\'u yüzde 4,6 ile demir, 11\'i yüzde 1 ile taş-demir. Çizim şematiktir, katmanların kalınlıkları ölçekli değildir.',
+    aciklama: 'Üstteki kesit bir zamanlar erimiş ve katmanlaşmış bir gezegenciktir: ağır demir-nikel merkeze çökerek çekirdeği, hafif kaya da çevresinde mantoyu ve kabuğu oluşturmuştur. Böyle bir cisim parçalanınca kabuğundan akondritler, çekirdeğinden demir göktaşları, çekirdekle manto arasındaki sınırdan taş-demirler, örneğin palasitler gelir. Çekirdekteki çapraz çizgiler, demir göktaşlarında görülen Widmanstätten desenini simgeler. Alttaki cisim hiç erimemiştir; içindeki küçük daireler kondrüllerdir ve bu cisimlerden kondritler gelir. Sayılar Haziran 2012\'ye kadar düşerken görülmüş 1.102 göktaşından ana türüne göre sınıflanabilen 1.062\'sinden: 915\'i, yani yaklaşık yüzde 86\'sı kondrit, 86\'sı yaklaşık yüzde 8 ile akondrit, 49\'u yüzde 4,6 ile demir, 11\'i yüzde 1 ile taş-demir. Çizim şematiktir, katmanların kalınlıkları ölçekli değildir.',
     kaynak: [KAYNAK.dusus, KAYNAK.widman],
     ciz(S) {
       const R = S.R, cx = 124, cy = 150, rnd = rastgele(1969);
@@ -457,7 +457,7 @@
       s += S.yazi(150, 326, 'kondrit: 915 düşüş, %86', { boy: 13, renk: R.metin, kalin: true });
       s += S.yazi(150, 344, 'küçük daireler: kondrüller', { boy: 13, renk: R.metin });
       s += S.yazi(150, 362, 'Güneş Sistemi\'nin en eski malzemesi', { boy: 13, renk: R.soluk });
-      s += S.yazi(392, 410, '1.062 gözlenmiş düşüş · şematik', { boy: 13, hiza: 'end', renk: R.soluk });
+      s += S.yazi(392, 410, '1.102 düşüşün sınıflı 1.062\'si · şematik', { boy: 13, hiza: 'end', renk: R.soluk });
       return s;
     }
   });
@@ -466,7 +466,7 @@
   C.ekle('d43-siklik', {
     ders: 'd43', bolum: 12, oran: 0.92,
     baslik: 'Büyüdükçe seyrekleşir: gökten gelenlerin enerjisi ve sıklığı',
-    aciklama: 'Yatay eksen açığa çıkan enerjidir, kiloton TNT cinsinden ve logaritmik: her çentik on kat değil bin kat demektir. Her satır bir sıklıktır ve aşağı indikçe olaylar seyrekleşir. Yaklaşık 5 kilotonluk havada patlamalar yılda bir kez olur; bu, Hiroşima bombasının üçte biri kadardır. Yaklaşık 20 metrelik Çelyabinsk taşı yaklaşık 500 kilotonla ortalama 60 yılda bir beklenir; kısa yatay çizgi başka tahminlerin 200 ile 500 kiloton arasında olduğunu gösterir. Tunguska ölçeğindeki olaylar 3 ile 30 megaton arasındadır ve 300 ile 1.000 yılda bir olur. Chicxulub\'u açan yaklaşık 10 kilometrelik cisim 10 üzeri 23 ile 10 üzeri 25 joule, yani 24 milyar ile 2,4 trilyon kiloton arası enerji taşıyordu; böyle bir olay insanlık tarihinde hiç yaşanmadı. İlk üç olayda cisim havada patlar, sonuncusunda yere çarpar.',
+    aciklama: 'Yatay eksen açığa çıkan enerjidir, kiloton TNT cinsinden ve logaritmik: her çentik on kat değil bin kat demektir. Her satır bir sıklıktır ve aşağı indikçe olaylar seyrekleşir. Yaklaşık 5 kilotonluk havada patlamalar yılda bir kez olur; bu, Hiroşima bombasının üçte biri kadardır. Yaklaşık 20 metrelik Çelyabinsk taşı yaklaşık 500 kilotonla ortalama 60 yılda bir beklenir; kısa yatay çizgi başka tahminlerin 200 ile 470 kiloton arasında olduğunu gösterir. Tunguska ölçeğindeki olaylar 3 ile 30 megaton arasındadır ve 300 ile 1.000 yılda bir olur. Chicxulub\'u açan yaklaşık 10 kilometrelik cisim 10 üzeri 23 ile 10 üzeri 25 joule, yani 24 milyar ile 2,4 trilyon kiloton arası enerji taşıyordu; böyle bir olay insanlık tarihinde hiç yaşanmadı. İlk üç olayda cisim havada patlar, sonuncusunda yere çarpar.',
     kaynak: [KAYNAK.celyabinsk, KAYNAK.tunguska, KAYNAK.chicxulub, KAYNAK.meteorNasa],
     ciz(S) {
       const R = S.R, KT = 4.18e12;
@@ -493,7 +493,7 @@
       };
       s += satir(64, 4, 6, 'havada patlama ≈5 kt', 'yılda bir', '');
       /* Çelyabinsk: ≈500 kt, başka tahminler 200–470 kt */
-      s += S.cizgi(X(200), 128, X(500), 128, { renk: R.metin, kalin: 1.4 }) + S.cizgi(X(200), 123, X(200), 133, { renk: R.metin, kalin: 1.4 });
+      s += S.cizgi(X(200), 128, X(470), 128, { renk: R.metin, kalin: 1.4 }) + S.cizgi(X(200), 123, X(200), 133, { renk: R.metin, kalin: 1.4 });
       s += satir(128, 450, 550, 'Çelyabinsk ≈20 m', '60 yılda bir', '≈500 kt');
       s += satir(192, 3000, 30000, 'Tunguska', '300–1.000 yılda bir', '3–30 Mt');
       s += satir(256, 1e23 / KT, 1e25 / KT, 'Chicxulub ≈10 km', 'insanlık hiç görmedi', '10²³–10²⁵ J', 'yer');

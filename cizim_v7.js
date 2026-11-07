@@ -142,7 +142,7 @@
       /* yakın plan: doğrusal, birim 10⁻¹⁰ */
       const X2 = v => 40 + v / 6 * 340, ax = 362, yo = 266, yc = 290;
       s += S.yol(`M${X(L10(3e-10))},${yl + 8} L${X(L10(3e-10))},${ya} M${X(L10(3e-10))},${ya + 26} L${X(L10(3e-10))},${226}`, { renk: R.soluk, kalin: 1, kesik: '2 3' });
-      s += S.zeminliYazi(X(L10(3e-10)) + 8, 238, 'lityum-7 yakından: doğrusal, birim 10⁻¹⁰', { boy: 13, renk: R.soluk });
+      s += S.zeminliYazi(392, 238, 'lityum-7 yakından: doğrusal, birim 10⁻¹⁰', { boy: 13, hiza: 'end', renk: R.soluk });   // levha viewBox içinde kalsın (sağ kenar 397)
       s += S.cizgi(40, ax, 380, ax, { renk: R.soluk, kalin: 1 });
       for (let v = 0; v <= 6; v++) s += S.cizgi(X2(v), ax, X2(v), ax + 5, { renk: R.soluk, kalin: 1 }) + S.yazi(X2(v), ax + 20, String(v), { boy: 13, hiza: 'middle', renk: R.soluk });
       const biyik = (v, e, y) => S.cizgi(X2(v - e), y, X2(v + e), y, { renk: R.metin, kalin: 1.4 }) + S.cizgi(X2(v - e), y - 5, X2(v - e), y + 5, { renk: R.metin, kalin: 1.4 }) + S.cizgi(X2(v + e), y - 5, X2(v + e), y + 5, { renk: R.metin, kalin: 1.4 });
@@ -310,7 +310,7 @@
   C.ekle('d58-guc-tayfi', {
     ders: 'd58', bolum: 8, oran: 0.93,
     baslik: 'Plazmadaki sesin izi: Planck 2018 güç tayfı ve akustik zirveler',
-    aciklama: "Yatay eksen lekelerin gökteki boyutudur ve sağa doğru küçülür: üstteki ölçek dereceyi, alttaki ölçek gökbilimcilerin kullandığı sıra sayısını gösterir, kabaca 180 derece bölü bu sayı. Dikey eksen o boyuttaki sıcaklık farklarının gücüdür, mikrokelvin karesi cinsinden. Noktalar Planck uydusunun 2018 ölçümleridir, yaklaşık 50'den 2500'e gruplanmış; çizgi altı parametreli ΛCDM modelinin en iyi uyumudur. Belirsizlik çubukları çoğu yerde noktadan küçüktür. En güçlü tepe, birinci akustik zirve, sıra sayısı 220 civarında, yani yaklaşık 1 derecelik lekelerdedir ve uzayın eğriliğini söyler. İkinci zirve 537, üçüncüsü 814 civarındadır; ikincisinin üçüncüye göre alçaklığı sıradan maddenin, üçüncüsü karanlık maddenin miktarını ele verir. Sağa doğru zirveler Silk sönümüyle zayıflar. Zirvelerin varlığı ve konumları gözlemle kesinleşmiştir.",
+    aciklama: "Yatay eksen lekelerin gökteki boyutudur ve sağa doğru küçülür: üstteki ölçek dereceyi, alttaki ölçek gökbilimcilerin kullandığı sıra sayısını gösterir, kabaca 180 derece bölü bu sayı. Dikey eksen o boyuttaki sıcaklık farklarının gücüdür, mikrokelvin karesi cinsinden. Noktalar Planck uydusunun 2018 ölçümleridir, yaklaşık 50'den 2500'e gruplanmış; çizgi altı parametreli ΛCDM modelinin en iyi uyumudur. Belirsizlik çubukları çoğu yerde noktadan küçüktür. En güçlü tepe, birinci akustik zirve, sıra sayısı 220 civarında, yani yaklaşık 1 derecelik lekelerdedir ve uzayın eğriliğini söyler. İkinci zirve 537, üçüncüsü 814 civarındadır; tek ve çift sıradaki zirvelerin oranı, yani ikincinin komşularına göre alçaklığı, sıradan maddenin, üçüncüsü karanlık maddenin miktarını ele verir. Sağa doğru zirveler Silk sönümüyle zayıflar. Zirvelerin varlığı ve konumları gözlemle kesinleşmiştir.",
     kaynak: [KAYNAK.pla, KAYNAK.plaTeori, KAYNAK.planck18, KAYNAK.cmbWiki, KAYNAK.silk],
     ciz(S) {
       const R = S.R;

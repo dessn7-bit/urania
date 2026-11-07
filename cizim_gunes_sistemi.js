@@ -303,7 +303,7 @@
   C.ekle('d10-evreler', {
     ders: 'd10', bolum: 0, oran: 1.04,
     baslik: 'Ay\'ın evreleri: üstten ve Dünya\'dan',
-    aciklama: 'Üstte Dünya ile Ay\'ın yörüngesini kuzeyden bakarak görüyorsun; Güneş ışığı sağdan geliyor ve Ay\'ın hep Güneş\'e bakan yarısı aydınlık. Ay saat yönünün tersine dolanır. Alttaki listede aynı sekiz konumun İstanbul gibi kuzey yarımküredeki bir yerden nasıl göründüğü var: büyürken sağ yanı, küçülürken sol yanı aydınlıktır. Çizim ölçeksizdir.',
+    aciklama: 'Üstte Dünya ile Ay\'ın yörüngesini kuzeyden bakarak görüyorsun; Güneş ışığı sağdan geliyor ve Ay\'ın hep Güneş\'e bakan yarısı aydınlık. Ay saat yönünün tersine dolanır. Alttaki listede aynı sekiz konumun İstanbul gibi kuzey yarım küredeki bir yerden nasıl göründüğü var: büyürken sağ yanı, küçülürken sol yanı aydınlıktır. Çizim ölçeksizdir.',
     kaynak: [{ ad: 'NASA Science – Moon Phases', url: 'https://science.nasa.gov/moon/moon-phases/' },
       { ad: 'Wikipedia – Lunar phase', url: 'https://en.wikipedia.org/wiki/Lunar_phase' }],
     ciz(S) {
@@ -325,7 +325,7 @@
       }
       /* Dünya'dan görünüş */
       s += S.cizgi(10, 266, 390, 266, { renk: R.cizgi, kalin: 1 });
-      s += S.yazi(10, 288, 'Dünya\'dan görünüşü (kuzey yarımküre)', { boy: 14, kalin: true });
+      s += S.yazi(10, 288, 'Dünya\'dan görünüşü (kuzey yarım küre)', { boy: 14, kalin: true });
       for (let k = 0; k < 8; k++) {
         const kol = k < 4 ? 0 : 1, sat = k % 4, x = 22 + kol * 196, y = 314 + sat * 26;
         s += evreSimge(S, x, y, 10, k * 45);

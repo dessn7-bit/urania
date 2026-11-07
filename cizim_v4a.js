@@ -107,7 +107,7 @@
       const ek = S.eksen({ x: 62, y: 34, w: 318, h: 130 }, { x0: -1.5, x1: 1.5, y0: 0, y1: 800 }, {
         xIsaret: [[-1.5, '−1,5'], [-1, '−1'], [-0.5, '−0,5'], [0, '0'], [0.5, '0,5'], [1, '1'], [1.5, '1,5']],
         yIsaret: [[0, '0'], [200, '200'], [400, '400'], [600, '600'], [800, '800']],
-        xAd: 'yansıma noktası ortadan kaç mm uzakta', yAd: 'fazladan yol, nm', yAdUzak: 50
+        xAd: 'yansıma noktası ortadan kaç mm uzakta', yAd: 'fazladan yol, nm', yAdUzak: 48
       });
       let s = ek.svg;
       const d1 = fazlaYol(1);
@@ -160,7 +160,7 @@
       let s = '';
       /* eksenler */
       s += S.ok(34, 292, 226, 292, { renk: R.soluk, kalin: 1.2, boy: 7 }) + S.yazi(130, 312, 'zaman', { boy: 13, hiza: 'middle', renk: R.soluk });
-      s += S.ok(16, 262, 16, 60, { renk: R.soluk, kalin: 1.2, boy: 7 }) + S.yazi(12, 160, 'uzay', { boy: 13, hiza: 'middle', renk: R.soluk, yan: -90 });
+      s += S.ok(16, 262, 16, 60, { renk: R.soluk, kalin: 1.2, boy: 7 }) + S.yazi(14, 160, 'uzay', { boy: 13, hiza: 'middle', renk: R.soluk, yan: -90 });
       /* sol: en basit diyagram */
       const V1 = [128, 108], V2 = [128, 212];
       s += S.yazi(128, 22, 'en basit: 2 köşe', { boy: 14, hiza: 'middle', renk: R.metin, kalin: true });
@@ -208,7 +208,7 @@
   C.ekle('d31-baglanma-egrisi', {
     ders: 'd31', bolum: 4, oran: 0.82,
     baslik: 'Bağlanma enerjisi eğrisi ve demir tepesi',
-    aciklama: 'Yatay eksen kütle numarası, yani proton ve nötron sayısının toplamı; dikey eksen nükleon başına bağlanma enerjisi, milyon elektronvolt cinsinden. Her kütle numarası için en sıkı bağlı çekirdeğin değeri 2020 atom kütlesi değerlendirmesinden, AME2020\'den alındı. Eğri döteryumdaki 1,11\'den hızla yükselir; helyum-4, 7,07 ile komşularından belirgin biçimde yüksektir. En yüksek nokta nikel-62 ile demir-56\'dır, ikisi de yaklaşık 8,79. Sonra eğri yavaşça iner ve uranyum-238\'de 7,57\'ye düşer. Hafif çekirdekleri birleştiren füzyon da ağır bir çekirdeği bölen fisyon da tepeye doğru gider; bu yüzden ikisi de enerji verir.',
+    aciklama: 'Yatay eksen kütle numarası, yani proton ve nötron sayısının toplamı; dikey eksen nükleon başına bağlanma enerjisi, milyon elektronvolt cinsinden. Her kütle numarası için en sıkı bağlı çekirdeğin değeri 2020 atom kütlesi değerlendirmesinden, AME2020\'den alındı. Eğri döteryumdaki 1,11\'den hızla yükselir; helyum-4, 7,07 ile komşularından belirgin biçimde yüksektir. En yüksek nokta nikel-62\'dir; demir-58 ve demir-56 hemen ardından gelir, üçü de yaklaşık 8,79. Sonra eğri yavaşça iner ve uranyum-238\'de 7,57\'ye düşer. Hafif çekirdekleri birleştiren füzyon da ağır bir çekirdeği bölen fisyon da tepeye doğru gider; bu yüzden ikisi de enerji verir.',
     kaynak: [KAYNAK.ame2020, KAYNAK.hyper, KAYNAK.nikel62],
     ciz(S) {
       const R = S.R;

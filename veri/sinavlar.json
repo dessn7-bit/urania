@@ -175,7 +175,7 @@
     "soru": "Büyük Kepçe neden IAU'nun 88 takımyıldızı arasında yer almaz?",
     "secenekler": [
      "Çünkü Büyük Kepçe bir asterizmdir: Büyük Ayı takımyıldızının en parlak yedi yıldızından oluşan, resmî sınırı olmayan bir desendir",
-     "Çünkü Büyük Kepçe yalnızca güney yarımküreden görülür",
+     "Çünkü Büyük Kepçe yalnızca güney yarım küreden görülür",
      "Çünkü Büyük Kepçe'nin yıldızları 1922'den sonra keşfedildi",
      "Çünkü IAU Büyük Kepçe'yi Küçük Ayı ile birleştirdi"
     ],
@@ -412,12 +412,12 @@
    },
    {
     "id": "d22-1",
-    "soru": "İstanbul'da (yaklaşık 28,96° D) Türkiye Saati UTC+3 iken ortalama Güneş meridyenden yaklaşık saat kaçta geçer ve neden?",
+    "soru": "İstanbul'da (yaklaşık 28,96° D) Türkiye Saati UTC + 3 iken ortalama Güneş meridyenden yaklaşık saat kaçta geçer ve neden?",
     "secenekler": [
      "Tam 12:00'de, çünkü saat dilimleri her kentin öğlesine göre ayarlanır",
      "Yaklaşık 13:04'te, çünkü İstanbul'un yerel ortalama zamanı UTC'den yalnızca yaklaşık 1 sa 56 dk ileride, saat ise 3 saat ileride",
      "Yaklaşık 11:04'te, çünkü İstanbul 45° meridyeninin doğusundadır",
-     "Yaklaşık 14:00'te, çünkü yaz saati her yıl Mart'ta bir saat ileri alınır"
+     "Yaklaşık 14:00'te, çünkü yaz saati her yıl martta bir saat ileri alınır"
     ],
     "dogru": 1,
     "aciklama": "Derse göre her derece boylam 4 dakikadır: 28,955° × 4 dk ≈ 1 sa 55 dk 49 sn. Saat UTC'den 3 saat ileri olduğundan ortalama öğle 12:00 + 3 sa − 1 sa 55,8 dk ≈ 13:04 olur. timeanddate'in Haziran 2025 tablosunda zaman denkleminin sıfır olduğu 13 Haziran'da Güneş'in geçişi 13:04.",
@@ -434,13 +434,13 @@
      "Ay'ın kütleçekimi ve presesyon"
     ],
     "dogru": 1,
-    "aciklama": "Derse göre zaman denklemi iki dalganın toplamıdır: yörünge basıklığından gelen yaklaşık 7,66 dakikalık yıllık bileşen ve eksen eğikliğinden gelen yaklaşık 9,87 dakikalık yarım yıllık bileşen. İkisi birlikte Kasım başında yaklaşık +16 dk 33 sn, Şubat ortasında yaklaşık −14 dk 6 sn verir.",
+    "aciklama": "Derse göre zaman denklemi iki dalganın toplamıdır: yörünge basıklığından gelen yaklaşık 7,66 dakikalık yıllık bileşen ve eksen eğikliğinden gelen yaklaşık 9,87 dakikalık yarım yıllık bileşen. İkisi birlikte kasım başında yaklaşık +16 dk 33 sn, şubat ortasında yaklaşık −14 dk 6 sn verir.",
     "ders": "d22",
     "bolum": 1
    },
    {
     "id": "d22-3",
-    "soru": "Ağırlıklar ve Ölçüler Genel Konferansı'nın (CGPM) 15 Ekim 2026'daki 5 numaralı kararı artık saniye için ne öngörüyor?",
+    "soru": "Ağırlıklar ve Ölçüler Genel Konferansının (CGPM) 15 Ekim 2026'daki 5 numaralı kararı artık saniye için ne öngörüyor?",
     "secenekler": [
      "Her yıl sonunda bir artık saniye eklenmesini",
      "Artık saniyelerin 2100'e kadar sürmesini",
@@ -459,7 +459,7 @@
      "Hicri takvimi tamamen yasakladı",
      "Ay ve günleri ilk kez Gregoryen takvime uydurdu; 13 gün atlandı",
      "Yıl sayımını değiştirdi: 31 Kânunuevvel 1341'in ertesi günü 1 Ocak 1926 oldu; Hicri takvim özel durumlarda kaldı",
-     "Türkiye'yi UTC+3 saat dilimine geçirdi"
+     "Türkiye'yi UTC + 3 saat dilimine geçirdi"
     ],
     "dogru": 2,
     "aciklama": "Derse göre ay-gün eşitlemesi 1917'de 13 gün atlanarak yapılmıştı. 698 sayılı yasa ise uluslararası takvim mebdeini kabul etti: 1341 yılı Kânunuevvel'inin 31. gününü izleyen gün 1 Ocak 1926'dır. Üçüncü madde Hicri kameri takvimin özel durumlarda kullanılmasını sürdürdü ve kameri ay başlarını rasathaneye bıraktı.",
@@ -713,7 +713,7 @@
      "İkisi aynı fırtınadır; leke 360 yıldır kesintisiz izleniyor",
      "Kalıcı Leke 1713'ten sonra kayboldu; bugünkü leke 1831'de kaydedildi, yani 190 yaşından büyük ama Cassini'nin lekesi değil",
      "Kalıcı Leke Satürn'deydi, Jüpiter'de değil",
-     "Büyük Kırmızı Leke 1979'da Voyager'lar geçerken oluştu"
+     "Büyük Kırmızı Leke 1979'da Voyagerlar geçerken oluştu"
     ],
     "dogru": 1,
     "aciklama": "Derse göre Sánchez-Lavega ve ekibi (Geophysical Research Letters, Haziran 2024) bugünkü lekenin Kalıcı Leke olmasını 'pek olası' bulmadı: Kalıcı Leke 1713'e kadar izlenip kayboldu, aynı enlemde yeni bir leke 1831'de kaydedildi. Leke 1879'da ~39.000 km iken bugün ~14.000 km'dir.",
@@ -726,7 +726,7 @@
     "secenekler": [
      "Güneş'e çok yaklaşıp buzları kaynadığı için",
      "Bir asteroitle çarpıştığı için",
-     "Temmuz 1992'de Jüpiter'e Roche sınırının içinden geçtiği ve gelgit kuvveti onu bir arada tutan kendi çekiminden büyük olduğu için",
+     "Temmuz 1992'de Jüpiter'in Roche sınırının içinden geçtiği ve gelgit kuvveti onu bir arada tutan kendi çekiminden büyük olduğu için",
      "Jüpiter'in manyetik alanı onu elektrikle parçaladığı için"
     ],
     "dogru": 2,
@@ -828,7 +828,7 @@
      "Uranüs'ün halkalarının elmastan yapıldığını"
     ],
     "dogru": 2,
-    "aciklama": "Derse göre 2017'de polistiren, 2022'de PET plastiği lazerle şoklanıp X-ışınıyla izlendiğinde birkaç nanometrelik elmaslar oluştu. Bu, benzer koşullarda karbonun elmasa dönüşebildiğini gösterir; gezegenlerin içinde doğrudan ölçülmedi.",
+    "aciklama": "Derse göre 2017'de polistiren, 2022'de PET plastiği lazerle şoklanıp X ışınıyla izlendiğinde birkaç nanometrelik elmaslar oluştu. Bu, benzer koşullarda karbonun elmasa dönüşebildiğini gösterir; gezegenlerin içinde doğrudan ölçülmedi.",
     "ders": "d39",
     "bolum": 5
    },
@@ -870,7 +870,7 @@
      "Io'nun buz kabuğunu kalınlaştırır"
     ],
     "dogru": 0,
-    "aciklama": "Derse göre rezonans yörüngeleri hafifçe eliptik kalmaya zorlar; Io Jüpiter'e yaklaşıp uzaklaştıkça sıkışıp gevşer ve bu gelgit ısınması volkanlarını besler. Jüpiter'in Io'daki gelgit ivmesi, Ay'ın Dünya'dakinin yaklaşık 5600 katıdır.",
+    "aciklama": "Derse göre rezonans yörüngeleri hafifçe eliptik kalmaya zorlar; Io Jüpiter'e yaklaşıp uzaklaştıkça sıkışıp gevşer ve bu gelgit ısınması volkanlarını besler. Jüpiter'in Io'daki gelgit ivmesi, Ay'ın Dünya'dakinin yaklaşık 5.600 katıdır.",
     "ders": "d40",
     "bolum": 2
    },
@@ -893,7 +893,7 @@
     "soru": "Petricca ve arkadaşlarının 2025 çalışması Titan'ın içi hakkında ne öne sürdü?",
     "secenekler": [
      "Titan'ın tamamen kaya olduğunu",
-     "Titan'ın metan okyanusunun yüzeyin 1000 km altında olduğunu",
+     "Titan'ın metan okyanusunun yüzeyin 1.000 km altında olduğunu",
      "Küresel bir su okyanusu yerine kalın buzun altında çamursu bir katman ve su cepleri bulunduğunu",
      "Titan'ın içinin Io gibi erimiş kayadan oluştuğunu"
     ],
@@ -1008,7 +1008,7 @@
     "secenekler": [
      "Astronotlarda uzun süreli ağırlıksızlığın yol açtığı kemik kaybı",
      "Yerdurgun uyduların yakıtı bitince mezarlık yörüngesine çıkarılması",
-     "Yörüngedeki çarpışmaların ürettiği parçaların yeni çarpışmalara yol açarak zincirleme çoğalması; Kessler ve Cour-Palais'in 1978'de hesapladığı çöp kuşağı tehlikesi",
+     "Yörüngedeki çarpışmaların ürettiği parçaların yeni çarpışmalara yol açarak zincirleme çoğalması; Kessler ve Cour-Palais'nin 1978'de hesapladığı çöp kuşağı tehlikesi",
      "Roketlerin atmosferden geçerken sürtünmeyle ısınıp parçalanması"
     ],
     "dogru": 2,
@@ -1020,7 +1020,7 @@
     "id": "d41-1",
     "soru": "New Horizons, Plüton'daki Sputnik Planitia ovasında tek bir krater bile göremedi. Bu en iyi nasıl açıklanır?",
     "secenekler": [
-     "Plüton'a hiç gök taşı çarpmadığı için",
+     "Plüton'a hiç göktaşı çarpmadığı için",
      "Ovanın azot buzu yavaş bir konveksiyonla sürekli yenilendiği ve yüzeyin çok genç olduğu için",
      "New Horizons ovayı çok uzaktan, kraterleri seçemeyecek bir çözünürlükle görüntülediği için",
      "Kraterler kalın bir atmosferin altında gizlendiği için"
@@ -1060,7 +1060,7 @@
    },
    {
     "id": "d41-4",
-    "soru": "Rubin Gözlemevi'nin bulduğu 2026 ED138'in çapı neden 600 ile 1.500 km gibi geniş bir aralıkta veriliyor?",
+    "soru": "Rubin Gözlemevinin bulduğu 2026 ED138'in çapı neden 600 ile 1.500 km gibi geniş bir aralıkta veriliyor?",
     "secenekler": [
      "Cisim düzensiz biçimli olduğu için en kısa ve en uzun ekseni verilmiş",
      "Uzaklığı bilinmediği için",
@@ -1120,7 +1120,7 @@
     "secenekler": [
      "Güneş'e yaklaşırken tamamen parçalandığı için",
      "Tahminler parlaklaşma üssünü (n) gerçekçi olmayan yükseklikte, 4 civarında kabul ettiği; kuyruklu yıldız ise sıradan bir hızla (n ≈ 2,5) parladığı için",
-     "Dünya'nın öbür yarıküresinden görüldüğü için",
+     "Dünya'nın öbür yarım küresinden görüldüğü için",
      "Ay ışığı onu gölgede bıraktığı için"
     ],
     "dogru": 1,
@@ -1188,7 +1188,7 @@
   "yildizlar": [
    {
     "id": "yildizlar-01",
-    "soru": "Bir güneş lekesinin umbrası yaklaşık 3600 K, çevresindeki fotosfer yaklaşık 5780 K. Umbranın her metrekaresi, çevresindeki fotosferin yaklaşık yüzde kaçı kadar ışık saçar?",
+    "soru": "Bir güneş lekesinin umbrası yaklaşık 3.600 K, çevresindeki fotosfer yaklaşık 5.780 K. Umbranın her metrekaresi, çevresindeki fotosferin yaklaşık yüzde kaçı kadar ışık saçar?",
     "secenekler": [
      "Yaklaşık %62'si",
      "Yaklaşık %15'i",
@@ -1196,7 +1196,7 @@
      "Yaklaşık %1'i"
     ],
     "dogru": 1,
-    "aciklama": "Stefan-Boltzmann yasasına göre birim alandan yayılan güç sıcaklığın dördüncü kuvvetiyle orantılıdır: 3600 ÷ 5780 ≈ 0,623 ve 0,623⁴ ≈ 0,15. Dersteki örnekte de umbra çevresinin %7 ile %37'si kadar ışık saçar; leke gerçekte parlaktır, yalnızca çevresine göre sönüktür.",
+    "aciklama": "Stefan-Boltzmann yasasına göre birim alandan yayılan güç sıcaklığın dördüncü kuvvetiyle orantılıdır: 3.600 ÷ 5.780 ≈ 0,623 ve 0,623⁴ ≈ 0,15. Dersteki örnekte de umbra çevresinin %7 ile %37'si kadar ışık saçar; leke gerçekte parlaktır, yalnızca çevresine göre sönüktür.",
     "ders": "d4",
     "bolum": 6
    },
@@ -1531,7 +1531,7 @@
     "soru": "Kapteyn'in 1922 modeli Güneş'i galaksinin merkezine yaklaşık 2.000 ışık yılı uzağa koydu. Bu yanılgının asıl nedeni neydi?",
     "secenekler": [
      "Yıldızlararası tozun ışığı söndürdüğü bilinmiyordu; düzlem boyunca her yönde görüş aynı uzaklıkta kesildiği için Güneş ortada sanıldı",
-     "Kapteyn yalnız güney yarımküreden gözlem yapabiliyordu",
+     "Kapteyn yalnız güney yarım küreden gözlem yapabiliyordu",
      "O yıllarda teleskoplar yıldızları ayırt edemiyordu",
      "Kapteyn yıldızların hareketlerini hesaba katmayı unuttu"
     ],
@@ -1542,10 +1542,10 @@
    },
    {
     "id": "d47-2",
-    "soru": "Kızılötesi taramalar Kalkan–Erboğa kolunda beklenenden yaklaşık yüzde 30 fazla kırmızı dev bulurken Yay–Karina kolunda fazlalık bulmadı. Bundan ne sonuç çıkarıldı?",
+    "soru": "Kızılötesi taramalar Kalkan–Erboğa Kolu'nda beklenenden yaklaşık yüzde 30 fazla kırmızı dev bulurken Yay–Karina Kolu'nda fazlalık bulmadı. Bundan ne sonuç çıkarıldı?",
     "secenekler": [
      "Samanyolu'nun hiç sarmal kolu yoktur",
-     "Yay–Karina kolu yakın zamanda yok olmuştur",
+     "Yay–Karina Kolu yakın zamanda yok olmuştur",
      "Yaşlı yıldızlarda yalnız iki ana kol (Kahraman ve Kalkan–Erboğa) belirgindir; gaz ve genç yıldızlar ise dört kola uyar",
      "Kırmızı devler yalnız galaksinin merkezinde bulunur"
     ],
@@ -1631,7 +1631,7 @@
      "Evet, şehir merkezinden bile kolayca",
      "Hayır; çok karanlık gökte bile dürbünün sınırı ~10,8 kadir, 3C 273 ondan ~2 kadir (yaklaşık 7 kat) sönük; ~150 mm'lik bir teleskop gerekir",
      "Evet, ama yalnızca ufkun altındayken",
-     "Hayır, çünkü 3C 273 güney yarıküresinden hiç yükselmez"
+     "Hayır, çünkü 3C 273 güney yarım küresinden hiç yükselmez"
     ],
     "dogru": 1,
     "aciklama": "Derse göre 3C 273 İstanbul'da meridyende ~51°'ye yükselir, ama 12,9 − 10,8 = 2,1 kadir, yani 10^(0,4 × 2,1) ≈ 6,9 kat sönüktür. Wikipedia 150 mm'lik amatör teleskopla görülebileceğini yazar.",
@@ -1644,7 +1644,7 @@
     "secenekler": [
      "Andromeda'nın parlaklığından yıldız sayısını hesaplayarak",
      "Samanyolu ile Andromeda'nın Büyük Patlama'dan bu yana uzaklaşıp geri dönerek bugünkü uzaklık ve yaklaşma hızına ulaşması için gereken kütleyi hesaplayarak",
-     "Yerel Grup'taki sıcak gazın X-ışınlarını ölçerek",
+     "Yerel Grup'taki sıcak gazın X ışınlarını ölçerek",
      "Arka plan ışımasındaki Sunyaev–Zeldovich gölgesini ölçerek"
     ],
     "dogru": 1,
@@ -1799,12 +1799,12 @@
     "soru": "Mermi Kümesi neden karanlık madde için güçlü bir kanıt sayılır?",
     "secenekler": [
      "Kümede karanlık madde parçacıkları ilk kez doğrudan yakalandı",
-     "Karanlık maddenin kendisi X-ışınlarıyla görüntülendi",
-     "Mercekle ölçülen kütlenin çoğu, X-ışınıyla görülen gazdan ayrı yerde duruyor",
+     "Karanlık maddenin kendisi X ışınlarıyla görüntülendi",
+     "Mercekle ölçülen kütlenin çoğu, X ışınıyla görülen gazdan ayrı yerde duruyor",
      "Kümedeki yıldızların hepsi çarpışıp söndü"
     ],
     "dogru": 2,
-    "aciklama": "Derse göre çarpışan iki kümede sıcak gaz X-ışınlarıyla görüldü ve sürüklenmeyle yavaşladı; toplam kütlenin yeri ise kütleçekimsel mercek etkisinden ölçüldü. Karanlık madde yavaşlamadığı için kütlenin çoğu gazdan ayrı duruyor.",
+    "aciklama": "Derse göre çarpışan iki kümede sıcak gaz X ışınlarıyla görüldü ve sürüklenmeyle yavaşladı; toplam kütlenin yeri ise kütleçekimsel mercek etkisinden ölçüldü. Karanlık madde yavaşlamadığı için kütlenin çoğu gazdan ayrı duruyor.",
     "ders": "d17",
     "bolum": 7
    },
@@ -1814,7 +1814,7 @@
     "secenekler": [
      "Çünkü stadionun bugünkü uzunluğu kesin bilinmiyor ve tahminler yaklaşık 155 ile 185 metre arasında değişiyor",
      "Çünkü Eratosthenes açıyı ölçmeyi unuttu ve sonucu tahmin etti",
-     "Çünkü Syene'de yaz gündönümünde de uzun bir gölge oluşuyordu",
+     "Çünkü Syene'de yaz gün dönümünde de uzun bir gölge oluşuyordu",
      "Çünkü Eratosthenes Dünya'nın düz olduğunu varsayıyordu"
     ],
     "dogru": 0,
@@ -1884,7 +1884,7 @@
     "secenekler": [
      "Galakside hiç toz bulunmadığı anlaşıldı",
      "Işıma yalnızca Samanyolu düzleminden geliyordu",
-     "Işıma her yönden çok düzgün geliyor, saçılmanın beklenen kutuplanmasını göstermiyor ve tayfı farklı sıcaklıktaki toz topaklarının toplamıyla elde edilemeyecek kadar ideal bir kara cisim",
+     "Işıma her yönden çok düzgün geliyor, saçılmanın beklenen kutuplanmasını göstermiyor ve tayfı farklı sıcaklıktaki toz topaklarının toplamıyla elde edilemeyecek kadar ideal bir kara cisim tayfı",
      "Tozun ışığı saçması fizik yasalarına aykırıdır"
     ],
     "dogru": 2,
@@ -1944,7 +1944,7 @@
      "Işımanın sıcaklığının 3,5 K olduğunu"
     ],
     "dogru": 0,
-    "aciklama": "FIRAS gökyüzünü uydunun içindeki sıcaklığı bilinen bir kara cisimle karşılaştırdı; Nobel Komitesi'ne göre ilk sonuç dokuz dakikalık gözlemden sonra geldi. Wikipedia'ya göre tayf on binde bir düzeyinde sapma göstermedi ve sıcaklık 2,726 K bulundu. Bir derecelik lekeler BOOMERanG'in, 3,5 K Penzias ve Wilson'ın sonucudur.",
+    "aciklama": "FIRAS gökyüzünü uydunun içindeki sıcaklığı bilinen bir kara cisimle karşılaştırdı; Nobel Komitesine göre ilk sonuç dokuz dakikalık gözlemden sonra geldi. Wikipedia'ya göre tayf on binde bir düzeyinde sapma göstermedi ve sıcaklık 2,726 K bulundu. Bir derecelik lekeler BOOMERanG'ın, 3,5 K Penzias ve Wilson'ın sonucudur.",
     "ders": "d58",
     "bolum": 6
    },
@@ -2186,7 +2186,7 @@
      "Hiç müon ölçülmedi; hepsi yolda bozundu"
     ],
     "dogru": 0,
-    "aciklama": "Derse göre 1917 m'den deniz düzeyine iniş yaklaşık 6,4 mikrosaniye sürer, bu da durgun ömrün yaklaşık üç katıdır; zaman genişlemesi olmasa yalnızca 27 kadar müon kalmalıydı. Ölçülen yaklaşık 412'ydi ve buradan 8,8 ± 0,8'lik bir zaman genişlemesi çarpanı çıktı.",
+    "aciklama": "Derse göre 1.917 m'den deniz düzeyine iniş yaklaşık 6,4 mikrosaniye sürer, bu da durgun ömrün yaklaşık üç katıdır; zaman genişlemesi olmasa yalnızca 27 kadar müon kalmalıydı. Ölçülen yaklaşık 412'ydi ve buradan 8,8 ± 0,8'lik bir zaman genişlemesi çarpanı çıktı.",
     "ders": "d25",
     "bolum": 7
    },
@@ -2298,7 +2298,7 @@
      "Yüksek sıcaklıkta Planck sabitinin değerinin değişmesi"
     ],
     "dogru": 1,
-    "aciklama": "Derse göre moleküller 1000 K'in altındayken girişim kusursuzdu; 3000 K civarında birkaç görünür foton yayınca desen silindi. O fotonları hiçbir insan ya da algılayıcı yakalamadı; yol bilgisini dışarı taşımaları yetti. Kuantumda ölçüm bilinç değil, iz bırakan etkileşimdir.",
+    "aciklama": "Derse göre moleküller 1.000 K'in altındayken girişim kusursuzdu; 3.000 K civarında birkaç görünür foton yayınca desen silindi. O fotonları hiçbir insan ya da algılayıcı yakalamadı; yol bilgisini dışarı taşımaları yetti. Kuantumda ölçüm bilinç değil, iz bırakan etkileşimdir.",
     "ders": "d27",
     "bolum": 11
    },
@@ -2406,11 +2406,11 @@
     "secenekler": [
      "Tek bir görünür ışık fotonu çıkar; ışık kirliliği yüzünden görülemez",
      "Zıt yönlere giden ve her biri yaklaşık 511 keV taşıyan iki gama fotonu çıkar; gama ışınları atmosferi geçemez",
-     "Bir nötrino çiftiyle 1,022 MeV'lik bir foton çıkar; dürbünle görülebilir ama çok sönüktür",
+     "Bir nötrino çiftiyle 1,022 MeV'luk bir foton çıkar; dürbünle görülebilir ama çok sönüktür",
      "Hiç foton çıkmaz; enerji tümüyle ısıya dönüşür"
     ],
     "dogru": 1,
-    "aciklama": "Derse göre elektronun kütle enerjisi 0,511 MeV'dir (CODATA 2022). Toplam 1,022 MeV iki fotona eşit bölünür; her biri 511 keV taşır. Bunlar gama ışınıdır ve atmosferi geçemez; Samanyolu'nun 511 keV çizgisini INTEGRAL gibi uydular inceler.",
+    "aciklama": "Derse göre elektronun kütle enerjisi 0,511 MeV'tur (CODATA 2022). Toplam 1,022 MeV iki fotona eşit bölünür; her biri 511 keV taşır. Bunlar gama ışınıdır ve atmosferi geçemez; Samanyolu'nun 511 keV çizgisini INTEGRAL gibi uydular inceler.",
     "ders": "d29",
     "bolum": 9
    },
@@ -2542,7 +2542,7 @@
    },
    {
     "id": "d32-1",
-    "soru": "Protonun yaklaşık 938 MeV'lik kütlesinin ne kadarı üç kuarkın kendi kütlelerinden gelir?",
+    "soru": "Protonun yaklaşık 938 MeV'luk kütlesinin ne kadarı üç kuarkın kendi kütlelerinden gelir?",
     "secenekler": [
      "Neredeyse tamamı; gluonlar kütlesiz olduğu için başka katkı yoktur",
      "Yaklaşık yarısı; diğer yarısı elektronlardan gelir",
@@ -2620,7 +2620,7 @@
      "Dünya'nın Güneş çevresindeki hızına"
     ],
     "dogru": 2,
-    "aciklama": "Derse göre dalganın hızı c = 1 ÷ √(μ₀ε₀) ile verilir ve NIST değerleriyle yaklaşık 2,99792 × 10⁸ m/s çıkar. Formülde ne kaynağın ne de gözlemcinin hızı vardır; bu durum esir sorununa ve özel göreliliğe (d25) götürdü. Weber ve Kohlrausch'un ölçtüğü oran (yaklaşık 3,107 × 10⁸ m/s) bu sabitlerle ilgiliydi.",
+    "aciklama": "Derse göre dalganın hızı c = 1 ÷ √(μ₀ε₀) ile verilir ve NIST değerleriyle yaklaşık 2,99792 × 10⁸ m/s çıkar. Formülde ne kaynağın ne de gözlemcinin hızı vardır; bu durum esir sorununa ve özel göreliliğe (45. ders) götürdü. Weber ve Kohlrausch'un ölçtüğü oran (yaklaşık 3,107 × 10⁸ m/s) bu sabitlerle ilgiliydi.",
     "ders": "d33",
     "bolum": 9
    },
@@ -2664,7 +2664,7 @@
      "Spekülasyon"
     ],
     "dogru": 2,
-    "aciklama": "Derse göre karanlık maddenin kütleçekim etkisi gözlemle kesinleşmiştir, ama tek tek aday parçacıklar, WIMP dahil, kuram ya da hipotez basamağındadır: matematiksel olarak tutarlıdırlar ama hiçbir WIMP araması başarılı olmadı.",
+    "aciklama": "Derse göre karanlık maddenin kütleçekim etkisi gözlemle kesinleşmiştir, ama tek tek aday parçacıklar, WIMP dâhil, kuram ya da hipotez basamağındadır: matematiksel olarak tutarlıdırlar ama hiçbir WIMP araması başarılı olmadı.",
     "ders": "d50",
     "bolum": 0
    },
@@ -2684,7 +2684,7 @@
    },
    {
     "id": "d50-3",
-    "soru": "ADMX 1,10 GHz frekansında bir aksiyon sinyali arıyor. Bu yaklaşık hangi aksiyon kütlesine karşılık gelir? (h = 4,1357×10⁻¹⁵ eV·s)",
+    "soru": "ADMX 1,10 GHz frekansında bir aksiyon sinyali arıyor. Bu yaklaşık hangi aksiyon kütlesine karşılık gelir? (h = 4,1357 × 10⁻¹⁵ eV·s)",
     "secenekler": [
      "Yaklaşık 4,5 μeV",
      "Yaklaşık 4,5 eV",
@@ -2692,7 +2692,7 @@
      "Yaklaşık 7,1 keV"
     ],
     "dogru": 0,
-    "aciklama": "m c² = h × f = 4,1357×10⁻¹⁵ × 1,10×10⁹ ≈ 4,5×10⁻⁶ eV, yani yaklaşık 4,5 μeV. Bu, ADMX'in 2025 makalesindeki 4,55 μeV ile uyumludur. 100 GeV tipik WIMP kütlesi, 7,1 keV ise 3,5 keV çizgisinin steril nötrino yorumudur.",
+    "aciklama": "m c² = h × f = 4,1357 × 10⁻¹⁵ × 1,10 × 10⁹ ≈ 4,5 × 10⁻⁶ eV, yani yaklaşık 4,5 μeV. Bu, ADMX'in 2025 makalesindeki 4,55 μeV ile uyumludur. 100 GeV tipik WIMP kütlesi, 7,1 keV ise 3,5 keV çizgisinin steril nötrino yorumudur.",
     "ders": "d50",
     "bolum": 8
    },
@@ -2790,7 +2790,7 @@
      "Herhangi bir kütle olabilir; bütün kara delikler bugün küçülür"
     ],
     "dogru": 1,
-    "aciklama": "Derse göre 2,725 K'lik Hawking sıcaklığı yaklaşık 4,5 × 10²² kg'a, yani Ay kütlesinin yaklaşık yüzde 61'ine karşılık gelir. Bundan ağır kara delikler, bilinen bütün kara delikler dahil, bugün arka plandan kazandıkları kütleyle büyür.",
+    "aciklama": "Derse göre 2,725 K'lik Hawking sıcaklığı yaklaşık 4,5 × 10²² kg'a, yani Ay kütlesinin yaklaşık yüzde 61'ine karşılık gelir. Bundan ağır kara delikler, bilinen bütün kara delikler dâhil, bugün arka plandan kazandıkları kütleyle büyür.",
     "ders": "d52",
     "bolum": 4
    },
@@ -2810,7 +2810,7 @@
    },
    {
     "id": "d52-4",
-    "soru": "Steinhauer'in ekibinin Bose-Einstein yoğuşmasındaki ses kara deliği deneyleri için hangisi doğrudur?",
+    "soru": "Steinhauer'in ekibinin Bose–Einstein yoğuşmasındaki ses kara deliği deneyleri için hangisi doğrudur?",
     "secenekler": [
      "Gökteki kara deliklerin Hawking ışımasını kesin olarak kanıtladı",
      "Ses ufku olan bir kuantum sisteminde Hawking benzeri ısıl ışınım bildirdi ama kütleçekimini ve gerçek kara delikleri sınamaz",
@@ -2930,7 +2930,7 @@
      "Dallar arasında yolculuk yapılabildiği deneyle gösterilmiştir"
     ],
     "dogru": 2,
-    "aciklama": "Everett (1957) evrenin dalga fonksiyonunu gerçek sayar ve çökme varsaymaz; 'çok dünyalar' adını 1970'lerde DeWitt verdi. Dallar arasında bilgi geçmez ve yorum bugünkü deneylerde öteki yorumlarla aynı sonuçları verir; kesinlik etiketi kuram ya da hipotez.",
+    "aciklama": "Everett (1957) evrenin dalga fonksiyonunu gerçek sayar ve çökme varsaymaz; “çok dünyalar” adını 1970'lerde DeWitt verdi. Dallar arasında bilgi geçmez ve yorum bugünkü deneylerde öteki yorumlarla aynı sonuçları verir; kesinlik etiketi kuram ya da hipotez.",
     "ders": "d54",
     "bolum": 11
    },
@@ -2950,7 +2950,7 @@
    },
    {
     "id": "d55-2",
-    "soru": "Penrose ve arkadaşlarının 2018'de öne sürdüğü 'Hawking noktaları' için hangisi doğrudur?",
+    "soru": "Penrose ve arkadaşlarının 2018'de öne sürdüğü “Hawking noktaları” için hangisi doğrudur?",
     "secenekler": [
      "Bağımsız analizler doğruladı ve konformal döngüsel kozmoloji kanıtlandı",
      "Penrose Nobel ödüllü olduğu için iddia kesinleşmiş sayılır",

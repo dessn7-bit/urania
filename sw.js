@@ -1,6 +1,6 @@
 /* sw.js — çevrimdışı çalışma. Ağ önce (güncel sürüm gelsin), ağ yoksa önbellek.
    Dosya eklenince ASSETS'e eklenmeli ve SURUM artırılmalı. */
-const SURUM = 'urania-v42';
+const SURUM = 'urania-v43';
 const ASSETS = [
   './', './index.html', './stil.css', './manifest.json',
   './icon-192.png', './icon-512.png', './icon-maskable-512.png',
@@ -23,10 +23,31 @@ self.addEventListener('install', e => {
   e.waitUntil(caches.open(SURUM).then(c => c.addAll(ASSETS.map(u => new Request(u, { cache: 'reload' })))).then(() => self.skipWaiting()));
 });
 
+/* Haber görselleri (img/haber/*.jpg, ~1,8 MB) ASSETS'te değil: kurulumda hepsi indirilmesin diye görüntülendikçe
+   önbelleğe girer. Sürümden BAĞIMSIZ ayrı önbellekte durur, sürüm değişince silinmez (yoksa her güncellemeden sonra
+   çevrimdışı Haberler görselsiz kalırdı). Haberden çıkarılan görsel, haber listesine göre bu önbellekten de silinir. */
+const GORSEL = 'urania-haber-gorsel';
+const GORSEL_YOL = /\/img\/haber\/[a-z0-9-]+\.jpg$/;
+function gorselMi(url) { try { return GORSEL_YOL.test(new URL(url).pathname); } catch (h) { return false; } }
+/* Budama iki yerde: (1) ağdan her taze veri/haberler.json gelince — haberler haftalık güncellenir ve SURUM artmadan da
+   değişebilir; uygulamanın gösterdiği liste tam olarak budur; (2) activate'te yeni sürüm önbelleğindeki haberler.json'la
+   (kurulumda cache:'reload' ile taze alındı). Liste okunamazsa (bozuk JSON, haberler dizisi yok) hiçbir şey silinmez. */
+function gorselBuda(j) {
+  if (!j || !Array.isArray(j.haberler)) return Promise.resolve();
+  const kalsin = new Set();
+  j.haberler.forEach(h => { const d = h && h.gorsel && h.gorsel.dosya; if (typeof d === 'string') kalsin.add(d.replace(/^\.?\//, '')); });
+  return caches.open(GORSEL).then(c => c.keys().then(ks => Promise.all(ks.map(r => {
+    let yol = '';
+    try { yol = new URL(r.url).pathname.replace(/^.*?(img\/haber\/)/, '$1'); } catch (h) { /* geçersiz: sil */ }
+    return kalsin.has(yol) ? null : c.delete(r);
+  })))).catch(() => { /* önbellek açılamadı: sorun değil */ });
+}
+
 self.addEventListener('activate', e => {
   e.waitUntil(
     caches.keys()
-      .then(keys => Promise.all(keys.filter(k => k.indexOf('urania-') === 0 && k !== SURUM).map(k => caches.delete(k))))
+      .then(keys => Promise.all(keys.filter(k => k.indexOf('urania-') === 0 && k !== SURUM && k !== GORSEL).map(k => caches.delete(k))))
+      .then(() => caches.open(SURUM).then(c => c.match('./veri/haberler.json')).then(r => (r ? r.json() : null)).then(gorselBuda).catch(() => { /* liste yok ya da bozuk: budama yok */ }))
       .then(() => self.clients.claim())
   );
 });
@@ -36,6 +57,8 @@ self.addEventListener('fetch', e => {
   let ayni = false;
   try { ayni = new URL(e.request.url).origin === self.location.origin; } catch (h) { /* geçersiz URL: dokunma */ }
   if (!ayni) return;
+  /* Önbelleğe yazma bitene kadar işçi durdurulmasın; yanıt zaten verildiyse (3 sn yedeği) waitUntil hata atabilir */
+  const uzat = p => { try { e.waitUntil(p); } catch (h) { /* olay bitti: yazma yine sürer */ } };
   const onbellek = () => caches.match(e.request, { ignoreSearch: true }).then(r => {
     if (r) return r;
     /* index.html yedeği yalnız sayfa gezinmesi için; JSON isteğine HTML dönmesin */
@@ -50,7 +73,13 @@ self.addEventListener('fetch', e => {
   const ag = fetch(istek).then(res => {
     if (res.ok) {
       const kopya = res.clone();
-      caches.open(SURUM).then(c => c.put(e.request, kopya)).catch(() => { /* kota dolu: yanıtı etkilemez */ });
+      const gorsel = gorselMi(e.request.url);
+      /* Görsel sürümsüz önbelleğe; ötekiler sürüm önbelleğine. Arama dizesi atılır (aynı görsel iki kez girmesin). */
+      const yaz = caches.open(gorsel ? GORSEL : SURUM).then(c => c.put(gorsel ? e.request.url.split(/[?#]/)[0] : e.request, kopya)).catch(() => { /* kota dolu: yanıtı etkilemez */ });
+      if (/\/veri\/haberler\.json$/.test(new URL(e.request.url).pathname)) {
+        const liste = res.clone();
+        uzat(yaz.then(() => liste.json()).then(gorselBuda).catch(() => { /* bozuk liste: budama yok */ }));
+      } else uzat(yaz);
       return res;
     }
     return onbellek().then(r => (r && r.type !== 'error' ? r : res));

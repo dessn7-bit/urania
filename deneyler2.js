@@ -89,7 +89,7 @@
         <div class="sahne"><canvas id="kpKanvas"></canvas></div>
         <div class="kontroller">
           ${o.kaydirici('kpA', 'Yarı büyük eksen a', Math.log10(0.3), Math.log10(40), 'any', 0)}
-          ${o.kaydirici('kpE', 'Dışmerkezlik e', 0, 0.97, 0.001, 0.0167)}
+          ${o.kaydirici('kpE', 'Dışmerkezlik e', 0, 0.97, 0.0001, 0.0167)}
           ${zamanHtml(o, 'kpZaman', 'Yörüngede zaman (bir turun yüzdesi)')}
           <label class="secim-satir kucuk"><input type="checkbox" id="kpAlan" checked> <span>Eşit sürede taranan alanları göster (dolanım süresinin 12'de biri)</span></label>
         </div>
@@ -164,14 +164,14 @@
       kap.innerHTML = `
         <div class="sahne"><canvas id="ggKanvas"></canvas></div>
         <div class="kontroller">
-          ${o.kaydirici('ggGun', 'Yeni Ay\'dan bu yana gün', 0, d.kavusum_gun, 0.05, 0)}
+          ${o.kaydirici('ggGun', 'Yeni aydan bu yana gün', 0, d.kavusum_gun, 0.05, 0)}
           <div class="cip-grup" id="ggUzak"><button type="button" class="dugme" data-u="yakin">Ay en yakında</button><button type="button" class="dugme" data-u="ort" aria-pressed="true">Ortalama</button><button type="button" class="dugme" data-u="uzak">Ay en uzakta</button></div>
           <label class="secim-satir kucuk"><input type="checkbox" id="ggGunes" checked> <span>Güneş'in gelgit etkisini ekle</span></label>
           ${zamanHtml(o, 'ggZaman', 'Dünya\'nın dönüşü (bir turun yüzdesi)')}
         </div>
-        ${o.olcumler([['ggAy', 'Ay\'ın gelgit ivmesi'], ['ggGn', 'Güneş\'in gelgit ivmesi'], ['ggOran', 'Güneş / Ay'], ['ggDurum', 'Bu gün']])}
+        ${o.olcumler([['ggAy', 'Ay\'ın gelgit ivmesi'], ['ggGn', 'Güneş\'in gelgit ivmesi'], ['ggOran', 'Güneş / Ay'], ['ggDurum', 'Durum']])}
         <div class="deney-metin" id="ggMetin"></div>
-        <p class="kaynak">Gelgit ivmesi ≈ 2GMR/d³ (yüzeyde, çeken cisme dönük noktada). Şekil abartılıdır: gerçek açık deniz kabarması yaklaşık yarım metre mertebesindedir, Dünya'nın yarıçapı ise 6371 km. Kaynaklar: ${kaynakLink(U, d.kaynaklar)}</p>`;
+        <p class="kaynak">Gelgit ivmesi ≈ 2GMR/d³ (yüzeyde, çeken cisme dönük noktada). Şekil abartılıdır: gerçek açık deniz kabarması yaklaşık yarım metre mertebesindedir, Dünya'nın yarıçapı ise 6.371 km. Kaynaklar: ${kaynakLink(U, d.kaynaklar)}</p>`;
       const cv = kap.querySelector('#ggKanvas'), gS = kap.querySelector('#ggGun'), gnK = kap.querySelector('#ggGunes');
       let uzak = 'ort', st = {}, don = 0;
       function hesapla() {
@@ -184,11 +184,11 @@
         kap.querySelector('#ggGn').textContent = U.sayi(aGn / g0 * 1e7, 2) + ' × 10⁻⁷ g';
         kap.querySelector('#ggOran').textContent = U.sayi(aGn / aAy, 2);
         const c = Math.cos(2 * aci * DER);                    // +1: aynı doğrultu (kabarma), −1: dik (ölü)
-        const durum = c > 0.85 ? (Math.cos(aci * DER) > 0 ? 'Yeni Ay: kabarma gelgiti' : 'Dolunay: kabarma gelgiti') : (c < -0.85 ? 'Dördün: ölü gelgit' : 'Arada');
+        const durum = c > 0.85 ? (Math.cos(aci * DER) > 0 ? 'Yeni ay: büyük gelgit' : 'Dolunay: büyük gelgit') : (c < -0.85 ? 'Dördün: küçük gelgit' : 'Arada');
         kap.querySelector('#ggDurum').textContent = durum;
         /* Gelgit genliği (kabarma ile çekilme arası fark): iki P2 dalgasının toplamı, faz farkı 2θ */
         const genlik = st.gunes ? Math.sqrt(aAy * aAy + aGn * aGn + 2 * aAy * aGn * Math.cos(2 * aci * DER)) : aAy;
-        kap.querySelector('#ggMetin').innerHTML = `<p>Ay ile Güneş aynı çizgideyken (yeni Ay ve dolunay) iki etki toplanır, dik açıdayken (dördünler) Güneş'in etkisi Ay'ınkini kısmen götürür. Kabarma ile çekilme arasındaki fark (gelgit genliği), Ay'ın tek başına yaptığına göre şu an: %${U.sayi(genlik / aAy * 100, 0)}.</p>`;
+        kap.querySelector('#ggMetin').innerHTML = `<p>Ay ile Güneş aynı çizgideyken (yeni ay ve dolunay) iki etki toplanır, dik açıdayken (dördünler) Güneş'in etkisi Ay'ınkini kısmen götürür. Kabarma ile çekilme arasındaki fark (gelgit genliği), Ay'ın tek başına yaptığına göre şu an: %${U.sayi(genlik / aAy * 100, 0)}.</p>`;
       }
       /* P2(cosφ) = (3cos²φ − 1)/2 biçimli şişme; görsel abartı */
       function sekil(phi) {
@@ -275,8 +275,13 @@
         kap.querySelector('#tyVCikti').textContent = (vk > 0 ? '+' : vk < 0 ? '−' : '') + U.sayi(Math.abs(vk), Math.abs(vk) < 100 ? 1 : 0) + ' km/s';
         kap.querySelector('#tyTepe').textContent = U.sayi(tepe, 0) + ' nm';
         kap.querySelector('#tyBolge').textContent = bolge(tepe);
-        kap.querySelector('#tyHa').textContent = U.sayi(haG, 2) + ' nm (durgunda ' + U.sayi(ha.nm, 2) + ')';
-        kap.querySelector('#tyKayma').textContent = Math.abs(beta) < 1e-7 ? 'yok' : (beta > 0 ? 'kırmızıya ' : 'maviye ') + U.sayi(Math.abs(haG - ha.nm), 2) + ' nm (z = ' + (haG < ha.nm ? '−' : '') + U.sayi(Math.abs(haG - ha.nm) / ha.nm, 5) + ')';
+        const dl = Math.abs(haG - ha.nm), azKayma = dl < 0.005;   /* kayma 0,005 nm'den az: iki basamakta 0,00 görünürdü */
+        kap.querySelector('#tyHa').textContent = azKayma
+          ? U.sayi(haG, 4) + ' nm (durgunda ' + U.sayi(ha.nm, 4) + ')'
+          : U.sayi(haG, 2) + ' nm (durgunda ' + U.sayi(ha.nm, 2) + ')';
+        kap.querySelector('#tyKayma').textContent = Math.abs(beta) < 1e-7 ? 'yok' : (beta > 0 ? 'kırmızıya ' : 'maviye ') + (azKayma
+          ? 'yok denecek kadar az, 0,01 nm\'den küçük (z = ' + (haG < ha.nm ? '−' : '') + U.sayi(dl / ha.nm * 1e6, 1) + ' × 10⁻⁶)'
+          : U.sayi(dl, 2) + ' nm (z = ' + (haG < ha.nm ? '−' : '') + U.sayi(dl / ha.nm, 5) + ')');
         kap.querySelector('#tyMetin').innerHTML = `<p>${U.sayi(T, 0)} K sıcaklıktaki bir yıldız en çok ${U.sayi(tepe, 0)} nm dalga boyunda (${bolge(tepe)}) ışır: sıcaklık arttıkça tepe kısa dalga boylarına kayar (Wien yasası) ve toplam ışınım çok hızlı artar.${Math.abs(vk) > 0.5 ? ` Yıldız bize göre saniyede ${U.sayi(Math.abs(vk), 0)} km ${vk > 0 ? 'uzaklaştığı için çizgiler kırmızıya (uzun dalga boyuna)' : 'yaklaştığı için çizgiler maviye (kısa dalga boyuna)'} kayıyor. Bütün çizgiler aynı oranda kaydığı için hangi elementin çizgisi olduğunu tanıyıp hızı ölçebilirsin.` : ''}</p>`;
         ciz();
       }
@@ -346,12 +351,12 @@
       kap.innerHTML = `
         <div class="sahne"><canvas id="evKanvas"></canvas></div>
         <div class="kontroller">
-          ${o.kaydirici('evGun', 'Yeni Ay\'dan bu yana gün', 0, d.kavusum_gun, 0.05, 0)}
+          ${o.kaydirici('evGun', 'Yeni aydan bu yana gün', 0, d.kavusum_gun, 0.05, 0)}
           ${o.kaydirici('evMevsim', 'Güneş\'in Ay yörüngesinin düğümüne açısı', 0, 360, 1, 40)}
         </div>
         ${o.olcumler([['evAd', 'Evre'], ['evOran', 'Aydınlık kısım'], ['evEnlem', 'Ay tutulumun ne kadar üstünde/altında'], ['evTut', 'Tutulma']])}
         <div class="deney-metin" id="evMetin"></div>
-        <p class="kaynak">Aydınlık oran k = (1 + cos α)/2 (α: faz açısı, yaklaşık 180° − uzanım). Ay'ın yörüngesi tutuluma ${U.sayi(d.egim_derece, 3)}° eğik; yeni Ay ya da dolunay anında Ay tutulumdan yaklaşık ${U.sayi(d.tutulma_enlem_derece, 1)}°'den yakınsa tutulma olabilir (yaklaşık sınır). Çizim ölçekli değildir. Kaynaklar: ${kaynakLink(U, d.kaynaklar)}</p>`;
+        <p class="kaynak">Aydınlık oran k = (1 + cos α)/2 (α: faz açısı, yaklaşık 180° − uzanım). Ay'ın yörüngesi tutuluma ${U.sayi(d.egim_derece, 3)}° eğik; yeni ay ya da dolunay anında Ay tutulumdan yaklaşık ${U.sayi(d.tutulma_enlem_derece, 1)}°'den yakınsa tutulma olabilir (yaklaşık sınır). Çizim ölçekli değildir. Kaynaklar: ${kaynakLink(U, d.kaynaklar)}</p>`;
       const cv = kap.querySelector('#evKanvas'), gS = kap.querySelector('#evGun'), mS = kap.querySelector('#evMevsim');
       let st = {};
       function hesapla() {
@@ -370,7 +375,7 @@
         kap.querySelector('#evOran').textContent = '%' + U.sayi(k * 100, 0);
         kap.querySelector('#evEnlem').textContent = (beta >= 0 ? '+' : '−') + U.sayi(Math.abs(beta), 2) + '°';
         kap.querySelector('#evTut').textContent = tutulma ? (yeni ? 'Güneş tutulması olabilir' : 'Ay tutulması olabilir') : (yeni || dolun ? 'Yok: Ay tutulumun ' + (beta > 0 ? 'üstünden' : 'altından') + ' geçiyor' : '—');
-        kap.querySelector('#evMetin').innerHTML = `<p>Ay'ın her zaman yarısı aydınlıktır; evre, o aydınlık yarının ne kadarını gördüğümüzdür. Yeni Ay'da Ay, Güneş ile aynı yönde olduğu için karanlık yüzü bize döner; dolunayda Güneş'in tam karşısındadır.${yeni || dolun ? (tutulma ? ' Şu an Ay düğüme yakın: gölgeler hizalanıyor, tutulma olabilir.' : ' Ay\'ın yörüngesi eğik olduğu için çoğu ay gölge Dünya\'nın ya da Ay\'ın üstünden veya altından geçer; tutulma için hem yeni Ay/dolunay hem de Ay\'ın düğüm noktası yakınında olması gerekir.') : ''}</p>`;
+        kap.querySelector('#evMetin').innerHTML = `<p>Ay'ın her zaman yarısı aydınlıktır; evre, o aydınlık yarının ne kadarını gördüğümüzdür. Yeni ayda Ay, Güneş ile aynı yönde olduğu için karanlık yüzü bize döner; dolunayda Güneş'in tam karşısındadır.${yeni || dolun ? (tutulma ? ' Şu an Ay düğüme yakın: gölgeler hizalanıyor, tutulma olabilir.' : ' Ay\'ın yörüngesi eğik olduğu için çoğu ay gölge Dünya\'nın ya da Ay\'ın üstünden veya altından geçer; tutulma için hem yeni ay/dolunay hem de Ay\'ın düğüm noktası yakınında olması gerekir.') : ''}</p>`;
         ciz();
       }
       function ciz() {

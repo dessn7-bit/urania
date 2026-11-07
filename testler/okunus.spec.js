@@ -102,14 +102,31 @@ test('Tüm sesli metinlerde birimli eğik çizgi "ya da" okunmaz, ekli kısaltma
   expect(yaDa).toEqual([]);
 });
 
+/* A7-13: sesli okunan bütün ders alanları — başlık, özet, bölüm (paragraf, örnek, aklında kalsın), deftere notu,
+   kart sesli tekrarının okuduğu sorular, sözlük, anahtar sayılar ve formüller (ad, ifade, açıklama) */
+const sesliAlanlar = x => [x.baslik, x.ozet || '',
+  ...x.bolumler.flatMap(b => [b.baslik, ...b.paragraflar, b.ornek ? b.ornek.baslik + '. ' + b.ornek.metin : '', b.akilda || '']),
+  ...x.defter_notu,
+  ...(x.sorular || []).flatMap(q => [q.soru, q.cevap]),
+  ...(x.sozluk || []).flatMap(s => [s.terim, s.tanim]),
+  ...(x.anahtar_sayilar || []).flatMap(s => [s.deger, s.aciklama]),
+  ...(x.formuller || []).flatMap(f => [f.ad, f.ifade, f.aciklama])].filter(Boolean);
 test('Tüm ders metinlerinde okunuşa çevrilmemiş sembol kalmaz', () => {
-  const t = D.map(x => [x.baslik, ...x.bolumler.flatMap(b => [b.baslik, ...b.paragraflar]), ...x.defter_notu].map(okunus).join(' ')).join(' ');
-  const kalan = [...t].filter(ch => !/[\p{L}\p{N}\s.,;:!?()'"’‘“”…%\-–—]/u.test(ch));
-  expect(kalan).toEqual([]);
-  expect(t).not.toMatch(/%/);
+  const kalan = {};
+  D.forEach(x => sesliAlanlar(x).forEach(m => {
+    const o = okunus(m);
+    [...o].filter(ch => !/[\p{L}\p{N}\s.,;:!?()'"’‘“”…%\-–—]/u.test(ch) || /[μµ]/.test(ch)).forEach(ch => { (kalan[ch] = kalan[ch] || []).length < 3 && kalan[ch].push(x.id + ': ' + o.slice(0, 80)); });
+    if (/%/.test(o)) (kalan['%'] = kalan['%'] || []).push(x.id);
+  }));
+  expect(kalan).toEqual({});
+});
+test('A7-13: güneş alt simgesi tek başına da okunur (d2 soru kartı "T☉")', () => {
+  expect(okunus('(T☉ = 5772 K)')).toBe('(Güneş sıcaklığı eşittir 5772 kelvin)');
+  expect(okunus('(φ − δ☉)')).toBe('(fi eksi delta Güneş)');
 });
 
-test('Tarih kısaltmaları: MÖ ve sayıdan önce MS açılır, "ms" birimi dokunulmaz', () => {
+test('Tarih kısaltmaları: MÖ ve sayıdan önce MS açılır, "ms" birimi milisaniye okunur', () => {
   const { okunus } = require('../okunus.js');
-  expect(okunus('MÖ 240 civarında; MS 150 yılında (MÖ 190–120). 5 ms')).toBe('milattan önce 240 civarında; milattan sonra 150 yılında (milattan önce 190 ile 120). 5 ms');
+  expect(okunus('MÖ 240 civarında; MS 150 yılında (MÖ 190–120). 5 ms')).toBe('milattan önce 240 civarında; milattan sonra 150 yılında (milattan önce 190 ile 120). 5 milisaniye');
+  expect(okunus('Almagest (~MS 150)')).toBe('Almagest (yaklaşık milattan sonra 150)');
 });

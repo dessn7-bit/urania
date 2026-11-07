@@ -3,6 +3,13 @@
    Dış istek yok: yerel sunucu dışındaki her istek kesilir. */
 const { test, expect } = require('@playwright/test');
 
+/* Sayfa hatası (yakalanmamış istisna) her tarayıcı testinde denetlenir (denetim A7-06) */
+test.beforeEach(async ({ page }) => {
+  page.hatalar = [];
+  page.on('pageerror', e => page.hatalar.push(String(e)));
+});
+test.afterEach(async ({ page }) => { expect(page.hatalar || []).toEqual([]); });
+
 test('Kırmızı mod betikler yüklenmeden uygulanır; tarayıcı çubuğu siyah', async ({ page }) => {
   await page.route(/^https?:\/\/(?!127\.0\.0\.1|localhost)/, r => r.abort());
   await page.route('**/uygulama.js', r => r.fulfill({ contentType: 'text/javascript', body: '' }));   // uygulama hiç başlamasın
@@ -14,6 +21,7 @@ test('Kırmızı mod betikler yüklenmeden uygulanır; tarayıcı çubuğu siyah
     meta: document.querySelector('meta[name="theme-color"]').content
   }));
   expect(d).toEqual({ sinif: true, zemin: 'rgb(0, 0, 0)', meta: '#000000' });
+  page.hatalar = [];   // uygulama.js bilerek boş: öbür betiklerin Urania'ya erişememesi bu testte beklenen hatadır
 });
 
 test('Kırmızı mod kapalıyken ilk boyama normal tema', async ({ page }) => {
@@ -21,6 +29,7 @@ test('Kırmızı mod kapalıyken ilk boyama normal tema', async ({ page }) => {
   await page.route('**/uygulama.js', r => r.fulfill({ contentType: 'text/javascript', body: '' }));
   await page.goto('/index.html#gok');
   expect(await page.evaluate(() => document.documentElement.classList.contains('kirmizi'))).toBe(false);
+  page.hatalar = [];   // uygulama.js bilerek boş (yukarıdaki test gibi)
 });
 
 for (const [an, beklenen] of [['2026-10-28T20:30:00+03:00', '2026-10-28'], ['2026-10-29T02:00:00+03:00', '2026-10-28']]) {

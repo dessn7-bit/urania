@@ -10,6 +10,7 @@
   const KAYNAK = {
     nasaDunya: { ad: 'NASA Earth Fact Sheet', url: 'https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html' },
     istanbul: { ad: 'Wikipedia: Istanbul', url: 'https://en.wikipedia.org/wiki/Istanbul' },
+    gokKutbu: { ad: 'Wikipedia: Celestial pole', url: 'https://en.wikipedia.org/wiki/Celestial_pole' },
     ufuk: { ad: 'Wikipedia: Horizontal coordinate system', url: 'https://en.wikipedia.org/wiki/Horizontal_coordinate_system' },
     kadir: { ad: 'Wikipedia: Apparent magnitude', url: 'https://en.wikipedia.org/wiki/Apparent_magnitude' },
     nasaAy: { ad: 'NASA Moon Fact Sheet', url: 'https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html' },
@@ -101,6 +102,7 @@
     ders: 'd1', bolum: 3, oran: 0.5,
     baslik: 'Kutup Yıldızı\'nın yüksekliği = enlem',
     aciklama: 'İstanbul\'da (41° kuzey) gök kutbu kuzey ufkunun 41° üstündedir. Gök ekvatoru güney ufkundan 90° − 41° = 49° yükselir. Gökyüzü bu eksen çevresinde döner: kutba yakın yıldızlar hiç batmaz. Çizim ölçeksizdir.',
+    kaynak: [KAYNAK.gokKutbu, KAYNAK.istanbul],
     ciz(S) {
       const R = S.R, cx = 200, cy = 160, r = 120, enlem = 41, rad = Math.PI / 180;
       let s = '';
@@ -132,11 +134,11 @@
     }
   });
 
-  /* d1 · bölüm 5: İstanbul'da öğle Güneşi'nin yüksekliği (h = 90° − |φ − δ☉|, φ = 41,01°) ve aynı ışık demetinin yere yayılışı. */
+  /* d1 · bölüm 7: İstanbul'da öğle Güneşi'nin yüksekliği (h = 90° − |φ − δ☉|, φ = 41,01°) ve aynı ışık demetinin yere yayılışı. */
   C.ekle('d1-ogle-gunesi', {
     ders: 'd1', bolum: 7, oran: 0.86,
     baslik: 'İstanbul\'da öğle Güneşi: yaz, ekinoks, kış',
-    aciklama: 'Üstte güneye bakan bir yan kesit var: öğle Güneşi Haziran gündönümünde 72,4°, ekinokslarda 49°, Aralık gündönümünde 25,6° yükseğe çıkar; aradaki farkları eksenin 23,44° eğikliği yaratır. Altta aynı genişlikte bir ışık demeti yere çarpıyor: Aralık\'ta yere yatık geldiği için yaklaşık 2,2 kat geniş bir alana yayılır, yani her metrekareye daha az enerji düşer. Açılar ölçeklidir.',
+    aciklama: 'Üstte güneye bakan bir yan kesit var: öğle Güneşi Haziran gün dönümünde 72,4°, ekinokslarda 49°, Aralık gün dönümünde 25,6° yükseğe çıkar; aradaki farkları eksenin 23,44° eğikliği yaratır. Altta aynı genişlikte bir ışık demeti yere çarpıyor: Aralık\'ta yere yatık geldiği için yaklaşık 2,2 kat geniş bir alana yayılır, yani her metrekareye daha az enerji düşer. Açılar ölçeklidir.',
     kaynak: [KAYNAK.nasaDunya, KAYNAK.istanbul],
     ciz(S) {
       const R = S.R, phi = 41.01, eg = 23.44;
@@ -185,7 +187,7 @@
     }
   });
 
-  /* d1 · bölüm 6: kadir ölçeği sayı doğrusu (ders metnindeki kaynaklı değerler), üstte tüm aralık, altta −6…+11 büyütülmüş. */
+  /* d1 · bölüm 8: kadir ölçeği sayı doğrusu (ders metnindeki kaynaklı değerler), üstte tüm aralık, altta −6…+11 büyütülmüş. */
   C.ekle('d1-kadir-dogrusu', {
     ders: 'd1', bolum: 8, oran: 0.78,
     baslik: 'Kadir ölçeği bir sayı doğrusu',
@@ -261,7 +263,7 @@
     ['Kızılötesi', 7e-7, 1e-3, 'ic'], ['Mikrodalga', 1e-3, 1e-1, 'ust'], ['Radyo', 1e-1, 1e3, 'ic']
   ];
 
-  /* d2 · bölüm 1: elektromanyetik tayf şeridi ve görünür ışık. */
+  /* d2 · bölüm 2: elektromanyetik tayf şeridi ve görünür ışık. */
   C.ekle('d2-tayf', {
     ders: 'd2', bolum: 2, oran: 0.62,
     baslik: 'Elektromanyetik tayf',
@@ -308,7 +310,7 @@
     }
   });
 
-  /* d2 · bölüm 4: Planck yasasıyla hesaplanan kara cisim eğrileri; Rigel 12.100 K, Güneş 5772 K, Betelgeuse 3800 K. */
+  /* d2 · bölüm 5: Planck yasasıyla hesaplanan kara cisim eğrileri; Rigel 12.100 K, Güneş 5772 K, Betelgeuse 3800 K. */
   C.ekle('d2-kara-cisim', {
     ders: 'd2', bolum: 5, oran: 0.72,
     baslik: 'Üç sıcaklıkta kara cisim eğrisi',
@@ -355,7 +357,7 @@
     }
   });
 
-  /* d2 · bölüm 6: Kirchhoff düzeni ve hidrojenin Balmer çizgileri (havada, Wikipedia: Balmer series). */
+  /* d2 · bölüm 7: Kirchhoff düzeni ve hidrojenin Balmer çizgileri (havada, Wikipedia: Balmer series). */
   C.ekle('d2-cizgiler', {
     ders: 'd2', bolum: 7, oran: 0.86,
     baslik: 'Sürekli tayf, soğurma ve salma',
@@ -401,7 +403,7 @@
     }
   });
 
-  /* d2 · bölüm 8: atmosfer pencereleri (optik 300 nm–2 μm, kızılötesi 8–14 μm, radyo 0,3 mm–30 m). */
+  /* d2 · bölüm 11: atmosfer pencereleri (optik 300 nm–2 μm, kızılötesi 8–14 μm, radyo 0,3 mm–30 m). */
   C.ekle('d2-pencereler', {
     ders: 'd2', bolum: 11, oran: 0.56,
     baslik: 'Atmosfer pencereleri',
@@ -575,18 +577,18 @@
     }
   });
 
-  /* d12 · bölüm 6: ayırma gücü karşılaştırması (log eksen) ve atmosferin görüş bandı 0,4–1″. */
+  /* d12 · bölüm 8: ayırma gücü karşılaştırması (log eksen) ve atmosferin görüş bandı 0,4–1″. */
   C.ekle('d12-ayirma-gorus', {
     ders: 'd12', bolum: 8, oran: 0.68,
     baslik: 'Aletlerin keskinliği ve atmosfer',
-    aciklama: 'Çubuk ne kadar kısaysa alet o kadar ince ayrıntı seçer; eksen logaritmiktir. Göz yaklaşık 60 yay saniyesi, Galileo\'nun 37 milimetrelik objektifi 3,7, 100 milimetrelik teleskop 1,38, Hubble 0,05, Doğu Anadolu Gözlemevi\'nin 4 metrelik teleskobu görünür ışıktaki kırınım sınırıyla yaklaşık 0,03 yay saniyesi. Gölgeli şerit atmosferin en iyi yerlerdeki 0,4 ile 1 yay saniyelik titreşimidir: yerdeki büyük teleskobun keskinliğini aynası değil havası belirler, Hubble ise bunun altına iner.',
+    aciklama: 'Çubuk ne kadar kısaysa alet o kadar ince ayrıntı seçer; eksen logaritmiktir. Göz yaklaşık 60 yay saniyesi, Galileo\'nun 37 milimetrelik objektifi 3,7, 100 milimetrelik teleskop 1,38, Hubble 0,04, Doğu Anadolu Gözlemevi\'nin 4 metrelik teleskobu görünür ışıktaki kırınım sınırıyla yaklaşık 0,03 yay saniyesi. Gölgeli şerit atmosferin en iyi yerlerdeki 0,4 ile 1 yay saniyelik titreşimidir: yerdeki büyük teleskobun keskinliğini aynası değil havası belirler, Hubble ise bunun altına iner.',
     kaynak: [KAYNAK.ayirma, KAYNAK.gozPlak, KAYNAK.gorus, KAYNAK.dag, KAYNAK.hubble],
     ciz(S) {
       const R = S.R, x0 = 132, x1 = 384, l0 = -2, l1 = 2;
       const X = v => x0 + (Math.log10(v) - l0) / (l1 - l0) * (x1 - x0);
       const sat = [
         ['Çıplak göz', 60, '60″'], ['Galileo 37 mm', 138 / 37, tr(138 / 37, 1) + '″'], ['Teleskop 100 mm', 1.38, '1,38″'],
-        ['Hubble 2,4 m', 0.052, '0,05″'], ['DAG 4 m', 138 / 4000, tr(138 / 4000, 2) + '″']
+        ['Hubble 2,4 m', 0.04, '0,04″'], ['DAG 4 m', 138 / 4000, tr(138 / 4000, 2) + '″']
       ];
       const y0 = 54, dy = 36, eks = y0 + sat.length * dy - 8;
       let s = '';
@@ -642,33 +644,34 @@
     }
   });
 
-  /* d11 · bölüm 5: 6°'lik örnek görüş alanı, içine sığan 12 dolunay ve el ölçüleri (ölçekli çubuklar). */
+  /* d11 · bölüm 7: 6,4°'lik görüş alanı (dersin örneği ve bulma haritasının değeri; Nikon Action EX 7×50), 6,4 / 0,5 = 12,8 ≈ 13 dolunay
+     (12 tam dolunay ortalı çizilir, kenarlarda 0,8 dolunaylık pay kalır) ve el ölçüleri (ölçekli çubuklar). */
   C.ekle('d11-gorus-alani', {
     ders: 'd11', bolum: 7, oran: 0.85,
     baslik: 'Dürbün görüş alanı, dolunay ve el ölçüleri',
-    aciklama: 'Daire 6°\'lik örnek bir dürbün görüş alanıdır; içinden yan yana yarımşar derecelik 12 dolunay geçer. Alttaki çubuklar aynı ölçekte: kol uzunluğunda yumruk yaklaşık 10°, üç parmak 5°, serçe parmak 1°, dolunay 0,5°. Görüş alanı bir yumruktan küçük, üç parmaktan biraz büyüktür.',
+    aciklama: 'Daire, bu derste 7×50 dürbün için kullanılan 6,4°\'lik görüş alanıdır. Yarımşar derecelik dolunaylar yan yana dizilirse 6,4 bölü 0,5, yani 12,8, yaklaşık 13 dolunay sığar; çizimde 12 tam dolunay ve iki kenarda kalan pay görünür. Alttaki çubuklar aynı ölçekte: kol uzunluğunda yumruk yaklaşık 10°, üç parmak 5°, serçe parmak 1°, dolunay 0,5°. Görüş alanı bir yumruğun üçte ikisine yakın, üç parmaktan biraz büyüktür.',
     kaynak: [KAYNAK.el, KAYNAK.atlama],
     ciz(S) {
-      const R = S.R, k = 26, cx = 200, cy = 100, alan = 6, ay = 0.5;
+      const R = S.R, k = 26, cx = 200, cy = 100, alan = 6.4, ay = 0.5;
       let s = '';
       const r = alan * k / 2;
       s += S.daire(cx, cy, r, { renk: R.vurgu, kalin: 2, dolgu: R.yuzey2 });
-      const n = Math.round(alan / ay), ra = ay * k / 2;
-      for (let i = 0; i < n; i++) s += S.daire(cx - r + ra + i * 2 * ra, cy, ra - 0.4, { renk: R.ay, kalin: 1, dolgu: R.ay, saydam: 0.85 });
-      s += S.yazi(cx, cy + r + 20, 'örnek görüş alanı: 6°', { boy: 14, renk: R.vurgu, hiza: 'middle', kalin: true });
-      s += S.yazi(cx, cy + 36, n + ' dolunay', { boy: 14, renk: R.metin, hiza: 'middle' });
-      const x0 = 112, cub = [['Yumruk', 10, R.soluk], ['Dürbün alanı', 6, R.vurgu], ['Üç parmak', 5, R.soluk], ['Serçe parmak', 1, R.soluk], ['Dolunay', 0.5, R.ay]];
+      const n = Math.floor(alan / ay), ra = ay * k / 2, bas = cx - n * ra + ra;   // 12 tam dolunay, ortalı
+      for (let i = 0; i < n; i++) s += S.daire(bas + i * 2 * ra, cy, ra - 0.4, { renk: R.ay, kalin: 1, dolgu: R.ay, saydam: 0.85 });
+      s += S.yazi(cx, cy + r + 20, 'görüş alanı: 6,4° (7×50)', { boy: 14, renk: R.vurgu, hiza: 'middle', kalin: true });
+      s += S.yazi(cx, cy + 36, '6,4 ÷ 0,5 = 12,8 ≈ 13 dolunay', { boy: 14, renk: R.metin, hiza: 'middle' });
+      const x0 = 112, cub = [['Yumruk', 10, R.soluk], ['Dürbün alanı', 6.4, R.vurgu], ['Üç parmak', 5, R.soluk], ['Serçe parmak', 1, R.soluk], ['Dolunay', 0.5, R.ay]];
       cub.forEach(([ad, d, renk], i) => {
         const y = 224 + i * 24;
         s += S.yazi(x0 - 8, y + 5, ad, { boy: 13, renk: R.metin, hiza: 'end' });
         s += S.kutu(x0, y - 5, d * k, 10, { renk: 'none', dolgu: renk, saydam: 0.85 });
-        s += S.yazi(x0 + d * k + 6, y + 5, tr(d, d < 1 ? 1 : 0) + '°', { boy: 13, renk: R.soluk });
+        s += S.yazi(x0 + d * k + 6, y + 5, tr(d, Number.isInteger(d) ? 0 : 1) + '°', { boy: 13, renk: R.soluk });
       });
       return s;
     }
   });
 
-  /* d11 · bölüm 7: İstanbul'dan (41°) hedeflerin meridyendeki yüksekliği A = 90° − 41° + δ. Açılar ölçekli. */
+  /* d11 · bölüm 9: İstanbul'dan (41°) hedeflerin meridyendeki yüksekliği A = 90° − 41° + δ. Açılar ölçekli. */
   C.ekle('d11-hedef-yukseklik', {
     ders: 'd11', bolum: 9, oran: 0.56,
     baslik: 'Dürbün hedeflerinin İstanbul\'daki en yüksek konumu',

@@ -13,34 +13,60 @@
   const H = 'A-Za-zÇĞİÖŞÜçğıöşüÂâÎîÛû';   // harf
   const UST = { '⁰': '0', '¹': '1', '²': '2', '³': '3', '⁴': '4', '⁵': '5', '⁶': '6', '⁷': '7', '⁸': '8', '⁹': '9', '⁻': '-' };
   const ALT = { '₀': '0', '₁': '1', '₂': '2', '₃': '3', '₄': '4', '₅': '5', '₆': '6', '₇': '7', '₈': '8', '₉': '9' };
-  const YUNAN = { α: 'alfa', β: 'beta', γ: 'gama', δ: 'delta', ε: 'epsilon', ζ: 'zeta', η: 'eta', θ: 'teta', λ: 'lambda', μ: 'mü', ν: 'nü', π: 'pi', ρ: 'ro', σ: 'sigma', τ: 'tau', φ: 'fi', χ: 'ki', ψ: 'psi', ω: 'omega', Δ: 'delta', Λ: 'lambda', Ω: 'omega', Σ: 'sigma' };
+  const YUNAN = { α: 'alfa', β: 'beta', γ: 'gama', δ: 'delta', ε: 'epsilon', ϵ: 'epsilon', ζ: 'zeta', η: 'eta', θ: 'teta', ι: 'yota', κ: 'kapa', λ: 'lambda', μ: 'mü', ν: 'nü', ξ: 'ksi', ο: 'omikron', π: 'pi', ρ: 'ro', σ: 'sigma', ς: 'sigma', τ: 'tau', υ: 'üpsilon', φ: 'fi', ϕ: 'fi', χ: 'ki', ψ: 'psi', ω: 'omega', Γ: 'gama', Δ: 'delta', Θ: 'teta', Λ: 'lambda', Ξ: 'ksi', Π: 'pi', Σ: 'sigma', Φ: 'fi', Ψ: 'psi', Ω: 'omega' };
+  /* Türev noktası (Newton gösterimi): Ṗ "P nokta" — P ile aynı sesle çıkmasın */
+  const NOKTALI = { 'Ṗ': 'P', 'Ė': 'E', 'Ṁ': 'M', 'Ṅ': 'N', 'Ṙ': 'R', 'Ṫ': 'T', 'ẋ': 'x', 'ẏ': 'y', 'ż': 'z', 'ṁ': 'm', 'ṙ': 'r' };
+  /* Üst simge harfler: (1 − p)ⁿ → üzeri n */
+  const UST_HARF = { 'ⁿ': 'n', 'ᴺ': 'N', 'ⁱ': 'i', 'ˣ': 'x', 'ᵏ': 'k', 'ᵐ': 'm', 'ᵗ': 't' };
+  /* Basit kesir işaretleri: "1½" → 1 buçuk; tek başına "½" → bir bölü iki */
+  const KESIR = { '½': ['bir bölü iki', 'buçuk'], '¼': ['bir bölü dört', 'çeyrek'], '¾': ['üç bölü dört', 'üç çeyrek'], '⅓': ['bir bölü üç', null], '⅔': ['iki bölü üç', null] };
   const YON = { K: 'kuzey', G: 'güney', D: 'doğu', B: 'batı' };
   const SAYI = ['sıfır', 'bir', 'iki', 'üç', 'dört', 'beş', 'altı', 'yedi', 'sekiz', 'dokuz', 'on'];
   /* Birim parçaları. Sayıdan sonra tek başına, ya da eğik çizgiyle zincir halinde (km/s/Mpc, g/cm³)
      açılır. "g" tek başına gün (tablolarda "88 g"), zincirde gram (g/cm³). Kelime birimler (saat,
      gün, yıl …) okunuşta değişmez; zincirde "bölü" okunsun diye listede. */
   const BIRIM = {
-    'm·K': 'metre kelvin', km: 'kilometre', cm: 'santimetre', mm: 'milimetre', nm: 'nanometre', 'μm': 'mikrometre', m: 'metre',
+    'm·K': 'metre kelvin', 'eV·s': 'elektronvolt saniye', 'J·s': 'jul saniye', km: 'kilometre', cm: 'santimetre', mm: 'milimetre', nm: 'nanometre', 'μm': 'mikrometre', m: 'metre',
     kg: 'kilogram', g: 'gram', ton: 'ton', mil: 'mil',
     Mpc: 'megaparsek', kpc: 'kiloparsek', pc: 'parsek', AB: 'astronomik birim', AU: 'astronomik birim',
     K: 'kelvin', W: 'vat', J: 'jul', Hz: 'hertz', MHz: 'megahertz', THz: 'terahertz', MeV: 'mega elektronvolt',
     s: 'saniye', sn: 'saniye', sa: 'saat', dk: 'dakika',
-    saniye: 'saniye', mikrosaniye: 'mikrosaniye', dakika: 'dakika', saat: 'saat', gün: 'gün', yıl: 'yıl'
+    saniye: 'saniye', mikrosaniye: 'mikrosaniye', dakika: 'dakika', saat: 'saat', gün: 'gün', yıl: 'yıl',
+    /* Denetim A3-06 (Ekim 2026): derslerde açılmadan kalan birimler. Birim içindeki μ "mikro" okunur. */
+    Gpc: 'gigaparsek',
+    eV: 'elektronvolt', meV: 'mili elektronvolt', 'μeV': 'mikro elektronvolt', neV: 'nano elektronvolt', peV: 'piko elektronvolt',
+    keV: 'kilo elektronvolt', GeV: 'giga elektronvolt', TeV: 'tera elektronvolt', PeV: 'peta elektronvolt', EeV: 'eksa elektronvolt',
+    kHz: 'kilohertz', GHz: 'gigahertz',
+    Pa: 'paskal', kPa: 'kilopaskal', hPa: 'hektopaskal', MPa: 'megapaskal', GPa: 'gigapaskal', bar: 'bar', mbar: 'milibar',
+    T: 'tesla', mT: 'militesla', 'μT': 'mikrotesla', nT: 'nanotesla', G: 'gauss',
+    'μas': 'mikro yay saniyesi', mas: 'mili yay saniyesi',
+    ms: 'milisaniye', 'μs': 'mikrosaniye', ns: 'nanosaniye', ps: 'pikosaniye',
+    Sv: 'sievert', mSv: 'milisievert', 'μSv': 'mikrosievert', Gy: 'gray', mGy: 'miligray',
+    mW: 'milivat', kW: 'kilovat', MW: 'megavat', GW: 'gigavat', TW: 'teravat',
+    mg: 'miligram', 'μg': 'mikrogram', 'Å': 'angstrom', L: 'litre',
+    mK: 'milikelvin', 'μK': 'mikrokelvin', nK: 'nanokelvin',
+    kJ: 'kilojul', MJ: 'megajul', GJ: 'gigajul', mN: 'milinewton', kN: 'kilonewton', erg: 'erg', rad: 'radyan',
+    kB: 'kilobayt', MB: 'megabayt', GB: 'gigabayt', TB: 'terabayt', PB: 'petabayt', kbit: 'kilobit', Mbit: 'megabit', Gbit: 'gigabit', MP: 'megapiksel'
   };
+  /* Tek harfli, başka anlamı da olan birimler (T tesla, G gauss, L litre) yalnız sayıdan sonra ve ardından
+     ad / tür sözcüğü gelmiyorsa açılır: "G yıldızı", "T Tauri", "1803 L'Aigle", "2 G türü" açılmaz. */
+  const BAGLAMLI = new Set(['T', 'G', 'L']);
+  const BAGLAM_DEGIL = /^\s*(?:[A-ZÇĞİÖŞÜ]|['’]?(?:yıldız|tür|tayf|cüce|dev|sınıf|bant|band|tip|harf|çizgi|kuşağ|kuşak)|[-–]\s?[A-Z])/;
   const kacisRe = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   const ATOM = '(?:' + Object.keys(BIRIM).sort((a, b) => b.length - a.length).map(kacisRe).join('|') + ')';
-  const US = '(?:[²³]|⁻[¹²³⁴])';                                  // birim üssü
+  const US = '(?:[²³⁴]|⁻[¹²³⁴])';                                 // birim üssü
   const UE = ATOM + US + '?(?:\\/' + ATOM + US + '?)*';            // birim ifadesi: km/s, g/cm³
   const UD = UE + '(?:\\s' + ATOM + US + ')*';                     // boşluklu dizi: m³ kg⁻¹ s⁻²
   const EK = "(?:['’]([a-zçğıöşü]+))?";                         // kesmeli ek
-  const SON = "(?![" + H + "\\d'’²³/])";                           // ifade burada biter
+  /* ifade burada biter; eğik çizgi ancak zincir açılamadıysa ("4,41 J/kalori", "0,4 mm/10 yıl") */
+  const SON = "(?![" + H + "\\d²³⁴ₐₑₒₓₕₖₗₘₙₚₛₜ]|['’][a-zçğıöşüA-ZÇĞİÖŞÜ]|\\/(?![" + H + "\\d(\\s]))";
 
   /* ---------- ek uyumu ---------- */
   const EKLER = [
     ['SIN', /^s[ıiuü]n$/], ['KOP', /^[dt][ıiuü]r/], ['AYR', /^n?[dt][ae]n/], ['BUL', /^n?[dt][ae]/],
     ['GEC', /^y?[dt][ıiuü]/], ['KI', /^ki/], ['LIK', /^l[ıiuü]k/], ['COK', /^l[ae]r/], ['ILE', /^y?l[ae]/],
     ['LI', /^l[ıiuü]/], ['ILG', /^n?[ıiuü]n/], ['IYE', /^s[ıiuü]/], ['KOS', /^y?s[ae]$/],
-    ['BEL', /^[yn]?[ıiuü]/], ['YON', /^[yn]?[ae]/]
+    ['KEN', /^y?ken/], ['BEL', /^[yn]?[ıiuü]/], ['YON', /^[yn]?[ae]/]
   ];
   function ekCoz(ek) {
     const sira = [];
@@ -83,6 +109,7 @@
       else if (b === 'IYE') w = u ? w + 's' + I(w) : yumusat(w) + I(w);
       else if (b === 'KOS') w += (u ? 'y' : '') + 's' + A(w);
       else if (b === 'SIN') w += 's' + I(w) + 'n';
+      else if (b === 'KEN') w += (u ? 'y' : '') + 'ken';
       else if (b === 'BEL') w = iy ? w + 'n' + I(w) : (u ? w + 'y' + I(w) : yumusat(w) + I(w));
       else if (b === 'YON') w = iy ? w + 'n' + A(w) : (u ? w + 'y' + A(w) : yumusat(w) + A(w));
       iy = b === 'IYE' || b === 'KI';
@@ -97,16 +124,68 @@
   const ATOM_US = new RegExp('(' + ATOM + ')(' + US + ')?', 'g');
   function birimOku(ifade, tek) {
     return ifade.replace(ATOM_US, (m, a, us) => (tek && a === 'g' ? 'gün' : BIRIM[a]) +
-      (!us ? '' : us === '²' ? ' kare' : us === '³' ? ' küp' : ' üzeri eksi ' + UST[us[1]])).replace(/\//g, ' bölü ');
+      (!us ? '' : us === '²' ? ' kare' : us === '³' ? ' küp' : us === '⁴' ? ' üzeri 4' : ' üzeri eksi ' + UST[us[1]])).replace(/\//g, ' bölü ');
+  }
+  /* "mas'lık" → mili yay saniyelik: tamlama biçimli birim ekte iyelik kaynaştırması ister */
+  const birimEkli = (okunan, ek) => ekli(okunan, ek, /(?:yay saniyesi|yay dakikası)$/.test(okunan));
+  /* Sayının okunuşunun son sözcüğü (ek uyumu için): 255 → beş, 40 → kırk, 1300 → yüz, 2,5 → beş */
+  const ONLAR = ['', 'on', 'yirmi', 'otuz', 'kırk', 'elli', 'altmış', 'yetmiş', 'seksen', 'doksan'];
+  function sayiSon(n) {
+    const s = String(n).replace(/\./g, '');
+    const p = s.split(',');
+    const r = (p[1] && /[1-9]/.test(p[1]) ? p[1].replace(/0+$/, '') : p[0]).replace(/^0+(?=\d)/, '');
+    if (!/^\d+$/.test(r)) return null;
+    if (/^0+$/.test(r)) return 'sıfır';
+    const sondan = r.split('').reverse();
+    const i = sondan.findIndex(c => c !== '0');
+    const c = +sondan[i];
+    if (i === 0) return SAYI[c];
+    if (i === 1) return ONLAR[c];
+    if (i === 2) return 'yüz';
+    if (i < 6) return 'bin';
+    if (i < 9) return 'milyon';
+    if (i < 12) return 'milyar';
+    return 'trilyon';
+  }
+  /* Harf okunuşu (ek uyumu için): n → ne, a → a */
+  const harfAd = h => (/[aeıioöuüAEIİOÖUÜ]/.test(h) ? h.toLocaleLowerCase('tr') : h.toLocaleLowerCase('tr') + 'e');
+  /* Geçiş okunun iki yanı: sayı ya da tek harf + ek ("n'den", "1'e") */
+  function gecisEk(x, ek) {
+    if (/^\d/.test(x)) return sayiyaEk(x, ek);
+    const ad = harfAd(x), o = ekle(ad, ek);
+    return o ? x + "'" + o.slice(ad.length) : null;
+  }
+  const AYLAR = 'Ocak|Şubat|Mart|Nisan|Mayıs|Haziran|Temmuz|Ağustos|Eylül|Ekim|Kasım|Aralık';
+  /* Açılmış birimlerin son sözcüğü (okun sağındaki sayıdan sonra gelirse ek ona geçer) */
+  const BIRIM_SOZ = [...new Set(Object.values(BIRIM).map(v => v.split(' ').pop()))].sort((a, b) => b.length - a.length).join('|');
+  /* "255" + "den" → "255'ten" (sayı rakamla kalır, ek okunuşa uyar) */
+  function sayiyaEk(n, ek) {
+    const son = sayiSon(n);
+    const o = son && ekle(son, ek);
+    return o ? n + "'" + o.slice(son.length) : null;
   }
 
   function okunus(metin) {
     let t = ' ' + String(metin || '') + ' ';
+    /* Mikro işareti (U+00B5) Yunan mü'süne: "43,9 µas" → birim tablosundaki μas */
+    t = t.replace(/µ/g, 'μ');
+    /* Kısaltmalar (denetim A3-10): "Falchi ve ark. 2016", "Caleb vd., …", "ort. 3682 metre", "St. Petersburg" */
+    const kisaltma = (re, yerine) => { t = t.replace(re, (m, o, i, s) => o + yerine + (/^\s*$/.test(s.slice(i + m.length)) ? '.' : '')); };
+    kisaltma(/(^|[\s(])(?:ve\s)?ark\./g, 've arkadaşları');
+    kisaltma(/(^|[\s(])vd\./g, 've diğerleri');
+    kisaltma(/(^|[\s(])vb\./g, 've benzeri');
+    kisaltma(/(^|[\s(])vs\./g, 'vesaire');
+    kisaltma(/(^|[\s(])ort\./g, 'ortalama');
+    kisaltma(/(^|[\s(])örn?\./g, 'örneğin');
+    kisaltma(/(^|[\s(])bkz\./g, 'bakınız');
+    t = t.replace(/(^|[\s(])St\.\s?(?=[A-ZÇĞİÖŞÜ])/g, '$1Saint ').replace(/(^|[\s(])Dr\.\s?(?=[A-ZÇĞİÖŞÜ])/g, '$1Doktor ').replace(/(^|[\s(])Prof\.\s?(?=[A-ZÇĞİÖŞÜ])/g, '$1Profesör ');
+    /* Milyonda / milyarda bir: "9340 ppm" → milyonda 9340 */
+    t = t.replace(new RegExp('(\\d[\\d.,]*)\\s?pp([mb])(?![' + H + '])', 'g'), (m, n, b) => (b === 'm' ? 'milyonda ' : 'milyarda ') + n);
     /* Özel adlar: "Sgr A*", "M87*" → yıldız */
     t = t.replace(new RegExp('([A-Za-z]\\d*)\\*' + EK, 'g'), (m, a, ek) => { const o = ekli('yıldız', ek); return o ? a + ' ' + o : m; });
     t = t.replace(/\s&\s/g, ' ve ');
     /* Tarih kısaltmaları (d20 Astronominin tarihi): "MÖ 240" → "milattan önce 240"; MS yalnız sayıdan önce (ms ≠ MS) */
-    t = t.replace(/(^|[\s(–-])MÖ(?=\s|\.|,|\))/g, '$1milattan önce').replace(/(^|[\s(–-])MS(?=\s\d)/g, '$1milattan sonra');
+    t = t.replace(/(^|[\s(–~≈-])MÖ(?=\s|\.|,|\))/g, '$1milattan önce').replace(/(^|[\s(–~≈-])MS(?=\s\d)/g, '$1milattan sonra');
     /* Binlik ayraç (veride ondalık ayraç virgül): "14.500" → "14500"; nokta cümle sonu sanılmasın */
     t = t.replace(/(\d)\.(?=\d{3}(?!\d))/g, '$1');
     /* Alt simge: H₂ → H 2 */
@@ -124,18 +203,24 @@
     /* İzotop: üst simgeli kütle numarası + element (¹H → hidrojen 1, ⁴He → helyum 4); pozitron, nötrino */
     const ELEMENT = { H: 'hidrojen', He: 'helyum', Li: 'lityum', Be: 'berilyum', B: 'bor', C: 'karbon', N: 'azot', O: 'oksijen', Ne: 'neon', Mg: 'magnezyum', Si: 'silisyum', Fe: 'demir', Ni: 'nikel', U: 'uranyum' };
     t = t.replace(/(^|[\s(;,])([⁰¹²³⁴⁵⁶⁷⁸⁹]+)([A-Z][a-z]?)(?![A-Za-z])/g, (m, o, u, e) => (ELEMENT[e] ? o + ELEMENT[e] + ' ' + [...u].map(c => UST[c]).join('') : m));
-    t = t.replace(/(^|[\s(;,])e⁺(?![A-Za-z])/g, '$1pozitron').replace(/(^|[\s(;,])e⁻(?![A-Za-z])/g, '$1elektron');
+    /* Tek başına e⁻ / e⁺ parçacıktır; arkasından üs rakamı gelirse bilimsel gösterimdir (e⁻⁴⁰⁷ = e üzeri eksi 407, A3-04) */
+    t = t.replace(/(^|[\s(;,])e⁺(?![A-Za-z⁰¹²³⁴⁵⁶⁷⁸⁹·])/g, '$1pozitron').replace(/(^|[\s(;,])e⁻(?![A-Za-z⁰¹²³⁴⁵⁶⁷⁸⁹·])/g, '$1elektron');
     /* "(+BAO)": ek veriyle birlikte */
     t = t.replace(/\(\+([A-ZÇĞİÖŞÜ][A-Za-zÇĞİÖŞÜçğıöşü]+)\)/g, '($1 ile)');
     /* Tablolarda "y": sayıdan sonra iki noktayla yaş ("20 y: 7,3 mm"), aksi hâlde yıl ("11,86 y") */
     t = t.replace(/(\d) y(?=\s?:)/g, '$1 yaş').replace(/(\d) y(?=\s*(?:[·,;)]|$))/g, '$1 yıl');
     /* Güneş ve Dünya birimleri (tamlama: "M☉'in" → Güneş kütlesinin, "M☉'lik" → Güneş kütlelik) */
-    const gd = { 'M☉': 'Güneş kütlesi', 'L☉': 'Güneş ışınımı', 'R☉': 'Güneş yarıçapı', 'M⊕': 'Dünya kütlesi', 'R⊕': 'Dünya yarıçapı' };
-    t = t.replace(new RegExp('([MLR][☉⊕])' + EK, 'g'), (m, s, ek) => {
+    const gd = { 'M☉': 'Güneş kütlesi', 'L☉': 'Güneş ışınımı', 'R☉': 'Güneş yarıçapı', 'T☉': 'Güneş sıcaklığı', 'M⊕': 'Dünya kütlesi', 'R⊕': 'Dünya yarıçapı' };
+    t = t.replace(new RegExp('([MLRT][☉⊕])' + EK, 'g'), (m, s, ek) => {
       if (!gd[s]) return m;
       const o = ekli(gd[s], ek, true);
       return o ? ' ' + o : ' ' + gd[s] + "'" + ek;
     });
+    /* Kalan ☉ / ⊕ alt simgesi (A7-13): "δ☉" → delta Güneş, "ρ⊕" → ro Dünya */
+    t = t.replace(/\s?☉/g, ' Güneş ').replace(/\s?⊕/g, ' Dünya ');
+    /* Ara yön: "1° KB'si" → 1 derece kuzeybatısı, "5,4° GD'su" → güneydoğusu */
+    const ARA_YON = { KB: 'kuzeybatı', KD: 'kuzeydoğu', GB: 'güneybatı', GD: 'güneydoğu' };
+    t = t.replace(new RegExp('(°|derece)\\s?(KB|KD|GB|GD)' + EK + '(?![' + H + '\\d])', 'g'), (m, d, y, ek) => { const o = ekli(ARA_YON[y], ek); return o ? (d === '°' ? ' derece ' : d + ' ') + o : m; });
     /* Derece + yön harfi: "41° K" → 41 derece kuzey */
     t = t.replace(new RegExp('°\\s?([KGDB])' + EK + '(?![' + H + '\\d])', 'g'), (m, y, ek) => { const o = ekli(YON[y], ek); return o ? ' derece ' + o : m; });
     /* Santigrat: "°C'nin" → santigrat derecenin */
@@ -151,51 +236,82 @@
         /* Tek başına "g": tablolarda gün ("88 g ·"), metinde gram ("245 g helyum") */
         let tek = !/[/\s]/.test(b);
         if (tek && b === 'g' && !ek) { const sonra = tum.slice(yer + m.length).replace(/^\s+/, ''); if (sonra && !/^[·,;()]/.test(sonra)) tek = false; }
-        const o = ekli(birimOku(b, tek), ek);
+        /* T, G, L: "G yıldızı", "T Tauri" gibi ad ve tür sözcüklerinin önünde birim değil */
+        if (BAGLAMLI.has(b) && !ek && BAGLAM_DEGIL.test(tum.slice(yer + m.length))) return m;
+        /* ... ve sayıdan boşlukla ayrılmışsa; ad içindeki rakama bitişik harf birim değil ("SPT-3G", "XENON1T", "2L bölü c") */
+        if (BAGLAMLI.has(b) && (!/\s$/.test(n) || /[A-Za-z\-]$/.test(tum.slice(0, yer).replace(/[\d,.]+$/, '')))) return m;
+        const o = birimEkli(birimOku(b, tek), ek);
         return o ? n.trim() + ' ' + o : m;
       });
     };
     sayiBirim();
+    /* Parantezli payda: "W/(m² K⁴)", "foton/(cm² × s × Å)" → içindeki birimler de açılır */
+    t = t.replace(new RegExp('\\/\\(((?:\\s*[·×]?\\s*' + ATOM + US + '?)+)\\s*\\)', 'g'), (m, ic) => '/(' + birimOku(ic).replace(/·/g, ' × ') + ')');
     /* Eğik çizgili birim zinciri sayısız da açılır (km/s, W/m²) */
+    /* Tek harfli bağlamlı birim (T, G, L) sayısız zincirde yalnız çok harfli birimden sonra: "MHz/T" tesla, "R²/G" değil */
+    const baglamliZincir = b => { const p = b.split('/').map(x => x.replace(/[²³⁴⁻¹]/g, '')); return p.some(x => BAGLAMLI.has(x)) && (p[0].length === 1 || BAGLAMLI.has(p[0])); };
     t = t.replace(new RegExp('(^|[^' + H + '\\d])(' + ATOM + US + '?(?:\\/' + ATOM + US + '?)+)' + EK + SON, 'g'), (m, o, b, ek) => {
+      if (baglamliZincir(b)) return m;
       const s = ekli(birimOku(b), ek);
       return s ? o + s : m;
     });
     /* Sayı ya da kelime / birim: "parçacık/cm³", "kez/saniye", "~1000/s" → bölü */
-    t = t.replace(new RegExp('([' + H + '\\d])\\/(' + UE + ')' + EK + SON, 'g'), (m, a, b, ek) => {
+    t = t.replace(new RegExp('([' + H + '\\d⁰¹²³⁴⁵⁶⁷⁸⁹])\\s?\\/(' + UE + ')' + EK + SON, 'g'), (m, a, b, ek) => {
+      if (BAGLAMLI.has(b.split('/')[0].replace(/[²³⁴⁻¹]/g, ''))) return m;
       const s = ekli(birimOku(b), ek);
       return s ? a + ' bölü ' + s : m;
     });
     /* Çok harfli birim sayısız da açılır ("km'ye çevir"; AB yalnız ekliyse: "AB'ye çevir");
        tek harfliler (K, m, s) sayısız açılmaz */
-    t = t.replace(new RegExp('(^|[^' + H + '\\d/])(km|cm|mm|nm|μm|kg|Mpc|kpc|MHz|THz|MeV|AB(?=[\'’]))([²³])?' + EK + SON, 'g'), (m, o, b, us, ek) => {
+    t = t.replace(new RegExp('(^|[^' + H + '\\d/])(km|cm|mm|nm|μm|kg|Mpc|kpc|Gpc|MHz|THz|kHz|GHz|μeV|peV|keV|MeV|GeV|TeV|PeV|eV|kPa|hPa|GPa|μT|nT|μs|μas|mSv|μSv|Å|AB(?=[\'’]))([²³])?' + EK + SON, 'g'), (m, o, b, us, ek) => {
       const s = ekli(birimOku(b + (us || '')), ek);
       return s ? o + s : m;
     });
+    /* Açılmış birimden sonra eğik çizgi "bölü" ("4,41 J/kalori" → jul bölü kalori, "MeV/nükleon"; "ya da" değil) */
+    t = t.replace(new RegExp('(?<![' + H + '])(' + BIRIM_SOZ + ')\\/(?=[' + H + '\\d])', 'g'), '$1 bölü ');
     /* Yunan harfi + ek: "ζ'dan" → zetadan */
     t = t.replace(/([α-ωΑ-Ω])['’]([a-zçğıöşü]+)/g, (m, h, ek) => { const o = YUNAN[h] && ekle(YUNAN[h], ek); return o ? ' ' + o : m; });
     /* Derece, yay dakikası/saniyesi: ek açılmış kelimeye uyar ("90°'dir" → 90 derecedir) */
     t = t.replace(/\s?°\s?C(?![A-Za-zÇĞİÖŞÜçğıöşü])/g, ' santigrat derece').replace(/°(?=\d)/g, ' derece ').replace(/′(?=\d)/g, ' yay dakikası ');
     const yay = { '°': ['derece', false], '′': ['yay dakikası', true], '″': ['yay saniyesi', true] };
     t = t.replace(/([°′″])(?:['’]([a-zçğıöşü]+))?/g, (m, s, ek) => { const [k, iy] = yay[s]; const o = ekli(k, ek, iy); return ' ' + (o || k + (ek || '')); });
-    /* Üsler: harften sonra ² ³ → kare / küp (ek uyar: "c²'ye" → c kareye); sayıdan ya da harften sonra diğerleri → "üzeri" */
-    t = t.replace(/([A-Za-zÇĞİÖŞÜçğıöşüα-ωΑ-Ω)])([²³])(?:['’]([a-zçğıöşü]+))?/g, (m, a, u, ek) => { const k = u === '²' ? 'kare' : 'küp'; return a + ' ' + (ekli(k, ek) || k + (ek ? "'" + ek : '')) + ' '; });
+    /* Üslü mutlak değer: "|ψ|²" → mutlak değer (psi) kare (üs kuralından önce) */
+    t = t.replace(/\|([^|\n]{1,40})\|(?=[²³⁴⁵⁶⁷⁸⁹])/g, ' mutlak değer ($1)');
+    /* Formül harfleri (A3-07): türev noktası "Ṗ" → P nokta; "ℓ" → l; "ħ" → h bar */
+    t = t.replace(/[ṖĖṀṄṘṪẋẏżṁṙ]/g, h => ' ' + NOKTALI[h] + ' nokta ').replace(/ℓ/g, 'l').replace(/ħ(?=[²³⁴])/g, ' h bar').replace(/ħ/g, ' h bar ');
+    /* Kökler: "⁴√2" → dördüncü kök 2, "³√x" → küpkök x (karekök gibi) */
+    const KOK = { '²': 'karekök', '³': 'küpkök', '⁴': 'dördüncü kök', '⁵': 'beşinci kök', '⁶': 'altıncı kök', '⁷': 'yedinci kök', '⁸': 'sekizinci kök', '⁹': 'dokuzuncu kök', 'ⁿ': "n'inci kök" };
+    t = t.replace(/([²³⁴⁵⁶⁷⁸⁹ⁿ])√\s?/g, (m, u) => ' ' + KOK[u] + ' ');
+    /* Kesir işaretleri: "1½" → 1 buçuk; "T½" yarılanma ömrü; tek başına "½" → bir bölü iki */
+    t = t.replace(/([Tt])½/g, ' yarılanma ömrü ').replace(/(\d)([½¼¾])/g, (m, d, k) => d + ' ' + (KESIR[k][1] || KESIR[k][0]) + ' ').replace(/[½¼¾⅓⅔]/g, k => ' ' + KESIR[k][0] + ' ');
+    /* Üsler: harften sonra ² ³ → kare / küp (ek uyar: "c²'ye" → c kareye); sayıdan ya da harften sonra diğerleri → "üzeri".
+       Arkasından başka üs rakamı ya da ondalık noktası gelirse (")²⁰", "e⁻²·⁵") kare değil, üs tam okunur (A3-05). */
+    const USR = '⁰¹²³⁴⁵⁶⁷⁸⁹';
+    t = t.replace(new RegExp('([A-Za-zÇĞİÖŞÜçğıöşüα-ωΑ-Ω)\\]])([²³])(?![' + USR + '⁻·])(?:[\'’]([a-zçğıöşü]+))?', 'g'), (m, a, u, ek) => { const k = u === '²' ? 'kare' : 'küp'; return a + ' ' + (ekli(k, ek) || k + (ek ? "'" + ek : '')) + ' '; });
     /* Sayıdan sonra tek ² / ³: "3²" → 3 kare (10²⁶ gibi çok basamaklı üs "üzeri" kalır) */
     /* 10'un kuvveti bilimsel gösterimde "10 üzeri 3" okunur */
-    t = t.replace(/(\d+(?:,\d+)?)([²³])(?![⁻⁰¹²³⁴⁵⁶⁷⁸⁹])(?:['’]([a-zçğıöşü]+))?/g, (m, a, u, ek) => { if (a === '10') return m; const k = u === '²' ? 'kare' : 'küp'; return a + ' ' + (ekli(k, ek) || k + (ek ? "'" + ek : '')) + ' '; });
-    t = t.replace(/([0-9A-Za-z)])([⁻⁰¹²³⁴⁵⁶⁷⁸⁹]+)/g, (m, a, u) => {
-      const s = u.split('').map(c => UST[c]).join('');
+    t = t.replace(new RegExp('(\\d+(?:,\\d+)?)([²³])(?![' + USR + '⁻·])(?:[\'’]([a-zçğıöşü]+))?', 'g'), (m, a, u, ek) => { if (a === '10') return m; const k = u === '²' ? 'kare' : 'küp'; return a + ' ' + (ekli(k, ek) || k + (ek ? "'" + ek : '')) + ' '; });
+    /* Üs dizisi; içindeki "·" ondalık ayracıdır: "2¹·⁵" → 2 üzeri 1,5; Yunan harfinden sonra da: "1/λ⁴" → üzeri 4 */
+    t = t.replace(new RegExp('([0-9A-Za-zα-ωΑ-Ω)\\]])(⁻?[' + USR + ']+(?:·[' + USR + ']+)?)', 'g'), (m, a, u) => {
+      const s = u.split('').map(c => (c === '·' ? ',' : UST[c])).join('');
       return a + ' üzeri ' + (s[0] === '-' ? 'eksi ' + s.slice(1) : s);
     });
-    t = t.replace(/\[(Fe|M|X)\/H\]/g, '$1 bölü H').replace(/\^\s?([-−]?[\d,]+)/g, (m, s) => ' üzeri ' + (/^[-−]/.test(s) ? 'eksi ' + s.slice(1) : s)).replace(/\^\s?\(/g, ' üzeri (');
+    /* Üst simge harf: "(1 − p)ᴺ" → üzeri N */
+    t = t.replace(/([0-9A-Za-zα-ωΑ-Ω)\]])([ⁿᴺⁱˣᵏᵐᵗ])/g, (m, a, u) => a + ' üzeri ' + UST_HARF[u]);
+    t = t.replace(/\[(Fe|M|X)\/H\]/g, '$1 bölü H').replace(/\^\s?([-−]?[\d,]+)/g, (m, s) => ' üzeri ' + (/^[-−]/.test(s) ? 'eksi ' + s.slice(1) : s)).replace(/\^\s?\(/g, ' üzeri (').replace(/\^\s?(?=[A-Za-zα-ωΑ-Ω])/g, ' üzeri ');
+    /* Köşeli parantez formülde parantez gibi okunur */
+    t = t.replace(/\[/g, '(').replace(/\]/g, ')');
     sayiBirim();
+    /* Alt simge harf: "mₑ" → m e */
+    t = t.replace(/[ₐₑₒₓₕₖₗₘₙₚₛₜ]/g, h => ' ' + 'aeoxhklmnpst'['ₐₑₒₓₕₖₗₘₙₚₛₜ'.indexOf(h)] + ' ');
     /* Yunan harfleri ve alt çizgi */
     t = t.replace(/[α-ωΑ-Ω]/g, h => YUNAN[h] ? ' ' + YUNAN[h] + ' ' : h);
     t = t.replace(/\s?_(?=[A-Za-zÇĞİÖŞÜçğıöşü0-9])/g, ' ');
     /* İşaretler */
     t = t.replace(/√\s?/g, ' karekök ');
     t = t.replace(/\s?≈\s?/g, ' yaklaşık ');
-    t = t.replace(/~\s?/g, 'yaklaşık ');
+    t = t.replace(/[~∼]\s?/g, 'yaklaşık ');
+    t = t.replace(/\s?≳\s?/g, ' yaklaşık en az ').replace(/\s?≲\s?/g, ' yaklaşık en çok ');
     t = t.replace(/\s?←\s?/g, ', kaynağı ').replace(/\s?↔\s?/g, ' ile ');
     t = t.replace(/\s?×\s?/g, ' çarpı ');
     t = t.replace(/\s?±\s?/g, ' artı eksi ');
@@ -203,6 +319,19 @@
     t = t.replace(/\s?≤\s?/g, ' küçük ya da eşittir ');
     t = t.replace(/\s?≥\s?/g, ' büyük ya da eşittir ');
     t = t.replace(/\s?≫\s?/g, ' çok büyüktür ').replace(/\s?≪\s?/g, ' çok küçüktür ');
+    /* Geçiş oku (A3-11): iki sayı ya da tek harf arasında "…'den …'e": "n→1" → n'den 1'e,
+       "255 → 288 K" → 255'ten 288 kelvine, "15 Şubat 1332 → 1 Mart 1333" → 1332'den 1 Mart 1333'e.
+       Öteki oklar (sonuç, sıra) ", yani" kalır. */
+    t = t.replace(new RegExp('(^|[\\s(:;,])([A-Za-z]|\\d[\\d,]*)\\s?→\\s?(\\d[\\d,]*|[A-Za-z](?![' + H + ']))((?:\\s(?:' + AYLAR + ')\\s\\d+)|\\s(?:' + BIRIM_SOZ + ')(?![' + H + ']))?(?=\\s?[,;:)·]|\\s\\(|\\.(?!\\d)|\\s*$)', 'g'), (m, o, a, b, son, yer, tum) => {
+      /* "10 × 50 → 5 mm": soldaki sayı bir işlemin parçasıysa geçiş değil */
+      if (/(?:çarpı|bölü|artı|eksi|eşittir|üzeri|[×÷=+\-−/^])\s*$/.test(tum.slice(0, yer + o.length))) return m;
+      const sol = gecisEk(a, 'den');
+      let sag;
+      if (son && /\d$/.test(son)) { const y = son.trim().split(' '); const s2 = sayiyaEk(y[y.length - 1], 'e'); sag = s2 && b + ' ' + y.slice(0, -1).join(' ') + ' ' + s2; }
+      else if (son) { const w = son.trim(); const e = ekle(w, 'e'); sag = e && b + ' ' + e; }
+      else sag = gecisEk(b, 'e');
+      return sol && sag ? o + sol + ' ' + sag : m;
+    });
     t = t.replace(/\s?→\s?/g, ', yani ');
     t = t.replace(/\s=\s|=/g, ' eşittir ');
     /* Kuyruklu yıldız adı "109P/Swift-Tuttle": eğik çizgi okunmaz */
@@ -220,6 +349,8 @@
     });
     t = t.replace(/ · /g, ', ').replace(/·/g, ' ');
     t = t.replace(/\s>\s/g, ' büyüktür ').replace(/\s<\s/g, ' küçüktür ');
+    /* ">1,2 milyon" → 1,2 milyondan fazla (A3-11: "1,2 üstü milyon" değil) */
+    t = t.replace(/([<>])\s?(\d[\d.,]*)\s(bin|milyon|milyar|trilyon)(?![a-zçğıöşü])/g, (m, k, n, c) => n + ' ' + ekle(c, 'den') + (k === '>' ? ' fazla' : ' az'));
     t = t.replace(/>\s?(\d[\d.,]*)/g, '$1 üstü');
     t = t.replace(/<\s?(\d[\d.,]*)/g, '$1 altı');
     /* Sayı aralığı "2–55" → "2 ile 55" */
@@ -233,7 +364,7 @@
     t = t.replace(/(\S)\+(?=[\s,.;])/g, '$1 üstü');
     t = t.replace(/(\d)\+(?=\d)/g, '$1 artı ');
     /* Yüzde */
-    t = t.replace(/%\s?(?=\d)/g, 'yüzde ');
+    t = t.replace(/%\s?(?=\d)/g, 'yüzde ').replace(/\(%\)/g, '(yüzde)');
     /* "−%2,4 ile +%0,8" → "eksi yüzde 2,4 ile artı yüzde 0,8"; saat dilimi "UTC+3" → "UTC artı 3" */
     t = t.replace(/(^|[\s(])([+−])(?=yüzde)/g, (m, o, i) => o + (i === '+' ? 'artı ' : 'eksi '));
     t = t.replace(/\b(UTC|GMT)([+−-])(\d)/g, (m, z, i, n) => z + (i === '+' ? ' artı ' : ' eksi ') + n);

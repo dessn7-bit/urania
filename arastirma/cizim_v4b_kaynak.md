@@ -79,3 +79,4 @@ Hesaplar Node ile yapıldı (çizim kodundaki formüllerin aynısı).
 | hata günde ≈ 11 km | Ders d26 bölüm 11 ("kabaca 11 km"; Wikipedia 11,4 km) | — |
 | fabrika ayarı 10,23 → 10,22999999543 MHz | Ders d26 bölüm 11 | — |
 | çubuklar ölçekli (0–50 μs) | çizim kararı | — |
+- 2026-11-08 denetim düzeltmesi (A5-05): KAYNAK.gr (Tests of general relativity) UNT arşiv kopyasından en.wikipedia.org kalıcı sürümüne (oldid=632962940) çevrildi; çizimdeki 574,10 / 531,63 / 42,98 değerleri bu sürümde var.

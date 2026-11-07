@@ -33,6 +33,9 @@
   const mutlakD = e => yonDinle(e, 'mutlak'), goreliD = e => yonDinle(e, 'goreli');
 
   function f(x, b) { return x == null || !isFinite(x) ? '—' : Number(x).toFixed(b == null ? 1 : b); }
+  /* Rapor bozuk durumda başvurulan ekran: bir satır (bozuk depo kaydı gibi) hata atarsa rapor yine yazılsın (A4-05) */
+  function guvenli(fn) { try { return fn(); } catch (e) { return 'okunamadı (' + String(e && e.message || e).slice(0, 80) + ')'; } }
+  function isoTarih(x) { const d = new Date(x); return isNaN(d) ? '—' : d.toISOString().slice(0, 16); }
 
   async function rapor() {
     const U = window.Urania;
@@ -42,15 +45,22 @@
     let depo = '—';
     try { const t = await navigator.storage.estimate(); depo = Math.round(t.usage / 1024) + ' KB / ' + Math.round(t.quota / 1048576) + ' MB'; } catch (e) { /* desteklenmiyor */ }
     let sw = '—';
-    try { const ks = await caches.keys(); sw = ks.filter(x => x.indexOf('urania-') === 0).join(', ') || 'önbellek yok'; } catch (e) { /* yok */ }
+    /* Sürümsüz haber görseli önbelleği (sw.js GORSEL) sürüm sayılmaz; ayrıca yazılır */
+    let gorsel = '—';
+    try {
+      const ks = await caches.keys();
+      sw = ks.filter(x => x.indexOf('urania-') === 0 && x !== 'urania-haber-gorsel').join(', ') || 'önbellek yok';
+      gorsel = ks.includes('urania-haber-gorsel') ? (await (await caches.open('urania-haber-gorsel')).keys()).length + ' görsel' : 'yok';
+    } catch (e) { /* yok */ }
     const ar = window.UraniaAR ? window.UraniaAR.st : null;
-    const defter = (U.oku('defter', []) || []).length;
+    const defter = U.diziOku('defter').length;   // dizi değilse 0 (defter.js de böyle sayar; "undefined kayıt" yazmasın, A4-09)
     let gpI = U.oku('gp_istasyon', null), gpD = U.oku('gp_dizi', null);
     if (!gpI || !Array.isArray(gpI.ls) || !Number.isFinite(gpI.alindi)) gpI = null;
     if (!gpD || !Array.isArray(gpD.diziler)) gpD = null;
+    else gpD = Object.assign({}, gpD, { diziler: gpD.diziler.filter(d => d && typeof d === 'object') });
     const satir = [
       'URANIA TANI — ' + new Date().toISOString(),
-      'Sürüm (önbellek): ' + sw,
+      'Sürüm (önbellek): ' + sw + ' · haber görselleri ' + gorsel,
       'Tarayıcı: ' + navigator.userAgent,
       'Ekran: ' + screen.width + '×' + screen.height + ' · dpr ' + (window.devicePixelRatio || 1) + ' · yön açısı ' + ((screen.orientation && screen.orientation.angle) || 0) + ' · ' + (matchMedia('(display-mode: standalone)').matches ? 'kurulu uygulama' : 'tarayıcı sekmesi'),
       'Ağ: ' + (navigator.onLine ? 'çevrimiçi' : 'çevrimdışı') + ' · saat dilimi ' + Intl.DateTimeFormat().resolvedOptions().timeZone,
@@ -65,8 +75,8 @@
       '',
       'SERVİSLER:',
       ...Object.keys(servisler).map(a => '  ' + a + ': ' + servisler[a].durum + ' · ' + servisler[a].zaman.slice(11, 19) + (servisler[a].ayrinti ? ' · ' + servisler[a].ayrinti : '')),
-      '  Uydu öğeleri: ' + (gpI ? gpI.ls.filter(o => o && o.OBJECT_NAME).map(o => o.OBJECT_NAME + ' ' + String(o.EPOCH).slice(0, 16)).join(', ') + ' · alındı ' + new Date(gpI.alindi).toISOString().slice(0, 16) : '—') +
-        ' · Starlink dizisi: ' + (gpD ? (gpD.diziler.map(d => d.kod + ' (' + d.adet + ', ' + d.yukseklik + ' km)').join(', ') || 'yok') : '—'),
+      '  Uydu öğeleri: ' + guvenli(() => (gpI ? gpI.ls.filter(o => o && o.OBJECT_NAME).map(o => o.OBJECT_NAME + ' ' + String(o.EPOCH).slice(0, 16)).join(', ') + ' · alındı ' + isoTarih(gpI.alindi) : '—')) +
+        ' · Starlink dizisi: ' + guvenli(() => (gpD ? (gpD.diziler.map(d => d.kod + ' (' + d.adet + ', ' + d.yukseklik + ' km)').join(', ') || 'yok') : '—')),
       '',
       'DEPO: ' + depo + ' · defter ' + defter + ' kayıt',
       '',
@@ -100,8 +110,10 @@
       <pre class="tani-rapor" id="tnRapor"></pre>`;
     el.querySelector('#tnYenile').addEventListener('click', yenile);
     el.querySelector('#tnKopyala').addEventListener('click', async () => {
-      const metin = await rapor();
       const d = el.querySelector('#tnDurum');
+      let metin;
+      try { metin = await rapor(); } catch (e) { d.textContent = 'Rapor hazırlanamadı: ' + (e && e.message || e); return; }
+      el.querySelector('#tnRapor').textContent = metin;
       try { await navigator.clipboard.writeText(metin); d.textContent = 'Kopyalandı. Sohbete yapıştırabilirsin.'; }
       catch (e) {
         /* Pano izni yoksa metni seçili bırak; kullanıcı uzun basıp kopyalar */
@@ -111,7 +123,11 @@
       }
     });
   }
-  async function yenile() { if (el) el.querySelector('#tnRapor').textContent = await rapor(); }
+  async function yenile() {
+    if (!el) return;
+    try { el.querySelector('#tnRapor').textContent = await rapor(); }
+    catch (e) { el.querySelector('#tnRapor').textContent = 'Rapor hazırlanamadı: ' + (e && e.message || e); }
+  }
   function goster() {
     if ('ondeviceorientationabsolute' in window) window.addEventListener('deviceorientationabsolute', mutlakD);
     window.addEventListener('deviceorientation', goreliD);

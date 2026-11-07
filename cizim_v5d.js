@@ -46,7 +46,7 @@
     seyfert: { ad: 'Wikipedia: Seyfert galaxy', url: 'https://en.wikipedia.org/wiki/Seyfert_galaxy' },
     k3c273: { ad: 'Wikipedia: 3C 273', url: 'https://en.wikipedia.org/wiki/3C_273' },
     nasaNeptun: { ad: 'NASA Neptune Fact Sheet', url: 'https://nssdc.gsfc.nasa.gov/planetary/factsheet/neptunefact.html' },
-    isiktanHizli: { ad: 'Wikipedia: Superluminal motion', url: 'https://www.wikiwand.com/en/articles/Superluminal_motion' },
+    isiktanHizli: { ad: 'Wikipedia: Superluminal motion', url: 'https://en.wikipedia.org/wiki/Superluminal_motion' },
     yerelGrup: { ad: 'Wikipedia: Local Group', url: 'https://en.wikipedia.org/wiki/Local_Group' },
     laniakea: { ad: 'Tully ve ark. 2014, Laniakea (arXiv:1409.0880)', url: 'https://arxiv.org/pdf/1409.0880' },
     sloan: { ad: 'Wikipedia: Sloan Great Wall', url: 'https://en.wikipedia.org/wiki/Sloan_Great_Wall' },
@@ -119,10 +119,12 @@
   });
 
   /* d45 · bölüm 9: kütle ekseni (Güneş kütlesi, doğrusal 0–5,6). Sınır tahminleri, ölçülen kütleler, kütle boşluğu (2–5). */
+  /* Ölçülen kütleler [değer, alt, üst, etiket]. J0348+0432: 2024 CHIME zamanlaması 1,806 ± 0,037 (ders bölüm 9; 2013'teki 2,01 ± 0,04 aşağı düzeltildi). */
+  const D45_OLCUM = [[1.44, 1.30, 1.59, 'J0030+0451 (NICER): 1,44'], [1.806, 1.769, 1.843, 'J0348+0432: 1,806 ± 0,037 (2024)'], [2.08, 2.01, 2.15, 'J0740+6620: 2,08 ± 0,07'], [2.35, 2.18, 2.52, 'J0952−0607: 2,35 ± 0,17']];
   C.ekle('d45-kutle-siniri', {
-    ders: 'd45', bolum: 9, oran: 1.06,
+    ders: 'd45', bolum: 9, oran: 1.06, olcum: D45_OLCUM,
     baslik: 'Nötron yıldızının kütle sınırı ve kütle boşluğu',
-    aciklama: 'Yatay eksen Güneş kütlesi cinsinden kütledir. Üstteki çubuklar en büyük kütle için yapılan tahminlerdir: 1939\'da Oppenheimer ve Volkoff\'un 0,7\'si, GW170817 birleşmesinden çıkan 2,01 ile 2,17 arası, 2026 çalışmasının 2,2 ile 2,3 arası, Kalogera ve Baym\'ın 2,2 ile 2,9 arası ve NASA\'nın kabaca 3\'ü. Ortadaki noktalar ölçülmüş nötron yıldızlarıdır; yatay çizgiler belirsizliktir. En ağırları 2\'nin biraz üstündedir; bu yüzden 0,7\'lik ilk sınır yanlış çıktı. Gölgeli bölge 2 ile 5 arasındaki kütle boşluğudur: burada çok az cisim gözlenmiştir. GW190814\'ün 2,59\'luk cismi bu boşluktadır ve büyük olasılıkla bir kara deliktir; GW170817\'den kalan yaklaşık 2,74\'lük cisim de saniyeler içinde kara deliğe çöktü.',
+    aciklama: 'Yatay eksen Güneş kütlesi cinsinden kütledir. Üstteki çubuklar en büyük kütle için yapılan tahminlerdir: 1939\'da Oppenheimer ve Volkoff\'un 0,7\'si, GW170817 birleşmesinden çıkan 2,01 ile 2,17 arası, 2026 çalışmasının 2,2 ile 2,3 arası, Kalogera ve Baym\'ın 2,2 ile 2,9 arası ve NASA\'nın kabaca 3\'ü. Ortadaki noktalar ölçülmüş nötron yıldızlarıdır; yatay çizgiler belirsizliktir. En ağırları 2\'nin biraz üstündedir; bu yüzden 0,7\'lik ilk sınır yanlış çıktı. PSR J0348+0432 için 2013\'te 2,01 ± 0,04 ölçülmüştü; 2024\'teki CHIME zamanlama çalışması kütleyi yaklaşık yüzde 10 düşük, 1,806 ± 0,037 buldu: çizimdeki nokta bu güncel değerdir. Gölgeli bölge 2 ile 5 arasındaki kütle boşluğudur: burada çok az cisim gözlenmiştir. GW190814\'ün 2,59\'luk cismi bu boşluktadır ve büyük olasılıkla bir kara deliktir; GW170817\'den kalan yaklaşık 2,74\'lük cismin de 5 ile 10 saniye içinde kara deliğe çöktüğü düşünülüyor.',
     kaynak: [KAYNAK.tov, KAYNAK.notronYildizi, KAYNAK.miller19],
     ciz(S) {
       const R = S.R;
@@ -146,7 +148,7 @@
       });
       /* ölçülen kütleler: nokta ve hata çubuğu */
       s += S.yazi(8, 188, 'Ölçülen nötron yıldızları', { boy: 14, renk: R.metin, kalin: true });
-      const olcum = [[1.44, 1.30, 1.59, 'J0030+0451 (NICER): 1,44'], [2.01, 1.97, 2.05, 'J0348+0432: 2,01 ± 0,04'], [2.08, 2.01, 2.15, 'J0740+6620: 2,08 ± 0,07'], [2.35, 2.18, 2.52, 'J0952−0607: 2,35 ± 0,17']];
+      const olcum = D45_OLCUM;
       olcum.forEach(([m, a, b, t], i) => {
         const y = 210 + i * 25;
         s += S.cizgi(ek.X(a), y, ek.X(b), y, { renk: R.metin, kalin: 2 }) + S.cizgi(ek.X(a), y - 5, ek.X(a), y + 5, { renk: R.metin, kalin: 1.5 }) + S.cizgi(ek.X(b), y - 5, ek.X(b), y + 5, { renk: R.metin, kalin: 1.5 });
@@ -154,7 +156,7 @@
         s += yz(ek.X(b) + 9, y, t);
       });
       /* boşluktaki cisimler: içi boş kare */
-      [[2.59, 'GW190814: 2,59', 'muhtemelen kara delik', 318], [2.74, 'GW170817 sonrası ≈2,74', 'çöktü: kara delik', 340]].forEach(([m, sol, sag, y]) => {
+      [[2.59, 'GW190814: 2,59', 'muhtemelen kara delik', 318], [2.74, 'GW170817 sonrası ≈2,74', 'çöktüğü düşünülüyor', 340]].forEach(([m, sol, sag, y]) => {
         s += S.kutu(ek.X(m) - 5, y - 5, 10, 10, { dolgu: R.zemin, renk: R.metin, kalin: 1.8 });
         s += yz(ek.X(m) - 10, y, sol, { hiza: 'end', kalin: true }) + yz(ek.X(m) + 10, y, sag);
       });
@@ -222,7 +224,7 @@
         logY: true,
         xIsaret: [[0, '0'], [200, '200'], [400, '400'], [600, '600'], [800, '800']],
         yIsaret: [[100, on(2)], [1e4, on(4)], [1e6, on(6)], [1e8, on(8)], [1e10, on(10)]],
-        xAd: 'tohumdan sonra geçen süre (milyon yıl)', yAd: 'kütle (Güneş kütlesi)', yAdUzak: 46
+        xAd: 'tohumdan sonra geçen süre (milyon yıl)', yAd: 'kütle (Güneş kütlesi)', yAdUzak: 44
       });
       let s = ek.svg;
       /* evrenin yaşı ve hedef kütle */
@@ -265,7 +267,7 @@
         logX: true, logY: true,
         xIsaret: [[1e5, on(5)], [1e6, on(6)], [1e7, on(7)], [1e8, on(8)], [1e9, on(9)], [1e10, on(10)]],
         yIsaret: [[1e-3, '0,001'], [0.1, '0,1'], [10, '10'], [1000, '1000']],
-        xAd: 'kara deliğin kütlesi (Güneş kütlesi)', yAd: 'yarıçap (AB)', yAdUzak: 50
+        xAd: 'kara deliğin kütlesi (Güneş kütlesi)', yAd: 'yarıçap (AB)', yAdUzak: 48
       });
       let s = '';
       s += S.kutu(ek.X(MH), 30, ek.X(1e10) - ek.X(MH), 250, { dolgu: R.yuzey2, renk: 'none', saydam: 0.7 });
@@ -385,7 +387,7 @@
   C.ekle('d47-anatomi', {
     ders: 'd47', bolum: 4, oran: 0.96,
     baslik: 'Samanyolu\'nun anatomisi, yandan ve ölçekli',
-    aciklama: 'Galaksi yandan, yatay ve dikey yönde aynı ölçekle çizildi. Genişlik yaklaşık 87.400 ışık yılıdır. Ortadaki ince parlak çizgi ince disktir: kalınlığı en çok 1500 ışık yılı, yani genişliğinin altmışta birinden az; Güneş, genç yıldızlar, gaz ve sarmal kollar buradadır. Onu saran soluk katman yaşlı ve metalce fakir yıldızların kalın diskidir; yoğunluğu düzlemden yaklaşık 1000 parsek, yani 3260 ışık yılı uzaklaştıkça 2,7 kat azalır. Merkezdeki şişkin bölge en içteki yaklaşık 10.000 ışık yılını kaplar ve yaşlı yıldızlarla doludur. Hepsini saran hale bu çizime sığmaz: küresel kümelerin bazıları merkezden 200.000 ışık yılından uzaktadır. Güneş düzlemin 5 ile 30 parsek kadar üstündedir; bu ölçekte o fark görünmez.',
+    aciklama: 'Galaksi yandan, yatay ve dikey yönde aynı ölçekle çizildi. Genişlik yaklaşık 87.400 ışık yılıdır. Ortadaki ince parlak çizgi ince disktir: kalınlığı en çok 1500 ışık yılı, yani genişliğinin yaklaşık altmışta biri; Güneş, genç yıldızlar, gaz ve sarmal kollar buradadır. Onu saran soluk katman yaşlı ve metalce fakir yıldızların kalın diskidir; yoğunluğu düzlemden yaklaşık 1000 parsek, yani 3260 ışık yılı uzaklaştıkça 2,7 kat azalır. Merkezdeki şişkin bölge en içteki yaklaşık 10.000 ışık yılını kaplar ve yaşlı yıldızlarla doludur. Hepsini saran hale bu çizime sığmaz: küresel kümelerin bazıları merkezden 200.000 ışık yılından uzaktadır. Güneş düzlemin 5 ile 30 parsek kadar üstündedir; bu ölçekte o fark görünmez.',
     kaynak: [KAYNAK.samanyolu, KAYNAK.freeman],
     ciz(S) {
       const R = S.R, k = 340 / 87400, cx = 200, cy = 170, rx = 43700 * k;
@@ -425,7 +427,7 @@
   C.ekle('d47-donme-egrisi', {
     ders: 'd47', bolum: 10, oran: 0.94,
     baslik: 'Dönme eğrisi: düz kalan hız ve dış kenardaki düşüş',
-    aciklama: 'Yatay eksen merkeze uzaklık, kiloparsek cinsinden; dikey eksen yıldızların ve gazın dönme hızıdır. Dolgulu bant gözlenen hızdır: geniş bir aralıkta saniyede yaklaşık 200 ile 220 kilometrede düz kalır, Güneş de bu banttadır. Kesikli eğri kaba bir hesaptır: yalnız görünen yıldızlar ve gaz olsaydı ve kütlenin hepsi içeride toplansaydı hız dışa doğru Kepler yasasıyla düşerdi; dış kenarda saniyede 110 kilometreye inerdi. Gözlenen hızın bu kadar yüksek kalması görünmeyen kütleye işaret eder. Kalın eğri Gaia verisiyle 2023\'te bulunan düşüştür: 19,5 ile 26,5 kiloparsek arasında yaklaşık 30 kilometre. Bu düşüşü 206 milyar Güneş kütlesi verir; bu, 2019 tahmininin yedide birinden azdır, ama yine de yıldızların toplam kütlesinin üç dört katıdır.',
+    aciklama: 'Yatay eksen merkeze uzaklık, kiloparsek cinsinden; dikey eksen yıldızların ve gazın dönme hızıdır. Dolgulu bant gözlenen hızdır: geniş bir aralıkta saniyede yaklaşık 200 ile 220 kilometrede düz kalır, Güneş de bu banttadır. Kesikli eğri kaba bir hesaptır: yalnız görünen yıldızlar ve gaz olsaydı ve kütlenin hepsi içeride toplansaydı hız dışa doğru Kepler yasasıyla düşerdi; Gaia ölçümlerinin bittiği 26,5 kiloparsekte saniyede 110 kilometreye, eksenin sonunda, 30 kiloparsekte 103 kilometreye inerdi. Gözlenen hızın bu kadar yüksek kalması görünmeyen kütleye işaret eder. Kalın eğri Gaia verisiyle 2023\'te bulunan düşüştür: 19,5 ile 26,5 kiloparsek arasında yaklaşık 30 kilometre. Bu düşüşü 206 milyar Güneş kütlesi verir; bu, 2019 tahmininin yedide birinden azdır, ama yine de yıldızların toplam kütlesinin üç dört katıdır.',
     kaynak: [KAYNAK.jiao, KAYNAK.donmeEgrisi, KAYNAK.samanyolu],
     ciz(S) {
       const R = S.R, v = (M, r) => Math.sqrt(GM * M / (r * KPC)) / 1000;
@@ -693,7 +695,7 @@
         xIsaret: [[0, '0'], [100, '100'], [200, '200'], [300, '300'], [400, '400'], [500, '500'], [600, '600'], [700, '700']],
         xAd: 'frekans (gigahertz)', yAd: 'değişim (büyütülmüş)', yAdUzak: 14
       });
-      /* alt ekseni sıfır çizgisine taşı: eksen svg'sinin yatay çizgisini kaldır, sıfıra çiz */
+      /* alt eksen (çentik ve sayılarıyla) altta kalır; sıfır çizgisi ayrıca, daha kalın çizilir */
       let s = ek.svg;
       const y0 = ek.Y(0);
       /* gölge ve leke alanları */

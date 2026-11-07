@@ -7,7 +7,7 @@
   function d(k) { return F.sabitler[k].deger; }
   /* Sayı okuma: ondalık için virgül ya da nokta; 1e9 gibi bilimsel yazım. "1.000" gibi binlik ayırıcı belirsizdir:
      sayı 1 okunur ama sonuçta uyarı çıkar. Sonsuz ve onaltılık (0x10) yazımlar reddedilir. */
-  let belirsiz = new Set();
+  let belirsiz = new Set(), tasan = [];   // tasan: sayı biçiminde ama sayıya sığmayan girdiler (1e400)
   const SAYI = /^[+-]?(\d+(\.\d*)?|\.\d+)(e[+-]?\d+)?$/i;
   function oku(id) {
     const ham = el.querySelector('#' + id).value.trim().replace(/\s/g, '').replace(/−/g, '-');
@@ -19,7 +19,8 @@
     else v = ham.replace(',', '.');
     if (!SAYI.test(v)) return NaN;
     const x = Number(v);
-    if (!isFinite(x)) return NaN;
+    /* 1e400 pozitif bir sayı ama Number'a sığmıyor: "Pozitif bir sayı yaz" yerine "çok büyük" denir (A4-13) */
+    if (!isFinite(x)) { tasan.push(id); return NaN; }
     /* "1.500" bin beş yüz mü, bir buçuk mu? Ondalık okunur ve not düşülür ("0.500" belirsiz değil) */
     if (/^[+-]?[1-9]\d{0,2}\.\d{3}$/.test(ham)) belirsiz.add(ham);
     return x;
@@ -238,8 +239,9 @@
       const kart = el.querySelector('#hk-' + k.id);
       const cikti = kart.querySelector('.sonuc');
       const yenile = () => {
-        belirsiz = new Set(); gecersiz = [];
+        belirsiz = new Set(); gecersiz = []; tasan = [];
         try { cikti.innerHTML = k.hesap(); } catch (e) { cikti.innerHTML = hata('Hesaplanamadı: ' + U.kacis(e.message)); }
+        if (tasan.length) { gecersiz = tasan.slice(); cikti.innerHTML = hata('Değer çok büyük: hesaplanamıyor.'); }
         kart.querySelectorAll('input').forEach(g => {
           const kotu = gecersiz.indexOf(g.id) >= 0;
           if (kotu) { g.setAttribute('aria-invalid', 'true'); g.setAttribute('aria-describedby', cikti.id); }

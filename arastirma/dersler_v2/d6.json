@@ -2,7 +2,7 @@
   "id": "d6",
   "unite": "yildizlar",
   "baslik": "Yıldızların Ölümü: Beyaz Cüceler, Süpernovalar ve Nötron Yıldızları",
-  "ozet": "Bir yıldızın nasıl öleceğini başlangıç kütlesi belirler: hafif yıldızlar gezegenimsi bulutsu ve beyaz cüce bırakarak sessizce söner, kütleli yıldızlar çekirdekleri çöküp süpernova olarak patlar. Bu derste beyaz cüceyi ve soğumasını, Chandrasekhar sınırını, demir çekirdeğin çöküşünü, nötrino uyarı ağını, Tip Ia süpernovaları ve novaları, tarihteki süpernovaları, nötron yıldızlarını ve atarcaları öğrenecek, vücudundaki ağır elementlerin nereden geldiğini göreceksin.",
+  "ozet": "Bir yıldızın nasıl öleceğini başlangıç kütlesi belirler: hafif yıldızlar gezegenimsi bulutsu ve beyaz cüce bırakarak sessizce söner, kütleli yıldızlar çekirdekleri çöküp süpernova olarak patlar. Bu derste beyaz cüceyi ve soğumasını, Chandrasekhar sınırını, demir çekirdeğin çöküşünü, nötrino uyarı ağını, Tip Ia süpernovaları ve novaları, tarihteki süpernovaları, nötron yıldızlarını ve atarcaları (pulsar) öğrenecek, vücudundaki ağır elementlerin nereden geldiğini göreceksin.",
   "on_bilgi": [
     "d4",
     "d5"
@@ -11,7 +11,7 @@
     {
       "baslik": "Ölümü kütle belirler",
       "paragraflar": [
-        "Bir yıldızın nasıl doğduğunu ve anakolda nasıl yaşadığını önceki derslerde gördün. Şimdi sona geliyoruz ve burada tek bir soru neredeyse her şeyi belirler: yıldız ne kadar kütleli? Kütle, çekirdeğin ne kadar sıkışıp ısınabileceğini, dolayısıyla hangi elementleri kaynaştırabileceğini ve sonunda geride nasıl bir artık kalacağını belirler. NASA'ya göre yaklaşık 8 Güneş kütlesinden (M☉) ağır bir yıldız yakıtını bitirince süpernova olarak patlar. Bundan hafif yıldızlar, Güneş de dahil, patlamadan ölür; dış katmanlarını yavaşça uzaya savurur.",
+        "Bir yıldızın nasıl doğduğunu ve anakolda nasıl yaşadığını önceki derslerde gördün. Şimdi sona geliyoruz ve burada tek bir soru neredeyse her şeyi belirler: yıldız ne kadar kütleli? Kütle, çekirdeğin ne kadar sıkışıp ısınabileceğini, dolayısıyla hangi elementleri kaynaştırabileceğini ve sonunda geride nasıl bir artık kalacağını belirler. NASA'ya göre yaklaşık 8 Güneş kütlesinden (M☉) ağır bir yıldız yakıtını bitirince süpernova olarak patlar. Bundan hafif yıldızlar, Güneş de dâhil, patlamadan ölür; dış katmanlarını yavaşça uzaya savurur.",
         "Kütlenin neden bu kadar belirleyici olduğunu d5'teki hidrostatik dengeden hatırlayabilirsin: yıldızın her katmanında içe çeken kütleçekimi ile dışa iten gaz basıncı dengededir. Kütlesi büyük yıldızda üstteki katmanların ağırlığı da büyüktür, bu yüzden denge daha sıcak ve daha yoğun bir çekirdekte kurulur. Wikipedia'nın yıldız evrimi maddesine göre yeterince kütleli yıldızlarda çekirdek, karbonu ve daha ağır elementleri kaynaştıracak sıcaklığa ve yoğunluğa ulaşır; Güneş mertebesindeki bir yıldız ise karbonu hiç tutuşturamaz. Kütle böylece bir merdiven gibi çalışır: hafif yıldız alt basamaklarda kalır, kütleli yıldız demire kadar tırmanır. Merdivenin hangi basamağında durulduğu, geride ne kalacağını da belirler.",
         "Sınırın kendisi de tam keskin değil. NASA 8 M☉ der; Wikipedia'nın yıldız evrimi maddesi girişte yaklaşık 10 M☉ ve üstündeki yıldızların patlayabileceğini yazar, kabaca 8 ile 12 M☉ arasındaki bazı yıldızların ise karbonu yakıp oksijen, neon ve magnezyumdan oluşan bir beyaz cüce bırakabileceğini söyler. Aynı madde, karbonun tamamen yanması için gereken kütle sınırının yıldızın metal oranı gibi etkenlere bağlı olduğunu belirtir. Bu derste yuvarlak değer olarak 8 M☉'i kullanacağız, ama bunun bir bant olduğunu aklında tut.",
         "Bir ayrıntı daha: en hafif yıldızlar henüz hiç ölmedi. Wikipedia'ya göre 0,1 M☉'lik bir kırmızı cüce yaklaşık 10 trilyon yıl yakıt yakabilir ve evren çok genç olduğu için hiçbir kırmızı cüce henüz evriminin ileri evrelerine varmadı. Evrenin yaşı yaklaşık 13,8 milyar yıl olduğuna göre, en erken doğmuş 0,1 M☉'lik bir kırmızı cüce bile ömrünün ancak binde biri kadarını yaşamış olabilir. Yani bu derste anlatılan ölümlerin hepsi, Güneş'ten biraz hafif ya da daha ağır yıldızların başına gelmiş ya da gelecek olaylardır. Wikipedia'nın beyaz cüce maddesine göre Samanyolu'ndaki yıldızların yüzde 97'sinden fazlası beyaz cüce olarak bitecek kütle aralığındadır; patlayan yıldızlar azınlıktır ama etkileri büyüktür.",
@@ -23,8 +23,8 @@
     {
       "baslik": "Hafif yıldızın son nefesi: gezegenimsi bulutsu",
       "paragraflar": [
-        "Güneş benzeri bir yıldız kırmızı dev evresinin sonunda çok kararsız hale gelir. Bu son evreye asimptotik dev kolu denir. Wikipedia'ya göre yıldız bu evrede güçlü bir yıldız rüzgârıyla toplam kütlesinin yüzde 50 ile 70'ini kaybedebilir. Ortada sıcak, çıplak bir çekirdek kalır ve sıcaklığı 100.000 K dolayına çıkar. Bu çekirdeğin morötesi ışığı, daha önce savrulmuş gazı iyonlaştırır; gaz parlamaya başlar. Gördüğümüz renkli kabuğa gezegenimsi bulutsu denir. Wikipedia'ya göre bu yolu yaklaşık 1 ile 8 M☉ arasındaki orta kütleli yıldızlar izler.",
-        "Ad yanıltıcıdır. Terimi büyük olasılıkla ilk kez 1780'lerde William Herschel kullandı; ama adın tam kökeni bilinmiyor. Küçük teleskopta yuvarlak bir disk gibi göründükleri için gezegene benzetilmişlerdir; gezegenlerle hiçbir ilgileri yoktur. Gaz merkezden saniyede birkaç kilometre hızla uzaklaşır ve birkaç on bin yıl içinde dağılıp görünmez olur. Bu, yıldızın milyarlarca yıllık ömrünün yanında çok kısa bir andır. Bu yüzden Samanyolu'nda kabaca 200 milyar yıldız varken bilinen gezegenimsi bulutsu sayısı yalnızca 3000 civarındadır.",
+        "Güneş benzeri bir yıldız kırmızı dev evresinin sonunda çok kararsız hâle gelir. Bu son evreye asimptotik dev kolu denir. Wikipedia'ya göre yıldız bu evrede güçlü bir yıldız rüzgârıyla toplam kütlesinin yüzde 50 ile 70'ini kaybedebilir. Ortada sıcak, çıplak bir çekirdek kalır ve sıcaklığı 100.000 K dolayına çıkar. Bu çekirdeğin morötesi ışığı, daha önce savrulmuş gazı iyonlaştırır; gaz parlamaya başlar. Gördüğümüz renkli kabuğa gezegenimsi bulutsu denir. Wikipedia'ya göre bu yolu yaklaşık 1 ile 8 M☉ arasındaki orta kütleli yıldızlar izler.",
+        "Ad yanıltıcıdır. Terimi büyük olasılıkla ilk kez 1780'lerde William Herschel kullandı; ama adın tam kökeni bilinmiyor. Küçük teleskopta yuvarlak bir disk gibi göründükleri için gezegene benzetilmişlerdir; gezegenlerle hiçbir ilgileri yoktur. Gaz merkezden saniyede birkaç kilometre hızla uzaklaşır ve birkaç on bin yıl içinde dağılıp görünmez olur. Bu, yıldızın milyarlarca yıllık ömrünün yanında çok kısa bir andır. Bu yüzden Samanyolu'nda kabaca 200 milyar yıldız varken bilinen gezegenimsi bulutsu sayısı yalnızca 3.000 civarındadır.",
         "Fotoğraflarda gördüğün şekiller şaşırtıcı derecede çeşitlidir. Wikipedia'ya göre gezegenimsi bulutsuların yalnızca yaklaşık yüzde 20'si küresel simetriktir; çoğu eliptik ya da iki kutupludur, yani iki yana açılmış kanatlara benzer. Bu şekillerin nedeni tam bilinmiyor. Merkez yıldızın çift olması ve eşinin kütleçekimiyle gazı biçimlendirmesi bir aday açıklamadır; manyetik alanların payı olduğu da önerilmiştir. Tipik bir gezegenimsi bulutsu yaklaşık bir ışık yılı çapındadır ve santimetreküpünde yalnızca 100 ile 10.000 parçacık bulunur; son derece seyrek bir gazdır.",
         "Bu seyreklik, astronomi tarihinin güzel bir bilmecesini de doğurdu. Wikipedia'ya göre William Huggins 29 Ağustos 1864'te bir gezegenimsi bulutsunun tayfını ilk kez inceledi ve d2'de gördüğün türden parlak salma çizgileri buldu. Çizgilerden biri bilinen hiçbir elemente uymuyordu; bilinmeyen bir element olduğu düşünülüp ona nebulyum adı verildi. Sonradan ortaya çıktı ki çizgi yeni bir elementten değil, tanıdık bir elementin alışılmadık koşullarından geliyordu: çok seyrek gazdaki oksijen ve azot iyonlarının, laboratuvarda pek görülmeyen geçişleri. Bunlara yasak çizgiler denir: adları yanıltmasın, imkânsız değil, yalnızca Dünya'daki alışılmış koşullarda pek görülmeyen geçişlerdir.",
         "İki örneği İstanbul'dan arayabilirsin. Tilkicik takımyıldızındaki Halter Bulutsusu (M27) keşfedilen ilk gezegenimsi bulutsudur; Charles Messier onu 12 Temmuz 1764'te gözledi. Parlaklığı 7,4 kadir, uzaklığı yaklaşık 1.250 ışık yılıdır; ama uzaklık tahminleri arasında büyük fark var. SEDS Messier sayfasının yazarı onu orta derecede iyi koşullarda 10×50 dürbünüyle görebildiğini yazıyor. Senin 7×50 dürbününle de denemeye değer; sonuç gökyüzünün karanlığına bağlı olacaktır. Çalgı takımyıldızındaki Halka Bulutsusu (M57) ise yaklaşık 2.000 ışık yılı uzaklıkta ve 8,8 kadirdir. NASA'ya göre halka biçimini seçmek için orta boy bir teleskop gerekir. M57'yi 1779'da Antoine Darquier de Pellepoix keşfetti.",
@@ -54,7 +54,7 @@
     {
       "baslik": "Soğuyan közler: beyaz cücenin uzun sessizliği",
       "paragraflar": [
-        "Beyaz cüce füzyon yapmadığına göre parlaklığı nereden gelir? Ocaktan alınmış bir köz gibi, içinde biriktirdiği ısıdan. Yeni bir enerji kaynağı olmadığı için tek yapabildiği, ısısını yavaş yavaş uzaya yaymaktır. NASA'ya göre ilk doğduğunda yüzey sıcaklığı 100.000 K'i aşar. Wikipedia'ya göre bilinen en soğuk beyaz cücelerden biri olan WD J2147–4035'in yüzey sıcaklığı ise yaklaşık 3.050 K'dir. Arada milyarlarca yıllık bir soğuma vardır ve soğudukça soğuma da yavaşlar, çünkü sönük bir cisim enerjisini daha yavaş verir.",
+        "Beyaz cüce füzyon yapmadığına göre parlaklığı nereden gelir? Ocaktan alınmış bir köz gibi, içinde biriktirdiği ısıdan. Yeni bir enerji kaynağı olmadığı için tek yapabildiği, ısısını yavaş yavaş uzaya yaymaktır. NASA'ya göre ilk doğduğunda yüzey sıcaklığı 100.000 K'i aşar. Wikipedia'ya göre bilinen en soğuk beyaz cücelerden biri olan WD J2147−4035'in yüzey sıcaklığı ise yaklaşık 3.050 K'dir. Arada milyarlarca yıllık bir soğuma vardır ve soğudukça soğuma da yavaşlar, çünkü sönük bir cisim enerjisini daha yavaş verir.",
         "Sonunda ne olur? Kuramsal olarak beyaz cüce görünür ışık vermeyecek kadar soğuyup bir kara cüceye dönüşür. Ama Wikipedia'ya göre bunun için trilyonlarca yıl gerekir ve evrenin yaşı yaklaşık 13,8 milyar yıl olduğundan henüz hiçbir kara cücenin var olmadığı düşünülür. Evren bu kadar uzun süre yaşamadı. Yani gökyüzündeki en soğuk beyaz cüceler bile hâlâ soğumasını tamamlamamış közlerdir.",
         "Bu yavaş soğuma bir saat olarak da kullanılır. Bir yıldız bölgesindeki en sönük, yani en uzun süredir soğuyan beyaz cüceleri bulursan, o bölgede yıldız oluşumunun ne zaman başladığını kestirebilirsin. Wikipedia'ya göre bu yöntem galaksimizin diskine uygulandığında yaklaşık 8 milyar yıllık bir yaş verir. Yöntemin sonucu, soğuma modellerinin doğruluğuna bağlıdır; bu yüzden başka yaş ölçümleriyle karşılaştırılarak kullanılır.",
         "Soğuma sırasında beklenmedik bir şey daha olur: beyaz cücenin çekirdeği katılaşmaya, deyim yerindeyse kristalleşmeye başlar. Bu 1960'larda kuramsal olarak öngörülmüştü. Wikipedia'ya göre kristalleşmenin açığa çıkardığı enerjinin izi ilk kez 2019'da doğrulandı: Gaia uydusunun 15.000'den fazla beyaz cüce içeren verisinde, soğuma eğrisinde beklenen bir yığılma görüldü. Su donarken ısı verdiği için donma sırasında sıcaklık bir süre sabit kalır; beyaz cücelerde de kristalleşme soğumayı geçici olarak yavaşlatır ve aynı evredeki cisimler o noktada birikir. Benzetmenin sınırı: kristalleşen şey su değil, beyaz cücenin akıl almaz yoğunluktaki maddesidir; günlük buzla ortak yanı, katılaşırken ısı vermesidir.",
@@ -69,10 +69,10 @@
     {
       "baslik": "Kütleli yıldızın soğanı ve demir duvarı",
       "paragraflar": [
-        "Kütleli bir yıldızın çekirdeği helyumdan sonra da durmaz: karbon, neon, oksijen ve silisyum gibi giderek ağırlaşan elementleri sırayla kaynaştırır. İçi soğan gibi katmanlanır; dışta hidrojen yanan bir kabuk, içeride sırayla daha ağır elementler, en merkezde demir grubu elementler. Her yeni basamak öncekinden çok daha kısa sürer. Ohio State Üniversitesi'nin ders notlarına göre 8 M☉'ten ağır bir yıldızda hidrojen evresi yaklaşık 10 milyon yıl, helyum evresi yaklaşık 1 milyon yıl, karbon yaklaşık 1000 yıl, neon birkaç yıl, oksijen yaklaşık 1 yıl, silisyum ise yaklaşık 1 gün sürer.",
+        "Kütleli bir yıldızın çekirdeği helyumdan sonra da durmaz: karbon, neon, oksijen ve silisyum gibi giderek ağırlaşan elementleri sırayla kaynaştırır. İçi soğan gibi katmanlanır; dışta hidrojen yanan bir kabuk, içeride sırayla daha ağır elementler, en merkezde demir grubu elementler. Her yeni basamak öncekinden çok daha kısa sürer. Ohio State Üniversitesinin ders notlarına göre 8 M☉'ten ağır bir yıldızda hidrojen evresi yaklaşık 10 milyon yıl, helyum evresi yaklaşık 1 milyon yıl, karbon yaklaşık 1.000 yıl, neon birkaç yıl, oksijen yaklaşık 1 yıl, silisyum ise yaklaşık 1 gün sürer.",
         "Demirde zincir kopar. Demir, çekirdekleri en sıkı bağlı elementler arasındadır. Ders kitapları çoğu zaman demiri en sıkı bağlı çekirdek diye anar; Wikipedia'ya göre nükleon başına en yüksek bağlanma enerjisi aslında nikel-62'nindir, demir-56 ise nükleon başına en düşük kütleye sahiptir. Fark küçüktür ve sonucu değiştirmez: demirden ağır çekirdekleri kaynaştırmak enerji vermez, tersine enerji yutar. Ateşe atılan bir taş gibi düşünebilirsin: yanmaz, alevi besleyemez. Benzetmenin sınırı şu: taş ateşi söndürmez, ama demir çekirdek yıldızın içindeki dengeyi bozar, çünkü artık kütleçekimine karşı koyacak yeni bir ısı kaynağı yoktur.",
-        "Demir çekirdeğin kütlesi Chandrasekhar sınırını, yaklaşık 1,4 M☉'i aşınca elektron basıncı yetmez ve çekirdek içe çöker. Colorado Üniversitesi'nin ders notlarına göre çekirdek saniyenin onda birinden kısa sürede yaklaşık 20 km yarıçapa iner. Wikipedia'ya göre dış çekirdek saniyede 70.000 km'ye, ışık hızının yüzde 23'üne varan hızlarla içe düşer; yeni oluşan nötron çekirdeğinin sıcaklığı yaklaşık 100 milyar K'e çıkar. Elektronlar protonlarla birleşip nötron ve nötrino oluşturur. Nötrino, maddeyle neredeyse hiç etkileşmeyen, çok hafif ve yüksüz bir parçacıktır. Çöküşü nükleer kuvvet ve nötron yozlaşma basıncı durdurur; içe düşen madde sert çekirdekten geri seker ve bir şok dalgası doğar.",
-        "Açığa çıkan enerji akıl almazdır: Wikipedia'ya göre yaklaşık 10⁴⁶ joule, yaklaşık on saniyelik bir nötrino patlaması halinde. Colorado'nun notlarına göre bu enerjinin yaklaşık yüzde 99'u nötrinolarla kaçar; yaklaşık yüzde 1'i patlayan maddeye aktarılır ve yıldızın dış katmanlarını uzaya fırlatır. Aynı notlara göre kuramsal hesaplar bu payın neden yüzde 1 olduğunu açıklayamıyor. Sonuç, çekirdek çöküşü süpernovasıdır. Wikipedia'ya göre bunun için yıldız en az 8, en fazla 40 ile 50 M☉ olmalıdır. Gözlemciler bu patlamaları tayflarından tanır: tayfta hidrojen çizgileri varsa Tip II denir, çünkü yıldızın hidrojen zarfı hâlâ yerindedir."
+        "Demir çekirdeğin kütlesi Chandrasekhar sınırını, yaklaşık 1,4 M☉'i aşınca elektron basıncı yetmez ve çekirdek içe çöker. Colorado Üniversitesinin ders notlarına göre çekirdek saniyenin onda birinden kısa sürede yaklaşık 20 km yarıçapa iner. Wikipedia'ya göre dış çekirdek saniyede 70.000 km'ye, ışık hızının yüzde 23'üne varan hızlarla içe düşer; yeni oluşan nötron çekirdeğinin sıcaklığı yaklaşık 100 milyar K'e çıkar. Elektronlar protonlarla birleşip nötron ve nötrino oluşturur. Nötrino, maddeyle neredeyse hiç etkileşmeyen, çok hafif ve yüksüz bir parçacıktır. Çöküşü nükleer kuvvet ve nötron yozlaşma basıncı durdurur; içe düşen madde sert çekirdekten geri seker ve bir şok dalgası doğar.",
+        "Açığa çıkan enerji akıl almazdır: Wikipedia'ya göre yaklaşık 10⁴⁶ jul, yaklaşık on saniyelik bir nötrino patlaması hâlinde. Colorado'nun notlarına göre bu enerjinin yaklaşık yüzde 99'u nötrinolarla kaçar; yaklaşık yüzde 1'i patlayan maddeye aktarılır ve yıldızın dış katmanlarını uzaya fırlatır. Aynı notlara göre kuramsal hesaplar bu payın neden yüzde 1 olduğunu açıklayamıyor. Sonuç, çekirdek çöküşü süpernovasıdır. Wikipedia'ya göre bunun için yıldız en az 8, en fazla 40 ile 50 M☉ olmalıdır. Gözlemciler bu patlamaları tayflarından tanır: tayfta hidrojen çizgileri varsa Tip II denir, çünkü yıldızın hidrojen zarfı hâlâ yerindedir."
       ],
       "ornek": {
         "baslik": "Örnek: Son gün ne kadar kısa?",
@@ -84,21 +84,21 @@
       "baslik": "Görülen ve beklenen: SN 1987A ve Betelgeuse",
       "paragraflar": [
         "Çekirdek çöküşünün en iyi incelenmiş örneği SN 1987A'dır. Işığı ve nötrinoları Dünya'ya 23 Şubat 1987'de ulaştı; Ian Shelton ve Oscar Duhalde 24 Şubat'ta keşfetti. Patlama, Büyük Macellan Bulutu galaksisinde, yaklaşık 168.000 ışık yılı uzaklıkta oldu. Parlaklığı yaklaşık 3 kadire çıktı, yani çıplak gözle görülecek kadardı. Patlayan yıldız Sanduleak −69 202 adlı mavi bir üstdevdi; yıldızın sonradan ortadan kaybolması bunu doğruladı.",
-        "Asıl tarihi an görünür ışıktan önce yaşandı. Görünür ışık Dünya'ya ulaşmadan yaklaşık iki üç saat önce, on üç saniyeden kısa süren bir patlama halinde, Kamiokande II dedektörü 12, IMB 8 ve Baksan 5 antinötrino yakaladı. Bu sıralama, nötrinoların çöküşün hemen ardından yıldızdan kaçtığını, görünür ışığın ise daha sonra çıktığını gösterir. Önceki bölümde okuduğun çöküş modeli böylece ilk kez doğrudan sınandı. 2024'te James Webb Uzay Teleskobu kalıntının merkezinde iyonlaşmış argon çizgileri buldu; modeller bunu ışınım yayan bir nötron yıldızıyla açıklıyor. Bu doğrudan bir görüntü değil, modele dayalı bir kanıttır.",
+        "Asıl tarihi an görünür ışıktan önce yaşandı. Görünür ışık Dünya'ya ulaşmadan yaklaşık iki üç saat önce, on üç saniyeden kısa süren bir patlama hâlinde, Kamiokande II dedektörü 12, IMB 8 ve Baksan 5 antinötrino yakaladı. Bu sıralama, nötrinoların çöküşün hemen ardından yıldızdan kaçtığını, görünür ışığın ise daha sonra çıktığını gösterir. Önceki bölümde okuduğun çöküş modeli böylece ilk kez doğrudan sınandı. 2024'te James Webb Uzay Teleskobu kalıntının merkezinde iyonlaşmış argon çizgileri buldu; modeller bunu ışınım yayan bir nötron yıldızıyla açıklıyor. Bu doğrudan bir görüntü değil, modele dayalı bir kanıttır.",
         "SN 1987A'yı İstanbul'dan göremezdin. Dik açıklığı yaklaşık −69°'dir. 41° kuzey enleminde, dik açıklığı −49°'den daha güneyde olan bir cisim hiç ufkun üstüne çıkmaz (90° − 41° = 49°). Bize yakın aday ise Avcı takımyıldızının omzundaki kırmızı üstdev Betelgeuse'dur. NASA'ya göre yaklaşık 700 ışık yılı uzaklıkta, Güneş'in yaklaşık 15 katı kütlede ve yaklaşık 700 katı büyüklüktedir; Güneş'in yerinde olsaydı Jüpiter'in yörüngesini aşardı. Bilim insanları onun yaklaşık 100.000 yıl içinde süpernova olmasını bekliyor. 2019'daki büyük sönükleşme ise bir patlama habercisi değildi: yıldız yüzeyinden büyük bir parça fırlattı, bu madde soğuyup toza dönüştü ve ışığını perdeledi. Olayın kesin nedeni hâlâ bilinmiyor.",
         "Betelgeuse bir gün patladığında ne görürüz? Astronomy dergisinin 2020'de aktardığı benzetimlere göre (Kaliforniya Üniversitesi Santa Barbara'dan Jared Goldberg ve Evan Bauer) yıldız üç aydan uzun süre yarım Ay kadar parlayacak, yani dolunaydan yaklaşık dokuz kat sönük olacak. Yaklaşık bir yıl gündüz gökyüzünde de görülecek ve parlaklığı azalarak birkaç yıl boyunca geceleri çıplak gözle izlenebilecek. Aynı yazıya göre nötrinolar ya da kütleçekim dalgaları patlamayı bir güne kadar önceden haber verebilir. Dünya için tehlike yok: tahminlere göre zararlı olabilmesi için bir süpernovanın belki birkaç düzine ışık yılı kadar yakında olması gerekir. Yazı Betelgeuse'u yaklaşık 724 ışık yılında verir, NASA yaklaşık 700; uzaklık ölçümleri arasında böyle küçük farklar olağandır.",
         "Betelgeuse'u bugün de İstanbul'dan çıplak gözle izleyebilirsin; NASA onu çoğu zaman gökyüzünün onuncu en parlak yıldızı olarak anar ve parlaklığının değiştiğini belirtir. Büyük Sönükleşme bu değişkenliğin uç bir örneğiydi: NASA'ya göre 2019 sonbaharında başlayan düşüşte yıldız birkaç ay içinde yaklaşık yüzde 60 sönükleşti ve Nisan 2020'ye kadar normal parlaklığına döndü. Böyle bir değişimi izlemek için teleskop gerekmez; Betelgeuse'u Avcı'nın öteki parlak yıldızlarıyla gözle karşılaştırmak, parlaklığını kabaca takip etmenin en basit yoludur."
       ],
       "ornek": {
         "baslik": "Örnek: 1987'de görülen patlama ne zaman oldu?",
-        "metin": "Işık bir ışık yılını 1 yılda alır. SN 1987A yaklaşık 168.000 ışık yılı uzaklıkta, o halde ışığın yolculuğu yaklaşık 168.000 yıl sürdü. Dünya'da 1987'de görülen olay, yıldızda yaklaşık 168.000 yıl önce yaşanmıştı. Nötrinoları da toplayalım: 12 + 8 + 5 = 25 antinötrino, üç dedektörde 13 saniyeden kısa sürede. Sonuç: patlama yaklaşık 168.000 yıl önce oldu ve bize ulaşan nötrino sinyali yalnızca 25 parçacıktı."
+        "metin": "Işık bir ışık yılını 1 yılda alır. SN 1987A yaklaşık 168.000 ışık yılı uzaklıkta, o hâlde ışığın yolculuğu yaklaşık 168.000 yıl sürdü. Dünya'da 1987'de görülen olay, yıldızda yaklaşık 168.000 yıl önce yaşanmıştı. Nötrinoları da toplayalım: 12 + 8 + 5 = 25 antinötrino, üç dedektörde 13 saniyeden kısa sürede. Sonuç: patlama yaklaşık 168.000 yıl önce oldu ve bize ulaşan nötrino sinyali yalnızca 25 parçacıktı."
       },
       "akilda": "SN 1987A, çöküş süpernovasında nötrinoların ışıktan önce kaçtığını gösterdi. Betelgeuse yakın bir süpernova adayıdır ama patlaması yaklaşık 100.000 yıl içinde bekleniyor; 2019 sönükleşmesi tozdan kaynaklandı."
     },
     {
       "baslik": "Nötrino bekçileri: bir sonraki süpernovayı beklerken",
       "paragraflar": [
-        "SN 1987A'nın 25 nötrinosu tek bir dersi çok açık verdi: çöküşün haberi ışıktan önce gelir. Bugün bu ders bir alarm sistemine dönüştü. SNEWS (Süpernova Erken Uyarı Sistemi) dünyanın dört bir yanındaki nötrino dedektörlerini birbirine bağlar. Proje sayfasına göre birkaç saniye içinde birden fazla dedektörde eş zamanlı bir nötrino yağmuru görülürse merkezi bilgisayar gökbilimcilere uyarı gönderir. Süpernova fotonları ancak saatler sonra görünür hale geldiği için teleskoplar patlamanın ilk ışığını yakalamaya hazırlanabilir. Sayfanın tablosunda 20 deney listelenir; aralarında IceCube, JUNO, KamLAND ve Super-Kamiokande gibi dedektörler vardır.",
+        "SN 1987A'nın 25 nötrinosu tek bir dersi çok açık verdi: çöküşün haberi ışıktan önce gelir. Bugün bu ders bir alarm sistemine dönüştü. SNEWS (Süpernova Erken Uyarı Sistemi) dünyanın dört bir yanındaki nötrino dedektörlerini birbirine bağlar. Proje sayfasına göre birkaç saniye içinde birden fazla dedektörde eş zamanlı bir nötrino yağmuru görülürse merkezi bilgisayar gökbilimcilere uyarı gönderir. Süpernova fotonları ancak saatler sonra görünür hâle geldiği için teleskoplar patlamanın ilk ışığını yakalamaya hazırlanabilir. Sayfanın tablosunda 20 deney listelenir; aralarında IceCube, JUNO, KamLAND ve Super-Kamiokande gibi dedektörler vardır.",
         "Neden bu kadar iddialı? SNEWS'e göre bir süpernova enerjisinin yüzde 99'unu yaklaşık 10⁵⁸ nötrinoya yükler. Bunların ezici çoğunluğu Dünya'nın içinden hiçbir şeye çarpmadan geçer, ama sayı o kadar büyüktür ki birkaçı dedektördeki bir atomla etkileşir. Galaksimizin içinde, 10 kiloparsek uzaklıkta (yaklaşık 33.000 ışık yılı) patlayacak bir süpernova için beklenen sayılar etkileyicidir: Super-Kamiokande'de yaklaşık 4.100 ile 7.800, IceCube'da 320.000 ile 820.000 olay. Aralık, yıldızın kütlesine ve nötrinoların henüz tam bilinmeyen bazı özelliklerine bağlıdır. 1987'deki 25 nötrinoyla karşılaştırınca, bir sonraki galaktik süpernova nötrino fiziği için bir hazine olacak.",
         "Peki ne zaman? Kimse bilmiyor. SNEWS sayfası bir yerde galaksimizde böyle bir olayın yüzyılda bir ya da iki kez olduğunu, başka bir yerde birkaç on yılda bir beklendiğini yazar; Universe Today'in aktardığı tahminler yüzyılda birkaç süpernova der. Kaynaklar arasındaki bu fark, oranın hâlâ kaba bir kestirim olduğunu gösterir. Dahası, galaksi diskindeki toz yüzünden bir sonraki galaktik süpernova görünür ışıkta hiç dikkat çekmeyebilir; nötrinolar ise tozdan etkilenmez. Yani bir sonraki büyük süpernovayı ilk görenler büyük olasılıkla teleskop başındakiler değil, yerin altındaki dedektörler olacak. İstanbul'dan senin yapabileceğin şey, bir uyarı yayıldığında gökyüzünün o bölgesine bakmaya hazır olmaktır."
       ],
@@ -112,7 +112,7 @@
       "baslik": "Tip Ia: eşinden beslenen beyaz cücenin patlaması",
       "paragraflar": [
         "Tek başına bir beyaz cüce sakin kalır. Ama bir çift yıldız sisteminde eşinden madde çekerek Chandrasekhar sınırına yaklaşırsa, Wikipedia'ya göre merkezi karbon füzyonunu başlatacak sıcaklığa ulaşır. Füzyon kontrolden çıkar; karbon ve oksijenin büyük kısmı yalnızca birkaç saniyede daha ağır elementlere dönüşür. Açığa çıkan enerji yıldızı bir arada tutan bağdan büyüktür; beyaz cüce tamamen dağılır, madde saniyede yaklaşık 5.000 ile 20.000 km hızla saçılır. Toplam kütlesi sınırı aşan iki beyaz cücenin birleşmesi de aynı sonuca götürebilir.",
-        "Süpernovalar tayflarına göre adlandırılır: hidrojen çizgisi yoksa Tip I. Tip Ia'nın tayfında, tepe parlaklığı yakınında belirgin bir silisyum soğurma çizgisi görülür; bu çizginin durgun dalga boyu, yani kaynak bize göre hareketsizken ölçülecek değeri, yaklaşık 635,5 nanometredir. Wikipedia'ya göre tipik mutlak kadiri −19,3'tür; bu, Güneş'ten yaklaşık 5 milyar kat parlak demektir. Aylar sonra ışığını, nikel-56'nın kobalt-56'ya, onun da demir-56'ya bozunması besler. Tepe parlaklıkları birbirine çok yakın olduğu için uzak galaksilerin uzaklığını ölçmekte standart mum olarak kullanılırlar. Swinburne Üniversitesi'ne göre parlaklıklar tam aynı değildir; ama tepe parlaklığı, ışığın tepeden sonraki 15 günde ne kadar hızlı sönükleştiğiyle ilişkilidir ve bu düzeltme onları en iyi uzaklık ölçerlerden biri yapar. Ayrıntılar kozmoloji dersinde.",
+        "Süpernovalar tayflarına göre adlandırılır: hidrojen çizgisi yoksa Tip I. Tip Ia'nın tayfında, tepe parlaklığı yakınında belirgin bir silisyum soğurma çizgisi görülür; bu çizginin durgun dalga boyu, yani kaynak bize göre hareketsizken ölçülecek değeri, yaklaşık 635,5 nanometredir. Wikipedia'ya göre tipik mutlak kadiri −19,3'tür; bu, Güneş'ten yaklaşık 5 milyar kat parlak demektir. Aylar sonra ışığını, nikel-56'nın kobalt-56'ya, onun da demir-56'ya bozunması besler. Tepe parlaklıkları birbirine çok yakın olduğu için uzak galaksilerin uzaklığını ölçmekte standart mum olarak kullanılırlar. Swinburne Üniversitesine göre parlaklıklar tam aynı değildir; ama tepe parlaklığı, ışığın tepeden sonraki 15 günde ne kadar hızlı sönükleştiğiyle ilişkilidir ve bu düzeltme onları en iyi uzaklık ölçerlerden biri yapar. Ayrıntılar kozmoloji dersinde.",
         "Samanyolu'nda en son kuşkusuz çıplak gözle görülen süpernova da bir Tip Ia'dır: Kepler Süpernovası. İlk kayıtlı Avrupa gözlemi 9 Ekim 1604'tedir. Yılancı takımyıldızında, en fazla yaklaşık 20.000 ışık yılı uzaklıkta patladı; −2,5 kadire kadar parladı ve üç haftadan uzun süre gündüz bile görüldü. Universe Today'in aktardığı tahminlere göre galaksimizde her yüz yılda birkaç süpernova patlamalı. Neden bu kadar az görüyoruz? Çoğu, tozun yoğun olduğu galaksi diskinde patlar ve toz ışığı çok iyi engeller. Örneğin Kraliçe takımyıldızındaki Cassiopeia A kalıntısı yaklaşık 11.000 ışık yılı uzaklıktadır; Wikipedia'ya göre patlamanın ışığı Dünya'ya 1660'lar civarında (±30 yıl) ulaştı, ama o döneme ait kesin bir gözlem kaydı yok."
       ],
       "akilda": "Tip Ia, çift sistemde sınıra ulaşan beyaz cücenin tamamen yok olmasıdır; tayfında hidrojen yoktur, silisyum vardır ve tepe parlaklıkları benzer olduğu için uzaklık ölçer olarak kullanılır."
@@ -120,8 +120,8 @@
     {
       "baslik": "Novalar: patlayıp yaşamaya devam eden beyaz cüceler",
       "paragraflar": [
-        "Her yıldız patlaması ölüm demek değildir. Gökte birdenbire parlayan yıldızların hepsi süpernova olmaz; çok daha küçük ama çok daha sık bir olay da vardır: klasik nova. Swinburne Üniversitesi'ne göre klasik novada bir beyaz cüce ile bir anakol yıldızı genellikle 12 saatten kısa sürede birbirinin çevresinde dolanır. Beyaz cüce, eşinden hidrojen çeker; bu hidrojen önce bir birikim diskinde döner, sonra beyaz cücenin yüzeyinde ince bir katman olarak toplanır.",
-        "Katmanın tabanındaki basınç ve sıcaklık yeterince yükselince, kaynağa göre yaklaşık 10 milyon K'de, hidrojen füzyonu başlar. Füzyonun açığa çıkardığı enerji sıcaklığı artırır, artan sıcaklık da füzyonu hızlandırır; buna kaçak termonükleer tepkime denir. Yanmamış hidrojenin büyük kısmı saniyede 1.500 km'ye varan hızlarla bir kabuk halinde savrulur. Parlaklık 6 ile 19 kadir artar ve patlama birkaç günden yıllara kadar sürebilir. Tip Ia'dan farkı kritiktir: novada füzyon yalnızca yüzeyde olur, beyaz cüce de çift sistem de sağ kalır. Tip Ia'da ise beyaz cücenin kendisi yok olur.",
+        "Her yıldız patlaması ölüm demek değildir. Gökte birdenbire parlayan yıldızların hepsi süpernova olmaz; çok daha küçük ama çok daha sık bir olay da vardır: klasik nova. Swinburne Üniversitesine göre klasik novada bir beyaz cüce ile bir anakol yıldızı genellikle 12 saatten kısa sürede birbirinin çevresinde dolanır. Beyaz cüce, eşinden hidrojen çeker; bu hidrojen önce bir birikim diskinde döner, sonra beyaz cücenin yüzeyinde ince bir katman olarak toplanır.",
+        "Katmanın tabanındaki basınç ve sıcaklık yeterince yükselince, kaynağa göre yaklaşık 10 milyon K'de, hidrojen füzyonu başlar. Füzyonun açığa çıkardığı enerji sıcaklığı artırır, artan sıcaklık da füzyonu hızlandırır; buna kaçak termonükleer tepkime denir. Yanmamış hidrojenin büyük kısmı saniyede 1.500 km'ye varan hızlarla bir kabuk hâlinde savrulur. Parlaklık 6 ile 19 kadir artar ve patlama birkaç günden yıllara kadar sürebilir. Tip Ia'dan farkı kritiktir: novada füzyon yalnızca yüzeyde olur, beyaz cüce de çift sistem de sağ kalır. Tip Ia'da ise beyaz cücenin kendisi yok olur.",
         "Sağ kaldığı için beyaz cüce yeniden madde biriktirip yeniden patlayabilir. Swinburne'e göre klasik novaların her biri şimdiye kadar yalnızca bir kez görüldü, ama aslında uzun aralıklarla yinelendikleri düşünülüyor: kaynağın verdiği kestirimlere göre 1,3 M☉'lik bir beyaz cücede yaklaşık 30.000 yılda bir, 0,6 M☉'lik birinde yaklaşık 100.000 yılda bir. Bazı sistemler ise insan ömrü içinde tekrarlar; bunlara yinelenen nova denir ve aynı kaynağa göre 10 ile 100 yılda bir patlarlar.",
         "İstanbul'dan izleyebileceğin en heyecanlı adaylardan biri tam olarak böyle bir yinelenen novadır: Kuzeytacı takımyıldızındaki T Coronae Borealis, kısaca T CrB, takma adıyla Alev Yıldızı. Star Walk'a göre yaklaşık 3.000 ışık yılı uzaklıktadır, normalde 10 kadir dolayında sönük bir yıldızdır; 1866'da ve 9 Şubat 1946'da patladı. Temmuz 2026 tarihli bir makale, sistemde kütlesi 1,32 ile 1,38 M☉ arasında ölçülmüş bir beyaz cüce ve onu yaklaşık 227,6 günde dolanan bir kırmızı dev bulunduğunu, patlamalar arası ortalamanın yaklaşık 80 yıl olduğunu yazar. Eşin anakol yıldızı değil kırmızı dev olması, onu yukarıda anlatılan tipik klasik novadan ayırır.",
         "Patlama ne zaman? Bilinmiyor. Aynı makale 11 Temmuz 2026'ya kadarki verilerde patlama olmadığını, 2026 Aralık'ında bir patlamanın olası kalmaya devam ettiğini, ama başka bir kestirimin en erken 2029 Mayıs'ını işaret ettiğini yazar; yazarlar tek bir tarih değil, izleme pencereleri önerir. Bu yüzden ders yazıldıktan sonra güncel durumu kontrol etmen gerekir. Patladığında Star Walk'a göre 2 kadire kadar parlayacak, Kuzeytacı'nın en parlak yıldızı Alphecca kadar olacak ve yarım çember biçimli takımyıldızın hemen altında yeni bir yıldız gibi görünecek. Ne kadar süre görüleceği konusunda kaynaklar ayrışıyor: Star Walk çıplak gözle birkaç gün, dürbünle yaklaşık bir hafta der; Sky & Telescope ise çıplak gözle bir iki gece görülebileceğini yazar. Kuzeytacı, Çoban ve Herkül'ün yakınındaki küçük yarım çemberdir; yıldız sönerken onu birkaç gün daha 7×50 dürbününle izleyebilirsin."
@@ -138,7 +138,7 @@
         "Teleskoptan önce de insanlar süpernova gördü ve bunları kaydetti. Wikipedia'ya göre SN 1006, kayıtlı tarihteki büyük olasılıkla en parlak yıldız olayıdır: 1006 yılının baharında, Jülyen takvimine göre 15 Nisan ile 1 Mayıs arasında bir tarihte Kurt takımyıldızında belirdi ve parlaklığının yaklaşık −7,5 kadire çıktığı tahmin ediliyor. Mısırlı gökbilimci ve müneccim Ali ibn Rıdvan onu Venüs'ün iki buçuk üç katı büyüklüğünde, ışığı Ay ışığının dörtte birinden biraz fazla bir cisim olarak tarif etti. Çin kayıtları 1 Mayıs 1006 tarihini verir; İbn Sina da onu kuzeydoğu İran'dan gözledi. Bazı kaynaklar gölge düşürecek kadar parlak olduğunu söyler; bir süre gündüz de görüldüğü kesindir.",
         "Uzaklığı yaklaşık 7.200 ışık yılıdır ve büyük olasılıkla bir Tip Ia'dır. St. Gallen'de (47,5° K) tutulan yıllıklardaki kayıt, yıldızın güneyin en uç sınırında üç ay görüldüğünü yazar. Kalıntı 1965'te Parkes radyo teleskobuyla bulundu. Wikipedia'nın Tip Ia maddesine göre bu kalıntıda, beyaz cüceyi besleyen bir eşin geride kalmış bir izi bulunamadı. Bu, Tip Ia'ların kökeni sorusunu daha da ilginçleştirir: kaynak, tek beyaz cüceli senaryoların tüm Tip Ia'ların en çok yüzde 20'sini oluşturabileceği tahminini ve tek bir köken yolu olmadığını düşündüren bulguları aktarır. Yani Tip Ia'yı tetikleyenin çoğu zaman eşinden beslenen bir beyaz cüce mi, yoksa iki beyaz cücenin birleşmesi mi olduğu hâlâ tam çözülmüş değil.",
         "Tycho'nun 1572 süpernovası (d20'de tarihsel hikâyesiyle) ise bu derste başka bir nedenle önemli: tayfını yüzyıllar sonra okuyabildik. Bu nasıl mümkün? Patlamanın ışığının bir kısmı doğrudan bize gelmedi; yıldızlararası toz bulutlarına çarpıp yansıdı ve daha uzun bir yol izledi. Bu gecikmiş ışığa ışık yankısı denir. ScienceDaily'nin 2008'deki haberine göre gökbilimciler, Hawaii'deki Japon Subaru teleskobuyla da gözledikleri böyle bir yankının tayfında silisyum bulup hidrojen bulmadılar: yani Tycho'nun yıldızı bir Tip Ia'ydı. Kasım 1572'nin başında beliren o yıldızın ışığı, yaklaşık 436 yıl sonra bir spektrografa girmiş oldu. Aynı habere göre kalıntı yaklaşık 11.000 ışık yılı uzaklıktadır.",
-        "Bu tarihsel süpernovaların hiçbirini bugün çıplak gözle göremezsin; kalıntıları ancak büyük teleskoplarla ya da radyo ve X ışını gözlemleriyle incelenir. Ama nereye bakacağını bilmek, geçmişi gökyüzüne yerleştirmeni sağlar. Tycho'nun yıldızı, d20'de gördüğün gibi İstanbul'dan bütün gece ufkun üstünde kalan Kraliçe takımyıldızındaydı. SN 1006 ise güneyde, Kurt takımyıldızındaydı ve aşağıdaki örnek, onun İstanbul'dan neden ancak ufka yakın görülebileceğini gösteriyor."
+        "Bu tarihsel süpernovaların hiçbirini bugün çıplak gözle göremezsin; kalıntıları ancak büyük teleskoplarla ya da radyo ve X ışını gözlemleriyle incelenir. Ama nereye bakacağını bilmek, geçmişi gökyüzüne yerleştirmeni sağlar. Tycho'nun yıldızı, d20'de göreceğin gibi İstanbul'dan bütün gece ufkun üstünde kalan Kraliçe takımyıldızındaydı. SN 1006 ise güneyde, Kurt takımyıldızındaydı ve aşağıdaki örnek, onun İstanbul'dan neden ancak ufka yakın görülebileceğini gösteriyor."
       ],
       "ornek": {
         "baslik": "Örnek: SN 1006 İstanbul'dan ne kadar yükseldi?",
@@ -149,14 +149,14 @@
     {
       "baslik": "Nötron yıldızları, atarcalar ve Yengeç Bulutsusu",
       "paragraflar": [
-        "Çöküş süpernovasından geriye çoğu zaman bir nötron yıldızı kalır: bir Güneş'ten fazla kütlenin bir şehir büyüklüğüne sıkışmış hali. NASA'ya göre bu artıklar yaklaşık 20 km çapındadır ve çöken çekirdek kabaca 1 ile 3 M☉ arasındaysa oluşurlar. Bir şeker küpü kadar nötron yıldızı maddesi Dünya'da yaklaşık 1 trilyon kilogram gelirdi. Manyetik alanları Dünya'nınkinin trilyonlarca katıdır; magnetar denen türde ise bunun da yaklaşık 1000 katı.",
-        "1967'de Jocelyn Bell, yaklaşık 2.000 tahta direğe gerilmiş bakır tellerden oluşan bir radyo teleskobunun kayıtlarında tuhaf bir sinyal fark etti: her 1,337 saniyede bir tekrarlanan, son derece düzenli atımlar. Kaynağa şakayla küçük yeşil adamların kısaltması olan LGM-1 adı verildi; ama ne Bell ne de ekipteki Antony Hewish bunun uzaylılardan geldiğine ciddi olarak inandı. Açıklama: dönen, güçlü manyetik alanlı bir nötron yıldızı ışınım demetleri yayar. Demet her dönüşte Dünya'yı süpürdüğünde, deniz fenerinin ışığı gibi bir atım görürüz. Bu cisimlere atarca (pulsar) denir; atım aralıkları milisaniyelerden saniyelere uzanır. 1974 Nobel Fizik Ödülü'nü Hewish, atarcaların keşfindeki belirleyici rolü için, Martin Ryle ile paylaştı (Ryle açıklık sentezi tekniği için ödüllendirildi); Bell ödülü alanlar arasında yoktu. Bell 2018'de 3 milyon dolarlık Özel Breakthrough Ödülü'nü aldı ve tamamını Fizik Enstitüsü'ne (Institute of Physics) bağışladı.",
+        "Çöküş süpernovasından geriye çoğu zaman bir nötron yıldızı kalır: bir Güneş'ten fazla kütlenin bir şehir büyüklüğüne sıkışmış hâli. NASA'ya göre bu artıklar yaklaşık 20 km çapındadır ve çöken çekirdek kabaca 1 ile 3 M☉ arasındaysa oluşurlar. Bir şeker küpü kadar nötron yıldızı maddesi Dünya'da yaklaşık 1 trilyon kilogram gelirdi. Manyetik alanları Dünya'nınkinin trilyonlarca katıdır; magnetar denen türde ise bunun da yaklaşık 1.000 katı.",
+        "1967'de Jocelyn Bell, yaklaşık 2.000 tahta direğe gerilmiş bakır tellerden oluşan bir radyo teleskobunun kayıtlarında tuhaf bir sinyal fark etti: her 1,337 saniyede bir tekrarlanan, son derece düzenli atımlar. Kaynağa şakayla küçük yeşil adamların kısaltması olan LGM-1 adı verildi; ama ne Bell ne de ekipteki Antony Hewish bunun uzaylılardan geldiğine ciddi olarak inandı. Açıklama: dönen, güçlü manyetik alanlı bir nötron yıldızı ışınım demetleri yayar. Demet her dönüşte Dünya'yı süpürdüğünde, deniz fenerinin ışığı gibi bir atım görürüz. Bu cisimlere atarca denir; atım aralıkları milisaniyelerden saniyelere uzanır. 1974 Nobel Fizik Ödülü'nü Hewish, atarcaların keşfindeki belirleyici rolü için, Martin Ryle ile paylaştı (Ryle açıklık sentezi tekniği için ödüllendirildi); Bell ödülü alanlar arasında yoktu. Bell 2018'de 3 milyon dolarlık Özel Breakthrough Ödülü'nü aldı ve tamamını Fizik Enstitüsüne (Institute of Physics) bağışladı.",
         "En ünlü atarca Yengeç Bulutsusu'nun içindedir. Çinli gökbilimciler 4 Temmuz 1054'te gökte bir konuk yıldız kaydetti; NASA'ya göre yıldız yaklaşık bir ay gündüz gökyüzünde görüldü, Çin kaydı 23 gün der. Bulutsuyu 1731'de John Bevis buldu, 1758'de Charles Messier yeniden buldu ve kataloğuna M1 olarak girdi. Boğa takımyıldızında, yaklaşık 6.500 ışık yılı uzaklıktadır ve saniyede yaklaşık 1.500 km hızla genişler. Merkezdeki atarca 1968'de keşfedildi; NASA'ya göre saniyede 30 kez atım verir. Parlaklığı 8,4 kadir olan M1, NASA'ya göre küçük bir teleskopla görülebilir ve en iyi ocak ayında gözlenir.",
         "Atarcaların en şaşırtıcıları milisaniye atarcalarıdır. Wikipedia'ya göre dönme periyodu yaklaşık 10 milisaniyeden kısa olan atarcalara bu ad verilir. Önde gelen açıklamaya göre bunlar geri dönüştürülmüş atarcalardır: bir nötron yıldızı, çift sistemdeki eşinden madde çeker ve bu madde onu bir topaç gibi yeniden hızlandırır. İlk milisaniye atarcası PSR B1937+21, 1982'de bulundu ve saniyede yaklaşık 641 kez döner. 2025 itibarıyla bilinen en hızlısı saniyede 716 tur atıyor. Modellere göre bir atarca saniyede yaklaşık 1.500 turu aşarsa parçalanırdı. Bu atarcalar onlarca yıla yayılan ölçümlerde atom saatleriyle yarışacak kadar düzenlidir; bu yüzden kütleçekim dalgalarını yakalamak için kullanılırlar ve 2023'te yayımlanan verilerle bir kütleçekim dalgası arka planının ilk kanıtları sunuldu. Ayrıntı d16'da."
       ],
       "ornek": {
         "baslik": "Örnek: Yengeç atarcasının ekvatoru ne hızla döner?",
-        "metin": "NASA'ya göre nötron yıldızının çapı yaklaşık 20 km, yani yarıçap R ≈ 10 km. Ekvatorun çevresi 2πR = 2 × 3,14 × 10 km ≈ 62,8 km. Atarca saniyede 30 tur atıyor, o halde ekvatordaki bir nokta saniyede 62,8 km × 30 ≈ 1.884 km yol alır. Dönme periyodu da 1 ÷ 30 ≈ 0,033 saniye, yani yaklaşık 33 milisaniyedir. Sonuç: ekvator hızı yaklaşık 1.900 km/s; Dünya yüzeyinden kaçış hızının (yaklaşık 11,2 km/s) 150 katından fazla."
+        "metin": "NASA'ya göre nötron yıldızının çapı yaklaşık 20 km, yani yarıçap R ≈ 10 km. Ekvatorun çevresi 2πR = 2 × 3,14 × 10 km ≈ 62,8 km. Atarca saniyede 30 tur atıyor, o hâlde ekvatordaki bir nokta saniyede 62,8 km × 30 ≈ 1.884 km yol alır. Dönme periyodu da 1 ÷ 30 ≈ 0,033 saniye, yani yaklaşık 33 milisaniyedir. Sonuç: ekvator hızı yaklaşık 1.900 km/s; Dünya yüzeyinden kaçış hızının (yaklaşık 11,2 km/s) 150 katından fazla."
       },
       "akilda": "Nötron yıldızı yaklaşık 20 km çaplı, inanılmaz yoğun bir artıktır. Dönen ve manyetik demet yayan nötron yıldızına atarca denir; ilkini 1967'de Jocelyn Bell buldu, Yengeç atarcası 1054 süpernovasının kalıntısıdır."
     },
@@ -172,10 +172,10 @@
     {
       "baslik": "Ağır elementler: yıldız külünden yapıldık",
       "paragraflar": [
-        "Ohio State Üniversitesi'nin aktardığı bir derlemeye göre Büyük Patlama'dan sonraki ilk yaklaşık 100 milyon yılda evrende yalnızca hidrojen, helyum ve lityum vardı. Geri kalan her şey yıldızlarda pişti. Güneş benzeri yıldızlar helyumu karbona çevirir ve beyaz cüce bırakır. Patlayan kütleli yıldızlar oksijenden silisyuma, selenyuma kadar elementleri uzaya saçar. Patlayan bir beyaz cüce çevresine kalsiyum ya da demir gönderebilir; birleşen nötron yıldızları rodyum ya da ksenon üretebilir. Yani kemiklerindeki kalsiyumun ve kanındaki demirin bir kısmı, çoktan ölmüş yıldızlardan geliyor olabilir.",
+        "Ohio State Üniversitesinin aktardığı bir derlemeye göre Büyük Patlama'dan sonraki ilk yaklaşık 100 milyon yılda evrende yalnızca hidrojen, helyum ve lityum vardı. Geri kalan her şey yıldızlarda pişti. Güneş benzeri yıldızlar helyumu karbona çevirir ve beyaz cüce bırakır. Patlayan kütleli yıldızlar oksijenden silisyuma, selenyuma kadar elementleri uzaya saçar. Patlayan bir beyaz cüce çevresine kalsiyum ya da demir gönderebilir; birleşen nötron yıldızları rodyum ya da ksenon üretebilir. Yani kemiklerindeki kalsiyumun ve kanındaki demirin bir kısmı, çoktan ölmüş yıldızlardan geliyor olabilir.",
         "Demirden ağır elementler füzyonla değil, nötron yakalamayla oluşur. Bir çekirdek bir nötron yutar, sonra o nötronlardan biri protona dönüşür ve çekirdek bir üst elemente geçer. Yavaş yolun adı s-sürecidir. Wikipedia'ya göre çoğunlukla asimptotik dev kolundaki yıldızlarda olur, nötron yakalamalar arasında on yıllar geçer ve süreç binlerce yıl sürer. Demirden ağır çekirdeklerin yaklaşık yarısı bu yolla oluşur; stronsiyum, baryum ve kurşun bolluklarındaki tepeler bu yolu işaret eder. Güzel bir kanıt: 1952'de Paul Merrill bazı dev yıldızların tayfında teknesyum buldu. Teknesyumun hiçbir izotopunun yarı ömrü 4,2 milyon yılı aşmaz; demek ki element o yıldızların içinde yeni üretilmişti.",
-        "Hızlı yolun adı r-sürecidir: nötronlar o kadar hızlı yakalanır ki çekirdek arada bozunmaya fırsat bulamaz. Bunun için akıl almaz bir nötron yağmuru gerekir. 17 Ağustos 2017'de ABD'deki LIGO ve İtalya'daki Virgo dedektörleri, Suyılanı takımyıldızındaki NGC 4993 galaksisinde, yaklaşık 130 milyon ışık yılı uzaklıkta iki nötron yıldızının birleşmesini kütleçekim dalgalarıyla yakaladı. Yaklaşık iki saniye sonra Fermi ve INTEGRAL uyduları aynı bölgeden bir gama ışını patlaması gördü. Dünyada yaklaşık 70 gözlemevi olayı izledi. Ardından gelen parlamaya kilonova denir; ESO'ya göre tipik bir novadan yaklaşık 1000 kat parlaktır ve rengi birkaç günde çok maviden çok kırmızıya döndü. ESO tayfları sezyum ve tellür izleri gösterdi. Bu gözlem, demirden ağır elementlerin r-süreciyle üretildiği fikrini ilk kez doğrudan destekledi.",
-        "Altın sorusu da burada devreye girer. Astronomy dergisinin 2017'de aktardığı hesaplara göre GW170817 birleşmesi, birçok başka ağır elementle birlikte 10 ile 100 Dünya kütlesi arasında altın üretti. Columbia Üniversitesi'nden Brian Metzger bu sayının her iki yönde beş kat belirsizlik taşıdığını söyler. Asıl açık soru ise şu: evrendeki demirden ağır elementlerin ne kadarı nötron yıldızı birleşmelerinden geliyor? Gökbilimci David Kaplan soruyu şöyle özetler: sık olan ve az üreten bir olay mı, yoksa seyrek olan ama çok üreten bir olay mı? GW170817, birleşmelerin bu elementleri ürettiğini gösterdi; tüm payın onlardan geldiğini göstermedi.",
+        "Hızlı yolun adı r-sürecidir: nötronlar o kadar hızlı yakalanır ki çekirdek arada bozunmaya fırsat bulamaz. Bunun için akıl almaz bir nötron yağmuru gerekir. 17 Ağustos 2017'de ABD'deki LIGO ve İtalya'daki Virgo dedektörleri, Suyılanı takımyıldızındaki NGC 4993 galaksisinde, yaklaşık 130 milyon ışık yılı uzaklıkta iki nötron yıldızının birleşmesini kütleçekim dalgalarıyla yakaladı. Yaklaşık iki saniye sonra Fermi ve INTEGRAL uyduları aynı bölgeden bir gama ışını patlaması gördü. Dünyada yaklaşık 70 gözlemevi olayı izledi. Ardından gelen parlamaya kilonova denir; ESO'ya göre tipik bir novadan yaklaşık 1.000 kat parlaktır ve rengi birkaç günde çok maviden çok kırmızıya döndü. ESO tayfları sezyum ve tellür izleri gösterdi. Bu gözlem, demirden ağır elementlerin r-süreciyle üretildiği fikrini ilk kez doğrudan destekledi.",
+        "Altın sorusu da burada devreye girer. Astronomy dergisinin 2017'de aktardığı hesaplara göre GW170817 birleşmesi, birçok başka ağır elementle birlikte 10 ile 100 Dünya kütlesi arasında altın üretti. Columbia Üniversitesinden Brian Metzger bu sayının her iki yönde beş kat belirsizlik taşıdığını söyler. Asıl açık soru ise şu: evrendeki demirden ağır elementlerin ne kadarı nötron yıldızı birleşmelerinden geliyor? Gökbilimci David Kaplan soruyu şöyle özetler: sık olan ve az üreten bir olay mı, yoksa seyrek olan ama çok üreten bir olay mı? GW170817, birleşmelerin bu elementleri ürettiğini gösterdi; tüm payın onlardan geldiğini göstermedi.",
         "Son bir not: 1983 Nobel Fizik Ödülü'nün diğer yarısı William Fowler'a, evrendeki kimyasal elementlerin oluşumunda önemli olan nükleer tepkimeler üzerine çalışmaları için verildi. Yani aynı yıl, yıldızların nasıl öldüğünü ve ölürken neler ürettiğini anlatan iki çalışma birlikte ödüllendirildi. Bir sonraki adım, yıldız ölümünün en uç ürününü, kara delikleri ve uzay-zamanın titreşimlerini anlamak."
       ],
       "akilda": "Hidrojen, helyum ve lityum dışındaki elementlerin çoğu yıldızlarda oluştu. Demirden ağırların yaklaşık yarısı dev yıldızlarda yavaş nötron yakalamayla, kalanı büyük ölçüde nötron yıldızı birleşmeleri gibi olaylarda hızlı nötron yakalamayla üretilir."
@@ -234,7 +234,7 @@
       "kid": "d6n3"
     },
     {
-      "deger": "~3000",
+      "deger": "~3.000",
       "aciklama": "Samanyolu'nda bilinen gezegenimsi bulutsu sayısı",
       "kaynak_url": "https://en.wikipedia.org/wiki/Planetary_nebula",
       "kid": "d6n4"
@@ -295,7 +295,7 @@
     },
     {
       "deger": "~3.050 K",
-      "aciklama": "Bilinen en soğuk beyaz cücelerden WD J2147–4035'in yüzey sıcaklığı; henüz hiçbir kara cüce yok",
+      "aciklama": "Bilinen en soğuk beyaz cücelerden WD J2147−4035'in yüzey sıcaklığı; henüz hiçbir kara cüce yok",
       "kaynak_url": "https://en.wikipedia.org/wiki/White_dwarf",
       "kid": "d6n14"
     },
@@ -326,17 +326,17 @@
   ],
   "sozluk": [
     {
-      "terim": "Gezegenimsi bulutsu",
+      "terim": "gezegenimsi bulutsu",
       "tanim": "Ölen orta kütleli bir yıldızın savurduğu ve sıcak çekirdeğin ışığıyla parlayan, birkaç on bin yılda dağılan gaz kabuğu.",
       "kid": "d6t0"
     },
     {
-      "terim": "Beyaz cüce",
+      "terim": "beyaz cüce",
       "tanim": "Füzyon yapmayan, Dünya boyutunda, elektron yozlaşma basıncıyla ayakta duran yıldız artığı.",
       "kid": "d6t1"
     },
     {
-      "terim": "Elektron yozlaşma basıncı",
+      "terim": "elektron yozlaşma basıncı",
       "tanim": "Pauli dışlama ilkesi yüzünden çok sıkışmış elektronların daha fazla sıkıştırılmaya karşı koyması.",
       "kid": "d6t2"
     },
@@ -346,7 +346,7 @@
       "kid": "d6t3"
     },
     {
-      "terim": "Çekirdek çöküşü süpernovası",
+      "terim": "çekirdek çöküşü süpernovası",
       "tanim": "Kütleli bir yıldızın demir çekirdeği çöküp geri sektiğinde dış katmanların uzaya fırlatıldığı patlama; tayfında hidrojen varsa Tip II denir.",
       "kid": "d6t4"
     },
@@ -356,28 +356,28 @@
       "kid": "d6t5"
     },
     {
-      "terim": "Nötrino",
+      "terim": "nötrino",
       "tanim": "Maddeyle neredeyse hiç etkileşmeyen, yüksüz, çok hafif temel parçacık.",
       "kid": "d6t6"
     },
     {
-      "terim": "Nötron yıldızı",
+      "terim": "nötron yıldızı",
       "tanim": "Çöküş süpernovasından kalan, yaklaşık 20 km çaplı, çoğunlukla nötronlardan oluşan aşırı yoğun artık.",
       "kid": "d6t7"
     },
     {
-      "terim": "Atarca (pulsar)",
+      "terim": "atarca (pulsar)",
       "tanim": "Manyetik kutuplarından yaydığı ışınım demeti Dünya'yı düzenli aralıklarla süpüren dönen nötron yıldızı.",
       "kid": "d6t8"
     },
     {
-      "terim": "Magnetar",
-      "tanim": "Manyetik alanı sıradan nötron yıldızlarından yaklaşık 1000 kat güçlü olan nötron yıldızı türü.",
+      "terim": "magnetar",
+      "tanim": "Manyetik alanı sıradan nötron yıldızlarından yaklaşık 1.000 kat güçlü olan nötron yıldızı türü.",
       "kid": "d6t9"
     },
     {
-      "terim": "Kilonova",
-      "tanim": "İki nötron yıldızının birleşmesinden sonra ağır elementlerin ışımasıyla oluşan, tipik novadan yaklaşık 1000 kat parlak patlama.",
+      "terim": "kilonova",
+      "tanim": "İki nötron yıldızının birleşmesinden sonra ağır elementlerin ışımasıyla oluşan, tipik novadan yaklaşık 1.000 kat parlak patlama.",
       "kid": "d6t10"
     },
     {
@@ -386,37 +386,37 @@
       "kid": "d6t11"
     },
     {
-      "terim": "Kara cüce",
+      "terim": "kara cüce",
       "tanim": "Görünür ışık vermeyecek kadar soğumuş beyaz cüce için kullanılan kuramsal ad; evren henüz bunun için yeterince yaşlı değil.",
       "kid": "d6t12"
     },
     {
-      "terim": "Klasik nova",
+      "terim": "klasik nova",
       "tanim": "Bir beyaz cücenin eşinden çektiği hidrojenin yüzeyinde kaçak füzyonla patlaması; beyaz cüce bu patlamadan sağ çıkar.",
       "kid": "d6t13"
     },
     {
-      "terim": "Yinelenen nova",
+      "terim": "yinelenen nova",
       "tanim": "Patlamaları insan ömrü içinde, kabaca 10 ile 100 yılda bir tekrarlanan nova.",
       "kid": "d6t14"
     },
     {
-      "terim": "Işık yankısı",
+      "terim": "ışık yankısı",
       "tanim": "Bir patlamanın ışığının toz bulutlarından yansıyıp daha uzun yoldan, yıllar sonra bize ulaşan kısmı.",
       "kid": "d6t15"
     },
     {
-      "terim": "Milisaniye atarcası",
+      "terim": "milisaniye atarcası",
       "tanim": "Dönme periyodu yaklaşık 10 milisaniyeden kısa olan, eşinden aldığı maddeyle yeniden hızlanmış atarca.",
       "kid": "d6t16"
     },
     {
-      "terim": "Yasak çizgiler",
-      "tanim": "Yalnızca çok seyrek gazda belirgin hale gelen, laboratuvarda pek görülmeyen atom ve iyon geçişlerinden doğan tayf çizgileri.",
+      "terim": "yasak çizgiler",
+      "tanim": "Yalnızca çok seyrek gazda belirgin hâle gelen, laboratuvarda pek görülmeyen atom ve iyon geçişlerinden doğan tayf çizgileri.",
       "kid": "d6t17"
     },
     {
-      "terim": "Başarısız süpernova",
+      "terim": "başarısız süpernova",
       "tanim": "Kütleli bir yıldızın çekirdeğinin parlak bir patlama olmadan doğrudan kara deliğe çöktüğü varsayılan olay.",
       "kid": "d6t18"
     }
@@ -441,7 +441,7 @@
     },
     {
       "soru": "Gezegenimsi bulutsuların gezegenlerle bir ilgisi var mı? Neden bu kadar az sayıda görüyoruz?",
-      "cevap": "Hayır; ad, küçük teleskoplarda gezegen diskine benzemelerinden gelir. Ölen yıldızın savurduğu gazdır. Birkaç on bin yılda dağıldıkları için, yani yıldız ömrüne göre çok kısa yaşadıkları için, Samanyolu'nda yalnızca yaklaşık 3000 tanesi biliniyor.",
+      "cevap": "Hayır; ad, küçük teleskoplarda gezegen diskine benzemelerinden gelir. Ölen yıldızın savurduğu gazdır. Birkaç on bin yılda dağıldıkları için, yani yıldız ömrüne göre çok kısa yaşadıkları için, Samanyolu'nda yalnızca yaklaşık 3.000 tanesi biliniyor.",
       "kid": "d6s1"
     },
     {
@@ -501,7 +501,7 @@
     },
     {
       "soru": "Tycho'nun 1572 süpernovasının Tip Ia olduğu 2008'de nasıl anlaşıldı?",
-      "cevap": "Patlamanın ışığının toz bulutlarından yansıyıp gecikerek gelen kısmı, yani ışık yankısı, yakalandı. Bu ışığın tayfında silisyum var, hidrojen yoktu; bu Tip Ia'nın imzasıdır.",
+      "cevap": "Patlamanın ışığının toz bulutlarından yansıyıp gecikerek gelen kısmı, yani ışık yankısı, yakalandı. Bu ışığın tayfında silisyum vardı, hidrojen yoktu; bu Tip Ia'nın imzasıdır.",
       "kid": "d6s13"
     }
   ],

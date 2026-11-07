@@ -36,6 +36,7 @@ c = 299.792.458 m/s (Ders d28 bölüm 11 örneği), e = 1,602176634 × 10⁻¹�
 | d28-tunelleme | E = V₀ ÷ 2 ("engel yüksekliği enerjinin 2 katı") | çizim kararı; bu durumda T = 1 ÷ cosh²(κa) |
 | d28-tunelleme | ince engel κa = 1,5 → T ≈ %18 | hesap: 1 ÷ cosh²(1,5) = 0,1807 |
 | d28-tunelleme | iki kat kalın κa = 3 → T ≈ %1 | hesap: 1 ÷ cosh²(3) = 0,00987 |
+| d28-tunelleme (2026-11-08) | engel kutusu y0 − 54 … y0 + 30 (görünür oran 84 ÷ 30 = 2,8) → y0 − 30 … y0 + 30 ve y0 + 30'da sıfır çizgisi: engel yüksekliği 60 ÷ 30 = 2 × enerji, yazıyla aynı | çizim geometrisi; ders bölüm 6 |
 | d28-tunelleme | ≈18 kat az | hesap: 0,1807 ÷ 0,00987 = 18,3 |
 | d28-tunelleme | kuyruk genliği √T; dalga biçimi | √T: olasılık genliğin karesi (Ders d27 bölüm 10, Born kuralı); dalga çizimi şematik |
 | d28-gamow-tepesi (bölüm 7) | T = 15 milyon K | https://arxiv.org/pdf/astro-ph/0405568 Tablo 1 (T₆ = 15); ders bölüm 7 "Güneş'in merkezine yakın koşullarda" |

@@ -5,6 +5,8 @@
    gizliyken bekçi konuşmaz, ardışık hata duraklatır, Devam aynı parçadan.
    speechSynthesis ve wakeLock taklit; görünürlük visibilityState üzerine yazılarak. */
 const { test, expect } = require('@playwright/test');
+/* A7-06: hata dinleyicisi kurulan her testte sayfa hatası kalmamalı */
+test.afterEach(async ({ page }) => { if (page.hatalar) expect(page.hatalar).toEqual([]); });
 
 const TR = [{ name: 'Sahte Türkçe', lang: 'tr-TR', localService: true, default: true }, { name: 'English', lang: 'en-US', localService: true, default: false }];
 
@@ -113,6 +115,23 @@ test('(a2) parçalama: binlik ayraçlı sayı, sıra sayısı, saat ve tek baş�
   r.ust.slice(0, -1).forEach(x => expect(x).not.toMatch(/\d\.$/));
   r.sinir.slice(0, -1).forEach(x => expect(x).not.toMatch(/\d\.$/));
   expect(r.sinir.some(x => x.includes('11. dersten') && x.includes('03.21'))).toBe(true);
+});
+
+test('(a3) parçalama: baş harf ve "St." cümle sonu sayılmaz, ad ortasında bölünmez (A3-12)', async ({ page }) => {
+  await sahteOrtam(page);
+  await dersAc(page);
+  const r = await page.evaluate(() => {
+    const dolgu = 'Bu cümle parçalamanın devreye girmesi için yeterince uzun tutulmuş bir dolgu cümlesidir. ';
+    const ham = dolgu.repeat(2) + 'Bu sonucu M. E. Caplan, A. S. Schneider ve C. J. Horowitz hesapladı. ' + dolgu.repeat(2) +
+      'Daha kuzeydeki St. Petersburg\'dan bakınca yıldız alçakta kalır. ' + dolgu;
+    return { ham: window.Ses.parcala(ham, 180), okunus: window.Ses.parcala(window.Okunus.okunus(ham), 180) };
+  });
+  [r.ham, r.okunus].forEach(p => {
+    expect(p.some(x => x.includes('M. E. Caplan, A. S. Schneider ve C. J. Horowitz'))).toBe(true);
+    p.slice(0, -1).forEach(x => expect(x).not.toMatch(/(?:^|\s)(?:[A-ZÇĞİÖŞÜ]|St)\.$/));
+  });
+  expect(r.ham.some(x => x.includes("St. Petersburg'dan"))).toBe(true);
+  expect(r.okunus.some(x => x.includes("Saint Petersburg'dan"))).toBe(true);
 });
 
 test('(a3) Dinle: gerçek derste binlik ayraçlı sayı iki konuşmaya bölünmez', async ({ page }) => {

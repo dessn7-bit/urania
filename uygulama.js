@@ -11,7 +11,12 @@
   /* Türü bilinen okuma: düz nesne ya da dizi değilse boş olanı döner (bozuk ya da başka uygulamanın yazdığı değer çökertmesin) */
   function nesneOku(anahtar) { const v = oku(anahtar, null); return v && typeof v === 'object' && !Array.isArray(v) ? v : {}; }
   function diziOku(anahtar) { const v = oku(anahtar, null); return Array.isArray(v) ? v : []; }
+  /* Depo yazılamazsa (dolu ya da kapalı) değer oturum boyunca bellekte tutulur ve okuma önce buraya bakar:
+     "yaz, sonra depodan geri oku" deseni (haber filtresi, sesli kart, AR sesi, kırmızı mod) depo kapalıyken de çalışsın
+     (denetim A4-04). Kalıcı olmaz; kalıcılık gereken yerde (defter) çağıran yaz()'ın false dönüşünü kullanıcıya söyler. */
+  const bellek = new Map();
   function oku(anahtar, varsayilan) {
+    if (bellek.has(anahtar)) { try { return JSON.parse(bellek.get(anahtar)); } catch (e) { return varsayilan; } }
     try {
       const v = localStorage.getItem(DEPO_ONEK + anahtar);
       return v == null ? varsayilan : JSON.parse(v);
@@ -24,14 +29,16 @@
   const ONBELLEK_ONEK = ['sesGunluk', 'yerAdlari', 'hava_', 'hava2_', 'gp_'];
   function yaz(anahtar, deger) {
     const m = JSON.stringify(deger);
-    try { localStorage.setItem(DEPO_ONEK + anahtar, m); return true; } catch (e) { /* aşağıda */ }
+    const tamam = () => { bellek.delete(anahtar); return true; };
+    const olmadi = () => { if (m !== undefined) bellek.set(anahtar, m); return false; };
+    try { localStorage.setItem(DEPO_ONEK + anahtar, m); return tamam(); } catch (e) { /* aşağıda */ }
     /* Yazılamayan şey kendisi bir önbellekse başka önbellek silinmez (günlük yüzünden yörünge verisi gitmesin) */
-    if (ONBELLEK_ONEK.some(o => anahtar.indexOf(o) === 0)) return false;
+    if (ONBELLEK_ONEK.some(o => anahtar.indexOf(o) === 0)) return olmadi();
     for (const o of ONBELLEK_ONEK) {
       anahtarlar(o).forEach(a => { try { localStorage.removeItem(DEPO_ONEK + a); } catch (h) { /* yok */ } });
-      try { localStorage.setItem(DEPO_ONEK + anahtar, m); return true; } catch (e) { /* sıradaki önbellek */ }
+      try { localStorage.setItem(DEPO_ONEK + anahtar, m); return tamam(); } catch (e) { /* sıradaki önbellek */ }
     }
-    return false;
+    return olmadi();
   }
   /* Ön ekli anahtarları süz (önbellek temizliği için) */
   function anahtarlar(onek) {
@@ -39,7 +46,7 @@
     try { for (let i = 0; i < localStorage.length; i++) { const k = localStorage.key(i); if (k && k.indexOf(DEPO_ONEK + onek) === 0) ls.push(k.slice(DEPO_ONEK.length)); } } catch (e) { /* depo yok */ }
     return ls;
   }
-  function sil(anahtar) { try { localStorage.removeItem(DEPO_ONEK + anahtar); } catch (e) { /* depo yok */ } }
+  function sil(anahtar) { bellek.delete(anahtar); try { localStorage.removeItem(DEPO_ONEK + anahtar); } catch (e) { /* depo yok */ } }
 
   /* Varsayılan konum: İstanbul, ilçe düzeyine yuvarlanmış (41,0° K, 29,1° D; tek ondalık ≈ 10 km). Depo herkese açık
      olduğundan daha ince bir konum yazılmaz (gizlilik, 7 Kasım 2026). Kullanıcı GPS ya da elle değiştirebilir;
@@ -53,11 +60,16 @@
     try { new Intl.DateTimeFormat('tr-TR', { timeZone: z }); ok = true; } catch (e) { ok = false; }
     dilimSonuc.set(z, ok); return ok;
   }
-  /* Bozuk/eksik kayıt uygulamayı düşürmesin: enlem/boylam sayı değilse varsayılana dön. */
+  /* Bozuk/eksik kayıt uygulamayı düşürmesin: enlem/boylam sayı değilse varsayılana dön.
+     Number.isFinite: genel isFinite "41" ya da true'yu sayı sayıyordu; Astronomy Engine sayı olmayanı ve
+     −500…100 000 m dışındaki yüksekliği reddedip Gökyüzü/Görevler/Defter'i düşürüyordu (denetim A4-01). */
+  const yukseklikSinir = y => (Number.isFinite(y) && y >= -500 && y <= 100000 ? y : 0);
   function konum() {
     const k = oku('konum', null);
-    if (!k || !isFinite(k.enlem) || !isFinite(k.boylam) || Math.abs(k.enlem) > 90 || Math.abs(k.boylam) > 180) return VARSAYILAN_KONUM;
+    if (!k || typeof k !== 'object' || !Number.isFinite(k.enlem) || !Number.isFinite(k.boylam) || Math.abs(k.enlem) > 90 || Math.abs(k.boylam) > 180) return VARSAYILAN_KONUM;
     if (!k.saatDilimi || !gecerliDilim(k.saatDilimi)) k.saatDilimi = VARSAYILAN_KONUM.saatDilimi;
+    k.yukseklik = yukseklikSinir(k.yukseklik);
+    k.ad = k.ad == null ? 'Özel konum' : String(k.ad);
     return k;
   }
   /* Konum adı 80 karaktere kırpılır (yedekte ve ekranda sorun çıkmasın). Yazılamazsa false döner. */
@@ -125,11 +137,14 @@
   function bilimsel(x, anlamli) {
     if (x == null || !isFinite(x)) return '—';
     if (x === 0) return '0';
-    const us = Math.floor(Math.log10(Math.abs(x)));
+    let us = Math.floor(Math.log10(Math.abs(x)));
     if (us >= -3 && us <= 5) return sayi(x, Math.max(0, (anlamli || 3) - 1 - us));
-    const m = x / Math.pow(10, us);
+    /* Mantis istenen basamağa yuvarlanınca 10'a ulaşırsa üs bir artar: 99 999 000 → 1,00 × 10⁸, "10,00 × 10⁷" değil (A4-06) */
+    const ab = (anlamli || 3) - 1;
+    let m = x / Math.pow(10, us);
+    if (Math.abs(Number(m.toFixed(ab))) >= 10) { m /= 10; us++; }
     const ustStr = String(us).split('').map(c => UST[c]).join('');
-    return sayi(m, (anlamli || 3) - 1) + ' × 10' + ustStr;
+    return sayi(m, ab) + ' × 10' + ustStr;
   }
   let saatB, gunB, gunHaftaB, tamB;
   function bicimleyicileriKur(z) {
@@ -316,10 +331,10 @@
   }
   /* Sayfa başlığı alt görünümü de söyler: "Urania — Deneyler — Kepler yasaları" (h1 metninden).
      Görünümler eşzamansız çizildiği için bölümlerdeki değişiklikte de güncellenir. */
-  const BOLUM_AD = { gok: 'Gökyüzü', deney: 'Deneyler', ders: 'Dersler', hesap: 'Hesap', defter: 'Defter', ar: 'Gökyüzüne bak', tani: 'Tanı' };
+  const BOLUM_AD = { gok: 'Gökyüzü', deney: 'Deneyler', ders: 'Dersler', hesap: 'Hesap', defter: 'Defter', haber: 'Haberler', ar: 'Gökyüzüne bak', tani: 'Tanı' };
   function baslikYaz() {
     const { bolum, param } = rota();
-    let t = 'Urania — ' + BOLUM_AD[bolum];
+    let t = 'Urania' + (BOLUM_AD[bolum] ? ' — ' + BOLUM_AD[bolum] : '');   // adı yazılmamış bölüm "undefined" demesin
     if (param) {
       const h = document.querySelector('#b-' + bolum + ' h1');
       const ad = h && h.textContent.replace(/\s+/g, ' ').trim();
@@ -398,7 +413,7 @@
         T('GPS konumu', 'tamam', '±' + Math.round(c.accuracy) + ' m');
         const adOnbellek = nesneOku('yerAdlari')[hucre(yeni.enlem, yeni.boylam)];
         if (!once.oto || mesafeKm(once, yeni) > 0.3) {
-          konumYaz({ ad: adOnbellek || 'Bulunduğun yer', enlem: yeni.enlem, boylam: yeni.boylam, yukseklik: c.altitude ? Math.round(c.altitude) : 0, saatDilimi: Intl.DateTimeFormat().resolvedOptions().timeZone, oto: true });
+          konumYaz({ ad: adOnbellek || 'Bulunduğun yer', enlem: yeni.enlem, boylam: yeni.boylam, yukseklik: c.altitude ? yukseklikSinir(Math.round(c.altitude)) : 0, saatDilimi: Intl.DateTimeFormat().resolvedOptions().timeZone, oto: true });
         }
         konumBildir();
         if (!adOnbellek) {
@@ -441,17 +456,34 @@
     document.addEventListener('visibilitychange', () => { if (!document.hidden) konumuBul(); });
     setInterval(() => { if (!document.hidden) konumuBul(); }, 10 * 60e3);
     if ('serviceWorker' in navigator && location.protocol === 'https:') {
-      /* Yeni sürüm etkinleşince açık sayfadaki eski kodla yeni dosyalar karışmasın: yenileme şeridi */
       const vardi = !!navigator.serviceWorker.controller;
-      navigator.serviceWorker.addEventListener('controllerchange', () => {
-        if (!vardi || document.getElementById('surumSerit')) return;
-        const d = document.createElement('div');
-        d.id = 'surumSerit'; d.className = 'surum-serit'; d.setAttribute('role', 'status');
-        d.innerHTML = 'Urania güncellendi. <button type="button" class="dugme dolu">Yenile</button>';
-        d.querySelector('button').addEventListener('click', () => location.reload());
-        document.body.appendChild(d);
-      });
+      navigator.serviceWorker.addEventListener('controllerchange', () => { if (vardi) surumDegisti(); });
       navigator.serviceWorker.register('./sw.js').catch(() => { /* çevrimdışı önbellek olmadan da çalışır */ });
+    }
+  }
+  /* Yeni sürüm etkinleşince açık sayfadaki eski kodla sonradan yüklenen yeni dosyalar karışmasın (denetim A4-14):
+     sayfa görünmüyorsa (arka planda) ve açık bir form yoksa hemen, görünüyorsa bir sonraki arka plana geçişte kendiliğinden
+     yenilenir; o ana kadar "Yenile" şeridi durur. Yazılmakta olan defter kaydı kaybolmasın diye form açıkken
+     kendiliğinden yenilenmez. */
+  function yenilemeGuvenli() {
+    if (!document.hidden) return false;
+    /* Açık (görünen) form: defter kaydı, konum penceresi. Gizli ya da kapalı pencere içindeki form sayılmaz. */
+    return ![...document.querySelectorAll('.bolum:not([hidden]) form')].some(f => !f.hidden && f.getClientRects().length > 0);
+  }
+  let surumBekliyor = false;
+  function surumDegisti(yenile) {
+    const yeniden = yenile || (() => location.reload());
+    if (yenilemeGuvenli()) { yeniden(); return; }
+    if (!document.getElementById('surumSerit')) {
+      const d = document.createElement('div');
+      d.id = 'surumSerit'; d.className = 'surum-serit'; d.setAttribute('role', 'status');
+      d.innerHTML = 'Urania güncellendi. <button type="button" class="dugme dolu">Yenile</button>';
+      d.querySelector('button').addEventListener('click', () => yeniden());
+      document.body.appendChild(d);
+    }
+    if (!surumBekliyor) {
+      surumBekliyor = true;
+      document.addEventListener('visibilitychange', () => { if (yenilemeGuvenli()) yeniden(); });
     }
   }
 
@@ -460,7 +492,7 @@
 
   window.Urania = {
     modul(ad, tanim) { moduller[ad] = tanim; },
-    basla, oku, nesneOku, diziOku, yaz, sil, anahtarlar, konum, konumYaz, VARSAYILAN_KONUM, konumuBul, konumDurum, otoAcik, otoAyarla, dilimTahmin, dilimAdi, veri, betikler, guvenliUrl, icsMetni, icsIndir, ek,
+    basla, _surumDegisti: surumDegisti, oku, nesneOku, diziOku, yaz, sil, anahtarlar, konum, konumYaz, VARSAYILAN_KONUM, konumuBul, konumDurum, otoAcik, otoAyarla, dilimTahmin, dilimAdi, veri, betikler, guvenliUrl, icsMetni, icsIndir, ek,
     sayi, bilimsel, saat, gun, gunHafta, tamTarih, kadir, derece, kacGun, kacis
   };
 })();

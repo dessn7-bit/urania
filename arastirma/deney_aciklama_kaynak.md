@@ -82,3 +82,13 @@ Yöntem:
 ## İlgili dersler
 
 `veri/dersler.json` başlıklarına göre seçildi (yalnız d1–d19): kepler d3, d9, d19; yorunge d3; gelgit d3, d10; tayf d2, d5, d13; evreler d10; gecis d13; yildiz d5, d6, d4; karadelik d16, d6; gorelilik d16 (bölüm 2: GPS ve özel görelilik); hubble d17, d8, d7.
+
+## Denetim düzeltmeleri (2026-11-08, denetim 2026-10-30 alan 2)
+
+| deney | ne değişti (eski → yeni) | URL | kaynaktaki ifade |
+|---|---|---|---|
+| kepler | Plüton dışmerkezliği `veri/deney_veri.json` 0,244 → 0,2488 (ekranda en yakın nokta 29,85 → 29,66 AB; rehberdeki "yaklaşık 29,7 AB" artık ekranla uyuşuyor). NASA özet tablosundaki 0,244, aynı tablonun günberi/uzaklık sayılarıyla tutarsız (1 − 4436,8/5906,4 = 0,2488) | https://nssdc.gsfc.nasa.gov/planetary/factsheet/plutofact.html | "Orbital eccentricity 0.24880766" |
+| evreler | 8. adım "Gözle": 1,76° → 1,74° (14,75. günde uzanım 360 × 14,75 / 29,53 = 179,817°; asin(sin 5,145° · sin 199,817°) = −1,742°; eski değer tam 180° ile hesaplanmıştı) | — | hesap (uygulama ölçümüyle aynı: "−1,74°") |
+| gelgit | 7. adım "Gözle": 1,85 → 1,84 ve 1,48 → 1,47 (× 10⁻⁷ g; ekranda yuvarlanmış sayıların toplamı yerine tam değerler: 1,8436 / 1,6366 / 1,4705) | — | hesap: 2GMR/d³/g₀, sabitler veri/fizik.json, uzaklıklar veri/deney_veri.json |
+| gecis | 7. adım: "4 katına (1468 gün)" → "(1461 gün)", `#gcP` 3,16672 → 3,16465 (4 × 365,256 = 1461,0 gün); "Gözle" yörünge 2,53 → 2,52 AB (geçiş 20,8 saat aynı) | — | hesap (Kepler III, uygulama ölçümü) |
+| gecis | 6. adım "Gözle": "yaklaşık 32,5 saatten" → "yaklaşık 32,6 saatten" (ekran 32,57 saat) | — | uygulama ölçümü |

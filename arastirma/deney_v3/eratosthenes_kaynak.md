@@ -5,17 +5,17 @@ Hesaplanan değerler (çevre, yüzde hata, WGS 84 meridyen yayları, gölge boyl
 | İddia / sayı | URL | Kaynaktaki ifade |
 |---|---|---|
 | Gölge açısı 7,2° = çemberin 1/50'si (Kleomedes'e göre) | https://en.wikipedia.org/wiki/Eratosthenes | "According to Cleomedes, Eratosthenes then measured the shadow's angle to be about 7.2 degrees" … "which is 1/50 of a full circle" |
-| 7,2° = 1/50 (ikinci kaynak) | https://dictionary.obspm.fr/terms/eratosthenes-method/ | "the shadow is cast at an angle of 1/50 of 360°" "or 7.2°, from the vertical." |
-| Syene–İskenderiye 5000 stadion | https://dictionary.obspm.fr/terms/eratosthenes-method/ | "The distance from Syene to Alexandria was 5,000 stadia," |
+| 7,2° = 1/50 (ikinci kaynak) | https://web.archive.org/web/20260520195955/https://dictionary.obspm.fr/terms/eratosthenes-method/ | "the shadow is cast at an angle of 1/50 of 360°" "or 7.2°, from the vertical." |
+| Syene–İskenderiye 5000 stadion | https://web.archive.org/web/20260520195955/https://dictionary.obspm.fr/terms/eratosthenes-method/ | "The distance from Syene to Alexandria was 5,000 stadia," |
 | 5000 stadion, bematistler | https://en.wikipedia.org/wiki/Eratosthenes | "The distance between Alexandria and Syene was reported to be about 5,000 stadia" "as measured by professional bematists." |
-| Sonuç 250.000 stadion | https://dictionary.obspm.fr/terms/eratosthenes-method/ | "which when multiplied by 50 gives the measure for the Earth's circumference, 250,000 stadia." |
+| Sonuç 250.000 stadion | https://web.archive.org/web/20260520195955/https://dictionary.obspm.fr/terms/eratosthenes-method/ | "which when multiplied by 50 gives the measure for the Earth's circumference, 250,000 stadia." |
 | 252.000 stadion (başka aktarım) | https://en.wikipedia.org/wiki/Earth%27s_circumference | "estimated that the meridian has a length of 252,000 stadia" |
 | Yaz gündönümü öğlesi Syene'de gölge yok | https://en.wikipedia.org/wiki/Eratosthenes | "However, in Syene, rods cast no shadows, and the Sun's rays shone straight down into the city-center well." |
 | Varsayım: aynı meridyende iki kent | https://en.wikipedia.org/wiki/Eratosthenes | "The simplified method works by considering two cities along the same meridian" |
 | İç ters açılar | https://en.wikipedia.org/wiki/Eratosthenes | "reasoned using alternate interior angles that this angle represented the portion of Earth's curvature" |
 | Syene dönencenin ~1° kuzeyinde, İskenderiye'nin 3° doğusunda; hatalar birbirini götürdü | https://en.wikipedia.org/wiki/Eratosthenes | "In fact Syene is 1° north of the Tropic and 3° east of Alexandria." / "two false assumptions which fortuitously cancelled each other out" |
-| Hatalar kısmen birbirini götürdü (ikinci kaynak) | https://dictionary.obspm.fr/terms/eratosthenes-method/ | "But the errors tended to cancel each other out, so his estimate was relatively accurate." |
-| Stadion 155–185 m, hata −%3 … +%15 | https://dictionary.obspm.fr/terms/eratosthenes-method/ | "The most likely reconstruction puts Eratosthenes' stadium in the range 155-185m," "implying an error of about 3% below or 15% above the true value." |
+| Hatalar kısmen birbirini götürdü (ikinci kaynak) | https://web.archive.org/web/20260520195955/https://dictionary.obspm.fr/terms/eratosthenes-method/ | "But the errors tended to cancel each other out, so his estimate was relatively accurate." |
+| Stadion 155–185 m, hata −%3 … +%15 | https://web.archive.org/web/20260520195955/https://dictionary.obspm.fr/terms/eratosthenes-method/ | "The most likely reconstruction puts Eratosthenes' stadium in the range 155-185m," "implying an error of about 3% below or 15% above the true value." |
 | Stadion 157,7 m (Firsov) | https://en.wikipedia.org/wiki/Earth%27s_circumference | "A value for the stadion of 157.7 metres has even been posited by L.V. Firsov" |
 | Stadion 160 m Messene, 185 m Attika, 191 m Olimpiya, 210 m Ptolemaios | https://en.wikipedia.org/wiki/Eratosthenes | "160 m (520 ft) (Messenian), 177 m (581 ft) (Delphic), 180 m (590 ft) (Pan-Hellenic), 185 m (607 ft) (Attic), 191 m (627 ft) (Olympic) and 210 m (690 ft) (Ptolemaic)." |
 | Olimpiya stadionu 176,4 m (öteki kaynakla çelişki: 191 m; ikisi de ekranda belirtildi) | https://en.wikipedia.org/wiki/Earth%27s_circumference | "Olympic stade" (176.4 m) … "this would imply a circumference of 44,100 km (an error of 10%)" |
@@ -35,3 +35,5 @@ Hesaplanan değerler (çevre, yüzde hata, WGS 84 meridyen yayları, gölge boyl
 | hesap: Asvan–İskenderiye Δφ 7,1086°, meridyen yayı 787,74 km, çevre 39.893 km (%0,29 eksik) | (python3, WGS 84) | 787,737 km; 39.893,2 km |
 | hesap: 5000 stadion × 160 / 185 / 155 m → 40.000 / 46.250 / 38.750 km; hata −%0,02 / +%15,6 / −%3,14 | (python3, gerçek 40.007,863 km) | −0,0197 · +15,60 · −3,144 % |
 | Yöntem Kleomedes'in özetinden biliniyor, kitap kayıp | https://en.wikipedia.org/wiki/Eratosthenes | "According to Cleomedes, …" (d20 dersiyle aynı ifade: "Eratosthenes'in Dünya'yı ölçtüğü kitap kayıp; yöntemini … Kleomedes'in … özetinden biliyoruz") |
+
+| Denetim (2026-11-08): dictionary.obspm.fr/terms/eratosthenes-method/ 404 veriyor; uygulamadaki bağlantı ve bu dosyadaki satırlar Internet Archive kopyasına (20 Mayıs 2026) çevrildi; alıntılar kopyada yeniden okundu | https://web.archive.org/web/20260520195955/https://dictionary.obspm.fr/terms/eratosthenes-method/ | "was 5,000 stadia, which when multiplied by 50 gives" ; "puts Eratosthenes' stadium in the range 155-185m" |

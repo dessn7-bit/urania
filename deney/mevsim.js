@@ -143,7 +143,7 @@
       gokCiz(ctx, w, hA + 6, h - hA - 6);
     }
 
-    /* Üst sol: yörünge, eğik bakış. Haziran gündönümünde Dünya solda, Aralık'ta sağda; eksen hep sağa yatık. */
+    /* Üst sol: yörünge, eğik bakış. haziran gündönümünde Dünya solda, aralıkta sağda; eksen hep sağa yatık. */
     function yorungeCiz(ctx, w, hA) {
       const wA = w * 0.56;
       const ox = wA / 2 + 4, oy = hA / 2 + 6, rx = wA / 2 - 34, ry = Math.min(rx * 0.42, hA / 2 - 22);

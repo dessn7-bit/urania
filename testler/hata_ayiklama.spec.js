@@ -230,11 +230,46 @@ test('Sesli okuma: izotop, ekli kesir, tablo kısaltması "y", (+BAO), sayı kar
   expect(o('4 × 10³ m')).toBe('4 çarpı 10 üzeri 3 metre');   // 10'un kuvveti "üzeri" kalır
 });
 
-test('Tekrar kartlarının kimliği kalıcı (kid): benzersiz, ilk atamada eski sıra kimliğiyle aynı', () => {
+/* Kartın ilerlemesi kid'e yazılır: kid'ler yeniden numaralanır ya da yer değiştirirse ilerleme başka karta geçer (denetim A7-03).
+   testler/veri/kid_anlik.json, her kid'in hangi öğeye ait olduğunu (dersi, alanı ve metninin ilk sözcükleri) tutar. Test:
+   (1) her kid var ve benzersiz; (2) anlık görüntüdeki her kid aynı ders ve alanda, AYNI öğede (metnin ilk sözcüklerinin en az
+   yarısı tutar: yazım düzeltmesi geçer, başka karta kayma geçmez); (3) yeni kid'ler yalnız sona eklenir (numarası eskilerin üstünde).
+   Yeni öğe eklenince anlık görüntüye eklemek için: URANIA_ANLIK_YAZ=1 npx playwright test testler/hata_ayiklama.spec.js -g kid
+   (yalnız EKLER; var olan kayıtları değiştirmez). */
+test('Tekrar kartlarının kimliği kalıcı (kid): benzersiz, her kid aynı öğede, yeni kid yalnız sona', () => {
+  const fs = require('fs'), path = require('path');
   const D = require('../veri/dersler.json').dersler, gor = new Set();
-  D.forEach(d => [['sorular', 's'], ['anahtar_sayilar', 'n'], ['sozluk', 't']].forEach(([a, p]) => (d[a] || []).forEach((x, i) => {
-    expect(x.kid).toBeTruthy(); expect(gor.has(x.kid)).toBe(false); gor.add(x.kid);
+  const ALAN = [['sorular', 's', 'soru'], ['anahtar_sayilar', 'n', 'deger'], ['sozluk', 't', 'terim']];
+  const sozcuk = s => String(s).toLocaleLowerCase('tr-TR').match(/[\p{L}\p{N}]+/gu) || [];
+  const simdi = {};
+  D.forEach(d => ALAN.forEach(([a, p, m]) => (d[a] || []).forEach(x => {
+    expect(x.kid, d.id + ' ' + a).toBeTruthy(); expect(gor.has(x.kid), x.kid + ' tekrar').toBe(false); gor.add(x.kid);
+    simdi[x.kid] = { on: d.id + p, metin: sozcuk(x[m]).slice(0, 8) };
   })));
+  const yol = path.join(__dirname, 'veri', 'kid_anlik.json');
+  const anlik = fs.existsSync(yol) ? JSON.parse(fs.readFileSync(yol, 'utf8')).kid : {};
+  if (process.env.URANIA_ANLIK_YAZ) {
+    const yeni = { ...anlik };
+    for (const [k, v] of Object.entries(simdi)) if (!(k in yeni)) yeni[k] = v.metin.join(' ');
+    fs.writeFileSync(yol, JSON.stringify({ not: 'kid → öğenin metninin ilk 8 sözcüğü (soru / değer / terim). Yalnız eklenir; bkz. testler/hata_ayiklama.spec.js', kid: yeni }, null, 0).replace(/","d/g, '",\n"d') + '\n');
+    return;
+  }
+  expect(Object.keys(anlik).length, 'anlık görüntü').toBeGreaterThan(2500);
+  const sorun = [], enBuyuk = {};
+  const no = k => { const m = /^(d\d+[snt])(\d+)$/.exec(k); return m ? [m[1], +m[2]] : [k, NaN]; };
+  for (const [k, ilk] of Object.entries(anlik)) {
+    const [on, n] = no(k); enBuyuk[on] = Math.max(enBuyuk[on] ?? -1, n);
+    const s = simdi[k];
+    if (!s) { sorun.push(k + ': kayboldu (kart ilerlemesi sahipsiz kalır)'); continue; }
+    if (s.on !== on) { sorun.push(k + ': başka ders/alana geçti'); continue; }
+    const a = ilk.split(' ').filter(Boolean), b = new Set(s.metin);
+    if (a.length && a.filter(w => b.has(w)).length * 2 < a.length) sorun.push(`${k}: başka öğeye geçmiş görünüyor ("${ilk}" → "${s.metin.join(' ')}")`);
+  }
+  for (const k of Object.keys(simdi)) if (!(k in anlik)) {
+    const [on, n] = no(k);
+    if (!(n > (enBuyuk[on] ?? -1))) sorun.push(k + ': yeni kid eski numaraların arasına girdi (yalnız sona eklenir)');
+  }
+  expect(sorun).toEqual([]);
 });
 
 /* Mira: GCVS öğeleri (P 331,96 g, en parlak JD 2444839) Wikipedia'nın verdiği 10 Mayıs 2024 en parlak anını vermeli */
@@ -242,9 +277,12 @@ test('Mira: en parlak an tahmini 10 Mayıs 2024 ile 1 gün içinde; olaylarda ve
   const d = G.miraDurumu(new Date('2024-06-01T00:00Z'));
   expect(Math.abs(d.son - new Date('2024-05-10T12:00Z')) / 86400e3).toBeLessThan(1);
   expect(G.olaylar(new Date('2026-10-28T00:00Z'), IST, 120).some(o => /Mira/.test(o.baslik))).toBe(true);
+  const hatalar = [];
+  page.on('pageerror', e => hatalar.push(String(e)));   // A7-06: describe dışındaki tarayıcı testinde de sayfa hatası denetlenir
   await page.route(/^https?:\/\/(?!127\.0\.0\.1|localhost)/, r => r.abort());
   await page.clock.install({ time: new Date('2027-01-10T19:00:00+03:00') });
   await page.addInitScript(() => { localStorage.setItem('urania_konumOto', 'false'); });
   await page.goto('/index.html#gok');
   await expect(page.locator('#gkOlay')).toContainText('Mira', { timeout: 15000 });
+  expect(hatalar).toEqual([]);
 });

@@ -44,6 +44,9 @@
      Noktadan sonra küçük harf ya da boşluksuz devam gelirse cümle bitmemiştir: sıra sayısı
      ("11. dersten"), kısaltma ("ör. balkon"), saat ve sayı ("03.21", "14.500"; binlik ayracı
      okunus.js zaten kaldırır); orada bölünmez. */
+  /* Baş harf ("M. E. Caplan", "C. J. Horowitz") ve bilinen kısaltma ("St.", "Dr.", "vd.") cümle sonu değil (denetim A3-12):
+     ad ortasında konuşma bölünmesin. okunus.js çoğu kısaltmayı zaten açar; bu, açılmadan gelenler için. */
+  const KISALTMA_SONU = /(?:^|[\s(])(?:[A-ZÇĞİÖŞÜ]|St|Dr|Prof|Mr|Mrs|Jr|Sr|No|vd|ark|bkz|vb|vs|ör|örn|ort)\.\s*$/;
   function parcala(metin, tavan) {
     const PARCA_TAVAN = tavan || KISA_VARSAYILAN;
     const t = String(metin || '').replace(/\s+/g, ' ').trim();
@@ -53,7 +56,7 @@
     (t.match(/[^.!?…]*(?:[.!?…]+["'”’»)]*)?\s*/g) || [t]).forEach(s => {
       if (!s) return;
       const onceki = cumleler[cumleler.length - 1];
-      if (onceki !== undefined && (!/\s$/.test(onceki) || /\.\s*$/.test(onceki) && /^[a-zçğıöşü]/.test(s) || !/[^.!?…"'”’»)\s]/.test(s))) cumleler[cumleler.length - 1] += s;
+      if (onceki !== undefined && (!/\s$/.test(onceki) || /\.\s*$/.test(onceki) && /^[a-zçğıöşü]/.test(s) || !/[^.!?…"'”’»)\s]/.test(s) || KISALTMA_SONU.test(onceki))) cumleler[cumleler.length - 1] += s;
       else cumleler.push(s);
     });
     const parcalar = [];

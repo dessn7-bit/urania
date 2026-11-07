@@ -52,7 +52,7 @@
    ],
    "hareket": "Hareket azaltma açıksa saatler durur; değerler yine ölçüm kutularında."
   },
-  "gercek": "Samanyolu'nun merkezinde de bir kara delik var: Sgr A*, yaklaşık 27.000 ışık yılı uzakta, Yay (Sagittarius) takımyıldızı yönünde; kütlesi Güneş'inkinin yaklaşık 4,3 milyon katı. Event Horizon Telescope onun görüntüsünü 12 Mayıs 2022'de, M87*'ninkini 10 Nisan 2019'da yayımladı. NASA'ya göre aynı takımyıldızdaki Lagün Bulutsusu'nu (M8) gözlemenin en iyi zamanı Ağustos'tur. Kütleçekimin saati yavaşlatması gündelik hayatta da ölçülür: GPS uydularındaki saatler yerden uzakta, daha zayıf çekimde oldukları için günde yaklaşık 45,8 mikrosaniye hızlı işler ve bu düzeltilir.",
+  "gercek": "Samanyolu'nun merkezinde de bir kara delik var: Sgr A*, yaklaşık 27.000 ışık yılı uzakta, Yay (Sagittarius) takımyıldızı yönünde; kütlesi Güneş'inkinin yaklaşık 4,3 milyon katı. Event Horizon Telescope onun görüntüsünü 12 Mayıs 2022'de, M87*'ninkini 10 Nisan 2019'da yayımladı. NASA'ya göre aynı takımyıldızdaki Deniz Kulağı Bulutsusu'nu (M8) gözlemenin en iyi zamanı ağustostur. Kütleçekimin saati yavaşlatması gündelik hayatta da ölçülür: GPS uydularındaki saatler yerden uzakta, daha zayıf çekimde oldukları için günde yaklaşık 45,8 mikrosaniye hızlı işler ve bu düzeltilir.",
   "gercekKaynaklar": [
    {
     "ad": "ESO eso2119 (Sgr A* kütlesi ve uzaklığı)",
@@ -127,7 +127,7 @@
      "#kdUzak": 2.29667
     },
     "tikla": "#kdOn [data-i=\"0\"]",
-    "gozle": "Olay ufku 29,5 km; sen yaklaşık 2900 km uzaktasın ve saatin neredeyse normal (uzaktaki 1 saate karşı 59,7 dakika). Ama baştan ayağa gerilme yaklaşık 22 g: ayakların başından, ağırlığının 20 katından fazla bir kuvvetle çekiliyor.",
+    "gozle": "Olay ufku 29,5 km; sen yaklaşık 2.900 km uzaktasın ve saatin neredeyse normal (uzaktaki 1 saate karşı 59,7 dakika). Ama baştan ayağa gerilme yaklaşık 22 g: ayakların başından, ağırlığının 20 katından fazla bir kuvvetle çekiliyor.",
     "neden": "Küçük bir kara delikte gelgit gerilmesi, saat fark edilir biçimde yavaşlamadan çok önce büyür: gelgit ivmesi 2GM × boy / r³ ile uzaklığın küpüyle artar. Dev kara deliklerde (önceki adımlar) durum tersinedir."
    },
    {
@@ -136,8 +136,8 @@
      "#kdKutle": 0,
      "#kdUzak": 3
     },
-    "gozle": "1478 km uzaktasın; saatin uzaktakinin %99,9'u hızında işliyor, ama gerilme hâlâ yaklaşık 17 g.",
-    "neden": "Güneş kütleli bir kara deliğin ufku yalnız 3 km; 1500 km bile onun 500 katı. Ufuktaki gerilme yaklaşık 2 × 10⁹ g; 500 kat uzaklaşınca 500³ = 125 milyon kat azalır, yine de büyük kalır."
+    "gozle": "1.478 km uzaktasın; saatin uzaktakinin %99,9'u hızında işliyor, ama gerilme hâlâ yaklaşık 17 g.",
+    "neden": "Güneş kütleli bir kara deliğin ufku yalnız 3 km; 1.500 km bile onun 500 katı. Ufuktaki gerilme yaklaşık 2 × 10⁹ g; 500 kat uzaklaşınca 500³ = 125 milyon kat azalır, yine de büyük kalır."
    }
   ],
   "kaynaklar": [
@@ -341,7 +341,7 @@
      "sekil": "yazi",
      "renk": "--soluk",
      "ad": "Yatay eksen",
-     "ne": "Yüzey sıcaklığı, kelvin (K), logaritmik ve ters yönde: solda sıcak (40.000 K), sağda soğuk (3000 K) yıldızlar."
+     "ne": "Yüzey sıcaklığı, kelvin (K), logaritmik ve ters yönde: solda sıcak (40.000 K), sağda soğuk (3.000 K) yıldızlar."
     },
     {
      "sekil": "yazi",
@@ -365,7 +365,7 @@
      "sekil": "halka",
      "renk": "--parsomen",
      "ad": "Ortası noktalı küçük halka (“Güneş”)",
-     "ne": "Güneş'in yeri: yaklaşık 5772 K ve ışıma gücü 1."
+     "ne": "Güneş'in yeri: yaklaşık 5.772 K ve ışıma gücü 1."
     },
     {
      "sekil": "daire",
@@ -384,7 +384,7 @@
    ],
    "hareket": "Yıldız diyagramda yaşlanmaz: yalnız anakoldaki yeri gösterilir. Anakoldan sonraki evreler (kırmızı dev, süpernova) yalnız “Sonu” kutusunda yazar."
   },
-  "gercek": "Güneş yaklaşık 4,6 milyar yıl önce oluştu ve ömrünün yarısına henüz varmadı; beyaz cüce olmadan önce yaklaşık 5 milyar yıl daha yaşayacak. Kış göğünde Avcı'nın omzundaki Betelgeuse bir kırmızı süperdev: yaklaşık 700 ışık yılı uzakta, kütlesi Güneş'inkinin yaklaşık 15 katı; bir gün süpernova olarak patlayacak, ama büyük olasılıkla yaklaşık 100.000 yıl daha değil. Kış göğünün öbür süsü Ülker (M45) genç bir küme: yaklaşık 115 milyon yaşında ve ona son 100 milyon yılda oluşmuş sıcak, mavi, parlak yıldızlar egemen.",
+  "gercek": "Güneş yaklaşık 4,6 milyar yıl önce oluştu ve ömrünün yarısına henüz varmadı; beyaz cüce olmadan önce yaklaşık 5 milyar yıl daha yaşayacak. Kış göğünde Avcı'nın omzundaki Betelgeuse bir kırmızı süperdev: yaklaşık 700 ışık yılı uzakta, kütlesi Güneş'inkinin yaklaşık 15 katı; bir gün süpernova olarak patlayacak, ama büyük olasılıkla yaklaşık 100.000 yıl daha patlamayacak. Kış göğünün öbür süsü Ülker (M45) genç bir küme: yaklaşık 115 milyon yaşında ve ona son 100 milyon yılda oluşmuş sıcak, mavi, parlak yıldızlar egemen.",
   "gercekKaynaklar": [
    {
     "ad": "NASA: Sun Facts",
@@ -410,7 +410,7 @@
     "ayar": {
      "#hrKutle": 0
     },
-    "gozle": "Nokta Güneş'in üstüne oturuyor: G2V, yaklaşık 5770 K, anakolda yaklaşık 10 milyar yıl.",
+    "gozle": "Nokta Güneş'in üstüne oturuyor: G2V, yaklaşık 5.770 K, anakolda yaklaşık 10 milyar yıl.",
     "neden": "Güneş bir anakol yıldızı: çekirdeğinde hidrojeni helyuma çeviriyor. Yaklaşık 4,6 milyar yıl önce oluştu (NASA), yani ömrünün yarısına yakınında."
    },
    {
@@ -434,7 +434,7 @@
     "ayar": {
      "#hrKutle": -0.4318
     },
-    "gozle": "Kızıl, soğuk (yaklaşık 3400 K) ve sönük; anakol ömrü yüz milyarlarca yıl.",
+    "gozle": "Kızıl, soğuk (yaklaşık 3.400 K) ve sönük; anakol ömrü yüz milyarlarca yıl.",
     "neden": "Bu ömür evrenin bugünkü yaşından (yaklaşık 13,8 milyar yıl) çok uzun: şimdiye kadar doğmuş kırmızı cücelerin hiçbiri henüz anakoldan ayrılmadı."
    },
    {
@@ -442,7 +442,7 @@
     "ayar": {
      "#hrKutle": -0.09691
     },
-    "gozle": "K0V, yaklaşık 4910 K, Güneş'ten 3,3 kat sönük; anakol ömrü yaklaşık 26 milyar yıl.",
+    "gozle": "K0V, yaklaşık 4.910 K, Güneş'ten 3,3 kat sönük; anakol ömrü yaklaşık 26 milyar yıl.",
     "neden": "Ömür burada τ ≈ 10¹⁰ yıl × (M/M☉)(L☉/L) yaklaşımıyla hesaplanır. 26 milyar yıl evrenin bugünkü yaşından (yaklaşık 13,8 milyar yıl) uzun: bu yaklaşıma göre böyle bir yıldız henüz anakolu bitirmiş olamaz."
    },
    {
@@ -467,7 +467,7 @@
      "#hrKutle": 1.63347
     },
     "gozle": "O5V, yaklaşık 41.400 K, Güneş'ten yaklaşık 347.000 kat parlak; ömür yalnız yaklaşık 1,2 milyon yıl; sonu kara delik.",
-    "neden": "Kütle Güneş'in 43 katı ama ışıma yaklaşık 347.000 katı: her kilogram yakıt Güneş'tekinden yaklaşık 8000 kat hızlı harcanır. NASA'ya göre yaklaşık 20 Güneş kütlesi ve üstündeki yıldızlar kara delik bırakabilir."
+    "neden": "Kütle Güneş'in 43 katı ama ışıma yaklaşık 347.000 katı: her kilogram yakıt Güneş'tekinden yaklaşık 8.000 kat hızlı harcanır. NASA'ya göre yaklaşık 20 Güneş kütlesi ve üstündeki yıldızlar kara delik bırakabilir."
    }
   ],
   "kaynaklar": [
@@ -588,7 +588,7 @@
      "#grHiz": 0.000417
     },
     "tikla": "#grHedef [data-i=\"0\"]",
-    "gozle": "Hız yaklaşık 192 km/s, γ = 1,000: iki çubuk aynı boyda. Yolculuk yaklaşık 6600 yıl sürüyor.",
+    "gozle": "Hız yaklaşık 192 km/s, γ = 1,000: iki çubuk aynı boyda. Yolculuk yaklaşık 6.600 yıl sürüyor.",
     "neden": "Parker Güneş Sondası Aralık 2024'te saatte 692.000 km'ye (saniyede yaklaşık 192 km) çıktı; JHUAPL'ye göre insan yapımı hiçbir cisim bu kadar hızlı gitmedi. Bu hızda zaman yavaşlaması milyonda birin çok altındadır; yıldızlara yolculuk ise binlerce yıl sürer."
    },
    {
@@ -703,10 +703,10 @@
    ],
    "hareket": "Gezegen ekranda her turu 10 saniyede tamamlar; gerçek dolanım süresi ölçüm kutusunda yazar. Cihazında hareket azaltma açıksa canlandırma durur, zamanı kaydırıcıyla ilerletirsin."
   },
-  "gercek": "Dünya'nın yörüngesi de hafifçe basık bir elips: Güneş'e en çok Ocak'ta yaklaşırız (yaklaşık 147,1 milyon km), en uzak Temmuz'da oluruz (yaklaşık 152,1 milyon km). Yani İstanbul'da kışın ortasında Güneş'e en yakınız; mevsimleri uzaklık değil, Dünya'nın eğik ekseni yapar. Çok basık bir yörüngenin ünlü örneği Halley kuyruklu yıldızı: ortalama 76 yılda bir döner, Dünya göğünde en son 1986'da görüldü ve 2061'de geri dönecek.",
+  "gercek": "Dünya'nın yörüngesi de hafifçe basık bir elips: Güneş'e en çok ocakta yaklaşırız (yaklaşık 147,1 milyon km), en uzak temmuzda oluruz (yaklaşık 152,1 milyon km). Yani İstanbul'da kışın ortasında Güneş'e en yakınız; mevsimleri uzaklık değil, Dünya'nın eğik ekseni yapar. Çok basık bir yörüngenin ünlü örneği Halley kuyruklu yıldızı: ortalama 76 yılda bir döner, Dünya göğünde en son 1986'da görüldü ve 2061'de geri dönecek.",
   "gercekKaynaklar": [
    {
-    "ad": "NASA Space Place: mevsimler (Ocak'ta günberi, Temmuz'da günöte)",
+    "ad": "NASA Space Place: mevsimler (ocakta günberi, temmuzda günöte)",
     "url": "https://spaceplace.nasa.gov/seasons/en"
    },
    {
@@ -749,13 +749,13 @@
     "yap": "\"Jüpiter\" düğmesine bas.",
     "tikla": "#kpOn button[data-i=\"4\"]",
     "gozle": "a = 5,20 AB, dolanım yaklaşık 11,9 yıl.",
-    "neden": "Üçüncü yasa: P² = a³ (P yıl, a AB). 5,2³ ≈ 141, karekökü ≈ 11,9. NASA'nın verdiği dolanım süresi 4331 gün, yani 11,86 yıl."
+    "neden": "Üçüncü yasa: P² = a³ (P yıl, a AB). 5,2³ ≈ 141, karekökü ≈ 11,9. NASA'nın verdiği dolanım süresi 4.331 gün, yani 11,86 yıl."
    },
    {
     "yap": "\"Plüton\" düğmesine bas.",
     "tikla": "#kpOn button[data-i=\"6\"]",
     "gozle": "Dolanım yaklaşık 248 yıl. En yakın noktası yaklaşık 29,7 AB (NASA bilgi sayfası: 4436,8 milyon km).",
-    "neden": "Neptün'ün Güneş'e ortalama uzaklığı yaklaşık 30,2 AB (4515 milyon km). Plüton'un en yakın noktası bundan içeride: yörüngesinin bir kısmında Plüton Güneş'e Neptün'den daha yakındır."
+    "neden": "Neptün'ün Güneş'e ortalama uzaklığı yaklaşık 30,2 AB (4.515 milyon km). Plüton'un en yakın noktası bundan içeride: yörüngesinin bir kısmında Plüton Güneş'e Neptün'den daha yakındır."
    },
    {
     "yap": "Dışmerkezliği 0'a indir (a = 1 AB kalsın).",
@@ -855,8 +855,8 @@
     {
      "sec": "#ggGun",
      "tur": "kaydirici",
-     "ad": "Yeni Ay'dan bu yana gün",
-     "ne": "Ay evresi: 0 yeni Ay, yaklaşık 7,4 ilk dördün, 14,75 dolunay, yaklaşık 22,1 son dördün, 29,53 yine yeni Ay. Güneş'in Ay'a göre yönünü döndürür."
+     "ad": "Yeni aydan bu yana gün",
+     "ne": "Ay evresi: 0 yeni ay, yaklaşık 7,4 ilk dördün, 14,75 dolunay, yaklaşık 22,1 son dördün, 29,53 yine yeni ay. Güneş'in Ay'a göre yönünü döndürür."
     },
     {
      "sec": "#ggUzak",
@@ -880,7 +880,7 @@
    ],
    "hareket": "Dünya ekranda 6 saniyede bir döner (temsilî; gerçekte yaklaşık bir gün)."
   },
-  "gercek": "NOAA'ya göre çoğu kıyıda, bazı istisnalarla, her gün iki kabarma ve iki çekilme olur. Her kameri ayda iki kez kabarma gelgiti (Ay ile Güneş hizadayken, yeni Ay ve dolunayda) ve iki kez ölü gelgit (dördünlerde) görülür; Ay Dünya'ya en yakınken gelgit aralıkları ortalamadan büyüktür. Ölçülmüş en büyük gelgit aralıklarından biri Fundy Körfezi'ndeki Burntcoat Head'de, Kasım 1998'de: 16,3 m. Gelgitin yavaş etkisi Ay'ı da etkiler: Ay Dünya'dan yılda yaklaşık 3,8 cm uzaklaşıyor.",
+  "gercek": "NOAA'ya göre çoğu kıyıda, bazı istisnalarla, her gün iki kabarma ve iki çekilme olur. Her kameri ayda iki kez büyük gelgit (Ay ile Güneş hizadayken, yeni ay ve dolunayda) ve iki kez küçük gelgit (dördünlerde) görülür; Ay Dünya'ya en yakınken gelgit aralıkları ortalamadan büyüktür. Ölçülmüş en büyük gelgit aralıklarından biri Fundy Körfezi'ndeki Burntcoat Head'de, Kasım 1998'de: 16,3 m. Gelgitin yavaş etkisi Ay'ı da etkiler: Ay Dünya'dan yılda yaklaşık 3,8 cm uzaklaşıyor.",
   "gercekKaynaklar": [
    {
     "ad": "NOAA: Tides and Water Levels, kameri gün",
@@ -905,13 +905,13 @@
   ],
   "adimlar": [
    {
-    "yap": "Günü 0'a getir (yeni Ay), uzaklık ortalama, Güneş açık.",
+    "yap": "Günü 0'a getir (yeni ay), uzaklık ortalama, Güneş açık.",
     "ayar": {
      "#ggGun": 0,
      "#ggGunes": 1
     },
     "tikla": "#ggUzak button[data-u=\"ort\"]",
-    "gozle": "Ay'ın gelgit ivmesi yaklaşık 1,12 × 10⁻⁷ g, Güneş'inki 0,52 × 10⁻⁷ g; oran yaklaşık 0,46. Durum: kabarma gelgiti; gelgit genliği Ay'ın tek başına yaptığına göre yaklaşık %146.",
+    "gozle": "Ay'ın gelgit ivmesi yaklaşık 1,12 × 10⁻⁷ g, Güneş'inki 0,52 × 10⁻⁷ g; oran yaklaşık 0,46. Durum: büyük gelgit; gelgit genliği Ay'ın tek başına yaptığına göre yaklaşık %146.",
     "neden": "Güneş Ay'dan yaklaşık 27 milyon kat ağır ama yaklaşık 390 kat uzak. Gelgit uzaklığın küpüyle zayıflar (1/d³), çekim ise karesiyle. Bu yüzden çekimde Güneş baskın, gelgitte Ay."
    },
    {
@@ -919,16 +919,16 @@
     "ayar": {
      "#ggGun": 7.4
     },
-    "gozle": "Güneş yönü Ay'a dik. Durum: ölü gelgit. Gelgit genliği (kabarma ile çekilme arasındaki fark) Ay'ın tek başına yaptığına göre yaklaşık %54.",
-    "neden": "Dik açıda Güneş'in şişirdiği yer Ay'ın çukur bıraktığı yerdir; etkiler kısmen birbirini götürür. Bu modelde kabarma gelgitinin genliği ölü gelgitinkinin (1 + 0,46)/(1 − 0,46) ≈ 2,7 katı."
+    "gozle": "Güneş yönü Ay'a dik. Durum: küçük gelgit. Gelgit genliği (kabarma ile çekilme arasındaki fark) Ay'ın tek başına yaptığına göre yaklaşık %54.",
+    "neden": "Dik açıda Güneş'in şişirdiği yer Ay'ın çukur bıraktığı yerdir; etkiler kısmen birbirini götürür. Bu modelde büyük gelgitin genliği küçük gelgitinkinin (1 + 0,46)/(1 − 0,46) ≈ 2,7 katı."
    },
    {
     "yap": "Günü 14,75'e getir (dolunay).",
     "ayar": {
      "#ggGun": 14.75
     },
-    "gozle": "Güneş Ay'ın tam karşısında; yine kabarma gelgiti, genlik yaklaşık %146.",
-    "neden": "Gelgit şişkinliği iki yanlıdır: Güneş ister Ay'la aynı tarafta ister karşısında olsun, şişkinlikler aynı doğrultuda toplanır. Bu yüzden kabarma gelgiti ayda iki kez, yeni Ay ve dolunayda olur."
+    "gozle": "Güneş Ay'ın tam karşısında; yine büyük gelgit, genlik yaklaşık %146.",
+    "neden": "Gelgit şişkinliği iki yanlıdır: Güneş ister Ay'la aynı tarafta ister karşısında olsun, şişkinlikler aynı doğrultuda toplanır. Bu yüzden büyük gelgit ayda iki kez, yeni ay ve dolunayda olur."
    },
    {
     "yap": "\"Ay en yakında\" ile \"Ay en uzakta\" düğmelerini karşılaştır.",
@@ -961,7 +961,7 @@
      "#ggGunes": 1
     },
     "tikla": "#ggUzak button[data-u=\"yakin\"]",
-    "gozle": "Ay'ın gelgiti 1,33 × 10⁻⁷ g; Güneş'in 0,52'siyle toplanınca yaklaşık 1,85 × 10⁻⁷ g: üç uzaklık ayarının en büyüğü (ortalamada 1,64, en uzakta 1,48). Metindeki yüzde Ay'ın o anki kendi gelgitine göre olduğundan burada %139'a düşer; yanıltmasın.",
+    "gozle": "Ay'ın gelgiti 1,33 × 10⁻⁷ g; Güneş'in 0,52'siyle toplanınca yaklaşık 1,84 × 10⁻⁷ g: üç uzaklık ayarının en büyüğü (ortalamada 1,64, en uzakta 1,47). Metindeki yüzde Ay'ın o anki kendi gelgitine göre olduğundan burada %139'a düşer; yanıltmasın.",
     "neden": "Ay en yakındayken (NOAA: enberi) gelgit kuvvetleri her zamankinden büyüktür; bir de Güneş'le aynı hizadaysa iki etki toplanır."
    }
   ],
@@ -975,7 +975,7 @@
     "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/index.html"
    },
    {
-    "ad": "NOAA: gelgit değişimleri (enberi ve öteberi)",
+    "ad": "NOAA: gelgit değişimleri (enberi ve enöte)",
     "url": "https://oceanservice.noaa.gov/education/tutorial_tides/tides06_variations.html"
    }
   ]
@@ -1012,7 +1012,7 @@
      "sekil": "yazi",
      "renk": "--soluk",
      "ad": "Alttaki sayılar",
-     "ne": "Dalga boyu, nanometre cinsinden (nm; metrenin milyarda biri). Çizim 100 ile 2500 nm arasını gösterir."
+     "ne": "Dalga boyu, nanometre cinsinden (nm; metrenin milyarda biri). Çizim 100 ile 2.500 nm arasını gösterir."
     },
     {
      "sekil": "serit",
@@ -1039,7 +1039,7 @@
      "sec": "#tyOn",
      "tur": "dugme",
      "ad": "Yıldız düğmeleri",
-     "ne": "Proxima Centauri (3000 K), Betelgeuse (3600 K), Güneş (5772 K), Sirius A (9845 K) ve Rigel (12.100 K): sıcaklığı o yıldızın ölçülmüş yüzey sıcaklığına ayarlar."
+     "ne": "Proxima Centauri (3.000 K), Betelgeuse (3.600 K), Güneş (5.772 K), Sirius A (9.845 K) ve Rigel (12.100 K): sıcaklığı o yıldızın ölçülmüş yüzey sıcaklığına ayarlar."
     },
     {
      "sec": "#tyT",
@@ -1056,7 +1056,7 @@
    ],
    "hareket": ""
   },
-  "gercek": "Avcı (Orion) kuzey yarım kürenin kış göğünde belirgin bir takımyıldızdır; İstanbul'dan onu bulunca kırmızı Betelgeuse ile mavi-beyaz Rigel'in renk farkını çıplak gözle görebilirsin. Bu fark sıcaklık farkıdır: Rigel yaklaşık 12.100 K, Betelgeuse yaklaşık 3800 K. Doppler kayması gerçek bir ölçüm aracıdır: Michel Mayor ve Didier Queloz 1995'te Pegasus'taki 51 Pegasi'nin çevresinde bir gezegeni Doppler tayfölçümüyle buldu ve 2019 Nobel Fizik Ödülü'nü paylaştı. Gezegen yıldızını saniyede yaklaşık 56 m sallar; 51 Pegasi (5,49 kadir) uygun koşulda çıplak gözle görülebilir.",
+  "gercek": "Avcı (Orion) kuzey yarım kürenin kış göğünde belirgin bir takımyıldızdır; İstanbul'dan onu bulunca kırmızı Betelgeuse ile mavi-beyaz Rigel'in renk farkını çıplak gözle görebilirsin. Bu fark sıcaklık farkıdır: Rigel yaklaşık 12.100 K, Betelgeuse yaklaşık 3.800 K. Doppler kayması gerçek bir ölçüm aracıdır: Michel Mayor ve Didier Queloz 1995'te Kanatlıat'taki 51 Pegasi'nin çevresinde bir gezegeni Doppler tayfölçümüyle buldu ve 2019 Nobel Fizik Ödülü'nü paylaştı. Gezegen yıldızını saniyede yaklaşık 56 m sallar; 51 Pegasi (5,49 kadir) uygun koşulda çıplak gözle görülebilir.",
   "gercekKaynaklar": [
    {
     "ad": "NOIRLab: Constellation Orion",
@@ -1084,14 +1084,14 @@
    {
     "yap": "\"Güneş\" düğmesine bas.",
     "tikla": "#tyOn button[data-i=\"2\"]",
-    "gozle": "5772 K; eğrinin tepesi yaklaşık 502 nm'de (yeşil). Renk kutusu ise beyaza yakın.",
+    "gozle": "5.772 K; eğrinin tepesi yaklaşık 502 nm'de (yeşil). Renk kutusu ise beyaza yakın.",
     "neden": "Wien yasası: tepe dalga boyu = 2,898 mm·K / T. Güneş bütün görünür renklerde bol ışık saldığı için göz onu yeşil değil beyaz görür."
    },
    {
     "yap": "\"Betelgeuse\" düğmesine bas.",
     "tikla": "#tyOn button[data-i=\"1\"]",
-    "gozle": "3600 K; tepe yaklaşık 805 nm'de, kızılötesinde. Eğri kırmızı tarafa yaslanmış.",
-    "neden": "Soğuk yıldızın ışığının çoğu gözün göremediği kızılötesindedir; görünür kısmında kırmızı baskın olduğu için turuncu-kırmızı görünür. Orion'daki Betelgeuse ile Rigel'i çıplak gözle karşılaştırabilirsin. Betelgeuse'un sıcaklığı kaynağa göre biraz değişir: burada 2020 ölçümü 3600 K kullanıldı, ders metnindeki Wikipedia değeri yaklaşık 3800 K'dir; yarı düzenli değişen bir dev olduğu için parlaklığı da zamanla oynar."
+    "gozle": "3.600 K; tepe yaklaşık 805 nm'de, kızılötesinde. Eğri kırmızı tarafa yaslanmış.",
+    "neden": "Soğuk yıldızın ışığının çoğu gözün göremediği kızılötesindedir; görünür kısmında kırmızı baskın olduğu için turuncu-kırmızı görünür. Avcı'daki Betelgeuse ile Rigel'i çıplak gözle karşılaştırabilirsin. Betelgeuse'ün sıcaklığı kaynağa göre biraz değişir: burada 2020 ölçümü 3.600 K kullanıldı, ders metnindeki Wikipedia değeri yaklaşık 3.800 K'dir; yarı düzenli değişen bir dev olduğu için parlaklığı da zamanla oynar."
    },
    {
     "yap": "\"Rigel\" düğmesine bas.",
@@ -1100,7 +1100,7 @@
     "neden": "Sıcaklık iki katına çıkınca tepe dalga boyu yarıya iner. Ayrıca yüzeyin her metrekaresinden çıkan toplam ışınım sıcaklığın dördüncü kuvvetiyle artar (Stefan-Boltzmann)."
    },
    {
-    "yap": "Hızı yaklaşık +3000 km/s yap (uzaklaşma).",
+    "yap": "Hızı yaklaşık +3.000 km/s yap (uzaklaşma).",
     "ayar": {
      "#tyV": 0.4642
     },
@@ -1108,7 +1108,7 @@
     "neden": "Doppler etkisi: uzaklaşan kaynağın ışığı uzar. Küçük hızlarda kayma oranı ≈ v/c: 3000 / 299.792 ≈ 0,01. Çizgilerin deseni değişmediği için hangi element olduğunu tanıyıp hızı ölçebilirsin."
    },
    {
-    "yap": "Hızı yaklaşık −3000 km/s yap (yaklaşma).",
+    "yap": "Hızı yaklaşık −3.000 km/s yap (yaklaşma).",
     "ayar": {
      "#tyV": -0.4642
     },
@@ -1121,8 +1121,8 @@
      "#tyV": 0
     },
     "tikla": "#tyOn button[data-i=\"3\"]",
-    "gozle": "9845 K; tepe 294 nm'de, morötesinde. Görünür bantta eğri mordan kırmızıya doğru azalıyor; renk dairesi beyaz.",
-    "neden": "Tepe dalga boyu sıcaklıkla ters orantılı: 2,898 mm·K / 9845 K ≈ 294 nm. Tepe görünür bandın solunda kalsa da yıldız görünür ışıkta da bol ışık salar."
+    "gozle": "9.845 K; tepe 294 nm'de, morötesinde. Görünür bantta eğri mordan kırmızıya doğru azalıyor; renk dairesi beyaz.",
+    "neden": "Tepe dalga boyu sıcaklıkla ters orantılı: 2,898 mm·K / 9.845 K ≈ 294 nm. Tepe görünür bandın solunda kalsa da yıldız görünür ışıkta da bol ışık salar."
    },
    {
     "yap": "Sıcaklığı en sona, 40.000 K'e çıkar.",
@@ -1195,7 +1195,7 @@
      "sekil": "yarim",
      "renk": "#E8E8E8",
      "ad": "Çemberin üstündeki küçük yarı aydınlık daire",
-     "ne": "Ay. Sağ yarısı (Güneş'e bakan yüzü) hep aydınlık, sol yarısı karanlık. Günler ilerledikçe saat yönünün tersine döner; 0. günde (yeni Ay) Güneş'le aynı yönde, sağdadır."
+     "ne": "Ay. Sağ yarısı (Güneş'e bakan yüzü) hep aydınlık, sol yarısı karanlık. Günler ilerledikçe saat yönünün tersine döner; 0. günde (yeni ay) Güneş'le aynı yönde, sağdadır."
     },
     {
      "sekil": "yarim",
@@ -1219,26 +1219,26 @@
      "sekil": "daire",
      "renk": "--pirinc",
      "ad": "Nokta pirinç rengine dönerse",
-     "ne": "Ay hem yeni Ay ya da dolunayda hem de tutuluma yeterince yakın: tutulma olabilir."
+     "ne": "Ay hem yeni ay ya da dolunayda hem de tutuluma yeterince yakın: tutulma olabilir."
     }
    ],
    "kontroller": [
     {
      "sec": "#evGun",
      "tur": "kaydirici",
-     "ad": "Yeni Ay'dan bu yana gün",
-     "ne": "Ay'ın Dünya çevresindeki konumu: 0 yeni Ay, yaklaşık 7,4 ilk dördün, 14,75 dolunay, yaklaşık 22,1 son dördün. 29,53 günde bir evre turu tamamlanır."
+     "ad": "Yeni aydan bu yana gün",
+     "ne": "Ay'ın Dünya çevresindeki konumu: 0 yeni ay, yaklaşık 7,4 ilk dördün, 14,75 dolunay, yaklaşık 22,1 son dördün. 29,53 günde bir evre turu tamamlanır."
     },
     {
      "sec": "#evMevsim",
      "tur": "kaydirici",
      "ad": "Güneş'in Ay yörüngesinin düğümüne açısı",
-     "ne": "Yılın hangi zamanında olduğumuzu temsil eder. Ay'ın eğik yörüngesi tutulumu iki noktada (düğümlerde) keser; Güneş bunlardan birine yakınsa (0° ya da 180°) yeni Ay'da ve dolunayda gölgeler hizalanır. Güneş bir düğüm hizasından öbürüne yaklaşık 173 günde geçer."
+     "ne": "Yılın hangi zamanında olduğumuzu temsil eder. Ay'ın eğik yörüngesi tutulumu iki noktada (düğümlerde) keser; Güneş bunlardan birine yakınsa (0° ya da 180°) yeni ayda ve dolunayda gölgeler hizalanır. Güneş bir düğüm hizasından öbürüne yaklaşık 173 günde geçer."
     }
    ],
    "hareket": ""
   },
-  "gercek": "İnce hilal hâlindeki Ay'ın karanlık kısmını da soluk bir ışıkla görebilirsin: bu, Dünya'dan yansıyan güneş ışığıdır (Dünya ışığı); Leonardo da Vinci bunu 500 yılı aşkın süre önce açıklamıştı. Evrelerin bir turu (yeni Ay'dan yeni Ay'a) 29,53 gün sürer. Tutulmalar yılda iki “tutulma mevsimine” toplanır: mevsimler yaklaşık 173 günde bir gelir ve her biri 31–37 gün sürer. Bir sonraki tutulmayı Urania'nın Gökyüzü sekmesindeki yaklaşan olaylar listesinde görebilirsin.",
+  "gercek": "İnce hilal hâlindeki Ay'ın karanlık kısmını da soluk bir ışıkla görebilirsin: bu, Dünya'dan yansıyan güneş ışığıdır (Dünya ışığı); Leonardo da Vinci bunu 500 yılı aşkın süre önce açıklamıştı. Evrelerin bir turu (yeni aydan yeni aya) 29,53 gün sürer. Tutulmalar yılda iki “tutulma mevsimine” toplanır: mevsimler yaklaşık 173 günde bir gelir ve her biri 31–37 gün sürer. Bir sonraki tutulmayı Urania'nın Gökyüzü sekmesindeki yaklaşan olaylar listesinde görebilirsin.",
   "gercekKaynaklar": [
    {
     "ad": "NASA APOD 2019-09-26: Da Vinci Rise (Dünya ışığı)",
@@ -1289,8 +1289,8 @@
      "#evGun": 0,
      "#evMevsim": 0
     },
-    "gozle": "Yeni Ay ve Ay düğümde: Güneş tutulması olabilir.",
-    "neden": "Aynı hizalanma yaklaşık iki hafta arayla hem yeni Ay'da hem dolunayda olabildiği için Güneş ve Ay tutulmaları sık sık çift gelir."
+    "gozle": "Yeni ay ve Ay düğümde: Güneş tutulması olabilir.",
+    "neden": "Aynı hizalanma yaklaşık iki hafta arayla hem yeni ayda hem dolunayda olabildiği için Güneş ve Ay tutulmaları sık sık çift gelir."
    },
    {
     "yap": "Düğüm açısını 90° yap; günü 0 ile 14,75 arasında değiştir.",
@@ -1298,7 +1298,7 @@
      "#evGun": 14.75,
      "#evMevsim": 90
     },
-    "gozle": "Ay yaklaşık 5,1° yukarıda ya da aşağıda: ne yeni Ay'da ne dolunayda tutulma var.",
+    "gozle": "Ay yaklaşık 5,1° yukarıda ya da aşağıda: ne yeni ayda ne dolunayda tutulma var.",
     "neden": "Ay'ın tutuluma yaklaşık 1,5°'den yakın olması gerekir; bu da Güneş düğümün yaklaşık 17° yakınındayken olur. Güneş bir düğümden yaklaşık 173 günde bir geçer: tutulmalar yılda iki \"tutulma mevsimi\"ne toplanır, her biri 31–37 gün sürer."
    },
    {
@@ -1325,7 +1325,7 @@
      "#evGun": 14.75,
      "#evMevsim": 15
     },
-    "gozle": "15°'de Ay tutulumun 1,31° altında: Ay tutulması olabilir. 20°'de 1,76°'ye iniyor ve tutulma kayboluyor.",
+    "gozle": "15°'de Ay tutulumun 1,31° altında: Ay tutulması olabilir. 20°'de 1,74°'ye iniyor ve tutulma kayboluyor.",
     "neden": "Bu modelde tutulma için Ay'ın tutuluma 1,5°'den yakın olması gerekir (yaklaşık sınır); bu, Güneş düğüme yaklaşık 17°'den yakınken olur. Güneş gökte günde yaklaşık 1° ilerlediği için bu pencere bir ay kadar sürer; Wikipedia'ya göre tutulma mevsimleri 31–37 gün sürer."
    }
   ],
@@ -1397,7 +1397,7 @@
      "sec": "#gcRp",
      "tur": "kaydirici",
      "ad": "Gezegen yarıçapı",
-     "ne": "Dünya yarıçapı (6371 km) biriminde 0,5 ile 25 arası. Büyüdükçe çukur derinleşir: derinlik iki yarıçapın oranının karesiyle artar."
+     "ne": "Dünya yarıçapı (6.371 km) biriminde 0,5 ile 25 arası. Büyüdükçe çukur derinleşir: derinlik iki yarıçapın oranının karesiyle artar."
     },
     {
      "sec": "#gcRs",
@@ -1415,7 +1415,7 @@
      "sec": "#gcP",
      "tur": "kaydirici",
      "ad": "Dolanım süresi",
-     "ne": "Gezegenin yılı, 0,5 ile 5000 gün arası. Geçişin kaç günde bir yinelendiğini ve yörüngenin büyüklüğünü belirler."
+     "ne": "Gezegenin yılı, 0,5 ile 5.000 gün arası. Geçişin kaç günde bir yinelendiğini ve yörüngenin büyüklüğünü belirler."
     },
     {
      "sec": "#gcB",
@@ -1490,16 +1490,16 @@
      "#gcB": 0.95
     },
     "tikla": "#gcOn button[data-i=\"1\"]",
-    "gozle": "Düşüş %1,01'den %0,80'e indi, geçiş yaklaşık 32,5 saatten 16,4 saate kısaldı. Çukurun düz tabanı kayboldu: V biçimine döndü.",
+    "gozle": "Düşüş %1,01'den %0,80'e indi, geçiş yaklaşık 32,6 saatten 16,4 saate kısaldı. Çukurun düz tabanı kayboldu: V biçimine döndü.",
     "neden": "b = 0,95, 1 − k = 0,90'dan büyük (k: iki yarıçapın oranı, burada 0,10): gezegen yıldızın kenarını sıyırıyor ve diske hiç tam girmiyor. Kısa ve V biçimli çukur, sıyıran bir geçişin işaretidir."
    },
    {
-    "yap": "“Dünya–Güneş”e bas, dolanım süresini 4 katına (1468 gün) çıkar.",
+    "yap": "“Dünya–Güneş”e bas, dolanım süresini 4 katına (1.461 gün) çıkar.",
     "ayar": {
-     "#gcP": 3.16672
+     "#gcP": 3.16465
     },
     "tikla": "#gcOn button[data-i=\"0\"]",
-    "gozle": "Derinlik aynı (84 ppm). Geçiş 13,1 saatten 20,8 saate uzadı, yörünge 2,53 AB'ye büyüdü, yılda geçiş sayısı 0,2'ye düştü.",
+    "gozle": "Derinlik aynı (84 ppm). Geçiş 13,1 saatten 20,8 saate uzadı, yörünge 2,52 AB'ye büyüdü, yılda geçiş sayısı 0,2'ye düştü.",
     "neden": "Derinlik yalnız iki yarıçapın oranına bağlıdır. Uzak yörünge hem büyük hem yavaştır: P 4 katına çıkınca a 4^(2/3) ≈ 2,5 katına çıkar ve gezegen yıldızın önünden daha ağır geçer."
    },
    {
@@ -1594,7 +1594,7 @@
    ],
    "hareket": "Galaksi alanı 6 saniyede bir yaklaşık %35 büyüyüp baştan başlar. Hareket azaltma açıksa alan büyümez; grafik ve ölçümler aynı kalır."
   },
-  "gercek": "Komşumuz Andromeda Galaksisi (M31) bu genel kurala uymaz: Samanyolu'na saniyede yaklaşık 110 km hızla yaklaşıyor; bu hız ışığının maviye kaymasından ölçülür. Andromeda yaklaşık 2,5 milyon ışık yılı uzakta ve en iyi Kasım'da gözlenir; Aysız gecelerde orta düzey ışık kirliliğinde bile çıplak gözle soluk bir leke olarak görülebilir, bu yüzden İstanbul'un daha karanlık bir kenarından aramaya değer. Genişleme hızının kendisi de tartışmalı: iki yöntem birbirini tutmayan iki kesin değer veriyor (Planck 67,4, SH0ES 73,04 km/s/Mpc); bu farka “Hubble gerilimi” denir ve nedeni bilinmiyor.",
+  "gercek": "Komşumuz Andromeda Galaksisi (M31) bu genel kurala uymaz: Samanyolu'na saniyede yaklaşık 110 km hızla yaklaşıyor; bu hız ışığının maviye kaymasından ölçülür. Andromeda yaklaşık 2,5 milyon ışık yılı uzakta ve en iyi kasımda gözlenir; Aysız gecelerde orta düzey ışık kirliliğinde bile çıplak gözle soluk bir leke olarak görülebilir, bu yüzden İstanbul'un daha karanlık bir kenarından aramaya değer. Genişleme hızının kendisi de tartışmalı: iki yöntem birbirini tutmayan iki kesin değer veriyor (Planck 67,4, SH0ES 73,04 km/s/Mpc); bu farka “Hubble gerilimi” denir ve nedeni bilinmiyor.",
   "gercekKaynaklar": [
    {
     "ad": "Wikipedia: Andromeda–Milky Way collision",

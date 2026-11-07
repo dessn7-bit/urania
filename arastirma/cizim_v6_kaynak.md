@@ -113,8 +113,9 @@ Kesinlik etiketleri (çizimlerde çerçeve biçimiyle): düz kalın = gözlemle 
 | 150 milyar yıl; 2 trilyon yıl | Ders bölüm 8 (Krauss ve Starkman 2000, Wikipedia) | — |
 | kırmızı cüceler 10¹³ yıl; yıldız oluşumu 10¹⁴ yıl; yozlaşmış çağ 10¹⁴–10⁴⁰ yıl | Ders bölüm 8 | — |
 | proton yarılanma ömrü ≥ 10³⁴ yıl (bozunuyorsa) | Ders bölüm 8 | — |
-| kara delik çağı 10⁴⁰–10¹⁰⁰; en büyükleri 10¹⁰⁶ yıl | Ders bölüm 9 | — |
-| vakum bozunması ≈ 10¹³⁹ yıl, %95 alt sınır 10⁵⁸ yıl | Ders bölüm 12 (Andreassen, Frost, Schwartz 2018) | — |
+| kara delik çağı 10⁴³–10¹⁰⁰ (2026-11-08 düzeltildi: 10⁴⁰ → 10⁴³; yozlaşmış çağ 10⁴⁰'ta biter, 10⁴⁰–10⁴³ arası şeritsiz); en büyükleri 10¹⁰⁶ yıl | Ders bölüm 9; d55_kaynak.md FUT: "10^43 (10 tredecillion) years to approximately 10^100" (https://en.wikipedia.org/wiki/Future_of_an_expanding_universe) | — |
+| vakum bozunması ≈ 10¹⁶¹ yıl, %95 güvenle > 10⁶⁵ yıl (2026-11-08 düzeltildi: 10¹³⁹ → 10¹⁶¹, 10⁵⁸ → 10⁶⁵; eski değerler makalenin ilk sürümlerinindi; eksen ve karanlık çağ şeridi 10¹⁷⁰'e uzatıldı; KAYNAK.andreassen v2 → v4 PDF) | Ders bölüm 12; https://arxiv.org/pdf/1707.08124v4 özet: "lifetime of our universe: 10^161 years. With 95% confidence … more than 10^65 years" | — |
+| kesinlik etiketleri (2026-11-08): yıldızların sönmesi "güçlü kanıtlı"; proton bozunması, kara delik buharlaşması, vakum bozunması "kuram ya da hipotez" (eskiden tek etiket "kuram ya da hipotez") | Ders bölüm 8 ("yıldız fiziğine dayanan sağlam bir öngörüdür") ve bölüm 14 ("Güçlü kanıtlı ama açık sorulu: … yıldızların … söneceği") | — |
 | demir yıldızlar ≈ 10¹⁵⁰⁰ yıl (çizelge dışında) | Ders bölüm 8 | — |
 | d55-olcek-carpani (bölüm 10): ΛCDM geçmiş ve gelecek | Planck 2018 (Ders d51 bölüm 4: Ωm 0,3153, ΩΛ 0,6847; H0 67,36) | a(t) = (Ωm/ΩΛ)^(1/3) sinh^(2/3)(1,5 √ΩΛ H0 t); yaş 13,80 milyar yıl; 1/H0 = 977,8 ÷ 67,36 milyar yıl |
 | fantom w = −1,5, H0 = 70, Ωm = 0,3 → Büyük Yırtılma ≈ 22 milyar yıl | Ders bölüm 10 (Caldwell ve ark. 2003) | sayısal integral t = ∫ da / (a H), H = H0 √(0,3 a⁻³ + 0,7 a^1,5): 21,7 milyar yıl; dersin yaklaşık formülü 22,3 |
@@ -126,6 +127,7 @@ Kesinlik etiketleri (çizimlerde çerçeve biçimiyle): düz kalın = gözlemle 
 | değer | nereden | hesap |
 |---|---|---|
 | d56-schwarzschild-haritasi (bölüm 1): dört bölge, ufuklar 45°, tekillik T² − X² = 1 | Ders bölüm 1 (Wikipedia: White hole; Kruskal–Szekeres) | kavramsal; birim ölçeksiz |
+| d56-schwarzschild-haritasi dünya çizgileri (2026-11-08 düzeltildi): beyaz delikten çıkan ok (0,15; −1,0) → (1,05; −0,38) eğimi 0,69 (34,6°, uzaysı) idi → (0,42; −1,02) → (0,92; −0,32), eğim 1,40 (54,5°, zamansı); gözlemcinin ok ucu (0,33; 0,95) → (0,25; 1,03) eğimi 1,00 (ışık yolu) idi → (0,3025; 0,943), Bézier uç teğeti boyunca, eğim 1,66 | Kruskal haritasında ışık 45° yol alır (ders bölüm 1; https://en.wikipedia.org/wiki/Kruskal%E2%80%93Szekeres_coordinates: "look like straight lines at a 45-degree angle"; zamansı yollar: "at every point have a slope closer to the vertical time axis") | node: |ΔT/ΔX| hesabı testler/cizim_degerler.spec.js |
 | bölge etiketleri: I gözlemle kesinleşmiş, II kuramın sağlam sonucu, III ve IV Spekülasyon | Ders bölüm 1 | — |
 | d56-einstein-rosen (bölüm 6): Flamm paraboloidi r(z) = rs + z²/(4 rs) | Flamm 1916 gömme yüzeyi (z = 2√(rs(r − rs))'nin tersi); Ders bölüm 1 ve 6 | rs = 34 birim, ölçeksiz |
 | Fuller ve Wheeler 1962: ışık bile geçemeden kapanır | Ders bölüm 6 | — |
@@ -133,4 +135,5 @@ Kesinlik etiketleri (çizimlerde çerçeve biçimiyle): düz kalın = gözlemle 
 | Krikalev 803 günde ≈ 0,02 s | Ders bölüm 10 (Universe Today) | ders örneği 0,023 s |
 | CERN 1977 müonları γ = 29,327 → 1 yılda ≈ 28 yıl ileri | d25 bölüm (Wikipedia: Time dilation) | γ − 1 = 28,327 yıl |
 | Miller gezegeni: 1 saat = 7 yıl → 1 yılda ≈ 61.000 yıl | Ders bölüm 14 örneği (61.362) | 7 × 365,25 × 24 = 61.362; (61.362 − 1) yıl |
+| d56-gelecege-yolculuk (2026-11-08) | Miller satırının alt yazısı "kurgu: çok hızlı dönen kara delik ister" → "aşırı ama mümkün: çok hızlı dönen delik"; anlatıma "kesinlik basamağı kuram ya da hipotez" eklendi | Ders d56 bölüm 14: "bu sahne fizik yasalarıyla uyumludur … kuram ya da hipotez basamağında bir senaryo"; "Gezegendeki zaman farkı: aşırı ama mümkün" |
 | "Zaman genişlemesi: gözlemle kesinleşmiş" | Ders bölüm 10 | — |

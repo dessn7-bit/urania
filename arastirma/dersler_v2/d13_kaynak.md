@@ -231,3 +231,6 @@ Biçim: iddia | kaynak URL | kaynaktaki ifade. [H] = hesap.
 - Hesaplar python3 ile yeniden yapıldı: a = 0,05269 AB (M = 1,07 için 0,05236), 7,88 milyon km; 1×10⁻⁹, 5×10⁻⁷ nm; kütle merkezi 743.137 km, 0,00497 AB, 497 µas, /25 = 20; 5,20 AB, 0,52″, 0,00335″, oran 155; %0,465, 1/215, 0,1024, 22; 51 Peg b etki parametresi 6,3 (geçiş yok); 1,3³ = 2,197, 151 kg/m³, 6,6 ve 36,5; 2,78 sa, 9,58 yıl; 67,9° ve 90,4° → 89,6°; 0,0465. Hepsi doğru.
 - WebSearch (bu doğrulamada, d13): 6.
 
+- [DENETİM 2026-11-08, A6C-01] Yaşanabilir bölge dış sınırı ders içinde birleştirildi: anahtar sayı ve soru metnindeki "0,99–1,67 AB" → "0,99–1,70 AB" (paragraf, örnek, defter notu ve cevap zaten 1,70). Karar 61. satırdaki makale özeti satırına dayanır | https://pure.psu.edu/en/publications/habitable-zones-around-main-sequence-stars-new-estimates/ | "limits for our solar system are at 0.99 and 1.70 AU"
+- [DENETİM 2026-11-08] Mikromercek paragrafındaki "%3–4'ü bu yolla bulundu" → "%3–4'ü mikromercekle bulundu" (araya giren doğrudan görüntüleme cümlesi yüzünden yanlış yönteme bağlanıyordu; değer değişmedi, 102. satır).
+- [DENETİM 2026-11-08] "pulsar" → "atarca" (TÜBA terimi; ilk geçişte "atarca (pulsar)"). Olgu değişmedi.

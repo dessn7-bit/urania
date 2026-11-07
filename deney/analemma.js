@@ -129,7 +129,7 @@
       const durum = z > 0 ? `güneş saati kol saatinden ${H.dkSn(r.zd).slice(1)} önde: Güneş meridyenden (tam güneyden) ortalama öğleden önce geçer, saat ${H.saatYaz(og.saat)}`
         : z < 0 ? `güneş saati kol saatinden ${H.dkSn(r.zd).slice(1)} geride: Güneş meridyenden (tam güneyden) ortalama öğleden sonra geçer, saat ${H.saatYaz(og.saat)}`
           : `güneş saati ile kol saati aynı: Güneş meridyenden tam ortalama öğlede geçer`;
-      const p = [`<p>${ad}: ${durum}. Farkın ${H.dkSn(r.basiklik)} kadarı yörüngenin basıklığından (Dünya Ocak başında Güneş'e en yakın ve en hızlıdır, Güneş yıldızların önünde her gün daha çok kayar), ${H.dkSn(r.egiklik)} kadarı eksenin eğikliğinden (Güneş tutulum boyunca yürür, saatler ise gök ekvatoru boyunca sayar) geliyor.</p>`];
+      const p = [`<p>${ad}: ${durum}. Farkın ${H.dkSn(r.basiklik)} kadarı yörüngenin basıklığından (Dünya ocak başında Güneş'e en yakın ve en hızlıdır, Güneş yıldızların önünde her gün daha çok kayar), ${H.dkSn(r.egiklik)} kadarı eksenin eğikliğinden (Güneş tutulum boyunca yürür, saatler ise gök ekvatoru boyunca sayar) geliyor.</p>`];
       if (s.dairesel && s.egiksiz) p.push('<p>İkisi de kapalı: yörünge dairesel ve eksen dik olsaydı Güneş her gün aynı hızla, gök ekvatoru boyunca ilerlerdi. Güneş saati kol saatine hep uyar, analemma tek bir noktaya iner.</p>');
       else if (s.dairesel) p.push('<p>Yörünge dairesel: geriye yalnız eğiklik payı kalır. Yılda iki kez gidip gelen bu dalga sekizin iki halkasını eşitler.</p>');
       else if (s.egiksiz) p.push('<p>Eksen eğik değil: Güneş hep gök ekvatorunda (dik açıklık 0°), bu yüzden analemma yatay bir çizgiye iner ve yalnız basıklık payı kalır: yılda bir kez gidip gelen bir dalga.</p>');

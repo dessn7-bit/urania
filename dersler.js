@@ -246,7 +246,15 @@
     const u = (D.uniteler || []).find(x => x.id === uid), ls = sinavSorulari(uid);
     if (!u || !ls.length) { liste(); return; }
     const yeni = !sinavOturum || sinavOturum.uid !== uid;
-    if (yeni) sinavOturum = { uid, sira: sinavSec(ls), i: 0, cevap: {}, dogru: 0 };
+    if (yeni) {
+      const sira = sinavSec(ls);
+      /* Şıklar da karıştırılır (denetim A3B-08: doğru şık çoğu soruda en uzun ya da B'ydi, ipucuyla çözülüyordu).
+         dizi[q.id][konum] = dosyadaki şık dizini. Düğmenin data-i'si, cevap ve q.dogru dosyadaki dizinle kalır;
+         yalnız gösterim sırası ve harf (A–D) karışır: kayıtlı yanlışlar, kartlar ve sonuçlar etkilenmez. */
+      const dizi = {};
+      sira.forEach(q => { dizi[q.id] = karistir(q.secenekler.map((s, i) => i)); });
+      sinavOturum = { uid, sira, dizi, i: 0, cevap: {}, dogru: 0 };
+    }
     sinavCiz(u);
     if (yeni) window.scrollTo(0, 0);
     /* Sınava (geri tuşuyla) dönünce de odak soruya; bitmiş sınavda sinavCiz sonuca odaklar */
@@ -280,13 +288,16 @@
     const secildi = o.cevap[q.id];
     const cevaplandi = secildi != null;
     const d = D.dersler.find(x => x.id === q.ders);
+    const dz = (o.dizi && o.dizi[q.id] && o.dizi[q.id].length === q.secenekler.length) ? o.dizi[q.id] : q.secenekler.map((s, i) => i);
+    const harf = i => HARF[dz.indexOf(i)];   // dosyadaki şık dizini → ekrandaki harf
     el.innerHTML = `${ust}
       <p class="kucuk soluk">Soru ${o.i + 1} / ${o.sira.length} · ${o.dogru} doğru</p>
       <div class="sinav-soru"><p id="snSoru" tabindex="-1">${U.kacis(q.soru)}</p>
-        <div class="sinav-secenek" role="group" aria-label="Seçenekler">${q.secenekler.map((s, i) => {
+        <div class="sinav-secenek" role="group" aria-label="Seçenekler">${dz.map((i, k) => {
+          const s = q.secenekler[i];
           const sinif = !cevaplandi ? '' : (i === q.dogru ? ' dogru' : (i === secildi ? ' yanlis' : ''));
-          return `<button type="button" class="dugme${sinif}" data-i="${i}"${cevaplandi ? ' disabled' : ''}><b>${HARF[i]}</b> ${U.kacis(s)}</button>`; }).join('')}</div>
-        ${cevaplandi ? `<p class="sinav-sonuc ${secildi === q.dogru ? 'iyi' : 'kotu'}" id="snSonuc" tabindex="-1"><b>${secildi === q.dogru ? 'Doğru.' : 'Doğrusu ' + HARF[q.dogru] + '.'}</b> ${U.kacis(q.aciklama)}${d ? ` <a href="#ders/${d.id}">${U.kacis(d.baslik)}</a>` : ''}</p>
+          return `<button type="button" class="dugme${sinif}" data-i="${i}"${cevaplandi ? ' disabled' : ''}><b>${HARF[k]}</b> ${U.kacis(s)}</button>`; }).join('')}</div>
+        ${cevaplandi ? `<p class="sinav-sonuc ${secildi === q.dogru ? 'iyi' : 'kotu'}" id="snSonuc" tabindex="-1"><b>${secildi === q.dogru ? 'Doğru.' : 'Doğrusu ' + harf(q.dogru) + '.'}</b> ${U.kacis(q.aciklama)}${d ? ` <a href="#ders/${d.id}">${U.kacis(d.baslik)}</a>` : ''}</p>
           <button type="button" class="dugme dolu" id="snSonraki">${o.i + 1 < o.sira.length ? 'Sonraki soru' : 'Sonucu gör'}</button>` : ''}
         ${['yok-api', 'yok-tr'].indexOf(Ses.sesDurumu()) < 0 ? `<button type="button" class="bag" id="snDinle">${cevaplandi ? 'Açıklamayı dinle' : 'Soruyu dinle'}</button>` : ''}
       </div>`;
@@ -307,8 +318,8 @@
     if (sn) sn.addEventListener('click', () => { Ses.sus(); o.i++; sinavCiz(u); const p = el.querySelector('#snSoru') || el.querySelector('#snSon'); if (p) p.focus(); window.scrollTo(0, 0); });
     const dn = el.querySelector('#snDinle');
     if (dn) dn.addEventListener('click', () => {
-      if (!cevaplandi) Ses.soyle(q.soru + ' ' + q.secenekler.map((s, i) => HARF[i] + ': ' + s + '.').join(' '));
-      else Ses.soyle((o.cevap[q.id] === q.dogru ? 'Doğru. ' : 'Doğrusu ' + HARF[q.dogru] + ': ' + q.secenekler[q.dogru] + '. ') + q.aciklama);
+      if (!cevaplandi) Ses.soyle(q.soru + ' ' + dz.map((i, k) => HARF[k] + ': ' + q.secenekler[i] + '.').join(' '));
+      else Ses.soyle((o.cevap[q.id] === q.dogru ? 'Doğru. ' : 'Doğrusu ' + harf(q.dogru) + ': ' + q.secenekler[q.dogru] + '. ') + q.aciklama);
     });
   }
 
@@ -425,7 +436,7 @@
     if (!D) return;
     if (param === 'kartlar' || param === 'kartlar/hepsi') kartlar(param === 'kartlar/hepsi');
     else if (param.startsWith('sinav/')) { oturum = null; sinav(param.slice(6)); }
-    else if ((param === 'sozluk' || param.startsWith('sozluk/')) && window.Sozluk) { oturum = null; gomuluDurdur(); Sozluk.sayfa(el, decodeURIComponent(param.slice(7))); }
+    else if ((param === 'sozluk' || param.startsWith('sozluk/')) && window.Sozluk) { oturum = null; gomuluDurdur(); let terim = param.slice(7); try { terim = decodeURIComponent(terim); } catch (e) { /* bozuk % dizisi (A3-13): ham hâliyle aranır */ } Sozluk.sayfa(el, terim); }
     else { oturum = null; if (param) ders(param); else liste(); }
   }
   U.modul('ders', { ilk, goster });

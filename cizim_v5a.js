@@ -33,7 +33,7 @@
     nasaDunya: { ad: 'NASA Earth Fact Sheet', url: 'https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html' },
     jmu: { ad: 'JMU: The Interior of the Earth', url: 'https://csmgeo.csm.jmu.edu/geollab/baedke/gsci115/earthinterior.html' },
     aps: { ad: 'APS News: Inge Lehmann', url: 'https://aps.org/publications/apsnews/202309/history.cfm' },
-    icCekirdek: { ad: 'Wikipedia: Earth\'s inner core', url: 'https://www.wikiwand.com/en/Inner_core' },
+    icCekirdek: { ad: 'Wikipedia: Earth\'s inner core', url: 'https://en.wikipedia.org/wiki/Inner_core' },
     esrf: { ad: 'ESRF: Earth\'s centre 1000 degrees hotter (2013)', url: 'https://www.esrf.fr/news/general/Earth-Center-Hotter' },
     ucar: { ad: 'UCAR: Layers of Earth\'s Atmosphere', url: 'https://scied.ucar.edu/learning-zone/atmosphere/layers-earths-atmosphere' },
     nasaMerkur: { ad: 'NASA Mercury Fact Sheet', url: 'https://nssdc.gsfc.nasa.gov/planetary/factsheet/mercuryfact.html' },
@@ -484,7 +484,7 @@
   C.ekle('d35-sera', {
     ders: 'd35', bolum: 11, oran: 0.86,
     baslik: 'Sıcaklığı uzaklık değil hava belirler',
-    aciklama: 'Yatay eksen kelvin cinsinden sıcaklıktır, altta santigrat karşılıkları var. Havası olmayan Merkür\'de sıcaklık gece yaklaşık 93 kelvine, yani eksi 180 dereceye iner, gündüz 590 ile 725 kelvine çıkar. Boş daireler havası hiç ısı tutmasaydı gezegenin varacağı kara cisim sıcaklığıdır, dolu daireler gerçek ortalamadır. Venüs parlak bulutlarıyla ışığın yüzde 77\'sini yansıtır ve metrekare başına yaklaşık 598 watt soğurur, Dünya ise 961; yine de Venüs\'ün kara cisim sıcaklığı 226,6 kelvinden 92 barlık karbondioksit havası sayesinde 737 kelvine çıkar, sera etkisi yaklaşık 510 kelvin ekler. Dünya\'da ekleme 254 kelvinden 288 kelvine, yalnızca 34 kelvindir. Kesikli dikey çizgi Venüs\'ün 737 kelvinidir: Güneş\'e daha yakın Merkür\'ün gündüzünden bile sıcaktır.',
+    aciklama: 'Yatay eksen kelvin cinsinden sıcaklıktır, altta santigrat karşılıkları var. Havası olmayan Merkür\'de sıcaklık gece yaklaşık 93 kelvine, yani eksi 180 dereceye iner, gündüz 590 ile 725 kelvine çıkar. Boş daireler havası hiç ısı tutmasaydı gezegenin varacağı kara cisim sıcaklığıdır, dolu daireler gerçek ortalamadır; Merkür\'ün gece değeri ortalama değil en düşük sıcaklık olduğu için kareyle gösterildi. Venüs parlak bulutlarıyla ışığın yüzde 77\'sini yansıtır ve metrekare başına yaklaşık 598 watt soğurur, Dünya ise 961; yine de Venüs\'ün kara cisim sıcaklığı 226,6 kelvinden 92 barlık karbondioksit havası sayesinde 737 kelvine çıkar, sera etkisi yaklaşık 510 kelvin ekler. Dünya\'da ekleme 254 kelvinden 288 kelvine, yalnızca 34 kelvindir. Kesikli dikey çizgi Venüs\'ün 737 kelvinidir: Güneş\'e daha yakın Merkür\'ün gündüzünden bile sıcaktır.',
     kaynak: [KAYNAK.nasaVenus, KAYNAK.nasaMerkur, KAYNAK.nasaDunya],
     ciz(S) {
       const R = S.R, X = K => 40 + K / 800 * 340, ey = 288;
@@ -496,7 +496,7 @@
       s += S.yazi(8, y - 26, 'Merkür · gelen 9083 W/m² · havası yok', { boy: 13, renk: R.metin, kalin: true });
       s += S.cizgi(X(93), y, X(590), y, { renk: R.soluk, kalin: 1.5, kesik: '3 3' });
       s += S.cizgi(X(590), y, X(725), y, { renk: R.metin, kalin: 9 });
-      s += S.daire(X(93), y, 5, { dolgu: R.mavi, renk: R.metin, kalin: 1 });
+      s += S.kutu(X(93) - 5, y - 5, 10, 10, { dolgu: R.mavi, renk: R.metin, kalin: 1 });   // kare: gece en düşüğü (ortalama değil)
       s += S.yazi(X(93) - 8, y + 5, 'gece', { boy: 13, hiza: 'end', renk: R.metin });
       s += S.yazi(X(657), y + 24, 'gündüz 590–725 K', { boy: 13, hiza: 'middle', renk: R.metin });
       s += S.yazi(X(93) + 6, y + 24, '93 K', { boy: 13, renk: R.metin });
@@ -519,7 +519,8 @@
       s += S.cizgi(X(0), ey, X(800), ey, { renk: R.soluk, kalin: 1.2 });
       [0, 200, 400, 600, 800].forEach((K, i) => s += S.cizgi(X(K), ey, X(K), ey + 5, { renk: R.soluk, kalin: 1 }) + S.yazi(X(K), ey + 19, K + ' K', { boy: 13, hiza: i === 4 ? 'end' : 'middle', renk: R.soluk }));
       [[-200, '−200 °C'], [0, '0 °C'], [200, '200 °C'], [400, '400 °C']].forEach(([c, t]) => s += S.cizgi(X(c + 273.15), ey - 5, X(c + 273.15), ey, { renk: R.soluk, kalin: 1 }) + S.yazi(X(c + 273.15), ey + 37, t, { boy: 13, hiza: 'middle', renk: R.soluk }));
-      s += S.yazi(4, 18, 'boş daire: havasız olsaydı · dolu daire: gerçek ortalama', { boy: 13, renk: R.soluk });
+      s += S.yazi(4, 15, 'boş daire: havasız olsaydı · dolu daire: gerçek ortalama', { boy: 13, renk: R.soluk });
+      s += S.yazi(4, 31, 'kare: Merkür\'ün gece en düşük sıcaklığı', { boy: 13, renk: R.soluk });
       return s;
     }
   });

@@ -47,6 +47,13 @@ test('Çizimlerdeki yazılar sesli okumada çevrilmemiş sembol bırakmaz', asyn
 });
 
 test('Ders içi deney: d3\'te Kepler deneyi açılır, ölçer, kapanır; başka derse geçince döngü durur', async ({ page }) => {
+  /* animasyon karesi isteklerini say: döngü çalışırken artar, durunca durur */
+  await page.addInitScript(() => {
+    window.__raf = 0;
+    const asil = window.requestAnimationFrame.bind(window);
+    window.requestAnimationFrame = f => { window.__raf++; return asil(f); };
+  });
+  const rafArtisi = async () => { const a = await page.evaluate(() => window.__raf); await page.waitForTimeout(600); return (await page.evaluate(() => window.__raf)) - a; };
   await page.goto('/index.html#ders/d3');
   const m = page.locator('.mini-deney[data-deney="kepler"]');
   await expect(m.locator('.mini-kap')).toBeHidden();
@@ -59,7 +66,11 @@ test('Ders içi deney: d3\'te Kepler deneyi açılır, ölçer, kapanır; başka
   await expect(m.locator('.mini-kap')).toBeHidden();
   await m.locator('.mini-ac').click();
   await expect(m.locator('#kpP')).not.toHaveText('—');
+  expect(await rafArtisi(), 'Kepler döngüsü çalışıyor').toBeGreaterThan(5);
   await page.goto('/index.html#ders/d13');
+  await expect(page.locator('.mini-deney[data-deney="gecis"]')).toBeVisible();
+  await page.waitForTimeout(200);   // son kare ve kalkan kutunun bir adımı
+  expect(await rafArtisi(), 'd13\'e geçince d3\'teki döngü durmalı').toBe(0);
   await page.locator('.mini-deney[data-deney="gecis"] .mini-ac').click();
   await expect(page.locator('.mini-deney[data-deney="gecis"] #gcDer')).toContainText('84 ppm');
 });
