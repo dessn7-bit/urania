@@ -46,7 +46,7 @@ test('Bulut: en açık dönem doğru saatlerle yazılır', async ({ page }) => {
   /* 21:00–02:00 (dahil) açık, diğer saatler kapalı → dönem 21:00–03:00 */
   await page.route('**/api.open-meteo.com/**', r => r.fulfill({ json: sahteHava(h => (h >= 21 || h <= 2) ? 10 : 85) }));
   await page.goto('/index.html#gok');
-  await expect.poll(() => page.locator('.hava-cumle').getAttribute('data-ses')).toContain("Bulut tahmini: en açık dönem 21:00–03:00 (bulut %30'un altında).");   // tam cümle seste; ekranda etiketli kısa satır
+  await expect.poll(() => page.locator('.hava-cumle').getAttribute('data-ses')).toContain("Bulut tahmini: en açık dönem 21.00–03.00 (bulut %30'un altında).");   // tam cümle seste; ekranda etiketli kısa satır
 });
 
 test('Bulut: kapalı gece', async ({ page }) => {
@@ -171,7 +171,7 @@ test('Yağış: riskli saatler ve toplam miktar', async ({ page }) => {
   /* 23:00, 00:00, 01:00 değerleri %70 / 0,8 mm; diğerleri %5. Değer önceki saati kapsar → aralık 22:00–01:00 */
   await page.route('**/api.open-meteo.com/**', r => r.fulfill({ json: sahteHava(() => 80, h => (h === 23 || h === 0 || h === 1) ? [70, 0.8] : [5, 0]) }));
   await page.goto('/index.html#gok');
-  await expect.poll(() => page.locator('.hava-cumle').getAttribute('data-ses')).toContain("Yağış riski: 22:00–01:00 arası olasılık %70'e çıkıyor, gece toplamı yaklaşık 2,4 mm.");   // tam cümle seste; ekranda etiketli kısa satır
+  await expect.poll(() => page.locator('.hava-cumle').getAttribute('data-ses')).toContain("Yağış riski: 22.00–01.00 arası olasılık %70'e çıkıyor, gece toplamı yaklaşık 2,4 mm.");   // tam cümle seste; ekranda etiketli kısa satır
   await page.locator('.hava-saat').nth(5).click();
   await expect(page.locator('#gkHavaDetay')).toContainText('önceki saatte yağış olasılığı');
 });
@@ -231,6 +231,6 @@ test.describe('İnceleme düzeltmeleri (defter)', () => {
   test('Gece yarısına yakın saatte tarih de yuvarlanır', async ({ page }) => {
     await page.goto('/index.html#defter');
     const s = await page.evaluate(() => Urania.saat(new Date('2026-10-27T23:59:45+03:00')) + ' ' + Urania.gunHafta(new Date('2026-10-27T23:59:45+03:00')));
-    expect(s).toBe('00:00 28 Ekim Çarşamba');
+    expect(s).toBe('00.00 28 Ekim Çarşamba');
   });
 });

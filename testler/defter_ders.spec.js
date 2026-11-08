@@ -232,7 +232,7 @@ test('14: konum başka saat dilimindeyse form ve liste aynı (konumun) saatini g
   await page.locator('#dfZaman').fill('2026-10-27T22:00');
   await page.locator('#dfKaydet').click();
   const li = page.locator('#dfListe li').first();
-  await expect(li).toContainText('22:00');
+  await expect(li).toContainText('22.00');
   const k = await page.evaluate(() => JSON.parse(localStorage.getItem('urania_defter'))[0]);
   expect(k.zaman).toBe('2026-10-27T13:00:00.000Z');
   expect(k.konum.saatDilimi).toBe('Asia/Tokyo');
@@ -243,7 +243,7 @@ test('14: konum başka saat dilimindeyse form ve liste aynı (konumun) saatini g
   /* Konum Türkiye'ye dönünce kayıt yine kendi diliminde (Tokyo) gösterilir ve dilim yazılır */
   await page.evaluate(k => localStorage.setItem('urania_konum', JSON.stringify(k)), KONUM);
   await page.reload();
-  await expect(page.locator('#dfListe li').first()).toContainText('22:00');
+  await expect(page.locator('#dfListe li').first()).toContainText('22.00');
   await expect(page.locator('#dfListe h2').first()).toContainText('Asia/Tokyo');
   await page.locator('#dfListe button[data-is="duzenle"]').click();
   await expect(page.locator('#dfZaman')).toHaveValue('2026-10-27T22:00');

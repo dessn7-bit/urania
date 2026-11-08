@@ -902,7 +902,7 @@ html.kirmizi .hb-gorsel img { filter: url(#kirmiziSuz); }
 .hk-lejant { margin-top: 6px; color: var(--soluk); }
 .hk-eski { display: inline-block; color: var(--uyari); }
 .hk-ens { list-style: none; margin: 10px 0 6px; padding: 0; display: grid; gap: 3px; }
-.hk-ens li { display: grid; grid-template-columns: 3.2em minmax(0, 1fr) 4.6em; align-items: center; gap: 8px; font: 400 13px/1.3 var(--sans); color: var(--soluk); font-variant-numeric: tabular-nums; }
+.hk-ens li { display: grid; grid-template-columns: 3.2em minmax(0, 1fr) auto; align-items: center; gap: 8px; font: 400 13px/1.3 var(--sans); color: var(--soluk); font-variant-numeric: tabular-nums; }
 .hk-ens-iz { height: 10px; background: var(--levha); border-radius: 3px; overflow: hidden; }
 .hk-ens-dolu { display: block; height: 100%; background: var(--iyi); opacity: .8; }
 .hk-ens-sayi { text-align: right; color: var(--parsomen); }
@@ -922,14 +922,18 @@ html.kirmizi .hb-gorsel img { filter: url(#kirmiziSuz); }
 .yedi-kap { margin: 6px 0 14px; }
 .yg-bas { font: 600 15px/1.35 var(--sans); color: var(--parsomen); margin: 0 0 6px; }
 .yedi-gece { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
-.yedi-gece li { display: grid; grid-template-columns: 7.2em 6.4em minmax(0, 1fr); gap: 8px; align-items: baseline; padding: 4px 0; border-bottom: 1px solid var(--cizgi); font: 400 14px/1.4 var(--sans); color: var(--soluk); }
+.yedi-gece li { display: flex; flex-wrap: wrap; column-gap: 8px; row-gap: 0; align-items: baseline; padding: 4px 0; border-bottom: 1px solid var(--cizgi); font: 400 14px/1.4 var(--sans); color: var(--soluk); }
+.yg-gun { flex: 0 0 7.2em; }
+.yg-et { flex: 0 0 6.4em; }
+.yg-neden { flex: 1 1 10em; min-width: 0; overflow-wrap: anywhere; }
 .yg-gun { color: var(--parsomen); }
 .yg-et { font-weight: 600; }
 .yg-iyi .yg-et { color: var(--iyi); }
 .yg-idare .yg-et { color: var(--pirinc); }
 .yg-kotu .yg-et { color: var(--uyari); }
 @media (max-width: 380px) {
-  .yedi-gece li { grid-template-columns: 6.4em 5.6em minmax(0, 1fr); font-size: 13px; }
+  .yedi-gece li { font-size: 13px; }
+  .yg-gun { flex-basis: 6.4em; } .yg-et { flex-basis: 5.6em; }
   .hk-model { font-size: 13px; }
   .hk-model th, .hk-model td { padding: 4px 3px; }
 }

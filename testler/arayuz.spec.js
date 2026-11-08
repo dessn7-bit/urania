@@ -2,7 +2,7 @@
 /* Arayüz testleri: her bölüm hatasız açılıyor, hesaplar beklenen sonucu veriyor,
    ayarlar kalıcı. Saat sabitlenir (2026-10-27 21:00 İstanbul) ki sonuçlar tekrarlanabilir olsun. */
 const { test, expect } = require('@playwright/test');
-const { celestrak } = require('./yardim');
+const { havaSessiz, celestrak } = require('./yardim');
 
 /* Gökyüzü bölümleri katlanır (ilk açılışta kapalı); bu dosyadaki testler liste içeriğini gördüğü için hepsi açık başlar */
 test.beforeEach(async ({ page }) => { await page.addInitScript(() => localStorage.setItem('urania_gokKat', JSON.stringify({ gezegen: true, hedef: true, meteor: true, algol: true, ortme: true, uydu: true, olay: true }))); });
@@ -14,6 +14,7 @@ test.beforeEach(async ({ page }) => {
   page.on('pageerror', e => page.hatalar.push(e.message));
   page.on('console', m => { if (m.type() === 'error') page.hatalar.push(m.text()); });
   await page.clock.install({ time: SABIT_AN });
+  await havaSessiz(page);
   /* Bulut tahmini ağa çıkmasın: bu dosyadaki testler gök hesaplarını sınar */
   await page.route('**/api.open-meteo.com/**', r => r.fulfill({ json: { hourly: { time: [], cloud_cover: [], cloud_cover_low: [], cloud_cover_mid: [], cloud_cover_high: [], relative_humidity_2m: [], wind_speed_10m: [] } } }));
   await celestrak(page);
@@ -24,8 +25,8 @@ test.afterEach(async ({ page }) => {
 
 test('Gökyüzü: levha çizilir, özet ve listeler dolar', async ({ page }) => {
   await page.goto('/index.html#gok');
-  await expect(page.locator('#gkOzet p').first()).toContainText('18:06');
-  await expect(page.locator('#gkSaat')).toContainText('21:00');
+  await expect(page.locator('#gkOzet p').first()).toContainText('18.06');
+  await expect(page.locator('#gkSaat')).toContainText('21.00');
   await expect(page.locator('#gkGezegen li')).toHaveCount(7);
   await expect(page.locator('#gkHedef li').first()).toBeVisible();
   await expect(page.locator('#gkOlay li').first()).toBeVisible();
@@ -40,12 +41,12 @@ test('Gökyüzü: levha çizilir, özet ve listeler dolar', async ({ page }) => 
 
 test('Gökyüzü: saat kaydırıcısı levhayı ve saati değiştirir', async ({ page }) => {
   await page.goto('/index.html#gok');
-  await expect(page.locator('#gkSaat')).toContainText('21:00');
+  await expect(page.locator('#gkSaat')).toContainText('21.00');
   /* Kaydırıcı gözlemcinin güneş öğlesinden (İstanbul 29,1° D: 10:04 UT → tam saate yuvarlanınca 13:00 TSİ) başlar: +14 sa = 03:00 */
   await page.locator('#gkKaydir').fill('840');
-  await expect(page.locator('#gkSaat')).toContainText('03:00');
+  await expect(page.locator('#gkSaat')).toContainText('03.00');
   await page.locator('#gkSimdi').click();
-  await expect(page.locator('#gkSaat')).toContainText('21:00');
+  await expect(page.locator('#gkSaat')).toContainText('21.00');
 });
 
 test('Gökyüzü: başka bir gece seçilince özet değişir', async ({ page }) => {
@@ -156,7 +157,7 @@ test('İnceleme düzeltmeleri: uzak konumda saatler o konumun diliminde ve doğr
   /* USNO: Tokyo 27 Ekim 2026 gün batımı 16:52 (UTC+9) —
      https://aa.usno.navy.mil/api/rstt/oneday?date=2026-10-27&coords=35.68,139.69&tz=9 */
   const ozet = await page.locator('#gkOzet p').first().innerText();
-  const saat = ozet.match(/batış (\d\d):(\d\d)/);   // özet satırı: "Güneş · batış 16:52 · …"
+  const saat = ozet.match(/batış (\d\d)[.:](\d\d)/);   // özet satırı: "Güneş · batış 16:52 · …"
   expect(saat, ozet).toBeTruthy();
   expect(Number(saat[1]) * 60 + Number(saat[2])).toBeGreaterThanOrEqual(16 * 60 + 51);
   expect(Number(saat[1]) * 60 + Number(saat[2])).toBeLessThanOrEqual(16 * 60 + 53);
@@ -166,7 +167,7 @@ test('İnceleme düzeltmeleri: uzak konumda saatler o konumun diliminde ve doğr
 test('İnceleme düzeltmeleri: canlı mod sabah 10:00\'da gerçek saati çizer', async ({ page }) => {
   await page.clock.setFixedTime(new Date('2026-10-28T10:00:00+03:00'));
   await page.goto('/index.html#gok');
-  await expect(page.locator('#gkSaat')).toContainText('10:00 (şimdi)');
+  await expect(page.locator('#gkSaat')).toContainText('10.00 (şimdi)');
   await expect(page.locator('#gkGunesDurum')).toHaveText('Gündüz');
 });
 
@@ -196,7 +197,7 @@ test('Takvime ekle: geçerli .ics dosyası iner', async ({ page }) => {
 test('ISS: görünür geçişler listelenir (ilk: 28 Ekim 05:21–05:22 TSİ)', async ({ page }) => {
   await page.goto('/index.html#gok');
   const ilk = page.locator('#gkIss li', { hasText: 'ISS ·' }).first();
-  await expect(ilk).toContainText('05:21–05:22', { timeout: 20000 }); // gölgeden çıkış 02:20:34 UT (Skyfield 02:20:35) – 02:21:52 UT
+  await expect(ilk).toContainText('05.21–05.22', { timeout: 20000 }); // gölgeden çıkış 02.20.34 UT (Skyfield 02.20.35) – 02.21.52 UT
   await expect(ilk).toContainText("Dünya'nın gölgesinden çıkıp belirir");
   await expect(ilk).toContainText('28 Ekim');
   await expect(page.locator('#gkIssKaynak')).toContainText('CelesTrak');

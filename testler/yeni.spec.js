@@ -2,7 +2,7 @@
 /* Gece planı, Algol, Ay örtmeleri, Tiangong/Starlink listesi, tekrar kartları ve sesli ders.
    Saat 2026-10-27 19:00 İstanbul'a sabitlenir; CelesTrak verisi 2026-10-27'de indirilmiş gerçek OMM. */
 const { test, expect } = require('@playwright/test');
-const { celestrak } = require('./yardim');
+const { havaSessiz, celestrak } = require('./yardim');
 
 /* Gökyüzü bölümleri katlanır (ilk açılışta kapalı); bu dosyadaki testler liste içeriğini gördüğü için hepsi açık başlar */
 test.beforeEach(async ({ page }) => { await page.addInitScript(() => localStorage.setItem('urania_gokKat', JSON.stringify({ gezegen: true, hedef: true, meteor: true, algol: true, ortme: true, uydu: true, olay: true }))); });
@@ -20,6 +20,7 @@ test.beforeEach(async ({ page }) => {
   page.on('pageerror', e => page.hatalar.push(e.message));
   page.on('console', m => { if (m.type() === 'error') page.hatalar.push(m.text()); });
   await page.clock.install({ time: SABIT_AN });
+  await havaSessiz(page);
   await celestrak(page);
 });
 test.afterEach(async ({ page }) => {
@@ -59,7 +60,7 @@ test('Algol: 7 Kasım 06:34 minimumu yaklaşan olaylarda, VSX kaynağıyla', asy
   await page.goto('/index.html#gok');
   const li = page.locator('#gkOlay li', { hasText: 'Algol en sönük' }).first();
   await expect(li).toContainText('7 Kasım');
-  await expect(li).toContainText('06:34');
+  await expect(li).toContainText('06.34');
   await expect(page.locator('#gkKaynak')).toContainText('AAVSO VSX');
 });
 
@@ -69,9 +70,9 @@ test('Ay örtmeleri: 22 Aralık Ülker örtmesi (Taygeta 02:22, karanlık kenar)
   const ul = page.locator('#gkOlay');
   const ulker = ul.locator('li', { hasText: 'Ülker örtmesi' }).filter({ hasText: '22 Aralık' });
   await expect(ulker).toBeVisible({ timeout: 15000 });
-  await expect(ulker).toContainText('Taygeta (4,3): 02:22 Ay\'ın karanlık kenarında kaybolur (dürbünle sınırda)');
+  await expect(ulker).toContainText('Taygeta (4,3): 02.22 Ay\'ın karanlık kenarında kaybolur (dürbünle sınırda)');
   /* Asterope (5,8) aynı gece karanlık kenarda ama %93 Ay'ın parıltısında 7×50 ile seçilmez */
-  await expect(ulker).toContainText('Asterope (5,8): kayboluşu 02:30, karanlık kenarda: Ay\'ın parıltısında dürbünle seçilmez');
+  await expect(ulker).toContainText('Asterope (5,8): kayboluşu 02.30, karanlık kenarda: Ay\'ın parıltısında dürbünle seçilmez');
   /* 28 Ekim: Asterope 5,8 kadir, Ay %95 — dürbünle seçilmez, listede yok */
   await expect(ul.locator('li', { hasText: 'örtmesi' }).filter({ hasText: '28 Ekim' })).toHaveCount(0);
 });
@@ -144,7 +145,7 @@ test('Depoya yazılamasa da CelesTrak\'a yarım saatte yeniden gidilmez (incelem
      tarih işlendi; istek sayısı ancak ondan sonra sınanır */
   await expect(page.locator('#gkIss li:not([data-eski])', { hasText: /ISS|Tiangong/ }).first()).toBeVisible();
   await expect(page.locator('#gkBuGece')).toBeVisible();                       // seçili gece moduna geçildi
-  await expect(page.locator('#gkOzet')).toContainText('batış 17:55');   // 5 Kasım gecesi (27 Ekim: 18:06)
+  await expect(page.locator('#gkOzet')).toContainText('batış 17.55');   // 5 Kasım gecesi (27 Ekim: 18.06)
   expect(istek).toBe(2);
 });
 

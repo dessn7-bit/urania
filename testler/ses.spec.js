@@ -110,7 +110,7 @@ test('(a2) parçalama: binlik ayraçlı sayı, sıra sayısı, saat ve tek baş�
     expect(r.p[i + 1]).not.toMatch(/^[a-zçğıöşü\d]/);
   }
   expect(r.p.some(x => x.includes('11. dersten'))).toBe(true);
-  expect(r.p.some(x => x.includes('03.21'))).toBe(true);
+  expect(r.p.some(x => x.includes('03:21'))).toBe(true);   // v44: ekrandaki "03.21" seste saat olarak "03:21"
   /* tavanı aşan tek cümlede boşluktan bölünürken de "11." parçanın sonunda kalmaz */
   r.ust.slice(0, -1).forEach(x => expect(x).not.toMatch(/\d\.$/));
   r.sinir.slice(0, -1).forEach(x => expect(x).not.toMatch(/\d\.$/));
@@ -403,7 +403,7 @@ test('(g) Gökyüzü: "Bu geceyi dinle" özeti, bulut cümlesini ve planı okur;
   await c.locator('[data-so="dinle"]').click();
   for (let i = 0; i < 300 && await durumu(page); i++) await page.evaluate(() => window.__sahteSes.bitir());
   const k = (await konusmalar(page)).join(' ');
-  expect(k).toMatch(/^Güneş 18:06'da batıyor/);
+  expect(k).toMatch(/^Güneş 18.06'da batıyor/);
   expect(k).toContain('Bulut tahmini: gece boyunca büyük ölçüde açık.');
   expect(k).toContain('Bu gecenin planı.');
   expect(k).toContain('Bulut yüzde 20.');

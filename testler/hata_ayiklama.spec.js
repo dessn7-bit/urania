@@ -138,7 +138,7 @@ test.describe('arayüz', () => {
     await expect(page.locator('#gkBuGece')).toBeHidden();
     await page.locator('#gkTarih').evaluate(i => { i.value = '2027-01-15'; i.dispatchEvent(new Event('change')); });
     await expect(page.locator('#gkBuGece')).toBeVisible();
-    await expect(page.locator('#gkSaat')).toContainText('21:00');   // seçilen gün, konumun saatiyle 21:00
+    await expect(page.locator('#gkSaat')).toContainText('21.00');   // seçilen gün, konumun saatiyle 21.00
     await expect(page.locator('#gkSaat')).toContainText('15 Ocak');
   });
 
@@ -209,7 +209,11 @@ test('Meteor takvimi veri bitince Güneş boylamından sürer: 2026 verisinden h
   const v26 = { yagmurlar: v.yagmurlar.filter(m => m.zirve_utc < '2027') };
   const t = G.meteorTakvimi(v26, new Date('2026-06-01T00:00Z')).filter(m => m.tahmini && m.zirve_utc >= '2027');
   expect(t.length).toBe(13);
-  t.filter(m => m.kod !== 'PER').forEach(m => {   // PER: IMO λ☉ 140,0–140,1 aralığı, orta değer kullanılır
+  /* v44: 2027 Kuadrantid tepe anı IMO 2027 takviminin dakikalı değeri (03h 25m UT); λ'dan hesap 03:34, fark IMO'nun ±2,5 sa belirsizliği içinde */
+  const qua = v.yagmurlar.find(x => x.kod === 'QUA' && x.zirve_utc.startsWith('2027'));
+  expect(qua.zirve_utc).toBe('2027-01-04T03:25:00Z');
+  expect(dk(t.find(m => m.kod === 'QUA').zirve_utc, qua.zirve_utc)).toBeLessThanOrEqual(10);
+  t.filter(m => m.kod !== 'PER' && m.kod !== 'QUA').forEach(m => {   // PER: IMO λ☉ 140,0–140,1 aralığı, orta değer kullanılır
     const g = v.yagmurlar.find(x => x.kod === m.kod && x.zirve_utc.startsWith('2027'));
     expect(dk(m.zirve_utc, g.zirve_utc), m.kod).toBeLessThanOrEqual(2);
     expect(m.baslangic).toBe(g.baslangic); expect(m.bitis).toBe(g.bitis);
@@ -221,8 +225,8 @@ test('Meteor takvimi veri bitince Güneş boylamından sürer: 2026 verisinden h
 
 test('Sesli okuma: izotop, ekli kesir, tablo kısaltması "y", (+BAO), sayı kare/küp', () => {
   const o = require('../okunus.js').okunus;
-  expect(o('4 ¹H → ⁴He + enerji')).toBe('4 hidrojen 1, yani helyum 4 artı enerji');
-  expect(o('p + p → ²H + e⁺ + ν')).toBe('p artı p, yani hidrojen 2 artı pozitron artı nü');
+  expect(o('4 ¹H → ⁴He + enerji')).toBe("4 hidrojen 1'den helyum 4 artı enerji oluşur");   // v44: füzyon "→" bağlama göre
+  expect(o('p + p → ²H + e⁺ + ν')).toBe('p artı p birleşerek hidrojen 2 artı pozitron artı nü oluşturur');
   expect(o("1/3² = 1/9'una düşer")).toBe('1 bölü 3 kare eşittir dokuzda birine düşer');
   expect(o('20 y: 7,3 · 11,86 y')).toBe('20 yaş: 7,3, 11,86 yıl');
   expect(o('13,787 (+BAO)')).toBe('13,787 (BAO ile)');
