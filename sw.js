@@ -1,10 +1,10 @@
 /* sw.js — çevrimdışı çalışma. Ağ önce (güncel sürüm gelsin), ağ yoksa önbellek.
    Dosya eklenince ASSETS'e eklenmeli ve SURUM artırılmalı. */
-const SURUM = 'urania-v43';
+const SURUM = 'urania-v44';
 const ASSETS = [
   './', './index.html', './stil.css', './manifest.json',
   './icon-192.png', './icon-512.png', './icon-maskable-512.png',
-  './lib/astronomy.browser.min.js', './lib/geomag.min.js', './ar.js', './hava.js', './defter.js', './gorevler.js', './haberler.js', './uydu.js', './lib/satellite.min.js', './tani.js', './ortme.js', './ortme_isci.js', './plan.js', './okunus.js', './ses.js', './kartlar.js',
+  './lib/astronomy.browser.min.js', './lib/geomag.min.js', './ar.js', './hava.js', './havakart.js', './defter.js', './gorevler.js', './haberler.js', './uydu.js', './lib/satellite.min.js', './tani.js', './ortme.js', './ortme_isci.js', './plan.js', './okunus.js', './ses.js', './kartlar.js',
   './gok.js', './uygulama.js', './harita.js', './bulucu.js', './gozlem.js', './deneyler2.js', './simulasyon.js', './cizim.js', './cizim_gokyuzu.js', './cizim_gunes_sistemi.js', './cizim_yildizlar.js', './cizim_gezegen_yasam.js', './cizim_evren.js', './cizim_v3.js', './cizim_v4a.js', './cizim_v4b.js', './cizim_v4c.js', './cizim_v5a.js', './cizim_v5b.js', './cizim_v5c.js', './cizim_v5d.js', './cizim_v6.js', './cizim_v7.js', './sozluk.js', './dersler.js', './hesap.js', './baslat.js', './tema.js',
   './deney/mevsim.js', './deney/analemma.js', './deney/eratosthenes.js', './deney/paralaks.js', './deney/durbun.js', './deney/astrofoto.js', './deney/roket.js', './deney/hohmann.js', './deney/yasanabilir.js', './deney/ortme.js',
   './veri/deney/mevsim.json', './veri/deney/analemma.json', './veri/deney/eratosthenes.json', './veri/deney/paralaks.json', './veri/deney/durbun.json', './veri/deney/astrofoto.json', './veri/deney/roket.json', './veri/deney/hohmann.json', './veri/deney/yasanabilir.json', './veri/deney/ortme.json',
@@ -46,7 +46,7 @@ function gorselBuda(j) {
 self.addEventListener('activate', e => {
   e.waitUntil(
     caches.keys()
-      .then(keys => Promise.all(keys.filter(k => k.indexOf('urania-') === 0 && k !== SURUM && k !== GORSEL).map(k => caches.delete(k))))
+      .then(keys => Promise.all(keys.filter(k => k.indexOf('urania-') === 0 && k !== SURUM && k !== GORSEL).map(k => caches.delete(k))))   // urania-uydu-son da: uydu görüntüsü sürüm değişince tutulmaz
       .then(() => caches.open(SURUM).then(c => c.match('./veri/haberler.json')).then(r => (r ? r.json() : null)).then(gorselBuda).catch(() => { /* liste yok ya da bozuk: budama yok */ }))
       .then(() => self.clients.claim())
   );
@@ -56,6 +56,9 @@ self.addEventListener('fetch', e => {
   if (e.request.method !== 'GET') return;
   let ayni = false;
   try { ayni = new URL(e.request.url).origin === self.location.origin; } catch (h) { /* geçersiz URL: dokunma */ }
+  /* Başka kökenler (hava servisleri, EUMETSAT uydu görüntüleri) işçiden geçmez ve önbelleğe girmez: EUMETView görüntüleri
+     7 günlük önbellek başlığıyla gelir, ama her görüntü zamanı yeni bir adrestir; eskilerini tutmak yalnız yer kaplar.
+     Uygulama son görüntüyü kendisi (havakart.js, urania-uydu-son, katman başına bir tane, 24 saat) tutar. */
   if (!ayni) return;
   /* Önbelleğe yazma bitene kadar işçi durdurulmasın; yanıt zaten verildiyse (3 sn yedeği) waitUntil hata atabilir */
   const uzat = p => { try { e.waitUntil(p); } catch (h) { /* olay bitti: yazma yine sürer */ } };

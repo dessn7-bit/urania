@@ -100,7 +100,7 @@ test('Bozuk hava yanıtı önbelleğe girmez; defter kaydı yine yapılır', asy
   await kur(page);
   await page.goto('/index.html#gok');
   await expect(page.locator('#gkHava')).toContainText('alınamadı');
-  expect(await page.evaluate(() => Urania.anahtarlar('hava2_').length)).toBe(0);
+  expect(await page.evaluate(() => Urania.anahtarlar('hava3_').length)).toBe(0);
   await page.goto('/index.html#defter');
   await page.click('#dfYeni');
   await page.click('#dfKaydet');

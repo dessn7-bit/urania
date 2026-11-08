@@ -176,3 +176,11 @@ Not: "(hesap)" satırları kaynaklı sayılardan yapılan aritmetiktir. "(d4)", 
 ## Denetçi notu (30 Ekim 2026)
 - Yeniden açılıp doğrulanan diğerleri: Quark sayfası (1964, Joyce 1939, SLAC 1968, Nobel 1990, tılsımlı Kasım 1974, alt 1977, üst 1995, ~9/938 MeV, dört kuvvet, hapis), Standard Model sayfası (17, kütle tablosu, sekiz gluon, renk yükü, nötrinolar, 1970'lerin ortası, karanlık madde), Timeline (1932–2012 satırları, 18 yıl, DESY 1979, Super-K 1998, tau nötrinosu 2000), LHC facts and figures (26.659 m, 100 m, 1.232 × 15 m, 1,9 K, 13,6 TeV, 1,6 × 10¹¹, 11.245, 1,5 milyar), CERN 4 Ekim 2024 takvimi, CERN Courier (6 Mayıs 2015, anlaşma 2014), CERN LHCb haberi (25 Mart 2025; Moriond 24 Mart; >80.000; %2,45 ± ~%0,47; 5,2 sigma; Nature 16 Temmuz 2025), Cosmic ray sayfası.
 - Hesaplar python3 ile yeniden yapıldı (938 MeV → 1,67 × 10⁻²⁷ kg; 207; 3.480; 86/97; 9 × 10⁻¹⁷ m; 133; 245.000; γ ≈ 7.250, 9,5 × 10⁻⁹, 11.245; 1,14 milyon; 1.080; 48 J; 4,4 × 10⁷; 339.000; 3,8 × 10¹¹): hepsi tutuyor.
+
+## v44 (2026-11-08): W ve Z "yarılanma ömrü" → "ortalama ömür"
+| İddia | Kaynak | Alıntı |
+|---|---|---|
+| PDG ömür vermez, tam genişlik verir: W Γ = 2,14 ± 0,05 GeV; Z Γ = 2,4955 ± 0,0023 GeV | https://pdg.lbl.gov/2025/tables/contents_tables.html (PDG 2025 Summary Tables, ayar bozonları) | W: "Γ = 2.14 ± 0.05 GeV" ; Z: "Γ = 2.4955 ± 0.0023 GeV" (2026-11-08 okundu; "lifetime" sözcüğü W/Z için geçmiyor) |
+| en.wikipedia "half-life" diyor (yanlış terim) | https://en.wikipedia.org/wiki/W_and_Z_bosons | "half-life of about 3 × 10⁻²⁵ s" |
+| τ = ħ/Γ | HESAP: ħ = 6,582119569 × 10⁻²⁵ GeV s (PDG fiziksel sabitler); W: 6,582 × 10⁻²⁵ / 2,14 = 3,08 × 10⁻²⁵ s; Z: 6,582 × 10⁻²⁵ / 2,4955 = 2,64 × 10⁻²⁵ s. Bu ortalama ömürdür (üstel bozunmada yarılanma ömrü = τ × ln 2). |
+| Örnek: 3,0 × 10⁸ × 2,6 × 10⁻²⁵ = 7,8 × 10⁻¹⁷ m = 0,078 fm; 0,078 ÷ 1,7 = 0,046 ≈ 0,05 | HESAP |

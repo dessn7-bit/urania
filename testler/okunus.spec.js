@@ -9,7 +9,7 @@ test('Ders cümleleri doğru okunuşa çevrilir', () => {
    ['λ_tepe = 2,898 × 10⁻³ m·K / T.', 'lambda tepe eşittir 2,898 çarpı 10 üzeri eksi 3 metre kelvin bölü T.'],
    ['L = 4πR²σT⁴.', 'L eşittir 4 pi R kare sigma T üzeri 4.'],
    ["dik açıklığı +90°'dir.", 'dik açıklığı artı 90 derecedir.'],
-   ['İstanbul ≈ 41° → Kutup Yıldızı', 'İstanbul yaklaşık 41 derece, yani Kutup Yıldızı'],
+   ['İstanbul ≈ 41° → Kutup Yıldızı', 'İstanbul yaklaşık 41 derece, bu yüzden Kutup Yıldızı'],
    ['H0 = 67,4 ± 0,5 km/s/Mpc.', 'H0 eşittir 67,4 artı eksi 0,5 kilometre bölü saniye bölü megaparsek.'],
    ['L ∝ M^3,5 (2–55 M☉)', 'L orantılıdır M üzeri 3,5 (2 ile 55 Güneş kütlesi)'],
    ['Sirius −1,46, Venüs yaklaşık −4,2', 'Sirius eksi 1,46, Venüs yaklaşık eksi 4,2'],

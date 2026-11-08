@@ -157,13 +157,13 @@
   C.ekle('d34-dogum-takvimi', {
     ders: 'd34', bolum: 11, oran: 1.0,
     baslik: 'Güneş Sistemi\'nin doğum takvimi: önce Jüpiter ve Mars, sonra Dünya',
-    aciklama: 'Yatay eksen, ilk katılar olan CAI\'lerin oluştuğu andan, yani 4.567,3 milyon yıl önceden sonra geçen süredir; sıfırdan sonraki eksen logaritmiktir, her çentik on kat. Dolu çubuklar ve noktalar göktaşı ve kaya ölçümlerine, kesikli boş olanlar modellere ya da tartışmalı yorumlara dayanır. Kondrüller ilk yaklaşık 3 milyon yılda oluştu; alüminyum-26 ile ısınan erken cisimler yaklaşık 300 bin yılda eriyebildi. Jüpiter\'in çekirdeği 1 milyon yılda yaklaşık 20, 3 ile 4 milyon yılda en az 50 Dünya kütlesine ulaştı; Mars 2 ile 4 milyon yılda oluştu. Gaz diski yaklaşık 10 milyon yılda dağıldı; embriyoların çarpışması 10 ile 100 milyon yıl sürdü. Ay\'ı doğuran çarpışma yaklaşık 50, Dünya\'nın oluşumu 50 ile 100 milyon yıl sürdü; en yaşlı Dünya zirkonu doğuştan 163 milyon yıl sonrasına aittir. Geç Ağır Bombardıman ve onu açıklamak için önerilen Nice dengesizliği tartışmalıdır.',
+    aciklama: 'Yatay eksen, ilk katılar olan CAI\'lerin oluştuğu andan, yani 4.567,3 milyon yıl önceden sonra geçen süredir; sıfırdan sonraki eksen logaritmiktir, her çentik on kat. Dolu çubuklar ve noktalar gök taşı ve kaya ölçümlerine, kesikli boş olanlar modellere ya da tartışmalı yorumlara dayanır. Kondrüller ilk yaklaşık 3 milyon yılda oluştu; alüminyum-26 ile ısınan erken cisimler yaklaşık 300 bin yılda eriyebildi. Jüpiter\'in çekirdeği 1 milyon yılda yaklaşık 20, 3 ile 4 milyon yılda en az 50 Dünya kütlesine ulaştı; Mars 2 ile 4 milyon yılda oluştu. Gaz diski yaklaşık 10 milyon yılda dağıldı; embriyoların çarpışması 10 ile 100 milyon yıl sürdü. Ay\'ı doğuran çarpışma yaklaşık 50, Dünya\'nın oluşumu 50 ile 100 milyon yıl sürdü; en yaşlı Dünya zirkonu doğuştan 163 milyon yıl sonrasına aittir. Geç Ağır Bombardıman ve onu açıklamak için önerilen Nice dengesizliği tartışmalıdır.',
     kaynak: [KAYNAK.cai, KAYNAK.al26, KAYNAK.jupiter, KAYNAK.marsHiz, KAYNAK.bulutsu, KAYNAK.dunyaYasi, KAYNAK.lhb, KAYNAK.nice],
     ciz(S) {
       const R = S.R, X = t => t <= 0 ? 30 : 52 + (Math.log10(t) + 1) / 4 * 336, y0 = 70, dy = 23, ey = y0 + 12 * dy - 6;
       let s = '';
       /* gösterge */
-      s += S.kutu(8, 10, 22, 9, { dolgu: R.vurgu, renk: 'none' }, 2) + S.yazi(36, 19, 'göktaşı ve kaya ölçümü', { boy: 13, renk: R.metin });
+      s += S.kutu(8, 10, 22, 9, { dolgu: R.vurgu, renk: 'none' }, 2) + S.yazi(36, 19, 'gök taşı ve kaya ölçümü', { boy: 13, renk: R.metin });
       s += S.kutu(200, 10, 22, 9, { dolgu: 'none', renk: R.metin, kalin: 1.4, kesik: '3 2' }, 2) + S.yazi(228, 19, 'model ya da tartışmalı', { boy: 13, renk: R.metin });
       /* dikey kılavuzlar */
       [0.1, 1, 10, 100, 1000].forEach(t => s += S.cizgi(X(t), 34, X(t), ey, { renk: R.cizgi, kalin: 1 }));

@@ -359,7 +359,7 @@
   /* d43 · bölüm 2: parlak uçuş, karanlık uçuş, rüzgâr kayması ve saçılma alanı. Yükseklik ekseni ölçekli, yatay ölçeksiz. */
   C.ekle('d43-karanlik-ucus', {
     ders: 'd43', bolum: 2, oran: 0.95,
-    baslik: 'Göktaşının son dakikaları: parlak uçuş, karanlık uçuş ve rüzgâr',
+    baslik: 'Gök taşının son dakikaları: parlak uçuş, karanlık uçuş ve rüzgâr',
     aciklama: 'Dikey eksen kilometre cinsinden yüksekliktir ve ölçeklidir; yatay uzaklık ölçeksizdir. Taş havaya saniyede en az 11 kilometre hızla girer. Kalın çizgi parlak uçuştur: yüzey erir ve akan havayla sıyrılır, buna ablasyon denir. Gölgeli şerit, parlak uçuşun tipik olarak bittiği 20 ile 30 kilometrelik yüksekliktir; çizimdeki yol Murrili örneğidir, 18 kilometrede saniyede 3,3 kilometre hızla söndü. Kesikli çizgi karanlık uçuştur: taş artık ışık saçmaz, yavaşlayıp dikleşerek düşer ve yüksek irtifa rüzgârları onu birkaç kilometre sürükler. Bu yüzden taş, söndüğü noktanın tam altında değildir; parçalar yerde uzun ve dar bir saçılma alanına yayılır. Sol alttaki kesit füzyon kabuğudur: ısı yalnızca birkaç milimetre içeri işler, taşın içi soğuk kalır.',
     kaynak: [KAYNAK.towner, KAYNAK.msfc, KAYNAK.meteorNasa],
     ciz(S) {
@@ -413,11 +413,11 @@
     }
   });
 
-  /* d43 · bölüm 5: katmanlaşmış gezegenciğin kesiti ve göktaşı aileleri; düşüş sayıları 1.102 gözlenmiş düşüşün ana türüne göre sınıflanmış 1.062'sinin tablosundan. Şematik. */
+  /* d43 · bölüm 5: katmanlaşmış gezegenciğin kesiti ve gök taşı aileleri; düşüş sayıları 1.102 gözlenmiş düşüşün ana türüne göre sınıflanmış 1.062'sinin tablosundan. Şematik. */
   C.ekle('d43-ana-cisim', {
     ders: 'd43', bolum: 5, oran: 1.04,
-    baslik: 'Göktaşı aileleri: parçalanmış bir gezegenciğin dilimleri',
-    aciklama: 'Üstteki kesit bir zamanlar erimiş ve katmanlaşmış bir gezegenciktir: ağır demir-nikel merkeze çökerek çekirdeği, hafif kaya da çevresinde mantoyu ve kabuğu oluşturmuştur. Böyle bir cisim parçalanınca kabuğundan akondritler, çekirdeğinden demir göktaşları, çekirdekle manto arasındaki sınırdan taş-demirler, örneğin palasitler gelir. Çekirdekteki çapraz çizgiler, demir göktaşlarında görülen Widmanstätten desenini simgeler. Alttaki cisim hiç erimemiştir; içindeki küçük daireler kondrüllerdir ve bu cisimlerden kondritler gelir. Sayılar Haziran 2012\'ye kadar düşerken görülmüş 1.102 göktaşından ana türüne göre sınıflanabilen 1.062\'sinden: 915\'i, yani yaklaşık yüzde 86\'sı kondrit, 86\'sı yaklaşık yüzde 8 ile akondrit, 49\'u yüzde 4,6 ile demir, 11\'i yüzde 1 ile taş-demir. Çizim şematiktir, katmanların kalınlıkları ölçekli değildir.',
+    baslik: 'Gök taşı aileleri: parçalanmış bir gezegenciğin dilimleri',
+    aciklama: 'Üstteki kesit bir zamanlar erimiş ve katmanlaşmış bir gezegenciktir: ağır demir-nikel merkeze çökerek çekirdeği, hafif kaya da çevresinde mantoyu ve kabuğu oluşturmuştur. Böyle bir cisim parçalanınca kabuğundan akondritler, çekirdeğinden demir gök taşları, çekirdekle manto arasındaki sınırdan taş-demirler, örneğin palasitler gelir. Çekirdekteki çapraz çizgiler, demir gök taşlarında görülen Widmanstätten desenini simgeler. Alttaki cisim hiç erimemiştir; içindeki küçük daireler kondrüllerdir ve bu cisimlerden kondritler gelir. Sayılar Haziran 2012\'ye kadar düşerken görülmüş 1.102 gök taşından ana türüne göre sınıflanabilen 1.062\'sinden: 915\'i, yani yaklaşık yüzde 86\'sı kondrit, 86\'sı yaklaşık yüzde 8 ile akondrit, 49\'u yüzde 4,6 ile demir, 11\'i yüzde 1 ile taş-demir. Çizim şematiktir, katmanların kalınlıkları ölçekli değildir.',
     kaynak: [KAYNAK.dusus, KAYNAK.widman],
     ciz(S) {
       const R = S.R, cx = 124, cy = 150, rnd = rastgele(1969);

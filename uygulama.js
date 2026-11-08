@@ -26,7 +26,7 @@
   /* Depo dolunca (köken aynı adresteki başka uygulamalarla paylaşılıyor) yeniden indirilebilen önbellekler
      silinip bir kez daha denenir; kullanıcı verisi (defter, kartlar, ayarlar) silinmez. */
   /* Silme sırası: en az değerli önce (tanı günlüğü, yer adları, hava; yörünge verisi en son) */
-  const ONBELLEK_ONEK = ['sesGunluk', 'yerAdlari', 'hava_', 'hava2_', 'gp_'];
+  const ONBELLEK_ONEK = ['sesGunluk', 'yerAdlari', 'hava_', 'hava2_', 'hava3_', 'ens1_', 'mdl1_', 'aq1_', 'kp1', 'maske1_', 'uydu1_', 'gp_'];
   function yaz(anahtar, deger) {
     const m = JSON.stringify(deger);
     const tamam = () => { bellek.delete(anahtar); return true; };
@@ -156,7 +156,8 @@
   }
   bicimleyicileriKur(konum().saatDilimi);
   /* En yakın dakikaya yuvarlanır (USNO gibi); Intl kendiliğinden aşağı keser */
-  function saat(d) { return d ? saatB.format(new Date(Math.round(d.getTime() / 60e3) * 60e3)) : '—'; }
+  /* TDK (nokta, kural 7): saat ile dakika noktayla ayrılır — "21.30". Intl tr-TR iki nokta üst üste verir. */
+  function saat(d) { return d ? saatB.format(new Date(Math.round(d.getTime() / 60e3) * 60e3)).replace(':', '.') : '—'; }
   /* Tarih de dakikaya yuvarlanır: 23:59:45 "00:00" yazılırken gün de ertesi gün olsun */
   const dkYuvarla = d => new Date(Math.round(d.getTime() / 60e3) * 60e3);
   function gun(d) { return d ? gunB.format(dkYuvarla(d)) : '—'; }
@@ -172,12 +173,12 @@
     return g > 0 ? g + ' gün sonra' : (-g) + ' gün önce';
   }
   /* Türkçe hâl eki: sayı/saat okunuşuna göre ünlü uyumu ve sertleşme.
-     "20:05" → "beş" → 'te; "17:06" → "altı" → 'da; "21:00" → "yirmi bir" → 'de.
+     "20.05" → "beş" → 'te; "17.06" → "altı" → 'da; "21.00" → "yirmi bir" → 'de.
      tur: 'de' (bulunma), 'e' (yönelme), 'den' (ayrılma). */
   const SON_KELIME = { 0: 'sıfır', 1: 'bir', 2: 'iki', 3: 'üç', 4: 'dört', 5: 'beş', 6: 'altı', 7: 'yedi', 8: 'sekiz', 9: 'dokuz',
     10: 'on', 20: 'yirmi', 30: 'otuz', 40: 'kırk', 50: 'elli', 60: 'altmış', 70: 'yetmiş', 80: 'seksen', 90: 'doksan', 100: 'yüz', 1000: 'bin' };
   function sonOkunus(metin) {
-    const m = String(metin).replace(/(\d)\.(?=\d{3}(?!\d))/g, '$1').match(/(\d+)(?::(\d+))?\D*$/);
+    const m = String(metin).replace(/(\d)\.(?=\d{3}(?!\d))/g, '$1').match(/(\d+)(?:[:.](\d{2}))?\D*$/);
     if (!m) return 'bir';
     let n = m[2] != null ? (Number(m[2]) || Number(m[1])) : Number(m[1]);
     if (n === 0) return 'sıfır';

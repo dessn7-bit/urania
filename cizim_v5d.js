@@ -1,6 +1,6 @@
 /* cizim_v5d.js — ders çizimleri (d45, d46, d47, d48, d49). cizim.js kayıtları.
    Sayılar ders metninden (kaynaklı) gelir ya da burada formülle hesaplanır (Kepler yörüngesi, v = √(GM/r), Salpeter büyümesi,
-   gelgit yarıçapı ve Schwarzschild yarıçapı, görünür yanal hız, termal Sunyaev–Zeldovich tayf biçimi).
+   gelgit yarıçapı ve Schwarzschild yarıçapı, görünür yanal hız, termal Sunyaev–Zeldoviç tayf biçimi).
    Her değerin kaynağı: arastirma/cizim_v5d_kaynak.md. */
 (function () {
   'use strict';
@@ -682,7 +682,7 @@
      Genlik göreli (büyütülmüş). Noktalı: arka plan ışımasının kendi tayfı x³/(eˣ−1), ayrı ölçekte. */
   C.ekle('d49-sz-etkisi', {
     ders: 'd49', bolum: 6, oran: 0.92,
-    baslik: 'Sunyaev–Zeldovich etkisi: küme, arka plan ışımasında gölge ve leke',
+    baslik: 'Sunyaev–Zeldoviç etkisi: küme, arka plan ışımasında gölge ve leke',
     aciklama: 'Yatay eksen frekanstır. Kalın eğri, sıcak küme gazının arka plan ışımasında yaptığı değişikliktir; biçimi formülden hesaplandı, yüksekliği ise çok büyütüldü, çünkü gerçek etki küçüktür. Fotonlar sıcak elektronlardan enerji kaptığı için düşük frekanslardan yüksek frekanslara kayar. Bu yüzden yaklaşık 217 gigahertzin altında küme yönünde arka plan sönükleşir, küme bir gölge gibi görünür; 217 gigahertzte etki sıfırdır; üstünde küme parlak bir leke olur. Noktalı eğri arka plan ışımasının kendi tayfıdır ve ayrı ölçekte çizildi: etki tam bu ışığın bulunduğu frekanslarda ortaya çıkar.',
     kaynak: [KAYNAK.carlstrom, KAYNAK.planckSz],
     ciz(S) {

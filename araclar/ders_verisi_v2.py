@@ -15,7 +15,7 @@ UNITELER = [
     # v5 (30 Ekim 2026, Kaan: "Güneş Sistemi, Samanyolu, kara delikler, nötron yıldızları, kuasarlar… detaylı"): Güneş Sistemi üç üniteye bölündü
     {'id': 'gunes_sistemi', 'ad': 'Güneş Sistemi I: Dünya, Ay ve kayalık gezegenler', 'aciklama': 'Kütleçekim, Güneş Sistemi\'nin doğuşu, Dünya, Ay, zaman ve takvim, Merkür, Venüs ve Mars.', 'dersler': ['d3', 'd34', 'd9', 'd44', 'd10', 'd22', 'd35', 'd36']},
     {'id': 'dev_gezegenler', 'ad': 'Güneş Sistemi II: dev gezegenler ve uyduları', 'aciklama': 'Jüpiter, Satürn ve halkaları, Uranüs ve Neptün; buzlu okyanuslu uydular.', 'dersler': ['d37', 'd38', 'd39', 'd40']},
-    {'id': 'kucuk_cisimler', 'ad': 'Güneş Sistemi III: küçük cisimler ve uzay yolculuğu', 'aciklama': 'Cüce gezegenler ve Kuiper kuşağı, asteroitler, kuyruklu yıldızlar, meteorlar ve göktaşları; uzaya çıkmak.', 'dersler': ['d41', 'd19', 'd42', 'd43', 'd23']},
+    {'id': 'kucuk_cisimler', 'ad': 'Güneş Sistemi III: küçük cisimler ve uzay yolculuğu', 'aciklama': 'Cüce gezegenler ve Kuiper kuşağı, asteroitler, kuyruklu yıldızlar, meteorlar ve gök taşları; uzaya çıkmak.', 'dersler': ['d41', 'd19', 'd42', 'd43', 'd23']},
     {'id': 'yildizlar', 'ad': 'Yıldızlar', 'aciklama': 'Güneş\'ten başlayıp yıldızların doğumu, hayatı, kümeleri ve çiftleri.', 'dersler': ['d4', 'd14', 'd5', 'd15']},
     {'id': 'yildiz_olum', 'ad': 'Yıldız ölümleri ve uç nesneler', 'aciklama': 'Beyaz cüceler ve süpernovalar, nötron yıldızları ve atarcalar, kara delikler, süper kütleli kara delikler.', 'dersler': ['d6', 'd45', 'd16', 'd46']},
     {'id': 'samanyolu', 'ad': 'Samanyolu ve galaksiler', 'aciklama': 'Evimiz Samanyolu, galaksi türleri, kuasarlar ve aktif galaksiler, galaksi kümeleri ve kozmik ağ.', 'dersler': ['d47', 'd7', 'd48', 'd49']},

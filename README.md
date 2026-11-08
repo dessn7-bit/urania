@@ -7,7 +7,10 @@ Kişisel astrofizik defteri: telefona kurulan, çevrimdışı çalışan bir PWA
 - **Algol ve Ay örtmeleri** — Algol'ün buradan görülebilecek en sönük anları (AAVSO VSX efemerisi) ve Ay'ın parlak yıldızların, Ülker'in ve gezegenlerin önünden geçişleri (Hipparcos; IOTA-ES ve Skyfield/DE421 ile karşılaştırıldı).
 - **Uydular** — ISS, Tiangong ve yeni fırlatılmış Starlink dizilerinin görünür geçişleri (CelesTrak OMM/JSON, SGP4); levhada ve "Gökyüzüne bak"ta.
 - **Gökyüzüne bak** — telefonu gökyüzüne tut: yön algılayıcılarıyla o yöndeki yıldızlar, gezegenler ve hedefler; Bul (yön tarifiyle), Hizala, kamera arka planı. Manyetik sapma WMM-2025 ile düzeltilir.
-- **Bulut tahmini** — gecenin saatlik bulut oranı ve en açık dönem ([Open-Meteo](https://open-meteo.com/), CC BY 4.0).
+- **Bulut tahmini** — gecenin saatlik bulut oranı ve en açık dönem, 7 günlük tahmin; Plan'da önümüzdeki 7 gecenin şeridi (iyi / idare eder / kötü ve nedeni) ([Open-Meteo](https://open-meteo.com/), CC BY 4.0).
+- **Şu an gökyüzü** — EUMETSAT Meteosat uydu görüntüsü (gerçek renk, kızılötesi, bulut maskesi, yağış), konumun ortada, kıyı çizgisiyle; bulut maskesinden "şu an üstünde: açık / bulutlu" rozeti (EUMETView WMS, CC BY 4.0; görüntüler 20–30 dakika gecikmeli).
+- **Tahmin güveni** — Open-Meteo Ensemble'da bu gecenin her saati için kaç senaryonun (ECMWF, ICON, GFS, GEM, UKMO; 161 senaryo) açık gök dediği ve modellerin tek tek tahmini.
+- **Şeffaflık ve nem** — CAMS aerosol optik derinliğinden yıldızların sönükleşmesi (≈ 1,086 × AOD kadir), çiğ riski (BAA'nın yaklaşık kuralı), hissedilen sıcaklık, rüzgâr hamlesi, sis ve pus (WMO). Kp tahmini 8'e ulaşırsa kutup ışığı uyarısı (NOAA SWPC). Kaynak ve şartlar: `arastirma/hava_kaynak.md`.
 - **Defter** — gözlem defteri: ne, ne zaman, neyle, nasıl bir gökte; Ay evresi, yükseklik ve bulut otomatik eklenir; JSON yedek.
 - **Deneyler** — kara deliğe yaklaşmak (olay ufku, zaman genişlemesi, gelgit), yörünge atışı (Newton'un topu), yıldızın hayatı (H-R diyagramı), ışığa yakın yolculuk (özel görelilik).
 - **Dersler** — gökyüzünü okumaktan evrenin tarihine on bir kaynaklı ders; deftere notlar ve kendini sınama soruları. Dersler sesli dinlenebilir (cihazın Türkçe metin okuma sesi; motor Pinakes'ten, telefonda sınanmış kurallarla); semboller ve birimler Türkçe okunuşlarına çevrilir, istenirse dersten derse kesintisiz sürer. Okunan derslerin soruları ve sayıları Leitner kutularıyla tekrar kartı olur; kartlar sesli de çalışılabilir. Gökyüzü sekmesinde "Bu geceyi dinle", "Gökyüzüne bak"ta sesli yön tarifi.
@@ -25,6 +28,7 @@ Her sabit ve tablo değeri bir kaynaktan gelir; ham araştırma dosyaları (alı
 - Uydu parlaklığı: Heavens-Above'ın içsel parlaklıkları; tahmin Heavens-Above değerleriyle 0,1 kadir içinde.
 - Uydu yörüngeleri: [CelesTrak](https://celestrak.org/) (2 saatte bir güncellenir; uygulama 12 saat önbellekler, hata alınca 2 saat bekler); SGP4: [satellite.js](https://github.com/shashwatak/satellite-js) 6.0.2 (MIT).
 - Sabitler: NIST CODATA 2022, IAU 2012 B2 / 2015 B2–B3; gezegen verisi: NASA Planetary Fact Sheets.
+- Hava kartları (v44): EUMETSAT Meteosat görüntüleri (EUMETView WMS; "Contains modified EUMETSAT Meteosat data", CC BY 4.0, Data Policy madde 6.3), Open-Meteo tahmin, ensemble ve hava kalitesi API'leri (CC BY 4.0), CAMS aerosol ("Generated using Copernicus Atmosphere Monitoring Service information"), NOAA SWPC Kp tahmini (kamu malı; NOAA onayı ima edilmez), GFZ Kp kesin değerleri (CC BY 4.0). Dış servise giden konum iki ondalığa yuvarlanır.
 - Yazı tipleri: Spectral ve IBM Plex Sans (SIL OFL).
 
 ## Test
@@ -33,3 +37,5 @@ Her sabit ve tablo değeri bir kaynaktan gelir; ham araştırma dosyaları (alı
 npm install
 npx playwright test
 ```
+
+Testler ağa çıkmaz: `playwright.config.js` yerel sunucu dışındaki her isteği kapalı bir vekile yollar; dış servislerin gerçek yanıtları `testler/veri/` altındadır (hava kartları: `testler/veri/hava/`, yenilemek için `bash araclar/hava_fixture.sh`).

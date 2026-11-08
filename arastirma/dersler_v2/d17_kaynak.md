@@ -411,3 +411,7 @@ WF4 = bu turda doğrulayıcının WebFetch ile açtığı sayfa. Bütün yeni ö
 | Delta Cephei, Swinburne Ia, MOND (1982/1983, İsrailli, 1991 Begeman a0, kümeler, Mermi Kümesi, CMB), BBN (%1, 1990'lar, ~400.000 yıl, uyum), gözlenebilir evren (14,26 Gpc, 46,5, 93, 42 milyon, 46 milyar, 16 milyar), UWA Olbers (7 Mayıs 1823 Bremen, Poe 1848, Kelvin 1901, Harrison 1964), Shape of the universe (%0,4, Ω, açılar, sonlu düz evren, topoloji bilinmiyor), obspm: doğrulandı | ilgili satırlardaki URL'ler (WF4) | aynı |
 | Dünya'nın yaşı 4,54: USGS sayfası bu turda açılamadı (izin); ikinci kaynakla doğrulandı | https://en.wikipedia.org/wiki/Age_of_Earth (WF4) | "The age of Earth is estimated to be 4.54 ± 0.05 billion years." |
 | Açılamayan (izin yanıtsız): aanda.org Planck sayfası, ADS, PNAS Hubble 1929, USGS, NIST mp | — | — |
+
+## v44 (2026-11-08): 564 ↔ 560 km/s tek değere indirildi
+Çizim (d17-hubble-diyagrami) SH0ES 2022'nin birincil değeriyle (73,04; https://arxiv.org/abs/2112.04510v3, "H0=73.04+-1.04 km/s/Mpc") 564 km/s veriyordu, ders örneği yuvarlak 73 ile 560 km/s. Örnek kaynağın değerine çekildi:
+HESAP: 73,04 × 100 = 7304; 7304 − 6740 = 564 km/s; 564 / 6740 = 0,0837 ≈ %8; 977,8 / 73,04 = 13,39 ≈ 13,4 milyar yıl (değişmedi).

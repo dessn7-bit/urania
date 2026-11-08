@@ -884,3 +884,56 @@ html.kirmizi .sz-harf { border-color: var(--girdi-kenar); }
 .hb-kredi { display: block; margin-top: 2px; font-size: 12px; }
 .hb-gorsel img.yok { display: none; }
 html.kirmizi .hb-gorsel img { filter: url(#kirmiziSuz); }
+
+/* v44 hava kartları (havakart.js): uydu görüntüsü, tahmin güveni, şeffaflık/çiğ/sis, Kp uyarısı; Plan'da 7 gece şeridi */
+.hk-kart { margin-top: 22px; padding-top: 14px; border-top: 1px solid var(--cizgi); }
+.hk-bas { font: 600 17px/1.35 var(--sans); color: var(--parsomen); margin: 0 0 10px; }
+.hk-bas .rozet { font-size: 13px; vertical-align: 1px; }
+.hk-sec { margin-bottom: 10px; }
+.hk-sec .dugme { padding: 6px 10px; min-height: 36px; font-size: 14px; }
+.hk-uydu { margin: 0; }
+.hk-cerceve { position: relative; border-radius: var(--r); overflow: hidden; border: 1px solid var(--cizgi); background: #05090f; }
+.hk-cerceve img { display: block; width: 100%; height: auto; }
+.hk-arti { position: absolute; left: 50%; top: 50%; width: 22px; height: 22px; margin: -11px 0 0 -11px; pointer-events: none; }
+.hk-arti::before, .hk-arti::after { content: ''; position: absolute; background: #FF5A3C; box-shadow: 0 0 0 1px rgba(0,0,0,.7); }
+.hk-arti::before { left: 10px; top: 0; width: 2px; height: 22px; }
+.hk-arti::after { top: 10px; left: 0; height: 2px; width: 22px; }
+.hk-uydu figcaption { margin-top: 6px; line-height: 1.45; color: var(--parsomen); }
+.hk-lejant { margin-top: 6px; color: var(--soluk); }
+.hk-eski { display: inline-block; color: var(--uyari); }
+.hk-ens { list-style: none; margin: 10px 0 6px; padding: 0; display: grid; gap: 3px; }
+.hk-ens li { display: grid; grid-template-columns: 3.2em minmax(0, 1fr) 4.6em; align-items: center; gap: 8px; font: 400 13px/1.3 var(--sans); color: var(--soluk); font-variant-numeric: tabular-nums; }
+.hk-ens-iz { height: 10px; background: var(--levha); border-radius: 3px; overflow: hidden; }
+.hk-ens-dolu { display: block; height: 100%; background: var(--iyi); opacity: .8; }
+.hk-ens-sayi { text-align: right; color: var(--parsomen); }
+.hk-model { width: 100%; border-collapse: collapse; margin-top: 10px; font: 400 14px/1.4 var(--sans); font-variant-numeric: tabular-nums; }
+.hk-model caption { text-align: left; padding-bottom: 4px; }
+.hk-model th, .hk-model td { padding: 4px 6px; border-bottom: 1px solid var(--cizgi); text-align: right; }
+.hk-model th[scope="row"], .hk-model thead th:first-child { text-align: left; font-weight: 500; color: var(--parsomen); }
+.hk-model thead th { color: var(--soluk); font-weight: 500; }
+.hk-model td.iyi { color: var(--iyi); }
+.hk-model td.uyari { color: var(--uyari); }
+.hk-kart .oz-satir { border-top: 0; border-bottom: 1px solid var(--cizgi); }
+.hk-uyari .oz-et, .hk-uyari strong { color: var(--uyari); }
+.hk-kp-kap { margin-top: 12px; }
+.hk-kp { margin: 0; padding: 10px 12px; border: 1px solid var(--uyari); border-radius: var(--r); font: 400 15px/1.5 var(--sans); color: var(--parsomen); }
+.hk-kp b { color: var(--uyari); }
+.hk-kp .kaynak { display: block; margin-top: 6px; }
+.yedi-kap { margin: 6px 0 14px; }
+.yg-bas { font: 600 15px/1.35 var(--sans); color: var(--parsomen); margin: 0 0 6px; }
+.yedi-gece { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+.yedi-gece li { display: grid; grid-template-columns: 7.2em 6.4em minmax(0, 1fr); gap: 8px; align-items: baseline; padding: 4px 0; border-bottom: 1px solid var(--cizgi); font: 400 14px/1.4 var(--sans); color: var(--soluk); }
+.yg-gun { color: var(--parsomen); }
+.yg-et { font-weight: 600; }
+.yg-iyi .yg-et { color: var(--iyi); }
+.yg-idare .yg-et { color: var(--pirinc); }
+.yg-kotu .yg-et { color: var(--uyari); }
+@media (max-width: 380px) {
+  .yedi-gece li { grid-template-columns: 6.4em 5.6em minmax(0, 1fr); font-size: 13px; }
+  .hk-model { font-size: 13px; }
+  .hk-model th, .hk-model td { padding: 4px 3px; }
+}
+/* Kırmızı mod: uydu görüntüsü ve artı işareti yalnız kırmızı kanalda */
+html.kirmizi .hk-cerceve img { filter: url(#kirmiziSuz); }
+html.kirmizi .hk-arti::before, html.kirmizi .hk-arti::after { background: #FF0000; }
+html.kirmizi .hk-ens-dolu { background: var(--iyi); }

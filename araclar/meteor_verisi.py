@@ -7,6 +7,7 @@ K = os.path.join(os.path.dirname(__file__), '..')
 TR = {'QUA': 'Quadrantid (Dörtlük)', 'LYR': 'Lyrid (Çalgı)', 'ETA': 'Eta Aquariid (Eta Kova)', 'SDA': 'Güney Delta Aquariid (Delta Kova)',
       'CAP': 'Alfa Capricornid (Oğlak)', 'PER': 'Perseid (Kahraman)', 'DRA': 'Draconid (Ejderha)', 'ORI': 'Orionid (Avcı)',
       'STA': 'Güney Taurid (Boğa)', 'NTA': 'Kuzey Taurid (Boğa)', 'LEO': 'Leonid (Aslan)', 'GEM': 'Geminid (İkizler)', 'URS': 'Ursid (Küçük Ayı)'}
+IMO_DAKIKA = {('QUA', '2027-01-04')}
 ls, kaynaklar = [], []
 for f in sorted(glob.glob(os.path.join(K, 'arastirma/meteor_20*.json'))):
     d = json.load(open(f, encoding='utf-8'))
@@ -14,6 +15,10 @@ for f in sorted(glob.glob(os.path.join(K, 'arastirma/meteor_20*.json'))):
     for y in d['yagmurlar']:
         bas, bit = [s.strip() for s in y['aktivite'].split('/')]
         z = y.get('bagimsiz_kontrol_astronomy_engine', {}).get('hesaplanan_an_UT') or (y['maksimum_tarih'] + 'T12:00Z')
+        # IMO'nun dakikasıyla verdiği an hesaptan önce gelir (Kaan onayı, v44: 2027 Kuadrantid "January 4, 03h 25m UT";
+        # λ'dan hesap 03:34). Öteki yağmurlarda IMO saati yuvarlak ya da aralık; hesaplanan an kalır (d19 Leonid örneği bunu anlatır).
+        if (y['kod'], y['maksimum_tarih']) in IMO_DAKIKA and re.fullmatch(r'\d\d:\d\d', str(y.get('maksimum_saat_UT') or '')):
+            z = y['maksimum_tarih'] + 'T' + y['maksimum_saat_UT'] + 'Z'
         not_ = ' '.join(y.get('ay_kosulu_imo') or [])
         # Zirvenin Güneş boylamı (J2000): sonraki yıllar bundan hesaplanır. "140.0–140.1" gibi aralıkta orta değer.
         gb = [float(x) for x in re.findall(r'\d+(?:\.\d+)?', str(y['gunes_boylami_J2000_deg']))[:2]]

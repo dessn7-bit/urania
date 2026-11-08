@@ -130,7 +130,7 @@
   function gunlukMetni() {
     if (!gunluk.length) return '';
     const t0 = gunluk[0].t, ilk = new Date(t0), p = n => String(n).padStart(2, '0');
-    return 'Başlangıç ' + p(ilk.getHours()) + ':' + p(ilk.getMinutes()) + ':' + p(ilk.getSeconds()) +
+    return 'Başlangıç ' + p(ilk.getHours()) + '.' + p(ilk.getMinutes()) + '.' + p(ilk.getSeconds()) +
       ' · ' + (navigator.userAgent || '') + (window.matchMedia && matchMedia('(display-mode: standalone)').matches ? ' · KURULU PWA' : ' · tarayıcı sekmesi') + '\n' +
       gunluk.map(g => '+' + ((g.t - t0) / 1000).toFixed(1) + ' sn  ' + g.olay + (g.ek ? ' (' + g.ek + ')' : '') + (g.gorunur === 0 ? '  [arka plan]' : '')).join('\n');
   }

@@ -3,14 +3,14 @@
   "unite": "samanyolu",
   "yeni": true,
   "baslik": "Galaksi Kümeleri ve Kozmik Ağ",
-  "ozet": "Yerel Grup'tan Başak'a, Berenis'in Saçı Kümesi'nden Laniakea'ya uzanan yapıları ve onları nasıl tarttığımızı öğreneceksin: galaksi hızları, X ışınında parlayan sıcak gaz, arka plan ışımasındaki Sunyaev–Zeldovich gölgesi ve kütleçekimsel mercek. Sonra lifler, duvarlar ve boşluklardan oluşan kozmik ağa, onu üreten benzetimlere, kayıp baryonlara, baryon akustik salınımlarına ve DESI ile Euclid haritalarına geçeceğiz.",
+  "ozet": "Yerel Grup'tan Başak'a, Berenis'in Saçı Kümesi'nden Laniakea'ya uzanan yapıları ve onları nasıl tarttığımızı öğreneceksin: galaksi hızları, X ışınında parlayan sıcak gaz, arka plan ışımasındaki Sunyaev–Zeldoviç gölgesi ve kütleçekimsel mercek. Sonra lifler, duvarlar ve boşluklardan oluşan kozmik ağa, onu üreten benzetimlere, kayıp baryonlara, baryon akustik salınımlarına ve DESI ile Euclid haritalarına geçeceğiz.",
   "on_bilgi": [
     "d47",
     "d7"
   ],
   "bolumler": [
     {
-      "baslik": "Galaksiler de sürü halinde yaşar",
+      "baslik": "Galaksiler de sürü hâlinde yaşar",
       "paragraflar": [
         "Yıldızlar galaksilerde toplanır; galaksiler de yalnız yaşamaz. d7'de gördüğün gibi onlarca galaksiden oluşan topluluklara grup, yüzlerce ya da binlerce galaksiyi kütleçekimiyle bir arada tutan, araları sıcak gazla dolu topluluklara küme, grupları ve kümeleri içine alan daha büyük yapılara üstküme denir. Samanyolu Yerel Grup'un üyesidir, Yerel Grup Başak Kümesi'nin çevresindeki yapının bir parçasıdır, o da Laniakea adlı daha büyük bir bölgenin içindedir.",
         "Ama en büyük ölçekte bu basamaklar bile yetersiz kalır. Galaksilerin üç boyutlu haritaları, evrenin kümelerin düğüm, uzun galaksi şeritlerinin lif, geniş galaksi yapraklarının duvar olduğu ve aralarında dev boşlukların bulunduğu bir ağa benzediğini gösterir. Buna kozmik ağ denir. Bu derste önce kendi grubumuzu ve kümeleri tartmayı öğreneceğiz: galaksilerin hızlarından, kümeleri dolduran sıcak gazdan, bu gazın kozmik mikrodalga arka plan ışımasına düşürdüğü gölgeden ve ışığı büken kütleçekimsel mercekten. Sonra ağın kendisine geçeceğiz: nasıl haritalandığı, nasıl oluştuğu, bilgisayarda nasıl yeniden üretildiği ve kayıp sıradan maddenin bir bölümünün nerede saklandığı.",
@@ -82,18 +82,18 @@
       "akilda": "Kümelerde galaksilerin arası 10⁸ K mertebesinde, litrede ~1 parçacıklık seyrek bir plazmayla doludur; 10¹⁵ M☉'lik bir kümede bu gaz ~10¹⁴ M☉ tutar ve X ışınlarında parlar. Gazın sıcaklığı ve dağılımı kümenin kütlesini verir."
     },
     {
-      "baslik": "Sunyaev–Zeldovich etkisi: kümenin arka plan ışımasındaki gölgesi",
+      "baslik": "Sunyaev–Zeldoviç etkisi: kümenin arka plan ışımasındaki gölgesi",
       "paragraflar": [
-        "Kümeleri bulmanın üçüncü yolu, kendi ışıklarına hiç bakmadan, içlerinden geçen eski ışıktan fark etmektir. Kozmik mikrodalga arka plan ışıması (d8) her yönden gelir. Bu ışığın fotonları bir kümenin içinden geçerken sıcak gazın hızlı elektronlarına çarpar ve onlardan enerji kapar; buna ters Compton saçılması denir. Sunyaev ile Zeldovich'in 1969 ve 1970'te öngördüğü bu olaya Sunyaev–Zeldovich etkisi denir.",
+        "Kümeleri bulmanın üçüncü yolu, kendi ışıklarına hiç bakmadan, içlerinden geçen eski ışıktan fark etmektir. Kozmik mikrodalga arka plan ışıması (d8) her yönden gelir. Bu ışığın fotonları bir kümenin içinden geçerken sıcak gazın hızlı elektronlarına çarpar ve onlardan enerji kapar; buna ters Compton saçılması denir. Sunyaev ile Zeldoviç'in 1969 ve 1970'te öngördüğü bu olaya Sunyaev–Zeldoviç etkisi denir.",
         "Planck iş birliğinin 2013 makalesine göre etkinin imzası belirgindir: arka plan ışımasının düşük frekanslı bölümünde parlaklık sıcaklığı azalır, yüksek frekanslı kuyruğunda artar; yaklaşık 217 gigahertzte etki sıfırdır. Yani küme, düşük frekansta arka plan ışımasında soğuk bir gölge gibi, yüksek frekansta sıcak bir leke gibi görünür. Etkinin büyüklüğü, görüş doğrultusu boyunca gazın basıncının toplamıyla belirlenir; gözlemler ve benzetimler bunun kümenin kütlesinin çok iyi bir göstergesi olduğunu düşündürür.",
-        "Planck uydusu bu yolla bütün gökyüzünü taradı. Planck'ın 2015'te yayımlanan ikinci Sunyaev–Zeldovich kataloğu 1653 tespit içerir; bunların 1203'ü başka verilerle doğrulanmış kümelerdir ve kataloğun saflığı en az yüzde 83'tür. Bu, binden fazla doğrulanmış küme içeren ilk Sunyaev–Zeldovich seçimli taramaydı. Yöntemin bir yararı da, X ışını taramalarında neredeyse hiç görünmeyen, X ışınında sönük bazı yakın kümeleri ortaya çıkarmasıdır.",
-        "Planck yalnız değildir: Güney Kutbu Teleskobu (SPT) ve Atacama Kozmoloji Teleskobu (ACT) da büyük Sunyaev–Zeldovich küme örnekleri yayımladı. Planck'ın 2013 makalesine göre Planck'ın bu frekanslardaki ayırma gücü 5 ile 10 yay dakikası, ötekilerinki yaklaşık 1 yay dakikasıdır, ama Planck bütün gökyüzünü kapsar; bu yüzden Planck genellikle daha büyük, daha kütleli ve daha yakın kümeleri bulur, yer teleskopları ise daha küçük ve uzak olanları. Makale, kozmolojik sonuçlardaki belirsizliğe en çok kümelerin özellikleri hakkındaki eksik bilgimizin katkı yaptığını da vurgular. Planck'ın 2013 kozmoloji makalesi, bu kümelerden seçilmiş 189'unun sayısının kırmızıya kaymayla değişiminden evrenin parametrelerini sınadı: belirli bir kütlenin üstündeki kümelerin zamanla ne kadar çoğaldığı, maddenin ne kadar topaklaştığına bağlıdır."
+        "Planck uydusu bu yolla bütün gökyüzünü taradı. Planck'ın 2015'te yayımlanan ikinci Sunyaev–Zeldoviç kataloğu 1653 tespit içerir; bunların 1203'ü başka verilerle doğrulanmış kümelerdir ve kataloğun saflığı en az yüzde 83'tür. Bu, binden fazla doğrulanmış küme içeren ilk Sunyaev–Zeldoviç seçimli taramaydı. Yöntemin bir yararı da, X ışını taramalarında neredeyse hiç görünmeyen, X ışınında sönük bazı yakın kümeleri ortaya çıkarmasıdır.",
+        "Planck yalnız değildir: Güney Kutbu Teleskobu (SPT) ve Atacama Kozmoloji Teleskobu (ACT) da büyük Sunyaev–Zeldoviç küme örnekleri yayımladı. Planck'ın 2013 makalesine göre Planck'ın bu frekanslardaki ayırma gücü 5 ile 10 yay dakikası, ötekilerinki yaklaşık 1 yay dakikasıdır, ama Planck bütün gökyüzünü kapsar; bu yüzden Planck genellikle daha büyük, daha kütleli ve daha yakın kümeleri bulur, yer teleskopları ise daha küçük ve uzak olanları. Makale, kozmolojik sonuçlardaki belirsizliğe en çok kümelerin özellikleri hakkındaki eksik bilgimizin katkı yaptığını da vurgular. Planck'ın 2013 kozmoloji makalesi, bu kümelerden seçilmiş 189'unun sayısının kırmızıya kaymayla değişiminden evrenin parametrelerini sınadı: belirli bir kütlenin üstündeki kümelerin zamanla ne kadar çoğaldığı, maddenin ne kadar topaklaştığına bağlıdır."
       ],
       "ornek": {
         "baslik": "Örnek: 217 gigahertz hangi dalga boyu?",
         "metin": "Dalga boyu = ışık hızı / frekans (d2). c = 299.792.458 m/s, f = 217 GHz = 2,17×10¹¹ Hz. λ = 299.792.458 / 2,17×10¹¹ ≈ 1,38×10⁻³ m, yani yaklaşık 1,38 milimetre. Bu, milimetre dalgaları bölgesidir. Etki 1,38 mm'den uzun dalgalarda (217 GHz'den düşük frekansta) bir azalma, kısa dalgalarda bir artış olarak görülür. Bu yüzden birkaç frekansta birden ölçüm yapan Planck gibi aletler kümeyi öteki kaynaklardan ayırabilir. Birim: milimetre."
       },
-      "akilda": "Arka plan ışımasının fotonları küme gazının elektronlarından enerji kapar (Sunyaev–Zeldovich, 1969–1970): küme düşük frekansta gölge, ~217 GHz'de görünmez, yüksekte parlak leke olur. Planck 2015 kataloğu: 1653 tespit, 1203 doğrulanmış küme."
+      "akilda": "Arka plan ışımasının fotonları küme gazının elektronlarından enerji kapar (Sunyaev–Zeldoviç, 1969–1970): küme düşük frekansta gölge, ~217 GHz'de görünmez, yüksekte parlak leke olur. Planck 2015 kataloğu: 1653 tespit, 1203 doğrulanmış küme."
     },
     {
       "baslik": "Kütleçekimsel mercekle tartmak",
@@ -229,7 +229,7 @@
     {
       "ad": "Frekanstan dalga boyuna",
       "ifade": "λ = c / f",
-      "aciklama": "λ dalga boyu (m), c ışık hızı (299.792.458 m/s), f frekans (Hz). Sunyaev–Zeldovich etkisinin sıfır noktası 217 GHz ≈ 1,38 mm."
+      "aciklama": "λ dalga boyu (m), c ışık hızı (299.792.458 m/s), f frekans (Hz). Sunyaev–Zeldoviç etkisinin sıfır noktası 217 GHz ≈ 1,38 mm."
     },
     {
       "ad": "Genişlemeyle büyüyen uzunluk",
@@ -281,7 +281,7 @@
     },
     {
       "deger": "1653 tespit; 1203 doğrulanmış küme; ~217 GHz sıfır noktası",
-      "aciklama": "Planck'ın ikinci Sunyaev–Zeldovich kataloğu (2015) ve etkinin frekans imzası",
+      "aciklama": "Planck'ın ikinci Sunyaev–Zeldoviç kataloğu (2015) ve etkinin frekans imzası",
       "kaynak_url": "https://arxiv.org/abs/1502.01598",
       "kid": "d49n6"
     },
@@ -387,7 +387,7 @@
       "kid": "d49t8"
     },
     {
-      "terim": "Sunyaev–Zeldovich etkisi",
+      "terim": "Sunyaev–Zeldoviç etkisi",
       "tanim": "Kozmik arka plan ışımasının küme gazındaki elektronlardan enerji kazanması yüzünden kümenin yönünde düşük frekansta sönük, yüksek frekansta parlak görünmesi.",
       "kid": "d49t9"
     },
@@ -461,7 +461,7 @@
     "Hiyerarşi: grup (onlarca galaksi) → küme (yüzlerce–binlerce) → üstküme → kozmik ağ (düğüm = küme, lif, duvar, boşluk).",
     "Yerel Grup: iki uçlu halter, ~800 kpc, ~110 km/s yaklaşma, ~2×10¹² M☉. Zamanlama argümanı (Kahn–Woltjer 1959): ≥10 kat görünmeyen kütle; bugün ~5×10¹² M☉ (tartışmalı).",
     "Başak: Yerel Grup'tan 967 km/s uzaklaşır, Hubble akışından az → Başak bizi çeker (tuhaf hız).",
-    "Kümeyi tartmanın 4 yolu: hız dağılımı (Zwicky 1933; Berenis'in Saçı σ ≈ 1082 km/s), X ışını gazı (10⁸ K, litrede 1 parçacık), Sunyaev–Zeldovich (217 GHz sıfır; Planck 1653 tespit), mercek (Abell 370, 1987; 39″, 2,8×10¹⁴ M☉).",
+    "Kümeyi tartmanın 4 yolu: hız dağılımı (Zwicky 1933; Berenis'in Saçı σ ≈ 1082 km/s), X ışını gazı (10⁸ K, litrede 1 parçacık), Sunyaev–Zeldoviç (217 GHz sıfır; Planck 1653 tespit), mercek (Abell 370, 1987; 39″, 2,8×10¹⁴ M☉).",
     "Küme bütçesi: ~%90 karanlık madde, ~%10 sıcak gaz, yüzde birkaç yıldız; evrensel sıradan madde payı Ωb/Ωm ≈ 0,157.",
     "Laniakea (2014): ~160 Mpc, ~10¹⁷ M☉, ~100.000 galaksi, Büyük Çekici (Cetvel yönü); bağlı değil. Hız: Güneş 370, Samanyolu 552, Yerel Grup ~630 km/s; Shapley çeker + Dipol İtici iter (2017).",
     "Ağ: CfA2 Büyük Duvar 1989; Sloan Büyük Duvarı 2003 (~1,37 milyar ışık yılı, tek yapı mı tartışmalı). Lifler %50 kütle/%6 hacim; boşluklar %15/%78.",
@@ -496,7 +496,7 @@
       "kid": "d49s4"
     },
     {
-      "soru": "Sunyaev–Zeldovich etkisinde bir küme neden düşük frekansta gölge, yüksek frekansta parlak leke gibi görünür?",
+      "soru": "Sunyaev–Zeldoviç etkisinde bir küme neden düşük frekansta gölge, yüksek frekansta parlak leke gibi görünür?",
       "cevap": "Arka plan ışımasının fotonları küme gazının hızlı elektronlarından enerji kazanır (ters Compton saçılması). Fotonlar daha yüksek enerjilere, yani daha yüksek frekanslara kayar: düşük frekansta foton azalır, yüksek frekansta artar; yaklaşık 217 GHz'de etki sıfırdır.",
       "kid": "d49s5"
     },

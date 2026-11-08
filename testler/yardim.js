@@ -42,4 +42,52 @@ async function xssDurumu(page) {
   });
 }
 
-module.exports = { celestrak, disAgiKes, xssGozcu, xssDurumu, ISTASYON, SON30, kok: path.join(__dirname, '..') };
+
+/* v44 hava kartları: dış servislerin 2026-11-08/09'da kaydedilmiş GERÇEK yanıtları (testler/veri/hava/) */
+const fs = require('fs');
+const HV = path.join(__dirname, 'veri', 'hava');
+const oku = f => fs.readFileSync(path.join(HV, f));
+const json = f => JSON.parse(oku(f));
+const ENS = 'ens_2026-11-09_41.00_29.10.json', MDL = 'mdl_2026-11-09_41.00_29.10.json', OM = 'om_2026-11-09_41.00_29.10.json', AQ = 'aq_2026-11-08_41.00_29.10.json', KP = 'kp_2026-11-08.json';
+const HAVA_FIX = { oku, json, ENS, MDL, OM, AQ, KP, AN: new Date('2026-11-08T21:30:00+03:00') };
+/* İstekler kaydedilir: koordinat yuvarlama ve dış adres denetimi için */
+async function havaServisleri(page, s = {}) {
+  page.istekler = [];
+  page.on('request', r => { if (!/^http:\/\/127\.0\.0\.1/.test(r.url())) page.istekler.push(r.url()); });
+  await page.route('**/view.eumetsat.int/**', r => {
+    if (s.uyduHata) return r.fulfill({ status: 503, body: '' });
+    const u = new URL(r.request().url()), q = u.searchParams, istek = (q.get('request') || '').toLowerCase();
+    if (istek === 'getcapabilities') {
+      const yol = u.pathname.replace(/^\/geoserver\//, '').replace(/\/ows$/, '').replace('/', '_');
+      return r.fulfill({ contentType: 'application/xml', body: oku('eum_cap_' + yol + '.xml') });
+    }
+    if (istek === 'getfeatureinfo') return r.fulfill({ contentType: 'application/json', body: s.maske ? JSON.stringify(s.maske) : oku('eum_gfi_clm_41.00_29.10.json') });
+    if (istek === 'getmap') {
+      const k = q.get('layers');
+      const tur = /h40b/.test(k) ? 'yagis' : /clm/.test(k) ? 'maske' : /ir105/.test(k) ? 'kizilotesi' : 'renk';
+      return r.fulfill({ contentType: 'image/jpeg', headers: { 'cache-control': 'max-age=604800, must-revalidate' }, body: oku('eum_harita_' + tur + '.jpg') });
+    }
+    return r.fulfill({ status: 404, body: '' });
+  });
+  await page.route('**/ensemble-api.open-meteo.com/**', r => (s.ensHata ? r.fulfill({ status: 429, json: { error: true, reason: 'limit' } }) : r.fulfill({ json: json(ENS), headers: { 'x-ratelimit-cost': '16.1' } })));
+  await page.route('**/air-quality-api.open-meteo.com/**', r => (s.aqHata ? r.abort() : r.fulfill({ json: json(AQ) })));
+  await page.route('**/api.open-meteo.com/**', r => {
+    if (s.havaHata) return r.abort();
+    const u = r.request().url();
+    if (/models=/.test(u)) return r.fulfill({ json: json(MDL) });
+    return r.fulfill({ json: s.hava ? s.hava(json(OM)) : json(OM) });
+  });
+  await page.route('**/services.swpc.noaa.gov/**', r => (s.kpHata ? r.abort() : r.fulfill({ json: s.kp ? s.kp(json(KP)) : json(KP) })));
+}
+
+
+/* v44: hava kartlarının dış servisleri (ensemble, hava kalitesi, Kp, EUMETSAT) bu testin konusu değilse boş ama geçerli
+   HTTP yanıtı alır: kart gizli kalır, konsola "Failed to load resource" düşmez. (Ağ zaten kapalı: playwright.config.js vekil.) */
+async function havaSessiz(page) {
+  await page.route('**/ensemble-api.open-meteo.com/**', r => r.fulfill({ json: {} }));
+  await page.route('**/air-quality-api.open-meteo.com/**', r => r.fulfill({ json: {} }));
+  await page.route('**/services.swpc.noaa.gov/**', r => r.fulfill({ json: [] }));
+  await page.route('**/view.eumetsat.int/**', r => r.fulfill({ contentType: 'application/xml', body: '<WMS_Capabilities/>' }));
+}
+
+module.exports = { havaSessiz, havaServisleri, HAVA_FIX, celestrak, disAgiKes, xssGozcu, xssDurumu, ISTASYON, SON30, kok: path.join(__dirname, '..') };

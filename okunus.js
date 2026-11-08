@@ -165,6 +165,146 @@
     return o ? n + "'" + o.slice(son.length) : null;
   }
 
+
+  /* ---------- Roma rakamları ---------- */
+  const ROMA_DEGER = { I: 1, V: 5, X: 10 };
+  function romaSayi(r) {
+    if (!/^(X{0,3})(IX|IV|V?I{0,3})$/.test(r) || !r) return 0;
+    let n = 0;
+    for (let i = 0; i < r.length; i++) { const a = ROMA_DEGER[r[i]], b = ROMA_DEGER[r[i + 1]] || 0; n += a < b ? -a : a; }
+    return n;
+  }
+  function sayiYazi(n) { return [ONLAR[Math.floor(n / 10)], SAYI[n % 10] && n % 10 ? SAYI[n % 10] : ''].filter(Boolean).join(' ') || 'sıfır'; }
+  const SIRA_EK = { bir: 'birinci', iki: 'ikinci', üç: 'üçüncü', dört: 'dördüncü', beş: 'beşinci', altı: 'altıncı', yedi: 'yedinci', sekiz: 'sekizinci', dokuz: 'dokuzuncu', on: 'onuncu', yirmi: 'yirminci', otuz: 'otuzuncu' };
+  function siraYazi(n) { const w = sayiYazi(n).split(' '); w[w.length - 1] = SIRA_EK[w[w.length - 1]]; return w.join(' '); }
+  const buyukBas = s => s.split(' ').map(w => w.charAt(0).toLocaleUpperCase('tr') + w.slice(1)).join(' ');
+  /* Sayı bildiren bağlam: önceki sözcük */
+  const ROMA_SAYI_ONCE = /^(?:Popülasyon|popülasyon|Pop|Tip|tip|FR|Kepler|Artemis|Delta|Atlas|Kamiokande|Sınıf|sınıf|Aslan|Ayı|Giriş|Sistemi|H|results|Results|Project|Clusters|Vector)$/;
+  /* Sıra sayısından sonra büyük harfle gelebilen (cümle başı sanılmayan) sözcükler */
+  const ROMA_SIRA_SONRA = /^(?:Dünya|Düzey)/;
+  function romaOku(t) {
+    const onceki = (s, i) => (s.slice(0, i).match(/(\S+)\s*$/) || ['', ''])[1];
+    /* 1) Sıra: "XIV. yüzyıl" */
+    t = t.replace(/(^|[\s(“"'])([IVX]{1,6})\.\s(?=(\S+))/g, (m, o, r, sonra, i, s) => {
+      const n = romaSayi(r); if (!n) return m;
+      const once = onceki(s, i + o.length).replace(/[(“"']$/, '');
+      if (ROMA_SAYI_ONCE.test(once.replace(/[.,:;]$/, ''))) return m;
+      const kucuk = /^[a-zçğıöşü]/.test(sonra), izinli = ROMA_SIRA_SONRA.test(sonra);
+      if (r.length === 1) {
+        /* tek harf: "H. I. Ewen", "V. Dhillon" ad baş harfidir */
+        if (/^[A-ZÇĞİÖŞÜ]\.$/.test(once) || !(kucuk || izinli)) return m;
+      } else if (!kucuk && !izinli && /[.!?:]$/.test(once)) return m;   // cümle sonu + büyük harf: belirsiz
+      if (!kucuk && !izinli && !/^[A-ZÇĞİÖŞÜ][a-zçğıöşü]/.test(sonra)) return m;
+      const w = siraYazi(n);
+      return o + (kucuk ? w : buyukBas(w)) + ' ';
+    });
+    /* 2) Sayı: iki ve daha çok harfli Roma rakamı tek başına ("Popülasyon II", "Artemis II'nin", "Kepler III'e") */
+    t = t.replace(/(^|[\s(“"'/])([IVX]{2,6})(?:['’]([a-zçğıöşü]+))?(?![A-Za-zÇĞİÖŞÜçğıöşü\d\-–_*])/g, (m, o, r, ek) => {
+      const n = romaSayi(r); if (!n) return m;
+      const w = sayiYazi(n), son = w.split(' ').pop();
+      if (!ek) return o + w;
+      const e = ekle(son, ek); return e ? o + w.slice(0, w.length - son.length) + e : m;
+    });
+    /* 3) Tek harf, yalnız sayı bağlamında: "Popülasyon I", "Tip I'de", "FR I", "G2 V", "K1,5 III" (yukarıda), "Aslan I ve" */
+    t = t.replace(/(^|[\s(])([IVX])(?:['’]([a-zçğıöşü]+))?(?=$|[\s,;:.)])/g, (m, o, r, ek, i, s) => {
+      const once = onceki(s, i + o.length);
+      const spektral = /^[OBAFGKM]\d(?:,\d)?$/.test(once);
+      if (!spektral && !/^(?:Popülasyon|popülasyon|Pop|Tip|tip|FR|Kepler|Sınıf|sınıf|Aslan)$/.test(once.replace(/^\(/, ''))) return m;
+      const w = sayiYazi(romaSayi(r));
+      if (!ek) return o + w;
+      const e = ekle(w, ek); return e ? o + e : m;
+    });
+    return t.replace(/(^|[\s(])Pop(?=\s(?:[a-zçğıöşü]|I|V|X))/g, '$1popülasyon');
+  }
+
+
+  /* ---------- "→" bağlama göre (v44) ----------
+     Sayı/harf geçişi yukarıda ("n'den 1'e"). Burada sırayla: yüzde geçişi (%4 → %1,5), element geçişi (H → He:
+     "hidrojenden helyuma"), tepkime (p + p → ²H + e⁺ + ν: "birleşerek … oluşturur"; 4 ¹H → ⁴He + enerji: "…'den … oluşur"),
+     koşul (φ + δ > 90° → hiç batmaz: "ise"), özel ad geçişi (Dünya → Mars: "Dünya'dan Mars'a"), tek sözcük geçişi
+     (düşük → yüksek frekans: "düşükten yükseğe"), zincir (a → b → c: "a, ardından b, ardından c"; hesapta "yani"),
+     kalanlar: sağ yan sayı/ölçüyse ", yani", sözcükse ", bu yüzden" (neden → sonuç). */
+  const ELEMENT_AD = 'hidrojen|helyum|lityum|berilyum|bor|karbon|azot|oksijen|neon|magnezyum|silisyum|demir|nikel|uranyum|kurşun';
+  const PARCACIK = '(?:proton|nötron|elektron|pozitron|foton|nötrino|nü|gama|p|n)';
+  const TEPKIME_SOZ = new RegExp('(?:^|\\s)(?:\\d+\\s)?(?:' + ELEMENT_AD + '|' + PARCACIK + ')(?:\\s\\d+)?(?=\\s|$)');
+  const OZEL_AD = '[A-ZÇĞİÖŞÜ][a-zçğıöşü]+';
+  const ZIT = 'düşük|yüksek|sıcak|soğuk|hafif|ağır|küçük|büyük|kısa|uzun|yavaş|hızlı|sönük|parlak|yakın|uzak|iç|dış';
+  const ozelEk = (w, ek) => { const o = ekle(w.toLocaleLowerCase('tr'), ek); return o ? w + "'" + o.slice(w.length) : null; };
+  function okBaglam(t, ELEMENT) {
+    /* yüzde geçişi */
+    t = t.replace(/%\s?(\d[\d,]*)\s?→\s?%\s?(\d[\d,]*)/g, (m, a, b) => { const x = sayiyaEk(a, 'den'), y = sayiyaEk(b, 'e'); return x && y ? 'yüzde ' + x + ' yüzde ' + y : m; });
+    /* element simgesi geçişi: "H → He", "U-238 → Pb-206" */
+    const EL = { H: 'hidrojen', He: 'helyum', C: 'karbon', N: 'azot', O: 'oksijen', Ne: 'neon', Si: 'silisyum', Fe: 'demir', Ni: 'nikel', U: 'uranyum', Pb: 'kurşun', Mg: 'magnezyum' };
+    const elSoz = (sim, no) => (EL[sim] ? EL[sim] + (no ? ' ' + no : '') : null);
+    t = t.replace(/(^|[\s(:;,])(He|Ne|Si|Fe|Ni|Mg|Pb|[HCNOU])(?:[-‐](\d+))?\s?→\s?(He|Ne|Si|Fe|Ni|Mg|Pb|[HCNOU])(?:[-‐](\d+))?(?![A-Za-z\d+])(?!\s?[+])/g, (m, o, a, an, b, bn) => {
+      const x = elSoz(a, an), y = elSoz(b, bn); if (!x || !y) return m;
+      const xe = an ? sayiyaEk(an, 'den') && x.replace(/\d+$/, sayiyaEk(an, 'den')) : ekle(x, 'den');
+      const ye = bn ? sayiyaEk(bn, 'e') && y.replace(/\d+$/, sayiyaEk(bn, 'e')) : ekle(y, 'e');
+      return xe && ye ? o + xe + ' ' + ye : m;
+    });
+    /* element adı geçişi: "helyum → karbon" */
+    t = t.replace(new RegExp('(^|[\\s(:;,])(' + ELEMENT_AD + ')\\s?→\\s?(' + ELEMENT_AD + ')(?![' + H + '\\d])(?!\\s?\\+)', 'g'), (m, o, a, b) => { const x = ekle(a, 'den'), y = ekle(b, 'e'); return x && y ? o + x + ' ' + y : m; });
+    /* tepkime: yan tümcenin iki yanı parçacık/element */
+    t = t.replace(/([^,;:.()]*?)\s?→\s?([^,;.()]*)/g, (m, sol, sag) => {
+      if (!TEPKIME_SOZ.test(sol) || !TEPKIME_SOZ.test(sag)) return m;
+      if (!/\+/.test(sol + sag)) {
+        /* "4 hidrojen 1 → helyum 4": geçiş */
+        const ks = sol.trimEnd().split(' '), ss = sag.trim().split(' '), a = ks.pop(), b = ss.pop();
+        const x = /^\d+$/.test(a) ? sayiyaEk(a, 'den') : ekle(a, 'den'), y = /^\d+$/.test(b) ? sayiyaEk(b, 'e') : ekle(b, 'e');
+        return x && y ? ks.concat(x).join(' ') + ' ' + ss.concat(y).join(' ') + (sag.match(/\s*$/)[0]) : m;
+      }
+      if (/\+/.test(sol)) return sol + ' birleşerek ' + sag.trim() + ' oluşturur' + (sag.match(/\s*$/)[0] || ' ');
+      const k = sol.trim().split(' '), son = k.pop();
+      const e = /^\d+$/.test(son) ? sayiyaEk(son, 'den') : (ekle(son, 'den') || null);
+      return e ? (sol.match(/^\s*/)[0]) + k.concat(e).join(' ') + ' ' + sag.trim() + ' oluşur' + (sag.match(/\s*$/)[0] || ' ') : m;
+    });
+    /* Parantez içi maskelenir: içindeki ";", "," ve okların cümle bölmesini bozmaması için */
+    const maskele = s => { let d = 0; return [...s].map(c => { if (c === '(') { d++; return c; } if (c === ')') { d = Math.max(0, d - 1); return c; } return d ? '_' : c; }).join(''); };
+    /* Cümle parçaları: parantez dışında ";" ya da cümle noktası */
+    const parcala = (s, re) => { const m = maskele(s), k = [0]; m.replace(re, (x, i) => { k.push(i + x.length); return x; }); k.push(s.length); const o = []; for (let a = 0; a < k.length - 1; a++) o.push(s.slice(k[a], k[a + 1])); return o; };
+    /* zincir: aynı cümle parçasında, parantez dışı ", " ile ayrılmamış iki ya da daha çok ok. Parantez içi ayrıca
+       (kendi virgülleriyle) değerlendirilir: "(9 kare → 3 kat, 100 kare → 10 kat)" zincir değil. */
+    const zincir = (metin, maskeli) => parcala(metin, /;\s|\.\s|:\s/g).map(cumle => parcala(cumle, /,\s/g).map(p => {
+      const okSay = ((maskeli ? maskele(p) : p).match(/→/g) || []).length;
+      if (okSay < 2) return p;
+      const esit = /=|eşittir/.test(p) ? ', yani ' : ', ardından ';
+      if (!maskeli) return p.replace(/\s?→\s?/g, esit);
+      /* yalnız parantez dışındaki oklar */
+      const m = maskele(p); let o = '';
+      for (let i = 0; i < p.length; i++) { if (p[i] === '→' && m[i] === '→') { o = o.replace(/\s$/, '') + esit; while (p[i + 1] === ' ') i++; } else o += p[i]; }
+      return o;
+    }).join('')).join('');
+    t = t.replace(/\(([^()]*→[^()]*)\)/g, (m, ic) => '(' + zincir(ic, false) + ')');
+    t = zincir(t, true);
+    /* koşul: okun solundaki yan tümcede (son ";", ":" ya da parantez dışı ", "den bu yana) karşılaştırma varsa "ise" */
+    const KARSI = /[<>≤≥]|küçük ya da eşittir|büyük ya da eşittir|küçüktür|büyüktür|(?:den|dan|ten|tan) (?:büyük|küçük)\b/;
+    t = parcala(t, /;\s|\.\s|:\s/g).map(cumle => {
+      if (!cumle.includes('→')) return cumle;
+      const ps = parcala(cumle, /,\s/g);
+      return ps.map(p => { const i = maskele(p).indexOf('→'); return i > 0 && KARSI.test(p.slice(0, i)) ? p.slice(0, i).replace(/\s+$/, '') + ' ise ' + p.slice(i + 1).replace(/^\s+/, '') : p; }).join('');
+    }).join('');
+    /* tarih geçişi: "Temmuz 2026 → Haziran 2030", "19.01.2006 → 14.07.2015", "14 Ekim 2024 → Nisan 2030" */
+    t = t.replace(new RegExp('((?:\\d{1,2}\\s)?(?:(?:' + AYLAR + ')\\s)?|\\d{1,2}\\.\\d{1,2}\\.)(\\d{4})\\s?→\\s?((?:\\d{1,2}\\s)?(?:(?:' + AYLAR + ')\\s)?|\\d{1,2}\\.\\d{1,2}\\.)(\\d{4})(?!\\d)', 'g'), (m, a0, a, b0, b) => { const x = sayiyaEk(a, 'den'), y = sayiyaEk(b, 'e'); return x && y ? a0 + x + ' ' + b0 + y : m; });
+    /* özel ad geçişi: "Dünya → Mars", "Merak→Dubhe" */
+    t = t.replace(new RegExp('(^|[\\s(:;,])(' + OZEL_AD + ')\\s?→\\s?(' + OZEL_AD + ')(?=[\\s,;.:)]|$)', 'g'), (m, o, a, b) => { const x = ozelEk(a, 'den'), y = ozelEk(b, 'e'); return x && y ? o + x + ' ' + y : m; });
+    /* tek sözcük geçişi: "(düşük → yüksek frekans)", "kızıl → mavi)"; "akım → manyetik alan" değil (sağda ad öbeği) */
+    t = t.replace(new RegExp('(^|[\\s(:;,])([A-ZÇĞİÖŞÜa-zçğıöşü][a-zçğıöşü]{2,})\\s?→\\s?([a-zçğıöşü]{3,})(?=[,;.:)]|$|\\s(?=[^' + H + ']))|(^|[\\s(:;,])(' + ZIT + ')\\s?→\\s?(' + ZIT + ')(?=\\s)', 'g'), (m, o1, a1, b1, o2, a2, b2) => { const o = o1 != null ? o1 : o2, a0 = a1 || a2, b = b1 || b2, a = a0.toLocaleLowerCase('tr'); let x = ekle(a, 'den'); const y = ekle(b, 'e'); if (x && a0 !== a) x = a0.charAt(0) + x.slice(1); return x && y ? o + x + ' ' + y : m; });
+    /* ölçü geçişi: "11 saat 55 dakika → 11 saat 23 dakika", "255 kelvin → 288 kelvin" */
+    t = t.replace(new RegExp('(\\d[\\d,]*\\s(?:' + BIRIM_SOZ + '))\\s?→\\s?((?:\\d[\\d,]*\\s(?:' + BIRIM_SOZ + ')(?:\\s(?=\\d))?)+)(?![' + H + '])', 'g'), (m, a, b) => {
+      const ua = a.split(' ').pop(), ub = b.trim().split(' ').pop(); const x = ekle(ua, 'den'), y = ekle(ub, 'e');
+      return x && y ? a.slice(0, a.length - ua.length) + x + ' ' + b.trim().slice(0, b.trim().length - ub.length) + y : m;
+    });
+    /* kalanlar */
+    /* kalanlar: hesap (solda eşitlik, sağda sayı, değişken ya da kesir) "yani"; neden → sonuç "bu yüzden" */
+    t = parcala(t, /;\s|\.\s|:\s/g).map(cumle => cumle.replace(/\s?→\s?(?=([^,;]*))/g, (m, sonra, i, s) => {
+      const sol = s.slice(0, i);
+      const hesap = /^(?:[\d~≈%+−-]|(?:yaklaşık|yüzde|eksi|artı|en|küçük|büyük)(?![a-zçğıöşü])|[A-Za-z]\d*(?:\s|$)|[a-zçğıöşü]+[dt][ae] (?:bir|iki|üç|dört)\b)/.test(sonra) ||
+        /=|eşittir|orantılıdır/.test(sol);
+      return hesap ? ', yani ' : ', bu yüzden ';
+    })).join('');
+    return t.replace(/,\s*,\s/g, ', ');
+  }
+
   function okunus(metin) {
     let t = ' ' + String(metin || '') + ' ';
     /* Mikro işareti (U+00B5) Yunan mü'süne: "43,9 µas" → birim tablosundaki μas */
@@ -186,6 +326,13 @@
     t = t.replace(/\s&\s/g, ' ve ');
     /* Tarih kısaltmaları (d20 Astronominin tarihi): "MÖ 240" → "milattan önce 240"; MS yalnız sayıdan önce (ms ≠ MS) */
     t = t.replace(/(^|[\s(–~≈-])MÖ(?=\s|\.|,|\))/g, '$1milattan önce').replace(/(^|[\s(–~≈-])MS(?=\s\d)/g, '$1milattan sonra');
+    /* Saat (TDK, nokta kural 7: "21.30"): okuma motoru "21:30"u saat olarak okur, "21.30"u okumaz; konuşmada iki noktaya
+       çevrilir. Yalnız 0–24 saat ve iki basamaklı dakika (isteğe bağlı saniye); tarih (13.04.2025) ve binlik (12.500) dokunulmaz. */
+    t = t.replace(/(^|[^\d.,])([01]?\d|2[0-4])\.([0-5]\d)(?:\.([0-5]\d|60))?(?![\d]|\.\d)/g, (m, o, sa, dk, sn) => o + sa + ':' + dk + (sn ? ':' + sn : ''));
+    /* Roma rakamları (v44): sıra bildiren ("XIV. yüzyıl", "II. Dünya Savaşı", "III. Murad") sıra sayısıyla, sayı bildiren
+       ("Popülasyon II", "Artemis II", "H II bölgesi", "G2 V") sayıyla okunur. Tek harfli I, V, X yalnız açık bağlamda
+       açılır: X ışını, B eksi V, Tip Ia, "I = Q ÷ t", "V. Dhillon" gibi adlar harf olarak kalır. */
+    t = romaOku(t);
     /* Binlik ayraç (veride ondalık ayraç virgül): "14.500" → "14500"; nokta cümle sonu sanılmasın */
     t = t.replace(/(\d)\.(?=\d{3}(?!\d))/g, '$1');
     /* Alt simge: H₂ → H 2 */
@@ -332,7 +479,7 @@
       else sag = gecisEk(b, 'e');
       return sol && sag ? o + sol + ' ' + sag : m;
     });
-    t = t.replace(/\s?→\s?/g, ', yani ');
+    t = okBaglam(t, ELEMENT);
     t = t.replace(/\s=\s|=/g, ' eşittir ');
     /* Kuyruklu yıldız adı "109P/Swift-Tuttle": eğik çizgi okunmaz */
     t = t.replace(/(\d+[PC])\/(?=[A-ZÇĞİÖŞÜ])/g, '$1 ');
