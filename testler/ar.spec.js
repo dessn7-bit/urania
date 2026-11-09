@@ -316,6 +316,8 @@ test('A1-07 (denetim 2026-10-30): Chromium requestPermission tanımlasa da algı
   await page.goto('/index.html#ar');
   expect(await page.evaluate(() => typeof DeviceOrientationEvent.requestPermission === 'function' && 'ondeviceorientationabsolute' in window)).toBe(true);
   await page.clock.runFor(2500);
+  /* yük altında son zamanlayıcının sonucu bir mikro görev sonra yazılabilir: durum yoklanır (sahte saat ilerletilerek) */
+  await expect.poll(async () => { await page.clock.runFor(100); return (await arDurum(page)).mod; }, { timeout: 8000 }).toBe('dokunma');
   const d = await arDurum(page);
   expect(d.dugme).toBe(false);
   expect(d.mod).toBe('dokunma');
