@@ -988,7 +988,7 @@
       if (g.karanlikDuzey !== 'astro') { if (k.seviye === 'iyi') { k.seviye = 'idare'; k.ad = 'idare eder'; } k.neden += ', tam karanlık yok'; }
       const ay = G.ayDurumu(g.karanlikBas || g.geceBas, durum.gzl);
       if (ay.oran >= 0.4) k.neden += `, Ay %${Math.round(ay.oran * 100)}`;
-      const gunAd = U.gunHafta(g.geceBas).split(' ').slice(0, 2).join(' ') + ' ' + U.gunHafta(g.geceBas).split(' ').pop().slice(0, 3);
+      const gunAd = U.gunHafta(g.geceBas);   // "9 Kasım Pazartesi": kısaltma Pazar/Pazartesi, Cuma/Cumartesi ayrımını yitirir
       satirlar.push(`<li class="yg-${k.seviye} okunur" data-ses="${U.kacis(U.gunHafta(g.geceBas) + ' gecesi: ' + k.ad + '. ' + k.neden + '.')}"><span class="yg-gun">${i === 0 ? 'Bu gece' : U.kacis(gunAd)}</span><b class="yg-et">${k.ad}</b><span class="yg-neden">${U.kacis(k.neden)}</span></li>`);
     }
     kap.hidden = !satirlar.length;

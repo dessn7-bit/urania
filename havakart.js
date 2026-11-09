@@ -41,6 +41,7 @@
   /* Beer–Lambert: m = −2,5 log10(e^−τ) = 2,5 τ log10(e) = 1,0857 τ kadir (başucunda, hava kütlesi 1) */
   const KADIR_TAU = 2.5 * Math.LOG10E;
 
+  const C = x => { const r = Math.round(x); return (r < 0 ? '−' : '') + U.sayi(Math.abs(r), 0); };   // sıcaklık: eksi işareti (U+2212), "−0" olmaz
   const yuvarla = x => Math.round(x * 100) / 100;
   const iki = x => yuvarla(x).toFixed(2);
 
@@ -371,7 +372,7 @@
     const satir = [];
     if (a) {
       const k = a.kadir;
-      satir.push({ et: 'Şeffaflık', id: 'gkSeffaflik', gor: `Bu gece havadaki toz ve pus (aerosol) yüzünden yıldızlar başucunda yaklaşık <strong>${U.sayi(k, 2)} kadir</strong> sönük.<span class="oz-not">Aerosol optik derinliği ${U.sayi(a.aod, 2)} (550 nm, gece ortalaması); Beer–Lambert: kayıp ≈ 1,086 × AOD kadir. Ufka yakın yıldızlarda kayıp daha büyüktür.${a.toz != null ? ` Yerde (10 m) Sahra tozu en çok ${U.sayi(a.toz, 0)} μg/m³.` : ''}</span>`,
+      satir.push({ et: 'Şeffaflık', id: 'gkSeffaflik', gor: `Bu gece havadaki toz ve pus (aerosol) yüzünden yıldızlar başucunda yaklaşık <strong>${U.sayi(k, 2)} kadir</strong> sönük.<span class="oz-not">Aerosol optik derinliği ${U.sayi(a.aod, 2)} (550 nm, gece ortalaması); Beer–Lambert: kayıp ≈ 1,086 × AOD kadir. Ufka yakın yıldızlarda kayıp daha büyüktür.${a.toz != null && a.toz >= 1 ? ` Yerde (10 m) Sahra tozu en çok ${U.sayi(a.toz, 0)} μg/m³.` : ''}</span>`,
         ses: `Şeffaflık: bu gece havadaki toz ve pus yüzünden yıldızlar başucunda yaklaşık ${U.sayi(k, 2)} kadir sönük.` });
     }
     if (gece.length && gece.some(s => Number.isFinite(s.ciy))) {
@@ -390,8 +391,8 @@
       const enAz = his.reduce((a, b) => (b.hissedilen < a.hissedilen ? b : a));
       const ruz = gece.filter(s => Number.isFinite(s.hamle));
       const hamle = ruz.length ? Math.max(...ruz.map(s => s.hamle)) : null;
-      satir.push({ et: 'Hissedilen', id: 'gkHissedilen', gor: `Gece en soğuk <strong>${U.sayi(enAz.hissedilen, 0)} °C</strong> gibi hissedilecek (${U.saat(enAz.t)}; termometrede ${U.sayi(enAz.sicaklik, 0)} °C).${hamle != null ? `<span class="oz-not">Rüzgâr hamlesi en çok ${Math.round(hamle)} km/sa.</span>` : ''}`,
-        ses: `Hissedilen sıcaklık gece en düşük ${U.sayi(enAz.hissedilen, 0)} derece.` + (hamle != null ? ` Rüzgâr hamlesi en çok saatte ${Math.round(hamle)} kilometre.` : '') });
+      satir.push({ et: 'Hissedilen', id: 'gkHissedilen', gor: `Gece en soğuk <strong>${C(enAz.hissedilen)} °C</strong> gibi hissedilecek (${U.saat(enAz.t)}; termometrede ${C(enAz.sicaklik)} °C).${hamle != null ? `<span class="oz-not">Rüzgâr hamlesi en çok ${Math.round(hamle)} km/sa.</span>` : ''}`,
+        ses: `Hissedilen sıcaklık gece en düşük ${C(enAz.hissedilen)} derece.` + (hamle != null ? ` Rüzgâr hamlesi en çok saatte ${Math.round(hamle)} kilometre.` : '') });
     }
     const gor = gece.filter(s => Number.isFinite(s.gorus));
     if (gor.length) {
