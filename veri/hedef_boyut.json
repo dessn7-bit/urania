@@ -32,14 +32,16 @@
    "kaynak": {
     "boyut": "OpenNGC NGC.csv",
     "vKadir": "OpenNGC",
-    "bKadir": "OpenNGC"
+    "bKadir": "OpenNGC",
+    "cekirdek": "veri/kume_uyeleri.json (SIMBAD, Trapezium üyeleri)"
    },
    "openngc": "NGC1976",
    "openngcTur": "Cl+N",
    "buyukEksen": 90.0,
    "kucukEksen": 60.0,
    "vKadir": 4.0,
-   "bKadir": 4.0
+   "bKadir": 4.0,
+   "cekirdek": "yildiz"
   },
   {
    "id": "M31",
@@ -49,7 +51,8 @@
     "boyut": "OpenNGC NGC.csv",
     "vKadir": "OpenNGC",
     "bKadir": "OpenNGC",
-    "yuzeyParlakligiB": "OpenNGC SurfBr (B bandı, 25 kadir eş-ışık eğrisi içi ortalama)"
+    "yuzeyParlakligiB": "OpenNGC SurfBr (B bandı, 25 kadir eş-ışık eğrisi içi ortalama)",
+    "cekirdek": "veri/profil_m31.json (de Vaucouleurs 1958 Tablo 4)"
    },
    "openngc": "NGC0224",
    "openngcTur": "G",
@@ -57,7 +60,8 @@
    "kucukEksen": 69.66,
    "vKadir": 3.44,
    "bKadir": 4.29,
-   "yuzeyParlakligiB": 23.63
+   "yuzeyParlakligiB": 23.63,
+   "cekirdek": "profil"
   },
   {
    "id": "M44",
@@ -96,14 +100,16 @@
    "kaynak": {
     "boyut": "OpenNGC NGC.csv",
     "vKadir": "OpenNGC",
-    "bKadir": "OpenNGC"
+    "bKadir": "OpenNGC",
+    "cekirdek": "iç bölge yüzey parlaklığı için yayımlanmış ölçüm bulunamadı (2026-11-09)"
    },
    "openngc": "NGC6523",
    "openngcTur": "Neb",
    "buyukEksen": 45.0,
    "kucukEksen": 30.0,
    "vKadir": 5.8,
-   "bKadir": 5.0
+   "bKadir": 5.0,
+   "cekirdek": "yok"
   },
   {
    "id": "M7",

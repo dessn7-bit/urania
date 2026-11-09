@@ -51,18 +51,31 @@
     if (Lart == null) return null;
     return { Lart, kadir: toplamKadir(Lart), kod, hucre: [r, c] };
   }
-  async function izgaraYukle(fetchFn) {
-    const f = fetchFn || (typeof fetch === 'function' ? fetch.bind(kok) : null);
-    if (!f) throw new Error('fetch yok');
-    const [meta, r] = await Promise.all([f('./veri/gok_parlakligi.json').then(x => { if (!x.ok) throw new Error('gok_parlakligi.json ' + x.status); return x.json(); }), f('./veri/gok_parlakligi.u8.gz')]);
-    if (!r.ok) throw new Error('gok_parlakligi.u8.gz ' + r.status);
-    let buf = new Uint8Array(await r.arrayBuffer());
-    if (buf.length > 1 && buf[0] === 0x1f && buf[1] === 0x8b) {          // gzip sihirli sayısı; sunucu kendisi açmışsa ham gelir
-      if (typeof DecompressionStream === 'undefined') throw new Error('bu tarayıcı gzip açamıyor');
-      const acik = new Response(new Blob([buf]).stream().pipeThrough(new DecompressionStream('gzip')));
-      buf = new Uint8Array(await acik.arrayBuffer());
-    }
-    return izgaraKur(meta, buf);
+  let izgaraSoz = null;    // aynı anda birden çok bölüm (Gök, Defter) istese de tek indirme
+  function izgaraYukle(fetchFn) {
+    if (izgara) return Promise.resolve(izgara);
+    if (izgaraSoz) return izgaraSoz;
+    izgaraSoz = (async () => {
+      const f = fetchFn || (typeof fetch === 'function' ? fetch.bind(kok) : null);
+      if (!f) throw new Error('fetch yok');
+      const [meta, r] = await Promise.all([f('./veri/gok_parlakligi.json').then(x => { if (!x.ok) throw new Error('gok_parlakligi.json ' + x.status); return x.json(); }), f('./veri/gok_parlakligi.u8.gz')]);
+      if (!r.ok) throw new Error('gok_parlakligi.u8.gz ' + r.status);
+      let buf = new Uint8Array(await r.arrayBuffer());
+      if (buf.length > 1 && buf[0] === 0x1f && buf[1] === 0x8b) {          // gzip sihirli sayısı; sunucu kendisi açmışsa ham gelir
+        if (typeof DecompressionStream === 'undefined') throw new Error('bu tarayıcı gzip açamıyor');
+        const acik = new Response(new Blob([buf]).stream().pipeThrough(new DecompressionStream('gzip')));
+        buf = new Uint8Array(await acik.arrayBuffer());
+      }
+      return izgaraKur(meta, buf);
+    })().catch(e => { izgaraSoz = null; throw e; });
+    return izgaraSoz;
+  }
+  /* Başucu gök parlaklığı seçimi (Gök ve Defter aynı kuralı kullanır): elle SQM > atlas > "en sönük yıldız" kaydırıcısından türetme */
+  function gokBasucuSec(o) {
+    if (Number.isFinite(o.sqmElle)) return { kadir: o.sqmElle, kaynak: 'elle' };
+    const g = izgara ? gokParlakligi(o.enlem, o.boylam) : null;
+    if (g) return { kadir: g.kadir, kaynak: 'atlas', Lart: g.Lart };
+    return { kadir: kadirdenGok(Number.isFinite(o.limitKadir) ? o.limitKadir : 4, F_VARSAYILAN, o.p || gozBebegi()), kaynak: 'kaydirici' };
   }
 
   /* ---- 3) Sönümleme (kadir / hava kütlesi) ---- */
@@ -173,53 +186,116 @@
     return (lo + hi) / 2;
   }
 
-  /* ---- Hedef değerlendirmesi ----
-     h: { ad, kadir, buyukEksen, kucukEksen (yay dk), nokta: true|false }
-     ortam: { Vzen (başucu, Ay'sız, kadir/yay sn²), Z (hedefin başucu uzaklığı), k, ay: {alfa, rho, Zm} | null, p, F, alet }
-     Döner: { etiket: 'gorunur'|'zor'|'gorunmez'|'ufuk'|'belirsiz', fark (kadir; + görünür yönünde), gok, esik, hedef } */
+  /* ---- Hedef değerlendirmesi (v46: dört yol, en iyisi seçilir) ----
+     h: { ad, tur, kadir, buyukEksen, kucukEksen (yay dk), nokta, uyeler: [V…] (açık küme üyeleri ya da merkez yıldızları),
+          profil: { bv, satirlar: [{ alan (yay dk²), mB }] } (eş-ışık eğrileri), cekirdek: 'profil' | 'yildiz' | 'yok' | undefined }
+     ortam: { Vzen, Z, k, ay, p, F, alet, kayma }
+     Yollar:
+       'nokta'  — yıldız: kadir ≤ nokta kaynak sınırı (Crumey (68)/(53)).
+       'yaygin' — ortalama yüzey parlaklığı ↔ Crumey (84) sınırı (v45).
+       'uye'    — açık kümeler: en parlak üyelerden en az 3'ü o gecenin nokta kaynak sınırından parlaksa "görünür (yıldızları seçilir)";
+                  fark = sınır − 3. parlak üyenin görünen kadiri (görev kuralı; zor bandı Urania'nın seçimi).
+       'profil' — parlak çekirdekli cisim (M31): her eş-ışık eğrisinin içindeki alan ve ortalama yüzey parlaklığı (de Vaucouleurs 1958
+                  Tablo 4, B − V ile V'ye) Crumey (84) sınırıyla karşılaştırılır; en iyi iç bölge sonucu verir (Crumey 2014 §3.1 yöntemi).
+     Sonuç = yolların en iyisi (etiket sırası, sonra fark). Genel kural: gerekli veri yoksa "görünmez" yerine "belirsiz".
+     Küresel kümeler 7×50'de yıldızlara ayrılmaz: üye yolu yalnız açık küme / asterizm / merkez yıldızı verisi olanlarda. */
   const BANT = 0.5;   // ±0,5 kadir, URANIA'NIN SEÇİMİ (kaynaklı değil): atlas (Falchi: havaışığı yarım kadirden fazla değişir), Ay modeli (%8–23) ve F aralığı (1,4–2,4) belirsizlikleri için
+  const SIRA = { gorunur: 3, zor: 2, gorunmez: 1 };
+  function etiketle(fark, enAz) { return fark >= enAz ? 'gorunur' : (fark > -BANT ? 'zor' : 'gorunmez'); }
   function degerlendir(h, ortam) {
     if (!(ortam.Z < 90)) return { etiket: 'ufuk', neden: 'ufkun altında' };
     const gok = gokYuzey(ortam);
     const B = kadirdenCd(gok.V);
     const e = esikler({ B, alet: ortam.alet || DURBUN, p: ortam.p, F: ortam.F });
-    if (!e) return { etiket: 'belirsiz', neden: 'gök modelin üstünde (alacakaranlık ya da çok parlak)', gok };
-    const son = ortam.k * Xs(Math.min(89.9, ortam.Z));              // hedefin sönümlenmesi (KS91 (14) hava kütlesi)
-    let fark, hedef;
-    if (h.nokta || !(h.buyukEksen > 0)) {
-      const m = h.kadir + son;
-      fark = e.m0 - m;
-      hedef = { tur: 'nokta', kadir: h.kadir, kadirGorunen: m, sinir: e.m0 };
+    const kayma = Number.isFinite(ortam.kayma) ? ortam.kayma : 0;      // kişisel ayar (Defter karşılaştırmasından, onaylıysa)
+    if (!e) return { etiket: 'belirsiz', neden: 'gök modelin üstünde (alacakaranlık ya da çok parlak)', gok, Z: ortam.Z, kayma };
+    const son = ortam.k * Xs(Math.min(89.9, ortam.Z));                  // hedefin sönümlenmesi (KS91 (14) hava kütlesi)
+    const uyeler = Array.isArray(h.uyeler) ? h.uyeler.map(u => (typeof u === 'number' ? u : u && u.V)).filter(Number.isFinite).sort((a, b) => a - b) : [];
+    const profil = h.profil && Array.isArray(h.profil.satirlar) ? h.profil.satirlar.filter(s => s && s.alan > 0 && Number.isFinite(s.mB)) : [];
+    const yollar = [];
+    if (h.nokta || (!(h.buyukEksen > 0) && !profil.length && !uyeler.length)) {
+      if (Number.isFinite(h.kadir)) { const m = h.kadir + son; yollar.push({ yol: 'nokta', fark: e.m0 - m + kayma, kadir: h.kadir, kadirGorunen: m, sinir: e.m0 }); }
     } else {
-      const alpha = Math.PI / 4 * h.buyukEksen * (h.kucukEksen || h.buyukEksen);        // elips alanı, yay dk²
-      const mu = h.kadir + 2.5 * Math.log10(alpha * 3600);                              // ortalama yüzey parlaklığı, kadir/yay sn²
-      const sinir = yayginSinir(e, alpha);
-      fark = sinir - (mu + son);
-      hedef = { tur: 'yaygin', kadir: h.kadir, alpha, mu, muGorunen: mu + son, sinir, kadirSinir: yayginKadirSinir(e, alpha) };
+      if (h.buyukEksen > 0 && Number.isFinite(h.kadir)) {
+        const alpha = Math.PI / 4 * h.buyukEksen * (h.kucukEksen || h.buyukEksen);     // elips alanı, yay dk²
+        const mu = h.kadir + 2.5 * Math.log10(alpha * 3600);                           // ortalama yüzey parlaklığı, kadir/yay sn²
+        const sinir = yayginSinir(e, alpha);
+        yollar.push({ yol: 'yaygin', fark: sinir - (mu + son) + kayma, alpha, mu, muGorunen: mu + son, sinir, kadir: h.kadir, kadirSinir: yayginKadirSinir(e, alpha) });
+      }
+      if (profil.length) {
+        const bv = Number.isFinite(h.profil.bv) ? h.profil.bv : 0;
+        let en = null;
+        profil.forEach(s => {
+          const kadir = s.mB - bv, mu = kadir + 2.5 * Math.log10(s.alan * 3600), sinir = yayginSinir(e, s.alan), fark = sinir - (mu + son) + kayma;
+          if (!en || fark > en.fark) en = { yol: 'profil', fark, alpha: s.alan, mu, muGorunen: mu + son, sinir, kadir, B: s.B };
+        });
+        yollar.push(en);
+      }
+      if (uyeler.length >= 3) {
+        const gorunen = uyeler.map(v => v + son);
+        yollar.push({ yol: 'uye', fark: e.m0 - gorunen[2] + kayma, sayi: gorunen.filter(m => m <= e.m0).length, uyeler, uyelerGorunen: gorunen, sinir: e.m0 });
+      }
     }
-    const etiket = fark >= BANT ? 'gorunur' : (fark > -BANT ? 'zor' : 'gorunmez');
-    return { etiket, fark, gok, esik: e, hedef, sonumleme: son, Z: ortam.Z };
+    if (!yollar.length) return { etiket: 'belirsiz', neden: 'hedef verisi eksik', gok, esik: e, Z: ortam.Z, sonumleme: son, kayma };
+    yollar.forEach(y => { y.etiket = etiketle(y.fark, y.yol === 'uye' ? 0 : BANT); });
+    yollar.sort((a, b) => (SIRA[b.etiket] - SIRA[a.etiket]) || (b.fark - a.fark));
+    const en = yollar[0];
+    let etiket = en.etiket, neden = null;
+    if (etiket === 'gorunmez') {
+      const kume = h.tur === 'acik_kume' || h.tur === 'yildiz_kumesi_asterizm';
+      if (kume && !yollar.some(y => y.yol === 'uye')) { etiket = 'belirsiz'; neden = 'üye verisi yok'; }
+      else if (h.cekirdek === 'yok') { etiket = 'belirsiz'; neden = 'çekirdek verisi yok'; }
+      else if (h.cekirdek === 'profil' && !yollar.some(y => y.yol === 'profil')) { etiket = 'belirsiz'; neden = 'profil verisi yüklenemedi'; }
+      else if (h.cekirdek === 'yildiz' && !yollar.some(y => y.yol === 'uye')) { etiket = 'belirsiz'; neden = 'merkez yıldızı verisi yüklenemedi'; }
+    }
+    return { etiket, neden, fark: en.fark, yol: en.yol, yollar, gok, esik: e, hedef: en, sonumleme: son, Z: ortam.Z, kayma };
   }
-  const ETIKET_AD = { gorunur: 'görünür', zor: 'zor', gorunmez: 'görünmez', ufuk: 'ufkun altında', belirsiz: 'hesaplanamadı' };
+  const ETIKET_AD = { gorunur: 'görünür', zor: 'zor', gorunmez: 'görünmez', ufuk: 'ufkun altında', belirsiz: 'belirsiz' };
+  const YOL_AD = { nokta: 'yıldız (nokta kaynak)', yaygin: 'yaygın ışık', uye: 'en parlak üyeler', profil: 'iç bölge profili' };
 
-  /* Kısa gerekçe satırları (ekranda "dokununca açılan"): gök parlaklığı, Ay katkısı, yükseklik, gereken eşik */
+  /* Hedef verisini birleştir (Gök ve Defter aynı yapıyı kurar): hedefler.json + hedef_boyut.json + kume_uyeleri.json + profil_m31.json */
+  function hedefVerisi(h, veri) {
+    const b = veri && veri.hedefBoyut ? veri.hedefBoyut.find(x => x.id === h.id) : null;
+    const k = veri && veri.kumeUyeleri && veri.kumeUyeleri[h.id];
+    const sonuc = { id: h.id, ad: h.ad, tur: h.tur, kadir: b && b.vKadir != null ? b.vKadir : h.kadir, nokta: !!(b && b.noktaKaynak) || (!b && !h.boyut) };
+    if (b) { sonuc.buyukEksen = b.buyukEksen; sonuc.kucukEksen = b.kucukEksen; if (b.cekirdek) sonuc.cekirdek = b.cekirdek; }
+    if (k && Array.isArray(k.uyeler) && (h.tur === 'acik_kume' || h.tur === 'yildiz_kumesi_asterizm' || (b && b.cekirdek === 'yildiz'))) sonuc.uyeler = k.uyeler.map(u => u.V);
+    if (b && b.cekirdek === 'profil' && veri.profil && veri.profil[h.id]) sonuc.profil = veri.profil[h.id];
+    return sonuc;
+  }
+  /* Ortam: astronomi nesneleri (G = Gok, A = Astronomy Engine) çağırandan; Ay konumu, evre açısı, sönümleme burada kurulur */
+  function ortamHazirla(o) {
+    const ay = o.G.cisimAltAz('Moon', o.zaman, o.gzl);
+    let ayBilgi = null;
+    if (ay.alt > 0) { const il = o.A.Illumination('Moon', o.zaman); ayBilgi = { alfa: il.phase_angle, rho: acisalUzaklik(o.alt, o.az, ay.alt, ay.az), Zm: 90 - ay.alt, alt: ay.alt, oran: il.phase_fraction }; }
+    const son = sonumleme({ yukseklik: o.yukseklik || 0, aod: o.aod });
+    return { Vzen: o.Vzen, kaynak: o.kaynak, Z: 90 - o.alt, alt: o.alt, k: son.k, kKaynak: son.kaynak, aod: Number.isFinite(o.aod) ? o.aod : null, ay: ayBilgi,
+      p: o.p || gozBebegi(), F: o.F || F_VARSAYILAN, alet: o.alet || DURBUN, kayma: Number.isFinite(o.kayma) ? o.kayma : 0 };
+  }
+
+  /* Kısa gerekçe satırları (ekranda "dokununca açılan"): gök parlaklığı, Ay katkısı, yükseklik, kullanılan yol ve eşik */
   function sayi(x, b) { return Number.isFinite(x) ? x.toFixed(b).replace('.', ',') : '—'; }
   function gerekce(s, ortam) {
-    if (!s || !s.gok) return [];
+    if (!s || !s.gok) return s && s.neden ? [`Sonuç: ${ETIKET_AD[s.etiket] || s.etiket} — ${s.neden}.`] : [];
     const ls = [];
     ls.push(`Gök parlaklığı: başucunda ${sayi(ortam.Vzen, 1)}, hedef yönünde ${sayi(s.gok.V, 1)} kadir/yay sn²` + (s.gok.deltaV < -0.05 ? ` (Ay ${sayi(-s.gok.deltaV, 1)} kadir parlatıyor)` : ' (Ay katkısı yok)') + '.');
     ls.push(`Yükseklik ${Math.round(90 - s.Z)}°; sönümleme ${sayi(s.sonumleme, 2)} kadir (k = ${sayi(ortam.k, 2)}).`);
-    if (s.hedef && s.hedef.tur === 'nokta') ls.push(`${s.esik.alet.ad} ile görülebilen en sönük yıldız yaklaşık ${sayi(s.hedef.sinir, 1)} kadir; hedef ${sayi(s.hedef.kadirGorunen, 1)} kadir görünüyor.`);
-    else if (s.hedef) ls.push(`Hedefin ortalama yüzey parlaklığı ${sayi(s.hedef.muGorunen, 1)} kadir/yay sn² (${Math.round(s.hedef.alpha)} yay dk², ${sayi(s.hedef.kadir, 1)} kadir); bu büyüklükte bir cisim için eşik ${sayi(s.hedef.sinir, 1)}.`);
-    ls.push(`Sonuç: ${ETIKET_AD[s.etiket]} (fark ${s.fark > 0 ? '+' : ''}${sayi(s.fark, 1)} kadir; ±${sayi(BANT, 1)} "zor" bandı). Yaklaşık: atlas 2014–2015 uydu verisi, Ay modeli Mauna Kea'ya uydurulmuş.`);
+    const y = s.hedef;
+    if (y && y.yol === 'nokta') ls.push(`${s.esik.alet.ad} ile görülebilen en sönük yıldız yaklaşık ${sayi(y.sinir, 1)} kadir; hedef ${sayi(y.kadirGorunen, 1)} kadir görünüyor.`);
+    else if (y && y.yol === 'yaygin') ls.push(`Yaygın ışık yolu: ortalama yüzey parlaklığı ${sayi(y.muGorunen, 1)} kadir/yay sn² (${Math.round(y.alpha)} yay dk², ${sayi(y.kadir, 1)} kadir); bu büyüklükte bir cisim için eşik ${sayi(y.sinir, 1)}.`);
+    else if (y && y.yol === 'profil') ls.push(`İç bölge profili yolu: en iyi iç bölge ${y.alpha < 10 ? sayi(y.alpha, 1) : Math.round(y.alpha)} yay dk² (V ${sayi(y.kadir, 1)} kadir, yüzey ${sayi(y.muGorunen, 1)} kadir/yay sn²); bu büyüklükte eşik ${sayi(y.sinir, 1)}. Profil: de Vaucouleurs 1958 eş-ışık eğrileri, Crumey 2014 yöntemi.`);
+    else if (y && y.yol === 'uye') ls.push(`En parlak üyeler yolu: üyeler V ${y.uyeler.slice(0, 5).map(v => sayi(v, 1)).join(', ')}; ${s.esik.alet.ad} sınırı ${sayi(y.sinir, 1)} kadir → ${y.sayi} üye seçilir (en az 3 gerek)${y.sayi >= 3 ? ': yıldızları seçilir' : ''}.`);
+    if (s.yollar && s.yollar.length > 1) ls.push('Öteki yol' + (s.yollar.length > 2 ? 'lar' : '') + ': ' + s.yollar.slice(1).map(z => `${YOL_AD[z.yol]} → ${ETIKET_AD[z.etiket]} (${z.fark > 0 ? '+' : ''}${sayi(z.fark, 1)})`).join('; ') + '.');
+    if (s.kayma) ls.push(`Kişisel ayar: ${s.kayma > 0 ? '+' : ''}${sayi(s.kayma, 1)} kadir (Defter karşılaştırmasından, onaylı).`);
+    ls.push(`Sonuç: ${ETIKET_AD[s.etiket]}${s.neden ? ' — ' + s.neden : ''} (${y ? YOL_AD[y.yol] + ' yolu, fark ' + (s.fark > 0 ? '+' : '') + sayi(s.fark, 1) + ' kadir; ' : ''}±${sayi(BANT, 1)} "zor" bandı). Yaklaşık: atlas 2014–2015 uydu verisi, Ay modeli Mauna Kea'ya uydurulmuş.`);
     return ls;
   }
 
-  const api = { kadirdenCd, cddenKadir, toplamKadir, DOGAL_MCD, izgaraKur, izgaraYukle, kodCoz, gokParlakligi,
+  const api = { kadirdenCd, cddenKadir, toplamKadir, DOGAL_MCD, izgaraKur, izgaraYukle, kodCoz, gokParlakligi, gokBasucuSec,
     rayleigh, OZON, K_VARSAYILAN, sonumleme,
     nL, nLKadir, X, Xs, B0, Iyildiz, fSacilma, Bmoon, deltaV, gokYuzey, acisalUzaklik,
     esikler, yayginSinir, yayginKadirSinir, kadirdenGok, gozBebegi, DURBUN, CIPLAK, F_VARSAYILAN, YAS_VARSAYILAN, Q, BANT,
-    degerlendir, gerekce, ETIKET_AD };
+    degerlendir, gerekce, hedefVerisi, ortamHazirla, ETIKET_AD, YOL_AD };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   kok.Gorunurluk = api;
 })(typeof window !== 'undefined' ? window : globalThis);

@@ -265,7 +265,14 @@ html.kirmizi input[type="datetime-local"]::-webkit-calendar-picker-indicator {
 .rozet.uyari { color: var(--uyari); border-color: currentColor; }
 /* v45 görünürlük: çip bir düğmedir (dokununca gerekçe); kutu listede ayrı satır */
 button.rozet.gor-ac { font: inherit; font-size: 12px; cursor: pointer; background: transparent; line-height: 1.3; min-height: 24px; }
+.rozet.gor-iyi { color: var(--iyi); border-color: currentColor; }
+.rozet.gor-uyari { color: var(--uyari); border-color: currentColor; }
 .liste li .gor-kutu, .plan li .gor-kutu { grid-column: 1 / -1; display: block; margin: 4px 0 2px; line-height: 1.5; }
+/* v46 Defter "Model ve sen" kartı */
+.model-kart { border: 1px solid var(--cizgi); border-radius: 12px; padding: 12px 14px; margin: 14px 0 6px; }
+.model-kart h2 { font-size: 18px; }
+.model-kart .dugme, .model-kart .bag { margin-left: 6px; }
+.model-uyumsuz { margin: 0 0 8px 18px; padding: 0; line-height: 1.5; }
 .kaynak { font-size: 13px; color: var(--soluk); margin-top: 10px; }
 .kaynak a { color: var(--soluk); }
 details.aciklama { margin-top: 10px; font-size: 14px; color: var(--soluk); }

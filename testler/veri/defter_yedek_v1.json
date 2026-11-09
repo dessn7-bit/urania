@@ -1,0 +1,37 @@
+{
+ "uygulama": "Urania",
+ "tur": "gozlem-defteri",
+ "surum": 1,
+ "olusturma": "2026-10-20T19:05:00.000Z",
+ "kayitlar": [
+  {
+   "id": "m3k1a2b3c4d",
+   "zaman": "2026-10-18T19:40:00.000Z",
+   "cisim": { "anahtar": "hedef:M45", "ad": "Ülker" },
+   "alet": "7×50 dürbün",
+   "kosul": "Berrak",
+   "not": "Eski sürümden kayıt: gözlem alanı yok.",
+   "konum": { "ad": "Kadıköy", "enlem": 40.99, "boylam": 29.03, "yukseklik": 0, "saatDilimi": "Europe/Istanbul" },
+   "otomatik": { "ayOran": 12, "ayEvre": "Hilal (büyüyen)", "ayAlt": -20, "alt": 31, "az": 78, "bulut": 10 }
+  },
+  {
+   "id": "m3k1a2b3c4e",
+   "zaman": "2026-10-19T18:10:00.000Z",
+   "cisim": { "anahtar": "cisim:Saturn", "ad": "Satürn" },
+   "alet": "Çıplak göz",
+   "kosul": "Hafif puslu",
+   "not": "",
+   "konum": { "ad": "Kadıköy", "enlem": 40.99, "boylam": 29.03, "yukseklik": 0, "saatDilimi": "Europe/Istanbul" },
+   "otomatik": { "ayOran": 20, "ayEvre": "Hilal (büyüyen)", "ayAlt": 5, "alt": 38, "az": 150 }
+  },
+  {
+   "id": "m3k1a2b3c4f",
+   "zaman": "2026-10-19T19:00:00.000Z",
+   "cisim": { "anahtar": "diger:kuyruklu yıldız", "ad": "kuyruklu yıldız" },
+   "alet": "7×50 dürbün",
+   "kosul": "Berrak",
+   "not": "Listede yok seçeneğiyle girilmiş eski kayıt.",
+   "konum": { "ad": "Kadıköy", "enlem": 40.99, "boylam": 29.03 }
+  }
+ ]
+}

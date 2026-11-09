@@ -75,6 +75,81 @@
     return o;
   }
 
+  /* ---------- v46: Model ve sen ----------
+     Kayıt anında modelin tahmini (gorunurluk.js: gök parlaklığı, Ay, yükseklik, sönümleme, göz bebeği) girdileriyle saklanır;
+     kullanıcı "gördüm / zor gördüm / göremedim" derse karşılaştırılır. ≥ 10 karşılaştırmalı kayıtta tek bir düzeltme katsayısı
+     (kadir kayması) önerilir: uyumu en çok artıran kayma; yalnız onayla uygulanır, her zaman kaldırılır. Yöntem Urania'nın
+     kendi seçimidir, kaynaklı değildir (arastirma/gorunurluk_kaynak.md §11). Veriler yalnız cihazda; yedeğe kayıtla birlikte girer.
+     Sayılar (Urania'nın seçimi): en az 10 karşılaştırmalı kayıt; öneri aralığı −2…+2 kadir, 0,1 adım; depodan okunan ayar için tavan 3 kadir
+     (bozuk değer korunması; öneri hiçbir zaman 2'yi aşmaz). */
+  const GOZLEM_AD = { gordum: 'gördüm', zor: 'zor gördüm', goremedim: 'göremedim' };
+  const GOZLEM_SINIF = { gordum: 'gorunur', zor: 'zor', goremedim: 'gorunmez' };
+  function modelTahmini(id, zaman, k) {
+    if (!window.Gorunurluk || !veri || !veri.hedefBoyut) return null;
+    const h = veri.hedefler.find(x => x.id === id); if (!h) return null;
+    try {
+      const gzl = G.gozlemci(k.enlem, k.boylam, Number.isFinite(k.yukseklik) ? k.yukseklik : 0);
+      const p = G.sabitAltAz(h.ra, h.dec, zaman, gzl);
+      const goz = (v => (Number.isFinite(v) && v >= 2 && v <= 9 ? v : null))(Number(U.oku('gozBebegi', null))) || Gorunurluk.gozBebegi();
+      const sqm = (v => (Number.isFinite(v) && v >= 15 && v <= 22.5 ? v : null))(Number(U.oku('sqmElle', null)));
+      const b = Gorunurluk.gokBasucuSec({ sqmElle: sqm, enlem: k.enlem, boylam: k.boylam, limitKadir: Number(U.oku('limitKadir', 4)), p: goz });
+      const aod = window.HavaKart && Number.isFinite(HavaKart.sonAod) ? HavaKart.sonAod : null;
+      const kayma = kisiselKayma();
+      const ortam = Gorunurluk.ortamHazirla({ G, A: G.A, gzl, zaman, alt: p.alt, az: p.az, Vzen: b.kadir, kaynak: b.kaynak, aod, yukseklik: Number.isFinite(k.yukseklik) ? k.yukseklik : 0, p: goz, kayma });
+      const s = Gorunurluk.degerlendir(Gorunurluk.hedefVerisi(h, veri), ortam);
+      const y2 = n => Math.round(n * 100) / 100;
+      return { surum: 'v46', etiket: s.etiket, yol: s.yol || null, neden: s.neden || null, fark: Number.isFinite(s.fark) ? y2(s.fark) : null,
+        farkHam: Number.isFinite(s.fark) ? y2(s.fark - (s.kayma || 0)) : null, kayma, gok: y2(b.kadir), gokKaynak: b.kaynak, gokHedef: s.gok ? y2(s.gok.V) : null,
+        ayOran: ortam.ay ? Math.round(ortam.ay.oran * 100) : 0, ayAlt: ortam.ay ? Math.round(ortam.ay.alt) : null, ayAcisi: ortam.ay ? Math.round(ortam.ay.rho) : null,
+        alt: Math.round(p.alt), k: y2(ortam.k), aod: Number.isFinite(aod) ? y2(aod) : null, gozBebegi: y2(ortam.p), F: ortam.F };
+    } catch (e) { return null; }
+  }
+  function kisiselKayma() { const v = Number(U.oku('gorKayma', 0)); return Number.isFinite(v) && Math.abs(v) <= 3 ? v : 0; }   // tavan 3: Urania'nın seçimi (bkz. blok yorumu)
+  /* Karşılaştırılabilir kayıtlar: gözlem girilmiş VE model görünür/zor/görünmez demiş (belirsiz ve ufuk sayılmaz) */
+  function karsilastir(ls) {
+    const k = ls.filter(x => GOZLEM_SINIF[x.gozlem] && x.model && ['gorunur', 'zor', 'gorunmez'].includes(x.model.etiket));
+    const uyumsuz = k.filter(x => GOZLEM_SINIF[x.gozlem] !== x.model.etiket);
+    return { karsilastirilan: k.length, uyum: k.length - uyumsuz.length, uyumsuz, kayitlar: k };
+  }
+  /* Kişisel ayar: −2…+2 kadir arası 0,1 adımla, uyumu en çok artıran kayma (eşitlikte küçük olan). farkHam = ayarsız fark. */
+  function kisiselAyar(ls) {
+    const c = karsilastir(ls);
+    if (c.karsilastirilan < 10 || !window.Gorunurluk) return { yeterli: false, n: c.karsilastirilan };
+    const BANT = Gorunurluk.BANT;
+    const etiket = (fark, yol) => (fark >= (yol === 'uye' ? 0 : BANT) ? 'gorunur' : (fark > -BANT ? 'zor' : 'gorunmez'));
+    const puan = d => c.kayitlar.filter(x => Number.isFinite(x.model.farkHam) && etiket(x.model.farkHam + d, x.model.yol) === GOZLEM_SINIF[x.gozlem]).length;
+    let en = { delta: 0, puan: puan(0) };
+    for (let i = -20; i <= 20; i++) { const d = i / 10, p = puan(d); if (p > en.puan || (p === en.puan && Math.abs(d) < Math.abs(en.delta))) en = { delta: d, puan: p }; }
+    return { yeterli: true, n: c.karsilastirilan, delta: Math.round(en.delta * 10) / 10, uyumOnce: puan(0), uyumSonra: en.puan, oneri: en.puan > puan(0) && Math.abs(en.delta) >= 0.1 };
+  }
+  function modelKarti(ls) {
+    const kap = el.querySelector('#dfModel'); if (!kap) return;
+    const c = karsilastir(ls);
+    const hedefli = ls.filter(x => x.cisim.anahtar.startsWith('hedef:')).length;
+    if (!hedefli) { kap.innerHTML = ''; return; }
+    const kayma = kisiselKayma();
+    const ET = window.Gorunurluk ? Gorunurluk.ETIKET_AD : {};
+    const satir = x => `<li>${U.kacis(x.cisim.ad)} · ${U.kacis(bicim(kayitDilimi(x), 'gun').format(new Date(x.zaman)))}: model <b>${U.kacis(ET[x.model.etiket] || x.model.etiket)}</b>, sen <b>${U.kacis(GOZLEM_AD[x.gozlem])}</b></li>`;
+    let ayar = '';
+    if (kayma) ayar = `<p class="kucuk">Uygulanan kişisel ayar: <b>${kayma > 0 ? '+' : ''}${U.sayi(kayma, 1)} kadir</b> (etiket eşiği bu kadar kaydırılıyor). <button type="button" class="bag" data-is="ayar-kaldir">Ayarı kaldır</button></p>`;
+    const a = kisiselAyar(ls);
+    if (!a.yeterli) ayar += `<p class="kucuk soluk">Kişisel ayar önerisi için en az 10 karşılaştırmalı kayıt gerekir (şimdi ${a.n}).</p>`;
+    else if (a.oneri && a.delta !== kayma) ayar += `<p class="kucuk">Öneri: etiket eşiğini <b>${a.delta > 0 ? '+' : ''}${U.sayi(a.delta, 1)} kadir</b> kaydır; uyum ${a.uyumOnce}/${a.n} → ${a.uyumSonra}/${a.n}. Yöntem Urania'nın kendi seçimidir (kaynaklı değil); yalnız onaylarsan uygulanır, istediğin zaman kaldırılır. <button type="button" class="dugme" data-is="ayar-uygula" data-delta="${a.delta}">Ayarı uygula</button></p>`;
+    else ayar += `<p class="kucuk soluk">${kayma ? 'Mevcut ayar bu kayıtlar için en iyisi.' : 'Öneri yok: ayarsız model bu kayıtlar için zaten en iyi uyumda.'}</p>`;
+    kap.innerHTML = `<section class="model-kart" aria-labelledby="dfModelBas"><h2 id="dfModelBas" style="margin-top:0">Model ve sen</h2>
+      <p class="kucuk">${c.karsilastirilan ? `${c.karsilastirilan} kayıtta modelin tahmini gözleminle karşılaştırıldı: <b>${c.uyum} uyuştu</b>, <b>${c.uyumsuz.length} uyuşmadı</b>.` : `Henüz karşılaştırma yok: bir dürbün hedefi kaydederken "Görebildin mi?" alanını doldur.`}</p>
+      ${c.uyumsuz.length ? `<p class="kucuk soluk" style="margin-bottom:4px">Uyuşmayanlar:</p><ul class="kucuk model-uyumsuz">${c.uyumsuz.slice(0, 20).map(satir).join('')}</ul>` : ''}
+      ${ayar}</section>`;
+  }
+  function modelTikla(e) {
+    const b = e.target.closest('button[data-is]'); if (!b) return;
+    if (b.dataset.is === 'ayar-uygula') { const d = Number(b.dataset.delta); if (Number.isFinite(d) && Math.abs(d) <= 3) U.yaz('gorKayma', d); }   // tavan 3: Urania'nın seçimi
+    else if (b.dataset.is === 'ayar-kaldir') U.sil('gorKayma');
+    else return;
+    listeYaz();
+    el.querySelector('#dfModelBas').focus();
+  }
+
   /* ---------- Biçim yardımcıları ---------- */
   /* Saat dilimi: formdaki saat ve listedeki saat aynı dilimde olmalı. Her kayıt kendi konumunun
      diliminde gösterilir (kayıtta yoksa şu anki konumun dilimi); cihazın dilimi kullanılmaz. */
@@ -165,10 +240,13 @@
           <div class="alan"><label for="dfAlet">Neyle?</label><select id="dfAlet">${ALETLER.map(a => `<option>${a}</option>`).join('')}</select></div>
           <div class="alan"><label for="dfKosul">Gökyüzü</label><select id="dfKosul">${KOSULLAR.map(a => `<option>${a}</option>`).join('')}</select></div>
         </div>
+        <div class="alan" id="dfGordunAlan" hidden><label for="dfGordun">Görebildin mi? <span class="soluk kucuk">(isteğe bağlı; modelin tahminiyle karşılaştırılır)</span></label>
+          <select id="dfGordun"><option value="">— boş —</option><option value="gordum">Gördüm</option><option value="zor">Zor gördüm</option><option value="goremedim">Göremedim</option></select></div>
         <div class="alan"><label for="dfNot">Not</label><textarea id="dfNot" rows="4" maxlength="2000" placeholder="Ne gördün, nasıl görünüyordu, neyi fark ettin?"></textarea></div>
         <p class="soluk kucuk">Konum: <span id="dfKonum"></span>. Ay'ın evresi ve cismin yüksekliği kaydederken otomatik eklenir.</p>
         <div class="cip-grup"><button type="submit" class="dugme dolu" id="dfKaydet">Kaydet</button><button type="button" class="dugme" id="dfVazgec">Vazgeç</button></div>
       </form>
+      <div id="dfModel"></div>
       <div id="dfListe"></div>
       <details class="aciklama" style="margin-top:28px">
         <summary>Yedekle ve geri yükle</summary>
@@ -178,7 +256,12 @@
       </details>`;
     el.querySelector('#dfYeni').addEventListener('click', () => formAc(null));
     el.querySelector('#dfVazgec').addEventListener('click', vazgec);
-    el.querySelector('#dfCisim').addEventListener('change', () => { el.querySelector('#dfDigerAlan').hidden = el.querySelector('#dfCisim').value !== 'diger'; });
+    el.querySelector('#dfCisim').addEventListener('change', () => {
+      const v = el.querySelector('#dfCisim').value;
+      el.querySelector('#dfDigerAlan').hidden = v !== 'diger';
+      el.querySelector('#dfGordunAlan').hidden = !v.startsWith('hedef:');   // v46: yalnız dürbün hedeflerinde
+    });
+    el.querySelector('#dfModel').addEventListener('click', modelTikla);
     el.querySelector('#dfForm').addEventListener('submit', e => { e.preventDefault(); formKaydet(); });
     el.querySelector('#dfListe').addEventListener('click', listeTikla);
     el.querySelector('#dfIndir').addEventListener('click', yedekIndir);
@@ -205,6 +288,8 @@
     el.querySelector('#dfZaman').value = yerelGirdi(formAn, formDilim);
     secDeger(el.querySelector('#dfAlet'), kayit ? kayit.alet : U.oku('defterSonAlet', '7×50 dürbün'));
     secDeger(el.querySelector('#dfKosul'), kayit ? kayit.kosul : 'Berrak');
+    el.querySelector('#dfGordun').value = kayit && GOZLEM_AD[kayit.gozlem] ? kayit.gozlem : '';
+    el.querySelector('#dfGordunAlan').hidden = !sec.value.startsWith('hedef:');
     el.querySelector('#dfNot').value = kayit ? (kayit.not || '') : '';
     const k = kayit ? kayit.konum : U.konum();
     /* Cihazın saati başka dilimdeyse formdaki saatin hangi dilimde olduğu yazılır */
@@ -265,6 +350,15 @@
       konum,
       otomatik: otomatik(cisim, zaman, konum)
     };
+    /* v46: dürbün hedefi kayıtlarında gözlem sonucu (isteğe bağlı) ve kayıt anındaki model tahmini (girdileriyle).
+       Düzenlemede saat ve hedef değişmediyse eski tahmin korunur (kayıt anındaki hâliyle kalsın). */
+    if (cisim.anahtar.startsWith('hedef:')) {
+      const g = el.querySelector('#dfGordun').value;
+      if (GOZLEM_AD[g]) kayit.gozlem = g;
+      const ayni = eski && eski.model && eski.zaman === kayit.zaman && eski.cisim.anahtar === kayit.cisim.anahtar;
+      const m = ayni ? eski.model : modelTahmini(cisim.anahtar.slice(6), zaman, konum);
+      if (m) kayit.model = m;
+    }
     /* Düzenlemede eski kaydın tahmini bulut/yağış değerleri korunur: o saatin tahmini artık önbellekte olmayabilir */
     if (eski && eski.otomatik) {
       ['bulut', 'yagisOl'].forEach(a => { if (kayit.otomatik[a] == null && eski.otomatik[a] != null && eski.zaman === kayit.zaman) kayit.otomatik[a] = eski.otomatik[a]; });
@@ -325,6 +419,7 @@
       if (!g) { g = { anahtar, ogle, z, ls: [] }; gruplar.push(g); }
       g.ls.push(k);
     });
+    modelKarti(ls);
     el.querySelector('#dfListe').innerHTML = gruplar.map(g => `
       <h2>${U.kacis(bicim(g.z, 'gun').format(dkYuvarla(g.ogle)))} gecesi${g.z !== simdiDilim ? ` <span class="kucuk soluk">(${U.kacis(U.dilimAdi(g.z))})</span>` : ''}</h2>
       <ul class="liste">${g.ls.map(k => {
@@ -334,6 +429,8 @@
         if (o.ayOran != null) parca.push('Ay %' + o.ayOran + (o.ayAlt != null && o.ayAlt < 0 ? ' (batmıştı)' : ''));
         if (o.bulut != null) parca.push('tahmini bulut %' + o.bulut);
         if (o.yagisOl != null && o.yagisOl > 0) parca.push('yağış olasılığı %' + o.yagisOl);
+        if (k.model && k.model.etiket) parca.push('model: ' + ((window.Gorunurluk && Gorunurluk.ETIKET_AD[k.model.etiket]) || k.model.etiket) + (k.model.gok != null ? ' (gök ' + U.sayi(k.model.gok, 1) + ')' : ''));
+        if (GOZLEM_AD[k.gozlem]) parca.push('sen: ' + GOZLEM_AD[k.gozlem]);
         return `<li data-id="${U.kacis(k.id)}" tabindex="-1"><span class="ad">${U.kacis(k.cisim.ad)}</span><span class="sag kucuk soluk">${U.kacis(k.konum.ad || '')}</span>
           <span class="alt">${parca.map(U.kacis).join(' · ')}${k.not ? `<span class="defter-not">${U.kacis(k.not)}</span>` : ''}
           <span class="cip-grup" style="margin-top:6px"><button type="button" class="bag" data-is="duzenle" data-id="${U.kacis(k.id)}" aria-label="${U.kacis(k.cisim.ad)} kaydını düzenle">Düzenle</button><button type="button" class="bag" data-is="sil" data-id="${U.kacis(k.id)}" aria-label="${U.kacis(k.cisim.ad)} kaydını sil">Sil</button></span></span></li>`;
@@ -361,7 +458,8 @@
       metinMi(k.alet, 40) && metinMi(k.kosul, 40) && (k.not == null || metinMi(k.not, 2000)) &&
       k.konum && typeof k.konum.ad === 'string' && sayiMi(k.konum.enlem) && sayiMi(k.konum.boylam) &&
       Math.abs(k.konum.enlem) <= 90 && Math.abs(k.konum.boylam) <= 180 &&
-      (k.otomatik == null || typeof k.otomatik === 'object'));
+      (k.otomatik == null || typeof k.otomatik === 'object') &&
+      (k.gozlem == null || !!GOZLEM_AD[k.gozlem]) && (k.model == null || typeof k.model === 'object'));   // v46 alanları isteğe bağlı: eski yedekler olduğu gibi yüklenir
   }
   /* İçe alınan kaydın yalnız bilinen alanları saklanır */
   function temizle(k) {
@@ -372,8 +470,17 @@
     const konum = { ad: k.konum.ad.slice(0, 120), enlem: k.konum.enlem, boylam: k.konum.boylam, yukseklik: sayiMi(k.konum.yukseklik) ? k.konum.yukseklik : 0 };
     if (metinMi(k.konum.saatDilimi, 64) && gecerliDilim(k.konum.saatDilimi)) konum.saatDilimi = k.konum.saatDilimi;
     /* Zaman UTC ISO biçimine çevrilir ("+03:00" ofsetli dize sıralamayı ve "son görülme"yi bozmasın) */
-    return { id: k.id, zaman: new Date(k.zaman).toISOString(), cisim: { anahtar: k.cisim.anahtar, ad: k.cisim.ad }, alet: k.alet, kosul: k.kosul, not: k.not || '',
+    const t = { id: k.id, zaman: new Date(k.zaman).toISOString(), cisim: { anahtar: k.cisim.anahtar, ad: k.cisim.ad }, alet: k.alet, kosul: k.kosul, not: k.not || '',
       konum, otomatik: oo };
+    /* v46: gözlem sonucu ve model tahmini (yalnız bilinen alanlar) */
+    if (GOZLEM_AD[k.gozlem]) t.gozlem = k.gozlem;
+    if (k.model && typeof k.model === 'object') {
+      const m = {};
+      ['fark', 'farkHam', 'kayma', 'gok', 'gokHedef', 'ayOran', 'ayAlt', 'ayAcisi', 'alt', 'k', 'aod', 'gozBebegi', 'F'].forEach(a => { if (sayiMi(k.model[a])) m[a] = k.model[a]; });
+      ['etiket', 'yol', 'neden', 'gokKaynak', 'surum'].forEach(a => { if (metinMi(k.model[a], 80)) m[a] = k.model[a]; });
+      if (m.etiket) t.model = m;
+    }
+    return t;
   }
   /* Yedek durum satırı: hata iletisi uyarı renginde (başarı iletisinden ayırt edilsin) */
   function yedekDurum(metin, hatali) {
@@ -411,8 +518,11 @@
   async function ilk(kok) {
     el = kok;
     el.innerHTML = '<p class="bos">Defter açılıyor…</p>';
-    const [yildizlar, takimyildizlar, hedefler, meteor, gorevler] = await Promise.all([U.veri('yildizlar'), U.veri('takimyildiz'), U.veri('hedefler'), U.veri('meteor'), U.veri('gorevler').catch(() => null)]);
-    veri = { yildizlar, takimyildizlar, hedefler: hedefler.hedefler, meteor, gorevler };
+    const [yildizlar, takimyildizlar, hedefler, meteor, gorevler, boyut, uye, profilM31] = await Promise.all([U.veri('yildizlar'), U.veri('takimyildiz'), U.veri('hedefler'), U.veri('meteor'), U.veri('gorevler').catch(() => null),
+      U.veri('hedef_boyut').catch(() => null), U.veri('kume_uyeleri').catch(() => null), U.veri('profil_m31').catch(() => null)]);
+    veri = { yildizlar, takimyildizlar, hedefler: hedefler.hedefler, meteor, gorevler,
+      hedefBoyut: boyut ? boyut.hedefler : null, kumeUyeleri: uye ? uye.kumeler : null, profil: profilM31 ? { M31: profilM31 } : null };   // v46: kayıt anındaki model tahmini için
+    if (window.Gorunurluk) Gorunurluk.izgaraYukle().catch(() => { /* atlas yoksa kaydırıcıdan türetilir */ });
     iskelet();
     goster(kok, location.hash.split('/').slice(1).join('/'));
   }
@@ -431,5 +541,5 @@
   }
 
   U.modul('defter', { ilk, goster });
-  window.Defter = { kayitlar, sonGorulme };
+  window.Defter = { kayitlar, sonGorulme, karsilastir, kisiselAyar, modelTahmini };
 })();

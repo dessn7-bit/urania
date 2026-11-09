@@ -114,6 +114,78 @@ test('Değerlendirme: parlak yıldız şehirde görünür, M33 Ataşehir göğü
   expect(g.join(' ')).toMatch(/Yükseklik 60°/);
 });
 
+/* ---- 2b) v46: açık küme üye yolu, M31 profil yolu, M42 merkez yıldızları, "belirsiz" kuralı ---- */
+const VERI = {
+  hedefBoyut: JSON.parse(fs.readFileSync(path.join(kok, 'veri', 'hedef_boyut.json'), 'utf8')).hedefler,
+  kumeUyeleri: JSON.parse(fs.readFileSync(path.join(kok, 'veri', 'kume_uyeleri.json'), 'utf8')).kumeler,
+  profil: { M31: JSON.parse(fs.readFileSync(path.join(kok, 'veri', 'profil_m31.json'), 'utf8')) }
+};
+const HEDEFLER = JSON.parse(fs.readFileSync(path.join(kok, 'veri', 'hedefler.json'), 'utf8')).hedefler;
+const hv = id => G.hedefVerisi(HEDEFLER.find(h => h.id === id), VERI);
+
+test('v46: Yeni Ay, 17,9 gök, 40° yükseklik — M44 görünür (üye yolu), M42 ve M31 görünmez değil; küresel kümeler yaygın yol; M8 belirsiz', () => {
+  const ortam = { Vzen: 17.9, Z: 50, k: 0.30, ay: null, p: G.gozBebegi(), F: 2, alet: G.DURBUN };
+  const m44 = G.degerlendir(hv('M44'), ortam);
+  expect(m44.etiket).toBe('gorunur');
+  expect(m44.yol).toBe('uye');
+  expect(m44.hedef.sayi).toBeGreaterThanOrEqual(3);
+  /* M44'ün en parlak üyeleri SIMBAD V: ε Cnc 6,29, 39 Cnc 6,39, 40 Cnc 6,61 (görev metni) — veri dosyasıyla uyumlu */
+  const u = VERI.kumeUyeleri.M44.uyeler.map(x => x.V);
+  expect(u[0]).toBeCloseTo(6.29, 2); expect(u[1]).toBeCloseTo(6.39, 2);
+  expect(VERI.kumeUyeleri.M44.uyeler.every(x => x.uyelik >= 50 && x.kaynaklar.length)).toBe(true);
+  const m42 = G.degerlendir(hv('M42'), ortam);
+  expect(m42.etiket).not.toBe('gorunmez');
+  expect(m42.yol).toBe('uye');
+  expect(VERI.kumeUyeleri.M42.uyeler[0].ad).toBe('* tet01 Ori C');
+  expect(VERI.kumeUyeleri.M42.uyeler[0].V).toBeCloseTo(5.13, 2);
+  const m31 = G.degerlendir(hv('M31'), ortam);
+  expect(m31.etiket).not.toBe('gorunmez');
+  expect(m31.yol).toBe('profil');
+  /* Küresel kümeler: üye yolu yok, yaygın ışık */
+  for (const id of ['M3', 'M5', 'M13', 'M22', 'M92']) { const s = G.degerlendir(hv(id), ortam); expect(s.yollar.map(y => y.yol), id).toEqual(['yaygin']); }
+  /* M8: parlak çekirdek için yayımlanmış iç bölge ölçümü yok → "görünmez" yerine "belirsiz" */
+  const m8 = G.degerlendir(hv('M8'), ortam);
+  expect(m8.etiket).toBe('belirsiz');
+  expect(m8.neden).toBe('çekirdek verisi yok');
+  /* Açık küme ama üye verisi yoksa da "belirsiz" */
+  const sahte = Object.assign({}, hv('M44'), { uyeler: undefined });
+  expect(G.degerlendir(sahte, ortam).etiket).toBe('belirsiz');
+  /* Gerekçe kullanılan yolu söyler */
+  expect(G.gerekce(m44, ortam).join(' ')).toMatch(/En parlak üyeler yolu/);
+  expect(G.gerekce(m31, ortam).join(' ')).toMatch(/İç bölge profili yolu/);
+  expect(G.gerekce(m44, ortam).join(' ')).toMatch(/Öteki yol/);
+});
+
+test('v46: M31 profil yolu Crumey §3.1 ile uyumlu — çıplak göz, F = 2: eşiğe tam değdiği gök ≈ 19,2 kadir/yay sn²; profil verisi de Vaucouleurs 1958', () => {
+  const m31 = hv('M31');
+  expect(m31.profil.satirlar.length).toBeGreaterThan(25);
+  expect(m31.profil.bv).toBeCloseTo(0.91, 2);
+  let lo = 17, hi = 22;
+  for (let i = 0; i < 50; i++) {
+    const m = (lo + hi) / 2;
+    const s = G.degerlendir(m31, { Vzen: m, Z: 0, k: 0, ay: null, p: 7, F: 2, alet: G.CIPLAK });
+    if (s.yollar.find(y => y.yol === 'profil').fark >= 0) hi = m; else lo = m;
+  }
+  const profilGok = (lo + hi) / 2;
+  expect(Math.abs(profilGok - 19.2)).toBeLessThan(0.15);
+  /* Ortalama yüzey parlaklığı yolu aynı koşulda belirgin biçimde daha karanlık gök ister (v45 kötümserliği, ≥ 0,5 kadir) */
+  let lo2 = 17, hi2 = 22.5;
+  for (let i = 0; i < 50; i++) { const m = (lo2 + hi2) / 2; const s = G.degerlendir(m31, { Vzen: m, Z: 0, k: 0, ay: null, p: 7, F: 2, alet: G.CIPLAK }); if (s.yollar.find(y => y.yol === 'yaygin').fark >= 0) hi2 = m; else lo2 = m; }
+  expect((lo2 + hi2) / 2 - profilGok).toBeGreaterThan(0.5);
+});
+
+test('v46: 26 hedef, Ay\'sız 21,0 gökte (Z = 30°) Astronomical League "Easy" Messier cisimlerinin hiçbiri görünmez değil', () => {
+  const AL_KOLAY = new Set([2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 15, 16, 17, 18, 22, 23, 24, 25, 27, 29, 31, 34, 35, 36, 37, 38, 39, 41, 42, 44, 45, 46, 47, 48, 50, 52, 55, 67, 92, 93, 103]);
+  const ortam = { Vzen: 21.0, Z: 30, k: 0.30, ay: null, p: G.gozBebegi(), F: 2, alet: G.DURBUN };
+  const sonuclar = HEDEFLER.map(h => ({ id: h.id, s: G.degerlendir(hv(h.id), ortam) }));
+  expect(sonuclar.length).toBe(26);
+  const kolay = sonuclar.filter(x => { const m = /^M(\d+)$/.exec(x.id); return m && AL_KOLAY.has(+m[1]); });
+  expect(kolay.length).toBe(19);
+  expect(kolay.filter(x => x.s.etiket === 'gorunmez').map(x => x.id)).toEqual([]);
+  /* Hiçbir sonuç "hesaplanamadı/ufuk" değil; belirsiz yalnız çekirdek verisi olmayan M8 olabilir */
+  expect(sonuclar.filter(x => !['gorunur', 'zor', 'gorunmez', 'belirsiz'].includes(x.s.etiket))).toEqual([]);
+});
+
 /* ---- 3) Arayüz ---- */
 const AN = new Date('2026-11-09T20:00:00+03:00');
 async function kur(page, s = {}) {
@@ -152,11 +224,12 @@ test('Özet: başucu gök parlaklığı atlastan (Kadıköy) ve bu gecenin en s�
   expect(n).toBeGreaterThan(3);
   const cipler = page.locator('#gkHedef li .gor-ac');
   expect(await cipler.count()).toBe(n);
-  for (const t of await cipler.allInnerTexts()) expect(t).toMatch(/^(görünür|zor|görünmez) \(yaklaşık\)$/);
-  /* Kadıköy göğünde (≈ 17,9) en az bir hedef görünür, en az biri görünmez */
+  for (const t of await cipler.allInnerTexts()) expect(t).toMatch(/^(görünür( \(yıldızları seçilir\))?|zor|görünmez|belirsiz(: [^()]+)?) \(yaklaşık\)$/);
+  /* Kadıköy göğünde (≈ 17,9) en az bir hedef görünür, en az biri görünmez (küresel kümeler), en az bir açık küme üye yoluyla */
   const metinler = await cipler.allInnerTexts();
   expect(metinler.some(t => /^görünür/.test(t))).toBe(true);
   expect(metinler.some(t => /^görünmez/.test(t))).toBe(true);
+  expect(metinler.some(t => /yıldızları seçilir/.test(t))).toBe(true);
   /* Gerekçe: dokununca açılır; gök parlaklığı, Ay, yükseklik, eşik */
   const ilk = satirlar.first();
   await expect(ilk.locator('.gor-kutu')).toBeHidden();
@@ -264,8 +337,8 @@ test('Gizlilik ve CSP: fixture dosyalarında gözlemci alanı yok; CSP connect-s
   expect(b.hedefler.filter(h => h.noktaKaynak).map(h => h.id).sort()).toEqual(['Albireo', 'Alcor', 'Mizar']);
   /* sw.js: yeni dosyalar önbellekte, sürüm v45 */
   const sw = fs.readFileSync(path.join(kok, 'sw.js'), 'utf8');
-  expect(sw).toContain("const SURUM = 'urania-v45'");
-  for (const f of ['./gorunurluk.js', './degisen.js', './veri/gok_parlakligi.u8.gz', './veri/gok_parlakligi.json', './veri/hedef_boyut.json', './veri/durbun_degisenleri.json']) expect(sw).toContain(`'${f}'`);
+  expect(sw).toContain("const SURUM = 'urania-v46'");
+  for (const f of ['./gorunurluk.js', './degisen.js', './veri/gok_parlakligi.u8.gz', './veri/gok_parlakligi.json', './veri/hedef_boyut.json', './veri/durbun_degisenleri.json', './veri/kume_uyeleri.json', './veri/profil_m31.json']) expect(sw).toContain(`'${f}'`);
   /* Elle girilen SQM başlangıçta varsa ilk çizimden itibaren "elle" (atlas beklenmez) */
   await kur(page, { sqm: 20.5 });
   await expect(page.locator('#gkGokParlakligi')).toContainText('yaklaşık 20,5 kadir/yay sn² (elle girilen değer)');

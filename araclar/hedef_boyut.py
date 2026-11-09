@@ -32,6 +32,10 @@ ESLEME = {
     'Mel 111': ('Name', 'Mel111'), 'Cr 399': ('Name', 'Cl399'),
     'Albireo': None, 'Mizar': None, 'Alcor': None
 }
+# v46: parlak çekirdekli bulutsu/galaksilerde ortalama yüzey parlaklığı kötümser kalır; hangi ek yol var?
+#   'profil' = yayımlanmış eş-ışık profili (veri/profil_m31.json), 'yildiz' = merkez yıldızları testi (veri/kume_uyeleri.json),
+#   'yok' = iç bölge için yayımlanmış yüzey parlaklığı bulunamadı → yaygın yol "görünmez" derse etiket "belirsiz: çekirdek verisi yok"
+CEKIRDEK = {'M31': 'profil', 'M42': 'yildiz', 'M8': 'yok'}
 
 
 def indir(ad, klasor):
@@ -121,6 +125,10 @@ def main(argv):
         if anahtar is None:
             kayit['noktaKaynak'] = True
             kayit['kaynak']['not'] = 'yıldız; OpenNGC kapsamı dışında, boyut uygulanmaz'
+        if h['id'] in CEKIRDEK:
+            kayit['cekirdek'] = CEKIRDEK[h['id']]
+            kayit['kaynak']['cekirdek'] = {'profil': 'veri/profil_m31.json (de Vaucouleurs 1958 Tablo 4)', 'yildiz': 'veri/kume_uyeleri.json (SIMBAD, Trapezium üyeleri)',
+                                           'yok': 'iç bölge yüzey parlaklığı için yayımlanmış ölçüm bulunamadı (2026-11-09)'}[CEKIRDEK[h['id']]]
         cikis.append(kayit)
     sonuc = {
         'aciklama': 'Dürbün hedeflerinin boyutu ve parlaklığı (görünürlük eşiği hesabı için). Türetilmiş veri; alan kaynakları her kayıtta.',

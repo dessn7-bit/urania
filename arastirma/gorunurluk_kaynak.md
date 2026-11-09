@@ -222,3 +222,113 @@ F = 2 korundu.
 - Yapay gök parlaklığının başucu uzaklığıyla değişimi doğal gök yasasıyla (KS91 (2)) ölçeklendi; kent göğünde ufka doğru
   artış daha dik olabilir.
 - Ay karşı-konum etkisi (|α| < 7°, ×1.00–1.35) uygulanmadı.
+
+
+---
+
+# v46 (2026-11-09) — modelin düzeltilmesi ve gözlemle karşılaştırma
+
+## 7. Sorun ve düzeltilen kurallar
+
+v45 modeli Ataşehir göğünde (17,9) M44, M42 ve M31 için "görünmez" derken aynı gece dürbün yıldız sınırını 8,9 kadir veriyordu;
+M44'ün en parlak üyeleri 6,3–6,6 kadir (SIMBAD). İki neden: (1) açık kümeler tek yaygın cisim sayılıyordu; (2) parlak çekirdekli
+cisimlerde ortalama yüzey parlaklığı kullanılıyordu (v45 raporu M31 için ≈ 1,5 kadir kötümser ölçmüştü).
+
+| Kural | v45 | v46 |
+|---|---|---|
+| Açık kümeler (hedefler.json türü `acik_kume`: M45, M44, M6, M7, M11, M35, M36, M37, M38, M39, NGC 869, NGC 884, Mel 111; `yildiz_kumesi_asterizm`: Cr 399) | yalnız yaygın ışık yolu | + **üye yolu**: en parlak 5 üyenin V'si (SIMBAD); o gecenin nokta kaynak sınırından (Crumey (68)) parlak üye sayısı ≥ 3 → "görünür (yıldızları seçilir)". Sonuç iki yolun iyisi; gerekçe kutusu yolu yazar. |
+| Küresel kümeler (M3, M5, M13, M22, M92) | yaygın | yaygın (7×50'de yıldızlara ayrılmaz; üye yolu eklenmedi) |
+| M31 | ortalama yüzey parlaklığı | **profil yolu**: de Vaucouleurs 1958 eş-ışık eğrileri (alan, bütünleşik B), B − V = 0,91 ile V; her iç bölge Crumey (84) sınırıyla karşılaştırılır, en iyi iç bölge sonucu verir (Crumey 2014 §3.1 yöntemi) |
+| M42 | ortalama yüzey parlaklığı | + merkez yıldızları testi (Orion Bulutsusu Kümesi üyeleri: θ¹ Ori C V 5,13, θ² Ori B 6,38, θ² Ori A 6,39, θ¹ Ori D 6,70, θ¹ Ori A 6,73) — kümelerle aynı kural |
+| M8 | yaygın | yaygın; iç bölge (Kum Saati) için yayımlanmış yüzey parlaklığı ve boyut bulunamadı → yaygın yol "görünmez" derse **"belirsiz: çekirdek verisi yok"** |
+| Genel | — | veri eksikse ya da gök modelin kapsamı dışındaysa kesin "görünmez" yazılmaz, **"belirsiz"** + neden |
+| Zor bandı | ±0,5 kadir (Urania'nın seçimi) | aynı; üye yolunda "görünür" sınırı görev kuralı gereği fark ≥ 0 (3. parlak üye sınırın üstünde), "zor" −0,5 < fark < 0 (Urania'nın seçimi) |
+
+## 8. Küme üyeleri — kaynaklar (veri/kume_uyeleri.json, araclar/kume_uyeleri.py)
+
+| İddia | Kaynak | İfade / yöntem |
+|---|---|---|
+| V parlaklıkları | SIMBAD TAP aynası https://simbad.cfa.harvard.edu/simbad/sim-tap (ADQL, `allfluxes.V`) [B, 2026-11-09] | ε Cnc 6,29; 39 Cnc 6,39; 40 Cnc 6,61 (görev metnindeki değerlerle birebir; 40 Cnc üyeliği %75–100 ile geçerli ama parlaklık sırasında 6. olduğu için "en parlak 5" dosyasına girmedi — 4. 35 Cnc 6,56, 5. HD 73598 6,60); θ¹ Ori C 5,13 |
+| Üyelik | SIMBAD `h_link` tablosu (child, parent, membership %, link_bibcode): yayımlanmış üyelik kataloglarından bağlar; her yıldızda kaynak makalelerin ADS bibcode'ları saklanır (örn. 2018A&A...618A..93C Cantat-Gaudin ve ark. 2018; 2020A&A...633A..99C Cantat-Gaudin & Anders 2020; 2024A&A...691A..28K Hunt & Reffert; 1997AJ....113.1733H Hillenbrand 1997 ONC; 2007ApJS..172..663S Stauffer 2007 Pleiades; 2001A&A...373..159C Mel 111) | kural: en az bir kaynakta üyelik ≥ %50; aynı yıldızın birden çok kaynağı birleştirilir |
+| Cr 399 | h_link'te üye yok; Cr 399 fiziksel küme değil, asterizm | desen yıldızları SIMBAD koni taraması (0,6°, V < 7,5, yalnız yıldız türleri): 4 Vul 5,16; 5 Vul 5,59; HD 182955 5,87; HD 182761 6,29; HD 182422 6,39 — "üyelik" kataloğu yok, dosyada `asterizm: true` ve açıklama |
+| M42 merkez yıldızları | SIMBAD `NAME ONC` (Orion Nebula Cluster) h_link üyeleri; Trapezium bu kümenin çekirdeği ('NAME Ori Trapezium' h_link'inde yalnız θ¹ Ori C parlak) | θ¹ Ori C %92–100, θ² Ori B %99, θ² Ori A %80, θ¹ Ori D %99–100, θ¹ Ori A %99 |
+| Atıf | SIMBAD: Wenger ve ark. 2000, A&AS 143, 9 | veri dosyasında |
+
+En parlak 5 üye (V): M45 2,87 3,63 3,70 3,87 4,18 · M44 6,29 6,39 6,39 6,56 6,60 · M6 5,60 6,37 6,45 6,75 6,77 · M7 5,85 5,90 5,96 6,05 6,06 ·
+M11 8,56 10,51 10,54 10,57 10,77 · M35 7,34 7,38 7,42 8,10 8,14 · M36 8,44 8,79 8,94 8,96 9,09 · M37 9,16 9,32 9,82 10,00 10,27 ·
+M38 9,10 9,41 9,44 9,46 9,50 · M39 6,57 6,83 6,83 7,02 7,36 · NGC 869 6,57 6,70 7,69 7,79 7,83 · NGC 884 6,48 6,98 7,69 7,85 7,96 ·
+Mel 111 4,34 4,81 4,86 4,94 4,95 · Cr 399 5,16 5,59 5,87 6,29 6,39 · M42 (ONC) 5,13 6,38 6,39 6,70 6,73.
+Not: M11, M36, M37, M38'in üyeleri 8,4–9,2 ve sönük; kentte üye yolu yardımcı olmaz, yaygın yol kalır. γ Com (Mel 111) üyeliği
+2001 kaynağından; sonucu etkilemez (12, 7, 31, 14 Com üyeleri yeterli).
+
+## 9. M31 profil yolu — kaynaklar (veri/profil_m31.json)
+
+| İddia | Kaynak | İfade |
+|---|---|---|
+| Eş-ışık eğrisi içi alan A (yay dk²) ve bütünleşik B kadiri m(r) | de Vaucouleurs 1958, ApJ 128, 465, Table 4 "Adopted luminosity profiles and integrated luminosities" [B: ADS taraması 1958ApJ...128..465D s. 476] | 31 satır (B 16,1 … 26,8); örn. B 22,55 → A 1020, m 5,18; B 23,05 → A 2180, m 4,835; m(∞) 4,36 |
+| B − V = 0,91 | aynı makale, özet | "B − V = +0.91" (bütünleşik; renk eğimi yok sayıldı — yaklaşım) |
+| Yöntem | Crumey 2014 §3.1, Fig. 12 | "Data points show the enclosed area and average surface brightness for successive isophotes … threshold curve Eq. 58 … the target is at threshold" ; "A similar procedure can be applied to M31 using data from De Vaucouleurs (1958). It is found that with F = 2 the galaxy should become just visible at approximately μsky = 19.2 mag arcsec-2" |
+| Yeniden üretim | testler/gorunurluk.spec.js | çıplak göz, F = 2, Z = 0, k = 0: profil yolunun eşiğe değdiği gök **19,16** (Crumey 19,2); en iyi iç bölge A = 1020 yay dk² (B 22,55 eş-ışık eğrisi), V 4,27 (B 5,18 — Crumey'nin "5.2" değeri B kadiridir). Aynı koşulda yaygın yol 20,14 ister (fark 0,98 kadir). Crumey'nin "visible area approximately 2100 arcmin²" ifadesi Tablo 4'teki 2a×2b ≈ 54,5′×20′ ≈ 1090 yay dk² alanla değil A = 2180 satırıyla örtüşür; alan tanımı farkı askıda. |
+| 7×50, Ataşehir 17,9, 40° (Z = 50°), k = 0,30, göz bebeği 6,5 | hesap (Node, gorunurluk.js) | profil yolu görünür (fark +1,18): seçilen en iyi iç bölge B 19,8 eş-ışık eğrisi → 19,2 yay dk², V 6,03, görünen yüzey 18,6 kadir/yay sn² ↔ bu büyüklükte eşik 19,78 (M = 7 görünen alanı 49 kat büyütür, Crumey (79)–(81)); B 20,3 satırı (36,9 yay dk²) eşik 20,12, fark +1,15 |
+
+## 10. M42 ve M8 — çekirdek
+
+- M42: iç bölge (Huygens bölgesi) için yayımlanmış yüzey parlaklığı ve boyut ölçümü aranmadı/bulunmadı; görev gereği merkez
+  yıldızları testi uygulandı (§8). Yaygın yol 17,9'da görünmez der; üye yolu görünür (θ¹ Ori C, θ² Ori A/B, θ¹ Ori D, θ¹ Ori A hepsi 8,9 sınırının
+  üstünde) → etiket "görünür (yıldızları seçilir)". Bu etiket bulutsunun kendisini değil merkez yıldızlarını görmeyi anlatır; gerekçe kutusunda yazar.
+- M8: iç bölge ölçümü bulunamadı → yaygın yol görünmez dediğinde "belirsiz: çekirdek verisi yok" (askıda).
+
+## 11. Defter "Model ve sen" — yöntem (Urania'nın kendi seçimi, kaynaklı değil)
+
+- Dürbün hedefi (`hedef:`) kaydında isteğe bağlı alan: gördüm / zor gördüm / göremedim (varsayılan boş).
+- Kayıt anında model tahmini girdileriyle saklanır (`kayit.model`): etiket, yol, fark, farkHam (ayarsız fark), kayma, gök (başucu, kaynağı),
+  hedef yönündeki gök, Ay oranı/yüksekliği/açısı, yükseklik, k, AOD, göz bebeği, F, sürüm. Düzenlemede saat ve hedef değişmezse korunur.
+- Karşılaştırma: gördüm ↔ görünür, zor gördüm ↔ zor, göremedim ↔ görünmez; "belirsiz" ve "ufuk" tahminleri karşılaştırılmaz.
+  Kart: kaç kayıt karşılaştırıldı, kaç uyuştu, uyuşmayanların listesi.
+- Kişisel ayar (≥ 10 karşılaştırmalı kayıt): tek katsayı = kadir kayması δ. −2 … +2 arası 0,1 adımla, etiketle(farkHam + δ) ile gözlem sınıfının
+  uyuştuğu kayıt sayısını en çok yapan δ; eşitlikte |δ| küçük olan. Öneri yalnız uyumu artırıyorsa; yalnız "Ayarı uygula" ile `gorKayma`
+  anahtarına yazılır; "Ayarı kaldır" siler. Uygulanınca tüm yollarda fark'a eklenir (gerekçe kutusu yazar). Veriler yalnız cihazda; kayıtlar
+  mevcut JSON yedeğine girer, eski (v1) yedekler alan eksikliğiyle sorunsuz yüklenir (testli).
+
+## 12. Yeni 26 hedef tablosu (Ay'sız, Z = 30°, k = 0,30, F = 2, göz bebeği 6,5; G görünür, Z zor, X görünmez, B belirsiz) ve v45 farkları
+
+| Hedef | 17,9'da yol | 21,0 | 20,0 | 17,9 | v45 (21/20/17,9) | AL |
+|---|---|---|---|---|---|---|
+| M45 | üye | G | G | G | GGG | kolay |
+| M42 | üye | G | G | G | GZX → değişti | kolay |
+| M31 | profil | G | G | G | GZX → değişti | kolay |
+| M44 | üye | G | G | G | GZX → değişti | kolay |
+| M13 | yaygın | G | G | Z | GGZ | kolay |
+| M8 | yaygın | Z | Z | B | ZZX → değişti | kolay |
+| M7 | üye | G | G | G | GGG | kolay |
+| M6 | üye | G | G | G | GGG | kolay |
+| M22 | yaygın | G | G | G | GGG | kolay |
+| M35 | üye | G | G | G | GGZ → değişti | kolay |
+| M36 | yaygın | G | G | G | GGG | kolay |
+| M37 | yaygın | G | G | G | GGG | kolay |
+| M38 | yaygın | G | G | Z | GGZ | kolay |
+| M39 | üye | G | G | G | GGG | kolay |
+| M11 | yaygın | G | G | G | GGG | kolay |
+| M27 | yaygın | G | G | Z | GGZ | kolay |
+| M92 | yaygın | G | G | X | GGX | kolay |
+| M3 | yaygın | G | G | X | GGX | kolay |
+| M5 | yaygın | G | G | Z | GGZ | kolay |
+| NGC 869 | yaygın | G | G | G | GGG | — |
+| NGC 884 | yaygın | G | G | G | GGG | — |
+| Mel 111 | üye | G | G | G | GZX → değişti | — |
+| Cr 399 | üye | G | G | G | GGX → değişti | — |
+| Albireo | nokta | G | G | G | GGG | — |
+| Mizar | nokta | G | G | G | GGG | — |
+| Alcor | nokta | G | G | G | GGG | — |
+
+AL "kolay" 19 cisim: görünmez olmayan 21,0'da 19/19, 20,0'da 19/19, 17,9'da 17/19 (M92 ve M3, küresel kümeler, görünmez). 7 hedefin
+etiketi değişti (M42, M31, M44, M35, Mel 111, Cr 399 kentte görünür; M8 görünmez → belirsiz). Hiçbir hedef v45'e göre kötüleşmedi.
+M92 ve M3'ün 17,9'daki "görünmez" farkları −0,52 ve −0,58: ±0,5 bandının hemen dışında (bıçak sırtı); gerekçe kutusu farkı yazar.
+
+## 13. Askıda (v46)
+- M8 iç bölge yüzey parlaklığı (yayımlanmış ölçüm bulunamadı) → "belirsiz".
+- Crumey'nin M31 "görünür alan ≈ 2100 yay dk²" ifadesi ile Tablo 4 alan tanımı arasındaki fark (bizim 19,16 eşiği 1020 yay dk² satırında).
+- M31 profilinde renk eğimi yok sayıldı (tek B − V = 0,91).
+- Cr 399 için üyelik kataloğu yok (asterizm); desen yıldızları koni taramasından.
+- γ Com'un Mel 111 üyeliği (2001 kaynağı) tartışmalı olabilir; sonucu etkilemiyor.
+- Kişisel ayar yöntemi (kadir kayması, uyum sayısını en çoklama) Urania'nın seçimidir, kaynaklı değildir.

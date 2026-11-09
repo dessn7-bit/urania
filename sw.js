@@ -1,6 +1,6 @@
 /* sw.js — çevrimdışı çalışma. Ağ önce (güncel sürüm gelsin), ağ yoksa önbellek.
    Dosya eklenince ASSETS'e eklenmeli ve SURUM artırılmalı. */
-const SURUM = 'urania-v45';
+const SURUM = 'urania-v46';
 const ASSETS = [
   './', './index.html', './stil.css', './manifest.json',
   './icon-192.png', './icon-512.png', './icon-maskable-512.png',
@@ -10,7 +10,7 @@ const ASSETS = [
   './veri/deney/mevsim.json', './veri/deney/analemma.json', './veri/deney/eratosthenes.json', './veri/deney/paralaks.json', './veri/deney/durbun.json', './veri/deney/astrofoto.json', './veri/deney/roket.json', './veri/deney/hohmann.json', './veri/deney/yasanabilir.json', './veri/deney/ortme.json',
   './veri/yildizlar.json', './veri/takimyildiz.json', './veri/hedefler.json', './veri/meteor.json',
   './veri/fizik.json', './veri/dersler.json', './veri/sozluk.json', './veri/ortme_yildiz.json', './veri/algol.json', './veri/deney_rehber.json', './veri/deney_veri.json', './veri/sinavlar.json', './veri/gorevler.json', './veri/haberler.json',
-  './veri/hedef_boyut.json', './veri/durbun_degisenleri.json', './veri/gok_parlakligi.json', './veri/gok_parlakligi.u8.gz',
+  './veri/hedef_boyut.json', './veri/durbun_degisenleri.json', './veri/gok_parlakligi.json', './veri/gok_parlakligi.u8.gz', './veri/kume_uyeleri.json', './veri/profil_m31.json',
   './font/spectral-latin-400-normal.woff2', './font/spectral-latin-ext-400-normal.woff2',
   './font/spectral-latin-400-italic.woff2', './font/spectral-latin-ext-400-italic.woff2',
   './font/spectral-latin-600-normal.woff2', './font/spectral-latin-ext-600-normal.woff2',

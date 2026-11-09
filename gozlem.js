@@ -459,33 +459,27 @@
   /* Başucunun Ay'sız gök parlaklığı (kadir/yay sn²) ve kaynağı: elle > atlas > kaydırıcıdan türetme */
   function gokBasucu() {
     if (!window.Gorunurluk) return null;
-    if (durum.sqmElle != null) return { kadir: durum.sqmElle, kaynak: 'elle' };
     const k = U.konum();
-    const g = durum.gokIzgara === 'hazir' ? Gorunurluk.gokParlakligi(k.enlem, k.boylam) : null;
-    if (g) return { kadir: g.kadir, kaynak: 'atlas', Lart: g.Lart };
-    /* Atlas yok (pencere dışı ya da yüklenemedi): "görünen en sönük yıldız" kaydırıcısından, Crumey (53) tersiyle */
-    return { kadir: Gorunurluk.kadirdenGok(durum.limitKadir, Gorunurluk.F_VARSAYILAN, gozBebegi()), kaynak: 'kaydirici' };
+    /* elle SQM > atlas (yüklendiyse) > "görünen en sönük yıldız" kaydırıcısından türetme (Gorunurluk.gokBasucuSec, Defter ile ortak) */
+    return Gorunurluk.gokBasucuSec({ sqmElle: durum.sqmElle, enlem: k.enlem, boylam: k.boylam, limitKadir: durum.limitKadir, p: gozBebegi() });
   }
   function gozBebegi() { return durum.gozBebegi != null ? durum.gozBebegi : Gorunurluk.gozBebegi(); }
   function sonumlemeK() {
     const aod = window.HavaKart && Number.isFinite(HavaKart.sonAod) ? HavaKart.sonAod : null;
     return Gorunurluk.sonumleme({ yukseklik: U.konum().yukseklik || 0, aod });
   }
-  /* t anında alt/az yönüne bakan gözlemcinin ortamı */
+  /* Kişisel ayar (Defter "Model ve sen" kartından, yalnız kullanıcı onayladıysa; kadir kayması) */
+  function kisiselKayma() { const v = Number(U.oku('gorKayma', 0)); return Number.isFinite(v) && Math.abs(v) <= 3 ? v : 0; }   // tavan 3 kadir: Urania'nın seçimi (öneri aralığı ±2; bozuk depo değerine karşı)
+  /* t anında alt/az yönüne bakan gözlemcinin ortamı (Gorunurluk.ortamHazirla: Ay, sönümleme) */
   function ortamKur(t, alt, az) {
     const b = gokBasucu(); if (!b || !durum.gzl) return null;
-    const ay = G.cisimAltAz('Moon', t, durum.gzl);
-    const ayBilgi = ay.alt > 0 ? { alfa: A.Illumination('Moon', t).phase_angle, rho: Gorunurluk.acisalUzaklik(alt, az, ay.alt, ay.az), Zm: 90 - ay.alt } : null;
-    const son = sonumlemeK();
-    return { Vzen: b.kadir, kaynak: b.kaynak, Z: 90 - alt, k: son.k, kKaynak: son.kaynak, ay: ayBilgi, p: gozBebegi(), F: Gorunurluk.F_VARSAYILAN, alet: Gorunurluk.DURBUN };
+    const aod = window.HavaKart && Number.isFinite(HavaKart.sonAod) ? HavaKart.sonAod : null;
+    return Gorunurluk.ortamHazirla({ G, A, gzl: durum.gzl, zaman: t, alt, az, Vzen: b.kadir, kaynak: b.kaynak, aod, yukseklik: U.konum().yukseklik || 0, p: gozBebegi(), F: Gorunurluk.F_VARSAYILAN, kayma: kisiselKayma() });
   }
-  /* Hedefin boyut ve parlaklığı (veri/hedef_boyut.json; yoksa hedefler.json kadiri, nokta kaynak) */
-  function hedefBoyutu(h) {
-    const b = (durum.veri.hedefBoyut || []).find(x => x.id === h.id);
-    if (!b) return { ad: h.ad, kadir: h.kadir, nokta: true };
-    return { ad: h.ad, kadir: b.vKadir != null ? b.vKadir : h.kadir, buyukEksen: b.buyukEksen, kucukEksen: b.kucukEksen, nokta: !!b.noktaKaynak };
-  }
-  const GOR_SINIF = { gorunur: 'iyi', zor: '', gorunmez: 'uyari' };
+  /* Hedefin verisi: boyut/parlaklık (hedef_boyut.json), açık küme üyeleri (kume_uyeleri.json), M31 profili (profil_m31.json) */
+  function hedefBoyutu(h) { return Gorunurluk.hedefVerisi(h, durum.veri); }
+  /* Çip sınıfları .rozet.iyi / .rozet.uyari ile aynı görünür ama ayrı adlı: "görüldü" rozetini arayan seçiciler bunu yakalamasın */
+  const GOR_SINIF = { gorunur: 'gor-iyi', zor: '', gorunmez: 'gor-uyari', belirsiz: '' };
   /* Etiket çipi (düğme) + gizli gerekçe kutusu; hesaplanamazsa ikisi de boş */
   function gorunurlukEtiketi(hedefVeri, t, alt, az) {
     if (!window.Gorunurluk) return { cip: '', kutu: '' };
@@ -493,7 +487,8 @@
     const s = Gorunurluk.degerlendir(hedefVeri, ortam);
     if (!s || !GOR_SINIF.hasOwnProperty(s.etiket)) return { cip: '', kutu: '' };
     const sinif = GOR_SINIF[s.etiket];
-    const cip = ` <button type="button" class="rozet${sinif ? ' ' + sinif : ''} gor-ac" aria-expanded="false" title="Gerekçe">${Gorunurluk.ETIKET_AD[s.etiket]} (yaklaşık)</button>`;
+    const ek = s.etiket === 'gorunur' && s.yol === 'uye' ? ' (yıldızları seçilir)' : (s.etiket === 'belirsiz' && s.neden ? ': ' + s.neden : '');
+    const cip = ` <button type="button" class="rozet${sinif ? ' ' + sinif : ''} gor-ac" aria-expanded="false" title="Gerekçe">${Gorunurluk.ETIKET_AD[s.etiket]}${U.kacis(ek)} (yaklaşık)</button>`;
     const kaynak = { elle: 'Gök parlaklığı: elle girilen değer.', atlas: 'Gök parlaklığı: yapay ışık modeli (Falchi 2016 atlası, 2014–2015 uydu verisi) + doğal gök.', kaydirici: 'Gök parlaklığı atlas dışında: "görünen en sönük yıldız" ayarından türetildi.' }[ortam.kaynak];
     const satirlar = Gorunurluk.gerekce(s, ortam).concat([kaynak + (ortam.kKaynak === 'varsayilan' ? ' Aerosol verisi yok: sönümleme için tipik k = 0,30 (Schaefer 1990).' : '')]);
     const kutu = `<div class="gor-kutu kucuk soluk" hidden>${satirlar.map(x => U.kacis(x)).join('<br>')}</div>`;
@@ -1423,9 +1418,11 @@
     el = kok;
     el.innerHTML = '<p class="bos">Gökyüzü hazırlanıyor…</p>';
     try {
-      const [yildizlar, takimyildizlar, hedefler, meteor, ortmeY, algol, boyut, degisen] = await Promise.all([U.veri('yildizlar'), U.veri('takimyildiz'), U.veri('hedefler'), U.veri('meteor'), U.veri('ortme_yildiz'), U.veri('algol'), U.veri('hedef_boyut'), U.veri('durbun_degisenleri')]);
+      const [yildizlar, takimyildizlar, hedefler, meteor, ortmeY, algol, boyut, degisen, uye, profilM31] = await Promise.all([U.veri('yildizlar'), U.veri('takimyildiz'), U.veri('hedefler'), U.veri('meteor'), U.veri('ortme_yildiz'), U.veri('algol'), U.veri('hedef_boyut'), U.veri('durbun_degisenleri'),
+        U.veri('kume_uyeleri').catch(() => null), U.veri('profil_m31').catch(() => null)]);
       durum.veri = { yildizlar, takimyildizlar, hedefler: hedefler.hedefler, hedefKaynak: hedefler.kaynak, meteor, ortmeYildiz: ortmeY.y, algol,
-        hedefBoyut: boyut.hedefler, degisenler: degisen.yildizlar, degisenKaynak: degisen.kaynak };
+        hedefBoyut: boyut.hedefler, degisenler: degisen.yildizlar, degisenKaynak: degisen.kaynak,
+        kumeUyeleri: uye ? uye.kumeler : null, profil: profilM31 ? { M31: profilM31 } : null };   // v46: üye ve profil yolları
     } catch (e) {
       if (window.Tani) Tani.hataEkle('gök verisi: ' + (e && e.message));
       el.innerHTML = '<h1>Bu gece gökyüzü</h1><div class="hata-kutu" role="alert">Gök verisi yüklenemedi. Başka bir sekmeye geçip dönünce yeniden denenir; sorun sürerse internet bağlantısını kontrol et.</div>';
