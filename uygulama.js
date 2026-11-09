@@ -26,7 +26,7 @@
   /* Depo dolunca (köken aynı adresteki başka uygulamalarla paylaşılıyor) yeniden indirilebilen önbellekler
      silinip bir kez daha denenir; kullanıcı verisi (defter, kartlar, ayarlar) silinmez. */
   /* Silme sırası: en az değerli önce (tanı günlüğü, yer adları, hava; yörünge verisi en son) */
-  const ONBELLEK_ONEK = ['sesGunluk', 'yerAdlari', 'hava_', 'hava2_', 'hava3_', 'ens1_', 'mdl1_', 'aq1_', 'kp1', 'maske1_', 'uydu1_', 'gp_'];
+  const ONBELLEK_ONEK = ['sesGunluk', 'yerAdlari', 'hava_', 'hava2_', 'hava3_', 'ens1_', 'mdl1_', 'aq1_', 'kp1', 'maske1_', 'uydu1_', 'vsx1_', 'gp_'];
   function yaz(anahtar, deger) {
     const m = JSON.stringify(deger);
     const tamam = () => { bellek.delete(anahtar); return true; };

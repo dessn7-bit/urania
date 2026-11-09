@@ -177,7 +177,10 @@
           else { ctx.strokeStyle = c.soluk; ctx.lineWidth = 1; ctx.stroke(); }
           const g = t => Urania.gun(t);
           isabet.push({ x: p.x, y: p.y, oncelik: 1, bilgi: '<b>Mira</b> (ο Ceti) · değişen yıldız: 332 günde bir 2–5 kadire çıkar, en sönükken 10 kadir · ' +
-            (mp ? 'şu sıralar en parlak dönemine yakın' : 'şu sıralar sönük') + ' · tahmini en parlak: ' + g(d.mira.son) + ', sonraki ' + g(d.mira.sonraki) + ' · ' + Urania.derece(h.alt) + ' yükseklik' });
+            (mp ? 'şu sıralar en parlak dönemine yakın' : 'şu sıralar sönük') + ' · tahmini en parlak: ' + g(d.mira.son) + ', sonraki ' + g(d.mira.sonraki) +
+            /* v45: AAVSO ölçümü (son 7 günün görsel ortancası; gozlem.js Degisen) */
+            (d.mira.olculen && d.mira.olculen.sayi ? ' · ölçülen (AAVSO, son 7 gün): ortanca ' + Urania.kadir(d.mira.olculen.ortanca) + ' kadir, ' + d.mira.olculen.sayi + ' görsel tahmin' : '') +
+            ' · ' + Urania.derece(h.alt) + ' yükseklik' });
         }
       }
 

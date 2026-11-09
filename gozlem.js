@@ -10,7 +10,12 @@
     dakika: 0,          // kaydırıcı: gecenin öğlesinden itibaren dakika
     canli: true,        // kullanıcı kaydırıcıya dokunmadıysa her dakika "şimdi"ye güncellenir
     limitKadir: (v => (Number.isFinite(v) && v >= 1.5 && v <= 6 ? v : 4))(Number(U.oku('limitKadir', 4))),   // bozuk değer haritayı boşaltmasın
-    veri: null, harita: null, gece: null, gzl: null, hedefDurum: null, meteorDurum: null
+    veri: null, harita: null, gece: null, gzl: null, hedefDurum: null, meteorDurum: null,
+    /* v45 görünürlük: değişen yıldızlar, Mira'nın AAVSO ölçümü, gök parlaklığı ızgarasının durumu ve iki ayar
+       (elle SQM değeri: boş = atlas; göz bebeği çapı mm: boş = Schaefer 1990 bağıntısı, 40 yaş) */
+    degisenDurum: null, miraOlculen: null, gokIzgara: 'yukleniyor',
+    sqmElle: (v => (Number.isFinite(v) && v >= 15 && v <= 22.5 ? v : null))(Number(U.oku('sqmElle', null))),
+    gozBebegi: (v => (Number.isFinite(v) && v >= 2 && v <= 9 ? v : null))(Number(U.oku('gozBebegi', null)))
   };
   let el = null;
   let canliSayac = null;
@@ -26,7 +31,7 @@
   /* Katlanır bölümler (Gezegenler … Yaklaşan olaylar): sayfa bir telefonda 15 ekrandan uzundu. Plan ve üst kısım hep açık
      (plan sesli okunuyor). Her bölümün başlığında kapalıyken de işe yarayan bir özet satırı var: listenin ilk öğesi ya da
      sayısı; liste her yeniden çizildiğinde (MutationObserver) güncellenir. Açık/kapalı tercihi saklanır, ilk açılışta hepsi kapalı. */
-  const KAT_LISTE = { gezegen: 'gkGezegen', hedef: 'gkHedef', meteor: 'gkMeteor', uydu: 'gkIss', olay: 'gkOlay' };
+  const KAT_LISTE = { gezegen: 'gkGezegen', hedef: 'gkHedef', degisen: 'gkDegisen', meteor: 'gkMeteor', uydu: 'gkIss', olay: 'gkOlay' };
   function ilkMetin(li, sec) {
     const e = li.querySelector(sec); if (!e) return '';
     const n = e.firstChild; return (n && n.nodeType === 3 ? n.textContent : e.textContent).trim();
@@ -40,6 +45,7 @@
     if (!ls.length) m = bos ? bos.textContent.trim() : '';
     else if (kat === 'gezegen') m = ls.map(li => ilkMetin(li, '.ad')).join(', ');
     else if (kat === 'hedef') m = ls.length + ' hedef karanlıkta 20°\'nin üstünde';
+    else if (kat === 'degisen') m = ls.length + ' değişen yıldız karanlıkta 20°\'nin üstünde';
     else if (kat === 'meteor' && /etkin/.test((ls[0].querySelector('.ad .rozet') || {}).textContent || '')) {
       m = 'etkin: ' + ls.filter(li => /etkin/.test((li.querySelector('.ad .rozet') || {}).textContent || '')).map(li => ilkMetin(li, '.ad').replace(/\s*\(.*?\)/g, '')).join(', ');
     } else if (kat === 'uydu') {
@@ -108,6 +114,13 @@
       <details class="aciklama" id="gkHedefDiger"><summary>Bu gece alçakta kalanlar</summary><ul class="liste" id="gkHedefAlcak"></ul></details>
       </details>
 
+      <details class="kat" data-kat="degisen"><summary><span class="kat-bas"><h2>Dürbün değişenleri</h2><span class="kat-ozet" id="gkOzet_degisen"></span></span></summary>
+      <p class="alt-baslik">AAVSO Dürbün Programı'ndaki değişen yıldızlardan bu gece karanlıkta 20°'nin üstüne çıkanlar. "Ölçülen" değer, AAVSO gözlemcilerinin son 7 gündeki görsel tahminlerinin ortancasıdır (kaç tahmin olduğu yanında yazar; gözlemci bilgisi alınmaz). Görünürlük etiketi yaklaşıktır: gök parlaklığı, Ay, yükseklik ve dürbün eşiğinden.</p>
+      <div class="cip-grup"><button type="button" class="dugme" id="gkDegisenAl">Güncel parlaklıkları al (AAVSO)</button><span class="kucuk soluk" id="gkDegisenDurum" role="status"></span></div>
+      <ul class="liste" id="gkDegisen"><li><span class="bos">Hazırlanıyor…</span></li></ul>
+      <p class="kaynak" id="gkDegisenKaynak"></p>
+      </details>
+
       <details class="kat" data-kat="meteor"><summary><span class="kat-bas"><h2>Meteor yağmurları</h2><span class="kat-ozet" id="gkOzet_meteor"></span></span></summary>
       <p class="alt-baslik">Saatlik sayı (ZHR), radyant başucundayken kusursuz karanlıkta görülecek en yüksek sayıdır; şehirde ve Ay ışığında bunun küçük bir kısmı görülür.</p>
       <ul class="liste" id="gkMeteor"></ul>
@@ -146,6 +159,11 @@
             <input type="range" id="gkKadir" aria-labelledby="gkKadirAd" min="1.5" max="6" step="0.5">
             <p class="soluk kucuk">Bu yerin ışık kirliliğine göre bir kez ayarla; harita, plan ve listeler hemen değişir.</p>
           </div>
+          <div class="hesap-ızgara">
+            <div class="alan"><label for="gkSQM">Gök parlaklığı, elle (kadir/yay sn²)</label><input id="gkSQM" inputmode="decimal" placeholder="boş: atlastan" autocomplete="off"></div>
+            <div class="alan"><label for="gkGozBebegi">Göz bebeği çapı (mm)</label><input id="gkGozBebegi" inputmode="decimal" placeholder="boş: 6,5" autocomplete="off"></div>
+          </div>
+          <p class="soluk kucuk" id="gkSQMNot">Gök parlaklığı boş bırakılırsa ışık kirliliği atlasından okunur (Falchi 2016; 2014–2015 uydu verisi, yaklaşık). SQM ölçümün varsa ya da atlas bu yeri kapsamıyorsa 15–22,5 arası bir değer yaz. Göz bebeği: boşsa 40 yaş için 6,5 mm alınır (Schaefer 1990 bağıntısı); karanlıkta ölçtüysen 2–9 arası gir.</p>
           <div class="cip-grup" style="justify-content:space-between">
             <button type="button" class="dugme" id="gkKSifirla">Varsayılana dön (İstanbul)</button>
             <span class="cip-grup"><button type="button" class="dugme" id="gkKVazgec">Vazgeç</button><button value="kaydet" class="dugme dolu" id="gkKKaydet">Kaydet</button></span>
@@ -185,6 +203,8 @@
     durum.geceAnahtar = ogle().getTime() + '|' + k.enlem + '|' + k.boylam;
     const temsil = durum.gece.karanlikBas || secilenAn();
     durum.hedefDurum = G.hedeflerBuGece(durum.veri.hedefler, durum.gzl, durum.gece, temsil);
+    /* Dürbün değişenleri (AAVSO listesi): hedeflerle aynı hesap (karanlıkta en yüksek konum, Ay açısı) */
+    durum.degisenDurum = durum.veri.degisenler ? G.hedeflerBuGece(durum.veri.degisenler.map(y => ({ id: y.auid, ad: y.ad, ra: y.ra, dec: y.dec, kadir: y.kadir ? y.kadir.parlak : null, y })), durum.gzl, durum.gece, temsil) : null;
     /* Etkin olmayan yağmurların zirve gecesi hesabı ağır: önce onsuz, aşağıda arka arkaya */
     durum.meteorDurum = G.meteorDurumu(G.meteorTakvimi(durum.veri.meteor, temsil), temsil, durum.gzl, durum.gece, { zirveGecesi: false });
     durum.ayGece = G.ayDurumu(temsil, durum.gzl);
@@ -265,7 +285,7 @@
         if (g && g.gorunur && g.bitis.t > an) uyduYollari.push({ kisa: u.kisa, yol: g.yol, gBas: g.gBas });
       });
     }
-    durum.harita.ciz({ zaman: an, gzl, gunes, ay, gezegenler, hedefler: durum.veri.hedefler, radyantlar, limitKadir: durum.limitKadir, uydular, uyduYollari, mira: G.miraDurumu(an), vurgu: vurguKonum(an, gzl) });
+    durum.harita.ciz({ zaman: an, gzl, gunes, ay, gezegenler, hedefler: durum.veri.hedefler, radyantlar, limitKadir: durum.limitKadir, uydular, uyduYollari, mira: Object.assign(G.miraDurumu(an), { olculen: durum.miraOlculen }), vurgu: vurguKonum(an, gzl) });
     el.querySelector('#gkSaat').textContent = U.saat(an) + (durum.canli && !durum.gun ? ' (şimdi)' : '') + ' · ' + U.gun(an);
     let gd;
     if (gunes.alt > 0) gd = 'Gündüz';
@@ -368,6 +388,8 @@
     s.push({ et: 'Ay',
       gor: `${ay.ad}, %${Math.round(ay.oran * 100)} aydınlık` + sirali.map(x => '&nbsp;· ' + parca(`${x[2]} ${kalin(U.saat(x[0]))}`)).join('') + (ayNot ? `<span class="oz-not">${ayNot}</span>` : ''),
       ses: ayCumle + (ayNot ? ' ' + ayNot : '') });
+    /* v45: gök parlaklığı ve bu gecenin en sönük yıldızı (gorunurluk.js) */
+    const gp = gokParlakligiOzeti(); if (gp) s.push(gp);
     /* "Çıplak gözle" eşiği, levhadaki gökyüzü ayarıyla aynı (şehirde Uranüs çıplak gözle görülmez) */
     const gorunen = durum.gezegenGece.filter(p => p.gorunur && p.kadir <= durum.limitKadir);
     if (gorunen.length) {
@@ -419,7 +441,131 @@
     if (h.ayAcisi < 30 && durum.ayGece.oran > 0.35) uyari = ` <span class="rozet uyari">Ay'a ${U.derece(h.ayAcisi)}</span>`;
     else if (h.kadir > 5.5 && (h.tur === 'galaksi' || h.tur === 'bulutsu')) uyari = ' <span class="rozet">şehirde zor</span>';
     const sag = h.tepe ? `en iyi ${U.saat(h.tepe.zaman)} · ${U.derece(h.tepe.alt)} ${G.yon(h.tepe.az)}` : '—';
-    return `<li><span class="ad">${U.kacis(h.ad)}${uyari}</span><span class="sag">${sag}</span><span class="alt">${notlar.map(U.kacis).join(' · ')}${defterBag('hedef:' + h.id, h.tepe && h.tepe.zaman)}</span></li>`;
+    /* v45: en iyi anında "görünür / zor / görünmez (yaklaşık)" etiketi; dokununca gerekçe (gorunurluk.js) */
+    const gor = h.tepe ? gorunurlukEtiketi(hedefBoyutu(h), h.tepe.zaman, h.tepe.alt, h.tepe.az) : { cip: '', kutu: '' };
+    return `<li><span class="ad">${U.kacis(h.ad)}${uyari}${gor.cip}</span><span class="sag">${sag}</span><span class="alt">${notlar.map(U.kacis).join(' · ')}${defterBag('hedef:' + h.id, h.tepe && h.tepe.zaman)}</span>${gor.kutu}</li>`;
+  }
+
+  /* ---- v45 Görünürlük: gök parlaklığı (atlas / elle / kaydırıcı), Ay (KS91), sönümleme, eşik (Crumey) — gorunurluk.js ---- */
+  function gorunurlukBaslat() {
+    if (!window.Gorunurluk) return;
+    Gorunurluk.izgaraYukle().then(() => { durum.gokIzgara = 'hazir'; gorunurlukYenile(); })
+      .catch(e => { durum.gokIzgara = 'yok'; if (window.Tani) Tani.hataEkle('gök parlaklığı ızgarası: ' + (e && e.message)); gorunurlukYenile(); });
+    /* Mira: AAVSO ölçümü (son 7 günün görsel ortancası), 12 saat önbellekli; ağ yoksa yalnız tahmin kalır */
+    if (window.Degisen) Degisen.parlaklik('Mira').then(s => { durum.miraOlculen = s; if (el && durum.gece) { olayYaz(); levhaCiz(); } }).catch(() => { /* ağ yok */ });
+    document.addEventListener('urania:aod', gorunurlukYenile);   // havakart.js: aerosol geldi → sönümleme değişir
+  }
+  function gorunurlukYenile() { if (!el || !durum.gece || !durum.hedefDurum) return; ozetYaz(); hedefYaz(); degisenYaz(); planYaz(); konumYazi(); }
+  /* Başucunun Ay'sız gök parlaklığı (kadir/yay sn²) ve kaynağı: elle > atlas > kaydırıcıdan türetme */
+  function gokBasucu() {
+    if (!window.Gorunurluk) return null;
+    if (durum.sqmElle != null) return { kadir: durum.sqmElle, kaynak: 'elle' };
+    const k = U.konum();
+    const g = durum.gokIzgara === 'hazir' ? Gorunurluk.gokParlakligi(k.enlem, k.boylam) : null;
+    if (g) return { kadir: g.kadir, kaynak: 'atlas', Lart: g.Lart };
+    /* Atlas yok (pencere dışı ya da yüklenemedi): "görünen en sönük yıldız" kaydırıcısından, Crumey (53) tersiyle */
+    return { kadir: Gorunurluk.kadirdenGok(durum.limitKadir, Gorunurluk.F_VARSAYILAN, gozBebegi()), kaynak: 'kaydirici' };
+  }
+  function gozBebegi() { return durum.gozBebegi != null ? durum.gozBebegi : Gorunurluk.gozBebegi(); }
+  function sonumlemeK() {
+    const aod = window.HavaKart && Number.isFinite(HavaKart.sonAod) ? HavaKart.sonAod : null;
+    return Gorunurluk.sonumleme({ yukseklik: U.konum().yukseklik || 0, aod });
+  }
+  /* t anında alt/az yönüne bakan gözlemcinin ortamı */
+  function ortamKur(t, alt, az) {
+    const b = gokBasucu(); if (!b || !durum.gzl) return null;
+    const ay = G.cisimAltAz('Moon', t, durum.gzl);
+    const ayBilgi = ay.alt > 0 ? { alfa: A.Illumination('Moon', t).phase_angle, rho: Gorunurluk.acisalUzaklik(alt, az, ay.alt, ay.az), Zm: 90 - ay.alt } : null;
+    const son = sonumlemeK();
+    return { Vzen: b.kadir, kaynak: b.kaynak, Z: 90 - alt, k: son.k, kKaynak: son.kaynak, ay: ayBilgi, p: gozBebegi(), F: Gorunurluk.F_VARSAYILAN, alet: Gorunurluk.DURBUN };
+  }
+  /* Hedefin boyut ve parlaklığı (veri/hedef_boyut.json; yoksa hedefler.json kadiri, nokta kaynak) */
+  function hedefBoyutu(h) {
+    const b = (durum.veri.hedefBoyut || []).find(x => x.id === h.id);
+    if (!b) return { ad: h.ad, kadir: h.kadir, nokta: true };
+    return { ad: h.ad, kadir: b.vKadir != null ? b.vKadir : h.kadir, buyukEksen: b.buyukEksen, kucukEksen: b.kucukEksen, nokta: !!b.noktaKaynak };
+  }
+  const GOR_SINIF = { gorunur: 'iyi', zor: '', gorunmez: 'uyari' };
+  /* Etiket çipi (düğme) + gizli gerekçe kutusu; hesaplanamazsa ikisi de boş */
+  function gorunurlukEtiketi(hedefVeri, t, alt, az) {
+    if (!window.Gorunurluk) return { cip: '', kutu: '' };
+    const ortam = ortamKur(t, alt, az); if (!ortam) return { cip: '', kutu: '' };
+    const s = Gorunurluk.degerlendir(hedefVeri, ortam);
+    if (!s || !GOR_SINIF.hasOwnProperty(s.etiket)) return { cip: '', kutu: '' };
+    const sinif = GOR_SINIF[s.etiket];
+    const cip = ` <button type="button" class="rozet${sinif ? ' ' + sinif : ''} gor-ac" aria-expanded="false" title="Gerekçe">${Gorunurluk.ETIKET_AD[s.etiket]} (yaklaşık)</button>`;
+    const kaynak = { elle: 'Gök parlaklığı: elle girilen değer.', atlas: 'Gök parlaklığı: yapay ışık modeli (Falchi 2016 atlası, 2014–2015 uydu verisi) + doğal gök.', kaydirici: 'Gök parlaklığı atlas dışında: "görünen en sönük yıldız" ayarından türetildi.' }[ortam.kaynak];
+    const satirlar = Gorunurluk.gerekce(s, ortam).concat([kaynak + (ortam.kKaynak === 'varsayilan' ? ' Aerosol verisi yok: sönümleme için tipik k = 0,30 (Schaefer 1990).' : '')]);
+    const kutu = `<div class="gor-kutu kucuk soluk" hidden>${satirlar.map(x => U.kacis(x)).join('<br>')}</div>`;
+    return { cip, kutu, s, ortam };
+  }
+  /* Özet satırı: başucu gök parlaklığı + bu gece dürbünle / çıplak gözle en sönük yıldız (karanlığın ortasında, başucunda) */
+  function gokParlakligiOzeti() {
+    if (!window.Gorunurluk) return null;
+    const b = gokBasucu(); if (!b) return null;
+    const g = durum.gece;
+    const t = g.karanlikBas && g.karanlikSon ? new Date((g.karanlikBas.getTime() + g.karanlikSon.getTime()) / 2) : null;
+    let yildiz = '';
+    if (t) {
+      const o = ortamKur(t, 90, 0);
+      if (o) {
+        const gok = Gorunurluk.gokYuzey(o), B = Gorunurluk.kadirdenCd(gok.V);
+        const ed = Gorunurluk.esikler({ B, alet: Gorunurluk.DURBUN, p: o.p, F: o.F }), ec = Gorunurluk.esikler({ B, alet: Gorunurluk.CIPLAK, p: o.p, F: o.F });
+        if (ed && ec) yildiz = `Bu gece dürbünle görebileceğin en sönük yıldız yaklaşık ${U.kadir(ed.m0)} kadir, çıplak gözle ${U.kadir(ec.m0)} (${U.saat(t)} civarı başucunda${gok.deltaV < -0.05 ? `; Ay göğü ${U.sayi(-gok.deltaV, 1)} kadir parlatıyor` : ''}).`;
+      }
+    }
+    const kaynakAd = { elle: 'elle girilen değer', atlas: 'yapay ışık modeli, 2014–2015 uydu verisi', kaydirici: '"görünen en sönük yıldız" ayarından; atlas bu yeri kapsamıyor' }[b.kaynak];
+    const metin = `Bulunduğun yerde göğün tepesi yaklaşık ${U.sayi(b.kadir, 1)} kadir/yay sn² (${kaynakAd}).`;
+    return { et: 'Gök', gor: `<span id="gkGokParlakligi">${U.kacis(metin.replace(/^Bulunduğun yerde /, 'Bulunduğun yerde '))}</span>${yildiz ? `<span class="oz-not" id="gkEnSonuk">${U.kacis(yildiz)}</span>` : ''}`, ses: metin + (yildiz ? ' ' + yildiz : '') };
+  }
+  /* Mira olayına eklenen ölçüm cümlesi */
+  function miraEk(o) {
+    const m = durum.miraOlculen;
+    if (!m || !/^Mira/.test(o.baslik || '') || !m.sayi) return '';
+    return ` AAVSO ölçümü: son 7 günde ${m.sayi} görsel tahmin, ortanca ${U.kadir(m.ortanca)} kadir${m.eski ? ' (çevrimdışı, eski kayıt)' : ''}.`;
+  }
+  /* Dürbün değişenleri listesi */
+  const DEGISEN_TUR = { M: 'Mira türü', SR: 'yarı düzenli', SRA: 'yarı düzenli (SRa)', SRB: 'yarı düzenli (SRb)', SRC: 'yarı düzenli (SRc)', SRD: 'yarı düzenli (SRd)', LB: 'düzensiz (Lb)', LC: 'düzensiz (Lc)', RCB: 'R CrB türü', RVA: 'RV Tau türü (RVa)', RVB: 'RV Tau türü (RVb)' };
+  function degisenTurAd(t) {
+    const parca = String(t || '').replace(/:$/, '').split('+');
+    return parca.map(p => DEGISEN_TUR[p] || (p === 'ZAND' ? 'simbiyotik (Z And)' : p === 'E' ? 'örten çift' : p === 'SDOR' ? 'S Dor türü' : p)).join(' + ') + (/:$/.test(String(t || '')) ? ' (belirsiz)' : '');
+  }
+  function degisenSatir(x) {
+    const y = x.y, k = y.kadir;
+    const olc = window.Degisen ? Degisen.onbellek(y.ad) : null;
+    let gor = { cip: '', kutu: '' }, olcMetin = '<span class="vsx">ölçülen: —</span>';
+    if (olc && olc.sayi) {
+      olcMetin = `<span class="vsx">ölçülen ${U.kadir(olc.ortanca)} kadir (${olc.sayi} görsel tahmin, son 7 gün${olc.eski ? ', eski kayıt' : ''})</span>`;
+      gor = gorunurlukEtiketi({ ad: y.ad, kadir: olc.ortanca, nokta: true }, x.tepe.zaman, x.tepe.alt, x.tepe.az);
+    } else if (olc && olc.sayi === 0) olcMetin = '<span class="vsx">ölçülen: son 7 günde görsel tahmin yok</span>';
+    const aralik = k ? `katalog ${U.kadir(k.parlak)}–${U.kadir(k.sonuk)} ${U.kacis(k.band)}` : '';
+    const donem = y.donem ? `dönem ${U.sayi(y.donem, y.donem < 100 ? 1 : 0)} gün` : '';
+    return `<li data-ad="${U.kacis(y.ad)}"><span class="ad">${U.kacis(y.ad)}<span class="rozet">${U.kacis(y.tur)}</span>${gor.cip}</span><span class="sag">en iyi ${U.saat(x.tepe.zaman)} · ${U.derece(x.tepe.alt)} ${G.yon(x.tepe.az)}</span><span class="alt">${[degisenTurAd(y.tur), donem, aralik, tdAd(y.takimyildiz) + ' takımyıldızında'].filter(Boolean).map(U.kacis).join(' · ')} · ${olcMetin}</span>${gor.kutu}</li>`;
+  }
+  function degisenYaz() {
+    const ul = el && el.querySelector('#gkDegisen'); if (!ul || !durum.degisenDurum) return;
+    const iyi = durum.degisenDurum.filter(x => x.gorunur).sort((a, b) => b.tepe.alt - a.tepe.alt);
+    ul.innerHTML = iyi.length ? iyi.map(degisenSatir).join('') : '<li><span class="bos">' + (durum.gece.karanlikYok ? 'Bu gece gök yeterince kararmıyor.' : 'Bu gece karanlıkta 20°\'yi geçen program yıldızı yok.') + '</span></li>';
+    const kay = el.querySelector('#gkDegisenKaynak');
+    if (kay) kay.innerHTML = `Yıldız listesi: <a href="https://mintaka.aavso.org/sites/default/files/BinocularProgramStars-2017_1.csv" target="_blank" rel="noopener">AAVSO Binocular Program (2017)</a>, ${durum.veri.degisenler.length} yıldız İstanbul'dan görülebilir (dik açıklık > −30°). Ölçümler <a href="https://vsx.aavso.org/" target="_blank" rel="noopener">AAVSO VSX</a> üzerinden; yalnız son 7 günün görsel tahminlerinin ortancası ve sayısı alınır, 12 saat saklanır. ${U.kacis(window.Degisen ? Degisen.ATIF : '')} Tür kısaltmaları GCVS sınıflandırmasıdır.`;
+  }
+  async function degisenAl() {
+    if (!window.Degisen) return;
+    const b = el.querySelector('#gkDegisenAl'), d = el.querySelector('#gkDegisenDurum');
+    const liste = (durum.degisenDurum || []).filter(x => x.gorunur).sort((a, c) => c.tepe.alt - a.tepe.alt).slice(0, 30);
+    if (!liste.length) { d.textContent = 'Bu gece listede yıldız yok.'; return; }
+    b.disabled = true; let n = 0, hataVar = false;
+    await Degisen.toplu(liste.map(x => x.y.ad), (ad, s, hata) => { n++; if (hata) hataVar = true; d.textContent = `${n}/${liste.length} alındı` + (hata ? ' — bağlantı sorunu' : ''); degisenYaz(); });
+    b.disabled = false;
+    d.textContent = hataVar ? 'AAVSO\'ya ulaşılamadı; varsa eski kayıtlar gösteriliyor.' : `Güncellendi: ${liste.length} yıldız, son 7 günün görsel tahminleri (AAVSO).`;
+  }
+  /* Konum panelindeki iki ayar (elle SQM, göz bebeği): boş = varsayılan */
+  function ayarlariKaydet() {
+    const sqm = sayiOku(el.querySelector('#gkSQM').value), goz = sayiOku(el.querySelector('#gkGozBebegi').value);
+    durum.sqmElle = Number.isFinite(sqm) && sqm >= 15 && sqm <= 22.5 ? sqm : null;
+    durum.gozBebegi = Number.isFinite(goz) && goz >= 2 && goz <= 9 ? goz : null;
+    if (durum.sqmElle != null) U.yaz('sqmElle', durum.sqmElle); else U.sil('sqmElle');
+    if (durum.gozBebegi != null) U.yaz('gozBebegi', durum.gozBebegi); else U.sil('gozBebegi');
   }
 
   /* Jüpiter'in dört büyük uydusu: dürbünde görüneceği gibi (kuzey yukarı, doğu solda) */
@@ -574,7 +720,7 @@
     const olaylar = durum.olaylar.filter(o => o.tur !== 'kavusum' || !G.kavusumOrtmeyleAyni(o, durum.ortmeler));
     const temel = olaylar.filter(o => o.tur !== 'kavusum');
     const son = temel.length > OLAY_SATIR ? temel[OLAY_SATIR - 1].zaman : null;
-    const satirlar = olaylar.filter(o => !son || o.zaman <= son).map(o => ({ zaman: o.zaman, html: o.tur === 'kavusum' ? kavusumSatir(o) : `<li${o.gorunur === false ? ' class="sonuk"' : ''}><span class="ad">${U.kacis(o.baslik)}</span><span class="sag">${U.gun(o.zaman)}</span><span class="alt">${o.not ? U.kacis(o.not) + '<br>' : ''}${U.gunHafta(o.zaman)}, ${U.saat(o.zaman)} · ${takvimBag({ baslik: o.baslik, bas: o.zaman, aciklama: (o.not || '') + ' (Urania, ' + U.konum().ad + ')' })}</span></li>` }));
+    const satirlar = olaylar.filter(o => !son || o.zaman <= son).map(o => ({ zaman: o.zaman, html: o.tur === 'kavusum' ? kavusumSatir(o) : `<li${o.gorunur === false ? ' class="sonuk"' : ''}><span class="ad">${U.kacis(o.baslik)}</span><span class="sag">${U.gun(o.zaman)}</span><span class="alt">${o.not ? U.kacis(o.not + miraEk(o)) + '<br>' : ''}${U.gunHafta(o.zaman)}, ${U.saat(o.zaman)} · ${takvimBag({ baslik: o.baslik, bas: o.zaman, aciklama: (o.not || '') + ' (Urania, ' + U.konum().ad + ')' })}</span></li>` }));
     const ek = algolSatirlar().concat(ortmeSatirlar()).filter(x => !son || x.zaman <= son);
     ul.innerHTML = satirlar.concat(ek).sort((a, b) => a.zaman - b.zaman).map(x => x.html).join('');
   }
@@ -814,7 +960,7 @@
     }
     const satirlar = p.maddeler.map(m => {
       const yon = `${U.derece(m.alt)} ${G.YON_UZUN[G.yon(m.az)]}`;
-      let ne = '', ek = '';
+      let ne = '', ek = '', gor = null;
       if (m.tur === 'gezegen') {
         ne = m.cisim === 'Jupiter' ? 'Dürbünü sabitle; yanındaki küçük noktalar Galileo uyduları.' :
           m.cisim === 'Saturn' ? 'Sarımsı, kırpışmayan bir nokta.' :
@@ -829,6 +975,7 @@
       } else if (m.tur === 'hedef') {
         ne = `${U.kacis(m.hedef.turAd)}, ${U.kacis(tdAd(m.hedef.takimyildiz))} takımyıldızında.`;
         ek = defterBag(m.anahtar, m.zaman);
+        gor = gorunurlukEtiketi(hedefBoyutu(m.hedef), m.zaman, m.alt, m.az);   // v45: planın saatinde görünürlük
       } else if (m.tur === 'uydu') {
         const g = m.gecis;
         ne = `${aralik(g.gBas.t, g.gBit.t)}: ${G.YON_UZUN[G.yon(g.gBas.az)]} yönünde belirir, en çok ${U.derece(g.gTepe.alt)} yükselir` + (g.enParlak ? `, en parlak ${U.kadir(g.enParlak.kadir)} kadir.` : '.');
@@ -854,8 +1001,8 @@
         : m.tur === 'kavusum' ? `${m.kavusum.adlar[0]} ile ${m.kavusum.adlar[1]} arasında ${U.sayi(m.kavusum.gorus.ayrim, 1)} derece${m.kavusum.cokYakin && m.kavusum.gorus.ayrim <= G.KAVUSUM_COK_YAKIN ? ', çok yakın' : ''}.` + (m.kavusum.gorus.ayrim <= G.DURBUN_ALANI ? ' Dürbünün alanına birlikte sığarlar.' : '')
         : ne;
       const yer = m.tur === 'uydu' ? '' : `${Math.round(m.alt)} derece yükseklikte, ${YON_DE[G.yon(m.az)]}.`;
-      const ses = cumleBirlestir([`Saat ${U.saat(m.zaman)}`, m.ad, yer, neDuz, m.bulut != null ? `Bulut yüzde ${Math.round(m.bulut)}` : '']);
-      return `<li class="plan-${m.tur} okunur" data-ses="${U.kacis(ses)}"><span class="saat">${U.saat(m.zaman)}</span><span class="ad">${U.kacis(m.ad)}${bulut}</span><span class="alt">${bilgi}${ek}</span></li>`;
+      const ses = cumleBirlestir([`Saat ${U.saat(m.zaman)}`, m.ad, yer, neDuz, m.bulut != null ? `Bulut yüzde ${Math.round(m.bulut)}` : '', gor && gor.s ? `Dürbünle ${Gorunurluk.ETIKET_AD[gor.s.etiket]}, yaklaşık.` : '']);
+      return `<li class="plan-${m.tur} okunur" data-ses="${U.kacis(ses)}"><span class="saat">${U.saat(m.zaman)}</span><span class="ad">${U.kacis(m.ad)}${bulut}${gor ? gor.cip : ''}</span><span class="alt">${bilgi}${ek}</span>${gor ? gor.kutu : ''}</li>`;
     });
     let ust = '';
     if (p.bulutNot && p.bulutNot.kapali) ust = `<li class="plan-not"><span class="alt">Bulut tahmini bu gece çoğunlukla kapalı (ortalama %${Math.round(p.bulutNot.ort)}). Plan yine de hazır; gök açılırsa saatler geçerli.</span></li>`;
@@ -997,7 +1144,7 @@
 
   /* planBekle: plan, Algol hesabından sonra ayrıca yazılır (ilk açılışta uzun görev bölünsün) */
   function listeleriYaz(planBekle) {
-    ozetYaz(); gezegenYaz(); hedefYaz(); meteorYaz(); olayYaz(); algolYaz();
+    ozetYaz(); gezegenYaz(); hedefYaz(); degisenYaz(); meteorYaz(); olayYaz(); algolYaz();
     if (planBekle) { const ol = el.querySelector('#gkPlan'); if (ol) ol.innerHTML = '<li><span class="bos">Hazırlanıyor…</span></li>'; el.querySelector('#gkPlanDugme').hidden = true; }
     else planYaz();
     konumYazi();
@@ -1052,6 +1199,8 @@
     el.querySelector('#gkKAd').value = k.ad;
     el.querySelector('#gkKEnlem').value = String(k.enlem).replace('.', ',');
     el.querySelector('#gkKBoylam').value = String(k.boylam).replace('.', ',');
+    el.querySelector('#gkSQM').value = durum.sqmElle != null ? String(durum.sqmElle).replace('.', ',') : '';
+    el.querySelector('#gkGozBebegi').value = durum.gozBebegi != null ? String(durum.gozBebegi).replace('.', ',') : '';
     durumYazK('');
     el.querySelectorAll('#gkKEnlem, #gkKBoylam').forEach(i => { i.removeAttribute('aria-invalid'); i.removeAttribute('aria-describedby'); });
     const oto = el.querySelector('#gkKOto');
@@ -1125,6 +1274,8 @@
     });
     p.addEventListener('close', () => {
       if (p.returnValue !== 'kaydet') return;
+      ayarlariKaydet();   // v45: elle SQM ve göz bebeği (konumdan bağımsız, her kayıtta)
+      gorunurlukYenile();
       if (el.querySelector('#gkKOto').checked) {
         U.otoAyarla(true);
         konumYazi();
@@ -1157,6 +1308,13 @@
 
   function bagla() {
     el.addEventListener('click', e => {
+      /* v45: görünürlük çipine dokununca gerekçe kutusu açılır/kapanır */
+      const ga = e.target.closest('.gor-ac');
+      if (ga) {
+        const li = ga.closest('li'), k = li && li.querySelector('.gor-kutu');
+        if (k) { k.hidden = !k.hidden; ga.setAttribute('aria-expanded', String(!k.hidden)); }
+        return;
+      }
       const bul = e.target.closest('.bul');
       if (bul) {
         const h = durum.veri.hedefler.find(x => x.id === bul.dataset.hedef);
@@ -1212,6 +1370,7 @@
       geceHesapla(); levhaCiz();
     });
     el.querySelector('#gkBuGece').addEventListener('click', () => el.querySelector('#gkSimdi').click());
+    el.querySelector('#gkDegisenAl').addEventListener('click', () => { degisenAl().catch(h => { if (window.Tani) Tani.hataEkle('değişenler: ' + (h && h.message)); }); });
     const bilgi = el.querySelector('#gkBilgi');
     let bilgiSayac = null;
     durum.harita = Harita.olustur(el.querySelector('#gkLevha'), durum.veri, (html, yer) => {
@@ -1264,8 +1423,9 @@
     el = kok;
     el.innerHTML = '<p class="bos">Gökyüzü hazırlanıyor…</p>';
     try {
-      const [yildizlar, takimyildizlar, hedefler, meteor, ortmeY, algol] = await Promise.all([U.veri('yildizlar'), U.veri('takimyildiz'), U.veri('hedefler'), U.veri('meteor'), U.veri('ortme_yildiz'), U.veri('algol')]);
-      durum.veri = { yildizlar, takimyildizlar, hedefler: hedefler.hedefler, hedefKaynak: hedefler.kaynak, meteor, ortmeYildiz: ortmeY.y, algol };
+      const [yildizlar, takimyildizlar, hedefler, meteor, ortmeY, algol, boyut, degisen] = await Promise.all([U.veri('yildizlar'), U.veri('takimyildiz'), U.veri('hedefler'), U.veri('meteor'), U.veri('ortme_yildiz'), U.veri('algol'), U.veri('hedef_boyut'), U.veri('durbun_degisenleri')]);
+      durum.veri = { yildizlar, takimyildizlar, hedefler: hedefler.hedefler, hedefKaynak: hedefler.kaynak, meteor, ortmeYildiz: ortmeY.y, algol,
+        hedefBoyut: boyut.hedefler, degisenler: degisen.yildizlar, degisenKaynak: degisen.kaynak };
     } catch (e) {
       if (window.Tani) Tani.hataEkle('gök verisi: ' + (e && e.message));
       el.innerHTML = '<h1>Bu gece gökyüzü</h1><div class="hata-kutu" role="alert">Gök verisi yüklenemedi. Başka bir sekmeye geçip dönünce yeniden denenir; sorun sürerse internet bağlantısını kontrol et.</div>';
@@ -1278,6 +1438,7 @@
     simdiyeKur();
     geceHesapla();
     levhaCiz();
+    gorunurlukBaslat();
     canliSayac = setInterval(() => {
       if (!el.hidden) issYaz(false); // 10 dakikada bir: geçmiş geçişler düşer, alınamamış veri yeniden denenir (uydu.js 2 saat bekletir)
       /* Bulut tahmini saatte bir yenilenir (önbellek 1 saat taze; tazeyse ağa gidilmez) */

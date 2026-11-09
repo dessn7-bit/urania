@@ -370,3 +370,22 @@ Yıldız atlama (node + bulucu.js, İstanbul 41,0046 K; dört farklı tarih): Ti
 Diğer hesaplar (python3, hepsi doğru): 2·1000·tan 3,2° = 111,8 m; 2·atan(7·tan 3,2°) = 42,75°; Bresser 2·1000·tan 3,485° = 121,8 m; 0,96¹⁶ = 0,520; 0,985¹⁶ = 0,785; 7,1² = 50,41; √350 = 18,71; √500 = 22,36; 5,8² = 33,64; (6,4/0,5)² = 163,8; 0,5/6,4 = 0,078; 0,078² = 0,0061; M13: π·600² = 1.130.973, log = 6,053, S = 20,93, 10^(0,4·0,9) = 2,29, 10^(−0,4·2,9) = 0,069; 15/6,4 = 2,34 (atlamaYolu() her adımı ≤ 0,95 alanla sınırladığı için 15° en az 3 adım).
 
 Askıda: yok. Çubukların "~2 saat" değeri yalnız Wikipedia'da (ref. 3, 16); ders bunu ayrılık olarak veriyor. WebSearch: 0 (d11 için).
+
+## v45 ekleme (2026-11-09) — Bölüm 11, görünürlük hesabı (iki paragraf)
+
+Kaynaklar bu oturumda PDF'lerinden okundu (ADS taramaları ve arXiv); ayrıntı ve denklem listesi arastirma/gorunurluk_kaynak.md.
+
+| İddia | Kaynak URL | Kaynaktaki ifade |
+|---|---|---|
+| Falchi ve ark. 2016 atlası; doğal gök 22,0 kadir/yay sn² | https://doi.org/10.1126/sciadv.1600377 | "We chose 22.0 mag/arcsec2, corresponding to 174 μcd/m2, as a typical brightness of the night sky background during solar minimum activity" (s. 2) |
+| Havaışığı aynı gecede yarım kadirden fazla değişebilir | aynı | "Natural airglow variations, even during the same night, can cause more than half a magnitude variation in the background sky brightness at unpolluted sites." |
+| Atlas 2014–2015 uydu verisi | https://doi.org/10.5880/GFZ.1.4.2016.001 ; makale | Veri seti adı "World_Atlas_2015"; makale: VIIRS DNB verisi (Materials and Methods) |
+| Krisciunas & Schaefer 1991: evre, uzaklık, yükseklik, sönümleme; %8–23 doğruluk, Mauna Kea | https://doi.org/10.1086/132921 (ADS: 1991PASP..103.1033K) | Özet: "a model for predicting the moonlight as a function of the Moon's phase, the zenith distance of the Moon, the zenith distance of the sky position, the angular separation of the Moon and sky position, and the local extinction coefficient" ; "the accuracy of our predictions to range from 8% to 23%" ; "measurements of the sky brightness from the 2800-m level of Mauna Kea" |
+| Crumey 2014: Blackwell 1946, 19 eğitimli gözlemci, iki gözle | https://arxiv.org/abs/1405.4209 (MNRAS 442, 2600) | "A total of 19 highly trained female observers aged 19-26 with approximately 20/20 vision were employed" ; "Observers viewed targets using unconstrained (direct or averted) binocular vision" (§1.3) |
+| Eşik gök parlaklığına ve cismin büyüklüğüne bağlı | aynı | Denk. (58): ΔB = ((ΔI/A)^q + ΔB∞^q)^(1/q); (60)–(62) astronomik birimlerde |
+| M33 21,83 kadirlik gökte eşiğin kıyısında; kolay hedef değil | aynı | "the two curves are just touching, i.e. the target is at threshold" (μsky = 21,83, F = 1,378) ; "the general conclusion (given the low F values required) is that M33 can not reasonably be considered an easy target for average observers, even under very dark skies" (§3.1) |
+| 7×50: yıldız ışığı 49 kat; göz merceğindeki gök geçirgenlikle kararır | aynı | Denk. (66) B_a = (δ_min/p)² B / F_t ; (67) ΔI_a = (D/δ_max)² ΔI / F_t ; D/δ_max = 50/7,14 = 7 → 7² = 49 [H] |
+| Tek gözle bakmanın kaybı yaklaşık %41 (√2), iki gözde uygulanmaz | aynı ; https://doi.org/10.1086/132629 (Schaefer 1990) | Crumey §1.6.4: "the monocular threshold is √2 times the binocular value. This is the factor that was assumed by Schaefer (1990)" ; Schaefer 1990 s. 213: "the difference in sensitivity is a factor of the square root of two (which corresponds to 0.38 magnitude) … binocular correction factor, F_b, which equals 1.41" |
+| Ay modeli dağ başı (Mauna Kea) için | https://doi.org/10.1086/132921 | "Strictly speaking, the values of B_moon and ΔV in Table 2 only apply to a site with the same median extinction coefficient and mean dark-sky brightness as the 2800-m level of Mauna Kea" (s. 1038) |
+| Parlak çekirdekli cisimlerde ortalama yüzey parlaklığı kötümser | [H] | Model karşılaştırması: M31 için ortalama yüzey parlaklığıyla "görünür" eşiği 20,7 kadir/yay sn² gök ister; Crumey'nin profil hesabı (§3.1) F = 2 ile 19,2'de görünür der (arastirma/gorunurluk_kaynak.md) |
+| Etikete dokununca gerekçe: gök parlaklığı, Ay katkısı, yükseklik, eşik | [U] | gorunurluk.js `gerekce`, gozlem.js `gorunurlukEtiketi` |

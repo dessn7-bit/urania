@@ -1,0 +1,97 @@
+{
+ "VSXObject": {
+  "Name": "omi Cet",
+  "AUID": "000-BBD-706",
+  "RA2000": "34.83662",
+  "Declination2000": "-2.97764",
+  "VariabilityType": "M",
+  "Period": "331.3",
+  "MaxMag": "2.0 V",
+  "MinMag": "10.1 V",
+  "Constellation": "Cet",
+  "Data": {
+   "Observation": [
+    {
+     "JD": "2461347.0076",
+     "Mag": "7.4424",
+     "Uncertainty": "0.0305",
+     "ObsType": "DSLR",
+     "Band": "TG",
+     "ValFlag": "Z"
+    },
+    {
+     "JD": "2461349.070139",
+     "Mag": "7.9",
+     "ObsType": "Visual",
+     "Band": "Vis.",
+     "ValFlag": "Z"
+    },
+    {
+     "JD": "2461349.38125",
+     "Mag": "7.1",
+     "ObsType": "Visual",
+     "Band": "Vis.",
+     "ValFlag": "Z"
+    },
+    {
+     "JD": "2461349.4167",
+     "Mag": "7.7",
+     "ObsType": "Visual",
+     "Band": "Vis.",
+     "ValFlag": "Z"
+    },
+    {
+     "JD": "2461349.538194",
+     "Mag": "7.1",
+     "ObsType": "Visual",
+     "Band": "Vis.",
+     "ValFlag": "Z"
+    },
+    {
+     "JD": "2461350.378",
+     "Mag": "7.5",
+     "ObsType": "Visual",
+     "Band": "Vis.",
+     "ValFlag": "Z"
+    },
+    {
+     "JD": "2461350.44184",
+     "Mag": "7.2",
+     "ObsType": "Visual",
+     "Band": "Vis.",
+     "ValFlag": "Z"
+    },
+    {
+     "JD": "2461351.385417",
+     "Mag": "7.0",
+     "ObsType": "Visual",
+     "Band": "Vis.",
+     "ValFlag": "Z"
+    },
+    {
+     "JD": "2461352.0045",
+     "Mag": "6.8310",
+     "Uncertainty": "0.0191",
+     "ObsType": "DSLR",
+     "Band": "TG",
+     "ValFlag": "Z"
+    },
+    {
+     "JD": "2461352.779039",
+     "Mag": "6.622",
+     "Uncertainty": "0.059",
+     "ObsType": "CCD",
+     "Band": "V",
+     "ValFlag": "Z"
+    },
+    {
+     "JD": "2461353.01875",
+     "Mag": "7.0",
+     "ObsType": "Visual",
+     "Band": "Vis.",
+     "ValFlag": "Z"
+    }
+   ]
+  }
+ }
+}

@@ -369,6 +369,9 @@
     let aq = null;
     try { aq = await aqGetir(enlem, boylam); } catch (e) { aq = null; }
     const a = aq && aqGece(aq.j, bas, son);
+    /* v45: gece ortalaması AOD görünürlük hesabının sönümleme katsayısına girer (gozlem.js dinler) */
+    const yeniAod = a ? a.aod : null;
+    if (window.HavaKart && window.HavaKart.sonAod !== yeniAod) { window.HavaKart.sonAod = yeniAod; try { document.dispatchEvent(new CustomEvent('urania:aod')); } catch (h) { /* eski tarayıcı */ } }
     const gece = (havaSaatler || []).filter(s => s.t >= new Date(bas.getTime() - 30 * 60e3) && s.t <= new Date(son.getTime() + 30 * 60e3));
     const satir = [];
     if (a) {
@@ -446,7 +449,7 @@
   }
 
   window.HavaKart = {
-    yaz, geceKarari,
+    yaz, geceKarari, sonAod: null,
     hesap: { kutu, sonZaman, haritaUrl, maskeUrl, maskeSinif, ensembleSay, modelTahmin, aodKadir, aqGece, cigSaatleri, sisDurumu, kpUyari, senaryoDizileri, ekI },
     sabit: { ENS_MODEL, TEK_MODEL, ACIK_ESIK, SIS, PUS, KADIR_TAU, KATMAN, UYDU_ONBELLEK }
   };

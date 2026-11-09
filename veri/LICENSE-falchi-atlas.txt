@@ -1,0 +1,26 @@
+veri/gok_parlakligi.u8.gz ve veri/gok_parlakligi.json — lisans ve atıf
+
+Bu iki dosya, "The New World Atlas of Artificial Night Sky Brightness" veri setinin (World_Atlas_2015.tif)
+Türkiye ve çevresi (25,5–45° D, 35,5–42,5° K) için 2 yay dakikası hücrelere indirgenmiş, uint8 kodlanmış
+türevidir. Üretim: araclar/gok_parlakligi.py (yeniden çalıştırılabilir). Ham veri depoda yoktur.
+
+LİSANS: Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+  https://creativecommons.org/licenses/by-nc/4.0/
+  Veri sayfasının (GFZ Data Services) sürüm geçmişi: "13 November 2019: change of the licence to CC BY NC 4.0
+  (after end of embargo period)". Zip içindeki 15 Haziran 2016 tarihli README.txt ise eski kuralı taşır
+  ("As of 15 June 2016, further distribution of these files and commercial use are both generally prohibited.
+  Changes to this policy will be announced via the data access webpage."); veri erişim sayfası bu değişikliği
+  duyurduğu için geçerli lisans CC BY-NC 4.0'dır. Urania ticari değildir. Ayrıntı: arastirma/gorunurluk_kaynak.md.
+
+ATIF (README.txt'nin istediği gibi her iki kaynak):
+  1) Falchi, Fabio; Cinzano, Pierantonio; Duriscoe, Dan; Kyba, Christopher C. M.; Elvidge, Christopher D.;
+     Baugh, Kimberly; Portnov, Boris; Rybnikova, Nataliya A.; Furgoni, Riccardo (2016): Supplement to:
+     The New World Atlas of Artificial Night Sky Brightness. GFZ Data Services. https://doi.org/10.5880/GFZ.1.4.2016.001
+  2) Falchi F, Cinzano P, Duriscoe D, Kyba CC, Elvidge CD, Baugh K, Portnov BA, Rybnikova NA, Furgoni R.
+     The new world atlas of artificial night sky brightness. Science Advances. 2016 Jun 1;2(6):e1600377.
+     https://doi.org/10.1126/sciadv.1600377
+
+DEĞİŞİKLİKLER (CC BY-NC 4.0 madde 3(a)(1)(B) gereği belirtilir): 30″ ızgara 2′ hücrelere doğrusal ortalamayla
+indirgendi; yapay parlaklık doğal göğe oran olarak 0,1 kadir adımlarla uint8'e kodlandı (veri/gok_parlakligi.json
+"kodlama"); yalnız Türkiye penceresi alındı. Doğal gök parlaklığı (174 µcd/m² = 22,0 kadir/yay sn²) dâhil değildir,
+uygulama ekler. Uygulama değerleri "yapay ışık modeli, 2014–2015 uydu verisi" diye işaretler.

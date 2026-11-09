@@ -226,7 +226,7 @@ test('Bütün dış istekler: koordinat iki ondalık, yalnız izinli alan adlar�
   await expect(page.locator('#gkSeffaflik')).toBeVisible();
   await expect(page.locator('#gkUyduImg')).toBeVisible();
   expect(await page.evaluate(() => window.__csp)).toEqual([]);
-  const izinli = ['view.eumetsat.int', 'api.open-meteo.com', 'ensemble-api.open-meteo.com', 'air-quality-api.open-meteo.com', 'services.swpc.noaa.gov', 'celestrak.org', 'nominatim.openstreetmap.org'];
+  const izinli = ['view.eumetsat.int', 'api.open-meteo.com', 'ensemble-api.open-meteo.com', 'air-quality-api.open-meteo.com', 'services.swpc.noaa.gov', 'celestrak.org', 'nominatim.openstreetmap.org', 'vsx.aavso.org'];
   page.istekler.forEach(u => {
     const x = new URL(u);
     expect(izinli).toContain(x.hostname);

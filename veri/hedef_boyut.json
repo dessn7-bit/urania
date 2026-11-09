@@ -1,0 +1,402 @@
+{
+ "aciklama": "Dürbün hedeflerinin boyutu ve parlaklığı (görünürlük eşiği hesabı için). Türetilmiş veri; alan kaynakları her kayıtta.",
+ "lisans": "OpenNGC verisi: CC BY-SA 4.0 — Mattia Verga, OpenNGC, https://github.com/mattiaverga/OpenNGC. Bu dosya OpenNGC'den türetilmiştir ve aynı lisansla (CC BY-SA 4.0) dağıtılır. hedefler.json'dan alınan değerlerin kaynakları arastirma/hedefler_dogrulanmis.json ve dogrulama_messier.md.",
+ "birimler": {
+  "buyukEksen": "yay dakikası",
+  "kucukEksen": "yay dakikası",
+  "vKadir": "kadir (V)",
+  "bKadir": "kadir (B)",
+  "yuzeyParlakligiB": "kadir/yay sn² (B)"
+ },
+ "uretim": {
+  "tarih": "2026-11-09",
+  "arac": "araclar/hedef_boyut.py"
+ },
+ "hedefler": [
+  {
+   "id": "M45",
+   "ad": "Ülker",
+   "tur": "acik_kume",
+   "kaynak": {
+    "boyut": "veri/hedefler.json \"boyut\" (OpenNGC'de yok)",
+    "vKadir": "veri/hedefler.json \"kadir\" (hedefler_dogrulanmis.json; OpenNGC'de boş)"
+   },
+   "buyukEksen": 110.0,
+   "kucukEksen": 110.0,
+   "vKadir": 1.2
+  },
+  {
+   "id": "M42",
+   "ad": "Orion Bulutsusu (Avcı Bulutsusu)",
+   "tur": "bulutsu",
+   "kaynak": {
+    "boyut": "OpenNGC NGC.csv",
+    "vKadir": "OpenNGC",
+    "bKadir": "OpenNGC"
+   },
+   "openngc": "NGC1976",
+   "openngcTur": "Cl+N",
+   "buyukEksen": 90.0,
+   "kucukEksen": 60.0,
+   "vKadir": 4.0,
+   "bKadir": 4.0
+  },
+  {
+   "id": "M31",
+   "ad": "Andromeda Galaksisi",
+   "tur": "galaksi",
+   "kaynak": {
+    "boyut": "OpenNGC NGC.csv",
+    "vKadir": "OpenNGC",
+    "bKadir": "OpenNGC",
+    "yuzeyParlakligiB": "OpenNGC SurfBr (B bandı, 25 kadir eş-ışık eğrisi içi ortalama)"
+   },
+   "openngc": "NGC0224",
+   "openngcTur": "G",
+   "buyukEksen": 177.83,
+   "kucukEksen": 69.66,
+   "vKadir": 3.44,
+   "bKadir": 4.29,
+   "yuzeyParlakligiB": 23.63
+  },
+  {
+   "id": "M44",
+   "ad": "Arıkovanı yıldız kümesi (Praesepe)",
+   "tur": "acik_kume",
+   "kaynak": {
+    "boyut": "OpenNGC NGC.csv (yalnız büyük eksen; daire kabul)",
+    "vKadir": "OpenNGC",
+    "bKadir": "OpenNGC"
+   },
+   "openngc": "NGC2632",
+   "openngcTur": "OCl",
+   "buyukEksen": 108.6,
+   "kucukEksen": 108.6,
+   "vKadir": 3.1,
+   "bKadir": 3.46
+  },
+  {
+   "id": "M13",
+   "ad": "Herkül'deki Büyük Yıldız Kümesi",
+   "tur": "kuresel_kume",
+   "kaynak": {
+    "boyut": "OpenNGC NGC.csv (yalnız büyük eksen; daire kabul)",
+    "vKadir": "OpenNGC"
+   },
+   "openngc": "NGC6205",
+   "openngcTur": "GCl",
+   "buyukEksen": 16.5,
+   "kucukEksen": 16.5,
+   "vKadir": 5.8
+  },
+  {
+   "id": "M8",
+   "ad": "Deniz Kulağı Bulutsusu",
+   "tur": "bulutsu",
+   "kaynak": {
+    "boyut": "OpenNGC NGC.csv",
+    "vKadir": "OpenNGC",
+    "bKadir": "OpenNGC"
+   },
+   "openngc": "NGC6523",
+   "openngcTur": "Neb",
+   "buyukEksen": 45.0,
+   "kucukEksen": 30.0,
+   "vKadir": 5.8,
+   "bKadir": 5.0
+  },
+  {
+   "id": "M7",
+   "ad": "Ptolemy (Batlamyus) yıldız kümesi",
+   "tur": "acik_kume",
+   "kaynak": {
+    "boyut": "OpenNGC NGC.csv (yalnız büyük eksen; daire kabul)",
+    "vKadir": "OpenNGC",
+    "bKadir": "OpenNGC"
+   },
+   "openngc": "NGC6475",
+   "openngcTur": "OCl",
+   "buyukEksen": 22.2,
+   "kucukEksen": 22.2,
+   "vKadir": 3.3,
+   "bKadir": 3.45
+  },
+  {
+   "id": "M6",
+   "ad": "Kelebek Yıldız Kümesi",
+   "tur": "acik_kume",
+   "kaynak": {
+    "boyut": "OpenNGC NGC.csv (yalnız büyük eksen; daire kabul)",
+    "vKadir": "OpenNGC",
+    "bKadir": "OpenNGC"
+   },
+   "openngc": "NGC6405",
+   "openngcTur": "OCl",
+   "buyukEksen": 15.6,
+   "kucukEksen": 15.6,
+   "vKadir": 4.2,
+   "bKadir": 4.48
+  },
+  {
+   "id": "M22",
+   "ad": "M22",
+   "tur": "kuresel_kume",
+   "kaynak": {
+    "boyut": "OpenNGC NGC.csv (yalnız büyük eksen; daire kabul)",
+    "vKadir": "veri/hedefler.json \"kadir\" (hedefler_dogrulanmis.json; OpenNGC'de boş)"
+   },
+   "openngc": "NGC6656",
+   "openngcTur": "GCl",
+   "buyukEksen": 12.6,
+   "kucukEksen": 12.6,
+   "vKadir": 5.1
+  },
+  {
+   "id": "M35",
+   "ad": "M35",
+   "tur": "acik_kume",
+   "kaynak": {
+    "boyut": "OpenNGC NGC.csv (yalnız büyük eksen; daire kabul)",
+    "vKadir": "veri/hedefler.json \"kadir\" (hedefler_dogrulanmis.json; OpenNGC'de boş)"
+   },
+   "openngc": "NGC2168",
+   "openngcTur": "OCl",
+   "buyukEksen": 24.0,
+   "kucukEksen": 24.0,
+   "vKadir": 5.3
+  },
+  {
+   "id": "M36",
+   "ad": "M36",
+   "tur": "acik_kume",
+   "kaynak": {
+    "boyut": "OpenNGC NGC.csv (yalnız büyük eksen; daire kabul)",
+    "vKadir": "OpenNGC",
+    "bKadir": "OpenNGC"
+   },
+   "openngc": "NGC1960",
+   "openngcTur": "OCl",
+   "buyukEksen": 7.2,
+   "kucukEksen": 7.2,
+   "vKadir": 6.0,
+   "bKadir": 6.09
+  },
+  {
+   "id": "M37",
+   "ad": "M37",
+   "tur": "acik_kume",
+   "kaynak": {
+    "boyut": "OpenNGC NGC.csv (yalnız büyük eksen; daire kabul)",
+    "vKadir": "OpenNGC",
+    "bKadir": "OpenNGC"
+   },
+   "openngc": "NGC2099",
+   "openngcTur": "OCl",
+   "buyukEksen": 11.4,
+   "kucukEksen": 11.4,
+   "vKadir": 5.6,
+   "bKadir": 6.19
+  },
+  {
+   "id": "M38",
+   "ad": "M38",
+   "tur": "acik_kume",
+   "kaynak": {
+    "boyut": "OpenNGC NGC.csv (yalnız büyük eksen; daire kabul)",
+    "vKadir": "OpenNGC",
+    "bKadir": "OpenNGC"
+   },
+   "openngc": "NGC1912",
+   "openngcTur": "OCl",
+   "buyukEksen": 9.6,
+   "kucukEksen": 9.6,
+   "vKadir": 6.4,
+   "bKadir": 6.69
+  },
+  {
+   "id": "M39",
+   "ad": "M39",
+   "tur": "acik_kume",
+   "kaynak": {
+    "boyut": "OpenNGC NGC.csv (yalnız büyük eksen; daire kabul)",
+    "vKadir": "OpenNGC",
+    "bKadir": "OpenNGC"
+   },
+   "openngc": "NGC7092",
+   "openngcTur": "OCl",
+   "buyukEksen": 19.5,
+   "kucukEksen": 19.5,
+   "vKadir": 4.6,
+   "bKadir": 4.66
+  },
+  {
+   "id": "M11",
+   "ad": "Yaban Ördeği Yıldız Kümesi",
+   "tur": "acik_kume",
+   "kaynak": {
+    "boyut": "OpenNGC NGC.csv (yalnız büyük eksen; daire kabul)",
+    "vKadir": "OpenNGC",
+    "bKadir": "OpenNGC"
+   },
+   "openngc": "NGC6705",
+   "openngcTur": "OCl",
+   "buyukEksen": 9.0,
+   "kucukEksen": 9.0,
+   "vKadir": 5.8,
+   "bKadir": 6.32
+  },
+  {
+   "id": "M27",
+   "ad": "Halter Bulutsusu",
+   "tur": "bulutsu",
+   "kaynak": {
+    "boyut": "OpenNGC NGC.csv (yalnız büyük eksen; daire kabul)",
+    "vKadir": "OpenNGC",
+    "bKadir": "OpenNGC"
+   },
+   "openngc": "NGC6853",
+   "openngcTur": "PN",
+   "buyukEksen": 6.7,
+   "kucukEksen": 6.7,
+   "vKadir": 7.4,
+   "bKadir": 7.6
+  },
+  {
+   "id": "M92",
+   "ad": "M92",
+   "tur": "kuresel_kume",
+   "kaynak": {
+    "boyut": "OpenNGC NGC.csv (yalnız büyük eksen; daire kabul)",
+    "vKadir": "OpenNGC"
+   },
+   "openngc": "NGC6341",
+   "openngcTur": "GCl",
+   "buyukEksen": 14.4,
+   "kucukEksen": 14.4,
+   "vKadir": 6.52
+  },
+  {
+   "id": "M3",
+   "ad": "M3",
+   "tur": "kuresel_kume",
+   "kaynak": {
+    "boyut": "OpenNGC NGC.csv (yalnız büyük eksen; daire kabul)",
+    "vKadir": "OpenNGC"
+   },
+   "openngc": "NGC5272",
+   "openngcTur": "GCl",
+   "buyukEksen": 16.2,
+   "kucukEksen": 16.2,
+   "vKadir": 6.39
+  },
+  {
+   "id": "M5",
+   "ad": "M5",
+   "tur": "kuresel_kume",
+   "kaynak": {
+    "boyut": "OpenNGC NGC.csv (yalnız büyük eksen; daire kabul)",
+    "vKadir": "OpenNGC"
+   },
+   "openngc": "NGC5904",
+   "openngcTur": "GCl",
+   "buyukEksen": 15.0,
+   "kucukEksen": 15.0,
+   "vKadir": 5.95
+  },
+  {
+   "id": "NGC 869",
+   "ad": "Perseus Çift Kümesi – h Persei (batı)",
+   "tur": "acik_kume",
+   "kaynak": {
+    "boyut": "OpenNGC NGC.csv (yalnız büyük eksen; daire kabul)",
+    "vKadir": "OpenNGC",
+    "bKadir": "OpenNGC"
+   },
+   "openngc": "NGC0869",
+   "openngcTur": "OCl",
+   "buyukEksen": 14.4,
+   "kucukEksen": 14.4,
+   "vKadir": 3.7,
+   "bKadir": 4.3
+  },
+  {
+   "id": "NGC 884",
+   "ad": "Perseus Çift Kümesi – χ Persei (doğu)",
+   "tur": "acik_kume",
+   "kaynak": {
+    "boyut": "OpenNGC NGC.csv (yalnız büyük eksen; daire kabul)",
+    "vKadir": "OpenNGC",
+    "bKadir": "OpenNGC"
+   },
+   "openngc": "NGC0884",
+   "openngcTur": "OCl",
+   "buyukEksen": 10.5,
+   "kucukEksen": 10.5,
+   "vKadir": 3.8,
+   "bKadir": 4.4
+  },
+  {
+   "id": "Mel 111",
+   "ad": "Saç Yıldız Kümesi",
+   "tur": "acik_kume",
+   "kaynak": {
+    "boyut": "OpenNGC addendum.csv (yalnız büyük eksen; daire kabul)",
+    "vKadir": "veri/hedefler.json \"kadir\" (hedefler_dogrulanmis.json; OpenNGC'de boş)"
+   },
+   "openngc": "Mel111",
+   "openngcTur": "OCl",
+   "buyukEksen": 253.5,
+   "kucukEksen": 253.5,
+   "vKadir": 1.8
+  },
+  {
+   "id": "Cr 399",
+   "ad": "Cr 399 (Coathanger)",
+   "tur": "yildiz_kumesi_asterizm",
+   "kaynak": {
+    "boyut": "OpenNGC addendum.csv (yalnız büyük eksen; daire kabul)",
+    "vKadir": "OpenNGC",
+    "bKadir": "OpenNGC"
+   },
+   "openngc": "Cl399",
+   "openngcTur": "*Ass",
+   "buyukEksen": 70.0,
+   "kucukEksen": 70.0,
+   "vKadir": 3.6,
+   "bKadir": 3.93
+  },
+  {
+   "id": "Albireo",
+   "ad": "Albireo",
+   "tur": "cift_yildiz",
+   "kaynak": {
+    "vKadir": "veri/hedefler.json \"kadir\" (hedefler_dogrulanmis.json; OpenNGC'de boş)",
+    "not": "yıldız; OpenNGC kapsamı dışında, boyut uygulanmaz"
+   },
+   "vKadir": 3.08,
+   "noktaKaynak": true
+  },
+  {
+   "id": "Mizar",
+   "ad": "Mizar",
+   "tur": "cift_yildiz",
+   "kaynak": {
+    "vKadir": "veri/hedefler.json \"kadir\" (hedefler_dogrulanmis.json; OpenNGC'de boş)",
+    "not": "yıldız; OpenNGC kapsamı dışında, boyut uygulanmaz"
+   },
+   "vKadir": 2.22,
+   "noktaKaynak": true
+  },
+  {
+   "id": "Alcor",
+   "ad": "Alcor",
+   "tur": "cift_yildiz",
+   "kaynak": {
+    "vKadir": "veri/hedefler.json \"kadir\" (hedefler_dogrulanmis.json; OpenNGC'de boş)",
+    "not": "yıldız; OpenNGC kapsamı dışında, boyut uygulanmaz"
+   },
+   "vKadir": 4.01,
+   "noktaKaynak": true
+  }
+ ]
+}

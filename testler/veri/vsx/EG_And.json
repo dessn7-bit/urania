@@ -1,0 +1,38 @@
+{
+ "VSXObject": {
+  "Name": "EG And",
+  "AUID": "000-BBC-010",
+  "RA2000": "11.15496",
+  "Declination2000": "40.67936",
+  "VariabilityType": "ZAND+E",
+  "Period": "482.57",
+  "MaxMag": "6.97 V",
+  "MinMag": "7.8 V",
+  "Constellation": "And",
+  "Data": {
+   "Observation": [
+    {
+     "JD": "2461348.982639",
+     "Mag": "7.1",
+     "ObsType": "Visual",
+     "Band": "Vis.",
+     "ValFlag": "Z"
+    },
+    {
+     "JD": "2461349.577083",
+     "Mag": "7.2",
+     "ObsType": "Visual",
+     "Band": "Vis.",
+     "ValFlag": "Z"
+    },
+    {
+     "JD": "2461350.25",
+     "Mag": "7.4",
+     "ObsType": "Visual",
+     "Band": "Vis.",
+     "ValFlag": "Z"
+    }
+   ]
+  }
+ }
+}

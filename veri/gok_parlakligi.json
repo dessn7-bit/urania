@@ -1,0 +1,35 @@
+{
+ "aciklama": "Yapay başucu gök parlaklığı (mcd/m²), Falchi ve ark. 2016 atlasından 2 yay dakikası hücreye (doğrusal ortalama) indirgenmiş. Doğal gök (174 µcd/m² = 22.0 kadir/yay sn², makale) DÂHİL DEĞİL; uygulama ekler.",
+ "kaynak": {
+  "veri": "The New World Atlas of Artificial Night Sky Brightness — Supplement (World_Atlas_2015.tif), GFZ Data Services",
+  "veri_doi": "10.5880/GFZ.1.4.2016.001",
+  "makale": "Falchi F. ve ark. (2016) Science Advances 2(6): e1600377",
+  "makale_doi": "10.1126/sciadv.1600377",
+  "lisans": "CC BY-NC 4.0 (veri sayfası sürüm geçmişi, 13 Kasım 2019); bkz. veri/LICENSE-falchi-atlas.txt"
+ },
+ "sinirlar": {
+  "bati": 25.5,
+  "dogu": 45.0,
+  "guney": 35.5,
+  "kuzey": 42.5
+ },
+ "adim_derece": 0.03333333333333333,
+ "sutun": 585,
+ "satir": 210,
+ "dizilis": "satır 0 kuzey (42.5°), sütun 0 batı (25.5°); indeks = satır × sütun_sayısı + sütun; uint8",
+ "kodlama": {
+  "kod0": "veri yok",
+  "formul": "L_art_mcd = L_dogal_mcd × (10^(0.4 × adim_kadir × (kod − 1)) − 1); kod 1 = yapay ışık yok",
+  "L_dogal_mcd": 0.174,
+  "adim_kadir": 0.1,
+  "aciklama": "kod, yapay ışığın doğal göğü (22.0 kadir/yay sn²) kaç kadir parlattığıdır (0.1 kadir adım). Toplam kadir hatası ≤ 0.05."
+ },
+ "kaynak_piksel": "30 yay saniyesi; hücre başına 16–16 piksel ortalaması",
+ "uretim": {
+  "tarih": "2026-11-09",
+  "arac": "araclar/gok_parlakligi.py",
+  "sha256_ham": "f728a2fb2b1a1cd4f80c772f4d97bf1c7d71760eda5db48f43336508a7e958c0",
+  "bayt_ham": 122850,
+  "bayt_gz": 26037
+ }
+}

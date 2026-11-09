@@ -84,10 +84,27 @@ async function havaServisleri(page, s = {}) {
 /* v44: hava kartlarının dış servisleri (ensemble, hava kalitesi, Kp, EUMETSAT) bu testin konusu değilse boş ama geçerli
    HTTP yanıtı alır: kart gizli kalır, konsola "Failed to load resource" düşmez. (Ağ zaten kapalı: playwright.config.js vekil.) */
 async function havaSessiz(page) {
+  await vsxServisi(page);
   await page.route('**/ensemble-api.open-meteo.com/**', r => r.fulfill({ json: {} }));
   await page.route('**/air-quality-api.open-meteo.com/**', r => r.fulfill({ json: {} }));
   await page.route('**/services.swpc.noaa.gov/**', r => r.fulfill({ json: [] }));
   await page.route('**/view.eumetsat.int/**', r => r.fulfill({ contentType: 'application/xml', body: '<WMS_Capabilities/>' }));
 }
 
-module.exports = { havaSessiz, havaServisleri, HAVA_FIX, celestrak, disAgiKes, xssGozcu, xssDurumu, ISTASYON, SON30, kok: path.join(__dirname, '..') };
+/* v45: AAVSO VSX (vsx.aavso.org) sahte yanıtı — testler/veri/vsx/<ad>.json: gerçek yanıtların gözlemci alanları
+   silinmiş kopyaları (araclar/degisen_verisi.py --fixture). Fixture'ı olmayan yıldız için boş gözlem listesi. */
+const VSX = path.join(__dirname, 'veri', 'vsx');
+async function vsxServisi(page, s = {}) {
+  page.vsxIstekler = page.vsxIstekler || [];
+  await page.route('**/vsx.aavso.org/**', r => {
+    const u = new URL(r.request().url());
+    page.vsxIstekler.push(u.href);
+    if (s.hata) return r.fulfill({ status: 503, body: '' });
+    const ident = u.searchParams.get('ident') || '';
+    const dosya = path.join(VSX, ident.replace(/[^A-Za-z0-9]+/g, '_').replace(/^_|_$/g, '') + '.json');
+    if (fs.existsSync(dosya)) return r.fulfill({ contentType: 'application/json', body: fs.readFileSync(dosya) });
+    return r.fulfill({ json: { VSXObject: { Name: ident, Data: { Observation: [] } } } });
+  });
+}
+
+module.exports = { havaSessiz, havaServisleri, vsxServisi, HAVA_FIX, celestrak, disAgiKes, xssGozcu, xssDurumu, ISTASYON, SON30, kok: path.join(__dirname, '..') };

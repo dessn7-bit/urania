@@ -3,3 +3,7 @@ test-results/
 playwright-report/
 __pycache__/
 .claude/settings.local.json
+# Işık kirliliği atlası ham verisi (GFZ, 684 MB zip / 3 GB tif): depoya girmez, araclar/gok_parlakligi.py ile yeniden üretilir
+World_Atlas_2015*
+*.tif
+*.tpk

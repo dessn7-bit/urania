@@ -1,0 +1,1666 @@
+{
+ "aciklama": "AAVSO Dürbün Programı (Binocular Program) yıldızları; İstanbul'dan görülebilenler (dik açıklık > −30°). Güncel parlaklık uygulamada AAVSO VSX API'sinden (vsx.aavso.org) alınır; yalnız son 7 günün görsel tahminlerinin ortancası ve sayısı tutulur, gözlemci bilgisi alınmaz.",
+ "kaynak": {
+  "liste": "https://mintaka.aavso.org/sites/default/files/BinocularProgramStars-2017_1.csv",
+  "listeTarihi": "2017 (dosya adı: 2017_1)",
+  "vsx": "https://vsx.aavso.org/index.php?view=api.object"
+ },
+ "atif": "We gratefully acknowledge the contributions of the AAVSO observer community, whose photometric data and metadata resources were used in this study and made available through the AAVSO's scientific archives. (AAVSO Data Usage Guidelines, 2025-10-01.) VSX: Watson, C. L., Henden, A. A., and Price, A., \"The International Variable Star Index (VSX)\", Society for Astronomical Sciences Annual Symposium, vol. 25, p. 47, 2006.",
+ "uretim": {
+  "tarih": "2026-11-09",
+  "arac": "araclar/degisen_verisi.py",
+  "atlananSatir": 38
+ },
+ "yildizlar": [
+  {
+   "ad": "T Cet",
+   "auid": "000-BBB-510",
+   "ra": 5.44279,
+   "dec": -20.05803,
+   "takimyildiz": "Cet",
+   "tur": "SRB",
+   "donem": 159.3,
+   "kadir": {
+    "parlak": 4.96,
+    "sonuk": 6.9,
+    "band": "V"
+   },
+   "yarimkure": "South"
+  },
+  {
+   "ad": "TV Psc",
+   "auid": "000-BBB-684",
+   "ra": 7.01183,
+   "dec": 17.89308,
+   "takimyildiz": "Psc",
+   "tur": "SR",
+   "donem": 49.1,
+   "kadir": {
+    "parlak": 4.65,
+    "sonuk": 5.42,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "EG And",
+   "auid": "000-BBC-010",
+   "ra": 11.15496,
+   "dec": 40.67936,
+   "takimyildiz": "And",
+   "tur": "ZAND+E",
+   "donem": 482.57,
+   "kadir": {
+    "parlak": 6.97,
+    "sonuk": 7.8,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "Z Psc",
+   "auid": "000-BBC-612",
+   "ra": 19.02096,
+   "dec": 25.76936,
+   "takimyildiz": "Psc",
+   "tur": "SRB",
+   "donem": 155.8,
+   "kadir": {
+    "parlak": 6.37,
+    "sonuk": 7.49,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "V0465 Cas",
+   "auid": "000-BBC-706",
+   "ra": 19.55783,
+   "dec": 57.80317,
+   "takimyildiz": "Cas",
+   "tur": "SRB",
+   "donem": 60.0,
+   "kadir": {
+    "parlak": 6.1,
+    "sonuk": 7.2,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "V0370 And",
+   "auid": "000-BCT-547",
+   "ra": 29.68471,
+   "dec": 45.43525,
+   "takimyildiz": "And",
+   "tur": "SRB",
+   "donem": 119.0,
+   "kadir": {
+    "parlak": 6.85,
+    "sonuk": 8.05,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "omi Cet",
+   "auid": "000-BBD-706",
+   "ra": 34.83662,
+   "dec": -2.97764,
+   "takimyildiz": "Cet",
+   "tur": "M",
+   "donem": 331.96,
+   "kadir": {
+    "parlak": 2.0,
+    "sonuk": 10.1,
+    "band": "V"
+   },
+   "yarimkure": "South"
+  },
+  {
+   "ad": "SU Per",
+   "auid": "000-BCW-749",
+   "ra": 35.52871,
+   "dec": 56.60414,
+   "takimyildiz": "Per",
+   "tur": "SRC",
+   "donem": 533.0,
+   "kadir": {
+    "parlak": 7.2,
+    "sonuk": 8.7,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "W Tri",
+   "auid": "000-BCX-344",
+   "ra": 40.37738,
+   "dec": 34.51611,
+   "takimyildiz": "Tri",
+   "tur": "SR",
+   "donem": 108.0,
+   "kadir": {
+    "parlak": 7.4,
+    "sonuk": 8.4,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "Z Eri",
+   "auid": "000-BBF-457",
+   "ra": 41.983,
+   "dec": -12.46053,
+   "takimyildiz": "Eri",
+   "tur": "SRB",
+   "donem": 74.0,
+   "kadir": {
+    "parlak": 6.17,
+    "sonuk": 7.18,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "RR Eri",
+   "auid": "000-BBF-587",
+   "ra": 43.05912,
+   "dec": -8.26706,
+   "takimyildiz": "Eri",
+   "tur": "SRB",
+   "donem": 94.6,
+   "kadir": {
+    "parlak": 6.8,
+    "sonuk": 7.62,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "BR Eri",
+   "auid": "000-BBG-262",
+   "ra": 57.19804,
+   "dec": -7.01497,
+   "takimyildiz": "Eri",
+   "tur": "SRB",
+   "donem": null,
+   "kadir": {
+    "parlak": 6.5,
+    "sonuk": 8.16,
+    "band": "V"
+   },
+   "yarimkure": "South"
+  },
+  {
+   "ad": "SS Cep",
+   "auid": "000-BBG-279",
+   "ra": 57.37508,
+   "dec": 80.32247,
+   "takimyildiz": "Cep",
+   "tur": "SRB",
+   "donem": 90.0,
+   "kadir": {
+    "parlak": 6.5,
+    "sonuk": 7.7,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "BM Eri",
+   "auid": "000-BBG-729",
+   "ra": 63.37342,
+   "dec": -10.38717,
+   "takimyildiz": "Eri",
+   "tur": "SR",
+   "donem": 559.0,
+   "kadir": {
+    "parlak": 6.76,
+    "sonuk": 8.03,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "R Lep",
+   "auid": "000-BBH-722",
+   "ra": 74.90146,
+   "dec": -14.80625,
+   "takimyildiz": "Lep",
+   "tur": "M",
+   "donem": 445.0,
+   "kadir": {
+    "parlak": 5.5,
+    "sonuk": 11.7,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "W Ori",
+   "auid": "000-BBH-841",
+   "ra": 76.34883,
+   "dec": 1.17761,
+   "takimyildiz": "Ori",
+   "tur": "SRB",
+   "donem": 212.0,
+   "kadir": {
+    "parlak": 5.5,
+    "sonuk": 6.9,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "RX Lep",
+   "auid": "000-BBJ-013",
+   "ra": 77.84521,
+   "dec": -11.84922,
+   "takimyildiz": "Lep",
+   "tur": "SRB",
+   "donem": 79.54,
+   "kadir": {
+    "parlak": 5.12,
+    "sonuk": 6.65,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "Y Tau",
+   "auid": "000-BBK-127",
+   "ra": 86.41421,
+   "dec": 20.69503,
+   "takimyildiz": "Tau",
+   "tur": "SRB",
+   "donem": 245.0,
+   "kadir": {
+    "parlak": 6.4,
+    "sonuk": 7.3,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "BQ Ori",
+   "auid": "000-BCW-578",
+   "ra": 89.28079,
+   "dec": 22.83894,
+   "takimyildiz": "Ori",
+   "tur": "SRB",
+   "donem": 243.0,
+   "kadir": {
+    "parlak": 7.1,
+    "sonuk": 9.0,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "S Lep",
+   "auid": "000-BBK-689",
+   "ra": 91.43975,
+   "dec": -24.19553,
+   "takimyildiz": "Lep",
+   "tur": "SRB",
+   "donem": 97.3,
+   "kadir": {
+    "parlak": 6.0,
+    "sonuk": 7.58,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "TV Gem",
+   "auid": "000-BBK-810",
+   "ra": 92.96421,
+   "dec": 21.86822,
+   "takimyildiz": "Gem",
+   "tur": "LC",
+   "donem": null,
+   "kadir": {
+    "parlak": 6.27,
+    "sonuk": 7.5,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "BU Gem",
+   "auid": "000-BBK-829",
+   "ra": 93.07958,
+   "dec": 22.90853,
+   "takimyildiz": "Gem",
+   "tur": "SRC",
+   "donem": null,
+   "kadir": {
+    "parlak": 5.74,
+    "sonuk": 7.4,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "psi 1 Aur",
+   "auid": "000-BBL-224",
+   "ra": 96.22458,
+   "dec": 49.28789,
+   "takimyildiz": "Aur",
+   "tur": "LC",
+   "donem": null,
+   "kadir": {
+    "parlak": 4.54,
+    "sonuk": 5.7,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "BL Ori",
+   "auid": "000-BCW-577",
+   "ra": 96.36742,
+   "dec": 14.722,
+   "takimyildiz": "Ori",
+   "tur": "SRB",
+   "donem": 153.8,
+   "kadir": {
+    "parlak": 5.9,
+    "sonuk": 6.6,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "UU Aur",
+   "auid": "000-BBL-525",
+   "ra": 99.13683,
+   "dec": 38.4455,
+   "takimyildiz": "Aur",
+   "tur": "SRB",
+   "donem": 235.0,
+   "kadir": {
+    "parlak": 5.1,
+    "sonuk": 6.6,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "SX Mon",
+   "auid": "000-BCW-383",
+   "ra": 102.98887,
+   "dec": 4.76458,
+   "takimyildiz": "Mon",
+   "tur": "SRB",
+   "donem": 77.67,
+   "kadir": {
+    "parlak": 7.43,
+    "sonuk": 8.21,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "X Mon",
+   "auid": "000-BBM-114",
+   "ra": 104.29921,
+   "dec": -9.06447,
+   "takimyildiz": "Mon",
+   "tur": "SRA",
+   "donem": 155.8,
+   "kadir": {
+    "parlak": 6.8,
+    "sonuk": 10.2,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "RV Mon",
+   "auid": "000-BBM-172",
+   "ra": 104.58954,
+   "dec": 6.16711,
+   "takimyildiz": "Mon",
+   "tur": "SRB",
+   "donem": 121.3,
+   "kadir": {
+    "parlak": 6.88,
+    "sonuk": 7.7,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "W CMa",
+   "auid": "000-BBM-557",
+   "ra": 107.01433,
+   "dec": -11.92328,
+   "takimyildiz": "CMa",
+   "tur": "SR",
+   "donem": 160.0,
+   "kadir": {
+    "parlak": 6.27,
+    "sonuk": 7.09,
+    "band": "V"
+   },
+   "yarimkure": "South"
+  },
+  {
+   "ad": "VY CMa",
+   "auid": "000-BBM-990",
+   "ra": 110.74304,
+   "dec": -25.76756,
+   "takimyildiz": "CMa",
+   "tur": "LC",
+   "donem": null,
+   "kadir": {
+    "parlak": 6.5,
+    "sonuk": 9.6,
+    "band": "V"
+   },
+   "yarimkure": "South"
+  },
+  {
+   "ad": "Y Lyn",
+   "auid": "000-BBN-148",
+   "ra": 112.04837,
+   "dec": 45.99061,
+   "takimyildiz": "Lyn",
+   "tur": "SRC",
+   "donem": 110.0,
+   "kadir": {
+    "parlak": 6.58,
+    "sonuk": 8.25,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "U Mon",
+   "auid": "000-BBN-215",
+   "ra": 112.69779,
+   "dec": -9.77689,
+   "takimyildiz": "Mon",
+   "tur": "RVB",
+   "donem": 91.32,
+   "kadir": {
+    "parlak": 5.45,
+    "sonuk": 7.67,
+    "band": "V"
+   },
+   "yarimkure": "South"
+  },
+  {
+   "ad": "CE Lyn",
+   "auid": "000-BCZ-617",
+   "ra": 116.03954,
+   "dec": 38.83781,
+   "takimyildiz": "Lyn",
+   "tur": "SRB",
+   "donem": null,
+   "kadir": {
+    "parlak": 7.3,
+    "sonuk": 8.02,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "V0407 Pup",
+   "auid": "000-BFD-058",
+   "ra": 119.47537,
+   "dec": -20.42869,
+   "takimyildiz": "Pup",
+   "tur": "SRC",
+   "donem": null,
+   "kadir": {
+    "parlak": 6.69,
+    "sonuk": 7.78,
+    "band": "V"
+   },
+   "yarimkure": "South"
+  },
+  {
+   "ad": "SV Lyn",
+   "auid": "000-BCW-270",
+   "ra": 120.91642,
+   "dec": 36.34486,
+   "takimyildiz": "Lyn",
+   "tur": "SRB",
+   "donem": null,
+   "kadir": {
+    "parlak": 6.7,
+    "sonuk": 7.6,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "RT Hya",
+   "auid": "000-BBP-693",
+   "ra": 127.42146,
+   "dec": -6.31878,
+   "takimyildiz": "Hya",
+   "tur": "SRB",
+   "donem": 245.5,
+   "kadir": {
+    "parlak": 7.0,
+    "sonuk": 10.2,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "RV Hya",
+   "auid": "000-BCW-103",
+   "ra": 129.93233,
+   "dec": -9.58694,
+   "takimyildiz": "Hya",
+   "tur": "SRB",
+   "donem": 108.7,
+   "kadir": {
+    "parlak": 7.31,
+    "sonuk": 8.58,
+    "band": "V"
+   },
+   "yarimkure": "South"
+  },
+  {
+   "ad": "X Cnc",
+   "auid": "000-BBQ-052",
+   "ra": 133.84533,
+   "dec": 17.23128,
+   "takimyildiz": "Cnc",
+   "tur": "SRB",
+   "donem": 180.0,
+   "kadir": {
+    "parlak": 5.69,
+    "sonuk": 6.94,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "RT Cnc",
+   "auid": "000-BBQ-129",
+   "ra": 134.56667,
+   "dec": 10.84519,
+   "takimyildiz": "Cnc",
+   "tur": "SRB",
+   "donem": 90.04,
+   "kadir": {
+    "parlak": 7.05,
+    "sonuk": 8.1,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "RS Cnc",
+   "auid": "000-BBQ-327",
+   "ra": 137.66167,
+   "dec": 30.96314,
+   "takimyildiz": "Cnc",
+   "tur": "SRB",
+   "donem": 242.2,
+   "kadir": {
+    "parlak": 5.33,
+    "sonuk": 6.94,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "R Leo",
+   "auid": "000-BBQ-798",
+   "ra": 146.88954,
+   "dec": 11.42881,
+   "takimyildiz": "Leo",
+   "tur": "M",
+   "donem": 309.95,
+   "kadir": {
+    "parlak": 4.4,
+    "sonuk": 11.3,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "Y Hya",
+   "auid": "000-BBQ-892",
+   "ra": 147.7655,
+   "dec": -23.01733,
+   "takimyildiz": "Hya",
+   "tur": "SRB",
+   "donem": 154.4,
+   "kadir": {
+    "parlak": 6.2,
+    "sonuk": 7.4,
+    "band": "V"
+   },
+   "yarimkure": "South"
+  },
+  {
+   "ad": "U Hya",
+   "auid": "000-BBR-567",
+   "ra": 159.38862,
+   "dec": -13.38456,
+   "takimyildiz": "Hya",
+   "tur": "SRB",
+   "donem": 183.1,
+   "kadir": {
+    "parlak": 4.56,
+    "sonuk": 5.4,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "V Hya",
+   "auid": "000-BBR-784",
+   "ra": 162.90521,
+   "dec": -21.25008,
+   "takimyildiz": "Hya",
+   "tur": "SRA",
+   "donem": 530.7,
+   "kadir": {
+    "parlak": 6.0,
+    "sonuk": 12.3,
+    "band": "V"
+   },
+   "yarimkure": "South"
+  },
+  {
+   "ad": "VW UMa",
+   "auid": "000-BBR-892",
+   "ra": 164.7575,
+   "dec": 69.98906,
+   "takimyildiz": "UMa",
+   "tur": "SRB",
+   "donem": 615.0,
+   "kadir": {
+    "parlak": 6.69,
+    "sonuk": 7.71,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "ST UMa",
+   "auid": "000-BBS-211",
+   "ra": 171.95992,
+   "dec": 45.18522,
+   "takimyildiz": "UMa",
+   "tur": "SRB",
+   "donem": 80.88,
+   "kadir": {
+    "parlak": 6.0,
+    "sonuk": 7.2,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "TV UMa",
+   "auid": "000-BBS-388",
+   "ra": 176.396,
+   "dec": 35.89433,
+   "takimyildiz": "UMa",
+   "tur": "SRB",
+   "donem": 53.74,
+   "kadir": {
+    "parlak": 6.72,
+    "sonuk": 7.45,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "RU Crt",
+   "auid": "000-BCV-569",
+   "ra": 177.77696,
+   "dec": -11.20781,
+   "takimyildiz": "Crt",
+   "tur": "SRB",
+   "donem": 60.85,
+   "kadir": {
+    "parlak": 7.43,
+    "sonuk": 8.59,
+    "band": "V"
+   },
+   "yarimkure": "South"
+  },
+  {
+   "ad": "Z UMa",
+   "auid": "000-BBS-553",
+   "ra": 179.12592,
+   "dec": 57.87156,
+   "takimyildiz": "UMa",
+   "tur": "SRB",
+   "donem": 195.5,
+   "kadir": {
+    "parlak": 6.2,
+    "sonuk": 9.4,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "RW Vir",
+   "auid": "000-BCX-503",
+   "ra": 181.81208,
+   "dec": -6.76556,
+   "takimyildiz": "Vir",
+   "tur": "SRB",
+   "donem": 175.0,
+   "kadir": {
+    "parlak": 6.71,
+    "sonuk": 7.5,
+    "band": "V"
+   },
+   "yarimkure": "South"
+  },
+  {
+   "ad": "RY UMa",
+   "auid": "000-BBS-756",
+   "ra": 185.11388,
+   "dec": 61.30964,
+   "takimyildiz": "UMa",
+   "tur": "SRA",
+   "donem": 310.0,
+   "kadir": {
+    "parlak": 6.49,
+    "sonuk": 7.94,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "SS Vir",
+   "auid": "000-BBS-817",
+   "ra": 186.31,
+   "dec": 0.76972,
+   "takimyildiz": "Vir",
+   "tur": "SRA",
+   "donem": 361.0,
+   "kadir": {
+    "parlak": 6.0,
+    "sonuk": 9.6,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "BK Vir",
+   "auid": "000-BCX-512",
+   "ra": 187.58754,
+   "dec": 4.41642,
+   "takimyildiz": "Vir",
+   "tur": "SRB",
+   "donem": 140.0,
+   "kadir": {
+    "parlak": 7.28,
+    "sonuk": 8.8,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "Y CVn",
+   "auid": "000-BBT-191",
+   "ra": 191.28262,
+   "dec": 45.44025,
+   "takimyildiz": "CVn",
+   "tur": "SRB",
+   "donem": 267.8,
+   "kadir": {
+    "parlak": 4.86,
+    "sonuk": 5.88,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "SV Crv",
+   "auid": "000-BCV-562",
+   "ra": 192.44596,
+   "dec": -15.07892,
+   "takimyildiz": "Crv",
+   "tur": "SRB",
+   "donem": 65.2,
+   "kadir": {
+    "parlak": 6.75,
+    "sonuk": 7.6,
+    "band": "V"
+   },
+   "yarimkure": "South"
+  },
+  {
+   "ad": "TU CVn",
+   "auid": "000-BBT-346",
+   "ra": 193.7355,
+   "dec": 47.19672,
+   "takimyildiz": "CVn",
+   "tur": "SRB",
+   "donem": 44.2,
+   "kadir": {
+    "parlak": 5.5,
+    "sonuk": 6.2,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "RY Dra",
+   "auid": "000-BBT-376",
+   "ra": 194.10796,
+   "dec": 65.99439,
+   "takimyildiz": "Dra",
+   "tur": "SRB",
+   "donem": null,
+   "kadir": {
+    "parlak": 5.88,
+    "sonuk": 8.0,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "RT Vir",
+   "auid": "000-BBT-436",
+   "ra": 195.65825,
+   "dec": 5.18567,
+   "takimyildiz": "Vir",
+   "tur": "SRB",
+   "donem": 157.9,
+   "kadir": {
+    "parlak": 7.41,
+    "sonuk": 9.0,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "SW Vir",
+   "auid": "000-BBT-518",
+   "ra": 198.51825,
+   "dec": -2.807,
+   "takimyildiz": "Vir",
+   "tur": "SRB",
+   "donem": 146.0,
+   "kadir": {
+    "parlak": 6.2,
+    "sonuk": 8.0,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "V CVn",
+   "auid": "000-BBT-559",
+   "ra": 199.86571,
+   "dec": 45.52714,
+   "takimyildiz": "CVn",
+   "tur": "SRA",
+   "donem": 191.89,
+   "kadir": {
+    "parlak": 6.52,
+    "sonuk": 8.56,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "R Hya",
+   "auid": "000-BBT-665",
+   "ra": 202.42825,
+   "dec": -23.28133,
+   "takimyildiz": "Hya",
+   "tur": "M",
+   "donem": 380.0,
+   "kadir": {
+    "parlak": 3.5,
+    "sonuk": 10.9,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "FP Vir",
+   "auid": "000-BBT-783",
+   "ra": 203.96692,
+   "dec": 8.29283,
+   "takimyildiz": "Vir",
+   "tur": "SRB",
+   "donem": 67.8,
+   "kadir": {
+    "parlak": 6.55,
+    "sonuk": 7.69,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "V UMi",
+   "auid": "000-BBT-813",
+   "ra": 204.67112,
+   "dec": 74.31008,
+   "takimyildiz": "UMi",
+   "tur": "SRB",
+   "donem": 73.0,
+   "kadir": {
+    "parlak": 7.06,
+    "sonuk": 8.7,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "RX Boo",
+   "auid": "000-BBV-376",
+   "ra": 216.04846,
+   "dec": 25.70372,
+   "takimyildiz": "Boo",
+   "tur": "SRB",
+   "donem": 158.0,
+   "kadir": {
+    "parlak": 7.0,
+    "sonuk": 8.3,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "R Boo",
+   "auid": "000-BBV-561",
+   "ra": 219.29825,
+   "dec": 26.73658,
+   "takimyildiz": "Boo",
+   "tur": "M",
+   "donem": 223.4,
+   "kadir": {
+    "parlak": 6.2,
+    "sonuk": 13.1,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "RV Boo",
+   "auid": "000-BBV-580",
+   "ra": 219.81608,
+   "dec": 32.53953,
+   "takimyildiz": "Boo",
+   "tur": "SRB",
+   "donem": 228.0,
+   "kadir": {
+    "parlak": 7.5,
+    "sonuk": 8.7,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "RW Boo",
+   "auid": "000-BBV-603",
+   "ra": 220.30575,
+   "dec": 31.57214,
+   "takimyildiz": "Boo",
+   "tur": "SRB",
+   "donem": 209.0,
+   "kadir": {
+    "parlak": 7.5,
+    "sonuk": 8.6,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "FG Boo",
+   "auid": "000-BCT-936",
+   "ra": 227.89575,
+   "dec": 49.90303,
+   "takimyildiz": "Boo",
+   "tur": "SRB",
+   "donem": null,
+   "kadir": {
+    "parlak": 7.3,
+    "sonuk": 8.3,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "tau 4 Ser",
+   "auid": "000-BBW-373",
+   "ra": 234.11746,
+   "dec": 15.10139,
+   "takimyildiz": "Ser",
+   "tur": "SRB",
+   "donem": 86.7,
+   "kadir": {
+    "parlak": 5.89,
+    "sonuk": 7.07,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "RR CrB",
+   "auid": "000-BBW-452",
+   "ra": 235.35929,
+   "dec": 38.55739,
+   "takimyildiz": "CrB",
+   "tur": "SRB",
+   "donem": 60.8,
+   "kadir": {
+    "parlak": 7.3,
+    "sonuk": 8.2,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "R CrB",
+   "auid": "000-BBW-575",
+   "ra": 237.14337,
+   "dec": 28.15675,
+   "takimyildiz": "CrB",
+   "tur": "RCB",
+   "donem": null,
+   "kadir": {
+    "parlak": 5.71,
+    "sonuk": 15.2,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "ST Her",
+   "auid": "000-BBW-616",
+   "ra": 237.69429,
+   "dec": 48.483,
+   "takimyildiz": "Her",
+   "tur": "SRB",
+   "donem": 144.0,
+   "kadir": {
+    "parlak": 6.8,
+    "sonuk": 8.3,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "X Her",
+   "auid": "000-BBW-906",
+   "ra": 240.66321,
+   "dec": 47.24036,
+   "takimyildiz": "Her",
+   "tur": "SRB",
+   "donem": 102.0,
+   "kadir": {
+    "parlak": 5.8,
+    "sonuk": 7.0,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "g Her",
+   "auid": "000-BBX-539",
+   "ra": 247.16062,
+   "dec": 41.88167,
+   "takimyildiz": "Her",
+   "tur": "SRB",
+   "donem": 89.2,
+   "kadir": {
+    "parlak": 4.3,
+    "sonuk": 5.5,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "TX Dra",
+   "auid": "000-BBX-762",
+   "ra": 248.753,
+   "dec": 60.46811,
+   "takimyildiz": "Dra",
+   "tur": "SRB",
+   "donem": null,
+   "kadir": {
+    "parlak": 6.8,
+    "sonuk": 8.2,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "AH Dra",
+   "auid": "000-BBX-958",
+   "ra": 252.06929,
+   "dec": 57.81372,
+   "takimyildiz": "Dra",
+   "tur": "SRB",
+   "donem": 158.0,
+   "kadir": {
+    "parlak": 6.4,
+    "sonuk": 8.6,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "V0939 Her",
+   "auid": "000-BCW-069",
+   "ra": 257.57721,
+   "dec": 40.68994,
+   "takimyildiz": "Her",
+   "tur": "LB",
+   "donem": null,
+   "kadir": {
+    "parlak": 7.47,
+    "sonuk": 8.5,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "UW Her",
+   "auid": "000-BCV-988",
+   "ra": 258.60225,
+   "dec": 36.36792,
+   "takimyildiz": "Her",
+   "tur": "SRB",
+   "donem": 103.6,
+   "kadir": {
+    "parlak": 6.8,
+    "sonuk": 8.7,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "V0533 Oph",
+   "auid": "000-BBZ-578",
+   "ra": 268.26383,
+   "dec": -2.57936,
+   "takimyildiz": "Oph",
+   "tur": "SR",
+   "donem": 69.7,
+   "kadir": {
+    "parlak": 7.06,
+    "sonuk": 8.24,
+    "band": "V"
+   },
+   "yarimkure": "South"
+  },
+  {
+   "ad": "OP Her",
+   "auid": "000-BCW-013",
+   "ra": 269.20221,
+   "dec": 45.35086,
+   "takimyildiz": "Her",
+   "tur": "SRB",
+   "donem": 120.5,
+   "kadir": {
+    "parlak": 5.85,
+    "sonuk": 6.73,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "IQ Her",
+   "auid": "000-BCW-007",
+   "ra": 274.4785,
+   "dec": 17.98131,
+   "takimyildiz": "Her",
+   "tur": "SRB",
+   "donem": 76.5,
+   "kadir": {
+    "parlak": 6.8,
+    "sonuk": 8.0,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "AC Her",
+   "auid": "000-BCC-490",
+   "ra": 277.56767,
+   "dec": 21.86683,
+   "takimyildiz": "Her",
+   "tur": "RVA",
+   "donem": 75.29,
+   "kadir": {
+    "parlak": 6.85,
+    "sonuk": 9.0,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "XY Lyr",
+   "auid": "000-BCC-857",
+   "ra": 279.527,
+   "dec": 39.66833,
+   "takimyildiz": "Lyr",
+   "tur": "SRC",
+   "donem": 120.0,
+   "kadir": {
+    "parlak": 5.6,
+    "sonuk": 6.6,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "X Oph",
+   "auid": "000-BCC-870",
+   "ra": 279.58804,
+   "dec": 8.83411,
+   "takimyildiz": "Oph",
+   "tur": "M",
+   "donem": 338.0,
+   "kadir": {
+    "parlak": 5.9,
+    "sonuk": 8.6,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "HK Lyr",
+   "auid": "000-BCW-312",
+   "ra": 280.70833,
+   "dec": 36.95858,
+   "takimyildiz": "Lyr",
+   "tur": "SR",
+   "donem": 186.0,
+   "kadir": {
+    "parlak": 7.5,
+    "sonuk": 8.4,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "R Sct",
+   "auid": "000-BCD-304",
+   "ra": 281.87063,
+   "dec": -5.70514,
+   "takimyildiz": "Sct",
+   "tur": "RVA",
+   "donem": 146.5,
+   "kadir": {
+    "parlak": 4.2,
+    "sonuk": 8.6,
+    "band": "V"
+   },
+   "yarimkure": "South"
+  },
+  {
+   "ad": "UX Sgr",
+   "auid": "000-BCW-982",
+   "ra": 283.727,
+   "dec": -16.52539,
+   "takimyildiz": "Sgr",
+   "tur": "SRB",
+   "donem": 95.7,
+   "kadir": {
+    "parlak": 7.25,
+    "sonuk": 8.3,
+    "band": "V"
+   },
+   "yarimkure": "South"
+  },
+  {
+   "ad": "R Aql",
+   "auid": "000-BCF-225",
+   "ra": 286.59271,
+   "dec": 8.23,
+   "takimyildiz": "Aql",
+   "tur": "M",
+   "donem": 270.5,
+   "kadir": {
+    "parlak": 5.5,
+    "sonuk": 12.0,
+    "band": "V"
+   },
+   "yarimkure": "South"
+  },
+  {
+   "ad": "UX Dra",
+   "auid": "000-BCG-391",
+   "ra": 290.398,
+   "dec": 76.55958,
+   "takimyildiz": "Dra",
+   "tur": "SRB",
+   "donem": 175.0,
+   "kadir": {
+    "parlak": 5.94,
+    "sonuk": 7.1,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "CH Cyg",
+   "auid": "000-BCG-667",
+   "ra": 291.13779,
+   "dec": 50.24142,
+   "takimyildiz": "Cyg",
+   "tur": "ZAND+SR",
+   "donem": null,
+   "kadir": {
+    "parlak": 5.6,
+    "sonuk": 10.1,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "AF Cyg",
+   "auid": "000-BCG-935",
+   "ra": 292.55354,
+   "dec": 46.14781,
+   "takimyildiz": "Cyg",
+   "tur": "SRB",
+   "donem": 92.5,
+   "kadir": {
+    "parlak": 6.4,
+    "sonuk": 7.7,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "V1943 Sgr",
+   "auid": "000-BCX-064",
+   "ra": 301.73017,
+   "dec": -27.22494,
+   "takimyildiz": "Sgr",
+   "tur": "SRB",
+   "donem": 330.0,
+   "kadir": {
+    "parlak": 7.1,
+    "sonuk": 8.4,
+    "band": "V"
+   },
+   "yarimkure": "South"
+  },
+  {
+   "ad": "RS Cyg",
+   "auid": "000-BCK-976",
+   "ra": 303.34858,
+   "dec": 38.72903,
+   "takimyildiz": "Cyg",
+   "tur": "SRA",
+   "donem": 417.39,
+   "kadir": {
+    "parlak": 6.5,
+    "sonuk": 9.5,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "RT Cap",
+   "auid": "000-BCL-175",
+   "ra": 304.27721,
+   "dec": -21.31792,
+   "takimyildiz": "Cap",
+   "tur": "SRB",
+   "donem": 422.0,
+   "kadir": {
+    "parlak": 6.8,
+    "sonuk": 8.0,
+    "band": "V"
+   },
+   "yarimkure": "South"
+  },
+  {
+   "ad": "T Mic",
+   "auid": "000-BCW-371",
+   "ra": 306.97996,
+   "dec": -28.26106,
+   "takimyildiz": "Mic",
+   "tur": "SRB",
+   "donem": 352.0,
+   "kadir": {
+    "parlak": 6.74,
+    "sonuk": 8.11,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "CT Del",
+   "auid": "000-BCV-812",
+   "ra": 307.35979,
+   "dec": 9.89783,
+   "takimyildiz": "Del",
+   "tur": "SRB",
+   "donem": 83.5,
+   "kadir": {
+    "parlak": 6.8,
+    "sonuk": 8.5,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "EU Del",
+   "auid": "000-BCM-022",
+   "ra": 309.47796,
+   "dec": 18.26844,
+   "takimyildiz": "Del",
+   "tur": "SRB",
+   "donem": 58.63,
+   "kadir": {
+    "parlak": 5.41,
+    "sonuk": 6.72,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "U Del",
+   "auid": "000-BCM-398",
+   "ra": 311.36767,
+   "dec": 18.09003,
+   "takimyildiz": "Del",
+   "tur": "SRB",
+   "donem": 120.0,
+   "kadir": {
+    "parlak": 6.14,
+    "sonuk": 7.61,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "FI Vul",
+   "auid": "000-BCX-572",
+   "ra": 312.21325,
+   "dec": 22.99417,
+   "takimyildiz": "Vul",
+   "tur": "SR",
+   "donem": null,
+   "kadir": {
+    "parlak": 6.97,
+    "sonuk": 8.3,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "V1070 Cyg",
+   "auid": "000-BCN-832",
+   "ra": 320.7025,
+   "dec": 40.93256,
+   "takimyildiz": "Cyg",
+   "tur": "SRB",
+   "donem": 62.4,
+   "kadir": {
+    "parlak": 6.56,
+    "sonuk": 7.56,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "W Cyg",
+   "auid": "000-BCP-079",
+   "ra": 324.01042,
+   "dec": 45.37458,
+   "takimyildiz": "Cyg",
+   "tur": "SRB",
+   "donem": 131.7,
+   "kadir": {
+    "parlak": 5.1,
+    "sonuk": 6.83,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "V0460 Cyg",
+   "auid": "000-BCP-181",
+   "ra": 325.5045,
+   "dec": 35.51019,
+   "takimyildiz": "Cyg",
+   "tur": "SRB",
+   "donem": null,
+   "kadir": {
+    "parlak": 5.57,
+    "sonuk": 6.5,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "miu Cep",
+   "auid": "000-BCP-244",
+   "ra": 325.87708,
+   "dec": 58.78,
+   "takimyildiz": "Cep",
+   "tur": "SRC",
+   "donem": 835.0,
+   "kadir": {
+    "parlak": 3.43,
+    "sonuk": 5.1,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "RW Cep",
+   "auid": "000-BCQ-372",
+   "ra": 335.77925,
+   "dec": 55.96322,
+   "takimyildiz": "Cep",
+   "tur": "SRD",
+   "donem": null,
+   "kadir": {
+    "parlak": 6.0,
+    "sonuk": 7.3,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "PV Peg",
+   "auid": "000-BCW-728",
+   "ra": 335.98496,
+   "dec": 31.26175,
+   "takimyildiz": "Peg",
+   "tur": "SRB",
+   "donem": null,
+   "kadir": {
+    "parlak": 6.6,
+    "sonuk": 7.7,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "W Cep",
+   "auid": "000-BCQ-570",
+   "ra": 339.11483,
+   "dec": 58.42608,
+   "takimyildiz": "Cep",
+   "tur": "SRC",
+   "donem": 350.0,
+   "kadir": {
+    "parlak": 7.02,
+    "sonuk": 8.5,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "AR Cep",
+   "auid": "000-BCQ-890",
+   "ra": 342.89108,
+   "dec": 85.04639,
+   "takimyildiz": "Cep",
+   "tur": "SRB",
+   "donem": null,
+   "kadir": {
+    "parlak": 7.0,
+    "sonuk": 7.9,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "GO Peg",
+   "auid": "000-BCQ-944",
+   "ra": 343.75404,
+   "dec": 19.55972,
+   "takimyildiz": "Peg",
+   "tur": "SRB",
+   "donem": 79.3,
+   "kadir": {
+    "parlak": 7.14,
+    "sonuk": 7.91,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "R Aqr",
+   "auid": "000-BCR-898",
+   "ra": 355.95608,
+   "dec": -15.2845,
+   "takimyildiz": "Aqr",
+   "tur": "M+ZAND",
+   "donem": 387.0,
+   "kadir": {
+    "parlak": 5.2,
+    "sonuk": 12.4,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  },
+  {
+   "ad": "rho Cas",
+   "auid": "000-BCS-075",
+   "ra": 358.59596,
+   "dec": 57.49939,
+   "takimyildiz": "Cas",
+   "tur": "SDOR:",
+   "donem": null,
+   "kadir": {
+    "parlak": 4.1,
+    "sonuk": 6.2,
+    "band": "V"
+   },
+   "yarimkure": "North"
+  }
+ ]
+}

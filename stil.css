@@ -263,6 +263,9 @@ html.kirmizi input[type="datetime-local"]::-webkit-calendar-picker-indicator {
 .rozet { display: inline-block; font-size: 12px; font-weight: 500; padding: 1px 7px; border-radius: 999px; border: 1px solid var(--cizgi); color: var(--soluk); margin-left: 6px; vertical-align: 2px; }
 .rozet.iyi { color: var(--iyi); border-color: currentColor; }
 .rozet.uyari { color: var(--uyari); border-color: currentColor; }
+/* v45 görünürlük: çip bir düğmedir (dokununca gerekçe); kutu listede ayrı satır */
+button.rozet.gor-ac { font: inherit; font-size: 12px; cursor: pointer; background: transparent; line-height: 1.3; min-height: 24px; }
+.liste li .gor-kutu, .plan li .gor-kutu { grid-column: 1 / -1; display: block; margin: 4px 0 2px; line-height: 1.5; }
 .kaynak { font-size: 13px; color: var(--soluk); margin-top: 10px; }
 .kaynak a { color: var(--soluk); }
 details.aciklama { margin-top: 10px; font-size: 14px; color: var(--soluk); }
