@@ -312,8 +312,8 @@ test.describe('Arayüz', () => {
     await expect(olay).toContainText('7×50 dürbünün alanına birlikte sığarlar');
     await expect(olay.locator('.takvim-bag')).toHaveText('Takvime ekle');
     /* Metin önce en yakın anın saatini söyler (05.03 TSİ), sonra en iyi görüş anını; görüş anında gök tam karanlık */
-    const sa = t => new Intl.DateTimeFormat('tr-TR', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Istanbul' }).format(t);
-    expect(sa(k.enYakin.zaman)).toBe('05:03');
+    const sa = t => new Intl.DateTimeFormat('tr-TR', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Istanbul' }).format(t).replace(':', '.');
+    expect(sa(k.enYakin.zaman)).toBe('05.03');
     const metin = (await olay.locator('.alt').innerText()).replace(/\s+/g, ' ');
     expect(metin).toMatch(new RegExp('^En yakın an [^:]*' + sa(k.enYakin.zaman) + ':'));
     expect(metin.indexOf(sa(k.enYakin.zaman))).toBeLessThan(metin.indexOf(sa(k.gorus.zaman)));
@@ -322,7 +322,7 @@ test.describe('Arayüz', () => {
     /* Plan: kavuşum maddesi görüş saatinde (yerel saat), sesli metinde ayrım "derece" sözüyle */
     const madde = page.locator('#gkPlan li.plan-kavusum');
     await expect(madde).toHaveCount(1, { timeout: 20000 });
-    const saat = new Intl.DateTimeFormat('tr-TR', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Istanbul' }).format(k.gorus.zaman);
+    const saat = new Intl.DateTimeFormat('tr-TR', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Istanbul' }).format(k.gorus.zaman).replace(':', '.');
     await expect(madde.locator('.saat')).toHaveText(saat);
     const ses = await madde.getAttribute('data-ses');
     expect(ses).toContain('Mars ile Jüpiter kavuşumu');

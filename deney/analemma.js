@@ -55,10 +55,10 @@
       const s = Math.round(Math.abs(m) * 60), dk = Math.floor(s / 60);
       return (s === 0 ? '' : m > 0 ? '+' : '−') + (dk ? dk + ' dk ' : '') + (s % 60) + ' sn';
     },
-    /* saat (ondalık) → "13:03:41" */
+    /* saat (ondalık) → "13.03.41" (TDK: saat, dakika ve saniye noktayla ayrılır) */
     saatYaz(h) {
       const s = Math.round(h * 3600), p = n => String(n).padStart(2, '0');
-      return p(Math.floor(s / 3600) % 24) + ':' + p(Math.floor(s % 3600 / 60)) + ':' + p(s % 60);
+      return p(Math.floor(s / 3600) % 24) + '.' + p(Math.floor(s % 3600 / 60)) + '.' + p(s % 60);
     },
     tarih(n) { const d = new Date(Date.UTC(2026, 0, n)); return { ay: d.getUTCMonth() + 1, gun: d.getUTCDate() }; },
     yilinGunu(ay, gun) { return Math.round((Date.UTC(2026, ay - 1, gun) - Date.UTC(2026, 0, 1)) / 864e5) + 1; }

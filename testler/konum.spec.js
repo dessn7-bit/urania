@@ -25,7 +25,7 @@ test.describe('izin verilmiş', () => {
     await page.goto('/index.html#gok');
     await expect(page.locator('#gkKonum')).toContainText('Kızılay Mahallesi, Çankaya');
     await expect(page.locator('#gkKonum')).toContainText('GPS, ±25 m');
-    await expect(page.locator('#gkOzet p').first()).toContainText('17:53');
+    await expect(page.locator('#gkOzet p').first()).toContainText('17.53');
   });
 
   test('Elle seçilen konum kalıcıdır; GPS onu ezmez', async ({ page }) => {

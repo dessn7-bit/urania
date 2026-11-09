@@ -60,7 +60,7 @@ test('Zaman denklemi hesapları: kaynaklı referans değerleri', async ({ page }
     };
   });
   /* yerel ortalama öğle: 12.00 + (45° − 29,08°) × 4 dk = 13.03.41 */
-  expect(r.saat).toBe('13:03:41');
+  expect(r.saat).toBe('13.03.41');
   expect((r.og - 12) * 60).toBeCloseTo(63.68, 2);
   /* uç değerler: Wikipedia girişi +16 dk 33 sn (≈3 Kasım) ve −14 dk 6 sn (≈11 Şubat); 2000 tablosu +16:25 / −14:15;
      uygulamanın gök hesabı 2026 için +16:27 / −14:11. Model en çok birkaç saniye farklı. */
@@ -92,12 +92,12 @@ test('Analemma arayüzü: tarih düğmeleri, kutular ve rehber adımı ölçüml
   await expect(page.locator('#anGunCikti')).toHaveText('3 Kasım');
   await expect(page.locator('#anFark')).toHaveText('+16 dk 27 sn');
   await expect(page.locator('#anPay')).toHaveText('+6 dk 45 sn / +9 dk 42 sn');
-  await expect(page.locator('#anOgle')).toHaveText('12:47:14');
+  await expect(page.locator('#anOgle')).toHaveText('12.47.14');
   await expect(page.locator('#anYuk')).toHaveText('33,9°');
   await expect(page.locator('#anMetin')).toContainText('63,68 dakika');
   await page.locator('#anOn button[data-i="0"]').click();
   await expect(page.locator('#anFark')).toHaveText('−14 dk 12 sn');
-  await expect(page.locator('#anOgle')).toHaveText('13:17:53');
+  await expect(page.locator('#anOgle')).toHaveText('13.17.53');
   /* rehber: eksen eğik olmasaydı */
   await page.locator('.rh-uygula[data-i="4"]').evaluate(b => b.click());
   await expect(page.locator('#anEgik')).toBeChecked();
@@ -107,7 +107,7 @@ test('Analemma arayüzü: tarih düğmeleri, kutular ve rehber adımı ölçüml
   /* iki kutu: fark yok, gerçek öğle ortalama öğle */
   await page.locator('#anDaire').check();
   await expect(page.locator('#anFark')).toHaveText('0 sn');
-  await expect(page.locator('#anOgle')).toHaveText('13:03:41');
+  await expect(page.locator('#anOgle')).toHaveText('13.03.41');
   /* rehber: 25 Aralık, kutular kalkar */
   await page.locator('.rh-uygula[data-i="6"]').evaluate(b => b.click());
   await expect(page.locator('#anFark')).toHaveText('−1 sn');

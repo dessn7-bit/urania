@@ -90,7 +90,7 @@ test.describe('cihaz Tokyo', () => {
     await page.locator('#gkKBoylam').dispatchEvent('change');
     await expect(page.locator('#gkKDilim')).toHaveValue('Europe/Istanbul');
     await page.click('#gkKKaydet');
-    await expect(page.locator('#gkOzet p').first()).toContainText('17:5');   // Ankara batışı ~17:53 TSİ (USNO)
+    await expect(page.locator('#gkOzet p').first()).toContainText('17.5');   // Ankara batışı ~17.53 TSİ (USNO)
     await page.click('#gkKonumDegis');
     await page.selectOption('#gkKDilim', 'Asia/Tokyo');
     await page.click('#gkKKaydet');

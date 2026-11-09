@@ -78,8 +78,8 @@ for (const [gen, yanyana] of [[551, true], [412, false], [320, false]]) {
     await page.goto('/index.html#gok');
     const p = page.locator('#gkOzet .oz-satir');
     await expect(p.first().locator('.oz-et')).toHaveText('Güneş');
-    await expect(p.first()).toContainText('batış 18:05');
-    expect(await p.first().getAttribute('data-ses')).toMatch(/^Güneş 18:05'te batıyor; gökyüzü \d\d:\d\d'de tam kararıyor/);
+    await expect(p.first()).toContainText('batış 18.05');
+    expect(await p.first().getAttribute('data-ses')).toMatch(/^Güneş 18.05'te batıyor; gökyüzü \d\d\.\d\d'de tam kararıyor/);
     await expect(p.nth(1).locator('.oz-et')).toHaveText('Ay');
     const d = await page.evaluate(() => {
       const s = document.querySelector('#gkOzet .oz-satir'), e = s.querySelector('.oz-et').getBoundingClientRect(), v = s.querySelector('.oz-d').getBoundingClientRect();
@@ -122,7 +122,7 @@ test('Haritada göster: levha o saate gelir, cisim işaretlenir; Şimdi işareti
   const b = page.locator('#gkHedef .haritada').first();
   const z = Number(await b.getAttribute('data-zaman'));
   await b.click();
-  const saat = new Date(Math.round(z / 300e3) * 300e3).toLocaleTimeString('tr-TR', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Istanbul' });
+  const saat = new Date(Math.round(z / 300e3) * 300e3).toLocaleTimeString('tr-TR', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Istanbul' }).replace(':', '.');
   await expect(page.locator('#gkSaat')).toContainText(saat);
   const v = await page.evaluate(() => window.UraniaGozlem.durum.harita.yerlesim().vurgu);
   expect(v && v.r > 0).toBe(true);
@@ -168,7 +168,7 @@ test('Dürbün hedefinde "Nasıl bulunur" bulma haritasını o hedefin en iyi sa
   const p = page.locator('#bulucuPanel');
   await expect(p).toBeVisible();
   await expect(p.locator('#bulucuBaslik')).toHaveText('Bulma haritası: M31');
-  await expect(p).toContainText("23:19'da");   // en iyi saat; "şu an" değil
+  await expect(p).toContainText("23.19'da");   // en iyi saat; "şu an" değil
   await expect(p).not.toContainText('şu an');
   await page.keyboard.press('Escape');
   await expect(p).toBeHidden();

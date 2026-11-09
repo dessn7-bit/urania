@@ -1,11 +1,12 @@
-/* hava.js — gecenin bulut tahmini (Open-Meteo, CC BY 4.0; ticari olmayan kullanım için
+/* hava.js — 7 günlük saatlik tahmin (Open-Meteo, CC BY 4.0; ticari olmayan kullanım için
    anahtar gerekmez). Yanıt cihazda 1 saat taze sayılır; ağ yoksa 48 saate kadar eski
    kayıt "son güncelleme" notuyla gösterilir. */
 (function () {
   'use strict';
   const U = window.Urania;
   const TAZE = 3600e3, EN_ESKI = 48 * 3600e3;
-  const DEGISKEN = 'cloud_cover,cloud_cover_low,cloud_cover_mid,cloud_cover_high,relative_humidity_2m,wind_speed_10m,precipitation_probability,precipitation';
+  /* v44: sıcaklık, çiy noktası, hissedilen sıcaklık, rüzgâr hamlesi ve görüş mesafesi (çiğ, hissedilen ve sis kartları için) */
+  const DEGISKEN = 'cloud_cover,cloud_cover_low,cloud_cover_mid,cloud_cover_high,relative_humidity_2m,wind_speed_10m,precipitation_probability,precipitation,temperature_2m,dew_point_2m,apparent_temperature,wind_gusts_10m,visibility';
 
   /* Yanıtın biçimi: hourly.time sayı dizisi; her değişken aynı uzunlukta, sayı ya da null dizisi */
   function yanitGecerli(j) {
@@ -17,8 +18,8 @@
   }
   /* Bellekte de tutulur: depo doluyken her gece değişiminde yeniden istek gitmesin */
   const bellek = {};
-  /* hava2_: yağış alanları eklendi; eski (yağışsız) önbellek kullanılmaz */
-  function anahtar(enlem, boylam) { return 'hava2_' + enlem.toFixed(2) + '_' + boylam.toFixed(2); }
+  /* hava3_: v44'te 7 gün ve sıcaklık/çiy/görüş alanları eklendi; eski (hava2_) önbellek kullanılmaz */
+  function anahtar(enlem, boylam) { return 'hava3_' + enlem.toFixed(2) + '_' + boylam.toFixed(2); }
 
   function coz(j) {
     const h = j.hourly;
@@ -28,7 +29,11 @@
       nem: h.relative_humidity_2m[i], ruzgar: h.wind_speed_10m[i],
       /* Open-Meteo: ikisi de bu saate kadarki (önceki) bir saat için — olasılık eşiği 0,1 mm */
       yagisOl: h.precipitation_probability ? h.precipitation_probability[i] : null,
-      yagis: h.precipitation ? h.precipitation[i] : null
+      yagis: h.precipitation ? h.precipitation[i] : null,
+      /* v44: yoksa null (eski yanıt ya da modelde eksik) */
+      sicaklik: h.temperature_2m ? h.temperature_2m[i] : null, ciy: h.dew_point_2m ? h.dew_point_2m[i] : null,
+      hissedilen: h.apparent_temperature ? h.apparent_temperature[i] : null, hamle: h.wind_gusts_10m ? h.wind_gusts_10m[i] : null,
+      gorus: h.visibility ? h.visibility[i] : null
     }));
   }
 
@@ -48,7 +53,7 @@
     }
     /* Konum 2 basamakla (~1 km) gönderilir: önbellek hücresiyle aynı, gereğinden hassas değil */
     const url = 'https://api.open-meteo.com/v1/forecast?latitude=' + enlem.toFixed(2) + '&longitude=' + boylam.toFixed(2) +
-      '&hourly=' + DEGISKEN + '&timezone=GMT&timeformat=unixtime&forecast_days=3';
+      '&hourly=' + DEGISKEN + '&timezone=GMT&timeformat=unixtime&forecast_days=7';
     try {
       const ctl = new AbortController();
       const zs = setTimeout(() => ctl.abort(), 8000);
@@ -63,8 +68,8 @@
       /* Yapı doğrulanmadan önbelleğe yazılmaz: bozuk yanıt defter kaydını ve gece özetini bozmasın */
       if (!yanitGecerli(j)) throw new Error('beklenmeyen yanıt biçimi');
       /* 48 saatten eski hava önbelleklerini sil (her ~1 km hücre ~3,5 KB) */
-      U.anahtarlar('hava2_').forEach(a => { const x = U.oku(a, null); if (!x || !(Date.now() - x.alindi <= EN_ESKI)) U.sil(a); });   // alindi bozuksa da silinir
-      U.anahtarlar('hava_').forEach(a => U.sil(a)); // eski biçim
+      U.anahtarlar('hava3_').forEach(a => { const x = U.oku(a, null); if (!x || !(Date.now() - x.alindi <= EN_ESKI)) U.sil(a); });   // alindi bozuksa da silinir
+      U.anahtarlar('hava2_').forEach(a => U.sil(a)); U.anahtarlar('hava_').forEach(a => U.sil(a)); // eski biçimler
       bellek[k] = { alindi: Date.now(), j };
       U.yaz(k, bellek[k]);
       if (window.Tani) Tani.servis('Open-Meteo (hava)', 'tamam');

@@ -242,3 +242,10 @@ Wikipedia ikincil kaynak olarak kullanıldı; mümkün olan terimlerde NASA, NOA
 
 - iauarchive.eso.org (IAU birimler sayfası) ve physics.nist.gov (CODATA ışık hızı) bu oturumda açılamadı (izin isteği zaman aşımı); ışık hızı NASA sözlüğünden alındı.
 - simple.wikipedia.org/wiki/Metallicity açılamadı; metal tanımı Wikipedia: Main sequence sayfasındaki metallik tanımından.
+
+## v44 (2026-11-08): "göktaşı" → "gök taşı"
+| Karar | Kaynak | Alıntı |
+|---|---|---|
+| Madde başı ayrı yazılır: "gök taşı"; bitişik "göktaşı" sözlükte yok | https://sozluk.gov.tr/gts?ara=g%C3%B6k%20ta%C5%9F%C4%B1 ve https://sozluk.gov.tr/gts?ara=g%C3%B6kta%C5%9F%C4%B1 | "gök taşı" isim, gök bilimi: "…yeryüzüne ulaşan katı cisim; … meteor, meteor taşı, meteorit" ; "göktaşı": "Sonuç bulunamadı" (2026-11-08) |
+| Eş anlamlı eklendi: "meteor taşı" (meteorit zaten vardı); "meteor" uygulamada ayrı terim olduğu için eklenmedi | aynı | — |
+Ders metinleri, sınavlar, sözlük eki, haberler ve çizimlerde 268 geçiş değişti; kaynak başlığı olan "Karauz 2019, Göktaşlarının Mülkiyeti Meselesi" özgün adıyla kaldı.

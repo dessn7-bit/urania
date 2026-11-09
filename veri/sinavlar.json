@@ -414,13 +414,13 @@
     "id": "d22-1",
     "soru": "İstanbul'da (yaklaşık 28,96° D) Türkiye Saati UTC + 3 iken ortalama Güneş meridyenden yaklaşık saat kaçta geçer ve neden?",
     "secenekler": [
-     "Tam 12:00'de, çünkü saat dilimleri her kentin öğlesine göre ayarlanır",
-     "Yaklaşık 13:04'te, çünkü İstanbul'un yerel ortalama zamanı UTC'den yalnızca yaklaşık 1 sa 56 dk ileride, saat ise 3 saat ileride",
-     "Yaklaşık 11:04'te, çünkü İstanbul 45° meridyeninin doğusundadır",
-     "Yaklaşık 14:00'te, çünkü yaz saati her yıl martta bir saat ileri alınır"
+     "Tam 12.00'de, çünkü saat dilimleri her kentin öğlesine göre ayarlanır",
+     "Yaklaşık 13.04'te, çünkü İstanbul'un yerel ortalama zamanı UTC'den yalnızca yaklaşık 1 sa 56 dk ileride, saat ise 3 saat ileride",
+     "Yaklaşık 11.04'te, çünkü İstanbul 45° meridyeninin doğusundadır",
+     "Yaklaşık 14.00'te, çünkü yaz saati her yıl martta bir saat ileri alınır"
     ],
     "dogru": 1,
-    "aciklama": "Derse göre her derece boylam 4 dakikadır: 28,955° × 4 dk ≈ 1 sa 55 dk 49 sn. Saat UTC'den 3 saat ileri olduğundan ortalama öğle 12:00 + 3 sa − 1 sa 55,8 dk ≈ 13:04 olur. timeanddate'in Haziran 2025 tablosunda zaman denkleminin sıfır olduğu 13 Haziran'da Güneş'in geçişi 13:04.",
+    "aciklama": "Derse göre her derece boylam 4 dakikadır: 28,955° × 4 dk ≈ 1 sa 55 dk 49 sn. Saat UTC'den 3 saat ileri olduğundan ortalama öğle 12.00 + 3 sa − 1 sa 55,8 dk ≈ 13.04 olur. timeanddate'in Haziran 2025 tablosunda zaman denkleminin sıfır olduğu 13 Haziran'da Güneş'in geçişi 13.04.",
     "ders": "d22",
     "bolum": 3
    },
@@ -482,7 +482,7 @@
    },
    {
     "id": "d34-2",
-    "soru": "Kruijer ve arkadaşlarının (2017) demir göktaşı izotoplarına dayanan çalışmasına göre Jüpiter hakkında ne söylenebilir?",
+    "soru": "Kruijer ve arkadaşlarının (2017) demir gök taşı izotoplarına dayanan çalışmasına göre Jüpiter hakkında ne söylenebilir?",
     "secenekler": [
      "Jüpiter en son oluşan gezegendir; Satürn'den sonra doğmuştur",
      "Jüpiter başka bir yıldızdan yakalanmış bir gezegendir",
@@ -504,7 +504,7 @@
      "Nice modelinin dev gezegenlerin hiç göç etmediğini kanıtlaması"
     ],
     "dogru": 0,
-    "aciklama": "Ay'ın düşük çekiminde enkaz uzağa savrulur; pek çok bilim insanı Apollo örneklerinin büyük kısmının Imbrium çarpmasından geldiğinden şüphelenir. Ay göktaşlarındaki eriyik yaşları da 2,5–3,9 milyar yıla yayılır. Ayrıca erken dev gezegen dengesizliği kanıtları Nice modelini geç bir yağmurun nedeni olmaktan çıkarır. Uzlaşma yoktur.",
+    "aciklama": "Ay'ın düşük çekiminde enkaz uzağa savrulur; pek çok bilim insanı Apollo örneklerinin büyük kısmının Imbrium çarpmasından geldiğinden şüphelenir. Ay gök taşlarındaki eriyik yaşları da 2,5–3,9 milyar yıla yayılır. Ayrıca erken dev gezegen dengesizliği kanıtları Nice modelini geç bir yağmurun nedeni olmaktan çıkarır. Uzlaşma yoktur.",
     "ders": "d34",
     "bolum": 10
    },
@@ -518,7 +518,7 @@
      "Oran, Dünya'nın suyunun Güneş rüzgârından geldiğini gösterdi"
     ],
     "dogru": 2,
-    "aciklama": "ROSINA aleti (Aralık 2014) Dünya suyununkinin üç katından fazla bir D/H oranı ölçtü. Dünya'nın suyu büyük ölçüde böyle kuyruklu yıldızlardan gelseydi oran daha yüksek olurdu. Suca zengin göktaşlarının oranı ise Dünya'nınkiyle genel olarak uyumludur; 2020'deki enstatit kondrit çalışması da yerel kökeni destekler. Konu hâlâ tartışmalıdır.",
+    "aciklama": "ROSINA aleti (Aralık 2014) Dünya suyununkinin üç katından fazla bir D/H oranı ölçtü. Dünya'nın suyu büyük ölçüde böyle kuyruklu yıldızlardan gelseydi oran daha yüksek olurdu. Suca zengin gök taşlarının oranı ise Dünya'nınkiyle genel olarak uyumludur; 2020'deki enstatit kondrit çalışması da yerel kökeni destekler. Konu hâlâ tartışmalıdır.",
     "ders": "d34",
     "bolum": 12
    },
@@ -588,7 +588,7 @@
      "Çekirdeğin tamamen katı olduğunu kesin olarak kanıtladı"
     ],
     "dogru": 1,
-    "aciklama": "Derse göre ekip, 18 Eylül 2021'deki bir göktaşı çarpmasının çekirdek sınırında kırınan dalgalarını ve Phobos'un yörünge verilerini kullandı. Önceki yorumların çekirdeğin parçası sandığı sıvı kaya katmanını ayırınca çekirdek yarıçapı 1650 ± 20 km'ye indi ve yoğunluğu yaklaşık 6,5 g/cm³ çıktı. Katı iç çekirdek iddiası ise 2025'te ayrı bir çalışmadan geldi ve doğrulanmayı bekliyor.",
+    "aciklama": "Derse göre ekip, 18 Eylül 2021'deki bir gök taşı çarpmasının çekirdek sınırında kırınan dalgalarını ve Phobos'un yörünge verilerini kullandı. Önceki yorumların çekirdeğin parçası sandığı sıvı kaya katmanını ayırınca çekirdek yarıçapı 1650 ± 20 km'ye indi ve yoğunluğu yaklaşık 6,5 g/cm³ çıktı. Katı iç çekirdek iddiası ise 2025'te ayrı bir çalışmadan geldi ve doğrulanmayı bekliyor.",
     "ders": "d36",
     "bolum": 3
    },
@@ -612,7 +612,7 @@
     "secenekler": [
      "Kutup başlıklarının kalınlığını ölçerek",
      "Üst atmosfer ile yüzeydeki argon izotoplarını karşılaştırarak; argonun yaklaşık %65'inin kaybolduğunu buldu",
-     "Mars göktaşlarındaki fosilleri inceleyerek",
+     "Mars gök taşlarındaki fosilleri inceleyerek",
      "Phobos'un yörüngesindeki değişimi ölçerek"
     ],
     "dogru": 1,
@@ -758,7 +758,7 @@
      "Satürn Dünya'ya hep aynı yüzünü gösterdiği için"
     ],
     "dogru": 1,
-    "aciklama": "Derse göre Satürn'ün manyetik ekseni dönme eksenine 0,06°'den bile çok daha az eğik. Jüpiter'de 9,4°'lik eğiklik radyo ışınımını dönüşle değiştirir; Satürn'de bu olmaz. Voyager 10:39:23 buldu, Cassini'nin radyo dönemi ~10:45:45'e kaydı, tahminler 10:36–10:48 arasında dağıldı; 2019'da halka dalgalarından 10 sa 33 dk 38 sn bulundu.",
+    "aciklama": "Derse göre Satürn'ün manyetik ekseni dönme eksenine 0,06°'den bile çok daha az eğik. Jüpiter'de 9,4°'lik eğiklik radyo ışınımını dönüşle değiştirir; Satürn'de bu olmaz. Voyager 10 sa 39 dk 23 sn buldu, Cassini'nin radyo dönemi ~10 sa 45 dk 45 sn'ye kaydı, tahminler 10 sa 36 dk ile 10 sa 48 dk arasında dağıldı; 2019'da halka dalgalarından 10 sa 33 dk 38 sn bulundu.",
     "ders": "d38",
     "bolum": 2
    },
@@ -1020,7 +1020,7 @@
     "id": "d41-1",
     "soru": "New Horizons, Plüton'daki Sputnik Planitia ovasında tek bir krater bile göremedi. Bu en iyi nasıl açıklanır?",
     "secenekler": [
-     "Plüton'a hiç göktaşı çarpmadığı için",
+     "Plüton'a hiç gök taşı çarpmadığı için",
      "Ovanın azot buzu yavaş bir konveksiyonla sürekli yenilendiği ve yüzeyin çok genç olduğu için",
      "New Horizons ovayı çok uzaktan, kraterleri seçemeyecek bir çözünürlükle görüntülediği için",
      "Kraterler kalın bir atmosferin altında gizlendiği için"
@@ -1130,26 +1130,26 @@
    },
    {
     "id": "d43-1",
-    "soru": "Bir ateş topunun söndüğü noktanın tam altında göktaşı aramak neden çoğu zaman sonuç vermez?",
+    "soru": "Bir ateş topunun söndüğü noktanın tam altında gök taşı aramak neden çoğu zaman sonuç vermez?",
     "secenekler": [
-     "Çünkü göktaşları yere çarpınca buharlaşır ve iz bırakmaz",
+     "Çünkü gök taşları yere çarpınca buharlaşır ve iz bırakmaz",
      "Çünkü parlak uçuş tipik olarak 20–30 km yükseklikte biter; sonraki karanlık uçuşta taşı yüksek irtifa rüzgârları birkaç kilometre sürükleyebilir ve parçalar uzun bir saçılma alanına dağılır",
-     "Çünkü göktaşları yere hep çok sıcak düşüp toprağın derinine gömülür",
+     "Çünkü gök taşları yere hep çok sıcak düşüp toprağın derinine gömülür",
      "Çünkü ateş topları yalnız gündüz görülür ve konumları bilinemez"
     ],
     "dogru": 1,
-    "aciklama": "Derse göre (Towner ve ark. 2022) parlak uçuş tipik olarak 20–30 km'de biter; ardından gelen karanlık uçuşta jet akımları düşüş noktasını birkaç kilometre kaydırabilir. Bu yüzden yörünge ve rüzgâr modelleriyle arama alanı hesaplanır. NASA'ya göre göktaşlarının çoğu yere soğuk düşer.",
+    "aciklama": "Derse göre (Towner ve ark. 2022) parlak uçuş tipik olarak 20–30 km'de biter; ardından gelen karanlık uçuşta jet akımları düşüş noktasını birkaç kilometre kaydırabilir. Bu yüzden yörünge ve rüzgâr modelleriyle arama alanı hesaplanır. NASA'ya göre gök taşlarının çoğu yere soğuk düşer.",
     "ders": "d43",
     "bolum": 2
    },
    {
     "id": "d43-2",
-    "soru": "Müze koleksiyonlarındaki buluntularda demir göktaşları çok kalabalık görünür. Gözlenmiş düşüşlere göre demirlerin gerçek payı yaklaşık ne kadardır ve fark neden doğar?",
+    "soru": "Müze koleksiyonlarındaki buluntularda demir gök taşları çok kalabalık görünür. Gözlenmiş düşüşlere göre demirlerin gerçek payı yaklaşık ne kadardır ve fark neden doğar?",
     "secenekler": [
      "Yaklaşık %50; çünkü Dünya'ya düşen cisimlerin yarısı gezegencik çekirdeğidir",
      "Yaklaşık %4,6; demirler kolay fark edildiği, yavaş aşındığı ve tarih boyunca toplandığı için buluntularda fazla görünür",
      "Yaklaşık %80; çünkü sıradan kondritlerin çoğu aslında demirdir",
-     "Yaklaşık %0,5; çünkü demir göktaşları yalnız Mars'tan gelir"
+     "Yaklaşık %0,5; çünkü demir gök taşları yalnız Mars'tan gelir"
     ],
     "dogru": 1,
     "aciklama": "Haziran 2012'ye kadar kayıtlı düşüşlerde ana türüne göre sınıflanmış 1.062 düşüşün 49'u demirdir (yaklaşık %4,6); sıradan kondritler yaklaşık %80'dir. Buluntular yanlıdır: demirler sıradan kayaya benzemez, ağırdır, yavaş aşınır ve işe yarar diye toplanmıştır.",
@@ -1172,15 +1172,15 @@
    },
    {
     "id": "d43-4",
-    "soru": "2 Eylül 2015'te Bingöl'e düşen Sarıçiçek göktaşı için hangisi doğrudur?",
+    "soru": "2 Eylül 2015'te Bingöl'e düşen Sarıçiçek gök taşı için hangisi doğrudur?",
     "secenekler": [
-     "Bir demir göktaşıdır ve tek parça hâlinde bulunmuştur",
+     "Bir demir gök taşıdır ve tek parça hâlinde bulunmuştur",
      "Mars'tan geldiği, içindeki gazların Viking ölçümlerine benzemesinden anlaşılmıştır",
      "Belgelenmiş ilk howardit düşüşüdür; 343 taş kayda geçmiştir ve Vesta'daki Antionia kraterinden yaklaşık 22 milyon yıl önce fırlatıldığı hesaplanmıştır",
-     "Türkiye'ye düşen ilk ve tek göktaşıdır"
+     "Türkiye'ye düşen ilk ve tek gök taşıdır"
     ],
     "dogru": 2,
-    "aciklama": "Derse göre 2019'da Meteoritics and Planetary Science'ta yayımlanan Sarıçiçek Konsorsiyumu makalesi onu belgelenmiş ilk howardit düşüşü olarak tanımlar; 343 taş belgelendi. Makaleye göre yaklaşık 1 metrelik meteoroit 22 ± 2 milyon yıl önce, büyük olasılıkla Vesta'daki 16,7 km'lik Antionia kraterinden fırlatıldı. Türkiye'ye daha önce de göktaşı düştü (Domanitch 1907, Bursa 1946, Akyumak 1981).",
+    "aciklama": "Derse göre 2019'da Meteoritics and Planetary Science'ta yayımlanan Sarıçiçek Konsorsiyumu makalesi onu belgelenmiş ilk howardit düşüşü olarak tanımlar; 343 taş belgelendi. Makaleye göre yaklaşık 1 metrelik meteoroit 22 ± 2 milyon yıl önce, büyük olasılıkla Vesta'daki 16,7 km'lik Antionia kraterinden fırlatıldı. Türkiye'ye daha önce de gök taşı düştü (Domanitch 1907, Bursa 1946, Akyumak 1981).",
     "ders": "d43",
     "bolum": 9
    }
@@ -1645,7 +1645,7 @@
      "Andromeda'nın parlaklığından yıldız sayısını hesaplayarak",
      "Samanyolu ile Andromeda'nın Büyük Patlama'dan bu yana uzaklaşıp geri dönerek bugünkü uzaklık ve yaklaşma hızına ulaşması için gereken kütleyi hesaplayarak",
      "Yerel Grup'taki sıcak gazın X ışınlarını ölçerek",
-     "Arka plan ışımasındaki Sunyaev–Zeldovich gölgesini ölçerek"
+     "Arka plan ışımasındaki Sunyaev–Zeldoviç gölgesini ölçerek"
     ],
     "dogru": 1,
     "aciklama": "Derse göre iki galaksinin aynı yerden çıkıp önce uzaklaştığı, sonra kendi çekimleriyle geri döndüğü varsayıldı ve görünenin en az on katı kütle bulundu. Bugünkü zamanlama kütlesi ~5×10¹² M☉ olup başka yöntemlerden büyük çıkıyor; konu tartışmalı.",
@@ -1654,7 +1654,7 @@
    },
    {
     "id": "d49-2",
-    "soru": "Bir galaksi kümesi Sunyaev–Zeldovich etkisiyle nasıl fark edilir?",
+    "soru": "Bir galaksi kümesi Sunyaev–Zeldoviç etkisiyle nasıl fark edilir?",
     "secenekler": [
      "Kümenin galaksileri radyo dalgalarında yanıp söner",
      "Küme, arka plan ışımasında her frekansta eşit derecede parlak görünür",
@@ -1922,7 +1922,7 @@
    },
    {
     "id": "d58-1",
-    "soru": "Hidrojeni iyonlaştırmak için gereken 13,6 elektronvolt yaklaşık 157.800 K'ye denk gelir. Evren buna rağmen neden ancak yaklaşık 3000 K'de saydamlaştı?",
+    "soru": "Hidrojeni iyonlaştırmak için gereken 13,6 elektronvolt yaklaşık 157.800 K'e denk gelir. Evren buna rağmen neden ancak yaklaşık 3000 K'de saydamlaştı?",
     "secenekler": [
      "Çünkü o dönemde hidrojen henüz oluşmamıştı",
      "Çünkü her baryona yaklaşık 1,7 milyar foton düşüyordu; bu kalabalığın içindeki küçük yüksek enerjili kesir bile oluşan atomları hemen yeniden iyonlaştırıyordu",
@@ -1930,7 +1930,7 @@
      "Çünkü 3000 K'de fotonların ortalama enerjisi 13,6 elektronvoltu aşıyordu"
     ],
     "dogru": 1,
-    "aciklama": "3000 K'de tipik foton enerjisi yalnızca yaklaşık 0,26 elektronvolttur. Ama fotonlar baryonlardan milyarlarca kat fazla olduğu için, ortalamanın çok üstünde enerjili küçük bir kesir bile atomları bozmaya yetiyordu. Atomlar ancak sıcaklık yaklaşık 3000 K'ye inince kalıcı oldu.",
+    "aciklama": "3000 K'de tipik foton enerjisi yalnızca yaklaşık 0,26 elektronvolttur. Ama fotonlar baryonlardan milyarlarca kat fazla olduğu için, ortalamanın çok üstünde enerjili küçük bir kesir bile atomları bozmaya yetiyordu. Atomlar ancak sıcaklık yaklaşık 3000 K'e inince kalıcı oldu.",
     "ders": "d58",
     "bolum": 5
    },
@@ -2564,7 +2564,7 @@
      "Çünkü zayıf kuvvet yalnız nötrinolar arasında etkilidir"
     ],
     "dogru": 1,
-    "aciklama": "Derse göre kütlesiz foton elektromanyetizmaya sonsuz menzil verir; W ve Z bozonları ise protondan yaklaşık 86 ve 97 kat ağırdır ve bu kütle zayıf kuvvetin menzilini sınırlar. Ömürleri yaklaşık 3 × 10⁻²⁵ saniyedir. Güçlü kuvvetin kısa menzili ise kütleden değil renk hapsinden gelir.",
+    "aciklama": "Derse göre kütlesiz foton elektromanyetizmaya sonsuz menzil verir; W ve Z bozonları ise protondan yaklaşık 86 ve 97 kat ağırdır ve bu kütle zayıf kuvvetin menzilini sınırlar. Ortalama ömürleri yaklaşık 3 × 10⁻²⁵ saniyedir. Güçlü kuvvetin kısa menzili ise kütleden değil renk hapsinden gelir.",
     "ders": "d32",
     "bolum": 5
    },

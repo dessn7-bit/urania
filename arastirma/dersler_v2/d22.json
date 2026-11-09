@@ -3,7 +3,7 @@
   "unite": "gokyuzu",
   "yeni": true,
   "baslik": "Zaman, Takvim ve Gökyüzü: Güneş Saatinden Atom Saatine",
-  "ozet": "Günün, ayın ve yılın gökyüzünden nasıl çıktığını ve neden birbirine tam bölünmediğini öğreneceksin. Güneş saatinin kol saatine neden uymadığını (zaman denklemi, analemma), İstanbul'un öğlesinin neden 13:04 civarına düştüğünü, Türkiye'nin kalıcı UTC + 3 saatini, atom saatini ve artık saniyenin 2026'da kaldırılma kararını göreceksin. Son olarak Jülyen, Gregoryen, Rumi ve Hicri takvimleri, ay-güneş takvimlerini, gün adlarının gezegenlerden gelişini ve presesyonun takvime etkisini ele alacağız.",
+  "ozet": "Günün, ayın ve yılın gökyüzünden nasıl çıktığını ve neden birbirine tam bölünmediğini öğreneceksin. Güneş saatinin kol saatine neden uymadığını (zaman denklemi, analemma), İstanbul'un öğlesinin neden 13.04 civarına düştüğünü, Türkiye'nin kalıcı UTC + 3 saatini, atom saatini ve artık saniyenin 2026'da kaldırılma kararını göreceksin. Son olarak Jülyen, Gregoryen, Rumi ve Hicri takvimleri, ay-güneş takvimlerini, gün adlarının gezegenlerden gelişini ve presesyonun takvime etkisini ele alacağız.",
   "on_bilgi": [
     "d1",
     "d10"
@@ -51,31 +51,31 @@
       "akilda": "Analemma, Güneş'in bir yıl boyunca aynı saatte gökteki yerlerinin çizdiği sekizdir: boyu mevsimleri, eni zaman denklemini gösterir. Zaman denklemi yüzünden en erken gün batımı en kısa günden önce, en geç gün doğumu sonra gelir."
     },
     {
-      "baslik": "Yerel saat: İstanbul'un öğlesi neden 13:04?",
+      "baslik": "Yerel saat: İstanbul'un öğlesi neden 13.04?",
       "paragraflar": [
         "Demiryolları ve telgraf yaygınlaşmadan önce her kent kendi saatini kullanırdı. Her yerin öğlesi, ortalama Güneş'in o yerin meridyeninden geçtiği andı. Buna yerel ortalama zaman denir. Kural basittir: Dünya 24 saatte 360° döner, yani saatte 15°, her derecede 4 dakika, her yay dakikasında 4 saniye. Doğudaki bir kent öğleye batıdakinden erken ulaşır. İki kent arasında 1° boylam farkı varsa öğleleri 4 dakika ayrıdır.",
-        "İstanbul'un boylamı yaklaşık 28° 57′ 18″ doğudur, ondalık olarak 28,955°. Bunu 15'e bölersen 1,930 saat, yani yaklaşık 1 sa 55 dk 49 sn bulursun. İstanbul'un yerel ortalama zamanı Greenwich'inkinden bu kadar ileridedir. Bugün Türkiye'deki saatler ise Greenwich'ten tam 3 saat ileri. Demek ki kol saatin, İstanbul'un kendi ortalama zamanından 3 sa − 1 sa 55 dk 49 sn = 1 sa 4 dk 11 sn ileridedir. Ortalama Güneş İstanbul'un meridyeninden saat 12:00'de değil, 13:04 civarında geçer.",
-        "Bu hesabı gerçek bir tabloyla sınayabilirsin. Bir gün doğumu ve batımı sitesinin İstanbul için 2025 Haziran tablosunda Güneş'in meridyenden geçişi 1 Haziran'da 13:01, 13 Haziran'da 13:04, 30 Haziran'da 13:07 olarak veriliyor. 13 Haziran, zaman denkleminin sıfırdan geçtiği günlerden biridir; o gün tablo tam bizim hesapladığımız 13:04'ü gösteriyor. Ay başında Güneş saatten biraz önde, ay sonunda biraz geride olduğu için öğle önce 13:04'ün öncesine, sonra sonrasına düşüyor.",
-        "Bu kayma yılın geri kalanında çok daha büyüktür. Kasım başında zaman denklemi yaklaşık 16,5 dakika ileri olduğu için İstanbul'da gerçek öğle saat 12:48 civarına gelir. Şubat ortasında yaklaşık 14 dakika geri olduğu için 13:18 civarına kayar. Yani aynı kentte gerçek öğle yıl içinde yarım saate yakın gidip gelir. Ülke ölçeğinde boylam farkı da eklenir. Türkiye kabaca 26° ile 45° doğu boylamları arasında uzanır; en doğu ile en batı ucu arasında yaklaşık 1 sa 16 dk güneş zamanı farkı vardır. En batıda ortalama öğle saat 13:16 civarında, en doğuda 12:00 civarında olur.",
-        "Bunu kendin ölçebilirsin. Güneşli bir günde düz bir zemine dik bir çubuk koy; gökbilimin en eski aleti olan gnomon budur. Gerçek öğlede Güneş tam güneydedir, bu yüzden gölge tam kuzeyi gösterir ve en kısa hâlini alır. Ama öğleye yakın gölgenin boyu çok yavaş değiştiği için en kısa anı birkaç dakikadan iyi yakalamak zordur. Daha iyi bir yol var: öğleden önce gölgenin ucunu işaretle ve saati yaz, öğleden sonra gölge aynı uzunluğa döndüğünde saati yeniden yaz. Güneş'in yolu meridyene göre kabaca simetrik olduğu için iki zamanın ortalaması gerçek öğleyi verir. Sonucu 13:04 ile ve o günün zaman denklemiyle karşılaştır."
+        "İstanbul'un boylamı yaklaşık 28° 57′ 18″ doğudur, ondalık olarak 28,955°. Bunu 15'e bölersen 1,930 saat, yani yaklaşık 1 sa 55 dk 49 sn bulursun. İstanbul'un yerel ortalama zamanı Greenwich'inkinden bu kadar ileridedir. Bugün Türkiye'deki saatler ise Greenwich'ten tam 3 saat ileri. Demek ki kol saatin, İstanbul'un kendi ortalama zamanından 3 sa − 1 sa 55 dk 49 sn = 1 sa 4 dk 11 sn ileridedir. Ortalama Güneş İstanbul'un meridyeninden saat 12.00'de değil, 13.04 civarında geçer.",
+        "Bu hesabı gerçek bir tabloyla sınayabilirsin. Bir gün doğumu ve batımı sitesinin İstanbul için 2025 Haziran tablosunda Güneş'in meridyenden geçişi 1 Haziran'da 13.01, 13 Haziran'da 13.04, 30 Haziran'da 13.07 olarak veriliyor. 13 Haziran, zaman denkleminin sıfırdan geçtiği günlerden biridir; o gün tablo tam bizim hesapladığımız 13.04'ü gösteriyor. Ay başında Güneş saatten biraz önde, ay sonunda biraz geride olduğu için öğle önce 13.04'ün öncesine, sonra sonrasına düşüyor.",
+        "Bu kayma yılın geri kalanında çok daha büyüktür. Kasım başında zaman denklemi yaklaşık 16,5 dakika ileri olduğu için İstanbul'da gerçek öğle saat 12.48 civarına gelir. Şubat ortasında yaklaşık 14 dakika geri olduğu için 13.18 civarına kayar. Yani aynı kentte gerçek öğle yıl içinde yarım saate yakın gidip gelir. Ülke ölçeğinde boylam farkı da eklenir. Türkiye kabaca 26° ile 45° doğu boylamları arasında uzanır; en doğu ile en batı ucu arasında yaklaşık 1 sa 16 dk güneş zamanı farkı vardır. En batıda ortalama öğle saat 13.16 civarında, en doğuda 12.00 civarında olur.",
+        "Bunu kendin ölçebilirsin. Güneşli bir günde düz bir zemine dik bir çubuk koy; gökbilimin en eski aleti olan gnomon budur. Gerçek öğlede Güneş tam güneydedir, bu yüzden gölge tam kuzeyi gösterir ve en kısa hâlini alır. Ama öğleye yakın gölgenin boyu çok yavaş değiştiği için en kısa anı birkaç dakikadan iyi yakalamak zordur. Daha iyi bir yol var: öğleden önce gölgenin ucunu işaretle ve saati yaz, öğleden sonra gölge aynı uzunluğa döndüğünde saati yeniden yaz. Güneş'in yolu meridyene göre kabaca simetrik olduğu için iki zamanın ortalaması gerçek öğleyi verir. Sonucu 13.04 ile ve o günün zaman denklemiyle karşılaştır."
       ],
       "ornek": {
         "baslik": "Örnek: İstanbul'da kasım ve şubat öğlesi",
-        "metin": "Adım 1: İstanbul'un ortalama öğlesi: 12:00 + 3 sa − (28,955° × 4 dk) = 12:00 + 180 dk − 115,8 dk = 13:04,2, yani yaklaşık 13:04. Adım 2: Güneş saati ileride olduğunda gerçek öğle erken gelir; gerçek öğle = ortalama öğle − zaman denklemi. Adım 3: 3 Kasım: 13:04,2 − 16,55 dk ≈ 12:47,7, yaklaşık 12:48. Adım 4: 11 Şubat: 13:04,2 − (−14,1 dk) = 13:18,3, yaklaşık 13:18. Sonuç: aynı kentte gerçek öğle kasım başında 12:48, şubat ortasında 13:18 civarına düşer; arada 30 dakikayı aşan bir fark vardır."
+        "metin": "Adım 1: İstanbul'un ortalama öğlesi: 12.00 + 3 sa − (28,955° × 4 dk) = 12.00 + 180 dk − 115,8 dk = 13.04,2, yani yaklaşık 13.04. Adım 2: Güneş saati ileride olduğunda gerçek öğle erken gelir; gerçek öğle = ortalama öğle − zaman denklemi. Adım 3: 3 Kasım: 13.04,2 − 16,55 dk ≈ 12.47,7, yaklaşık 12.48. Adım 4: 11 Şubat: 13.04,2 − (−14,1 dk) = 13.18,3, yaklaşık 13.18. Sonuç: aynı kentte gerçek öğle kasım başında 12.48, şubat ortasında 13.18 civarına düşer; arada 30 dakikayı aşan bir fark vardır."
       },
-      "akilda": "Her derece boylam 4 dakikalık güneş zamanı farkı demektir. İstanbul'da ortalama öğle UTC + 3 saatiyle 13:04 civarındadır; zaman denklemi gerçek öğleyi yıl içinde yaklaşık 12:48 ile 13:18 arasında oynatır."
+      "akilda": "Her derece boylam 4 dakikalık güneş zamanı farkı demektir. İstanbul'da ortalama öğle UTC + 3 saatiyle 13.04 civarındadır; zaman denklemi gerçek öğleyi yıl içinde yaklaşık 12.48 ile 13.18 arasında oynatır."
     },
     {
       "baslik": "Saat dilimleri ve Türkiye'nin saati",
       "paragraflar": [
         "Her kentin kendi saati, trenle bir kentten ötekine giden yolcu için kâbustur. Çözüm, geniş bölgelerin ortak bir saat kullanmasıdır; buna saat dilimi denir. Kâğıt üzerinde her dilim 15° genişliğindedir ve Greenwich'ten 15°'nin katı uzaklıktaki bir meridyenin güneş zamanını kullanır. Örneğin UTC + 2 dilimi 30° doğu, UTC + 3 dilimi 45° doğu meridyenine karşılık gelir. Gerçekte dilim sınırları siyasi sınırları izler, bu yüzden haritada eğri büğrüdür.",
         "Türkiye'de bu düzen bir yasayla kuruldu. 26 Aralık 1925'te kabul edilip 2 Ocak 1926 tarihli, 260 sayılı Resmî Gazete'de yayımlanan 697 sayılı Günün Yirmi Dört Saate Taksimine Dair Kanun iki şey söyler. Birincisi, gün gece yarısında başlar ve saatler sıfırdan yirmi dörde kadar sayılır. İkincisi, yasanın bugünkü metnine göre bütün Türkiye saatleri için Greenwich'e göre 30. derecedeki boylam esas alınır. Yasa 1984 ve 2017'de değiştirildi; bugünkü hâliyle hükümete bir saati aşmamak kaydıyla ileri saat uygulama yetkisi verir.",
-        "Yaz saati Türkiye'de resmî olarak ilk kez 1 Temmuz 1940'ta uygulandı. Sonraki yıllarda kaldırılıp yeniden başlatıldı; 1985'ten 2016'ya kadar her yıl uygulandı. Bu dönemde Türkiye kışın UTC + 2'yi, yazın UTC + 3'ü kullanıyordu. 2016'da kural değişti. 7 Eylül 2016'da kararlaştırılıp 8 Eylül 2016 tarihli, 29825 sayılı Resmî Gazete'de yayımlanan 2016/9154 sayılı Bakanlar Kurulu Kararı'na göre, 27 Mart 2016 saat 03:00'te bir saat ileri alınarak başlayan yaz saati her yıl, yıl boyu sürdürülecekti. Aynı karar, saatlerin 30 Ekim 2016 saat 04:00'te geri alınmasını öngören hükmü yürürlükten kaldırdı.",
+        "Yaz saati Türkiye'de resmî olarak ilk kez 1 Temmuz 1940'ta uygulandı. Sonraki yıllarda kaldırılıp yeniden başlatıldı; 1985'ten 2016'ya kadar her yıl uygulandı. Bu dönemde Türkiye kışın UTC + 2'yi, yazın UTC + 3'ü kullanıyordu. 2016'da kural değişti. 7 Eylül 2016'da kararlaştırılıp 8 Eylül 2016 tarihli, 29825 sayılı Resmî Gazete'de yayımlanan 2016/9154 sayılı Bakanlar Kurulu Kararı'na göre, 27 Mart 2016 saat 03.00'te bir saat ileri alınarak başlayan yaz saati her yıl, yıl boyu sürdürülecekti. Aynı karar, saatlerin 30 Ekim 2016 saat 04.00'te geri alınmasını öngören hükmü yürürlükten kaldırdı.",
         "Sonuç olarak Türkiye o günden beri sürekli UTC + 3 kullanır ve bu saate Türkiye Saati (TRT) denir. Hukuken temel hâlâ 30° doğu meridyenidir ve üstüne yıl boyu bir saatlik ileri saat eklenmiştir; pratikte saatlerimiz 45° doğu meridyeninin güneş zamanına göre işler. İstanbul bu meridyenin yaklaşık 16° batısındadır. Bu yüzden İstanbul'da kol saati Güneş'ten yaklaşık 1 saat 4 dakika ileridedir ve bunu en çok kış sabahlarında hissedersin: Güneş saat sekizi epey geçe doğar. 2008'de enerji bakanlığının yaz saatini kaldırıp UTC + 2,5 dilimine geçme önerisi de olmuştu, ama bu öneri uygulanmadı."
       ],
       "ornek": {
         "baslik": "Örnek: Aralık sabahı neden karanlık?",
-        "metin": "İstanbul'da haziran gün dönümünde gündüz yaklaşık 15 sa 7 dk 50 sn sürer ve bu, aralık gün dönümündekinden 5 sa 55 dk uzundur. Adım 1: Aralık gün dönümünde gündüz ≈ 15 sa 7 dk 50 sn − 5 sa 55 dk = 9 sa 12 dk 50 sn. Yarısı ≈ 4 sa 36 dk. Adım 2: Zaman denklemi 25 Aralık'ta sıfırdan geçtiği için gün dönümünde gerçek öğleyi ortalama öğleye yakın, yani 13:04 civarında alalım. Adım 3: Gün doğumu ≈ 13:04 − 4:36 = 08:28; gün batımı ≈ 13:04 + 4:36 = 17:40. Adım 4: Eski kış saati olan UTC + 2'de aynı anlar bir saat erken, 07:28 ve 16:40 olurdu. Sonuç: kalıcı UTC + 3 ile İstanbul'da en kısa günlerde Güneş yaklaşık 08:30'da doğar. Zaman denkleminin o günlerdeki birkaç dakikalık payını yok saydığımız için bu kaba bir tahmindir; dakikası dakikasına değer için bir tabloya bak."
+        "metin": "İstanbul'da haziran gün dönümünde gündüz yaklaşık 15 sa 7 dk 50 sn sürer ve bu, aralık gün dönümündekinden 5 sa 55 dk uzundur. Adım 1: Aralık gün dönümünde gündüz ≈ 15 sa 7 dk 50 sn − 5 sa 55 dk = 9 sa 12 dk 50 sn. Yarısı ≈ 4 sa 36 dk. Adım 2: Zaman denklemi 25 Aralık'ta sıfırdan geçtiği için gün dönümünde gerçek öğleyi ortalama öğleye yakın, yani 13.04 civarında alalım. Adım 3: Gün doğumu ≈ 13.04 − 4 sa 36 dk = 08.28; gün batımı ≈ 13.04 + 4 sa 36 dk = 17.40. Adım 4: Eski kış saati olan UTC + 2'de aynı anlar bir saat erken, 07.28 ve 16.40 olurdu. Sonuç: kalıcı UTC + 3 ile İstanbul'da en kısa günlerde Güneş yaklaşık 08.30'da doğar. Zaman denkleminin o günlerdeki birkaç dakikalık payını yok saydığımız için bu kaba bir tahmindir; dakikası dakikasına değer için bir tabloya bak."
       },
       "akilda": "697 sayılı yasa (1925) günü gece yarısından başlatır; bugünkü metni 30° doğu meridyenini esas alır. 2016/9154 sayılı karar (Resmî Gazete, 8 Eylül 2016) yaz saatini kalıcı yaptı; Türkiye o günden beri yıl boyu UTC + 3 kullanıyor."
     },
@@ -96,7 +96,7 @@
     {
       "baslik": "Artık saniye ve vedası",
       "paragraflar": [
-        "UTC'yi UT1'e yakın tutmak için 1972'de artık saniye kuralı getirildi. Kural başladığında UTC, TAI'nin 10 saniye gerisindeydi. UT1 ile UTC arasındaki farkın 0,9 saniyeye yaklaşacağı öngörüldüğünde UTC'ye bir saniye eklenir. Kararı, Dünya'nın dönüşünü ölçen Uluslararası Yer Dönüşü ve Referans Sistemleri Servisi (IERS) verir ve genellikle yaklaşık altı ay önceden duyurur. Eklenen saniye saatlerde 23:59:60 olarak yazılır. 1972'den bu yana 27 artık saniye eklendi, hepsi artı yönde. Sonuncusu 31 Aralık 2016'nın son dakikasına kondu. 10 + 27 = 37; TAI ile UTC arasındaki bugünkü fark böyle oluştu.",
+        "UTC'yi UT1'e yakın tutmak için 1972'de artık saniye kuralı getirildi. Kural başladığında UTC, TAI'nin 10 saniye gerisindeydi. UT1 ile UTC arasındaki farkın 0,9 saniyeye yaklaşacağı öngörüldüğünde UTC'ye bir saniye eklenir. Kararı, Dünya'nın dönüşünü ölçen Uluslararası Yer Dönüşü ve Referans Sistemleri Servisi (IERS) verir ve genellikle yaklaşık altı ay önceden duyurur. Eklenen saniye saatlerde 23.59.60 olarak yazılır. 1972'den bu yana 27 artık saniye eklendi, hepsi artı yönde. Sonuncusu 31 Aralık 2016'nın son dakikasına kondu. 10 + 27 = 37; TAI ile UTC arasındaki bugünkü fark böyle oluştu.",
         "Ekstra bir saniye zararsız görünür, ama bilgisayarlar her dakikanın 60 saniye olduğunu varsayar. 30 Haziran 2012'deki artık saniyeden sonra bir havayolu şirketinin, bir tarayıcı şirketinin ve pek çok Linux sunucusunun yazılımlarında sorunlar bildirildi. Ağ ve uydu konumlama işletmecileri artık saniyeyi farklı yöntemlerle uyguluyor ve bunlar ortak bir standarda uymuyor. Daha da kötüsü, son yıllarda Dünya'nın dönüşü beklenenden hızlı ölçüldü. Bu, ilk kez bir saniyenin eklenmesi değil çıkarılması, yani eksi artık saniye gerektirebilir; böyle bir şey hiç uygulanmadı ve test edilmedi. 2026 kararına dayanak olan bir çalıştay, 2035'e kadar eksi artık saniye gerekme olasılığını %30 olarak tahmin etti.",
         "Bu yüzden CGPM 2022'deki 27. toplantısında, 4 numaralı kararla, UT1 ile UTC arasındaki izin verilen en büyük farkın 2035'te ya da daha önce artırılmasına karar verdi. Asıl adım Ekim 2026'da atıldı: 13–15 Ekim 2026'da Versailles'da toplanan 28. CGPM, 5 numaralı kararla sürekli UTC'nin 20 Mayıs 2027'de yürürlüğe gireceğini ve UT1 ile UTC arasındaki farkın en çok 3.600 saniyeye, yani bir saate kadar büyüyebileceğini kabul etti. Karar metnine göre bu sınır UTC'nin birkaç yüzyıl boyunca kesintisiz kalmasını sağlayacak. Karar gerekçesinde ulaşım, enerji, telekomünikasyon ve uzay projelerinin hiçbir ayarlama gerektirmeyen sürekli bir UTC'ye ihtiyaç duyduğu, bazı kullanıcıların uydu konumlama sistemlerinin kendi zamanına geçmesinin ise uluslararası standartlaşmayı ciddi biçimde tehlikeye atabileceği yazıyor. Fark bir saate yaklaştığında ne yapılacağı metinde ayrıntılı yazmıyor. Kararın resmî metni Fransızcadır.",
         "Bu karar sana ne ifade eder? Telefonundaki saat aynı kalır. Güneş ile saat arasındaki fark çok yavaş büyüyecek: bir dakikalık fark Güneş'in gökteki yerinde yalnızca 0,25° eder, zaman denkleminin her yıl yaptığı 16 dakikalık salınımın yanında önemsizdir. Dünya'nın gerçek yönelimini bilmesi gereken gökbilim ve uydu hesapları ise UT1'i ayrıca izlemeyi sürdürecek. Karar, BIPM'den UT1 ile UTC arasındaki farkı izlemeye ve gidişatını düzenli olarak raporlamaya devam etmesini istiyor."
@@ -116,7 +116,7 @@
       ],
       "ornek": {
         "baslik": "Örnek: 2026 Quadrantid doruğu Türkiye'de hangi gün?",
-        "metin": "Uluslararası Meteor Örgütünün 2026 takvimine göre Quadrantid meteor yağmurunun doruğu 3 Ocak'ta 21:28 UT civarında öngörülüyor. Adım 1: Türkiye Saati = UTC + 3 sa. Adım 2: 21:28 + 3:00 = 24:28, yani gece yarısını 28 dakika geçe. Adım 3: Tarih bir gün ilerler. Sonuç: Türkiye'de doruk 4 Ocak 2026 saat 00:28 civarına düşer. Doruk saatinin bir öngörü olduğunu ve meteor yağmurlarının etkinliğinin doruğun çevresinde saatlerce sürdüğünü unutma."
+        "metin": "Uluslararası Meteor Örgütünün 2026 takvimine göre Quadrantid meteor yağmurunun doruğu 3 Ocak'ta 21.28 UT civarında öngörülüyor. Adım 1: Türkiye Saati = UTC + 3 sa. Adım 2: 21.28 + 3 sa = 24.28, yani gece yarısını 28 dakika geçe. Adım 3: Tarih bir gün ilerler. Sonuç: Türkiye'de doruk 4 Ocak 2026 saat 00.28 civarına düşer. Doruk saatinin bir öngörü olduğunu ve meteor yağmurlarının etkinliğinin doruğun çevresinde saatlerce sürdüğünü unutma."
       },
       "akilda": "Gök takvimleri UT ya da UTC kullanır; Türkiye için 3 saat ekle ve gece yarısını geçen olaylarda tarihin değiştiğine dikkat et. Eski tarihlerde önce takvimin hangisi olduğunu sor."
     },
@@ -242,7 +242,7 @@
     {
       "ad": "Gerçek öğle saati",
       "ifade": "gerçek öğle = ortalama öğle − ZD",
-      "aciklama": "Ortalama öğle, ortalama Güneş'in yerel meridyenden geçtiği saattir (İstanbul'da UTC + 3 ile yaklaşık 13:04). ZD artıyken Güneş meridyene erken gelir."
+      "aciklama": "Ortalama öğle, ortalama Güneş'in yerel meridyenden geçtiği saattir (İstanbul'da UTC + 3 ile yaklaşık 13.04). ZD artıyken Güneş meridyene erken gelir."
     },
     {
       "ad": "Boylamdan yerel ortalama zaman",
@@ -279,8 +279,8 @@
       "kid": "d22n1"
     },
     {
-      "deger": "≈ 13:04",
-      "aciklama": "İstanbul'da UTC + 3 ile ortalama Güneş'in meridyenden geçtiği saat; 13 Haziran 2025 tablosunda Güneş'in geçişi 13:04",
+      "deger": "≈ 13.04",
+      "aciklama": "İstanbul'da UTC + 3 ile ortalama Güneş'in meridyenden geçtiği saat; 13 Haziran 2025 tablosunda Güneş'in geçişi 13.04",
       "kaynak_url": "https://timeanddate.com/sun/@745042",
       "kid": "d22n2"
     },
@@ -449,7 +449,7 @@
   "defter_notu": [
     "Güneş saati = görünür güneş zamanı; kol saati = ortalama güneş zamanı. Fark = zaman denklemi: ≈ +16,5 dk (3 Kasım), ≈ −14 dk (11 Şubat); sıfır ≈ 15 Nis, 13 Haz, 1 Eyl, 25 Ara.",
     "Zaman denkleminin iki nedeni: yörünge basıklığı (≈ 7,7 dk, yıllık) + eksen eğikliği (≈ 9,9 dk, yarım yıllık). Analemma = Güneş'in yıllık sekizi; boyu mevsim, eni zaman denklemi.",
-    "1° boylam = 4 dk. İstanbul 28,955° D → yerel ortalama zaman UTC + 1 sa 55 dk 49 sn → UTC + 3 ile ortalama öğle ≈ 13:04 (gerçek öğle ≈ 12:48 ile 13:18 arası).",
+    "1° boylam = 4 dk. İstanbul 28,955° D → yerel ortalama zaman UTC + 1 sa 55 dk 49 sn → UTC + 3 ile ortalama öğle ≈ 13.04 (gerçek öğle ≈ 12.48 ile 13.18 arası).",
     "697 sayılı yasa (kabul 26.12.1925, RG 2.1.1926 sayı 260): gün gece yarısı başlar, saat 0–24, esas 30° D meridyeni. 2016/9154 BKK (RG 8.9.2016 sayı 29825): yaz saati yıl boyu → Türkiye sürekli UTC + 3.",
     "Saniye (1967): sezyum 133'ün 9.192.631.770 salınımı. UT1 = Dünya'nın dönüşü, TAI = atom, UTC = atom hızında, UT1'e yakın tutulan. TAI − UTC = 37 sn.",
     "Artık saniye: 1972'den 27 tane, sonuncusu 31.12.2016. CGPM 2022 Karar 4: sınır 2035'e kadar artacak. CGPM 2026 Karar 5 (15 Ekim 2026): 20 Mayıs 2027'den UTC kesintisiz, UT1 − UTC en çok 3600 sn.",
@@ -471,7 +471,7 @@
     },
     {
       "soru": "İstanbul'un boylamı yaklaşık 28,955° D. Türkiye UTC + 3 kullandığına göre İstanbul'da ortalama öğle saat kaçta olur? 11 Şubat'ta gerçek öğle ne zaman gelir?",
-      "cevap": "28,955° × 4 dk = 115,8 dk ≈ 1 sa 55 dk 49 sn. Ortalama öğle 12:00 + 3 sa − 1 sa 55,8 dk ≈ 13:04. 11 Şubat'ta zaman denklemi yaklaşık −14,1 dk olduğundan gerçek öğle 13:04 + 14 dk ≈ 13:18 civarında gelir.",
+      "cevap": "28,955° × 4 dk = 115,8 dk ≈ 1 sa 55 dk 49 sn. Ortalama öğle 12.00 + 3 sa − 1 sa 55,8 dk ≈ 13.04. 11 Şubat'ta zaman denklemi yaklaşık −14,1 dk olduğundan gerçek öğle 13.04 + 14 dk ≈ 13.18 civarında gelir.",
       "kid": "d22s2"
     },
     {

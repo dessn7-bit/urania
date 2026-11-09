@@ -329,7 +329,7 @@
       <h2>${U.kacis(bicim(g.z, 'gun').format(dkYuvarla(g.ogle)))} gecesi${g.z !== simdiDilim ? ` <span class="kucuk soluk">(${U.kacis(U.dilimAdi(g.z))})</span>` : ''}</h2>
       <ul class="liste">${g.ls.map(k => {
         const o = k.otomatik || {};
-        const parca = [bicim(g.z, 'saat').format(dkYuvarla(new Date(k.zaman))), k.alet, k.kosul].filter(x => typeof x === 'string' && x);
+        const parca = [bicim(g.z, 'saat').format(dkYuvarla(new Date(k.zaman))).replace(':', '.'), k.alet, k.kosul].filter(x => typeof x === 'string' && x);
         if (o.alt != null) parca.push(o.alt + '° yükseklik');
         if (o.ayOran != null) parca.push('Ay %' + o.ayOran + (o.ayAlt != null && o.ayAlt < 0 ? ' (batmıştı)' : ''));
         if (o.bulut != null) parca.push('tahmini bulut %' + o.bulut);

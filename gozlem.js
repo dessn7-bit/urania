@@ -73,6 +73,7 @@
         <button type="button" class="bag" id="gkBuGece" hidden>Bu geceye dön</button>
       </div>
       <p class="karar" id="gkKarar" aria-live="polite"></p>
+      <div class="hk-kp-kap" id="gkKp" hidden></div>
       <a class="dugme ar-giris" href="#ar"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M11 18.5h2M3.5 8.5l2 1M20.5 8.5l-2 1M12 5.5v0"/></svg>Telefonu gökyüzüne tut</a>
       <div class="levha-kap">
         <canvas id="gkLevha" width="560" height="560" role="img" aria-label="Seçili an için gökyüzü haritası. Bir cisme dokunarak adını gör."></canvas>
@@ -86,9 +87,13 @@
       <div class="dinle" id="gkSes" role="group" aria-label="Bu geceyi dinle"></div>
       <div class="ozet" id="gkOzet"></div>
       <div class="hava" id="gkHava" aria-live="polite"></div>
+      <section class="hk-kart" id="gkUydu" aria-label="Şu an gökyüzü: uydu görüntüsü" hidden></section>
+      <section class="hk-kart" id="gkGuven" aria-label="Tahmin güveni" hidden></section>
+      <section class="hk-kart" id="gkSeffaf" aria-label="Şeffaflık ve nem" hidden></section>
 
       <h2 class="okunur plan-bas" data-ses="Bu gecenin planı.">Bu gecenin planı</h2>
       <p class="alt-baslik">Gecenin görülecekleri, en iyi görünecekleri saate göre: yükseklik, bulut tahmini ve Ay ışığı hesaba katıldı. Saati belli olaylar (uydu geçişi, Algol, örtme) kendi saatinde.</p>
+      <div class="yedi-kap" id="gkYediGece" hidden><h3 class="yg-bas okunur" data-ses="Önümüzdeki yedi gece.">Önümüzdeki 7 gece</h3><ol class="yedi-gece" aria-label="Önümüzdeki 7 gece"></ol><p class="kaynak">Bulut ve yağış tahmininden (bulut %30'un altı açık); Ay yalnız nedene yazılır. <a href="https://open-meteo.com/" target="_blank" rel="noopener">Hava verisi: Open-Meteo.com</a></p></div>
       <ol class="plan" id="gkPlan"><li><span class="bos">Hazırlanıyor…</span></li></ol>
       <div class="cip-grup" id="gkPlanDugme" hidden><button type="button" class="dugme" id="gkPlanTakvim">Planı takvime ekle</button></div>
 
@@ -312,7 +317,7 @@
       else { seviye = 'idare'; bulut = `parçalı bulutlu (ortalama %${Math.round(oz.ort)}), uzun açık dönem yok`; }
       if (oz.yagis && oz.yagis.riskli && oz.yagis.riskli.length >= Math.ceil(n / 2)) { seviye = 'kotu'; bulut += '; yağış riski yüksek'; }
     } else bulut = oz === 'hata' ? 'bulut tahmini alınamadı' : oz === 'gece-yok' ? (g.kutupGunu ? 'Güneş bu gece batmıyor (kutup günü)' : 'bu gece gök kararmıyor')
-      : oz === 'yok' ? 'bulut tahmini yok (yalnız önümüzdeki 3 gün)' : 'bulut tahmini bekleniyor';
+      : oz === 'yok' ? 'bulut tahmini yok (yalnız önümüzdeki 7 gün)' : 'bulut tahmini bekleniyor';
     let karanlik = '';
     /* Tam karanlık = Güneş −18°'nin altında (geceAraligi karanlikDuzey); kutup gecesinde batış olmasa da olabilir */
     if (g.karanlikDuzey !== 'astro') { karanlik = oz === 'gece-yok' ? '' : 'tam karanlık yok'; if (seviye === 'iyi') seviye = 'idare'; }
@@ -896,8 +901,8 @@
     /* Sıra numarası ve eski veri her çağrıda sıfırlanır: önceki gecenin isteği geç gelirse yazılmasın */
     const sira = ++havaSira;
     durum.havaSaatler = null; durum.havaZaman = Date.now(); durum.havaOzet = null;
-    /* Gece hiç yoksa (kutup günü) bulut tahmininin yokluğu "3 gün" sınırından değil: ayrı durum */
-    if (!bas || !son) { kap.innerHTML = ''; durum.havaOzet = 'gece-yok'; kararYaz(); return; }
+    /* Gece hiç yoksa (kutup günü) bulut tahmininin yokluğu "7 gün" sınırından değil: ayrı durum */
+    if (!bas || !son) { kap.innerHTML = ''; durum.havaOzet = 'gece-yok'; kararYaz(); havaKartlari(null); yediGeceYaz(null); return; }
     const k = U.konum();
     kap.innerHTML = '<p class="soluk kucuk">Bulut tahmini alınıyor…</p>';
     let h;
@@ -906,6 +911,7 @@
       planYaz();
       kap.innerHTML = '<p class="soluk kucuk">Bulut tahmini alınamadı (internet yok ya da servis yanıt vermedi). Gök hesapları bundan etkilenmez.</p>';
       durum.havaOzet = 'hata'; kararYaz();
+      havaKartlari([]); yediGeceYaz(null);
       return;
     }
     if (sira !== havaSira) return;
@@ -922,8 +928,9 @@
     }
     const oz = Hava.geceOzeti(h.saatler, bas, son, 30);
     durum.havaOzet = oz || 'yok'; kararYaz();
+    havaKartlari(h.saatler); yediGeceYaz(h);
     const kaynak = '<a href="https://open-meteo.com/" target="_blank" rel="noopener">Hava verisi: Open-Meteo.com</a>';
-    if (!oz) { kap.innerHTML = '<p class="soluk kucuk">Bu gece için bulut tahmini yok; tahmin yalnız önümüzdeki 3 gün için yapılıyor. ' + kaynak + '</p>'; return; }
+    if (!oz) { kap.innerHTML = '<p class="soluk kucuk">Bu gece için bulut tahmini yok; tahmin yalnız önümüzdeki 7 gün için yapılıyor. ' + kaynak + '</p>'; return; }
     let cumle;
     const n = oz.ls.length;
     if (oz.acik && oz.acik.n >= n - 1) cumle = 'Bulut tahmini: gece boyunca büyük ölçüde açık.';
@@ -954,6 +961,38 @@
       <p class="kucuk" id="gkHavaDetay" aria-live="polite"></p>
       <p class="kaynak">Üstteki uzun çubuk bulut oranı, alttaki kısa çubuk yağış olasılığı; bir saate dokununca ayrıntısı çıkar. ${h.eski ? 'Çevrimdışı: son güncelleme ' + U.saat(h.alindi) + ', ' + U.gun(h.alindi) + '. ' : ''}${kaynak}</p>`;
     kap.querySelector('.hava-cumle').dataset.ses = tam;   // seste tam cümle: "Bulut tahmini: …"
+  }
+
+  /* v44 hava kartları (havakart.js): uydu, tahmin güveni, şeffaflık/çiğ/sis, Kp. Servis yanıt vermezse kart gizli kalır. */
+  function havaKartlari(saatler) {
+    if (!window.HavaKart) return;
+    const g = durum.gece, k = U.konum();
+    try {
+      HavaKart.yaz(el, g && g.geceBas && g.geceSon ? { enlem: k.enlem, boylam: k.boylam, bas: g.geceBas, son: g.geceSon, canli: !durum.gun, havaSaatler: saatler || [] } : null);
+    } catch (e) { if (window.Tani) Tani.servis('Hava kartları', 'hata', e.message); }
+  }
+  /* Plan: önümüzdeki 7 gecenin kısa şeridi (bulut ve yağış tahmininden iyi / idare eder / kötü ve nedeni; gece kararıyla aynı ölçüt) */
+  function yediGeceYaz(h) {
+    const kap = el && el.querySelector('#gkYediGece'); if (!kap) return;
+    const ol = kap.querySelector('ol');
+    if (!h || !window.HavaKart) { kap.hidden = true; ol.innerHTML = ''; return; }
+    const satirlar = [];
+    const t0 = bazAn().getTime();
+    for (let i = 0; i < 7; i++) {
+      const gun = new Date(t0 + i * 86400e3);
+      const g = G.geceAraligi(gun, durum.gzl);
+      if (!g.geceBas || !g.geceSon) continue;
+      const oz = Hava.geceOzeti(h.saatler, g.geceBas, g.geceSon, 30);
+      const k = HavaKart.geceKarari(oz);
+      if (!k) continue;
+      if (g.karanlikDuzey !== 'astro') { if (k.seviye === 'iyi') { k.seviye = 'idare'; k.ad = 'idare eder'; } k.neden += ', tam karanlık yok'; }
+      const ay = G.ayDurumu(g.karanlikBas || g.geceBas, durum.gzl);
+      if (ay.oran >= 0.4) k.neden += `, Ay %${Math.round(ay.oran * 100)}`;
+      const gunAd = U.gunHafta(g.geceBas);   // "9 Kasım Pazartesi": kısaltma Pazar/Pazartesi, Cuma/Cumartesi ayrımını yitirir
+      satirlar.push(`<li class="yg-${k.seviye} okunur" data-ses="${U.kacis(U.gunHafta(g.geceBas) + ' gecesi: ' + k.ad + '. ' + k.neden + '.')}"><span class="yg-gun">${i === 0 ? 'Bu gece' : U.kacis(gunAd)}</span><b class="yg-et">${k.ad}</b><span class="yg-neden">${U.kacis(k.neden)}</span></li>`);
+    }
+    kap.hidden = !satirlar.length;
+    ol.innerHTML = satirlar.join('');
   }
 
   /* planBekle: plan, Algol hesabından sonra ayrıca yazılır (ilk açılışta uzun görev bölünsün) */

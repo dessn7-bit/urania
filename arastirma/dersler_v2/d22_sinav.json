@@ -3,13 +3,13 @@
     "id": "d22-1",
     "soru": "İstanbul'da (yaklaşık 28,96° D) Türkiye Saati UTC + 3 iken ortalama Güneş meridyenden yaklaşık saat kaçta geçer ve neden?",
     "secenekler": [
-      "Tam 12:00'de, çünkü saat dilimleri her kentin öğlesine göre ayarlanır",
-      "Yaklaşık 13:04'te, çünkü İstanbul'un yerel ortalama zamanı UTC'den yalnızca yaklaşık 1 sa 56 dk ileride, saat ise 3 saat ileride",
-      "Yaklaşık 11:04'te, çünkü İstanbul 45° meridyeninin doğusundadır",
-      "Yaklaşık 14:00'te, çünkü yaz saati her yıl martta bir saat ileri alınır"
+      "Tam 12.00'de, çünkü saat dilimleri her kentin öğlesine göre ayarlanır",
+      "Yaklaşık 13.04'te, çünkü İstanbul'un yerel ortalama zamanı UTC'den yalnızca yaklaşık 1 sa 56 dk ileride, saat ise 3 saat ileride",
+      "Yaklaşık 11.04'te, çünkü İstanbul 45° meridyeninin doğusundadır",
+      "Yaklaşık 14.00'te, çünkü yaz saati her yıl martta bir saat ileri alınır"
     ],
     "dogru": 1,
-    "aciklama": "Derse göre her derece boylam 4 dakikadır: 28,955° × 4 dk ≈ 1 sa 55 dk 49 sn. Saat UTC'den 3 saat ileri olduğundan ortalama öğle 12:00 + 3 sa − 1 sa 55,8 dk ≈ 13:04 olur. timeanddate'in Haziran 2025 tablosunda zaman denkleminin sıfır olduğu 13 Haziran'da Güneş'in geçişi 13:04.",
+    "aciklama": "Derse göre her derece boylam 4 dakikadır: 28,955° × 4 dk ≈ 1 sa 55 dk 49 sn. Saat UTC'den 3 saat ileri olduğundan ortalama öğle 12.00 + 3 sa − 1 sa 55,8 dk ≈ 13.04 olur. timeanddate'in Haziran 2025 tablosunda zaman denkleminin sıfır olduğu 13 Haziran'da Güneş'in geçişi 13.04.",
     "ders": "d22",
     "bolum": 3
   },

@@ -1,0 +1,1617 @@
+{
+ "aciklama": "Derslerdeki ve sınavlardaki bütün \"→\" geçen cümleler ve sesli okunuşları (okunus.js). Gözden geçirildi; test (okunus.spec.js) her satırı birebir karşılaştırır. Yeniden üretmek: node araclar/ok_okunuslari.js",
+ "ok_sayisi": 398,
+ "tekil_cumledeki_ok": 397,
+ "cumleler": [
+  {
+   "yer": "veri/dersler.json.dersler[0].formuller[3].ifade",
+   "metin": "φ + δ > 90° → hiç batmaz;",
+   "okunus": "fi artı delta büyüktür 90 derece ise hiç batmaz;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[0].formuller[3].ifade",
+   "metin": "δ − φ < −90° → hiç doğmaz (kuzey yarım küre)",
+   "okunus": "delta eksi fi küçüktür eksi 90 derece ise hiç doğmaz (kuzey yarım küre)"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[0].defter_notu[3]",
+   "metin": "İstanbul ≈ 41° → Kutup Yıldızı kuzeyde ≈ 41° yükseklikte (kutba ≈ 0,65°).",
+   "okunus": "İstanbul yaklaşık 41 derece, bu yüzden Kutup Yıldızı kuzeyde yaklaşık 41 derece yükseklikte (kutba yaklaşık 0,65 derece)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[0].defter_notu[8]",
+   "metin": "Bortle 1 (kusursuz, sınır 7,6–8,0) → Bortle 9 (kent merkezi, ≤ 4,0).",
+   "okunus": "Bortle 1 (kusursuz, sınır 7,6 ile 8,0), bu yüzden Bortle 9 (kent merkezi, küçük ya da eşittir 4,0)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[0].defter_notu[9]",
+   "metin": "saat açısı = YYZ − α (0 → meridyende).",
+   "okunus": "saat açısı eşittir YYZ eksi alfa (0, yani meridyende)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[1].anahtar_sayilar[10].aciklama",
+   "metin": "Hidrojen H-alfa çizgisi (3 → 2 geçişi)",
+   "okunus": "Hidrojen H-alfa çizgisi (3, yani 2 geçişi)"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[1].defter_notu[1]",
+   "metin": "Tayf (düşük → yüksek frekans): radyo, mikrodalga, kızılötesi, görünür, morötesi, X, gama.",
+   "okunus": "Tayf (düşükten yükseğe frekans): radyo, mikrodalga, kızılötesi, görünür, morötesi, X, gama."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[1].defter_notu[3]",
+   "metin": "Isınan metal: kızıl → turuncu → beyaz akkor.",
+   "okunus": "Isınan metal: kızıl, ardından turuncu, ardından beyaz akkor."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[1].defter_notu[5]",
+   "metin": "T iki katı → birim alandan 16 kat.",
+   "okunus": "T iki katı, bu yüzden birim alandan 16 kat."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[1].defter_notu[6]",
+   "metin": "Kirchhoff: sıcak yoğun → sürekli;",
+   "okunus": "Kirchhoff: sıcak yoğundan sürekliye;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[1].defter_notu[6]",
+   "metin": "sıcak seyrek gaz → salma;",
+   "okunus": "sıcak seyrek gazdan salmaya;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[1].defter_notu[6]",
+   "metin": "sürekli kaynak önünde soğuk gaz → soğurma.",
+   "okunus": "sürekli kaynak önünde soğuk gazdan soğurmaya."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[1].defter_notu[6]",
+   "metin": "Lyman (n→1, morötesi), Balmer (n→2, görünür), Paschen (n→3, kızılötesi).",
+   "okunus": "Lyman (n'den 1'e, morötesi), Balmer (n'den 2'ye, görünür), Paschen (n'den 3'e, kızılötesi)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[2].bolumler[1].ornek.metin",
+   "metin": "Çıkış göz bebekleri: 7×50 → 50 / 7 ≈ 7,14 mm;",
+   "okunus": "Çıkış göz bebekleri: 7 çarpı 50, yani 50 bölü 7 yaklaşık 7,14 milimetre;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[2].bolumler[1].ornek.metin",
+   "metin": "10×50 → 50 / 10 = 5 mm.",
+   "okunus": "10 çarpı 50, yani 50 bölü 10 eşittir 5 milimetre."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[2].formuller[0].aciklama",
+   "metin": "7×50 → 50 / 7 = 7,14 mm;",
+   "okunus": "7 çarpı 50, yani 50 bölü 7 eşittir 7,14 milimetre;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[2].formuller[0].aciklama",
+   "metin": "10×50 → 5 mm.",
+   "okunus": "10 çarpı 50, yani 5 milimetre."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[2].formuller[1].aciklama",
+   "metin": "D = 50, d_göz = 7 → ≈ 51 kat.",
+   "okunus": "D eşittir 50, d göz eşittir 7, yani yaklaşık 51 kat."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[2].formuller[2].aciklama",
+   "metin": "51 kat → ≈ 4,3 kadir.",
+   "okunus": "51 kattan yaklaşığa 4,3 kadir."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[2].formuller[5].aciklama",
+   "metin": "7×, 6,4° → 42,7° (Nikon belgesi).",
+   "okunus": "7 çarpı, 6,4 derece, yani 42,7 derece (Nikon belgesi)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[2].formuller[6].aciklama",
+   "metin": "6,4° ve 1.000 m → 111,8 m ≈ 112 m.",
+   "okunus": "6,4 derece ve 1000 metreden 111,8 metreye yaklaşık 112 metre."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[2].anahtar_sayilar[10].deger",
+   "metin": "1774: 45 cisim → 110 cisim",
+   "okunus": "1774: 45 cisim, yani 110 cisim"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[2].anahtar_sayilar[17].deger",
+   "metin": "Yüzde 52 → yüzde 78,5",
+   "okunus": "Yüzde 52, yani yüzde 78,5"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[2].defter_notu[1]",
+   "metin": "Çıkış göz bebeği = objektif / büyütme → 7,14 mm.",
+   "okunus": "Çıkış göz bebeği eşittir objektif bölü büyütme, yani 7,14 milimetre."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[2].defter_notu[8]",
+   "metin": "Ayar: göz bebekleri arası → diyoptri (sağ göz kapalı orta tekerlek, sol göz kapalı halka).",
+   "okunus": "Ayar: göz bebekleri arasıdan diyoptriye (sağ göz kapalı orta tekerlek, sol göz kapalı halka)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[2].defter_notu[9]",
+   "metin": "Ay güvenli ama karanlık uyumunu bozar → sona bırak.",
+   "okunus": "Ay güvenli ama karanlık uyumunu bozar, bu yüzden sona bırak."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[2].sorular[0].cevap",
+   "metin": "10×50 → 50/10 = 5 mm;",
+   "okunus": "10 çarpı 50, yani 50 bölü 10 eşittir 5 milimetre;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[2].sorular[0].cevap",
+   "metin": "7×50 → 7,14 mm.",
+   "okunus": "7 çarpı 50, yani 7,14 milimetre."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[3].formuller[1].ifade",
+   "metin": "δ > 90° − φ → hiç batmaz;",
+   "okunus": "delta büyüktür 90 derece eksi fi ise hiç batmaz;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[3].formuller[1].ifade",
+   "metin": "δ < −(90° − φ) → hiç doğmaz",
+   "okunus": "delta küçüktür eksi (90 derece eksi fi) ise hiç doğmaz"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[3].formuller[3].aciklama",
+   "metin": "Δm = 0,42 → 1,47 kat;",
+   "okunus": "delta m eşittir 0,42, yani 1,47 kat;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[3].formuller[3].aciklama",
+   "metin": "Δm = 1 → yaklaşık 2,5 kat.",
+   "okunus": "delta m eşittir 1, yani yaklaşık 2,5 kat."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[3].defter_notu[4]",
+   "metin": "Presesyon yılda ≈ 50″ → takvim ~1 ay kaymış.",
+   "okunus": "Presesyon yılda yaklaşık 50 yay saniyesi, bu yüzden takvim yaklaşık 1 ay kaymış."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[3].defter_notu[7]",
+   "metin": "Merak→Dubhe çizgisini ≈ 5 kat (≈ 3 yumruk) uzat.",
+   "okunus": "Merak'tan Dubhe'ye çizgisini yaklaşık 5 kat (yaklaşık 3 yumruk) uzat."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[3].defter_notu[8]",
+   "metin": "Kış: Kuşak → Sirius (güney, 2,3 yumruk), → Aldebaran → Ülker.",
+   "okunus": "Kış: Kuşak'tan Sirius'a (güney, 2,3 yumruk), ardından Aldebaran, ardından Ülker."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[3].defter_notu[8]",
+   "metin": "İlkbahar: sapın kavisi → Arcturus → Spica.",
+   "okunus": "İlkbahar: sapın kavisi, ardından Arcturus, ardından Spica."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[3].defter_notu[8]",
+   "metin": "Sonbahar: Kare, Alpheratz → M31 (1,4 yumruk).",
+   "okunus": "Sonbahar: Kare, Alpheratz, yani M31 (1,4 yumruk)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[4].bolumler[1].akilda",
+   "metin": "Spekulum → gümüş (1856–57) → alüminyum (1932).",
+   "okunus": "Spekulum, ardından gümüş (1856 ile 57), ardından alüminyum (1932)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[4].bolumler[5].ornek.metin",
+   "metin": "Teleskop, 50°'lik göz merceği, 40 kat: alan 50 / 40 = 1,25° → 1,25 / 0,25 = 5 dakika.",
+   "okunus": "Teleskop, 50 derecelik göz merceği, 40 kat: alan 50 bölü 40 eşittir 1,25 derece, yani 1,25 bölü 0,25 eşittir 5 dakika."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[4].bolumler[5].ornek.metin",
+   "metin": "100 kat: 0,5° → 2 dakika.",
+   "okunus": "100 kat: 0,5 derece, yani 2 dakika."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[4].bolumler[5].ornek.metin",
+   "metin": "200 kat: 0,25° → yalnızca 1 dakika;",
+   "okunus": "200 kat: 0,25 dereceden yalnızcaya 1 dakika;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[4].formuller[0].aciklama",
+   "metin": "200 mm → (200/7)² ≈ 816 kat.",
+   "okunus": "200 milimetre, bu yüzden (200 bölü 7) kare yaklaşık 816 kat."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[4].formuller[1].aciklama",
+   "metin": "816 kat → yaklaşık 7,3 kadir.",
+   "okunus": "816 kattan yaklaşığa 7,3 kadir."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[4].formuller[3].aciklama",
+   "metin": "100 mm → 1,38″ (Rayleigh), 1,16″ (Dawes).",
+   "okunus": "100 milimetre, yani 1,38 yay saniyesi (Rayleigh), 1,16 yay saniyesi (Dawes)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[4].formuller[11].aciklama",
+   "metin": "7× → 8,6″;",
+   "okunus": "7 çarpı, yani 8,6 yay saniyesi;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[4].formuller[11].aciklama",
+   "metin": "100× → 0,6″.",
+   "okunus": "100 çarpı, yani 0,6 yay saniyesi."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[4].anahtar_sayilar[15].deger",
+   "metin": "13 Mart 1610 · Ülker 6 → 35 · Avcı 9 → 80 yıldız",
+   "okunus": "13 Mart 1610, Ülker 6'dan 35'e, Avcı 9, yani 80 yıldız"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[4].defter_notu[1]",
+   "metin": "Mercek: renk sapması + sarkma → en büyük mercekli Yerkes 1,02 m (1897).",
+   "okunus": "Mercek: renk sapması artı sarkma, yani en büyük mercekli Yerkes 1,02 metre (1897)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[4].defter_notu[1]",
+   "metin": "Spekulum → gümüş 1856–57 → alüminyum 1932.",
+   "okunus": "Spekulum, ardından gümüş 1856 ile 57, ardından alüminyum 1932."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[4].defter_notu[2]",
+   "metin": "200 mm / 7 mm → ~816 kat ≈ 7,3 kadir.",
+   "okunus": "200 milimetre bölü 7 milimetreden yaklaşığa 816 kat yaklaşık 7,3 kadir."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[4].defter_notu[4]",
+   "metin": "Göz büyütülmüş görüntüde ~60″ / M seçer: 7×50 → 8,6″ (sınır göz).",
+   "okunus": "Göz büyütülmüş görüntüde yaklaşık 60 yay saniyesi bölü M seçer: 7 çarpı 50, yani 8,6 yay saniyesi (sınır göz)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[5].bolumler[4].akilda",
+   "metin": "7× dürbün, telefonun eşdeğer odak uzaklığını kabaca 7 ile çarpar (24 mm → 168 mm), piksel ölçeği 74'ten yaklaşık 10,6 yay saniyesine iner.",
+   "okunus": "7 çarpı dürbün, telefonun eşdeğer odak uzaklığını kabaca 7 ile çarpar (24 milimetreden 168 milimetreye), piksel ölçeği 74'ten yaklaşık 10,6 yay saniyesine iner."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[5].bolumler[9].akilda",
+   "metin": "Foton gürültüsü sinyalin kareköküdür: 100 foton → 10 gürültü.",
+   "okunus": "Foton gürültüsü sinyalin kareköküdür: 100 foton, yani 10 gürültü."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[5].bolumler[10].akilda",
+   "metin": "sinyal-gürültü oranı √N kadar artar (9 kare → 3 kat, 100 kare → 10 kat).",
+   "okunus": "sinyal-gürültü oranı karekök N kadar artar (9 kare, yani 3 kat, 100 kare, yani 10 kat)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[5].formuller[7].ifade",
+   "metin": "N kare → oran √N kat",
+   "okunus": "N kareden orana karekök N kat"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[5].anahtar_sayilar[0].deger",
+   "metin": "23,9345 saat → saatte 15,04°",
+   "okunus": "23,9345 saatten saatteye 15,04 derece"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[5].anahtar_sayilar[7].deger",
+   "metin": "9 kare → 3 kat, 100 kare → 10 kat",
+   "okunus": "9 kare, yani 3 kat, 100 kare, yani 10 kat"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[5].anahtar_sayilar[9].deger",
+   "metin": "%0,5 → yaklaşık %20",
+   "okunus": "yüzde 0,5, yani yaklaşık yüzde 20"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[5].defter_notu[1]",
+   "metin": "24 mm, 4000 piksel → ≈ 74″.",
+   "okunus": "24 milimetre, 4000 pikselden yaklaşığa 74 yay saniyesi."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[5].defter_notu[2]",
+   "metin": "Ay: Looney 11 → f/11, 1 bölü ISO saniye.",
+   "okunus": "Ay: Looney 11, bu yüzden f bölü 11, 1 bölü ISO saniye."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[5].defter_notu[2]",
+   "metin": "İnceldikçe pozlama artar (tablo: dolunay 1/250 → dördün 1/60 → ince hilal 1/15).",
+   "okunus": "İnceldikçe pozlama artar (tablo: dolunay 1 bölü 250, ardından dördün 1 bölü 60, ardından ince hilal 1 bölü 15)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[5].defter_notu[3]",
+   "metin": "7× → 24 mm ≈ 168 mm, ölçek ≈ 10,6″.",
+   "okunus": "7 çarpı, yani 24 milimetre yaklaşık 168 milimetre, ölçek yaklaşık 10,6 yay saniyesi."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[5].defter_notu[5]",
+   "metin": "500 kuralı (500 ÷ f) fazla hoşgörülü: 24 mm'de 20,8 sn → ekvatorda ≈ 4 piksel iz.",
+   "okunus": "500 kuralı (500 bölü f) fazla hoşgörülü: 24 milimetrede 20,8 saniye, bu yüzden ekvatorda yaklaşık 4 piksel iz."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[5].defter_notu[7]",
+   "metin": "N kare yığ → oran √N kat (9 → 3, 100 → 10).",
+   "okunus": "N kare yığdan orana karekök N kat (9'dan 3'e, 100'den 10'a)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[5].defter_notu[8]",
+   "metin": "gökyüzünü bulup karartır → güzel görüntü, ölçüm değil.",
+   "okunus": "gökyüzünü bulup karartır, bu yüzden güzel görüntü, ölçüm değil."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[5].defter_notu[9]",
+   "metin": "Uydu izleri alacakaranlıkta çok (ZTF: %0,5 → ≈ %20, 2019 → 2021).",
+   "okunus": "Uydu izleri alacakaranlıkta çok (ZTF: yüzde 0,5, yani yaklaşık yüzde 20, 2019'dan 2021'e)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[5].sorular[4].cevap",
+   "metin": "Dürbün açıları 7 ile çarptığı için eşdeğer odak kabaca 7 katına çıkar (24 mm → 168 mm) ve piksel ölçeği 74'ten yaklaşık 10,6 yay saniyesine iner;",
+   "okunus": "Dürbün açıları 7 ile çarptığı için eşdeğer odak kabaca 7 katına çıkar (24 milimetreden 168 milimetreye) ve piksel ölçeği 74'ten yaklaşık 10,6 yay saniyesine iner;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[6].bolumler[4].akilda",
+   "metin": "Uzaklık 2 kat → kuvvet 1/4.",
+   "okunus": "Uzaklık 2 kat, bu yüzden kuvvet dörtte bir."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[6].formuller[6].aciklama",
+   "metin": "Mars: 1 / S = 1 / 365,256 − 1 / 686,980 → S ≈ 779,9 gün.",
+   "okunus": "Mars: 1 bölü S eşittir 1 bölü 365,256 eksi 1 bölü 686,980, yani S yaklaşık 779,9 gün."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[6].anahtar_sayilar[20].deger",
+   "metin": "Callisto: 1.882.700 km, 16,689 gün → Jüpiter ≈ 1,898 × 10²⁷ kg",
+   "okunus": "Callisto: 1882700 kilometre, 16,689 gün, bu yüzden Jüpiter yaklaşık 1,898 çarpı 10 üzeri 27 kilogram"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[6].defter_notu[1]",
+   "metin": "Kepler II: eşit zamanda eşit alan → günberide hızlı, günötede yavaş (Dünya 30,29 / 29,29 km/s).",
+   "okunus": "Kepler iki: eşit zamanda eşit alan, bu yüzden günberide hızlı, günötede yavaş (Dünya 30,29 bölü 29,29 kilometre bölü saniye)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[6].defter_notu[2]",
+   "metin": "Mars 1,524 AB → 1,88 yıl;",
+   "okunus": "Mars 1,524 astronomik birim, yani 1,88 yıl;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[6].defter_notu[2]",
+   "metin": "Satürn 9,54 AB → 29,4 yıl.",
+   "okunus": "Satürn 9,54 astronomik birim, yani 29,4 yıl."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[6].defter_notu[3]",
+   "metin": "Ay testi: 60² = 3600 → Ay'ın ivmesi 0,00272 m/s².",
+   "okunus": "Ay testi: 60 kare eşittir 3600, yani Ay'ın ivmesi 0,00272 metre bölü saniye kare."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[6].defter_notu[3]",
+   "metin": "Merkür: 43 yay saniyesi/yüzyıl → Einstein.",
+   "okunus": "Merkür: 43 yay saniyesi bölü yüzyıl, bu yüzden Einstein."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[6].defter_notu[5]",
+   "metin": "Newton biçimi: a³ / T² = G(M + m) / 4π² → dönem + uzaklık = kütle.",
+   "okunus": "Newton biçimi: a küp bölü T kare eşittir G(M artı m) bölü 4 pi kare, yani dönem artı uzaklık eşittir kütle."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[6].defter_notu[8]",
+   "metin": "Ay günü 24 sa 50 dk → gelgit her gün ~50 dk kayar.",
+   "okunus": "Ay günü 24 saat 50 dakika, bu yüzden gelgit her gün yaklaşık 50 dakika kayar."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[6].defter_notu[9]",
+   "metin": "L4, L5 kararlı → Truva asteroitleri.",
+   "okunus": "L4, L5 kararlı, bu yüzden Truva asteroitleri."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[7].anahtar_sayilar[8].deger",
+   "metin": "3,5 → 1,5 → 5,2 AB",
+   "okunus": "3,5'ten 1'e,5'ten 5'e,2 astronomik birim"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[7].defter_notu[1]",
+   "metin": "Swedenborg 1734, Kant 1755, Laplace 1796 → itiraz (Moulton 1900) → Safronov + manyetik aktarım → 1980'ler güneş bulutsusu disk modeli.",
+   "okunus": "Swedenborg 1734, Kant 1755, Laplace 1796, ardından itiraz (Moulton 1900), ardından Safronov artı manyetik aktarım, ardından 1980'ler güneş bulutsusu disk modeli."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[7].defter_notu[3]",
+   "metin": "170 K → 2,7 AB.",
+   "okunus": "170 kelvin, yani 2,7 astronomik birim."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[7].defter_notu[3]",
+   "metin": "Dışarıda katı ×5 → devler.",
+   "okunus": "Dışarıda katı çarpı 5, bu yüzden devler."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[7].defter_notu[4]",
+   "metin": "Toz → çakıl → gezegencik: sekme ve metre engeli (gaz ~50 m/s yavaş).",
+   "okunus": "Toz, ardından çakıl, ardından gezegencik: sekme ve metre engeli (gaz yaklaşık 50 metre bölü saniye yavaş)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[7].defter_notu[7]",
+   "metin": "Grand Tack (Jüpiter 3,5 → 1,5 → 5,2 AB) ve Nice (5,5–17 AB, 1:2 rezonansı) = modeller.",
+   "okunus": "Grand Tack (Jüpiter 3,5'ten 1'e,5'ten 5'e,2 astronomik birim) ve Nice (5,5 ile 17 astronomik birim, 1:2 rezonansı) eşittir modeller."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[8].defter_notu[3]",
+   "metin": "Hız: Merkür 47,4 → Neptün 5,4 km/s.",
+   "okunus": "Hız: Merkür 47,4, bu yüzden Neptün 5,4 kilometre bölü saniye."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[8].defter_notu[9]",
+   "metin": "Oluşum: ~4,6 milyar yıl önce bulut çöktü → disk → gezegenler.",
+   "okunus": "Oluşum: yaklaşık 4,6 milyar yıl önce bulut çöktü, ardından disk, ardından gezegenler."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[8].defter_notu[9]",
+   "metin": "Kar çizgisi (~2,7–5 AB): içte kaya, dışta buz + gaz → devler.",
+   "okunus": "Kar çizgisi (yaklaşık 2,7 ile 5 astronomik birim): içte kaya, dışta buz artı gazdan devlere."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[9].bolumler[4].akilda",
+   "metin": "Kabuk (okyanus 5–10 km, kıta ~35 km) → manto (astenosfer 100–250 km; manto ~2890 km'ye kadar) → sıvı dış çekirdek (~2260 km kalın) → katı iç çekirdek (yarıçap 1221 km, Fe–Ni, ~13 g/cm³, 330–360 GPa, sınırda ~6000 ± 500 °C).",
+   "okunus": "Kabuk (okyanus 5 ile 10 kilometre, kıta yaklaşık 35 kilometre), ardından manto (astenosfer 100 ile 250 kilometre; manto yaklaşık 2890 kilometreye kadar), ardından sıvı dış çekirdek (yaklaşık 2260 kilometre kalın), ardından katı iç çekirdek (yarıçap 1221 kilometre, Fe–Ni, yaklaşık 13 gram bölü santimetre küp, 330 ile 360 gigapaskal, sınırda yaklaşık 6000 artı eksi 500 santigrat derece)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[9].bolumler[8].akilda",
+   "metin": "Manyetik kutup kayar (1900'ler ~10 km/yıl → 2003'te 40 km/yıl);",
+   "okunus": "Manyetik kutup kayar (1900'ler yaklaşık 10 kilometre bölü yıl, yani 2003'te 40 kilometre bölü yıl);"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[9].bolumler[9].akilda",
+   "metin": "Troposfer (~10 km; hava olayları, su buharının %99'u) → stratosfer (~50 km; ozon, sıcaklık artar) → mezosfer (~85 km; −90 °C, meteorlar) → termosfer (500–1000 km; uydular, ISS, kutup ışıkları, Kármán çizgisi 100 km) → ekzosfer.",
+   "okunus": "Troposfer (yaklaşık 10 kilometre; hava olayları, su buharının yüzde 99'u), ardından stratosfer (yaklaşık 50 kilometre; ozon, sıcaklık artar), ardından mezosfer (yaklaşık 85 kilometre; eksi 90 santigrat derece, meteorlar), ardından termosfer (500 ile 1000 kilometre; uydular, ISS, kutup ışıkları, Kármán çizgisi 100 kilometre), ardından ekzosfer."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[9].bolumler[10].akilda",
+   "metin": "Karbondioksit: sanayi öncesi ~270 → 1960 ~313 → bugün ~420 ppm.",
+   "okunus": "Karbondioksit: sanayi öncesi yaklaşık 270, ardından 1960 yaklaşık 313, ardından bugün yaklaşık milyonda 420."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[9].anahtar_sayilar[13].deger",
+   "metin": "255 K → 288 K (33 K);",
+   "okunus": "255 kelvinden 288 kelvine (33 kelvin);"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[9].defter_notu[0]",
+   "metin": "eylemsizlik çarpanı 0,3308 < 0,4 → içi ağır.",
+   "okunus": "eylemsizlik çarpanı 0,3308 küçüktür 0,4 ise içi ağır."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[9].defter_notu[4]",
+   "metin": "Levhalar: Wegener 1915 → manyetik şeritler → deniz tabanı yayılması (1961) → Glomar Challenger 1968.",
+   "okunus": "Levhalar: Wegener 1915, ardından manyetik şeritler, ardından deniz tabanı yayılması (1961), ardından Glomar Challenger 1968."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[9].defter_notu[9]",
+   "metin": "Sera: 255 → 288 K;",
+   "okunus": "Sera: 255'ten 288 kelvine;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[10].defter_notu[0]",
+   "metin": "Sağ yan aydınlık → büyüyor.",
+   "okunus": "Sağ yan aydınlıktan büyüyora."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[10].defter_notu[3]",
+   "metin": "Eş zamanlı dönme: 1 dönüş = 1 dolanım → hep aynı yüz.",
+   "okunus": "Eş zamanlı dönme: 1 dönüş eşittir 1 dolanım, yani hep aynı yüz."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[11].defter_notu[2]",
+   "metin": "İstanbul 28,955° D → yerel ortalama zaman UTC + 1 sa 55 dk 49 sn → UTC + 3 ile ortalama öğle ≈ 13.04 (gerçek öğle ≈ 12.48 ile 13.18 arası).",
+   "okunus": "İstanbul 28,955 derece doğu, ardından yerel ortalama zaman UTC artı 1 saat 55 dakika 49 saniye, ardından UTC artı 3 ile ortalama öğle yaklaşık 13:04 (gerçek öğle yaklaşık 12:48 ile 13:18 arası)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[11].defter_notu[3]",
+   "metin": "2016/9154 BKK (RG 8.9.2016 sayı 29825): yaz saati yıl boyu → Türkiye sürekli UTC + 3.",
+   "okunus": "2016 bölü 9154 BKK (RG 8.9.2016 sayı 29825): yaz saati yıl boyu, bu yüzden Türkiye sürekli UTC artı 3."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[11].defter_notu[7]",
+   "metin": "Gregoryen (24.2.1582 Inter gravissimas): 4 Ekim Perşembe → 15 Ekim Cuma.",
+   "okunus": "Gregoryen (24.2.1582 Inter gravissimas): 4 Ekim Perşembe, yani 15 Ekim Cuma."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[11].defter_notu[7]",
+   "metin": "4'e bölünen artık, 100'e bölünen değil, 400'e bölünen artık → 365,2425 gün;",
+   "okunus": "4'e bölünen artık, 100'e bölünen değil, 400'e bölünen artık, yani 365,2425 gün;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[11].defter_notu[8]",
+   "metin": "1917: 15 Şubat 1332 → 1 Mart 1333 (13 gün).",
+   "okunus": "1917: 15 Şubat 1332'den 1 Mart 1333'e (13 gün)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[11].defter_notu[8]",
+   "metin": "698 sayılı yasa: 31 Kânunuevvel 1341 → 1 Ocak 1926.",
+   "okunus": "698 sayılı yasa: 31 Kânunuevvel 1341'den 1 Ocak 1926'ya."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[11].defter_notu[9]",
+   "metin": "Hicri yıl ≈ 354,367 gün → yılda ≈ 10,9 gün kayma, ≈ 33 yılda tur.",
+   "okunus": "Hicri yıl yaklaşık 354,367 gün, bu yüzden yılda yaklaşık 10,9 gün kayma, yaklaşık 33 yılda tur."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[11].defter_notu[9]",
+   "metin": "Gün adları: 24 = 3 × 7 + 3 → Satürn, Güneş, Ay, Mars, Merkür, Jüpiter, Venüs.",
+   "okunus": "Gün adları: 24 eşittir 3 çarpı 7 artı 3, yani Satürn, Güneş, Ay, Mars, Merkür, Jüpiter, Venüs."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[12].anahtar_sayilar[10].deger",
+   "metin": "~2,2 km² → ~4 km² (Şubat–Ekim 1991)",
+   "okunus": "yaklaşık 2,2 kilometre kareden yaklaşığa 4 kilometre kare (Şubat–Ekim 1991)"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[12].defter_notu[2]",
+   "metin": "Merkür büzüldü: yarıçap 4,6–7 km (Byrne 2014, 5934 yapı) → loblu sarplar.",
+   "okunus": "Merkür büzüldü: yarıçap 4,6 ile 7 kilometre (Byrne 2014, 5934 yapı), bu yüzden loblu sarplar."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[12].defter_notu[3]",
+   "metin": "Kutup buzu: eğiklik 0,034° → sürekli gölge.",
+   "okunus": "Kutup buzu: eğiklik 0,034 derece, bu yüzden sürekli gölge."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[12].defter_notu[5]",
+   "metin": "BepiColombo: 20.10.2018 → yörünge 21.11.2026, MPO ve Mio, bilim Nisan 2027.",
+   "okunus": "BepiColombo: 20.10.2018, bu yüzden yörünge 21.11.2026, MPO ve Mio, bilim Nisan 2027."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[12].defter_notu[7]",
+   "metin": "Kara cisim 226,6 K, albedo 0,77 → sera ~510 K (Dünya 34 K).",
+   "okunus": "Kara cisim 226,6 kelvin, albedo 0,77, bu yüzden sera yaklaşık 510 kelvin (Dünya 34 kelvin)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[12].defter_notu[8]",
+   "metin": "Maat Mons bacası 1991'de 2,2 → 4 km² (Herrick & Hensley 2023).",
+   "okunus": "Maat Mons bacası 1991'de 2,2, yani 4 kilometre kare (Herrick ve Hensley 2023)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[13].bolumler[1].akilda",
+   "metin": "Eğiklik 25,19° → Dünya'ya benzer mevsimler, ama iki kat uzun ve basık yörünge (e = 0,0935) yüzünden eşitsiz;",
+   "okunus": "Eğiklik 25,19 derece, bu yüzden Dünya'ya benzer mevsimler, ama iki kat uzun ve basık yörünge (e eşittir 0,0935) yüzünden eşitsiz;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[13].formuller[3].aciklama",
+   "metin": "Olympus Mons: 25 / 312 → ~4,6°.",
+   "okunus": "Olympus Mons: 25 bölü 312, yani yaklaşık 4,6 derece."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[13].formuller[6].aciklama",
+   "metin": "Mars 54,6–401,4 milyon km → 3,0–22,3 dakika.",
+   "okunus": "Mars 54,6 ile 401,4 milyon kilometre, yani 3,0 ile 22,3 dakika."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[13].formuller[7].aciklama",
+   "metin": "Mars −2,94 ile −1,2: Δm = 1,74 → ~5 kat.",
+   "okunus": "Mars eksi 2,94 ile eksi 1,2: delta m eşittir 1,74, yani yaklaşık 5 kat."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[13].defter_notu[1]",
+   "metin": "Eğiklik 25,19°, e = 0,0935 → günberide %45 fazla ışık, eşitsiz mevsimler.",
+   "okunus": "Eğiklik 25,19 derece, e eşittir 0,0935, yani günberide yüzde 45 fazla ışık, eşitsiz mevsimler."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[13].defter_notu[3]",
+   "metin": "Çekirdek: ~1830 → 1650 ± 20 km (Samuel 2023, erimiş silikat katmanı, ~6,5 g/cm³) → ~600 km katı iç çekirdek (Eylül 2025, 23 olay, doğrulanmalı).",
+   "okunus": "Çekirdek: yaklaşık 1830, ardından 1650 artı eksi 20 kilometre (Samuel 2023, erimiş silikat katmanı, yaklaşık 6,5 gram bölü santimetre küp), ardından yaklaşık 600 kilometre katı iç çekirdek (Eylül 2025, 23 olay, doğrulanmalı)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[13].defter_notu[6]",
+   "metin": "2018 küresel toz fırtınası τ 5–10 → Opportunity (2004–2018) sustu;",
+   "okunus": "2018 küresel toz fırtınası tau 5 ile 10, bu yüzden Opportunity (2004 ile 2018) sustu;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[13].defter_notu[7]",
+   "metin": "D/H → ≥137 m okyanus;",
+   "okunus": "D bölü H, yani büyük ya da eşittir 137 metre okyanus;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[13].sorular[10].cevap",
+   "metin": "1/T = 1/7,654 − 1/24,623 ≈ 0,0900 → T ≈ 11,1 saat: yaklaşık 11 saatte bir batıdan doğar.",
+   "okunus": "1 bölü T eşittir 1 bölü 7,654 eksi 1 bölü 24,623 yaklaşık 0,0900, yani T yaklaşık 11,1 saat: yaklaşık 11 saatte bir batıdan doğar."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[14].defter_notu[7]",
+   "metin": "BKL: 1879 39.000 km → 2017 16.350 km → ~14.000 km;",
+   "okunus": "BKL: 1879 39000 kilometre, ardından 2017 16350 kilometre, ardından yaklaşık 14000 kilometre;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[15].bolumler[10].akilda",
+   "metin": "Boşlukları uydular açar: rezonansla (Mimas 2:1 → Cassini Bölümü'nün iç kenarı, ~116.900 km) ya da halkanın içinde dolanarak (Pan → Encke, Daphnis → Keeler).",
+   "okunus": "Boşlukları uydular açar: rezonansla (Mimas 2:1, bu yüzden Cassini Bölümü'nün iç kenarı, yaklaşık 116900 kilometre) ya da halkanın içinde dolanarak (Pan'dan Encke'ye, Daphnis'ten Keeler'e)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[15].bolumler[11].akilda",
+   "metin": "Cassini: düşük kütle ve temizlik → halkalar genç (10–100 milyon yıl).",
+   "okunus": "Cassini: düşük kütle ve temizlik, bu yüzden halkalar genç (10 ile 100 milyon yıl)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[15].bolumler[11].akilda",
+   "metin": "Hyodo ve ekibi (Aralık 2024, benzetim): mikrometeoroitler buharlaşıp uzaklaştırılır, halkalar az kirlenir → 4,5 milyar yaşında olabilir.",
+   "okunus": "Hyodo ve ekibi (Aralık 2024, benzetim): mikrometeoroitler buharlaşıp uzaklaştırılır, halkalar az kirlenir, yani 4,5 milyar yaşında olabilir."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[15].defter_notu[2]",
+   "metin": "Manyetik eksen dönme eksenine <0,06° eğik → gün radyo ile ölçülemedi.",
+   "okunus": "Manyetik eksen dönme eksenine 0,06 altı derece eğik ise gün radyo ile ölçülemedi."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[15].defter_notu[7]",
+   "metin": "Mimas 2:1 → Cassini Bölümü iç kenarı (~116.900 km).",
+   "okunus": "Mimas 2:1, bu yüzden Cassini Bölümü iç kenarı (yaklaşık 116900 kilometre)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[16].defter_notu[2]",
+   "metin": "Triton'un yörüngesi → Neptün 1,024 × 10²⁶ kg.",
+   "okunus": "Triton'un yörüngesi, bu yüzden Neptün 1,024 çarpı 10 üzeri 26 kilogram."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[17].bolumler[4].akilda",
+   "metin": "Galileo manyetometresi indüklenmiş alan ölçtü (Khurana 1998) → tuzlu okyanus.",
+   "okunus": "Galileo manyetometresi indüklenmiş alan ölçtü (Khurana 1998), bu yüzden tuzlu okyanus."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[17].bolumler[5].akilda",
+   "metin": "Hubble 2015: kutup ışıkları 6° yerine 2° salınıyor → tuzlu okyanus (~100 km, ~150 km buzun altında).",
+   "okunus": "Hubble 2015: kutup ışıkları 6 derece yerine 2 derece salınıyor, bu yüzden tuzlu okyanus (yaklaşık 100 kilometre, yaklaşık 150 kilometre buzun altında)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[17].bolumler[6].akilda",
+   "metin": "Rezonans dışı, gelgit ısınması yok → Güneş Sistemi'nin en kraterli yüzeyi (Valhalla ~3.000 km).",
+   "okunus": "Rezonans dışı, gelgit ısınması yok, bu yüzden Güneş Sistemi'nin en kraterli yüzeyi (Valhalla yaklaşık 3000 kilometre)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[17].bolumler[8].akilda",
+   "metin": "(Nature, Aralık 2025): ~15 saatlik gecikme ve güçlü enerji kaybı → küresel okyanus yerine 150 km+ buzun altında çamursu katman ve su cepleri.",
+   "okunus": "(Nature, Aralık 2025): yaklaşık 15 saatlik gecikme ve güçlü enerji kaybı, bu yüzden küresel okyanus yerine 150 kilometre üstü buzun altında çamursu katman ve su cepleri."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[17].bolumler[9].akilda",
+   "metin": "~0,1°'lik sallantı → küresel okyanus (Thomas ve ark., 2015).",
+   "okunus": "yaklaşık 0,1 derecelik sallantı, bu yüzden küresel okyanus (Thomas ve arkadaşları, 2015)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[17].bolumler[12].akilda",
+   "metin": "Ters yönde (157,3°) dolanan tek büyük uydu → yakalanmış Kuiper kuşağı cismi.",
+   "okunus": "Ters yönde (157,3 derece) dolanan tek büyük uydu, bu yüzden yakalanmış Kuiper kuşağı cismi."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[17].formuller[5].aciklama",
+   "metin": "Iapetus'un iki yüzü: Δm = 1,7 → ≈ 4,8 kat.",
+   "okunus": "Iapetus'un iki yüzü: delta m eşittir 1,7, yani yaklaşık 4,8 kat."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[17].defter_notu[1]",
+   "metin": "Eliptik yörünge → gelgit ısınması.",
+   "okunus": "Eliptik yörünge, bu yüzden gelgit ısınması."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[17].defter_notu[4]",
+   "metin": "Hubble 2015: aurora 6° yerine 2° → okyanus.",
+   "okunus": "Hubble 2015: aurora 6 derece yerine 2 dereceden okyanusa."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[17].defter_notu[5]",
+   "metin": "0,3549 → az farklılaşmış;",
+   "okunus": "0,3549, bu yüzden az farklılaşmış;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[17].defter_notu[5]",
+   "metin": "indüksiyon → okyanus olabilir.",
+   "okunus": "indüksiyon, bu yüzden okyanus olabilir."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[17].defter_notu[6]",
+   "metin": "Petricca 2025: 15 saatlik gecikme → çamursu iç, su cepleri.",
+   "okunus": "Petricca 2025: 15 saatlik gecikme, bu yüzden çamursu iç, su cepleri."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[17].defter_notu[7]",
+   "metin": "Enceladus: ~500 km, gayzerler 2005, 101 gayzer / 4 kaplan çizgisi, 0,1° sallantı → küresel okyanus.",
+   "okunus": "Enceladus: yaklaşık 500 kilometre, gayzerler 2005, 101 gayzer bölü 4 kaplan çizgisi, 0,1 derece sallantı, bu yüzden küresel okyanus."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[18].formuller[0].aciklama",
+   "metin": "Sedna: a = 506 AB → P ≈ 11.380 yıl;",
+   "okunus": "Sedna: a eşittir 506 astronomik birim, yani P yaklaşık 11380 yıl;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[18].formuller[0].aciklama",
+   "metin": "Eris: a = 67,7 AB → P ≈ 557 yıl.",
+   "okunus": "Eris: a eşittir 67,7 astronomik birim, yani P yaklaşık 557 yıl."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[18].defter_notu[3]",
+   "metin": "New Horizons: 19.01.2006 → 14.07.2015 (12.500 km) → Arrokoth 01.01.2019 (3.500 km).",
+   "okunus": "New Horizons: 19.01.2006, ardından 14.07.2015 (12500 kilometre), ardından Arrokoth 01.01.2019 (3500 kilometre)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[19].formuller[0].aciklama",
+   "metin": "Halley: P = 76 yıl → a ≈ 17,9 AB;",
+   "okunus": "Halley: P eşittir 76 yıl, yani a yaklaşık 17,9 astronomik birim;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[19].formuller[0].aciklama",
+   "metin": "Plüton: a = 39,48 AB → P ≈ 248 yıl.",
+   "okunus": "Plüton: a eşittir 39,48 astronomik birim, yani P yaklaşık 248 yıl."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[19].formuller[5].aciklama",
+   "metin": "H = 22, p = 0,14 → yaklaşık 140 m.",
+   "okunus": "H eşittir 22, p eşittir 0,14, yani yaklaşık 140 metre."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[19].anahtar_sayilar[3].deger",
+   "metin": "11 sa 55 dk → 11 sa 23 dk (32 ± 2 dk)",
+   "okunus": "11 saat 55 dakikadan 11 saat 23 dakikaya (32 artı eksi 2 dakika)"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[19].anahtar_sayilar[13].deger",
+   "metin": "%3,1 → %0,004",
+   "okunus": "yüzde 3,1'den yüzde 0,004'e"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[19].defter_notu[1]",
+   "metin": "Vesta en parlak (≈5,5 kadir) → kentten dürbünle.",
+   "okunus": "Vesta en parlak (yaklaşık 5,5 kadir), bu yüzden kentten dürbünle."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[19].defter_notu[2]",
+   "metin": "H = 22 → 106–236 m (albedoya göre).",
+   "okunus": "H eşittir 22, yani 106 ile 236 metre (albedoya göre)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[19].defter_notu[4]",
+   "metin": "Meteoroit (uzayda) → meteor (75–120 km'de parlar) → gök taşı (yere düşer).",
+   "okunus": "Meteoroit (uzayda), ardından meteor (75 ile 120 kilometrede parlar), ardından gök taşı (yere düşer)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[19].defter_notu[7]",
+   "metin": "DART (26.09.2022): Dimorphos 11 sa 55 dk → 11 sa 23 dk.",
+   "okunus": "DART (26.09.2022): Dimorphos 11 saat 55 dakikadan 11 saat 23 dakikaya."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[19].defter_notu[7]",
+   "metin": "2024 YR4: %3,1 → %0,004 (olasılık önce artıp sonra düşebilir).",
+   "okunus": "2024 YR4: yüzde 3,1'den yüzde 0,004'e (olasılık önce artıp sonra düşebilir)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[19].defter_notu[8]",
+   "metin": "Kuiper kuşağı ~30–50 AB → kısa dönemli kuyruklu yıldızlar.",
+   "okunus": "Kuiper kuşağı yaklaşık 30 ile 50 astronomik birim, bu yüzden kısa dönemli kuyruklu yıldızlar."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[19].defter_notu[8]",
+   "metin": "Oort bulutu ~2.000–100.000 AB → uzun dönemliler (öngörü, gözlenmedi).",
+   "okunus": "Oort bulutu yaklaşık 2000 ile 100000 astronomik birim, bu yüzden uzun dönemliler (öngörü, gözlenmedi)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[19].sorular[3].cevap",
+   "metin": "Kepler'in üçüncü yasası: P² = a³ → a³ = 27² = 729 → a = 9 AB.",
+   "okunus": "Kepler'in üçüncü yasası: P kare eşittir a küp, yani a küp eşittir 27 kare eşittir 729, yani a eşittir 9 astronomik birim."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[20].formuller[0].aciklama",
+   "metin": "Siding Spring: P = 740.000 yıl → a ≈ 8.200 AB;",
+   "okunus": "Siding Spring: P eşittir 740000 yıl, yani a yaklaşık 8200 astronomik birim;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[20].anahtar_sayilar[1].aciklama",
+   "metin": "dönme süresi 12,40 → 12,31 saat",
+   "okunus": "dönme süresi 12,40'ten 12,31 saate"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[20].defter_notu[7]",
+   "metin": "Döteryum oranı Dünya × 3 → kuyruklu yıldızlar tek su kaynağı değil.",
+   "okunus": "Döteryum oranı Dünya çarpı 3, bu yüzden kuyruklu yıldızlar tek su kaynağı değil."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[21].defter_notu[0]",
+   "metin": "1803 L'Aigle: 3.000'den fazla taş, Biot'nun raporu → gök taşı kabul edildi.",
+   "okunus": "1803 L'Aigle: 3000'den fazla taş, Biot'nun raporu, bu yüzden gök taşı kabul edildi."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[21].defter_notu[2]",
+   "metin": "Ablasyon → füzyon kabuğu (siyah, ince) + regmaglipt.",
+   "okunus": "Ablasyon, bu yüzden füzyon kabuğu (siyah, ince) artı regmaglipt."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[21].defter_notu[2]",
+   "metin": "Parlak uçuş 20–30 km'de biter → karanlık uçuş, rüzgâr kaydırır.",
+   "okunus": "Parlak uçuş 20 ile 30 kilometrede biter, bu yüzden karanlık uçuş, rüzgâr kaydırır."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[22].formuller[1].aciklama",
+   "metin": "Örnek: 450 s → ≈ 4.413 m/s.",
+   "okunus": "Örnek: 450 saniyeden yaklaşığa 4413 metre bölü saniye."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[22].formuller[2].aciklama",
+   "metin": "Dünya → Mars: ≈ 0,709 yıl ≈ 259 gün.",
+   "okunus": "Dünya'dan Mars'a: yaklaşık 0,709 yıl yaklaşık 259 gün."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[22].defter_notu[1]",
+   "metin": "4,5 km/s ile 9,7 km/s → kalkış kütlesinin %88,4'ü yakıt.",
+   "okunus": "4,5 kilometre bölü saniye ile 9,7 kilometre bölü saniye, bu yüzden kalkış kütlesinin yüzde 88,4'ü yakıt."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[22].defter_notu[5]",
+   "metin": "Dünya → Mars ≈ 259 gün;",
+   "okunus": "Dünya'dan Mars'a yaklaşık 259 gün;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[22].defter_notu[7]",
+   "metin": "Tiangong 41,5°, 382 × 386 km → İstanbul'un (41,0°) tepesinden geçebilir.",
+   "okunus": "Tiangong 41,5 derece, 382 çarpı 386 kilometre, bu yüzden İstanbul'un (41,0 derece) tepesinden geçebilir."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[23].formuller[2].ifade",
+   "metin": "4 ¹H → ⁴He + enerji (kütlenin ~%0,7'si; 26,73 MeV)",
+   "okunus": "4 hidrojen 1'den helyum 4 artı enerji oluşur (kütlenin yaklaşık yüzde 0,7'si; 26,73 mega elektronvolt)"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[23].formuller[2].aciklama",
+   "metin": "Ara adımlar: p + p → ²H + e⁺ + ν;",
+   "okunus": "Ara adımlar: p artı p birleşerek hidrojen 2 artı pozitron artı nü oluşturur;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[23].formuller[2].aciklama",
+   "metin": "²H + p → ³He + γ;",
+   "okunus": "hidrojen 2 artı p birleşerek helyum 3 artı gama oluşturur;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[23].formuller[2].aciklama",
+   "metin": "³He + ³He → ⁴He + 2p.",
+   "okunus": "helyum 3 artı helyum 3 birleşerek helyum 4 artı 2p oluşturur."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[23].defter_notu[1]",
+   "metin": "İçten dışa: çekirdek (0–0,25 R, ~15,7 milyon K) → ışınım bölgesi (0,25–0,7 R) → takoklin → konveksiyon bölgesi (0,7 R–yüzey).",
+   "okunus": "İçten dışa: çekirdek (0 ile 0,25 R, yaklaşık 15,7 milyon kelvin), ardından ışınım bölgesi (0,25 ile 0,7 R), ardından takoklin, ardından konveksiyon bölgesi (0,7 R–yüzey)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[23].defter_notu[3]",
+   "metin": "Atmosfer: fotosfer → kromosfer (tutulmada kırmızı halka) → geçiş bölgesi → korona (1–2 milyon K; neden sıcak? çözülmedi).",
+   "okunus": "Atmosfer: fotosfer, ardından kromosfer (tutulmada kırmızı halka), ardından geçiş bölgesi, ardından korona (1 ile 2 milyon kelvin; neden sıcak? çözülmedi)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[23].defter_notu[4]",
+   "metin": "Enerji: 4 ¹H → ⁴He, kütlenin %0,7'si enerji (26,73 MeV).",
+   "okunus": "Enerji: 4 hidrojen 1'den helyum 4'e, kütlenin yüzde 0,7'si enerji (26,73 mega elektronvolt)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[23].defter_notu[7]",
+   "metin": "Patlama + koronal kütle atımı → uzay havası, jeomanyetik fırtına, kutup ışığı.",
+   "okunus": "Patlama artı koronal kütle atımı, bu yüzden uzay havası, jeomanyetik fırtına, kutup ışığı."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[24].defter_notu[3]",
+   "metin": "maviyi daha çok tutar → sönükleştirme + kızarma.",
+   "okunus": "maviyi daha çok tutardan sönükleştirmeye artı kızarma."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[24].defter_notu[3]",
+   "metin": "Galaksi merkezi 30 kadir → 10¹² kat.",
+   "okunus": "Galaksi merkezi 30 kadir, yani 10 üzeri 12 kat."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[24].defter_notu[6]",
+   "metin": "Jeans (1902): basınç < kütleçekimi → çöküş, parçalanma, küme.",
+   "okunus": "Jeans (1902): basınç küçüktür kütleçekimi ise çöküş, parçalanma, küme."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[24].defter_notu[7]",
+   "metin": "Önyıldız (~500.000 yıl) → T Tauri (10 milyon yıldan kısa, 9,3–10,7 kadir) → anakol.",
+   "okunus": "Önyıldız (yaklaşık 500000 yıl), ardından T Tauri (10 milyon yıldan kısa, 9,3 ile 10,7 kadir), ardından anakol."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[24].defter_notu[9]",
+   "metin": "Salpeter 1955: dN/dM ∝ M^−2,35 → çoğu yıldız kırmızı cüce.",
+   "okunus": "Salpeter 1955: dN bölü dM orantılıdır M üzeri eksi 2,35, yani çoğu yıldız kırmızı cüce."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[25].anahtar_sayilar[10].deger",
+   "metin": "0,677 → 1,0 L☉ (%48);",
+   "okunus": "0,677'den 1'e,0 Güneş ışınımı (yüzde 48);"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[25].defter_notu[2]",
+   "metin": "L = 4πR²σT⁴ → aynı sıcaklıkta 100 kat parlak = 10 kat büyük.",
+   "okunus": "L eşittir 4 pi R kare sigma T üzeri 4, yani aynı sıcaklıkta 100 kat parlak eşittir 10 kat büyük."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[25].defter_notu[8]",
+   "metin": "Hidrojen bitince: kabukta füzyon, dış katmanlar şişer → kırmızı dev;",
+   "okunus": "Hidrojen bitince: kabukta füzyon, dış katmanlar şişer, bu yüzden kırmızı dev;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[25].defter_notu[8]",
+   "metin": "~100 milyon K'de helyum → karbon.",
+   "okunus": "yaklaşık 100 milyon kelvinde helyumdan karbona."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[25].defter_notu[9]",
+   "metin": "Kelvin: kütleçekimi yalnız ~30 milyon yıl yeter → füzyon.",
+   "okunus": "Kelvin: kütleçekimi yalnız yaklaşık 30 milyon yıl yeterden füzyona."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[26].defter_notu[1]",
+   "metin": "Shapley 1918: küresel kümeler Yay yönünde toplanıyor → Güneş merkezde değil.",
+   "okunus": "Shapley 1918: küresel kümeler Yay yönünde toplanıyor, bu yüzden Güneş merkezde değil."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[26].defter_notu[3]",
+   "metin": "Dönüm noktası: anakolu terk eden en kütleli yıldız → küme yaşı.",
+   "okunus": "Dönüm noktası: anakolu terk eden en kütleli yıldız, bu yüzden küme yaşı."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[26].defter_notu[6]",
+   "metin": "Algol: 2,87 günde bir 2,1 → 3,4 kadir, ~10 saat;",
+   "okunus": "Algol: 2,87 günde bir 2,1'den 3'e,4 kadir, yaklaşık 10 saat;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[26].defter_notu[6]",
+   "metin": "Algol paradoksu: hafif yıldız daha evrimli → kütle aktarımı (Roche lobu taşması).",
+   "okunus": "Algol paradoksu: hafif yıldız daha evrimli, bu yüzden kütle aktarımı (Roche lobu taşması)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[26].defter_notu[8]",
+   "metin": "Mira (Balina, Fabricius 1596, 332 gün, 3,5 → 8,6–10,1).",
+   "okunus": "Mira (Balina, Fabricius 1596, 332 gün, 3,5'ten 8'e,6 ile 10,1)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[26].defter_notu[8]",
+   "metin": "Betelgeuse 2019–20: +0,5 → +1,6 (toz).",
+   "okunus": "Betelgeuse 2019 ile 20: artı 0,5, yani artı 1,6 (toz)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[27].bolumler[8].ornek.metin",
+   "metin": "10 → 2 için fark 8 kadir: 100^(8/5) = 10^3,2 ≈ 1.580 kat.",
+   "okunus": "10, yani 2 için fark 8 kadir: 100 üzeri (8 bölü 5) eşittir 10 üzeri 3,2 yaklaşık 1580 kat."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[27].bolumler[8].ornek.metin",
+   "metin": "10 → 3 için fark 7 kadir: 10^2,8 ≈ 630 kat.",
+   "okunus": "10, yani 3 için fark 7 kadir: 10 üzeri 2,8 yaklaşık 630 kat."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[27].defter_notu[0]",
+   "metin": "Kütle kaderi belirler: ~8 M☉ altı → gezegenimsi bulutsu + beyaz cüce;",
+   "okunus": "Kütle kaderi belirler: yaklaşık 8 Güneş kütlesi altı, bu yüzden gezegenimsi bulutsu artı beyaz cüce;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[27].defter_notu[0]",
+   "metin": "üstü → süpernova (sınır kesin değil, 8–10 M☉).",
+   "okunus": "üstüden süpernovaya (sınır kesin değil, 8 ile 10 Güneş kütlesi)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[27].defter_notu[3]",
+   "metin": "Beyaz cüce soğur: >100.000 K → bilinen en soğuk ~3.050 K;",
+   "okunus": "Beyaz cüce soğur: 100000 kelvinden büyük ise bilinen en soğuk yaklaşık 3050 kelvin;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[27].defter_notu[4]",
+   "metin": "Kütleli yıldız soğanı: H 10 milyon yıl → ...",
+   "okunus": "Kütleli yıldız soğanı: H 10 milyon yıl, bu yüzden..."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[27].defter_notu[4]",
+   "metin": "→ Si ~1 gün.",
+   "okunus": ", bu yüzden Si yaklaşık 1 gün."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[28].defter_notu[1]",
+   "metin": "1933–34 Baade ve Zwicky: süpernova → nötron yıldızı.",
+   "okunus": "1933 ile 34 Baade ve Zwicky: süpernova, bu yüzden nötron yıldızı."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[28].defter_notu[5]",
+   "metin": "İç yapı: atmosfer (mm–cm) → okyanus → kabuk → nötron damlaması → makarna → nötronca zengin çekirdek → iç çekirdek bilinmiyor.",
+   "okunus": "İç yapı: atmosfer (milimetre–santimetre), ardından okyanus, ardından kabuk, ardından nötron damlaması, ardından makarna, ardından nötronca zengin çekirdek, ardından iç çekirdek bilinmiyor."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[29].anahtar_sayilar[8].deger",
+   "metin": "36 + 29 → 62 M☉;",
+   "okunus": "36 artı 29, yani 62 Güneş kütlesi;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[29].anahtar_sayilar[15].deger",
+   "metin": "35 → 250 Hz;",
+   "okunus": "35'ten 250 hertze;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[29].anahtar_sayilar[17].deger",
+   "metin": "33,6 + 32,2 → 62,7 M☉;",
+   "okunus": "33,6 artı 32,2, yani 62,7 Güneş kütlesi;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[29].anahtar_sayilar[17].deger",
+   "metin": "240.000 → 400.000 km²",
+   "okunus": "240000, yani 400000 kilometre kare"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[29].anahtar_sayilar[18].deger",
+   "metin": "85 + 66 → 142 M☉",
+   "okunus": "85 artı 66, yani 142 Güneş kütlesi"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[29].defter_notu[0]",
+   "metin": "Kaçış hızı ≥ ışık hızı → kara delik.",
+   "okunus": "Kaçış hızı büyük ya da eşittir ışık hızı ise kara delik."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[29].defter_notu[3]",
+   "metin": "Güçlü çekim → zaman yavaş akar (GPS: net +38,6 mikrosaniye/gün).",
+   "okunus": "Güçlü çekim, bu yüzden zaman yavaş akar (GPS: net artı 38,6 mikrosaniye bölü gün)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[29].defter_notu[3]",
+   "metin": "Gelgit → spagettileşme.",
+   "okunus": "Gelgitten spagettileşmeye."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[29].defter_notu[4]",
+   "metin": "GW190521: 85 + 66 → 142 M☉ (ara kütleli).",
+   "okunus": "GW190521: 85 artı 66, yani 142 Güneş kütlesi (ara kütleli)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[29].defter_notu[8]",
+   "metin": "GW150914 (14.09.2015): 36 + 29 → 62 M☉, 3 M☉ dalgaya;",
+   "okunus": "GW150914 (14.09.2015): 36 artı 29, yani 62 Güneş kütlesi, 3 Güneş kütlesi dalgaya;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[29].defter_notu[8]",
+   "metin": "Frekans 35 → 250 Hz, SNR 24.",
+   "okunus": "Frekans 35'ten 250 hertze, SNR 24."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[29].defter_notu[8]",
+   "metin": "GW250114: SNR ~80, alan 240.000 → 400.000 km² (Hawking alan teoremi).",
+   "okunus": "GW250114: SNR yaklaşık 80, alan 240000, yani 400000 kilometre kare (Hawking alan teoremi)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[30].defter_notu[4]",
+   "metin": "kutuplanma %15 → %5.",
+   "okunus": "kutuplanma yüzde 15'ten yüzde 5'e."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[30].defter_notu[6]",
+   "metin": "Salpeter zamanı ε = 0,1 → 50 milyon yıl.",
+   "okunus": "Salpeter zamanı epsilon eşittir 0,1, yani 50 milyon yıl."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[30].defter_notu[6]",
+   "metin": "100 M☉ → 10⁹ M☉: ~800 milyon yıl.",
+   "okunus": "100 Güneş kütlesi, yani 10 üzeri 9 Güneş kütlesi: yaklaşık 800 milyon yıl."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[31].bolumler[13].ornek.metin",
+   "metin": "Karşılaştır: kalın disk için −0,5 → 10^−0,5 ≈ 0,32 (üçte bir), −1,0 → 0,1 (onda bir).",
+   "okunus": "Karşılaştır: kalın disk için eksi 0,5, yani 10 üzeri eksi 0,5 yaklaşık 0,32 (üçte bir), eksi 1,0'dan 0,1'e (onda bir)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[31].anahtar_sayilar[12].deger",
+   "metin": "%80 (2012 → 2019)",
+   "okunus": "yüzde 80 (2012'den 2019'a)"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[31].defter_notu[1]",
+   "metin": "Harita: Herschel 1785 (yıldız sayımı), Kapteyn 1922 (40.000 ışık yılı, Güneş merkeze 2.000 ışık yılı) → toz bilinmiyordu;",
+   "okunus": "Harita: Herschel 1785 (yıldız sayımı), Kapteyn 1922 (40000 ışık yılı, Güneş merkeze 2000 ışık yılı), bu yüzden toz bilinmiyordu;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[31].defter_notu[7]",
+   "metin": "Dönme eğrisi düz → karanlık madde;",
+   "okunus": "Dönme eğrisi düz, bu yüzden karanlık madde;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[32].defter_notu[0]",
+   "metin": "1923: Hubble M31'de Sefeid buldu → Andromeda ayrı bir galaksi (Büyük Tartışma 1920).",
+   "okunus": "1923: Hubble M31'de Sefeid buldu, bu yüzden Andromeda ayrı bir galaksi (Büyük Tartışma 1920)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[33].defter_notu[4]",
+   "metin": "Değişkenlik → boyut ≤ c × Δt.",
+   "okunus": "Değişkenlik, bu yüzden boyut küçük ya da eşittir c çarpı delta t."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[33].defter_notu[7]",
+   "metin": "β = 0,99, θ = 8° → 7c.",
+   "okunus": "beta eşittir 0,99, teta eşittir 8 derece, yani 7c."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[34].defter_notu[0]",
+   "metin": "Hiyerarşi: grup (onlarca galaksi) → küme (yüzlerce–binlerce) → üstküme → kozmik ağ (düğüm = küme, lif, duvar, boşluk).",
+   "okunus": "Hiyerarşi: grup (onlarca galaksi), yani küme (yüzlerce–binlerce), yani üstküme, yani kozmik ağ (düğüm eşittir küme, lif, duvar, boşluk)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[34].defter_notu[2]",
+   "metin": "Başak: Yerel Grup'tan 967 km/s uzaklaşır, Hubble akışından az → Başak bizi çeker (tuhaf hız).",
+   "okunus": "Başak: Yerel Grup'tan 967 kilometre bölü saniye uzaklaşır, Hubble akışından az, bu yüzden Başak bizi çeker (tuhaf hız)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[35].anahtar_sayilar[11].deger",
+   "metin": "η 10 kat ↓ → döteryum ~50 kat ↑",
+   "okunus": "eta 10 kat azalır, bu yüzden döteryum yaklaşık 50 kat artar"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[35].defter_notu[0]",
+   "metin": "Kesinlik ölçeği: gözlemle kesinleşmiş → güçlü kanıtlı ama açık sorulu → kuram ya da hipotez → spekülasyon (52. ders).",
+   "okunus": "Kesinlik ölçeği: gözlemle kesinleşmiş, ardından güçlü kanıtlı ama açık sorulu, ardından kuram ya da hipotez, ardından spekülasyon (52. ders)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[35].defter_notu[6]",
+   "metin": "Döteryum terazidir (η 10 kat ↓ → D ~50 kat ↑).",
+   "okunus": "Döteryum terazidir (eta 10 kat azalır, yani D yaklaşık 50 kat artar)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[35].defter_notu[8]",
+   "metin": "F ≈ 0,956 (Planck), madde dolu evrende 2/3 → 9,7 milyar yıl, yıldızlardan genç.",
+   "okunus": "F yaklaşık 0,956 (Planck), madde dolu evrende üçte iki, yani 9,7 milyar yıl, yıldızlardan genç."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[36].formuller[5].aciklama",
+   "metin": "Güneş için 369,82 km/s → ≈ 3,36 milikelvin;",
+   "okunus": "Güneş için 369,82 kilometre bölü saniyeden yaklaşığa 3,36 milikelvin;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[36].formuller[5].aciklama",
+   "metin": "Dünya'nın yörünge hızı 29,78 km/s → ≈ 0,27 milikelvinlik yıllık salınım.",
+   "okunus": "Dünya'nın yörünge hızı 29,78 kilometre bölü saniyeden yaklaşığa 0,27 milikelvinlik yıllık salınım."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[36].formuller[6].aciklama",
+   "metin": "Planck 2018: τ = 0,054 ± 0,007 → fotonların yaklaşık yüzde 5'i yeniden iyonlaşmış gazda bir kez daha saçıldı.",
+   "okunus": "Planck 2018: tau eşittir 0,054 artı eksi 0,007, yani fotonların yaklaşık yüzde 5'i yeniden iyonlaşmış gazda bir kez daha saçıldı."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[36].defter_notu[3]",
+   "metin": "3000 K → 2,725 K: z ≈ 1090.",
+   "okunus": "3000 kelvinden 2,725 kelvine: z yaklaşık 1090."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[36].defter_notu[6]",
+   "metin": "1 : 2 : 3 → adyabatik tohumlar.",
+   "okunus": "1: 2: 3, bu yüzden adyabatik tohumlar."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[36].defter_notu[7]",
+   "metin": "Cetvel: ses ufku 144,43 Mpc, açı 0,5965° → D ≈ 13,9 Gpc;",
+   "okunus": "Cetvel: ses ufku 144,43 megaparsek, açı 0,5965 derece, yani D yaklaşık 13,9 gigaparsek;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[36].kaynaklar[24].ad",
+   "metin": "JAXA ISAS (13 Kasım 2025), 宇宙基本計画工程表改訂に向けた提案: LiteBIRD FY2032 → FY2036",
+   "okunus": "JAXA ISAS (13 Kasım 2025), 宇宙基本計画工程表改訂に向けた提案: LiteBIRD FY2032, bu yüzden FY2036"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[37].anahtar_sayilar[14].deger",
+   "metin": "200 milyon – 1 milyar yıl (z 20 → 6)",
+   "okunus": "200 milyon ile 1 milyar yıl (z 20'den 6'ya)"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[37].anahtar_sayilar[21].deger",
+   "metin": "n/p ≈ 1/6 → 1/7;",
+   "okunus": "n bölü p yaklaşık altıda bir, yani yedide bir;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[37].defter_notu[3]",
+   "metin": "İlk ~20 dakika: n/p ≈ 1/7 → Y = 4/16 = 0,25 (Planck 0,245) → her ~12 H'ye 1 He.",
+   "okunus": "İlk yaklaşık 20 dakika: n bölü p yaklaşık yedide bir, yani Y eşittir 4 bölü 16 eşittir 0,25 (Planck 0,245), yani her yaklaşık 12 H'ye 1 He."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[37].defter_notu[4]",
+   "metin": "~380.000 yıl, ~3000 K: evren saydamlaştı → bugün 2,725 K, 411 foton/cm³ (Penzias-Wilson 1965, COBE 1989, WMAP 2001, Planck 2009).",
+   "okunus": "yaklaşık 380000 yıl, yaklaşık 3000 kelvin: evren saydamlaştıdan bugüne 2,725 kelvin, 411 foton bölü santimetre küp (Penzias-Wilson 1965, COBE 1989, WMAP 2001, Planck 2009)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[37].defter_notu[6]",
+   "metin": "Karanlık çağ: ~370.000 yıl → ilk yıldızlar.",
+   "okunus": "Karanlık çağ: yaklaşık 370000 yıl, bu yüzden ilk yıldızlar."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[38].bolumler[4].akilda",
+   "metin": "Uzaklık merdiveni: ıraklık → Sefeidler (Leavitt yasası, 1912) → Tip Ia süpernovaları.",
+   "okunus": "Uzaklık merdiveni: ıraklık, ardından Sefeidler (Leavitt yasası, 1912), ardından Tip Ia süpernovaları."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[38].defter_notu[4]",
+   "metin": "Merdiven: ıraklık → Sefeid (~50 milyon ışık yılı) → Ia süpernova (~10 milyar ışık yılı).",
+   "okunus": "Merdiven: ıraklık, ardından Sefeid (yaklaşık 50 milyon ışık yılı), ardından Ia süpernova (yaklaşık 10 milyar ışık yılı)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[38].defter_notu[6]",
+   "metin": "1998: uzak Ia'lar sönük → genişleme hızlanıyor → karanlık enerji (2011 Nobel).",
+   "okunus": "1998: uzak Ia'lar sönük, ardından genişleme hızlanıyor, ardından karanlık enerji (2011 Nobel)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[39].formuller[2].aciklama",
+   "metin": "Gerçek 50″/yıl → yaklaşık 25.920 yıl;",
+   "okunus": "Gerçek 50 yay saniyesi ya da yıl, yani yaklaşık 25920 yıl;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[39].formuller[2].aciklama",
+   "metin": "Hipparkhos'un en az 36″/yıl değeri → en çok 36.000 yıl.",
+   "okunus": "Hipparkhos'un en az 36 yay saniyesi ya da yıl değeri, yani en çok 36000 yıl."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[39].anahtar_sayilar[2].deger",
+   "metin": "87° → 18–20 kat",
+   "okunus": "87 derece, yani 18 ile 20 kat"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[39].anahtar_sayilar[3].deger",
+   "metin": "8° → 6°",
+   "okunus": "8 derece, yani 6 derece"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[39].defter_notu[0]",
+   "metin": "Sirius'un sabah doğuşu → Nil taşkını.",
+   "okunus": "Sirius'un sabah doğuşu, bu yüzden Nil taşkını."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[39].defter_notu[1]",
+   "metin": "Eratosthenes: 7,2° = çemberin 1/50'si → 50 × 5000 = 250.000 stadion.",
+   "okunus": "Eratosthenes: 7,2 derece eşittir çemberin 1 bölü 50'si, yani 50 çarpı 5000 eşittir 250000 stadion."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[39].defter_notu[2]",
+   "metin": "Aristarkhos: yarım Ay açısı 87° → Güneş 18–20 kat uzak (gerçek ~390).",
+   "okunus": "Aristarkhos: yarım Ay açısı 87 derece, bu yüzden Güneş 18 ile 20 kat uzak (gerçek yaklaşık 390)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[39].defter_notu[3]",
+   "metin": "İznikli Hipparkhos: ~850 yıldız, 6 parlaklık sınıfı (kadir; atıf kesin değil), Spica 8° → 6° → presesyon (≥ yılda 1/100°; gerçek 72 yılda 1°).",
+   "okunus": "İznikli Hipparkhos: yaklaşık 850 yıldız, 6 parlaklık sınıfı (kadir; atıf kesin değil), Spica 8 derece, yani 6 derece, yani presesyon (büyük ya da eşittir yılda 1 bölü 100 derece; gerçek 72 yılda 1 derece)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[39].defter_notu[5]",
+   "metin": "El-Biruni (Nandana): tepe 321,5 m + ufuk alçalma açısı → R ≈ 6.340 km (isabet kısmen şans).",
+   "okunus": "El-Biruni (Nandana): tepe 321,5 metre artı ufuk alçalma açısı, yani R yaklaşık 6340 kilometre (isabet kısmen şans)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[39].defter_notu[7]",
+   "metin": "Takiyüddin: İstanbul Rasathanesi, Tophane, ~1577 → yıkım 22 Ocak 1580.",
+   "okunus": "Takiyüddin: İstanbul Rasathanesi, Tophane, yaklaşık 1577, bu yüzden yıkım 22 Ocak 1580."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[39].defter_notu[8]",
+   "metin": "Tycho: 1572 yeni yıldız + 1577 kuyruklu yıldız ıraklık yok → Ay'ın ötesinde;",
+   "okunus": "Tycho: 1572 yeni yıldız artı 1577 kuyruklu yıldız ıraklık yok, bu yüzden Ay'ın ötesinde;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[40].defter_notu[2]",
+   "metin": "Jüpiter → Güneş 12,4 m/s;",
+   "okunus": "Jüpiter'den Güneş'e 12,4 metre bölü saniye;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[40].defter_notu[2]",
+   "metin": "Dünya → 0,1 m/s;",
+   "okunus": "Dünya, yani 0,1 metre bölü saniye;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[41].anahtar_sayilar[9].deger",
+   "metin": "14 Ekim 2024 → Nisan 2030;",
+   "okunus": "14 Ekim 2024'ten Nisan 2030'a;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[41].anahtar_sayilar[11].deger",
+   "metin": "Temmuz 2028 → 2034",
+   "okunus": "Temmuz 2028'den 2034'e"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[41].anahtar_sayilar[12].deger",
+   "metin": "≈ 3 sigma (2025) → ≈ 2,7 sigma",
+   "okunus": "yaklaşık 3 sigma (2025), yani yaklaşık 2,7 sigma"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[41].anahtar_sayilar[19].deger",
+   "metin": "~20 → ≤7 → ≤0,8 milyarda pay",
+   "okunus": "yaklaşık 20, yani küçük ya da eşittir 7, yani küçük ya da eşittir 0,8 milyarda pay"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[41].anahtar_sayilar[21].deger",
+   "metin": "14 Nisan 2023 → 2031",
+   "okunus": "14 Nisan 2023'ten 2031'e"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[41].defter_notu[6]",
+   "metin": "hidrojen (2017) → hidrotermal enerji;",
+   "okunus": "hidrojen (2017), bu yüzden hidrotermal enerji;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[41].defter_notu[7]",
+   "metin": "Dragonfly: Temmuz 2028 → 2034, sekiz pervaneli uçan araç.",
+   "okunus": "Dragonfly: Temmuz 2028'den 2034'e, sekiz pervaneli uçan araç."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[41].defter_notu[8]",
+   "metin": "K2-18 b DMS: ~3 sigma → ~2,7 sigma, kesin değil.",
+   "okunus": "K2 18 b DMS: yaklaşık 3 sigmadan yaklaşığa 2,7 sigma, kesin değil."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[42].defter_notu[0]",
+   "metin": "Üçüncü yasa: T → 0 K iken entropi sabite gider.",
+   "okunus": "Üçüncü yasa: T, yani 0 kelvin iken entropi sabite gider."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[42].defter_notu[3]",
+   "metin": "823 K / 298 K → %64.",
+   "okunus": "823 kelvin bölü 298 kelvin, yani yüzde 64."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[42].defter_notu[7]",
+   "metin": "Dünya: 5772 K'lik foton girer, ~254 K'lik ~20 kat fazla kızılötesi foton çıkar → canlılar düşük entropiyle beslenir.",
+   "okunus": "Dünya: 5772 kelvinlik foton girer, yaklaşık 254 kelvinlik yaklaşık 20 kat fazla kızılötesi foton çıkar, bu yüzden canlılar düşük entropiyle beslenir."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[42].defter_notu[8]",
+   "metin": "Yıldız: negatif ısı sığası → enerji kaybedince büzülür ve ısınır.",
+   "okunus": "Yıldız: negatif ısı sığası, bu yüzden enerji kaybedince büzülür ve ısınır."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[43].formuller[4].aciklama",
+   "metin": "50 Hz → ~6000 km;",
+   "okunus": "50 hertzden yaklaşığa 6000 kilometre;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[43].formuller[4].aciklama",
+   "metin": "2,45 GHz → ~12 cm;",
+   "okunus": "2,45 gigahertzden yaklaşığa 12 santimetre;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[43].formuller[4].aciklama",
+   "metin": "20,5 MHz → ~14,6 m (2. ders).",
+   "okunus": "20,5 megahertzden yaklaşığa 14,6 metre (2. ders)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[43].defter_notu[2]",
+   "metin": "Ørsted 1820: akım → manyetik alan.",
+   "okunus": "Ørsted 1820: akım, bu yüzden manyetik alan."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[43].defter_notu[2]",
+   "metin": "Faraday 1831: değişen manyetik alan → akım (indüksiyon).",
+   "okunus": "Faraday 1831: değişen manyetik alandan akıma (indüksiyon)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[43].defter_notu[3]",
+   "metin": "Jeneratör: türbin rotoru döndürür → alternatif akım.",
+   "okunus": "Jeneratör: türbin rotoru döndürür, bu yüzden alternatif akım."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[43].defter_notu[4]",
+   "metin": "Maxwell: değişen elektrik alanı → manyetik alan (yer değiştirme akımı).",
+   "okunus": "Maxwell: değişen elektrik alanı, bu yüzden manyetik alan (yer değiştirme akımı)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[43].defter_notu[7]",
+   "metin": "Jansky 1932: 20,5 MHz, 23 sa 56 dk tekrar → Samanyolu merkezi (Yay).",
+   "okunus": "Jansky 1932: 20,5 megahertz, 23 saat 56 dakika tekrar, bu yüzden Samanyolu merkezi (Yay)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[43].defter_notu[9]",
+   "metin": "Işık hızı formülünde gözlemcinin hızı yok → esir sorunu → özel görelilik (45. ders).",
+   "okunus": "Işık hızı formülünde gözlemcinin hızı yok, ardından esir sorunu, ardından özel görelilik (45. ders)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[44].anahtar_sayilar[4].deger",
+   "metin": "563 → 412 (beklenen 27) müon/saat",
+   "okunus": "563'ten 412'ye (beklenen 27) müon bölü saat"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[44].anahtar_sayilar[5].deger",
+   "metin": "γ = 29,327 → 64,378 μs",
+   "okunus": "gama eşittir 29,327, yani 64,378 mikrosaniye"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[44].defter_notu[2]",
+   "metin": "Michelson–Morley 1887: beklenen 0,4 saçak, ölçülen ≤ 0,02 → esir rüzgârı yok.",
+   "okunus": "Michelson–Morley 1887: beklenen 0,4 saçak, ölçülen küçük ya da eşittir 0,02 ise esir rüzgârı yok."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[44].defter_notu[3]",
+   "metin": "%50 → 1,155;",
+   "okunus": "yüzde 50, yani 1,155;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[44].defter_notu[3]",
+   "metin": "%90 → 2,29;",
+   "okunus": "yüzde 90, yani 2,29;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[44].defter_notu[3]",
+   "metin": "%99 → 7,09;",
+   "okunus": "yüzde 99, yani 7,09;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[44].defter_notu[3]",
+   "metin": "%99,99 → 70,7.",
+   "okunus": "yüzde 99,99'dan 70,7'ye."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[44].defter_notu[5]",
+   "metin": "Frisch–Smith 1963: 563 → 412 (göreliliksiz 27).",
+   "okunus": "Frisch–Smith 1963: 563'ten 412'ye (göreliliksiz 27)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[45].anahtar_sayilar[6].deger",
+   "metin": "33 cm → 79 yılda ≈ 90 ns",
+   "okunus": "33 santimetre, yani 79 yılda yaklaşık 90 nanosaniye"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[46].anahtar_sayilar[8].deger",
+   "metin": "8 → 270 → 2.000 → 60.000 elektron",
+   "okunus": "8, ardından 270, ardından 2000, ardından 60000 elektron"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[46].defter_notu[3]",
+   "metin": "Silisyum bant aralığı 1,12 eV → 1.107 nm'den uzun ışık işe yaramaz;",
+   "okunus": "Silisyum bant aralığı 1,12 elektronvolt, yani 1107 nanometreden uzun ışık işe yaramaz;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[46].defter_notu[5]",
+   "metin": "Davisson–Germer: 54 eV → 0,167 nm öngörü, 0,165 ölçüm (Nobel 1937).",
+   "okunus": "Davisson–Germer: 54 elektronvolttan 0,167 nanometreye öngörü, 0,165 ölçüm (Nobel 1937)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[47].formuller[2].ifade",
+   "metin": "n = 1: 1 orbital → 2 elektron;",
+   "okunus": "n eşittir 1: 1 orbital, yani 2 elektron;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[47].formuller[2].ifade",
+   "metin": "n = 2: 1 s + 3 p = 4 orbital → 8 elektron",
+   "okunus": "n eşittir 2: 1 saniye artı 3 p eşittir 4 orbital birleşerek 8 elektron oluşturur"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[47].defter_notu[0]",
+   "metin": "Kuantum: dar yere hapsolmanın bedeli (belirsizlik) çekimi dengeler → Bohr yarıçapı 0,053 nm, −13,6 eV.",
+   "okunus": "Kuantum: dar yere hapsolmanın bedeli (belirsizlik) çekimi dengeler, bu yüzden Bohr yarıçapı 0,053 nanometre, eksi 13,6 elektronvolt."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[47].defter_notu[3]",
+   "metin": "Orbitale 2 elektron → satırlar 2, 8.",
+   "okunus": "Orbitale 2 elektrondan satırlara 2, 8."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[47].defter_notu[4]",
+   "metin": "elektronlar ışık hızının önemli kesri (kaba ~0,26c, en hızlılar ~0,78c) → Chandrasekhar ~1,4 M☉.",
+   "okunus": "elektronlar ışık hızının önemli kesri (kaba yaklaşık 0,26c, en hızlılar yaklaşık 0,78c), bu yüzden Chandrasekhar yaklaşık 1,4 Güneş kütlesi."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[48].anahtar_sayilar[1].deger",
+   "metin": "%4 → %1,5 → ≤ %0,25",
+   "okunus": "yüzde 4'ten yüzde 1,5'e, yani küçük ya da eşittir yüzde 0,25"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[48].defter_notu[2]",
+   "metin": "İnce tabaka: ön ve arka yüzeyin okları → yansıma %0 ile %16 arası.",
+   "okunus": "İnce tabaka: ön ve arka yüzeyin oklarıdan yansımaya yüzde 0 ile yüzde 16 arası."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[48].defter_notu[2]",
+   "metin": "Kaplama: %4 → %1,5 (MgF₂) → ≤ %0,25.",
+   "okunus": "Kaplama: yüzde 4'ten yüzde 1,5'e (MgF 2), yani küçük ya da eşittir yüzde 0,25."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[48].defter_notu[8]",
+   "metin": "e⁻ + e⁺ → 2 foton, her biri 511 keV.",
+   "okunus": "elektron artı pozitron birleşerek 2 foton oluşturur, her biri 511 kilo elektronvolt."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[49].anahtar_sayilar[6].deger",
+   "metin": "2,05 → 3,15 megajul (5 Aralık 2022);",
+   "okunus": "2,05'ten 3,15 megajula (5 Aralık 2022);"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[49].defter_notu[2]",
+   "metin": "Kütle eksiği → bağlanma enerjisi (E = mc²).",
+   "okunus": "Kütle eksiği, bu yüzden bağlanma enerjisi (E eşittir mc kare)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[49].defter_notu[3]",
+   "metin": "Hafif → füzyon, ağır → fisyon;",
+   "okunus": "Hafiften füzyona, ağırdan fisyona;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[49].defter_notu[4]",
+   "metin": "NIF ateşleme 5.12.2022 (2,05 → 3,15 megajul), rekor 8,6 megajul (2025).",
+   "okunus": "NIF ateşleme 5.12.2022 (2,05'ten 3,15 megajula), rekor 8,6 megajul (2025)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[49].defter_notu[5]",
+   "metin": "gecikmeli nötron < %1 → denetim.",
+   "okunus": "gecikmeli nötron küçüktür yüzde 1 ise denetim."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[49].defter_notu[8]",
+   "metin": "U-238 → Pb-206 (4,47 milyar yıl), U-235 → Pb-207 (704 milyon yıl).",
+   "okunus": "uranyum 238'den kurşun 206'ya (4,47 milyar yıl), uranyum 235'ten kurşun 207'ye (704 milyon yıl)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[50].bolumler[0].akilda",
+   "metin": "Madde → molekül → atom → çekirdek → proton ve nötron → kuark.",
+   "okunus": "Madde, ardından molekül, ardından atom, ardından çekirdek, ardından proton ve nötron, ardından kuark."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[50].anahtar_sayilar[6].deger",
+   "metin": "Temmuz 2026 → Haziran 2030",
+   "okunus": "Temmuz 2026'dan Haziran 2030'a"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[50].defter_notu[4]",
+   "metin": "Kütlesiz taşıyıcı → uzun menzil;",
+   "okunus": "Kütlesiz taşıyıcı, bu yüzden uzun menzil;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[50].defter_notu[4]",
+   "metin": "ağır W ve Z → kısa menzil.",
+   "okunus": "ağır W ve Z, bu yüzden kısa menzil."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[50].defter_notu[8]",
+   "metin": "Nötrino: Pauli 1930, Cowan ve Reines 1956 (Nobel 1995), salınım → kütle;",
+   "okunus": "Nötrino: Pauli 1930, Cowan ve Reines 1956 (Nobel 1995), salınımdan kütleye;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[51].defter_notu[0]",
+   "metin": "Kesinlik ölçeği: gözlemle kesinleşmiş → güçlü kanıtlı ama açık sorulu → kuram ya da hipotez → spekülasyon.",
+   "okunus": "Kesinlik ölçeği: gözlemle kesinleşmiş, ardından güçlü kanıtlı ama açık sorulu, ardından kuram ya da hipotez, ardından spekülasyon."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[51].defter_notu[6]",
+   "metin": "3,5 keV çizgisi (Bulbul 2014) → Hitomi 2017 ve XRISM 2025 görmedi: doğrulanmadı, askıda.",
+   "okunus": "3,5 kilo elektronvolt çizgisi (Bulbul 2014), bu yüzden Hitomi 2017 ve XRISM 2025 görmedi: doğrulanmadı, askıda."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[52].bolumler[5].ornek.metin",
+   "metin": "H0 = 67,36 km/s/Mpc → H = 67.360 ÷ 3,0857 × 10²² ≈ 2,183 × 10⁻¹⁸ bölü saniye.",
+   "okunus": "H0 eşittir 67,36 kilometre bölü saniye bölü megaparsek, yani H eşittir 67360 bölü 3,0857 çarpı 10 üzeri 22 yaklaşık 2,183 çarpı 10 üzeri eksi 18 bölü saniye."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[52].bolumler[11].ornek.metin",
+   "metin": "Çok erken çağda (a → 0): w → w0 + wa = −1,461.",
+   "okunus": "Çok erken çağda (a'dan 0'a): w, yani w0 artı wa eşittir eksi 1,461."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[52].anahtar_sayilar[8].deger",
+   "metin": "w = −1,5 → ≈ 22 milyar yıl",
+   "okunus": "w eşittir eksi 1,5, yani yaklaşık 22 milyar yıl"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[52].anahtar_sayilar[12].deger",
+   "metin": "3,9σ → 3,3σ",
+   "okunus": "3,9 sigma, yani 3,3 sigma"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[52].defter_notu[1]",
+   "metin": "Bağımsız kanıtlar: düz uzay + Ωm ≈ 0,315 → eksik ≈ 0,685;",
+   "okunus": "Bağımsız kanıtlar: düz uzay artı omega m yaklaşık 0,315, bu yüzden eksik yaklaşık 0,685;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[52].defter_notu[7]",
+   "metin": "Kuintesans (1988; ad 1998), fantom (w < −1) → Büyük Yırtılma (w = −1,5: ~22 milyar yıl): hipotez.",
+   "okunus": "Kuintesans (1988; ad 1998), fantom (w küçüktür eksi 1) ise Büyük Yırtılma (w eşittir eksi 1,5: yaklaşık 22 milyar yıl): hipotez."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[53].defter_notu[0]",
+   "metin": "Kesinlik ölçeği (52. ders): gözlemle kesinleşmiş → güçlü kanıtlı ama açık sorulu → kuram ya da hipotez → spekülasyon.",
+   "okunus": "Kesinlik ölçeği (52. ders): gözlemle kesinleşmiş, ardından güçlü kanıtlı ama açık sorulu, ardından kuram ya da hipotez, ardından spekülasyon."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[53].defter_notu[5]",
+   "metin": "BICEP2 17.03.2014 r = 0,2 → toz;",
+   "okunus": "BICEP2 17.03.2014 r eşittir 0,2, yani toz;"
+  },
+  {
+   "yer": "veri/dersler.json.dersler[55].defter_notu[3]",
+   "metin": "Haggard–Rovelli 2014: kara delik → kuantum tünelleme → beyaz delik (spekülasyon).",
+   "okunus": "Haggard–Rovelli 2014: kara delik, ardından kuantum tünelleme, ardından beyaz delik (spekülasyon)."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[55].defter_notu[4]",
+   "metin": "2015 olası kilonova → birleşme.",
+   "okunus": "2015 olası kilonovadan birleşmeye."
+  },
+  {
+   "yer": "veri/dersler.json.dersler[57].defter_notu[7]",
+   "metin": "w = −1,5 → 22 milyar yıl.",
+   "okunus": "w eşittir eksi 1,5, yani 22 milyar yıl."
+  }
+ ]
+}

@@ -435,10 +435,10 @@
       s += S.egri(ZD.map((v, i) => [ek.X(i * 4), ek.Y(v)]), { renk: R.vurgu, kalin: 2.8 });
       /* uç noktalar */
       const nok = (g, v, t, dx, dy, hz) => S.daire(ek.X(g), ek.Y(v), 4.5, { dolgu: R.vurgu, renk: R.zemin, kalin: 1.2 }) + S.zeminliYazi(ek.X(g) + dx, ek.Y(v) + dy, t, { boy: 13, hiza: hz || 'middle', renk: R.metin });
-      s += nok(gunu(11, 3), 16.45, '3 Kas +16:27', -9, 4, 'end');
-      s += nok(gunu(2, 11), -14.18, '11 Şub −14:11', 8, 19, 'start');
-      s += nok(gunu(5, 13), 3.68, '13 May +3:41', 0, -10);
-      s += nok(gunu(7, 26), -6.56, '26 Tem −6:34', 0, 22);
+      s += nok(gunu(11, 3), 16.45, '3 Kas +16 dk 27 sn', -9, 4, 'end');
+      s += nok(gunu(2, 11), -14.18, '11 Şub −14 dk 11 sn', 8, 19, 'start');
+      s += nok(gunu(5, 13), 3.68, '13 May +3 dk 41 sn', 0, -10);
+      s += nok(gunu(7, 26), -6.56, '26 Tem −6 dk 34 sn', 0, 22);
       /* gösterge */
       s += S.cizgi(8, 36, 30, 36, { renk: R.vurgu, kalin: 2.8 }) + S.yazi(36, 41, 'toplam 2026', { boy: 13, renk: R.metin });
       s += S.cizgi(128, 36, 150, 36, { renk: R.mavi, kalin: 1.4, kesik: '5 4' }) + S.yazi(156, 41, 'basıklık ±7,7', { boy: 13, renk: R.mavi });
