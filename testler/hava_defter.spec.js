@@ -39,7 +39,7 @@ test('Bulut: açık gece', async ({ page }) => {
   await page.goto('/index.html#gok');
   await expect.poll(() => page.locator('.hava-cumle').getAttribute('data-ses')).toContain('Bulut tahmini: gece boyunca büyük ölçüde açık.');   // tam cümle seste; ekranda etiketli kısa satır
   await expect(page.locator('.hava-saat')).not.toHaveCount(0);
-  await expect(page.locator('#gkHava a')).toHaveAttribute('href', 'https://open-meteo.com/');
+  await expect(page.locator('#gkHava a').first()).toHaveAttribute('href', 'https://open-meteo.com/');
 });
 
 test('Bulut: en açık dönem doğru saatlerle yazılır', async ({ page }) => {

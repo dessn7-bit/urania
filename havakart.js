@@ -275,7 +275,8 @@
   /* ---------------- görünüm ---------------- */
   const yil = d => new Intl.DateTimeFormat('tr-TR', { year: 'numeric', timeZone: 'UTC' }).format(d);
   const eskiNot = zaman => `<span class="hk-eski">Çevrimdışı: ${U.ek(U.saat(zaman), 'de')}ki veri (${U.gun(zaman)})</span>`;
-  const OM = '<a href="https://open-meteo.com/" target="_blank" rel="noopener">Hava verisi: Open-Meteo.com</a>';
+  /* Open-Meteo lisansı: verinin yanında open-meteo.com bağlantısı; CC BY 4.0 bağlantısı ve değişiklik notu */
+  const OM = '<a href="https://open-meteo.com/" target="_blank" rel="noopener">Hava verisi: Open-Meteo.com</a> (<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>; sayım ve özetler Urania\'nın hesabı)';
 
   let uyduTur = (() => { try { return U.oku('uyduTur', 'renk'); } catch (h) { return 'renk'; } })();
   if (!KATMAN[uyduTur]) uyduTur = 'renk';
@@ -293,7 +294,7 @@
     objeUrl = URL.createObjectURL(g.blob);
     const rozet = maske ? (maske.sinif === 'bulut' ? '<span class="rozet uyari" id="gkUyduRozet" data-durum="bulut">Şu an üstünde: bulutlu</span>'
       : `<span class="rozet iyi" id="gkUyduRozet" data-durum="acik">Şu an üstünde: açık</span>`) : '';
-    const maskeNot = maske ? `Rozet: bulut maskesi, ${U.saat(maske.zaman)} görüntüsü, konumunun tam üstündeki ~3 km'lik nokta (${maske.sinif === 'acik-deniz' ? 'denizde açık' : maske.sinif === 'acik-kara' ? 'karada açık' : 'bulut'}).` : '';
+    const maskeNot = maske ? `Rozet: bulut maskesi, ${U.saat(maske.zaman)} görüntüsü, konumunun tam üstündeki nokta (${maske.sinif === 'acik-deniz' ? 'denizde açık' : maske.sinif === 'acik-kara' ? 'karada açık' : 'bulut'}).` : '';
     const K = KATMAN[uyduTur];
     const lejant = {
       renk: 'Gündüz gerçek renk; gece bulutlar soluk mavi-gri, şehir ışıkları sarı noktalar.',
@@ -349,7 +350,7 @@
         modeller.map(m => `<tr data-model="${m.model}"><th scope="row">${m.ad}</th>${m.deger.map(v => `<td class="${v == null ? '' : v < ACIK_ESIK ? 'iyi' : v >= 70 ? 'uyari' : ''}">${v == null ? '—' : '%' + Math.round(v)}</td>`).join('')}</tr>`).join('') + '</tbody></table>';
       if (mdl.eski) html += `<p class="soluk kucuk">${eskiNot(mdl.alindi)}</p>`;
     }
-    html += `<p class="kaynak">${OM} (Ensemble API ve modeller; CC BY 4.0). 3 saatte bir yenilenir.</p>`;
+    html += `<p class="kaynak">${OM} Ensemble API ve modeller. 3 saatte bir yenilenir.</p>`;
     kap.hidden = false; kap.innerHTML = html;
   }
   /* Belirtme hâli eki (okunuşa uyar): 40'ı, 3'ü, 1'i, 6'yı, 2'yi, 100'ü, 0'ı */
@@ -404,7 +405,7 @@
     if (!satir.length) { kap.hidden = true; kap.innerHTML = ''; return; }
     kap.hidden = false;
     kap.innerHTML = '<h3 class="hk-bas okunur" data-ses="Şeffaflık ve nem.">Şeffaflık ve nem</h3>' + satir.map(x => `<p class="oz-satir okunur${x.uyari ? ' hk-uyari' : ''}" id="${x.id}" data-ses="${U.kacis(x.ses)}"><span class="oz-et">${x.et}</span><span class="oz-d">${x.gor}</span></p>`).join('') +
-      `<p class="kaynak">${a ? `Aerosol: Generated using Copernicus Atmosphere Monitoring Service information ${yil(new Date())}. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains. (CAMS ENSEMBLE hava kalitesi tahmini, Open-Meteo Air Quality API üzerinden.) ${aq.eski ? eskiNot(aq.alindi) + ' ' : ''}` : ''}${OM}</p>`;
+      `<p class="kaynak">${a ? `Aerosol: Generated using Copernicus Atmosphere Monitoring Service information ${yil(new Date())}. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains. Kaynak: CAMS küresel atmosfer bileşimi tahmini (Copernicus Atmosphere Monitoring Service 2021, CAMS Atmosphere Data Store, DOI: 10.24381/04a0b097), Open-Meteo Air Quality API üzerinden; gece ortalaması ve kadir hesabı Urania'nındır. ${aq.eski ? eskiNot(aq.alindi) + ' ' : ''}` : ''}${OM}</p>`;
   }
 
   /* Kutup ışığı uyarısı */
