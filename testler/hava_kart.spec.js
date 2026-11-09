@@ -114,8 +114,9 @@ test('Tahmin güveni: senaryo sayısı fixture üzerinden elle yapılan hesapla 
   /* Beş model, toplam senaryo sayısı belgedeki üyelerle (51 + 40 + 31 + 21 + 18 = 161) */
   expect(satirlar[0].toplam).toBe(161);
   await expect(page.locator('#gkGuvenOzet')).toContainText('senaryodan');
-  await expect(page.locator('#gkGuven .kaynak a')).toHaveAttribute('href', 'https://open-meteo.com/');
-  await expect(page.locator('#gkGuven .kaynak a')).toHaveText('Hava verisi: Open-Meteo.com');
+  await expect(page.locator('#gkGuven .kaynak a').first()).toHaveAttribute('href', 'https://open-meteo.com/');
+  await expect(page.locator('#gkGuven .kaynak a').first()).toHaveText('Hava verisi: Open-Meteo.com');
+  await expect(page.locator('#gkGuven .kaynak a').nth(1)).toHaveAttribute('href', 'https://creativecommons.org/licenses/by/4.0/');
 });
 
 test('Tahmin güveni: modeller tek tek, fixture değerleriyle', async ({ page }) => {
@@ -159,7 +160,8 @@ test('Şeffaflık: AOD → kadir dönüşümü (1,086 × AOD) gece ortalamasıyl
   expect(2.5 * Math.log10(Math.E)).toBeCloseTo(1.086, 3);
   await expect(s).toContainText(`yaklaşık ${kadir.toFixed(2).replace('.', ',')} kadir sönük`);
   await expect(page.locator('#gkSeffaf .kaynak')).toContainText('Generated using Copernicus Atmosphere Monitoring Service information 2026');
-  await expect(page.locator('#gkSeffaf .kaynak a')).toHaveText('Hava verisi: Open-Meteo.com');
+  await expect(page.locator('#gkSeffaf .kaynak a').first()).toHaveText('Hava verisi: Open-Meteo.com');
+  await expect(page.locator('#gkSeffaf .kaynak')).toContainText('DOI: 10.24381/04a0b097');
 });
 
 test('Çiğ: sıcaklık − çiy noktası ≤ 2 °C ve gök açıkken "dürbün camı buğulanabilir", yaklaşık kural ve rüzgâr değeri', async ({ page }) => {

@@ -939,5 +939,5 @@ html.kirmizi .hb-gorsel img { filter: url(#kirmiziSuz); }
 }
 /* Kırmızı mod: uydu görüntüsü ve artı işareti yalnız kırmızı kanalda */
 html.kirmizi .hk-cerceve img { filter: url(#kirmiziSuz); }
-html.kirmizi .hk-arti::before, html.kirmizi .hk-arti::after { background: #FF0000; }
+html.kirmizi .hk-arti::before, html.kirmizi .hk-arti::after { background: #000; box-shadow: 0 0 0 2px #FF0000; }   /* kırmızıya dönen görüntüde kırmızı çizgi kaybolur: siyah çekirdek, kırmızı kenar */
 html.kirmizi .hk-ens-dolu { background: var(--iyi); }

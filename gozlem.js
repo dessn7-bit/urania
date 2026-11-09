@@ -93,7 +93,7 @@
 
       <h2 class="okunur plan-bas" data-ses="Bu gecenin planı.">Bu gecenin planı</h2>
       <p class="alt-baslik">Gecenin görülecekleri, en iyi görünecekleri saate göre: yükseklik, bulut tahmini ve Ay ışığı hesaba katıldı. Saati belli olaylar (uydu geçişi, Algol, örtme) kendi saatinde.</p>
-      <div class="yedi-kap" id="gkYediGece" hidden><h3 class="yg-bas okunur" data-ses="Önümüzdeki yedi gece.">Önümüzdeki 7 gece</h3><ol class="yedi-gece" aria-label="Önümüzdeki 7 gece"></ol><p class="kaynak">Bulut ve yağış tahmininden (bulut %30'un altı açık); Ay yalnız nedene yazılır. <a href="https://open-meteo.com/" target="_blank" rel="noopener">Hava verisi: Open-Meteo.com</a></p></div>
+      <div class="yedi-kap" id="gkYediGece" hidden><h3 class="yg-bas okunur" data-ses="Önümüzdeki yedi gece.">Önümüzdeki 7 gece</h3><ol class="yedi-gece" aria-label="Önümüzdeki 7 gece"></ol><p class="kaynak">Bulut ve yağış tahmininden (bulut %30'un altı açık); Ay yalnız nedene yazılır. <a href="https://open-meteo.com/" target="_blank" rel="noopener">Hava verisi: Open-Meteo.com</a> (<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>; değerlendirme Urania'nın)</p></div>
       <ol class="plan" id="gkPlan"><li><span class="bos">Hazırlanıyor…</span></li></ol>
       <div class="cip-grup" id="gkPlanDugme" hidden><button type="button" class="dugme" id="gkPlanTakvim">Planı takvime ekle</button></div>
 
@@ -316,7 +316,7 @@
       else if (oz.ort >= 70) { seviye = 'kotu'; bulut = `çoğunlukla kapalı (bulut ortalama %${Math.round(oz.ort)})`; }
       else { seviye = 'idare'; bulut = `parçalı bulutlu (ortalama %${Math.round(oz.ort)}), uzun açık dönem yok`; }
       if (oz.yagis && oz.yagis.riskli && oz.yagis.riskli.length >= Math.ceil(n / 2)) { seviye = 'kotu'; bulut += '; yağış riski yüksek'; }
-    } else bulut = oz === 'hata' ? 'bulut tahmini alınamadı' : oz === 'gece-yok' ? (g.kutupGunu ? 'Güneş bu gece batmıyor (kutup günü)' : 'bu gece gök kararmıyor')
+    } else bulut = oz === 'hata' ? 'saatlik bulut tahmini alınamadı' : oz === 'gece-yok' ? (g.kutupGunu ? 'Güneş bu gece batmıyor (kutup günü)' : 'bu gece gök kararmıyor')
       : oz === 'yok' ? 'bulut tahmini yok (yalnız önümüzdeki 7 gün)' : 'bulut tahmini bekleniyor';
     let karanlik = '';
     /* Tam karanlık = Güneş −18°'nin altında (geceAraligi karanlikDuzey); kutup gecesinde batış olmasa da olabilir */
@@ -929,7 +929,7 @@
     const oz = Hava.geceOzeti(h.saatler, bas, son, 30);
     durum.havaOzet = oz || 'yok'; kararYaz();
     havaKartlari(h.saatler); yediGeceYaz(h);
-    const kaynak = '<a href="https://open-meteo.com/" target="_blank" rel="noopener">Hava verisi: Open-Meteo.com</a>';
+    const kaynak = '<a href="https://open-meteo.com/" target="_blank" rel="noopener">Hava verisi: Open-Meteo.com</a> (<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>)';
     if (!oz) { kap.innerHTML = '<p class="soluk kucuk">Bu gece için bulut tahmini yok; tahmin yalnız önümüzdeki 7 gün için yapılıyor. ' + kaynak + '</p>'; return; }
     let cumle;
     const n = oz.ls.length;

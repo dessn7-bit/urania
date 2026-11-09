@@ -823,7 +823,7 @@
   C.ekle('d56-schwarzschild-haritasi', {
     ders: 'd56', bolum: 1, oran: 0.98, dunyaCizgileri: KRUSKAL_DC,
     baslik: "Schwarzschild çözümünün bütün haritası: dört bölge",
-    aciklama: "Bu kavramsal bir çizimdir: Kruskal ve Szekeres'in haritasıdır, zaman yukarı doğru akar ve ışık 45 derecelik çizgilerle yol alır. Çapraz iki çizgi olay ufuklarıdır, üstteki ve alttaki kalın kesikli eğriler tekilliklerdir. Sağdaki birinci bölge bizim dış evrenimizdir: gözlemle kesinleşmiş. Üstteki ikinci bölge kara deliğin içidir; girilir ama çıkılmaz, ince oklu eğri ufku geçip tekilliğe düşen bir gözlemcidir. Alttaki üçüncü bölge beyaz deliğin içidir: içinden her şey dışarı çıkar ama girilemez. Soldaki dördüncü bölge ikinci bir dış bölgedir. Yatay noktalı çizgi bir anlık kesittir; iki dış bölgeyi birleştiren Einstein-Rosen köprüsü burada görünür. Üçüncü ve dördüncü bölgeler yalnız ebedî, boş bir kara delikte vardır; çökmeyle doğan gerçek kara deliklerde kalkar. Beyaz deliklerin ve ikinci evrenin gerçekte var olması spekülasyondur.",
+    aciklama: "Bu kavramsal bir çizimdir: Kruskal ve Szekeres'in haritasıdır, zaman yukarı doğru akar ve ışık 45 derecelik çizgilerle yol alır. Çapraz iki çizgi olay ufuklarıdır, üstteki ve alttaki kalın kesikli eğriler tekilliklerdir. Sağdaki birinci bölge bizim dış evrenimizdir: gözlemle kesinleşmiş. Üstteki ikinci bölge kara deliğin içidir; girilir ama çıkılmaz, ince oklu eğri ufku geçip tekilliğe düşen bir gözlemcidir. Alttaki üçüncü bölge beyaz deliğin içidir: içinden her şey dışarı çıkar ama girilemez. Soldaki dördüncü bölge ikinci bir dış bölgedir. Yatay noktalı çizgi bir anlık kesittir; iki dış bölgeyi birleştiren Einstein–Rosen köprüsü burada görünür. Üçüncü ve dördüncü bölgeler yalnız ebedî, boş bir kara delikte vardır; çökmeyle doğan gerçek kara deliklerde kalkar. Beyaz deliklerin ve ikinci evrenin gerçekte var olması spekülasyondur.",
     kaynak: [KAYNAK.beyazDelik, KAYNAK.solucan],
     ciz(S) {
       const R = S.R, cx = 200, cy = 198, u = 104, P = (X, T) => [cx + X * u, cy - T * u];
@@ -841,7 +841,7 @@
       s += bolge(-1.13, 0.4, ['IV', 'ikinci dış', 'bölge']);
       s += bolge(0, 0.86, ['II', 'kara delik içi']);
       s += bolge(0, -0.58, ['III', 'beyaz delik içi']);
-      s += S.zeminliYazi(cx, cy + 22, 'Einstein-Rosen köprüsü (bir an)', { boy: 13, hiza: 'middle', renk: R.metin });
+      s += S.zeminliYazi(cx, cy + 22, 'Einstein–Rosen köprüsü (bir an)', { boy: 13, hiza: 'middle', renk: R.metin });
       /* Dünya çizgileri (X, T birimiyle; iki eksen aynı ölçekte, bu yüzden ekrandaki açı koordinattaki açıdır): zamansı yollar
          her yerde |ΔT/ΔX| > 1 (45°'den dik), ışık yolları tam 1. Değerler kayıtta da durur (dunyaCizgileri), test eğimleri denetler. */
       const DC = KRUSKAL_DC;
@@ -865,7 +865,7 @@
   /* d56 · bölüm 6: Flamm paraboloidi; r(z) = rs + z² ÷ (4 rs), bir anlık kesitin gömme çizimi */
   C.ekle('d56-einstein-rosen', {
     ders: 'd56', bolum: 6, oran: 0.95,
-    baslik: 'Einstein-Rosen köprüsü: bir anlık kesitin biçimi',
+    baslik: 'Einstein–Rosen köprüsü: bir anlık kesitin biçimi',
     aciklama: "Bu kavramsal bir çizimdir, ama biçimi Flamm'ın 1916 formülünden hesaplandı: Schwarzschild çözümünün bir anlık kesitinde, iki boyuta indirgenmiş uzay huni gibi bükülür. Üst yaprak bizim dış evrenimizdir, alt yaprak haritadaki ikinci dış bölgedir; ikisi en dar yerde, Schwarzschild yarıçapındaki boğazda birleşir. Dışarıdaki üçüncü boyut yalnızca bükülmeyi gösterebilmek içindir, eğrilik uzay-zamanın kendi içinde tanımlanır. Fuller ve Wheeler 1962'de bu köprünün ışık bile geçemeden kapandığını gösterdi: içinden geçilemez. Bu köprü yalnız ebedî kara delik çözümünde vardır; evrende böyle bir köprünün bulunması spekülasyondur.",
     kaynak: [KAYNAK.solucan, KAYNAK.beyazDelik, KAYNAK.morris],
     ciz(S) {
