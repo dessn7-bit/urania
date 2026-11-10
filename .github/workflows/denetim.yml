@@ -76,3 +76,13 @@ jobs:
           SONUC_GOK: ${{ steps.gok.outcome }}
           SONUC_KUTUPHANE: ${{ steps.kutuphane.outcome }}
         run: bash araclar/denetim_issue.sh denetim
+      # Bütün ham sonuçlar (bağlantı sınıfları, alıntı bulguları, Horizons farkları) 30 gün indirilebilir kalır.
+      # İçerik yalnız depodaki bağlantılar, alıntılar ve sabit konum ızgarasıdır; kişisel veri yok.
+      - name: Sonuçları sakla
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: denetim-sonuclari
+          path: denetim/
+          retention-days: 30
+          if-no-files-found: ignore

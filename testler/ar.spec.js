@@ -308,6 +308,8 @@ test('A1-07 (denetim 2026-10-30): Chromium requestPermission tanımlasa da algı
   /* Chromium 153: DeviceOrientationEvent.requestPermission var VE 'ondeviceorientationabsolute' var (iOS'ta yok) */
   await page.addInitScript(() => { if (typeof DeviceOrientationEvent.requestPermission !== 'function') DeviceOrientationEvent.requestPermission = () => Promise.resolve('denied'); });
   await page.goto('/index.html#ar');
+  /* tam paket yükündeyken AR görünümü geç kurulabildi (#arPusula henüz yok, 2026-11-10): önce görünümün kurulmasını bekle */
+  await expect(page.locator('#arPusula')).toBeAttached({ timeout: 20000 });
   expect(await page.evaluate(() => typeof DeviceOrientationEvent.requestPermission === 'function' && 'ondeviceorientationabsolute' in window)).toBe(true);
   await page.clock.runFor(2500);
   /* yük altında son zamanlayıcının sonucu bir mikro görev sonra yazılabilir: durum yoklanır (sahte saat ilerletilerek) */

@@ -75,8 +75,8 @@ test.describe('Yatay telefon', () => {
       await page.goto('/index.html#deney/' + d);
       const cv = page.locator('#deneyKap .sahne canvas').first();
       await expect(cv).toBeVisible();
-      const h = await cv.evaluate(c => c.getBoundingClientRect().height);
-      expect(h, d).toBeLessThanOrEqual(412 - 140 + 1);
+      /* yerleşim ilk karede ölçülmeden önceki boyda görünebilir (CI'da 3/5 koşuda 363 px): yerleşene kadar bekle */
+      await expect.poll(() => cv.evaluate(c => c.getBoundingClientRect().height), { message: d, timeout: 5000 }).toBeLessThanOrEqual(412 - 140 + 1);
     }
   });
 });
