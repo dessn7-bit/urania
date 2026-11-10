@@ -259,7 +259,7 @@
     const k = veri && veri.kumeUyeleri && veri.kumeUyeleri[h.id];
     const sonuc = { id: h.id, ad: h.ad, tur: h.tur, kadir: b && b.vKadir != null ? b.vKadir : h.kadir, nokta: !!(b && b.noktaKaynak) || (!b && !h.boyut) };
     if (b) { sonuc.buyukEksen = b.buyukEksen; sonuc.kucukEksen = b.kucukEksen; if (b.cekirdek) sonuc.cekirdek = b.cekirdek; }
-    if (k && Array.isArray(k.uyeler) && (h.tur === 'acik_kume' || h.tur === 'yildiz_kumesi_asterizm' || (b && b.cekirdek === 'yildiz'))) sonuc.uyeler = k.uyeler.map(u => u.V);
+    if (k && Array.isArray(k.uyeler) && (h.tur === 'acik_kume' || h.tur === 'yildiz_kumesi_asterizm' || (b && b.cekirdek === 'yildiz'))) sonuc.uyeler = k.uyeler.map(u => (Number.isFinite(u.Vhesap) ? u.Vhesap : u.V));   // v47: değişen yıldızda VSX aralığının sönük ucu (Vhesap)
     if (b && b.cekirdek === 'profil' && veri.profil && veri.profil[h.id]) sonuc.profil = veri.profil[h.id];
     return sonuc;
   }

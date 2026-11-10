@@ -951,3 +951,16 @@ html.kirmizi .hb-gorsel img { filter: url(#kirmiziSuz); }
 html.kirmizi .hk-cerceve img { filter: url(#kirmiziSuz); }
 html.kirmizi .hk-arti::before, html.kirmizi .hk-arti::after { background: #000; box-shadow: 0 0 0 2px #FF0000; }   /* kırmızıya dönen görüntüde kırmızı çizgi kaybolur: siyah çekirdek, kırmızı kenar */
 html.kirmizi .hk-ens-dolu { background: var(--iyi); }
+
+/* v47 "Bu gece Ay'da" kartı (ay.js + gozlem.js) */
+.ay-ozet { line-height: 1.5; }
+.ay-sahne { display: flex; justify-content: center; margin: 10px 0; }
+.ay-sahne canvas { display: block; max-width: 100%; }
+html.kirmizi .ay-sahne canvas { filter: url(#kirmiziSuz); }
+.ay-liste { list-style: none; margin: 8px 0 4px; padding: 0; display: grid; gap: 4px; }
+.ay-yapi { width: 100%; display: grid; grid-template-columns: 1.8em minmax(0, 1fr); grid-template-rows: auto auto; column-gap: 8px; align-items: baseline; text-align: left; padding: 7px 10px; min-height: 44px;
+  background: var(--levha); color: var(--parsomen); border: 1px solid var(--cizgi); border-radius: var(--r); font: 400 15px/1.3 var(--sans); cursor: pointer; }
+.ay-yapi[aria-pressed="true"] { border-color: var(--pirinc); box-shadow: inset 0 0 0 1px var(--pirinc); }
+.ay-no { grid-row: 1 / span 2; font-weight: 600; color: var(--pirinc); font-variant-numeric: tabular-nums; }
+.ay-ad { font-weight: 500; overflow-wrap: anywhere; }
+.ay-alt { grid-column: 2; font-size: 13px; color: var(--soluk); overflow-wrap: anywhere; }

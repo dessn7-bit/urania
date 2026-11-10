@@ -1,0 +1,125 @@
+{
+  "rehber": {
+    "ne": "Bir gezegenin yıldızlar arasındaki yolunu gün gün çizer: Merkür, Venüs, Mars, Jüpiter ya da Satürn'ü ve bir tarih aralığını seçersin, konumları telefonun kendisi hesaplar. Gezegen çoğu zaman yıldızlara göre doğuya ilerler, ama bazı haftalar durur gibi olur, sonra geri gider ve gökte bir ilmek ya da zikzak çizer. Yanıtladığı soru: gezegen gerçekten geri mi döner, yoksa onu sollayan biz miyiz?",
+    "ekran": {
+      "cizim": [
+        { "sekil": "daire", "renk": "--yildiz", "ad": "Beyaz noktalar", "ne": "5 kadire kadar yıldızlar; nokta ne kadar büyükse yıldız o kadar parlak. Gezegen bu yıldızların önünde yer değiştirir." },
+        { "sekil": "cizgi", "renk": "--soluk", "ad": "İnce soluk çizgiler ve eğik yazılar", "ne": "Takımyıldız çizgileri ve adları (yalnız boş yer kalınca yazılır)." },
+        { "sekil": "kesik", "renk": "--hedef", "ad": "Mavi kesik yatay çizgi", "ne": "Tutulum (ekliptik): Güneş'in bir yıl boyunca yıldızlar arasında izlediği yol. Gezegenler hep bu çizginin yakınında dolaşır." },
+        { "sekil": "cizgi", "renk": "--pirinc", "ad": "İnce pirinç çizgi ve küçük noktalar", "ne": "Gezegenin olağan yolu: yıldızlara göre doğuya (sola) gider. Her küçük nokta bir gün." },
+        { "sekil": "kalin", "renk": "#F08A4B", "ad": "Kalın turuncu çizgi", "ne": "Geri hareket: gezegenin yıldızlara göre batıya (sağa) kaydığı günler." },
+        { "sekil": "halka", "renk": "--parsomen", "ad": "Krem halka ve “durur” yazısı", "ne": "Duraklama: gezegenin yıldızlara göre ilerlemeyi bıraktığı an. Geri hareket iki duraklama arasındadır." },
+        { "sekil": "halka", "renk": "--hedef", "ad": "Mavi halka", "ne": "Karşı konum (Mars, Jüpiter, Satürn: gezegen Güneş'in tam karşısında) ya da iç kavuşum (Merkür, Venüs: gezegen Dünya ile Güneş'in arasında)." },
+        { "sekil": "daire", "renk": "--parsomen", "ad": "Biraz büyük krem noktalar ve ay adları", "ne": "Her ayın ilk günü gezegenin bulunduğu yer." },
+        { "sekil": "daire", "renk": "--gezegen", "ad": "Sarı dolu daire", "ne": "Gezegenin kaydırıcıda seçtiğin gündeki yeri." },
+        { "sekil": "yazi", "renk": "--parsomen", "ad": "Sol üstteki tarih ve durum, alt köşelerde yönler", "ne": "Seçili gün ve gezegenin o gün ne yaptığı (geri gidiyorsa turuncu). Doğu solda, batı sağda: güneye bakınca gök böyle görünür." }
+      ],
+      "kontroller": [
+        { "sec": "#gyGezegen", "tur": "dugme", "ad": "Gezegen", "ne": "Merkür, Venüs, Mars, Jüpiter ya da Satürn. Tarih aralığı değişmez; yol yeniden hesaplanır." },
+        { "sec": "#gyHazir", "tur": "dugme", "ad": "Hazır aralıklar", "ne": "Jüpiter Aralık 2026 – Nisan 2027 ve Mars Ocak–Nisan 2027: ikisinin de geri hareketi bu aralıkların içinde." },
+        { "sec": "#gyBas", "tur": "tarih", "ad": "Başlangıç", "ne": "Yolun ilk günü. Aralık en az 10, en çok 366 gün olabilir; sınır aşılırsa öbür tarih kaydırılır." },
+        { "sec": "#gySon", "tur": "tarih", "ad": "Bitiş", "ne": "Yolun son günü." },
+        { "sec": "#gyGun", "tur": "kaydirici", "ad": "Gün", "ne": "Gezegeni aralığın içinde gün gün ilerletir; ölçüm kutularındaki hareket, parlaklık ve uzaklık o güne aittir." },
+        { "sec": "#gyOynat", "tur": "dugme", "ad": "Oynat / Durdur", "ne": "Gezegeni kendiliğinden gün gün yürütür; aralığın sonunda durur." }
+      ],
+      "hareket": "Oynat'a basınca gezegen saniyede yaklaşık 15 gün ilerler ve aralığın sonunda durur. Hareket azaltılmışsa çeyrek saniyede bir gün ilerler; kaydırıcıyla da kendin gün gün gidebilirsin."
+    },
+    "gercek": "Mars'ın ilmeğini Ocak–Nisan 2027'de haftada bir bakarak kendin izleyebilirsin. Mars 19 Şubat 2027'de karşı konumda, Aslan takımyıldızında olacak; yakınındaki parlak yıldızlara göre yerini deftere çizmen yeter, dürbün gerekmez. Jüpiter de aynı takımyıldızda, 11 Şubat 2027'de karşı konumda. NASA'nın günün astronomi fotoğrafında yayımlanan 2018 Mars ilmeği de Tunç Tezel'in 5 ile 9 gün arayla çektiği karelerden birleştirilmiştir.",
+    "gercekKaynaklar": [
+      { "ad": "BBC Sky at Night: Mars opposition 2027", "url": "https://skyatnightmagazine.com/advice/skills/mars-opposition" },
+      { "ad": "nakedeyeplanets.com: Mars oppositions", "url": "https://nakedeyeplanets.com/mars-oppositions.htm" },
+      { "ad": "EarthSky: Jupiter at opposition", "url": "https://earthsky.org/astronomy-essentials/jupiter-at-opposition/" },
+      { "ad": "NASA APOD, 8 Kasım 2018: Mars in the Loop", "url": "https://science.nasa.gov/image-article/apod-2018-november-8-mars-in-the-loop/" }
+    ],
+    "dersler": ["d3", "d9"],
+    "adimlar": [
+      {
+        "yap": "Hazır aralıklardan Mars'ı seç (Ocak–Nisan 2027).",
+        "tikla": "#gyHazir button[data-i=\"1\"]",
+        "gozle": "Mars 10 Ocak 2027'de durur, 81 gün geri gider ve 1 Nisan 2027'de yeniden doğuya döner; geri gittiği yay 19,5°. Yolun bu parçası kalın turuncu, ortasında mavi halka: karşı konum, 19 Şubat 2027.",
+        "neden": "Mars yörüngesinde hiç geri dönmez. Dünya daha içteki, daha hızlı yörüngededir (NASA: saniyede 29,8 km, Mars 24,1 km) ve Mars'ı sollar; sollanan Mars uzaktaki yıldızlara göre bir süre geriye kayıyormuş gibi görünür. NASA'nın günün astronomi fotoğrafı sayfası da geri görünmenin nedeninin Dünya'nın kendi hareketi olduğunu yazar."
+      },
+      {
+        "yap": "Kaydırıcıyı karşı konum gününe, 19 Şubat'a getir.",
+        "tikla": "#gyHazir button[data-i=\"1\"]",
+        "ayar": { "#gyGun": 49 },
+        "gozle": "Mars geri gidiyor; parlaklığı −1,2 kadir, Dünya'ya uzaklığı 0,68 AB (101 milyon km).",
+        "neden": "Sollama anı karşı konumdur: Mars Güneş'in tam karşısındadır, Güneş batarken doğar ve bütün gece gökte kalır. Dünya'ya en yakın olduğu için yılın en parlak hâlindedir. Wikipedia'ya göre geri hareketin ortası karşı konumdur ve gezegen o sırada en parlak görünür; nakedeyeplanets.com da 2027 karşı konumu için −1,2 kadir verir."
+      },
+      {
+        "yap": "Kaydırıcıyı başa al: 1 Ocak 2027.",
+        "tikla": "#gyHazir button[data-i=\"1\"]",
+        "ayar": { "#gyGun": 0 },
+        "gozle": "Mars hâlâ doğuya gidiyor (günde yaklaşık 0,1°); uzaklığı 0,91 AB (136 milyon km), karşı konumdakinden yaklaşık bir kadir sönük.",
+        "neden": "Dünya henüz Mars'ın gerisinden yaklaşıyor. Mars daha uzakta olduğu için hem daha sönük hem de yıldızlara göre olağan yönünde, doğuya ilerliyor; Dünya yetiştikçe bu ilerleme yavaşlar ve 10 Ocak'ta durur."
+      },
+      {
+        "yap": "Hazır aralıklardan Jüpiter'i seç (Aralık 2026 – Nisan 2027).",
+        "tikla": "#gyHazir button[data-i=\"0\"]",
+        "gozle": "Jüpiter 13 Aralık 2026'da durur, 121 gün geri gider ve 13 Nisan 2027'de doğuya döner; geri gittiği yay yalnız 10,0°. Karşı konum 11 Şubat 2027.",
+        "neden": "Jüpiter çok yavaş ilerler (NASA: saniyede 13,1 km), bu yüzden Dünya onu hemen her yıl sollar: NASA'ya göre aynı diziliş 398,88 günde bir yinelenir. Wikipedia'nın tablosu da Jüpiter için 121 gün geri hareket verir. Jüpiter Mars'tan çok uzak olduğu için gökteki ilmek daha küçüktür."
+      },
+      {
+        "yap": "Satürn'ü seç, aralığı 15 Temmuz 2027 – 15 Ocak 2028 yap.",
+        "tikla": "#gyGezegen button[data-i=\"4\"]",
+        "ayar": { "#gyBas": "2027-07-15", "#gySon": "2028-01-15" },
+        "gozle": "Satürn 9 Ağustos 2027'de durur, 136 gün geri gider ve 24 Aralık 2027'de döner; geri gittiği yay 6,9°. Karşı konum 18 Ekim 2027.",
+        "neden": "Gezegen ne kadar uzak ve yavaşsa geri hareket o kadar uzun, ilmek o kadar küçük olur: Satürn saniyede 9,7 km ile gider (NASA). Wikipedia'nın tablosu Satürn için 138 gün verir; bu kez hesap 136 gün buluyor."
+      },
+      {
+        "yap": "Venüs'ü seç, aralığı 15 Nisan – 15 Temmuz 2028 yap.",
+        "tikla": "#gyGezegen button[data-i=\"1\"]",
+        "ayar": { "#gyBas": "2028-04-15", "#gySon": "2028-07-15" },
+        "gozle": "Venüs 11 Mayıs 2028'de durur, 43 gün geri gider ve 23 Haziran 2028'de döner. Mavi halka bu kez iç kavuşum: 1 Haziran 2028.",
+        "neden": "İç gezegenler karşı konuma hiç gelmez; geri hareketleri iç kavuşumun çevresindedir: Venüs Dünya ile Güneş'in arasından, Güneş'in bu yanından geçer. Bu kez sollayan Venüs'tür, çünkü Dünya'dan hızlıdır (NASA: saniyede 35,0 km). Wikipedia'ya göre bu sırada Güneş'in parıltısında görülmez ve akşam yıldızıyken sabah yıldızına döner; tablosu Venüs için 41 gün geri hareket verir."
+      },
+      {
+        "yap": "Merkür'ü seç, aralığı 25 Ocak – 20 Mart 2027 yap.",
+        "tikla": "#gyGezegen button[data-i=\"0\"]",
+        "ayar": { "#gyBas": "2027-01-25", "#gySon": "2027-03-20" },
+        "gozle": "Merkür 9 Şubat 2027'de durur, 22 gün geri gider ve 3 Mart 2027'de döner; iç kavuşum 18 Şubat 2027.",
+        "neden": "Merkür Güneş'e en yakın ve en hızlı gezegendir (NASA: saniyede 47,4 km); Dünya'yı yılda üç kezden fazla sollar. Wikipedia'nın tablosuna göre Merkür'ün sinodik dönemi 116 gün, geri hareketi yaklaşık 22 gün (19,85 ile 24,19 gün arası)."
+      }
+    ],
+    "kaynaklar": [
+      { "ad": "Wikipedia: Apparent retrograde motion", "url": "https://en.wikipedia.org/wiki/Apparent_retrograde_motion" },
+      { "ad": "Wikipedia: Conjunction (astronomy)", "url": "https://en.wikipedia.org/wiki/Conjunction_(astronomy)" },
+      { "ad": "NASA APOD, 8 Kasım 2018: Mars in the Loop", "url": "https://science.nasa.gov/image-article/apod-2018-november-8-mars-in-the-loop/" },
+      { "ad": "NASA Planetary Fact Sheet (yörünge hızları)", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/" },
+      { "ad": "NASA Jupiter Fact Sheet (sinodik dönem)", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/jupiterfact.html" },
+      { "ad": "nakedeyeplanets.com: Mars oppositions", "url": "https://nakedeyeplanets.com/mars-oppositions.htm" },
+      { "ad": "JPL Horizons (duraklama ve karşı konum karşılaştırması)", "url": "https://ssd.jpl.nasa.gov/horizons/" }
+    ]
+  },
+  "veri": {
+    "gezegenler": [
+      { "id": "Mercury", "ad": "Merkür", "ic": true, "belirtme": "Merkür'ü", "geri_gun_wiki": "yaklaşık 22" },
+      { "id": "Venus", "ad": "Venüs", "ic": true, "belirtme": "Venüs'ü", "geri_gun_wiki": "41" },
+      { "id": "Mars", "ad": "Mars", "ic": false, "belirtme": "Mars'ı", "geri_gun_wiki": "72" },
+      { "id": "Jupiter", "ad": "Jüpiter", "ic": false, "belirtme": "Jüpiter'i", "geri_gun_wiki": "121" },
+      { "id": "Saturn", "ad": "Satürn", "ic": false, "belirtme": "Satürn'ü", "geri_gun_wiki": "138" }
+    ],
+    "geri_gun_kaynak": { "ad": "Wikipedia: Apparent retrograde motion, Planetary retrograde constants tablosu (Days in retrogradation)", "url": "https://en.wikipedia.org/wiki/Apparent_retrograde_motion" },
+    "yorunge_hizi": { "Mercury": 47.4, "Venus": 35.0, "Earth": 29.8, "Mars": 24.1, "Jupiter": 13.1, "Saturn": 9.7 },
+    "yorunge_hizi_kaynak": { "ad": "NASA Planetary Fact Sheet: Orbital Velocity (km/s)", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/" },
+    "onayarlar": [
+      { "ad": "Jüpiter: Aralık 2026 – Nisan 2027", "gezegen": "Jupiter", "bas": "2026-12-01", "son": "2027-04-30" },
+      { "ad": "Mars: Ocak – Nisan 2027", "gezegen": "Mars", "bas": "2027-01-01", "son": "2027-04-30" }
+    ],
+    "ilk_onayar": 1,
+    "saat_ut": 18,
+    "saat_not": "18.00 UT (Türkiye saatiyle 21.00)",
+    "sinir_kadir": 5,
+    "en_az_gun": 10,
+    "en_cok_gun": 366,
+    "oynatma_gun_saniye": 15,
+    "kaynaklar": [
+      { "ad": "Astronomy Engine (MIT)", "url": "https://github.com/cosinekitty/astronomy" },
+      { "ad": "JPL Horizons", "url": "https://ssd.jpl.nasa.gov/horizons/" },
+      { "ad": "d3-celestial yıldız ve takımyıldız verisi (BSD-3)", "url": "https://github.com/ofrohn/d3-celestial" },
+      { "ad": "Wikipedia: Apparent retrograde motion", "url": "https://en.wikipedia.org/wiki/Apparent_retrograde_motion" },
+      { "ad": "NASA Planetary Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/" },
+      { "ad": "NASA APOD: Mars in the Loop", "url": "https://science.nasa.gov/image-article/apod-2018-november-8-mars-in-the-loop/" }
+    ]
+  }
+}

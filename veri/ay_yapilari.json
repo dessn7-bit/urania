@@ -1,0 +1,1309 @@
+{
+"aciklama": "Bu gece Ay'da rehberinin yapıları: yakın yüz, IAU onaylı adlar, 7×50 ile biçimi seçilebilecek büyüklükte.",
+"kaynak": {
+"veri": "https://asc-planetarynames-data.s3.us-west-2.amazonaws.com/MOON_nomenclature_center_pts.zip",
+"canli": "https://planetarynames.wr.usgs.gov/Feature/<id> (zip ile fark varsa canlı değer; zip değeri yapının \"zip\" alanında)",
+"kullanim": "Public domain.",
+"atif": "International Astronomical Union (IAU) and United States Geological Survey (USGS), Gazetteer of Planetary Nomenclature",
+"cerceve": "Ay ortalama Dünya / kutup ekseni; doğu boylamı pozitif (−180…180)"
+},
+"esik": {
+"gozYaySn": 60.0,
+"buyutme": 7,
+"uzaklikKm": 384400.0,
+"cozmeKm": 15.97,
+"oge": 3,
+"esikKm": 47.9,
+"hesap": "60″ / 7 = 8.57″ ; 384400 km × 8.57″ / 206 265 = 15.97 km ; Urania'nın seçimi: kısa görünen eksen ≥ 3 çözme öğesi = 47.9 km (çap × cos c)"
+},
+"uretim": {
+"tarih": "2026-11-10",
+"arac": "araclar/ay_yapilari.py"
+},
+"yapilar": [
+{
+"ad": "Oceanus Procellarum",
+"tur": "okyanus",
+"cap": 2592.2,
+"boylam": -56.677,
+"enlem": 20.671,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/4395",
+"tr": "Fırtınalar Okyanusu",
+"trKaynak": "https://tr.wikipedia.org/wiki/Apollo_12"
+},
+{
+"ad": "Mare Frigoris",
+"tur": "deniz",
+"cap": 1596.0,
+"boylam": 1.4,
+"enlem": 56.0,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/3674",
+"zip": {
+"cap": 1446.4,
+"enlem": 57.592,
+"boylam": -0.006
+}
+},
+{
+"ad": "Mare Imbrium",
+"tur": "deniz",
+"cap": 1145.5,
+"boylam": -14.909,
+"enlem": 34.724,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/3678",
+"tr": "Yağmurlar Denizi",
+"trKaynak": "https://tr.wikipedia.org/wiki/Lunohod_1"
+},
+{
+"ad": "Mare Tranquillitatis",
+"tur": "deniz",
+"cap": 875.7,
+"boylam": 30.835,
+"enlem": 8.349,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/3691",
+"tr": "Sessizlik Denizi",
+"trKaynak": "https://tr.wikipedia.org/wiki/Sessizlik_Denizi"
+},
+{
+"ad": "Mare Fecunditatis",
+"tur": "deniz",
+"cap": 840.4,
+"boylam": 53.669,
+"enlem": -7.835,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/3673"
+},
+{
+"ad": "Mare Nubium",
+"tur": "deniz",
+"cap": 714.5,
+"boylam": -17.287,
+"enlem": -20.589,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/3684",
+"tr": "Bulutlar Denizi",
+"trKaynak": "https://tr.wikipedia.org/wiki/Lunar_Reconnaissance_Orbiter"
+},
+{
+"ad": "Mare Serenitatis",
+"tur": "deniz",
+"cap": 674.3,
+"boylam": 18.36,
+"enlem": 27.288,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/3686"
+},
+{
+"ad": "Montes Apenninus",
+"tur": "sıradağ",
+"cap": 599.7,
+"boylam": 0.025,
+"enlem": 19.871,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/4004"
+},
+{
+"ad": "Mare Crisium",
+"tur": "deniz",
+"cap": 555.9,
+"boylam": 59.104,
+"enlem": 16.177,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/3671"
+},
+{
+"ad": "Mare Insularum",
+"tur": "deniz",
+"cap": 511.9,
+"boylam": -30.64,
+"enlem": 7.792,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/3680"
+},
+{
+"ad": "Montes Caucasus",
+"tur": "sıradağ",
+"cap": 443.5,
+"boylam": 9.97,
+"enlem": 37.33,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/4007",
+"zip": {
+"cap": 443.5,
+"enlem": 37.519,
+"boylam": 9.931
+}
+},
+{
+"ad": "Lacus Somniorum",
+"tur": "göl",
+"cap": 424.8,
+"boylam": 30.805,
+"enlem": 37.562,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/3217"
+},
+{
+"ad": "Montes Jura",
+"tur": "sıradağ",
+"cap": 420.8,
+"boylam": -36.111,
+"enlem": 47.494,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/4011"
+},
+{
+"ad": "Mare Humorum",
+"tur": "deniz",
+"cap": 419.7,
+"boylam": -38.572,
+"enlem": -24.479,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/3677"
+},
+{
+"ad": "Montes Haemus",
+"tur": "sıradağ",
+"cap": 384.7,
+"boylam": 12.031,
+"enlem": 17.107,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/4009"
+},
+{
+"ad": "Mare Cognitum",
+"tur": "deniz",
+"cap": 350.0,
+"boylam": -22.314,
+"enlem": -10.531,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/3670"
+},
+{
+"ad": "Mare Nectaris",
+"tur": "deniz",
+"cap": 339.4,
+"boylam": 34.602,
+"enlem": -15.185,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/3683"
+},
+{
+"ad": "Montes Alpes",
+"tur": "sıradağ",
+"cap": 334.5,
+"boylam": -0.55,
+"enlem": 48.17,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/4003",
+"zip": {
+"cap": 334.5,
+"enlem": 48.36,
+"boylam": -0.58
+}
+},
+{
+"ad": "Montes Carpatus",
+"tur": "sıradağ",
+"cap": 333.6,
+"boylam": -23.625,
+"enlem": 14.568,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/4006"
+},
+{
+"ad": "Sinus Aestuum",
+"tur": "körfez",
+"cap": 316.5,
+"boylam": -8.34,
+"enlem": 12.098,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/5558"
+},
+{
+"ad": "Palus Epidemiarum",
+"tur": "bataklık",
+"cap": 300.4,
+"boylam": -27.543,
+"enlem": -31.996,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/4565"
+},
+{
+"ad": "Sinus Medii",
+"tur": "körfez",
+"cap": 286.7,
+"boylam": 1.03,
+"enlem": 1.63,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/5567"
+},
+{
+"ad": "Montes Pyrenaeus",
+"tur": "sıradağ",
+"cap": 251.3,
+"boylam": 41.51,
+"enlem": -14.048,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/4012"
+},
+{
+"ad": "Sinus Iridum",
+"tur": "körfez",
+"cap": 249.3,
+"boylam": -31.665,
+"enlem": 45.01,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/5565"
+},
+{
+"ad": "Mare Undarum",
+"tur": "deniz",
+"cap": 244.8,
+"boylam": 68.659,
+"enlem": 7.491,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/3693"
+},
+{
+"ad": "Mare Vaporum",
+"tur": "deniz",
+"cap": 242.5,
+"boylam": 4.09,
+"enlem": 13.2,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/3694"
+},
+{
+"ad": "Clavius",
+"tur": "krater",
+"cap": 230.8,
+"boylam": -14.727,
+"enlem": -58.623,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/1236"
+},
+{
+"ad": "Deslandres",
+"tur": "krater",
+"cap": 227.0,
+"boylam": -5.572,
+"enlem": -32.554,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/1502"
+},
+{
+"ad": "Sinus Asperitatis",
+"tur": "körfez",
+"cap": 219.1,
+"boylam": 27.489,
+"enlem": -5.412,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/5561"
+},
+{
+"ad": "Schickard",
+"tur": "krater",
+"cap": 212.2,
+"boylam": -55.105,
+"enlem": -44.379,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/5368"
+},
+{
+"ad": "Lacus Temporis",
+"tur": "göl",
+"cap": 205.3,
+"boylam": 56.205,
+"enlem": 46.773,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/3219"
+},
+{
+"ad": "Janssen",
+"tur": "krater",
+"cap": 200.7,
+"boylam": 40.822,
+"enlem": -44.96,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/2800"
+},
+{
+"ad": "Lacus Excellentiae",
+"tur": "göl",
+"cap": 197.7,
+"boylam": -43.577,
+"enlem": -35.655,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/3206"
+},
+{
+"ad": "Sinus Roris",
+"tur": "körfez",
+"cap": 195.0,
+"boylam": -50.859,
+"enlem": 50.261,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/5569"
+},
+{
+"ad": "Montes Riphaeus",
+"tur": "sıradağ",
+"cap": 190.1,
+"boylam": -27.602,
+"enlem": -7.483,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/4014"
+},
+{
+"ad": "Sinus Amoris",
+"tur": "körfez",
+"cap": 189.1,
+"boylam": 37.289,
+"enlem": 19.92,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/5559"
+},
+{
+"ad": "Petavius",
+"tur": "krater",
+"cap": 184.1,
+"boylam": 60.778,
+"enlem": -25.391,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/4668"
+},
+{
+"ad": "Palus Putredinis",
+"tur": "bataklık",
+"cap": 180.5,
+"boylam": 0.004,
+"enlem": 27.356,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/4566"
+},
+{
+"ad": "Schiller",
+"tur": "krater",
+"cap": 179.4,
+"boylam": -39.784,
+"enlem": -51.724,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/5369"
+},
+{
+"ad": "Grimaldi",
+"tur": "krater",
+"cap": 173.5,
+"boylam": -68.36,
+"enlem": -5.38,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/2252",
+"zip": {
+"cap": 235.0,
+"enlem": -5.38,
+"boylam": -68.36
+}
+},
+{
+"ad": "W. Bond",
+"tur": "krater",
+"cap": 170.5,
+"boylam": 3.519,
+"enlem": 65.405,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/6466"
+},
+{
+"ad": "Montes Taurus",
+"tur": "sıradağ",
+"cap": 166.2,
+"boylam": 40.336,
+"enlem": 27.323,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/4018",
+"koken": "adını Dünya'daki Toros Dağları'ndan alır",
+"kokenKaynak": "https://planetarynames.wr.usgs.gov/Feature/4018"
+},
+{
+"ad": "Palus Somni",
+"tur": "bataklık",
+"cap": 163.5,
+"boylam": 44.725,
+"enlem": 13.688,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/4567"
+},
+{
+"ad": "Montes Agricola",
+"tur": "sıradağ",
+"cap": 161.2,
+"boylam": -54.23,
+"enlem": 29.08,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/4002",
+"zip": {
+"cap": 159.8,
+"enlem": 29.059,
+"boylam": -54.071
+}
+},
+{
+"ad": "Sinus Concordiae",
+"tur": "körfez",
+"cap": 159.0,
+"boylam": 42.472,
+"enlem": 10.979,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/5562"
+},
+{
+"ad": "Lacus Mortis",
+"tur": "göl",
+"cap": 158.8,
+"boylam": 27.319,
+"enlem": 45.135,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/3212"
+},
+{
+"ad": "Maginus",
+"tur": "krater",
+"cap": 155.6,
+"boylam": -5.984,
+"enlem": -50.034,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/3581"
+},
+{
+"ad": "J. Herschel",
+"tur": "krater",
+"cap": 154.4,
+"boylam": -41.859,
+"enlem": 62.314,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/2779"
+},
+{
+"ad": "Ptolemaeus",
+"tur": "krater",
+"cap": 153.7,
+"boylam": -1.837,
+"enlem": -9.161,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/4860"
+},
+{
+"ad": "Lacus Timoris",
+"tur": "göl",
+"cap": 153.6,
+"boylam": -27.952,
+"enlem": -39.422,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/3220"
+},
+{
+"ad": "Montes Archimedes",
+"tur": "sıradağ",
+"cap": 146.5,
+"boylam": -5.36,
+"enlem": 25.39,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/4005",
+"zip": {
+"cap": 146.5,
+"enlem": 25.394,
+"boylam": -5.25
+}
+},
+{
+"ad": "Mare Anguis",
+"tur": "deniz",
+"cap": 146.0,
+"boylam": 67.575,
+"enlem": 22.427,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/3664"
+},
+{
+"ad": "Longomontanus",
+"tur": "krater",
+"cap": 145.5,
+"boylam": -21.879,
+"enlem": -49.552,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/3465"
+},
+{
+"ad": "Hipparchus",
+"tur": "krater",
+"cap": 143.9,
+"boylam": 4.913,
+"enlem": -5.356,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/2516"
+},
+{
+"ad": "Mare Spumans",
+"tur": "deniz",
+"cap": 143.1,
+"boylam": 65.303,
+"enlem": 1.302,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/3690"
+},
+{
+"ad": "Vendelinus",
+"tur": "krater",
+"cap": 141.2,
+"boylam": 61.546,
+"enlem": -16.458,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/6346"
+},
+{
+"ad": "Furnerius",
+"tur": "krater",
+"cap": 135.0,
+"boylam": 60.538,
+"enlem": -36.004,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/2043"
+},
+{
+"ad": "Walther",
+"tur": "krater",
+"cap": 134.2,
+"boylam": 0.616,
+"enlem": -33.248,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/6483"
+},
+{
+"ad": "Mee",
+"tur": "krater",
+"cap": 134.1,
+"boylam": -35.187,
+"enlem": -43.625,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/3797"
+},
+{
+"ad": "Langrenus",
+"tur": "krater",
+"cap": 132.0,
+"boylam": 61.038,
+"enlem": -8.86,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/3273"
+},
+{
+"ad": "Albategnius",
+"tur": "krater",
+"cap": 130.8,
+"boylam": 4.009,
+"enlem": -11.24,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/162"
+},
+{
+"ad": "Cleomedes",
+"tur": "krater",
+"cap": 130.8,
+"boylam": 55.501,
+"enlem": 27.601,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/1239"
+},
+{
+"ad": "Stöfler",
+"tur": "krater",
+"cap": 129.9,
+"boylam": 5.926,
+"enlem": -41.242,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/5736"
+},
+{
+"ad": "Sinus Successus",
+"tur": "körfez",
+"cap": 126.7,
+"boylam": 58.52,
+"enlem": 1.124,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/5571"
+},
+{
+"ad": "Regiomontanus",
+"tur": "krater",
+"cap": 126.6,
+"boylam": -1.086,
+"enlem": -28.279,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/4979"
+},
+{
+"ad": "Lacus Bonitatis",
+"tur": "göl",
+"cap": 122.1,
+"boylam": 44.316,
+"enlem": 23.183,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/3204"
+},
+{
+"ad": "Orontius",
+"tur": "krater",
+"cap": 121.0,
+"boylam": -3.96,
+"enlem": -40.369,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/4497"
+},
+{
+"ad": "Fracastorius",
+"tur": "krater",
+"cap": 120.6,
+"boylam": 33.07,
+"enlem": -21.359,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/2008"
+},
+{
+"ad": "Sinus Lunicus",
+"tur": "körfez",
+"cap": 119.2,
+"boylam": -1.851,
+"enlem": 32.364,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/5566"
+},
+{
+"ad": "Letronne",
+"tur": "krater",
+"cap": 117.6,
+"boylam": -42.488,
+"enlem": -10.501,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/3363"
+},
+{
+"ad": "Maurolycus",
+"tur": "krater",
+"cap": 115.3,
+"boylam": 13.92,
+"enlem": -41.772,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/3760"
+},
+{
+"ad": "Purbach",
+"tur": "krater",
+"cap": 115.0,
+"boylam": -2.03,
+"enlem": -25.512,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/4872"
+},
+{
+"ad": "Hommel",
+"tur": "krater",
+"cap": 113.6,
+"boylam": 32.925,
+"enlem": -54.738,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/2546"
+},
+{
+"ad": "Montes Teneriffe",
+"tur": "sıradağ",
+"cap": 112.0,
+"boylam": -13.187,
+"enlem": 47.891,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/4019"
+},
+{
+"ad": "Sinus Honoris",
+"tur": "körfez",
+"cap": 111.6,
+"boylam": 17.866,
+"enlem": 11.72,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/5564"
+},
+{
+"ad": "Gassendi",
+"tur": "krater",
+"cap": 111.4,
+"boylam": -39.964,
+"enlem": -17.555,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/2111"
+},
+{
+"ad": "Alphonsus",
+"tur": "krater",
+"cap": 110.5,
+"boylam": -2.846,
+"enlem": -13.388,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/206"
+},
+{
+"ad": "Scheiner",
+"tur": "krater",
+"cap": 110.1,
+"boylam": -27.809,
+"enlem": -60.353,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/5364"
+},
+{
+"ad": "Lacus Doloris",
+"tur": "göl",
+"cap": 102.9,
+"boylam": 8.615,
+"enlem": 16.801,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/3205"
+},
+{
+"ad": "Wilhelm",
+"tur": "krater",
+"cap": 100.8,
+"boylam": -20.941,
+"enlem": -43.213,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/6548"
+},
+{
+"ad": "Plato",
+"tur": "krater",
+"cap": 100.7,
+"boylam": -9.382,
+"enlem": 51.619,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/4757"
+},
+{
+"ad": "Pitatus",
+"tur": "krater",
+"cap": 100.6,
+"boylam": -13.527,
+"enlem": -29.882,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/4740"
+},
+{
+"ad": "Catharina",
+"tur": "krater",
+"cap": 98.8,
+"boylam": 23.552,
+"enlem": -17.98,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/1076"
+},
+{
+"ad": "Theophilus",
+"tur": "krater",
+"cap": 98.6,
+"boylam": 26.285,
+"enlem": -11.452,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/5965"
+},
+{
+"ad": "Lacus Felicitatis",
+"tur": "göl",
+"cap": 98.5,
+"boylam": 5.359,
+"enlem": 18.52,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/3207"
+},
+{
+"ad": "Cyrillus",
+"tur": "krater",
+"cap": 98.1,
+"boylam": 24.066,
+"enlem": -13.291,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/1372"
+},
+{
+"ad": "Sacrobosco",
+"tur": "krater",
+"cap": 97.7,
+"boylam": 16.64,
+"enlem": -23.752,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/5270"
+},
+{
+"ad": "Arzachel",
+"tur": "krater",
+"cap": 97.0,
+"boylam": -1.93,
+"enlem": -18.264,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/412"
+},
+{
+"ad": "Fra Mauro",
+"tur": "krater",
+"cap": 96.8,
+"boylam": -16.974,
+"enlem": -6.061,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/2007"
+},
+{
+"ad": "Copernicus",
+"tur": "krater",
+"cap": 96.1,
+"boylam": -20.079,
+"enlem": 9.621,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/1296"
+},
+{
+"ad": "Posidonius",
+"tur": "krater",
+"cap": 95.1,
+"boylam": 29.991,
+"enlem": 31.878,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/4808"
+},
+{
+"ad": "Alexander",
+"tur": "krater",
+"cap": 94.8,
+"boylam": 13.693,
+"enlem": 40.252,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/177"
+},
+{
+"ad": "Montes Harbinger",
+"tur": "sıradağ",
+"cap": 92.7,
+"boylam": -41.29,
+"enlem": 26.892,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/4010"
+},
+{
+"ad": "Brenner",
+"tur": "krater",
+"cap": 90.0,
+"boylam": 39.108,
+"enlem": -39.094,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/873"
+},
+{
+"ad": "Sasserides",
+"tur": "krater",
+"cap": 90.0,
+"boylam": -9.3,
+"enlem": -39.1,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/5335",
+"zip": {
+"cap": 81.7,
+"enlem": -39.278,
+"boylam": -9.444
+}
+},
+{
+"ad": "Lagalla",
+"tur": "krater",
+"cap": 88.8,
+"boylam": -22.36,
+"enlem": -44.485,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/3228"
+},
+{
+"ad": "Lacus Gaudii",
+"tur": "göl",
+"cap": 88.5,
+"boylam": 12.274,
+"enlem": 16.332,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/3208"
+},
+{
+"ad": "Gemma Frisius",
+"tur": "krater",
+"cap": 88.5,
+"boylam": 13.369,
+"enlem": -34.328,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/2138"
+},
+{
+"ad": "Aristoteles",
+"tur": "krater",
+"cap": 87.6,
+"boylam": 17.32,
+"enlem": 50.243,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/382"
+},
+{
+"ad": "Piccolomini",
+"tur": "krater",
+"cap": 87.6,
+"boylam": 32.199,
+"enlem": -29.7,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/4721"
+},
+{
+"ad": "Wurzelbauer",
+"tur": "krater",
+"cap": 86.8,
+"boylam": -16.056,
+"enlem": -34.041,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/6590"
+},
+{
+"ad": "Heraclitus",
+"tur": "krater",
+"cap": 85.7,
+"boylam": 6.42,
+"enlem": -49.305,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/2465"
+},
+{
+"ad": "Tycho",
+"tur": "krater",
+"cap": 85.3,
+"boylam": -11.215,
+"enlem": -43.296,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/6163"
+},
+{
+"ad": "Julius Caesar",
+"tur": "krater",
+"cap": 84.7,
+"boylam": 15.211,
+"enlem": 9.167,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/2859"
+},
+{
+"ad": "Mersenius",
+"tur": "krater",
+"cap": 84.5,
+"boylam": -49.336,
+"enlem": -21.493,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/3862"
+},
+{
+"ad": "Montes Recti",
+"tur": "sıradağ",
+"cap": 83.2,
+"boylam": -19.724,
+"enlem": 48.296,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/4013"
+},
+{
+"ad": "Lamont",
+"tur": "krater",
+"cap": 83.2,
+"boylam": 23.316,
+"enlem": 5.138,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/3256"
+},
+{
+"ad": "Barocius",
+"tur": "krater",
+"cap": 82.7,
+"boylam": 16.806,
+"enlem": -44.979,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/613"
+},
+{
+"ad": "Rabbi Levi",
+"tur": "krater",
+"cap": 82.4,
+"boylam": 23.457,
+"enlem": -34.782,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/4908"
+},
+{
+"ad": "Archimedes",
+"tur": "krater",
+"cap": 81.0,
+"boylam": -3.993,
+"enlem": 29.717,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/350"
+},
+{
+"ad": "Aliacensis",
+"tur": "krater",
+"cap": 79.6,
+"boylam": 5.131,
+"enlem": -30.595,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/185"
+},
+{
+"ad": "Gauricus",
+"tur": "krater",
+"cap": 79.6,
+"boylam": -12.742,
+"enlem": -33.907,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/2119"
+},
+{
+"ad": "Colombo",
+"tur": "krater",
+"cap": 79.0,
+"boylam": 46.022,
+"enlem": -15.255,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/1273"
+},
+{
+"ad": "Zagut",
+"tur": "krater",
+"cap": 78.9,
+"boylam": 21.889,
+"enlem": -31.941,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/6691"
+},
+{
+"ad": "Lacus Lenitatis",
+"tur": "göl",
+"cap": 78.3,
+"boylam": 12.055,
+"enlem": 14.317,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/3210"
+},
+{
+"ad": "Cuvier",
+"tur": "krater",
+"cap": 77.3,
+"boylam": 9.692,
+"enlem": -50.293,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/1356"
+},
+{
+"ad": "Montanari",
+"tur": "krater",
+"cap": 77.1,
+"boylam": -20.755,
+"enlem": -45.828,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/4001"
+},
+{
+"ad": "Clairaut",
+"tur": "krater",
+"cap": 76.9,
+"boylam": 13.862,
+"enlem": -47.836,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/1226"
+},
+{
+"ad": "Flammarion",
+"tur": "krater",
+"cap": 76.2,
+"boylam": -3.732,
+"enlem": -3.329,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/1972"
+},
+{
+"ad": "Licetus",
+"tur": "krater",
+"cap": 75.4,
+"boylam": 6.543,
+"enlem": -47.19,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/3392"
+},
+{
+"ad": "Goclenius",
+"tur": "krater",
+"cap": 73.0,
+"boylam": 45.031,
+"enlem": -10.05,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/2198"
+},
+{
+"ad": "Lacus Odii",
+"tur": "göl",
+"cap": 72.7,
+"boylam": 7.273,
+"enlem": 19.218,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/3214"
+},
+{
+"ad": "Riccius",
+"tur": "krater",
+"cap": 71.0,
+"boylam": 26.5,
+"enlem": -36.9,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/5023",
+"zip": {
+"cap": 71.8,
+"enlem": -37.025,
+"boylam": 26.425
+}
+},
+{
+"ad": "Parrot",
+"tur": "krater",
+"cap": 70.7,
+"boylam": 3.292,
+"enlem": -14.573,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/4594"
+},
+{
+"ad": "Sinus Fidei",
+"tur": "körfez",
+"cap": 70.7,
+"boylam": 2.038,
+"enlem": 17.992,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/5563"
+},
+{
+"ad": "Gutenberg",
+"tur": "krater",
+"cap": 70.6,
+"boylam": 41.249,
+"enlem": -8.614,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/2290"
+},
+{
+"ad": "Nonius",
+"tur": "krater",
+"cap": 70.6,
+"boylam": 3.789,
+"enlem": -34.902,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/4330"
+},
+{
+"ad": "Werner",
+"tur": "krater",
+"cap": 70.6,
+"boylam": 3.293,
+"enlem": -28.026,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/6523"
+},
+{
+"ad": "Eudoxus",
+"tur": "krater",
+"cap": 70.2,
+"boylam": 16.226,
+"enlem": 44.266,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/1863"
+},
+{
+"ad": "Faraday",
+"tur": "krater",
+"cap": 69.0,
+"boylam": 8.748,
+"enlem": -42.446,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/1911"
+},
+{
+"ad": "Stadius",
+"tur": "krater",
+"cap": 68.5,
+"boylam": -13.774,
+"enlem": 10.476,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/5680"
+},
+{
+"ad": "Fernelius",
+"tur": "krater",
+"cap": 68.4,
+"boylam": 4.859,
+"enlem": -38.178,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/1942"
+},
+{
+"ad": "Le Monnier",
+"tur": "krater",
+"cap": 68.4,
+"boylam": 30.502,
+"enlem": 26.656,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/3312"
+},
+{
+"ad": "La Caille",
+"tur": "krater",
+"cap": 67.2,
+"boylam": 1.084,
+"enlem": -23.676,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/3185"
+},
+{
+"ad": "Weiss",
+"tur": "krater",
+"cap": 66.6,
+"boylam": -19.587,
+"enlem": -31.762,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/6515"
+},
+{
+"ad": "Huggins",
+"tur": "krater",
+"cap": 65.8,
+"boylam": -1.519,
+"enlem": -41.069,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/2574"
+},
+{
+"ad": "Lexell",
+"tur": "krater",
+"cap": 63.7,
+"boylam": -4.265,
+"enlem": -35.775,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/3370"
+},
+{
+"ad": "Apianus",
+"tur": "krater",
+"cap": 63.4,
+"boylam": 7.868,
+"enlem": -26.963,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/320"
+},
+{
+"ad": "Abulfeda",
+"tur": "krater",
+"cap": 62.2,
+"boylam": 13.91,
+"enlem": -13.865,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/23"
+},
+{
+"ad": "Guericke",
+"tur": "krater",
+"cap": 60.8,
+"boylam": -14.187,
+"enlem": -11.566,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/2268"
+},
+{
+"ad": "Bullialdus",
+"tur": "krater",
+"cap": 60.7,
+"boylam": -22.263,
+"enlem": -20.748,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/917"
+},
+{
+"ad": "Blanchinus",
+"tur": "krater",
+"cap": 59.9,
+"boylam": 2.444,
+"enlem": -25.316,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/770"
+},
+{
+"ad": "Wilkins",
+"tur": "krater",
+"cap": 59.4,
+"boylam": 19.577,
+"enlem": -29.58,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/6549"
+},
+{
+"ad": "Bonpland",
+"tur": "krater",
+"cap": 59.2,
+"boylam": -17.334,
+"enlem": -8.376,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/817"
+},
+{
+"ad": "Montes Spitzbergen",
+"tur": "sıradağ",
+"cap": 59.2,
+"boylam": -5.214,
+"enlem": 34.472,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/4017"
+},
+{
+"ad": "Eratosthenes",
+"tur": "krater",
+"cap": 58.8,
+"boylam": -11.316,
+"enlem": 14.474,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/1820"
+},
+{
+"ad": "Lade",
+"tur": "krater",
+"cap": 58.1,
+"boylam": 9.99,
+"enlem": -1.326,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/3223"
+},
+{
+"ad": "Murchison",
+"tur": "krater",
+"cap": 57.8,
+"boylam": -0.18,
+"enlem": 5.06,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/4072",
+"zip": {
+"cap": 57.8,
+"enlem": 5.07,
+"boylam": -0.21
+}
+},
+{
+"ad": "Thebit",
+"tur": "krater",
+"cap": 54.6,
+"boylam": -4.016,
+"enlem": -22.011,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/5957"
+},
+{
+"ad": "Réaumur",
+"tur": "krater",
+"cap": 52.0,
+"boylam": 0.7,
+"enlem": -2.4,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/5251",
+"zip": {
+"cap": 51.3,
+"enlem": -2.45,
+"boylam": 0.73
+}
+},
+{
+"ad": "Delambre",
+"tur": "krater",
+"cap": 51.5,
+"boylam": 17.394,
+"enlem": -1.939,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/1467"
+},
+{
+"ad": "Pallas",
+"tur": "krater",
+"cap": 49.5,
+"boylam": -1.653,
+"enlem": 5.476,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/4560"
+},
+{
+"ad": "Gyldén",
+"tur": "krater",
+"cap": 48.2,
+"boylam": 0.232,
+"enlem": -5.374,
+"usgs": "https://planetarynames.wr.usgs.gov/Feature/2300"
+}
+]
+}

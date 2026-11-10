@@ -237,6 +237,44 @@
         isabet.push({ x: p.x, y: p.y, oncelik: u.isikli ? 6 : 0, bilgi: '<b>' + Urania.kacis(u.ad) + '</b> · ' + (u.isikli ? 'Güneş ışığı alıyor' : 'gölgede, görünmez') + ' · ' + Urania.derece(u.alt) + ' yükseklik' });
       });
 
+      /* v47 Asteroit (Apophis, 13 Nisan 2029): gecenin yolu (yarım saatte bir saat etiketi), o anki konum ve 7×50 dürbün alanı */
+      let astYer = null;
+      if (d.asteroit && d.asteroit.yol && d.asteroit.yol.length > 1) {
+        const a = d.asteroit, aRenk = kir ? c.pirinc : c.uyari;
+        ctx.save(); ctx.strokeStyle = aRenk; ctx.lineWidth = 1.6; ctx.setLineDash([2, 4]);
+        ctx.beginPath(); let ilk = true, o = null;
+        a.yol.forEach(n => { if (n.alt < 0) { ilk = true; o = null; return; } const p = ekran(n.alt, n.az); if (ilk) { ctx.moveTo(p.x, p.y); ilk = false; } else ctx.lineTo(p.x, p.y); if (o) cizgiIsle(o.x, o.y, p.x, p.y, 3); o = p; });
+        ctx.stroke(); ctx.restore();
+        a.yol.forEach((n, i) => {
+          /* yarım saat sınırını geçen ilk düğüm (yol 5 dk adımla, başlangıcı gecenin başı) */
+          if (n.alt < 0 || !i || Math.floor(n.t / 18e5) === Math.floor(a.yol[i - 1].t / 18e5)) return;
+          const p = ekran(n.alt, n.az);
+          ctx.beginPath(); ctx.arc(p.x, p.y, 2, 0, Math.PI * 2); ctx.fillStyle = aRenk; ctx.fill();
+          etiket(Urania.saat(n.t), p.x, p.y, '500 ' + Math.max(10, W / 50) + 'px Plex, system-ui, sans-serif', aRenk, 2, 4);
+        });
+        if (a.an && a.an.alt > 0) {
+          const p = ekran(a.an.alt, a.an.az);
+          ctx.beginPath(); ctx.arc(p.x, p.y, 3.5, 0, Math.PI * 2); ctx.fillStyle = aRenk; ctx.fill();
+          /* 7×50 alanı: merkezi asteroit olan, açısal yarıçapı alan/2 olan gök dairesi ekrana izdüşürülür */
+          const v = (al, az) => { const x = al * Math.PI / 180, z = az * Math.PI / 180; return [Math.cos(x) * Math.sin(z), Math.cos(x) * Math.cos(z), Math.sin(x)]; };
+          const m = v(a.an.alt, a.an.az);
+          let u = [-m[1], m[0], 0]; const un = Math.hypot(u[0], u[1]) || 1; u = u.map(x => x / un);
+          const w = [m[1] * u[2] - m[2] * u[1], m[2] * u[0] - m[0] * u[2], m[0] * u[1] - m[1] * u[0]];
+          const ro = (a.alan || 6.4) / 2 * Math.PI / 180;
+          ctx.save(); ctx.strokeStyle = aRenk; ctx.lineWidth = 1.2; ctx.setLineDash([5, 4]); ctx.beginPath();
+          for (let k = 0; k <= 48; k++) {
+            const th = k / 48 * 2 * Math.PI, q = [0, 1, 2].map(i => m[i] * Math.cos(ro) + (u[i] * Math.cos(th) + w[i] * Math.sin(th)) * Math.sin(ro));
+            const e = ekran(Math.asin(Math.max(-1, Math.min(1, q[2]))) * 180 / Math.PI, (Math.atan2(q[0], q[1]) * 180 / Math.PI + 360) % 360);
+            if (k) ctx.lineTo(e.x, e.y); else ctx.moveTo(e.x, e.y);
+          }
+          ctx.stroke(); ctx.restore();
+          engeller.push({ x: p.x, y: p.y, r: 6 });
+          etiket(a.ad, p.x, p.y, '600 ' + Math.max(11, W / 42) + 'px Plex, system-ui, sans-serif', aRenk, 10, 7);
+          isabet.push({ x: p.x, y: p.y, oncelik: 6, bilgi: '<b>' + Urania.kacis(a.ad) + '</b> · yaklaşık ' + Urania.kadir(a.an.kadir) + ' kadir (±0,5) · ' + Urania.derece(a.an.alt) + ' yükseklik, ' + G.YON_UZUN[G.yon(a.an.az)] + '. Kesikli daire: 7×50 dürbünün alanı.' });
+          astYer = { x: p.x, y: p.y };   // testler için (yerlesim etiket yerleşiminde yenilenir)
+        }
+      }
+
       /* Güneş (gündüzse) */
       if (d.gunes.alt > -1) {
         const p = ekran(d.gunes.alt, d.gunes.az);
@@ -284,6 +322,7 @@
       const vp = d.vurgu && d.vurgu.alt > -1 ? ekran(d.vurgu.alt, d.vurgu.az) : null, rv = 15 * Math.max(olc, .85);
       if (vp) engeller.push({ x: vp.x, y: vp.y, r: rv + 3 });
       etiketleriYerlestir(etiketler, engeller, { kalabalik, HC, hs, hale: gokRenk });
+      yerlesim.asteroit = astYer;
       /* "Haritada göster": seçilen cisim çift halka ve dört çentikle işaretlenir (renk değil biçim; kırmızı modda da seçilir) */
       if (vp) {
         const p = vp;
