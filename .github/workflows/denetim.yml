@@ -7,6 +7,9 @@ on:
   schedule:
     - cron: '0 4 * * 6'
   workflow_dispatch:
+  # Denetimi elle denemenin ikinci yolu: deneme/denetim dalına gönderim (workflow_dispatch izni olmayan araçlar için)
+  push:
+    branches: ['deneme/denetim']
 permissions:
   contents: read
   issues: write
@@ -19,8 +22,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 180
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: '22'
       - name: PDF metni için poppler-utils

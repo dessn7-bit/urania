@@ -41,8 +41,22 @@ def bekle(anahtar, sn):
     _son[anahtar] = time.time()
 
 
-def al(url, anahtar='genel', aralik=1.0, zaman_asimi=40):
-    """→ (kod, içerik baytları, içerik türü). Kod None: bağlantı hatası / zaman aşımı."""
+def al(url, anahtar='genel', aralik=1.0, zaman_asimi=40, deneme=3):
+    """→ (kod, içerik baytları, içerik türü). Kod None: bağlantı hatası / zaman aşımı. 429 (hız sınırı) ya da 503 gelirse
+    Retry-After başlığına uyup (yoksa 15, 30, 60 sn) en çok `deneme` kez yeniden dener; sonra kodu olduğu gibi döndürür
+    ("doğrulanamadı" sayılır)."""
+    for i in range(deneme + 1):
+        kod, ham, tur, sonra = _al(url, anahtar, aralik, zaman_asimi)
+        if kod not in (429, 503) or i == deneme:
+            return kod, ham, tur
+        try:
+            b = min(300, int(sonra)) if sonra else 15 * 2 ** i
+        except ValueError:
+            b = 15 * 2 ** i
+        time.sleep(b)
+
+
+def _al(url, anahtar, aralik, zaman_asimi):
     bekle(anahtar, aralik)
     istek = urllib.request.Request(url, headers={'User-Agent': UA, 'Accept-Encoding': 'gzip'})
     try:
@@ -50,11 +64,11 @@ def al(url, anahtar='genel', aralik=1.0, zaman_asimi=40):
             ham = r.read()
             if r.headers.get('Content-Encoding') == 'gzip':
                 ham = gzip.decompress(ham)
-            return r.status, ham, r.headers.get('Content-Type', '')
+            return r.status, ham, r.headers.get('Content-Type', ''), None
     except urllib.error.HTTPError as h:
-        return h.code, b'', ''
+        return h.code, b'', '', h.headers.get('Retry-After') if h.headers else None
     except Exception as h:          # DNS, bağlantı, zaman aşımı
-        return None, str(h).encode()[:200], ''
+        return None, str(h).encode()[:200], '', None
 
 
 # ---------------------------------------------------------------- bağlantılar
