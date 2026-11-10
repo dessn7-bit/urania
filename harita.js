@@ -245,8 +245,9 @@
         ctx.beginPath(); let ilk = true, o = null;
         a.yol.forEach(n => { if (n.alt < 0) { ilk = true; o = null; return; } const p = ekran(n.alt, n.az); if (ilk) { ctx.moveTo(p.x, p.y); ilk = false; } else ctx.lineTo(p.x, p.y); if (o) cizgiIsle(o.x, o.y, p.x, p.y, 3); o = p; });
         ctx.stroke(); ctx.restore();
-        a.yol.forEach(n => {
-          if (n.alt < 0 || n.t.getUTCMinutes() % 30 !== 0) return;
+        a.yol.forEach((n, i) => {
+          /* yarım saat sınırını geçen ilk düğüm (yol 5 dk adımla, başlangıcı gecenin başı) */
+          if (n.alt < 0 || !i || Math.floor(n.t / 18e5) === Math.floor(a.yol[i - 1].t / 18e5)) return;
           const p = ekran(n.alt, n.az);
           ctx.beginPath(); ctx.arc(p.x, p.y, 2, 0, Math.PI * 2); ctx.fillStyle = aRenk; ctx.fill();
           etiket(Urania.saat(n.t), p.x, p.y, '500 ' + Math.max(10, W / 50) + 'px Plex, system-ui, sans-serif', aRenk, 2, 4);

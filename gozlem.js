@@ -1196,14 +1196,33 @@
     const j = V.enYakinJPL || {};
     const yon = a => G.YON_UZUN[G.yon(a)];
     const kd = x => U.sayi(x, 1).replace(/^-/, '−');
-    let yerel;
+    /* Görünürlük: en parlak anda nokta kaynak olarak (Gorunurluk, Crumey 2014) çıplak göz ve 7×50 için; hesaplanamazsa yalnız kadir yazılır */
+    const degerle = (p, alet, dogal) => {
+      if (!window.Gorunurluk) return null;
+      const or = ortamKur(p.zaman, p.alt, p.az); if (!or) return null;
+      or.alet = alet;
+      if (dogal) or.Vzen = Gorunurluk.cddenKadir(Gorunurluk.DOGAL_MCD / 1000);   // ışık kirliliği olmayan doğal gök (Falchi 2016: 22,0)
+      const r = Gorunurluk.degerlendir({ ad: 'Apophis', tur: 'yildiz', kadir: p.kadir, nokta: true }, or);
+      return r && r.etiket;
+    };
+    /* gökteki açısal hız (°/dk): 1 dk sonraki yerel konumla (veriden) */
+    const hiz = p => { const q = AP.yerel(V, new Date(p.zaman.getTime() + 60e3), gzl); if (!q) return 0; const r = Math.PI / 180;
+      return Math.acos(Math.min(1, Math.sin(p.dec * r) * Math.sin(q.dec * r) + Math.cos(p.dec * r) * Math.cos(q.dec * r) * Math.cos((p.ra - q.ra) * r))) / r; };
+    let yerel, gorulur = false;
     if (o.gorunur) {
       const p = o.enParlak;
-      const sonuk = p.kadir > durum.limitKadir;
-      yerel = `${U.kacis(k.ad)} için: karanlıkta ve ufkun 10° üstünde ${U.saat(o.ilk.zaman)}–${U.saat(o.son.zaman)} arası. En parlak ${U.saat(p.zaman)} civarı: ${U.derece(p.alt)} yükseklikte, ${yon(p.az)} (${U.sayi(p.az, 0)}°), yaklaşık ${kd(p.kadir)} kadir (±0,5). `
-        + (sonuk ? `Bu, ayarladığın gökte çıplak gözle görülen en sönük yıldızdan (${U.sayi(durum.limitKadir, 1)}) sönük: dürbün gerekir. ` : `Ayarladığın gökte (en sönük yıldız ${U.sayi(durum.limitKadir, 1)} kadir) çıplak gözle seçilebilir; yıldızlar arasında saatte birkaç derece kayan bir nokta olarak. `)
-        + (o.hedef && o.hedef.aci < G.DURBUN_ALANI / 2 ? `Saat ${U.saat(o.hedef.zaman)} civarında ${U.kacis(m44.ad)} (M44) ile arası ${U.sayi(o.hedef.aci, 1)}°: ikisi 7×50 dürbünün alanına (${U.sayi(G.DURBUN_ALANI, 1)}°) birlikte sığar. ` : '')
-        + (o.ayAlt < 0 ? 'Ay o sırada ufkun altında.' : `Ay o sırada ufkun üstünde (%${Math.round(o.ayOran * 100)} aydınlık).`);
+      const goz = degerle(p, Gorunurluk && Gorunurluk.CIPLAK), drb = degerle(p, Gorunurluk && Gorunurluk.DURBUN);
+      /* Model bu gök için karar veremiyorsa (belirsiz) en iyimser durum: doğal karanlık gökte 7×50 da görmüyorsa görülmez */
+      gorulur = drb === 'gorunur' || drb === 'zor' || (drb !== 'gorunmez' && degerle(p, Gorunurluk && Gorunurluk.DURBUN, true) !== 'gorunmez');
+      const alet = goz === 'gorunur' ? 'Bu gökte çıplak gözle seçilmesi beklenir (yaklaşık)' : goz === 'zor' ? 'Bu gökte çıplak gözle zor; 7×50 dürbünle rahat (yaklaşık)' : drb === 'gorunur' || drb === 'zor' ? 'Bu gökte çıplak gözle görülmez, 7×50 dürbünle seçilir (yaklaşık)' : '';
+      if (gorulur) {
+        yerel = `${U.kacis(k.ad)} için: karanlıkta ve ufkun 10° üstünde ${U.saat(o.ilk.zaman)}–${U.saat(o.son.zaman)} arası. En parlak ${U.saat(p.zaman)} civarı: ${U.derece(p.alt)} yükseklikte, ${yon(p.az)} (${U.sayi(p.az, 0)}°), yaklaşık ${kd(p.kadir)} kadir (±0,5). `
+          + (alet ? alet + '. ' : '') + `O sırada yıldızlara göre dakikada ${U.sayi(hiz(p), 2)}° kayar: birkaç dakikada yeri değişen bir nokta. `
+          + (o.hedef && o.hedef.aci < G.DURBUN_ALANI / 2 ? `Saat ${U.saat(o.hedef.zaman)} civarında ${U.kacis(m44.ad)} (M44) ile arası ${U.sayi(o.hedef.aci, 1)}°: ikisi 7×50 dürbünün alanına (${U.sayi(G.DURBUN_ALANI, 1)}°) birlikte sığar. ` : '')
+          + (o.ayAlt < 0 ? 'Ay o sırada ufkun altında.' : `Ay o sırada ufkun üstünde (%${Math.round(o.ayOran * 100)} aydınlık).`);
+      } else {
+        yerel = `${U.kacis(k.ad)} için: bu geçiş buradan görülmüyor. Apophis buradan karanlıkta ufkun 10° üstüne yalnız yaklaşık ${kd(p.kadir)} kadirken çıkıyor (en çok ${U.derece(p.alt)}); ${drb === 'gorunmez' ? 'bu gökte' : 'karanlık bir gökte bile'} 7×50 dürbünle seçilmez. Görünüş Avrupa, Afrika ve Asya'nın batısından (ESA, NASA).`;
+      }
     } else {
       yerel = `${U.kacis(k.ad)} için: bu geçiş buradan görülmüyor. Apophis, en yakın geçişin gecesinde gök karanlıkken ufkun 10° üstüne çıkmıyor (ya ufkun altında ya da gündüz). Görünüş Avrupa, Afrika ve Asya'nın batısından (ESA, NASA).`;
     }
@@ -1214,7 +1233,7 @@
         <p class="buyuk-bas"><b>99942 Apophis Dünya'nın yanından geçiyor</b> <span class="rozet">${U.kacis(sayac)}</span></p>
         <p class="kucuk">En yakın an: ${o.yakin.zaman.getUTCFullYear()}, ${U.kacis(U.gunHafta(o.yakin.zaman))}, saat ${U.saat(o.yakin.zaman)}: Dünya'nın merkezinden ${U.sayi(j.uzaklikKm || o.yakin.km, 0)} km (yüzeyden yaklaşık ${U.sayi(32000, 0)} km; yer eşzamanlı uydulardan yakın). Bu büyüklükte bir asteroidin bu kadar yaklaşması ortalama birkaç bin yılda bir olur (NASA).</p>
         <p class="kucuk">${yerel}</p>
-        ${o.gorunur ? `<div class="cip-grup"><button type="button" class="dugme" id="gkApophisHarita">O geceyi haritada göster</button></div>` : ''}
+        ${gorulur ? `<div class="cip-grup"><button type="button" class="dugme" id="gkApophisHarita">O geceyi haritada göster</button></div>` : ''}
       </div>
       <p class="kaynak">Konum: JPL Horizons (yörünge çözümü ${U.kacis(V.yorungeCozumu || '')}, ${U.kacis(V.horizonsUretim || '')} üretimi) yer merkezli vektörlerinden cihazda, paralaks dahil; Horizons'un yerel tablosuyla 0,05° içinde. En yakın an ve uzaklık: JPL SBDB yakın geçiş verisi (${U.kacis(j.zamanTDB || '')} TDB, 3σ ${U.sayi(j.enAzKm || 0, 0)}–${U.sayi(j.enCokKm || 0, 0)} km). Parlaklık H–G modeliyle (H ${U.sayi(V.H, 2)}, G ${U.sayi(V.G, 2)}), belirsizlik ±0,5 kadir. Asteroitler dersi: <a href="#ders/d19">20. ders</a>.</p>`;
     const b = kap.querySelector('#gkApophisHarita');
