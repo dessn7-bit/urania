@@ -97,7 +97,7 @@ test('İş akışları: kapı sırası, izinler, yalnız main; denetim zamanı h
   expect([...sira].sort((a, b) => a - b)).toEqual(sira);
   expect(y).toMatch(/branches: \[main\]/);
   expect(y).toMatch(/permissions:\n {2}contents: write\n {2}issues: write\n/);
-  expect(y).toMatch(/if: success\(\) && github\.ref == 'refs\/heads\/main'\n\s+run: git push --force origin "\$\{GITHUB_SHA\}:refs\/heads\/gh-pages"/);
+  expect(y).toMatch(/if: success\(\) && github\.ref == 'refs\/heads\/main' && \(github\.event_name == 'push' \|\| inputs\.secim == ''\)\n\s+run: git push --force origin "\$\{GITHUB_SHA\}:refs\/heads\/gh-pages"/);
   expect(y).toMatch(/if: failure\(\)[\s\S]*kapi_issue\.sh ac/);
   expect(d).toMatch(/cron: '0 4 \* \* 6'/);        // cumartesi 04.00 UTC = 07.00 TSİ < 09.35 TSİ haber işi
   expect(d).toMatch(/workflow_dispatch/);

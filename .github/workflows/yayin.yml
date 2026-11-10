@@ -6,6 +6,11 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+    inputs:
+      secim:
+        description: "Yalnız bu test dosyaları (boş: hepsi). Seçimli koşu hiçbir zaman yayınlamaz."
+        required: false
+        default: ''
 permissions:
   contents: write
   issues: write
@@ -42,18 +47,18 @@ jobs:
           CI: '1'
         run: |
           set -o pipefail
-          npx playwright test --trace off --reporter=line 2>&1 | tee test-cikti.txt
-      # Yalnız main: deneme dalında elle tetiklenen çalışma (workflow_dispatch) gh-pages'e asla dokunmaz
+          npx playwright test ${{ inputs.secim }} --trace off --reporter=line 2>&1 | tee test-cikti.txt
+      # Yalnız main ve yalnız bütün testler: deneme dalında ya da test seçimiyle elle tetiklenen çalışma gh-pages'e asla dokunmaz
       - name: Yayınla (gh-pages = main)
-        if: success() && github.ref == 'refs/heads/main'
+        if: success() && github.ref == 'refs/heads/main' && (github.event_name == 'push' || inputs.secim == '')
         run: git push --force origin "${GITHUB_SHA}:refs/heads/gh-pages"
       - name: Açık "yayın durdu" kayıtlarını kapat
-        if: success() && github.ref == 'refs/heads/main'
+        if: success() && github.ref == 'refs/heads/main' && (github.event_name == 'push' || inputs.secim == '')
         env:
           GH_TOKEN: ${{ github.token }}
         run: bash araclar/kapi_issue.sh kapat
       - name: "Yayın durdu: kayıt aç"
-        if: failure()
+        if: failure() && (github.event_name == 'push' || inputs.secim == '')
         env:
           GH_TOKEN: ${{ github.token }}
           SONUC_JSON: ${{ steps.json.outcome }}

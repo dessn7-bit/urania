@@ -20,7 +20,11 @@ module.exports = defineConfig({
     proxy: { server: 'http://127.0.0.1:9', bypass: '127.0.0.1,localhost' },
     /* Windows'ta Chromium yazıları ClearType (LCD) yumuşatmasıyla çizer: kırmızı yazının kenarına mavi/yeşil piksel ekler,
        kırmızı mod piksel testleri bunu sızıntı sayar. Yalnız Windows'ta kapatılır; Linux/macOS'ta bayrak eklenmez, davranış aynı kalır. */
-    ...(process.platform === 'win32' ? { launchOptions: { args: ['--disable-lcd-text'] } } : {})
+    ...(process.platform === 'win32' ? { launchOptions: { args: ['--disable-lcd-text'] } } : {}),
+    /* Actions'taki (Linux, GPU'suz) Chromium'da yazı yumuşatma ve renk profili yerel makineden farklı: kırmızı mod piksel
+       testleri yazı kenarında renkli piksel, ders çizimleri 1 px'ten fazla taşma gördü (v49 ilk kapı koşusu). CI'de LCD yazı
+       yumuşatması kapatılır, renk profili sRGB'ye sabitlenir, yazı ipuçlaması (hinting) kapatılır. */
+    ...(process.env.CI ? { launchOptions: { args: ['--disable-lcd-text', '--force-color-profile=srgb', '--font-render-hinting=none'] } } : {})
   },
   /* v49: iki proje. "genel": service worker kapalı (testler ağı page.route ile taklit eder). "cevrimdisi": service worker
      serbest; yalnız testler/cevrimdisi.spec.js (önbellek, çevrimdışı açılış, sürüm değişince eski önbelleğin silinmesi). */
