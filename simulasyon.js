@@ -41,6 +41,7 @@
     { id: 'evreler', grup: 'Ay ve gezegenler', ad: 'Ay evreleri ve tutulmalar', oz: 'Ay neden hilal, yarım ya da dolunay görünür; tutulma neden her ay olmaz?' },
     { id: 'gecis', grup: 'Ay ve gezegenler', ad: 'Ötegezegen geçişi', oz: 'Gezegen yıldızının önünden geçince ışık biraz azalır: uzak gezegenler böyle bulunur.' },
     { id: 'yasanabilir', grup: 'Ay ve gezegenler', modul: true, ad: 'Yaşanabilir bölge', oz: 'Yıldız ne kadar parlaksa sıvı suyun mümkün olduğu kuşak o kadar uzakta: gezegenini yerleştir, sıcaklığını gör.' },
+    { id: 'gezegenyolu', grup: 'Ay ve gezegenler', modul: true, ad: 'Gezegen yolu', oz: 'Mars ve Jüpiter neden bir süre geri gider? Gezegenin yıldızlar arasındaki yolunu gün gün çiz, duraklamaları ve karşı konumu gör.' },
     { id: 'ortme', grup: 'Yıldızlar ve kara delikler', modul: true, ad: 'Örten çift yıldız', oz: 'İki yıldız birbirinin önünden geçince ışık düşer: Algol\'ün "göz kırpması" ve ışık eğrisinden yıldızları tartmak.' },
     { id: 'yildiz', grup: 'Yıldızlar ve kara delikler', ad: 'Yıldızın hayatı', oz: 'Yıldızın kütlesini seç: rengi, parlaklığı, ne kadar yaşayacağı ve nasıl öleceği buna bağlı.' },
     { id: 'karadelik', grup: 'Yıldızlar ve kara delikler', ad: 'Kara deliğe yaklaşmak', oz: 'Yaklaştıkça olay ufku, yavaşlayan saatin ve seni boyuna geren çekim.' },
