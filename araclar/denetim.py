@@ -288,14 +288,68 @@ def normal(s):
     return re.sub(r'[^a-z0-9]+', '', s)
 
 
+def notsuz(a):
+    """Alıntıya bizim eklediğimiz Türkçe açıklamaları at: Türkçe harf içeren ya da "Sayfa:", "sütunlar" ile başlayan parantezler."""
+    return re.sub(r'\((?:[^()]*[çğıöşüÇĞİÖŞÜ][^()]*|\s*(?:Sayfa|sütunlar|not)\b[^()]*)\)', ' ', a)
+
+
+def sozcukler(s):
+    """Harf ve rakam dizileri (sayılar harflerden ayrılır): '10^26' → ['10', '26'], 'eff⊙' → ['eff']."""
+    s = html.unescape(re.sub(r'<[^>]+>', ' ', s))
+    s = unicodedata.normalize('NFKD', s)
+    s = ''.join(c for c in s if not unicodedata.combining(c)).lower()
+    return re.findall(r'[a-z]+|[0-9]+', s)
+
+
+def alinti_var(a, n, sz, bosluk=6):
+    """Alıntı sayfada mı: (1) parça parça birebir (yalnız harf/rakam, sıra korunur) ya da (2) sözcükler aynı sırayla ve
+    aralarında en çok `bosluk` fazladan sözcükle (dipnot numarası [1], PDF'de satır sonu/alt simge, tablo hücresi ayrımı gibi
+    tasarım farklarına dayanıklı). Sayı ya da sözcük değişirse ikisi de tutmaz."""
+    a = notsuz(a)
+    parcalar = [p for p in re.split(r'…|\.\.\.|\[…\]| / ', a) if len(normal(p)) >= 6]
+    if not parcalar:
+        return True
+    if all(normal(p) in n for p in parcalar):
+        return True
+    konum = {}
+    for i, w in enumerate(sz):
+        konum.setdefault(w, []).append(i)
+    import bisect
+    for p in parcalar:
+        ws = sozcukler(p)
+        if not ws:
+            continue
+        bulundu = False
+        for bas in konum.get(ws[0], []):
+            i, ok = bas, True
+            for w in ws[1:]:
+                ls = konum.get(w, [])
+                j = bisect.bisect_right(ls, i)
+                if j == len(ls) or ls[j] - i > bosluk + 1:
+                    ok = False
+                    break
+                i = ls[j]
+            if ok:
+                bulundu = True
+                break
+        if not bulundu:
+            return False
+    return True
+
+
 def sayfa_metni(ham, tur):
     if 'pdf' in tur or ham[:5] == b'%PDF-':
         try:
-            r = subprocess.run(['pdftotext', '-layout', '-', '-'], input=ham, capture_output=True, timeout=120)
+            r = subprocess.run(['pdftotext', '-', '-'], input=ham, capture_output=True, timeout=120)
             return r.stdout.decode('utf-8', 'replace') if r.returncode == 0 else None
         except (OSError, subprocess.TimeoutExpired):
             return None
     t = ham.decode('utf-8', 'replace')
+    if 'json' in tur or t.lstrip()[:1] in '[{':     # ör. sozluk.gov.tr/gts JSON döndürür (\u kaçışlı)
+        try:
+            return ' '.join(_metinler(json.loads(t)))
+        except ValueError:
+            pass
     return re.sub(r'<(script|style)\b.*?</\1>', ' ', t, flags=re.S | re.I)
 
 
@@ -305,7 +359,8 @@ TARIH_RE = re.compile(r'(?:last\s+updated|page\s+last\s+updated|last\s+modified|
 def alinti(kl):
     os.makedirs(kl, exist_ok=True)
     kay = alinti_kayitlari()
-    taban = json.load(open(ALINTI_TABAN, encoding='utf-8'))['kaynaklar'] if os.path.exists(ALINTI_TABAN) else {}
+    T = json.load(open(ALINTI_TABAN, encoding='utf-8')) if os.path.exists(ALINTI_TABAN) else {}
+    taban, dinamik = T.get('kaynaklar', {}), T.get('dinamik', [])
     gruplar = {}
     for f, u, a in kay:
         gruplar.setdefault(u, []).append((f, a))
@@ -326,10 +381,12 @@ def alinti(kl):
         if metin is None:
             dogrulanamadi.append({'url': u, 'neden': 'PDF metni çıkarılamadı'})
             continue
-        n = normal(metin)
+        if any(host == d or host.endswith('.' + d) for d in dinamik):
+            dogrulanamadi.append({'url': u, 'neden': 'sayfa içeriği betikle yükleniyor (alinti_taban.json "dinamik")'})
+            continue
+        n, sz = normal(metin), sozcukler(metin)
         for f, a in gruplar[u]:
-            parcalar = [normal(p) for p in re.split(r'…|\.\.\.|\[…\]', a) if len(normal(p)) >= 6]
-            if parcalar and not all(p in n for p in parcalar):
+            if not alinti_var(a, n, sz):
                 bulgular.append({'url': u, 'tur': 'alinti_yok', 'ayrinti': a[:160], 'dosyalar': [f]})
         m = TARIH_RE.search(re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', ' ', metin))))
         if m:
