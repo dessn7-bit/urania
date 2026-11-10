@@ -288,6 +288,10 @@ def normal(s):
     return re.sub(r'[^a-z0-9]+', '', s)
 
 
+def alinti_imza(a):
+    return hashlib.sha1(normal(a).encode()).hexdigest()[:12]
+
+
 def notsuz(a):
     """Alıntıya bizim eklediğimiz Türkçe açıklamaları at: Türkçe harf içeren ya da "Sayfa:", "sütunlar" ile başlayan parantezler."""
     return re.sub(r'\((?:[^()]*[çğıöşüÇĞİÖŞÜ][^()]*|\s*(?:Sayfa|sütunlar|not)\b[^()]*)\)', ' ', a)
@@ -361,6 +365,8 @@ def alinti(kl):
     kay = alinti_kayitlari()
     T = json.load(open(ALINTI_TABAN, encoding='utf-8')) if os.path.exists(ALINTI_TABAN) else {}
     taban, dinamik = T.get('kaynaklar', {}), T.get('dinamik', [])
+    bilinen = {(x['url'], x['imza']) for x in T.get('bilinen_eksik', [])}
+    bilinen_bulgu = []
     gruplar = {}
     for f, u, a in kay:
         gruplar.setdefault(u, []).append((f, a))
@@ -387,15 +393,16 @@ def alinti(kl):
         n, sz = normal(metin), sozcukler(metin)
         for f, a in gruplar[u]:
             if not alinti_var(a, n, sz):
-                bulgular.append({'url': u, 'tur': 'alinti_yok', 'ayrinti': a[:160], 'dosyalar': [f]})
+                b = {'url': u, 'tur': 'alinti_yok', 'ayrinti': a[:160], 'dosyalar': [f], 'imza': alinti_imza(a)}
+                (bilinen_bulgu if (u, b['imza']) in bilinen else bulgular).append(b)
         m = TARIH_RE.search(re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', ' ', metin))))
         if m:
             tarihler[u] = m.group(1)
             if u in taban and taban[u] and taban[u] != m.group(1):
                 bulgular.append({'url': u, 'tur': 'tarih_degisti', 'ayrinti': f"sayfa tarihi {taban[u]} → {m.group(1)}", 'dosyalar': sorted({f for f, _ in gruplar[u]})})
-    rapor = {'kaynak': len(gruplar), 'alinti': len(kay), 'bulgular': bulgular, 'dogrulanamadi': dogrulanamadi, 'tarihler': tarihler}
+    rapor = {'kaynak': len(gruplar), 'alinti': len(kay), 'bulgular': bulgular, 'bilinen': bilinen_bulgu, 'dogrulanamadi': dogrulanamadi, 'tarihler': tarihler}
     json.dump(rapor, open(os.path.join(kl, 'alinti_sonuc.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
-    md = ['## Kaynak alıntıları', f"{len(gruplar)} kaynak, {len(kay)} alıntı. **Değişen kaynak bulgusu: {len(bulgular)}**; doğrulanamadı: {len(dogrulanamadi)}."]
+    md = ['## Kaynak alıntıları', f"{len(gruplar)} kaynak, {len(kay)} alıntı. **Yeni değişen kaynak bulgusu: {len(bulgular)}**; tabanda bilinen (askıda, arastirma/denetim/alinti_taban.json): {len(bilinen_bulgu)}; doğrulanamadı: {len(dogrulanamadi)}."]
     if bulgular:
         md.append('\n| Kaynak | Bulgu | Ayrıntı | Dosya |\n|---|---|---|---|')
         md += [f"| {b['url']} | {b['tur']} | {b['ayrinti'].replace('|', '/')} | {', '.join(b['dosyalar'])} |" for b in bulgular]
