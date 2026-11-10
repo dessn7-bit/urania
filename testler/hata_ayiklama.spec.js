@@ -5,7 +5,7 @@
      Mars 2027-02-19 15:50:55 UT.
      Taygeta örtmesi, İstanbul: kayboluş 2026-12-21 23:22 UT, beliriş 23:46 UT; Asterope beliriş 2026-12-22 00:17 UT. */
 const { test, expect } = require('@playwright/test');
-const { celestrak, ISTASYON, SON30 } = require('./yardim');
+const { celestrak, SON30 } = require('./yardim');
 const G = require('../gok.js');
 const Ortme = require('../ortme.js');
 const Plan = require('../plan.js');

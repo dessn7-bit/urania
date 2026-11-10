@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="tr">
 <head>
 <meta charset="utf-8">
@@ -21,10 +21,10 @@
      (yeşil ve mavi kanal sıfır). Kanvaslar zaten kırmızı paletle çizildiği için kırmızı kanal olduğu gibi kalır,
      yeşil ve mavi ona eklenir (255'te kırpılır): palet rengi #E63A28 → #FF0000, siyahta 5,25:1. Eski matris
      (0,40 0,45 0,15) kırmızıyı ikinci kez karartıyordu (#E63A28 → #7C0000, etiketler 1,86:1). -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><filter id="kirmiziSuz" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="1 0.5 0.2 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0"/></filter></svg>
+<svg class="suzgec-svg" width="0" height="0" aria-hidden="true" focusable="false"><filter id="kirmiziSuz" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="1 0.5 0.2 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0"/></filter></svg>
 <header class="ust">
   <a class="marka" href="#gok" aria-label="Urania, ana sayfa">Urania</a>
-  <nav class="sekmeler" aria-label="Bölümler">
+  <nav class="sekmeler" aria-label="Bölümler (üst menü)">
     <a href="#gok" data-sekme="gok">Gökyüzü</a>
     <a href="#deney" data-sekme="deney">Deneyler</a>
     <a href="#ders" data-sekme="ders">Dersler</a>
@@ -48,7 +48,7 @@
   <section id="b-tani" class="bolum" data-bolum="tani" hidden></section>
 </main>
 
-<nav class="alt-sekmeler" aria-label="Bölümler">
+<nav class="alt-sekmeler" aria-label="Bölümler (alt menü)">
   <a href="#gok" data-sekme="gok"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M7 9l3 2 4-3 3 5M9 16l3-2"/></svg><span>Gökyüzü</span></a>
   <a href="#deney" data-sekme="deney"><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="12" rx="10" ry="4.5"/><circle cx="12" cy="12" r="2.4"/><circle cx="21" cy="11" r="1.2"/></svg><span>Deneyler</span></a>
   <a href="#ders" data-sekme="ders"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h6a2 2 0 012 2v12a2 2 0 00-2-2H4zM20 5h-6a2 2 0 00-2 2v12a2 2 0 012-2h6z"/></svg><span>Dersler</span></a>

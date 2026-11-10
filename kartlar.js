@@ -35,7 +35,6 @@
     return e && typeof e === 'object' && Number.isInteger(e.k) && e.k >= 1 && e.k <= ARALIK_GUN.length && isFinite(e.z) &&
       e.z <= Date.now() + (ARALIK_GUN[ARALIK_GUN.length - 1] + 2) * 86400e3 ? e : null;
   }
-  function gunBasi(t) { const d = new Date(t); d.setHours(0, 0, 0, 0); return d.getTime(); }
   /* N gün sonrasının başı, takvimle (yaz saati geçişinde 23/25 saatlik gün bir gün erken soru doğurmasın) */
   function gunSonra(t, n) { const d = new Date(t); d.setHours(0, 0, 0, 0); d.setDate(d.getDate() + n); return d.getTime(); }
 

@@ -8,7 +8,7 @@ const { celestrak, havaServisleri, HAVA_FIX } = require('./yardim');
 const fs = require('fs');
 const path = require('path');
 
-const { oku, json, ENS, MDL, AQ, KP } = HAVA_FIX;
+const { json, ENS, MDL, AQ, KP } = HAVA_FIX;
 const SABIT_AN = HAVA_FIX.AN;
 
 const servisler = havaServisleri;

@@ -18,7 +18,6 @@
     gozBebegi: (v => (Number.isFinite(v) && v >= 2 && v <= 9 ? v : null))(Number(U.oku('gozBebegi', null)))
   };
   let el = null;
-  let canliSayac = null;
 
   function kadirAciklama(m) {
     if (m <= 2.5) return 'yoğun şehir ışığı';
@@ -468,10 +467,6 @@
     return Gorunurluk.gokBasucuSec({ sqmElle: durum.sqmElle, enlem: k.enlem, boylam: k.boylam, limitKadir: durum.limitKadir, p: gozBebegi() });
   }
   function gozBebegi() { return durum.gozBebegi != null ? durum.gozBebegi : Gorunurluk.gozBebegi(); }
-  function sonumlemeK() {
-    const aod = window.HavaKart && Number.isFinite(HavaKart.sonAod) ? HavaKart.sonAod : null;
-    return Gorunurluk.sonumleme({ yukseklik: U.konum().yukseklik || 0, aod });
-  }
   /* Kişisel ayar (Defter "Model ve sen" kartından, yalnız kullanıcı onayladıysa; kadir kayması) */
   function kisiselKayma() { const v = Number(U.oku('gorKayma', 0)); return Number.isFinite(v) && Math.abs(v) <= 3 ? v : 0; }   // tavan 3 kadir: Urania'nın seçimi (öneri aralığı ±2; bozuk depo değerine karşı)
   /* t anında alt/az yönüne bakan gözlemcinin ortamı (Gorunurluk.ortamHazirla: Ay, sönümleme) */
@@ -1604,7 +1599,7 @@
     geceHesapla();
     levhaCiz();
     gorunurlukBaslat();
-    canliSayac = setInterval(() => {
+    setInterval(() => {
       if (!el.hidden) issYaz(false); // 10 dakikada bir: geçmiş geçişler düşer, alınamamış veri yeniden denenir (uydu.js 2 saat bekletir)
       /* Bulut tahmini saatte bir yenilenir (önbellek 1 saat taze; tazeyse ağa gidilmez) */
       if (!el.hidden && durum.gece && Date.now() - (durum.havaZaman || 0) > 3600e3) havaYaz();

@@ -333,7 +333,6 @@
     if (!saatler && !modeller) { kap.hidden = true; kap.innerHTML = ''; return; }
     let html = '<h3 class="hk-bas okunur" data-ses="Tahmin güveni.">Tahmin güveni</h3>';
     if (saatler) {
-      const top = saatler[0].toplam;
       const enIyi = saatler.reduce((a, b) => (b.acik / b.toplam > a.acik / a.toplam ? b : a));
       const ort = saatler.reduce((s, x) => s + x.acik / x.toplam, 0) / saatler.length;
       const ozetMetin = `${U.saat(enIyi.t)}: ${enIyi.toplam} senaryodan ${enIyi.acik}'${ekI(enIyi.acik)} açık diyor`;

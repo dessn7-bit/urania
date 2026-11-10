@@ -76,7 +76,7 @@ test('Hesaplar: kaynaklı referans değerleri', async ({ page }) => {
   expect(r.tam).toEqual([14.2, 11.2, 7]);
 });
 
-test('Veri: yıldızlar kaynaklı, Ülker ve kemer dolu; ön ayarlar belgedeki alanı verir', async ({ page, request }) => {
+test('Veri: yıldızlar kaynaklı, Ülker ve kemer dolu; ön ayarlar belgedeki alanı verir', async ({ request }) => {
   const j = await (await request.get('/veri/deney/durbun.json')).json();
   const v = j.veri;
   expect(v.hedefler.map(h => h.id)).toEqual(['ulker', 'kemer']);

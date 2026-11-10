@@ -200,12 +200,6 @@ async function suruklemeCalisiyor(page) {
   await page.waitForTimeout(100);
   return once !== await page.locator('#arMerkez .ar-yon').innerText();
 }
-/* Tek tür olay yolla (göreli/mutlak ayrımı için) */
-async function olayYolla(page, tur, alpha, beta, gamma, n) {
-  await page.evaluate(([tur, a, b, g, n]) => {
-    for (let i = 0; i < (n || 30); i++) window.dispatchEvent(new DeviceOrientationEvent(tur, { alpha: a, beta: b, gamma: g, absolute: tur === 'deviceorientationabsolute' }));
-  }, [tur, alpha, beta, gamma, n]);
-}
 /* iOS olayı: DeviceOrientationEvent kurucusu webkitCompassHeading almaz; özellikler elle tanımlanır */
 async function iosOlay(page, alpha, beta, gamma, baslik, n) {
   await page.evaluate(([a, b, g, h, n]) => {

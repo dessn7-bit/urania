@@ -9,7 +9,7 @@ const { test, expect } = require('@playwright/test');
 const fs = require('fs');
 const path = require('path');
 const zlib = require('zlib');
-const { disAgiKes, celestrak, havaSessiz, vsxServisi, kok } = require('./yardim');
+const { disAgiKes, celestrak, havaSessiz, kok } = require('./yardim');
 const G = require('../gorunurluk.js');
 
 const META = JSON.parse(fs.readFileSync(path.join(kok, 'veri', 'gok_parlakligi.json'), 'utf8'));
