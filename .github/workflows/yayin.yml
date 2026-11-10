@@ -53,6 +53,20 @@ jobs:
       - name: Yayınla (gh-pages = main)
         if: success() && github.ref == 'refs/heads/main' && (github.event_name == 'push' || inputs.secim == '')
         run: git push --force origin "${GITHUB_SHA}:refs/heads/gh-pages"
+      # GitHub Pages gh-pages'ten kendi iş akışıyla yayınlar (pages build and deployment); o adım GitHub tarafında takılabilir
+      # (2026-11-10'da bir kez "syncing_files" zaman aşımı). Canlı sw.js'te bu commit'in SURUM'u 20 dk içinde görünmezse kapı
+      # düşer ve kayıt açılır. Depo herkese açık; yalnız sürüm adı günlüğe yazılır.
+      - id: canli
+        name: Canlı sürümü doğrula
+        if: success() && github.ref == 'refs/heads/main' && (github.event_name == 'push' || inputs.secim == '')
+        run: |
+          surum=$(grep -o "const SURUM = '[^']*'" sw.js | cut -d"'" -f2)
+          adres="https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/sw.js"
+          for i in $(seq 1 40); do
+            if curl -fsS -A "urania-yayin/1.0 (+https://github.com/${GITHUB_REPOSITORY})" "${adres}?t=$(date +%s)" | grep -q "const SURUM = '${surum}'"; then echo "canlı: ${surum}"; exit 0; fi
+            sleep 30
+          done
+          echo "20 dakikada canlı sitede ${surum} görünmedi"; exit 1
       - name: Açık "yayın durdu" kayıtlarını kapat
         if: success() && github.ref == 'refs/heads/main' && (github.event_name == 'push' || inputs.secim == '')
         env:
@@ -66,5 +80,6 @@ jobs:
           SONUC_ESLINT: ${{ steps.eslint.outcome }}
           SONUC_HTML: ${{ steps.html.outcome }}
           SONUC_TEST: ${{ steps.test.outcome }}
+          SONUC_CANLI: ${{ steps.canli.outcome }}
           CALISMA_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: bash araclar/kapi_issue.sh ac

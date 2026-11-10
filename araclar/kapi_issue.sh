@@ -15,13 +15,17 @@ if [ "${1:-}" = "kapat" ]; then
   exit 0
 fi
 dusen=""
-for c in "JSON:${SONUC_JSON:-}" "ESLint:${SONUC_ESLINT:-}" "html-validate:${SONUC_HTML:-}" "Playwright:${SONUC_TEST:-}"; do
+for c in "JSON:${SONUC_JSON:-}" "ESLint:${SONUC_ESLINT:-}" "html-validate:${SONUC_HTML:-}" "Playwright:${SONUC_TEST:-}" "Pages dağıtımı:${SONUC_CANLI:-}"; do
   ad="${c%%:*}"; s="${c#*:}"
   [ "$s" = "failure" ] && dusen="${dusen}${dusen:+, }${ad}"
 done
 [ -z "$dusen" ] && dusen="kurulum adımı"
 {
-  echo "Yayın durdu: ${GITHUB_REF_NAME:-main} dalındaki **${KISA}** denetimden geçmedi, canlı site (gh-pages) değiştirilmedi."
+  if [ "${SONUC_CANLI:-}" = "failure" ]; then
+    echo "Yayın tamamlanmadı: **${KISA}** bütün denetimlerden geçti ve gh-pages güncellendi, ama 20 dakika içinde canlı sitede yeni sürüm görünmedi (GitHub Pages dağıtımı takıldı). Repository → Actions → \"pages build and deployment\" yeniden çalıştırılabilir ya da main'e bir sonraki gönderim yeniden dener."
+  else
+    echo "Yayın durdu: ${GITHUB_REF_NAME:-main} dalındaki **${KISA}** denetimden geçmedi, canlı site (gh-pages) değiştirilmedi."
+  fi
   echo
   echo "- Commit: ${KISA} — $(git log -1 --format=%s "$SHA" | head -c 200)"
   echo "- Düşen denetim: ${dusen}"
