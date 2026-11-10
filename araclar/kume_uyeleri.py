@@ -250,16 +250,24 @@ def main(argv):
         else:
             ls, ham = uyeler(sid)
             aday = capraz(ls[:ADAY])
-            # v47 (doğrulayıcı bulgusu): üye hedefin görünen boyutu içinde olmalı (hedefler.json 'boyut' büyük ekseninin yarısı);
-            # ör. HD 14443 NGC 884'ün merkezinde, NGC 869'un merkezine 0,41° — iki kümeyi birlikte inceleyen makale ikisine de bağlıyor.
+            # v47 (doğrulayıcı bulgusu): bir yıldız hedefin görünen boyutunun (hedefler.json 'boyut' büyük ekseninin yarısı) DIŞINDA
+            # ve başka bir hedef kümenin merkezine daha yakınsa o kümenindir, bu listeden çıkar. Ör. HD 14443 NGC 884'ün merkezinde
+            # (0,05°), NGC 869'un merkezine 0,41°; iki kümeyi birlikte inceleyen makale ikisine de bağlıyor. Yalnız boyut dışı olmak
+            # yetmez: hedefler.json boyutları çekirdek boyutudur, kümenin parlak üyelerinin bir kısmı (ör. M6, M35) dışında kalır.
             r = yaricap_der(h)
             disarda = []
-            if r:
-                for y in aday:
-                    if y.get('ra') is not None:
-                        y['merkezeDk'] = round(acisal(h['ra'], h['dec'], y['ra'], y['dec']) * 60, 1)
-                disarda = [y['ad'] for y in aday if y.get('merkezeDk') is not None and y['merkezeDk'] > r * 60]
-                aday = [y for y in aday if y['ad'] not in disarda]
+            for y in aday:
+                if y.get('ra') is None:
+                    continue
+                y['merkezeDk'] = round(acisal(h['ra'], h['dec'], y['ra'], y['dec']) * 60, 1)
+                if r and y['merkezeDk'] > r * 60:
+                    for oid, _ in KUMELER:
+                        if oid == hid:
+                            continue
+                        o = hedefler[oid]
+                        if acisal(o['ra'], o['dec'], y['ra'], y['dec']) * 60 < y['merkezeDk']:
+                            disarda.append(y['ad']); y['baskaKume'] = oid; break
+            aday = [y for y in aday if y['ad'] not in disarda]
             aday.sort(key=lambda y: y['V'])
             sonuc[hid] = {'simbad': sid, 'uyeler': aday[:EN_COK], 'toplam': len(ls), 'hamSatir': ham, 'denetlenenAday': len(aday) + len(disarda),
                           'boyutDisi': disarda, 'yaricapDk': round(r * 60, 1) if r else None,
