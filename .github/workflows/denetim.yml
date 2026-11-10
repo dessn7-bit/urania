@@ -7,6 +7,9 @@ on:
   schedule:
     - cron: '0 4 * * 6'
   workflow_dispatch:
+  # Denetimi elle denemenin ikinci yolu: deneme/denetim dalına gönderim (workflow_dispatch izni olmayan araçlar için)
+  push:
+    branches: ['deneme/denetim']
 permissions:
   contents: read
   issues: write

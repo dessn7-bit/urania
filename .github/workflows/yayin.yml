@@ -4,7 +4,8 @@
 name: Yayın kapısı
 on:
   push:
-    branches: [main]
+    # deneme/** dalları: kapıyı denemek için (ör. kasıtlı bozuk commit); yayın adımı yalnız main'de çalışır
+    branches: [main, 'deneme/**']
   workflow_dispatch:
     inputs:
       secim:
