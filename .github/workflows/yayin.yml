@@ -1,0 +1,13 @@
+name: Yayın kapısı
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: write
+  issues: write
+jobs:
+  kapi:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo deneme
