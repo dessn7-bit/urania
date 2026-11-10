@@ -341,7 +341,7 @@
         s += (T === 12100 ? '<g class="kz-nokta">' : '') + S.cizgi(238, y - 4, 262, y - 4, { renk, kalin: T === 5772 ? 2.6 : 2, kesik: kes }) + (T === 12100 ? '</g>' : '');
         s += S.yazi(268, y, ad + ' ' + (T >= 10000 ? '12.100' : T) + ' K', { boy: 13, renk: R.metin, kalin: true });
       });
-      yildizlar.forEach(([T, ad, renk, kes]) => {
+      yildizlar.forEach(([T, , renk, kes]) => {
         const ls = [];
         for (let i = 0; i <= 240; i++) {
           const l = ar.x0 + (ar.x1 - ar.x0) * i / 240, v = B(l, T) / ref;

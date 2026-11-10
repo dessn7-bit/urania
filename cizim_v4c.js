@@ -325,9 +325,9 @@
       });
       let s = '';
       /* alt ve üst alanlar */
-      let alt = `M${ek.X(298)},${ek.Y(0)}`, ust = `M${ek.X(298)},${ek.Y(1)} L${ek.X(298)},${ek.Y(0)}`;
-      for (let T = 298; T <= 1300; T += 10) { alt += ` L${ek.X(T).toFixed(1)},${ek.Y(eta(T)).toFixed(1)}`; ust += ` L${ek.X(T).toFixed(1)},${ek.Y(eta(T)).toFixed(1)}`; }
-      alt += ` L${ek.X(1300)},${ek.Y(0)} Z`; ust += ` L${ek.X(1300)},${ek.Y(1)} Z`;
+      let alt = `M${ek.X(298)},${ek.Y(0)}`;
+      for (let T = 298; T <= 1300; T += 10) alt += ` L${ek.X(T).toFixed(1)},${ek.Y(eta(T)).toFixed(1)}`;
+      alt += ` L${ek.X(1300)},${ek.Y(0)} Z`;
       s += S.yol(alt, { renk: 'none', dolgu: R.vurguSoluk, saydam: 0.7 });
       s += ek.svg;
       s += S.fonk(ek, eta, 298, 1300, 200, { renk: R.vurgu, kalin: 3 });

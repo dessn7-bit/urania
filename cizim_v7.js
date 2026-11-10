@@ -6,12 +6,6 @@
 (function () {
   'use strict';
   const C = window.UraniaCizim; if (!C) return;
-  /* Türkçe sayı: ondalık virgül, gerçek eksi işareti, binlik nokta */
-  const tr = (x, d) => {
-    const s = Math.abs(x).toFixed(d == null ? 0 : d).split('.');
-    s[0] = s[0].replace(/\B(?=(\d{3})+(?!\d))/g, '.');
-    return (x < 0 ? '−' : '') + s.join(',');
-  };
   const L10 = Math.log10;
   /* Kesinlik çizgileri: ünitenin basamakları çizgi biçimiyle ayrılır; renge dayanmaz (kırmızı mod) */
   const KES = {

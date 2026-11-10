@@ -972,3 +972,6 @@ html.kirmizi .ay-sahne canvas { filter: url(#kirmiziSuz); }
 .hb-etkinlik dd { margin: 0; color: var(--parsomen); overflow-wrap: anywhere; }
 .haber.hb-gecti { opacity: .72; }
 .rozet.hb-gecti-rozet { background: var(--levha-2); color: var(--soluk); }
+
+/* v49: kırmızı mod süzgecini taşıyan görünmez SVG (satır içi stil yerine; html-validate no-inline-style) */
+.suzgec-svg { position: absolute; }

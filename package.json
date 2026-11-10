@@ -6,9 +6,13 @@
     "test": "playwright test"
   },
   "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
+    "@fontsource/ibm-plex-sans": "^5",
+    "@fontsource/spectral": "^5",
     "@playwright/test": "1.63.0",
     "astronomy-engine": "2.1.19",
-    "@fontsource/spectral": "^5",
-    "@fontsource/ibm-plex-sans": "^5"
+    "eslint": "10.13.0",
+    "globals": "17.13.0",
+    "html-validate": "11.17.0"
   }
 }

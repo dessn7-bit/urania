@@ -1,0 +1,9 @@
+{
+ "aciklama": "lib/ altındaki üçüncü taraf kütüphanelerin sürümleri. Haftalık denetim (araclar/denetim.py kutuphane) npm'deki son sürümle karşılaştırır; yeni sürüm varsa yalnız bilgi kaydı (issue) açılır, kendiliğinden güncelleme YAPILMAZ.",
+ "belirlenme": "2026-11-10",
+ "kutuphaneler": {
+  "astronomy-engine": {"surum": "2.1.19", "dosya": "lib/astronomy.browser.min.js", "kanit": "md5 007e65c53e9f162e2b6ec87ed0c08b96 = npm astronomy-engine@2.1.19 paketindeki astronomy.browser.min.js"},
+  "satellite.js": {"surum": "6.0.2", "dosya": "lib/satellite.min.js", "kanit": "md5 e785db80894d4a623477f28ded4b11bb = npm satellite.js@6.0.2 paketindeki dist/satellite.min.js (4.1.1–7.1.0 arası paketlerle karşılaştırıldı)"},
+  "geomagnetism": {"surum": "0.2.0", "dosya": "lib/geomag.min.js", "kanit": "dosya tek pakete derlenmiş (birebir karşılaştırılamaz); içindeki WMM-2025 modeli npm'de yalnız geomagnetism@0.2.0'da (2024-12-22) var (data/wmm-2025.json)"}
+ }
+}

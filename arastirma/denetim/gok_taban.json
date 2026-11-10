@@ -1,0 +1,17 @@
+{
+ "aciklama": "Haftalık gök denetiminin taban listesi (araclar/denetim_gok.js). Astronomy Engine'in tasarım doğruluğu ±1 yay dakikasıdır (README: \"accurate to within ±1 arcminute\", https://github.com/cosinekitty/astronomy); görev toleransı 10″ bundan sıkıdır. 2026-11-10 ilk koşusunda 10″'yi aşan noktalar burada: aynı noktada fark 1″'den fazla büyümedikçe kayıt açılmaz (sabit ızgara: değer ancak kütüphane, uygulama ya da Horizons çözümü değişirse değişir). Yeni aşan ya da büyüyen her nokta kayıt açar.",
+ "olusturma": "2026-11-10",
+ "tolerans_yaysn": 10,
+ "buyume_payi_yaysn": 1,
+ "noktalar": {
+  "Venus|2026-10-15 12:00": 20.46,
+  "Saturn|2026-10-15 12:00": 10.66,
+  "Saturn|2027-06-21 03:00": 10.4,
+  "Neptune|2026-01-15 00:00": 15.11,
+  "Neptune|2026-04-15 18:00": 14.79,
+  "Neptune|2026-07-15 06:00": 15.02,
+  "Neptune|2026-10-15 12:00": 15.59,
+  "Neptune|2027-01-15 21:00": 14.9,
+  "Neptune|2027-06-21 03:00": 14.37
+ }
+}

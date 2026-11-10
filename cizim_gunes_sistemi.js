@@ -234,7 +234,7 @@
       const kar = [['Merkür', 0.38, '0,38'], ['Venüs', 0.95, '0,95'], ['Dünya', 1, '1'], ['Mars', 0.53, '0,53']];
       let s = S.yazi(392, 16, 'Dış dört: dev gezegenler', { boy: 14, kalin: true, hiza: 'end', renk: R.mavi });
       let x = 17; const cy = 94;
-      dev.forEach(([ad, d, t], i) => {
+      dev.forEach(([ad, d, t]) => {
         const r = d * olc / 2; x += r;
         s += S.daire(x, cy, r, { dolgu: R.mavi, renk: 'none', saydam: 0.85 });   // dev gezegenler bu dersin öteki çizimleriyle aynı renkte
         s += S.yazi(x, cy + 88, ad, { boy: 14, hiza: 'middle' });

@@ -1,0 +1,75 @@
+# Haftalık denetim (v49): cumartesi 04.00 UTC (07.00 TSİ), haftalık haber işinden (09.35 TSİ) önce. Elle de tetiklenebilir.
+# a) bağlantılar (lychee + MediaWiki API + arXiv API), b) kaynak alıntıları, c) Astronomy Engine ↔ JPL Horizons,
+# d) lib/ kütüphanelerinin npm sürümleri. Bulgu varsa "denetim" etiketli kayıt (issue) açılır ya da açık kayda yorum eklenir.
+# Hiçbir şey kendiliğinden düzeltilmez ya da güncellenmez. celestrak.org'a istek yok. İstek başlığında kişisel veri yok.
+name: Haftalık denetim
+on:
+  schedule:
+    - cron: '0 4 * * 6'
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
+concurrency:
+  group: haftalik-denetim
+  cancel-in-progress: false
+jobs:
+  denetim:
+    name: Denetim
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: PDF metni için poppler-utils
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
+      - id: hazirla
+        name: "a) Bağlantıları topla (veri/dersler.json, veri/haberler.json)"
+        run: python3 araclar/denetim.py baglanti-hazirla denetim
+      - id: lychee
+        name: "a) lychee (Wikipedia ve arXiv hariç)"
+        uses: lycheeverse/lychee-action@v2
+        continue-on-error: true
+        with:
+          args: >-
+            --no-progress
+            --user-agent "urania-linkcheck/1.0 (+https://github.com/dessn7-bit/urania)"
+            --max-concurrency 8 --host-concurrency 1 --host-request-interval 2s
+            --max-retries 1 --retry-wait-time 10 --timeout 30
+            --exclude 'celestrak\.org'
+            denetim/genel.txt
+          format: json
+          output: denetim/lychee.json
+          fail: false
+          jobSummary: false
+      - id: baglanti
+        name: "a) Bağlantıları değerlendir (MediaWiki API, arXiv API, taban listesi)"
+        continue-on-error: true
+        run: python3 araclar/denetim.py baglanti-degerlendir denetim denetim/lychee.json
+      - id: alinti
+        name: "b) Kaynak alıntıları"
+        continue-on-error: true
+        run: python3 araclar/denetim.py alinti denetim
+      - id: gok
+        name: "c) Astronomy Engine ↔ JPL Horizons"
+        continue-on-error: true
+        run: |
+          python3 araclar/denetim.py horizons-indir denetim
+          node araclar/denetim_gok.js denetim/horizons.json denetim
+      - id: kutuphane
+        name: "d) Kütüphane sürümleri"
+        continue-on-error: true
+        run: python3 araclar/denetim.py kutuphane denetim
+      - name: Özet ve kayıtlar
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          CALISMA_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          SONUC_LYCHEE: ${{ steps.lychee.outcome }}
+          SONUC_BAGLANTI: ${{ steps.baglanti.outcome }}
+          SONUC_ALINTI: ${{ steps.alinti.outcome }}
+          SONUC_GOK: ${{ steps.gok.outcome }}
+          SONUC_KUTUPHANE: ${{ steps.kutuphane.outcome }}
+        run: bash araclar/denetim_issue.sh denetim

@@ -1,0 +1,10 @@
+{
+ "total": 6, "successful": 1, "errors": 4, "timeouts": 1,
+ "error_map": {"denetim/genel.txt": [
+  {"url": "https://ornek-kirik.example.net/sayfa", "status": {"text": "Rejected status code: 404 Not Found", "code": 404}},
+  {"url": "https://www.britannica.com/science/star-astronomy", "status": {"text": "Rejected status code: 403 Forbidden", "code": 403}},
+  {"url": "https://hiz-siniri.example.net/", "status": {"text": "Rejected status code: 429 Too Many Requests", "code": 429}},
+  {"url": "https://yok-boyle-alan.invalid/", "status": {"text": "Network error: error sending request: dns error: failed to lookup address information"}}
+ ]},
+ "timeout_map": {"denetim/genel.txt": [ {"url": "https://yavas.example.net/", "status": {"text": "Timeout"}} ]}
+}

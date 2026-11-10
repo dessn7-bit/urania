@@ -7,12 +7,6 @@
 (function () {
   'use strict';
   const C = window.UraniaCizim; if (!C) return;
-  /* Türkçe sayı: ondalık virgül, gerçek eksi işareti, binlik nokta */
-  const tr = (x, d) => {
-    const s = Math.abs(x).toFixed(d == null ? 0 : d).split('.');
-    s[0] = s[0].replace(/\B(?=(\d{3})+(?!\d))/g, '.');
-    return (x < 0 ? '−' : '') + s.join(',');
-  };
   const USTK = { 0: '⁰', 1: '¹', 2: '²', 3: '³', 4: '⁴', 5: '⁵', 6: '⁶', 7: '⁷', 8: '⁸', 9: '⁹', '-': '⁻' };
   const on = e => '10' + String(e).replace(/./g, c => USTK[c] || c);
   const L10 = Math.log10;

@@ -48,3 +48,9 @@ npx playwright test
 ```
 
 Testler ağa çıkmaz: `playwright.config.js` yerel sunucu dışındaki her isteği kapalı bir vekile yollar; dış servislerin gerçek yanıtları `testler/veri/` altındadır (hava kartları: `testler/veri/hava/`, yenilemek için `bash araclar/hava_fixture.sh`).
+
+## Yayın ve denetim (v49)
+
+- Yalnız `main` dalına gönderilir. `.github/workflows/yayin.yml` ("Yayın kapısı") her gönderimde sırayla şunları çalıştırır: `veri/` altındaki bütün JSON dosyaları açılıyor mu (`node araclar/kapi_json.js`), ESLint (`npx eslint .`, `eslint.config.js`), html-validate (`npx html-validate index.html`), Playwright test paketinin tamamı. Hepsi geçerse `gh-pages` dalı `main`'e eşitlenir; GitHub Pages `gh-pages` dalından yayınlar (Pages ayarı değişmedi). Biri düşerse `gh-pages`'e dokunulmaz ve "yayın durdu" etiketli bir kayıt (issue) açılır; kapı yeniden geçince kayıt kendiliğinden kapanır. `gh-pages`'e elle gönderilmez.
+- `.github/workflows/denetim.yml` ("Haftalık denetim", cumartesi 07.00 TSİ ve elle): ders ve haber bağlantıları (lychee; Wikipedia MediaWiki API ile, arXiv arXiv API ile toplu; 403/429 "doğrulanamadı" sayılır; `arastirma/denetim/baglanti_taban.json` dışındaki yeni kırıklar kayıt açar), `arastirma/*.json`'daki birebir alıntıların kaynakta durup durmadığı, Astronomy Engine ↔ JPL Horizons (İstanbul; konum 10″, zaman 1 dakika; bilinen farklar `arastirma/denetim/gok_taban.json`), `lib/` kütüphanelerinin npm sürümleri (`lib/SURUMLER.json`; yalnız bilgi). Kayıtlar "denetim" etiketli; haftalık haber işi bunları okuyup Türkçe raporunun "Denetim" bölümüne yazar.
+- Testler: `npx playwright test` iki proje çalıştırır: "genel" (service worker kapalı) ve "cevrimdisi" (service worker açık; çevrimdışı açılış ve sürüm değişince önbellek temizliği). Erişilebilirlik `testler/axe.spec.js` (axe-core, her sekme, normal ve kırmızı mod), boyut sınırları `testler/boyut.spec.js`.

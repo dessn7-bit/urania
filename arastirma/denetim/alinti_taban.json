@@ -1,0 +1,452 @@
+{
+ "aciklama": "Haftalık alıntı denetiminin tabanı (araclar/denetim.py alinti). \"kaynaklar\": sayfada okunan son güncelleme tarihi (değişirse \"tarih_degisti\" kaydı açılır; kayıt işlenince yeni tarih buraya yazılır). \"dinamik\": içeriği betikle yüklenen, alıntısı sayfa kaynağında görünmeyen siteler (doğrulanamadı sayılır, kayıt açmaz). \"bilinen_eksik\": 2026-11-10 ilk koşusunda kaynakta birebir bulunamayan alıntılar (askıda: bir kısmı gerçek değişiklik — ör. Wikipedia \"Twilight\" tanımı, imagine.gsfc sözlüğünde \"ion\" — bir kısmı PDF'ten formül/tablo yazımımızın birebir eşleşmemesi); haftalık haber işi bunları tek tek inceleyip düzeltince listeden çıkarır. Yalnız bu listede OLMAYAN eksik alıntı kayıt açar.",
+ "olusturma": "2026-11-10",
+ "dinamik": [
+  "terim.tuba.gov.tr",
+  "sozluk.gov.tr"
+ ],
+ "kaynaklar": {
+  "https://education.nationalgeographic.org/resource/crater/": "April 17, 2024",
+  "https://en.wikipedia.org/wiki/Chronology_of_the_universe": "23 July 2018",
+  "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html": "15 November 2024",
+  "https://nssdc.gsfc.nasa.gov/planetary/factsheet/jupiterfact.html": "2 October 2024",
+  "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html": "19 May 2025",
+  "https://nssdc.gsfc.nasa.gov/planetary/factsheet/mercuryfact.html": "11 January 2024",
+  "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html": "11 January 2024",
+  "https://nssdc.gsfc.nasa.gov/planetary/factsheet/neptunefact.html": "3 October 2024",
+  "https://nssdc.gsfc.nasa.gov/planetary/factsheet/plutofact.html": "11 January 2024",
+  "https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturnfact.html": "18 March 2025",
+  "https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html": "9 May 2024",
+  "https://nssdc.gsfc.nasa.gov/planetary/factsheet/uranusfact.html": "2 October 2024",
+  "https://nssdc.gsfc.nasa.gov/planetary/factsheet/venusfact.html": "11 January 2024",
+  "https://science.nasa.gov/eclipses/types/": "Feb 13, 2026",
+  "https://science.nasa.gov/ems/01_intro/": "Sep 17, 2025",
+  "https://science.nasa.gov/photojournal/our-neighbor-andromeda/": "Sep 23, 2025",
+  "https://science.nasa.gov/solar-system/meteors-meteorites/facts/": "Feb 14, 2025",
+  "https://science.nasa.gov/solar-system/moons/facts/": "Oct 13, 2026",
+  "https://science.nasa.gov/sun/facts/": "Sep 17, 2026",
+  "https://science.nasa.gov/universe/galaxies/types/": "Aug 12, 2026"
+ },
+ "bilinen_eksik": [
+  {
+   "url": "https://arxiv.org/pdf/1510.06262",
+   "imza": "92cf688f1ab9",
+   "alinti": "The zero point was selected so that the nominal solar luminosity (LN⊙ = 3.828 × 10^26 W) corresponds closely to absolute",
+   "dosya": "arastirma/sabitler.json"
+  },
+  {
+   "url": "https://arxiv.org/pdf/1510.07674",
+   "imza": "086772b231dd",
+   "alinti": "1R⊙N = 6.957 × 10^8 m",
+   "dosya": "arastirma/sabitler.json"
+  },
+  {
+   "url": "https://arxiv.org/pdf/1510.07674",
+   "imza": "d8e5f8b5fa16",
+   "alinti": "1SN⊙ = 1361 W m−2",
+   "dosya": "arastirma/sabitler.json"
+  },
+  {
+   "url": "https://arxiv.org/pdf/1510.07674",
+   "imza": "6efdadf1a3f1",
+   "alinti": "1LN⊙ = 3.828 × 10^26 W",
+   "dosya": "arastirma/sabitler.json"
+  },
+  {
+   "url": "https://arxiv.org/pdf/1510.07674",
+   "imza": "0ea4ef414193",
+   "alinti": "1T N eff⊙ = 5772 K",
+   "dosya": "arastirma/sabitler.json"
+  },
+  {
+   "url": "https://arxiv.org/pdf/1510.07674",
+   "imza": "0300945102ac",
+   "alinti": "1(GM)N⊙ = 1.327 124 4 × 10^20 m3 s−2",
+   "dosya": "arastirma/sabitler.json"
+  },
+  {
+   "url": "https://arxiv.org/pdf/1510.07674",
+   "imza": "8ae2097b84d6",
+   "alinti": "1 R N eE = 6.3781 × 10^6 m",
+   "dosya": "arastirma/sabitler.json"
+  },
+  {
+   "url": "https://arxiv.org/pdf/1510.07674",
+   "imza": "517cedd16984",
+   "alinti": "1 R N pE = 6.3568 × 10^6 m",
+   "dosya": "arastirma/sabitler.json"
+  },
+  {
+   "url": "https://arxiv.org/pdf/1510.07674",
+   "imza": "ec2a91a4d5b2",
+   "alinti": "1 R N eJ = 7.1492 × 10^7 m",
+   "dosya": "arastirma/sabitler.json"
+  },
+  {
+   "url": "https://arxiv.org/pdf/1510.07674",
+   "imza": "459fd6a8d2e6",
+   "alinti": "1 R N pJ = 6.6854 × 10^7 m",
+   "dosya": "arastirma/sabitler.json"
+  },
+  {
+   "url": "https://arxiv.org/pdf/1510.07674",
+   "imza": "dd7220ca9a60",
+   "alinti": "1 (GM)N E = 3.986 004 × 10^14 m3 s−2",
+   "dosya": "arastirma/sabitler.json"
+  },
+  {
+   "url": "https://arxiv.org/pdf/1510.07674",
+   "imza": "9b9f8d308db9",
+   "alinti": "1 (GM)N J = 1.266 865 3 × 10^17 m3 s−2",
+   "dosya": "arastirma/sabitler.json"
+  },
+  {
+   "url": "https://arxiv.org/pdf/1605.09788",
+   "imza": "6efdadf1a3f1",
+   "alinti": "1LN⊙ = 3.828 × 10^26 W",
+   "dosya": "arastirma/sabitler.json"
+  },
+  {
+   "url": "https://arxiv.org/pdf/1605.09788",
+   "imza": "0ea4ef414193",
+   "alinti": "1T N eff⊙ = 5772 K",
+   "dosya": "arastirma/sabitler.json"
+  },
+  {
+   "url": "https://arxiv.org/pdf/1605.09788",
+   "imza": "0300945102ac",
+   "alinti": "1(GM)N⊙ = 1.327 124 4 × 10^20 m3 s−2",
+   "dosya": "arastirma/sabitler.json"
+  },
+  {
+   "url": "https://arxiv.org/pdf/1605.09788",
+   "imza": "8ae2097b84d6",
+   "alinti": "1 R N eE = 6.3781 × 10^6 m",
+   "dosya": "arastirma/sabitler.json"
+  },
+  {
+   "url": "https://arxiv.org/pdf/1605.09788",
+   "imza": "517cedd16984",
+   "alinti": "1 R N pE = 6.3568 × 10^6 m",
+   "dosya": "arastirma/sabitler.json"
+  },
+  {
+   "url": "https://arxiv.org/pdf/1605.09788",
+   "imza": "ec2a91a4d5b2",
+   "alinti": "1 R N eJ = 7.1492 × 10^7 m",
+   "dosya": "arastirma/sabitler.json"
+  },
+  {
+   "url": "https://arxiv.org/pdf/1605.09788",
+   "imza": "459fd6a8d2e6",
+   "alinti": "1 R N pJ = 6.6854 × 10^7 m",
+   "dosya": "arastirma/sabitler.json"
+  },
+  {
+   "url": "https://arxiv.org/pdf/1605.09788",
+   "imza": "dd7220ca9a60",
+   "alinti": "1 (GM)N E = 3.986 004 × 10^14 m3 s−2",
+   "dosya": "arastirma/sabitler.json"
+  },
+  {
+   "url": "https://arxiv.org/pdf/1605.09788",
+   "imza": "9b9f8d308db9",
+   "alinti": "1 (GM)N J = 1.266 865 3 × 10^17 m3 s−2",
+   "dosya": "arastirma/sabitler.json"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Aurora",
+   "imza": "b5c4301df454",
+   "alinti": "An aurora (pl. aurorae or auroras) is a natural light display in Earth's upper atmosphere ... caused by charged particle",
+   "dosya": "arastirma/sozluk_ek.json"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Culmination",
+   "imza": "dd6bc4eb9992",
+   "alinti": "culmination is the passage of a celestial object across the observer's local meridian",
+   "dosya": "arastirma/sozluk_ek.json"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Lunar_phase",
+   "imza": "5d4fc8b50a90",
+   "alinti": "A lunar phase or Moon phase is the apparent shape of the Moon's day and night phases of the lunar day as viewed from afa",
+   "dosya": "arastirma/sozluk_ek.json"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Main_sequence",
+   "imza": "a9a220be8d13",
+   "alinti": "This is the abundance of heavier-than-helium elements present in the star. (metallicity)",
+   "dosya": "arastirma/sozluk_ek.json"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Main_sequence",
+   "imza": "c9a897c8db23",
+   "alinti": "Radiation zones ... move energy without bulk plasma motion (very little mixing)",
+   "dosya": "arastirma/sozluk_ek.json"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Nebula",
+   "imza": "644e850c5974",
+   "alinti": "A nebula (Latin for 'cloud, fog'; pl. nebulae or nebulas) is a distinct luminescent part of interstellar medium.",
+   "dosya": "arastirma/sozluk_ek.json"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation",
+   "imza": "aac0c64e6ce4",
+   "alinti": "every particle attracts every other particle in the universe with a force that is proportional to their masses ... and i",
+   "dosya": "arastirma/sozluk_ek.json"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Pole_star",
+   "imza": "1897e4bd1739",
+   "alinti": "Polaris (Alpha Ursae Minoris), a bright magnitude 2 star ... \"within 0.5°\" of the north celestial pole",
+   "dosya": "arastirma/sozluk_ek.json"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Twilight",
+   "imza": "3f2568372fad",
+   "alinti": "Astronomical twilight is defined as when the geometric center of the Sun is between 18° and 12° below the horizon.",
+   "dosya": "arastirma/sozluk_ek.json"
+  },
+  {
+   "url": "https://imagine.gsfc.nasa.gov/resources/dict_ad.html",
+   "imza": "0a2901998066",
+   "alinti": "cosmic ray: Atomic nuclei (mostly protons) and electrons that are observed to strike the Earth's atmosphere with exceedi",
+   "dosya": "arastirma/sozluk_ek.json"
+  },
+  {
+   "url": "https://imagine.gsfc.nasa.gov/resources/dict_ei.html",
+   "imza": "5f5f6f723b74",
+   "alinti": "element: The fundamental kinds of atoms that make up the building blocks of matter",
+   "dosya": "arastirma/sozluk_ek.json"
+  },
+  {
+   "url": "https://imagine.gsfc.nasa.gov/resources/dict_ei.html",
+   "imza": "5f5f6f723b74",
+   "alinti": "element: The fundamental kinds of atoms that make up the building blocks of matter",
+   "dosya": "arastirma/sozluk_ek.json"
+  },
+  {
+   "url": "https://imagine.gsfc.nasa.gov/resources/dict_ei.html",
+   "imza": "887a49958af9",
+   "alinti": "ion: An atom with one or more electrons stripped off, giving it a net positive charge.",
+   "dosya": "arastirma/sozluk_ek.json"
+  },
+  {
+   "url": "https://imagine.gsfc.nasa.gov/resources/dict_ei.html",
+   "imza": "887a49958af9",
+   "alinti": "ion: An atom with one or more electrons stripped off, giving it a net positive charge.",
+   "dosya": "arastirma/sozluk_ek.json"
+  },
+  {
+   "url": "https://imagine.gsfc.nasa.gov/resources/dictionary.html",
+   "imza": "82d0462330fb",
+   "alinti": "jet: Beams of particles, usually coming from an active galactic nucleus or a pulsar.",
+   "dosya": "arastirma/sozluk_ek.json"
+  },
+  {
+   "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf",
+   "imza": "086772b231dd",
+   "alinti": "1R⊙N = 6.957 × 10^8 m",
+   "dosya": "arastirma/sabitler.json"
+  },
+  {
+   "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf",
+   "imza": "d8e5f8b5fa16",
+   "alinti": "1SN⊙ = 1361 W m−2",
+   "dosya": "arastirma/sabitler.json"
+  },
+  {
+   "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf",
+   "imza": "6efdadf1a3f1",
+   "alinti": "1LN⊙ = 3.828 × 10^26 W",
+   "dosya": "arastirma/sabitler.json"
+  },
+  {
+   "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf",
+   "imza": "0ea4ef414193",
+   "alinti": "1T N eff⊙ = 5772 K",
+   "dosya": "arastirma/sabitler.json"
+  },
+  {
+   "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf",
+   "imza": "0300945102ac",
+   "alinti": "1(GM)N⊙ = 1.327 124 4 × 10^20 m3 s−2",
+   "dosya": "arastirma/sabitler.json"
+  },
+  {
+   "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf",
+   "imza": "8ae2097b84d6",
+   "alinti": "1 R N eE = 6.3781 × 10^6 m",
+   "dosya": "arastirma/sabitler.json"
+  },
+  {
+   "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf",
+   "imza": "517cedd16984",
+   "alinti": "1 R N pE = 6.3568 × 10^6 m",
+   "dosya": "arastirma/sabitler.json"
+  },
+  {
+   "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf",
+   "imza": "ec2a91a4d5b2",
+   "alinti": "1 R N eJ = 7.1492 × 10^7 m",
+   "dosya": "arastirma/sabitler.json"
+  },
+  {
+   "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf",
+   "imza": "459fd6a8d2e6",
+   "alinti": "1 R N pJ = 6.6854 × 10^7 m",
+   "dosya": "arastirma/sabitler.json"
+  },
+  {
+   "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf",
+   "imza": "dd7220ca9a60",
+   "alinti": "1 (GM)N E = 3.986 004 × 10^14 m3 s−2",
+   "dosya": "arastirma/sabitler.json"
+  },
+  {
+   "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf",
+   "imza": "9b9f8d308db9",
+   "alinti": "1 (GM)N J = 1.266 865 3 × 10^17 m3 s−2",
+   "dosya": "arastirma/sabitler.json"
+  },
+  {
+   "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf",
+   "imza": "649622198f1b",
+   "alinti": "that if SI masses are explicitly needed, they should be expressed in terms of (GM)object /G, where the estimate of the N",
+   "dosya": "arastirma/sabitler.json"
+  },
+  {
+   "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf",
+   "imza": "dd7220ca9a60",
+   "alinti": "1 (GM)N E = 3.986 004 × 10^14 m3 s−2",
+   "dosya": "arastirma/sabitler.json"
+  },
+  {
+   "url": "https://www.iau.org/common/Uploaded%20files/IAUGA2015-Resolution-B3-recommended-nominal-conversion.pdf",
+   "imza": "9b9f8d308db9",
+   "alinti": "1 (GM)N J = 1.266 865 3 × 10^17 m3 s−2",
+   "dosya": "arastirma/sabitler.json"
+  },
+  {
+   "url": "https://www.imo.net/files/data/calendar/cal2027.pdf",
+   "imza": "7ffabb7f3927",
+   "alinti": "The maximum of the April Lyrids (006 LYR) at 32 ◦. 32 is expected on April 23, 01h 40m UT",
+   "dosya": "arastirma/meteor_2027.json"
+  },
+  {
+   "url": "https://www.imo.net/files/data/calendar/cal2027.pdf",
+   "imza": "2afece9eee53",
+   "alinti": "Maximum: May 6, 09h UT (λ⊙ = 45 ◦. 5); ZHR = 50 (var., 40–80+)",
+   "dosya": "arastirma/meteor_2027.json"
+  },
+  {
+   "url": "https://www.imo.net/files/data/calendar/cal2027.pdf",
+   "imza": "144b96e6cca1",
+   "alinti": "Maximum: July 31 (λ⊙ = 128◦ ); ZHR = 25;",
+   "dosya": "arastirma/meteor_2027.json"
+  },
+  {
+   "url": "https://www.imo.net/files/data/calendar/cal2027.pdf",
+   "imza": "b1d1e892be2c",
+   "alinti": "Maximum: July 31 (λ⊙ = 128◦ ); ZHR = 5;",
+   "dosya": "arastirma/meteor_2027.json"
+  },
+  {
+   "url": "https://www.imo.net/files/data/calendar/cal2027.pdf",
+   "imza": "5e80f9689543",
+   "alinti": "Maximum: August 13, 08h to 10h UT (node at λ⊙ = 140 ◦. 0 − 140 ◦. 1); ZHR = 110+",
+   "dosya": "arastirma/meteor_2027.json"
+  },
+  {
+   "url": "https://www.imo.net/files/data/calendar/cal2027.pdf",
+   "imza": "14d4616c41ec",
+   "alinti": "Maximum: October 9, 07h UT (λ⊙ = 195 ◦. 4); ZHR = 5 (?);",
+   "dosya": "arastirma/meteor_2027.json"
+  },
+  {
+   "url": "https://www.imo.net/files/data/calendar/cal2027.pdf",
+   "imza": "4e5c2edce96e",
+   "alinti": "The maximum of the Orionids (008 ORI) is due on October 22.",
+   "dosya": "arastirma/meteor_2027.json"
+  },
+  {
+   "url": "https://www.imo.net/files/data/calendar/cal2027.pdf",
+   "imza": "0ff3d9f865a7",
+   "alinti": "Maximum: November 06 (λ⊙ = 223◦ ); ZHR = 5–10;",
+   "dosya": "arastirma/meteor_2027.json"
+  },
+  {
+   "url": "https://www.imo.net/files/data/calendar/cal2027.pdf",
+   "imza": "9a181f81a9d6",
+   "alinti": "Maximum: November 13 (λ⊙ = 230◦ ); ZHR = 5;",
+   "dosya": "arastirma/meteor_2027.json"
+  },
+  {
+   "url": "https://www.imo.net/files/data/calendar/cal2027.pdf",
+   "imza": "2e65b3138953",
+   "alinti": "Maximum: November 18, 06h UT (nodal crossing at λ⊙ = 235 ◦. 27),",
+   "dosya": "arastirma/meteor_2027.json"
+  },
+  {
+   "url": "https://www.imo.net/files/data/calendar/cal2027.pdf",
+   "imza": "5ba1041146ca",
+   "alinti": "In the night of the Geminid (004 GEM) maximum on December 14 (centred around 20h UT),",
+   "dosya": "arastirma/meteor_2027.json"
+  },
+  {
+   "url": "https://www.imo.net/files/data/calendar/cal2027.pdf",
+   "imza": "6d7931ce386c",
+   "alinti": "Maximum: December 23, 04h UT (λ⊙ = 270 ◦. 7);",
+   "dosya": "arastirma/meteor_2027.json"
+  },
+  {
+   "url": "https://www.imo.net/files/meteor-shower/cal2026.pdf",
+   "imza": "45c9ed4b42da",
+   "alinti": "Maximum: August 13, 02h to 04h UT (node at λ⊙ = 140°.0 − 140°.1), but see text; ZHR = 100",
+   "dosya": "arastirma/meteor_2026.json"
+  },
+  {
+   "url": "https://www.imo.net/files/meteor-shower/cal2026.pdf",
+   "imza": "f08408f538e9",
+   "alinti": "Maximum: October 9, 01h UT (λ⊙ = 195°.4); ZHR = 5 (?); Radiant: α = 263°, δ = +56°",
+   "dosya": "arastirma/meteor_2026.json"
+  },
+  {
+   "url": "https://www.imo.net/files/meteor-shower/cal2026.pdf",
+   "imza": "32118103381f",
+   "alinti": "Maximum: October 21 (λ⊙ = 208°); ZHR = 20+",
+   "dosya": "arastirma/meteor_2026.json"
+  },
+  {
+   "url": "https://www.imo.net/files/meteor-shower/cal2026.pdf",
+   "imza": "560171344ccf",
+   "alinti": "Maximum: November 05 (λ⊙ = 223°); ZHR = 5–10",
+   "dosya": "arastirma/meteor_2026.json"
+  },
+  {
+   "url": "https://www.imo.net/files/meteor-shower/cal2026.pdf",
+   "imza": "f6b7e71f18b8",
+   "alinti": "Maximum: November 12 (λ⊙ = 230°); ZHR = 5",
+   "dosya": "arastirma/meteor_2026.json"
+  },
+  {
+   "url": "https://www.imo.net/files/meteor-shower/cal2026.pdf",
+   "imza": "e07028fe8c09",
+   "alinti": "Maximum: November 17, 23h 45m UT (nodal crossing at λ⊙ = 235°.27), but see text; ZHR ≈ 15",
+   "dosya": "arastirma/meteor_2026.json"
+  },
+  {
+   "url": "https://www.imo.net/files/meteor-shower/cal2026.pdf",
+   "imza": "ca38c9dcd4bf",
+   "alinti": "Maximum: December 14, 14h UT (λ⊙ = 262°.2); ZHR = 150",
+   "dosya": "arastirma/meteor_2026.json"
+  },
+  {
+   "url": "https://www.imo.net/files/meteor-shower/cal2026.pdf",
+   "imza": "a06aea4d25fa",
+   "alinti": "the Ursids (015 URS) reach their maximum on December 22, 22h UT, two days before Full Moon.",
+   "dosya": "arastirma/meteor_2026.json"
+  }
+ ]
+}

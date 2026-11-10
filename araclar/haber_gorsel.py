@@ -1,5 +1,5 @@
 """Haber görseli indirir ve küçültür: python3 araclar/haber_gorsel.py <haber-kimliği> <görsel-url>
-img/haber/<kimlik>.jpg yazar (en çok 1200 piksel genişlik, JPEG kalite 82, üst veri silinir; hedef ≤ 250 KB).
+img/haber/<kimlik>.jpg yazar (uzun kenar en çok 1200 piksel, JPEG kalite 82, üst veri silinir; hedef ≤ 250 KB).
 YALNIZ serbest lisanslı resmî görseller: NASA (kamu malı), ESA/Webb, ESA/Hubble, ESO, NOIRLab (CC BY 4.0),
 ESA (çoğu CC BY-SA 3.0 IGO) ve benzeri; lisansı ve krediyi veri/haberler.json'daki "gorsel" alanına yaz.
 Haber ajansı (AP, Reuters, Getty) ve dergi (Nature, Science) görselleri KULLANILMAZ."""
@@ -16,7 +16,8 @@ if im.mode not in ('RGB', 'L'):
     if im.mode in ('RGBA', 'LA', 'P'):
         im = im.convert('RGBA'); zemin.paste(im, mask=im.split()[-1]); im = zemin
     else: im = im.convert('RGB')
-if im.width > 1200: im = im.resize((1200, round(im.height * 1200 / im.width)), Image.LANCZOS)
+if max(im.size) > 1200:   # v49: uzun kenar en çok 1200 px (dikey görseller de; boyut testi testler/boyut.spec.js)
+    k = 1200 / max(im.size); im = im.resize((round(im.width * k), round(im.height * k)), Image.LANCZOS)
 yol = os.path.join(K, 'img', 'haber', kimlik + '.jpg'); os.makedirs(os.path.dirname(yol), exist_ok=True)
 for q in (82, 74, 66, 58):
     b = io.BytesIO(); im.convert('RGB').save(b, 'JPEG', quality=q, optimize=True, progressive=True)

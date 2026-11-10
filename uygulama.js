@@ -397,9 +397,9 @@
     if (!zorla && !otoAcik()) return Promise.resolve(null);
     if (!('geolocation' in navigator)) { konumDurum.hata = 'desteklenmiyor'; konumBildir(); return Promise.resolve(null); }
     if (konumAraniyor) return konumAraniyor;
-    let bu = null, bitti = false;
+    let bu = null;
     /* Yalnız kendi sözünü temizler: bekçiden sonra başlayan yeni aramanın sözü eski aramanın geç yanıtıyla silinmesin */
-    const bitir = () => { bitti = true; if (konumAraniyor === bu) konumAraniyor = null; };
+    const bitir = () => { if (konumAraniyor === bu) konumAraniyor = null; };
     bu = konumAraniyor = new Promise(coz => {
       /* İzin sorusu hiç yanıtlanmazsa söz takılı kalmasın: 30 sn sonra serbest bırak; geç gelen yanıt yok sayılır */
       const bekci = setTimeout(() => { bitir(); coz(null); }, 30e3);

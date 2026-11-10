@@ -235,7 +235,7 @@
   const OZEL_AD = '[A-ZÇĞİÖŞÜ][a-zçğıöşü]+';
   const ZIT = 'düşük|yüksek|sıcak|soğuk|hafif|ağır|küçük|büyük|kısa|uzun|yavaş|hızlı|sönük|parlak|yakın|uzak|iç|dış';
   const ozelEk = (w, ek) => { const o = ekle(w.toLocaleLowerCase('tr'), ek); return o ? w + "'" + o.slice(w.length) : null; };
-  function okBaglam(t, ELEMENT) {
+  function okBaglam(t) {
     /* yüzde geçişi */
     t = t.replace(/%\s?(\d[\d,]*)\s?→\s?%\s?(\d[\d,]*)/g, (m, a, b) => { const x = sayiyaEk(a, 'den'), y = sayiyaEk(b, 'e'); return x && y ? 'yüzde ' + x + ' yüzde ' + y : m; });
     /* element simgesi geçişi: "H → He", "U-238 → Pb-206" */
@@ -502,7 +502,7 @@
       else sag = gecisEk(b, 'e');
       return sol && sag ? o + sol + ' ' + sag : m;
     });
-    t = okBaglam(t, ELEMENT);
+    t = okBaglam(t);
     t = t.replace(/\s=\s|=/g, ' eşittir ');
     /* Kuyruklu yıldız adı "109P/Swift-Tuttle": eğik çizgi okunmaz */
     t = t.replace(/(\d+[PC])\/(?=[A-ZÇĞİÖŞÜ])/g, '$1 ');
