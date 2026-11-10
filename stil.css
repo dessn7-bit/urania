@@ -964,3 +964,11 @@ html.kirmizi .ay-sahne canvas { filter: url(#kirmiziSuz); }
 .ay-no { grid-row: 1 / span 2; font-weight: 600; color: var(--pirinc); font-variant-numeric: tabular-nums; }
 .ay-ad { font-weight: 500; overflow-wrap: anywhere; }
 .ay-alt { grid-column: 2; font-size: 13px; color: var(--soluk); overflow-wrap: anywhere; }
+
+/* v48 haber güncelleme notu (makale hakemli yayımlandı vb.) */
+.hb-guncelleme { margin: 4px 0 8px; padding: 6px 10px; border-left: 3px solid var(--iyi); background: var(--levha); font: 400 14px/1.45 var(--sans); color: var(--parsomen); }
+.hb-etkinlik { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 2px 10px; margin: 6px 0 10px; font: 400 14px/1.4 var(--sans); }
+.hb-etkinlik dt { color: var(--soluk); }
+.hb-etkinlik dd { margin: 0; color: var(--parsomen); overflow-wrap: anywhere; }
+.haber.hb-gecti { opacity: .72; }
+.rozet.hb-gecti-rozet { background: var(--levha-2); color: var(--soluk); }

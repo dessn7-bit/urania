@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/U0aXpfYEzk3I/utFr2RERmWusq4</id>
+  <title>arXiv Query: search_query=&amp;id_list=2609.05053&amp;start=0&amp;max_results=10</title>
+  <updated>2026-11-10T11:36:33Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=10&amp;id_list=2609.05053" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+  <opensearch:totalResults>1</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2609.05053v2</id>
+    <title>Supernovae Unite: Combining Pantheon+ and DES-SN5YR</title>
+    <updated>2026-09-09T05:05:06Z</updated>
+    <link href="https://arxiv.org/abs/2609.05053v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.05053v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present the Hubble diagram and cosmological constraints resulting from the combination of the Pantheon+ and DES-SN5YR supernova (SN) samples, which we refer to as Unite. Unite updates Pantheon+, including methodology improvements that the DES sample enabled, and adds the new SN from the DES survey. This represents the most comprehensive and internally consistent SN Ia dataset available, consisting of 2884 likely type Ia supernovae. This work features consistent SN Ia modelling, sample selection, and bias corrections. We also redetermine host-galaxy stellar masses for over 98% of the sample using a consistent framework. Using Unite alone, for a flat universe with a cosmological constant (Flat-$Λ$CDM), we find $Ω_{\rm m} = 0.310^{+0.012}_{-0.011}$. We further present constraints using the Unite sample combined with Cosmic Microwave Background and both DES and DESI Baryon Acoustic Oscillation data. We find strong evidence of tension between CMB measurements and the combined BAO and supernova datasets when fitting a model with constant dark energy equation of state ($w$), which is alleviated when allowing $w$ to vary with time. For a flat universe with dark energy that has a time-evolving equation of state parametrized by $w_0$ and $w_a$ we find $(Ω_{\rm m},w_0,w_a) = (0.305\pm0.004,-0.861^{+0.044}_{-0.042},-0.60^{+0.17}_{-0.19})$ with a dark energy Figure of Merit of 315. This corresponds to a $\sim30\%$ reduction in the area of the $w_0-w_a$ confidence region relative to previous constraints from the combination of DES Y6, DESI-DR2, and CMB data (arXiv:2605.27221). The Bayesian evidence indicates only weak preference for time evolving dark energy, whereas frequentist analyses yield a preference over Flat-$Λ$CDM at a significance of $3.3σ$ ($3.1σ$) when using the maximum $\textit{a posteriori}$ probability (maximum likelihood).</summary>
+    <category term="astro-ph.CO" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-04T12:15:29Z</published>
+    <arxiv:comment>26 pages, 22 figures. The Unite Hubble diagram and likelihood will be made publicly available upon acceptance of the paper; v2 Including a link to our Youtube Cosmology Talks video, see https://www.youtube.com/watch?v=KT-j65gRnOQ. Removed inactive datalinks, fixed MAP significance, and adjusted the manuscript format for submission to PASA. Submitted to PASA</arxiv:comment>
+    <arxiv:primary_category term="astro-ph.CO"/>
+    <author>
+      <name>Ryan Camilleri</name>
+    </author>
+    <author>
+      <name>Jaemyoung Lee</name>
+    </author>
+    <author>
+      <name>Tamara Davis</name>
+    </author>
+    <author>
+      <name>David Rubin</name>
+    </author>
+    <author>
+      <name>Paul Shah</name>
+    </author>
+    <author>
+      <name>Dan Scolnic</name>
+    </author>
+    <author>
+      <name>Chris Lidman</name>
+    </author>
+    <author>
+      <name>Brodie Popovic</name>
+    </author>
+    <author>
+      <name>Koby Grech</name>
+    </author>
+    <author>
+      <name>Maria Vincenzi</name>
+    </author>
+    <author>
+      <name>Dillon Brout</name>
+    </author>
+    <author>
+      <name>Maria Acevedo</name>
+    </author>
+    <author>
+      <name>Patrick Armstrong</name>
+    </author>
+    <author>
+      <name>Bruce Bassett</name>
+    </author>
+    <author>
+      <name>Keith Bechtol</name>
+    </author>
+    <author>
+      <name>Rebecca Chen</name>
+    </author>
+    <author>
+      <name>Herman Diehl</name>
+    </author>
+    <author>
+      <name>Josh Frieman</name>
+    </author>
+    <author>
+      <name>Lluís Galbany</name>
+    </author>
+    <author>
+      <name>Anais Möller</name>
+    </author>
+    <author>
+      <name>Masao Sako</name>
+    </author>
+    <author>
+      <name>Bruno Sánchez</name>
+    </author>
+    <author>
+      <name>Mark Sullivan</name>
+    </author>
+    <author>
+      <name>Brad Tucker</name>
+    </author>
+  </entry>
+</feed>

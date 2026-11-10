@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/mqVxYkC6eGRykg1+6WY/oRMIx6Q</id>
+  <title>arXiv Query: search_query=&amp;id_list=2608.25036&amp;start=0&amp;max_results=10</title>
+  <updated>2026-11-10T11:36:29Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=10&amp;id_list=2608.25036" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+  <opensearch:totalResults>1</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2608.25036v3</id>
+    <title>Tidal Demise: The Evolution and Fate of a Hypothetical Venus Moon</title>
+    <updated>2026-09-21T02:51:47Z</updated>
+    <link href="https://arxiv.org/abs/2608.25036v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.25036v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Venus possesses no natural satellite, raising the question whether a formed moon could have survived. We explore the tidal evolution of a Venus-moon system, coupling Venus's spin to the satellite's orbit under tides from the moon and Sun. We survey spin period ($P_0 = 5$--100~hr), moon mass ($M_m = 0.01$--$10~M_{\rm Moon}$), eccentricity, quality factor, and initial semi-major axis under both constant-$Q$ and constant time lag models. Survival depends on competition between outward migration ($\propto M_m$) and synchronous radius expansion ($\propto M_m^2$): for circular orbits around rapidly spinning Venus ($P_0 \lesssim 12$~hr), a lunar-mass satellite survives the age of the Solar System in both models. For $P_0 \lesssim 10$~hr, eccentricity pumping can destabilize low-mass satellites, while for $P_0 \gtrsim 15$~hr or $M_m \gtrsim 2~M_{\rm Moon}$ the synchronous radius overtakes the orbit and drives Roche destruction within $\sim$0.03--1.7~Gyr in the constant-$Q$ model. The constant time lag model instead permits quasi-synchronous survival for massive moons at fast spin. Explaining Venus's present state requires satisfying two constraints simultaneously: loss of the satellite and despinning of an initially rapid rotator. Both are met only within a restricted region of parameter space, favoring moderate post-impact spin periods and lunar-to-super-lunar masses. Giant impact simulations predict spin periods $\gtrsim$12~hr for Venus's present rotation, placing a lunar-mass satellite at the survival boundary. For last-impact conditions within this region, the present absence of a Venusian satellite arises through tidal evolution alone; a subsequent catastrophic stripping event, while capable of removing a moon, is not required.</summary>
+    <category term="astro-ph.EP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-25T18:24:42Z</published>
+    <arxiv:comment>16 pages, 6 figures, 1 table, accepted for publication to ApJ</arxiv:comment>
+    <arxiv:primary_category term="astro-ph.EP"/>
+    <author>
+      <name>Stephen R. Kane</name>
+    </author>
+    <author>
+      <name>Franck Selsis</name>
+    </author>
+    <author>
+      <name>Jeremy Leconte</name>
+    </author>
+    <author>
+      <name>Sean N. Raymond</name>
+    </author>
+  </entry>
+</feed>

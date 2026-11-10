@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/7N8/nLserYkoEzautq28P7bMgD4</id>
+  <title>arXiv Query: search_query=&amp;id_list=2608.02847&amp;start=0&amp;max_results=10</title>
+  <updated>2026-11-10T11:34:18Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=10&amp;id_list=2608.02847" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+  <opensearch:totalResults>1</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2608.02847v1</id>
+    <title>New Spatially Resolved Observations of Betelgeuse from the VLA and ALMA: Evidence for Atmospheric Perturbations from a Close Companion</title>
+    <updated>2026-08-03T20:05:30Z</updated>
+    <link href="https://arxiv.org/abs/2608.02847v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.02847v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present new spatially resolved observations of the red supergiant Betelgeuse ($α$ Orionis) at seven frequencies: 22 GHz ($λ$1.36cm); 44 GHz ($λ$6.8mm); 107 GHz ($λ$2.8mm); 136 GHz ($λ$2.2mm); 224 GHz ($λ$1.3mm); 338 GHz ($λ$0.89mm); and 485 GHz ($λ$0.62mm) using the Karl G. Jansky Very Large Array and the Atacama Large Millimeter/submillimeter Array. These observations (spanning 2021-2026) enable a characterization of the mean brightness temperature ($T_B$), shape, and symmetry of the star's extended atmosphere. At 22 GHz and 44 GHz $T_B$ has increased following the historic lows observed in 2019, just prior to the Great Dimming of late 2019/early 2020. We find that $T_B$ peaks at a larger projected radius ($r\sim2.7R_{\star}$) compared with measurements prior to 2016, consistent with a possible evolution in the atmospheric density profile. In addition we find a systematic decrease in $T_B$ from $\approx3500$K at $\sim2.7R_{\star}$ to $T_{B}\approx$2220K at $\sim1.2R_{\star}$, confirming a previously reported temperature minimum between the photosphere and chromosphere. At all observed frequencies $T_B$ is lower than temperatures inferred from ultraviolet measurements at comparable radii, indicating the continued presence of cooler plasma ($T\le T_{\rm eff}$) mixed with the warmer chromospheric material. The new measurements yield a global spectral index $α=1.35\pm$0.03, with no evidence for a change in $α$ over more than two decades in frequency. Recently, evidence of a close-in companion to Betelgeuse has been reported, with an orbital separation $r\sim2.3R_{\star}$. We have identified a correlation between the ellipticity of Betelgeuse, as obtained from radio measurements, and the companion's orbital phase. The results are consistent with periodic perturbations of the atmosphere by the companion.</summary>
+    <category term="astro-ph.SR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-03T20:05:30Z</published>
+    <arxiv:comment>23 pages, 13 figures, 6 tables. Accepted to the Astronomical Journal</arxiv:comment>
+    <arxiv:primary_category term="astro-ph.SR"/>
+    <author>
+      <name>L. D. Matthews</name>
+      <arxiv:affiliation>MIT Haystack Observatory</arxiv:affiliation>
+    </author>
+    <author>
+      <name>A. K. Dupree</name>
+      <arxiv:affiliation>Center for Astrophysics | Harvard &amp; Smithsonian</arxiv:affiliation>
+    </author>
+    <author>
+      <name>A. M. S. Richards</name>
+      <arxiv:affiliation>Jodrell Bank Centre for Astrophysics, University of Manchester</arxiv:affiliation>
+    </author>
+    <author>
+      <name>W. R. F. Dent</name>
+      <arxiv:affiliation>European Southern Observatory/ALMA</arxiv:affiliation>
+    </author>
+  </entry>
+</feed>

@@ -8,7 +8,7 @@ const { disAgiKes, kok } = require('./yardim');
 
 const V = JSON.parse(fs.readFileSync(path.join(kok, 'veri/haberler.json'), 'utf8'));
 const DERS = new Set(JSON.parse(fs.readFileSync(path.join(kok, 'veri/dersler.json'), 'utf8')).dersler.map(d => d.id));
-const TURLER = ['haber', 'arastirma', 'gorev', 'gokyuzu'];
+const TURLER = ['haber', 'arastirma', 'gorev', 'gokyuzu', 'gorsel', 'etkinlik'];
 const TARIH = /^\d{4}-\d{2}-\d{2}$/;
 const kelime = s => (String(s).match(/\S+/g) || []).length;
 
@@ -28,11 +28,18 @@ test('Veri: her haber eksiksiz, kaynaklı (en az iki https kaynak), tarihli; kim
     expect(h.baslik && h.baslik.length <= 110, ad + ' başlık').toBeTruthy();
     expect(Array.isArray(h.ozet) && h.ozet.length >= 1, ad + ' özet').toBe(true);
     const k = kelime(h.ozet.join(' '));
-    /* arastirma/haberler/YONTEM.md (v2, 30 Ekim 2026: "350–700 words in total, 4–8 paragraphs") */
-    expect(k, ad + ' özet kelime').toBeGreaterThanOrEqual(350);
-    expect(k, ad + ' özet kelime').toBeLessThanOrEqual(700);
-    expect(h.ozet.length, ad + ' paragraf sayısı').toBeGreaterThanOrEqual(4);
-    expect(h.ozet.length, ad + ' paragraf sayısı').toBeLessThanOrEqual(8);
+    if (h.tur === 'gorsel' || h.tur === 'etkinlik') {
+      /* v48 (YONTEM.md "Haftanın görüntüsü", "İstanbul etkinlikleri"): kısa metin, 1–3 paragraf, 60–300 kelime */
+      expect(k, ad + ' özet kelime').toBeGreaterThanOrEqual(60);
+      expect(k, ad + ' özet kelime').toBeLessThanOrEqual(300);
+      expect(h.ozet.length, ad + ' paragraf sayısı').toBeLessThanOrEqual(3);
+    } else {
+      /* arastirma/haberler/YONTEM.md (v2, 30 Ekim 2026: "350–700 words in total, 4–8 paragraphs") */
+      expect(k, ad + ' özet kelime').toBeGreaterThanOrEqual(350);
+      expect(k, ad + ' özet kelime').toBeLessThanOrEqual(700);
+      expect(h.ozet.length, ad + ' paragraf sayısı').toBeGreaterThanOrEqual(4);
+      expect(h.ozet.length, ad + ' paragraf sayısı').toBeLessThanOrEqual(8);
+    }
     if (h.gorsel) {
       const g = h.gorsel;
       expect(g.dosya, ad + ' görsel').toBe('img/haber/' + h.id + '.jpg');
@@ -46,8 +53,30 @@ test('Veri: her haber eksiksiz, kaynaklı (en az iki https kaynak), tarihli; kim
       expect(new URL(g.kaynak_url).hostname, ad + ' görsel kaynağı izin listesinde değil').toMatch(
         /(^|\.)(nasa\.gov|esa\.int|esawebb\.org|esahubble\.org|eso\.org|noirlab\.edu|iau\.org|rubinobservatory\.org|jaxa\.jp|cnsa\.gov\.cn)$/);
     }
-    expect(h.neden_onemli, ad + ' neden önemli').toBeTruthy();
+    if (h.tur !== 'gorsel' && h.tur !== 'etkinlik') expect(h.neden_onemli, ad + ' neden önemli').toBeTruthy();
     if (h.kesinlik) expect(['kesin', 'ön sonuç', 'tartışmalı'], ad).toContain(h.kesinlik);
+    /* v48: "kesin" olmayan her etiketin nedeni yazılı; yalnız "hakem" nedeni makale yayımlanınca kalkar (haber_dogrula.py) */
+    if (h.kesinlik && h.kesinlik !== 'kesin') expect(['hakem', 'aday', 'benzetim', 'tartisma', 'dogrulanmamis'], ad + ' kesinlik_neden').toContain(h.kesinlik_neden);
+    if (h.kesinlik === 'kesin') expect(h.kesinlik_neden, ad).toBeUndefined();
+    if (h.makale && h.makale.hakemli) {
+      const m = h.makale;
+      expect(m.doi, ad + ' doi').toMatch(/^10\.\d{4,9}\//);
+      expect(TARIH.test(m.yayin_tarihi), ad + ' yayın tarihi').toBe(true);
+      expect(m.dergi, ad).not.toMatch(/arXiv|ön baskı/i);
+      if (m.lisans) expect(m.lisans.ad && /^https:\/\//.test(m.lisans.url), ad + ' lisans').toBeTruthy();
+      expect(h.kesinlik_neden, ad + ' hakemli makalede "hakem" nedeni kalmaz').not.toBe('hakem');
+    }
+    (h.guncellemeler || []).forEach(n => { expect(TARIH.test(n.tarih), ad).toBe(true); expect(n.metin, ad).toMatch(/^Güncelleme \(\d{1,2} [A-ZÇĞİÖŞÜ][a-zçğıöşü]+ \d{4}\): /); });
+    if (h.tur === 'gorsel') {
+      expect(h.gorsel && h.gorsel.apod && h.gorsel.apod.url, ad + ' APOD bağlantısı').toMatch(/^https:\/\/science\.nasa\.gov\//);
+      expect(h.gorsel.apod.kredi_satiri, ad).toBeTruthy();
+      expect(h.gorsel.apod.kredi_satiri, ad + ' Copyright').not.toMatch(/copyright/i);
+    }
+    if (h.tur === 'etkinlik') {
+      const e = h.etkinlik;
+      expect(e && e.yer && TARIH.test(String(e.baslangic).slice(0, 10)) && e.saat && e.basvuru && e.ucret, ad + ' etkinlik alanları').toBeTruthy();
+      expect(e.kaynak_url, ad).toMatch(/^https:\/\//);
+    }
     expect(h.kaynaklar.length, ad + ' kaynak').toBeGreaterThanOrEqual(2);
     h.kaynaklar.forEach(s => { expect(s.ad, ad).toBeTruthy(); expect(s.url, ad).toMatch(/^https:\/\//); });
     if (h.makale) expect(h.makale.url, ad + ' makale').toMatch(/^https:\/\//);

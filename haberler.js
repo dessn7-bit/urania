@@ -10,8 +10,11 @@
     haber: { ad: 'Keşif', cogul: 'Keşifler' },
     arastirma: { ad: 'Araştırma', cogul: 'Araştırmalar' },
     gorev: { ad: 'Uzay görevi', cogul: 'Uzay görevleri' },
-    gokyuzu: { ad: 'Gökyüzü', cogul: 'Gökyüzü' }
+    gokyuzu: { ad: 'Gökyüzü', cogul: 'Gökyüzü' },
+    gorsel: { ad: 'Haftanın görüntüsü', cogul: 'Görüntüler' },        // v48: APOD'dan, yalnız ajans kredili görseller
+    etkinlik: { ad: 'Etkinlik', cogul: 'Etkinlikler' }               // v48: İstanbul'da halka açık gözlem etkinlikleri
   };
+  const SIRA = ['hepsi', 'haber', 'arastirma', 'gorev', 'gokyuzu', 'gorsel', 'etkinlik'];
   const KESINLIK = { 'ön sonuç': 'Ön sonuç: henüz hakem değerlendirmesinden geçmedi ya da doğrulanmayı bekliyor', 'tartışmalı': 'Tartışmalı: bilim insanları bu sonuç üzerinde anlaşmış değil' };
   const AYLAR = new Intl.DateTimeFormat('tr-TR', { month: 'long', year: 'numeric', timeZone: 'UTC' });
   const GUN = new Intl.DateTimeFormat('tr-TR', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
@@ -45,17 +48,41 @@
     const g = h.gorsel;
     if (!g || typeof g.dosya !== 'string' || !/^img\/haber\/[a-z0-9-]+\.jpg$/.test(g.dosya)) return '';
     return `<figure class="hb-gorsel"><img src="./${g.dosya}" alt="${U.kacis(g.alt || '')}" loading="lazy" decoding="async">
-      <figcaption>${g.aciklama ? `<span class="okunur">${U.kacis(g.aciklama)}</span> ` : ''}<span class="hb-kredi">Görsel: ${g.kaynak_url ? `<a href="${U.guvenliUrl(g.kaynak_url)}" target="_blank" rel="noopener">${U.kacis(g.kredi || 'kaynak')}</a>` : U.kacis(g.kredi || '')}${g.lisans ? ' · ' + U.kacis(g.lisans) : ''}</span></figcaption></figure>`;
+      <figcaption>${g.aciklama ? `<span class="okunur">${U.kacis(g.aciklama)}</span> ` : ''}<span class="hb-kredi">Görsel: ${g.kaynak_url ? `<a href="${U.guvenliUrl(g.kaynak_url)}" target="_blank" rel="noopener">${U.kacis(g.kredi || 'kaynak')}</a>` : U.kacis(g.kredi || '')}${g.lisans ? ' · ' + U.kacis(g.lisans) : ''}${g.apod && g.apod.url ? ` · <a href="${U.guvenliUrl(g.apod.url)}" target="_blank" rel="noopener">APOD, ${U.kacis(gun(g.apod.tarih))}</a>` : ''}</span></figcaption></figure>`;
+  }
+  /* Makale satırının eki: dergi, cilt ve sayfa, yayın tarihi, hakemli, lisans (Crossref'ten, haber_dogrula.py) */
+  function makaleEk(mk) {
+    const ls = [];
+    if (mk.dergi) ls.push(U.kacis(mk.dergi) + (mk.cilt ? ' ' + U.kacis(mk.cilt) + (mk.sayfa ? ', ' + U.kacis(mk.sayfa) : '') : ''));
+    if (mk.yayin_tarihi) ls.push(U.kacis(gun(mk.yayin_tarihi)));
+    if (mk.hakemli) ls.push('hakemli');
+    if (mk.lisans && mk.lisans.ad) ls.push(mk.lisans.url ? `<a href="${U.guvenliUrl(mk.lisans.url)}" target="_blank" rel="noopener">${U.kacis(mk.lisans.ad)}</a>` : U.kacis(mk.lisans.ad));
+    if (mk.doi) ls.push('DOI ' + U.kacis(mk.doi));
+    return ls.length ? ` <span class="soluk">(${ls.join('; ')})</span>` : '';
+  }
+  /* Etkinlik bitti mi: bitiş günü (yoksa başlangıç) İstanbul saatiyle geçtiyse "Geçti" */
+  function bugunIst() { return new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Istanbul', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date()); }
+  function gectiMi(h) { const e = h.etkinlik; if (!e) return false; const son = String(e.bitis || e.baslangic || '').slice(0, 10); return !!son && son < bugunIst(); }
+  function etkinlikHtml(h) {
+    const e = h.etkinlik; if (!e) return '';
+    const tarih = gun(e.baslangic) + (e.bitis && String(e.bitis).slice(0, 10) !== String(e.baslangic).slice(0, 10) ? '–' + gun(e.bitis) : '');
+    const satir = (ad, d) => d ? `<dt>${ad}</dt><dd>${d}</dd>` : '';
+    return `<dl class="hb-etkinlik">${satir('Yer', U.kacis(e.yer || ''))}${satir('Tarih', U.kacis(tarih))}${satir('Saat', U.kacis(e.saat || ''))}${satir('Başvuru', U.kacis(e.basvuru || ''))}${satir('Ücret', U.kacis(e.ucret || ''))}${e.kaynak_url ? satir('Duyuru', `<a href="${U.guvenliUrl(e.kaynak_url)}" target="_blank" rel="noopener">${U.kacis(e.kaynak_ad || 'resmî sayfa')}</a>`) : ''}</dl>`;
   }
   function kartHtml(h, son) {
     const tur = TUR[h.tur] || TUR.haber;
     const p = Array.isArray(h.ozet) ? h.ozet : [String(h.ozet || '')];
     const kes = kendi(KESINLIK, h.kesinlik) ? `<span class="rozet uyari" title="${U.kacis(KESINLIK[h.kesinlik])}">${U.kacis(h.kesinlik === 'ön sonuç' ? 'Ön sonuç' : 'Tartışmalı')}</span>` : '';
-    const m = h.makale && h.makale.url ? `<p class="hb-makale okunur"><b>Makale:</b> ${U.kacis(h.makale.yazarlar || '')}${h.makale.yazarlar ? ', ' : ''}<a href="${U.guvenliUrl(h.makale.url)}" target="_blank" rel="noopener">${U.kacis(h.makale.baslik || 'makale')}</a>${h.makale.dergi ? ` <span class="soluk">(${U.kacis(h.makale.dergi)})</span>` : ''}</p>` : '';
-    return `<article class="haber" id="h-${U.kacis(h.id)}" data-id="${U.kacis(h.id)}" data-tur="${U.kacis(h.tur)}">
-      <p class="hb-ust"><span class="rozet">${U.kacis(tur.ad)}</span>${kes}${yeniMi(h, son) ? '<span class="rozet iyi">Yeni</span>' : ''}<time datetime="${U.kacis(h.tarih)}">${U.kacis(gun(h.tarih))}</time></p>
+    const m = h.makale && h.makale.url ? `<p class="hb-makale okunur"><b>Makale:</b> ${U.kacis(h.makale.yazarlar || '')}${h.makale.yazarlar ? ', ' : ''}<a href="${U.guvenliUrl(h.makale.url)}" target="_blank" rel="noopener">${U.kacis(h.makale.baslik || 'makale')}</a>${makaleEk(h.makale)}</p>` : '';
+    /* v48: makale durumu güncellemesi (araclar/haber_dogrula.py) kartta görünür */
+    const gn = (Array.isArray(h.guncellemeler) ? h.guncellemeler : []).filter(n => n && n.metin).map(n => `<p class="hb-guncelleme okunur">${U.kacis(n.metin)}</p>`).join('');
+    const gecti = h.tur === 'etkinlik' && gectiMi(h);
+    return `<article class="haber${gecti ? ' hb-gecti' : ''}" id="h-${U.kacis(h.id)}" data-id="${U.kacis(h.id)}" data-tur="${U.kacis(h.tur)}">
+      <p class="hb-ust"><span class="rozet">${U.kacis(tur.ad)}</span>${kes}${gecti ? '<span class="rozet hb-gecti-rozet">Geçti</span>' : ''}${yeniMi(h, son) ? '<span class="rozet iyi">Yeni</span>' : ''}<time datetime="${U.kacis(h.tarih)}">${U.kacis(gun(h.tarih))}</time></p>
       <h2 class="okunur">${U.kacis(h.baslik)}</h2>
+      ${gn}
       ${gorselHtml(h)}
+      ${etkinlikHtml(h)}
       <p class="hb-giris okunur">${U.kacis(p[0] || '')}</p>
       <details class="hb-ac">
         <summary><span class="hb-ac-yazi">Devamını oku</span></summary>
@@ -89,7 +116,7 @@
     el.innerHTML = `<h1>Haberler</h1>
       <p class="alt-baslik">Güncel astronomi haberleri ve araştırmalar, sade Türkçeyle. Her hafta güncellenir${V.guncelleme ? '; son güncelleme ' + U.kacis(gun(V.guncelleme)) : ''}.</p>
       <div class="cip-grup hb-filtre" role="group" aria-label="Haber türü">
-        ${['hepsi', 'haber', 'arastirma', 'gorev', 'gokyuzu'].filter(t => t === 'hepsi' || sayi(t)).map(t => `<button type="button" class="dugme" data-f="${t}" aria-pressed="${t === f}">${t === 'hepsi' ? 'Tümü' : TUR[t].cogul} <span class="soluk">${sayi(t)}</span></button>`).join('')}
+        ${SIRA.filter(t => t === 'hepsi' || sayi(t)).map(t => `<button type="button" class="dugme" data-f="${t}" aria-pressed="${t === f}">${t === 'hepsi' ? 'Tümü' : TUR[t].cogul} <span class="soluk">${sayi(t)}</span></button>`).join('')}
       </div>
       <div class="hb-liste">${govde || '<p class="bos">Bu türde haber yok.</p>'}</div>
       <p class="kaynak hb-not">Her haber en az iki kaynakla doğrulanır; ön baskılar (henüz hakem değerlendirmesinden geçmemiş makaleler) “Ön sonuç” diye işaretlidir. Altı noktalı çizili sözcüklere dokununca Astro sözlükteki tanımı açılır.</p>`;
