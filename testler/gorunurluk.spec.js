@@ -400,3 +400,12 @@ test('v47: değişen üyeler VSX aralığıyla işaretli; görünürlük hesabı
   expect(m6.uyeler).toContain(6.46);
   expect(m6.uyeler).not.toContain(6.01);
 });
+
+test('v47: başka kümeye ya da dürbün alanının dışına düşen yıldız üye yoluna katılmaz (HD 14443 yalnız NGC 884\'te)', () => {
+  const K = VERI.kumeUyeleri;
+  expect(K['NGC 869'].uyeler.map(u => u.ad)).not.toContain('HD 14443');
+  expect(K['NGC 869'].boyutDisi).toContain('HD 14443');
+  expect(K['NGC 884'].uyeler.map(u => u.ad)).toContain('HD 14443');
+  expect(K.M44.boyutDisi).toContain('HD 80024A');
+  for (const [id, k] of Object.entries(K)) for (const u of k.uyeler) if (u.merkezeDk != null) expect(u.merkezeDk, id + ' ' + u.ad).toBeLessThanOrEqual(Math.max(3.2 * 60, 3 * (k.yaricapDk || 0)) + 0.1);
+});
