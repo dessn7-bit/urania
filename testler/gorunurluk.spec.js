@@ -136,8 +136,10 @@ test('v46: Yeni Ay, 17,9 gök, 40° yükseklik — M44 görünür (üye yolu), M
   const m42 = G.degerlendir(hv('M42'), ortam);
   expect(m42.etiket).not.toBe('gorunmez');
   expect(m42.yol).toBe('uye');
-  expect(VERI.kumeUyeleri.M42.uyeler[0].ad).toBe('* tet01 Ori C');
-  expect(VERI.kumeUyeleri.M42.uyeler[0].V).toBeCloseTo(5.13, 2);
+  /* v47: θ² Ori A için SIMBAD 6,39 yanlıştı; Hipparcos 4,98 (BSC 5,08) seçildi → en parlak üye artık θ² Ori A */
+  expect(VERI.kumeUyeleri.M42.uyeler[0].ad).toBe('* tet02 Ori A');
+  expect(VERI.kumeUyeleri.M42.uyeler[0].V).toBeCloseTo(4.98, 2);
+  expect(VERI.kumeUyeleri.M42.uyeler[1].ad).toBe('* tet01 Ori C');
   const m31 = G.degerlendir(hv('M31'), ortam);
   expect(m31.etiket).not.toBe('gorunmez');
   expect(m31.yol).toBe('profil');
@@ -343,4 +345,58 @@ test('Gizlilik ve CSP: fixture dosyalarında gözlemci alanı yok; CSP connect-s
   await kur(page, { sqm: 20.5 });
   await expect(page.locator('#gkGokParlakligi')).toContainText('yaklaşık 20,5 kadir/yay sn² (elle girilen değer)');
   expect(page.hatalar).toEqual([]);
+});
+
+/* v47 küme üye parlaklıkları: SIMBAD V ikinci katalogla (Hipparcos I/239, BSC V/50, Tycho) denetlendi */
+test('v47: küme üyeleri — 0,15 kadirden büyük farkta iki kaynak da dosyada ve gerekçe yazılı; θ² Ori A Hipparcos 4,98', () => {
+  const K = VERI.kumeUyeleri;
+  let farkli = 0;
+  for (const [id, k] of Object.entries(K)) {
+    for (const u of k.uyeler) {
+      const vals = Object.values(u.kataloglar || {}).map(x => x.V);
+      if (!vals.length) { expect(u.denetim, id + ' ' + u.ad).toMatch(/bulunamadı/); continue; }
+      const fark = Math.max(...vals.map(x => Math.abs(x - u.Vsimbad)));   // SIMBAD ile her katalog arasındaki en büyük fark
+      if (fark > 0.15 + 1e-9) {
+        farkli++;
+        expect(u.gerekce, id + ' ' + u.ad).toMatch(/en büyük fark .* > 0\.15/);
+        expect(Number.isFinite(u.Vsimbad), id + ' ' + u.ad).toBe(true);
+        expect(Object.keys(u.kataloglar).length, id + ' ' + u.ad).toBeGreaterThan(0);
+      } else {
+        expect(u.V, id + ' ' + u.ad).toBeCloseTo(u.Vsimbad, 3);   // fark küçükse SIMBAD değeri kalır
+      }
+    }
+    /* üyeler parlaklık sırasında */
+    const v = k.uyeler.map(u => u.V);
+    expect(v, id).toEqual(v.slice().sort((a, b) => a - b));
+  }
+  expect(farkli).toBeGreaterThan(5);
+  const t2 = K.M42.uyeler.find(u => u.ad === '* tet02 Ori A');
+  expect(t2.Vsimbad).toBeCloseTo(6.39, 2);
+  expect(t2.kataloglar.Hipparcos.V).toBeCloseTo(4.98, 2);
+  expect(t2.kataloglar.BSC.V).toBeCloseTo(5.08, 2);
+  expect(t2.V).toBeCloseTo(4.98, 2);
+});
+
+test('v47: değişen üyeler VSX aralığıyla işaretli; görünürlük hesabı V bandındaki sönük ucu kullanır (BM Sco 5,25–6,46)', () => {
+  const bm = VERI.kumeUyeleri.M6.uyeler.find(u => u.ad === 'V* BM Sco');
+  expect(bm.Vsimbad).toBeCloseTo(5.6, 2);
+  expect(bm.kataloglar.Hipparcos.V).toBeCloseTo(6.01, 2);
+  expect(bm.V).toBeCloseTo(6.01, 2);
+  expect(bm.degisen.vsx).toBe('BM Sco');
+  expect(bm.degisen.enParlak).toBeCloseTo(5.25, 2);
+  expect(bm.degisen.enSonuk).toBeCloseTo(6.46, 2);
+  expect(bm.Vhesap).toBeCloseTo(6.46, 2);
+  /* genlik olarak verilen VSX aralığı (f_min dolu): sönük uç = en parlak + genlik */
+  const c39 = VERI.kumeUyeleri.M44.uyeler.find(u => u.ad === '* 39 Cnc');
+  expect(c39.degisen.genlik).toBeCloseTo(0.04, 3);
+  expect(c39.degisen.enSonuk).toBeCloseTo(6.43, 3);
+  for (const k of Object.values(VERI.kumeUyeleri)) for (const u of k.uyeler) {
+    if (!u.degisen) continue;
+    if (u.degisen.enSonuk != null) expect(u.degisen.enSonuk, u.ad).toBeGreaterThanOrEqual(u.degisen.enParlak);
+    if (Number.isFinite(u.Vhesap)) expect(u.Vhesap, u.ad).toBeGreaterThanOrEqual(u.V);
+  }
+  /* hedefVerisi: görünürlük üyeleri Vhesap'ı kullanır */
+  const m6 = hv('M6');
+  expect(m6.uyeler).toContain(6.46);
+  expect(m6.uyeler).not.toContain(6.01);
 });

@@ -3,12 +3,15 @@
  "kaynak": {
   "servis": "SIMBAD TAP (CfA aynası) https://simbad.cfa.harvard.edu/simbad/sim-tap/sync",
   "uyelik": "SIMBAD h_link (yayımlanmış üyelik listeleri; bibcode her yıldızda)",
-  "parlaklik": "SIMBAD allfluxes.V",
+  "parlaklik": "SIMBAD allfluxes.V; v47: Hipparcos (I/239), BSC (V/50), Tycho-2 (I/259) ile çapraz denetim, fark > 0.15 kadirde kaynakların ortancasına en yakın güvenilir değer (Hipparcos > BSC > Tycho-1 > Tycho-2 > SIMBAD)",
+  "degisen": "AAVSO VSX, VizieR B/vsx kopyası (10″ koni); görünürlük hesabında V bandındaki aralığın sönük ucu (Vhesap)",
+  "vizier": "https://vizier.cfa.harvard.edu/viz-bin/asu-tsv",
+  "tycho2Donusum": "V = VT - 0.090*(BT-VT) (VizieR I/259 ReadMe, Note 7; ESA SP-1200 Vol. 1 §1.3)",
   "atif": "This research has made use of the SIMBAD database, operated at CDS, Strasbourg, France (Wenger et al. 2000, A&AS 143, 9)."
  },
  "uyelikEsigi": 50,
  "uretim": {
-  "tarih": "2026-11-09",
+  "tarih": "2026-11-10",
   "arac": "araclar/kume_uyeleri.py"
  },
  "kumeler": {
@@ -21,7 +24,42 @@
      "uyelik": 100,
      "kaynaklar": [
       "2007ApJS..172..663S"
-     ]
+     ],
+     "Vsimbad": 2.87,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 2.85,
+       "kimlik": "HIP 17702",
+       "kaynakBayragi": "H"
+      },
+      "BSC": {
+       "V": 2.87,
+       "kimlik": "HR 1165"
+      },
+      "Tycho-2": {
+       "V": 2.84,
+       "kimlik": "TYC 1800-2202-1",
+       "VT": 2.834,
+       "BT": 2.77
+      },
+      "Tycho-1": {
+       "V": 2.88,
+       "kimlik": "TYC 1800-2202-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Hipparcos, BSC, Tycho-2, Tycho-1 ile en çok 0.03 kadir fark; SIMBAD değeri kaldı",
+     "degisen": {
+      "vsx": "eta Tau",
+      "tur": "ROT+SPB",
+      "enParlak": 2.87,
+      "enSonuk": 2.871,
+      "bant": "V",
+      "kaynak": "AAVSO VSX (VizieR B/vsx)",
+      "not": "aralık V bandında değil ya da sönük uç yok; hesapta seçilen V kullanılır",
+      "genlik": 0.001
+     }
     },
     {
      "ad": "* 27 Tau",
@@ -34,7 +72,42 @@
       "2022ApJS..262....7H",
       "2024A&A...691A..28K",
       "2007ApJS..172..663S"
-     ]
+     ],
+     "Vsimbad": 3.63,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 3.62,
+       "kimlik": "HIP 17847",
+       "kaynakBayragi": "H"
+      },
+      "BSC": {
+       "V": 3.63,
+       "kimlik": "HR 1178"
+      },
+      "Tycho-2": {
+       "V": 3.609,
+       "kimlik": "TYC 1800-2203-1",
+       "VT": 3.601,
+       "BT": 3.517
+      },
+      "Tycho-1": {
+       "V": 3.63,
+       "kimlik": "TYC 1800-2203-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Hipparcos, BSC, Tycho-2, Tycho-1 ile en çok 0.02 kadir fark; SIMBAD değeri kaldı",
+     "degisen": {
+      "vsx": "NSV 1345",
+      "tur": "SPB",
+      "enParlak": 3.63,
+      "enSonuk": 3.639,
+      "bant": "V",
+      "kaynak": "AAVSO VSX (VizieR B/vsx)",
+      "not": "aralık V bandında değil ya da sönük uç yok; hesapta seçilen V kullanılır",
+      "genlik": 0.009
+     }
     },
     {
      "ad": "* 17 Tau",
@@ -47,7 +120,42 @@
       "2023A&A...678A..75Z",
       "2021ApJS..257...46G",
       "2020A&A...638A...9R"
-     ]
+     ],
+     "Vsimbad": 3.7,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 3.72,
+       "kimlik": "HIP 17499",
+       "kaynakBayragi": "H"
+      },
+      "BSC": {
+       "V": 3.7,
+       "kimlik": "HR 1142"
+      },
+      "Tycho-2": {
+       "V": 3.684,
+       "kimlik": "TYC 1799-1441-1",
+       "VT": 3.674,
+       "BT": 3.558
+      },
+      "Tycho-1": {
+       "V": 3.71,
+       "kimlik": "TYC 1799-1441-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Hipparcos, BSC, Tycho-2, Tycho-1 ile en çok 0.02 kadir fark; SIMBAD değeri kaldı",
+     "degisen": {
+      "vsx": "NSV 15755",
+      "tur": "SPB",
+      "enParlak": 3.7,
+      "enSonuk": 3.701,
+      "bant": "V",
+      "kaynak": "AAVSO VSX (VizieR B/vsx)",
+      "not": "aralık V bandında değil ya da sönük uç yok; hesapta seçilen V kullanılır",
+      "genlik": 0.001
+     }
     },
     {
      "ad": "* 20 Tau",
@@ -60,7 +168,42 @@
       "2022ApJS..262....7H",
       "2023A&A...678A..75Z",
       "2021ApJS..257...46G"
-     ]
+     ],
+     "Vsimbad": 3.87,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 3.87,
+       "kimlik": "HIP 17573",
+       "kaynakBayragi": "H"
+      },
+      "BSC": {
+       "V": 3.87,
+       "kimlik": "HR 1149"
+      },
+      "Tycho-2": {
+       "V": 3.856,
+       "kimlik": "TYC 1799-1439-1",
+       "VT": 3.849,
+       "BT": 3.775
+      },
+      "Tycho-1": {
+       "V": 3.88,
+       "kimlik": "TYC 1799-1439-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Hipparcos, BSC, Tycho-2, Tycho-1 ile en çok 0.01 kadir fark; SIMBAD değeri kaldı",
+     "degisen": {
+      "vsx": "NSV 1279",
+      "tur": "ACV",
+      "enParlak": 3.87,
+      "enSonuk": 3.874,
+      "bant": "V",
+      "kaynak": "AAVSO VSX (VizieR B/vsx)",
+      "not": "aralık V bandında değil ya da sönük uç yok; hesapta seçilen V kullanılır",
+      "genlik": 0.004
+     }
     },
     {
      "ad": "* 23 Tau",
@@ -69,11 +212,47 @@
      "kaynaklar": [
       "2007ApJS..172..663S",
       "2023A&A...678A..75Z"
-     ]
+     ],
+     "Vsimbad": 4.18,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 4.14,
+       "kimlik": "HIP 17608",
+       "kaynakBayragi": "H"
+      },
+      "BSC": {
+       "V": 4.18,
+       "kimlik": "HR 1156"
+      },
+      "Tycho-2": {
+       "V": 4.158,
+       "kimlik": "TYC 1800-2204-1",
+       "VT": 4.152,
+       "BT": 4.085
+      },
+      "Tycho-1": {
+       "V": 4.17,
+       "kimlik": "TYC 1800-2204-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Hipparcos, BSC, Tycho-2, Tycho-1 ile en çok 0.04 kadir fark; SIMBAD değeri kaldı",
+     "degisen": {
+      "vsx": "V0971 Tau",
+      "tur": "SPB|LERI",
+      "enParlak": 4.18,
+      "enSonuk": 4.191,
+      "bant": "V",
+      "kaynak": "AAVSO VSX (VizieR B/vsx)",
+      "not": "aralık V bandında değil ya da sönük uç yok; hesapta seçilen V kullanılır",
+      "genlik": 0.011
+     }
     }
    ],
    "toplam": 45,
    "hamSatir": 400,
+   "denetlenenAday": 15,
    "uyelikKaynagi": "SIMBAD h_link, üyelik ≥ 50 (kaynak bibcode her yıldızda)"
   },
   "M44": {
@@ -103,7 +282,32 @@
       "2013MNRAS.434.3236K",
       "2022A&A...659A..59T",
       "2014ApJ...784...57W"
-     ]
+     ],
+     "Vsimbad": 6.29,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 6.29,
+       "kimlik": "HIP 42556",
+       "kaynakBayragi": "H"
+      },
+      "BSC": {
+       "V": 6.3,
+       "kimlik": "HR 3429"
+      },
+      "Tycho-2": {
+       "V": 6.266,
+       "kimlik": "TYC 1395-2733-1",
+       "VT": 6.284,
+       "BT": 6.487
+      },
+      "Tycho-1": {
+       "V": 6.29,
+       "kimlik": "TYC 1395-2733-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Hipparcos, BSC, Tycho-2, Tycho-1 ile en çok 0.02 kadir fark; SIMBAD değeri kaldı"
     },
     {
      "ad": "* 39 Cnc",
@@ -130,7 +334,42 @@
       "2020A&A...633A..99C",
       "2021ApJS..257...46G",
       "2022A&A...659A..59T"
-     ]
+     ],
+     "Vsimbad": 6.39,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 6.39,
+       "kimlik": "HIP 42516",
+       "kaynakBayragi": "G"
+      },
+      "BSC": {
+       "V": 6.39,
+       "kimlik": "HR 3427"
+      },
+      "Tycho-2": {
+       "V": 6.371,
+       "kimlik": "TYC 1398-27-1",
+       "VT": 6.474,
+       "BT": 7.616
+      },
+      "Tycho-1": {
+       "V": 6.37,
+       "kimlik": "TYC 1398-27-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Hipparcos, BSC, Tycho-2, Tycho-1 ile en çok 0.02 kadir fark; SIMBAD değeri kaldı",
+     "degisen": {
+      "vsx": "NSV 4179",
+      "tur": "",
+      "enParlak": 6.39,
+      "enSonuk": 6.43,
+      "bant": "V",
+      "kaynak": "AAVSO VSX (VizieR B/vsx)",
+      "genlik": 0.04
+     },
+     "Vhesap": 6.43
     },
     {
      "ad": "HD 73710",
@@ -159,7 +398,32 @@
       "2020A&A...640A...1C",
       "2017A&A...601A..19G",
       "2022A&A...659A..59T"
-     ]
+     ],
+     "Vsimbad": 6.39,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 6.42,
+       "kimlik": "HIP 42549",
+       "kaynakBayragi": "H"
+      },
+      "BSC": {
+       "V": 6.44,
+       "kimlik": "HR 3428"
+      },
+      "Tycho-2": {
+       "V": 6.417,
+       "kimlik": "TYC 1395-2963-1",
+       "VT": 6.523,
+       "BT": 7.696
+      },
+      "Tycho-1": {
+       "V": 6.43,
+       "kimlik": "TYC 1395-2963-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Hipparcos, BSC, Tycho-2, Tycho-1 ile en çok 0.05 kadir fark; SIMBAD değeri kaldı"
     },
     {
      "ad": "* 35 Cnc",
@@ -187,7 +451,32 @@
       "2025A&A...694A.258R",
       "2022ApJ...931...45N",
       "2021MNRAS.503.3279S"
-     ]
+     ],
+     "Vsimbad": 6.558,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 6.55,
+       "kimlik": "HIP 42133",
+       "kaynakBayragi": "H"
+      },
+      "BSC": {
+       "V": 6.58,
+       "kimlik": "HR 3387"
+      },
+      "Tycho-2": {
+       "V": 6.568,
+       "kimlik": "TYC 1395-2327-1",
+       "VT": 6.637,
+       "BT": 7.406
+      },
+      "Tycho-1": {
+       "V": 6.57,
+       "kimlik": "TYC 1395-2327-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Hipparcos, BSC, Tycho-2, Tycho-1 ile en çok 0.02 kadir fark; SIMBAD değeri kaldı"
     },
     {
      "ad": "HD 73598",
@@ -207,11 +496,42 @@
       "2021A&A...647A..19T",
       "2020A&A...633A..99C",
       "2021ApJS..257...46G"
-     ]
+     ],
+     "Vsimbad": 6.6,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 6.59,
+       "kimlik": "HIP 42497",
+       "kaynakBayragi": "G"
+      },
+      "Tycho-2": {
+       "V": 6.573,
+       "kimlik": "TYC 1395-2737-1",
+       "VT": 6.671,
+       "BT": 7.757
+      },
+      "Tycho-1": {
+       "V": 6.6,
+       "kimlik": "TYC 1395-2737-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Hipparcos, Tycho-2, Tycho-1 ile en çok 0.03 kadir fark; SIMBAD değeri kaldı",
+     "degisen": {
+      "vsx": "NSV 4171",
+      "tur": "",
+      "enParlak": 6.52,
+      "enSonuk": 6.61,
+      "bant": "V",
+      "kaynak": "AAVSO VSX (VizieR B/vsx)"
+     },
+     "Vhesap": 6.61
     }
    ],
    "toplam": 29,
    "hamSatir": 400,
+   "denetlenenAday": 15,
    "uyelikKaynagi": "SIMBAD h_link, üyelik ≥ 50 (kaynak bibcode her yıldızda)"
   },
   "M6": {
@@ -219,7 +539,7 @@
    "uyeler": [
     {
      "ad": "V* BM Sco",
-     "V": 5.6,
+     "V": 6.01,
      "uyelik": 100,
      "kaynaklar": [
       "2020A&A...640A...1C",
@@ -234,7 +554,38 @@
       "2018A&A...616A..10G",
       "2008AJ....136..118F",
       "2020A&A...633A..99C"
-     ]
+     ],
+     "Vsimbad": 5.6,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 6.01,
+       "kimlik": "HIP 86527",
+       "kaynakBayragi": "T"
+      },
+      "Tycho-2": {
+       "V": 6.042,
+       "kimlik": "TYC 7380-218-1",
+       "VT": 6.226,
+       "BT": 8.273
+      },
+      "Tycho-1": {
+       "V": 6.02,
+       "kimlik": "TYC 7380-218-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "Hipparcos",
+     "fark": -0.41,
+     "gerekce": "Kaynaklar SIMBAD 5.60, Hipparcos 6.01, Tycho-2 6.04, Tycho-1 6.02; en büyük fark 0.44 > 0.15. Ortanca 6.01; ortancaya 0.15 içinde kalan ilk kaynak Hipparcos seçildi (Urania'nın kuralı: Hipparcos > BSC > Tycho-1 > Tycho-2 > SIMBAD).",
+     "degisen": {
+      "vsx": "BM Sco",
+      "tur": "L",
+      "enParlak": 5.25,
+      "enSonuk": 6.46,
+      "bant": "V",
+      "kaynak": "AAVSO VSX (VizieR B/vsx)"
+     },
+     "Vhesap": 6.46
     },
     {
      "ad": "HD 156325",
@@ -242,7 +593,41 @@
      "uyelik": 100,
      "kaynaklar": [
       "2019AJ....158..122K"
-     ]
+     ],
+     "Vsimbad": 6.367,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 6.36,
+       "kimlik": "HIP 84650",
+       "kaynakBayragi": "H"
+      },
+      "BSC": {
+       "V": 6.36,
+       "kimlik": "HR 6422"
+      },
+      "Tycho-2": {
+       "V": 6.371,
+       "kimlik": "TYC 7366-475-1",
+       "VT": 6.381,
+       "BT": 6.497
+      },
+      "Tycho-1": {
+       "V": 6.37,
+       "kimlik": "TYC 7366-475-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Hipparcos, BSC, Tycho-2, Tycho-1 ile en çok 0.01 kadir fark; SIMBAD değeri kaldı",
+     "degisen": {
+      "vsx": "V1077 Sco",
+      "tur": "BE",
+      "enParlak": 6.36,
+      "enSonuk": 6.44,
+      "bant": "Hp",
+      "kaynak": "AAVSO VSX (VizieR B/vsx)",
+      "not": "aralık V bandında değil ya da sönük uç yok; hesapta seçilen V kullanılır"
+     }
     },
     {
      "ad": "HD 160748",
@@ -250,7 +635,41 @@
      "uyelik": 100,
      "kaynaklar": [
       "2022ApJ...931..156P"
-     ]
+     ],
+     "Vsimbad": 6.45,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 6.44,
+       "kimlik": "HIP 86716",
+       "kaynakBayragi": "H"
+      },
+      "BSC": {
+       "V": 6.4,
+       "kimlik": "HR 6587"
+      },
+      "Tycho-2": {
+       "V": 6.451,
+       "kimlik": "TYC 7381-742-1",
+       "VT": 6.645,
+       "BT": 8.805
+      },
+      "Tycho-1": {
+       "V": 6.43,
+       "kimlik": "TYC 7381-742-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Hipparcos, BSC, Tycho-2, Tycho-1 ile en çok 0.05 kadir fark; SIMBAD değeri kaldı",
+     "degisen": {
+      "vsx": "NSV 23517",
+      "tur": "",
+      "enParlak": 6.44,
+      "enSonuk": 6.5,
+      "bant": "Hp",
+      "kaynak": "AAVSO VSX (VizieR B/vsx)",
+      "not": "aralık V bandında değil ya da sönük uç yok; hesapta seçilen V kullanılır"
+     }
     },
     {
      "ad": "HD 160202",
@@ -258,7 +677,37 @@
      "uyelik": 61,
      "kaynaklar": [
       "2018A&A...615A..49C"
-     ]
+     ],
+     "Vsimbad": 6.75,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 6.74,
+       "kimlik": "HIP 86468",
+       "kaynakBayragi": "H"
+      },
+      "Tycho-2": {
+       "V": 6.732,
+       "kimlik": "TYC 7380-725-1",
+       "VT": 6.731,
+       "BT": 6.719
+      },
+      "Tycho-1": {
+       "V": 6.73,
+       "kimlik": "TYC 7380-725-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Hipparcos, Tycho-2, Tycho-1 ile en çok 0.02 kadir fark; SIMBAD değeri kaldı",
+     "degisen": {
+      "vsx": "V0862 Sco",
+      "tur": "GCAS:",
+      "enParlak": 6.63,
+      "enSonuk": 6.76,
+      "bant": "V",
+      "kaynak": "AAVSO VSX (VizieR B/vsx)"
+     },
+     "Vhesap": 6.76
     },
     {
      "ad": "V* V1086 Sco",
@@ -266,11 +715,42 @@
      "uyelik": 100,
      "kaynaklar": [
       "2019AJ....158..122K"
-     ]
+     ],
+     "Vsimbad": 6.77,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 6.65,
+       "kimlik": "HIP 86751",
+       "kaynakBayragi": "H"
+      },
+      "Tycho-2": {
+       "V": 6.786,
+       "kimlik": "TYC 7381-155-1",
+       "VT": 6.952,
+       "BT": 8.795
+      },
+      "Tycho-1": {
+       "V": 6.75,
+       "kimlik": "TYC 7381-155-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Hipparcos, Tycho-2, Tycho-1 ile en çok 0.12 kadir fark; SIMBAD değeri kaldı",
+     "degisen": {
+      "vsx": "V1086 Sco",
+      "tur": "SRB",
+      "enParlak": 6.41,
+      "enSonuk": 7.11,
+      "bant": "V",
+      "kaynak": "AAVSO VSX (VizieR B/vsx)"
+     },
+     "Vhesap": 7.11
     }
    ],
    "toplam": 40,
    "hamSatir": 400,
+   "denetlenenAday": 15,
    "uyelikKaynagi": "SIMBAD h_link, üyelik ≥ 50 (kaynak bibcode her yıldızda)"
   },
   "M7": {
@@ -291,7 +771,32 @@
       "2021MNRAS.503.3279S",
       "2014A&A...566A.132S",
       "2020A&A...640A...1C"
-     ]
+     ],
+     "Vsimbad": 5.85,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 5.84,
+       "kimlik": "HIP 87472",
+       "kaynakBayragi": "H"
+      },
+      "BSC": {
+       "V": 5.84,
+       "kimlik": "HR 6648"
+      },
+      "Tycho-2": {
+       "V": 5.855,
+       "kimlik": "TYC 7386-913-1",
+       "VT": 5.971,
+       "BT": 7.263
+      },
+      "Tycho-1": {
+       "V": 5.84,
+       "kimlik": "TYC 7386-913-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Hipparcos, BSC, Tycho-2, Tycho-1 ile en çok 0.01 kadir fark; SIMBAD değeri kaldı"
     },
     {
      "ad": "V* V957 Sco",
@@ -309,7 +814,42 @@
       "2022ApJS..262....7H",
       "2020A&A...633A..99C",
       "2021MNRAS.503.3279S"
-     ]
+     ],
+     "Vsimbad": 5.9,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 5.88,
+       "kimlik": "HIP 87460",
+       "kaynakBayragi": "G"
+      },
+      "BSC": {
+       "V": 5.9,
+       "kimlik": "HR 6647"
+      },
+      "Tycho-2": {
+       "V": 5.865,
+       "kimlik": "TYC 7386-7-1",
+       "VT": 5.853,
+       "BT": 5.721
+      },
+      "Tycho-1": {
+       "V": 5.89,
+       "kimlik": "TYC 7386-7-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Hipparcos, BSC, Tycho-2, Tycho-1 ile en çok 0.04 kadir fark; SIMBAD değeri kaldı",
+     "degisen": {
+      "vsx": "V0957 Sco",
+      "tur": "SXARI",
+      "enParlak": 5.87,
+      "enSonuk": 5.92,
+      "bant": "V",
+      "kaynak": "AAVSO VSX (VizieR B/vsx)",
+      "genlik": 0.05
+     },
+     "Vhesap": 5.92
     },
     {
      "ad": "V* V906 Sco",
@@ -317,7 +857,41 @@
      "uyelik": 100,
      "kaynaklar": [
       "2014A&A...566A.132S"
-     ]
+     ],
+     "Vsimbad": 5.96,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 6.0,
+       "kimlik": "HIP 87616",
+       "kaynakBayragi": "G"
+      },
+      "BSC": {
+       "V": 5.96,
+       "kimlik": "HR 6662"
+      },
+      "Tycho-2": {
+       "V": 5.972,
+       "kimlik": "TYC 7386-562-1",
+       "VT": 5.972,
+       "BT": 5.972
+      },
+      "Tycho-1": {
+       "V": 6.0,
+       "kimlik": "TYC 7386-562-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Hipparcos, BSC, Tycho-2, Tycho-1 ile en çok 0.04 kadir fark; SIMBAD değeri kaldı",
+     "degisen": {
+      "vsx": "V0906 Sco",
+      "tur": "EA/DM",
+      "enParlak": 5.96,
+      "enSonuk": 6.23,
+      "bant": "V",
+      "kaynak": "AAVSO VSX (VizieR B/vsx)"
+     },
+     "Vhesap": 6.23
     },
     {
      "ad": "HD 162926",
@@ -332,7 +906,32 @@
       "2022A&A...659A..59T",
       "2014A&A...566A.132S",
       "2018A&A...616A..10G"
-     ]
+     ],
+     "Vsimbad": 6.053,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 6.05,
+       "kimlik": "HIP 87722",
+       "kaynakBayragi": "H"
+      },
+      "BSC": {
+       "V": 6.06,
+       "kimlik": "HR 6671"
+      },
+      "Tycho-2": {
+       "V": 6.054,
+       "kimlik": "TYC 7390-2737-1",
+       "VT": 6.061,
+       "BT": 6.134
+      },
+      "Tycho-1": {
+       "V": 6.06,
+       "kimlik": "TYC 7390-2737-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Hipparcos, BSC, Tycho-2, Tycho-1 ile en çok 0.01 kadir fark; SIMBAD değeri kaldı"
     },
     {
      "ad": "HD 162496",
@@ -348,11 +947,37 @@
       "2018A&A...618A..93C",
       "2021MNRAS.503.3279S",
       "2020A&A...640A...1C"
-     ]
+     ],
+     "Vsimbad": 6.06,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 6.05,
+       "kimlik": "HIP 87516",
+       "kaynakBayragi": "G"
+      },
+      "BSC": {
+       "V": 6.06,
+       "kimlik": "HR 6651"
+      },
+      "Tycho-2": {
+       "V": 6.04,
+       "kimlik": "TYC 7386-907-1",
+       "VT": 6.171,
+       "BT": 7.63
+      },
+      "Tycho-1": {
+       "V": 6.05,
+       "kimlik": "TYC 7386-907-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Hipparcos, BSC, Tycho-2, Tycho-1 ile en çok 0.02 kadir fark; SIMBAD değeri kaldı"
     }
    ],
    "toplam": 54,
    "hamSatir": 400,
+   "denetlenenAday": 15,
    "uyelikKaynagi": "SIMBAD h_link, üyelik ≥ 50 (kaynak bibcode her yıldızda)"
   },
   "M11": {
@@ -360,14 +985,45 @@
    "uyeler": [
     {
      "ad": "HD 174512",
-     "V": 8.557,
+     "V": 8.47,
      "uyelik": 92,
      "kaynaklar": [
       "2021A&A...650A..67R",
       "2024A&A...691A..28K",
       "2021MNRAS.503.3279S",
       "2020A&A...633A..99C"
-     ]
+     ],
+     "Vsimbad": 8.557,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 8.47,
+       "kimlik": "HIP 92507",
+       "kaynakBayragi": "H"
+      },
+      "Tycho-2": {
+       "V": 8.566,
+       "kimlik": "TYC 5126-5099-1",
+       "VT": 8.615,
+       "BT": 9.156
+      },
+      "Tycho-1": {
+       "V": 8.35,
+       "kimlik": "TYC 5126-5099-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "Hipparcos",
+     "fark": 0.087,
+     "gerekce": "Kaynaklar SIMBAD 8.56, Hipparcos 8.47, Tycho-2 8.57, Tycho-1 8.35; en büyük fark 0.21 > 0.15. Ortanca 8.51; ortancaya 0.15 içinde kalan ilk kaynak Hipparcos seçildi (Urania'nın kuralı: Hipparcos > BSC > Tycho-1 > Tycho-2 > SIMBAD).",
+     "degisen": {
+      "vsx": "NSV 24615",
+      "tur": "BE",
+      "enParlak": 8.38,
+      "enSonuk": 8.52,
+      "bant": "V",
+      "kaynak": "AAVSO VSX (VizieR B/vsx)"
+     },
+     "Vhesap": 8.52
     },
     {
      "ad": "TYC 5126-2358-1",
@@ -375,11 +1031,22 @@
      "uyelik": 74,
      "kaynaklar": [
       "2024A&A...691A..28K"
-     ]
+     ],
+     "Vsimbad": 10.51,
+     "kataloglar": {
+      "Tycho-2": {
+       "V": 10.517,
+       "kimlik": "TYC 5126-2358-1",
+       "VT": 10.602,
+       "BT": 11.552
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Tycho-2 ile en çok 0.01 kadir fark; SIMBAD değeri kaldı"
     },
     {
      "ad": "LS IV -06 40",
-     "V": 10.54,
+     "V": 10.547,
      "uyelik": 100,
      "kaynaklar": [
       "2020A&A...633A..99C",
@@ -388,7 +1055,34 @@
       "2021MNRAS.503.3279S",
       "2018A&A...618A..93C",
       "2020A&A...640A...1C"
-     ]
+     ],
+     "Vsimbad": 10.54,
+     "kataloglar": {
+      "Tycho-2": {
+       "V": 10.547,
+       "kimlik": "TYC 5126-2620-1",
+       "VT": 10.565,
+       "BT": 10.76
+      },
+      "Tycho-1": {
+       "V": 10.19,
+       "kimlik": "TYC 5126-2620-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "Tycho-2",
+     "fark": -0.007,
+     "gerekce": "Kaynaklar SIMBAD 10.54, Tycho-2 10.55, Tycho-1 10.19; en büyük fark 0.35 > 0.15. Ortanca 10.54; ortancaya 0.15 içinde kalan ilk kaynak Tycho-2 seçildi (Urania'nın kuralı: Hipparcos > BSC > Tycho-1 > Tycho-2 > SIMBAD).",
+     "degisen": {
+      "vsx": "GDS_J1851038-061732",
+      "tur": "VAR",
+      "enParlak": 10.38,
+      "enSonuk": 10.53,
+      "bant": "r",
+      "kaynak": "AAVSO VSX (VizieR B/vsx)",
+      "not": "aralık V bandında değil ya da sönük uç yok; hesapta seçilen V kullanılır",
+      "genlik": 0.15
+     }
     },
     {
      "ad": "NGC 6705 1146",
@@ -399,7 +1093,18 @@
       "2024A&A...691A..28K",
       "2021MNRAS.503.3279S",
       "2020A&A...633A..99C"
-     ]
+     ],
+     "Vsimbad": 10.57,
+     "kataloglar": {
+      "Tycho-2": {
+       "V": 10.576,
+       "kimlik": "TYC 5126-5321-2",
+       "VT": 10.61,
+       "BT": 10.992
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Tycho-2 ile en çok 0.01 kadir fark; SIMBAD değeri kaldı"
     },
     {
      "ad": "Cl* NGC 6705 PPM 6",
@@ -408,11 +1113,23 @@
      "kaynaklar": [
       "2022MNRAS.509.1664J",
       "2024A&A...691A..28K"
-     ]
+     ],
+     "Vsimbad": 10.77,
+     "kataloglar": {
+      "Tycho-2": {
+       "V": 10.778,
+       "kimlik": "TYC 5126-2372-1",
+       "VT": 10.823,
+       "BT": 11.325
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Tycho-2 ile en çok 0.01 kadir fark; SIMBAD değeri kaldı"
     }
    ],
    "toplam": 43,
    "hamSatir": 400,
+   "denetlenenAday": 15,
    "uyelikKaynagi": "SIMBAD h_link, üyelik ≥ 50 (kaynak bibcode her yıldızda)"
   },
   "M35": {
@@ -425,7 +1142,28 @@
      "kaynaklar": [
       "2019AJ....158..122K",
       "2022A&A...659A..59T"
-     ]
+     ],
+     "Vsimbad": 7.34,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 7.3,
+       "kimlik": "HIP 29702",
+       "kaynakBayragi": "H"
+      },
+      "Tycho-2": {
+       "V": 7.379,
+       "kimlik": "TYC 1881-1544-1",
+       "VT": 7.59,
+       "BT": 9.936
+      },
+      "Tycho-1": {
+       "V": 7.36,
+       "kimlik": "TYC 1881-1544-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Hipparcos, Tycho-2, Tycho-1 ile en çok 0.04 kadir fark; SIMBAD değeri kaldı"
     },
     {
      "ad": "HD 41710",
@@ -435,7 +1173,23 @@
       "2019AJ....158..122K",
       "2022A&A...659A..59T",
       "2024A&A...691A..28K"
-     ]
+     ],
+     "Vsimbad": 7.38,
+     "kataloglar": {
+      "Tycho-2": {
+       "V": 7.386,
+       "kimlik": "TYC 1864-1990-1",
+       "VT": 7.484,
+       "BT": 8.575
+      },
+      "Tycho-1": {
+       "V": 7.38,
+       "kimlik": "TYC 1864-1990-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Tycho-2, Tycho-1 ile en çok 0.01 kadir fark; SIMBAD değeri kaldı"
     },
     {
      "ad": "HD 41996",
@@ -454,7 +1208,23 @@
       "2020A&A...640A...1C",
       "2022ApJS..262....7H",
       "2018A&A...615A..49C"
-     ]
+     ],
+     "Vsimbad": 7.42,
+     "kataloglar": {
+      "Tycho-2": {
+       "V": 7.426,
+       "kimlik": "TYC 1881-1595-1",
+       "VT": 7.546,
+       "BT": 8.876
+      },
+      "Tycho-1": {
+       "V": 7.42,
+       "kimlik": "TYC 1881-1595-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Tycho-2, Tycho-1 ile en çok 0.01 kadir fark; SIMBAD değeri kaldı"
     },
     {
      "ad": "HD 42768",
@@ -466,7 +1236,23 @@
       "2024A&A...691A..28K",
       "2021A&A...647A..19T",
       "2022A&A...659A..59T"
-     ]
+     ],
+     "Vsimbad": 8.1,
+     "kataloglar": {
+      "Tycho-2": {
+       "V": 8.106,
+       "kimlik": "TYC 1877-1257-1",
+       "VT": 8.247,
+       "BT": 9.811
+      },
+      "Tycho-1": {
+       "V": 8.1,
+       "kimlik": "TYC 1877-1257-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Tycho-2, Tycho-1 ile en çok 0.01 kadir fark; SIMBAD değeri kaldı"
     },
     {
      "ad": "HD 41940",
@@ -483,11 +1269,33 @@
       "2018A&A...616A..10G",
       "2021MNRAS.503.3279S",
       "2018A&A...615A..49C"
-     ]
+     ],
+     "Vsimbad": 8.14,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 8.18,
+       "kimlik": "HIP 29148",
+       "kaynakBayragi": "G"
+      },
+      "Tycho-2": {
+       "V": 8.191,
+       "kimlik": "TYC 1877-300-1",
+       "VT": 8.194,
+       "BT": 8.229
+      },
+      "Tycho-1": {
+       "V": 8.14,
+       "kimlik": "TYC 1877-300-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Hipparcos, Tycho-2, Tycho-1 ile en çok 0.05 kadir fark; SIMBAD değeri kaldı"
     }
    ],
    "toplam": 57,
    "hamSatir": 400,
+   "denetlenenAday": 15,
    "uyelikKaynagi": "SIMBAD h_link, üyelik ≥ 50 (kaynak bibcode her yıldızda)"
   },
   "M36": {
@@ -501,7 +1309,23 @@
       "2022ApJS..262....7H",
       "2022A&A...664A..66M",
       "2010ApJ...722..605H"
-     ]
+     ],
+     "Vsimbad": 8.44,
+     "kataloglar": {
+      "Tycho-2": {
+       "V": 8.431,
+       "kimlik": "TYC 2412-923-1",
+       "VT": 8.435,
+       "BT": 8.479
+      },
+      "Tycho-1": {
+       "V": 8.45,
+       "kimlik": "TYC 2412-923-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Tycho-2, Tycho-1 ile en çok 0.01 kadir fark; SIMBAD değeri kaldı"
     },
     {
      "ad": "BD+34 1103",
@@ -510,7 +1334,32 @@
      "kaynaklar": [
       "2022ApJS..262....7H",
       "2010ApJ...722..605H"
-     ]
+     ],
+     "Vsimbad": 8.79,
+     "kataloglar": {
+      "Tycho-2": {
+       "V": 8.82,
+       "kimlik": "TYC 2412-1639-1",
+       "VT": 8.82,
+       "BT": 8.823
+      },
+      "Tycho-1": {
+       "V": 8.79,
+       "kimlik": "TYC 2412-1639-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Tycho-2, Tycho-1 ile en çok 0.03 kadir fark; SIMBAD değeri kaldı",
+     "degisen": {
+      "vsx": "Gaia DR3 3449518587403714432",
+      "tur": "ACV|roAm|roAp|SXARI",
+      "enParlak": 8.81,
+      "enSonuk": 8.84,
+      "bant": "G",
+      "kaynak": "AAVSO VSX (VizieR B/vsx)",
+      "not": "aralık V bandında değil ya da sönük uç yok; hesapta seçilen V kullanılır"
+     }
     },
     {
      "ad": "HD 245239",
@@ -522,7 +1371,23 @@
       "2022A&A...664A..66M",
       "2022ApJS..262....7H",
       "2020A&A...633A..99C"
-     ]
+     ],
+     "Vsimbad": 8.94,
+     "kataloglar": {
+      "Tycho-2": {
+       "V": 9.008,
+       "kimlik": "TYC 2412-1383-1",
+       "VT": 9.01,
+       "BT": 9.035
+      },
+      "Tycho-1": {
+       "V": 8.94,
+       "kimlik": "TYC 2412-1383-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Tycho-2, Tycho-1 ile en çok 0.07 kadir fark; SIMBAD değeri kaldı"
     },
     {
      "ad": "BD+34 1109",
@@ -534,7 +1399,23 @@
       "2020A&A...633A..99C",
       "2018A&A...615A..49C",
       "2022A&A...664A..66M"
-     ]
+     ],
+     "Vsimbad": 8.96,
+     "kataloglar": {
+      "Tycho-2": {
+       "V": 8.929,
+       "kimlik": "TYC 2412-1645-1",
+       "VT": 8.932,
+       "BT": 8.961
+      },
+      "Tycho-1": {
+       "V": 8.86,
+       "kimlik": "TYC 2412-1645-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Tycho-2, Tycho-1 ile en çok 0.10 kadir fark; SIMBAD değeri kaldı"
     },
     {
      "ad": "BD+34 1111",
@@ -548,11 +1429,33 @@
       "2018A&A...618A..93C",
       "2010ApJ...722..605H",
       "2022ApJS..262....7H"
-     ]
+     ],
+     "Vsimbad": 9.09,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 9.14,
+       "kimlik": "HIP 26337",
+       "kaynakBayragi": "G"
+      },
+      "Tycho-2": {
+       "V": 9.196,
+       "kimlik": "TYC 2412-1516-1",
+       "VT": 9.192,
+       "BT": 9.151
+      },
+      "Tycho-1": {
+       "V": 9.1,
+       "kimlik": "TYC 2412-1516-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Hipparcos, Tycho-2, Tycho-1 ile en çok 0.11 kadir fark; SIMBAD değeri kaldı"
     }
    ],
    "toplam": 45,
    "hamSatir": 400,
+   "denetlenenAday": 15,
    "uyelikKaynagi": "SIMBAD h_link, üyelik ≥ 50 (kaynak bibcode her yıldızda)"
   },
   "M37": {
@@ -564,7 +1467,32 @@
      "uyelik": 100,
      "kaynaklar": [
       "2008A&A...485..303M"
-     ]
+     ],
+     "Vsimbad": 9.16,
+     "kataloglar": {
+      "Tycho-2": {
+       "V": 9.242,
+       "kimlik": "TYC 2410-1320-1",
+       "VT": 9.432,
+       "BT": 11.543
+      },
+      "Tycho-1": {
+       "V": 9.09,
+       "kimlik": "TYC 2410-1320-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Tycho-2, Tycho-1 ile en çok 0.08 kadir fark; SIMBAD değeri kaldı",
+     "degisen": {
+      "vsx": "SAO 58521",
+      "tur": "CST",
+      "enParlak": 9.19,
+      "enSonuk": null,
+      "bant": "V",
+      "kaynak": "AAVSO VSX (VizieR B/vsx)",
+      "not": "aralık V bandında değil ya da sönük uç yok; hesapta seçilen V kullanılır"
+     }
     },
     {
      "ad": "HD 248104",
@@ -572,7 +1500,32 @@
      "uyelik": 56,
      "kaynaklar": [
       "2018A&A...615A..49C"
-     ]
+     ],
+     "Vsimbad": 9.32,
+     "kataloglar": {
+      "Tycho-2": {
+       "V": 9.265,
+       "kimlik": "TYC 2409-931-1",
+       "VT": 9.461,
+       "BT": 11.637
+      },
+      "Tycho-1": {
+       "V": 9.31,
+       "kimlik": "TYC 2409-931-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Tycho-2, Tycho-1 ile en çok 0.05 kadir fark; SIMBAD değeri kaldı",
+     "degisen": {
+      "vsx": "NSV 2658",
+      "tur": "",
+      "enParlak": 9.17,
+      "enSonuk": 9.3,
+      "bant": "V",
+      "kaynak": "AAVSO VSX (VizieR B/vsx)"
+     },
+     "Vhesap": 9.32
     },
     {
      "ad": "HD 248521",
@@ -583,7 +1536,23 @@
       "2022MNRAS.511.4702G",
       "2024A&A...691A..28K",
       "2022A&A...659A..59T"
-     ]
+     ],
+     "Vsimbad": 9.82,
+     "kataloglar": {
+      "Tycho-2": {
+       "V": 9.964,
+       "kimlik": "TYC 2410-1293-1",
+       "VT": 10.021,
+       "BT": 10.649
+      },
+      "Tycho-1": {
+       "V": 9.81,
+       "kimlik": "TYC 2410-1293-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Tycho-2, Tycho-1 ile en çok 0.14 kadir fark; SIMBAD değeri kaldı"
     },
     {
      "ad": "2MASS J05523829+3231453",
@@ -597,21 +1566,48 @@
       "2018A&A...618A..93C",
       "2022MNRAS.511.4702G",
       "2021ApJS..257...46G"
-     ]
+     ],
+     "Vsimbad": 10.0,
+     "kataloglar": {},
+     "Vkaynak": "SIMBAD",
+     "denetim": "ikinci katalogda bulunamadı; SIMBAD değeri kaldı"
     },
     {
      "ad": "BD+32 1115",
-     "V": 10.27,
+     "V": 10.22,
      "uyelik": 100,
      "kaynaklar": [
       "2018A&A...615A..49C",
       "2008A&A...485..303M",
       "2022MNRAS.511.4702G"
-     ]
+     ],
+     "Vsimbad": 10.27,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 10.22,
+       "kimlik": "HIP 27784",
+       "kaynakBayragi": "G"
+      },
+      "Tycho-2": {
+       "V": 10.282,
+       "kimlik": "TYC 2410-572-1",
+       "VT": 10.424,
+       "BT": 12.0
+      },
+      "Tycho-1": {
+       "V": 10.07,
+       "kimlik": "TYC 2410-572-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "Hipparcos",
+     "fark": 0.05,
+     "gerekce": "Kaynaklar SIMBAD 10.27, Hipparcos 10.22, Tycho-2 10.28, Tycho-1 10.07; en büyük fark 0.20 > 0.15. Ortanca 10.25; ortancaya 0.15 içinde kalan ilk kaynak Hipparcos seçildi (Urania'nın kuralı: Hipparcos > BSC > Tycho-1 > Tycho-2 > SIMBAD)."
     }
    ],
    "toplam": 58,
    "hamSatir": 400,
+   "denetlenenAday": 15,
    "uyelikKaynagi": "SIMBAD h_link, üyelik ≥ 50 (kaynak bibcode her yıldızda)"
   },
   "M38": {
@@ -623,7 +1619,11 @@
      "uyelik": 100,
      "kaynaklar": [
       "2019AJ....158..122K"
-     ]
+     ],
+     "Vsimbad": 9.1,
+     "kataloglar": {},
+     "Vkaynak": "SIMBAD",
+     "denetim": "ikinci katalogda bulunamadı; SIMBAD değeri kaldı"
     },
     {
      "ad": "HD 35966",
@@ -633,7 +1633,23 @@
       "2022A&A...659A..59T",
       "2022ApJS..262....7H",
       "2024A&A...691A..28K"
-     ]
+     ],
+     "Vsimbad": 9.41,
+     "kataloglar": {
+      "Tycho-2": {
+       "V": 9.413,
+       "kimlik": "TYC 2415-906-1",
+       "VT": 9.433,
+       "BT": 9.659
+      },
+      "Tycho-1": {
+       "V": 9.42,
+       "kimlik": "TYC 2415-906-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Tycho-2, Tycho-1 ile en çok 0.01 kadir fark; SIMBAD değeri kaldı"
     },
     {
      "ad": "BD+35 1238",
@@ -641,7 +1657,32 @@
      "uyelik": 100,
      "kaynaklar": [
       "2019AJ....158..122K"
-     ]
+     ],
+     "Vsimbad": 9.44,
+     "kataloglar": {
+      "Tycho-2": {
+       "V": 9.45,
+       "kimlik": "TYC 2413-151-1",
+       "VT": 9.467,
+       "BT": 9.657
+      },
+      "Tycho-1": {
+       "V": 9.45,
+       "kimlik": "TYC 2413-151-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Tycho-2, Tycho-1 ile en çok 0.01 kadir fark; SIMBAD değeri kaldı",
+     "degisen": {
+      "vsx": "BD+35 1238",
+      "tur": "ACV",
+      "enParlak": 9.6,
+      "enSonuk": 9.66,
+      "bant": "CV",
+      "kaynak": "AAVSO VSX (VizieR B/vsx)",
+      "not": "aralık V bandında değil ya da sönük uç yok; hesapta seçilen V kullanılır"
+     }
     },
     {
      "ad": "BD+35 1119",
@@ -650,7 +1691,28 @@
      "kaynaklar": [
       "2024A&A...691A..28K",
       "2022ApJS..262....7H"
-     ]
+     ],
+     "Vsimbad": 9.46,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 9.46,
+       "kimlik": "HIP 25633",
+       "kaynakBayragi": "H"
+      },
+      "Tycho-2": {
+       "V": 9.466,
+       "kimlik": "TYC 2411-1059-1",
+       "VT": 9.488,
+       "BT": 9.728
+      },
+      "Tycho-1": {
+       "V": 9.46,
+       "kimlik": "TYC 2411-1059-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Hipparcos, Tycho-2, Tycho-1 ile en çok 0.01 kadir fark; SIMBAD değeri kaldı"
     },
     {
      "ad": "BD+35 1129",
@@ -658,11 +1720,28 @@
      "uyelik": 64,
      "kaynaklar": [
       "2018A&A...615A..49C"
-     ]
+     ],
+     "Vsimbad": 9.499,
+     "kataloglar": {
+      "Tycho-2": {
+       "V": 9.504,
+       "kimlik": "TYC 2415-632-1",
+       "VT": 9.52,
+       "BT": 9.697
+      },
+      "Tycho-1": {
+       "V": 9.45,
+       "kimlik": "TYC 2415-632-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Tycho-2, Tycho-1 ile en çok 0.05 kadir fark; SIMBAD değeri kaldı"
     }
    ],
    "toplam": 74,
    "hamSatir": 400,
+   "denetlenenAday": 15,
    "uyelikKaynagi": "SIMBAD h_link, üyelik ≥ 50 (kaynak bibcode her yıldızda)"
   },
   "M39": {
@@ -674,7 +1753,28 @@
      "uyelik": 100,
      "kaynaklar": [
       "2017A&A...601A..19G"
-     ]
+     ],
+     "Vsimbad": 6.572,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 6.58,
+       "kimlik": "HIP 106346",
+       "kaynakBayragi": "H"
+      },
+      "Tycho-2": {
+       "V": 6.57,
+       "kimlik": "TYC 3594-740-1",
+       "VT": 6.569,
+       "BT": 6.558
+      },
+      "Tycho-1": {
+       "V": 6.58,
+       "kimlik": "TYC 3594-740-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Hipparcos, Tycho-2, Tycho-1 ile en çok 0.01 kadir fark; SIMBAD değeri kaldı"
     },
     {
      "ad": "HD 205116",
@@ -693,7 +1793,28 @@
       "2022ApJ...931..156P",
       "2021A&A...645A..84M",
       "2022ApJS..262....7H"
-     ]
+     ],
+     "Vsimbad": 6.827,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 6.84,
+       "kimlik": "HIP 106293",
+       "kaynakBayragi": "H"
+      },
+      "Tycho-2": {
+       "V": 6.824,
+       "kimlik": "TYC 3594-1520-1",
+       "VT": 6.821,
+       "BT": 6.786
+      },
+      "Tycho-1": {
+       "V": 6.84,
+       "kimlik": "TYC 3594-1520-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Hipparcos, Tycho-2, Tycho-1 ile en çok 0.01 kadir fark; SIMBAD değeri kaldı"
     },
     {
      "ad": "HD 205331",
@@ -708,7 +1829,28 @@
       "2024A&A...683A..75A",
       "2022ApJS..262....7H",
       "2022A&A...659A..59T"
-     ]
+     ],
+     "Vsimbad": 6.83,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 6.83,
+       "kimlik": "HIP 106409",
+       "kaynakBayragi": "H"
+      },
+      "Tycho-2": {
+       "V": 6.815,
+       "kimlik": "TYC 3594-696-1",
+       "VT": 6.815,
+       "BT": 6.813
+      },
+      "Tycho-1": {
+       "V": 6.84,
+       "kimlik": "TYC 3594-696-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Hipparcos, Tycho-2, Tycho-1 ile en çok 0.01 kadir fark; SIMBAD değeri kaldı"
     },
     {
      "ad": "HD 218672",
@@ -716,7 +1858,23 @@
      "uyelik": 100,
      "kaynaklar": [
       "2025A&A...694A.258R"
-     ]
+     ],
+     "Vsimbad": 7.02,
+     "kataloglar": {
+      "Tycho-2": {
+       "V": 7.03,
+       "kimlik": "TYC 4283-894-1",
+       "VT": 7.141,
+       "BT": 8.375
+      },
+      "Tycho-1": {
+       "V": 7.03,
+       "kimlik": "TYC 4283-894-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Tycho-2, Tycho-1 ile en çok 0.01 kadir fark; SIMBAD değeri kaldı"
     },
     {
      "ad": "HD 201837",
@@ -724,11 +1882,37 @@
      "uyelik": 100,
      "kaynaklar": [
       "2018A&A...616A..10G"
-     ]
+     ],
+     "Vsimbad": 7.36,
+     "kataloglar": {
+      "Tycho-2": {
+       "V": 7.368,
+       "kimlik": "TYC 3592-7320-1",
+       "VT": 7.515,
+       "BT": 9.149
+      },
+      "Tycho-1": {
+       "V": 7.35,
+       "kimlik": "TYC 3592-7320-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Tycho-2, Tycho-1 ile en çok 0.01 kadir fark; SIMBAD değeri kaldı",
+     "degisen": {
+      "vsx": "NSV 25505",
+      "tur": "VAR:",
+      "enParlak": 7.29,
+      "enSonuk": 7.41,
+      "bant": "V",
+      "kaynak": "AAVSO VSX (VizieR B/vsx)"
+     },
+     "Vhesap": 7.41
     }
    ],
    "toplam": 63,
    "hamSatir": 400,
+   "denetlenenAday": 15,
    "uyelikKaynagi": "SIMBAD h_link, üyelik ≥ 50 (kaynak bibcode her yıldızda)"
   },
   "NGC 869": {
@@ -743,7 +1927,37 @@
       "2020A&A...633A..99C",
       "2018A&A...616A..10G",
       "2020A&A...640A...1C"
-     ]
+     ],
+     "Vsimbad": 6.5678,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 6.57,
+       "kimlik": "HIP 10805",
+       "kaynakBayragi": "H"
+      },
+      "Tycho-2": {
+       "V": 6.621,
+       "kimlik": "TYC 3694-1824-1",
+       "VT": 6.659,
+       "BT": 7.082
+      },
+      "Tycho-1": {
+       "V": 6.59,
+       "kimlik": "TYC 3694-1824-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Hipparcos, Tycho-2, Tycho-1 ile en çok 0.05 kadir fark; SIMBAD değeri kaldı",
+     "degisen": {
+      "vsx": "V0520 Per",
+      "tur": "IA",
+      "enParlak": 6.52,
+      "enSonuk": 6.67,
+      "bant": "V",
+      "kaynak": "AAVSO VSX (VizieR B/vsx)"
+     },
+     "Vhesap": 6.67
     },
     {
      "ad": "HD 14143",
@@ -751,19 +1965,100 @@
      "uyelik": 100,
      "kaynaklar": [
       "2018A&A...616A..10G"
-     ]
+     ],
+     "Vsimbad": 6.7,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 6.65,
+       "kimlik": "HIP 10816",
+       "kaynakBayragi": "G"
+      },
+      "Tycho-2": {
+       "V": 6.695,
+       "kimlik": "TYC 3694-1789-1",
+       "VT": 6.735,
+       "BT": 7.183
+      },
+      "Tycho-1": {
+       "V": 6.67,
+       "kimlik": "TYC 3694-1789-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Hipparcos, Tycho-2, Tycho-1 ile en çok 0.05 kadir fark; SIMBAD değeri kaldı",
+     "degisen": {
+      "vsx": "NSV 15479",
+      "tur": "ACYG",
+      "enParlak": 6.63,
+      "enSonuk": 6.74,
+      "bant": "V",
+      "kaynak": "AAVSO VSX (VizieR B/vsx)"
+     },
+     "Vhesap": 6.74
     },
     {
      "ad": "HD 14443",
-     "V": 7.6934,
+     "V": 7.91,
      "uyelik": 100,
      "kaynaklar": [
       "2010ApJS..186..191C"
-     ]
+     ],
+     "Vsimbad": 7.6934,
+     "kataloglar": {
+      "Tycho-2": {
+       "V": 8.101,
+       "kimlik": "TYC 3694-1680-1",
+       "VT": 8.127,
+       "BT": 8.411
+      },
+      "Tycho-1": {
+       "V": 7.91,
+       "kimlik": "TYC 3694-1680-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "Tycho-1",
+     "fark": -0.217,
+     "gerekce": "Kaynaklar SIMBAD 7.69, Tycho-2 8.10, Tycho-1 7.91; en büyük fark 0.41 > 0.15. Ortanca 7.91; ortancaya 0.15 içinde kalan ilk kaynak Tycho-1 seçildi (Urania'nın kuralı: Hipparcos > BSC > Tycho-1 > Tycho-2 > SIMBAD).",
+     "degisen": {
+      "vsx": "NSV 798",
+      "tur": "ACYG",
+      "enParlak": 8.02,
+      "enSonuk": 8.07,
+      "bant": "V",
+      "kaynak": "AAVSO VSX (VizieR B/vsx)"
+     },
+     "Vhesap": 8.07
+    },
+    {
+     "ad": "HD 13910",
+     "V": 8.16,
+     "uyelik": 100,
+     "kaynaklar": [
+      "2012AJ....144..158M"
+     ],
+     "Vsimbad": 7.9129,
+     "kataloglar": {
+      "Tycho-2": {
+       "V": 8.145,
+       "kimlik": "TYC 3694-2631-1",
+       "VT": 8.153,
+       "BT": 8.246
+      },
+      "Tycho-1": {
+       "V": 8.16,
+       "kimlik": "TYC 3694-2631-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "Tycho-1",
+     "fark": -0.247,
+     "gerekce": "Kaynaklar SIMBAD 7.91, Tycho-2 8.14, Tycho-1 8.16; en büyük fark 0.25 > 0.15. Ortanca 8.14; ortancaya 0.15 içinde kalan ilk kaynak Tycho-1 seçildi (Urania'nın kuralı: Hipparcos > BSC > Tycho-1 > Tycho-2 > SIMBAD)."
     },
     {
      "ad": "HD 14052",
-     "V": 7.7866,
+     "V": 8.17,
      "uyelik": 100,
      "kaynaklar": [
       "2010ApJS..186..191C",
@@ -771,21 +2066,29 @@
       "2020A&A...633A..99C",
       "2018A&A...616A..10G",
       "2012AJ....144..158M"
-     ]
-    },
-    {
-     "ad": "V* V757 Per",
-     "V": 7.8288,
-     "uyelik": 100,
-     "kaynaklar": [
-      "2010ApJS..186..191C",
-      "2010ApJ...722..605H",
-      "2018A&A...616A..10G"
-     ]
+     ],
+     "Vsimbad": 7.7866,
+     "kataloglar": {
+      "Tycho-2": {
+       "V": 8.218,
+       "kimlik": "TYC 3694-3626-1",
+       "VT": 8.241,
+       "BT": 8.501
+      },
+      "Tycho-1": {
+       "V": 8.17,
+       "kimlik": "TYC 3694-3626-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "Tycho-1",
+     "fark": -0.383,
+     "gerekce": "Kaynaklar SIMBAD 7.79, Tycho-2 8.22, Tycho-1 8.17; en büyük fark 0.43 > 0.15. Ortanca 8.17; ortancaya 0.15 içinde kalan ilk kaynak Tycho-1 seçildi (Urania'nın kuralı: Hipparcos > BSC > Tycho-1 > Tycho-2 > SIMBAD)."
     }
    ],
    "toplam": 170,
    "hamSatir": 400,
+   "denetlenenAday": 15,
    "uyelikKaynagi": "SIMBAD h_link, üyelik ≥ 50 (kaynak bibcode her yıldızda)"
   },
   "NGC 884": {
@@ -797,7 +2100,37 @@
      "uyelik": 100,
      "kaynaklar": [
       "2018A&A...616A..10G"
-     ]
+     ],
+     "Vsimbad": 6.48,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 6.4,
+       "kimlik": "HIP 11020",
+       "kaynakBayragi": "G"
+      },
+      "Tycho-2": {
+       "V": 6.45,
+       "kimlik": "TYC 3694-1623-1",
+       "VT": 6.497,
+       "BT": 7.015
+      },
+      "Tycho-1": {
+       "V": 6.4,
+       "kimlik": "TYC 3694-1623-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Hipparcos, Tycho-2, Tycho-1 ile en çok 0.08 kadir fark; SIMBAD değeri kaldı",
+     "degisen": {
+      "vsx": "NSV 15490",
+      "tur": "",
+      "enParlak": 6.39,
+      "enSonuk": null,
+      "bant": "V",
+      "kaynak": "AAVSO VSX (VizieR B/vsx)",
+      "not": "aralık V bandında değil ya da sönük uç yok; hesapta seçilen V kullanılır"
+     }
     },
     {
      "ad": "HD 14542",
@@ -805,16 +2138,37 @@
      "uyelik": 100,
      "kaynaklar": [
       "2018A&A...616A..10G"
-     ]
-    },
-    {
-     "ad": "HD 14443",
-     "V": 7.6934,
-     "uyelik": 100,
-     "kaynaklar": [
-      "2018A&A...616A..10G",
-      "2012AJ....144..158M"
-     ]
+     ],
+     "Vsimbad": 6.977,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 6.99,
+       "kimlik": "HIP 11115",
+       "kaynakBayragi": "G"
+      },
+      "Tycho-2": {
+       "V": 7.044,
+       "kimlik": "TYC 3694-1205-1",
+       "VT": 7.096,
+       "BT": 7.673
+      },
+      "Tycho-1": {
+       "V": 7.04,
+       "kimlik": "TYC 3694-1205-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Hipparcos, Tycho-2, Tycho-1 ile en çok 0.07 kadir fark; SIMBAD değeri kaldı",
+     "degisen": {
+      "vsx": "NSV 806",
+      "tur": "ACYG",
+      "enParlak": 6.95,
+      "enSonuk": 7.05,
+      "bant": "V",
+      "kaynak": "AAVSO VSX (VizieR B/vsx)"
+     },
+     "Vhesap": 7.05
     },
     {
      "ad": "V* AD Per",
@@ -822,20 +2176,107 @@
      "uyelik": 100,
      "kaynaklar": [
       "2008A&A...485..303M"
-     ]
+     ],
+     "Vsimbad": 7.849,
+     "kataloglar": {
+      "Tycho-2": {
+       "V": 7.927,
+       "kimlik": "TYC 3694-1613-1",
+       "VT": 8.166,
+       "BT": 10.824
+      },
+      "Tycho-1": {
+       "V": 7.94,
+       "kimlik": "TYC 3694-1613-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Tycho-2, Tycho-1 ile en çok 0.09 kadir fark; SIMBAD değeri kaldı",
+     "degisen": {
+      "vsx": "AD Per",
+      "tur": "SRC",
+      "enParlak": 7.7,
+      "enSonuk": 8.4,
+      "bant": "V",
+      "kaynak": "AAVSO VSX (VizieR B/vsx)"
+     },
+     "Vhesap": 8.4
+    },
+    {
+     "ad": "HD 14443",
+     "V": 7.91,
+     "uyelik": 100,
+     "kaynaklar": [
+      "2018A&A...616A..10G",
+      "2012AJ....144..158M"
+     ],
+     "Vsimbad": 7.6934,
+     "kataloglar": {
+      "Tycho-2": {
+       "V": 8.101,
+       "kimlik": "TYC 3694-1680-1",
+       "VT": 8.127,
+       "BT": 8.411
+      },
+      "Tycho-1": {
+       "V": 7.91,
+       "kimlik": "TYC 3694-1680-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "Tycho-1",
+     "fark": -0.217,
+     "gerekce": "Kaynaklar SIMBAD 7.69, Tycho-2 8.10, Tycho-1 7.91; en büyük fark 0.41 > 0.15. Ortanca 7.91; ortancaya 0.15 içinde kalan ilk kaynak Tycho-1 seçildi (Urania'nın kuralı: Hipparcos > BSC > Tycho-1 > Tycho-2 > SIMBAD).",
+     "degisen": {
+      "vsx": "NSV 798",
+      "tur": "ACYG",
+      "enParlak": 8.02,
+      "enSonuk": 8.07,
+      "bant": "V",
+      "kaynak": "AAVSO VSX (VizieR B/vsx)"
+     },
+     "Vhesap": 8.07
     },
     {
      "ad": "V* FZ Per",
-     "V": 7.962,
+     "V": 8.12,
      "uyelik": 100,
      "kaynaklar": [
       "2018A&A...616A..10G",
       "2008A&A...485..303M"
-     ]
+     ],
+     "Vsimbad": 7.962,
+     "kataloglar": {
+      "Tycho-2": {
+       "V": 7.986,
+       "kimlik": "TYC 3694-1862-1",
+       "VT": 8.21,
+       "BT": 10.698
+      },
+      "Tycho-1": {
+       "V": 8.12,
+       "kimlik": "TYC 3694-1862-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "Tycho-1",
+     "fark": -0.158,
+     "gerekce": "Kaynaklar SIMBAD 7.96, Tycho-2 7.99, Tycho-1 8.12; en büyük fark 0.16 > 0.15. Ortanca 7.99; ortancaya 0.15 içinde kalan ilk kaynak Tycho-1 seçildi (Urania'nın kuralı: Hipparcos > BSC > Tycho-1 > Tycho-2 > SIMBAD).",
+     "degisen": {
+      "vsx": "FZ Per",
+      "tur": "SRC",
+      "enParlak": 7.5,
+      "enSonuk": 8.4,
+      "bant": "V",
+      "kaynak": "AAVSO VSX (VizieR B/vsx)"
+     },
+     "Vhesap": 8.4
     }
    ],
    "toplam": 154,
    "hamSatir": 400,
+   "denetlenenAday": 15,
    "uyelikKaynagi": "SIMBAD h_link, üyelik ≥ 50 (kaynak bibcode her yıldızda)"
   },
   "Mel 111": {
@@ -847,7 +2288,32 @@
      "uyelik": 100,
      "kaynaklar": [
       "2001A&A...373..159C"
-     ]
+     ],
+     "Vsimbad": 4.34,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 4.35,
+       "kimlik": "HIP 60742",
+       "kaynakBayragi": "H"
+      },
+      "BSC": {
+       "V": 4.36,
+       "kimlik": "HR 4737"
+      },
+      "Tycho-2": {
+       "V": 4.347,
+       "kimlik": "TYC 1991-1895-1",
+       "VT": 4.466,
+       "BT": 5.788
+      },
+      "Tycho-1": {
+       "V": 4.34,
+       "kimlik": "TYC 1991-1895-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Hipparcos, BSC, Tycho-2, Tycho-1 ile en çok 0.02 kadir fark; SIMBAD değeri kaldı"
     },
     {
      "ad": "* 12 Com",
@@ -866,7 +2332,41 @@
       "2021MNRAS.503.3279S",
       "2018A&A...616A..10G",
       "2019A&A...624L..11F"
-     ]
+     ],
+     "Vsimbad": 4.81,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 4.78,
+       "kimlik": "HIP 60351",
+       "kaynakBayragi": "H"
+      },
+      "BSC": {
+       "V": 4.81,
+       "kimlik": "HR 4707"
+      },
+      "Tycho-2": {
+       "V": 4.812,
+       "kimlik": "TYC 1989-3210-1",
+       "VT": 4.859,
+       "BT": 5.384
+      },
+      "Tycho-1": {
+       "V": 4.8,
+       "kimlik": "TYC 1989-3210-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Hipparcos, BSC, Tycho-2, Tycho-1 ile en çok 0.03 kadir fark; SIMBAD değeri kaldı",
+     "degisen": {
+      "vsx": "NSV 5581",
+      "tur": "",
+      "enParlak": 4.78,
+      "enSonuk": 4.89,
+      "bant": "V",
+      "kaynak": "AAVSO VSX (VizieR B/vsx)"
+     },
+     "Vhesap": 4.89
     },
     {
      "ad": "* 7 Com",
@@ -874,7 +2374,32 @@
      "uyelik": 100,
      "kaynaklar": [
       "2001A&A...373..159C"
-     ]
+     ],
+     "Vsimbad": 4.86,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 4.93,
+       "kimlik": "HIP 59847",
+       "kaynakBayragi": "H"
+      },
+      "BSC": {
+       "V": 4.95,
+       "kimlik": "HR 4667"
+      },
+      "Tycho-2": {
+       "V": 4.934,
+       "kimlik": "TYC 1986-2432-1",
+       "VT": 5.033,
+       "BT": 6.135
+      },
+      "Tycho-1": {
+       "V": 4.93,
+       "kimlik": "TYC 1986-2432-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Hipparcos, BSC, Tycho-2, Tycho-1 ile en çok 0.09 kadir fark; SIMBAD değeri kaldı"
     },
     {
      "ad": "* 31 Com",
@@ -892,7 +2417,41 @@
       "2020A&A...640A...1C",
       "2018A&A...616A..10G",
       "2021MNRAS.503.3279S"
-     ]
+     ],
+     "Vsimbad": 4.94,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 4.93,
+       "kimlik": "HIP 62763",
+       "kaynakBayragi": "G"
+      },
+      "BSC": {
+       "V": 4.94,
+       "kimlik": "HR 4883"
+      },
+      "Tycho-2": {
+       "V": 4.934,
+       "kimlik": "TYC 1995-2586-1",
+       "VT": 4.999,
+       "BT": 5.724
+      },
+      "Tycho-1": {
+       "V": 4.93,
+       "kimlik": "TYC 1995-2586-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Hipparcos, BSC, Tycho-2, Tycho-1 ile en çok 0.01 kadir fark; SIMBAD değeri kaldı",
+     "degisen": {
+      "vsx": "LS Com",
+      "tur": "FKCOM",
+      "enParlak": 4.87,
+      "enSonuk": 4.97,
+      "bant": "V",
+      "kaynak": "AAVSO VSX (VizieR B/vsx)"
+     },
+     "Vhesap": 4.97
     },
     {
      "ad": "* 14 Com",
@@ -900,11 +2459,37 @@
      "uyelik": 100,
      "kaynaklar": [
       "2014A&A...566A.132S"
-     ]
+     ],
+     "Vsimbad": 4.95,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 4.92,
+       "kimlik": "HIP 60697",
+       "kaynakBayragi": "H"
+      },
+      "BSC": {
+       "V": 4.95,
+       "kimlik": "HR 4733"
+      },
+      "Tycho-2": {
+       "V": 4.922,
+       "kimlik": "TYC 1991-1897-1",
+       "VT": 4.948,
+       "BT": 5.232
+      },
+      "Tycho-1": {
+       "V": 4.92,
+       "kimlik": "TYC 1991-1897-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Hipparcos, BSC, Tycho-2, Tycho-1 ile en çok 0.03 kadir fark; SIMBAD değeri kaldı"
     }
    ],
    "toplam": 45,
    "hamSatir": 400,
+   "denetlenenAday": 15,
    "uyelikKaynagi": "SIMBAD h_link, üyelik ≥ 50 (kaynak bibcode her yıldızda)"
   },
   "Cr 399": {
@@ -918,7 +2503,32 @@
      "uyelik": null,
      "kaynaklar": [
       "SIMBAD koni taraması"
-     ]
+     ],
+     "Vsimbad": 5.16,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 5.14,
+       "kimlik": "HIP 95498",
+       "kaynakBayragi": "H"
+      },
+      "BSC": {
+       "V": 5.16,
+       "kimlik": "HR 7385"
+      },
+      "Tycho-2": {
+       "V": 5.142,
+       "kimlik": "TYC 1608-1202-1",
+       "VT": 5.247,
+       "BT": 6.409
+      },
+      "Tycho-1": {
+       "V": 5.15,
+       "kimlik": "TYC 1608-1202-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Hipparcos, BSC, Tycho-2, Tycho-1 ile en çok 0.02 kadir fark; SIMBAD değeri kaldı"
     },
     {
      "ad": "* 5 Vul",
@@ -926,7 +2536,32 @@
      "uyelik": null,
      "kaynaklar": [
       "SIMBAD koni taraması"
-     ]
+     ],
+     "Vsimbad": 5.591,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 5.6,
+       "kimlik": "HIP 95560",
+       "kaynakBayragi": "H"
+      },
+      "BSC": {
+       "V": 5.63,
+       "kimlik": "HR 7390"
+      },
+      "Tycho-2": {
+       "V": 5.59,
+       "kimlik": "TYC 1608-1200-1",
+       "VT": 5.59,
+       "BT": 5.589
+      },
+      "Tycho-1": {
+       "V": 5.6,
+       "kimlik": "TYC 1608-1200-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Hipparcos, BSC, Tycho-2, Tycho-1 ile en çok 0.04 kadir fark; SIMBAD değeri kaldı"
     },
     {
      "ad": "HD 182955",
@@ -934,7 +2569,42 @@
      "uyelik": null,
      "kaynaklar": [
       "SIMBAD koni taraması"
-     ]
+     ],
+     "Vsimbad": 5.87,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 5.84,
+       "kimlik": "HIP 95582",
+       "kaynakBayragi": "H"
+      },
+      "BSC": {
+       "V": 5.81,
+       "kimlik": "HR 7391"
+      },
+      "Tycho-2": {
+       "V": 5.849,
+       "kimlik": "TYC 1608-1201-1",
+       "VT": 6.019,
+       "BT": 7.91
+      },
+      "Tycho-1": {
+       "V": 5.83,
+       "kimlik": "TYC 1608-1201-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Hipparcos, BSC, Tycho-2, Tycho-1 ile en çok 0.06 kadir fark; SIMBAD değeri kaldı",
+     "degisen": {
+      "vsx": "HIP 95582",
+      "tur": "LB",
+      "enParlak": 5.85,
+      "enSonuk": 5.86,
+      "bant": "V",
+      "kaynak": "AAVSO VSX (VizieR B/vsx)",
+      "genlik": 0.01
+     },
+     "Vhesap": 5.87
     },
     {
      "ad": "HD 182761",
@@ -942,7 +2612,32 @@
      "uyelik": null,
      "kaynaklar": [
       "SIMBAD koni taraması"
-     ]
+     ],
+     "Vsimbad": 6.287,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 6.31,
+       "kimlik": "HIP 95487",
+       "kaynakBayragi": "H"
+      },
+      "BSC": {
+       "V": 6.31,
+       "kimlik": "HR 7384"
+      },
+      "Tycho-2": {
+       "V": 6.285,
+       "kimlik": "TYC 1608-1198-1",
+       "VT": 6.285,
+       "BT": 6.281
+      },
+      "Tycho-1": {
+       "V": 6.31,
+       "kimlik": "TYC 1608-1198-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Hipparcos, BSC, Tycho-2, Tycho-1 ile en çok 0.02 kadir fark; SIMBAD değeri kaldı"
     },
     {
      "ad": "HD 182422",
@@ -950,7 +2645,32 @@
      "uyelik": null,
      "kaynaklar": [
       "SIMBAD koni taraması"
-     ]
+     ],
+     "Vsimbad": 6.393,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 6.4,
+       "kimlik": "HIP 95340",
+       "kaynakBayragi": "H"
+      },
+      "BSC": {
+       "V": 6.4,
+       "kimlik": "HR 7364"
+      },
+      "Tycho-2": {
+       "V": 6.392,
+       "kimlik": "TYC 1608-1199-1",
+       "VT": 6.393,
+       "BT": 6.404
+      },
+      "Tycho-1": {
+       "V": 6.4,
+       "kimlik": "TYC 1608-1199-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Hipparcos, BSC, Tycho-2, Tycho-1 ile en çok 0.01 kadir fark; SIMBAD değeri kaldı"
     }
    ],
    "toplam": 9
@@ -959,49 +2679,215 @@
    "simbad": "NAME ONC",
    "uyeler": [
     {
+     "ad": "* tet02 Ori A",
+     "V": 4.98,
+     "uyelik": 80,
+     "kaynaklar": [
+      "1997AJ....113.1733H"
+     ],
+     "Vsimbad": 6.39,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 4.98,
+       "kimlik": "HIP 26235",
+       "kaynakBayragi": "H"
+      },
+      "BSC": {
+       "V": 5.08,
+       "kimlik": "HR 1897"
+      },
+      "Tycho-2": {
+       "V": 5.037,
+       "kimlik": "TYC 4774-933-1",
+       "VT": 5.027,
+       "BT": 4.913
+      },
+      "Tycho-1": {
+       "V": 4.91,
+       "kimlik": "TYC 4774-933-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "Hipparcos",
+     "fark": 1.41,
+     "gerekce": "Kaynaklar SIMBAD 6.39, Hipparcos 4.98, BSC 5.08, Tycho-2 5.04, Tycho-1 4.91; en büyük fark 1.48 > 0.15. Ortanca 5.04; ortancaya 0.15 içinde kalan ilk kaynak Hipparcos seçildi (Urania'nın kuralı: Hipparcos > BSC > Tycho-1 > Tycho-2 > SIMBAD).",
+     "degisen": {
+      "vsx": "NSV 2320",
+      "tur": "",
+      "enParlak": 5.05,
+      "enSonuk": 5.19,
+      "bant": "V",
+      "kaynak": "AAVSO VSX (VizieR B/vsx)"
+     },
+     "Vhesap": 5.19
+    },
+    {
      "ad": "* tet01 Ori C",
      "V": 5.13,
      "uyelik": 92,
      "kaynaklar": [
       "1997AJ....113.1733H"
-     ]
+     ],
+     "Vsimbad": 5.13,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 5.13,
+       "kimlik": "HIP 26221",
+       "kaynakBayragi": "G"
+      },
+      "BSC": {
+       "V": 5.13,
+       "kimlik": "HR 1895"
+      },
+      "Tycho-2": {
+       "V": 5.065,
+       "kimlik": "TYC 4774-931-1",
+       "VT": 5.061,
+       "BT": 5.017
+      },
+      "Tycho-1": {
+       "V": 5.13,
+       "kimlik": "TYC 4774-931-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "SIMBAD",
+     "denetim": "Hipparcos, BSC, Tycho-2, Tycho-1 ile en çok 0.06 kadir fark; SIMBAD değeri kaldı",
+     "degisen": {
+      "vsx": "NSV 2294",
+      "tur": "",
+      "enParlak": 5.1,
+      "enSonuk": 5.16,
+      "bant": "V",
+      "kaynak": "AAVSO VSX (VizieR B/vsx)"
+     },
+     "Vhesap": 5.16
     },
     {
      "ad": "* tet02 Ori B",
-     "V": 6.38,
+     "V": 6.204,
      "uyelik": 99,
      "kaynaklar": [
       "1997AJ....113.1733H"
-     ]
+     ],
+     "Vsimbad": 6.38,
+     "kataloglar": {
+      "Tycho-2": {
+       "V": 6.204,
+       "kimlik": "TYC 4774-934-1",
+       "VT": 6.193,
+       "BT": 6.066
+      },
+      "Tycho-1": {
+       "V": 6.02,
+       "kimlik": "TYC 4774-934-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "Tycho-2",
+     "fark": 0.176,
+     "gerekce": "Kaynaklar SIMBAD 6.38, Tycho-2 6.20, Tycho-1 6.02; en büyük fark 0.36 > 0.15. Ortanca 6.20; ortancaya 0.15 içinde kalan ilk kaynak Tycho-2 seçildi (Urania'nın kuralı: Hipparcos > BSC > Tycho-1 > Tycho-2 > SIMBAD).",
+     "degisen": {
+      "vsx": "NSV 2326",
+      "tur": "",
+      "enParlak": 6.38,
+      "enSonuk": 6.44,
+      "bant": "V",
+      "kaynak": "AAVSO VSX (VizieR B/vsx)"
+     },
+     "Vhesap": 6.44
     },
     {
-     "ad": "* tet02 Ori A",
-     "V": 6.39,
-     "uyelik": 80,
+     "ad": "* tet01 Ori A",
+     "V": 6.554,
+     "uyelik": 99,
      "kaynaklar": [
       "1997AJ....113.1733H"
-     ]
+     ],
+     "Vsimbad": 6.73,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 4.98,
+       "kimlik": "HIP 26220",
+       "kaynakBayragi": "H"
+      },
+      "BSC": {
+       "V": 6.73,
+       "kimlik": "HR 1893"
+      },
+      "Tycho-2": {
+       "V": 6.554,
+       "kimlik": "TYC 4774-953-1",
+       "VT": 6.55,
+       "BT": 6.501
+      },
+      "Tycho-1": {
+       "V": 4.98,
+       "kimlik": "TYC 4774-953-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "Tycho-2",
+     "fark": 0.176,
+     "gerekce": "Kaynaklar SIMBAD 6.73, Hipparcos 4.98, BSC 6.73, Tycho-2 6.55, Tycho-1 4.98; en büyük fark 1.75 > 0.15. Ortanca 6.55; ortancaya 0.15 içinde kalan ilk kaynak Tycho-2 seçildi (Urania'nın kuralı: Hipparcos > BSC > Tycho-1 > Tycho-2 > SIMBAD).",
+     "degisen": {
+      "vsx": "V1016 Ori",
+      "tur": "EA",
+      "enParlak": 6.72,
+      "enSonuk": 7.65,
+      "bant": "V",
+      "kaynak": "AAVSO VSX (VizieR B/vsx)"
+     },
+     "Vhesap": 7.65
     },
     {
      "ad": "* tet01 Ori D",
-     "V": 6.7,
+     "V": 6.71,
      "uyelik": 100,
      "kaynaklar": [
       "2008ApJ...676.1109F",
       "1997AJ....113.1733H"
-     ]
-    },
-    {
-     "ad": "* tet01 Ori A",
-     "V": 6.73,
-     "uyelik": 99,
-     "kaynaklar": [
-      "1997AJ....113.1733H"
-     ]
+     ],
+     "Vsimbad": 6.7,
+     "kataloglar": {
+      "Hipparcos": {
+       "V": 6.71,
+       "kimlik": "HIP 26224",
+       "kaynakBayragi": "G"
+      },
+      "BSC": {
+       "V": 6.7,
+       "kimlik": "HR 1896"
+      },
+      "Tycho-2": {
+       "V": 6.385,
+       "kimlik": "TYC 4774-930-1",
+       "VT": 6.384,
+       "BT": 6.37
+      },
+      "Tycho-1": {
+       "V": 6.71,
+       "kimlik": "TYC 4774-930-1",
+       "not": "Tycho-1 Johnson V (I/239/tyc_main T5)"
+      }
+     },
+     "Vkaynak": "Hipparcos",
+     "fark": -0.01,
+     "gerekce": "Kaynaklar SIMBAD 6.70, Hipparcos 6.71, BSC 6.70, Tycho-2 6.38, Tycho-1 6.71; en büyük fark 0.32 > 0.15. Ortanca 6.70; ortancaya 0.15 içinde kalan ilk kaynak Hipparcos seçildi (Urania'nın kuralı: Hipparcos > BSC > Tycho-1 > Tycho-2 > SIMBAD).",
+     "degisen": {
+      "vsx": "NSV 2295",
+      "tur": "",
+      "enParlak": 6.58,
+      "enSonuk": 6.73,
+      "bant": "V",
+      "kaynak": "AAVSO VSX (VizieR B/vsx)"
+     },
+     "Vhesap": 6.73
     }
    ],
    "toplam": 255,
    "hamSatir": 400,
+   "denetlenenAday": 15,
    "uyelikKaynagi": "SIMBAD h_link, üyelik ≥ 50 (kaynak bibcode her yıldızda)",
    "not": "M42 merkez yıldızları (Orion Bulutsusu Kümesi / Trapezium) — bulutsunun kendisi değil; yıldız testi için"
   }
