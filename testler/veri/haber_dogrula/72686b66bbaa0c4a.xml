@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/uoDD5b74V5ZfsHG3t7fpzWs4r7g</id>
+  <title>arXiv Query: search_query=&amp;id_list=2609.16720&amp;start=0&amp;max_results=10</title>
+  <updated>2026-11-10T11:36:26Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=10&amp;id_list=2609.16720" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+  <opensearch:totalResults>1</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2609.16720v1</id>
+    <title>Discovery of radio emission from the exoplanet $β$ Pictoris b</title>
+    <updated>2026-09-15T06:44:39Z</updated>
+    <link href="https://arxiv.org/abs/2609.16720v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.16720v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Planetary magnetic fields shape atmospheric escape, mediate interactions with stellar winds, and encode information about planetary interiors, yet they have not been directly measured for planets beyond the Solar System. A direct observable signature is auroral radio emission produced by the electron cyclotron maser instability, whose highest emitted frequency is set by the magnetic field strength at its source. Although auroral radio bursts are observed in Solar System planets and in some ultracool dwarfs, no radio detection has previously been unambiguously localized to an extrasolar planet rather than its host star. Here, we report the first direct detection of auroral radio emission from an exoplanet, the giant planet $β$ Pictoris b, with the MeerKAT array. We detect rapid, recurring, and highly circularly polarized bursts, as well as persistent emission, at frequencies of 0.85 to 3.5 GHz. We identify the emission as electron cyclotron maser radiation, which implies a magnetic field of $\gtrsim 1.25$ kG at the planet, the first such direct field strength measurement for an exoplanet.</summary>
+    <category term="astro-ph.EP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-15T06:44:39Z</published>
+    <arxiv:comment>32 pages, 9 figures, 3 tables. Submitted</arxiv:comment>
+    <arxiv:primary_category term="astro-ph.EP"/>
+    <author>
+      <name>Kevin N. Ortiz Ceballos</name>
+    </author>
+    <author>
+      <name>Edo Berger</name>
+    </author>
+    <author>
+      <name>Yvette Cendes</name>
+    </author>
+  </entry>
+</feed>

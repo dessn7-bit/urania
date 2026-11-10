@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/Imm78mX2qqJrGfLpCj5cpmEwOWM</id>
+  <title>arXiv Query: search_query=&amp;id_list=2609.23122&amp;start=0&amp;max_results=10</title>
+  <updated>2026-11-10T11:36:23Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=10&amp;id_list=2609.23122" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+  <opensearch:totalResults>1</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2609.23122v1</id>
+    <title>Searching for Embedded Protoplanets with the Keck/NIRC2 Vortex Coronagraph: Confirmation of a Core-accretion Planet in the Narrow Gap of the Elias 2-24 Disk</title>
+    <updated>2026-09-19T16:46:25Z</updated>
+    <link href="https://arxiv.org/abs/2609.23122v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.23122v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present high-contrast imaging observations of seven stars obtained with the Keck/NIRC2 vortex coronagraph between 2018 May and June in the $L'$ and $M_s$ bands. All targets host protoplanetary disks with substructures such as gaps and cavities, potentially tracing ongoing planet formation. Our aim is to assess whether these embedded planets can be directly detected. We reduced the observations with a custom pipeline based on the VIP Python package. Postprocessed images were obtained using angular differential imaging and reference differential imaging combined with principal component analysis. Finally, 5$σ$ contrast curves and detection limits were derived for all targets. We confirm the planetary candidate around Elias 2-24, previously proposed in the literature, at a separation of 394$\pm$31 mas (54.9$\pm4$.3 au) and a position angle of 298.8$\pm$3.2$^\circ$, within the narrow gap of the protoplanetary disk. Comparing the derived photometry with 1 Myr isochrones, we infer a mass between 1.9 and 4.0 Jupiter masses for Elias 2-24 b, without considering accretion effects, in agreement with estimates considering the properties of the gap and planet-disk interactions. For all the systems in the survey, the 5$σ$ detection limits reach sensitivities down to 1-11 Jupiter masses at separations $\gtrsim$0.25". Since Elias 2-24 b (age $\lesssim$1 Myr) is the youngest exoplanet discovered to date, its confirmation has important implications for planet formation timescales and the origin of the gaps observed in very young disks.</summary>
+    <category term="astro-ph.EP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-19T16:46:25Z</published>
+    <arxiv:primary_category term="astro-ph.EP"/>
+    <arxiv:journal_ref>The Astrophysical Journal Letters (2026), 1009, L3</arxiv:journal_ref>
+    <author>
+      <name>Andrea Bernardi</name>
+    </author>
+    <author>
+      <name>Alice Zurlo</name>
+    </author>
+    <author>
+      <name>Lucas A. Cieza</name>
+    </author>
+    <author>
+      <name>Garreth Ruane</name>
+    </author>
+    <author>
+      <name>Valentin Christiaens</name>
+    </author>
+    <author>
+      <name>Anuroop Dasgupta</name>
+    </author>
+    <author>
+      <name>Greta Guidi</name>
+    </author>
+    <author>
+      <name>Dimitri Mawet</name>
+    </author>
+    <author>
+      <name>Dino Mesa</name>
+    </author>
+    <author>
+      <name>Sebastián Pérez</name>
+    </author>
+    <author>
+      <name>Jonathan P. Williams</name>
+    </author>
+    <arxiv:doi>10.3847/2041-8213/ae9bb6</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.3847/2041-8213/ae9bb6" title="doi"/>
+  </entry>
+</feed>

@@ -339,7 +339,7 @@ test('Gizlilik ve CSP: fixture dosyalarında gözlemci alanı yok; CSP connect-s
   expect(b.hedefler.filter(h => h.noktaKaynak).map(h => h.id).sort()).toEqual(['Albireo', 'Alcor', 'Mizar']);
   /* sw.js: yeni dosyalar önbellekte, sürüm v45 */
   const sw = fs.readFileSync(path.join(kok, 'sw.js'), 'utf8');
-  expect(sw).toContain("const SURUM = 'urania-v47'");
+  expect(sw).toContain("const SURUM = 'urania-v48'");
   for (const f of ['./gorunurluk.js', './degisen.js', './veri/gok_parlakligi.u8.gz', './veri/gok_parlakligi.json', './veri/hedef_boyut.json', './veri/durbun_degisenleri.json', './veri/kume_uyeleri.json', './veri/profil_m31.json']) expect(sw).toContain(`'${f}'`);
   /* Elle girilen SQM başlangıçta varsa ilk çizimden itibaren "elle" (atlas beklenmez) */
   await kur(page, { sqm: 20.5 });

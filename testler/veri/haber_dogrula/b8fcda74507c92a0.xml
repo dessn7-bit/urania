@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/QY+vocK0G/HZD6hPH6XzUS/0tI8</id>
+  <title>arXiv Query: search_query=&amp;id_list=2608.21519&amp;start=0&amp;max_results=10</title>
+  <updated>2026-11-10T11:36:18Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=10&amp;id_list=2608.21519" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+  <opensearch:totalResults>1</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2608.21519v2</id>
+    <title>A Highly Reflective Atmosphere on the Lava World TOI-561b Revealed by JWST/NIRSpec Phase Curve</title>
+    <updated>2026-08-28T18:37:42Z</updated>
+    <link href="https://arxiv.org/abs/2608.21519v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.21519v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Ultra-short period (USP) rocky planets are expected to be depleted of any substantial gaseous envelope due to the intense irradiation they receive from their host star, making the recent detection of an atmosphere around TOI-561~b particularly surprising. That finding was based on the planet's bulk density and dayside emission spectrum, but full-orbit phase curve observations offer a more comprehensive way to constrain the presence and characteristics of a planet's atmosphere. In this paper, we map TOI-561~b's 3-5~$μ$m emission using JWST/NIRSpec multi-orbit spectroscopic phase curves, explicitly accounting for the curvature of the out-of-eclipse baseline and possible hotspot offsets. From a simple energy balance argument as well as comparing to general circulation models, we find the phase curve observations are best explained with high Bond albedo and moderate global heat transfer. Our 37-hour continuous observation provides a long baseline that allows us to model stellar granulation, the planetary phase curve, and dayside emission simultaneously, effectively disentangling these signals and yielding a dayside emission spectrum that is more robust against stellar variability and consistent with previous eclipse-only fits. Using general circulation model outputs, we constrain where clouds can plausibly form and test candidate compositions, finding that silicate clouds, such as SiO$_2$ and MgSiO$_3$, can form on the dayside near the terminator and explain the observed albedo. Our findings confirm that TOI-561~b appears to have a global reflective atmosphere, suggesting exchange of volatiles with the interior to maintain it.</summary>
+    <category term="astro-ph.EP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-21T18:00:03Z</published>
+    <arxiv:comment>Accepted for publication in AJ</arxiv:comment>
+    <arxiv:primary_category term="astro-ph.EP"/>
+    <author>
+      <name>Samuel Boucher</name>
+    </author>
+    <author>
+      <name>Lisa Dang</name>
+    </author>
+    <author>
+      <name>Alex McGinty</name>
+    </author>
+    <author>
+      <name>Johanna K. Teske</name>
+    </author>
+    <author>
+      <name>Raymond Pierrehumbert</name>
+    </author>
+    <author>
+      <name>Anjali A. A. Piette</name>
+    </author>
+    <author>
+      <name>Nicole L. Wallack</name>
+    </author>
+    <author>
+      <name>Angharad Weeks</name>
+    </author>
+    <author>
+      <name>Neil T. Lewis</name>
+    </author>
+    <author>
+      <name>Tim Lichtenberg</name>
+    </author>
+    <author>
+      <name>Mykhaylo Plotnykov</name>
+    </author>
+    <author>
+      <name>Emma Postolec</name>
+    </author>
+    <author>
+      <name>Daniel Huber</name>
+    </author>
+    <author>
+      <name>Timothy R. Bedding</name>
+    </author>
+    <author>
+      <name>Harrison Nicholls</name>
+    </author>
+    <author>
+      <name>Bo Peng</name>
+    </author>
+    <author>
+      <name>Mark Hammond</name>
+    </author>
+    <author>
+      <name>Diana Valencia</name>
+    </author>
+  </entry>
+</feed>

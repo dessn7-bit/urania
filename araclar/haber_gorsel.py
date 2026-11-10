@@ -8,7 +8,7 @@ from PIL import Image
 K = os.path.join(os.path.dirname(__file__), '..')
 kimlik, url = sys.argv[1], sys.argv[2]
 if not kimlik.replace('-', '').isalnum(): sys.exit('kimlik yalnız harf, rakam ve tire')
-ham = subprocess.run(['curl', '-sSL', '-m', '60', '--fail', '-A', 'UraniaHaber/1.0', url], capture_output=True)
+ham = subprocess.run(['curl', '-sSL', '-m', '60', '--fail', '-A', 'urania-haber/1.0 (+https://github.com/dessn7-bit/urania)', url], capture_output=True)
 if ham.returncode: sys.exit('indirilemedi: ' + ham.stderr.decode()[:200])
 im = Image.open(io.BytesIO(ham.stdout)); im.load()
 if im.mode not in ('RGB', 'L'):

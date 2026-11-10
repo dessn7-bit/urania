@@ -1,6 +1,50 @@
 {
- "guncelleme": "2026-11-07",
+ "guncelleme": "2026-11-10",
  "haberler": [
+  {
+   "id": "2026-11-05-enceladus-ters-isik",
+   "tarih": "2026-11-05",
+   "eklenme": "2026-11-10",
+   "tur": "gorsel",
+   "baslik": "Güneş'e karşı Enceladus ve fışkıran buz jetleri",
+   "ozet": [
+    "Satürn'ün uydusu Enceladus bu görüntüde Güneş'i arkasına almış. Fotoğrafı Cassini uzay aracı 1 Kasım 2009'da, Güneş'e doğru bakarak çekti. Arkadan gelen ışık, uydunun güney kutbundan uzaya fışkıran buz ve su buharı jetlerini parlatıyor; aynı ışık Satürn'ün buzlu halkalarını da aydınlatıyor. Enceladus yaklaşık 505 km genişliğinde. Halkaların ötesinde, sağ altta 84 km'lik küçük uydu Pandora görülüyor; onun karanlık yüzü Satürn'den yansıyan soluk ışıkla belli belirsiz aydınlanıyor.",
+    "Bu jetleri Cassini 2005'te keşfetti. NASA'ya göre jetler, uydunun buz kabuğunun altındaki tuzlu bir okyanusla bağlantılı; uzaya saçılan buz tanecikleri Satürn'ün soluk E halkasını besliyor. Enceladus'un yüzeyi de Güneş Sistemi'nin en beyaz, ışığı en çok yansıtan yüzeyi. Görüntü Cassini'nin dar açılı kamerasıyla görünür ışıkta, doğal renkte çekildi; araç o sırada Enceladus'tan yaklaşık 240.800 km uzaktaydı. Cassini görevi 15 Eylül 2017'de sona erdi."
+   ],
+   "ilgili_dersler": [
+    "d40",
+    "d38"
+   ],
+   "gorsel": {
+    "dosya": "img/haber/2026-11-05-enceladus-ters-isik.jpg",
+    "alt": "Ortada Güneş'i arkasına almış kapkara, yuvarlak Enceladus; alt kenarından aşağı doğru soluk, parlak jetler uzanıyor; arkasında yatay parlak halka çizgileri, sağ altta küçük, soluk Pandora.",
+    "aciklama": "Gerçek fotoğraf: Cassini'nin dar açılı kamerasıyla görünür ışıkta, doğal renkte çekildi (1 Kasım 2009). Güneş uydunun arkasında olduğu için Enceladus siyah bir daire gibi görünüyor; parlayanlar, arkadan aydınlanan buz tanecikleri.",
+    "kredi": "NASA/JPL-Caltech/Space Science Institute",
+    "lisans": "Kamu malı (NASA)",
+    "kaynak_url": "https://science.nasa.gov/photojournal/a-song-of-ice-and-light/",
+    "apod": {
+     "url": "https://science.nasa.gov/image-article/apod-2026-november-5-enceladus-in-silhouette/",
+     "tarih": "2026-11-05",
+     "kredi_satiri": "Cassini Imaging Team, SSI, JPL, ESA, NASA"
+    }
+   },
+   "kaynaklar": [
+    {
+     "ad": "NASA APOD: Enceladus in Silhouette",
+     "url": "https://science.nasa.gov/image-article/apod-2026-november-5-enceladus-in-silhouette/",
+     "tarih": "2026-11-05"
+    },
+    {
+     "ad": "NASA Photojournal PIA17144: A Song of Ice and Light",
+     "url": "https://science.nasa.gov/photojournal/a-song-of-ice-and-light/",
+     "tarih": "2018-02-12"
+    },
+    {
+     "ad": "NASA Science: Enceladus",
+     "url": "https://science.nasa.gov/saturn/moons/enceladus/"
+    }
+   ]
+  },
   {
    "id": "2026-11-05-iss-son-gunes-paneli",
    "tarih": "2026-11-05",
@@ -110,6 +154,7 @@
    ],
    "neden_onemli": "Doğrulanırsa Mars'ın bugün de yeraltında sıcak ve etkin bölgeler barındırdığını gösterir; bu tür sıcak ve nemli yeraltı ortamları, mikrobik yaşam aramasında ilk bakılacak yerler arasında.",
    "kesinlik": "tartışmalı",
+   "kesinlik_neden": "tartisma",
    "ilgili_dersler": [
     "d36",
     "d2",
@@ -117,9 +162,15 @@
    ],
    "makale": {
     "baslik": "Enigmatic HCl detections as a potential signature of igneous activity on Mars",
-    "yazarlar": "Mège, Trokhimovskiy vd.",
+    "yazarlar": "Trokhimovskiy, Mège vd.",
     "dergi": "Science Advances",
-    "url": "https://www.science.org/doi/10.1126/sciadv.aeb9422"
+    "url": "https://doi.org/10.1126/sciadv.aeb9422",
+    "doi": "10.1126/sciadv.aeb9422",
+    "yayin_tarihi": "2026-11-06",
+    "cilt": "12",
+    "sayfa": "eaeb9422",
+    "hakemli": true,
+    "yayin_tarihi_alan": "published-print"
    },
    "kaynaklar": [
     {
@@ -169,7 +220,17 @@
     "baslik": "Imaging exoplanets below the telescope stability limit",
     "yazarlar": "Ferrer-Chavez, Bouman, Wang vd.",
     "dergi": "Nature",
-    "url": "https://www.nature.com/articles/s41586-026-11213-z"
+    "url": "https://doi.org/10.1038/s41586-026-11213-z",
+    "doi": "10.1038/s41586-026-11213-z",
+    "yayin_tarihi": "2026-11-04",
+    "cilt": "659",
+    "sayfa": "58-62",
+    "lisans": {
+     "ad": "CC BY 4.0",
+     "url": "https://creativecommons.org/licenses/by/4.0"
+    },
+    "hakemli": true,
+    "yayin_tarihi_alan": "published-online"
    },
    "kaynaklar": [
     {
@@ -288,7 +349,16 @@
     "baslik": "A Martian meteorite that formed ≳4.1 billion years ago samples Mars' early crust and mantle",
     "yazarlar": "Liu vd.",
     "dergi": "Science",
-    "url": "https://doi.org/10.1126/science.adz5646"
+    "url": "https://doi.org/10.1126/science.adz5646",
+    "doi": "10.1126/science.adz5646",
+    "yayin_tarihi": "2026-10-29",
+    "sayfa": "eadz5646",
+    "lisans": {
+     "ad": "açık lisans değil (yayıncı koşulları)",
+     "url": "https://www.science.org/content/page/science-licenses-journal-article-reuse"
+    },
+    "hakemli": true,
+    "yayin_tarihi_alan": "published-online"
    },
    "kaynaklar": [
     {
@@ -378,6 +448,7 @@
    ],
    "neden_onemli": "Betelgeuse, patlamaya en yakın parlak yıldızlardan biri; eşinin atmosferini nasıl etkilediğini anlamak, yıldızın tuhaf parlaklık değişimlerini ve kütle kaybını açıklamaya yardım edebilir.",
    "kesinlik": "ön sonuç",
+   "kesinlik_neden": "aday",
    "ilgili_dersler": [
     "d15",
     "d5",
@@ -386,8 +457,19 @@
    "makale": {
     "baslik": "New Spatially Resolved Observations of Betelgeuse from the VLA and ALMA: Evidence for Atmospheric Perturbations from a Close Companion",
     "yazarlar": "Matthews, Dupree, Richards, Dent",
-    "dergi": "The Astronomical Journal (arXiv ön baskısı: 2608.02847)",
-    "url": "https://arxiv.org/pdf/2608.02847"
+    "dergi": "The Astronomical Journal",
+    "url": "https://doi.org/10.3847/1538-3881/ae953d",
+    "doi": "10.3847/1538-3881/ae953d",
+    "yayin_tarihi": "2026-09-01",
+    "cilt": "172",
+    "sayfa": "184",
+    "lisans": {
+     "ad": "CC BY 4.0",
+     "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "hakemli": true,
+    "arxiv": "2608.02847",
+    "yayin_tarihi_alan": "published-online"
    },
    "kaynaklar": [
     {
@@ -526,7 +608,15 @@
     "baslik": "A double debris disc around a white dwarf sculpted by two planetary bodies",
     "yazarlar": "Gentile Fusillo vd.",
     "dergi": "Nature Astronomy",
-    "url": "https://www.nature.com/articles/s41550-026-03004-3"
+    "url": "https://doi.org/10.1038/s41550-026-03004-3",
+    "doi": "10.1038/s41550-026-03004-3",
+    "yayin_tarihi": "2026-10-26",
+    "lisans": {
+     "ad": "CC BY 4.0",
+     "url": "https://creativecommons.org/licenses/by/4.0"
+    },
+    "hakemli": true,
+    "yayin_tarihi_alan": "published-online"
    },
    "kaynaklar": [
     {
@@ -570,6 +660,7 @@
    ],
    "neden_onemli": "Rubin'in ilk aylarındaki verilerinden gelen bu sonuç, Güneş Sistemi'nin dış bölgelerinde hâlâ büyük cisimlerin keşfedilmeyi beklediğini ve gözlemevinin bunları kalabalık gökyüzü bölgelerinde bile bulabildiğini gösteriyor.",
    "kesinlik": "ön sonuç",
+   "kesinlik_neden": "aday",
    "ilgili_dersler": [
     "d41",
     "d19",
@@ -678,8 +769,16 @@
    "makale": {
     "baslik": "Lyman continuum escape during the onset of galactic winds in compact starbursts",
     "yazarlar": "Carr vd.",
-    "dergi": "Nature Astronomy (arXiv:2510.21197)",
-    "url": "https://doi.org/10.1038/s41550-026-02999-z"
+    "dergi": "Nature Astronomy",
+    "url": "https://doi.org/10.1038/s41550-026-02999-z",
+    "doi": "10.1038/s41550-026-02999-z",
+    "yayin_tarihi": "2026-10-15",
+    "lisans": {
+     "ad": "açık lisans değil (yayıncı koşulları)"
+    },
+    "hakemli": true,
+    "arxiv": "2510.21197",
+    "yayin_tarihi_alan": "published-online"
    },
    "kaynaklar": [
     {
@@ -787,10 +886,17 @@
     "d7"
    ],
    "makale": {
-    "baslik": "A fast radio burst from the first 3 billion years of the Universe",
+    "baslik": "A fast radio burst at redshift 2, three billion years after the Big Bang",
     "yazarlar": "Caleb vd.",
-    "dergi": "Science (ön baskısı: arXiv:2508.01648)",
-    "url": "https://arxiv.org/abs/2508.01648"
+    "dergi": "Science",
+    "url": "https://doi.org/10.1126/science.adz2675",
+    "onbaski_baslik": "A fast radio burst from the first 3 billion years of the Universe",
+    "doi": "10.1126/science.adz2675",
+    "yayin_tarihi": "2026-10-08",
+    "sayfa": "eadz2675",
+    "hakemli": true,
+    "arxiv": "2508.01648",
+    "yayin_tarihi_alan": "published-online"
    },
    "kaynaklar": [
     {
@@ -844,7 +950,17 @@
     "baslik": "The PSR J0435+3233 Triple System",
     "yazarlar": "Yang vd.",
     "dergi": "The Astrophysical Journal Letters",
-    "url": "https://doi.org/10.3847/2041-8213/aeaa29"
+    "url": "https://doi.org/10.3847/2041-8213/aeaa29",
+    "doi": "10.3847/2041-8213/aeaa29",
+    "yayin_tarihi": "2026-10-08",
+    "cilt": "1010",
+    "sayfa": "L9",
+    "lisans": {
+     "ad": "CC BY 4.0",
+     "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "hakemli": true,
+    "yayin_tarihi_alan": "published-online"
    },
    "kaynaklar": [
     {
@@ -885,6 +1001,7 @@
    ],
    "neden_onemli": "Doğrulanırsa gök cisimleri sınıflamasında uzun süredir boş kalan bir yeri dolduracak ve Samanyolu'ndaki en yüksek enerjili parçacıkların kaynaklarından birine işaret edebilecek.",
    "kesinlik": "ön sonuç",
+   "kesinlik_neden": "aday",
    "ilgili_dersler": [
     "d16",
     "d48",
@@ -894,7 +1011,17 @@
     "baslik": "A Galactic microblazar as a potential accelerator of ultra-high-energy particles",
     "yazarlar": "Martí vd.",
     "dergi": "Astronomy & Astrophysics",
-    "url": "https://doi.org/10.1051/0004-6361/202661105"
+    "url": "https://doi.org/10.1051/0004-6361/202661105",
+    "doi": "10.1051/0004-6361/202661105",
+    "yayin_tarihi": "2026-10-07",
+    "cilt": "714",
+    "sayfa": "A171",
+    "lisans": {
+     "ad": "CC BY 4.0",
+     "url": "https://creativecommons.org/licenses/by/4.0"
+    },
+    "hakemli": true,
+    "yayin_tarihi_alan": "published-online"
    },
    "kaynaklar": [
     {
@@ -988,6 +1115,7 @@
    ],
    "neden_onemli": "Doğrulanırsa, gezegenlerin yalnızca yıldız gençken değil, yıldızın ömrünün sonunda savurduğu malzemeden de oluşabildiğinin ilk somut örneği olacak.",
    "kesinlik": "ön sonuç",
+   "kesinlik_neden": "aday",
    "ilgili_dersler": [
     "d6",
     "d13",
@@ -997,7 +1125,15 @@
     "baslik": "Discovery of a second-generation planet candidate accreting onto a white dwarf",
     "yazarlar": "Williams vd.",
     "dergi": "Nature Astronomy",
-    "url": "https://doi.org/10.1038/s41550-026-02983-7"
+    "url": "https://doi.org/10.1038/s41550-026-02983-7",
+    "doi": "10.1038/s41550-026-02983-7",
+    "yayin_tarihi": "2026-10-05",
+    "lisans": {
+     "ad": "CC BY 4.0",
+     "url": "https://creativecommons.org/licenses/by/4.0"
+    },
+    "hakemli": true,
+    "yayin_tarihi_alan": "published-online"
    },
    "kaynaklar": [
     {
@@ -1115,8 +1251,19 @@
    "makale": {
     "baslik": "A Highly Reflective Atmosphere on the Lava World TOI-561b Revealed by JWST/NIRSpec Phase Curves",
     "yazarlar": "Boucher vd.",
-    "dergi": "The Astronomical Journal (ön baskısı: arXiv:2608.21519)",
-    "url": "https://doi.org/10.3847/1538-3881/ae9763"
+    "dergi": "The Astronomical Journal",
+    "url": "https://doi.org/10.3847/1538-3881/ae9763",
+    "doi": "10.3847/1538-3881/ae9763",
+    "yayin_tarihi": "2026-09-29",
+    "cilt": "172",
+    "sayfa": "239",
+    "lisans": {
+     "ad": "CC BY 4.0",
+     "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "hakemli": true,
+    "arxiv": "2608.21519",
+    "yayin_tarihi_alan": "published-online"
    },
    "kaynaklar": [
     {
@@ -1222,7 +1369,17 @@
     "baslik": "Detection of the Cosmological 21 cm Signal in Autocorrelation at z ∼ 1 with the Canadian Hydrogen Intensity Mapping Experiment",
     "yazarlar": "CHIME İş Birliği (Amiri vd.)",
     "dergi": "The Astrophysical Journal",
-    "url": "https://doi.org/10.3847/1538-4357/ae9835"
+    "url": "https://doi.org/10.3847/1538-4357/ae9835",
+    "doi": "10.3847/1538-4357/ae9835",
+    "yayin_tarihi": "2026-09-28",
+    "cilt": "1009",
+    "sayfa": "159",
+    "lisans": {
+     "ad": "CC BY 4.0",
+     "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "hakemli": true,
+    "yayin_tarihi_alan": "published-online"
    },
    "kaynaklar": [
     {
@@ -1301,6 +1458,7 @@
    ],
    "neden_onemli": "Güneş Sistemi'nin uzak geleceğine dair yerleşik bir tahmini yaklaşık milyar kat kısaltıyor ve bir yıldızın ölürken kütlesini nasıl kaybettiğinin, gezegenlerinin kaderi için belirleyici olabileceğini gösteriyor.",
    "kesinlik": "ön sonuç",
+   "kesinlik_neden": "benzetim",
    "ilgili_dersler": [
     "d5",
     "d6",
@@ -1310,7 +1468,17 @@
     "baslik": "Terminal Instability of the Solar System Triggered by Stochastic Solar Mass Loss",
     "yazarlar": "Batygin vd.",
     "dergi": "The Astrophysical Journal Letters",
-    "url": "https://doi.org/10.3847/2041-8213/aea290"
+    "url": "https://doi.org/10.3847/2041-8213/aea290",
+    "doi": "10.3847/2041-8213/aea290",
+    "yayin_tarihi": "2026-09-21",
+    "cilt": "1009",
+    "sayfa": "L22",
+    "lisans": {
+     "ad": "CC BY 4.0",
+     "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "hakemli": true,
+    "yayin_tarihi_alan": "published-online"
    },
    "kaynaklar": [
     {
@@ -1346,6 +1514,7 @@
    ],
    "neden_onemli": "Klasik yöntemlerin zorlandığı sıcak yıldızlarda gezegen ve kahverengi cüce aramanın yeni bir yolunu gösteriyor ve bu yıldızlarda dev gezegenlerin ne sıklıkta bulunduğuna dair ilk kaba tahmini veriyor.",
    "kesinlik": "ön sonuç",
+   "kesinlik_neden": "aday",
    "ilgili_dersler": [
     "d13",
     "d15",
@@ -1355,7 +1524,17 @@
     "baslik": "A Search for Substellar Companions around A-type Stars: Pulsation Timing Detection of Eight Brown Dwarf Candidates and a Possible Habitable-zone Planet",
     "yazarlar": "Wilson vd.",
     "dergi": "The Astrophysical Journal",
-    "url": "https://doi.org/10.3847/1538-4357/ae93a0"
+    "url": "https://doi.org/10.3847/1538-4357/ae93a0",
+    "doi": "10.3847/1538-4357/ae93a0",
+    "yayin_tarihi": "2026-09-17",
+    "cilt": "1009",
+    "sayfa": "78",
+    "lisans": {
+     "ad": "CC BY 4.0",
+     "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "hakemli": true,
+    "yayin_tarihi_alan": "published-online"
    },
    "kaynaklar": [
     {
@@ -1399,8 +1578,19 @@
    "makale": {
     "baslik": "Searching for Embedded Protoplanets with the Keck/NIRC2 Vortex Coronagraph: Confirmation of a Core-accretion Planet in the Narrow Gap of the Elias 2-24 Disk",
     "yazarlar": "Bernardi vd.",
-    "dergi": "The Astrophysical Journal Letters (ön baskısı: arXiv:2609.23122)",
-    "url": "https://doi.org/10.3847/2041-8213/ae9bb6"
+    "dergi": "The Astrophysical Journal Letters",
+    "url": "https://doi.org/10.3847/2041-8213/ae9bb6",
+    "doi": "10.3847/2041-8213/ae9bb6",
+    "yayin_tarihi": "2026-09-16",
+    "cilt": "1009",
+    "sayfa": "L3",
+    "lisans": {
+     "ad": "CC BY 4.0",
+     "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "hakemli": true,
+    "arxiv": "2609.23122",
+    "yayin_tarihi_alan": "published-online"
    },
    "kaynaklar": [
     {
@@ -1450,6 +1640,7 @@
    ],
    "neden_onemli": "Webb'in iki büyük bilmecesini, erken evrendeki aşırı ağır kara delikleri ve küçük kırmızı noktaları, tek bir senaryoda birleştiriyor. Doğruysa bugünkü dev kara deliklerin nasıl bu kadar hızlı büyüdüğüne dair önemli bir parça.",
    "kesinlik": "tartışmalı",
+   "kesinlik_neden": "tartisma",
    "ilgili_dersler": [
     "d46",
     "d8",
@@ -1459,7 +1650,17 @@
     "baslik": "Overmassive black holes and little red dots naturally form in simulations",
     "yazarlar": "Chon vd.",
     "dergi": "Nature",
-    "url": "https://doi.org/10.1038/s41586-026-10985-8"
+    "url": "https://doi.org/10.1038/s41586-026-10985-8",
+    "doi": "10.1038/s41586-026-10985-8",
+    "yayin_tarihi": "2026-09-16",
+    "cilt": "657",
+    "sayfa": "621-625",
+    "lisans": {
+     "ad": "CC BY 4.0",
+     "url": "https://creativecommons.org/licenses/by/4.0"
+    },
+    "hakemli": true,
+    "yayin_tarihi_alan": "published-online"
    },
    "kaynaklar": [
     {
@@ -1513,6 +1714,7 @@
    ],
    "neden_onemli": "Manyetik alan, bir gezegenin atmosferini yıldız rüzgârına karşı nasıl koruduğunu ve atmosferinin ne kadar hızlı kaçtığını belirliyor; bu sonuç ötegezegenlerde manyetik alanı doğrudan ölçmenin yolunu açabilir.",
    "kesinlik": "ön sonuç",
+   "kesinlik_neden": "dogrulanmamis",
    "ilgili_dersler": [
     "d13",
     "d33",
@@ -1561,7 +1763,8 @@
     "Çalışma, Venüs'ün gerçekten bir uydusu olduğunu kanıtlamıyor; yalnızca olduysa ne olacağını hesaplıyor. Kanıt bulmak zor: Venüs yüzeyinin yaklaşık yüzde 80'i benzer yaşta ve bu, gezegenin yüzeyini yaklaşık bir milyar yıl önce büyük ölçüde yenileyen bir olaya işaret ediyor; eski izler silinmiş olabilir. Kane, Dünya'nın derinliklerinde Ay'ı doğuran çarpışmayla ilişkilendirilebilecek yapıların sismik ölçümlerle bulunduğunu hatırlatıyor; Venüs'te de benzer ölçümler bir gün yutulmuş bir uydunun izini ortaya çıkarabilir. Yazarlar ayrıca uydunun Roche sınırında parçalanmasının yüzeye ve atmosfere büyük bir enerji aktaracağını, bunun Venüs'ün suyunu kaybetmesi ve aşırı sera etkisine sürüklenmesiyle ilgili olabileceğini not ediyor."
    ],
    "neden_onemli": "Venüs'ün neden uydusuz olduğuna ek bir felaket gerektirmeyen bir açıklama getiriyor ve gezegen–uydu sistemlerinin uzun vadeli evrimini anlamaya katkı sağlıyor.",
-   "kesinlik": "kesin",
+   "kesinlik": "ön sonuç",
+   "kesinlik_neden": "benzetim",
    "ilgili_dersler": [
     "d35",
     "d10",
@@ -1570,8 +1773,19 @@
    "makale": {
     "baslik": "Tidal Demise: The Evolution and Fate of a Hypothetical Venus Moon",
     "yazarlar": "Kane vd.",
-    "dergi": "The Astrophysical Journal (ön baskısı: arXiv:2608.25036)",
-    "url": "https://doi.org/10.3847/1538-4357/ae9d6c"
+    "dergi": "The Astrophysical Journal",
+    "url": "https://doi.org/10.3847/1538-4357/ae9d6c",
+    "doi": "10.3847/1538-4357/ae9d6c",
+    "yayin_tarihi": "2026-09-14",
+    "cilt": "1009",
+    "sayfa": "31",
+    "lisans": {
+     "ad": "CC BY 4.0",
+     "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "hakemli": true,
+    "arxiv": "2608.25036",
+    "yayin_tarihi_alan": "published-online"
    },
    "kaynaklar": [
     {
@@ -1630,7 +1844,17 @@
     "baslik": "The LBT Yp Project. IV. A New Value of the Primordial Helium Abundance",
     "yazarlar": "Aver vd.",
     "dergi": "The Astrophysical Journal",
-    "url": "https://doi.org/10.3847/1538-4357/ae879b"
+    "url": "https://doi.org/10.3847/1538-4357/ae879b",
+    "doi": "10.3847/1538-4357/ae879b",
+    "yayin_tarihi": "2026-09-09",
+    "cilt": "1008",
+    "sayfa": "240",
+    "lisans": {
+     "ad": "CC BY 4.0",
+     "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "hakemli": true,
+    "yayin_tarihi_alan": "published-online"
    },
    "kaynaklar": [
     {
@@ -1689,6 +1913,7 @@
    ],
    "neden_onemli": "Evrenin geleceğini belirleyen karanlık enerjinin gerçekten sabit olup olmadığı sorusunu güçlendiriyor. Doğrulanırsa bugünkü standart kozmoloji modelinin değişmesi gerekecek.",
    "kesinlik": "ön sonuç",
+   "kesinlik_neden": "aday",
    "ilgili_dersler": [
     "d51",
     "d17",
@@ -1972,7 +2197,17 @@
     "baslik": "Discovery of a star sensitive to the spin of Sgr A*",
     "yazarlar": "GRAVITY+ İş Birliği (Abd El Dayem vd.)",
     "dergi": "Nature",
-    "url": "https://doi.org/10.1038/s41586-026-10894-w"
+    "url": "https://doi.org/10.1038/s41586-026-10894-w",
+    "doi": "10.1038/s41586-026-10894-w",
+    "yayin_tarihi": "2026-08-19",
+    "cilt": "657",
+    "sayfa": "359-363",
+    "lisans": {
+     "ad": "CC BY 4.0",
+     "url": "https://creativecommons.org/licenses/by/4.0"
+    },
+    "hakemli": true,
+    "yayin_tarihi_alan": "published-online"
    },
    "kaynaklar": [
     {

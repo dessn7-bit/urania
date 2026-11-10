@@ -77,7 +77,9 @@ const YABANCI_HARF = new Set([...'ÀÁÂÄÅÆÈÉÊËÌÍÏÑÒÓÔÕØÙÚÝà
 /* Okunmayan / metin olmayan alanlar: kimlikler, adresler, tarih ve tür etiketleri, kaynak listeleri, renk ve CSS seçicileri */
 const ATLA = new Set(['id', 'kid', 'url', 'kaynak_url', 'tarih', 'eklenme', 'tur', 'kesinlik', 'ilgili_dersler', 'unite', 'on_bilgi',
   'kaynaklar', 'kaynak', 'kredi', 'lisans', 'ham', 'renk', 'sekil', 'dogru', 'guncelleme', 'sec', 'zemin',
-  'dersler', 'ders']);   // dersler / ders: deney kayıtlarındaki ders kimliği listeleri (bağlantı, okunmaz)
+  'dersler', 'ders',   // dersler / ders: deney kayıtlarındaki ders kimliği listeleri (bağlantı, okunmaz)
+  /* v48 haber alanları: ekranda okunmayan kimlik / künye bilgileri (APOD'un özgün kredi satırı, DOI, arXiv no, cilt, sayfa) */
+  'kredi_satiri', 'kesinlik_neden', 'doi', 'arxiv', 'yayin_tarihi', 'cilt', 'sayfa', 'onbaski_baslik']);
 function topla(o, yol, out) {
   if (typeof o === 'string') { if (!/^(https?:|#)/.test(o)) out.push([yol, o]); return; }
   if (Array.isArray(o)) o.forEach((x, i) => topla(x, yol + '[' + i + ']', out));

@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/4bI7J8XnjW2rOiKX669jENbKPTE</id>
+  <title>arXiv Query: search_query=&amp;id_list=2510.21197&amp;start=0&amp;max_results=10</title>
+  <updated>2026-11-10T11:36:09Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=10&amp;id_list=2510.21197" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+  <opensearch:totalResults>1</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2510.21197v2</id>
+    <title>Supernovae Driven Winds Impede Lyman Continuum Escape from Dwarf Galaxies in First 10 Myr</title>
+    <updated>2026-07-07T16:56:20Z</updated>
+    <link href="https://arxiv.org/abs/2510.21197v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.21197v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Observations suggest that UV-bright, compact star-forming galaxies produce enough ionizing (Lyman continuum; LyC) photons to reionize the Universe. Yet, the efficiency of LyC escape and the roles of radiation, stellar winds, and supernovae remain uncertain. Using medium-resolution spectra of six nearly identical local star-forming galaxies, we directly trace, for the first time, the evolution of a multiphase wind through individual spectral lines alongside measurements of the LyC escape fraction. We find that LyC escape peaks early, during a period dominated by intense radiation and stellar winds but lacking a fast galactic wind. As the starbursts age, supernovae drive and accelerate the wind, progressively suppressing LyC escape. These results highlight the need for cosmological simulations to incorporate early feedback as a key driver of reionization.</summary>
+    <category term="astro-ph.GA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-24T07:00:53Z</published>
+    <arxiv:comment>42 pages, 7 figures, 5 tables. Accepted for publication in Nature Astronomy</arxiv:comment>
+    <arxiv:primary_category term="astro-ph.GA"/>
+    <author>
+      <name>Cody Carr</name>
+    </author>
+    <author>
+      <name>Renyue Cen</name>
+    </author>
+    <author>
+      <name>Stephan McCandliss</name>
+    </author>
+    <author>
+      <name>Jack Ford</name>
+    </author>
+    <author>
+      <name>Alberto Saldana-Lopez</name>
+    </author>
+    <author>
+      <name>Claudia Scarlata</name>
+    </author>
+    <author>
+      <name>Mason Huberty</name>
+    </author>
+    <author>
+      <name>Anne Jaskot</name>
+    </author>
+    <author>
+      <name>Sophia Flury</name>
+    </author>
+    <author>
+      <name>M. S. Oey</name>
+    </author>
+    <author>
+      <name>Ricardo O. Amorín</name>
+    </author>
+    <author>
+      <name>Sanchayeeta Borthakur</name>
+    </author>
+    <author>
+      <name>Matthew Hayes</name>
+    </author>
+    <author>
+      <name>Timothy Heckman</name>
+    </author>
+    <author>
+      <name>Zhiyuan Ji</name>
+    </author>
+    <author>
+      <name>Lena Komarova</name>
+    </author>
+    <author>
+      <name>Alexandra Le Reste</name>
+    </author>
+    <author>
+      <name>Floriane Leclercq</name>
+    </author>
+    <author>
+      <name>Rui Marques-Chaves</name>
+    </author>
+    <author>
+      <name>Leo Michel-Dansac</name>
+    </author>
+    <author>
+      <name>Göran Östlin</name>
+    </author>
+    <author>
+      <name>Swara Ravindranath</name>
+    </author>
+    <author>
+      <name>Michael J. Rutkowski</name>
+    </author>
+    <author>
+      <name>Daniel Schaerer</name>
+    </author>
+    <author>
+      <name>Trinh Thuan</name>
+    </author>
+    <author>
+      <name>Eros Vanzella</name>
+    </author>
+    <author>
+      <name>Bingjie Wang</name>
+    </author>
+    <author>
+      <name>Xinfeng Xu</name>
+    </author>
+  </entry>
+</feed>
