@@ -33,6 +33,7 @@ TAP = 'https://simbad.cfa.harvard.edu/simbad/sim-tap/sync'
 UA = 'urania-arastirma/1.0'
 ESIK = 50          # üyelik yüzdesi (Urania'nın seçimi: en az bir kaynakta ≥ %50)
 EN_COK = 5         # en parlak üye sayısı (görev metni: "en parlak 5 üye")
+DURBUN_ALANI = 6.4   # 7×50 gerçek görüş alanı (°), gok.js DURBUN_ALANI ile aynı (Nikon Action EX belgesi)
 ADAY = 15         # çapraz denetlenen aday üye sayısı (SIMBAD sırasıyla; Urania'nın seçimi: yanlış SIMBAD V'li parlak bir üye ilk 5'e girebilsin)
 ESIK_V = 0.15     # kadir: bundan büyük farkta iki kaynak da yazılır (görev metni)
 VIZ = 'https://vizier.cfa.harvard.edu/viz-bin/asu-tsv'
@@ -90,7 +91,16 @@ def viz(kaynak, kos, cikti):
     """VizieR ASU-TSV: tek satır sözlük listesi"""
     q = [('-source', kaynak)] + list(kos.items()) + [('-out', c) for c in cikti]
     istek = urllib.request.Request(VIZ + '?' + urllib.parse.urlencode(q), headers={'User-Agent': UA})
-    satir = [l for l in oku_tekrar(istek).decode('utf-8', 'replace').split('\n') if l and not l.startswith('#')]
+    # Geçerli ASU-TSV yanıtı (satır olmasa da) '#RESOURCE' / '#Table' başlıklarını taşır; yoksa sunucu hata sayfası ya da
+    # boş yanıt döndürmüştür (v47: VizieR aynası ara sıra böyle yanıtladı ve yıldızın katalog değerleri sessizce kayboldu).
+    for i in range(5):
+        ham = oku_tekrar(istek).decode('utf-8', 'replace')
+        if '#RESOURCE' in ham or '#Table' in ham:
+            break
+        if i == 4:
+            raise RuntimeError('VizieR geçersiz yanıt: ' + kaynak + ' ' + str(kos))
+        time.sleep(2 ** (i + 1))
+    satir = [l for l in ham.split('\n') if l and not l.startswith('#')]
     time.sleep(0.25)
     if len(satir) < 3:
         return []
@@ -260,6 +270,10 @@ def main(argv):
                 if y.get('ra') is None:
                     continue
                 y['merkezeDk'] = round(acisal(h['ra'], h['dec'], y['ra'], y['dec']) * 60, 1)
+                # dürbünde kümeyle aynı alanda görünmeyen yıldız (merkezden 7×50 alanının yarıçapından ve boyutun 3 katından uzak)
+                # "en parlak üyeler" yoluna katılmaz — Urania'nın seçimi (ör. M44 listesinde 18° ötedeki HD 80024A)
+                if y['merkezeDk'] > max(DURBUN_ALANI / 2 * 60, 3 * (r or 0) * 60):
+                    disarda.append(y['ad']); y['baskaKume'] = None; continue
                 if r and y['merkezeDk'] > r * 60:
                     for oid, _ in KUMELER:
                         if oid == hid:
