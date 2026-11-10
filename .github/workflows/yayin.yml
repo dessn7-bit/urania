@@ -15,14 +15,18 @@ on:
 permissions:
   contents: write
   issues: write
+# Dal başına ayrı kuyruk: deneme dallarının koşusu main'in yayınını bekletmez. main'de sırayla çalışır (iptal yok).
 concurrency:
-  group: yayin-kapisi
+  group: yayin-kapisi-${{ github.ref }}
   cancel-in-progress: false
 jobs:
   kapi:
     name: Denetle ve yayınla
     runs-on: ubuntu-latest
     timeout-minutes: 60
+    env:
+      # Yayın yalnız main'e gönderimde ya da main'de test seçimi olmadan elle başlatılınca yapılır
+      YAYIN: ${{ github.ref == 'refs/heads/main' && (github.event_name == 'push' || inputs.secim == '') }}
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v5
@@ -31,47 +35,60 @@ jobs:
           cache: npm
       - name: Bağımlılıklar
         run: npm ci
+      # a–c ucuz denetimler: biri düşse de ötekiler çalışır, hepsinin çıktısı kayda girer
       - id: json
         name: "a) veri/ JSON dosyaları"
-        run: node araclar/kapi_json.js
+        run: |
+          set -o pipefail
+          node araclar/kapi_json.js 2>&1 | tee kapi-json.txt
       - id: eslint
         name: "b) ESLint"
-        run: npx eslint .
+        if: ${{ !cancelled() }}
+        run: |
+          set -o pipefail
+          npx eslint . 2>&1 | tee kapi-eslint.txt
       - id: html
         name: "c) html-validate (index.html)"
-        run: npx html-validate index.html
+        if: ${{ !cancelled() }}
+        run: |
+          set -o pipefail
+          npx html-validate index.html 2>&1 | tee kapi-html.txt
       - name: Chromium kurulumu (yalnız Actions)
         run: npx playwright install --with-deps chromium
       - id: test
         name: "d) Playwright test paketi"
         env:
           CI: '1'
+          SECIM: ${{ inputs.secim }}
         run: |
           set -o pipefail
-          npx playwright test ${{ inputs.secim }} --trace off --reporter=line 2>&1 | tee test-cikti.txt
-      # Yalnız main ve yalnız bütün testler: deneme dalında ya da test seçimiyle elle tetiklenen çalışma gh-pages'e asla dokunmaz
-      - name: Yayınla (gh-pages = main)
-        if: success() && github.ref == 'refs/heads/main' && (github.event_name == 'push' || inputs.secim == '')
-        run: git push --force origin "${GITHUB_SHA}:refs/heads/gh-pages"
-      # GitHub Pages gh-pages'ten kendi iş akışıyla yayınlar (pages build and deployment); o adım GitHub tarafında takılabilir
-      # (2026-11-10'da bir kez "syncing_files" zaman aşımı). Canlı sw.js'te bu commit'in SURUM'u 20 dk içinde görünmezse kapı
-      # düşer ve kayıt açılır. Depo herkese açık; yalnız sürüm adı günlüğe yazılır.
-      - id: canli
-        name: Canlı sürümü doğrula
-        if: success() && github.ref == 'refs/heads/main' && (github.event_name == 'push' || inputs.secim == '')
+          npx playwright test $SECIM --trace off --reporter=line 2>&1 | tee test-cikti.txt
+      # Yalnız main ve yalnız bütün testler: deneme dalında ya da test seçimiyle elle tetiklenen çalışma gh-pages'e asla dokunmaz.
+      # Eski bir koşu (yeniden çalıştırma) gh-pages'i geri almasın: main hâlâ bu commit'teyse yayınlanır, ilerlemişse
+      # yayın yeni commit'in kendi koşusuna bırakılır.
+      - id: yayin
+        name: Yayınla (gh-pages = main)
+        if: success() && env.YAYIN == 'true'
         run: |
-          surum=$(grep -o "const SURUM = '[^']*'" sw.js | cut -d"'" -f2)
-          adres="https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/sw.js"
-          for i in $(seq 1 40); do
-            if curl -fsS -A "urania-yayin/1.0 (+https://github.com/${GITHUB_REPOSITORY})" "${adres}?t=$(date +%s)" | grep -q "const SURUM = '${surum}'"; then echo "canlı: ${surum}"; exit 0; fi
-            sleep 30
-          done
-          echo "20 dakikada canlı sitede ${surum} görünmedi"; exit 1
+          main=$(git ls-remote origin refs/heads/main | cut -f1)
+          if [ "$main" != "$GITHUB_SHA" ]; then echo "main ilerlemiş (${main:0:7}); bu koşu yayınlamaz"; echo "yapildi=0" >> "$GITHUB_OUTPUT"; exit 0; fi
+          echo "onceki=$(git ls-remote origin refs/heads/gh-pages | cut -f1)" >> "$GITHUB_OUTPUT"
+          git push --force origin "${GITHUB_SHA}:refs/heads/gh-pages"
+          echo "yapildi=1" >> "$GITHUB_OUTPUT"
+      # GitHub Pages gh-pages'ten kendi iş akışıyla yayınlar (pages build and deployment); o adım GitHub tarafında takılabilir
+      # (2026-11-10'da bir kez "syncing_files" zaman aşımı). Bu commit'te değişen ve uygulamanın sunduğu dosyalar (en çok 25,
+      # sw.js her zaman) 20 dk içinde canlıda aynı içerikle görünmezse kapı düşer ve kayıt açılır.
+      - id: canli
+        name: Canlı içeriği doğrula
+        if: success() && steps.yayin.outputs.yapildi == '1'
+        run: bash araclar/kapi_canli.sh "${{ steps.yayin.outputs.onceki }}"
       - name: Açık "yayın durdu" kayıtlarını kapat
-        if: success() && github.ref == 'refs/heads/main' && (github.event_name == 'push' || inputs.secim == '')
+        if: success() && steps.yayin.outputs.yapildi == '1'
+        continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
         run: bash araclar/kapi_issue.sh kapat
+      # main'de "yayın durdu", deneme dallarında "yayın denemesi" etiketli kayıt; seçimli elle koşu kayıt açmaz
       - name: "Yayın durdu: kayıt aç"
         if: failure() && (github.event_name == 'push' || inputs.secim == '')
         env:
@@ -80,6 +97,7 @@ jobs:
           SONUC_ESLINT: ${{ steps.eslint.outcome }}
           SONUC_HTML: ${{ steps.html.outcome }}
           SONUC_TEST: ${{ steps.test.outcome }}
+          SONUC_YAYIN: ${{ steps.yayin.outcome }}
           SONUC_CANLI: ${{ steps.canli.outcome }}
           CALISMA_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: bash araclar/kapi_issue.sh ac

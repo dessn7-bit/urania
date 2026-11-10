@@ -94,8 +94,21 @@ test('Yeni SURUM eski önbellekleri siler; haber görsellerinin kalıcı önbell
   }, [haber.gorsel.dosya]);
   expect(await onbellekler(page)).toEqual(expect.arrayContaining([SURUM, 'urania-v1', 'urania-uydu-son', 'urania-haber-gorsel']));
   S.d.surum = 'urania-test-yeni';
-  await page.evaluate(async () => { const r = await navigator.serviceWorker.getRegistration(); await r.update(); });
-  await expect.poll(() => onbellekler(page), { timeout: 30000 }).toContain('urania-test-yeni');
+  /* yeni işçinin "activated" olmasını bekle: önbellek install'da açılır, eskiler activate'te silinir; yalnız önbelleğin
+     varlığını beklemek yarışa açıktı (doğrulayıcı bulgusu) */
+  const durum = await page.evaluate(async () => {
+    const r = await navigator.serviceWorker.getRegistration();
+    await r.update();
+    const w = r.installing || r.waiting;
+    if (!w) return 'yeni işçi yok';
+    if (w.state !== 'activated') await new Promise((coz, red) => {
+      const sure = setTimeout(() => red(new Error('activated olmadı: ' + w.state)), 30000);
+      w.addEventListener('statechange', () => { if (w.state === 'activated') { clearTimeout(sure); coz(); } if (w.state === 'redundant') { clearTimeout(sure); red(new Error('redundant')); } });
+    });
+    return w.state;
+  });
+  expect(durum).toBe('activated');
+  expect(await onbellekler(page)).toContain('urania-test-yeni');
   await expect.poll(async () => (await onbellekler(page)).filter(k => k !== 'urania-test-yeni' && k !== 'urania-haber-gorsel').filter(k => /^urania-/.test(k)), { timeout: 30000 }).toEqual([]);
   const ks = await onbellekler(page);
   expect(ks).toContain('urania-haber-gorsel');

@@ -33,8 +33,9 @@ test('Bağlantı sınıfları: 404/410/DNS kırık; 403, 429, zaman aşımı ve 
 });
 
 test('Bağlantı gruplama: en.wikipedia → MediaWiki API, arXiv → API; celestrak ve öteki Wikipedia dilleri atlanır', () => {
-  const g = pyc(`print(json.dumps(D.grupla(['https://en.wikipedia.org/wiki/Sagittarius_A*', 'https://tr.wikipedia.org/wiki/Ay', 'https://arxiv.org/abs/2508.01648v2', 'https://arxiv.org/pdf/astro-ph/0603449', 'https://celestrak.org/NORAD/', 'https://www.eso.org/public/'])))`);
+  const g = pyc(`print(json.dumps(D.grupla(['https://en.wikipedia.org/wiki/Sagittarius_A*', 'https://en.wikipedia.org/w/index.php?title=Tests_of_general_relativity&oldid=632962940', 'https://tr.wikipedia.org/wiki/Ay', 'https://arxiv.org/abs/2508.01648v2', 'https://arxiv.org/pdf/astro-ph/0603449', 'https://celestrak.org/NORAD/', 'https://www.eso.org/public/'])))`);
   expect(g.wiki).toEqual({ 'https://en.wikipedia.org/wiki/Sagittarius_A*': 'Sagittarius A*' });
+  expect(g.wikirev).toEqual({ 'https://en.wikipedia.org/w/index.php?title=Tests_of_general_relativity&oldid=632962940': '632962940' });   // kalıcı sürüm → API revids
   expect(Object.values(g.arxiv)).toEqual(['2508.01648', 'astro-ph/0603449']);
   expect(g.genel).toEqual(['https://www.eso.org/public/']);
   expect(g.atlandi.map(x => x.url)).toEqual(['https://tr.wikipedia.org/wiki/Ay', 'https://celestrak.org/NORAD/']);
@@ -97,7 +98,13 @@ test('İş akışları: kapı sırası, izinler, yalnız main; denetim zamanı h
   expect([...sira].sort((a, b) => a - b)).toEqual(sira);
   expect(y).toMatch(/branches: \[main, 'deneme\/\*\*'\]/);
   expect(y).toMatch(/permissions:\n {2}contents: write\n {2}issues: write\n/);
-  expect(y).toMatch(/if: success\(\) && github\.ref == 'refs\/heads\/main' && \(github\.event_name == 'push' \|\| inputs\.secim == ''\)\n\s+run: git push --force origin "\$\{GITHUB_SHA\}:refs\/heads\/gh-pages"/);
+  /* yayın: yalnız main (gönderim ya da seçimsiz elle), yalnız main hâlâ bu commit'teyse; canlı doğrulama ve kayıt kapatma yalnız yayınlandıysa */
+  expect(y).toContain("YAYIN: ${{ github.ref == 'refs/heads/main' && (github.event_name == 'push' || inputs.secim == '') }}");
+  expect(y).toMatch(/id: yayin\n\s+name: [^\n]+\n\s+if: success\(\) && env\.YAYIN == 'true'\n\s+run: \|\n\s+main=\$\(git ls-remote origin refs\/heads\/main \| cut -f1\)\n\s+if \[ "\$main" != "\$GITHUB_SHA" \]; then[^\n]*exit 0; fi[\s\S]*git push --force origin "\$\{GITHUB_SHA\}:refs\/heads\/gh-pages"/);
+  expect(y.match(/git push/g)).toHaveLength(1);
+  expect(y).toMatch(/id: canli\n[^\n]+\n\s+if: success\(\) && steps\.yayin\.outputs\.yapildi == '1'\n\s+run: bash araclar\/kapi_canli\.sh/);
+  expect(y).toContain('group: yayin-kapisi-${{ github.ref }}');
+  expect(y).not.toMatch(/\$\{\{ inputs\.secim \}\} --trace/);     // girdi komuta doğrudan yazılmaz, ortam değişkeniyle geçer
   expect(y).toMatch(/if: failure\(\)[\s\S]*kapi_issue\.sh ac/);
   expect(d).toMatch(/cron: '0 4 \* \* 6'/);        // cumartesi 04.00 UTC = 07.00 TSİ < 09.35 TSİ haber işi
   expect(d).toMatch(/workflow_dispatch/);
@@ -113,5 +120,9 @@ test('İş akışları: kapı sırası, izinler, yalnız main; denetim zamanı h
   expect(Y).toContain('Push ONLY main');
   for (const b of ['Denetim: yeni kırık bağlantı', 'Denetim: değişen kaynak', 'Denetim: Horizons farkı', 'Denetim: adım çalışmadı', '"yayın durdu"']) expect(Y, b).toContain(b);
   for (const b of ['Denetim: yeni kırık bağlantı', 'Denetim: değişen kaynak', 'Denetim: Horizons farkı', 'Denetim: adım çalışmadı', 'Denetim (bilgi)']) expect(oku('araclar/denetim_issue.sh'), b).toContain(b);
-  expect(oku('araclar/kapi_issue.sh')).toContain('ETIKET="yayın durdu"');
+  const K = oku('araclar/kapi_issue.sh');
+  expect(K).toContain('ETIKET="yayın durdu"');
+  expect(K).toContain('ETIKET="yayın denemesi"');
+  expect(K).toMatch(/kapat[\s\S]*\[ "\$DAL" = "main" \] \|\| exit 0/);
+  expect(d).toContain('actions/upload-artifact@v4');
 });

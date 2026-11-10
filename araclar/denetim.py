@@ -22,7 +22,7 @@ Alt komutlar (her biri bir JSON sonuç ve bir Markdown özet yazar; bulgu varsa 
 İstek başlığı: User-Agent "urania-linkcheck/1.0 (+https://github.com/dessn7-bit/urania)"; e-posta ya da kişisel veri yok.
 Tarayıcı gibi davranılmaz, bot koruması atlatılmaz; istekler yavaş ve sırayla.
 """
-import sys, os, re, io, json, time, html, gzip, hashlib, subprocess, unicodedata, urllib.request, urllib.parse, urllib.error
+import sys, os, re, io, json, time, html, gzip, hashlib, calendar, subprocess, unicodedata, urllib.request, urllib.parse, urllib.error
 import xml.etree.ElementTree as ET
 
 KOK = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -99,7 +99,7 @@ def urller():
 
 
 def grupla(ls):
-    g = {'wiki': {}, 'arxiv': {}, 'genel': [], 'atlandi': []}
+    g = {'wiki': {}, 'wikirev': {}, 'arxiv': {}, 'genel': [], 'atlandi': []}
     for u in ls:
         p = urllib.parse.urlsplit(u)
         host = p.hostname or ''
@@ -107,6 +107,15 @@ def grupla(ls):
             g['atlandi'].append({'url': u, 'neden': 'celestrak.org (kural: istek yok)'})
         elif host == 'en.wikipedia.org' and p.path.startswith('/wiki/'):
             g['wiki'][u] = urllib.parse.unquote(p.path[6:]).replace('_', ' ')
+        elif host == 'en.wikipedia.org':
+            # kalıcı bağlantı (/w/index.php?…&oldid=N): o sürüm MediaWiki API'de revids ile; başlıklı ise başlıkla
+            q = urllib.parse.parse_qs(p.query)
+            if q.get('oldid', [''])[0].isdigit():
+                g['wikirev'][u] = q['oldid'][0]
+            elif q.get('title'):
+                g['wiki'][u] = q['title'][0].replace('_', ' ')
+            else:
+                g['atlandi'].append({'url': u, 'neden': 'en.wikipedia.org: sayfa adı ya da sürüm numarası yok'})
         elif host.endswith('wikipedia.org'):
             g['atlandi'].append({'url': u, 'neden': 'yalnız en.wikipedia.org denetlenir (kural)'})
         elif host in ('arxiv.org', 'www.arxiv.org', 'export.arxiv.org'):
@@ -126,7 +135,7 @@ def baglanti_hazirla(kl):
     g = grupla(ls)
     open(os.path.join(kl, 'genel.txt'), 'w', encoding='utf-8').write('\n'.join(sorted(g['genel'])) + '\n')
     json.dump({'urller': ls, 'gruplar': {k: v for k, v in g.items()}}, open(os.path.join(kl, 'liste.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
-    print(f"bağlantı: {len(ls)} tekil · Wikipedia {len(g['wiki'])} · arXiv {len(g['arxiv'])} · lychee {len(g['genel'])} · atlandı {len(g['atlandi'])}")
+    print(f"bağlantı: {len(ls)} tekil · Wikipedia {len(g['wiki'])} (+{len(g['wikirev'])} kalıcı sürüm) · arXiv {len(g['arxiv'])} · lychee {len(g['genel'])} · atlandı {len(g['atlandi'])}")
 
 
 def wiki_denetle(basliklar):
@@ -160,6 +169,36 @@ def wiki_denetle(basliklar):
                     sonuc[u] = ('calisiyor', 'Wikipedia yönlendirmesi → ' + hedef)
                 elif p:
                     sonuc[u] = ('calisiyor', 'Wikipedia')
+                else:
+                    sonuc[u] = ('dogrulanamadi', 'MediaWiki API yanıtında yok')
+    return sonuc
+
+
+def wikirev_denetle(surumler):
+    """{url: oldid} → {url: (sinif, ayrinti)}: MediaWiki API revids (silinmiş/yok sürüm → 'badrevids' → kırık)."""
+    sonuc = {}
+    ters = {}
+    for u, r in surumler.items():
+        ters.setdefault(r, []).append(u)
+    ids = sorted(ters)
+    for i in range(0, len(ids), 50):
+        parca = ids[i:i + 50]
+        q = urllib.parse.urlencode({'action': 'query', 'revids': '|'.join(parca), 'prop': 'revisions', 'rvprop': 'ids', 'format': 'json', 'formatversion': 2})
+        kod, ham, _ = al('https://en.wikipedia.org/w/api.php?' + q, 'wiki', 1.0)
+        if kod != 200:
+            for r in parca:
+                for u in ters[r]:
+                    sonuc[u] = ('dogrulanamadi', f'MediaWiki API {kod}')
+            continue
+        q = json.loads(ham).get('query', {})
+        kotu = {str(x.get('revid')) for x in (q.get('badrevids') or {}).values()} if isinstance(q.get('badrevids'), dict) else {str(x.get('revid')) for x in (q.get('badrevids') or [])}
+        var = {str(r['revid']) for p in q.get('pages', []) for r in p.get('revisions', [])}
+        for r in parca:
+            for u in ters[r]:
+                if r in var:
+                    sonuc[u] = ('calisiyor', 'Wikipedia kalıcı sürüm')
+                elif r in kotu:
+                    sonuc[u] = ('kirik', 'Wikipedia: sürüm yok')
                 else:
                     sonuc[u] = ('dogrulanamadi', 'MediaWiki API yanıtında yok')
     return sonuc
@@ -232,6 +271,7 @@ def baglanti_degerlendir(kl, lychee_json):
     taban = {x['url']: x for x in json.load(open(TABAN, encoding='utf-8'))['urller']}
     sonuc = {}
     sonuc.update(wiki_denetle(g['wiki']))
+    sonuc.update(wikirev_denetle(g.get('wikirev', {})))
     sonuc.update(arxiv_denetle(g['arxiv']))
     ly, toplam = lychee_oku(lychee_json)
     for u in g['genel']:
@@ -255,6 +295,15 @@ def baglanti_degerlendir(kl, lychee_json):
     if yeni:
         md.append('\n| URL | Neden | Geçtiği dosya |\n|---|---|---|')
         md += [f"| {k['url']} | {k['ayrinti']} | {', '.join(k['dosyalar'])} |" for k in yeni]
+    # Doğrulanamayanlar: kayıt açmaz (kırık olduğu kanıtlanmadı) ama özette tam liste durur. Tabanda "kırık" (olu / alan adı
+    # yok) olup bu hafta doğrulanamayanlar ayrıca belirtilir: düzelmiş sayılmazlar.
+    dis = [k for k in dogrulanamadi if not k['tabanda']]
+    eski_kirik = [k for k in dogrulanamadi if k['tabanda'] and taban[k['url']].get('sinif') in ('olu', 'alan-adi-yok')]
+    if dogrulanamadi:
+        md.append(f"\nDoğrulanamayanların {len(dis)} tanesi taban listesinde yok; {len(eski_kirik)} tanesi tabanda kırık kayıtlıydı (düzelmiş sayılmaz).")
+        md.append('\n<details><summary>Doğrulanamayan bağlantıların tam listesi</summary>\n\n| URL | Neden | Tabanda |\n|---|---|---|')
+        md += [f"| {k['url']} | {k['ayrinti']} | {taban[k['url']].get('sinif', 'evet') if k['tabanda'] else 'hayır'} |" for k in dogrulanamadi]
+        md.append('\n</details>')
     open(os.path.join(kl, 'baglanti.md'), 'w', encoding='utf-8').write('\n'.join(md) + '\n')
     print('\n'.join(md[:2]))
     open(os.path.join(kl, 'baglanti_yeni_sayi.txt'), 'w').write(str(len(yeni)))
@@ -457,7 +506,7 @@ def horizons_indir(kl):
         ns = []
         for s in satirlar:
             p = s.split()
-            t = time.mktime(time.strptime(p[0] + ' ' + p[1], '%Y-%b-%d %H:%M')) - time.timezone
+            t = calendar.timegm(time.strptime(p[0] + ' ' + p[1], '%Y-%b-%d %H:%M'))
             ns.append((t, float(p[-1])))
         out['gecis'][ad] = []
         for (t1, h1), (t2, h2) in zip(ns, ns[1:]):
