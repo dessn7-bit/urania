@@ -50,7 +50,9 @@ test('Veri: her haber eksiksiz, kaynaklı (en az iki https kaynak), tarihli; kim
       expect(g.kaynak_url + g.kredi, ad + ' yasak görsel kaynağı').not.toMatch(/apnews|reuters|gettyimages|afp\.com|nature\.com|science\.org/i);
       /* YONTEM.md "Images": yalnız resmî, özgür lisanslı kurum görselleri (NASA, ESA/Webb, ESA/Hubble, ESO, NOIRLab, IAU, Rubin,
          ESA; JAXA/CNSA koşullu). İzin listesi: görselin resmî sayfasının alan adı bunlardan biri olmalı. */
-      expect(new URL(g.kaynak_url).hostname, ad + ' görsel kaynağı izin listesinde değil').toMatch(
+      /* v48: CC BY lisanslı makalenin kendi şekli (YONTEM.md "Images"): kaynak DOI bağlantısı, makalenin Crossref lisansı CC BY */
+      const sekil = new URL(g.kaynak_url).hostname === 'doi.org' && h.makale && h.makale.lisans && /^CC BY/.test(h.makale.lisans.ad) && /^Şekil: /.test(g.kredi);
+      if (!sekil) expect(new URL(g.kaynak_url).hostname, ad + ' görsel kaynağı izin listesinde değil').toMatch(
         /(^|\.)(nasa\.gov|esa\.int|esawebb\.org|esahubble\.org|eso\.org|noirlab\.edu|iau\.org|rubinobservatory\.org|jaxa\.jp|cnsa\.gov\.cn)$/);
     }
     if (h.tur !== 'gorsel' && h.tur !== 'etkinlik') expect(h.neden_onemli, ad + ' neden önemli').toBeTruthy();

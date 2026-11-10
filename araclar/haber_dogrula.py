@@ -215,12 +215,14 @@ def tarih_cr(x):
 
 def lisans_cr(x):
     ls = x.get('license') or []
-    vor = [l for l in ls if l.get('content-version') == 'vor'] or ls
+    # yayımlanmış sürümün (vor) lisansı; yoksa açık (Creative Commons) bir lisans. Metin madenciliği (tdm) lisansı makalenin
+    # yeniden kullanım lisansı DEĞİLDİR, alınmaz.
+    vor = [l for l in ls if l.get('content-version') == 'vor'] or [l for l in ls if 'creativecommons.org' in l.get('URL', '')]
     if not vor:
         return None
     u = vor[0].get('URL', '')
     k = re.search(r'creativecommons\.org/licenses/([a-z-]+)/(\d\.\d)', u)
-    ad = ('CC ' + k.group(1).upper() + ' ' + k.group(2)) if k else 'yayıncı lisansı'
+    ad = ('CC ' + k.group(1).upper() + ' ' + k.group(2)) if k else 'açık lisans değil (yayıncı koşulları)'
     if 'publicdomain/zero' in u:
         ad = 'CC0 1.0'
     return {'ad': ad, 'url': u}
@@ -292,6 +294,9 @@ def uygula(h, s, bugun):
         yeni['url'] = 'https://doi.org/' + yeni['doi']
     for k, v in yeni.items():
         if v is None:
+            if k == 'lisans' and 'lisans' in m:      # önceki koşunun yanlış lisansı kalmasın
+                degis.append({'alan': 'makale.lisans', 'once': m['lisans'], 'sonra': None})
+                del m['lisans']
             continue
         if m.get(k) != v:
             degis.append({'alan': 'makale.' + k, 'once': m.get(k), 'sonra': v})
