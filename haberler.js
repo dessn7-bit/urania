@@ -53,8 +53,9 @@
   /* Makale satırının eki: dergi, cilt ve sayfa, yayın tarihi, hakemli, lisans (Crossref'ten, haber_dogrula.py) */
   function makaleEk(mk) {
     const ls = [];
-    if (mk.dergi) ls.push(U.kacis(mk.dergi) + (mk.cilt ? ' ' + U.kacis(mk.cilt) + (mk.sayfa ? ', ' + U.kacis(mk.sayfa) : '') : ''));
-    if (mk.yayin_tarihi) ls.push(U.kacis(gun(mk.yayin_tarihi)));
+    if (mk.dergi) ls.push(U.kacis(mk.dergi) + (mk.cilt ? ' ' + U.kacis(mk.cilt) : '') + (mk.sayfa ? (mk.cilt ? ', ' : ' ') + U.kacis(mk.sayfa) : ''));
+    /* yalnız ay biliniyorsa ay yazılır (gün uydurulmaz); yalnız basılı sayı tarihi varsa öyle belirtilir */
+    if (mk.yayin_tarihi) ls.push(U.kacis(/^\d{4}-\d{2}$/.test(mk.yayin_tarihi) ? ayBasligi(mk.yayin_tarihi + '-01') : gun(mk.yayin_tarihi)) + (mk.yayin_tarihi_alan === 'published-print' ? ' (sayı tarihi)' : ''));
     if (mk.hakemli) ls.push('hakemli');
     if (mk.lisans && mk.lisans.ad) ls.push(mk.lisans.url ? `<a href="${U.guvenliUrl(mk.lisans.url)}" target="_blank" rel="noopener">${U.kacis(mk.lisans.ad)}</a>` : U.kacis(mk.lisans.ad));
     if (mk.doi) ls.push('DOI ' + U.kacis(mk.doi));
@@ -119,7 +120,7 @@
         ${SIRA.filter(t => t === 'hepsi' || sayi(t)).map(t => `<button type="button" class="dugme" data-f="${t}" aria-pressed="${t === f}">${t === 'hepsi' ? 'Tümü' : TUR[t].cogul} <span class="soluk">${sayi(t)}</span></button>`).join('')}
       </div>
       <div class="hb-liste">${govde || '<p class="bos">Bu türde haber yok.</p>'}</div>
-      <p class="kaynak hb-not">Her haber en az iki kaynakla doğrulanır; ön baskılar (henüz hakem değerlendirmesinden geçmemiş makaleler) “Ön sonuç” diye işaretlidir. Altı noktalı çizili sözcüklere dokununca Astro sözlükteki tanımı açılır.</p>`;
+      <p class="kaynak hb-not">Her haber en az iki kaynakla doğrulanır. “Ön sonuç”: henüz hakem değerlendirmesinden geçmemiş makaleler (ön baskılar), yazarlarının aday ya da olası diye sunduğu bulgular, benzetime dayanan ya da bağımsız olarak doğrulanmamış sonuçlar. Makalelerin yayın durumu her hafta Crossref ve arXiv'den denetlenir. Altı noktalı çizili sözcüklere dokununca Astro sözlükteki tanımı açılır.</p>`;
   }
 
   /* Bir haber açılınca: sözlük işaretleri ve sesli okuma o habere bağlanır */

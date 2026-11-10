@@ -10,8 +10,9 @@ Kural (YONTEM.md "Haftanın görüntüsü"):
   - Kredi satırında "Copyright" ya da kişisel lisans ("License", "Processing & License") geçerse ALINMAZ.
   - Kredi satırındaki HER öğe beyaz listede olmalı (ajans / kurum / görev ekibi). Kişi adı (ör. "Credit: Alejandro Sanz") ya da
     tanınmayan her öğe (yazılım adı dahil) adayı düşürür.
-  - KAMU listesi: NASA ve merkezleri, JPL, Caltech, STScI, SSI … (NASA görselleri ABD'de telif konusu değil; NASA Images and Media
-    Usage Guidelines). LISANS_DOGRULA listesi (ESA, ESO, NOIRLab, CSA, DLR, JAXA …): aday kalır ama görselin KENDİ sayfasındaki
+  - Satırda en az bir NASA çekirdek öğesi (NASA, JPL, GSFC …) olmalı; NASA görselleri ABD'de telif konusu değil (NASA Images and
+    Media Usage Guidelines). Görev ekipleri ve yükleniciler (STScI, SSI, Caltech, SwRI …) yalnız NASA öğesiyle birlikte geçer.
+    LISANS_DOGRULA listesi (ESA, ESO, NOIRLab, NSF, AURA, CSA, DLR, JAXA, Hubble, Webb …): aday kalır ama görselin KENDİ sayfasındaki
     lisans okunmadan kullanılmaz (ör. Cassini görselinde ESA yalnız görev ortağıdır, görselin kredisi NASA/JPL-Caltech/SSI).
 İstek başlığında e-posta yok. Kullanım: python3 araclar/apod_gorsel.py [--fixture <json>] [--kaydet <json>] [--gun 14]
 """
@@ -19,11 +20,16 @@ import sys, re, json, html, urllib.request, urllib.parse, datetime
 
 UA = 'urania-haber/1.0 (+https://github.com/dessn7-bit/urania)'
 URL = 'https://science.nasa.gov/wp-json/wp/v2/image-article?' + urllib.parse.urlencode({'search': 'APOD', 'per_page': 20})
-KAMU = ['NASA', 'JPL', 'JPL-Caltech', 'Caltech', 'STScI', 'SSI', 'Space Science Institute', 'GSFC', 'NASA Goddard', 'Goddard',
-        'MSFC', 'NASA Ames', 'JSC', 'NASA JSC', 'KSC', 'JHUAPL', 'APL', 'SwRI', 'MSSS', 'USGS', 'NOAA', 'NSF', 'AURA',
-        'Cassini Imaging Team', 'Hubble Heritage Team', 'SDO', 'NASA SDO', 'Swift', 'Hubble', 'Webb', 'Chandra', 'CXC', 'SAO',
-        'Univ. Arizona', 'University of Arizona', 'ASU', 'U. Arizona', 'NASA Earth Observatory', 'ISS Expedition Crew']
-LISANS_DOGRULA = ['ESA', 'ESO', 'NOIRLab', 'CSA', 'DLR', 'JAXA', 'FU Berlin', 'ESA/Webb', 'ESA/Hubble', 'SOHO', 'Rubin Observatory']
+# NASA çekirdeği: bunlardan en az biri satırda OLMALI (NASA görseli; NASA Images and Media Usage Guidelines kapsamı)
+NASA_CEKIRDEK = ['NASA', 'JPL', 'JPL-Caltech', 'GSFC', 'NASA Goddard', 'Goddard', 'MSFC', 'NASA Ames', 'JSC', 'NASA JSC', 'KSC',
+                 'NASA Earth Observatory', 'NASA SDO', 'ISS Expedition Crew']
+# NASA görev ekipleri ve yükleniciler: yalnız NASA çekirdeğiyle BİRLİKTE kabul (tek başına kamu malı sayılmaz)
+KAMU = NASA_CEKIRDEK + ['STScI', 'SSI', 'Space Science Institute', 'JHUAPL', 'APL', 'SwRI', 'MSSS', 'Caltech', 'USGS', 'NOAA',
+        'Cassini Imaging Team', 'Hubble Heritage Team', 'SDO', 'Swift', 'Chandra', 'CXC', 'SAO', 'Univ. Arizona',
+        'University of Arizona', 'U. Arizona', 'ASU']
+# NASA dışı kurumlar ve ortak görevler: aday kalır ama görselin KENDİ sayfasındaki lisans okunmadan kullanılmaz
+LISANS_DOGRULA = ['ESA', 'ESO', 'NOIRLab', 'NSF', 'AURA', 'CSA', 'DLR', 'JAXA', 'FU Berlin', 'ESA/Webb', 'ESA/Hubble', 'SOHO',
+                  'Rubin Observatory', 'Hubble', 'Webb']
 YASAK = re.compile(r'copyright|licen[cs]e|processing|©', re.I)
 
 
@@ -48,7 +54,7 @@ def kredi_uygun(etiket, satir):
     if not satir:
         return {'uygun': False, 'neden': 'kredi satırı yok', 'lisans_dogrula': []}
     if YASAK.search(etiket or '') or YASAK.search(satir):
-        return {'uygun': False, 'neden': 'kredi satırında "Copyright" / kişisel lisans var', 'lisans_dogrula': []}
+        return {'uygun': False, 'neden': 'kredi satırında "Copyright", lisans ya da kişisel işleme ("Processing") notu var', 'lisans_dogrula': []}
     kamu = {k.lower() for k in KAMU}
     dogrula = {k.lower() for k in LISANS_DOGRULA}
     bayrak = []
@@ -60,6 +66,10 @@ def kredi_uygun(etiket, satir):
             bayrak.append(o)
             continue
         return {'uygun': False, 'neden': f'beyaz listede olmayan öğe: {o!r} (kişi adı ya da tanınmayan kurum)', 'lisans_dogrula': []}
+    if not any(o.lower() in {k.lower() for k in NASA_CEKIRDEK} for o in ogeler(satir)):
+        if bayrak:
+            return {'uygun': True, 'neden': 'NASA öğesi yok; lisansı görselin kendi sayfasından doğrula: ' + ', '.join(bayrak), 'lisans_dogrula': bayrak}
+        return {'uygun': False, 'neden': 'NASA öğesi yok: kurum ya da görev ekibi tek başına kamu malı sayılmaz', 'lisans_dogrula': []}
     return {'uygun': True, 'neden': 'bütün öğeler beyaz listede' + (' (lisansı görselin kendi sayfasından doğrula: ' + ', '.join(bayrak) + ')' if bayrak else ''), 'lisans_dogrula': bayrak}
 
 

@@ -35,16 +35,18 @@ function kos(veri, bugun) {
 }
 const bul = (V, id) => V.haberler.find(h => h.id === id);
 
-test('Makale denetimi (fixture): Betelgeuse AJ\'de yayımlandı → "ön sonuç" kalkar, not eklenir; TOI-561b alanları; β Pic yayımlanmamış kalır', () => {
+test('Makale denetimi (fixture): yayımlanmış makalelerin künyesi dolar; Betelgeuse "ön sonuç" kalır (neden "aday"); TOI-561b; β Pic ve Unite yayımlanmamış', () => {
   const { veri, rapor } = kos(GIRDI);
   expect(rapor.hata).toEqual([]);
   expect(rapor.denetlenen).toBe(21);
   const b = bul(veri, '2026-10-28-betelgeuse-eslik-eden-iz');
-  expect(b.kesinlik).toBe('kesin');
-  expect(b.kesinlik_neden).toBeUndefined();
+  /* Doğrulayıcı bulgusu (v48): etiket hakem eksikliğinden değil, yazarların sonucu "kanıt/ipucu" olarak sunmasından
+     ("Bu sonuç kesin değil ve yazarlar bunu açıkça söylüyor"); makale zaten AJ'de biliniyordu → etiket kalır, not yok */
+  expect(b.kesinlik).toBe('ön sonuç');
+  expect(b.kesinlik_neden).toBe('aday');
   expect(b.makale).toMatchObject({ dergi: 'The Astronomical Journal', doi: '10.3847/1538-3881/ae953d', yayin_tarihi: '2026-09-01', cilt: '172', sayfa: '184', hakemli: true, arxiv: '2608.02847', url: 'https://doi.org/10.3847/1538-3881/ae953d' });
   expect(b.makale.lisans).toEqual({ ad: 'CC BY 4.0', url: 'https://creativecommons.org/licenses/by/4.0/' });
-  expect(b.guncellemeler).toEqual([{ tarih: '2026-11-10', metin: 'Güncelleme (10 Kasım 2026): makale The Astronomical Journal dergisinde hakemli olarak yayımlandı. Bu yüzden "Ön sonuç" etiketi kaldırıldı.' }]);
+  expect(b.guncellemeler).toBeUndefined();
   const t = bul(veri, '2026-09-29-toi-561b-yansitici-atmosfer');
   expect(t.makale).toMatchObject({ doi: '10.3847/1538-3881/ae9763', dergi: 'The Astronomical Journal', hakemli: true });
   expect(t.makale.lisans.ad).toBe('CC BY 4.0');
@@ -53,28 +55,37 @@ test('Makale denetimi (fixture): Betelgeuse AJ\'de yayımlandı → "ön sonuç"
   expect(p.kesinlik).toBe('ön sonuç');
   expect(p.makale.hakemli).toBeUndefined();
   expect(rapor.yayimlanmamis.map(x => x.id).sort()).toEqual(['2026-09-04-supernova-unite-karanlik-enerji', '2026-09-15-beta-pictoris-b-radyo']);
-  /* "ön sonuç" başka nedenle verilmişse (aday, benzetim) dergide yayımlanmış olsa da kalır */
-  for (const id of ['2026-10-05-mikroblazar-iras-18293', '2026-10-05-hs0209-ikinci-kusak-gezegen', '2026-09-21-gunes-sistemi-omru-batygin', '2026-09-17-hd156295-nabiz-zamanlamasi']) {
+  for (const id of ['2026-10-05-mikroblazar-iras-18293', '2026-10-05-hs0209-ikinci-kusak-gezegen', '2026-09-21-gunes-sistemi-omru-batygin', '2026-09-17-hd156295-nabiz-zamanlamasi', '2026-09-14-venus-uydusu-gelgit']) {
     expect(bul(veri, id).kesinlik, id).toBe('ön sonuç');
     expect(bul(veri, id).makale.hakemli, id).toBe(true);
     expect(bul(veri, id).guncellemeler, id).toBeUndefined();
   }
+  /* tarih: gün uydurulmaz; çevrimiçi yayın önce, yoksa basılı sayı tarihi (Science Advances: yalnız sayı tarihi) */
+  expect(bul(veri, '2026-10-05-mikroblazar-iras-18293').makale).toMatchObject({ yayin_tarihi: '2026-10-07', yayin_tarihi_alan: 'published-online' });
+  expect(bul(veri, '2026-11-04-mars-alba-mons-hcl').makale).toMatchObject({ yayin_tarihi: '2026-11-06', yayin_tarihi_alan: 'published-print' });
+  /* metin madenciliği (tdm) sayfası lisans bağlantısı olarak verilmez */
+  expect(bul(veri, '2026-10-22-hubble-supernova-ruzgari-yeniden-iyonlasma').makale.lisans).toEqual({ ad: 'açık lisans değil (yayıncı koşulları)' });
   /* uygulamadaki veri bu çıktıyla aynı (bugün betik --yaz ile uygulandı) */
   const canli = JSON.parse(fs.readFileSync(path.join(kok, 'veri', 'haberler.json'), 'utf8'));
   for (const h of veri.haberler.filter(x => x.makale)) expect(bul(canli, h.id), h.id).toMatchObject({ kesinlik: h.kesinlik, makale: h.makale });
 });
 
-test('İkinci koşu değişiklik üretmez (not bir kez eklenir); kesinlik_neden "aday" ise etiket kalır', () => {
-  const ilk = kos(GIRDI).veri;
+test('Yalnız hakem eksikliğinden "ön sonuç" (neden "hakem") olan ön baskı dergide yayımlanınca "kesin" olur ve görünür not eklenir; ikinci koşu değişmez', () => {
+  /* Kurgu: Betelgeuse kaydı ön baskı olarak işaretlenir (gerçek Crossref yanıtı aynı) */
+  const g = JSON.parse(fs.readFileSync(GIRDI, 'utf8'));
+  const x = bul(g, '2026-10-28-betelgeuse-eslik-eden-iz');
+  x.kesinlik_neden = 'hakem'; x.makale.dergi = 'arXiv ön baskı';
+  const ilk = kos(g).veri;
+  const b = bul(ilk, '2026-10-28-betelgeuse-eslik-eden-iz');
+  expect(b.kesinlik).toBe('kesin');
+  expect(b.kesinlik_neden).toBeUndefined();
+  expect(b.makale.dergi).toBe('The Astronomical Journal');
+  expect(b.guncellemeler).toEqual([{ tarih: '2026-11-10', metin: 'Güncelleme (10 Kasım 2026): makale The Astronomical Journal dergisinde hakemli olarak yayımlandı. Bu yüzden "Ön sonuç" etiketi kaldırıldı.' }]);
   const iki = kos(ilk, '2026-11-17');
   expect(iki.rapor.degisen).toEqual([]);
   expect(bul(iki.veri, '2026-10-28-betelgeuse-eslik-eden-iz').guncellemeler).toHaveLength(1);
-  const g = JSON.parse(fs.readFileSync(GIRDI, 'utf8'));
-  bul(g, '2026-10-28-betelgeuse-eslik-eden-iz').kesinlik_neden = 'aday';
-  const s = kos(g).veri;
-  const b = bul(s, '2026-10-28-betelgeuse-eslik-eden-iz');
-  expect(b.kesinlik).toBe('ön sonuç');
-  expect(b.makale.hakemli).toBe(true);
+  /* başka nedenle (aday, benzetim) verilen etiket dergide yayımlanmış olsa da kalır */
+  for (const id of ['2026-10-05-hs0209-ikinci-kusak-gezegen', '2026-09-21-gunes-sistemi-omru-batygin']) expect(bul(ilk, id).kesinlik, id).toBe('ön sonuç');
 });
 
 test('Crossref ilgisiz sonuç döndürür (β Pic: aynı ilk yazarın başka makalesi) → eşleşme sayılmaz; kural birim testleri', () => {
@@ -117,9 +128,9 @@ test('Haftanın görüntüsü: kredi beyaz listesi kişi kredilerini, "Copyright
   expect(al('2026-11-02').uygun).toBe(false);                                        // "Processing & License: J. Cowart"
   const out = JSON.parse(py(['-c', `
 import sys, json; sys.path.insert(0, 'araclar'); import apod_gorsel as A
-print(json.dumps([A.kredi_uygun('Credit', s)['uygun'] for s in ['NASA, ESA, CSA, STScI', 'NASA/JPL-Caltech', 'Juan Carlos Casado', 'NASA, ESA and Jane Doe', 'NASA; Image Copyright: X']]))
+print(json.dumps([A.kredi_uygun('Credit', s)['uygun'] for s in ['NASA, ESA, CSA, STScI', 'NASA/JPL-Caltech', 'Juan Carlos Casado', 'NASA, ESA and Jane Doe', 'NASA; Image Copyright: X', 'Caltech', 'University of Arizona', 'NASA, Processing: Jane Doe']]))
 `]));
-  expect(out).toEqual([true, true, false, false, false]);
+  expect(out).toEqual([true, true, false, false, false, false, false, false]);   // kurum tek başına (NASA öğesi yok) alınmaz
   /* veride gorsel türündeki her maddenin kredi satırı aynı kuraldan geçer */
   const V = JSON.parse(fs.readFileSync(path.join(kok, 'veri', 'haberler.json'), 'utf8'));
   const gs = V.haberler.filter(h => h.tur === 'gorsel');

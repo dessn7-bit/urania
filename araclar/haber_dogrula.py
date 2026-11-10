@@ -31,6 +31,7 @@ UA = 'urania-haber/1.0 (+https://github.com/dessn7-bit/urania)'
 CROSSREF = 'https://api.crossref.org/works'
 ARXIV = 'https://export.arxiv.org/api/query'
 ESIK = 0.9
+OLASI_ESIK = 0.3   # 'İNCELE' listesi için (eşleşme sayılmaz; insan karar verir)
 BEKLE = {'crossref': 1.0, 'arxiv': 3.1}
 AYLAR = ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık']
 NS = {'a': 'http://www.w3.org/2005/Atom', 'arxiv': 'http://arxiv.org/schemas/atom'}
@@ -205,12 +206,17 @@ def eslesir(x, baslik, yazar):
 
 
 def tarih_cr(x):
-    for alan in ('published', 'published-online', 'published-print', 'issued'):
-        p = (x.get(alan) or {}).get('date-parts') or [[]]
-        if p and p[0]:
-            q = list(p[0]) + [1, 1]
-            return '%04d-%02d-%02d' % tuple(q[:3])
-    return None
+    """Yayın tarihi: en kesin alan. Önce çevrimiçi yayın (published-online), sonra basılı sayı (published-print; kartta
+    "sayı tarihi" diye yazılır), published, issued. Tam gün olan ilk alan alınır; hiçbiri tam gün değilse yalnız ay (YYYY-MM) yazılır — gün uydurulmaz.
+    → (tarih, alan)"""
+    aylik = None
+    for alan in ('published-online', 'published-print', 'published', 'issued'):
+        p = ((x.get(alan) or {}).get('date-parts') or [[]])[0]
+        if len(p) >= 3 and p[2]:
+            return '%04d-%02d-%02d' % tuple(p[:3]), alan
+        if len(p) == 2 and not aylik:
+            aylik = ('%04d-%02d' % tuple(p[:2]), alan)
+    return aylik or (None, None)
 
 
 def lisans_cr(x):
@@ -221,11 +227,13 @@ def lisans_cr(x):
     if not vor:
         return None
     u = vor[0].get('URL', '')
+    if 'text-and-data-mining' in u or 'tdm' in u.lower().split('/')[-1]:
+        u = ''          # metin madenciliği sayfası yeniden kullanım lisansı değil: bağlantı verilmez
     k = re.search(r'creativecommons\.org/licenses/([a-z-]+)/(\d\.\d)', u)
     ad = ('CC ' + k.group(1).upper() + ' ' + k.group(2)) if k else 'açık lisans değil (yayıncı koşulları)'
     if 'publicdomain/zero' in u:
         ad = 'CC0 1.0'
-    return {'ad': ad, 'url': u}
+    return {'ad': ad, 'url': u} if u else {'ad': ad}
 
 
 def tr_tarih(s):
@@ -270,6 +278,19 @@ def denetle(h, ag):
         iz.append({'arama': x.get('DOI'), 'benzerlik': round(b, 3), 'neden': neden})
         if ok:
             return {'sonuc': 'yayimlandi', 'cr': x, 'benzerlik': b, 'yol': 'arama', 'iz': iz}
+    # Dergi sürümünde başlık değişmiş olabilir (ör. Webb FRB: ön baskı ile Science başlığının benzerliği 0,68): ön baskının
+    # tarihinden sonra aynı ilk yazarın dergi makaleleri ayrıca taranır, benzerliği ≥ 0,3 olanlar "İNCELE" diye listelenir.
+    if ax:
+        bas = '20' + ax[:2] + '-' + ax[2:4]
+        q = urllib.parse.urlencode({'query.author': yazar, 'filter': f'from-pub-date:{bas},type:journal-article', 'rows': 20})
+        try:
+            ls = json.loads(ag.al(CROSSREF + '?' + q, 'crossref'))['message']['items']
+        except (ValueError, KeyError):
+            ls = []
+        for x in ls:
+            b = max([benzerlik(baslik, t) for t in (x.get('title') or [''])] or [0.0])
+            if duz(cr_ilk_yazar(x)) == duz(yazar) and b >= OLASI_ESIK and x.get('DOI') not in [o['doi'] for o in olasi]:
+                olasi.append({'doi': x.get('DOI'), 'baslik': (x.get('title') or [''])[0], 'dergi': html.unescape((x.get('container-title') or [''])[0]), 'benzerlik': round(b, 3)})
     return {'sonuc': 'yayimlanmamis', 'iz': iz, 'olasi': olasi}
 
 
@@ -280,7 +301,8 @@ def uygula(h, s, bugun):
     yeni = {
         'dergi': html.unescape((x.get('container-title') or [m.get('dergi')])[0]),
         'doi': x.get('DOI', '').lower(),
-        'yayin_tarihi': tarih_cr(x),
+        'yayin_tarihi': tarih_cr(x)[0],
+        'yayin_tarihi_alan': tarih_cr(x)[1],
         'cilt': x.get('volume'),
         'sayfa': x.get('article-number') or x.get('page'),
         'lisans': lisans_cr(x),
@@ -323,7 +345,7 @@ def main(argv):
     ag = Ag(fixture=arg('--fixture'), kaydet=arg('--kaydet'))
     ham = open(veri, encoding='utf-8').read()
     V = json.loads(ham)
-    rapor = {'tarih': bugun, 'denetlenen': 0, 'degisen': [], 'yayimlanmis_degismeyen': [], 'yayimlanmamis': [], 'hata': []}
+    rapor = {'tarih': bugun, 'denetlenen': 0, 'degisen': [], 'yayimlanmis_degismeyen': [], 'yayimlanmamis': [], 'incele': [], 'hata': []}
     for h in V['haberler']:
         if not h.get('makale'):
             continue
@@ -335,6 +357,9 @@ def main(argv):
             continue
         if s['sonuc'] == 'yayimlandi':
             d = uygula(h, s, bugun)
+            metin_hepsi = ' '.join(h.get('ozet') or []) + ' ' + str(h.get('neden_onemli') or '')
+            if re.search(r'hakem değerlendirmesinden geç|ön baskı', metin_hepsi):
+                rapor['incele'].append({'id': h['id'], 'not': 'makale hakemli dergide, ama özet metni hâlâ "hakem değerlendirmesinden geçmedi / ön baskı" diyor: metni elle güncelle'})
             kayit = {'id': h['id'], 'doi': s['cr'].get('DOI'), 'dergi': h['makale']['dergi'], 'benzerlik': round(s['benzerlik'], 3), 'yol': s['yol']}
             if d:
                 kayit['degisiklik'] = d
@@ -358,6 +383,8 @@ def main(argv):
         print(f"- {k['id']}: yayımlanmış eşleşme yok ({k['kesinlik']})")
         for o in k['olasi']:
             print(f"    İNCELE (aynı ilk yazar, başlık farklı, benzerlik {o['benzerlik']}): {o['dergi']} doi:{o['doi']} {o['baslik']!r}")
+    for k in rapor['incele']:
+        print(f"- {k['id']}: İNCELE {k['not']}")
     for k in rapor['hata']:
         print(f"- {k['id']}: HATA {k['hata']}")
     return 0

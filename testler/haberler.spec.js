@@ -65,7 +65,7 @@ test('Veri: her haber eksiksiz, kaynaklı (en az iki https kaynak), tarihli; kim
       expect(m.doi, ad + ' doi').toMatch(/^10\.\d{4,9}\//);
       expect(TARIH.test(m.yayin_tarihi), ad + ' yayın tarihi').toBe(true);
       expect(m.dergi, ad).not.toMatch(/arXiv|ön baskı/i);
-      if (m.lisans) expect(m.lisans.ad && /^https:\/\//.test(m.lisans.url), ad + ' lisans').toBeTruthy();
+      if (m.lisans) expect(m.lisans.ad && (m.lisans.url === undefined || /^https:\/\//.test(m.lisans.url)), ad + ' lisans').toBeTruthy();
       expect(h.kesinlik_neden, ad + ' hakemli makalede "hakem" nedeni kalmaz').not.toBe('hakem');
     }
     (h.guncellemeler || []).forEach(n => { expect(TARIH.test(n.tarih), ad).toBe(true); expect(n.metin, ad).toMatch(/^Güncelleme \(\d{1,2} [A-ZÇĞİÖŞÜ][a-zçğıöşü]+ \d{4}\): /); });
