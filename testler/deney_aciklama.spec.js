@@ -159,7 +159,7 @@ test.describe('Telefon (412 px)', () => {
     await kur(page);
     await page.goto('/index.html#deney');
     const oz = await page.locator('.deney-liste a > span:not(.rozet)').allTextContents();
-    expect(oz.length).toBe(20);
+    expect(oz.length).toBe(21);
     oz.forEach(s => expect(s.length, s).toBeGreaterThan(40));
   });
 });
