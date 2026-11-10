@@ -21,7 +21,7 @@ for c in "JSON:${SONUC_JSON:-}" "ESLint:${SONUC_ESLINT:-}" "html-validate:${SONU
 done
 [ -z "$dusen" ] && dusen="kurulum adımı"
 {
-  echo "Yayın durdu: main'deki **${KISA}** denetimden geçmedi, canlı site (gh-pages) değiştirilmedi."
+  echo "Yayın durdu: ${GITHUB_REF_NAME:-main} dalındaki **${KISA}** denetimden geçmedi, canlı site (gh-pages) değiştirilmedi."
   echo
   echo "- Commit: ${KISA} — $(git log -1 --format=%s "$SHA" | head -c 200)"
   echo "- Düşen denetim: ${dusen}"
@@ -46,5 +46,5 @@ if [ -n "$acik" ]; then
   n=$(echo "$acik" | head -1)
   gh issue comment "$n" --body-file kapi_ozet.md >/dev/null && echo "yorum eklendi: #$n"
 else
-  gh issue create --title "Yayın durdu: ${KISA} (${dusen})" --label "$ETIKET" --body-file kapi_ozet.md
+  gh issue create --title "Yayın durdu: ${GITHUB_REF_NAME:-main} ${KISA} (${dusen})" --label "$ETIKET" --body-file kapi_ozet.md
 fi

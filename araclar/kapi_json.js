@@ -3,7 +3,7 @@
    ayrıştırıcı iletisi yazılır (içerik basılmaz). Kullanım: node araclar/kapi_json.js */
 const fs = require('fs');
 const path = require('path');
-const kok = path.join(__dirname, '..', 'veri');
+const kok = process.argv[2] ? path.resolve(process.argv[2]) : path.join(__dirname, '..', 'veri');   // test için başka klasör verilebilir
 const dosyalar = [];
 (function gez(d) { for (const a of fs.readdirSync(d, { withFileTypes: true })) { const p = path.join(d, a.name); if (a.isDirectory()) gez(p); else if (a.name.endsWith('.json')) dosyalar.push(p); } })(kok);
 const hatalar = [];

@@ -127,10 +127,23 @@ Check every week:
 If a public observing event in Istanbul falls in the next 30 days, write one "etkinlik" item: place, date, time, how to apply, fee, and the official announcement link (all from the official page; if the fee is not stated write "Duyuruda belirtilmemiş"). Past events are marked "Geçti" by the app automatically. Report the result of this check every week, also when there is nothing ("etkinlik yok").
 
 ## After editing
-1. `cd /home/claude/urania && python3 -c "import json;json.load(open('veri/haberler.json'))"`.
+1. `python3 -c "import json;json.load(open('veri/haberler.json'))"` (in the repository root).
 2. `npx playwright test testler/haberler.spec.js testler/haber_dogrula.spec.js` must be green.
 3. Bump `SURUM` in sw.js by one (urania-vNN → vNN+1).
 4. Commit as author "Kaan <dessn7@gmail.com>", with message "Haberler: <tarih> haftası (<n> yeni)", ending with the Co-Authored-By / Claude-Session lines required by the session.
-5. Push: `git push origin main` and `git push origin main:gh-pages`.
-6. Check that https://dessn7-bit.github.io/urania/sw.js shows the new version.
-7. Weekly report (v48) must contain: the paper-status changes from step 1 of "Weekly run" (before → after) and the "İNCELE"/"hata" lines; the new items; the image of the week (which picture, its credit line, why it passes the whitelist) or "bu hafta yok"; the Istanbul events check result; the verifier's number of findings and fixes.
+5. **Push ONLY main: `git push origin main`.** Do NOT push gh-pages yourself any more (v49). The "Yayın kapısı" workflow (.github/workflows/yayin.yml) runs on every push to main: (a) every veri/**/*.json parses, (b) ESLint, (c) html-validate on index.html, (d) the whole Playwright suite. Only if all pass does it set gh-pages = main; GitHub Pages publishes gh-pages. If any check fails, gh-pages is NOT touched and an issue labelled "yayın durdu" is opened with the test summary.
+6. **Wait for the gate and write the result in the report.** Either watch the run (`gh run watch` if the gh CLI is available, or the GitHub tools: list the workflow runs of "Yayın kapısı" for the pushed commit and wait until it completes; it takes about 10–15 minutes), or poll https://dessn7-bit.github.io/urania/sw.js (no more than once a minute, at most 40 minutes) until it shows the new SURUM. If the run failed: read the "yayın durdu" issue, fix the cause, commit and push main again; never push gh-pages by hand to get around the gate. Never leave main broken: the weekly job must end with main green, or with the failure clearly reported.
+7. Weekly report (v48) must contain: the paper-status changes from step 1 of "Weekly run" (before → after) and the "İNCELE"/"hata" lines; the new items; the image of the week (which picture, its credit line, why it passes the whitelist) or "bu hafta yok"; the Istanbul events check result; the verifier's number of findings and fixes; (v49) the result of the publishing gate (run passed / failed, live SURUM) and the "Denetim" section below.
+
+## Denetim (v49): read the automatic checks and report them to Kaan in Turkish
+Kaan never looks at GitHub; the weekly report is how he hears about problems. Every run:
+1. Read the OPEN issues labelled **"yayın durdu"** (publishing gate failed) and **"denetim"** (weekly audit, `.github/workflows/denetim.yml`, Saturday 04.00 UTC = 07.00 TSİ, before this job). Use the GitHub tools (list issues by label, read the issue and its latest comment) or `gh issue list --label denetim --state open`.
+   The audit's issue titles: "Denetim: yeni kırık bağlantı", "Denetim: değişen kaynak", "Denetim: Horizons farkı", "Denetim (bilgi): <kütüphane> <sürüm> çıktı", "Denetim: adım çalışmadı". The run page's summary lists everything, including what is known and not new.
+2. Fix what you can, with sources, in this run:
+   - a new broken link: find the page's new address (or an equivalent official source that says the same thing) and replace it in the lesson/news source and in veri/; never link a copy or archive of Wikipedia; if no replacement exists, remove the claim or mark it in the report as unresolved.
+   - a changed source ("alinti_yok": the quote is no longer on the page; "tarih_degisti": the page's update date changed): reopen the page, check whether the number or sentence we use changed; fix the data and the arastirma/ quote if it did; then update arastirma/denetim/alinti_taban.json (the page's new date) so the same change is not reported again.
+   - a Horizons difference: do not change the tolerance; find out why (library change? app code?) and report; known differences of Astronomy Engine (design accuracy ±1 arcminute) are in arastirma/denetim/gok_taban.json and do not open issues.
+   - a new library version: information only. Do NOT update lib/ automatically; mention it, and Kaan decides.
+   - "yayın durdu": fix the failing check first (see "After editing" 6).
+   Close the issue (with a one-line comment saying what was done) only when it is really fixed.
+3. End the Turkish report with a short **"Denetim"** section: number of new broken links (fixed / not fixed), changed sources, Horizons difference (largest difference and whether anything new), new library versions, publishing gate state, and a list of what you could not fix.

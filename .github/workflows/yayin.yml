@@ -43,11 +43,12 @@ jobs:
         run: |
           set -o pipefail
           npx playwright test --trace off --reporter=line 2>&1 | tee test-cikti.txt
+      # Yalnız main: deneme dalında elle tetiklenen çalışma (workflow_dispatch) gh-pages'e asla dokunmaz
       - name: Yayınla (gh-pages = main)
-        if: success()
+        if: success() && github.ref == 'refs/heads/main'
         run: git push --force origin "${GITHUB_SHA}:refs/heads/gh-pages"
       - name: Açık "yayın durdu" kayıtlarını kapat
-        if: success()
+        if: success() && github.ref == 'refs/heads/main'
         env:
           GH_TOKEN: ${{ github.token }}
         run: bash araclar/kapi_issue.sh kapat
