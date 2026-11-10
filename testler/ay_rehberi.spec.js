@@ -76,6 +76,19 @@ test('Türkçe adlar: yalnız kaynaklı olanlar (tr.wikipedia / TÜBA / TDK); ka
   }
   expect(VERI.yapilar.find(y => y.ad === 'Mare Tranquillitatis').tr).toBe('Sessizlik Denizi');
   expect(VERI.yapilar.find(y => y.ad === 'Copernicus').tr).toBeUndefined();
+  /* v47 doğrulaması: "Toros Dağları" Ay sıradağının Türkçe adı değil, adının kökeni — Latince kalır, köken notu USGS'den */
+  const mt = VERI.yapilar.find(y => y.ad === 'Montes Taurus');
+  expect(mt.tr).toBeUndefined();
+  expect(mt.koken).toContain('Toros Dağları');
+  expect(mt.kokenKaynak).toBe('https://planetarynames.wr.usgs.gov/Feature/4018');
+});
+
+test('Canlı USGS rehberi: zip geride kaldığı yapılarda canlı değer, zip değeri ayrı alanda (Mare Frigoris 1596 km)', () => {
+  const mf = VERI.yapilar.find(y => y.ad === 'Mare Frigoris');
+  expect(mf.cap).toBeCloseTo(1596, 0);
+  expect(mf.zip.cap).toBeCloseTo(1446.4, 1);
+  expect(VERI.yapilar.filter(y => y.zip).length).toBeLessThan(20);
+  expect(VERI.kaynak.canli).toContain('planetarynames.wr.usgs.gov');
 });
 
 /* ---- Arayüz ---- */
@@ -116,6 +129,17 @@ test('17 Kasım 2026 21.00: kart şu anki Ay için sınıra yakın yapıları li
   await expect(k.locator('.kaynak')).toContainText('International Astronomical Union (IAU) and United States Geological Survey (USGS)');
   await expect(k.locator('.kaynak')).toContainText("NASA's Scientific Visualization Studio");
   await expect(k.locator('a[href="#ders/d10"]')).toContainText('11. ders');
+});
+
+test('Numara etiketleri birbirine binmez (17 ve 13 Kasım)', async ({ page }) => {
+  for (const an of ['2026-11-17T21:00:00+03:00', '2026-11-13T19:00:00+03:00']) {
+    await kur(page, an);
+    const e = await page.evaluate(() => window.AyRehber.sonEtiketler());
+    expect(e.length).toBeGreaterThanOrEqual(5);
+    const fs = await page.evaluate(() => { const c = document.querySelector('#gkAyKanvas'); return Math.round(Math.max(11, (Math.min(c.width, c.height) / 2 - 2) / 14)); });
+    for (let i = 0; i < e.length; i++) for (let j = i + 1; j < e.length; j++)
+      expect(Math.abs(e[i].x - e[j].x) >= fs * 1.1 || Math.abs(e[i].y - e[j].y) >= fs * 0.95, an + ' ' + e[i].no + '/' + e[j].no).toBe(true);
+  }
 });
 
 test('Dokununca yapı vurgulanır (aria-pressed, görüntü değişir); ikinci dokunuş vurguyu kaldırır', async ({ page }) => {
@@ -171,5 +195,8 @@ test.describe('Dar ekran ve kırmızı mod', () => {
       return n;
     }, png.toString('base64'));
     expect(n).toBe(0);
+    /* aydınlık yüz kırmızı süzgeçte doymasın: doku %60'la çizilir (halka ve rakamlar dışında kanvas pikseli ≤ 0,6 × 255) */
+    const doyan = await page.evaluate(() => { const c = document.querySelector('#gkAyKanvas'); const d = c.getContext('2d').getImageData(0, 0, c.width, c.height).data; let n = 0, t = 0; for (let i = 0; i < d.length; i += 4) { if (d[i + 3]) { t++; if (d[i] > 160) n++; } } return n / t; });
+    expect(doyan).toBeLessThan(0.02);
   });
 });

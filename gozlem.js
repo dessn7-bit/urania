@@ -1111,7 +1111,13 @@
   }
 
   /* ---- v47: Bu gece Ay'da (ay.js) ---- */
-  let ayVeri = null, ayDoku = null, aySira = 0;
+  let ayVeri = null, ayDoku = null, aySira = 0, ayTemaDinle = false;
+  /* Horizons üretim satırı ("Mon Nov  9 23:34:43 2026", Pasadena yerel saati) → "9 Kasım 2026" */
+  function uretimTarihi(s) {
+    const m = /^[A-Za-z]{3}\s+([A-Za-z]{3})\s+(\d{1,2})\s+[\d:]+\s+(\d{4})/.exec(String(s || ''));
+    const AY = { Jan: 'Ocak', Feb: 'Şubat', Mar: 'Mart', Apr: 'Nisan', May: 'Mayıs', Jun: 'Haziran', Jul: 'Temmuz', Aug: 'Ağustos', Sep: 'Eylül', Oct: 'Ekim', Nov: 'Kasım', Dec: 'Aralık' };
+    return m && AY[m[1]] ? `${m[2]} ${AY[m[1]]} ${m[3]}` : String(s || '');
+  }
   const AY_TUR = { deniz: 'deniz', okyanus: 'okyanus', göl: 'göl', körfez: 'körfez', bataklık: 'bataklık', krater: 'krater', sıradağ: 'sıradağ' };
   function ayAd(y) { return y.tr ? `${y.tr} (${y.ad})` : y.ad; }
   function eksi(x) { return (x <= -0.05 ? '−' : '') + U.sayi(Math.abs(x), 1); }
@@ -1148,26 +1154,29 @@
     const ozet = `Ay %${U.sayi(d.aydinlik * 100, 0)} aydınlık, ${evre}; ${U.sayi(d.yukseklik, 0)}° yükseklikte. Aydınlık–karanlık sınırı (terminator) Ay boylamı ${U.sayi(Math.abs(d.terminator), 1)}° ${d.terminator < 0 ? 'batı' : 'doğu'}: ${sinir}. Librasyon: boylam ${eksi(d.libBoylam)}°, enlem ${eksi(d.libEnlem)}°. Dürbünde Ay'ın kuzeyi ${yon}.`;
     const satir = ls.map((y, i) => {
       const gy = y.gunesYuk;
-      const isik = y.tur === 'krater' || y.tur === 'sıradağ' ? `Güneş ${U.sayi(gy, 0)}° yüksekte: gölgesi uzun` : (gy >= 0 ? 'sınır üstünden geçiyor' : 'sınır üstünden geçiyor, bir kısmı karanlıkta');
-      const ses = `${i + 1}. ${y.tr || y.ad}${y.tr ? ', Latince adıyla ' + y.ad : ''}: ${AY_TUR[y.tur]}, çapı yaklaşık ${U.sayi(y.cap, 0)} kilometre. ${isik.replace(/°/, ' derece')}.`;
-      return `<li><button type="button" class="ay-yapi okunur" data-ad="${U.kacis(y.ad)}" aria-pressed="false" data-ses="${U.kacis(ses)}"><span class="ay-no">${i + 1}</span><span class="ay-ad">${U.kacis(ayAd(y))}</span><span class="ay-alt">${AY_TUR[y.tur]}, ${U.sayi(y.cap, 0)} km · ${isik}</span></button></li>`;
+      const isik = y.tur === 'krater' || y.tur === 'sıradağ' ? (gy < 1 ? "Güneş ufka çok yakın (1°'den alçak): gölgesi çok uzun" : `Güneş ${U.sayi(gy, 0)}° yüksekte: gölgesi uzun`) : (gy >= 0 ? 'sınır üstünden geçiyor' : 'sınır üstünden geçiyor, bir kısmı karanlıkta');
+      const koken = y.koken ? ` (${y.koken})` : '';
+      const ses = `${i + 1}. ${y.tr || y.ad}${y.tr ? ', Latince adıyla ' + y.ad : ''}${koken}: ${AY_TUR[y.tur]}, çapı yaklaşık ${U.sayi(y.cap, 0)} kilometre. ${isik.replace(/°/g, ' derece')}.`;
+      return `<li><button type="button" class="ay-yapi okunur" data-ad="${U.kacis(y.ad)}" aria-pressed="false" data-ses="${U.kacis(ses)}"><span class="ay-no">${i + 1}</span><span class="ay-ad">${U.kacis(ayAd(y))}</span><span class="ay-alt">${AY_TUR[y.tur]}, ${U.sayi(y.cap, 0)} km${U.kacis(koken)} · ${isik}</span></button></li>`;
     }).join('');
     kap.hidden = false;
     kap.innerHTML = `<h3 class="hk-bas okunur" data-ses="Bu gece Ay'da.">Bu gece Ay'da</h3>
       <p class="kucuk okunur ay-ozet" data-ses="${U.kacis(duzMetin(bas) + ' ' + ozet)}">${bas} ${U.kacis(ozet)}</p>
       <div class="ay-sahne"><canvas id="gkAyKanvas" role="img" aria-label="Ay'ın ${U.kacis(etiket)} görünüşü: evre, librasyon ve dürbündeki dönüklükle; numaralı halkalar listedeki yapılar. Üst taraf tepe (başucu) yönü."></canvas></div>
       ${ls.length ? `<ol class="ay-liste" aria-label="Sınıra yakın yapılar">${satir}</ol><p class="soluk kucuk">Bir yapıya dokununca görüntüde vurgulanır. Seçim: Güneş yapının üstünde 0–10° yüksekte (alçak Güneş uzun gölge düşürür) ve 7×50 ile biçimi seçilebilecek büyüklükte (Urania'nın seçimi; eşik ${U.sayi(ayVeri.esik.esikKm, 0)} km).</p>` : '<p class="soluk kucuk">Bu an sınıra yakın, gölgesi belirgin büyük bir yapı yok.</p>'}
-      <p class="kaynak">Yapı adları ve konumları: International Astronomical Union (IAU) and United States Geological Survey (USGS), Gazetteer of Planetary Nomenclature (kamu malı). Türkçe adlar yalnız kaynaklı olanlar (5 yapı), ötekiler Latince. Ay görüntüsü: NASA's Scientific Visualization Studio (CGI Moon Kit, LRO). Evre, librasyon ve terminator cihazda (Astronomy Engine), JPL Horizons ile 0,01° içinde. Ay dersi: <a href="#ders/d10">11. ders, Ay: Evreler, Tutulmalar ve Dev Bir Çarpışmanın Çocuğu</a>.</p>`;
+      <p class="kaynak">Yapı adları ve konumları: International Astronomical Union (IAU) and United States Geological Survey (USGS), Gazetteer of Planetary Nomenclature (kamu malı). Türkçe adlar yalnız kaynaklı olanlar (${ayVeri.yapilar.filter(y => y.tr).length} yapı), ötekiler Latince. Ay görüntüsü: NASA's Scientific Visualization Studio (CGI Moon Kit, LRO). Evre, librasyon ve terminator cihazda (Astronomy Engine), JPL Horizons ile 0,01° içinde. Ay dersi: <a href="#ders/d10">11. ders, Ay: Evreler, Tutulmalar ve Dev Bir Çarpışmanın Çocuğu</a>.</p>`;
     const cv = kap.querySelector('#gkAyKanvas');
     let vurgu = null;
     const ciz = () => {
       const gen = Math.min(360, cv.parentElement.clientWidth || 300), oran = Math.min(2, window.devicePixelRatio || 1);
       cv.width = Math.round(gen * oran); cv.height = Math.round(gen * oran); cv.style.width = gen + 'px'; cv.style.height = gen + 'px';
       const stil = getComputedStyle(document.documentElement);
-      AR.ciz(cv, d, ayDoku && ayDoku.complete && ayDoku.naturalWidth ? ayDoku : null, { yapilar: ls, vurgu, renk: v => stil.getPropertyValue(v).trim() || '#E8C27A' });
+      AR.ciz(cv, d, ayDoku && ayDoku.complete && ayDoku.naturalWidth ? ayDoku : null, { yapilar: ls, vurgu, renk: v => stil.getPropertyValue(v).trim() || '#E8C27A', kirmizi: document.documentElement.classList.contains('kirmizi') });
     };
     if (!ayDoku) { ayDoku = new Image(); ayDoku.decoding = 'async'; ayDoku.src = './img/ay/lroc_color_2k.jpg'; }
     if (ayDoku.complete && ayDoku.naturalWidth) ciz(); else { ciz(); ayDoku.addEventListener('load', () => { if (sira === aySira) ciz(); }, { once: true }); }
+    if (!ayTemaDinle) { ayTemaDinle = true; document.addEventListener('urania:tema', () => { if (durum.ayCiz) durum.ayCiz(); }); }
+    durum.ayCiz = ciz;
     kap.querySelectorAll('.ay-yapi').forEach(b => b.addEventListener('click', () => {
       vurgu = vurgu === b.dataset.ad ? null : b.dataset.ad;
       kap.querySelectorAll('.ay-yapi').forEach(x => x.setAttribute('aria-pressed', String(x.dataset.ad === vurgu)));
@@ -1218,7 +1227,7 @@
       if (gorulur) {
         yerel = `${U.kacis(k.ad)} için: karanlıkta ve ufkun 10° üstünde ${U.saat(o.ilk.zaman)}–${U.saat(o.son.zaman)} arası. En parlak ${U.saat(p.zaman)} civarı: ${U.derece(p.alt)} yükseklikte, ${yon(p.az)} (${U.sayi(p.az, 0)}°), yaklaşık ${kd(p.kadir)} kadir (±0,5). `
           + (alet ? alet + '. ' : '') + `O sırada yıldızlara göre dakikada ${U.sayi(hiz(p), 2)}° kayar: birkaç dakikada yeri değişen bir nokta. `
-          + (o.hedef && o.hedef.aci < G.DURBUN_ALANI / 2 ? `Saat ${U.saat(o.hedef.zaman)} civarında ${U.kacis(m44.ad)} (M44) ile arası ${U.sayi(o.hedef.aci, 1)}°: ikisi 7×50 dürbünün alanına (${U.sayi(G.DURBUN_ALANI, 1)}°) birlikte sığar. ` : '')
+          + (o.hedef && o.hedef.aci < G.DURBUN_ALANI / 2 ? `Saat ${U.saat(o.hedef.zaman)} civarında ${U.kacis(m44.ad.replace(/\s*\([^)]*\)\s*$/, ''))} (M44) ile arası ${U.sayi(o.hedef.aci, 1)}°: ikisi 7×50 dürbünün alanına (${U.sayi(G.DURBUN_ALANI, 1)}°) birlikte sığar. ` : '')
           + (o.ayAlt < 0 ? 'Ay o sırada ufkun altında.' : `Ay o sırada ufkun üstünde (%${Math.round(o.ayOran * 100)} aydınlık).`);
       } else {
         yerel = `${U.kacis(k.ad)} için: bu geçiş buradan görülmüyor. Apophis buradan karanlıkta ufkun 10° üstüne yalnız yaklaşık ${kd(p.kadir)} kadirken çıkıyor (en çok ${U.derece(p.alt)}); ${drb === 'gorunmez' ? 'bu gökte' : 'karanlık bir gökte bile'} 7×50 dürbünle seçilmez. Görünüş Avrupa, Afrika ve Asya'nın batısından (ESA, NASA).`;
@@ -1231,11 +1240,11 @@
     kap.innerHTML = `<h3 class="hk-bas okunur" data-ses="Büyük olaylar.">Büyük olaylar</h3>
       <div class="buyuk-olay okunur" data-ses="${U.kacis(ses)}">
         <p class="buyuk-bas"><b>99942 Apophis Dünya'nın yanından geçiyor</b> <span class="rozet">${U.kacis(sayac)}</span></p>
-        <p class="kucuk">En yakın an: ${o.yakin.zaman.getUTCFullYear()}, ${U.kacis(U.gunHafta(o.yakin.zaman))}, saat ${U.saat(o.yakin.zaman)}: Dünya'nın merkezinden ${U.sayi(j.uzaklikKm || o.yakin.km, 0)} km (yüzeyden yaklaşık ${U.sayi(32000, 0)} km; yer eşzamanlı uydulardan yakın). Bu büyüklükte bir asteroidin bu kadar yaklaşması ortalama birkaç bin yılda bir olur (NASA).</p>
+        <p class="kucuk">En yakın an: ${o.yakin.zaman.getUTCFullYear()}, ${U.kacis(U.gunHafta(o.yakin.zaman))}, saat ${U.saat(o.yakin.zaman)}: Dünya'nın merkezinden ${U.sayi(j.uzaklikKm || o.yakin.km, 0)} km (yüzeyden yaklaşık ${U.sayi(32000, 0)} km; yer eşzamanlı uydulardan yakın). Bu büyüklükte bir cismin bu kadar yaklaşması 5.000–10.000 yılda bir olur (ESA).</p>
         <p class="kucuk">${yerel}</p>
         ${gorulur ? `<div class="cip-grup"><button type="button" class="dugme" id="gkApophisHarita">O geceyi haritada göster</button></div>` : ''}
       </div>
-      <p class="kaynak">Konum: JPL Horizons (yörünge çözümü ${U.kacis(V.yorungeCozumu || '')}, ${U.kacis(V.horizonsUretim || '')} üretimi) yer merkezli vektörlerinden cihazda, paralaks dahil; Horizons'un yerel tablosuyla 0,05° içinde. En yakın an ve uzaklık: JPL SBDB yakın geçiş verisi (${U.kacis(j.zamanTDB || '')} TDB, 3σ ${U.sayi(j.enAzKm || 0, 0)}–${U.sayi(j.enCokKm || 0, 0)} km). Parlaklık H–G modeliyle (H ${U.sayi(V.H, 2)}, G ${U.sayi(V.G, 2)}), belirsizlik ±0,5 kadir. Asteroitler dersi: <a href="#ders/d19">20. ders</a>.</p>`;
+      <p class="kaynak">Konum: JPL Horizons (yörünge çözümü ${U.kacis(V.yorungeCozumu || '')}, ${U.kacis(uretimTarihi(V.horizonsUretim))} üretimi) yer merkezli vektörlerinden cihazda, paralaks dahil; Horizons'un yerel tablosuyla 0,05° içinde. En yakın an ve uzaklık: JPL SBDB yakın geçiş verisi (${U.kacis(j.zamanTDB || '')} TDB, 3σ ${U.sayi(j.enAzKm || 0, 0)}–${U.sayi(j.enCokKm || 0, 0)} km). Parlaklık H–G modeliyle (H ${U.sayi(V.H, 2)}, G ${U.sayi(V.G, 2)}), belirsizlik ±0,5 kadir. Asteroitler dersi: <a href="#ders/d19">20. ders</a>.</p>`;
     const b = kap.querySelector('#gkApophisHarita');
     if (b) b.addEventListener('click', () => apophisGeceGoster());
   }

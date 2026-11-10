@@ -97,7 +97,9 @@ test('Büyük olaylar: geri sayım, İstanbul görünüşü (saat TSİ, yön, ka
   await expect(k).toContainText('En parlak 23.3');
   await expect(k).toContainText('güneybatı');
   await expect(k).toContainText('(±0,5)');
-  await expect(k).toContainText('M44');
+  await expect(k).toContainText('Arıkovanı yıldız kümesi (M44)');
+  await expect(k).toContainText('5.000–10.000 yılda bir olur (ESA)');
+  await expect(k.locator('.kaynak')).toContainText('9 Kasım 2026 üretimi');
   await expect(k).toContainText('Ay o sırada ufkun altında');
   await expect(k.locator('.kaynak')).toContainText('JPL#220');
   await expect(k.locator('a[href="#ders/d19"]')).toBeVisible();

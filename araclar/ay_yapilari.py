@@ -16,10 +16,13 @@ Boyut eşiği (hesap, açıkça):
   Kısalma: Ay kürede, kenara yakın yapı bir eksende cos(c) kadar kısa görünür; c = yapının ortalama Ay merkezine açısal uzaklığı
   (cos c = cos(enlem) · cos(boylam), librasyon yok sayılır). Yani kısa eksen = çap · cos c ≥ 3 × 15,97 km.
   Sıradağlar için "çap" USGS'nin verdiği uzunluktur.
+Canlı rehber: zip, planetarynames.wr.usgs.gov'daki canlı yapı sayfalarının gerisinde kalabiliyor (v47 doğrulamasında 153 yapının
+  10'unda çap/konum farkı). Bu yüzden seçilen her yapının canlı sayfası okunur (Diameter, Center Latitude, Center Longitude);
+  fark varsa canlı değer kullanılır, zip değeri "zip" alanında kalır, eşik canlı değerle yeniden uygulanır.
 Türkçe adlar: arastirma/ay_adlari_tr.json (her ad kaynaklı; kaynağı olmayan Latince kalır).
-Kullanım: python3 araclar/ay_yapilari.py [--zip yerel.zip]
+Kullanım: python3 araclar/ay_yapilari.py [--zip yerel.zip] [--canlisiz]
 """
-import sys, os, io, json, math, struct, zipfile, urllib.request, datetime
+import sys, os, io, re, json, math, struct, time, zipfile, urllib.request, datetime
 
 KOK = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 URL = 'https://asc-planetarynames-data.s3.us-west-2.amazonaws.com/MOON_nomenclature_center_pts.zip'
@@ -43,6 +46,24 @@ def dbf_oku(ham):
             rec[ad] = r[p:p + uz].decode('utf-8', 'replace').strip(); p += uz
         satir.append(rec)
     return satir
+
+
+def canli(url):
+    """USGS canlı yapı sayfasından çap (km), merkez enlem ve doğu boylamı (°)."""
+    for i in range(5):
+        try:
+            h = urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': UA}), timeout=60).read().decode('utf-8', 'replace')
+            break
+        except Exception:
+            if i == 4:
+                raise
+            time.sleep(2 ** (i + 1))
+    t = re.sub(r'<[^>]*>', ' ', h).replace('&deg;', ' ')
+    def al(ad):
+        m = re.search(ad + r'\s+(-?[\d.]+)', t)
+        return float(m.group(1)) if m else None
+    time.sleep(0.4)
+    return al('Diameter'), al('Center Latitude'), al('Center Longitude')
 
 
 def main(argv):
@@ -75,13 +96,25 @@ def main(argv):
         t = tr.get(r['name'])
         o = {'ad': r['name'], 'tur': TURLER[kod], 'cap': round(cap, 1), 'boylam': round(lon, 3), 'enlem': round(lat, 3),
              'usgs': r['link'].replace('http://', 'https://')}
+        if '--canlisiz' not in argv:
+            c, en, bo = canli(o['usgs'])
+            if c is not None and en is not None and bo is not None:
+                bo = bo - 360 if bo > 180 else bo
+                if abs(c - cap) > 0.05 or abs(en - lat) > 0.005 or abs(bo - lon) > 0.005:
+                    o['zip'] = {'cap': o['cap'], 'enlem': o['enlem'], 'boylam': o['boylam']}
+                    o['cap'], o['enlem'], o['boylam'] = round(c, 1), round(en, 3), round(bo, 3)
+                    kosc = math.cos(math.radians(en)) * math.cos(math.radians(bo))
+                    if abs(bo) > 90 or kosc <= 0 or c * kosc < esik:
+                        print('canlı değerle eşik altı, çıkarıldı:', o['ad']); continue
         if t and t.get('tr'):
             o['tr'] = t['tr']; o['trKaynak'] = t['kaynak']
+        elif t and t.get('koken'):
+            o['koken'] = t['koken']; o['kokenKaynak'] = t['kaynak']
         yap.append(o)
     yap.sort(key=lambda o: -o['cap'])
     veri = {
         'aciklama': "Bu gece Ay'da rehberinin yapıları: yakın yüz, IAU onaylı adlar, 7×50 ile biçimi seçilebilecek büyüklükte.",
-        'kaynak': {'veri': URL, 'kullanim': useconst, 'atif': 'International Astronomical Union (IAU) and United States Geological Survey (USGS), Gazetteer of Planetary Nomenclature',
+        'kaynak': {'veri': URL, 'canli': 'https://planetarynames.wr.usgs.gov/Feature/<id> (zip ile fark varsa canlı değer; zip değeri yapının "zip" alanında)', 'kullanim': useconst, 'atif': 'International Astronomical Union (IAU) and United States Geological Survey (USGS), Gazetteer of Planetary Nomenclature',
                    'cerceve': 'Ay ortalama Dünya / kutup ekseni; doğu boylamı pozitif (−180…180)'},
         'esik': {'gozYaySn': GOZ_YAYSN, 'buyutme': BUYUTME, 'uzaklikKm': UZAKLIK_KM, 'cozmeKm': round(olcek, 2), 'oge': OGE, 'esikKm': round(esik, 1),
                  'hesap': f"{GOZ_YAYSN:.0f}″ / {BUYUTME} = {GOZ_YAYSN / BUYUTME:.2f}″ ; {UZAKLIK_KM:.0f} km × {GOZ_YAYSN / BUYUTME:.2f}″ / 206 265 = {olcek:.2f} km ; "
@@ -91,6 +124,7 @@ def main(argv):
     }
     json.dump(veri, open(os.path.join(KOK, 'veri', 'ay_yapilari.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
     from collections import Counter
+    print('canlı sayfayla düzeltilen:', [o['ad'] for o in yap if 'zip' in o])
     print(len(yap), 'yapı', dict(Counter(o['tur'] for o in yap)), 'Türkçe adlı:', sum(1 for o in yap if 'tr' in o), 'eşik', round(esik, 1), 'km')
 
 

@@ -100,6 +100,7 @@
   /* Sınıra yakın, gölgeleri belirgin yapılar. Urania'nın seçimi: Güneş yapının üstünde 0–10° yüksekte (alçak Güneş uzun
      gölge düşürür) ve yapı görünür yüzde. Kraterler ve sıradağlar, görünen boyca büyükten küçüğe en çok 8 tane; terminatorun
      geçtiği (|Güneş yüksekliği| ≤ 10°) en çok 2 deniz/göl/körfez/bataklık eklenir. */
+  const KIRMIZI_KOYU = 0.6;   // Urania'nın seçimi: kırmızı modda doku %60 parlaklıkta çizilir
   const GOLGE = { en: 0, boy: 10 };
   function seckinler(d, yapilar, enCok) {
     const ls = yapilar.map(y => Object.assign({}, y, yapiDurumu(d, y))).filter(y => y.gorunur);
@@ -146,7 +147,7 @@
   }
 
   /* ---------- çizim ---------- */
-  let dokuVeri = null;
+  let dokuVeri = null, sonEtiketler = [];
   function dokuHazirla(img) {
     if (dokuVeri && dokuVeri.img === img) return dokuVeri;
     const c = document.createElement('canvas'); c.width = img.naturalWidth; c.height = img.naturalHeight;
@@ -178,35 +179,61 @@
           const k = (ty * T.w + tx) * 4; rr = T.p[k]; gg = T.p[k + 1]; bb = T.p[k + 2];
         }
         /* aydınlatma: gece yüzü %8 (Urania'nın seçimi: dünya ışığıyla seçilebilen soluk yüz), sınırda yumuşak geçiş */
-        const c = dot(P, gn), isik = c > 0.03 ? 1 : c < -0.03 ? 0.08 : 0.08 + 0.92 * (c + 0.03) / 0.06;
+        const c = dot(P, gn); let isik = c > 0.03 ? 1 : c < -0.03 ? 0.08 : 0.08 + 0.92 * (c + 0.03) / 0.06;
         const i = (py * W + px) * 4;
+        if (s.kirmizi) isik *= KIRMIZI_KOYU;   // kırmızı süzgeçte aydınlık yüz doymasın, halkalar seçilsin
         o[i] = rr * isik; o[i + 1] = gg * isik; o[i + 2] = bb * isik; o[i + 3] = 255;
       }
     }
     ctx.putImageData(out, 0, 0);
     const renk = s.renk || (() => '#E8C27A');
+    const halkalar = [];
     (s.yapilar || []).forEach((y, i) => {
       const e = ekranXY(d, y.boylam, y.enlem); if (!e) return;
       const X = cx + e.x * R, Y = cy - e.y * R;
       const rr = Math.max(4, (y.cap / 2) / R_AY * R * Math.max(0.35, y.bakis || 1));
       const vurgu = s.vurgu === y.ad;
+      /* koyu hale + renkli halka: aydınlık yüzde de seçilsin (kırmızı modda renk farkı kalmaz) */
+      ctx.beginPath(); ctx.arc(X, Y, rr, 0, 2 * Math.PI);
+      ctx.lineWidth = (vurgu ? 3 : 1.4) + 2.5; ctx.strokeStyle = 'rgba(0,0,0,.7)'; ctx.stroke();
       ctx.lineWidth = vurgu ? 3 : 1.4;
       ctx.strokeStyle = vurgu ? renk('--pirinc') : renk('--hedef');
-      ctx.beginPath(); ctx.arc(X, Y, rr, 0, 2 * Math.PI); ctx.stroke();
-      ctx.font = (vurgu ? '600 ' : '500 ') + Math.round(Math.max(11, R / 14)) + 'px Plex, sans-serif';
-      ctx.fillStyle = vurgu ? renk('--pirinc') : renk('--parsomen');
-      ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-      const lx = X + (X < cx ? -1 : 1) * (rr + 8), ly = Y;
-      ctx.lineWidth = 3; ctx.strokeStyle = 'rgba(0,0,0,.75)'; ctx.strokeText(String(i + 1), lx, ly);
-      ctx.fillText(String(i + 1), lx, ly);
+      ctx.stroke();
+      halkalar.push({ i, X, Y, rr, vurgu });
     });
+    /* Numara etiketleri: önce dışa doğru (Ay merkezinden uzağa), çakışırsa 45° adımlarla dönen, sonra biraz daha uzak
+       yerler denenir; etiket kutuları (fs × fs) birbirine ve küçük halkaların merkezine binmez. */
+    const fs = Math.round(Math.max(11, R / 14)), yer = [];
+    const cakisir = (x, y) => yer.some(q => Math.abs(q.x - x) < fs * 1.1 && Math.abs(q.y - y) < fs * 0.95)
+      || halkalar.some(h => h.rr < fs && Math.hypot(h.X - x, h.Y - y) < fs * 0.7);
+    halkalar.forEach(h => {
+      const dis = Math.atan2(h.Y - cy, h.X - cx);
+      let en = null;
+      for (const ek of [0, fs * 0.9, fs * 1.8]) {
+        for (const da of [0, 1, -1, 2, -2, 3, -3, 4]) {
+          const a = dis + da * Math.PI / 4, r0 = h.rr + fs * 0.6 + ek;
+          const x = h.X + Math.cos(a) * r0, y = h.Y + Math.sin(a) * r0;
+          if (x < fs / 2 || x > W - fs / 2 || y < fs / 2 || y > H - fs / 2) continue;
+          if (!cakisir(x, y)) { en = { x, y }; break; }
+        }
+        if (en) break;
+      }
+      if (!en) en = { x: h.X + Math.cos(dis) * (h.rr + fs * 0.6), y: h.Y + Math.sin(dis) * (h.rr + fs * 0.6) };
+      yer.push({ x: en.x, y: en.y, no: h.i + 1 });
+      ctx.font = (h.vurgu ? '600 ' : '500 ') + fs + 'px Plex, sans-serif';
+      ctx.fillStyle = h.vurgu ? renk('--pirinc') : renk('--parsomen');
+      ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      ctx.lineWidth = 3; ctx.strokeStyle = 'rgba(0,0,0,.75)'; ctx.strokeText(String(h.i + 1), en.x, en.y);
+      ctx.fillText(String(h.i + 1), en.x, en.y);
+    });
+    sonEtiketler = yer;
     /* tepe işareti: dürbünde yukarısı */
     ctx.fillStyle = renk('--soluk'); ctx.font = '500 ' + Math.round(Math.max(10, R / 16)) + 'px Plex, sans-serif'; ctx.textAlign = 'left'; ctx.textBaseline = 'top';
     ctx.fillText('↑ tepe', 3, 3);
-    return { R, cx, cy };
+    return { R, cx, cy, etiketler: yer };
   }
 
-  const AyRehber = { hesap, govde, lonlat, normal, ekranXY, yapiDurumu, seckinler, geceEnIyi, sonrakiUygun, paralaktik, ciz, GOLGE, UYGUN, R_AY };
+  const AyRehber = { sonEtiketler: () => sonEtiketler, hesap, govde, lonlat, normal, ekranXY, yapiDurumu, seckinler, geceEnIyi, sonrakiUygun, paralaktik, ciz, GOLGE, UYGUN, R_AY };
   if (NODE) module.exports = AyRehber;
   else kok.AyRehber = AyRehber;
 })(typeof self !== 'undefined' ? self : this);

@@ -23,7 +23,7 @@ v47 çapraz denetim (capraz): SIMBAD'ın birleşik akı tablosu bazı yıldızla
   V bandındaki aralığın sönük ucu görünürlük hesabında kullanılır (Vhesap). En parlak 5 üye seçilen V'ye göre yeniden sıralanır.
 İstek başlıklarında e-posta ya da kişisel veri yok (User-Agent genel). Kullanım: python araclar/kume_uyeleri.py [--cikti veri/kume_uyeleri.json]
 """
-import sys, os, json, time, datetime, urllib.request, urllib.parse, urllib.error
+import sys, os, re, math, json, time, datetime, urllib.request, urllib.parse, urllib.error
 
 if hasattr(sys.stdout, 'reconfigure'):
     sys.stdout.reconfigure(encoding='utf-8')
@@ -142,6 +142,8 @@ def capraz(uyeler_):
     for u in uyeler_:
         k = kim.get(u['ad'], {})
         u['Vsimbad'] = u['V']
+        if k.get('ra') is not None:
+            u['ra'], u['dec'] = round(float(k['ra']), 5), round(float(k['dec']), 5)
         kat = {}
         if k.get('HIP'):
             r = viz('I/239/hip_main', {'HIP': k['HIP']}, ['HIP', 'Vmag', 'r_Vmag', 'VarFlag'])
@@ -208,6 +210,18 @@ def capraz(uyeler_):
     return uyeler_
 
 
+def yaricap_der(h):
+    """hedefler.json 'boyut' ('30′', '85x60′') → büyük eksenin yarısı (derece); yoksa None"""
+    m = re.match(r'\s*([\d.]+)', str(h.get('boyut') or ''))
+    return float(m.group(1)) / 60 / 2 if m else None
+
+
+def acisal(ra1, de1, ra2, de2):
+    r = math.radians
+    c = math.sin(r(de1)) * math.sin(r(de2)) + math.cos(r(de1)) * math.cos(r(de2)) * math.cos(r(ra1 - ra2))
+    return math.degrees(math.acos(max(-1.0, min(1.0, c))))
+
+
 def koni(ra, dec, yaricap, v_ust):
     q = ("SELECT TOP 40 b.main_id AS ad, f.V AS v, b.otype AS tur FROM basic AS b JOIN allfluxes AS f ON f.oidref = b.oid "
          f"WHERE CONTAINS(POINT('ICRS', b.ra, b.dec), CIRCLE('ICRS', {ra}, {dec}, {yaricap})) = 1 AND f.V < {v_ust} ORDER BY v ASC")
@@ -236,8 +250,19 @@ def main(argv):
         else:
             ls, ham = uyeler(sid)
             aday = capraz(ls[:ADAY])
+            # v47 (doğrulayıcı bulgusu): üye hedefin görünen boyutu içinde olmalı (hedefler.json 'boyut' büyük ekseninin yarısı);
+            # ör. HD 14443 NGC 884'ün merkezinde, NGC 869'un merkezine 0,41° — iki kümeyi birlikte inceleyen makale ikisine de bağlıyor.
+            r = yaricap_der(h)
+            disarda = []
+            if r:
+                for y in aday:
+                    if y.get('ra') is not None:
+                        y['merkezeDk'] = round(acisal(h['ra'], h['dec'], y['ra'], y['dec']) * 60, 1)
+                disarda = [y['ad'] for y in aday if y.get('merkezeDk') is not None and y['merkezeDk'] > r * 60]
+                aday = [y for y in aday if y['ad'] not in disarda]
             aday.sort(key=lambda y: y['V'])
-            sonuc[hid] = {'simbad': sid, 'uyeler': aday[:EN_COK], 'toplam': len(ls), 'hamSatir': ham, 'denetlenenAday': len(aday),
+            sonuc[hid] = {'simbad': sid, 'uyeler': aday[:EN_COK], 'toplam': len(ls), 'hamSatir': ham, 'denetlenenAday': len(aday) + len(disarda),
+                          'boyutDisi': disarda, 'yaricapDk': round(r * 60, 1) if r else None,
                           'uyelikKaynagi': 'SIMBAD h_link, üyelik ≥ %d (kaynak bibcode her yıldızda)' % ESIK}
             if hid == 'M42':
                 sonuc[hid]['not'] = 'M42 merkez yıldızları (Orion Bulutsusu Kümesi / Trapezium) — bulutsunun kendisi değil; yıldız testi için'
