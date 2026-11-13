@@ -305,7 +305,10 @@
     const tarifP = document.createElement('p'); tarifP.className = 'bulucu-tarif'; tarifP.id = 'bulucuTarif';
     const not = document.createElement('p'); not.className = 'bulucu-not';
     not.textContent = 'Kesikli daire: 7×50 dürbünün görüş alanı (yaklaşık ' + sayi(DURBUN_ALANI, 1) + '°). Haritanın üstü başucuna bakar; K oku kuzeyi gösterir. Yıldızlar 6 kadire kadar.';
-    panel.append(bas, alt, cizim, durum, tarifP, not);
+    /* v50: Binocular Sky'dan çevrilmiş "Nasıl bulunur" ve "Ne görürsün" (icerik.js; kaynak satırıyla). Üstteki tarif
+       Urania'nın kendi hesapladığı yıldız atlama yoludur; ikisi yan yana durur. */
+    const ekTarif = document.createElement('div'); ekTarif.className = 'bulucu-ek-tarif'; ekTarif.id = 'bulucuEkTarif';
+    panel.append(bas, alt, cizim, durum, tarifP, ekTarif, not);
     /* Kapanınca odak açan öğeye döner (Esc, Kapat ya da form) */
     panel.addEventListener('close', () => {
       const a = acan; acan = null; son = null;
@@ -472,6 +475,11 @@
     } else durum.classList.remove('uyari-var');
     tarifP.textContent = tarif(h, hedef).join(' ');
   }
+  function ekTarifYaz() {
+    if (!panel || !son) return;
+    const k = panel.querySelector('#bulucuEkTarif'), I = kok.Icerik;
+    k.innerHTML = I && I.hazir() ? I.tarifHtml(son.hedef.id) : '';
+  }
 
   /* hedef: hedefler.json öğesi; secenek: { zaman: Date, gzl: G.gozlemci(...) } (verilmezse şimdi ve kayıtlı konum) */
   function ac(hedef, secenek) {
@@ -487,11 +495,14 @@
     panel.querySelector('#bulucuCizim').textContent = 'Yükleniyor…';
     panel.querySelector('#bulucuDurum').textContent = '';
     panel.querySelector('#bulucuTarif').textContent = '';
+    panel.querySelector('#bulucuEkTarif').textContent = '';
     if (!panel.open) { if (panel.showModal) panel.showModal(); else panel.setAttribute('open', ''); }
     return veriYukle().then(veri => {
       if (!panel.open) return null;
       son = { hedef, zaman, gzl, veri };
       doldur();
+      ekTarifYaz();
+      if (kok.Icerik && !kok.Icerik.hazir()) kok.Icerik.yukle().then(() => { if (panel.open && son && son.hedef === hedef) ekTarifYaz(); });
       return son;
     }).catch(e => {
       panel.querySelector('#bulucuCizim').textContent = 'Yıldız verisi yüklenemedi: ' + (e && e.message || e);

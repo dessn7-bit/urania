@@ -84,6 +84,7 @@
         <canvas id="gkLevha" width="560" height="560" role="img" aria-label="Seçili an için gökyüzü haritası. Bir cisme dokunarak adını gör."></canvas>
         <div class="levha-bilgi" id="gkBilgi" aria-live="polite" hidden></div>
       </div>
+      <div class="mit-kap" id="gkMit" hidden></div>
       <div class="zaman-kontrol">
         <div class="etiket"><span>Saat <b id="gkSaat">—</b></span><span id="gkGunesDurum"></span></div>
         <input type="range" id="gkKaydir" min="0" max="1440" step="5" aria-label="Saat">
@@ -1536,8 +1537,19 @@
       if (!html) { bilgi.hidden = true; return; }
       bilgi.innerHTML = html; bilgi.hidden = false;
       bilgi.classList.toggle('ustte', !!yer && yer.y > 0.55);   // haritanın alt kısmındaki cisim kutunun altında kalmasın
-      bilgiSayac = setTimeout(() => { bilgi.hidden = true; }, 6000);
+      /* v50: ek satırlı kutu (Türkçe adlar, yıldız bilgisi, Mit düğmesi) okunabilsin diye daha uzun durur */
+      bilgiSayac = setTimeout(() => { bilgi.hidden = true; }, /ic-satir|ic-mit-dugme/.test(html) ? 20000 : 6000);
     });
+    /* v50: bilgi kutusundaki "Mit" düğmesi haritanın altındaki Mit bölümünü açar (icerik.js) */
+    bilgi.addEventListener('click', e => {
+      const b = e.target.closest('[data-mit]'); if (!b || !window.Icerik) return;
+      clearTimeout(bilgiSayac); bilgi.hidden = true;
+      Icerik.mitAc(el.querySelector('#gkMit'), b.dataset.mit, el.querySelector('#gkLevha'));
+    });
+    if (window.Icerik) {
+      document.addEventListener('urania:icerik', () => { if (durum.harita) levhaCiz(); });
+      Icerik.yukle();
+    }
     konumBagla();
     el.querySelector('#gkPlanTakvim').addEventListener('click', planTakvim);
     document.addEventListener('urania:konum', () => {

@@ -975,3 +975,26 @@ html.kirmizi .ay-sahne canvas { filter: url(#kirmiziSuz); }
 
 /* v49: kırmızı mod süzgecini taşıyan görünmez SVG (satır içi stil yerine; html-validate no-inline-style) */
 .suzgec-svg { position: absolute; }
+
+/* ---- İçerik paketi (v50): mitler, Türkçe geleneksel adlar, dürbün tarifleri, yıldız bilgisi ---- */
+.ic-satir { display: block; margin-top: 4px; font-size: 13px; color: var(--soluk); text-align: left; }
+.levha-bilgi .ic-mit-dugme, .ar-bilgi .ic-mit-dugme { pointer-events: auto; background: none; border: 1px solid var(--pirinc-soluk); border-radius: 999px; padding: 4px 12px; margin-left: 6px; color: var(--pirinc); cursor: pointer; font-size: 14px; min-height: 28px; }
+.levha-bilgi:has(.ic-satir), .levha-bilgi:has(.ic-mit-dugme) { width: auto; left: 4%; right: 4%; transform: none; max-width: none; }
+.mit-kap { max-width: 560px; margin: 10px auto 0; }
+.mit-kutu { border: 1px solid var(--pirinc-soluk); border-radius: 12px; padding: 12px 14px; background: var(--levha); }
+.mit-ust { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.mit-ust h3 { margin: 0; font-size: 17px; color: var(--parsomen); }
+.mit-anlati h4 { margin: 12px 0 4px; font-size: 15px; color: var(--pirinc); font-family: var(--sans); font-weight: 600; }
+.mit-metin { margin: 0; font-family: var(--serif); font-size: 16px; line-height: 1.6; color: var(--parsomen); }
+.mit-anlati .dugme { margin-top: 8px; }
+.ar-mit { position: absolute; left: max(12px, env(safe-area-inset-left)); right: max(12px, env(safe-area-inset-right)); top: calc(64px + env(safe-area-inset-top)); bottom: calc(96px + env(safe-area-inset-bottom)); overflow: auto; z-index: 3; }
+.ar-mit .mit-kutu { background: rgba(15,27,45,.96); }
+html.kirmizi .ar-mit .mit-kutu { background: rgba(0,0,0,.96); }
+.bulucu-ek-tarif { margin-top: 6px; }
+.bulucu-ek-tarif details.aciklama > summary { padding: 10px 0; }
+.bulucu-ek-tarif p { margin: 6px 0; color: var(--parsomen); font-size: 15px; line-height: 1.5; }
+.bulucu-ek-tarif p.kaynak { color: var(--soluk); font-size: 13px; }
+.ic-ders-not { border: 1px solid var(--cizgi); border-radius: 12px; padding: 10px 14px; margin: 16px 0; }
+.ic-ders-not h3 { margin: 0 0 6px; font-size: 16px; }
+.ic-ders-not ul { margin: 0; padding-left: 18px; font-size: 15px; }
+.ic-ders-not li { margin: 4px 0; }

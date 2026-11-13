@@ -406,7 +406,7 @@
       /* Yakın hedeflerin (Mizar–Alcor, M36–M38) ve parlak yıldız adlarının üstüne yazılmasın: çakışan etiket atlanır */
       const k = { x: p.x + 9, y: p.y - 8, w: ctx.measureText(h.kisa).width + 2, h: 16 };
       if (!etiketKutu.some(b => k.x < b.x + b.w && k.x + k.w > b.x && k.y < b.y + b.h && k.y + k.h > b.y)) { ctx.fillText(h.kisa, p.x + 10, p.y); etiketKutu.push(k); }
-      isabet.push({ x: p.x, y: p.y, o: 2, ad: h.ad, alt: h.tur + ' · ' + U.kadir(h.kadir) + ' kadir' });
+      isabet.push({ x: p.x, y: p.y, o: 2, ad: h.ad, alt: h.tur + ' · ' + U.kadir(h.kadir) + ' kadir', anahtar: 'hedef:' + h.id, mit: h.id });
     });
 
     /* Güneş, Ay, gezegenler */
@@ -427,7 +427,7 @@
       ctx.fillText(c.ad, p.x + 16, p.y);
       ctx.globalAlpha = 1;
       const not = c.id === 'Sun' ? 'Güneşe dürbünle asla bakma' : (c.id === 'Moon' ? st.nesneler.ay.ad + ', %' + Math.round(st.nesneler.ay.oran * 100) : U.kadir(c.kadir) + ' kadir');
-      isabet.push({ x: p.x, y: p.y, o: 4, ad: c.ad, alt: not + (altta ? ' · ufkun altında' : '') });
+      isabet.push({ x: p.x, y: p.y, o: 4, ad: c.ad, alt: not + (altta ? ' · ufkun altında' : ''), anahtar: 'cisim:' + c.id });
     });
 
     /* Uzay İstasyonu: anlık konum (ışıkta dolu, gölgede boş halka) ve yaklaşan geçişin yolu */
@@ -620,9 +620,18 @@
     isabet.forEach(h => { const d = Math.hypot(h.x - px, h.y - py) - h.o * 3; if (d < 30 && (!en || d < en.d)) en = { d, h }; });
     const k = el.querySelector('#arBilgi');
     if (!en) { k.hidden = true; return; }
-    k.innerHTML = '<b>' + U.kacis(en.h.ad) + '</b> · ' + U.kacis(en.h.alt);
+    /* v50 içerik paketi (icerik.js): Türkçe geleneksel adlar, yıldız bilgisi ve takımyıldızda "Mit" düğmesi */
+    let ek = '';
+    const IC = window.Icerik && Icerik.hazir() ? Icerik : null;
+    if (IC) {
+      const h = en.h;
+      if (h.o === 0) { const ty = IC.tyKisa(h.ad); if (ty) ek = IC.mitDugmesi(ty) + IC.turkceAdSatiri('ty:' + ty); }
+      else if (h.o === 1 && h.ad !== 'Yıldız') ek = IC.turkceAdSatiri('yildiz:' + h.ad) + IC.yildizSatiri(h.ad);
+      else if (h.anahtar) ek = (h.mit ? IC.mitDugmesi(h.mit) : '') + IC.turkceAdSatiri(h.anahtar);
+    }
+    k.innerHTML = '<b>' + U.kacis(en.h.ad) + '</b> · ' + U.kacis(en.h.alt) + ek;
     k.hidden = false;
-    clearTimeout(k._t); k._t = setTimeout(() => { k.hidden = true; }, 5000);
+    clearTimeout(k._t); k._t = setTimeout(() => { k.hidden = true; }, ek ? 20000 : 5000);
   }
 
   /* ---------- Arama ---------- */
@@ -783,6 +792,7 @@
       <div class="ar-durum" id="arDurum" role="status" hidden></div>
       </div>
       <div class="ar-bilgi" id="arBilgi" aria-live="polite" hidden></div>
+      <div class="ar-mit" id="arMit" hidden></div>
       <div class="ar-merkez" id="arMerkez"></div>
       <div class="gorunmez" id="arDuyuru" aria-live="polite"></div>
       <div class="ar-hizala" id="arHizala" hidden>
@@ -800,6 +810,13 @@
     cv = el.querySelector('#arKanvas'); ctx = cv.getContext('2d'); video = el.querySelector('#arVideo');
     dokunmaBagla();
     el.querySelector('#arBul').addEventListener('click', aramaAc);
+    /* v50: bilgi kutusundaki "Mit" düğmesi Mit bölümünü açar (icerik.js) */
+    el.querySelector('#arBilgi').addEventListener('click', e => {
+      const b = e.target.closest('[data-mit]'); if (!b || !window.Icerik) return;
+      const k = el.querySelector('#arBilgi'); clearTimeout(k._t); k.hidden = true;
+      Icerik.mitAc(el.querySelector('#arMit'), b.dataset.mit, el.querySelector('#arBul'));
+    });
+    if (window.Icerik) Icerik.yukle();
     el.querySelector('#arPusula').addEventListener('click', izinIste);
     el.querySelector('#arHizalaDugme').addEventListener('click', hizalamaBaslat);
     el.querySelector('#arOrtaladim').addEventListener('click', hizalamaBitir);

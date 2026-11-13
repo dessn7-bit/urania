@@ -1,0 +1,136 @@
+{
+ "kaynak": "Steve Tonkin, The Binocular Sky (binocularsky.com) — 50 mm dürbün nesne sayfalarının \"Location\" ve \"What You Should See\" bölümleri",
+ "kaynak_url": "https://binocularsky.com/",
+ "lisans": "CC BY-NC-SA 3.0 (https://creativecommons.org/licenses/by-nc-sa/3.0/); ayrıntı ve atıf: veri/LICENSE-binocularsky.txt",
+ "degisiklik": "Metinler İngilizceden Türkçeye çevrildi ve sadeleştirildi; yıldızların yanına Urania'daki adları parantez içinde eklendi; sitenin kendi görsellerine ilişkin bildirim cümleleri ve haritalar alınmadı.",
+ "erisim": "2026-11-13",
+ "not": "Tarifler 50 mm'lik dürbün için yazılmıştır; birçoğu 10×50'yi anar ve \"5° alan\" derken sitenin haritalarındaki 5°'lik alan dairesini kasteder. Urania'nın 7×50 için kullandığı alan 6,4°'dir: alan daha geniş, büyütme daha azdır; bu yüzden tarifteki cisimler alana daha rahat sığar, ama 10×50 için anlatılan ince ayrıntılar (ör. ayrışan yıldız sayısı) 7×50'de daha az olabilir. Bazı tariflerde yazar başka dürbünleri de anar (×37, 15×70, 100 mm); bunlar olduğu gibi aktarıldı.",
+ "sitede_yok": ["Mizar", "Alcor"],
+ "tarifler": {
+  "M45": {
+   "sayfa": "https://binocularsky.com/binoc_object_file.php?object_id=M45&aperture=50",
+   "nasil": "M45 çıplak gözle kolayca görülür.",
+   "ne": "M45 belki de dürbünle bakılan en çarpıcı cisim; her sonbahar dönüp yeniden baktığım bir hedef. Dürbünü ona çevirmek bir elmas kutusunu açmaya benzer: mavi-beyaz üyelerinin daha fazlası ortaya çıkar. 10×50 dürbünde bile onları sayarken ipin ucu kolayca kaçar; onlarca yıldız rahatça görülür. Çok karanlık bir gökte iyi bir dürbün, yan bakışla bakarsan Merope'yi saran bulutsuluğun izini verir. Daha büyük dürbünler kümeyi oluşturan 300 kadar yıldızın daha fazlasını gösterir."
+  },
+  "M42": {
+   "sayfa": "https://binocularsky.com/binoc_object_file.php?object_id=M42&aperture=50",
+   "nasil": "Orion'daki Büyük Bulutsu, kılıcın ortasındaki bulanık yıldız olarak çıplak gözle görülür.",
+   "ne": "50 mm: M42 ve ona bağlı M43, sabitlenmiş (ayaklı) dürbünle çok daha iyi görünür. Küçük dürbünlerde bile, özellikle yan bakışla bakarsan, bol ayrıntı ortaya çıkar. Zaman tanı: ne kadar uzun bakarsan bulutsuluğu ve ışığını yansıttığı yıldız kümesini o kadar çok görürsün. Daha büyük ve daha yüksek büyütmeli bir dürbünün varsa Trapez'i (θ Orionis) ayrı yıldızlara ayırıp ayıramadığına bak. Dürbün, kılıcın öteki iki \"yıldızının\" da küme olduğunu gösterir. Kuzeydekinde hâlâ biraz yansıma bulutsuluğu vardır (NGC 1973, 1975 ve 1977); karanlık ve saydam gecelerde varlığını sezdirebilir. Daha yaşlı olan güneydeki kümede (NGC 1980) ise hiç yoktur. Büyük Bulutsu'nun yıldız doğum bölgesine bağlı kümeden daha yaşlı olan bu iki küme, Büyük Bulutsu'nun kendi sonunu da gösterir. 100 mm: Büyük Bulutsu 50 mm dürbün için güzel bir hedeftir; ama açıklığı iki, büyütmeyi üç dört katına çıkarınca, özellikle saydam ve karanlık bir gecede, neredeyse başka bir cisme bakıyormuş gibi olursun. Büyük dürbünde çok daha fazla ince ayrıntı görünür; ne kadar uzun bakarsan o kadar çok şey görürsün ve sahte bir derinlik duygusu belirir. \"Balık ağzı\"nın çevresindeki ve \"kanatlar\"daki yapıyı ara. Büyük bir dürbün, iyi optik ve durgun havayla Trapez (θ Ori) 4 yıldıza ayrılabilir. Kuzey yarımkürenin kış gökyüzünün bu gözde hedefi, tekrar tekrar bakılacak bir cisimdir."
+  },
+  "M31": {
+   "sayfa": "https://binocularsky.com/binoc_object_file.php?object_id=M31&aperture=50",
+   "nasil": "M31 çıplak gözle görülebilir. Görülmüyorsa: gerekirse γ (Tiansi), α (Schedar) ve β (Caph) Cassiopeiae'nin oluşturduğu \"ok ucu\"nu gökyüzünün doğru bölgesini göstermesi için kullan. 1. Belirgin, 2. kadirden sarı yıldız β Andromedae'yi (Mirach) bul. Onu alanın güneydoğu kenarına yakın bir yere koy ve kuzeybatısındaki μ Andromedae'yi bul. 2. μ'yü β'nın olduğu yere getir; M31, μ'nün az önce durduğu yerde olmalı.",
+   "ne": "M31'in uzamış elips biçimini görebilmelisin; sabırla ve karanlık gökte bu biçim alanın ortadaki yarısı boyunca uzanır. Galaksinin çekirdeğinin daha parlak ışıltısına ve oradaki toz şeridi yüzünden galaksi ışığının kuzeybatıya doğru biraz daha keskin kesildiğine dikkat et. İyi bir gökte iki yoldaş galaksiyi, M32'yi (NGC 221) ve M110'u (NGC 205) seçebilmelisin. M32 güneydedir; 10×50 dürbünde iri, bulanık bir yıldız gibi görünür ve 7. kadirden iki yıldızla dik açılı bir üçgen oluşturur. M110 kuzeybatıdadır; o da bulanık bir yıldız gibi görünür. Bu yoldaş galaksileri görünür kılmak için yan bakış gerekebilir."
+  },
+  "M44": {
+   "sayfa": "https://binocularsky.com/binoc_object_file.php?object_id=M44&aperture=50",
+   "nasil": "Çıplak gözle görülen M44; γ (Asellus Borealis), δ (Asellus Australis) ve η Cancri ile aynı 5°'lik alandadır ve ε Cancri'yi içinde barındırır.",
+   "ne": "Arıkovanı çok hoş bir dürbün hedefidir; 10×50 dürbünde 20 kadar yıldızı ayırt edebilirsin. Dürbünle ayrılan iki çift yıldızı, ADS 6915 ve ADS 6921'i de ayırt edebilmelisin. M44'ü Yemlik (The Manger) denen bir asterizm çerçeveler; köşelerinde Asellus Australis, Asellus Borealis (γ Cnc), η ve θ Cancri bulunur."
+  },
+  "M13": {
+   "sayfa": "https://binocularsky.com/binoc_object_file.php?object_id=M13&aperture=50",
+   "nasil": "Bu, kuzey yarımkürenin küresel kümeleri içinde belki de bulması en kolay olanı: çok parlaktır ve η Herculis'ten ζ Herculis'e (Tianji) giden yolun üçte birindedir. η Herculis'i 5°'lik alanın kuzeyine koyarsan M13 ortada olur.",
+   "ne": "10×50 dürbün bu kümenin hiçbir yıldızını ayırmaz; ama parlak ışıltısı yaklaşık 20 yay dakikası genişliğinde olmalı ve çıplak gözle de görülebilir. Onu ilk kaydeden Edmund Halley de böyle fark etmişti. Büyük teleskoplarla, 145 ışık yılı genişliğindeki kümenin çevresinde on binlerce yıldız ayrılmıştır; ama çekirdekteki yıldızlar birbirine çok yakındır (aralarında 0,1 ışık yılı kadar) ve ayrılamaz."
+  },
+  "M8": {
+   "sayfa": "https://binocularsky.com/binoc_object_file.php?object_id=M8&aperture=50",
+   "nasil": "M8, Yay'daki \"çaydanlık\" asterizminin kapağının \"tepesi\" olan λ Sagittarii'nin (Kaus Borealis) 5°'den biraz fazla batı-kuzeybatısındadır.",
+   "ne": "Deniz Kulağı Bulutsusu, yeterince karanlık ve saydam bir gökte yüksekteyse çıplak gözle görülür. Küçük \"kompakt\" dürbünler bile bu çarpıcı cisimde, ona bağlı açık kümenin (NGC 6530) birkaç yıldızını gösterir; 10×50'ler yarım düzineden fazla yıldızı, bu yıldızların aydınlattığı çevredeki bulutsuluğun (NGC 6523) bir kısmını ve ana bulutsuluğun doğusundaki daha sıkı yıldız kümesini gösterir. Bulutsuluk yan bakışla çok daha iyi görünür. Kuzeyinde, aynı 5°'lik alanın içinde, daha küçük ve daha sönük olan M20 (NGC 6514), yani Üç Boğumlu (Trifid) Bulutsu vardır. Gökyüzünün bütün bu bölgesi başka \"bulanık lekeler\" için taranmaya değer; her boy dürbünde görülen pek çok leke vardır."
+  },
+  "M7": {
+   "sayfa": "https://binocularsky.com/binoc_object_file.php?object_id=M7&aperture=50",
+   "nasil": "Samanyolu'nun önünde bulanık bir leke olarak çıplak gözle görülen bu küme, akrebin iğnesi olan λ Scorpii'nin (Shaula) 4½°'den biraz fazla doğusundadır; Orta Çağ Arapları onu Akrebin zehri diye bilirdi.",
+   "ne": "M7 çok büyük, parlak bir kümedir; çapı Ay'ın yaklaşık 2½ katıdır. Her boy dürbün tek tek yıldızlarını gösterir: yeterince karanlık bir yerden 10×50 dürbünde 9 kadarı, yer çok karanlıksa bir düzineye kadarı görülür. Daha yüksek büyütme daha fazla yıldız gösterir; bunların 80 kadarı 10. kadir ya da daha parlaktır. Bu güzel küme yaygın adını, MS 1. yüzyılda İskenderiyeli Batlamyus'un onu gözlemesinden alır."
+  },
+  "M6": {
+   "sayfa": "https://binocularsky.com/binoc_object_file.php?object_id=M6&aperture=50",
+   "nasil": "M6, λ Scorpii'nin (Shaula) bir 5°'lik alan kuzeyinde, çıplak gözle kolayca görülür.",
+   "ne": "Komşusu M7 kadar etkileyici olmasa da M6, 10×50 dürbünde güzel bir hedeftir; daha parlak yıldızlarından yarım düzine kadarı ayrılır. Yaygın adını aldığı \"kelebek\" biçiminin belirmesi için bence biraz daha yüksek büyütme gerekir."
+  },
+  "M22": {
+   "sayfa": "https://binocularsky.com/binoc_object_file.php?object_id=M22&aperture=50",
+   "nasil": "M22, \"çaydanlık kapağı\" asterizminin \"tepesi\" olan λ Sagittarii'nin (Kaus Borealis) bir alan kuzeydoğusundadır.",
+   "ne": "×37 büyütmede güzel bir küresel kümedir; bir kuyruklu yıldızın çekirdeğine çok benzeyen, belirgin biçimde daha parlak bir göbek gösterir. Charles Messier'nin kuyruklu yıldızlarla karıştırılmaması gereken cisimlerin kataloğunu neden hazırladığı burada çok iyi anlaşılır. Güney yarımkürenin küresel kümelerinin üçüncü en büyüğüdür; bu övgü genellikle (gözlemesi daha kolay olan) M13'e yapılsa da, Birleşik Krallık'tan görülebilen en büyük küresel küme budur."
+  },
+  "M35": {
+   "sayfa": "https://binocularsky.com/binoc_object_file.php?object_id=M35&aperture=50",
+   "nasil": "η Geminorum'u (Propus) 5°'lik alanın güneydoğu kenarına koyarsan M35 ortada olur.",
+   "ne": "M35, 300'den fazla yıldızı olan çok güzel bir açık kümedir. Görünür boyutu aşağı yukarı Ay kadardır. 10×50 dürbünde 15 kadar yıldız ayrılır. Gerekirse yan bakış kullanarak iki başka açık kümeyi seçip seçemediğine bak: yarım derece güneydoğudaki NGC 2158 ve bir derece doğu-güneydoğudaki, biraz daha zor olan IC 2157."
+  },
+  "M36": {
+   "sayfa": "https://binocularsky.com/binoc_object_file.php?object_id=M36&aperture=50",
+   "ortak": "M36, M37 ve M38 için sitedeki metin ortaktır.",
+   "nasil": "β Tauri (Elnath) ile θ Aurigae'nin (Mahasim) tam ortasında, 7. kadirden, eşit aralıklı üç yıldızın oluşturduğu hafif kıvrık bir zincir vardır. Bu zincir alanın ortasındayken M36 kuzeybatıda, M37 güneydoğuda kalır; ikisi de aynı 5°'lik alanın içindedir. M36 alanın ortasındayken M38 kuzeybatı kenarındadır.",
+   "ne": "M36 aşağı yukarı yuvarlaktır ve çapı Ay'ın üçte biri kadardır. Gök koşullarına ve dürbünün kalitesine göre en parlak yıldızlarından yarım düzine kadarını ayırabilirsin. M37, M36'nın yaklaşık iki katı büyüklüğündedir ve çok daha fazla yıldızı olduğu için toplamda daha parlaktır; ama tek tek yıldızları daha sönüktür. M38'in büyüklüğü M36 ile M37 arasındadır. İyi koşullarda 10×50 dürbün 8–9 yıldızını ayırabilir."
+  },
+  "M37": {
+   "sayfa": "https://binocularsky.com/binoc_object_file.php?object_id=M37&aperture=50",
+   "ortak": "M36, M37 ve M38 için sitedeki metin ortaktır.",
+   "nasil": "β Tauri (Elnath) ile θ Aurigae'nin (Mahasim) tam ortasında, 7. kadirden, eşit aralıklı üç yıldızın oluşturduğu hafif kıvrık bir zincir vardır. Bu zincir alanın ortasındayken M36 kuzeybatıda, M37 güneydoğuda kalır; ikisi de aynı 5°'lik alanın içindedir. M36 alanın ortasındayken M38 kuzeybatı kenarındadır.",
+   "ne": "M36 aşağı yukarı yuvarlaktır ve çapı Ay'ın üçte biri kadardır. Gök koşullarına ve dürbünün kalitesine göre en parlak yıldızlarından yarım düzine kadarını ayırabilirsin. M37, M36'nın yaklaşık iki katı büyüklüğündedir ve çok daha fazla yıldızı olduğu için toplamda daha parlaktır; ama tek tek yıldızları daha sönüktür. M38'in büyüklüğü M36 ile M37 arasındadır. İyi koşullarda 10×50 dürbün 8–9 yıldızını ayırabilir."
+  },
+  "M38": {
+   "sayfa": "https://binocularsky.com/binoc_object_file.php?object_id=M38&aperture=50",
+   "ortak": "M36, M37 ve M38 için sitedeki metin ortaktır.",
+   "nasil": "β Tauri (Elnath) ile θ Aurigae'nin (Mahasim) tam ortasında, 7. kadirden, eşit aralıklı üç yıldızın oluşturduğu hafif kıvrık bir zincir vardır. Bu zincir alanın ortasındayken M36 kuzeybatıda, M37 güneydoğuda kalır; ikisi de aynı 5°'lik alanın içindedir. M36 alanın ortasındayken M38 kuzeybatı kenarındadır.",
+   "ne": "M36 aşağı yukarı yuvarlaktır ve çapı Ay'ın üçte biri kadardır. Gök koşullarına ve dürbünün kalitesine göre en parlak yıldızlarından yarım düzine kadarını ayırabilirsin. M37, M36'nın yaklaşık iki katı büyüklüğündedir ve çok daha fazla yıldızı olduğu için toplamda daha parlaktır; ama tek tek yıldızları daha sönüktür. M38'in büyüklüğü M36 ile M37 arasındadır. İyi koşullarda 10×50 dürbün 8–9 yıldızını ayırabilir."
+  },
+  "M39": {
+   "sayfa": "https://binocularsky.com/binoc_object_file.php?object_id=M39&aperture=50",
+   "nasil": "M39, Samanyolu'nun zengin bir bölümünde, Deneb (α Cygni) ile α Lacertae'nin (Stellio) tam ortasındadır.",
+   "ne": "Görece gevşek ve parlak (4,6 kadir) bir kümedir; 15×70 dürbün, kümenin doğrulanmış 30 kadar üyesinin 20 kadarını ayırır. Küme gökte Ay'dan biraz daha geniş bir yer kaplar. Köşelerinde kümenin en parlak yıldızlarının bulunduğu bir üçgenle sınırlanır."
+  },
+  "M11": {
+   "sayfa": "https://binocularsky.com/binoc_object_file.php?object_id=M11&aperture=50",
+   "nasil": "M11, 4. kadirden β Scuti'nin 2° güneydoğusundadır.",
+   "ne": "10×50 dürbünde küme parlak, kama biçimli bir ışıltı olarak görünür. Bu boy dürbün, bin kadar yıldızlı bu kümeye yaygın adını veren, daha parlak yıldızların oluşturduğu V biçimini ayırmaz; yine de küme bu boy dürbün için iyi hedeflerden biridir. Gökyüzünün bu bölgesinde, kümenin arka planını oluşturan Kalkan Yıldız Bulutu da (Samanyolu'nun daha yoğun bir bölümü) görülmeye değer."
+  },
+  "M27": {
+   "sayfa": "https://binocularsky.com/binoc_object_file.php?object_id=M27&aperture=50",
+   "nasil": "γ Sagittae'yi (Telum) 5°'lik alanın güneyine koyarsan M27 ortanın hemen kuzeyinde olur.",
+   "ne": "Halter, 10×50 dürbünde görülebilen tek gezegenimsi bulutsu değildir; ama ötekilerin hepsinden belirgin biçimde daha kolay görülür. Yapısını göstermek içinse daha büyük ve daha yüksek büyütmeli bir alet gerekir. Onu oluşturan yıldız, büyük dürbünlerde bile görülemeyecek kadar sönüktür."
+  },
+  "M92": {
+   "sayfa": "https://binocularsky.com/binoc_object_file.php?object_id=M92&aperture=50",
+   "nasil": "M92, η Herculis'ten ι Herculis'e (Tianbang) giden yolun üçte ikisindedir.",
+   "ne": "M92 başlı başına çok güzel bir küresel kümedir. Çok parlaktır; ×37 büyütmede kenarları ayrışmaya başlar. Gökte ondan da büyük olan M13'e bu kadar yakın olmasaydı, eminim çok daha iyi tanınır ve daha sık gözlenirdi."
+  },
+  "M3": {
+   "sayfa": "https://binocularsky.com/binoc_object_file.php?object_id=M3&aperture=50",
+   "nasil": "M3'ü genellikle şöyle bulurum: Cor Caroli'den (α Canum Venaticorum) Arcturus'a (α Boötis) giden çizgi ile β Comae Berenices'ten ρ Boötis'e (Kalasungsang) giden çizginin kesiştiği yeri gözümde canlandırırım; M3 alanda değilse biraz Arcturus'a doğrudur. Başka bir yol: atlamaya β Comae Berenices'ten başla. M3 oradan 2½ alan doğudadır; β Comae Berenices'i ρ Boötis'e bağlayan çizginin bir derece güneyinde kalır.",
+   "ne": "M3 büyük, parlak, belirgin bir kümedir; ×37 büyütmede göbeğe doğru açıkça parlaklaşır. Daha iyi bilinen M13'ten ancak biraz küçüktür (18 yay dakikasına karşı 10 yay dakikası) ve bence dürbün için daha iyi bir hedeftir. Çünkü çevresi daha \"gevşek\"tir; dış yıldızlarını ayırmak için daha az büyütme yeter. Biraz güneybatısındaki 6. kadirden yıldız sarımsıdır."
+  },
+  "M5": {
+   "sayfa": "https://binocularsky.com/binoc_object_file.php?object_id=M5&aperture=50",
+   "nasil": "M5'i bulmak için α Serpentis'ten (Unukalhai) μ Virginis'e (Rijl al Awwa) doğru yalnızca 8° kay; bu iki yıldız arasındaki çizgiyi, η Boötis (Muphrid) ile μ Serpentis arasındaki çizginin kestiği yere varırsın.",
+   "ne": "M5 dürbün için iyi küresel kümelerden biridir. M13 kadar parlak görünmese de biraz daha büyük görünür."
+  },
+  "NGC 869": {
+   "sayfa": "https://binocularsky.com/binoc_object_file.php?object_id=Double&aperture=50",
+   "ortak": "Sitede NGC 869 ve NGC 884 tek sayfada (Perseus Çift Kümesi) anlatılır.",
+   "nasil": "Perseus Çift Kümesi çoğu zaman çıplak gözle görülür. Görülmüyorsa γ Cassiopeiae'den (Tiansi) δ Cassiopeiae'ye (Ruchbah) giden çizgiyi izle ve δ'yı geçip, bu iki yıldızın arasındaki uzaklığın 1½ katı kadar, η Persei'ye (Miram) doğru ilerle.",
+   "ne": "Perseus'un kılıç kabzasındaki bu küme çifti, görece küçük dürbünlerde bile çok güzel bir hedeftir. İçinde birkaç turuncu-kırmızı yıldız vardır; bunlar öteki yıldızların değişen parlaklıklarıyla birleşince kümeye üç boyutlu bir görünüm verir. Burada gördüğün yıldızların gerçek parlaklığı hakkında bir fikir vermek için: Güneş'imiz Çift Küme ile aynı uzaklıkta olsaydı, 10×50 dürbünde görülemeyecek kadar sönük olurdu. Çift Küme'nin çevresini taramaya değer; bölge açık kümeler bakımından çok zengindir. Örneğin kuzey-kuzeybatıdaki yıldız zinciri, Perseus ile Cassiopeia sınırındaki Stock 2'ye, yani Kaslı Adam (Muscleman) Kümesi'ne götürür."
+  },
+  "NGC 884": {
+   "sayfa": "https://binocularsky.com/binoc_object_file.php?object_id=Double&aperture=50",
+   "ortak": "Sitede NGC 869 ve NGC 884 tek sayfada (Perseus Çift Kümesi) anlatılır.",
+   "nasil": "Perseus Çift Kümesi çoğu zaman çıplak gözle görülür. Görülmüyorsa γ Cassiopeiae'den (Tiansi) δ Cassiopeiae'ye (Ruchbah) giden çizgiyi izle ve δ'yı geçip, bu iki yıldızın arasındaki uzaklığın 1½ katı kadar, η Persei'ye (Miram) doğru ilerle.",
+   "ne": "Perseus'un kılıç kabzasındaki bu küme çifti, görece küçük dürbünlerde bile çok güzel bir hedeftir. İçinde birkaç turuncu-kırmızı yıldız vardır; bunlar öteki yıldızların değişen parlaklıklarıyla birleşince kümeye üç boyutlu bir görünüm verir. Burada gördüğün yıldızların gerçek parlaklığı hakkında bir fikir vermek için: Güneş'imiz Çift Küme ile aynı uzaklıkta olsaydı, 10×50 dürbünde görülemeyecek kadar sönük olurdu. Çift Küme'nin çevresini taramaya değer; bölge açık kümeler bakımından çok zengindir. Örneğin kuzey-kuzeybatıdaki yıldız zinciri, Perseus ile Cassiopeia sınırındaki Stock 2'ye, yani Kaslı Adam (Muscleman) Kümesi'ne götürür."
+  },
+  "Mel 111": {
+   "sayfa": "https://binocularsky.com/binoc_object_file.php?object_id=Mel111&aperture=50",
+   "nasil": "Melotte 111, γ Comae Berenices'i (Al Dafirah) içine alan büyük bir yıldız kümesidir; yine de γ Comae Berenices büyük olasılıkla gerçek bir üye değil, bir alan yıldızıdır.",
+   "ne": "Karanlık bir gökte küme çıplak gözle görülür. İçinde bulunduğu takımyıldıza adını veren küme budur: efsaneye göre, Kraliçe Berenike'nin kocasının savaştan sağ dönmesi için Aphrodite'ye adadığı güzel saçlarıdır. Babil mitinde ise Thisbe'nin aslandan kaçarken düşürdüğü peçedir (Aslan hemen batısındadır). Bize en yakın üçüncü küme olan bu küme, 5°'lik bir alana sığmayıp taşar."
+  },
+  "Cr 399": {
+   "sayfa": "https://binocularsky.com/binoc_object_file.php?object_id=Coathanger&aperture=50",
+   "nasil": "Cr 399, α Vulpeculae'nin (Anser) 5° güneyinde ve α Sagittae'nin (Sham) 4° kuzeybatısındadır.",
+   "ne": "Küçük dürbünler bile bu asterizme yaygın adını (Elbise Askısı) veren on yıldızı gösterir. Bu biçimi yüzünden Elbise Askısı, gözlem gecelerinin sevilen gösteri parçalarından biridir. 1,5°'lik genişliği, sabitlenmiş bir dürbünde 5°'lik alanın içinde, art arda birkaç gözleme yetecek kadar uzun süre kalır."
+  },
+  "Albireo": {
+   "sayfa": "https://binocularsky.com/binoc_object_file.php?object_id=bCyg&aperture=50",
+   "nasil": "Albireo (β Cygni), Kuğu'nun başındaki yıldızdır.",
+   "ne": "10×50 dürbün, birbirinden 34 yay saniyesi ayrı duran bu çok güzel çift yıldızın iki üyesini de gösterir. 3. kadirden ana yıldız koyu turuncudur (tayf türü K); daha sönük (5. kadir) ikinci yıldız parlak safir mavisidir (tayf türü B). Yıldız gerçek bir çifttir; yörünge dönemi 7270 yıldır."
+  }
+ }
+}

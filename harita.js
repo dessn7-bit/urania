@@ -51,6 +51,8 @@
     }
 
     function ciz(d) {
+      /* v50 içerik paketi (icerik.js): bilgi kutusuna Türkçe geleneksel adlar, yıldız bilgisi ve "Mit" düğmesi; veri gelmediyse boş */
+      const IC = window.Icerik && Icerik.hazir() ? Icerik : null;
       sonDurum = d;
       boyutla();
       const { W, R, cx, cy } = olcu;
@@ -125,7 +127,7 @@
         if (h.alt < 8) return;
         const p = ekran(h.alt, h.az);
         if (t.rank <= rankSinir) etiket(t.ad, p.x, p.y, tyFont, tyRenk, 0, 0, true);
-        isabet.push({ x: p.x, y: p.y, oncelik: 0, bilgi: '<b>' + Urania.kacis(t.ad) + '</b> takımyıldızı' });
+        isabet.push({ x: p.x, y: p.y, oncelik: 0, bilgi: '<b>' + Urania.kacis(t.ad) + '</b> takımyıldızı' + (IC ? IC.mitDugmesi(t.k) + IC.turkceAdSatiri('ty:' + t.k) : '') });
       });
 
       /* Yıldızlar */
@@ -148,7 +150,7 @@
         if (ad && s[2] < 1.6) {
           etiket(ad, p.x, p.y, '500 ' + Math.max(10, W / 50) + 'px Plex, system-ui, sans-serif', kir ? c.soluk : 'rgba(233,226,208,.7)', 2 - s[2] / 2, r + 3);
         }
-        if (s[2] < 3.5 || ad) isabet.push({ x: p.x, y: p.y, oncelik: 1, bilgi: '<b>' + Urania.kacis(ad || 'Yıldız') + '</b> · ' + Urania.kadir(s[2]) + ' kadir · ' + Urania.derece(h.alt) + ' yükseklik, ' + G.YON_UZUN[G.yon(h.az)] });
+        if (s[2] < 3.5 || ad) isabet.push({ x: p.x, y: p.y, oncelik: 1, bilgi: '<b>' + Urania.kacis(ad || 'Yıldız') + '</b> · ' + Urania.kadir(s[2]) + ' kadir · ' + Urania.derece(h.alt) + ' yükseklik, ' + G.YON_UZUN[G.yon(h.az)] + (IC && ad ? IC.turkceAdSatiri('yildiz:' + ad) + IC.yildizSatiri(ad) : '') });
       });
 
       /* Dürbün hedefleri */
@@ -163,7 +165,7 @@
         /* Hedef halkası da engel: başka bir etiket halkanın üstüne yazılmasın (Cr 399, M27, M8 çakışıyordu) */
         engeller.push({ x: p.x, y: p.y, r: hr + 1 });
         etiket(t.kisa, p.x, p.y, '500 ' + Math.max(9, W / 56) + 'px Plex, system-ui, sans-serif', c.hedef, 1, hr + 3);
-        isabet.push({ x: p.x, y: p.y, oncelik: 2, bilgi: '<b>' + Urania.kacis(t.ad) + '</b> · ' + Urania.kacis(t.turAd) + ' · ' + Urania.kadir(t.kadir) + ' kadir · ' + Urania.derece(h.alt) + ' yükseklik' });
+        isabet.push({ x: p.x, y: p.y, oncelik: 2, bilgi: '<b>' + Urania.kacis(t.ad) + '</b> · ' + Urania.kacis(t.turAd) + ' · ' + Urania.kadir(t.kadir) + ' kadir · ' + Urania.derece(h.alt) + ' yükseklik' + (IC ? IC.mitDugmesi(t.id) + IC.turkceAdSatiri('hedef:' + t.id) : '') });
       });
 
       /* Mira: değişen yıldız. Yıldız verisinde yok (ortalama 6,5 kadir); en parlak dönemine yakınsa dolu nokta ve ad,
@@ -212,7 +214,7 @@
         ctx.fillStyle = c.gezegen; ctx.fill();
         engeller.push({ x: p.x, y: p.y, r: r + 1 });
         etiket(g.ad, p.x, p.y, '600 ' + Math.max(11, W / 42) + 'px Plex, system-ui, sans-serif', c.gezegen, 9 - g.kadir / 2, r + 4);
-        isabet.push({ x: p.x, y: p.y, oncelik: 4, bilgi: '<b>' + g.ad + '</b> · ' + Urania.kadir(g.kadir) + ' kadir · ' + Urania.derece(g.alt) + ' yükseklik, ' + G.YON_UZUN[G.yon(g.az)] });
+        isabet.push({ x: p.x, y: p.y, oncelik: 4, bilgi: '<b>' + g.ad + '</b> · ' + Urania.kadir(g.kadir) + ' kadir · ' + Urania.derece(g.alt) + ' yükseklik, ' + G.YON_UZUN[G.yon(g.az)] + (IC && g.cisim ? IC.turkceAdSatiri('cisim:' + g.cisim) : '') });
       });
 
       /* Uydular (ISS, Tiangong, Starlink dizisi): yaklaşan görünür geçişlerin yolu ve anlık konumlar */
@@ -281,7 +283,7 @@
         ctx.beginPath(); ctx.arc(p.x, p.y, 9, 0, Math.PI * 2);
         ctx.fillStyle = kir ? c.pirinc : '#FFD77A'; ctx.fill();
         engeller.push({ x: p.x, y: p.y, r: 10 });
-        isabet.push({ x: p.x, y: p.y, oncelik: 5, bilgi: '<b>Güneş</b> · ' + Urania.derece(d.gunes.alt) + ' yükseklik. Dürbünle asla bakma.' });
+        isabet.push({ x: p.x, y: p.y, oncelik: 5, bilgi: '<b>Güneş</b> · ' + Urania.derece(d.gunes.alt) + ' yükseklik. Dürbünle asla bakma.' + (IC ? IC.turkceAdSatiri('cisim:Sun') : '') });
       }
 
       /* Ay: evresiyle, aydınlık yüzü Güneş'e dönük */
@@ -316,7 +318,7 @@
         ctx.restore();
         engeller.push({ x: p.x, y: p.y, r: r + 1 });
         etiket('Ay', p.x, p.y, '600 ' + Math.max(11, W / 42) + 'px Plex, system-ui, sans-serif', c.ay, 12, r + 4);
-        isabet.push({ x: p.x, y: p.y, oncelik: 5, bilgi: '<b>Ay</b> · ' + d.ay.ad + ', %' + Math.round(d.ay.oran * 100) + ' aydınlık · ' + Urania.derece(d.ay.alt) + ' yükseklik' });
+        isabet.push({ x: p.x, y: p.y, oncelik: 5, bilgi: '<b>Ay</b> · ' + d.ay.ad + ', %' + Math.round(d.ay.oran * 100) + ' aydınlık · ' + Urania.derece(d.ay.alt) + ' yükseklik' + (IC ? IC.turkceAdSatiri('cisim:Moon') : '') });
       }
       /* İşaretli cismin halkası etiket engeli: adlar halkanın üstüne yazılmasın */
       const vp = d.vurgu && d.vurgu.alt > -1 ? ekran(d.vurgu.alt, d.vurgu.az) : null, rv = 15 * Math.max(olc, .85);

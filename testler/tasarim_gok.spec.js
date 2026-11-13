@@ -96,7 +96,9 @@ test.describe('Gök levhası', () => {
     await expect(b).toContainText('Fomalhaut');
     const r = await b.boundingBox();
     expect(r.width).toBeGreaterThan(200);          // eskiden 144 px, dört satır
-    expect(r.height).toBeLessThan(70);
+    /* v50: kutuda yıldız bilgisi satırı da var (tayf türü, uzaklık; icerik.js): ilk satır yine tek satır, toplam yükseklik sınırlı */
+    expect(await b.locator('.ic-yildiz').count()).toBe(1);
+    expect(r.height).toBeLessThan(150);
     expect(nokta.y < r.y || nokta.y > r.y + r.height).toBe(true);   // tıklanan cisim kutunun altında kalmaz
   });
 

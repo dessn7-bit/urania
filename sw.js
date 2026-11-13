@@ -1,6 +1,6 @@
 /* sw.js — çevrimdışı çalışma. Ağ önce (güncel sürüm gelsin), ağ yoksa önbellek.
    Dosya eklenince ASSETS'e eklenmeli ve SURUM artırılmalı. */
-const SURUM = 'urania-v49';
+const SURUM = 'urania-v50';
 const ASSETS = [
   './', './index.html', './stil.css', './manifest.json',
   './icon-192.png', './icon-512.png', './icon-maskable-512.png',
@@ -11,7 +11,7 @@ const ASSETS = [
   './veri/yildizlar.json', './veri/takimyildiz.json', './veri/hedefler.json', './veri/meteor.json',
   './veri/fizik.json', './veri/dersler.json', './veri/sozluk.json', './veri/ortme_yildiz.json', './veri/algol.json', './veri/deney_rehber.json', './veri/deney_veri.json', './veri/sinavlar.json', './veri/gorevler.json', './veri/haberler.json',
   './veri/hedef_boyut.json', './veri/durbun_degisenleri.json', './veri/gok_parlakligi.json', './veri/gok_parlakligi.u8.gz', './veri/kume_uyeleri.json', './veri/profil_m31.json',
-  './ay.js', './apophis.js', './veri/ay_yapilari.json', './veri/apophis2029.json', './img/ay/lroc_color_2k.jpg',
+  './ay.js', './apophis.js', './icerik.js', './veri/mitler.json', './veri/turkce_gok_adlari.json', './veri/hedef_tarifleri.json', './veri/yildiz_bilgi.json', './veri/ay_yapilari.json', './veri/apophis2029.json', './img/ay/lroc_color_2k.jpg',
   './font/spectral-latin-400-normal.woff2', './font/spectral-latin-ext-400-normal.woff2',
   './font/spectral-latin-400-italic.woff2', './font/spectral-latin-ext-400-italic.woff2',
   './font/spectral-latin-600-normal.woff2', './font/spectral-latin-ext-600-normal.woff2',

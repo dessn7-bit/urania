@@ -168,6 +168,7 @@
       ${x.sorular.map(s => `<details class="soru"><summary>${U.kacis(s.soru)}</summary><p>${U.kacis(s.cevap)}</p></details>`).join('')}
       ${bag.length ? `<div class="ders-bag"><h2>Dene, gözle</h2><ul>${bag.map(g => `<li><a href="${g.href}">${U.kacis(g.ad)}</a></li>`).join('')}</ul></div>` : ''}
       <p class="kaynak">Kaynaklar: ${x.kaynaklar.map(k => `<a href="${U.guvenliUrl(k.url)}" target="_blank" rel="noopener">${U.kacis(k.ad)}</a>`).join(' · ')}</p>
+      <div id="dsIcerikNot" data-ders="${U.kacis(x.id)}"></div>
       <div class="ders-son">
         <button type="button" class="dugme${b[x.id] ? '' : ' dolu'}" id="dsBitir" aria-pressed="${!!b[x.id]}">${b[x.id] ? 'Okundu olarak işaretli' : 'Okudum'}</button>
         ${uniteSonu(x.id)}
@@ -186,6 +187,8 @@
       d.classList.toggle('dolu', !acik);
       d.textContent = acik ? 'Okundu olarak işaretli' : 'Okudum';
     });
+    /* v50: ilgili derslerin sonunda Türkçe geleneksel gök adları notu (icerik.js; ders verisi değişmez) */
+    if (window.Icerik) Icerik.yukle().then(() => { const k = el.querySelector('#dsIcerikNot'); if (k && k.dataset.ders === x.id) k.innerHTML = Icerik.dersNotu(x.id); });
     /* Astro sözlük: terimlerin ilk geçtiği yer altı noktalı düğme olur (metin ve sesli okuma değişmez) */
     if (window.Sozluk) Sozluk.isaretle(el.querySelector('article.ders'), { ders: x.id });
     /* Dersten derse kesintisiz dinleme: okuma bitince (ve kutu işaretliyse) sonraki derse geç, orada

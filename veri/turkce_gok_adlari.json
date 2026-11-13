@@ -1,0 +1,462 @@
+{
+ "aciklama": "Türkçe geleneksel gök adları. Her ad kaynağından doğrulandı; alıntılar kaynaktaki metnin birebir kopyasıdır (TDK anlam metni ya da makale cümlesi). Kaynakta bulunmayan ad eklenmedi.",
+ "kaynaklar": {
+  "tdk": {
+   "ad": "Türk Dil Kurumu, Güncel Türkçe Sözlük",
+   "url": "https://sozluk.gov.tr/",
+   "erisim": "2026-11-13"
+  },
+  "garibova2021": {
+   "yazar": "Shabnam Hasanlı Garibova",
+   "baslik": "The Semantic-Structural Changes of Astronomical Names in Medieval Period Turkic Scientific Works",
+   "baslik_tr": "Orta Çağ Türk Bilimsel Çalışmalarında Astronomik Adların Semantik-Yapısal Değişimleri",
+   "dergi": "Uluslararası Türkçe Edebiyat Kültür Eğitim (TEKE) Dergisi",
+   "cilt_sayi": "10/3",
+   "yil": 2021,
+   "sayfalar": "852-863",
+   "url": "https://dergipark.org.tr/tr/pub/teke/article/1000526",
+   "pdf_url": "https://dergipark.org.tr/tr/download/article-file/1993758",
+   "doi": null,
+   "dil": "İngilizce",
+   "erisim": "2026-11-13",
+   "not": "DOI ne DergiPark sayfasında ne PDF'te bulundu. \"sayfa\" alanları derginin basılı sayfa numarasıdır (PDF sayfası + 851). Makalenin DLT kaynağı: Akkoyunlu ve Ercilasun 2014; Kutadgu Bilig kaynağı: Hacib 2008."
+  }
+ },
+ "cisimler": [
+  {
+   "cisim": "Ülker (M45)",
+   "anahtar": "hedef:M45",
+   "adlar": [
+    {
+     "ad": "Yedikızkardeş",
+     "kaynak": "tdk",
+     "madde": "Yedikızkardeş",
+     "alinti": "► Ülker"
+    },
+    {
+     "ad": "Süreyya",
+     "kaynak": "tdk",
+     "madde": "Süreyya",
+     "alinti": "► Ülker"
+    },
+    {
+     "ad": "Peren",
+     "kaynak": "tdk",
+     "madde": "Peren",
+     "alinti": "► Ülker",
+     "not": "TDK etiketi: eskimiş"
+    },
+    {
+     "ad": "Pervin",
+     "kaynak": "tdk",
+     "madde": "Pervin",
+     "alinti": "► Ülker"
+    },
+    {
+     "ad": "Ülker",
+     "kaynak": "garibova2021",
+     "eser": "Divânu Lügati't-Türk",
+     "sayfalar": [
+      860
+     ],
+     "alintilar": [
+      "Ülker (Akkoyunlu and Ercilasun, 2014, p. 932)"
+     ],
+     "not": "Makale adı DLT gök adları listesinde karşılık vermeden sayıyor; M45 eşlemesi makaleden değil, aynı sözcüğün TDK \"Ülker\" maddesindeki tanımından."
+    }
+   ]
+  },
+  {
+   "cisim": "Kutup Yıldızı",
+   "anahtar": "yildiz:Polaris",
+   "adlar": [
+    {
+     "ad": "Demirkazık",
+     "kaynak": "tdk",
+     "madde": "Demirkazık",
+     "alinti": "► Kutup Yıldızı"
+    },
+    {
+     "ad": "Kuzey Yıldızı",
+     "kaynak": "tdk",
+     "madde": "Kuzey Yıldızı",
+     "alinti": "► Kutup Yıldızı"
+    }
+   ]
+  },
+  {
+   "cisim": "Venüs",
+   "anahtar": "cisim:Venus",
+   "adlar": [
+    {
+     "ad": "Çoban Yıldızı",
+     "kaynak": "tdk",
+     "madde": "Çoban Yıldızı",
+     "alinti": "Merkür'den sonra Güneş'e en yakın gezegen; Akşam Yıldızı, Ak Yıldız, Çolpan, Çulpan, Kervankıran, Kervan Yıldızı, Venüs, Zühre",
+     "not": "TDK asıl tanımı \"Çoban Yıldızı\" maddesinde veriyor; \"Venüs\" maddesi buraya gönderiyor."
+    },
+    {
+     "ad": "Akşam Yıldızı",
+     "kaynak": "tdk",
+     "madde": "Akşam Yıldızı",
+     "alinti": "► Çoban Yıldızı"
+    },
+    {
+     "ad": "Ak Yıldız",
+     "kaynak": "tdk",
+     "madde": "Ak Yıldız",
+     "alinti": "► Çoban Yıldızı"
+    },
+    {
+     "ad": "Çolpan",
+     "kaynak": "tdk",
+     "madde": "Çolpan",
+     "alinti": "► Çoban Yıldızı"
+    },
+    {
+     "ad": "Çulpan",
+     "kaynak": "tdk",
+     "madde": "Çulpan",
+     "alinti": "► Çoban Yıldızı"
+    },
+    {
+     "ad": "Kervankıran",
+     "kaynak": "tdk",
+     "madde": "Kervankıran",
+     "alinti": "► Çoban Yıldızı"
+    },
+    {
+     "ad": "Kervan Yıldızı",
+     "kaynak": "tdk",
+     "madde": "Kervan Yıldızı",
+     "alinti": "► Çoban Yıldızı"
+    },
+    {
+     "ad": "Zühre",
+     "kaynak": "tdk",
+     "madde": "Zühre",
+     "alinti": "► Çoban Yıldızı"
+    },
+    {
+     "ad": "Sevit",
+     "kaynak": "garibova2021",
+     "eser": "Kutadgu Bilig",
+     "sayfalar": [
+      860
+     ],
+     "alintilar": [
+      "“Sekentir (Saturn), Oñay (Jupiter), Kürüd (Mars), Yaşık (Sun), Sevit (Venus), Arzıtilek (Mercury), Yalçık (Moon)” (Hacib, 2008, p. 112)",
+      "“Sevit” appears in Kutadghu Bilig as a name for expressing Venus."
+     ]
+    }
+   ]
+  },
+  {
+   "cisim": "Samanyolu",
+   "anahtar": "samanyolu",
+   "adlar": [
+    {
+     "ad": "Gökyolu",
+     "kaynak": "tdk",
+     "madde": "Gökyolu",
+     "alinti": "► Samanyolu"
+    },
+    {
+     "ad": "Hacılaryolu",
+     "kaynak": "tdk",
+     "madde": "Hacılaryolu",
+     "alinti": "► Samanyolu",
+     "not": "TDK etiketi: eskimiş"
+    },
+    {
+     "ad": "Hacıyolu",
+     "kaynak": "tdk",
+     "madde": "Hacıyolu",
+     "alinti": "► Samanyolu",
+     "not": "TDK etiketi: eskimiş"
+    },
+    {
+     "ad": "Kehkeşan",
+     "kaynak": "tdk",
+     "madde": "Kehkeşan",
+     "alinti": "► Samanyolu",
+     "not": "TDK etiketi: eskimiş"
+    },
+    {
+     "ad": "Samanuğrusu",
+     "kaynak": "tdk",
+     "madde": "Samanuğrusu",
+     "alinti": "► Samanyolu"
+    }
+   ]
+  },
+  {
+   "cisim": "Büyük Ayı",
+   "anahtar": "ty:UMa",
+   "adlar": [
+    {
+     "ad": "Yedigir",
+     "kaynak": "tdk",
+     "madde": "Yedigir",
+     "alinti": "► Büyükayı"
+    },
+    {
+     "ad": "Dübbüekber",
+     "kaynak": "tdk",
+     "madde": "Dübbüekber",
+     "alinti": "► Büyükayı"
+    },
+    {
+     "ad": "Yedikardeş",
+     "kaynak": "tdk",
+     "madde": "Yedikardeş",
+     "alinti": "Büyükayı'yı oluşturan yedi yıldız",
+     "not": "TDK etiketi: ağızlardan. Takımyıldızın tamamı değil, yedi yıldızı. \"Büyükayı\" maddesinde eş anlamlı olarak sayılmıyor."
+    }
+   ]
+  },
+  {
+   "cisim": "Küçük Ayı",
+   "anahtar": "ty:UMi",
+   "adlar": [
+    {
+     "ad": "Dübbüasgar",
+     "kaynak": "tdk",
+     "madde": "Dübbüasgar",
+     "alinti": "► Küçükayı"
+    }
+   ]
+  },
+  {
+   "cisim": "Merkür",
+   "anahtar": "cisim:Mercury",
+   "adlar": [
+    {
+     "ad": "Utarit",
+     "kaynak": "tdk",
+     "madde": "Utarit",
+     "alinti": "► Merkür"
+    },
+    {
+     "ad": "Arzıtilek",
+     "kaynak": "garibova2021",
+     "eser": "Kutadgu Bilig",
+     "sayfalar": [
+      860
+     ],
+     "alintilar": [
+      "“Sekentir (Saturn), Oñay (Jupiter), Kürüd (Mars), Yaşık (Sun), Sevit (Venus), Arzıtilek (Mercury), Yalçık (Moon)” (Hacib, 2008, p. 112)"
+     ],
+     "not": "Makalede s. 853 ve 862'de \"Arzutilek\" yazımı da var."
+    },
+    {
+     "ad": "Arzutilek",
+     "kaynak": "garibova2021",
+     "eser": "Kutadgu Bilig",
+     "sayfalar": [
+      862
+     ],
+     "alintilar": [
+      "While the planet Mercury is called “Arzutilek” in “Kutadghu Bilig”"
+     ]
+    }
+   ]
+  },
+  {
+   "cisim": "Mars",
+   "anahtar": "cisim:Mars",
+   "adlar": [
+    {
+     "ad": "Merih",
+     "kaynak": "tdk",
+     "madde": "Merih",
+     "alinti": "► Mars"
+    },
+    {
+     "ad": "Kürüd",
+     "kaynak": "garibova2021",
+     "eser": "Kutadgu Bilig",
+     "sayfalar": [
+      860,
+      861
+     ],
+     "alintilar": [
+      "“Sekentir (Saturn), Oñay (Jupiter), Kürüd (Mars), Yaşık (Sun), Sevit (Venus), Arzıtilek (Mercury), Yalçık (Moon)” (Hacib, 2008, p. 112)",
+      "The planet Mars, which Y.Kh. Hajib called “Kürüd”"
+     ]
+    },
+    {
+     "ad": "Bakır Sokım",
+     "kaynak": "garibova2021",
+     "eser": "Divânu Lügati't-Türk",
+     "sayfalar": [
+      860
+     ],
+     "alintilar": [
+      "Bakır Sokım (Mars, The star of Mars) (Akkoyunlu and Ercilasun, 2014, p. 571)"
+     ],
+     "not": "Makalede s. 861'de bitişik \"Bakırsokım\" yazımı da var."
+    },
+    {
+     "ad": "Bakırsokım",
+     "kaynak": "garibova2021",
+     "eser": "Divânu Lügati't-Türk",
+     "sayfalar": [
+      861
+     ],
+     "alintilar": [
+      "And in “Dīwān Lughāt al-Turk”, Mars is called “Bakırsokım”."
+     ]
+    }
+   ]
+  },
+  {
+   "cisim": "Jüpiter",
+   "anahtar": "cisim:Jupiter",
+   "adlar": [
+    {
+     "ad": "Erendiz",
+     "kaynak": "tdk",
+     "madde": "Erendiz",
+     "alinti": "► Jüpiter"
+    },
+    {
+     "ad": "Müşteri",
+     "kaynak": "tdk",
+     "madde": "Müşteri",
+     "alinti": "► Jüpiter"
+    },
+    {
+     "ad": "Oñay",
+     "kaynak": "garibova2021",
+     "eser": "Kutadgu Bilig",
+     "sayfalar": [
+      860
+     ],
+     "alintilar": [
+      "“Sekentir (Saturn), Oñay (Jupiter), Kürüd (Mars), Yaşık (Sun), Sevit (Venus), Arzıtilek (Mercury), Yalçık (Moon)” (Hacib, 2008, p. 112)"
+     ]
+    },
+    {
+     "ad": "Erentüz",
+     "kaynak": "garibova2021",
+     "eser": "Divânu Lügati't-Türk",
+     "sayfalar": [
+      860
+     ],
+     "alintilar": [
+      "Erentüz (Jupiter) (Akkoyunlu and Ercilasun, 2014, p. 642)"
+     ],
+     "not": "Makale s. 858'de aynı adı \"Müşteri ulduzu\" yanında Terazi'nin yıldızı olarak da anıyor ve Kutadgu Bilig'deki \"Erentir\" (İkizler) ile ilişkilendiriyor."
+    },
+    {
+     "ad": "Kara kuş",
+     "kaynak": "garibova2021",
+     "eser": "Divânu Lügati't-Türk",
+     "sayfalar": [
+      860
+     ],
+     "alintilar": [
+      "Kara kuş (Jupiter) (Akkoyunlu and Ercilasun, 2014, p. 685)"
+     ],
+     "not": "Makalede s. 853 ve 862'de \"Qaraquş\" yazımı da var."
+    },
+    {
+     "ad": "Qaraquş",
+     "kaynak": "garibova2021",
+     "eser": "Divânu Lügati't-Türk",
+     "sayfalar": [
+      862
+     ],
+     "alintilar": [
+      "The planet Jupiter is called “Oñay”, “Qaraquş” and “Erentüz” in two different works in the XI century"
+     ],
+     "not": "Bu cümle eseri adla ayırmıyor; DLT atfı s. 860 listesindeki \"Kara kuş\" kaynak göstermesinden."
+    }
+   ]
+  },
+  {
+   "cisim": "Satürn",
+   "anahtar": "cisim:Saturn",
+   "adlar": [
+    {
+     "ad": "Sekendiz",
+     "kaynak": "tdk",
+     "madde": "Sekendiz",
+     "alinti": "► Satürn"
+    },
+    {
+     "ad": "Zühal",
+     "kaynak": "tdk",
+     "madde": "Zühal",
+     "alinti": "► Satürn"
+    },
+    {
+     "ad": "Sekentir",
+     "kaynak": "garibova2021",
+     "eser": "Kutadgu Bilig",
+     "sayfalar": [
+      860,
+      862
+     ],
+     "alintilar": [
+      "“Sekentir (Saturn), Oñay (Jupiter), Kürüd (Mars), Yaşık (Sun), Sevit (Venus), Arzıtilek (Mercury), Yalçık (Moon)” (Hacib, 2008, p. 112)",
+      "Saturn, known as “Sekentir” in the XI century"
+     ]
+    }
+   ]
+  },
+  {
+   "cisim": "Ay",
+   "anahtar": "cisim:Moon",
+   "adlar": [
+    {
+     "ad": "Yalçık",
+     "kaynak": "garibova2021",
+     "eser": "Kutadgu Bilig",
+     "sayfalar": [
+      860
+     ],
+     "alintilar": [
+      "“Sekentir (Saturn), Oñay (Jupiter), Kürüd (Mars), Yaşık (Sun), Sevit (Venus), Arzıtilek (Mercury), Yalçık (Moon)” (Hacib, 2008, p. 112)"
+     ]
+    }
+   ]
+  },
+  {
+   "cisim": "Güneş",
+   "anahtar": "cisim:Sun",
+   "adlar": [
+    {
+     "ad": "Yaşık",
+     "kaynak": "garibova2021",
+     "eser": "Kutadgu Bilig",
+     "sayfalar": [
+      860
+     ],
+     "alintilar": [
+      "“Sekentir (Saturn), Oñay (Jupiter), Kürüd (Mars), Yaşık (Sun), Sevit (Venus), Arzıtilek (Mercury), Yalçık (Moon)” (Hacib, 2008, p. 112)"
+     ]
+    }
+   ]
+  }
+ ],
+ "karsiligi_verilmeyen": [
+  {
+   "ad": "Yetigen",
+   "kaynak": "garibova2021",
+   "eser": "Divânu Lügati't-Türk",
+   "sayfa": 860,
+   "alinti": "Yetigen (Akkoyunlu and Ercilasun, 2014, p. 967)",
+   "not": "Makale hangi gök cismi olduğunu YAZMIYOR; Büyük Ayı eşlemesi bu kaynaktan doğrulanamadı."
+  },
+  {
+   "ad": "Temür Kaznuk",
+   "kaynak": "garibova2021",
+   "eser": "Divânu Lügati't-Türk",
+   "sayfa": 860,
+   "alinti": "Temür Kaznuk (Akkoyunlu and Ercilasun, 2014, p. 868)",
+   "not": "Makaledeki yazım \"Kaznuk\" (\"Kazuk\" değil). Makale hangi gök cismi olduğunu YAZMIYOR; Kutup Yıldızı eşlemesi bu kaynaktan doğrulanamadı."
+  }
+ ]
+}

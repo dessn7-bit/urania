@@ -10,7 +10,7 @@ const URANIA_GLOBAL = Object.fromEntries([
   // uygulama modülleri (window.X / kok.X ile tanımlanır)
   'Urania', 'Gok', 'Gorunurluk', 'Ses', 'Tani', 'Uydu', 'Hava', 'HavaKart', 'Defter', 'Degisen', 'Gorevler', 'Kartlar', 'Sozluk',
   'Harita', 'Bulucu', 'Plan', 'Ortme', 'Okunus', 'Apophis', 'AyRehber', 'UraniaAR', 'UraniaCizim', 'UraniaDeney', 'UraniaDeneyEk',
-  'UraniaDeneyHesap', 'UraniaGozlem'
+  'UraniaDeneyHesap', 'UraniaGozlem', 'Icerik'
 ].map(a => [a, 'readonly']));
 
 // no-unused-vars: yakalanan hatalar (catch (h) {...}) ve bilinçli boş bırakılan geri çağırma argümanları (e, h, _) sayılmaz;
