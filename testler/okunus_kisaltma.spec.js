@@ -45,7 +45,9 @@ const OZEL_AD = [
   'SPARC SPHERE SPHEREx SPI SPT SQM SSS StarDate STARE STARRS STEREO STIS STM STS STScI SwRI SYK SYS TAI TDV TES',
   'TESS TeVeS TexasTech TG TGO TK TM TNG TNO TNT TOCO TOI TON TOV TRAPPIST TV TXS TYC UA UCAR UCLA UHZ UMa UNLV',
   'UNSCEAR USGS USNO UT UTC UVES VERITAS VISTA VLA VLBA VLBI VLT VLTI VP VSX VVER WASP WD WFC WFI WFPC WGS WGSN',
-  'WIMP WISE WISPIT WMAP WorldAtlas XDF XENON XENONnT XL XLZD XMM XRISM XTE XXL YR ZHR ZTF'
+  'WIMP WISE WISPIT WMAP WorldAtlas XDF XENON XENONnT XL XLZD XMM XRISM XTE XXL YR ZHR ZTF',
+  /* 2026-11-14 haberleri: tayfölçer/teleskop/tarama/görev/kurum adları ve yerleşik yıldız sınıfı kısaltmaları */
+  'DEIMOS ESCAPADE GMOS GNIRS GOTO HST KAIT LBV SOAR TNS UC ULA ULX'
 ];
 /* 2. Türkçe kurum, kurum içi birim, yasa ve araç kısaltmaları (TÜBİTAK, TUA, RG = Resmî Gazete, BKK = Bakanlar Kurulu
       Kararı, TSİ = Türkiye saati …): Türkçe ses motoru Türkçe kısaltmayı harf adlarıyla doğru okur. */

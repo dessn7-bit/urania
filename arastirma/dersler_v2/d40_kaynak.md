@@ -126,7 +126,7 @@ Kısaltmalar:
 - Huygens 25 Mart 1655 | NT | "Dutch astronomer Christiaan Huygens discovered Titan on March 25, 1655."
 - Yarıçap 2575 km; Ganymede'den %2 küçük; Merkür'den büyük | NT | "Titan has a radius of about 1,600 miles (2,575 kilometers)" ; "Only Jupiter's moon Ganymede is larger, by just 2 percent. Titan is bigger than Earth's moon, and larger than even the planet Mercury."
 - 1,2 milyon km; 15 gün 22 saat | NT | "759,000 miles (1.2 million kilometers) from Saturn" ; "Titan takes 15 days and 22 hours to complete a full orbit of Saturn."
-- Yoğunluk 1,881 su; 1500 mbar; 94 K | https://esa.int/Our_Activities/Space_Science/Cassini-Huygens/Facts_about_Titan | "Average density 1.881 times liquid water" ; "Atmospheric pressure at surface 1500 mbar (1.5 times Earth's)" ; "Surface temperature 94K (-180 degrees C)"
+- Yoğunluk 1,881 su; 1500 mbar; 94 K | https://www.esa.int/articles/about-us/directorates/science/cassini-huygens/facts-about-titan | "Average density 1.881 times liquid water" ; "Atmospheric pressure at surface 1500 mbar (1.5 times Earth's)" ; "Surface temperature 94K (-180 degrees C)"
 - Ganymede 1,94 ve Callisto 1,83'e yakın | JSF ; [H]
 - Yoğun atmosferli tek uydu; azot + az metan; altın pus | NT | "the only moon in the solar system with a dense atmosphere" ; "Titan's atmosphere is primarily nitrogen, plus a small amount of methane" ; "obscured by a golden hazy atmosphere"
 - Su buzu kaya gibi; −179 °C | NT | "so cold (-290 degrees Fahrenheit or -179 degrees Celsius) that water ice plays the role of rock."
@@ -212,7 +212,7 @@ Kısaltmalar:
 - Europa Clipper 14 Ekim 2024 | https://science.nasa.gov/jupiter/jupiter-moons/ | "Europa Clipper mission that launched Oct. 14, 2024"
 - Clipper Nisan 2030 | [d18]
 - Juice 14 Nisan 2023 | https://planetary.org/articles/juice-launch-mission-preview | "Juice ... successfully launched on Friday, April 14 at 8:14 a.m. EDT (12:14 UTC)"
-- 28 Eylül 2026, 8640 km, 20°, 3,5 km/s | https://www.esa.int/Science_Exploration/Space_Science/Successful_Earth_flyby_improves_Juice_s_course_to_Jupiter | "skimmed the very outer edge of Earth's atmosphere on 28 September" ; "deflected Juice by an angle of 20° ... and increased its velocity by 3.5 km/s" ; "flew just 8640 km above the Indian Ocean"
+- 28 Eylül 2026, 8640 km, 20°, 3,5 km/s | https://www.esa.int/articles/about-us/directorates/science/juice/successful-earth-flyby-improves-juice-s-course-to-jupiter | "skimmed the very outer edge of Earth's atmosphere on 28 September" ; "deflected Juice by an angle of 20° ... and increased its velocity by 3.5 km/s" ; "flew just 8640 km above the Indian Ocean"
 - Ocak 2029 son Dünya geçişi; Temmuz 2031 Jüpiter; 2034 Ganymede | https://astrobiology.com/2026/09/22/juice-astrobiology-mission-to-fly-past-earth-for-third-gravity-assist/ (ESA metni) | "a final Earth flyby in January 2029, putting Juice onto the optimum path to intercept Jupiter in July 2031" ; "enter orbit around Jupiter in 2031, and then giant moon Ganymede in 2034."
 - Ganymede çevresinde dokuz ay, sonra çarpma | Planetary Society | "settling into orbit around Ganymede in late 2034" ; "Juice will explore the habitability of this fascinating world for nine months before intentionally crashing into its surface"
 - Buzlu uydu yörüngesine giren ilk görev | BBC 2015 kutusu | "First mission to orbit an icy moon - Ganymede"

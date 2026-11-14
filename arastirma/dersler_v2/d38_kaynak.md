@@ -62,7 +62,7 @@ Arama: d38 için 12 WebSearch (halka tablosu; halka kütlesi; Hyodo 2024; halka 
 
 ## Bölüm 7 — Halkaların keşfi
 | [W] Galileo 1610 Toskana Dükü'ne "üçten oluşur", "kulaklar"; 1612 kayboldu, "Has Saturn swallowed his children?"; Huygens 1655 disk, 1659 Systema Saturnium "thin, flat, ring, nowhere touching"; Cassini 1675 boşluklu halkalar, en büyük boşluk ~4800 km; Laplace 1787 ince halkacıklar; Maxwell 1859 bağımsız parçacıklar; Keeler ve Belopolsky 1895 tayfla doğruladı | https://en.wikipedia.org/wiki/Rings_of_Saturn | "The planet Saturn is not alone, but is composed of three"; "ears"; "Has Saturn swallowed his children?"; "thin, flat, ring, nowhere touching"; "numerous small particles, all independently orbiting Saturn"; 1895 |
-| [P] Huygens Titan'ı 1655'te buldu | https://esa.int/Our_Activities/Space_Science/Cassini-Huygens/Facts_about_Titan | d9_kaynak satır 129 |
+| [P] Huygens Titan'ı 1655'te buldu | https://www.esa.int/articles/about-us/directorates/science/cassini-huygens/facts-about-titan | d9_kaynak satır 129 |
 | [W] Mimas 185.537 km, 0,942 g; Pan 133.584 km, 0,575 g | https://pds-rings.seti.org/saturn/saturn_tables.html | tablo |
 | [H] T = 0,942 × (r/185.537)^1,5: 74.491 → 5,75 sa; 136.770 → 14,3 sa; 133.584 → 0,5755 g | — | hesap |
 | ÇIKARIM: Keeler yönteminin mantığı (katı tekerlekte dış kenar hızlı; parçacıkta iç hızlı; Doppler) | — | d2 ve d3'e dayanan açıklama; Wikipedia yalnız "spectroscopic studies confirmed" der |

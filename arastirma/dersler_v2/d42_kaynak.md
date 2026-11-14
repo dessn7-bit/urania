@@ -115,7 +115,7 @@ Biçim: iddia | kaynak URL | kaynaktaki ifade (kısa alıntı ya da değer). "(W
 
 | İddia | Kaynak URL | Kaynaktaki ifade |
 |---|---|---|
-| Fırlatma 2 Mart 2004; Dünya 2005, 2007, 2009; Mars Şubat 2007; uyku 8 Haziran 2011 – 20 Ocak 2014; varış 6 Ağustos 2014 (~100 km); 50 ve ~30 km yörüngeler | https://www.esa.int/Enabling_Support/Operations/Rosetta | (WebFetch özeti) |
+| Fırlatma 2 Mart 2004; Dünya 2005, 2007, 2009; Mars Şubat 2007; uyku 8 Haziran 2011 – 20 Ocak 2014; varış 6 Ağustos 2014 (~100 km); 50 ve ~30 km yörüngeler | https://www.esa.int/articles/about-us/directorates/operations/rosetta-operations | (WebFetch özeti) |
 | Steins 2008 ~800 km; Lutetia 2010 | aynı | "Steins at about 800 km (2008)"; Lutetia flyby July 2010 |
 | Philae 12 Kasım 2014; üç temas; zıpkınlar ateşlenmedi; ilk sıçrama ~1 km, 1 sa 50 dk, 38 cm/s; ikinci sıçramadan 7 dk sonra durdu | aynı | "the lander did not just touch down once, but three times" (WebFetch özeti) |
 | Günberi 13 Ağustos 2015; görev sonu 30 Eylül 2016 | aynı | (WebFetch özeti) |

@@ -67,7 +67,7 @@ Not: "(d9)" işaretli satırlar d9'da zaten doğrulanmış, bu derste yalnızca 
 - Merkür'e gitmek Plüton'dan fazla enerji; Dünya ve Venüs geçişleriyle yavaşlama | planetary.org
 - Dünya ortalama yörünge hızı 29,78 km/s | NSSDCA
 - MESSENGER 2008–09 üç geçiş, 18 Mart 2011 yörünge, bütün yüzey | Merkür lithograph; 30 Nisan 2015 çarpma (d9) https://en.wikipedia.org/wiki/MESSENGER
-- BepiColombo 20 Ekim 2018 fırlatma (d9) | https://www.esa.int/For_Media/Press_Releases/BepiColombo_blasts_off_to_investigate_Mercury_s_mysteries
+- BepiColombo 20 Ekim 2018 fırlatma (d9) | https://www.esa.int/articles/about-us/directorates/science/bepicolombo/bepicolombo-blasts-off-to-investigate-mercury-s-mysteries
 - 9 geçiş, 9,9 milyar km, Nisan 2024 panel sorunu, Aralık 2025 → Kasım 2026 | veri/haberler.json "2026-09-03-bepicolombo-mtm-ayrildi" (kaynakları arastirma/haberler/parca_a_kaynak.md bölüm 10)
 - MTM 3 Eylül 2026; aletler 15 Eylül; 24 Eylül 8 dk 42 sn, 11,4 m/s; yörüngeye giriş 21 Kasım 2026; ayrılma 9–10 Aralık; bilim Nisan 2027 | https://www.esa.int/Science_Exploration/Space_Science/BepiColombo/Latest_updates_BepiColombo_s_arrival_at_Mercury | sayfa (son güncelleme 6 Ekim 2026)
 
